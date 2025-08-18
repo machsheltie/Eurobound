@@ -1,0 +1,2 @@
+Darkweb Dossier Crossover Events
+At various points in the game, your party will encounter bizarre, intrusive “communications” from characters out of the Darkweb Dossier universe. These appear primarily via ICQ pop-ups triggered at specific Free Wi-Fi hotspots scattered across the cities.
