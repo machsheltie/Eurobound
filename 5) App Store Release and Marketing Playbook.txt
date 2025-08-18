@@ -1,0 +1,87 @@
+App Store Release & Marketing Playbook (NEW)
+
+Marketing asset pipeline:
+Required screenshot set, device frames, captions
+30s App Preview video storyboard + capture settings
+Keyword set, subtitle tests, localized metadata plan
+Press kit (icon set, logo, hero art, one‑pager, trailer)
+
+Post‑launch ops:
+Content update cadence
+Feature flags/A‑B testing workflow
+Community feedback intake → triage → roadmap
+Hotfix path (severity levels, build/submit checklist)
+
+UI & UX Design Workflow (Figma-Free Zone)
+Primary Design Tool:
+- Adobe Photoshop – sole environment for UI, HUD, menu layouts, buttons, icons, and App Store screenshot composition.
+- Rationale: Native desktop speed, precise layer & pixel control, no browser latency, leverages 25+ years of design muscle memory.
+
+Prototyping / Developer Handoff:
+- Zeplin – accepts Photoshop exports, auto-generates pixel specs, asset slices, and clickable flows for developers.
+- Rationale: Handles collaboration & export without forcing work inside a cloud editor. Keeps design decisions in Photoshop.
+
+Optional Marketing Asset Tools:
+- Canva Pro (optional) – for rapid marketing boards or social media graphics when Photoshop isn’t necessary.
+- Affinity Publisher (optional) – for laying out large multi-screenshot App Store sets or press kits with precise typography.
+
+Pipeline Notes:
+1. All UI assets are authored in Photoshop, layered and grouped for easy export.
+2. Export to Zeplin via plugin for developer access.
+3. Prototyping is limited to clickable flows — no animation mockups are required unless specifically scoped.
+4. Marketing assets may be adapted into Canva or Publisher, but design direction remains in Photoshop.
+5. No Figma or browser-based design tools are used at any stage — prevents performance loss, UI lag, and tool overhead.
+
+---
+IMPROVED VERSION (25% Enhancement)
+
+Pre-Launch:
+- App Store compliance checklist for satire-heavy content to avoid rejection (sexual content, gambling references, targeted groups).
+- A/B test icons, titles, and screenshots via Apple Search Ads Creative Sets before launch.
+- Localize metadata (title, subtitle, keywords) into key European languages for higher App Store ranking.
+- Create a “Coming Soon” App Store page with the notify toggle active.
+- Press kit outreach to journalists & micro-influencers 2–3 months ahead; include embargoed media assets and game codes.
+
+Launch Week:
+- Coordinate social posts, paid ads, and influencer pushes to peak within 72 hours.
+- Issue promo codes to targeted communities for review boosts.
+- Monitor App Store analytics daily and adjust keywords/metadata as needed.
+
+Post-Launch:
+- Update screenshots & App Preview video with highest-performing A/B variants.
+- Release seasonal updates tied to European festivals/news for renewed coverage.
+- Collect and integrate player feedback into quality-of-life updates within 2–4 weeks.
+---
+
+--- NEW SECTION ---
+Pass Apple Without Losing the Joke – Submission Checklist:
+Framing & Tone:
+- Target satire at behaviors/archetypes, never entire nationalities or demographics.
+- Depict vices with comedic consequences (hangovers, debuffs) rather than glorification.
+- Keep art/cartoon tone light and avoid realistic depictions of vice.
+
+In-Game Content:
+- Balance humor with positive/neutral moments so satire isn't 100% negative.
+- Use "Travel Bro" archetype language rather than implying all locals share traits.
+- Include comedic failure states to frame vices as flaws.
+
+App Store Metadata:
+- Avoid loaded terms in title, subtitle, or keywords that could be misread as offensive.
+- Use whimsical, playful tone in description (EarthBound meets European vacation parody).
+- Do not mention alcohol/weed directly in the first two lines of description.
+
+Screenshots & Preview:
+- Show colorful, cartoonish visuals over gritty or realistic vice depictions.
+- Include NPCs, humor moments, and silly items to convey lighthearted tone.
+- Avoid sexualized imagery or anything that could be construed as targeting minors.
+
+Review Process Prep:
+- Run European playtest and document positive reception to satire.
+- Prepare alternate copy/screenshots that tone down satire for resubmission if initially rejected.
+
+
+--- Added Compliance Notes for Behavioral NPCs, Alternate Platform Monetization Strategy ---
+[CONTENT FROM PLAN ABOVE]
+
+
+[UPDATED with new risk mitigation, audio strategy, QA process, and App Store compliance fixes]
