@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Eurobound Battle UI Mockup</title>
+  <style>
+    body {
+      background: #222;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .battle-container {
+      width: 390px;
+      background: #333;
+      border: 3px solid #aaa;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+    }
+    .turn-order {
+      background: #111;
+      display: flex;
+      padding: 4px;
+      justify-content: space-around;
+    }
+    .turn-order .char {
+      text-align: center;
+      font-size: 12px;
+    }
+    .turn-order img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #666;
+    }
+    .battle-main {
+      display: flex;
+      height: 200px;
+      background: linear-gradient(#555, #222);
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+    .status-bar {
+      background: #111;
+      display: flex;
+      justify-content: space-around;
+      padding: 6px;
+      font-size: 14px;
+      position: relative;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+    }
+    .status img {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      bottom: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #000;
+      color: #fff;
+      padding: 6px;
+      border-radius: 4px;
+      white-space: nowrap;
+      font-size: 12px;
+      border: 1px solid #666;
+    }
+    .status:hover .tooltip {
+      display: block;
+    }
+    .controls {
+      background: #000;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2px;
+    }
+    .controls button {
+      background: #444;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      padding: 14px;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+    .controls button:active {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="battle-container">
+    <div class="turn-order">
+      <div class="char">
+        <img src="hero.png" alt="Hero">
+        <div>Hero</div>
+      </div>
+      <div class="char">
+        <img src="ally.png" alt="Ally">
+        <div>Ally</div>
+      </div>
+      <div class="char">
+        <img src="enemy.png" alt="Enemy">
+        <div>Enemy</div>
+      </div>
+    </div>
+    <div class="battle-main">Battle Scene</div>
+    <div class="status-bar">
+      <div class="status">
+        <img src="hungover.png" alt="Hungover">Hungover
+        <div class="tooltip">Reduces accuracy by 20%, causes random turn skips</div>
+      </div>
+      <div class="status">
+        <img src="grease.png" alt="Grease Fingers">Grease Fingers
+        <div class="tooltip">Increases item drop rate, but lowers defense by 10%</div>
+      </div>
+    </div>
+    <div class="controls" id="controls">
+      <button>Fight</button>
+      <button>Skills</button>
+      <button>Items</button>
+      <button>Run</button>
+    </div>
+  </div>
+
+  <script>
+    // Swipe navigation for menus
+    let startX;
+    const controls = document.getElementById('controls');
+    controls.addEventListener('touchstart', e => {
+      startX = e.touches[0].clientX;
+    });
+    controls.addEventListener('touchend', e => {
+      const endX = e.changedTouches[0].clientX;
+      if (endX - startX > 50) {
+        alert('Swipe Right: Previous Menu');
+      } else if (startX - endX > 50) {
+        alert('Swipe Left: Next Menu');
+      }
+    });
+  </script>
+</body>
+</html>
