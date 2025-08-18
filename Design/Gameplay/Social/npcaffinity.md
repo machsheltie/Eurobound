@@ -1,0 +1,3 @@
+# NPC Affinity
+
+Temporary placeholder

@@ -1,0 +1,17 @@
+# App Store Compliance
+
+# App Store Compliance & Recovery Protocol
+
+### App Store Rejection Recovery Protocol
+- “Satire Swap” toggle in string table:
+  `"line_en": "original satire", "line_safe": "alternate generic"`
+- Safe builds swap to `"line_safe"` automatically via `SATIRE_MODE=SAFE`.
+- Side-by-side “Satire vs. Safe” view in Google Sheet for quick edit/compare.
+- Safe mode assets (art/audio) replace risky ones without breaking pacing.
+- Pre-test safe build in TestFlight so it’s deployment-ready.
+
+- Adobe Photoshop – sole environment for UI, HUD, menu layouts, buttons, icons, and App Store screenshot composition.
+- Affinity Publisher (optional) – for laying out large multi-screenshot App Store sets or press kits with precise typography.
+[UPDATED with new risk mitigation, audio strategy, QA process, and App Store compliance fixes]
+- Include an emergency satire compliance check in the hotfix pipeline to avoid accidental text/content issues.
+  - Compliance — satire intent clarity, App Store content safety, accessibility adherence.
