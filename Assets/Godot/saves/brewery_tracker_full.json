@@ -1,0 +1,23 @@
+{
+  "brewery_progress": {
+    "deboucheryville": {
+      "absynthium_taproom": false,
+      "three_crown_keg_haus": false,
+      "tap_dat_vault": false,
+      "ye_olde_brew_lab": false
+    },
+    "publandia": {
+      "bogmans_brewery": false,
+      "flatcap_ferments": false,
+      "liffy_lager_house": false,
+      "tattie_porter_crafthouse": false
+    },
+    "sinfonia": {
+      "opernhaus_ale_stube": false,
+      "sachercraft_barrelworks": false,
+      "vienna_noir_fermentarium": false,
+      "schnitzelbier_innovation_lab": false
+    }
+  },
+  "brewery_global_total": 0
+}
