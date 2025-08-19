@@ -1,0 +1,71 @@
+{
+    "publandia": [
+        {
+            "id": "publandia_stall_1",
+            "location": "Back Alley Betting Shop \u2013 Stall of Sorrows",
+            "text": "Dear Pint #6, I blame you for her number turning into Pizza Hut.",
+            "effect": "Reveals flask item 'Liquid Regret'",
+            "author": null
+        },
+        {
+            "id": "publandia_stall_2",
+            "location": "Lightweight Hostel \u2013 Shared Bath",
+            "text": "Your Bravado dies the moment you apologize for snoring.",
+            "effect": "Mirror whisper reveals Bravado score",
+            "author": "Fist\u00f8"
+        },
+        {
+            "id": "publandia_stall_3",
+            "location": "Stoutworks Brewery \u2013 Employee Only Stall",
+            "text": "DO NOT FLUSH THE GOLEMS. They remember.",
+            "effect": "Triggers yeast golem mini-boss",
+            "author": null
+        }
+    ],
+    "debaucheryville": [
+        {
+            "id": "debaucheryville_stall_1",
+            "location": "Velvet Curtain Club \u2013 VIP Stall",
+            "text": "Blew my savings on bottle service & bad decisions. Smells like ROI in here.",
+            "effect": "Reveals QR code for NFT #2",
+            "author": null
+        },
+        {
+            "id": "debaucheryville_stall_2",
+            "location": "Absinthe Arcade \u2013 Claw Machine Closet",
+            "text": "He moaned \u2018SMAAAASH\u2019 in bed. I ghosted mid-combo.",
+            "effect": "+1 Embarrassed resistance",
+            "author": null
+        },
+        {
+            "id": "debaucheryville_stall_3",
+            "location": "Kebab Alley \u2013 Grease Tent Crawlspace",
+            "text": "Puked here in \u201899. Came back to visit like it\u2019s Mecca.",
+            "effect": "Unlocks 'Stomach of Steel' passive",
+            "author": "Fist\u00f8"
+        }
+    ],
+    "sinfonia": [
+        {
+            "id": "sinfonia_stall_1",
+            "location": "Mozart\u2019s Last Rave \u2013 Bone Biffy",
+            "text": "I died but still came back to change the playlist.",
+            "effect": "Activates 'Resurrected DJ' ghost",
+            "author": null
+        },
+        {
+            "id": "sinfonia_stall_2",
+            "location": "Caf\u00e9 Existenz \u2013 Barista Bathroom",
+            "text": "Even Nietzsche sat down to pee sometimes.",
+            "effect": "Unlocks dialogue with intellectual NPCs",
+            "author": null
+        },
+        {
+            "id": "sinfonia_stall_3",
+            "location": "Black-Tie Backroom \u2013 Marble Stall",
+            "text": "I folded a royal flush in here. Still haunts me.",
+            "effect": "+Luck for 1hr, +Shame on reentry",
+            "author": null
+        }
+    ]
+}
