@@ -7,9 +7,12 @@ Shady Terminals: Coin-operated kiosks with CRT monitors and sticky keyboards.
 Rigged Mini-Games: Win (or intentionally lose) suspicious arcade challenges to “earn” your NFT.
 Influencer Syndicate Theft: Occasionally, members of the Influencer Syndicate (smug TikTok travel vloggers with a suspicious number of sponsored posts) will be flaunting an NFT. Defeat them in absurd mini-games or side quests to swipe it.
 
-Examples of NFTs:
-Pixelated Kebab Monkey – Dubiously hand-drawn in MS Paint.
-Beer Pong Saint Relic – An 8-bit halo hovering over a red solo cup.
+NFTs:
+Debaucheryville Targets:
+Velvet Curtain bathroom QR graffiti: "Pixelated Kebab Monkey" NFT– Dubiously hand-drawn in MS Paint.
+Rigged Absinthe Arcade claw machine: "Beer Pong Saint Relic" NFT– An 8-bit halo hovering over a red solo cup.
+Shadow Exchange ledger backroom: “VIP Wristband PNG” NFT-A flat, over-sharpened PNG of a scuffed velvet wristband, the Photoshop checkerboard still visible, with a fake hologram that flickers “VIP-ish.”
+
 Meme Lord’s First Selfie – Clearly a stolen MySpace photo.
 
 Rewards for Collection Milestones:

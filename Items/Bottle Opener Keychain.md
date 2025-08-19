@@ -6,6 +6,7 @@ Bottle Opener Keychain
     • European bartenders offer better prices and exclusive local brews 
     • Description: "For opening beers with maximum jingling and zero class" 
     • Era Cringe: Jangles loudly with every step, collected from spring break trips to Cancún and Daytona Beach 
+    MUST be purchased in Dublin. Unlocks the Brewery Tour sidequest to discover as 12 breweries, complete the sidequest, and earn achievements and their benefits
 Design Notes:
 THIS is what our aging frat bros would actually carry! A massive keychain loaded with bottle openers from every brewery, bar, and beach town they've ever been blackout drunk in.
 Why This Actually Works:
