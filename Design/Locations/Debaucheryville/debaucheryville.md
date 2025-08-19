@@ -27,6 +27,16 @@ Budget Accommodation District
     • Bunk-bed confession opportunities 
     • Items scattered in wrong hallways and doorways 
 
+Kebab Alley
+Underground Vice Corridor
+Wedged between the kebab stand, a knockoff vape stall, and a crypto ATM that only steals
+Oily cobblestones littered with skewer sticks, discarded wrappers, and napkins scribbled with confessions
+Constant hiss of meat, drips of chili oil, and the hum of drunken techno
+Stray dogs loiter near puke puddles for warmth
+Pickpocket NPCs and stag do remnants stumble in from the Velvet Curtain Club
+NPC dealer “Slick Greg” sometimes appears, selling mystery tzatziki vials that randomly reroll your current status
+Accessible shortcut to the Velvet Curtain back entrance via clambering a greasy stack of milk crates
+
 BUILDINGS & ESTABLISHMENTS
 Hostel "Midnight Checkout"
 Primary Accommodation

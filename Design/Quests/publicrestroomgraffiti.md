@@ -72,14 +72,31 @@ Location: Behind curtain labeled “staff only” — bypass with Bravado check
 Hidden Item: Graffiti peels to reveal QR code for NFT #2
 Hidden: Peel back tile → QR code for NFT #2
 Visual Effect: Text drips champagne when viewed drunk
+Unlock Method: Requires passing a Bravado check at the “Staff Only” curtain
+Graffiti Bonus:
+One glowing pixel kebab icon appears only while Hungover
+Reading it while Hungover unlocks a Fistø lore snippet:
+“Woke up here with champagne rash and a cease & desist from my liver.”
+Contributes to “The Greasy Prophet” title when all Hungover graffiti are read
 
 5. Absinthe Arcade – Claw Machine Maintenance Closet
 “He moaned ‘SMAAAASH’ in bed. I ghosted mid-combo.”
-Location: Insert 3 tokens into broken DDR machine to unlock door
+Location: Secret public restroom
+Unlock Mechanism: Insert 3 tokens into broken DDR machine to unlock door
 Bonus: +1 to “Embarrassed” status resist from laughing too hard
 Status Bonus: +1 Embarrassed resistance
 Audio: SFX of joystick squeaking loops faintly
-New Option: Send this line to rival trio via ICQ to “haunt” them
+Status Bonus: +1 to Embarrassed resistance (triggered by laugh-loop event)
+Audio: Faint squeaky joystick SFX loops after unlocking
+Gameplay Hook:
+Once accessed, player gets a one-time prompt to send the quote to the Rival Trio via ICQ
+If sent, they become haunted by a lingering “Embarrassed” debuff in battle for the next 3 turns
+Unlock triggers a flickering pink LED above the claw machine
+Graffiti Bonus
+One glowing sticker of a pixel-art arcade joystick with lips appears on the inside stall door
+Glows only when the player has the Embarrassed status active
+Reading it while Embarrassed unlocks a one-time Lore Drop: “Combo’d by Love”, written in DDR arrow glyphs
+Completing all bathroom graffiti while Embarrassed unlocks the title: “Joysticks & Shame”
 
 6. Kebab Alley – Behind Grease Vendor Tent
 “Puked here in ‘99. Came back to visit it like it’s Mecca.”
@@ -88,6 +105,15 @@ Location: Crawlspace entry only at 3AM game time
 Unlock: Permanent “Stomach of Steel” passive if you eat kebab while reading
 Stomach of Steel Buff: +Poison resist if kebab is eaten mid-read
 Graffiti Bonus: Icon of kebab glows under Hungover status
+Buff Unlock Mechanic
+“Stomach of Steel” Passive:
+Permanently unlocks if the player eats any kebab while actively reading the graffiti inside this restroom
+Grants +Poison Resistance when consuming street food
+Adds a faint grease aura to player sprite at low health
+Graffiti Bonus:
+One icon — a pixel-art kebab with googly eyes — only glows when player is Hungover
+Reading it in that state grants bonus lore snippet from Fistø’s travel diary
+Optional: completing all graffiti while Hungover unlocks "The Greasy Prophet" side title
 
 🔍 Sinfonia Hidden Bathrooms
 7. Mozart’s Last Rave – Bone Pile Biffy

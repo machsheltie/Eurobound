@@ -10,7 +10,7 @@ Influencer Syndicate Theft: Occasionally, members of the Influencer Syndicate (s
 NFTs:
 Debaucheryville Targets:
 Velvet Curtain bathroom QR graffiti: "Pixelated Kebab Monkey" NFT– Dubiously hand-drawn in MS Paint.
-Rigged Absinthe Arcade claw machine: "Beer Pong Saint Relic" NFT– An 8-bit halo hovering over a red solo cup.
+Absinthe Arcade rigged claw machine: "Beer Pong Saint Relic" NFT– An 8-bit halo hovering over a red solo cup.
 Shadow Exchange ledger backroom: “VIP Wristband PNG” NFT-A flat, over-sharpened PNG of a scuffed velvet wristband, the Photoshop checkerboard still visible, with a fake hologram that flickers “VIP-ish.”
 
 Meme Lord’s First Selfie – Clearly a stolen MySpace photo.
