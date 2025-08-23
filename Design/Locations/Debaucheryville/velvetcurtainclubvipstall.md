@@ -57,3 +57,21 @@ One glowing pixel kebab icon appears only while Hungover
 Reading it while Hungover unlocks a Fistø lore snippet:
 “Woke up here with champagne rash and a cease & desist from my liver.”
 Contributes to “The Greasy Prophet” title when all Hungover graffiti are read
+
+Part of the Meme Black Market sidequest:
+Interact with graffiti reading “DO NOT LOOK AT THE BABY” in the Velvet Curtain Club restroom.
+Etched onto the stall wall, barely visible beneath a glittering champagne stain, is the ominous phrase:
+“DO NOT LOOK AT THE BABY.”
+This is not a joke. Not a meme. You feel watched the moment you read it.
+
+Unlocks the Meme Black Market Sidequest
+Interacting with the graffiti “DO NOT LOOK AT THE BABY” while in a Hungover state triggers a pop-up ICQ message from MemeLord.exe:
+“i got what ur soul needs lol”
+Graffiti Bonus (Hungover State):
+Reading the graffiti while hungover causes champagne-glitter text to animate.
+Grants +1 to MemeMastery Meter
+Adds log entry: “Your brain itches in .GIF format.”
+Visual Effect:
+Text drips champagne when viewed drunk
+Hidden Element:
+Peeling back one loose tile reveals QR code for Meme NFT #2

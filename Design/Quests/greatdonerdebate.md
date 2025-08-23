@@ -63,17 +63,19 @@ A spinning heap of shredded meat, gummy bears, and absinthe glaze.
 🍭 +10 SP, -5 Intelligence, 25% Confused for 2 battles
 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear
 
-🔓 3. 24-Hour Internet Café – Back Room Bento Box
-Location Type: Secret Vending Machine
-Location: Debaucheryville – enter the café, press 3 random ICQ keys on the terminal
+🔓 3. 24-Hour Internet Café – Back Room Concessions
+Location Type: Concession Stand
+Location: Debaucheryville – 24 Hour Internet Café – Back Room
 
-Visuals:
-A flickering vending machine hidden behind a glitching privacy curtain. You can hear the microwave groan from behind the wall.
-Access: Only between 1:00–3:00 AM game time after reading a bathroom graffiti clue
+🎮 Visuals:
+Dim fluorescent lights buzz overhead, casting sickly hues on mismatched office chairs and retro CRT monitors displaying endless pop-up ads. A laminated “Hot Pockets + Protocols” combo menu peels from the wall. The concession booth is wedged between two gutted vending machines—one stuffed with thermal paste, the other flickering like it knows your secrets.
 
-Item:
+👨‍🍳 Vendor:
+🖱️ Donny.exe
+An ex-hacker turned meat vendor who claims he's "air-gapped his chakras." He wears a lanyard of expired LAN party badges and breathes through a broken vape mod.
+
+Menu Add-On:
 CryptoDoner Box – 5€
-
 Text reads: “Meat. Data. Destiny.”
 🧬 +2 random stats but gives “DigiDysentery” (inverts your menu buttons for 2 mins)
 

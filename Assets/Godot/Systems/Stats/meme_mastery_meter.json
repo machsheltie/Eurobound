@@ -1,0 +1,15 @@
+
+{
+  "meta_stat": "MemeMastery",
+  "description": "Tracks meme activation in combat and lore interaction",
+  "conditions": {
+    "summons_used": 3,
+    "graffiti_read": 2,
+    "crypto_doner_consumed": true
+  },
+  "on_full_charge": {
+    "title_unlock": "Shitposter Supreme",
+    "icq_contact": "404_Bratnado.exe",
+    "nft_unlock": "funcoland_futures_nft"
+  }
+}

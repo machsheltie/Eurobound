@@ -66,6 +66,16 @@
             "text": "I folded a royal flush in here. Still haunts me.",
             "effect": "+Luck for 1hr, +Shame on reentry",
             "author": null
+        },
+        {
+            "id": "graffiti_dont_look_baby",
+            "location": "Debaucheryville – Velvet Curtain Club – VIP Stall",
+            "text": "DO NOT LOOK AT THE BABY",
+            "trigger_event": "meme_black_market_unlock",
+            "visual_effect": "Text drips champagne when viewed drunk",
+            "status_condition": "Hungover",
+            "bonus_effect": "Unlocks ICQ message from MemeLord.exe"
         }
+
     ]
 }
