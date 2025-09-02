@@ -1,0 +1,82 @@
+[
+  {
+    "brewery_id": "absynthium_taproom",
+    "name": "The Absynthium Taproom",
+    "location": "Absinthe Arcade (north end)",
+    "intro_scene": "You peel back the glowing green curtain\u2026 and the vapor hits your face like regret in your 30s.",
+    "visual_theme": "Low lighting, glowing green fog, cracked absinthe bottle bar",
+    "obstacle_type": "Mirror portal navigation puzzle",
+    "mini_mob": {
+      "name": "Mirror Chad",
+      "effect": "Confused",
+      "trigger": "If not defeated in 3 turns"
+    },
+    "boss_id": "green_fairy_wisp",
+    "brew_reward": {
+      "item": "Absinthe Lager",
+      "effect": "+15 SP, 30% Confused"
+    },
+    "selfie_prop": "Glowing absinthe chalice",
+    "satire_note": "Bartender insists, 'We used to use actual wormwood, until the lawsuits.'"
+  },
+  {
+    "brewery_id": "three_crown_keg_haus",
+    "name": "Three-Crown Keg Haus",
+    "location": "Alley near the Shadow Exchange",
+    "intro_scene": "The smell hits you first: sweat, sour hops, and a whiff of something legally inadvisable.",
+    "visual_theme": "Gritty dive bar, flickering mini-keg chandelier",
+    "obstacle_type": "Stealth tile puzzle (avoid creaks and drunks)",
+    "mini_mob": {
+      "name": "Slurring Bar Flies",
+      "effect": "Embarrassed",
+      "trigger": "If gossip phase isn\u2019t interrupted"
+    },
+    "boss_id": "keg_sentinel",
+    "brew_reward": {
+      "item": "Iron Gut Tripel",
+      "effect": "+40 HP, Inspired, -Accuracy next turn"
+    },
+    "selfie_prop": "Velvet keg throne",
+    "satire_note": "Sign reads, 'Noble by name, not by health code.'"
+  },
+  {
+    "brewery_id": "tap_dat_vault",
+    "name": "The Tap Dat Vault",
+    "location": "Clocktower Plaza, hidden switch at midnight",
+    "intro_scene": "A bass drop echoes as the vault creaks open. You step into what feels like a nightclub inside a GPU.",
+    "visual_theme": "Cyberpunk basement, brewing vats look like chemistry rigs",
+    "obstacle_type": "Rhythm puzzle synced to glitch beat",
+    "mini_mob": {
+      "name": "Glitched Brew Ad Bot",
+      "effect": "Item loss (random)",
+      "trigger": "If not stunned before casting"
+    },
+    "boss_id": "strobe_brewmistress",
+    "brew_reward": {
+      "item": "Vape Stout",
+      "effect": "+SP, Glow-Up Aura, causes Grease Fingers"
+    },
+    "selfie_prop": "Hologram wall: 'You Are Brewtiful'",
+    "satire_note": "We don\u2019t serve beer \u2014 we *inhale* it."
+  },
+  {
+    "brewery_id": "ye_olde_brew_lab",
+    "name": "Ye Olde B.R.E.W. Lab",
+    "location": "Velvet Curtain Club, basement behind staff-only rope",
+    "intro_scene": "A robotic voice greets you: 'Welcome to the Brewvolution\u2122 \u2014 your mouth is now under analysis.'",
+    "visual_theme": "Retrofuturistic lab with blue lights and robotic bartender",
+    "obstacle_type": "Taste-profile logic minigame (wrong inputs = boom)",
+    "mini_mob": {
+      "name": "Fermenting Algorithm",
+      "effect": "Random status (Grease Fingers, Thirsty, or Inspired)",
+      "trigger": "On contact"
+    },
+    "boss_id": "cryptobro_brewbot",
+    "brew_reward": {
+      "item": "Blockchain Bock",
+      "effect": "+20 HP, +10 Gold, Tourist Trapped"
+    },
+    "selfie_prop": "Foam-spewing beer printer",
+    "satire_note": "Brew flavor dictated by today\u2019s trending NFT hash\u2026 it\u2019s decentralizzzzzted."
+  }
+]

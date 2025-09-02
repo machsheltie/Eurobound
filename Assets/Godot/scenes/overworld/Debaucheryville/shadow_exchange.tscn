@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="ShadowExchange" type="Node2D"]
+
+[node name="EntryPoint" type="Position2D" parent="."]
+position = Vector2(96, 192)
+
+; Split-flap exchange rate board (interactive)
+[node name="RateBoard" type="Area2D" parent="."]
+position = Vector2(256, 128)
+
+[node name="RateBoardCollision" type="CollisionShape2D" parent="RateBoard"]
+shape = SubResource( 1 )
+
+[node name="BarterCounter" type="Area2D" parent="."]
+position = Vector2(128, 256)
+
+[node name="BarterCounterCollision" type="CollisionShape2D" parent="BarterCounter"]
+shape = SubResource( 1 )
+
+; Duct-tape ledger for NFT hunt clue
+[node name="LedgerInteract" type="Area2D" parent="."]
+position = Vector2(368, 224)
+
+[node name="LedgerCollision" type="CollisionShape2D" parent="LedgerInteract"]
+shape = SubResource( 1 )
+
+; Couchsurf trigger for CryptoBro69's Ex
+[node name="CouchsurfTrigger" type="Area2D" parent="."]
+position = Vector2(320, 288)
+
+[node name="CouchsurfCollision" type="CollisionShape2D" parent="CouchsurfTrigger"]
+shape = SubResource( 1 )
