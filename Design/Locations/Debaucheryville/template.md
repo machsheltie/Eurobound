@@ -1,4 +1,4 @@
-Internet History Museum
+Name: 
 Location Type: 
 Location:
 

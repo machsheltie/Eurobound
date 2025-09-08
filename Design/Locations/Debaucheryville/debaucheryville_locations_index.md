@@ -14,6 +14,7 @@ You can easily extend this by adding more entries per city.
 | Your Location Name       | your_tag_id             | Gameplay purpose or system trigger                         |
 | Shadow Exchange         | shadow_exchange         |Currency exchange, barter for rare gear, black‑market services, NFT clue,     Couchsurf trigger, premium stock post‑boss          |
 
+
 ---
 
 ## ✏️ How to Add More
