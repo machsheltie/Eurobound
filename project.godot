@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 
 DataRepo="*res://Scripts/core/data_repo.gd"
 GameState="*res://Scripts/systems/GameState.gd"
+SaveSystem="*res://Scripts/core/save_system.gd"
 
 [rendering]
 
