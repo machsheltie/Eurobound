@@ -128,11 +128,11 @@ Petra keeps this job because it's steady, it pays better than most production wo
 > "No rush. The forms don't expire. The tide — there is no tide, it's a river, but the offer doesn't expire either."
 
 ### The Post-Launch Checkout Line
-*At the hostel-runner handoff on the LOSS branch, clipboard out, item already in hand:*
+*At the hostel door on the LOSS branch. A Shady Productions runner — the one who "does not make eye contact and does not stop moving" — is already extending `item_hamagotchi_consolation` toward the bro and walking past at the same time. Petra is beside him, clipboard out, item never touching her hands, timing the line to land exactly as the runner's hand does:*
 > "Please sign here to confirm receipt of one [1] second-place prize."
 
 *If asked what "second place" means when there were four contestants:*
-> "Second place is everyone who did not win. There were two of you. You are tied for it."
+> *(checking the clipboard)* "Second place is everyone who did not win. That's — however many of you are standing here. You're all tied for it."
 
 ### Callback Dialogue (Return Visits)
 *If the party returns to Fauxst Beach on a later filming day:*
@@ -147,7 +147,7 @@ Petra keeps this job because it's steady, it pays better than most production wo
 |------|----------|----------|
 | Filming days, pre-taping | Fauxst Beach sign-up table | Sign-up, disclosure script, release-form collection |
 | Filming days, during taping | Off-table, headset live | Comms with Jaxson, logging strikes and inventory over headset |
-| Filming days, post-taping | Prize podium (WIN) or hostel-runner handoff point (LOSS) | Confirming item hand-off, logging outcome |
+| Filming days, post-taping | Prize podium (WIN) or hostel door, beside the runner (LOSS) | Supervising and logging the item hand-off, which the runner executes |
 | Off-days | Cirque du Shady loading dock | Signing for the shared 2003 prize pallet shipment on behalf of both productions |
 
 ### Positioning Notes
@@ -164,7 +164,7 @@ Petra keeps this job because it's steady, it pays better than most production wo
 |--------------|-------|---------------|----------------|
 | Sign-up / release form processing | Free (signature required) | Full, accurate disclosure of every quest mechanic before commitment | Gates entry into the trivia gauntlet |
 | Optional full read-aloud of release form | Free, offered every time | Complete, unabridged English translation | Never accepted; always offered |
-| Prize confirmation / checkout | Free | Logging and hand-off of `item_trivia_champ_badge` / `item_summer_vacay_stein` (WIN) or `item_hamagotchi_consolation` (LOSS) | Closes out the contestant's record for the episode |
+| Prize confirmation / checkout | Free | Logging and receipt-signature for `item_trivia_champ_badge` / `item_summer_vacay_stein` (WIN, awarded by Hamstradamus) or `item_hamagotchi_consolation` (LOSS, physically handed over by a Shady Productions runner) | Closes out the contestant's record for the episode |
 
 ### Hidden Details / Easter Eggs
 - Examining her clipboard closely shows the disclosure checklist is fully ticked before the bros have finished their first sentence — she's already said everything on it.
@@ -194,7 +194,7 @@ Petra keeps this job because it's steady, it pays better than most production wo
 
 ### Within Debaucheryville
 - Staffs the sign-up table on every subsequent Beatdown filming day the party encounters
-- Appears briefly at the prize podium (WIN) or the hostel-runner hand-off (LOSS) to confirm and log the outcome
+- Appears briefly at the prize podium (WIN) or beside the runner at the hostel door (LOSS) to confirm and log the outcome — the runner does the hand-off; she never touches the item
 - Occasionally visible at the Cirque du Shady loading dock signing for shared production freight on off-days
 
 ### In Other Cities (If Applicable)
@@ -238,7 +238,7 @@ Her script and demeanor do not change based on prior party outcomes — she deli
 
 ### Primary Quest (If Applicable)
 - **Quest**: The Bacchanus Beach Beatdown (`debaucheryville_sidequest_bacchanus_beach_beatdown_01`)
-- **Role**: Quest Giver of record — runs sign-up, delivers full disclosure, collects release forms, and confirms outcome hand-off
+- **Role**: Quest Giver of record — runs sign-up, delivers full disclosure, collects release forms, and supervises/logs the outcome hand-off (the runner executes the physical hand-off on LOSS; Hamstradamus does on WIN)
 - **Trigger**: Party enters the Fauxst Beach zone at any point after arriving in Debaucheryville; approaching the sign-up table triggers her greeting and disclosure script
 - **Outcome**: Signing all three release forms gates the party into Bro Select and the trivia gauntlet; she reappears at resolution to log and confirm whichever prize or consolation item is issued
 
@@ -257,7 +257,7 @@ Petra is the quest's literal entry gate — no signed forms, no gauntlet — but
 ### Screenshot Moments
 1. The release-form beat — three four-page Czech-legalese forms fanned out on the clipboard, offered with a straight face and an eleven-minute disclaimer nobody takes her up on.
 2. "That was not a sentence." — delivered flat, mid-interruption, while a bro is still talking.
-3. The post-launch checkout line — "Please sign here to confirm receipt of one [1] second-place prize." — delivered to a dripping, `port_o_cologne`-hazed bro with total procedural calm.
+3. The post-launch checkout line — "Please sign here to confirm receipt of one [1] second-place prize." — delivered with total procedural calm beside the runner, whose hand (not hers) is already extending the Hamagotchi to a dripping, `port_o_cologne`-hazed bro.
 
 ### Meme Potential
 - **"I told the sirs."** — her two-word rebuttal to Janek's "should someone tell the sirs," exportable as a caption for any moment someone was warned and ignored it anyway.
@@ -307,7 +307,7 @@ Precise, unhurried Central European English, delivered with the same flat clarit
 
 - **Petra must never lie, in any line, in any branch, including barks.** This is a hard constraint carried over from the quest doc. If a writer needs pacing relief, the fix is a bro interrupting her, not Petra omitting a fact.
 - **The "seconds until they mention college" tally** is a private running gag — implement as an optional barked aside on repeat sign-ups, never as a UI element or a line she says to the bros directly.
-- **The post-launch checkout line** ("Please sign here to confirm receipt of one [1] second-place prize.") must ship on the LOSS/consolation hand-off exactly as written — it is technically accurate (there were two non-winning contestants, both effectively tied for second) and depends entirely on flat delivery for the joke to land.
+- **The post-launch checkout line** ("Please sign here to confirm receipt of one [1] second-place prize.") must ship on the LOSS/consolation hand-off exactly as written. Petra stages it beside the Shady Productions runner, who is the one physically holding and extending `item_hamagotchi_consolation` per the quest doc — Petra never touches the item, only the clipboard. The line is technically accurate regardless of whether one or all three bros lose ("second place" = "everyone who did not win"), and her follow-up line must not hardcode a fixed headcount — have her check the clipboard and describe the count she sees rather than stating a number in the profile text.
 - Voice acting priority: lock the flat disclosure cadence before the checkout line, since the checkout line's humor depends on it sounding like more of the same procedural voice, not a punchline delivery.
 - Dependency: her release-form and disclosure dialogue should stay byte-consistent with the quoted lines in `Design/Quests/Location Specific/Debaucheryville/bacchanusbeachbeatdown.md` — do not paraphrase the canon lines in a later pass.
 
