@@ -55,4 +55,5 @@ func _unhandled_input(event: InputEvent) -> void:
 		for area in _interact_zone.get_overlapping_areas():
 			if area.has_method("interact"):
 				area.interact()
+				get_viewport().set_input_as_handled()
 				return

@@ -12,6 +12,7 @@ var _text_label: Label
 var _options_box: VBoxContainer
 var _full_text: String = ""
 var _typing: bool = false
+var _type_tween: Tween
 
 func _ready() -> void:
 	layer = 10
@@ -59,10 +60,10 @@ func _start_typing() -> void:
 	_typing = true
 	_clear_options()
 	_text_label.text = ""
-	var tween := create_tween()
+	_type_tween = create_tween()
 	var duration := _full_text.length() / CHARS_PER_SECOND
-	tween.tween_method(_set_visible_chars, 0, _full_text.length(), duration)
-	tween.finished.connect(_on_typing_done)
+	_type_tween.tween_method(_set_visible_chars, 0, _full_text.length(), duration)
+	_type_tween.finished.connect(_on_typing_done)
 
 func _set_visible_chars(count: int) -> void:
 	_text_label.text = _full_text.substr(0, count)
@@ -103,8 +104,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if _typing and event.is_action_pressed("interact"):
 		# Skip the typewriter animation.
 		get_viewport().set_input_as_handled()
-		for tween in get_tree().get_processed_tweens():
-			tween.kill()
+		if _type_tween and _type_tween.is_valid():
+			_type_tween.kill()
 		_on_typing_done()
 
 func _close() -> void:
