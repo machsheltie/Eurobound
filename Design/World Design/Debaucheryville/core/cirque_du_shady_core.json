@@ -1,0 +1,117 @@
+{
+  "location_id": "debaucheryville_circus_cirque_du_shady_01",
+  "display_name": "The Cirque du Shady",
+  "satirical_subtitle": "A semi-permanent traveling circus that has not traveled since 1997",
+  "world": "debaucheryville",
+  "zone": "circus_grounds",
+  "location_type": "quest_hub",
+  "sub_types": ["attraction_cluster", "production_company_hq", "carnival_grift_ecosystem"],
+
+  "zone_tags": [
+    "main_gate",
+    "big_top",
+    "prophecy_tent",
+    "game_alley",
+    "prize_booth",
+    "meat_cart_pitch",
+    "performance_circle",
+    "shady_productions_office",
+    "icq_backroom"
+  ],
+
+  "access": {
+    "time_restrictions": {
+      "always_accessible": false,
+      "open_time": "14:00",
+      "close_time": "01:00",
+      "note": "Grounds open 14:00-01:00 daily, crossing midnight. Individual stitched sub-locations keep their own posted hours where already established (prize_booth: 'whenever the circus is open'); this window is authoritative for the grounds as a whole, per cirque_du_shady.md Access & Requirements."
+    },
+    "stat_requirements": null,
+    "item_requirements": null,
+    "previous_locations": null,
+    "special_conditions": {
+      "filming_day_hamstradamus_absence": "On Beatdown filming days (filming_day_active == true), Hamstradamus is physically absent from prophecy_tent, relocated to Fauxst Beach as prize-giver per hamstradamus.md",
+      "filming_day_gear_traffic": "shady_productions_office and the riverside gear path see increased foot traffic toward the Bohemian Riviera on filming days",
+      "beatdown_aware_trigger": "Set on first examination of the shady_productions_office folding table/fax machine, or on hearing Vance mention 'the show'",
+      "vance_met_trigger": "Set on first dialogue with Ringmaster Vance",
+      "cirque_visited_trigger": "Set on first entry to the grounds via either gate"
+    }
+  },
+
+  "exits": [
+    {
+      "exit_id": "to_old_town_streets",
+      "destination": "debaucheryville_oldtown_streets_01",
+      "direction": "landward_west_main_gate",
+      "requirements": null
+    },
+    {
+      "exit_id": "to_bohemian_riviera",
+      "destination": "debaucheryville_riverfront_bohemian_riviera_01",
+      "direction": "riverside_gear_path_upriver",
+      "requirements": null
+    }
+  ],
+
+  "atmosphere": {
+    "primary_mood": "cheerfully_transparent_carnival_grift",
+    "secondary_moods": ["fried_sugar_and_machine_oil", "warped_calliope_nostalgia", "reality_tv_recruitment_undertow"],
+    "crowd_level": "medium",
+    "noise_level": "high",
+    "lighting": {
+      "day": "flat_dusty_daylight_filtered_through_canvas_seams",
+      "night": "neon_marquee_over_main_gate_and_string_bulbs_along_game_alley_everything_else_lit_by_tent_flap_spill"
+    }
+  },
+
+  "visual_theme": {
+    "primary_colors": ["#B22222", "#F5F0DC"],
+    "accent_colors": ["#FF6EC7", "#C0C0C8", "#6A0DAD", "#D4AF37"],
+    "architectural_style": "faded_red_and_cream_big_top_canvas_that_has_not_traveled_since_1997",
+    "key_visual_elements": [
+      "hand_painted_main_gate_arch",
+      "warped_plywood_ticket_booth",
+      "big_top_dome_with_rust_ringed_support_pole",
+      "vance_tent_perpetually_fogged_flap",
+      "unmarked_icq_backroom_canvas_flap",
+      "rigged_game_alley_rig",
+      "shady_productions_folding_table_and_fax_machine",
+      "shrink_wrapped_2003_prize_pallet",
+      "knife_target_board"
+    ]
+  },
+
+  "satirical_design": {
+    "primary_target": "traveling_circus_as_full_stack_scam_ecosystem",
+    "secondary_targets": [
+      "semi_permanent_branding_that_quietly_admits_permanence",
+      "fax_machine_as_symbol_of_unmodernized_infrastructure",
+      "showmen_overselling_in_exactly_the_register_marks_want_to_hear",
+      "reality_tv_recruitment_of_the_most_gullible_foot_traffic"
+    ],
+    "buffoon_delusion": {
+      "what_bros_think": "They have discovered the real, functioning nerve center of an international entertainment operation - a circus that's secretly a media empire, and they, specifically, are the kind of guys a media empire would want.",
+      "what_actually_happens": "A rigged game alley, a garbage-prize booth, a food cart of questionable provenance, a prophet nobody believes despite being always right, a failed street performer busking for tips, a knife act older than most of the tourists, and a fax machine that has printed the same flyer for twenty-two seasons, all operating under one canvas dome that has not moved since before most of them could drive."
+    }
+  },
+
+  "state_tracking": {
+    "cirque_visited": false,
+    "beatdown_aware": false,
+    "vance_met": false,
+    "filming_day_active": false,
+    "icq_backroom_hackthrough_seen": false,
+    "return_visit_count": 0
+  },
+
+  "performance": {
+    "target_fps": 60,
+    "min_target_fps": 45,
+    "max_draw_calls": 45,
+    "min_draw_calls": 30,
+    "memory_budget_mb": 70,
+    "min_memory_budget_mb": 55,
+    "particle_limit": 20,
+    "note": "Nine active zones stitched into one grounds (main_gate, big_top, prophecy_tent, game_alley, prize_booth, meat_cart_pitch, performance_circle, shady_productions_office, icq_backroom); individual stitched sub-locations retain their own already-specified performance budgets, per cirque_du_shady.md Technical Requirements."
+  }
+}

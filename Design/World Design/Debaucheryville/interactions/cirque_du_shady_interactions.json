@@ -1,0 +1,301 @@
+{
+  "location_id": "debaucheryville_circus_cirque_du_shady_01",
+
+  "events": [
+    {
+      "event_id": "prophecy_roulette",
+      "display_name": "Prophecy Roulette",
+      "event_type": "triggered",
+      "trigger": {
+        "type": "interaction",
+        "condition": "Player pays 5 coins to Hamstradamus at prophecy_tent"
+      },
+      "duration_seconds": 15,
+      "full_mechanics_defined_in": "Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md",
+      "note": "Ambient event fully specified in hamstradamus.md and not restated here per cirque_du_shady.md's stitching-only design; this entry registers the event hook at the grounds level only.",
+      "sequence": [
+        {
+          "phase": "prophecy_trance",
+          "duration_seconds": 8,
+          "description": "Whiskers go still, booming voice engages.",
+          "speaker": "debaucheryville_npc_hamstradamus_01",
+          "animation": "prophecy_trance",
+          "audio": "prophecy_tent_glow_prophecy_in_progress_cue"
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "grant_random_buff_or_debuff",
+          "target": "player",
+          "value": "see hamstradamus.md for the full random table"
+        }
+      ]
+    },
+
+    {
+      "event_id": "knife_throw_act",
+      "display_name": "Knife-Throwing Act (Rotating Performance)",
+      "event_type": "scheduled",
+      "trigger": {
+        "type": "location_entry",
+        "condition": "performance_circle zone, rotating schedule shared with Bobo's balloon-animal pitch, per cirque_du_shady.md"
+      },
+      "duration_seconds": 30,
+      "sequence": [
+        {
+          "phase": "act_in_progress",
+          "duration_seconds": 30,
+          "description": "The knife-thrower and Blanka run the act at the target board; a wooden target board, permanently scarred, leans against a support post when not in use.",
+          "speaker": "debaucheryville_npc_blanka_knife_assistant_01",
+          "dialogue": "You want my job? Fine. Stand there. Don't flinch - flinching is how you get hit. I flinch never.",
+          "animation": "idle_at_target_board",
+          "audio": "knife_throw_whistle_and_thunk"
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "unlock_interaction",
+          "target": "knife_throw_dodge",
+          "value": true
+        }
+      ],
+      "note": "No knife-thrower name or full performer mechanics are established beyond prose in the parent profile - if a future pass gives him a name and mechanics, he needs his own sheet; out of scope here, per Cirque_du_Shady_PNG_Assets.md Sprite Sheet 7 Technical Notes."
+    },
+
+    {
+      "event_id": "beatdown_promo",
+      "display_name": "Vance's Beatdown Promo",
+      "event_type": "dialogue_sequence",
+      "trigger": {
+        "type": "interaction",
+        "condition": "Player talks to Vance at big_top, or examines the shady_productions_fax object at shady_productions_office"
+      },
+      "duration_seconds": 20,
+      "sequence": [
+        {
+          "phase": "the_pitch",
+          "duration_seconds": 12,
+          "speaker": "debaucheryville_npc_vance_vallaro_01",
+          "dialogue": "You want to be on TELEVISION? Shady Productions, folding table's right behind the big top. The Bacchanus Beach Beatdown, Season 22. Walk the gear path down to Fauxst Beach on the Bohemian Riviera, tell 'em Vance sent you - (exhale) - not that it gets you anything. Just tell 'em anyway.",
+          "animation": "vape_exhale",
+          "audio": "vape_cloud_particles_dialogue_triggered_dense"
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "set_state",
+          "target": "beatdown_aware",
+          "value": true
+        },
+        {
+          "effect": "route_pointer",
+          "target": "debaucheryville_riverfront_bohemian_riviera_01",
+          "destination_zone": "fauxst_beach",
+          "destination_npc": "debaucheryville_npc_petra_production_assistant_01",
+          "note": "This event is a foreshadowing/routing pointer only. It does NOT grant quest_start, does NOT open a sign-up flow, and does NOT duplicate any Beatdown mechanic. The actual quest origin (debaucheryville_sidequest_bacchanus_beach_beatdown_01, role quest_origin) is Petra at signup_table on the Bohemian Riviera, per bacchanusbeachbeatdown.md and bohemian_riviera_location_nodes.json. This matches cirque_du_shady.md's own framing: 'this office is flavor, foreshadowing, and the beatdown_aware state trigger, not a second quest-start point.'"
+        }
+      ]
+    },
+
+    {
+      "event_id": "icq_hackthrough_popin",
+      "display_name": "ICQ Backroom Hack-Through Pop-In",
+      "event_type": "triggered",
+      "trigger": {
+        "type": "time_based",
+        "condition": "icq_backroom zone, evening-night hours (18:00-01:00), random chance; most likely after dark per cirque_du_shady.md Time-of-Day Variations"
+      },
+      "duration_seconds": 10,
+      "sequence": [
+        {
+          "phase": "popin",
+          "duration_seconds": 10,
+          "description": "A random Darkweb Dossier 'hack-through' pop-in intrudes on the ICQ terminal, sharing the same ICQ substrate and at least one handle (Tony420) with the bacchanusbeachbeatdown.md ICQ Scammer Sting cast.",
+          "animation": "icq_terminal_hack_through_active",
+          "audio": "icq_terminal_hack_through_static"
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "set_state",
+          "target": "icq_backroom_hackthrough_seen",
+          "value": true
+        }
+      ],
+      "note": "Hook-level cross-reference to the ICQ Scammer Sting questline per cirque_du_shady.md Quest Integration; no new Darkweb Dossier content is authored here."
+    }
+  ],
+
+  "interactive_objects": [
+    {
+      "object_id": "ticket_booth_transaction",
+      "type": "usable",
+      "interaction_text": "Buy admission (€5)",
+      "description": "Grants access to further paid attractions, nothing else. A hand-cranked ticket dispenser jams on purpose - per the attendant, 'builds anticipation.'",
+      "rewards": [],
+      "requirements": null,
+      "animation": "ticket_dispenser_jam_and_release",
+      "audio_cue": "ticket_dispenser_jam_and_release",
+      "one_time_only": false
+    },
+    {
+      "object_id": "corkboard_flyers_examine",
+      "type": "examinable",
+      "interaction_text": "Examine the corkboard",
+      "description": "Overlapping flyers: Prophecy Roulette hours (cross-references hamstradamus.md, not re-specified here), a faded Vanishing Elephant 'Bubbles' missing-pet-style poster (the elephant is still, technically, on the premises - Vanishing Elephant sidequest hook per debaucheryville.md/game_design_document.md, not designed here), and one current Shady Productions casting flyer, curling at the corners.",
+      "rewards": [],
+      "requirements": null,
+      "animation": null,
+      "audio_cue": null,
+      "one_time_only": false,
+      "easter_egg": {
+        "trigger": "examine_bubbles_poster",
+        "reveal": "The Vanishing Elephant ('Bubbles') sidequest hook - recover the elephant before he's sold to a questionable nightclub. Hook only, not designed in this document."
+      }
+    },
+    {
+      "object_id": "shady_productions_fax",
+      "type": "usable",
+      "interaction_text": "Examine the fax machine",
+      "description": "A fax machine that predates the current millennium by a comfortable margin, humming behind the big top's canvas wall. It periodically spits a Casting-Call Flyer - the same flyer, every time, reading 'WANTED: ATHLETIC-INTELLECTUAL HYBRID. CARGO SHORTS PREFERRED. NO EXPERIENCE NECESSARY.' A hand-lettered sign taped to it reads 'SHADY PRODUCTIONS - HOME OF THE BACCHANUS BEACH BEATDOWN - SEASON 22.'",
+      "rewards": [
+        {
+          "item": "item_beatdown_casting_flyer",
+          "probability": 1.0
+        }
+      ],
+      "requirements": null,
+      "animation": "fax_machine_paper_spit",
+      "audio_cue": "fax_paper_spit",
+      "one_time_only": false,
+      "easter_egg": {
+        "trigger": "read_flyer_aloud",
+        "reveal": "The same flyer, every time, prints out as though it were written specifically for the reader. It has fed out of the same fax machine for twenty-two seasons."
+      }
+    },
+    {
+      "object_id": "prize_pallet_2003_office_examine",
+      "type": "examinable",
+      "interaction_text": "Examine the shrink-wrapped pallet",
+      "description": "A shrink-wrapped merchandise pallet stamped 2003, visible at the tent-flap edge of shady_productions_office - the same pallet documented at Fauxst Beach in bohemian_riviera.md, evidently the overflow storage location for the same physical merchandise stock split across two storage locations.",
+      "rewards": [],
+      "requirements": null,
+      "animation": null,
+      "audio_cue": null,
+      "one_time_only": false
+    },
+    {
+      "object_id": "milk_bottle_toss_rigged_game",
+      "type": "usable",
+      "interaction_text": "Play the milk bottle toss (€3)",
+      "description": "Milk bottles filled with concrete. Average yield 5-15 tickets per €3 game, statistically worse than the prize costs, feeding directly into prize_booth's ticket-tier economy.",
+      "rewards": [
+        {
+          "currency": "circus_tickets",
+          "amount_min": 5,
+          "amount_max": 15,
+          "probability": 1.0
+        }
+      ],
+      "requirements": null,
+      "animation": "rigged_game_attempt",
+      "audio_cue": "barker_patter",
+      "one_time_only": false
+    },
+    {
+      "object_id": "ring_toss_rigged_game",
+      "type": "usable",
+      "interaction_text": "Play the ring toss (€3)",
+      "description": "Oversized rings against undersized bottle necks. Average yield 5-15 tickets per €3 game.",
+      "rewards": [
+        {
+          "currency": "circus_tickets",
+          "amount_min": 5,
+          "amount_max": 15,
+          "probability": 1.0
+        }
+      ],
+      "requirements": null,
+      "animation": "rigged_game_attempt",
+      "audio_cue": "barker_patter",
+      "one_time_only": false
+    },
+    {
+      "object_id": "coin_pusher_rigged_game",
+      "type": "usable",
+      "interaction_text": "Play the coin pusher (€3)",
+      "description": "A coin-pusher tilted three degrees off level. Average yield 5-15 tickets per €3 game.",
+      "rewards": [
+        {
+          "currency": "circus_tickets",
+          "amount_min": 5,
+          "amount_max": 15,
+          "probability": 1.0
+        }
+      ],
+      "requirements": null,
+      "animation": "rigged_game_attempt",
+      "audio_cue": "barker_patter",
+      "one_time_only": false
+    },
+    {
+      "object_id": "vance_loot_crate_pitch",
+      "type": "usable",
+      "interaction_text": "Buy a Shady Loot Crate Voucher",
+      "description": "Vance pitches and sells the voucher here at big_top; fulfillment happens at prize_booth, where Yolanda hands over the crate. Two-zone transaction by design, per cirque_du_shady.md Economic Integration.",
+      "rewards": [
+        {
+          "item": "item_shady_loot_crate_voucher",
+          "probability": 1.0
+        }
+      ],
+      "requirements": null,
+      "animation": "loot_crate_pitch_gesture",
+      "audio_cue": "vape_cloud_particles_dialogue_triggered_dense",
+      "one_time_only": false
+    }
+  ],
+
+  "environmental_interactions": [
+    {
+      "trigger_id": "icq_backroom_night_proximity",
+      "type": "proximity",
+      "requirement": null,
+      "effect": "icq_backroom's night CRT-glow state signals the hack-through event is more likely after dark; see events.icq_hackthrough_popin",
+      "audio_cue": null
+    }
+  ],
+
+  "mini_games": [
+    {
+      "mini_game_id": "knife_throw_dodge",
+      "display_name": "Knife-Throwing Dodge Round",
+      "type": "timing",
+      "duration_seconds": null,
+      "mechanics": {
+        "objective": "Player takes Blanka's spot at the target board and dodges thrown knives.",
+        "controls": "Directional dodge prompts (left/right/center), per knife_dodge_prompt_ui.png",
+        "scoring": "Full mechanical spec (scoring, difficulty, exact reward values) is intentionally left as a hook in cirque_du_shady.md, consistent with how bohemian_riviera.md treats night_party_zone - deferred to a future pass."
+      },
+      "status": "hook_only_full_spec_deferred",
+      "rewards": {
+        "success": "Tip jar bonus (amount deferred to future pass)",
+        "failure": "No penalty specified (deferred to future pass)"
+      }
+    }
+  ],
+
+  "return_visit_changes": {
+    "visit_2_plus": {
+      "new_dialogue": true,
+      "npc_recognition": true,
+      "note": "Hamstradamus delivers his 'BACK AGAIN. GOOD.' callback line. Vance treats every walk-up as a potential talent discovery regardless of visit count, per cirque_du_shady.md Buffoon Delusion Scenarios."
+    }
+  },
+
+  "narrator_commentary": {
+    "on_entering": "Old Town cobblestones give way to trampled grass and sawdust well before the gate itself is visible - the smell arrives first.",
+    "on_key_moment": "The ticket booth's sign says 'everything else extra' in plain English before they've paid for anything, and it changes nothing about what a bro chooses to believe he's walking into.",
+    "on_exit": "The dome is visible from streets away, faded red-and-cream, and has clearly not moved, in any literal sense, in a very long time."
+  }
+}
