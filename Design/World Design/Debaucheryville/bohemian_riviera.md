@@ -84,6 +84,12 @@
 - The "NO DIVING (SERIOUSLY, IT'S 40cm)" sign — the depth on the sign and the depth Standa the lifeguard will admit to under direct questioning do not match, and nobody involved considers this a problem worth resolving
 - Loose beach chairs, none matching, several clearly borrowed from the bar strip and never returned
 
+#### `bar_strip`
+Three named beach bars line the embankment behind Fauxst Beach, each committing to a different flavor of landlocked-resort delusion:
+- **Žá Žá Beach Klub** — a repainted shipping container strung with fairy lights and sold to vacationers as "VIP beach access," despite opening directly onto the same public sand as everyone else.
+- **The Tan Line** — a sports-bar shell wallpapered in tanning-bed neon, playing beach volleyball highlights on a loop from a coastline none of its patrons have ever visited.
+- **Kokos Loco** — a tiki-hut facade selling piña coladas in coconut shells that are, on close inspection, imported plastic molded to look tropical.
+
 #### `catapult_row`
 - The three-unit pneumatic catapult rig, permanent between tapings, roped off with hazard tape and a four-language "DO NOT ENTER — FILMING EQUIPMENT" sign when idle
 - Three port-o-potties strapped to the arm; the center unit's door latch is visibly broken and swings open under its own weight
@@ -137,7 +143,7 @@
 - **Secondary Targets**: Landlocked "beach resort" cosplay (trucked-in sand, inflatable palms, space heaters in July, a lifeguard tower over ankle-deep water); aging bros measuring themselves against college-age vacationers on a curve only they can see; sponsorship desperation (a host contractually drinking from three competing energy-drink cans at once); beach-resort pricing applied to a river embankment
 - **Cultural Specificity**: The monolingual tourist's total confidence in a language he has never attempted; MTV/reality-TV era nostalgia (2003-vintage prize pallets, VHS-style aired episodes, EMTV camera cranes) collapsing directly into present-day influencer behavior (Chadwick's livestreamed sign-up, ICQ chat as a cheat channel)
 - **Humor Approach**: Affectionate mockery of tourist delusion and reality-TV machinery; the locals running the show (Petra, Jaxson, the vendors) are savvy entrepreneurs playing it completely straight, never villains
-- **Sensitivity Considerations**: Satire targets tourist psychology and reality-TV formats, never Czech people; no crypto elements; "summer vacation," never "spring break"; world names only — Debaucheryville, The Bacchanus
+- **Sensitivity Considerations**: Satire targets tourist psychology and reality-TV formats, never Czech people; no crypto elements; framed throughout as a summer vacation trip, not the other seasonal college-travel cliché; world names only — Debaucheryville, The Bacchanus
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Manufactured humiliation as broadcast product, sold back to the humiliated as "fame"
@@ -350,7 +356,7 @@ bohemian_riviera_state:
 - [x] **Technical feasibility confirmed** — staggered catapult launches, crowd density, bar-strip TV loop all achievable within stated performance budget
 - [x] **No crypto elements** — none present
 - [x] **Seedy underbelly present** — reality-TV humiliation-as-product economy, landlocked beach-resort pricing
-- [x] **"Summer vacation" framing maintained** — never "spring break"
+- [x] **Summer vacation framing maintained throughout** — the other seasonal college-travel cliché is never used
 
 ### Post-Implementation Testing
 - [ ] All six zone tags (`fauxst_beach`, `bar_strip`, `catapult_row`, `signup_table`, `prize_podium`, `night_party_zone`) resolve to distinct, navigable areas
