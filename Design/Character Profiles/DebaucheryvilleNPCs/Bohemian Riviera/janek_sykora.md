@@ -32,7 +32,7 @@ Janek is never performing for the bros, never competing against them in any way 
 | Attribute | Description |
 |-----------|--------------|
 | Age | 22 |
-| Build | Elite rower's physique — broad-shouldered, long-limbed, built by five-mile mornings rather than a gym mirror; the kind of build that reads as effortless because it is, at this point, simply how his body works |
+| Build | Elite rower's physique — broad-shouldered, long-limbed, built by five-mile mornings rather than a gym mirror; closer to a marble athlete off a classical frieze than to anyone else on this beach, and just as unbothered by being looked at; the kind of build that reads as effortless because it is, at this point, simply how his body works |
 | Height | Tall |
 | Energy | Calm, unhurried, quietly present — a man who has never once needed to raise his voice to be heard |
 
@@ -83,6 +83,21 @@ Janek's actual motivation, for the entire encounter, is his crew team and the fi
 
 **To Petra, setting his bag down at the base of the podium, in Czech**:
 > "Should someone tell the sirs what they've signed?" — **Petra**: "I told the sirs." — **Janek**: "That's good. That's polite of you."
+
+### Ambient Courtesy — International Vacationers (Off-Round)
+*Walking the strip between tapings or on the way back from a morning row — never on set, never on the clock, never anywhere near the bros. This is simply how his day runs the rest of the time.*
+
+**A vacationer, offering a camera**: "Pardon, monsieur, une photo?"
+
+**Janek Sýkora** *(flawless, warm, in French)*:
+> "Bien sûr. Avec plaisir." *(Of course. With pleasure.)*
+
+**A vacationer at a bar table, squinting at a paper map**: "Entschuldigung — wo ist der Fluss?"
+
+**Janek Sýkora** *(flawless, warm, in German, pointing back toward the water)*:
+> "Dort drüben, gleich hinter der Bühne." *(Over there, just behind the stage.)*
+
+*He answers both exactly the way he answers Jaxson's questions — promptly, kindly, and without once making it about himself.*
 
 ### Key Interaction Dialogue
 *Phase 1, answering each round in turn — brief, unhurried, correct, and delivered without once looking up from wherever his gaze has settled on the water:*
