@@ -1,0 +1,10 @@
+
+[gd_scene load_steps=2 format=3 uid="uid://memelordvendor"]
+
+[node name="MemeLordVendor" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = null
+
+[ext_resource path="res://Godot/Narrative/Dialogue/memelord_dialogue.gd" type="Script" id=1]

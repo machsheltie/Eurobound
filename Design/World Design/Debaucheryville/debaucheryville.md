@@ -72,7 +72,7 @@ Semi-Permanent Traveling Circus
     • Rigged carnival games with joke prizes 
     • Backroom ICQ hotspots with Darkweb Dossier character infiltrations 
 Cyberspace Kavarna
-Underground Connection Point
+24-Hour Internet Café - Underground Connection Point
     • Free Wi-Fi with scammer ICQ threads 
     • Optional sting operation sidequests 
     • Metro platform access for quick travel 

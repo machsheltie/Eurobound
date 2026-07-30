@@ -1,0 +1,9 @@
+
+{
+  "name": "Funcoland Futures NFT – #1999",
+  "type": "NFT",
+  "rarity": "Legendary",
+  "effect": "+1 Charisma when bargaining with shady vendors",
+  "tooltip": "Do not attempt to redeem at any real-world retailer unless you enjoy disappointment.",
+  "unlock_condition": "MemeMasteryMeterFullyCharged"
+}

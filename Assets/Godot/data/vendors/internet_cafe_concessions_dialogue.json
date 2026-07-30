@@ -1,0 +1,36 @@
+
+{
+  "vendor": "Donny.exe",
+  "dialogue": [
+    {"line": "This meat’s been decentralized, baby."},
+    {"line": "You want toppings? I only accept blockchain drizzle."},
+    {"line": "I deep-fried the future and served it with packet loss."}
+  ],
+  "menu": [
+    {
+      "item": "CryptoDoner Box",
+      "price": "5€",
+      "effect": "+2 random stats, DigiDysentery (menu inversion for 2 mins)"
+    },
+    {
+      "item": "Thermal Paste Sundae",
+      "price": "3€",
+      "effect": "+5 INT, -3 HP per turn"
+    },
+    {
+      "item": "RAM Chips & Dip",
+      "price": "4€",
+      "effect": "+15% XP next battle, attracts pop-up mobs"
+    },
+    {
+      "item": "Alt+Meat Slider",
+      "price": "6€",
+      "effect": "+5 HP, +1 Bravado, chance for ICQ unlock"
+    },
+    {
+      "item": "404 Juice",
+      "price": "2€",
+      "effect": "Cures Sleep, grants Caffeine Twitch"
+    }
+  ]
+}

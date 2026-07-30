@@ -1,6 +1,6 @@
 ICQ Scammer Sting
 
-Premise: 24-Hour Internet Café hosts scammer threads. NPC asks you to help expose them.
+Premise: Cyberspace Kavarna hosts scammer threads. NPC asks you to help expose them.
 
 Gameplay: Fake ICQ chat minigame with branching dialogue. Choose sarcastic replies, gullible acceptance, or over-the-top trolling.
 
