@@ -73,12 +73,12 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Sand Variant (footprints) | (512, 0) | 256x128 | Worn crowd-traffic patch |
 | Delivery Receipt Sign | (768, 0) | 128x64 | "40 TONS — NOT FOR HUMAN CONSUMPTION" |
 | Lounger Cluster | (0, 256) | 256x128 | Mismatched beach chairs |
-| Lifeguard Tower Base | (256, 256) | 192x256 | Structural tower, spans into Sheet 4 |
+| Lifeguard Tower Base | (256, 256) | 192x256 | Structural tower background placement; full interactive foreground tower with Standa in Sprite Sheet 8 |
 | Riverbank Edge | (448, 256) | 320x128 | Sand-to-water transition |
 | No Diving Sign Post | (768, 128) | 96x128 | Zip-tied hand-lettered sign |
 
 ### Technical Notes:
-- Sand tile needs a subtle heat-shimmer overlay hook (see Sprite Sheet 12) at midday
+- Sand tile needs a subtle heat-shimmer overlay hook (see Sprite Sheet 8: Environmental Props & Effects) at midday
 - Delivery receipt is a static readable-on-approach detail, not an interactable
 
 ---
@@ -117,14 +117,14 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Launch Animation — Wind-Up | (640, 0) | 128x128 | 2 frames |
 | Launch Animation — Release | (640, 128) | 384x128 | 6 frames, staggered per unit |
 | Launch Animation — Mid-Arc | (0, 256) | 384x128 | 4 frames, arc must clear palms/tower |
-| Launch Animation — Splash Impact | (384, 256) | 256x128 | 4 frames, ties to Sprite Sheet 12 |
+| Launch Animation — Splash Impact | (384, 256) | 256x128 | 4 frames; reusable particle overlay mirrored in `launch_splash_and_arc.png` (Required PNG Files #18) |
 | Hazard Tape / Off-Season Dressing | (0, 384) | 256x64 | Roped-off state between tapings |
 | Prize Pallet (2003, background) | (256, 384) | 192x128 | Half-opened, visible not pointed at |
 
 ### Technical Notes:
 - **Three independently-triggerable launch units required** — build as separate triggerable animation instances, not a single combined three-unit sequence, so Launch One (Q4 interruption) and Launch Two (Q7 mid-syllable) can fire on independent timers
 - Broken center-unit door-swing needs its own idle-open state, reusable outside the launch sequence
-- Arc must visibly clear inflatable palms and lifeguard tower before water contact (see Sprite Sheet 1 & 4 for silhouette reference)
+- Arc must visibly clear inflatable palms and lifeguard tower before water contact (see Sprite Sheet 1 for the lifeguard tower silhouette and Sprite Sheet 7 for the inflatable palm silhouettes)
 
 ---
 
@@ -157,7 +157,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Pose | Position | Size | Description |
 |------|----------|------|-------------|
 | Hosting Idle | (0, 0) | 64x96 | Cue card up, Oakleys on |
-| Triple-Can Sip | (64, 0) | 192x96 | Rehearsed simultaneous sip, 3 frames |
+| Triple-Can Sip | (64, 0) | 192x96 | Rehearsed triple-can sip, 6 frames at 32x96 each (2 per can) |
 | Lever Pull | (256, 0) | 64x96 | "Unfortunately, bro." |
 | Oakleys Removal (DQ) | (0, 96) | 64x96 | Disqualification stance |
 | Crowd Scan | (64, 96) | 64x96 | Camera-trained sweep |
@@ -243,6 +243,119 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 
 ---
 
+## 🏗️ Sprite Sheet 8: Environmental Props & Effects
+**Files:** `space_heaters.png`, `lifeguard_tower.png`, `no_diving_sign.png`, `release_forms_and_clipboard.png`, `prize_pallet_2003.png`, `heat_shimmer.png`, `confetti_and_string_lights.png`, `port_o_cologne_flies.png`
+
+### File Dimensions:
+| File | Dimensions |
+|------|------------|
+| space_heaters.png | 128x128 |
+| lifeguard_tower.png | 192x320 |
+| no_diving_sign.png | 96x128 |
+| release_forms_and_clipboard.png | 256x192 |
+| prize_pallet_2003.png | 192x128 |
+| heat_shimmer.png | 128x128 |
+| confetti_and_string_lights.png | 256x128 |
+| port_o_cologne_flies.png | 96x96 |
+
+### Space Heaters (`space_heaters.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Heater, Idle | (0, 0) | 64x64 | Off-season standby state |
+| Heater, Full Blast (glow) | (64, 0) | 64x64 | Orange-coil July setting, ties to Space Heater Orange #FF7F32 |
+
+### Lifeguard Tower (`lifeguard_tower.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Tower Structure, Interactive Foreground | (0, 0) | 128x256 | Full-detail object, distinct from the background placement baked into Sprite Sheet 1's tileset |
+| Standa, Perched (reading) | (128, 0) | 64x64 | Composited at the platform mark |
+| Standa, Whistle-Blow Overlay | (128, 64) | 64x64 | Reaction state, plays on any witnessed catapult launch |
+
+### No Diving Sign (`no_diving_sign.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Sign Post + Board | (0, 0) | 64x96 | "NO DIVING (SERIOUSLY, IT'S 40cm)" hand-lettered board |
+| Zip-Tie Detail (examine close-up) | (64, 0) | 32x32 | Readable-on-approach detail |
+
+### Release Forms & Clipboard (`release_forms_and_clipboard.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Clipboard, Idle | (0, 0) | 96x96 | Coiled-cord pen attached |
+| Release Forms, Fanned (x3) | (96, 0) | 128x96 | Four-page Czech-parody legalese, fanned for sign-up |
+| Clipboard Tick, Close-Up | (224, 0) | 32x32 | Precise checkmark detail |
+
+### Prize Pallet 2003 (`prize_pallet_2003.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Pallet, Shrink-Wrapped | (0, 0) | 96x128 | Sealed state, background dressing at `catapult_row` |
+| Pallet, Half-Opened | (96, 0) | 96x128 | Badges, steins, Hamagotchis visible in bulk — never pointed at |
+
+### Heat Shimmer (`heat_shimmer.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Shimmer Overlay, 4-Frame Loop | (0, 0) | 128x128 | Midday sand heat distortion, referenced from Sprite Sheet 1 |
+
+### Confetti & String Lights (`confetti_and_string_lights.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Confetti Burst, 4 Frames | (0, 0) | 128x64 | Post-WIN prize podium celebration |
+| String Light Strand (day, inactive) | (128, 0) | 64x64 | `night_party_zone` dressing, daytime state |
+| String Light Strand (night, amber glow) | (128, 64) | 64x64 | `night_party_zone` dressing, ties to Night String-Light Amber #FFC966 |
+
+### Port-O-Cologne Flies (`port_o_cologne_flies.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Fly Swarm, 4-Frame Ambient Loop | (0, 0) | 64x64 | Trails any party member with `port_o_cologne` active |
+| Fly Swarm, Dissipate | (64, 0) | 32x32 | Plays once on cure (Zdenka's riverbank shower) |
+
+### Technical Notes:
+- Splash-impact particles remain owned by Sprite Sheet 3 (`catapult_rig_and_toilets.png`) and its `launch_splash_and_arc.png` overlay; this sheet covers ambient and prop-level effects only, not the launch sequence itself
+- Lifeguard tower's foreground interactive object is intentionally separate from the background tower tile in Sprite Sheet 1 (parallax layering, not a duplicate asset)
+
+---
+
+## 🎮 Sprite Sheet 9: Quest UI
+**Files:** `strike_counter_and_timer.png`, `suspicion_meter_oakleys.png`, `dialogue_and_prompt_ui.png`
+
+### File Dimensions:
+| File | Dimensions |
+|------|------------|
+| strike_counter_and_timer.png | 256x128 |
+| suspicion_meter_oakleys.png | 192x64 |
+| dialogue_and_prompt_ui.png | 384x256 |
+
+### Strike Counter & Timer (`strike_counter_and_timer.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Strike Icon, Unfilled (x3) | (0, 0) | 32x32 | Selected bro's counter only — non-selected bros have no on-screen strike UI per quest doc |
+| Strike Icon, Filled | (32, 0) | 32x32 | Struck state |
+| Timer Ring, Full | (64, 0) | 64x64 | 12-second countdown start |
+| Timer Ring, Depleting (8 frames) | (128, 0) | 64x64 | Countdown animation |
+| Timer Ring, Timeout Flash | (192, 0) | 64x64 | Fires a strike on timeout |
+
+### Suspicion Meter — Oakleys (`suspicion_meter_oakleys.png`) — Path B (Chadwick) only:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Oakleys, Baseline | (0, 0) | 48x32 | No suspicion — worn normally |
+| Oakleys, Tick 1 (tilted 1/4 inch) | (48, 0) | 48x32 | First GO LIVE activation |
+| Oakleys, Tick 2 (lowered to nose-tip) | (96, 0) | 48x32 | Second GO LIVE activation |
+| Oakleys, Tick 3 (removed, set on podium) | (144, 0) | 48x32 | Third activation — fires immediate disqualification |
+
+### Dialogue & Prompt UI (`dialogue_and_prompt_ui.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Dialogue Box | (0, 0) | 256x96 | Shared speech-bubble frame, all NPCs |
+| Answer Option Prompt (x4) | (0, 96) | 256x64 | Trivia gauntlet selectable-answer buttons; the bro's confidently-wrong shout is always one of the four |
+| GO LIVE Button (Path B) | (256, 96) | 96x64 | ICQ overlay trigger, Chadwick exclusive, disabled via animated unplug in Phase 2 |
+| Czech-Parody Question Box | (0, 160) | 256x64 | Diacritic-safe (ě š č ř ž ý á í é ů), no translation toggle |
+
+### Technical Notes:
+- No numeric counter, no bar fill, and no tooltip on the Suspicion Meter — the four Oakleys states are the entire UI, per NPC profile spec
+- GO LIVE button needs a disabled/unplugged-cord overlay frame for its Phase 2 lockout, animated rather than grayed out
+- Diacritic glyph coverage must be verified in the UI font before content lock — a missing glyph turns the Czech-parody joke into a bug report
+
+---
+
 ## 🎬 Animation Specifications
 
 ### Catapult Launch Sequence:
@@ -259,10 +372,10 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 - **Timing:** Synced to *THUNK-hisssss-splash* audio cue
 
 ### Jaxson's Triple-Sip:
-- **Duration:** ~2 seconds
-- **Frames:** 3 (rehearsed, visibly practiced motion)
+- **Duration:** ~2 seconds (6 frames @ 4fps = 1.5s, plus a 0.5s hold on the final frame for the camera-aware finish)
+- **Frames:** 6 (2 per can — reach, sip — rehearsed and visibly practiced motion)
 - **Loop:** No, plays as a "beat" filler on correct-answer resolution
-- **Timing:** 8fps, simultaneous three-can motion
+- **Timing:** 4fps base cadence, simultaneous three-can motion
 
 ### Janek's Buzzer-Wave:
 - **Duration:** Exactly 1.5 seconds (rig constraint, tied to gameplay win window)
@@ -286,6 +399,8 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Bohemian Riviera Environment Atlas | fauxst_beach_tileset, bar_strip_facades, catapult_rig_and_toilets | 2048x2048 |
 | Bohemian Riviera NPC Atlas | jaxson_vane, janek_sykora, petra, hamstradamus_beach_variant, rosta, standa, zdenka | 2048x2048 |
 | Bohemian Riviera Effects Atlas | launch_splash_and_arc, heat_shimmer, confetti_and_string_lights, port_o_cologne_flies | 1024x1024 |
+| Bohemian Riviera Props Atlas | space_heaters, lifeguard_tower, no_diving_sign, release_forms_and_clipboard, prize_pallet_2003 | 1024x1024 |
+| Bohemian Riviera UI Atlas | strike_counter_and_timer, suspicion_meter_oakleys, dialogue_and_prompt_ui | 1024x1024 |
 
 ### Performance Notes:
 - Vacationer crowd rendered as simplified distance sprites beyond `bar_strip` mid-ground; full detail only on close approach
@@ -295,7 +410,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 
 ---
 
-## 📋 Required PNG Files (18 Total)
+## 📋 Required PNG Files (29 Total)
 
 | # | Filename | Dimensions |
 |---|----------|------------|
@@ -317,8 +432,19 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | 16 | inflatable_palm_trees.png | 256x256 |
 | 17 | riverbank_portapotty_monuments.png | 256x256 |
 | 18 | launch_splash_and_arc.png | 512x256 |
+| 19 | space_heaters.png | 128x128 |
+| 20 | lifeguard_tower.png | 192x320 |
+| 21 | no_diving_sign.png | 96x128 |
+| 22 | release_forms_and_clipboard.png | 256x192 |
+| 23 | prize_pallet_2003.png | 192x128 |
+| 24 | heat_shimmer.png | 128x128 |
+| 25 | confetti_and_string_lights.png | 256x128 |
+| 26 | port_o_cologne_flies.png | 96x96 |
+| 27 | strike_counter_and_timer.png | 256x128 |
+| 28 | suspicion_meter_oakleys.png | 192x64 |
+| 29 | dialogue_and_prompt_ui.png | 384x256 |
 
-**Total Estimated Memory:** ~60MB
+**Total Estimated Memory:** ~70MB
 
 ---
 
