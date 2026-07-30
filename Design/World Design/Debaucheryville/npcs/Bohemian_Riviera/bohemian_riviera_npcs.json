@@ -1,0 +1,482 @@
+{
+  "location_id": "debaucheryville_riverfront_bohemian_riviera_01",
+
+  "npcs": [
+    {
+      "npc_id": "debaucheryville_npc_jaxson_vane_01",
+      "display_name": "Jaxson Vane",
+      "full_name": "Jaromír Vaněk (legal name; rebranded via talent contract as an \"imported American\" extreme-sports host)",
+      "npc_type": "quest_giver",
+      "role": "Reality-TV host; hosts the trivia gauntlet and Sudden Death, tracks the selected bro's strike counter, pulls the lever",
+      "location_zone": "catapult_row",
+      "secondary_zone": "prize_podium",
+      "behavior": "stationary",
+
+      "appearance": {
+        "age": 35,
+        "build": "gym-toned under an unevenly-applied spray tan",
+        "clothing": "sponsor tank top (Rampage! / Gnarly Juice / Extreme Bohemian Energy), board shorts never worn in water, flip-flops",
+        "accessories": ["wraparound_oakleys", "laminated_cue_card_deck_lanyard", "unblown_whistle"],
+        "notable_features": ["never_watches_a_launch", "rehearsed_triple_can_sip"]
+      },
+
+      "personality": {
+        "traits": ["contractually_enthusiastic", "emotionally_absent_at_launch", "sponsorship_disciplined", "professionally_non_reactive"],
+        "speech_pattern": "Mountain-Dew-commercial American cadence; internal monologue runs in Czech",
+        "energy": "high"
+      },
+
+      "dialogue": {
+        "greeting": "Aaaand that's a look, right there — that's a LOOK. Petra, get a shot of the look. Gentlemen — Jaxson Vane. Welcome to the Beatdown.",
+        "idle_chatter": [
+          "Don't worry about the paperwork, bro, everybody signs the paperwork. That's just — that's a formality. What matters is you're HERE.",
+          "Nine questions. Three strikes. And behind door number one — well, there's no door number one, there's just the river, but we don't say that part in the open."
+        ],
+        "transaction": "N/A — Jaxson does not sell anything; he administers the show",
+        "farewell": "That's why we love this show, folks. Everybody gets a swim.",
+        "special_triggers": {
+          "strike_one": "Strike one, and folks, that was the free one.",
+          "strike_two": "Strike two. I want to say I'm surprised. I am contractually required to say I'm surprised.",
+          "strike_three": "And that's strike three, which means — well, you know what that means.",
+          "lever_pull": "Unfortunately, bro.",
+          "disqualification": "House rules. No devices in the toilet. ... Unfortunately, bro.",
+          "winner_crowning": "Ladies and gentlemen. In twenty-two seasons. For the first time. Unfortunately, bro — you actually won.",
+          "accent_slip_equipment_jam": "Aaand we've got — hold on — to prosím — sorry. To help. We're gonna get this fixed for you, big guy. Hang tight.",
+          "player_declines_or_lingers": "Take your time, take your time — the crane's not going anywhere. Well. It rotates. But it's not GOING anywhere.",
+          "return_visit": "Look who it is. The, uh — the toilet guys. Great to have returning talent. We don't usually have returning talent."
+        }
+      },
+
+      "services": [
+        {
+          "service_id": "trivia_gauntlet_hosting",
+          "price": 0,
+          "description": "Free (signature on release form). Hosts the nine-question trivia gauntlet; pass/fail gate into Sudden Death."
+        },
+        {
+          "service_id": "sudden_death_adjudication",
+          "price": 0,
+          "description": "Free. Determines WIN vs. LOSS branch; triggers prize podium or walk-of-shame."
+        }
+      ],
+
+      "schedule": {
+        "present_hours": "10:00-20:00 on active filming days",
+        "absent_reason": "Off-days: SuperKoruna Value Hypermarket ribbon-cuttings (morning), Bohemian Riviera bars watching his own aired episodes (evening)"
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+          "role": "host_and_adjudicator"
+        }
+      ],
+
+      "voice_direction": "Mountain-Dew-commercial American, rehearsed and convincing; under genuine equipment failure only, vowels buckle for exactly one syllable into Czech before he recatches. Catchphrase 'Unfortunately, bro.' never speeds up, never gets louder, never varies.",
+      "sprite_sheet": "jaxson_vane.png"
+    },
+
+    {
+      "npc_id": "debaucheryville_npc_janek_sykora_01",
+      "display_name": "Janek Sýkora",
+      "full_name": "Janek Sýkora, Contestant #4 (production credits him only as \"Contestant Four\")",
+      "npc_type": "ambient",
+      "role": "Unbeatable trivia wall and Sudden Death buzzer opponent; the quest's only genuine skill gate",
+      "location_zone": "catapult_row",
+      "secondary_zone": "prize_podium",
+      "behavior": "stationary",
+
+      "appearance": {
+        "age": 22,
+        "build": "elite rower's physique, broad-shouldered, long-limbed",
+        "clothing": "designer swim trunks (boathouse change), boathouse sandals",
+        "accessories": ["damp_gym_bag", "waterproof_training_watch_still_counting_morning_row"],
+        "notable_features": ["hair_dries_perfectly_regardless_of_water", "perfect_unforced_posture"]
+      },
+
+      "personality": {
+        "traits": ["reflexively_polite", "genuinely_uninterested_in_winning", "quietly_constantly_elsewhere", "effortlessly_multilingual"],
+        "speech_pattern": "precise unhurried Central European English; native Czech, flawless French/German asides",
+        "energy": "low"
+      },
+
+      "dialogue": {
+        "greeting": "Yes? Oh — the show. Yes, of course, that is fine. Where do I put my bag?",
+        "idle_chatter": [
+          "Dvanáct. (Twelve.)",
+          "Should someone tell the sirs what they've signed?"
+        ],
+        "transaction": "N/A — not a shop NPC",
+        "farewell": "You did well, sir. Truly. It is not an easy toilet to sit in.",
+        "special_triggers": {
+          "thrown_answer_q6": "Nine hundred. (It is not nine hundred. It is not a number question.)",
+          "loud_sir_line": "Is the loud sir talking to me?",
+          "sudden_death_wave": "Ahoj! Ahoj, kluci! (Hey! Hey, guys!)",
+          "on_winning_buzz": "Good! Good for the sir. He got one.",
+          "walk_of_shame_line": "The sirs flew very bravely.",
+          "return_visit": "Oh — the sirs are back. Hello again. I hope the water was not too cold, before."
+        }
+      },
+
+      "services": [
+        {
+          "service_id": "not_a_shop_npc",
+          "price": 0,
+          "description": "N/A — Janek is a contestant, not a vendor. His 'service' is being the unbeatable wall in Phase 1 and the Sudden Death opponent."
+        }
+      ],
+
+      "schedule": {
+        "present_hours": "Filming days, midday-afternoon at catapult_row",
+        "absent_reason": "Pre-dawn to mid-morning: training row with national crew team on The Bacchanus; late morning: university lectures"
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+          "role": "skill_gate_contestant"
+        }
+      ],
+
+      "voice_direction": "Brief, level, courteous — the tone of a man reading a bus timetable. The Q6 thrown answer must share the exact same vocal energy as every correct answer. 'The sirs' must never read as a joke on his end.",
+      "sprite_sheet": "janek_sykora.png"
+    },
+
+    {
+      "npc_id": "debaucheryville_npc_petra_production_assistant_01",
+      "display_name": "Petra",
+      "full_name": "Petra (surname never given on-screen; name badge reads \"PETRA — PRODUCTION\")",
+      "npc_type": "quest_giver",
+      "role": "Sign-up coordinator; runs sign-up, full disclosure, and release-form collection",
+      "location_zone": "signup_table",
+      "behavior": "stationary",
+
+      "appearance": {
+        "age": 28,
+        "build": "compact, efficient, unhurried",
+        "clothing": "faded Shady Productions polo, headset, practical sandals",
+        "accessories": ["clipboard_with_coiled_cord_pen", "laminated_disclosure_checklist_lanyard"],
+        "notable_features": ["precise_clipboard_tick", "never_lies_in_any_line_any_branch"]
+      },
+
+      "personality": {
+        "traits": ["total_compulsive_disclosure", "deadpan_clipboard_energy", "procedurally_precise", "unbothered_by_being_ignored"],
+        "speech_pattern": "precise, unhurried Central European English; flat and complete regardless of interruption",
+        "energy": "medium"
+      },
+
+      "dialogue": {
+        "greeting": "Hi. Yes. Sign-up is here. The show is called The Bacchanus Beach Beatdown. It is a trivia contest. The trivia is in Czech. All of it. Every question. There is no translator — we cut that from the budget in 2011.",
+        "idle_chatter": [
+          "You will be strapped into a portable toilet. The portable toilet is attached to a pneumatic catapult. Three incorrect answers and the catapult fires you into the river. The river is The Bacchanus. It is not clean. It has never been clean. I want to be clear that I am not exaggerating for the show.",
+          "That is not a camera. That is a monitor for the camera. It is showing you the beach behind you."
+        ],
+        "transaction": "These are the release forms. They are in Czech. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes.",
+        "farewell": "You're signed up. Strap-in is at the catapult. Jaxson will call your names — well, he will call 'contestants.' He does not have your names either.",
+        "special_triggers": {
+          "not_an_obstacle_course": "It is not an obstacle course. There are no obstacles. There is a toilet, and then there is the river.",
+          "not_downplaying": "I am not downplaying it. I am describing it.",
+          "did_not_let_finish": "You did not let me finish.",
+          "signing_for_others_note": "I want it noted for the record that this is not legally how that works.",
+          "player_lingers": "No rush. The forms don't expire. The tide — there is no tide, it's a river, but the offer doesn't expire either.",
+          "checkout_loss_branch": "Please sign here to confirm receipt of one [1] second-place prize.",
+          "checkout_second_place_clarification": "Second place is everyone who did not win. That's — however many of you are standing here. You're all tied for it.",
+          "return_visit": "Back again. New form, same river. Would you like me to read this one aloud too? Still eleven minutes."
+        }
+      },
+
+      "services": [
+        {
+          "service_id": "signup_release_form_processing",
+          "price": 0,
+          "description": "Free (signature required). Full, accurate disclosure of every quest mechanic before commitment; gates entry into the trivia gauntlet."
+        },
+        {
+          "service_id": "optional_read_aloud",
+          "price": 0,
+          "description": "Complete unabridged English translation of the release forms, offered every time, never accepted."
+        }
+      ],
+
+      "schedule": {
+        "present_hours": "Filming days, pre-taping at signup_table; during taping, off-table coordinating with Jaxson over headset",
+        "absent_reason": "Off-days: Cirque du Shady loading dock, signing for the shared 2003 prize pallet shipment"
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+          "role": "quest_giver"
+        }
+      ],
+
+      "voice_direction": "Flat, complete, unhurried disclosure lines; never speeds up or flattens further with repetition. The checkout line is procedurally cheerful in cadence, technically accurate in content, devastating in effect.",
+      "sprite_sheet": "petra_production_assistant.png"
+    },
+
+    {
+      "npc_id": "debaucheryville_npc_hamstradamus_01",
+      "display_name": "Hamstradamus",
+      "full_name": "Hamstradamus (no other name known, on record, or asked for)",
+      "npc_type": "vendor",
+      "role": "WIN-branch prize-giver; speedo-strut entrance, badge-pin ceremony, canon-locked English prophecy",
+      "location_zone": "prize_podium",
+      "behavior": "triggered",
+
+      "appearance": {
+        "age": null,
+        "build": "round, well-fed hamster build, roughly 25-30cm standing",
+        "clothing": "midnight-blue pointed wizard hat with stars, beach-appropriate speedo (Fauxst Beach filming-day look; turban is his default Cirque du Shady look)",
+        "accessories": ["crystal_ball_prophecy_tent_only"],
+        "notable_features": ["whiskers_go_still_before_a_prophecy", "booming_voice_that_does_not_fit_his_body"]
+      },
+
+      "personality": {
+        "traits": ["unshakeable_sincerity", "genuine_showman", "chronically_clumsy", "warm_underneath_the_doom"],
+        "speech_pattern": "carnival-barker prophet register, dead serious during prophecy delivery",
+        "energy": "high"
+      },
+
+      "dialogue": {
+        "greeting": "N/A at this location — Hamstradamus emerges from the podium trapdoor only after the Sudden Death duel resolves in a WIN",
+        "idle_chatter": [],
+        "transaction": "N/A — Hamstradamus does not sell anything at Fauxst Beach; the badge and stein are quest rewards, not purchases",
+        "farewell": "N/A",
+        "special_triggers": {
+          "win_prophecy_canon_locked": "HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT.",
+          "badge_pin_line_canon_locked": "The star chooses. The star has chosen. Wear it, champion, and know: by the year Y2K plus twenty-six, a hamster in a speedo will have told you the truth, and you will not have listened.",
+          "second_quiet_repent": "REPENT.",
+          "disqualification_branch": "No podium appearance — visibly holding a Hamagotchi from a distance, then visibly putting it back in the box. No prophecy delivered."
+        }
+      },
+
+      "services": [
+        {
+          "service_id": "win_prize_ceremony",
+          "price": 0,
+          "description": "WIN branch only. Hands over item_trivia_champ_badge (pinned, crooked, permanently) and item_summer_vacay_stein in person at the prize podium."
+        }
+      ],
+
+      "schedule": {
+        "present_hours": "Bacchanus Beach Beatdown filming days only, at prize_podium",
+        "absent_reason": "All other times: prophecy tent, The Cirque du Shady (Prophecy Roulette). Absent from the Cirque tent during Fauxst Beach filming days — travels the Shady Productions gear path between the two."
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+          "role": "win_branch_prize_giver"
+        }
+      ],
+
+      "voice_direction": "Booming, cavernous, dead serious for the prophecy; the WIN prophecy line and the badge-pin line are canon-locked and must ship verbatim, spoken in English, not localized or routed through the Czech-parody pipeline. The second, quieter 'REPENT.' is a separate delivery and must not be cut.",
+      "sprite_sheet": "hamstradamus_beach_variant.png"
+    },
+
+    {
+      "npc_id": "debaucheryville_npc_rosta_retrieval_man_01",
+      "display_name": "Rosťa",
+      "full_name": "Rosťa, Boat-Hook Retrieval Man",
+      "npc_type": "ambient",
+      "role": "Fishes launched port-o-potties out of The Bacchanus and stands them upright along the embankment as informal landmarks",
+      "location_zone": "fauxst_beach",
+      "behavior": "stationary",
+
+      "appearance": {
+        "age": null,
+        "build": "weathered, permanently damp",
+        "clothing": "waders rolled down to the knee",
+        "accessories": ["boat_hook_never_leaves_his_hand"],
+        "notable_features": ["eleven_seasons_of_professional_rhythm"]
+      },
+
+      "personality": {
+        "traits": ["utterly_unbothered", "mildly_competent", "keeps_a_chart"],
+        "speech_pattern": "flat, mail-carrier-route matter-of-factness",
+        "energy": "low"
+      },
+
+      "dialogue": {
+        "greeting": "Three today. Personal best is five. I keep a chart.",
+        "idle_chatter": [
+          "You get used to the smell. You do not get used to the door latch."
+        ],
+        "transaction": "N/A — purely environmental-storytelling and flavor barks",
+        "farewell": "N/A",
+        "special_triggers": {}
+      },
+
+      "services": [],
+
+      "schedule": {
+        "present_hours": "24/7 at the fauxst_beach riverbank retrieval station",
+        "absent_reason": "Goes quiet during the night_party_zone hours; port-o-potty monuments become informal seating under the string lights"
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+          "role": "environmental_storytelling"
+        }
+      ],
+
+      "voice_direction": "Utterly unbothered, professional rhythm — this has been his entire job for eleven seasons.",
+      "sprite_sheet": "rosta_retrieval_man.png"
+    },
+
+    {
+      "npc_id": "debaucheryville_npc_standa_lifeguard_01",
+      "display_name": "Standa",
+      "full_name": "Standa, Fauxst Beach Lifeguard",
+      "npc_type": "ambient",
+      "role": "Staffs the lifeguard tower over the 40-60cm water",
+      "location_zone": "fauxst_beach",
+      "behavior": "stationary",
+
+      "appearance": {
+        "age": null,
+        "build": "genuine lifeguard build",
+        "clothing": "whistle, rescue buoy, red trunks",
+        "accessories": ["well_worn_paperback_never_put_down"],
+        "notable_features": ["depth_discrepancy_easter_egg"]
+      },
+
+      "personality": {
+        "traits": ["professionally_attentive", "personally_bored"],
+        "speech_pattern": "dry, direct",
+        "energy": "low"
+      },
+
+      "dialogue": {
+        "greeting": "The sign says forty. I'd call it closer to sixty, if you're asking me directly, which you are.",
+        "idle_chatter": [
+          "I've blown this whistle twice. Both times, catapult."
+        ],
+        "transaction": "N/A",
+        "farewell": "N/A",
+        "special_triggers": {
+          "whistle_blow_bark": "Triggers on any catapult launch witnessed from the tower"
+        }
+      },
+
+      "services": [],
+
+      "schedule": {
+        "present_hours": "24/7 at the fauxst_beach lifeguard tower",
+        "absent_reason": "N/A — always staffed"
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+          "role": "environmental_storytelling"
+        }
+      ],
+
+      "voice_direction": "Professionally attentive, personally bored — the job has exactly two duties and one has never once been needed.",
+      "sprite_sheet": "standa_lifeguard.png"
+    },
+
+    {
+      "npc_id": "debaucheryville_npc_zdenka_shower_vendor_01",
+      "display_name": "Zdenka",
+      "full_name": "Zdenka, Riverbank Shower Vendor",
+      "npc_type": "vendor",
+      "role": "Sells the port_o_cologne status cure",
+      "location_zone": "fauxst_beach",
+      "behavior": "stationary",
+
+      "appearance": {
+        "age": null,
+        "build": null,
+        "clothing": "sun-bleached apron",
+        "accessories": ["folding_cart_hose_rigged_to_repurposed_water_tank", "hand_lettered_price_sign"],
+        "notable_features": ["entirely_unsentimental_about_fly_particles"]
+      },
+
+      "personality": {
+        "traits": ["brisk", "transactional", "unsentimental"],
+        "speech_pattern": "direct sales, escalating-price framing",
+        "energy": "medium"
+      },
+
+      "dialogue": {
+        "greeting": "Fifty koruna for the shower. Forty if you go now. It goes up the longer you stand there.",
+        "idle_chatter": [],
+        "transaction": "Fifty koruna for the shower. Forty if you go now. It goes up the longer you stand there.",
+        "farewell": "N/A",
+        "special_triggers": {}
+      },
+
+      "services": [
+        {
+          "service_id": "port_o_cologne_cure",
+          "price": 50,
+          "description": "50 Kc standard, 40 Kc \"if you go now\"; price rises the longer the affected party dawdles at her cart. Available to any bro or party member who has been launched and waded ashore."
+        }
+      ],
+
+      "schedule": {
+        "present_hours": "24/7 at the fauxst_beach riverbank, adjacent to the lifeguard tower",
+        "absent_reason": "N/A — always present"
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+          "role": "status_cure_vendor"
+        }
+      ],
+
+      "voice_direction": "Brisk, transactional, entirely unsentimental about the fly particles trailing behind every customer.",
+      "sprite_sheet": "zdenka_shower_vendor.png"
+    }
+  ],
+
+  "ambient_npcs": [
+    {
+      "npc_id": "college_vacationers_group",
+      "display_name": "College-Vacationer Crowd",
+      "npc_type": "ambient",
+      "behavior": "crowd_member/background_action",
+      "count_range": "8-12",
+      "location_zone": "all_zones_highest_at_bar_strip_and_fauxst_beach",
+      "dialogue": {
+        "overheard": [
+          "Is he okay? Is this a bit? Is that man okay?",
+          "pět… pět… pět… (beer-volume chant, rhythmic, unprompted)"
+        ],
+        "heckle_mistranslation_pairs_walk_of_shame": [
+          {
+            "heckle_czech": "Hezký let, pánové!",
+            "heckle_translation": "Nice flight, gentlemen!",
+            "bro_mistranslation": "'Let' is English. He said 'let.' They're LETTING us come back. That's a standing invitation, boys, that's a returning-champion situation."
+          },
+          {
+            "heckle_czech": "Voníte jako váš výkon!",
+            "heckle_translation": "You smell like your performance!",
+            "bro_mistranslation": "'Výkon.' That's — that's 'workout.' She can smell that I work out. That's a compliment in most of the world, actually."
+          },
+          {
+            "heckle_czech": "Nula bodů! Nula bodů!",
+            "heckle_translation": "Zero points! Zero points!",
+            "bro_mistranslation": "Nula. Numero. Numero uno. Boys. That kid just called it. Out of the mouths of babes."
+          },
+          {
+            "heckle_czech": "Chytil jsem tři. Jednoho jsem hodil zpátky.",
+            "heckle_translation": "I caught three. I threw one back.",
+            "bro_mistranslation": "Three. He's counting us. He counted three champions and he's throwing one back — that's a sports metaphor. Bro, we got scouted on the walk home."
+          }
+        ]
+      },
+      "function": "Density and reaction-shot dressing during tapings; heckle-line delivery on LOSS branch walk-of-shame; films everything on flip phones; no unique names or persistent dialogue trees beyond barked lines specified in the quest doc"
+    }
+  ],
+
+  "npc_interactions": {
+    "npc_to_npc": {
+      "description": "Jaxson defers to Petra on anything involving disclosure, forms, or safety and never improvises around her. Petra and Janek share mutual, easy respect — she discloses everything to him the same way she discloses it to everyone, and he trusts her completely. Jaxson holds Janek in mild, carefully concealed awe (Janek is the only contestant in eleven seasons who has never needed him for anything). Hamstradamus shares podium duties with Jaxson on filming days — Jaxson hosts, Hamstradamus prophesies; professional courtesy only. Zdenka, Standa, and Rosta operate independently along fauxst_beach and have no scripted interaction with the principal cast."
+    }
+  }
+}

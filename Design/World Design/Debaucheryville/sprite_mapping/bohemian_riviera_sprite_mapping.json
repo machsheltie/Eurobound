@@ -1,0 +1,420 @@
+{
+  "location_id": "debaucheryville_riverfront_bohemian_riviera_01",
+
+  "sprite_sheets": {
+    "fauxst_beach_tileset": {
+      "file": "fauxst_beach_tileset.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "sections": {
+        "sand_base": {"x": 0, "y": 0, "width": 512, "height": 256},
+        "sand_variant_footprints": {"x": 512, "y": 0, "width": 256, "height": 128},
+        "delivery_receipt_sign": {"x": 768, "y": 0, "width": 128, "height": 64},
+        "lounger_cluster": {"x": 0, "y": 256, "width": 256, "height": 128},
+        "lifeguard_tower_base": {"x": 256, "y": 256, "width": 192, "height": 256},
+        "riverbank_edge": {"x": 448, "y": 256, "width": 320, "height": 128},
+        "no_diving_sign_post": {"x": 768, "y": 128, "width": 96, "height": 128}
+      }
+    },
+    "bar_strip_facades": {
+      "file": "bar_strip_facades.png",
+      "dimensions": {"width": 1024, "height": 384},
+      "sections": {
+        "za_za_beach_klub": {"x": 0, "y": 0, "width": 320, "height": 256},
+        "the_tan_line": {"x": 320, "y": 0, "width": 320, "height": 256},
+        "kokos_loco": {"x": 640, "y": 0, "width": 320, "height": 256},
+        "shared_bar_tv": {"x": 960, "y": 0, "width": 64, "height": 64},
+        "terrace_seating": {"x": 0, "y": 256, "width": 512, "height": 128},
+        "sound_system_stack": {"x": 512, "y": 256, "width": 128, "height": 128}
+      }
+    },
+    "catapult_rig_and_toilets": {
+      "file": "catapult_rig_and_toilets.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "sections": {
+        "pneumatic_arm_idle": {"x": 0, "y": 0, "width": 256, "height": 256},
+        "port_o_potty_left": {"x": 256, "y": 0, "width": 128, "height": 192},
+        "port_o_potty_center_broken_latch": {"x": 384, "y": 0, "width": 128, "height": 192},
+        "port_o_potty_right": {"x": 512, "y": 0, "width": 128, "height": 192},
+        "launch_wind_up": {"x": 640, "y": 0, "width": 128, "height": 128},
+        "launch_release": {"x": 640, "y": 128, "width": 384, "height": 128},
+        "launch_mid_arc": {"x": 0, "y": 256, "width": 384, "height": 128},
+        "launch_splash_impact": {"x": 384, "y": 256, "width": 256, "height": 128},
+        "hazard_tape_off_season": {"x": 0, "y": 384, "width": 256, "height": 64},
+        "prize_pallet_2003_background": {"x": 256, "y": 384, "width": 192, "height": 128}
+      },
+      "note": "Three independently-triggerable launch units required (Launch One ~Q4 interruption, Launch Two ~Q7 mid-syllable). Broken center-unit door-swing has its own reusable idle-open state."
+    },
+    "signup_table_setup": {
+      "file": "signup_table_setup.png",
+      "dimensions": {"width": 512, "height": 384},
+      "sections": {
+        "folding_table": {"x": 0, "y": 0, "width": 192, "height": 128},
+        "clipboard_pen": {"x": 192, "y": 0, "width": 96, "height": 96},
+        "release_forms_fanned": {"x": 288, "y": 0, "width": 128, "height": 96},
+        "signup_multilingual_banner": {"x": 0, "y": 128, "width": 384, "height": 64}
+      }
+    },
+    "prize_podium_and_banner": {
+      "file": "prize_podium_and_banner.png",
+      "dimensions": {"width": 512, "height": 384},
+      "sections": {
+        "card_table_creased_banner": {"x": 0, "y": 0, "width": 256, "height": 192},
+        "hamstradamus_trapdoor": {"x": 256, "y": 0, "width": 64, "height": 64},
+        "confetti_residue_ground": {"x": 0, "y": 192, "width": 256, "height": 64}
+      }
+    },
+    "night_party_zone_dressing": {
+      "file": "night_party_zone_dressing.png",
+      "dimensions": {"width": 512, "height": 256}
+    },
+    "river_parallax_background": {
+      "file": "river_parallax_background.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "layers": {
+        "far_background": {"x": 0, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.1},
+        "mid_background": {"x": 256, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.3},
+        "near_background": {"x": 512, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.5}
+      }
+    },
+    "npc_sprites": {
+      "jaxson_vane": {
+        "file": "jaxson_vane.png",
+        "dimensions": {"width": 384, "height": 288},
+        "poses": {
+          "hosting_idle": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "triple_can_sip": {"x": 64, "y": 0, "width": 192, "height": 96, "frames": 6},
+          "lever_pull": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "oakleys_removal_dq": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "crowd_scan": {"x": 64, "y": 96, "width": 64, "height": 96}
+        }
+      },
+      "janek_sykora": {
+        "file": "janek_sykora.png",
+        "dimensions": {"width": 384, "height": 288},
+        "poses": {
+          "idle_perfect_posture": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "bored_answer": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "buzzer_wave": {"x": 128, "y": 0, "width": 192, "height": 96, "frames": 4},
+          "polite_handshake": {"x": 320, "y": 0, "width": 64, "height": 96}
+        }
+      },
+      "petra_production_assistant": {
+        "file": "petra_production_assistant.png",
+        "dimensions": {"width": 384, "height": 288},
+        "poses": {
+          "table_disclosure": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "form_present": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "clipboard_tick": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "headset_log": {"x": 192, "y": 0, "width": 64, "height": 96}
+        }
+      },
+      "hamstradamus_beach_variant": {
+        "file": "hamstradamus_beach_variant.png",
+        "dimensions": {"width": 384, "height": 288},
+        "poses": {
+          "speedo_strut": {"x": 0, "y": 0, "width": 192, "height": 96, "frames": 4},
+          "badge_pin": {"x": 192, "y": 0, "width": 96, "height": 96},
+          "prophecy_trance": {"x": 0, "y": 96, "width": 64, "height": 96}
+        }
+      },
+      "rosta_retrieval_man": {
+        "file": "rosta_retrieval_man.png",
+        "dimensions": {"width": 256, "height": 192},
+        "poses": {
+          "idle_at_station": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "retrieval_action": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "monument_placement": {"x": 128, "y": 0, "width": 64, "height": 96}
+        }
+      },
+      "standa_lifeguard": {
+        "file": "standa_lifeguard.png",
+        "dimensions": {"width": 256, "height": 192},
+        "poses": {
+          "tower_idle_reading": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "whistle_blow": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "tower_scan": {"x": 128, "y": 0, "width": 64, "height": 96}
+        }
+      },
+      "zdenka_shower_vendor": {
+        "file": "zdenka_shower_vendor.png",
+        "dimensions": {"width": 256, "height": 192},
+        "poses": {
+          "cart_idle": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "transaction": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "hose_deployed": {"x": 128, "y": 0, "width": 64, "height": 96}
+        }
+      }
+    },
+    "vacationer_crowd": {
+      "file": "vacationer_crowd.png",
+      "dimensions": {"width": 512, "height": 384},
+      "sprite_types": {
+        "flip_phone_filmer": {"x": 0, "y": 0, "width": 32, "height": 48},
+        "beer_chant_group": {"x": 32, "y": 0, "width": 96, "height": 48},
+        "heckler_walk_of_shame": {"x": 128, "y": 0, "width": 32, "height": 48},
+        "golden_hour_poser": {"x": 160, "y": 0, "width": 32, "height": 48},
+        "crowd_dense_background": {"x": 0, "y": 48, "width": 512, "height": 64}
+      }
+    },
+    "inflatable_palm_trees": {
+      "file": "inflatable_palm_trees.png",
+      "dimensions": {"width": 256, "height": 256},
+      "sections": {
+        "palm_15deg_list_variant_a": {"x": 0, "y": 0, "width": 128, "height": 128},
+        "palm_15deg_list_variant_b": {"x": 128, "y": 0, "width": 128, "height": 128},
+        "idle_sway_animation": {"x": 0, "y": 128, "width": 256, "height": 128, "frames": 4}
+      }
+    },
+    "riverbank_portapotty_monuments": {
+      "file": "riverbank_portapotty_monuments.png",
+      "dimensions": {"width": 256, "height": 256},
+      "sections": {
+        "monument_upright_clean": {"x": 0, "y": 0, "width": 96, "height": 128},
+        "monument_with_laundry_day6plus": {"x": 96, "y": 0, "width": 96, "height": 128},
+        "monument_vendor_adjacent": {"x": 192, "y": 0, "width": 128, "height": 128}
+      }
+    },
+    "launch_splash_and_arc": {
+      "file": "launch_splash_and_arc.png",
+      "dimensions": {"width": 512, "height": 256}
+    },
+    "space_heaters": {
+      "file": "space_heaters.png",
+      "dimensions": {"width": 128, "height": 128},
+      "sections": {
+        "heater_idle": {"x": 0, "y": 0, "width": 64, "height": 64},
+        "heater_full_blast_glow": {"x": 64, "y": 0, "width": 64, "height": 64}
+      }
+    },
+    "lifeguard_tower": {
+      "file": "lifeguard_tower.png",
+      "dimensions": {"width": 192, "height": 320},
+      "sections": {
+        "tower_structure_interactive_foreground": {"x": 0, "y": 0, "width": 128, "height": 256},
+        "standa_perched_reading": {"x": 128, "y": 0, "width": 64, "height": 64},
+        "standa_whistle_blow_overlay": {"x": 128, "y": 64, "width": 64, "height": 64}
+      }
+    },
+    "no_diving_sign": {
+      "file": "no_diving_sign.png",
+      "dimensions": {"width": 96, "height": 128},
+      "sections": {
+        "sign_post_and_board": {"x": 0, "y": 0, "width": 64, "height": 96},
+        "zip_tie_detail_examine": {"x": 64, "y": 0, "width": 32, "height": 32}
+      }
+    },
+    "release_forms_and_clipboard": {
+      "file": "release_forms_and_clipboard.png",
+      "dimensions": {"width": 256, "height": 192},
+      "sections": {
+        "clipboard_idle": {"x": 0, "y": 0, "width": 96, "height": 96},
+        "release_forms_fanned_x3": {"x": 96, "y": 0, "width": 128, "height": 96},
+        "clipboard_tick_close_up": {"x": 224, "y": 0, "width": 32, "height": 32}
+      }
+    },
+    "prize_pallet_2003": {
+      "file": "prize_pallet_2003.png",
+      "dimensions": {"width": 192, "height": 128},
+      "sections": {
+        "pallet_shrink_wrapped": {"x": 0, "y": 0, "width": 96, "height": 128},
+        "pallet_half_opened": {"x": 96, "y": 0, "width": 96, "height": 128}
+      }
+    },
+    "heat_shimmer": {
+      "file": "heat_shimmer.png",
+      "dimensions": {"width": 128, "height": 128},
+      "sections": {
+        "shimmer_overlay_4frame_loop": {"x": 0, "y": 0, "width": 128, "height": 128, "frames": 4}
+      }
+    },
+    "confetti_and_string_lights": {
+      "file": "confetti_and_string_lights.png",
+      "dimensions": {"width": 256, "height": 128},
+      "sections": {
+        "confetti_burst_4frames": {"x": 0, "y": 0, "width": 128, "height": 64, "frames": 4},
+        "string_light_strand_day_inactive": {"x": 128, "y": 0, "width": 64, "height": 64},
+        "string_light_strand_night_amber_glow": {"x": 128, "y": 64, "width": 64, "height": 64}
+      }
+    },
+    "port_o_cologne_flies": {
+      "file": "port_o_cologne_flies.png",
+      "dimensions": {"width": 96, "height": 96},
+      "sections": {
+        "fly_swarm_4frame_ambient_loop": {"x": 0, "y": 0, "width": 64, "height": 64, "frames": 4},
+        "fly_swarm_dissipate": {"x": 64, "y": 0, "width": 32, "height": 32}
+      }
+    },
+    "quest_ui": {
+      "strike_counter_and_timer": {
+        "file": "strike_counter_and_timer.png",
+        "dimensions": {"width": 256, "height": 128},
+        "sections": {
+          "strike_icon_unfilled_x3": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "strike_icon_filled": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "timer_ring_full": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "timer_ring_depleting_8frames": {"x": 128, "y": 0, "width": 64, "height": 64, "frames": 8},
+          "timer_ring_timeout_flash": {"x": 192, "y": 0, "width": 64, "height": 64}
+        }
+      },
+      "suspicion_meter_oakleys": {
+        "file": "suspicion_meter_oakleys.png",
+        "dimensions": {"width": 192, "height": 64},
+        "note": "Path B (Chadwick) only. No numeric counter, no bar fill, no tooltip.",
+        "sections": {
+          "oakleys_baseline": {"x": 0, "y": 0, "width": 48, "height": 32},
+          "oakleys_tick1_tilted": {"x": 48, "y": 0, "width": 48, "height": 32},
+          "oakleys_tick2_lowered_to_nose_tip": {"x": 96, "y": 0, "width": 48, "height": 32},
+          "oakleys_tick3_removed": {"x": 144, "y": 0, "width": 48, "height": 32}
+        }
+      },
+      "dialogue_and_prompt_ui": {
+        "file": "dialogue_and_prompt_ui.png",
+        "dimensions": {"width": 384, "height": 256},
+        "sections": {
+          "dialogue_box": {"x": 0, "y": 0, "width": 256, "height": 96},
+          "answer_option_prompt_x4": {"x": 0, "y": 96, "width": 256, "height": 64},
+          "go_live_button_path_b": {"x": 256, "y": 96, "width": 96, "height": 64},
+          "czech_parody_question_box": {"x": 0, "y": 160, "width": 256, "height": 64}
+        }
+      }
+    }
+  },
+
+  "animation_sequences": {
+    "catapult_launch_sequence": {
+      "sprite_source": "catapult_rig_and_toilets",
+      "frames": 16,
+      "duration_seconds": 3,
+      "loop": false,
+      "timing": {"wind_up": 0.5, "release": 0.5, "arc": 1.5, "splash_impact": 0.5}
+    },
+    "splash_impact": {
+      "sprite_source": "catapult_rig_and_toilets",
+      "frames": 4,
+      "duration_seconds": 0.5,
+      "loop": false
+    },
+    "jaxson_triple_sip": {
+      "sprite_source": "npc_sprites.jaxson_vane",
+      "frames": 6,
+      "duration_seconds": 2,
+      "loop": false,
+      "timing": {"fps": 4}
+    },
+    "janek_buzzer_wave": {
+      "sprite_source": "npc_sprites.janek_sykora",
+      "frames": 4,
+      "duration_seconds": 1.5,
+      "loop": false,
+      "note": "Rig constraint — must sync to oar catch-and-release audio cue ramping 2s before the turn."
+    },
+    "hamstradamus_speedo_strut": {
+      "sprite_source": "npc_sprites.hamstradamus_beach_variant",
+      "frames": 4,
+      "duration_seconds": 2.5,
+      "loop": false
+    },
+    "inflatable_palm_idle_sway": {
+      "sprite_source": "inflatable_palm_trees",
+      "frames": 4,
+      "loop": true
+    },
+    "emtv_crane_idle_rotation": {
+      "sprite_source": "bar_strip_facades",
+      "loop": true
+    }
+  },
+
+  "lighting_effects": {
+    "primary_ambient": {
+      "color": "#E8D4A0",
+      "intensity": 0.9,
+      "reactive_sprites": ["fauxst_beach_tileset", "bar_strip_facades", "vacationer_crowd"]
+    },
+    "accent_lighting": {
+      "affected_sprites": ["bar_strip_facades.shared_bar_tv", "catapult_rig_and_toilets"],
+      "flicker_pattern": "emtv_magenta_glow_at_night",
+      "color": "#FF1493"
+    }
+  },
+
+  "particle_effect_sprites": {
+    "launch_splash": {
+      "sprite_sheet": "launch_splash_and_arc.png",
+      "coordinates": {"x": 0, "y": 0, "width": 128, "height": 128},
+      "frames": 4,
+      "animation_speed": "0.125_seconds_per_frame"
+    },
+    "heat_shimmer_particle": {
+      "sprite_sheet": "heat_shimmer.png",
+      "coordinates": {"x": 0, "y": 0, "width": 128, "height": 128},
+      "frames": 4,
+      "animation_speed": "0.3_seconds_per_frame"
+    },
+    "port_o_cologne_fly_swarm": {
+      "sprite_sheet": "port_o_cologne_flies.png",
+      "coordinates": {"x": 0, "y": 0, "width": 64, "height": 64},
+      "frames": 4,
+      "animation_speed": "0.25_seconds_per_frame"
+    },
+    "confetti_burst": {
+      "sprite_sheet": "confetti_and_string_lights.png",
+      "coordinates": {"x": 0, "y": 0, "width": 128, "height": 64},
+      "frames": 4,
+      "animation_speed": "0.2_seconds_per_frame"
+    }
+  },
+
+  "ui_elements": {
+    "location_specific_ui": {
+      "strike_counter_reference": "quest_ui.strike_counter_and_timer",
+      "suspicion_meter_reference": "quest_ui.suspicion_meter_oakleys",
+      "dialogue_prompt_reference": "quest_ui.dialogue_and_prompt_ui"
+    }
+  },
+
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "bohemian_riviera_environment_atlas",
+        "files": ["fauxst_beach_tileset.png", "bar_strip_facades.png", "catapult_rig_and_toilets.png"],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "bohemian_riviera_npc_atlas",
+        "files": ["jaxson_vane.png", "janek_sykora.png", "petra_production_assistant.png", "hamstradamus_beach_variant.png", "rosta_retrieval_man.png", "standa_lifeguard.png", "zdenka_shower_vendor.png"],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "bohemian_riviera_effects_atlas",
+        "files": ["launch_splash_and_arc.png", "heat_shimmer.png", "confetti_and_string_lights.png", "port_o_cologne_flies.png"],
+        "max_size": "1024x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "bohemian_riviera_props_atlas",
+        "files": ["space_heaters.png", "lifeguard_tower.png", "no_diving_sign.png", "release_forms_and_clipboard.png", "prize_pallet_2003.png"],
+        "max_size": "1024x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "bohemian_riviera_ui_atlas",
+        "files": ["strike_counter_and_timer.png", "suspicion_meter_oakleys.png", "dialogue_and_prompt_ui.png"],
+        "max_size": "1024x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_crowd_all_particles_complex_animations",
+      "medium": "simplified_crowd_reduced_particles_essential_animations",
+      "low": "distant_crowd_simplified_sprites_full_detail_on_approach_minimal_particles"
+    },
+    "notes": [
+      "Vacationer crowd rendered as simplified sprites at distance, full detail on approach.",
+      "Catapult launch sequence pre-rendered per unit, three independently-triggerable instances.",
+      "Bar-strip TV loop is a single shared low-res asset reused across all three bars, not rendered per-venue."
+    ]
+  }
+}
