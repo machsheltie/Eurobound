@@ -1,1 +1,6 @@
- # NPC Base
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/characters/npc_controller.gd" id="1"]
+
+[node name="NPCBase" type="Area2D"]
+script = ExtResource("1")
