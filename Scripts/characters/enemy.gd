@@ -9,12 +9,17 @@ const WANDER_RADIUS := 120.0
 
 var _home: Vector2
 var _direction: Vector2 = Vector2.ZERO
-var _triggered: bool = false
+var _triggered: bool = true
 
 func _ready() -> void:
 	collision_layer = 0
 	collision_mask = 1
 	_home = position
+
+	# Spawn grace period: a re-entered scene can restore/respawn the player
+	# overlapping this enemy. Start "triggered" (untouchable) and release
+	# after a short delay so battle can't instantly re-fire on scene entry.
+	get_tree().create_timer(1.0).timeout.connect(func(): _triggered = false)
 
 	var visual := ColorRect.new()
 	visual.color = Color(0.85, 0.25, 0.25)  # danger-red placeholder

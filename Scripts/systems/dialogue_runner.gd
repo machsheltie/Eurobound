@@ -31,7 +31,9 @@ func choose(option: Dictionary) -> Dictionary:
 	for flag in option.get("sets_flags", []):
 		collected_flags.append(flag)
 	var next: Variant = option.get("leads_to", "")
-	if next == null or String(next).is_empty():
+	# "conversation_end" is the authored schema's sentinel for "no next node" —
+	# treat it exactly like empty/null leads_to and end the conversation.
+	if next == null or String(next).is_empty() or String(next) == "conversation_end":
 		current_key = ""
 		return {}
 	return _enter(String(next))

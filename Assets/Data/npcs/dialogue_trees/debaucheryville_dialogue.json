@@ -66,6 +66,12 @@
           }
         ]
       },
+      "vlad_explanation_continues": {
+        "line_id": "vlad_explanation_02",
+        "text": "—every drink order, verified, immutable, forever. Anyway. Point is: you're not on the list. You're barely on the blockchain.",
+        "speaker": "Vlad the Validator",
+        "emotion": "trailing_off"
+      },
       "vlad_nft_impressed": {
         "line_id": "vlad_impressed_01", 
         "text": "Whoa! Actual digital scarcity! Welcome to the future, citizen. VIP section is through here.",
@@ -97,6 +103,12 @@
             "party_reaction": {"Lord_Pilsner": "eye_roll", "Chadwick": "recording_intensifies", "Bradley": "facepalm"}
           }
         ]
+      },
+      "vlad_longer_explanation": {
+        "line_id": "vlad_offended_02",
+        "text": "Market cap fundamentals, tokenomics, the whole... look, just... just stand over there and don't touch anything, okay?",
+        "speaker": "Vlad the Validator",
+        "emotion": "exasperated"
       },
       "repeat_interaction": {
         "line_id": "vlad_repeat_01",

@@ -120,7 +120,7 @@ func _on_item() -> void:
 func _on_run() -> void:
 	if _rng.randf() < 0.5:
 		_log("Got away safely!")
-		_finish(false)
+		_finish(true)
 	else:
 		_log("Couldn't escape!")
 		_enemy_turn()
@@ -169,6 +169,7 @@ func _lose() -> void:
 	_log("%s got wrecked... crawling back to the plaza." % _member["display_name"])
 	_finish(false)
 
-func _finish(_won: bool) -> void:
+func _finish(restore_position: bool) -> void:
+	_set_menu_enabled(false)
 	await get_tree().create_timer(1.5).timeout
-	SceneRouter.end_battle()
+	SceneRouter.end_battle(restore_position)

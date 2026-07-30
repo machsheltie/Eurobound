@@ -38,3 +38,22 @@ func test_choose_follows_leads_to() -> void:
 func test_unknown_node_returns_empty() -> void:
 	var runner := DialogueRunner.new(tree)
 	assert_eq(runner.start("no_such_node"), {})
+
+func test_conversation_end_sentinel_ends_dialogue() -> void:
+	var runner := DialogueRunner.new(tree)
+	runner.start()
+	# [Show NFT Screenshot] requires the item and leads to vlad_nft_impressed,
+	# whose only option ("Finally...") leads_to the schema sentinel
+	# "conversation_end".
+	var visible := runner.available_options({"Rare_NFT_Screenshot": 1})
+	var nft_option: Dictionary = {}
+	for option in visible:
+		if option.get("leads_to") == "vlad_nft_impressed":
+			nft_option = option
+	assert_false(nft_option.is_empty(), "expected an option leading to vlad_nft_impressed")
+	runner.choose(nft_option)
+	assert_eq(runner.current_key, "vlad_nft_impressed")
+	var final_options: Array = tree["vlad_nft_impressed"]["options"]
+	var result := runner.choose(final_options[0])
+	assert_eq(result, {}, "choosing an option leading to conversation_end should return {}")
+	assert_eq(runner.current_key, "", "conversation_end should end the dialogue")

@@ -16,7 +16,7 @@ func goto_battle(enemy_id: String) -> void:
 	_return_scene_path = GameState.current_scene_path
 	get_tree().call_deferred("change_scene_to_file", "res://Scenes/battle/BattleScene.tscn")
 
-func end_battle() -> void:
+func end_battle(restore_position: bool = true) -> void:
 	pending_enemy_id = ""
-	restore_pending = true
+	restore_pending = restore_position
 	get_tree().call_deferred("change_scene_to_file", _return_scene_path)

@@ -5,12 +5,17 @@ var state
 
 func before_each() -> void:
 	saver = load("res://Scripts/core/save_system.gd").new()
+	saver.save_path = "user://saves/test_slot.json"
 	var repo = load("res://Scripts/core/data_repo.gd").new()
 	repo.load_all()
 	state = load("res://Scripts/systems/GameState.gd").new()
 	state.new_game(repo)
-	if FileAccess.file_exists(saver.SAVE_PATH):
-		DirAccess.remove_absolute(saver.SAVE_PATH)
+	if FileAccess.file_exists(saver.save_path):
+		DirAccess.remove_absolute(saver.save_path)
+
+func after_each() -> void:
+	if FileAccess.file_exists(saver.save_path):
+		DirAccess.remove_absolute(saver.save_path)
 
 func test_no_save_initially() -> void:
 	assert_false(saver.has_save())
@@ -27,7 +32,7 @@ func test_save_then_load_round_trip() -> void:
 
 func test_corrupt_save_is_not_loadable() -> void:
 	DirAccess.make_dir_recursive_absolute("user://saves")
-	var f := FileAccess.open(saver.SAVE_PATH, FileAccess.WRITE)
+	var f := FileAccess.open(saver.save_path, FileAccess.WRITE)
 	f.store_string("{ this is not json")
 	f.close()
 	assert_false(saver.has_save())
