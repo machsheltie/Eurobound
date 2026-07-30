@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "party_members": {
+    "lord_pilsner": {
+      "display_name": "Lord Pilsner",
+      "level": 1,
+      "xp": 0,
+      "max_hp": 45,
+      "max_sp": 12,
+      "offense": 8,
+      "defense": 6,
+      "speed": 5,
+      "charm": 9,
+      "luck": 4,
+      "grit": 3,
+      "skills": ["roast_line"]
+    }
+  }
+}

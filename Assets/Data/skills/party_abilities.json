@@ -1,1 +1,11 @@
-Party Abilities
+{
+  "schema_version": "1.0",
+  "abilities": {
+    "roast_line": {
+      "display_name": "Roast Line",
+      "sp_cost": 4,
+      "power_multiplier": 1.8,
+      "battle_text": "{user} delivers a devastating roast!"
+    }
+  }
+}

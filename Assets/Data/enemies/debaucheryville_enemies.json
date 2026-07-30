@@ -1,1 +1,19 @@
-Debaucheryville Enemies
+{
+  "schema_version": "1.0",
+  "world_name": "debaucheryville",
+  "enemies": {
+    "feral_segway_tourist": {
+      "display_name": "Feral Segway Tourist",
+      "battle_intro": "A Feral Segway Tourist rolls up aggressively!",
+      "max_hp": 28,
+      "offense": 6,
+      "defense": 3,
+      "speed": 6,
+      "luck": 2,
+      "xp_reward": 12,
+      "gold_reward": 8,
+      "item_drop": "lukewarm_kebab",
+      "drop_chance": 1.0
+    }
+  }
+}
