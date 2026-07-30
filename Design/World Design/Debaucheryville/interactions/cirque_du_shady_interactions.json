@@ -70,7 +70,7 @@
         "type": "interaction",
         "condition": "Player talks to Vance at big_top, or examines the shady_productions_fax object at shady_productions_office"
       },
-      "duration_seconds": 20,
+      "duration_seconds": 12,
       "sequence": [
         {
           "phase": "the_pitch",

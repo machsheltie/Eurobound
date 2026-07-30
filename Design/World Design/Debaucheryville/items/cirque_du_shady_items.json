@@ -103,7 +103,8 @@
       "effects": {
         "special_effect": "Redeemable at prize_booth for a Shady Loot Crate. Crate contents, exact pricing, and Yolanda's redemption dialogue are intentionally not specified in this document - per cirque_du_shady.md's own Development Notes, that mechanic is deferred to a future items/shop pass and to the_participation_trophy.md itself. This entry establishes only the structured voucher-sale-to-redemption pointer (big_top sale -> prize_booth fulfillment), matching canon (game_design_document.md: 'offers shady loot crates from the prize booth')."
       },
-      "sprite": "vance_loot_crate_pitch.png"
+      "sprite": "vance_vallaro.png",
+      "note_sprite": "loot_crate_pitch_gesture pose within vance_vallaro.png (x:256, y:0, w:64, h:96) - see sprite_mapping.sprite_sheets.npc_sprites.vance_vallaro.poses.loot_crate_pitch_gesture, per Cirque_du_Shady_PNG_Assets.md Sprite Sheet 7. No dedicated per-item icon exists for this voucher; it uses Vance's own sheet, consistent with how item_beatdown_casting_flyer below references fax_machine_and_flyers.png."
     },
     {
       "item_id": "item_beatdown_casting_flyer",

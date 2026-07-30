@@ -57,7 +57,7 @@
       "quest_connections": [
         {
           "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
-          "role": "quest_origin_pointer_promoter",
+          "role": "quest_origin_pointer",
           "note": "Vance advertises the show and points players toward Fauxst Beach on the Bohemian Riviera; he does not administer sign-up himself. The actual quest origin is Petra at signup_table (debaucheryville_riverfront_bohemian_riviera_01), per bacchanusbeachbeatdown.md and bohemian_riviera_location_nodes.json."
         }
       ],

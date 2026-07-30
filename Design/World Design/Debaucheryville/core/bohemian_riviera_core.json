@@ -39,7 +39,7 @@
     },
     {
       "exit_id": "to_cirque_du_shady",
-      "destination": "debaucheryville_cirque_du_shady_01",
+      "destination": "debaucheryville_circus_cirque_du_shady_01",
       "direction": "riverside_gear_path_downriver",
       "requirements": null
     }
