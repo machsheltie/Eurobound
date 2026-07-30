@@ -1,0 +1,7 @@
+{
+  "grease_magnet_pattern": {
+    "trigger_condition": "grease_fingers_count >= 3",
+    "npc_response_modifier": "hygiene_obsessed_commentary",
+    "applies_to": ["all_bartenders", "posh_npcs"]
+  }
+}

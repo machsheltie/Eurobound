@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="KebabMenuPopup" type="Control"]
+visible = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="."]
+text = "Kebab Menu Goes Here"
+
+[script]
+extends Control
+
+func init_kebab_menu():
+    print("Kebab menu initialized.")

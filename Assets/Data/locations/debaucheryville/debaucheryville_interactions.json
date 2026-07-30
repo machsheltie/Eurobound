@@ -1,0 +1,1138 @@
+{
+  "schema_version": "1.0",
+  "world_name": "debaucheryville",
+  "last_updated": "2025-10-01",
+  "locations": {
+      "accent": "#FF6B35", 
+      "achievement_contribution": "worlds_pickiest_drunk_badge_progression"
+      "achievement_linking": "progress_contributes_to_overall_arcade_completion"
+      "acquisition_method": "rigged_claw_machine_strategy_game"
+      "actually_happening": "being exploited by sketchy crypto obsessed vendor with mystery meat",
+      "additional_fisto_travel_diary_snippets_unlock",
+      "approach": "near_velvet_curtain_club_alley_exit_impossible_to_miss_due_to_blinding_fluorescent",
+      "area_id": "claw_machine_maintenance_closet",
+      "area_id": "north_wing_arcade_maze",
+      "atmosphere": "steam_cigarette_smoke_thick_cold_air_rainbow_grease_puddles_in_gutter",
+      "atmosphere_text": "Bros think authentic pricing, actually tourist exploitation"
+      "atmospheric_effects": [
+      "atmospheric_purpose": "cursed_gaming_nostalgia_corruption_symbol"
+      "atmospheric_role": "spectral_ravers",
+      "audio_cue": "clacking_mechanical_split_flap_updates"
+      "audio_cue": "mechanical_rotation_steam_hiss"
+      "audio_cue": "reverent_reading_faint_fisto_voice_echo"
+      "availability": "always",
+      "availability": "always_present_during_business_hours",
+      "availability": "circus_hours_business_hours_mode_with_cracked_clown_mask",
+      "availability": "couchsurf_interaction_trigger",
+      "availability": "evening_primary",
+      "availability": "intermittent_testing_services",
+      "availability": "night_only",
+      "availability": "random_encounters",
+      "availability": "random_encounters",
+      "availability": "specializes_non_traditional_currencies",
+      "background": "#2C2C2C"
+      "bathroom_graffiti_collection": "contributes_to_citywide_bathroom_exploration_achievement",
+      "behavioral_patterns": {
+      "behavioral_patterns": {
+      "benefits": "special_vendor_pricing_secret_quest_access"
+      "bros_think": "discovering authentic late night European street food culture",
+      "clown_gear_special_interactions": {
+      "combo_d_by_love_lore": "unlocks_cross_city_gaming_culture_narrative_thread"
+      "comedy_escalation": [
+      "comedy_value": "extreme_gaming_nostalgia_bathroom_fusion",
+      "comparison_system": "each_city_claims_superior_doner_tradition",
+      "completion_reward": "cultural_food_expert_achievement"
+      "completion_tracking": "contributes_to_worlds_pickiest_drunk_achievement"
+      "confused_25_percent_2_battles",
+      "connects_to": ["publandia_doner_vendors", "sinfonia_upscale_versions"],
+      "consequence": "rival_trio_receives_cringe_lock_debuff_next_encounter",
+      "consequence_system": "food choices create strategic gameplay with humorous risk reward"
+      "content": "crude_pixelated_adult_artwork_in_retro_gaming_style",
+      "content": "glowing_sticker_of_pixel_art_arcade_joystick_with_lips",
+      "content": "haiku_about_losing_virginity_during_tekken_tournament",
+      "content": "He moaned SMAAAASH in bed. I ghosted mid-combo.",
+      "content": "various_fake_gaming_cheat_codes_and_exploits",
+      "contents": {
+      "contents": {
+      "context": "red_bull_cans_condom_wrappers_scattered_like_confetti_overturned_rave_flyer"
+      "costume_economy": "clown_gear_acquisition_from_other_vendors_enhances_experience"
+      "couchsurf_mechanics": {
+      "crawlspace_access": "only_appears_3am_game_time_disappears_4am",
+      "cringe_tolerance_development": "enables_advanced_social_combat_techniques",
+      "cross_city_achievement": "contributes_to_greasy_prophet_title_across_all_cities",
+      "cross_city_bathroom_network": "connects_other_fisto_sightings_party_destinations"
+      "crypto_commentary_dialogue_trees",
+      "cultural_commentary": "eastern_european_take_on_turkish_german_doner",
+      "cultural_commentary": "traveling_circus_food_adaptation_of_traditional_dish",
+      "cultural_documentation": "serves_as_gaming_culture_anthropological_study"
+      "currency_cost": {"tokens": 5},
+      "debuff_duration": "3_combat_turns",
+      "decorative_elements": [
+      "description": "animated letters glitch between shady dogs meat roulette and free sample not legally binding",
+      "description": "Busted claw machine arm hanging from ceiling like cursed chandelier",
+      "description": "Characters question their moves mid-combo",
+      "description": "Cracked absinthe bottle shape, glowing green from within",
+      "description": "Cracked machine concealing brewery entrance",
+      "description": "cracked mirror loops cryptic qr codes and eldritch meat glyphs one resembles sheltie wearing paper crown",
+      "description": "cracked porcelain clown mask during business hours creates unsettling atmosphere",
+      "description": "crt monitors show pixelized live markets kebab prices nightclub cover charges meme coin candles rising crashing",
+      "description": "crumpled kebab receipt from mr chadz kebab dated 2004 still warm somehow",
+      "description": "Crypto culture knowledge for Shadow Exchange negotiations",
+      "description": "Deeper arcade maze leading to brewery entrance",
+      "description": "exactly what it sounds like",
+      "description": "Exposed electrical wiring sparking faintly when player passes too close",
+      "description": "Fighting game where the only button is regret",
+      "description": "flickering fluorescent bulb dangles from meat skewer stabbed into ceiling tile",
+      "description": "Former janitor bucket now used as foot soak station by NPC speedrunners",
+      "description": "glowing sausage rumored to be part ai and part veal",
+      "description": "glowing_trail_led_player_crawlspace_examined_inside",
+      "description": "grease beneath my feet secrets marinate in heat i pray then i leak",
+      "description": "grey sweaty tube meat on a stick whispers when held",
+      "description": "Hidden public restroom with graffiti system",
+      "description": "hot dog with red licorice bun mustard smiley and pop rocks relish",
+      "description": "Insert 3 tokens to unlock hidden bathroom",
+      "description": "ledger bound in duct tape integrates nft hunt clue trail",
+      "description": "Mirror-lined walls with lag effect",
+      "description": "Modified DDR dance pad serving as toilet seat, sticky but reactive",
+      "description": "Navigate philosophical obstacles instead of traffic",
+      "description": "Overpriced token conversion station",
+      "description": "pixel kebab with googly eyes only glows when player is hungover",
+      "description": "Primary NFT Hunt location with intentionally difficult physics",
+      "description": "puked here in 99 came back to visit it like its mecca signed fisto",
+      "description": "Random light-up tiles creating disorientation",
+      "description": "rate board of split flap letters clacks every few seconds updating exchange rates and broker mood",
+      "description": "Repurposed CRT arcade screen looping INSERT COIN serving as mirror",
+      "description": "sink basin contains cursed coin half chewed antacid and kebab napkin folded into swan",
+      "description": "spinning heap of shredded meat gummy bears and absinthe glaze",
+      "description": "steam belching pushcart with carousel shaped rotisserie spinning mystery meat",
+      "description": "Trip over NPC who gives broken Game Boy with weird symbols",
+      "description": "Wall mounted paper towel dispenser replaced with claw machine prize chute dispensing used socks",
+      "description": "walls_coated_glistening_grease_film_reflecting_movement_oily_shadows",
+      "destination": "absynthium_taproom_dungeon",
+      "dialogue_integration": "weaves_food_service_banter_into_sketchy_business_calls"
+      "dialogue_samples": [
+      "dialogue_samples": [
+      "dialogue_samples": [
+      "dialogue_samples": [
+      "dialogue_samples": [
+      "dialogue_samples": [
+      "dialogue_samples": [
+      "dialogue_triggers": ["kebab_offer", "crash_invitation"],
+      "discovery_requirement": "exploration_of_north_wing",
+      "display_name": "Clown Dog Deluxe™",
+      "display_name": "Doner of Illusions™",
+      "display_name": "Glizzénstein's Brain Brat",
+      "display_name": "Meatball on a Lollipop Stick",
+      "display_name": "Sausage of Suspicion",
+      "easter_eggs": {
+      "effect": "immunity_to_food_poisoning_debuff_for_1_battle",
+      "effects": "altered_dialogue_variations_with_circus_performers"
+      "effects": {
+      "effects": {
+      "effects": {
+      "effects": {
+      "effects": {
+      "embarrassed_resistance_building": "repeated_exposure_builds_immunity_to_social_awkwardness",
+      "embarrassed_status_mastery": "teaches_players_to_strategically_use_social_awkwardness",
+      "encounter_id": "broken_game_boy_discovery",
+      "encounter_id": "hacker_crypto_exposition",
+      "enhanced_menu_options_when_drunk", 
+      "enhanced_menu_options_when_embarrassed"
+      "enhanced_menu_options_when_hungover",
+      "enhanced_spiritual_significance_shrine_experience"
+      "entrance": "no_formal_entrance_open_air_cart_wedged_between_fence_and_wall",
+      "entrance_location": "behind_cracked_time_crisis_machine",
+      "environmental_comedy": "rat_gnawing_sounds_grease_puddle_splashing_LED_buzz"
+      "european_adventure_context": "1999_incident_becomes_pilgrimage_site_legend",
+      "exchange_rates": {
+      "failure_effects": ["confused_status"]
+      "FDA_stopped_returning_emails_quotes",
+      "first_token_mechanical_acceptance_sound",
+      "fisto_main_graffiti_establishes_legend",
+      "flickering_pink_led_appears_above_claw_machine",
+      "food_effect_reaction_content"
+      "food_prep_sounds": "exaggerated_sizzling_questionable_meat_handling_audio",
+      "furniture": {
+      "game_type": "broken_unlock_mechanism",
+      "game_type": "fighting_game_parody",
+      "game_type": "hidden_entrance",
+      "game_type": "one_button_fighter",
+      "game_type": "philosophical_obstacle_course",
+      "gaming_culture_integration": "unlocks_additional_dialogue_options_with_arcade_npcs"
+      "glittery_crop_top_bulletproof_vest_combo",
+      "graffiti_collection_system": "part_of_larger_bathroom_exploration_meta_game",
+      "graffiti_id": "fake_cheat_codes_collection",
+      "graffiti_id": "pixel_art_joystick_with_lips",
+      "graffiti_id": "pixelated_adult_artwork",
+      "graffiti_id": "primary_smaaaash_quote",
+      "graffiti_id": "tekken_virginity_haiku",
+      "grease_popping_sizzling_sounds",
+      "grease_vendor_tent": "restroom_located_behind_active_food_service_health_horror",
+      "greasy_prophet_title_hungover_completion",
+      "haiku_provides_poetic_gross_out_humor",
+      "hallucination_dialogue_variations"
+      "hangover_status_interactions": "additional_content_when_visiting_while_hungover",
+      "health_code_violation_humor"
+      "host_npc": "backpack_girl_who_never_left",
+      "I call this one intestinal roulette. You want two?",
+      "impairment_level": "drunk hungover enough to ignore obvious health code violations",
+      "interaction": "following_trail_reveals_connection_mr_chadz_kebab_operation",
+      "interaction": "player_examine_grease_coating_environmental_storytelling",
+      "interaction_type": "cultural_artifact_examination",
+      "interaction_type": "disgusted_fascination_historical_investigation",
+      "interaction_type": "easter_egg_discovery_system",
+      "interaction_type": "environmental_animation_comedy_timing",
+      "interaction_type": "frustrating_hygiene_attempt",
+      "interaction_type": "functional_bathroom_with_sound_effects",
+      "interaction_type": "functional_mirror_with_arcade_interface",
+      "interaction_type": "hangover_specific_revelation_fisto_lore_unlock",
+      "interaction_type": "hidden_poetry_discovery",
+      "interaction_type": "jury_rigged_infrastructure_examination",
+      "interaction_type": "market_data_observation_atmospheric_immersion",
+      "interaction_type": "meat_glyph_interpretation_supernatural_investigation",
+      "interaction_type": "mini_game",
+      "interaction_type": "mini_game",
+      "interaction_type": "mini_game",
+      "interaction_type": "optional_foot_soak_with_npcs",
+      "interaction_type": "passive_atmospheric",
+      "interaction_type": "pilgrimage_site_reading_reverent_examination",
+      "interaction_type": "proximity_based_mini_hazard",
+      "interaction_type": "quest_item_inspection_nft_acquisition",
+      "interaction_type": "readable_with_status_effects",
+      "interaction_type": "reverent_poetry_reading_artistic_appreciation",
+      "interaction_type": "secret_passage",
+      "interaction_type": "shop_interface",
+      "interaction_type": "shrine_offering_examination_individual_inspection",
+      "interaction_type": "skill_based_mini_game",
+      "interaction_type": "status_dependent_lore_unlock",
+      "interaction_type": "timing_based_mini_game_rate_optimization",
+      "interaction_type": "unlock_trigger",
+      "interaction_type": "visual_distortion",
+      "interaction_type": "visual_fascination_with_chef_chuckles_commentary",
+      "interaction_type": "visual_showcase",
+      "interaction_type": "visual_showcase_occasional_movement",
+      "interaction_type": "visual_unease_character_development",
+      "intestinal_roulette_food_challenges",
+      "inventory": [
+      "inventory": [
+      "itchy_50_percent_chance",
+      "item_id": "clown_dog_deluxe",
+      "item_id": "doner_of_illusions",
+      "item_id": "glizzenstein_brain_brat",
+      "item_id": "meatball_lollipop_stick",
+      "item_id": "sausage_of_suspicion",
+      "joysticks_and_shame_title": "unlocked_by_completing_all_bathroom_graffiti_while_embarrassed",
+      "kebab_consumption_synergy": "eating_mr_chadz_food_enhances_shrine_experience"
+      "layout": "open_air_food_cart_vertical_rotisserie_centerpiece",
+      "lighting": "blinding_fluorescent_cart_lighting_contrasts_dim_alley_shadows",
+      "lighting_effects": "pulsing_green_glow"
+      "local_exploitation": "sketchy vendor selling mystery meat to desperate tourists",
+      "local_motivation": "mr_chadz_treats_health_violations_as_selling_points_while_counting_crypto"
+      "location": "above_pushcart",
+      "location": "above_sink_area",
+      "location": "above_urinal_cryptic_display",
+      "location": "back_wall_glowing_faintly",
+      "location": "back_wall_pixelized_data_display",
+      "location": "ceiling_improvised_lighting",
+      "location": "center_cramped_space",
+      "location": "center_main_floor",
+      "location": "center_of_pushcart",
+      "location": "central_wall_constantly_updating",
+      "location": "chef_chuckles_business_hours_prop",
+      "location": "corner_floor_area",
+      "location": "hanging_from_ceiling_center",
+      "location": "hidden_corner_area",
+      "location": "illuminated_desk_single_lamp",
+      "location": "inside_stall_door",
+      "location": "main_floor_center",
+      "location": "main_floor_left",
+      "location": "main_floor_right",
+      "location": "main_wall_visible_under_blacklight",
+      "location": "near_entrance",
+      "location": "near_maintenance_closet",
+      "location": "north_wing_back",
+      "location": "prominent_main_floor_position",
+      "location": "scattered_across_walls",
+      "location": "sink_area_three_mysterious_items",
+      "location": "snaking_across_walls",
+      "location": "stall_wall_artistic_poetry",
+      "location": "throughout_arcade",
+      "location": "throughout_arcade",
+      "location": "throughout_market_stalls",
+      "location": "toilet_paper_roll_position",
+      "location": "various_wall_locations",
+      "location": "wall_hungover_trigger_only",
+      "location": "wall_mounted_paper_towel_replacement",
+      "location_zone": "arcade_transit_specialist_corner",
+      "location_zone": "behind_mystery_meat_cart",
+      "location_zone": "bucket_area", 
+      "location_zone": "corners_and_alcoves",
+      "location_zone": "counterfeit_detection_station",
+      "location_zone": "front_main_counter_screaming",
+      "location_zone": "main_counter_position",
+      "location_zone": "main_floor",
+      "location_zone": "near_speakers",
+      "location_zone": "scattered_throughout",
+      "lore_provider": true,
+      "machine_id": "broken_ddr_machine",
+      "machine_id": "cracked_time_crisis",
+      "machine_id": "frogger_existential_edition",
+      "machine_id": "kebab_kombat",
+      "machine_id": "street_fighter_identity_crisis",
+      "maintenance_door_outline_becomes_visible",
+      "Meats mostly legal. Heat lamps all vibes."
+      "mechanics": {
+      "message_content": "He moaned SMAAAASH in bed. I ghosted mid-combo.",
+      "message_content": "you_have_seen_into_fryer_and_lived_respect_signed_fisto"
+      "mirror_glyphs_suggest_supernatural_meat_mystery"
+      "morning_scene": "ukulele_at_6am_ballad_composition",
+      "mr_chadz_catchphrase_compilations",
+      "mr_chadz_phone_crypto_notifications",
+      "mr_chadz_voice_acting": "deadpan_delivery_health_violation_jokes_crypto_commentary",
+      "mystery_meat_philosophy_tweets",
+      "mystery_meat_rotisserie_spinning_hypnotically"
+      "mystery_meat_speculation_theories",
+      "notification_sounds": "business_call_alerts_and_supplier_contacts",
+      "npc_crossover": "speedrunners_appear_in_both_locations",
+      "npc_id": "backpack_girl_who_never_left",
+      "npc_id": "chef_chuckles_mystery_cart",
+      "npc_id": "cryptobro69_ex",
+      "npc_id": "edm_ghosts", 
+      "npc_id": "mrs_rata_main_clerk",
+      "npc_id": "npc_speedrunners_foot_soakers",
+      "npc_id": "rogue_backpackers",
+      "npc_id": "the_uv_man",
+      "npc_id": "token_goblin",
+      "npc_id": "twitchy_hacker_types",
+      "object_id": "absinthe_bottle_bar",
+      "object_id": "animated_sign_system",
+      "object_id": "carousel_rotisserie_mystery_meat",
+      "object_id": "claw_machine_arm_chandelier",
+      "object_id": "cracked_clown_mask_display",
+      "object_id": "cracked_mirror_eldritch_glyphs",
+      "object_id": "crt_mirror_insert_coin",
+      "object_id": "crt_monitor_wall_live_markets",
+      "object_id": "cursed_sink_collection",
+      "object_id": "ddr_toilet_seat",
+      "object_id": "exposed_wiring_hazard",
+      "object_id": "fisto_main_graffiti",
+      "object_id": "floor_tile_system",
+      "object_id": "fluorescent_meat_skewer_light",
+      "object_id": "haiku_graffiti_masterpiece",
+      "object_id": "janitor_bucket_foot_soak",
+      "object_id": "mirror_walls",
+      "object_id": "pixel_kebab_googly_eyes",
+      "object_id": "rigged_absinthe_claw_machine",
+      "object_id": "shadow_ledger_duct_tape",
+      "object_id": "split_flap_rate_board",
+      "object_id": "toilet_paper_receipt_2004",
+      "object_id": "token_exchange_machine",
+      "object_id": "used_socks_prize_chute",
+      "object_id": "wooden_counters_currency_trays",
+      "obvious_signs_ignored": [
+      "one_time_only": true
+      "penalties": ["minus_10_sp_no_sleep"]
+      "performer_network": "interactions_with_other_circus_acts",
+      "permanent_effect": "unlocks_stomach_of_steel_passive_poison_resistance_street_food",
+      "phone_checking_frequency": "every_10_to_15_seconds",
+      "pixel_kebab_googly_eyes_becomes_visible_interactive",
+      "price": {"kebab_coins": 12},
+      "price": {"kebab_coins": 5},
+      "price": {"kebab_coins": 6},
+      "price": {"kebab_coins": 7},
+      "price": {"kebab_coins": 9},
+      "primary": "#FFFFFF",
+      "primary_interaction": "atmospheric_dialogue",
+      "primary_interaction": "couchsurf_invitation_nft_consequences",
+      "primary_interaction": "couchsurf_offer",
+      "primary_interaction": "counterfeit_detection_tool_sales",
+      "primary_interaction": "cryptic_half_jokes",
+      "primary_interaction": "currency_exchange_black_market_services",
+      "primary_interaction": "foot_soak_commentary",
+      "primary_interaction": "long_term_resident_stories",
+      "primary_interaction": "mystery_food_vendor_carnival_grift",
+      "primary_interaction": "token_card_chip_trading",
+      "primary_location": true,
+      "primary_vice": "exploiting drunk hungover tourists with overpriced questionable food",
+      "prizes": [
+      "probability": "rare_random_trigger",
+      "probability": 0.3,
+      "probability": 0.6,
+      "progression_requirement": "arcade_exploration_completion"
+      "proximity_effects": "louder_when_approaching_cart_softer_when_moving_away"
+      "psychological_warfare": "establishes_ongoing_embarrassment_based_combat_advantage"
+      "quest_connection": "shadow_exchange_preparation"
+      "quest_connection": "sinfonia_preparation",
+      "quest_connections": ["arcade_culture_exposition", "bathroom_legitimacy_facade"]
+      "quest_connections": ["arcade_history", "survival_tips"]
+      "quest_connections": ["atmosphere", "hidden_area_hints"]
+      "quest_connections": ["couchsurf_system", "ballad_of_bros_collectible"]
+      "quest_connections": ["tech_hints", "crypto_culture_exposition"]
+      "quest_integration": "central_component_nft_collection_system"
+      "quest_role": "provides_circus_carnival_sample_for_cross_city_comparison",
+      "rainbow_grease_puddles_oil_slick_aesthetic",
+      "receipt_toilet_paper": "2004_receipt_establishes_long_term_vendor_operation_history",
+      "reduced_particle_density_battery_saver": true
+      "reduced_particle_density_performance_scaling": true,
+      "regional_sample": "belly_of_chadz_represents_debaucheryville_doner_tradition",
+      "regular_customer_recognition_system"
+      "repeated_purchases_unlock_chadz_backstory",
+      "requirement": "all_three_actions_within_shrine_visit_time_limit",
+      "requirement": "complete_all_graffiti_interactions_while_hungover_status_active",
+      "requirement": "consume_3_different_items_in_one_visit",
+      "requirement": "eat_any_kebab_while_actively_reading_any_graffiti_inside_restroom",
+      "requirement": "full_clown_costume_while_ordering",
+      "reveals": "vendor_ecosystem_creates_pilgrimage_path_gastrointestinal_tourists"
+      "reveals": "years_accumulated_fryer_exhaust_creating_protective_shrine_atmosphere"
+      "reward": "unlocks_greasy_prophet_side_title_achievement"
+      "rewards": ["absynthium_taproom_access"],
+      "rewards": ["ballad_of_bros_collectible"],
+      "rewards": ["broken_game_boy_sinfonia_symbols"],
+      "rewards": ["crypto_culture_intel"],
+      "rewards": ["existential_crisis_buff", "small_sp_boost"],
+      "rewards": ["hidden_bathroom_access"],
+      "rewards": ["identity_crisis_achievement", "combat_experience"],
+      "rewards": ["regret_achievement", "comedy_moment"],
+      "rigged_mechanics": {
+      "ringmaster_tent_proximity": "easy_access_from_main_circus_entrance",
+      "rotisserie_animation_lod_system": true
+      "rotisserie_spinning_mechanical_hum",
+      "safety_comedy": "obvious_electrical_hazard_that_everyone_just_accepts_as_normal"
+      "seating": ["highchairs", "beanbags", "one_bidet"],
+      "second_token_electrical_whirring_activation",
+      "secret_icq_message_combination_consumption"
+      "services": [
+      "sewer_npc_attraction_meatball_consumption",
+      "shadow_exchange_prep": "crypto_culture_knowledge_from_hackers"
+      "signage": "MR_CHADZ_KEBABS_crooked_faux_arabic_font_backlit_LED_strip_zip_tied_hookah_hose",
+      "simplified_rainbow_reflections_low_end": true,
+      "simplified_steam_older_devices": true,
+      "sinfonia_connection": "broken_game_boy_symbols",
+      "sketchy_vendor_absurdity_memes"
+      "social_interaction": "builds_rapport_with_arcade_subculture_while_questioning_life_choices"
+      "social_media_potential": "prime_screenshot_opportunity",
+      "social_media_potential": "prime_viral_content_material"
+      "special_effects": {
+      "special_function": "bathroom_unlock_mechanism"
+      "special_function": "brewery_dungeon_entrance"
+      "special_interactions": {
+      "special_mechanics": ["characters_stop_mid_combo_for_self_reflection"]
+      "special_mechanics": ["only_regret_button_available"]
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "special_mechanics": {
+      "steam_hissing_from_cooking_equipment"
+      "steam_particles_scale_device_performance": true,
+      "sticky_enemy_debuff"
+      "stomach_of_steel_passive_kebab_consumption",
+      "strategic_use": "combat_intelligence_boost_with_social_trade_off"
+      "strategic_use": "healing_with_combat_advantage_through_enemy_debuffing"
+      "strategic_use": "precision_boost_with_unexpected_encounter_risk"
+      "strategic_use": "sp_boost_with_intelligence_trade_off_and_confusion_risk"
+      "strategic_use": "speed_boost_with_defensive_trade_off_and_mysterious_side_effects"
+      "subtle_glow_emanates_from_door_crack"
+      "target": "rival_trio_group_chat",
+      "target_nft": "beer_pong_saint_relic",
+      "The FDA stopped returning my emails in 2019.",
+      "third_token_door_unlock_mechanism_click"
+      "token_cost": 2,
+      "token_cost": 3,
+      "token_cost": 3,
+      "token_cost": 4,
+      "token_economy": "uses_same_token_system_as_main_arcade",
+      "tourist_delusion": "authentic European street food experience while being scammed",
+      "tourist_education": "bros_judge_authenticity_while_being_scammed",
+      "tourist_trap_pricing": true,
+      "tracking": "must_read_fisto_graffiti_haiku_pixel_kebab_mirror_glyphs_while_hungover",
+      "tracking": "player_must_be_reading_interaction_state_while_consuming_kebab",
+      "tracking": "visit_based_consumption_counter"
+      "travel_diary_integration": "shrine_visit_unlocks_exclusive_fisto_backstory_content",
+      "trigger": "interaction_with_twitchy_hackers",
+      "trigger": "random_chance_exploration",
+      "trigger": "reading_primary_graffiti_first_time",
+      "trigger_combo": "drink_absinthe_plus_eat_grease_kebab_plus_read_graffiti_sequence",
+      "trigger_conversation": "accept_kebab_and_crash_offer",
+      "trigger_items": ["doner_of_illusions", "sausage_of_suspicion"],
+      "trying_sketchy_european_street_food_videos",
+      "type": "atmospheric_centerpiece",
+      "type": "atmospheric_character_prop",
+      "type": "atmospheric_lighting_fixture",
+      "type": "atmospheric_market_information_system",
+      "type": "barter_window_trading_system",
+      "type": "currency_conversion",
+      "type": "currency_exchange_mini_game_system",
+      "type": "dysfunctional_dispenser",
+      "type": "environmental_effect",
+      "type": "environmental_effect", 
+      "type": "environmental_hazard_with_comedy",
+      "type": "environmental_poetry_comedy_literature",
+      "type": "extended_exploration_area",
+      "type": "glitching_carnival_signage",
+      "type": "historical_artifact_functional_necessity",
+      "type": "hypnotic_cooking_apparatus",
+      "type": "interactive_mirror_screen",
+      "type": "legendary_graffiti_shrine_element",
+      "type": "nft_hunt_quest_integration",
+      "type": "reactive_bathroom_fixture",
+      "type": "repurposed_cleaning_equipment",
+      "type": "repurposed_kebab_equipment_illumination",
+      "type": "rigged_prize_machine",
+      "type": "secret_bathroom",
+      "type": "shrine_offering_collection",
+      "type": "status_specific_interactive_element",
+      "type": "supernatural_meat_divination_system",
+      "unlock_dependency": "requires_access_to_absinthe_arcade_broken_ddr_machine",
+      "unlock_method": "follow_north_wing_deeper",
+      "unlock_method": "insert_3_tokens_into_broken_ddr_machine",
+      "unlocks": "chef_chuckles_respect_status",
+      "urgency_mechanic": "players_complete_shrine_activities_within_one_hour_window"
+      "visibility": "blacklight_only",
+      "visibility": "blacklight_only_age_appropriate_pixel_art",
+      "visibility": "blacklight_reveals_additional_layers",
+      "visibility": "only_when_player_has_embarrassed_status",
+      "visibility": "requires_specific_viewing_angle_and_blacklight",
+      "visual_effect": "faint_grease_aura_around_player_sprite_low_health"
+      "visual_effects": "flickering_pink_led_above_claw_machine_when_unlocked"
+      "visual_effects": {
+      "visual_effects": {
+      "volume_changes": "based_on_time_of_night_and_nearby_party_activity",
+      "whispers_from_sausages_audio_cue",
+      ]
+      ]
+      ]
+      ]
+      ],
+      ],
+      ],
+      ],
+      ],
+      ],
+      ],
+      ],
+      ],
+      ],
+      ],
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+      },
+    "3am_time_limit": {
+    "achievement_system": {
+    "ambient_soundscape": "sizzling_meat_steam_hissing_traffic_background_late_night_party_remnants",
+    "audio_sequence": [
+    "audio_transitions": {
+    "behavior_pattern": "runs_stand_one_handed_while_monitoring_burner_phone_for_business",
+    "brewery_tour": {
+    "buffoon_scenarios": {
+    "business_phone": {
+    "catchphrases": [
+    "character_archetype": "bouncer_turned_kebabist_sketchy_food_entrepreneur",
+    "chili_sauce_trail_investigation": {
+    "cirque_du_shady_ecosystem": {
+    "citywide_bathroom_network": {
+    "clown_gear_integration": {
+    "color_palette": {
+    "comedy_elements": {
+    "completion_requirements": ["no_specific_completion_ongoing_vendor_relationship"],
+    "completion_rewards": [
+    "core_concept": "greasy gloriously sketchy post party lifeline symphony of salt shame mystery meat",
+    "couchsurf_system": {
+    "cross_city_culinary_network": {
+    "cross_city_preparation": {
+    "cross_location_economy": "prices_reflect_proximity_to_high_traffic_party_areas"
+    "cultural_specificity": "Eastern European kebab doner culture commercialized for Western party tourism",
+    "currency_accepted": ["kebab_coins"],
+    "digestive_daredevil_passive": {
+    "display_name": "Mr. Chadz",
+    "exterior": {
+    "failure_states": ["temporary_ban_for_aggressive_sauce_requests"],
+    "first_visit_standard": [
+    "fisto_legend_network": {
+    "grease_film_wall_examination": {
+    "greasy_prophet_title": {
+    "great_doner_debate": {
+    "great_doner_debate_connection": {
+    "hallucination_sequences": {
+    "humor_approach": "GTA environmental satire with Eurotrip tourist desperation",
+    "hungover_exclusive_content": [
+    "icq_messaging_system": {
+    "instagram_moments": [
+    "interactive_audio": [
+    "interior": {
+    "item_requirements": ["kebab_coins_for_purchases"],
+    "main_arcade_integration": {
+    "max_draw_calls": 12,
+    "memory_footprint_mb": 30,
+    "mobile_considerations": {
+    "mobile_optimization": {
+    "mr_chadz_kebab_connection": {
+    "music_style": "distant_club_music_bleeding_from_nearby_venues_urban_night_ambience",
+    "mysterious_effects": [
+    "nft_hunt": {
+    "normal_exits": ["walk_away_from_cart_may_trigger_regret_dialogue"],
+    "npc_id": "mr_chadz_kebab_vendor",
+    "permanent_access": "once_unlocked_remains_accessible_for_remainder_of_playthrough"
+    "physical_description": "6_foot_4_glittery_crop_top_over_bulletproof_vest",
+    "previous_locations": [],
+    "pricing_strategy": "reasonable_for_desperate_customers_premium_for_post_party_desperation",
+    "primary_target": "late night food culture exploitation of drunk tourists and party goers",
+    "progressive_unlocks": [
+    "repeat_customer_system": "regular_purchases_unlock_additional_dialogue_backstory",
+    "secondary_targets": ["sketchy street food operations", "impaired judgment exploitation"],
+    "secret_icq_fisto_message": {
+    "seedy_elements": {
+    "special_conditions": [
+    "stat_requirements": {},
+    "status_effect_training": {
+    "stomach_of_steel_unlock": {
+    "target_fps": 50,
+    "tiktok_potential": [
+    "time_restrictions": "available_24_7_thrives_post_party_hours_22_00_to_06_00",
+    "trigger_location": "broken_ddr_machine_in_main_arcade",
+    "twitter_hooks": [
+    "unique_debuffs": [
+    "unlock_method": "insert_3_tokens_sequential_timing",
+    "value_proposition": "strategic_benefits_justify_questionable_food_quality",
+    "viral_elements": [
+    "visual_feedback": [
+    ]
+    ]
+    ]
+    ]
+    ]
+    ],
+    ],
+    ],
+    ],
+    ],
+    ],
+    ],
+    ],
+    ],
+    ],
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    {
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+    },
+  "access_requirements": {
+  "arcade_machines": [
+  "area_zone": "velvet_curtain_alley_exit",
+  "audio_design": {
+  "complete_menu_system": [
+  "cross_location_connections": {
+  "cross_location_integration": {
+  "cross_location_integration": {
+  "display_name": "Late-Night Kebab Stand",
+  "economic_integration": {
+  "environmental_storytelling_interactions": {
+  "exit_conditions": {
+  "graffiti_interactive_system": [
+  "graffiti_reading_progression": {
+  "hidden_areas": [
+  "interactive_objects": [
+  "interactive_objects": [
+  "interactive_objects": [
+  "interactive_objects": [
+  "interactive_objects": [
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "location_id": "debaucheryville_kebab_alley_restroom_01",
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "location_type": "consumable_vendor_grease_cure_post_party_lifeline",
+  "npcs_present": [
+  "npcs_present": [
+  "npcs_present": [
+  "npcs_present": [
+  "npcs_present": [],
+  "performance_specifications": {
+  "quest_integration": {
+  "quest_integration": {
+  "quest_integration": {
+  "random_encounters": [
+  "satirical_design": {
+  "satirical_subtitle": "The Meat You Regret Tomorrow™",
+  "social_media_integration": {
+  "special_mechanics_system": {
+  "special_mechanics_system": {
+  "status_effect_management": {
+  "theme_description": "spiritual equivalent of an edible walk of shame - symphony of salt, shame, and mystery meat",
+  "unlock_sequence": {
+  "vendor_character": {
+  "visual_design": {
+  "world": "debaucheryville",
+  ],
+  ],
+  ],
+  ],
+  ],
+  ],
+  ],
+  ],
+  ],
+  ],
+  ],
+  ],
+  ],
+  }
+  }
+  }
+  }
+  }
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+  },
+{
+{
+{
+{
+{
+{
+},
+},
+},
+},
+},
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  
+  "npcs_present": [
+    {
+      "npc_id": "mrs_rata_main_clerk",
+      "location_zone": "main_counter_position",
+      "availability": "always_present_during_business_hours",
+      "primary_interaction": "currency_exchange_black_market_services",
+      "dialogue_samples": [
+        "Cash speaks. Whining does not.",
+        "Today I pay you in trust; tomorrow we settle in interest.",
+        "Exchange rate? Depends how loudly you asked.",
+        "Verification fee is non-negotiable. Your reputation precedes you.",
+        "Business is business. Sentiment is expensive."
+      ],
+      "behavioral_patterns": {
+        "professional_detachment": "treats_illegal_transactions_as_mundane_paperwork",
+        "calculator_obsession": "constantly_checking_multiple_calculators_for_rates",
+        "paperwork_stamping": "stamps_mismatched_forms_with_bureaucratic_precision"
+      },
+      "inventory": [
+        "grease_proof_napkins",
+        "electrolyte_packs", 
+        "forged_wristband_area_access"
+      ]
+    },
+    {
+      "npc_id": "the_uv_man",
+      "location_zone": "counterfeit_detection_station",
+      "availability": "intermittent_testing_services",
+      "primary_interaction": "counterfeit_detection_tool_sales",
+      "dialogue_samples": [
+        "This bill glows wrong. Try again next week.",
+        "UV never lies. People? Different story.",
+        "Pocket wand? Fifty coins. Knowledge? Priceless.",
+        "That's not counterfeit. That's just expired.",
+        "Light reveals truth. Darkness hides profit."
+      ],
+      "services": [
+        "item_authenticity_testing_for_fee",
+        "pocket_uv_wand_sales"
+      ],
+      "special_mechanics": {
+        "uv_scan_timing_mini_game": "quick_reaction_counterfeit_identification",
+        "tool_distribution": "pocket_uv_wand_enables_detection_other_locations"
+      }
+    },
+    {
+      "npc_id": "token_goblin",
+      "location_zone": "arcade_transit_specialist_corner",
+      "availability": "specializes_non_traditional_currencies",
+      "primary_interaction": "token_card_chip_trading",
+      "dialogue_samples": [
+        "Tokens are the future. Coins are the past.",
+        "Midnight queue-skip? You look desperate enough.",
+        "Transit cards expire. Regret is forever.",
+        "Arcade tokens buy happiness. Temporarily.",
+        "Tap Dat Vault chips: single use, maximum chaos."
+      ],
+      "inventory": [
+        "arcade_tokens",
+        "transit_cards",
+        "tap_dat_vault_queue_skip_chips_single_use_midnight_only"
+      ]
+    },
+    {
+      "npc_id": "cryptobro69_ex",
+      "location_zone": "front_main_counter_screaming",
+      "availability": "couchsurf_interaction_trigger",
+      "primary_interaction": "couchsurf_invitation_nft_consequences",
+      "dialogue_samples": [
+        "These slippage fees are INSANE!",
+        "You're better looking than him, but dumber.",
+        "My futon's under buzzing CRTs. Very authentic.",
+        "Gas fees don't matter when you're this wasted.",
+        "I minted that at 3:17 AM. Peak creativity hours."
+      ],
+      "couchsurf_mechanics": {
+        "invitation_trigger": "mid_scream_about_slippage_fees",
+        "morning_scene": "wake_futon_buzzing_crts_led_strips_she_gone",
+        "consequences": [
+          "gain_nft_2_pixelated_kebab_monkey_scratched",
+          "apply_hungover_status",
+          "lose_25_gold_missing_cab_voucher"
+        ],
+        "satirical_beat": "nft_metadata_minted_0317_am_gas_fee_dont_worry_about_it"
+      }
+    }
+  ],
+  
+  "interactive_objects": [
+    {
+      "object_id": "split_flap_rate_board",
+      "location": "central_wall_constantly_updating",
+      "type": "currency_exchange_mini_game_system",
+      "description": "rate board of split flap letters clacks every few seconds updating exchange rates and broker mood",
+      "interaction_type": "timing_based_mini_game_rate_optimization",
+      "special_mechanics": {
+        "green_tick_timing": "interact_during_green_ticks_improved_rates",
+        "red_tick_avoidance": "red_ticks_worsen_exchange_rates",
+        "street_rep_charm_influence": "stats_nudge_board_temporary_rate_improvements",
+        "broker_mood_display": "rates_fluctuate_based_market_psychology"
+      },
+      "audio_cue": "clacking_mechanical_split_flap_updates"
+    },
+    {
+      "object_id": "shadow_ledger_duct_tape",
+      "location": "illuminated_desk_single_lamp",
+      "type": "nft_hunt_quest_integration",
+      "description": "ledger bound in duct tape integrates nft hunt clue trail",
+      "interaction_type": "quest_item_inspection_nft_acquisition",
+      "special_mechanics": {
+        "nft_hunt_prerequisite": "must_have_started_nft_sidequest_access_content",
+        "vip_wristband_png_acquisition": "provides_specific_nft_hunt_item",
+        "clue_trail_progression": "advances_broader_treasure_hunt_system"
+      },
+      "quest_integration": "central_component_nft_collection_system"
+    },
+    {
+      "object_id": "crt_monitor_wall_live_markets",
+      "location": "back_wall_pixelized_data_display",
+      "type": "atmospheric_market_information_system",
+      "description": "crt monitors show pixelized live markets kebab prices nightclub cover charges meme coin candles rising crashing",
+      "interaction_type": "market_data_observation_atmospheric_immersion",
+      "special_mechanics": {
+        "kebab_price_tracking": "shows_food_vendor_market_fluctuations",
+        "nightclub_cover_charges": "displays_entertainment_venue_pricing",
+        "meme_coin_candles": "cryptocurrency_parody_market_data",
+        "pixelized_aesthetic": "retro_crt_display_enhances_underground_atmosphere"
+      }
+    },
+    {
+      "object_id": "wooden_counters_currency_trays",
+      "location": "throughout_market_stalls",
+      "type": "barter_window_trading_system",
+      "description": "wooden counters inlaid with scratched glass under each pane sits a tray of odd currencies coins transit cards casino chips arcade tokens",
+      "interaction_type": "barter_trading_system_currency_exchange",
+      "special_mechanics": {
+        "multi_currency_support": "accepts_kebab_coins_tokens_cards_chips_various_alternative_currencies",
+        "glass_inspection": "scratched_glass_shows_wear_from_constant_currency_handling",
+        "tray_organization": "each_currency_type_sorted_into_separate_compartments",
+        "exchange_rate_display": "real_time_rates_displayed_on_integrated_mini_screens"
+      },
+      "currencies_accepted": [
+        "kebab_coins_primary",
+        "arcade_tokens",
+        "transit_cards_various_cities", 
+        "casino_chips_underground_gaming",
+        "concert_wristbands_expired_unused",
+        "metro_day_passes",
+        "tap_dat_vault_queue_skip_chips"
+      ],
+      "barter_mechanics": {
+        "counterfeit_detection_required": "some_trades_require_uv_scan_timing_check",
+        "verification_fees": "optional_verification_fee_for_suspicious_items",
+        "reputation_influence": "street_rep_charm_stats_affect_barter_success_rates",
+        "risk_reward_scaling": "higher_value_trades_increase_notoriety_threshold"
+      }
+    }
+  ],
+  
+  "quest_integration": {
+    "nft_hunt_system": {
+      "shadow_ledger_access": "requires_nft_sidequest_active_flag",
+      "vip_wristband_png_acquisition": "inspect_duct_tape_ledger_for_nft_item",
+      "clue_trail_progression": "advances_broader_treasure_hunt_quest_line"
+    },
+    "couchsurfing_chronicles": {
+      "cryptobro69_ex_trigger": "mid_scream_about_slippage_fees_at_counter",
+      "invitation_mechanic": "better_looking_but_dumber_pickup_line",
+      "morning_consequences": {
+        "location": "futon_under_buzzing_crts_led_strips",
+        "item_gained": "nft_02_pixelated_kebab_monkey_scratched",
+        "status_applied": "hungover",
+        "gold_lost": 25,
+        "satirical_metadata": "minted_0317_am_gas_fee_dont_worry_about_it"
+      }
+    },
+    "great_doner_debate": {
+      "quest_hook": "overheard_kebab_price_arguments_on_crt_monitors",
+      "cross_location_connection": "mystery_meat_cart_debate_continuation"
+    },
+    "premium_stock_unlock": {
+      "trigger": "count_velvet_absinthe_defeated",
+      "hidden_gate_location": "back_counter_behind_mrs_rata",
+      "premium_items": [
+        "saint_of_low_sodium_medal_alt_source",
+        "velvet_rope_clip_duplicate_build_crafting",
+        "forged_duty_free_receipt_shop_discounts"
+      ]
+    }
+  },
+  
+  "risk_reward_mechanics": {
+    "notoriety_system": {
+      "threshold_tracking": "each_transaction_raises_lowers_notoriety_meter",
+      "verification_fee_trigger": "hit_threshold_demands_gold_or_item_payment",
+      "reputation_reset": "successful_transactions_lower_notoriety_over_time"
+    },
+    "shady_contracts": {
+      "buy_a_favor": {
+        "cost": 50,
+        "effect": "reduce_area_enemy_aggro_10_minutes",
+        "satirical_description": "pay_to_make_problems_temporarily_disappear"
+      },
+      "sell_your_dignity": {
+        "cost": "embarrassed_status_condition",
+        "reward": "one_time_exchange_rate_boost",
+        "satirical_beat": "barter_with_your_pride_for_financial_gain"
+      }
+    }
+  },
+  
+  "mobile_optimization": {
+    "touch_zones": {
+      "rate_board_interaction": "96x96_minimum_comfortable_thumb_tap",
+      "barter_counter_access": "full_width_bottom_third_easy_reach",
+      "npc_dialogue_triggers": "64x64_minimum_character_interaction"
+    },
+    "performance_considerations": {
+      "crt_effects_scalable": "disable_on_lower_end_devices",
+      "particle_density_adaptive": "smoke_effects_reduce_based_frame_rate",
+      "audio_streaming": "ambient_sounds_load_on_demand_not_preloaded"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="ICQPopup" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="PopupFrame" type="Panel" parent="."]
+[node name="MessageLabel" type="Label" parent="PopupFrame"]
+[node name="CloseButton" type="Button" parent="PopupFrame"]
+[node name="Avatar" type="TextureRect" parent="PopupFrame"]
+[node name="PopupSound" type="AudioStreamPlayer" parent="."]

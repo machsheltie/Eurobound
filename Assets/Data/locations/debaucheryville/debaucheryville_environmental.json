@@ -1,0 +1,1535 @@
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  
+  "lighting_systems": {
+    "primary_lighting": {
+      "type": "blacklight_wash",
+      "color": "#39FF14",
+      "intensity": 0.8,
+      "uv_reactive_materials": true
+    },
+    "accent_lighting": {
+      "type": "stuttering_8bit_neon",
+      "color": "#BF00FF", 
+      "flicker_pattern": "random_intervals_0.5_to_2_seconds",
+      "affected_objects": ["signage", "arcade_cabinets", "bar_elements"]
+    },
+    "floor_tile_system": {
+      "type": "random_activation_grid",
+      "colors": ["#39FF14", "#BF00FF", "#FFFF00"],
+      "activation_pattern": "random_0.5_to_3_second_delays",
+      "coverage": "70_percent_of_floor_area",
+      "disorientation_effect": true
+    },
+    "mobile_optimizations": {
+      "lod_system": {
+        "high_performance": "full_lighting_effects",
+        "medium_performance": "reduced_flicker_frequency",
+        "low_performance": "static_lighting_with_occasional_flicker",
+        "battery_saver": "minimal_effects_core_lighting_only"
+      }
+    }
+  },
+  
+  "particle_systems": {
+    "green_spectral_fog": {
+      "emission_rate": 15,
+      "particle_lifetime": 3.5,
+      "color_gradient": ["#39FF14", "#00FF00", "#ADFF2F"],
+      "movement_pattern": "slow_upward_drift_with_horizontal_sway",
+      "spawn_locations": ["arcade_cabinets", "bar_area", "hidden_areas"],
+      "mobile_scaling": {
+        "high_end": "full_particle_count",
+        "mid_range": "reduced_emission_rate_by_50_percent",
+        "low_end": "static_fog_texture_overlay"
+      }
+    },
+    "electrical_sparks": {
+      "emission_rate": 8,
+      "particle_lifetime": 0.8,
+      "color": "#FFFF00",
+      "spawn_triggers": ["broken_arcade_cabinets", "random_intervals"],
+      "visual_effect": "brief_electric_arcs",
+      "audio_sync": "electrical_crackle_sfx"
+    },
+    "floating_digital_artifacts": {
+      "emission_rate": 5,
+      "particle_lifetime": 6.0,
+      "appearance": "pixelated_glitch_fragments",
+      "colors": ["#00FFFF", "#FF00FF", "#FFFF00"],
+      "movement": "slow_random_drift_throughout_space",
+      "interactive": false,
+      "atmospheric_purpose": "digital_decay_theme"
+    },
+    "mirror_lag_particles": {
+      "emission_rate": 3,
+      "particle_lifetime": 2.0,
+      "trigger": "player_movement_near_mirrors",
+      "effect": "delayed_player_reflection_fragments",
+      "color": "monochrome_green_tint",
+      "purpose": "visual_representation_of_reflection_delay"
+    }
+  },
+  
+  "audio_systems": {
+    "ambient_tracks": {
+      "primary": {
+        "file": "warped_8bit_arcade_ambience.ogg",
+        "loop": true,
+        "volume": 0.6,
+        "effects": ["analog_distortion", "tape_decay_simulation"]
+      },
+      "entrance_fade": {
+        "file": "clocktower_plaza_to_arcade_transition.ogg",
+        "trigger": "player_enters_archway",
+        "duration": 3.0,
+        "effect": "crossfade_from_exterior_to_interior"
+      },
+      "hidden_area_distortion": {
+        "modification": "increase_distortion_by_40_percent",
+        "trigger": "approach_north_wing_or_hidden_areas",
+        "purpose": "audio_cue_for_deeper_exploration"
+      }
+    },
+    "interactive_audio": {
+      "arcade_cabinet_layers": {
+        "individual_game_audio": [
+          "frogger_existential_bleeps",
+          "street_fighter_identity_crisis_voices", 
+          "kebab_kombat_regret_button_sfx"
+        ],
+        "layering_system": "multiple_games_create_chaotic_symphony",
+        "volume_control": "proximity_based_mixing"
+      },
+      "token_system_audio": {
+        "dispensing": "metallic_clink_with_reverb",
+        "insertion": "mechanical_acceptance_chime",
+        "rejection": "buzzer_with_sad_trombone_effect"
+      },
+      "claw_machine_special": {
+        "normal_operation": "standard_crane_game_sfx",
+        "nft_acquisition": "remixed_fur_elise_victory_fanfare",
+        "rigged_failure": "comically_exaggerated_disappointment_sound"
+      }
+    },
+    "comedy_audio_integration": {
+      "satirical_stingers": [
+        "achievement_unlocked_for_meaningless_actions",
+        "crypto_notification_glitches_in_arcade_sounds",
+        "existential_crisis_realization_chord"
+      ],
+      "character_voice_direction": {
+        "twitchy_hackers": "techno_babble_mixed_with_mystical_nonsense",
+        "edm_ghosts": "reverb_heavy_cryptic_whispers",
+        "backpack_girl": "overly_earnest_ukulele_accompaniment"
+      }
+    }
+  },
+  
+  "status_effect_systems": {
+    "environmental_effects": {
+      "confusion_from_strobe": {
+        "trigger": "prolonged_exposure_to_stuttering_neon",
+        "probability": 0.15,
+        "duration": 30,
+        "description": "disorientation_from_chaotic_lighting"
+      },
+      "nostalgic_buff": {
+        "trigger": "successful_arcade_game_completion",
+        "probability": 0.8,
+        "duration": 120,
+        "effect": "temporary_charm_boost",
+        "description": "warm_feelings_from_childhood_memories"
+      },
+      "grease_fingers": {
+        "trigger": "handling_old_joysticks_and_buttons",
+        "probability": 0.3,
+        "duration": 60,
+        "effect": "reduced_accuracy_for_precision_tasks",
+        "description": "sticky_residue_from_arcade_equipment"
+      }
+    },
+    "substance_interactions": {
+      "absinthe_samples": {
+        "availability": "random_npc_offers",
+        "positive_effect": "cure_hangover_status",
+        "negative_risk": "30_percent_chance_confused_status",
+        "description": "overpriced_green_jagermeister_disguised_as_authentic_absinthe"
+      },
+      "enhanced_encounters": {
+        "drunk_status": "increased_random_encounter_rate_by_50_percent",
+        "confused_status": "increased_random_encounter_rate_by_30_percent",
+        "combined": "potential_for_unique_encounter_chains"
+      }
+    }
+  },
+  
+  "couchsurf_integration": {
+    "host_details": {
+      "npc_id": "backpack_girl_who_never_left",
+      "accommodation_type": "hostel_floor_crash",
+      "comfort_level": "minimal_but_authentic_backpacker_experience"
+    },
+    "trigger_conditions": {
+      "conversation_progression": "accept_kebab_offer_and_crash_invitation",
+      "time_requirements": "late_evening_or_night",
+      "status_conditions": "no_hostile_reputation_with_arcade_npcs"
+    },
+    "morning_after_scene": {
+      "time": "06:00_game_time",
+      "activity": "backpack_girl_playing_ukulele_composing_ballad",
+      "dialogue": "singing_about_the_way_your_aura_screamed_tourist",
+      "player_condition": "sleep_deprived_but_culturally_enriched"
+    },
+    "rewards_and_penalties": {
+      "negative": {
+        "sp_loss": 10,
+        "reason": "no_actual_sleep_due_to_6am_ukulele_serenade"
+      },
+      "positive": {
+        "collectible": "ballad_of_the_bros",
+        "future_utility": "useful_in_sinfonia_music_challenges",
+        "cultural_connection": "deeper_understanding_of_backpacker_scene"
+      }
+    },
+    "narrative_progression": {
+      "world_building": "insight_into_permanent_traveler_subculture",
+      "character_development": "bros_exposure_to_genuine_cultural_exchange",
+      "quest_advancement": "preparation_for_cross_city_interactions"
+    }
+  },
+  
+  "cross_location_systems": {
+    "brewery_connection": {
+      "entrance_mechanism": "hidden_passage_behind_time_crisis_machine",
+      "destination": "absynthium_taproom_dungeon",
+      "prerequisite": "exploration_of_north_wing_arcade_maze",
+      "transition_type": "seamless_loading_with_audio_transition"
+    },
+    "information_flow": {
+      "crypto_knowledge": {
+        "source": "twitchy_hacker_npc_interactions",
+        "utility": "shadow_exchange_negotiation_advantages",
+        "persistence": "knowledge_flags_carry_across_locations"
+      },
+      "sinfonia_preparation": {
+        "item": "broken_game_boy_with_weird_symbols",
+        "acquisition": "random_encounter_in_north_wing",
+        "future_use": "quest_progression_in_vienna_parody"
+      }
+    },
+    "reputation_system": {
+      "arcade_standing": "player_choices_affect_npc_relationships",
+      "tourist_vs_local": "balance_between_exploitation_and_integration",
+      "consequence_tracking": "actions_remembered_for_return_visits"
+    }
+  },
+  
+  "mobile_performance_optimization": {
+    "draw_call_management": {
+      "max_simultaneous_particles": 50,
+      "lighting_optimization": "batched_point_lights",
+      "texture_streaming": "progressive_quality_loading"
+    },
+    "memory_management": {
+      "audio_compression": "ogg_vorbis_at_128kbps",
+      "texture_compression": "platform_specific_optimization",
+      "asset_unloading": "aggressive_cleanup_when_exiting_location"
+    },
+    "battery_optimization": {
+      "frame_rate_scaling": "adaptive_based_on_battery_level",
+      "background_processing": "minimal_when_app_not_focused",
+      "thermal_management": "reduce_effects_if_device_overheating"
+    }
+  },
+  
+  "accessibility_features": {
+    "visual_accessibility": {
+      "colorblind_support": "alternative_visual_cues_for_color_dependent_mechanics",
+      "contrast_options": "high_contrast_mode_for_text_and_ui",
+      "text_scaling": "dynamic_font_sizing_based_on_device_settings"
+    },
+    "audio_accessibility": {
+      "subtitle_support": "full_dialogue_and_sfx_captioning",
+      "visual_audio_cues": "screen_flash_for_important_audio_events",
+      "volume_balance": "separate_controls_for_music_sfx_and_voice"
+    },
+    "motor_accessibility": {
+      "touch_zone_sizing": "minimum_44px_for_all_interactive_elements",
+      "gesture_alternatives": "tap_alternatives_for_complex_gestures",
+      "timing_adjustments": "configurable_timing_for_mini_games"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  
+  "lighting_systems": {
+    "primary_lighting": {
+      "type": "flickering_fluorescent_green",
+      "source": "old_arcade_marquee_panel_rigged_as_light",
+      "color": "#00FF41",
+      "intensity": 0.7,
+      "flicker_pattern": "random_1_to_3_second_intervals",
+      "power_source": "jury_rigged_electrical_connection"
+    },
+    "blacklight_system": {
+      "type": "uv_blacklight_for_graffiti",
+      "activation": "automatic_when_fluorescent_dims",
+      "color": "#8A2BE2",
+      "coverage": "entire_small_room",
+      "graffiti_reveal": "highlighter_ink_becomes_visible_only_under_blacklight",
+      "intensity_variation": "pulses_with_techno_music_beats"
+    },
+    "crt_screen_glow": {
+      "type": "secondary_ambient_lighting",
+      "source": "repurposed_crt_arcade_screen_mirror",
+      "color": "#00FF00",
+      "intensity": 0.4,
+      "pattern": "continuous_insert_coin_loop_creates_text_shadows",
+      "screen_flicker": "authentic_crt_refresh_rate_flicker_60hz"
+    },
+    "electrical_spark_illumination": {
+      "type": "intermittent_hazard_lighting",
+      "source": "exposed_wiring_throughout_room",
+      "color": "#FFFF00",
+      "intensity": 1.0,
+      "duration": "0.1_second_bursts",
+      "frequency": "random_2_to_5_second_intervals",
+      "proximity_trigger": "increases_when_player_within_16_pixels_of_wiring"
+    },
+    "mobile_optimizations": {
+      "performance_scaling": {
+        "high_end": "full_lighting_effects_with_blacklight_transitions",
+        "medium": "reduced_flicker_frequency_simplified_blacklight",
+        "low_end": "static_lighting_with_occasional_effects",
+        "battery_saver": "single_light_source_minimal_effects"
+      }
+    }
+  },
+  
+  "particle_systems": {
+    "electrical_sparks": {
+      "emission_rate": 5,
+      "particle_lifetime": 0.8,
+      "color": "#FFFF00",
+      "spawn_locations": ["exposed_wiring_points", "electrical_junction_boxes"],
+      "movement_pattern": "brief_arc_with_gravity_falloff",
+      "audio_sync": "electrical_crackling_sfx",
+      "proximity_scaling": "emission_rate_doubles_when_player_nearby"
+    },
+    "citrus_cleaner_vapor": {
+      "emission_rate": 8,
+      "particle_lifetime": 4.0,
+      "color_gradient": ["#FFFFE0", "#F0E68C", "#DDA0DD"],
+      "spawn_locations": ["floor_areas", "cleaning_supply_remnants"],
+      "movement_pattern": "slow_upward_drift_with_room_circulation",
+      "scent_effect": "expired_citrus_cleaner_atmospheric_description",
+      "density_variation": "thicker_near_janitor_bucket_area"
+    },
+    "stale_vape_clouds": {
+      "emission_rate": 3,
+      "particle_lifetime": 6.0,
+      "color": "#C0C0C0",
+      "spawn_locations": ["corner_areas", "ventilation_gaps"],
+      "movement_pattern": "lazy_swirling_motion_confined_by_small_space",
+      "cultural_context": "residual_from_previous_occupants_gaming_sessions",
+      "interaction": "particles_disturbed_by_player_movement"
+    },
+    "crt_scan_lines": {
+      "emission_rate": 1,
+      "particle_lifetime": 0.5,
+      "appearance": "horizontal_line_artifacts",
+      "color": "#00FF00",
+      "spawn_location": "crt_mirror_screen_surface",
+      "movement_pattern": "vertical_scroll_authentic_crt_behavior",
+      "authenticity_detail": "recreates_genuine_crt_monitor_artifacts"
+    }
+  },
+  
+  "audio_systems": {
+    "ambient_tracks": {
+      "primary_techno_echo": {
+        "file": "muffled_techno_through_drywall.ogg",
+        "loop": true,
+        "volume": 0.4,
+        "effects": ["wall_muffling_filter", "bass_emphasis"],
+        "source_direction": "from_main_arcade_through_walls",
+        "beat_sync": "occasional_sync_with_sprite_flashes"
+      },
+      "electrical_humming": {
+        "file": "fluorescent_electrical_hum.ogg",
+        "loop": true,
+        "volume": 0.3,
+        "modulation": "varies_with_light_flicker_intensity",
+        "realistic_detail": "authentic_old_fluorescent_ballast_sounds"
+      },
+      "citrus_cleaner_ambience": {
+        "file": "cleaning_supply_vapor_whistle.ogg",
+        "loop": true,
+        "volume": 0.2,
+        "atmospheric_purpose": "adds_to_expired_cleaning_supply_environment"
+      }
+    },
+    "interactive_audio": {
+      "ddr_toilet_responses": {
+        "step_sounds": [
+          "ddr_up_arrow_press.wav",
+          "ddr_down_arrow_press.wav", 
+          "ddr_left_arrow_press.wav",
+          "ddr_right_arrow_press.wav"
+        ],
+        "activation_trigger": "toilet_seat_pressure_detection",
+        "comedy_timing": "authentic_ddr_step_sounds_during_bathroom_use",
+        "random_variation": "different_arrow_sounds_for_different_actions"
+      },
+      "crt_screen_audio": {
+        "insert_coin_loop": "classic_arcade_insert_coin_voice.wav",
+        "screen_flicker": "crt_refresh_static.wav",
+        "easter_egg_activation": "game_over_dignity_expired.wav",
+        "continuous_play": "loops_seamlessly_with_visual_display"
+      },
+      "claw_machine_chandelier": {
+        "swaying_creaks": "metal_arm_creaking.wav",
+        "movement_trigger": "player_rapid_movement_causes_pendulum_motion",
+        "atmospheric_eeriness": "cursed_chandelier_ambience",
+        "rare_activation": "claw_grab_attempt_sound_on_easter_egg"
+      },
+      "electrical_hazard_sounds": {
+        "spark_crackles": "electrical_arc_discharge.wav",
+        "proximity_warnings": "increased_crackling_when_player_approaches",
+        "mild_shock_effect": "brief_electrical_zap_stun_sound.wav"
+      }
+    },
+    "comedy_audio_integration": {
+      "thirty_second_shame_timer": {
+        "trigger": "player_remains_in_room_longer_than_30_seconds",
+        "audio_file": "youve_achieved_nothing_but_shame_player_one.wav",
+        "delivery_style": "deadpan_arcade_announcer_voice",
+        "repeat_prevention": "only_triggers_once_per_visit"
+      },
+      "joystick_squeak_escalation": {
+        "base_sound": "joystick_squeak_loop.wav", 
+        "volume_increase": "gets_progressively_louder_with_extended_stay",
+        "psychological_pressure": "creates_increasing_discomfort_encouraging_exit",
+        "loop_variation": "slight_pitch_variations_prevent_audio_fatigue"
+      },
+      "used_socks_dispenser": {
+        "claw_machine_prize_sounds": "authentic_prize_dispensing_audio",
+        "sock_drop_effects": "various_fabric_dropping_sounds",
+        "player_confusion_audio": "increasingly_frustrated_interaction_attempts",
+        "hygiene_failure_stinger": "sad_trombone_for_third_sock_dispense"
+      }
+    }
+  },
+  
+  "status_effect_systems": {
+    "environmental_effects": {
+      "embarrassed_resistance_training": {
+        "trigger": "reading_graffiti_especially_smaaaash_quote",
+        "effect": "plus_one_embarrassed_resistance_permanent",
+        "description": "exposure_to_extreme_gaming_culture_cringe_builds_immunity",
+        "stacking": "multiple_graffiti_reads_can_stack_resistance"
+      },
+      "cringe_tolerance_development": {
+        "trigger": "extended_exposure_to_room_atmosphere",
+        "probability": 0.6,
+        "duration": 300,
+        "effect": "temporary_immunity_to_social_awkwardness_debuffs",
+        "description": "prolonged_exposure_to_maximum_cringe_environment_builds_tolerance"
+      },
+      "athletes_foot_risk": {
+        "trigger": "using_janitor_bucket_foot_soak_with_npcs",
+        "probability": 0.15,
+        "duration": 180,
+        "effect": "minor_movement_speed_reduction",
+        "description": "questionable_hygiene_of_shared_foot_soak_creates_health_risk"
+      },
+      "electrical_shock_stun": {
+        "trigger": "proximity_to_exposed_wiring_sparks",
+        "probability": 0.1,
+        "duration": 5,
+        "effect": "brief_movement_stun_with_comedy_animation",
+        "description": "mild_electrical_shock_from_obvious_safety_hazards"
+      }
+    },
+    "graffiti_interaction_effects": {
+      "laugh_loop_bonus": {
+        "trigger": "reading_smaaaash_quote_first_time",
+        "effect": "uncontrollable_laughter_animation_sequence",
+        "duration": 10,
+        "benefit": "plus_one_embarrassed_resistance_from_cathartic_laughter",
+        "social_impact": "other_npcs_comment_on_players_laughter"
+      },
+      "combo_d_by_love_unlock": {
+        "trigger": "reading_joystick_lips_graffiti_while_embarrassed",
+        "effect": "permanent_lore_entry_in_ddr_arrow_glyphs",
+        "narrative_value": "cross_city_gaming_culture_story_thread",
+        "achievement_progress": "contributes_to_joysticks_and_shame_title"
+      },
+      "gaming_culture_enlightenment": {
+        "trigger": "reading_tekken_virginity_haiku",
+        "effect": "temporary_wisdom_buff_plus_one_insight",
+        "duration": 120,
+        "description": "unexpectedly_touching_poetry_provides_cultural_perspective"
+      }
+    }
+  },
+  
+  "blacklight_graffiti_system": {
+    "activation_mechanics": {
+      "automatic_blacklight": "activates_when_primary_fluorescent_dims_during_flicker",
+      "manual_activation": "player_can_trigger_by_interacting_with_light_switch",
+      "duration": "remains_active_for_15_seconds_per_activation",
+      "cooldown": "10_second_cooldown_between_manual_activations"
+    },
+    "graffiti_visibility_layers": {
+      "layer_one_basic": "primary_smaaaash_quote_and_obvious_pixel_art",
+      "layer_two_detailed": "fake_cheat_codes_and_additional_crude_artwork",
+      "layer_three_hidden": "tekken_haiku_requires_specific_viewing_angle",
+      "layer_four_status_dependent": "joystick_lips_only_visible_when_embarrassed"
+    },
+    "highlighter_ink_simulation": {
+      "color_variations": ["#FFFF00", "#00FF00", "#FF69B4", "#00FFFF"],
+      "authenticity_details": "different_colors_suggest_multiple_contributors_over_time",
+      "aging_effects": "some_graffiti_appears_faded_suggesting_age_hierarchy",
+      "layering_system": "newer_graffiti_overlaps_older_creating_archaeological_effect"
+    }
+  },
+  
+  "cramped_space_mechanics": {
+    "movement_restrictions": {
+      "awkward_rotation": "player_must_turn_carefully_to_avoid_hitting_walls",
+      "door_closing_challenge": "requires_specific_positioning_to_close_door_properly",
+      "claustrophobic_camera": "camera_pulls_closer_to_simulate_confined_space",
+      "interaction_precision": "smaller_touch_zones_due_to_cramped_conditions"
+    },
+    "spatial_audio_effects": {
+      "sound_compression": "audio_feels_muffled_and_close_due_to_small_space",
+      "echo_minimization": "very_short_reverb_times_simulate_tiny_room",
+      "proximity_enhancement": "all_sounds_feel_immediate_and_close",
+      "breathing_room_audio": "subtle_claustrophobic_breathing_ambience"
+    },
+    "psychological_pressure_system": {
+      "discomfort_timer": "player_discomfort_increases_with_time_spent_in_room",
+      "exit_encouragement": "various_audio_and_visual_cues_encourage_leaving",
+      "achievement_balance": "rewards_exploration_while_encouraging_movement",
+      "comedy_through_discomfort": "awkwardness_becomes_source_of_humor"
+    }
+  },
+  
+  "cross_system_integration": {
+    "icq_messaging_integration": {
+      "graffiti_to_message": "reading_primary_graffiti_enables_icq_sharing",
+      "rival_trio_targeting": "message_sent_to_specific_group_chat",
+      "consequence_tracking": "system_remembers_if_message_was_sent",
+      "battle_system_connection": "cringe_lock_debuff_applied_in_next_encounter"
+    },
+    "achievement_system_connection": {
+      "bathroom_collection_progress": "contributes_to_citywide_bathroom_exploration",
+      "embarrassed_status_mastery": "teaches_strategic_use_of_social_awkwardness",
+      "gaming_culture_documentation": "serves_as_anthropological_study_achievement",
+      "title_unlock_progression": "essential_for_joysticks_and_shame_title"
+    },
+    "token_economy_integration": {
+      "unlock_cost_tracking": "three_token_investment_tracked_in_economy",
+      "value_proposition": "achievement_and_lore_justify_token_expenditure",
+      "arcade_ecosystem": "connected_to_main_arcade_token_circulation",
+      "hidden_content_reward": "demonstrates_value_of_exploration_investment"
+    }
+  },
+  
+  "mobile_performance_optimization": {
+    "cramped_space_rendering": {
+      "reduced_draw_distance": "smaller_space_requires_fewer_render_calls",
+      "simplified_lighting": "fewer_light_sources_easier_on_mobile_gpu",
+      "particle_density_scaling": "lower_particle_counts_due_to_confined_area",
+      "texture_compression": "smaller_space_allows_higher_detail_textures"
+    },
+    "audio_optimization": {
+      "compressed_audio_files": "shorter_loops_due_to_repetitive_nature",
+      "spatial_audio_simplification": "small_space_requires_less_complex_positioning",
+      "effect_layering_limits": "maximum_three_simultaneous_audio_effects",
+      "memory_efficient_looping": "seamless_loops_prevent_memory_buildup"
+    },
+    "interaction_optimization": {
+      "larger_touch_zones": "compensate_for_cramped_space_with_generous_interaction_areas",
+      "simplified_gesture_recognition": "basic_taps_only_no_complex_gestures",
+      "immediate_feedback": "instant_response_to_compensate_for_confined_feeling",
+      "accessibility_considerations": "high_contrast_options_for_blacklight_graffiti"
+    }
+  },
+  
+  "accessibility_features": {
+    "visual_accessibility": {
+      "blacklight_alternatives": "high_contrast_mode_makes_graffiti_visible_without_blacklight",
+      "text_scaling": "graffiti_text_can_be_enlarged_for_readability",
+      "color_blind_support": "alternative_visual_cues_for_color_dependent_graffiti",
+      "flicker_sensitivity": "option_to_disable_fluorescent_flicker_for_photosensitive_users"
+    },
+    "audio_accessibility": {
+      "subtitle_support": "all_audio_cues_have_text_alternatives",
+      "visual_audio_indicators": "screen_flash_for_important_audio_events",
+      "volume_isolation": "separate_controls_for_different_audio_categories",
+      "hearing_impaired_alternatives": "visual_substitutes_for_audio_based_interactions"
+    },
+    "motor_accessibility": {
+      "simplified_interactions": "single_tap_alternatives_for_all_complex_interactions",
+      "extended_interaction_time": "longer_windows_for_graffiti_reading_and_activation",
+      "alternative_unlock_methods": "options_for_players_who_cannot_use_standard_token_system",
+      "navigation_assistance": "optional_guidance_for_cramped_space_movement"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  
+  "lighting_systems": {
+    "primary_lighting": {
+      "type": "blinding_fluorescent_cart_lighting",
+      "source": "overhead_fluorescent_tubes_mounted_on_cart",
+      "color": "#FFFFFF",
+      "intensity": 1.0,
+      "coverage": "harsh_direct_lighting_on_food_prep_area",
+      "contrast_effect": "creates_stark_contrast_with_dim_alley_shadows"
+    },
+    "led_strip_accent": {
+      "type": "flickering_led_strip_signage",
+      "source": "zip_tied_to_hookah_hose_backlighting_sign",
+      "color": "#FF6B35",
+      "intensity_variation": "0.3_to_1.0_random_flicker",
+      "flicker_pattern": "irregular_0.5_to_2_second_intervals",
+      "aesthetic_purpose": "faux_arabic_font_backlight_effect"
+    },
+    "alley_ambient": {
+      "type": "dim_urban_night_lighting",
+      "sources": ["distant_street_lamps", "club_light_bleed"],
+      "color": "#FFB347",
+      "intensity": 0.2,
+      "atmosphere": "creates_dingy_urban_night_backdrop"
+    },
+    "grease_puddle_reflections": {
+      "type": "rainbow_oil_slick_reflections",
+      "source": "fluorescent_light_reflecting_off_grease_puddles",
+      "colors": ["#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#FF00FF"],
+      "animation": "slow_shifting_rainbow_spectrum_2_second_cycle",
+      "coverage": "scattered_puddles_throughout_alley_floor"
+    },
+    "mobile_optimizations": {
+      "performance_scaling": {
+        "high_end": "full_lighting_effects_with_dynamic_shadows",
+        "medium": "simplified_rainbow_reflections_static_shadows",
+        "low_end": "basic_fluorescent_minimal_accent_lighting",
+        "battery_saver": "single_light_source_no_reflections"
+      }
+    }
+  },
+  
+  "particle_systems": {
+    "cooking_steam": {
+      "emission_rate": 20,
+      "particle_lifetime": 4.0,
+      "color_gradient": ["#FFFFFF", "#F5F5DC", "#D3D3D3"],
+      "spawn_location": "vertical_rotisserie_and_cooking_surfaces",
+      "movement_pattern": "upward_drift_with_slight_horizontal_dispersion",
+      "density_variation": "increases_during_active_cooking_decreases_during_idle",
+      "mobile_scaling": {
+        "high_performance": "full_particle_count_realistic_steam_behavior",
+        "medium_performance": "reduced_emission_rate_simplified_movement",
+        "low_performance": "static_steam_sprite_overlay"
+      }
+    },
+    "cigarette_smoke_ambient": {
+      "emission_rate": 5,
+      "particle_lifetime": 8.0,
+      "color": "#C0C0C0",
+      "spawn_locations": ["nearby_smokers", "ambient_urban_environment"],
+      "movement_pattern": "slow_horizontal_drift_with_occasional_upward_wisps",
+      "atmospheric_purpose": "creates_urban_night_haze_ambience",
+      "interaction": "particles_disturbed_by_player_movement"
+    },
+    "grease_vapor": {
+      "emission_rate": 12,
+      "particle_lifetime": 3.0,
+      "color_tint": "#FFD700",
+      "spawn_locations": ["rotisserie_drip_areas", "cooking_surfaces"],
+      "movement_pattern": "minimal_upward_drift_heavy_particles",
+      "health_implication": "visible_representation_of_questionable_cooking_conditions",
+      "mr_chadz_dismissal": "vendor_treats_as_flavor_enhancement"
+    },
+    "urban_debris_flutter": {
+      "emission_rate": 2,
+      "particle_lifetime": 12.0,
+      "particle_types": ["rave_flyer_scraps", "red_bull_can_labels", "receipt_fragments"],
+      "spawn_locations": ["alley_wind_currents"],
+      "movement_pattern": "random_flutter_and_tumble_realistic_wind_physics",
+      "cultural_context": "post_party_detritus_as_environmental_storytelling"
+    },
+    "rotisserie_grease_droplets": {
+      "emission_rate": 8,
+      "particle_lifetime": 1.5,
+      "color": "#8B4513",
+      "spawn_location": "bottom_of_vertical_rotisserie",
+      "movement_pattern": "gravity_drop_with_splatter_on_impact",
+      "accumulation": "creates_rainbow_grease_puddles_over_time",
+      "hygiene_concern": "obvious_health_code_violation_normalized"
+    }
+  },
+  
+  "audio_systems": {
+    "ambient_tracks": {
+      "sizzling_cooking_sounds": {
+        "file": "rotisserie_meat_sizzling_continuous.ogg",
+        "loop": true,
+        "volume": 0.7,
+        "variation": "intensity_varies_with_cooking_activity",
+        "realistic_detail": "authentic_meat_cooking_audio"
+      },
+      "steam_hissing": {
+        "file": "steam_hiss_from_cooking_equipment.ogg",
+        "loop": true,
+        "volume": 0.4,
+        "trigger": "increases_during_food_preparation",
+        "atmospheric_purpose": "industrial_cooking_environment"
+      },
+      "urban_night_ambience": {
+        "file": "city_traffic_distant_club_music_blend.ogg",
+        "loop": true,
+        "volume": 0.3,
+        "time_variation": "volume_changes_based_on_night_progression",
+        "cultural_context": "late_night_european_city_atmosphere"
+      },
+      "alley_wind": {
+        "file": "urban_wind_through_alley_debris_flutter.ogg",
+        "loop": true,
+        "volume": 0.2,
+        "environmental_interaction": "moves_scattered_party_debris"
+      }
+    },
+    "interactive_audio": {
+      "rotisserie_mechanical_hum": {
+        "file": "vertical_rotisserie_motor_continuous.wav",
+        "loop": true,
+        "volume": 0.5,
+        "hypnotic_quality": "steady_mechanical_rhythm_almost_meditative",
+        "breakdown_variation": "occasional_mechanical_stutters_suggesting_age"
+      },
+      "business_phone_notifications": {
+        "files": [
+          "supplier_call_ring.wav",
+          "health_inspector_warning_buzz.wav",
+          "sketchy_partner_text_alert.wav",
+          "ingredient_delivery_notification.wav"
+        ],
+        "frequency": "every_10_to_15_seconds",
+        "mr_chadz_reaction": "brief_pause_in_service_to_handle_business",
+        "business_correlation": "notification_types_reflect_sketchy_food_operation"
+      },
+      "grease_popping_sizzling": {
+        "files": [
+          "grease_pop_small.wav",
+          "grease_pop_medium.wav", 
+          "grease_splatter_sizzle.wav"
+        ],
+        "trigger": "random_during_cooking_process",
+        "safety_concern": "audio_cues_suggest_dangerous_cooking_conditions",
+        "comedy_timing": "punctuates_mr_chadz_health_violation_jokes"
+      },
+      "customer_interaction_sounds": {
+        "order_taking": "pen_scribbling_on_greasy_notepad.wav",
+        "payment_processing": "cash_register_ancient_mechanical.wav",
+        "food_wrapping": "aluminum_foil_crinkling_enthusiastic.wav",
+        "serving": "cardboard_container_placement.wav"
+      }
+    },
+    "comedy_audio_integration": {
+      "mr_chadz_voice_acting": {
+        "delivery_style": "deadpan_confidence_despite_obvious_health_violations",
+        "business_obsession": "frequent_interruptions_to_handle_sketchy_calls",
+        "catchphrase_timing": "perfectly_timed_with_grease_pops_and_sizzles",
+        "customer_rapport": "treats_food_safety_concerns_as_selling_points"
+      },
+      "health_violation_stingers": {
+        "rat_gnawing": "subtle_continuous_chewing_sounds_near_ingredients",
+        "questionable_meat_handling": "exaggerated_squelching_during_preparation",
+        "expired_ingredient_reveals": "dramatic_sting_when_checking_dates"
+      },
+      "environmental_comedy_timing": {
+        "grease_puddle_splashes": "perfectly_timed_with_customer_footsteps",
+        "led_strip_electrical_buzz": "intensifies_during_health_violation_commentary",
+        "steam_whistle_interruptions": "cuts_off_mr_chadz_mid_health_disclaimer"
+      }
+    }
+  },
+  
+  "status_effect_environmental_triggers": {
+    "hunger_enhancement": {
+      "cooking_aroma_exposure": {
+        "trigger": "prolonged_exposure_to_sizzling_meat_steam",
+        "effect": "increased_hunger_status_overrides_hygiene_concerns",
+        "duration": "persistent_while_in_location",
+        "strategic_implication": "makes_questionable_food_more_appealing"
+      }
+    },
+    "nausea_risk_factors": {
+      "grease_vapor_sensitivity": {
+        "trigger": "extended_exposure_to_grease_particles_when_hungover",
+        "probability": 0.2,
+        "effect": "mild_nausea_status_reduces_food_appeal",
+        "recovery": "leaving_location_or_consuming_yogurt_reboot"
+      },
+      "rotisserie_hypnosis": {
+        "trigger": "staring_at_spinning_meat_while_drunk",
+        "probability": 0.15,
+        "effect": "dizziness_status_brief_disorientation",
+        "comedy_value": "player_becomes_mesmerized_by_mystery_meat"
+      }
+    },
+    "social_awareness_modifiers": {
+      "health_code_realization": {
+        "trigger": "observing_rat_gnawing_chili_pepper_while_sober",
+        "effect": "temporary_disgust_status_reduces_appetite",
+        "duration": "30_seconds",
+        "override": "can_be_overcome_by_extreme_hunger_or_intoxication"
+      },
+      "business_commentary_confusion": {
+        "trigger": "listening_to_mr_chadz_sketchy_business_calls_while_ordering",
+        "effect": "mild_confused_status_about_food_supply_chain",
+        "comedy_purpose": "reflects_absurdity_of_mixing_food_service_with_questionable_business_practices"
+      }
+    }
+  },
+  
+  "time_based_environmental_changes": {
+    "peak_hours_10pm_to_6am": {
+      "increased_steam_production": "more_active_cooking_higher_particle_density",
+      "enhanced_business_activity": "more_frequent_phone_calls_supplier_coordination",
+      "customer_desperation_audio": "background_sounds_of_drunk_hungry_patrons",
+      "grease_accumulation": "puddles_grow_larger_more_rainbow_reflective"
+    },
+    "off_peak_hours_6am_to_10pm": {
+      "reduced_cooking_activity": "rotisserie_still_spinning_less_steam_production",
+      "business_maintenance_mode": "fewer_calls_more_relaxed_mr_chadz",
+      "cleaning_attempts": "occasional_half_hearted_grease_management",
+      "urban_ambience_shift": "daytime_city_sounds_replace_nightlife_audio"
+    },
+    "weather_responsive_elements": {
+      "rain_effects": "steam_becomes_more_visible_grease_puddles_dilute",
+      "cold_weather": "increased_steam_production_customers_seek_warm_food",
+      "wind_conditions": "affects_particle_movement_debris_flutter_intensity"
+    }
+  },
+  
+  "cross_location_environmental_connections": {
+    "velvet_curtain_club_audio_bleed": {
+      "bass_thumping": "distant_club_music_provides_rhythmic_backdrop",
+      "crowd_noise": "occasional_party_goer_voices_approaching_alley",
+      "club_lighting_effects": "colored_lights_occasionally_illuminate_alley",
+      "customer_pipeline": "audio_cues_suggest_steady_stream_from_club_to_kebab"
+    },
+    "absinthe_arcade_proximity": {
+      "arcade_audio_distance": "faint_warped_8bit_music_when_wind_favorable",
+      "shared_customer_base": "similar_urban_decay_aesthetic_elements",
+      "sketchy_business_overlap": "mr_chadz_questionable_practices_connect_to_arcade_themes",
+      "atmospheric_continuity": "maintains_debaucheryville_seedy_tourist_exploitation_vibe"
+    }
+  },
+  
+  "mobile_performance_optimization": {
+    "particle_system_scaling": {
+      "draw_call_management": "maximum_4_simultaneous_particle_systems",
+      "emission_rate_scaling": "reduces_based_on_device_performance_metrics",
+      "particle_lifetime_optimization": "shorter_lifetimes_on_older_devices",
+      "memory_management": "aggressive_particle_cleanup_when_not_visible"
+    },
+    "audio_optimization": {
+      "simultaneous_audio_limit": "maximum_6_concurrent_audio_streams",
+      "compression_strategy": "high_compression_for_ambient_loops",
+      "priority_system": "mr_chadz_dialogue_takes_precedence_over_ambience",
+      "memory_streaming": "loads_audio_on_demand_unloads_when_leaving"
+    },
+    "lighting_performance": {
+      "dynamic_shadow_scaling": "reduces_shadow_complexity_on_lower_end_devices",
+      "reflection_simplification": "rainbow_puddles_use_simple_color_cycling",
+      "particle_lighting_interaction": "disabled_on_devices_with_limited_gpu"
+    }
+  },
+  
+  "accessibility_features": {
+    "visual_accessibility": {
+      "high_contrast_mode": "enhanced_contrast_between_food_cart_and_alley_shadows",
+      "colorblind_accommodation": "alternative_visual_cues_for_rainbow_grease_puddles",
+      "particle_reduction": "option_to_minimize_steam_and_smoke_for_clarity",
+      "text_scaling": "menu_items_and_prices_scale_with_device_font_settings"
+    },
+    "audio_accessibility": {
+      "subtitle_support": "all_mr_chadz_dialogue_and_environmental_sounds_captioned",
+      "visual_audio_cues": "screen_flash_for_crypto_notifications_and_cooking_sounds",
+      "hearing_impaired_alternatives": "vibration_patterns_for_important_audio_events",
+      "audio_description": "optional_narration_of_visual_environmental_elements"
+    },
+    "interaction_accessibility": {
+      "simplified_menu_navigation": "large_touch_targets_for_food_item_selection",
+      "voice_control": "alternative_input_method_for_ordering_food",
+      "reduced_motion": "option_to_disable_rotisserie_animation_for_motion_sensitivity",
+      "cognitive_assistance": "clear_visual_indicators_for_all_interactive_elements"
+    }
+  },
+  
+  "environmental_storytelling_elements": {
+    "post_party_archaeology": {
+      "debris_types": "specific_items_tell_story_of_previous_nights_parties",
+      "accumulation_patterns": "grease_puddles_show_years_of_operation",
+      "wear_and_tear": "equipment_shows_realistic_degradation_from_heavy_use",
+      "cultural_artifacts": "nft_graffiti_represents_specific_moment_in_crypto_history"
+    },
+    "economic_indicators": {
+      "crypto_correlation": "mr_chadz_mood_and_pricing_reflect_market_conditions",
+      "customer_demographics": "environmental_clues_suggest_target_clientele",
+      "competition_absence": "no_other_food_vendors_suggests_territorial_control",
+      "regulatory_avoidance": "setup_suggests_operation_outside_normal_permits"
+    },
+    "health_code_violations_as_atmosphere": {
+      "normalization_of_problems": "everyone_accepts_rat_as_part_of_experience",
+      "creative_solutions": "jury_rigged_equipment_shows_entrepreneurial_spirit",
+      "survival_mentality": "operation_continues_despite_obvious_challenges",
+      "customer_complicity": "patrons_willingly_participate_in_questionable_dining"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  
+  "lighting_systems": {
+    "violent_carnival_strobing": {
+      "type": "carnival_light_effects",
+      "colors": ["#DC143C", "#39FF14", "#4B0082"],
+      "intensity": 0.9,
+      "strobe_pattern": "violent_flashing_disorienting_intervals",
+      "accessibility": "strobe_disable_option_for_photosensitive_users"
+    },
+    "neon_rotisserie_glow": {
+      "type": "carousel_rotisserie_illumination",
+      "color": "#39FF14",
+      "intensity": 0.8,
+      "coverage": "neon_lit_rotisserie_shaped_like_carousel"
+    },
+    "steam_illumination": {
+      "type": "steam_particle_lighting",
+      "color": "#FFFFFF",
+      "intensity": 0.6,
+      "source": "steam_belching_apparatus_creates_atmospheric_glow"
+    }
+  },
+  
+  "particle_systems": {
+    "steam_emission": {
+      "emission_rate": 25,
+      "particle_lifetime": 5.0,
+      "color_gradient": ["#FFFFFF", "#F5F5DC"],
+      "spawn_location": "steam_belching_pushcart_multiple_points",
+      "movement_pattern": "upward_drift_with_carnival_atmosphere_dispersion",
+      "mobile_scaling": {
+        "high_performance": "full_steam_effects_realistic_behavior",
+        "reduced_performance": "simplified_steam_sprites_basic_animation"
+      }
+    },
+    "grease_spattering": {
+      "emission_rate": 15,
+      "particle_lifetime": 2.0,
+      "color": "#8B4513",
+      "spawn_location": "carousel_rotisserie_cooking_surfaces",
+      "movement_pattern": "grease_droplet_splatter_realistic_physics",
+      "health_violation_visual": "obvious_safety_concerns_normalized"
+    },
+    "carnival_light_effects": {
+      "emission_rate": 30,
+      "particle_lifetime": 1.0,
+      "colors": ["#DC143C", "#39FF14", "#4B0082"],
+      "spawn_location": "violent_flashing_carnival_lights_overhead",
+      "movement_pattern": "rapid_color_cycling_disorienting_strobes",
+      "accessibility_option": "can_be_disabled_for_photosensitive_users"
+    },
+    "mysterious_vapor": {
+      "emission_rate": 8,
+      "particle_lifetime": 6.0,
+      "color_tint": "#9932CC",
+      "spawn_location": "mystery_ingredient_storage_unknown_contents",
+      "movement_pattern": "slow_ominous_drift_suggests_unknown_substances",
+      "atmospheric_purpose": "enhances_darkweb_wet_market_aesthetic"
+    }
+  },
+  
+  "audio_systems": {
+    "ambient_tracks": {
+      "warped_carnival_music": {
+        "file": "circus_music_with_underlying_menace.ogg",
+        "loop": true,
+        "volume": 0.6,
+        "description": "calliope_distortion_creates_unsettling_backdrop"
+      },
+      "steam_hissing_grease_popping": {
+        "file": "cooking_apparatus_continuous_audio.ogg",
+        "loop": true,
+        "volume": 0.7,
+        "description": "steam_belching_grease_spattering_cooking_sounds"
+      },
+      "distant_children_crying": {
+        "file": "circus_atmosphere_distressed_families.ogg",
+        "loop": true,
+        "volume": 0.3,
+        "description": "background_evidence_of_carnival_atmosphere_gone_wrong"
+      }
+    },
+    "interactive_audio": {
+      "butterfly_knife_chopping": {
+        "file": "chef_chuckles_knife_work_rhythmic.wav",
+        "trigger": "food_preparation_sequences",
+        "volume": 0.8,
+        "description": "expert_knife_work_creates_threatening_soundtrack"
+      },
+      "carousel_rotisserie_spinning": {
+        "file": "mechanical_rotation_continuous.wav",
+        "loop": true,
+        "volume": 0.5,
+        "description": "hypnotic_mechanical_hum_almost_meditative"
+      },
+      "clown_honk_steam_hiss": {
+        "file": "sign_audio_timing_60_second_intervals.wav",
+        "interval": 60,
+        "volume": 0.6,
+        "description": "perfectly_timed_comedy_audio_cues"
+      }
+    },
+    "comedy_audio_integration": {
+      "chef_chuckles_voice": {
+        "delivery_style": "food_puns_mixed_with_veiled_threats_deadpan_menace",
+        "catchphrase_timing": "perfectly_synchronized_with_steam_hisses_grease_pops",
+        "lighter_fluid_rasp": "distinctive_voice_quality_from_mysterious_background"
+      },
+      "whispers_from_sausages": {
+        "file": "sausage_of_suspicion_supernatural_audio.wav",
+        "trigger": "when_sausage_of_suspicion_selected_or_held",
+        "volume": 0.2,
+        "description": "subtle_audio_wave_particles_create_unease"
+      }
+    }
+  },
+  
+  "status_effect_environmental_triggers": {
+    "carnival_atmosphere_influence": {
+      "peer_pressure_override": {
+        "trigger": "prolonged_exposure_to_carnival_chaos_and_chef_chuckles_sales_pitch",
+        "effect": "food_safety_instincts_overridden_by_circus_atmosphere",
+        "duration": "while_in_location",
+        "comedy_purpose": "explains_why_bros_ignore_obvious_health_violations"
+      },
+      "mystery_meat_fascination": {
+        "trigger": "staring_at_carousel_rotisserie_while_hungry",
+        "effect": "questionable_food_becomes_more_appealing_despite_obvious_problems",
+        "probability": 0.3,
+        "strategic_implication": "hunger_overrides_hygiene_concerns"
+      }
+    },
+    "hallucination_environmental_cues": {
+      "mysterious_vapor_exposure": {
+        "trigger": "extended_exposure_to_mystery_ingredient_vapor",
+        "effect": "rare_hallucination_sequences_altered_dialogue_with_circus_performers",
+        "probability": 0.1,
+        "items_that_enhance": ["doner_of_illusions", "sausage_of_suspicion"]
+      }
+    }
+  },
+  
+  "time_based_environmental_changes": {
+    "circus_hours_enhanced_night": {
+      "nighttime_performances": {
+        "increased_carnival_atmosphere": "more_violent_light_strobing_enhanced_chaos",
+        "chef_chuckles_business_peak": "cracked_clown_mask_more_prominent_threatening_demeanor",
+        "mystery_ingredient_activity": "increased_mysterious_vapor_emission_unknown_sources"
+      }
+    },
+    "off_hours_maintenance": {
+      "reduced_activity": {
+        "minimal_steam_emission": "carousel_rotisserie_still_spinning_less_aggressive_atmosphere",
+        "chef_chuckles_casual": "mask_off_slightly_less_threatening_but_still_sketchy",
+        "cleaning_attempts": "half_hearted_cart_maintenance_standards_remain_questionable"
+      }
+    }
+  },
+  
+  "cross_location_environmental_connections": {
+    "ringmaster_tent_proximity": {
+      "circus_performance_audio_bleed": "main_circus_acts_provide_background_atmosphere",
+      "performer_foot_traffic": "other_circus_workers_pass_by_creating_authentic_environment",
+      "shared_carnival_lighting": "consistent_violent_strobing_throughout_cirque_du_shady"
+    },
+    "carnival_ecosystem_integration": {
+      "costume_vendor_synergy": "clown_gear_acquired_elsewhere_enhances_mystery_cart_experience",
+      "performer_network_references": "chef_chuckles_interactions_reference_other_circus_acts",
+      "secret_quest_pipeline": "carnival_carnage_sidequest_connects_to_broader_circus_conspiracy"
+    }
+  },
+  
+  "mobile_performance_optimization": {
+    "particle_system_scaling": {
+      "strobe_effect_management": "photosensitive_user_option_completely_disables_violent_flashing",
+      "steam_emission_scaling": "particle_density_reduces_based_on_device_performance",
+      "mysterious_vapor_simplification": "complex_vapor_effects_replaced_with_simple_sprites_on_older_devices"
+    },
+    "audio_optimization": {
+      "simultaneous_audio_limit": "maximum_5_concurrent_streams_prioritizes_chef_chuckles_dialogue",
+      "carnival_music_compression": "high_compression_for_background_loops_preserves_dialogue_quality",
+      "comedy_timing_preservation": "clown_honk_steam_hiss_60_second_timing_maintained_regardless_of_performance"
+    }
+  },
+  
+  "accessibility_features": {
+    "strobe_effect_alternatives": {
+      "photosensitive_mode": "violent_carnival_strobing_replaced_with_gentle_color_cycling",
+      "motion_sensitivity": "carousel_rotisserie_animation_can_be_reduced_or_static",
+      "particle_reduction": "steam_and_vapor_effects_simplified_for_visual_clarity"
+    },
+    "audio_accessibility": {
+      "subtitle_support": "all_chef_chuckles_dialogue_carnival_sounds_captioned",
+      "visual_audio_cues": "screen_flash_alternatives_for_clown_honk_steam_hiss_timing",
+      "whispers_from_sausages_visual": "subtitle_support_for_supernatural_audio_elements"
+    }
+  },
+  "environmental_storytelling": {
+    "carnival_grift_evidence": {
+      "health_code_violations_as_atmosphere": "obvious_problems_treated_as_normal_carnival_experience",
+      "mystery_ingredient_normalization": "questionable_food_sources_accepted_by_desperate_customers",
+      "chef_chuckles_background_hints": "ex_cirque_du_soleil_before_incident_suggested_through_environment"
+    },
+    "circus_ecosystem_integration": {
+      "performer_network_storytelling": "environmental_cues_suggest_broader_circus_conspiracy",
+      "costume_economy_visual": "clown_gear_displays_show_connection_to_other_circus_vendors",
+      "carnival_carnage_foreshadowing": "environmental_details_hint_at_secret_quest_possibilities"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_kebab_alley_restroom_01",
+  
+  "lighting_systems": {
+    "sickly_orange_shrine_light": {
+      "type": "repurposed_open_late_sign_illumination",
+      "color": "#FF8C00",
+      "intensity": 0.7,
+      "coverage": "backlit_shrine_atmosphere_orange_glow"
+    },
+    "flickering_fluorescent": {
+      "type": "meat_skewer_mounted_ceiling_light",
+      "color": "#FFFFFF",
+      "intensity_variation": "0.3_to_1.0_irregular_electrical_issues",
+      "flicker_pattern": "1_to_2_second_intervals_atmospheric_lighting"
+    },
+    "neon_kebab_signage_pulse": {
+      "type": "external_signage_bleed_through",
+      "color": "#39FF14",
+      "intensity": 0.4,
+      "pulse_pattern": "everything_pulses_faintly_under_signage_flicker"
+    }
+  },
+  
+  "particle_systems": {
+    "steam_from_fryer_vents": {
+      "emission_rate": 15,
+      "particle_lifetime": 6.0,
+      "color": "#F5F5DC",
+      "spawn_location": "nearby_fryer_exhaust_vents_mixing_with_fog",
+      "movement_pattern": "rises_from_external_vents_creates_atmospheric_haze",
+      "mobile_scaling": {
+        "high_performance": "full_steam_effects_realistic_behavior",
+        "reduced_performance": "simplified_steam_sprites_basic_animation"
+      }
+    },
+    "grease_vapor": {
+      "emission_rate": 8,
+      "particle_lifetime": 4.0,
+      "color": "#8B4513",
+      "spawn_location": "walls_coated_glistening_grease_film",
+      "movement_pattern": "minimal_drift_heavy_oily_particles",
+      "atmospheric_purpose": "creates_protective_glaze_shrine_atmosphere"
+    },
+    "cumin_scented_fog": {
+      "emission_rate": 5,
+      "particle_lifetime": 8.0,
+      "color_tint": "#D2691E",
+      "spawn_location": "general_atmosphere_despair_and_spices",
+      "movement_pattern": "slow_atmospheric_drift_suggests_food_preparation",
+      "smell_integration": "fog_smells_faintly_cumin_and_despair"
+    }
+  },
+  
+  "audio_systems": {
+    "ambient_tracks": {
+      "echoing_retches_distorted_kebab_jingles": {
+        "file": "shrine_ambient_retches_jingles_loop.ogg",
+        "loop": true,
+        "volume": 0.5,
+        "description": "unsettling_ambient_distant_party_music_bleeding_walls"
+      },
+      "fluorescent_buzz_dripping_grease": {
+        "file": "electrical_grease_drip_continuous.ogg",
+        "loop": true,
+        "volume": 0.6,
+        "description": "fluorescent_electrical_buzz_grease_dripping_continuous"
+      },
+      "distant_fryer_ventilation": {
+        "file": "fryer_exhaust_ventilation_background.ogg",
+        "loop": true,
+        "volume": 0.3,
+        "description": "distant_fryer_ventilation_external_food_preparation"
+      }
+    },
+    "interactive_audio": {
+      "toilet_paper_receipt_crinkle": {
+        "file": "mr_chadz_2004_receipt_crinkle.wav",
+        "trigger": "examining_historical_toilet_paper_artifact",
+        "volume": 0.8,
+        "description": "aged_receipt_paper_examination_comedy"
+      },
+      "graffiti_reading_reverent": {
+        "file": "fisto_voice_echo_haiku_delivery.wav",
+        "trigger": "reading_any_graffiti_shrine_content",
+        "volume": 0.4,
+        "description": "subtle_fisto_voice_actor_reverent_poetry_delivery"
+      },
+      "shrine_reverence_stinger": {
+        "file": "achievement_unlock_despite_gross_conditions.wav",
+        "trigger": "stomach_of_steel_buff_activation",
+        "volume": 0.7,
+        "description": "sacred_achievement_sound_contrasts_biohazard_location"
+      }
+    },
+    "comedy_audio_integration": {
+      "unique_camera_pan_atmosphere_shift": {
+        "trigger": "crawlspace_entry_3am_access",
+        "effect": "reverb_heavy_sacred_space_despite_horror_conditions",
+        "description": "creates_pilgrimage_atmosphere_despite_obvious_health_hazard"
+      },
+      "steam_hiss_punctuation": {
+        "timing": "synchronized_most_disgusting_reveals_comedy_effect",
+        "description": "perfectly_timed_steam_hisses_punctuate_gross_out_moments"
+      }
+    }
+  },
+  
+  "status_effect_environmental_triggers": {
+    "shrine_atmosphere_influence": {
+      "pilgrimage_reverence": {
+        "trigger": "prolonged_exposure_shrine_atmosphere_graffiti_reading",
+        "effect": "health_hazards_treated_spiritual_experience",
+        "duration": "while_in_location",
+        "comedy_purpose": "explains_why_bros_treat_biohazard_as_sacred_space"
+      },
+      "grease_aura_manifestation": {
+        "trigger": "stomach_of_steel_buff_activation_low_health",
+        "effect": "faint_grease_aura_appears_around_player_sprite",
+        "visual_cue": "permanent_reminder_shrine_pilgrimage_experience"
+      }
+    },
+    "time_pressure_mechanics": {
+      "3am_desperation": {
+        "trigger": "accessing_location_during_3am_window",
+        "effect": "urgency_overrides_hygiene_concerns_decision_making",
+        "comedy_purpose": "explains_willingness_crawl_biohazard_restroom"
+      }
+    }
+  },
+  
+  "time_based_environmental_changes": {
+    "3am_access_window": {
+      "crawlspace_appearance": {
+        "glowing_chili_sauce_trail": "becomes_visible_guides_player_hidden_entrance",
+        "shrine_light_intensity": "orange_glow_becomes_more_prominent_sacred_atmosphere",
+        "graffiti_luminescence": "fisto_tag_glows_faintly_pilgrimage_beacon"
+      }
+    },
+    "4am_disappearance": {
+      "urgency_increase": {
+        "warning_audio": "distant_clock_chimes_time_pressure_building",
+        "atmosphere_shift": "shrine_sanctity_begins_fade_time_runs_out",
+        "access_removal": "crawlspace_seals_location_becomes_inaccessible"
+      }
+    }
+  },
+  
+  "environmental_storytelling_systems": {
+    "grease_archaeology": {
+      "wall_coating_examination": "years_accumulated_fryer_exhaust_creating_protective_atmosphere",
+      "economic_timeline": "2004_receipt_toilet_paper_reveals_long_term_vendor_operation",
+      "pilgrimage_evolution": "fisto_1999_incident_becomes_shrine_over_time"
+    },
+    "vendor_ecosystem_integration": {
+      "mr_chadz_connection": "restroom_behind_active_food_service_creates_health_horror_comedy",
+      "chili_sauce_trail": "connects_vendor_operation_pilgrimage_path_creation",
+      "receipt_archaeology": "toilet_paper_artifact_establishes_vendor_longevity"
+    }
+  },
+  
+  "mobile_performance_optimization": {
+    "particle_system_scaling": {
+      "steam_emission_management": "reduces_particle_density_based_device_performance",
+      "grease_vapor_simplification": "oily_particles_replaced_simple_sprites_older_devices",
+      "fog_effect_optimization": "cumin_scented_fog_simplified_low_end_hardware"
+    },
+    "audio_optimization": {
+      "simultaneous_audio_limit": "maximum_4_concurrent_streams_small_space_acoustic",
+      "reverb_processing": "shrine_reverence_effect_simplified_older_devices",
+      "comedy_timing_preservation": "critical_audio_cues_maintained_regardless_performance"
+    },
+    "lighting_performance": {
+      "flicker_effect_scaling": "fluorescent_flicker_reduced_frequency_battery_conservation",
+      "shrine_glow_optimization": "orange_light_intensity_scales_device_capabilities",
+      "reflection_simplification": "grease_film_reflections_static_low_end_devices"
+    }
+  },
+  
+  "accessibility_features": {
+    "visual_accessibility": {
+      "high_contrast_graffiti": "alternative_text_display_blacklight_dependent_content",
+      "lighting_alternatives": "shrine_atmosphere_maintained_without_flicker_effects",
+      "particle_reduction": "steam_vapor_effects_simplified_visual_clarity"
+    },
+    "audio_accessibility": {
+      "subtitle_support": "all_fisto_graffiti_audio_comedy_timing_captioned",
+      "visual_audio_cues": "screen_effects_alternative_audio_dependent_reveals",
+      "shrine_reverence_visual": "achievement_unlock_visual_confirmation_audio_impaired"
+    }
+  },
+  
+  "cross_location_environmental_connections": {
+    "mr_chadz_kebab_stand_proximity": {
+      "shared_grease_ecosystem": "vendor_operation_creates_shrine_environmental_conditions",
+      "receipt_trail_evidence": "toilet_paper_artifact_connects_locations_temporally",
+      "food_preparation_audio": "distant_cooking_sounds_reinforce_active_vendor_operation"
+    },
+    "fisto_legend_network": {
+      "pilgrimage_site_establishment": "environmental_conditions_support_legend_creation",
+      "travel_diary_atmosphere": "shrine_setting_enhances_fisto_backstory_content_delivery",
+      "european_adventure_context": "grease_shrine_represents_party_tourism_consequence_acceptance"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  
+  "lighting_systems": {
+    "single_desk_lamp_illumination": {
+      "type": "focused_ledger_lighting",
+      "color": "#FFE135",
+      "intensity": 0.9,
+      "coverage": "shadow_ledger_and_immediate_desk_area"
+    },
+    "crt_monitor_glow": {
+      "type": "multiple_screen_illumination",
+      "color": "#00FF41",
+      "intensity": 0.6,
+      "coverage": "back_wall_live_markets_pixelized_data_display",
+      "flicker_pattern": "irregular_crt_screen_refresh_authentic_retro_feel"
+    },
+    "uv_money_check_shimmer": {
+      "type": "counterfeit_detection_lighting",
+      "color": "#9400D3",
+      "intensity": 0.8,
+      "coverage": "uv_wand_scanning_areas_money_verification_stations"
+    },
+    "tealight_stairwell": {
+      "type": "entrance_pathway_lighting",
+      "color": "#FF6347",
+      "intensity": 0.4,
+      "coverage": "cigarette_burned_tealights_stairwell_atmosphere"
+    }
+  },
+  
+  "particle_systems": {
+    "blue_grey_smoke": {
+      "emission_rate": 12,
+      "particle_lifetime": 8.0,
+      "color": "#708090",
+      "spawn_location": "throughout_underground_bazaar_atmospheric_haze",
+      "movement_pattern": "slow_drift_creates_mysterious_underground_atmosphere",
+      "mobile_scaling": {
+        "high_performance": "full_smoke_effects_realistic_drift",
+        "reduced_performance": "simplified_smoke_sprites_basic_movement"
+      }
+    },
+    "photocopier_toner_dust": {
+      "emission_rate": 5,
+      "particle_lifetime": 4.0,
+      "color": "#2F4F4F",
+      "spawn_location": "near_stamped_paperwork_bureaucratic_areas",
+      "movement_pattern": "minimal_drift_suggests_office_equipment_operation",
+      "atmospheric_purpose": "reinforces_officially_unofficial_business_atmosphere"
+    },
+    "uv_light_shimmer": {
+      "emission_rate": 8,
+      "particle_lifetime": 2.0,
+      "color": "#9400D3",
+      "spawn_location": "around_uv_wand_scanning_areas",
+      "movement_pattern": "concentrated_around_money_verification_activities",
+      "interactive_trigger": "intensifies_during_counterfeit_detection_mini_games"
+    }
+  },
+  
+  "audio_systems": {
+    "ambient_tracks": {
+      "clacking_split_flaps_whispered_haggling": {
+        "file": "underground_bazaar_ambient_loop.ogg",
+        "loop": true,
+        "volume": 0.7,
+        "description": "split_flap_mechanical_sounds_mixed_negotiation_whispers"
+      },
+      "cash_counters_whirring": {
+        "file": "money_counting_machines_continuous.ogg",
+        "loop": true,
+        "volume": 0.5,
+        "description": "mechanical_cash_counting_creates_financial_institution_atmosphere"
+      },
+      "bored_guard_muzak_2_percent": {
+        "file": "elevator_muzak_barely_audible.ogg",
+        "loop": true,
+        "volume": 0.02,
+        "description": "mundane_bureaucratic_background_music_barely_perceptible"
+      }
+    },
+    "interactive_audio": {
+      "split_flap_board_updates": {
+        "file": "mechanical_rate_board_clacking.wav",
+        "trigger": "rate_board_interaction_mini_game",
+        "volume": 0.8,
+        "description": "satisfying_mechanical_split_flap_letter_changes"
+      },
+      "uv_wand_scanning": {
+        "file": "uv_light_scanning_verification.wav",
+        "trigger": "counterfeit_detection_mini_game",
+        "volume": 0.6,
+        "description": "electronic_scanning_sound_money_authentication"
+      },
+      "cash_counting_transactions": {
+        "file": "money_counting_machine_rapid.wav",
+        "trigger": "currency_exchange_completion",
+        "volume": 0.7,
+        "description": "satisfying_money_counting_transaction_completion"
+      },
+      "paper_stamping_bureaucracy": {
+        "file": "official_document_stamping.wav",
+        "trigger": "forged_paperwork_processing",
+        "volume": 0.5,
+        "description": "authoritative_stamping_legitimizes_illegal_transactions"
+      }
+    },
+    "comedy_audio_integration": {
+      "rate_board_dings_buzzes": {
+        "favorable_ding": "satisfying_success_sound_green_tick_timing",
+        "unfavorable_buzz": "disappointing_failure_sound_red_tick_timing",
+        "description": "audio_feedback_reinforces_mini_game_risk_reward"
+      },
+      "calculator_button_mashing": {
+        "trigger": "npc_rate_calculation_sequences",
+        "description": "obsessive_calculator_use_suggests_complex_financial_manipulation"
+      },
+      "photocopier_operation": {
+        "trigger": "forged_document_creation_background",
+        "description": "office_equipment_sounds_reinforce_bureaucratic_legitimacy_facade"
+      }
+    }
+  },
+  
+  "status_effect_environmental_triggers": {
+    "underground_atmosphere_influence": {
+      "professional_legitimacy_illusion": {
+        "trigger": "prolonged_exposure_official_unofficial_atmosphere",
+        "effect": "financial_desperation_overrides_scam_detection_instincts",
+        "duration": "while_in_location",
+        "comedy_purpose": "explains_why_bros_trust_obvious_black_market_operation"
+      },
+      "rate_board_hypnosis": {
+        "trigger": "staring_at_split_flap_board_during_rate_changes",
+        "effect": "mild_fascination_status_improves_mini_game_focus",
+        "probability": 0.2,
+        "strategic_implication": "atmosphere_enhances_timing_based_gameplay"
+      }
+    },
+    "notoriety_pressure_effects": {
+      "verification_fee_anxiety": {
+        "trigger": "approaching_notoriety_threshold_limit",
+        "effect": "increased_tension_affects_mini_game_performance",
+        "visual_cue": "mrs_rata_suspicious_glances_calculator_checking"
+      }
+    }
+  },
+  
+  "environmental_storytelling_systems": {
+    "officially_unofficial_evidence": {
+      "mismatched_paperwork_examination": "stamped_forms_three_different_logos_suggest_improvised_legitimacy",
+      "calculator_archaeology": "multiple_calculators_suggest_complex_rate_manipulation_schemes",
+      "receipt_inconsistency": "different_business_names_same_location_reveals_front_operation"
+    },
+    "post_communist_aesthetic_details": {
+      "vaulted_wine_cellar_repurposing": "stone_arches_suggest_historical_building_adapted_modern_commerce",
+      "iron_lattice_market_stalls": "improvised_market_infrastructure_creates_bazaar_atmosphere",
+      "crt_monitor_technology": "outdated_equipment_suggests_resource_constraints_or_authenticity_preference"
+    }
+  },
+  
+  "time_based_environmental_changes": {
+    "business_hours_peak_activity": {
+      "increased_customer_traffic": "more_atmospheric_npcs_whispered_negotiations",
+      "rate_board_volatility": "more_frequent_split_flap_updates_dynamic_pricing",
+      "mrs_rata_efficiency": "faster_transaction_processing_professional_detachment"
+    },
+    "off_hours_maintenance": {
+      "reduced_ambient_activity": "fewer_customers_allows_detailed_npc_interactions",
+      "equipment_maintenance": "crt_monitors_occasional_adjustment_authentic_technical_issues",
+      "guard_relaxation": "muzak_volume_slightly_increases_bored_guard_less_vigilant"
+    }
+  },
+  
+  "cross_location_environmental_connections": {
+    "market_square_proximity": {
+      "surface_level_commerce": "legitimate_business_sounds_filter_down_stairwell",
+      "tourist_foot_traffic": "occasional_surface_noise_suggests_active_commercial_district",
+      "cobblestone_entrance_integration": "hidden_access_maintains_connection_public_commerce"
+    },
+    "count_velvet_absinthe_boss_influence": {
+      "premium_stock_area_atmosphere": "back_gate_suggests_higher_tier_criminal_organization",
+      "boss_defeat_environmental_change": "premium_area_lighting_improves_access_granted",
+      "criminal_network_hints": "environmental_details_suggest_broader_underground_economy"
+    }
+  },
+  
+  "mobile_performance_optimization": {
+    "particle_system_scaling": {
+      "smoke_effect_management": "blue_grey_smoke_density_reduces_older_devices",
+      "uv_shimmer_simplification": "purple_light_effects_static_sprites_low_end",
+      "toner_dust_optimization": "photocopier_particles_disabled_potato_mode"
+    },
+    "audio_optimization": {
+      "simultaneous_audio_limit": "maximum_6_concurrent_streams_underground_acoustics",
+      "split_flap_timing": "mechanical_sounds_prioritized_gameplay_feedback",
+      "muzak_processing": "2_percent_volume_eliminated_battery_conservation"
+    },
+    "lighting_performance": {
+      "crt_flicker_scaling": "monitor_refresh_rate_reduced_older_devices",
+      "uv_glow_optimization": "money_verification_lighting_simplified_low_memory",
+      "tealight_effect_reduction": "entrance_lighting_static_performance_mode"
+    }
+  },
+  
+  "accessibility_features": {
+    "visual_accessibility": {
+      "high_contrast_currency_display": "money_verification_enhanced_colorblind_users",
+      "rate_board_alternatives": "split_flap_information_available_text_format",
+      "lighting_adjustment": "underground_atmosphere_maintained_without_strain"
+    },
+    "audio_accessibility": {
+      "subtitle_support": "all_whispered_negotiations_npc_dialogue_captioned",
+      "visual_audio_cues": "split_flap_changes_visual_indicators_hearing_impaired",
+      "mini_game_alternatives": "timing_based_games_visual_feedback_options"
+    }
+  }
+}

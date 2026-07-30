@@ -1,0 +1,2087 @@
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "sprite_sheets": {
+    "main_tileset": {
+      "file": "absinthe_arcade_tileset.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "tile_size": {"width": 32, "height": 32},
+      "sections": {
+        "floor_tiles": {"x": 0, "y": 0, "width": 256, "height": 256},
+        "wall_tiles": {"x": 256, "y": 0, "width": 256, "height": 256},
+        "ceiling_tiles": {"x": 512, "y": 0, "width": 256, "height": 256},
+        "mirror_tiles": {"x": 768, "y": 0, "width": 256, "height": 256}
+      },
+      "special_tiles": {
+        "light_up_floor": {"x": 0, "y": 256, "width": 128, "height": 128},
+        "cracked_walls": {"x": 128, "y": 256, "width": 128, "height": 128},
+        "green_glow_overlay": {"x": 256, "y": 256, "width": 128, "height": 128}
+      }
+    },
+    "arcade_machines": {
+      "file": "arcade_machines_spritesheet.png", 
+      "dimensions": {"width": 2048, "height": 1024},
+      "machine_size": {"width": 64, "height": 96},
+      "machines": {
+        "frogger_existential": {
+          "idle": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "active": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "broken": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "screen_glow": {"x": 192, "y": 0, "width": 64, "height": 96}
+        },
+        "street_fighter_identity": {
+          "idle": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "active": {"x": 320, "y": 0, "width": 64, "height": 96},
+          "identity_crisis": {"x": 384, "y": 0, "width": 64, "height": 96},
+          "screen_glitch": {"x": 448, "y": 0, "width": 64, "height": 96}
+        },
+        "kebab_kombat": {
+          "idle": {"x": 512, "y": 0, "width": 64, "height": 96},
+          "regret_mode": {"x": 576, "y": 0, "width": 64, "height": 96},
+          "broken": {"x": 640, "y": 0, "width": 64, "height": 96},
+          "regret_button_glow": {"x": 704, "y": 0, "width": 64, "height": 96}
+        },
+        "claw_machine": {
+          "idle": {"x": 768, "y": 0, "width": 96, "height": 128},
+          "operating": {"x": 864, "y": 0, "width": 96, "height": 128},
+          "rigged_failure": {"x": 960, "y": 0, "width": 96, "height": 128},
+          "nft_dispense": {"x": 1056, "y": 0, "width": 96, "height": 128}
+        },
+        "broken_ddr": {
+          "idle": {"x": 0, "y": 128, "width": 128, "height": 96},
+          "token_insert": {"x": 128, "y": 128, "width": 128, "height": 96},
+          "unlock_sequence": {"x": 256, "y": 128, "width": 128, "height": 96}
+        },
+        "cracked_time_crisis": {
+          "hidden_entrance": {"x": 384, "y": 128, "width": 96, "height": 96},
+          "entrance_revealed": {"x": 480, "y": 128, "width": 96, "height": 96},
+          "passage_open": {"x": 576, "y": 128, "width": 96, "height": 96}
+        }
+      }
+    },
+    "environmental_elements": {
+      "file": "environmental_effects.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "elements": {
+        "absinthe_bottle_bar": {
+          "base": {"x": 0, "y": 0, "width": 192, "height": 96},
+          "glow_animation": [
+            {"x": 192, "y": 0, "width": 192, "height": 96, "frame": 1},
+            {"x": 384, "y": 0, "width": 192, "height": 96, "frame": 2},
+            {"x": 576, "y": 0, "width": 192, "height": 96, "frame": 3},
+            {"x": 768, "y": 0, "width": 192, "height": 96, "frame": 4}
+          ],
+          "animation_timing": {"fps": 8, "loop": true}
+        },
+        "mismatched_seating": {
+          "highchair": {"x": 0, "y": 96, "width": 32, "height": 48},
+          "beanbag": {"x": 32, "y": 96, "width": 32, "height": 48},
+          "bidet": {"x": 64, "y": 96, "width": 32, "height": 48}
+        },
+        "token_exchange_machine": {
+          "idle": {"x": 96, "y": 96, "width": 64, "height": 96},
+          "dispensing": {"x": 160, "y": 96, "width": 64, "height": 96},
+          "out_of_order": {"x": 224, "y": 96, "width": 64, "height": 96}
+        }
+      }
+    },
+    "green_fairy_mural": {
+      "file": "green_fairy_mural_parallax.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "type": "parallax_background",
+      "layers": {
+        "background_circuits": {"x": 0, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.1},
+        "fairy_silhouette": {"x": 256, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.3},
+        "melting_effect": {"x": 512, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.5},
+        "circuit_overlay": {"x": 768, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.7}
+      },
+      "animation_effects": {
+        "melting_animation": {
+          "frames": 8,
+          "fps": 6,
+          "loop": true
+        },
+        "circuit_pulse": {
+          "frames": 4,
+          "fps": 4,
+          "loop": true
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "floor_tile_random_light": {
+      "sprite_source": "main_tileset",
+      "base_tile": {"x": 0, "y": 256, "width": 32, "height": 32},
+      "glow_states": [
+        {"x": 32, "y": 256, "width": 32, "height": 32, "intensity": 0.3},
+        {"x": 64, "y": 256, "width": 32, "height": 32, "intensity": 0.7},
+        {"x": 96, "y": 256, "width": 32, "height": 32, "intensity": 1.0}
+      ],
+      "timing": {
+        "random_activation": "0.5_to_3_second_intervals",
+        "glow_duration": "1.5_seconds",
+        "fade_duration": "0.5_seconds"
+      }
+    },
+    "arcade_cabinet_breathing_mist": {
+      "particle_sprites": {"x": 0, "y": 384, "width": 128, "height": 128},
+      "emission_points": "arcade_machine_tops",
+      "animation_frames": 6,
+      "particle_lifetime": "3.5_seconds",
+      "emission_rate": "every_0.8_seconds"
+    },
+    "mirror_reflection_lag": {
+      "effect_type": "shader_based",
+      "delay_timing": "0.2_seconds",
+      "distortion_overlay": {"x": 128, "y": 384, "width": 64, "height": 64},
+      "trigger": "player_movement_near_mirrors"
+    }
+  },
+  
+  "lighting_effects": {
+    "blacklight_wash": {
+      "color": "#39FF14",
+      "intensity": 0.8,
+      "coverage": "entire_location",
+      "uv_reactive_sprites": [
+        "green_fairy_mural",
+        "arcade_machine_screens", 
+        "absinthe_bottle_bar_glow"
+      ]
+    },
+    "stuttering_neon": {
+      "affected_sprites": [
+        "signage_elements",
+        "arcade_cabinet_trim",
+        "bar_accent_lighting"
+      ],
+      "flicker_pattern": "random_0.5_to_2_second_intervals",
+      "color": "#BF00FF",
+      "intensity_variation": "0.3_to_1.0"
+    },
+    "green_spectral_glow": {
+      "source_sprites": [
+        "absinthe_bottle_bar",
+        "cracked_arcade_cabinets",
+        "hidden_area_entrances"
+      ],
+      "glow_radius": "48_pixels",
+      "color": "#39FF14",
+      "pulse_timing": "2_second_intervals"
+    }
+  },
+  
+  "particle_effect_sprites": {
+    "green_mist_particles": {
+      "sprite_sheet": "environmental_effects.png",
+      "coordinates": {"x": 256, "y": 384, "width": 32, "height": 32},
+      "frames": 4,
+      "animation_speed": "0.3_seconds_per_frame",
+      "blend_mode": "additive"
+    },
+    "electrical_spark_particles": {
+      "sprite_sheet": "environmental_effects.png", 
+      "coordinates": {"x": 288, "y": 384, "width": 16, "height": 16},
+      "frames": 3,
+      "animation_speed": "0.1_seconds_per_frame",
+      "color_tint": "#FFFF00"
+    },
+    "digital_artifact_particles": {
+      "sprite_sheet": "environmental_effects.png",
+      "coordinates": {"x": 320, "y": 384, "width": 24, "height": 24},
+      "frames": 6,
+      "animation_speed": "0.4_seconds_per_frame",
+      "colors": ["#00FFFF", "#FF00FF", "#FFFF00"]
+    }
+  },
+  
+  "ui_elements": {
+    "token_counter": {
+      "background": {"x": 0, "y": 448, "width": 128, "height": 32},
+      "token_icon": {"x": 128, "y": 448, "width": 16, "height": 16},
+      "font_color": "#39FF14",
+      "position": "top_left_corner"
+    },
+    "arcade_game_ui": {
+      "score_display": {"x": 0, "y": 480, "width": 96, "height": 24},
+      "game_over_overlay": {"x": 96, "y": 480, "width": 128, "height": 32},
+      "font_style": "pixelated_arcade_font"
+    },
+    "interaction_prompts": {
+      "press_to_interact": {"x": 224, "y": 480, "width": 64, "height": 16},
+      "insert_tokens": {"x": 288, "y": 480, "width": 64, "height": 16},
+      "hidden_entrance": {"x": 352, "y": 480, "width": 64, "height": 16}
+    }
+  },
+  
+  "audio_sprite_mappings": {
+    "arcade_ambient": "warped_8bit_arcade_ambience.ogg",
+    "token_sounds": [
+      "token_insert_chime.wav",
+      "token_dispense_clink.wav", 
+      "token_rejection_buzz.wav"
+    ],
+    "arcade_game_sfx": [
+      "frogger_existential_bleeps.wav",
+      "street_fighter_identity_voices.wav",
+      "kebab_kombat_regret_button.wav"
+    ],
+    "claw_machine_audio": [
+      "claw_machine_normal.wav",
+      "fur_elise_nft_victory.wav",
+      "rigged_failure_disappointment.wav"
+    ],
+    "environmental_sfx": [
+      "electrical_crackle.wav",
+      "green_mist_whisper.wav",
+      "mirror_lag_distortion.wav"
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC",
+      "android": "ETC2",
+      "fallback": "PNG_with_alpha"
+    },
+    "sprite_atlasing": {
+      "max_atlas_size": "2048x2048",
+      "padding": "2_pixels",
+      "extrude": "1_pixel"
+    },
+    "lod_variants": {
+      "high_quality": "full_resolution_all_effects",
+      "medium_quality": "reduced_particle_density_simplified_shaders",
+      "low_quality": "static_sprites_minimal_effects",
+      "potato_mode": "essential_sprites_only_no_effects"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "colorblind_variants": {
+      "green_elements_alternative": {"color_shift": "blue_tint_for_deuteranopia"},
+      "red_green_confusion": {"alternative_patterns": "diagonal_lines_for_distinction"}
+    },
+    "high_contrast_mode": {
+      "background_darkening": "increased_contrast_ratio_4_5_to_1",
+      "text_enhancement": "outlined_fonts_with_drop_shadow"
+    },
+    "visual_audio_cues": {
+      "screen_flash_important_audio": {"x": 416, "y": 480, "width": 32, "height": 16},
+      "subtitle_background": {"x": 448, "y": 480, "width": 128, "height": 24}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "sprite_sheets": {
+    "maintenance_closet_tileset": {
+      "file": "maintenance_closet_cramped_space.png",
+      "dimensions": {"width": 512, "height": 512},
+      "tile_size": {"width": 16, "height": 16},
+      "sections": {
+        "floor_tiles": {"x": 0, "y": 0, "width": 128, "height": 128},
+        "wall_tiles": {"x": 128, "y": 0, "width": 128, "height": 128},
+        "ceiling_tiles": {"x": 256, "y": 0, "width": 128, "height": 128},
+        "door_tiles": {"x": 384, "y": 0, "width": 128, "height": 128}
+      },
+      "special_tiles": {
+        "exposed_wiring": {"x": 0, "y": 128, "width": 64, "height": 64},
+        "electrical_junction": {"x": 64, "y": 128, "width": 32, "height": 32},
+        "grime_stains": {"x": 96, "y": 128, "width": 96, "height": 64}
+      }
+    },
+    "bathroom_fixtures": {
+      "file": "ddr_toilet_and_fixtures.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "fixture_size": {"width": 64, "height": 64},
+      "fixtures": {
+        "ddr_toilet_seat": {
+          "idle": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "up_arrow_pressed": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "down_arrow_pressed": {"x": 128, "y": 0, "width": 64, "height": 64},
+          "left_arrow_pressed": {"x": 192, "y": 0, "width": 64, "height": 64},
+          "right_arrow_pressed": {"x": 256, "y": 0, "width": 64, "height": 64},
+          "all_arrows_lit": {"x": 320, "y": 0, "width": 64, "height": 64},
+          "sticky_struggle": {"x": 384, "y": 0, "width": 64, "height": 64}
+        },
+        "crt_mirror_screen": {
+          "insert_coin_frame_1": {"x": 0, "y": 64, "width": 96, "height": 72},
+          "insert_coin_frame_2": {"x": 96, "y": 64, "width": 96, "height": 72},
+          "insert_coin_frame_3": {"x": 192, "y": 64, "width": 96, "height": 72},
+          "insert_coin_frame_4": {"x": 288, "y": 64, "width": 96, "height": 72},
+          "game_over_dignity": {"x": 384, "y": 64, "width": 96, "height": 72},
+          "reflection_overlay": {"x": 480, "y": 64, "width": 96, "height": 72}
+        },
+        "janitor_bucket_foot_soak": {
+          "empty": {"x": 0, "y": 136, "width": 48, "height": 32},
+          "questionable_water": {"x": 48, "y": 136, "width": 48, "height": 32},
+          "in_use_single": {"x": 96, "y": 136, "width": 48, "height": 32},
+          "in_use_shared": {"x": 144, "y": 136, "width": 48, "height": 32},
+          "hygiene_question_marks": {"x": 192, "y": 136, "width": 48, "height": 32}
+        },
+        "used_socks_dispenser": {
+          "closed": {"x": 240, "y": 136, "width": 32, "height": 48},
+          "dispensing_sock_1": {"x": 272, "y": 136, "width": 32, "height": 48},
+          "dispensing_sock_2": {"x": 304, "y": 136, "width": 32, "height": 48},
+          "dispensing_sock_3": {"x": 336, "y": 136, "width": 32, "height": 48},
+          "jammed": {"x": 368, "y": 136, "width": 32, "height": 48}
+        }
+      }
+    },
+    "claw_machine_chandelier": {
+      "file": "cursed_chandelier_arm.png",
+      "dimensions": {"width": 256, "height": 256},
+      "chandelier_elements": {
+        "claw_arm_base": {"x": 0, "y": 0, "width": 64, "height": 96},
+        "claw_arm_swaying_left": {"x": 64, "y": 0, "width": 64, "height": 96},
+        "claw_arm_swaying_right": {"x": 128, "y": 0, "width": 64, "height": 96},
+        "claw_fingers_closed": {"x": 192, "y": 0, "width": 32, "height": 32},
+        "claw_fingers_open": {"x": 224, "y": 0, "width": 32, "height": 32},
+        "claw_fingers_grabbing": {"x": 192, "y": 32, "width": 32, "height": 32},
+        "ceiling_mount": {"x": 0, "y": 96, "width": 48, "height": 24},
+        "chain_link_segment": {"x": 48, "y": 96, "width": 8, "height": 16},
+        "shadow_projection": {"x": 0, "y": 120, "width": 128, "height": 64}
+      },
+      "animation_sequences": {
+        "idle_sway": {
+          "frames": ["claw_arm_base", "claw_arm_swaying_left", "claw_arm_base", "claw_arm_swaying_right"],
+          "frame_duration": 2.0,
+          "loop": true
+        },
+        "player_triggered_swing": {
+          "frames": ["claw_arm_swaying_left", "claw_arm_swaying_right", "claw_arm_swaying_left", "claw_arm_base"],
+          "frame_duration": 0.5,
+          "trigger": "player_rapid_movement"
+        }
+      }
+    },
+    "blacklight_graffiti_layers": {
+      "file": "blacklight_graffiti_revelations.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "visibility_system": "blacklight_only",
+      "graffiti_sections": {
+        "smaaaash_quote_primary": {
+          "normal_invisible": {"x": 0, "y": 0, "width": 256, "height": 64},
+          "blacklight_visible": {"x": 256, "y": 0, "width": 256, "height": 64},
+          "highlighted_reading": {"x": 512, "y": 0, "width": 256, "height": 64}
+        },
+        "fake_cheat_codes_wall": {
+          "layer_one": {"x": 0, "y": 64, "width": 128, "height": 128},
+          "layer_two": {"x": 128, "y": 64, "width": 128, "height": 128},
+          "layer_three": {"x": 256, "y": 64, "width": 128, "height": 128},
+          "layer_four": {"x": 384, "y": 64, "width": 128, "height": 128}
+        },
+        "pixelated_adult_art": {
+          "crude_pixel_art_1": {"x": 0, "y": 192, "width": 64, "height": 64},
+          "crude_pixel_art_2": {"x": 64, "y": 192, "width": 64, "height": 64},
+          "crude_pixel_art_3": {"x": 128, "y": 192, "width": 64, "height": 64},
+          "so_bad_its_endearing": {"x": 192, "y": 192, "width": 64, "height": 64}
+        },
+        "tekken_virginity_haiku": {
+          "hidden_corner_angle_1": {"x": 256, "y": 192, "width": 96, "height": 48},
+          "hidden_corner_angle_2": {"x": 352, "y": 192, "width": 96, "height": 48},
+          "full_visibility": {"x": 448, "y": 192, "width": 96, "height": 48}
+        },
+        "joystick_lips_sticker": {
+          "invisible_normal": {"x": 0, "y": 256, "width": 32, "height": 32},
+          "glowing_when_embarrassed": {"x": 32, "y": 256, "width": 32, "height": 32},
+          "pixel_art_joystick": {"x": 64, "y": 256, "width": 16, "height": 16},
+          "pixel_art_lips": {"x": 80, "y": 256, "width": 16, "height": 16}
+        },
+        "ddr_arrow_glyphs": {
+          "up_arrow": {"x": 96, "y": 256, "width": 16, "height": 16},
+          "down_arrow": {"x": 112, "y": 256, "width": 16, "height": 16},
+          "left_arrow": {"x": 96, "y": 272, "width": 16, "height": 16},
+          "right_arrow": {"x": 112, "y": 272, "width": 16, "height": 16},
+          "combo_d_by_love_text": {"x": 128, "y": 256, "width": 128, "height": 32}
+        }
+      }
+    },
+    "electrical_effects": {
+      "file": "electrical_hazards_and_sparks.png",
+      "dimensions": {"width": 512, "height": 256},
+      "electrical_elements": {
+        "exposed_wire_segments": {
+          "wire_normal": {"x": 0, "y": 0, "width": 32, "height": 8},
+          "wire_sparking": {"x": 32, "y": 0, "width": 32, "height": 8},
+          "wire_dangerous": {"x": 64, "y": 0, "width": 32, "height": 8}
+        },
+        "electrical_sparks": {
+          "small_spark": {"x": 0, "y": 8, "width": 8, "height": 8},
+          "medium_spark": {"x": 8, "y": 8, "width": 12, "height": 12},
+          "large_spark": {"x": 20, "y": 8, "width": 16, "height": 16},
+          "arc_discharge": {"x": 36, "y": 8, "width": 24, "height": 16}
+        },
+        "junction_boxes": {
+          "closed_safe": {"x": 0, "y": 24, "width": 24, "height": 32},
+          "open_exposed": {"x": 24, "y": 24, "width": 24, "height": 32},
+          "sparking_hazard": {"x": 48, "y": 24, "width": 24, "height": 32}
+        }
+      }
+    }
+  },
+  
+  "lighting_effects": {
+    "fluorescent_marquee_light": {
+      "color": "#00FF41",
+      "intensity_states": [0.3, 0.7, 1.0, 0.5],
+      "flicker_timing": "1_to_3_second_random_intervals",
+      "power_source_visual": "jury_rigged_connection_visible_in_sprites"
+    },
+    "blacklight_system": {
+      "activation_color": "#8A2BE2",
+      "graffiti_reveal_shader": "uv_reactive_material_shader",
+      "transition_timing": "0.5_second_fade_in_when_fluorescent_dims",
+      "coverage_area": "entire_cramped_room_space"
+    },
+    "crt_screen_glow": {
+      "base_color": "#00FF00",
+      "intensity": 0.4,
+      "refresh_flicker": "60hz_authentic_crt_refresh_simulation",
+      "text_shadow_casting": "insert_coin_text_creates_moving_shadows"
+    },
+    "electrical_spark_illumination": {
+      "spark_color": "#FFFF00",
+      "flash_duration": "0.1_second_bursts",
+      "proximity_scaling": "brighter_when_player_approaches_wiring",
+      "safety_hazard_indication": "warning_visual_cue_system"
+    }
+  },
+  
+  "particle_effect_sprites": {
+    "electrical_sparks": {
+      "sprite_sheet": "electrical_hazards_and_sparks.png",
+      "small_spark_coords": {"x": 0, "y": 8, "width": 8, "height": 8},
+      "medium_spark_coords": {"x": 8, "y": 8, "width": 12, "height": 12},
+      "large_spark_coords": {"x": 20, "y": 8, "width": 16, "height": 16},
+      "animation_frames": 3,
+      "animation_speed": "0.1_seconds_per_frame"
+    },
+    "citrus_cleaner_vapor": {
+      "sprite_sheet": "maintenance_closet_cramped_space.png",
+      "vapor_particle": {"x": 400, "y": 400, "width": 16, "height": 16},
+      "color_variations": ["#FFFFE0", "#F0E68C", "#DDA0DD"],
+      "animation_frames": 4,
+      "movement_pattern": "slow_upward_drift_with_swirl"
+    },
+    "stale_vape_particles": {
+      "sprite_sheet": "maintenance_closet_cramped_space.png", 
+      "vape_cloud": {"x": 416, "y": 400, "width": 24, "height": 16},
+      "color": "#C0C0C0",
+      "animation_frames": 6,
+      "movement_pattern": "lazy_swirling_confined_space"
+    },
+    "crt_scan_lines": {
+      "sprite_sheet": "ddr_toilet_and_fixtures.png",
+      "scan_line": {"x": 576, "y": 64, "width": 96, "height": 1},
+      "movement": "vertical_scroll_authentic_crt_behavior",
+      "frequency": "60hz_refresh_simulation"
+    }
+  },
+  
+  "animation_sequences": {
+    "ddr_toilet_usage_sequence": {
+      "sprite_source": "ddr_toilet_and_fixtures.png",
+      "sequence": [
+        {"frame": "idle", "duration": 1.0},
+        {"frame": "up_arrow_pressed", "duration": 0.3, "audio": "ddr_up_arrow_press.wav"},
+        {"frame": "down_arrow_pressed", "duration": 0.3, "audio": "ddr_down_arrow_press.wav"},
+        {"frame": "left_arrow_pressed", "duration": 0.3, "audio": "ddr_left_arrow_press.wav"},
+        {"frame": "right_arrow_pressed", "duration": 0.3, "audio": "ddr_right_arrow_press.wav"},
+        {"frame": "all_arrows_lit", "duration": 0.5, "audio": "ddr_perfect_combo.wav"},
+        {"frame": "sticky_struggle", "duration": 2.0, "audio": "velcro_separation_struggle.wav"}
+      ]
+    },
+    "crt_mirror_insert_coin_loop": {
+      "sprite_source": "ddr_toilet_and_fixtures.png",
+      "sequence": [
+        {"frame": "insert_coin_frame_1", "duration": 0.5},
+        {"frame": "insert_coin_frame_2", "duration": 0.5},
+        {"frame": "insert_coin_frame_3", "duration": 0.5},
+        {"frame": "insert_coin_frame_4", "duration": 0.5}
+      ],
+      "loop": true,
+      "audio": "classic_arcade_insert_coin_voice.wav"
+    },
+    "blacklight_graffiti_reveal": {
+      "sprite_source": "blacklight_graffiti_revelations.png",
+      "transition_type": "fade_in_shader_effect",
+      "reveal_timing": "0.5_seconds_when_blacklight_activates",
+      "layered_discovery": "multiple_reads_reveal_additional_layers"
+    },
+    "electrical_spark_random": {
+      "sprite_source": "electrical_hazards_and_sparks.png", 
+      "sequence": [
+        {"frame": "small_spark", "duration": 0.1, "probability": 0.6},
+        {"frame": "medium_spark", "duration": 0.1, "probability": 0.3},
+        {"frame": "large_spark", "duration": 0.1, "probability": 0.1}
+      ],
+      "trigger": "random_2_to_5_second_intervals",
+      "proximity_modifier": "increased_frequency_when_player_nearby"
+    }
+  },
+  
+  "ui_elements": {
+    "cramped_space_indicators": {
+      "awkward_rotation_prompt": {"x": 0, "y": 480, "width": 64, "height": 16},
+      "door_closing_instruction": {"x": 64, "y": 480, "width": 64, "height": 16},
+      "interaction_zone_highlight": {"x": 128, "y": 480, "width": 32, "height": 16}
+    },
+    "graffiti_reading_ui": {
+      "blacklight_activation_prompt": {"x": 192, "y": 480, "width": 48, "height": 16},
+      "graffiti_discovered_notification": {"x": 240, "y": 480, "width": 64, "height": 16},
+      "embarrassed_status_indicator": {"x": 304, "y": 480, "width": 24, "height": 16}
+    },
+    "icq_integration_ui": {
+      "send_message_prompt": {"x": 328, "y": 480, "width": 48, "height": 16},
+      "rival_trio_targeting": {"x": 376, "y": 480, "width": 48, "height": 16},
+      "message_sent_confirmation": {"x": 424, "y": 480, "width": 48, "height": 16}
+    }
+  },
+  
+  "audio_sprite_mappings": {
+    "environmental_audio": [
+      "muffled_techno_through_drywall.ogg",
+      "fluorescent_electrical_hum.ogg",
+      "cleaning_supply_vapor_whistle.ogg"
+    ],
+    "interactive_fixture_audio": [
+      "ddr_up_arrow_press.wav",
+      "ddr_down_arrow_press.wav", 
+      "ddr_left_arrow_press.wav",
+      "ddr_right_arrow_press.wav",
+      "ddr_perfect_combo.wav",
+      "velcro_separation_struggle.wav"
+    ],
+    "crt_screen_audio": [
+      "classic_arcade_insert_coin_voice.wav",
+      "crt_refresh_static.wav",
+      "game_over_dignity_expired.wav"
+    ],
+    "electrical_hazard_audio": [
+      "electrical_arc_discharge.wav",
+      "brief_electrical_zap_stun_sound.wav"
+    ],
+    "comedy_timer_audio": [
+      "youve_achieved_nothing_but_shame_player_one.wav",
+      "joystick_squeak_loop.wav",
+      "sad_trombone_for_third_sock_dispense.wav"
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC_for_small_detailed_textures",
+      "android": "ETC2_with_alpha_channel_support",
+      "fallback": "PNG_with_alpha_high_quality_for_graffiti_detail"
+    },
+    "cramped_space_advantages": {
+      "reduced_draw_calls": "smaller_area_requires_fewer_render_operations",
+      "higher_detail_textures": "confined_space_allows_more_texture_memory_per_square_unit",
+      "simplified_culling": "everything_always_visible_eliminates_culling_calculations"
+    },
+    "performance_scaling": {
+      "high_end": "full_blacklight_effects_with_graffiti_transitions",
+      "medium": "simplified_blacklight_static_graffiti_visibility",
+      "low_end": "basic_lighting_visible_graffiti_no_blacklight_transitions",
+      "potato_mode": "static_sprites_essential_interactions_only"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "high_contrast_graffiti": {
+      "smaaaash_quote_high_contrast": {"x": 0, "y": 288, "width": 256, "height": 64},
+      "fake_cheat_codes_high_contrast": {"x": 256, "y": 288, "width": 128, "height": 64},
+      "joystick_lips_high_contrast": {"x": 384, "y": 288, "width": 32, "height": 32}
+    },
+    "colorblind_alternatives": {
+      "electrical_hazard_patterns": {"x": 0, "y": 352, "width": 64, "height": 32},
+      "graffiti_outline_emphasis": {"x": 64, "y": 352, "width": 128, "height": 32},
+      "status_indicator_shapes": {"x": 192, "y": 352, "width": 48, "height": 32}
+    },
+    "flicker_sensitivity_options": {
+      "static_fluorescent_alternative": {"x": 240, "y": 352, "width": 32, "height": 32},
+      "reduced_electrical_sparks": {"x": 272, "y": 352, "width": 32, "height": 16},
+      "gentle_blacklight_transition": {"x": 304, "y": 352, "width": 32, "height": 16}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "sprite_sheets": {
+    "food_cart_main": {
+      "file": "mr_chadz_kebab_cart_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "cart_size": {"width": 256, "height": 192},
+      "elements": {
+        "base_cart_structure": {
+          "idle": {"x": 0, "y": 0, "width": 256, "height": 192},
+          "active_cooking": {"x": 256, "y": 0, "width": 256, "height": 192},
+          "cleaning_mode": {"x": 512, "y": 0, "width": 256, "height": 192}
+        },
+  
+  "quest_integration_sprites": {
+    "great_doner_debate_elements": {
+      "belly_of_chadz_special_highlight": {"x": 256, "y": 736, "width": 64, "height": 64},
+      "regional_comparison_overlay": {"x": 320, "y": 736, "width": 96, "height": 32},
+      "cultural_authenticity_question_mark": {"x": 416, "y": 736, "width": 16, "height": 16}
+    },
+    "repeat_customer_progression_ui": {
+      "first_time_visitor_badge": {"x": 0, "y": 800, "width": 32, "height": 16},
+      "regular_customer_recognition": {"x": 32, "y": 800, "width": 32, "height": 16},
+      "crypto_advice_unlock_icon": {"x": 64, "y": 800, "width": 24, "height": 16},
+      "loyalty_tier_indicators": {"x": 88, "y": 800, "width": 80, "height": 16}
+    }
+  },
+  
+  "performance_profiling_sprites": {
+    "mobile_debug_overlays": {
+      "fps_counter_background": {"x": 484, "y": 840, "width": 32, "height": 12},
+      "memory_usage_bar": {"x": 0, "y": 864, "width": 48, "height": 8},
+      "particle_count_display": {"x": 48, "y": 864, "width": 40, "height": 8},
+      "draw_call_indicator": {"x": 88, "y": 864, "width": 32, "height": 8}
+    },
+    "lod_transition_markers": {
+      "high_quality_indicator": {"x": 120, "y": 864, "width": 16, "height": 8},
+      "medium_quality_indicator": {"x": 136, "y": 864, "width": 16, "height": 8},
+      "low_quality_indicator": {"x": 152, "y": 864, "width": 16, "height": 8},
+      "potato_mode_indicator": {"x": 168, "y": 864, "width": 16, "height": 8}
+    }
+  },
+  
+  "cultural_authenticity_sprites": {
+    "eastern_european_details": {
+      "cyrillic_price_tags": {"x": 184, "y": 864, "width": 24, "height": 12},
+      "post_communist_aesthetic": {"x": 208, "y": 864, "width": 32, "height": 16},
+      "western_tourist_adaptation": {"x": 240, "y": 864, "width": 32, "height": 16}
+    },
+    "doner_tradition_elements": {
+      "turkish_influence_details": {"x": 272, "y": 864, "width": 28, "height": 12},
+      "german_doner_adaptation": {"x": 300, "y": 864, "width": 28, "height": 12},
+      "local_interpretation_markers": {"x": 328, "y": 864, "width": 32, "height": 12}
+    }
+  },
+  
+  "achievement_unlock_sprites": {
+    "worlds_pickiest_drunk_progress": {
+      "tasting_note_overlay": {"x": 360, "y": 864, "width": 40, "height": 16},
+      "culinary_expertise_badge": {"x": 400, "y": 864, "width": 20, "height": 20},
+      "regional_comparison_chart": {"x": 420, "y": 864, "width": 32, "height": 16}
+    },
+    "loyalty_program_visuals": {
+      "frequent_buyer_stamp": {"x": 452, "y": 864, "width": 12, "height": 12},
+      "crypto_investment_certificate": {"x": 464, "y": 864, "width": 24, "height": 16},
+      "food_safety_survivor_medal": {"x": 488, "y": 864, "width": 16, "height": 16}
+    }
+  },
+  
+  "developer_reference_sprites": {
+    "sprite_coordinate_grid": {"x": 0, "y": 880, "width": 512, "height": 128},
+    "color_palette_reference": {"x": 0, "y": 1008, "width": 256, "height": 16},
+    "animation_timing_guides": {"x": 256, "y": 1008, "width": 256, "height": 16}
+  }
+},
+  
+  "interactive_element_sprites": {
+    "crypto_phone_screen_states": {
+      "price_alert_notification": {"x": 168, "y": 800, "width": 16, "height": 24},
+      "market_crash_red_screen": {"x": 184, "y": 800, "width": 16, "height": 24},
+      "portfolio_green_gains": {"x": 200, "y": 800, "width": 16, "height": 24},
+      "trading_app_interface": {"x": 216, "y": 800, "width": 16, "height": 24}
+    },
+    "health_code_violation_indicators": {
+      "rat_proximity_warning": {"x": 232, "y": 800, "width": 24, "height": 16},
+      "grease_hazard_symbol": {"x": 256, "y": 800, "width": 16, "height": 16},
+      "expired_ingredient_alert": {"x": 272, "y": 800, "width": 20, "height": 16},
+      "fda_disclaimer_small_print": {"x": 292, "y": 800, "width": 48, "height": 8}
+    },
+    "customer_interaction_prompts": {
+      "order_food_prompt": {"x": 340, "y": 800, "width": 48, "height": 16},
+      "observe_rat_option": {"x": 388, "y": 800, "width": 32, "height": 16},
+      "ask_about_crypto_prompt": {"x": 420, "y": 800, "width": 40, "height": 16},
+      "health_concern_dialogue": {"x": 460, "y": 800, "width": 44, "height": 16}
+    }
+  },
+  
+  "status_effect_visual_cues": {
+    "food_effect_overlays": {
+      "greaseburp_effect": {"x": 0, "y": 816, "width": 32, "height": 24},
+      "socially_rejected_aura": {"x": 32, "y": 816, "width": 48, "height": 24},
+      "meat_doubt_question_marks": {"x": 80, "y": 816, "width": 24, "height": 24},
+      "insomniac_clarity_glow": {"x": 104, "y": 816, "width": 40, "height": 24},
+      "dysentery_warning_flash": {"x": 144, "y": 816, "width": 32, "height": 16},
+      "greasy_coma_z_particles": {"x": 176, "y": 816, "width": 32, "height": 24}
+    },
+    "strategic_benefit_indicators": {
+      "stamina_boost_icon": {"x": 208, "y": 816, "width": 16, "height": 16},
+      "attack_increase_sword": {"x": 224, "y": 816, "width": 16, "height": 16},
+      "hangover_cure_cross": {"x": 240, "y": 816, "width": 16, "height": 16},
+      "auto_crit_star": {"x": 256, "y": 816, "width": 16, "height": 16},
+      "debuff_cleanse_sparkle": {"x": 272, "y": 816, "width": 20, "height": 16}
+    }
+  },
+  
+  "environmental_storytelling_details": {
+    "years_of_operation_wear": {
+      "cart_rust_patterns": {"x": 292, "y": 816, "width": 64, "height": 32},
+      "grease_stain_accumulation": {"x": 356, "y": 816, "width": 48, "height": 24},
+      "equipment_jury_rigged_fixes": {"x": 404, "y": 816, "width": 40, "height": 24}
+    },
+    "economic_indicator_details": {
+      "crypto_price_correlation_chart": {"x": 444, "y": 816, "width": 32, "height": 24},
+      "customer_desperation_meter": {"x": 476, "y": 816, "width": 24, "height": 16},
+      "regulatory_avoidance_symbols": {"x": 500, "y": 816, "width": 24, "height": 16}
+    }
+  },
+  
+  "cross_location_connection_sprites": {
+    "velvet_curtain_club_references": {
+      "club_exit_direction_arrow": {"x": 0, "y": 840, "width": 24, "height": 16},
+      "party_goer_silhouettes": {"x": 24, "y": 840, "width": 48, "height": 24},
+      "bass_thump_visual_effect": {"x": 72, "y": 840, "width": 32, "height": 16}
+    },
+    "absinthe_arcade_connection": {
+      "tech_culture_overlap_icon": {"x": 104, "y": 840, "width": 20, "height": 16},
+      "shared_customer_indicator": {"x": 124, "y": 840, "width": 28, "height": 16},
+      "crypto_gaming_fusion_symbol": {"x": 152, "y": 840, "width": 24, "height": 16}
+    }
+  },
+  
+  "seasonal_and_time_variation_sprites": {
+    "peak_hours_10pm_to_6am": {
+      "increased_steam_intensity": {"x": 176, "y": 840, "width": 32, "height": 24},
+      "desperate_customer_queue": {"x": 208, "y": 840, "width": 64, "height": 16},
+      "crypto_market_active_glow": {"x": 272, "y": 840, "width": 20, "height": 16}
+    },
+    "off_peak_daytime_hours": {
+      "reduced_activity_state": {"x": 292, "y": 840, "width": 32, "height": 24},
+      "cleaning_attempt_props": {"x": 324, "y": 840, "width": 24, "height": 16},
+      "mr_chadz_relaxed_posture": {"x": 348, "y": 840, "width": 32, "height": 48}
+    },
+    "weather_responsive_elements": {
+      "rain_effect_on_steam": {"x": 380, "y": 840, "width": 32, "height": 24},
+      "cold_weather_extra_steam": {"x": 412, "y": 840, "width": 32, "height": 24},
+      "wind_debris_scatter": {"x": 444, "y": 840, "width": 40, "height": 16}
+    }
+  }
+},
+        "vertical_rotisserie": {
+          "meat_layer_1": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "meat_layer_2": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "meat_layer_3": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "meat_layer_4": {"x": 192, "y": 192, "width": 64, "height": 96},
+          "rotisserie_mechanism": {"x": 256, "y": 192, "width": 32, "height": 96},
+          "drip_tray": {"x": 288, "y": 192, "width": 48, "height": 24}
+        },
+        "fluorescent_lighting": {
+          "full_brightness": {"x": 0, "y": 288, "width": 128, "height": 32},
+          "flickering_dim": {"x": 128, "y": 288, "width": 128, "height": 32},
+          "electrical_issues": {"x": 256, "y": 288, "width": 128, "height": 32}
+        },
+        "signage_system": {
+          "main_sign_base": {"x": 0, "y": 320, "width": 192, "height": 64},
+          "led_strip_normal": {"x": 192, "y": 320, "width": 192, "height": 8},
+          "led_strip_flickering": {"x": 192, "y": 328, "width": 192, "height": 8},
+          "hookah_hose_mount": {"x": 192, "y": 336, "width": 32, "height": 48}
+        }
+      }
+    },
+    "mr_chadz_character": {
+      "file": "mr_chadz_kebab_vendor.png", 
+      "dimensions": {"width": 512, "height": 512},
+      "character_size": {"width": 64, "height": 96},
+      "animation_states": {
+        "idle_phone_checking": {
+          "frame_1": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "frame_2": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "frame_3": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "frame_4": {"x": 192, "y": 0, "width": 64, "height": 96}
+        },
+        "serving_food": {
+          "prep_ingredients": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "wrapping_food": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "handing_to_customer": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "taking_payment": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "business_reactions": {
+          "supplier_call_concern": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "health_inspector_panic": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "business_call_checking": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "sketchy_deal_negotiation": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "signature_outfit": {
+          "glittery_crop_top": {"x": 256, "y": 0, "width": 64, "height": 48},
+          "bulletproof_vest": {"x": 256, "y": 48, "width": 64, "height": 48},
+          "burner_phone": {"x": 320, "y": 0, "width": 16, "height": 24},
+          "business_call_screen": {"x": 320, "y": 24, "width": 16, "height": 24}
+        }
+      }
+    },128, "y": 0, "width": 64, "height": 96},
+          "frame_4": {"x": 192, "y": 0, "width": 64, "height": 96}
+        },
+        "serving_food": {
+          "prep_ingredients": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "wrapping_food": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "handing_to_customer": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "taking_payment": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "crypto_reactions": {
+          "market_up_excited": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "market_crash_despair": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "portfolio_checking": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "trading_frantically": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "signature_outfit": {
+          "glittery_crop_top": {"x": 256, "y": 0, "width": 64, "height": 48},
+          "bulletproof_vest": {"x": 256, "y": 48, "width": 64, "height": 48},
+          "burner_phone": {"x": 320, "y": 0, "width": 16, "height": 24},
+          "crypto_alert_screen": {"x": 320, "y": 24, "width": 16, "height": 24}
+        }
+      }
+    },
+    "menu_items_food": {
+      "file": "kebab_menu_items_detailed.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "item_size": {"width": 64, "height": 64},
+      "food_items": {
+        "gutbuster_wrap": {
+          "wrapped": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "unwrapped_dripping": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "cross_section": {"x": 128, "y": 0, "width": 64, "height": 64}
+        },
+        "vampire_slayer_garlic_fries": {
+          "in_container": {"x": 192, "y": 0, "width": 64, "height": 64},
+          "garlic_sauce_dripping": {"x": 256, "y": 0, "width": 64, "height": 64},
+          "week_old_oil_shimmer": {"x": 320, "y": 0, "width": 64, "height": 64}
+        },
+        "euromeat_pocket": {
+          "suspicious_grey_filling": {"x": 384, "y": 0, "width": 64, "height": 64},
+          "soggy_pita_bread": {"x": 448, "y": 0, "width": 64, "height": 64},
+          "microwaved_steam": {"x": 512, "y": 0, "width": 64, "height": 64}
+        },
+        "megamix_box_regret_platter": {
+          "cardboard_coffin_closed": {"x": 0, "y": 64, "width": 64, "height": 64},
+          "horrifying_contents_revealed": {"x": 64, "y": 64, "width": 64, "height": 64},
+          "regret_visualization": {"x": 128, "y": 64, "width": 64, "height": 64}
+        },
+        "drunken_sauce_shot": {
+          "plastic_thimble": {"x": 192, "y": 64, "width": 32, "height": 32},
+          "hot_sauce_mayo_swirl": {"x": 224, "y": 64, "width": 32, "height": 32},
+          "dysentery_warning_label": {"x": 192, "y": 96, "width": 32, "height": 16}
+        },
+        "lambsomnia_special": {
+          "spiced_lamb_arrangement": {"x": 256, "y": 64, "width": 64, "height": 64},
+          "sleepless_tzatziki": {"x": 320, "y": 64, "width": 64, "height": 64},
+          "insomniac_glow_effect": {"x": 384, "y": 64, "width": 64, "height": 64}
+        },
+        "yogurt_reboot": {
+          "tiny_cup_warm": {"x": 448, "y": 64, "width": 32, "height": 32},
+          "expired_balkan_yogurt": {"x": 480, "y": 64, "width": 32, "height": 32},
+          "questionable_expiration_date": {"x": 448, "y": 96, "width": 32, "height": 16}
+        },
+        "belly_of_chadz": {
+          "dense_kebab_box": {"x": 0, "y": 128, "width": 64, "height": 64},
+          "three_sauces_soaked": {"x": 64, "y": 128, "width": 64, "height": 64},
+          "ego_emanation_effect": {"x": 128, "y": 128, "width": 64, "height": 64}
+        }
+      }
+    },
+    "environmental_details": {
+      "file": "alley_environment_details.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "environmental_elements": {
+        "rainbow_grease_puddles": {
+          "small_puddle": {"x": 0, "y": 0, "width": 32, "height": 16},
+          "medium_puddle": {"x": 32, "y": 0, "width": 48, "height": 24},
+          "large_puddle": {"x": 80, "y": 0, "width": 64, "height": 32},
+          "rainbow_shimmer_1": {"x": 0, "y": 32, "width": 64, "height": 32},
+          "rainbow_shimmer_2": {"x": 64, "y": 32, "width": 64, "height": 32},
+          "rainbow_shimmer_3": {"x": 128, "y": 32, "width": 64, "height": 32}
+        },
+        "post_party_debris": {
+          "red_bull_cans": {"x": 0, "y": 64, "width": 16, "height": 24},
+          "condom_wrappers": {"x": 16, "y": 64, "width": 12, "height": 8},
+          "rave_flyer_pieces": {"x": 28, "y": 64, "width": 20, "height": 16},
+          "cigarette_butts": {"x": 48, "y": 64, "width": 8, "height": 8},
+          "mystery_stains": {"x": 0, "y": 88, "width": 96, "height": 24}
+        },
+        "nft_wall_graffiti": {
+          "nft_4_lyfe_base": {"x": 144, "y": 0, "width": 128, "height": 64},
+          "additional_crypto_tags": {"x": 144, "y": 64, "width": 128, "height": 48},
+          "faded_older_graffiti": {"x": 272, "y": 0, "width": 64, "height": 112}
+        },
+        "chain_link_fence": {
+          "normal_section": {"x": 336, "y": 0, "width": 64, "height": 96},
+          "damaged_section": {"x": 400, "y": 0, "width": 64, "height": 96},
+          "debris_caught_section": {"x": 464, "y": 0, "width": 64, "height": 96}
+        },
+        "rat_and_chili_pepper": {
+          "rat_gnawing_frame_1": {"x": 0, "y": 112, "width": 16, "height": 12},
+          "rat_gnawing_frame_2": {"x": 16, "y": 112, "width": 16, "height": 12},
+          "rat_gnawing_frame_3": {"x": 32, "y": 112, "width": 16, "height": 12},
+          "rat_gnawing_frame_4": {"x": 48, "y": 112, "width": 16, "height": 12},
+          "chili_pepper_intact": {"x": 0, "y": 124, "width": 8, "height": 12},
+          "chili_pepper_gnawed": {"x": 8, "y": 124, "width": 8, "height": 12}
+        }
+      }
+    },
+    "particle_effects": {
+      "file": "kebab_stand_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "particle_elements": {
+        "cooking_steam": {
+          "steam_wisp_1": {"x": 0, "y": 0, "width": 16, "height": 16},
+          "steam_wisp_2": {"x": 16, "y": 0, "width": 16, "height": 16},
+          "steam_wisp_3": {"x": 32, "y": 0, "width": 16, "height": 16},
+          "steam_wisp_4": {"x": 48, "y": 0, "width": 16, "height": 16}
+        },
+        "grease_vapor": {
+          "grease_particle_small": {"x": 0, "y": 16, "width": 8, "height": 8},
+          "grease_particle_medium": {"x": 8, "y": 16, "width": 12, "height": 12},
+          "grease_droplet": {"x": 20, "y": 16, "width": 4, "height": 8}
+        },
+        "cigarette_smoke": {
+          "smoke_curl_1": {"x": 64, "y": 0, "width": 20, "height": 20},
+          "smoke_curl_2": {"x": 84, "y": 0, "width": 20, "height": 20},
+          "smoke_curl_3": {"x": 104, "y": 0, "width": 20, "height": 20}
+        },
+        "urban_debris_flutter": {
+          "paper_scrap": {"x": 0, "y": 28, "width": 12, "height": 8},
+          "plastic_fragment": {"x": 12, "y": 28, "width": 8, "height": 6},
+          "food_wrapper": {"x": 20, "y": 28, "width": 10, "height": 8}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "rotisserie_meat_spinning": {
+      "sprite_source": "alley_environment_details.png",
+      "sequence": [
+        {"frame": "rainbow_shimmer_1", "duration": 1.0},
+        {"frame": "rainbow_shimmer_2", "duration": 1.0}, 
+        {"frame": "rainbow_shimmer_3", "duration": 1.0}
+      ],
+      "loop": true,
+      "oil_slick_effect": "creates_mesmerizing_rainbow_patterns",
+      "lighting_interaction": "reflects_fluorescent_cart_lighting"
+    },
+    "rat_chili_pepper_gnawing": {
+      "sprite_source": "alley_environment_details.png",
+      "sequence": [
+        {"frame": "rat_gnawing_frame_1", "duration": 0.4, "audio": "tiny_gnawing_sound"},
+        {"frame": "rat_gnawing_frame_2", "duration": 0.3},
+        {"frame": "rat_gnawing_frame_3", "duration": 0.4},
+        {"frame": "rat_gnawing_frame_4", "duration": 0.4}
+      ],
+      "loop": true,
+      "health_code_violation": "continuous_obvious_contamination",
+      "pepper_degradation": "chili_pepper_slowly_consumed_over_time"
+    },
+    "food_preparation_sequence": {
+      "sprite_source": "mr_chadz_crypto_kebab_vendor.png",
+      "customer_order_flow": [
+        {"frame": "prep_ingredients", "duration": 2.0, "audio": "questionable_meat_handling"},
+        {"frame": "wrapping_food", "duration": 1.5, "audio": "aluminum_foil_crinkling"},
+        {"frame": "handing_to_customer", "duration": 1.0, "audio": "here_you_go_regret_incoming"},
+        {"frame": "taking_payment", "duration": 0.5, "audio": "ancient_cash_register"}
+      ]
+    }
+  },
+  
+  "lighting_effects": {
+    "fluorescent_cart_lighting": {
+      "color": "#FFFFFF", 
+      "intensity": 1.0,
+      "coverage": "harsh_direct_illumination_food_prep_area",
+      "shadow_casting": "creates_stark_contrast_with_alley_darkness",
+      "flicker_occasional": "suggests_electrical_problems"
+    },
+    "led_strip_accent_lighting": {
+      "color": "#FF6B35",
+      "intensity_variation": "0.3_to_1.0_irregular_flicker",
+      "backlight_effect": "illuminates_mr_chadz_kebabs_signage",
+      "hookah_hose_mounting": "creates_jury_rigged_aesthetic"
+    },
+    "rainbow_grease_reflections": {
+      "colors": ["#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#FF00FF"],
+      "animation_cycle": "2_second_slow_shifting_spectrum",
+      "reflection_source": "fluorescent_light_bouncing_off_oil_slicks",
+      "aesthetic_contradiction": "beautiful_despite_health_hazard_origin"
+    },
+    "alley_ambient_darkness": {
+      "color": "#FFB347",
+      "intensity": 0.2,
+      "sources": ["distant_street_lamps", "club_light_spillover"],
+      "atmospheric_purpose": "creates_dingy_urban_night_context"
+    }
+  },
+  
+  "ui_elements": {
+    "menu_interface": {
+      "menu_background": {"x": 0, "y": 240, "width": 256, "height": 192},
+      "item_selection_highlight": {"x": 256, "y": 240, "width": 64, "height": 16},
+      "price_display": {"x": 320, "y": 240, "width": 48, "height": 16},
+      "quantity_selector": {"x": 368, "y": 240, "width": 32, "height": 16}
+    },
+    "status_effect_warnings": {
+      "health_warning_icon": {"x": 0, "y": 432, "width": 16, "height": 16},
+      "side_effect_alert": {"x": 16, "y": 432, "width": 32, "height": 16},
+      "strategic_benefit_indicator": {"x": 48, "y": 432, "width": 32, "height": 16}
+    },
+    "repeat_customer_indicators": {
+      "new_customer_prompt": {"x": 80, "y": 432, "width": 48, "height": 16},
+      "regular_customer_recognition": {"x": 128, "y": 432, "width": 48, "height": 16},
+      "loyalty_tier_display": {"x": 176, "y": 432, "width": 32, "height": 16}
+    }
+  },
+  
+  "audio_sprite_mappings": {
+    "environmental_audio": [
+      "rotisserie_meat_sizzling_continuous.ogg",
+      "steam_hiss_from_cooking_equipment.ogg",
+      "city_traffic_distant_club_music_blend.ogg",
+      "urban_wind_through_alley_debris_flutter.ogg"
+    ],
+    "interactive_equipment_audio": [
+      "vertical_rotisserie_motor_continuous.wav",
+      "grease_pop_small.wav",
+      "grease_pop_medium.wav", 
+      "grease_splatter_sizzle.wav"
+    ],
+    "mr_chadz_character_audio": [
+      "crypto_price_alert_beep.wav",
+      "market_crash_alarm.wav",
+      "portfolio_update_chime.wav",
+      "trading_notification_buzz.wav"
+    ],
+    "customer_service_audio": [
+      "pen_scribbling_on_greasy_notepad.wav",
+      "cash_register_ancient_mechanical.wav",
+      "aluminum_foil_crinkling_enthusiastic.wav",
+      "cardboard_container_placement.wav"
+    ],
+    "comedy_environmental_audio": [
+      "tiny_gnawing_sound_rat_chili.wav",
+      "questionable_meat_handling_squelch.wav",
+      "health_violation_dramatic_sting.wav",
+      "grease_puddle_splash_footstep.wav"
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC_optimized_for_food_textures",
+      "android": "ETC2_with_alpha_support_grease_effects",
+      "fallback": "PNG_high_quality_for_detailed_food_items"
+    },
+    "sprite_atlasing": {
+      "food_items_atlas": "combines_all_menu_items_single_texture",
+      "character_animation_atlas": "mr_chadz_all_states_combined",
+      "environmental_elements_atlas": "particles_debris_effects_combined",
+      "max_atlas_size": "2048x2048_mobile_gpu_friendly"
+    },
+    "lod_scaling": {
+      "high_end_devices": "full_particle_effects_detailed_animations",
+      "medium_devices": "reduced_particle_density_simplified_steam",
+      "low_end_devices": "static_steam_sprites_basic_animations",
+      "potato_mode": "essential_sprites_only_no_particle_effects"
+    },
+    "memory_management": {
+      "streaming_strategy": "loads_menu_items_on_demand",
+      "cache_management": "keeps_frequently_accessed_sprites_in_memory",
+      "garbage_collection": "aggressive_cleanup_unused_animation_frames"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "high_contrast_alternatives": {
+      "menu_items_high_contrast": {"x": 0, "y": 448, "width": 256, "height": 64},
+      "ui_elements_enhanced": {"x": 256, "y": 448, "width": 128, "height": 32},
+      "character_outline_emphasized": {"x": 384, "y": 448, "width": 64, "height": 96}
+    },
+    "colorblind_accommodations": {
+      "rainbow_puddles_pattern_alternative": {"x": 0, "y": 512, "width": 128, "height": 64},
+      "led_strip_pattern_indicators": {"x": 128, "y": 512, "width": 64, "height": 16},
+      "grease_hazard_texture_cues": {"x": 192, "y": 512, "width": 64, "height": 32}
+    },
+    "motion_sensitivity_options": {
+      "static_rotisserie_alternative": {"x": 256, "y": 512, "width": 64, "height": 96},
+      "reduced_flicker_led_strip": {"x": 320, "y": 512, "width": 64, "height": 16},
+      "minimal_particle_movement": {"x": 384, "y": 512, "width": 64, "height": 32}
+    }
+  },
+  
+  "social_media_optimized_elements": {
+    "screenshot_compositions": {
+      "mr_chadz_crypto_pose": {"x": 0, "y": 576, "width": 128, "height": 128},
+      "mystery_meat_close_up": {"x": 128, "y": 576, "width": 96, "height": 96},
+      "rainbow_grease_aesthetic": {"x": 224, "y": 576, "width": 96, "height": 64}
+    },
+    "meme_template_elements": {
+      "catchphrase_text_backgrounds": {"x": 0, "y": 704, "width": 192, "height": 32},
+      "reaction_face_frames": {"x": 192, "y": 704, "width": 128, "height": 64},
+      "food_horror_compositions": {"x": 320, "y": 704, "width": 96, "height": 64}
+    },
+    "tiktok_moment_frames": {
+      "before_eating_setup": {"x": 0, "y": 736, "width": 64, "height": 64},
+      "during_consumption": {"x": 64, "y": 736, "width": 64, "height": 64},
+      "regret_realization": {"x": 128, "y": 736, "width": 64, "height": 64},
+      "crypto_price_check": {"x": 192, "y": 736, "width": 64, "height": 64}
+    }
+  }
+}": "mr_chadz_kebab_cart_complete.png",
+      "sequence": [
+        {"frame": "meat_layer_1", "duration": 0.5},
+        {"frame": "meat_layer_2", "duration": 0.5},
+        {"frame": "meat_layer_3", "duration": 0.5},
+        {"frame": "meat_layer_4", "duration": 0.5}
+      ],
+      "loop": true,
+      "rotation_speed": "2_rpm_hypnotic_continuous",
+      "audio_sync": "rotisserie_motor_hum"
+    },
+    "mr_chadz_crypto_checking": {
+      "sprite_source": "mr_chadz_crypto_kebab_vendor.png",
+      "sequence": [
+        {"frame": "idle_phone_checking_frame_1", "duration": 3.0},
+        {"frame": "idle_phone_checking_frame_2", "duration": 0.5, "audio": "crypto_notification_beep"},
+        {"frame": "idle_phone_checking_frame_3", "duration": 2.0},
+        {"frame": "idle_phone_checking_frame_4", "duration": 1.0}
+      ],
+      "frequency": "every_10_to_15_seconds",
+      "interrupts_service": true
+    },
+    "led_strip_flickering": {
+      "sprite_source": "mr_chadz_kebab_cart_complete.png",
+      "sequence": [
+        {"frame": "led_strip_normal", "duration": 2.0},
+        {"frame": "led_strip_flickering", "duration": 0.1},
+        {"frame": "led_strip_normal", "duration": 1.5},
+        {"frame": "led_strip_flickering", "duration": 0.2}
+      ],
+      "random_variation": true,
+      "electrical_instability": "suggests_jury_rigged_power_connection"
+    },
+    "rainbow_grease_puddle_shimmer": {
+      "sprite_source": "alley_environment_details.png",
+      "sequence": [
+        {"frame": "rainbow_shimmer_1", "duration": 1.0},
+        {"frame": "rainbow_shimmer_2", "duration": 1.0}, 
+        {"frame": "rainbow_shimmer_3", "duration": 1.0}
+      ],
+      "loop": true,
+      "oil_slick_effect": "creates_mesmerizing_rainbow_patterns",
+      "lighting_interaction": "reflects_fluorescent_cart_lighting"
+    },
+    "rat_chili_pepper_gnawing": {
+      "sprite_source": "alley_environment_details.png",
+      "sequence": [
+        {"frame": "rat_gnawing_frame_1", "duration": 0.4, "audio": "tiny_gnawing_sound"},
+        {"frame": "rat_gnawing_frame_2", "duration": 0.3},
+        {"frame": "rat_gnawing_frame_3", "duration": 0.4},
+        {"frame": "rat_gnawing_frame_4", "duration": 0.4}
+      ],
+      "loop": true,
+      "health_code_violation": "continuous_obvious_contamination",
+      "pepper_degradation": "chili_pepper_slowly_consumed_over_time"
+    },
+    "food_preparation_sequence": {
+      "sprite_source": "mr_chadz_crypto_kebab_vendor.png",
+      "customer_order_flow": [
+        {"frame": "prep_ingredients", "duration": 2.0, "audio": "questionable_meat_handling"},
+        {"frame": "wrapping_food", "duration": 1.5, "audio": "aluminum_foil_crinkling"},
+        {"frame": "handing_to_customer", "duration": 1.0, "audio": "here_you_go_regret_incoming"},
+        {"frame": "taking_payment", "duration": 0.5, "audio": "ancient_cash_register"}
+      ]
+    }
+  },
+  
+  "lighting_effects": {
+    "fluorescent_cart_lighting": {
+      "color": "#FFFFFF", 
+      "intensity": 1.0,
+      "coverage": "harsh_direct_illumination_food_prep_area",
+      "shadow_casting": "creates_stark_contrast_with_alley_darkness",
+      "flicker_occasional": "suggests_electrical_problems"
+    },
+    "led_strip_accent_lighting": {
+      "color": "#FF6B35",
+      "intensity_variation": "0.3_to_1.0_irregular_flicker",
+      "backlight_effect": "illuminates_mr_chadz_kebabs_signage",
+      "hookah_hose_mounting": "creates_jury_rigged_aesthetic"
+    },
+    "rainbow_grease_reflections": {
+      "colors": ["#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#FF00FF"],
+      "animation_cycle": "2_second_slow_shifting_spectrum",
+      "reflection_source": "fluorescent_light_bouncing_off_oil_slicks",
+      "aesthetic_contradiction": "beautiful_despite_health_hazard_origin"
+    },
+    "alley_ambient_darkness": {
+      "color": "#FFB347",
+      "intensity": 0.2,
+      "sources": ["distant_street_lamps", "club_light_spillover"],
+      "atmospheric_purpose": "creates_dingy_urban_night_context"
+    }
+  },
+  
+  "ui_elements": {
+    "menu_interface": {
+      "menu_background": {"x": 0, "y": 240, "width": 256, "height": 192},
+      "item_selection_highlight": {"x": 256, "y": 240, "width": 64, "height": 16},
+      "price_display": {"x": 320, "y": 240, "width": 48, "height": 16},
+      "quantity_selector": {"x": 368, "y": 240, "width": 32, "height": 16}
+    },
+    "status_effect_warnings": {
+      "health_warning_icon": {"x": 0, "y": 432, "width": 16, "height": 16},
+      "side_effect_alert": {"x": 16, "y": 432, "width": 32, "height": 16},
+      "strategic_benefit_indicator": {"x": 48, "y": 432, "width": 32, "height": 16}
+    },
+    "repeat_customer_indicators": {
+      "new_customer_prompt": {"x": 80, "y": 432, "width": 48, "height": 16},
+      "regular_customer_recognition": {"x": 128, "y": 432, "width": 48, "height": 16},
+      "loyalty_tier_display": {"x": 176, "y": 432, "width": 32, "height": 16}
+    }
+  },
+  
+  "audio_sprite_mappings": {
+    "environmental_audio": [
+      "rotisserie_meat_sizzling_continuous.ogg",
+      "steam_hiss_from_cooking_equipment.ogg",
+      "city_traffic_distant_club_music_blend.ogg",
+      "urban_wind_through_alley_debris_flutter.ogg"
+    ],
+    "interactive_equipment_audio": [
+      "vertical_rotisserie_motor_continuous.wav",
+      "grease_pop_small.wav",
+      "grease_pop_medium.wav", 
+      "grease_splatter_sizzle.wav"
+    ],
+    "mr_chadz_character_audio": [
+      "crypto_price_alert_beep.wav",
+      "market_crash_alarm.wav",
+      "portfolio_update_chime.wav",
+      "trading_notification_buzz.wav"
+    ],
+    "customer_service_audio": [
+      "pen_scribbling_on_greasy_notepad.wav",
+      "cash_register_ancient_mechanical.wav",
+      "aluminum_foil_crinkling_enthusiastic.wav",
+      "cardboard_container_placement.wav"
+    ],
+    "comedy_environmental_audio": [
+      "tiny_gnawing_sound_rat_chili.wav",
+      "questionable_meat_handling_squelch.wav",
+      "health_violation_dramatic_sting.wav",
+      "grease_puddle_splash_footstep.wav"
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC_optimized_for_food_textures",
+      "android": "ETC2_with_alpha_support_grease_effects",
+      "fallback": "PNG_high_quality_for_detailed_food_items"
+    },
+    "sprite_atlasing": {
+      "food_items_atlas": "combines_all_menu_items_single_texture",
+      "character_animation_atlas": "mr_chadz_all_states_combined",
+      "environmental_elements_atlas": "particles_debris_effects_combined",
+      "max_atlas_size": "2048x2048_mobile_gpu_friendly"
+    },
+    "lod_scaling": {
+      "high_end_devices": "full_particle_effects_detailed_animations",
+      "medium_devices": "reduced_particle_density_simplified_steam",
+      "low_end_devices": "static_steam_sprites_basic_animations",
+      "potato_mode": "essential_sprites_only_no_particle_effects"
+    },
+    "memory_management": {
+      "streaming_strategy": "loads_menu_items_on_demand",
+      "cache_management": "keeps_frequently_accessed_sprites_in_memory",
+      "garbage_collection": "aggressive_cleanup_unused_animation_frames"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "high_contrast_alternatives": {
+      "menu_items_high_contrast": {"x": 0, "y": 448, "width": 256, "height": 64},
+      "ui_elements_enhanced": {"x": 256, "y": 448, "width": 128, "height": 32},
+      "character_outline_emphasized": {"x": 384, "y": 448, "width": 64, "height": 96}
+    },
+    "colorblind_accommodations": {
+      "rainbow_puddles_pattern_alternative": {"x": 0, "y": 512, "width": 128, "height": 64},
+      "led_strip_pattern_indicators": {"x": 128, "y": 512, "width": 64, "height": 16},
+      "grease_hazard_texture_cues": {"x": 192, "y": 512, "width": 64, "height": 32}
+    },
+    "motion_sensitivity_options": {
+      "static_rotisserie_alternative": {"x": 256, "y": 512, "width": 64, "height": 96},
+      "reduced_flicker_led_strip": {"x": 320, "y": 512, "width": 64, "height": 16},
+      "minimal_particle_movement": {"x": 384, "y": 512, "width": 64, "height": 32}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "sprite_sheets": {
+    "chef_chuckles_mystery_cart_complete": {
+      "file": "chef_chuckles_mystery_cart_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "cart_size": {"width": 256, "height": 192},
+      "elements": {
+        "pushcart_structure": {
+          "idle_steam_wispy": {"x": 0, "y": 0, "width": 256, "height": 192},
+          "active_cooking_heavy_steam": {"x": 256, "y": 0, "width": 256, "height": 192},
+          "cleaning_mode_suspicious_rag": {"x": 512, "y": 0, "width": 256, "height": 192}
+        },
+        "carousel_rotisserie_system": {
+          "rotation_frame_1": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "rotation_frame_2": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "rotation_frame_3": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "rotation_frame_4": {"x": 192, "y": 192, "width": 64, "height": 96},
+          "rotation_frame_5": {"x": 256, "y": 192, "width": 64, "height": 96},
+          "rotation_frame_6": {"x": 320, "y": 192, "width": 64, "height": 96},
+          "rotation_frame_7": {"x": 384, "y": 192, "width": 64, "height": 96},
+          "rotation_frame_8": {"x": 448, "y": 192, "width": 64, "height": 96},
+          "neon_lighting_underneath": {"x": 512, "y": 192, "width": 64, "height": 32},
+          "steam_emission_points": {"x": 576, "y": 192, "width": 32, "height": 96},
+          "grease_drip_collection": {"x": 608, "y": 192, "width": 48, "height": 24}
+        },
+        "violent_carnival_lighting": {
+          "full_strobe_intensity": {"x": 0, "y": 288, "width": 128, "height": 32},
+          "medium_flashing": {"x": 128, "y": 288, "width": 128, "height": 32},
+          "reduced_accessibility": {"x": 256, "y": 288, "width": 128, "height": 32},
+          "strobe_disabled": {"x": 384, "y": 288, "width": 128, "height": 32}
+        },
+        "animated_signage": {
+          "shade_meat_4_clown_souls": {"x": 0, "y": 320, "width": 192, "height": 64},
+          "shady_dogs_glitch": {"x": 192, "y": 320, "width": 192, "height": 64},
+          "meat_roulette_glitch": {"x": 384, "y": 320, "width": 192, "height": 64},
+          "free_sample_not_binding": {"x": 576, "y": 320, "width": 192, "height": 64}
+        }
+      }
+    },
+    "chef_chuckles_character_animations": {
+      "file": "chef_chuckles_character_animations.png",
+      "dimensions": {"width": 512, "height": 512},
+      "character_size": {"width": 64, "height": 96},
+      "animation_states": {
+        "butterfly_knife_sausage_flipping": {
+          "frame_1": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "frame_2": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "frame_3": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "frame_4": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "frame_5": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "frame_6": {"x": 320, "y": 0, "width": 64, "height": 96}
+        },
+        "food_service_actions": {
+          "prep_mystery_ingredients": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "wrapping_with_theatrical_flourish": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "serving_with_veiled_threats": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "payment_collection": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "business_hours_mode": {
+          "cracked_clown_mask_on": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "mask_on_threatening_service": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "mask_on_deadpan_menace": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "mask_on_food_pun_delivery": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "off_hours_casual": {
+          "mask_off_relaxed": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "mask_off_still_threatening": {"x": 64, "y": 288, "width": 64, "height": 96},
+          "mask_off_knife_maintenance": {"x": 128, "y": 288, "width": 64, "height": 96},
+          "mask_off_ingredient_prep": {"x": 192, "y": 288, "width": 64, "height": 96}
+        },
+        "signature_outfit_elements": {
+          "clown_shoes_oversized": {"x": 256, "y": 192, "width": 32, "height": 48},
+          "sleeveless_tuxedo_stained": {"x": 288, "y": 192, "width": 48, "height": 72},
+          "butterfly_knife_chrome": {"x": 336, "y": 192, "width": 16, "height": 32},
+          "cracked_porcelain_mask": {"x": 352, "y": 192, "width": 32, "height": 32},
+          "lighter_fluid_vapor": {"x": 384, "y": 192, "width": 24, "height": 48}
+        }
+      }
+    },
+    "mystery_menu_items_detailed": {
+      "file": "mystery_menu_items_detailed.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "item_size": {"width": 64, "height": 64},
+      "food_items": {
+        "doner_of_illusions": {
+          "spinning_meat_heap": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "gummy_bears_mixed_in": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "absinthe_glaze_green_shimmer": {"x": 128, "y": 0, "width": 64, "height": 64},
+          "serving_wrapped": {"x": 192, "y": 0, "width": 64, "height": 64}
+        },
+        "sausage_of_suspicion": {
+          "grey_sweaty_tube_meat": {"x": 0, "y": 64, "width": 64, "height": 64},
+          "wooden_stick_presentation": {"x": 64, "y": 64, "width": 64, "height": 64},
+          "whisper_audio_waves": {"x": 128, "y": 64, "width": 64, "height": 64},
+          "suspicious_from_all_angles": {"x": 192, "y": 64, "width": 64, "height": 64}
+        },
+        "clown_dog_deluxe": {
+          "red_licorice_bun": {"x": 0, "y": 128, "width": 64, "height": 64},
+          "mustard_smiley_face": {"x": 64, "y": 128, "width": 64, "height": 64},
+          "pop_rocks_relish": {"x": 128, "y": 128, "width": 64, "height": 64},
+          "assembled_grotesque": {"x": 192, "y": 128, "width": 64, "height": 64}
+        },
+        "meatball_lollipop_stick": {
+          "spherical_mystery_meat": {"x": 0, "y": 192, "width": 64, "height": 64},
+          "candy_stick_inappropriate": {"x": 64, "y": 192, "width": 64, "height": 64},
+          "structural_impossibility": {"x": 128, "y": 192, "width": 64, "height": 64},
+          "previous_bite_marks": {"x": 192, "y": 192, "width": 64, "height": 64}
+        },
+        "glizzenstein_brain_brat": {
+          "glowing_internal_ai": {"x": 0, "y": 256, "width": 64, "height": 64},
+          "circuit_pattern_meat_surface": {"x": 64, "y": 256, "width": 64, "height": 64},
+          "organic_digital_mix": {"x": 128, "y": 256, "width": 64, "height": 64},
+          "pulsing_glow_packaging": {"x": 192, "y": 256, "width": 64, "height": 64}
+        }
+      }
+    },
+    "circus_cart_environment_complete": {
+      "file": "circus_cart_environment_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "environmental_elements": {
+        "ringmaster_tent_corner": {
+          "tent_corner_visible": {"x": 0, "y": 0, "width": 128, "height": 96},
+          "circus_entrance_context": {"x": 128, "y": 0, "width": 128, "height": 96},
+          "performer_network_hints": {"x": 256, "y": 0, "width": 128, "height": 96}
+        },
+        "carnival_chaos_background": {
+          "distressed_family_silhouettes": {"x": 0, "y": 96, "width": 96, "height": 64},
+          "other_circus_performers": {"x": 96, "y": 96, "width": 128, "height": 64},
+          "carnival_game_audio_waves": {"x": 224, "y": 96, "width": 64, "height": 64},
+          "safety_violation_evidence": {"x": 288, "y": 96, "width": 96, "height": 64}
+        },
+        "environmental_hazards": {
+          "electrical_issues_sparking": {"x": 0, "y": 160, "width": 64, "height": 48},
+          "sanitation_nightmares": {"x": 64, "y": 160, "width": 96, "height": 48},
+          "structural_concerns": {"x": 160, "y": 160, "width": 64, "height": 48},
+          "no_authority_figures": {"x": 224, "y": 160, "width": 96, "height": 48}
+        },
+        "atmosphere_particles": {
+          "steam_from_cooking": {"x": 0, "y": 208, "width": 48, "height": 32},
+          "grease_vapor_rising": {"x": 48, "y": 208, "width": 48, "height": 32},
+          "carnival_dust_sawdust": {"x": 96, "y": 208, "width": 48, "height": 32},
+          "mystery_substance_particles": {"x": 144, "y": 208, "width": 48, "height": 32}
+        }
+      }
+    },
+    "carnival_effects_particles": {
+      "file": "carnival_effects_particles.png",
+      "dimensions": {"width": 512, "height": 256},
+      "particle_elements": {
+        "steam_systems": {
+          "cooking_steam_wisp_1": {"x": 0, "y": 0, "width": 16, "height": 16},
+          "cooking_steam_wisp_2": {"x": 16, "y": 0, "width": 16, "height": 16},
+          "cooking_steam_wisp_3": {"x": 32, "y": 0, "width": 16, "height": 16},
+          "cooking_steam_wisp_4": {"x": 48, "y": 0, "width": 16, "height": 16},
+          "mystery_vapor_colored": {"x": 64, "y": 0, "width": 20, "height": 20},
+          "grease_steam_oily": {"x": 84, "y": 0, "width": 16, "height": 16},
+          "rotisserie_exhaust": {"x": 100, "y": 0, "width": 16, "height": 16}
+        },
+        "carnival_light_effects": {
+          "violent_strobe_red": {"x": 0, "y": 20, "width": 24, "height": 24},
+          "violent_strobe_green": {"x": 24, "y": 20, "width": 24, "height": 24},
+          "violent_strobe_purple": {"x": 48, "y": 20, "width": 24, "height": 24},
+          "neon_rotisserie_glow": {"x": 72, "y": 20, "width": 32, "height": 24},
+          "electrical_sparks": {"x": 104, "y": 20, "width": 16, "height": 16},
+          "carnival_bulb_flicker": {"x": 120, "y": 20, "width": 12, "height": 12}
+        },
+        "atmospheric_debris": {
+          "sawdust_flutter": {"x": 0, "y": 44, "width": 8, "height": 8},
+          "food_particles": {"x": 8, "y": 44, "width": 8, "height": 8},
+          "carnival_trash": {"x": 16, "y": 44, "width": 12, "height": 8},
+          "mystery_substance_particles": {"x": 28, "y": 44, "width": 8, "height": 8}
+        }
+      }
+    },
+    "animated_signage_states": {
+      "file": "animated_signage_states.png",
+      "dimensions": {"width": 512, "height": 256},
+      "signage_elements": {
+        "primary_sign_states": {
+          "shade_meat_4_clown_souls": {"x": 0, "y": 0, "width": 128, "height": 64},
+          "shady_dogs": {"x": 128, "y": 0, "width": 128, "height": 64},
+          "meat_roulette": {"x": 256, "y": 0, "width": 128, "height": 64},
+          "free_sample_not_legally_binding": {"x": 384, "y": 0, "width": 128, "height": 64}
+        },
+        "sign_infrastructure": {
+          "carnival_bulb_border_normal": {"x": 0, "y": 64, "width": 128, "height": 16},
+          "carnival_bulb_border_some_burned_out": {"x": 128, "y": 64, "width": 128, "height": 16},
+          "led_strip_zip_tied_hookah_hose": {"x": 256, "y": 64, "width": 64, "height": 16},
+          "electrical_sparking_points": {"x": 320, "y": 64, "width": 32, "height": 16}
+        },
+        "audio_cue_visualizations": {
+          "clown_honk_moment": {"x": 0, "y": 80, "width": 32, "height": 16},
+          "steam_hiss_timing": {"x": 32, "y": 80, "width": 32, "height": 16},
+          "electrical_buzzing": {"x": 64, "y": 80, "width": 24, "height": 16},
+          "mechanical_grinding": {"x": 88, "y": 80, "width": 24, "height": 16}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "carousel_rotisserie_spinning": {
+      "sprite_source": "chef_chuckles_mystery_cart_complete.png",
+      "sequence": [
+        {"frame": "rotation_frame_1", "duration": 0.125},
+        {"frame": "rotation_frame_2", "duration": 0.125},
+        {"frame": "rotation_frame_3", "duration": 0.125},
+        {"frame": "rotation_frame_4", "duration": 0.125},
+        {"frame": "rotation_frame_5", "duration": 0.125},
+        {"frame": "rotation_frame_6", "duration": 0.125},
+        {"frame": "rotation_frame_7", "duration": 0.125},
+        {"frame": "rotation_frame_8", "duration": 0.125}
+      ],
+      "loop": true,
+      "rotation_speed": "1_second_per_full_rotation_hypnotic_continuous",
+      "audio_sync": "carousel_rotisserie_spinning_mechanical_hum"
+    },
+    "chef_chuckles_butterfly_knife_work": {
+      "sprite_source": "chef_chuckles_character_animations.png",
+      "sequence": [
+        {"frame": "butterfly_knife_sausage_flipping_frame_1", "duration": 0.25, "audio": "knife_flip_1"},
+        {"frame": "butterfly_knife_sausage_flipping_frame_2", "duration": 0.25, "audio": "knife_flip_2"},
+        {"frame": "butterfly_knife_sausage_flipping_frame_3", "duration": 0.25, "audio": "knife_catch"},
+        {"frame": "butterfly_knife_sausage_flipping_frame_4", "duration": 0.25, "audio": "sausage_turn"},
+        {"frame": "butterfly_knife_sausage_flipping_frame_5", "duration": 0.25, "audio": "knife_flip_3"},
+        {"frame": "butterfly_knife_sausage_flipping_frame_6", "duration": 0.25, "audio": "knife_catch_final"}
+      ],
+      "loop": true,
+      "expert_timing": "fluid_motion_suggests_professional_performance_background"
+    },
+    "animated_sign_glitching": {
+      "sprite_source": "animated_signage_states.png",
+      "sequence": [
+        {"frame": "shade_meat_4_clown_souls", "duration": 45.0},
+        {"frame": "shady_dogs", "duration": 5.0},
+        {"frame": "meat_roulette", "duration": 5.0},
+        {"frame": "free_sample_not_legally_binding", "duration": 5.0}
+      ],
+      "loop": true,
+      "audio_timing": "clown_honk_steam_hiss_occurs_at_60_second_mark",
+      "glitch_pattern": "irregular_text_cycling_suggests_electrical_problems"
+    },
+    "violent_carnival_strobing": {
+      "sprite_source": "carnival_effects_particles.png",
+      "sequence": [
+        {"frame": "violent_strobe_red", "duration": 0.1},
+        {"frame": "violent_strobe_green", "duration": 0.2},
+        {"frame": "violent_strobe_purple", "duration": 0.1},
+        {"frame": "violent_strobe_red", "duration": 0.15},
+        {"frame": "violent_strobe_green", "duration": 0.1}
+      ],
+      "loop": true,
+      "accessibility_override": "can_be_completely_disabled_for_photosensitive_users",
+      "disorienting_purpose": "creates_carnival_chaos_atmosphere"
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC_optimized_for_carnival_lighting_effects",
+      "android": "ETC2_with_alpha_support_for_steam_particles",
+      "fallback": "PNG_high_quality_for_detailed_food_items"
+    },
+    "sprite_atlasing": {
+      "cart_and_character_atlas": "combines_pushcart_chef_chuckles_single_texture",
+      "food_items_atlas": "all_menu_items_combined_efficient_loading",
+      "effects_particles_atlas": "steam_lights_debris_single_atlas",
+      "max_atlas_size": "2048x2048_mobile_gpu_friendly"
+    },
+    "lod_scaling": {
+      "high_end_devices": "full_particle_effects_8_frame_rotisserie_animation",
+      "medium_devices": "reduced_particle_density_4_frame_rotisserie",
+      "low_end_devices": "static_steam_sprites_2_frame_rotisserie",
+      "potato_mode": "essential_sprites_only_no_particle_effects"
+    },
+    "memory_management": {
+      "streaming_strategy": "loads_menu_items_environmental_effects_on_demand",
+      "cache_management": "keeps_chef_chuckles_animations_in_memory",
+      "garbage_collection": "aggressive_cleanup_unused_particle_frames"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "high_contrast_alternatives": {
+      "menu_items_enhanced_contrast": {"x": 0, "y": 96, "width": 256, "height": 64},
+      "ui_elements_accessibility": {"x": 256, "y": 96, "width": 128, "height": 32},
+      "character_outline_emphasized": {"x": 384, "y": 96, "width": 64, "height": 96}
+    },
+    "motion_sensitivity_options": {
+      "static_rotisserie_alternative": {"x": 0, "y": 160, "width": 64, "height": 96},
+      "reduced_strobe_gentle_cycling": {"x": 64, "y": 160, "width": 128, "height": 32},
+      "minimal_particle_movement": {"x": 192, "y": 160, "width": 64, "height": 32}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_kebab_alley_restroom_01",
+  "sprite_sheets": {
+    "grease_shrine_restroom_complete": {
+      "file": "grease_shrine_restroom_complete.png",
+      "dimensions": {"width": 512, "height": 512},
+      "room_size": {"width": 128, "height": 128},
+      "elements": {
+        "grease_coated_walls": {
+          "normal_grease_coating": {"x": 0, "y": 0, "width": 128, "height": 128},
+          "oily_reflection_state": {"x": 128, "y": 0, "width": 128, "height": 128},
+          "player_movement_reflection": {"x": 256, "y": 0, "width": 128, "height": 128}
+        },
+        "toilet_area": {
+          "toilet_base": {"x": 0, "y": 128, "width": 32, "height": 48},
+          "receipt_toilet_paper_2004": {"x": 32, "y": 128, "width": 16, "height": 24},
+          "mr_chadz_receipt_detail": {"x": 48, "y": 128, "width": 32, "height": 16}
+        },
+        "sink_cursed_collection": {
+          "sink_basin": {"x": 0, "y": 176, "width": 48, "height": 32},
+          "cursed_coin": {"x": 48, "y": 176, "width": 8, "height": 8},
+          "half_chewed_antacid": {"x": 56, "y": 176, "width": 8, "height": 8},
+          "kebab_napkin_swan": {"x": 64, "y": 176, "width": 16, "height": 16}
+        },
+        "lighting_systems": {
+          "sickly_orange_shrine_light": {"x": 384, "y": 0, "width": 64, "height": 32},
+          "flickering_fluorescent": {"x": 384, "y": 32, "width": 32, "height": 64},
+          "meat_skewer_mount": {"x": 416, "y": 32, "width": 16, "height": 32},
+          "neon_kebab_pulse": {"x": 432, "y": 32, "width": 48, "height": 24}
+        }
+      }
+    },
+    "fisto_graffiti_system": {
+      "file": "fisto_graffiti_system.png",
+      "dimensions": {"width": 512, "height": 256},
+      "graffiti_elements": {
+        "main_fisto_graffiti": {
+          "puked_here_99_base": {"x": 0, "y": 0, "width": 128, "height": 64},
+          "came_back_like_mecca": {"x": 128, "y": 0, "width": 128, "height": 64},
+          "fisto_signature": {"x": 256, "y": 0, "width": 64, "height": 32}
+        },
+        "haiku_graffiti": {
+          "grease_beneath_feet": {"x": 0, "y": 64, "width": 96, "height": 16},
+          "secrets_marinate_heat": {"x": 96, "y": 64, "width": 96, "height": 16},
+          "i_pray_then_leak": {"x": 192, "y": 64, "width": 96, "height": 16}
+        },
+        "pixel_kebab_googly_eyes": {
+          "hungover_invisible": {"x": 0, "y": 80, "width": 32, "height": 32},
+          "hungover_visible_glow": {"x": 32, "y": 80, "width": 32, "height": 32},
+          "eyes_follow_frame_1": {"x": 64, "y": 80, "width": 32, "height": 32},
+          "eyes_follow_frame_2": {"x": 96, "y": 80, "width": 32, "height": 32}
+        },
+        "eldritch_meat_glyphs": {
+          "cryptic_qr_codes": {"x": 288, "y": 64, "width": 64, "height": 64},
+          "meat_glyph_1": {"x": 352, "y": 64, "width": 16, "height": 16},
+          "meat_glyph_2": {"x": 368, "y": 64, "width": 16, "height": 16},
+          "sheltie_paper_crown": {"x": 384, "y": 64, "width": 24, "height": 24}
+        }
+      }
+    },
+    "shrine_environmental_effects": {
+      "file": "shrine_environmental_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "effect_elements": {
+        "steam_particles": {
+          "fryer_vent_steam_1": {"x": 0, "y": 0, "width": 16, "height": 16},
+          "fryer_vent_steam_2": {"x": 16, "y": 0, "width": 16, "height": 16},
+          "fryer_vent_steam_3": {"x": 32, "y": 0, "width": 16, "height": 16},
+          "grease_vapor_heavy": {"x": 48, "y": 0, "width": 12, "height": 12}
+        },
+        "cumin_despair_fog": {
+          "fog_wisp_1": {"x": 0, "y": 20, "width": 20, "height": 20},
+          "fog_wisp_2": {"x": 20, "y": 20, "width": 20, "height": 20},
+          "fog_wisp_3": {"x": 40, "y": 20, "width": 20, "height": 20}
+        },
+        "chili_sauce_trail": {
+          "glowing_trail_segment": {"x": 0, "y": 40, "width": 8, "height": 8},
+          "trail_glow_pulse_1": {"x": 8, "y": 40, "width": 8, "height": 8},
+          "trail_glow_pulse_2": {"x": 16, "y": 40, "width": 8, "height": 8}
+        },
+        "grease_aura": {
+          "player_low_health_aura": {"x": 60, "y": 0, "width": 24, "height": 24},
+          "grease_shimmer_effect": {"x": 84, "y": 0, "width": 16, "height": 16}
+        }
+      }
+    },
+    "crawlspace_access_system": {
+      "file": "crawlspace_access_system.png",
+      "dimensions": {"width": 256, "height": 256},
+      "access_elements": {
+        "vinyl_tent_flap": {
+          "closed_normal": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "grease_stained": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "partially_open": {"x": 128, "y": 0, "width": 64, "height": 96}
+        },
+        "exterior_debris": {
+          "empty_skewer_boxes": {"x": 0, "y": 96, "width": 32, "height": 24},
+          "fly_buzzing_barrels": {"x": 32, "y": 96, "width": 24, "height": 32},
+          "pickle_barrel_flies": {"x": 56, "y": 96, "width": 8, "height": 8}
+        },
+        "signage": {
+          "not_toilet_unless_desperate": {"x": 0, "y": 128, "width": 96, "height": 24},
+          "hand_scrawled_text": {"x": 96, "y": 128, "width": 64, "height": 16}
+        },
+        "crawlspace_entrance": {
+          "3am_invisible": {"x": 0, "y": 152, "width": 48, "height": 24},
+          "3am_visible_glow": {"x": 48, "y": 152, "width": 48, "height": 24},
+          "player_crawling": {"x": 96, "y": 152, "width": 32, "height": 16}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "fluorescent_bulb_sway": {
+      "sprite_source": "grease_shrine_restroom_complete.png",
+      "sequence": [
+        {"frame": "flickering_fluorescent", "duration": 1.5},
+        {"frame": "meat_skewer_mount", "duration": 0.2},
+        {"frame": "flickering_fluorescent", "duration": 1.8}
+      ],
+      "loop": true,
+      "sway_pattern": "irregular_electrical_issues_atmospheric_lighting"
+    },
+    "pixel_kebab_eyes_follow": {
+      "sprite_source": "fisto_graffiti_system.png",
+      "sequence": [
+        {"frame": "eyes_follow_frame_1", "duration": 2.0},
+        {"frame": "eyes_follow_frame_2", "duration": 2.0}
+      ],
+      "loop": true,
+      "trigger": "only_when_player_hungover_status",
+      "unsettling_purpose": "food_surveillance_absurdist_humor"
+    },
+    "chili_sauce_trail_pulse": {
+      "sprite_source": "shrine_environmental_effects.png",
+      "sequence": [
+        {"frame": "glowing_trail_segment", "duration": 1.0},
+        {"frame": "trail_glow_pulse_1", "duration": 0.5},
+        {"frame": "trail_glow_pulse_2", "duration": 0.5}
+      ],
+      "loop": true,
+      "3am_only": "guides_player_hidden_entrance_discovery"
+    },
+    "grease_wall_reflections": {
+      "sprite_source": "grease_shrine_restroom_complete.png",
+      "sequence": [
+        {"frame": "normal_grease_coating", "duration": 3.0},
+        {"frame": "oily_reflection_state", "duration": 0.2},
+        {"frame": "player_movement_reflection", "duration": 0.3}
+      ],
+      "trigger": "player_movement_tracking",
+      "oily_shadows": "reflects_movement_like_protective_glaze"
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC_optimized_small_space_rendering",
+      "android": "ETC2_grease_reflection_effects",
+      "fallback": "PNG_high_quality_graffiti_readability"
+    },
+    "sprite_atlasing": {
+      "restroom_complete_atlas": "combines_walls_fixtures_lighting_single_texture",
+      "graffiti_system_atlas": "all_fisto_content_haiku_glyphs_combined",
+      "effects_particles_atlas": "steam_fog_trail_effects_efficient_loading",
+      "max_atlas_size": "1024x1024_mobile_gpu_friendly"
+    },
+    "lod_scaling": {
+      "high_end_devices": "full_grease_reflections_particle_effects",
+      "medium_devices": "simplified_reflections_reduced_particles",
+      "low_end_devices": "static_grease_coating_minimal_effects",
+      "potato_mode": "essential_graffiti_only_no_particle_systems"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "high_contrast_graffiti": {
+      "fisto_main_enhanced": {"x": 0, "y": 208, "width": 128, "height": 32},
+      "haiku_high_contrast": {"x": 128, "y": 208, "width": 96, "height": 32},
+      "meat_glyphs_emphasized": {"x": 224, "y": 208, "width": 64, "height": 32}
+    },
+    "visual_audio_cues": {
+      "receipt_crinkle_visual": {"x": 0, "y": 240, "width": 16, "height": 16},
+      "shrine_reverence_visual": {"x": 16, "y": 240, "width": 24, "height": 16},
+      "steam_hiss_indicator": {"x": 40, "y": 240, "width": 12, "height": 16}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "sprite_sheets": {
+    "shadow_exchange_underground_complete": {
+      "file": "shadow_exchange_underground_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "bazaar_size": {"width": 320, "height": 240},
+      "elements": {
+        "vaulted_stone_arches": {
+          "wine_cellar_arch_1": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "wine_cellar_arch_2": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "wine_cellar_arch_3": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "repurposed_market_stalls": {"x": 192, "y": 0, "width": 128, "height": 96}
+        },
+        "iron_lattice_dividers": {
+          "lattice_panel_1": {"x": 0, "y": 96, "width": 48, "height": 72},
+          "lattice_panel_2": {"x": 48, "y": 96, "width": 48, "height": 72},
+          "counterfeit_handbags_hung": {"x": 96, "y": 96, "width": 32, "height": 48},
+          "deactivated_security_tags": {"x": 128, "y": 96, "width": 16, "height": 24}
+        },
+        "wooden_counters_currency": {
+          "counter_scratched_glass": {"x": 320, "y": 0, "width": 96, "height": 48},
+          "currency_tray_coins": {"x": 320, "y": 48, "width": 24, "height": 16},
+          "currency_tray_cards": {"x": 344, "y": 48, "width": 24, "height": 16},
+          "currency_tray_chips": {"x": 368, "y": 48, "width": 24, "height": 16},
+          "currency_tray_tokens": {"x": 392, "y": 48, "width": 24, "height": 16}
+        },
+        "lighting_systems": {
+          "single_desk_lamp": {"x": 416, "y": 0, "width": 32, "height": 64},
+          "tealight_stairwell": {"x": 448, "y": 0, "width": 16, "height": 32},
+          "cigarette_burned_effect": {"x": 464, "y": 0, "width": 8, "height": 16}
+        }
+      }
+    },
+    "split_flap_rate_board_system": {
+      "file": "split_flap_rate_board_system.png",
+      "dimensions": {"width": 512, "height": 256},
+      "board_size": {"width": 128, "height": 64},
+      "elements": {
+        "rate_board_base": {
+          "board_frame": {"x": 0, "y": 0, "width": 128, "height": 64},
+          "split_flap_mechanism": {"x": 128, "y": 0, "width": 64, "height": 32},
+          "broker_mood_display": {"x": 192, "y": 0, "width": 48, "height": 16}
+        },
+        "split_flap_letters": {
+          "letter_A_to_M": {"x": 0, "y": 64, "width": 128, "height": 16},
+          "letter_N_to_Z": {"x": 128, "y": 64, "width": 128, "height": 16},
+          "numbers_0_to_9": {"x": 256, "y": 64, "width": 80, "height": 16},
+          "special_symbols": {"x": 336, "y": 64, "width": 32, "height": 16}
+        },
+        "rate_change_indicators": {
+          "green_tick_favorable": {"x": 0, "y": 80, "width": 16, "height": 16},
+          "red_tick_unfavorable": {"x": 16, "y": 80, "width": 16, "height": 16},
+          "neutral_rate_display": {"x": 32, "y": 80, "width": 16, "height": 16}
+        },
+        "mechanical_animation": {
+          "flap_flip_frame_1": {"x": 48, "y": 80, "width": 16, "height": 16},
+          "flap_flip_frame_2": {"x": 64, "y": 80, "width": 16, "height": 16},
+          "flap_flip_frame_3": {"x": 80, "y": 80, "width": 16, "height": 16},
+          "clacking_motion_blur": {"x": 96, "y": 80, "width": 16, "height": 16}
+        }
+      }
+    },
+    "crt_monitor_wall_markets": {
+      "file": "crt_monitor_wall_markets.png",
+      "dimensions": {"width": 512, "height": 384},
+      "monitor_size": {"width": 64, "height": 48},
+      "elements": {
+        "crt_monitors_array": {
+          "monitor_1_kebab_prices": {"x": 0, "y": 0, "width": 64, "height": 48},
+          "monitor_2_nightclub_covers": {"x": 64, "y": 0, "width": 64, "height": 48},
+          "monitor_3_meme_coins": {"x": 128, "y": 0, "width": 64, "height": 48},
+          "monitor_4_general_markets": {"x": 192, "y": 0, "width": 64, "height": 48}
+        },
+        "pixelized_data_display": {
+          "kebab_price_chart": {"x": 0, "y": 48, "width": 32, "height": 24},
+          "cover_charge_list": {"x": 32, "y": 48, "width": 32, "height": 24},
+          "meme_coin_candles": {"x": 64, "y": 48, "width": 32, "height": 24},
+          "market_ticker_scroll": {"x": 96, "y": 48, "width": 64, "height": 12}
+        },
+        "crt_screen_effects": {
+          "screen_flicker_normal": {"x": 0, "y": 72, "width": 64, "height": 48},
+          "screen_flicker_dim": {"x": 64, "y": 72, "width": 64, "height": 48},
+          "screen_refresh_lines": {"x": 128, "y": 72, "width": 64, "height": 48},
+          "authentic_crt_curve": {"x": 192, "y": 72, "width": 64, "height": 48}
+        }
+      }
+    },
+    "shadow_exchange_npcs": {
+      "file": "shadow_exchange_npcs.png",
+      "dimensions": {"width": 512, "height": 512},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "mrs_rata_main_clerk": {
+          "idle_professional": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "calculator_checking": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "paperwork_stamping": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "suspicious_glances": {"x": 192, "y": 0, "width": 64, "height": 96}
+        },
+        "the_uv_man": {
+          "idle_testing_position": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "uv_wand_scanning": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "counterfeit_detection": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "tool_sales_presentation": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "token_goblin": {
+          "arcade_token_sorting": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "transit_card_inspection": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "queue_skip_chip_sales": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "specialty_negotiations": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "cryptobro69_ex": {
+          "screaming_about_fees": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "couchsurf_invitation": {"x": 64, "y": 288, "width": 64, "height": 96},
+          "morning_scene_gone": {"x": 128, "y": 288, "width": 64, "height": 96},
+          "nft_minting_flashback": {"x": 192, "y": 288, "width": 64, "height": 96}
+        }
+      }
+    },
+    "atmospheric_npcs_types": {
+      "file": "atmospheric_npcs_types.png",
+      "dimensions": {"width": 512, "height": 256},
+      "npc_size": {"width": 32, "height": 48},
+      "elements": {
+        "rate_sharks_grey_coated": {
+          "nicotine_fingers_ledger": {"x": 0, "y": 0, "width": 32, "height": 48},
+          "immaculate_record_keeping": {"x": 32, "y": 0, "width": 32, "height": 48},
+          "professional_manipulation": {"x": 64, "y": 0, "width": 32, "height": 48}
+        },
+        "expat_flippers": {
+          "travel_card_trading": {"x": 96, "y": 0, "width": 32, "height": 48},
+          "concert_wristband_sales": {"x": 128, "y": 0, "width": 32, "height": 48},
+          "museum_ticket_resale": {"x": 160, "y": 0, "width": 32, "height": 48}
+        },
+        "counterfeit_connoisseurs": {
+          "uv_wand_sommelier": {"x": 192, "y": 0, "width": 32, "height": 48},
+          "bill_authentication_art": {"x": 224, "y": 0, "width": 32, "height": 48},
+          "currency_expertise": {"x": 256, "y": 0, "width": 32, "height": 48}
+        },
+        "influencer_resellers": {
+          "fake_vip_wristbands": {"x": 0, "y": 48, "width": 32, "height": 48},
+          "wednesday_mystery": {"x": 32, "y": 48, "width": 32, "height": 48},
+          "social_media_scamming": {"x": 64, "y": 48, "width": 32, "height": 48}
+        }
+      }
+    },
+    "underground_environmental_effects": {
+      "file": "underground_environmental_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "effect_elements": {
+        "blue_grey_smoke": {
+          "smoke_wisp_1": {"x": 0, "y": 0, "width": 20, "height": 20},
+          "smoke_wisp_2": {"x": 20, "y": 0, "width": 20, "height": 20},
+          "smoke_wisp_3": {"x": 40, "y": 0, "width": 20, "height": 20},
+          "atmospheric_haze": {"x": 60, "y": 0, "width": 32, "height": 24}
+        },
+        "photocopier_toner_dust": {
+          "toner_particle_1": {"x": 0, "y": 24, "width": 8, "height": 8},
+          "toner_particle_2": {"x": 8, "y": 24, "width": 8, "height": 8},
+          "office_equipment_dust": {"x": 16, "y": 24, "width": 12, "height": 8}
+        },
+        "uv_light_shimmer": {
+          "purple_glow_effect": {"x": 92, "y": 0, "width": 24, "height": 24},
+          "money_verification_shine": {"x": 116, "y": 0, "width": 16, "height": 16},
+          "counterfeit_detection_pulse": {"x": 132, "y": 0, "width": 20, "height": 20}
+        },
+        "cobblestone_entrance_effects": {
+          "hidden_step_normal": {"x": 0, "y": 32, "width": 32, "height": 16},
+          "hidden_step_triggered": {"x": 32, "y": 32, "width": 32, "height": 16},
+          "stairwell_revealed": {"x": 64, "y": 32, "width": 48, "height": 32},
+          "tealight_flicker": {"x": 112, "y": 32, "width": 8, "height": 8}
+        },
+        "verification_fee_warnings": {
+          "notoriety_low": {"x": 152, "y": 0, "width": 16, "height": 16},
+          "notoriety_medium": {"x": 168, "y": 0, "width": 16, "height": 16},
+          "notoriety_high": {"x": 184, "y": 0, "width": 16, "height": 16},
+          "fee_required_indicator": {"x": 200, "y": 0, "width": 24, "height": 16}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "split_flap_rate_updates": {
+      "sprite_source": "split_flap_rate_board_system.png",
+      "sequence": [
+        {"frame": "flap_flip_frame_1", "duration": 0.2, "audio": "mechanical_clack_1"},
+        {"frame": "flap_flip_frame_2", "duration": 0.1, "audio": "mechanical_clack_2"},
+        {"frame": "flap_flip_frame_3", "duration": 0.2, "audio": "mechanical_clack_3"},
+        {"frame": "clacking_motion_blur", "duration": 0.1}
+      ],
+      "loop": false,
+      "trigger_interval": "3_to_5_seconds_rate_changes",
+      "mini_game_integration": "green_red_tick_timing_affects_player_rates"
+    },
+    "crt_monitor_flicker": {
+      "sprite_source": "crt_monitor_wall_markets.png",
+      "sequence": [
+        {"frame": "screen_flicker_normal", "duration": 3.0},
+        {"frame": "screen_flicker_dim", "duration": 0.1},
+        {"frame": "screen_refresh_lines", "duration": 0.2},
+        {"frame": "authentic_crt_curve", "duration": 2.0}
+      ],
+      "loop": true,
+      "retro_authenticity": "creates_genuine_underground_technology_atmosphere"
+    },
+    "mrs_rata_calculator_obsession": {
+      "sprite_source": "shadow_exchange_npcs.png",
+      "sequence": [
+        {"frame": "idle_professional", "duration": 2.0},
+        {"frame": "calculator_checking", "duration": 1.0, "audio": "calculator_buttons"},
+        {"frame": "paperwork_stamping", "duration": 0.5, "audio": "official_stamp"},
+        {"frame": "suspicious_glances", "duration": 1.5}
+      ],
+      "loop": true,
+      "behavioral_pattern": "professional_financial_manipulation_tourist_exploitation"
+    },
+    "uv_man_scanning_procedure": {
+      "sprite_source": "shadow_exchange_npcs.png",
+      "sequence": [
+        {"frame": "idle_testing_position", "duration": 1.0},
+        {"frame": "uv_wand_scanning", "duration": 2.0, "audio": "uv_scanning_sound"},
+        {"frame": "counterfeit_detection", "duration": 1.0},
+        {"frame": "tool_sales_presentation", "duration": 2.0}
+      ],
+      "mini_game_integration": "timing_based_counterfeit_identification_system"
+    },
+    "cobblestone_entrance_discovery": {
+      "sprite_source": "underground_environmental_effects.png",
+      "sequence": [
+        {"frame": "hidden_step_normal", "duration": 5.0},
+        {"frame": "hidden_step_triggered", "duration": 0.5, "audio": "stone_mechanism"},
+        {"frame": "stairwell_revealed", "duration": 2.0, "audio": "underground_ambience"},
+        {"frame": "tealight_flicker", "duration": 1.0}
+      ],
+      "discovery_mechanic": "player_must_find_cash_only_candle_marker_trigger"
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC_optimized_underground_stone_textures",
+      "android": "ETC2_with_alpha_support_crt_glow_effects",
+      "fallback": "PNG_high_quality_split_flap_readability"
+    },
+    "sprite_atlasing": {
+      "underground_bazaar_atlas": "stone_arches_lattice_counters_lighting_combined",
+      "rate_board_system_atlas": "mechanical_elements_letters_indicators_efficient",
+      "npc_character_atlas": "all_vendor_characters_atmospheric_npcs_single_texture",
+      "max_atlas_size": "2048x2048_mobile_gpu_friendly"
+    },
+    "lod_scaling": {
+      "high_end_devices": "full_crt_effects_particle_systems_detailed_animations",
+      "medium_devices": "reduced_crt_flicker_simplified_smoke_effects",
+      "low_end_devices": "static_monitors_minimal_particles_basic_animations",
+      "potato_mode": "essential_elements_only_no_environmental_effects"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "high_contrast_alternatives": {
+      "rate_board_enhanced": {"x": 0, "y": 48, "width": 128, "height": 32},
+      "currency_display_emphasized": {"x": 128, "y": 48, "width": 96, "height": 32},
+      "uv_detection_visual_cues": {"x": 224, "y": 48, "width": 64, "height": 32}
+    },
+    "colorblind_accommodations": {
+      "green_red_tick_patterns": {"x": 288, "y": 48, "width": 32, "height": 16},
+      "money_verification_textures": {"x": 320, "y": 48, "width": 48, "height": 16},
+      "rate_change_symbols": {"x": 368, "y": 48, "width": 32, "height": 16}
+    },
+    "visual_audio_cues": {
+      "split_flap_clack_indicator": {"x": 400, "y": 48, "width": 16, "height": 16},
+      "cash_counter_visual": {"x": 416, "y": 48, "width": 24, "height": 16},
+      "verification_fee_warning": {"x": 440, "y": 48, "width": 32, "height": 16}
+    }
+  }
+}
+}

@@ -1,0 +1,1 @@
+ # Validate NPC JSON structure

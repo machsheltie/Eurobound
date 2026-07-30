@@ -4,7 +4,7 @@ The Premise
 Some men chase glory.
 Some men chase dreams.
 These three? They’re chasing one last blackout before their hairlines and livers finally give up.
-Meet Lord Pilsner, Chadwick, and Bradley — three aging frat relics who’ve decided that Europe (or as they call it, “EuroBouncin’”) is the perfect place to drink, flirt, and bad-decision their way into “legend” status.
+Meet Lord Pilsner, Chadwick, and Bradley — three aging frat relics who’ve decided that Euromemeia is the perfect place to drink, flirt, and bad-decision their way into “legend” status.
 They’ve got a mission: Sleep in questionable places, drink in questionable quantities, and experiment with everything a substance loving bro wishes to indulge in. Join them on their journey across Europe as they lurch through the continents' nightlife, seedy underbellies, and cultural hot spots. Each city hides both surface-level charm and a "behind the curtain" underworld of indulgence, vice, and questionable choices.
 In their minds, they’re still campus gods.
 In reality, they’re pushing 40 with beer bellies, outdated tech, and fashion choices that should be crimes in The Hague.
@@ -17,6 +17,7 @@ Players explore pixel-art overworlds, interact with quirky NPCs, and battle over
     • Petty roasts and sharp wit at every turn — think Richfield Bad Decisions Campaign, Got Soap?, Shepherdsville Satire, and Darkweb Dossier Project.
     • Comedy is both observational and escalating — the more they try to assert their “alpha male” energy, the more pathetic they look.
     • Villains riff on their host city’s cultural clichés and the trio’s ridiculous quest, e.g.:
-        ◦ In Prague, a Velvet Curtain Club boss who “upsells” them into buying fake VIP wristbands.
-        ◦ In Vienna, a baroque crime lord who manipulates them into performing embarrassing “courtly duties” for status.
+        ◦ In Debaucheryville, a Velvet Curtain Club boss who “upsells” them into buying fake VIP wristbands.
+        ◦ In Sinfonia, a baroque crime lord who manipulates them into performing embarrassing “courtly duties” for status.
+        ◦ In Publandia, a bar that’s a “fashion show” for the local fashionistas, and a “gigolo” who’s a “gigolo” for the local gigolos.
 The result: a JRPG where the satire isn’t just in the script — it’s baked into the mechanics, debuffs, and world interactions.

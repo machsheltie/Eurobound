@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://Assets/Godot/scripts/interactables/restrooms/arcade_restroom_unlock.gd" type="Script" id=1]
+
+[node name="ArcadeRestroomUnlock" type="Area2D"]
+script = ExtResource( 1 )
+collision_layer = 1
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = null
+
+[node name="UnlockPrompt" type="Label" parent="."]
+text = "Insert tokens to unlock"
+visible = false

@@ -1,6 +1,4 @@
 # Designer Persona
-
-_This is a placeholder for Designer Persona.md_
 # Meet Akira "Pixel" Yamamoto-Chen
 *Creative Director & Lead Designer | Former Naughty Dog Senior Designer | USC Games Graduate*
 
