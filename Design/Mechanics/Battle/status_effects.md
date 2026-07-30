@@ -62,6 +62,12 @@ NEGATIVE STATUS EFFECTS 💀
     • Duration: Rest at hotel or visit 3 different areas 
     • Source: Falling for obvious scams 
     • Description: "You might as well wear a sign that says 'ROB ME'" 
+"Port-O-Cologne"
+    • -3 Charm with all NPCs, vendors add a "smell tax" (+25% prices), romance dialogue locked, NPCs step away, fly particle effect follows you 
+    • Duration: Until paid shower at hostel or spa visit 
+    • Source: Being launched into the Bacchanus in a loaded port-o-potty (Bacchanus Beach Beatdown loss) 
+    • Special: Swimming in the Bacchanus to "rinse off" REFRESHES the duration 
+    • Description: "You smell like second place" 
 
 NEUTRAL/SITUATIONAL EFFECTS ⚖️
 "Food Poisoning"

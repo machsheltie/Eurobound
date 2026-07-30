@@ -2,32 +2,32 @@ DEBAUCHERYVILLE (Prague Parody)
 Theme: Neon Nights & Shady Delights - "It was cheaper at 3 a.m."
 
 STREETS & DISTRICTS
-Old Town Square
+1 Old Town Square
 Tourist Trap Central
     • Tourist-trap loot vendors scattered across cobblestones 
     • Living statue encounters (they come alive and attack) 
     • Street scammers running sleight-of-hand mini-games 
     • Pickpocket hotspot with NPC warnings posted 
-Clocktower Plaza
+2 Clocktower Plaza
 Puzzle Hub District
     • Time-based switches activated by the hour 
     • "Meet at midnight" quest threads originate here 
     • Atmospheric clock chimes affect NPC behavior 
     • Late-night rendezvous points for shady deals 
-Absinthe Arcade
+3 Absinthe Arcade
 Neon Entertainment Quarter
     • Flashing arcade machines lining the streets 
     • Mini-games: coin pusher, rigged claw machines 
     • "Sample" vendors offering stamina-draining absinthe 
     • Green neon lighting creates eerie atmosphere 
-Hostel Row
+4 Hostel Row
 Budget Accommodation District
     • Narrow streets lined with questionable hostels 
     • NPCs stumbling between establishments 
     • Bunk-bed confession opportunities 
     • Items scattered in wrong hallways and doorways 
 
-Kebab Alley
+5 Kebab Alley
 Underground Vice Corridor
 Wedged between the kebab stand, a knockoff vape stall, and a crypto ATM that only steals
 Oily cobblestones littered with skewer sticks, discarded wrappers, and napkins scribbled with confessions
@@ -36,6 +36,15 @@ Stray dogs loiter near puke puddles for warmth
 Pickpocket NPCs and stag do remnants stumble in from the Velvet Curtain Club
 NPC dealer “Slick Greg” sometimes appears, selling mystery tzatziki vials that randomly reroll your current status
 Accessible shortcut to the Velvet Curtain back entrance via clambering a greasy stack of milk crates
+
+6 The Bacchanus Riverfront
+Fake Beach Resort District
+The Bacchanus river ("40% water" per EU inspectors) and its embankment party strip
+    • The Bohemian Riviera: beach-bar strip charging seaside prices in a landlocked country
+    • Fauxst Beach: trucked-in sand, inflatable palm trees, space heaters, lifeguard tower over knee-deep water
+    • The Bacchanus Beach Beatdown filming site: pneumatic catapult row, port-o-potty queue, EMTV camera cranes
+    • All-night beach parties with college-age summer vacationers
+    • Launched port-o-potties occasionally wash back ashore as "monuments"
 
 BUILDINGS & ESTABLISHMENTS
 Hostel "Midnight Checkout"
@@ -62,7 +71,7 @@ Semi-Permanent Traveling Circus
     • Hamstradamus' prophecy tent (special appearances) 
     • Rigged carnival games with joke prizes 
     • Backroom ICQ hotspots with Darkweb Dossier character infiltrations 
-24-Hour Internet Café
+Cyberspace Karvana
 Underground Connection Point
     • Free Wi-Fi with scammer ICQ threads 
     • Optional sting operation sidequests 
@@ -71,9 +80,9 @@ Underground Connection Point
 
 SHOPS & VENDORS
 Street Vendors
-    • Absinthe Cart: SP restoration with confusion chance 
+    • The Boheamian Trap: SP restoration with confusion chance 
     • Late-Night Kebab Stand: HP+ but grease finger risk 
-    • Club Gear Stall: Earplugs (reduce confusion), glow sticks (+mood) 
+    • The Strobe Survival Kit: Earplugs (reduce confusion), glow sticks (+mood) 
 Specialty Shops
     • Threads & Treads: All-night equipment emporium
         ◦ Leather Jacket (+Defense, +Cool factor) 
@@ -86,13 +95,14 @@ Specialty Shops
         ◦ Platform Boots (+Height, +Intimidation in clubs) 
         ◦ Velvet Rope Clip (+Charm, shop discounts after boss victory) 
         ◦ Club Stamp Collection (Access to VIP areas) 
-    • Midnight Munchies General Store: Late-night survival essentials
+    • Late-night survival essentials
         ◦ Healing: Energy drinks, Greasy kebabs, Hair of the dog cocktails 
         ◦ Support: Caffeine pills (+Speed), Lucky club stamp (+Access) 
         ◦ Offensive: Pepper spray, Brass knuckles, Flash grenades 
         ◦ Utility: Club earplugs, Fake VIP wristbands, Emergency cab vouchers 
 Circus Vendors
-    • Prize Booth: Rigged games with joke rewards 
+    • The Participation Trophy
+          Prize Booth: Rigged games with joke rewards 
         ◦ Half-Smoked Cigar (useless item) 
         ◦ Used Glitter Hat (+Style, -Dignity) 
         ◦ Mystery Meat Corndog (+HP, +Nausea chance) 
