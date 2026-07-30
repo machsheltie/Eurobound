@@ -46,7 +46,7 @@ None. The Hamagotchi has no stats, no active ability, and no cooldown — it is 
 ### Source Quest
 - **Quest ID**: `debaucheryville_sidequest_bacchanus_beach_beatdown_01`
 - **Quest Name**: "The Bacchanus Beach Beatdown"
-- **Quest Giver**: Hamstradamus
+- **Quest Giver**: Petra the Production Assistant
 - **Location**: Fauxst Beach, The Bohemian Riviera
 
 ### Gates/Unlocks
