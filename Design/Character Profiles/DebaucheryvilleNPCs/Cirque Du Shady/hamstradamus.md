@@ -110,6 +110,10 @@ He tells the truth, loudly, in a costume, because that's the job and because som
 ### Callback Dialogue (Return Visits)
 > "BACK AGAIN. GOOD. THE FIRST PROPHECY IS NEVER THE LAST ONE. THAT IS HOW PROPHECIES WORK."
 
+### Bacchanus Beach Beatdown LOSS — Tent Callback (Profile-Proposed)
+*Not scripted in `bacchanusbeachbeatdown.md` — see Quest Integration below. If the losing bro next visits the prophecy tent, Hamstradamus delivers the invented cursed consolation prophecy:*
+> "HE WHO ENTERS THE BACCHANUS BEFORE HIS TIME SHALL NEVER GET THE BOOTH SEAT AGAIN, ONLY THE ONE BY THE BATHROOM. REPENT."
+
 ---
 
 ## 📅 Schedule & Location
@@ -211,8 +215,8 @@ His tent behavior and Prophecy Roulette offering stay consistent throughout the 
 - **Quest**: `debaucheryville_sidequest_bacchanus_beach_beatdown_01` — "The Bacchanus Beach Beatdown"
 - **Role**: Prize-Giver at the Fauxst Beach podium
 - **Trigger**: Player completes the Beatdown's trivia gauntlet and sudden-death round
-- **Outcome (WIN)**: Delivers the canon-locked prophecy verbatim — *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."* — then, pinning the badge, delivers *"The star chooses. The star has chosen. Wear it, champion, and know: by the year Y2K plus twenty-six, a hamster in a speedo will have told you the truth, and you will not have listened."* Hands over `item_trivia_champ_badge` and `item_summer_vacay_stein` in person.
-- **Outcome (LOSS)**: He does not hand over the consolation prize in person — `item_hamagotchi_consolation` is delivered separately, at the hostel door, by a Shady Productions runner. Before the losing bro is walked off the beach, however, Hamstradamus delivers a matching cursed consolation prophecy from the podium, at the same volume, unasked: *"HE WHO ENTERS THE BACCHANUS BEFORE HIS TIME SHALL NEVER GET THE BOOTH SEAT AGAIN, ONLY THE ONE BY THE BATHROOM. REPENT."*
+- **Outcome (WIN)**: Delivers the canon-locked prophecy verbatim — *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."* — then, pinning the badge, delivers *"The star chooses. The star has chosen. Wear it, champion, and know: by the year Y2K plus twenty-six, a hamster in a speedo will have told you the truth, and you will not have listened."* He leans in close, whiskers brushing the badge, and delivers a second, quieter *"REPENT."* — a separate delivery, not a repeat for pacing (`bacchanusbeachbeatdown.md:569-572`). Hands over `item_trivia_champ_badge` and `item_summer_vacay_stein` in person.
+- **Outcome (LOSS)**: He does not hand over the consolation prize in person and he is not present in the quest doc's Walk of Shame sequence — `bacchanusbeachbeatdown.md:588-627` cuts directly from the river exit to the town-walk heckles to `item_hamagotchi_consolation` being handed over at the hostel door by a Shady Productions runner, with no podium beat and no Hamstradamus appearance. *(Profile-proposed, not yet in the quest doc — no beach staging claimed)*: on the losing bro's next visit to the Cirque du Shady prophecy tent, Hamstradamus delivers a matching cursed consolation prophecy: *"HE WHO ENTERS THE BACCHANUS BEFORE HIS TIME SHALL NEVER GET THE BOOTH SEAT AGAIN, ONLY THE ONE BY THE BATHROOM. REPENT."* This is new content pending quest-doc adoption, not a scripted beach-podium beat.
 - **Disqualification branch**: No podium appearance at all — he is only glimpsed at a distance, visibly holding a Hamagotchi before visibly putting it back in the box. No prophecy is delivered.
 
 ### Quest Gate Function (If Applicable)
@@ -279,9 +283,9 @@ No specific regional accent — the voice's comedy is entirely about scale and r
 
 ## 📝 Development Notes
 
-- The WIN prophecy line is canon-locked and must ship verbatim: *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."* — spoken in English, full volume, not localized or subtitled through the Czech-parody pipeline
-- The pinning line — *"The star chooses. The star has chosen..."* — is also canon-locked verbatim; both lines originate in `bacchanusbeachbeatdown.md` and `trivia_champ_badge_item.md`
-- The LOSS consolation prophecy in this file is new content invented for this profile, matching the WIN line's register (mundane specific doom + "REPENT"); it does not contradict the quest doc, which is silent on what Hamstradamus says (if anything) during a standard LOSS — it only specifies that the Hamagotchi itself is handed over by a Shady Productions runner, not by him
+- The WIN prophecy line is canon-locked and must ship verbatim: *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."* plus the quiet second *"REPENT."* whisper — spoken in English, full volume, not localized or subtitled through the Czech-parody pipeline; sourced from `bacchanusbeachbeatdown.md` only (the onion-rings line does not appear in `trivia_champ_badge_item.md`)
+- The pinning line — *"The star chooses. The star has chosen..."* — is also canon-locked verbatim; it appears in both `bacchanusbeachbeatdown.md` and `trivia_champ_badge_item.md`
+- The LOSS consolation prophecy in this file is new content invented for this profile, matching the WIN line's register (mundane specific doom + "REPENT"). It is **not** staged at the Fauxst Beach podium or worked into the Walk of Shame — the quest doc (`bacchanusbeachbeatdown.md:588-627`) has no podium beat and no Hamstradamus presence in that branch, only the Shady Productions runner hand-off at the hostel door. This profile instead proposes the line as a prophecy-tent callback on the losing bro's next visit (see Dialogue and Quest Integration above); it is flagged there as profile-proposed and pending quest-doc adoption, not established canon
 - `badge_pin` and `speedo_strut` animation states are required per the quest doc's own development notes, along with his beach-appropriate speedo variant; the badge must land visibly crooked in the same animation that applies it
 - "MY SON" whisper trigger is sourced verbatim from `hamagotchi_consolation_item.md` and must fire only when the Hamagotchi is examined near him
 
