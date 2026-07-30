@@ -103,6 +103,11 @@
         {
           "effect": "trigger",
           "target": "janek_thrown_answer"
+        },
+        {
+          "effect": "branch",
+          "target": "DISQUALIFICATION -> disqualification_exit",
+          "value": "Chadwick/Path B only — can fire on any Phase 1 question via the 3rd GO LIVE activation (see mini_games.minigame_beatdown_trivia_gauntlet.path_b_go_live_mechanic), pre-empting the remainder of the gauntlet, janek_thrown_answer, and sudden_death entirely"
         }
       ]
     },
@@ -250,7 +255,7 @@
       "event_type": "dialogue_sequence",
       "trigger": {
         "type": "state_change",
-        "condition": "LOSS or DISQUALIFICATION outcome"
+        "condition": "LOSS outcome only — 3rd gauntlet strike (any path) or a Sudden Death buzzer loss. NOT the DISQUALIFICATION branch; see disqualification_exit for Chadwick's 3rd GO LIVE activation."
       },
       "duration_seconds": 90,
       "sequence": [
@@ -293,6 +298,67 @@
           "value": true
         }
       ]
+    },
+
+    {
+      "event_id": "disqualification_exit",
+      "display_name": "Disqualification (Path B / Chadwick GO LIVE Only)",
+      "event_type": "triggered",
+      "trigger": {
+        "type": "interaction",
+        "condition": "Chadwick's 3rd GO LIVE activation during minigame_beatdown_trivia_gauntlet (see mini_games.minigame_beatdown_trivia_gauntlet.path_b_go_live_mechanic.dq_on_third_use). Fires immediately, before the current question resolves — the gauntlet does not continue and Sudden Death is never reached."
+      },
+      "duration_seconds": 15,
+      "sequence": [
+        {
+          "phase": "oakleys_removed",
+          "duration_seconds": 3,
+          "description": "Jaxson takes the Oakleys off completely, sets them on the podium, and walks to the lever — the one scripted moment his professional cool visibly costs him something.",
+          "speaker": "debaucheryville_npc_jaxson_vane_01",
+          "dialogue": "House rules. No devices in the toilet.",
+          "animation": "oakleys_removal_dq"
+        },
+        {
+          "phase": "chadwick_protest",
+          "duration_seconds": 2,
+          "speaker": "chadwick",
+          "dialogue": "It's not a device, it's a PRESS CREDENTIAL —"
+        },
+        {
+          "phase": "lever_pull",
+          "duration_seconds": 3,
+          "speaker": "debaucheryville_npc_jaxson_vane_01",
+          "dialogue": "Unfortunately, bro.",
+          "animation": "lever_pull",
+          "audio": "thunk_hiss_splash"
+        },
+        {
+          "phase": "no_podium",
+          "duration_seconds": 5,
+          "description": "No prize podium. No Hamstradamus ceremony. Hamstradamus is visibly holding a Hamagotchi at a distance and visibly puts it back in the box — no interaction, no hand-off, no dialogue.",
+          "speaker": "debaucheryville_npc_hamstradamus_01",
+          "animation": null,
+          "note": "This is a glimpsed background beat only, not a triggered dialogue phase for Hamstradamus."
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "set_state",
+          "target": "port_o_cologne_active",
+          "value": true
+        },
+        {
+          "effect": "set_state",
+          "target": "beatdown_complete",
+          "value": true
+        },
+        {
+          "effect": "unlock",
+          "target": "night_party_zone",
+          "value": true
+        }
+      ],
+      "note": "Canon (bacchanusbeachbeatdown.md:225): status port_o_cologne ONLY. No item. No consolation prize. No Hamagotchi. Nothing. Do NOT grant item_hamagotchi_consolation on this branch — that item is reserved for the walk_of_shame (3-strikes LOSS) branch only. Chadwick's stream ends on the splash and the VOD auto-saves."
     },
 
     {
@@ -475,8 +541,61 @@
       "timer_seconds_per_question": 12,
       "timeout_result": "strike",
       "strikes_max": 3,
-      "fail_state": "3 strikes -> launch -> LOSS branch",
+      "fail_state": "3 strikes -> launch -> LOSS branch (walk_of_shame). Separately, Chadwick's 3rd GO LIVE activation -> immediate DISQUALIFICATION (disqualification_exit), independent of strike count.",
       "pass_state": "<=2 strikes after Q9 -> Phase 2 (minigame_beatdown_sudden_death)",
+      "path_b_go_live_mechanic": {
+        "display_name": "GO LIVE (Chadwick exclusive cheat)",
+        "availability": {
+          "condition": "selected_bro == chadwick",
+          "visible_button": "Only rendered/selectable when Chadwick is the selected bro; invisible for Lord Pilsner and Bradley paths"
+        },
+        "when_usable": "Available on any Phase 1 question. Disabled in Phase 2 (Sudden Death) — Jaxson personally unplugs the extension cord on camera, animated unplug, no commentary; button is not merely grayed out.",
+        "window_seconds": 6,
+        "effect": "Opens the ICQ chat overlay for the window duration. Chat returns a crowd-sourced answer.",
+        "reliability": 0.7,
+        "unreliable_result": {
+          "probability": 0.3,
+          "description": "Trolling. The trolling is confident (e.g. the chat unanimously answers 'BANANA' regardless of the actual question)."
+        },
+        "viewer_count_display": {
+          "value": 11,
+          "note": "Reads 11 at all times, in all conditions. Never moves. The '(9 bots)' tag appears only in the closing frame of each ICQ overlay, small, unremarked."
+        },
+        "uses_max": 3,
+        "suspicion_per_use": 1,
+        "suspicion_trigger": "Ticks on activation, not on outcome — a correct crowd-sourced answer costs exactly as much suspicion as 'BANANA.'",
+        "suspicion_meter_states": {
+          "tick_1": "Jaxson tilts the Oakleys down a quarter inch. Says nothing.",
+          "tick_2": "Lowers them to the tip of his nose. Still says nothing. Drinks from all three cans.",
+          "tick_3": "Takes them off completely, sets them on the podium, walks to the lever. Fires dq_on_third_use immediately."
+        },
+        "dq_on_third_use": {
+          "result": "immediate_disqualification",
+          "timing": "Fires the launch immediately on the third activation, before the current question resolves. The player never learns whether the third answer was right.",
+          "routes_to_event": "disqualification_exit",
+          "no_consolation": true,
+          "note": "No item. No consolation prize. No Hamagotchi. No prize podium. Distinct from the 3-strikes LOSS branch, which still awards item_hamagotchi_consolation."
+        },
+        "sample_icq_feed_q1": [
+          "*** you are now LIVE — 11 viewers ***",
+          "xXsn1perXx69: 12",
+          "dialup_deb: twelve. its always twelve",
+          "Tony420: say \"banana\" they LOVE that over there",
+          "hamsterhead99: 50!!! its 50 bro trust",
+          "xXsn1perXx69: bro why are you in a toilet",
+          "dialup_deb: 12",
+          "Tony420: BANANA",
+          "*** 11 viewers (9 bots) ***"
+        ],
+        "dialogue": {
+          "chadwick_pre_answer": "Chat, chat, chat — I need this. Nobody troll. I'm serious. This is my LIVELIHOOD.",
+          "chadwick_reads_chat_out_loud": "BANANA.",
+          "jaxson_reaction": "...Unfortunately, bro.",
+          "on_disqualification_jaxson": "House rules. No devices in the toilet.",
+          "chadwick_protest": "It's not a device, it's a PRESS CREDENTIAL —",
+          "jaxson_closing": "Unfortunately, bro."
+        }
+      },
       "sample_questions": [
         {
           "question_number": 1,
@@ -523,7 +642,8 @@
       ],
       "rewards": {
         "success": "Advance to minigame_beatdown_sudden_death",
-        "failure": "Launch -> walk_of_shame event -> item_hamagotchi_consolation + port_o_cologne status"
+        "failure_loss_3_strikes": "Launch -> walk_of_shame event -> item_hamagotchi_consolation + port_o_cologne status",
+        "failure_disqualification_go_live": "Immediate launch mid-question, Chadwick/Path B only, 3rd GO LIVE activation -> disqualification_exit event -> port_o_cologne status ONLY, no item, no podium"
       }
     },
     {
@@ -583,6 +703,7 @@
     "on_walk_of_shame": "They walked the length of the Bohemian Riviera in a language they could not speak, being told exactly what had happened to them, in detail, by children — and arrived at their hostel believing they had been applauded.",
     "on_prize_podium_win": "A hamster in a wizard hat and a beach-appropriate speedo pinned a plastic star to a man's chest, and told him the truth about his future in capital letters, and he did not hear a word of it, because the star was shiny and the crowd was loud and he was, at long last, being looked at.",
     "on_janek_thrown_answer": "Janek Sykora had not choked. Janek Sykora had briefly stopped participating, which is a different thing, and which is available to anyone who does not need the prize.",
+    "on_disqualification": "House rules. No devices in the toilet. Chadwick's stream ends on the splash and the VOD auto-saves.",
     "on_exit": "The catapult stays. It is never dismantled. Between filming days it is simply there, on a beach, roped off with hazard tape."
   }
 }

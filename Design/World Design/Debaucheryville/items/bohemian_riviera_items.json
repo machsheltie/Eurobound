@@ -141,8 +141,10 @@
     "purchasable_items": 2,
     "quest_reward_items": 3,
     "price_range": {"min": 9, "max": 14},
+    "total_price_purchasable": 23,
     "actual_value_total_purchasable": 3,
-    "markup_percentage": 733,
+    "markup_percentage": 667,
+    "markup_calculation_note": "(total_price_purchasable - actual_value_total_purchasable) / actual_value_total_purchasable * 100 = (23-3)/3*100 = ~667%",
     "currency_accepted": "gold (bar-strip pricing table also references euros/koruna in the location profile's economic integration section)"
   },
 
