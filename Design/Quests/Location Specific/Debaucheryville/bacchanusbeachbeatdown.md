@@ -220,7 +220,7 @@ Tony420: BANANA
 - **Janek Sýkora:** *watching the launch, mildly* "He was talking to his telephone the entire time. I assumed it was a medical thing."
 
 **Rewards (Path B):**
-- **WIN:** `item_trivia_champ_badge` + `item_summer_vacay_stein`, **+3 Bravado**, achievement **"Beach's Finest"**.
+- **WIN:** `item_trivia_champ_badge` (pinned permanently to Chadwick's sprite) + `item_summer_vacay_stein`, **+3 Bravado**, achievement **"Beach's Finest"**.
 - **LOSS (three strikes):** `item_hamagotchi_consolation` + status `port_o_cologne`, walk-of-shame scene.
 - **DISQUALIFICATION (three GO LIVE uses):** status `port_o_cologne`. **No item. No consolation. No podium.** Chadwick's stream ends on the splash and the VOD auto-saves.
 - **Unlocks:** Post-Credits Scene A (win) or B (loss/DQ).
@@ -282,7 +282,7 @@ Bradley's automatic wrong answer each round arrives pre-loaded with a fake stati
 - **Janek Sýkora:** *genuinely, kindly* "He has a good chest. Tell him I said the chest is good." *(Petra does not tell him. Bradley would never recover.)*
 
 **Rewards (Path C):**
-- **WIN:** `item_trivia_champ_badge` + `item_summer_vacay_stein`, **+3 Bravado**, achievement **"Beach's Finest"**.
+- **WIN:** `item_trivia_champ_badge` (pinned permanently to Bradley's sprite) + `item_summer_vacay_stein`, **+3 Bravado**, achievement **"Beach's Finest"**.
 - **LOSS:** `item_hamagotchi_consolation` + status `port_o_cologne`, walk-of-shame scene.
 - **Unlocks:** Post-Credits Scene A (win) or B (loss).
 
@@ -365,7 +365,11 @@ The two bros the player did *not* select answer automatically and are wrong auto
 | Parameter | Value |
 |-----------|-------|
 | **Questions** | 9, sequential, no skips |
-| **Strikes** | 3 — third strike fires the catapult immediately, mid-question if necessary |
+| **Contestants** | 4, concurrent: the selected bro, the two non-selected bros, and Janek Sýkora. All four face the **same 9 questions on one shared clock** — this is a single broadcast round, not four parallel runs. |
+| **Turn Structure** | Round-robin within each question. Jaxson reads the question once; the three bros answer in podium order (left → center → right) as a scripted stack of confidently wrong shouts; Janek answers last, briefly, without looking up. The player's answer window opens on the selected bro's turn and only on his turn. |
+| **Non-Selected Bros** | Fully scripted, zero player input, no on-screen strike counter. Their strikes accrue invisibly and are **hard-timed, not simulated** — the first non-selected bro strikes out at **Q4**, the second at **Q7** (mid-sentence). Their answers are never correct on any question, on any playthrough. |
+| **Janek** | Answers all 9 correctly **except one scripted thrown answer at ~Q6**, and **cannot be struck out** under any circumstance — he has no strike counter, no fail state, and no exit from the show before Phase 2. He is the wall, not an opponent who can be outlasted. |
+| **Strikes** | 3 — third strike fires the catapult immediately, mid-question if necessary. **Only the selected bro's strike counter is player-affected**; it is the only one displayed. |
 | **Language** | All questions delivered and displayed in Czech-parody. No subtitles. No translation toggle. |
 | **Decode Channels** | (1) **Cognates** in the on-screen text; (2) **Props** Jaxson physically holds up; (3) **Host gestures** — he points, mimes, and counts on his fingers without realizing he's helping; (4) **Crowd reaction** — the vacationers audibly react to how absurd a question is, which narrows the category |
 | **Answer Flow** | The selected bro shouts his confidently wrong answer first, unprompted, every round. THEN the player picks from four options. The bro's shout is always one of the four. |
@@ -414,6 +418,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **Correct Answer:** **Pět.** (Five deciliters — half a liter.)
 
+**On correct:** *The chant becomes a cheer. The bro raises both arms inside a portable toilet, which limits the gesture considerably.* **Bro:** "See, I let the crowd think they helped. That's leadership."
 **On incorrect:** *The chanting stops. The silence is worse. Somewhere in the crowd, one person says "he was told."*
 
 ---
@@ -433,6 +438,8 @@ The two bros the player did *not* select answer automatically and are wrong auto
 - **Bradley:** "There's no river. There's no river in this question. He's testing whether we'll invent a river."
 
 **Correct Answer:** **Bacchanus.**
+
+**On correct:** *Jaxson lowers the Oakleys a quarter inch — the only unscripted thing he does all episode. Then he puts them back.* **Jaxson Vane:** "...Huh." *The bro, of course, hears this as a compliment, and it is the closest thing to one he will get.*
 
 **Narrator:**
 > "The show had, at this point, told him the name of the river he was about to enter, shown him the toilet he would enter it in, and pointed at both. He answered 'the Danube.' The production had done everything it could."
@@ -518,6 +525,63 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **At the prize podium (WIN only):**
 > "A hamster in a wizard hat and a beach-appropriate speedo pinned a plastic star to a man's chest, and told him the truth about his future in capital letters, and he did not hear a word of it, because the star was shiny and the crowd was loud and he was, at long last, being looked at."
+
+---
+
+### The Prize Podium — WIN Branch
+
+*The buzzer duel is over. The crowd is louder than the production ever budgeted for. A folding card table is dragged onto the trucked-in sand and draped in a Shady Productions banner that has been folded so many times the logo has a crease through it. This is the prize podium.*
+
+**Jaxson Vane:** *Oakleys back on, three cans in one hand, reading off a card he has never once had to read* "Ladies and gentlemen. In twenty-two seasons. For the first time." *long pause* "Unfortunately, bro — you actually won."
+
+*A small door opens in the base of the podium. **HAMSTRADAMUS** emerges: a hamster, roughly the size of a hamster, in a pointed midnight-blue wizard hat with stars on it and a beach-appropriate speedo. He does not scurry. He **struts**, the full length of the card table, in profile, to a crowd that goes genuinely insane for him — he is, unambiguously, the most popular figure on this beach and always has been.*
+
+**Winning bro:** *whispering, awed, strapped to nothing anymore* "Boys. Boys. They brought out the hamster."
+
+**Bradley** *(or whichever bro is still damp on the shore)*: "That hamster is in better shape than me."
+
+*Hamstradamus stops at center table. He turns to face the winning bro. The crowd goes silent, because the crowd knows what happens next and the bros do not. His whiskers go still. The voice that comes out of him is enormous and does not fit him at all.*
+
+**Hamstradamus:**
+> "HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."
+
+*Nobody translates this. Nobody needs to. It was in English.*
+
+**Winning bro:** *nodding slowly, deeply moved, having processed none of it* "...Yeah. Yeah, I felt that."
+
+*Hamstradamus produces `item_trivia_champ_badge` from somewhere on his person that nobody in the crowd wants to think about, and stands on his back legs.*
+
+**Hamstradamus:**
+> "The star chooses. The star has chosen. Wear it, champion, and know: by the year Y2K plus twenty-six, a hamster in a speedo will have told you the truth, and you will not have listened."
+
+*He pins it to the winning bro's chest. It lands crooked. It will stay crooked. It is crooked in every frame of the rest of the game.*
+
+**Winning bro:** "I feel... powerful. Like the beach itself just deputized me."
+
+**Jaxson Vane:** *flat, to the crane camera* "And there it is. Twenty-two seasons of merch, gone."
+
+*He hands over `item_summer_vacay_stein`. The stein begins leaking immediately, onto the winning bro's shoe, from a seam that was never sealed in 2003. The winning bro raises it anyway.*
+
+**Winning bro:** "To the champion."
+
+*Nobody toasts back. The crowd is still applauding the hamster.*
+
+**Hamstradamus:** *leaning in close, whiskers brushing the badge, at a volume meant for one person*
+> "REPENT."
+
+**Winning bro:** *to his friends, glowing* "He said it TWICE. He said it twice, boys. That's a personal one."
+
+*Behind the podium, Janek Sýkora picks up his gym bag, shakes the winning bro's hand with real warmth, says something kind in Czech that nobody in the party understands or ever asks about, and walks off toward the boathouse. He is forty minutes late for practice. He does not look back at the podium once.*
+
+**Petra:** *into her headset, evenly* "Confirm one badge, one stein, out of inventory. Log it as a loss."
+
+**Narrator:**
+> "The prophecy was delivered in English, at full volume, twice, by a hamster in a wizard hat, and it was — as every one of Hamstradamus's prophecies has ever been — completely accurate. He would, in fact, never again pay full price for onion rings. He would also never once connect the two events."
+
+*[AWARDED: `item_trivia_champ_badge` — permanently pinned to the winning bro's sprite]*
+*[AWARDED: `item_summer_vacay_stein`]*
+*[+3 Bravado]*
+*[ACHIEVEMENT UNLOCKED: "Beach's Finest"]*
 
 ---
 
@@ -1004,6 +1068,6 @@ All three lean back at once, as though impressed.
 - **Petra must never lie, in any line, in any branch, including barks.** If a writer needs her to withhold something for pacing, the correct solve is that a bro talks over her, not that she omits it.
 - Janek's crew-team wave in `minigame_beatdown_sudden_death` needs the **oar audio cue mixed above crowd noise** — this is the only skill tell in the entire quest and it is audio-only by design. Test on phone speakers, not headphones.
 - **Prize-podium sequence requires Hamstradamus's `badge_pin` and `speedo_strut` animation states** and his beach-appropriate speedo variant. The badge must land visibly crooked in the same animation that applies it.
-- The **WIN prophecy line is canon-locked** and must be delivered verbatim: *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."*
+- The **WIN prophecy line is canon-locked.** It is delivered as spoken dialogue in *The Prize Podium — WIN Branch* and must ship verbatim: *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."* It is spoken **in English**, at full volume, by a hamster — do not localize it, subtitle it, or route it through the Czech-parody pipeline. The second, quieter *"REPENT."* is a separate delivery and must not be cut for pacing; it is the button on the beat.
 - The airing episode on bar TVs needs a **short looping CRT-filtered edit** (~20s) with the HOSTÉ lower third — reused across every bar on the strip, not per-venue.
 - **Testing priority:** the sudden-death window is the only genuine skill gate in the quest and it is the difference between two entirely different post-credits scenes. Tune the 1.5s window on mid-range mobile hardware with touch latency included, not on desktop.
