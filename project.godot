@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 DataRepo="*res://Scripts/core/data_repo.gd"
+GameState="*res://Scripts/systems/GameState.gd"
 
 [rendering]
 
