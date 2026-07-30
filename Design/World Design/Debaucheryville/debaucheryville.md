@@ -71,7 +71,7 @@ Semi-Permanent Traveling Circus
     • Hamstradamus' prophecy tent (special appearances) 
     • Rigged carnival games with joke prizes 
     • Backroom ICQ hotspots with Darkweb Dossier character infiltrations 
-Cyberspace Karvana
+Cyberspace Kavarna
 Underground Connection Point
     • Free Wi-Fi with scammer ICQ threads 
     • Optional sting operation sidequests 
@@ -95,7 +95,7 @@ Specialty Shops
         ◦ Platform Boots (+Height, +Intimidation in clubs) 
         ◦ Velvet Rope Clip (+Charm, shop discounts after boss victory) 
         ◦ Club Stamp Collection (Access to VIP areas) 
-    • Late-night survival essentials
+    • Midnight Munchies General Store: Late-night survival essentials
         ◦ Healing: Energy drinks, Greasy kebabs, Hair of the dog cocktails 
         ◦ Support: Caffeine pills (+Speed), Lucky club stamp (+Access) 
         ◦ Offensive: Pepper spray, Brass knuckles, Flash grenades 
