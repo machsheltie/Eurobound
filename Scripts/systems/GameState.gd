@@ -13,7 +13,7 @@ var player_position: Vector2 = Vector2.ZERO
 func new_game(repo) -> void:
 	party = []
 	inventory = {}
-	gold = 0
+	gold = 20
 	flags = {}
 	current_scene_path = "res://Scenes/worlds/Debaucheryville/ClocktowerPlaza.tscn"
 	player_position = Vector2.ZERO

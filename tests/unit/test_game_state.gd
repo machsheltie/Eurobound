@@ -36,7 +36,7 @@ func test_flags() -> void:
 func test_grant_rewards() -> void:
 	state.grant_rewards(12, 8, "lukewarm_kebab")
 	assert_eq(int(state.party[0]["xp"]), 12)
-	assert_eq(state.gold, 8)
+	assert_eq(state.gold, 28)
 	assert_eq(int(state.inventory.get("lukewarm_kebab", 0)), 1)
 
 func test_round_trip() -> void:
