@@ -6,7 +6,7 @@
 **Zone:** Circus Grounds, edge of Old Town
 **Hours:** 14:00–01:00 daily; Beatdown filming days shift traffic toward the riverside gear path (see parent profile's Time-of-Day Variations)
 
-**Scope note:** This document specs only the assets new to this parent-grounds document — the gate, big top exterior, Vance's tent, the Shady Productions office, the knife-throwing act, game alley, and ICQ backroom. The prize booth, mystery meat cart, prophecy tent, and Bobo's performance spot keep their own already-published PNG asset docs (`Mystery_Meat_Cart_Complete_PNG_Asset_Requirements.md` and equivalents); this document does not duplicate or re-spec those files' assets.
+**Scope note:** This document specs only the assets new to this parent-grounds document — the gate, big top exterior, Vance's tent, the Shady Productions office, the knife-throwing act, game alley, and ICQ backroom. The prize booth and mystery meat cart keep their own already-published PNG asset docs (`Mystery_Meat_Cart_Complete_PNG_Asset_Requirements.md` and equivalents); this document does not duplicate or re-spec those files' assets. The prophecy tent's own performer — Hamstradamus — is not covered by a separate PNG asset doc; his sprite sheets (`hamstradamus.png`, `hamstradamus_tent_variant.png`, `hamstradamus_beach_variant.png`) are specced in `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md`, which owns his animation states. Bobo's performance spot sprites remain owned by his own profile's implementation pass, per Sprite Sheet 6's Technical Notes below.
 
 ---
 
@@ -338,7 +338,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 - Vape-cloud particle density is reducible on mobile (ambient drift can drop to 2-frame loop under LOD pressure)
 - Grounds crowd (shared with sub-locations' own crowd assets) LOD-steps down aggressively past `game_alley` mid-ground, consistent with the pattern already established in `Bohemian_Riviera_PNG_Assets.md`
 - Casting-flyer texture is built once and instanced at both the corkboard and the fax machine, halving that asset's memory footprint
-- This document intentionally excludes the prize booth, mystery meat cart, prophecy tent, and Bobo's performance sprites — those remain owned by their own already-published PNG asset docs and must not be re-exported here
+- This document intentionally excludes the prize booth and mystery meat cart sprites — those remain owned by their own already-published PNG asset docs and must not be re-exported here. It likewise excludes Hamstradamus's prophecy-tent performer sprites (owned by `hamstradamus.md`, not a PNG asset doc) and Bobo's performance sprites (owned by his own profile's implementation pass)
 
 ---
 

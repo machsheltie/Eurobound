@@ -42,14 +42,18 @@
     "atmospheric_debuffs": ["port_o_cologne"],
     "location_specific_states": {
       "port_o_cologne": {
-        "trigger": "catapult_launch_and_wade_ashore, applied on contact with the shore",
-        "duration_minutes": 30,
+        "canonical_ref": "Design/Mechanics/Battle/status_effects.md#Port-O-Cologne",
+        "trigger": "catapult_launch_and_wade_ashore, applied on contact with the shore (launched_into_bacchanus_in_a_loaded_port_o_potty)",
+        "duration": "until_paid_shower_or_spa",
         "effects": {
-          "charm_modifier": -2,
+          "charm_modifier": -3,
+          "vendor_price_multiplier": 1.25,
+          "romance_locked": true,
           "npc_reaction": "locals and vendors keep a polite distance"
         },
+        "special": "bacchanus_swim_refreshes",
         "visual_indicator": "fly_swarm_particle_trail",
-        "description": "A fly swarm trails any party member who has been launched into The Bacchanus and waded ashore."
+        "description": "A fly swarm trails any party member who has been launched into The Bacchanus and waded ashore. \"You smell like second place.\""
       }
     },
     "recovery_options": ["zdenka_riverbank_shower_cart_50kc_or_40kc_if_immediate"]

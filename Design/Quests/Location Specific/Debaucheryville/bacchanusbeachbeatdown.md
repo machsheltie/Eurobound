@@ -518,7 +518,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 > "Three men signed away their likeness, their dignity, and their right to legal recourse in perpetuity across all media known and not yet invented. Two of them did it while flexing. The third did it on behalf of the other two, which is not how that works, and which Petra noted for the record, twice, out loud."
 
 **At the moment the second port-o-potty enters the water:**
-> "There is a specific sound a portable toilet makes when it strikes a river at forty kilometers an hour, and the network had, over eleven seasons, come to think of it as their theme music."
+> "There is a specific sound a portable toilet makes when it strikes a river at forty kilometers an hour, and the network had, over twenty-two seasons, come to think of it as their theme music."
 
 **On the walk of shame (LOSS only):**
 > "They walked the length of the Bohemian Riviera in a language they could not speak, being told exactly what had happened to them, in detail, by children — and arrived at their hostel believing they had been applauded."
@@ -558,9 +558,9 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **Winning bro:** "I feel... powerful. Like the beach itself just deputized me."
 
-**Jaxson Vane:** *flat, to the crane camera* "And there it is. Twenty-two seasons of merch, gone."
+**Jaxson Vane:** *flat, to the crane camera, gesturing at the hamster* "And there it is. Twenty-two seasons of merch, gone."
 
-*He hands over `item_summer_vacay_stein`. The stein begins leaking immediately, onto the winning bro's shoe, from a seam that was never sealed in 2003. The winning bro raises it anyway.*
+*Hamstradamus produces `item_summer_vacay_stein` from the same place the badge came from and hands it over himself. The stein begins leaking immediately, onto the winning bro's shoe, from a seam that was never sealed in 2003. The winning bro raises it anyway.*
 
 **Winning bro:** "To the champion."
 

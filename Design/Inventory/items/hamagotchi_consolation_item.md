@@ -8,7 +8,7 @@
 - **Internal Name**: Waterlogged Knockoff Tamagotchi, Hamstradamus-Branded, Same 2003 Pallet
 - **Item Type**: Junk / Key Item (Non-Removable Curiosity)
 - **Rarity**: Common (bros think it's Priceless)
-- **Source**: Hamstradamus @ Fauxst Beach prize podium — lose The Bacchanus Beach Beatdown, take second place
+- **Source**: Delivered off-site, at the hostel door, by an unnamed Shady Productions runner — after the walk of shame, at the end of The Bacchanus Beach Beatdown LOSS branch. Not handed over by Hamstradamus, and not delivered at the Fauxst Beach prize podium.
 
 ---
 

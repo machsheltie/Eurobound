@@ -246,7 +246,8 @@
           "target": "bros_launched_count",
           "value": 1
         }
-      ]
+      ],
+      "note": "Scope per status_effects.md's Port-O-Cologne source wording ('launched into the Bacchanus in a loaded port-o-potty'): ANY bro who goes through this event — selected-bro 3-strike loss, a non-selected bro's staggered Q4/Q7 launch, or a Sudden Death loss — gets port_o_cologne_active. The winning bro is never launched, so there is no overlap or conflict between this generic event and the WIN-branch prize podium."
     },
 
     {
@@ -699,10 +700,10 @@
     "on_entering": "A landlocked country's beach resort, built entirely out of confidence and trucked-in sand.",
     "on_key_moment": "The sentence was never finished. It was, however, finished for him, by physics, which had been waiting patiently for its turn to speak.",
     "on_signing_forms": "Three men signed away their likeness, their dignity, and their right to legal recourse in perpetuity across all media known and not yet invented. Two of them did it while flexing. The third did it on behalf of the other two, which is not how that works, and which Petra noted for the record, twice, out loud.",
-    "on_second_port_o_potty_impact": "There is a specific sound a portable toilet makes when it strikes a river at forty kilometers an hour, and the network had, over eleven seasons, come to think of it as their theme music.",
+    "on_second_port_o_potty_impact": "There is a specific sound a portable toilet makes when it strikes a river at forty kilometers an hour, and the network had, over twenty-two seasons, come to think of it as their theme music.",
     "on_walk_of_shame": "They walked the length of the Bohemian Riviera in a language they could not speak, being told exactly what had happened to them, in detail, by children — and arrived at their hostel believing they had been applauded.",
     "on_prize_podium_win": "A hamster in a wizard hat and a beach-appropriate speedo pinned a plastic star to a man's chest, and told him the truth about his future in capital letters, and he did not hear a word of it, because the star was shiny and the crowd was loud and he was, at long last, being looked at.",
-    "on_janek_thrown_answer": "Janek Sykora had not choked. Janek Sykora had briefly stopped participating, which is a different thing, and which is available to anyone who does not need the prize.",
+    "on_janek_thrown_answer": "Janek Sýkora had not choked. Janek Sýkora had briefly stopped participating, which is a different thing, and which is available to anyone who does not need the prize.",
     "on_disqualification": "House rules. No devices in the toilet. Chadwick's stream ends on the splash and the VOD auto-saves.",
     "on_exit": "The catapult stays. It is never dismantled. Between filming days it is simply there, on a beach, roped off with hazard tape."
   }

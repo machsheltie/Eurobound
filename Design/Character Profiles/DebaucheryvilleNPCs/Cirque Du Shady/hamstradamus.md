@@ -207,6 +207,13 @@ His tent behavior and Prophecy Roulette offering stay consistent throughout the 
 | Beach (wizard hat + speedo) | Fauxst Beach appearances on Beatdown filming days only |
 | Startled (post-trip) | Immediately following crystal_ball_trip, before returning to idle |
 
+### Sprite Sheets
+| File | Dimensions | Poses / Frames | Notes |
+|------|-----------|-----------------|-------|
+| `hamstradamus.png` | 128x128 | Default turban bust (1 frame) + whisker-twitch (2-frame idle variant) | Base/default portrait icon — dialogue-box portrait, ICQ pop-up icon, and any other context needing a static Hamstradamus image outside a full pose sheet. Turban look. |
+| `hamstradamus_tent_variant.png` | 384x288 | dance_loop (4-frame Hamster Dance waddle-shuffle), turban_adjust (2-frame fidget), crystal_ball_polish (2-frame idle polish), whisker_twitch (2-frame ambient), prophecy_trance (whiskers-still windup), crystal_ball_trip (4-frame pratfall into startled squeak) | Tent-interior pose set, turban look, at the Cirque du Shady prophecy tent. Referenced by `cirque_du_shady_npcs.json`'s `sprite_sheet` field for his Cirque residency. |
+| `hamstradamus_beach_variant.png` | 384x288 | Speedo Strut (4-frame), Badge Pin, Prophecy Trance | Fauxst Beach appearance (wizard hat + speedo), Beatdown filming days only. Full pose spec already owned by `Bohemian_Riviera_PNG_Assets.md` Sprite Sheet 5 — cross-referenced here, not re-specced. |
+
 ---
 
 ## 🎯 Quest Integration

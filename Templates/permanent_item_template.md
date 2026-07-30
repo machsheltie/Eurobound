@@ -18,7 +18,7 @@ matching exactly.
 -->
 
 ## 📋 Item Identity
-- **Item ID**: `item_[city]_[item_name_snake_case]`
+- **Item ID**: `item_[item_name_snake_case]`
 - **Display Name**: [Item Name]
 - **Internal Name**: [What the item actually is, in plain terms]
 - **Item Type**: [Permanent Cosmetic / Hybrid / Curse Item / Quest Item]
