@@ -14,6 +14,10 @@ config/name="Eurobound"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DataRepo="*res://Scripts/core/data_repo.gd"
+
 [rendering]
 
 renderer/rendering_method="mobile"
