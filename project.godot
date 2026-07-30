@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 DataRepo="*res://Scripts/core/data_repo.gd"
 GameState="*res://Scripts/systems/GameState.gd"
 SaveSystem="*res://Scripts/core/save_system.gd"
+InputSetup="*res://Scripts/core/input_manager.gd"
+SceneRouter="*res://Scripts/core/scene_router.gd"
 
 [rendering]
 
