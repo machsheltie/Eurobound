@@ -17,6 +17,8 @@
 | Canvas Cream | #F5F0DC | Tent canvas base tone, folding-table cloth |
 | Neon Marquee | #FF6EC7 | Main gate marquee, night signage glow |
 | Vape-Cloud Gray | #C0C0C8 | Vance's vape particle effects, ICQ monitor glow |
+| Prophecy Purple | #6A0DAD | Prophecy Tent Glow (base pulse tone) |
+| Prophecy Gold | #D4AF37 | Prophecy Tent Glow (crystal-ball highlight, ties to Hamstradamus's turban/crystal-ball dressing per `hamstradamus.md`) |
 
 ---
 
@@ -44,7 +46,8 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 ├── effects/
 │   ├── vape_cloud_particles.png
 │   ├── marquee_flicker.png
-│   └── fax_paper_spit.png
+│   ├── fax_paper_spit.png
+│   └── prophecy_tent_glow.png
 └── ui/
     └── knife_dodge_prompt_ui.png
 ```
@@ -225,7 +228,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 ---
 
 ## ✨ Sprite Sheet 8: Environmental Effects & UI
-**Files:** `vape_cloud_particles.png`, `marquee_flicker.png`, `fax_paper_spit.png`, `icq_terminal.png`, `knife_dodge_prompt_ui.png`
+**Files:** `vape_cloud_particles.png`, `marquee_flicker.png`, `fax_paper_spit.png`, `prophecy_tent_glow.png`, `icq_terminal.png`, `knife_dodge_prompt_ui.png`
 
 ### File Dimensions:
 | File | Dimensions |
@@ -233,6 +236,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | vape_cloud_particles.png | 128x128 |
 | marquee_flicker.png | 256x128 |
 | fax_paper_spit.png | 96x96 |
+| prophecy_tent_glow.png | 192x192 |
 | icq_terminal.png | 192x192 |
 | knife_dodge_prompt_ui.png | 256x128 |
 
@@ -253,6 +257,13 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 |---------|----------|------|-------------|
 | Paper Feed, 3-Frame Cycle | (0, 0) | 96x96 | Synced to the fax-machine chug audio cue |
 
+### Prophecy Tent Glow (`prophecy_tent_glow.png`):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Seam Glow, Idle Pulse (4-frame loop) | (0, 0) | 96x96 | Slow purple-gold pulse bleeding through the `prophecy_tent` canvas seams, Prophecy Purple base with Prophecy Gold highlight |
+| Seam Glow, Prophecy-In-Progress (4-frame loop, brighter/faster) | (96, 0) | 96x96 | Intensified variant — triggers on any Prophecy Roulette delivery or in-battle doom prediction, per the `prophecy_trance` cue already defined in `hamstradamus.md` |
+| Seam Glow, Overlay Mask | (0, 96) | 96x96 | Alpha mask used to composite the glow through the existing `prophecy_tent` canvas art without a separate tent re-render |
+
 ### ICQ Terminal (`icq_terminal.png`):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
@@ -268,6 +279,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 ### Technical Notes:
 - Marquee flicker interval should be random, not metronomic, to avoid reading as a bug rather than a joke
 - ICQ terminal's hack-through state is the visual trigger for the ambient Darkweb Dossier pop-in event referenced in the parent profile's Time-of-Day Variations
+- Prophecy Tent Glow is a `prophecy_tent` zone-exterior effect only — it dresses the tent from outside the canvas; it does not modify or duplicate any of Hamstradamus's own interior/performer animation states (`prophecy_trance`, `crystal_ball_trip`, etc.), which remain fully owned by `hamstradamus.md`
 
 ---
 
@@ -284,6 +296,12 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 - **Frames:** 4
 - **Loop:** Yes, night-only
 - **Timing:** Randomized, not metronomic
+
+### Prophecy Tent Glow:
+- **Duration:** ~4 seconds per pulse cycle (idle state); ~1.5 seconds per pulse cycle (prophecy-in-progress state)
+- **Frames:** 4 (idle loop) / 4 (intensified loop)
+- **Loop:** Yes, both states loop continuously; state swap is instant, not crossfaded
+- **Timing:** Idle — slow purple-gold pulse, 1fps effective cadence, seam-only bleed-through; Prophecy-In-Progress — brighter and roughly 2.5x faster, triggered by the same event window as Hamstradamus's own `prophecy_trance` animation (`hamstradamus.md`) so the tent's exterior glow and his interior performance read as one beat from outside the canvas
 
 ### Fax Machine Paper Spit:
 - **Duration:** ~1 second
@@ -314,7 +332,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | Cirque Grounds Object Atlas | ticket_booth, corkboard_flyers, fax_machine_and_flyers, prize_pallet_2003_office, knife_target_board, icq_terminal | 2048x2048 |
 | Cirque Grounds Circle Atlas | game_alley_rig, shady_productions_office, performance_circle_ground | 2048x2048 |
 | Cirque Grounds NPC Atlas | vance_vallaro, blanka_knife_assistant | 1024x1024 |
-| Cirque Grounds Effects/UI Atlas | vape_cloud_particles, marquee_flicker, fax_paper_spit, knife_dodge_prompt_ui | 1024x1024 |
+| Cirque Grounds Effects/UI Atlas | vape_cloud_particles, marquee_flicker, fax_paper_spit, prophecy_tent_glow, knife_dodge_prompt_ui | 1024x1024 |
 
 ### Performance Notes:
 - Vape-cloud particle density is reducible on mobile (ambient drift can drop to 2-frame loop under LOD pressure)
@@ -324,7 +342,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 
 ---
 
-## 📋 Required PNG Files (19 Total)
+## 📋 Required PNG Files (20 Total)
 
 | # | Filename | Dimensions |
 |---|----------|------------|
@@ -345,10 +363,11 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | 15 | vape_cloud_particles.png | 128x128 |
 | 16 | marquee_flicker.png | 256x128 |
 | 17 | fax_paper_spit.png | 96x96 |
-| 18 | icq_terminal.png | 192x192 |
-| 19 | knife_dodge_prompt_ui.png | 256x128 |
+| 18 | prophecy_tent_glow.png | 192x192 |
+| 19 | icq_terminal.png | 192x192 |
+| 20 | knife_dodge_prompt_ui.png | 256x128 |
 
-**Total Estimated Memory:** ~38MB
+**Total Estimated Memory:** ~39MB
 
 ---
 

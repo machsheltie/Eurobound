@@ -120,7 +120,7 @@
 - **Color Palette**: Faded Big-Top Red `#B22222`, Canvas Cream `#F5F0DC`, Neon Marquee `#FF6EC7`, Vape-Cloud Gray `#C0C0C8`
 - **Lighting Setup**: Afternoon — flat, dusty daylight filtered through canvas seams; Night — the neon marquee over the main gate and scattered string bulbs along `game_alley`, everything else lit by whatever spills from tent flaps
 - **Particle Systems**: Vape cloud drift (Vance's tent, ambient and dialogue-triggered), calliope-adjacent dust motes, fax-machine paper-feed flutter, distant hay/dust from the big top interior
-- **Animation Elements**: Marquee flicker (main gate), Vance's vape-cloud speech FX, Hamstradamus's tent glow (see `hamstradamus.md` for his own animation states, not restated here), fax machine paper-spit cycle
+- **Animation Elements**: Marquee flicker (main gate), Vance's vape-cloud speech FX, Prophecy Tent Glow (purple-gold pulse through the tent seams, full spec in `Cirque_du_Shady_PNG_Assets.md` — Hamstradamus's own performer animation states remain in `hamstradamus.md` and are not restated here), fax machine paper-spit cycle
 - **Mobile Optimization**: Grounds crowd rendered as simplified sprites at distance, full detail near active attractions; vape-cloud particle density reducible; each stitched sub-location keeps the mobile-optimization notes already specified in its own file
 
 ---
@@ -170,7 +170,7 @@
 
 ### Interactive Elements by Zone
 - **`main_gate`**: Ticket booth transaction, corkboard flyer examine points (Bubbles poster, Shady Productions casting flyer)
-- **`big_top`**: Exterior examine only in this document; Vance's tent hosts his loot-crate sale dialogue; the ICQ backroom flap leads to `icq_backroom`
+- **`big_top`**: Exterior examine only in this document; Vance's tent hosts his loot-crate voucher pitch (fulfillment happens at `prize_booth` — see Economic Integration below); the ICQ backroom flap leads to `icq_backroom`
 - **`prophecy_tent`**: Prophecy Roulette (5 coins, random buff/debuff) — full mechanics in `hamstradamus.md`, not restated here
 - **`game_alley`**: Rigged carnival games (milk bottles, ring toss, coin pusher) — average yield 5–15 tickets per €3 game, feeding directly into `prize_booth`'s documented ticket-tier economy
 - **`prize_booth`**: Ticket redemption — full mechanics in `the_participation_trophy.md`, not restated here
@@ -186,10 +186,10 @@ Grounds admission is a flat, plainly-advertised rip-off — everything past the 
 |--------------|-------|---------|
 | Grounds admission | €5 | Grants access to further paid attractions, nothing else |
 | Rigged carnival game (`game_alley`) | €3 avg. | 5-15 tickets, statistically worse than the prize costs |
-| Vance's Shady Loot Crate | Variable, per Vance's own pitch | "A bit of a gamble, honestly" — his words |
+| Vance's Shady Loot Crate Voucher | Variable, per Vance's own pitch | "A bit of a gamble, honestly" — his words. Per canon (`game_design_document.md`), the crates themselves are offered "from the prize booth" — Vance hawks and sells the voucher from his tent, and the bro walks it over to `prize_booth` for fulfillment |
 | Knife-throwing act dodge round | Free to attempt, tip solicited after | Tip jar sits beside the target board |
 
-Individual attraction economics (ticket tiers, menu prices, Prophecy Roulette cost) remain fully specified in their own files and are referenced, not restated, here.
+Vance's loot-crate line is a two-zone transaction by design: the pitch happens at `big_top` (his tent), the redemption happens at `prize_booth`, where Yolanda hands over the crate with the same flat professionalism she brings to every other prize — visibly unthrilled to be doing Vance's fulfillment on top of her own ticket counter. No crate contents, pricing, or Yolanda dialogue are specified in this document; that redemption-counter mechanic belongs to a future items/shop pass and to `the_participation_trophy.md` itself, not this stitching file — it is noted here only so the two zones don't contradict each other. Individual attraction economics (ticket tiers, menu prices, Prophecy Roulette cost) remain fully specified in their own files and are referenced, not restated, here.
 
 ### Quest Integration
 - **`debaucheryville_sidequest_bacchanus_beach_beatdown_01`**: `shady_productions_office` is the production's home base — the folding table and fax machine referenced directly in `bacchanusbeachbeatdown.md`'s Cross-References section ("Shady Productions is Ringmaster Vance 'Vape' Vallaro's television venture, operated from a folding table with a fax machine behind the big top"). The actual sign-up and quest content live entirely at Fauxst Beach on the Bohemian Riviera; this office is flavor, foreshadowing, and the `beatdown_aware` state trigger, not a second quest-start point
@@ -215,8 +215,8 @@ Individual attraction economics (ticket tiers, menu prices, Prophecy Roulette co
 - **Role**: Circus proprietor and Shady Productions owner-operator; the single point of contact tying every attraction on these grounds together
 - **Appearance**: Ringmaster coat gone slightly threadbare at the cuffs, top hat at a showman's angle, a vape pen never more than a hand's reach away
 - **Personality**: Speaks in unbroken sales patter with a vape cloud punctuating roughly every third sentence; genuinely proud of the operation, in the specific way of a man who has never once questioned whether pride was earned
-- **Key Dialogue**: *"Loot crate? Sure. Sure, why not. It's — *(exhale)* — it's a bit of a gamble, honestly. Aren't we all?"* / *"Semi-permanent. That's the word. We COULD move. We just — *(exhale)* — haven't needed to."*
-- **Services/Function**: Sells shady loot crates from his tent (existing canon, per `debaucheryville.md`); no crate contents or pricing are specified in this document — that mechanic belongs to a future items/shop pass, not this stitching file
+- **Key Dialogue**: *"Loot crate? Sure. Sure, why not. It's — *(exhale)* — it's a bit of a gamble, honestly. Aren't we all? Walk your voucher over to the booth, Yolanda will sort you out."* / *"Semi-permanent. That's the word. We COULD move. We just — *(exhale)* — haven't needed to."*
+- **Services/Function**: Hawks shady loot crates from his tent — existing canon, per `game_design_document.md` ("offers shady 'loot crates' from the prize booth"). Vance pitches and sells the voucher here; fulfillment happens at `prize_booth`, per canon, not at his tent (see Economic Integration above). No crate contents or pricing are specified in this document — that mechanic belongs to a future items/shop pass, not this stitching file
 - **Cross-Reference**: Owner of Shady Productions, which operates The Bacchanus Beach Beatdown from `shady_productions_office` per `bacchanusbeachbeatdown.md`
 
 ### Blanka (Knife-Throwing Assistant)
@@ -284,7 +284,7 @@ Individual attraction economics (ticket tiers, menu prices, Prophecy Roulette co
 
 ### Technical Requirements
 - **Asset List**: Grounds tileset, main gate/marquee, big top exterior + Vance's tent + ICQ backroom flap, Shady Productions office props (folding table, fax machine, casting flyer, prize pallet), game alley rig, performance circle target board, Vance and Blanka NPC sprites — full list in the companion PNG Assets document
-- **Animation Requirements**: Marquee flicker, vape-cloud text-reveal (Vance's dialogue), Hamstradamus tent glow (cross-referenced, not re-specified), fax-machine paper spit, ticket-dispenser jam cycle, knife-throw whistle-and-thunk
+- **Animation Requirements**: Marquee flicker, vape-cloud text-reveal (Vance's dialogue), Prophecy Tent Glow (full spec in `Cirque_du_Shady_PNG_Assets.md`), fax-machine paper spit, ticket-dispenser jam cycle, knife-throw whistle-and-thunk
 - **Performance Budget**: Target 45-60 FPS; max 30-45 draw calls (grounds-wide, crowd-density dependent); memory budget 55-70MB across the full stitched grounds (individual sub-locations retain their own already-specified budgets)
 - **Platform Considerations**: Vape-cloud particle density reducible on mobile; grounds crowd LOD steps down aggressively past `game_alley` mid-ground
 
