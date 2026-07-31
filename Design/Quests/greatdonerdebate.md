@@ -214,7 +214,7 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 
 **Catchphrases**:
 - "You want chicken? Chicken is for children. You have the lamb."
-- "Thirty-two years I make döner. You think Prague knows döner? Prague knows NOTHING."
+- "Thirty-two years I make döner. You think Debaucheryville knows döner? Debaucheryville knows NOTHING."
 - "The secret is the bread. Always the bread. Also the meat. And the sauce. Okay, everything is secret."
 - "Ah, Americans. You eat like you're afraid the food will fight back. EAT."
 - "My grandfather made döner in Istanbul. His grandfather made döner in Istanbul. You think some *clown* knows döner?"
@@ -243,7 +243,7 @@ A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum 
 - "In Rotterdam, we put cheese on everything. This is the Dutch way. Accept it."
 - "You want small? There is no small. There is only 'you are not ready' and 'regular.'"
 - "The fork will break. This is part of the experience. Use your hands like a WARRIOR."
-- "Prague döner? *spits* Dublin döner? *double spits* They wrap their shame in bread. WE MELT CHEESE ON OURS."
+- "Debaucheryville döner? *spits* Publandia döner? *double spits* They wrap their shame in bread. WE MELT CHEESE ON OURS."
 
 **Menu Items**:
 | Item | Price | Effects |

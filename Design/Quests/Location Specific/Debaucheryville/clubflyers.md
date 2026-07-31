@@ -42,7 +42,7 @@ Improvement Layer: Flyers you post appear physically around the city. Later, NPC
 - **Pilsner** adds his Hotmail address: "brewmaster69@hotmail.com"
 
 **NPC Reactions:**
-- **Young Prague Local:** *"Is this performance art? Are you mocking the early internet?"*
+- **Young Debaucheryville Local:** *"Is this performance art? Are you mocking the early internet?"*
 - **Club DJ:** *"Dude, did you make this on Microsoft Publisher? My mom used this font in 2002."*
 - **Art Student:** *"This is brilliant commentary on Y2K aesthetic nostalgia... wait, you're serious?"*
 

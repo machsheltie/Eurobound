@@ -87,7 +87,7 @@ Reputation States:
         ◦ Unlock "High Roller" equipment and abilities 
     • Triggered By: Causing magnificent chaos that everyone benefits from 
 5. "Lords of Misrule" (Maximum State)
-    • Description: "Prague's nightlife bows before their magnificent incompetence" 
+    • Description: "Debaucheryville's nightlife bows before their magnificent incompetence" 
     • NPC Reactions: Treated as chaotic deities of entertainment 
     • Mechanical Effects: 
         ◦ Free access to everything (they're too entertaining to charge) 
@@ -133,7 +133,7 @@ Reputation States:
         ◦ Can sync all combat actions to musical timing 
         ◦ Unlock "Symphony of Bros" group abilities 
     • Triggered By: Demonstrating unexpected cultural knowledge or skill 
-5. "Honorary Viennese" (Maximum State)
+5. "Honorary Sinfonian" (Maximum State)
     • Description: "Locals have convinced themselves these Americans understand culture... they don't, but everyone pretends they do" 
     • NPC Reactions: Treated as cultural ambassadors (the irony is lost on everyone) 
     • Mechanical Effects: 
@@ -148,9 +148,9 @@ Reputation Destroyers:
 
 Cross-Regional Reputation Effects
 Reputation Spillover:
-    • Publandia Fame: "Those American lads from Dublin" gives +1 starting reputation in other regions 
-    • Debaucheryville Infamy: "The chaos merchants from Prague" creates mixed reactions (respect from rebels, disgust from authorities) 
-    • Sinfonia Sophistication: "The cultured Americans from Vienna" provides unexpected credibility boosts 
+    • Publandia Fame: "Those American lads from Publandia" gives +1 starting reputation in other regions 
+    • Debaucheryville Infamy: "The chaos merchants from Debaucheryville" creates mixed reactions (respect from rebels, disgust from authorities) 
+    • Sinfonia Sophistication: "The cultured Americans from Sinfonia" provides unexpected credibility boosts 
 Conflicting Reputations:
     • High Publandia + High Sinfonia = "Cultured Drunks" (NPCs confused but intrigued) 
     • High Debaucheryville + Low Others = "One-Trick Chaos Artists" (limited to vice districts) 

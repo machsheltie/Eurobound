@@ -63,7 +63,7 @@ Key NPCs
 Enemies (examples)
 • Hen Party Swarm (multi-target), Stag Do Berserker, Spill Sprite (slippery hazard), Barkeep’s Mop (counterattacks).
 Rival Trio Encounter
-• “Pub Crawl Showdown” — Trio challenges you to a 3‑round gauntlet (darts, trivia, brawl). Reward: NFT #1 “Temple Bar Receipt JPG.”
+• “Pub Crawl Showdown” — Trio challenges you to a 3‑round gauntlet (darts, trivia, brawl). Reward: NFT #1 “Blarney Trap Receipt JPG.”
 
 City Boss — The Craic Baron
 • Theme: Temple‑Bar magnate who monetizes revelry.

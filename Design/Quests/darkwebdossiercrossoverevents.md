@@ -102,7 +102,7 @@ NarcGreg:
 🔥 TONY420 PRESENTS: EUROPEAN TOUR SPECIAL 🔥
 - Absinthe Pills (Green Fairy in capsule form!)
 - Disco Biscuits (Made with REAL glitter)
-- Czech Republic Bath Salts (NOT for bathing wink wink)
+- Debaucheryville Bath Salts (NOT for bathing wink wink)
 - Viagra knockoffs (May cause temporary blindness)
 Payment accepted: Travelers checks, AOL trial CDs, or Bitcoin
 
@@ -135,7 +135,7 @@ Payment: Expired pub vouchers accepted
 
 **1. Pub Crawl Gone Wrong**
 ```
-richfield69: dude u see my story? epic night at Temple Bar
+richfield69: dude u see my story? epic night at the Blarney Trap
 Tony420: bro u passed out in a kebab van
 richfield69: ...that wasn't a kebab van
 Tony420: 👀 u might wanna get tested

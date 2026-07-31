@@ -79,7 +79,7 @@ Petra keeps this job because it's steady, it pays better than most production wo
 
 ### Approach/Greeting
 **When the bros first stop at the sign-up table**:
-> "Hi. Yes. Sign-up is here. The show is called The Bacchanus Beach Beatdown. It is a trivia contest. The trivia is in Czech. All of it. Every question. There is no translator — we cut that from the budget in 2011."
+> "Hi. Yes. Sign-up is here. The show is called The Bacchanus Beach Beatdown. It is a trivia contest. The trivia is in Bohemian. All of it. Every question. There is no translator — we cut that from the budget in 2011."
 
 **Continuing over any interruption, same flat pace**:
 > "You will be strapped into a portable toilet. The portable toilet is attached to a pneumatic catapult. Three incorrect answers and the catapult fires you into the river. The river is The Bacchanus. It is not clean. It has never been clean. I want to be clear that I am not exaggerating for the show."
@@ -101,7 +101,7 @@ Petra keeps this job because it's steady, it pays better than most production wo
 *She produces three release forms — four pages each, single-spaced, entirely in Czech-parody legalese.*
 
 **Petra**:
-> "These are the release forms. They are in Czech. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes."
+> "These are the release forms. They are in Bohemian. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes."
 
 **Lord Pilsner** *(already signing)*: "We're good."
 

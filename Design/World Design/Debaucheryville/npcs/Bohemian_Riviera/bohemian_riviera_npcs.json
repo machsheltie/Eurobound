@@ -166,12 +166,12 @@
       },
 
       "dialogue": {
-        "greeting": "Hi. Yes. Sign-up is here. The show is called The Bacchanus Beach Beatdown. It is a trivia contest. The trivia is in Czech. All of it. Every question. There is no translator — we cut that from the budget in 2011.",
+        "greeting": "Hi. Yes. Sign-up is here. The show is called The Bacchanus Beach Beatdown. It is a trivia contest. The trivia is in Bohemian. All of it. Every question. There is no translator — we cut that from the budget in 2011.",
         "idle_chatter": [
           "You will be strapped into a portable toilet. The portable toilet is attached to a pneumatic catapult. Three incorrect answers and the catapult fires you into the river. The river is The Bacchanus. It is not clean. It has never been clean. I want to be clear that I am not exaggerating for the show.",
           "That is not a camera. That is a monitor for the camera. It is showing you the beach behind you."
         ],
-        "transaction": "These are the release forms. They are in Czech. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes.",
+        "transaction": "These are the release forms. They are in Bohemian. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes.",
         "farewell": "You're signed up. Strap-in is at the catapult. Jaxson will call your names — well, he will call 'contestants.' He does not have your names either.",
         "special_triggers": {
           "not_an_obstacle_course": "It is not an obstacle course. There are no obstacles. There is a toilet, and then there is the river.",

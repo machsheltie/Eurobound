@@ -62,7 +62,7 @@ Utility/Misc Items
     • Allows remote communication during stealth sections 
     • Flavor: "Yes, I'm talking to you. No, I'm not crazy." 
 Regional Specialty Items
-"Absinthe Shot (Prague Special)"
+"Absinthe Shot (Debaucheryville Special)"
     • Massive damage boost but inflicts "Hallucinating" (random targeting) 
     • Flavor: "The green fairy has some strong opinions" 
 "Guinness (Room Temperature)"

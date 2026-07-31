@@ -58,7 +58,7 @@
 
 *She has a clipboard, a headset, and the specific patience of a person who has explained this six hundred times and has never once been listened to.*
 
-> "Hi. Yes. Sign-up is here. The show is called The Bacchanus Beach Beatdown. It is a trivia contest. The trivia is in Czech. All of it. Every question. There is no translator — we cut that from the budget in 2011."
+> "Hi. Yes. Sign-up is here. The show is called The Bacchanus Beach Beatdown. It is a trivia contest. The trivia is in Bohemian. All of it. Every question. There is no translator — we cut that from the budget in 2011."
 
 **Lord Pilsner:** *not hearing the second half of any sentence* "Trivia. Yeah. That's — yeah. That's my wheelhouse."
 
@@ -74,7 +74,7 @@
 
 *She produces three release forms. They are four pages each, single-spaced, entirely in Czech.*
 
-> "These are the release forms. They are in Czech. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes."
+> "These are the release forms. They are in Bohemian. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes."
 
 **Lord Pilsner:** *already signing* "We're good."
 
@@ -125,7 +125,7 @@ The player picks **ONE** bro to answer for. That bro is the one you actually pla
 
 Pilsner's automatic wrong answer each round is delivered as a **toast**. He raises an imaginary glass, waits for a crowd response that does not come, and then commits fully.
 
-> "To the Habsburgs — who INVENTED the funnel — twelve hundred, final answer, and I'll fight the man who says otherwise."
+> "To the Emperors — who INVENTED the funnel — twelve hundred, final answer, and I'll fight the man who says otherwise."
 
 > "Gonna go ahead and say Belgium. Not because of the question. Because it's always Belgium and nobody has the guts to say it."
 
@@ -315,7 +315,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 *The second one goes off mid-word. This is the important one and it must land mid-word.*
 
 **Non-selected bro variants — cut off precisely where marked:**
-- **Lord Pilsner:** "Okay so the way I see it, historically, the Habsburgs were basically the original fraternity, and if you look at the crest, the crest is a para—" ***LAUNCH***
+- **Lord Pilsner:** "Okay so the way I see it, historically, the Emperors were basically the original fraternity, and if you look at the crest, the crest is a para—" ***LAUNCH***
 - **Chadwick:** "—and that's why the algorithm rewards authenticity, so if you're new here, hit that subscri—" ***LAUNCH***
 - **Bradley:** "The trick with a catapult is you gotta go LIMP, everybody gets this wrong, you go limp and you just ri—" ***LAUNCH***
 
@@ -901,14 +901,14 @@ The kid comes down two more steps. He watches. He tilts his
 head slightly at the audio.
 
                     NEIGHBOR KID
-     Is that Czech?
+     Is that Bohemian?
 
                     CHADWICK
           (waving him off)
      It's European.
 
                     NEIGHBOR KID
-     No, that's Czech. I took two years of it. 
+     No, that's Bohemian. I took two years of it. 
      My grandma's from —
 
                     LORD PILSNER
