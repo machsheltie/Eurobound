@@ -13,8 +13,14 @@ never self-aware / never scam-aware + steal corollary, templates as floors.
 
 - **Tier 1 — PLAYER-FACING text** (dialogue, display names, item/examine/UI strings, narrator
   lines, song lyrics, achievement names, ICQ messages, graffiti — anything a player could read
-  in the shipped game): **world names only.** Zero real-world place/nation references
-  (Prague/Vienna/Dublin/Vltava/Habsburg/Austria/Czech/Temple Bar/etc.). Violations are defects.
+  in the shipped game): **world names only.** Zero real-world place/nation references.
+  **AUTHOR RULING (ban-all, expansion-proofing):** this bans ALL real-world places, nations,
+  districts, and demonyms — not just current parody targets — because future expansion packs may
+  parody any city (e.g. Istanbul, Rotterdam, Belgium, Prussia, Ireland, De Pijp, "Amsterdammer"
+  are all banned in shipped text). Jokes that depended on a real name (wrong trivia answers,
+  food-heritage gags) are rewritten with in-world equivalents that preserve the joke's structure.
+  Violations are defects. (Currency terms — €, koruna — are NOT in scope of this rule; their
+  fate belongs to the forthcoming Economy System round.)
 - **Tier 2 — NON-SHIPPING design metadata** (parody-target headers like "(Prague Parody)",
   alias fields, voice/accent directions like "Czech-accented English", art references like
   "modeled on the Vienna State Opera", satire-angle analyses, QA checklists): real-world names
