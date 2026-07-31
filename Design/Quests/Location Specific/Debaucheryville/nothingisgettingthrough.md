@@ -36,7 +36,7 @@
 
 ## 📖 Quest Structure
 
-> **Beat order is fixed.** Beats 1–4 are Debaucheryville, unskippable, and fully scripted. Beat 5 is the two-path Sinfonia resolution. Beats 6–8 are payoff. No beat can be reordered, and there is no early exit from the status effect at any point in beats 1–5.
+> **Beat order is fixed.** Beats 1–4 are Debaucheryville, unskippable, and fully scripted. Beat 5 is the cross-continent limp. Beat 6 is the two-path Sinfonia resolution. Beats 7–8 are payoff, and Beat 9 is the post-credits scene (staged under **🎬 POST-CREDITS SCENE REWARD**). Numbering matches the design spec's Quest Flow exactly. No beat can be reordered, and there is no early exit from the status effect at any point in beats 1–6.
 
 ---
 
@@ -274,7 +274,99 @@
 
 ---
 
-#### BEAT 4 — THE LIMP TO SINFONIA
+#### BEAT 4 — THE DEPARTURE (musical scene, Cirque du Shady → the airport road)
+
+> **Continuity call (stated for the record):** at this beat the bros canonically know **two things and no more** — the phrase **"HOUSE OF NEEDLES"**, and the phrase **"the gold circle."** They do **not** know the Haute Couture Haberdashery, they do **not** know Monsieur Aiguille, and they have never heard either name. **Bradley's tattoo-parlour theory is the party's operating assumption** and stays uncorrected through the entire limp (Beat 5), which is why they walk into a luxury haberdashery in Beat 6 expecting a tattoo parlour. They also believe the gold circle is **a ring.** It is not a ring. **The lyrics below therefore reference only the House of Needles, the gold circle, Sinfonia, and the hamster — never the Haberdashery, never Aiguille, never a coin.** Any later pass that puts those names in this song breaks the Beat 6 payoff.
+
+*Outside the prophecy tent. The Cirque du Shady's main path. Three men stand in the sawdust holding, between them, one prophecy, one ring theory, one tattoo-parlour theory, and one permanent status effect.*
+
+**Lord Pilsner** *(the slow, terrible dawn of a plan)*: "Boys. Where were we going next anyway?"
+
+**Chadwick:** "Sinfonia. Friday. It's on the tickets."
+
+**Lord Pilsner** *(to the sky, both arms out, genuinely staggered)*: "**Sinfonia.** He sent us where we were ALREADY GOING."
+
+**Bradley:** "That's how you know he's real."
+
+*This is the commitment. There is no dialogue tree here and no decline option. The music comes up under it.*
+
+---
+
+##### The Song — "We're Off to the House of Needles"
+
+> **Composition brief (binding):** an **original parody lyric** in the shape of the Oz travelling song — a skipping march with call-and-response and a comic word-repetition run. It **scans to that tune's meter and mirrors its structure, and reproduces none of the 1939 lyric** — not a line, not a phrase, not a rhyme pair. Every word below is original to this file. If a music pass needs syllables moved, move them; do not "restore" anything, because there is nothing to restore.
+>
+> **Melody is a separate clearance question and is not settled by this document.** Treat the Oz tune as a *scansion target for the lyric only*. The shipping decision — license the melody, or commission an original skipping-march that scans identically to these words — belongs to production, not to this file. **These lyrics are written to survive either choice**: they carry the joke on their own meter and rhyme, and do not depend on the listener recognising any particular tune.
+
+> **Staging (binding) — the Agonizing Friction:** the bros **link arms and skip.** They should not be skipping. `the_herp` is active and the skip is being paid for in real time, so the whole number runs on a **wince–skip–wince** cycle: arms linked, big committed Oz-style kick-skip on the downbeat, a full-body flinch on the upbeat, recover, repeat. Never break the linked arms. Never break the smiles. The choreography is triumphant and the faces are triumphant; only the hips are telling the truth. *(This is a staging descriptor for `the_herp`'s existing effects, not a new mechanic — nothing is added to `Design/Mechanics/Battle/status_effects.md` for it.)*
+
+**VERSE 1** — *Lord Pilsner leads. He always leads. Chadwick and Bradley answer on the response line, dead on the beat, having somehow rehearsed nothing.*
+
+> **PILSNER:** &nbsp;&nbsp;There's a house at the end of the map with a needle above the door,
+> **CHADWICK & BRADLEY:** &nbsp;&nbsp;A needle above the door!
+> **PILSNER:** &nbsp;&nbsp;And a ring made of gold in a room that we've never been in before,
+> **CHADWICK & BRADLEY:** &nbsp;&nbsp;Been in before!
+> **PILSNER:** &nbsp;&nbsp;A hamster in a wizard hat has told us where to go —
+> **BRADLEY:** &nbsp;&nbsp;And a hamster wouldn't lie!
+> **CHADWICK:** &nbsp;&nbsp;A hamster wouldn't lie!
+> **ALL THREE:** &nbsp;&nbsp;So we're walking a bit funny but we're walking, and we'll walk until we fly!
+
+**REFRAIN** — *all three, arms linked, full volume, straight down the middle of a working street.*
+
+> **ALL THREE:**
+> &nbsp;&nbsp;We're off to the House of Needles,
+> &nbsp;&nbsp;The glorious House of Thread!
+> &nbsp;&nbsp;He hollered it in English at a volume fit to burst,
+> &nbsp;&nbsp;He hollered it unrehearsed —
+> &nbsp;&nbsp;Unrehearsed, unrehearsed, unrehearsed, unrehearsed, unrehearsed —
+> &nbsp;&nbsp;He said the gold one stops it, and he said the gold one first!
+> &nbsp;&nbsp;So we're off to the House of Needles,
+> &nbsp;&nbsp;The glorious House of Thread!
+
+**VERSE 2** — *the wince cycle is now visible from across the square. Gregory joins on the response line and is, vocally, the most committed performer in the number.*
+
+> **PILSNER:** &nbsp;&nbsp;We have suffered on a beach and we have suffered in a store,
+> **CHADWICK & BRADLEY:** &nbsp;&nbsp;Suffered in a store!
+> **PILSNER:** &nbsp;&nbsp;And a woman with a lottery ticket showed us to the door,
+> **CHADWICK & BRADLEY:** &nbsp;&nbsp;Showed us to the door!
+> **CHADWICK:** &nbsp;&nbsp;But a prophecy's a promise and a promise is a plan —
+> **GREGORY** *(muffled, from Bradley's hand, entirely sincere)*: &nbsp;&nbsp;And a plan is what we are!
+> **BRADLEY:** &nbsp;&nbsp;Gregory says a plan is what we are!
+> **ALL THREE:** &nbsp;&nbsp;It's a very simple errand for a very healthy man!
+
+*Beat. On the rest at the end of that line — the one clean bar of silence in the whole number, where the melody sits and waits — the following lands, at full involuntary volume, from Lord Pilsner, who does not stop skipping:*
+
+> **LORD PILSNER:** &nbsp;&nbsp;**"DOES ANYONE HAVE A BAG OF FROZEN PEAS?!"**
+
+*Nobody acknowledges it. The arms stay linked. Chadwick counts them back in with his free hand, on the beat, like a professional.*
+
+**REFRAIN (reprise, out of frame)** — *the three of them round the corner toward the airport road, still audible, diminishing, and the last thing anyone on the strip hears is the word "**Thread!**" at a volume that carries.*
+
+---
+
+##### Locals
+
+> **Tone rule:** deadpan, unbothered, and **correct about everything.** No cruelty, no jeering, no laughter at the bros' expense — these are people with jobs, watching three visitors do something medically inadvisable in the middle of the afternoon. The comedy is entirely in the bros being wrong in public and no one being able to help them.
+
+- **Two Cirque du Shady crew, watching the whole number, in the local language, flatly:** "They are skipping." — "They should not be skipping." — "No." *(Both statements are true. Neither man moves.)*
+- **The boat-hook retrieval man**, leaning on his boat hook by the embankment as they pass: *(watching them go, entirely without malice)* "The toilet men can sing."
+- **A woman on the promenade, correctly, to nobody, as the refrain reaches her:** "There are no tattooists in a haberdashery." *(She is right. She is the only person in Debaucheryville who has correctly decoded the prophecy, she says it out loud at conversational volume, and all three bros skip directly past her while singing about thread.)*
+- **Hamstradamus**, at the tent flap, watching his own prophecy leave town at a skip. *(Whiskers still. He says nothing. He goes back inside.)*
+
+---
+
+##### Design Notes — The Departure
+
+- **Zero self-awareness, zero scam-awareness.** Nobody in this number is being ironic, nobody is doing a bit, and nobody suspects for one instant that any part of this is absurd. They believe this is the heroic-quest montage of their lives and they are performing it accordingly. **No bro may wink at the camera, undercut a lyric, or wonder aloud whether the hamster was serious.** A single knowing line kills the entire scene.
+- **The skip is sincere and the pain is real, and neither cancels the other.** Play it straight: this is a triumphant travelling number performed by three men who are in significant discomfort and have decided the discomfort is not relevant to the montage.
+- **The Groin Blurt must land on the rest**, not over a lyric — it has to read as the melody making room for it. Fire the standard `the_herp` blurt line verbatim; do not write a bespoke musical variant.
+- **Never "the Wizard," never Oz, never Kansas, never a yellow road.** The bros have never heard of any of it and neither has this world. The reference is a scan and a shape, nothing else.
+- Locals must never be scored for laughs — no reaction stings under their lines, no cutaway mugging. They deliver and go back to work.
+- **Screenshot framing:** the wide shot of three linked-arm men mid-kick-skip with the promenade woman standing still in the same frame, mid-sentence, being right.
+
+---
+
+#### BEAT 5 — THE LIMP TO SINFONIA
 
 *`the_herp` is active for the entire crossing and everything after it. **There is no temporary suppressant anywhere in the game** — no potion, no cream, no vendor, no side quest, no cooldown, no reduced-severity state. This is a deliberate design decision: the Coin has to feel Excalibur-tier when it lands, and it only feels that way if the player has spent the whole middle act unable to do anything about this at all.*
 
@@ -317,7 +409,7 @@
 
 ### Binary Path Choice
 
-#### BEAT 5 — THE HABERDASHERY
+#### BEAT 6 — THE HABERDASHERY
 
 *Haute Couture Haberdashery, Imperial Square, Sinfonia (`sinfonia_imperalsquare_haute_couture_01`). Marble, chandeliers, a bell over the door that announces arrivals judgmentally. Three men in cargo shorts enter with a visible waist-level heat shimmer and a tattoo-parlor theory.*
 
@@ -448,7 +540,7 @@
 
 ---
 
-#### BEAT 6 — THE PRIZE
+#### BEAT 7 — THE PRIZE
 
 *Full item spec: `Design/Inventory/items/gold_circle_coin_item.md`.*
 
@@ -461,12 +553,12 @@
 
 ---
 
-#### BEAT 7 — THE RETURN
+#### BEAT 8 — THE RETURN
 
 *Cities are revisitable. The Coin equipped, the shimmer gone, the −2 Charm lifted, six unfinished conversations sitting on the map like quest markers, and three men who have concluded that the losing streak was a *product recall*.*
 
 - **Every NPC who delivered a Herp-rejection scene can be re-attempted post-Coin.** The auto-reject routing lifts party-wide the moment the Coin is equipped by any bro.
-- **Each lady has a post-cure callback line, authored in her own profile** (roster table, Beat 4). Every one of them is in her own voice and **not one of them lets the bros off the hook.** Nobody has forgotten. Nobody pretends otherwise. The Twins' bingo card still has the square. The ballad still exists and is still being performed. CryptoBro69 still has the screenshot.
+- **Each lady has a post-cure callback line, authored in her own profile** (roster table, Beat 5). Every one of them is in her own voice and **not one of them lets the bros off the hook.** Nobody has forgotten. Nobody pretends otherwise. The Twins' bingo card still has the square. The ballad still exists and is still being performed. CryptoBro69 still has the screenshot.
 - **Resolution (binding):** the callback line plays as a **sting beat only** — she says her piece, the bros absorb none of it, and **the couchsurf then resolves normally**, running that NPC's standard Chronicles scene and outcome exactly as authored before the infection. The callback never blocks the entry and is never a second refusal. **The first-time payload** — her stat change, gag item, collectible, ICQ payload, and Passport entry — **is granted only if that entry was never completed pre-infection.** A player who completed her before the outbreak gets the callback and the scene, but no duplicate rewards.
 - **Renata is the exception, again.** She never knew, was never told, and never rejected anyone. She notices the Coin, approves of the jewelry, pats a cheek, and goes back to her lounger.
 - **Couchsurfing Chronicles completion stays fully achievable.** The outbreak is itself a scripted Chronicles entry, and the post-Coin re-attempts restore every other entry the Herp had locked out. No player can be permanently blocked out of the "Slept Around, Found Out" title by this questline — but no player can reach it without catching The Herp first, because the outbreak is mandatory. *(See `Design/Quests/couchsurfingchronicles.md` and `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md`.)*
@@ -572,6 +664,8 @@
 3. **The split-frame goggles gag.** The identical de-aged render duplicated across three bros' POVs in three corners of the same party, each panel captioned with that bro's private, entirely sincere internal narration. Built as a pre-composed three-panel share card, because the sameness only reads when the panels are adjacent.
 
 **Bonus capture:** the vitrine placard at full zoom — "It is not for sale. It is for aspiration." — with three reflections in the glass.
+
+**Bonus capture:** the Departure wide shot (Beat 4) — three linked-arm men caught mid-kick-skip while the promenade woman stands still in the same frame, mid-sentence, being right. Screenshot button stays live for the whole number, because the wince frames are the good ones.
 
 ### Social Sharing Hooks
 - **"...Mine now?"** is the export. A complete two-panel joke requiring no setup, no context, and no dignity.
@@ -738,7 +832,11 @@ and did, for once, exactly what it promised.
 | Thong is `item_leopard_print_thong`, granted to Pilsner on "...Mine now?" | ✅ |
 | Thong's original owner never established — permanent canon, no exceptions | ✅ |
 | Renata's morning exit is stunning; goggles' only lie was her age | ✅ |
-| All eight required beats present and in order | ✅ |
+| All nine required beats present and in order (matches spec Quest Flow) | ✅ |
+| The Departure staged as a full musical scene between prophecy and limp | ✅ |
+| Song lyrics 100% original — no 1939 lyric reproduced, not one line | ✅ |
+| Song names only what the bros know at that beat (House of Needles, gold circle, Sinfonia, the hamster) | ✅ |
+| Bros never scam-aware — no bro ever suspects he is being played | ✅ |
 | All canonical verbatim quotes ship exactly | ✅ |
 | Six ladies referenced by pointer only — no scene text duplicated here | ✅ |
 | Miss Morphine's is-she-real ambiguity never resolved | ✅ |
@@ -800,6 +898,8 @@ and did, for once, exactly what it promised.
 - The party montage cuts to black **on the amber string lights with the music still running**, then hard-cuts to seagulls. No fade, no sting, no transition sweetener.
 - Renata's VO calibrates against two locked takes: the sincere unhurried baseline and the QUEEN correction. Both ship verbatim. If a take of **"You're such nice boys!"** has any irony, smirk, or knowing lilt in it, cut it — the line is devastating precisely because she means it.
 - Hamstradamus's prophecy is delivered **in English**, at full volume, by a hamster. Do not localize it, subtitle it, or route it through the Czech-parody pipeline. It ships verbatim.
+- **The Departure (Beat 4) is the quest's only musical number** and needs a real arrangement, not a stinger: brass-forward skipping march, three untrained male voices, one puppet, sung slightly too loud and slightly under pitch by men who believe they sound excellent. **Brief the composer on structure only** — call-and-response, word-repetition run, refrain — and hand over the lyric sheet in this file. **No reference track from the 1939 film is to be circulated, cited, or temp-tracked**, and no lyric from it may enter the project at any stage, including scratch vocals. Every word sung in this game is original to this document.
+- The number's one bar of rest before the reprise is **reserved for the Groin Blurt** and must survive the mix — do not fill it with crowd noise, do not shorten it in an edit pass. The blurt line ships as the standard `the_herp` bark, unmodified.
 - Lord Pilsner's recitation of the 1990 slogan at the vitrine is played **completely straight, reverently, word-perfect.** No comedy music under it. The comedy is the venue.
 
 ### Testing Priorities
