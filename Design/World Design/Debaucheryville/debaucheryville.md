@@ -2,7 +2,7 @@ DEBAUCHERYVILLE (Prague Parody)
 Theme: Neon Nights & Shady Delights - "It was cheaper at 3 a.m."
 
 STREETS & DISTRICTS
-1 Old Town Square
+1 Astronomical Cock-Up Square
 Tourist Trap Central
     • Tourist-trap loot vendors scattered across cobblestones 
     • Living statue encounters (they come alive and attack) 

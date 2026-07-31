@@ -110,7 +110,7 @@ Equipment Shops
         ◦ Cultural Critic's Monocle (+Intelligence, +Art Authentication) 
         ◦ Maestro's Cufflinks (+Conductor skills, +Musical timing) 
 General Item Shops
-    • The Connoisseurs Cache: Refined supplies for the sophisticated traveler 
+    • The Connoisseur's Cache: Refined supplies for the sophisticated traveler 
         ◦ Healing: Artisanal pain relief, gourmet energy bars, herbal teas 
         ◦ Support: Classical music CDs (+Focus), art appreciation guides (+Culture) 
         ◦ Offensive: Opera glasses (ranged advantage), conductor's baton (weapon) 

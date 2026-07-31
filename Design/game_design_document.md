@@ -83,7 +83,7 @@ WORLD 2 — Debaucheryville (Prague)
 Vibe: Neon clubs, back‑alley kebabs, shady hostels, strip‑joint facades, currency games, “it was cheaper at 3 a.m.”
 
 Main Areas
-• Old Town Square — Tourist-trap loot; living statue encounters; street scammers with sleight‑of‑hand mini‑game.
+• Astronomical Cock-Up Square — Tourist-trap loot; living statue encounters; street scammers with sleight‑of‑hand mini‑game.
 • Clocktower Plaza — Puzzle hub; time-based switches; “meet at midnight” quest threads.
 • Absinthe Arcade — Mini‑games (coin pusher, rigged claw); stamina debuff from “samples.”
 • Hostel “Midnight Checkout” — NPC tangle; bunk‑bed confessions; items found down the wrong hallway.
