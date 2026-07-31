@@ -155,8 +155,18 @@ She is building an actual business — crystals, readings, the NFT collection, e
 
 ### Post-Cure Callback (Coin equipped)
 
-*He returns with `item_gold_circle_coin`. She holds the pendant up, looks past it, and takes noticeably longer than last time.*
+*He returns with `item_gold_circle_coin`. She holds the pendant up, looks past it, and takes noticeably longer than last time. **The sting lands first** — this is the whole reason she gets a callback line at all.*
 > "Something's blocking it. Something gold, something old, something that cost a lot more than you're worth." *(exhale)* "I respect the craftsmanship. I still remember the stool. You can buy a reading. You cannot have the couch."
+
+*He starts to leave. She lets him get three steps, because three steps is the price. Then she sweeps the three stones back onto the bar without looking up, and the quiz is open again.*
+
+**Vanessa** (flat, transactional, entirely unimpressed by her own mercy):
+> "Sixty euro. Floor, not the couch — the couch is not a couch tonight, the couch is a *principle*. Shelf is still a shelf. Pick the one that's already yours and don't think about it, thinking is how tourists get it wrong."
+
+*He passes. He always passes eventually; she has never once made the quiz harder for anyone. Everything proceeds exactly as it would have before the outbreak: crystals, sage, the collection tour, the whole twenty-five minutes.*
+
+**Vanessa** (last word, at the door, 07:00 sharp):
+> "I'm still saging the stool after. Every time. Forever. That part isn't coming off the bill."
 
 ### Callback Dialogue (Return Visits)
 > "Flyers are still up on the north wall. Two of them upside down. I left them like that — people ask about it, and asking is free advertising, so congratulations, you accidentally did marketing."
@@ -289,7 +299,7 @@ Her pricing goes up. That is the arc. After the Club Flyers job she raises the r
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) attempts the couchsurf or a romance approach at the Velvet Curtain Club
 - **Outcome**: Herp Rejection Scene fires (see Dialogue). No couchsurf, no SP, no quiz. The party loses the €120 spent on two "barrier stones." Scene is repeatable; the price does not go back down
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the re-attempt plays the Post-Cure Callback (see Dialogue). She sells the reading. She does **not** restore couchsurf access — the couch is permanently closed to this party, and the Chronicles entry stays completable via the pre-infection window
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the stool, the appraisal, "you cannot have the couch" — **and then the couchsurf resolves normally**: quiz, sage, collection tour, canonical **+SP / Confused** branch and the Charged Quartz Vape Tip, at a sixty-euro surcharge she narrates out loud. She is never nice about it and never lets them off the hook; the entry completes regardless. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 

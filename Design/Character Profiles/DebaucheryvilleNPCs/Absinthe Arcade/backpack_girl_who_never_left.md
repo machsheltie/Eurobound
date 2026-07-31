@@ -145,11 +145,21 @@ She is compiling a body of work. Not for money, not for fame — for the archive
 
 ### Post-Cure Callback (Coin equipped)
 
-*He returns with `item_gold_circle_coin`. She looks up from the notebook. She has performed the ballad, by this point, roughly forty times.*
+*He returns with `item_gold_circle_coin`. She looks up from the notebook. She has performed the ballad, by this point, roughly forty times. **The sting lands first** — this is the whole reason she gets a callback line at all.*
 > "Oh, hey! You look better. You look — yeah. Good for you, genuinely." *(beat, warm, absolutely lethal)* "It doesn't come out of the song, though. You get that, right? You cured the verse. You did not cure the *song*. Somebody sang it in Publandia last week and I've never even been."
 
 *She strums one chord. It is the wrong string. She leaves it.*
 > "Floor's still a no. That was never about the rash."
+
+*Three seconds. She looks at him. She looks at the notebook. The notebook wins, the way it always wins, because a man who crossed a continent for a piece of nineteen-ninety latex is not something the archive can be expected to pass up.*
+
+**Backpack Girl** (reversing entirely, delighted, already shuffling sideways to make floor space):
+> "—no, okay, no, get in. GET IN. You went to *Sinfonia*. For a *coin*. That's a whole third movement and I'm not going to sit here and pretend I don't want it."
+
+*Everything proceeds exactly as it would have before the outbreak: the last of a kebab, floor space, and the ukulele starting at 04:00 instead of 06:00 because she is excited.*
+
+**Backpack Girl** (over the strumming, sincerely, hand on his shoulder):
+> "You understand this doesn't retire the old verses. Nothing retires. That's not a threat, that's just — that's how an archive works. Thank you for coming back. Genuinely. You're the gift that keeps on being a *song*."
 
 ### Callback Dialogue (Return Visits)
 > "The ballad's got a *variant* now. A kid from a different hostel changed the third line and honestly? Better. That's what happens. That's what it's FOR."
@@ -274,7 +284,7 @@ The ballad grows. Early game it is one verse. After the couchsurf it is two. Aft
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) attempts the couchsurf or a romance approach at the Absinthe Arcade
 - **Outcome**: Herp Rejection Scene fires (see Dialogue) — the on-the-spot composition and the hostel performance. No floor, no SP loss, no new item. The **existing** `Ballad of the Bros` collectible is unchanged; the "second movement" is narrative only. Scene is repeatable and the audience grows by one each time
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the re-attempt plays the Post-Cure Callback (see Dialogue). The floor stays closed — permanently, and explicitly not because of the rash. The Chronicles entry stays completable via the pre-infection window
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — "you cured the verse, you did not cure the *song*," "floor's still a no" — **and then she reverses on the spot and the couchsurf resolves normally**: canonical **−10 SP** and the **Ballad of the Bros** collectible, with the ukulele starting at 04:00 instead of 06:00 because she is excited. She reverses for the material, not for him, and says so; she never lets them off the hook and the old verses are explicitly not retired. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 

@@ -188,7 +188,7 @@ They are defending a title. American Tourist Bingo has a field, a season, and �
 
 ### Post-Cure Callback (Coin equipped)
 
-*He returns to the `performance_circle` with `item_gold_circle_coin`. Polina taps the card out of pure reflex. Paulina does not uncap the marker.*
+*He returns to the `performance_circle` with `item_gold_circle_coin`. Polina taps the card out of pure reflex. Paulina does not uncap the marker. **The sting lands first** — this is the whole reason they get a callback beat at all.*
 
 **Paulina** (looking at the Coin, then at the card, then at Polina):
 > "There's no square for that."
@@ -204,6 +204,24 @@ They are defending a title. American Tourist Bingo has a field, a season, and �
 
 **Polina**:
 > "Congratulations on the — whatever that is. It's beautiful. You're still on the card. You will always be on the card. That's how laminate works."
+
+*Paulina has stopped listening. Paulina is looking at the retired card, and then at the Coin, and then at Polina, with the specific face of a woman who has just seen the shape of next season.*
+
+**Paulina**: "New card."
+
+**Polina**: "...New card."
+
+**Paulina**: "New card, new season, fresh laminate. And the first square on a fresh card is the hardest square in the game to open, Polina, you have said that to me every year for six years."
+
+*A pause. They look at each other. They always look at each other first.*
+
+**Polina** (producing a blank card from the inside pocket — she had it the whole time; she always has it the whole time):
+> "Fine. Come on, then. You're the first square."
+
+*Everything proceeds exactly as it would have before the outbreak: the flat, the kitchen table, the bread, and two women cross-referencing a brand-new card over a man who thinks the phrase "first square" was a compliment.*
+
+**Polina** (morning, entirely sincere, entirely unforgiving):
+> "You are on two cards now. One of them is framed."
 
 **Paulina** (genuinely delighted, capping the marker on her sleeve):
 > "See you at the knives!"
@@ -335,7 +353,7 @@ The card fills. Early game it has open squares; by the endgame the bottom row is
 - **Role**: Rejection-system participants (two of the six ladies; one shared scene)
 - **Trigger**: An infected bro (`the_herp` active) approaches the twins at the `performance_circle`
 - **Outcome**: Herp Rejection Scene fires (see Dialogue) — the adjudication, the verbal-standard check, the dab, the completed row, the off-screen cheer. No couchsurf, no Twin Token, no status change. **Both NPC IDs fire the one scene**; do not author separate Polina and Paulina rejections. Scene is repeatable but the row only completes once — on repeats they simply show him the dabbed square
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the re-attempt plays the Post-Cure Callback (see Dialogue). No new square is created and the couchsurf does **not** reopen; the Chronicles entry stays completable via the pre-infection window
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and they can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — no square is made for him, the bottom row is retired, "you're still on the card, that's how laminate works" — **and then Paulina opens a new card and the couchsurf resolves normally**: canonical **Embarrassed** status and the **Twin Token (+1 Grit, −2 Charm)**. He is the first square of the new season, which is a scoring position and not a compliment, and Polina's morning line ("You are on two cards now. One of them is framed.") makes sure nobody is let off the hook. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed their entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted. **Both NPC IDs continue to fire the one shared scene**
 
 ### Quest Gate Function (If Applicable)
 

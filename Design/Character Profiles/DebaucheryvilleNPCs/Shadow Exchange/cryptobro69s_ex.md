@@ -161,8 +161,21 @@ She wants out — of the account, of the paperwork, of the group chat where a ma
 *She looks at it the way she looks at a rate board. It takes noticeably longer than the read she gave him.*
 > "That's real. That's actually real. Nineteen-ninety, molded, one of one — that's the first thing either of you has ever owned that's worth what it says on the label."
 
-*She hands it back. The phone buzzes. She turns it face-down.*
+*She hands it back. The phone buzzes. She turns it face-down. **The sting lands first** — this is the whole reason she gets a callback line at all.*
 > "'Either of you.' Yes, I mean him. No, you don't get to be flattered by that. And no. Still no."
+
+*She goes back to the printout. She gets one line down it. She folds it, taps the counter once, and looks at him the way she looks at a rate she has decided to accept.*
+
+**The "Ex"** (entirely without warmth, entirely without cruelty):
+> "...Ugh. Fine. Futon's free. Not because of that — put it away, I don't want to see it again — because I'm three euro from winning this and I am not going home alone to lose at it in my own flat."
+
+*She holds a hand out, palm up, before he has said a word.*
+> "Cab voucher. Now. It saves us both the conversation in the morning."
+
+*Everything proceeds exactly as it would have before the outbreak: the futon, the CRTs, the LED strips, the minute-long stare, and her being gone before the second bro is awake.*
+
+**The "Ex"** (last line, already at the door, not turning around):
+> "You crossed a continent to fix a *rash*. He launched CRINGECOIN over it from a sofa. You went and *bought* a coin. I genuinely cannot decide which of you that reflects worse on and I have had all night."
 
 ### Callback Dialogue (Return Visits)
 > "Still here. Still three euro from winning. The board and I have an understanding now and the understanding is that I'm right."
@@ -287,7 +300,7 @@ She gets closer to winning. Each revisit, the printout has one more thing circle
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) approaches her at the Shadow Exchange
 - **Outcome**: Herp Rejection Scene fires (see Dialogue) — laugh, photograph, send, resume argument. No couchsurf, no NFT, no gold loss; the cost is the ICQ log. CryptoBro69's gloat fires ~40 seconds later and is repeatable with the same strings. Scene is repeatable
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the re-attempt plays the Post-Cure Callback (see Dialogue). She appraises the Coin sincerely and refuses him anyway. The couchsurf does **not** reopen; the Chronicles entry stays completable via the pre-infection window
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the sincere Coin appraisal, "either of you," "still no" — **and then she reverses on her own terms and the couchsurf resolves normally**: canonical **NFT #2** (Pixelated Kebab Monkey, scratched), **Hungover**, and **−25 gold**, because she takes the cab voucher up front this time and says so. She is explicit that it is not about him, and her exit line is the harshest one she has. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 

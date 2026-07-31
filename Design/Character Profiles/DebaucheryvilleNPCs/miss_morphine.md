@@ -88,7 +88,7 @@ Not applicable — no rendered body exists to dress. The visual grammar of the c
 
 ### Motivation
 
-Stated motive, from the note left behind: **"Thanks for beta testing my social experiment. - M"** — that is the entirety of the on-record explanation, and it is one sentence long, unsigned beyond an initial, and typed. Whether the experiment is social research, a long grift, a data harvest, a bored person's hobby, or an artifact of the Kavarna's own unresolved file is not established. What is established is the pattern: she makes contact, she observes, she leaves a receipt, she does not come back the same way twice.
+Stated motive, from the note left behind: **"Thanks for beta testing my social experiment. - M"** — that is the entirety of the on-record explanation, and it is one sentence long, unsigned beyond an initial, and typed. Whether the experiment is social research, a long grift, a data harvest, a bored person's hobby, or an artifact of the Kavarna's own unresolved file is not established. What is established is the pattern: contact is made, the party is observed, a receipt is left, and the contact string never varies by so much as a character — the same eleven-symbol pop-up, every single time, which is either a person with a very fixed habit or something that was never typed by a person at all. The file does not say. The file will never say.
 
 ---
 
@@ -119,6 +119,8 @@ Stated motive, from the note left behind: **"Thanks for beta testing my social e
 > **"Thanks for beta testing my social experiment. - M"**
 
 *No bro can afterwards agree on whether anyone else was in the room. Chadwick is certain. Bradley is certain of a different thing. Pilsner did not look up. The room cannot be found again on any subsequent night — the door is there, the building is there, the room is not. Nobody in the party finds this worth discussing.*
+
+*(If a later encounter occurs — see Post-Cure Callback — it takes place in **a** neon-lit room full of Y2K tech, VHS tapes, and expired party pills. Whether it is **the** room is not established, is not investigable, and is never answered.)*
 
 ### Post-Interaction
 ```
@@ -152,7 +154,7 @@ Stated motive, from the note left behind: **"Thanks for beta testing my social e
 
 ### Post-Cure Callback (Coin equipped) — **auto-reply only**
 
-*The re-attempt with `item_gold_circle_coin` equipped. Same window, same position, same timestamp, different body text.*
+*The re-attempt with `item_gold_circle_coin` equipped. Same window, same position, same timestamp, different body text. **The sting lands first** — this is the whole reason she gets a callback at all.*
 
 ```
 💬 Miss Morphine  [auto-reply · 04:04]
@@ -166,6 +168,23 @@ Stated motive, from the note left behind: **"Thanks for beta testing my social e
 ```
 
 *It is an away message. It mentions an object she has no logged way of knowing about. Both of those things are true at once and the game never comments on it.*
+
+*The window closes itself. Then — after an interval the game deliberately never specifies and never displays a timer for — it opens again, at the same fixed screen position, with the original trigger string, verbatim, unchanged:*
+
+```
+💬 Miss Morphine: "💊Wanna vibe IRL?💊"
+```
+
+*There is no explanation, no reversal line, no "actually," and no acknowledgement that anything was refused four seconds or four nights ago. Accepting resolves the encounter and the Chronicles entry exactly as it always would have. **Whether an away message was overridden by someone, or whether the same scheduled pop-up simply came around again on a loop that never had an opinion in the first place, is not established anywhere and never will be.** Both readings are fully supported by the text and neither is confirmed.*
+
+*Morning. A neon-lit room. Y2K tech, VHS tapes, expired party pills. She is gone. On the table: the USB, and a note typed except for the sign-off.*
+
+> **"Thanks for beta testing my social experiment. again. - M"**
+
+*Bro delusion, immediately after:*
+- **Lord Pilsner**: *"Her router came BACK, bros. She was never gone. FlagMan calls that a green flag with latency."*
+- **Chadwick**: *"She reached out again. Unprompted. We're a repeat engagement."*
+- **Bradley**: *"'Repeat European engagement.' That's a whole different tier of bio."*
 
 ### Callback Dialogue (Return Visits)
 
@@ -185,11 +204,11 @@ Stated motive, from the note left behind: **"Thanks for beta testing my social e
 | All hours | ICQ contact list | Presence dot green. No exceptions have ever been logged, in any city, at any hour |
 | 03:00–05:00 (in-game) | ICQ client | Highest observed message frequency; the `💊Wanna vibe IRL?💊` pop-up fires in this band |
 | Kavarna posted maintenance windows | ICQ client | Still green, while the service is provably down for every other contact. Documented; never explained |
-| The neon-lit room | Once | One scene, one night, one note. The room is not on any map after that night and is not a revisitable interior |
+| The neon-lit room | Once per encounter (at most twice per playthrough) | One scene, one night, one note. Neither instance is on any map afterward and neither is a revisitable interior. Whether the second is the same room as the first is not established and is not investigable |
 
 ### Positioning Notes
 - She has **no map presence, no navmesh entry, no pathing, and no zone assignment.** Any implementation that gives her one is a bug, not a feature
-- The couchsurf interior is authored as a one-time scene set, not a persistent location. It must not be added to fast-travel, the location index, or any revisit list
+- The couchsurf interior is authored as a scene set, not a persistent location. It must not be added to fast-travel, the location index, or any revisit list. The post-cure encounter reuses the same scene set with identical dressing — the reuse is the ambiguity, not a shortcut, and no dialogue, examine string, or camera move may ever confirm or deny that it is the same room
 - The Cyberspace Kavarna is her "initial contact point" per that location's canon — meaning the terminals there, not her. She is not standing in the Kavarna. Nobody has ever been standing in the Kavarna
 
 ---
@@ -235,9 +254,10 @@ Stated motive, from the note left behind: **"Thanks for beta testing my social e
 
 ### Within Debaucheryville
 - Unprompted ICQ pop-ups at hostel and night beats, across the whole game
-- The one-time `💊Wanna vibe IRL?💊` couchsurf, available pre-infection
+- The `💊Wanna vibe IRL?💊` couchsurf, available pre-infection
 - The Cyberspace Kavarna's "Miss Morphine's Digital Trail" board, examinable at any time, never completable
 - Post-Herp: the auto-reply rejection, repeatable, identical every time
+- Post-Coin: the second auto-reply, then the original pop-up returning verbatim; the encounter resolves and the Chronicles entry completes. Her side of it never leaves the ICQ window
 
 ### In Other Cities (If Applicable)
 | City | Location | Role/Context | Callback Dialogue |
@@ -247,7 +267,7 @@ Stated motive, from the note left behind: **"Thanks for beta testing my social e
 
 ### Evolution Through Game
 
-She does not evolve, escalate, resolve, or pay off. The file gets thicker; the character does not change. Late-game messages are marginally more specific about the party's behavior and no more forthcoming about anything else. There is no reveal scene, no confrontation, no final ICQ message, and no post-credits appearance. Any future content touching her must preserve this — a payoff is the one thing this character cannot survive.
+She does not evolve, escalate, resolve, or pay off. The file gets thicker; the character does not change. The post-cure encounter is a *quest* resolving, not a *character* resolving — the party completes a Chronicles entry and learns nothing whatsoever, which is the same amount they learned the first time. Late-game messages are marginally more specific about the party's behavior and no more forthcoming about anything else. There is no reveal scene, no confrontation, no final ICQ message, and no post-credits appearance. Any future content touching her must preserve this — a payoff is the one thing this character cannot survive.
 
 ---
 
@@ -283,7 +303,7 @@ She does not evolve, escalate, resolve, or pay off. The file gets thicker; the c
 |------|-----------|-----------------|-------|
 | `miss_morphine_avatar.png` | 32x32 (+ 128x128 zoom variant) | Single frame + three progressively more compressed variants | Anime girl in sunglasses with question-mark overlay, per Darkweb Dossier canon. The zoom variant must degrade, not clarify |
 | `miss_morphine_icq_window.png` | UI atlas entry | Window chrome, ASCII frame, away-message block | UI asset, not a character asset. Belongs in the ICQ client atlas |
-| `miss_morphine_room.png` | Scene set | Neon-lit Y2K room: tech stacks, VHS shelves, expired pills, the note, the USB | One-time couchsurf interior. **Contains no character.** The Cyberspace Kavarna PNG doc already lists a "Miss Morphine Photo" prop and a "Miss Morphine Mysterious" entry for the investigation board — those are board dressing and are cross-referenced here, not re-specced, and neither is a character sprite |
+| `miss_morphine_room.png` | Scene set | Neon-lit Y2K room: tech stacks, VHS shelves, expired pills, the note, the USB | Couchsurf interior; the same set is reused verbatim for the post-cure encounter, with only the note's text changed. **Contains no character, in either instance.** The Cyberspace Kavarna PNG doc already lists a "Miss Morphine Photo" prop and a "Miss Morphine Mysterious" entry for the investigation board — those are board dressing and are cross-referenced here, not re-specced, and neither is a character sprite |
 
 ---
 
@@ -305,7 +325,7 @@ She does not evolve, escalate, resolve, or pay off. The file gets thicker; the c
 - **Role**: Rejection-system participant (one of the six ladies) — **and the deliberate outlier**
 - **Trigger**: An infected bro (`the_herp` active) answers her pop-up or messages the handle
 - **Outcome**: **The auto-reply, and nothing else.** No scene, no location, no visit, no cutaway, no witnesses, no third-party reaction. One window, one reply, one self-close. This is the only rejection in the questline with no physical staging whatsoever, and that asymmetry is the point — the other five ladies humiliate the bros in public; she does not consider the matter worth a response written by anyone
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the re-attempt returns the second auto-reply (see Dialogue). It references the Coin. It is still an away message. The game never reconciles those two facts. The couchsurf does **not** reopen; the Chronicles entry stays completable via the pre-infection window
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **second auto-reply plays first as a sting beat** (see Dialogue) — it references the Coin, it is still an away message, and the game never reconciles those two facts — **and then the original `💊Wanna vibe IRL?💊` pop-up returns verbatim after an unspecified interval and the encounter resolves normally**: canonical **Inspired** buff (+Charm/Crit), the **Discarded USB — ???**, and the optional Sinfonia pointer, in a neon-lit room she is again already gone from, with the note reading *"Thanks for beta testing my social experiment. again. - M"*. **Her side stays ICQ-only and unstaged** — there is still no scene with her in it, no reversal line, and no acknowledgement that anything was refused. **The ambiguity is untouched and is in fact load-bearing here:** the text supports "an away message was overridden by someone" and "a scheduled pop-up came around again on a loop that never had an opinion" equally, and confirms neither, ever. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the auto-reply plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 
