@@ -3,7 +3,7 @@ Brewery Tour Sidequest Mechanics:
     • Finding them adds their opener to your collection AND unlocks their regional beer as a consumable 
     • Complete a city's brewery tour = unlock that city's "Legendary Hangover" ultimate consumable 
     • Full European brewery tour completion = "Continental Beer Master" achievement that gives permanent +1 to all alcohol-based item effects
-    Must acquire the bottle opener keychain in Dublin to unlock and participate in this sidequest
+    Must acquire the bottle opener keychain in Publandia to unlock and participate in this sidequest
 
 Mechanic: Only accessible if you already picked up the bottle opener keychain in Publandia.
 

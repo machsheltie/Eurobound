@@ -65,7 +65,7 @@ Read him as a man doing the twelve-thousandth repetition of a task he solved in 
 | Mildly Competent, Precisely | Brings the same accurate, unhurried skill to each retrieval that a mail carrier brings to a route — solved, repeatable, done right |
 | Keeps A Chart | Tracks daily retrievals on paper in a plastic sleeve; the record is honest, the record is small, and he will show it to anyone who asks |
 | Flatly Truthful | Answers exactly what he was asked with exactly what is true, at conversational volume, without ever once selling it |
-| Immune To Being Impressed | Has watched twenty-two seasons of men fly into a river; the count is the only part of it he retains |
+| Immune To Being Impressed | Has watched eleven seasons of men fly into a river; the count is the only part of it he retains |
 
 ### Internal Monologue
 > "Door-down. That one'll fill. — I can hook it before the bend if I go now, or I let it run to the shallows and walk out to it in ten minutes and stay dry. Ten minutes. — Two today. Two is a Tuesday."

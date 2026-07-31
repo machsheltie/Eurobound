@@ -64,9 +64,9 @@ Bradley — Frat-Sorcery (high risk, high reward)
 Regional Spell Variants
 Certain spells gain flavor twists per region:
     • Charm of the Bro Code:
-        ◦ Dublin: Locals say “what’s a frat?” → spell fizzles.
-        ◦ Prague: Enemy joins the party… temporarily.
-        ◦ Vienna: NPC lectures about imperialism, delays turn.
+        ◦ Publandia: Locals say “what’s a frat?” → spell fizzles.
+        ◦ Debaucheryville: Enemy joins the party… temporarily.
+        ◦ Sinfonia: NPC lectures about imperialism, delays turn.
     • Battle Cry of the Mascot:
         ◦ Publandia: Crowd sings along, buff doubled.
         ◦ Debaucheryville: Security assumes it’s a riot chant, spawns guards.
