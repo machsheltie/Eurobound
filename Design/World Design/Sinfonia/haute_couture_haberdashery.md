@@ -102,7 +102,7 @@ If you enter already well-dressed:
 ### Cultural Targets
 - **Primary Satirical Focus**: Luxury retail psychology, fashion gatekeeping
 - **Secondary Targets**: "Investment pieces" justification, formal wear obsession
-- **Cultural Specificity**: Viennese fashion traditions, Habsburg court dress influence
+- **Cultural Specificity**: Sinfonian haute-tailoring traditions, old-imperial concert-hall dress influence
 - **Humor Approach**: Staff genuinely believe they're helping you achieve your potential
 - **Sensitivity Considerations**: Satirizes industry practices, not body image issues
 
@@ -278,7 +278,7 @@ When trying on equipment:
 **The Price Reveal**:
 - **Lord Pilsner**: "I'll take the cape! What's the damage?"
 - **Monsieur Aiguille**: "The Opera Cape is €200."
-- **Lord Pilsner**: "For a CAPE?!"
+- **Lord Pilsner**: "Two hundred! Bro, I could buy this cape TWICE. I might buy it twice."
 - **Monsieur Aiguille**: "For a transformation. But if value isn't important to you..."
 - **Lord Pilsner**: "I— no, I GET it. It's an INVESTMENT."
 - **Monsieur Aiguille**: *slight smile* "Indeed."
@@ -286,7 +286,7 @@ When trying on equipment:
 **Post-Purchase**:
 - **Lord Pilsner**: *wearing cape* "I feel like a DIFFERENT PERSON."
 - **Monsieur Aiguille**: "You look like one. My work here is done."
-- **Chadwick**: "Did we just get manipulated into spending €800?"
+- **Chadwick**: "EIGHT HUNDRED EUROS, boys. That's not a receipt, that's a RÉSUMÉ. They don't let you spend that in here unless they can TELL. We're not tourists anymore — we're CLIENTELE."
 - **Bradley**: "Gregory believes the correct term is 'elevated.'"
 
 **The Vitrine (PATH A handover — "Nothing Is Getting Through")**:
@@ -363,7 +363,7 @@ When trying on equipment:
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese fashion, formal wear traditions)
+- [x] **Cultural specificity confirmed** (Sinfonian haute-tailoring, formal wear traditions)
 - [x] **Satirical targets appropriate** (Luxury retail, not fashion itself)
 - [x] **Gameplay value established** (Equipment shop, stat bonuses, social requirements)
 - [x] **Sinfonia requirements met**:
