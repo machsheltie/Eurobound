@@ -192,7 +192,7 @@
           "role": "scene_subject"
         },
         {
-          "quest_id": "debaucheryville_mainquest_fratbro_nft_01",
+          "quest_file": "Design/Quests/fratbronft.md",
           "role": "sinfonia_nft_target_source",
           "target": "item_tractor_nft"
         }

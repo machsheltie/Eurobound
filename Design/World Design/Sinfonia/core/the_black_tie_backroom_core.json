@@ -220,7 +220,7 @@
       }
     ],
     "nft_hunt_hook": {
-      "quest_id": "debaucheryville_mainquest_fratbro_nft_01",
+      "quest_file": "Design/Quests/fratbronft.md",
       "leg": "sinfonia",
       "target": "item_tractor_nft",
       "acquired_via": "blacktie_event_kings_were_humming_01",
@@ -255,16 +255,16 @@
       "relationship": "hidden_entrance_from_backstage_and_lobby"
     },
     {
-      "location": "sinfonia_kaffeehaus_cafe_existenz_01",
+      "location": "sinfonia_kaffeehausrow_cafe_existenz_01",
       "relationship": "regulars_hint_at_existence"
     },
     {
-      "location": "sinfonia_haute_couture_haberdashery_01",
+      "location": "sinfonia_imperalsquare_haute_couture_01",
       "relationship": "black_tie_attire_source",
       "systemic_note": "A party busted here can no longer afford the Haberdashery's €500 Valued Client path. No hard gate in either direction."
     },
     {
-      "location": "sinfonia_baroness_ballroom_01",
+      "location": "sinfonia_hidden_baroness_ballroom_01",
       "relationship": "vault_keys_shared_social_network"
     }
   ],
@@ -302,6 +302,6 @@
     {"id": "the_shark_slayer", "trigger": "defeat_herr_falsch"},
     {"id": "reformed_witness", "trigger": "hear_siegfried_full_story"},
     {"id": "vault_access", "trigger": "open_baroness_vault"},
-    {"id": "the_kings_were_humming", "trigger": "blacktie_event_kings_were_humming_01_complete"}
+    {"id": "digital_land", "trigger": "blacktie_event_kings_were_humming_01_complete"}
   ]
 }

@@ -60,9 +60,9 @@
         "npc_state_set": {
           "sinfonia_npc_aaron_unflappable_01": "ambient_at_corner_table_permanent"
         },
-        "achievement": "the_kings_were_humming",
+        "achievement": "digital_land",
         "quest_hook_advanced": {
-          "quest_id": "debaucheryville_mainquest_fratbro_nft_01",
+          "quest_file": "Design/Quests/fratbronft.md",
           "leg": "sinfonia",
           "target": "item_tractor_nft"
         }
@@ -76,7 +76,7 @@
       ],
 
       "systemic_consequence": {
-        "affects": "sinfonia_haute_couture_haberdashery_01",
+        "affects": "sinfonia_imperalsquare_haute_couture_01",
         "effect": "A party busted here can no longer afford the €500 Valued Client path, nudging toward PATH B",
         "hard_gate": false
       }

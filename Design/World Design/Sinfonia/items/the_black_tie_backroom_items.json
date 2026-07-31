@@ -60,7 +60,7 @@
         "value_at_exchange_euro": 0,
         "value_at_legitimate_vendor_euro": 0,
         "advances_quest": {
-          "quest_id": "debaucheryville_mainquest_fratbro_nft_01",
+          "quest_file": "Design/Quests/fratbronft.md",
           "leg": "sinfonia",
           "leg_file": "Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md"
         },
@@ -94,7 +94,7 @@
       "category": "equipment",
       "description": "The room's price of admission, worn.",
       "effect": {"grants": "dress_code_pass", "charm": 1},
-      "acquisition": "sinfonia_haute_couture_haberdashery_01",
+      "acquisition": "sinfonia_imperalsquare_haute_couture_01",
       "vendor_stock": false,
       "external_vendor": true
     }

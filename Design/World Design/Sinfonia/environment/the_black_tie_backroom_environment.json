@@ -264,7 +264,7 @@
         "exit_point": "the_passage"
       },
       {
-        "location": "sinfonia_baroness_ballroom_01",
+        "location": "sinfonia_hidden_baroness_ballroom_01",
         "connection_type": "vault_network",
         "trigger": "baroness_vault_keys_obtained"
       }
