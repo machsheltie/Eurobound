@@ -59,8 +59,9 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
 2. **Morning:** seagulls, regret. Two bros discover the third **cocooned in a sleeping bag wearing
    only a leopard-print male thong that is not his** ("Bro. Whose is this." / "...Mine now?").
    **Thong-bro is LORD PILSNER (author-locked).** Chadwick and Bradley are the standing bros;
-   Bradley keeps the CRABS line; "...Mine now?" is Pilsner's; Pilsner delivers the poison-ivy
-   "foliage" diagnosis from inside the sleeping bag. Renata's neck-hug + kiss goes to Pilsner.
+   Bradley keeps the CRABS line AND the "DEFINITELY foliage" line; "...Mine now?" is Pilsner's;
+   Pilsner delivers the verdict "POISON IVY. Thank God. Boys, that's poison ivy." from inside
+   the sleeping bag. Renata's neck-hug + kiss goes to Pilsner.
 3. **The exit (the reveal):** Renata rises from the other side of the sleeping bag, **stunningly
    dressed** — put-together, striking, morning-light glamorous while the bros are crusty wreckage —
    sunglasses on. She **pats each standing bro on the cheek exactly the way
