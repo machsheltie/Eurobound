@@ -34,6 +34,14 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
   self-possessed, zero shame, gets exactly what she came for, has the sense to redress. The comedy
   lands 100% on the bros' beer goggles and morning horror. Never body-mock her; the bros' delusion
   is the target.
+- **Appearance rule (author revision, binding):** Renata is genuinely HOT at 55 and stunningly,
+  impeccably dressed the morning after. Sun worship reads as decades-deep bronze and total ease —
+  texture, never decay. The beer goggles' lie was her AGE (she rendered as 22), NOT her looks;
+  she was never a downgrade. She is never written or rendered as withered, gross, or a cautionary
+  tale — she's the confident older woman doing exactly what celebrated men do, collecting younger
+  men without shame. The bros' morning horror is the age-and-legend reveal plus The Herp — never
+  her appearance. The satire target here is the double standard itself: she visibly IS a queen,
+  they visibly were the haul.
 - **Name mechanics:** Locals mention "Riviéra Renata" in passing during the party-night scene
   ("Renata's here somewhere tonight—") — the bros never connect it. During her morning exit, it
   dawns on them: "Wait— *you're* Riviéra Renata?" She answers with a wink, pride in her voice, and
@@ -50,8 +58,9 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
    it goggles-forward.)
 2. **Morning:** seagulls, regret. Two bros discover the third **cocooned in a sleeping bag wearing
    only a leopard-print male thong that is not his** ("Bro. Whose is this." / "...Mine now?").
-3. **The exit (the reveal):** Renata rises from the other side of the sleeping bag, fully and
-   sensibly dressed, sunglasses on. She **pats each standing bro on the cheek exactly the way
+3. **The exit (the reveal):** Renata rises from the other side of the sleeping bag, **stunningly
+   dressed** — put-together, striking, morning-light glamorous while the bros are crusty wreckage —
+   sunglasses on. She **pats each standing bro on the cheek exactly the way
    their mothers would**, throws her arms around thong-bro's neck, plants a big kiss on his mouth,
    and jogs off down the beach calling **"You're such nice boys!"** Mid-exit: the "QUEEN Riviéra
    Renata to you!" beat (§2). The identical maternal affection to all three IS the reveal — no
