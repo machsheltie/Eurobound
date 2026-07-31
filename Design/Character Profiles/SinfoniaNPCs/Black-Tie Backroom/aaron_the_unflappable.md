@@ -290,14 +290,14 @@ All of the above ship in the single canonical main sheet **`aaron_the_unflappabl
 
 | Row | Sheet row (Lane A spec) | Frames | Profile animations it serves |
 |-----|-------------------------|--------|------------------------------|
-| 1 | idle_seated | 4 | Default `corner_seated` / `corner_ambient_win` / `corner_late_night`; carries the heel bounce and the `heel_still` beat |
-| 2 | stir_drink | 4 | `idle_stir` |
-| 3 | dramatic_drag | 3 | `idle_drag` |
-| 4 | crunch | 3 | `idle_crunch` — the signature frame |
-| 5 | fresh_from_carton | 4 | `idle_fresh_draw`; also covers `idle_snack` |
-| 6 | lay_cards_down | 4 | `kings_reveal` |
-| 7 | offer_carton | 3 | `hand_over` (both grant beats); also covers `wave_over` and `sympathy_lean` |
-| 8 | rake_chips | 4 | `instant_call` and the post-encounter ambient win loop |
+| 0 | idle_seated | 4 | Default `corner_seated` / `corner_ambient_win` / `corner_late_night`; carries the heel bounce and the `heel_still` beat |
+| 1 | stir_drink | 4 | `idle_stir` |
+| 2 | dramatic_drag | 3 | `idle_drag` |
+| 3 | crunch | 3 | `idle_crunch` — the signature frame |
+| 4 | fresh_from_carton | 4 | `idle_fresh_draw`; also covers `idle_snack` |
+| 5 | lay_cards_down | 4 | `kings_reveal` |
+| 6 | offer_carton | 3 | `hand_over` (both grant beats); also covers `wave_over` and `sympathy_lean` |
+| 7 | rake_chips | 4 | `instant_call` and the post-encounter ambient win loop |
 
 ---
 

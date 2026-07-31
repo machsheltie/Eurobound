@@ -130,9 +130,6 @@ Viktor works the door because the door is the one job in this building where the
 ### Callback Dialogue (Return Visits)
 > "The gentlemen return. The wall is unchanged. Five hundred."
 
-*Post-encounter, if the party comes back after the corner table:*
-> "You went to the corner." *(the smallest possible pause)* "Everyone goes to the corner. Five hundred, please."
-
 ---
 
 ## 📅 Schedule & Location

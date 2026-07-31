@@ -188,7 +188,7 @@ He loves the room. He loves the felt, the noise, the small society of people who
 | N/A | — | He does not travel. He has an estate, a wife, and four nights a week, and that is the whole of it. | — |
 
 ### Evolution Through Game
-Nothing about him changes, ever. Same chair, same €200, same cufflinks, same warmth. His single acknowledgement of the corner-table encounter is four words long and is the only variation in his entire script. He never becomes competent, never gets a redemption hand, and never wins a session on screen.
+Nothing about him changes, ever. Same chair, same €200, same cufflinks, same warmth. His single acknowledgement of the corner-table encounter is two short lines and is the only variation in his entire script. He never becomes competent, never gets a redemption hand, and never wins a session on screen.
 
 ---
 
@@ -263,7 +263,7 @@ Old-money Sinfonian, formal sentence construction, and pitched about a third hig
 - **Table talk**: warm, hospitable, faintly frantic
 - **Bluffing**: fast, over-explanatory, rising — a man narrating his way out of a hand and failing
 - **Losing**: genuinely delighted; the laugh is real and should be lovely
-- **The four-word Aaron callback**: quiet, admiring, and completely without pity — the only low-volume line he has
+- **The two-short-line Aaron callback**: quiet, admiring, and completely without pity — the only low-volume lines he has
 
 ### Key Delivery Notes
 - **The canon "perfectly calm" line ships verbatim**, with the cufflink business landing exactly where the location file puts it, both times.
@@ -298,7 +298,7 @@ Old-money Sinfonian, formal sentence construction, and pitched about a third hig
 - **The €200 ceiling is a hard character rule.** No credit branch, no second buy-in, no "one more" scene, ever. It is the discipline that keeps him a comedy character rather than a tragedy, and removing it changes what the room is satirising.
 - **He is never humiliated by the text.** The bros' win off him is their misreading, not his failure, and no scene may frame him as pitiable. He is well-dressed, well-liked, and having a better night than anyone.
 - **He never corrects a bro** and never remarks on their play except to praise it sincerely.
-- His post-encounter Aaron line is four words and stops. No pass may extend it into an explanation of the corner table.
+- His post-encounter Aaron callback is two short lines and stops. No pass may extend it into an explanation of the corner table.
 - Animation priority: the cufflink cycle. Identical every time, at full amplitude, with no variation between bluffs — the joke depends on it being the same gesture forever.
 
 ---

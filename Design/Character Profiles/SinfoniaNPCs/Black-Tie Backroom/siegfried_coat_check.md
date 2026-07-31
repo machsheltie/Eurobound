@@ -142,7 +142,7 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 > "Twenty-two again. I saved it for you." *(He did.)*
 
 *Post-encounter, if the party returns after the corner table:*
-> "I heard it. You can hear that table from here — it goes very quiet and then the chips move all at once." *(hands over the coats)* "Aaron tips like a man who has never once thought about money. Nobody here has ever asked him about the game. It has simply never come up."
+> "I heard it. You can hear that table from here — it goes very quiet and then the chips move all at once." *(hands over the coats)* "Aaron tips like a man who has never once thought about money."
 
 ---
 
