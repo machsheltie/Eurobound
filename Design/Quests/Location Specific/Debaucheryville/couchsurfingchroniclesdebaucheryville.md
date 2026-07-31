@@ -32,7 +32,7 @@
 
 **Where You Meet Her:** You don't. She was already at the party. All three bros meet her separately, on the same night, in three corners of the same `night_party_zone`, none of them aware of the other two.
 
-**Enhanced Morning Scene:** Seagulls. Two bros upright and destroyed, the third cocooned in a sleeping bag wearing a leopard-print thong that is not his. Renata rises fully and sensibly dressed, sunglasses on, hands out water, pats each standing bro on the cheek exactly the way their mothers do, kisses the third, and jogs off down the beach to start her day. She is on her lounger by nine. Nothing that happened was a chapter in her life. *(Scene, beats, and all verbatim lines are authored in her profile and staged in the quest file — do not re-invent them here.)*
+**Enhanced Morning Scene:** Seagulls. Chadwick and Bradley upright and destroyed; **Lord Pilsner** cocooned in a sleeping bag wearing only a leopard-print thong that is not his. Renata rises **stunning** — impeccably put together, gold chain sitting exactly where it sits, bronze catching the low morning light, sunglasses on before she is fully upright — hands out water, pats Chadwick and Bradley on the cheek exactly the way their mothers do, throws her arms around Pilsner's neck and kisses him, and jogs off down the beach to start her day. She is on her lounger by nine. Nothing that happened was a chapter in her life. *(Scene, beats, and all verbatim lines are authored in her profile and staged in the quest file — do not re-invent them here.)*
 
 **Enhanced Bro Delusion Dialogue:**
 - **Pilsner:** *"Three of us. Same beach. Same window. Independently. You know what the odds of that are?"*
@@ -42,7 +42,8 @@
 **Result:**
 - **Status: `the_herp`** — applied to all three bros, permanent, scripted, guaranteed. Never cured; suppressed only while `item_gold_circle_coin` is equipped by any bro
 - **Passport entry logged automatically** (the bros fill it in enthusiastically and describe none of it)
-- **No item, no gold loss, no gag trinket.** The leopard-print thong is scene dressing with no item ID and is never established as hers
+- **Item: `item_leopard_print_thong`** — granted automatically to **Lord Pilsner**, permanent and equippable, acquisition line is "...Mine now?" *(spec: `Design/Inventory/items/leopard_print_thong_item.md`)*. **Its original owner is never established — not Renata's, not anyone's. Permanent canon.**
+- **No gold loss, no gag trinket, no stat payout.** Renata gives nothing and takes nothing
 
 **Real-World Consequence:** None whatsoever for Renata, who does not know anything happened and is never told. All of it lands on the bros, who unanimously and permanently agree never to discuss it.
 

@@ -19,7 +19,7 @@
 > Three men peaked simultaneously on the same beach on the same night, independently, at pushing forty, and each of them personally closed. Then, unluckily, all three walked through the same patch of poison ivy on the way back to the sleeping bags, because that is the only thing that explains it. It is a medical inconvenience. It is not a *situation*. They will get a cream. Then they will go to Sinfonia and continue an unbroken hot streak that began at approximately 11 PM on Fauxst Beach and has, in their assessment, not stopped since.
 
 **What is ACTUALLY happening:**
-> All three of them, separately and obliviously, spent the same nine hours with the same woman — QUEEN Riviéra Renata (`debaucheryville_npc_queen_riviera_renata_01`), a Bohemian Riviera institution who was at her own party having a nice time and treated all three of them with the identical easy warmth she shows the bartenders. Their beer goggles rendered her, literally, as the same generic 22-year-old daydream they have been carrying around since 1997 — the same asset, three times, in three corners of one party. In the morning she redresses sensibly, pats each of them on the cheek exactly the way their mothers do, kisses the one wearing a thong that is not his, and jogs off to start her day. Nobody says anything. Then all three start itching, permanently. There is no poison ivy on that beach. There are no plants on that beach. There is not, strictly speaking, real sand on that beach.
+> All three of them, separately and obliviously, spent the same nine hours with the same woman — QUEEN Riviéra Renata (`debaucheryville_npc_queen_riviera_renata_01`), a Bohemian Riviera institution who was at her own party having a nice time and treated all three of them with the identical easy warmth she shows the bartenders. Their beer goggles told exactly one lie, and it was not about her looks: they rendered her at **22**. She is 55, she is stunning, and in the morning she gets up out of the sleeping bag looking immaculate while three men lie around her in the state of a crime scene. She pats Chadwick and Bradley on the cheek exactly the way their mothers do, kisses Lord Pilsner — who is wearing a thong that is not his — and jogs off to start her day. Nobody says anything. Then all three start itching, permanently. There is no poison ivy on that beach. There are no plants on that beach. There is not, strictly speaking, real sand on that beach.
 
 **Why it's funny:**
 > The reveal is not that Renata is older. Renata is the only person in the entire questline having a good time, and she stays that way from the first frame to the last. The reveal is that three grown men got *mothered, in front of each other,* understood it instantly, and unanimously agreed — without a word, without eye contact, forever — to never mention it again. From that silence the game builds forty minutes of transcontinental limping, six humiliating rejections, and a heist in opera capes, all in service of a piece of 1990 latex in a glass case. And the joke closes with the game's only sincere item: the Coin does exactly what the legend says it does. Everything the bros believed about that night was wrong. The only thing that was true was the advertising slogan.
@@ -69,7 +69,7 @@
 > "Chat — chat, I can't film this, out of respect. I'm gonna describe it later. I'm gonna describe it *so well*."
 
 **Pass 3 — Bradley, at the edge of the sand.** *(POV: goggles render. Identical asset.)*
-> "Gregory's staying in the bag tonight. Gregory doesn't need to see this."
+> "Gregory's sitting this one out. Gregory doesn't need to see this."
 
 *Three men. One party. One woman, who is dancing near the good speaker and is not thinking about any of them.*
 
@@ -88,28 +88,38 @@
 
 **Phase 2 — Morning**
 
-*Seagulls. Flat grey light. The sound system is a corpse on a folding table. Two bros are upright and destroyed. The third is cocooned in a sleeping bag, wearing only a leopard-print male thong that is not his.*
+*Seagulls. Flat grey light. The sound system is a corpse on a folding table. **Chadwick and Bradley** are upright and destroyed — sand-crusted, sunburnt in one stripe, wearing most of last night. **Lord Pilsner** is cocooned in a sleeping bag, wearing only a leopard-print male thong that is not his.*
 
-**Bro #1:** "Bro. Whose is this."
+> **Casting (author-locked):** thong-bro is **Lord Pilsner**, always, on every playthrough. Chadwick and Bradley are the standing bros. This is fixed and is not assigned at scene setup.
 
-**Thong Bro:** "...Mine now?"
+**Chadwick** *(holding up an item of clothing he has already decided not to think about)*: "Bro. Whose is this."
 
-> **Scene-dressing rule (binding):** the leopard-print thong is **props only.** It has no item ID, is never added to inventory, is never minted as an item anywhere in the repo, and is **never** established as Renata's. It was at the party. Many things were at the party.
+**Lord Pilsner** *(from inside the bag, not opening his eyes)*: "...Mine now?"
+
+*[ACQUIRED: `item_leopard_print_thong` — Lord Pilsner, permanent]*
+
+> **Thong item rule (author-locked, binding — supersedes the earlier props-only working rule):** the leopard-print thong **is a real item.** `item_leopard_print_thong`, permanent and equippable, full spec at `Design/Inventory/items/leopard_print_thong_item.md` (Lane C owns that file; this quest file does not define it). It is **granted automatically to Lord Pilsner** during this beat — **"...Mine now?" IS the acquisition line**, and the inventory-grant stinger fires on it. It cannot be sold, dropped, or traded. He is already wearing it, and there is no point in the game at which he stops.
+>
+> **Its original owner is NEVER established. This is permanent canon.** Not Renata's, not any named NPC's, not any unnamed NPC's — no line of dialogue, examine text, tooltip, item description, achievement string, or later pass anywhere in the repo ever answers the question. It was at the party. Many things were at the party. Any content that resolves the mystery is a defect.
 
 **Phase 3 — The Exit**
 
-*Renata rises from the other side of the sleeping bag, fully and sensibly dressed — linen shirt buttoned, wrap skirt tied, sandals fastened. She redressed before she slept. Enormous sunglasses go on before she is fully upright. She stretches once, checks the sky the way farmers check the sky, and shoulders her tote.*
+*Renata rises from the other side of the sleeping bag and she is **stunning.** Fully and impeccably put together — linen crisp, everything buttoned, tied and fastened, gold chain sitting exactly where it sits, not one thing about her improvised. Decades-deep bronze catching the low morning light. She redressed before she slept, because of course she did. Enormous sunglasses go on before she is fully upright. She stretches once, checks the sky the way farmers check the sky, and shoulders her tote.*
 
-> **Camera rule (binding):** there is **no** reveal sting, no zoom, no horror chord, no reaction-frame push, and no slow pan pointed at Renata's sprite — not here, not ever. When the goggles drop, the reveal music, the zoom, and the reaction frames land on **the bros' faces and on the thong.** The camera treats Renata exactly as it treats any other local: normally. Her exit is warm, unhurried, and entirely on her own schedule. Any "shock reveal" framing aimed at her is a tone break and a defect.
+*The framing is a straight comparison and it is not close: one woman at ease in flattering morning light, and three sand-crusted men in the wreckage of their own night, one of whom is in a sleeping bag in someone else's underwear.*
+
+> **Appearance rule (author-locked, binding):** Renata is genuinely hot at 55 and **stunningly, impeccably dressed** in this scene. Her sun worship reads as **texture, never decay** — bronze, ease, and total self-possession. **The goggles' lie was her AGE, not her looks.** She was never a downgrade and is never written, lit, storyboarded, or rendered as withered, gross, or a cautionary tale. She is the confident older woman doing precisely what celebrated men are congratulated for, without a shred of shame. **The bros' morning horror is the age-and-legend reveal plus The Herp — never her appearance.** The satire target is the double standard itself: she visibly IS a queen; they visibly were the haul.
+
+> **Camera rule (binding):** there is **no** reveal sting, no zoom, no horror chord, no reaction-frame push, and no slow pan pointed at Renata's sprite — not here, not ever. When the goggles drop, the reveal music, the zoom, and the reaction frames land on **the bros' faces and on the thong.** The camera treats Renata exactly as it treats any other local: normally. If anything, she is the best-lit thing in the frame, and the frame should not apologise for it. Her exit is warm, unhurried, and entirely on her own schedule. Any "shock reveal" framing aimed at her is a tone break and a defect.
 
 **QUEEN Riviéra Renata** *(bright, unhurried, entirely at ease)*:
 > "Ah — good, the sun's up. Drink water, all of you. Not beer. Water."
 
-*She crosses to the two standing bros and pats each one on the cheek — exactly, identically, unmistakably the way their mothers do. Neither of them moves. Neither of them looks at the other.*
+*She crosses to **Chadwick and Bradley** and pats each one on the cheek — exactly, identically, unmistakably the way their mothers do. Neither of them moves. Neither of them looks at the other.*
 
 > **Animation rule (binding):** `cheek_pat`, twice, same animation, same timing, same warmth, no variation. The identical treatment of all three men **is** the reveal. No cross-referencing dialogue between the bros. No clarifying reaction line, ever, in any later pass — the clarification is what would ruin it.
 
-*She turns to thong-bro, throws both arms around his neck, and plants a big kiss on his mouth. It is affectionate, it is unhurried, and it is the last thing that happens to him for the rest of the questline.*
+*Then she turns to **Lord Pilsner**, still in the bag, throws both arms around his neck, and plants a big kiss on his mouth. It is affectionate, it is unhurried, and it is the last thing that happens to him for the rest of the questline.*
 
 *Then she jogs off down the beach, tote over one shoulder, calling back over it:*
 
@@ -136,24 +146,31 @@
 
 *All three bros begin, in unison, to itch. `the_herp` is applied to the entire party, scripted, guaranteed, no roll, no save, no path in which any bro is spared. The waist-level `heat_shimmer` particle comes up on all three at once.*
 
-**Lord Pilsner** *(scratching with the heel of his hand, thinking hard)*: "Okay. Okay. Diagnostic. Everybody itching?"
+*Lord Pilsner has not gotten up. He is still cocooned, still in the thong, staring at the sky, scratching through the bag with the heel of his hand and thinking harder than he has thought all summer. He runs the entire diagnosis from in there.*
+
+**Lord Pilsner** *(from inside the sleeping bag, flat on his back)*: "Okay. Okay. Diagnostic. Everybody itching?"
 
 **Chadwick:** "Everybody's itching."
 
 **Bradley:** "There was DEFINITELY foliage at that beach party."
 
-**Lord Pilsner** *(instant, total relief)*: "POISON IVY. Thank God. Boys, that's poison ivy."
+*A pause. Inside the bag, a man arrives at the most comforting conclusion available to him and is instantly, enormously relieved.*
+
+**Lord Pilsner** *(still horizontal, still in the bag, with the authority of a diagnosis handed down from above)*:
+> "POISON IVY. Thank God. Boys, that's poison ivy."
 
 **Chadwick:** "We walked through something."
 
 **Bradley:** "We walked through a LOT of something."
 
-*A beat. Bradley stops walking. He looks down. He looks up. He delivers it to the open air, with the gravity of a man reporting a symptom to a medical professional:*
+*Lord Pilsner finally sits up, then stands, then remembers what he is wearing, and elects — visibly, in real time — not to address it. The three of them start walking.*
+
+*A beat. Bradley stops. He looks down. He looks up. He delivers it to the open air, with the gravity of a man reporting a symptom to a medical professional:*
 
 **Bradley:**
 > "Bro it itches so bad it looks like we got CRABS."
 
-**Lord Pilsner** *(not slowing down)*: "It's ivy, Brad."
+**Lord Pilsner** *(not slowing down, not turning around, still in the thong)*: "It's ivy, Brad."
 
 **Bradley:** "I'm just saying what it LOOKS like."
 
@@ -319,7 +336,7 @@
 *Lord Pilsner does not read the placard first. He does not need to. He has known this object since he was fourteen years old and watched a rented tape in a friend's basement, and he recites the line from memory, out loud, in a luxury haberdashery in Sinfonia, with his hand flat on the glass:*
 
 **Lord Pilsner** *(reverent, word-perfect, wrong venue)*:
-> "...the condom of champions, the one and only… nothin' is gettin' through this sucker."
+> "the condom of champions, the one and only… nothin' is gettin' through this sucker."
 
 *A shop assistant stops walking. An aristocrat customer does not look up, because an aristocrat customer never looks up.*
 
@@ -382,7 +399,7 @@
 
 **Rewards:**
 - **Item:** `item_gold_circle_coin` — party-wide `the_herp` suppression while equipped by ANY bro; cannot be sold, dropped, or traded
-- **Stat Change:** +2 Charm (Valued Client bearing), +1 Bravado
+- **Stat Change:** +2 Charm (Valued Client bearing), +1 Bravado — **quest-completion character stat changes, awarded once on resolving PATH A. These are NOT item stats.** The Gold Circle Coin itself carries **Charm: +0 flat** per `Design/Inventory/items/gold_circle_coin_item.md`; it grants suppression, not bonuses, and equipping or unequipping it never moves these numbers. The two are independent and both are correct.
 - **Status:** `the_herp` **suppressed** (never cured); title "Valued Client" applies at the Haberdashery permanently
 - **Unlocks:** Achievement "Nothing Is Getting Through"; Aiguille's post-quest greeting-by-name branch on every subsequent shop entry; all six post-cure re-attempts; the Post-Credits scene
 
@@ -425,7 +442,7 @@
 
 **Rewards:**
 - **Item:** `item_gold_circle_coin` — identical item, identical suppression, identical restrictions. **Both paths deliver exactly the same Coin.** The Coin does not care how it was obtained; neither does the game.
-- **Stat Change:** +3 Bravado, −1 Charm at the Haberdashery only (Aiguille is never rude about it, which is the penalty)
+- **Stat Change:** +3 Bravado, −1 Charm at the Haberdashery only (Aiguille is never rude about it, which is the penalty) — **quest-completion character stat changes, not item stats.** The Coin is Charm: +0 flat on both paths.
 - **Status:** `the_herp` **suppressed** (never cured); "Valued Client" applies if the formal-wear spend crossed €500, which it usually does, accidentally
 - **Unlocks:** Achievement "Nothing Is Getting Through"; the Night Porter's recurring pose compliment; all six post-cure re-attempts; the Post-Credits scene
 
@@ -476,7 +493,7 @@
 
 ### Easter Eggs
 
-- **The empty sleeping bag** stays on Fauxst Beach for the rest of the game, cocooned, uncollected, examinable. Examine text: *"Somebody's still got a thong situation to resolve. It is not being discussed."*
+- **The empty sleeping bag** stays on Fauxst Beach for the rest of the game, cocooned, uncollected, examinable. Examine text: *"Somebody left in a hurry, and somebody left in less than he arrived in. Neither is being discussed."* *(Examine text never speculates about the thong's owner and never will.)*
 - **The burgundy presentation sleeve** (PATH A only) is a separate, keepable, worthless inventory object. Examining it shows Aiguille's handwriting: a care instruction, in French, that no bro has translated.
 - **The night porter's torch** (PATH B only) hangs on its hook by the service door on every subsequent visit, and the two display plinths the bros stood on have been quietly re-labeled by someone as **"3."**
 - **The Recovery Aisle** at Midnight Munchies stays greyed out for this party for the entire rest of the game, tooltip unchanged: *"Věra has already explained this."*
@@ -716,7 +733,10 @@ and did, for once, exactly what it promised.
 | No horror sting, zoom, or reveal camera pointed at her sprite | ✅ |
 | Goggles render is bros-POV-only, identical asset ×3, never neutral camera | ✅ |
 | Věra's certainty sourced to the beach only; she never says Renata's name | ✅ |
-| Leopard-print thong is scene dressing — no item ID, never established as hers | ✅ |
+| Thong-bro is Lord Pilsner, author-locked, every playthrough | ✅ |
+| Thong is `item_leopard_print_thong`, granted to Pilsner on "...Mine now?" | ✅ |
+| Thong's original owner never established — permanent canon, no exceptions | ✅ |
+| Renata's morning exit is stunning; goggles' only lie was her age | ✅ |
 | All eight required beats present and in order | ✅ |
 | All canonical verbatim quotes ship exactly | ✅ |
 | Six ladies referenced by pointer only — no scene text duplicated here | ✅ |
@@ -749,10 +769,12 @@ and did, for once, exactly what it promised.
 - Hold the two-shot one beat longer than feels comfortable in the edit. The discomfort is the payload, and it belongs entirely to the bros.
 - **Do not add a clarifying reaction line** in a later pass. The clarification is what would ruin it.
 
-### The Thong
-- Props/scene-dressing only: **no item ID, no inventory grant, no icon, no items-JSON entry, ever.** If a later pass mints one, that is a defect.
-- **It is never established as Renata's**, in any line, examine text, or tooltip, anywhere in the repo.
-- Thong-bro is assigned at scene setup; the quest reads correctly with any of the three. Ship one and lock it.
+### The Thong (author-locked — supersedes the earlier props-only working rule)
+- **It is a real, permanent, equippable item:** `item_leopard_print_thong`. Full spec at `Design/Inventory/items/leopard_print_thong_item.md` — **that file is Lane C's**; this quest file stages the grant and does not define the item's stats, icon, or effects.
+- **Granted automatically to Lord Pilsner** at the outbreak morning. **"...Mine now?" is the acquisition line** — fire the inventory-grant stinger on it, not before and not after. Do not add a pickup prompt, a confirmation, or a "take/leave" choice; the item is already on him.
+- **Cannot be sold, dropped, or traded.** He never takes it off, and no later scene depicts him taking it off.
+- **The original owner is NEVER established. Permanent canon.** Not Renata's, not any named or unnamed NPC's. No dialogue line, examine text, tooltip, item description, achievement string, ICQ message, or post-credits beat anywhere in the repo ever answers it. Any content that resolves the mystery is a defect, including content that resolves it as a joke.
+- **Thong-bro is Lord Pilsner, author-locked, every playthrough.** Chadwick and Bradley are the standing bros and receive the cheek-pats; Pilsner receives the neck-hug and the kiss. This is no longer assigned at scene setup and must not be re-parameterised.
 
 ### Věra's Refusal
 - Věra must never lie and never insinuate. Her whole scene is a woman correcting a botanical error at seven in the morning. Every fact she states is sourced to **fifteen years of watching that beach**, including watching the sand arrive in a truck.
