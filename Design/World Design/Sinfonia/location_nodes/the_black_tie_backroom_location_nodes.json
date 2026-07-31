@@ -276,7 +276,7 @@
     "external_connections": [
       {"from": "hidden_entrance", "to": "sinfonia_bassline_opera_house_01", "type": "backstage_door", "condition": "secret_discovered"},
       {"from": "vault_antechamber", "to": "sinfonia_hidden_baroness_ballroom_01", "type": "vault_network", "condition": "keys_obtained"},
-      {"from": "foyer", "to": "sinfonia_imperalsquare_haute_couture_01", "type": "economic_dependency", "condition": "black_tie_attire_required"}
+      {"from": "foyer", "to": "sinfonia_imperialsquare_haute_couture_01", "type": "economic_dependency", "condition": "black_tie_attire_required"}
     ],
     "quest_path": {
       "kings_were_humming_entry": "foyer (Viktor check, €500 collateral) → main_floor → aarons_corner_table",

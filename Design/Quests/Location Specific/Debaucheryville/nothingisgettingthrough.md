@@ -411,7 +411,7 @@
 
 #### BEAT 6 — THE HABERDASHERY
 
-*Haute Couture Haberdashery, Imperial Square, Sinfonia (`sinfonia_imperalsquare_haute_couture_01`). Marble, chandeliers, a bell over the door that announces arrivals judgmentally. Three men in cargo shorts enter with a visible waist-level heat shimmer and a tattoo-parlor theory.*
+*Haute Couture Haberdashery, Imperial Square, Sinfonia (`sinfonia_imperialsquare_haute_couture_01`). Marble, chandeliers, a bell over the door that announces arrivals judgmentally. Three men in cargo shorts enter with a visible waist-level heat shimmer and a tattoo-parlor theory.*
 
 **The snub (plays first, unmodified).** The shop's **existing Assessment Protocol** fires exactly as written in its own file — door chime in the disappointed tone, assessing gaze, polite greeting with subtle emphasis on "help," guided toward "accessible" options first. **Nothing about the Assessment Protocol is altered or softened for this quest.** It is played completely straight, it is the shop's normal operating procedure, and it is also, structurally, the snub: three underdressed people are quietly informed by an entire building that they do not belong in it. A Groin Blurt fires roughly halfway through. Monsieur Aiguille does not react to it, which is worse than reacting to it.
 

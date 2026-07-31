@@ -8,7 +8,7 @@
 - **Internal Name**: The Night Porter. Thirty-one years of payslips have his name on them. No scene in this game uses it, and none ever will.
 - **Role**: After-Hours Security / Stealth-Sequence Presence / Post-Quest Callback NPC
 - **Associated Quest**: "Nothing Is Getting Through" (`debaucheryville_sidequest_nothing_is_getting_through_01`) — PATH B, the mannequin beat
-- **Primary Location**: Haute Couture Haberdashery (`sinfonia_imperalsquare_haute_couture_01`), Imperial Square, Sinfonia — after 7 PM only
+- **Primary Location**: Haute Couture Haberdashery (`sinfonia_imperialsquare_haute_couture_01`), Imperial Square, Sinfonia — after 7 PM only
 - **Secondary Appearances**: The service door and its torch hook, on every subsequent visit, at any hour
 
 ---

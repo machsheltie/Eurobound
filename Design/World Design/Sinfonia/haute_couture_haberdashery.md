@@ -3,7 +3,7 @@
 *Where the fitting rooms have more mirrors than a funhouse, the tailor knows your flaws before you undress, and "off the rack" is a phrase that causes physical pain*
 
 ## Location Identity
-- **Location ID**: sinfonia_imperalsquare_haute_couture_01
+- **Location ID**: sinfonia_imperialsquare_haute_couture_01
 - **Display Name**: Haute Couture Haberdashery
 - **Satirical Subtitle**: "You Can't Afford to Look This Good (But You Will)"
 - **World Location**: Sinfonia
@@ -391,11 +391,12 @@ When trying on equipment:
 - champagne_service.png - 96x96 - Refreshment detail
 - private_fitting.png - 256x384 - VIP room
 
-### Character Sprites (6 PNGs)
+### Character Sprites (7 PNGs)
 - monsieur_aiguille.png - 64x96 - Head tailor (assessing)
 - monsieur_aiguille_approval.png - 64x96 - Rare satisfaction
 - monsieur_aiguille_measuring.png - 64x96 - Active fitting
 - shop_assistant.png - 64x96 - Helper NPC
+- night_porter.png - 64x96 - Night porter (PATH B)
 - aristocrat_customer.png - 64x96 - Background elite
 - nervous_tourist.png - 64x96 - Background comparison
 

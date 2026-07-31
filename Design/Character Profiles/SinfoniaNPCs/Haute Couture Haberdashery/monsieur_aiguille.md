@@ -8,7 +8,7 @@
 - **Internal Name**: Monsieur Aiguille, Head Tailor. *Aiguille* is French for *needle*, which makes this shop, literally, the House of Needles. He has never once made this observation about himself and would consider it beneath the profession.
 - **Role**: Shop Interface / Head Tailor / Fitting Authority / Quest Giver (PATH A errand) / Keeper of the Vitrine
 - **Associated Quest**: "Nothing Is Getting Through" (`debaucheryville_sidequest_nothing_is_getting_through_01`) — PATH A quest giver and handover; also "Dress for Success," "The Emperor's Ensemble," "Fashion Critic," "Patron of Fashion"
-- **Primary Location**: The Showroom, Haute Couture Haberdashery (`sinfonia_imperalsquare_haute_couture_01`), Imperial Square, Sinfonia
+- **Primary Location**: The Showroom, Haute Couture Haberdashery (`sinfonia_imperialsquare_haute_couture_01`), Imperial Square, Sinfonia
 - **Secondary Appearances**: The Fitting Rooms (summoned by bell, already on his way), the Accessories Alcove (the vitrine is his and only his), the Alteration Workshop behind the glass wall
 
 ---
