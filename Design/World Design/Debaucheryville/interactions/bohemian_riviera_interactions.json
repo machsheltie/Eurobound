@@ -454,6 +454,113 @@
           "value": true
         }
       ]
+    },
+
+    {
+      "event_id": "night_event_outbreak_01",
+      "display_name": "The Outbreak (All-Night Party, Scripted Trio Event)",
+      "event_type": "dialogue_sequence",
+      "trigger": {
+        "type": "location_entry",
+        "condition": "Party enters night_party_zone during night-rave hours after beatdown_complete == true. Scripted and guaranteed — not avoidable, not skill-gated, not branchable. Origin point of debaucheryville_sidequest_nothing_is_getting_through_01."
+      },
+      "duration_seconds": 180,
+      "sequence": [
+        {
+          "phase": "party_montage_beer_goggles",
+          "duration_seconds": 45,
+          "description": "Strobes, string lights, sound system. Beer goggles are rendered LITERALLY: three separate through-the-goggles moments, three oblivious bros, each unaware of the other two. The goggles render is a bros'-POV filter only and is never her actual appearance.",
+          "animation": "beer_goggles_filter_pass",
+          "audio": "night_party_sound_system"
+        },
+        {
+          "phase": "locals_namedrop",
+          "duration_seconds": 10,
+          "description": "Background dialogue from Riviera locals, spoken with genuine respect and mild awe. The bros do not connect the name to anyone in the room.",
+          "speaker": "riviera_locals_background",
+          "dialogue": "Renata's here somewhere tonight—"
+        },
+        {
+          "phase": "morning_seagulls",
+          "duration_seconds": 15,
+          "description": "Hard cut to morning. Gulls that are almost certainly pigeons. Regret. Two bros upright, one cocooned in a sleeping bag.",
+          "audio": "gulls_and_flat_morning_river"
+        },
+        {
+          "phase": "thong_discovery",
+          "duration_seconds": 15,
+          "description": "The two standing bros register the leopard-print male thong, which is not his. Implication only — no graphic content, morning-after wreckage exclusively.",
+          "speaker": "standing_bro",
+          "dialogue": "Bro. Whose is this."
+        },
+        {
+          "phase": "thong_discovery_reply",
+          "duration_seconds": 8,
+          "speaker": "thong_bro",
+          "dialogue": "...Mine now?"
+        },
+        {
+          "phase": "renata_exit",
+          "duration_seconds": 25,
+          "description": "Renata rises from the other side of the sleeping bag, fully and sensibly dressed, sunglasses on. She pats each standing bro on the cheek exactly the way their mothers would, throws her arms around thong-bro's neck, kisses him on the mouth, and jogs off down the beach. She got exactly what she came for and is entirely at ease. She is not the joke.",
+          "speaker": "debaucheryville_npc_queen_riviera_renata_01",
+          "dialogue": "You're such nice boys!",
+          "animation": "maternal_cheek_pats_then_jog_exit"
+        },
+        {
+          "phase": "the_queen_correction",
+          "duration_seconds": 10,
+          "description": "Mid-exit, the bros finally connect the name they heard all night. She answers with a wink, pride in her voice, and serious swagger.",
+          "speaker": "debaucheryville_npc_queen_riviera_renata_01",
+          "dialogue": "That's QUEEN Riviéra Renata to you!",
+          "animation": "wink_over_shoulder_mid_jog"
+        },
+        {
+          "phase": "the_itch",
+          "duration_seconds": 20,
+          "description": "The identical maternal affection delivered to all three IS the reveal. No cross-referencing dialogue. All three begin itching in unison.",
+          "speaker": "narrator",
+          "dialogue": "Nobody said it out loud.",
+          "animation": "unison_scratch"
+        },
+        {
+          "phase": "poison_ivy_self_diagnosis",
+          "duration_seconds": 12,
+          "description": "Serene confidence, unbroken. The diagnosis is wrong and will remain wrong across two cities.",
+          "speaker": "lord_pilsner",
+          "dialogue": "Relax. Poison ivy. There was DEFINITELY foliage at that beach party."
+        },
+        {
+          "phase": "bradley_crabs_line",
+          "duration_seconds": 10,
+          "speaker": "bradley",
+          "dialogue": "Bro it itches so bad it looks like we got CRABS.",
+          "note": "Canon-locked verbatim."
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "apply_status",
+          "target": "the_herp",
+          "value": "all_three_bros_simultaneously_permanent"
+        },
+        {
+          "effect": "set_state",
+          "target": "outbreak_seen",
+          "value": true
+        },
+        {
+          "effect": "start_quest",
+          "target": "debaucheryville_sidequest_nothing_is_getting_through_01",
+          "value": "Next beat is Věra's refusal at Midnight Munchies General Store, off-site from this location"
+        },
+        {
+          "effect": "narrator_line",
+          "target": "post_outbreak",
+          "value": "Nobody said it out loud."
+        }
+      ],
+      "note": "Staging stub only. This entry registers the event id, its trigger, its guaranteed outcome, and the canon-locked verbatim lines. Full scene text, direction, and branch prose are owned by Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md; Renata's design, sprites (true self plus the bros'-POV goggles render), and her side of the exit are owned by Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md. Do not expand this entry into a second copy of the scene."
     }
   ],
 
@@ -705,6 +812,7 @@
     "on_prize_podium_win": "A hamster in a wizard hat and a beach-appropriate speedo pinned a plastic star to a man's chest, and told him the truth about his future in capital letters, and he did not hear a word of it, because the star was shiny and the crowd was loud and he was, at long last, being looked at.",
     "on_janek_thrown_answer": "Janek Sýkora had not choked. Janek Sýkora had briefly stopped participating, which is a different thing, and which is available to anyone who does not need the prize.",
     "on_disqualification": "House rules. No devices in the toilet. Chadwick's stream ends on the splash and the VOD auto-saves.",
-    "on_exit": "The catapult stays. It is never dismantled. Between filming days it is simply there, on a beach, roped off with hazard tape."
+    "on_exit": "The catapult stays. It is never dismantled. Between filming days it is simply there, on a beach, roped off with hazard tape.",
+    "on_outbreak_morning": "Nobody said it out loud."
   }
 }

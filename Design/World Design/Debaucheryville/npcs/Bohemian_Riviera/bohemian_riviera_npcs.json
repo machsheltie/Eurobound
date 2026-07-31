@@ -431,6 +431,30 @@
 
       "voice_direction": "Brisk, transactional, entirely unsentimental about the fly particles trailing behind every customer.",
       "sprite_sheet": "zdenka_shower_vendor.png"
+    },
+
+    {
+      "npc_id": "debaucheryville_npc_queen_riviera_renata_01",
+      "display_name": "QUEEN Riviéra Renata",
+      "npc_type": "ambient",
+      "role": "Bohemian Riviera institution; present at the all-night party in night_party_zone on the night of night_event_outbreak_01",
+      "location_zone": "night_party_zone",
+      "behavior": "triggered",
+      "full_profile": "Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md",
+
+      "schedule": {
+        "present_hours": "Night-rave hours (22:00-04:00), night_party_zone, after beatdown_complete",
+        "absent_reason": "Wherever the next party is"
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_nothing_is_getting_through_01",
+          "role": "outbreak_scene_npc"
+        }
+      ],
+
+      "note": "Presence registration only. Appearance, personality, dialogue (including her canon-locked verbatim lines), sprite sheets — her true self plus the bros'-POV beer-goggles render, which is a filter and never her actual appearance — her rejection scene, and her post-cure callback are ALL owned by queen_riviera_renata.md and are deliberately not restated here. The outbreak scene itself is staged in interactions/bohemian_riviera_interactions.json (night_event_outbreak_01) and written in the quest file."
     }
   ],
 

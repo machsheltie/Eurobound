@@ -68,6 +68,12 @@ NEGATIVE STATUS EFFECTS 💀
     • Source: Being launched into the Bacchanus in a loaded port-o-potty (Bacchanus Beach Beatdown loss) 
     • Special: Swimming in the Bacchanus to "rinse off" REFRESHES the duration 
     • Description: "You smell like second place" 
+"The Herp"
+    • -2 Charm with all NPCs, romance and couchsurf attempts auto-trigger the target NPC's characterized rejection scene, rare involuntary "Groin Blurts" interrupt any dialogue ("DOES ANYONE HAVE A BAG OF FROZEN PEAS?!" / "IT'S JUST A RASH, I SWEAR!"), subtle waist-level heat-shimmer particle follows you, NPCs visibly step back 
+    • Duration: Permanent. Never cured — only suppressed while `item_gold_circle_coin` is equipped (any one bro suppresses the whole party; unequip and the shimmer returns on all three) 
+    • Source: The scripted outbreak at the Bohemian Riviera `night_party_zone` (`night_event_outbreak_01`, `debaucheryville_sidequest_nothing_is_getting_through_01`); Věra refuses every standard cure — "European strains require cinematic-grade containment." 
+    • Special: All three bros carry it simultaneously, always. No temporary suppressant exists anywhere in the game. The waist-level shimmer REUSES the Bohemian Riviera effects atlas asset `heat_shimmer.png` — no new particle asset 
+    • Description: "It's poison ivy. There was DEFINITELY foliage at that beach party" 
 
 NEUTRAL/SITUATIONAL EFFECTS ⚖️
 "Food Poisoning"

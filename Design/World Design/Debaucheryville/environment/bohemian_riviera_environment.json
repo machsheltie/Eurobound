@@ -39,7 +39,7 @@
 
   "status_effects": {
     "environmental_buffs": [],
-    "atmospheric_debuffs": ["port_o_cologne"],
+    "atmospheric_debuffs": ["port_o_cologne", "the_herp"],
     "location_specific_states": {
       "port_o_cologne": {
         "canonical_ref": "Design/Mechanics/Battle/status_effects.md#Port-O-Cologne",
@@ -54,9 +54,27 @@
         "special": "bacchanus_swim_refreshes",
         "visual_indicator": "fly_swarm_particle_trail",
         "description": "A fly swarm trails any party member who has been launched into The Bacchanus and waded ashore. \"You smell like second place.\""
+      },
+      "the_herp": {
+        "canonical_ref": "Design/Mechanics/Battle/status_effects.md#The-Herp",
+        "trigger": "night_event_outbreak_01 at night_party_zone (debaucheryville_sidequest_nothing_is_getting_through_01) — scripted, guaranteed, applied to all three bros at scene end",
+        "duration": "permanent_never_cured_suppressed_only_while_item_gold_circle_coin_equipped",
+        "effects": {
+          "charm_modifier": -2,
+          "romance_locked": true,
+          "romance_lock_behavior": "couchsurf and romance attempts auto-route to the target NPC's characterized rejection scene",
+          "groin_blurts": "rare involuntary dialogue interruptions (\"DOES ANYONE HAVE A BAG OF FROZEN PEAS?!\" / \"IT'S JUST A RASH, I SWEAR!\")",
+          "npc_reaction": "NPCs visibly step back"
+        },
+        "special": "no_temporary_suppressant_exists_anywhere; suppression is party-wide while ANY bro has item_gold_circle_coin equipped, and returns on all three the moment it is unequipped",
+        "visual_indicator": "waist_level_heat_shimmer_particle_reusing_heat_shimmer_png",
+        "description": "Contracted here, diagnosed by the bros as poison ivy, and carried out of Debaucheryville. Věra refuses every standard cure at Midnight Munchies: \"European strains require cinematic-grade containment.\""
       }
     },
-    "recovery_options": ["zdenka_riverbank_shower_cart_50kc_or_40kc_if_immediate"]
+    "recovery_options": [
+      "port_o_cologne: zdenka_riverbank_shower_cart_50kc_or_40kc_if_immediate",
+      "the_herp: none — no cure and no temporary suppressant exists at this location or anywhere in the game; suppression only, via item_gold_circle_coin"
+    ]
   },
 
   "couchsurf_integration": {
@@ -86,7 +104,7 @@
       "hours": "22:00-04:00, post-Beatdown-completion only",
       "lighting": "string_light_pools_emtv_magenta_bar_tv_glow_lifeguard_spotlight_sweep",
       "crowd_density": "high",
-      "special_notes": "night_party_zone unlocks and activates — string lights, migrating sound system, crowd that arrives from nowhere and stays until sunrise. Bar-strip TVs loop the aired episode at low volume under the music once episode_airing is true. This is the seed for a future 'Herp' questline — hook only, no new mechanics beyond ambient party dressing. Rosta's retrieval station goes quiet; port-o-potty monuments are lit by string lights and function as informal seating."
+      "special_notes": "night_party_zone unlocks and activates — string lights, migrating sound system, crowd that arrives from nowhere and stays until sunrise. Bar-strip TVs loop the aired episode at low volume under the music once episode_airing is true. This is the seed for a future 'Herp' questline — hook only, no new mechanics beyond ambient party dressing. Rosta's retrieval station goes quiet; port-o-potty monuments are lit by string lights and function as informal seating. On the questline's scripted party night this window also stages night_event_outbreak_01 (debaucheryville_sidequest_nothing_is_getting_through_01) — event wiring lives in interactions/bohemian_riviera_interactions.json; ambient dressing here is unchanged."
     },
     "late_night": {
       "lighting": "streetlamp_pools_and_dim_string_light_afterglow",
@@ -146,6 +164,13 @@
       "color": "#5E7350",
       "density": "medium",
       "movement": "10_max_trailing_swarm"
+    },
+    "the_herp_heat_shimmer": {
+      "type": "ambient",
+      "source": "affected_party_member_waist_level",
+      "color": "#FF7F32",
+      "density": "sparse",
+      "movement": "subtle_waist_level_distortion_reuses_heat_shimmer_png_from_the_effects_atlas_no_new_asset"
     },
     "string_light_glow_bloom": {
       "type": "ambient",

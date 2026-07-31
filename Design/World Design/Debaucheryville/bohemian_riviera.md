@@ -31,6 +31,7 @@
   - The aired episode begins looping on `bar_strip` bar TVs approximately one in-game day after quest resolution
   - Riverbank port-o-potty monuments (fished out by the boat-hook retrieval man) become permanent, navigable landmarks along the embankment after first completion
   - `Astronomical Cock-Up Square` and `Velvet Curtain Club` gain Beatdown-outcome-specific NPC callback dialogue once the quest resolves
+  - Unlocking `night_party_zone` also arms the scripted outbreak event `night_event_outbreak_01`, the origin point of `debaucheryville_sidequest_nothing_is_getting_through_01` (see Quest Integration)
 
 ---
 
@@ -111,6 +112,7 @@ Three named beach bars line the embankment behind Fauxst Beach, each committing 
 - Locked until the Beatdown resolves (win, loss, or disqualification) at least once
 - String lights strung between the bar strip's awnings and the lifeguard tower, a sound system that migrates nightly between whichever bar is paying for the generator, and a crowd that arrives from nowhere in particular and stays until sunrise
 - **This zone is a hook only** — the all-night party scene here is the seed for a future questline (working name "Herp") and is deliberately left undesigned beyond ambient dressing and unlock conditions in this document
+- **Hook now claimed**: that questline shipped as `debaucheryville_sidequest_nothing_is_getting_through_01`, and this zone is where its scripted outbreak event `night_event_outbreak_01` is staged. The line above still governs this file — only the event hook is registered here (see Quest Integration); the scene's beats, dialogue, and NPC design live in the quest and profile files
 
 ### Technical Specifications
 - **Color Palette**:
@@ -203,6 +205,8 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 
 ### Quest Integration
 - **Quest Hub Role**: Origin point for `debaucheryville_sidequest_bacchanus_beach_beatdown_01`, triggered on entry to `fauxst_beach` on any filming day
+- **Outbreak Event Hook — `night_event_outbreak_01`**: Origin point for `debaucheryville_sidequest_nothing_is_getting_through_01` ("Nothing Is Getting Through"), staged at `night_party_zone` during Night Rave hours once that zone is unlocked. Scripted and guaranteed — all three bros wake with `the_herp`, all three diagnose poison ivy, and the questline leaves for Sinfonia from here
+- **Renata's Presence**: QUEEN Riviéra Renata, a Bohemian Riviera institution, is at the party that night; locals name-drop her in passing background dialogue ("Renata's here somewhere tonight—") and the bros never connect it. Her full design — appearance, dialogue, and her side of the morning exit — lives in `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md`; the scene itself lives in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`. Neither is duplicated in this file
 - **Repeat Visit Value**: Petra discloses the same complete script to every new sign-up group; Jaxson hosts every taping as "season one"; the bar-strip TV loop and riverbank port-o-potty monuments persist and accumulate after first completion
 - **Cross-Location Dependencies**: Beatdown-outcome dialogue at `Astronomical Cock-Up Square` (Shady Wristband Guy callback) and `Velvet Curtain Club` (bouncer badge-flash / half-step-back scenes)
 
@@ -305,6 +309,7 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 - `night_party_zone` unlocks and activates — string lights, migrating sound system, crowd that arrives from nowhere and stays until sunrise
 - Bar-strip TVs loop the aired Beatdown episode at low volume under the music once the episode has begun airing
 - **This is the seed for the future "Herp" questline — hook only, not designed in this document.** No new mechanics, NPCs, or narrative beats beyond ambient party dressing are specified here.
+- On the questline's scripted party night, `night_event_outbreak_01` fires during this window (see Quest Integration). The ambient dressing above is unchanged and no new location mechanics are authored for it here.
 - Riverbank retrieval station (Rosťa) goes quiet; port-o-potty monuments are lit by the string lights and function as informal seating
 
 ---
@@ -338,6 +343,7 @@ bohemian_riviera_state:
   - selected_bro: string (enum: lord_pilsner / chadwick / bradley / none)
   - bros_launched_count: integer (0-3)
   - night_party_seen: boolean
+  - outbreak_seen: boolean (night_event_outbreak_01 — "Nothing Is Getting Through")
   - filming_day_active: boolean
   - episode_airing: boolean (true ~1 in-game day after beatdown_complete)
   - port_o_cologne_active: boolean
@@ -390,6 +396,7 @@ bohemian_riviera_state:
 
 - The three named bar-strip venues (Žá Žá Beach Klub, The Tan Line, Kokos Loco) are location flavor only in this document — no shop inventory or NPC rosters are authored for them here; that is deferred to their own future location passes if the plan calls for it.
 - `night_party_zone` is deliberately underspecified per the brief: it exists as an unlock condition and ambient dressing only. Do not add Herp-questline mechanics, NPCs, or narrative beats to this file in a later pass — that belongs to its own future task.
+- That future task is now `debaucheryville_sidequest_nothing_is_getting_through_01`, and the note above still holds: this file carries the outbreak **hook** only (event id, quest id, staging zone, and a pointer to Renata's profile). Mechanics, scene beats, and NPC design remain out of this document by design — add them to the quest file or the profile, never here.
 - Rosťa, Standa, and Zdenka are new location NPCs authored here to absorb the minor characters the quest doc references but does not itself formally profile (the boat-hook retrieval man, the Fauxst Beach lifeguard, and the riverbank shower/`port_o_cologne` vendor). Their dialogue draws directly from `bacchanusbeachbeatdown.md` where the quest doc already quotes them verbatim (Zdenka's price line) and extrapolates lightly elsewhere, consistent with quest-doc canon (Rosťa's "entire job," Standa's tower staffing and "used the whistle twice").
 - The 40cm vs. 60cm water-depth discrepancy between the safety sign and Standa's own admission is an intentional bit, not an error to reconcile — it mirrors the quest doc's established pattern of total honesty changing nothing about what tourists choose to hear.
 - Zone tag IDs (`fauxst_beach`, `bar_strip`, `catapult_row`, `signup_table`, `prize_podium`, `night_party_zone`) are load-bearing for the downstream JSON data pass — do not rename them in a later revision without updating dependent files.

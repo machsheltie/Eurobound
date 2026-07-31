@@ -26,7 +26,8 @@
     "previous_locations": null,
     "special_conditions": {
       "catapult_show_active_only": "filming_day_active == true",
-      "quest_auto_trigger": "Entering fauxst_beach on any active filming day auto-triggers Petra's sign-up dialogue at signup_table (debaucheryville_sidequest_bacchanus_beach_beatdown_01)"
+      "quest_auto_trigger": "Entering fauxst_beach on any active filming day auto-triggers Petra's sign-up dialogue at signup_table (debaucheryville_sidequest_bacchanus_beach_beatdown_01)",
+      "outbreak_quest_hook": "night_party_zone (unlocked once beatdown_complete == true) stages the scripted event night_event_outbreak_01 during night-rave hours — origin point of debaucheryville_sidequest_nothing_is_getting_through_01. Guaranteed, not player-avoidable: all three bros leave the scene carrying the_herp. Event wiring lives in interactions/bohemian_riviera_interactions.json; scene design lives in the quest file."
     }
   },
 
@@ -92,6 +93,7 @@
     "selected_bro": null,
     "bros_launched_count": 0,
     "night_party_seen": false,
+    "outbreak_seen": false,
     "filming_day_active": false,
     "episode_airing": false,
     "port_o_cologne_active": false,
