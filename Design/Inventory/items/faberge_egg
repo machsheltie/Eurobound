@@ -1,0 +1,51 @@
+{
+  "item_id": "nft_abstract_expression_69",
+  "display_name": "\"Abstract Expression #69\"",
+  "type": "collectible_nft",
+  "category": "nft_wallet",
+  "rarity": "common_but_they_think_its_rare",
+  "acquisition": {
+    "location": "shamsterdam_gift_shop_anatomy_display",
+    "trigger": "examine_display_interaction",
+    "qr_scan_animation": true
+  },
+  "properties": {
+    "can_sell": false,
+    "can_delete": false,
+    "can_trade": false,
+    "takes_inventory_space": false,
+    "permanent": true,
+    "deletion_attempt_response": "The blockchain is forever, Bradley."
+  },
+  "visual": {
+    "pixel_art": "8bit_chocolate_penis_top_hat_monocle.png",
+    "background": "shamsterdam_flag_pattern",
+    "text_overlay": "CLASSY",
+    "font": "comic_sans",
+    "resolution": "intentionally_bad_47x47"
+  },
+  "metadata": {
+    "edition_number": 31847,
+    "total_editions": 47000,
+    "creator": "Dennis (CryptoBroArtCollective)",
+    "blockchain": "TulipChain (unverified)",
+    "mint_price": 2.00,
+    "current_value": 0.0003,
+    "percent_change": -99.7
+  },
+  "flavor_text": {
+    "short": "A pixelated chocolate penis wearing a top hat. You own this now. Forever.",
+    "long": "See artist_statement_popup",
+    "bros_assessment": {
+      "pilsner": "Finally, some CULTURE.",
+      "chadwick": "This is going in my portfolio.",
+      "bradley": "I don't understand art but I respect it."
+    }
+  },
+  "triggers_icq_popup": "cryptobro69_dick_nft_warning",
+  "battle_dialogue_pool": [
+    "We're CULTURED now. We own European digital art.",
+    "Our NFT portfolio is really coming together.",
+    "When TulipChain recovers, we're gonna be RICH."
+  ]
+}

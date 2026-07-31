@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnfc2r66t8iui"
-path="res://.godot/imported/256px-Earthbound_back_cover_redcross.jpg-af31af64f537503e1d1edb43129c2b4e.ctex"
+path="res://.godot/imported/256px-Earthbound_back_cover_redcross.jpg-3183e89bb4d8b9682e161fb9330ce683.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Ref Images/256px-Earthbound_back_cover_redcross.jpg"
-dest_files=["res://.godot/imported/256px-Earthbound_back_cover_redcross.jpg-af31af64f537503e1d1edb43129c2b4e.ctex"]
+source_file="res://Assets/Ref Images/256px-Earthbound_back_cover_redcross.jpg"
+dest_files=["res://.godot/imported/256px-Earthbound_back_cover_redcross.jpg-3183e89bb4d8b9682e161fb9330ce683.ctex"]
 
 [params]
 

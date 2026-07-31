@@ -1,0 +1,159 @@
+{
+  "locations": [
+    {
+      "name": "Euro Ink 4 Less",
+      "tag_id": "euro_ink_4_less",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Down a narrow alley off Astronomical Cock-Up Square, past a dumpster and between a 24-hour kebab shop and a suspicious currency exchange. Pink neon spills onto cracked concrete, the sign reading 'EURO INK 4 LESS' with the '4' flickering uncertainly. Hand-painted secondary signs promise 'WALK-INS WELCOME' and 'NO REGRETS' (with smaller text 'Mostly' visible on close inspection). Window stickers boast 'HYGENIC' (misspelled) and a license expired in 2019. The occasional scream from inside could be pain or could be the radio.",
+        "entry_condition": "Must trigger 'tattoo_decision_made' state at Astronomical Cock-Up Square. Tattoo Barker encounter required."
+      },
+      "interior": {
+        "theme": "Budget tattoo parlor where artistic vision exceeds artistic ability, and both artist and customer exist in mutual delusion",
+        "features": [
+          "entry_point",
+          "reception_counter: marta_sometimes_present",
+          "tattoo_station: viktor_primary_workspace",
+          "quest_npc: viktor_novak",
+          "quest_npc: marta_novak",
+          "flash_art_wall: suspiciously_many_birds",
+          "waiting_area: uncertain_customer_photos",
+          "shop_node: tattoo_services",
+          "mini_game: hold_still_tattoo",
+          "event_hook: tattoo_consultation",
+          "event_hook: design_review",
+          "event_hook: tattoo_reveal",
+          "selfie_prop: fresh_duck_tattoo_mirror",
+          "examinable: fake_license",
+          "examinable: guest_book_empty",
+          "hidden_area: back_room_mattress_visible"
+        ]
+      },
+      "functions": [
+        "Lord Pilsner's duck tattoo acquisition (permanent cosmetic)",
+        "Hold Still mini-game during tattooing process",
+        "Viktor NPC origin - recurring in other cities",
+        "Shop for additional tattoo services post-quest",
+        "Comedy set-piece: skeleton becomes duck through 'artistic interpretation'",
+        "Unlocks 'Lord Pilsner Special' menu item for return visits"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "euro_ink_4_less": {
+      "connects_to": [
+        {
+          "destination": "astronomical_cockup_square",
+          "direction": "west_alley",
+          "requirements": null,
+          "transition_type": "normal"
+        },
+        {
+          "destination": "24hr_kebab_shop",
+          "direction": "north_adjacent",
+          "requirements": null,
+          "transition_type": "normal"
+        }
+      ],
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+          "role": "quest_location",
+          "phase": "tattoo_acquisition"
+        },
+        {
+          "quest_id": "debaucheryville_sidequest_tramp_stamp_01",
+          "role": "primary_location",
+          "npc_trigger": "viktor_novak"
+        }
+      ],
+      "unlocks_at": [
+        {
+          "destination": "lord_pilsner_special_menu",
+          "condition": "tattoo_acquired"
+        }
+      ],
+      "recurring_connection": {
+        "viktor_appears_in": ["sinfonia_opera_ink", "publandia_shamrock_ink"],
+        "recognition_dialogue": true
+      }
+    }
+  },
+  
+  "feature_details": {
+    "tattoo_station_viktor_primary_workspace": {
+      "type": "service_point",
+      "npc": "viktor_novak",
+      "services_available": [
+        "skeleton_tattoo_becomes_duck",
+        "lord_pilsner_special",
+        "matching_friendship_duck",
+        "touch_up_service"
+      ],
+      "description": "Duct-taped adjustable chair, rolling cart of equipment, harsh spotlight. This is where skeletons become ducks."
+    },
+    
+    "mini_game_hold_still_tattoo": {
+      "type": "mini_game",
+      "mechanic": "tap_to_prevent_flinching",
+      "duration_seconds": 120,
+      "failure_consequence": "wobblier_duck_lines",
+      "success_consequence": "slightly_cleaner_duck_still_duck",
+      "description": "Player must tap at the right moments to prevent Lord Pilsner from flinching during the tattooing process."
+    },
+    
+    "event_hook_tattoo_reveal": {
+      "type": "comedy_climax",
+      "trigger": "mini_game_completion",
+      "key_moment": "Its clearly a duck. Lord Pilsner sees it backwards in mirror, loves it.",
+      "dialogue_highlight": "It's ARTISTIC INTERPRETATION. Europeans do things different.",
+      "permanent_effect": "duck_tattoo_on_lord_pilsner"
+    },
+    
+    "flash_art_wall_suspiciously_many_birds": {
+      "type": "examinable",
+      "easter_egg": "After examining 3 times, player notices all Viktor's 'skull' designs have beaks",
+      "description": "Walls covered in tattoo flash art. 90% skulls, flames, tribal, and Looney Tunes. A suspicious number of bird-like shapes in the 'skull' section."
+    },
+    
+    "shop_node_tattoo_services": {
+      "type": "shop",
+      "inventory": [
+        {"item": "skeleton_tattoo", "price_range": [50, 100], "result": "duck"},
+        {"item": "lord_pilsner_special", "price": 50, "unlock": "after_tattoo_acquired"},
+        {"item": "matching_friendship_duck", "price": 40, "unlock": "after_tattoo_acquired"},
+        {"item": "touch_up_service", "price": 25}
+      ],
+      "currency": "gold_euros"
+    },
+    
+    "selfie_prop_fresh_duck_tattoo_mirror": {
+      "type": "photo_opportunity",
+      "trigger": "tattoo_reveal_complete",
+      "screenshot_moment": "Lord Pilsner proudly showing duck tattoo in mirror, thinking its a skeleton",
+      "social_potential": "very_high"
+    },
+    
+    "hidden_area_back_room_mattress_visible": {
+      "type": "environmental_storytelling",
+      "visibility": "through_beaded_curtain",
+      "description": "Viktor's living quarters. Mattress on floor, personal items visible. He lives here.",
+      "player_implication": "This explains the dedication to his craft."
+    }
+  },
+  
+  "ambient_npcs": {
+    "marta_presence": {
+      "chance": 0.5,
+      "role": "receptionist_skeptical_commentary",
+      "dialogue_contribution": "Provides Czech-language asides and skeptical reactions"
+    }
+  },
+  
+  "post_credits_reference": {
+    "scene": "twin_peaks_reveal",
+    "element": "duck_tattoo_visible",
+    "punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - €50 for any duck-related design."
+  }
+}

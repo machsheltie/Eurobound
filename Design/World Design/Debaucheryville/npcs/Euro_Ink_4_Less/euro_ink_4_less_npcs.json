@@ -1,0 +1,167 @@
+{
+  "location_id": "debaucheryville_oldtown_euro_ink_4_less_01",
+  
+  "npcs": [
+    {
+      "npc_id": "viktor_novak_01",
+      "display_name": "Viktor",
+      "full_name": "Viktor Novák",
+      "npc_type": "service_provider",
+      "role": "owner_sole_artist",
+      "location_zone": "tattoo_station",
+      "behavior": "stationary_enthusiastic",
+      
+      "appearance": {
+        "age": 45,
+        "build": "stocky",
+        "clothing": "leather_vest_no_shirt",
+        "accessories": [
+          "reading_glasses_on_forehead_never_used",
+          "cigarette_behind_ear",
+          "gold_tooth"
+        ],
+        "notable_features": [
+          "heavily_tattooed_arms_own_work_varying_quality",
+          "confident_smile",
+          "enthusiastic_gestures"
+        ]
+      },
+      
+      "personality": {
+        "traits": [
+          "genuinely_believes_hes_an_artist",
+          "confidently_incorrect",
+          "validates_every_terrible_decision",
+          "never_admits_mistakes",
+          "reframes_everything_as_artistic_interpretation"
+        ],
+        "speech_pattern": "enthusiastic_broken_english",
+        "energy": "high_positive"
+      },
+      
+      "dialogue": {
+        "greeting": "Welcome! Sit, sit! What we create today? I do anything!",
+        "on_skeleton_request": "Ah! Orloj skeleton! Is my specialty. Very meaningful.",
+        "showing_sketch": "See? Is skeleton. Very death. Much bone.",
+        "on_beak_question": "Is skull. Skull of death bird. Very European.",
+        "during_tattooing": "Is looking beautiful. Very death. Much authentic.",
+        "on_reveal": "Is done! Is beautiful! Look!",
+        "on_duck_accusation": "Duck? No, is skeleton bird of death. In my country, we have saying: 'When duck holds scythe, winter comes.' Is very deep.",
+        "validating_customer": "Yes! You understand art! Most Americans, they not understand. But you? You get it.",
+        "on_payment": "Is €[price]. For you, I do small discount. Because you appreciate real art.",
+        "farewell": "You come back anytime! I do matching one for friends! Group rate!",
+        "return_visit": "Ah! My favorite customer! The skeleton man! You want another? I have new designs!"
+      },
+      
+      "dialogue_other_cities": {
+        "sinfonia_greeting": "Is you! From Debaucheryville! The skeleton man! You want opera ghost? Very popular here!",
+        "publandia_greeting": "My friend! You follow me! You want shamrock? I make beautiful shamrock. Very Irish.",
+        "matching_duck_offer": "Your friends, they need matching duck! I mean skeleton! Group rate, very special!"
+      },
+      
+      "services": [
+        {
+          "service_id": "skeleton_tattoo",
+          "display_name": "Death Clock Skeleton",
+          "actual_result": "duck_with_scythe",
+          "price_range": {"min": 50, "max": 100},
+          "duration": "2_hours_game_time",
+          "description_viktor": "The famous orloj skeleton. Very meaningful. Very European.",
+          "description_player": "(This will definitely not be a skeleton.)"
+        },
+        {
+          "service_id": "lord_pilsner_special",
+          "display_name": "The Lord Pilsner Special",
+          "unlock_condition": "tattoo_acquired",
+          "actual_result": "duck_with_scythe_variant",
+          "price": 50,
+          "description_viktor": "Famous American design! Duck of death! Very popular now!"
+        },
+        {
+          "service_id": "matching_friendship_duck",
+          "display_name": "Matching Friendship Duck",
+          "unlock_condition": "tattoo_acquired",
+          "price": 40,
+          "description_viktor": "For your friends! Matching skeleton birds! Group rate!"
+        },
+        {
+          "service_id": "touch_up",
+          "display_name": "Touch-Up Service",
+          "price": 25,
+          "description_viktor": "We fix other shop's mistakes. Sometimes."
+        }
+      ],
+      
+      "recurring_appearances": [
+        {
+          "city": "sinfonia",
+          "shop_name": "Opera Ink",
+          "specialty": "opera_ghost_tattoos_look_like_casper"
+        },
+        {
+          "city": "publandia", 
+          "shop_name": "Shamrock Ink",
+          "specialty": "shamrock_tattoos_look_like_three_ducks"
+        }
+      ],
+      
+      "post_credits_reference": {
+        "punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - €50 for any duck-related design."
+      },
+      
+      "voice_direction": "Enthusiastic, confident, thick Eastern European accent, genuinely warm and proud",
+      "sprite_sheet": "viktor_artist.png"
+    },
+    
+    {
+      "npc_id": "marta_novak_01",
+      "display_name": "Marta",
+      "npc_type": "assistant",
+      "role": "wife_receptionist",
+      "location_zone": "reception_counter",
+      "behavior": "stationary_skeptical",
+      "presence_chance": 0.5,
+      
+      "appearance": {
+        "age": 42,
+        "clothing": "casual_overdressed",
+        "accessories": ["excessive_jewelry", "long_nails"],
+        "notable_features": ["bleached_blonde_hair", "skeptical_expression", "arms_often_crossed"]
+      },
+      
+      "personality": {
+        "traits": [
+          "perpetually_skeptical",
+          "tolerates_viktor",
+          "direct_with_customers",
+          "secretly_amused"
+        ],
+        "speech_pattern": "blunt_short_sentences"
+      },
+      
+      "dialogue": {
+        "greeting": "You want tattoo? Viktor is ready. Always ready.",
+        "during_consultation": "*to Viktor, in Czech, subtitled* Another American. The crying one from the clock.",
+        "on_price": "Cash only. Is better for everyone.",
+        "on_receipt": "You want receipt? No? Good. Is better.",
+        "on_quality": "He does good work. Usually.",
+        "on_viktor_pride": "*shrugging* Is what he does.",
+        "farewell": "Goodbye. Tell your friends. Or don't."
+      },
+      
+      "function": "handles_payment_provides_skeptical_commentary",
+      "sprite_sheet": "marta_assistant.png"
+    }
+  ],
+  
+  "npc_interactions": {
+    "viktor_marta_dynamic": {
+      "description": "Viktor is enthusiastic and oblivious; Marta is skeptical but supportive",
+      "sample_exchange": {
+        "viktor": "Is my best work! Look at the detail!",
+        "marta": "*in Czech* It's a duck again.",
+        "viktor": "*not hearing* Customer loves it! See?"
+      }
+    }
+  }
+}

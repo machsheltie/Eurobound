@@ -1,0 +1,343 @@
+{
+  "location_id": "sinfonia_imperial_opera_house_plaza_01",
+  
+  "vendors": [
+    {
+      "vendor_id": "ticket_scalper_opera",
+      "vendor_name": "Ticket Scalper",
+      "vendor_type": "scam_vendor",
+      "operator_npc": "ticket_scalper_01",
+      "currency_accepted": ["euro", "cash_only"],
+      "availability": {
+        "location": "shadows_near_opera",
+        "time": "all_day_more_aggressive_night"
+      },
+      "inventory": [
+        {
+          "item_id": "opera_tickets_scalped_box",
+          "display_name": "Box Seats (Tonight's Magic Flute)",
+          "description": "Definitely real tickets. Probably box seats. Trust him.",
+          "price_euro": 400,
+          "face_value_euro": 80,
+          "legitimacy": "real_but_overpriced",
+          "effects": {
+            "grants_access": "opera_performance"
+          },
+          "flavor_text": "The seats are real. The 'exclusive experience' is just sitting."
+        },
+        {
+          "item_id": "opera_tickets_scalped_standard",
+          "display_name": "Standard Seats (Any Performance)",
+          "description": "Standing room, probably. Or maybe seats. Who knows?",
+          "price_euro": 200,
+          "face_value_euro": 40,
+          "legitimacy": "real_but_overpriced",
+          "effects": {
+            "grants_access": "opera_standing_room"
+          }
+        }
+      ]
+    },
+    {
+      "vendor_id": "cafe_terrace_service",
+      "vendor_name": "Café Terrace",
+      "vendor_type": "food_beverage",
+      "operator_npc": "cafe_maitre_d_01",
+      "currency_accepted": ["euro"],
+      "availability": {
+        "location": "west_cafe_terraces",
+        "time": "10:00-22:00",
+        "closed_during": "light_rain"
+      },
+      "inventory": [
+        {
+          "item_id": "terrace_espresso",
+          "display_name": "Terrace Espresso",
+          "description": "A tiny cup of coffee for a not-tiny price.",
+          "price_euro": 8,
+          "effects": {
+            "removes_status": "tired"
+          },
+          "flavor_text": "It's very good. It's also very small."
+        },
+        {
+          "item_id": "terrace_espresso_premium",
+          "display_name": "Espresso with Historic View Supplement",
+          "description": "The same espresso, but you're facing the opera house.",
+          "price_euro": 15,
+          "effects": {
+            "removes_status": "tired",
+            "charm_boost_temp": 1
+          },
+          "flavor_text": "The view is technically free. The supplement is... mandatory."
+        },
+        {
+          "item_id": "sachertorte_slice",
+          "display_name": "Sachertorte Slice",
+          "description": "Sinfonia's famous chocolate cake. Gustav loved it.",
+          "price_euro": 18,
+          "effects": {
+            "hp_restore": 40,
+            "removes_status": "thirsty"
+          },
+          "flavor_text": "Layers of chocolate and apricot. Worth the price. Almost."
+        }
+      ],
+      "scam_note": "Historic View Supplement is pure profit extraction"
+    },
+    {
+      "vendor_id": "street_performer_tips",
+      "vendor_name": "Street Performer",
+      "vendor_type": "donation_interaction",
+      "operator_npc": "street_performer_violin_01",
+      "currency_accepted": ["euro"],
+      "availability": {
+        "location": "street_performer_circle",
+        "time": "11:00-18:00"
+      },
+      "donation_tiers": [
+        {
+          "amount_euro": 1,
+          "effect": "performer_nods",
+          "description": "Basic acknowledgment"
+        },
+        {
+          "amount_euro": 2,
+          "effect": "performer_smiles",
+          "description": "Appreciative smile"
+        },
+        {
+          "amount_euro": 5,
+          "effect": "performer_plays_request",
+          "bonus": {"charm": 1, "duration_minutes": 30},
+          "unlocks": "rhythm_minigame",
+          "description": "She'll play a request and offer to teach you"
+        }
+      ]
+    },
+    {
+      "vendor_id": "selfie_with_fiaker",
+      "vendor_name": "Fiaker Photo Opportunity",
+      "vendor_type": "service",
+      "operator_npc": "fiaker_driver_collective",
+      "currency_accepted": ["euro", "tip"],
+      "availability": {
+        "location": "fiaker_queue",
+        "time": "10:00-17:00"
+      },
+      "inventory": [
+        {
+          "item_id": "fiaker_horse_selfie_service",
+          "display_name": "Photo with Fiaker Horse",
+          "description": "Pose with a traditional carriage horse.",
+          "price_euro": 5,
+          "effects": {
+            "gallery_entry": "fiaker_horse_selfie",
+            "bravado": 1
+          },
+          "note": "Not Gustav. Gustav doesn't do photos anymore."
+        }
+      ]
+    }
+  ],
+  
+  "discoverable_items": [
+    {
+      "item_id": "fountain_coins",
+      "display_name": "Fountain Coins",
+      "description": "Coins tossed by tourists making wishes. They belong to... Neptune? Probably Neptune.",
+      "discovery_method": "search_fountain",
+      "rarity": "common",
+      "effects": null,
+      "value_euro": 2,
+      "probability": 0.8,
+      "flavor_text": "Someone wished for love. You got €2. Fair trade."
+    },
+    {
+      "item_id": "lucky_fountain_coin",
+      "display_name": "Lucky Coin",
+      "description": "An unusually old coin from the fountain. Might actually be lucky.",
+      "discovery_method": "search_fountain",
+      "rarity": "rare",
+      "effects": {
+        "luck_boost": 1,
+        "permanent": true
+      },
+      "value_euro": 0,
+      "probability": 0.05,
+      "flavor_text": "Dated 1887. Someone's wish from over a century ago. You're inheriting their luck."
+    },
+    {
+      "item_id": "beethoven_shrine_coins",
+      "display_name": "Shrine Offerings",
+      "description": "Coins left at the Beethoven shrine by reverent tourists.",
+      "discovery_method": "search_beethoven_shrine",
+      "rarity": "uncommon",
+      "effects": null,
+      "value_euro": 3,
+      "flavor_text": "Beethoven probably doesn't need money. But neither do you, so fair game."
+    },
+    {
+      "item_id": "sheet_music_classical",
+      "display_name": "Classical Sheet Music",
+      "description": "Sheet music for a Mozart piece. Won from the street performer challenge.",
+      "discovery_method": "complete_rhythm_minigame",
+      "rarity": "uncommon",
+      "effects": {
+        "usable_in": "rhythm_based_encounters",
+        "performance_boost": 2
+      },
+      "value_euro": 15,
+      "flavor_text": "You can't read it, but holding it makes you feel sophisticated."
+    }
+  ],
+  
+  "quest_items": [
+    {
+      "item_id": "hans_jurgen_schnapps_bottle",
+      "display_name": "Hans-Jürgen's Schnapps",
+      "description": "Half-empty bottle of Austrian schnapps. Evidence of Hans-Jürgen's... condition.",
+      "quest": "sinfonia_sidequest_fiaker_fiasco_01",
+      "obtainable": false,
+      "examinable": true,
+      "significance": "explains_gustav_escape"
+    },
+    {
+      "item_id": "gustav_photo",
+      "display_name": "Photo of Gustav",
+      "description": "A worn photograph of Gustav from Hans-Jürgen's pocket. Happier times.",
+      "quest": "sinfonia_sidequest_fiaker_fiasco_01",
+      "obtainable": true,
+      "condition": "given_by_hans_jurgen_during_quest",
+      "effects": {
+        "helps_identify_gustav": true,
+        "bravado": 1
+      },
+      "flavor_text": "Gustav looks... younger. Less done with everything."
+    },
+    {
+      "item_id": "skittles_pocket",
+      "display_name": "Pocket Skittles",
+      "description": "Bradley's loose Skittles. Apparently horses love them.",
+      "quest": "sinfonia_sidequest_fiaker_fiasco_01",
+      "source": "bradley_inventory",
+      "significance": "key_to_gustav_negotiation",
+      "flavor_text": "Taste the rainbow. Convince the horse."
+    },
+    {
+      "item_id": "stolen_opera_cape",
+      "display_name": "Gustav's Opera Cape",
+      "description": "An opera cape Gustav acquired during his escape. He's keeping it.",
+      "quest": "sinfonia_sidequest_fiaker_fiasco_01",
+      "obtainable": false,
+      "worn_by": "gustav_horse_01",
+      "significance": "iconic_visual_element",
+      "flavor_text": "Gustav refuses to give it back. It's his now."
+    },
+    {
+      "item_id": "property_damage_bill",
+      "display_name": "Property Damage Bill",
+      "description": "An itemized list of everything destroyed during the Gustav chase.",
+      "quest": "sinfonia_sidequest_fiaker_fiasco_01",
+      "awarded_for": "quest_completion",
+      "contents": {
+        "cafe_sachertorte_damages": 340,
+        "opera_backstage_damages": 2000,
+        "misc_plaza_damages": 85,
+        "total_euro": 2425
+      },
+      "flavor_text": "You can pay this. Eventually. Maybe."
+    }
+  ],
+  
+  "achievement_items": [
+    {
+      "item_id": "horse_whisperer_badge",
+      "display_name": "Horse Whisperer Badge",
+      "description": "Awarded for successfully convincing Gustav to return to work.",
+      "unlock_condition": "fiaker_fiasco_path_a_complete",
+      "effects": {
+        "ability": "calm_hostile_animals"
+      },
+      "gallery_entry": true
+    },
+    {
+      "item_id": "horse_costume",
+      "display_name": "Horse Costume (Two-Person)",
+      "description": "A desperate attempt to replace Gustav. It did not work.",
+      "unlock_condition": "fiaker_fiasco_path_b_complete",
+      "effects": {
+        "speed": -50,
+        "dignity": -100
+      },
+      "flavor_text": "Bradley was the back half. He doesn't want to talk about it."
+    },
+    {
+      "item_id": "bradleys_harness",
+      "display_name": "Bradley's Harness",
+      "description": "The harness Bradley wore during the failed replacement attempt.",
+      "unlock_condition": "fiaker_fiasco_path_b_complete",
+      "effects": {
+        "bravado": 1,
+        "speed": -3
+      },
+      "flavor_text": "'I tried' energy."
+    }
+  ],
+  
+  "gallery_entries": [
+    {
+      "entry_id": "opera_house_selfie",
+      "title": "Cultured Tourist",
+      "description": "Selfie with the Bassline Opera House facade.",
+      "trigger": "take_selfie_opera_backdrop"
+    },
+    {
+      "entry_id": "fiaker_horse_selfie",
+      "title": "Traditional Transport",
+      "description": "Posing with a Fiaker horse. Not Gustav.",
+      "trigger": "purchase_fiaker_photo_service"
+    },
+    {
+      "entry_id": "fountain_selfie",
+      "title": "Neptune's Blessing",
+      "description": "Classic tourist shot at the baroque fountain.",
+      "trigger": "take_selfie_at_fountain"
+    },
+    {
+      "entry_id": "gustav_cape_selfie",
+      "title": "The Horse Who Quit",
+      "description": "Selfie with Gustav in his stolen opera cape. Iconic.",
+      "trigger": "fiaker_fiasco_resolved_selfie_with_gustav",
+      "note": "Most shareable image in the game"
+    },
+    {
+      "entry_id": "hans_jurgen_reunion",
+      "title": "Family Reunion",
+      "description": "Hans-Jürgen hugging Gustav. Gustav tolerating it.",
+      "trigger": "fiaker_fiasco_path_a_complete"
+    }
+  ],
+  
+  "lore_items": [
+    {
+      "item_id": "fiaker_queue_rules",
+      "title": "Official Fiaker Regulations",
+      "content": "The rules Hans-Jürgen breaks daily, conveniently posted for all to see.",
+      "source": "fiaker_queue_sign"
+    },
+    {
+      "item_id": "dedication_plaque",
+      "title": "Beethoven Shrine Dedication",
+      "content": "Dedicated to Ludwig van Beethoven, who walked these streets composing symphonies in his head. He was deaf. He was a genius. He would hate the tourists.",
+      "source": "beethoven_shrine"
+    },
+    {
+      "item_id": "opera_gossip_thread",
+      "title": "High Society Secrets",
+      "content": "Overheard gossip about the Black-Tie Backroom's location and entry requirements.",
+      "source": "eavesdrop_opera_patrons",
+      "unlocks": "black_tie_backroom_hint"
+    }
+  ]
+}

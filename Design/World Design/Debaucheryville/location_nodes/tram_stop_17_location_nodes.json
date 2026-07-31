@@ -1,0 +1,220 @@
+{
+  "locations": [
+    {
+      "name": "Tram Stop #17",
+      "tag_id": "tram_stop_17",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "A classic European tram shelter on a cobblestone sidewalk. Glass and metal canopy, weathered bench, faded timetable display dated 1994. A man sits on the bench with pigeons on his shoulders. He has clearly been there a while. A small shrine of offerings surrounds him. Locals walk past without a second glance - they're used to it.",
+        "entry_condition": "Accessible anytime. No requirements."
+      },
+      "interior": {
+        "theme": "Where patience becomes legend and public transit becomes existential crisis",
+        "features": [
+          "entry_point",
+          "quest_npc: jiri_eternal_commuter",
+          "information_source: city_directions",
+          "examinable: tram_schedule_1994",
+          "examinable: jiris_documentation",
+          "examinable: shrine_offerings",
+          "interactive: adjacent_bench_seat",
+          "event_hook: passing_tram",
+          "event_hook: night_vigil",
+          "progressive_visual: jiri_transformation",
+          "progressive_visual: shrine_growth",
+          "progressive_visual: pigeon_population",
+          "easter_egg: newspaper_clipping",
+          "easter_egg: missing_poster",
+          "buff_source: jiris_blessing",
+          "ambient_npc_group: passing_pedestrians",
+          "ambient_npc: photo_tourist",
+          "ambient_npc: shrine_tender"
+        ]
+      },
+      "functions": [
+        "Get accurate directions to any location in the city",
+        "Visit Jiří repeatedly to witness his transformation into local landmark",
+        "Complete optional Night Vigil for emotional backstory and Jiří's Blessing buff",
+        "Unlock post-credits scene: The 17 Arrives",
+        "+1 Charm with all locals (Jiří's Blessing)"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "tram_stop_17": {
+      "connects_to": [
+        {
+          "destination": "debaucheryville_nightlife_absinthe_arcade_01",
+          "direction": "south",
+          "distance": "1_block",
+          "transition_type": "normal"
+        },
+        {
+          "destination": "debaucheryville_oldtown_astronomical_cockup_square_01",
+          "direction": "north",
+          "distance": "2_blocks",
+          "transition_type": "normal"
+        },
+        {
+          "destination": "debaucheryville_transit_metro_station_01",
+          "direction": "east",
+          "distance": "2_blocks",
+          "transition_type": "normal",
+          "jiri_note": "The metro is for those who have given up."
+        }
+      ],
+      "theoretical_tram_connections": [
+        {
+          "tram": "9",
+          "destination": "velvet_curtain_district",
+          "status": "passes_regularly_does_not_stop_here"
+        },
+        {
+          "tram": "22",
+          "destination": "hostel_district",
+          "status": "passes_regularly_does_not_stop_here"
+        },
+        {
+          "tram": "17",
+          "destination": "wherever_jiri_was_going",
+          "status": "discontinued_1999_jiri_doesnt_know"
+        }
+      ],
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_eternal_commuter_01",
+          "role": "primary_location",
+          "npc": "jiri_eternal_commuter"
+        }
+      ],
+      "unlocks_at": [
+        {
+          "feature": "night_vigil",
+          "condition": "visit_count >= 10"
+        },
+        {
+          "feature": "jiris_blessing",
+          "condition": "night_vigil_completed"
+        },
+        {
+          "feature": "post_credits_the_17_arrives",
+          "condition": "night_vigil_completed OR visit_count >= 10"
+        }
+      ],
+      "cross_location_effects": {
+        "jiris_blessing_active": {
+          "effect": "+1 Charm with all local NPCs citywide",
+          "recognition_dialogue": "You're the Americans who sat with Jiří. Good people."
+        },
+        "final_boss_appearance": {
+          "condition": "jiris_blessing_acquired",
+          "appearance": "Jiří visible in background, still at stop, gives thumbs up"
+        }
+      }
+    }
+  },
+  
+  "feature_details": {
+    "quest_npc_jiri_eternal_commuter": {
+      "type": "stationary_quest_npc",
+      "always_present": true,
+      "progressive_appearance": "6 visual states based on visit count",
+      "dialogue_pool": "30+ lines across 5 mood phases",
+      "services": ["directions", "company", "night_vigil"]
+    },
+    
+    "information_source_city_directions": {
+      "type": "utility_service",
+      "description": "Jiří knows where everything in the city is and will give accurate directions",
+      "quirk": "Always mentions that the 17 is an option when it arrives"
+    },
+    
+    "event_hook_night_vigil": {
+      "type": "extended_sequence",
+      "unlock_condition": "visit_count >= 10 AND time_of_day = evening",
+      "duration": "One in-game night",
+      "content": "Jiří's full backstory, the milk, the ring, the waiting",
+      "reward": "Jiří's Blessing permanent buff",
+      "emotional_tone": "Genuinely moving - intentional tonal shift"
+    },
+    
+    "progressive_visual_jiri_transformation": {
+      "type": "visual_progression",
+      "stages": 6,
+      "elements": [
+        "beard_growth",
+        "coat_weathering",
+        "bench_integration",
+        "pigeon_colonization",
+        "shrine_development",
+        "landmark_status"
+      ],
+      "description": "Jiří transforms from eccentric local to civic landmark over visits"
+    },
+    
+    "buff_source_jiris_blessing": {
+      "type": "permanent_buff",
+      "effect": "+1 Charm with all local NPCs",
+      "flavor": "Locals recognize you as the Americans who sat with Jiří",
+      "unlock": "Complete Night Vigil"
+    },
+    
+    "easter_egg_newspaper_clipping": {
+      "type": "hidden_lore",
+      "content": "LOCAL MAN VOWS TO WAIT FOR TRAM - dated 2002",
+      "discovery": "Examine shelter interior"
+    },
+    
+    "easter_egg_missing_poster": {
+      "type": "hidden_lore",
+      "content": "Missing poster with Jiří's face, word FOUND written across, note: He's at Stop 17",
+      "discovery": "Explore nearby walls"
+    }
+  },
+  
+  "ambient_npcs": {
+    "passing_pedestrians": {
+      "count_range": "1-3",
+      "behavior": "walk_past_occasionally_nod_at_jiri",
+      "spawn_rate": "every_30_seconds"
+    },
+    "photo_tourist": {
+      "spawn_condition": "visit_count >= 7",
+      "behavior": "photographs_jiri_as_local_color",
+      "dialogue": "So authentic!"
+    },
+    "shrine_tender": {
+      "spawn_condition": "visit_count >= 5",
+      "behavior": "arranges_flowers_lights_candles",
+      "time_preference": "evening"
+    }
+  },
+  
+  "npc_callbacks_in_other_locations": {
+    "taxi_driver": {
+      "location": "any_taxi",
+      "dialogue": "You want Stop 17? That's Jiří's stop. He won't take a taxi. We've offered."
+    },
+    "local_shopkeeper": {
+      "location": "various_shops",
+      "dialogue": "My grandmother remembers when Jiří first started waiting. She was a child."
+    },
+    "metro_worker": {
+      "location": "metro_station",
+      "dialogue": "The 17 hasn't run since 1999. Don't tell Jiří. It would kill him. Maybe literally."
+    },
+    "tour_guide": {
+      "location": "astronomical_cockup_square",
+      "dialogue": "And on your left, you'll see Jiří's Bench. He's been waiting since before the euro.",
+      "trigger": "visit_count >= 13"
+    }
+  },
+  
+  "post_credits_connection": {
+    "scene_id": "the_17_arrives",
+    "unlock_condition": "night_vigil_completed OR visit_count >= 10",
+    "summary": "Five years later. The 17 Heritage Line. Jiří on the tram, crying with joy. Returns home with ancient milk. Marie at the door. 'I got the milk.' Reunion.",
+    "punchline": "Jiří and Marie renewed their vows on Tram #17. The tram was six minutes late to the ceremony."
+  }
+}

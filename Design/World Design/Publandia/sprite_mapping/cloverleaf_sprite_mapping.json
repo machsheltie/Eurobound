@@ -1,0 +1,502 @@
+{
+  "location_id": "publandia_outskirts_cloverleaf_roundabout_01",
+  
+  "sprite_sheets": {
+    "main_tileset": {
+      "file": "cloverleaf_roundabout_tileset.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "tile_size": {"width": 32, "height": 32},
+      "sections": {
+        "road_tiles": {
+          "x": 0, "y": 0, "width": 256, "height": 256,
+          "tiles": {
+            "asphalt_dry": {"x": 0, "y": 0, "width": 32, "height": 32},
+            "asphalt_wet": {"x": 32, "y": 0, "width": 32, "height": 32},
+            "asphalt_worn": {"x": 64, "y": 0, "width": 32, "height": 32},
+            "asphalt_tire_marks": {"x": 96, "y": 0, "width": 32, "height": 32},
+            "lane_marking_white": {"x": 0, "y": 32, "width": 32, "height": 32},
+            "lane_marking_faded": {"x": 32, "y": 32, "width": 32, "height": 32},
+            "lane_marking_dashed": {"x": 64, "y": 32, "width": 32, "height": 32},
+            "yield_marking": {"x": 96, "y": 32, "width": 32, "height": 32}
+          }
+        },
+        "grass_tiles": {
+          "x": 256, "y": 0, "width": 256, "height": 256,
+          "tiles": {
+            "irish_green_base": {"x": 256, "y": 0, "width": 32, "height": 32},
+            "irish_green_dark": {"x": 288, "y": 0, "width": 32, "height": 32},
+            "irish_green_light": {"x": 320, "y": 0, "width": 32, "height": 32},
+            "grass_edge_road": {"x": 352, "y": 0, "width": 32, "height": 32},
+            "grass_worn_path": {"x": 256, "y": 32, "width": 32, "height": 32},
+            "puddle_small": {"x": 288, "y": 32, "width": 32, "height": 32},
+            "puddle_reflection": {"x": 320, "y": 32, "width": 32, "height": 32}
+          }
+        },
+        "signage_tiles": {
+          "x": 512, "y": 0, "width": 256, "height": 256,
+          "tiles": {
+            "exit_sign_base": {"x": 512, "y": 0, "width": 64, "height": 48},
+            "exit_sign_arrow_e": {"x": 576, "y": 0, "width": 64, "height": 48},
+            "exit_sign_arrow_se": {"x": 640, "y": 0, "width": 64, "height": 48},
+            "exit_sign_arrow_sw": {"x": 704, "y": 0, "width": 64, "height": 48},
+            "exit_sign_arrow_w": {"x": 512, "y": 48, "width": 64, "height": 48},
+            "exit_sign_arrow_nw": {"x": 576, "y": 48, "width": 64, "height": 48},
+            "exit_sign_arrow_n": {"x": 640, "y": 48, "width": 64, "height": 48},
+            "yield_sign": {"x": 704, "y": 48, "width": 48, "height": 48},
+            "cliffs_sign_faded": {"x": 512, "y": 96, "width": 96, "height": 64},
+            "gift_shop_sign": {"x": 608, "y": 96, "width": 80, "height": 48},
+            "graffiti_sean": {"x": 512, "y": 160, "width": 128, "height": 32}
+          }
+        },
+        "monument_tiles": {
+          "x": 768, "y": 0, "width": 256, "height": 256,
+          "tiles": {
+            "celtic_cross_base": {"x": 768, "y": 0, "width": 64, "height": 128},
+            "celtic_cross_top": {"x": 832, "y": 0, "width": 48, "height": 96},
+            "stone_base_worn": {"x": 768, "y": 128, "width": 64, "height": 32},
+            "moss_overlay": {"x": 832, "y": 128, "width": 32, "height": 32}
+          }
+        }
+      },
+      "special_tiles": {
+        "interactive_highlight": {
+          "x": 0, "y": 256, "width": 128, "height": 128,
+          "states": {
+            "hover": {"x": 0, "y": 256, "width": 32, "height": 32},
+            "selected": {"x": 32, "y": 256, "width": 32, "height": 32},
+            "locked": {"x": 64, "y": 256, "width": 32, "height": 32}
+          }
+        },
+        "rain_overlay": {
+          "x": 128, "y": 256, "width": 128, "height": 128,
+          "density_variants": {
+            "light": {"x": 128, "y": 256, "width": 64, "height": 64},
+            "heavy": {"x": 192, "y": 256, "width": 64, "height": 64}
+          }
+        }
+      }
+    },
+    
+    "vehicles_spritesheet": {
+      "file": "cloverleaf_vehicles_spritesheet.png",
+      "dimensions": {"width": 2048, "height": 1024},
+      "vehicles": {
+        "wedding_van_1987": {
+          "base": {"x": 0, "y": 0, "width": 256, "height": 128},
+          "states": {
+            "driving_normal": {"x": 0, "y": 0, "width": 256, "height": 128},
+            "headlights_on": {"x": 256, "y": 0, "width": 256, "height": 128}
+          },
+          "details": {
+            "just_married_sign": {"x": 0, "y": 128, "width": 96, "height": 32},
+            "tin_cans": {"x": 96, "y": 128, "width": 64, "height": 48},
+            "anniversary_banner": {"x": 160, "y": 128, "width": 80, "height": 24},
+            "dried_flowers": {"x": 0, "y": 160, "width": 48, "height": 32}
+          },
+          "occupants": {
+            "patrick_driving": {"x": 0, "y": 192, "width": 64, "height": 96},
+            "patrick_waving": {
+              "frames": [
+                {"x": 64, "y": 192, "width": 64, "height": 96, "frame": 1},
+                {"x": 128, "y": 192, "width": 64, "height": 96, "frame": 2},
+                {"x": 192, "y": 192, "width": 64, "height": 96, "frame": 3},
+                {"x": 256, "y": 192, "width": 64, "height": 96, "frame": 4},
+                {"x": 320, "y": 192, "width": 64, "height": 96, "frame": 5},
+                {"x": 384, "y": 192, "width": 64, "height": 96, "frame": 6}
+              ],
+              "timing": {"fps": 4, "duration_seconds": 1.5, "loop": false}
+            },
+            "margaret_skeleton": {"x": 0, "y": 288, "width": 64, "height": 96},
+            "margaret_sway": {
+              "frames": [
+                {"x": 64, "y": 288, "width": 64, "height": 96, "frame": 1},
+                {"x": 128, "y": 288, "width": 64, "height": 96, "frame": 2},
+                {"x": 192, "y": 288, "width": 64, "height": 96, "frame": 3},
+                {"x": 256, "y": 288, "width": 64, "height": 96, "frame": 4}
+              ],
+              "timing": {"fps": 2, "duration_seconds": 2, "loop": true}
+            }
+          }
+        },
+        
+        "tour_bus": {
+          "base": {"x": 512, "y": 0, "width": 256, "height": 256},
+          "states": {
+            "driving": {"x": 512, "y": 0, "width": 256, "height": 256},
+            "stopped": {"x": 768, "y": 0, "width": 256, "height": 256}
+          },
+          "details": {
+            "community_banner": {"x": 512, "y": 256, "width": 128, "height": 32},
+            "democracy_banner": {"x": 640, "y": 256, "width": 128, "height": 32},
+            "roof_garden": {"x": 512, "y": 288, "width": 96, "height": 48},
+            "laundry_lines": {"x": 608, "y": 288, "width": 64, "height": 32},
+            "passenger_silhouettes": {"x": 512, "y": 336, "width": 192, "height": 96}
+          },
+          "occupants": {
+            "orla_clipboard": {"x": 704, "y": 256, "width": 64, "height": 96},
+            "orla_gesturing": {
+              "frames": [
+                {"x": 768, "y": 256, "width": 64, "height": 96, "frame": 1},
+                {"x": 832, "y": 256, "width": 64, "height": 96, "frame": 2},
+                {"x": 896, "y": 256, "width": 64, "height": 96, "frame": 3},
+                {"x": 960, "y": 256, "width": 64, "height": 96, "frame": 4},
+                {"x": 1024, "y": 256, "width": 64, "height": 96, "frame": 5},
+                {"x": 1088, "y": 256, "width": 64, "height": 96, "frame": 6},
+                {"x": 1152, "y": 256, "width": 64, "height": 96, "frame": 7},
+                {"x": 1216, "y": 256, "width": 64, "height": 96, "frame": 8}
+              ],
+              "timing": {"fps": 4, "duration_seconds": 2, "loop": false}
+            }
+          }
+        },
+        
+        "food_truck": {
+          "base": {"x": 1024, "y": 0, "width": 192, "height": 128},
+          "states": {
+            "driving": {"x": 1024, "y": 0, "width": 192, "height": 128},
+            "window_open": {"x": 1216, "y": 0, "width": 192, "height": 128}
+          },
+          "details": {
+            "menu_board": {"x": 1024, "y": 128, "width": 64, "height": 48},
+            "steam_vent": {"x": 1088, "y": 128, "width": 32, "height": 32},
+            "grease_stains": {"x": 1120, "y": 128, "width": 48, "height": 48}
+          },
+          "occupants": {
+            "chef_maeve_serving": {"x": 1024, "y": 176, "width": 64, "height": 80}
+          }
+        },
+        
+        "local_car_sean": {
+          "base": {"x": 1408, "y": 0, "width": 128, "height": 64},
+          "states": {
+            "driving": {"x": 1408, "y": 0, "width": 128, "height": 64},
+            "rust_highlight": {"x": 1536, "y": 0, "width": 128, "height": 64}
+          },
+          "occupants": {
+            "sean_driving": {"x": 1408, "y": 64, "width": 48, "height": 64},
+            "sean_nodding": {
+              "frames": [
+                {"x": 1456, "y": 64, "width": 48, "height": 64, "frame": 1},
+                {"x": 1504, "y": 64, "width": 48, "height": 64, "frame": 2},
+                {"x": 1552, "y": 64, "width": 48, "height": 64, "frame": 3},
+                {"x": 1600, "y": 64, "width": 48, "height": 64, "frame": 4}
+              ],
+              "timing": {"fps": 4, "duration_seconds": 1, "loop": false}
+            }
+          }
+        },
+        
+        "learner_car": {
+          "base": {"x": 1664, "y": 0, "width": 128, "height": 64},
+          "details": {
+            "l_plates": {"x": 1664, "y": 64, "width": 24, "height": 24},
+            "dual_controls_visible": {"x": 1688, "y": 64, "width": 32, "height": 24}
+          },
+          "occupants": {
+            "brenda_flinching": {
+              "frames": [
+                {"x": 1664, "y": 88, "width": 48, "height": 64, "frame": 1},
+                {"x": 1712, "y": 88, "width": 48, "height": 64, "frame": 2},
+                {"x": 1760, "y": 88, "width": 48, "height": 64, "frame": 3},
+                {"x": 1808, "y": 88, "width": 48, "height": 64, "frame": 4}
+              ],
+              "timing": {"fps": 8, "duration_seconds": 0.5, "loop": false}
+            },
+            "kevin_gripping": {
+              "frames": [
+                {"x": 1664, "y": 152, "width": 48, "height": 64, "frame": 1},
+                {"x": 1712, "y": 152, "width": 48, "height": 64, "frame": 2}
+              ],
+              "timing": {"fps": 4, "duration_seconds": 0.5, "loop": true}
+            }
+          }
+        },
+        
+        "family_van": {
+          "base": {"x": 0, "y": 512, "width": 192, "height": 96},
+          "details": {
+            "roof_luggage": {"x": 0, "y": 608, "width": 128, "height": 48},
+            "family_silhouettes": {"x": 128, "y": 608, "width": 96, "height": 64}
+          }
+        },
+        
+        "farmer_tractor": {
+          "base": {"x": 192, "y": 512, "width": 192, "height": 128},
+          "details": {
+            "sheep_trailer": {"x": 384, "y": 512, "width": 128, "height": 96},
+            "sheep_visible": {
+              "frames": [
+                {"x": 384, "y": 608, "width": 64, "height": 48, "frame": 1},
+                {"x": 448, "y": 608, "width": 64, "height": 48, "frame": 2}
+              ],
+              "timing": {"fps": 1, "duration_seconds": 2, "loop": true}
+            }
+          },
+          "occupants": {
+            "padraig_unbothered": {"x": 192, "y": 640, "width": 48, "height": 64}
+          }
+        },
+        
+        "bros_rental": {
+          "base": {"x": 512, "y": 512, "width": 128, "height": 64},
+          "states": {
+            "driving": {"x": 512, "y": 512, "width": 128, "height": 64},
+            "scratched": {"x": 640, "y": 512, "width": 128, "height": 64}
+          },
+          "interior_view": {
+            "pilsner_driving": {"x": 512, "y": 576, "width": 48, "height": 64},
+            "chadwick_filming": {"x": 560, "y": 576, "width": 48, "height": 64},
+            "bradley_stressed": {"x": 608, "y": 576, "width": 48, "height": 64}
+          }
+        }
+      }
+    },
+    
+    "environmental_effects": {
+      "file": "cloverleaf_environmental_effects.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "elements": {
+        "rain_particles": {
+          "light": {
+            "frames": [
+              {"x": 0, "y": 0, "width": 64, "height": 64, "frame": 1},
+              {"x": 64, "y": 0, "width": 64, "height": 64, "frame": 2},
+              {"x": 128, "y": 0, "width": 64, "height": 64, "frame": 3},
+              {"x": 192, "y": 0, "width": 64, "height": 64, "frame": 4}
+            ],
+            "timing": {"fps": 12, "loop": true}
+          },
+          "heavy": {
+            "frames": [
+              {"x": 256, "y": 0, "width": 64, "height": 64, "frame": 1},
+              {"x": 320, "y": 0, "width": 64, "height": 64, "frame": 2},
+              {"x": 384, "y": 0, "width": 64, "height": 64, "frame": 3},
+              {"x": 448, "y": 0, "width": 64, "height": 64, "frame": 4}
+            ],
+            "timing": {"fps": 16, "loop": true}
+          }
+        },
+        "exhaust_puffs": {
+          "frames": [
+            {"x": 0, "y": 64, "width": 32, "height": 32, "frame": 1},
+            {"x": 32, "y": 64, "width": 32, "height": 32, "frame": 2},
+            {"x": 64, "y": 64, "width": 32, "height": 32, "frame": 3},
+            {"x": 96, "y": 64, "width": 32, "height": 32, "frame": 4},
+            {"x": 128, "y": 64, "width": 32, "height": 32, "frame": 5},
+            {"x": 160, "y": 64, "width": 32, "height": 32, "frame": 6}
+          ],
+          "timing": {"fps": 6, "duration_seconds": 1, "loop": false, "dissolve": true}
+        },
+        "road_spray": {
+          "frames": [
+            {"x": 0, "y": 96, "width": 48, "height": 24, "frame": 1},
+            {"x": 48, "y": 96, "width": 48, "height": 24, "frame": 2},
+            {"x": 96, "y": 96, "width": 48, "height": 24, "frame": 3}
+          ],
+          "timing": {"fps": 8, "loop": true}
+        },
+        "windshield_wiper_overlay": {
+          "frames": [
+            {"x": 0, "y": 128, "width": 256, "height": 64, "frame": 1},
+            {"x": 256, "y": 128, "width": 256, "height": 64, "frame": 2},
+            {"x": 512, "y": 128, "width": 256, "height": 64, "frame": 3},
+            {"x": 768, "y": 128, "width": 256, "height": 64, "frame": 4}
+          ],
+          "timing": {"fps": 1.33, "cycle_seconds": 3, "loop": true}
+        },
+        "headlight_glow": {
+          "cone": {"x": 0, "y": 192, "width": 128, "height": 64},
+          "flare": {"x": 128, "y": 192, "width": 32, "height": 32}
+        },
+        "indicator_blink": {
+          "frames": [
+            {"x": 160, "y": 192, "width": 16, "height": 16, "frame": 1, "state": "on"},
+            {"x": 176, "y": 192, "width": 16, "height": 16, "frame": 2, "state": "off"}
+          ],
+          "timing": {"fps": 1, "loop": true}
+        }
+      }
+    },
+    
+    "background_parallax": {
+      "file": "cloverleaf_parallax_background.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "type": "parallax_background",
+      "layers": {
+        "far_sky": {
+          "x": 0, "y": 0, "width": 256, "height": 512,
+          "scroll_speed": 0.05,
+          "color": "#A9A9A9"
+        },
+        "distant_hills": {
+          "x": 256, "y": 0, "width": 256, "height": 512,
+          "scroll_speed": 0.1,
+          "color": "#228B22"
+        },
+        "mid_fields": {
+          "x": 512, "y": 0, "width": 256, "height": 512,
+          "scroll_speed": 0.2,
+          "elements": ["stone_walls", "sheep_distant"]
+        },
+        "near_roadside": {
+          "x": 768, "y": 0, "width": 256, "height": 512,
+          "scroll_speed": 0.4,
+          "elements": ["road_signs", "grass_edge"]
+        }
+      }
+    },
+    
+    "ui_elements": {
+      "file": "cloverleaf_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "circle_counter": {
+          "background": {"x": 0, "y": 0, "width": 128, "height": 48},
+          "digits": {"x": 0, "y": 48, "width": 160, "height": 24},
+          "label": {"x": 0, "y": 72, "width": 64, "height": 16}
+        },
+        "days_counter": {
+          "background": {"x": 128, "y": 0, "width": 128, "height": 48},
+          "calendar_icon": {"x": 128, "y": 48, "width": 32, "height": 32}
+        },
+        "gps_display": {
+          "screen_normal": {"x": 256, "y": 0, "width": 128, "height": 96},
+          "screen_stressed": {"x": 384, "y": 0, "width": 128, "height": 96},
+          "screen_crying": {"x": 256, "y": 96, "width": 128, "height": 96},
+          "recalculating_text": {"x": 384, "y": 96, "width": 96, "height": 24}
+        },
+        "lane_indicator": {
+          "inner_active": {"x": 0, "y": 128, "width": 64, "height": 32},
+          "middle_active": {"x": 64, "y": 128, "width": 64, "height": 32},
+          "outer_active": {"x": 128, "y": 128, "width": 64, "height": 32},
+          "merge_active": {"x": 192, "y": 128, "width": 64, "height": 32}
+        },
+        "interaction_prompts": {
+          "talk_prompt": {"x": 0, "y": 160, "width": 64, "height": 24},
+          "examine_prompt": {"x": 64, "y": 160, "width": 64, "height": 24},
+          "follow_prompt": {"x": 128, "y": 160, "width": 64, "height": 24},
+          "exit_prompt": {"x": 192, "y": 160, "width": 64, "height": 24}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "prebaked_vehicle_loops": {
+      "wedding_van_loop": {
+        "sprite_source": "vehicles_spritesheet",
+        "duration_seconds": 30,
+        "path": "middle_lane_circle",
+        "includes": ["patrick_content", "margaret_sway", "tin_cans_dragging"]
+      },
+      "tour_bus_loop": {
+        "sprite_source": "vehicles_spritesheet",
+        "duration_seconds": 45,
+        "path": "outer_lane_circle_with_stops",
+        "includes": ["passenger_movement", "banner_flutter"]
+      },
+      "food_truck_loop": {
+        "sprite_source": "vehicles_spritesheet",
+        "duration_seconds": 60,
+        "path": "outer_lane_with_service_stop",
+        "includes": ["steam_vent_active", "window_state_change"]
+      },
+      "sean_loop": {
+        "sprite_source": "vehicles_spritesheet",
+        "duration_seconds": 25,
+        "path": "middle_lane_never_exits",
+        "special_event": "passes_exit_6_without_slowing"
+      }
+    },
+    "event_animations": {
+      "margaret_reveal": {
+        "type": "camera_focus",
+        "duration_seconds": 3,
+        "elements": ["wedding_van_approach", "skeleton_visible", "patrick_wave"]
+      },
+      "gps_breakdown": {
+        "type": "ui_animation",
+        "duration_seconds": 8,
+        "stages": ["normal", "stressed", "glitch", "crying"]
+      },
+      "successful_exit": {
+        "type": "camera_pull",
+        "duration_seconds": 5,
+        "elements": ["car_leaving", "roundabout_shrinking", "relief_overlay"]
+      }
+    }
+  },
+  
+  "lighting_effects": {
+    "primary_ambient": {
+      "color": "#B0B0B0",
+      "intensity": 0.6,
+      "coverage": "entire_location",
+      "reactive_sprites": ["all_vehicles", "road_surface", "center_island"]
+    },
+    "vehicle_headlights": {
+      "color": "#FFFACD",
+      "intensity": 0.8,
+      "range_pixels": 200,
+      "cone_angle_degrees": 45,
+      "affected_sprites": ["road_ahead", "other_vehicles"]
+    },
+    "indicator_lights": {
+      "color": "#FFA500",
+      "blink_rate_hz": 1,
+      "affected_sprites": ["vehicle_indicators"]
+    },
+    "food_truck_warmth": {
+      "color": "#FFD700",
+      "intensity": 0.7,
+      "range_pixels": 100,
+      "condition": "window_open"
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "cloverleaf_main_atlas",
+        "files": ["cloverleaf_roundabout_tileset.png", "cloverleaf_ui_elements.png"],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "cloverleaf_vehicles_atlas",
+        "files": ["cloverleaf_vehicles_spritesheet.png"],
+        "max_size": "2048x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "cloverleaf_effects_atlas",
+        "files": ["cloverleaf_environmental_effects.png", "cloverleaf_parallax_background.png"],
+        "max_size": "2048x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": {
+        "vehicle_detail": "full",
+        "particle_count": 100,
+        "animation_fps": 30,
+        "rain_density": "full"
+      },
+      "medium": {
+        "vehicle_detail": "reduced",
+        "particle_count": 50,
+        "animation_fps": 24,
+        "rain_density": "half"
+      },
+      "low": {
+        "vehicle_detail": "minimal",
+        "particle_count": 20,
+        "animation_fps": 15,
+        "rain_density": "quarter"
+      }
+    },
+    "draw_call_budget": 50,
+    "memory_budget_mb": 64,
+    "max_active_vehicles": 8
+  }
+}

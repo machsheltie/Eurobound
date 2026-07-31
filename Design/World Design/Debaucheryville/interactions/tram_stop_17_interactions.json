@@ -1,0 +1,381 @@
+{
+  "location_id": "debaucheryville_transit_tram_stop_17_01",
+  
+  "events": [
+    {
+      "event_id": "first_encounter",
+      "display_name": "Meeting Jiří",
+      "event_type": "dialogue_sequence",
+      "trigger": {
+        "type": "location_entry",
+        "condition": "first_visit"
+      },
+      "duration_seconds": 90,
+      "sequence": [
+        {
+          "phase": "notice_jiri",
+          "description": "Bros notice a man at the tram stop with pigeons on his shoulders",
+          "visual": "jiri_visit_1_state"
+        },
+        {
+          "phase": "ask_directions",
+          "speaker": "lord_pilsner",
+          "dialogue": "Hey, excuse me? Do you know how to get to the Velvet Curtain Club from here?"
+        },
+        {
+          "phase": "jiri_response",
+          "speaker": "jiri",
+          "dialogue": "The 17 should be here any moment. The schedule says... ah, the schedule is from 1994. But still.",
+          "animation": "jiri_looking_at_tracks"
+        },
+        {
+          "phase": "confusion",
+          "speaker": "chadwick",
+          "dialogue": "The... 17?"
+        },
+        {
+          "phase": "jiri_explains",
+          "speaker": "jiri",
+          "dialogue": "Yes. The 17. I have a good feeling about today. Today feels like a tram day."
+        },
+        {
+          "phase": "bradley_question",
+          "speaker": "bradley",
+          "dialogue": "Sir, do you know how long you've been waiting?"
+        },
+        {
+          "phase": "jiri_revelation",
+          "speaker": "jiri",
+          "dialogue": "My wife asked me to pick up milk. That was in 2003. The milk will be VERY fresh when I return.",
+          "animation": "jiri_looks_at_bros"
+        },
+        {
+          "phase": "long_pause",
+          "duration_seconds": 3,
+          "description": "Uncomfortable silence"
+        },
+        {
+          "phase": "lp_redirects",
+          "speaker": "lord_pilsner",
+          "dialogue": "...So you don't know where the club is?"
+        },
+        {
+          "phase": "jiri_directions",
+          "speaker": "jiri",
+          "dialogue": "I know where EVERYTHING is. I have had time to think about the layout of this city. The club is three blocks north. But you could also take the 17. When it arrives.",
+          "animation": "jiri_pointing_directions"
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "increment_counter",
+          "counter": "visit_count",
+          "value": 1
+        },
+        {
+          "effect": "set_state",
+          "state": "jiri_encountered",
+          "value": true
+        }
+      ]
+    },
+    
+    {
+      "event_id": "return_visit",
+      "display_name": "Visiting Jiří Again",
+      "event_type": "dialogue_rotation",
+      "trigger": {
+        "type": "location_entry",
+        "condition": "visit_count > 1"
+      },
+      "mechanics": {
+        "mood_phase_selection": "based_on_visit_count",
+        "dialogue_rotation": "within_current_phase",
+        "visual_state": "matches_visit_count"
+      },
+      "post_event_effects": [
+        {
+          "effect": "increment_counter",
+          "counter": "visit_count",
+          "value": 1
+        },
+        {
+          "effect": "update_mood_phase",
+          "logic": "check_thresholds"
+        },
+        {
+          "effect": "update_shrine_stage",
+          "logic": "shrine_stage = floor(visit_count / 2)"
+        },
+        {
+          "effect": "check_night_vigil_unlock",
+          "condition": "visit_count >= 10"
+        }
+      ]
+    },
+    
+    {
+      "event_id": "passing_tram",
+      "display_name": "A Tram Passes",
+      "event_type": "ambient_event",
+      "trigger": {
+        "type": "random_interval",
+        "interval_seconds": 45,
+        "chance": 0.7
+      },
+      "duration_seconds": 4,
+      "sequence": [
+        {
+          "phase": "approach_sound",
+          "duration_seconds": 1,
+          "audio": "tram_approaching",
+          "animation": "jiri_perks_up"
+        },
+        {
+          "phase": "hope",
+          "speaker": "jiri",
+          "dialogue": "*looks hopeful*",
+          "animation": "jiri_hope_expression"
+        },
+        {
+          "phase": "tram_passes",
+          "duration_seconds": 1.5,
+          "visual": "tram_9_or_22_passes",
+          "audio": "tram_rattling_bell"
+        },
+        {
+          "phase": "disappointment",
+          "speaker": "jiri",
+          "dialogue": "*sighs, returns gaze to tracks*",
+          "animation": "jiri_disappointment"
+        }
+      ],
+      "variants": [
+        {
+          "tram": "9",
+          "jiri_comment": "The 9. Always the 9. Never the 17."
+        },
+        {
+          "tram": "22",
+          "jiri_comment": "The 22 mocks me with its regularity."
+        }
+      ]
+    },
+    
+    {
+      "event_id": "night_vigil",
+      "display_name": "Wait Through the Night",
+      "event_type": "extended_sequence",
+      "trigger": {
+        "type": "player_choice",
+        "condition": "visit_count >= 10 AND time_of_day = evening"
+      },
+      "duration_seconds": 300,
+      "requires_commitment": true,
+      "sequence": [
+        {
+          "phase": "decision",
+          "description": "Player chooses to stay with Jiří through the night",
+          "speaker": "jiri",
+          "dialogue": "You are staying? No one stays. The pigeons stay, but pigeons do not understand conversation."
+        },
+        {
+          "phase": "evening_settling",
+          "duration_seconds": 30,
+          "audio": "city_evening_ambience_quieting",
+          "visual": "lighting_shift_to_night"
+        },
+        {
+          "phase": "story_introduction",
+          "speaker": "jiri",
+          "dialogue": "Since you are staying... I will tell you why I wait."
+        },
+        {
+          "phase": "the_milk",
+          "speaker": "jiri",
+          "dialogue": "My wife asked me to get milk. Just milk. I said I would be back in twenty minutes."
+        },
+        {
+          "phase": "the_ring",
+          "speaker": "jiri",
+          "dialogue": "I had a ring in my pocket. I was going to propose when I returned. With the milk.",
+          "emotional_beat": true
+        },
+        {
+          "phase": "the_wait",
+          "speaker": "jiri",
+          "dialogue": "The 17 never came. I waited. And waited. I thought, 'Just a few more minutes.'"
+        },
+        {
+          "phase": "the_years",
+          "speaker": "jiri",
+          "dialogue": "A few more minutes became... years. And now I cannot leave. If I leave, all the waiting was for nothing."
+        },
+        {
+          "phase": "the_wife",
+          "speaker": "jiri",
+          "dialogue": "She waited too. Then she stopped waiting. I do not blame her.",
+          "emotional_beat": true
+        },
+        {
+          "phase": "the_meaning",
+          "speaker": "jiri",
+          "dialogue": "The 17 is not about the tram anymore. It is about finishing something. Anything.",
+          "emotional_beat": true
+        },
+        {
+          "phase": "long_silence",
+          "duration_seconds": 10,
+          "audio": "night_city_distant_dogs_pigeons_cooing"
+        },
+        {
+          "phase": "dawn_approaching",
+          "visual": "lighting_shift_to_dawn"
+        },
+        {
+          "phase": "gratitude",
+          "speaker": "jiri",
+          "dialogue": "You stayed. No one has ever stayed. The pigeons stay, but they do not understand. You understand."
+        },
+        {
+          "phase": "emotional_climax",
+          "speaker": "jiri",
+          "dialogue": "Heavy is the head that waits for the 17. But lighter now. Thank you.",
+          "emotional_beat": true
+        },
+        {
+          "phase": "lord_pilsner_response",
+          "speaker": "lord_pilsner",
+          "dialogue": "Bro... that was heavy."
+        },
+        {
+          "phase": "false_alarm_setup",
+          "audio": "tram_approaching_distant",
+          "speaker": "jiri",
+          "dialogue": "*stands slowly* That sound... I know that sound...",
+          "animation": "jiri_standing_hopeful"
+        },
+        {
+          "phase": "false_alarm_reveal",
+          "visual": "tram_22_passes",
+          "audio": "hopeful_music_deflating"
+        },
+        {
+          "phase": "false_alarm_reaction",
+          "speaker": "jiri",
+          "dialogue": "*sits back down* False alarm. But for a moment... for a moment I believed.",
+          "animation": "jiri_sitting_peaceful"
+        },
+        {
+          "phase": "blessing",
+          "speaker": "jiri",
+          "dialogue": "You are good people. Strange, but good. The locals will know you now. You sat with Jiří."
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "set_state",
+          "state": "night_vigil_completed",
+          "value": true
+        },
+        {
+          "effect": "grant_buff",
+          "buff_id": "jiris_blessing",
+          "permanent": true
+        },
+        {
+          "effect": "unlock_post_credits",
+          "scene": "the_17_arrives"
+        },
+        {
+          "effect": "advance_time",
+          "to": "morning"
+        }
+      ]
+    }
+  ],
+  
+  "interactive_objects": [
+    {
+      "object_id": "tram_schedule_1994",
+      "type": "examinable",
+      "interaction_text": "Examine the timetable",
+      "description": "A yellowed timetable behind cracked plastic. The date reads 1994. Someone has circled the #17 line obsessively in red pen. Handwritten notes fill every margin: 'Any day now.' 'The 17 WILL come.' 'I believe.'",
+      "player_note": "(This schedule is older than some of your party members.)"
+    },
+    {
+      "object_id": "shrine_offerings",
+      "type": "examinable",
+      "visibility": "visit_count >= 3",
+      "interaction_text": "Look at the offerings",
+      "description": "Bread for the pigeons. Fruit that Jiří never eats. Handwritten notes from strangers. Photos of families he's never met. A small ecosystem of respect.",
+      "progressive_content": {
+        "visit_5": "Candles have been added. Someone is actively maintaining this.",
+        "visit_10": "Children's drawings of Jiří and a tram labeled '17'. Fresh flowers, changed daily.",
+        "visit_13": "A small bronze plaque: 'JIŘÍ'S BENCH - HE WAITED'"
+      }
+    },
+    {
+      "object_id": "jiris_documentation",
+      "type": "examinable",
+      "interaction_text": "Look at Jiří's satchel",
+      "description": "A worn leather satchel bulging with papers. The visible pages show meticulous logs: tram numbers, times, dates. 47,000 entries. None of them say '17'.",
+      "player_note": "(This is either dedication or madness. Maybe both.)"
+    },
+    {
+      "object_id": "adjacent_bench_seat",
+      "type": "interactive",
+      "interaction_text": "Sit with Jiří",
+      "requirements": null,
+      "effect": {
+        "dialogue_trigger": "company_offered",
+        "state_change": "sat_with_jiri = true"
+      },
+      "description": "The seat next to Jiří. There's a pigeon on it, but it looks like it might move."
+    }
+  ],
+  
+  "environmental_easter_eggs": [
+    {
+      "easter_egg_id": "newspaper_clipping",
+      "location": "visible_in_shelter_corner",
+      "description": "An old newspaper clipping pinned to the shelter: 'LOCAL MAN VOWS TO WAIT FOR TRAM' - dated 2002",
+      "discovery_method": "examine_shelter"
+    },
+    {
+      "easter_egg_id": "missing_poster",
+      "location": "faded_on_nearby_wall",
+      "description": "A faded missing person poster with Jiří's face. The word 'FOUND' is written across it in marker, along with 'He's at Stop 17.'",
+      "discovery_method": "explore_area"
+    },
+    {
+      "easter_egg_id": "hostel_photo",
+      "location": "hostel_wall_background",
+      "description": "An old photo of Debaucheryville from the 1990s. In the background, at Tram Stop #17, the same man sits in the same position.",
+      "discovery_method": "examine_hostel_decorations"
+    }
+  ],
+  
+  "bros_misunderstanding": {
+    "after_visit_3": {
+      "speaker": "lord_pilsner",
+      "dialogue": "That guy REALLY knows the transit system. We should ask him about the metro too."
+    },
+    "after_visit_5": {
+      "speaker": "bradley",
+      "dialogue": "He's clearly a transportation expert. Did you see his documentation? 47,000 entries."
+    },
+    "after_visit_7": {
+      "speaker": "chadwick",
+      "dialogue": "I respect his commitment to local transit. That's REAL European culture."
+    },
+    "narrator_note": "They never understand he's been trapped there by his own stubbornness."
+  },
+  
+  "narrator_commentary": {
+    "on_first_visit": "Tram Stop #17. Where patience becomes performance art and public transit becomes philosophy.",
+    "on_jiri_backstory": "Jiří had waited so long that waiting had become his identity. The tram was almost beside the point now.",
+    "on_night_vigil_completion": "The bros had done something unexpected. Something human. They stayed.",
+    "on_blessing": "Locals would now nod at them with new respect. They were 'the Americans who sat with Jiří.' It meant something here."
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "system_id": "permanent_cosmetic_changes",
+  "description": "Master tracking system for permanent visual modifications to character sprites that persist for the entire game after acquisition",
+  
+  "design_philosophy": {
+    "purpose": "Permanent cosmetic changes serve as visible badges of the bros' poor decisions, creating running visual gags that pay off throughout the game",
+    "implementation": "Sprite overlays applied to base character sprites when conditions are met",
+    "comedy_function": "NPCs can comment on these changes, creating callback humor"
+  },
+  
+  "cosmetic_changes": [
+    {
+      "change_id": "lord_pilsner_duck_tattoo",
+      "display_name": "Lord Pilsner's 'Death Skeleton' Tattoo",
+      "actual_description": "A duck holding a scythe. Clearly a duck. NOT a skeleton.",
+      "pilsner_believes": "An authentic European death skeleton from the ancient Astronomical Clock",
+      
+      "acquisition": {
+        "source_quest": "debaucheryville_sidequest_astronomical_cockup_01",
+        "source_path": "path_a_full_clock_experience",
+        "trigger_event": "tattoo_shop_completion",
+        "location": "Euro Ink 4 Less, Astronomical Cock-Up Square, Debaucheryville",
+        "cost": "€75 (worth approximately €5 in actual tattoo quality)"
+      },
+      
+      "affected_character": "lord_pilsner",
+      "body_location": "lower_back",
+      "sprite_layer": "body_overlay_back",
+      
+      "visibility_conditions": {
+        "always_visible": false,
+        
+        "guaranteed_visible_outfits": {
+          "description": "Tattoo ALWAYS visible with these equipped",
+          "outfits": [
+            {"id": "shirtless", "reason": "No shirt = full back visible"},
+            {"id": "swimming_trunks", "reason": "Beach/pool scenes"},
+            {"id": "hospital_gown", "reason": "Open back design"},
+            {"id": "toga_party", "reason": "Loose draping reveals back"}
+          ]
+        },
+        
+        "high_visibility_outfits": {
+          "description": "Tattoo visible 80% of idle frames",
+          "outfits": [
+            {"id": "crop_top_accident", "equipment_ref": "torso_crop_top", "reason": "Shirt shrunk in hostel wash"},
+            {"id": "abercrombie_muscle_tee", "equipment_ref": "Abercrombie Muscle Tee (Size Too Small)", "reason": "Too tight, rides up constantly"},
+            {"id": "deep_v_neck", "equipment_ref": "Hemp Necklace Visible Through Deep V-Neck", "reason": "Low back as well as front"},
+            {"id": "basketball_jersey_oversized", "equipment_ref": "Basketball Jersey (Oversized)", "reason": "Large armholes reveal sides/back"}
+          ]
+        },
+        
+        "occasional_visibility_outfits": {
+          "description": "Tattoo peeks out 15-30% of idle frames",
+          "outfits": [
+            {"id": "polo_shirt_untucked", "equipment_ref": "Polo Shirt (Collar Popped)", "visibility": 0.20},
+            {"id": "casual_tshirt", "visibility": 0.15},
+            {"id": "board_shorts_combo", "equipment_ref": "Board Shorts (Knee-Length)", "visibility": 0.25, "reason": "Low-rise waist"}
+          ]
+        },
+        
+        "never_visible_outfits": {
+          "description": "Tattoo hidden with these equipped",
+          "outfits": [
+            {"id": "leather_jacket", "equipment_ref": "Leather Jacket (+Defense, +Cool factor)"},
+            {"id": "formal_wear", "reason": "Tucked shirt covers completely"},
+            {"id": "winter_coat", "reason": "Full coverage"}
+          ]
+        },
+        
+        "action_triggered_visibility": {
+          "description": "Tattoo becomes visible during these animations regardless of outfit",
+          "actions": [
+            {"action": "bending_over", "context": "Picking up items, examining low objects", "visibility": 1.0},
+            {"action": "reaching_up", "context": "High shelves, victory celebrations", "visibility": 0.8},
+            {"action": "victory_pose", "context": "Post-battle celebration", "visibility": 1.0},
+            {"action": "knocked_down", "context": "Battle damage, pratfalls", "visibility": 0.9},
+            {"action": "sleeping", "context": "Hostel scenes, passed out", "visibility": 0.7},
+            {"action": "hot_tub_scene", "context": "Any water/spa scenario", "visibility": 1.0},
+            {"action": "stretching", "context": "Morning animations, idle variety", "visibility": 0.6},
+            {"action": "dancing_badly", "context": "Club scenes", "visibility": 0.5}
+          ]
+        },
+        
+        "random_idle_visibility": {
+          "base_chance": 0.15,
+          "description": "Shirt rides up occasionally during standard idle loop",
+          "frame_count": "1-2 frames per idle cycle show tattoo peeking",
+          "conditions": ["not_wearing_jacket", "not_formal_wear"]
+        }
+      },
+      
+      "sprite_specifications": {
+        "base_size": {"width": 24, "height": 20},
+        "position_on_sprite": {"x_offset": -12, "y_offset": 28},
+        "design_elements": [
+          "Clearly duck-shaped body",
+          "Scythe held in wing (not hand - it's a wing)",
+          "Wobbly linework suggesting intoxicated artist",
+          "Slight color bleed outside lines",
+          "Faded grey-blue ink (cheap ink quality)"
+        ],
+        "what_pilsner_sees": "A majestic skeleton warrior representing European mortality",
+        "what_everyone_else_sees": "A duck. Obviously a duck."
+      },
+      
+      "npc_reactions": {
+        "tattoo_comments": [
+          {"npc_type": "random_tourist", "comment": "Is that... a duck?", "pilsner_response": "It's DEATH. From the clock."},
+          {"npc_type": "local", "comment": "*in Czech* 'Kachna.' (Duck.)", "pilsner_response": "Thanks! It means 'warrior' I think."},
+          {"npc_type": "tattoo_artist_other_city", "comment": "Ah, the Lord Pilsner Special! You want matching duck for friend?", "pilsner_response": "See? I'm FAMOUS."},
+          {"npc_type": "love_interest", "comment": "That's... unique.", "pilsner_response": "It's European. You wouldn't understand."},
+          {"npc_type": "chadwick", "comment": "Bro, that still looks like a duck.", "pilsner_response": "It's ARTISTIC INTERPRETATION."},
+          {"npc_type": "bradley", "comment": "The Romans actually used duck imagery to represent...", "pilsner_response": "SEE? Bradley gets it."}
+        ],
+        "comment_frequency": "10% chance per NPC interaction when tattoo visible"
+      },
+      
+      "gameplay_effects": {
+        "stats": null,
+        "social_effects": [
+          {"effect": "tattoo_artist_recognition", "description": "All tattoo artists in game recognize 'the duck guy'"},
+          {"effect": "twin_peaks_callback", "description": "Referenced in post-credits scene"}
+        ],
+        "achievement_unlock": "cultured_traveler"
+      },
+      
+      "post_credits_reference": {
+        "scene": "the_duck_reveal",
+        "location": "Twin Peaks restaurant, Lord Pilsner's hometown",
+        "callback": "Amber confirms it's obviously a duck"
+      }
+    },
+    
+    {
+      "change_id": "vip_wristbands_all_bros",
+      "display_name": "VIP All-Access Wristbands",
+      "actual_description": "Children's birthday party wristbands that say 'Je mi 7!' (I'm 7!) in Czech",
+      "bros_believe": "Level Seven Access - the highest tier VIP status that doesn't even exist in America",
+      
+      "acquisition": {
+        "source_quest": "debaucheryville_sidequest_vip_wristbands_01",
+        "source_event": "shady_wristband_guy_transaction",
+        "trigger_event": "wristband_purchase_complete",
+        "location": "Astronomical Cock-Up Square, Debaucheryville",
+        "cost": "€30 each, €90 total (actual value: €0.003 each)",
+        "scammer_profit_margin": "8,900%",
+        "connection_to_clock_quest": "Same square, can trigger during or after Clock quest"
+      },
+      
+      "affected_characters": ["lord_pilsner", "chadwick", "bradley"],
+      "body_location": "wrist_right",
+      "sprite_layer": "accessory_overlay_arm",
+      
+      "visibility_conditions": {
+        "always_visible": true,
+        "visible_note": "Bros NEVER remove these. They shower with them. They sleep with them. They are proof of status.",
+        "degradation_over_time": {
+          "day_1_3": "pristine_velvet",
+          "day_4_7": "slightly_worn",
+          "day_8_plus": "crusty_faded_still_worn_proudly"
+        }
+      },
+      
+      "sprite_specifications": {
+        "base_size": {"width": 8, "height": 4},
+        "position_on_sprite": {
+          "lord_pilsner": {"x_offset": 18, "y_offset": 42},
+          "chadwick": {"x_offset": 17, "y_offset": 40},
+          "bradley": {"x_offset": 16, "y_offset": 44}
+        },
+        "design_elements": [
+          "Thin plastic children's party band",
+          "Text reads 'Je mi 7!' (I'm 7! in Czech)",
+          "Cheap plastic clasp",
+          "Fading text after day 4",
+          "Visible dirt/sweat stains after day 8",
+          "Still worn proudly regardless of condition"
+        ],
+        "colors": {
+          "lord_pilsner": "#CC0000",
+          "chadwick": "#0000CC",
+          "bradley": "#6600CC"
+        },
+        "text_on_band": {
+          "czech": "Je mi 7!",
+          "what_bros_think": "Level 7 Access",
+          "what_it_means": "I'm 7 years old!"
+        }
+      },
+      
+      "npc_reactions": {
+        "wristband_comments": [
+          {"npc_type": "bouncer", "comment": "Your bracelet says... 'I am seven.'", "bros_response": "That's European for VIP. Seven stars."},
+          {"npc_type": "club_patron", "comment": "Oh cute, is it your birthday?", "bros_response": "Every day is my birthday when you're Level Seven."},
+          {"npc_type": "kebab_vendor", "comment": "You want kids menu? You are... seven?", "bros_response": "See? Even the food vendors know our status."},
+          {"npc_type": "velvet_curtain_regular", "comment": "*in Czech* 'To jsou ti Level Seven Američané.'", "bros_response": "They're talking about us. Respect."},
+          {"npc_type": "actual_child", "comment": "Mommy, those old men have my wristband!", "bros_dont_hear": true},
+          {"npc_type": "vendor_who_sold_them", "comment": "Ah, my best customers! You want Level EIGHT?", "bros_response": "There's a LEVEL EIGHT?!"}
+        ],
+        "comment_frequency": "15% chance at nightlife/service locations"
+      },
+      
+      "equipment_item_clarification": {
+        "warning": "NOT the same as 'Velvet Wristband (VIP Access)' equipment item in equipment.md",
+        "equipment_wristband": {
+          "name": "Velvet Wristband (VIP Access)",
+          "type": "equippable_accessory",
+          "stats": "+3 Club Entry, +2 Bottle Service, +1 Fake Importance",
+          "slot": "watch_bracelet",
+          "obtainable": "Actual club souvenir or purchase"
+        },
+        "scam_wristbands": {
+          "name": "VIP All-Access Wristband (I'm 7!)",
+          "type": "permanent_cosmetic_change",
+          "stats": "None (comedy only)",
+          "visible": "Always on sprite",
+          "removable": false,
+          "source": "Shady Wristband Guy scam"
+        },
+        "can_equip_both": "Yes - bros could wear equipment wristband AND still have scam wristbands visible"
+      },
+      
+      "gameplay_effects": {
+        "stats": {
+          "bravado": "+2",
+          "charm_with_tourists": "+1",
+          "charm_with_locals": "-2",
+          "club_entry_difficulty": "no_change_despite_belief"
+        },
+        "social_effects": [
+          {"effect": "perpetual_vip_delusion", "description": "Bros believe they have VIP access everywhere"},
+          {"effect": "wristband_checking", "description": "Bros flash wristbands at every door regardless of venue type"},
+          {"effect": "wednesday_confusion", "description": "Bros occasionally lose track of what day it is"}
+        ],
+        "title_unlock": "level_seven_vip"
+      },
+      
+      "running_gag": {
+        "description": "Bros attempt to use 'VIP status' at increasingly inappropriate venues",
+        "examples": [
+          "Museum entrance",
+          "Public restroom",
+          "Grocery store",
+          "Hospital",
+          "Police station"
+        ]
+      }
+    }
+  ],
+  
+  "future_cosmetic_changes": [
+    {
+      "change_id": "placeholder_sinfonia_opera_monocle",
+      "description": "Potential permanent monocle from Sinfonia opera house incident",
+      "status": "not_yet_designed"
+    },
+    {
+      "change_id": "placeholder_shamsterdam_bike_injury",
+      "description": "Potential visible injury from catastrophic bike rental incident",
+      "status": "not_yet_designed"
+    }
+  ],
+  
+  "sprite_implementation": {
+    "overlay_system": {
+      "description": "Cosmetic changes rendered as overlay sprites on top of base character sprites",
+      "layer_order": [
+        "base_character",
+        "clothing_layer",
+        "body_overlay_back",
+        "accessory_overlay_arm",
+        "accessory_overlay_head",
+        "effect_overlay"
+      ]
+    },
+    "animation_integration": {
+      "tattoo": "Moves with character back during animations",
+      "wristbands": "Visible on arm in all animation frames",
+      "idle_visibility": "Occasional shirt-ride-up frame shows tattoo"
+    }
+  },
+  
+  "save_system_integration": {
+    "flags_tracked": [
+      "cosmetic_duck_tattoo_acquired",
+      "cosmetic_vip_wristbands_acquired",
+      "wristband_degradation_day"
+    ],
+    "persistence": "permanent_once_acquired",
+    "cannot_be_removed": true,
+    "removal_note": "Bros would NEVER remove these. They are badges of honor."
+  }
+}

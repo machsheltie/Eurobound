@@ -1,0 +1,321 @@
+{
+  "location_id": "shamsterdam_voetgangerstunnel_01",
+  
+  "npcs": [
+    {
+      "npc_id": "shamsterdam_npc_henk_security_01",
+      "display_name": "Henk",
+      "role": "unhelpful_navigation_assistance",
+      "importance": "primary",
+      
+      "appearance": {
+        "clothing": "bored_security_uniform_too_tight",
+        "props": ["empty_coffee_cup", "newspaper_unfinished_crossword"],
+        "expression": "stopped_caring_in_1997",
+        "posture": "permanently_seated"
+      },
+      
+      "location": {
+        "zone": "intersection_of_doubt",
+        "position": "central_booth",
+        "always_present": true
+      },
+      
+      "personality": {
+        "traits": ["gives_directions_in_dutch", "points_randomly", "genuinely_believes_helping"],
+        "speech_pattern": "confident_but_wrong",
+        "years_underground": "unknown_never_surfaces"
+      },
+      
+      "dialogue": {
+        "english_request": "Ah, Centraal Station? Ja, ja, go that way.",
+        "direction_gesture": "*points vaguely in random direction*",
+        "when_wrong": "Strange, it was there yesterday.",
+        "about_red_light_exit": "Oh, THAT exit. Many tourists find that one. Very popular.",
+        "repeated_requests": "You again? Did you try the blue tiles? No? Try the orange ones.",
+        "paid_directions": "Okay, for five euro, I give you the REAL directions. This way. Maybe.",
+        "escort_offer": "For ten euro, I walk you there myself. But I walk slow. Very slow."
+      },
+      
+      "services": [
+        {
+          "id": "free_directions",
+          "name": "Directions",
+          "cost": 0,
+          "effect": "random_direction_pointed",
+          "accuracy": "very_low"
+        },
+        {
+          "id": "paid_directions",
+          "name": "'Correct' Directions",
+          "cost": 5,
+          "currency": "euro",
+          "effect": "slightly_better_odds",
+          "accuracy_bonus": 0.10
+        },
+        {
+          "id": "escort",
+          "name": "Guided Walk",
+          "cost": 10,
+          "currency": "euro",
+          "effect": "guaranteed_correct_exit",
+          "speed": "very_slow",
+          "time_cost": "5_minutes_real_time"
+        }
+      ],
+      
+      "animation_states": {
+        "sitting_bored": {"frames": 2, "fps": 0.25, "loop": true},
+        "pointing_confidently": {"frames": 3, "fps": 1, "loop": false},
+        "shrugging": {"frames": 2, "fps": 1, "loop": false},
+        "slow_walking": {"frames": 4, "fps": 1, "loop": true}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_marloes_mapvendor_01",
+      "display_name": "Marloes",
+      "role": "map_vendor_actually_helpful",
+      "importance": "primary",
+      
+      "appearance": {
+        "setting": "tiny_kiosk_built_into_wall",
+        "props": ["maps", "guidebooks", "batteries", "reading_glasses"],
+        "age": "middle_aged",
+        "expression": "knows_youre_lost"
+      },
+      
+      "location": {
+        "zone": "entrance_hall",
+        "position": "wall_kiosk",
+        "always_present": true
+      },
+      
+      "personality": {
+        "traits": ["genuinely_helpful", "tourist_prices", "memorized_actual_layout", "enjoys_watching_advice_ignored"],
+        "speech_pattern": "matter_of_fact_dutch_directness"
+      },
+      
+      "dialogue": {
+        "greeting": "Lost already? You just got down here.",
+        "selling_map": "€8 for the map. It's the only accurate one in the city. Yes, really.",
+        "navigation_warning": "The blue tiles go to the station. The orange go to... places.",
+        "about_red_light_exit": "Exit 7? That's the quick one. Very... scenic.",
+        "after_purchase": "You bought the map. Now actually LOOK at it.",
+        "when_ignored": "*sighs* See you in twenty minutes.",
+        "return_visit": "Back again? Did you look at the map? ...You didn't look at the map."
+      },
+      
+      "services": [
+        {
+          "id": "tunnel_map",
+          "name": "Tunnel Map",
+          "cost": 8,
+          "currency": "euro",
+          "effect": {
+            "navigation_bonus": 0.15,
+            "shows_actual_layout": true
+          },
+          "item_granted": "tunnel_map_accurate"
+        },
+        {
+          "id": "tourist_map",
+          "name": "Tourist Map (Surface)",
+          "cost": 5,
+          "currency": "euro",
+          "effect": "useless_underground",
+          "comedy": true
+        },
+        {
+          "id": "survivor_badge",
+          "name": "'I Survived the Tunnel' Badge",
+          "cost": 3,
+          "currency": "euro",
+          "effect": "cosmetic_only"
+        },
+        {
+          "id": "flashlight",
+          "name": "Flashlight",
+          "cost": 6,
+          "currency": "euro",
+          "effect": "reveals_hidden_graffiti_hints"
+        }
+      ],
+      
+      "special_interaction": {
+        "condition": "buy_map_AND_follow_advice",
+        "buff": "marloess_blessing",
+        "effect": {"navigation": 0.20},
+        "duration": "current_visit"
+      },
+      
+      "animation_states": {
+        "idle_in_kiosk": {"frames": 2, "fps": 0.5, "loop": true},
+        "handing_item": {"frames": 3, "fps": 2, "loop": false},
+        "disappointed_sigh": {"frames": 2, "fps": 0.5, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_willem_busker_01",
+      "display_name": "Willem the Eternal Busker",
+      "role": "ambient_landmark_quest_hint",
+      "importance": "secondary",
+      
+      "appearance": {
+        "instrument": "ancient_accordion",
+        "props": ["hat_with_exactly_2.47_euro"],
+        "clothing": "indeterminate_decade",
+        "aura": "may_or_may_not_be_ghost"
+      },
+      
+      "location": {
+        "zone": "long_corridor",
+        "position": "same_spot_always",
+        "consistent": true
+      },
+      
+      "personality": {
+        "traits": ["plays_same_song_loop", "here_since_tunnel_opened", "cryptic_accurate_hints", "speaks_in_riddles"],
+        "speech_pattern": "elderly_mysterious"
+      },
+      
+      "dialogue": {
+        "unprompted": "*plays accordion, ignores you*",
+        "tip_1_euro": "Follow the sound of the tram. It knows the way.",
+        "tip_5_euro": "The red signs lie. The emergency signs tell truth.",
+        "about_himself": "I've been here since... hmm. What year is it?",
+        "third_5_euro_tip": "I remember when the tunnel was new. Before the bikes. Before... *trails off*",
+        "ghost_hint": "I think I'll stay a while longer. *disappears for one second, reappears*"
+      },
+      
+      "tip_system": {
+        "1_euro": {"hint_quality": "basic", "dialogue": "tip_1_euro"},
+        "5_euro": {"hint_quality": "reliable", "dialogue": "tip_5_euro"},
+        "theft_attempt": {"reaction": "stops_playing_stares", "duration_seconds": 10}
+      },
+      
+      "hidden_quest": {
+        "quest_id": "eternal_busker",
+        "trigger": "tip_5_euro_three_separate_visits",
+        "stages": [
+          {"visit": 1, "content": "navigation_hint"},
+          {"visit": 2, "content": "personal_story_hint"},
+          {"visit": 3, "content": "ghost_revelation_maybe"}
+        ],
+        "reward": {
+          "achievement": "willems_friend",
+          "item": "willems_accordion_cosmetic",
+          "buff": "permanent_navigation_10_all_tunnels"
+        }
+      },
+      
+      "landmark_function": {
+        "audio_cue": "accordion_music",
+        "meaning": "player_is_in_zone_3",
+        "reliability": "always"
+      },
+      
+      "animation_states": {
+        "playing_accordion": {"frames": 4, "fps": 2, "loop": true},
+        "looking_up_mysterious": {"frames": 2, "fps": 0.5, "loop": false},
+        "disappear_reappear": {"frames": 3, "fps": 0.3, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_lost_tourist_generic_01",
+      "display_name": "Lost Tourist",
+      "role": "comic_relief_warning_example",
+      "importance": "ambient",
+      
+      "appearance": {
+        "variants": ["american", "british", "australian"],
+        "condition": "increasingly_disheveled_over_encounters",
+        "props": ["map_held_upside_down", "dead_phone"],
+        "expression": "thousand_yard_stare"
+      },
+      
+      "location": {
+        "zone": "various",
+        "movement": "wanders_between_zones",
+        "spawns": "different_tourist_each_visit"
+      },
+      
+      "dialogue_pool": [
+        "Have you seen Exit 4? I've been looking for Exit 4 for... what day is it?",
+        "The sign said Centraal Station. I've seen Centraal Station four times. From different angles.",
+        "I came down here to avoid the bikes. I think I preferred the bikes.",
+        "The security guard said to follow the orange tiles. The orange tiles just led me back to him.",
+        "I had a group. I lost the group. They're probably at the hotel by now.",
+        "My phone died. Do you have a charger? ...No? That's fine. Fine. This is fine."
+      ],
+      
+      "escort_interaction": {
+        "offer_help": true,
+        "response": "You'd... you'd help me? Really? But the tiles...",
+        "escort_behavior": ["freezes_at_intersections", "second_guesses_everything", "grateful_at_exit"],
+        "reward": {
+          "achievement": "tour_guide",
+          "gold": 5,
+          "karma": "positive"
+        },
+        "comedy": "they_get_lost_again_next_visit"
+      },
+      
+      "animation_states": {
+        "wandering_confused": {"frames": 4, "fps": 1.5, "loop": true},
+        "staring_at_map": {"frames": 2, "fps": 0.5, "loop": true},
+        "relieved_at_help": {"frames": 2, "fps": 1, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_mevrouw_jansen_01",
+      "display_name": "Mevrouw Jansen",
+      "role": "red_light_exit_reaction",
+      "importance": "conditional",
+      
+      "appearance": {
+        "type": "elderly_dutch_woman",
+        "setting": "window_apartment_above_red_light",
+        "props": ["watering_can_for_plants"],
+        "expression": "permanent_disappointed_judgment",
+        "note": "NOT a worker, just lives above district"
+      },
+      
+      "location": {
+        "zone": "red_light_district_exit",
+        "appears_when": "player_emerges_from_tunnel_wrong_exit"
+      },
+      
+      "dialogue": {
+        "on_emergence": "Ah, another one. The tunnel got you too?",
+        "about_destination": "You wanted the station, didn't you? Everyone wants the station.",
+        "about_exit": "This exit has been here since 1973. They've never fixed the sign.",
+        "comparison": "At least you didn't fall in the canal like last week's group.",
+        "directions": "The station is that way. *points* No, the OTHER that way."
+      },
+      
+      "function": {
+        "provides_context": true,
+        "normalizes_confusion": true,
+        "gives_surface_directions": true,
+        "comic_relief": true
+      },
+      
+      "animation_states": {
+        "watering_plants": {"frames": 3, "fps": 1, "loop": true},
+        "looking_down_judging": {"frames": 2, "fps": 0.5, "loop": true}
+      }
+    }
+  ],
+  
+  "spawn_points": {
+    "henk": {"zone": "intersection_of_doubt", "position": "central_booth"},
+    "marloes": {"zone": "entrance_hall", "position": "wall_kiosk"},
+    "willem": {"zone": "long_corridor", "position": "always_same_spot"},
+    "lost_tourist": {"zone": "random", "movement_pattern": "wander"},
+    "mevrouw_jansen": {"zone": "red_light_exit", "condition": "wrong_exit_triggered"}
+  }
+}

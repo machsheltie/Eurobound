@@ -1,0 +1,278 @@
+{
+  "location_id": "sinfonia_bassline_opera_house_01",
+  "display_name": "The Bassline Opera House",
+  "satirical_subtitle": "400 Years of Cultural Excellence, One Horse Disaster",
+  "world": "sinfonia",
+  "area_zone": "imperial_square_district",
+  "location_type": "multi_zone_venue_story_hub_boss_arena",
+  
+  "zones": [
+    {
+      "zone_id": "lobby",
+      "display_name": "Grand Lobby",
+      "zone_type": "public_hub",
+      "dimensions": {"width": 400, "height": 300}
+    },
+    {
+      "zone_id": "auditorium",
+      "display_name": "Main Auditorium",
+      "zone_type": "event_space_boss_arena",
+      "dimensions": {"width": 500, "height": 400}
+    },
+    {
+      "zone_id": "backstage",
+      "display_name": "Backstage",
+      "zone_type": "quest_location_puzzle",
+      "dimensions": {"width": 450, "height": 350}
+    },
+    {
+      "zone_id": "dressing_rooms",
+      "display_name": "Dressing Rooms",
+      "zone_type": "npc_hub_item_source",
+      "dimensions": {"width": 300, "height": 200}
+    },
+    {
+      "zone_id": "orchestra_pit",
+      "display_name": "Orchestra Pit",
+      "zone_type": "boss_arena",
+      "dimensions": {"width": 350, "height": 250}
+    }
+  ],
+  
+  "access_requirements": {
+    "lobby": {
+      "time_restrictions": "10:00-23:00",
+      "stat_requirements": null,
+      "item_requirements": null,
+      "dress_code": "advisory_only"
+    },
+    "auditorium": {
+      "time_restrictions": {
+        "rehearsals": "10:00-17:00",
+        "performances": "19:00-22:00",
+        "bassline": "23:00-04:00"
+      },
+      "stat_requirements": {
+        "sneak_rehearsal": {"charm": 2},
+        "bassline_charm_entry": {"charm": 4}
+      },
+      "item_requirements": {
+        "evening": ["performance_ticket"],
+        "bassline": ["bassline_ticket"]
+      },
+      "dress_code": "formal_required_evening"
+    },
+    "backstage": {
+      "time_restrictions": "10:00-22:00",
+      "stat_requirements": {"bluff_entry": {"charm": 3}},
+      "item_requirements": ["stage_pass"],
+      "special_conditions": {
+        "fiaker_fiasco": "auto_entry_via_alley"
+      }
+    },
+    "dressing_rooms": {
+      "time_restrictions": "14:00-22:00",
+      "stat_requirements": {"charm": 3},
+      "item_requirements": ["stage_pass"]
+    },
+    "orchestra_pit": {
+      "time_restrictions": "23:00-04:00",
+      "stat_requirements": {"bravado": 3, "charm": 2},
+      "previous_requirements": ["main_quest_sinfonia_boss"],
+      "special_conditions": "bassline_event_active"
+    }
+  },
+  
+  "visual_design": {
+    "lobby": {
+      "layout_type": "grand_baroque_hall",
+      "key_features": ["grand_staircase", "chandeliers_6_major", "marble_columns", "box_office"],
+      "lighting": {
+        "daytime": "#FFFACD",
+        "evening": "#FFD700",
+        "bassline": "#4B0082"
+      }
+    },
+    "auditorium": {
+      "layout_type": "horseshoe_theater",
+      "capacity": 1200,
+      "key_features": ["proscenium_arch", "royal_box", "private_boxes", "orchestra_pit"],
+      "configurations": ["normal", "bassline_arena"]
+    },
+    "backstage": {
+      "layout_type": "working_theater_chaos",
+      "key_features": ["prop_storage", "costume_workshop", "loading_dock", "stage_wings"],
+      "current_production": "die_zauberfloete"
+    },
+    "color_palette": {
+      "opera_house_gold": "#CFB53B",
+      "baroque_cream": "#FFF8DC",
+      "velvet_red": "#8B0000",
+      "marble_white": "#FFFAFA",
+      "gilded_bronze": "#CD7F32",
+      "backstage_black": "#1C1C1C"
+    },
+    "mobile_optimization": {
+      "zone_loading": true,
+      "lod_level": 2,
+      "max_particles": 80,
+      "draw_calls": 50,
+      "memory_mb": 50
+    }
+  },
+  
+  "atmosphere": {
+    "primary_theme": "cultural_institution_pretension",
+    "secondary_theme": "high_art_meets_chaos",
+    "cultural_target": "opera_snobbery_artistic_exploitation",
+    "dual_identity": {
+      "daytime": "traditional_opera_venue",
+      "nighttime": "edm_underground_bassline"
+    }
+  },
+  
+  "quest_integration": {
+    "primary_quests": [
+      {
+        "quest_id": "sinfonia_sidequest_fiaker_fiasco_01",
+        "phase": "backstage_phase_03",
+        "zone": "backstage",
+        "role": "gustav_chaos_magic_flute_disruption"
+      },
+      {
+        "quest_id": "sinfonia_mainquest_boss_01",
+        "phase": "maestro_boss_fight",
+        "zone": "orchestra_pit",
+        "role": "city_boss_arena"
+      },
+      {
+        "quest_id": "sinfonia_encounter_waltz_of_bros",
+        "phase": "rival_encounter",
+        "zone": "auditorium",
+        "role": "rhythm_battle_location"
+      }
+    ],
+    "damage_tracking": {
+      "enabled": true,
+      "running_total_key": "fiaker_fiasco_damage_euro",
+      "backstage_contribution": 2000
+    }
+  },
+  
+  "economic_data": {
+    "currency": "euro",
+    "gift_shop": {
+      "location": "lobby",
+      "items": [
+        {"id": "opera_program", "price": 12},
+        {"id": "mozart_bust_mini", "price": 45},
+        {"id": "opera_tote_bag", "price": 25},
+        {"id": "soundtrack_cd", "price": 20},
+        {"id": "maestro_poster", "price": 15}
+      ]
+    },
+    "box_office": {
+      "location": "lobby",
+      "tickets": [
+        {"type": "evening_performance", "price_range": [40, 80]},
+        {"type": "bassline_event", "price": 25},
+        {"type": "season_pass", "price": 300}
+      ]
+    },
+    "damage_system": {
+      "backstage_total": 2000,
+      "breakdown": [
+        {"item": "papageno_bird_head", "cost": 150},
+        {"item": "magic_flute_prop", "cost": 200},
+        {"item": "mechanical_snake", "cost": 800},
+        {"item": "queen_gown", "cost": 200},
+        {"item": "paper_trees_x2", "cost": 250},
+        {"item": "starry_night_backdrop", "cost": 400}
+      ],
+      "prima_donna_demand": {
+        "base": 500,
+        "negotiated_minimum": 200,
+        "charm_threshold": 4
+      },
+      "hans_jurgen_insurance_covers": 500
+    }
+  },
+  
+  "boss_data": {
+    "boss_id": "sinfonia_boss_maestro_vice_von_strauss",
+    "arena_zone": "orchestra_pit",
+    "configuration": "bassline_transformation",
+    "phases": [
+      {
+        "phase": 1,
+        "name": "Classical Corruption",
+        "mechanics": ["rhythm_sync", "orchestra_attack_patterns"]
+      },
+      {
+        "phase": 2,
+        "name": "The Drop",
+        "mechanics": ["edm_transition", "bass_attacks", "standing_ovation"]
+      },
+      {
+        "phase": 3,
+        "name": "Encore",
+        "mechanics": ["tempo_shifts", "add_summons", "crescendo_crush"]
+      }
+    ],
+    "rewards": [
+      {"item": "conductors_baton", "type": "weapon"},
+      {"item": "baroness_vault_keys", "type": "key_item"},
+      {"status": "bassline_vip", "type": "permanent_buff"}
+    ]
+  },
+  
+  "cross_location_references": [
+    {
+      "location": "sinfonia_imperial_opera_house_plaza_01",
+      "relationship": "adjacent_main_entrance"
+    },
+    {
+      "location": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+      "relationship": "incoming_quest_path_alley"
+    },
+    {
+      "location": "sinfonia_stadtpark_01",
+      "relationship": "outgoing_quest_path"
+    },
+    {
+      "location": "sinfonia_black_tie_backroom_01",
+      "relationship": "hidden_entrance_from_lobby"
+    },
+    {
+      "location": "sinfonia_hidden_baroness_ballroom_01",
+      "relationship": "unlocked_via_boss_keys"
+    }
+  ],
+  
+  "state_tracking": {
+    "states": ["normal", "rehearsal", "performance", "bassline", "fiaker_fiasco_chaos", "post_quest"],
+    "default_state": "normal",
+    "state_changes": {
+      "fiaker_fiasco_chaos": {
+        "trigger": "gustav_entry_backstage",
+        "features": ["chaos_mode", "npc_reactive", "damage_tracking", "props_destructible"]
+      },
+      "post_quest": {
+        "trigger": "fiaker_fiasco_complete",
+        "features": ["visible_repairs", "bros_recognized", "debt_active", "areas_closed_24h"]
+      },
+      "bassline": {
+        "trigger": "time_23_00",
+        "features": ["auditorium_transforms", "pit_becomes_dance_floor", "boss_arena_active"]
+      }
+    }
+  },
+  
+  "achievements": [
+    {"id": "backstage_chaos", "trigger": "complete_backstage_phase"},
+    {"id": "show_must_go_on", "trigger": "minimize_damage_via_papageno"},
+    {"id": "culture_vulture", "trigger": "attend_full_performance"},
+    {"id": "bassline_conqueror", "trigger": "defeat_maestro"},
+    {"id": "waltz_of_the_bros", "trigger": "complete_rival_encounter"}
+  ]
+}

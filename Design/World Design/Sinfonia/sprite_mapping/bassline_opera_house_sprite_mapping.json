@@ -1,0 +1,520 @@
+{
+  "location_id": "sinfonia_bassline_opera_house_01",
+  
+  "sprite_sheets": {
+    "lobby_tileset": {
+      "file": "bassline_opera_lobby_tileset.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "tile_size": 32,
+      "categories": {
+        "floor_tiles": {
+          "start_row": 0,
+          "tiles": [
+            {"id": "marble_white", "col": 0},
+            {"id": "marble_grey", "col": 1},
+            {"id": "marble_pattern", "col": 2},
+            {"id": "music_note_mosaic", "col": 3},
+            {"id": "red_carpet", "col": 4},
+            {"id": "red_carpet_edge", "col": 5}
+          ]
+        },
+        "wall_tiles": {
+          "start_row": 1,
+          "tiles": [
+            {"id": "baroque_cream", "col": 0},
+            {"id": "baroque_gold_trim", "col": 1},
+            {"id": "column_base", "col": 2},
+            {"id": "column_shaft", "col": 3},
+            {"id": "column_capital", "col": 4},
+            {"id": "window_frame", "col": 5}
+          ]
+        },
+        "furniture": {
+          "start_row": 2,
+          "tiles": [
+            {"id": "velvet_bench", "col": 0, "width": 2},
+            {"id": "box_office_window", "col": 2, "width": 2},
+            {"id": "coat_check_counter", "col": 4, "width": 2},
+            {"id": "gift_shop_display", "col": 6, "width": 2}
+          ]
+        },
+        "staircase": {
+          "start_row": 4,
+          "tiles": [
+            {"id": "grand_stair_bottom", "col": 0, "width": 4, "height": 2},
+            {"id": "grand_stair_middle", "col": 4, "width": 4, "height": 2},
+            {"id": "grand_stair_top", "col": 8, "width": 4, "height": 2}
+          ]
+        },
+        "decorative": {
+          "start_row": 8,
+          "tiles": [
+            {"id": "chandelier_small", "col": 0, "width": 2, "height": 3},
+            {"id": "chandelier_large", "col": 2, "width": 4, "height": 4},
+            {"id": "portrait_mozart", "col": 6, "width": 2, "height": 3},
+            {"id": "portrait_beethoven", "col": 8, "width": 2, "height": 3},
+            {"id": "bust_pedestal", "col": 10, "width": 1, "height": 2}
+          ]
+        }
+      }
+    },
+    
+    "backstage_tileset": {
+      "file": "bassline_opera_backstage_tileset.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "tile_size": 32,
+      "categories": {
+        "floor_tiles": {
+          "start_row": 0,
+          "tiles": [
+            {"id": "stage_wood", "col": 0},
+            {"id": "backstage_concrete", "col": 1},
+            {"id": "catwalk_metal", "col": 2},
+            {"id": "loading_dock_concrete", "col": 3}
+          ]
+        },
+        "wall_tiles": {
+          "start_row": 1,
+          "tiles": [
+            {"id": "backstage_black", "col": 0},
+            {"id": "brick_painted", "col": 1},
+            {"id": "pipe_grid", "col": 2},
+            {"id": "fire_door", "col": 3}
+          ]
+        },
+        "props_racks": {
+          "start_row": 2,
+          "tiles": [
+            {"id": "prop_rack_intact", "col": 0, "width": 2, "height": 3},
+            {"id": "prop_rack_damaged", "col": 2, "width": 2, "height": 3},
+            {"id": "costume_rack", "col": 4, "width": 2, "height": 3},
+            {"id": "costume_rack_destroyed", "col": 6, "width": 2, "height": 3}
+          ]
+        },
+        "set_pieces": {
+          "start_row": 6,
+          "tiles": [
+            {"id": "paper_tree_intact", "col": 0, "width": 2, "height": 4},
+            {"id": "paper_tree_fallen", "col": 2, "width": 3, "height": 2},
+            {"id": "mechanical_snake_intact", "col": 5, "width": 3, "height": 2},
+            {"id": "mechanical_snake_destroyed", "col": 8, "width": 3, "height": 2}
+          ]
+        },
+        "backdrop": {
+          "start_row": 10,
+          "tiles": [
+            {"id": "starry_night_intact", "col": 0, "width": 8, "height": 4},
+            {"id": "starry_night_torn", "col": 8, "width": 8, "height": 4}
+          ]
+        }
+      }
+    },
+    
+    "npc_regisseur_hoffmann": {
+      "file": "npc_regisseur_hoffmann.png",
+      "dimensions": {"width": 384, "height": 384},
+      "sprite_size": {"width": 48, "height": 64},
+      "animations": {
+        "idle_directing": {
+          "row": 0,
+          "frames": 6,
+          "fps": 3,
+          "loop": true
+        },
+        "horror": {
+          "row": 1,
+          "frames": 4,
+          "fps": 6,
+          "loop": false
+        },
+        "breakdown": {
+          "row": 2,
+          "frames": 2,
+          "fps": 2,
+          "loop": true
+        },
+        "fury": {
+          "row": 3,
+          "frames": 4,
+          "fps": 4,
+          "loop": true
+        },
+        "defeat_sitting": {
+          "row": 4,
+          "frames": 2,
+          "fps": 1,
+          "loop": true
+        },
+        "walk": {
+          "row": 5,
+          "frames": 4,
+          "fps": 6,
+          "loop": true
+        }
+      }
+    },
+    
+    "npc_stagehead_otto": {
+      "file": "npc_stagehead_otto.png",
+      "dimensions": {"width": 288, "height": 256},
+      "sprite_size": {"width": 48, "height": 64},
+      "animations": {
+        "idle_coffee": {
+          "row": 0,
+          "frames": 2,
+          "fps": 1,
+          "loop": true
+        },
+        "coffee_sip": {
+          "row": 1,
+          "frames": 3,
+          "fps": 2,
+          "loop": false
+        },
+        "point_direction": {
+          "row": 2,
+          "frames": 2,
+          "fps": 2,
+          "loop": false
+        },
+        "walk": {
+          "row": 3,
+          "frames": 4,
+          "fps": 4,
+          "loop": true
+        }
+      },
+      "props": {
+        "coffee_cup": {"always_visible": true}
+      }
+    },
+    
+    "npc_prima_donna_adelheid": {
+      "file": "npc_prima_donna_adelheid.png",
+      "dimensions": {"width": 384, "height": 320},
+      "sprite_size": {"width": 48, "height": 80},
+      "animations": {
+        "singing": {
+          "row": 0,
+          "frames": 4,
+          "fps": 3,
+          "loop": true
+        },
+        "interrupted": {
+          "row": 1,
+          "frames": 3,
+          "fps": 4,
+          "loop": false
+        },
+        "outrage": {
+          "row": 2,
+          "frames": 4,
+          "fps": 3,
+          "loop": true
+        },
+        "dismissive": {
+          "row": 3,
+          "frames": 2,
+          "fps": 2,
+          "loop": false
+        }
+      },
+      "costume_variants": {
+        "intact": {"row_offset": 0},
+        "torn": {"row_offset": 4}
+      }
+    },
+    
+    "npc_papageno_franz": {
+      "file": "npc_papageno_franz.png",
+      "dimensions": {"width": 384, "height": 320},
+      "sprite_size": {"width": 48, "height": 80},
+      "animations": {
+        "performing": {
+          "row": 0,
+          "frames": 6,
+          "fps": 4,
+          "loop": true
+        },
+        "excited_hop": {
+          "row": 1,
+          "frames": 4,
+          "fps": 6,
+          "loop": true
+        },
+        "guiding_beckon": {
+          "row": 2,
+          "frames": 4,
+          "fps": 4,
+          "loop": true
+        },
+        "offering_seeds": {
+          "row": 3,
+          "frames": 4,
+          "fps": 3,
+          "loop": false
+        }
+      },
+      "costume_details": {
+        "feathers": "animated_subtle",
+        "beak_mask": "always_visible"
+      }
+    },
+    
+    "npc_lobby_staff": {
+      "file": "npc_lobby_staff_sheet.png",
+      "dimensions": {"width": 384, "height": 384},
+      "sprite_size": {"width": 48, "height": 64},
+      "characters": {
+        "box_office_attendant": {
+          "row": 0,
+          "animations": {
+            "idle": {"frames": 2, "fps": 1},
+            "judging": {"frames": 2, "fps": 2},
+            "refusing": {"frames": 3, "fps": 2}
+          }
+        },
+        "opera_usher": {
+          "row": 2,
+          "animations": {
+            "standing": {"frames": 2, "fps": 1},
+            "blocking": {"frames": 2, "fps": 2},
+            "disapproving": {"frames": 3, "fps": 2}
+          }
+        },
+        "coat_check": {
+          "row": 4,
+          "animations": {
+            "idle": {"frames": 2, "fps": 1},
+            "gossiping": {"frames": 3, "fps": 3}
+          }
+        }
+      }
+    },
+    
+    "boss_maestro_von_strauss": {
+      "file": "boss_maestro_von_strauss.png",
+      "dimensions": {"width": 512, "height": 640},
+      "sprite_size": {"width": 64, "height": 80},
+      "phases": {
+        "phase_1_classical": {
+          "row": 0,
+          "animations": {
+            "conducting": {"frames": 8, "fps": 4},
+            "crescendo_attack": {"frames": 6, "fps": 6},
+            "waltz_debuff": {"frames": 6, "fps": 3}
+          }
+        },
+        "phase_2_edm": {
+          "row": 3,
+          "animations": {
+            "djing": {"frames": 6, "fps": 5},
+            "bass_attack": {"frames": 4, "fps": 8},
+            "headphones_on": {"frames": 2, "fps": 2}
+          }
+        },
+        "phase_3_fusion": {
+          "row": 6,
+          "animations": {
+            "chaotic_conducting": {"frames": 8, "fps": 6},
+            "encore_summon": {"frames": 6, "fps": 4},
+            "defeat": {"frames": 4, "fps": 2}
+          }
+        }
+      }
+    },
+    
+    "destructible_props": {
+      "file": "destructible_props_sheet.png",
+      "dimensions": {"width": 512, "height": 384},
+      "objects": {
+        "papageno_bird_head": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 64, "height": 64},
+          "states": ["intact", "falling", "destroyed"],
+          "frames_per_state": 1
+        },
+        "magic_flute_prop": {
+          "position": {"x": 64, "y": 0},
+          "size": {"width": 48, "height": 24},
+          "states": ["intact", "bending", "snapped"],
+          "frames_per_state": 1
+        },
+        "queen_gown": {
+          "position": {"x": 0, "y": 64},
+          "size": {"width": 48, "height": 80},
+          "states": ["pristine", "caught", "torn"],
+          "frames_per_state": 1
+        },
+        "paper_tree": {
+          "position": {"x": 112, "y": 0},
+          "size": {"width": 64, "height": 128},
+          "states": ["standing", "tipping", "fallen"],
+          "frames_per_state": 1
+        },
+        "mechanical_snake": {
+          "position": {"x": 0, "y": 144},
+          "size": {"width": 96, "height": 64},
+          "states": ["operational", "kicked", "destroyed"],
+          "frames_per_state": 1
+        },
+        "starry_backdrop": {
+          "position": {"x": 0, "y": 208},
+          "size": {"width": 256, "height": 128},
+          "states": ["pristine", "catching", "torn"],
+          "frames_per_state": 1
+        }
+      }
+    },
+    
+    "effects_sheet": {
+      "file": "opera_house_effects.png",
+      "dimensions": {"width": 256, "height": 256},
+      "effects": {
+        "feathers": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 64, "height": 64},
+          "frames": 4,
+          "fps": 8
+        },
+        "gold_paint_flakes": {
+          "position": {"x": 64, "y": 0},
+          "size": {"width": 64, "height": 64},
+          "frames": 4,
+          "fps": 6
+        },
+        "fabric_tear": {
+          "position": {"x": 0, "y": 64},
+          "size": {"width": 64, "height": 64},
+          "frames": 3,
+          "fps": 8
+        },
+        "canvas_rip": {
+          "position": {"x": 64, "y": 64},
+          "size": {"width": 128, "height": 64},
+          "frames": 4,
+          "fps": 6
+        },
+        "damage_popup": {
+          "position": {"x": 0, "y": 128},
+          "size": {"width": 64, "height": 32},
+          "frames": 3,
+          "fps": 4
+        },
+        "chandelier_sparkle": {
+          "position": {"x": 128, "y": 0},
+          "size": {"width": 64, "height": 64},
+          "frames": 4,
+          "fps": 3
+        }
+      }
+    },
+    
+    "ui_elements": {
+      "file": "opera_house_ui.png",
+      "dimensions": {"width": 256, "height": 192},
+      "elements": {
+        "damage_counter_frame": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 128, "height": 48}
+        },
+        "euro_symbol": {
+          "position": {"x": 128, "y": 0},
+          "size": {"width": 32, "height": 32}
+        },
+        "debt_indicator": {
+          "position": {"x": 0, "y": 48},
+          "size": {"width": 100, "height": 32}
+        },
+        "choice_panel": {
+          "position": {"x": 0, "y": 80},
+          "size": {"width": 200, "height": 80}
+        },
+        "papageno_icon": {
+          "position": {"x": 200, "y": 80},
+          "size": {"width": 48, "height": 48}
+        }
+      }
+    }
+  },
+  
+  "lighting": {
+    "lobby": {
+      "ambient": {
+        "daytime": {"color": "#FFFACD", "intensity": 0.8},
+        "evening": {"color": "#FFD700", "intensity": 0.9},
+        "bassline_night": {"color": "#4B0082", "intensity": 0.6}
+      },
+      "point_lights": [
+        {"id": "chandelier_main", "position": {"x": 200, "y": 30}, "radius": 150, "color": "#FFD700", "intensity": 0.7},
+        {"id": "chandelier_2", "position": {"x": 100, "y": 50}, "radius": 100, "color": "#FFD700", "intensity": 0.5},
+        {"id": "chandelier_3", "position": {"x": 300, "y": 50}, "radius": 100, "color": "#FFD700", "intensity": 0.5},
+        {"id": "window_left", "position": {"x": 20, "y": 100}, "radius": 80, "color": "#F0F0F0", "intensity": 0.4, "daytime_only": true},
+        {"id": "window_right", "position": {"x": 380, "y": 100}, "radius": 80, "color": "#F0F0F0", "intensity": 0.4, "daytime_only": true}
+      ]
+    },
+    "backstage": {
+      "ambient": {
+        "work_lights": {"color": "#F0F0F0", "intensity": 0.7}
+      },
+      "point_lights": [
+        {"id": "stage_spill", "position": {"x": 400, "y": 150}, "radius": 100, "color": "#FFA500", "intensity": 0.5},
+        {"id": "exit_sign_1", "position": {"x": 50, "y": 20}, "radius": 30, "color": "#FF0000", "intensity": 0.8},
+        {"id": "exit_sign_2", "position": {"x": 400, "y": 20}, "radius": 30, "color": "#FF0000", "intensity": 0.8}
+      ]
+    },
+    "boss_arena": {
+      "ambient": {"color": "#1a0033", "intensity": 0.3},
+      "dynamic_lights": {
+        "dj_booth": {"color_cycle": ["#FF00FF", "#00FFFF", "#FFFF00"], "speed": 2},
+        "dance_floor": {"strobe": true, "intensity_range": [0.2, 1.0], "tempo_sync": true}
+      }
+    }
+  },
+  
+  "collision_zones": {
+    "lobby": {
+      "walkable": [
+        {"type": "rect", "x": 20, "y": 50, "width": 360, "height": 200}
+      ],
+      "blocked": [
+        {"type": "rect", "x": 80, "y": 40, "width": 240, "height": 60, "label": "grand_staircase"},
+        {"type": "rect", "x": 20, "y": 160, "width": 40, "height": 40, "label": "coat_check_counter"},
+        {"type": "rect", "x": 340, "y": 160, "width": 40, "height": 40, "label": "gift_shop"}
+      ],
+      "interactive": [
+        {"type": "circle", "x": 200, "y": 80, "radius": 24, "label": "performance_board"},
+        {"type": "circle", "x": 80, "y": 100, "radius": 20, "label": "mozart_portrait"},
+        {"type": "circle", "x": 300, "y": 120, "radius": 16, "label": "beethoven_bust"}
+      ]
+    },
+    "backstage": {
+      "walkable": [
+        {"type": "rect", "x": 20, "y": 50, "width": 400, "height": 250}
+      ],
+      "destructible": [
+        {"type": "rect", "x": 60, "y": 80, "width": 60, "height": 80, "label": "prop_rack"},
+        {"type": "rect", "x": 140, "y": 100, "width": 60, "height": 80, "label": "costume_rack"},
+        {"type": "rect", "x": 200, "y": 160, "width": 80, "height": 40, "label": "snake_prop"},
+        {"type": "rect", "x": 300, "y": 50, "width": 120, "height": 200, "label": "backdrop"}
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": {
+      "count": 5,
+      "max_size": 1024,
+      "format": "png_24_alpha"
+    },
+    "draw_calls_budget": 50,
+    "memory_budget_mb": 50,
+    "particle_budget": 80,
+    "target_fps": 60,
+    "lod_levels": {
+      "full": {"distance": 0, "detail": "high"},
+      "medium": {"distance": 200, "detail": "medium", "animations_reduced": true},
+      "low": {"distance": 400, "detail": "low", "static_only": true}
+    }
+  }
+}

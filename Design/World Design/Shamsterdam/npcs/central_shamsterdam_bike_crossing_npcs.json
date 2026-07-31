@@ -1,0 +1,362 @@
+{
+  "location_id": "shamsterdam_bike_crossing_thunderdome_01",
+  
+  "npcs": [
+    {
+      "npc_id": "shamsterdam_npc_bike_rental_guy_01",
+      "display_name": "The Bike Rental Guy",
+      "role": "warning_giver_service_provider",
+      "importance": "primary",
+      
+      "appearance": {
+        "clothing": "orange_safety_vest",
+        "expression": "tired_eyes_seen_too_much",
+        "props": ["clipboard_liability_waivers", "fleet_orange_rental_bikes"],
+        "posture": "resigned_but_professional"
+      },
+      
+      "location": {
+        "position": "south_entrance_kiosk",
+        "always_present": true
+      },
+      
+      "personality": {
+        "traits": ["given_up_on_tourists", "perfect_told_you_so_timing", "secretly_respects_survivors"],
+        "speech_pattern": "deadpan_warnings",
+        "relationship_with_tourists": "exhausted_professionalism"
+      },
+      
+      "dialogue": {
+        "before_crossing": "You're going to walk? Across THAT? ...Okay. Good luck. You'll need it.",
+        "after_failed_crossing": "I did warn you. Everyone warns you. No one listens.",
+        "after_successful_crossing": "Huh. You lived. Don't let it go to your head.",
+        "if_renting_bike": "Now YOU'RE the problem. Congratulations.",
+        "repeat_failure": "You again? At this point I'm almost impressed by the persistence.",
+        "rush_hour_warning": "Rush hour. Double traffic. I'd wait, but you won't.",
+        "cargo_parade_warning": "Cargo parade in ninety seconds. There's no getting through that.",
+        "perfect_crossing_rare": "...That was actually impressive. Don't tell anyone I said that."
+      },
+      
+      "services": [
+        {
+          "id": "bike_rental",
+          "name": "Bike Rental",
+          "cost": 15,
+          "currency": "euro",
+          "effect": "converts_to_traffic_participant",
+          "duration": "1_day"
+        },
+        {
+          "id": "crossing_tips",
+          "name": "Crossing Tips",
+          "cost": 0,
+          "effect": "hint_dialogue"
+        },
+        {
+          "id": "first_aid",
+          "name": "First Aid",
+          "cost": 5,
+          "currency": "euro",
+          "effect": "heal_15_hp"
+        }
+      ],
+      
+      "animation_states": {
+        "idle": {"frames": 2, "fps": 0.5, "loop": true},
+        "warning_gesture": {"frames": 3, "fps": 1, "loop": false},
+        "i_told_you_so_shrug": {"frames": 2, "fps": 1, "loop": false},
+        "impressed_nod": {"frames": 2, "fps": 0.5, "loop": false},
+        "handing_bike": {"frames": 4, "fps": 2, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_gerrit_traffic_philosopher_01",
+      "display_name": "Gerrit the Traffic Philosopher",
+      "role": "ambient_wisdom_tutorial_hints",
+      "importance": "secondary",
+      
+      "appearance": {
+        "age": "elderly_dutch",
+        "clothing": "casual_cardigan_comfortable",
+        "props": ["permanent_coffee_cup", "newspaper_never_read"],
+        "expression": "slight_schadenfreude_smile"
+      },
+      
+      "location": {
+        "position": "cafe_terrace_southwest",
+        "activity": "watching_crossing_perpetually"
+      },
+      
+      "personality": {
+        "traits": ["philosophical_about_traffic", "enjoys_watching_tourists_fail", "occasionally_helpful"],
+        "speech_pattern": "zen_traffic_wisdom",
+        "thirty_years_watching": true
+      },
+      
+      "dialogue": {
+        "greeting": "Ah, another one approaches the crossing. Sit. Watch. Learn. ...Or don't. Also entertaining.",
+        "wisdom_1": "The trick is to not think of them as bicycles. Think of them as... nature. You don't fight nature. You flow around it.",
+        "wisdom_2": "I've sat here for thirty years. The tourists never learn. The bicycles never slow. It is... beautiful.",
+        "wisdom_3": "You see that gap? That's not a gap. That's a trap. Wait for the REAL gap.",
+        "wisdom_4": "Shamsterdammers invented this system. Shamsterdammers understand it. You are not a Shamsterdammer. Remember that.",
+        "after_failure": "Predictable. Sit. Coffee. Try again when your dignity recovers.",
+        "after_success": "You live. For now. Tomorrow, who knows.",
+        "perfect_crossing": "...Acceptable. You may have the slightest understanding. Sit. Tell me what you learned.",
+        "cargo_parade": "Ah, the parade. Watch. Even I do not cross during the parade."
+      },
+      
+      "function": {
+        "provides_hints": true,
+        "commentary_changes_on_performance": true,
+        "hidden_achievement": {
+          "id": "gerrits_approval",
+          "trigger": "perfect_crossing_while_watched",
+          "reward": "gerrit_nods_approvingly"
+        }
+      },
+      
+      "animation_states": {
+        "sitting_watching": {"frames": 2, "fps": 0.25, "loop": true},
+        "sipping_coffee": {"frames": 3, "fps": 1, "loop": false},
+        "schadenfreude_chuckle": {"frames": 2, "fps": 1, "loop": false},
+        "impressed_eyebrow_raise": {"frames": 2, "fps": 0.5, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_mama_bakfiets_01",
+      "display_name": "Mama Bakfiets",
+      "role": "cargo_parade_leader_quest_npc",
+      "importance": "secondary",
+      
+      "appearance": {
+        "build": "powerful_dutch_woman",
+        "vehicle": "massive_cargo_bike",
+        "cargo": ["three_children", "two_dogs", "grocery_bags"],
+        "expression": "serene_amid_chaos",
+        "accessory": "bright_orange_helmet"
+      },
+      
+      "location": {
+        "position": "leading_cargo_parade",
+        "appears": "every_90_seconds",
+        "post_parade_position": "north_exit_briefly"
+      },
+      
+      "personality": {
+        "traits": ["unflappable", "matriarchal_authority", "respects_boldness"],
+        "speech_pattern": "calm_commands_amid_chaos"
+      },
+      
+      "dialogue": {
+        "during_parade": "MAKE WAY! CHILDREN AND DOGS! YOU KNEW THIS WAS COMING!",
+        "post_parade_greeting": "American? Walking? Bold choice. I respect the foolishness.",
+        "quest_hook": "You want to understand the crossing? Ride WITH us. See what we see.",
+        "quest_accept": "Good. Tomorrow, dawn. We ride. Bring your courage. Leave your dignity.",
+        "quest_complete": "Now you understand. The bicycle is not obstacle. The bicycle is life.",
+        "if_hit_by_parade": "Ah, I saw you there. The children thought it was funny. It was a little funny."
+      },
+      
+      "quest": {
+        "id": "cargo_cult",
+        "name": "Cargo Cult",
+        "trigger": "speak_post_parade",
+        "objective": "join_cargo_parade_crossing",
+        "reward": {
+          "buff": "bicycle_empathy",
+          "effect": "crossing_difficulty_reduced_permanently",
+          "unlock": "rooftop_route_shortcut"
+        }
+      },
+      
+      "animation_states": {
+        "riding_parade": {"frames": 4, "fps": 3, "loop": true},
+        "stopped_talking": {"frames": 2, "fps": 0.5, "loop": true},
+        "commanding_gesture": {"frames": 3, "fps": 1, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_fallen_tourist_01",
+      "display_name": "The Fallen Tourist",
+      "role": "warning_example_comic_relief",
+      "importance": "ambient",
+      
+      "appearance": {
+        "clothing": "cargo_shorts_fanny_pack_american",
+        "expression": "thousand_yard_stare",
+        "props": ["bike_tire_mark_across_shirt", "half_eaten_stroopwafel"],
+        "posture": "sitting_traumatized"
+      },
+      
+      "location": {
+        "position": "pedestrian_island_center",
+        "state": "stranded"
+      },
+      
+      "personality": {
+        "traits": ["traumatized", "used_to_understand_traffic", "broken"],
+        "speech_pattern": "shell_shocked_rambling"
+      },
+      
+      "dialogue": {
+        "greeting": "I've been here for... how long? The bikes just... they don't stop. They NEVER stop.",
+        "about_gap": "I saw a gap. I SWEAR I saw a gap. There was no gap.",
+        "about_children": "The children in the cargo bikes... they LAUGHED at me.",
+        "about_self": "I used to think I understood traffic. I understood NOTHING.",
+        "if_helped": "You'd... you'd help me? Really? But the bikes...",
+        "after_rescue": "Dry land. I never thought I'd see dry land again. It's been... an hour."
+      },
+      
+      "interaction": {
+        "type": "escort_mission",
+        "name": "Tourist Rescue",
+        "reward": {
+          "gold": 10,
+          "karma": "positive",
+          "npc_state": "grateful"
+        }
+      },
+      
+      "progressive_state": {
+        "visit_1": "traumatized_coherent",
+        "visit_2": "more_disheveled",
+        "visit_3": "eating_stroopwafel_numbly",
+        "visit_4": "has_made_friends_with_pigeons",
+        "visit_5": "considers_island_home_now"
+      },
+      
+      "animation_states": {
+        "sitting_traumatized": {"frames": 2, "fps": 0.25, "loop": true},
+        "flinching_at_bikes": {"frames": 2, "fps": 4, "loop": false},
+        "grateful_standing": {"frames": 3, "fps": 1, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_officer_vandenberg_01",
+      "display_name": "Officer van den Berg",
+      "role": "fine_enforcer_traffic_authority",
+      "importance": "conditional",
+      
+      "appearance": {
+        "uniform": "dutch_police_uniform",
+        "expression": "extremely_patient",
+        "props": ["citation_booklet_already_open"],
+        "posture": "has_seen_every_excuse"
+      },
+      
+      "location": {
+        "position": "roaming",
+        "appears_after": "violations"
+      },
+      
+      "personality": {
+        "traits": ["patient", "by_the_book", "occasionally_impressed"],
+        "speech_pattern": "calm_bureaucratic"
+      },
+      
+      "dialogue": {
+        "bike_lane_violation": "This is a bike lane. You are not a bike. That's €95.",
+        "blocking_traffic": "You're blocking traffic. Yes, on foot. Still illegal. €140.",
+        "photography_violation": "No photographs in crossing. Safety regulation. €50.",
+        "tram_near_miss": "...I'm honestly impressed. Here's a warning. This time.",
+        "repeat_offender": "You again. At this point, I should offer a subscription.",
+        "attitude_surcharge": "And €25 for the attitude."
+      },
+      
+      "fines": [
+        {"violation": "standing_in_bike_lane", "amount": 95, "currency": "euro"},
+        {"violation": "blocking_traffic", "amount": 140, "currency": "euro"},
+        {"violation": "photography_in_crossing", "amount": 50, "currency": "euro"},
+        {"violation": "attitude_surcharge", "amount": 25, "currency": "euro"}
+      ],
+      
+      "animation_states": {
+        "walking_patrol": {"frames": 4, "fps": 2, "loop": true},
+        "writing_citation": {"frames": 3, "fps": 1, "loop": false},
+        "impressed_pause": {"frames": 2, "fps": 0.5, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_stay_away_pamphleteer_01",
+      "display_name": "Tourism Board Rep",
+      "role": "stay_away_campaign_quest_integration",
+      "importance": "ambient",
+      
+      "appearance": {
+        "clothing": "city_branded_polo",
+        "props": ["stack_of_pamphlets", "tired_smile"],
+        "expression": "paid_to_discourage_you"
+      },
+      
+      "location": {
+        "position": "south_entrance_near_rental",
+        "activity": "handing_out_pamphlets"
+      },
+      
+      "dialogue": {
+        "greeting": "Welcome to Shamsterdam! Have you considered... not being here?",
+        "pamphlet_offer": "A pamphlet about why you shouldn't have come. It's actually quite informative.",
+        "about_crossing": "The crossing? Yes. Many tourists find it... educational.",
+        "stay_away_quest": "Collect all our pamphlets. It's the only quest we WANT you to complete."
+      },
+      
+      "quest_integration": {
+        "quest": "stay_away_campaign",
+        "pamphlet_number": 3,
+        "pamphlet_title": "Traffic Safety: A Tourist's Last Mistake"
+      }
+    }
+  ],
+  
+  "cyclist_npcs": [
+    {
+      "npc_id": "cyclist_commuter_generic",
+      "type": "traffic_obstacle",
+      "variants": 4,
+      "behavior": "will_not_slow_down"
+    },
+    {
+      "npc_id": "cyclist_parent_bakfiets",
+      "type": "traffic_obstacle",
+      "variants": 3,
+      "behavior": "surprisingly_fast_with_children"
+    },
+    {
+      "npc_id": "cyclist_tourist_rental",
+      "type": "traffic_obstacle",
+      "variants": 4,
+      "behavior": "unpredictable_wobbly"
+    },
+    {
+      "npc_id": "cyclist_delivery",
+      "type": "traffic_obstacle",
+      "variants": 2,
+      "behavior": "deadline_energy"
+    },
+    {
+      "npc_id": "cyclist_student",
+      "type": "traffic_obstacle",
+      "variants": 3,
+      "behavior": "texting_while_cycling"
+    },
+    {
+      "npc_id": "cyclist_elder",
+      "type": "traffic_obstacle",
+      "variants": 2,
+      "behavior": "silent_fast_immortal"
+    }
+  ],
+  
+  "spawn_points": {
+    "bike_rental_guy": {"x": 50, "y": 280, "zone": "south_entrance"},
+    "gerrit": {"x": 20, "y": 260, "zone": "cafe_terrace"},
+    "fallen_tourist": {"x": 150, "y": 150, "zone": "pedestrian_island"},
+    "mama_bakfiets": {"x": 0, "y": 100, "zone": "parade_route_start"},
+    "officer_vandenberg": {"x": "roaming", "y": "roaming", "trigger": "violation"},
+    "pamphleteer": {"x": 60, "y": 275, "zone": "south_entrance"}
+  }
+}

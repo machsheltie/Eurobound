@@ -1,0 +1,252 @@
+{
+  "location_id": "sinfonia_stadtpark_gustavs_refuge_01",
+  
+  "interactive_objects": {
+    "landmarks": [
+      {
+        "object_id": "johann_strauss_statue",
+        "type": "landmark_selfie_prop",
+        "display_name": "Johann Strauss Monument",
+        "description": "The famous golden statue of the Waltz King, violin raised mid-performance. Tourists photograph it by day. Tonight it watches the chaos in gilded silence.",
+        "interactions": [
+          {"type": "examine", "result": "sinfonia_lore_strauss"},
+          {"type": "selfie", "result": "bravado_boost_2"}
+        ],
+        "quest_relevance": "atmospheric_contrast",
+        "touch_zone": {"x": 300, "y": 80, "width": 64, "height": 96}
+      },
+      {
+        "object_id": "bandstand_pavilion",
+        "type": "landmark_interactive",
+        "display_name": "Bandstand Pavilion",
+        "description": "An elegant white pavilion used for summer concerts. Empty and silent at night. The acoustics are excellent.",
+        "interactions": [
+          {"type": "examine", "result": "concert_schedule_daytime"},
+          {
+            "type": "papageno_performance",
+            "condition": "papageno_present",
+            "result": "alternative_gustav_calming"
+          }
+        ],
+        "touch_zone": {"x": 350, "y": 200, "width": 80, "height": 64}
+      },
+      {
+        "object_id": "ornamental_pond",
+        "type": "hazard_landmark",
+        "display_name": "Ornamental Pond",
+        "description": "A decorative pond with a fountain. Several swans sleep near the edge. They look peaceful. They are not.",
+        "interactions": [
+          {"type": "examine", "result": "swan_warning"},
+          {"type": "approach_too_close", "result": "swan_attack", "effect": "wet_status"},
+          {"type": "fall_in", "result": "full_submersion", "effect": "wet_plus_debuff_removal"}
+        ],
+        "hazard": {
+          "trigger": "within_2_tiles",
+          "enemy": "aggressive_swan",
+          "avoidable": true
+        },
+        "touch_zone": {"x": 80, "y": 100, "width": 100, "height": 80}
+      }
+    ],
+    
+    "benches": [
+      {
+        "object_id": "bench_philosopher",
+        "type": "seating_npc_encounter",
+        "display_name": "Weathered Park Bench",
+        "description": "A cast-iron bench. An elderly man in academic robes sits here, mumbling about epistemology.",
+        "npc": "homeless_philosopher_01",
+        "touch_zone": {"x": 100, "y": 250, "width": 48, "height": 32}
+      },
+      {
+        "object_id": "bench_couple",
+        "type": "seating_occupied",
+        "display_name": "Secluded Bench",
+        "description": "A bench in the shadows. Two people are... busy. Very busy. Obliviously busy.",
+        "npc": "making_out_couple_01",
+        "interaction": {
+          "type": "disturb",
+          "result": "minimal_acknowledgment_continues"
+        },
+        "touch_zone": {"x": 280, "y": 100, "width": 48, "height": 32}
+      },
+      {
+        "object_id": "bench_tourist",
+        "type": "seating_occupied",
+        "display_name": "Bench Near Path",
+        "description": "A tourist has fallen asleep here, guidebook under their head. They do not stir despite everything.",
+        "npc": "sleeping_tourist_01",
+        "interaction": {
+          "type": "wake",
+          "result": "impossible_sleeps_through_all"
+        },
+        "touch_zone": {"x": 120, "y": 280, "width": 48, "height": 32}
+      },
+      {
+        "object_id": "bench_empty",
+        "type": "seating_restpoint",
+        "display_name": "Empty Park Bench",
+        "description": "A quiet bench overlooking the lawn. From here, you can see Gustav standing in the moonlight.",
+        "interaction": {
+          "type": "sit",
+          "result": "remove_tired_status",
+          "duration_seconds": 10
+        },
+        "touch_zone": {"x": 200, "y": 220, "width": 48, "height": 32}
+      }
+    ],
+    
+    "environmental": [
+      {
+        "object_id": "lampposts",
+        "type": "environmental_lighting",
+        "display_name": "Victorian Lampposts",
+        "description": "Cast-iron lampposts casting pools of golden light. The dramatic shadows are very... European.",
+        "count": 8,
+        "function": "creates_pools_of_light_for_dramatic_confrontation"
+      },
+      {
+        "object_id": "trampled_gardens",
+        "type": "environmental_evidence",
+        "display_name": "Trampled Flower Beds",
+        "description": "Gustav's path of destruction through the park's prized flower beds. The groundskeeper will weep tomorrow.",
+        "interaction": {
+          "type": "examine",
+          "result": "follow_trail_to_gustav"
+        },
+        "comedy_note": "groundskeeper_appears_next_day_devastated"
+      },
+      {
+        "object_id": "drinking_fountain",
+        "type": "utility",
+        "display_name": "Public Drinking Fountain",
+        "description": "A small drinking fountain. Surprisingly clean. The water is cold.",
+        "interaction": {
+          "type": "drink",
+          "result": "minor_hp_restore"
+        },
+        "touch_zone": {"x": 250, "y": 180, "width": 24, "height": 24}
+      },
+      {
+        "object_id": "park_restroom",
+        "type": "locked_building",
+        "display_name": "Public Restroom",
+        "description": "A small restroom building. Locked at night. The sign says 'Open 8:00-20:00.'",
+        "state_night": "locked",
+        "touch_zone": {"x": 320, "y": 280, "width": 48, "height": 48}
+      },
+      {
+        "object_id": "ranger_station",
+        "type": "locked_building",
+        "display_name": "Park Ranger Station",
+        "description": "A small office for park staff. Empty at night. A schedule on the door indicates opening at 7:00.",
+        "state_night": "empty",
+        "touch_zone": {"x": 380, "y": 250, "width": 48, "height": 48}
+      }
+    ],
+    
+    "quest_specific": [
+      {
+        "object_id": "gustav_confrontation_zone",
+        "type": "quest_trigger_area",
+        "display_name": "Central Lawn",
+        "description": "The open grass where Gustav has made his stand. Moonlight illuminates him dramatically.",
+        "quest_function": {
+          "trigger": "player_enters",
+          "starts": "confrontation_sequence",
+          "locks_exit": true
+        },
+        "touch_zone": {"x": 150, "y": 100, "width": 150, "height": 150}
+      },
+      {
+        "object_id": "skittles_interaction",
+        "type": "item_use_target",
+        "display_name": "Gustav (Approachable)",
+        "description": "Gustav eyes the colorful candy warily. He remembers these...",
+        "item_required": "bag_of_skittles",
+        "interaction_phases": [
+          {"phase": 1, "action": "hold_out", "gustav_reaction": "ears_perk"},
+          {"phase": 2, "action": "wait", "gustav_reaction": "cautious_step"},
+          {"phase": 3, "action": "offer", "gustav_reaction": "approaches"},
+          {"phase": 4, "action": "feed", "gustav_reaction": "eats_trust_earned"}
+        ]
+      }
+    ]
+  },
+  
+  "selfie_props": [
+    {
+      "prop_id": "strauss_statue_selfie",
+      "location": "johann_strauss_statue",
+      "display_name": "Waltz King Selfie",
+      "bravado_boost": 2,
+      "gallery_entry": true,
+      "special_note": "Dramatic with Gustav in background during quest"
+    },
+    {
+      "prop_id": "gustav_moonlight_selfie",
+      "location": "central_lawn",
+      "display_name": "Horse in Moonlight",
+      "condition": "quest_resolution_complete",
+      "bravado_boost": 4,
+      "gallery_entry": true,
+      "viral_potential": "high"
+    },
+    {
+      "prop_id": "skittles_diplomacy_selfie",
+      "location": "gustav_confrontation_zone",
+      "display_name": "Candy Diplomacy",
+      "condition": "during_skittles_feeding",
+      "bravado_boost": 5,
+      "gallery_entry": true,
+      "viral_potential": "very_high"
+    }
+  ],
+  
+  "hidden_interactions": [
+    {
+      "id": "pigeon_lady_backstory",
+      "trigger": "talk_to_pigeon_lady_3_times",
+      "unlocks": "pigeon_lady_lore_entry",
+      "reveals": "she_was_once_famous_opera_singer"
+    },
+    {
+      "id": "philosopher_real_identity",
+      "trigger": "pay_for_wisdom_3_times",
+      "unlocks": "philosopher_was_university_dean",
+      "comedy": "resigned_after_publishing_paper_on_horse_consciousness"
+    },
+    {
+      "id": "swan_apology",
+      "trigger": "offer_bread_to_swans_after_attack",
+      "result": "swans_become_neutral",
+      "item_required": "bread_crumbs"
+    }
+  ],
+  
+  "environmental_interactions": [
+    {
+      "trigger_id": "moonlight_serenity",
+      "type": "passive_buff",
+      "condition": "nighttime",
+      "effect": {"wisdom": 1, "duration": "while_in_park"}
+    },
+    {
+      "trigger_id": "natures_respite",
+      "type": "status_removal",
+      "condition": "30_seconds_in_park",
+      "effect": {"removes": "stressed"}
+    },
+    {
+      "trigger_id": "pond_mishap",
+      "type": "hazard",
+      "trigger": "approach_pond_carelessly",
+      "effect": {
+        "status": "wet",
+        "debuff_removal": ["on_fire", "overheated"],
+        "charm_reduction": 1,
+        "duration_minutes": 5
+      }
+    }
+  ]
+}

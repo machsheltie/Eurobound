@@ -1,0 +1,349 @@
+{
+  "location_id": "sinfonia_bassline_opera_house_01",
+  
+  "ambient_audio": {
+    "lobby": {
+      "background_music": {
+        "daytime": {"track": "classical_ambient_elegant.ogg", "volume": 0.3},
+        "evening": {"track": "pre_performance_anticipation.ogg", "volume": 0.35},
+        "bassline_night": {"track": "muffled_bass_from_auditorium.ogg", "volume": 0.4}
+      },
+      "environmental_sounds": [
+        {"sound": "marble_footsteps", "trigger": "ambient", "volume": 0.2},
+        {"sound": "champagne_clink", "trigger": "evening_only", "volume": 0.15},
+        {"sound": "distant_rehearsal", "trigger": "daytime", "volume": 0.2},
+        {"sound": "chandelier_crystal", "trigger": "rare", "volume": 0.1},
+        {"sound": "patron_murmur", "trigger": "ambient", "volume": 0.2}
+      ]
+    },
+    "auditorium": {
+      "background_music": {
+        "rehearsal": {"track": "magic_flute_excerpts_stop_start.ogg", "volume": 0.5},
+        "performance": {"track": "magic_flute_performance.ogg", "volume": 0.6},
+        "bassline": {"track": "maestro_boss_edm_mix.ogg", "volume": 0.7}
+      },
+      "environmental_sounds": [
+        {"sound": "orchestra_tuning", "trigger": "pre_performance", "volume": 0.4},
+        {"sound": "audience_settling", "trigger": "performance_start", "volume": 0.3},
+        {"sound": "applause", "trigger": "act_end", "volume": 0.6}
+      ]
+    },
+    "backstage": {
+      "background_music": {
+        "normal": {"track": "muffled_stage_audio.ogg", "volume": 0.25}
+      },
+      "environmental_sounds": [
+        {"sound": "crew_radio_chatter", "trigger": "periodic", "interval": 30, "volume": 0.2},
+        {"sound": "hammering_distant", "trigger": "periodic", "interval": 45, "volume": 0.15},
+        {"sound": "sewing_machine", "trigger": "costume_workshop_area", "volume": 0.2},
+        {"sound": "coffee_machine", "trigger": "break_area", "volume": 0.1},
+        {"sound": "performer_warmups", "trigger": "dressing_room_area", "volume": 0.25}
+      ]
+    }
+  },
+  
+  "chaos_phase_audio": {
+    "zone": "backstage",
+    "trigger": "fiaker_fiasco_phase_3",
+    "music_behavior": "continues_then_interrupted",
+    "replacement_audio": {
+      "track": "chaos_opera_remix.ogg",
+      "includes": "der_holle_rache_interrupted"
+    },
+    "event_sounds": [
+      {
+        "event": "gustav_loading_dock_entry",
+        "sounds": ["loading_door_crash", "otto_coffee_reaction"],
+        "volume": 0.7
+      },
+      {
+        "event": "prop_rack_collision",
+        "sounds": ["props_crashing", "feathers_scattering", "register_ching"],
+        "volume": 0.75
+      },
+      {
+        "event": "costume_tangle",
+        "sounds": ["fabric_ripping", "hanger_clatter", "prima_donna_gasp"],
+        "volume": 0.7
+      },
+      {
+        "event": "stage_incursion",
+        "sounds": ["horse_hooves_wood_stage", "orchestra_discord", "singer_interrupted"],
+        "volume": 0.8
+      },
+      {
+        "event": "snake_destruction",
+        "sounds": ["mechanical_crunch", "motor_whine_death", "hoffmann_scream"],
+        "volume": 0.75
+      },
+      {
+        "event": "backdrop_tear",
+        "sounds": ["canvas_ripping_dramatic", "rigging_snap", "collective_gasp"],
+        "volume": 0.8,
+        "condition": "not_papageno_path"
+      }
+    ],
+    "comedy_stingers": [
+      {"trigger": "each_damage_event", "sound": "register_ching", "volume": 0.5},
+      {"trigger": "hoffmann_reaction", "sound": "tragic_violin_stab", "volume": 0.4},
+      {"trigger": "prima_donna_shriek", "sound": "high_f_note", "volume": 0.6},
+      {"trigger": "papageno_appearance", "sound": "cheerful_bird_whistle", "volume": 0.5},
+      {"trigger": "otto_sips_coffee", "sound": "comedic_slurp", "volume": 0.3}
+    ],
+    "interrupted_aria": {
+      "piece": "der_holle_rache",
+      "interrupt_point": "high_f_sustained",
+      "replaced_by": "horse_whinny"
+    }
+  },
+  
+  "boss_fight_audio": {
+    "zone": "orchestra_pit",
+    "configuration": "bassline",
+    "phases": [
+      {
+        "phase": 1,
+        "track": "classical_corruption_theme.ogg",
+        "style": "orchestral_menacing",
+        "tempo_sync": true
+      },
+      {
+        "phase": 2,
+        "track": "the_drop_transition.ogg",
+        "style": "edm_with_strings",
+        "bass_heavy": true
+      },
+      {
+        "phase": 3,
+        "track": "encore_finale.ogg",
+        "style": "chaotic_classical_edm_fusion",
+        "tempo_shifts": true
+      }
+    ],
+    "attack_audio": {
+      "crescendo_crush": "building_orchestra_slam",
+      "waltz_of_weakness": "waltz_tempo_debuff_loop",
+      "standing_ovation": "crowd_roar_buff",
+      "encore_of_excess": "add_summon_fanfare"
+    }
+  },
+  
+  "status_effects": {
+    "environmental_buffs": [
+      {
+        "effect_id": "cultured_presence",
+        "zone": "lobby",
+        "trigger": "enter_zone",
+        "stats": {"charm": 1},
+        "duration": "while_in_zone"
+      },
+      {
+        "effect_id": "artistic_appreciation",
+        "zone": "auditorium",
+        "trigger": "watch_performance",
+        "stats": {"performance": 2},
+        "duration_hours": 1
+      },
+      {
+        "effect_id": "backstage_knowledge",
+        "zone": "backstage",
+        "trigger": "explore_fully",
+        "stats": {"stealth": 1},
+        "duration": "permanent_sinfonia"
+      },
+      {
+        "effect_id": "bassline_energy",
+        "zone": "orchestra_pit",
+        "trigger": "bassline_event",
+        "stats": {"bravado": 2},
+        "duration": "while_in_zone"
+      },
+      {
+        "effect_id": "patron_status",
+        "trigger": "donate_100_euro",
+        "stats": {"charm": 3},
+        "duration_hours": 4
+      }
+    ],
+    "environmental_debuffs": [
+      {
+        "effect_id": "overdressed_awkward",
+        "trigger": "formal_event_casual_clothes",
+        "stats": {"charm": -2},
+        "removal": "change_clothes_or_leave"
+      },
+      {
+        "effect_id": "vocal_damage",
+        "trigger": "prima_donna_shriek_exposure",
+        "stats": {"luck": -1},
+        "duration_minutes": 30
+      },
+      {
+        "effect_id": "artistic_guilt",
+        "trigger": "destroy_props",
+        "stats": {"charm": -1},
+        "duration_hours": 2,
+        "removal": "pay_damages"
+      }
+    ],
+    "recovery_options": [
+      {
+        "status_removed": "stressed",
+        "method": "champagne_lobby",
+        "cost_euro": 15,
+        "bonus": {"charm": 1}
+      },
+      {
+        "status_removed": "tired",
+        "method": "intermission_rest",
+        "cost_euro": 0
+      },
+      {
+        "status_removed": "embarrassed",
+        "method": "costume_change_dressing_room",
+        "cost_euro": 10
+      }
+    ]
+  },
+  
+  "time_of_day_variations": {
+    "morning": {
+      "hours": "10:00-12:00",
+      "zones_open": ["lobby", "backstage"],
+      "activity": "technical_rehearsal",
+      "crowd_density": "minimal"
+    },
+    "afternoon": {
+      "hours": "12:00-17:00",
+      "zones_open": ["lobby", "backstage", "dressing_rooms"],
+      "activity": "dress_rehearsal",
+      "crowd_density": "crew_only"
+    },
+    "pre_performance": {
+      "hours": "17:00-19:00",
+      "zones_open": ["lobby", "auditorium"],
+      "activity": "patrons_arriving",
+      "crowd_density": "building",
+      "dress_code_enforced": true
+    },
+    "performance": {
+      "hours": "19:00-22:00",
+      "zones_open": ["lobby_intermission_only", "auditorium"],
+      "activity": "show_in_progress",
+      "crowd_density": "full",
+      "exploration_limited": true
+    },
+    "post_performance": {
+      "hours": "22:00-23:00",
+      "zones_open": ["lobby"],
+      "activity": "patrons_departing",
+      "crowd_density": "dispersing"
+    },
+    "bassline": {
+      "hours": "23:00-04:00",
+      "zones_open": ["lobby", "orchestra_pit"],
+      "activity": "edm_event",
+      "crowd_density": "high_different_crowd",
+      "configuration": "arena_mode",
+      "boss_available": true
+    }
+  },
+  
+  "zone_transformations": {
+    "orchestra_pit_bassline": {
+      "trigger": "time_23_00",
+      "changes": [
+        {"element": "pit_level", "from": "sunken", "to": "raised"},
+        {"element": "music_stands", "from": "present", "to": "removed"},
+        {"element": "conductor_podium", "from": "podium", "to": "dj_booth"},
+        {"element": "lighting", "from": "work_lights", "to": "club_lighting"},
+        {"element": "floor", "from": "orchestra_floor", "to": "dance_floor"},
+        {"element": "fog_machines", "from": "off", "to": "on"}
+      ],
+      "audio_change": "classical_to_edm"
+    }
+  },
+  
+  "couchsurf_integration": {
+    "available": false,
+    "reason": "public_venue",
+    "related_couchsurf": {
+      "unlocks": "stagehead_otto_apartment",
+      "condition": "befriend_otto_charm_4",
+      "unique_content": "40_years_of_opera_house_stories"
+    }
+  },
+  
+  "cross_location_dependencies": {
+    "incoming_from": [
+      {
+        "location": "sinfonia_imperial_opera_house_plaza_01",
+        "connection_type": "main_entrance",
+        "portal": "front_doors"
+      },
+      {
+        "location": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+        "connection_type": "quest_path",
+        "portal": "loading_dock_alley",
+        "condition": "fiaker_fiasco_active"
+      }
+    ],
+    "outgoing_to": [
+      {
+        "location": "sinfonia_stadtpark_01",
+        "connection_type": "quest_path",
+        "exit_point": "side_door_via_pit",
+        "condition": "fiaker_fiasco_active"
+      },
+      {
+        "location": "sinfonia_black_tie_backroom_01",
+        "connection_type": "hidden_entrance",
+        "trigger": "mozart_portrait_secret"
+      },
+      {
+        "location": "sinfonia_hidden_baroness_ballroom_01",
+        "connection_type": "unlocked_via_boss",
+        "trigger": "maestro_defeated_keys_obtained"
+      }
+    ],
+    "information_flow": [
+      {"gossip_here_unlocks": "black_tie_backroom_dialogue"},
+      {"backstage_chaos_becomes": "sinfonia_news"},
+      {"damage_debt_tracked": "across_vendors"}
+    ]
+  },
+  
+  "state_management": {
+    "quest_states": {
+      "pre_fiaker_fiasco": {
+        "props_intact": true,
+        "npc_disposition": "normal",
+        "production": "in_rehearsal"
+      },
+      "during_fiaker_fiasco": {
+        "chaos_mode": true,
+        "npcs_reactive": true,
+        "props_destructible": true,
+        "damage_tracking": true
+      },
+      "post_fiaker_fiasco": {
+        "visible_damage": true,
+        "repairs_in_progress": true,
+        "some_areas_closed": true,
+        "bros_recognized": true,
+        "debt_active": true,
+        "timeline": "repairs_complete_24h"
+      }
+    },
+    "persistent_changes": [
+      {"trigger": "backdrop_destroyed", "effect": "replaced_with_simpler_backdrop_visible"},
+      {"trigger": "snake_destroyed", "effect": "production_uses_puppet_snake_noted"},
+      {"trigger": "debt_paid", "effect": "reception_improves_slightly"},
+      {"trigger": "debt_unpaid", "effect": "usher_blocks_entry"}
+    ],
+    "newspaper_updates": [
+      {"trigger": "fiaker_fiasco_complete", "headline": "HORSE DESTROYS MAGIC FLUTE PRODUCTION"},
+      {"trigger": "maestro_defeated", "headline": "SCANDAL AT BASSLINE: ARTISTIC DIRECTOR EXPOSED"}
+    ]
+  }
+}

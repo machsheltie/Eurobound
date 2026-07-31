@@ -1,0 +1,767 @@
+{
+  "location_id": "sinfonia_bassline_opera_house_01",
+  
+  "quest_events": {
+    "quest_id": "sinfonia_sidequest_fiaker_fiasco_01",
+    "phase": "backstage_phase_03",
+    
+    "entry_trigger": {
+      "event_id": "backstage_phase_begin",
+      "trigger_type": "player_arrives_during_pursuit",
+      "prerequisite": "gustav_fled_cafe_sachertorte",
+      "cutscene_on_entry": true,
+      "entry_point": "loading_dock"
+    },
+    
+    "gustav_loading_dock_entry": {
+      "event_id": "gustav_backstage_entry",
+      "duration_seconds": 8,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_focus",
+          "target": "loading_dock_door",
+          "duration_seconds": 1
+        },
+        {
+          "time": 0.5,
+          "action": "sfx",
+          "sound": "loading_door_crash"
+        },
+        {
+          "time": 1,
+          "action": "npc_spawn",
+          "npc": "gustav_with_feathered_cape",
+          "position": "loading_dock",
+          "animation": "dramatic_trot",
+          "note": "Feathers from cafe still stuck to cape"
+        },
+        {
+          "time": 1.5,
+          "action": "npc_reaction",
+          "npc": "stagehead_otto",
+          "reaction": "coffee_pause"
+        },
+        {
+          "time": 2,
+          "action": "dialogue",
+          "speaker": "stagehead_otto",
+          "text": "*sips coffee* ...Ja, that's a horse.",
+          "emotion": "completely_unfazed"
+        },
+        {
+          "time": 4,
+          "action": "player_spawn",
+          "position": "loading_dock_entrance",
+          "party": ["lord_pilsner", "chadwick", "bradley"]
+        },
+        {
+          "time": 5,
+          "action": "dialogue",
+          "speaker": "lord_pilsner",
+          "text": "We got him cornered! This is where the magic happens!",
+          "emotion": "confident"
+        },
+        {
+          "time": 6.5,
+          "action": "dialogue",
+          "speaker": "stagehead_otto",
+          "text": "The horse? He went that way. *gestures with coffee cup* Through the props.",
+          "emotion": "deadpan"
+        },
+        {
+          "time": 8,
+          "action": "transition_to_gameplay",
+          "gustav_destination": "prop_storage"
+        }
+      ]
+    },
+    
+    "prop_storage_collision": {
+      "event_id": "props_destruction",
+      "duration_seconds": 6,
+      "damage_euro": 500,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_follow",
+          "target": "gustav"
+        },
+        {
+          "time": 0.5,
+          "action": "collision_event",
+          "target": "prop_rack_papageno",
+          "sfx": "metal_crash_props"
+        },
+        {
+          "time": 1,
+          "action": "damage_popup",
+          "item": "Papageno Bird Head",
+          "amount_euro": 150,
+          "sfx": "register_ching"
+        },
+        {
+          "time": 1.5,
+          "action": "particle_effect",
+          "effect": "feathers_everywhere"
+        },
+        {
+          "time": 2,
+          "action": "collision_event",
+          "target": "magic_flute_prop_stand",
+          "sfx": "wood_snap"
+        },
+        {
+          "time": 2.5,
+          "action": "damage_popup",
+          "item": "Magic Flute Prop",
+          "amount_euro": 200,
+          "sfx": "register_ching"
+        },
+        {
+          "time": 3,
+          "action": "particle_effect",
+          "effect": "gold_paint_flakes"
+        },
+        {
+          "time": 4,
+          "action": "npc_reaction",
+          "npc": "backstage_crew_1",
+          "reaction": "scream_german_expletive"
+        },
+        {
+          "time": 5,
+          "action": "dialogue",
+          "speaker": "stagehead_otto",
+          "text": "I've seen worse. The '94 Parsifal had a live bear.",
+          "emotion": "deadpan_sip"
+        },
+        {
+          "time": 6,
+          "action": "gustav_movement",
+          "destination": "costume_workshop"
+        }
+      ]
+    },
+    
+    "costume_tangle": {
+      "event_id": "costume_destruction",
+      "duration_seconds": 5,
+      "damage_euro": 200,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_follow",
+          "target": "gustav"
+        },
+        {
+          "time": 0.5,
+          "action": "collision_event",
+          "target": "costume_rack_queen",
+          "sfx": "fabric_tearing"
+        },
+        {
+          "time": 1,
+          "action": "animation",
+          "target": "gustav",
+          "animation": "tangled_struggling"
+        },
+        {
+          "time": 1.5,
+          "action": "damage_popup",
+          "item": "Queen of the Night Gown",
+          "amount_euro": 200,
+          "sfx": "register_ching"
+        },
+        {
+          "time": 2,
+          "action": "particle_effect",
+          "effect": "more_feathers_to_cape",
+          "note": "Gustav's cape now has costume feathers too"
+        },
+        {
+          "time": 3,
+          "action": "animation",
+          "target": "gustav",
+          "animation": "breaks_free_toward_stage"
+        },
+        {
+          "time": 4,
+          "action": "npc_scream",
+          "npc": "seamstress",
+          "text": "MEINE KOSTÜME!",
+          "emotion": "horror"
+        },
+        {
+          "time": 5,
+          "action": "gustav_movement",
+          "destination": "stage_left_wing"
+        }
+      ]
+    },
+    
+    "choice_point_papageno": {
+      "event_id": "papageno_offers_help",
+      "trigger": "player_reaches_costume_workshop",
+      "duration_seconds": 8,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "npc_approach",
+          "npc": "papageno_franz",
+          "animation": "excited_hop"
+        },
+        {
+          "time": 1,
+          "action": "dialogue",
+          "speaker": "papageno_franz",
+          "text": "A horse! Papageno likes horses! Better than the Queen!",
+          "emotion": "delighted"
+        },
+        {
+          "time": 3,
+          "action": "dialogue",
+          "speaker": "papageno_franz",
+          "text": "*in character* The bird-man knows these halls! Follow Papageno! Less breaking, more sneaking!",
+          "emotion": "conspiratorial"
+        },
+        {
+          "time": 5,
+          "action": "choice_prompt",
+          "choices": [
+            {
+              "id": "follow_papageno",
+              "text": "Follow the bird-man",
+              "stat_check": {"charm": 2},
+              "result": "papageno_path"
+            },
+            {
+              "id": "chase_direct",
+              "text": "Chase Gustav directly",
+              "result": "direct_path"
+            },
+            {
+              "id": "try_rigging",
+              "text": "Use the rigging controls",
+              "stat_check": {"intelligence": 3},
+              "result": "rigging_path"
+            }
+          ]
+        }
+      ],
+      "path_outcomes": {
+        "papageno_path": {
+          "description": "Papageno guides through alternate route",
+          "avoids": ["backdrop_destruction"],
+          "damage_saved": 400,
+          "bonus": "papageno_ally_stadtpark"
+        },
+        "direct_path": {
+          "description": "Standard chase, maximum damage",
+          "damage_full": true
+        },
+        "rigging_path": {
+          "description": "Drop curtain to slow Gustav",
+          "partial_success": true,
+          "damage_saved": 150
+        }
+      }
+    },
+    
+    "stage_incursion": {
+      "event_id": "gustav_on_stage",
+      "duration_seconds": 15,
+      "damage_euro": 800,
+      "condition": "not_papageno_path",
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_shift",
+          "target": "stage_from_wings"
+        },
+        {
+          "time": 0.5,
+          "action": "establish_scene",
+          "description": "Prima Donna mid-aria, Queen of the Night costume, high F sustained"
+        },
+        {
+          "time": 1,
+          "action": "sfx",
+          "sound": "der_holle_rache_high_f"
+        },
+        {
+          "time": 2,
+          "action": "npc_entrance",
+          "npc": "gustav",
+          "direction": "stage_left",
+          "animation": "trotting_confused"
+        },
+        {
+          "time": 2.5,
+          "action": "sfx",
+          "sound": "horse_hooves_on_stage"
+        },
+        {
+          "time": 3,
+          "action": "dialogue",
+          "speaker": "prima_donna_adelheid",
+          "text": "*note wavers* —WHAT IS THAT?!",
+          "emotion": "mid_aria_shock"
+        },
+        {
+          "time": 3.5,
+          "action": "sfx",
+          "sound": "aria_interrupted_discord"
+        },
+        {
+          "time": 4,
+          "action": "npc_reaction",
+          "npc": "orchestra",
+          "reaction": "instruments_screech_stop"
+        },
+        {
+          "time": 5,
+          "action": "animation",
+          "target": "gustav",
+          "animation": "startled_by_shriek"
+        },
+        {
+          "time": 6,
+          "action": "collision_event",
+          "target": "mechanical_snake",
+          "description": "Gustav kicks backward, hooves destroy prop",
+          "sfx": "mechanical_crunch"
+        },
+        {
+          "time": 7,
+          "action": "damage_popup",
+          "item": "Mechanical Serpent",
+          "amount_euro": 800,
+          "sfx": "register_ching"
+        },
+        {
+          "time": 8,
+          "action": "npc_spawn",
+          "npc": "regisseur_hoffmann",
+          "position": "stage_left_wing",
+          "animation": "running_in_horror"
+        },
+        {
+          "time": 9,
+          "action": "dialogue",
+          "speaker": "regisseur_hoffmann",
+          "text": "THE SNAKE! MY SNAKE! NO!",
+          "emotion": "breakdown_beginning"
+        },
+        {
+          "time": 10,
+          "action": "collision_event",
+          "target": "paper_trees",
+          "quantity": 2,
+          "sfx": "paper_crumpling"
+        },
+        {
+          "time": 11,
+          "action": "damage_popup",
+          "item": "Papageno's Forest Trees (x2)",
+          "amount_euro": 250,
+          "sfx": "register_ching"
+        },
+        {
+          "time": 12,
+          "action": "dialogue",
+          "speaker": "regisseur_hoffmann",
+          "text": "EIGHT MONTHS! EIGHT MONTHS OF WORK!",
+          "emotion": "spiraling"
+        },
+        {
+          "time": 13,
+          "action": "gustav_movement",
+          "destination": "stage_right"
+        },
+        {
+          "time": 14,
+          "action": "dialogue",
+          "speaker": "prima_donna_adelheid",
+          "text": "I have sung at La Scala! At the Met! I was NOT interrupted by HORSES!",
+          "emotion": "operatic_fury"
+        }
+      ]
+    },
+    
+    "backdrop_catastrophe": {
+      "event_id": "backdrop_tear",
+      "duration_seconds": 8,
+      "damage_euro": 400,
+      "condition": "not_papageno_path",
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_follow",
+          "target": "gustav"
+        },
+        {
+          "time": 1,
+          "action": "animation",
+          "target": "gustav",
+          "animation": "cape_catches_rigging"
+        },
+        {
+          "time": 1.5,
+          "action": "sfx",
+          "sound": "fabric_catching_rope"
+        },
+        {
+          "time": 2,
+          "action": "animation",
+          "target": "gustav",
+          "animation": "pulls_against_snag"
+        },
+        {
+          "time": 3,
+          "action": "sfx",
+          "sound": "canvas_ripping_dramatic"
+        },
+        {
+          "time": 3.5,
+          "action": "visual_effect",
+          "effect": "backdrop_tear_dramatic",
+          "description": "Starry Night backdrop rips from center"
+        },
+        {
+          "time": 4,
+          "action": "damage_popup",
+          "item": "Starry Night Backdrop",
+          "amount_euro": 400,
+          "sfx": "register_ching"
+        },
+        {
+          "time": 5,
+          "action": "npc_animation",
+          "npc": "regisseur_hoffmann",
+          "animation": "falls_to_knees"
+        },
+        {
+          "time": 6,
+          "action": "dialogue",
+          "speaker": "regisseur_hoffmann",
+          "text": "I studied at the Conservatory. I trained with legends. And a HORSE destroys my Zauberflöte.",
+          "emotion": "complete_defeat"
+        },
+        {
+          "time": 7,
+          "action": "comedy_stinger",
+          "sfx": "tragic_violin_stab"
+        },
+        {
+          "time": 8,
+          "action": "gustav_movement",
+          "destination": "orchestra_pit_side_door"
+        }
+      ]
+    },
+    
+    "papageno_alternate_path": {
+      "event_id": "papageno_route",
+      "duration_seconds": 12,
+      "condition": "papageno_path_chosen",
+      "sequence": [
+        {
+          "time": 0,
+          "action": "npc_lead",
+          "npc": "papageno_franz",
+          "destination": "backstage_corridor"
+        },
+        {
+          "time": 1,
+          "action": "dialogue",
+          "speaker": "papageno_franz",
+          "text": "This way, this way! Papageno knows the bird paths!",
+          "emotion": "excited"
+        },
+        {
+          "time": 3,
+          "action": "audio",
+          "note": "Distant sounds of stage destruction can be heard"
+        },
+        {
+          "time": 4,
+          "action": "dialogue",
+          "speaker": "bradley",
+          "text": "Uh, sounds like things are getting wild out there.",
+          "emotion": "nervous"
+        },
+        {
+          "time": 6,
+          "action": "dialogue",
+          "speaker": "papageno_franz",
+          "text": "*whistles* Here, horsey! Want a seed? Papageno has seeds!",
+          "emotion": "calling"
+        },
+        {
+          "time": 8,
+          "action": "npc_approach",
+          "npc": "gustav",
+          "animation": "curious_approach",
+          "note": "Gustav responds to whistling"
+        },
+        {
+          "time": 9,
+          "action": "dialogue",
+          "speaker": "papageno_franz",
+          "text": "Good horsey! Papageno's friend! This way to the garden!",
+          "emotion": "triumphant"
+        },
+        {
+          "time": 11,
+          "action": "all_characters_move",
+          "destination": "orchestra_pit_side_door"
+        },
+        {
+          "time": 12,
+          "action": "transition",
+          "note": "Backdrop remains intact, damage reduced by €400"
+        }
+      ]
+    },
+    
+    "damage_confrontation": {
+      "event_id": "backstage_reckoning",
+      "trigger": "all_paths_converge",
+      "duration_seconds": 25,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_establish",
+          "location": "backstage_center"
+        },
+        {
+          "time": 1,
+          "action": "npc_approach",
+          "npc": "regisseur_hoffmann",
+          "animation": "furious_stride"
+        },
+        {
+          "time": 2,
+          "action": "dialogue",
+          "speaker": "regisseur_hoffmann",
+          "text": "YOU. This is YOUR horse?",
+          "emotion": "contained_fury"
+        },
+        {
+          "time": 4,
+          "action": "dialogue",
+          "speaker": "lord_pilsner",
+          "text": "Technically, we're just... involved in his journey.",
+          "emotion": "deflecting"
+        },
+        {
+          "time": 6,
+          "action": "dialogue",
+          "speaker": "regisseur_hoffmann",
+          "text": "You will pay. You will ALL pay.",
+          "emotion": "building"
+        },
+        {
+          "time": 8,
+          "action": "npc_approach",
+          "npc": "prima_donna_adelheid"
+        },
+        {
+          "time": 9,
+          "action": "dialogue",
+          "speaker": "prima_donna_adelheid",
+          "text": "I require €500 for therapeutic vocal rest. The TRAUMA.",
+          "emotion": "dramatic_injury"
+        },
+        {
+          "time": 11,
+          "action": "damage_tally_display",
+          "breakdown": {
+            "props": 350,
+            "costume": 200,
+            "snake": 800,
+            "trees": 250,
+            "backdrop": 400,
+            "note": "Backdrop 0 if Papageno path"
+          },
+          "total_display": "€2,000",
+          "sfx": "register_ching_final"
+        },
+        {
+          "time": 14,
+          "action": "dialogue_choice",
+          "speaker": "player",
+          "choices": [
+            {
+              "id": "promise_payment",
+              "text": "We'll pay for everything. Eventually.",
+              "result": "debt_added"
+            },
+            {
+              "id": "negotiate_prima_donna",
+              "text": "That €500 seems excessive... (Charm 4)",
+              "stat_check": {"charm": 4},
+              "result": "prima_donna_reduced"
+            },
+            {
+              "id": "blame_horse",
+              "text": "The horse is the criminal here!",
+              "result": "hoffmann_angrier"
+            }
+          ]
+        },
+        {
+          "time": 18,
+          "action": "dialogue",
+          "speaker": "stagehead_otto",
+          "text": "Every production has disaster. This one's disaster is just... larger. With hooves.",
+          "emotion": "philosophical_sip"
+        },
+        {
+          "time": 20,
+          "action": "npc_approach",
+          "npc": "papageno_franz",
+          "condition": "papageno_path_chosen"
+        },
+        {
+          "time": 21,
+          "action": "dialogue",
+          "speaker": "papageno_franz",
+          "text": "Best rehearsal ever. Hoffmann needed this. Too uptight.",
+          "emotion": "cheerful",
+          "condition": "papageno_path_chosen"
+        },
+        {
+          "time": 23,
+          "action": "dialogue",
+          "speaker": "regisseur_hoffmann",
+          "text": "Opening night is TOMORROW. I will find you. I have LAWYERS. Opera house LAWYERS.",
+          "emotion": "threat"
+        },
+        {
+          "time": 25,
+          "action": "transition_prompt",
+          "destination": "stadtpark",
+          "note": "Gustav has already fled through side door"
+        }
+      ]
+    },
+    
+    "exit_to_stadtpark": {
+      "event_id": "backstage_exit",
+      "duration_seconds": 5,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_pan",
+          "target": "orchestra_pit_side_door"
+        },
+        {
+          "time": 1,
+          "action": "dialogue",
+          "speaker": "chadwick",
+          "text": "Where'd the horse go?!",
+          "emotion": "panicked"
+        },
+        {
+          "time": 2,
+          "action": "dialogue",
+          "speaker": "stagehead_otto",
+          "text": "Through the pit. Side door. Leads to the park. *sips* I'd hurry.",
+          "emotion": "helpful_deadpan"
+        },
+        {
+          "time": 4,
+          "action": "party_exit",
+          "destination": "sinfonia_stadtpark_01"
+        },
+        {
+          "time": 5,
+          "action": "quest_update",
+          "phase": "stadtpark_phase_04",
+          "damage_running_total": "€2,340_or_€1,940_papageno"
+        }
+      ]
+    }
+  },
+  
+  "damage_tracking": {
+    "phase": "backstage_phase_03",
+    "incoming_total": 340,
+    "phase_maximum": 2000,
+    "phase_minimum": 1600,
+    "breakdown": [
+      {"event": "prop_storage_collision", "amount": 350},
+      {"event": "costume_tangle", "amount": 200},
+      {"event": "stage_incursion_snake", "amount": 800},
+      {"event": "stage_incursion_trees", "amount": 250},
+      {"event": "backdrop_catastrophe", "amount": 400, "avoidable": true}
+    ],
+    "additional_charges": {
+      "prima_donna_demand": {
+        "base": 500,
+        "negotiated": 200,
+        "charm_required": 4
+      }
+    },
+    "running_total_calculation": {
+      "previous_phases": "plaza_0_cafe_340",
+      "this_phase_default": 2000,
+      "this_phase_optimal": 1600,
+      "total_default": 2340,
+      "total_optimal": 1940
+    }
+  },
+  
+  "other_events": {
+    "waltz_of_bros": {
+      "event_id": "rival_encounter_auditorium",
+      "location": "auditorium",
+      "trigger": "story_progression_mid_sinfonia",
+      "type": "rhythm_battle",
+      "description": "Bros crash rehearsal, mistaken for performers, forced dance-off",
+      "reward": "nft_3_mask_selfie_gif"
+    },
+    
+    "boss_fight_maestro": {
+      "event_id": "city_boss_von_strauss",
+      "location": "orchestra_pit_bassline",
+      "trigger": "main_quest_progression",
+      "phases": 3,
+      "rewards": ["conductors_baton", "baroness_vault_keys", "bassline_vip_status"]
+    }
+  },
+  
+  "return_events": {
+    "post_quest_debt_unpaid": {
+      "trigger": "return_to_opera_house",
+      "condition": "backstage_debt_active",
+      "event": {
+        "npc": "opera_usher_gerhardt",
+        "dialogue": "You are the horse people. You may not enter. Not tonight. Not ever.",
+        "blocks_entry": ["auditorium", "backstage"]
+      }
+    },
+    
+    "post_quest_debt_paid": {
+      "trigger": "return_to_opera_house",
+      "condition": "backstage_debt_cleared",
+      "event": {
+        "npc": "opera_usher_gerhardt",
+        "dialogue": "Hmph. Your debt is... settled. *grudgingly* The lobby is open to you.",
+        "access": "normal_minus_backstage"
+      }
+    },
+    
+    "production_aftermath": {
+      "trigger": "24_hours_post_quest",
+      "changes": [
+        {"item": "mechanical_snake", "replacement": "puppet_snake_noted"},
+        {"item": "backdrop", "replacement": "simpler_backdrop"},
+        {"item": "bird_head", "replacement": "paper_plate_version"},
+        {"signage": "show_goes_on_despite_americans"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "location_id": "shamsterdam_bike_crossing_thunderdome_01",
+  
+  "services": [
+    {
+      "service_id": "bike_rental",
+      "provider_npc": "bike_rental_guy_01",
+      "display_name": "Bike Rental",
+      "description": "Skip the crossing entirely by becoming part of the traffic. Now YOU'RE the problem.",
+      "cost": 15,
+      "currency": "euro",
+      "duration": "1_day",
+      "effect": {
+        "type": "gameplay_bypass",
+        "bypasses": "crossing_minigame",
+        "converts_player_to": "traffic_participant",
+        "unlocks": ["bike_only_paths", "cyclist_perspective"]
+      },
+      "dialogue_on_purchase": "Now YOU'RE the problem. Congratulations."
+    },
+    {
+      "service_id": "crossing_tips",
+      "provider_npc": "bike_rental_guy_01",
+      "display_name": "Crossing Tips",
+      "description": "Free advice that everyone ignores.",
+      "cost": 0,
+      "effect": {
+        "type": "hint",
+        "content": [
+          "Watch the patterns. Don't sprint.",
+          "The island is a trap, not safety.",
+          "Listen for the tram bells.",
+          "The elderly are the fastest. Don't underestimate them."
+        ]
+      }
+    },
+    {
+      "service_id": "first_aid",
+      "provider_npc": "bike_rental_guy_01",
+      "display_name": "First Aid",
+      "description": "Basic medical attention after bicycle collision.",
+      "cost": 5,
+      "currency": "euro",
+      "effect": {
+        "type": "healing",
+        "hp_restore": 15
+      },
+      "dialogue_on_purchase": "I've seen worse. Much worse."
+    },
+    {
+      "service_id": "cafe_coffee",
+      "provider_npc": "cafe_terrace_vendor",
+      "display_name": "Terrace Coffee",
+      "description": "Overpriced coffee with a view of tourist suffering.",
+      "cost": 4,
+      "currency": "euro",
+      "effect": {
+        "type": "healing",
+        "hp_restore": 5,
+        "additional": "observation_opportunity"
+      }
+    },
+    {
+      "service_id": "guided_crossing",
+      "provider_npc": "bike_rental_guy_01",
+      "display_name": "Guided Crossing (Escort)",
+      "description": "A professional guides you across. Guaranteed safe. Expensive.",
+      "cost": 20,
+      "currency": "euro",
+      "effect": {
+        "type": "gameplay_bypass",
+        "bypasses": "crossing_minigame",
+        "one_time_use": true,
+        "no_achievement_eligible": true
+      },
+      "availability": "after_3_failures",
+      "dialogue_on_purchase": "Hold my hand. Don't let go. DO NOT let go."
+    }
+  ],
+  
+  "fines": [
+    {
+      "fine_id": "bike_lane_standing",
+      "issuer_npc": "officer_vandenberg_01",
+      "violation": "Standing in bike lane for more than 3 seconds",
+      "amount": 95,
+      "currency": "euro",
+      "dialogue": "This is a bike lane. You are not a bike. That's €95."
+    },
+    {
+      "fine_id": "blocking_traffic",
+      "issuer_npc": "officer_vandenberg_01",
+      "violation": "Causing cyclists to swerve around you",
+      "amount": 140,
+      "currency": "euro",
+      "dialogue": "You're blocking traffic. Yes, on foot. Still illegal. €140."
+    },
+    {
+      "fine_id": "photography_violation",
+      "issuer_npc": "officer_vandenberg_01",
+      "violation": "Taking photographs while in crossing zone",
+      "amount": 50,
+      "currency": "euro",
+      "dialogue": "No photographs in crossing. Safety regulation. €50."
+    },
+    {
+      "fine_id": "attitude_surcharge",
+      "issuer_npc": "officer_vandenberg_01",
+      "violation": "Being dramatic about receiving a fine",
+      "amount": 25,
+      "currency": "euro",
+      "dialogue": "And €25 for the attitude."
+    }
+  ],
+  
+  "rewards": {
+    "crossing_success": {
+      "buff": "crossing_confidence",
+      "stats": {"reflexes": 0.1},
+      "duration_minutes": 30,
+      "stacks": 3,
+      "max_stack_effect": {"reflexes": 0.3}
+    },
+    "perfect_crossing": {
+      "buff": "dodge_master",
+      "stats": {"reflexes": 0.15, "speed": 0.05},
+      "duration_minutes": 60,
+      "achievement": {
+        "id": "dodge_master",
+        "display": "Dodge Master",
+        "description": "Crossed the Bicycle Thunderdome without a single hit."
+      }
+    },
+    "rush_hour_perfect": {
+      "buff": "rush_hour_survivor",
+      "stats": {"reflexes": 0.05},
+      "duration": "permanent",
+      "achievement": {
+        "id": "rush_hour_survivor",
+        "display": "Rush Hour Survivor",
+        "description": "Survived rush hour crossing without collision."
+      }
+    },
+    "cargo_cult_quest": {
+      "buff": "bicycle_empathy",
+      "stats": {"crossing_difficulty_reduction": 0.15},
+      "duration": "permanent",
+      "unlock": "rooftop_route_shortcut"
+    },
+    "ten_crossings": {
+      "unlock": "underground_passage",
+      "achievement": {
+        "id": "ten_time_champion",
+        "display": "Ten Time Champion",
+        "description": "Successfully crossed the Bicycle Thunderdome 10 times."
+      }
+    },
+    "tram_survivor": {
+      "achievement": {
+        "id": "tram_survivor",
+        "display": "Tram Survivor",
+        "description": "Got hit by a tram. Somehow lived."
+      },
+      "note": "Only awarded first time"
+    },
+    "gerrit_approval": {
+      "achievement": {
+        "id": "gerrits_approval",
+        "display": "Gerrit's Approval",
+        "description": "Crossed perfectly while Gerrit watched. He nodded.",
+        "type": "hidden"
+      },
+      "reward": "may_sit_at_gerrits_table"
+    },
+    "tourist_rescue": {
+      "gold": 10,
+      "karma": "positive",
+      "npc_state_change": "fallen_tourist_rescued"
+    }
+  },
+  
+  "debuffs": {
+    "bicycle_trauma": {
+      "trigger": "multiple_collisions_or_tram_hit",
+      "effect": {
+        "speed_in_traffic": -0.2,
+        "description": "Flinches near any bicycle"
+      },
+      "duration_hours": 2,
+      "cure": {
+        "location": "tolerance_hostel",
+        "action": "rest"
+      },
+      "visual": "flinching_animation_near_bikes"
+    },
+    "cargo_parade_casualty": {
+      "trigger": "hit_by_cargo_parade",
+      "effect": {
+        "dignity": -0.1,
+        "description": "Covered in flower petals"
+      },
+      "visual": "flower_petals_on_sprite",
+      "duration": "until_bath_or_clothes_change",
+      "npc_comments": true
+    },
+    "marked_tourist": {
+      "trigger": "photography_violation",
+      "effect": {
+        "fine_probability": 1.5,
+        "description": "Officer remembers your face"
+      },
+      "duration_hours": 1
+    }
+  },
+  
+  "collectibles": [
+    {
+      "item_id": "stay_away_pamphlet_3",
+      "display_name": "Stay Away Pamphlet #3",
+      "description": "'Traffic Safety: A Tourist's Last Mistake' - Surprisingly informative guide to Dutch cycling infrastructure.",
+      "quest": "stay_away_campaign",
+      "pamphlet_number": 3,
+      "location": "from_pamphleteer_npc",
+      "effect": "quest_progress"
+    },
+    {
+      "item_id": "fallen_tourist_stroopwafel",
+      "display_name": "Shared Stroopwafel",
+      "description": "A stroopwafel the Fallen Tourist shared with you. Slightly damp from his tears.",
+      "source": "fallen_tourist_befriend",
+      "condition": "visit_5_times",
+      "effect": {
+        "hp_restore": 10,
+        "sentiment": "bittersweet"
+      }
+    },
+    {
+      "item_id": "gerrit_newspaper",
+      "display_name": "Gerrit's Newspaper",
+      "description": "A Dutch newspaper Gerrit has never read. He gave it to you as a sign of respect.",
+      "source": "gerrit_approval_achievement",
+      "effect": {
+        "wisdom": 1,
+        "description": "Contains traffic wisdom"
+      }
+    }
+  ],
+  
+  "quest_items": [
+    {
+      "item_id": "cargo_parade_invitation",
+      "display_name": "Cargo Parade Invitation",
+      "description": "Mama Bakfiets has invited you to join tomorrow's cargo parade. Dawn. Bring courage.",
+      "quest": "cargo_cult",
+      "trigger": "speak_to_mama_post_parade",
+      "effect": "unlocks_cargo_cult_quest"
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "shortcut_id": "underground_passage",
+      "display_name": "Underground Passage",
+      "description": "A tunnel through the underground bike parking. The Bike Rental Guy shows you after 10 successful crossings.",
+      "unlock_condition": "crossings_completed_10",
+      "effect": "bypasses_crossing_minigame",
+      "maintains": "achievement_eligibility"
+    },
+    {
+      "shortcut_id": "rooftop_route",
+      "display_name": "Rooftop Route",
+      "description": "A path across connected rooftops. Unlocked after riding with the Cargo Parade.",
+      "unlock_condition": "cargo_cult_quest_complete",
+      "effect": "bypasses_crossing_minigame",
+      "maintains": "achievement_eligibility"
+    },
+    {
+      "shortcut_id": "bike_rental_bypass",
+      "display_name": "Bike Rental",
+      "description": "Rent a bike for €15. Become traffic instead of obstacle.",
+      "cost": 15,
+      "currency": "euro",
+      "effect": "bypasses_crossing_as_cyclist",
+      "maintains": false,
+      "note": "Does not count toward crossing achievements"
+    }
+  ]
+}

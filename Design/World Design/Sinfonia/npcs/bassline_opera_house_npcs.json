@@ -1,0 +1,446 @@
+{
+  "location_id": "sinfonia_bassline_opera_house_01",
+  
+  "npcs": [
+    {
+      "npc_id": "sinfonia_npc_regisseur_hoffmann_01",
+      "display_name": "Regisseur Heinrich Hoffmann",
+      "role": "stage_director_chaos_victim",
+      "zone": "backstage",
+      "importance": "primary",
+      
+      "appearance": {
+        "age": "50s_prematurely_grey",
+        "build": "thin_nervous_energy",
+        "face": {
+          "features": "gaunt_intense",
+          "expression_default": "focused_tense"
+        },
+        "clothing": {
+          "shirt": "black_turtleneck",
+          "accessories": ["directors_notebook", "reading_glasses_on_chain"],
+          "shoes": "practical_black"
+        }
+      },
+      
+      "personality": {
+        "core_traits": ["perfectionist", "passionate", "fragile_ego"],
+        "speech_pattern": {
+          "accent": "educated_german",
+          "quirks": ["measure_references", "conservatory_name_drops", "escalating_despair"],
+          "volume": "varies_dramatically"
+        },
+        "background": {
+          "training": "conservatory_festival",
+          "current_project": "die_zauberfloete",
+          "project_duration": "8_months",
+          "opening_night": "tomorrow"
+        }
+      },
+      
+      "dialogue": {
+        "pre_chaos": {
+          "directing": "The Queen enters on measure 47. MEASURE 47! Why is this difficult?!",
+          "to_stranger": "Who are you? We do not have time for tourists. Rehearsal is sacred."
+        },
+        "chaos_phase": {
+          "gustav_appears": "What is— no. No. This is not happening. I am hallucinating.",
+          "destruction_begins": "THE PROPS! THE SNAKE! MY SNAKE!",
+          "backdrop_tears": "THE BACKDROP! EIGHT MONTHS OF WORK!",
+          "full_breakdown": "I studied at the Conservatory. I trained with legends. And a HORSE destroys my Zauberflöte."
+        },
+        "post_chaos": {
+          "to_bros": "You. This is YOUR horse? You will pay. You will ALL pay. €2,000. MINIMUM.",
+          "negotiation": "€2,000 is the minimum. The emotional damage? Incalculable.",
+          "payment_received": "...fine. But you are banned from opening night. BANNED.",
+          "unpaid": "I will find you. I have lawyers. Opera house lawyers."
+        }
+      },
+      
+      "animation_states": {
+        "directing": {
+          "frames": 6,
+          "description": "Animated gestures, notebook waving",
+          "loop": true
+        },
+        "horror": {
+          "frames": 4,
+          "description": "Freeze, glasses drop",
+          "loop": false
+        },
+        "breakdown": {
+          "frames": 2,
+          "description": "Sitting on floor, head in hands",
+          "loop": true
+        },
+        "fury": {
+          "frames": 4,
+          "description": "Red-faced, pointing, German screaming",
+          "loop": true
+        }
+      },
+      
+      "schedule": {
+        "10:00-17:00": "backstage_directing",
+        "17:00-19:00": "dressing_rooms_final_notes",
+        "19:00-22:00": "auditorium_wings"
+      },
+      
+      "quest_role": {
+        "fiaker_fiasco": "damage_witness_debt_collector",
+        "resolution_appearance": "may_appear_at_stadtpark"
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_stagehead_otto_01",
+      "display_name": "Stagehead Otto",
+      "role": "stage_crew_witness_helper",
+      "zone": "backstage",
+      "importance": "secondary",
+      
+      "appearance": {
+        "age": "60s",
+        "build": "stocky_practical",
+        "face": {
+          "features": "weathered_experienced",
+          "expression_default": "permanently_unimpressed"
+        },
+        "clothing": {
+          "outfit": "all_black_stage_crew",
+          "accessories": ["tool_belt", "headset_around_neck"],
+          "shoes": "steel_toe_boots"
+        },
+        "props": ["coffee_cup_permanent"]
+      },
+      
+      "personality": {
+        "core_traits": ["unflappable", "sardonic", "helpful_underneath"],
+        "speech_pattern": {
+          "accent": "working_class_austrian",
+          "quirks": ["coffee_sips_mid_sentence", "historical_comparisons"],
+          "delivery": "completely_deadpan"
+        },
+        "background": {
+          "years_at_opera": 40,
+          "motto": "seen_everything"
+        }
+      },
+      
+      "dialogue": {
+        "gustav_entry": "*sips coffee* ...Ja, that's a horse.",
+        "during_chaos": "I've seen worse. The '94 Parsifal had a live bear.",
+        "helpful": "You want to catch him? Go through the pit. He's circling.",
+        "philosophical": "Every production has disaster. This one's disaster is just... larger. With hooves.",
+        "post_chaos": "Hoffmann will survive. He always does. Just give him a week."
+      },
+      
+      "animation_states": {
+        "idle_coffee": {"frames": 2, "description": "Standing, coffee in hand", "loop": true},
+        "coffee_sip": {"frames": 3, "description": "Slow sip, returns to observation", "loop": false},
+        "point_direction": {"frames": 2, "description": "Helpful gesture with coffee hand", "loop": false}
+      },
+      
+      "special_behavior": {
+        "chaos_immunity": true,
+        "provides_hint": "orchestra_pit_shortcut",
+        "evacuation_participation": false
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_prima_donna_adelheid_01",
+      "display_name": "Prima Donna Adelheid",
+      "role": "opera_singer_diva_optional_antagonist",
+      "zone": "backstage_stage",
+      "importance": "secondary",
+      
+      "appearance": {
+        "age": "40s_ageless",
+        "build": "imposing_theatrical",
+        "costume": {
+          "rehearsal": "queen_of_the_night_gown",
+          "post_damage": "queen_of_the_night_gown_torn"
+        },
+        "face": {
+          "makeup": "dramatic_stage",
+          "expression_default": "theatrical_intensity"
+        }
+      },
+      
+      "personality": {
+        "core_traits": ["professional", "egotistical", "dramatic"],
+        "speech_pattern": {
+          "accent": "trained_operatic_diction",
+          "quirks": ["venue_name_drops", "volume_projection"],
+          "style": "theatrical_even_offstage"
+        },
+        "diva_credentials": ["la_scala", "metropolitan_opera", "covent_garden"]
+      },
+      
+      "dialogue": {
+        "interrupted": "*holds high F* —WHAT IS THAT?!",
+        "outrage": "I have sung at La Scala! At the Met! I was NOT interrupted by HORSES!",
+        "to_bros": "This horse has RUINED my concentration. Do you know what concentration COSTS?",
+        "demand": "I require €500 for... therapeutic vocal rest. The trauma.",
+        "negotiated": "...€200. Final. And you will write an apology letter.",
+        "payment_received": "Hmph. See that it does not happen again. Not that it COULD."
+      },
+      
+      "animation_states": {
+        "singing": {"frames": 4, "description": "Arms raised, dramatic pose", "loop": true},
+        "interrupted": {"frames": 3, "description": "Shock, hands to chest", "loop": false},
+        "outrage": {"frames": 4, "description": "Pointing, dramatic gestures", "loop": true},
+        "dismissive": {"frames": 2, "description": "Hand wave, turn away", "loop": false}
+      },
+      
+      "economic_role": {
+        "additional_demand": 500,
+        "negotiable_minimum": 200,
+        "charm_threshold_to_reduce": 4
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_papageno_franz_01",
+      "display_name": "Papageno (Franz)",
+      "role": "opera_singer_ally_guide",
+      "zone": "backstage_stage",
+      "importance": "secondary",
+      
+      "appearance": {
+        "age": "30s",
+        "build": "average_hidden_by_costume",
+        "costume": {
+          "full": "papageno_bird_suit_green_feathers",
+          "accessories": ["beak_mask", "feather_cape", "panpipes"]
+        },
+        "face": {
+          "visible": "through_costume_eyeholes",
+          "expression": "confused_cheerful"
+        }
+      },
+      
+      "personality": {
+        "core_traits": ["method_actor", "animal_lover", "cheerful"],
+        "speech_pattern": {
+          "quirk": "never_breaks_character",
+          "style": "papageno_voice_singsong",
+          "pronoun": "papageno_third_person"
+        },
+        "secret": "finds_chaos_hilarious"
+      },
+      
+      "dialogue": {
+        "during_chaos": "A horse! Papageno likes horses! Better than the Queen!",
+        "helpful": "*in character* The bird-man knows these halls! Follow Papageno!",
+        "to_gustav": "*whistles* Here, horsey! Want a seed? Papageno has seeds!",
+        "post_chaos": "Best rehearsal ever. Hoffmann needed this. Too uptight.",
+        "if_followed": "Papageno knows the secret path! Less breaking, more sneaking!"
+      },
+      
+      "animation_states": {
+        "performing": {"frames": 6, "description": "Dancing, singing poses", "loop": true},
+        "excited": {"frames": 4, "description": "Jumping, feathers ruffling", "loop": true},
+        "guiding": {"frames": 4, "description": "Beckoning gesture, hopping forward", "loop": true},
+        "with_gustav": {"frames": 4, "description": "Offering seeds, petting motion", "loop": false}
+      },
+      
+      "gameplay_function": {
+        "role": "optional_ally",
+        "benefit": "reduces_damage_by_400",
+        "mechanic": "following_papageno_avoids_backdrop_tear",
+        "charm_to_understand": 2,
+        "continues_to": "stadtpark_optional"
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_box_office_attendant_01",
+      "display_name": "Frau Ticketmeister",
+      "role": "ticket_sales_judgment",
+      "zone": "lobby",
+      "importance": "ambient",
+      
+      "appearance": {
+        "age": "50s",
+        "build": "prim",
+        "clothing": ["formal_blouse", "reading_glasses", "pearl_earrings"],
+        "setting": "behind_brass_cage_window"
+      },
+      
+      "dialogue": {
+        "greeting": "Guten Tag. Tonight's performance is... *checks tourists*... sold out.",
+        "actually_available": "...for €80. Each. Balcony only.",
+        "scalper_mention": "I know nothing of... alternative ticket sources. *glances toward door*",
+        "post_chaos": "YOU. The horse people. Tickets are... unavailable. Permanently."
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_opera_usher_01",
+      "display_name": "Opera Usher Gerhardt",
+      "role": "access_control_recognition",
+      "zone": "lobby_auditorium_entrance",
+      "importance": "ambient",
+      
+      "appearance": {
+        "age": "60s",
+        "build": "thin_formal",
+        "clothing": ["red_usher_jacket", "white_gloves", "brass_name_tag"],
+        "expression": "permanent_disapproval"
+      },
+      
+      "dialogue": {
+        "entry_check": "Tickets, please. And... *examines attire*... appropriate dress is required.",
+        "to_casuals": "Perhaps the standing room. In the back. Where fewer will see you.",
+        "post_chaos": "You are the horse people. You may not enter. Not tonight. Not ever.",
+        "bassline_night": "The... 'Bassline' event. Different clientele. *shudders* Different standards."
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_coat_check_01",
+      "display_name": "Coat Check Helga",
+      "role": "item_storage_gossip_source",
+      "zone": "lobby",
+      "importance": "ambient",
+      
+      "appearance": {
+        "age": "40s",
+        "build": "friendly_efficient",
+        "clothing": ["simple_black_dress", "name_tag"],
+        "setting": "behind_coat_check_counter"
+      },
+      
+      "dialogue": {
+        "service": "Your coat, sir? €2 for the evening. Very secure.",
+        "gossip": "*leans in* You want to know about the Maestro? Check dressing room three. Love letters everywhere.",
+        "hint": "*whispers* Behind the Mozart portrait in the lobby. If you need to... disappear. I've said nothing."
+      },
+      
+      "function": {
+        "item_storage": true,
+        "gossip_unlock": "black_tie_backroom_hint",
+        "charm_threshold": 2
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_gift_shop_clerk_01",
+      "display_name": "Gift Shop Clerk Markus",
+      "role": "vendor",
+      "zone": "lobby_gift_shop",
+      "importance": "vendor",
+      
+      "appearance": {
+        "age": "20s",
+        "build": "bored",
+        "clothing": ["polo_with_opera_logo", "name_tag"],
+        "expression": "customer_service_facade"
+      },
+      
+      "dialogue": {
+        "greeting": "Welcome to the gift shop. Everything is... authentically overpriced.",
+        "sale": "The Mozart bust is our bestseller. Only €45. Worth every cent, probably.",
+        "honest": "Between us? The €12 program has the same content as Wikipedia. But in fancier font."
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_maestros_assistant_01",
+      "display_name": "The Maestro's Harried Assistant",
+      "role": "enemy_encounter",
+      "zone": "lobby_roaming",
+      "importance": "enemy",
+      
+      "appearance": {
+        "age": "30s",
+        "build": "frazzled",
+        "clothing": ["disheveled_suit", "coffee_stains", "multiple_clipboards"],
+        "expression": "permanent_panic"
+      },
+      
+      "enemy_stats": {
+        "type": "cultural_enemy",
+        "hp": 85,
+        "attacks": [
+          {"name": "Schedule Chaos", "effect": "confuses_turn_order"},
+          {"name": "Double Booking", "effect": "summons_add"},
+          {"name": "Last Minute Change", "effect": "randomizes_party_stats"}
+        ],
+        "weakness": "calm_demeanor_status",
+        "drops": ["coffee_voucher", "backstage_schedule"]
+      },
+      
+      "dialogue_battle": {
+        "encounter": "You! Are you the 3 o'clock? The 4 o'clock? WHO ARE YOU?!",
+        "attack": "THE SCHEDULE! THE SCHEDULE IS RUINED!",
+        "defeat": "I just... need a moment... or a year..."
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_boss_maestro_vice_von_strauss",
+      "display_name": "Maestro Vice von Strauss",
+      "role": "city_boss",
+      "zone": "orchestra_pit_transformed",
+      "importance": "boss",
+      
+      "appearance": {
+        "age": "50s",
+        "build": "commanding_theatrical",
+        "costume": {
+          "phase_1": "formal_conductor_tails",
+          "phase_2": "jacket_removed_dj_headphones",
+          "phase_3": "shirt_open_sweat_glistening"
+        },
+        "props": ["conductor_baton_weapon", "dj_controller"],
+        "expression": "smug_superiority"
+      },
+      
+      "personality": {
+        "core_traits": ["cultural_gatekeeper", "corrupt", "stylish"],
+        "theme": "conducts_citys_vices_from_behind_curtain",
+        "secret": "controls_black_tie_backroom_operations"
+      },
+      
+      "dialogue": {
+        "pre_fight": "You think you understand culture? Let me EDUCATE you.",
+        "phase_1": "Classical precision! Every note, every MOVEMENT under MY control!",
+        "phase_2": "The DROP. Feel it? THIS is the future. Classical... with BASS.",
+        "phase_3": "ENCORE! ENCORE! The show is NEVER over!",
+        "defeat": "Impossible... I am the MAESTRO... I... I..."
+      },
+      
+      "boss_mechanics": {
+        "arena": "orchestra_pit_bassline_config",
+        "phases": 3,
+        "special_mechanic": "rhythm_sync_attacks",
+        "crowd_meter": "builds_to_standing_ovation_buff"
+      }
+    }
+  ],
+  
+  "npc_schedules": {
+    "backstage_daytime": ["regisseur_hoffmann", "stagehead_otto", "prima_donna", "papageno"],
+    "lobby_always": ["box_office_attendant", "usher", "coat_check", "gift_shop_clerk"],
+    "lobby_random": ["maestros_assistant"],
+    "boss_night_only": ["maestro_von_strauss"]
+  },
+  
+  "spawn_points": {
+    "lobby": [
+      {"npc": "box_office_attendant", "position": {"x": 100, "y": 80}},
+      {"npc": "usher", "position": {"x": 200, "y": 150}},
+      {"npc": "coat_check", "position": {"x": 50, "y": 100}},
+      {"npc": "gift_shop_clerk", "position": {"x": 60, "y": 200}}
+    ],
+    "backstage": [
+      {"npc": "regisseur_hoffmann", "position": {"x": 200, "y": 150}},
+      {"npc": "stagehead_otto", "position": {"x": 50, "y": 100}},
+      {"npc": "prima_donna", "position": {"x": 250, "y": 200}},
+      {"npc": "papageno", "position": {"x": 300, "y": 180}}
+    ]
+  }
+}

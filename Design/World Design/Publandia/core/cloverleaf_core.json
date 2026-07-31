@@ -1,0 +1,304 @@
+{
+  "location_id": "publandia_outskirts_cloverleaf_roundabout_01",
+  "display_name": "The Cloverleaf",
+  "satirical_subtitle": "Where Every Exit Leads Back to the Beginning",
+  "world": "publandia",
+  "zone": "outskirts_district",
+  "location_type": "major_set_piece",
+  "sub_types": ["driving_puzzle", "absurdist_ecosystem", "existential_horror_comedy"],
+  
+  "access": {
+    "time_restrictions": {
+      "always_accessible": true,
+      "note": "The roundabout never closes"
+    },
+    "stat_requirements": {
+      "bravado_for_dialogue": 3
+    },
+    "item_requirements": ["rental_car_keys_paddys"],
+    "previous_locations": ["publandia_outskirts_paddys_premium_motors_01"],
+    "special_conditions": {
+      "auto_trigger": true,
+      "trigger_condition": "driving_east_from_paddys",
+      "avoidable": false
+    }
+  },
+  
+  "exits": [
+    {
+      "exit_id": "exit_1_east",
+      "destination": "publandia_bigger_roundabout_01",
+      "direction": "east",
+      "sign_text": "EAST - Scenic Route",
+      "actual_result": "leads_to_bigger_roundabout",
+      "speed_requirement": "below_threshold"
+    },
+    {
+      "exit_id": "exit_2_southeast",
+      "destination": "publandia_country_road_02",
+      "direction": "southeast",
+      "sign_text": "SOUTHEAST - Country Roads",
+      "actual_result": "loops_back_to_roundabout_eventually",
+      "speed_requirement": "below_threshold"
+    },
+    {
+      "exit_id": "exit_3_southwest",
+      "destination": "publandia_outskirts_paddys_premium_motors_01",
+      "direction": "southwest",
+      "sign_text": "SOUTHWEST - Return to Town",
+      "actual_result": "returns_to_paddys",
+      "speed_requirement": "below_threshold"
+    },
+    {
+      "exit_id": "exit_4_west",
+      "destination": "publandia_country_road_04",
+      "direction": "west",
+      "sign_text": "WEST - Coastal Drive",
+      "actual_result": "loops_back_to_roundabout_eventually",
+      "speed_requirement": "below_threshold"
+    },
+    {
+      "exit_id": "exit_5_northwest",
+      "destination": "publandia_country_road_05",
+      "direction": "northwest",
+      "sign_text": "NORTHWEST - Sheep Crossing",
+      "actual_result": "sheep_delay_then_loops_back",
+      "speed_requirement": "below_threshold"
+    },
+    {
+      "exit_id": "exit_6_north",
+      "destination": "publandia_cliffs_of_moher",
+      "direction": "north",
+      "sign_text": "NORTH - Cliffs of Moher",
+      "actual_result": "actual_destination",
+      "speed_requirement": "below_threshold",
+      "note": "Where Patrick and Margaret were going in 1987"
+    }
+  ],
+  
+  "visual_design": {
+    "color_palette": {
+      "primary_asphalt": "#696969",
+      "lane_markings": "#FFFFFF",
+      "warning_signs": "#FFD700",
+      "exit_signs": "#228B22",
+      "sky_overcast": "#A9A9A9",
+      "grass_irish": "#228B22"
+    },
+    "lighting_setup": {
+      "ambient_color": "#B0B0B0",
+      "ambient_intensity": 0.6,
+      "vehicle_headlights": "#FFFACD",
+      "headlight_range_meters": 15
+    },
+    "weather": {
+      "default": "light_rain",
+      "rain_density": 50,
+      "wind_direction": "variable",
+      "visibility": "overcast"
+    },
+    "particle_systems": [
+      "rain_continuous",
+      "exhaust_per_vehicle",
+      "road_spray",
+      "windshield_wiper_overlay"
+    ],
+    "mobile_optimization": {
+      "max_detailed_vehicles": 8,
+      "lod_distance_meters": 50,
+      "particle_density_scalable": true,
+      "prebaked_animation_loops": true,
+      "draw_call_budget": 50,
+      "memory_budget_mb": 64
+    }
+  },
+  
+  "lane_system": {
+    "inner_lane": {
+      "name": "The Fast Lane",
+      "speed_range_mph": "50+",
+      "primary_residents": ["aggressive_locals", "learner_car_badly"],
+      "difficulty": "hard",
+      "exit_access": "best_angles"
+    },
+    "middle_lane": {
+      "name": "The Cruise",
+      "speed_range_mph": "30-40",
+      "primary_residents": ["wedding_van_1987", "sean_local", "most_traffic"],
+      "difficulty": "medium",
+      "exit_access": "decent"
+    },
+    "outer_lane": {
+      "name": "The Slow Lane",
+      "speed_range_mph": "15-25",
+      "primary_residents": ["tour_bus", "family_van", "food_truck"],
+      "difficulty": "easy_to_enter",
+      "exit_access": "often_blocked"
+    },
+    "merge_zone": {
+      "name": "The Chaos Zone",
+      "speed_range_mph": "variable",
+      "primary_residents": ["entering_vehicles"],
+      "difficulty": "chaotic",
+      "exit_access": "none"
+    }
+  },
+  
+  "center_island": {
+    "diameter_meters": 200,
+    "features": [
+      {
+        "id": "celtic_monument",
+        "type": "landmark",
+        "description": "Ancient Celtic cross of unknown origin"
+      },
+      {
+        "id": "gift_shop",
+        "type": "building",
+        "status": "permanently_opening_soon",
+        "sign": "OPENING SOON (Since 1994)"
+      },
+      {
+        "id": "grass",
+        "type": "terrain",
+        "description": "Perfectly manicured, maintainer unknown"
+      }
+    ]
+  },
+  
+  "quest_integration": {
+    "primary_quest_id": "publandia_sidequest_eternal_roundabout_01",
+    "quest_name": "The Cloverleaf of Confusion",
+    "duration_minutes": {
+      "path_a": "20-30",
+      "path_b": "extended_gameplay"
+    },
+    "binary_path_choice": true,
+    "paths": {
+      "path_a": {
+        "name": "Escape Attempts",
+        "goal": "Take any exit",
+        "solution": "Slow down",
+        "reward": "road_warrior_achievement"
+      },
+      "path_b": {
+        "name": "Adaptation",
+        "goal": "Adapt to roundabout life",
+        "duration": "3+_ingame_days",
+        "reward": "roundabout_veteran_achievement"
+      }
+    }
+  },
+  
+  "status_effects": {
+    "frustrated": {
+      "trigger": "5+_failed_exit_attempts",
+      "duration": "until_food_or_rest",
+      "effects": "-accuracy_aggressive_dialogue"
+    },
+    "existentially_terrified": {
+      "trigger": "meet_sean_hear_philosophy",
+      "duration": "10_minutes",
+      "effects": "philosophical_dialogue_unlocks"
+    },
+    "roundabout_native": {
+      "trigger": "path_b_day_3",
+      "duration": "permanent",
+      "effects": "+wisdom_references_in_future_dialogue"
+    },
+    "gps_dependent": {
+      "trigger": "rely_on_gps_too_long",
+      "duration": "until_manual_navigation",
+      "effects": "-initiative_+confusion"
+    }
+  },
+  
+  "post_completion_unlocks": [
+    {
+      "unlock_id": "1987_couple_background",
+      "description": "Patrick and Margaret appear in Publandia background scenes"
+    },
+    {
+      "unlock_id": "bradley_roundabout_girlfriend",
+      "condition": "path_b_completed",
+      "description": "Bradley's roundabout girlfriend appears in epilogue"
+    },
+    {
+      "unlock_id": "seamus_survivor_dialogue",
+      "description": "Seamus references 'the survivors' in future encounters"
+    },
+    {
+      "unlock_id": "roundabout_boss_pattern_recognition",
+      "description": "Lord Pilsner recognizes roundabout attack pattern at final boss"
+    }
+  ],
+  
+  "audio_design": {
+    "ambient": {
+      "constant": [
+        "multiple_engine_hum",
+        "light_rain_on_windshield",
+        "distant_sheep",
+        "windshield_wiper_rhythm"
+      ],
+      "periodic": [
+        "gps_recalculating",
+        "indicator_tick"
+      ]
+    },
+    "music": {
+      "persistent": false,
+      "note": "Silence emphasizes isolation",
+      "radio_snippets": [
+        "irish_folk_from_various_vehicles",
+        "love_songs_1987_from_wedding_van",
+        "tour_bus_pa_announcements"
+      ]
+    },
+    "stingers": {
+      "first_sight_wedding_van": "curious_subtle",
+      "margaret_skeleton_reveal": "brief_ominous_then_warm",
+      "sean_philosophy": "existential_drone",
+      "successful_exit": "triumphant_relief"
+    }
+  },
+  
+  "social_media_moments": {
+    "screenshot_opportunities": [
+      "wedding_van_with_margaret",
+      "tour_bus_community_celebration",
+      "aerial_view_circulation",
+      "days_circling_counter",
+      "patrick_waving_margaret_resting"
+    ],
+    "quotable_moments": [
+      "First time? ...That's what they all say.",
+      "They all lead back here eventually.",
+      "In here, I know what comes next. Another circle. Then another.",
+      "Did ye try... slowing down?",
+      "Margaret? She's just resting."
+    ]
+  },
+  
+  "technical_specs": {
+    "asset_count": {
+      "sprite_sheets": 12,
+      "animation_loops": 8,
+      "particle_systems": 4,
+      "audio_files": 15
+    },
+    "performance_targets": {
+      "frame_rate": 60,
+      "baseline_device": "iphone_8",
+      "memory_max_mb": 64,
+      "draw_calls_max": 50
+    },
+    "development_timeline": {
+      "asset_creation_days": "3-4",
+      "implementation_days": "2-3",
+      "testing_days": 2,
+      "polish_days": "1-2",
+      "total_days": 10
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "location_id": "publandia_outskirts_paddys_premium_motors_01",
+  "item_category": "rental_services_and_addons",
+  
+  "items": [
+    {
+      "item_id": "rental_shamrock",
+      "display_name": "The Shamrock (Economy)",
+      "item_type": "rental_vehicle",
+      "rarity": "common",
+      "vendor": "seamus_omalley",
+      "price": 45,
+      "price_unit": "per_day",
+      
+      "description": {
+        "player_sees": "A compact green car with character. The wipers appear to be stuck on.",
+        "bros_see": "A classic European economy car! So authentic! So fuel-efficient!"
+      },
+      
+      "hidden_issue": {
+        "problem": "Wipers stuck on",
+        "reveal": "Activates immediately upon starting",
+        "seamus_hint": "She's reliable. The wipers are a bit... persistent."
+      },
+      
+      "effects": {
+        "enables": "driving_sequences",
+        "visual": "compact_green_car_sprite"
+      }
+    },
+    {
+      "item_id": "rental_lucky_charm",
+      "display_name": "The Lucky Charm (Standard)",
+      "item_type": "rental_vehicle",
+      "rarity": "uncommon",
+      "vendor": "seamus_omalley",
+      "price": 60,
+      "price_unit": "per_day",
+      
+      "description": {
+        "player_sees": "A blue sedan with some scratches. GPS interface looks... temperamental.",
+        "bros_see": "A proper car! Look at this legroom! Perfect for the open Irish roads!"
+      },
+      
+      "hidden_issue": {
+        "problem": "GPS glitches near roundabouts",
+        "reveal": "GPS starts saying 'recalculating' and never stops in Cloverleaf",
+        "seamus_hint": "Good choice. The GPS is... creative near intersections."
+      },
+      
+      "effects": {
+        "enables": "driving_sequences",
+        "visual": "blue_sedan_sprite"
+      }
+    },
+    {
+      "item_id": "rental_emerald_dream",
+      "display_name": "The Emerald Dream (Premium)",
+      "item_type": "rental_vehicle",
+      "rarity": "rare",
+      "vendor": "seamus_omalley",
+      "price": 80,
+      "price_unit": "per_day",
+      
+      "description": {
+        "player_sees": "A large SUV. Looks too wide for those narrow country lanes.",
+        "bros_see": "Now THIS is a vehicle! Room for the boys AND our stuff! First class!"
+      },
+      
+      "hidden_issue": {
+        "problem": "Too wide for country lanes",
+        "reveal": "Constant hedge-scraping, mirror-folding required",
+        "seamus_hint": "Roomy. Maybe too roomy for some of the lanes out there."
+      },
+      
+      "effects": {
+        "enables": "driving_sequences",
+        "visual": "suv_sprite",
+        "penalty": "lane_difficulty_increased"
+      }
+    },
+    {
+      "item_id": "rental_full_irish",
+      "display_name": "The Full Irish (Luxury)",
+      "item_type": "rental_vehicle",
+      "rarity": "unique",
+      "vendor": "seamus_omalley",
+      "price": 120,
+      "price_unit": "per_day",
+      
+      "description": {
+        "player_sees": "A red convertible. Impractical for Irish weather. Sheep seem interested.",
+        "bros_see": "A CONVERTIBLE! In PUBLANDIA! We're going to look SO GOOD in this!"
+      },
+      
+      "hidden_issue": {
+        "problem": "Attracts sheep attention",
+        "reveal": "Sheep follow the car, block roads, attempt to climb in",
+        "seamus_hint": "A beauty. The sheep love her. Be warned."
+      },
+      
+      "effects": {
+        "enables": "driving_sequences",
+        "visual": "convertible_sprite",
+        "special": "sheep_encounter_rate_increased"
+      }
+    },
+    {
+      "item_id": "addon_gps",
+      "display_name": "GPS Navigation",
+      "item_type": "rental_addon",
+      "rarity": "common",
+      "vendor": "seamus_omalley",
+      "price": 20,
+      "price_unit": "per_day",
+      
+      "description": {
+        "player_sees": "A portable GPS unit. Screen looks a bit burned in.",
+        "bros_see": "Perfect! No way we can get lost with this bad boy!"
+      },
+      
+      "hidden_issue": {
+        "problem": "Says 'recalculating' forever in The Cloverleaf",
+        "reveal": "GPS voice becomes increasingly desperate/confused",
+        "seamus_hint": "It'll work. Until it doesn't."
+      },
+      
+      "effects": {
+        "adds": "gps_voice_during_driving",
+        "cloverleaf_behavior": "endless_recalculating"
+      }
+    },
+    {
+      "item_id": "addon_insurance",
+      "display_name": "Premium Insurance",
+      "item_type": "rental_addon",
+      "rarity": "common",
+      "vendor": "seamus_omalley",
+      "price": 35,
+      "price_unit": "per_day",
+      
+      "description": {
+        "player_sees": "Comprehensive coverage. Fine print mentions 'circular traffic incidents.'",
+        "bros_see": "Full coverage! Now we're protected no matter what happens!"
+      },
+      
+      "hidden_issue": {
+        "problem": "Explicitly excludes 'circular traffic incidents'",
+        "reveal": "Useless in The Cloverleaf",
+        "seamus_hint": "Covers everything. *pause* Almost everything.",
+        "fine_print": "Section 14.3: Coverage does not extend to incidents occurring within circular traffic patterns, roundabouts, or perpetual vehicular loops."
+      },
+      
+      "effects": {
+        "actual_coverage": "nothing_in_cloverleaf"
+      }
+    },
+    {
+      "item_id": "addon_map",
+      "display_name": "Map Book",
+      "item_type": "rental_addon",
+      "rarity": "common",
+      "vendor": "seamus_omalley",
+      "price": 10,
+      "price_unit": "one_time",
+      
+      "description": {
+        "player_sees": "Road map of Publandia. One section heavily marked in red with 'HERE BE DRAGONS.'",
+        "bros_see": "Old school navigation! This is how real travelers do it!"
+      },
+      
+      "hidden_issue": {
+        "problem": "The Cloverleaf is only labeled with '?'",
+        "reveal": "Seamus has annotated it but it doesn't help",
+        "seamus_hint": "I've marked it up myself. For what good it'll do."
+      },
+      
+      "effects": {
+        "provides": "map_item_in_inventory",
+        "cloverleaf_usefulness": "none"
+      }
+    },
+    {
+      "item_id": "addon_rosary",
+      "display_name": "Dashboard Rosary Beads",
+      "item_type": "rental_addon",
+      "rarity": "common",
+      "vendor": "seamus_omalley",
+      "price": 5,
+      "price_unit": "one_time",
+      
+      "description": {
+        "player_sees": "Simple rosary beads for the dashboard. Seamus seems insistent.",
+        "bros_see": "Aw, that's sweet. Cultural authenticity!"
+      },
+      
+      "hidden_issue": {
+        "problem": "None - genuinely helpful for morale",
+        "reveal": "Only addon that actually does something",
+        "seamus_hint": "Take it. Ye'll need something to hold onto."
+      },
+      
+      "effects": {
+        "buff": "+5% stress resistance in Cloverleaf",
+        "visual": "rosary_on_rearview_mirror"
+      }
+    }
+  ],
+  
+  "post_quest_rewards": [
+    {
+      "item_id": "seamus_respect_discount",
+      "display_name": "Seamus's Respect",
+      "item_type": "permanent_discount",
+      "rarity": "unique",
+      "unlock_condition": "cloverleaf_completed",
+      
+      "description": {
+        "player_sees": "Seamus acknowledges you as survivors. 10% off future rentals.",
+        "bros_see": "This guy loves us! We're practically family now!"
+      },
+      
+      "effects": {
+        "discount": 0.9,
+        "applies_to": "all_paddy_rentals"
+      },
+      
+      "seamus_dialogue": "Ye've earned my respect. Doesn't mean much. But ye've earned it."
+    }
+  ],
+  
+  "shop_economics": {
+    "vehicle_count": 4,
+    "addon_count": 4,
+    "price_range": {"min": 5, "max": 120},
+    "currency_accepted": "euros",
+    "hidden_fees": {
+      "circular_traffic_exclusion": "Insurance doesn't cover roundabouts",
+      "sheep_damage_clause": "Not liable for livestock interactions"
+    }
+  }
+}

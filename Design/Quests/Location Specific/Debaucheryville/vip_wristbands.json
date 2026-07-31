@@ -1,0 +1,387 @@
+{
+  "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+  "display_name": "The VIP Experience",
+  "satirical_subtitle": "Velvet Ropes Fear This One Weird Trick",
+  "city": "debaucheryville",
+  "location": "astronomical_cockup_square",
+  "quest_type": "sidequest",
+  "recommended_level": 2,
+  "estimated_duration_minutes": 18,
+  
+  "quest_giver": {
+    "npc_id": "shady_wristband_guy",
+    "display_name": "Shady Wristband Guy",
+    "location": "astronomical_clockup_square",
+    "trigger_condition": "player_in_clock_square_area"
+  },
+  
+  "prerequisites": {
+    "location_reached": "astronomical_clockup_square",
+    "currency_required": 90,
+    "currency_type": "euro"
+  },
+  
+  "satirical_targets": [
+    "tourist_desperation_for_insider_status",
+    "vip_culture_obsession",
+    "scammers_exploiting_status_seekers",
+    "illusion_of_exclusivity",
+    "language_barrier_exploitation"
+  ],
+  
+  "quest_stages": [
+    {
+      "stage_id": 1,
+      "name": "the_approach",
+      "description": "Shady Wristband Guy approaches the bros",
+      "trigger": "enter_clock_square_crowd_area",
+      "objectives": [
+        {"type": "dialogue", "target": "shady_wristband_guy_pitch"}
+      ]
+    },
+    {
+      "stage_id": 2,
+      "name": "the_transaction",
+      "description": "Bros examine and purchase wristbands",
+      "objectives": [
+        {"type": "dialogue", "target": "wristband_examination"},
+        {"type": "purchase", "target": "vip_wristbands", "cost": 90, "quantity": 3}
+      ],
+      "item_acquired": {
+        "item_id": "vip_wristband_im_seven",
+        "display_name": "VIP All-Access Wristband",
+        "actual_text_czech": "Je mi 7!",
+        "actual_text_english": "I'm 7!",
+        "bros_believe": "Level Seven Access - Highest tier VIP",
+        "quantity": 3
+      }
+    },
+    {
+      "stage_id": 3,
+      "name": "wristband_application",
+      "description": "Bros put on wristbands with ceremony",
+      "objectives": [
+        {"type": "cutscene", "target": "wristband_application_scene"}
+      ],
+      "permanent_change_triggered": "vip_wristbands_all_bros"
+    },
+    {
+      "stage_id": 4,
+      "name": "velvet_curtain_approach",
+      "description": "Bros approach the club with confidence",
+      "location": "velvet_curtain_club_exterior",
+      "objectives": [
+        {"type": "travel", "target": "velvet_curtain_club"},
+        {"type": "observe", "target": "no_line_exists"}
+      ],
+      "bro_interpretation": "Word got out we were coming. They cleared it."
+    },
+    {
+      "stage_id": 5,
+      "name": "bouncer_encounter",
+      "description": "The bouncer reads the wristband",
+      "objectives": [
+        {"type": "dialogue", "target": "bouncer_confrontation"}
+      ],
+      "key_moment": {
+        "bouncer_reads_wristband": true,
+        "bouncer_czech_dialogue": "Sedm let. Jsi sedmiletý VIP?",
+        "bouncer_english_subtitle": "Seven years old. You're a seven-year-old VIP?",
+        "bros_remain_oblivious": true
+      }
+    },
+    {
+      "stage_id": 6,
+      "name": "the_revelation_ignored",
+      "description": "Bouncer explains it's a children's party wristband",
+      "objectives": [
+        {"type": "dialogue", "target": "bouncer_explanation"},
+        {"type": "observe", "target": "bros_reframe_as_confirmation"}
+      ],
+      "comedy_beat": {
+        "bouncer_says": "It is from children's birthday party.",
+        "bradley_response": "A THEMED birthday party. For VIPs. Seven is probably a tier."
+      }
+    },
+    {
+      "stage_id": 7,
+      "name": "entry_granted",
+      "description": "Bouncer lets them in (it was always free)",
+      "objectives": [
+        {"type": "enter", "target": "velvet_curtain_club"}
+      ],
+      "bouncer_aftermath": {
+        "czech": "Američané.",
+        "english": "Americans.",
+        "delivery": "exhausted_acceptance"
+      }
+    }
+  ],
+  
+  "npcs": [
+    {
+      "npc_id": "shady_wristband_guy",
+      "display_name": "Shady Wristband Guy",
+      "appearance": "Trench coat, shifty eyes, too-friendly smile",
+      "location": "astronomical_clockup_square",
+      "scam_specialty": "children_birthday_wristbands_as_vip",
+      "profit_margin": "8,900%",
+      "actual_wristband_cost": "€0.30 per 100",
+      "dialogue": {
+        "approach": "Psst. Americans, yes? You want... the VIP experience?",
+        "pitch": "These wristbands... they open ALL doors. Velvet Curtain Club. Absinthe Arcade VIP section.",
+        "translation_lie": "It says 'Level Seven Access.' Highest tier. Only for VIPs.",
+        "close": "Only €30 each. Very exclusive."
+      },
+      "recurring": true,
+      "later_appearances": ["selling_to_other_tourists", "background_counting_money"]
+    },
+    {
+      "npc_id": "velvet_curtain_bouncer",
+      "display_name": "Bouncer",
+      "appearance": "Large, bored, checking phone",
+      "languages": ["czech", "english", "german", "russian", "exhausted_sigh"],
+      "dialogue": {
+        "wristband_reaction_czech": "Sedm let. Jsi sedmiletý VIP?",
+        "to_second_bouncer_czech": "Podívej se na to. Říká, že má sedm let.",
+        "second_bouncer_response_czech": "Měl by dostat dětské menu.",
+        "explanation_english": "Your bracelet says... 'I am seven.'",
+        "revelation": "It is from children's birthday party.",
+        "surrender": "Go in. Is free. No cover.",
+        "aftermath": "Američané."
+      }
+    },
+    {
+      "npc_id": "second_bouncer",
+      "display_name": "Second Bouncer",
+      "role": "comedy_witness",
+      "dialogue": {
+        "children_menu_joke_czech": "Měl by dostat dětské menu.",
+        "aftermath_nod": "Američané."
+      }
+    }
+  ],
+  
+  "items": {
+    "acquired": [
+      {
+        "item_id": "vip_wristband_im_seven",
+        "display_name": "VIP All-Access Wristband",
+        "actual_item": "Children's birthday party wristband",
+        "text_czech": "Je mi 7!",
+        "text_english": "I'm 7!",
+        "bros_translation": "Level Seven Access",
+        "cost_paid": 30,
+        "actual_value": 0.003,
+        "quantity": 3,
+        "colors": {
+          "lord_pilsner": "red",
+          "chadwick": "blue", 
+          "bradley": "purple"
+        },
+        "permanent": true,
+        "visible_on_sprite": true,
+        "degradation": {
+          "day_1_3": "pristine",
+          "day_4_7": "worn_fading",
+          "day_8_plus": "crusty_peeling_still_worn"
+        }
+      }
+    ]
+  },
+  
+  "permanent_effects": {
+    "sprite_modification": {
+      "type": "vip_wristbands_all_bros",
+      "affected": ["lord_pilsner", "chadwick", "bradley"],
+      "visibility": "always",
+      "removal": "never",
+      "degradation_visual": true
+    },
+    "running_gag": {
+      "gag_id": "level_seven",
+      "triggers_throughout_game": true,
+      "bros_flash_wristbands_at": [
+        "clubs",
+        "restaurants", 
+        "museums",
+        "public_restrooms",
+        "grocery_stores",
+        "hospitals",
+        "police_stations"
+      ]
+    },
+    "npc_reactions": {
+      "frequency": "15%_at_nightlife_locations",
+      "reaction_types": [
+        {"type": "smirk", "probability": 0.4},
+        {"type": "stifled_laugh", "probability": 0.3},
+        {"type": "birthday_question", "probability": 0.2},
+        {"type": "kids_menu_offer", "probability": 0.1}
+      ]
+    }
+  },
+  
+  "npc_callbacks": {
+    "throughout_game": [
+      {
+        "npc_type": "random_club_patron",
+        "dialogue": "Oh cute, is it your birthday?",
+        "bros_response": "Every day is my birthday when you're Level Seven."
+      },
+      {
+        "npc_type": "kebab_vendor",
+        "dialogue": "You want kids menu? You are... seven?",
+        "bros_response": "See? Even the food vendors know our status."
+      },
+      {
+        "npc_type": "velvet_curtain_regular",
+        "dialogue_czech": "To jsou ti 'Level Seven' Američané.",
+        "subtitle": "Those are the 'Level Seven' Americans."
+      },
+      {
+        "npc_type": "actual_seven_year_old",
+        "context": "birthday_party_background",
+        "dialogue": "Mommy, those old men have my wristband!",
+        "bros_dont_hear": true
+      }
+    ]
+  },
+  
+  "easter_eggs": [
+    {
+      "id": "birthday_party_poster",
+      "description": "Poster advertising 'Little Timmy's 7th Birthday Party!' with same wristbands",
+      "location": "velvet_curtain_club_bathroom"
+    },
+    {
+      "id": "shady_guy_repeat_sales",
+      "description": "Shady Wristband Guy visible selling same wristbands to other tourists",
+      "location": "various_backgrounds"
+    },
+    {
+      "id": "actual_vip_section",
+      "description": "Real VIP section exists with gold wristbands - bros never notice",
+      "location": "velvet_curtain_club_upstairs"
+    },
+    {
+      "id": "real_seven_year_olds",
+      "description": "Actual birthday party with kids wearing same wristbands",
+      "location": "background_scene_later_in_game"
+    }
+  ],
+  
+  "rewards": {
+    "items": ["vip_wristband_im_seven_x3"],
+    "permanent_changes": ["vip_wristbands_all_bros"],
+    "titles": ["Level Seven VIP"],
+    "achievements": ["vip_experience", "level_seven_clearance"],
+    "unlocks": [
+      "velvet_curtain_club_access_was_always_free",
+      "level_seven_running_gag",
+      "post_credits_vip_reception"
+    ]
+  },
+  
+  "quest_flags": {
+    "on_start": ["vip_wristband_quest_started"],
+    "on_purchase": ["wristbands_purchased", "spent_90_on_birthday_supplies"],
+    "on_club_entry": ["vip_wristband_quest_complete", "bouncer_encounter_survived"],
+    "permanent": [
+      "wristbands_visible_on_sprites",
+      "level_seven_dialogue_enabled",
+      "npc_wristband_reactions_enabled"
+    ]
+  },
+  
+  "post_credits_scene": {
+    "scene_id": "vip_reception",
+    "unlock_condition": "vip_wristband_quest_complete",
+    "duration_seconds": 90,
+    "location": "chain_restaurant_hometown",
+    "timeline": "six_months_after_trip",
+    "setting": "Chili's but with cloth napkins energy",
+    "key_elements": {
+      "wristband_state": "faded_dirty_peeling_still_worn",
+      "waitress": "Brittany, 24, dead behind the eyes",
+      "pilsner_delusion": "Still waiting for VIP treatment to kick in",
+      "zero_likes_on_post": true,
+      "asks_for_pilsner": "Gets Bud Light"
+    },
+    "narrator_epilogue": "Lord Pilsner would wear that wristband for another eight months, until it finally disintegrated in the shower. He saved the pieces in a ziplock bag labeled 'MEMORIES.' The ziplock bag is now in a storage unit he can't afford.",
+    "final_punchline": "He still tells people he's 'Level Seven.'"
+  },
+  
+  "dialogue_highlights": {
+    "bros_ongoing_delusion": [
+      {
+        "character": "lord_pilsner",
+        "context": "any_club",
+        "action": "flashes wristband at staff who ignores him",
+        "line": "See? Respect."
+      },
+      {
+        "character": "chadwick",
+        "context": "social_media_post",
+        "line": "Day 3 with Level Seven access. Doors are opening that don't even exist for regular people. #blessed #VIPlife #LevelSeven"
+      },
+      {
+        "character": "bradley",
+        "context": "advising_other_tourists",
+        "line": "You guys should really invest in the local VIP infrastructure. We got ours from a guy at the clock. Very connected."
+      }
+    ],
+    "narrator_commentary": {
+      "at_purchase": "Armed with €90 worth of children's party supplies, our heroes prepared to conquer Debaucheryville's nightlife scene.",
+      "at_club": "The bouncer, fluent in six languages, chose to respond in the universal dialect of exhausted service workers dealing with confident idiots."
+    }
+  },
+  
+  "localization": {
+    "czech_dialogue": {
+      "bouncer_wristband_reaction": {
+        "czech": "Sedm let. Jsi sedmiletý VIP?",
+        "english_subtitle": "Seven years old. You're a seven-year-old VIP?"
+      },
+      "bouncer_to_colleague": {
+        "czech": "Podívej se na to. Říká, že má sedm let.",
+        "english_subtitle": "Look at this. He says he's seven years old."
+      },
+      "colleague_response": {
+        "czech": "Měl by dostat dětské menu.",
+        "english_subtitle": "He should get the children's menu."
+      },
+      "aftermath": {
+        "czech": "Američané.",
+        "english_subtitle": "Americans."
+      }
+    },
+    "wristband_text": {
+      "czech": "Je mi 7!",
+      "english": "I'm 7!",
+      "bros_interpretation": "Level Seven Access"
+    }
+  },
+  
+  "mobile_optimization": {
+    "screenshot_moments": [
+      "bros_displaying_wristbands_proudly",
+      "bouncer_face_when_reading",
+      "bros_entering_free_club_like_vips",
+      "birthday_party_same_wristbands"
+    ],
+    "dialogue_pacing": "standard_with_comedy_beats",
+    "cutscene_skippable": false
+  },
+  
+  "validation_checklist": {
+    "bros_never_self_aware": true,
+    "players_laugh_at_not_with": true,
+    "scams_obvious_to_players": true,
+    "bros_remain_confident": true,
+    "city_specific_satire": true,
+    "no_crypto": true,
+    "y2k_era_appropriate": true,
+    "mobile_optimized": true
+  }
+}

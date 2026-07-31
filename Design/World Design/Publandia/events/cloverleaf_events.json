@@ -1,0 +1,545 @@
+{
+  "location_id": "publandia_outskirts_cloverleaf_roundabout_01",
+  "quest_id": "publandia_sidequest_eternal_roundabout_01",
+  
+  "entry_sequence": {
+    "event_id": "cloverleaf_entry",
+    "trigger": "driving_east_from_paddys_premium_motors",
+    "auto_trigger": true,
+    "avoidable": false,
+    
+    "sequence": [
+      {
+        "phase": "approach",
+        "description": "Country road narrows into merge lane",
+        "visual": "roundabout_approaching_distance"
+      },
+      {
+        "phase": "sign_visible",
+        "description": "ROUNDABOUT AHEAD sign",
+        "dialogue": {
+          "speaker": "lord_pilsner",
+          "text": "Bradley, are you sure this is the right—"
+        }
+      },
+      {
+        "phase": "gps_instruction",
+        "speaker": "gps",
+        "text": "In 500 meters, take the third exit.",
+        "audio": "gps_neutral_tone"
+      },
+      {
+        "phase": "roundabout_visible",
+        "description": "Full roundabout comes into view - impossibly large",
+        "visual": "roundabout_full_reveal"
+      },
+      {
+        "phase": "forced_merge",
+        "description": "Bros enter merge lane automatically",
+        "dialogue": {
+          "speaker": "bradley",
+          "text": "I think that was a merge lane."
+        }
+      },
+      {
+        "phase": "traffic_observation",
+        "dialogue": {
+          "speaker": "chadwick",
+          "text": "There's a lot of cars in here."
+        }
+      },
+      {
+        "phase": "first_recalculating",
+        "speaker": "gps",
+        "text": "Recalculating.",
+        "audio": "gps_recalculating_neutral"
+      }
+    ],
+    
+    "post_event_effects": [
+      {"effect": "set_flag", "flag": "entered_cloverleaf", "value": true},
+      {"effect": "start_counter", "counter": "circles_completed", "value": 0},
+      {"effect": "start_timer", "timer": "time_in_roundabout_minutes"}
+    ]
+  },
+  
+  "milestone_events": [
+    {
+      "event_id": "first_missed_exit",
+      "trigger": {"type": "circles_completed", "value": 1},
+      "dialogue": [
+        {"speaker": "lord_pilsner", "text": "That was our exit!"},
+        {"speaker": "bradley", "text": "There'll be another one."},
+        {"speaker": "gps", "text": "Recalculating.", "audio": "gps_recalculating_slight_strain"}
+      ]
+    },
+    
+    {
+      "event_id": "notice_wedding_van",
+      "trigger": {"type": "circles_completed", "value": 3},
+      "priority": "high",
+      "sequence": [
+        {
+          "phase": "observation",
+          "dialogue": {"speaker": "lord_pilsner", "text": "Is that... is that the same van?"}
+        },
+        {
+          "phase": "focus",
+          "visual": "camera_focus_wedding_van_1987",
+          "description": "1987 Wedding Van comes into clear view"
+        },
+        {
+          "phase": "read_sign",
+          "dialogue": {"speaker": "chadwick", "text": "That sign says 1987."}
+        },
+        {
+          "phase": "math",
+          "dialogue": {"speaker": "bradley", "text": "That was thirty-seven years ago."}
+        },
+        {
+          "phase": "skeleton_reveal",
+          "visual": "margaret_skeleton_visible",
+          "description": "Skeleton visible in passenger seat. Driver waves cheerfully."
+        },
+        {
+          "phase": "patrick_greeting",
+          "dialogue": {
+            "speaker": "patrick_osullivan_01",
+            "text": "First time?",
+            "animation": "patrick_waving"
+          }
+        },
+        {
+          "phase": "pilsner_attempt",
+          "dialogue": {"speaker": "lord_pilsner", "text": "We're trying to find the exit to—"}
+        },
+        {
+          "phase": "patrick_wisdom",
+          "dialogue": {
+            "speaker": "patrick_osullivan_01",
+            "text": "Doesn't matter. They all lead back here eventually."
+          }
+        }
+      ],
+      "post_event_effects": [
+        {"effect": "set_flag", "flag": "met_patrick_and_margaret", "value": true},
+        {"effect": "unlock_dialogue", "npc": "patrick_osullivan_01"}
+      ]
+    },
+    
+    {
+      "event_id": "discover_tour_bus_community",
+      "trigger": {"type": "circles_completed", "value": 5},
+      "sequence": [
+        {
+          "phase": "bus_approach",
+          "dialogue": {"speaker": "chadwick", "text": "Is that tour bus growing vegetables on the roof?"}
+        },
+        {
+          "phase": "banner_visible",
+          "visual": "tour_bus_democracy_banner",
+          "dialogue": {"speaker": "bradley", "text": "'Democratic Since 2013'?"}
+        },
+        {
+          "phase": "orla_greeting",
+          "dialogue": {
+            "speaker": "orla_brennan_tour_leader_01",
+            "text": "Welcome! Are you here for the orientation?"
+          }
+        }
+      ],
+      "post_event_effects": [
+        {"effect": "set_flag", "flag": "discovered_tour_bus_community", "value": true},
+        {"effect": "unlock_dialogue", "npc": "orla_brennan_tour_leader_01"}
+      ]
+    },
+    
+    {
+      "event_id": "meet_sean_the_exit",
+      "trigger": {"type": "circles_completed", "value": 7},
+      "sequence": [
+        {
+          "phase": "desperation",
+          "dialogue": {"speaker": "lord_pilsner", "text": "Please. We've been circling for hours. Is there ANY way out?"}
+        },
+        {
+          "phase": "sean_reveals",
+          "dialogue": {
+            "speaker": "sean_murphy_exit_01",
+            "text": "Exit 6. North. Leads straight to the Cliffs."
+          }
+        },
+        {
+          "phase": "chadwick_outrage",
+          "dialogue": {"speaker": "chadwick", "text": "WHAT? You KNEW this whole time?!"}
+        },
+        {
+          "phase": "sean_confirms",
+          "dialogue": {
+            "speaker": "sean_murphy_exit_01",
+            "text": "Of course. I've known since '99."
+          }
+        },
+        {
+          "phase": "pilsner_question",
+          "dialogue": {"speaker": "lord_pilsner", "text": "Then why don't you LEAVE?!"}
+        },
+        {
+          "phase": "sean_pause",
+          "visual": "exit_6_approaching",
+          "description": "Long pause. Exit 6 approaches."
+        },
+        {
+          "phase": "sean_philosophy",
+          "dialogue": {
+            "speaker": "sean_murphy_exit_01",
+            "text": "Out there... anything could happen."
+          }
+        },
+        {
+          "phase": "sean_drives_past",
+          "visual": "sean_passes_exit_6_without_slowing",
+          "description": "Seán drives past Exit 6 without changing speed."
+        },
+        {
+          "phase": "sean_conclusion",
+          "dialogue": {
+            "speaker": "sean_murphy_exit_01",
+            "text": "In here, I know what comes next. Another circle. Then another."
+          }
+        },
+        {
+          "phase": "bradley_horror",
+          "dialogue": {"speaker": "bradley", "text": "That's... the most horrifying thing I've ever heard."}
+        },
+        {
+          "phase": "sean_final",
+          "dialogue": {
+            "speaker": "sean_murphy_exit_01",
+            "text": "Is it though? Think about it tonight. When you're trying to sleep."
+          }
+        }
+      ],
+      "post_event_effects": [
+        {"effect": "set_flag", "flag": "met_sean", "value": true},
+        {"effect": "apply_status", "status": "existentially_terrified", "duration_minutes": 10},
+        {"effect": "unlock_hint", "hint": "slowing_down_might_help"}
+      ]
+    },
+    
+    {
+      "event_id": "gps_breakdown",
+      "trigger": {"type": "circles_completed", "value": 10},
+      "sequence": [
+        {
+          "phase": "gps_strain",
+          "speaker": "gps",
+          "text": "Re... recalculating...",
+          "audio": "gps_voice_strained"
+        },
+        {
+          "phase": "gps_glitch",
+          "speaker": "gps",
+          "text": "Take the— take— ERROR— recalculating—",
+          "audio": "gps_voice_glitching"
+        },
+        {
+          "phase": "gps_sob",
+          "speaker": "gps",
+          "text": "*quiet sobbing sounds*",
+          "audio": "gps_crying"
+        },
+        {
+          "phase": "chadwick_observation",
+          "dialogue": {"speaker": "chadwick", "text": "...Is the GPS crying?"}
+        },
+        {
+          "phase": "bradley_sympathy",
+          "dialogue": {"speaker": "bradley", "text": "I think we broke it."}
+        }
+      ]
+    }
+  ],
+  
+  "path_a_events": {
+    "description": "Escape Attempts Path",
+    
+    "exit_attempts": [
+      {
+        "attempt_id": "gps_guided",
+        "description": "Following GPS instructions",
+        "result": "leads_back_to_merge_lane",
+        "dialogue_after": [
+          {"speaker": "lord_pilsner", "text": "We're back where we started!"},
+          {"speaker": "gps", "text": "Recalculating."}
+        ]
+      },
+      {
+        "attempt_id": "follow_sean",
+        "description": "Following The Local",
+        "result": "sean_never_actually_exits",
+        "dialogue_after": [
+          {"speaker": "chadwick", "text": "He drove right past it!"},
+          {"speaker": "bradley", "text": "On purpose. He drove past it on purpose."}
+        ]
+      },
+      {
+        "attempt_id": "aggressive_merge",
+        "description": "Aggressive merge to inner lane",
+        "result": "leads_back_to_paddys",
+        "dialogue_after": [
+          {"speaker": "lord_pilsner", "text": "Wait... is that Paddy's?"},
+          {"speaker": "chadwick", "text": "We drove in a circle. A massive, hour-long circle."}
+        ]
+      },
+      {
+        "attempt_id": "random_guess",
+        "description": "Taking random exit",
+        "result": "different_bigger_roundabout",
+        "dialogue_after": [
+          {"speaker": "bradley", "text": "Is this... a different roundabout?"},
+          {"speaker": "lord_pilsner", "text": "It's BIGGER."},
+          {"speaker": "chadwick", "text": "How is it bigger?!"}
+        ]
+      }
+    ],
+    
+    "solution_discovery": {
+      "event_id": "discover_slow_down",
+      "triggers": [
+        {"type": "accidental_slowdown", "description": "Bros slow down due to food truck, traffic, or accident"},
+        {"type": "npc_hint", "source": "orla_or_patrick", "text": "Did ye try... slowing down?"},
+        {"type": "bradley_epiphany", "condition": "circles_completed >= 8"}
+      ],
+      
+      "sequence": [
+        {
+          "phase": "realization",
+          "dialogue": {"speaker": "bradley", "text": "Wait... we're moving slower and... I can actually read the signs."}
+        },
+        {
+          "phase": "exit_clear",
+          "visual": "exit_sign_clearly_readable",
+          "dialogue": {"speaker": "lord_pilsner", "text": "That's Exit 6. North. The Cliffs."}
+        },
+        {
+          "phase": "take_exit",
+          "visual": "car_taking_exit_successfully",
+          "dialogue": {"speaker": "chadwick", "text": "We're actually going somewhere!"}
+        }
+      ]
+    },
+    
+    "successful_exit": {
+      "event_id": "escape_cloverleaf",
+      "sequence": [
+        {
+          "phase": "leaving",
+          "visual": "roundabout_shrinking_in_rearview"
+        },
+        {
+          "phase": "disbelief",
+          "dialogue": {"speaker": "bradley", "text": "Did we just... leave?"}
+        },
+        {
+          "phase": "confirmation",
+          "dialogue": {"speaker": "lord_pilsner", "text": "I think we did. I think we actually did."}
+        },
+        {
+          "phase": "silence",
+          "description": "Beat of silence"
+        },
+        {
+          "phase": "chadwick_question",
+          "dialogue": {"speaker": "chadwick", "text": "...Should we go back for the others?"}
+        },
+        {
+          "phase": "pilsner_response",
+          "dialogue": {"speaker": "lord_pilsner", "text": "They've made their choices."}
+        },
+        {
+          "phase": "bradley_ominous",
+          "dialogue": {"speaker": "bradley", "text": "The roundabout provides."}
+        },
+        {
+          "phase": "pilsner_warning",
+          "dialogue": {"speaker": "lord_pilsner", "text": "Don't. Don't say that. Don't become one of them."}
+        }
+      ],
+      "rewards": [
+        {"type": "achievement", "id": "road_warrior"},
+        {"type": "flag", "flag": "escaped_cloverleaf", "value": true},
+        {"type": "unlock", "content": "rest_of_publandia"}
+      ]
+    }
+  },
+  
+  "path_b_events": {
+    "description": "Adaptation Path - 3+ in-game days",
+    
+    "day_1": {
+      "phase": "denial",
+      "events": [
+        "aggressive_exit_attempts",
+        "growing_exhaustion",
+        "food_truck_discovery"
+      ],
+      "dialogue_samples": [
+        {"speaker": "lord_pilsner", "text": "We just need to try HARDER."},
+        {"speaker": "bradley", "text": "Maybe if we floor it—"},
+        {"speaker": "chadwick", "text": "I'm hungry. Is that a food truck?"}
+      ]
+    },
+    
+    "day_2": {
+      "phase": "acceptance_begins",
+      "events": [
+        "meet_all_residents",
+        "learn_food_truck_schedule",
+        "assigned_temporary_lane"
+      ],
+      "special_event": {
+        "event_id": "lord_pilsner_age_slip",
+        "trigger": "tour_bus_interaction",
+        "sequence": [
+          {
+            "dialogue": {"speaker": "tour_bus_passenger", "text": "How old are you, son? You look stressed."}
+          },
+          {
+            "dialogue": {"speaker": "lord_pilsner", "text": "What? I'm not stressed. I'm thirty-ni— ...twenty-nine. I'm twenty-nine."}
+          },
+          {
+            "dialogue": {"speaker": "chadwick", "text": "You were thirty-nine like three months ago at your birthd—"}
+          },
+          {
+            "dialogue": {"speaker": "lord_pilsner", "text": "I'M TWENTY-NINE, CHADWICK."}
+          },
+          {
+            "dialogue": {"speaker": "bradley", "text": "The math doesn't—"}
+          },
+          {
+            "dialogue": {"speaker": "lord_pilsner", "text": "THE MATH IS FINE."}
+          }
+        ]
+      }
+    },
+    
+    "day_3": {
+      "phase": "full_adaptation",
+      "events": [
+        "lord_pilsner_becomes_lane_captain",
+        "chadwick_starts_documentary",
+        "bradley_finds_meaning_and_girlfriend"
+      ],
+      
+      "bradley_existential_monologue": {
+        "event_id": "bradley_roundabout_philosophy",
+        "sequence": [
+          {
+            "dialogue": {
+              "speaker": "bradley",
+              "text": "You know, the roundabout is actually a perfect metaphor for life. We're all just circling, looking for our exit, but we don't know which one to take. And the GPS of society keeps recalculating, but it never really knows either. We're all just... circling. Forever. Until we're not."
+            }
+          },
+          {
+            "dialogue": {"speaker": "lord_pilsner", "text": "Brad, you good?"}
+          },
+          {
+            "dialogue": {"speaker": "bradley", "text": "I think the roundabout is changing me."}
+          },
+          {
+            "dialogue": {"speaker": "chadwick", "text": "Should I film this breakdown?"}
+          },
+          {
+            "dialogue": {"speaker": "bradley", "text": "Yes. This is content."}
+          }
+        ]
+      },
+      
+      "bradley_girlfriend": {
+        "event_id": "bradley_meets_roundabout_girlfriend",
+        "description": "Bradley meets a woman on the tour bus who shares his philosophical outlook",
+        "unlocks": "bradley_girlfriend_epilogue_appearance"
+      },
+      
+      "consideration_of_staying": {
+        "event_id": "bros_consider_permanent_residence",
+        "dialogue": [
+          {"speaker": "lord_pilsner", "text": "You know... it's not so bad here."},
+          {"speaker": "chadwick", "text": "The content potential is unlimited."},
+          {"speaker": "bradley", "text": "And there's no pressure. No expectations. Just... the circle."},
+          {"speaker": "lord_pilsner", "text": "Should we... stay?"}
+        ]
+      }
+    },
+    
+    "path_b_exit": {
+      "description": "Even on Path B, bros eventually leave, but with deeper understanding",
+      "rewards": [
+        {"type": "achievement", "id": "roundabout_veteran"},
+        {"type": "flag", "flag": "path_b_completed", "value": true},
+        {"type": "status", "status": "roundabout_native", "permanent": true},
+        {"type": "unlock", "content": "bradley_girlfriend_epilogue"}
+      ]
+    }
+  },
+  
+  "post_credits_scene": {
+    "event_id": "cloverleaf_documentary",
+    "unlock_condition": "escaped_cloverleaf",
+    "duration_seconds": 120,
+    
+    "sequence": [
+      {
+        "phase": "title_card",
+        "text": "CLOVERLEAF: A Documentary",
+        "visual": "documentary_style_title"
+      },
+      {
+        "phase": "narrator_intro",
+        "speaker": "documentary_narrator",
+        "text": "The Cloverleaf: once a traffic nightmare, now Publandia's most philosophical tourist destination."
+      },
+      {
+        "phase": "tourist_attraction",
+        "visual": "roundabout_now_famous",
+        "description": "Gift shop now open, tour buses arriving intentionally"
+      },
+      {
+        "phase": "patrick_interview",
+        "speaker": "patrick_osullivan_01",
+        "dialogue": [
+          "People come from all over now. To circle. To think. To find what they're looking for.",
+          "*beat*",
+          "Most of them are looking for the exit.",
+          "*he laughs*",
+          "Margaret and I? We found what we were looking for years ago."
+        ]
+      },
+      {
+        "phase": "margaret_shot",
+        "visual": "margaret_still_resting",
+        "description": "Margaret, still 'resting' in the passenger seat"
+      },
+      {
+        "phase": "new_couple",
+        "visual": "just_married_2024_van_entering",
+        "description": "A new van enters - 'JUST MARRIED 2024' in shoe polish"
+      },
+      {
+        "phase": "new_couple_waves",
+        "description": "The couple inside waves nervously. Patrick waves back, knowingly."
+      },
+      {
+        "phase": "patrick_final",
+        "speaker": "patrick_osullivan_01",
+        "text": "First time? ...That's what they all say.",
+        "voice": "warm_knowing"
+      },
+      {
+        "phase": "smash_cut_black",
+        "visual": "black_screen"
+      }
+    ]
+  }
+}

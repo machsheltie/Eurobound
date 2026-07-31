@@ -1,0 +1,312 @@
+{
+  "location_id": "shamsterdam_voetgangerstunnel_01",
+  
+  "sprite_sheets": {
+    "tunnel_tileset": {
+      "file": "voetgangerstunnel_tileset.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "tile_size": 32,
+      "categories": {
+        "walls": {
+          "start_row": 0,
+          "tiles": [
+            {"id": "white_tile_clean", "col": 0},
+            {"id": "white_tile_worn", "col": 1},
+            {"id": "white_tile_grout", "col": 2},
+            {"id": "stripe_blue", "col": 3},
+            {"id": "stripe_orange", "col": 4},
+            {"id": "stripe_yellow", "col": 5},
+            {"id": "wall_corner", "col": 6},
+            {"id": "wall_intersection", "col": 7}
+          ]
+        },
+        "floor": {
+          "start_row": 1,
+          "tiles": [
+            {"id": "terrazzo_base", "col": 0},
+            {"id": "terrazzo_worn_path", "col": 1},
+            {"id": "tile_line_blue", "col": 2},
+            {"id": "tile_line_orange", "col": 3},
+            {"id": "tile_line_yellow", "col": 4},
+            {"id": "floor_grate", "col": 5},
+            {"id": "stairs_down", "col": 6},
+            {"id": "stairs_up", "col": 7}
+          ]
+        },
+        "ceiling": {
+          "start_row": 2,
+          "tiles": [
+            {"id": "fluorescent_fixture", "col": 0, "width": 2},
+            {"id": "fluorescent_flickering", "col": 2, "width": 2, "animated": true},
+            {"id": "exposed_pipes", "col": 4},
+            {"id": "speaker_grille", "col": 5},
+            {"id": "ventilation_duct", "col": 6},
+            {"id": "emergency_light", "col": 7}
+          ]
+        },
+        "signage": {
+          "start_row": 3,
+          "tiles": [
+            {"id": "sign_centraal_station", "col": 0, "width": 2},
+            {"id": "sign_museum_plein", "col": 2, "width": 2},
+            {"id": "sign_centrum", "col": 4},
+            {"id": "sign_emergency_exit", "col": 5},
+            {"id": "arrow_left", "col": 6},
+            {"id": "arrow_right", "col": 7}
+          ]
+        },
+        "interactive": {
+          "start_row": 4,
+          "tiles": [
+            {"id": "wall_map_frame", "col": 0, "width": 2, "height": 2},
+            {"id": "you_are_here_dot", "col": 2},
+            {"id": "kiosk_window", "col": 3, "width": 2},
+            {"id": "security_booth", "col": 5, "width": 2},
+            {"id": "tip_jar", "col": 7}
+          ]
+        },
+        "graffiti": {
+          "start_row": 6,
+          "tiles": [
+            {"id": "graffiti_station_arrow", "col": 0, "width": 2},
+            {"id": "graffiti_dont_follow_henk", "col": 2, "width": 3},
+            {"id": "graffiti_exit_7_lol", "col": 5, "width": 2},
+            {"id": "graffiti_willem_knows", "col": 7}
+          ],
+          "visibility": "requires_flashlight"
+        },
+        "vintage_ads": {
+          "start_row": 7,
+          "tiles": [
+            {"id": "ad_guilder_exchange", "col": 0, "width": 2},
+            {"id": "ad_nokia_phone", "col": 2, "width": 2},
+            {"id": "ad_travel_publandia", "col": 4, "width": 2},
+            {"id": "ad_film_development", "col": 6, "width": 2}
+          ]
+        }
+      }
+    },
+    
+    "npc_henk": {
+      "file": "npc_henk_security.png",
+      "dimensions": {"width": 192, "height": 256},
+      "sprite_size": {"width": 48, "height": 64},
+      "character_notes": "Bored security guard, uniform too tight, empty coffee cup, unfinished crossword",
+      "animations": {
+        "sitting_bored": {"row": 0, "frames": 2, "fps": 0.25},
+        "standing_slowly": {"row": 1, "frames": 4, "fps": 0.5},
+        "pointing_confidently": {"row": 2, "frames": 3, "fps": 1},
+        "shrugging": {"row": 3, "frames": 2, "fps": 1}
+      }
+    },
+    
+    "npc_marloes": {
+      "file": "npc_marloes_mapvendor.png",
+      "dimensions": {"width": 192, "height": 192},
+      "sprite_size": {"width": 48, "height": 64},
+      "character_notes": "Middle-aged woman in kiosk, reading glasses, surrounded by maps, knows you're lost",
+      "animations": {
+        "idle_in_kiosk": {"row": 0, "frames": 2, "fps": 0.5},
+        "handing_item": {"row": 1, "frames": 3, "fps": 2},
+        "disappointed_sigh": {"row": 2, "frames": 2, "fps": 0.5}
+      }
+    },
+    
+    "npc_willem": {
+      "file": "npc_willem_busker.png",
+      "dimensions": {"width": 192, "height": 256},
+      "sprite_size": {"width": 48, "height": 64},
+      "character_notes": "Ancient accordion, worn clothing from indeterminate decade, may be a ghost, hat with exactly €2.47",
+      "animations": {
+        "playing_accordion": {"row": 0, "frames": 4, "fps": 2},
+        "looking_up_mysterious": {"row": 1, "frames": 2, "fps": 0.5},
+        "pauses_playing": {"row": 2, "frames": 2, "fps": 0.5},
+        "disappear_reappear": {"row": 3, "frames": 3, "fps": 0.3}
+      },
+      "special_effects": {
+        "ghost_flicker": {"type": "transparency_pulse", "trigger": "third_tip"}
+      }
+    },
+    
+    "npc_lost_tourist": {
+      "file": "npc_lost_tourist_variants.png",
+      "dimensions": {"width": 288, "height": 192},
+      "sprite_size": {"width": 48, "height": 64},
+      "variants": {
+        "american": {"col": 0, "notes": "Baseball cap, cargo shorts, upside-down map"},
+        "british": {"col": 1, "notes": "Football jersey, pint glass somehow, confused"},
+        "australian": {"col": 2, "notes": "Thongs (flip-flops), tank top, sunburned"}
+      },
+      "animations": {
+        "wandering_confused": {"row": 0, "frames": 4, "fps": 1.5},
+        "staring_at_map": {"row": 1, "frames": 2, "fps": 0.5},
+        "relieved_at_help": {"row": 2, "frames": 2, "fps": 1}
+      }
+    },
+    
+    "npc_mevrouw_jansen": {
+      "file": "npc_mevrouw_jansen.png",
+      "dimensions": {"width": 144, "height": 128},
+      "sprite_size": {"width": 48, "height": 64},
+      "character_notes": "Elderly Dutch woman in window above Red Light District, watering can, permanent judgment expression",
+      "animations": {
+        "watering_plants": {"row": 0, "frames": 3, "fps": 1},
+        "looking_down_judging": {"row": 1, "frames": 2, "fps": 0.5}
+      }
+    },
+    
+    "effects_sheet": {
+      "file": "tunnel_effects.png",
+      "dimensions": {"width": 256, "height": 256},
+      "effects": {
+        "fluorescent_flicker": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 64, "height": 16},
+          "frames": 4,
+          "fps": 8,
+          "color": "#FFFACD"
+        },
+        "question_mark_debuff": {
+          "position": {"x": 0, "y": 16},
+          "size": {"width": 24, "height": 24},
+          "frames": 3,
+          "fps": 2,
+          "color": "#FFD700"
+        },
+        "correct_direction_chime": {
+          "position": {"x": 0, "y": 40},
+          "size": {"width": 32, "height": 32},
+          "frames": 4,
+          "fps": 4,
+          "color": "#00FF00"
+        },
+        "wrong_direction_pulse": {
+          "position": {"x": 32, "y": 40},
+          "size": {"width": 32, "height": 32},
+          "frames": 3,
+          "fps": 3,
+          "color": "#FF6600"
+        },
+        "ghost_flicker": {
+          "position": {"x": 0, "y": 72},
+          "size": {"width": 48, "height": 64},
+          "frames": 3,
+          "fps": 0.5,
+          "note": "Willem ghost effect"
+        },
+        "emergency_glow": {
+          "position": {"x": 64, "y": 0},
+          "size": {"width": 32, "height": 32},
+          "frames": 2,
+          "fps": 1,
+          "color": "#00FF00"
+        }
+      }
+    },
+    
+    "ui_elements": {
+      "file": "tunnel_ui.png",
+      "dimensions": {"width": 256, "height": 128},
+      "elements": {
+        "navigation_choice_prompt": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 200, "height": 40}
+        },
+        "direction_options": {
+          "position": {"x": 0, "y": 40},
+          "size": {"width": 150, "height": 30}
+        },
+        "time_underground_indicator": {
+          "position": {"x": 0, "y": 70},
+          "size": {"width": 100, "height": 20}
+        },
+        "wrong_turn_counter": {
+          "position": {"x": 0, "y": 90},
+          "size": {"width": 80, "height": 20}
+        }
+      }
+    },
+    
+    "exit_reveals": {
+      "file": "tunnel_exit_reveals.png",
+      "dimensions": {"width": 512, "height": 256},
+      "reveals": {
+        "red_light_emergence": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 256, "height": 128},
+          "notes": "Stairs emerging between two red-lit windows, embarrassing reveal"
+        },
+        "coffeeshop_emergence": {
+          "position": {"x": 256, "y": 0},
+          "size": {"width": 128, "height": 128},
+          "notes": "Storage room door bursting open, hazy atmosphere"
+        },
+        "canal_emergence": {
+          "position": {"x": 0, "y": 128},
+          "size": {"width": 128, "height": 128},
+          "notes": "Narrow walkway, no railing, bicycle zooming past"
+        },
+        "febo_emergence": {
+          "position": {"x": 128, "y": 128},
+          "size": {"width": 128, "height": 128},
+          "notes": "Behind automat heating unit, 3 AM vibes"
+        },
+        "correct_exit": {
+          "position": {"x": 256, "y": 128},
+          "size": {"width": 128, "height": 128},
+          "notes": "Daylight bleeding in, triumph"
+        }
+      }
+    }
+  },
+  
+  "lighting": {
+    "base_underground": {
+      "ambient": {"color": "#FFFACD", "intensity": 0.7},
+      "type": "harsh_fluorescent"
+    },
+    "zone_variations": {
+      "entrance_hall": {"intensity": 0.8, "note": "Brightest, surface proximity"},
+      "intersection_of_doubt": {"intensity": 0.7, "flicker": false},
+      "long_corridor": {"intensity": 0.6, "flicker": true, "flicker_rate": 0.1},
+      "wrong_turn_zone": {"intensity": 0.5, "flicker": true, "flicker_rate": 0.15},
+      "correct_exit": {"daylight_blend": true, "intensity": 0.9}
+    },
+    "emergency_strips": {
+      "color": "#00FF00",
+      "always_on": true,
+      "reliable": "navigation_secret"
+    }
+  },
+  
+  "perspective_effects": {
+    "long_corridor_endless": {
+      "type": "forced_perspective",
+      "effect": "corridor_appears_longer_than_actual",
+      "implementation": "scaling_tiles_toward_vanishing_point"
+    },
+    "intersection_confusion": {
+      "type": "multiple_angles",
+      "effect": "all_corridors_look_similar",
+      "implementation": "shared_tile_palette_no_landmarks"
+    }
+  },
+  
+  "mobile_optimization": {
+    "geometry": "simple_corridors",
+    "texture_atlases": 3,
+    "max_atlas_size": 1024,
+    "draw_calls_budget": 35,
+    "memory_budget_mb": 40,
+    "particle_budget": 30,
+    "target_fps": 60,
+    "audio_cues": {
+      "reduces_visual_complexity": true,
+      "directional_navigation": true
+    },
+    "zone_loading": {
+      "preload_adjacent": true,
+      "unload_distant": true
+    }
+  }
+}

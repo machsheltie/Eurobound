@@ -1,0 +1,344 @@
+{
+  "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+  "display_name": "The Astronomical Cock-Up",
+  "satirical_subtitle": "600 Years of Disappointment, 38 Seconds at a Time",
+  "city": "debaucheryville",
+  "location": "astronomical_cockup_square",
+  "quest_type": "sidequest",
+  "recommended_level": 1,
+  "estimated_duration_minutes": 25,
+  
+  "quest_giver": {
+    "type": "auto_trigger",
+    "trigger_location": "astronomical_cockup_square_clock_area",
+    "trigger_condition": "first_entry"
+  },
+  
+  "satirical_targets": [
+    "tourist_commodification_of_authentic_experiences",
+    "clock_tourism_anticlimax",
+    "emotional_manipulation_for_commerce",
+    "men_who_misunderstand_attraction",
+    "prague_orloj_disappointment"
+  ],
+  
+  "quest_stages": [
+    {
+      "stage_id": 1,
+      "name": "the_gathering",
+      "description": "Bros notice massive crowd looking up at clock",
+      "objectives": [
+        {"type": "observe", "target": "crowd_at_clock"}
+      ],
+      "dialogue_trigger": "crowd_observation_dialogue"
+    },
+    {
+      "stage_id": 2,
+      "name": "scam_gauntlet",
+      "description": "Bros encounter series of scammers while waiting",
+      "objectives": [
+        {"type": "interact", "target": "viewing_spot_scammer", "optional": false},
+        {"type": "interact", "target": "party_monk", "optional": false},
+        {"type": "interact", "target": "clock_wine_vendor", "optional": false}
+      ],
+      "total_money_spent": 170,
+      "currency": "euro"
+    },
+    {
+      "stage_id": 3,
+      "name": "the_show",
+      "description": "The 38-second clock show",
+      "objectives": [
+        {"type": "watch", "target": "clock_animation", "duration_seconds": 38}
+      ],
+      "cutscene": "clock_show_cutscene"
+    },
+    {
+      "stage_id": 4,
+      "name": "emotional_response",
+      "description": "Bros have profound spiritual awakening over mechanical bird",
+      "objectives": [
+        {"type": "dialogue", "target": "bros_crying_dialogue"}
+      ],
+      "triggers_path_choice": true
+    },
+    {
+      "stage_id": 5,
+      "name": "path_choice",
+      "description": "Choose how to commemorate the experience",
+      "type": "binary_choice",
+      "options": [
+        {"id": "path_a", "name": "Full Clock Experience", "leads_to": "stage_6a"},
+        {"id": "path_b", "name": "Secret Show Seekers", "leads_to": "stage_6b"}
+      ]
+    },
+    {
+      "stage_id": "6a",
+      "name": "full_clock_experience",
+      "path": "a",
+      "description": "Bros maximize the moment with purchases and tattoo",
+      "objectives": [
+        {"type": "purchase", "target": "commemorative_plates", "cost": 135},
+        {"type": "purchase", "target": "survivor_tshirts", "cost": 90},
+        {"type": "purchase", "target": "clock_wine_bulk", "cost": 180},
+        {"type": "purchase", "target": "temporary_tattoos", "cost": 45},
+        {"type": "visit", "target": "euro_ink_4_less"}
+      ],
+      "leads_to": "stage_7a"
+    },
+    {
+      "stage_id": "7a",
+      "name": "the_tattoo",
+      "path": "a",
+      "description": "Lord Pilsner gets his 'death skeleton' tattoo",
+      "objectives": [
+        {"type": "cutscene", "target": "tattoo_shop_scene"},
+        {"type": "choice", "target": "tattoo_placement", "locked_choice": "lower_back"}
+      ],
+      "outcomes": [
+        {
+          "event": "tattoo_complete",
+          "description": "It's clearly a duck holding a scythe",
+          "pilsner_reaction": "It's PERFECT. I can feel the history already.",
+          "chadwick_reaction": "Bro, that looks like a duck.",
+          "pilsner_defense": "It's artistic interpretation. Europeans do things different.",
+          "permanent_change_triggered": "lord_pilsner_duck_tattoo"
+        }
+      ]
+    },
+    {
+      "stage_id": "6b",
+      "name": "secret_show_seekers",
+      "path": "b",
+      "description": "Bros wait for secret midnight show that doesn't exist",
+      "objectives": [
+        {"type": "wait", "target": "midnight", "game_hours": 6},
+        {"type": "observe", "target": "nothing_happens"},
+        {"type": "dialogue", "target": "not_spiritually_ready"},
+        {"type": "wait", "target": "3am", "game_hours": 3},
+        {"type": "observe", "target": "still_nothing"}
+      ],
+      "parallel_objectives": [
+        {"type": "purchase", "target": "scam_items_while_waiting"},
+        {"type": "visit", "target": "euro_ink_4_less"}
+      ],
+      "permanent_status": "secret_show_sucker"
+    }
+  ],
+  
+  "npcs": [
+    {
+      "npc_id": "viewing_spot_scammer",
+      "display_name": "Viewing Spot Scammer",
+      "appearance": "Sketchy guy with too-friendly smile",
+      "scam_type": "prime_viewing_spots",
+      "cost": 30,
+      "result": "Leads bros behind a pillar with blocked view",
+      "bros_interpretation": "This is where the REAL viewers stand"
+    },
+    {
+      "npc_id": "party_monk",
+      "display_name": "The 'Monk'",
+      "appearance": "Guy in obvious hotel bathrobe",
+      "scam_type": "fake_blessing",
+      "cost": 60,
+      "blessing_text": "Lorem ipsum spiritu sanctu... party hardy... amen.",
+      "bradley_interpretation": "That's Latin for 'good vibes.' I recognize it."
+    },
+    {
+      "npc_id": "clock_wine_vendor",
+      "display_name": "Clock Wine Vendor",
+      "appearance": "Vendor with suspicious bottles",
+      "scam_type": "temporal_energy_wine",
+      "cost_per_bottle": 60,
+      "actual_product": "Boxed wine poured into fancy bottles",
+      "sales_pitch": "The clock energy, it makes you... magnetic."
+    },
+    {
+      "npc_id": "euro_ink_tattoo_artist",
+      "display_name": "Tattoo Artist",
+      "shop_name": "EURO INK 4 LESS",
+      "appearance": "Heavy accent, questionable credentials",
+      "specialty": "The Lord Pilsner Special (any duck-related design)",
+      "cost": 75,
+      "skill_level": "duck_instead_of_skeleton",
+      "recurring": true,
+      "appears_in_other_cities": true
+    },
+    {
+      "npc_id": "mysterious_local_secret_show",
+      "display_name": "Mysterious Local",
+      "path": "b_only",
+      "scam_type": "fake_secret_show",
+      "claims": ["Secret show at midnight", "Actually 3 AM", "You weren't spiritually ready"]
+    }
+  ],
+  
+  "items_acquired": {
+    "path_a": [
+      {
+        "item_id": "clock_commemorative_plate",
+        "display_name": "Clock Commemorative Plate",
+        "cost": 45,
+        "quantity": 3,
+        "stats": {"throwable_damage": 1, "durability": 1},
+        "description": "Can be thrown for 1 damage, breaks immediately",
+        "flavor_text": "600 Years of History (Made Overseas)"
+      },
+      {
+        "item_id": "survived_cockup_tshirt",
+        "display_name": "I Survived The Cock-Up T-Shirt",
+        "cost": 30,
+        "quantity": 3,
+        "stats": {"bravado": 1, "charm": -2},
+        "effect": "Locals visibly cringe",
+        "equip_slot": "torso"
+      },
+      {
+        "item_id": "clock_energy_wine",
+        "display_name": "Clock Energy Wine",
+        "cost": 60,
+        "quantity": 6,
+        "consumable": true,
+        "effect": "Applies 'Blessed Drunk' status (identical to regular Drunk)",
+        "flavor_text": "Temporal energy not actually included"
+      },
+      {
+        "item_id": "temporary_clock_tattoo",
+        "display_name": "Temporary Clock Tattoo",
+        "cost": 15,
+        "quantity": 3,
+        "duration": "until_shower",
+        "description": "Preview of Lord Pilsner's permanent mistake"
+      }
+    ],
+    "path_b": [
+      "All items from path_a (purchased while waiting)",
+      {
+        "item_id": "nocturnal_wisdom_buff",
+        "display_name": "Nocturnal Wisdom",
+        "type": "permanent_buff",
+        "effect": "Bros believe any event at night is more 'authentic'"
+      }
+    ],
+    "both_paths": [
+      {
+        "item_id": "duck_tattoo_permanent",
+        "display_name": "Authentic European Tattoo",
+        "type": "permanent_cosmetic",
+        "affected_character": "lord_pilsner",
+        "actual_appearance": "Duck holding scythe on lower back",
+        "pilsner_believes": "Death skeleton from ancient clock"
+      }
+    ]
+  },
+  
+  "rewards": {
+    "path_a": {
+      "titles": ["Cultured Traveler"],
+      "items": "all_path_a_items",
+      "permanent_changes": ["lord_pilsner_duck_tattoo"],
+      "achievements": ["cultured_traveler"]
+    },
+    "path_b": {
+      "titles": ["Cultured Traveler", "Secret Show Seeker"],
+      "items": "all_path_b_items",
+      "permanent_changes": ["lord_pilsner_duck_tattoo"],
+      "permanent_status": ["secret_show_sucker"],
+      "achievements": ["cultured_traveler", "secret_show_seeker"],
+      "future_effect": "Bros ALWAYS fall for 'secret show' scams"
+    }
+  },
+  
+  "quest_flags": {
+    "on_start": ["astronomical_cockup_started"],
+    "on_complete_a": ["astronomical_cockup_complete", "path_a_chosen", "duck_tattoo_acquired"],
+    "on_complete_b": ["astronomical_cockup_complete", "path_b_chosen", "duck_tattoo_acquired", "secret_show_sucker"],
+    "permanent_world_changes": [
+      "tattoo_artist_recognizes_pilsner",
+      "clock_vendors_recognize_bros",
+      "tourist_gossip_about_3am_guys"
+    ]
+  },
+  
+  "post_credits_scene": {
+    "scene_id": "the_duck_reveal",
+    "unlock_condition": "path_a_complete",
+    "duration_minutes": 2,
+    "location": "twin_peaks_restaurant_hometown",
+    "timeline": "eight_months_after_trip",
+    "summary": "Lord Pilsner tries to impress waitress Amber with his tattoo. She confirms it's obviously a duck. He's been confusing her with Brittany for three years.",
+    "final_punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - €50 for any duck-related design."
+  },
+  
+  "npc_callbacks": {
+    "tattoo_artist": {
+      "appears_in": ["publandia", "sinfonia", "shamsterdam"],
+      "dialogue": "Ah! My favorite customer! You want matching duck for friend?"
+    },
+    "clock_vendors": {
+      "recognition_dialogue": "The crying Americans! Come, I have new clock items!"
+    },
+    "other_tourists": {
+      "path_b_only": "Are you the guys who waited until 3 AM? We heard about you."
+    }
+  },
+  
+  "easter_eggs": [
+    {
+      "id": "bored_skeleton",
+      "description": "Actual skeleton from clock visible briefly looking bored during show"
+    },
+    {
+      "id": "vendor_counting_money",
+      "description": "Vendor counting money has stack of commemorative plates"
+    },
+    {
+      "id": "monk_bathrobe_logo",
+      "description": "'Monk's' bathrobe has hotel logo visible on close inspection"
+    }
+  ],
+  
+  "localization_notes": {
+    "czech_dialogue": {
+      "local_watching_bros_cry": {
+        "czech": "Jakub, podívej. Ti Američané brečí.",
+        "english_subtitle": "Jakub, look. The Americans are crying."
+      },
+      "jakub_response": {
+        "czech": "Kvůli hodinám?",
+        "english_subtitle": "Over the clock?"
+      },
+      "local_about_tattoo": {
+        "czech": "Ten vysoký chce tetování.",
+        "english_subtitle": "The tall one wants a tattoo."
+      },
+      "jakub_final": {
+        "czech": "Američané.",
+        "english_subtitle": "Americans."
+      }
+    }
+  },
+  
+  "mobile_optimization": {
+    "clock_show_animation": {
+      "duration": 38,
+      "skip_option": false,
+      "must_watch_fully": true,
+      "comedy_timing": "silence_after_is_the_joke"
+    },
+    "dialogue_pacing": "standard",
+    "cutscene_length": "medium"
+  },
+  
+  "validation_checklist": {
+    "bros_never_self_aware": true,
+    "players_laugh_at_not_with": true,
+    "scams_obvious_to_players": true,
+    "bros_remain_confident": true,
+    "city_specific_satire": true,
+    "no_crypto_unless_satirizing": true,
+    "y2k_era_appropriate": true,
+    "mobile_optimized": true
+  }
+}

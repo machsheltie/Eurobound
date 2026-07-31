@@ -1,0 +1,291 @@
+{
+  "location_id": "debaucheryville_oldtown_astronomical_cockup_square_01",
+  "npcs": [
+    {
+      "npc_id": "viewing_spot_scammer_01",
+      "display_name": "Viewing Spot Scammer",
+      "npc_type": "scam_vendor",
+      "location_zone": "square_perimeter",
+      "behavior": "roaming",
+      "appearance": {
+        "clothing": "polo_shirt_khakis",
+        "accessories": ["fake_official_lanyard", "clipboard"],
+        "notable_features": "lanyard_says_OFFICIAL_GUIDE"
+      },
+      "personality": {
+        "traits": ["confident", "urgent", "technically_honest"],
+        "speech_pattern": "salesman_pitch"
+      },
+      "approach_trigger": {
+        "condition": "player_enters_square",
+        "delay_seconds": 5,
+        "retreat_after_rejections": 2
+      },
+      "dialogue": {
+        "greeting": "Americans! Best view in square! Only €10 each! Very limited!",
+        "pitch": "This spot? Very exclusive. The REAL viewers stand here.",
+        "post_sale": "You can see everything from here. Eventually.",
+        "return_visit": "The crying Americans! You want second viewing? Different pillar this time!"
+      },
+      "scam_details": {
+        "product": "prime_viewing_spot",
+        "actual_value": 0,
+        "price_per_person": 10,
+        "total_price": 30,
+        "reality": "Leads them behind a pillar with obstructed view"
+      },
+      "sprite_sheet": "viewing_spot_scammer.png"
+    },
+    {
+      "npc_id": "party_monk_01",
+      "display_name": "The Party Monk",
+      "npc_type": "scam_vendor",
+      "location_zone": "fountain_area",
+      "behavior": "stationary_with_approach",
+      "appearance": {
+        "clothing": "obvious_bathrobe",
+        "accessories": ["rope_belt", "sandals_with_socks", "cheap_incense_burner"],
+        "notable_features": "bathrobe_has_HOLIDAY_INN_EXPRESS_logo"
+      },
+      "personality": {
+        "traits": ["committed_to_bit", "never_breaks_character", "faux_spiritual"],
+        "speech_pattern": "fake_latin_gibberish"
+      },
+      "approach_trigger": {
+        "condition": "player_passes_fountain",
+        "delay_seconds": 3
+      },
+      "dialogue": {
+        "greeting": "My sons. You seek the clock's wisdom. For small donation, I bless your journey.",
+        "blessing": "Lorem ipsum spiritu sanctu... party hardy... in vino veritas... amen.",
+        "post_blessing": "Go in peace. And check out my cousin's wine cart.",
+        "return_visit": "You return for second blessing! Double blessing, double price. Very holy."
+      },
+      "scam_details": {
+        "product": "fake_blessing",
+        "actual_value": 0,
+        "price_per_person": 20,
+        "total_price": 60,
+        "reality": "Not a monk, bathrobe from hotel, blessing is lorem ipsum"
+      },
+      "easter_egg": {
+        "trigger": "examine_bathrobe_closely",
+        "reveal": "HOLIDAY INN EXPRESS logo visible on fabric"
+      },
+      "sprite_sheet": "party_monk.png"
+    },
+    {
+      "npc_id": "clock_wine_vendor_01",
+      "display_name": "Clock Wine Vendor",
+      "npc_type": "scam_vendor",
+      "location_zone": "wine_cart_position",
+      "behavior": "stationary_with_approach",
+      "appearance": {
+        "clothing": "waistcoat_bowtie",
+        "accessories": ["fake_sommelier_pin"],
+        "notable_features": "attempting_sommelier_energy"
+      },
+      "personality": {
+        "traits": ["uses_wine_terms_incorrectly", "claims_mystical_properties", "references_ladies"],
+        "speech_pattern": "fake_connoisseur"
+      },
+      "approach_trigger": {
+        "condition": "post_clock_vulnerability_active",
+        "delay_seconds": 30
+      },
+      "dialogue": {
+        "greeting": "You have been blessed! Now you drink the clock wine. Infused with temporal energy.",
+        "pitch": "Very popular with ladies at clubs. The clock energy, it makes you... magnetic.",
+        "vintage_question": "This vintage? 2019. Very good year. For boxes.",
+        "post_sale": "You feel the time flowing through you, yes? That is the clock.",
+        "return_visit": "The clock wine lovers return! I save special bottles for you!"
+      },
+      "scam_details": {
+        "product": "clock_energy_wine",
+        "actual_value": 3,
+        "price_per_bottle": 60,
+        "reality": "Boxed wine poured into fancy bottles"
+      },
+      "inventory": [
+        {
+          "item_id": "clock_energy_wine",
+          "price": 60,
+          "stock": 99,
+          "effect": "blessed_drunk_status"
+        }
+      ],
+      "cart_easter_egg": {
+        "trigger": "examine_behind_cart",
+        "reveal": "Boxed wine visible, being poured into fancy bottles"
+      },
+      "sprite_sheet": "clock_wine_vendor.png"
+    },
+    {
+      "npc_id": "merchandise_vendor_01",
+      "display_name": "Commemorative Merchandise Vendor",
+      "npc_type": "scam_vendor",
+      "location_zone": "merchandise_stall",
+      "behavior": "stationary",
+      "appearance": {
+        "clothing": "tourist_style_blending_in",
+        "accessories": ["fanny_pack_full_of_coins"],
+        "notable_features": "speaks_multiple_languages"
+      },
+      "personality": {
+        "traits": ["efficient", "reads_emotional_state", "no_nonsense_scammer"],
+        "speech_pattern": "direct_sales"
+      },
+      "approach_trigger": {
+        "condition": "post_clock_vulnerability_active",
+        "delay_seconds": 35
+      },
+      "dialogue": {
+        "greeting": "You cry at clock! Very moving. You need plate to remember.",
+        "shirt_pitch": "This shirt? Says 'I Survived.' Because you did. You survived.",
+        "tattoo_pitch": "Temporary tattoo for preview. Then REAL tattoo, down alley.",
+        "post_sale": "You remember this day forever now. Very emotional purchase.",
+        "return_visit": "The crying Americans! New merchandise just for you!"
+      },
+      "inventory": [
+        {
+          "item_id": "commemorative_plate",
+          "display_name": "Clock Commemorative Plate",
+          "price": 45,
+          "effect": "throwable_1_damage_breaks_immediately",
+          "description": "A plate with the clock on it. (This is obviously overpriced garbage.)"
+        },
+        {
+          "item_id": "i_survived_tshirt",
+          "display_name": "I Survived The Cock-Up T-Shirt",
+          "price": 30,
+          "effect": "+1 Bravado, -2 Charm",
+          "description": "A t-shirt that announces your presence. Locals visibly cringe."
+        },
+        {
+          "item_id": "temporary_clock_tattoo",
+          "display_name": "Temporary Clock Tattoo",
+          "price": 15,
+          "effect": "cosmetic_until_shower",
+          "description": "A preview of regret. Disappears when wet."
+        },
+        {
+          "item_id": "clock_snow_globe",
+          "display_name": "Clock Snow Globe",
+          "price": 25,
+          "effect": "plays_tiny_sad_chime",
+          "description": "Shake it and feel the disappointment all over again."
+        }
+      ],
+      "sprite_sheet": "merchandise_vendor.png"
+    },
+    {
+      "npc_id": "shady_wristband_guy_01",
+      "display_name": "Shady Wristband Guy",
+      "npc_type": "scam_vendor",
+      "location_zone": "roaming",
+      "behavior": "roaming_targeted",
+      "appearance": {
+        "clothing": "long_coat_with_interior_pockets",
+        "accessories": ["gold_chain"],
+        "notable_features": "coat_full_of_wristbands"
+      },
+      "personality": {
+        "traits": ["conspiratorial", "makes_buyers_feel_like_insiders", "never_oversells"],
+        "speech_pattern": "secretive_whisper"
+      },
+      "approach_trigger": {
+        "condition": "velvet_curtain_rejected",
+        "alternative_condition": "player_looks_desperate_for_vip",
+        "delay_seconds": 0
+      },
+      "dialogue": {
+        "greeting": "Psst. Americans, yes? You want... the VIP experience?",
+        "pitch": "These wristbands open ALL doors. Level Seven access. Highest tier.",
+        "reassurance": "The bouncers, they see this, they KNOW. No waiting. No cover. Pure VIP.",
+        "translation_lie": "It says 'Level Seven Access.' Highest tier. Only for VIPs.",
+        "post_sale": "You are now Level Seven. Use wisely.",
+        "return_visit": "The Level Seven Americans! You want upgrade to Level Eight? Very exclusive."
+      },
+      "scam_details": {
+        "product": "vip_all_access_wristband",
+        "actual_value": 0.50,
+        "price_per_wristband": 30,
+        "total_price": 90,
+        "reality": "Children's birthday party wristbands saying 'I'm 7!' in Czech"
+      },
+      "inventory": [
+        {
+          "item_id": "vip_all_access_wristband",
+          "display_name": "VIP All-Access Wristband",
+          "price": 30,
+          "quantity_sold": 3,
+          "actual_text": "Jsem 7! (I'm 7!)",
+          "effect": "unlocks_velvet_curtain_club_scene",
+          "description": "(Children's birthday party wristband - Text reads 'I'm 7!' in Czech)"
+        }
+      ],
+      "quest_connection": {
+        "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+        "role": "quest_giver",
+        "unlocks": "velvet_curtain_club_first_entry"
+      },
+      "sprite_sheet": "shady_wristband_guy.png"
+    },
+    {
+      "npc_id": "tattoo_barker_01",
+      "display_name": "Tattoo Shop Barker",
+      "npc_type": "service_npc",
+      "location_zone": "alley_entrance",
+      "behavior": "stationary_calls_out",
+      "appearance": {
+        "clothing": "leather_vest",
+        "accessories": ["heavy_tattoo_coverage"],
+        "notable_features": "intimidating_but_friendly"
+      },
+      "personality": {
+        "traits": ["encourages_bad_decisions", "validates_emotional_choices"],
+        "speech_pattern": "enthusiastic_sales"
+      },
+      "approach_trigger": {
+        "condition": "crying_triggered",
+        "delay_seconds": 60
+      },
+      "dialogue": {
+        "greeting": "You! Crying man! You need tattoo to remember this feeling!",
+        "pitch": "Skeleton from clock? Very popular. Very meaningful. Very fast.",
+        "reassurance": "We do walk-ins. No appointment. No regrets. Mostly no regrets.",
+        "directing": "Euro Ink 4 Less, just down alley. Tell them Viktor sent you.",
+        "return_visit": "Back for more ink? We have clock rooster now. Very popular."
+      },
+      "function": "funnels_to_euro_ink_4_less",
+      "connected_location": "debaucheryville_oldtown_euro_ink_01",
+      "sprite_sheet": "tattoo_barker.png"
+    }
+  ],
+  
+  "ambient_npcs": [
+    {
+      "npc_id": "local_observer_01",
+      "display_name": "Jakub",
+      "npc_type": "ambient",
+      "behavior": "stationary_smoking",
+      "dialogue": {
+        "to_friend_czech": "Podívej. Ti Američané brečí.",
+        "translation": "(Look. The Americans are crying.)",
+        "response_czech": "Kvůli hodinám?",
+        "response_translation": "(Over the clock?)",
+        "conclusion_czech": "Američané.",
+        "conclusion_translation": "(Americans.)"
+      }
+    },
+    {
+      "npc_id": "disappointed_tourist_01",
+      "display_name": "Disappointed Tourist",
+      "npc_type": "ambient",
+      "behavior": "post_show_reaction",
+      "dialogue": {
+        "reaction": "...that's it?"
+      }
+    }
+  ]
+}

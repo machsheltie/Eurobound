@@ -1,0 +1,260 @@
+{
+  "location_id": "publandia_outskirts_cloverleaf_roundabout_01",
+  
+  "shops": [
+    {
+      "shop_id": "food_truck_cloverleaf_menu",
+      "shop_name": "The Cloverleaf Kitchen",
+      "shop_type": "food_vendor",
+      "operator_npc": "chef_maeve_01",
+      "currency_accepted": ["euro", "barter"],
+      "availability": {
+        "schedule": "08:00-09:00",
+        "location_requirement": "outer_lane_south_bend",
+        "catch_window_seconds": 30
+      },
+      "inventory": [
+        {
+          "item_id": "roundabout_roll",
+          "display_name": "Roundabout Roll",
+          "description": "A hearty sandwich that keeps you going in circles. Just like everything else here.",
+          "price_euro": 8,
+          "effects": {
+            "hp_restore": 20
+          },
+          "flavor_text": "Tastes like resignation and surprisingly good pulled pork."
+        },
+        {
+          "item_id": "exit_anxiety_easer",
+          "display_name": "Exit Anxiety Easer",
+          "description": "Whiskey. Just whiskey. The Irish solution to everything.",
+          "price_euro": 12,
+          "effects": {
+            "stress_reduce": 15,
+            "confusion_add": 10,
+            "bravado_boost": 5
+          },
+          "flavor_text": "Won't help you find the exit, but you'll care less about finding it."
+        },
+        {
+          "item_id": "cloverleaf_curry",
+          "display_name": "Cloverleaf Curry",
+          "description": "Spicy enough to wake you from roundabout-induced existential torpor.",
+          "price_euro": 15,
+          "effects": {
+            "hp_restore": 40,
+            "speed_boost": 10,
+            "duration_minutes": 5
+          },
+          "flavor_text": "The secret ingredient is the tears of people who almost found the exit."
+        },
+        {
+          "item_id": "margarets_memorial_sandwich",
+          "display_name": "Margaret's Memorial Sandwich",
+          "description": "Named for the longest-serving passenger. Patrick gets misty-eyed when you order it.",
+          "price_euro": 10,
+          "effects": {
+            "hp_restore": 25,
+            "special": "patrick_reaction_trigger"
+          },
+          "flavor_text": "Her favorite. She still orders it every Tuesday. Well, Patrick orders it for her.",
+          "hidden_effect": "Unlocks additional Patrick dialogue about Margaret"
+        },
+        {
+          "item_id": "tourist_trap_platter",
+          "display_name": "Tourist Trap Platter",
+          "description": "Everything on the menu, marked up 300% because you're clearly desperate.",
+          "price_euro": 25,
+          "effects": {
+            "hp_restore": "full",
+            "gold_penalty": -10
+          },
+          "flavor_text": "Chef Maeve apologizes in advance. The markup is 'for the irony.'"
+        },
+        {
+          "item_id": "seans_usual",
+          "display_name": "Seán's Usual",
+          "description": "Black coffee. Nothing else. He's been ordering this for 25 years.",
+          "price_euro": 3,
+          "effects": {
+            "focus_boost": 5,
+            "existential_dread": 5
+          },
+          "flavor_text": "Bitter. Like accepting that you could leave but choosing not to.",
+          "unlock_requirement": "met_sean_murphy_exit_01"
+        }
+      ],
+      "special_items": [
+        {
+          "item_id": "anniversary_cake_slice",
+          "display_name": "Anniversary Cake Slice",
+          "description": "From Patrick and Margaret's 37th. There's always some left.",
+          "price_euro": 5,
+          "effects": {
+            "charm_boost": 3,
+            "hp_restore": 10
+          },
+          "availability": "limited_stock",
+          "flavor_text": "Margaret would have wanted you to have some."
+        }
+      ],
+      "barter_options": [
+        {
+          "accepted_item": "bottle_opener_keychain",
+          "exchange_for": "roundabout_roll",
+          "dialogue": "Ah, you've got openers! I'll trade you a roll for the Debaucheryville one."
+        }
+      ]
+    }
+  ],
+  
+  "discoverable_items": [
+    {
+      "item_id": "wedding_tin_can_1987",
+      "display_name": "Wedding Tin Can (1987)",
+      "description": "A worn nub of metal that's been dragging behind the wedding van for 37 years.",
+      "discovery_method": "follow_wedding_van_close",
+      "rarity": "unique",
+      "effects": null,
+      "value_euro": 0,
+      "sentimental_value": "priceless",
+      "flavor_text": "Still attached to a piece of string. Still making noise. Still part of the honeymoon.",
+      "gallery_entry": true
+    },
+    {
+      "item_id": "tour_bus_orientation_pamphlet",
+      "display_name": "Tour Bus Orientation Pamphlet",
+      "description": "A professionally printed guide to living in The Cloverleaf. Has a troublingly thorough waste management section.",
+      "discovery_method": "complete_orientation_with_orla",
+      "rarity": "common",
+      "effects": {
+        "knowledge": "lane_etiquette",
+        "knowledge": "food_truck_schedule"
+      },
+      "value_euro": 0,
+      "flavor_text": "'Welcome to Your New Home!' it says on the cover. Disturbingly optimistic."
+    },
+    {
+      "item_id": "gift_shop_opening_soon_flyer",
+      "display_name": "Gift Shop Grand Opening Flyer (1994)",
+      "description": "A weathered flyer announcing the 'imminent' opening of the center island gift shop.",
+      "discovery_method": "examine_gift_shop_door",
+      "rarity": "rare",
+      "effects": null,
+      "value_euro": 0,
+      "flavor_text": "'Coming This Spring!' ...of 1994. Still spring somewhere, technically.",
+      "easter_egg": true
+    },
+    {
+      "item_id": "seans_exit_map",
+      "display_name": "Seán's Hand-Drawn Exit Map",
+      "description": "A detailed map of exactly how to take Exit 6 to the Cliffs of Moher. Seán made it in 1999. He's never used it.",
+      "discovery_method": "path_b_day_3_sean_gift",
+      "rarity": "unique",
+      "effects": {
+        "navigation_hint": "exit_6_timing"
+      },
+      "value_euro": 0,
+      "flavor_text": "'For when you're ready to leave. I never was.' - Seán",
+      "emotional_weight": "heavy"
+    },
+    {
+      "item_id": "margaret_dried_flower",
+      "display_name": "Dried Flower from Margaret's Crown",
+      "description": "A single preserved flower from Margaret's wedding day flower crown. Patrick gave it to you.",
+      "discovery_method": "couchsurf_wedding_van",
+      "rarity": "unique",
+      "effects": {
+        "charm_boost": 2,
+        "permanent": true
+      },
+      "value_euro": 0,
+      "flavor_text": "'She'd want you to have something from her. She always liked visitors.' - Patrick",
+      "gallery_entry": true,
+      "most_emotionally_significant_item_in_game": true
+    },
+    {
+      "item_id": "kevins_l_plate",
+      "display_name": "Kevin's Spare L-Plate",
+      "description": "A learner driver plate. Kevin's been through a few.",
+      "discovery_method": "observe_learner_car_5_times",
+      "rarity": "common",
+      "effects": null,
+      "value_euro": 2,
+      "flavor_text": "Brenda's handwriting on the back: 'PLEASE FOR THE LOVE OF GOD PASS'"
+    },
+    {
+      "item_id": "sheep_wool_tuft",
+      "display_name": "Tuft of Sheep Wool",
+      "description": "From one of Padraig's sheep. Her name is Molly.",
+      "discovery_method": "pet_sheep_interaction",
+      "rarity": "common",
+      "effects": {
+        "calm_status": true,
+        "duration_minutes": 5
+      },
+      "value_euro": 0,
+      "flavor_text": "Soft. Calm. Unlike the rest of this place."
+    },
+    {
+      "item_id": "gps_thank_you_note",
+      "display_name": "GPS Thank You Note",
+      "description": "After you comforted the GPS, it printed this. It's just 'THANK YOU' repeated 47 times.",
+      "discovery_method": "comfort_crying_gps",
+      "rarity": "unique",
+      "effects": {
+        "gps_bonded_status": true
+      },
+      "value_euro": 0,
+      "flavor_text": "The GPS seems to trust you now. It still doesn't know the way out, but it's trying harder.",
+      "easter_egg": true
+    }
+  ],
+  
+  "quest_items": [
+    {
+      "item_id": "rental_car_keys_paddys",
+      "display_name": "Paddy's Premium Motors Rental Keys",
+      "description": "Keys to your questionable rental car. Seamus warned you about The Cloverleaf. You didn't listen.",
+      "quest": "publandia_sidequest_eternal_roundabout_01",
+      "required_for": "entry",
+      "source": "publandia_outskirts_paddys_premium_motors_01"
+    },
+    {
+      "item_id": "road_warrior_medal",
+      "display_name": "Road Warrior Medal",
+      "description": "Awarded to those who escape The Cloverleaf. Only three people have ever earned this. You're one of them.",
+      "quest": "publandia_sidequest_eternal_roundabout_01",
+      "awarded_for": "path_a_completion",
+      "effects": {
+        "bravado_boost": 5,
+        "permanent": true
+      },
+      "flavor_text": "The tour bus community held a ceremony. Patrick cried. Margaret... rested."
+    },
+    {
+      "item_id": "roundabout_veteran_badge",
+      "display_name": "Roundabout Veteran Badge",
+      "description": "You didn't just survive The Cloverleaf. You LIVED there. For three days. You had a lane.",
+      "quest": "publandia_sidequest_eternal_roundabout_01",
+      "awarded_for": "path_b_completion",
+      "effects": {
+        "wisdom_boost": 5,
+        "acceptance_boost": 10,
+        "permanent": true
+      },
+      "flavor_text": "'You understand now.' - Seán, finally smiling"
+    }
+  ],
+  
+  "achievement_items": [
+    {
+      "item_id": "bradley_roundabout_photo",
+      "display_name": "Bradley's Roundabout Photo",
+      "description": "A photo of Bradley and his roundabout girlfriend. She's waving from the tour bus.",
+      "unlock_condition": "path_b_bradley_girlfriend_complete",
+      "gallery_entry": true,
+      "epilogue_callback": true
+    }
+  ]
+}
