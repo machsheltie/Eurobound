@@ -62,6 +62,13 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
    Bradley keeps the CRABS line AND the "DEFINITELY foliage" line; "...Mine now?" is Pilsner's;
    Pilsner delivers the verdict "POISON IVY. Thank God. Boys, that's poison ivy." from inside
    the sleeping bag. Renata's neck-hug + kiss goes to Pilsner.
+   **Thong item (author-locked):** the leopard-print thong is a PERMANENT, EQUIPPABLE item —
+   `item_leopard_print_thong`, full `Templates/permanent_item_template.md` file at
+   `Design/Inventory/items/leopard_print_thong_item.md`. Granted automatically to Lord Pilsner
+   during the outbreak morning ("...Mine now?" IS the acquisition line). Cannot be sold, dropped,
+   or traded. Its original owner is NEVER established — not Renata's, not anyone's; the mystery
+   is permanent canon. This supersedes the earlier "props-only / no item ID" working rule; the
+   quest file's and Renata profile's binding notes update accordingly.
 3. **The exit (the reveal):** Renata rises from the other side of the sleeping bag, **stunningly
    dressed** — put-together, striking, morning-light glamorous while the bros are crusty wreckage —
    sunglasses on. She **pats each standing bro on the cheek exactly the way
