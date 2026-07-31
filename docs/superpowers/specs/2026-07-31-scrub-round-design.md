@@ -21,6 +21,17 @@ never self-aware / never scam-aware + steal corollary, templates as floors.
   food-heritage gags) are rewritten with in-world equivalents that preserve the joke's structure.
   Violations are defects. (Currency terms — €, koruna — are NOT in scope of this rule; their
   fate belongs to the forthcoming Economy System round.)
+  **PREMISE CLUSTER EXEMPTION (author-locked):** the ban covers PLACES, not peoples, languages,
+  or the continent frame. These are canon and no sweep may touch them: (1) "American"/"America"
+  as the bros' identity and the locals' punchline engine; (2) "Europe/European" as the game's
+  frame (the game is EuroBound); (3) real language names where language use is mechanical or
+  textural (order-in-German minigame, Czech-subtitled asides; "Bohemian" is the in-world term in
+  shipped Debaucheryville dialogue); (4) NPC heritage characterization (e.g. the döner vendors'
+  Turkish heritage) — heritage is dignity per the full-strength-satire rule and stays.
+  **Minted names (author-locked, use verbatim):** Publandia's river path "Liffey Walk" →
+  **"Quay of Last Resort"**. "Old Town Square" as a zone name in drafts consolidates to its
+  in-world successor **"Astronomical Cockup Square"**. Draft beer item "Blade Belgian" gets an
+  in-world rename (implementer-invented, flagged for author veto at review).
 - **Tier 2 — NON-SHIPPING design metadata** (parody-target headers like "(Prague Parody)",
   alias fields, voice/accent directions like "Czech-accented English", art references like
   "modeled on the Vienna State Opera", satire-angle analyses, QA checklists): real-world names

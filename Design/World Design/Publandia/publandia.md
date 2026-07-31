@@ -21,7 +21,7 @@ Industrial Beer Quarter
     • Side quest pickup points for yeast courier missions 
     • Foam physics sight gags throughout the district 
     • "Borrowed" keg delivery routes 
-Liffey Walk
+Quay of Last Resort
 Scenic River Promenade
     • Riverside path with hungover NPCs on benches 
     • Photo mini-quest opportunities along the walkway 

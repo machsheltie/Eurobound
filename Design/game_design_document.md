@@ -51,7 +51,7 @@ Main Areas
 • Cobblestone Market Street — Quest hub; buskers, food stalls, pretzel and pasty stands; rumor board.
 • The Craic Tax — Beer hub; rowdy “bar brawl” encounters; jukebox rhythm gag; cover charge discourse.
 • Brewery District — Side quests (yeast courier, “borrowed” kegs), brew tours; foam physics sight gag.
-• Liffey Walk — Scenic path with hungover NPCs; photo mini-quest; bridge busker rhythm check.
+• Quay of Last Resort — Scenic path with hungover NPCs; photo mini-quest; bridge busker rhythm check.
 
 Seedy Underbelly Hotspots
 • “The Back Room” — Unlicensed poker; rumor trades; suspicious “house rules.”
