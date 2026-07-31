@@ -49,7 +49,7 @@ Vibe: Beer halls, cobblestone alleys, pretzel stands*, tourists on a mission. (*
 
 Main Areas
 • Cobblestone Market Street — Quest hub; buskers, food stalls, pretzel and pasty stands; rumor board.
-• Temple Bar Alley — Beer hub; rowdy “bar brawl” encounters; jukebox rhythm gag; cover charge discourse.
+• The Craic Tax — Beer hub; rowdy “bar brawl” encounters; jukebox rhythm gag; cover charge discourse.
 • Brewery District — Side quests (yeast courier, “borrowed” kegs), brew tours; foam physics sight gag.
 • Liffey Walk — Scenic path with hungover NPCs; photo mini-quest; bridge busker rhythm check.
 
@@ -66,7 +66,7 @@ Rival Trio Encounter
 • “Pub Crawl Showdown” — Trio challenges you to a 3‑round gauntlet (darts, trivia, brawl). Reward: NFT #1 “Blarney Trap Receipt JPG.”
 
 City Boss — The Craic Baron
-• Theme: Temple‑Bar magnate who monetizes revelry.
+• Theme: Craic-Tax magnate who monetizes revelry.
 • Attacks: Surge Pricing (gold drain), Round on Me (party-wide stagger), Hen Party Swarm (adds minions), Sticky Floor (Speed down).
 • Reward: City Pass (discounts), unique trinket “Saint of Low Sodium Medal.”
 
