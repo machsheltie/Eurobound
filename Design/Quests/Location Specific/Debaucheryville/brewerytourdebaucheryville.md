@@ -118,7 +118,7 @@ Warning: may cause delusions of sophistication
 
 **Enhanced Bro Commentary:**
 - **Bros pretending to understand:** *"Oh yeah, we're totally into molecular gastronomy"*
-- **Bradley:** *"This is like that restaurant in Vegas, right? With the foam stuff?"*
+- **Bradley:** *"This is like that restaurant back home, right? With the foam stuff?"*
 - **Pilsner:** *"Gentlemen, we're witnessing the future of brewing!"*
 
 **Time-Based Enhancement:** Bros think being here at midnight makes them "in the know."

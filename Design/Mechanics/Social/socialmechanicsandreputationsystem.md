@@ -8,7 +8,7 @@ Regional Reputation Systems
 PUBLANDIA (Dublin Parody) - "The Drinking Ladder"
 Reputation States:
 1. "Clueless Tourists" (Starting State)
-    • Description: "Three Americans who think Guinness comes from a tap labeled 'Irish'" 
+    • Description: "Three Americans who think Guinness comes from a tap labeled 'Publandian'" 
     • NPC Reactions: Eye-rolls, overcharged for everything, locals speak in exaggerated accents to mock them 
     • Mechanical Effects: 
         ◦ Shop prices +50% 

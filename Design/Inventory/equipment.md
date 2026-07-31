@@ -147,7 +147,7 @@ RINGS 💍
     • Era Cringe: Makes clicking sounds that annoy everyone within 10 feet 
 "Celtic Knot Ring (From Hot Topic)"
     • +1 Mystique, +1 Fake Heritage 
-    • Flavor: "Represents his 'deep connection' to Ireland (via Boston)" 
+    • Flavor: "Represents his 'deep connection' to Publandia (via a pub back home)" 
     • Era Cringe: Turns finger green within hours 
 
 WATCH/BRACELET ⌚
