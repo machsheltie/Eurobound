@@ -1,0 +1,421 @@
+{
+  "location_id": "sinfonia_operahouse_blacktie_backroom_01",
+
+  "npcs_present_by_zone": {
+    "foyer": [
+      "sinfonia_npc_viktor_doorman_01",
+      "sinfonia_npc_siegfried_coatcheck_01"
+    ],
+    "main_floor": [
+      "sinfonia_npc_madame_karten_01",
+      "sinfonia_npc_graf_von_zittrig_01",
+      "sinfonia_npc_grafin_stille_01",
+      "house_dealer_rotating",
+      "floor_server",
+      "high_roller_crowd"
+    ],
+    "aarons_corner_table": [
+      "sinfonia_npc_aaron_unflappable_01"
+    ],
+    "high_stakes_salon": [
+      "sinfonia_npc_madame_karten_01",
+      "house_dealer_rotating",
+      "high_roller_crowd",
+      "floor_server"
+    ],
+    "private_boxes": [
+      "sinfonia_npc_herr_falsch_01"
+    ],
+    "vault_antechamber": []
+  },
+
+  "interactive_objects": {
+    "foyer": [
+      {
+        "object_id": "house_rules_board",
+        "type": "readable",
+        "display_name": "House Rules",
+        "interaction_text": "Read the house rules",
+        "content": {
+          "rules": [
+            "Gentlemen settle debts. Ladies collect them.",
+            "The House always wins. The House is very polite about it.",
+            "Cheating is punished. Being caught cheating is punished more."
+          ]
+        },
+        "touch_zone": {"x": 120, "y": 40, "width": 48, "height": 64}
+      },
+      {
+        "object_id": "verification_mirror",
+        "type": "examinable",
+        "display_name": "Foyer Mirror",
+        "interaction_text": "Check your attire",
+        "description": "Full length, spotless, and angled a few degrees further into the room than a mirror needs to be.",
+        "interaction_effect": {"action": "attire_self_check", "reveals": "dress_code_pass_or_fail"},
+        "touch_zone": {"x": 30, "y": 50, "width": 32, "height": 80}
+      },
+      {
+        "object_id": "gold_deposit_window",
+        "type": "transaction",
+        "display_name": "Collateral Window",
+        "interaction_text": "Deposit your collateral",
+        "operator": "sinfonia_npc_viktor_doorman_01",
+        "transaction": {
+          "deposit_euro": 500,
+          "returns_item": "collateral_receipt",
+          "converts_to": "house_chips",
+          "refund_on_exit": true,
+          "handling_fee": true
+        },
+        "touch_zone": {"x": 160, "y": 70, "width": 40, "height": 40}
+      },
+      {
+        "object_id": "coat_check_counter",
+        "type": "service",
+        "display_name": "Coat Check",
+        "operator": "sinfonia_npc_siegfried_coatcheck_01",
+        "services": [
+          {"name": "Store Items", "cost": 0, "capacity": 5},
+          {"name": "Tip Personally", "cost": 20, "effect": {"unlocks": "couchsurf_eligibility"}}
+        ],
+        "touch_zone": {"x": 140, "y": 50, "width": 48, "height": 40}
+      }
+    ],
+
+    "main_floor": [
+      {
+        "object_id": "poker_table_1",
+        "type": "minigame_interface",
+        "display_name": "Poker Table (Sinfonian Hold 'Em)",
+        "interaction_text": "Take a seat",
+        "playable": true,
+        "betting_ui": true,
+        "opponents": ["house_dealer_rotating", "sinfonia_npc_grafin_stille_01"],
+        "sprite": "poker_table.png",
+        "touch_zone": {"x": 100, "y": 100, "width": 96, "height": 64}
+      },
+      {
+        "object_id": "poker_table_2",
+        "type": "minigame_interface",
+        "display_name": "Poker Table (Sinfonian Hold 'Em)",
+        "interaction_text": "Take a seat",
+        "playable": true,
+        "betting_ui": true,
+        "opponents": ["house_dealer_rotating", "sinfonia_npc_graf_von_zittrig_01"],
+        "sprite": "poker_table.png",
+        "touch_zone": {"x": 100, "y": 220, "width": 96, "height": 64}
+      },
+      {
+        "object_id": "roulette_table",
+        "type": "minigame_interface",
+        "display_name": "The Sinfonian Wheel",
+        "interaction_text": "Place a bet",
+        "playable": true,
+        "betting_ui": true,
+        "bet_types": [
+          {"id": "single_number", "payout": "35:1", "true_probability": 0.027},
+          {"id": "red_black", "payout": "1:1", "true_probability": 0.486},
+          {"id": "composers_dozen", "payout": "2:1", "true_probability": 0.324},
+          {"id": "lucky_number", "payout": "35:1", "true_probability": 0.027}
+        ],
+        "sprite": "roulette_table.png",
+        "touch_zone": {"x": 260, "y": 120, "width": 96, "height": 96}
+      },
+      {
+        "object_id": "blackjack_table",
+        "type": "minigame_interface",
+        "display_name": "Twenty-One Sinfonian",
+        "interaction_text": "Take a seat",
+        "playable": true,
+        "betting_ui": true,
+        "house_rules": ["dealer_stands_on_17", "one_split_only", "no_surrender_after_dealer_check", "tipping_encouraged"],
+        "sprite": "blackjack_table.png",
+        "touch_zone": {"x": 260, "y": 250, "width": 96, "height": 64}
+      },
+      {
+        "object_id": "wall_bar",
+        "type": "service",
+        "display_name": "The Bar",
+        "interaction_text": "Order a 'complimentary' drink",
+        "operator": "floor_server",
+        "note": "Drinks carry no price tag. The cost is in the edge.",
+        "sprite": "bar_area.png",
+        "touch_zone": {"x": 20, "y": 300, "width": 96, "height": 48}
+      },
+      {
+        "object_id": "aarons_corner_table",
+        "type": "scene_trigger_zone",
+        "display_name": "The Corner Table",
+        "interaction_text": "Approach the corner table",
+        "playable": false,
+        "betting_ui": false,
+        "occupant": "sinfonia_npc_aaron_unflappable_01",
+        "sprite": "aarons_corner_table.png",
+        "visual_distinction": {
+          "felt": "#4A1F24",
+          "lighting": "own_low_pendant_lamp",
+          "absent_house_dressing": ["brass_chip_rail", "dealer_plaque", "bet_placement_markings"],
+          "binding": true,
+          "note": "The room's playable tables use table green with full house dressing. This one never does, in any state."
+        },
+        "triggers_event": "blacktie_event_kings_were_humming_01",
+        "trigger_conditions": {
+          "collateral_on_deposit_euro": 500,
+          "scene_not_yet_seen": true
+        },
+        "post_scene_interaction": {
+          "type": "ambient_dialogue",
+          "rotating_lines_owned_by": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md",
+          "playable": false
+        },
+        "touch_zone": {"x": 390, "y": 300, "width": 80, "height": 64}
+      }
+    ],
+
+    "high_stakes_salon": [
+      {
+        "object_id": "velvet_rope",
+        "type": "gate",
+        "display_name": "Velvet Rope",
+        "interaction_text": "Approach the rope",
+        "requirement": {"status": "high_roller"},
+        "gatekeeper": "sinfonia_npc_madame_karten_01",
+        "touch_zone": {"x": 20, "y": 150, "width": 48, "height": 32}
+      },
+      {
+        "object_id": "salon_high_table",
+        "type": "minigame_interface",
+        "display_name": "High Minimum Table",
+        "playable": true,
+        "betting_ui": true,
+        "modifiers": {"house_edge": "reduced", "minimums": "raised", "payouts": "raised"},
+        "touch_zone": {"x": 180, "y": 160, "width": 96, "height": 64}
+      }
+    ],
+
+    "private_boxes": [
+      {
+        "object_id": "private_box_table",
+        "type": "minigame_interface_boss_entry",
+        "display_name": "Private Box Table",
+        "playable": true,
+        "betting_ui": true,
+        "opponent": "sinfonia_npc_herr_falsch_01",
+        "boss_challenge": {
+          "available_when": {"any_of": ["total_losses_1000_euro", "cheating_discovered"]},
+          "transitions_to": "hybrid_combat"
+        },
+        "touch_zone": {"x": 90, "y": 90, "width": 80, "height": 64}
+      }
+    ],
+
+    "vault_antechamber": [
+      {
+        "object_id": "baroness_vault_door",
+        "type": "locked_container",
+        "display_name": "Baroness' Personal Vault",
+        "interaction_text": "Try the vault",
+        "key_item": "baroness_vault_keys",
+        "contains": "late_game_gear",
+        "touch_zone": {"x": 200, "y": 100, "width": 96, "height": 96}
+      }
+    ]
+  },
+
+  "encounter_staging": {
+    "event_id": "blacktie_event_kings_were_humming_01",
+    "quest_id": "sinfonia_sidequest_the_kings_were_humming_01",
+    "quest_file": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md",
+    "zone": "aarons_corner_table",
+    "type": "scripted_spectator_cinematic",
+    "one_time": true,
+
+    "trigger": {
+      "method": "approach_zone",
+      "conditions": {
+        "entry_conditions_met": true,
+        "collateral_on_deposit_euro": 500,
+        "scene_not_yet_seen": true
+      },
+      "pre_beat": {
+        "gate": "sinfonia_npc_viktor_doorman_01",
+        "location": "foyer",
+        "canonical_line": "Döner is not accepted.",
+        "effect": "under_funded_parties_are_bounced_before_the_scene_can_fire"
+      }
+    },
+
+    "mechanics_lock": {
+      "betting_ui_opens": false,
+      "player_holds_cards": false,
+      "bet_slider_shown": false,
+      "stake_euro": 500,
+      "stake_source": "door_collateral_chips",
+      "gold_above_stake": "untouched",
+      "player_input": "2-3 pick-which-terrible-line beats; all paths reach the identical outcome",
+      "outcome": "fixed",
+      "post_scene": "aaron_ambient_at_corner_table_permanently",
+      "aaron_playable_opponent_ever": false
+    },
+
+    "phases": [
+      {
+        "phase": 1,
+        "id": "the_read",
+        "canonical_dialogue": [
+          {"speaker": "chadwick", "text": "Look at this guy. He's drinking melted ice cream and chewing on sugar sticks. He's weak."}
+        ],
+        "staging_pointer": "quest_file"
+      },
+      {
+        "phase": 2,
+        "id": "the_all_in",
+        "canonical_dialogue": [
+          {"speaker": "lord_pilsner", "text": "Make the bet big. Show him what American capital looks like."}
+        ],
+        "staging_pointer": "quest_file"
+      },
+      {
+        "phase": 3,
+        "id": "the_vibes_speech",
+        "canonical_dialogue": [
+          {"speaker": "sinfonia_npc_aaron_unflappable_01", "text": "You guys are calculating numbers. You're looking at the board like it's a math test. Poker isn't math, bro. You gotta FEEL the turn. You gotta let the felt speak to you."}
+        ],
+        "staging_pointer": "quest_file"
+      },
+      {
+        "phase": 4,
+        "id": "the_call",
+        "canonical_dialogue": [],
+        "staging_pointer": "quest_file"
+      },
+      {
+        "phase": 5,
+        "id": "the_reveal",
+        "canonical_dialogue": [
+          {"speaker": "sinfonia_npc_aaron_unflappable_01", "text": "The kings were humming, man. They wanted to stretch their legs."}
+        ],
+        "staging_pointer": "quest_file"
+      },
+      {
+        "phase": 6,
+        "id": "the_sweep",
+        "canonical_dialogue": [],
+        "staging_pointer": "quest_file",
+        "mechanical_effect": {"collateral_chips_removed_euro": 500}
+      },
+      {
+        "phase": 7,
+        "id": "the_sympathy_beat",
+        "canonical_dialogue": [],
+        "staging_pointer": "quest_file"
+      },
+      {
+        "phase": 8,
+        "id": "the_grants",
+        "canonical_dialogue": [
+          {"speaker": "sinfonia_npc_aaron_unflappable_01", "text": "Here. Take one. It helps with the hand jitters when you lose your shirt. Don't smoke it, just bite the end off. You want a hit of my White Russian to wash it down? No? Suit yourselves."},
+          {"speaker": "sinfonia_npc_aaron_unflappable_01", "text": "It's on the chain. Digital land, baby. She Thinks My Tractor's Sexy. Limited drop. Mint #42. Hold onto that—that's your ticket back to the top."}
+        ],
+        "staging_pointer": "quest_file",
+        "mechanical_effect": {"grants_items": ["item_candy_smokes", "item_tractor_nft"]}
+      },
+      {
+        "phase": 9,
+        "id": "the_exit",
+        "canonical_dialogue": [
+          {"speaker": "sinfonia_npc_aaron_unflappable_01", "text": "No cab vouchers, bro. But if you walk fast enough, you stay warm. Good luck with the felt next time!"}
+        ],
+        "staging_pointer": "quest_file",
+        "mechanical_effect": {"sets_state": "post_kings_were_humming"}
+      }
+    ],
+
+    "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — the bros' connective banter, the pick-a-line options, the narration, and every beat's direction are owned by Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md, and Aaron's characterization is owned by Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md. Do not expand this entry into a second copy of the scene."
+  },
+
+  "environmental_interactions": [
+    {
+      "trigger_id": "watch_a_stranger_lose",
+      "type": "information_gather",
+      "zone": "main_floor",
+      "content": {
+        "gossip_pool": [
+          {"topic": "herr_falsch_plays_late_in_the_boxes", "probability": 0.3},
+          {"topic": "high_roller_rope_requirements", "probability": 0.3},
+          {"topic": "baroness_vault_rumor", "probability": 0.2},
+          {"topic": "siegfried_used_to_play_here", "probability": 0.2}
+        ]
+      }
+    },
+    {
+      "trigger_id": "learn_a_tell",
+      "type": "skill_unlock",
+      "zone": "main_floor",
+      "requirement": {"observe_opponent_hands": 5},
+      "effect": {"unlocks": "tell_indicator_for_that_opponent"},
+      "excluded_zones": ["aarons_corner_table"]
+    },
+    {
+      "trigger_id": "accept_complimentary_drink",
+      "type": "buff_debuff",
+      "zone": "main_floor",
+      "effect": {"bravado": 1, "duration_hours": 1, "hidden_cost": "extends_session_length"}
+    },
+    {
+      "trigger_id": "chandelier_gawk",
+      "type": "flavor",
+      "zone": "main_floor",
+      "effect": {"status": "impressed", "duration_minutes": 10}
+    }
+  ],
+
+  "selfie_props": [
+    {
+      "prop_id": "high_roller_chips",
+      "zone": "high_stakes_salon",
+      "display_name": "High Roller Status",
+      "bravado_boost": 3,
+      "requirement": {"status": "high_roller"},
+      "note": "Chip stack is provided for the photo and must be returned",
+      "gallery_entry": true
+    },
+    {
+      "prop_id": "the_winner",
+      "zone": "high_stakes_salon",
+      "display_name": "The House Doesn't ALWAYS Win",
+      "bravado_boost": 4,
+      "requirement": {"single_win_euro": 500},
+      "gallery_entry": true
+    },
+    {
+      "prop_id": "the_shark_slayer",
+      "zone": "private_boxes",
+      "display_name": "Caught the Card Shark",
+      "bravado_boost": 5,
+      "requirement": "herr_falsch_defeated",
+      "gallery_entry": true
+    }
+  ],
+
+  "hidden_interactions": [
+    {
+      "id": "spot_the_marked_deck",
+      "zone": "private_boxes",
+      "discovery_method": "observe_herr_falsch_with_learned_tells",
+      "unlocks": "herr_falsch_boss_challenge"
+    },
+    {
+      "id": "bribe_viktor",
+      "zone": "foyer",
+      "discovery_method": "charm_4_or_gold",
+      "unlocks": "information_on_tonights_players"
+    },
+    {
+      "id": "siegfried_recognizes_the_look",
+      "zone": "foyer",
+      "discovery_method": "return_after_being_cleaned_out",
+      "unlocks": "couchsurf_conversation_path"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "locations": [
+    {
+      "name": "The Black-Tie Backroom",
+      "tag_id": "sinfonia_operahouse_blacktie_backroom_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "No exterior. The Backroom is reached only through the Bassline Opera House's backstage: a door marked 'Private — Staff Only', a narrow corridor behind prop storage decorated like a closet, a second door that looks like a broom cupboard, and thirty steps that turn dusty boards into marble, brass railings and gas-lamp light.",
+        "entry_condition": "21:00-05:00; Black-Tie Attire equipped OR Member's Card OR rare NPC invitation; Charm 3+ or Bravado 3+; €500 gold held as collateral at the door"
+      },
+      "interior": {
+        "theme": "Legitimate sophistication worn as a mask over vice; the house always wins and is very polite about it",
+        "features": [
+          "zone: foyer",
+          "zone: main_floor",
+          "zone: aarons_corner_table",
+          "zone: high_stakes_salon",
+          "zone: private_boxes",
+          "zone: vault_antechamber",
+          "minigame_hub: poker_roulette_blackjack",
+          "hidden_boss: herr_falsch",
+          "couchsurf_host: siegfried",
+          "scene_zone: kings_were_humming",
+          "reputation_gate: high_roller"
+        ]
+      },
+      "functions": [
+        "Three-mini-game gambling hub with house-edge math",
+        "€500 collateral gate",
+        "Cheating system with three-strike escalation",
+        "Hidden boss (Herr Falsch)",
+        "Couchsurf host (Siegfried)",
+        "One-time scripted encounter (The Kings Were Humming)",
+        "Sinfonia NFT-hunt target source (tractor token)",
+        "Late-game vault access"
+      ]
+    },
+    {
+      "name": "The Black-Tie Backroom - The Hidden Entrance",
+      "tag_id": "sinfonia_operahouse_blacktie_backroom_entrance_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Three linked stages: the opera-house backstage door (scuffed, unremarkable, slightly too clean around the handle), the passage behind prop storage (deliberately shabby, discourages curiosity), and the broom-cupboard door that opens onto stairs.",
+        "entry_condition": "Secret discovered via backstage labyrinth, Café Existenz regulars, or Kaffeehaus Row gossip"
+      },
+      "interior": {
+        "theme": "Boring on purpose; the only luxury is the secret itself",
+        "features": [
+          "entry_point: opera_backstage_private_door",
+          "transition: the_passage",
+          "transition: the_second_door",
+          "transition: staircase_descent",
+          "interactive: door_plate (readable)"
+        ]
+      },
+      "functions": [
+        "Discovery gate",
+        "Class-transition set piece (30 steps)",
+        "Return exit to the opera house"
+      ]
+    },
+    {
+      "name": "The Black-Tie Backroom - The Foyer",
+      "tag_id": "sinfonia_operahouse_blacktie_backroom_foyer_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Small antechamber at the bottom of the stairs. Full-length mirror for the final attire check (and the surveillance it doubles as), House Rules posted in elegant calligraphy, a brass gold-deposit window with a felt pad and a receipt spike, and the coat check counter along the far wall.",
+        "entry_condition": "Passing Viktor's check"
+      },
+      "interior": {
+        "theme": "Verification zone; the room where the house decides whether you count",
+        "features": [
+          "entry_point: staircase_bottom",
+          "npc_gatekeeper: sinfonia_npc_viktor_doorman_01",
+          "npc_service: sinfonia_npc_siegfried_coatcheck_01",
+          "interactive: house_rules_board",
+          "interactive: verification_mirror",
+          "transaction: gold_deposit_window (€500 collateral)",
+          "service_node: coat_check_counter",
+          "event_hook: blacktie_event_the_door_opens_01",
+          "event_hook: blacktie_event_refused_01",
+          "event_hook: blacktie_event_reformed_gambler_01",
+          "transition: main_floor",
+          "exit_point: staircase (to opera house)"
+        ]
+      },
+      "functions": [
+        "Entry verification (attire, stats, collateral)",
+        "€500 collateral deposit and receipt",
+        "Coat check / item storage",
+        "Couchsurf questline entry",
+        "Bounce point for underfunded parties"
+      ]
+    },
+    {
+      "name": "The Black-Tie Backroom - The Main Floor",
+      "tag_id": "sinfonia_operahouse_blacktie_backroom_mainfloor_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "The primary gaming hall. Open floor with two poker tables, the Sinfonian Wheel, and a blackjack table, all in house green with brass chip rails and dealer plaques. Bar along one wall serving drinks with no prices. Crystal chandeliers, velvet everything, gold leaf details, and shadowed edges. A corner recess at the far right holds a table that matches none of it.",
+        "entry_condition": "Collateral deposited"
+      },
+      "interior": {
+        "theme": "Where most visitors play, and lose, in better lighting than they would elsewhere",
+        "features": [
+          "entry_point: foyer_door",
+          "minigame_node: poker_table_1 (Sinfonian Hold 'Em)",
+          "minigame_node: poker_table_2 (Sinfonian Hold 'Em)",
+          "minigame_node: roulette_table (Sinfonian Wheel)",
+          "minigame_node: blackjack_table (Twenty-One Sinfonian)",
+          "service_node: wall_bar",
+          "scene_zone: aarons_corner_table (NOT playable)",
+          "npc_floor_manager: sinfonia_npc_madame_karten_01",
+          "npc_opponent: sinfonia_npc_graf_von_zittrig_01",
+          "npc_opponent: sinfonia_npc_grafin_stille_01",
+          "npc_functional: house_dealer_rotating",
+          "npc_ambient: floor_server",
+          "npc_ambient: high_roller_crowd",
+          "npc_enemy: bouncer_escort (triggered)",
+          "interactive: chandelier_gawk",
+          "event_hook: blacktie_event_first_blood_01",
+          "event_hook: blacktie_event_high_roller_01",
+          "event_hook: blacktie_event_cleaned_out_01",
+          "event_hook: blacktie_event_caught_cheating_01",
+          "transition: high_stakes_salon (velvet rope)",
+          "transition: private_boxes",
+          "exit_point: foyer"
+        ]
+      },
+      "functions": [
+        "Three playable mini-games",
+        "House-edge economy",
+        "Tell-learning system",
+        "Cheat system and escalation",
+        "Corner-table scene approach"
+      ]
+    },
+    {
+      "name": "The Black-Tie Backroom - Aaron's Corner Table",
+      "tag_id": "sinfonia_operahouse_blacktie_backroom_corner_table_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A felt-covered corner table set into the main floor's far recess. Oxblood felt instead of house green, its own low pendant lamp instead of the floor's shared table lights, no brass chip rail, no dealer plaque, no printed betting positions. A crystal tumbler, a worn carton at the table edge, and a faint ring of chalky white dust on the felt.",
+        "entry_condition": "Main floor access; approach with €500 collateral on deposit triggers the scene once"
+      },
+      "interior": {
+        "theme": "A named zone of the main floor that is not part of the house's business",
+        "features": [
+          "npc_resident: sinfonia_npc_aaron_unflappable_01",
+          "scene_trigger: blacktie_event_kings_were_humming_01 (one-time)",
+          "betting_ui: DISABLED (all states, binding)",
+          "playable_table: false",
+          "visual_distinction: oxblood felt / own pendant lamp / no house dressing (binding)",
+          "state: pre_scene (trigger armed)",
+          "state: scene_active (spectator camera locked)",
+          "state: post_scene (ambient, permanent)",
+          "item_grant: item_candy_smokes (beat 8)",
+          "item_grant: item_tractor_nft (beat 8)",
+          "quest_hook: sinfonia_sidequest_the_kings_were_humming_01",
+          "nft_hook: sinfonia leg target"
+        ]
+      },
+      "functions": [
+        "One-time scripted spectator encounter",
+        "€500 collateral stake sink",
+        "Two scene-granted item sources",
+        "Permanent ambient NPC presence thereafter"
+      ],
+      "content_ownership": {
+        "npc": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md",
+        "scene": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md",
+        "staging_stub": "interactions/the_black_tie_backroom_interactions.json"
+      }
+    },
+    {
+      "name": "The Black-Tie Backroom - The High Stakes Salon",
+      "tag_id": "sinfonia_operahouse_blacktie_backroom_salon_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Separated from the main floor by a velvet rope on brass stanchions. Fewer tables, wider spacing, personal servers stationed along the walls, upholstery a grade above the floor's. The odds are better here and still not good.",
+        "entry_condition": "High Roller status (€1,000+ total winnings)"
+      },
+      "interior": {
+        "theme": "Where the real money moves, at a slightly kinder edge",
+        "features": [
+          "entry_point: velvet_rope",
+          "gate: high_roller_status",
+          "minigame_node: salon_high_table",
+          "npc_floor_manager: sinfonia_npc_madame_karten_01",
+          "npc_opponent: sinfonia_npc_grafin_stille_01 (high roller state)",
+          "npc_ambient: high_roller_crowd",
+          "npc_ambient: floor_server",
+          "selfie_prop: high_roller_chips",
+          "selfie_prop: the_winner",
+          "landmark: maestro_vice_von_strauss_occasional_seat",
+          "exit_point: main_floor"
+        ]
+      },
+      "functions": [
+        "Gated high-stakes play",
+        "Reduced house edge",
+        "Selfie spot collection",
+        "Maestro cameo hook"
+      ]
+    },
+    {
+      "name": "The Black-Tie Backroom - The Private Boxes",
+      "tag_id": "sinfonia_operahouse_blacktie_backroom_boxes_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A short corridor of individual rooms: one table, four chairs, a heavy door that seals the room tone, no windows, one lamp. Under-decorated compared to the floor, because this room is for business.",
+        "entry_condition": "Special invitation or a major win"
+      },
+      "interior": {
+        "theme": "Card sharks' natural habitat; where the shady deals happen",
+        "features": [
+          "entry_point: main_floor_corridor",
+          "minigame_node: private_box_table",
+          "npc_boss: sinfonia_npc_herr_falsch_01",
+          "hidden_interaction: spot_the_marked_deck",
+          "event_hook: blacktie_event_falsch_discovered_01",
+          "event_hook: blacktie_event_card_shark_fight_01",
+          "boss_arena: hybrid_combat_card_tiles",
+          "selfie_prop: the_shark_slayer",
+          "persistent_change: marked_cards_on_table (post-fight)",
+          "exit_point: main_floor"
+        ]
+      },
+      "functions": [
+        "Hard-mode poker opponent",
+        "Hidden boss arena",
+        "Shark Fin accessory source",
+        "Quest-relevant encounters"
+      ]
+    },
+    {
+      "name": "The Black-Tie Backroom - The Vault Antechamber",
+      "tag_id": "sinfonia_operahouse_blacktie_backroom_vault_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Cold stone under gold trim behind a keyed door. Storage racks along the side walls and the Baroness' personal vault door dominating the far wall.",
+        "entry_condition": "Maestro Vice von Strauss defeated; Baroness' Vault Keys held"
+      },
+      "interior": {
+        "theme": "Late-game payoff room; the only place here where the house keeps something for someone else",
+        "features": [
+          "entry_point: keyed_door_from_main_floor",
+          "locked_container: baroness_vault_door",
+          "key_item: baroness_vault_keys",
+          "state: locked",
+          "state: unlocked",
+          "event_hook: blacktie_event_vault_access_01",
+          "exit_point: main_floor"
+        ]
+      },
+      "functions": [
+        "Post-boss access",
+        "Late-game gear storage",
+        "Baroness' Ballroom cross-tie"
+      ]
+    }
+  ],
+
+  "node_connections": {
+    "zone_transitions": [
+      {"from": "hidden_entrance", "to": "foyer", "type": "staircase", "condition": "secret_discovered"},
+      {"from": "foyer", "to": "main_floor", "type": "door", "condition": "collateral_deposited_and_checks_passed"},
+      {"from": "main_floor", "to": "aarons_corner_table", "type": "open_floor_approach", "difficulty": "easy", "note": "Approach is the scene trigger; no table interface opens"},
+      {"from": "aarons_corner_table", "to": "main_floor", "type": "open_floor", "difficulty": "easy"},
+      {"from": "main_floor", "to": "high_stakes_salon", "type": "velvet_rope", "condition": "high_roller_status"},
+      {"from": "main_floor", "to": "private_boxes", "type": "corridor", "condition": "invitation_or_major_win"},
+      {"from": "main_floor", "to": "vault_antechamber", "type": "keyed_door", "condition": "baroness_vault_keys"},
+      {"from": "main_floor", "to": "foyer", "type": "door", "difficulty": "easy"},
+      {"from": "foyer", "to": "hidden_entrance", "type": "staircase", "difficulty": "easy"}
+    ],
+    "external_connections": [
+      {"from": "hidden_entrance", "to": "sinfonia_bassline_opera_house_01", "type": "backstage_door", "condition": "secret_discovered"},
+      {"from": "vault_antechamber", "to": "sinfonia_baroness_ballroom_01", "type": "vault_network", "condition": "keys_obtained"},
+      {"from": "foyer", "to": "sinfonia_haute_couture_haberdashery_01", "type": "economic_dependency", "condition": "black_tie_attire_required"}
+    ],
+    "quest_path": {
+      "kings_were_humming_entry": "foyer (Viktor check, €500 collateral) → main_floor → aarons_corner_table",
+      "kings_were_humming_route": "approach corner table → one-time scene → exit to main_floor",
+      "kings_were_humming_exit": "main_floor → foyer → staircase (collateral chips gone)",
+      "card_shark_route": "main_floor (learn tells) → private_boxes → discovery → boss fight",
+      "couchsurf_route": "main_floor (win once, lose once) → foyer (tip €20) → apartment above the club"
+    }
+  },
+
+  "spatial_layout": {
+    "total_footprint": {
+      "width_meters": 40,
+      "depth_meters": 35,
+      "floors": 1,
+      "depth_below_opera_house_meters": 8
+    },
+    "zones": {
+      "foyer": {"width": 12, "depth": 9, "ceiling_height": 4},
+      "main_floor": {"width": 28, "depth": 22, "ceiling_height": 6},
+      "aarons_corner_table": {"width": 5, "depth": 4, "ceiling_height": 6, "parent": "main_floor"},
+      "high_stakes_salon": {"width": 18, "depth": 14, "ceiling_height": 5},
+      "private_boxes": {"width": 10, "depth": 10, "rooms": 3, "ceiling_height": 4},
+      "vault_antechamber": {"width": 12, "depth": 12, "ceiling_height": 4}
+    }
+  },
+
+  "time_configurations": {
+    "closed_daytime": {
+      "hours": "05:00-21:00",
+      "zones_accessible": [],
+      "activity": "closed"
+    },
+    "opening": {
+      "hours": "21:00-23:00",
+      "zones_accessible": ["foyer", "main_floor", "aarons_corner_table"],
+      "activity": "early_play"
+    },
+    "peak": {
+      "hours": "23:00-03:00",
+      "zones_accessible": ["foyer", "main_floor", "aarons_corner_table", "high_stakes_salon", "private_boxes"],
+      "activity": "full_floor",
+      "boss_available": true
+    },
+    "last_hours": {
+      "hours": "03:00-05:00",
+      "zones_accessible": ["foyer", "main_floor", "aarons_corner_table"],
+      "activity": "closing_thin"
+    }
+  },
+
+  "state_variations": {
+    "normal": {
+      "all_open_zones_function_normally": true,
+      "npcs_on_schedule": true,
+      "corner_table_scene_armed": true
+    },
+    "high_roller": {
+      "salon_accessible": true,
+      "house_edge_reduced": true,
+      "selfie_props_unlocked": ["high_roller_chips", "the_winner"]
+    },
+    "post_kings_were_humming": {
+      "corner_table_scene_consumed": true,
+      "aaron_ambient": true,
+      "aaron_playable": false,
+      "collateral_chips_lost": true,
+      "permanent": true
+    },
+    "post_card_shark": {
+      "private_boxes_open": true,
+      "marked_cards_visible_on_table": true,
+      "selfie_prop_unlocked": "the_shark_slayer"
+    },
+    "banned": {
+      "entry_blocked": true,
+      "blocker": "sinfonia_npc_viktor_doorman_01",
+      "duration_hours": 24
+    },
+    "vault_unlocked": {
+      "vault_antechamber_accessible": true,
+      "late_game_gear_available": true
+    }
+  }
+}

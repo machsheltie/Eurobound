@@ -1,0 +1,239 @@
+{
+  "location_id": "sinfonia_operahouse_blacktie_backroom_01",
+
+  "quest_events": {
+    "quest_id": "sinfonia_sidequest_the_kings_were_humming_01",
+    "quest_file": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md",
+
+    "kings_were_humming": {
+      "event_id": "blacktie_event_kings_were_humming_01",
+      "display_name": "The Kings Were Humming",
+      "type": "scripted_spectator_cinematic",
+      "zone": "aarons_corner_table",
+      "subject_npc": "sinfonia_npc_aaron_unflappable_01",
+      "one_time": true,
+      "repeatable": false,
+
+      "entry_trigger": {
+        "trigger_type": "player_approaches_zone",
+        "prerequisites": [
+          "location_entry_conditions_met",
+          "collateral_500_euro_on_deposit",
+          "scene_not_yet_seen"
+        ],
+        "gate_pre_beat": {
+          "npc": "sinfonia_npc_viktor_doorman_01",
+          "zone": "foyer",
+          "effect": "under_funded_parties_are_bounced_at_the_door",
+          "consequence": "the_encounter_cannot_fire_underfunded"
+        },
+        "cutscene_on_trigger": true
+      },
+
+      "mechanics_lock": {
+        "betting_ui_opens": false,
+        "player_holds_cards": false,
+        "bet_slider_shown": false,
+        "player_can_influence_outcome": false,
+        "stake_euro": 500,
+        "stake_source": "door_collateral_chips",
+        "stake_uniform_for_every_player": true,
+        "gold_above_stake": "untouched",
+        "player_input": {
+          "type": "pick_which_terrible_line",
+          "beat_count": "2-3",
+          "all_paths_identical_outcome": true,
+          "option_text_owner": "quest_file"
+        },
+        "visual_separation_from_playable_tables": "binding"
+      },
+
+      "phase_list_owner": "interactions/the_black_tie_backroom_interactions.json",
+      "scene_text_owner": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md",
+
+      "outcomes": {
+        "gold_delta_euro": -500,
+        "items_granted": ["item_candy_smokes", "item_tractor_nft"],
+        "grant_beat": 8,
+        "status_applied": [],
+        "location_state_set": "post_kings_were_humming",
+        "npc_state_set": {
+          "sinfonia_npc_aaron_unflappable_01": "ambient_at_corner_table_permanent"
+        },
+        "achievement": "the_kings_were_humming",
+        "quest_hook_advanced": {
+          "quest_id": "debaucheryville_mainquest_fratbro_nft_01",
+          "leg": "sinfonia",
+          "target": "item_tractor_nft"
+        }
+      },
+
+      "engine_requirements": [
+        "Fixed-stake collateral: grant and removal of exactly the €500 door-collateral chips, independent of party gold",
+        "Scene-triggered item grants at a named beat (beat 8), not at scene end",
+        "One-time-scene flag with a persistent post-scene ambient NPC state",
+        "Zone-level suppression of the betting interface at aarons_corner_table in every state"
+      ],
+
+      "systemic_consequence": {
+        "affects": "sinfonia_haute_couture_haberdashery_01",
+        "effect": "A party busted here can no longer afford the €500 Valued Client path, nudging toward PATH B",
+        "hard_gate": false
+      }
+    }
+  },
+
+  "entry_events": {
+    "first_entry": {
+      "event_id": "blacktie_event_the_door_opens_01",
+      "trigger": "first_time_passing_viktors_check",
+      "zone": "foyer",
+      "one_time": true,
+      "effects": {
+        "achievement": "the_door_opens",
+        "unlocks": ["main_floor", "aarons_corner_table"],
+        "collateral_taken_euro": 500
+      }
+    },
+    "refused_entry": {
+      "event_id": "blacktie_event_refused_01",
+      "trigger": {"any_of": ["gold_under_500", "no_black_tie_and_no_members_card", "stat_check_failed"]},
+      "zone": "foyer",
+      "repeatable": true,
+      "canonical_line": {"speaker": "sinfonia_npc_viktor_doorman_01", "text": "Döner is not accepted."},
+      "note": "Line is canon-locked and appears in this file only as the gate's registered response. Viktor's wider dialogue is owned by his profile.",
+      "effects": {"entry_blocked": true}
+    }
+  },
+
+  "gameplay_events": {
+    "first_win": {
+      "event_id": "blacktie_event_first_blood_01",
+      "trigger": "win_any_game",
+      "one_time": true,
+      "effects": {"achievement": "first_blood", "npc_reaction": "sinfonia_npc_madame_karten_01_table_upsell"}
+    },
+    "high_roller_unlock": {
+      "event_id": "blacktie_event_high_roller_01",
+      "trigger": "total_winnings_1000_euro",
+      "one_time": true,
+      "effects": {
+        "status_granted": "high_roller",
+        "unlocks": ["high_stakes_salon", "selfie_prop_high_roller_chips"],
+        "achievement": "high_roller",
+        "item_granted": "high_roller_badge"
+      }
+    },
+    "cleaned_out": {
+      "event_id": "blacktie_event_cleaned_out_01",
+      "trigger": "lose_all_gold",
+      "repeatable": true,
+      "effects": {
+        "ejected": true,
+        "status_applied": "embarrassed",
+        "item_granted": "cleaned_out_stamp",
+        "achievement": "cleaned_out"
+      }
+    },
+    "caught_cheating": {
+      "event_id": "blacktie_event_caught_cheating_01",
+      "trigger": "cheat_detection_roll_failed",
+      "repeatable": true,
+      "detected_by": "sinfonia_npc_madame_karten_01",
+      "escalation": [
+        {"offense": 1, "effects": {"lose_current_bet": true, "status_applied": "watched_closely"}},
+        {"offense": 2, "effects": {"ban_hours": 24, "chips_forfeit": true, "status_applied": "embarrassed"}},
+        {"offense": 3, "effects": {"permanent_ban": true, "combat_encounter": "bouncer_escort"}}
+      ]
+    }
+  },
+
+  "boss_events": {
+    "card_shark_discovery": {
+      "event_id": "blacktie_event_falsch_discovered_01",
+      "trigger": {"any_of": ["observe_falsch_with_learned_tells", "total_losses_1000_euro"]},
+      "zone": "private_boxes",
+      "one_time": true,
+      "effects": {"unlocks": "herr_falsch_boss_challenge"}
+    },
+    "card_shark_fight": {
+      "event_id": "blacktie_event_card_shark_fight_01",
+      "display_name": "The Card Shark",
+      "type": "hybrid_combat",
+      "zone": "private_boxes",
+      "boss_id": "sinfonia_npc_herr_falsch_01",
+      "one_time": true,
+      "mechanics": {
+        "attacks": ["Full House", "Dead Man's Hand", "The River", "Ace Up His Sleeve"],
+        "interrupt_threshold_hp_percent": 25,
+        "weakness": "expose_cheating_during_fight_reduces_stats"
+      },
+      "rewards": {
+        "gold_euro": 2000,
+        "items": ["item_shark_fin"],
+        "conditional_items": ["marked_cards"],
+        "achievement": "card_counter",
+        "unlocks": ["selfie_prop_the_shark_slayer"]
+      }
+    }
+  },
+
+  "couchsurf_events": {
+    "siegfried_stay": {
+      "event_id": "blacktie_event_reformed_gambler_01",
+      "trigger": "meeting_requirements_met",
+      "requirements": ["win_at_least_once", "lose_at_least_once", "tip_20_euro"],
+      "one_time": true,
+      "phases": ["evening_invitation", "dreams_of_fortune", "morning_scene"],
+      "content_owner": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/siegfried_coat_check.md",
+      "effects": {
+        "status_granted": ["gamblers_insight", "knows_their_tricks"],
+        "gold_delta_euro": -50,
+        "achievement": "reformed_witness"
+      }
+    }
+  },
+
+  "late_game_events": {
+    "vault_access": {
+      "event_id": "blacktie_event_vault_access_01",
+      "trigger": "baroness_vault_keys_used",
+      "zone": "vault_antechamber",
+      "prerequisite": "sinfonia_mainquest_boss_01_complete",
+      "one_time": true,
+      "effects": {"unlocks": "late_game_gear_cache", "achievement": "vault_access"}
+    }
+  },
+
+  "return_events": {
+    "post_kings_were_humming_return": {
+      "trigger": "return_to_main_floor",
+      "condition": "location_state_post_kings_were_humming",
+      "event": {
+        "npc": "sinfonia_npc_aaron_unflappable_01",
+        "behavior": "ambient_at_corner_table",
+        "dialogue_source": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md",
+        "background_behavior": "visibly winning weird hands",
+        "playable_opponent": false,
+        "scene_replayable": false
+      }
+    },
+    "banned_return": {
+      "trigger": "return_within_24h_of_ban",
+      "condition": "location_state_banned",
+      "event": {
+        "npc": "sinfonia_npc_viktor_doorman_01",
+        "blocks_entry": ["foyer", "main_floor", "high_stakes_salon", "private_boxes"]
+      }
+    },
+    "post_card_shark_return": {
+      "trigger": "return_to_private_boxes",
+      "condition": "herr_falsch_defeated",
+      "event": {
+        "persistent_change": "marked_cards_left_on_the_private_box_table",
+        "table_playable": true,
+        "opponent": "house_dealer_rotating"
+      }
+    }
+  }
+}

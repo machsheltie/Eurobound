@@ -1,0 +1,547 @@
+{
+  "location_id": "sinfonia_operahouse_blacktie_backroom_01",
+
+  "png_asset_document": "Design/World Design/Sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md",
+  "asset_count": 38,
+  "cross_reference_rule": "Every file referenced in this document is specced in the PNG asset document above, and every asset in that document is referenced here. Filenames are canonical and must match byte for byte.",
+
+  "environment_sheets": {
+    "hidden_entrance": {
+      "file": "hidden_entrance.png",
+      "dimensions": {"width": 256, "height": 384},
+      "zone": "hidden_entrance",
+      "states": ["closed", "ajar", "open"]
+    },
+    "staircase_transition": {
+      "file": "staircase_transition.png",
+      "dimensions": {"width": 256, "height": 512},
+      "zone": "hidden_entrance",
+      "states": ["static"],
+      "note": "Vertical gradient piece; boards to marble across its length"
+    },
+    "foyer_verification": {
+      "file": "foyer_verification.png",
+      "dimensions": {"width": 384, "height": 256},
+      "zone": "foyer",
+      "anchors": {
+        "viktor_position": {"x": 40, "y": 90},
+        "deposit_window": {"x": 160, "y": 70},
+        "house_rules_board": {"x": 120, "y": 40},
+        "verification_mirror": {"x": 30, "y": 50},
+        "coat_check_counter": {"x": 140, "y": 50}
+      }
+    },
+    "main_floor": {
+      "file": "main_floor.png",
+      "dimensions": {"width": 640, "height": 512},
+      "zone": "main_floor",
+      "table_felt": "#0B3D2E",
+      "anchors": {
+        "poker_table_1": {"x": 100, "y": 100},
+        "poker_table_2": {"x": 100, "y": 220},
+        "roulette_table": {"x": 260, "y": 120},
+        "blackjack_table": {"x": 260, "y": 250},
+        "wall_bar": {"x": 20, "y": 300},
+        "corner_recess": {"x": 380, "y": 290}
+      },
+      "note": "Corner recess is left empty on the base plate; aarons_corner_table.png composites into it."
+    },
+    "aarons_corner_table": {
+      "file": "aarons_corner_table.png",
+      "dimensions": {"width": 320, "height": 256},
+      "zone": "aarons_corner_table",
+      "composites_into": {"sheet": "main_floor.png", "anchor": "corner_recess"},
+      "table_felt": "#4A1F24",
+      "house_dressing": {
+        "brass_chip_rail": false,
+        "dealer_plaque": false,
+        "bet_placement_markings": false,
+        "shared_overhead_table_light": false,
+        "own_pendant_lamp": true
+      },
+      "binding_note": "Must never read as one of the room's playable tables, in any state, at any zoom.",
+      "states": {
+        "ambient_pre_scene": {"pendant_intensity": 1.0, "chip_stack": "low", "chalk_ring": "small"},
+        "scene_lit": {"pendant_intensity": 1.3, "room_ambient_multiplier": 0.75, "occupied_chairs": 5},
+        "ambient_post_scene": {"pendant_intensity": 1.0, "chip_stack": "tall", "chalk_ring": "large"}
+      }
+    },
+    "high_stakes_salon": {
+      "file": "high_stakes_salon.png",
+      "dimensions": {"width": 512, "height": 384},
+      "zone": "high_stakes_salon",
+      "table_felt": "#0B3D2E",
+      "anchors": {
+        "velvet_rope": {"x": 20, "y": 150},
+        "salon_high_table": {"x": 180, "y": 160}
+      }
+    },
+    "private_box": {
+      "file": "private_box.png",
+      "dimensions": {"width": 256, "height": 256},
+      "zone": "private_boxes",
+      "table_felt": "#0B3D2E",
+      "anchors": {"private_box_table": {"x": 90, "y": 90}}
+    },
+    "vault_antechamber": {
+      "file": "vault_antechamber.png",
+      "dimensions": {"width": 384, "height": 384},
+      "zone": "vault_antechamber",
+      "states": ["locked", "unlocked"],
+      "anchors": {"baroness_vault_door": {"x": 200, "y": 100}}
+    },
+    "poker_table": {
+      "file": "poker_table.png",
+      "dimensions": {"width": 384, "height": 256},
+      "zone": "main_floor",
+      "playable": true,
+      "betting_ui_anchor": true,
+      "seats": 6
+    },
+    "roulette_table": {
+      "file": "roulette_table.png",
+      "dimensions": {"width": 384, "height": 384},
+      "zone": "main_floor",
+      "playable": true,
+      "betting_ui_anchor": true,
+      "layout": "single_zero_sinfonian_wheel",
+      "special_bet_block": "composers_dozen"
+    },
+    "blackjack_table": {
+      "file": "blackjack_table.png",
+      "dimensions": {"width": 384, "height": 256},
+      "zone": "main_floor",
+      "playable": true,
+      "betting_ui_anchor": true,
+      "seats": 7
+    },
+    "bar_area": {
+      "file": "bar_area.png",
+      "dimensions": {"width": 256, "height": 192},
+      "zone": "main_floor"
+    },
+    "chandelier_detail": {
+      "file": "chandelier_detail.png",
+      "dimensions": {"width": 192, "height": 192},
+      "zones": ["foyer", "main_floor", "high_stakes_salon"],
+      "reused_at_scales": [0.5, 0.75, 1.0]
+    }
+  },
+
+  "character_sheets": {
+    "npc_viktor_doorman": {
+      "file": "viktor_doorman.png",
+      "npc_id": "sinfonia_npc_viktor_doorman_01",
+      "dimensions": {"width": 384, "height": 512},
+      "sprite_size": {"width": 96, "height": 128},
+      "animations": {
+        "idle_stance": {"row": 0, "frames": 2, "fps": 1, "loop": true},
+        "assess_attire": {"row": 1, "frames": 4, "fps": 3, "loop": false},
+        "accept_collateral": {"row": 2, "frames": 3, "fps": 3, "loop": false},
+        "refuse_entry": {"row": 3, "frames": 3, "fps": 3, "loop": false}
+      }
+    },
+    "npc_madame_karten": {
+      "file": "madame_karten.png",
+      "npc_id": "sinfonia_npc_madame_karten_01",
+      "dimensions": {"width": 256, "height": 384},
+      "sprite_size": {"width": 64, "height": 96},
+      "animations": {
+        "idle_survey": {"row": 0, "frames": 4, "fps": 2, "loop": true},
+        "approach_warm": {"row": 1, "frames": 4, "fps": 4, "loop": true},
+        "offer_drink": {"row": 2, "frames": 3, "fps": 3, "loop": false},
+        "catch_cheater": {"row": 3, "frames": 4, "fps": 4, "loop": false}
+      }
+    },
+    "npc_herr_falsch": {
+      "file": "herr_falsch.png",
+      "npc_id": "sinfonia_npc_herr_falsch_01",
+      "dimensions": {"width": 512, "height": 960},
+      "sprite_size": {"width": 128, "height": 192},
+      "animations": {
+        "idle_dealing": {"row": 0, "frames": 4, "fps": 3, "loop": true},
+        "full_house_summon": {"row": 1, "frames": 6, "fps": 5, "loop": false},
+        "dead_mans_hand": {"row": 2, "frames": 4, "fps": 5, "loop": false},
+        "the_river": {"row": 3, "frames": 4, "fps": 4, "loop": false},
+        "sleeve_ace_interrupt": {"row": 4, "frames": 4, "fps": 6, "loop": false}
+      },
+      "variants": {"exposed": {"row": 4, "note": "Cheating revealed: sleeve cards visible, posture drops"}}
+    },
+    "npc_graf_von_zittrig": {
+      "file": "nervous_noble.png",
+      "npc_id": "sinfonia_npc_graf_von_zittrig_01",
+      "dimensions": {"width": 256, "height": 288},
+      "sprite_size": {"width": 64, "height": 96},
+      "animations": {
+        "idle_composed": {"row": 0, "frames": 2, "fps": 1, "loop": true},
+        "cufflink_adjust": {"row": 1, "frames": 3, "fps": 4, "loop": false},
+        "fold_relief": {"row": 2, "frames": 3, "fps": 3, "loop": false}
+      },
+      "tell_animation": "cufflink_adjust"
+    },
+    "npc_grafin_stille": {
+      "file": "silent_countess.png",
+      "npc_id": "sinfonia_npc_grafin_stille_01",
+      "dimensions": {"width": 256, "height": 288},
+      "sprite_size": {"width": 64, "height": 96},
+      "animations": {
+        "idle_motionless": {"row": 0, "frames": 2, "fps": 1, "loop": true},
+        "champagne_sip": {"row": 1, "frames": 3, "fps": 2, "loop": false},
+        "push_chips": {"row": 2, "frames": 3, "fps": 3, "loop": false}
+      },
+      "tell_animation": "champagne_sip"
+    },
+    "npc_house_dealer": {
+      "file": "house_dealer.png",
+      "dimensions": {"width": 256, "height": 384},
+      "sprite_size": {"width": 64, "height": 96},
+      "palette_variants": 3,
+      "animations": {
+        "idle": {"row": 0, "frames": 2, "fps": 1, "loop": true},
+        "deal_cards": {"row": 1, "frames": 4, "fps": 6, "loop": false},
+        "spin_wheel": {"row": 2, "frames": 4, "fps": 6, "loop": false},
+        "sweep_pot": {"row": 3, "frames": 4, "fps": 5, "loop": false}
+      }
+    },
+    "npc_siegfried_coatcheck": {
+      "file": "siegfried_coatcheck.png",
+      "npc_id": "sinfonia_npc_siegfried_coatcheck_01",
+      "dimensions": {"width": 256, "height": 384},
+      "sprite_size": {"width": 64, "height": 96},
+      "animations": {
+        "idle_counter": {"row": 0, "frames": 2, "fps": 1, "loop": true},
+        "take_coat": {"row": 1, "frames": 3, "fps": 3, "loop": false},
+        "accept_tip": {"row": 2, "frames": 3, "fps": 3, "loop": false},
+        "apartment_ironing": {"row": 3, "frames": 4, "fps": 2, "loop": true}
+      }
+    },
+    "npc_high_roller_crowd": {
+      "file": "high_roller_npc.png",
+      "dimensions": {"width": 256, "height": 384},
+      "sprite_size": {"width": 64, "height": 96},
+      "palette_variants": 4,
+      "animations": {
+        "idle_standing": {"row": 0, "frames": 2, "fps": 1, "loop": true},
+        "idle_seated": {"row": 1, "frames": 2, "fps": 1, "loop": true},
+        "celebrate_small": {"row": 2, "frames": 3, "fps": 3, "loop": false},
+        "deflate": {"row": 3, "frames": 3, "fps": 2, "loop": false}
+      }
+    },
+    "npc_floor_server": {
+      "file": "server_tray.png",
+      "dimensions": {"width": 256, "height": 288},
+      "sprite_size": {"width": 64, "height": 96},
+      "animations": {
+        "walk_tray": {"row": 0, "frames": 4, "fps": 4, "loop": true},
+        "offer_drink": {"row": 1, "frames": 3, "fps": 3, "loop": false},
+        "observe": {"row": 2, "frames": 2, "fps": 1, "loop": true}
+      }
+    },
+    "npc_bouncer_escort": {
+      "file": "bouncer_escort.png",
+      "dimensions": {"width": 384, "height": 384},
+      "sprite_size": {"width": 96, "height": 128},
+      "animations": {
+        "idle_menace": {"row": 0, "frames": 2, "fps": 1, "loop": true},
+        "grab": {"row": 1, "frames": 4, "fps": 6, "loop": false},
+        "eject": {"row": 2, "frames": 4, "fps": 5, "loop": false}
+      }
+    },
+    "npc_aaron_unflappable": {
+      "file": "aaron_the_unflappable.png",
+      "npc_id": "sinfonia_npc_aaron_unflappable_01",
+      "dimensions": {"width": 384, "height": 1024},
+      "sprite_size": {"width": 96, "height": 128},
+      "zone": "aarons_corner_table",
+      "animations": {
+        "idle_seated": {"row": 0, "frames": 4, "fps": 2, "loop": true},
+        "stir_drink": {"row": 1, "frames": 4, "fps": 3, "loop": false},
+        "dramatic_drag": {"row": 2, "frames": 3, "fps": 2, "loop": false},
+        "crunch": {"row": 3, "frames": 3, "fps": 4, "loop": false},
+        "fresh_from_carton": {"row": 4, "frames": 4, "fps": 3, "loop": false},
+        "lay_cards_down": {"row": 5, "frames": 4, "fps": 3, "loop": false},
+        "offer_carton": {"row": 6, "frames": 3, "fps": 3, "loop": false},
+        "rake_chips": {"row": 7, "frames": 4, "fps": 3, "loop": true}
+      },
+      "animation_chains": {
+        "ritual_cycle": {
+          "sequence": ["stir_drink", "dramatic_drag", "crunch", "fresh_from_carton"],
+          "trigger": "idle_random_interval",
+          "interval_seconds_range": [40, 90]
+        }
+      },
+      "props": {
+        "crystal_tumbler": {"always_visible": true},
+        "candy_stick": {"states": ["full_length", "half_length"]},
+        "worn_carton": {"always_visible": true, "on_table": true}
+      },
+      "particle_hooks": {
+        "crunch": {"frame": 2, "particle": "chalk_puff", "source_sheet": "candy_smokes_carton.png"}
+      },
+      "animation_sets_by_state": {
+        "pre_scene": ["idle_seated", "stir_drink", "dramatic_drag", "crunch", "fresh_from_carton"],
+        "scene_active": ["idle_seated", "stir_drink", "dramatic_drag", "crunch", "lay_cards_down", "offer_carton"],
+        "post_scene": ["idle_seated", "stir_drink", "dramatic_drag", "crunch", "fresh_from_carton", "rake_chips"]
+      },
+      "note": "Sheet spec is owned jointly with Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md; the filename aaron_the_unflappable.png is canonical in both. Characterization is not restated here."
+    }
+  },
+
+  "ui_item_sheets": {
+    "chip_stack": {
+      "file": "chip_stack.png",
+      "dimensions": {"width": 64, "height": 64},
+      "variants": ["height_1", "height_5", "height_10", "height_20_plus"]
+    },
+    "card_deck": {
+      "file": "card_deck.png",
+      "dimensions": {"width": 48, "height": 64},
+      "states": ["back", "side_profile"],
+      "animations": {"deal": {"frames": 3, "fps": 8, "loop": false}}
+    },
+    "roulette_wheel": {
+      "file": "roulette_wheel.png",
+      "dimensions": {"width": 192, "height": 192},
+      "animations": {"spin": {"frames": 8, "fps": 12, "loop": true}},
+      "states": ["settled"],
+      "prerendered": true
+    },
+    "bet_interface": {
+      "file": "bet_interface.png",
+      "dimensions": {"width": 256, "height": 128},
+      "used_at": ["poker_table_1", "poker_table_2", "roulette_table", "blackjack_table", "salon_high_table", "private_box_table"],
+      "never_used_at": ["aarons_corner_table"],
+      "binding": true
+    },
+    "house_edge_meter": {
+      "file": "house_edge_meter.png",
+      "dimensions": {"width": 128, "height": 32}
+    },
+    "high_roller_badge": {
+      "file": "high_roller_badge.png",
+      "dimensions": {"width": 48, "height": 48},
+      "states": ["locked", "earned"],
+      "item_id": "high_roller_badge"
+    },
+    "shark_fin": {
+      "file": "shark_fin.png",
+      "dimensions": {"width": 32, "height": 48},
+      "item_id": "item_shark_fin",
+      "states": ["inventory_icon", "equipped_overlay"]
+    },
+    "marked_cards": {
+      "file": "marked_cards.png",
+      "dimensions": {"width": 48, "height": 64},
+      "item_id": "marked_cards",
+      "states": ["normal_view", "marked_view"]
+    },
+    "collateral_receipt": {
+      "file": "collateral_receipt.png",
+      "dimensions": {"width": 48, "height": 32},
+      "item_id": "collateral_receipt",
+      "states": ["issued", "redeemed", "forfeit"]
+    },
+    "members_card": {
+      "file": "members_card.png",
+      "dimensions": {"width": 48, "height": 32},
+      "item_id": "item_members_card"
+    },
+    "tell_indicator": {
+      "file": "tell_indicator.png",
+      "dimensions": {"width": 32, "height": 32},
+      "variants": ["faint", "clear", "certain"],
+      "never_used_at": ["aarons_corner_table"]
+    },
+    "cleaned_out_stamp": {
+      "file": "cleaned_out_stamp.png",
+      "dimensions": {"width": 64, "height": 64},
+      "item_id": "cleaned_out_stamp"
+    },
+    "candy_smokes_carton": {
+      "file": "candy_smokes_carton.png",
+      "dimensions": {"width": 48, "height": 48},
+      "item_id": "item_candy_smokes",
+      "scene_granted": true,
+      "states": ["carton_closed", "carton_open", "stick_full", "stick_bitten"],
+      "shared_effects": {
+        "chalk_puff": {"frames": 4, "fps": 8, "consumers": ["npc_aaron_unflappable.crunch", "item_candy_smokes.use"]},
+        "chalk_ring_overlay": {"variants": 2, "applies_to": "party_member_mouth"}
+      }
+    },
+    "tractor_nft_token": {
+      "file": "tractor_nft_token.png",
+      "dimensions": {"width": 32, "height": 32},
+      "item_id": "item_tractor_nft",
+      "scene_granted": true,
+      "animations": {"gif_loop": {"frames": 6, "fps": 4, "loop": true, "fidelity": "deliberately_low"}},
+      "faces": ["gif_face", "qr_reverse"]
+    }
+  },
+
+  "lighting": {
+    "main_floor": {
+      "ambient": {"color": "#FFD700", "intensity": 0.7},
+      "point_lights": [
+        {"id": "chandelier_main", "position": {"x": 320, "y": 120}, "radius": 200, "color": "#FFD700", "intensity": 0.8},
+        {"id": "table_light_poker_1", "position": {"x": 148, "y": 132}, "radius": 70, "color": "#FFE9A8", "intensity": 0.7},
+        {"id": "table_light_poker_2", "position": {"x": 148, "y": 252}, "radius": 70, "color": "#FFE9A8", "intensity": 0.7},
+        {"id": "table_light_roulette", "position": {"x": 308, "y": 168}, "radius": 70, "color": "#FFE9A8", "intensity": 0.7},
+        {"id": "table_light_blackjack", "position": {"x": 308, "y": 282}, "radius": 70, "color": "#FFE9A8", "intensity": 0.7},
+        {"id": "bar_backlight", "position": {"x": 68, "y": 324}, "radius": 60, "color": "#FFD700", "intensity": 0.4}
+      ],
+      "edge_falloff_color": "#0D0D0D"
+    },
+    "aarons_corner_table": {
+      "point_lights": [
+        {"id": "corner_pendant", "position": {"x": 420, "y": 320}, "radius": 48, "color": "#FFDCA0", "intensity": 0.6}
+      ],
+      "note": "Warmer, dimmer and tighter than the floor's table lights by design. Scene state raises this one step and drops room ambient one step; no other lighting change."
+    },
+    "foyer": {
+      "ambient": {"color": "#FFFACD", "intensity": 0.75},
+      "point_lights": [
+        {"id": "mirror_bounce", "position": {"x": 46, "y": 90}, "radius": 60, "color": "#FFFFFF", "intensity": 0.5},
+        {"id": "deposit_window_lamp", "position": {"x": 180, "y": 80}, "radius": 40, "color": "#FFD700", "intensity": 0.6}
+      ]
+    },
+    "staircase": {
+      "gradient": {
+        "top": {"color": "#F0F0F0", "intensity": 0.4},
+        "bottom": {"color": "#FFD700", "intensity": 0.8}
+      }
+    },
+    "high_stakes_salon": {
+      "ambient": {"color": "#FFD700", "intensity": 0.6},
+      "point_lights": [
+        {"id": "salon_chandelier", "position": {"x": 256, "y": 140}, "radius": 160, "color": "#FFD700", "intensity": 0.8}
+      ]
+    },
+    "private_boxes": {
+      "ambient": {"color": "#722F37", "intensity": 0.35},
+      "point_lights": [
+        {"id": "box_table_lamp", "position": {"x": 128, "y": 120}, "radius": 60, "color": "#FFE9A8", "intensity": 0.8}
+      ]
+    },
+    "vault_antechamber": {
+      "states": {
+        "locked": {"ambient": {"color": "#191970", "intensity": 0.3}},
+        "unlocked": {"ambient": {"color": "#FFD700", "intensity": 0.7}}
+      }
+    }
+  },
+
+  "particles": {
+    "cigar_smoke_wisps": {"zones": ["main_floor", "high_stakes_salon"], "max_simultaneous": 12, "opacity": 0.2},
+    "chip_shine": {"source_sheet": "chip_stack.png", "trigger": "stack_height_change"},
+    "card_flutter": {"source_sheet": "card_deck.png", "trigger": "deal_or_sweep"},
+    "champagne_bubbles": {"zones": ["main_floor", "high_stakes_salon"], "trigger": "server_nearby_or_stille_tell"},
+    "chandelier_sparkle": {"source_sheet": "chandelier_detail.png", "trigger": "rare", "max_simultaneous": 4},
+    "chalk_puff": {"source_sheet": "candy_smokes_carton.png", "consumers": ["npc_aaron_unflappable.crunch", "item_candy_smokes.use"], "frames": 4, "fps": 8}
+  },
+
+  "collision_zones": {
+    "foyer": {
+      "walkable": [{"type": "rect", "x": 20, "y": 40, "width": 340, "height": 180}],
+      "blocked": [
+        {"type": "rect", "x": 150, "y": 40, "width": 60, "height": 40, "label": "deposit_window_counter"},
+        {"type": "rect", "x": 130, "y": 40, "width": 60, "height": 36, "label": "coat_check_counter"}
+      ],
+      "interactive": [
+        {"type": "circle", "x": 46, "y": 90, "radius": 20, "label": "verification_mirror"},
+        {"type": "circle", "x": 140, "y": 60, "radius": 20, "label": "house_rules_board"},
+        {"type": "circle", "x": 180, "y": 80, "radius": 20, "label": "gold_deposit_window"}
+      ]
+    },
+    "main_floor": {
+      "walkable": [{"type": "rect", "x": 20, "y": 40, "width": 600, "height": 440}],
+      "blocked": [
+        {"type": "rect", "x": 100, "y": 100, "width": 96, "height": 64, "label": "poker_table_1"},
+        {"type": "rect", "x": 100, "y": 220, "width": 96, "height": 64, "label": "poker_table_2"},
+        {"type": "rect", "x": 260, "y": 120, "width": 96, "height": 96, "label": "roulette_table"},
+        {"type": "rect", "x": 260, "y": 250, "width": 96, "height": 64, "label": "blackjack_table"},
+        {"type": "rect", "x": 20, "y": 300, "width": 96, "height": 48, "label": "wall_bar"},
+        {"type": "rect", "x": 390, "y": 300, "width": 80, "height": 64, "label": "aarons_corner_table"}
+      ],
+      "interactive": [
+        {"type": "circle", "x": 148, "y": 132, "radius": 40, "label": "poker_table_1", "opens_betting_ui": true},
+        {"type": "circle", "x": 148, "y": 252, "radius": 40, "label": "poker_table_2", "opens_betting_ui": true},
+        {"type": "circle", "x": 308, "y": 168, "radius": 44, "label": "roulette_table", "opens_betting_ui": true},
+        {"type": "circle", "x": 308, "y": 282, "radius": 40, "label": "blackjack_table", "opens_betting_ui": true},
+        {"type": "circle", "x": 430, "y": 332, "radius": 56, "label": "aarons_corner_table", "opens_betting_ui": false, "triggers_event": "blacktie_event_kings_were_humming_01"}
+      ]
+    },
+    "private_boxes": {
+      "walkable": [{"type": "rect", "x": 20, "y": 20, "width": 216, "height": 216}],
+      "blocked": [{"type": "rect", "x": 90, "y": 90, "width": 80, "height": 64, "label": "private_box_table"}],
+      "boss_arena": {"type": "rect", "x": 20, "y": 20, "width": 216, "height": 216, "hazard": "the_river_tile_flip"}
+    }
+  },
+
+  "mobile_optimization": {
+    "texture_atlases": {
+      "count": 4,
+      "max_size": 1024,
+      "format": "png_24_alpha"
+    },
+    "draw_calls_budget": 20,
+    "memory_budget_mb": 50,
+    "particle_budget": 60,
+    "target_fps": 45,
+    "prerendered": ["roulette_wheel_spin", "card_deal", "static_crowd_fills"],
+    "lod_levels": {
+      "full": {"distance": 0, "detail": "high"},
+      "medium": {"distance": 180, "detail": "medium", "animations_reduced": true},
+      "low": {"distance": 360, "detail": "low", "static_only": true}
+    },
+    "lod_exceptions": [
+      {"sheet": "aarons_corner_table.png", "min_lod": "medium", "reason": "The corner table's distinction from the playable tables must survive every LOD step."}
+    ]
+  },
+
+  "asset_manifest": {
+    "environment": [
+      "hidden_entrance.png",
+      "staircase_transition.png",
+      "foyer_verification.png",
+      "main_floor.png",
+      "aarons_corner_table.png",
+      "high_stakes_salon.png",
+      "private_box.png",
+      "vault_antechamber.png",
+      "poker_table.png",
+      "roulette_table.png",
+      "blackjack_table.png",
+      "bar_area.png",
+      "chandelier_detail.png"
+    ],
+    "character": [
+      "viktor_doorman.png",
+      "madame_karten.png",
+      "herr_falsch.png",
+      "nervous_noble.png",
+      "silent_countess.png",
+      "house_dealer.png",
+      "siegfried_coatcheck.png",
+      "high_roller_npc.png",
+      "server_tray.png",
+      "bouncer_escort.png",
+      "aaron_the_unflappable.png"
+    ],
+    "ui_item": [
+      "chip_stack.png",
+      "card_deck.png",
+      "roulette_wheel.png",
+      "bet_interface.png",
+      "house_edge_meter.png",
+      "high_roller_badge.png",
+      "shark_fin.png",
+      "marked_cards.png",
+      "collateral_receipt.png",
+      "members_card.png",
+      "tell_indicator.png",
+      "cleaned_out_stamp.png",
+      "candy_smokes_carton.png",
+      "tractor_nft_token.png"
+    ]
+  }
+}
