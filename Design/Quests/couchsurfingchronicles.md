@@ -62,6 +62,8 @@ While `the_herp` is active on the party, **every Couchsurf attempt in every city
 
 The interception lifts **party-wide** the moment `item_gold_circle_coin` is equipped by any one bro. Every intercepted NPC can then be re-attempted, and each has her own **post-cure callback line** — none of which lets the bros off the hook. **Chronicles completion therefore stays fully achievable**; it is gated behind the Herp, not blocked by it.
 
+**Resolution and payload (binding):** the post-cure callback plays as a **sting beat only.** She says her piece, the bros absorb none of it, and **the couchsurf then resolves normally** — the NPC's standard morning-after micro-scene and outcome run exactly as authored above. The callback is never a second refusal and never blocks the entry. **The first-time payload** (stat change, gag item, flavor collectible, ICQ payload, Passport entry) **is granted only if that entry was never completed pre-infection.** Players who completed an NPC before the outbreak get the callback and the scene, but no duplicate rewards.
+
 ## The Six Official Profiles
 
 The Debaucheryville couchsurf NPCs now have full standalone profiles. Their meet locations, morning scenes, results, ICQ integrations, and satire angles are unchanged; the profiles add the Herp-rejection scene and the post-cure callback line.

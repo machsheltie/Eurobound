@@ -47,7 +47,7 @@
 
 **Real-World Consequence:** None whatsoever for Renata, who does not know anything happened and is never told. All of it lands on the bros, who unanimously and permanently agree never to discuss it.
 
-**Satire Angle:** The bros' beer goggles, rendered literally — the same generic daydream asset dropped over the same woman for three different men in three parts of one party. **She is not the joke, at any point, in any line.** The joke is three pushing-forty men who believe they were selected, and the identical maternal cheek-pat that told all three of them otherwise in front of each other. Nobody said it out loud.
+**Satire Angle:** The bros' beer goggles, rendered literally — the same de-aged render of the same woman, shown to three different men in three parts of one party. **The goggles lie about her age and nothing else; she is not the joke, at any point, in any line.** The joke is three pushing-forty men who believe they were selected, and the identical maternal cheek-pat that told all three of them otherwise in front of each other. Nobody said it out loud.
 
 ---
 
@@ -172,6 +172,8 @@
 **While `the_herp` is active on the party, every couchsurf and romance attempt in this file is intercepted.** The invitation still appears, the bros still accept, and the scene still plays — it is just no longer the scene above. The attempt auto-routes to that NPC's **characterized Herp-rejection scene**, which is authored in her own official profile, in her own established voice, and is never generic. The player cannot succeed at any Chronicles couchsurf until `item_gold_circle_coin` is equipped by any one bro, at which point the routing lifts party-wide and every entry becomes achievable again.
 
 Each lady also has a **post-cure callback line** for the re-attempt, authored in the same profile. Nobody has forgotten. Nobody lets the bros off the hook.
+
+**Resolution and payload (binding):** the callback plays as a **sting beat only** — she says her piece, the bros absorb none of it, and **the couchsurf then resolves normally**, running that NPC's Enhanced Morning Scene and Result block above exactly as authored. The callback is never a second refusal and never blocks the entry. **The first-time payload** (the Result block's stat change, gag item, collectible, ICQ Integration, and Passport entry) **is granted only if that entry was never completed pre-infection** — a player who completed her before the outbreak gets the callback and the scene, but no duplicate rewards.
 
 **Official profiles — the rejection scene and the post-cure callback live in these files, not here:**
 
