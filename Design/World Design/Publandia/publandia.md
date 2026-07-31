@@ -8,7 +8,7 @@ Main Quest Hub
     • Pretzel and pasty stands line the cobblestones 
     • Central rumor board for quest information 
     • Tourist traps and banter NPCs scattered throughout 
-Temple Bar Alley
+The Craic Tax
 Beer Hub District
     • Rowdy street filled with "bar brawl" encounters 
     • Live music parody venues with jukebox rhythm gags 
@@ -135,12 +135,12 @@ Environmental Interactions
     • Reputation Ripple: Actions in one pub affect how other establishments treat you 
 KEY ENCOUNTERS & EVENTS
 Rival Trio Showdown
-Location: Temple Bar Alley
+Location: The Craic Tax
     • "Pub Crawl Showdown" - 3-round gauntlet 
     • Challenges: Darts, Trivia, Brawl 
-    • Reward: NFT #1 "Temple Bar Receipt JPG" 
+    • Reward: NFT #1 "Blarney Trap Receipt JPG" 
 City Boss: The Craic Baron
-Location: Central Temple Bar Alley
+Location: The heart of The Craic Tax
     • Jester-like landlord of all Publandia 
     • Attacks: Surge Pricing, Round on Me, Hen Party Swarm, Sticky Floor 
     • Reward: City Pass (discounts), "Saint of Low Sodium Medal" 
