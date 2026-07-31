@@ -22,6 +22,34 @@
 
 ## **🤢 Featured Couchsurf NPCs — Enhanced Satire Edition**
 
+### **0. QUEEN Riviéra Renata — SCRIPTED / MANDATORY**
+
+> **This entry is not optional and is not player-initiated.** It is logged automatically by the scripted outbreak event `night_event_outbreak_01` at the Bohemian Riviera's `night_party_zone`, on every playthrough, for every player. It is the only Chronicles entry in the game that cannot be declined, missed, or avoided — which means **full Chronicles completion now REQUIRES catching The Herp.** The "Slept Around, Found Out" title is, as of this questline, literal and load-bearing.
+
+**NPC ID:** `debaucheryville_npc_queen_riviera_renata_01`
+**Official Profile:** `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md`
+**Owning Quest:** `debaucheryville_sidequest_nothing_is_getting_through_01` — full scene text in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`
+
+**Where You Meet Her:** You don't. She was already at the party. All three bros meet her separately, on the same night, in three corners of the same `night_party_zone`, none of them aware of the other two.
+
+**Enhanced Morning Scene:** Seagulls. Two bros upright and destroyed, the third cocooned in a sleeping bag wearing a leopard-print thong that is not his. Renata rises fully and sensibly dressed, sunglasses on, hands out water, pats each standing bro on the cheek exactly the way their mothers do, kisses the third, and jogs off down the beach to start her day. She is on her lounger by nine. Nothing that happened was a chapter in her life. *(Scene, beats, and all verbatim lines are authored in her profile and staged in the quest file — do not re-invent them here.)*
+
+**Enhanced Bro Delusion Dialogue:**
+- **Pilsner:** *"Three of us. Same beach. Same window. Independently. You know what the odds of that are?"*
+- **Chadwick:** *"I made a creative decision not to document it. That's growth, chat."*
+- **Bradley:** *"There was DEFINITELY foliage at that beach party."*
+
+**Result:**
+- **Status: `the_herp`** — applied to all three bros, permanent, scripted, guaranteed. Never cured; suppressed only while `item_gold_circle_coin` is equipped by any bro
+- **Passport entry logged automatically** (the bros fill it in enthusiastically and describe none of it)
+- **No item, no gold loss, no gag trinket.** The leopard-print thong is scene dressing with no item ID and is never established as hers
+
+**Real-World Consequence:** None whatsoever for Renata, who does not know anything happened and is never told. All of it lands on the bros, who unanimously and permanently agree never to discuss it.
+
+**Satire Angle:** The bros' beer goggles, rendered literally — the same generic daydream asset dropped over the same woman for three different men in three parts of one party. **She is not the joke, at any point, in any line.** The joke is three pushing-forty men who believe they were selected, and the identical maternal cheek-pat that told all three of them otherwise in front of each other. Nobody said it out loud.
+
+---
+
 ### **1. Vape Witch Vanessa**
 
 **Where You Meet Her:** Velvet Curtain Club, swirling in neon vape clouds
@@ -135,6 +163,32 @@
 ```
 
 **Satire Angle:** She's not real. Or she is. Or she's spyware. You'll never know.
+
+---
+
+## **🦠 The Herp Rejection Hook — Routing Note**
+
+**While `the_herp` is active on the party, every couchsurf and romance attempt in this file is intercepted.** The invitation still appears, the bros still accept, and the scene still plays — it is just no longer the scene above. The attempt auto-routes to that NPC's **characterized Herp-rejection scene**, which is authored in her own official profile, in her own established voice, and is never generic. The player cannot succeed at any Chronicles couchsurf until `item_gold_circle_coin` is equipped by any one bro, at which point the routing lifts party-wide and every entry becomes achievable again.
+
+Each lady also has a **post-cure callback line** for the re-attempt, authored in the same profile. Nobody has forgotten. Nobody lets the bros off the hook.
+
+**Official profiles — the rejection scene and the post-cure callback live in these files, not here:**
+
+| Chronicles Entry | NPC ID | Official Profile |
+|---|---|---|
+| 0. QUEEN Riviéra Renata *(scripted)* | `debaucheryville_npc_queen_riviera_renata_01` | `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md` |
+| 1. Vape Witch Vanessa | `debaucheryville_npc_vape_witch_vanessa_01` | `Design/Character Profiles/DebaucheryvilleNPCs/Velvet Curtain Club/vape_witch_vanessa.md` |
+| 2. Backpack Girl Who Never Left | `debaucheryville_npc_backpack_girl_01` | `Design/Character Profiles/DebaucheryvilleNPCs/Absinthe Arcade/backpack_girl_who_never_left.md` |
+| 3. CryptoBro69's "Ex" | `debaucheryville_npc_cryptobro69s_ex_01` | `Design/Character Profiles/DebaucheryvilleNPCs/Shadow Exchange/cryptobro69s_ex.md` |
+| 4. Suspicious Twins (Polina & Paulina) | `debaucheryville_npc_polina_01`, `debaucheryville_npc_paulina_01` | `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/suspicious_twins_polina_paulina.md` |
+| 5. Miss Morphine | `debaucheryville_npc_miss_morphine_01` | `Design/Character Profiles/DebaucheryvilleNPCs/miss_morphine.md` |
+
+**Routing rules:**
+- **Nobody relocates.** The Twins stay at the Cirque. The Ex stays at the Shadow Exchange. Meet locations, results, ICQ integrations, and satire angles above are unchanged.
+- **Renata's is the only entry that is not a rejection** — she is cheerfully unavailable, has already moved on to the next party, and was never told anything by anyone. That contrast is deliberate.
+- **Miss Morphine's rejection is an ICQ auto-reply and nothing else.** Her is-she-real ambiguity is never resolved.
+- Rejection scenes are repeatable and never escalate or sour.
+- Quest structure, both Haberdashery paths, and the Coin live in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`.
 
 ---
 
