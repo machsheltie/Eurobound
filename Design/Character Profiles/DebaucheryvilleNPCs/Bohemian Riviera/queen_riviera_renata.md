@@ -268,7 +268,7 @@ She does not evolve, because nothing that happens in this questline happens *to*
 | queen_correction | The mid-exit title beat — stop, turn, sunglasses lowered half an inch, wink, line, sunglasses up, resume jog |
 
 ### Sprite States
-**Both sprites below ship on the same sheet. Only `renata_true` is Renata.**
+**Only `renata_true` is Renata. The goggles overlay ships as a separate asset (`queen_riviera_renata_goggles_overlay.png`) and is never registered as her sprite.**
 
 | State | When Used |
 |-------|-----------|
