@@ -36,7 +36,7 @@ After-Hours Chaos Street
     • Grease-stained miniboss territory 
 
 BUILDINGS & ESTABLISHMENTS
-The Bottomless Tap
+The Blarney Trap
 Flagship Pub/Inn - Base of Operations
     • Infinite refills, infinite regret 
     • Main resting point and story hub 
@@ -46,27 +46,34 @@ Tour-Turned-Dungeon
     • Massive brewing facility 
     • Hordes of yeast golems and vat monsters 
     • Dungeon crawl through fermenting vats 
+Shenanigans
+The Pub Where You're Always The Mark
+    • Every game is rigged, every drink is a trick, every "deal" is a scam
+    • Bros fall for obvious cons repeatedly, never learning
+    • Mini-games: Rigged darts, loaded dice, "find the ball" cups
+    • Stamp requires losing three scams and returning anyway
+    • Signature beer unlocks after admitting you've been had
 Trinity of Pints
 Fake University
     • "Lectures" are drinking contests in disguise 
     • Academic-themed drinking challenges 
     • Scholarly NPCs who are perpetually drunk 
-Back Alley Betting Shop (Seedy Underbelly)
+Paddy's Book (Seedy Underbelly)
 Underground Gambling Den
     • Hidden entrance in back alley 
     • Dice fights and organized bar brawls 
     • "House rules" that are definitely suspicious 
-The Back Room (Seedy Underbelly)
+The Quiet Man (Seedy Underbelly)
 Unlicensed Operations
     • Fights disguised as pub trivia nights 
     • Rumor trading post 
     • Poker games with questionable legitimacy 
-The Lightweight Hostel
+The Bunk & Blunder
 Budget Accommodation
     • Cheap bunks with snoring NPCs 
     • "Embarrassed" status risk from roommate encounters 
     • Wi-Fi hotspot location (Hostel WokeUpHere) 
-Dodgy Off-License (Seedy Underbelly)
+Murphy's Lawless (Seedy Underbelly)
 Sketchy Corner Shop
     • Discount energy drinks and counterfeit merch 
     • Black-market "brew stall" operations 
@@ -80,9 +87,9 @@ Internet Café
 
 SHOPS & VENDORS
 Street Vendors
-    • Brew Stall: Bravado tonics and beer buffs 
-    • Pretzel Stand: Street food and quick snacks 
-    • Pasty Cart: Hearty meals for health restoration 
+    • The Confidence Man: Bravado tonics and beer buffs 
+    • Knot Your Problem: Street food and quick snacks 
+    • Plot Armour Provisions: Hearty meals for health restoration 
 Equipment Shops
     • Sole Mates Equipment: Footwear and gear for the discerning drunk 
         ◦ Comfy Loafers (+Speed in wet streets) 

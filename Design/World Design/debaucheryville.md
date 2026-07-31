@@ -27,6 +27,16 @@ Budget Accommodation District
     • Bunk-bed confession opportunities 
     • Items scattered in wrong hallways and doorways 
 
+Kebab Alley
+Underground Vice Corridor
+Wedged between the kebab stand, a knockoff vape stall, and a crypto ATM that only steals
+Oily cobblestones littered with skewer sticks, discarded wrappers, and napkins scribbled with confessions
+Constant hiss of meat, drips of chili oil, and the hum of drunken techno
+Stray dogs loiter near puke puddles for warmth
+Pickpocket NPCs and stag do remnants stumble in from the Velvet Curtain Club
+NPC dealer “Slick Greg” sometimes appears, selling mystery tzatziki vials that randomly reroll your current status
+Accessible shortcut to the Velvet Curtain back entrance via clambering a greasy stack of milk crates
+
 BUILDINGS & ESTABLISHMENTS
 Hostel "Midnight Checkout"
 Primary Accommodation
@@ -52,7 +62,7 @@ Semi-Permanent Traveling Circus
     • Hamstradamus' prophecy tent (special appearances) 
     • Rigged carnival games with joke prizes 
     • Backroom ICQ hotspots with Darkweb Dossier character infiltrations 
-24-Hour Internet Café
+Cyberspace Karvana
 Underground Connection Point
     • Free Wi-Fi with scammer ICQ threads 
     • Optional sting operation sidequests 
@@ -61,9 +71,9 @@ Underground Connection Point
 
 SHOPS & VENDORS
 Street Vendors
-    • Absinthe Cart: SP restoration with confusion chance 
+    • The Boheamian Trap: SP restoration with confusion chance 
     • Late-Night Kebab Stand: HP+ but grease finger risk 
-    • Club Gear Stall: Earplugs (reduce confusion), glow sticks (+mood) 
+    • The Strobe Survival Kit: Earplugs (reduce confusion), glow sticks (+mood) 
 Specialty Shops
     • Threads & Treads: All-night equipment emporium
         ◦ Leather Jacket (+Defense, +Cool factor) 
@@ -76,13 +86,14 @@ Specialty Shops
         ◦ Platform Boots (+Height, +Intimidation in clubs) 
         ◦ Velvet Rope Clip (+Charm, shop discounts after boss victory) 
         ◦ Club Stamp Collection (Access to VIP areas) 
-    • Midnight Munchies General Store: Late-night survival essentials
+    • Late-night survival essentials
         ◦ Healing: Energy drinks, Greasy kebabs, Hair of the dog cocktails 
         ◦ Support: Caffeine pills (+Speed), Lucky club stamp (+Access) 
         ◦ Offensive: Pepper spray, Brass knuckles, Flash grenades 
         ◦ Utility: Club earplugs, Fake VIP wristbands, Emergency cab vouchers 
 Circus Vendors
-    • Prize Booth: Rigged games with joke rewards 
+    • The Participation Trophy
+          Prize Booth: Rigged games with joke rewards 
         ◦ Half-Smoked Cigar (useless item) 
         ◦ Used Glitter Hat (+Style, -Dignity) 
         ◦ Mystery Meat Corndog (+HP, +Nausea chance) 

@@ -71,12 +71,36 @@ Beer Hall with Musical Debates
     • Safe resting point with musical atmosphere 
     • NPCs debate rhythm and beats over pints 
     • Your home base for Sinfonia operations 
+    The Standing Ovation
+Opera-Themed Brewery
+    • Converted opera house annex near The Bassline Opera House
+    • Theatrical drinking experience with mandatory toast performances
+    • Bartenders perform pours with dramatic flourishes
+    • "Bravo Challenge" stamp unlock — deliver toast speech to crowd
+    • Sinfonia Bottle Opener acquisition point (€25 or full performance)
+    • Signature Beer: Curtain Call Copper (+25 HP, +3 Charm)
+Crown & Cask
+Imperial-Themed Brewery
+    • Miniature palace architecture in Imperial Square
+    • Self-appointed "Royal Brewmaster" conducts knighting ceremonies
+    • Throne room taproom with Habsburg-style décor
+    • "Coronation Ceremony" stamp unlock — formal beer knighting ritual
+    • Seating arranged by "rank" (regulars near front)
+    • Signature Beer: Heir Apparent Ale (+30 HP, +2 Charm, +2 Style)
+The Dancing Stein
+Waltz-Themed Pub
+    • Traditional tavern in MusikGasse where you must waltz to the bar
+    • Rotating door moves in waltz tempo, floor built for dancing
+    • Beer supplied by The Spinning Brewery (off-site partner)
+    • "Stein Waltz" stamp unlock — dance full circuit without spilling
+    • Practice corner for newcomers with dance instructor NPC
+    • Signature Beer: Waltz Weizen (+20 HP, +3 Speed, +2 Dance)
 
 SHOPS & VENDORS
 Street Vendors
     • Sachertorte Cart: Premium cake slices (HP++, cures Thirsty) 
-    • Espresso Stand: Ristretto shots (Speed boost, jitter debuff to Luck) 
-    • Sheet Music Stall: Musical buffs and rhythm game aids 
+    • Grounds For Concern: Ristretto shots (Speed boost, jitter debuff to Luck) 
+    • The Composers Cart: Musical buffs and rhythm game aids 
 Equipment Shops
     • Haute Couture Haberdashery: Formal wear and accessories 
         ◦ Formal Gloves (reduce Embarrassed status) 
@@ -86,7 +110,7 @@ Equipment Shops
         ◦ Cultural Critic's Monocle (+Intelligence, +Art Authentication) 
         ◦ Maestro's Cufflinks (+Conductor skills, +Musical timing) 
 General Item Shops
-    • The Cultured Corner: Refined supplies for the sophisticated traveler 
+    • The Connosseurs Cache: Refined supplies for the sophisticated traveler 
         ◦ Healing: Artisanal pain relief, gourmet energy bars, herbal teas 
         ◦ Support: Classical music CDs (+Focus), art appreciation guides (+Culture) 
         ◦ Offensive: Opera glasses (ranged advantage), conductor's baton (weapon) 
