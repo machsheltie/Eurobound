@@ -226,6 +226,7 @@ When trying on equipment:
 ## NPCs & Characters
 
 ### Monsieur Aiguille — The Head Tailor
+- **NPC ID**: `sinfonia_npc_monsieur_aiguille_01`
 - **Role**: Primary shop interface, fitting authority, gentle devastation
 - **Appearance**: Immaculate three-piece suit, measuring tape around neck, perpetually assessing
 - **Personality**: Genuinely believes he's helping people become their best selves (through clothing)
@@ -314,7 +315,7 @@ When trying on equipment:
 - **"Patron of Fashion"**: Reach maximum client status
 - **"Nothing Is Getting Through"** (`debaucheryville_sidequest_nothing_is_getting_through_01`): this shop is the "HOUSE OF NEEDLES" of Hamstradamus's prophecy (Aiguille = French for "needle"). Three bros arrive from Debaucheryville carrying `the_herp` and are met by the shop's EXISTING Assessment Protocol on first visit — that snub is played completely straight and is not modified for this quest. The Gold Circle Coin in the alcove vitrine is the objective; two resolutions:
   - **PATH A — "Become Someone Who Belongs Here"**: reach **Valued Client** on the existing €500 tier (no new tier, no new pricing), then complete one absurd errand for Monsieur Aiguille. He opens the vitrine himself, with genuine ceremony (see "The Vitrine (PATH A handover)" under Bros' Reactions) — he respects the Coin considerably more than they do, and always will.
-  - **PATH B — "Big. Huge. Mistake."**: after-hours infiltration (shop closes 7 PM per Entry Conditions) requiring formal wear purchased from this shop; the marquee beat is three men holding mannequin poses in opera capes on the showroom floor while the night porter passes with a torch.
+  - **PATH B — "Big. Huge. Mistake."**: after-hours infiltration (shop closes 7 PM per Entry Conditions) requiring formal wear purchased from this shop; the marquee beat is three men holding mannequin poses in opera capes on the showroom floor while the night porter (`sinfonia_npc_night_porter_01`) passes with a torch.
 - Quest detail, scene text, and branch logic live in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`. This file registers only the vitrine, the shop-side requirements of both paths, and Aiguille's handover beat.
 
 ### Achievement Track

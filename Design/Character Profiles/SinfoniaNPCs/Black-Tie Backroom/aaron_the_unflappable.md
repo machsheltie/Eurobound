@@ -285,7 +285,19 @@ He does not evolve. The stack is bigger every visit, the jacket is one degree mo
 | corner_ambient_win | Post-encounter background loop: dragging an odd pot with no visible reaction, ritual cycle uninterrupted |
 | corner_late_night | 4 AM – close, orange light, floor empty, talking to closing staff |
 
-**Sprite sheet:** all of the above ship in the single canonical main sheet **`aaron_the_unflappable.png`** (velvet jacket, crystal tumbler, and the full candy-cigarette ritual cycle including the crunch frame). Any additional frames a later pass needs are added to that sheet rather than to a new file, so that the location's sprite mapping resolves to exactly one asset for this character.
+### Sprite Sheet
+All of the above ship in the single canonical main sheet **`aaron_the_unflappable.png`** — **384x1024, 96x128 cells, 8 rows**, specced as SHEET 24 in `Design/World Design/Sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md`, which is the authority on dimensions and row order. Any additional frames a later pass needs are added to that sheet rather than to a new file, so the location's sprite mapping resolves to exactly one asset for this character.
+
+| Row | Sheet row (Lane A spec) | Frames | Profile animations it serves |
+|-----|-------------------------|--------|------------------------------|
+| 1 | idle_seated | 4 | Default `corner_seated` / `corner_ambient_win` / `corner_late_night`; carries the heel bounce and the `heel_still` beat |
+| 2 | stir_drink | 4 | `idle_stir` |
+| 3 | dramatic_drag | 3 | `idle_drag` |
+| 4 | crunch | 3 | `idle_crunch` — the signature frame |
+| 5 | fresh_from_carton | 4 | `idle_fresh_draw`; also covers `idle_snack` |
+| 6 | lay_cards_down | 4 | `kings_reveal` |
+| 7 | offer_carton | 3 | `hand_over` (both grant beats); also covers `wave_over` and `sympathy_lean` |
+| 8 | rake_chips | 4 | `instant_call` and the post-encounter ambient win loop |
 
 ---
 
