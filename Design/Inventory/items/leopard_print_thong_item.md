@@ -125,7 +125,7 @@ N/A — no equippable counterpart exists and none will be authored. There is exa
 > "Anyway — anyway — chat, we're not doing the sleeping bag thing today. We've MOVED ON. Smash the ICQ."
 
 **Bradley** (flat, to nobody, on a train):
-> "Gregory has asked twice now whose it was. Gregory has stopped asking."
+> "I asked twice whose it was. I've stopped asking."
 
 ---
 

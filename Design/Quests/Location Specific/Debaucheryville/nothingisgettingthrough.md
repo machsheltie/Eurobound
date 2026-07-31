@@ -69,7 +69,7 @@
 > "Chat — chat, I can't film this, out of respect. I'm gonna describe it later. I'm gonna describe it *so well*."
 
 **Pass 3 — Bradley, at the edge of the sand.** *(POV: goggles render. Identical asset.)*
-> "Gregory's sitting this one out. Gregory doesn't need to see this."
+> "I'm not gonna overthink this. For once in my life I am not gonna overthink this."
 
 *Three men. One party. One woman, who is dancing near the good speaker and is not thinking about any of them.*
 
@@ -323,15 +323,15 @@
 > &nbsp;&nbsp;So we're off to the House of Needles,
 > &nbsp;&nbsp;The glorious House of Thread!
 
-**VERSE 2** — *the wince cycle is now visible from across the square. Gregory joins on the response line and is, vocally, the most committed performer in the number.*
+**VERSE 2** — *the wince cycle is now visible from across the square. Bradley takes the response line himself and is, vocally, the most committed performer in the number.*
 
 > **PILSNER:** &nbsp;&nbsp;We have suffered on a beach and we have suffered in a store,
 > **CHADWICK & BRADLEY:** &nbsp;&nbsp;Suffered in a store!
 > **PILSNER:** &nbsp;&nbsp;And a woman with a lottery ticket showed us to the door,
 > **CHADWICK & BRADLEY:** &nbsp;&nbsp;Showed us to the door!
 > **CHADWICK:** &nbsp;&nbsp;But a prophecy's a promise and a promise is a plan —
-> **GREGORY** *(muffled, from Bradley's hand, entirely sincere)*: &nbsp;&nbsp;And a plan is what we are!
-> **BRADLEY:** &nbsp;&nbsp;Gregory says a plan is what we are!
+> **BRADLEY** *(entirely sincere)*: &nbsp;&nbsp;And a plan is what we are!
+> **PILSNER:** &nbsp;&nbsp;A plan is what we are!
 > **ALL THREE:** &nbsp;&nbsp;It's a very simple errand for a very healthy man!
 
 *Beat. On the rest at the end of that line — the one clean bar of silence in the whole number, where the melody sits and waits — the following lands, at full involuntary volume, from Lord Pilsner, who does not stop skipping:*
@@ -400,7 +400,7 @@
 
 **Chadwick:** "It's the ivy. They can smell the ivy. Ivy's got a smell."
 
-**Bradley:** "Gregory has never been rejected in his life and even Gregory's getting it now."
+**Bradley:** "I'm not counting Renata. Renata wasn't a no."
 
 **Narrator:**
 > "Across two cities, six women declined three men for six entirely different, entirely specific reasons, at least one of which was set to music. The bros counted this as one data point."
@@ -436,7 +436,7 @@
 
 **Lord Pilsner:** *(not moving his hand)* "I know."
 
-**Bradley:** *(nose an inch from the glass)* "Gregory has aspired to this his entire life."
+**Bradley:** *(nose an inch from the glass)* "I've aspired to this my entire life."
 
 **Monsieur Aiguille** *(arriving, entirely serious, no trace of a joke anywhere in him)*: "It is not for sale."
 
@@ -477,9 +477,9 @@
 **Monsieur Aiguille:**
 > "Out of direct sun. Never in a trouser pocket. If I hear otherwise, I will know."
 
-**Bradley:** "Gregory promises."
+**Bradley:** "We promise."
 
-**Monsieur Aiguille:** "Gregory, at least, has been listening."
+**Monsieur Aiguille:** "Mm."
 
 **Chadwick** *(already filming)*: "He's basically knighting me right now."
 
@@ -510,7 +510,7 @@
 2. **Wait for close.** The shop keeps civilized hours and shuts at 7 PM per its own entry conditions. The bros spend the intervening four hours in full formal wear in a public square, being complimented by strangers, which nearly ends the heist twice.
 3. **After-hours infiltration.** Service entrance, alteration workshop, showroom floor. The marble is loud. The bros are not quiet men. Groin Blurts remain fully active during the entire stealth sequence and are, mechanically, the primary fail-state generator — the player cannot prevent them and must plan around them.
 4. **THE MANNEQUIN BEAT (marquee).** The night porter crosses the showroom floor with a torch. Three men in opera capes hold mannequin poses on the display plinths, mid-gesture, for eleven full seconds. **This is the quest's screenshot moment and it must be framed for portrait capture.** Nobody blinks. One cape hem is trembling. The torch passes across all three faces in sequence and does not stop.
-5. **The vitrine.** Its key is kept apart from every other key in the shop — the bros never find it and never look for it. Bradley opens the case with Gregory, in a manner the design document declines to specify.
+5. **The vitrine.** Its key is kept apart from every other key in the shop — the bros never find it and never look for it. Bradley opens the case, in a manner the design document declines to specify.
 
 **Key Dialogue/Moments:**
 
@@ -591,7 +591,6 @@
 - **The night porter's torch** (PATH B only) hangs on its hook by the service door on every subsequent visit, and the two display plinths the bros stood on have been quietly re-labeled by someone as **"3."**
 - **The Recovery Aisle** at Midnight Munchies stays greyed out for this party for the entire rest of the game, tooltip unchanged: *"Věra has already explained this."*
 - **Chadwick's unfilmed footage.** The Memories gallery contains a single 0-second entry labeled "THE BEACH — 03:41" with the description *"Out of respect."* It is empty. He deleted nothing; he never pressed record; he has told nineteen people the file was corrupted.
-- **Gregory** is wearing a miniature opera cape from PATH B onward. Nobody comments on it. It is never removed.
 
 ---
 
@@ -617,7 +616,7 @@
 > "She told them the truth in her third language, at seven in the morning, at no markup, and offered nothing she could not deliver. It was the most honest transaction of their entire trip. They left believing they needed a stronger cream."
 
 **At the vitrine:**
-> "The object in the case was mass-produced in 1990, in a quantity of several million, and cost, at the time, roughly the price of a bus ticket. Two of the three men in front of it were crying. The third was Bradley, who was speaking quietly to a puppet."
+> "The object in the case was mass-produced in 1990, in a quantity of several million, and cost, at the time, roughly the price of a bus ticket. Two of the three men in front of it were crying. The third was Bradley, who had his nose an inch from the glass."
 
 **At the moment the Coin is equipped:**
 > "And here, at last, in a game built end to end out of things that were not what they claimed to be — the wristband, the badge, the stein, the show, the beach, the sand — was one object that did exactly what it said on the foil. It had been true the entire time. It had been true in 1990. Nobody in the party noticed, because nobody in the party had ever once considered the alternative."
@@ -692,8 +691,7 @@ INT. LIVING ROOM - EVENING
 The picture light hums. Nobody has turned on the overhead.
 
 LORD PILSNER sits center. CHADWICK is at one end with a 
-phone. BRADLEY is at the other, GREGORY on one hand, wearing 
-a miniature opera cape.
+phone. BRADLEY is at the other.
 
 Bradley is scratching his thigh. Absently. Constantly. He has 
 been doing it for the entire scene and will not stop during 
@@ -722,8 +720,8 @@ it.
 Beat. The picture light hums.
 
                     BRADLEY
-     Gregory thinks we should get the 
-     humidity thing. For the case.
+     We should get the humidity thing. 
+     For the case.
 
                     LORD PILSNER
      What humidity thing.
@@ -898,9 +896,16 @@ and did, for once, exactly what it promised.
 - The party montage cuts to black **on the amber string lights with the music still running**, then hard-cuts to seagulls. No fade, no sting, no transition sweetener.
 - Renata's VO calibrates against two locked takes: the sincere unhurried baseline and the QUEEN correction. Both ship verbatim. If a take of **"You're such nice boys!"** has any irony, smirk, or knowing lilt in it, cut it — the line is devastating precisely because she means it.
 - Hamstradamus's prophecy is delivered **in English**, at full volume, by a hamster. Do not localize it, subtitle it, or route it through the Czech-parody pipeline. It ships verbatim.
-- **The Departure (Beat 4) is the quest's only musical number** and needs a real arrangement, not a stinger: brass-forward skipping march, three untrained male voices, one puppet, sung slightly too loud and slightly under pitch by men who believe they sound excellent. **Brief the composer on structure only** — call-and-response, word-repetition run, refrain — and hand over the lyric sheet in this file. **No reference track from the 1939 film is to be circulated, cited, or temp-tracked**, and no lyric from it may enter the project at any stage, including scratch vocals. Every word sung in this game is original to this document.
+- **The Departure (Beat 4) is the quest's only musical number** and needs a real arrangement, not a stinger: brass-forward skipping march, three untrained male voices, sung slightly too loud and slightly under pitch by men who believe they sound excellent. **Brief the composer on structure only** — call-and-response, word-repetition run, refrain — and hand over the lyric sheet in this file. **No reference track from the 1939 film is to be circulated, cited, or temp-tracked**, and no lyric from it may enter the project at any stage, including scratch vocals. Every word sung in this game is original to this document.
 - The number's one bar of rest before the reprise is **reserved for the Groin Blurt** and must survive the mix — do not fill it with crowd noise, do not shorten it in an edit pass. The blurt line ships as the standard `the_herp` bark, unmodified.
 - Lord Pilsner's recitation of the 1990 slogan at the vitrine is played **completely straight, reverently, word-perfect.** No comedy music under it. The comedy is the venue.
+
+### Engine Requirements
+- **Per-NPC first-completion tracking (Couchsurfing Chronicles payload rule).** The engine must persist a **per-NPC boolean**, `chronicles_entry_completed[<npc_id>]`, set the first time that NPC's Chronicles entry resolves and never cleared thereafter. It is written by the Chronicles scene's own resolution, not by this quest — this quest only reads it.
+- **Where it is read.** Beat 8's post-Coin re-attempts. The callback line and the couchsurf scene play **unconditionally**; the **first-time payload** — stat change, gag item, collectible, ICQ payload, Passport entry — is granted **only if the flag is false when the re-attempt resolves**, at which point it is set. If the flag is already true, the player gets the callback and the scene and **no duplicate rewards**.
+- **Minimum set: six flags**, one per rejection-roster NPC (Beat 5 table): `debaucheryville_npc_queen_riviera_renata_01`, `debaucheryville_npc_vape_witch_vanessa_01`, `debaucheryville_npc_backpack_girl_01`, `debaucheryville_npc_cryptobro69s_ex_01`, `debaucheryville_npc_polina_01` / `debaucheryville_npc_paulina_01`, `debaucheryville_npc_miss_morphine_01`. The Twins share one entry and therefore one flag, keyed on `debaucheryville_npc_polina_01`.
+- **Persistence.** Per save, party-wide, surviving city transitions and the Debaucheryville → Sinfonia crossing. Rejection scenes are repeatable and never write the flag; only a completed Chronicles entry does.
+- **Not a new mechanic.** This formalizes the payload rule already stated in Beat 8 — no Chronicles content, ordering, or reward table changes with it.
 
 ### Testing Priorities
 1. **Verify no path exists in which any bro avoids `the_herp`.** All three, every playthrough, no exceptions, no saves, no rolls.

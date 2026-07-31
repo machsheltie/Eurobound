@@ -275,8 +275,8 @@ The bros are mid-bite, aluminum tray between them, cheese strings dangling from 
 ```
 Lord Pilsner: *mouth full* "This... this changes everything."
 
-Bradley: *holding up a cheese-covered fry* "Gregory has never seen 
-cheese like this. Gregory is MOVED."
+Bradley: *holding up a cheese-covered fry* "I have never seen 
+cheese like this. I am MOVED."
 
 Chadwick: *filming* "Content. CONTENT. This is the content 
 the people NEED."

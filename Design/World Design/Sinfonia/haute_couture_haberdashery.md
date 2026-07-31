@@ -266,7 +266,7 @@ When trying on equipment:
 - **Monsieur Aiguille**: *circling Lord Pilsner* "The shoulders... the posture... the fabric choices..."
 - **Lord Pilsner**: "What about them?"
 - **Monsieur Aiguille**: "Nothing that can't be fixed. With time. And investment."
-- **Bradley**: "Gregory would like to see the monocles."
+- **Bradley**: "I'd like to see the monocles."
 - **Monsieur Aiguille**: *slight approval* "A man of focus. This way."
 
 **Trying On**:
@@ -290,14 +290,14 @@ When trying on equipment:
 - **Lord Pilsner**: *wearing cape* "I feel like a DIFFERENT PERSON."
 - **Monsieur Aiguille**: "You look like one. My work here is done."
 - **Chadwick**: "EIGHT HUNDRED EUROS, boys — for ALL of it. That's not a receipt, that's a RÉSUMÉ. They don't let you spend that in here unless they can TELL. We came out AHEAD and we're not tourists anymore — we're CLIENTELE."
-- **Bradley**: "Gregory believes the correct term is 'elevated.'"
+- **Bradley**: "Elevated."
 
 **The Vitrine (PATH A handover — "Nothing Is Getting Through")**:
 - **Monsieur Aiguille**: *unlocks the vitrine with the separate key, lifts the Coin with both hands, entirely unironic* "You understand what this is. No — you do not. But you will carry it, and it will be carried, and that is the arrangement."
 - **Lord Pilsner**: "Totally. Yeah. It's a coin."
 - **Monsieur Aiguille**: *seating it in a burgundy presentation sleeve before he will let go of it* "Out of direct sun. Never in a trouser pocket. If I hear otherwise, I will know."
-- **Bradley**: "Gregory promises."
-- **Monsieur Aiguille**: "Gregory, at least, has been listening."
+- **Bradley**: "We promise."
+- **Monsieur Aiguille**: "Mm."
 
 ## System Integration
 

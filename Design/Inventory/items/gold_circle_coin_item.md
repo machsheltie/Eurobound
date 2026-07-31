@@ -138,8 +138,8 @@ Once obtained, the Coin is **permanently party-bound**: it cannot be sold, dropp
 **Chadwick** (livestreaming to eleven viewers, nine of them bots):
 > "Chat. CHAT. This is a legit cinema artifact. Museum-grade. And they let ME have it, because they SAW something. Smash the ICQ. #champion #europe #artifact"
 
-**Bradley** (quietly, to Gregory, months in, while absently scratching):
-> "Gregory says we should get a case for it. A real one. With a light. Gregory says you don't leave something like this just lying around where anything could happen to it."
+**Bradley** (quietly, months in, while absently scratching):
+> "We should get a case for it. A real one. With a light. You don't leave something like this just lying around where anything could happen to it."
 
 ---
 
@@ -176,7 +176,7 @@ Once obtained, the Coin is **permanently party-bound**: it cannot be sold, dropp
 > "'For aspiration.' Bro. That's a CHALLENGE. That's them saying come back when you're somebody."
 
 *Bradley, nose an inch from the glass*
-> "Gregory has aspired to this his entire life."
+> "I've aspired to this my entire life."
 
 ### The Handover (PATH A)
 *Monsieur Aiguille unlocks the vitrine with a key he keeps separate from the others. He handles the Coin with both hands. He is not performing.*
