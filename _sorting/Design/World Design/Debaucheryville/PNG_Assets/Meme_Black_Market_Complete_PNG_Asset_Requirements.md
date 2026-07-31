@@ -141,6 +141,10 @@ This document provides exact specifications for all PNG files needed for the Mem
 | Expanding | (96, 128) | 128x128 | Growing |
 | Full Screen LULs | (224, 128) | 192x128 | Maximum chaos |
 
+### 🎲 Summon RNG (ported from legacy spec):
+- **Dancing Baby.exe:** Cringe backfire effect (if 33% chance triggers)
+- **Trollface Bomb:** Party argument effect (if 20% chance triggers, speech bubbles arguing)
+
 ---
 
 ## 💎 Sprite Sheet 4: Meme Trinkets
@@ -269,6 +273,18 @@ This document provides exact specifications for all PNG files needed for the Mem
 |-------|----------|------|-------------|
 | Shitposter Supreme | (256, 184) | 96x32 | Achievement |
 
+### Achievement Popup Banners (128x48 each) — ported from legacy spec:
+- **Shitposter Supreme Unlocked**: Golden banner with meme icons
+- **Weaponized Nostalgia Survivor**: Achievement for completing meme economy
+- **SWF Vault Access Granted**: Tony420 trading completion
+- **Pilsner Embarrassed**: Lord Pilsner internet history discovered
+
+### Password Input UI — ported from legacy spec:
+- Text input field showing typed password as asterisks
+- "SUBMIT" and "CANCEL" buttons
+- Remaining attempts counter (3 tries before lockout)
+- Success/failure visual feedback states
+
 ---
 
 ## ✨ Sprite Sheet 8: Particle Effects
@@ -299,6 +315,83 @@ This document provides exact specifications for all PNG files needed for the Mem
 
 ---
 
+## 🔐 Password Puzzle Elements (ported from legacy spec)
+**File:** `password_puzzle_elements.png`
+**Dimensions:** 512x384 pixels
+
+The three-step entrance puzzle components:
+
+**GeoCities Kiosk States:**
+- **Inactive State**: Dusty touchscreen showing blank screen or screensaver
+- **Active 3:33 AM**: Screen lights up with "Under Construction" gifs
+- **Under Construction Gif**: Animated construction workers, flashing yellow barriers
+- **Pixelated Wizard**: Low-res wizard character appears with message: "PROCEED TO THE MESSENGER OF MICROSOFT"
+- **Kiosk Hardware**: Beige plastic casing, visible dust, cracked screen corners
+
+**MSN Messenger Terminal States:**
+- **Waiting State**: MSN Messenger login screen, blinking cursor in password field
+- **Password Field Active**: User typing, asterisks appearing
+- **Success AIM Door**: Green checkmark, AIM door opening sound visual
+- **Error Screen**: Red X, error message: "ACCESS DENIED - TRY AGAIN"
+- **Terminal Design**: Cracked monitor, sticky keyboard with visible Mountain Dew residue
+
+**VHS Shelf Mechanism (4-frame opening sequence):**
+- **Frame 1 - Closed**: Complete wall of VHS tapes labeled "STUFF", "THINGS", "MOVIES MAYBE"
+- **Frame 2 - Opening 1**: Shelf begins sliding left, revealing gap with RGB light leaking
+- **Frame 3 - Opening 2**: Shelf halfway open, more RGB light visible, Nokia ringtone visual waves
+- **Frame 4 - Fully Open**: Complete passage revealed, RGB-lit shrine visible beyond
+- **VHS Tape Details**: Handwritten labels, various tape conditions, authentically scattered
+
+**Environmental Puzzle Details:**
+- Worn stone stairs visible through open VHS shelf
+- RGB LED light bleeding around shelf edges when opening
+- Nokia ringtone represented by visual sound waves
+- Cold air effect particles (blue mist) emanating from opening
+
+**Password Puzzle Sequence:**
+- GeoCities activation: Instant on correct time (3:33 AM)
+- MSN terminal typing: Real-time player input
+- VHS shelf opening: 3-second mechanical sliding animation
+- Remaining attempts counter (3 tries before lockout)
+
+---
+
+## 🖥️ Windows 98 Crash Loop (ported from legacy spec — no BASE equivalent)
+**File:** `windows_98_crash_loop.png`
+**Dimensions:** 384x256 pixels
+
+The eternal digital samsara display:
+
+**Crash Sequence Animation (4 states):**
+- **State 1 - Startup Chime Screen**: Windows 98 logo with loading bar
+- **State 2 - Loading Windows**: Blue sky with clouds background, progress continuing
+- **State 3 - Blue Screen of Death**:
+  - Error text: "FATAL ERROR: EXISTENCE"
+  - Additional text: "A problem has been detected and Windows has achieved digital samsara"
+  - "Press any key to continue suffering"
+- **State 4 - Restart Loop**: Black screen with "Restarting..." then back to State 1
+
+**Desktop PC Physical Details:**
+- **Beige Case**: Yellowed beige plastic showing age and UV damage
+- **Dust Layer**: Thick visible dust accumulation (years of operation)
+- **Power LED**: Green LED blinking in rhythm with crash cycle
+- **Floppy Drive**: Visible 3.5" floppy drive (authenticity detail)
+- **CD-ROM Tray**: Partially ejected, stuck in that position forever
+
+**Philosophical Error Messages:**
+- "The startup chime plays for the 47,000th time today"
+- "It will never stop. It will never learn."
+- "This computer has achieved digital samsara."
+- Error code: "0x00000000EXISTENCE_IS_SUFFERING"
+
+**Environmental Placement:**
+- Corner position showing it's been running since 2003
+- Cables trailing off into darkness
+- Small pile of ancient floppy disks nearby
+- Coffee mug ring stains on case
+
+---
+
 ## 🎬 Animation Specifications
 
 ### VHS Shelf Opening:
@@ -312,11 +405,15 @@ This document provides exact specifications for all PNG files needed for the Mem
 - **Cycle Duration:** 8 seconds
 - **Purpose:** Endless suffering visualization
 
+> ⚠ CONFLICT: legacy spec says Windows 98 crash is a 15-second full cycle (startup → crash → restart) — author to decide.
+
 ### MemeLord.exe Vaping:
 - **Pattern:** Idle → Vaping → Idle
 - **Trigger:** Every 15-30 seconds
 - **Vape Duration:** 3 seconds
 - **Particle:** Baja Blast cloud spawns
+
+> ⚠ CONFLICT: legacy spec says vaping is an 8 FPS continuous loop, vape cloud persistence 5 seconds per exhale, "never stops vaping (character life support system)" — author to decide.
 
 ### ASCII Cat Tracking:
 - **Pattern:** Staring → Eyes Tracking → Staring
@@ -333,6 +430,56 @@ This document provides exact specifications for all PNG files needed for the Mem
 - **Pattern:** Varied per gif
 - **FPS:** 4
 - **Glitch:** Random corruption overlay triggers
+
+### Animation Timing Requirements (ported from legacy spec):
+
+**MemeLord.exe Vaping Idle:**
+- 8 FPS continuous loop
+- Vape cloud persistence: 5 seconds per exhale
+- Never stops vaping (character life support system)
+
+**Meme Summon Timings:**
+- Shiba Hype: 2.5 seconds total (appears, barks 3x, exits)
+- Dat Boi: 1.5 seconds total (unicycles across screen)
+- Dancing Baby: 3 seconds total (dance sequence + confusion effect)
+- Trollface Bomb: 2 seconds buildup + 1 second explosion
+
+**Password Puzzle Sequence:**
+- GeoCities activation: Instant on correct time (3:33 AM)
+- MSN terminal typing: Real-time player input
+- VHS shelf opening: 3-second mechanical sliding animation
+
+**Environmental Loops:**
+- Windows 98 crash: 15-second full cycle (startup → crash → restart)
+- Nokia ringtone: 8-second loop continuously
+- ASCII cat eyes: 6 FPS tracking animation
+- RGB LED pulse: 10 FPS color cycling
+
+---
+
+## 🔊 Audio Synchronization Points
+
+**Critical Audio-Visual Sync Requirements:**
+
+1. **VHS Shelf Opening**: Mechanical grinding sound syncs with frame 1, Nokia gets louder each frame
+2. **Meme Summons**: Each summon has signature sound (Shiba bark, "o shit waddup", baby sounds, trollface chaos)
+3. **Windows 98 Crash**: Startup chime → loading sounds → error sound → restart beep perfectly timed
+4. **MemeLord.exe Vaping**: Continuous hiss sound follows vape cloud animation
+5. **Password Success/Failure**: AIM door slam or Windows error chord at exact feedback moment
+6. **Meatspin Curse**: Ominous spinning sound begins immediately when NFT acquired
+
+---
+
+## ⚡ Performance Specifications
+
+**Frame Rate Target:** 50 FPS  
+**Memory Footprint:** 42MB maximum  
+**Draw Calls:** Maximum 18  
+**Mobile Optimization:**
+- Simplified CRT flicker effects on older devices
+- Reduced vape particle count (60% reduction on medium, 90% on low)
+- Static RGB lighting on low-end hardware
+- Potato mode: Basic sprites, no particles, static lighting
 
 ---
 
@@ -355,6 +502,34 @@ This document provides exact specifications for all PNG files needed for the Mem
 | Color Space | sRGB |
 | DPI | 72 |
 | Naming | snake_case |
+| Compression | Lossless PNG compression |
+| Layer Organization | Preserve layer structure for future edits |
+
+### Delivery Format (ported from legacy spec):
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/Photoshop files with organized layer groups
+- **Documentation:** Layer naming guide for future updates
+
+---
+
+## 📝 In-World Text Strings (ported from legacy spec)
+
+### AIM Away Message Wall:
+- Three message panels backlit like stained glass windows:
+  - Panel 1: "brb pizza rolls" / "out laterz" / "if u can read this ur 2 close"
+  - Panel 2: "brb crying to dashboard confessional" / "away: living my best life (jk dying inside)"
+  - Panel 3: "idle: 47 minutes" (meditation on impermanence)
+
+### Funcoland Receipts and Bag Labels:
+- Bags labeled with tragic trade-in values: "$0.78 for 12 games", "Your childhood, appraised"
+- Trade-in receipts showing: "Trade-in value: $1.10. Store credit: $1.47"
+- One receipt visible: "47 cartridges = 1 gum wrapper"
+
+### BSOD Text:
+- Error text: "FATAL ERROR: EXISTENCE"
+- Additional text: "A problem has been detected and Windows has achieved digital samsara"
+- "Press any key to continue suffering"
+- Error code: "0x00000000EXISTENCE_IS_SUFFERING"
 
 ---
 
@@ -374,6 +549,35 @@ This document provides exact specifications for all PNG files needed for the Mem
 - "My soul is encoded in Winamp skins and guilt."
 - "Funcoland offered me $1.10 for my soul and two PS2 controllers."
 - "I got diamond hands and zero liquidity, baby."
+
+---
+
+## 🎨 Art Direction Summary (ported from legacy spec)
+
+### Visual Aesthetic:
+- **Primary Theme:** "Early 2000s internet culture as religious shrine"
+- **Color Mood:** CRT blue, Baja Blast green, RGB neon, carpet burn brown
+- **Lighting:** Flickering CRT glow with RGB LED accents creating nostalgic atmosphere
+- **Texture:** Dusty screens, sticky keyboards, old carpet, Funcoland bag plastic
+
+### MemeLord.exe Character Direction:
+- **Personality:** Prophetic reverence for internet garbage, dramatic delivery of meme wisdom
+- **Key Visual:** Half-human, half-corrupted Flash runtime with continuous Baja Blast vaping
+- **Movement:** Confident vendor stance with occasional Flash error glitches
+- **Expression:** Dramatic intensity treating worthless memes as sacred artifacts
+
+### Meme Summon Design Philosophy:
+- Each summon maintains authentic early internet aesthetic
+- Low-resolution, poor quality is intentional and sacred
+- Visual effects range from "does nothing" to "screen-filling chaos"
+- Psychological damage is a feature, not a bug
+
+### Environmental Storytelling:
+- Every element reinforces "frozen moment from 2003"
+- Funcoland bags represent economic trauma (predatory trade-ins)
+- Windows 98 crash represents futility and eternal loops
+- ASCII cats as silent guardians judging all who enter
+- AIM away messages as sacred devotional texts
 
 ---
 

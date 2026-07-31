@@ -289,6 +289,66 @@ This document provides exact specifications for all PNG files needed for the Cla
 
 ---
 
+## 🚪 Sprite Sheet 7: Maintenance Door & Unlock System
+**File:** `claw_closet_door_unlock.png`  
+**Dimensions:** 256x256 pixels  
+**Color Palette:** #8B4513 (door brown), #FF1493 (flickering pink LED), #FFD700 (token gold), #C0C0C0 (metal hardware)
+
+### Flickering Pink LED System:
+- **LED Off** (0, 160, 16x16) - Door locked state
+- **LED Flicker 1** (16, 160, 16x16) - Unlock animation frame 1
+- **LED Flicker 2** (32, 160, 16x16) - Unlock animation frame 2
+- **LED Full Bright** (48, 160, 16x16) - Unlocked, access granted
+
+### Token Slot Mechanism:
+- **Broken DDR Slot Closed** (0, 176, 48x32) - Insert point
+- **Token Inserting** (48, 176, 48x32) - Mid-insertion animation
+- **Token Count Display 1/3** (96, 176, 32x16) - Progress indicator
+- **Token Count Display 2/3** (128, 176, 32x16) - Progress indicator
+- **Token Count Display 3/3** (160, 176, 32x16) - Unlocked state
+
+### Unlock Animation Sequence:
+1. Insert token 1 → DDR machine responds
+2. Insert token 2 → Pink LED begins flicker
+3. Insert token 3 → LED full bright, door unlocks
+4. Duration: 1.5 seconds total sequence
+
+---
+
+## 🎵 Sprite Sheet 8: Environmental Effects & Audio Visualizations
+**File:** `claw_closet_effects_audio.png`  
+**Dimensions:** 512x256 pixels  
+**Color Palette:** #00FF41 (audio wave green), #FF69B4 (techno pink), #FFD700 (warning yellow)
+
+### Techno Music Echo Visualization:
+- **Bass Wave Through Wall** (0, 0, 64x32) - Muffled beat visualization
+- **Treble Ripple Effect** (64, 0, 64x32) - High-frequency echo
+- **Music Sync Sprite Flash** (128, 0, 32x32) - Random visual sync to beats
+
+### Joystick Squeak Loop System:
+- **Squeak Visual Wave 1** (0, 32, 48x24) - Audio cue indicator frame 1
+- **Squeak Visual Wave 2** (48, 32, 48x24) - Audio cue indicator frame 2
+- **Squeak Visual Wave 3** (96, 32, 48x24) - Intensity increases over time
+- **Squeak Visual Warning** (144, 32, 64x24) - 30-second warning state
+
+### 30-Second Shame Timer:
+- **Timer Bar Empty** (0, 56, 128x16) - Room entry, fresh start
+- **Timer Bar 10 Seconds** (0, 72, 128x16) - Progressing
+- **Timer Bar 20 Seconds** (0, 88, 128x16) - Warning threshold
+- **Timer Bar 30 Seconds** (0, 104, 128x16) - Triggered message
+
+### Achievement Notification Display:
+- **"You've achieved nothing but shame"** (0, 120, 256x32) - 30-second trigger text
+- **"Player one" Taunt Visual** (0, 152, 128x24) - Automated mockery
+- **Achievement Failed Icon** (128, 152, 32x32) - Satirical failure indicator
+
+### Animation Timing:
+- Techno echo: Syncs to random beat intervals (0.5-2 seconds)
+- Joystick squeak: Increases frequency over stay duration
+- 30-second timer: Linear progress, triggers message at completion
+
+---
+
 ## 🎬 Animation Sequence Specifications
 
 ### Fluorescent Light Flicker:
@@ -381,6 +441,58 @@ This document provides exact specifications for all PNG files needed for the Cla
 | Embarrassed | Exclusive graffiti | Joystick with lips glows |
 | Cringe Lock (Rivals) | ICQ message sent | Enemy debuff icon |
 | Grossed Out | Foot soak/sock | Green face icon |
+
+### Cross-Location Dependencies:
+- **Absinthe Arcade:** 3 tokens from main arcade unlock door
+- **Bathroom Network:** Part of cross-city graffiti collection
+- **Status System:** Embarrassed status enables bonus content
+
+---
+
+## 📐 Mobile Optimization Requirements
+
+### Texture Compression by Platform:
+- **iOS:** PVRTC 4BPP for fluorescent effects, maintains neon intensity
+- **Android:** ETC2 with alpha for blacklight graffiti transparency
+- **Fallback:** PNG high quality for text readability in cramped space
+
+### Sprite Atlasing Strategy:
+- **Interior Complete Atlas:** Room + lighting + wiring (512x512)
+- **Interactive Elements Atlas:** DDR toilet + claw arm + CRT + chute + bucket (512x512)
+- **Graffiti System Atlas:** All blacklight content combined (512x256)
+- **Door & Unlock Atlas:** Complete entry system (256x256)
+- **Effects & Audio Atlas:** Visual cues and timing systems (512x256)
+- **Max Atlas Size:** 1024x1024 for mobile GPU compatibility
+
+### LOD (Level of Detail) Scaling:
+- **High-End Devices:** Full spark effects, blacklight graffiti reveal, DDR reactivity
+- **Medium Devices:** Reduced spark density, simplified graffiti glow, basic DDR response
+- **Low-End Devices:** Static wiring, basic graffiti visibility, minimal effects
+- **Potato Mode:** Essential room and interactive elements only, no particle effects
+
+### Performance Targets:
+- **Target FPS:** 45 fps (reduced for cramped space rendering)
+- **Max Draw Calls:** 10 per frame
+- **Memory Footprint:** 25MB maximum for hidden location
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Graffiti Alternatives:
+- **Enhanced Text Visibility** (0, 176, 256x64) - All graffiti with increased contrast
+- **Status Effect Clear Indicators** (256, 176, 128x32) - Embarrassed status visualization
+- **Interactive Element Highlights** (384, 176, 96x32) - Touch targets emphasized
+
+### Motion Sensitivity Options:
+- **Static Flicker Alternative** (0, 208, 64x32) - Steady fluorescent lighting
+- **Reduced Spark Effects** (64, 208, 48x24) - Minimal electrical danger
+- **No Swing Chandelier** (112, 208, 96x128) - Static claw arm position
+
+### Visual Audio Cues:
+- **Squeak Loop Indicator** (0, 240, 32x16) - Audio visualization for deaf players
+- **30-Second Warning Flash** (32, 240, 48x16) - Visual timer substitute
+- **DDR Sound Visual** (80, 240, 32x24) - Pad press feedback alternative
 
 ---
 

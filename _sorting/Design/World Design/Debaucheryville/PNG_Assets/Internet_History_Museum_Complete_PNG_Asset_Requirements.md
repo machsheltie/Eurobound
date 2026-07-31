@@ -101,6 +101,8 @@ This document provides exact specifications for all PNG files needed for the Int
 | Flame Frame 1 | (256, 224) | 64x32 | Animation |
 | Flame Frame 2 | (320, 224) | 64x32 | Alternate |
 
+> ⚠ CONFLICT: legacy spec says loading bar stuck at 67% — author to decide.
+
 **Achievement Integration:** Timer reaches 5 minutes → "Patience of a Saint" title
 
 ---
@@ -236,6 +238,40 @@ This document provides exact specifications for all PNG files needed for the Int
 | Misty-Eyed | (0, 96) | Emotional at modem |
 | Reminiscing | (64, 96) | Lost in memories |
 
+### Security Guard (Nostalgic Gen X) — ported from legacy spec:
+- **Tired Stance** (0, 96, 64x96) - Thousand-yard stare
+- **Protective Gesture** (64, 96, 64x96) - Guarding sacred exhibits
+- **Sharing Trauma** (128, 96, 64x96) - Oversharing digital memories
+- **Nostalgic Reminiscing** (192, 96, 64x96) - Lost in dial-up memories
+- **Warning Visitors** (256, 96, 64x96) - Alerting to psychological hazards
+- **Checking Exhibits** (320, 96, 64x96) - Ensuring digital relic safety
+
+### Meme Black Market Contact (Hidden) — ported from legacy spec:
+- **Shadowy Figure Normal** (0, 192, 64x96) - Barely visible outline
+- **3AM Manifestation** (64, 192, 64x96) - Appearing during magic hour
+- **Password Gatekeeper** (128, 192, 64x96) - Ritual administrator
+- **Ethereal Whisper** (192, 192, 64x96) - Speaking the old words
+- **Market Access Granting** (256, 192, 64x96) - Final key bestowal
+- **Disappearing Dawn** (320, 192, 64x96) - Fading with normal hours
+
+### Visitor Stereotypes (Background) — ported from legacy spec:
+- **Confused Tourist** (384, 0, 32x64) - Lost in museum
+- **Digital Native Zoomer** (416, 0, 32x64) - Not understanding exhibits
+- **Millennial Trauma Victim** (448, 0, 32x64) - Experiencing flashbacks
+- **Gen X Survivor** (384, 64, 32x64) - War-torn veteran expression
+- **Boomer Guide Reader** (416, 64, 32x64) - Reading every plaque
+- **Academic Researcher** (448, 64, 32x64) - Taking serious notes
+
+### NPC Accessories & Props — ported from legacy spec:
+- **Academic Clipboard** (384, 128, 24x32) - Curator prop
+- **Security Walkie** (408, 128, 16x24) - Guard equipment
+- **Vintage Internet Hoodie** (424, 128, 40x48) - Contact disguise
+- **Museum Badge** (464, 128, 16x16) - Staff identification
+- **Visitor Guidebook** (384, 176, 32x24) - Tourist prop
+- **Emergency Tissues** (416, 176, 16x16) - For emotional breakdowns
+
+**Note:** Legacy coordinates assume the legacy 512x384 `museum_npcs.png` layout; BASE sheet is 256x192 and will need resizing or a companion sheet to accommodate these sprites.
+
 ---
 
 ## 🎮 Sprite Sheet 11: Museum UI
@@ -265,6 +301,44 @@ This document provides exact specifications for all PNG files needed for the Int
 | 87% Text | (160, 160) | 48x24 | Eternal percentage |
 | Password UI | (0, 200) | 192x56 | GeoCities 3:33 AM |
 
+### Achievement Notifications — ported from legacy spec:
+- **Curator of Cursed Web** (0, 32, 128x48) - Title unlock
+- **Digital Trauma Tourist** (128, 32, 128x48) - Visitor achievement
+- **Patience of Saint** (256, 32, 128x48) - Angelfire endurance
+- **Digital Archaeologist** (384, 32, 128x48) - Pilsner lore complete
+
+### Time Display & Password UI — ported from legacy spec:
+- **Digital Clock Normal** (0, 80, 64x32) - Standard time
+- **Digital Clock 3:33 AM** (64, 80, 64x32) - Magic hour
+- **Countdown Timer** (128, 80, 64x32) - Ritual window
+- **Password Field Empty** (192, 80, 128x24) - Input ready
+- **Password Field Typing** (192, 104, 128x24) - Text entry
+- **Password Field Success** (192, 128, 128x24) - Correct entry
+- **Password Field Error** (192, 152, 128x24) - Wrong password
+
+### Exhibit Information Plaques — ported from legacy spec:
+- **Hall of Modems Plaque** (0, 176, 128x64) - Archaeological description
+- **GeoCities Plaque** (128, 176, 128x64) - Democratic web creation
+- **Angelfire Plaque** (256, 176, 128x64) - User experience evolution
+- **Habbo Incident Report** (384, 176, 128x64) - Crime scene documentation
+- **MSN Memorial Plaque** (0, 240, 128x16) - Communication graveyard
+- **Chuck E. Cheese Explanation** (128, 240, 128x16) - Placement rationalization
+
+### Interactive Prompts — ported from legacy spec:
+- **Examine CRT Terminal** (256, 240, 64x16) - Computer interaction
+- **Read Academic Plaque** (320, 240, 64x16) - Educational content
+- **Approach Sacred Altar** (384, 240, 64x16) - iMac shrine
+- **Enter Password Sequence** (448, 240, 64x16) - Ritual participation
+
+### Progress Tracking — ported from legacy spec:
+- **Password Step 1 Complete** (0, 256, 32x16) - GeoCities success
+- **Password Step 2 Complete** (32, 256, 32x16) - MSN success  
+- **Password Step 3 Complete** (64, 256, 32x16) - Vault access
+- **Meme Market Unlocked** (96, 256, 64x16) - Underground access
+- **Pilsner Lore Progress** (160, 256, 48x16) - Discovery tracking
+
+**Note:** Legacy coordinates assume the legacy 512x256 `museum_ui_elements.png` layout; BASE sheet is 256x256 and will need resizing to accommodate these elements.
+
 ---
 
 ## ✨ Sprite Sheet 12: Museum Effects
@@ -288,6 +362,21 @@ This document provides exact specifications for all PNG files needed for the Int
 | Static Frame 2 | (48, 24) | 48x40 | Different noise |
 | Screen Shake | (0, 64) | 128x96 | Pixel PTSD overlay |
 | You've Got Mail | (128, 64) | 96x48 | Jump scare popup |
+
+---
+
+## 🖥️ Sprite Sheet 13: Password Puzzle Terminals
+*Ported from legacy spec (originally part of `museum_interactive_objects.png`, 512x384).*
+
+### Password Puzzle Terminals:
+- **DOS Prompt Green Text** (0, 336, 128x96) - C:\ ready
+- **Windows 95 Desktop** (128, 336, 128x96) - Period OS
+- **Error Message Cascade** (256, 336, 128x96) - System failure
+- **Password Field Active** (384, 336, 128x24) - Input ready
+- **Access Denied Message** (384, 360, 128x24) - Failure state
+- **Access Granted Message** (384, 384, 128x24) - Success state
+
+**Technical Notes:** Password terminals activate only at 3:33 AM.
 
 ---
 
@@ -327,6 +416,122 @@ This document provides exact specifications for all PNG files needed for the Int
 
 ---
 
+## 📱 Mobile Optimization Requirements
+
+### Texture Compression by Platform:
+- **iOS:** PVRTC 4BPP for CRT glow effects and particle transparency
+- **Android:** ETC2 with alpha for dust motes and status indicators
+- **Fallback:** PNG high quality for text readability and fine detail
+
+### Sprite Atlasing Strategy:
+- **Environment Atlas:** Exterior + museum floor + exhibits + lighting (1024x768)
+- **Interactive Objects Atlas:** CRTs + terminals + altar + password UI (512x384)
+- **NPC Atlas:** Curator + guard + contact + animatronic + visitors (512x384)
+- **Particle Effects Atlas:** Dust + static + sparkles + status indicators (512x256)
+- **UI Elements Atlas:** Icons + achievements + plaques + prompts (512x256)
+- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+
+### LOD (Level of Detail) Scaling:
+- **High-End Devices:** Full CRT flicker effects, all dust particles, complete animations
+- **Medium Devices:** Reduced flicker rate, simplified particles, essential animations
+- **Low-End Devices:** Static CRT displays, minimal dust, basic status indicators
+- **Potato Mode:** No particles, static lighting, essential UI only
+
+### Performance Targets:
+- **Target FPS:** 50 fps (multiple CRT effects and particles)
+- **Max Draw Calls:** 20 per frame
+- **Memory Footprint:** 48MB maximum for location
+
+> ⚠ CONFLICT: legacy spec says 45 fps target — author to decide.
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Exhibit Elements:
+- **Enhanced CRT Borders** (0, 0, 128x96) - Clear monitor distinction
+- **High Contrast Plaques** (128, 0, 128x64) - Readable academic text
+- **Status Effect Outlines** (256, 0, 64x64) - Clear effect boundaries
+
+### Motion Sensitivity Options:
+- **Static CRT Alternative** (0, 64, 128x96) - No flicker effects
+- **Reduced Particle Mode** (128, 64, 96x64) - Minimal dust movement
+- **Gentle Animation Speed** (224, 64, 64x64) - Slower state changes
+
+### Visual Audio Cues:
+- **Dial-up Screech Visual** (0, 128, 48x32) - Sound representation
+- **MIDI Autoplay Indicator** (48, 128, 32x32) - Audio-independent notification
+- **Status Effect Visual** (80, 128, 32x32) - Effect without audio
+
+### Clear Navigation Elements:
+- **Enhanced Interactive Zones** (0, 160, 64x48) - Obvious touch targets
+- **Password Field Highlighting** (64, 160, 128x24) - Clear input areas
+- **Achievement Clarity** (192, 160, 128x48) - High contrast notifications
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility
+- Coordinate system: Top-left origin (0,0)
+- Animation system: Frame-based with JSON timing data
+- Time-lock system: 3:33 AM password puzzle activation
+- Status effect system: Random MIDI roulette mechanics
+- Achievement system: Title unlocks for dedicated trauma tourism
+
+### Audio Sync Points:
+- Dial-up screech syncs with visual waves
+- MIDI autoplay triggers sparkle effects
+- Chuck E. Cheese tracking has servo audio
+- Status effect application has audio feedback
+- Password puzzle success plays corrupted Windows chimes
+- Random "You've Got Mail!" announcements
+
+### Quest Integration:
+- **Meme Black Market Access:** Three-step password sequence
+- **ICQ Network Hub:** CRT terminals connect to digital underground
+- **Lord Pilsner Lore:** Embarrassing file discoveries on random terminals
+- **Achievement Unlocks:** Curator of Cursed Web, Digital Archaeologist titles
+- **Cross-Location:** Graffiti hints from Velvet Curtain Club bathroom
+
+### Performance Considerations:
+- Multiple CRT flicker effects require optimization
+- Dust particle systems scale with device capability
+- Status effect overlays must maintain readability
+- Time-lock system needs precise timing without performance impact
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "Weaponized nostalgia meets psychological damage tourism"
+- **Color Mood:** CRT blue dominance, vaporwave pink accents, dusty institutional grey
+- **Lighting:** Multiple CRT glow sources, incense shrine illumination, dust beam effects
+- **Texture:** Digital decay, institutional neglect, inappropriate academic reverence
+
+### Character Design Philosophy:
+- **Museum Curator:** Treats internet garbage with scholarly seriousness
+- **Security Guard:** Provides authentic digital trauma validation
+- **Meme Market Contact:** Mysterious gatekeeper of underground economy
+- **Chuck E. Cheese:** Atmospheric horror through obvious placement error
+
+### Environmental Storytelling:
+- Former Blockbuster shell suggests cultural transition
+- Academic plaques treating malware as artifacts
+- Incense burning at consumer electronics altar
+- Crime scene tape around harmless smiley face
+- Obvious animatronic placement error ignored by staff
+
+### Museum Satire Precision:
+- Deadpan curation of obviously worthless ephemera
+- Academic reverence for digital trauma experiences
+- Institutional preservation of psychological damage
+- Tourist exploitation disguised as cultural education
+
+---
+
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (12 Total):
@@ -350,6 +555,13 @@ This document provides exact specifications for all PNG files needed for the Int
 | Color Space | sRGB |
 | DPI | 72 |
 | Naming | snake_case |
+| Compression | Lossless PNG |
+| Layer Organization | Preserve for future exhibit updates |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications
+- **Backup:** Master PSD/Photoshop with organized layer groups
+- **Documentation:** Animation timing sheet, password puzzle guide, status effect reference
 
 ---
 
@@ -387,3 +599,61 @@ This document provides exact specifications for all PNG files needed for the Int
 | Social Media | ✅ PASS |
 
 **The Internet History Museum becomes the essential cursed nostalgia hub where exhibits actively harm visitors, 3:33 AM unlocks the Meme Black Market password, Lord Pilsner's embarrassing digital history gets exposed, and a Chuck E. Cheese animatronic stares blankly from the Furbies exhibit for reasons nobody explains!**
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] Former Blockbuster exterior recognizable but museum-converted
+- [ ] Comic Sans banner glitches authentically
+- [ ] Hall of Modems arranged with archaeological reverence
+- [ ] GeoCities diorama has twinkling GIF stars and MIDI effects
+- [ ] Angelfire loading bar visibly stuck at 87% since 2002
+- [ ] Habbo crime scene has evidence markers and velvet rope
+- [ ] MSN Messenger memorial has flickering green lights
+- [ ] iMac G3 altar shows incense, burned CDs, religious presentation
+- [ ] Chuck E. Cheese obviously misplaced in Furbies exhibit
+- [ ] Museum curator treats garbage with academic seriousness
+- [ ] Security guard has thousand-yard stare and digital trauma
+- [ ] Meme market contact only visible during 3:33 AM window
+- [ ] CRT monitors flicker with period-accurate screensavers
+- [ ] Password terminals activate only at magic hour
+- [ ] Status effect particles clearly indicate Cringe/Inspired/Pixel PTSD
+- [ ] Dust motes drift through CRT light beams authentically
+- [ ] All particle effects support nostalgic color palette
+- [ ] UI elements use institutional museum theming
+- [ ] Color palette matches hex codes exactly (#4169E1, #FF6EC7, #A9A9A9)
+- [ ] Accessibility alternatives included for motion sensitivity
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserved with organized layers
+
+### Quality Checkpoints:
+- [ ] Password puzzle system intuitive but time-locked
+- [ ] Status effect randomization balanced and clear
+- [ ] NPCs convey "psychological damage tourism" satire
+- [ ] Environmental effects support weaponized nostalgia theme
+- [ ] Academic reverence for digital garbage feels appropriately absurd
+- [ ] Mobile performance optimized for multiple CRT effects
+- [ ] All elements support "cursed yearbook" atmosphere
+- [ ] Social media viral potential maximized
+- [ ] Museum satire precision targets nostalgia exploitation not legitimate history
+- [ ] Cross-location integration with Meme Black Market functional
+
+### Cultural Sensitivity Verification:
+- [ ] Satirical targets focus on nostalgia commodification, not individual trauma
+- [ ] Academic museum presentation critiques institutional pretension
+- [ ] Digital archaeology jokes punch up at cultural gatekeeping
+- [ ] Status effects provide gameplay challenge without glorifying mental health issues
+- [ ] Chuck E. Cheese placement error creates absurdist humor not corporate mockery
+- [ ] Early internet history treated with appropriate complexity (both revolutionary and cringe)
+
+### Technical Implementation Readiness:
+- [ ] Time-lock system specifications clear for 3:33 AM activation
+- [ ] Status effect randomization mechanics fully defined
+- [ ] Cross-location password puzzle integration mapped
+- [ ] Lord Pilsner lore discovery system documented
+- [ ] Achievement unlock conditions specified
+- [ ] Mobile optimization scaling documented for all LOD levels
+- [ ] Audio sync points identified for particle effects
+- [ ] Quest hub functionality integrated with ICQ network system

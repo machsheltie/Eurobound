@@ -147,6 +147,18 @@ This document provides exact specifications for all PNG files needed for the Mys
 | Organic Digital | (160, 320) | 96x64 | Mixed materials |
 | Pulsing Package | (256, 320) | 96x64 | Serving container |
 
+### Food Item Art Notes (ported from legacy spec):
+- **Gummy Bears Mixed In** - Colorful candy corruption visible
+- **Grey Sweaty Tube Meat** - Unnaturally moist appearance
+- **Candy Stick Inappropriate** - Child-targeted presentation
+- **Previous Bite Marks** - Evidence of prior consumption
+- **Organic Digital Mix** - Grotesque fusion aesthetic
+
+### Food Item Color Requirements (ported from legacy spec):
+- Use sickly greens (#39FF14) for "enhanced" items
+- Meat browns range: #8B4513 (saddle brown) to #696969 (dim gray)
+- Glow effects: #00FF00 (lime) with 50% opacity pulse
+
 ---
 
 ## 🎡 Sprite Sheet 4: Environment
@@ -172,6 +184,15 @@ This document provides exact specifications for all PNG files needed for the Mys
 | Electrical Sparks | (0, 256) | 64x64 | Wire issues |
 | Sanitation Nightmare | (64, 256) | 96x64 | Health codes |
 | Structural Concerns | (160, 256) | 96x64 | Stability |
+| No Authority Figures | (256, 256) | 96x48 | Complete lack of oversight (ported from legacy; position assigned in BASE layout) |
+
+### Atmosphere Particles (ported from legacy spec, 48x32 each):
+| Particle | Position | Description |
+|----------|----------|-------------|
+| Steam from Cooking | (0, 320) | Food prep vapor |
+| Grease Vapor Rising | (48, 320) | Oil smoke |
+| Carnival Dust/Sawdust | (96, 320) | Floating debris |
+| Mystery Substance Particles | (144, 320) | Unidentifiable mist |
 
 ---
 
@@ -246,6 +267,14 @@ This document provides exact specifications for all PNG files needed for the Mys
 | Honk Moment | (256, 128) | Clown honk |
 | Steam Hiss | (320, 128) | Pressure release |
 
+### Disclaimer Subtexts (ported from legacy spec, 256x32 each):
+| Sign | Size | Description |
+|------|------|-------------|
+| "NO REFUNDS EVER" | 256x32 | Aggressive policy |
+| "CONSUME AT OWN RISK" | 256x32 | Liability waiver |
+
+*Positions to be assigned within/appended to the sheet layout ("(Not Legally Binding)" already exists as glitch state 3 above).*
+
 ---
 
 ## 🎮 Sprite Sheet 7: UI Elements
@@ -298,6 +327,73 @@ This document provides exact specifications for all PNG files needed for the Mys
 
 ---
 
+## 📐 Mobile Optimization Requirements
+
+### Texture Compression by Platform:
+- **iOS:** PVRTC 4BPP for carnival textures, maintains color vibrancy
+- **Android:** ETC2 with alpha for particle transparency support
+- **Fallback:** PNG at high quality for character detail preservation
+
+### Sprite Atlasing Strategy:
+- **Character Atlas:** Chef Chuckles + Carousel Rotisserie combined (1024x1024)
+- **Food Items Atlas:** All menu items + particle effects (512x512)
+- **Environment Atlas:** Circus background + hazards combined (1024x768)
+- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+
+### LOD (Level of Detail) Scaling:
+- **High-End Devices:** Full particle systems, strobe effects, detailed animations
+- **Medium Devices:** Reduced particle density, simplified lighting
+- **Low-End Devices:** Minimal particles, static lighting, basic animations
+- **Potato Mode:** Essential elements only, no effects
+
+### Performance Targets:
+- **Target FPS:** 60 fps on iPhone 8 baseline
+- **Max Draw Calls:** 15 per frame
+- **Memory Footprint:** 35MB maximum for location
+
+> ⚠ CONFLICT: legacy spec says 60 fps target / 15 max draw calls, but BASE Location Validation records 45 FPS, 14 draws as PASS — author to decide.
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Alternatives:
+- **Chef Chuckles Enhanced** - Higher contrast for visibility
+- **Menu Items Readable** - Emphasized text and borders
+- **Sign Text Emphasized** - Increased legibility
+
+### Photosensitive Accommodations:
+**CRITICAL FOR COMPLIANCE:**
+- **Strobe Reduced Lighting** - Slowed flash rate (max 3 flashes/second)
+- **Static Carnival Lights** - No flashing alternative mode
+- **No Flash Mode Overlay** - Complete strobe disable option
+
+All strobe effects must be **completely disableable** for photosensitive players per WCAG 2.1 guidelines.
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility
+- Coordinate system: Top-left origin (0,0)
+- Animation system: Frame-based with JSON timing data
+- Particle systems: Use Godot's CPUParticles2D for mobile performance
+
+### Audio Sync Points:
+- Butterfly knife flips sync with "whoosh" sound effects
+- Carousel rotation requires continuous mechanical hum
+- Sign glitches trigger electrical buzz at transition frames
+- 60-second clown honk cycle must align with sign animation loop
+
+### Cross-Location Integration:
+- Chef Chuckles references other Cirque du Shady performers
+- Menu items tie into "Great Döner Debate" quest system
+- Clown gear visuals must match other circus vendor aesthetics
+- Environmental details foreshadow "Carnival Carnage" secret quest
+
+---
+
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (7 Total):
@@ -316,6 +412,45 @@ This document provides exact specifications for all PNG files needed for the Mys
 | Color Space | sRGB |
 | DPI | 72 |
 | Naming | snake_case |
+
+### Delivery Format (ported from legacy spec):
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/Photoshop files with organized layer groups
+- **Documentation:** Layer naming guide for future updates
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "Carnival grift meets dark web wet market"
+- **Color Mood:** Toxic neon greens, danger crimsons, shadowy purples
+- **Lighting:** Harsh carnival lights creating deep shadows and unease
+- **Texture:** Greasy, sweaty, unsettlingly organic surfaces
+
+### Chef Chuckles Character Direction:
+- **Personality:** Deadpan menace disguised as carnival entertainment
+- **Key Visual:** Cracked porcelain clown mask over muscular arms in sleeveless tuxedo
+- **Movement:** Expert butterfly knife work, smooth and threatening
+- **Expression:** Never breaks character, maintaining unsettling professionalism
+
+### Food Design Philosophy:
+- Each item must look simultaneously **appealing and horrifying**
+- Obvious quality/safety issues presented as normal carnival fare
+- Supernatural elements (whispers, glows) integrated naturally
+- Players should feel both hungry and concerned
+
+### Environmental Storytelling:
+- Visible health code violations treated as atmospheric flavor
+- Background suggests broader circus conspiracy
+- Safety hazards ignored by desperate customers
+- Costume economy hints at larger underground network
+
+### Visual References to Capture Mood:
+- Carnival horror aesthetic (Tim Burton, American Horror Story: Freak Show)
+- Food truck culture (street vendor authenticity)
+- Eastern European traveling circus atmosphere
+- EarthBound's quirky enemy design philosophy
 
 ---
 
@@ -353,3 +488,28 @@ This document provides exact specifications for all PNG files needed for the Mys
 | Social Media | ✅ PASS |
 
 **The Mystery Meat Cart becomes the essential carnival grift station where Chef Chuckles delivers threatening food puns through a cracked clown mask, the carousel rotisserie spins mystery meats in toxic neon glow, sausages whisper dark secrets, and the Digestive Daredevil passive rewards those brave enough to consume three different items!**
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All 7 PNG files match exact dimension specifications *(legacy spec said 6 — BASE requires 7)*
+- [ ] Sprite coordinates align with JSON mapping data
+- [ ] Animation frame counts match technical requirements
+- [ ] Color palette matches hex codes provided
+- [ ] Accessibility alternatives included
+- [ ] File naming follows snake_case convention
+- [ ] Master source files preserved for future edits
+- [ ] Test import in Godot to verify sprite alignment
+
+### Quality Checkpoints:
+- [ ] Chef Chuckles conveys "threatening carnival professional"
+- [ ] Food items balance appealing and horrifying aesthetics
+- [ ] Carousel rotisserie has clear mechanical animation flow
+- [ ] Environment captures circus grift atmosphere
+- [ ] Particle effects enhance without overwhelming scene
+- [ ] Sign glitch transitions feel authentically broken
+- [ ] All elements work together cohesively
+
+**Once validated, assets are ready for Godot integration and the Mystery Meat Cart location is complete!**

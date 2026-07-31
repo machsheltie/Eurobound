@@ -60,6 +60,7 @@ This document provides exact specifications for all PNG files needed for the Lat
 ## 👨‍🍳 Sprite Sheet 2: Mr. Chadz Vendor
 **File:** `mr_chadz_kebab_vendor.png`  
 **Dimensions:** 512x512 pixels  
+**Color Palette:** #FF1493 (glittery crop top), #4B4B4B (bulletproof vest), #FFD700 (gold accents), #000000 (burner phone)
 
 ### Idle Phone Checking (96x128 each):
 | Frame | Position | Description |
@@ -91,12 +92,20 @@ This document provides exact specifications for all PNG files needed for the Lat
 | Glittery Crop Top | (0, 384) | 64x64 | Essential absurdity |
 | Bulletproof Vest | (64, 384) | 64x64 | Practical fashion |
 | Burner Phone | (128, 384) | 32x48 | Business device |
+| 6'4" Proportions | (368, 0) | 64x96 | Full height reference sprite *(coordinates from legacy 64x96 grid — re-layout needed for new 96x128 grid)* |
+| Deadpan Expression | (432, 0) | 32x32 | Face close-up, no emotion *(coordinates from legacy 64x96 grid — re-layout needed for new 96x128 grid)* |
 
 **Mr. Chadz Visual Notes:**
 - 6'4" imposing height with deadpan expression
 - Glittery crop top OVER bulletproof vest (non-negotiable)
 - One-handed food service while on phone
 - Bouncer-turned-kebabist energy
+
+### Mr. Chadz Character Direction:
+- **Personality:** Deadpan bouncer-turned-kebabist, sketchy but skilled
+- **Key Visual:** Glittery crop top over bulletproof vest (absurd contrast)
+- **Movement:** One-handed food service while managing phone calls
+- **Expression:** Never breaks deadpan, treats violations as selling points
 
 ---
 
@@ -250,6 +259,12 @@ This document provides exact specifications for all PNG files needed for the Lat
 | Plastic Fragment | (16, 112) | 12x8 | Floating |
 | Food Wrapper | (28, 112) | 20x16 | Tumbling |
 
+### Particle Emission Rates:
+- **Cooking Steam:** 5 particles/second from rotisserie
+- **Grease Vapor:** 3 particles/second from drip tray
+- **Cigarette Smoke:** 2 particles/second ambient
+- **Urban Debris:** Random flutter 1 particle every 2-3 seconds
+
 ---
 
 ## 🎮 Sprite Sheet 6: UI Elements
@@ -313,6 +328,89 @@ This document provides exact specifications for all PNG files needed for the Lat
 
 ---
 
+## 📐 Mobile Optimization Requirements
+
+### Texture Compression by Platform:
+- **iOS:** PVRTC 4BPP for fluorescent lighting, maintains harsh brightness
+- **Android:** ETC2 with alpha for steam particle transparency
+- **Fallback:** PNG at high quality for menu item detail preservation
+
+### Sprite Atlasing Strategy:
+- **Cart Complete Atlas:** Base + rotisserie + signage + lighting (1024x768)
+- **Character Atlas:** Mr. Chadz all states + outfit elements (512x512)
+- **Menu Items Atlas:** All 8 food items with variations (1024x512)
+- **Environment Atlas:** Puddles + debris + fence + rat (1024x768)
+- **Effects Atlas:** All particle systems combined (512x256)
+- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+
+### LOD (Level of Detail) Scaling:
+- **High-End Devices:** Full steam effects, 4-frame rotisserie, rainbow grease shimmer
+- **Medium Devices:** Reduced particles, 2-frame rotisserie, simplified grease effects
+- **Low-End Devices:** Minimal steam, static rotisserie position, no shimmer animation
+- **Potato Mode:** Essential cart and character only, no particle effects
+
+### Performance Targets:
+- **Target FPS:** 50 fps (open environment optimization)
+- **Max Draw Calls:** 12 per frame
+- **Memory Footprint:** 30MB maximum for location
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+*(coordinates from legacy 64x96 grid — re-layout needed for new 96x128 grid)*
+
+### High Contrast Menu Items:
+- **Enhanced Food Visibility** (0, 448, 512x64) - All menu items with increased contrast
+- **Status Effect Icons Clear** (0, 512, 256x32) - Buff/debuff indicators emphasized
+- **Price Display Readable** (256, 512, 128x32) - Kebab coin costs visible
+
+### Visual Audio Cues:
+- **Sizzle Visual** (0, 544, 24x24) - Cooking sound indicator
+- **Phone Buzz Visual** (24, 544, 24x24) - Mr. Chadz call notification
+- **LED Flicker Warning** (48, 544, 32x16) - Strobe alternative indicator
+
+### Motion Sensitivity Options:
+- **Static Rotisserie** (384, 544, 64x96) - Non-rotating meat alternative
+- **Reduced Steam** (448, 544, 32x48) - Minimal particle mode
+- **No Flicker Lighting** (480, 544, 128x48) - Steady fluorescent alternative
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility
+- Coordinate system: Top-left origin (0,0)
+- Animation system: Frame-based with JSON timing
+- Particle systems: CPUParticles2D for mobile performance
+- Menu system: Inventory UI integration for 8 items
+
+### Audio Sync Points:
+- Rotisserie hum syncs with rotation visual
+- Grease sizzle punctuates active cooking state
+- Mr. Chadz phone notifications trigger animation
+- LED electrical buzz on flicker frames
+- Menu item purchases have unique audio per food type
+
+### Quest Integration:
+- **Great Döner Debate:** "Belly Of Chadz" serves as Debaucheryville sample
+- **Status Effect Pipeline:** Hangover cures connect to club/arcade locations
+- **Repeat Customer:** Purchase tracking unlocks backstory dialogue
+- **Achievement System:** Contributes to "World's Pickiest Drunk" badge
+
+---
+
+## 🎨 Art Direction Summary
+
+### Environmental Storytelling:
+- Rainbow grease puddles beautiful despite being hazards
+- Rat gnawing pepper obviously present but casually accepted
+- Post-party debris shows years of late-night operation
+- NFT graffiti represents cultural moment without dominating
+
+---
+
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (6 Total):
@@ -349,6 +447,36 @@ This document provides exact specifications for all PNG files needed for the Lat
 - "Meat's mostly legal. Heat lamp's all vibes."
 - "That rat? That's Carlos. He's quality control."
 - "The Meat You Regret Tomorrow™"
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All 5 PNG files match exact dimensions
+> ⚠ CONFLICT: legacy spec says 5 PNG files — BASE requires 6 (adds `kebab_stand_ui.png`) — author to decide.
+- [ ] Mr. Chadz 6'4" proportions feel imposing
+- [ ] Glittery crop top contrasts absurdly with bulletproof vest
+- [ ] All 8 menu items balance disgusting and appealing
+- [ ] Rotisserie 4-frame animation flows smoothly at 2 RPM
+- [ ] Rainbow grease puddles shimmer beautifully
+- [ ] Rat gnawing animation obvious but casual
+- [ ] LED strip flicker creates electrical instability
+- [ ] Steam particles emit from all correct points
+- [ ] Color palette matches hex codes
+- [ ] Accessibility alternatives included
+- [ ] File naming follows convention
+- [ ] Master files preserved for updates
+
+### Quality Checkpoints:
+- [ ] Mr. Chadz captures deadpan sketchy entrepreneur perfectly
+- [ ] Food items create strategic gameplay decisions
+- [ ] Environmental details tell post-party operation story
+- [ ] Health code violations normalized as atmosphere
+- [ ] Mystery meat both repulsive and appealing when hungry
+- [ ] All elements support "desperate tourists meet exploitation" theme
+- [ ] Social media viral potential maximized
+- [ ] Mobile performance optimized for particle effects
 
 ---
 

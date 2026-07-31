@@ -87,6 +87,18 @@ This document provides exact specifications for all PNG files needed for Cybersp
 
 **Dmitri Notes:** 50s, nicotine-stained fingers, faded Adidas tracksuit, Y2K survivor aesthetic
 
+### Dmitri "The Router" Complete Set (ported from legacy spec):
+- **Idle Chain Smoking** (0, 0, 64x96) - Default pose with cigarette, deadpan expression
+- **Dispensing Wisdom** (64, 0, 64x96) - Philosophical gesture while exhaling smoke
+- **Collecting Payment** (128, 0, 64x96) - Hand extended, serious business expression
+- **Technical Support Gesture** (192, 0, 64x96) - Pointing at obviously broken equipment
+- **Philosophical Contemplation** (256, 0, 64x96) - Deep thought about American tourists
+- **Late Night Exhaustion** (320, 0, 64x96) - 3 AM special wisdom mode
+- **Lawsuit Commentary Pose** (384, 0, 64x96) - Casual dismissal of legal problems
+- **Restart Everything Gesture** (448, 0, 64x96) - Universal technical solution
+
+> ⚠ CONFLICT: legacy spec says NPC base sprites are 64x96 (512x384 sheet) — BASE uses 48x64 on a 512x512 sheet; legacy coordinates would need remapping — author to decide.
+
 ### CyberGoth Katka (48x64 each):
 | State | Position | Size | Description |
 |-------|----------|------|-------------|
@@ -97,6 +109,16 @@ This document provides exact specifications for all PNG files needed for Cybersp
 
 **Katka Notes:** Early 20s, cyber-goth, thinks she's Anonymous, fingerless gloves
 
+### CyberGoth Katka Complete Set (ported from legacy spec):
+- **Hacker Wannabe Pose** (0, 96, 64x96) - Anonymous mask adjustment, trying to look mysterious
+- **Energy Drink Consumption** (64, 96, 64x96) - Rapid consumption of hacker fuel
+- **Meme Page Management** (128, 96, 64x96) - Updating 47-follower social media empire
+- **Intel Trading Gesture** (192, 96, 64x96) - Negotiating for American candy payment
+- **Anonymous Mask Adjustment** (256, 96, 64x96) - Maintaining "subtle" anonymity
+- **American Candy Request** (320, 96, 64x96) - Specific Skittles vs M&Ms preferences
+- **Social Media Viral Moment** (384, 96, 64x96) - Creating "authentic" hacker content
+- **Information Broker Mode** (448, 96, 64x96) - Providing questionable intelligence
+
 ### Other NPCs:
 | NPC | Position | Size | Description |
 |-----|----------|------|-------------|
@@ -104,6 +126,32 @@ This document provides exact specifications for all PNG files needed for Cybersp
 | Crypto Miner | (0, 192) | 48x64 | Watching rig |
 | Digital Nomad | (0, 256) | 48x64 | Banking obliviously |
 | ICQ Veteran | (0, 320) | 48x64 | Nostalgic look |
+
+### Additional Patron Archetypes (ported from legacy spec):
+- **Passed Out Gamer** (256, 192, 64x96) - Counter-Strike marathon casualty
+- **Security Conscious Tourist** (320, 192, 64x96) - Reading warnings while ignoring them
+- **Government Surveillance** (384, 192, 64x96) - Obviously monitoring everything
+- **Bootleg Software Dealer** (448, 192, 64x96) - CD collection and furtive transactions
+
+### Scammer Network Representatives (ported from legacy spec):
+- **Tony420 Fake Crypto** (0, 288, 64x96) - Crypto scammer with obvious fake wallet
+- **Miss Morphine Mysterious** (64, 288, 64x96) - Identity mystery with multiple personas
+- **NarcGreg Infiltration Attempt** (128, 288, 64x96) - Terrible undercover work
+- **Coordinated Team Leader** (192, 288, 64x96) - Professional tourist targeting
+- **Government Agent Obvious** (256, 288, 64x96) - Surveillance barely disguised
+- **Underground Network Contact** (320, 288, 64x96) - Legitimate digital underground
+- **Romance Scammer Active** (384, 288, 64x96) - Emotional manipulation specialist
+- **Tech Support Scammer** (448, 288, 64x96) - Fake virus warning coordinator
+
+### NPC Accessories & Props (ported from legacy spec):
+- **Cigarette Collection** (0, 384, 32x16) - Various smoking stages and brands
+- **Energy Drink Empties** (32, 384, 24x32) - Katka's consumption evidence
+- **Calculator Variety** (56, 384, 32x16) - Dmitri's mysterious multiple calculators
+- **Anonymous Mask** (88, 384, 24x24) - Katka's "subtle" disguise prop
+- **ICQ Number Badge** (112, 384, 24x16) - 6-digit seniority display
+- **Mining Rig Status** (136, 384, 32x24) - Religious devotion equipment
+- **Scammer Evidence** (168, 384, 48x32) - Various fake documents and schemes
+- **Government Surveillance Gear** (216, 384, 32x24) - Obvious monitoring equipment
 
 ---
 
@@ -140,6 +188,16 @@ This document provides exact specifications for all PNG files needed for Cybersp
 | ICQ Contact Board | (0, 240) | 96x64 | Circled names |
 | CryptoDöner Machine | (0, 368) | 64x96 | 1-3 AM only |
 | Metro Door Locked | (128, 368) | 48x80 | Sting reward |
+
+### Hidden Metro Access System (ported from legacy spec):
+- **Back Exit Door Locked** (0, 240, 64x96) - Quest completion required
+- **Back Exit Door Open** (64, 240, 64x96) - Metro access revealed
+- **Metro Password Graffiti** (128, 240, 48x32) - Bathroom intel location
+- **Underground Tunnel Entrance** (176, 240, 48x96) - Passage to metro platform
+- **Quest Completion Gate** (224, 240, 32x96) - Sting operation requirement indicator
+- **Metro Password Invalid** (384, 480, 128x96) - Daily password system failure (interface screen)
+
+> ⚠ CONFLICT: legacy spec says the locked metro door is "Back Exit Door Locked" at 64x96 — BASE's Metro Door Locked is 48x80 — author to decide.
 
 ---
 
@@ -222,6 +280,88 @@ This document provides exact specifications for all PNG files needed for Cybersp
 - **FPS:** 4
 - **Movement:** Upward with horizontal variance
 - **Spawn:** Ashtrays and NPC hands
+
+---
+
+## ♿ Accessibility Sprite Requirements (ported from legacy spec)
+
+### High Contrast Terminal Elements:
+- **Enhanced CRT Borders** (0, 0, 128x96) - Clear monitor distinction from background
+- **High Contrast ICQ Interface** (128, 0, 128x64) - Readable chat text and UI elements
+- **Status Effect Outlines** (256, 0, 64x64) - Clear effect boundary indication
+
+### Motion Sensitivity Alternatives:
+- **Static CRT Alternative** (0, 64, 128x96) - No flicker effects for photosensitive users
+- **Reduced Smoke Mode** (128, 64, 96x64) - Minimal particle movement
+- **Gentle Neon Animation** (224, 64, 64x48) - Slower entrance sign flicker rate
+
+### Visual Audio Cues:
+- **ICQ Message Visual** (0, 112, 48x32) - Chat notification without sound dependency
+- **Network Activity Indicator** (48, 112, 32x32) - Data transfer visual representation
+- **System Error Visual** (80, 112, 48x32) - Blue screen crash without audio
+
+### Clear Navigation Elements:
+- **Enhanced Interactive Zones** (0, 144, 64x48) - Obvious terminal interaction areas
+- **Payment Interface Highlighting** (64, 144, 96x24) - Clear service selection
+- **Quest Progress Visibility** (160, 144, 96x48) - High contrast sting operation tracking
+
+---
+
+## 📱 Mobile Optimization Requirements (ported from legacy spec)
+
+### Texture Compression by Platform:
+- **iOS:** PVRTC 4BPP for CRT glow and fluorescent lighting effects
+- **Android:** ETC2 with alpha for smoke transparency and particle systems
+- **Fallback:** PNG high quality for text readability in ICQ interfaces
+
+### Sprite Atlasing Strategy:
+- **Environment Complete Atlas:** Basement + terminals + furniture + infrastructure (1024x768)
+- **Interactive Objects Atlas:** CRTs + cables + payment + metro access (512x384)
+- **NPC Atlas:** Dmitri + Katka + patrons + scammers (512x384)
+- **Interface Screens Atlas:** Windows 98 + ICQ + quest progression (512x512)
+- **Particle Effects Atlas:** Smoke + static + status effects (512x256)
+- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+
+> ⚠ CONFLICT: legacy spec says atlases follow the legacy 5-sheet layout above — BASE's File Delivery Checklist defines 6 different sheet files/dimensions — author to decide.
+
+### LOD (Level of Detail) Scaling:
+- **High-End Devices:** Full CRT flicker, all smoke particles, complete interface animations
+- **Medium Devices:** Reduced flicker rate, simplified smoke, basic status effects
+- **Low-End Devices:** Static monitors, minimal particles, essential animations only
+- **Potato Mode:** No particles, static lighting, basic terminal functionality
+
+### Performance Targets:
+- **Target FPS:** 45 fps (multiple CRT effects and smoke simulation)
+- **Max Draw Calls:** 18 per frame
+- **Memory Footprint:** 42MB maximum for location
+
+> ⚠ CONFLICT: legacy spec says 45 fps / 42MB — BASE validation table says 60 FPS, 18 draws, 45MB — author to decide.
+
+---
+
+## 🔧 Technical Integration Notes (ported from legacy spec)
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility
+- Coordinate system: Top-left origin (0,0)
+- Animation system: Frame-based with JSON timing data
+- ICQ system: Real-time chat interface simulation
+- Quest system: Multi-step sting operation coordination
+- Particle systems: CPUParticles2D for smoke and electronic effects
+
+### Audio Sync Points:
+- Dmitri philosophical commentary syncs with cigarette exhales
+- ICQ notifications sync with message alert flashes
+- Network activity syncs with ethernet cable data flow
+- CRT flicker syncs with period-authentic monitor sounds
+- Blue screen events sync with Windows 98 crash audio
+- Generator startup syncs with power outage particle effects
+
+### Cross-Location Dependencies:
+- **Shadow Exchange:** NFT hunting data coordination via Terminal 13
+- **Couchsurfing Chronicles:** Miss Morphine coordination and social engineering
+- **Metro Platform:** Underground transportation network access
+- **Bathroom Graffiti:** Daily password system and FlagMan wisdom integration
 
 ---
 

@@ -184,6 +184,8 @@ This document provides exact specifications for all PNG files needed for the Abs
 | Layer 3 (Melting Effect) | 0.5x player speed | Near-ground dynamic element |
 | Layer 4 (Circuit Overlay) | 0.7x player speed | Foreground framing |
 
+> ⚠ CONFLICT: legacy spec used parallax speeds 0.2/0.5/0.8/1.0 — author to decide.
+
 ### Animation Timing:
 | Animation | Frames | FPS | Duration | Loop |
 |-----------|--------|-----|----------|------|
@@ -260,8 +262,14 @@ This document provides exact specifications for all PNG files needed for the Abs
 | Glitch Fragment 1 | (176, 416) | 24x24 | Cyan pixelated fragment |
 | Glitch Fragment 2 | (200, 416) | 24x24 | Magenta glitch piece |
 | Glitch Fragment 3 | (224, 416) | 24x24 | Yellow digital debris |
+| Screen Tear Effect | (272, 416) | 48x32 | Visual distortion |
 
 **Glitch Animation:** 3 frames, 0.4s per frame, random drift movement
+
+### Particle Emission Rates:
+- **Green Mist:** 3 particles/second from damaged cabinets
+- **Electrical Sparks:** Random 1-4 second intervals
+- **Digital Artifacts:** Continuous low-density atmospheric effect
 
 ### UI Elements (Location-Specific):
 | Element | Position | Size | Description |
@@ -274,12 +282,53 @@ This document provides exact specifications for all PNG files needed for the Abs
 | Play Prompt | (288, 480) | 64x24 | "Play" interaction button |
 | Insert Token Prompt | (352, 480) | 96x24 | "Insert Token" prompt |
 
+### Colorblind-Friendly Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Enhanced Floor Tiles | (528, 416) | 256x96 | High contrast for light-up patterns |
+| Cabinet Screen Clarity | (784, 416) | 128x96 | Readable game content |
+| Mural Visibility | (912, 416) | 112x96 | Pattern-based instead of color-only |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Static Mural Alternative | (544, 0) | 480x256 | Non-parallax Green Fairy |
+| Reduced Flicker Lighting | (544, 256) | 256x128 | Gentle floor tile pulse |
+| Minimal Particle Mode | (800, 256) | 224x128 | Essential mist only |
+
 ### Accessibility Visual Cues:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Cabinet Sound Visual | (528, 384) | 32x32 | Audio indicator for deaf players |
 | Token Machine Beep | (560, 384) | 32x24 | Transaction confirmation visual |
 | Hidden Entrance Reveal | (592, 384) | 48x32 | Discovery cue without audio dependency |
+
+---
+
+## 📐 Mobile Optimization Requirements
+
+### Texture Compression by Platform:
+- **iOS:** PVRTC 4BPP for green glow effects, maintains toxic aesthetic
+- **Android:** ETC2 with alpha for mist particle transparency
+- **Fallback:** PNG high quality for mural parallax detail
+
+### Sprite Atlasing Strategy:
+- **Tileset Atlas:** Floor + walls + ceiling combined (1024x1024)
+- **Arcade Machines Atlas:** All cabinets + claw machine (2048x1024)
+- **Mural Parallax Atlas:** 4 layers separate for parallax effect (1024x512)
+- **Environmental Effects Atlas:** Bar + seating + particles (1024x512)
+- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+
+### LOD (Level of Detail) Scaling:
+- **High-End Devices:** Full particle systems, parallax mural, mirror lag effect
+- **Medium Devices:** Reduced particle density, simplified parallax (2 layers)
+- **Low-End Devices:** Static mural, minimal particles, no mirror lag
+- **Potato Mode:** Essential cabinets and bar only, no effects
+
+### Performance Targets:
+- **Target FPS:** 60 fps (psychedelic atmosphere requires smoothness)
+- **Max Draw Calls:** 15 per frame
+- **Memory Footprint:** 50MB maximum for location
 
 ---
 

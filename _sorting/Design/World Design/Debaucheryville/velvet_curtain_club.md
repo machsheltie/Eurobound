@@ -268,6 +268,13 @@ UNLOCKED (Permanent):
   - Fake potted plants with LED tips
   - Glossy black tables
   - QR-code cocktail menus
+- **Decorative Elements**:
+  - Neon aphorisms: "The Real Party's in Your Head"
+  - Gold trim throughout despite decay
+  - Burgundy fog machines creating atmosphere
+  - RGB LED shimmer throughout
+  - Graffiti art mixed with luxury pretension
+- **Hidden Areas**: VIP bathroom stall (Bravado check required), backstage DJ area, coat check pole clusters
 
 ### Theme & Vibe
 Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love letter to bad decisions made under chandeliers.
@@ -277,6 +284,9 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
   - Primary: Deep Burgundy (#800020), Velvet Purple (#4B0082)
   - Accent: Neon Pink (#FF1493), LED Blue (#00BFFF)
   - Background: Smoke Gray (#696969), Club Black (#1a1a1a)
+
+> ⚠ CONFLICT: legacy spec palette was Gold #FFD700 / Neon Cyan #00FFFF — author to decide.
+
 - **Lighting Setup**: 
   - Burgundy fog diffused
   - LED underglow animation
@@ -288,6 +298,39 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
   - Crowd ambient movement
   - DJ booth lighting
   - Velvet curtain sway
+
+---
+
+## 🎭 Satirical Design
+
+### Cultural Targets
+- **Primary Satirical Focus**: Nightclub exclusivity culture meeting party tourism desperation
+- **Secondary Targets**: Influencer lifestyle pretension, crypto bull run nostalgia, VIP bottle service scams, vape culture commercialization
+- **Cultural Specificity**: Eastern European nightclub scene weaponized for Western tourist consumption
+- **Humor Approach**: GTA-style nightclub satire with Eurotrip "exclusive club" absurdity
+- **Sensitivity Considerations**: Targets pretentious club culture and influencer lifestyle, not nightlife workers or genuine music scenes
+
+### Seedy Underbelly Elements
+- **Primary Vice**: Selling exclusivity and VIP status to tourists desperate to feel special
+- **City-Specific Comedy Operations**: Opera house ruins converted to decaying glamor nightclub
+- **Buffoon Exploitation**: Bros believe their children's birthday wristbands grant elite access
+- **Comedy of Errors**: The club is FREE but bros paid €90 for "VIP" entry that doesn't exist
+- **Consequence System**: Embarrassed status from social failures, Confused from vape/absinthe combinations
+
+### Buffoon Delusion Scenarios
+**What bros THINK is happening**: Their VIP wristbands intimidated the bouncer into granting elite access to an exclusive nightclub
+
+**What is ACTUALLY happening**: The club is free, the bouncer let them in to stop blocking the entrance, and their wristbands say "I'm 7!" in Czech
+
+**How impaired are they**: Sober enough to flash wristbands confidently, drunk enough to believe it works
+
+**Obvious signs they ignore**: 
+- Club has no cover charge
+- Bouncers laugh in Czech after they pass
+- Their wristbands are clearly plastic children's party bands
+- Other people walk in without any wristbands at all
+
+**How locals play along**: Bouncers mock them in Czech, patrons assume it's a bit, staff take photos to show friends later
 
 ---
 
@@ -371,6 +414,17 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 
 ---
 
+## 🎮 Gameplay Mechanics
+
+### Social Hub Functions
+- **Core Mechanic**: Central meeting location for NPCs, quest triggers, and couchsurfing encounters
+- **NPC Encounters**: Vape Witch Vanessa, influencer groups, club patrons with dialogue gems
+- **Quest Triggers**: Club Flyers quest (from Vanessa), Influencer Blood Ritual event, NFT Hunt bathroom discovery, couchsurf invitation
+- **No Combat**: Social interactions, Charisma checks, dialogue choices determine outcomes
+- **Atmosphere Focus**: Immersive nightclub environment for player downtime and social gameplay
+
+---
+
 ## 🎯 Quests & Events
 
 ### Entry Quest Gate
@@ -415,6 +469,8 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Location**: Near the bar, exhaling peach-mango clouds
 - **Trigger**: Talk to Vanessa after first entry
 - **Connection**: Leads to Club Flyers sidequest (see: `clubflyers.md`)
+
+> ⚠ CONFLICT: legacy referenced sidequest_club_flyers.md — verify correct filename.
 
 ---
 
