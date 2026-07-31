@@ -441,6 +441,7 @@
       "location_zone": "night_party_zone",
       "behavior": "triggered",
       "full_profile": "Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md",
+      "sprite_sheet": "queen_riviera_renata_beach.png",
 
       "schedule": {
         "present_hours": "Night-rave hours (22:00-04:00), night_party_zone, after beatdown_complete",
@@ -454,7 +455,7 @@
         }
       ],
 
-      "note": "Presence registration only. Appearance, personality, dialogue (including her canon-locked verbatim lines), sprite sheets — her true self plus the bros'-POV beer-goggles render, which is a filter and never her actual appearance — her rejection scene, and her post-cure callback are ALL owned by queen_riviera_renata.md and are deliberately not restated here. The outbreak scene itself is staged in interactions/bohemian_riviera_interactions.json (night_event_outbreak_01) and written in the quest file."
+      "note": "Presence registration only. Appearance, personality, dialogue (including her canon-locked verbatim lines), her rejection scene, and her post-cure callback are ALL owned by queen_riviera_renata.md and are deliberately not restated here. sprite_sheet above is her MAIN sheet — her actual self. The bros'-POV beer-goggles render (queen_riviera_renata_goggles_overlay.png) is a filter applied during night_event_outbreak_01 and is deliberately NOT registered as a sprite of hers, here or anywhere: the goggles' lie was her AGE, never her looks. The outbreak scene itself is staged in interactions/bohemian_riviera_interactions.json (night_event_outbreak_01) and written in the quest file."
     }
   ],
 

@@ -39,7 +39,7 @@
 
   "status_effects": {
     "environmental_buffs": [],
-    "atmospheric_debuffs": ["port_o_cologne", "the_herp"],
+    "atmospheric_debuffs": ["port_o_cologne"],
     "location_specific_states": {
       "port_o_cologne": {
         "canonical_ref": "Design/Mechanics/Battle/status_effects.md#Port-O-Cologne",
@@ -57,6 +57,7 @@
       },
       "the_herp": {
         "canonical_ref": "Design/Mechanics/Battle/status_effects.md#The-Herp",
+        "scope_note": "Deliberately NOT listed in atmospheric_debuffs: the_herp is a permanent party status that merely ORIGINATES here, not a location-sourced debuff. This block documents its origin only.",
         "trigger": "night_event_outbreak_01 at night_party_zone (debaucheryville_sidequest_nothing_is_getting_through_01) — scripted, guaranteed, applied to all three bros at scene end",
         "duration": "permanent_never_cured_suppressed_only_while_item_gold_circle_coin_equipped",
         "effects": {

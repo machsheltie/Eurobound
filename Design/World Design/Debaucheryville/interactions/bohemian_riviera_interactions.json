@@ -469,7 +469,7 @@
         {
           "phase": "party_montage_beer_goggles",
           "duration_seconds": 45,
-          "description": "Strobes, string lights, sound system. Beer goggles are rendered LITERALLY: three separate through-the-goggles moments, three oblivious bros, each unaware of the other two. The goggles render is a bros'-POV filter only and is never her actual appearance.",
+          "description": "Strobes, string lights, sound system. Beer goggles are rendered LITERALLY: three separate through-the-goggles moments, three oblivious bros, each unaware of the other two. Binding: the goggles' lie is her AGE — she renders as 22 — never her looks. She was never a downgrade, and no frame in this event is lit, framed, or scored as a horror reveal aimed at her.",
           "animation": "beer_goggles_filter_pass",
           "audio": "night_party_sound_system"
         },
@@ -483,26 +483,28 @@
         {
           "phase": "morning_seagulls",
           "duration_seconds": 15,
-          "description": "Hard cut to morning. Gulls that are almost certainly pigeons. Regret. Two bros upright, one cocooned in a sleeping bag.",
-          "audio": "gulls_and_flat_morning_river"
+          "description": "Hard cut to morning. Gulls that are almost certainly pigeons. Flat grey light. Chadwick and Bradley upright and destroyed; Lord Pilsner cocooned in a sleeping bag wearing only a leopard-print male thong that is not his.",
+          "audio": "gulls_and_flat_morning_river",
+          "note": "Casting is author-locked: thong-bro is LORD PILSNER on every playthrough; Chadwick and Bradley are the standing bros. Not assigned at scene setup."
         },
         {
           "phase": "thong_discovery",
           "duration_seconds": 15,
-          "description": "The two standing bros register the leopard-print male thong, which is not his. Implication only — no graphic content, morning-after wreckage exclusively.",
-          "speaker": "standing_bro",
+          "description": "Chadwick holds up an item of clothing he has already decided not to think about. Implication only — no graphic content, morning-after wreckage exclusively.",
+          "speaker": "chadwick",
           "dialogue": "Bro. Whose is this."
         },
         {
           "phase": "thong_discovery_reply",
           "duration_seconds": 8,
-          "speaker": "thong_bro",
+          "description": "From inside the bag, without opening his eyes. This line IS the acquisition trigger for item_leopard_print_thong — the inventory-grant stinger fires on it, to Lord Pilsner, permanently.",
+          "speaker": "lord_pilsner",
           "dialogue": "...Mine now?"
         },
         {
           "phase": "renata_exit",
           "duration_seconds": 25,
-          "description": "Renata rises from the other side of the sleeping bag, fully and sensibly dressed, sunglasses on. She pats each standing bro on the cheek exactly the way their mothers would, throws her arms around thong-bro's neck, kisses him on the mouth, and jogs off down the beach. She got exactly what she came for and is entirely at ease. She is not the joke.",
+          "description": "Renata rises from the other side of the sleeping bag STUNNING — impeccably put together, everything fastened, decades-deep bronze in the low morning light, enormous sunglasses on before she is fully upright. She redressed before she slept. She pats Chadwick and Bradley on the cheek, identically, exactly the way their mothers do (animation cheek_pat, twice, no variation), then throws both arms around Lord Pilsner's neck and kisses him on the mouth, then jogs off down the beach. She got exactly what she came for and is entirely at ease. She is not the joke; the frame is a straight comparison and it is not close.",
           "speaker": "debaucheryville_npc_queen_riviera_renata_01",
           "dialogue": "You're such nice boys!",
           "animation": "maternal_cheek_pats_then_jog_exit"
@@ -524,21 +526,36 @@
           "animation": "unison_scratch"
         },
         {
-          "phase": "poison_ivy_self_diagnosis",
-          "duration_seconds": 12,
-          "description": "Serene confidence, unbroken. The diagnosis is wrong and will remain wrong across two cities.",
+          "phase": "foliage_evidence",
+          "duration_seconds": 8,
+          "description": "Bradley offers the evidence. Lord Pilsner has not gotten up; he runs the entire diagnosis from inside the bag. Surrounding banter (Pilsner's 'Diagnostic. Everybody itching?', Chadwick's replies, the 'It's ivy, Brad.' exchange) is owned by the quest file and is deliberately not restated here.",
+          "speaker": "bradley",
+          "dialogue": "There was DEFINITELY foliage at that beach party.",
+          "note": "Canon-locked verbatim."
+        },
+        {
+          "phase": "pilsner_verdict",
+          "duration_seconds": 10,
+          "description": "Delivered from INSIDE the sleeping bag, flat on his back, still in the thong, with the authority of a diagnosis handed down from above — and enormous relief. Author-locked staging: he does not sit up for this line.",
           "speaker": "lord_pilsner",
-          "dialogue": "Relax. Poison ivy. There was DEFINITELY foliage at that beach party."
+          "dialogue": "POISON IVY. Thank God. Boys, that's poison ivy.",
+          "note": "Canon-locked verbatim."
         },
         {
           "phase": "bradley_crabs_line",
           "duration_seconds": 10,
+          "description": "Delivered to the open air with the gravity of a man reporting a symptom to a medical professional, after Pilsner has stood up and elected not to address what he is wearing.",
           "speaker": "bradley",
           "dialogue": "Bro it itches so bad it looks like we got CRABS.",
           "note": "Canon-locked verbatim."
         }
       ],
       "post_event_effects": [
+        {
+          "effect": "grant_item",
+          "target": "item_leopard_print_thong",
+          "value": "Lord Pilsner only, permanent — fires on the \"...Mine now?\" line during the thong_discovery_reply phase, not at event end. Cannot be sold, dropped, or traded. Its original owner is never established, here or anywhere."
+        },
         {
           "effect": "apply_status",
           "target": "the_herp",
@@ -560,7 +577,7 @@
           "value": "Nobody said it out loud."
         }
       ],
-      "note": "Staging stub only. This entry registers the event id, its trigger, its guaranteed outcome, and the canon-locked verbatim lines. Full scene text, direction, and branch prose are owned by Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md; Renata's design, sprites (true self plus the bros'-POV goggles render), and her side of the exit are owned by Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md. Do not expand this entry into a second copy of the scene."
+      "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — surrounding banter is replaced with pointers so this stub cannot drift from the quest file. Full scene text, direction, and branch prose are owned by Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md; Renata's design, sprites (true self plus the bros'-POV goggles render), and her side of the exit are owned by Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md. Do not expand this entry into a second copy of the scene."
     }
   ],
 

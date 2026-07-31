@@ -127,7 +127,7 @@ Once obtained, the Coin is **permanently party-bound**: it cannot be sold, dropp
 |----------|----------|------------------------|
 | Monsieur Aiguille | *straightens fractionally, addresses the Coin rather than the man wearing it* "Ah. It travels well. Keep it out of direct sun." | "He's calling me a valued client. I'm basically staff here now." |
 | Věra, Midnight Munchies General Store | *one glance at the lanyard, one nod, returns to the register* "Contained." | "She's impressed. That's a professional-to-professional nod." |
-| Hamstradamus | "THE GOLD CIRCLE STAYED THE BURNING. THE PROPHECY HELD. REPENT ANYWAY." | "He's saying we're prophesied. We're PROPHESIED, bro." |
+| Hamstradamus | "THE GOLD CIRCLE HAS STAYED THE BURNING. AS WAS WRITTEN. YOU DID NOT, HOWEVER, REPENT." | "He's saying we're prophesied. We're PROPHESIED, bro." |
 | Sinfonia opera-house patron | *reads the lanyard, reads it again, decides against a full sentence* "...Congratulations." | "Old money knows a collector when it sees one." |
 | Haberdashery night porter (PATH B only) | *long look at the lanyard, longer look at the opera cape, says nothing at all, files nothing at all* | *don't hear* |
 
@@ -200,8 +200,8 @@ Once obtained, the Coin is **permanently party-bound**: it cannot be sold, dropp
 ### Post-Credits: The Wall
 *Months later. Back home. The Coin is framed in a shadow box on a living-room wall, mounted the way other men mount championship belts, angled under its own small light.*
 
-*One bro, on the couch beneath it, absentmindedly scratching.*
-> "Best summer of my life."
+*Bradley, on the couch beneath it, absentmindedly scratching.*
+> **Bradley**: "Best summer of my life."
 
 ---
 
