@@ -278,15 +278,18 @@ When trying on equipment:
 **The Price Reveal**:
 - **Lord Pilsner**: "I'll take the cape! What's the damage?"
 - **Monsieur Aiguille**: "The Opera Cape is €200."
-- **Lord Pilsner**: "Two hundred! Bro, I could buy this cape TWICE. I might buy it twice."
+- **Lord Pilsner**: *stage-whisper to Chadwick and Bradley, audible from the street* "Two hundred. TWO HUNDRED, boys. He has no idea what he's sitting on. Nobody make a face. Act natural."
+- **Chadwick**: *making a face* "We are ROBBING this man."
+- **Lord Pilsner**: *to Aiguille, casual to the point of theatre* "Yeah, alright. I'll take it off your hands. Free up some rack space for you."
 - **Monsieur Aiguille**: "For a transformation. But if value isn't important to you..."
 - **Lord Pilsner**: "I— no, I GET it. It's an INVESTMENT."
 - **Monsieur Aiguille**: *slight smile* "Indeed."
+- **Monsieur Aiguille**: *to the assistant, at entirely normal volume, writing the ticket* "The cape is €200. It has been €200 all season. I should not like the gentleman to feel he had underpaid."
 
 **Post-Purchase**:
 - **Lord Pilsner**: *wearing cape* "I feel like a DIFFERENT PERSON."
 - **Monsieur Aiguille**: "You look like one. My work here is done."
-- **Chadwick**: "EIGHT HUNDRED EUROS, boys. That's not a receipt, that's a RÉSUMÉ. They don't let you spend that in here unless they can TELL. We're not tourists anymore — we're CLIENTELE."
+- **Chadwick**: "EIGHT HUNDRED EUROS, boys — for ALL of it. That's not a receipt, that's a RÉSUMÉ. They don't let you spend that in here unless they can TELL. We came out AHEAD and we're not tourists anymore — we're CLIENTELE."
 - **Bradley**: "Gregory believes the correct term is 'elevated.'"
 
 **The Vitrine (PATH A handover — "Nothing Is Getting Through")**:
