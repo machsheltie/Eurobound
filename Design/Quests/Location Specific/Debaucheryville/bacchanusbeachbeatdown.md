@@ -127,9 +127,9 @@ Pilsner's automatic wrong answer each round is delivered as a **toast**. He rais
 
 > "To the Emperors — who INVENTED the funnel — twelve hundred, final answer, and I'll fight the man who says otherwise."
 
-> "Gonna go ahead and say Belgium. Not because of the question. Because it's always Belgium and nobody has the guts to say it."
+> "Gonna go ahead and say Sinfonia. Not because of the question. Because it's always Sinfonia and nobody has the guts to say it."
 
-> "The answer is 'Prussia.' Bro, I don't even know what the question was, but statistically? Prussia."
+> "The answer is 'the Old Empire.' Bro, I don't even know what the question was, but statistically? The Old Empire."
 
 **Key Dialogue/Moments:**
 
@@ -144,7 +144,7 @@ Pilsner's automatic wrong answer each round is delivered as a **toast**. He rais
 **Lord Pilsner:** *to the crowd* "He's rattled."
 
 **NPC Reactions:**
-- **Jaxson Vane:** *lowering three cans simultaneously* "Ladies and gentlemen, the American has selected 'Prussia' for the second consecutive question, and I want to stress that neither question was about Prussia."
+- **Jaxson Vane:** *lowering three cans simultaneously* "Ladies and gentlemen, the American has selected 'the Old Empire' for the second consecutive question, and I want to stress that neither question was about the Old Empire."
 - **Janek Sýkora:** *quietly, to Petra, in Czech* "Should someone tell the sirs?" — **Petra:** "I told the sirs."
 - **Vacationer in the crowd:** *filming on a flip phone* "Is he okay? Is this a bit? Is that man okay?"
 
@@ -433,8 +433,8 @@ The two bros the player did *not* select answer automatically and are wrong auto
 **Decode Channels:** Gesture — the full sequence spells the whole sentence. Crowd — reacting to content, not difficulty. Cognate — *"řeka."* Prop — the river. The river is right there. The river has been right there the entire time.
 
 **The bro's confidently-wrong shout:**
-- **Lord Pilsner:** "The RHINE. Bro, all of them are the Rhine at some point, it's a whole system, it's like a subway."
-- **Chadwick:** "THE DANUBE. Every river in Europe is the Danube, they just rename it per country for tourism reasons."
+- **Lord Pilsner:** "The PUBLANDIA. Bro, all of them are the Publandia at some point, it's a whole system, it's like a subway."
+- **Chadwick:** "THE SINFONIA. Every river in Europe is the Sinfonia, they just rename it per country for tourism reasons."
 - **Bradley:** "There's no river. There's no river in this question. He's testing whether we'll invent a river."
 
 **Correct Answer:** **Bacchanus.**
@@ -442,7 +442,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 **On correct:** *Jaxson lowers the Oakleys a quarter inch — the only unscripted thing he does all episode. Then he puts them back.* **Jaxson Vane:** "...Huh." *The bro, of course, hears this as a compliment, and it is the closest thing to one he will get.*
 
 **Narrator:**
-> "The show had, at this point, told him the name of the river he was about to enter, shown him the toilet he would enter it in, and pointed at both. He answered 'the Danube.' The production had done everything it could."
+> "The show had, at this point, told him the name of the river he was about to enter, shown him the toilet he would enter it in, and pointed at both. He answered 'the Sinfonia.' The production had done everything it could."
 
 ---
 

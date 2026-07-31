@@ -67,7 +67,7 @@ Regional Specialty Items
     • Flavor: "The green fairy has some strong opinions" 
 "Guinness (Room Temperature)"
     • Gradual HP restore + "Philosophical" (wisdom buffs but slower reactions) 
-    • Flavor: "Tastes like liquid Ireland" 
+    • Flavor: "Tastes like liquid Publandia" 
 "Sachertorte Slice"
     • Expensive but provides "Refined" status (social interaction bonuses) 
     • Flavor: "Classy enough to impress, sweet enough to remember"

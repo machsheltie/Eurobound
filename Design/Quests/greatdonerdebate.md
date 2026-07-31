@@ -204,7 +204,7 @@ System:
 
 ### 📍 5. Leeman's Döner Palace
 **Location Type**: Consumable Vendor  
-**Location**: Shamsterdam — De Pijp District, near the Albert Cuyp Market
+**Location**: Shamsterdam — three streets off the canal ring, near the open-air market
 
 **Visuals**:
 A modest storefront with THREE rotating meat towers visible through the window, each one a different shade of golden-brown perfection. The smell of fresh-baked bread mingles with garlic and grilled meat. A small standing counter only — no seats, no luxury, just döner. Locals queue alongside confused tourists. Grease-stained menus in four languages, none spelled correctly. A hand-written sign: "32 YEARS SAME LOCATION. SAME QUALITY. SAME JUDGMENT."
@@ -217,7 +217,7 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 - "Thirty-two years I make döner. You think Debaucheryville knows döner? Debaucheryville knows NOTHING."
 - "The secret is the bread. Always the bread. Also the meat. And the sauce. Okay, everything is secret."
 - "Ah, Americans. You eat like you're afraid the food will fight back. EAT."
-- "My grandfather made döner in Istanbul. His grandfather made döner in Istanbul. You think some *clown* knows döner?"
+- "My grandfather made döner in the old country. His grandfather made döner in the old country. You think some *clown* knows döner?"
 
 **Menu Items**:
 | Item | Price | Effects |
@@ -236,11 +236,11 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum trays stack to the ceiling. The smell of melting cheese and frying potatoes is AGGRESSIVE. A massive hand-painted sign shows a cross-section of the kapsalon with labels: "FRIES (foundation), MEAT (structure), CHEESE (soul), SALAD (lies we tell ourselves), SAUCE (truth)." Drunk tourists and locals alike crowd the counter. Plastic forks scattered on the floor — casualties of structural failure.
 
 **Vendor**: "Big Willem"  
-6'5" Dutch-Turkish man, shaved head, gold chain, football jersey stretched over an impressive frame. Third-generation Amsterdammer whose grandfather was one of the first Turkish immigrants. Speaks in a thunderous mix of Dutch slang, Turkish endearments, and food philosophy. Has strong opinions about EVERYTHING, especially Rotterdam (where kapsalon was invented — he respects this grudgingly).
+6'5" Dutch-Turkish man, shaved head, gold chain, football jersey stretched over an impressive frame. Third-generation Shamsterdammer whose grandfather was one of the first Turkish immigrants. Speaks in a thunderous mix of Dutch slang, Turkish endearments, and food philosophy. Has strong opinions about EVERYTHING, especially the city where kapsalon was invented (he respects this grudgingly).
 
 **Catchphrases**:
 - "Kapsalon means 'hair salon.' You know why? Because the barber who invented it had VISION."
-- "In Rotterdam, we put cheese on everything. This is the Dutch way. Accept it."
+- "In the city where it was invented, they put cheese on everything. This is the way. Accept it."
 - "You want small? There is no small. There is only 'you are not ready' and 'regular.'"
 - "The fork will break. This is part of the experience. Use your hands like a WARRIOR."
 - "Debaucheryville döner? *spits* Publandia döner? *double spits* They wrap their shame in bread. WE MELT CHEESE ON OURS."
@@ -249,7 +249,7 @@ A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum 
 | Item | Price | Effects |
 |------|-------|---------|
 | The Full Kapsalon Experience | 12€ | Large aluminum tray: fries, döner meat, melted cheese, salad, garlic sauce, sambal. 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), 20% "Food Coma" risk (skip next turn) 🍟 Aluminum tray becomes inventory item |
-| Rotterdam Rules | 9€ | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Dutch Courage" buff (+5 Bravado for 1 hour) |
+| The Inventor's Cut | 9€ | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Canal Courage" buff (+5 Bravado for 1 hour) |
 | The Willem | 15€ | Large kapsalon with extra cheese, extra meat, extra sauce, extra EVERYTHING. ⚠️ Must pass Constitution check or immediate "Food Coma" 💪 If survived: +50 HP, "Kapsalon Conqueror" achievement |
 
 **Special Item — Kapsalon Battle Tray**:
@@ -310,12 +310,12 @@ Lord Pilsner: "Growth, gentlemen. Personal GROWTH."
 *The door crashes open. "Da" from Publandia stands there, 
 lamb wrap in hand, fury in his eyes.*
 
-Da: "I heard that. I HEARD THAT ACROSS THE NORTH SEA."
+Da: "I heard that. I HEARD THAT ACROSS THE CONTINENT."
 
 Lord Pilsner: "Da? How did you—"
 
 Da: "Twenty years I served you. TWENTY YEARS of lamb, 
-garlic, and love. And you come HERE? To the DUTCH? 
+garlic, and love. And you come HERE? To SHAMSTERDAM? 
 For CHEESE ON CHIPS?!"
 
 Big Willem: "Excuse me, this is KAPSALON, not 'cheese on chips'—"
@@ -345,7 +345,7 @@ Chef Chuckles: "We heard you. The kebab underground hears EVERYTHING."
 
 Lord Pilsner: "How did you two even get here—"
 
-Mr. Chadz: "Crypto conference in Rotterdam. We Ubered."
+Mr. Chadz: "Crypto conference in Shamsterdam. We Ubered."
 
 Chef Chuckles: *honks tiny horn* "The circus TRAVELS, my friend."
 
@@ -409,7 +409,7 @@ just... truth"
 
 ```
 Big Willem: "ENOUGH. There is only one way to settle this. 
-The way the Dutch have settled disputes for centuries."
+The way Shamsterdam has settled disputes for centuries."
 
 Mehmet: *appears from nowhere, arms crossed* 
 "The Meat Architect agrees. A formal tasting."
@@ -441,7 +441,7 @@ Chadwick: *already filming* "This is the SUPER BOWL of MEAT."
 - Player takes a bite of Shamsterdam döner (Leeman's or Kapsalon)
 - Quick-time event: More complex button sequence (the Dutch take this seriously)
 - Success: Full flavor appreciation
-- Failure: "You bit your tongue. The Dutch judge you."
+- Failure: "You bit your tongue. Shamsterdam judges you."
 
 **Round 3 — The Moment of Truth**
 - Both döners presented simultaneously
