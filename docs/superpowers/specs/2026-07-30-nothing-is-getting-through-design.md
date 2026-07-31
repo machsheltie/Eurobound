@@ -213,6 +213,10 @@ Do not reference it anywhere.
   kids' 8th-birthday-party bracelets they proudly believe are genuine VIP. Any line where a bro
   wonders whether he is being played (e.g. "Did we just get manipulated into spending €800?") is
   a defect and must be rewritten as sincere delusion.
+  **Corollary (author-locked):** whenever money changes hands, the bros believe THEY are the ones
+  getting one over on the seller — the price is a STEAL, the find is underpriced, the seller
+  "doesn't know what he has." Inverse Legally Blonde: they are the mark who is certain they're
+  the shark. The seller always knows exactly what they have.
 - Satire targets frat-bro/tourist psychology, reality-TV, and luxury-retail gatekeeping — never
   Czech/Austrian people, never women's bodies. Renata, Věra, Aiguille, and all six ladies keep
   their dignity; they are winners, operators, or unbothered.
