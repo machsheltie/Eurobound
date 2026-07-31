@@ -92,11 +92,19 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
 3. **Prophecy pointer — Hamstradamus's tent:** "ONLY THE GOLD CIRCLE SHALL STAY THE BURNING.
    SEEK THE HOUSE OF NEEDLES. REPENT." (House of Needles = the Haberdashery; **Aiguille = French
    for "needle"** — the pun is canon now.)
-4. **The Limp to Sinfonia:** The Herp active throughout. NO temporary suppressant exists anywhere
+4. **The Departure — Oz parody (author-locked):** the moment the bros commit to seeking the Gold
+   Circle Coin in Sinfonia, they LINK ARMS AND SKIP toward the airport singing an original parody
+   of "We're Off to See the Wizard" — destination the House of Needles / the Haberdashery /
+   Monsieur Aiguille (reference only what they canonically know at that story beat). ORIGINAL
+   lyrics only — scans to the Oz tune and mirrors its call-and-response structure, but reproduces
+   none of the 1939 lyrics. Fully sincere, zero self-awareness; the skip visibly fights the Herp's
+   Agonizing Friction (wince-skip-wince); locals watch. This is a staged musical scene in the
+   quest file.
+5. **The Limp to Sinfonia:** The Herp active throughout. NO temporary suppressant exists anywhere
    (author decision: delayed gratification; the Coin must feel Excalibur-tier). Couchsurf attempts
    while infected trigger per-NPC characterized rejection scenes (§6). Missed opportunities are
    the point.
-5. **Haute Couture Haberdashery (EXISTING location — surgical edit, not a rewrite):**
+6. **Haute Couture Haberdashery (EXISTING location — surgical edit, not a rewrite):**
    The Gold Circle Coin sits in a locked vitrine in the Accessories Alcove, filed under
    *Objets d'Héritage*: "Molded 1990. A piece of cinema history. **It is not for sale. It is for
    aspiration.**" The bros' canonical first-visit snubbing (the shop's existing Assessment
@@ -107,10 +115,10 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
    - **PATH B — "Big. Huge. Mistake." (heist):** after-hours infiltration requiring formal wear
      purchased from the same shop; the bros hold mannequin poses in opera capes while the night
      porter passes (the quest's marquee screenshot moment).
-6. **The Prize:** the Gold Circle Coin (§7). Party-wide suppression while equipped by ANY bro.
-7. **The Return:** cities are revisitable. Every NPC who rejected a herp'd bro can be re-attempted
+7. **The Prize:** the Gold Circle Coin (§7). Party-wide suppression while equipped by ANY bro.
+8. **The Return:** cities are revisitable. Every NPC who rejected a herp'd bro can be re-attempted
    post-Coin; each has a rejection-callback line. Chronicles completion stays fully achievable.
-8. **Post-credits scene:** months later, back home — the Coin framed on a wall like a championship
+9. **Post-credits scene:** months later, back home — the Coin framed on a wall like a championship
    belt; one bro still absentmindedly scratching.
 
 ## 5. The Herp (status effect, id `the_herp`)
@@ -199,6 +207,12 @@ Do not reference it anywhere.
 
 - Bros NEVER self-aware; players laugh AT them; the bros are delusional pushing-40 dad-bods, not
   studs — every "conquest" is a misread.
+- **Bros NEVER scam-aware (author-locked, applies to all three, game-wide):** they never suspect,
+  question, or even momentarily entertain that they are being scammed, overcharged, or
+  manipulated. They believe they are special, always. Canonical example: the VIP "bracelets" —
+  kids' 8th-birthday-party bracelets they proudly believe are genuine VIP. Any line where a bro
+  wonders whether he is being played (e.g. "Did we just get manipulated into spending €800?") is
+  a defect and must be rewritten as sincere delusion.
 - Satire targets frat-bro/tourist psychology, reality-TV, and luxury-retail gatekeeping — never
   Czech/Austrian people, never women's bodies. Renata, Věra, Aiguille, and all six ladies keep
   their dignity; they are winners, operators, or unbothered.
