@@ -9,6 +9,20 @@ ban-all world names + premise-cluster exemption, templates as floors.
 
 ---
 
+## 0a. NEW BINDING RULES (author-locked, game-wide, permanent — issued 2026-07-31)
+
+1. **No mascots, ever.** No puppets, no pets, no named companion objects, no fourth party members,
+   no emotional-support entities of any kind — and no "replacements" for any removed one. The
+   party is three bros. Objects may be junk trinkets; they never get names, personalities,
+   adoption beats, evolution mechanics, or social lives. (Case law: Gregory, killed; "Gregory
+   the Hippo," de-petted to a mute junk trinket by author order.)
+2. **Story, lore, and satire changes require author discussion FIRST.** No agent or orchestrator
+   invents, removes, renames, or reshapes narrative content beyond an explicitly authorized
+   mechanical scope without presenting it to the author and receiving a ruling. Ambiguity
+   escalates; it is never resolved by invention. Sanitizing, softening, de-subversifying, or
+   over-explaining ANY content is a defect of the highest severity — this is an unapologetically
+   subversive MA game, and the satire ships intact or not at all.
+
 ## 0. Rule Supersession (author-locked)
 
 The "no new crypto content" rule is **formally superseded** by this spec: the author directs a
