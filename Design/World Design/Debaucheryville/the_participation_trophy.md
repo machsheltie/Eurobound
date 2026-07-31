@@ -315,6 +315,12 @@ If player tries to buy prizes directly:
 - **Chadwick**: "The Used Glitter Hat. For the VISUAL."
 - **Yolanda**: "A classic choice. Someone's sweat is your style now. 100 tickets or €15."
 - **Bradley**: *counting the tickets again* "Eighty-five."
+- **Yolanda**: *sets a corndog from the fresh tray on the counter* "150 tickets. Or €8, and it's this one, out of the good batch."
+- **Bradley**: "Why's the money one cheaper? What's wrong with it?"
+- **Yolanda**: *puts it back under the counter* "Nothing."
+- **Lord Pilsner**: "Bradley. BRADLEY. She's clearing stock. We take the ticket one. The one they don't want to let go of."
+- **Yolanda**: "You have 85 tickets. The mystery stickers are 5."
+- **Lord Pilsner**: *pocketing seventeen stickers* "That's a bulk deal. We just got a BULK DEAL."
 
 ## System Integration
 ### Circus Economy Network
