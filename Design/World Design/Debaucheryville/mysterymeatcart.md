@@ -86,6 +86,7 @@
 
 ## Gameplay Mechanics
 ### Chef Chuckles Character (Original)
+- **NPC ID**: `debaucheryville_npc_chef_chuckles_01`
 - **Physical Description**: Man in clown shoes and sleeveless tuxedo, cracked porcelain clown mask during business hours
 - **Behavior**: Flips sausages with butterfly knife, talks in food puns mixed with veiled threats
 - **Background**: Claims he used to cater for Cirque du Soleil "before the incident"

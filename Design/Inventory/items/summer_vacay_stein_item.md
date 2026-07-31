@@ -7,7 +7,7 @@
 - **Display Name**: Souvenir Champion Stein
 - **Internal Name**: Hollow Yellowing Plastic Stein, Same 2003 Pallet as the Badge
 - **Item Type**: Removable Inventory Item (Consumable-Use Trinket)
-- **Rarity**: Common (bros think it's One-Of-A-Kind)
+- **Rarity**: Common (bros treat it as the badge's equally priceless companion piece)
 - **Source**: Hamstradamus @ Fauxst Beach prize podium — win The Bacchanus Beach Beatdown
 
 ---
@@ -32,6 +32,8 @@ A hollow plastic beer stein from the exact same defective 2003 merch pallet as t
 
 ### Glitter Gullet (Minor Debuff, 10 Seconds)
 A brief, self-contained queasiness spike from swallowing a stray fleck of the stein's flaking glitter print along with whatever the bro poured in. Not a recognized battle status effect — just a short overworld nuisance: -1 Speed for the duration, a faint green tint on the portrait, and a small on-screen belch icon. Wears off on its own; no cure item needed, no lasting consequence.
+
+*Development note: the original item spec called for a generic "brief Nausea" status on the swig's failure chance. Glitter Gullet — a bespoke, overworld-only debuff — is a deliberate deviation, kept distinct from the badge/corndog's battle-facing Nausea status so the stein's risk stays flavorful and low-stakes.*
 
 ### What It Does NOT Do
 - ❌ Contain, dispense, or have ever contained anything worth drinking
