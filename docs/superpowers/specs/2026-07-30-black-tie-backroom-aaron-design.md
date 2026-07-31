@@ -38,6 +38,16 @@ author canon (he appears in no author-written Bradley material). He is stricken:
 - The ~55 uncommitted draft world files containing Gregory are NOT processed this round; the
   standing rule strips him whenever a future round formally processes those files.
 
+### 1c. Full-Strength Satire (MA rating, author-locked)
+Eurobound is an adult satire and will carry a Mature rating with proper disclosure. The satire is
+never dumbed down, sanitized, tamed, or "kiddyfied" — not in content, not in wording, not by
+quietly softening subversive material (infidelity, STIs, gross-out comedy, delusional unhinged
+behavior are all IN-LANE). AI-initiated toning-down is a defect identical in kind to Gregory.
+The ONLY content boundaries are the author's own established artistic choices — no graphic sexual
+content (implication/cutaway/morning-after wreckage), satire targets the bros and tourist/frat
+psychology (never marginalized groups; the women keep their dignity) — and no boundary beyond
+those may be invented. Writing at full strength within the author's boundaries is the job.
+
 ## 2. Location: The Black-Tie Backroom — Keep + Complete
 
 The existing `Design/World Design/Sinfonia/the_black_tie_backroom.md` (513 lines: hidden entrance,
