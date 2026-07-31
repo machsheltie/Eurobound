@@ -8,17 +8,27 @@ Rigged Mini-Games: Win (or intentionally lose) suspicious arcade challenges to �
 Influencer Syndicate Theft: Occasionally, members of the Influencer Syndicate (smug TikTok travel vloggers with a suspicious number of sponsored posts) will be flaunting an NFT. Defeat them in absurd mini-games or side quests to swipe it.
 
 NFTs:
-Debaucheryville Targets:
+Collection Size: 12 total — 4 per city (Debaucheryville, Sinfonia, Publandia).
+
+Debaucheryville Targets (4 of 4):
 Velvet Curtain bathroom QR graffiti: "Pixelated Kebab Monkey" NFT– Dubiously hand-drawn in MS Paint.
 Absinthe Arcade rigged claw machine: "Beer Pong Saint Relic" NFT– An 8-bit halo hovering over a red solo cup.
 Shadow Exchange ledger backroom: “VIP Wristband PNG” NFT-A flat, over-sharpened PNG of a scuffed velvet wristband, the Photoshop checkerboard still visible, with a fake hologram that flickers “VIP-ish.”
 
-Meme Lord’s First Selfie – Clearly a stolen MySpace photo.
+Meme Lord’s First Selfie (Debaucheryville target #4): “Meme Lord’s First Selfie” NFT– Clearly a stolen MySpace photo.
+
+Sinfonia Targets (4 of 4): all four detailed in Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md
+Auction QR catalog (hush-hush auction rooms): “Lot 41: Untitled (Gilt Frame, Empty)” NFT– A quality-40 JPEG of an empty picture frame, the photographer’s flash still visible in the varnish.
+Bassline Opera House backstage terminal: “Backstage Laminate (Unauthorized)” NFT– A flatbed scan of a laminated pass, someone’s thumb in the corner, the name field wiped out by lamination glare.
+Latte-art AR filter (Grounds For Concern, Kaffeehaus Row): “Foam Face #17” NFT– A 128px capture of a smeared milk-foam heart with a face very slightly visible behind it. There are at least sixty of #17.
+Aaron’s tractor token (The Black-Tie Backroom): “She Thinks My Tractor’s Sexy” (Mint #42) NFT– A low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn, stamped on a scratched aluminum token. Handed over sincerely, as a gift; acquisition scene in Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md.
+
+Publandia Targets: 3 defined (QR mural, poker pot, POS terminal). The 4th is an open slot — sanctioned TBD, to be authored in a future round.
 
 Rewards for Collection Milestones:
-3 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).
-6 NFTs: “Wallet of Shame” trinket — a tiny charm granting a small Charisma boost (+1 Charm) but forever marking you as that guy.
-9 NFTs: Secret epilogue gag scene where Chadwick & Bradley hold a champagne-fueled press conference as Crypto Kings of Europe… seconds before the market crashes, bankrupting them instantly.
+4 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).
+8 NFTs: “Wallet of Shame” trinket — a tiny charm granting a small Charisma boost (+1 Charm) but forever marking you as that guy.
+12 NFTs: Secret epilogue gag scene where Chadwick & Bradley hold a champagne-fueled press conference as Crypto Kings of Europe… seconds before the market crashes, bankrupting them instantly.
 
 Satire Angle:
 NFTs are intentionally ugly, low-res, and paired with ridiculous “lore” explaining their supposed value.
