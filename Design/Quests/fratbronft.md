@@ -1,4 +1,5 @@
 Frat Bro NFT Sidequest
+Quest ID: global_sidequest_fratbro_nft_01
 Lord Pilsner’s two traveling companions, Chadwick and Bradley, are convinced the secret to legendary hero status is collecting the "Ultimate Brochain NFT Collection" scattered across Europe.
 
 Acquisition Methods:
