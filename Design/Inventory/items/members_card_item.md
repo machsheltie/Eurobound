@@ -1,6 +1,6 @@
 # Item Definition: The Member's Card
 
-*"Your attire is... acceptable." - Viktor the Doorman, saying the same sentence he says to everybody, to a man holding a card*
+*"Ah. Then we skip two of the three questions." ... "Not that one." - Viktor the Doorman, gesturing at the deposit window*
 
 ## 📋 Item Identity
 - **Item ID**: `item_members_card`
@@ -106,7 +106,7 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 ### When NPCs Notice The Card
 | NPC Type | Reaction | Bros' Interpretation |
 |----------|----------|------------------------|
-| Viktor the Doorman | *takes it, looks at it for the same two seconds he looks at everything, hands it back* "Welcome back." | "He said BACK. We're a *back*. We're regulars." |
+| Viktor the Doorman | *takes it, looks at it for the same two seconds he looks at everything, hands it back* "Ah. Then we skip two of the three questions." *(gestures at the deposit window)* "Not that one." — his dedicated card line, per `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/viktor_the_doorman.md` | "Two out of three. That's a *supermajority*, boys." |
 | Madame Karten | "Darling, how lovely. The house would be glad of your company again." *(the wording on the card, verbatim, warmly)* | "She's quoting the charter at us. That's a ceremony thing." |
 | Siegfried at the coat check | *hangs the coats, nods at the pocket the card lives in, says nothing* | "He's counting us in. Coat guy counts everybody in." |
 | Monsieur Aiguille, Haute Couture Haberdashery | "Then you will not require the suit." *(a pause exactly long enough to be a needle)* "You will still want the suit." | "He's trying to keep the sale. Respect the hustle." |
@@ -168,14 +168,14 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 *The bottom of the stairs, next visit. Lord Pilsner produces the card and holds it out, and holds it out, and holds it out. Viktor takes it, looks at it for exactly as long as he looks at everything, and hands it back.*
 
 **Viktor**:
-> "Welcome back."
+> "Ah. Then we skip two of the three questions."
 
-*Then, unchanged, in the same order, at the same length:*
+*He gestures at the deposit window. Nothing else about the check changes: the collateral is the collateral.*
 
 **Viktor**:
-> "Your collateral is... sufficient. Your chances of leaving with it are... statistically improbable."
+> "Not that one."
 
-**Lord Pilsner** *(already past him, delighted)*: "He remembers the bit. That's for us."
+**Lord Pilsner** *(already reaching for the gold, delighted)*: "He's waiving things for us now. You hear that? He's *waiving*."
 
 ### The Airport
 *Weeks later. A check-in desk. Lord Pilsner slides the card across, face-up, with two fingers.*

@@ -318,7 +318,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 - **Aaron, every subsequent visit** *(rotating ambient — full nine-line rotation in his profile)*: "Hey! The felt guys. How's the felt treating you?" — never escalates, never pities, never resolves into an explanation of anything.
 - **Viktor at the door, next visit:** *the same assessment, at the same length, in the same order, with no reference to the previous evening* "Your attire is... acceptable. Your collateral is... sufficient." **Lord Pilsner:** "We're known here now." **Viktor:** "Yes."
 - **Siegfried at the coat check** (`sinfonia_npc_siegfried_coatcheck_01`): *hands the coats back, sees the carton sticking out of a jacket pocket, says nothing about it, and puts two gold-wrapper wafer bars on the counter* "For the walk. It's cold."
-- **Madame Karten** (`sinfonia_npc_madame_karten_01`), *floor-side, warm as a grandmother, steering as a shark*: "Darling. There are three tables free tonight and every one of them is *fair*." *(She is describing the house's real games, which are real, and which have a documented edge. She is not referring to anything else.)*
+- **Madame Karten** (`sinfonia_npc_madame_karten_01`), *floor-side, warm as a grandmother, steering as a shark*: "Darling. There are three tables free tonight." *(She is steering them onto the house's real games, which have a documented edge. She never confesses and never winks, here or anywhere.)*
 - **Grounds For Concern, Kaffeehaus Row** *(if the party orders anything after the Backroom)*: **Barista:** "Five euro." **Chadwick:** *holding up the aluminum token* "Do you take—" **Barista:** "No."
 
 ### Easter Eggs
