@@ -5,7 +5,42 @@ This document provides exact specifications for all PNG files needed for Hostel 
 
 **Location ID:** `debaucheryville_hostel_midnight_checkout_01`  
 **Theme:** Universal hostel experience - beautiful chaos of 40 strangers, passive-aggressive kitchen politics, bunk bed confessions at 3 AM  
+**Zone:** Hostel Row, Budget Accommodation District (Debaucheryville)  
+**Hours:** 24/7 reception (theoretically - receptionist presence varies)  
 **Primary Function:** Rest point, stat restoration, confession system, roommate events, Hostel Bonds
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Budget Beige | #D4C4A8 | Facade, walls, main surfaces |
+| Hostel Blue | #4169E1 | Signage accents, UI panels, bunk frames |
+| Institutional Green | #8FBC8F | Background walls, corridors |
+| Warning Red / Neon | #FF6347 | Neon sign, warning notes, alarm effects |
+| Faded Wood | #8B4513 | Ornate doorframe, worn furniture |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
+├── environment/
+│   ├── hostel_exterior.png
+│   ├── reception_lobby.png
+│   ├── common_room.png
+│   ├── kitchen_full.png
+│   ├── dorm_rooms_combined.png
+│   └── bunk_bed_detail.png
+├── npcs/
+│   ├── hostel_staff_sprites.png
+│   └── hostel_guest_sprites.png
+├── effects/
+│   ├── hostel_effects.png
+│   └── confession_scene.png
+└── ui/
+    └── hostel_ui.png
+```
 
 ---
 
@@ -162,7 +197,7 @@ This document provides exact specifications for all PNG files needed for Hostel 
 **File:** `hostel_staff_sprites.png`  
 **Dimensions:** 256x192 pixels  
 
-### Jakub (64x96 each):
+### Radek (64x96 each):
 | State | Position | Description |
 |-------|----------|-------------|
 | Idle | (0, 0) | Perpetual stubble, thousand-yard stare |
@@ -170,7 +205,7 @@ This document provides exact specifications for all PNG files needed for Hostel 
 | Thousand-Yard Stare | (128, 0) | Seen 10,000 travelers |
 | Handing Key | (192, 0) | Service mode |
 
-**Jakub Visual Notes:** Late 20s Czech, hostel t-shirt, film student who stayed 4 years, helpful but exhausted
+**Radek Visual Notes:** Late 20s Czech, hostel t-shirt, film student who stayed 4 years, helpful but exhausted
 
 ### Petra (64x96 each):
 | State | Position | Description |
@@ -326,6 +361,156 @@ This document provides exact specifications for all PNG files needed for Hostel 
 
 ---
 
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Working Outlet Highlight | (304, 0) | 32x32 | High-contrast outline for THE contested outlet (common_room.png) |
+| Bed Assignment Marker | (192, 128) | 32x32 | Bold numbered marker for player's assigned bunk |
+| Reception Bell Outline | (352, 32) | 32x32 | Enhanced visibility interaction target |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Neon Sign Steady | (0, 320) | 192x48 | Always-on sign state, flicker disabled (hostel_exterior.png) |
+| Static Snore Indicator | (192, 64) | 64x32 | Single-frame snore icon replacing animated waves |
+| Alarm Static Icon | (192, 128) | 64x64 | Non-flashing alarm warfare indicator |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Snore Waves | (0, 64) | 96x32 | Already-visual cue for snoring roommate (hostel_effects.png) |
+| Creak Indicator | (192, 0) | 32x32 | Shake-lines icon when bunk creak audio plays |
+| Alarm Flash Frame | (0, 128) | 128x64 | Visual substitute for phone alarm audio |
+| Door/Key Indicator | (352, 96) | 32x32 | Key-turn icon for lock audio cue |
+
+### Colorblind Considerations:
+- Sleep quality tiers use distinct icon shapes AND text labels (Excellent-None), never color alone
+- Roommate event popups use symbols (Zzz, phone, speech bubble) plus text
+- Room price options display Euro amounts as text, not color-coded tiers
+- Touch zones minimum 44px for booking options, bell, outlet, and bunk interactions
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); note wall text kept higher quality for readability
+- **Android:** ETC2 with alpha
+- **Fallback:** PNG high quality for UI panels and passive-aggressive notes (text-critical)
+
+### Texture Atlases:
+| Atlas | Contents | Max Size |
+|-------|----------|----------|
+| hostel_environment | exterior, lobby, common room, kitchen | 2048x1024 |
+| hostel_dorms | dorm_rooms_combined, bunk_bed_detail | 2048x1024 |
+| hostel_characters | staff sprites, guest sprites | 1024x512 |
+| hostel_effects_ui | effects, confession scene, UI | 1024x512 |
+
+*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+
+### LOD Levels:
+| Level | Description |
+|-------|-------------|
+| High | Full rotating guest cast animated, dust motes, all roommate event effects |
+| Medium | Reduced guest animation rates, simplified snore/creak effects |
+| Low | Static background guests, no particles, event popups only |
+
+### Performance Targets:
+- **Target FPS:** 45 (multi-room location with crowd rendering)
+- **Max Draw Calls:** 16 per frame
+- **Memory Footprint:** 38 MB maximum
+- **Particle Limit:** 15 (dust motes, laundry steam, kitchen smoke combined)
+
+### Performance Notes:
+- Simplified crowd systems: background guests rendered as static sprites beyond 3 active NPCs
+- Dorm rooms load on demand per floor; only the occupied dorm is fully animated
+- Snore/alarm effects limited to the player's current room
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- Multi-room layout: separate scene per floor with shared TileMap resources
+- Roommate events: random event controller with weighted trigger table
+- Confession scene: dialogue overlay system with dimmed background layer
+- Sleep quality: state machine feeding stat restoration modifiers on wake
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Neon sign flicker | Electrical buzz | On flicker frame |
+| Bunk creak frames | Metal creak sound | Frame 2 of creak cycle |
+| Snore waves | Snoring loop | Wave size scales with volume |
+| Alarm warfare | Overlapping phone alarms | On each phone icon flash |
+| Reception bell | Bell ding | On player interaction |
+| Key hooks | Key jangle | On check-in completion |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Bunk Bed Confessions | confession_scene.png, guest NPC states | 3 AM random event or roommate approach |
+| Kitchen Encounters | Note wall layers, individual notes | Peak-hour resource conflicts |
+| Gary's Message Home | Gap Year Gary confessing state | Confession unlock chain |
+| Hannah's Ex Decision | Heartbreak Hannah emotional state | Confession unlock chain |
+| ICQ / Darkweb Dossier | Wi-Fi corner setup | Terminal access in common room |
+| Notice Board Quests | Notice board sprite | Tour offers, lost item hooks |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Velvet Curtain Club | Party Returner guest sprite | 3 AM drunk arrival event |
+| Shadow Exchange | Staff dialogue references | No visual transition; narrative link |
+| 24-Hour Internet Café | Wi-Fi corner (alternative access) | Shared ICQ UI elements |
+| Late-Night Kebab Stand | Kitchen defeat dialogue | Post-kitchen-failure exit prompt |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "Faded grandeur meets budget renovation - beautiful chaos, affectionately rendered"
+- **Color Mood:** Budget beige and institutional green softened by warm bunk lights; neon red accents for the perpetually half-lit sign
+- **Lighting:** Harsh fluorescents in common areas, dim dorm corridors, individual bunk reading lights as intimate pools
+- **Texture:** Peeling paint in "character-building shades," worn upholstery, industrial sheets, decades of traveler wear
+
+### Environmental Storytelling:
+- The passive-aggressive note wall chronicles escalating kitchen warfare without a word of dialogue
+- The single working outlet, visibly guarded, tells the story of territorial common-room politics
+- 60% functional ladders and mattresses of unique topography signal budget entropy
+- Ornate 19th-century doorframe against plastic signage: grandeur surrendered to backpacker economics
+
+### Character Integration Notes:
+- Radek reads as helpful-but-exhausted: perpetual stubble, thousand-yard stare, hostel t-shirt
+- Petra carries nocturnal energy: alert posture, ever-present coffee cup
+- Guest NPCs are affectionate archetypes, not mockeries - each distinct at 64x96 silhouette read
+- Rotating generic backpackers keep dorms feeling alive without heavy animation budgets
+
+---
+
+## 📋 Required PNG Files (11 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | hostel_exterior.png | 384x384 |
+| 2 | reception_lobby.png | 512x384 |
+| 3 | common_room.png | 512x384 |
+| 4 | kitchen_full.png | 384x384 |
+| 5 | dorm_rooms_combined.png | 1024x512 |
+| 6 | bunk_bed_detail.png | 256x256 |
+| 7 | hostel_staff_sprites.png | 256x192 |
+| 8 | hostel_guest_sprites.png | 512x384 |
+| 9 | hostel_ui.png | 384x256 |
+| 10 | hostel_effects.png | 256x192 |
+| 11 | confession_scene.png | 256x192 |
+
+**Total Estimated Memory:** ~38 MB (in-memory budget including atlas overhead)
+
+---
+
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (11 Total):
@@ -349,6 +534,11 @@ This document provides exact specifications for all PNG files needed for Hostel 
 | DPI | 72 |
 | Naming | snake_case |
 
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups (note wall notes on separate layers)
+- **Documentation:** Animation timing reference sheet (creak, snore, alarm cascade cycles)
+
 ---
 
 ## 🎯 Social Media Viral Potential
@@ -356,7 +546,7 @@ This document provides exact specifications for all PNG files needed for Hostel 
 ### Screenshot-Worthy Moments:
 1. **Passive-Aggressive Note Wall** - Kitchen warfare gallery
 2. **12-Bed Dorm Chaos** - Maximum hostel experience
-3. **Jakub's Thousand-Yard Stare** - Seen everything
+3. **Radek's Thousand-Yard Stare** - Seen everything
 4. **3 AM Confession Scene** - Deep bunk bed conversations
 5. **Single Working Outlet** - THE contested resource
 6. **Snore Visualization** - Sleep quality enemy
@@ -367,6 +557,29 @@ This document provides exact specifications for all PNG files needed for Hostel 
 - "Someone is always snoring. This is hostel law."
 - "The hostel is democracy. Everyone gets equal chaos."
 - "Check-in anytime, checkout never."
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All 11 PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly
+- [ ] Passive-aggressive note wall text is readable at gameplay zoom
+- [ ] Radek's thousand-yard stare reads clearly at 64x96
+- [ ] Single working outlet is visually distinct as THE contested resource
+- [ ] All guest NPC archetypes are distinguishable by silhouette
+- [ ] Accessibility visual alternatives included for all audio cues (snore, creak, alarm)
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Hostel satire is affectionate toward backpacker culture, not mocking travelers
+- [ ] Neon sign flicker and note wall create discoverable visual interest
+- [ ] Mobile performance optimized (static background guests, on-demand dorm loading)
+- [ ] Touch zone sizing considered (44px minimum for booking UI and interactions)
+- [ ] Sleep quality tiers readable without color (shapes + labels)
+- [ ] Social media viral potential maximized (note wall, 12-bed chaos compositions)
 
 ---
 
@@ -382,6 +595,7 @@ This document provides exact specifications for all PNG files needed for Hostel 
 | Technical Feasibility | ✅ PASS |
 | Mobile Performance | ✅ PASS (45 FPS, 16 draws, 38MB) |
 | Accessibility | ✅ PASS |
+| No Crypto Elements | ✅ PASS |
 | Social Media | ✅ PASS |
 
-**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Jakub has seen everything and judges nothing. €12 buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**
+**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Radek has seen everything and judges nothing. €12 buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**

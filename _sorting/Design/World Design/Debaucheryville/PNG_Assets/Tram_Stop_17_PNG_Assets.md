@@ -404,6 +404,44 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 
 ---
 
+## ♿ Accessibility Sprite Requirements
+**File:** `tram_stop_accessibility.png` (supplemental sheet — delivered alongside the 11 base files, not counted in their total)
+**Dimensions:** 256x256 pixels
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Jiří Interactive Outline | (0, 0) | 96x128 | White-on-dark outline overlay fitting all six progressive Jiří states (interaction hotspot) |
+| Plaque, Large-Print | (96, 0) | 128x64 | Enlarged "JIŘÍ'S BENCH - HE WAITED" with subtext readable without examine zoom |
+| Blessing Icon, Bold | (96, 64) | 48x48 | Thick-outline halo icon for the buff indicator |
+| Dialogue Frame, Bold | (144, 64) | 112x48 | High-contrast tram-themed dialogue border |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Candle, Steady Flame | (0, 128) | 32x32 | Static flame replacing the constant 3-frame flicker (shrine stages 2+) |
+| Tram Pass, No-Blur | (32, 128) | 96x64 | Static tram-front slide replacing the motion-blur passing sprite; dust cloud disabled |
+| Feathers, Off | (128, 128) | 32x32 | Grounded-feather decal replacing the constant drift particles |
+| Hope Glow, Steady | (160, 128) | 32x32 | Constant soft glow replacing the pulsing hope effect |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Tram Bell Icon | (0, 176) | 48x48 | Bell burst at the 0.5s bell mark of every tram pass — the Hope-Disappointment beat depends on hearing the approach, so this cue is required |
+| Wrong-Number Reveal Tag | (48, 176) | 48x32 | "#9" / "#22" number tag flashes as the tram enters frame (replaces the deflating horn beat) |
+| Sigh Puff | (96, 176) | 32x32 | Small breath-puff over Jiří on each sigh in his idle cycle |
+| Hopeful Swell / Deflate Pair | (128, 176) | 64x32 | Rising-notes icon on Jiří standing, drooping-note icon as he sits back down |
+| Accordion Note | (192, 176) | 32x32 | Distant-accordion wisp (evening only), matching the melancholic folk undertone |
+| Candle Crackle Spark | (224, 176) | 32x32 | Tiny spark glyph on each crackle pop (shrine stages 2+) |
+
+### Colorblind Considerations:
+- Mood phase icons are already symbol-based (sun / thought bubble / storm cloud / eye / spiral) — fully colorblind-safe; do not replace with color tints
+- Blessing Active state adds a check mark to the halo icon rather than relying on glow color alone
+- Tram identification is by painted number, never by livery color alone (#9 vs #22 vs the heritage #17)
+- Jiří's tap zone (96x128) and all dialogue options exceed the 44px minimum touch target
+
+---
+
 ## 📱 Mobile Optimization
 
 ### Texture Atlases:
@@ -429,6 +467,85 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 
 ---
 
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- Outdoor scene: ParallaxBackground for far/mid city layers (day + night variants), TileMap for tracks and cobblestone
+- Progressive-state system: `visit_count` drives texture-region swaps across jiri_states, bench_states, and shrine stages — Visit 13+ assets load on demand only (per Performance Notes)
+- Passing trams as Sprite2D tween scrolls, not frame animation; CPUParticles2D (not GPU) for feathers, tram dust, candle sparks
+- Night Vigil runs as a timeline/cutscene sequence (evening → dawn lighting lerp, Dawn Light overlay, storytelling poses)
+- State tracking per `tram_stop_17_state` (visit_count, current_mood_phase, night_vigil_completed, jiris_blessing_acquired, shrine_stage, sat_with_jiri)
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Passing Tram (3s sequence) | Bell + mechanical rattle | Bell at 0.5s, rattle throughout, wind whoosh on exit |
+| Hope-Disappointment (4s) | Hopeful music swell → deflating horn | Swell as Jiří stands, horn as the wrong number reads |
+| Jiří Idle Cycle | Occasional sigh | On the sigh frame (variant per mood phase) |
+| Pigeon sprites | Cooing loop | Coo Indicator sprite syncs to coo audio (already specced in Sheet 5) |
+| Candle Flicker (shrine 2+) | Subtle crackling | Spark pop on random flicker frames |
+| Night Vigil dawn | Emotional swell → cut to #22 → melancholic deflation | Dawn Light overlay fades in with the swell; #22 enters on the cut |
+| Bros' "transit expert" line | Light comedic sting | On the misunderstanding dialogue beat |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Night Vigil (visit 10+) | Night Vigil Storytelling pose, Bros Sitting, Dawn Light, Tear Drop, Grateful expression | Extended evening-to-dawn sequence; full backstory; false-alarm #22 climax |
+| Jiří's Blessing | Blessing Icon / Blessing Active / Blessing Tooltip (Sheet 11) | Awarded on Night Vigil completion; +1 Charm with all locals city-wide |
+| Post-Credits Reunion | Tram 17 Heritage + Interior, Clean-Shaven Jiří, Holding Milk, Reunion Embrace, Marie sprites | Unlocks with 10+ visits or Night Vigil; the 17 finally comes |
+| Final Boss cameo | Jiří Visit 13+ state | Jiří appears in the background if the player holds the Blessing |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Absinthe Arcade | Street exit south (1 block) | Standard street fade |
+| Old Town / Astronomical Cock-Up Square | Street exit north (2 blocks); Jiří's directions reference it by tram stops | Standard street fade |
+| Metro Station Entrance | Visible east (2 blocks) — the one Jiří refuses to use; background dressing only | None (pointed at, never entered from here) |
+| Velvet Curtain district | Tram #9 livery passes toward it | Background tram scroll |
+| Hostel district | Tram #22 livery passes toward it | Background tram scroll |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "A man becoming a landmark, one un-arrived tram at a time"
+- **Color Mood:** Tram Green and Weathered Metal Gray institutional melancholy, warmed by Shrine Candle Orange and, late in the arc, Flower Pink in the beard
+- **Lighting:** Day — natural light with dappled shelter shadows; Evening — warm streetlight and candle flicker; Night — streetlight pools, Jiří's face partially shadowed
+- **Texture:** Rusted signage, yellowed 1994 paper behind cracked plastic, pooled candle wax, fabric slowly merging with weathered wood
+
+### Environmental Storytelling:
+- The 1994 timetable with obsessive highlighting and Jiří's handwritten margin notes — expertise that is actually evidence of obsession
+- The #17 tracks are visibly less worn than the #9/#22 rails — the environment quietly confirms what nobody tells him
+- The shrine accumulates in stages (bread → candles → strangers' photos → bronze plaque): the city absorbing him rather than helping him
+- Children's crayon drawings of Jiří and the tram — he is beloved, which is not the same as rescued
+
+### Character Integration Notes:
+- The progressive Jiří/bench/shrine transformation IS the joke, the tragedy, and the payoff — the six-state pairs must read as one continuous organism, not costume swaps
+- Pigeons accumulate with him (2 → 4 → shoulders → nest in hat → protective perimeter); cap at 6 active per performance notes
+- Post-credits sprites (clean-shaven, milk carton, Marie) are tonally sincere — no comedic exaggeration in these frames
+
+---
+
+## 🎯 Social Media Viral Potential
+
+### Screenshot-Worthy Moments:
+1. **Visit 1 vs. Visit 13 side-by-side** - Jiří's full transformation from tidy commuter to flower-bearded landmark
+2. **The plaque reveal** - "JIŘÍ'S BENCH - HE WAITED" in bronze
+3. **The pigeon nest hat** - A man so still that birds moved in
+4. **The Night Vigil dawn** - Two silhouettes on a bench as the sky lightens, then the #22
+5. **The post-credits reunion** - Ancient milk carton, open door, Marie
+
+### Quote Potential:
+- "Is the tram late, or am I early to the rest of my life?"
+- "What if I AM the tram? What if I'm waiting for myself?"
+- "A TAXI? Jiří does not SURRENDER."
+- "The 17 operates outside TIME."
+- "I got the milk." (Post-credits)
+
+---
+
 ## 📋 Required PNG Files (11 Total)
 
 | # | Filename | Dimensions |
@@ -449,6 +566,61 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 
 ---
 
+## 📦 File Delivery Checklist
+
+### Required PNG Files:
+- [ ] `tram_shelter.png` (512x384)
+- [ ] `bench_states.png` (512x256)
+- [ ] `jiri_states.png` (512x512)
+- [ ] `jiri_expressions.png` (256x256)
+- [ ] `pigeons.png` (256x192)
+- [ ] `passing_trams.png` (512x256)
+- [ ] `shrine_elements.png` (256x256)
+- [ ] `background_city.png` (512x256)
+- [ ] `ambient_pedestrians.png` (256x192)
+- [ ] `tram_stop_effects.png` (128x128)
+- [ ] `tram_stop_ui.png` (192x128)
+- [ ] `tram_stop_accessibility.png` (256x256, supplemental)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups (each of the six Jiří/bench progressive states in its own group so future visit tiers can be added without re-flattening)
+- **Documentation:** Animation timing reference sheet (idle cycle, tram pass, hope-disappointment beat) + progressive-state visit-tier chart
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly (Tram Green #2E8B57, Shrine Candle Orange #FF8C00, Beard Brown #8B4513, Flower Pink #FFB6C1)
+- [ ] All six Jiří states and six bench states read as one continuous transformation, aligned to the same anchor point
+- [ ] "1994" on the timetable and the plaque text readable on examine
+- [ ] Post-credits sprites (clean-shaven Jiří, milk carton, Marie) tonally sincere, no comedic exaggeration
+- [ ] Accessibility visual alternatives included for all audio cues (tram bell, wrong-number reveal, sigh, coo, swell/deflate)
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme (absurdist persistence treated with dignity) is clear throughout all assets
+- [ ] Easter eggs discoverable: obsessively highlighted #17 route, Jiří's margin notes, less-worn #17 tracks
+- [ ] Mobile performance optimized (6-pigeon cap, on-demand Visit 13+ loading, tween-scroll trams)
+- [ ] Touch zone sizing considered (44px minimum — Jiří hotspot and dialogue options compliant)
+- [ ] Colorblind-friendly alternatives available where color codes meaning (symbol-based mood icons, numbered trams)
+- [ ] Social media viral potential maximized (transformation side-by-side, plaque and reunion compositions)
+
+---
+
 ## ✅ Validation Status
 
 | Requirement | Status |
@@ -460,6 +632,11 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 | No Crypto Elements | ✅ PASS |
 | Mobile Optimization | ✅ PASS |
 | Progressive Visual Changes | ✅ PASS (6 Jiří states, 6 bench states) |
+| Seedy Underbelly Present | ✅ PASS (hidden tragedy beneath the absurdity) |
+| Technical Feasibility | ✅ PASS (simple outdoor scene, on-demand state loading) |
+| Mobile Performance Budget | ✅ PASS (60 FPS, 12 draw calls, 15MB) |
+| Accessibility Features | ✅ PASS (tram bell/number visual cues, steady-flame variants) |
+| Social Media Integration | ✅ PASS (viral moments identified) |
 
 ---
 

@@ -129,14 +129,14 @@ The cart is named "The Bohemian Trap" because:
 ## Gameplay Mechanics
 ### Cart Interaction System
 - **Approach**: Draw near, get the pitch
-- **The Pitch**: Viktor explains absinthe history, ritual, experience
+- **The Pitch**: Emil explains absinthe history, ritual, experience
 - **Selection**: Choose absinthe tier (reflects how much mythology you're buying)
 - **The Ritual**: Watch the elaborate preparation (skip option available, loses "experience")
 - **Consumption**: Drink the result
 - **Effect**: Status applied based on what you consumed
 
 ### Product Inventory (The Absinthe Tiers)
-| Item | Price | Strength | SP Effect | Status Effect | Viktor's Pitch |
+| Item | Price | Strength | SP Effect | Status Effect | Emil's Pitch |
 |------|-------|----------|-----------|---------------|----------------|
 | Tourist Green | €8 | 55% | -10 SP | Absinthe Buzzed (light) | "A gentle introduction" |
 | Bohemian Standard | €12 | 65% | -20 SP | Absinthe Buzzed | "The traditional experience" |
@@ -148,14 +148,14 @@ The cart is named "The Bohemian Trap" because:
 
 ### The Ritual (Purchasable Experience)
 **The Green Fairy Special includes:**
-1. **The Selection**: Viktor presents the bottle with ceremony
+1. **The Selection**: Emil presents the bottle with ceremony
 2. **The Pour**: Precise amount into traditional glass
 3. **The Spoon**: Ornate slotted spoon placed over glass
 4. **The Sugar**: Cube balanced on spoon
 5. **The Water**: Dripped slowly through sugar, clouding the absinthe (the "louche")
 6. **The Flame** (optional, "modern" variation): Sugar lit briefly
 7. **The Presentation**: Glass delivered with flourish
-8. **The Consumption**: Tourist drinks, Viktor watches for reaction
+8. **The Consumption**: Tourist drinks, Emil watches for reaction
 9. **The Effect**: Status applied, photography opportunity
 
 ### Status Effects
@@ -165,7 +165,7 @@ The cart is named "The Bohemian Trap" because:
 - **Duration**: 30 minutes
 - **Effect**: +10% Confidence, -5% Accuracy, dialogue slightly altered
 - **Visual**: Faint green tint to vision
-- **Viktor's Assessment**: "You feel... creative, yes?"
+- **Emil's Assessment**: "You feel... creative, yes?"
 
 **Absinthe Buzzed (Standard)**
 - **Source**: Bohemian Standard, Artist's Choice
@@ -180,7 +180,7 @@ The cart is named "The Bohemian Trap" because:
 - **Effect**: +20% Confidence, -20% Accuracy, random dialogue choices, control reversal (20% chance per action)
 - **Visual**: Significant green tint, occasional sparkle
 - **Control Reversal**: Left becomes right, up becomes down (temporary)
-- **Viktor's Assessment**: "The fairy has found you!"
+- **Emil's Assessment**: "The fairy has found you!"
 
 ### The Control Reversal Mechanic
 - **Trigger**: Green Fairy Confusion status
@@ -191,8 +191,8 @@ The cart is named "The Bohemian Trap" because:
 - **Cure**: Wait out duration, or consume something sobering (coffee from 24-hour café)
 
 ### Bravado Interactions
-- **Gain Bravado**: Order the top tier with confidence, complete ritual without asking questions, tip Viktor
-- **Lose Bravado**: Ask "will I actually hallucinate?" (Viktor's disappointment palpable), order sugar cube only, refuse the ritual
+- **Gain Bravado**: Order the top tier with confidence, complete ritual without asking questions, tip Emil
+- **Lose Bravado**: Ask "will I actually hallucinate?" (Emil's disappointment palpable), order sugar cube only, refuse the ritual
 - **Neutral**: Standard purchase, standard confusion
 
 ### The "Was That Worth It?" Check
@@ -206,18 +206,18 @@ The cart is named "The Bohemian Trap" because:
 ## NPCs & Vendors
 ### The Performer
 
-**Viktor "The Green Fairy" Novak**
+**Emil "The Green Fairy" Novak**
 - **Role**: Cart operator, absinthe mythology specialist, theatrical entrepreneur
 - **Appearance**: 40s Czech man, elaborate costume (waistcoat, top hat, pocket watch), waxed mustache, performative everything
 - **Background**: Former actor, discovered tourist absinthe more profitable, now character actor full-time
 - **Demeanor**: Theatrical, knowledgeable about the performance, aware it's a performance, sells it anyway
-- **The Viktor Method**: Believe in the show even if you don't believe the claims
+- **The Emil Method**: Believe in the show even if you don't believe the claims
 - **Philosophy**: "They pay for experience. I provide experience. The alcohol is just the medium."
 
-**Viktor's Dialogue Categories**:
+**Emil's Dialogue Categories**:
 
 *The Pitch:*
-- "Welcome, welcome to The Bohemian Trap! I am Viktor, and tonight, I introduce you to the Green Fairy herself."
+- "Welcome, welcome to The Bohemian Trap! I am Emil, and tonight, I introduce you to the Green Fairy herself."
 - "Absinthe — the drink of artists, poets, madmen. Van Gogh, Hemingway, Toulouse-Lautrec — they all knew the fairy."
 - "In Debaucheryville, we understand the old ways. The ritual. The sugar, the water, the transformation. This is not just drinking — this is EXPERIENCE."
 - "You want to see what the artists saw? Feel what the poets felt? The fairy can show you... for €25."
@@ -263,7 +263,7 @@ The cart is named "The Bohemian Trap" because:
 **The Instagram Ritualist**
 - **Composition**: Tourist more interested in photo of ritual than actual consumption
 - **Behavior**: Multiple angles, ring light out, drink getting cold
-- **Dialogue**: "Hold the spoon higher. More. Wait, the lighting— Viktor, can you do the pour again? I didn't get it."
+- **Dialogue**: "Hold the spoon higher. More. Wait, the lighting— Emil, can you do the pour again? I didn't get it."
 - **Function**: Shows the ritual as content generation
 
 **The Absinthe Veteran (Local)**
@@ -276,10 +276,10 @@ The cart is named "The Bohemian Trap" because:
 - **Composition**: Tourist who's heard the stories, worried about hallucinating
 - **Behavior**: Asking many questions, wanting reassurance, will drink it anyway
 - **Dialogue**: "So it's... safe, right? Like, I won't actually... see things? Bad things? I have work Monday."
-- **Function**: Mirror for tourist concerns, Viktor's target customer
+- **Function**: Mirror for tourist concerns, Emil's target customer
 
 ### Original NPC Dialogue
-**Viktor's Philosophy (Post-Cart Hours, If Found):**
+**Emil's Philosophy (Post-Cart Hours, If Found):**
 - "Am I a con artist? I prefer 'experience architect.' The experience is real. The claims are... historical."
 - "They want the fairy to be real. I want them to believe the fairy is real. We meet in the middle, at €25."
 - "My degree is in theater. Local theater pays nothing. Local tourism pays rent. The fairy pays very well."
@@ -291,11 +291,11 @@ The cart is named "The Bohemian Trap" because:
 - **Lord Pilsner** (during pitch): "Van Gogh? HEMINGWAY? This is LEGENDARY. This is HISTORY."
 - **Lord Pilsner** (during ritual): "The CLOUD. It's CLOUDING. The fairy is WAKING. I can FEEL it."
 - **Lord Pilsner** (after): "I see... I see GREEN. I see... that's a lamp. But a GREEN lamp. THE FAIRY IS IN THE LAMP."
-- **Chadwick**: "Viktor's whole aesthetic is INCREDIBLE. This is CONTENT. This is AUTHENTIC EUROPE."
+- **Chadwick**: "Emil's whole aesthetic is INCREDIBLE. This is CONTENT. This is AUTHENTIC EUROPE."
 - **Chadwick** (recording ritual): "The water dripping. The cloud forming. This is ASMR. This is POETRY."
 - **Chadwick** (after): "My controls are... why am I walking backward? This is the FAIRY. She's MESSING with me."
-- **Bradley** (to Viktor): "Is the hallucinogenic effect scientifically documented, or largely apocryphal?"
-- **Viktor**: "The fairy does not answer to science. She answers to belief."
+- **Bradley** (to Emil): "Is the hallucinogenic effect scientifically documented, or largely apocryphal?"
+- **Emil**: "The fairy does not answer to science. She answers to belief."
 - **Bradley** (after): "I'm... I'm fine. I see nothing. I am perhaps slightly to the left of where I intended."
 
 ## System Integration
@@ -321,9 +321,9 @@ The cart is named "The Bohemian Trap" because:
 - **First Purchase**: "Green Curious" — tried the fairy
 - **Green Fairy Special**: "Ritual Completed" — full experience
 - **Survived Confusion**: "Fairy Touched" — navigated the effects
-- **Ordered Sugar Only**: "Disappointer" — Viktor remembers
+- **Ordered Sugar Only**: "Disappointer" — Emil remembers
 - **5 Purchases Total**: "Absinthe Regular" — staff stop explaining
-- **Found Viktor Off-Duty**: "Behind the Curtain" — heard the real philosophy
+- **Found Emil Off-Duty**: "Behind the Curtain" — heard the real philosophy
 
 ## Audio Design
 ### Environmental Audio (Original Atmosphere)
@@ -331,7 +331,7 @@ The cart is named "The Bohemian Trap" because:
   - Green neon buzz
   - Dry ice fog hiss
   - Water dripping (ritual)
-  - Viktor's theatrical voice
+  - Emil's theatrical voice
   - Clink of glasses
   - Tourist reactions
   - Arcade chaos in background
@@ -341,7 +341,7 @@ The cart is named "The Bohemian Trap" because:
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Slight deflation note when "is this it?" moment hits
-- **Character Voice Direction**: Viktor's theatrical commitment, never breaking character
+- **Character Voice Direction**: Emil's theatrical commitment, never breaking character
 - **Environmental Comedy**: The Believer's "fairy sighting" sounds, Instagram photographer's requests
 - **Control Reversal**: Distinctive "wrong way" sound effect
 
@@ -353,7 +353,7 @@ The cart is named "The Bohemian Trap" because:
   - Dry ice fog particles
   - Absinthe bottle array
   - Ritual equipment (spoon, sugar, fountain)
-  - Viktor character (full costume)
+  - Emil character (full costume)
   - Atmospheric NPCs
   - Status effect overlays
   - Green vision tint overlay
@@ -361,27 +361,27 @@ The cart is named "The Bohemian Trap" because:
   - Absinthe pour ritual
   - Water drip through sugar
   - Clouding (louche) effect
-  - Viktor's theatrical gestures
+  - Emil's theatrical gestures
   - Control reversal wobble
   - Green sparkle particles
 - **Performance Budget**: 45 FPS target, max 14 draw calls, 32MB memory
 - **Platform Considerations**: Simplified fog, static neon, reduced particles
 
 ### Development Timeline
-- **Asset Creation**: 7 hours (cart detail, ritual elements, Viktor, effects)
+- **Asset Creation**: 7 hours (cart detail, ritual elements, Emil, effects)
 - **Implementation Phase**: 9 hours (ritual sequence, status effects, control reversal)
 - **Testing Requirements**: Status effect balance, control reversal timing, ritual skippability
-- **Polish Phase**: 4 hours (green lighting, fog atmosphere, Viktor's timing)
+- **Polish Phase**: 4 hours (green lighting, fog atmosphere, Emil's timing)
 
 ## Marketing Integration
 ### Social Media Strategy
-- **Instagram Moments**: Ritual photography, green aesthetic, Viktor portrait
+- **Instagram Moments**: Ritual photography, green aesthetic, Emil portrait
 - **TikTok Potential**: Full ritual ASMR, "is this a fairy or a lamp" content, control reversal fails
-- **Twitter Hooks**: Viktor's philosophy, absinthe mythology debunking, €25 for what
-- **Streaming Content**: Full ritual experience, status effect navigation, Viktor's rare honesty
+- **Twitter Hooks**: Emil's philosophy, absinthe mythology debunking, €25 for what
+- **Streaming Content**: Full ritual experience, status effect navigation, Emil's rare honesty
 
 ### Community Engagement
-- **Fan Art Potential**: Viktor portrait, cart design, Green Fairy visualization
+- **Fan Art Potential**: Emil portrait, cart design, Green Fairy visualization
 - **Meme-ability**: "I see the fairy" / "that's a lamp" format, control reversal struggles
 - **Cultural Discussion**: Tourism experience economy, mythology marketing, absinthe history
 
@@ -392,7 +392,7 @@ The cart is named "The Bohemian Trap" because:
 - [x] **Satirical targets appropriate** (Tourism industry, mythology marketing, not Czech culture)
 - [x] **Gameplay value established** (Status effects, ritual experience, control reversal mechanic)
 - [x] **No crypto elements** (Pure traditional grift)
-- [x] **Original content preserved** (Viktor characterization, ritual sequence, Green Fairy Confusion)
+- [x] **Original content preserved** (Emil characterization, ritual sequence, Green Fairy Confusion)
 
 ---
 
@@ -421,10 +421,10 @@ The cart is named "The Bohemian Trap" because:
 - green_vision_overlay.png - full screen - Status effect tint
 
 ### Character Sprites (10 PNGs)
-- viktor_full.png - 64x128 - Complete costume
-- viktor_presenting.png - 64x128x3 - Theatrical gestures
-- viktor_pouring.png - 64x128x4 - Ritual sequence
-- viktor_watching.png - 64x128 - Post-consumption observation
+- emil_full.png - 64x128 - Complete costume
+- emil_presenting.png - 64x128x3 - Theatrical gestures
+- emil_pouring.png - 64x128x4 - Ritual sequence
+- emil_watching.png - 64x128 - Post-consumption observation
 - the_believer.png - 64x96 - Seeing fairies (none present)
 - skeptic_companion.png - 64x96 - "That's a lamp, Mark"
 - instagram_ritualist.png - 64x96 - Content mode
@@ -443,4 +443,4 @@ The cart is named "The Bohemian Trap" because:
 
 ---
 
-*The Bohemian Trap: Drink like Hemingway, pay like a tourist, regret like everyone. Viktor knows exactly what he's selling. You know exactly what you're buying. The fairy is in on it too. €25 for the experience. €3 for the alcohol. €22 for the story you'll tell forever.*
+*The Bohemian Trap: Drink like Hemingway, pay like a tourist, regret like everyone. Emil knows exactly what he's selling. You know exactly what you're buying. The fairy is in on it too. €25 for the experience. €3 for the alcohol. €22 for the story you'll tell forever.*

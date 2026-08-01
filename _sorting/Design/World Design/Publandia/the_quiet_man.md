@@ -481,7 +481,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - orla_broker.png - 64x96 - Rumor dealer
 - terry_tourist.png - 64x96 - Easy opponent
 - aoife_accountant.png - 64x96 - Medium opponent
-- cork_jimmy.png - 64x96 - Hard opponent
+- quarry_jimmy.png - 64x96 - Hard opponent
 - big_seamus.png - 80x112 - Champion
 - crowd_cheering.png - 256x96 - Audience reaction
 - crowd_booing.png - 256x96 - Disappointed crowd

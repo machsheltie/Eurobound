@@ -14,9 +14,9 @@
       "sequence": [
         {
           "phase": "greeting",
-          "speaker": "viktor",
+          "speaker": "jakub",
           "dialogue": "Welcome! Sit, sit! What we create today? I do anything!",
-          "animation": "viktor_greeting_gesture"
+          "animation": "jakub_greeting_gesture"
         },
         {
           "phase": "request",
@@ -26,9 +26,9 @@
         },
         {
           "phase": "recognition",
-          "speaker": "viktor",
+          "speaker": "jakub",
           "dialogue": "Ah! Orloj skeleton! Is my specialty. Very meaningful. Where you want?",
-          "animation": "viktor_nodding_proudly"
+          "animation": "jakub_nodding_proudly"
         },
         {
           "phase": "location_choice",
@@ -38,9 +38,9 @@
         },
         {
           "phase": "validation",
-          "speaker": "viktor",
+          "speaker": "jakub",
           "dialogue": "Tramp stamp! Very popular with ladies. I know EXACTLY what you want.",
-          "animation": "viktor_confident_nod"
+          "animation": "jakub_confident_nod"
         },
         {
           "phase": "bros_react",
@@ -65,10 +65,10 @@
       "sequence": [
         {
           "phase": "sketch_reveal",
-          "description": "Viktor shows sketch - it's clearly a duck",
-          "speaker": "viktor",
+          "description": "Jakub shows sketch - it's clearly a duck",
+          "speaker": "jakub",
           "dialogue": "See? Is skeleton. Very death. Much bone.",
-          "animation": "viktor_showing_sketch",
+          "animation": "jakub_showing_sketch",
           "visual": "sketch_is_obviously_duck"
         },
         {
@@ -84,10 +84,10 @@
           "animation": "bradley_squinting"
         },
         {
-          "phase": "viktor_defense",
-          "speaker": "viktor",
+          "phase": "jakub_defense",
+          "speaker": "jakub",
           "dialogue": "Is skull. Skull of death bird. Very European.",
-          "animation": "viktor_confident"
+          "animation": "jakub_confident"
         },
         {
           "phase": "chadwick_content",
@@ -126,22 +126,22 @@
       "commentary_during": [
         {
           "trigger": "pain_spike",
-          "speaker": "viktor",
+          "speaker": "jakub",
           "dialogue": "Hold still! Is delicate work!"
         },
         {
           "trigger": "good_hold",
-          "speaker": "viktor", 
+          "speaker": "jakub", 
           "dialogue": "Yes! Good! You are natural!"
         },
         {
           "trigger": "flinch",
-          "speaker": "viktor",
+          "speaker": "jakub",
           "dialogue": "Is okay, is okay. Adds character."
         },
         {
           "trigger": "periodic",
-          "speaker": "viktor",
+          "speaker": "jakub",
           "dialogue": "Is looking beautiful. Very death.",
           "interval_seconds": 30
         },
@@ -154,7 +154,7 @@
       ],
       "ambient": {
         "audio": "tattoo_gun_buzzing_loop",
-        "viktor_humming": "eastern_european_pop"
+        "jakub_humming": "eastern_european_pop"
       }
     },
     
@@ -170,14 +170,14 @@
       "sequence": [
         {
           "phase": "completion_announcement",
-          "speaker": "viktor",
+          "speaker": "jakub",
           "dialogue": "Is done! Is beautiful! Look!",
-          "animation": "viktor_proud_reveal"
+          "animation": "jakub_proud_reveal"
         },
         {
           "phase": "mirror_handoff",
-          "description": "Viktor hands Lord Pilsner a hand mirror",
-          "speaker": "viktor",
+          "description": "Jakub hands Lord Pilsner a hand mirror",
+          "speaker": "jakub",
           "dialogue": "See? Is masterpiece!",
           "animation": "handing_mirror"
         },
@@ -202,14 +202,14 @@
           "animation": "lp_defensive"
         },
         {
-          "phase": "viktor_agreement",
-          "speaker": "viktor",
+          "phase": "jakub_agreement",
+          "speaker": "jakub",
           "dialogue": "Yes! Authentic! Duck of death! Very meaningful!",
-          "animation": "viktor_nodding_proudly"
+          "animation": "jakub_nodding_proudly"
         },
         {
           "phase": "mutual_satisfaction",
-          "description": "Both Viktor and LP are completely satisfied",
+          "description": "Both Jakub and LP are completely satisfied",
           "visual": "feedback_loop_of_delusion"
         }
       ],
@@ -231,7 +231,7 @@
         },
         {
           "effect": "unlock_dialogue",
-          "npc": "viktor",
+          "npc": "jakub",
           "dialogue_set": "matching_duck_offers"
         }
       ]
@@ -246,7 +246,7 @@
       "description": "Walls covered in tattoo designs. Skulls, tribal patterns, Looney Tunes characters, and... a suspicious number of birds.",
       "easter_egg": {
         "examine_count": 3,
-        "reveal": "You notice that Viktor's 'skull' designs all have beaks."
+        "reveal": "You notice that Jakub's 'skull' designs all have beaks."
       }
     },
     {
@@ -281,20 +281,20 @@
   
   "return_visit_changes": {
     "visit_2": {
-      "viktor_greeting": "Ah! My favorite customer! The skeleton man! You want another?",
+      "jakub_greeting": "Ah! My favorite customer! The skeleton man! You want another?",
       "new_items_available": ["matching_friendship_duck", "clock_rooster"],
       "offers_chadwick_tattoo": true,
       "offers_bradley_tattoo": true
     },
-    "post_other_city_viktor_encounter": {
-      "viktor_greeting": "You follow Viktor! Is fate! We do more art together!",
+    "post_other_city_jakub_encounter": {
+      "jakub_greeting": "You follow Jakub! Is fate! We do more art together!",
       "discount_available": true
     }
   },
   
   "narrator_commentary": {
     "on_entering": "Euro Ink 4 Less. Where dreams become permanent, and skeletons become ducks.",
-    "on_sketch_reveal": "Viktor presented his interpretation with the confidence of a man who has never been wrong about anything.",
+    "on_sketch_reveal": "Jakub presented his interpretation with the confidence of a man who has never been wrong about anything.",
     "on_beak_question": "Bradley, against all odds, had noticed something.",
     "on_reveal": "And there it was. A duck. Holding a scythe. Forever.",
     "on_denial": "Lord Pilsner's commitment to the bit was, in its own way, inspiring.",

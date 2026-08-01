@@ -155,7 +155,7 @@
   "quest_integration": {
     "primary_quest": "sinfonia_sidequest_fiaker_fiasco_01",
     "quest_trigger": {
-      "npc": "hans_jurgen_01",
+      "npc": "sinfonia_npc_hans_jurgen_01",
       "condition": "approach_during_day_hours",
       "cutscene": "hans_jurgen_panic_intro"
     },

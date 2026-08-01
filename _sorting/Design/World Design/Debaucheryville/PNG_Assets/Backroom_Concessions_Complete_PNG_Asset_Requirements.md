@@ -5,7 +5,43 @@ This document provides exact specifications for all PNG files needed for the Bac
 
 **Location ID:** `debaucheryville_internet_cafe_backroom_concessions_01`  
 **Theme:** Digital depravity meets greasy gamer fuel - eat meat cubes while torrenting conspiracy documentaries  
+**Zone:** 24-Hour Internet Café - Back Room (Debaucheryville)  
+**Hours:** Always accessible once discovered (24-hour operation; hidden entrance via restroom graffiti clue)  
 **Primary Function:** Hidden vendor with status effect consumables, ICQ thread unlock, black market referral source
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Neon Green | #00FF41 | 404 sign, menu glow, screen green, status effects |
+| Warning Orange | #FF8C00 | Warning lights, cooking heat, accent glow, status icons |
+| Server Black | #1C1C1C | Background shadows, server room walls |
+| Sickly Fluorescent | #E8E8D0 | Fluorescent panels, beige CRT plastic |
+| Machine Metal | #C0C0C0 | Vending machines, cooking equipment, chair frames |
+| Counter Wood | #8B4513 | Booth counter, fake leather chairs |
+| Error Red | #FF0000 | Popup errors, warning status, gaming chair accent |
+| Warning Yellow | #FFFF00 | Popup warning banners |
+| Office Grey | #4A4A4A | Mismatched office chairs |
+| Steam White | #FFFFFF | Cooking steam particles, static bursts |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/backroom_concessions/
+├── environment/
+│   ├── backroom_concessions_tileset.png
+│   └── backroom_environmental_effects.png
+├── npcs/
+│   └── concession_booth_spritesheet.png      (includes Donny.exe states)
+├── objects/
+│   ├── vending_machines_spritesheet.png
+│   ├── crt_popup_cascade.png
+│   └── mismatched_seating.png
+└── effects/
+    └── 404_sign_effects.png
+```
 
 ---
 
@@ -340,6 +376,75 @@ This document provides exact specifications for all PNG files needed for the Bac
 
 ---
 
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Hidden Door Outline | (128, 192) | 64x64 | High-contrast outline of concealed entrance for discoverability assist |
+| Menu Item Slot Highlight | (176, 216) | 48x48 | Bright border variant for menu item frames |
+| Donny.exe Silhouette | (256, 128) | 64x96 | High-contrast vendor outline for interaction targeting |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Static Popup Screen | (336, 88) | 56x42 | Single non-cascading popup frame (replaces popup cascade) |
+| Fluorescent Steady Panel | (128, 96) | 32x32 | Non-flickering ceiling panel variant |
+| 404 Sign Steady | (0, 192) | 192x64 | Always-on sign state, no flicker cycle |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Buzz Indicator | (48, 24) | 16x16 | Visual spark icon when fluorescent buzz plays |
+| Rattle Indicator | (416, 0) | 32x32 | Shake lines icon over vending machine during rattle audio |
+| Order Ding Indicator | (208, 200) | 32x16 | Flash frame on transaction sound |
+| DigiDysentery Onset Flash | (96, 104) | 32x32 | Screen-corner pulse replacing dial-up + gurgle audio cue |
+
+### Colorblind Considerations:
+- Status effect icons use distinct shapes (inverted arrows, jittering cup, brain symbol) — never color alone
+- DigiDysentery edge glitch uses pattern distortion, not just green tint
+- Menu item slots numbered 1-5 so items are identifiable without color
+- Touch zones minimum 44px for all menu interface elements and the hidden door
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); CRT screen content kept at higher quality for popup readability
+- **Android:** ETC2 with alpha
+- **Fallback:** PNG high quality for menu item sprites and status icons (detail-critical)
+
+### Texture Atlases:
+| Atlas | Contents | Max Size |
+|-------|----------|----------|
+| backroom_environment | tileset, 404 sign, environmental effects | 1024x1024 |
+| backroom_characters | concession booth + Donny.exe, seating | 1024x512 |
+| backroom_effects | vending machines, CRT popups, UI | 1024x512 |
+
+*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+
+### LOD Levels:
+| Level | Description |
+|-------|-------------|
+| High | Full popup cascade (6 concurrent), heat shimmer shader, 8/s steam particles |
+| Medium | Max 3 concurrent popups, no heat shimmer, 4/s steam particles |
+| Low | Static popup screens, no shader effects, steam disabled, reduced flicker rate |
+
+### Performance Targets:
+- **Target FPS:** 60
+- **Max Draw Calls:** 12 per frame
+- **Memory Footprint:** 35 MB maximum
+- **Particle Limit:** 20 concurrent (steam + static combined)
+
+### Performance Notes:
+- Popup cascade uses a spawn pool of pre-instanced sprites, no runtime instantiation
+- Reduced CRT flicker rate on low-end devices (profile-specified battery management)
+- Mystery machine flicker capped at 2 FPS on Low LOD
+- Heat shimmer shader disabled below Medium LOD
+
+---
+
 ## 🔧 Technical Integration Notes
 
 ### Godot Engine Integration:
@@ -405,6 +510,22 @@ This document provides exact specifications for all PNG files needed for the Bac
 - **Chair Collection:** Each represents someone who gave up
 - **Exposed Wiring:** Safety third philosophy
 - **404 Sign:** Beacon for the digitally hungry
+
+---
+
+## 📋 Required PNG Files (7 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | backroom_concessions_tileset.png | 512x512 |
+| 2 | concession_booth_spritesheet.png | 512x512 |
+| 3 | vending_machines_spritesheet.png | 512x256 |
+| 4 | crt_popup_cascade.png | 512x256 |
+| 5 | 404_sign_effects.png | 256x256 |
+| 6 | backroom_environmental_effects.png | 256x256 |
+| 7 | mismatched_seating.png | 256x128 |
+
+**Total Estimated Memory:** ~35 MB (in-memory budget including atlas overhead)
 
 ---
 
@@ -500,6 +621,7 @@ This document provides exact specifications for all PNG files needed for the Bac
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
 | Mobile Performance Budget | ✅ PASS | 60 FPS, 12 draw calls, 35MB |
 | Accessibility Features | ✅ PASS | Status icons, DigiDysentery assist option |
+| No Crypto Elements | ✅ PASS | Crypto satire established in source material (CryptoDöner, blockchain drizzle) |
 | Social Media Integration | ✅ PASS | Multiple viral moments identified |
 
 **Once validated, the Backroom Concessions becomes the hidden digital underground food court where players discover questionable nutrition through bathroom graffiti clues, experience risk/reward consumables with hilarious status effects, unlock ICQ communication channels through menu completion, and get black market referrals from Donny.exe while he philosophizes about air-gapped chakras and blockchain drizzle!**

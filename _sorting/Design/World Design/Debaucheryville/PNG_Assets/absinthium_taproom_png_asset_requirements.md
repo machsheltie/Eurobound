@@ -3,6 +3,43 @@
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for The Absinthium Taproom brewery dungeon. Each sprite sheet includes pixel-perfect coordinates, color specifications, and animation requirements for this surrealist absinthe den where gravity feels inconsistent and mirrors reflect alternate versions of yourself.
 
+**Location ID:** `debaucheryville_brewery_absinthium_taproom_01`  
+**Theme:** Absinthe mysticism taken literally - manufactured psychedelic tourism where the Green Fairy experience is real and mildly litigious  
+**Zone:** Hidden behind the Absinthe Arcade, north end (Debaucheryville)  
+**Hours:** 8 PM - 4 AM (the Green Fairy only appears after dark)  
+**Primary Function:** Brewery Tour Location #1 - mirror portal puzzle dungeon, Green Fairy Wisp boss battle, Absinthe Lager signature brew, Brewery Passport stamp
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Spectral Green | #00FF41 | Dominant glow - liquids, fog, portals, UI theming |
+| Void Purple | #4B0082 | Accents, confusion portal indicators, distortion effects |
+| Reality Black | #000000 | Shadows, the bottomless void below the bar |
+| Green Yellow | #ADFF2F | Vapor highlights, particle variation |
+| Chalice Gold | #FFD700 | Floating chalice, true mirror frames, achievement UI |
+| Danger Red | #DC143C | Boss UI warnings, low HP states |
+| Lab Coat White | #FFFFFF | Monocle bartender, highlight edges |
+| Patron Grey | #708090 | Whispering patrons half-visible in fog |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/absinthium_taproom/
+├── environment/
+│   └── absynthium_taproom_environment_complete.png
+├── npcs/
+│   └── absynthium_npcs.png
+├── objects/
+│   └── absynthium_interactive_objects.png
+├── effects/
+│   └── absynthium_particle_effects.png
+└── ui/
+    └── absynthium_ui_elements.png
+```
+
 ---
 
 ## 🎨 Sprite Sheet 1: Absynthium Taproom Environment Complete
@@ -480,6 +517,20 @@ This document provides exact specifications for all PNG files needed for The Abs
 
 ---
 
+## 📋 Required PNG Files (5 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | absynthium_taproom_environment_complete.png | 1024x768 |
+| 2 | absynthium_interactive_objects.png | 512x384 |
+| 3 | absynthium_npcs.png | 512x384 |
+| 4 | absynthium_particle_effects.png | 512x256 |
+| 5 | absynthium_ui_elements.png | 512x256 |
+
+**Total Estimated Memory:** ~45 MB (in-memory budget including atlas overhead)
+
+---
+
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (5 Total):
@@ -563,3 +614,22 @@ This document provides exact specifications for all PNG files needed for The Abs
 - [ ] Reality-bending effects are comedic not nauseating
 
 **Once validated, The Absinthium Taproom becomes the unforgettable first brewery dungeon where players navigate impossible mirror portals, fight their own reflection questioning their life choices, defeat the Green Fairy Wisp boss who splits into confusing illusions, and unlock the Absinthe Lager brew while the monocle-wearing bartender in a lab coat casually mentions the lawsuits from using actual wormwood!**
+
+---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ PASS | Debaucheryville only |
+| Cultural Specificity | ✅ PASS | Absinthe bar mysticism, Eastern European experimental venue culture |
+| Satirical Targets Appropriate | ✅ PASS | Green Fairy marketing myths and "mind-expanding" tourists, not addiction |
+| Seedy Underbelly Present | ✅ PASS | Manufactured psychedelic experience, patrons feeding dread for tips |
+| Gameplay Value Established | ✅ PASS | Mirror portal puzzle, boss battle, brewery tour progression, signature brew |
+| Technical Feasibility | ✅ PASS | Mobile optimization documented (atlasing, LOD, potato mode) |
+| Mobile Performance Budget | ✅ PASS | 45 FPS, 18 draw calls, 45MB |
+| Accessibility Features | ✅ PASS | Portal pattern indicators, motion-reduced warping, visual audio cues |
+| No Crypto Elements | ✅ PASS | No cryptocurrency content in this location |
+| Social Media Integration | ✅ PASS | Floating chalice selfie prop, Mirror Chad quotes, upward-drip bar |
+
+**Once these assets are delivered, The Absinthium Taproom stands as Debaucheryville's reality-optional first brewery dungeon - the place where every tourist's absinthe expectations come literally, confusingly true.**

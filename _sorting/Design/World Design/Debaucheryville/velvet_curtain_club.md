@@ -282,10 +282,8 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 ### Technical Specifications
 - **Color Palette**: 
   - Primary: Deep Burgundy (#800020), Velvet Purple (#4B0082)
-  - Accent: Neon Pink (#FF1493), LED Blue (#00BFFF)
+  - Accent: Gold (#FFD700) (chandeliers/trim), Neon Cyan (#00FFFF) (LED strips), Neon Pink (#FF1493), LED Blue (#00BFFF)
   - Background: Smoke Gray (#696969), Club Black (#1a1a1a)
-
-> ⚠ CONFLICT: legacy spec palette was Gold #FFD700 / Neon Cyan #00FFFF — author to decide.
 
 - **Lighting Setup**: 
   - Burgundy fog diffused
@@ -468,9 +466,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Quest Giver**: Vape Witch Vanessa
 - **Location**: Near the bar, exhaling peach-mango clouds
 - **Trigger**: Talk to Vanessa after first entry
-- **Connection**: Leads to Club Flyers sidequest (see: `clubflyers.md`)
-
-> ⚠ CONFLICT: legacy referenced sidequest_club_flyers.md — verify correct filename.
+- **Connection**: Leads to Club Flyers sidequest (see: `club_flyers.md`)
 
 ---
 

@@ -302,10 +302,10 @@
   "localization_notes": {
     "czech_dialogue": {
       "local_watching_bros_cry": {
-        "czech": "Jakub, podívej. Ti Američané brečí.",
-        "english_subtitle": "Jakub, look. The Americans are crying."
+        "czech": "Milan, podívej. Ti Američané brečí.",
+        "english_subtitle": "Milan, look. The Americans are crying."
       },
-      "jakub_response": {
+      "milan_response": {
         "czech": "Kvůli hodinám?",
         "english_subtitle": "Over the clock?"
       },
@@ -313,7 +313,7 @@
         "czech": "Ten vysoký chce tetování.",
         "english_subtitle": "The tall one wants a tattoo."
       },
-      "jakub_final": {
+      "milan_final": {
         "czech": "Američané.",
         "english_subtitle": "Americans."
       }

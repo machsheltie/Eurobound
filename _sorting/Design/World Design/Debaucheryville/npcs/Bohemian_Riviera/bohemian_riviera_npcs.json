@@ -440,7 +440,7 @@
       "role": "Bohemian Riviera institution; present at the all-night party in night_party_zone on the night of night_event_outbreak_01",
       "location_zone": "night_party_zone",
       "behavior": "triggered",
-      "full_profile": "Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md",
+      "full_profile": "Design/World Design/Debaucheryville/npcs/Bohemian_Riviera/queen_riviera_renata.md",
       "sprite_sheet": "queen_riviera_renata_beach.png",
 
       "schedule": {

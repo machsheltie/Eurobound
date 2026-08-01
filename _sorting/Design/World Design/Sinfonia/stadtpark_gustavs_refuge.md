@@ -104,7 +104,7 @@ Gustav isn't just running—he's *escaping*. After years of tourist service, he'
 **Role**: Runaway Horse / Antagonist-Turned-Sympathetic / Resolution Target
 
 **Appearance**:
-- Breed: Lipizzan (white/grey)
+- Breed: Lipizzan (white/grey) — Spanish Riding School reject
 - Age: 16 (elderly for a carriage horse)
 - Condition: Exhausted, slightly disheveled
 - Still wearing: Tattered opera cape, café feathers stuck throughout
@@ -136,9 +136,9 @@ Gustav isn't just running—he's *escaping*. After years of tourist service, he'
 
 ---
 
-### Hans-Jürgen Fiakermeister (Returning)
+### Hans-Jürgen Pferdmann, Fiakermeister (Returning)
 
-**NPC ID**: `sinfonia_npc_hansjurgen_fiaker_01`
+**NPC ID**: `sinfonia_npc_hans_jurgen_01`
 
 **Role**: Desperate Horse Owner / Emotional Core / Payment Collector
 

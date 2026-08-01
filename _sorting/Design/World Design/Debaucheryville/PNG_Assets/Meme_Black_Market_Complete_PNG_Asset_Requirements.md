@@ -5,7 +5,41 @@ This document provides exact specifications for all PNG files needed for the Mem
 
 **Location ID:** `debaucheryville_museum_meme_black_market_01`  
 **Theme:** Underground meme economy, weaponized nostalgia, early internet worship  
+**Zone:** Hidden back room of the Internet History Museum  
+**Hours:** Accessible only at 3:33 AM in-game time (via GeoCities kiosk password sequence)  
 **Primary Function:** Hidden vendor, meme summons, MemeMastery progression, ICQ integration
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| CRT Blue | #4169E1 | Monitor glow, BSOD screens, dominant mood |
+| Early Internet Green | #00FF00 | Terminal text, AIM status dots, accents |
+| Carpet Burn Brown | #8B4513 | Floor, shelving, old-carpet grime |
+| Baja Blast Green | #00FF7F | MemeLord.exe vape mist, signature particle color |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/meme_black_market/
+├── environment/
+│   ├── meme_black_market_den.png
+│   ├── corrupted_gif_wall.png
+│   └── windows_98_crash_loop.png
+├── npcs/
+│   └── memelord_exe_vendor.png
+├── objects/
+│   ├── meme_summon_sprites.png
+│   ├── meme_trinkets.png
+│   ├── ascii_cat_guardians.png
+│   └── password_puzzle_elements.png
+├── effects/
+│   └── meme_market_particles.png
+└── ui/
+    └── meme_black_market_ui.png
+```
 
 ---
 
@@ -65,7 +99,7 @@ This document provides exact specifications for all PNG files needed for the Mem
 ### Character States (96x128 each):
 | State | Position | Description |
 |-------|----------|-------------|
-| Idle | (0, 0) | Half-Adobe Flash runtime |
+| Idle | (0, 0) | Half-Adobe Flash runtime (vape in hand — he is never not vaping) |
 | Vaping | (96, 0) | Baja Blast cloud |
 | Selling | (192, 0) | Transaction mode |
 | Prophetic | (288, 0) | Delivering internet wisdom |
@@ -96,7 +130,7 @@ This document provides exact specifications for all PNG files needed for the Mem
 **MemeLord.exe Visual Notes:**
 - Half-human, half-Adobe Flash runtime
 - Bleached tips, Guy Fieri visor, fingerless gloves
-- Vapes exclusively Baja Blast mist (green #00FF7F)
+- Vapes exclusively Baja Blast mist (green #00FF7F) — continuously, in every pose
 - Text-to-speech quality mixed with Guy Fieri enthusiasm
 
 ---
@@ -315,7 +349,7 @@ This document provides exact specifications for all PNG files needed for the Mem
 
 ---
 
-## 🔐 Password Puzzle Elements (ported from legacy spec)
+## 🔐 Sprite Sheet 9: Password Puzzle Elements (ported from legacy spec)
 **File:** `password_puzzle_elements.png`
 **Dimensions:** 512x384 pixels
 
@@ -356,7 +390,7 @@ The three-step entrance puzzle components:
 
 ---
 
-## 🖥️ Windows 98 Crash Loop (ported from legacy spec — no BASE equivalent)
+## 🖥️ Sprite Sheet 10: Windows 98 Crash Loop (ported from legacy spec — no BASE equivalent)
 **File:** `windows_98_crash_loop.png`
 **Dimensions:** 384x256 pixels
 
@@ -405,15 +439,12 @@ The eternal digital samsara display:
 - **Cycle Duration:** 8 seconds
 - **Purpose:** Endless suffering visualization
 
-> ⚠ CONFLICT: legacy spec says Windows 98 crash is a 15-second full cycle (startup → crash → restart) — author to decide.
-
 ### MemeLord.exe Vaping:
-- **Pattern:** Idle → Vaping → Idle
-- **Trigger:** Every 15-30 seconds
-- **Vape Duration:** 3 seconds
-- **Particle:** Baja Blast cloud spawns
-
-> ⚠ CONFLICT: legacy spec says vaping is an 8 FPS continuous loop, vape cloud persistence 5 seconds per exhale, "never stops vaping (character life support system)" — author to decide.
+- **Pattern:** Continuous vaping loop — he never stops vaping (character life support system)
+- **FPS:** 8, continuous loop across all vendor states
+- **Cloud Persistence:** Baja Blast cloud persists 5 seconds per exhale
+- **Particle:** Baja Blast cloud (green #00FF7F) spawns on every exhale
+- **Mobile Optimization:** Cap simultaneous vape clouds (max 3 on screen); reuse pooled particles instead of spawning new ones on low-end devices
 
 ### ASCII Cat Tracking:
 - **Pattern:** Staring → Eyes Tracking → Staring
@@ -450,17 +481,93 @@ The eternal digital samsara display:
 - VHS shelf opening: 3-second mechanical sliding animation
 
 **Environmental Loops:**
-- Windows 98 crash: 15-second full cycle (startup → crash → restart)
+- Windows 98 crash: 8-second full cycle (startup → crash → restart)
 - Nokia ringtone: 8-second loop continuously
 - ASCII cat eyes: 6 FPS tracking animation
 - RGB LED pulse: 10 FPS color cycling
 
 ---
 
-## 🔊 Audio Synchronization Points
+## ♿ Accessibility Sprite Requirements
 
-**Critical Audio-Visual Sync Requirements:**
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| MemeLord.exe Outline | (0, 0) | 96x128 | High-visibility vendor silhouette against RGB clutter |
+| VHS Shelf Door Outline | (96, 0) | 128x192 | Clear hidden-entrance boundary once discovered |
+| Vendor Menu High Contrast | (224, 0) | 256x192 | Readable summon/trinket menu without RGB bleed |
 
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Static GIF Wall Variant | (0, 192) | 128x96 | Corrupted GIFs frozen on least-glitched frame |
+| Reduced RGB Cycling | (128, 192) | 96x48 | Slow fade instead of rapid color cycling |
+| Meatspin Static Frame | (224, 192) | 48x48 | Non-spinning frame for vestibular safety (curse text intact) |
+| Crash Loop Static | (272, 192) | 96x80 | BSOD held steady, no restart flash |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Nokia Ringtone Waves | (0, 288) | 48x32 | Ductwork sound-source indicator |
+| Windows Chime Visual | (48, 288) | 32x32 | Startup/crash audio without sound dependency |
+| AIM Door Slam Visual | (80, 288) | 32x32 | Password success/failure feedback |
+| Vape Hiss Indicator | (112, 288) | 32x24 | Continuous exhale cue without audio |
+
+### Colorblind Considerations:
+- MemeMastery meter stages use fill patterns plus percentage text, not color alone
+- Status icons (Mentally Unwell, Cringe, Elite Internet User) use distinct silhouettes, not color coding
+- Touch zones minimum 44px for vendor menu tabs, password terminal, and VHS shelf interaction
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** PVRTC 4BPP / ASTC for vape mist and RGB glow transparency
+- **Android:** ETC2 with alpha for particle effects and corrupted GIF overlays
+- **Fallback:** PNG high quality for AIM away message text and BSOD error readability
+
+### Texture Atlases:
+| Atlas | Contents | Max Size |
+|-------|----------|----------|
+| meme_market_environment | den, corrupted GIF wall, Windows 98 crash loop | 2048x2048 |
+| meme_market_characters | MemeLord.exe vendor, meme summons, ASCII cat guardians | 1024x1024 |
+| meme_market_effects | particles, trinkets, UI, password puzzle elements | 1024x1024 |
+
+*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+
+### LOD Levels:
+| Level | Description |
+|-------|-------------|
+| High | Full RGB cycling, all vape particles, complete corrupted GIF animation |
+| Medium | Simplified CRT flicker, reduced vape particle count (60% reduction), essential GIF frames |
+| Low | Static RGB lighting, 90% vape particle reduction, minimal animations |
+
+- **Potato Mode:** Basic sprites, no particles, static lighting
+
+### Performance Targets:
+- **Target FPS:** 50 FPS
+- **Max Draw Calls:** 18 per frame
+- **Memory Footprint:** 42MB maximum
+- **Particle Limit:** Max 3 simultaneous vape clouds; pooled/reused particles on low-end hardware
+
+### Performance Notes:
+- Simplified CRT flicker effects on older devices
+- Continuous vaping loop requires particle pooling — clouds despawn after their 5-second persistence window
+- Static RGB lighting on low-end hardware
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- Particle systems: CPUParticles2D (not GPU) for vape mist, pixel distortion, and RGB glow
+- Time-lock system: 3:33 AM entrance puzzle activation, shared clock with Internet History Museum
+- State machines: VHS shelf mechanism, Windows 98 crash loop, MemeMastery meter progression
+- Summon RNG script: Dancing Baby 33% Cringe backfire, Trollface Bomb 20% party argument
+
+### Audio Synchronization Points:
 1. **VHS Shelf Opening**: Mechanical grinding sound syncs with frame 1, Nokia gets louder each frame
 2. **Meme Summons**: Each summon has signature sound (Shiba bark, "o shit waddup", baby sounds, trollface chaos)
 3. **Windows 98 Crash**: Startup chime → loading sounds → error sound → restart beep perfectly timed
@@ -468,47 +575,20 @@ The eternal digital samsara display:
 5. **Password Success/Failure**: AIM door slam or Windows error chord at exact feedback moment
 6. **Meatspin Curse**: Ominous spinning sound begins immediately when NFT acquired
 
----
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Meme Black Market Entrance | GeoCities kiosk, MSN terminal, VHS shelf frames | 3:33 AM password sequence from museum floor |
+| Tony420 SWF Vault Trade | Vendor menu, SWF Vault Access banner | Hidden .SWF vault via meme trade |
+| MemeMastery Progression | MemeMastery meter stages, Shitposter Supreme badge | Full meter unlocks title + ICQ contact |
+| Lord Pilsner Lore | "Pilsner Embarrassed" achievement banner | Internet history discovery |
 
-## ⚡ Performance Specifications
-
-**Frame Rate Target:** 50 FPS  
-**Memory Footprint:** 42MB maximum  
-**Draw Calls:** Maximum 18  
-**Mobile Optimization:**
-- Simplified CRT flicker effects on older devices
-- Reduced vape particle count (60% reduction on medium, 90% on low)
-- Static RGB lighting on low-end hardware
-- Potato mode: Basic sprites, no particles, static lighting
-
----
-
-## 📦 File Delivery Checklist
-
-### Required PNG Files (8 Total):
-- [ ] `meme_black_market_den.png` (1024x768)
-- [ ] `memelord_exe_vendor.png` (512x384)
-- [ ] `meme_summon_sprites.png` (512x384)
-- [ ] `meme_trinkets.png` (256x192)
-- [ ] `corrupted_gif_wall.png` (512x256)
-- [ ] `ascii_cat_guardians.png` (256x128)
-- [ ] `meme_black_market_ui.png` (384x256)
-- [ ] `meme_market_particles.png` (256x128)
-
-### Quality Requirements:
-| Requirement | Specification |
-|-------------|---------------|
-| Format | PNG-24 with alpha |
-| Color Space | sRGB |
-| DPI | 72 |
-| Naming | snake_case |
-| Compression | Lossless PNG compression |
-| Layer Organization | Preserve layer structure for future edits |
-
-### Delivery Format (ported from legacy spec):
-- **Primary:** Individual PNG files per specifications above
-- **Backup:** Master PSD/Photoshop files with organized layer groups
-- **Documentation:** Layer naming guide for future updates
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Internet History Museum | VHS shelf passage, GeoCities kiosk, MSN terminal | 3-second shelf slide with RGB light bleed |
+| Cyberspace Kavarna | ICQ contact unlock (MemeMastery full) | ICQ network handoff |
+| Restroom graffiti site | "DO NOT LOOK AT THE BABY" graffiti | Reading graffiti is an entry prerequisite |
 
 ---
 
@@ -530,25 +610,6 @@ The eternal digital samsara display:
 - Additional text: "A problem has been detected and Windows has achieved digital samsara"
 - "Press any key to continue suffering"
 - Error code: "0x00000000EXISTENCE_IS_SUFFERING"
-
----
-
-## 🎯 Social Media Viral Potential
-
-### Screenshot-Worthy Moments:
-1. **MemeLord.exe** - Bleached tips, visor, vape cloud
-2. **VHS Shelf Opening** - Hidden entrance reveal
-3. **Trollface Bomb** - Full screen LULs
-4. **Meatspin NFT** - Won't stop spinning
-5. **ASCII Cat Guardians** - Eyes tracking
-6. **MemeMastery Full** - Shitposter Supreme
-
-### Quote Potential:
-- "Warning: I run on LimeWire and vengeance."
-- "Hamster Dance is eternal, peasant."
-- "My soul is encoded in Winamp skins and guilt."
-- "Funcoland offered me $1.10 for my soul and two PS2 controllers."
-- "I got diamond hands and zero liquidity, baby."
 
 ---
 
@@ -581,18 +642,113 @@ The eternal digital samsara display:
 
 ---
 
+## 🎯 Social Media Viral Potential
+
+### Screenshot-Worthy Moments:
+1. **MemeLord.exe** - Bleached tips, visor, vape cloud
+2. **VHS Shelf Opening** - Hidden entrance reveal
+3. **Trollface Bomb** - Full screen LULs
+4. **Meatspin NFT** - Won't stop spinning
+5. **ASCII Cat Guardians** - Eyes tracking
+6. **MemeMastery Full** - Shitposter Supreme
+
+### Quote Potential:
+- "Warning: I run on LimeWire and vengeance."
+- "Hamster Dance is eternal, peasant."
+- "My soul is encoded in Winamp skins and guilt."
+- "Funcoland offered me $1.10 for my soul and two PS2 controllers."
+- "I got diamond hands and zero liquidity, baby."
+
+---
+
+## 📋 Required PNG Files (10 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | meme_black_market_den.png | 1024x768 |
+| 2 | memelord_exe_vendor.png | 512x384 |
+| 3 | meme_summon_sprites.png | 512x384 |
+| 4 | meme_trinkets.png | 256x192 |
+| 5 | corrupted_gif_wall.png | 512x256 |
+| 6 | ascii_cat_guardians.png | 256x128 |
+| 7 | meme_black_market_ui.png | 384x256 |
+| 8 | meme_market_particles.png | 256x128 |
+| 9 | password_puzzle_elements.png | 512x384 |
+| 10 | windows_98_crash_loop.png | 384x256 |
+
+**Total Estimated Memory:** ~7 MB uncompressed RGBA (well within the 42MB location footprint)
+
+---
+
+## 📦 File Delivery Checklist
+
+### Required PNG Files (10 Total):
+- [ ] `meme_black_market_den.png` (1024x768)
+- [ ] `memelord_exe_vendor.png` (512x384)
+- [ ] `meme_summon_sprites.png` (512x384)
+- [ ] `meme_trinkets.png` (256x192)
+- [ ] `corrupted_gif_wall.png` (512x256)
+- [ ] `ascii_cat_guardians.png` (256x128)
+- [ ] `meme_black_market_ui.png` (384x256)
+- [ ] `meme_market_particles.png` (256x128)
+- [ ] `password_puzzle_elements.png` (512x384)
+- [ ] `windows_98_crash_loop.png` (384x256)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha |
+| Color Space | sRGB |
+| DPI | 72 |
+| Naming | snake_case |
+| Compression | Lossless PNG compression |
+| Layer Organization | Preserve layer structure for future edits |
+
+### Delivery Format (ported from legacy spec):
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/Photoshop files with organized layer groups
+- **Documentation:** Layer naming guide for future updates
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly (#4169E1, #00FF00, #8B4513, #00FF7F)
+- [ ] VHS shelf 4-frame opening reads clearly with RGB light bleed
+- [ ] MemeLord.exe reads as half-human, half-Flash-runtime with visor and bleached tips
+- [ ] Vape clouds continuous — the vendor is never seen not vaping
+- [ ] Meatspin NFT spin loop is seamless (it won't stop)
+- [ ] Windows 98 crash loop cycles in 8 seconds with philosophical error text legible
+- [ ] ASCII cat guardians' tracking eyes readable from gameplay distance
+- [ ] Accessibility visual alternatives included for all audio cues
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme (weaponized nostalgia as sacred economy) is clear throughout all assets
+- [ ] Hidden VHS entrance discoverable via RGB light leak at 3:33 AM
+- [ ] Mobile performance optimized (CPU particles, max 3 vape clouds, atlas limits respected)
+- [ ] Touch zone sizing considered (44px minimum for vendor menu and password terminal)
+- [ ] Colorblind-friendly meter patterns and status icon silhouettes
+- [ ] Social media viral potential maximized in composition choices (Trollface bomb, MemeMastery full)
+
+---
+
 ## 🏆 Location Validation Status
 
-| Requirement | Status |
-|-------------|--------|
-| World Consistency | ✅ PASS |
-| Cultural Specificity | ✅ PASS |
-| Satirical Targets | ✅ PASS |
-| Seedy Underbelly | ✅ PASS |
-| Gameplay Value | ✅ PASS |
-| Technical Feasibility | ✅ PASS |
-| Mobile Performance | ✅ PASS (50 FPS, 18 draws, 42MB) |
-| Accessibility | ✅ PASS |
-| Social Media | ✅ PASS |
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ PASS | Debaucheryville only |
+| Cultural Specificity | ✅ PASS | Early 2000s internet culture worship |
+| Satirical Targets Appropriate | ✅ PASS | Meme commodification and nostalgia exploitation — punches up |
+| Seedy Underbelly Present | ✅ PASS | Underground economy selling psychological damage |
+| Gameplay Value Established | ✅ PASS | Vendor, summons, MemeMastery progression, ICQ unlock |
+| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Mobile Performance Budget | ✅ PASS | 50 FPS, 18 draws, 42MB |
+| Accessibility Features | ✅ PASS | Visual audio cues included |
+| No Crypto Elements | ✅ PASS | Crypto/meme satire (Meatspin NFT, Funcoland Futures, Diamond Hands) is established source material |
+| Social Media Integration | ✅ PASS | Viral moments identified |
 
 **The Meme Black Market becomes the essential underground economy hub where MemeLord.exe sells psychological damage as sacred artifacts, Meme Summons provide battle variety, the MemeMastery Meter tracks addiction progression, and the Meatspin NFT appears whether you want it or not (you don't)!**

@@ -2,19 +2,22 @@
 
 *Artist Reference Document for Sinfonia's Crown Jewel*
 
-**Location ID**: `sinfonia_bassline_opera_house_01`  
+## 📋 Overview
+The Bassline Opera House is a 400-year-old baroque masterpiece that transforms into an EDM venue at night — Sinfonia's crown jewel, where four centuries of cultural excellence meet one horse in a cape, one method-acting bird-man, and €2,000 in Magic Flute production costs. This document specifies every sprite sheet the location needs across its five zones: grand lobby, auditorium, backstage, dressing rooms, and orchestra pit boss arena.
+
+**Location ID:** `sinfonia_bassline_opera_house_01`
+**Theme:** Cultural institution pretension — opera snobbery and artistic exploitation, with a dual identity (traditional opera by day, underground Bassline EDM by night)
+**Zone:** Imperial Square District
+**Hours:** Lobby 10:00–23:00; rehearsals 10:00–17:00; performances 19:00–22:00; Bassline 23:00–04:00
+**Primary Function:** Multi-zone venue / story hub / boss arena — Fiaker Fiasco phase 3 (backstage chaos), Maestro Vice von Strauss city-boss fight, Waltz of the Bros rhythm battle, gift shop and box office economy
+
 **Priority**: HIGH (Multi-Zone Venue, Story Hub, Boss Arena, Fiaker Fiasco Phase 3)  
 **Total Sheets Required**: 12  
 **Mobile Optimization**: Target 60 FPS on iPhone 8+
 
 ---
 
-## Art Direction Summary
-
-### Visual Identity
-The Bassline Opera House embodies **faded grandeur meeting modern decadence**—a 400-year-old baroque masterpiece that transforms into an EDM venue at night. Think Vienna State Opera crossed with a Berlin techno club. The building should feel *simultaneously prestigious and slightly seedy*.
-
-### Color Palette
+## 🎨 Color Palette
 
 | Color | Hex | Usage |
 |-------|-----|-------|
@@ -22,12 +25,37 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 | Baroque Cream | #FFF8DC | Walls, marble accents |
 | Velvet Red | #8B0000 | Curtains, carpets, seating |
 | Marble White | #FFFAFA | Floors, columns |
+| Gilded Bronze | #CD7F32 | Statues, fixtures, aged metalwork |
 | Backstage Black | #1C1C1C | Wings, work areas |
 | Bassline Neon | #FF00FF / #00FFFF | Night transformation |
 
 ---
 
-## SHEET 1: Lobby Tileset
+## 📁 File Structure
+```
+assets/sprites/locations/sinfonia/bassline_opera_house/
+├── environment/
+│   ├── bassline_opera_lobby_tileset.png
+│   ├── bassline_opera_backstage_tileset.png
+│   └── bassline_opera_backdrop_starry.png
+├── npcs/
+│   ├── npc_regisseur_hoffmann.png
+│   ├── npc_stagehead_otto.png
+│   ├── npc_prima_donna_adelheid.png
+│   ├── npc_papageno_franz.png
+│   ├── npc_lobby_staff_sheet.png
+│   └── boss_maestro_von_strauss.png
+├── objects/
+│   └── destructible_props_sheet.png
+├── effects/
+│   └── opera_house_effects.png
+└── ui/
+    └── opera_house_ui.png
+```
+
+---
+
+## 🏛️ Sprite Sheet 1: Lobby Tileset
 **Filename**: `bassline_opera_lobby_tileset.png`  
 **Dimensions**: 1024 × 768 pixels  
 **Tile Size**: 32 × 32 pixels
@@ -44,7 +72,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 2: Backstage Tileset
+## 🎭 Sprite Sheet 2: Backstage Tileset
 **Filename**: `bassline_opera_backstage_tileset.png`  
 **Dimensions**: 1024 × 512 pixels
 
@@ -59,7 +87,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 3: Starry Night Backdrop
+## 🌌 Sprite Sheet 3: Starry Night Backdrop
 **Filename**: `bassline_opera_backdrop_starry.png`  
 **Dimensions**: 512 × 256 pixels
 
@@ -72,7 +100,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 4: Regisseur Heinrich Hoffmann
+## 📢 Sprite Sheet 4: Regisseur Heinrich Hoffmann
 **Filename**: `npc_regisseur_hoffmann.png`  
 **Dimensions**: 384 × 384 pixels  
 **Sprite Size**: 48 × 64 pixels
@@ -93,7 +121,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 5: Stagehead Otto
+## ☕ Sprite Sheet 5: Stagehead Otto
 **Filename**: `npc_stagehead_otto.png`  
 **Dimensions**: 288 × 256 pixels  
 **Sprite Size**: 48 × 64 pixels
@@ -115,7 +143,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 6: Prima Donna Adelheid
+## 👑 Sprite Sheet 6: Prima Donna Adelheid
 **Filename**: `npc_prima_donna_adelheid.png`  
 **Dimensions**: 384 × 320 pixels  
 **Sprite Size**: 48 × 80 pixels (taller for dramatic costume)
@@ -138,7 +166,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 7: Papageno (Franz)
+## 🪶 Sprite Sheet 7: Papageno (Franz)
 **Filename**: `npc_papageno_franz.png`  
 **Dimensions**: 384 × 320 pixels  
 **Sprite Size**: 48 × 80 pixels
@@ -159,7 +187,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 8: Lobby Staff (Shared Sheet)
+## 👥 Sprite Sheet 8: Lobby Staff (Shared Sheet)
 **Filename**: `npc_lobby_staff_sheet.png`  
 **Dimensions**: 384 × 384 pixels  
 **Sprite Size**: 48 × 64 pixels
@@ -178,7 +206,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 9: Maestro Vice von Strauss (Boss)
+## 🎼 Sprite Sheet 9: Maestro Vice von Strauss (Boss)
 **Filename**: `boss_maestro_von_strauss.png`  
 **Dimensions**: 512 × 640 pixels  
 **Sprite Size**: 64 × 80 pixels (larger boss sprite)
@@ -209,7 +237,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 10: Destructible Props
+## 💥 Sprite Sheet 10: Destructible Props
 **Filename**: `destructible_props_sheet.png`  
 **Dimensions**: 512 × 384 pixels
 
@@ -242,7 +270,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 11: Effects & Particles
+## ✨ Sprite Sheet 11: Effects & Particles
 **Filename**: `opera_house_effects.png`  
 **Dimensions**: 256 × 256 pixels
 
@@ -258,7 +286,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## SHEET 12: UI Elements
+## 🖥️ Sprite Sheet 12: UI Elements
 **Filename**: `opera_house_ui.png`  
 **Dimensions**: 256 × 192 pixels
 
@@ -272,7 +300,199 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## Lighting Requirements
+## 🎬 Animation Specifications
+
+### General Animation Guidelines (all sheets)
+- **Idle Loops**: 2-4 frames, 1-2 FPS
+- **Action Animations**: 3-6 frames, 4-8 FPS
+- **Destruction Sequences**: 3-4 frames, 6-8 FPS
+- **Boss Attacks**: 4-8 frames, 4-6 FPS
+
+### Hoffmann's Descent (Idle → Horror → Breakdown → Defeat):
+- **Duration:** Horror ~0.7s single play; Breakdown and Defeat hold at 1 FPS
+- **Frames:** 4 / 2 / 2 per state
+- **Pattern:** Quest-state driven progression, no automatic loop back
+- **Trigger:** Gustav destruction events during Fiaker Fiasco phase 3
+- **Purpose:** A director's career-long faith in art dying in real time; the quest's emotional comedy spine
+- **Audio Sync:** German exclamation on Horror frame 1; silence on Defeat
+- **Mobile Optimization:** None needed (single NPC)
+
+### Otto's Coffee Sip:
+- **Duration:** ~1 second, single play on random interval
+- **Frames:** 3
+- **Pattern:** Raise → sip → lower, return to idle
+- **Trigger:** Timer (random 8–15s), unaffected by chaos state
+- **Purpose:** The deadpan constant — destruction rages, Otto sips
+- **Audio Sync:** Quiet slurp, deliberately audible in chaos lulls
+- **Mobile Optimization:** None needed
+
+### Starry Night Backdrop Tear:
+- **Duration:** ~0.6 seconds (canvas rip effect, 4 frames at 6-8 FPS)
+- **Frames:** 3 backdrop states + 4-frame rip effect overlay
+- **Pattern:** Pristine → cape catching → torn (state advance, no loop)
+- **Trigger:** Gustav's cape snag scripted event
+- **Purpose:** The €400, eight-months-of-work destruction centerpiece
+- **Audio Sync:** Long fabric-rip sound synced to the diagonal tear; damage popup ching on completion
+- **Mobile Optimization:** None needed (scripted one-shot)
+
+### Maestro Boss Phase Cycle:
+- **Duration:** Attacks 0.7–2.0s each per guidelines (4-8 frames at 4-6 FPS)
+- **Frames:** 8 (conducting/chaotic conducting), 6 (crescendo, waltz, DJ, summon), 4 (bass attack, transformation, defeat)
+- **Pattern:** Phase-locked rows; transformation plays once between phases
+- **Trigger:** Boss AI state machine, tempo-synced to battle music
+- **Purpose:** Classical elegance → modern swagger → desperate fusion, each phase a tonal shift
+- **Audio Sync:** All attacks beat-matched; Phase 2 bass attack lands exactly on the drop
+- **Mobile Optimization:** Phase 3 strobe replaced by slow color fade on low-end devices
+
+### Papageno Performing / Feather Bounce:
+- **Duration:** ~1 second loop (6 frames at 4-8 FPS)
+- **Frames:** 6
+- **Pattern:** Dance loop with subtle feather secondary motion
+- **Trigger:** Constant while on screen; Guiding Beckon during ally path
+- **Purpose:** The one performer who never breaks character, even mid-catastrophe
+- **Audio Sync:** Panpipe phrase on performing loop start
+- **Mobile Optimization:** Feather secondary motion disabled on low-end
+
+### Destruction Effects (Feathers / Gold Flakes / Dust):
+- **Duration:** 0.5–0.7 seconds each (4 frames at 6-8 FPS)
+- **Frames:** 4 each
+- **Pattern:** Single play, spawned per destruction event
+- **Trigger:** Prop destruction events
+- **Purpose:** Sells impact and cost — every puff of dust is money
+- **Audio Sync:** Crash + register ching with rising € damage popup
+- **Mobile Optimization:** Cap concurrent effect instances at 4 on low-end
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Destructible prop outlines | set at sheet layout | per prop | High-contrast silhouettes marking what Gustav can (will) destroy |
+| Papageno ally highlight | set at sheet layout | 48×80 | Bold outline for the follow-the-bird-man guidance path |
+| Boss telegraph outlines | set at sheet layout | 64×80 | Enhanced-visibility windup silhouettes for all Maestro attacks |
+| Hidden panel door marker | set at sheet layout | 32×64 | Discoverable-contrast variant of the lobby's hidden panel |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Phase 3 strobe replacement | set at sheet layout | full arena | Slow two-color fade replacing tempo-synced strobe |
+| Static chandelier sparkle | set at sheet layout | 64×64 | Non-glinting chandelier variant |
+| Reduced Bassline color cycle | set at sheet layout | full arena | Single-hue wash replacing #FF00FF → #00FFFF → #FFFF00 cycling |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Beat-drop indicator | set at sheet layout | 32×32 | Pulsing bass glyph telegraphing Phase 2 drops for rhythm play |
+| Fabric-rip streak | set at sheet layout | 48×16 | Directional tear glyph accompanying the backdrop rip audio |
+| German exclamation burst | set at sheet layout | 32×24 | Speech-shock glyph over Hoffmann and Adelheid outbursts |
+| Crash/ching burst | set at sheet layout | 32×32 | Impact star + € glyph for every destruction sound |
+
+### Colorblind Considerations:
+- Boss phase changes are signaled by costume state (tails / headphones / open shirt), never lighting color alone
+- Status icons (Cultured Presence, Artistic Guilt) use distinct silhouettes, not just tint
+- Touch zones minimum 44px for box office, gift shop, and dialogue choice panels
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); lobby tileset gilding and boss sheet need ASTC 4x4
+- **Android:** ETC2 with alpha
+- **Fallback:** PNG high quality for the starry backdrop (its hand-painted stars are plot-critical)
+
+### Texture Atlases:
+| Atlas | Contents | Max Size |
+|-------|----------|----------|
+| opera_lobby | lobby tileset, lobby staff, UI | 1024x1024 |
+| opera_backstage | backstage tileset, backdrop, destructible props | 1024x1024 |
+| opera_principals | Hoffmann, Otto, Adelheid, Papageno | 1024x1024 |
+| opera_boss | Maestro von Strauss | 1024x1024 |
+| opera_effects | effects & particles | 512x512 |
+
+*(Maximum 5 atlases at 1024px per original spec; max atlas size 2048x2048 for mobile GPU compatibility.)*
+
+### LOD Levels:
+| Level | Description |
+|-------|-------------|
+| High | Full particle set (80), chandelier sparkle, strobe/color cycling, feather secondary motion |
+| Medium | 40 particles, no chandelier sparkle, simplified color cycling |
+| Low | Static lighting, minimal particles (destruction one-shots only), no shaders |
+
+### Performance Targets:
+- **Target FPS:** 60 on iPhone 8+
+- **Max Draw Calls:** Under 50 for full location
+- **Memory Footprint:** Under 50 MB for all zones loaded
+- **Particle Limit:** 80 simultaneous
+
+### Performance Notes:
+- Zone loading enabled: lobby, auditorium, backstage, dressing rooms, and orchestra pit load independently
+- Bassline transformation swaps lighting presets, not geometry — one texture state change at 23:00
+- Boss arena caps concurrent add-summon sprites during Encore phase
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- TileMap per zone; AnimatedSprite2D for all NPC/boss states; CPUParticles2D (not GPU) for feathers, dust, gold flakes
+- Location state machine: normal / rehearsal / performance / bassline / fiaker_fiasco_chaos / post_quest drives sprite and lighting swaps
+- Boss fight uses a tempo-sync controller: attack animation triggers quantized to battle-music BPM
+- CanvasLayer for the shared Fiaker Fiasco damage-counter UI
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Backdrop tear | Long fabric rip + damage ching | Synced to diagonal tear frames |
+| Prop destruction | Crash + cash-register ching | On impact frame, € popup rises |
+| Maestro Phase 2 bass attack | The drop | Beat-matched, hands-raised frame on downbeat |
+| Phase 3 strobe | Battle music tempo | Strobe flashes quantized to BPM |
+| Hoffmann horror | German exclamation | On horror frame 1 |
+| Papageno performing | Panpipe phrase | On loop start |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Fiaker Fiasco phase 3 | Backstage tileset damage states, destructible props, backdrop states, Hoffmann/Otto/Adelheid/Papageno sets | Gustav auto-enters via alley; €2,000 backstage damage tracked to `fiaker_fiasco_damage_euro` |
+| Maestro boss fight (main quest) | Boss sheet all phases, arena lighting states | Orchestra pit, Bassline configuration, 23:00–04:00 |
+| Waltz of the Bros | Auditorium configuration, patron NPCs | Rival rhythm-battle encounter |
+| Prima donna negotiation | Adelheid outrage/dismissive sets, torn costume variant | €500 demand, negotiable to €200 at Charm 4 |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Opera House Plaza | Adjacent main entrance; Gustav sprite arrives with café feathers on cape; Hans-Jürgen may appear at resolution; shared damage-counter UI | Main-door transition |
+| Café Sachertorte | Incoming quest path via alley | Alley auto-entry during Fiaker Fiasco |
+| Stadtpark (Gustav's Refuge) | Outgoing quest path; Gustav continues (even more disheveled); Papageno sprite if ally path; Hoffmann may pursue in fury state | Side-door path to the park |
+| The Black-Tie Backroom | Hidden entrance from lobby/backstage (hidden panel, prop corridor) | Concealed-door transition |
+| Hidden Baroness Ballroom | Unlocked via boss-reward vault keys | Late-game key transition |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "Faded grandeur meeting modern decadence" — a 400-year-old baroque masterpiece that transforms into an EDM venue at night. Think Vienna State Opera crossed with a Berlin techno club. The building should feel *simultaneously prestigious and slightly seedy*.
+- **Color Mood:** Gold, cream, and velvet red by day; magenta/cyan neon bleeding through the gilding by night
+- **Lighting:** Warm cream daytime, golden evening glow, indigo Bassline nights; harsh work lights backstage (see Lighting Requirements below)
+- **Texture:** Worn carpet showing centuries of use, gold leaf slightly flaking, stage wood scarred with tape marks — prestige under maintenance
+
+### Environmental Storytelling:
+- The hidden lobby panel and prop-corridor door: the institution's respectable face conceals the gambling den behind it
+- Backstage chaos (coffee area, sewing stations, damaged racks) shows the unglamorous labor propping up the gilded front
+- The torn starry backdrop remains visibly repaired post-quest — the €2,000 never quite disappears
+
+### Character Integration Notes:
+- Otto's calm is a rendering rule: his sprite never gains reaction frames, whatever happens in the scene
+- Papageno's feathers get subtle secondary animation; he reads as theatrical even at idle
+- Boss phases are costume-first: readable at silhouette level before any lighting change
+
+---
+
+## 💡 Lighting Requirements
 
 ### Lobby Lighting
 - **Daytime**: Warm cream (#FFFACD), 80% intensity
@@ -292,61 +512,112 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ---
 
-## Social Media Viral Moments
+## 🎯 Social Media Viral Potential
 
-### Key Screenshot Opportunities
+### Screenshot-Worthy Moments:
 1. **Gustav on stage** during "Der Hölle Rache"—horse interrupting opera
 2. **Damage counter hitting €2,000**—with destruction visible
 3. **Director's breakdown**—sitting on floor, thousand-yard stare
 4. **Papageno befriending Gustav**—bird-man and horse bonding
 5. **Otto sipping coffee**—completely unfazed during chaos
 
-### Quotable Visual Moments
-- Director: "I studied at the Conservatory..." (breakdown pose)
-- Otto: "*sips coffee*" (deadpan during destruction)
-- Prima Donna: "I sang at La Scala!" (outrage pose)
-- Papageno: "Follow the bird-man!" (guiding pose)
+### Quote Potential:
+- "I studied at the Conservatory..." - Regisseur Hoffmann (breakdown pose)
+- "*sips coffee*" - Otto (deadpan during destruction)
+- "I sang at La Scala!" - Prima Donna Adelheid (outrage pose)
+- "Follow the bird-man!" - Papageno (guiding pose)
 
 ---
 
-## Technical Specifications
+## 📋 Required PNG Files (12 Total)
 
-### File Format Requirements
-- **Format**: PNG-24 with alpha transparency
-- **Color Space**: sRGB
-- **Resolution**: 72 DPI (screen optimized)
-- **Compression**: Lossless
-- **Naming Convention**: `snake_case_descriptive.png`
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | bassline_opera_lobby_tileset.png | 1024x768 |
+| 2 | bassline_opera_backstage_tileset.png | 1024x512 |
+| 3 | bassline_opera_backdrop_starry.png | 512x256 |
+| 4 | npc_regisseur_hoffmann.png | 384x384 |
+| 5 | npc_stagehead_otto.png | 288x256 |
+| 6 | npc_prima_donna_adelheid.png | 384x320 |
+| 7 | npc_papageno_franz.png | 384x320 |
+| 8 | npc_lobby_staff_sheet.png | 384x384 |
+| 9 | boss_maestro_von_strauss.png | 512x640 |
+| 10 | destructible_props_sheet.png | 512x384 |
+| 11 | opera_house_effects.png | 256x256 |
+| 12 | opera_house_ui.png | 256x192 |
 
-### Mobile Optimization Targets
-- **Texture Atlases**: Maximum 5 at 1024px
-- **Draw Calls**: Under 50 for full location
-- **Memory**: Under 50MB for all zones loaded
-- **Particles**: Maximum 80 simultaneous
-- **Target FPS**: 60 on iPhone 8+
-
-### Animation Guidelines
-- **Idle Loops**: 2-4 frames, 1-2 FPS
-- **Action Animations**: 3-6 frames, 4-8 FPS
-- **Destruction Sequences**: 3-4 frames, 6-8 FPS
-- **Boss Attacks**: 4-8 frames, 4-6 FPS
+**Total Estimated Memory:** ~10.5 MB (uncompressed RGBA)
 
 ---
 
-## Cross-Reference: Related Assets
+## 📦 File Delivery Checklist
 
-### From Opera House Plaza
-- Gustav sprite (now with café feathers on cape)
-- Hans-Jürgen sprite (may appear at resolution)
-- Damage counter UI (shared system)
+### Required PNG Files:
+- [ ] `bassline_opera_lobby_tileset.png` (1024x768)
+- [ ] `bassline_opera_backstage_tileset.png` (1024x512)
+- [ ] `bassline_opera_backdrop_starry.png` (512x256)
+- [ ] `npc_regisseur_hoffmann.png` (384x384)
+- [ ] `npc_stagehead_otto.png` (288x256)
+- [ ] `npc_prima_donna_adelheid.png` (384x320)
+- [ ] `npc_papageno_franz.png` (384x320)
+- [ ] `npc_lobby_staff_sheet.png` (384x384)
+- [ ] `boss_maestro_von_strauss.png` (512x640)
+- [ ] `destructible_props_sheet.png` (512x384)
+- [ ] `opera_house_effects.png` (256x256)
+- [ ] `opera_house_ui.png` (256x192)
 
-### To Stadtpark
-- Gustav sprite continues (even more disheveled)
-- Papageno sprite (if ally path chosen)
-- Director may pursue (fury state)
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase (`snake_case_descriptive.png`) |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups
+- **Documentation:** Animation timing reference sheet + boss tempo-sync cue sheet
 
 ---
 
-**END OF ASSET REQUIREMENTS**
+## ✅ Final Delivery Validation
 
-*The Bassline Opera House: Where 400 years of cultural excellence meets one horse in a cape, one method-acting bird-man, and €2,000 in Magic Flute production costs.*
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly
+- [ ] Backdrop tear reads as dramatic-but-comedic at gameplay zoom
+- [ ] Otto's sprite shows zero reaction frames across all states
+- [ ] Boss phases readable at silhouette level (costume-first)
+- [ ] Accessibility visual alternatives included for all audio cues
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme (cultural pretension vs. chaos) clear throughout all assets
+- [ ] Hidden panel / prop corridor have discoverable visual cues
+- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Colorblind-friendly alternatives available where color codes meaning
+- [ ] Social media viral potential maximized in composition choices
+
+---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ | Sinfonia only; Vienna State Opera evoked as reference, never named in-world |
+| Cultural Specificity | ✅ | Opera-house hierarchy, Magic Flute production culture, EDM night economy |
+| Satirical Targets Appropriate | ✅ | Opera snobbery, artistic self-importance, institutional pretension — punches up |
+| Seedy Underbelly Present | ✅ | Bassline underground nights, hidden gambling-den entrance, scalped prestige |
+| Gameplay Value Established | ✅ | Story hub, boss arena, rhythm battle, quest phase 3, shop/box office |
+| Technical Feasibility | ✅ | 12 sheets, 5-atlas plan, zone loading, LOD tiers documented |
+| Mobile Performance Budget | ✅ | 60 FPS, <50 draw calls, <50 MB, 80 particles |
+| Accessibility Features | ✅ | Visual audio cues, strobe replacement, telegraph outlines |
+| No Crypto Elements | ✅ | None present |
+| Social Media Integration | ✅ | Five screenshot moments and quotable poses identified |
+
+**The Bassline Opera House: Where 400 years of cultural excellence meets one horse in a cape, one method-acting bird-man, and €2,000 in Magic Flute production costs.**

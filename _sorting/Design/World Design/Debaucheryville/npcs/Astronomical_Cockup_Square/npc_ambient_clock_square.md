@@ -4,15 +4,15 @@
 
 ---
 
-# Jakub the Local Observer
+# Milan the Local Observer
 
 *"Američané."*
 *(Americans.)*
 
 ## 📋 NPC Identity
-- **NPC ID**: `debaucheryville_npc_local_observer_jakub_01`
-- **Display Name**: Jakub
-- **Internal Name**: Jakub Novotný (no relation to tattoo artist)
+- **NPC ID**: `debaucheryville_npc_local_observer_milan_01`
+- **Display Name**: Milan
+- **Internal Name**: Milan Novotný (no relation to tattoo artist)
 - **Role**: Ambient NPC / Local Color / Czech Commentary
 - **Associated Quest**: None (background atmosphere)
 - **Primary Location**: Astronomical Cock-Up Square, Debaucheryville
@@ -61,7 +61,7 @@ Provides Czech dialogue (with subtitles) that lets players know how locals perce
 > "Kvůli hodinám?"
 > *(Over the clock?)*
 
-**Jakub (Czech, subtitled):**
+**Milan (Czech, subtitled):**
 > "Američané."
 > *(Americans.)*
 
@@ -81,7 +81,7 @@ Provides Czech dialogue (with subtitles) that lets players know how locals perce
 > "Z Euro Ink?"
 > *(From Euro Ink?)*
 
-**Jakub:**
+**Milan:**
 > "Američané."
 > *(Americans.)*
 

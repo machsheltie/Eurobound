@@ -3,7 +3,7 @@
 
   "npcs_present_by_zone": {
     "foyer": [
-      "sinfonia_npc_viktor_doorman_01",
+      "sinfonia_npc_anton_doorman_01",
       "sinfonia_npc_siegfried_coatcheck_01"
     ],
     "main_floor": [
@@ -59,7 +59,7 @@
         "type": "transaction",
         "display_name": "Collateral Window",
         "interaction_text": "Deposit your collateral",
-        "operator": "sinfonia_npc_viktor_doorman_01",
+        "operator": "sinfonia_npc_anton_doorman_01",
         "transaction": {
           "deposit_euro": 500,
           "returns_item": "collateral_receipt",
@@ -238,7 +238,7 @@
         "scene_not_yet_seen": true
       },
       "pre_beat": {
-        "gate": "sinfonia_npc_viktor_doorman_01",
+        "gate": "sinfonia_npc_anton_doorman_01",
         "location": "foyer",
         "canonical_line": "Döner is not accepted.",
         "effect": "under_funded_parties_are_bounced_before_the_scene_can_fire"
@@ -406,7 +406,7 @@
       "unlocks": "herr_falsch_boss_challenge"
     },
     {
-      "id": "bribe_viktor",
+      "id": "bribe_anton",
       "zone": "foyer",
       "discovery_method": "charm_4_or_gold",
       "unlocks": "information_on_tonights_players"

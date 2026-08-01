@@ -47,6 +47,8 @@
 
 **Chadwick:** "I have over 200 ICQ contacts. I know how to go viral."
 
+> ⚠ CONFLICT: legacy concept said Chadwick would "viral market" via his 47 contacts (not 200) — author to decide.
+
 **Bradley:** "I once made a website with frames AND a visitor counter. It got 47 hits."
 
 **Vanessa:** *slight concern* "Just... put up the flyers. DJ Beatdrop. Thursday. Velvet Curtain Club."
@@ -97,6 +99,7 @@
 - "Best viewed with Netscape Navigator" disclaimer
 - "All That and a Bag of Chips!" tagline
 - Tribal tattoo border design
+- Terrible ASCII art borders (Bradley's contribution)
 - Lord Pilsner's Hotmail: "brewmaster69@hotmail.com"
 - "Click Here for FREE RINGTONES" (non-functional, on paper)
 
@@ -105,6 +108,8 @@
 **Chadwick:** "Should I add my Friendster profile link?"
 
 **Bradley:** "Friendster might be too exclusive. Keep it accessible. Just the Hotmail."
+
+> ⚠ CONFLICT: legacy concept put QR codes on the flyer that just link to their dead Friendster profiles — here the bros decide against Friendster entirely. Author to decide.
 
 ---
 
@@ -196,10 +201,13 @@
 **Rewards - Path A:**
 - **€100 payment** from Vanessa
 - **"GeoCities Business Card" item** - Locals treat you like a living museum exhibit
+- **"Dial-Up Nostalgia" trinket** - NPCs ask if you need help using modern technology
 - **+2 Bravado** - Bros think they've "disrupted the paradigm"
 - **"Web 1.0 Pioneer" Title**
 - **Flyers appear around city** - NPCs reference them in dialogue for rest of game
 - **DJ Beatdrop's Thursday night is actually successful** - But because people came to see "the GeoCities flyer guys"
+
+> ⚠ CONFLICT: legacy concept rewarded the honest path with a "Club Stamp" consumable (temporary VIP access) and only +1 Bravado — author to decide.
 
 ---
 
@@ -227,6 +235,9 @@
 6. Add tribal tattoo designs over venue information
 7. Bradley writes "All Your Base Are Belong to Us" thinking it's current
 8. Chadwick adds "BOOYAH!" to everything
+9. Lord Pilsner adds beer bottle stickers to Hendrik's face
+10. Bradley crosses out names and writes "THIS SUCKS" in block letters
+11. Gel pens and correction fluid deployed like weapons of mass destruction
 
 **Key Moments:**
 
@@ -264,6 +275,11 @@
 
 ---
 
+**Club Regular:** *examining a defaced flyer*
+> "My little brother drew better stuff than this... in 2003."
+
+---
+
 **DJ Hardstyle Hendrik's Reaction:**
 
 *At club later*
@@ -282,19 +298,23 @@
 
 **Rewards - Path B:**
 - **€100 payment** from Vanessa (she finds it hilarious)
-- **"Frosted Tips Vandal" trinket** - +2 Bravado, -2 Charm
+- **"Frosted Tips Vandal" trinket** - +2 Bravado, -2 Charm, NPCs call you "nu-metal tourist"
 - **"Y2K Villain" Title** - Bouncers remember you as "those Limp Bizkit guys"
+- **"Peak Alpha Achievement"** - Narrator: *"Truly, the savage marketing wisdom of a Blockbuster Video employee"*
 - **Defaced flyers become art installation** - Local gallery wants to display them
 - **Security footage** becomes viral TikTok: "Boomers Gone Wild in Debaucheryville"
 - **Hendrik's night ALSO successful** - Because people came to see "the PWNED flyers"
+
+> ⚠ CONFLICT: legacy concept rewarded the slander path with a "Defaced Flyer" trinket (+1 Charm, +2 Bravado, random NPCs heckle you) — current version is -2 Charm via "Frosted Tips Vandal." Author to decide.
 
 ---
 
 ## 🌍 Environmental Integration
 
 ### City Changes After Completion
-- **Path A:** GeoCities flyers visible throughout Debaucheryville for rest of game
+- **Path A:** GeoCities flyers visible throughout Debaucheryville for rest of game - posted next to modern minimalist designs, looking like ancient artifacts
 - **Path B:** Defaced flyers with "CIRCA 2001" labels added by graffiti artist
+- **Path B:** Local news does a segment on "Time-Displaced American Tourists"
 - Both paths: NPCs reference "those American marketing guys"
 
 ### NPC Callbacks
@@ -306,6 +326,11 @@
 - One flyer visible with someone's phone number written over the ICQ number - "CALL THIS NUMBER INSTEAD"
 - Hipster's apartment visible through window in one scene - framed flyer on wall
 - GeoCities-style website actually exists in-game internet café - built by Bradley
+
+### Late-Night Kebab Stand Tie-Ins
+- Menu items reference Y2K culture: "Millennium Bug Wrap," "Y2K-bab Special"
+- Kebab guy asks if they're "those guys from the Matrix" (they're wearing knockoff leather)
+- **Status effect:** "Nostalgic Indigestion" - remembering when food didn't cost this much
 
 ---
 
@@ -341,6 +366,27 @@
 
 ---
 
+**Additional Language Time Capsule (ambient/repeatable lines):**
+- **"That's sick!"** (meaning cool, but NPCs think they're discussing illness)
+- **"Don't go there, girlfriend!"** (to male bartenders who are very confused)
+- **"As if!"** (pronounced like Alicia Silverstone, but by 40-year-old men)
+- **Bradley** keeps saying "That's off the hook!" unironically
+
+---
+
+### Technology Delusions (Running Gags)
+- **Lord Pilsner** keeps trying to check email on public computers using Internet Explorer 6
+- **Chadwick** asks NPCs for their "AIM screen names" and gets confused by modern social media
+- **Bradley** carries a Motorola Razr flip phone and brags about its "cutting-edge camera"
+
+### Fashion Crimes in Progress
+- **Puka shell necklaces** that they think make them "worldly surfers"
+- **Cargo shorts** with way too many pockets full of useless Y2K tech
+- **Flame-pattern button-ups** that they unironically call "club attire"
+- **Frosted tips** that somehow survived 20 years of bad decisions
+
+---
+
 ### Narrator Commentary
 
 **Path A Beginning:**
@@ -369,6 +415,33 @@
 - Flyers reference Astronomical Cock-Up timing
 - ICQ numbers connect to broader ICQ scammer network
 - DJ Beatdrop becomes minor recurring NPC
+
+### ICQ Integration Hooks
+- **Tony420** recognizes their outdated slang: *"wassup bros! u sound like my target demographic. got this sick investment opportunity - nigerian prince needs help moving €10 million. totally legit bro"*
+- **CryptoBro69** when they mention Beanie Babies: *"yooo beanie babies = OG collectibles market! APES TOGETHER STRONG! launching BEANIEMOON coin - diamond hands only! 🚀🚀🚀 to the moon! this is not financial advice (but totally YOLO ur student loans)"*
+- Random popup ads: *"🎉 CONGRATULATIONS! You are visitor #47! Click here to claim your FREE TRIBAL FLAME WALLPAPER! 🎉"*
+
+### Hamstradamus Hooks
+- **Hamstradamus** predicts: *"whiskers see: ur flyers cause dick tattoo regret"*
+- **Path A prophecy:** *"prophecy: u wake w/ GeoCities logo branded on ur liver"*
+- **Path B prophecy:** *"whiskers see: dancing baby curses ur vandalism, u shit glitter 4 weeks"*
+- **Tony420** asks: *"hamster got flyer hacks? mine got numa numa'd by rival DJ"*
+- Dancing hamster GIFs play when they fail spectacularly
+- Background music shifts to corrupted MIDI hamster dance remixes
+
+---
+
+## 🕰️ Long-Term Consequences (Y2K Style)
+
+### Persistent Mockery
+- **NPCs** throughout Debaucheryville reference "those Americans with the gel pens"
+- **Other sidequests** involve people asking if you're "from the past"
+- **City boss** makes jokes about their "retro marketing campaign"
+
+### Cultural Museum Status
+- **Velvet Curtain Club** hangs their flyers as "Ironic Americana Decor"
+- **Local students** study their designs in "Digital Archaeology" classes
+- **Tourism board** considers adding them to "Living History" exhibits
 
 ---
 
@@ -476,3 +549,20 @@
 - LinkedIn interface needs era-appropriate XP aesthetic
 - Consider: mini-game where player "designs" the flyer by choosing elements (all choices are bad)
 - ICQ numbers should connect to main ICQ system in game
+
+### Mobile UX (Early 2000s Aesthetic)
+
+**Interface Design:**
+- **Button sounds** like old Windows 98 system alerts
+- **Loading screens** with fake "Connecting to AOL..." messages
+- **Menu backgrounds** that look like WinAmp visualizations
+- **Achievement notifications** styled like ICQ message popups
+
+**Screenshot Moments:**
+- **Their flyers** next to modern designs showing the stark contrast
+- **NPC reaction faces** when they use outdated slang
+- **Narrator commentary** appearing as fake "You've Got Mail!" notifications
+
+---
+
+*"Sometimes the best time capsule is three drunk guys who never learned that frosted tips went out of style."*

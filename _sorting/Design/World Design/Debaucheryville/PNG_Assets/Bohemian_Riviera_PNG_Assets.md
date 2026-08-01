@@ -391,6 +391,46 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 
 ---
 
+## ♿ Accessibility Sprite Requirements
+**File:** `bohemian_riviera_accessibility.png` (supplemental sheet — delivered alongside the 29 base files, not counted in their total)
+**Dimensions:** 512x384 pixels
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Answer Option Prompt, Bold (x4) | (0, 0) | 256x64 | Heavy-outline trivia answer buttons — the confidently-wrong shout must remain visually identical to the other three |
+| GO LIVE Button, Bold | (256, 0) | 96x64 | Thick-bordered ICQ trigger variant (Path B / Chadwick only) |
+| Strike Icons, High-Contrast | (352, 0) | 96x32 | Unfilled/filled strike pair with white outline ring |
+| Timer Ring, High-Contrast | (352, 32) | 64x64 | Boosted-edge countdown ring |
+| Sign-Up Clipboard Outline | (416, 32) | 64x64 | Outlined interactable clipboard at Petra's table |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Sand, No-Shimmer | (0, 64) | 128x128 | Static midday sand tile — heat-shimmer overlay disabled in reduced-motion mode |
+| Timer Ring, No-Flash Timeout | (128, 64) | 64x64 | Timeout state as a solid filled ring instead of the Timeout Flash |
+| String Lights, Steady | (192, 64) | 64x64 | Constant amber glow, no twinkle cycling, for `night_party_zone` |
+| Launch Sequence, Reduced | (256, 64) | 256x128 | Key-pose-only launch (wind-up → apex → splash still) with splash particles capped and no camera shake |
+| Confetti, Reduced | (0, 192) | 128x64 | Single-burst static confetti decal replacing the 4-frame burst |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| THUNK-hiss-splash Caption | (128, 192) | 128x48 | Staged onomatopoeia burst synced to the launch sub-phases — replaces the signature audio note |
+| Oar-Cue River Ripple | (256, 192) | 96x48 | Visual oar-stroke ripple at the river edge, appearing on the same 2-second ramp as the audio-only Sudden Death tell (Janek's crew team) — required, since the tell is otherwise audio-exclusive |
+| Countdown Tick Pips | (352, 192) | 64x48 | Per-second pip flash on the timer ring for the 12-second window |
+| Crowd Chant Bubble | (0, 256) | 96x48 | "pět… pět… pět…" text bubble over the beer-chant cluster (central to the metric-trap question) |
+| Mid-Syllable Cutoff Caption | (96, 256) | 96x48 | Dialogue caption visibly clips mid-word at the Q7 launch — text mirrors the hard audio cut |
+| Mic Feedback Squiggle | (192, 256) | 48x48 | Jagged squeal icon when the crane camera passes Jaxson's podium mark |
+
+### Colorblind Considerations:
+- Strike icons distinguish filled/unfilled by an X-mark shape, never by red/green fill alone
+- Timer ring depletes with a hatched-pattern wedge in addition to color change
+- The Oakleys Suspicion Meter is already position-based (tilt → nose-tip → removed), fully colorblind-safe by design — keep it UI-free per the quest doc
+- Answer prompt buttons (64px per option) and the GO LIVE button (96x64) meet the 44px minimum touch target
+
+---
+
 ## 📱 Mobile Optimization
 
 ### Texture Atlases:
@@ -407,6 +447,83 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 - Bar TV loop is one shared low-res asset instanced across all three venues, not rendered per-venue
 - Catapult launch sequence is pre-rendered per unit rather than computed per-frame, to keep the staggered three-unit trigger cheap
 - Night-party string lights use a single ambient glow shader rather than per-bulb sprites
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- Three **independent** AnimationPlayer instances for the catapult units — never one combined timeline, so Launch One (~Q4 interruption) and Launch Two (~Q7 mid-syllable) can fire on separate timers
+- Area2D on `fauxst_beach` entry auto-triggers Petra's sign-up dialogue on active filming days; `night_party_zone` gate checks `beatdown_complete` before unlocking
+- CPUParticles2D (not GPU) for splash, heat shimmer, fly swarm (`port_o_cologne`, 10 max), confetti; string lights via single ambient glow shader
+- UI font must pass diacritic glyph validation (ě š č ř ž ý á í é ů) before content lock — Czech-parody question box has no translation toggle
+- State tracking per `bohemian_riviera_state` (selected_bro, bros_launched_count, night_party_seen, outbreak_seen, episode_airing, port_o_cologne_active)
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Launch Animation (release → arc → splash) | *THUNK-hisssss-splash* | THUNK on release frame 1, hiss through arc, splash on impact frame 1 |
+| Janek's Buzzer-Wave (4 frames) | Oar catch-and-release cue | Audio ramps 2s before the wave; 1.5s win window matches the animation exactly |
+| Timer Ring Depleting | 12-second countdown tick | One tick per pip, timeout fires a strike |
+| Q7 Launch | Speech clip hard mid-syllable | Audio continues faintly over water ~1s at falling volume — do not fade |
+| Confetti Burst | Speedo-strut fanfare sting | On burst frame 1 (WIN branch) |
+| Hamstradamus Badge Pin | Badge-pin click | On the crooked-badge landing frame |
+| Zdenka Hose Deployed | Water spray + coin exchange | Fly Swarm Dissipate plays once on cure |
+| Bar TV Loop | CRT-filtered ~20s episode edit | Begins ~1 in-game day after quest resolution, low volume under night music |
+| Jaxson Triple-Can Sip | Three simultaneous can-cracks | On frame 1 of the rehearsed motion |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Bacchanus Beach Beatdown (`debaucheryville_sidequest_bacchanus_beach_beatdown_01`) | signup_table_setup, release_forms_and_clipboard, strike_counter_and_timer, dialogue_and_prompt_ui, catapult_rig_and_toilets, prize_podium_and_banner, suspicion_meter_oakleys (Path B) | Petra's auto-trigger on `fauxst_beach` entry during filming days; trivia gauntlet at `catapult_row`; Sudden Death at `prize_podium` |
+| Nothing Is Getting Through (`debaucheryville_sidequest_nothing_is_getting_through_01`) | night_party_zone_dressing, confetti_and_string_lights (night state) | `night_event_outbreak_01` staged at `night_party_zone` during Night Rave hours once unlocked — hook dressing only; scene beats live in the quest file |
+| Port-O-Cologne cure loop | port_o_cologne_flies, zdenka_shower_vendor | Any launched bro can be cured at Zdenka's riverbank cart; price escalates while dawdling |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| The Cirque du Shady | Riverside gear path; prize_pallet_2003.png must visually match the office-edge pallet in `Cirque_du_Shady_PNG_Assets.md` (same physical stock); Hamstradamus beach variant travels this route on filming days | Embankment path walk, production gear traffic on filming days |
+| Astronomical Cock-Up Square | Beatdown-outcome callback — Shady Wristband Guy recognizes "the toilet men... from the television" | Dialogue callback post-resolution |
+| Velvet Curtain Club | Badge-flash scene (WIN) or bouncer half-step-back scene (LOSS) | Door-scene callback post-resolution |
+| Old Town Streets | Landward exit, cobblestone-to-sand transition tile | Instant diorama-style transition per profile |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "A beach resort built entirely out of confidence and trucked-in sand"
+- **Color Mood:** Warm Sand and Inflatable-Palm Green performing "coastline" against The Bacchanus's honest murk-green; EMTV Magenta stabs of production branding
+- **Lighting:** Day — harsh flat beach-resort brightness with heat shimmer; Golden Hour — orange wash across the river, lounger and palm silhouettes; Night — string-light pools, magenta bar-TV glow, slow lifeguard-tower spotlight sweep
+- **Texture:** Raked sand over visible embankment concrete, under-inflated vinyl palms at a permanent 15° list, weathered steel rig hardware, sun-faded vinyl banners
+
+### Environmental Storytelling:
+- The stapled delivery receipt ("40 TONS — NOT FOR HUMAN CONSUMPTION") and the "NO DIVING (SERIOUSLY, IT'S 40cm)" sign — total disclosure changing nothing is the location's whole joke, rendered in signage
+- The 2003-stamped prize pallet in plain view before anyone has won anything
+- Riverbank port-o-potty monuments accumulate post-quest: laundry by Day 6, a vendor stall beside one — the humiliation economy becoming civic infrastructure
+- The center unit's visibly broken door latch, ignored for twenty-two seasons
+
+### Character Integration Notes:
+- Principal cast (Jaxson, Janek, Petra, Hamstradamus) get full pose sets; location NPCs (Rosťa, Standa, Zdenka) get three-pose economy sheets
+- Vacationer crowd simplified beyond `bar_strip` mid-ground; heckle bubbles composite over the crowd layer on the LOSS walk of shame
+- Jaxson never watches a launch — no launch-reaction pose exists for him by design
+
+---
+
+## 🎯 Social Media Viral Potential
+
+### Screenshot-Worthy Moments:
+1. **The triple catapult row, loaded** - Three port-o-potties, inflatable palms, space heaters, lifeguard tower, and EMTV crane in one establishing frame
+2. **Golden-hour flex at the monitor** - A bro flexing at the "camera" visibly showing the beach behind him
+3. **Hamstradamus pinning the badge** - The crooked star, the crying grown man, the beach-appropriate speedo
+4. **The walk of shame** - Soaked bros, fly particles, heckle/mistranslation text bubbles stacked in one frame
+
+### Quote Potential:
+- "NO DIVING (SERIOUSLY, IT'S 40cm)"
+- "Fifty koruna for the shower. Forty if you go now."
+- "Three today. Personal best is five. I keep a chart."
+- "Unfortunately, bro."
 
 ---
 
@@ -448,6 +565,79 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 
 ---
 
+## 📦 File Delivery Checklist
+
+### Required PNG Files:
+- [ ] `fauxst_beach_tileset.png` (1024x512)
+- [ ] `bar_strip_facades.png` (1024x384)
+- [ ] `catapult_rig_and_toilets.png` (1024x512)
+- [ ] `signup_table_setup.png` (512x384)
+- [ ] `prize_podium_and_banner.png` (512x384)
+- [ ] `night_party_zone_dressing.png` (512x256)
+- [ ] `river_parallax_background.png` (1024x512)
+- [ ] `jaxson_vane.png` (384x288)
+- [ ] `janek_sykora.png` (384x288)
+- [ ] `petra_production_assistant.png` (384x288)
+- [ ] `hamstradamus_beach_variant.png` (384x288)
+- [ ] `rosta_retrieval_man.png` (256x192)
+- [ ] `standa_lifeguard.png` (256x192)
+- [ ] `zdenka_shower_vendor.png` (256x192)
+- [ ] `vacationer_crowd.png` (512x384)
+- [ ] `inflatable_palm_trees.png` (256x256)
+- [ ] `riverbank_portapotty_monuments.png` (256x256)
+- [ ] `launch_splash_and_arc.png` (512x256)
+- [ ] `space_heaters.png` (128x128)
+- [ ] `lifeguard_tower.png` (192x320)
+- [ ] `no_diving_sign.png` (96x128)
+- [ ] `release_forms_and_clipboard.png` (256x192)
+- [ ] `prize_pallet_2003.png` (192x128)
+- [ ] `heat_shimmer.png` (128x128)
+- [ ] `confetti_and_string_lights.png` (256x128)
+- [ ] `port_o_cologne_flies.png` (96x96)
+- [ ] `strike_counter_and_timer.png` (256x128)
+- [ ] `suspicion_meter_oakleys.png` (192x64)
+- [ ] `dialogue_and_prompt_ui.png` (384x256)
+- [ ] `bohemian_riviera_accessibility.png` (512x384, supplemental)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups (each catapult unit's launch frames in its own group — the three units must stay independently exportable)
+- **Documentation:** Animation timing reference sheet (launch stagger chart for Q4/Q7 fires, Janek's 1.5s buzzer window) + river parallax layer guide
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly (Sand #E8D4A0, murk-green #5E7350, EMTV Magenta #FF1493, Space Heater Orange #FF7F32, String-Light Amber #FFC966)
+- [ ] Three catapult units verified as independently triggerable animation instances, not one combined sequence
+- [ ] Czech diacritic glyphs (ě š č ř ž ý á í é ů) render in the question box — a missing glyph turns the joke into a bug report
+- [ ] All four Oakleys suspicion states read clearly at UI scale
+- [ ] Accessibility visual alternatives included for all audio cues — especially the oar-cue river ripple (the Sudden Death tell is otherwise audio-only)
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme (total cheerful disclosure changing nothing) is clear throughout all assets
+- [ ] Readable-on-approach details intact: delivery receipt, NO DIVING sign, 2003 pallet stamp, broken center latch
+- [ ] Mobile performance optimized (shared bar-TV asset, pre-rendered launches, crowd LOD, atlas limits respected)
+- [ ] Touch zone sizing considered (44px minimum — answer prompts and GO LIVE button compliant)
+- [ ] Colorblind-friendly alternatives available where color codes meaning (strike icons, timer ring)
+- [ ] Social media viral potential maximized (triple-rig establishing frame, monitor-flex composition)
+
+---
+
 ## ✅ Validation Status
 
 | Requirement | Status |
@@ -458,5 +648,10 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Gameplay Value | ✅ PASS |
 | No Crypto Elements | ✅ PASS |
 | Mobile Optimization | ✅ PASS |
+| Seedy Underbelly Present | ✅ PASS (humiliation-as-broadcast-product economy) |
+| Technical Feasibility | ✅ PASS (staggered launches, crowd LOD, shared TV asset) |
+| Mobile Performance Budget | ✅ PASS (45-60 FPS, 25-45 draw calls, 55-65MB) |
+| Accessibility Features | ✅ PASS (visual oar-cue tell, reduced-motion launch) |
+| Social Media Integration | ✅ PASS (viral moments identified) |
 
 **The Bohemian Riviera delivers a complete landlocked beach-resort art spec — trucked-in sand, three independently-triggerable catapult units, a boat-hook retrieval man with a personal-best chart, and a hamster who has never once been wrong about anything.**

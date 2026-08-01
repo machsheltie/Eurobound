@@ -5,7 +5,45 @@ This document provides exact specifications for all PNG files needed for the Cla
 
 **Location ID:** `debaucheryville_arcade_maintenance_closet_01`  
 **Theme:** Chaotic retro grime meets early 2000s LAN party afterglow - forbidden backroom of childhood corrupted  
+**Zone:** Absinthe Arcade - hidden maintenance area (Debaucheryville)  
+**Hours:** Available once unlocked (permanent access; requires 3 tokens inserted into broken DDR machine)  
 **Primary Function:** Hidden bathroom, graffiti collection, ICQ Rival Trio messaging, achievement progression
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Fluorescent Green | #00FF41 | Marquee light, DDR arrows, UI text, audio waves |
+| Retro Pink | #FF69B4 | Neon accents, LED indicator, graffiti, techno visuals |
+| Grime Brown | #3C2415 | Dominant wall/floor grime base |
+| Shadow Black | #1C1C1C | Shadows, cramped-space darkness |
+| Metal Grey | #808080 | Claw arm, fixtures, speedrunner hoodie |
+| UV Purple | #9400D3 | Blacklight wash overlay |
+| Spark Yellow | #FFFF00 | Electrical sparks, UV-reactive graffiti |
+| Neon Cyan / Magenta | #00FFFF / #FF00FF | UV-reactive graffiti inks |
+| Door Brown | #8B4513 | Maintenance door |
+| Token Gold | #FFD700 | Token slot, unlock progress, warning accents |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
+├── environment/
+│   ├── maintenance_closet_tileset.png
+│   └── blacklight_graffiti.png
+├── npcs/
+│   └── speedrunner_sprites.png
+├── objects/
+│   ├── closet_furniture_spritesheet.png
+│   └── claw_closet_door_unlock.png
+├── effects/
+│   ├── closet_effects.png
+│   └── claw_closet_effects_audio.png
+└── ui/
+    └── closet_ui.png
+```
 
 ---
 
@@ -530,15 +568,34 @@ This document provides exact specifications for all PNG files needed for the Cla
 
 ---
 
+## 📋 Required PNG Files (8 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | maintenance_closet_tileset.png | 256x256 |
+| 2 | closet_furniture_spritesheet.png | 512x512 |
+| 3 | blacklight_graffiti.png | 512x256 |
+| 4 | closet_effects.png | 256x256 |
+| 5 | closet_ui.png | 256x128 |
+| 6 | speedrunner_sprites.png | 256x128 |
+| 7 | claw_closet_door_unlock.png | 256x256 |
+| 8 | claw_closet_effects_audio.png | 512x256 |
+
+**Total Estimated Memory:** ~25 MB (in-memory budget for hidden location, including atlas overhead)
+
+---
+
 ## 📦 File Delivery Checklist
 
-### Required PNG Files (6 Total):
+### Required PNG Files (8 Total):
 - [ ] `maintenance_closet_tileset.png` (256x256)
 - [ ] `closet_furniture_spritesheet.png` (512x512)
 - [ ] `blacklight_graffiti.png` (512x256)
 - [ ] `closet_effects.png` (256x256)
 - [ ] `closet_ui.png` (256x128)
 - [ ] `speedrunner_sprites.png` (256x128)
+- [ ] `claw_closet_door_unlock.png` (256x256)
+- [ ] `claw_closet_effects_audio.png` (512x256)
 
 ### Quality Requirements:
 | Requirement | Specification |
@@ -585,7 +642,7 @@ This document provides exact specifications for all PNG files needed for the Cla
 ## ✅ Final Delivery Validation
 
 ### Before Submitting Assets:
-- [ ] All 6 PNG files match exact dimensions
+- [ ] All 8 PNG files match exact dimensions
 - [ ] DDR toilet clearly shows dance pad arrows
 - [ ] Claw chandelier is recognizably a claw machine arm
 - [ ] All graffiti is readable under blacklight effect
@@ -621,6 +678,7 @@ This document provides exact specifications for all PNG files needed for the Cla
 | Technical Feasibility | ✅ PASS | Mobile optimized for small space |
 | Mobile Performance Budget | ✅ PASS | 45 FPS, 10 draw calls, 25MB |
 | Accessibility Features | ✅ PASS | Graffiti always-visible option |
+| No Crypto Elements | ✅ PASS | No cryptocurrency content in this location |
 | Social Media Integration | ✅ PASS | SMAAAASH quote is pure gold |
 
 **Once validated, the Claw Machine Maintenance Closet Restroom becomes the ultimate hidden gaming nostalgia corruption experience where players discover their arcade childhood has been repurposed into an adult embarrassment chamber, complete with DDR toilet, claw machine chandelier, SMAAAASH graffiti, and the shame timer reminding them they've achieved nothing but shame, player one!**

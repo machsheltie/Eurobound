@@ -3,6 +3,41 @@
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Three-Crown Keg Haus brewery dungeon. Each sprite sheet includes pixel-perfect coordinates, color specifications, and animation requirements for this gritty medieval Slavic dive bar reimagined by someone who failed architecture.
 
+**Location ID:** `debaucheryville_shadowexchange_threecrownkeghaus_brewery_03`
+**Theme:** Medieval Slavic castle turned frat basement — "Noble by Name, Not by Health Code" royal dive brewery
+**Zone:** Shadowed alley near the Shadow Exchange
+**Hours:** Always accessible once discovered (+1 Bravado required to enter — the sticky floor is fair warning)
+**Primary Function:** Brewery Tour dungeon #3 of 4 — stealth floor-tile puzzle, Slurring Bar Flies gossip mini-mob, Keg Sentinel arm-wrestling boss, Iron Gut Tripel brew reward, velvet keg throne selfie spot
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Rust Orange | #CC5500 | Dominant sconce glow, heraldry rust, UI theming |
+| Faded Royal Purple | #6A0DAD | Tracksuits, velvet throne, noble decay accents |
+| Dive Brown | #5C4033 | Background shadows, worn dive bar surfaces |
+| Wood Decay | #8B4513 | Furniture, floorboards, structural rot |
+| Tarnished Gold | #FFD700 | Antique goblets, noble medallions, achievement UI |
+| Vomit Green | #9ACD32 | Synchronized vomiting comedy particles |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/threecrownkeghaus/
+├── environment/
+│   └── threecrown_environment_complete.png
+├── interactive/
+│   └── threecrown_interactive_objects.png
+├── characters/
+│   └── threecrown_npcs.png
+├── particles/
+│   └── threecrown_particle_effects.png
+└── ui/
+    └── threecrown_ui_elements.png
+```
+
 ---
 
 ## 🎨 Sprite Sheet 1: Three-Crown Environment Complete
@@ -565,6 +600,20 @@ This document provides exact specifications for all PNG files needed for the Thr
 
 ---
 
+## 📋 Required PNG Files (5 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | threecrown_environment_complete.png | 1024x768 |
+| 2 | threecrown_interactive_objects.png | 512x384 |
+| 3 | threecrown_npcs.png | 512x384 |
+| 4 | threecrown_particle_effects.png | 512x256 |
+| 5 | threecrown_ui_elements.png | 512x256 |
+
+**Total Estimated Memory:** ~5.8 MB uncompressed RGBA (within the 35MB location footprint)
+
+---
+
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (5 Total):
@@ -736,5 +785,20 @@ This document provides exact specifications for all PNG files needed for the Thr
 - Track mobile optimization variants separately
 
 ---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ | Debaucheryville — shadowed alley near Shadow Exchange only |
+| Cultural Specificity | ✅ | Slavic triple-ferment brewing tradition meets post-Soviet tracksuit nobility culture |
+| Satirical Targets Appropriate | ✅ | Craft brewery pretension, dive bar decay, drunk "noble" tourists — not Slavic brewing traditions themselves |
+| Seedy Underbelly Present | ✅ | Health code violation dive selling "noble heritage" — mold, mustard art, gaffer tape "medieval repairs" |
+| Gameplay Value Established | ✅ | Stealth tile puzzle, Bravado gate, Bar Flies gossip mini-mob, Keg Sentinel arm-wrestling boss, Iron Gut Tripel, Brewery Tour 3/4 |
+| Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D dust/foam effects |
+| Mobile Performance Budget | ✅ | 40 FPS target, max 15 draw calls, 35MB memory footprint |
+| Accessibility Features | ✅ | Visual audio cues (creak wave, snoring visual), pattern-based tile indicators for colorblind stealth play |
+| No Crypto Elements | ✅ | None present — heritage-vs-decay satire only |
+| Social Media Integration | ✅ | Velvet throne "drunken monarchy" selfies, synchronized vomiting timing, quotable bartender heritage lines identified |
 
 **Once validated, Three-Crown Keg Haus becomes the unforgettable third brewery dungeon where players must carefully navigate creaky floor tiles avoiding passed-out tracksuit nobles, fight drunk gossips spreading embarrassing rumors about Paulina, arm-wrestle the Keg Sentinel robot boss for the Iron Gut Tripel brew (+40 HP, Inspired, but -Accuracy next turn), and pose on the velvet keg throne while the bartender proudly proclaims they invented beer before hygiene in this 300-year-old castle turned frat basement where gaffer tape counts as authentic medieval repair techniques!**

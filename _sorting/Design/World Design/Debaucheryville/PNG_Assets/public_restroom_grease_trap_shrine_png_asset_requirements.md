@@ -3,6 +3,36 @@
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Grease Trap Shrine restroom location. Each sprite sheet includes pixel-perfect coordinates, color specifications, and animation requirements for this biohazard pilgrimage site.
 
+**Location ID:** `debaucheryville_kebaballey_greasetrapshrine_restroom_01`
+**Theme:** Urban legend meets gastrointestinal pilgrimage — a sacred biohazard shrine for worshippers of bad decisions, 4AM meat, and bodily resilience
+**Zone:** Kebab Alley — behind the grease vendor tent
+**Hours:** Crawlspace entrance accessible only at 3:00 AM game time (follow the glowing chili sauce trail)
+**Primary Function:** Hidden exploration shrine — "Stomach of Steel" passive unlock, FistØ graffiti lore reads, "The Greasy Prophet" title progression, secret FistØ ICQ message
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Sickly Orange | #FF8C00 | Shrine light from repurposed "Open Late" sign, dominant interior glow |
+| Grease Brown | #8B4513 | Wall coating, grease vapor, ambient grime surfaces |
+| Oily Shimmer Gold | #FFD700 | Rainbow oil-slick highlights, legend-tier graffiti accents |
+| Hot Pink Tag | #FF1493 | FistØ main graffiti spray paint |
+| Neon Green Glow | #00FF00 | Hungover-only pixel kebab googly-eye glow |
+| Chili Sauce Red | #FF4500 | 3AM discovery trail pulse, neon kebab signage bleed |
+| Dark Slate Gray | #2F4F4F | Shadows, crawlspace darkness, fixture bases |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/kebab_alley/
+├── grease_shrine_restroom_complete.png
+├── fisto_graffiti_system.png
+├── shrine_environmental_effects.png
+└── crawlspace_access_system.png
+```
+
 ---
 
 ## 🎨 Sprite Sheet 1: Grease Shrine Restroom Complete
@@ -259,6 +289,19 @@ This document provides exact specifications for all PNG files needed for the Gre
 
 ---
 
+## 📋 Required PNG Files (4 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | grease_shrine_restroom_complete.png | 512x512 |
+| 2 | fisto_graffiti_system.png | 512x256 |
+| 3 | shrine_environmental_effects.png | 512x256 |
+| 4 | crawlspace_access_system.png | 256x256 |
+
+**Total Estimated Memory:** ~2.4 MB uncompressed RGBA (comfortably within the 20MB location footprint)
+
+---
+
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (4 Total):
@@ -327,5 +370,22 @@ This document provides exact specifications for all PNG files needed for the Gre
 - [ ] 3AM discovery reinforces urban legend status
 - [ ] Environmental effects enhance biohazard-meets-sacred ambiance
 - [ ] All elements work together for gastrointestinal pilgrimage theme
+
+---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ | Debaucheryville — Kebab Alley only |
+| Cultural Specificity | ✅ | European late-night kebab/street-food culture and backpacker travel-legend lore |
+| Satirical Targets Appropriate | ✅ | Drunk pilgrim tourists worshipping FistØ's bad decisions — not vendors or locals |
+| Seedy Underbelly Present | ✅ | Biohazard restroom shrine, health-violation grease vendor alley, fly-buzzing pickle barrels |
+| Gameplay Value Established | ✅ | Stomach of Steel passive, Greasy Prophet title, FistØ ICQ secret, 3AM discovery mechanic |
+| Technical Feasibility | ✅ | 4 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D particles |
+| Mobile Performance Budget | ✅ | 40 FPS target, max 8 draw calls, 20MB memory footprint |
+| Accessibility Features | ✅ | Visual audio cues (receipt crinkle, steam hiss, shrine reverence), high-contrast graffiti, motion sensitivity options |
+| No Crypto Elements | ✅ | None present — cryptic QR codes are eldritch mystery, not crypto |
+| Social Media Integration | ✅ | Haiku meme format, FistØ pilgrimage tag, TikTok POV hooks identified |
 
 **Once validated, the Grease Trap Shrine becomes the most quotable, screenshot-worthy location in Eurobound - where players complete a gross-out ritual to unlock legendary buffs while documenting their pilgrimage for social media immortality!**

@@ -31,7 +31,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 │   ├── flash_art_wall.png
 │   └── lighting_overlays.png
 ├── npcs/
-│   ├── viktor_artist.png
+│   ├── jakub_artist.png
 │   ├── marta_assistant.png
 │   └── lord_pilsner_reactions.png
 ├── objects/
@@ -130,14 +130,14 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 | Hearts & Roses | (0, 256) | 128x128 | Classic flash, faded |
 | Dragons | (128, 256) | 128x128 | European style (confused) |
 | Text Designs | (256, 256) | 128x128 | "MOM", "DEATH", "NO REGRETS" |
-| Viktor's Specials | (384, 256) | 128x128 | His "best work" - mostly birds |
+| Jakub's Specials | (384, 256) | 128x128 | His "best work" - mostly birds |
 | Clock Skeleton | (0, 384) | 96x96 | Reference photo (looks like skeleton) |
-| Viktor's Interpretation | (96, 384) | 96x96 | His sketch (clearly a duck) |
+| Jakub's Interpretation | (96, 384) | 96x96 | His sketch (clearly a duck) |
 
 ---
 
-## 👤 Sprite Sheet 5: Viktor the Artist
-**File:** `viktor_artist.png`  
+## 👤 Sprite Sheet 5: Jakub the Artist
+**File:** `jakub_artist.png`  
 **Dimensions:** 512x384 pixels
 
 ### Character Poses:
@@ -159,7 +159,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 ### Detail Elements:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Viktor's Arms | (0, 192) | 192x64 | Showing his own tattoo work |
+| Jakub's Arms | (0, 192) | 192x64 | Showing his own tattoo work |
 | Leather Vest | (192, 192) | 64x64 | Costume detail |
 | Gold Tooth Glint | (256, 192) | 32x32 | Smile detail |
 | Reading Glasses | (288, 192) | 32x16 | On forehead, never used |
@@ -177,7 +177,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 | Pose | Position | Size | Description |
 |------|----------|------|-------------|
 | Counter Idle | (0, 0) | 64x96 | Behind reception, skeptical |
-| Eye Roll | (64, 0) | 64x96 | Reacting to Viktor |
+| Eye Roll | (64, 0) | 64x96 | Reacting to Jakub |
 | Shrug | (128, 0) | 64x96 | "He does good work. Usually." |
 | Cash Handling | (192, 0) | 64x96 | Taking payment |
 | Arms Crossed | (0, 96) | 64x96 | Watching judgment |
@@ -244,7 +244,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 |-------|----------|------|-------------|
 | Reclined Empty | (0, 176) | 128x80 | Ready position |
 | Reclined Occupied | (128, 176) | 128x80 | LP face down |
-| Mid-Tattoo | (256, 176) | 128x80 | Viktor working |
+| Mid-Tattoo | (256, 176) | 128x80 | Jakub working |
 
 ---
 
@@ -260,7 +260,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 | Guest Book | (96, 96) | 48x32 | Suspiciously empty |
 | Lollipop Jar | (144, 96) | 32x48 | "For brave customers" |
 | Cash Register | (176, 96) | 48x48 | Old, manual |
-| Business Cards | (192, 0) | 64x32 | "EURO INK 4 LESS - Viktor" |
+| Business Cards | (192, 0) | 64x32 | "EURO INK 4 LESS - Jakub" |
 | Fake License | (192, 32) | 64x48 | Clearly printed at home |
 
 ---
@@ -291,9 +291,9 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 | Frame | Position | Size | Description |
 |-------|----------|------|-------------|
 | Reference Photo | (0, 0) | 64x64 | Actual clock skeleton |
-| Viktor Drawing 1 | (64, 0) | 64x64 | Starting sketch |
-| Viktor Drawing 2 | (128, 0) | 64x64 | Adding "skull" (beak) |
-| Viktor Drawing 3 | (192, 0) | 64x64 | Adding scythe |
+| Jakub Drawing 1 | (64, 0) | 64x64 | Starting sketch |
+| Jakub Drawing 2 | (128, 0) | 64x64 | Adding "skull" (beak) |
+| Jakub Drawing 3 | (192, 0) | 64x64 | Adding scythe |
 | Final Sketch | (256, 0) | 64x64 | Obvious duck |
 | Sketch Close-Up | (320, 0) | 96x96 | Detail view of duck |
 
@@ -373,9 +373,9 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 ### Dialogue Portraits:
 | Portrait | Position | Size | Description |
 |----------|----------|------|-------------|
-| Viktor Happy | (0, 160) | 48x48 | Default |
-| Viktor Proud | (48, 160) | 48x48 | Showing work |
-| Viktor Confused | (96, 160) | 48x48 | "Duck? No..." |
+| Jakub Happy | (0, 160) | 48x48 | Default |
+| Jakub Proud | (48, 160) | 48x48 | Showing work |
+| Jakub Confused | (96, 160) | 48x48 | "Duck? No..." |
 | Marta Skeptical | (144, 160) | 48x48 | Default |
 | Marta Shrug | (192, 160) | 48x48 | "Usually." |
 
@@ -393,7 +393,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 - **Frames:** 4
 - **Audio Sync:** Buzzing sound loops
 
-### Viktor's Confident Drawing:
+### Jakub's Confident Drawing:
 - **Duration:** 8 seconds total
 - **Frames:** 12
 - **Key Frames:** Reference look → Draw → Proud glance → Continue
@@ -406,13 +406,53 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 
 ---
 
+## ♿ Accessibility Sprite Requirements
+**File:** `euro_ink_accessibility.png` (supplemental sheet — delivered alongside the 13 base files, not counted in their total)
+**Dimensions:** 384x256 pixels
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Hold Still Meter, Bold | (0, 0) | 128x32 | Thick-bordered flinch gauge with enlarged fill area |
+| Flinch Warning, Bold | (128, 0) | 96x48 | Oversized "DON'T MOVE!" with heavy outline |
+| Shop Menu Highlight, Bold | (224, 0) | 160x32 | High-contrast selection bar for the price list |
+| Jakub Interactive Outline | (0, 48) | 64x96 | White-on-dark outline for Jakub's idle/greeting interaction poses |
+| Entry Door Outline | (64, 48) | 64x96 | Outlined glass door with enlarged "PUSH" sign |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Neon Sign, Steady | (128, 48) | 192x64 | "EURO INK 4 LESS" at constant glow — no "4" flicker cycle |
+| Fluorescent, Steady | (128, 112) | 64x32 | Constant overhead tube, flicker frames disabled |
+| Tattoo Gun, Reduced | (192, 112) | 48x32 | Vibration-free gun sprite; spark particles disabled in this mode |
+| Beer Sign, Steady | (240, 112) | 96x64 | Pink/green neon at constant glow |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Gun Buzz Lines | (0, 144) | 48x32 | Vibration lines around the gun — intensity steps with the buzz volume during the mini-game |
+| Record Scratch Icon | (48, 144) | 48x48 | Scratched-disc burst on the duck reveal (Lord Pilsner's internal record scratch) |
+| Sad Trombone Icon | (96, 144) | 48x48 | Drooping note on Chadwick's "Bro, that looks like a duck" |
+| Heroic Swell Icon | (144, 144) | 48x48 | Rising-notes burst over Lord Pilsner's denial (his perspective) |
+| Ka-Ching Icon | (192, 144) | 48x48 | Coin burst at payment / Jakub's Money Counting pose |
+| Radio Note Icon | (240, 144) | 48x48 | Tinny-note wisp from the radio; wobbles when Jakub hums along |
+| Pain Hiss Indicator | (288, 144) | 48x48 | Sharp inhale lines matching each flinch's hiss-of-pain audio |
+
+### Colorblind Considerations:
+- Hold Still meter fill must not rely on green-vs-red alone: Good fill is solid with a check icon, Bad fill is hatched with a warning icon
+- Pain Meter faces (Levels 1–5) already carry expression changes, not color-only states — preserve that
+- Price tags and Sold Out stamp use text + shape, never color coding alone
+- Mini-game tap zone is full-screen width (well beyond the 44px minimum); shop menu rows and dialogue portraits sized 48px+ for touch
+
+---
+
 ## 📱 Mobile Optimization
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | euro_ink_environment | Interior, exterior, signage | 1024x1024 |
-| euro_ink_characters | Viktor, Marta, LP reactions | 512x512 |
+| euro_ink_characters | Jakub, Marta, LP reactions | 512x512 |
 | euro_ink_process | Tattoo sequence, effects | 512x512 |
 
 ### Performance Notes:
@@ -420,6 +460,87 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 - Focus on character animation quality over environmental complexity
 - Mini-game requires responsive 60fps
 - Limit particles to dust and occasional smoke
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- Single-room scene; AnimatedSprite2D for the tattoo process sequence and Jakub's drawing loop; CPUParticles2D (not GPU) for dust motes, cigarette smoke, autoclave steam
+- Neon and fluorescent flicker via simple alpha toggle timers (no shaders); flicker timers disabled when reduced-motion mode is active
+- "Hold Still" mini-game: full-screen InputEventScreenTouch tap zone at a locked 60fps; flinch count writes `tattoo_quality` (wobblier duck = funnier, per design)
+- The finished duck composites permanently onto Lord Pilsner's base sprite — the tattoo layer must export as a separate alpha-masked overlay for global reuse across the rest of the game
+- State tracking per `euro_ink_4_less_state` (tattoo_acquired, tattoo_quality, jakub_friendship, lord_pilsner_special_unlocked, matching_ducks_offered, times_jakub_encountered_in_other_cities)
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Tattoo Gun frames (0.5s cycle) | Gun buzzing loop | Buzz starts on Outline Start frame, stops on Bandage Apply |
+| Jakub's Confident Drawing (12 frames, 8s) | Pencil scratching + humming | Humming swells on the "proud glance" key frame |
+| Duck Reveal / Mirror View | Record scratch (internal), triumphant horn (Jakub's POV) | Both on the hand-mirror raise frame — the collision is the joke |
+| "It's a duck" beat | Subtle sad trombone | On Chadwick's dialogue line |
+| Lord Pilsner Defensive pose | Heroic music swell | On "It's ARTISTIC INTERPRETATION" |
+| Jakub Money Counting | Cash register + satisfied grunt | On pose entry |
+| Neon Sign Flicker | Transformer buzz intensifies | During flicker frames only |
+| Pain Flinch 1–3 | Hiss of pain | Per flinch, 0.3s |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| The Tramp Stamp | Full tattoo_process_sequence, lord_pilsner_reactions, jakub_artist, mini_game UI | Entry requires `tattoo_decision_made` from Astronomical Cock-Up Square; barker referral funnels the crying Lord Pilsner here |
+| The Lord Pilsner Special (unlock) | Shop menu + price tag sprites, framed duck photo (added to Wall of Fame) | Menu item appears after the bros' visit; referenced in ALL other Euro Ink locations |
+| Matching Ducks (return visits) | Jakub Greeting/Proud portraits, flash_art_wall duck designs | Jakub offers matching ducks for Chadwick and Bradley on return |
+| Post-Credits Twin Peaks Reveal | Duck Tattoo Close-Up Detail sprite | Final reveal to "Amber"; sprite must hold up at dialogue-scene scale |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Astronomical Cock-Up Square | exterior_alley.png and neon_signage.png must match the square's Euro Ink facade + Neon Sign (Sheet 11 of that spec) | Alley walk from the square, pink glow spill |
+| 24-Hour Kebab Shop / Currency Exchange | Adjacent facades in exterior_alley.png | Static neighbors, lit signage |
+| Velvet Curtain Club | Duck tattoo overlay visible on LP's sprite during the show-off scene (nobody cares) | Item/cosmetic persistence |
+| Hostel | Bandaged → infected tattoo states as running bit dressing | Cosmetic state progression |
+| Publandia / Sinfonia / Shamsterdam | Jakub's shop variants (Shamrock Ink, Opera Ink, Euro Ink 4 Less - Shamsterdam) reuse this interior kit with re-skinned signage and flash art | Cross-city asset family |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "Confident incorrectness rendered in permanent ink, under fluorescent light"
+- **Color Mood:** Neon Pink ambition against Clinical White pretension, undercut by Dingy Gray floors and Nicotine Yellow ceiling stains
+- **Lighting:** Harsh flickering fluorescent overhead, pink/green beer-sign accents, one brutal white work-lamp spotlight on the chair
+- **Texture:** Sticky-looking cracked linoleum, duct-taped vinyl chair, faded flash sheets, home-printed paper "credentials"
+
+### Environmental Storytelling:
+- The credentials wall tells the whole story: "Online Tattoo Academy - 3 Week Course - 2019" certificate, license expired 2019 and clearly home-printed, "HYGENIC" misspelled on the window
+- Every flash design has subtle duck qualities — the wall is foreshadowing (dragons that look like geese, a skull with a beak somehow)
+- The Wall of Fame's customers all look uncertain; the guestbook is suspiciously empty; the clock is stuck at 4:20 (unintentionally — just broken)
+- The reference photo vs. Jakub's Interpretation pair (Sheet 4) is the location's thesis in two 96x96 sprites
+
+### Character Integration Notes:
+- Jakub reads as warm and sincere in every pose — he is a true believer, never a villain; his Confused pose ("Duck? No, is skeleton.") is genuine bafflement
+- Marta is present ~50% of visits; her sheet is intentionally minimal (skepticism needs few frames)
+- Lord Pilsner's reaction sheet carries the scene's emotional arc: excitement → pain → backwards-mirror joy → defensiveness
+
+---
+
+## 🎯 Social Media Viral Potential
+
+### Screenshot-Worthy Moments:
+1. **The Shop Sign** - "EURO INK 4 LESS" with the flickering "4"
+2. **The Design "Review"** - Jakub proudly presenting the duck sketch as "skeleton"
+3. **The Reveal** - First glimpse of the duck, hand mirror at an awkward angle
+4. **Chadwick's Line** - "Bro, that looks like a duck"
+5. **The Certificate** - "Online Tattoo Academy - 3 Week Course - 2019"
+6. **Flash Art Wall** - Every single design slightly duck-like
+
+### Quote Potential:
+- "Is skeleton. Very death. Much bone."
+- "In my country, death is sometimes duck. Is metaphor."
+- "It's ARTISTIC INTERPRETATION. Europeans do things different."
+- "When duck holds scythe, winter comes."
+- "No appointment. No regrets. Mostly no regrets."
 
 ---
 
@@ -431,7 +552,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 | 2 | exterior_alley.png | 512x384 |
 | 3 | neon_signage.png | 384x256 |
 | 4 | flash_art_wall.png | 512x512 |
-| 5 | viktor_artist.png | 512x384 |
+| 5 | jakub_artist.png | 512x384 |
 | 6 | marta_assistant.png | 256x192 |
 | 7 | lord_pilsner_reactions.png | 384x256 |
 | 8 | tattoo_station.png | 384x256 |
@@ -445,6 +566,63 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 
 ---
 
+## 📦 File Delivery Checklist
+
+### Required PNG Files:
+- [ ] `shop_interior_complete.png` (1024x512)
+- [ ] `exterior_alley.png` (512x384)
+- [ ] `neon_signage.png` (384x256)
+- [ ] `flash_art_wall.png` (512x512)
+- [ ] `jakub_artist.png` (512x384)
+- [ ] `marta_assistant.png` (256x192)
+- [ ] `lord_pilsner_reactions.png` (384x256)
+- [ ] `tattoo_station.png` (384x256)
+- [ ] `reception_counter.png` (256x192)
+- [ ] `waiting_area.png` (256x192)
+- [ ] `tattoo_process_sequence.png` (512x256)
+- [ ] `shop_effects.png` (256x192)
+- [ ] `euro_ink_ui.png` (256x192)
+- [ ] `euro_ink_accessibility.png` (384x256, supplemental)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups (duck tattoo overlay on its own alpha-masked layer — it composites onto Lord Pilsner's sprite for the rest of the game)
+- **Documentation:** Animation timing reference sheet (tattoo gun cycle, Jakub's 8-second drawing, flinch/recovery windows)
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly (Neon Pink #FF1493, Clinical White #F5F5F5, Neon Green #7FFF00, Nicotine Yellow #F5DEB3)
+- [ ] The final tattoo is visually, undeniably a duck — at every zoom level, including the 64x64 healed state
+- [ ] Reference photo reads as skeleton; Jakub's sketch reads as duck; the gap between them is the joke
+- [ ] Certificate, expired license, and "HYGENIC" sticker text readable on examine
+- [ ] Accessibility visual alternatives included for all audio cues (gun buzz, record scratch, trombone, ka-ching)
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme (mutual confident delusion, not malice) is clear throughout all assets — Jakub must read warm, never sinister
+- [ ] Every flash art design carries subtle duck qualities (foreshadowing requirement from design notes)
+- [ ] Mobile performance optimized (single room, alpha-toggle flickers, dust/smoke particle caps)
+- [ ] Touch zone sizing considered (44px minimum — full-screen mini-game tap zone, 48px menu rows)
+- [ ] Colorblind-friendly alternatives available where color codes meaning (hatched/iconed meter fills, never green-vs-red alone)
+- [ ] Social media viral potential maximized (reveal composition, certificate close-up framing)
+
+---
+
 ## ✅ Validation Status
 
 | Requirement | Status |
@@ -455,7 +633,12 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 | Gameplay Value | ✅ PASS |
 | No Crypto Elements | ✅ PASS |
 | Mobile Optimization | ✅ PASS |
+| Seedy Underbelly Present | ✅ PASS (permanent decisions made in emotional states) |
+| Technical Feasibility | ✅ PASS (single room, character-animation focus) |
+| Mobile Performance Budget | ✅ PASS (60 FPS, 10-15 draw calls, 20MB) |
+| Accessibility Features | ✅ PASS (visual buzz/reveal cues, steady-light variants) |
+| Social Media Integration | ✅ PASS (viral moments identified) |
 
 ---
 
-**Euro Ink 4 Less delivers the visual comedy of watching a duck emerge from confident artistic intention. Viktor's sincere belief in his own skill, combined with Lord Pilsner's desperate need to validate his "authentic European experience," creates a perfect storm of permanent regret rendered in careful pixel art. The duck tattoo becomes a running visual gag visible on Lord Pilsner's sprite throughout the rest of the game, culminating in the post-credits Twin Peaks reveal.**
+**Euro Ink 4 Less delivers the visual comedy of watching a duck emerge from confident artistic intention. Jakub's sincere belief in his own skill, combined with Lord Pilsner's desperate need to validate his "authentic European experience," creates a perfect storm of permanent regret rendered in careful pixel art. The duck tattoo becomes a running visual gag visible on Lord Pilsner's sprite throughout the rest of the game, culminating in the post-credits Twin Peaks reveal.**

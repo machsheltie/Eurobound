@@ -65,13 +65,13 @@
       "region": "Sinfonia",
       "exterior": {
         "description": "Small antechamber at the bottom of the stairs. Full-length mirror for the final attire check (and the surveillance it doubles as), House Rules posted in elegant calligraphy, a brass gold-deposit window with a felt pad and a receipt spike, and the coat check counter along the far wall.",
-        "entry_condition": "Passing Viktor's check"
+        "entry_condition": "Passing Anton's check"
       },
       "interior": {
         "theme": "Verification zone; the room where the house decides whether you count",
         "features": [
           "entry_point: staircase_bottom",
-          "npc_gatekeeper: sinfonia_npc_viktor_doorman_01",
+          "npc_gatekeeper: sinfonia_npc_anton_doorman_01",
           "npc_service: sinfonia_npc_siegfried_coatcheck_01",
           "interactive: house_rules_board",
           "interactive: verification_mirror",
@@ -279,7 +279,7 @@
       {"from": "foyer", "to": "sinfonia_imperialsquare_haute_couture_01", "type": "economic_dependency", "condition": "black_tie_attire_required"}
     ],
     "quest_path": {
-      "kings_were_humming_entry": "foyer (Viktor check, €500 collateral) → main_floor → aarons_corner_table",
+      "kings_were_humming_entry": "foyer (Anton check, €500 collateral) → main_floor → aarons_corner_table",
       "kings_were_humming_route": "approach corner table → one-time scene → exit to main_floor",
       "kings_were_humming_exit": "main_floor → foyer → staircase (collateral chips gone)",
       "card_shark_route": "main_floor (learn tells) → private_boxes → discovery → boss fight",
@@ -353,7 +353,7 @@
     },
     "banned": {
       "entry_blocked": true,
-      "blocker": "sinfonia_npc_viktor_doorman_01",
+      "blocker": "sinfonia_npc_anton_doorman_01",
       "duration_hours": 24
     },
     "vault_unlocked": {

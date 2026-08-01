@@ -184,7 +184,7 @@ Now: Spend eternity with Margaret. The destination doesn't matter anymore.
 ### NPC Identity
 - **NPC ID**: `publandia_npc_margaret_skeleton_01`
 - **Display Name**: Margaret
-- **Full Name**: Margaret O'Sullivan (née Brennan)
+- **Full Name**: Margaret O'Sullivan (née Kelly)
 - **State**: Deceased (skeleton), treated as alive by all
 
 ### Appearance

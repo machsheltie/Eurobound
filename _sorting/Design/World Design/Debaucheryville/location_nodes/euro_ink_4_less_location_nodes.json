@@ -13,8 +13,8 @@
         "features": [
           "entry_point",
           "reception_counter: marta_sometimes_present",
-          "tattoo_station: viktor_primary_workspace",
-          "quest_npc: viktor_novak",
+          "tattoo_station: jakub_primary_workspace",
+          "quest_npc: jakub_novak",
           "quest_npc: marta_novak",
           "flash_art_wall: suspiciously_many_birds",
           "waiting_area: uncertain_customer_photos",
@@ -32,7 +32,7 @@
       "functions": [
         "Lord Pilsner's duck tattoo acquisition (permanent cosmetic)",
         "Hold Still mini-game during tattooing process",
-        "Viktor NPC origin - recurring in other cities",
+        "Jakub NPC origin - recurring in other cities",
         "Shop for additional tattoo services post-quest",
         "Comedy set-piece: skeleton becomes duck through 'artistic interpretation'",
         "Unlocks 'Lord Pilsner Special' menu item for return visits"
@@ -65,7 +65,7 @@
         {
           "quest_id": "debaucheryville_sidequest_tramp_stamp_01",
           "role": "primary_location",
-          "npc_trigger": "viktor_novak"
+          "npc_trigger": "jakub_novak"
         }
       ],
       "unlocks_at": [
@@ -75,16 +75,16 @@
         }
       ],
       "recurring_connection": {
-        "viktor_appears_in": ["sinfonia_opera_ink", "publandia_shamrock_ink"],
+        "jakub_appears_in": ["sinfonia_opera_ink", "publandia_shamrock_ink"],
         "recognition_dialogue": true
       }
     }
   },
   
   "feature_details": {
-    "tattoo_station_viktor_primary_workspace": {
+    "tattoo_station_jakub_primary_workspace": {
       "type": "service_point",
-      "npc": "viktor_novak",
+      "npc": "jakub_novak",
       "services_available": [
         "skeleton_tattoo_becomes_duck",
         "lord_pilsner_special",
@@ -113,7 +113,7 @@
     
     "flash_art_wall_suspiciously_many_birds": {
       "type": "examinable",
-      "easter_egg": "After examining 3 times, player notices all Viktor's 'skull' designs have beaks",
+      "easter_egg": "After examining 3 times, player notices all Jakub's 'skull' designs have beaks",
       "description": "Walls covered in tattoo flash art. 90% skulls, flames, tribal, and Looney Tunes. A suspicious number of bird-like shapes in the 'skull' section."
     },
     
@@ -138,7 +138,7 @@
     "hidden_area_back_room_mattress_visible": {
       "type": "environmental_storytelling",
       "visibility": "through_beaded_curtain",
-      "description": "Viktor's living quarters. Mattress on floor, personal items visible. He lives here.",
+      "description": "Jakub's living quarters. Mattress on floor, personal items visible. He lives here.",
       "player_implication": "This explains the dedication to his craft."
     }
   },

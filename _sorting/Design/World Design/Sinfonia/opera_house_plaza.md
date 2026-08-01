@@ -295,7 +295,7 @@
   - Schnapps-slurred consonants
   - Randomly breaks into German when emotional: "Mein Pferd! Mein Gustav!"
 - **Relationship with Gustav**: 
-  - Co-dependent professional marriage of 15 years
+  - Co-dependent professional marriage of 16 years
   - Hans-Jürgen drinks; Gustav does the actual navigation
   - Genuine affection under the dysfunction
 
@@ -303,7 +303,7 @@
 - *Initial panic*: "MEIN PFERD! HE IS GONE! GUSTAV! GUSTAAAAAV!"
 - *To bros*: "You! Americans! You are strong, yes? Fast? You help me catch my horse, I give you discount ride!"
 - *About Gustav*: "Gustav is... the better driver. He knows the routes. He knows when to stop for photos. I just... hold the reins and drink."
-- *Confession*: "Fifteen years we work together. He is my only friend. My wife left. My children do not call. But Gustav... Gustav is there. Every morning. Until today."
+- *Confession*: "Sixteen years we work together. He is my only friend. My wife left. My children do not call. But Gustav... Gustav is there. Every morning. Until today."
 - *If Gustav returns*: "GUSTAV! MY FRIEND!" *bear hug, horse tolerates it*
 - *Philosophical*: "Maybe... maybe he deserves to be free. But also the carriage insurance is in my name, so he has to come back."
 
@@ -320,8 +320,8 @@
 **Role**: Quest Target / Philosophical Horse / Employee Who Finally Quit
 
 **Appearance**:
-- **Type**: Lipizzan-type draft horse (classic Fiaker breed)
-- **Color**: Dark bay, white blaze on forehead
+- **Type**: Lipizzan draft horse — Spanish Riding School reject (classic Fiaker breed)
+- **Color**: White-grey Lipizzan coat, dappled
 - **Build**: Muscular but tired-looking
 - **Expression**: Permanently unimpressed
 - **Accessories** (during escape):

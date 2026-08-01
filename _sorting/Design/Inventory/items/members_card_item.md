@@ -1,6 +1,6 @@
 # Item Definition: The Member's Card
 
-*"Ah. Then we skip two of the three questions." ... "Not that one." - Viktor the Doorman, gesturing at the deposit window*
+*"Ah. Then we skip two of the three questions." ... "Not that one." - Anton the Doorman, gesturing at the deposit window*
 
 ## 📋 Item Identity
 - **Item ID**: `item_members_card`
@@ -23,7 +23,7 @@ The cage cuts one for any guest who has moved roughly **€1,000 across the Back
 
 Which is true. The house would. The house is extremely glad of the company of anybody who has demonstrated they will move a thousand euro across a table in a room with a documented edge.
 
-Mechanically, the card does exactly one thing: it satisfies Viktor's **attire** requirement at the door in place of Black-Tie Attire. It does not satisfy the stat check. It does not satisfy the €500 collateral. It does not open the velvet rope to the High Stakes Salon, the Private Boxes, or the vault antechamber. It gets the party down the stairs in whatever they happen to be wearing.
+Mechanically, the card does exactly one thing: it satisfies Anton's **attire** requirement at the door in place of Black-Tie Attire. It does not satisfy the stat check. It does not satisfy the €500 collateral. It does not open the velvet rope to the High Stakes Salon, the Private Boxes, or the vault antechamber. It gets the party down the stairs in whatever they happen to be wearing.
 
 ### What The Bros Believe It Is
 "They don't advertise this. There's no application. You can't *ask* for one — I checked, I asked, and the guy went and got the card, which tells you the asking is part of it. Point is we're on a list now. Somewhere in that building there is a list, and it is not a long list, and we are on it. That's Europe-wide access, potentially. I'd honestly try it at an airport."
@@ -75,7 +75,7 @@ Charm (Everyone else):      0  (the card is unreadable to anybody outside that b
 ### Passive Effects
 | Effect | Description |
 |--------|--------------|
-| **Attire Substitution** | Satisfies Viktor's Black-Tie Attire item requirement at the Backroom door. The stat check (+3 Charm **or** +3 Bravado) and the €500 collateral are unaffected and still apply in full |
+| **Attire Substitution** | Satisfies Anton's Black-Tie Attire item requirement at the Backroom door. The stat check (+3 Charm **or** +3 Bravado) and the €500 collateral are unaffected and still apply in full |
 | **The House Would Be Glad** | Backroom staff greet the party by sight rather than by assessment on every subsequent entry. No comps, no credit, no odds change |
 | **Presented Unprompted** | On first entry to any gated venue in any city, a bro presents the card. It is never accepted anywhere except the Backroom door, and no venue authors a unique refusal for it — the existing rejection line plays, unchanged |
 
@@ -96,7 +96,7 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 ### Sprite Implementation
 - **Visibility**: Carried in an inside jacket pocket, not visible in the idle sprite; drawn in-hand during any presentation beat and during the door check
 - **Layer**: Prop layer during presentation; no persistent overlay
-- **Animation**: Two-frame produce-and-present, reusing the existing hand-to-chest rig. Lord Pilsner's version holds the card a beat longer than the animation needs and Viktor waits it out every time
+- **Animation**: Two-frame produce-and-present, reusing the existing hand-to-chest rig. Lord Pilsner's version holds the card a beat longer than the animation needs and Anton waits it out every time
 - **Degradation**: Card wear advances on in-game days elapsed since issue, per the table above; the door check never reads the wear state
 
 ---
@@ -106,7 +106,7 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 ### When NPCs Notice The Card
 | NPC Type | Reaction | Bros' Interpretation |
 |----------|----------|------------------------|
-| Viktor the Doorman | *takes it, looks at it for the same two seconds he looks at everything, hands it back* "Ah. Then we skip two of the three questions." *(gestures at the deposit window)* "Not that one." — his dedicated card line, per `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/viktor_the_doorman.md` | "Two out of three. That's a *supermajority*, boys." |
+| Anton the Doorman | *takes it, looks at it for the same two seconds he looks at everything, hands it back* "Ah. Then we skip two of the three questions." *(gestures at the deposit window)* "Not that one." — his dedicated card line, per `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/anton_the_doorman.md` | "Two out of three. That's a *supermajority*, boys." |
 | Madame Karten | "Darling, how lovely. The house would be glad of your company again." *(the wording on the card, verbatim, warmly)* | "She's quoting the charter at us. That's a ceremony thing." |
 | Siegfried at the coat check | *hangs the coats, nods at the pocket the card lives in, says nothing* | "He's counting us in. Coat guy counts everybody in." |
 | Monsieur Aiguille, Haute Couture Haberdashery | "Then you will not require the suit." *(a pause exactly long enough to be a needle)* "You will still want the suit." | "He's trying to keep the sale. Respect the hustle." |
@@ -165,14 +165,14 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 *The printed slip says: "The house would be glad of your company again." It is a batch print. There is a box of them under the counter, and the box is in frame, and nobody looks at it.*
 
 ### The Door
-*The bottom of the stairs, next visit. Lord Pilsner produces the card and holds it out, and holds it out, and holds it out. Viktor takes it, looks at it for exactly as long as he looks at everything, and hands it back.*
+*The bottom of the stairs, next visit. Lord Pilsner produces the card and holds it out, and holds it out, and holds it out. Anton takes it, looks at it for exactly as long as he looks at everything, and hands it back.*
 
-**Viktor**:
+**Anton**:
 > "Ah. Then we skip two of the three questions."
 
 *He gestures at the deposit window. Nothing else about the check changes: the collateral is the collateral.*
 
-**Viktor**:
+**Anton**:
 > "Not that one."
 
 **Lord Pilsner** *(already reaching for the gold, delighted)*: "He's waiving things for us now. You hear that? He's *waiving*."

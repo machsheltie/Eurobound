@@ -230,7 +230,7 @@
       "description": "An opera cape Gustav acquired during his escape. He's keeping it.",
       "quest": "sinfonia_sidequest_fiaker_fiasco_01",
       "obtainable": false,
-      "worn_by": "gustav_horse_01",
+      "worn_by": "sinfonia_npc_gustav_horse_01",
       "significance": "iconic_visual_element",
       "flavor_text": "Gustav refuses to give it back. It's his now."
     },

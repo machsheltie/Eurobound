@@ -311,6 +311,100 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 
 ---
 
+## 🎬 Animation Specifications
+
+### Clock Show Sequence:
+- **Duration:** 38 seconds exactly (comedy timing is everything — do not round)
+- **Frames:** 34 total across sub-phases (Windows Opening 4 → Apostle Parade 12 → Skeleton Bell 6 → Hourglass Turn 4 → Rooster Crow 4 → Windows Closing 4)
+- **Pattern:** Bell chime build → windows open → apostles shuffle past like a DMV queue → skeleton rings bell, turns hourglass → rooster makes strangled noise → windows close → hold on crowd silence
+- **Trigger:** On the hour during day cycle; pre-rendered sequence from `clock_animation_sequence.png`
+- **Purpose:** The central anticlimax — 600 years of history delivered in 38 underwhelming seconds
+- **Audio Sync:** Bell chime (build-in), mechanical clicking (apostles), small bell ring (skeleton), strangled crow (rooster), anticlimax trombone (windows close)
+- **Mobile Optimization:** Pre-rendered as one sequence, no per-frame computation
+
+### Crowd Phone-Raising Wave:
+- **Duration:** ~2 seconds, rippling across crowd rows
+- **Frames:** 4 (arms-down → half-raise → full-raise → hold)
+- **Trigger:** Crowd density surge, 15 minutes before each hourly show
+- **Purpose:** Anticipation build; makes the 38-second letdown land harder
+- **Audio Sync:** Camera shutter clicks intensify
+- **Mobile Optimization:** Wave applies to dense/medium crowd rows only; foreground tourists animate individually
+
+### Bros Crying:
+- **Duration:** ~2 second loop (6 frames from `clock_animation_sequence.png`)
+- **Trigger:** Clock show ends; loops while "Post-Clock Emotional Vulnerability" state is active
+- **Purpose:** The emotional pivot the entire vendor economy exploits
+- **Audio Sync:** Lord Pilsner sobbing; tear drop/stream particles from `crowd_particles.png`
+- **Mobile Optimization:** Tear particles capped at 6 concurrent
+
+### Vendor Approach:
+- **Duration:** ~1.5 seconds per vendor (idle → approaching pose transition)
+- **Trigger:** Player enters vendor's Area2D trigger zone; vendor retreats if rejected twice
+- **Purpose:** Makes the scam gauntlet feel organic, not scripted
+- **Audio Sync:** Footsteps speed up; conspiratorial whisper tone begins
+- **Mobile Optimization:** Only one vendor approach animation active at a time (professional territory respect is also a draw-call optimization)
+
+### Camera Flash Ambient:
+- **Duration:** 0.2-second bursts at random intervals
+- **Frames:** 3 flash variants from `crowd_particles.png`
+- **Trigger:** Constant during peak hours; surges during show
+- **Audio Sync:** Shutter click per flash
+- **Mobile Optimization:** 20 max concurrent (matches particle budget)
+
+### Incense Smoke (Party Monk):
+- **Duration:** 4-second loop, 2 frames
+- **Trigger:** Constant at blessing station; densifies during blessing animation
+- **Audio Sync:** Incense hiss during blessing; fake Gregorian chant snippet
+- **Mobile Optimization:** Single emitter only
+
+### Neon Sign Flicker (Euro Ink alley sign):
+- **Duration:** Random 3–5 second intervals
+- **Trigger:** Night cycle only
+- **Purpose:** Visual funnel toward the alley and the tattoo decision
+- **Audio Sync:** Transformer buzz intensifies during flicker
+- **Mobile Optimization:** Simple alpha toggle, no shader
+
+---
+
+## ♿ Accessibility Sprite Requirements
+**File:** `cockup_square_accessibility.png` (supplemental sheet — delivered alongside the 13 base files, not counted in their total)
+**Dimensions:** 512x384 pixels
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Vendor Outline Set (x6) | (0, 0) | 384x96 | Thick white-on-dark outlines for all six scam vendors' interactive idle poses (64x96 each) |
+| Clock Dial High-Contrast | (384, 0) | 128x128 | Simplified astronomical dial with boosted edge contrast for show readability |
+| Purchase Prompt Bold | (0, 96) | 192x64 | Heavy-outline "Buy?" prompt variant |
+| Scam Warning Bold | (192, 96) | 128x64 | Enlarged thick-bordered player-only warning |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Camera Flash Static | (320, 96) | 64x64 | Soft non-flashing glow decal replacing strobing Flash 1–3 particles |
+| Neon Sign Steady | (384, 96) | 128x64 | Euro Ink sign at constant glow, no flicker |
+| Crowd Calm Tile | (0, 160) | 256x64 | Static raised-phones crowd row replacing the phone-raising wave |
+| Clock Show Reduced | (256, 160) | 256x64 | Half-rate apostle parade key frames; confetti burst disabled in this mode |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Bell Chime Icon | (0, 224) | 48x48 | Gentle bell icon above tower — replaces distant church bells (5 min warning) and show-start chime |
+| Rooster Crow Burst | (48, 224) | 64x48 | Comic strangled-crow text burst at the rooster frame |
+| Vendor Approach Indicator | (112, 224) | 48x48 | Footstep icon over any approaching vendor (replaces whisper/footstep audio cue) |
+| Purchase Ka-Ching Icon | (160, 224) | 48x48 | Coin-burst icon on every transaction |
+| Anticlimax Icon | (208, 224) | 48x48 | Drooping trombone-note icon on windows-close / crowd-silence beat |
+| Sobbing Indicator | (256, 224) | 48x48 | Wavy tear-lines icon over crying bros (replaces sob audio) |
+
+### Colorblind Considerations:
+- Scam Warning uses icon + text, never Scam Green (#7FFF00) alone
+- Wine bottle "vintage" glow paired with a distinct bottle silhouette, not color-only backlighting
+- Vulnerability Icon is a crying-face shape, not a color-state tint
+- Gold Counter uses numeral + coin icon rather than gold/gray color coding
+- All six vendor interaction zones and UI purchase prompts meet the 44px minimum touch target (vendor sprites at 64x96 are compliant)
+
+---
+
 ## 📱 Performance Specifications
 | Metric | Target |
 |--------|--------|
@@ -318,6 +412,123 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Draw Calls | 20 max |
 | Memory | 45 MB |
 | Crowd Sprites | 50 max |
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** ASTC — `clock_dial_astronomical` detail and `clock_animation_sequence.png` need higher-quality blocks (the 38-second show is the location's centerpiece)
+- **Android:** ETC2 with alpha
+- **Fallback:** PNG high quality for the clock tower and animation sequence
+
+### Texture Atlases:
+| Atlas | Contents | Max Size |
+|-------|----------|----------|
+| cockup_environment | square_ground_complete, clock_tower_full, surrounding_buildings | 2048x2048 |
+| cockup_clockshow | clock_animation_sequence (loaded on demand near the hour) | 1024x1024 |
+| cockup_characters | crowd_tourists, all six vendor sheets, local_observers | 1024x1024 |
+| cockup_effects_ui | crowd_particles, vendor_interaction, cockup_square_accessibility | 1024x1024 |
+
+*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+
+### LOD Levels:
+| Level | Description |
+|-------|-------------|
+| High | Full crowd (50 sprites), all camera flashes, incense + confetti particles, phone glow |
+| Medium | Crowd 30, flashes 10 max, incense only, no confetti |
+| Low | Crowd rows as static dense/medium tiles, no flashes, static incense sprite |
+
+### Performance Targets:
+- **Target FPS:** 45 (see Performance Specifications table above)
+- **Max Draw Calls:** 20
+- **Memory Footprint:** 45 MB maximum
+- **Particle Limit:** Camera flashes 20 max, incense 1 emitter, tears 6 max
+
+### Performance Notes:
+- Crowd rendered as simplified sprites at distance; vendor detail increases on approach (per location profile)
+- `clock_animation_sequence.png` loads on demand ~2 minutes before each hourly show and unloads after
+- Only one vendor approach animation runs at a time; the rest hold idle poses
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- TileMap for cobblestone ground variants; ParallaxBackground for surrounding buildings; AnimatedSprite2D for the pre-rendered 38-second clock sequence; CPUParticles2D (not GPU) for camera flashes, incense smoke, confetti, tears
+- Area2D vendor trigger zones with approach/retreat AI (retreat after two rejections); "Post-Clock Vulnerability" state flag (30-minute game-time expiry) drives the +20% price / +50% purchase-rate modifiers
+- State tracking per `astronomical_cockup_square_state` (clock_show_witnessed, vendors_encountered, crying_triggered, tattoo_decision_made, wristbands_acquired, return_visit_count)
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Windows Opening frames | Bell chime build | Chime starts 1s before frame 1 |
+| Apostle Parade | Mechanical clicking | One click per frame, 12 frames |
+| Skeleton Bell frames | Small bell ring | On frame 3 of 6 |
+| Rooster Crow frames | Strangled rooster crow | Frames 2–4 |
+| Windows Closing / Crowd Reaction | Anticlimax trombone | On final closing frame, into crowd silence |
+| Vendor Money poses (all six) | Cash register ka-ching (slight sad undertone) | On pose entry |
+| Item Banner | Comedic "wa-wa-waaa" | On banner slide-in for obviously bad purchases |
+| Bros Crying loop | Lord Pilsner sobbing | Loop start synced with tear particles |
+| Blessing 1–3 poses | Fake Gregorian chant snippet + incense hiss | On first blessing frame |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Astronomical Cock-Up (Main) | clock_animation_sequence, crowd_tourists, clock_show_ui, Clock Timer | Auto-triggers on entering square and witnessing the hourly show |
+| VIP Wristband Scam | shady_wristband_guy.png, Wristband Close ("I'm 7!"), Wristband Stack | Triggered after Velvet Curtain Club rejection; wristband item enables club first entry |
+| Clock Wine Acquisition | clock_wine_vendor.png, Bottle Single, Boxed Wine easter egg | Post-show vendor approach during Vulnerability state |
+| The Tramp Stamp | tattoo_barker.png ("You! Crying man!"), Bros Crying frames, Euro Ink 4 Less facade + Neon Sign | Lord Pilsner's post-show breakdown funnels to Euro Ink 4 Less |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Euro Ink 4 Less | Euro Ink facade + Neon Sign (Sheet 11) must match the shop's own `exterior_alley.png` / `neon_signage.png` | Alley walk with pink neon glow spill |
+| Old Town Streets | Alley Exit tile (Sheet 11) | Standard street fade |
+| Velvet Curtain Club | VIP wristband item sprite persists to the bouncer scene | Item persistence, payoff scene |
+| Clocktower Café / Paid Restroom | Café Entrance and Restroom facades (Sheet 11) | Facade interaction points |
+| Hostel | Commemorative plate, wine bottle, and merch item sprites accumulate as room dressing | Item persistence |
+| Sinfonia (later city) | Party Monk sprite family reused for "opera blessings" cameo | Cross-city NPC reuse |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "600 years of Gothic grandeur drowning in scam-vendor tack"
+- **Color Mood:** Stone Gray and Gothic Gold carry the monument's gravity; Scam Green, Monk Purple, and Neon Pink undercut it at street level
+- **Lighting:** Day — bright natural light with harsh tower shadows; Golden Hour — dramatic tower silhouette, warm cart glows; Night — streetlamp pools, neon signage, phone-screen glow from the crowd
+- **Texture:** Worn cobblestone and weathered stone against cheap mass-produced vendor gloss (identical "vintage" labels, plastic wristbands, folding tables)
+
+### Environmental Storytelling:
+- "COCK-UP" graffiti tag over the crossed-out official UNESCO signage — the city renamed the square before the player arrives
+- Every scam is debunkable on close read: HOLIDAY INN EXPRESS bathrobe logo, identical wine labels, boxed wine hidden in the cart, birthday-party poster showing the same wristbands
+- The skeleton figure looks visibly bored during its own show (easter egg)
+- Handwritten cardboard signage ("BLESSINGS €20") against the tower's carved permanence
+
+### Character Integration Notes:
+- Six scam vendors read as distinct silhouettes and never overlap territories (professional respect is canon and a layout rule)
+- Crowd is simplified sprites at distance, full detail on approach; local observers smirk from the edges
+- Bros' crying states composite over the crowd layer during Post-Clock Vulnerability; tear particles draw above crowd, below UI
+
+---
+
+## 🎯 Social Media Viral Potential
+
+### Screenshot-Worthy Moments:
+1. **The Crowd Anticipation** - Hundreds of raised phones aimed at a 600-year-old clock
+2. **The 38-Second Devastation** - The crowd's collective disappointment in one frame
+3. **Lord Pilsner Crying** - Tears streaming over a mechanical rooster
+4. **The Party Monk Blessing** - Obviously fake monk, bros believing completely
+5. **The Wristband Transaction** - Acquiring "Level Seven Access" (children's party bands)
+6. **Tattoo Shop Decision** - Lord Pilsner pointing at his lower back beneath the flickering "4"
+
+### Quote Potential:
+- "Lorem ipsum spiritu sanctu... party hardy... amen."
+- "Level SEVEN? Bro, that's like... that's ABOVE platinum."
+- "The twelve apostles represent the twelve drinks before you black out."
+- "This is the most authentic European experience we've had." *sobbing*
 
 ---
 
@@ -341,6 +552,62 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 
 ---
 
+## 📦 File Delivery Checklist
+
+### Required PNG Files:
+- [ ] `square_ground_complete.png` (1024x512)
+- [ ] `clock_tower_full.png` (512x1024)
+- [ ] `clock_animation_sequence.png` (1024x512)
+- [ ] `crowd_tourists.png` (512x384)
+- [ ] `viewing_spot_scammer.png` (256x192)
+- [ ] `party_monk.png` (384x288)
+- [ ] `clock_wine_vendor.png` (384x288)
+- [ ] `merchandise_vendor.png` (384x256)
+- [ ] `shady_wristband_guy.png` (320x256)
+- [ ] `tattoo_barker.png` (256x192)
+- [ ] `surrounding_buildings.png` (1024x512)
+- [ ] `crowd_particles.png` (256x256)
+- [ ] `vendor_interaction.png` (384x256)
+- [ ] `cockup_square_accessibility.png` (512x384, supplemental)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups (clock tower and animation frames in separate groups)
+- **Documentation:** Animation timing reference sheet — the 38-second clock sequence phase chart is mandatory
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly (Stone Gray #708090, Gothic Gold #CFB53B, Scam Green #7FFF00, Monk Purple #4B0082, Neon Pink #FF1493)
+- [ ] Clock show sub-phases read clearly at 38 seconds total; skeleton looks bored (easter egg intact)
+- [ ] "I'm 7!" wristband text and HOLIDAY INN bathrobe logo readable on close inspection
+- [ ] Accessibility visual alternatives included for all audio cues (bell, crow, vendor approach, ka-ching, sobbing)
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme (coordinated scam ecosystem vs. genuine monument) is clear throughout all assets
+- [ ] Easter eggs discoverable: boxed wine in cart, birthday-party poster, graffiti tag
+- [ ] Mobile performance optimized (CPU particles, on-demand clock atlas, 50-sprite crowd cap)
+- [ ] Touch zone sizing considered (44px minimum — vendor sprites and purchase prompts compliant)
+- [ ] Colorblind-friendly alternatives available where color codes meaning (scam warning, gold counter)
+- [ ] Social media viral potential maximized (crowd anticipation frame, crying-over-rooster composition)
+
+---
+
 ## ✅ Validation Status
 
 | Requirement | Status |
@@ -351,5 +618,10 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Gameplay Value | ✅ PASS |
 | No Crypto Elements | ✅ PASS |
 | Mobile Optimization | ✅ PASS |
+| Seedy Underbelly Present | ✅ PASS (coordinated scam ecosystem) |
+| Technical Feasibility | ✅ PASS (pre-rendered clock show, crowd LOD) |
+| Mobile Performance Budget | ✅ PASS (45 FPS, 20 draw calls, 45 MB) |
+| Accessibility Features | ✅ PASS (visual audio cues, motion-reduced show) |
+| Social Media Integration | ✅ PASS (viral moments identified) |
 
 **Astronomical Cock-Up Square delivers the complete tourist trap ecosystem - 38 seconds of show, €300+ of scams, and one life-changing decision to get a skeleton tattoo that turns out to be a duck.**

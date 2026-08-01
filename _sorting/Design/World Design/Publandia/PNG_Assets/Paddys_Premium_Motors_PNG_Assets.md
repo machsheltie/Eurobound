@@ -351,6 +351,46 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 
 ---
 
+## ♿ Accessibility Sprite Requirements
+**File:** `paddys_accessibility.png` (supplemental sheet — delivered alongside the 9 base files, not counted in their total)
+**Dimensions:** 256x192 pixels
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Rental Menu Frame, Bold | (0, 0) | 96x64 | Thick-bordered rental selection box with enlarged vehicle rows |
+| Warning Popup, Bold | (96, 0) | 96x48 | Oversized "ARE YOU SURE?" with heavy outline |
+| Seamus Interactive Outline | (192, 0) | 48x64 | White-on-dark outline for Seamus's counter interaction hotspot |
+| Board of Shame Examine Outline | (0, 64) | 64x64 | Outlined corkboard hotspot with enlarged "THEY DIDN'T LISTEN" title |
+| Map Examine Outline | (64, 64) | 64x64 | Outlined map hotspot; "HERE BE DRAGONS" at readable weight |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Fluorescent, Steady | (128, 64) | 64x16 | Constant tube light — random double-flash disabled |
+| Rain, Static Overlay | (128, 80) | 64x32 | Fixed light-drizzle texture replacing falling drop particles and puddle ripples |
+| Smoke, Off | (192, 64) | 32x32 | Static ember-only cigarette/ashtray state, no drifting wisps |
+| Computer Screen, Steady | (224, 64) | 32x32 | Non-flickering Windows 98 screen state |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Door Bell Jingle Icon | (0, 128) | 32x32 | Bell burst on entry (replaces the ancient door jingle) |
+| Key-Slide Scrape Lines | (32, 128) | 48x32 | Friction lines tracking the keys across the counter for the full 1.5s slide — the iconic doom-delivery moment must land visually |
+| Pen Scratch Icon | (80, 128) | 32x32 | Scratch glyph during the contract-signing animation |
+| Ominous Drone Vignette | (112, 128) | 48x32 | Subtle screen-edge darkening during the thousand-yard-stare beat (replaces the drone audio) |
+| Record Scratch Icon | (160, 128) | 32x32 | On "That's what they all say" |
+| Distant Horns Wisp | (192, 128) | 32x32 | Faint echoing-horn glyphs whenever The Cloverleaf is mentioned |
+| Sheep Baa Bubble | (224, 128) | 32x32 | Small "baa" bubble when a sheep stares at the player |
+
+### Colorblind Considerations:
+- The four key fobs (green/blue/gold/leather) must not code vehicles by color alone — each fob carries a letter tag (S / L / E / F) matching its vehicle
+- Warning signs communicate via text + icon shape, never Warning Yellow alone
+- Add-on icons (GPS, Insurance, Map, Rosary) are four distinct silhouettes, no color dependency
+- Rental menu rows, add-on icons, and all examine hotspots meet the 44px minimum touch target
+
+---
+
 ## 📱 Mobile Optimization
 
 ### Texture Atlases:
@@ -376,6 +416,85 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 
 ---
 
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- Interior/exterior handled as a simple fade transition (per Performance Notes); ParallaxBackground for countryside + distant Cloverleaf on the horizon
+- CPUParticles2D (not GPU) for rain (20 cap), cigarette/ashtray smoke, gravel dust; fluorescent and computer-screen flicker via alpha toggle timers, disabled in reduced-motion mode
+- Area2D examine points: Board of Shame, map ("HERE BE DRAGONS"), incident counter, Mary's photo (sets `asked_about_wife` dialogue branch availability), ring box
+- Rental transaction UI drives the quest trigger: vehicle select → add-ons → contract signing → keys handoff → "The Cloverleaf of Confusion" starts
+- State tracking per `paddys_premium_motors_state` (rented_car, which_vehicle, purchased_gps/insurance/rosary, cloverleaf_completed, seamus_respect_earned, examined_board_of_shame, times_warned)
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Key Sliding (1.5s) | Metal scraping on wood | Scrape spans the full pickup → slide → release sequence |
+| Door Open | Ancient bell jingle | On door-open frame |
+| Contract Paper animation | Pen scratching + brief ominous sting | Scratch during signing; sting on the final stroke |
+| Thousand Yard stare state | Subtle ominous drone | Drone holds while the state is active |
+| "Cloverleaf" dialogue mention | Distant, echoing car horns | On the word, every time |
+| "That's what they all say" | Record scratch | On the line |
+| GPS add-on purchase | Cheerful startup sound (ironic) | On add-on confirm |
+| Seamus Idle (10s loop) | Resigned sigh | On the sigh beat; occasional ring-touch is silent |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| The Cloverleaf of Confusion | Rental menu + vehicle icons, Contract Paper, Keys Handoff, Warning Popup, all four rental car sprites, Sliding Keys pose | Renting any vehicle triggers the quest; Seamus's warning beats (`times_warned`) play out across the transaction |
+| Seamus's Respect (post-quest) | Post-Quest Respect pose, Respect expression, Portrait Respect | Unlocks on `cloverleaf_completed`; 10% discount and "Ye've earned my respect" dialogue |
+| Add-On Gotchas | Add-On Icons (GPS, Insurance, Map, Rosary) | GPS shows "recalculating" in the Cloverleaf; premium insurance excludes "circular traffic incidents"; Seamus insists on the rosary |
+| Roundabout Survivor (title) | Portrait Respect, Board of Shame empty spot | The "Reserved for next" polaroid slot stays empty if the bros actually make it out |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| The Cloverleaf (Roundabout) | Distant Cloverleaf sprite on the parking-lot horizon; Road Exit tile leads east 1km | Ominous horizon presence from every exterior frame; drive-off transition on rental |
+| Publandia City Center | Road west (3km back toward civilization) | Standard road transition |
+| Country Roads | Countryside BG, stone wall, gate, sheep sprites | Scenic dressing; all roads eventually lead back to the Cloverleaf |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "Resigned fatalism rendered in overcast gray — the last stop before The Cloverleaf"
+- **Color Mood:** Irish Green optimism (signage, shamrock) losing slowly to Gravel Gray, Sky Gray, and Rust Brown; Warning Yellow as the only urgent voice in the room
+- **Lighting:** Exterior — flat overcast daylight with rare sun breaks; Interior — flickering fluorescent tubes and one gray window beam
+- **Texture:** Weathered stone farmhouse, scratched counter wood (decades of nervous key slides), yellowed keyboard, dusty counter frame
+
+### Environmental Storytelling:
+- "DAYS SINCE LAST CLOVERLEAF INCIDENT: 0" — the dust overlay proves it has never moved
+- The Board of Shame: polaroids spanning 1987 to yesterday, international plates, one empty spot labeled "Reserved for next"
+- Mary's photo ("MARY - CLOVERLEAF '92" on the back), the never-reopened ring box, the memorial ashtray, the still-worn wedding ring — the tragedy told entirely in desk props
+- The map's "HERE BE DRAGONS" over the Cloverleaf, with multiple crossed-out attempted routes
+
+### Character Integration Notes:
+- Seamus carries the whole location: his eight states and five expressions must sell forty years of unheeded warnings without a single exaggerated frame
+- The Post-Quest Respect pose is a *slight* nod and *almost* a smile — restraint is the reward
+- Sheep are deadpan witnesses: the Staring state should read as quiet judgment, never cartoon reaction
+
+---
+
+## 🎯 Social Media Viral Potential
+
+### Screenshot-Worthy Moments:
+1. **The Board of Shame** - Decades of abandoned-rental polaroids with one spot "Reserved for next"
+2. **"DAYS SINCE LAST INCIDENT: 0"** - The counter that has never moved, under its layer of dust
+3. **Seamus's Thousand-Yard Stare** - The face of a man who has seen too much
+4. **The "HERE BE DRAGONS" Map** - Aggressive red marker over The Cloverleaf
+5. **The Keys Slide** - The iconic moment of doom delivery, mid-scrape
+6. **The Distant Cloverleaf** - Visible through the rain-streaked window, waiting
+
+### Quote Potential:
+- "That's what they all say."
+- "God help ye. Especially at the Cloverleaf."
+- "They all come back. Eventually."
+- "Some say it's a roundabout. I say it's a test of the soul."
+- "The car came back. She didn't. I like to think she's happy."
+
+---
+
 ## 📋 Required PNG Files (9 Total)
 
 | # | Filename | Dimensions |
@@ -394,6 +513,59 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 
 ---
 
+## 📦 File Delivery Checklist
+
+### Required PNG Files:
+- [ ] `exterior_building.png` (512x384)
+- [ ] `parking_lot.png` (512x256)
+- [ ] `interior_reception.png` (512x512)
+- [ ] `seamus.png` (384x384)
+- [ ] `board_of_shame.png` (256x256)
+- [ ] `reception_details.png` (256x256)
+- [ ] `sheep_ambient.png` (192x128)
+- [ ] `paddys_effects.png` (128x128)
+- [ ] `paddys_ui.png` (256x192)
+- [ ] `paddys_accessibility.png` (256x192, supplemental)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups (Board of Shame polaroids and annotations on separate layers for future additions — the board is designed to grow)
+- **Documentation:** Animation timing reference sheet (Seamus idle cycle, 1.5s key slide, flicker intervals)
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly (Irish Green #228B22, Warning Yellow #FFD700, Gravel Gray #A9A9A9, Sky Gray #B0C4DE)
+- [ ] "DAYS SINCE INCIDENT: 0" readable with dust overlay intact; counter must look like it has never moved
+- [ ] Mary's photo back ("MARY - CLOVERLEAF '92") and Board of Shame annotations readable on examine
+- [ ] The distant Cloverleaf reads as ominous on the horizon at parking-lot scale
+- [ ] Accessibility visual alternatives included for all audio cues (jingle, key scrape, drone, record scratch, horns)
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme (tourist overconfidence vs. resigned fatalism) is clear throughout all assets
+- [ ] Easter eggs discoverable: ring box, "WORLD'S MOST PATIENT DAD" mug, "Reserved for next" polaroid slot, fine-print insurance exclusion
+- [ ] Mobile performance optimized (20-drop rain cap, 1-2 sheep, alpha-toggle flicker, static polaroids)
+- [ ] Touch zone sizing considered (44px minimum — rental menu rows, add-on icons, examine hotspots compliant)
+- [ ] Colorblind-friendly alternatives available where color codes meaning (letter-tagged key fobs, icon-shaped add-ons)
+- [ ] Social media viral potential maximized (Board of Shame framing, thousand-yard-stare composition)
+
+---
+
 ## ✅ Validation Status
 
 | Requirement | Status |
@@ -405,6 +577,10 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 | No Crypto Elements | ✅ PASS |
 | Mobile Optimization | ✅ PASS |
 | Seedy Underbelly | ✅ PASS (Mary's disappearance) |
+| Technical Feasibility | ✅ PASS (simple interior/exterior, fade transition) |
+| Mobile Performance Budget | ✅ PASS (60 FPS, 15 draw calls, 20MB) |
+| Accessibility Features | ✅ PASS (visual key-slide/bell cues, steady-light variants) |
+| Social Media Integration | ✅ PASS (viral moments identified) |
 
 ---
 

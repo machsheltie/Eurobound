@@ -294,7 +294,7 @@
     "related_couchsurf": {
       "unlocks_after": "fiaker_fiasco_path_a_complete",
       "location": "hans_jurgen_apartment",
-      "host_npc": "hans_jurgen_01"
+      "host_npc": "sinfonia_npc_hans_jurgen_01"
     }
   },
   
@@ -332,11 +332,11 @@
     ],
     "character_movements": [
       {
-        "npc": "hans_jurgen_01",
+        "npc": "sinfonia_npc_hans_jurgen_01",
         "behavior": "normally_here_moves_during_quest"
       },
       {
-        "npc": "gustav_horse_01",
+        "npc": "sinfonia_npc_gustav_horse_01",
         "behavior": "starts_here_flees_through_multiple_locations"
       }
     ],

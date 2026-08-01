@@ -3,9 +3,9 @@
   
   "npcs": [
     {
-      "npc_id": "viktor_novak_01",
-      "display_name": "Viktor",
-      "full_name": "Viktor Novák",
+      "npc_id": "jakub_novak_01",
+      "display_name": "Jakub",
+      "full_name": "Jakub 'Euro Ink' Novák",
       "npc_type": "service_provider",
       "role": "owner_sole_artist",
       "location_zone": "tattoo_station",
@@ -66,7 +66,7 @@
           "actual_result": "duck_with_scythe",
           "price_range": {"min": 50, "max": 100},
           "duration": "2_hours_game_time",
-          "description_viktor": "The famous orloj skeleton. Very meaningful. Very European.",
+          "description_jakub": "The famous orloj skeleton. Very meaningful. Very European.",
           "description_player": "(This will definitely not be a skeleton.)"
         },
         {
@@ -75,20 +75,20 @@
           "unlock_condition": "tattoo_acquired",
           "actual_result": "duck_with_scythe_variant",
           "price": 50,
-          "description_viktor": "Famous American design! Duck of death! Very popular now!"
+          "description_jakub": "Famous American design! Duck of death! Very popular now!"
         },
         {
           "service_id": "matching_friendship_duck",
           "display_name": "Matching Friendship Duck",
           "unlock_condition": "tattoo_acquired",
           "price": 40,
-          "description_viktor": "For your friends! Matching skeleton birds! Group rate!"
+          "description_jakub": "For your friends! Matching skeleton birds! Group rate!"
         },
         {
           "service_id": "touch_up",
           "display_name": "Touch-Up Service",
           "price": 25,
-          "description_viktor": "We fix other shop's mistakes. Sometimes."
+          "description_jakub": "We fix other shop's mistakes. Sometimes."
         }
       ],
       
@@ -110,7 +110,7 @@
       },
       
       "voice_direction": "Enthusiastic, confident, thick Eastern European accent, genuinely warm and proud",
-      "sprite_sheet": "viktor_artist.png"
+      "sprite_sheet": "jakub_artist.png"
     },
     
     {
@@ -132,7 +132,7 @@
       "personality": {
         "traits": [
           "perpetually_skeptical",
-          "tolerates_viktor",
+          "tolerates_jakub",
           "direct_with_customers",
           "secretly_amused"
         ],
@@ -140,12 +140,12 @@
       },
       
       "dialogue": {
-        "greeting": "You want tattoo? Viktor is ready. Always ready.",
-        "during_consultation": "*to Viktor, in Czech, subtitled* Another American. The crying one from the clock.",
+        "greeting": "You want tattoo? Jakub is ready. Always ready.",
+        "during_consultation": "*to Jakub, in Czech, subtitled* Another American. The crying one from the clock.",
         "on_price": "Cash only. Is better for everyone.",
         "on_receipt": "You want receipt? No? Good. Is better.",
         "on_quality": "He does good work. Usually.",
-        "on_viktor_pride": "*shrugging* Is what he does.",
+        "on_jakub_pride": "*shrugging* Is what he does.",
         "farewell": "Goodbye. Tell your friends. Or don't."
       },
       
@@ -155,12 +155,12 @@
   ],
   
   "npc_interactions": {
-    "viktor_marta_dynamic": {
-      "description": "Viktor is enthusiastic and oblivious; Marta is skeptical but supportive",
+    "jakub_marta_dynamic": {
+      "description": "Jakub is enthusiastic and oblivious; Marta is skeptical but supportive",
       "sample_exchange": {
-        "viktor": "Is my best work! Look at the detail!",
+        "jakub": "Is my best work! Look at the detail!",
         "marta": "*in Czech* It's a duck again.",
-        "viktor": "*not hearing* Customer loves it! See?"
+        "jakub": "*not hearing* Customer loves it! See?"
       }
     }
   }

@@ -14,20 +14,20 @@
     ],
     "audio_transitions": {
       "enter": "radio_swell_buzzing_stops_greeting",
-      "during_tattoo": "gun_buzzing_loop_viktor_humming",
+      "during_tattoo": "gun_buzzing_loop_jakub_humming",
       "exit": "radio_fades_neon_buzz_prominent"
     },
     "tattoo_process_audio": {
       "gun_start": "tattoo_gun_start.ogg",
       "gun_loop": "tattoo_gun_loop.ogg",
       "gun_stop": "tattoo_gun_stop.ogg",
-      "viktor_humming": "humming_euro_pop.ogg",
+      "jakub_humming": "humming_euro_pop.ogg",
       "pain_reaction": "muffled_grunt.ogg",
       "flinch_sound": "sudden_movement.ogg"
     },
     "comedy_stingers": {
       "duck_reveal": "record_scratch_internal.ogg",
-      "viktor_pride": "triumphant_horn_ironic.ogg",
+      "jakub_pride": "triumphant_horn_ironic.ogg",
       "its_a_duck_line": "sad_trombone_subtle.ogg",
       "lord_pilsner_denial": "heroic_swell_his_perspective.ogg",
       "payment": "cash_register_satisfied_grunt.ogg"
@@ -66,32 +66,32 @@
     "morning": {
       "open": false,
       "lighting": "natural_through_window",
-      "viktor_status": "sleeping_in_back_room"
+      "jakub_status": "sleeping_in_back_room"
     },
     "afternoon": {
       "open": true,
       "lighting": "fluorescent_harsh",
       "activity_level": "slow",
-      "viktor_status": "available_eager"
+      "jakub_status": "available_eager"
     },
     "evening": {
       "open": true,
       "lighting": "fluorescent_plus_neon",
       "activity_level": "moderate",
-      "viktor_status": "warmed_up"
+      "jakub_status": "warmed_up"
     },
     "night": {
       "open": true,
       "lighting": "neon_dominant_fluorescent_flickering",
       "activity_level": "peak",
-      "viktor_status": "in_his_element",
+      "jakub_status": "in_his_element",
       "special_notes": "Post-club tourists make impulsive decisions"
     },
     "late_night": {
       "open": true,
       "lighting": "neon_only_fluorescent_off",
       "activity_level": "drunk_tourists",
-      "viktor_status": "still_enthusiastic",
+      "jakub_status": "still_enthusiastic",
       "closes_at": "02:00"
     }
   },
@@ -116,7 +116,7 @@
     },
     "cigarette_smoke": {
       "type": "periodic",
-      "source": "back_room_or_viktor",
+      "source": "back_room_or_jakub",
       "trigger": "random_interval",
       "color": "#C0C0C0",
       "drift_direction": "toward_vent"
@@ -202,7 +202,7 @@
     "dynamic_details": [
       {
         "element": "fresh_duck_on_flash_wall",
-        "description": "After LP's tattoo, Viktor adds 'Lord Pilsner Special' to flash art",
+        "description": "After LP's tattoo, Jakub adds 'Lord Pilsner Special' to flash art",
         "visibility": "after_tattoo_acquired"
       },
       {

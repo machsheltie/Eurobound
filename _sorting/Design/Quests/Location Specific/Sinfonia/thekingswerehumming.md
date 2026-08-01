@@ -38,7 +38,7 @@
 
 ### Quest Initiation
 
-**Trigger:** `blacktie_event_kings_were_humming_01` — the party approaches Aaron's Corner Table inside The Black-Tie Backroom with entry conditions met (Viktor's attire and stat check passed, €500 collateral posted at the deposit window). Fires **once per save, ever.**
+**Trigger:** `blacktie_event_kings_were_humming_01` — the party approaches Aaron's Corner Table inside The Black-Tie Backroom with entry conditions met (Anton's attire and stat check passed, €500 collateral posted at the deposit window). Fires **once per save, ever.**
 
 **Location:** `aarons_corner_table`, a named zone of the Backroom main floor. Felt-covered corner table, its own low pendant lamp, no house chip rail, no dealer plaque, no bet-placement markings, set off the traffic flow. The player has to choose to walk over. The bros make that choice for the party.
 
@@ -46,11 +46,11 @@
 
 ---
 
-### The Door — Pre-Beat (Viktor)
+### The Door — Pre-Beat (Anton)
 
-*Two floors and one staircase upstream, before any of this. Viktor works the bottom of the stairs. He assesses the party the way he assesses everyone, which is completely.*
+*Two floors and one staircase upstream, before any of this. Anton works the bottom of the stairs. He assesses the party the way he assesses everyone, which is completely.*
 
-**Viktor the Doorman** (`sinfonia_npc_viktor_doorman_01`), *if the party clears attire, stats, and collateral:*
+**Anton the Doorman** (`sinfonia_npc_anton_doorman_01`), *if the party clears attire, stats, and collateral:*
 > "Your attire is... acceptable. Your collateral is... sufficient. Your chances of leaving with it are... statistically improbable. Welcome."
 
 **Lord Pilsner:** *already past him* "Heard the first part."
@@ -61,9 +61,9 @@
 
 **Lord Pilsner:** "€500 COLLATERAL?! That's... that's a lot of döner."
 
-**Viktor:** "It's also the minimum. Döner is not accepted."
+**Anton:** "It's also the minimum. Döner is not accepted."
 
-*The party is turned around at the bottom of the stairs. Viktor does not raise his voice, does not escalate, and does not explain the policy a second time. The Backroom does not open. **The encounter cannot fire underfunded** — a bounced party never reaches the main floor, never sees the corner table, and Aaron never learns that anyone came by, because nobody has ever told him one thing about the door.*
+*The party is turned around at the bottom of the stairs. Anton does not raise his voice, does not escalate, and does not explain the policy a second time. The Backroom does not open. **The encounter cannot fire underfunded** — a bounced party never reaches the main floor, never sees the corner table, and Aaron never learns that anyone came by, because nobody has ever told him one thing about the door.*
 
 ---
 
@@ -285,7 +285,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 | **What is at risk** | The €500 posted at the deposit window as house chips, in full |
 | **What is not at risk** | Every coin of gold above €500. It is not in the room. It cannot be reached by this scene, at any beat, by any pick |
 | **Can the party post more?** | No. The collateral is a fixed door amount and the encounter reads that amount, not the party's wallet |
-| **Underfunded parties** | Bounced by Viktor upstream (see pre-beat). The encounter cannot fire |
+| **Underfunded parties** | Bounced by Anton upstream (see pre-beat). The encounter cannot fire |
 | **Partial loss** | Does not exist. There is no path on which any portion of the collateral survives |
 | **Refund at the cage** | None. The deposit receipt is voided during Beat 6 |
 
@@ -316,7 +316,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 ### NPC Callbacks
 
 - **Aaron, every subsequent visit** *(rotating ambient — full nine-line rotation in his profile)*: "Hey! The felt guys. How's the felt treating you?" — never escalates, never pities, never resolves into an explanation of anything.
-- **Viktor at the door, next visit:** *the same assessment, at the same length, in the same order, with no reference to the previous evening* "Your attire is... acceptable. Your collateral is... sufficient." **Lord Pilsner:** "We're known here now." **Viktor:** "Yes."
+- **Anton at the door, next visit:** *the same assessment, at the same length, in the same order, with no reference to the previous evening* "Your attire is... acceptable. Your collateral is... sufficient." **Lord Pilsner:** "We're known here now." **Anton:** "Yes."
 - **Siegfried at the coat check** (`sinfonia_npc_siegfried_coatcheck_01`): *hands the coats back, sees the carton sticking out of a jacket pocket, says nothing about it, and puts two gold-wrapper wafer bars on the counter* "For the walk. It's cold."
 - **Madame Karten** (`sinfonia_npc_madame_karten_01`), *floor-side, warm as a grandmother, steering as a shark*: "Darling. There are three tables free tonight." *(She is steering them onto the house's real games, which have a documented edge. She never confesses and never winks, here or anywhere.)*
 - **Grounds For Concern, Kaffeehaus Row** *(if the party orders anything after the Backroom)*: **Barista:** "Five euro." **Chadwick:** *holding up the aluminum token* "Do you take—" **Barista:** "No."
@@ -365,7 +365,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 
 ### Prerequisites
 - **The Black-Tie Backroom must be discovered and entered** — via the Bassline Opera House backstage door, a Café Existenz regular's hint, or Kaffeehaus Row gossip.
-- **Viktor's door check passed:** Black-Tie Attire equipped (Haute Couture Haberdashery) **or** `item_members_card`; **+3 Charm or +3 Bravado**; **€500 gold** posted as collateral.
+- **Anton's door check passed:** Black-Tie Attire equipped (Haute Couture Haberdashery) **or** `item_members_card`; **+3 Charm or +3 Bravado**; **€500 gold** posted as collateral.
 - **No quest prerequisites.** No prior Sinfonia sidequest is required and none is recommended. The scene works best as the party's first act inside the Backroom, before they have played a single real hand.
 
 ### Unlocks
@@ -503,7 +503,7 @@ He eats it anyway. Doug deals the next hand.
 
 ## 📝 Development Notes
 
-- **Verbatim lines.** Aaron's five locked lines (the vibes speech, "The kings were humming, man. They wanted to stretch their legs.", the candy-smokes grant, the NFT grant, the exit line), plus Chadwick's read, Lord Pilsner's shove line, and Viktor's "Döner is not accepted." ship **byte-identical** across this file, `aaron_the_unflappable.md`, and the Backroom's interactions JSON. Connective dialogue around them has craft latitude; those do not.
+- **Verbatim lines.** Aaron's five locked lines (the vibes speech, "The kings were humming, man. They wanted to stretch their legs.", the candy-smokes grant, the NFT grant, the exit line), plus Chadwick's read, Lord Pilsner's shove line, and Anton's "Döner is not accepted." ship **byte-identical** across this file, `aaron_the_unflappable.md`, and the Backroom's interactions JSON. Connective dialogue around them has craft latitude; those do not.
 - **No skip on the picks, no timer on the picks.** The player should be able to read all three options. They are the joke.
 - **Pick weighting is not tracked.** No analytics-driven "most chosen line" content, no achievement for seeing all nine combinations, no dialogue later that references which line was picked.
 - **Audio:** the CRUNCH cue is on the critical path and must be mixed above room ambience so it lands in the gap at Beat 1. No sting under the reveal line. No music change at any point in the scene — the string quartet plays the same piece from Beat 1 to Beat 9 and does not resolve it.
@@ -514,7 +514,7 @@ He eats it anyway. Doug deals the next hand.
 ### Engine Requirements
 
 - **Fixed-stake collateral grant/removal.** The Backroom's door writes a **fixed-amount** house-chip deposit of exactly €500 at entry (`blacktie_collateral_posted = 500`), backed by gold removed from the party wallet at the deposit window. Beat 6 **consumes the deposit in full** and voids the receipt: the deposit is set to 0 and **no gold is returned at exit**. The scene reads the deposit value, never the wallet — it must be impossible for any wallet balance above €500 to be reachable from this event, by any code path.
-- **Underfunded gate is upstream.** Viktor's check (`gold >= 500` at the bottom of the stairs) is the only gate. `blacktie_event_kings_were_humming_01` has no wallet condition of its own and must never be reachable with `blacktie_collateral_posted != 500`.
+- **Underfunded gate is upstream.** Anton's check (`gold >= 500` at the bottom of the stairs) is the only gate. `blacktie_event_kings_were_humming_01` has no wallet condition of its own and must never be reachable with `blacktie_collateral_posted != 500`.
 - **Scene-triggered item grants.** `item_candy_smokes` and `item_tractor_nft` are granted at Beat 8 by the scene itself, in that order, party-scoped and permanent. Neither exists in any vendor table, loot table, house inventory, or drop list anywhere in the game; the scene is the sole source of both. Grants are idempotent — re-entry cannot duplicate them (see the one-time flag).
 - **One-time-scene flag + ambient-Aaron state.** Persist a **per-NPC boolean**, `encounter_scene_completed[<npc_id>]`, set the first time that NPC's scripted encounter resolves and never cleared thereafter — the same shape and semantics as the Chronicles payload flag `chronicles_entry_completed[<npc_id>]` established in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`. This quest requires exactly one: `encounter_scene_completed[sinfonia_npc_aaron_unflappable_01]`.
   - **Written by** the scene's own resolution at Beat 9, not by quest acceptance and not by the door.

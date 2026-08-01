@@ -3,7 +3,7 @@
   
   "npcs": [
     {
-      "npc_id": "hans_jurgen_01",
+      "npc_id": "sinfonia_npc_hans_jurgen_01",
       "display_name": "Hans-Jürgen Pferdmann",
       "role": "quest_giver_fiaker_driver",
       "location_default": "fiaker_queue_spot_3",
@@ -79,7 +79,7 @@
         "panic_initial": "MEIN PFERD! HE IS GONE! GUSTAV! GUSTAAAAAV!",
         "appeal_to_bros": "You! Americans! You are strong, yes? Fast? You help me catch my horse, I give you discount ride!",
         "about_gustav": "Gustav is... the better driver. He knows the routes. He knows when to stop for photos. I just... hold the reins and drink.",
-        "confession": "Fifteen years we work together. He is my only friend. My wife left. My children do not call. But Gustav... Gustav is there. Every morning. Until today.",
+        "confession": "Sixteen years we work together. He is my only friend. My wife left. My children do not call. But Gustav... Gustav is there. Every morning. Until today.",
         "reunion": "GUSTAV! MY FRIEND!",
         "philosophical": "Maybe... maybe he deserves to be free. But also the carriage insurance is in my name, so he has to come back.",
         "gratitude": "You Americans... you are very strange. But you are good strange. Like Gustav."
@@ -91,7 +91,7 @@
     },
     
     {
-      "npc_id": "gustav_horse_01",
+      "npc_id": "sinfonia_npc_gustav_horse_01",
       "display_name": "Gustav",
       "role": "quest_target_philosophical_horse",
       "location_default": "fiaker_carriage_spot_3",
@@ -103,8 +103,8 @@
       
       "appearance": {
         "type": "lipizzan_draft_horse",
-        "color": "dark_bay",
-        "markings": "white_blaze_forehead",
+        "color": "white_grey",
+        "markings": "dappled_grey",
         "build": "muscular_tired_looking",
         "expression_default": "permanently_unimpressed"
       },

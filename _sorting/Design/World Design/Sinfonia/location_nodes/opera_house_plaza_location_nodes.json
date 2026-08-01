@@ -14,8 +14,8 @@
           "entry_point: any_street_approach",
           "landmark: neptune_fountain",
           "landmark: opera_house_facade",
-          "quest_npc: hans_jurgen_01",
-          "quest_npc: gustav_horse_01",
+          "quest_npc: sinfonia_npc_hans_jurgen_01",
+          "quest_npc: sinfonia_npc_gustav_horse_01",
           "npc_group: fiaker_driver_collective",
           "npc_group: opera_patrons",
           "shop_node: cafe_terrace",
@@ -52,7 +52,7 @@
       "interior": {
         "theme": "Traditional tourism meets dysfunction",
         "features": [
-          "quest_npc: hans_jurgen_01",
+          "quest_npc: sinfonia_npc_hans_jurgen_01",
           "npc_group: fiaker_driver_collective",
           "readable: fiaker_queue_sign",
           "observable: hans_jurgen_license_photo",

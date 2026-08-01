@@ -321,9 +321,9 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 
 ## NPCs & Characters
 
-### The Doorman — Viktor
-- **NPC ID**: `sinfonia_npc_viktor_doorman_01`
-- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/viktor_the_doorman.md`
+### The Doorman — Anton
+- **NPC ID**: `sinfonia_npc_anton_doorman_01`
+- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/anton_the_doorman.md`
 - **Role**: Entry verification, stat check, gold collection
 - **Appearance**: Built like a bouncer, dressed like a butler
 - **Personality**: Politely threatening
@@ -383,7 +383,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 
 **At the Door**:
 - **Lord Pilsner**: "€500 COLLATERAL?! That's... that's a lot of döner."
-- **Viktor**: "It's also the minimum. Döner is not accepted."
+- **Anton**: "It's also the minimum. Döner is not accepted."
 - **Chadwick**: "We're COMMITTED now! This is CONTENT! 'Chadwick Gambles with the ELITE'!"
 
 **First Game**:
@@ -417,7 +417,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - **"The Card Shark"**: Discover and defeat Herr Falsch
 - **"The Reformed Gambler"**: Siegfried's backstory questline
 - **"Baroness' Vault"**: Access after defeating Maestro Vice von Strauss (late-game)
-- **"The Kings Were Humming"** (`sinfonia_sidequest_the_kings_were_humming_01`): One-time scene at `aarons_corner_table`, triggered by `blacktie_event_kings_were_humming_01` on approach with entry conditions met. Requires the €500 door collateral to be on deposit (under-funded parties never get past Viktor). Quest file: `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
+- **"The Kings Were Humming"** (`sinfonia_sidequest_the_kings_were_humming_01`): One-time scene at `aarons_corner_table`, triggered by `blacktie_event_kings_were_humming_01` on approach with entry conditions met. Requires the €500 door collateral to be on deposit (under-funded parties never get past Anton). Quest file: `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
 
 ### Item Registrations
 **Scene-granted (not vendor stock, not house inventory — obtainable only from `blacktie_event_kings_were_humming_01`)**:
@@ -454,7 +454,7 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
 - **Comedy**: Sad trombone on losses (internal, not audible in-world)
 
 ### Character Audio
-- **Viktor**: Deep, measured, vaguely threatening
+- **Anton**: Deep, measured, vaguely threatening
 - **Madame Karten**: Warm grandmother voice with predator edge
 - **Herr Falsch**: Smooth, confident, hints of amusement
 - **NPCs**: Various relief levels in voice (nervous to composed)
@@ -529,7 +529,7 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
 - aarons_corner_table.png - 320x256 - Corner table zone (distinct from playable tables)
 
 ### Character Sprites (11 PNGs)
-- viktor_doorman.png - 96x128 - Entrance guardian
+- anton_doorman.png - 96x128 - Entrance guardian
 - madame_karten.png - 64x96 - Pit boss
 - herr_falsch.png - 128x192 - Card shark boss
 - nervous_noble.png - 64x96 - Easy opponent

@@ -347,7 +347,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 
 ### Cross-Location Dependencies
 - **Velvet Curtain Club**: Outfit affects bouncer interactions, NPC treatment
-- **The Bohemian Trap**: Certain looks affect Viktor's pitch
+- **The Bohemian Trap**: Certain looks affect Emil's pitch
 - **Hostel Midnight Checkout**: Other travelers react to transformation
 - **Shadow Exchange**: Some style-based negotiation bonuses
 

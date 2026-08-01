@@ -268,7 +268,7 @@ If player tries to buy prizes directly:
 
 ### Circus NPCs (Nearby)
 
-**The Game Barker (Viktor)**
+**Game Barker Ludvík**
 - **Composition**: The guy running the rigged games
 - **Behavior**: Enthusiastic pitching, then watching people lose
 - **Function**: Source of the tickets, feeder to the booth
@@ -415,7 +415,7 @@ If player tries to buy prizes directly:
 - yolanda_counting.png - 64x96 - Ticket assessment
 - yolanda_presenting.png - 64x96 - Prize handoff
 - yolanda_almost_smile.png - 64x96 - Rare achievement
-- viktor_barker.png - 64x96 - Game runner
+- ludvik_barker.png - 64x96 - Game runner
 - recent_winner.png - 64x96 - Processing disappointment
 - proud_idiot.png - 64x96 - Unironic joy
 - hamstradamus_cameo.png - 48x48 - Prophetic pass-by

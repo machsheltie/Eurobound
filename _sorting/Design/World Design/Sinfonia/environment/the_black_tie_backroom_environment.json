@@ -304,7 +304,7 @@
       {"trigger": "kings_were_humming_complete", "effect": "aaron_permanent_ambient_at_corner_table"},
       {"trigger": "herr_falsch_defeated", "effect": "marked_cards_left_on_the_private_box_table"},
       {"trigger": "high_roller_achieved", "effect": "velvet_rope_stays_open"},
-      {"trigger": "banned", "effect": "viktor_blocks_entry_for_24h"},
+      {"trigger": "banned", "effect": "anton_blocks_entry_for_24h"},
       {"trigger": "siegfried_couchsurf_complete", "effect": "house_edge_permanently_reduced"}
     ]
   }

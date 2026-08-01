@@ -2,17 +2,18 @@
 
 *Artist Reference Document for Fiaker Fiasco's Emotional Finale*
 
-**Location ID**: `sinfonia_stadtpark_gustavs_refuge_01`  
+## 📋 Overview
+The Stadtpark at night is a moonlit sanctuary turned dramatic stage — ancient trees, Victorian lampposts, a gilded Johann Strauss statue, and at the center a single exhausted white horse making his last stand. This document specifies every sprite sheet for the Fiaker Fiasco finale, where a bag of American candy, a runaway Austrian horse, and €2,340 in property damage somehow become the most emotionally resonant moment in the entire game.
+
+**Location ID:** `sinfonia_stadtpark_gustavs_refuge_01`
+**Theme:** Emotional resolution amid absurdity — freedom versus responsibility, with high Viennese art (Strauss, eternally gilded) watching Americans negotiate with candy
+**Zone:** Imperial Park District
+**Hours:** Always accessible (24 hours); quest finale plays at night
+**Primary Function:** Public park / quest resolution — Fiaker Fiasco phase-4 finale with four resolution paths (Return / Retire / Escape / Bail), Skittles trust mechanic, damage settlement negotiation
+
 **Priority**: HIGH (Quest Resolution, Emotional Climax, Multiple Endings)  
 **Total Sheets Required**: 10  
 **Mobile Optimization**: Target 60 FPS on iPhone 8+
-
----
-
-## Art Direction Summary
-
-### Visual Identity
-The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancient trees casting long shadows, Victorian lampposts creating pools of golden light, and at the center, a single white horse making his last stand. This is where absurdist comedy meets genuine emotion.
 
 ### Key Visual Themes
 - **Moonlit Drama**: Cool blue moonlight contrasting warm lamplight
@@ -20,7 +21,9 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 - **Emotional Weight**: The horse should look genuinely tired, defiant, sympathetic
 - **Satirical Backdrop**: Johann Strauss watches cultural chaos unfold
 
-### Color Palette
+---
+
+## 🎨 Color Palette
 
 | Color | Hex | Usage |
 |-------|-----|-------|
@@ -34,7 +37,28 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 1: Park Tileset
+## 📁 File Structure
+```
+assets/sprites/locations/sinfonia/stadtpark_gustavs_refuge/
+├── environment/
+│   ├── stadtpark_tileset.png
+│   ├── johann_strauss_statue.png
+│   └── ornamental_pond.png
+├── npcs/
+│   ├── npc_gustav_horse.png
+│   ├── npc_hans_jurgen_stadtpark.png
+│   ├── npc_pigeon_lady.png
+│   ├── aggressive_swans.png
+│   └── stadtpark_ambient_npcs.png
+├── objects/
+│   └── item_skittles.png
+└── effects/
+    └── stadtpark_effects.png
+```
+
+---
+
+## 🌳 Sprite Sheet 1: Park Tileset
 **Filename**: `stadtpark_tileset.png`  
 **Dimensions**: 1024 × 768 pixels  
 **Tile Size**: 32 × 32 pixels
@@ -72,7 +96,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 2: Johann Strauss Monument
+## 🎻 Sprite Sheet 2: Johann Strauss Monument
 **Filename**: `johann_strauss_statue.png`  
 **Dimensions**: 128 × 192 pixels
 
@@ -91,7 +115,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 3: Ornamental Pond Tileset
+## 💧 Sprite Sheet 3: Ornamental Pond Tileset
 **Filename**: `ornamental_pond.png`  
 **Dimensions**: 256 × 256 pixels
 
@@ -109,13 +133,13 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 4: Gustav the Horse (Quest Finale State)
+## 🐴 Sprite Sheet 4: Gustav the Horse (Quest Finale State)
 **Filename**: `npc_gustav_horse.png`  
 **Dimensions**: 512 × 384 pixels  
 **Sprite Size**: 64 × 64 pixels (larger character for drama)
 
 ### Character Design
-- **Breed**: Lipizzan (white/grey coat)
+- **Breed**: Lipizzan (white/grey coat) — Spanish Riding School reject
 - **Age**: Visible age—16 years of carriage service shows
 - **Condition**: Exhausted but defiant
 - **Costume**: Tattered opera cape still attached, café feathers in mane
@@ -172,7 +196,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 5: Hans-Jürgen (Stadtpark State)
+## 🎩 Sprite Sheet 5: Hans-Jürgen (Stadtpark State)
 **Filename**: `npc_hans_jurgen_stadtpark.png`  
 **Dimensions**: 288 × 384 pixels  
 **Sprite Size**: 48 × 64 pixels
@@ -214,7 +238,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 6: Pigeon Lady (Park Appearance)
+## 🕊️ Sprite Sheet 6: Pigeon Lady (Park Appearance)
 **Filename**: `npc_pigeon_lady.png`  
 **Dimensions**: 192 × 192 pixels  
 **Sprite Size**: 48 × 64 pixels
@@ -242,7 +266,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 7: Aggressive Swans
+## 🦢 Sprite Sheet 7: Aggressive Swans
 **Filename**: `aggressive_swans.png`  
 **Dimensions**: 192 × 128 pixels  
 **Sprite Size**: 48 × 32 pixels
@@ -258,7 +282,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 8: Ambient NPCs
+## 👥 Sprite Sheet 8: Ambient NPCs
 **Filename**: `stadtpark_ambient_npcs.png`  
 **Dimensions**: 288 × 256 pixels
 
@@ -284,7 +308,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 9: Skittles Item
+## 🌈 Sprite Sheet 9: Skittles Item
 **Filename**: `item_skittles.png`  
 **Dimensions**: 128 × 64 pixels
 
@@ -299,7 +323,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## SHEET 10: Effects and Particles
+## ✨ Sprite Sheet 10: Effects and Particles
 **Filename**: `stadtpark_effects.png`  
 **Dimensions**: 256 × 256 pixels
 
@@ -313,7 +337,209 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## Lighting Requirements
+## 🎬 Animation Specifications
+
+### General Animation Guidelines (all sheets)
+- **Idle Loops**: 2-4 frames, 0.5-1 FPS
+- **Emotional Animations**: 2-4 frames, 1-2 FPS
+- **Action Animations**: 4-6 frames, 3-8 FPS
+- **Gustav Focus**: Larger sprite, more frames for emotional range
+
+### Gustav Defiant Stand:
+- **Duration:** 4 second cycle
+- **Frames:** 2
+- **Pattern:** Slow loop with breath steam particle overlay
+- **Trigger:** Scene opening; default finale idle
+- **Purpose:** The last-stand image — exhausted dignity under a moonbeam
+- **Audio Sync:** Slow breathing layer; distant city hush
+- **Mobile Optimization:** None needed
+
+### Gustav Trust Sequence (Ears Perk → Cautious Approach → Eating Skittles → Nuzzle):
+- **Duration:** ~0.5s / 2.0s / 1.3s / 1.5s respectively
+- **Frames:** 2 / 4 / 4 / 3
+- **Pattern:** State advance per Skittles-mechanic phase (attention → approach → eats from hand → trust earned)
+- **Trigger:** Player Skittles offering phases 1–4 (or Papageno ally alternative)
+- **Purpose:** The entire emotional arc of the quest, rendered in a horse's ears
+- **Audio Sync:** Bag crinkle on offer; soft crunch on eating; gentle string swell on nuzzle
+- **Mobile Optimization:** None needed — this is the scene the game is protecting
+
+### Gustav Bolting (Path C):
+- **Duration:** 0.75 second cycle
+- **Frames:** 6
+- **Pattern:** Full gallop loop, cape streaming, exits into darkness
+- **Trigger:** No Skittles + aggressive approach
+- **Purpose:** The failure ending — beautiful and gone
+- **Audio Sync:** Galloping hoofbeats fading out
+- **Mobile Optimization:** None needed (one-shot exit)
+
+### Gustav Trot Into Moonlight (Path B):
+- **Duration:** 1.5 second cycle
+- **Frames:** 6
+- **Pattern:** Majestic loop toward the moonbeam, head high
+- **Trigger:** Skittles trust + freedom dialogue
+- **Purpose:** The liberation ending; screenshot bait by design
+- **Audio Sync:** Single warm waltz phrase (Strauss watching approvingly)
+- **Mobile Optimization:** None needed
+
+### Hans-Jürgen Emotional Arc (Pleading → Crying → Relief or Goodbye):
+- **Duration:** 2.0s / 2.0s / 2.0s / 1.5s per state
+- **Frames:** 4 / 2 / 4 / 3
+- **Pattern:** Dialogue-driven state advance; Relief (Path A) and Goodbye (Path B) are mutually exclusive
+- **Trigger:** Resolution-path selection
+- **Purpose:** A drunk carriage driver becomes the most sincere man in Sinfonia
+- **Audio Sync:** Muffled sobs on Crying; relieved laugh on Reunion
+- **Mobile Optimization:** None needed
+
+### Swan Attack:
+- **Duration:** ~0.8 seconds
+- **Frames:** 4
+- **Pattern:** Alert → attack burst, returns to swimming
+- **Trigger:** Player enters swan zone at pond edge
+- **Purpose:** Deceptive peace gag; the park's actual apex predators
+- **Audio Sync:** Hiss on wings-spread frame
+- **Mobile Optimization:** Cap at 2 concurrent attacking swans
+
+### Ambient Loops (Leaves / Lamplight / Moonbeam / Statue Shimmer):
+- **Duration:** Leaves ~1.5s drift; lamplight and moonbeam 2-frame subtle pulses at 0.5 FPS; statue shimmer 4s cycle
+- **Frames:** 6 / 2 / 2 / 2
+- **Pattern:** Constant gentle loops
+- **Trigger:** Constant (night state)
+- **Purpose:** Moonlit sanctuary atmosphere; nothing moves fast except emotions
+- **Audio Sync:** Cricket chorus, distant city layer
+- **Mobile Optimization:** Leaves reduced to 8 concurrent; moonbeam static on low-end
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Gustav outline overlay | set at sheet layout | 64×64 | High-contrast silhouette of the white horse against moonlit grass |
+| Skittles offering highlight | set at sheet layout | 32×32 | Bold ring on the interactable candy hand-off zone |
+| Swan zone warning outline | set at sheet layout | 48×32 | Enhanced visibility boundary of the pond's hidden danger area |
+| Path/lamppost edge markers | set at sheet layout | 32×96 | Contrast-boosted walkway edges for the dark night scene |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Static autumn leaves | set at sheet layout | 16×16 | Ground scatter only, no drifting particles |
+| Steady lamplight | set at sheet layout | 64×64 | Non-pulsing glow variant |
+| Static moonbeam | set at sheet layout | 96×128 | Fixed light shaft, no shimmer |
+| Reduced bolting shake | set at sheet layout | full scene | Path C camera shake replaced by fade |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Breath indicator | set at sheet layout | 32×32 | Steam puffs double as the visual for Gustav's breathing audio |
+| Bag crinkle sparkle | set at sheet layout | 16×16 | Rainbow glint when the Skittles bag audio plays |
+| Swan hiss burst | set at sheet layout | 24×24 | Jagged warning glyph on attack hiss |
+| String swell glow | set at sheet layout | 48×48 | Soft radiance on Gustav during the nuzzle music cue |
+
+### Colorblind Considerations:
+- Skittles read by shape and in-palm count, and the bag by its lettering, not color alone
+- Resolution-path lighting shifts (warm/cool/dark) are paired with distinct character poses per path
+- Touch zones minimum 44px for Skittles offering, Gustav approach, and dialogue choices
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); Gustav's sheet needs ASTC 4x4 — his expressions carry the finale
+- **Android:** ETC2 with alpha
+- **Fallback:** PNG high-quality for Gustav and the Strauss statue (screenshot critical)
+
+### Texture Atlases:
+| Atlas | Contents | Max Size |
+|-------|----------|----------|
+| stadtpark_environment | park tileset, statue, pond | 1024x1024 |
+| stadtpark_characters | Gustav, Hans-Jürgen, Pigeon Lady, swans, ambient NPCs | 1024x1024 |
+| stadtpark_effects_items | effects, Skittles | 512x512 |
+
+*(Maximum 4 atlases at 1024px per original spec; max atlas size 2048x2048 for mobile GPU compatibility.)*
+
+### LOD Levels:
+| Level | Description |
+|-------|-------------|
+| High | Full leaf drift, breath steam, moonbeam shimmer, 8 lamp pools, statue shimmer |
+| Medium | 8 leaves, breath steam kept (emotionally load-bearing), static moonbeam, 4 lamp pools |
+| Low | Static ambience, breath steam only, static lighting |
+
+### Performance Targets:
+- **Target FPS:** 60
+- **Max Draw Calls:** Under 45
+- **Memory Footprint:** Under 45 MB
+- **Particle Limit:** 60 (leaves + steam + fountain + feathers combined)
+
+### Performance Notes:
+- Night scene is light on geometry; budget goes to Gustav's frame count — protect it
+- Resolution-path lighting variants are preset swaps, not runtime shader work
+- Ambient NPCs (philosopher, couple, tourist) are low-FPS loops; never exceed 2 FPS
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- TileMap for park grounds; AnimatedSprite2D for Gustav/Hans-Jürgen emotional states
+- CPUParticles2D (not GPU) for leaves, breath steam, fountain spray, pigeon feathers
+- Quest-phase state machine: pre_quest → quest_active → post_quest_a/b/c/d selects sprite sets and lighting presets
+- Skittles mechanic runs a 4-phase trust-counter gating Gustav's row transitions
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Gustav breathing (rows 0–1) | Slow breath layer | Steam puff per exhale frame |
+| Skittles offering | Bag crinkle | On bag-open state |
+| Eating Skittles | Soft crunch | Per eating frame 2 |
+| Nuzzle | Gentle string swell | On nuzzle frame 1 |
+| Bolting (Path C) | Galloping hoofbeats, fading | Loop start, fade with exit |
+| Swan attack | Hiss | On wings-spread frame |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Fiaker Fiasco phase-4 (finale) | Gustav all rows, Hans-Jürgen all rows, Skittles states | Entry from opera side-door; resolution selects Path A/B/C/D |
+| Path A — Gustav Returns | Nuzzle, Relief/Reunion, resigned return hand-off | Debt −€500 (insurance), unlocks Fiaker fast travel |
+| Path B — Gustav Retires | Trot Into Moonlight, Accepting Goodbye | Gustav becomes permanent park NPC with daily buff |
+| Path C — Gustav Escapes | Bolting, Hans-Jürgen Crying | Debt +€1,000, permanent guilt marker |
+| Path D — Bros Bail | Scene unchanged, cold lighting preset | Quest fails, debt +€500, Coward status |
+| Papageno ally alternative | Papageno sprite (from opera house) | Approach possible without Skittles |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| The Bassline Opera House | Quest entry point; Hans-Jürgen base sprite (more disheveled); Director may pursue in fury state; Papageno if ally path | Opera side-door path, night transition |
+| Opera House Plaza | Pigeon Lady base sprite (same character); Gustav returns to Fiaker queue on Path A | Post-quest state hand-off |
+| Café Sachertorte | Debt connection (damage total includes €340 café) | Damage counter UI carries over |
+| The Moderato Pub | Hans-Jürgen post-quest sad-drunk state (Path C) | NPC relocation, no shared sprites |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "Moonlit sanctuary turned dramatic stage" — ancient trees casting long shadows, Victorian lampposts creating pools of golden light, and at the center, a single white horse making his last stand. This is where absurdist comedy meets genuine emotion.
+- **Color Mood:** Cool blue moonlight against warm gold lamplight; the palette argues freedom versus responsibility before the dialogue does
+- **Lighting:** Night ambient with lamppost pools and a moonbeam reserved for Gustav (see Lighting Requirements below); each resolution path gets its own grade
+- **Texture:** Manicured hedges and gravel against trampled flowerbeds — order interrupted by one determined horse
+
+### Environmental Storytelling:
+- Trampled flowerbed tiles trace Gustav's exact route into the park
+- The gilded Strauss statue gleams over the whole negotiation, serenely indifferent — high art as unhelpful witness
+- Sleeping tourist, oblivious couple, and €1 philosopher establish that Sinfonia's absurdity continues even at the emotional climax
+- Sleeping swans near the pond edge: deceptively peaceful, genuinely dangerous
+
+### Character Integration Notes:
+- Gustav is the emotional core: larger sprite, more frames, expressions conveying 16 years of service — he is a character, not a cartoon horse
+- Hans-Jürgen's dishevelment must visibly exceed his opera-house state; the halter prop stays in hand until the resolution
+- Pigeon Lady renders identically to her Plaza appearance — continuity is the joke
+
+---
+
+## 💡 Lighting Requirements
 
 ### Nighttime Lighting
 - **Ambient**: Cool blue (#2C3E50), 30% intensity
@@ -329,9 +555,9 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## Social Media Viral Moments
+## 🎯 Social Media Viral Potential
 
-### Key Screenshot Opportunities
+### Screenshot-Worthy Moments:
 1. **Gustav's Defiant Stand**: Moonlit horse with cape, steam breath
 2. **Skittles Diplomacy**: American candy held out to Austrian horse
 3. **Hans-Jürgen's Breakdown**: Emotional German man and his horse
@@ -339,7 +565,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 5. **Trotting Into Moonlight**: Freedom scene (Path B)
 6. **Strauss Watching**: Statue backdrop to chaos
 
-### Quote-Worthy Visual Moments
+### Quote Potential:
 - "Taste the Rainbow" bag held toward horse
 - Pigeon Lady surrounded by birds at night
 - Philosopher offering wisdom for €1
@@ -347,46 +573,92 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 ---
 
-## Technical Specifications
+## 📋 Required PNG Files (10 Total)
 
-### File Format
-- **Format**: PNG-24 with alpha transparency
-- **Color Space**: sRGB
-- **Resolution**: 72 DPI
-- **Compression**: Lossless
-- **Naming**: snake_case
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | stadtpark_tileset.png | 1024x768 |
+| 2 | johann_strauss_statue.png | 128x192 |
+| 3 | ornamental_pond.png | 256x256 |
+| 4 | npc_gustav_horse.png | 512x384 |
+| 5 | npc_hans_jurgen_stadtpark.png | 288x384 |
+| 6 | npc_pigeon_lady.png | 192x192 |
+| 7 | aggressive_swans.png | 192x128 |
+| 8 | stadtpark_ambient_npcs.png | 288x256 |
+| 9 | item_skittles.png | 128x64 |
+| 10 | stadtpark_effects.png | 256x256 |
 
-### Mobile Optimization
-- **Texture Atlases**: Maximum 4 at 1024px
-- **Draw Calls**: Under 45
-- **Memory**: Under 45MB
-- **Particles**: Maximum 60
-- **Target FPS**: 60
-
-### Animation Guidelines
-- **Idle Loops**: 2-4 frames, 0.5-1 FPS
-- **Emotional Animations**: 2-4 frames, 1-2 FPS
-- **Action Animations**: 4-6 frames, 3-8 FPS
-- **Gustav Focus**: Larger sprite, more frames for emotional range
+**Total Estimated Memory:** ~5.5 MB (uncompressed RGBA)
 
 ---
 
-## Cross-Reference: Related Assets
+## 📦 File Delivery Checklist
 
-### From Previous Phases
-- Hans-Jürgen base sprite (more disheveled)
-- Pigeon Lady base sprite (same character)
-- Papageno sprite (if ally path)
-- Director sprite (if pursuing)
+### Required PNG Files:
+- [ ] `stadtpark_tileset.png` (1024x768)
+- [ ] `johann_strauss_statue.png` (128x192)
+- [ ] `ornamental_pond.png` (256x256)
+- [ ] `npc_gustav_horse.png` (512x384)
+- [ ] `npc_hans_jurgen_stadtpark.png` (288x384)
+- [ ] `npc_pigeon_lady.png` (192x192)
+- [ ] `aggressive_swans.png` (192x128)
+- [ ] `stadtpark_ambient_npcs.png` (288x256)
+- [ ] `item_skittles.png` (128x64)
+- [ ] `stadtpark_effects.png` (256x256)
 
-### New for This Location
-- Gustav in final state (cape, feathers, exhausted)
-- Park environment (night lighting)
-- Skittles item (key quest object)
-- Resolution-specific effects
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups
+- **Documentation:** Animation timing reference sheet + resolution-path lighting preset guide
 
 ---
 
-**END OF ASSET REQUIREMENTS**
+## ✅ Final Delivery Validation
 
-*Stadtpark: Where a bag of American candy, a runaway Austrian horse, and €2,340 in property damage somehow become the most emotionally resonant moment in the entire game.*
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly
+- [ ] Gustav's exhaustion and hope both read at gameplay zoom
+- [ ] Skittles bag immediately recognizable as American candy
+- [ ] Pigeon Lady matches her Plaza sprite exactly
+- [ ] Accessibility visual alternatives included for all audio cues
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Absurdist comedy and genuine emotion coexist without undercutting each other
+- [ ] All four resolution-path lighting grades are distinct
+- [ ] Swan danger zone has discoverable visual cues
+- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Colorblind-friendly alternatives available where color codes meaning
+- [ ] Social media viral potential maximized in composition choices
+
+---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ | Sinfonia only; Stadtpark/Strauss evoke Vienna without naming it |
+| Cultural Specificity | ✅ | Viennese park culture, Waltz King monument, Fiaker horse tradition |
+| Satirical Targets Appropriate | ✅ | American candy diplomacy, tourist obliviousness, €1 wisdom — punches up |
+| Seedy Underbelly Present | ✅ | Night park underclass (philosopher's bottle), vicious swans, guilt economies |
+| Gameplay Value Established | ✅ | Quest resolution with four endings, trust mechanic, permanent unlocks |
+| Technical Feasibility | ✅ | 10 sheets, atlas plan, LOD tiers documented |
+| Mobile Performance Budget | ✅ | 60 FPS, <45 draw calls, <45 MB, 60 particles |
+| Accessibility Features | ✅ | Visual audio cues, static motion variants, shape-based Skittles reads |
+| No Crypto Elements | ✅ | None present |
+| Social Media Integration | ✅ | Six screenshot moments identified; Path B built as shareable |
+
+**Stadtpark: Where a bag of American candy, a runaway Austrian horse, and €2,340 in property damage somehow become the most emotionally resonant moment in the entire game.**

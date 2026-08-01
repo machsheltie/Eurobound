@@ -323,6 +323,44 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 
 ---
 
+## ♿ Accessibility Sprite Requirements
+**File:** `cirque_grounds_accessibility.png` (supplemental sheet — delivered alongside the 20 base files, not counted in their total)
+**Dimensions:** 384x384 pixels
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Dodge Prompt Icons, Bold (x3) | (0, 0) | 192x64 | Thick-outline left/right/center dodge cues for the knife minigame |
+| ICQ Terminal Outline | (192, 0) | 96x96 | High-contrast terminal hotspot outline for the backroom flap interaction |
+| Ticket Booth Window Outline | (288, 0) | 96x96 | Outlined barred-window interactable at `main_gate` |
+| Casting Flyer, Large-Print | (0, 64) | 96x128 | Enlarged readable variant of the "ATHLETIC-INTELLECTUAL HYBRID" flyer close-up |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Marquee, Steady Glow | (96, 64) | 128x64 | Constant night glow replacing the random-interval flicker (the flicker is a joke, but it is still a flicker) |
+| Vape Cloud, Static Wisp | (224, 64) | 64x64 | Single non-drifting cloud decal replacing both particle loops near Vance's tent |
+| Prophecy Glow, Constant | (96, 128) | 96x96 | Steady mid-brightness seam glow replacing both pulse states — prophecy-in-progress signaled by brightness step, not speed |
+| Fax Spit, Single-Frame | (192, 128) | 96x96 | One static paper-out frame replacing the 3-frame cycle |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Knife Whistle-In Arrow | (0, 192) | 64x48 | Directional incoming-throw indicator preceding each knife by the whistle's lead time — required, since the dodge minigame's timing tell is the whistle-and-thunk audio |
+| Knife Thunk Burst | (64, 192) | 48x48 | Impact star on the target board at the thunk |
+| Calliope Note Icon | (112, 192) | 48x48 | Drifting warped-note icon marking the grounds-wide calliope loop (drops out in the two quiet zones, matching the audio mix) |
+| Fax Chug Icon | (160, 192) | 48x48 | Vibration lines on the fax machine during each print event |
+| Ticket Jam Clunk Icon | (208, 192) | 48x48 | Jam/clunk indicator over the dispenser during the jam-and-release cycle |
+| Hamster Techno Wisp | (256, 192) | 48x48 | Faint note-trail from `prophecy_tent`'s direction when the distant techno is active — cuts off with the food-cart hiss, exactly like the audio |
+
+### Colorblind Considerations:
+- Dodge prompts are directional shapes (arrows/center diamond), never color-coded alone
+- ICQ CRT green-gray glow and Vance's Vape-Cloud Gray stay visually distinct via shape and placement, not hue alone (per Sprite Sheet 4's technical note)
+- Prophecy Purple/Gold pulse carries a seam-pattern change between idle and in-progress states, not just a color shift
+- Dodge icons (64px each), ticket booth window, and ICQ terminal hotspot all meet the 44px minimum touch target
+
+---
+
 ## 📱 Mobile Optimization
 
 ### Texture Atlases:
@@ -339,6 +377,83 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 - Grounds crowd (shared with sub-locations' own crowd assets) LOD-steps down aggressively past `game_alley` mid-ground, consistent with the pattern already established in `Bohemian_Riviera_PNG_Assets.md`
 - Casting-flyer texture is built once and instanced at both the corkboard and the fax machine, halving that asset's memory footprint
 - This document intentionally excludes the prize booth and mystery meat cart sprites — those remain owned by their own already-published PNG asset docs and must not be re-exported here. It likewise excludes Hamstradamus's prophecy-tent performer sprites (owned by `hamstradamus.md`, not a PNG asset doc) and Bobo's performance sprites (owned by his own profile's implementation pass)
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- TileMap for the trampled-grass-to-sawdust transition and grounds paths; additive-blend overlay layers for the marquee glow and prophecy tent seam glow (glow mask composites through existing tent art, no re-render)
+- CPUParticles2D (not GPU) for vape clouds, dust motes, fax paper flutter; marquee flicker on a randomized (non-metronomic) timer script
+- Area2D hotspots: `icq_backroom` terminal (random Darkweb Dossier hack-through pop-ins, weighted toward after-dark), Shady Productions table/fax (`beatdown_aware` trigger), Vance's tent flap (`vance_met` trigger)
+- Sub-location handoffs: `prophecy_tent`, `prize_booth`, `meat_cart_pitch`, and Bobo's pitch transition to mechanics owned by their own files — this document's assets stop at each zone boundary
+- State tracking per `cirque_du_shady_state` (cirque_visited, beatdown_aware, vance_met, filming_day_active, icq_backroom_hackthrough_seen)
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Fax Paper-Spit (3 frames) | Paper-feed chug | Chug per frame; lands on a beat if a bro reads the flyer aloud |
+| Ticket Dispenser Jam-and-Release | Jam clunk → dispense clatter | Jam holds ~1.2s before release resolves |
+| Knife-Throw Dodge Round | Whistle-in → thunk | Whistle leads each throw; thunk on impact/dodge resolution frame |
+| Vape Exhale (dialogue variant) | Audible exhale in Vance's line pacing | Cloud burst on the vape-cloud-shaped pause — built into the voice track, not layered after |
+| Marquee Flicker | Neon buzz waver | Buzz dips on off-frames; randomized so it reads as a joke, not a bug |
+| Prophecy Glow, In-Progress | Prophecy delivery (per `hamstradamus.md` `prophecy_trance` cue) | Glow state swap is instant on the same event window — tent exterior and interior performance read as one beat |
+| Rigged Game Loss | Sad calliope note | On loss resolution at any `game_alley` game |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Bacchanus Beach Beatdown (`debaucheryville_sidequest_bacchanus_beach_beatdown_01`) | shady_productions_office, fax_machine_and_flyers, corkboard casting flyer, prize_pallet_2003_office | `beatdown_aware` fires on examining the table/fax or hearing Vance mention "the show" — foreshadowing only; sign-up lives at Fauxst Beach |
+| The Vanishing Elephant (hook only) | Bubbles missing-elephant poster (corkboard), elephant-adjacent hay dressing (big top) | Ambient dressing per GDD canon; quest not designed in this document |
+| ICQ Scammer Sting (cross-referenced) | icq_terminal (idle + hack-through states), icq_backroom_interior night CRT glow | Shares the ICQ substrate and the `Tony420` handle with that questline's cast |
+| Prophecy Roulette (owned by `hamstradamus.md`) | prophecy_tent_glow (exterior only) | Glow intensifies on Prophecy Roulette delivery; performer sprites remain owned by his profile |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Old Town Streets | main_gate_and_marquee, trampled-grass-to-sawdust transition tile | Approach smell/sound before the gate is visible; standard street fade |
+| The Bohemian Riviera | Riverside gear path from `shady_productions_office`; prize_pallet_2003_office must visually match `prize_pallet_2003.png` in `Bohemian_Riviera_PNG_Assets.md` (same merchandise stock, two storage locations) | Gear-path walk; visible production traffic on filming days |
+| Prize Booth (`the_participation_trophy.md`) | Vance's loot-crate voucher pitch hands off to Yolanda's counter | Two-zone transaction: pitch at his tent, fulfillment at `prize_booth` |
+| Fauxst Beach (filming days) | Hamstradamus travels the gear path between `prophecy_tent` and `prize_podium` | His tent sits dark/glow-idle while he is absent |
+
+---
+
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "A traveling circus that stopped traveling in 1997 and never updated a single piece of infrastructure since"
+- **Color Mood:** Faded Big-Top Red and Canvas Cream carry the washed-out grandeur; Neon Marquee pink and Prophecy Purple/Gold are the only things on the grounds still trying
+- **Lighting:** Afternoon — flat dusty daylight filtered through canvas seams; Night — neon marquee, `game_alley` string bulbs, and whatever spills from tent flaps (Vance's fog, the ICQ CRT glow, the prophecy seam pulse)
+- **Texture:** Re-stitched canvas patches (randomly composited per-instance), rust rings where wheels used to be, warped plywood, pre-millennium office hardware
+
+### Environmental Storytelling:
+- The support pole's rust rings say "used to have wheels" without a line of dialogue
+- The ticket booth sign's taped-on bathroom addendum, the scratched-out EST. date, the 2003 pallet at the office edge — honesty and decay in every prop
+- The same casting flyer at two placements (fax + corkboard) — the operation has printed one document for twenty-two seasons
+- Bubbles's missing-elephant poster beside faint hay dressing: the elephant is still, technically, on the premises
+
+### Character Integration Notes:
+- Vance's vape-cloud speech FX composite over his dialogue box — his pacing is visible, not just audible
+- Blanka's professional stillness contrasts the player's dodge prompts; no knife-thrower sprite exists by design (out of scope until he gets a name)
+- Sub-location performers (Hamstradamus, Yolanda, Chef Chuckles, Bobo) keep their own files' sprite ownership — grounds art frames them, never redraws them
+
+---
+
+## 🎯 Social Media Viral Potential
+
+### Screenshot-Worthy Moments:
+1. **The ticket booth sign** - "ADMISSION €5. EVERYTHING ELSE EXTRA." with the taped addendum "(THIS INCLUDES THE BATHROOM.)"
+2. **Vance mid-exhale pitch** - Ringmaster coat, top hat, vape cloud punctuating a loot-crate sales line
+3. **The fax machine at work** - A pre-millennium machine printing the identical casting flyer onto a pile of identical casting flyers
+4. **The prophecy tent at night** - Purple-gold seams pulsing while the marquee flickers and the calliope warps
+5. **The knife dodge round** - Player in Blanka's spot, incoming-throw arrow, scarred target board
+
+### Quote Potential:
+- "Semi-permanent. That's the word. We COULD move. We just — *(exhale)* — haven't needed to."
+- "It's — *(exhale)* — it's a bit of a gamble, honestly. Aren't we all?"
+- "I flinch never."
+- "WANTED: ATHLETIC-INTELLECTUAL HYBRID. CARGO SHORTS PREFERRED. NO EXPERIENCE NECESSARY."
 
 ---
 
@@ -371,6 +486,71 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 
 ---
 
+## 📦 File Delivery Checklist
+
+### Required PNG Files:
+- [ ] `main_gate_and_marquee.png` (1024x512)
+- [ ] `ticket_booth.png` (256x256)
+- [ ] `corkboard_flyers.png` (256x256)
+- [ ] `big_top_exterior.png` (1024x768)
+- [ ] `vance_tent_exterior.png` (512x384)
+- [ ] `icq_backroom_interior.png` (512x384)
+- [ ] `shady_productions_office.png` (512x384)
+- [ ] `fax_machine_and_flyers.png` (256x192)
+- [ ] `prize_pallet_2003_office.png` (192x128)
+- [ ] `game_alley_rig.png` (1024x384)
+- [ ] `performance_circle_ground.png` (512x256)
+- [ ] `knife_target_board.png` (128x256)
+- [ ] `vance_vallaro.png` (384x288)
+- [ ] `blanka_knife_assistant.png` (384x288)
+- [ ] `vape_cloud_particles.png` (128x128)
+- [ ] `marquee_flicker.png` (256x128)
+- [ ] `fax_paper_spit.png` (96x96)
+- [ ] `prophecy_tent_glow.png` (192x192)
+- [ ] `icq_terminal.png` (192x192)
+- [ ] `knife_dodge_prompt_ui.png` (256x128)
+- [ ] `cirque_grounds_accessibility.png` (384x384, supplemental)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups (marquee glow and prophecy seam glow as separate additive-overlay layers; canvas patch decals in their own group for per-instance compositing)
+- **Documentation:** Animation timing reference sheet (marquee random-interval ranges, prophecy glow dual pulse rates, fax/knife/ticket one-shot timings)
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly (Faded Big-Top Red #B22222, Canvas Cream #F5F0DC, Neon Marquee #FF6EC7, Vape-Cloud Gray #C0C0C8, Prophecy Purple #6A0DAD, Prophecy Gold #D4AF37)
+- [ ] Casting flyer built once and instanced at both corkboard and fax placements — no duplicate art
+- [ ] Office prize pallet visually matches (does not duplicate) the Bohemian Riviera's `prize_pallet_2003.png`
+- [ ] ICQ CRT glow reads distinct from vape-cloud gray at night
+- [ ] Accessibility visual alternatives included for all audio cues — especially the knife whistle-in arrow (the dodge tell is otherwise audio-led)
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme (a fully honest grift ecosystem that hasn't updated since 1997) is clear throughout all assets
+- [ ] Readable details intact: bathroom addendum, scratched-out EST. date, rust rings, 2003 pallet stamp, Bubbles poster
+- [ ] No assets re-exported from sub-location PNG docs (prize booth, mystery meat cart) or from `hamstradamus.md` / Bobo's profile
+- [ ] Mobile performance optimized (CPU particles, reducible vape density, aggressive crowd LOD past `game_alley`)
+- [ ] Touch zone sizing considered (44px minimum — dodge icons, ticket booth, ICQ terminal compliant)
+- [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded dodge prompts, patterned prophecy pulse)
+- [ ] Social media viral potential maximized (ticket-booth signage frame, fax-machine composition)
+
+---
+
 ## ✅ Validation Status
 
 | Requirement | Status |
@@ -382,5 +562,10 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | No Crypto Elements Beyond Existing Bobo Pointer | ✅ PASS |
 | Mobile Optimization | ✅ PASS |
 | No Duplicate Assets vs. Sub-Location PNG Docs | ✅ PASS |
+| Seedy Underbelly Present | ✅ PASS (grounds-wide grift pipeline, rigged games to TV recruitment) |
+| Technical Feasibility | ✅ PASS (stitched-zone approach within budget) |
+| Mobile Performance Budget | ✅ PASS (45-60 FPS, 30-45 draw calls, 55-70MB grounds-wide) |
+| Accessibility Features | ✅ PASS (visual knife-throw tell, steady-glow variants) |
+| Social Media Integration | ✅ PASS (viral moments identified) |
 
 **The Cirque du Shady's grounds-level art spec covers the gate, the big top's exterior, a Ringmaster who exhales mid-sentence, a fax machine that has printed the same flyer for twenty-two seasons, and a knife act older than most of its audience — while leaving every already-published sub-location's own asset spec exactly where it lives.**

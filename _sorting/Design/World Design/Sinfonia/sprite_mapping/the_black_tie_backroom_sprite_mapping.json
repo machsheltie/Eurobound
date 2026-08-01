@@ -24,7 +24,7 @@
       "dimensions": {"width": 384, "height": 256},
       "zone": "foyer",
       "anchors": {
-        "viktor_position": {"x": 40, "y": 90},
+        "anton_position": {"x": 40, "y": 90},
         "deposit_window": {"x": 160, "y": 70},
         "house_rules_board": {"x": 120, "y": 40},
         "verification_mirror": {"x": 30, "y": 50},
@@ -129,9 +129,9 @@
   },
 
   "character_sheets": {
-    "npc_viktor_doorman": {
-      "file": "viktor_doorman.png",
-      "npc_id": "sinfonia_npc_viktor_doorman_01",
+    "npc_anton_doorman": {
+      "file": "anton_doorman.png",
+      "npc_id": "sinfonia_npc_anton_doorman_01",
       "dimensions": {"width": 384, "height": 512},
       "sprite_size": {"width": 96, "height": 128},
       "animations": {
@@ -515,7 +515,7 @@
       "chandelier_detail.png"
     ],
     "character": [
-      "viktor_doorman.png",
+      "anton_doorman.png",
       "madame_karten.png",
       "herr_falsch.png",
       "nervous_noble.png",

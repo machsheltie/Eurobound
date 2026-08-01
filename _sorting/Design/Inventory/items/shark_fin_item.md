@@ -102,7 +102,7 @@ Once awarded, the fin is **permanently pinned to the winning bro's lapel** for t
 ### When NPCs Notice The Fin
 | NPC Type | Reaction | Bros' Interpretation |
 |----------|----------|------------------------|
-| Viktor the Doorman | "Ah. He gave you the fin." *(no change of expression, no further comment, steps aside)* | "He *gave*. Past tense. Viktor's already heard about it." |
+| Anton the Doorman | "Ah. He gave you the fin." *(no change of expression, no further comment, steps aside)* | "He *gave*. Past tense. Anton's already heard about it." |
 | Madame Karten | "Darling. How wonderful for you. He does love that hand." | "She's shaken. That's a woman rethinking her whole floor." |
 | Siegfried at the coat check | *takes the jacket, sees the pin, sets a second wafer bar on the counter, says nothing at all* | "Coat guy KNOWS. Coat guys always know first." |
 | Novelty-shop kid, Kaffeehaus Row | "We have those. Fin, anchor, or the little skull. Four euro." | "Knockoffs. Somebody's already bootlegging me." |

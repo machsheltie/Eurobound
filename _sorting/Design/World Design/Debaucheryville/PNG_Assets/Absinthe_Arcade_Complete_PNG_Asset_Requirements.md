@@ -5,7 +5,39 @@ This document provides exact specifications for all PNG files needed for the Abs
 
 **Location ID:** `debaucheryville_clocktower_arcade_01`  
 **Theme:** Dave & Buster's if it was haunted by your bad trip  
+**Zone:** Clocktower Plaza (side street beneath a green-lit arch)  
+**Hours:** Always accessible; lighting effects change dramatically after 10 PM  
 **Primary Function:** NFT Hunt location, Brewery Tour entrance, Couchsurfing host, Parody arcade minigames
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Toxic Green | #39FF14 | Dominant glow — floor tiles, screen glow, absinthe bar, mist |
+| UV Fairy Green | #00FF41 | UV reactive surfaces, Green Fairy mural form |
+| Neon Purple | #BF00FF | Accent elements, circuit corruption patterns |
+| Deep Black | #0A0A0A | Background voids, ceiling, unlit surfaces |
+| Cabinet Pink | #FF1493 | Arcade cabinet bodies |
+| Neon Pink | #FF69B4 | Environmental neon accents |
+| Cyan | #00FFFF | Cabinet screens, mist tint, glitch artifacts |
+| Cabinet Wood Grain | #8B4513 | Cabinet trim, worn wood surfaces |
+| Token Gold | #FFD700 | Tokens, exchange machine highlights |
+| Spark Yellow | #FFFF00 | Electrical spark tint |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/absinthe_arcade/
+├── environment/
+│   ├── absinthe_arcade_tileset.png
+│   └── green_fairy_mural_parallax.png
+├── objects/
+│   └── arcade_machines_spritesheet.png
+└── effects/
+    └── environmental_effects.png
+```
 
 ---
 
@@ -184,8 +216,6 @@ This document provides exact specifications for all PNG files needed for the Abs
 | Layer 3 (Melting Effect) | 0.5x player speed | Near-ground dynamic element |
 | Layer 4 (Circuit Overlay) | 0.7x player speed | Foreground framing |
 
-> ⚠ CONFLICT: legacy spec used parallax speeds 0.2/0.5/0.8/1.0 — author to decide.
-
 ### Animation Timing:
 | Animation | Frames | FPS | Duration | Loop |
 |-----------|--------|-----|----------|------|
@@ -282,57 +312,9 @@ This document provides exact specifications for all PNG files needed for the Abs
 | Play Prompt | (288, 480) | 64x24 | "Play" interaction button |
 | Insert Token Prompt | (352, 480) | 96x24 | "Insert Token" prompt |
 
-### Colorblind-Friendly Alternatives:
-| Element | Position | Size | Description |
-|---------|----------|------|-------------|
-| Enhanced Floor Tiles | (528, 416) | 256x96 | High contrast for light-up patterns |
-| Cabinet Screen Clarity | (784, 416) | 128x96 | Readable game content |
-| Mural Visibility | (912, 416) | 112x96 | Pattern-based instead of color-only |
-
-### Motion Sensitivity Options:
-| Element | Position | Size | Description |
-|---------|----------|------|-------------|
-| Static Mural Alternative | (544, 0) | 480x256 | Non-parallax Green Fairy |
-| Reduced Flicker Lighting | (544, 256) | 256x128 | Gentle floor tile pulse |
-| Minimal Particle Mode | (800, 256) | 224x128 | Essential mist only |
-
-### Accessibility Visual Cues:
-| Element | Position | Size | Description |
-|---------|----------|------|-------------|
-| Cabinet Sound Visual | (528, 384) | 32x32 | Audio indicator for deaf players |
-| Token Machine Beep | (560, 384) | 32x24 | Transaction confirmation visual |
-| Hidden Entrance Reveal | (592, 384) | 48x32 | Discovery cue without audio dependency |
-
 ---
 
-## 📐 Mobile Optimization Requirements
-
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for green glow effects, maintains toxic aesthetic
-- **Android:** ETC2 with alpha for mist particle transparency
-- **Fallback:** PNG high quality for mural parallax detail
-
-### Sprite Atlasing Strategy:
-- **Tileset Atlas:** Floor + walls + ceiling combined (1024x1024)
-- **Arcade Machines Atlas:** All cabinets + claw machine (2048x1024)
-- **Mural Parallax Atlas:** 4 layers separate for parallax effect (1024x512)
-- **Environmental Effects Atlas:** Bar + seating + particles (1024x512)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
-
-### LOD (Level of Detail) Scaling:
-- **High-End Devices:** Full particle systems, parallax mural, mirror lag effect
-- **Medium Devices:** Reduced particle density, simplified parallax (2 layers)
-- **Low-End Devices:** Static mural, minimal particles, no mirror lag
-- **Potato Mode:** Essential cabinets and bar only, no effects
-
-### Performance Targets:
-- **Target FPS:** 60 fps (psychedelic atmosphere requires smoothness)
-- **Max Draw Calls:** 15 per frame
-- **Memory Footprint:** 50MB maximum for location
-
----
-
-## 🎬 Animation Sequence Specifications
+## 🎬 Animation Specifications
 
 ### Floor Tile Random Activation:
 - **Duration:** Random 0.5-3 second delays per tile
@@ -375,6 +357,64 @@ This document provides exact specifications for all PNG files needed for the Abs
 - **Visual:** Claw obviously loosens when near success (comedy beat)
 - **Purpose:** Satirical tourist trap mechanics, intentional frustration
 - **Strategy:** After 5 failures, success probability increases slightly
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+*(All accessibility sprites live in `environmental_effects.png` at the coordinates below.)*
+
+### High Contrast Alternatives (Colorblind-Friendly):
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Enhanced Floor Tiles | (528, 416) | 256x96 | High contrast for light-up patterns |
+| Cabinet Screen Clarity | (784, 416) | 128x96 | Readable game content |
+| Mural Visibility | (912, 416) | 112x96 | Pattern-based instead of color-only |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Static Mural Alternative | (544, 0) | 480x256 | Non-parallax Green Fairy |
+| Reduced Flicker Lighting | (544, 256) | 256x128 | Gentle floor tile pulse |
+| Minimal Particle Mode | (800, 256) | 224x128 | Essential mist only |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Cabinet Sound Visual | (528, 384) | 32x32 | Audio indicator for deaf players |
+| Token Machine Beep | (560, 384) | 32x24 | Transaction confirmation visual |
+| Hidden Entrance Reveal | (592, 384) | 48x32 | Discovery cue without audio dependency |
+
+### Colorblind Considerations:
+- Light-up floor tiles, mural corruption, and DDR token progress all offer pattern/shape-based indicators wherever color codes meaning
+- Touch zones minimum 44px for interactive elements (cabinets, token machine, prompts)
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** PVRTC 4BPP for green glow effects, maintains toxic aesthetic
+- **Android:** ETC2 with alpha for mist particle transparency
+- **Fallback:** PNG high quality for mural parallax detail
+
+### Sprite Atlasing Strategy:
+- **Tileset Atlas:** Floor + walls + ceiling combined (1024x1024)
+- **Arcade Machines Atlas:** All cabinets + claw machine (2048x1024)
+- **Mural Parallax Atlas:** 4 layers separate for parallax effect (1024x512)
+- **Environmental Effects Atlas:** Bar + seating + particles (1024x512)
+- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+
+### LOD (Level of Detail) Scaling:
+- **High-End Devices:** Full particle systems, parallax mural, mirror lag effect
+- **Medium Devices:** Reduced particle density, simplified parallax (2 layers)
+- **Low-End Devices:** Static mural, minimal particles, no mirror lag
+- **Potato Mode:** Essential cabinets and bar only, no effects
+
+### Performance Targets:
+- **Target FPS:** 60 fps (psychedelic atmosphere requires smoothness)
+- **Max Draw Calls:** 15 per frame
+- **Memory Footprint:** 50MB maximum for location
 
 ---
 
@@ -449,31 +489,6 @@ This document provides exact specifications for all PNG files needed for the Abs
 
 ---
 
-## 📦 File Delivery Checklist
-
-### Required PNG Files (4 Total):
-- [ ] `absinthe_arcade_tileset.png` (1024x1024)
-- [ ] `arcade_machines_spritesheet.png` (2048x1024)
-- [ ] `green_fairy_mural_parallax.png` (1024x512)
-- [ ] `environmental_effects.png` (1024x512)
-
-### Quality Requirements:
-| Requirement | Specification |
-|-------------|---------------|
-| Format | PNG-24 with alpha channel |
-| Color Space | sRGB |
-| DPI | 72 (screen resolution) |
-| Compression | Lossless PNG |
-| Naming Convention | snake_case, all lowercase |
-| Layer Organization | Preserve parallax layers separately in master file |
-
-### Delivery Format:
-- **Primary:** Individual PNG files per specifications above
-- **Backup:** Master PSD/Photoshop file with organized layer groups
-- **Documentation:** Animation timing reference sheet, parallax layer guide
-
----
-
 ## 🎯 Social Media Viral Potential
 
 ### Screenshot-Worthy Moments:
@@ -496,6 +511,44 @@ This document provides exact specifications for all PNG files needed for the Abs
 - Every arcade parody game title is meme material
 - "Lose Your Mind One Token at a Time" (location tagline)
 - "The only button is REGRET" (Kebab Kombat description)
+
+---
+
+## 📋 Required PNG Files (4 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | absinthe_arcade_tileset.png | 1024x1024 |
+| 2 | arcade_machines_spritesheet.png | 2048x1024 |
+| 3 | green_fairy_mural_parallax.png | 1024x512 |
+| 4 | environmental_effects.png | 1024x512 |
+
+**Total Estimated Memory:** ~16 MB uncompressed RGBA (well within the 50MB location budget)
+
+---
+
+## 📦 File Delivery Checklist
+
+### Required PNG Files (4 Total):
+- [ ] `absinthe_arcade_tileset.png` (1024x1024)
+- [ ] `arcade_machines_spritesheet.png` (2048x1024)
+- [ ] `green_fairy_mural_parallax.png` (1024x512)
+- [ ] `environmental_effects.png` (1024x512)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve parallax layers separately in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/Photoshop file with organized layer groups
+- **Documentation:** Animation timing reference sheet, parallax layer guide
 
 ---
 
@@ -531,7 +584,6 @@ This document provides exact specifications for all PNG files needed for the Abs
 
 ## 🏆 Location Validation Status
 
-### Template Compliance Check:
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ PASS | Debaucheryville only |
@@ -542,6 +594,7 @@ This document provides exact specifications for all PNG files needed for the Abs
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
 | Mobile Performance Budget | ✅ PASS | 60 FPS, 15 draw calls, 50MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
+| No Crypto Elements | ✅ PASS | Beer Pong Saint Relic NFT is satirical and established in source material; no functional crypto |
 | Social Media Integration | ✅ PASS | Multiple viral moments identified |
 
 **Once validated, the Absinthe Arcade becomes the psychedelic quest hub where players experience corrupted gaming nostalgia, meet Backpack Girl Who Never Left, obtain the Beer Pong Saint Relic NFT from a rigged claw machine, discover hidden passages to the Absynthium Taproom and secret bathroom, and play parody arcade games while bros think they're experiencing sophisticated underground European culture!**

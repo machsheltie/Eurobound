@@ -5,7 +5,40 @@ This document provides exact specifications for all PNG files needed for the Mys
 
 **Location ID:** `debaucheryville_cirque_mystery_cart_01`  
 **Theme:** Carnival grift, forbidden meats, unlicensed side effects  
+**Zone:** Cirque du Shady (next to the carnival ringmaster tent)  
+**Hours:** Circus hours; enhanced effects during nighttime performances  
 **Primary Function:** Sketchy food vendor, status effect gambles, Carnival Carnage quest access
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Carnival Red | #DC143C | Cart panels, strobe cycle, sign lettering |
+| Toxic Neon Green | #39FF14 | Underglow, "enhanced" food items, mystery vapor |
+| Circus Shadow Purple | #4B0082 | Deep shadows, strobe cycle, tent darkness |
+| Saddle Brown | #8B4513 | Meat brown range (upper end) |
+| Dim Gray | #696969 | Meat brown range (lower end), grey sweaty tube meat |
+| Lime Glow | #00FF00 | Glow effects at 50% opacity pulse (Brain Brat core) |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/mystery_meat_cart/
+├── environment/
+│   └── circus_cart_environment_complete.png
+├── npcs/
+│   └── chef_chuckles_character_animations.png
+├── objects/
+│   ├── chef_chuckles_mystery_cart_complete.png
+│   ├── mystery_menu_items_detailed.png
+│   └── animated_signage_states.png
+├── effects/
+│   └── carnival_effects_particles.png
+└── ui/
+    └── mystery_cart_ui.png
+```
 
 ---
 
@@ -327,7 +360,36 @@ This document provides exact specifications for all PNG files needed for the Mys
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Alternatives:
+- **Chef Chuckles Enhanced** - Higher contrast for visibility
+- **Menu Items Readable** - Emphasized text and borders
+- **Sign Text Emphasized** - Increased legibility
+
+### Photosensitive Accommodations:
+**CRITICAL FOR COMPLIANCE:**
+- **Strobe Reduced Lighting** - Slowed flash rate (max 3 flashes/second)
+- **Static Carnival Lights** - No flashing alternative mode
+- **No Flash Mode Overlay** - Complete strobe disable option
+
+All strobe effects must be **completely disableable** for photosensitive players per WCAG 2.1 guidelines.
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Honk Moment Visual | (256, 128) in `animated_signage_states.png` | 64x64 | Clown honk indicator for deaf/hard-of-hearing players |
+| Steam Hiss Visual | (320, 128) in `animated_signage_states.png` | 64x64 | Pressure release indicator, audio-independent |
+| Whisper Waves | (128, 96) in `mystery_menu_items_detailed.png` | 64x32 | Sausage whisper visualization — supernatural audio rendered visually |
+
+### Colorblind Considerations:
+- Status icons pair distinct shapes with color (swirling stars, scratch marks, goop) so no effect reads by hue alone
+- "Enhanced" toxic-green food items double their color coding with the 50% opacity glow pulse
+- Touch zones minimum 44px for menu buttons and cart interactions
+
+---
+
+## 📱 Mobile Optimization
 
 ### Texture Compression by Platform:
 - **iOS:** PVRTC 4BPP for carnival textures, maintains color vibrancy
@@ -351,25 +413,6 @@ This document provides exact specifications for all PNG files needed for the Mys
 - **Max Draw Calls:** 15 per frame
 - **Memory Footprint:** 35MB maximum for location
 
-> ⚠ CONFLICT: legacy spec says 60 fps target / 15 max draw calls, but BASE Location Validation records 45 FPS, 14 draws as PASS — author to decide.
-
----
-
-## ♿ Accessibility Sprite Requirements
-
-### High Contrast Alternatives:
-- **Chef Chuckles Enhanced** - Higher contrast for visibility
-- **Menu Items Readable** - Emphasized text and borders
-- **Sign Text Emphasized** - Increased legibility
-
-### Photosensitive Accommodations:
-**CRITICAL FOR COMPLIANCE:**
-- **Strobe Reduced Lighting** - Slowed flash rate (max 3 flashes/second)
-- **Static Carnival Lights** - No flashing alternative mode
-- **No Flash Mode Overlay** - Complete strobe disable option
-
-All strobe effects must be **completely disableable** for photosensitive players per WCAG 2.1 guidelines.
-
 ---
 
 ## 🔧 Technical Integration Notes
@@ -391,32 +434,6 @@ All strobe effects must be **completely disableable** for photosensitive players
 - Menu items tie into "Great Döner Debate" quest system
 - Clown gear visuals must match other circus vendor aesthetics
 - Environmental details foreshadow "Carnival Carnage" secret quest
-
----
-
-## 📦 File Delivery Checklist
-
-### Required PNG Files (7 Total):
-- [ ] `chef_chuckles_mystery_cart_complete.png` (1024x768)
-- [ ] `chef_chuckles_character_animations.png` (512x512)
-- [ ] `mystery_menu_items_detailed.png` (1024x512)
-- [ ] `circus_cart_environment_complete.png` (1024x768)
-- [ ] `carnival_effects_particles.png` (512x256)
-- [ ] `animated_signage_states.png` (512x256)
-- [ ] `mystery_cart_ui.png` (384x256)
-
-### Quality Requirements:
-| Requirement | Specification |
-|-------------|---------------|
-| Format | PNG-24 with alpha |
-| Color Space | sRGB |
-| DPI | 72 |
-| Naming | snake_case |
-
-### Delivery Format (ported from legacy spec):
-- **Primary:** Individual PNG files per specifications above
-- **Backup:** Master PSD/Photoshop files with organized layer groups
-- **Documentation:** Layer naming guide for future updates
 
 ---
 
@@ -473,21 +490,45 @@ All strobe effects must be **completely disableable** for photosensitive players
 
 ---
 
-## 🏆 Location Validation Status
+## 📋 Required PNG Files (7 Total)
 
-| Requirement | Status |
-|-------------|--------|
-| World Consistency | ✅ PASS |
-| Cultural Specificity | ✅ PASS |
-| Satirical Targets | ✅ PASS |
-| Seedy Underbelly | ✅ PASS |
-| Gameplay Value | ✅ PASS |
-| Technical Feasibility | ✅ PASS |
-| Mobile Performance | ✅ PASS (45 FPS, 14 draws, 35MB) |
-| Accessibility | ✅ PASS (Strobe disable option) |
-| Social Media | ✅ PASS |
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | chef_chuckles_mystery_cart_complete.png | 1024x768 |
+| 2 | chef_chuckles_character_animations.png | 512x512 |
+| 3 | mystery_menu_items_detailed.png | 1024x512 |
+| 4 | circus_cart_environment_complete.png | 1024x768 |
+| 5 | carnival_effects_particles.png | 512x256 |
+| 6 | animated_signage_states.png | 512x256 |
+| 7 | mystery_cart_ui.png | 384x256 |
 
-**The Mystery Meat Cart becomes the essential carnival grift station where Chef Chuckles delivers threatening food puns through a cracked clown mask, the carousel rotisserie spins mystery meats in toxic neon glow, sausages whisper dark secrets, and the Digestive Daredevil passive rewards those brave enough to consume three different items!**
+**Total Estimated Memory:** ~10.5 MB uncompressed RGBA (well within the 35MB location budget)
+
+---
+
+## 📦 File Delivery Checklist
+
+### Required PNG Files (7 Total):
+- [ ] `chef_chuckles_mystery_cart_complete.png` (1024x768)
+- [ ] `chef_chuckles_character_animations.png` (512x512)
+- [ ] `mystery_menu_items_detailed.png` (1024x512)
+- [ ] `circus_cart_environment_complete.png` (1024x768)
+- [ ] `carnival_effects_particles.png` (512x256)
+- [ ] `animated_signage_states.png` (512x256)
+- [ ] `mystery_cart_ui.png` (384x256)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha |
+| Color Space | sRGB |
+| DPI | 72 |
+| Naming | snake_case |
+
+### Delivery Format (ported from legacy spec):
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/Photoshop files with organized layer groups
+- **Documentation:** Layer naming guide for future updates
 
 ---
 
@@ -513,3 +554,22 @@ All strobe effects must be **completely disableable** for photosensitive players
 - [ ] All elements work together cohesively
 
 **Once validated, assets are ready for Godot integration and the Mystery Meat Cart location is complete!**
+
+---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ PASS | Debaucheryville / Cirque du Shady only |
+| Cultural Specificity | ✅ PASS | Eastern European traveling circus and carnival food grift |
+| Satirical Targets Appropriate | ✅ PASS | Carnival grifters and daring tourists, not locals |
+| Seedy Underbelly Present | ✅ PASS | Forbidden meats, no oversight, safety violations as flavor |
+| Gameplay Value Established | ✅ PASS | Status effect gambles, Digestive Daredevil passive, Carnival Carnage access |
+| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Mobile Performance Budget | ✅ PASS | 60 FPS, 15 draws, 35MB |
+| Accessibility Features | ✅ PASS | Strobe disable option, visual audio cues |
+| No Crypto Elements | ✅ PASS | None present |
+| Social Media Integration | ✅ PASS | Six viral moments identified |
+
+**The Mystery Meat Cart becomes the essential carnival grift station where Chef Chuckles delivers threatening food puns through a cracked clown mask, the carousel rotisserie spins mystery meats in toxic neon glow, sausages whisper dark secrets, and the Digestive Daredevil passive rewards those brave enough to consume three different items!**

@@ -66,7 +66,7 @@
         "handling": "held_at_deposit_window_as_chips",
         "returned_on_exit": true,
         "handling_fee_applies": true,
-        "note": "Parties holding under €500 are turned away by Viktor at the door. Gold above €500 is never touched by house play."
+        "note": "Parties holding under €500 are turned away by Anton at the door. Gold above €500 is never touched by house play."
       },
       "discovery_prerequisites": {
         "any_of": [

@@ -1,7 +1,45 @@
 # Café Sachertorte - Complete PNG Asset Requirements
 
 ## 📋 Overview
-This document provides exact specifications for all PNG files needed for the Café Sachertorte location - a high-end Viennese café that becomes ground zero for Gustav's €340 rampage during the Fiaker Fiasco sidequest.
+This document provides exact specifications for all PNG files needed for the Café Sachertorte location - a high-end Viennese café where a slice of cake costs €18, the waiter's disapproval is complimentary, and tradition is commodified down to the last apricot glaze. It becomes ground zero for Gustav's €340 rampage during the Fiaker Fiasco sidequest.
+
+**Location ID:** `sinfonia_kaffeehaus_cafe_sachertorte_01`
+**Theme:** The commodification of tradition and the tyranny of refinement — café pretension weaponized against tourists
+**Zone:** Kaffeehaus Row
+**Hours:** 08:00–22:00 (peak pretension 14:00–17:00; pre-opera evening service)
+**Primary Function:** Café shop / quest location — Fiaker Fiasco phase 2 (Gustav's cake heist), hidden-charge economy, debt system, post-quest Valued Patron path
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Sachertorte Brown | #3D2314 | Wood tones, menus, chocolate everything |
+| Apricot Glaze | #FBCEB1 | Cake accents, warm highlights |
+| Cream Marble | #FFFDD0 | Floors, tabletops |
+| Café Imperial Gold | #CFB53B | Gilding, frames, trim |
+| Mahogany Dark | #4A0000 | Wall paneling, counter |
+| Coffee Black | #1C1C1C | Herr Ober's formal wear, espresso |
+| Whipped Cream | #FFFAFA | Porcelain, linen, highlights |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/sinfonia/cafe_sachertorte/
+├── environment/
+│   └── cafe_sachertorte_tileset.png
+├── npcs/
+│   ├── herr_ober_waiter.png
+│   └── cafe_sachertorte_npcs.png
+├── objects/
+│   ├── cafe_sachertorte_landmarks.png
+│   └── cafe_sachertorte_destruction.png
+├── effects/
+│   └── cafe_sachertorte_effects.png
+└── ui/
+    └── cafe_sachertorte_ui.png
+```
 
 ---
 
@@ -284,40 +322,186 @@ This document provides exact specifications for all PNG files needed for the Caf
 
 ---
 
+## 🎬 Animation Specifications
+
+### Herr Ober Judgment:
+- **Duration:** 1.5 seconds (hold on final frame)
+- **Frames:** 3
+- **Pattern:** Frame 1 → 2 → 3, hold frame 3
+- **Trigger:** Player orders incorrectly, in English, or under-tips
+- **Purpose:** The café's core social weapon — disapproval as ambience
+- **Audio Sync:** Faint disappointed exhale on frame 3
+- **Mobile Optimization:** None needed
+
+### Herr Ober Horror:
+- **Duration:** ~0.67 seconds, single play
+- **Frames:** 4
+- **Pattern:** Frame 1 → 4, no loop
+- **Trigger:** Gustav's entry through the patio door
+- **Purpose:** Thirty years of service collapsing in four frames
+- **Audio Sync:** German exclamation on frame 1
+- **Mobile Optimization:** None needed
+
+### Herr Ober Fury:
+- **Duration:** 0.75 second loop
+- **Frames:** 3
+- **Pattern:** Loop while debt dialogue is active
+- **Trigger:** Post-rampage confrontation
+- **Purpose:** Drives the €340 debt-assignment scene
+- **Audio Sync:** None (dialogue carries it)
+- **Mobile Optimization:** None needed
+
+### Coffee Steam:
+- **Duration:** 1.5 second cycle
+- **Frames:** 3
+- **Pattern:** Rise → disperse → fade, loop
+- **Trigger:** Constant on served cups and counter
+- **Purpose:** Warm, expensive stillness before the storm
+- **Audio Sync:** None
+- **Mobile Optimization:** Halve emitter density (8 → 4 sources)
+
+### Marble Table Tipping:
+- **Duration:** 0.3 seconds
+- **Frames:** 3 (intact → tipping → fallen)
+- **Pattern:** Single play, hold fallen state
+- **Trigger:** Gustav collision during rampage
+- **Purpose:** Each crash increments the damage counter — comedy through accounting
+- **Audio Sync:** Crash + cash-register ching on impact frame
+- **Mobile Optimization:** None needed
+
+### Sachertorte Consumption:
+- **Duration:** ~2 seconds (hold on Bitten for dramatic effect)
+- **Frames:** 3 states (intact → bitten → devoured)
+- **Pattern:** State advance per bite event
+- **Trigger:** Gustav reaching the display case
+- **Purpose:** The €28 bite — the quest's signature crime
+- **Audio Sync:** Disturbing eating sounds per bite
+- **Mobile Optimization:** None needed
+
+### Chandelier Sway:
+- **Duration:** 2 second cycle during chaos
+- **Frames:** 3 (static → left → right)
+- **Pattern:** Left ↔ right pendulum, settle to "near miss" state
+- **Trigger:** Rampage screen shake
+- **Purpose:** Sustained will-it-fall tension (it never falls — the relief sparkle is the punchline)
+- **Audio Sync:** Crystal tinkle on each direction change
+- **Mobile Optimization:** Static frame on low-end devices
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Cake display case outline | set at sheet layout | 96x128 | High-contrast frame around the primary interactable |
+| Herr Ober outline overlay | set at sheet layout | 48x96 | Key NPC silhouette against dark mahogany |
+| Menu stand highlight | set at sheet layout | 24x40 | Enhanced-visibility marker for the order interaction |
+| Patio door frame | set at sheet layout | 32x64 | Marks Gustav's entry point / exit route |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Chandelier static frame | set at sheet layout | 80x64 | No sway during chaos; state changes only |
+| Steam-free cup overlay | set at sheet layout | 16x32 | Removes looping steam particles |
+| Dust-mote-free window beam | set at sheet layout | 32x64 | Static light beam without floating particles |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| German exclamation burst | set at sheet layout | 32x24 | Speech-shock glyph over Herr Ober when the horror cry fires |
+| Crash/ching burst | set at sheet layout | 32x32 | Impact star + € glyph for every destruction sound |
+| Eating-sounds indicator | set at sheet layout | 24x24 | Munch glyph over Gustav during consumption audio |
+| Crystal tinkle sparkle | set at sheet layout | 16x16 | Glint marks on chandelier per tinkle |
+
+### Colorblind Considerations:
+- Damage popups pair € numerals with impact-star shapes, never color alone
+- Status icons (Caffeinated / Sugar Rush / Humiliated) use distinct silhouettes, not just tint
+- Menu price tags readable as text; hidden charges italicized, not color-flagged
+- Touch zones minimum 44px for menu, display case, and payment interactions
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); cake display case needs ASTC 4x4 — the Sachertorte must gleam
+- **Android:** ETC2 with alpha
+- **Fallback:** PNG high quality for landmarks sheet (display case is screenshot-critical)
+
+### Texture Atlases:
+| Atlas | Contents | Max Size |
+|-------|----------|----------|
+| cafe_environment | tileset, landmarks, destruction | 1024x1024 |
+| cafe_characters | Herr Ober, regulars & staff | 1024x512 |
+| cafe_effects_ui | effects, UI elements | 512x512 |
+
+*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+
+### LOD Levels:
+| Level | Description |
+|-------|-------------|
+| High | Full steam (8 sources), dust motes, candle flicker, chandelier sway, all debris particles |
+| Medium | 4 steam sources, no dust motes, reduced debris density |
+| Low | Static chandelier, no ambient particles, debris as static sprites |
+
+### Performance Targets:
+- **Target FPS:** 60
+- **Max Draw Calls:** 40 per frame
+- **Memory Footprint:** 38 MB maximum
+- **Particle Limit:** 30 (steam 8, dust 15 → rampage swaps to crumbs 30 / porcelain 20, never concurrent)
+
+### Performance Notes:
+- Rampage particle systems (cake crumbs, shattered porcelain) replace ambient systems rather than stacking on top
+- Kitchen zone sprites load on-demand (only visible during Klaus/Anna scenes)
+- Post-quest state swaps (secured case, memorial, No Horses sign) are static texture switches, zero runtime cost
+
+---
+
 ## 🔧 Technical Integration Notes
 
 ### Godot Engine Integration:
-- All sprites designed for Godot 4.x compatibility
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Use AnimatedSprite2D for character states
 - CPUParticles2D for steam and debris
 - CanvasLayer for damage counter UI overlay
+- Location state machine: pre_quest → during_quest → post_quest_unpaid → post_quest_paid drives sprite set swaps
 
 ### Audio Sync Points:
-- Herr Ober horror animation syncs with German exclamation
-- Table destruction syncs with crash sound + register ching
-- Gustav cake consumption syncs with disturbing eating sounds
-- Chandelier sway syncs with crystal tinkle
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Herr Ober horror animation | German exclamation | On frame 1 of horror |
+| Table destruction | Crash sound + register ching | On impact frame |
+| Gustav cake consumption | Disturbing eating sounds | Per bite state change |
+| Chandelier sway | Crystal tinkle | On each direction change |
+| Judgment animation | Disappointed exhale | On held frame 3 |
 
 ### Quest Integration:
-- **Phase Start**: Gustav entry triggers chaos sprites
-- **Damage Tracking**: Each destruction increments counter
-- **Aftermath**: Switch to damaged state sprites
-- **Post-Quest**: Secured/memorial sprites load
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| Fiaker Fiasco (café phase) | Gustav entry, chaos sprites, evacuation NPCs | Phase start: Gustav entry triggers chaos state |
+| Fiaker Fiasco (damage tracking) | Destruction states, price popups, counter UI | Each destruction increments `fiaker_fiasco_damage_euro` (+€340 café total) |
+| Fiaker Fiasco (aftermath) | Damaged tileset states, hostile Herr Ober set | Post-quest unpaid: staff hostile, café closed 24h |
+| Debt repayment | Debt receipt, payment slider, Valued Patron badge | Debt cleared: commemorative menu, Gustav Cookie, friendly staff |
 
 ### Cross-Location Dependencies:
-- Gustav sprites shared with Opera House Plaza/Backstage
-- Damage counter UI reused across all Fiaker Fiasco locations
-- Herr Ober may appear in Opera Backstage (chasing bros)
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Opera House Plaza | Gustav sprites shared (incoming chase) | Chase hand-off from plaza terraces |
+| Opera Backstage (Bassline Opera House) | Gustav continues (outgoing chase); Herr Ober may appear chasing bros | Patio-door exit toward the alley |
+| The Moderato Pub | Retreat point reference (no shared sprites) | Standard door transition |
+| Café Existenz | Same district ambience (Kaffeehaus Row) | None |
+| All Fiaker Fiasco locations | Damage counter UI reused | Persistent CanvasLayer overlay |
 
 ---
 
 ## 🎨 Art Direction Summary
 
 ### Visual Aesthetic:
-- **Primary Theme**: "Faded grandeur meets modern pretension"
-- **Color Mood**: Warm browns and creams with gold accents
-- **Lighting**: Soft, warm interior glow; dramatic afternoon sun
-- **Texture**: Aged wood, polished marble, crystal clarity
+- **Primary Theme:** "Faded grandeur meets modern pretension"
+- **Color Mood:** Warm browns and creams with gold accents
+- **Lighting:** Soft, warm interior glow; dramatic afternoon sun
+- **Texture:** Aged wood, polished marble, crystal clarity
 
 ### Character Design Notes:
 - **Herr Ober**: Posture is KEY - ramrod straight degrading to slump
@@ -330,26 +514,6 @@ This document provides exact specifications for all PNG files needed for the Caf
 - Emperor's letter slightly too pristine = fake
 - Worn spots on marble floor = regulars' usual seats
 - Post-quest changes tell story (memorial, sign, secured case)
-
----
-
-## 📦 File Delivery Checklist
-
-### Required PNG Files (7 Total):
-- [ ] `cafe_sachertorte_tileset.png` (1024x512)
-- [ ] `herr_ober_waiter.png` (384x288)
-- [ ] `cafe_sachertorte_npcs.png` (384x288)
-- [ ] `cafe_sachertorte_landmarks.png` (512x384)
-- [ ] `cafe_sachertorte_destruction.png` (256x192)
-- [ ] `cafe_sachertorte_effects.png` (256x128)
-- [ ] `cafe_sachertorte_ui.png` (256x192)
-
-### Quality Requirements:
-- **Format:** PNG-24 with alpha channel
-- **Color Space:** sRGB
-- **DPI:** 72 (screen resolution)
-- **Compression:** Lossless PNG
-- **Naming Convention:** snake_case, all lowercase
 
 ---
 
@@ -367,7 +531,7 @@ This document provides exact specifications for all PNG files needed for the Caf
 - "The damage counter going crazy"
 - "One man. One horse. €340 in damages."
 
-### Quotable Content:
+### Quote Potential:
 - "That horse has better taste than most tourists." - Sous Chef Anna
 - "In thirty years of service... a HORSE." - Herr Ober
 - "€340. You will pay this. Now." - Herr Ober
@@ -375,7 +539,51 @@ This document provides exact specifications for all PNG files needed for the Caf
 
 ---
 
-## ✅ Final Validation
+## 📋 Required PNG Files (7 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | cafe_sachertorte_tileset.png | 1024x512 |
+| 2 | herr_ober_waiter.png | 384x288 |
+| 3 | cafe_sachertorte_npcs.png | 384x288 |
+| 4 | cafe_sachertorte_landmarks.png | 512x384 |
+| 5 | cafe_sachertorte_destruction.png | 256x192 |
+| 6 | cafe_sachertorte_effects.png | 256x128 |
+| 7 | cafe_sachertorte_ui.png | 256x192 |
+
+**Total Estimated Memory:** ~4 MB (uncompressed RGBA)
+
+---
+
+## 📦 File Delivery Checklist
+
+### Required PNG Files:
+- [ ] `cafe_sachertorte_tileset.png` (1024x512)
+- [ ] `herr_ober_waiter.png` (384x288)
+- [ ] `cafe_sachertorte_npcs.png` (384x288)
+- [ ] `cafe_sachertorte_landmarks.png` (512x384)
+- [ ] `cafe_sachertorte_destruction.png` (256x192)
+- [ ] `cafe_sachertorte_effects.png` (256x128)
+- [ ] `cafe_sachertorte_ui.png` (256x192)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha channel |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups
+- **Documentation:** Animation timing reference sheet + quest-state sprite swap guide
+
+---
+
+## ✅ Final Delivery Validation
 
 ### Before Submitting Assets:
 - [ ] Herr Ober's posture consistent across all states
@@ -385,6 +593,11 @@ This document provides exact specifications for all PNG files needed for the Caf
 - [ ] Damage counter UI readable on mobile screens
 - [ ] Steam particles loop seamlessly
 - [ ] All furniture matches EarthBound oblique style
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly
+- [ ] Accessibility visual alternatives included for all audio cues
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
 
 ### Quality Checkpoints:
 - [ ] Café feels refined yet fragile
@@ -392,6 +605,26 @@ This document provides exact specifications for all PNG files needed for the Caf
 - [ ] Emotional arc of Herr Ober is palpable
 - [ ] Economic satire elements visible (hidden charges, prices)
 - [ ] Post-quest changes tell complete story
-- [ ] Mobile performance optimized
+- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Colorblind-friendly alternatives available where color codes meaning
+- [ ] Social media viral potential maximized in composition choices
+
+---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ | Sinfonia only; Viennese café culture evoked, never named |
+| Cultural Specificity | ✅ | Kaffeehaus tradition, Sachertorte reverence, waiter-as-institution |
+| Satirical Targets Appropriate | ✅ | Tourist exploitation, hidden charges, pretension economy — punches up |
+| Seedy Underbelly Present | ✅ | Fake Emperor's letter, "American adjustment" surcharge, tourist detection pricing |
+| Gameplay Value Established | ✅ | Shop, quest phase 2, debt system, status effects, Valued Patron path |
+| Technical Feasibility | ✅ | Seven sheets, atlas plan, LOD tiers documented |
+| Mobile Performance Budget | ✅ | 60 FPS, 40 draw calls, 38 MB, 30 particles |
+| Accessibility Features | ✅ | Visual cues for all audio events; static motion variants |
+| No Crypto Elements | ✅ | None present |
+| Social Media Integration | ✅ | Cake heist and damage-counter moments identified |
 
 **Café Sachertorte: Where Vienna's famous €18 cake slice meets a horse with expensive taste and zero impulse control.**

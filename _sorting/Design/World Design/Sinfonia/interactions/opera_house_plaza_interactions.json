@@ -2,8 +2,8 @@
   "location_id": "sinfonia_imperial_opera_house_plaza_01",
   
   "npcs_present": [
-    "hans_jurgen_01",
-    "gustav_horse_01",
+    "sinfonia_npc_hans_jurgen_01",
+    "sinfonia_npc_gustav_horse_01",
     "fiaker_driver_collective",
     "opera_usher_01",
     "cafe_maitre_d_01",
@@ -264,7 +264,7 @@
     {
       "quest_id": "sinfonia_sidequest_fiaker_fiasco_01",
       "trigger_type": "approach_npc",
-      "npc": "hans_jurgen_01",
+      "npc": "sinfonia_npc_hans_jurgen_01",
       "condition": "time_is_day_hours",
       "cutscene": "hans_jurgen_panic_intro",
       "dialogue_initiation": {

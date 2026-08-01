@@ -63,8 +63,8 @@
     },
     
     {
-      "npc_id": "sinfonia_npc_hansjurgen_fiaker_01",
-      "display_name": "Hans-Jürgen Fiakermeister",
+      "npc_id": "sinfonia_npc_hans_jurgen_01",
+      "display_name": "Hans-Jürgen Pferdmann",
       "role": "desperate_horse_owner_emotional_core",
       "importance": "critical",
       

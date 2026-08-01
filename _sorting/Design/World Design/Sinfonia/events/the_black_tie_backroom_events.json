@@ -22,7 +22,7 @@
           "scene_not_yet_seen"
         ],
         "gate_pre_beat": {
-          "npc": "sinfonia_npc_viktor_doorman_01",
+          "npc": "sinfonia_npc_anton_doorman_01",
           "zone": "foyer",
           "effect": "under_funded_parties_are_bounced_at_the_door",
           "consequence": "the_encounter_cannot_fire_underfunded"
@@ -86,7 +86,7 @@
   "entry_events": {
     "first_entry": {
       "event_id": "blacktie_event_the_door_opens_01",
-      "trigger": "first_time_passing_viktors_check",
+      "trigger": "first_time_passing_antons_check",
       "zone": "foyer",
       "one_time": true,
       "effects": {
@@ -100,8 +100,8 @@
       "trigger": {"any_of": ["gold_under_500", "no_black_tie_and_no_members_card", "stat_check_failed"]},
       "zone": "foyer",
       "repeatable": true,
-      "canonical_line": {"speaker": "sinfonia_npc_viktor_doorman_01", "text": "Döner is not accepted."},
-      "note": "Line is canon-locked and appears in this file only as the gate's registered response. Viktor's wider dialogue is owned by his profile.",
+      "canonical_line": {"speaker": "sinfonia_npc_anton_doorman_01", "text": "Döner is not accepted."},
+      "note": "Line is canon-locked and appears in this file only as the gate's registered response. Anton's wider dialogue is owned by his profile.",
       "effects": {"entry_blocked": true}
     }
   },
@@ -222,7 +222,7 @@
       "trigger": "return_within_24h_of_ban",
       "condition": "location_state_banned",
       "event": {
-        "npc": "sinfonia_npc_viktor_doorman_01",
+        "npc": "sinfonia_npc_anton_doorman_01",
         "blocks_entry": ["foyer", "main_floor", "high_stakes_salon", "private_boxes"]
       }
     },

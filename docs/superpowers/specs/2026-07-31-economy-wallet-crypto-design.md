@@ -160,6 +160,42 @@ may reference real places (Brazzaville) since they are framed as the real intern
   template compliance where item files are touched, ID/naming consistency, no edits to Aaron's
   profile or quest, lane discipline.
 
+## 7a. AUTHOR RULINGS — 2026-08-01 (locked)
+
+1. **Brands: KEEP EVERYTHING AS-IS.** Real brands in player-facing text (Guinness incl.
+   "GUINNESS SUPPOSITORIES", Four Loko, Muscle Milk, Advil, Aquafina, BAWLS, Axe, Oakleys,
+   Hot Topic, Kinko's, Habbo, Winamp, Furbies, WhatsApp, Uber) stay. Y2K specificity is the
+   texture. **No brands round will ever be run; this question is CLOSED.** No sweep, lane, or
+   reviewer may flag a brand as a defect. (This also authorizes the NFT below by name.)
+2. **Publandia NFT #4 — "America Online"** (author-minted): a 12-second audio NFT of pure 56k
+   modem screech, described as *"the birth cry of the modern internet."* Completes the 12-NFT
+   collection (Publandia 4/4). Gets a Legacy Vault card like the rest.
+3. **Brewery tracker rebuild — canon confirmed, NO naming needed.** The author's
+   `brewery_passport_book_complete.md` already rosters all 12 base-game breweries. The engine
+   tracker's 8 invented Publandia/Sinfonia IDs are struck. Canonical roster:
+   - **Debaucheryville:** The Absinthium Taproom · The Tap Dat Vault · Three-Crown Keg Haus ·
+     Ye Olde B.R.E.W. Lab
+   - **Publandia:** The Blarney Trap · The Stoutworks Brewery · Trinity of Pints · Shenanigans
+   - **Sinfonia:** The Moderato Pub · The Standing Ovation · Crown & Cask · The Dancing Stein
+   - **Shamsterdam (expansion, not in base tracker):** Brouwerij de Molen · Proeflokaal 't Kansen
+     (+2 slots and 2 bonus slots remain author-TBD; expansion scope, no action this round)
+   Also fix the `deboucheryville` city-key typo and the `absynthium`→`absinthium` spelling.
+4. **Round 5 runs in full, retrofits included**, concurrent with the paused folder reorg.
+
+## 7b. Repo Reality (post-reorg, as of 2026-08-01)
+
+Branch `chore/folder-restructure`. Structure: `design/` (new skeleton — Round 5's NEW files land
+here, in `design/economy/`), `_sorting/` (staging holding the old `Design/` tree — retrofit
+targets live here), `game/` (Godot: `game/Assets/`, `game/Scripts/`), `docs/`, `Production/`,
+`Tools/`, `Marketing/`, `Builds/`.
+- **CONCURRENT-WINDOW GUARD (binding):** another window owns an in-flight PNG-asset task —
+  **87 dirty files under `**/PNG_Assets/**`**. No lane may edit ANY file under a `PNG_Assets/`
+  directory this round. Every lane still runs `git status --porcelain -- "<file>"` before
+  editing and skips + ledgers anything dirty.
+- NPC profiles were relocated by the reorg into their location folders, e.g.
+  `_sorting/Design/World Design/Debaucheryville/npcs/Bohemian_Riviera/zdenka.md`. Lanes must
+  locate files by search, never by remembered path.
+
 ## 8. Out of Scope
 
 Building/hosting the real QR web pages (production, ledgered); engine implementation (Godot

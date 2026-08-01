@@ -228,7 +228,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ## NPCs & Staff
 ### Hostel Staff
 
-**Receptionist Jakub**
+**Receptionist Radek**
 - **Role**: Day shift reception, seen everything, judges nothing
 - **Appearance**: Late 20s Czech man, perpetual stubble, hostel t-shirt, thousand-yard stare
 - **Background**: Film student who took a "temporary" job 4 years ago, now knows more about human behavior than his professors
@@ -295,7 +295,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 - **Dialogue**: "That's MY outlet. Bottom bunk by the window has the best breeze. Kitchen's clear at 6:12 AM exactly."
 
 ### Original NPC Dialogue
-**Jakub's Hostel Philosophy (Extended):**
+**Radek's Hostel Philosophy (Extended):**
 - "Four years I've worked here. I've seen 10,000 people at their most vulnerable. Drunk, heartbroken, lost, found, confused, enlightened. All of them in the same bunk beds."
 - "The hostel is democracy. Everyone pays €12, everyone gets the same experience. Rich, poor, famous, nobody. Equal chaos."
 - "People think hostels are about saving money. They're wrong. Hostels are about giving up control. That's harder than it sounds."
@@ -357,7 +357,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Snore crescendo, alarm warfare sequence
-- **Character Voice Direction**: Jakub's tired efficiency, Petra's night-owl energy
+- **Character Voice Direction**: Radek's tired efficiency, Petra's night-owl energy
 - **Environmental Comedy**: Kitchen conflict sounds, passive-aggressive note reading
 - **The 3 AM Moment**: Audio shift when deep conversations begin
 
@@ -372,7 +372,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
   - Bunk bed detailed view
   - Bathroom corridor
   - Basement lockers/laundry
-  - Staff NPCs (Jakub, Petra)
+  - Staff NPCs (Radek, Petra)
   - Guest NPCs (rotating cast)
 - **Animation Requirements**:
   - Guest wandering patterns
@@ -393,7 +393,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ### Social Media Strategy
 - **Instagram Moments**: Bunk bed aesthetic, kitchen note wall, common room chaos
 - **TikTok Potential**: Roommate event compilations, 3 AM conversation clips, kitchen warfare
-- **Twitter Hooks**: Jakub's philosophy, hostel survival tips, passive-aggressive note collection
+- **Twitter Hooks**: Radek's philosophy, hostel survival tips, passive-aggressive note collection
 - **Streaming Content**: Full night at the hostel, all random events, confession unlocks
 
 ### Community Engagement
@@ -431,8 +431,8 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 - laundry_room.png - 256x256 - Coin-eating machines
 
 ### Character Sprites (14 PNGs)
-- jakub_receptionist.png - 64x96 - Day shift, thousand-yard stare
-- jakub_checking_in.png - 64x96x2 - Registration process
+- radek_receptionist.png - 64x96 - Day shift, thousand-yard stare
+- radek_checking_in.png - 64x96x2 - Registration process
 - petra_night.png - 64x96 - Nocturnal energy
 - gap_year_gary.png - 64x96 - 18 months and counting
 - heartbreak_hannah.png - 64x96 - Journaling intensifies
@@ -468,4 +468,4 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 ---
 
-*Hostel "Midnight Checkout": Check-in anytime, checkout eventually, sleep never guaranteed. €12 buys you a bed, 11 strangers, one working shower, and stories you'll tell forever. Jakub has seen everything. Nothing surprises him anymore.*
+*Hostel "Midnight Checkout": Check-in anytime, checkout eventually, sleep never guaranteed. €12 buys you a bed, 11 strangers, one working shower, and stories you'll tell forever. Radek has seen everything. Nothing surprises him anymore.*

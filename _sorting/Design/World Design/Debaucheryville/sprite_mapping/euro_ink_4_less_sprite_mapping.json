@@ -65,16 +65,16 @@
         "hearts_roses": {"x": 0, "y": 256, "width": 128, "height": 128},
         "dragons": {"x": 128, "y": 256, "width": 128, "height": 128},
         "text_designs": {"x": 256, "y": 256, "width": 128, "height": 128},
-        "viktor_specials": {"x": 384, "y": 256, "width": 128, "height": 128}
+        "jakub_specials": {"x": 384, "y": 256, "width": 128, "height": 128}
       },
       "key_comparison": {
         "clock_skeleton_reference": {"x": 0, "y": 384, "width": 96, "height": 96},
-        "viktor_interpretation": {"x": 96, "y": 384, "width": 96, "height": 96}
+        "jakub_interpretation": {"x": 96, "y": 384, "width": 96, "height": 96}
       }
     },
     
-    "viktor_artist": {
-      "file": "viktor_artist.png",
+    "jakub_artist": {
+      "file": "jakub_artist.png",
       "dimensions": {"width": 512, "height": 384},
       "character_poses": {
         "idle_standing": {"x": 0, "y": 0, "width": 64, "height": 96},
@@ -170,9 +170,9 @@
       "dimensions": {"width": 512, "height": 256},
       "sketch_sequence": {
         "reference_photo": {"x": 0, "y": 0, "width": 64, "height": 64},
-        "viktor_drawing_1": {"x": 64, "y": 0, "width": 64, "height": 64},
-        "viktor_drawing_2": {"x": 128, "y": 0, "width": 64, "height": 64},
-        "viktor_drawing_3": {"x": 192, "y": 0, "width": 64, "height": 64},
+        "jakub_drawing_1": {"x": 64, "y": 0, "width": 64, "height": 64},
+        "jakub_drawing_2": {"x": 128, "y": 0, "width": 64, "height": 64},
+        "jakub_drawing_3": {"x": 192, "y": 0, "width": 64, "height": 64},
         "final_sketch_duck": {"x": 256, "y": 0, "width": 64, "height": 64},
         "sketch_closeup": {"x": 320, "y": 0, "width": 96, "height": 96}
       },
@@ -265,9 +265,9 @@
         "sold_out": {"x": 192, "y": 88, "width": 48, "height": 24}
       },
       "dialogue_portraits": {
-        "viktor_happy": {"x": 0, "y": 160, "width": 48, "height": 48},
-        "viktor_proud": {"x": 48, "y": 160, "width": 48, "height": 48},
-        "viktor_confused": {"x": 96, "y": 160, "width": 48, "height": 48},
+        "jakub_happy": {"x": 0, "y": 160, "width": 48, "height": 48},
+        "jakub_proud": {"x": 48, "y": 160, "width": 48, "height": 48},
+        "jakub_confused": {"x": 96, "y": 160, "width": 48, "height": 48},
         "marta_skeptical": {"x": 144, "y": 160, "width": 48, "height": 48},
         "marta_shrug": {"x": 192, "y": 160, "width": 48, "height": 48}
       }
@@ -285,7 +285,7 @@
       "duration_per_frame": 0.125,
       "loop": true
     },
-    "viktor_drawing": {
+    "jakub_drawing": {
       "frames": 5,
       "total_duration_seconds": 8,
       "includes": "periodic_proud_glance_at_customer"
@@ -331,7 +331,7 @@
       },
       {
         "name": "euro_ink_characters",
-        "files": ["viktor_artist.png", "marta_assistant.png", "lord_pilsner_reactions.png"],
+        "files": ["jakub_artist.png", "marta_assistant.png", "lord_pilsner_reactions.png"],
         "max_size": "512x512",
         "compression": "PVRTC_iOS_ETC2_Android"
       },

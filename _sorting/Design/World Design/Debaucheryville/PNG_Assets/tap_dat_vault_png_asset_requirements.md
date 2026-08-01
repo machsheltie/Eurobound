@@ -3,6 +3,41 @@
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for The Tap Dat Vault brewery dungeon. Each sprite sheet includes pixel-perfect coordinates, color specifications, and animation requirements for this cyberpunk basement nightclub where experimental vapor-brewed lagers meet GPU breakdown aesthetics.
 
+**Location ID:** `debaucheryville_clocktower_tapdatvault_brewery_02`
+**Theme:** Vape culture meets pretentious craft brewing — "We Don't Serve Beer — We Inhale It" in a nightclub inside a GPU having a breakdown
+**Zone:** Hidden cellar beneath Clocktower Plaza
+**Hours:** Midnight only — vault door opens at exactly 00:00 game time (countdown glyphs mark the timing)
+**Primary Function:** Brewery Tour dungeon #2 of 4 — rhythm-based vapor pressure puzzle, Glitched Brew Ad Bot mini-mob, Strobe Brewmistress boss battle, Vape Stout brew reward, hologram selfie spot
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Neon Cyan | #00FFFF | Primary neon piping grid, UI theming, rhythm-reactive lighting |
+| Hot Pink | #FF1493 | Accent neon, energy particles, alert UI states |
+| Deep Purple | #4B0082 | Shadow tones, secondary glow layers |
+| Cyberpunk Black | #000000 | Vault structure, background depth |
+| Vapor White | #FFFFFF | Vapor clouds, hologram "You Are Brewtiful" text |
+| Success Gold | #FFD700 | Achievement popups, success UI states |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/tapdatvault/
+├── environment/
+│   └── tapdatvault_environment_complete.png
+├── interactive/
+│   └── tapdatvault_interactive_objects.png
+├── characters/
+│   └── tapdatvault_npcs.png
+├── particles/
+│   └── tapdatvault_particle_effects.png
+└── ui/
+    └── tapdatvault_ui_elements.png
+```
+
 ---
 
 ## 🎨 Sprite Sheet 1: Tap Dat Vault Environment Complete
@@ -596,6 +631,20 @@ This document provides exact specifications for all PNG files needed for The Tap
 
 ---
 
+## 📋 Required PNG Files (5 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | tapdatvault_environment_complete.png | 1024x768 |
+| 2 | tapdatvault_interactive_objects.png | 512x384 |
+| 3 | tapdatvault_npcs.png | 512x384 |
+| 4 | tapdatvault_particle_effects.png | 512x256 |
+| 5 | tapdatvault_ui_elements.png | 512x256 |
+
+**Total Estimated Memory:** ~5.8 MB uncompressed RGBA (within the 48MB location footprint)
+
+---
+
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (5 Total):
@@ -771,5 +820,20 @@ This document provides exact specifications for all PNG files needed for The Tap
 - Track mobile optimization variants separately
 
 ---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ | Debaucheryville — hidden cellar beneath Clocktower Plaza only |
+| Cultural Specificity | ✅ | Eastern European underground nightclub scene meets Western tech-bro vapor culture |
+| Satirical Targets Appropriate | ✅ | Vape commercialization, pretentious brewing, influencer content culture — not nicotine users or legitimate breweries |
+| Seedy Underbelly Present | ✅ | Nightclub disguised as brewery selling flavored vape juice as "experimental beer" to drunk tourists |
+| Gameplay Value Established | ✅ | Rhythm puzzle, Ad Bot mini-mob with item theft, Strobe Brewmistress boss, Vape Stout reward, Brewery Tour 2/4 progression |
+| Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D vapor/neon, 128 BPM sync system documented |
+| Mobile Performance Budget | ✅ | 45 FPS target, max 20 draw calls, 48MB memory footprint |
+| Accessibility Features | ✅ | Visual audio cues (bass drop wave, rhythm beat visual), pattern-based rhythm indicators, reduced strobe options |
+| No Crypto Elements | ✅ | None present — tech-bro satire is vape/GPU themed, no crypto content |
+| Social Media Integration | ✅ | Hologram selfie wall, midnight vault opening, DJ zombie beat sync, quotable glitch dialogue identified |
 
 **Once validated, The Tap Dat Vault becomes the unforgettable second brewery dungeon where players must sync button presses to maintain vapor pressure in a cyberpunk basement nightclub, fight literal spam advertising as the Glitched Brew Ad Bot mini-mob, defeat the Strobe Brewmistress boss who attacks with sound waves timed to music, and unlock the Vape Stout brew (with Glow-Up Aura but risky Grease Fingers) while the bartender wearing a vape rig on a lanyard deadpans "We don't serve beer — we inhale it" in a venue that opens only at midnight and feels like a nightclub rendered by a GPU having a breakdown!**

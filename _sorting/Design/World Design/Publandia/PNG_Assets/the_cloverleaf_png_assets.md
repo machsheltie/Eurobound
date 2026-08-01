@@ -1,15 +1,19 @@
 # The Cloverleaf (Eternal Roundabout) - Complete PNG Asset Requirements
 
 ## 📋 Overview
+The Cloverleaf is Eurobound's most visually ambitious set-piece: an impossibly large Irish roundabout where every exit leads back to the beginning, populated by a functioning society of the trapped — Patrick and Margaret's 1987 wedding van still circling toward the Cliffs of Moher, a democratic tour bus community, a food truck economy, and Seán, who knows the exit and never takes it. This document specifies every PNG asset for the roundabout, its eight resident vehicles, effects, and UI. Its satirical essence in a sentence: American tourist impatience meets Irish "it'll be grand" acceptance, and the only way out is to slow down.
+
 **Location ID:** `publandia_outskirts_cloverleaf_roundabout_01`  
 **Theme:** Eternal circulation, absurdist society, American impatience vs. Irish acceptance  
 **Zone:** Publandia Outskirts, 1km east of Paddy's Premium Motors  
+**Hours:** Always accessible (24/7 — the roundabout never closes; auto-triggered when driving east from Paddy's, cannot be avoided)  
+**Primary Function:** Major set-piece / driving puzzle / absurdist ecosystem — quest "The Cloverleaf of Confusion" with binary path choice (Path A: escape by slowing down, 20-30 min; Path B: adapt to roundabout life, 3+ in-game days); lane merge and food truck intercept minigames  
 **Type:** Major Set-Piece - Complex Multi-Vehicle Scene  
 **Art Style:** EarthBound oblique view, stylized simplification over photorealism
 
 ---
 
-## 🎨 Master Color Palette
+## 🎨 Color Palette
 
 | Color Name | Hex Code | RGB | Usage |
 |------------|----------|-----|-------|
@@ -30,7 +34,7 @@
 
 ---
 
-## 📁 Folder Structure
+## 📁 File Structure
 
 ```
 assets/sprites/locations/publandia/cloverleaf_roundabout/
@@ -525,7 +529,7 @@ assets/sprites/locations/publandia/cloverleaf_roundabout/
 
 ---
 
-## 📐 Animation Specifications
+## 🎬 Animation Specifications
 
 ### Pre-Baked Circulation Loops
 
@@ -553,6 +557,162 @@ All circling vehicles use pre-animated loops for mobile performance.
 | Seán | Knowing nod | 4 | 1s | No |
 | Kevin | White-knuckle grip | 2 | 0.5s | Yes |
 | Brenda | Flinch | 4 | 0.5s | No |
+
+### Key Animation Details
+
+### Patrick's Wave (Sheet 3):
+- **Duration:** 1.5 seconds
+- **Frames:** 6
+- **Pattern:** Raise → wave → lower, no loop
+- **Trigger:** First encounter; passing the bros' rental car
+- **Purpose:** The game's warmest and most unsettling greeting — 37 years of circling, still friendly
+- **Audio Sync:** Faint wedding march (music box version) as the van passes
+- **Mobile Optimization:** None needed (part of pre-baked van loop)
+
+### Margaret's Wind Sway (Sheet 3):
+- **Duration:** 2 seconds per cycle
+- **Frames:** 4
+- **Pattern:** Gentle sway loop, continuous and subtle
+- **Trigger:** Constant (wind effect)
+- **Purpose:** She is at rest, not lifeless — dignity in motion; brief ominous chord resolves to warm tone on first reveal
+- **Audio Sync:** Brief ominous chord on first sighting, quickly replaced by warm tone
+- **Mobile Optimization:** None needed
+
+### GPS Recalculating (UI):
+- **Duration:** ~2 seconds per loop, escalating versions over quest
+- **Frames:** Loading animation cycle; final version adds subtle crying detail
+- **Pattern:** Loop while GPS active; version swaps at frustration milestones
+- **Trigger:** Every failed exit attempt / continuous during circling
+- **Purpose:** The GPS is as trapped as the player — comedy through UI decay
+- **Audio Sync:** "Recalculating" voice line with sad trombone undertone on failure
+- **Mobile Optimization:** None needed
+
+### Windshield Wiper Overlay (Effects):
+- **Duration:** Swipe every 3 seconds
+- **Frames:** 4 blade positions
+- **Pattern:** Rhythmic swipe loop, constant
+- **Trigger:** Constant (default light rain weather)
+- **Purpose:** Rhythmic hypnosis of the eternal circle; POV framing device
+- **Audio Sync:** Wiper rhythm layered under rain patter
+- **Mobile Optimization:** Disable overlay entirely at Low LOD
+
+### Circulation Loops (all vehicles):
+- **Duration:** 20-90 seconds per vehicle (see table above)
+- **Frames:** Pre-baked path animation, 12fps character detail / 30fps particles
+- **Pattern:** Continuous loops; Seán's loop deliberately passes Exit 6 without slowing
+- **Trigger:** Constant while location active
+- **Purpose:** Hypnotic perpetual motion — the roundabout as ecosystem
+- **Audio Sync:** Per-lane engine beds; radio snippets fade in/out as vehicles pass
+- **Mobile Optimization:** Pre-baked loops (no real-time pathfinding); distant vehicles simplified to colored rectangles
+
+---
+
+## ♿ Accessibility Sprite Requirements
+
+### High Contrast Alternatives:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Exit sign high-contrast set | set at sheet layout | 256x256 sheet | Bold-outline exit sign variants — exit reading is the core puzzle interaction |
+| Lane boundary outlines | set at sheet layout | overlay | High-contrast lane divider overlay for the three concentric lanes |
+| Vehicle silhouette set | set at sheet layout | per vehicle | Distinct outline shapes for the 8 resident vehicles (recognition without color) |
+
+### Motion Sensitivity Options:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| Static rain option | set at sheet layout | 64x64 | Reduced/disabled rain particle variant (density scalable to zero) |
+| Wiper overlay off-state | n/a | n/a | Windshield wiper overlay can be disabled — constant rhythmic motion is a vestibular trigger |
+| Reduced circulation mode | n/a | n/a | Background traffic loops pausable; hero vehicles remain (slow, steady movement only) |
+
+### Visual Audio Cues:
+| Element | Position | Size | Description |
+|---------|----------|------|-------------|
+| GPS Recalculating panel | UI | 256x128 | Visual mirror of the "recalculating" voice line (already specified) |
+| Indicator tick icon | set at sheet layout | 24x24 | Blinking indicator visual (1Hz) mirroring the tick-tick-tick audio |
+| Radio snippet marker | set at sheet layout | 24x24 | Music-note icon above vehicles when their radio audio is audible (love songs from the 1987 van, tour bus PA) |
+| Exit success flash | set at sheet layout | 64x64 | Visual for the triumphant-relief stinger on successful exit |
+
+### Colorblind Considerations:
+- Exit signs distinguished by arrow direction + text, never color alone (all six are deliberately identical green — the confusion is textual, not chromatic)
+- Lane difficulty communicated by lane width, asphalt tone AND position, not color coding
+- Brake light / indicator states paired with icon cues
+- Touch zones minimum 44px for lane-change and exit controls; text readable at mobile sizes
+
+---
+
+## 📱 Mobile Optimization
+
+### Texture Compression by Platform:
+- **iOS:** ASTC (fallback PVRTC 4BPP); wedding van sheet and GPS UI need higher quality (hero asset, readable text)
+- **Android:** ETC2 with alpha
+- **Fallback:** PNG high quality for roundabout base and exit signs (gameplay-critical readability)
+
+### Texture Atlases:
+| Atlas | Contents | Max Size |
+|-------|----------|----------|
+| cloverleaf_environment | roundabout base, island, monument, gift shop, signs, approach, backgrounds | 2048x2048 |
+| cloverleaf_vehicles | all 8 resident vehicles + bros rental + drivers | 1024x1024 |
+| cloverleaf_effects_ui | rain, exhaust, spray, wipers, headlights, counters, GPS | 512x512 |
+
+*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+
+### LOD Levels:
+| Level | Description |
+|-------|-------------|
+| High | 8 detailed vehicles, full rain (50 particles/sec), exhaust per vehicle, road spray, wiper overlay |
+| Medium | Reduced particle density (scalable rain), simplified exhaust, distant vehicles at 50m simplified |
+| Low | Distant vehicles as colored rectangles, minimal rain, no road spray, wiper overlay off |
+
+### Performance Targets:
+- **Target FPS:** 60 (baseline device: iPhone 8)
+- **Max Draw Calls:** Under 50
+- **Memory Footprint:** Under 64 MB total for location
+- **Particle Limit:** Rain 50 particles/second (scalable) + 8 exhaust sources max
+
+### Performance Notes:
+- All circling vehicles use pre-baked animation loops — no real-time pathfinding
+- Max 8 detailed vehicles on screen; LOD distance 50m
+- Particle density scalable by device capability
+- Target resolutions: 1x, 2x, 3x for mobile scaling
+
+---
+
+## 🔧 Technical Integration Notes
+
+### Godot Engine Integration:
+- All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
+- Node types: Sprite2D on Path2D/PathFollow2D (pre-baked circulation loops), CPUParticles2D (rain, exhaust, spray — not GPU), CanvasLayer (wiper overlay, GPS, counters), AnimationPlayer for character sub-animations
+- Special systems: speed-threshold exit resolver (exits only work below threshold), circle/day counters bound to quest state, Path A/B branch controller, GPS escalation state machine, food truck schedule window (south bend, outer lane)
+
+### Audio Sync Points:
+| Visual Element | Audio Cue | Timing |
+|----------------|-----------|--------|
+| Wedding van passing | Faint wedding march (music box) + love songs 1987 radio | While van within pass range |
+| Margaret first visible | Brief ominous chord → warm tone | On first reveal camera focus |
+| Seán's Micra passing Exit 6 | Existential drone (philosophy scenes) | Dialogue-triggered |
+| GPS Recalculating panel | "Recalculating" voice + sad trombone undertone | On failed exit / continuous circling |
+| Missed exit | Whoosh + GPS beep | On exit pass above speed threshold |
+| Food truck window open | Cheerful food service jingle + sizzle | During outer-lane serve window |
+| Successful exit | Triumphant relief stinger | On exit below speed threshold |
+| Indicator icon | Tick-tick-tick | 1Hz blink sync |
+
+### Quest Integration:
+| Quest | Sprite Elements Used | Integration Point |
+|-------|---------------------|-------------------|
+| The Cloverleaf of Confusion (`publandia_sidequest_eternal_roundabout_01`) | Entire location set | Auto-triggered driving east from Paddy's; binary Path A/B |
+| Path A: Escape Attempts | Exit signs, GPS UI, circle counter | Slow-down discovery; "Road Warrior" achievement |
+| Path B: Adaptation | Tour bus, food truck, days counter | 3+ in-game days; "Roundabout Veteran"; Bradley's girlfriend epilogue |
+| Lane Merge Challenge (minigame) | Lane indicator UI, merge zone markings | Timing-based merges |
+| Food Truck Intercept (minigame) | Food truck sheet, schedule UI | Position-matching during outer-lane window |
+
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Paddy's Premium Motors | Bros' rental car (Paddy's vehicle), Exit 3 | Entry prerequisite; Exit 3 returns to Paddy's |
+| Bigger Roundabout | Exit 1 signage | Exit 1 leads to a BIGGER roundabout |
+| Cliffs of Moher | Exit 6 signage | The actual destination — where Patrick and Margaret were going in 1987 |
+| Publandia background scenes | Patrick & Margaret van | Post-completion easter egg appearances |
+| Final Boss (Publandia) | Circulation pattern reference | Boss uses "roundabout attack pattern"; Lord Pilsner recognizes it |
+| Airplane Departure | Roundabout aerial, wedding van | Visible from airplane window, still circling |
 
 ---
 
@@ -598,6 +758,28 @@ All circling vehicles use pre-animated loops for mobile performance.
 
 ---
 
+## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "Tiny vehicles circling a massive roundabout forever — hypnotic, absurd, and quietly heartbreaking"
+- **Color Mood:** Grey overcast sky and wet asphalt against defiant Irish green; warm accents (van cream, food truck orange, bus red) mark the pockets of life
+- **Lighting:** Grey overcast daylight (perpetual "might rain" energy); headlights on at all hours (Irish tradition); ambient #B0B0B0 at 60% intensity; warm food truck glow (#FFD700)
+- **Texture:** Rain-slick asphalt with puddle reflections, 37 years of tire wear, moss on the monument, rust on the Micra and tractor
+
+### Environmental Storytelling:
+- Lane markings faded along the 1987 van's regular middle-lane path — 37 years written into the road itself
+- "GIFT SHOP - OPENING SOON (Since 1994)", the "EST. ???" monument plaque, and "ALL EXITS LEAD SOMEWHERE" vandalism
+- Tin cans worn to nubs, dead dashboard flowers, hand-painted "37 YEARS" banner — Patrick's whole story without a word
+- Laundry lines and roof gardens on the tour bus: a society, not a breakdown
+
+### Character Integration Notes:
+- Drivers and passengers render inside/on their vehicles (no on-foot NPC sprites in circulation)
+- Margaret rendered with dignity and reviewed for tone — love story, never gross-out (see CRITICAL ART DIRECTION, Sheet 3)
+- Seán's Micra must look unremarkable — the horror lands only when players realize he never exits
+- Bros' interior view sheet used for driving sequences and dialogue framing
+
+---
+
 ## 🎨 Style Reference Notes
 
 ### EarthBound Aesthetic Principles
@@ -616,8 +798,116 @@ All circling vehicles use pre-animated loops for mobile performance.
 
 ---
 
-## ✅ Delivery Checklist
+## 🎯 Social Media Viral Potential
 
+### Screenshot-Worthy Moments:
+1. **The 1987 Wedding Van with Margaret** - The game's most iconic visual: 37 years of love, still circling
+2. **Aerial Circulation View** - Endless hypnotic vehicle loops from above
+3. **"DAYS CIRCLING: 3" Counter Overlay** - Path B despair/comedy in one UI element
+4. **Tour Bus Community Celebration** - Democracy, laundry lines, and roof gardens on a trapped bus
+5. **Patrick Waving While Margaret "Rests"** - Tragicomedy in a single frame
+
+### Quote Potential:
+- "First time? ...That's what they all say."
+- "They all lead back here eventually."
+- "In here, I know what comes next. Another circle. Then another."
+- "Did ye try... slowing down?"
+- "Margaret? She's just resting."
+
+### Meme Potential:
+- "Patrick and Margaret: 37 Years and Still Going"
+- "Seán could leave. He doesn't."
+- GPS sobbing "recalculating"
+- Tour bus democracy vs. American chaos
+
+---
+
+## 📋 Required PNG Files (43 Total)
+
+*Component files below are grouped per composite sheet where a sheet dimension is specified; individual component dimensions are set at sheet layout.*
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | roundabout_base_1024.png | 1024x1024 |
+| 2 | lane_markings_overlay.png | set at sheet layout |
+| 3 | center_island_512.png | 512x512 |
+| 4 | celtic_monument.png | set at sheet layout (80x120 in-scene) |
+| 5 | gift_shop_closed.png | set at sheet layout (60x40 in-scene) |
+| 6 | exit_signs_sheet.png | 256x256 |
+| 7 | approach_road.png | set at sheet layout |
+| 8 | background_fields.png | set at sheet layout |
+| 9 | background_sky.png | set at sheet layout |
+| 10 | wedding_van_base.png | 256x128 (composite sheet) |
+| 11 | wedding_van_details.png | set at sheet layout |
+| 12 | patrick_driver.png | set at sheet layout |
+| 13 | margaret_skeleton.png | set at sheet layout |
+| 14 | tin_cans_dragging.png | set at sheet layout |
+| 15 | tour_bus_base.png | 256x256 (composite sheet) |
+| 16 | tour_bus_passengers.png | set at sheet layout |
+| 17 | orla_with_clipboard.png | set at sheet layout |
+| 18 | food_truck_base.png | 192x128 (composite sheet) |
+| 19 | food_truck_window_open.png | set at sheet layout |
+| 20 | chef_maeve.png | set at sheet layout |
+| 21 | nissan_micra_1999.png | 128x64 (composite sheet) |
+| 22 | sean_driver.png | set at sheet layout |
+| 23 | learner_car_base.png | 128x64 (composite sheet) |
+| 24 | l_plates.png | set at sheet layout |
+| 25 | brenda_instructor.png | set at sheet layout |
+| 26 | kevin_student.png | set at sheet layout |
+| 27 | people_carrier_rental.png | 192x96 (composite sheet) |
+| 28 | murphy_family_silhouettes.png | set at sheet layout |
+| 29 | tractor_ancient.png | 192x128 (composite sheet) |
+| 30 | sheep_trailer.png | set at sheet layout |
+| 31 | padraig_driver.png | set at sheet layout |
+| 32 | rental_car_base.png | 128x64 (composite sheet) |
+| 33 | bros_interior_view.png | set at sheet layout |
+| 34 | rain_particles.png | 64x64 |
+| 35 | exhaust_puffs.png | 128x64 |
+| 36 | road_spray.png | set at sheet layout |
+| 37 | windshield_wiper_overlay.png | screen width x 200 |
+| 38 | headlight_glow.png | 128x64 |
+| 39 | circle_counter.png | 128x64 |
+| 40 | days_counter.png | 128x64 |
+| 41 | gps_recalculating.png | 256x128 |
+| 42 | lane_indicator.png | set at sheet layout |
+| 43 | food_truck_schedule.png | set at sheet layout |
+
+**Total Estimated Memory:** ~64 MB maximum (location performance budget)
+
+---
+
+## 📦 File Delivery Checklist
+
+### Required PNG Files:
+- [ ] Environment set: `roundabout_base_1024.png` (1024x1024), `center_island_512.png` (512x512), `exit_signs_sheet.png` (256x256), `lane_markings_overlay.png`, `celtic_monument.png`, `gift_shop_closed.png`, `approach_road.png`, `background_fields.png`, `background_sky.png`
+- [ ] Wedding van set (256x128 composite): `wedding_van_base.png`, `wedding_van_details.png`, `patrick_driver.png`, `margaret_skeleton.png`, `tin_cans_dragging.png`
+- [ ] Tour bus set (256x256 composite): `tour_bus_base.png`, `tour_bus_passengers.png`, `orla_with_clipboard.png`
+- [ ] Food truck set (192x128 composite): `food_truck_base.png`, `food_truck_window_open.png`, `chef_maeve.png`
+- [ ] Seán set (128x64 composite): `nissan_micra_1999.png`, `sean_driver.png`
+- [ ] Learner car set (128x64 composite): `learner_car_base.png`, `l_plates.png`, `brenda_instructor.png`, `kevin_student.png`
+- [ ] Family van set (192x96 composite): `people_carrier_rental.png`, `murphy_family_silhouettes.png`
+- [ ] Tractor set (192x128 composite): `tractor_ancient.png`, `sheep_trailer.png`, `padraig_driver.png`
+- [ ] Bros rental set (128x64 composite): `rental_car_base.png`, `bros_interior_view.png`
+- [ ] Effects: `rain_particles.png` (64x64), `exhaust_puffs.png` (128x64), `road_spray.png`, `windshield_wiper_overlay.png` (screen width x 200), `headlight_glow.png` (128x64)
+- [ ] UI: `circle_counter.png` (128x64), `days_counter.png` (128x64), `gps_recalculating.png` (256x128), `lane_indicator.png`, `food_truck_schedule.png`
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG with transparency, 32-bit RGBA |
+| Color Space | sRGB |
+| DPI | 72 (screen resolution) |
+| Compression | Lossless PNG |
+| Naming Convention | snake_case, all lowercase |
+| Layer Organization | Preserve layers in master file |
+| Resolutions | 1x, 2x, 3x variants for mobile scaling |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above, at 1x/2x/3x
+- **Backup:** Master PSD/layered file with organized layer groups
+- **Documentation:** Animation timing reference sheet + circulation loop path guide
+
+### Delivery Checklist:
 - [ ] All sprites delivered at 1x, 2x, 3x resolutions
 - [ ] Transparent backgrounds where required
 - [ ] Animation frames in sprite sheet format
@@ -626,6 +916,44 @@ All circling vehicles use pre-animated loops for mobile performance.
 - [ ] Performance tested with 8 active vehicles
 - [ ] Rain particles tested for mobile performance
 - [ ] All UI elements legible at mobile sizes
+
+---
+
+## ✅ Final Delivery Validation
+
+### Before Submitting Assets:
+- [ ] All PNG files match exact dimensions specified
+- [ ] Color palette matches hex codes exactly
+- [ ] Key gags read clearly: "JUST MARRIED 1987" legible-but-faded, tin cans worn to nubs, gift shop "Since 1994" sign, GPS crying easter egg subtle
+- [ ] Accessibility visual alternatives included for all audio cues (GPS voice, indicator ticks, radio snippets, exit stinger)
+- [ ] File naming follows snake_case convention
+- [ ] Master files preserve layer structure for future edits
+
+### Quality Checkpoints:
+- [ ] Satirical theme is clear throughout all assets (American impatience vs. Irish acceptance; existential comfort horror)
+- [ ] Margaret reviewed for tone — dignity and love story, never gross-out
+- [ ] Hidden details discoverable (bullet-holed sign, sheep staring at camera, COUNCIL MEETING window, GPS tears)
+- [ ] Mobile performance optimized (pre-baked loops, CPU particles, 8-vehicle cap, atlas limits respected)
+- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Colorblind-friendly alternatives available where color codes meaning (exit signs by text/arrow, not color)
+- [ ] Social media viral potential maximized in composition choices (wedding van framing, aerial circulation shot)
+
+---
+
+## 🏆 Location Validation Status
+
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ | Publandia throughout ("Cliffs of Moher" is the in-world eternal destination reference) |
+| Cultural Specificity | ✅ | Irish roundabout confusion, emigration/staying themes, community resilience |
+| Satirical Targets Appropriate | ✅ | American tourist impatience (punching at privilege); Irish stereotypes affectionate |
+| Seedy Underbelly Present | ✅ | Accidentally existential — the vice is giving up on destinations entirely |
+| Gameplay Value Established | ✅ | Major set-piece, binary Path A/B, two minigames, status effects, post-completion unlocks |
+| Technical Feasibility | ✅ | Pre-baked animation loops solve mobile performance |
+| Mobile Performance Budget | ✅ | 60 FPS on iPhone 8, <50 draw calls, <64 MB, scalable particles |
+| Accessibility Features | ✅ | Visual audio cues, motion-reduction options (rain/wipers), text-based exit reading |
+| No Crypto Elements | ✅ | All transactions in Euros (food truck menu) |
+| Social Media Integration | ✅ | 5 screenshot moments + quotes + meme formats identified |
 
 ---
 

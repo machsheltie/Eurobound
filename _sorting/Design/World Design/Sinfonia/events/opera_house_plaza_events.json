@@ -7,7 +7,7 @@
     "initiation": {
       "event_id": "fiaker_fiasco_trigger",
       "trigger_type": "approach_npc_during_time",
-      "npc": "hans_jurgen_01",
+      "npc": "sinfonia_npc_hans_jurgen_01",
       "time_requirement": "day_hours_10_17",
       "first_visit_only": false,
       "cutscene_sequence": [
@@ -18,7 +18,7 @@
         },
         {
           "action": "npc_animation",
-          "npc": "hans_jurgen_01",
+          "npc": "sinfonia_npc_hans_jurgen_01",
           "animation": "panic",
           "duration_seconds": 3
         },
@@ -30,7 +30,7 @@
         },
         {
           "action": "npc_animation",
-          "npc": "hans_jurgen_01",
+          "npc": "sinfonia_npc_hans_jurgen_01",
           "animation": "running_in_place",
           "duration_seconds": 2
         },
@@ -51,7 +51,7 @@
         },
         {
           "action": "npc_animation",
-          "npc": "hans_jurgen_01",
+          "npc": "sinfonia_npc_hans_jurgen_01",
           "animation": "shifty_eyes_toward_schnapps",
           "duration_seconds": 1
         },
@@ -113,7 +113,7 @@
         },
         {
           "action": "npc_spawn",
-          "npc": "gustav_horse_01",
+          "npc": "sinfonia_npc_gustav_horse_01",
           "location": "fountain_edge",
           "animation": "drinking_water"
         },
@@ -129,7 +129,7 @@
         },
         {
           "action": "npc_animation",
-          "npc": "gustav_horse_01",
+          "npc": "sinfonia_npc_gustav_horse_01",
           "animation": "judgmental_stare",
           "target": "hans_jurgen",
           "duration_seconds": 3
@@ -146,13 +146,13 @@
         },
         {
           "action": "npc_animation",
-          "npc": "gustav_horse_01",
+          "npc": "sinfonia_npc_gustav_horse_01",
           "animation": "deliberate_snort",
           "duration_seconds": 1
         },
         {
           "action": "npc_animation",
-          "npc": "gustav_horse_01",
+          "npc": "sinfonia_npc_gustav_horse_01",
           "animation": "turn_and_trot_away",
           "direction": "toward_cafe_terraces"
         },
@@ -171,7 +171,7 @@
       "prerequisite": "gustav_first_appearance",
       "gameplay_mode": "chase_sequence",
       "chase_parameters": {
-        "target": "gustav_horse_01",
+        "target": "sinfonia_npc_gustav_horse_01",
         "speed_player": 1.0,
         "speed_target": 1.1,
         "catch_method": "cannot_catch_in_plaza",
@@ -208,7 +208,7 @@
         },
         {
           "action": "npc_animation",
-          "npc": "gustav_horse_01",
+          "npc": "sinfonia_npc_gustav_horse_01",
           "animation": "escape_trot",
           "direction": "exit_toward_cafe_sachertorte"
         },
@@ -251,7 +251,7 @@
         },
         {
           "type": "npc_spawn_occasional",
-          "npc": "gustav_horse_01",
+          "npc": "sinfonia_npc_gustav_horse_01",
           "probability": 0.15,
           "location": "background",
           "animation": "eating_from_flower_box",
@@ -267,7 +267,7 @@
       "additional_changes": [
         {
           "type": "npc_state_change",
-          "npc": "hans_jurgen_01",
+          "npc": "sinfonia_npc_hans_jurgen_01",
           "state": "working_with_gustav",
           "dialogue": "Ah, my American friends! Gustav and I, we are together again. He is... still judging me. But he is here. *sips schnapps*"
         },
@@ -286,7 +286,7 @@
       "additional_changes": [
         {
           "type": "npc_state_change",
-          "npc": "hans_jurgen_01",
+          "npc": "sinfonia_npc_hans_jurgen_01",
           "state": "working_with_zoo_horse",
           "dialogue": "The zoo horse is... not Gustav. But he pulls the carriage. Mostly. Sometimes he tries to return to the zoo. We are working on this."
         },

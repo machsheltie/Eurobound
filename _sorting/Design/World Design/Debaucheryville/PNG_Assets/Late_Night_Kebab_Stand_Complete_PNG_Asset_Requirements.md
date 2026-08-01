@@ -5,7 +5,40 @@ This document provides exact specifications for all PNG files needed for the Lat
 
 **Location ID:** `debaucheryville_velvet_alley_kebab_01`  
 **Theme:** Greasy post-party lifeline for blackout characters, sketchy street food exploitation  
+**Zone:** Velvet Alley — near the Velvet Curtain Club alley exit, wedged between chain-link fence and NFT-graffitied wall  
+**Hours:** Always accessible (24/7), thrives during post-party hours (10 PM – 6 AM)  
 **Primary Function:** Consumable vendor, grease-cure items, status management, Great Döner Debate sample
+
+---
+
+## 🎨 Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Fluorescent White | #FFFFFF | Cart lighting bank, blinding illumination states |
+| Grease Rainbow Orange | #FF6B35 | Grease puddles, food sheen, drip tray buildup |
+| Alley Shadow | #2C2C2C | Environment darks, fence, night alley surfaces |
+| Glitter Pink | #FF1493 | Mr. Chadz's glittery crop top, LED strip accents |
+| Vest Gray | #4B4B4B | Bulletproof vest, cart metal fixtures |
+| Gold | #FFD700 | Outfit gold accents, kebab coin icon |
+| Burner Black | #000000 | Burner phone, deepest shadows, off-state LEDs |
+
+---
+
+## 📁 File Structure
+```
+assets/sprites/locations/debaucheryville/late_night_kebab_stand/
+├── environment/
+│   └── alley_environment_details.png
+├── npcs/
+│   └── mr_chadz_kebab_vendor.png
+├── objects/
+│   ├── mr_chadz_kebab_cart_complete.png
+│   └── kebab_menu_items_detailed.png
+├── effects/
+│   └── kebab_stand_particle_effects.png
+└── ui/
+    └── kebab_stand_ui.png
+```
 
 ---
 
@@ -328,7 +361,33 @@ This document provides exact specifications for all PNG files needed for the Lat
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## ♿ Accessibility Sprite Requirements
+
+*(coordinates from legacy 64x96 grid — re-layout needed for new 96x128 grid)*
+
+### High Contrast Menu Items:
+- **Enhanced Food Visibility** (0, 448, 512x64) - All menu items with increased contrast
+- **Status Effect Icons Clear** (0, 512, 256x32) - Buff/debuff indicators emphasized
+- **Price Display Readable** (256, 512, 128x32) - Kebab coin costs visible
+
+### Visual Audio Cues:
+- **Sizzle Visual** (0, 544, 24x24) - Cooking sound indicator
+- **Phone Buzz Visual** (24, 544, 24x24) - Mr. Chadz call notification
+- **LED Flicker Warning** (48, 544, 32x16) - Strobe alternative indicator
+
+### Motion Sensitivity Options:
+- **Static Rotisserie** (384, 544, 64x96) - Non-rotating meat alternative
+- **Reduced Steam** (448, 544, 32x48) - Minimal particle mode
+- **No Flicker Lighting** (480, 544, 128x48) - Steady fluorescent alternative
+
+### Colorblind Considerations:
+- Status effect icons pair distinct shapes with color (bubble, question mark, drowsy eyes) so no buff/debuff is color-only
+- Grease puddle hazards readable by shimmer pattern, not hue alone
+- Touch zones minimum 44px for all menu buttons and interactive cart elements
+
+---
+
+## 📱 Mobile Optimization
 
 ### Texture Compression by Platform:
 - **iOS:** PVRTC 4BPP for fluorescent lighting, maintains harsh brightness
@@ -356,27 +415,6 @@ This document provides exact specifications for all PNG files needed for the Lat
 
 ---
 
-## ♿ Accessibility Sprite Requirements
-
-*(coordinates from legacy 64x96 grid — re-layout needed for new 96x128 grid)*
-
-### High Contrast Menu Items:
-- **Enhanced Food Visibility** (0, 448, 512x64) - All menu items with increased contrast
-- **Status Effect Icons Clear** (0, 512, 256x32) - Buff/debuff indicators emphasized
-- **Price Display Readable** (256, 512, 128x32) - Kebab coin costs visible
-
-### Visual Audio Cues:
-- **Sizzle Visual** (0, 544, 24x24) - Cooking sound indicator
-- **Phone Buzz Visual** (24, 544, 24x24) - Mr. Chadz call notification
-- **LED Flicker Warning** (48, 544, 32x16) - Strobe alternative indicator
-
-### Motion Sensitivity Options:
-- **Static Rotisserie** (384, 544, 64x96) - Non-rotating meat alternative
-- **Reduced Steam** (448, 544, 32x48) - Minimal particle mode
-- **No Flicker Lighting** (480, 544, 128x48) - Steady fluorescent alternative
-
----
-
 ## 🔧 Technical Integration Notes
 
 ### Godot Engine Integration:
@@ -399,9 +437,21 @@ This document provides exact specifications for all PNG files needed for the Lat
 - **Repeat Customer:** Purchase tracking unlocks backstory dialogue
 - **Achievement System:** Contributes to "World's Pickiest Drunk" badge
 
+### Cross-Location Dependencies:
+| Connected Location | Sprite Connection | Transition Effect |
+|--------------------|-------------------|-------------------|
+| Velvet Curtain Club | Alley exit adjacency — fluorescent glare visible from club's back door; shared alley wall graffiti | Club bass muffles as sizzle and fluorescent hum rise |
+| Absinthe Arcade | Status effect pipeline — grease-cure items counter arcade-acquired debuffs | Standard street transition, status icons persist |
+
 ---
 
 ## 🎨 Art Direction Summary
+
+### Visual Aesthetic:
+- **Primary Theme:** "An edible walk of shame under fluorescent interrogation lighting"
+- **Color Mood:** Blinding fluorescent white slammed against alley shadow; grease-rainbow orange and glitter pink supply the absurdity
+- **Lighting:** Single harsh fluorescent bank with flicker states plus LED strip accents — no soft light anywhere in the alley
+- **Texture:** Grease film on every surface, foil shine, damp asphalt, rusted chain-link
 
 ### Environmental Storytelling:
 - Rainbow grease puddles beautiful despite being hazards
@@ -409,25 +459,10 @@ This document provides exact specifications for all PNG files needed for the Lat
 - Post-party debris shows years of late-night operation
 - NFT graffiti represents cultural moment without dominating
 
----
-
-## 📦 File Delivery Checklist
-
-### Required PNG Files (6 Total):
-- [ ] `mr_chadz_kebab_cart_complete.png` (1024x768)
-- [ ] `mr_chadz_kebab_vendor.png` (512x512)
-- [ ] `kebab_menu_items_detailed.png` (1024x512)
-- [ ] `alley_environment_details.png` (1024x768)
-- [ ] `kebab_stand_particle_effects.png` (512x256)
-- [ ] `kebab_stand_ui.png` (384x256)
-
-### Quality Requirements:
-| Requirement | Specification |
-|-------------|---------------|
-| Format | PNG-24 with alpha |
-| Color Space | sRGB |
-| DPI | 72 |
-| Naming | snake_case |
+### Character Integration Notes:
+- Mr. Chadz rendered at 6'4" scale relative to the cart counter; deadpan expression never changes across all states
+- Carlos the Rat sits on the environment layer, not the NPC layer — a casual fixture, never a threat
+- Drunk customer NPCs (separate sprite sheets) queue along the chain-link fence, lit by fluorescent spill
 
 ---
 
@@ -450,11 +485,50 @@ This document provides exact specifications for all PNG files needed for the Lat
 
 ---
 
+## 📋 Required PNG Files (6 Total)
+
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | mr_chadz_kebab_cart_complete.png | 1024x768 |
+| 2 | mr_chadz_kebab_vendor.png | 512x512 |
+| 3 | kebab_menu_items_detailed.png | 1024x512 |
+| 4 | alley_environment_details.png | 1024x768 |
+| 5 | kebab_stand_particle_effects.png | 512x256 |
+| 6 | kebab_stand_ui.png | 384x256 |
+
+**Total Estimated Memory:** ~10 MB uncompressed RGBA (well within the 30MB location budget)
+
+---
+
+## 📦 File Delivery Checklist
+
+### Required PNG Files (6 Total):
+- [ ] `mr_chadz_kebab_cart_complete.png` (1024x768)
+- [ ] `mr_chadz_kebab_vendor.png` (512x512)
+- [ ] `kebab_menu_items_detailed.png` (1024x512)
+- [ ] `alley_environment_details.png` (1024x768)
+- [ ] `kebab_stand_particle_effects.png` (512x256)
+- [ ] `kebab_stand_ui.png` (384x256)
+
+### Quality Requirements:
+| Requirement | Specification |
+|-------------|---------------|
+| Format | PNG-24 with alpha |
+| Color Space | sRGB |
+| DPI | 72 |
+| Naming | snake_case |
+
+### Delivery Format:
+- **Primary:** Individual PNG files per specifications above
+- **Backup:** Master PSD/layered file with organized layer groups
+- **Documentation:** Animation timing reference sheet
+
+---
+
 ## ✅ Final Delivery Validation
 
 ### Before Submitting Assets:
-- [ ] All 5 PNG files match exact dimensions
-> ⚠ CONFLICT: legacy spec says 5 PNG files — BASE requires 6 (adds `kebab_stand_ui.png`) — author to decide.
+- [ ] All 6 PNG files match exact dimensions
 - [ ] Mr. Chadz 6'4" proportions feel imposing
 - [ ] Glittery crop top contrasts absurdly with bulletproof vest
 - [ ] All 8 menu items balance disgusting and appealing
@@ -482,16 +556,17 @@ This document provides exact specifications for all PNG files needed for the Lat
 
 ## 🏆 Location Validation Status
 
-| Requirement | Status |
-|-------------|--------|
-| World Consistency | ✅ PASS |
-| Cultural Specificity | ✅ PASS |
-| Satirical Targets | ✅ PASS |
-| Seedy Underbelly | ✅ PASS |
-| Gameplay Value | ✅ PASS |
-| Technical Feasibility | ✅ PASS |
-| Mobile Performance | ✅ PASS (50 FPS, 12 draws, 30MB) |
-| Accessibility | ✅ PASS |
-| Social Media | ✅ PASS |
+| Requirement | Status | Notes |
+|-------------|--------|-------|
+| World Consistency (no real city names) | ✅ PASS | Debaucheryville only |
+| Cultural Specificity | ✅ PASS | European late-night kebab culture |
+| Satirical Targets Appropriate | ✅ PASS | Desperate post-party tourists and sketchy exploitation, not locals |
+| Seedy Underbelly Present | ✅ PASS | Health code violations as atmosphere, mystery meat economy |
+| Gameplay Value Established | ✅ PASS | 8-item consumable vendor, status management, quest sample |
+| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Mobile Performance Budget | ✅ PASS | 50 FPS, 12 draws, 30MB |
+| Accessibility Features | ✅ PASS | Visual audio cues, motion sensitivity, high contrast options |
+| No Crypto Elements | ✅ PASS | "NFT 4 LYFE" graffiti is period-satire set dressing established in source material; no functional crypto |
+| Social Media Integration | ✅ PASS | Six viral moments identified |
 
 **The Late-Night Kebab Stand becomes the essential grease-cure station where 8 menu items provide strategic status management, Mr. Chadz dispenses mystery meat and wisdom in equal measure, Carlos provides quality control, and the Belly Of Chadz serves as Debaucheryville's official Great Döner Debate sample!**

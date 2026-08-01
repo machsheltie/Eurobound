@@ -128,7 +128,7 @@
       "role": "Prophecy Roulette / doom-prophet performer; Cirque du Shady's most beloved act",
       "location_zone": "prophecy_tent",
       "behavior": "stationary",
-      "full_profile": "Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md",
+      "full_profile": "Design/World Design/Debaucheryville/npcs/Cirque_du_Shady/hamstradamus.md",
       "note": "This entry is scoped to his Cirque du Shady prophecy-tent appearance only, mirroring how bohemian_riviera_npcs.json scopes his beach-podium appearance. Full appearance, personality, complete dialogue trees, and animation states are owned entirely by hamstradamus.md and are not restated here beyond what this location's Prophecy Roulette event needs.",
 
       "appearance": {
@@ -218,7 +218,7 @@
       "role": "Failed street performer, balloon-animal pitch",
       "location_zone": "performance_circle",
       "behavior": "stationary",
-      "defined_in": "Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/crypto_clown.md",
+      "defined_in": "Design/World Design/Debaucheryville/npcs/Cirque_du_Shady/crypto_clown.md",
       "note": "Full profile, dialogue trees, and shop inventory are owned entirely by crypto_clown.md. This is a pointer entry only, per cirque_du_shady.md's Zone Directory ('performance_circle ... Bobo: see NPCs section ... not modified'); nothing about him is restated or altered here beyond noting he shares performance_circle with the knife-throwing act on a rotating schedule."
     }
   ],
