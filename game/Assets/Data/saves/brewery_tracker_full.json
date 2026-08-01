@@ -1,22 +1,22 @@
 {
   "brewery_progress": {
     "debaucheryville": {
-      "the_absinthium_taproom": false,
-      "the_tap_dat_vault": false,
+      "absinthium_taproom": false,
+      "tap_dat_vault": false,
       "three_crown_keg_haus": false,
       "ye_olde_brew_lab": false
     },
     "publandia": {
-      "the_blarney_trap": false,
-      "the_stoutworks_brewery": false,
+      "blarney_trap": false,
+      "stoutworks_brewery": false,
       "trinity_of_pints": false,
       "shenanigans": false
     },
     "sinfonia": {
-      "the_moderato_pub": false,
-      "the_standing_ovation": false,
+      "moderato_pub": false,
+      "standing_ovation": false,
       "crown_and_cask": false,
-      "the_dancing_stein": false
+      "dancing_stein": false
     }
   },
   "brewery_global_total": 0
