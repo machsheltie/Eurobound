@@ -182,6 +182,24 @@ may reference real places (Brazzaville) since they are framed as the real intern
    Also fix the `deboucheryville` city-key typo and the `absynthium`→`absinthium` spelling.
 4. **Round 5 runs in full, retrofits included**, concurrent with the paused folder reorg.
 
+## 7c. NEW BINDING RULE — NFT Content Is 90s/00s Pop Culture (author-locked, permanent)
+
+**Every NFT in the Frat Bro collection depicts a 90s or 00s pop-culture artifact. NEVER a
+location-derived object.** The two axes are separate and must stay separate:
+- **Acquisition ROUTE** — location-specific and venue-flavored (a nightclub bathroom QR, a rigged
+  claw machine, an auction catalog, a backstage terminal). This is where you find it.
+- **ARTWORK / SUBJECT** — always 90s/00s pop culture, never the venue, never the city, never
+  local scenery. This is what it *is*.
+A location-derived NFT concept is a **defect**. The joke is that the bros crossed a continent and
+came home with American nostalgia they believe is a European art portfolio.
+Established register (author-authored): a grandiose financial name + `Mint #NN` (NN evokes the
+artifact's year) + a punchy pseudo-financial tagline + a description that frames the nostalgia
+as an economic phenomenon + a "Collector's Thesis" applying crypto-bro investment logic.
+**Author ruling 2026-08-01:** the 7 location-derived NFTs then in canon were struck and replaced
+(Millennium Bug, Sea-Monkeys, Napster, Holographic Charizard, Winamp, Crystal Pepsi, Pogs);
+their routes were unchanged. Card copy for those 7 is **authored by the author only** — lanes
+wire the names and routes and leave the copy blocks empty. No lane may fill them by invention.
+
 ## 7b. Repo Reality (post-reorg, as of 2026-08-01)
 
 Branch `chore/folder-restructure`. Structure: `design/` (new skeleton — Round 5's NEW files land
