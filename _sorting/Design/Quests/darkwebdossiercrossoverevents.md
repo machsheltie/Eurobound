@@ -613,6 +613,7 @@ Hamstradamus: YOUR COINS SHALL BECOME WORTHLESS PELLETS
 - Uses excessive emojis and crypto terminology incorrectly
 - Always trying to convince people to "invest" in his latest scheme
 - Profile pic: Stock photo of a lamborghini with "HODL" watermarked over it
+- System note: the coins he names and shills are drawn from `design/economy/shitcoin_master_pool.md` — the same roster the exchange kiosks list. He is also one of the standing ICQ airdrop senders per `design/economy/icq_airdrops.md`. Existing gags are unchanged; this is a sourcing note only
 
 ### Miss Morphine
 - Speaks in cryptic riddles mixed with customer service language

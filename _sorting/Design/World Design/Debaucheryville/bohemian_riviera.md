@@ -198,7 +198,7 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 | Beach lounger rental | €15/day | Sand is trucked in; chair is real |
 | "River View" upgrade | €25 | The view is of the opposite riverbank |
 | Space heater proximity seating | €5 | It is already 30°C |
-| Riverbank shower (`port_o_cologne` cure) | 50 Kč (40 Kč "if you go now") | Price rises the longer you stand there dripping |
+| Riverbank shower (`port_o_cologne` cure) | €50 (€40 "if you go now") | Price rises the longer you stand there dripping |
 | Piña colada in a coconut, Kokos Loco | €12 | Coconut shell is imported plastic |
 | VIP cabana, Žá Žá Beach Klub | €80 | Cabana is a repainted shipping container |
 | Beatdown sign-up | Free (release form signature) | Full contestant slot on a broadcast episode |
@@ -259,7 +259,7 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 - **Role**: Vendor NPC; sells the `port_o_cologne` status cure
 - **Appearance**: A folding cart with a hose rigged to a repurposed water tank, a hand-lettered price sign, sun-bleached apron
 - **Personality**: Brisk, transactional, entirely unsentimental about the fly particles trailing behind every customer
-- **Key Dialogue**: *"Fifty koruna for the shower. Forty if you go now. It goes up the longer you stand there."* — quoted verbatim from the Beatdown quest doc's NPC callback
+- **Key Dialogue**: *"Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there."* — quoted verbatim from the Beatdown quest doc's NPC callback
 - **Services/Function**: Direct `port_o_cologne` cure hook, available to any bro (or party member) who has been launched and waded ashore; price escalates the longer the affected party dawdles at her cart
 
 ### College-Vacationer Crowd *(ambient NPC group)*
@@ -386,7 +386,7 @@ bohemian_riviera_state:
 
 ### Quote Potential
 - "NO DIVING (SERIOUSLY, IT'S 40cm)"
-- "Fifty koruna for the shower. Forty if you go now."
+- "Fifty euro for the shower. Forty if you go now."
 - "Three today. Personal best is five. I keep a chart."
 - "Unfortunately, bro."
 

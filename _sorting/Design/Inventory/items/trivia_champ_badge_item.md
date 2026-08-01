@@ -100,7 +100,7 @@ Once won, the badge becomes **permanently pinned** to the winning bro's chest on
 | Velvet Curtain bouncer | "That is... child's toy, yes?" | "That is a champion's decoration, yes." |
 | Kid outside a party supply store | "Hey, we SELL those! They're in the birthday aisle, next to the pirate eyepatches." | "Underground collector's circuit. Deep cuts only." |
 | Off-duty real police officer | "That's not a badge. That's not even a convincing FAKE badge." | "Professional jealousy. Happens to every real deputy." |
-| Boardwalk trinket-cart kid | "You know I sell the exact one, right? Ten koruna, no waiting in a river." | "That's called competition, my dude. Mine's got provenance." |
+| Boardwalk trinket-cart kid | "You know I sell the exact one, right? Ten euro, no waiting in a river." | "That's called competition, my dude. Mine's got provenance." |
 | Locals who watched the episode air | *phones already out, recording, whispering to each other in Czech-parody* | "Fans. We have fans now." |
 
 ### Callback Dialogue Throughout Game

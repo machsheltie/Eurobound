@@ -280,8 +280,11 @@
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [ ] **Crypto elements ONLY if already established** in existing character description
-- [ ] **NO automatic crypto assumptions** - crypto is minor gag (2% of game max)
+- [ ] **Crypto content conforms to `design/economy/economy_system.md`** — the old "no new crypto content / 2% max" cap is superseded; crypto is a full authored system (SOVS for ~90% of trade, darknet shitcoins for the 10% back-alley economy)
+- [ ] **NO automatic crypto assumptions** - most NPCs still have none; give an NPC crypto only where the character already earns it
+- [ ] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — do not invent one-off coins in an NPC file
+- [ ] **The bros are never scam-aware** - even mid-rug-pull, every loss is a market correction; sellers and scammers always know exactly what they have
+- [ ] **Nothing winks** - no NPC line, tooltip, or aside signals that any of this is satire
 - [ ] **Focus on city-specific cultural exploitation instead**
 
 ### Satirical Target Verification

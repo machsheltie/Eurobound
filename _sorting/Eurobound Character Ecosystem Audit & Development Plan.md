@@ -60,7 +60,7 @@ After searching through all quest files, the character development scope is **MA
 #### **💰 Meme Black Market NPCs:**
 32. **Meme Dealer** - Rare in-game meme seller
 33. **Shiba Hype Summoner** - Battle morale specialist
-34. **Digital Currency Exchangers** - Meme-to-KC conversion
+34. **Digital Currency Exchangers** - Meme-to-SOVS conversion
 
 #### **🚕 Taxi Driver Confessionals:**
 35. **Multiple Taxi Drivers** - Procedural confession generators

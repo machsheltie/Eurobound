@@ -9,7 +9,7 @@
 - **Role**: Reality-TV Host / Recurring Quest NPC (game show host, lever operator, prize announcer)
 - **Associated Quest**: `debaucheryville_sidequest_bacchanus_beach_beatdown_01`
 - **Primary Location**: Fauxst Beach, The Bohemian Riviera, Debaucheryville
-- **Secondary Appearances**: Bar TVs along the Bohemian Riviera strip (looping episode footage), occasional Cirque du Shady walk-throughs (Shady Productions shares ownership with the Cirque), SuperKoruna Value Hypermarket on off-days
+- **Secondary Appearances**: Bar TVs along the Bohemian Riviera strip (looping episode footage), occasional Cirque du Shady walk-throughs (Shady Productions shares ownership with the Cirque), SuperSovs Value Hypermarket on off-days
 
 ---
 
@@ -71,7 +71,7 @@ Read as a Mountain Dew commercial that wandered onto a Czech riverbank and refus
 > *(thinking, in Czech; performing, in Californian)* "Three cans. None of the three pays enough on its own, and all three believe they're the only one I drink. That's the one lie in this entire contract that every sponsor knows and none of them will say out loud to each other. Meanwhile this one thinks the crown he's about to get pinned on him by a hamster is a career. Bro, it's Tuesday. We film again Thursday."
 
 ### Motivation
-Jaxson wants off Fauxst Beach and onto a real network slate — ideally something syndicated outside Debaucheryville entirely — and he has correctly identified that viral clips, not journalism, are the vehicle that gets him there. He isn't cruel about it; he simply understands, more clearly than anyone else on the beach, that the bros are the raw material and he is the editor. Off-days spent cutting ribbons at the SuperKoruna Value Hypermarket are the reminder of where he'll stay if the clips stop landing.
+Jaxson wants off Fauxst Beach and onto a real network slate — ideally something syndicated outside Debaucheryville entirely — and he has correctly identified that viral clips, not journalism, are the vehicle that gets him there. He isn't cruel about it; he simply understands, more clearly than anyone else on the beach, that the bros are the raw material and he is the editor. Off-days spent cutting ribbons at the SuperSovs Value Hypermarket are the reminder of where he'll stay if the clips stop landing.
 
 ---
 
@@ -136,7 +136,7 @@ Jaxson wants off Fauxst Beach and onto a real network slate — ideally somethin
 |------|----------|----------|
 | Filming days, midday–afternoon | Fauxst Beach, catapult row | Hosting live tapings of the Beatdown |
 | Filming days, immediately post-taping | Fauxst Beach, podium | Prize-podium announcements, sponsor can photo-ops |
-| Off-days, morning | SuperKoruna Value Hypermarket, riverside strip mall | Ribbon-cuttings and grand-reopening appearances, still in Oakleys |
+| Off-days, morning | SuperSovs Value Hypermarket, riverside strip mall | Ribbon-cuttings and grand-reopening appearances, still in Oakleys |
 | Off-days, evening | Bohemian Riviera bars (unannounced) | Watching his own aired episodes on the bar TVs, alone, taking notes |
 
 ### Positioning Notes

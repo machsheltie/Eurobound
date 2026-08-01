@@ -88,6 +88,7 @@
 - **Split-Flap Rate Board Mini-Game**: Interact during "green ticks" for improved rates, avoid "red ticks"
 - **Street Rep/Charm Influence**: Stats can nudge board for small temporary rate improvements
 - **Dynamic Rate Fluctuation**: Exchange rates change based on player timing and negotiation
+- **System Home**: The Exchange is Debaucheryville's face on the wider economy defined in `design/economy/economy_system.md` — it moves Sovereign-X (SOVS, displayed with the € glyph) into the volatile darknet shitcoins that the back-alley 10% of vendors will accept. The split-flap board is this location's presentation of the live randomized market roster; coin list, kiosk terminals, and rug-pull math live in the economy doc, not here
 
 ### Barter Window System (Original)
 - **Non-Currency Trading**: Concert wristbands, metro day-passes, gag items for rare gear

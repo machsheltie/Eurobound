@@ -125,7 +125,8 @@ Prague-Specific Status Effects
 Currency & Scam Mechanics
     • Dynamic Exchange Rates: Shadow Exchange rates fluctuate based on time and player actions 
     • Scam Mini-Games: Sleight-of-hand challenges where success = avoiding cons 
-    • Crypto Coins: Worthless currency that fluctuates wildly, part of running gags 
+    • Crypto Coins: Worthless currency that fluctuates wildly, part of running gags — these are the volatile darknet shitcoins the 10% back-alley economy runs on, bought at the exchange kiosks; roster, rug-pull odds, and kiosk terminals are defined in design/economy/economy_system.md 
+    • Standard Currency: Sovereign-X (SOVS), displayed with the € glyph, covers the other 90% — tickets, doctors, tips, lodging; all existing € prices are SOVS amounts and stand as written 
     • VIP Wristband Economy: Fake vs. real passes affect access and NPC treatment 
 Time-Based Elements
     • Hour-Dependent Events: Different NPCs and opportunities appear at specific times 

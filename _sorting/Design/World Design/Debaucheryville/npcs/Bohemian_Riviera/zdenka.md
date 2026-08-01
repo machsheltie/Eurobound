@@ -1,6 +1,6 @@
 # NPC Profile: Zdenka
 
-*"Fifty koruna for the shower. Forty if you go now. It goes up the longer you stand there."*
+*"Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there."*
 
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_zdenka_shower_vendor_01`
@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What They're Actually Doing
-Zdenka runs a shower off a folding cart: a hose rigged to a repurposed water tank, a hand-lettered price sign, and a sun-bleached apron. She fills the tank herself before dawn from a municipal standpipe up the embankment, hauls it, and sets up between the lifeguard tower and the water, which is the exact stretch of sand that everyone who has just come out of The Bacchanus has to walk across. The service is real. The water is clean, the pressure is adequate, and it cures `port_o_cologne` outright — she is not selling a placebo and has never needed to. Fifty koruna is the price. Forty if you go now. The number goes up the longer a customer stands at the cart deciding, and it does not come back down. She has never raised her voice at anyone, never chased a sale down the beach, and never once acknowledged the flies.
+Zdenka runs a shower off a folding cart: a hose rigged to a repurposed water tank, a hand-lettered price sign, and a sun-bleached apron. She fills the tank herself before dawn from a municipal standpipe up the embankment, hauls it, and sets up between the lifeguard tower and the water, which is the exact stretch of sand that everyone who has just come out of The Bacchanus has to walk across. The service is real. The water is clean, the pressure is adequate, and it cures `port_o_cologne` outright — she is not selling a placebo and has never needed to. Fifty euro is the price. Forty if you go now. The number goes up the longer a customer stands at the cart deciding, and it does not come back down. She has never raised her voice at anyone, never chased a sale down the beach, and never once acknowledged the flies.
 
 ### What Bros Believe
 The bros believe they are in a negotiation. The price moving is, to them, unmistakable evidence of a haggle in progress — a lever, an opening, a thing that can be worked. Chadwick's read is that walking away is leverage; he walks away twice and comes back to two higher numbers and reports both times that he is "getting there." Lord Pilsner believes that the "forty if you go now" is a limited-time offer he was smart enough to spot and is holding in reserve, strategically, for later. Bradley pays fifty at the top of the conversation, gets his shower, and stands to one side for the rest of it. Nobody asks him about it.
@@ -63,7 +63,7 @@ Read her as a working vendor with a solved pitch, not a hawker. No calling out, 
 |-------|--------------|
 | Brisk | The transaction takes as long as the transaction takes; there is no conversation attached to it and none is withheld unkindly |
 | Transactional | Every exchange with her resolves to a number; she has never once tried to be liked and has never once been disliked |
-| Unsentimental | Entirely unmoved by the state of anyone standing in front of her — soaked, humiliated, freshly televised, it is all the same fifty koruna |
+| Unsentimental | Entirely unmoved by the state of anyone standing in front of her — soaked, humiliated, freshly televised, it is all the same fifty euro |
 | Escalating By Design | The ladder is posted, the cards are pre-made, and the number moves in one direction only, on schedule, without commentary |
 | Never Sells | States the price, once, and then waits; the pitch is the position of the cart, not anything she says |
 
@@ -79,7 +79,7 @@ She owns the best pitch on the beach and she works it properly. The tank gets fi
 
 ### Approach/Greeting
 **Approached at the cart by any party member carrying `port_o_cologne` — and by anyone else, identically**:
-> "Fifty koruna for the shower. Forty if you go now. It goes up the longer you stand there."
+> "Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there."
 
 **Idle, with no customer at the cart**:
 *She says nothing. She is watching the water. This is a deliberate absence of a bark and must not be filled in a later pass.*
@@ -147,9 +147,9 @@ She owns the best pitch on the beach and she works it properly. The tank gets fi
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|---------------|----------------|
-| Riverbank shower — `port_o_cologne` cure | 50 Kč standard | Genuinely worth it; there is no cheaper cure anywhere within a walk of this beach | Removes `port_o_cologne` outright; `fly_swarm_dissipate` plays once on completion |
-| Riverbank shower — "if you go now" | 40 Kč | The same shower | Identical effect; available only on the first exchange, before any deliberation |
-| Riverbank shower — deliberation rate | 60 Kč, 70 Kč, 80 Kč | The same shower | Identical effect; the ladder climbs one card per stall and never descends, capped at 100 Kč |
+| Riverbank shower — `port_o_cologne` cure | €50 standard | Genuinely worth it; there is no cheaper cure anywhere within a walk of this beach | Removes `port_o_cologne` outright; `fly_swarm_dissipate` plays once on completion |
+| Riverbank shower — "if you go now" | €40 | The same shower | Identical effect; available only on the first exchange, before any deliberation |
+| Riverbank shower — deliberation rate | €60, €70, €80 | The same shower | Identical effect; the ladder climbs one card per stall and never descends, capped at €100 |
 | Riverbank shower — post-rinse rate | Current card, one higher | The same shower | For customers who tried the river first; the status refreshed, the price did not |
 
 ### Hidden Details / Easter Eggs
@@ -267,7 +267,7 @@ Local Central European English, brisk and direct, pitched for a working beach ra
 - **During the cure**: nothing. She does not talk through the shower. The hose is the sound
 
 ### Key Delivery Notes
-- The canon-locked greeting ships close to verbatim ("Fifty koruna for the shower. Forty if you go now. It goes up the longer you stand there.") and must never be delivered as a joke, a tease, or a haggle-opener
+- The canon-locked greeting ships close to verbatim ("Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there.") and must never be delivered as a joke, a tease, or a haggle-opener
 - The single-word escalations are the character; they must be flat, identical to one another, and never landed as punchlines
 - She never persuades. If a read makes any line sound like it is trying to close a sale, the character is broken
 - Voice acting priority: lock the escalation words first — they carry the whole performance and every other line is calibrated against how little they contain
@@ -295,7 +295,7 @@ Local Central European English, brisk and direct, pitched for a working beach ra
 
 ## 📝 Development Notes
 
-- **50 Kč / 40 Kč are the canonical posted figures** (Bohemian Riviera NPC JSON; `bohemian_riviera_environment.json` recovery options: `zdenka_riverbank_shower_cart_50kc_or_40kc_if_immediate`) and the canon-locked greeting line is quoted verbatim from the Beatdown quest doc's NPC callback. Do not restate these numbers differently anywhere.
+- **€50 / €40 are the canonical posted figures** (Bohemian Riviera NPC JSON; `bohemian_riviera_environment.json` recovery options: `zdenka_riverbank_shower_cart_50e_or_40e_if_immediate`) and the canon-locked greeting line is quoted verbatim from the Beatdown quest doc's NPC callback. Do not restate these numbers differently anywhere. The posted figures are SOVS amounts displayed with the € glyph per `design/economy/economy_system.md`; the numbers themselves are unchanged canon.
 - **The ladder rungs (60/70/80, cap 100) are her own escalation** and are authored here. Flag for implementation: `port_o_cologne` also applies a global +25% vendor smell tax. Whether that multiplier stacks on Zdenka's own ladder is an economy call for the systems pass — the constraint is that the "if you go now" rate must remain the cheapest cure on the beach in every combination, or her opening line stops being true.
 - **The card is persistent state.** Whatever rung the party leaves it at is the rung on their next visit, permanently. Small save flag, large payoff.
 - **She never looks at the flies.** Hard constant. The `no_look` hold is a deliberate animation requirement, not a note about her attitude.

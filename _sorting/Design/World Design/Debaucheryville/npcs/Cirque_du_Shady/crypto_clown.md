@@ -70,7 +70,7 @@
 - **Status Reactions:** Offers terrible advice based on his own failures
 
 ### Economic Integration
-- **Shop Inventory:** Deflated Balloon Animals (1 KC), Fake Crypto Coins (5 KC), Business Plan Fragments (10 KC)
+- **Shop Inventory:** Deflated Balloon Animals (€1), Fake Crypto Coins (€5), Business Plan Fragments (€10)
 - **Services Offered:** "Investment advice," performance entertainment, cautionary tales
 - **Performance Tips:** Accepts any amount, becomes increasingly grateful for smaller tips
 

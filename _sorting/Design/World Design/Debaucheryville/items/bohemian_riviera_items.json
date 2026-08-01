@@ -155,7 +155,7 @@
     "actual_value_total_purchasable": 3,
     "markup_percentage": 667,
     "markup_calculation_note": "(total_price_purchasable - actual_value_total_purchasable) / actual_value_total_purchasable * 100 = (23-3)/3*100 = ~667%",
-    "currency_accepted": "gold (euros/koruna), per the location profile's (bohemian_riviera.md) Economic Integration section"
+    "currency_accepted": "Sovereign-X (SOVS), displayed with the € glyph, per the location profile's (bohemian_riviera.md) Economic Integration section and design/economy/economy_system.md"
   },
 
   "hidden_items": []

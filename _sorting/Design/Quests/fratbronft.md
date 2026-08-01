@@ -24,7 +24,8 @@ Bassline Opera House backstage terminal: “Backstage Laminate (Unauthorized)”
 Latte-art AR filter (Grounds For Concern, Kaffeehaus Row): “Foam Face #17” NFT– A 128px capture of a smeared milk-foam heart with a face very slightly visible behind it. There are at least sixty of #17.
 Aaron’s tractor token (The Black-Tie Backroom): “She Thinks My Tractor’s Sexy” (Mint #42) NFT– A low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn, stamped on a scratched aluminum token. Handed over sincerely, as a gift; acquisition scene in Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md.
 
-Publandia Targets: 3 defined (QR mural, poker pot, POS terminal). The 4th is an open slot — sanctioned TBD, to be authored in a future round.
+Publandia Targets (4 of 4): the QR mural, the poker pot, and the POS terminal acquisitions, plus —
+"America Online" (Publandia target #4): "America Online" NFT– A 12-second audio NFT of pure 56k modem screech. The birth cry of the modern internet. The collection's only audio piece; Legacy Vault card per design/economy/legacy_vault_cards.md.
 
 Rewards for Collection Milestones:
 4 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).

@@ -62,7 +62,7 @@
 
       "schedule": {
         "present_hours": "10:00-20:00 on active filming days",
-        "absent_reason": "Off-days: SuperKoruna Value Hypermarket ribbon-cuttings (morning), Bohemian Riviera bars watching his own aired episodes (evening)"
+        "absent_reason": "Off-days: SuperSovs Value Hypermarket ribbon-cuttings (morning), Bohemian Riviera bars watching his own aired episodes (evening)"
       },
 
       "quest_connections": [
@@ -402,9 +402,9 @@
       },
 
       "dialogue": {
-        "greeting": "Fifty koruna for the shower. Forty if you go now. It goes up the longer you stand there.",
+        "greeting": "Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there.",
         "idle_chatter": [],
-        "transaction": "Fifty koruna for the shower. Forty if you go now. It goes up the longer you stand there.",
+        "transaction": "Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there.",
         "farewell": "N/A",
         "special_triggers": {}
       },
@@ -413,7 +413,7 @@
         {
           "service_id": "port_o_cologne_cure",
           "price": 50,
-          "description": "50 Kc standard, 40 Kc \"if you go now\"; price rises the longer the affected party dawdles at her cart. Available to any bro or party member who has been launched and waded ashore."
+          "description": "€50 standard, €40 \"if you go now\"; price rises the longer the affected party dawdles at her cart. Available to any bro or party member who has been launched and waded ashore."
         }
       ],
 
