@@ -12,6 +12,7 @@ The Craic Tax
 Beer Hub District
     • Rowdy street filled with "bar brawl" encounters 
     • Live music parody venues with jukebox rhythm gags 
+    • Track 47: twelve seconds of modem screech on every jukebox in the district — somebody burned the disc badly in 2003 and nobody ever fixed it. The locals have learned not to press 47. Paying to play it three times unlocks the "America Online" NFT; the bros are certain they have surfaced a lost audio artifact, and the room is audibly relieved when it stops. 
     • Cover charge discourse with bouncers 
     • Buffs/debuffs tied to drinking songs echoing through the alley 
 Brewery District
@@ -138,7 +139,7 @@ Rival Trio Showdown
 Location: The Craic Tax
     • "Pub Crawl Showdown" - 3-round gauntlet 
     • Challenges: Darts, Trivia, Brawl 
-    • Reward: NFT #1 "Blarney Trap Receipt JPG" 
+    • Reward: Publandia NFT 1 of 4 — "Pogs (the Slammer)" (Mint #94; mint # proposed, author may override). Route unchanged; artifact replaced 2026-08-01 under spec §7c (NFT artwork is always 90s/00s pop culture, never location-derived). Tagline / Description / Collector's Thesis are AUTHOR TO WRITE — see design/economy/legacy_vault_cards.md Card 9. 
 City Boss: The Craic Baron
 Location: The heart of The Craic Tax
     • Jester-like landlord of all Publandia 
@@ -147,7 +148,7 @@ Location: The heart of The Craic Tax
 Side Quests
     • Keg Cycle: Timed delivery across cobblestone streets 
     • Photo Evidence: Document rival trio's embarrassing moments 
-    • NFT Hunt: 3 hidden acquisitions (QR mural, poker pot, POS terminal) 
+    • NFT Hunt: 3 hidden acquisitions — back-alley QR mural ("Who You Gonna Call? (Mint #84)"), pub POS terminal ("The Polyester Reserve (Mint #99)"), and jukebox track 47 in The Craic Tax ("America Online"). With the Rival Trio Showdown reward, Publandia holds 4 of 4. Roster is FINAL; there is no poker-pot acquisition. Card copy: design/economy/legacy_vault_cards.md; quest canon: Design/Quests/fratbronft.md. 
 
 ENEMY ENCOUNTERS
 Street Enemies

@@ -35,10 +35,20 @@ text that goes inside the frames.
 3. **Author-locked copy is reproduced verbatim** and is marked 🔒 below. It is not edited,
    improved, punctuated differently, or paraphrased.
 4. **Real brands stay exactly as named** (§7a.1, closed). "America Online" and "FuncoLand" are
-   brands and are exempt.
+   brands and are exempt. So is every brand, property and real-world reference inside the
+   author-supplied copy on Cards 10 and 11. No sweep, lane or reviewer may soften, rename,
+   generically-substitute or flag any of them.
 5. **No mascots.** No card gives an object a name-as-character, a personality, a voice, a
    relationship with the party, or an arc. Objects are assets. Assets do not talk.
 6. Every card is legible to a player who has never seen the item. None of them explains the joke.
+7. **NFT artwork is always 90s/00s pop culture — never location-derived** (spec §7c, binding and
+   permanent). The acquisition **route** is location-specific and venue-flavoured; the **subject**
+   never is. A card that describes the venue, the city, or local scenery as the artwork is a
+   defect. The joke is that the bros crossed a continent and came home with American nostalgia
+   they believe is a European art portfolio.
+8. **⏳ cards are the author's to write.** Where a card shows `_[AUTHOR TO WRITE]_`, that slot stays
+   empty until the author fills it. No placeholder prose, no "temporary" copy, no reconstruction
+   from the struck version.
 
 ---
 
@@ -46,77 +56,74 @@ text that goes inside the frames.
 
 Twelve targets, four per city, per `_sorting/Design/Quests/fratbronft.md`.
 
-| # | City | Asset | Canon source |
-|---|---|---|---|
-| 1 | Debaucheryville | Pixelated Kebab Monkey | `fratbronft.md`, `nfthuntdebaucheryville.md` |
-| 2 | Debaucheryville | Beer Pong Saint Relic | `fratbronft.md`, `nfthuntdebaucheryville.md` |
-| 3 | Debaucheryville | VIP Wristband PNG | `fratbronft.md`, `nfthuntdebaucheryville.md` |
-| 4 | Debaucheryville | Meme Lord's First Selfie | `fratbronft.md` (target #4) |
-| 5 | Sinfonia | Lot 41: Untitled (Gilt Frame, Empty) | `nfthuntsinfonia.md` |
-| 6 | Sinfonia | Backstage Laminate (Unauthorized) | `nfthuntsinfonia.md` |
-| 7 | Sinfonia | Foam Face #17 | `nfthuntsinfonia.md` |
-| 8 | Sinfonia | She Thinks My Tractor's Sexy (Mint #42) | `nfthuntsinfonia.md`, `tractor_nft_item.md` 🔒 |
-| 9 | Publandia | Blarney Trap Receipt JPG | `publandia.md` |
-| 10 | Publandia | ⛔ **UNNAMED** — QR mural acquisition | `publandia.md`, `fratbronft.md` |
-| 11 | Publandia | ⛔ **UNNAMED** — poker-pot acquisition | `publandia.md`, `fratbronft.md` |
-| 12 | Publandia | America Online | spec §7a.2 🔒 |
-| — | Vault relic | FuncoLand Nostalgia Series | spec §6.1 🔒 |
+| # | City | Asset | Route (unchanged) | Canon source |
+|---|---|---|---|---|
+| 1 | Debaucheryville | The Millennium Bug (Mint #00) ⏳ | Velvet Curtain bathroom QR graffiti | ruling 2026-08-01 §7c |
+| 2 | Debaucheryville | Sea-Monkeys (Mint #73) ⏳ | Absinthe Arcade rigged claw machine | ruling 2026-08-01 §7c |
+| 3 | Debaucheryville | Napster (Mint #01) ⏳ | Shadow Exchange ledger backroom | ruling 2026-08-01 §7c |
+| 4 | Debaucheryville | Meme Lord's First Selfie | Meme Black Market | `fratbronft.md` (target #4) |
+| 5 | Sinfonia | Holographic Charizard (Mint #98) ⏳ | auction QR catalogue | ruling 2026-08-01 §7c |
+| 6 | Sinfonia | Winamp (Mint #97) ⏳ | Bassline Opera House backstage terminal | ruling 2026-08-01 §7c |
+| 7 | Sinfonia | Crystal Pepsi (Mint #92) ⏳ | Grounds For Concern latte-art AR filter | ruling 2026-08-01 §7c |
+| 8 | Sinfonia | She Thinks My Tractor's Sexy (Mint #42) | Aaron's Corner Table, gifted | `nfthuntsinfonia.md`, `tractor_nft_item.md` 🔒 |
+| 9 | Publandia | Pogs (the Slammer) (Mint #94) ⏳ | Rival Trio Showdown reward | ruling 2026-08-01 §7c |
+| 10 | Publandia | Who You Gonna Call? (Mint #84) 🔒 | back-alley QR mural | author ruling 2026-08-01 |
+| 11 | Publandia | The Polyester Reserve (Mint #99) 🔒 | pub POS terminal | author ruling 2026-08-01 |
+| 12 | Publandia | America Online 🔒 | jukebox track 47, The Craic Tax | spec §7a.2 |
+| — | Vault relic | FuncoLand Nostalgia Series 🔒 | gelato trade | spec §6.1 · display layer for `funcoland_futures_nft.json` |
 
-⛔ = card blocked on an author ruling. See §6.
+**Publandia is FINAL at four** (author ruling 2026-08-01). The former "poker pot" acquisition is
+struck from the collection entirely and must not be reintroduced by a future pass.
+
+⏳ = **author is writing this card's copy.** Seven assets were struck on 2026-08-01 as
+location-derived (spec §7c) and replaced by the artifacts above, **routes unchanged**. Their
+Tagline / Description / Collector's Thesis blocks ship **empty** and are filled by the author
+only. Mint numbers on those seven are **proposals** and may be overridden. No lane, sweep or
+reviewer fills a ⏳ block by invention — doing so is a defect.
 
 ---
 
 ## 3. Debaucheryville — Cards 1–4
 
-### Card 1 — Pixelated Kebab Monkey
-*Velvet Curtain bathroom QR graffiti · dubiously hand-drawn in MS Paint*
+### Card 1 — The Millennium Bug (Mint #00) — ⏳ AUTHOR COPY PENDING
+*Route (unchanged): Velvet Curtain bathroom QR graffiti · Debaucheryville*
+*Mint number is a **PROPOSAL** — author may override.*
 
-> **Edition** — Genesis Tranche · 1 of 1,000 · 997 still unclaimed
->
-> **Estimated Future Value** — €4,000,000. Not a range. A figure.
->
-> **Collector's Note** — Hand-drawn. Not generated, not filtered, not traced. Every pixel in this
-> work was placed individually by a person who made a decision about it. The mouth was a decision.
->
-> **Acquisition Story** — Scanned from the wall of the Velvet Curtain restroom at 2:40 in the
-> morning. Bradley braced the phone with both hands for forty seconds because the code was drawn
-> by hand and would not hold focus. Provenance is the wall. The wall cannot be moved, copied, or
-> outbid.
+**The Millennium Bug (Mint #00)**
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
-### Card 2 — Beer Pong Saint Relic
-*Absinthe Arcade rigged claw machine · an 8-bit halo hovering over a red solo cup*
+**Status note (internal):** replaces the struck "Pixelated Kebab Monkey" (location-derived, §7c
+defect). Route is unchanged and remains canon. The four rendered card fields are derived from the
+author's copy once written, by the Card 10/11 mapping (Tagline → descriptor line; Description →
+Collector's Note; Collector's Thesis → Estimated Future Value; Edition tag from the mint number).
+**No lane writes any of it.**
 
-> **Edition** — Relic Class · Edition 6 of 6 · Sanctified Mint
->
-> **Estimated Future Value** — Devotional objects have outperformed every other asset class for
-> four thousand years. There is no reason for that to stop now.
->
-> **Collector's Note** — The halo is eight-bit. The cup is red. There is nothing else in the
-> frame and nothing else is required in the frame. Restraint of this order is almost never seen
-> in the category.
->
-> **Acquisition Story** — Won from the claw machine at the Absinthe Arcade on the eleventh
-> attempt, at a documented cost of €22 in individual plays. The claw is not calibrated to grip.
-> Chadwick established this on attempt three and continued, on the principle that a machine which
-> cannot be beaten by chance can only be beaten by commitment.
+### Card 2 — Sea-Monkeys (Mint #73) — ⏳ AUTHOR COPY PENDING
+*Route (unchanged): Absinthe Arcade rigged claw machine · Debaucheryville*
+*Mint number is a **PROPOSAL** — author may override.*
 
-### Card 3 — VIP Wristband PNG
-*Shadow Exchange ledger backroom · flat, over-sharpened PNG of a scuffed velvet wristband, the
-Photoshop checkerboard still visible, fake hologram flickering "VIP-ish"*
+**Sea-Monkeys (Mint #73)**
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
-> **Edition** — Access Tier · Edition 1 of an undisclosed mint · Hologram Verified
->
-> **Estimated Future Value** — This asset is priced in access rather than currency. Access has
-> never had a ceiling.
->
-> **Collector's Note** — The transparency grid is visible behind the wristband. The artist left
-> the working file inside the finished work and did not flatten it. Very few are prepared to
-> exhibit their process at that resolution.
->
-> **Acquisition Story** — Minted in the ledger backroom of the Shadow Exchange during a routine
-> currency consultation. The man behind the desk did not charge us for it and did not look up
-> while it minted. The things nobody has learned to price yet are the things you want to be
-> holding first.
+**Status note (internal):** replaces the struck "Beer Pong Saint Relic" (location-derived, §7c
+defect). Route unchanged. Same mapping and same prohibition as Card 1.
+
+### Card 3 — Napster (Mint #01) — ⏳ AUTHOR COPY PENDING
+*Route (unchanged): Shadow Exchange ledger backroom · Debaucheryville*
+*Mint number is a **PROPOSAL** — author may override.*
+
+**Napster (Mint #01)**
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+
+**Status note (internal):** replaces the struck "VIP Wristband PNG" (location-derived, §7c
+defect). Route unchanged. Same mapping and same prohibition as Card 1. "Napster" is a brand and is
+exempt and closed (§7a.1).
 
 ### Card 4 — Meme Lord's First Selfie
 *Meme Black Market · clearly a stolen MySpace photo*
@@ -138,59 +145,46 @@ Photoshop checkerboard still visible, fake hologram flickering "VIP-ish"*
 
 ## 4. Sinfonia — Cards 5–8
 
-### Card 5 — Lot 41: Untitled (Gilt Frame, Empty)
-*Auction QR catalogue · a quality-40 JPEG of an empty picture frame, the photographer's flash
-still visible in the varnish*
+### Card 5 — Holographic Charizard (Mint #98) — ⏳ AUTHOR COPY PENDING
+*Route (unchanged): auction QR catalogue, the hush-hush auction rooms · Sinfonia*
+*Mint number is a **PROPOSAL** — author may override.*
 
-> **Edition** — Lot 41 · Catalogued Edition · Single Consignment
->
-> **Estimated Future Value** — Institutional. The frame is empty. The ceiling is not.
->
-> **Collector's Note** — Negative space as provenance. The flash in the varnish belongs to the
-> photographer, is therefore part of the work, and is therefore a signature. Compression to
-> quality 40 is a stated material choice and reads as one.
->
-> **Acquisition Story** — Scanned from the hand-stamped code on the Lot 41 page of the printed
-> catalogue, in the room, correctly dressed. The house's official code is on the back cover and
-> resolves to a bidding app available to the general public. The one that mattered was added
-> afterward, slightly crooked, by somebody with access.
+**Holographic Charizard (Mint #98)**
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
-### Card 6 — Backstage Laminate (Unauthorized)
-*Bassline Opera House backstage terminal · flatbed scan of a laminated pass, a thumb in the
-corner, the name field wiped out by lamination glare*
+**Status note (internal):** replaces the struck "Lot 41: Untitled (Gilt Frame, Empty)"
+(location-derived, §7c defect). Route unchanged — the crooked hand-stamped code on the catalogue's
+lot page is route furniture and survives; "Lot 41" now refers only to the catalogue page, never to
+an asset name. Same mapping and same prohibition as Card 1.
 
-> **Edition** — Access Class · Unauthorized Edition · Reissue Impossible
->
-> **Estimated Future Value** — There is no legitimate channel through which a second one of these
-> can be produced. That is the entire thesis and it does not require further modelling.
->
-> **Collector's Note** — The lamination glare has erased the name field completely. The pass
-> therefore belongs to whoever is holding it. An interrogation of access, conducted by the pass
-> itself.
->
-> **Acquisition Story** — Minted from the coin-operated terminal in the backstage labyrinth of
-> the Bassline Opera House. Two euro, ten minutes, an account still logged in from a prior holder
-> of clearance. The transaction printed a dot-matrix receipt on paper older than the transaction.
-> We were backstage in an opera house on the continent when it cleared, and the token records
-> that we were.
+### Card 6 — Winamp (Mint #97) — ⏳ AUTHOR COPY PENDING
+*Route (unchanged): Bassline Opera House backstage terminal · Sinfonia*
+*Mint number is a **PROPOSAL** — author may override.*
 
-### Card 7 — Foam Face #17
-*Grounds For Concern, Kaffeehaus Row · a 128px capture of a smeared milk-foam heart with a face
-very slightly visible behind it*
+**Winamp (Mint #97)**
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
-> **Edition** — #17 · Founder Position · Early Series
->
-> **Estimated Future Value** — Low-number holders have historically been made whole first. Number
-> seventeen is not a number you have to argue about.
->
-> **Collector's Note** — Milk is the least permanent medium available to a working artist. The
-> capture is therefore an act of preservation, and the face behind the foam is the subject
-> refusing to be fully erased by it.
->
-> **Acquisition Story** — Captured through the house AR filter at Grounds For Concern for the
-> price of one cappuccino. The barista poured the heart, the filter took it, and #17 became
-> available in that exact second and no other second. Five euro. Number seventeen. Run that
-> forward ten years.
+**Status note (internal):** replaces the struck "Backstage Laminate (Unauthorized)"
+(location-derived, §7c defect). Route unchanged, including the two-euro coin-op CRT kiosk, the
+still-logged-in account and the dot-matrix receipt. "Winamp" is a brand and is exempt and closed
+(§7a.1). Same mapping and same prohibition as Card 1.
+
+### Card 7 — Crystal Pepsi (Mint #92) — ⏳ AUTHOR COPY PENDING
+*Route (unchanged): latte-art AR filter, Grounds For Concern, Kaffeehaus Row · Sinfonia*
+*Mint number is a **PROPOSAL** — author may override.*
+
+**Crystal Pepsi (Mint #92)**
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+
+**Status note (internal):** replaces the struck "Foam Face #17" (location-derived, §7c defect).
+Route unchanged — the AR filter's MINT button and the five-euro cappuccino survive. "Crystal
+Pepsi" is a brand and is exempt and closed (§7a.1). Same mapping and same prohibition as Card 1.
 
 ### Card 8 — "She Thinks My Tractor's Sexy" (Mint #42) 🔒
 *Aaron's Corner Table, The Black-Tie Backroom · low-res animated GIF of a zero-turn mower doing a
@@ -210,66 +204,79 @@ donut on a manicured lawn, stamped on a scratched aluminum token · `item_tracto
 including the block glyphs and ellipses, and the entire Acquisition Story are author-locked and
 reproduced byte-for-byte from spec §2/§6.1. The Collector's Note is Lane V copy built only from
 locked item facts in `tractor_nft_item.md` ("digital land" is Aaron's own word; the hat is one
-frame behind the turn and must stay that way). See §6 for the Mint #42 / Edition 1 of 1 flag.
+frame behind the turn and must stay that way).
+
+**BINDING (author ruling 2026-08-01) — do not "fix" this card:** the title's *Mint #42* and the
+Edition tag's *Edition 1 of 1* both stay exactly as written; a one-of-one that carries a mint
+number is deliberate, and the contradiction is the joke. No future pass, sweep, reviewer or
+consistency check may reconcile, remove, or footnote either tag.
 
 ---
 
 ## 5. Publandia — Cards 9–12
 
-### Card 9 — Blarney Trap Receipt JPG
-*The Blarney Trap · a JPEG of a printed bar receipt*
+### Card 9 — Pogs (the Slammer) (Mint #94) — ⏳ AUTHOR COPY PENDING
+*Route (unchanged): Rival Trio Showdown reward, The Craic Tax / The Blarney Trap · Publandia*
+*Mint number is a **PROPOSAL** — author may override.*
 
-> **Edition** — Edition 1 of 1 · Original Document · Unredacted
->
-> **Estimated Future Value** — The only surviving record of the night in question. Records do not
-> depreciate; the nights do.
->
-> **Collector's Note** — A complete printed receipt, photographed whole. Every line item legible,
-> every round accounted for, nothing cropped and nothing softened. Documentary work of this
-> honesty is rare because most people are not willing to submit the total.
->
-> **Acquisition Story** — Secured at The Blarney Trap, on the night it was issued, in the
-> original. The thermal print will fade within a year and there is no second copy anywhere. This
-> is the copy.
+**Pogs (the Slammer) (Mint #94)**
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
-**Canon flag (internal):** acquisition route is ambiguous in existing canon — `publandia.md` lists
-"Blarney Trap Receipt JPG" as the Rival Trio Showdown reward, while `fratbronft.md` lists
-Publandia's three defined targets as QR mural / poker pot / POS terminal. The card copy above is
-deliberately route-neutral so it survives either ruling. See §6.
+**Status note (internal):** replaces the struck "Blarney Trap Receipt JPG" (location-derived, §7c
+defect). Route unchanged and still settled by the 2026-08-01 ruling — this is the **Rival Trio
+Showdown** reward, not the POS acquisition (that is Card 11). Same mapping and same prohibition as
+Card 1.
 
-### Card 10 — ⛔ BLOCKED · Publandia QR mural acquisition
-*Acquisition route is canon (`fratbronft.md`: QR mural). The asset itself has never been named or
-described by the author.*
+### Card 10 — "Who You Gonna Call? (Mint #84)" 🔒
+*Publandia · acquired from the back-alley QR mural · **The original gig-economy disruptor.** 🔒*
 
-> **Edition** — ⛔ pending
+> **Edition** — Mint #84 · Franchise Class · Numbered Sequence
 >
-> **Estimated Future Value** — ⛔ pending
+> **Estimated Future Value** — Generational spectral wealth. The physical containment grid may be sparking, but this token is immutable. Zero utility, maximum nostalgia, infinite yield.  🔒
 >
-> **Collector's Note** — ⛔ pending artwork description
+> **Collector's Note** — Before app-based food delivery, four guys in stained jumpsuits charged municipal governments ten grand to trap gods in a Tupperware container. This asset captures pure, uncut American optimism: the belief that any cosmic nightmare can be solved with unlicensed nuclear reactors and an invoice with net-30 terms.  🔒
 >
-> **Acquisition Story** — ⛔ pending
+> **Acquisition Story** — Scanned off a spray-painted mural on a back-alley wall, at the one hour
+> of the day the light lets the code resolve. The wall belongs to the city and the city is not
+> selling. Mint #84 was issued once, to the party standing in front of it, and the sequence has
+> moved on.
 
-**Blocked on:** asset name + artwork description. Lane V will not invent an NFT (§0a.2). Card
-copy is one pass away once the author names it; the frame, field order and register are settled.
+**Locked-copy note (internal, not rendered):** the author supplied this asset as **Tagline /
+Description / Collector's Thesis** on 2026-08-01. Mapping to the fixed four-field card frame
+(spec §2): Tagline → the card's italic descriptor line; Description → **Collector's Note**;
+Collector's Thesis → **Estimated Future Value** (it is the bullish valuation argument). All three
+author strings are reproduced **verbatim, single-line, unwrapped** so they stay byte-exact — do
+not re-wrap, re-punctuate, retitle, or split them. The Edition tag and Acquisition Story are Lane
+copy written to the author's canon route (QR mural). Field mapping is offered for author veto at
+review; the strings themselves are locked either way.
 
-### Card 11 — ⛔ BLOCKED · Publandia poker-pot acquisition
-*Acquisition route is canon (`fratbronft.md`: poker pot). The asset itself has never been named or
-described by the author.*
+### Card 11 — "The Polyester Reserve (Mint #99)" 🔒
+*Publandia · acquired from the pub POS terminal · **Proof-of-Pellet.** 🔒*
 
-> **Edition** — ⛔ pending
+> **Edition** — Mint #99 · Reserve Class · Numbered Sequence
 >
-> **Estimated Future Value** — ⛔ pending
+> **Estimated Future Value** — The original shitcoin. Unbacked, mass-produced, and stored in a Tupperware bin under a basement stairwell. Intrinsic value: $0.04. Market sentiment: Infinite.  🔒
 >
-> **Collector's Note** — ⛔ pending artwork description
+> **Collector's Note** — Before JPEG monkeys, entire suburban economies collapsed because a billionaire named Ty convince the nation that a $5 stuffed frog was a sovereign wealth fund. Millions of college funds were liquidated and converted into acrylic-encased polyester bears with typos on their tags. This item represents the exact moment American finance abandoned math and embraced soft, bean-filled optimism.  🔒
 >
-> **Acquisition Story** — ⛔ pending
+> **Acquisition Story** — Minted at the point-of-sale terminal on a pub counter, standing up,
+> between rounds, on hardware old enough to be contemporary with the asset itself. The terminal
+> printed a receipt, the receipt printed a code, and the code resolved exactly once. Reserve
+> positions are not announced in advance; they are taken at the counter by whoever is at the
+> counter.
 
-**Blocked on:** asset name + artwork description. Same as Card 10. Note the tractor card's locked
-Acquisition Story already spends the collection's poker beat in Sinfonia; whatever fills this slot
-should not restage it. Author ruling required either way.
+**Locked-copy note (internal, not rendered):** same author mapping as Card 10 (Tagline →
+descriptor; Description → Collector's Note; Collector's Thesis → Estimated Future Value), same
+verbatim/unwrapped rule. **"convince" in the Description is the author's text as given and is
+reproduced exactly** — it is not a typo to be corrected, and no sweep, linter, spellcheck pass or
+reviewer may change it to "convinced." The Edition tag and Acquisition Story are Lane copy written
+to the author's canon route (pub POS terminal).
 
 ### Card 12 — "America Online" 🔒
 *Publandia target #4, author-minted (§7a.2) · a 12-second audio NFT of pure 56k modem screech ·
+acquired from jukebox track 47 at The Craic Tax ·
 AUDIO ASSET — the Vault frame renders a waveform in place of an image*
 
 > **Edition** — Edition 1 of 1 · Audio Master · Twelve Seconds · Uncut
@@ -292,11 +299,14 @@ author-locked phrasing (§7a.2) and appears verbatim in the Collector's Note. "A
 brand and is exempt and closed (§7a.1) — the name is never altered, abbreviated, or replaced.
 **Audio-card rendering requirement:** the Vault card frame needs an audio variant (waveform plate,
 runtime stamp `0:12`, play control inside the frame, gold "Provenance Verified" seal unchanged).
-Flagged to Lane E for `wallet_ui.md` — see §6.
+Flagged to Lane E for `wallet_ui.md`; the audio-card variant is now specified there (§2.5,
+"Audio pieces").
 
-**Canon flag (internal):** the in-world acquisition route for Publandia #4 is not specified by the
-author. The Acquisition Story above is written about the master's provenance rather than the
-pickup, so it survives any route ruling.
+**Canon note (internal):** route settled by author ruling 2026-08-01 — the mint unlocks by **paying
+to play jukebox track 47 three times** at The Craic Tax (see `_sorting/Design/Quests/fratbronft.md`
+and `_sorting/Design/World Design/Publandia/publandia.md`). The Acquisition Story above concerns
+the master's provenance rather than the pickup and therefore stands unchanged: it is the holder's
+account of the recording, not a description of the jukebox.
 
 ---
 
@@ -320,41 +330,72 @@ the `[N of ∞]` counter like any other holding.*
 **Locked-copy note (internal, not rendered):** Edition tag, Estimated Future Value and Collector's
 Note are author-provided and reproduced verbatim from spec §6.1 / plan Step 2. The Acquisition
 Story is Lane V copy written to the author's brief ("about the gelato trade"). "FuncoLand" is a
-brand and is exempt and closed. See §6 for the relationship-to-`funcoland_futures_nft.json` flag.
+brand and is exempt and closed.
+
+**BINDING (author ruling 2026-08-01) — one holding, not two:** the engine item
+`game/Assets/Godot/assets/Items/funcoland_futures_nft.json` (`Funcoland Futures NFT – #1999`) and
+this "FuncoLand Nostalgia Series" Vault entry are the **same holding**. The Vault card is the
+display layer for that engine item — it is what the wallet renders when the party opens the item
+they already own. It is not a second acquisition, does not occupy a second slot, and increments
+the `[N of ∞]` counter once. The engine JSON is the data source and is **not edited by this
+round**; if the two ever disagree on stats or unlocks, the JSON wins and this card's copy is
+adjusted to it, never the reverse.
 
 ---
 
-## 7. Escalations — AUTHOR RULINGS REQUESTED
+## 7. Escalations
 
 Nothing below was resolved by invention.
 
-1. **Publandia targets #2 and #3 have no names or artwork.** Canon defines their acquisition
-   routes only (QR mural; poker pot). Cards 10 and 11 ship as blocked frames. **Request:** name +
-   one-line artwork description each, in the register of the other ten. One pass completes both
-   cards.
-2. **"Blarney Trap Receipt JPG" route conflict.** `publandia.md` assigns it to the Rival Trio
-   Showdown; `fratbronft.md` lists the three defined Publandia targets as QR mural / poker pot /
-   POS terminal. **Request:** confirm whether the receipt JPG *is* the POS-terminal acquisition,
-   or whether the showdown reward is a fourth Publandia route (which would over-fill the city now
-   that "America Online" holds slot 4). Card 9's copy is route-neutral pending the ruling.
-3. **Tractor card: "Edition 1 of 1" vs canon "Mint #42".** The author-locked Edition tag reads
-   *Edition 1 of 1*; the item's canon display name, the aluminum token's reverse stamp, and
-   Chadwick's locked "mint number FORTY-TWO" monologue all read *Mint #42*. Lane V reproduced the
-   locked tag verbatim and changed nothing else. **Request:** confirm the Vault card intentionally
-   displays a different edition claim than the token itself (which is funnier and needs no fix),
-   or supply the reconciled tag.
-4. **"Mask Selfie GIF" is not in the current twelve.** Spec §6.1 lists it as an example, but it
+### 7a. Closed by author ruling, 2026-08-01
+
+1. ~~**Publandia targets #2 and #3 have no names or artwork.**~~ **CLOSED.** The poker-pot
+   acquisition is struck. Publandia is FINAL at four routes: the Rival Trio Showdown (now "Pogs
+   (the Slammer)" per §7c), the QR mural ("Who You Gonna Call? (Mint #84)"), the pub POS terminal
+   ("The Polyester Reserve (Mint #99)") and jukebox track 47 ("America Online"). Cards 10 and 11
+   are written from author-supplied copy; no frame in this file is blocked on a *ruling* — Card 9
+   is awaiting author copy only (§7b).
+2. ~~**"Blarney Trap Receipt JPG" route conflict.**~~ **CLOSED.** The showdown route is the
+   showdown route, as `publandia.md` had it; the POS terminal belongs to Card 11. The asset that
+   sits on the showdown route was subsequently struck and replaced under §7c — the route ruling is
+   unaffected.
+3. ~~**Tractor card: "Edition 1 of 1" vs canon "Mint #42".**~~ **CLOSED — both tags stay.** A
+   1-of-1 carrying a mint number is deliberate and funnier than a reconciliation. Binding note
+   filed on Card 8; this must not be "fixed."
+4. ~~**FuncoLand Nostalgia Series vs. `Funcoland Futures NFT – #1999`.**~~ **CLOSED — one
+   holding.** The Vault card is the display layer for the engine item. Binding note filed in §6.
+   No engine file was edited.
+5. ~~**Audio card frame.**~~ **CLOSED.** `wallet_ui.md` §2.5 now specifies the waveform plate for
+   audio holdings.
+
+### 7b. Awaiting author copy (not an escalation — assigned to the author)
+
+Seven cards carry empty copy blocks under spec §7c. Each needs Tagline / Description /
+Collector's Thesis, and a confirmation or override of the proposed mint number:
+
+| Card | Asset | Proposed Mint # | Route (settled) |
+|---|---|---|---|
+| 1 | The Millennium Bug | #00 | Velvet Curtain bathroom QR graffiti |
+| 2 | Sea-Monkeys | #73 | Absinthe Arcade rigged claw machine |
+| 3 | Napster | #01 | Shadow Exchange ledger backroom |
+| 5 | Holographic Charizard | #98 | auction QR catalogue |
+| 6 | Winamp | #97 | Bassline Opera House backstage terminal |
+| 7 | Crystal Pepsi | #92 | Grounds For Concern latte-art AR filter |
+| 9 | Pogs (the Slammer) | #94 | Rival Trio Showdown reward |
+
+### 7c. Still open
+
+1. **"Mask Selfie GIF" is not in the current twelve.** Spec §6.1 lists it as an example, but it
    belongs to the superseded nine-NFT roster (legacy Sinfonia rival-showdown reward); the current
-   `nfthuntsinfonia.md` four are Lot 41, Backstage Laminate, Foam Face #17 and the tractor token.
-   No card was written for it. **Request:** confirm it stays retired, or rule it back in and
-   displace a current target.
-5. **FuncoLand Nostalgia Series vs. `Funcoland Futures NFT – #1999`.** An engine item already
-   exists at `game/Assets/Godot/assets/Items/funcoland_futures_nft.json` (MemeMastery unlock,
-   +1 Charisma with shady vendors). **Request:** are these the same holding under two names, or
-   two separate Vault entries? Lane V carded the Nostalgia Series only and touched no engine file.
-6. **Audio card frame.** "America Online" is the Vault's only non-image holding and needs a
-   waveform card variant in `wallet_ui.md` (Lane E). Flagged, not implemented — Lane V does not
-   own that file.
+   `nfthuntsinfonia.md` four are Holographic Charizard, Winamp, Crystal Pepsi and the tractor
+   token. No card was written for it. **Request:** confirm it stays retired, or rule it back in
+   and displace a current target. (Note: as a selfie-of-a-meme it is arguably compliant with §7c
+   where the struck seven were not — the author's call either way.)
+2. **Field mapping for Cards 10 and 11 (low stakes, author veto only).** The author supplied those
+   two assets as Tagline / Description / Collector's Thesis; the fixed card frame has four fields.
+   They are mapped descriptor / Collector's Note / Estimated Future Value, with a Lane-written
+   Edition tag and Acquisition Story built from the canon routes. The author strings are verbatim
+   regardless; only their placement is up for veto.
 
 ---
 

@@ -71,15 +71,14 @@ Shown **once**, on the first time the player opens the wallet. Gated by `legacy_
 WELCOME TO THE LEGACY VAULT
 Generational Wealth in JPEG Form
 
-Every image in this vault has been carefully curated…
-We are early. Painfully early. And that is exactly where you want to be.
+Every image in this vault has been carefully curated for long-term cultural and financial appreciation. In twenty years, scholars will view this portfolio the same way we view early Basquiats. We are early. Painfully early. And that is exactly where you want to be.
 ```
 
 **Presentation:** centred on a dimmed gallery background, cream-on-charcoal, display serif for the title, small caps for the sub-line, body set at reading size with wide leading. A single dismiss affordance with a neutral label. No skip prompt, no "don't show again" checkbox — it shows once and the game does not negotiate about it.
 
 **Timing:** the modal holds until dismissed. No auto-advance. The party is not in a hurry about generational wealth.
 
-> **COPY HOLD / ESCALATION:** in the source spec this body copy is transcribed with an ellipsis directly after `curated`, quoted as *"Every image in this vault has been carefully curated… We are early. Painfully early. And that is exactly where you want to be."* That `…` may be the author's own punctuation **or** a transcription elision covering additional locked body copy. It has been reproduced exactly as transcribed and **must not be filled in by anyone but the author.** See §6 Open Items.
+**Copy status (resolved, author ruling 2026-08-01):** the `…` after `curated` in the source spec was a transcription elision, not authorial punctuation. The author has supplied the complete body copy and it is reproduced above in full, verbatim. The body is a single unbroken paragraph and ships as one string — the line break in the block above exists only to separate the two headers from the body. Nothing in this modal is a placeholder any more; it is closed and locked.
 
 ### 2.3 Permanent sub-header — AUTHOR-LOCKED, VERBATIM
 
@@ -287,7 +286,7 @@ The author-locked strings in §2.2, §2.3, and §2.4 ship as **fixed English cop
 
 ## 6. Open Items / Escalations
 
-1. **First-open modal ellipsis (blocking for final copy).** See §2.2 — the `…` after `curated` may cover unrecorded author body copy. Needs author confirmation of the complete modal text before UI copy is locked. Nobody fills this in but the author.
+1. ~~**First-open modal ellipsis (blocking for final copy).**~~ **RESOLVED — author ruling 2026-08-01.** The ellipsis was an elision; the full author copy is now in §2.2 and the copy hold is lifted. No open question remains on this modal.
 2. **Party reaction line for the Tab 2 reveal.** Register is locked by this doc; the specific line is DRAFT pending author selection (§3.3).
 3. **Progress counter placement.** Two acceptable placements offered (§2.4); final pick is an art/layout call, not a canon call.
 
