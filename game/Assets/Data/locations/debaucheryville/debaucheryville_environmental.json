@@ -203,7 +203,7 @@
   "cross_location_systems": {
     "brewery_connection": {
       "entrance_mechanism": "hidden_passage_behind_time_crisis_machine",
-      "destination": "absynthium_taproom_dungeon",
+      "destination": "absinthium_taproom_dungeon",
       "prerequisite": "exploration_of_north_wing_arcade_maze",
       "transition_type": "seamless_loading_with_audio_transition"
     },
@@ -1535,7 +1535,7 @@
   }
 },
 {
-  "location_id": "debaucheryville_arcade_absynthium_brewery_01",
+  "location_id": "debaucheryville_arcade_absinthium_brewery_01",
   
   "lighting_systems": {
     "primary_lighting": {
@@ -1643,7 +1643,7 @@
   "audio_systems": {
     "ambient_tracks": {
       "primary": {
-        "file": "absynthium_distorted_lounge.ogg",
+        "file": "absinthium_distorted_lounge.ogg",
         "loop": true,
         "volume": 0.6,
         "effects": ["distorted_chiptune_meets_jazz_lounge", "reality_bending_audio_distortions"],
@@ -1651,7 +1651,7 @@
         "instrumentation": ["warped_piano", "reversed_saxophone", "glitchy_chiptune_bass"]
       },
       "entrance_fade": {
-        "file": "arcade_to_absynthium_transition.ogg",
+        "file": "arcade_to_absinthium_transition.ogg",
         "trigger": "player_enters_green_velvet_curtain",
         "duration": 4.0,
         "effect": "crossfade_with_reality_distortion_arcade_music_warps"
@@ -1851,7 +1851,7 @@
       "prerequisite": "exploration_of_north_wing_arcade_maze_bottle_opener_keychain"
     },
     "brewery_tour_network": {
-      "quest_tracking": "absynthium_taproom_1_of_4_brewery_dungeons",
+      "quest_tracking": "absinthium_taproom_1_of_4_brewery_dungeons",
       "cross_brewery_progression": "each_brewery_provides_unique_brew_different_strategic_effects",
       "achievement_integration": "continental_beer_master_achievement_tracking",
       "bottle_opener_requirement": "publandia_keychain_enables_all_brewery_dungeon_access"

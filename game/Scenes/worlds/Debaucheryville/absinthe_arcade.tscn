@@ -6,7 +6,7 @@ script = ExtResource( 1 )
 [node name="EntryPoint" type="Position2D" parent="."]
 position = Vector2(120, 220)
 
-[node name="DungeonEntrance_AbsynthiumTaproom" type="Area2D" parent="."]
+[node name="DungeonEntrance_AbsinthiumTaproom" type="Area2D" parent="."]
 position = Vector2(400, 260)
 
 [node name="QuestNPC_BackpackGirl" type="Node2D" parent="."]

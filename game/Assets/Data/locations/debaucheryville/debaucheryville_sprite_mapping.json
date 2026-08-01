@@ -911,11 +911,11 @@
   }
 },
 {
-  "location_id": "debaucheryville_arcade_absynthium_brewery_01",
+  "location_id": "debaucheryville_arcade_absinthium_brewery_01",
   
   "sprite_sheets": {
-    "absynthium_taproom_environment_complete": {
-      "file": "absynthium_taproom_environment_complete.png",
+    "absinthium_taproom_environment_complete": {
+      "file": "absinthium_taproom_environment_complete.png",
       "dimensions": {"width": 1024, "height": 768},
       "room_size": {"width": 320, "height": 240},
       "elements": {
@@ -954,8 +954,8 @@
       }
     },
     
-    "absynthium_interactive_objects": {
-      "file": "absynthium_interactive_objects.png",
+    "absinthium_interactive_objects": {
+      "file": "absinthium_interactive_objects.png",
       "dimensions": {"width": 512, "height": 384},
       "elements": {
         "floating_absinthe_chalice": {
@@ -986,8 +986,8 @@
       }
     },
     
-    "absynthium_npcs": {
-      "file": "absynthium_npcs.png",
+    "absinthium_npcs": {
+      "file": "absinthium_npcs.png",
       "dimensions": {"width": 512, "height": 384},
       "character_size": {"width": 64, "height": 96},
       "elements": {
@@ -1026,8 +1026,8 @@
       }
     },
     
-    "absynthium_particle_effects": {
-      "file": "absynthium_particle_effects.png",
+    "absinthium_particle_effects": {
+      "file": "absinthium_particle_effects.png",
       "dimensions": {"width": 512, "height": 256},
       "elements": {
         "impossible_vapor_swirls": {
@@ -1068,8 +1068,8 @@
       }
     },
     
-    "absynthium_ui_elements": {
-      "file": "absynthium_ui_elements.png",
+    "absinthium_ui_elements": {
+      "file": "absinthium_ui_elements.png",
       "dimensions": {"width": 512, "height": 256},
       "elements": {
         "confused_status_icon": {
@@ -1080,7 +1080,7 @@
         "brewery_tour_progress": {
           "checkpoint_1_complete": {"x": 0, "y": 32, "width": 64, "height": 32},
           "checkpoint_1_incomplete": {"x": 64, "y": 32, "width": 64, "height": 32},
-          "absynthium_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
+          "absinthium_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
         },
         "mirror_portal_indicators": {
           "real_portal_hint": {"x": 0, "y": 64, "width": 24, "height": 24},
@@ -1184,19 +1184,19 @@
   "mobile_optimization": {
     "texture_atlases": [
       {
-        "name": "absynthium_main_atlas",
+        "name": "absinthium_main_atlas",
         "files": [
-          "absynthium_taproom_environment_complete.png",
-          "absynthium_interactive_objects.png"
+          "absinthium_taproom_environment_complete.png",
+          "absinthium_interactive_objects.png"
         ],
         "max_size": "2048x2048",
         "compression": "PVRTC_iOS_ETC2_Android"
       },
       {
-        "name": "absynthium_characters_atlas",
+        "name": "absinthium_characters_atlas",
         "files": [
-          "absynthium_npcs.png",
-          "absynthium_particle_effects.png"
+          "absinthium_npcs.png",
+          "absinthium_particle_effects.png"
         ],
         "max_size": "2048x2048",
         "compression": "PVRTC_iOS_ETC2_Android"
@@ -1363,7 +1363,7 @@
     "entry_from": "debaucheryville_clocktower_plaza",
     "exit_to": "debaucheryville_clocktower_plaza",
     "brewery_network": [
-      "debaucheryville_arcade_absynthium_brewery_01",
+      "debaucheryville_arcade_absinthium_brewery_01",
       "debaucheryville_clocktower_tapdatvault_brewery_02",
       "brewery_location_03_tbd",
       "brewery_location_04_tbd"
@@ -1405,11 +1405,11 @@
   }
 },
 {
-  "location_id": "debaucheryville_arcade_absynthium_brewery_01",
+  "location_id": "debaucheryville_arcade_absinthium_brewery_01",
   
   "sprite_sheets": {
-    "absynthium_taproom_environment_complete": {
-      "file": "absynthium_taproom_environment_complete.png",
+    "absinthium_taproom_environment_complete": {
+      "file": "absinthium_taproom_environment_complete.png",
       "dimensions": {"width": 1024, "height": 768},
       "room_size": {"width": 320, "height": 240},
       "elements": {
@@ -1448,8 +1448,8 @@
       }
     },
     
-    "absynthium_interactive_objects": {
-      "file": "absynthium_interactive_objects.png",
+    "absinthium_interactive_objects": {
+      "file": "absinthium_interactive_objects.png",
       "dimensions": {"width": 512, "height": 384},
       "elements": {
         "floating_absinthe_chalice": {
@@ -1480,8 +1480,8 @@
       }
     },
     
-    "absynthium_npcs": {
-      "file": "absynthium_npcs.png",
+    "absinthium_npcs": {
+      "file": "absinthium_npcs.png",
       "dimensions": {"width": 512, "height": 384},
       "character_size": {"width": 64, "height": 96},
       "elements": {
@@ -1520,8 +1520,8 @@
       }
     },
     
-    "absynthium_particle_effects": {
-      "file": "absynthium_particle_effects.png",
+    "absinthium_particle_effects": {
+      "file": "absinthium_particle_effects.png",
       "dimensions": {"width": 512, "height": 256},
       "elements": {
         "impossible_vapor_swirls": {
@@ -1562,8 +1562,8 @@
       }
     },
     
-    "absynthium_ui_elements": {
-      "file": "absynthium_ui_elements.png",
+    "absinthium_ui_elements": {
+      "file": "absinthium_ui_elements.png",
       "dimensions": {"width": 512, "height": 256},
       "elements": {
         "confused_status_icon": {
@@ -1574,7 +1574,7 @@
         "brewery_tour_progress": {
           "checkpoint_1_complete": {"x": 0, "y": 32, "width": 64, "height": 32},
           "checkpoint_1_incomplete": {"x": 64, "y": 32, "width": 64, "height": 32},
-          "absynthium_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
+          "absinthium_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
         },
         "mirror_portal_indicators": {
           "real_portal_hint": {"x": 0, "y": 64, "width": 24, "height": 24},
@@ -1678,19 +1678,19 @@
   "mobile_optimization": {
     "texture_atlases": [
       {
-        "name": "absynthium_main_atlas",
+        "name": "absinthium_main_atlas",
         "files": [
-          "absynthium_taproom_environment_complete.png",
-          "absynthium_interactive_objects.png"
+          "absinthium_taproom_environment_complete.png",
+          "absinthium_interactive_objects.png"
         ],
         "max_size": "2048x2048",
         "compression": "PVRTC_iOS_ETC2_Android"
       },
       {
-        "name": "absynthium_characters_atlas",
+        "name": "absinthium_characters_atlas",
         "files": [
-          "absynthium_npcs.png",
-          "absynthium_particle_effects.png"
+          "absinthium_npcs.png",
+          "absinthium_particle_effects.png"
         ],
         "max_size": "2048x2048",
         "compression": "PVRTC_iOS_ETC2_Android"

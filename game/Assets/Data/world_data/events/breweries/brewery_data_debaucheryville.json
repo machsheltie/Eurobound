@@ -1,7 +1,7 @@
 [
   {
-    "brewery_id": "absynthium_taproom",
-    "name": "The Absynthium Taproom",
+    "brewery_id": "absinthium_taproom",
+    "name": "The Absinthium Taproom",
     "location": "Absinthe Arcade (north end)",
     "intro_scene": "You peel back the glowing green curtain\u2026 and the vapor hits your face like regret in your 30s.",
     "visual_theme": "Low lighting, glowing green fog, cracked absinthe bottle bar",

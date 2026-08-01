@@ -21,7 +21,7 @@
   },
   
   "exit_conditions": {
-    "normal_exits": ["main_entrance", "absynthium_taproom_passage"],
+    "normal_exits": ["main_entrance", "absinthium_taproom_passage"],
     "completion_requirements": ["obtain_beer_pong_saint_relic_nft"],
     "failure_states": ["temporary_ban_aggressive_token_shaking"],
     "progressive_unlocks": [
@@ -54,7 +54,7 @@
       ],
       "atmospheric_effects": ["green spectral fog", "particle systems around damaged machines"],
       "hidden_areas": {
-        "absynthium_taproom_entrance": "behind cracked Time Crisis machine in north wing arcade maze"
+        "absinthium_taproom_entrance": "behind cracked Time Crisis machine in north wing arcade maze"
       }
     },
     "color_palette": {
@@ -1034,8 +1034,8 @@
   }
 },
 {
-  "location_id": "debaucheryville_arcade_absynthium_brewery_01",
-  "display_name": "The Absynthium Taproom",
+  "location_id": "debaucheryville_arcade_absinthium_brewery_01",
+  "display_name": "The Absinthium Taproom",
   "satirical_subtitle": "Not Recommended For Those Prone To Introspection",
   "world": "debaucheryville",
   "area_zone": "absinthe_arcade_north_wing_hidden",
@@ -1140,7 +1140,7 @@
     ],
     "brewery_tour_integration": {
       "quest_role": "first_of_4_debaucheryville_brewery_dungeons",
-      "completion_tracking": "absynthium_taproom_1_of_4_for_continental_beer_master",
+      "completion_tracking": "absinthium_taproom_1_of_4_for_continental_beer_master",
       "bottle_opener_requirement": "publandia_keychain_required_for_all_brewery_access"
     }
   },
@@ -1181,7 +1181,7 @@
     "entry_from": "debaucheryville_clocktower_arcade_01",
     "exit_to": "debaucheryville_clocktower_arcade_01",
     "brewery_network": [
-      "debaucheryville_arcade_absynthium_brewery_01",
+      "debaucheryville_arcade_absinthium_brewery_01",
       "brewery_location_02_tbd",
       "brewery_location_03_tbd",
       "brewery_location_04_tbd"
@@ -1374,7 +1374,7 @@
     "entry_from": "debaucheryville_clocktower_plaza",
     "exit_to": "debaucheryville_clocktower_plaza",
     "brewery_network": [
-      "debaucheryville_arcade_absynthium_brewery_01",
+      "debaucheryville_arcade_absinthium_brewery_01",
       "debaucheryville_clocktower_tapdatvault_brewery_02",
       "brewery_location_03_tbd",
       "brewery_location_04_tbd"
@@ -1569,7 +1569,7 @@
     "entry_from": "debaucheryville_clocktower_plaza",
     "exit_to": "debaucheryville_clocktower_plaza",
     "brewery_network": [
-      "debaucheryville_arcade_absynthium_brewery_01",
+      "debaucheryville_arcade_absinthium_brewery_01",
       "debaucheryville_clocktower_tapdatvault_brewery_02",
       "brewery_location_03_tbd",
       "brewery_location_04_tbd"
@@ -1764,7 +1764,7 @@
     "entry_from": "debaucheryville_clocktower_plaza",
     "exit_to": "debaucheryville_clocktower_plaza",
     "brewery_network": [
-      "debaucheryville_arcade_absynthium_brewery_01",
+      "debaucheryville_arcade_absinthium_brewery_01",
       "debaucheryville_clocktower_tapdatvault_brewery_02",
       "brewery_location_03_tbd",
       "brewery_location_04_tbd"
@@ -1958,7 +1958,7 @@
     "entry_from": "debaucheryville_shadow_exchange_area",
     "exit_to": "debaucheryville_shadow_exchange_area",
     "brewery_network": [
-      "debaucheryville_arcade_absynthium_brewery_01",
+      "debaucheryville_arcade_absinthium_brewery_01",
       "debaucheryville_clocktower_tapdatvault_brewery_02",
       "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
       "brewery_location_04_ye_olde_brew_lab"
@@ -2655,7 +2655,7 @@
     "entry_from": "debaucheryville_velvet_curtain_club_main",
     "exit_to": "debaucheryville_velvet_curtain_club_main",
     "brewery_network": [
-      "debaucheryville_arcade_absynthium_brewery_01",
+      "debaucheryville_arcade_absinthium_brewery_01",
       "debaucheryville_alley_three_crown_keg_haus_02",
       "debaucheryville_clocktower_tap_dat_vault_03",
       "debaucheryville_velvetcurtain_brew_lab_01"

@@ -14,7 +14,7 @@ Eurobound/
 │ │ ├── overworld/
 │ │ │ └── Debaucheryville/
 │ │ │ ├── absinthe_arcade.tscn
-│ │ │ ├── absynthium_taproom.tscn
+│ │ │ ├── absinthium_taproom.tscn
 │ │ │ ├── shadow_exchange.tscn
 │ │ │ ├── tap_dat_vault.tscn
 │ │ │ ├── three_crown_keg_haus.tscn

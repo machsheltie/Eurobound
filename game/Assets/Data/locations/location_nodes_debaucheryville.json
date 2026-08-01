@@ -36,7 +36,7 @@
         "theme": "Psychedelic corrupted arcade bathed in blacklight and glitch fog",
         "features": [
           "entry_point",
-          "dungeon_entrance: absynthium_taproom",
+          "dungeon_entrance: absinthium_taproom",
           "couchsurf_trigger",
           "quest_npc: backpack_girl",
           "puzzle_node: arcade_mirror_maze"
@@ -49,8 +49,8 @@
       ]
     },
     {
-      "name": "The Absynthium Taproom",
-      "tag_id": "absynthium_taproom",
+      "name": "The Absinthium Taproom",
+      "tag_id": "absinthium_taproom",
       "region": "Debaucheryville",
       "exterior": {
         "description": "Hidden behind a glowing green curtain in the Absinthe Arcade, faint fog leaks into the street. Neon signage flickers between 'Open' and 'Obey.'",

@@ -7,7 +7,7 @@ You can easily extend this by adding more entries per city.
 |-------------------------|-------------------------|------------------------------------------------------------|
 | Velvet Curtain Club     | `velvet_curtain_club`   | Couchsurf scene trigger, quest hub, side event            |
 | Absinthe Arcade         | `absinthe_arcade`       | Brewery entrance, couchsurf trigger, puzzle dungeon       |
-| The Absintheum Taproom  | absynthium_taproom      | Brewery dungeon, selfie unlock, mirror maze challenge     |
+| The Absintheum Taproom  | absinthium_taproom      | Brewery dungeon, selfie unlock, mirror maze challenge     |
 | The Tap Dat Vault       | tap_dat_vault           | Brewery dungeon, rhythm puzzle, couchsurf reward selfie   |
 | Three Crown Keg Haus    | three_crown_keg_haus    | Brewery dungeon, stealth puzzle, couchsurf/quest access   |
 | Ye Olde B.R.E.W. Lab    | ye_olde_brew_lab        | Brewery dungeon, flavor minigame, couchsurf trigger       |

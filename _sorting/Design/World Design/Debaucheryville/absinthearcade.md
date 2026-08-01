@@ -19,7 +19,7 @@
 - **Special Conditions**: Random chance encounters increase when player has Confused or Drunk status
 
 ### Exit Conditions
-- **Normal Exit**: Through main entrance or hidden Absynthium Taproom passage
+- **Normal Exit**: Through main entrance or hidden Absinthium Taproom passage
 - **Completion Requirements**: Obtain "Beer Pong Saint Relic" NFT from rigged claw machine
 - **Failure States**: Can be temporarily banned for "aggressive token shaking" (mini-game failure)
 - **Progressive Unlocks**: Meeting Backpack Girl Who Never Left unlocks couchsurf options, accessing hidden areas
@@ -38,7 +38,7 @@
 - **Furniture & Props**: Central bar shaped like a cracked absinthe bottle, glowing green from within, bar stools are mismatched: highchairs, beanbags, one is a bidet
 - **Decorative Elements**: Floor tiles randomly light up or flicker — creating disorientation, Green Fairy mural melting into circuits, cracked arcade cabinets breathing mist, mirror-lined walls
 - **Atmospheric Effects**: Green spectral fog, particle systems around damaged machines
-- **Hidden Areas**: Absynthium Taproom entrance behind cracked Time Crisis machine (accessed through the north wing arcade maze)
+- **Hidden Areas**: Absinthium Taproom entrance behind cracked Time Crisis machine (accessed through the north wing arcade maze)
 
 ### Technical Specifications
 - **Color Palette**: Primary: Toxic Green (#39FF14), Accent: Neon Purple (#BF00FF), Background: Deep Black (#0A0A0A)
@@ -96,7 +96,7 @@
 - **Rigged Absinthe Arcade Claw Machine** - Primary NFT Hunt location for "Beer Pong Saint Relic"
 - **Cracked arcade cabinets** - Mini-games with twisted mechanics
 - **Token exchange machine** - Overpriced conversion (€1 = 5 tokens)
-- **Hidden brewery entrance** - Behind Time Crisis machine, leads to Absynthium Taproom
+- **Hidden brewery entrance** - Behind Time Crisis machine, leads to Absinthium Taproom
 - **Dynamic lighting/shadow puzzle** - Exploration mechanic for discovering secrets
 
 ### Economic Integration
@@ -109,7 +109,7 @@
 - **NFT Hunt**: Primary location for "Beer Pong Saint Relic" acquisition via rigged claw machine
 - **Couchsurf System**: Backpack Girl Who Never Left provides accommodation with morning-after scene
 - **Cross-City Connections**: Random chance to find broken Game Boy with weird symbols (used later in Sinfonia)
-- **Brewery Tour Access**: Hidden entrance to Absynthium Taproom dungeon
+- **Brewery Tour Access**: Hidden entrance to Absinthium Taproom dungeon
 - **Information Source**: NPCs provide crypto culture exposition and Sinfonia clues
 
 ## System Integration
@@ -136,7 +136,7 @@
 - **ICQ Integration**: One-time prompt to send quote to Rival Trio, inflicting Embarrassed debuff on them
 
 ### Cross-Location Dependencies
-- **Brewery Tour Connection**: Hidden entrance to Absynthium Taproom behind Time Crisis machine
+- **Brewery Tour Connection**: Hidden entrance to Absinthium Taproom behind Time Crisis machine
 - **Sinfonia Preparation**: Broken Game Boy with symbols provides future quest item
 - **Character Movements**: Backpack Girl travels between hostels, hacker NPCs appear in 24-Hour Internet Café
 - **Information Flow**: Crypto culture knowledge useful in Shadow Exchange negotiations
