@@ -127,7 +127,8 @@ PUBLANDIA (Dublin)          DEBAUCHERYVILLE (Prague)      SINFONIA (Vienna)
 "Beer & Brotherhood"        "Neon Nights & Shady          "Culture & Nightlife" —
                              Delights — it was cheaper     opera glitz over black-tie
                              at 3 a.m."                    backrooms
-(+ SHAMSTERDAM — placement and order per author; act labels dead per author ruling)
+(City order — author ruling 2026-08-03: PUBLANDIA → DEBAUCHERYVILLE → SINFONIA → SHAMSTERDAM (finale).
+Once visited, a city stays open for backtracking. Act labels dead per author ruling.)
 ```
 
 Every city delivers the same guaranteed skeleton (content quotas are production law):
