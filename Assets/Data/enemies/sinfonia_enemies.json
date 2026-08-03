@@ -1,1 +1,5 @@
-Sinfonia Enemies
+{
+  "schema_version": "1.0",
+  "world_name": "sinfonia",
+  "enemies": {}
+}

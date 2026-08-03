@@ -1,1 +1,7 @@
-publandia dialogue
+{
+  "schema_version": "1.0",
+  "world_name": "publandia",
+  "dialogue_trees": {},
+  "status_reactions": {},
+  "world_state_responses": {}
+}

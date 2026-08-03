@@ -1,3 +1,4 @@
+[
 {
   "location_id": "debaucheryville_clocktower_arcade_01",
   "sprite_sheets": {
@@ -621,7 +622,59 @@
           "active_cooking": {"x": 256, "y": 0, "width": 256, "height": 192},
           "cleaning_mode": {"x": 512, "y": 0, "width": 256, "height": 192}
         },
-  
+        "vertical_rotisserie": {
+          "meat_layer_1": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "meat_layer_2": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "meat_layer_3": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "meat_layer_4": {"x": 192, "y": 192, "width": 64, "height": 96},
+          "rotisserie_mechanism": {"x": 256, "y": 192, "width": 32, "height": 96},
+          "drip_tray": {"x": 288, "y": 192, "width": 48, "height": 24}
+        },
+        "fluorescent_lighting": {
+          "full_brightness": {"x": 0, "y": 288, "width": 128, "height": 32},
+          "flickering_dim": {"x": 128, "y": 288, "width": 128, "height": 32},
+          "electrical_issues": {"x": 256, "y": 288, "width": 128, "height": 32}
+        },
+        "signage_system": {
+          "main_sign_base": {"x": 0, "y": 320, "width": 192, "height": 64},
+          "led_strip_normal": {"x": 192, "y": 320, "width": 192, "height": 8},
+          "led_strip_flickering": {"x": 192, "y": 328, "width": 192, "height": 8},
+          "hookah_hose_mount": {"x": 192, "y": 336, "width": 32, "height": 48}
+        }
+      }
+    },
+    "mr_chadz_character": {
+      "file": "mr_chadz_kebab_vendor.png", 
+      "dimensions": {"width": 512, "height": 512},
+      "character_size": {"width": 64, "height": 96},
+      "animation_states": {
+        "idle_phone_checking": {
+          "frame_1": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "frame_2": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "frame_3": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "frame_4": {"x": 192, "y": 0, "width": 64, "height": 96}
+        },
+        "serving_food": {
+          "prep_ingredients": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "wrapping_food": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "handing_to_customer": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "taking_payment": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "business_reactions": {
+          "supplier_call_concern": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "health_inspector_panic": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "business_call_checking": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "sketchy_deal_negotiation": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "signature_outfit": {
+          "glittery_crop_top": {"x": 256, "y": 0, "width": 64, "height": 48},
+          "bulletproof_vest": {"x": 256, "y": 48, "width": 64, "height": 48},
+          "burner_phone": {"x": 320, "y": 0, "width": 16, "height": 24},
+          "business_call_screen": {"x": 320, "y": 24, "width": 16, "height": 24}
+        }
+      }
+    }
+  },
   "quest_integration_sprites": {
     "great_doner_debate_elements": {
       "belly_of_chadz_special_highlight": {"x": 256, "y": 736, "width": 64, "height": 64},
@@ -681,9 +734,7 @@
     "sprite_coordinate_grid": {"x": 0, "y": 880, "width": 512, "height": 128},
     "color_palette_reference": {"x": 0, "y": 1008, "width": 256, "height": 16},
     "animation_timing_guides": {"x": 256, "y": 1008, "width": 256, "height": 16}
-  }
-},
-  
+  },
   "interactive_element_sprites": {
     "crypto_phone_screen_states": {
       "price_alert_notification": {"x": 168, "y": 800, "width": 16, "height": 24},
@@ -765,374 +816,10 @@
       "cold_weather_extra_steam": {"x": 412, "y": 840, "width": 32, "height": 24},
       "wind_debris_scatter": {"x": 444, "y": 840, "width": 40, "height": 16}
     }
-  }
-},
-        "vertical_rotisserie": {
-          "meat_layer_1": {"x": 0, "y": 192, "width": 64, "height": 96},
-          "meat_layer_2": {"x": 64, "y": 192, "width": 64, "height": 96},
-          "meat_layer_3": {"x": 128, "y": 192, "width": 64, "height": 96},
-          "meat_layer_4": {"x": 192, "y": 192, "width": 64, "height": 96},
-          "rotisserie_mechanism": {"x": 256, "y": 192, "width": 32, "height": 96},
-          "drip_tray": {"x": 288, "y": 192, "width": 48, "height": 24}
-        },
-        "fluorescent_lighting": {
-          "full_brightness": {"x": 0, "y": 288, "width": 128, "height": 32},
-          "flickering_dim": {"x": 128, "y": 288, "width": 128, "height": 32},
-          "electrical_issues": {"x": 256, "y": 288, "width": 128, "height": 32}
-        },
-        "signage_system": {
-          "main_sign_base": {"x": 0, "y": 320, "width": 192, "height": 64},
-          "led_strip_normal": {"x": 192, "y": 320, "width": 192, "height": 8},
-          "led_strip_flickering": {"x": 192, "y": 328, "width": 192, "height": 8},
-          "hookah_hose_mount": {"x": 192, "y": 336, "width": 32, "height": 48}
-        }
-      }
-    },
-    "mr_chadz_character": {
-      "file": "mr_chadz_kebab_vendor.png", 
-      "dimensions": {"width": 512, "height": 512},
-      "character_size": {"width": 64, "height": 96},
-      "animation_states": {
-        "idle_phone_checking": {
-          "frame_1": {"x": 0, "y": 0, "width": 64, "height": 96},
-          "frame_2": {"x": 64, "y": 0, "width": 64, "height": 96},
-          "frame_3": {"x": 128, "y": 0, "width": 64, "height": 96},
-          "frame_4": {"x": 192, "y": 0, "width": 64, "height": 96}
-        },
-        "serving_food": {
-          "prep_ingredients": {"x": 0, "y": 96, "width": 64, "height": 96},
-          "wrapping_food": {"x": 64, "y": 96, "width": 64, "height": 96},
-          "handing_to_customer": {"x": 128, "y": 96, "width": 64, "height": 96},
-          "taking_payment": {"x": 192, "y": 96, "width": 64, "height": 96}
-        },
-        "business_reactions": {
-          "supplier_call_concern": {"x": 0, "y": 192, "width": 64, "height": 96},
-          "health_inspector_panic": {"x": 64, "y": 192, "width": 64, "height": 96},
-          "business_call_checking": {"x": 128, "y": 192, "width": 64, "height": 96},
-          "sketchy_deal_negotiation": {"x": 192, "y": 192, "width": 64, "height": 96}
-        },
-        "signature_outfit": {
-          "glittery_crop_top": {"x": 256, "y": 0, "width": 64, "height": 48},
-          "bulletproof_vest": {"x": 256, "y": 48, "width": 64, "height": 48},
-          "burner_phone": {"x": 320, "y": 0, "width": 16, "height": 24},
-          "business_call_screen": {"x": 320, "y": 24, "width": 16, "height": 24}
-        }
-      }
-    },128, "y": 0, "width": 64, "height": 96},
-          "frame_4": {"x": 192, "y": 0, "width": 64, "height": 96}
-        },
-        "serving_food": {
-          "prep_ingredients": {"x": 0, "y": 96, "width": 64, "height": 96},
-          "wrapping_food": {"x": 64, "y": 96, "width": 64, "height": 96},
-          "handing_to_customer": {"x": 128, "y": 96, "width": 64, "height": 96},
-          "taking_payment": {"x": 192, "y": 96, "width": 64, "height": 96}
-        },
-        "crypto_reactions": {
-          "market_up_excited": {"x": 0, "y": 192, "width": 64, "height": 96},
-          "market_crash_despair": {"x": 64, "y": 192, "width": 64, "height": 96},
-          "portfolio_checking": {"x": 128, "y": 192, "width": 64, "height": 96},
-          "trading_frantically": {"x": 192, "y": 192, "width": 64, "height": 96}
-        },
-        "signature_outfit": {
-          "glittery_crop_top": {"x": 256, "y": 0, "width": 64, "height": 48},
-          "bulletproof_vest": {"x": 256, "y": 48, "width": 64, "height": 48},
-          "burner_phone": {"x": 320, "y": 0, "width": 16, "height": 24},
-          "crypto_alert_screen": {"x": 320, "y": 24, "width": 16, "height": 24}
-        }
-      }
-    },
-    "menu_items_food": {
-      "file": "kebab_menu_items_detailed.png",
-      "dimensions": {"width": 1024, "height": 512},
-      "item_size": {"width": 64, "height": 64},
-      "food_items": {
-        "gutbuster_wrap": {
-          "wrapped": {"x": 0, "y": 0, "width": 64, "height": 64},
-          "unwrapped_dripping": {"x": 64, "y": 0, "width": 64, "height": 64},
-          "cross_section": {"x": 128, "y": 0, "width": 64, "height": 64}
-        },
-        "vampire_slayer_garlic_fries": {
-          "in_container": {"x": 192, "y": 0, "width": 64, "height": 64},
-          "garlic_sauce_dripping": {"x": 256, "y": 0, "width": 64, "height": 64},
-          "week_old_oil_shimmer": {"x": 320, "y": 0, "width": 64, "height": 64}
-        },
-        "euromeat_pocket": {
-          "suspicious_grey_filling": {"x": 384, "y": 0, "width": 64, "height": 64},
-          "soggy_pita_bread": {"x": 448, "y": 0, "width": 64, "height": 64},
-          "microwaved_steam": {"x": 512, "y": 0, "width": 64, "height": 64}
-        },
-        "megamix_box_regret_platter": {
-          "cardboard_coffin_closed": {"x": 0, "y": 64, "width": 64, "height": 64},
-          "horrifying_contents_revealed": {"x": 64, "y": 64, "width": 64, "height": 64},
-          "regret_visualization": {"x": 128, "y": 64, "width": 64, "height": 64}
-        },
-        "drunken_sauce_shot": {
-          "plastic_thimble": {"x": 192, "y": 64, "width": 32, "height": 32},
-          "hot_sauce_mayo_swirl": {"x": 224, "y": 64, "width": 32, "height": 32},
-          "dysentery_warning_label": {"x": 192, "y": 96, "width": 32, "height": 16}
-        },
-        "lambsomnia_special": {
-          "spiced_lamb_arrangement": {"x": 256, "y": 64, "width": 64, "height": 64},
-          "sleepless_tzatziki": {"x": 320, "y": 64, "width": 64, "height": 64},
-          "insomniac_glow_effect": {"x": 384, "y": 64, "width": 64, "height": 64}
-        },
-        "yogurt_reboot": {
-          "tiny_cup_warm": {"x": 448, "y": 64, "width": 32, "height": 32},
-          "expired_balkan_yogurt": {"x": 480, "y": 64, "width": 32, "height": 32},
-          "questionable_expiration_date": {"x": 448, "y": 96, "width": 32, "height": 16}
-        },
-        "belly_of_chadz": {
-          "dense_kebab_box": {"x": 0, "y": 128, "width": 64, "height": 64},
-          "three_sauces_soaked": {"x": 64, "y": 128, "width": 64, "height": 64},
-          "ego_emanation_effect": {"x": 128, "y": 128, "width": 64, "height": 64}
-        }
-      }
-    },
-    "environmental_details": {
-      "file": "alley_environment_details.png",
-      "dimensions": {"width": 1024, "height": 768},
-      "environmental_elements": {
-        "rainbow_grease_puddles": {
-          "small_puddle": {"x": 0, "y": 0, "width": 32, "height": 16},
-          "medium_puddle": {"x": 32, "y": 0, "width": 48, "height": 24},
-          "large_puddle": {"x": 80, "y": 0, "width": 64, "height": 32},
-          "rainbow_shimmer_1": {"x": 0, "y": 32, "width": 64, "height": 32},
-          "rainbow_shimmer_2": {"x": 64, "y": 32, "width": 64, "height": 32},
-          "rainbow_shimmer_3": {"x": 128, "y": 32, "width": 64, "height": 32}
-        },
-        "post_party_debris": {
-          "red_bull_cans": {"x": 0, "y": 64, "width": 16, "height": 24},
-          "condom_wrappers": {"x": 16, "y": 64, "width": 12, "height": 8},
-          "rave_flyer_pieces": {"x": 28, "y": 64, "width": 20, "height": 16},
-          "cigarette_butts": {"x": 48, "y": 64, "width": 8, "height": 8},
-          "mystery_stains": {"x": 0, "y": 88, "width": 96, "height": 24}
-        },
-        "nft_wall_graffiti": {
-          "nft_4_lyfe_base": {"x": 144, "y": 0, "width": 128, "height": 64},
-          "additional_crypto_tags": {"x": 144, "y": 64, "width": 128, "height": 48},
-          "faded_older_graffiti": {"x": 272, "y": 0, "width": 64, "height": 112}
-        },
-        "chain_link_fence": {
-          "normal_section": {"x": 336, "y": 0, "width": 64, "height": 96},
-          "damaged_section": {"x": 400, "y": 0, "width": 64, "height": 96},
-          "debris_caught_section": {"x": 464, "y": 0, "width": 64, "height": 96}
-        },
-        "rat_and_chili_pepper": {
-          "rat_gnawing_frame_1": {"x": 0, "y": 112, "width": 16, "height": 12},
-          "rat_gnawing_frame_2": {"x": 16, "y": 112, "width": 16, "height": 12},
-          "rat_gnawing_frame_3": {"x": 32, "y": 112, "width": 16, "height": 12},
-          "rat_gnawing_frame_4": {"x": 48, "y": 112, "width": 16, "height": 12},
-          "chili_pepper_intact": {"x": 0, "y": 124, "width": 8, "height": 12},
-          "chili_pepper_gnawed": {"x": 8, "y": 124, "width": 8, "height": 12}
-        }
-      }
-    },
-    "particle_effects": {
-      "file": "kebab_stand_particle_effects.png",
-      "dimensions": {"width": 512, "height": 256},
-      "particle_elements": {
-        "cooking_steam": {
-          "steam_wisp_1": {"x": 0, "y": 0, "width": 16, "height": 16},
-          "steam_wisp_2": {"x": 16, "y": 0, "width": 16, "height": 16},
-          "steam_wisp_3": {"x": 32, "y": 0, "width": 16, "height": 16},
-          "steam_wisp_4": {"x": 48, "y": 0, "width": 16, "height": 16}
-        },
-        "grease_vapor": {
-          "grease_particle_small": {"x": 0, "y": 16, "width": 8, "height": 8},
-          "grease_particle_medium": {"x": 8, "y": 16, "width": 12, "height": 12},
-          "grease_droplet": {"x": 20, "y": 16, "width": 4, "height": 8}
-        },
-        "cigarette_smoke": {
-          "smoke_curl_1": {"x": 64, "y": 0, "width": 20, "height": 20},
-          "smoke_curl_2": {"x": 84, "y": 0, "width": 20, "height": 20},
-          "smoke_curl_3": {"x": 104, "y": 0, "width": 20, "height": 20}
-        },
-        "urban_debris_flutter": {
-          "paper_scrap": {"x": 0, "y": 28, "width": 12, "height": 8},
-          "plastic_fragment": {"x": 12, "y": 28, "width": 8, "height": 6},
-          "food_wrapper": {"x": 20, "y": 28, "width": 10, "height": 8}
-        }
-      }
-    }
   },
-  
   "animation_sequences": {
     "rotisserie_meat_spinning": {
-      "sprite_source": "alley_environment_details.png",
-      "sequence": [
-        {"frame": "rainbow_shimmer_1", "duration": 1.0},
-        {"frame": "rainbow_shimmer_2", "duration": 1.0}, 
-        {"frame": "rainbow_shimmer_3", "duration": 1.0}
-      ],
-      "loop": true,
-      "oil_slick_effect": "creates_mesmerizing_rainbow_patterns",
-      "lighting_interaction": "reflects_fluorescent_cart_lighting"
-    },
-    "rat_chili_pepper_gnawing": {
-      "sprite_source": "alley_environment_details.png",
-      "sequence": [
-        {"frame": "rat_gnawing_frame_1", "duration": 0.4, "audio": "tiny_gnawing_sound"},
-        {"frame": "rat_gnawing_frame_2", "duration": 0.3},
-        {"frame": "rat_gnawing_frame_3", "duration": 0.4},
-        {"frame": "rat_gnawing_frame_4", "duration": 0.4}
-      ],
-      "loop": true,
-      "health_code_violation": "continuous_obvious_contamination",
-      "pepper_degradation": "chili_pepper_slowly_consumed_over_time"
-    },
-    "food_preparation_sequence": {
-      "sprite_source": "mr_chadz_crypto_kebab_vendor.png",
-      "customer_order_flow": [
-        {"frame": "prep_ingredients", "duration": 2.0, "audio": "questionable_meat_handling"},
-        {"frame": "wrapping_food", "duration": 1.5, "audio": "aluminum_foil_crinkling"},
-        {"frame": "handing_to_customer", "duration": 1.0, "audio": "here_you_go_regret_incoming"},
-        {"frame": "taking_payment", "duration": 0.5, "audio": "ancient_cash_register"}
-      ]
-    }
-  },
-  
-  "lighting_effects": {
-    "fluorescent_cart_lighting": {
-      "color": "#FFFFFF", 
-      "intensity": 1.0,
-      "coverage": "harsh_direct_illumination_food_prep_area",
-      "shadow_casting": "creates_stark_contrast_with_alley_darkness",
-      "flicker_occasional": "suggests_electrical_problems"
-    },
-    "led_strip_accent_lighting": {
-      "color": "#FF6B35",
-      "intensity_variation": "0.3_to_1.0_irregular_flicker",
-      "backlight_effect": "illuminates_mr_chadz_kebabs_signage",
-      "hookah_hose_mounting": "creates_jury_rigged_aesthetic"
-    },
-    "rainbow_grease_reflections": {
-      "colors": ["#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#FF00FF"],
-      "animation_cycle": "2_second_slow_shifting_spectrum",
-      "reflection_source": "fluorescent_light_bouncing_off_oil_slicks",
-      "aesthetic_contradiction": "beautiful_despite_health_hazard_origin"
-    },
-    "alley_ambient_darkness": {
-      "color": "#FFB347",
-      "intensity": 0.2,
-      "sources": ["distant_street_lamps", "club_light_spillover"],
-      "atmospheric_purpose": "creates_dingy_urban_night_context"
-    }
-  },
-  
-  "ui_elements": {
-    "menu_interface": {
-      "menu_background": {"x": 0, "y": 240, "width": 256, "height": 192},
-      "item_selection_highlight": {"x": 256, "y": 240, "width": 64, "height": 16},
-      "price_display": {"x": 320, "y": 240, "width": 48, "height": 16},
-      "quantity_selector": {"x": 368, "y": 240, "width": 32, "height": 16}
-    },
-    "status_effect_warnings": {
-      "health_warning_icon": {"x": 0, "y": 432, "width": 16, "height": 16},
-      "side_effect_alert": {"x": 16, "y": 432, "width": 32, "height": 16},
-      "strategic_benefit_indicator": {"x": 48, "y": 432, "width": 32, "height": 16}
-    },
-    "repeat_customer_indicators": {
-      "new_customer_prompt": {"x": 80, "y": 432, "width": 48, "height": 16},
-      "regular_customer_recognition": {"x": 128, "y": 432, "width": 48, "height": 16},
-      "loyalty_tier_display": {"x": 176, "y": 432, "width": 32, "height": 16}
-    }
-  },
-  
-  "audio_sprite_mappings": {
-    "environmental_audio": [
-      "rotisserie_meat_sizzling_continuous.ogg",
-      "steam_hiss_from_cooking_equipment.ogg",
-      "city_traffic_distant_club_music_blend.ogg",
-      "urban_wind_through_alley_debris_flutter.ogg"
-    ],
-    "interactive_equipment_audio": [
-      "vertical_rotisserie_motor_continuous.wav",
-      "grease_pop_small.wav",
-      "grease_pop_medium.wav", 
-      "grease_splatter_sizzle.wav"
-    ],
-    "mr_chadz_character_audio": [
-      "crypto_price_alert_beep.wav",
-      "market_crash_alarm.wav",
-      "portfolio_update_chime.wav",
-      "trading_notification_buzz.wav"
-    ],
-    "customer_service_audio": [
-      "pen_scribbling_on_greasy_notepad.wav",
-      "cash_register_ancient_mechanical.wav",
-      "aluminum_foil_crinkling_enthusiastic.wav",
-      "cardboard_container_placement.wav"
-    ],
-    "comedy_environmental_audio": [
-      "tiny_gnawing_sound_rat_chili.wav",
-      "questionable_meat_handling_squelch.wav",
-      "health_violation_dramatic_sting.wav",
-      "grease_puddle_splash_footstep.wav"
-    ]
-  },
-  
-  "mobile_optimization": {
-    "texture_compression": {
-      "ios": "PVRTC_optimized_for_food_textures",
-      "android": "ETC2_with_alpha_support_grease_effects",
-      "fallback": "PNG_high_quality_for_detailed_food_items"
-    },
-    "sprite_atlasing": {
-      "food_items_atlas": "combines_all_menu_items_single_texture",
-      "character_animation_atlas": "mr_chadz_all_states_combined",
-      "environmental_elements_atlas": "particles_debris_effects_combined",
-      "max_atlas_size": "2048x2048_mobile_gpu_friendly"
-    },
-    "lod_scaling": {
-      "high_end_devices": "full_particle_effects_detailed_animations",
-      "medium_devices": "reduced_particle_density_simplified_steam",
-      "low_end_devices": "static_steam_sprites_basic_animations",
-      "potato_mode": "essential_sprites_only_no_particle_effects"
-    },
-    "memory_management": {
-      "streaming_strategy": "loads_menu_items_on_demand",
-      "cache_management": "keeps_frequently_accessed_sprites_in_memory",
-      "garbage_collection": "aggressive_cleanup_unused_animation_frames"
-    }
-  },
-  
-  "accessibility_sprites": {
-    "high_contrast_alternatives": {
-      "menu_items_high_contrast": {"x": 0, "y": 448, "width": 256, "height": 64},
-      "ui_elements_enhanced": {"x": 256, "y": 448, "width": 128, "height": 32},
-      "character_outline_emphasized": {"x": 384, "y": 448, "width": 64, "height": 96}
-    },
-    "colorblind_accommodations": {
-      "rainbow_puddles_pattern_alternative": {"x": 0, "y": 512, "width": 128, "height": 64},
-      "led_strip_pattern_indicators": {"x": 128, "y": 512, "width": 64, "height": 16},
-      "grease_hazard_texture_cues": {"x": 192, "y": 512, "width": 64, "height": 32}
-    },
-    "motion_sensitivity_options": {
-      "static_rotisserie_alternative": {"x": 256, "y": 512, "width": 64, "height": 96},
-      "reduced_flicker_led_strip": {"x": 320, "y": 512, "width": 64, "height": 16},
-      "minimal_particle_movement": {"x": 384, "y": 512, "width": 64, "height": 32}
-    }
-  },
-  
-  "social_media_optimized_elements": {
-    "screenshot_compositions": {
-      "mr_chadz_crypto_pose": {"x": 0, "y": 576, "width": 128, "height": 128},
-      "mystery_meat_close_up": {"x": 128, "y": 576, "width": 96, "height": 96},
-      "rainbow_grease_aesthetic": {"x": 224, "y": 576, "width": 96, "height": 64}
-    },
-    "meme_template_elements": {
-      "catchphrase_text_backgrounds": {"x": 0, "y": 704, "width": 192, "height": 32},
-      "reaction_face_frames": {"x": 192, "y": 704, "width": 128, "height": 64},
-      "food_horror_compositions": {"x": 320, "y": 704, "width": 96, "height": 64}
-    },
-    "tiktok_moment_frames": {
-      "before_eating_setup": {"x": 0, "y": 736, "width": 64, "height": 64},
-      "during_consumption": {"x": 64, "y": 736, "width": 64, "height": 64},
-      "regret_realization": {"x": 128, "y": 736, "width": 64, "height": 64},
-      "crypto_price_check": {"x": 192, "y": 736, "width": 64, "height": 64}
-    }
-  }
-}": "mr_chadz_kebab_cart_complete.png",
+      "sprite_source": "mr_chadz_kebab_cart_complete.png",
       "sequence": [
         {"frame": "meat_layer_1", "duration": 0.5},
         {"frame": "meat_layer_2", "duration": 0.5},
@@ -1319,6 +1006,327 @@
       "static_rotisserie_alternative": {"x": 256, "y": 512, "width": 64, "height": 96},
       "reduced_flicker_led_strip": {"x": 320, "y": 512, "width": 64, "height": 16},
       "minimal_particle_movement": {"x": 384, "y": 512, "width": 64, "height": 32}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01_character_animations",
+  "sprite_sheets": {
+    "mr_chadz_character": {
+      "file": "mr_chadz_crypto_kebab_vendor.png",
+      "animation_states": {
+        "idle_phone_checking": {
+          "frame_3": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "frame_4": {"x": 192, "y": 0, "width": 64, "height": 96}
+        },
+        "serving_food": {
+          "prep_ingredients": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "wrapping_food": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "handing_to_customer": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "taking_payment": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "crypto_reactions": {
+          "market_up_excited": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "market_crash_despair": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "portfolio_checking": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "trading_frantically": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "signature_outfit": {
+          "glittery_crop_top": {"x": 256, "y": 0, "width": 64, "height": 48},
+          "bulletproof_vest": {"x": 256, "y": 48, "width": 64, "height": 48},
+          "burner_phone": {"x": 320, "y": 0, "width": 16, "height": 24},
+          "crypto_alert_screen": {"x": 320, "y": 24, "width": 16, "height": 24}
+        }
+      }
+    },
+    "menu_items_food": {
+      "file": "kebab_menu_items_detailed.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "item_size": {"width": 64, "height": 64},
+      "food_items": {
+        "gutbuster_wrap": {
+          "wrapped": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "unwrapped_dripping": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "cross_section": {"x": 128, "y": 0, "width": 64, "height": 64}
+        },
+        "vampire_slayer_garlic_fries": {
+          "in_container": {"x": 192, "y": 0, "width": 64, "height": 64},
+          "garlic_sauce_dripping": {"x": 256, "y": 0, "width": 64, "height": 64},
+          "week_old_oil_shimmer": {"x": 320, "y": 0, "width": 64, "height": 64}
+        },
+        "euromeat_pocket": {
+          "suspicious_grey_filling": {"x": 384, "y": 0, "width": 64, "height": 64},
+          "soggy_pita_bread": {"x": 448, "y": 0, "width": 64, "height": 64},
+          "microwaved_steam": {"x": 512, "y": 0, "width": 64, "height": 64}
+        },
+        "megamix_box_regret_platter": {
+          "cardboard_coffin_closed": {"x": 0, "y": 64, "width": 64, "height": 64},
+          "horrifying_contents_revealed": {"x": 64, "y": 64, "width": 64, "height": 64},
+          "regret_visualization": {"x": 128, "y": 64, "width": 64, "height": 64}
+        },
+        "drunken_sauce_shot": {
+          "plastic_thimble": {"x": 192, "y": 64, "width": 32, "height": 32},
+          "hot_sauce_mayo_swirl": {"x": 224, "y": 64, "width": 32, "height": 32},
+          "dysentery_warning_label": {"x": 192, "y": 96, "width": 32, "height": 16}
+        },
+        "lambsomnia_special": {
+          "spiced_lamb_arrangement": {"x": 256, "y": 64, "width": 64, "height": 64},
+          "sleepless_tzatziki": {"x": 320, "y": 64, "width": 64, "height": 64},
+          "insomniac_glow_effect": {"x": 384, "y": 64, "width": 64, "height": 64}
+        },
+        "yogurt_reboot": {
+          "tiny_cup_warm": {"x": 448, "y": 64, "width": 32, "height": 32},
+          "expired_balkan_yogurt": {"x": 480, "y": 64, "width": 32, "height": 32},
+          "questionable_expiration_date": {"x": 448, "y": 96, "width": 32, "height": 16}
+        },
+        "belly_of_chadz": {
+          "dense_kebab_box": {"x": 0, "y": 128, "width": 64, "height": 64},
+          "three_sauces_soaked": {"x": 64, "y": 128, "width": 64, "height": 64},
+          "ego_emanation_effect": {"x": 128, "y": 128, "width": 64, "height": 64}
+        }
+      }
+    },
+    "environmental_details": {
+      "file": "alley_environment_details.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "environmental_elements": {
+        "rainbow_grease_puddles": {
+          "small_puddle": {"x": 0, "y": 0, "width": 32, "height": 16},
+          "medium_puddle": {"x": 32, "y": 0, "width": 48, "height": 24},
+          "large_puddle": {"x": 80, "y": 0, "width": 64, "height": 32},
+          "rainbow_shimmer_1": {"x": 0, "y": 32, "width": 64, "height": 32},
+          "rainbow_shimmer_2": {"x": 64, "y": 32, "width": 64, "height": 32},
+          "rainbow_shimmer_3": {"x": 128, "y": 32, "width": 64, "height": 32}
+        },
+        "post_party_debris": {
+          "red_bull_cans": {"x": 0, "y": 64, "width": 16, "height": 24},
+          "condom_wrappers": {"x": 16, "y": 64, "width": 12, "height": 8},
+          "rave_flyer_pieces": {"x": 28, "y": 64, "width": 20, "height": 16},
+          "cigarette_butts": {"x": 48, "y": 64, "width": 8, "height": 8},
+          "mystery_stains": {"x": 0, "y": 88, "width": 96, "height": 24}
+        },
+        "nft_wall_graffiti": {
+          "nft_4_lyfe_base": {"x": 144, "y": 0, "width": 128, "height": 64},
+          "additional_crypto_tags": {"x": 144, "y": 64, "width": 128, "height": 48},
+          "faded_older_graffiti": {"x": 272, "y": 0, "width": 64, "height": 112}
+        },
+        "chain_link_fence": {
+          "normal_section": {"x": 336, "y": 0, "width": 64, "height": 96},
+          "damaged_section": {"x": 400, "y": 0, "width": 64, "height": 96},
+          "debris_caught_section": {"x": 464, "y": 0, "width": 64, "height": 96}
+        },
+        "rat_and_chili_pepper": {
+          "rat_gnawing_frame_1": {"x": 0, "y": 112, "width": 16, "height": 12},
+          "rat_gnawing_frame_2": {"x": 16, "y": 112, "width": 16, "height": 12},
+          "rat_gnawing_frame_3": {"x": 32, "y": 112, "width": 16, "height": 12},
+          "rat_gnawing_frame_4": {"x": 48, "y": 112, "width": 16, "height": 12},
+          "chili_pepper_intact": {"x": 0, "y": 124, "width": 8, "height": 12},
+          "chili_pepper_gnawed": {"x": 8, "y": 124, "width": 8, "height": 12}
+        }
+      }
+    },
+    "particle_effects": {
+      "file": "kebab_stand_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "particle_elements": {
+        "cooking_steam": {
+          "steam_wisp_1": {"x": 0, "y": 0, "width": 16, "height": 16},
+          "steam_wisp_2": {"x": 16, "y": 0, "width": 16, "height": 16},
+          "steam_wisp_3": {"x": 32, "y": 0, "width": 16, "height": 16},
+          "steam_wisp_4": {"x": 48, "y": 0, "width": 16, "height": 16}
+        },
+        "grease_vapor": {
+          "grease_particle_small": {"x": 0, "y": 16, "width": 8, "height": 8},
+          "grease_particle_medium": {"x": 8, "y": 16, "width": 12, "height": 12},
+          "grease_droplet": {"x": 20, "y": 16, "width": 4, "height": 8}
+        },
+        "cigarette_smoke": {
+          "smoke_curl_1": {"x": 64, "y": 0, "width": 20, "height": 20},
+          "smoke_curl_2": {"x": 84, "y": 0, "width": 20, "height": 20},
+          "smoke_curl_3": {"x": 104, "y": 0, "width": 20, "height": 20}
+        },
+        "urban_debris_flutter": {
+          "paper_scrap": {"x": 0, "y": 28, "width": 12, "height": 8},
+          "plastic_fragment": {"x": 12, "y": 28, "width": 8, "height": 6},
+          "food_wrapper": {"x": 20, "y": 28, "width": 10, "height": 8}
+        }
+      }
+    }
+  },
+  "animation_sequences": {
+    "rotisserie_meat_spinning": {
+      "sprite_source": "alley_environment_details.png",
+      "sequence": [
+        {"frame": "rainbow_shimmer_1", "duration": 1.0},
+        {"frame": "rainbow_shimmer_2", "duration": 1.0}, 
+        {"frame": "rainbow_shimmer_3", "duration": 1.0}
+      ],
+      "loop": true,
+      "oil_slick_effect": "creates_mesmerizing_rainbow_patterns",
+      "lighting_interaction": "reflects_fluorescent_cart_lighting"
+    },
+    "rat_chili_pepper_gnawing": {
+      "sprite_source": "alley_environment_details.png",
+      "sequence": [
+        {"frame": "rat_gnawing_frame_1", "duration": 0.4, "audio": "tiny_gnawing_sound"},
+        {"frame": "rat_gnawing_frame_2", "duration": 0.3},
+        {"frame": "rat_gnawing_frame_3", "duration": 0.4},
+        {"frame": "rat_gnawing_frame_4", "duration": 0.4}
+      ],
+      "loop": true,
+      "health_code_violation": "continuous_obvious_contamination",
+      "pepper_degradation": "chili_pepper_slowly_consumed_over_time"
+    },
+    "food_preparation_sequence": {
+      "sprite_source": "mr_chadz_crypto_kebab_vendor.png",
+      "customer_order_flow": [
+        {"frame": "prep_ingredients", "duration": 2.0, "audio": "questionable_meat_handling"},
+        {"frame": "wrapping_food", "duration": 1.5, "audio": "aluminum_foil_crinkling"},
+        {"frame": "handing_to_customer", "duration": 1.0, "audio": "here_you_go_regret_incoming"},
+        {"frame": "taking_payment", "duration": 0.5, "audio": "ancient_cash_register"}
+      ]
+    }
+  },
+  
+  "lighting_effects": {
+    "fluorescent_cart_lighting": {
+      "color": "#FFFFFF", 
+      "intensity": 1.0,
+      "coverage": "harsh_direct_illumination_food_prep_area",
+      "shadow_casting": "creates_stark_contrast_with_alley_darkness",
+      "flicker_occasional": "suggests_electrical_problems"
+    },
+    "led_strip_accent_lighting": {
+      "color": "#FF6B35",
+      "intensity_variation": "0.3_to_1.0_irregular_flicker",
+      "backlight_effect": "illuminates_mr_chadz_kebabs_signage",
+      "hookah_hose_mounting": "creates_jury_rigged_aesthetic"
+    },
+    "rainbow_grease_reflections": {
+      "colors": ["#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#FF00FF"],
+      "animation_cycle": "2_second_slow_shifting_spectrum",
+      "reflection_source": "fluorescent_light_bouncing_off_oil_slicks",
+      "aesthetic_contradiction": "beautiful_despite_health_hazard_origin"
+    },
+    "alley_ambient_darkness": {
+      "color": "#FFB347",
+      "intensity": 0.2,
+      "sources": ["distant_street_lamps", "club_light_spillover"],
+      "atmospheric_purpose": "creates_dingy_urban_night_context"
+    }
+  },
+  
+  "ui_elements": {
+    "menu_interface": {
+      "menu_background": {"x": 0, "y": 240, "width": 256, "height": 192},
+      "item_selection_highlight": {"x": 256, "y": 240, "width": 64, "height": 16},
+      "price_display": {"x": 320, "y": 240, "width": 48, "height": 16},
+      "quantity_selector": {"x": 368, "y": 240, "width": 32, "height": 16}
+    },
+    "status_effect_warnings": {
+      "health_warning_icon": {"x": 0, "y": 432, "width": 16, "height": 16},
+      "side_effect_alert": {"x": 16, "y": 432, "width": 32, "height": 16},
+      "strategic_benefit_indicator": {"x": 48, "y": 432, "width": 32, "height": 16}
+    },
+    "repeat_customer_indicators": {
+      "new_customer_prompt": {"x": 80, "y": 432, "width": 48, "height": 16},
+      "regular_customer_recognition": {"x": 128, "y": 432, "width": 48, "height": 16},
+      "loyalty_tier_display": {"x": 176, "y": 432, "width": 32, "height": 16}
+    }
+  },
+  
+  "audio_sprite_mappings": {
+    "environmental_audio": [
+      "rotisserie_meat_sizzling_continuous.ogg",
+      "steam_hiss_from_cooking_equipment.ogg",
+      "city_traffic_distant_club_music_blend.ogg",
+      "urban_wind_through_alley_debris_flutter.ogg"
+    ],
+    "interactive_equipment_audio": [
+      "vertical_rotisserie_motor_continuous.wav",
+      "grease_pop_small.wav",
+      "grease_pop_medium.wav", 
+      "grease_splatter_sizzle.wav"
+    ],
+    "mr_chadz_character_audio": [
+      "crypto_price_alert_beep.wav",
+      "market_crash_alarm.wav",
+      "portfolio_update_chime.wav",
+      "trading_notification_buzz.wav"
+    ],
+    "customer_service_audio": [
+      "pen_scribbling_on_greasy_notepad.wav",
+      "cash_register_ancient_mechanical.wav",
+      "aluminum_foil_crinkling_enthusiastic.wav",
+      "cardboard_container_placement.wav"
+    ],
+    "comedy_environmental_audio": [
+      "tiny_gnawing_sound_rat_chili.wav",
+      "questionable_meat_handling_squelch.wav",
+      "health_violation_dramatic_sting.wav",
+      "grease_puddle_splash_footstep.wav"
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC_optimized_for_food_textures",
+      "android": "ETC2_with_alpha_support_grease_effects",
+      "fallback": "PNG_high_quality_for_detailed_food_items"
+    },
+    "sprite_atlasing": {
+      "food_items_atlas": "combines_all_menu_items_single_texture",
+      "character_animation_atlas": "mr_chadz_all_states_combined",
+      "environmental_elements_atlas": "particles_debris_effects_combined",
+      "max_atlas_size": "2048x2048_mobile_gpu_friendly"
+    },
+    "lod_scaling": {
+      "high_end_devices": "full_particle_effects_detailed_animations",
+      "medium_devices": "reduced_particle_density_simplified_steam",
+      "low_end_devices": "static_steam_sprites_basic_animations",
+      "potato_mode": "essential_sprites_only_no_particle_effects"
+    },
+    "memory_management": {
+      "streaming_strategy": "loads_menu_items_on_demand",
+      "cache_management": "keeps_frequently_accessed_sprites_in_memory",
+      "garbage_collection": "aggressive_cleanup_unused_animation_frames"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "high_contrast_alternatives": {
+      "menu_items_high_contrast": {"x": 0, "y": 448, "width": 256, "height": 64},
+      "ui_elements_enhanced": {"x": 256, "y": 448, "width": 128, "height": 32},
+      "character_outline_emphasized": {"x": 384, "y": 448, "width": 64, "height": 96}
+    },
+    "colorblind_accommodations": {
+      "rainbow_puddles_pattern_alternative": {"x": 0, "y": 512, "width": 128, "height": 64},
+      "led_strip_pattern_indicators": {"x": 128, "y": 512, "width": 64, "height": 16},
+      "grease_hazard_texture_cues": {"x": 192, "y": 512, "width": 64, "height": 32}
+    },
+    "motion_sensitivity_options": {
+      "static_rotisserie_alternative": {"x": 256, "y": 512, "width": 64, "height": 96},
+      "reduced_flicker_led_strip": {"x": 320, "y": 512, "width": 64, "height": 16},
+      "minimal_particle_movement": {"x": 384, "y": 512, "width": 64, "height": 32}
+    }
+  },
+  
+  "social_media_optimized_elements": {
+    "screenshot_compositions": {
+      "mr_chadz_crypto_pose": {"x": 0, "y": 576, "width": 128, "height": 128},
+      "mystery_meat_close_up": {"x": 128, "y": 576, "width": 96, "height": 96},
+      "rainbow_grease_aesthetic": {"x": 224, "y": 576, "width": 96, "height": 64}
+    },
+    "meme_template_elements": {
+      "catchphrase_text_backgrounds": {"x": 0, "y": 704, "width": 192, "height": 32},
+      "reaction_face_frames": {"x": 192, "y": 704, "width": 128, "height": 64},
+      "food_horror_compositions": {"x": 320, "y": 704, "width": 96, "height": 64}
+    },
+    "tiktok_moment_frames": {
+      "before_eating_setup": {"x": 0, "y": 736, "width": 64, "height": 64},
+      "during_consumption": {"x": 64, "y": 736, "width": 64, "height": 64},
+      "regret_realization": {"x": 128, "y": 736, "width": 64, "height": 64},
+      "crypto_price_check": {"x": 192, "y": 736, "width": 64, "height": 64}
     }
   }
 },
@@ -2084,4 +2092,4 @@
     }
   }
 }
-}
+]
