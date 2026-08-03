@@ -118,7 +118,9 @@ The design folders were written across multiple drafting passes and contain cont
 
 ### 4.1 Structure
 
-Three sequential city-worlds, each with a surface tourist layer and a **Seedy Underbelly** layer, connected by a stylized rail-travel interstitial (train montage = act break + laundry list of what the bros claim happened vs. what we saw).
+Sequential city-worlds, each with a surface tourist layer and a **Seedy Underbelly** layer, connected by a stylized rail-travel interstitial (train montage = act break + laundry list of what the bros claim happened vs. what we saw).
+
+> **Shamsterdam is canon (author's city — this PRD predates it).** A fourth city with ~70 content files (venues incl. Casa Rose Erotic Theater, the Condomerie, coffeeshops, canal district; currently staged in the folder-restructure `_sorting/`). Its place in the act structure, boss, and quest skeleton await author direction — the three-act table below is the pre-Shamsterdam draft.
 
 ```
 PUBLANDIA (Dublin)          DEBAUCHERYVILLE (Prague)      SINFONIA (Vienna)
@@ -660,7 +662,7 @@ The August-2025 "14–19 days to demo" schedule is void. Calibration from shippe
 | **5 · Beta, polish, ports** | 2–3 months | Full-game balance pass (5% increments, 3-tier playtester satisfaction ≥80%), accessibility audit, IARC/Apple questionnaires, TestFlight/Play beta, localization pass (if any), store assets |
 | **Total** | **~18–24 months** part-time-plus; ~12–14 months if full-time | |
 
-Scope-cut order if behind (pre-agreed, per the docs' Red-status rule): Sinfonia venue count → STRETCH quests → couchsurf/karaoke lines → musical stingers → **never cut:** rolling HP, Bravado, the three-city structure, the graffiti quest.
+Scope-cut order if behind (pre-agreed, per the docs' Red-status rule): Sinfonia venue count → STRETCH quests → couchsurf/karaoke lines → musical stingers → **never cut:** rolling HP, Bravado, the city structure (four cities — Shamsterdam included, author ruling 2026-08-03), the graffiti quest.
 
 ### 16.2 The total skills package (what this project actually requires of one person)
 
