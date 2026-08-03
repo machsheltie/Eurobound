@@ -120,7 +120,7 @@ The design folders were written across multiple drafting passes and contain cont
 
 Sequential city-worlds, each with a surface tourist layer and a **Seedy Underbelly** layer, connected by a stylized rail-travel interstitial (train montage = act break + laundry list of what the bros claim happened vs. what we saw).
 
-> **Shamsterdam is canon (author's city — this PRD predates it).** A fourth city with ~70 content files (venues incl. Casa Rose Erotic Theater, the Condomerie, coffeeshops, canal district; currently staged in the folder-restructure `_sorting/`). Its place in the act structure, boss, and quest skeleton await author direction — the three-act table below is the pre-Shamsterdam draft.
+> **Shamsterdam is canon (author's city — this PRD predates it).** A fourth city with ~70 content files (venues incl. Casa Rose Erotic Theater, the Condomerie, coffeeshops, canal district; currently staged in the folder-restructure `_sorting/`). **Author ruling 2026-08-03: Shamsterdam is the FINAL city — the trip's crescendo, maximum debauchery, then straight to the airport.** Its boss and quest skeleton await author direction; the three-act table below is the pre-Shamsterdam draft.
 
 ```
 PUBLANDIA (Dublin)          DEBAUCHERYVILLE (Prague)      SINFONIA (Vienna)
