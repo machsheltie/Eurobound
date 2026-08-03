@@ -6,7 +6,7 @@ Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.4**, targetin
 
 - **This is an MA game for adults. Satire ships at full strength or not at all.** Sanitizing, softening, de-subversifying, or over-explaining any content is a defect of the highest severity.
 - **No narrator, disclaimer, moral framing, or any device that explains the satire or the jokes.** The game never winks at the player and never undercuts the delusion — sincerity is the joke (Trust the Player).
-- Sex (never shown on screen), sex workers, drugs, drinking, late-night partying, red-light districts, and hookups are in-bounds and core to the premise.
+- **The only content ceiling is no nudity. Beyond that, anything goes.** Sex (happens, never shown), sex workers, drugs, drinking, late-night partying, red-light districts, and hookups are in-bounds and core to the premise. No rating-driven ceiling exists, and no safe-build mechanism (`SATIRE_MODE`, `line_safe`, string swaps, or anything like them) may ever be created.
 - **The bros are never afraid or disgusted.** They came to Europe seeking all of this. They may be clueless; they are never scared. They are also never self-aware or scam-aware.
 - **NPCs are never boring, corporate, or professional.** Every NPC, location, and item gets a funny name and is written cleverly, with wit, in service of satirizing and parodying everything.
 - **No real city or place names in game content.** Parody names only: Publandia, Debaucheryville, Sinfonia, Shamsterdam. Internal planning docs may reference the real-world inspirations; player-facing text never does. Minted world-name canon and exemptions live in the rulings ledger (below).
