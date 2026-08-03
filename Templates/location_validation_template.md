@@ -53,10 +53,10 @@
 #### **Visual & Atmospheric Design**
 - [ ] **Exterior Description includes approach and entrance details**
 - [ ] **Interior Visuals provide comprehensive sensory details**
-- [ ] **Lighting specifications for mobile visibility**
+- [ ] **Lighting specifications for on-screen visibility**
 - [ ] **Color Palette with hex codes for key atmosphere colors**
 - [ ] **Particle Effects and Environmental FX detailed**
-- [ ] **Mobile Optimization considerations noted** (draw calls, memory usage)
+- [ ] **Performance Optimization considerations noted** (draw calls, memory usage)
 
 #### **Satirical Design Requirements**
 - [ ] **Theme clearly defined and focused on specific cultural target**
@@ -89,11 +89,11 @@
 
 ### **🔧 Technical Implementation Validation**
 
-#### **Mobile Performance Standards**
+#### **Performance Standards**
 - [ ] **Asset Count optimized** (sprite count, texture memory)
 - [ ] **Animation Timing specified in seconds** (not frames)
-- [ ] **Touch Zone Sizing appropriate** (44px minimum for interactive elements)
-- [ ] **Text Readability ensured** (contrast, font size, mobile viewing)
+- [ ] **Interactive Element Sizing appropriate** (clear focus/click targets)
+- [ ] **Text Readability ensured** (contrast, font size, desktop viewing)
 - [ ] **Performance Budget calculated** (draw calls, particles, audio)
 
 #### **Audio Integration**
@@ -176,7 +176,7 @@
 - **Lighting Setup**: [Ambient color, intensity, sources]
 - **Particle Systems**: [Smoke, glow, debris, etc.]
 - **Animation Elements**: [Moving objects, flickering lights, ambient motion]
-- **Mobile Optimization**: [LOD settings, texture compression, draw call budget]
+- **Performance Optimization**: [LOD settings, texture compression, draw call budget]
 
 ---
 
@@ -289,7 +289,7 @@
 - **Asset List**: [Sprites, textures needed]
 - **Animation Requirements**: [Moving elements]
 - **Performance Budget**: [FPS, memory, draw calls]
-- **Platform Considerations**: [iOS optimizations]
+- **Platform Considerations**: [Desktop optimizations]
 
 ### State Tracking
 ```
@@ -921,13 +921,13 @@ location_state:
     }
   },
   
-  "mobile_optimization": {
+  "performance_optimization": {
     "texture_atlases": [
       {
         "name": "location_main_atlas",
         "files": ["tileset.png", "interactive.png"],
         "max_size": "2048x2048",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       }
     ],
     "lod_levels": {
@@ -1147,7 +1147,7 @@ assets/sprites/locations/[world]/[location_name]/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
@@ -1178,7 +1178,7 @@ assets/sprites/locations/[world]/[location_name]/
 | Satirical Targets | ✅/❌ |
 | Gameplay Value | ✅/❌ |
 | No Crypto Elements | ✅/❌ |
-| Mobile Optimization | ✅/❌ |
+| Performance Optimization | ✅/❌ |
 ```
 
 ---
@@ -1274,10 +1274,10 @@ assets/sprites/locations/[world]/[location_name]/
 
 ### **Quality Standards**
 - **Complete world consistency** across all locations
-- **Mobile optimization** for all environmental effects and interactions
+- **Performance optimization** for all environmental effects and interactions
 - **Cultural authenticity** balanced with respectful satirical humor
 - **Social media potential** integrated into every location design
 - **Cross-location continuity** maintained throughout narrative progression
 - **All 8-9 required files generated** for every location
 
-**This system ensures every location maximizes satirical impact, mobile performance, and viral social media potential while maintaining world integrity!**
+**This system ensures every location maximizes satirical impact, runtime performance, and viral social media potential while maintaining world integrity!**

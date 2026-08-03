@@ -3,7 +3,7 @@
 Cultural Sensitivity Review Template – Eurobound
 
 Purpose:
-To ensure satire remains clear in intent, avoids unintended offense, and aligns with App Store guidelines.
+To ensure satire remains clear in intent, avoids unintended offense, and aligns with storefront guidelines.
 
 Reviewer Information:
 Name: __________________________________

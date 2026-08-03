@@ -156,7 +156,7 @@
 
 ---
 
-## 📱 Mobile UX Considerations
+## 🖥️ Screenshot & Sharing Moments
 
 ### Screenshot Moments
 1. [Key visual moment worth capturing]
@@ -210,7 +210,7 @@ delusions crashing into reality. This is where we show:
 | Seedy nightlife underbelly present | ☐ |
 | Y2K/era-appropriate cringe | ☐ |
 | Post-credits scene delivers payoff | ☐ |
-| Mobile-optimized moments | ☐ |
+| Screenshot-worthy moments | ☐ |
 
 ---
 

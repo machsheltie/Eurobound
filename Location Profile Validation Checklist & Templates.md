@@ -53,10 +53,10 @@
 #### **Visual & Atmospheric Design**
 - [ ] **Exterior Description includes approach and entrance details**
 - [ ] **Interior Visuals provide comprehensive sensory details**
-- [ ] **Lighting specifications for mobile visibility**
+- [ ] **Lighting specifications for on-screen visibility**
 - [ ] **Color Palette with hex codes for key atmosphere colors**
 - [ ] **Particle Effects and Environmental FX detailed**
-- [ ] **Mobile Optimization considerations noted** (draw calls, memory usage)
+- [ ] **Performance Optimization considerations noted** (draw calls, memory usage)
 
 #### **Satirical Design Requirements**
 - [ ] **Theme clearly defined and focused on specific cultural target**
@@ -89,11 +89,11 @@
 
 ### **🔧 Technical Implementation Validation**
 
-#### **Mobile Performance Standards**
+#### **Performance Standards**
 - [ ] **Asset Count optimized** (sprite count, texture memory)
 - [ ] **Animation Timing specified in seconds** (not frames)
-- [ ] **Touch Zone Sizing appropriate** (44px minimum for interactive elements)
-- [ ] **Text Readability ensured** (contrast, font size, mobile viewing)
+- [ ] **Interactive Element Sizing appropriate** (clear focus/click targets)
+- [ ] **Text Readability ensured** (contrast, font size, desktop viewing)
 - [ ] **Performance Budget calculated** (draw calls, particles, audio)
 
 #### **Audio Integration**
@@ -117,7 +117,7 @@
 - Generic European stereotypes not specific to assigned city
 - No clear satirical purpose or cultural target
 - Missing seedy underbelly/vice element
-- Dialogue or text exceeding mobile screen limits
+- Dialogue or text exceeding on-screen text limits
 - No clear gameplay function or player value
 - Missing technical implementation details
 - Cultural references that could cause legal issues
@@ -141,7 +141,7 @@
 4. **Cultural Sensitivity**: External review if needed
 5. **Complete JSON Implementation**: All required JSON files updated
 6. **Cross-File Validation**: Ensure consistency across data files
-7. **Mobile Optimization Review**: Performance and UX validation
+7. **Performance Optimization Review**: Performance and UX validation
 8. **Final Approval**: Location ready for game engine implementation
 
 ---
@@ -198,7 +198,7 @@
 - **Lighting Setup**: Ambient, directional, point lights
 - **Particle Systems**: Smoke, steam, glitter, environmental effects
 - **Animation Elements**: Moving objects, flickering lights, ambient motion
-- **Mobile Optimization**: LOD settings, texture compression, draw call budget
+- **Performance Optimization**: LOD settings, texture compression, draw call budget
 
 ## Satirical Design
 ### Cultural Targets
@@ -324,7 +324,7 @@
 - **Asset List**: Sprites, textures, models needed
 - **Animation Requirements**: Moving elements, state changes
 - **Performance Budget**: Target frame rate, memory usage
-- **Platform Considerations**: iOS-specific optimizations
+- **Platform Considerations**: Desktop-specific optimizations
 
 ### Development Timeline
 - **Asset Creation**: Time needed for visual elements
@@ -357,7 +357,7 @@
 - [ ] **Cultural specificity confirmed** (matches assigned city)
 - [ ] **Satirical targets appropriate** (punching up, not down)
 - [ ] **Gameplay value established** (clear player benefit)
-- [ ] **Technical feasibility confirmed** (within mobile constraints)
+- [ ] **Technical feasibility confirmed** (within performance constraints)
 
 ### Post-Implementation Testing
 - [ ] **Navigation tested** (entry/exit work correctly)
@@ -368,7 +368,7 @@
 
 ### Final Validation
 - [ ] **Theme distribution balanced** (not over-representing one satirical target)
-- [ ] **Mobile UX optimized** (touch zones, readability confirmed)
+- [ ] **Desktop UX optimized** (focus/click targets, readability confirmed)
 - [ ] **Social media potential maximized** (screenshot/sharing opportunities identified)
 - [ ] **Economic integration logical** (fits game's progression and economy)
 - [ ] **Complete implementation path established** (all JSON files updated)
@@ -400,7 +400,7 @@
     "color_palette": {"primary": "#RRGGBB", "accent": "#RRGGBB"},
     "lighting_setup": {"ambient": "#RRGGBB", "intensity": 0.8},
     "particle_systems": ["smoke", "neon_glow", "floating_debris"],
-    "mobile_optimization": {"lod_level": 2, "texture_compression": true}
+    "performance_optimization": {"lod_level": 2, "texture_compression": true}
   }
 }
 ```
@@ -468,7 +468,7 @@
 - **Monday**: Previous week location validation and consistency review
 - **Wednesday**: Gameplay integration testing and NPC interactions
 - **Friday**: Cultural sensitivity review and satirical content refinement
-- **Weekend**: Cross-location dependency verification and mobile optimization
+- **Weekend**: Cross-location dependency verification and performance optimization
 
 ### **Location Development Pipeline**
 1. **Profile Creation** (1-2 hours per location)
@@ -494,12 +494,12 @@
 
 ### **Quality Standards**
 - **Complete world consistency** across all locations
-- **Mobile optimization** for all environmental effects and interactions
+- **Performance optimization** for all environmental effects and interactions
 - **Cultural authenticity** balanced with respectful satirical humor
 - **Social media potential** integrated into every location design
 - **Cross-location continuity** maintained throughout narrative progression
 
-**This system ensures every location maximizes satirical impact, mobile performance, and viral social media potential while maintaining world integrity!**
+**This system ensures every location maximizes satirical impact, runtime performance, and viral social media potential while maintaining world integrity!**
 
 ### **⚠️ CRYPTO WARNING - CRITICAL**
 - [ ] **Crypto elements ONLY if already established** in existing character description or specifically requested by user

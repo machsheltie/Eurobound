@@ -379,6 +379,15 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - **Function**: Scene trigger for `blacktie_event_kings_were_humming_01`; ambient floor presence thereafter. Never a playable opponent
 - **Scene ownership**: `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
 
+### Easter Egg — The Entrance Conversation (author-dictated 2026-08-03)
+- **Zone**: just inside the entrance, main floor side
+- **What it is**: A purely ambient background scene running while the bros do anything near the entrance: a pretty brunette in a little black dress is being chatted up — hit on, frankly — by the security guards. Both of them. Competing. Entirely off-duty about it.
+- **Overheard fragments** (ambient text bubbles; draft lines pending author approval):
+  - Guard 1: "There is absolutely no way you're forty-four."
+  - Guard 2: "Ignore him. But seriously. No way."
+  - She just smiles.
+- **Rules**: The bros never notice the scene, never comment, never interact. No quest hook, no examine text, no name, no roster entry, no explanation — ever. The scene simply exists near the door, every visit.
+
 ### Bros' Black-Tie Backroom Reactions
 
 **At the Door**:

@@ -1,5 +1,7 @@
 # Marketing Playbook
 
+> ⚠️ **STALE — SUPERSEDED (author ruling 2026-08-03):** The target platform is Steam/desktop. This App Store strategy is void and is retained for history only. Steam release docs will be written with the author.
+
 App Store Release & Marketing Playbook (NEW)
 
 Marketing asset pipeline:

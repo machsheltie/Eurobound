@@ -16,10 +16,10 @@ Explore → Encounter → EarthBound-style battle → Gain XP/items/gear → Def
 ```plaintext
 /
 ├── Design/                 # Core gameplay planning, characters, lore
-├── UX-UI/                 # Accessibility & mobile-first mockups
+├── UX-UI/                 # Accessibility & desktop UI mockups
 ├── Audio-Visual/          # Art reference and audio inspiration
 ├── Production/            # Asset pipeline, dev workflow, sprint planning
-├── Marketing/             # App store prep, cultural review, promo materials
+├── Marketing/             # Storefront prep, cultural review, promo materials
 ├── Items/                 # Data for gear, skills, consumables
 ├── Code/                  # Scripts, engine integration (future)
 ├── Extras/                # Experiments, discarded gags, cut content

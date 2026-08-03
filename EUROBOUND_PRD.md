@@ -73,7 +73,7 @@ The design folders were written across multiple drafting passes and contain cont
 | # | Topic | Conflict in docs | **CANON DECISION** | Rationale |
 |---|---|---|---|---|
 | C1 | **Protagonist POV** | Player-as-rival-roaster (Production doc, legacy pitch) vs player-controls-the-trio (README, GAMEPLAN, Synopsis, all character docs) | **Player controls the trio: Lord Pilsner, Chadwick, Bradley.** The world does the roasting. | Owner's stated vision; matches 90% of written content. The "roast" energy lives in the narrator, NPCs, and enemy design. |
-| C2 | **Engine** | Godot 4.x (Production, all prototype code) vs Phaser.js (legacy pitch, one Dev Skills section) vs Unity (considered) | **Godot 4.6+.** Delete/ignore all Phaser references. | See §15.1. Best 2D pipeline, zero fees, existing GDScript code, Foundation-maintained mobile store plugins (2026). Unity's AI tooling doesn't outweigh this for a solo pixel-art game. |
+| C2 | **Engine** | Godot 4.x (Production, all prototype code) vs Phaser.js (legacy pitch, one Dev Skills section) vs Unity (considered) | **Godot 4.4** (per the approved restructure spec). Delete/ignore all Phaser references. | See §15.1. Best 2D pipeline, zero fees, existing GDScript code, active ecosystem. Unity's AI tooling doesn't outweigh this for a solo pixel-art game. |
 | C3 | **Party roles** | `party.md` + character docs (Pilsner=Leader, Bradley=Tank, Chadwick=Support) vs `combatsystem.md` (Bradley=glass cannon, Pilsner=tank) | **Pilsner = Inspiring Commander (balanced leader/buffer). Bradley = Tank/Berserker Protector. Chadwick = Chaotic Support/debuffer.** | Three docs agree vs one; matches personalities (Bradley "catches his breath then charges"). Bradley's berserk-at-low-HP covers the DPS role dynamically. |
 | C4 | **Ultimates** | Two sets of names across files | **Pilsner: Mid-Life Crisis · Chadwick: Viral Meltdown · Bradley: Bouncer Breaker.** (`Fratocalypse Now`, `Going Viral`, `Final Round's On Me` are retired or repurposed as skill-tree nodes.) | Confirmed by party.md, bravado.md, AND the musical Ultimate Choruses in `musicalbeats.md`. |
 | C5 | **Spell ownership** | `bravado.md` vs `skilltrees_cloutspells.md` assign Battle Cry of the Mascot / Flash of the Red Solo Cup / Charm of the Bro Code to different bros | **Skill trees are canon:** Pilsner gets *Battle Cry of the Mascot* and *Flash of the Red Solo Cup* (Toastmaster / Barroom Tactics); Chadwick gets *Charm of the Bro Code* (PR Spin). | The skill-tree doc is the most complete progression spec; character quest docs match it. |
@@ -86,7 +86,7 @@ The design folders were written across multiple drafting passes and contain cont
 | C12 | **Status naming** | "Hungover" vs "Hangover"; two versions of Hydrated for Once, Embarrassed | **Master status list in §6.6 is canon.** Status is "Hungover." Embarrassed = merged spec (stat penalty + Bravado drain + no Ultimates). Hydrated for Once = Hungover immunity + 1 HP regen/turn. | statuseffects.md has the best numbers; merges add the Bravado hooks other systems need. |
 | C13 | **Scope statement** | Designer Persona says "30–60 minute experience" vs content docs describing 10+ hours | **V1.0 target: 8–12 hours** (Undertale-scale). The "30–60 minute" figure is reassigned to the **vertical slice/demo**. | Research: every successful solo EarthBound-like shipped 6–25 hrs; the written content supports ~10. |
 | C14 | **Orientation** | Never decided | **Landscape.** | Preserves EarthBound battle composition and oblique overworld sightlines; two-handed virtual-stick play. Portrait revisit only if slice playtests demand it. |
-| C15 | **Battle menu** | Attack/Skill/Item/Defend/Flee vs mockup's Fight/Skills/Items/Run | **Bash / Brag / Items / Chicken Out** — four slots as in the mockup, flavored. "Brag" opens Bravado skills; Defend lives inside Bash submenu as "Brace" (see §6.2). | Four large touch targets beat five; flavored verbs carry tone into the UI. |
+| C15 | **Battle menu** | Attack/Skill/Item/Defend/Flee vs mockup's Fight/Skills/Items/Run | **Bash / Brag / Items / Chicken Out** — four slots as in the mockup, flavored. "Brag" opens Bravado skills; Defend lives inside Bash submenu as "Brace" (see §6.2). | Four large menu targets beat five; flavored verbs carry tone into the UI. |
 | C16 | **Distribution** | iOS-only vs HTML5/itch vs Android | **Steam/desktop premium.** Mobile is no longer the target (author ruling 2026-08-03). Price point: author decision, open. itch.io/HTML5 may remain as a press/playtest channel. | Matches the approved folder-restructure spec ("Godot 4.4, targeting Steam"). |
 | C17 | **Voice acting** | "voices" requested; character voice.md files empty | **No full VO.** Per-character text-blip "voices" (Undertale-style pitched beeps) + a handful of recorded gag barks and the sung Victory Stingers. See §14.4. | Genre-authentic, radically cheaper, avoids AI-voice licensing risk; stingers deliver the "voice" fantasy where it counts. |
 | C18 | **Bottle Opener Keychain geography** | References Munich/Belgium/Oktoberfest | Rewrite to the three shipped cities. "12 Different Breweries" now literally refers to the game's 12 breweries. | Berlin/Ibiza/Munich remain listed as **post-1.0 expansion hooks** only. |
@@ -100,15 +100,15 @@ The design folders were written across multiple drafting passes and contain cont
 | Field | Value |
 |---|---|
 | **Genre** | Satirical retro JRPG (EarthBound-like) |
-| **Platforms** | iOS 16+ (iPhone), Android 10+ (Galaxy-class); landscape |
-| **Engine** | Godot 4.6+, Compatibility (GL) renderer |
-| **Price** | **$4.99 premium.** No ads. No IAP at launch. (Optional post-launch: "Deluxe Roast Pack" cosmetic DLC, one-time purchase.) |
-| **Rating target** | Apple **16+** · ESRB **Teen/M17+ boundary — design to Teen where possible** · PEGI 16 · IARC questionnaire answered as *infrequent* mature themes |
+| **Platforms** | **Steam/desktop** (Windows/Linux; macOS = author decision), landscape 16:9 base (author ruling 2026-08-03) |
+| **Engine** | Godot 4.4, Compatibility (GL) renderer |
+| **Price** | Premium, price point = author decision (the old $4.99 mobile price is void). No ads. No IAP at launch. (Optional post-launch: "Deluxe Roast Pack" cosmetic DLC, one-time purchase.) |
+| **Rating target** | **MA / adults-only** (author ruling: the only ceiling is no nudity; no content decision is ever shaped by a rating target). Steam mature-content descriptors disclosed honestly. |
 | **Session design** | Meaningful loop completes in **≤ 10 minutes**; autosave continuous; quest log restates context on relaunch |
-| **V1.0 content** | 3 cities · 12 brewery micro-dungeons · 3 city bosses + 3 rival showdowns + final sequence · 3 personal quest chains · 10 global sidequest lines · 9 NFTs · 8–12 hours |
+| **V1.0 content** | 4 cities (incl. Shamsterdam, placement per author) · 12 brewery micro-dungeons · city bosses · ONE rival showdown (NFT sidequest) · finale per author · 3 personal quest chains · 10 global sidequest lines · 12 NFTs · 8–12 hours |
 | **Vertical slice** | Publandia core loop, 30–60 minutes (see §16.3) |
-| **Audience** | 25–45, played SNES-era RPGs or their descendants (Undertale, Stardew), enjoys satire; secondary: mobile premium-RPG buyers |
-| **Comparable titles** | EarthBound, Undertale, Citizen Sleeper (tone-adjacent), Stardew mobile (premium mobile model) |
+| **Audience** | 25–45, played SNES-era RPGs or their descendants (Undertale, Stardew), enjoys satire; Folklore / South Park / GTA-player sensibilities; secondary: Steam indie-RPG buyers |
+| **Comparable titles** | EarthBound, Undertale, Citizen Sleeper (tone-adjacent) |
 
 **What "done" means for V1.0:** a player who has never read these documents laughs in the first 10 minutes, understands battle by the second encounter, finishes Publandia in 2–3 hours, and describes the game to a friend as *"EarthBound but you play as the guys everyone dreads at the hostel."*
 
@@ -249,7 +249,7 @@ The battle system is the product's spine. It is EarthBound's chassis — front-v
 
 - **Front view.** Enemies are static front-facing sprites (1–2 frame idle wobble max) composited over a **two-layer psychedelic background** (palette-cycled + sine-distorted shader — see §13.6). The party is represented by three **odometer boxes** (HP / BP) along the bottom, EarthBound-style. No party battle sprites: this is the single biggest scope saver in the genre and it is genre-authentic.
 - **Encounters are visible on the map.** Touching an enemy starts battle; approaching from behind = preemptive round; getting tailed = enemy free round. Enemies 5+ levels below the party resolve as **instant auto-win** ("You won without embarrassing yourselves. Barely.").
-- **SMAAAASH!!** crits use the full banner + screen shake + strong haptic.
+- **SMAAAASH!!** crits use the full banner + screen shake + strong controller rumble (when a gamepad is connected).
 - Enemy names are absurd noun phrases in the EarthBound tradition: *Hen Party Swarm, Stag Do Berserker, Spill Sprite, Barkeep's Mop, The Expat Who Never Left, Silent Bouncer, Backpack Bard, Pickpocket Pair, Green Fairy Wisp, Crypto Clown, Rigged Carnival Game, Knife-Throwing Assistant, Masked Patron, Pastry Golem, Critic's Quill, Dance Duelists, The Maestro's Harried Assistant…*
 
 ### 6.2 Turn flow & action economy
@@ -261,7 +261,7 @@ State machine: `INTRO → ROUND_START → [per combatant: SELECT → RESOLVE →
   - Main: **Bash** (basic attack; submenu holds **Brace** = defend, halve damage + 2 BP regen), **Brag** (Bravado skills/spells), **Combo** (if available).
   - Minor: **Item**, **Taunt**, **Bravado Flex** (+3 BP, +5% next-attack damage, small chance a watching NPC heckles), **Flirt** (see §5.5).
 - **Interrupts:** specific skills fire off-turn (Bradley's *"Bro, Do You Even Lift?"* counter-taunt; Sidekick phone's *Ping* 5% interrupt).
-- Battle menu = 4 large touch targets: **Bash / Brag / Items / Chicken Out** (C15). Chicken Out = flee: success = `own SPD avg / (own avg + enemy avg)`, +20% if any bro is Embarrassed (shame is aerodynamic). Bail-Out Card = guaranteed escape.
+- Battle menu = 4 large menu slots: **Bash / Brag / Items / Chicken Out** (C15). Chicken Out = flee: success = `own SPD avg / (own avg + enemy avg)`, +20% if any bro is Embarrassed (shame is aerodynamic). Bail-Out Card = guaranteed escape.
 
 ### 6.3 The rolling HP meter
 
@@ -333,7 +333,7 @@ AI is data-driven weighted-random with gates (EarthBound-simple, LimboAI behavio
 ### 6.9 Victory, defeat & rewards
 
 - **Victory:** Clout + € + drop table roll; regional **Victory Stinger** sung couplet (§14.3); "promotion" flavor titles on notable wins (bouncer fight → *Bathroom Attendant*: Nightstick, Glowsticks ×2, Half Bottle of Advil, +300 €, +150 Clout — the canonical worked example).
-- **Defeat (all three at 0 HP):** wake at base pub; keep Clout and items; lose 10% € ("the tab found you"); mandatory Hungover; unique narrator roast per city. No lost progress — mobile-friendly, and shame IS the death penalty.
+- **Defeat (all three at 0 HP):** wake at base pub; keep Clout and items; lose 10% SOVS ("the tab found you"); mandatory Hungover; unique defeat roast per city, delivered diegetically (an NPC, a bar tab, a note — never a narrator, per author ruling). No lost progress — shame IS the death penalty.
 - Balance targets (from Production docs, kept): normal fights **3–5 rounds**, bosses **6–8**, baseline survivability = 2–3 mistakes before wipe.
 
 ---
@@ -368,7 +368,7 @@ Personal-quest spell unlocks (independent of trees): Pilsner *Final Keg Stand*, 
 
 Per-city Clout counters (earned in that region) unlock at 400/700/1000: Publandia crowd-participation → *Local Legend* (NPCs buy drinks = free BP) → *Honorary Publandian* (beer-tag ×1.5 → ×2); Debaucheryville jackpot mechanics → *High Roller* → *Chaos Lord* (random beneficial procs); Sinfonia timing bonuses → *Beat Master* → *Symphony Conductor* (once per battle, dictate one enemy's action).
 
-### 7.4 Mobile progression UX
+### 7.4 Progression UX
 
 Clout unlock toasts with satirical copy; the skill tree is visualized as a **frat house** (basement → roof); ego meter physically inflates; favorite spells pinnable to the Brag wheel; auto-suggest available combos with a "COMBO READY" pip.
 
@@ -462,17 +462,17 @@ Publandia + Sinfonia venue docs to Debaucheryville fidelity · Publandia/Sinfoni
 
 ### 11.1 The phone is the platform
 
-The equipped cellphone (§9.4) hosts: **ICQ** (story chats, Darkweb Dossier events, scam popups — "Uh-oh! You've got a message!"), **quest log** (restates context on relaunch — mobile session requirement), **Morning After Album** (couchsurf/selfie gallery), **Napstur** (iPawd perk: random stat-boosting tracks), contacts (Mom = free SP/BP restore, first call per city — the Homesickness homage).
+The equipped cellphone (§9.4) hosts: **ICQ** (story chats, Darkweb Dossier events, scam popups — "Uh-oh! You've got a message!"), **quest log** (restates context on relaunch), **Morning After Album** (couchsurf/selfie gallery), **Napstur** (iPawd perk: random stat-boosting tracks), contacts (Mom = free SP/BP restore, first call per city — the Homesickness homage).
 
 ### 11.2 Save system (fills `save_load.md`)
 
 - **Diegetic layer:** Wi-Fi hotspots ("FREE Wi-Fi" signs, 6–10/city) are full-service save points: save, heal-once flavor, ICQ event trigger, rumor hint.
-- **Real layer (mandatory):** **continuous autosave** — on map change, battle end, dialogue branch, purchase, and `NOTIFICATION_APPLICATION_PAUSED`/backgrounding. Mobile OSes kill backgrounded apps; the diegetic hotspot is a *skin*, never the actual persistence gate.
+- **Real layer (mandatory):** **continuous autosave** — on map change, battle end, dialogue branch, purchase, and application quit/focus loss. The diegetic hotspot is a *skin*, never the actual persistence gate.
 - Three manual slots + rotating autosave slot + backup snapshot (corruption recovery: checksum, fall back to snapshot). Cloud: iCloud/Play Games Services via the Foundation-maintained plugins. Save schema versioned from day one (§15.6).
 
 ### 11.3 World clock (fills `daynightcycle.md`)
 
-In-game clock runs 1 game-hour ≈ 1 real-minute while exploring (paused in battle/dialogue/menus), **plus scripted jumps** ("that night…"). Drives: pub crowds, venue hours (Tap Dat Vault midnight-only; Kebab Alley 1 A.M.+; 3:33 A.M. Meme Black Market kiosk; 3 A.M. price drops; Dead Hours), Sobriety Creep, hotspot ICQ schedules (Tony420 online 3–6 A.M.). A **"Wait/Pre-game until…"** bench action lets players skip to any hour — never make a mobile player wall-clock wait. All the docs' conflicting time gates (3:00/3:33/1–3 A.M.) stand as written; the bench action makes them friction-free.
+In-game clock runs 1 game-hour ≈ 1 real-minute while exploring (paused in battle/dialogue/menus), **plus scripted jumps** ("that night…"). Drives: pub crowds, venue hours (Tap Dat Vault midnight-only; Kebab Alley 1 A.M.+; 3:33 A.M. Meme Black Market kiosk; 3 A.M. price drops; Dead Hours), Sobriety Creep, hotspot ICQ schedules (Tony420 online 3–6 A.M.). A **"Wait/Pre-game until…"** bench action lets players skip to any hour — never make the player wall-clock wait. All the docs' conflicting time gates (3:00/3:33/1–3 A.M.) stand as written; the bench action makes them friction-free.
 
 ### 11.4 Interactable object systems
 
@@ -488,19 +488,19 @@ In-game clock runs 1 game-hour ≈ 1 real-minute while exploring (paused in batt
 
 ### 12.1 Global layout
 
-Landscape (C14). Safe-area aware on notched devices (`DisplayServer.get_display_safe_area()`); all interactive elements ≥ 48 px touch targets, thumb-zone mapped (primary actions bottom corners; standard vs Max-size layouts auto-adjust; one-handed and two-handed layout toggle).
+Landscape 16:9 base resolution, scaling cleanly across common desktop resolutions (Steam/desktop — author ruling 2026-08-03; the mobile touch/safe-area layout system is void). Keyboard/mouse and full gamepad support with remappable bindings; large readable UI targets throughout.
 
-- **Overworld:** floating virtual joystick (appears where the left thumb lands, invisible at rest) + contextual tap (tap NPC = talk, tap chest = open, tap self = menu). Interact button bottom-right mirrors context icon. Full MFi/Bluetooth gamepad support.
-- **Battle:** per the mockup evolved — top: turn-order portrait strip; center: enemies over shader background; bottom: 3 rolling odometer boxes + the 4-button grid (**Bash / Brag / Items / Chicken Out**); status chips animate on the strip, long-press a chip = cure shortcut into inventory. Gesture shortcuts: swipe-repeat last action; two-finger tap = Brace-all.
+- **Overworld:** 8-directional movement on WASD/arrows/stick; contextual interact (E / south button) with the context icon mirrored beside the player; mouse click-to-interact supported.
+- **Battle:** per the mockup evolved — top: turn-order portrait strip; center: enemies over shader background; bottom: 3 rolling odometer boxes + the 4-button grid (**Bash / Brag / Items / Chicken Out**); status chips animate on the strip, hover/select a chip = cure shortcut into inventory. Shortcuts: repeat-last-action and Brace-all hotkeys.
 - **Menus:** nine-slice retro panels, bitmap font at 2–3× integer scale, ≤ 25 characters per UI label (localization rule).
 
 ### 12.2 Microinteraction "juice" standard (kept from Production docs)
 
-120 ms button bounce · 12–20 particle hit-sparks · SMAAAASH banner + screen shake + strong haptic on crit · rolling HP tween 1–2 s · haptic map (crit = strong, pickup = light, cure = double-pulse, boss intro = long rumble) with a global toggle honoring OS settings.
+120 ms button bounce · 12–20 particle hit-sparks · SMAAAASH banner + screen shake + strong controller rumble on crit · rolling HP tween 1–2 s · rumble map (crit = strong, pickup = light, cure = double-pulse, boss intro = long rumble) with a global toggle.
 
-### 12.3 Accessibility (App Store table stakes, per `UX & Accessibility Guide.md`)
+### 12.3 Accessibility (per `UX & Accessibility Guide.md`)
 
-VoiceOver/TalkBack strings + battle-log announcements; focus order locked before alpha · dynamic text scaling (font token system, max line lengths) · high-contrast palette toggle (tested via Sim Daltonism/Coblis + greyscale pass; automated colorblind-simulation screenshot check in CI) · dyslexia-friendly font toggle · Reduced Motion mode (kills shakes, particles, background oscillation — battle backgrounds fall back to slow palette cycle only) · battle animation speed Normal/Fast/Off · chat-speed toggle + long-press fast-scroll · **musical interludes toggle** (the sung stingers are skippable) · first-launch accessibility onboarding screen (text size, contrast, haptics, motion).
+Screen-reader strings + battle-log announcements; focus order locked before alpha · dynamic text scaling (font token system, max line lengths) · high-contrast palette toggle (tested via Sim Daltonism/Coblis + greyscale pass; automated colorblind-simulation screenshot check in CI) · dyslexia-friendly font toggle · Reduced Motion mode (kills shakes, particles, background oscillation — battle backgrounds fall back to slow palette cycle only) · battle animation speed Normal/Fast/Off · chat-speed toggle + fast-scroll · **musical interludes toggle** (the sung stingers are skippable) · first-launch accessibility onboarding screen (text size, contrast, rumble, motion) · fully remappable keys/buttons.
 
 ### 12.4 First 10 minutes
 
@@ -563,7 +563,7 @@ EarthBound's soundtrack is **sample-based lo-fi (SNES SPC700), not chiptune** �
 
 ### 14.2 Toolchain
 
-**C700 VST** (free SPC700 emulation — the authentic 64KB grunge) inside **REAPER** (already the chosen DAW; loop points, mastering) · **Furnace** or **OpenMPT** for tracker-style writing · **MuseScore** for the Sinfonia orchestral arrangements before lo-fi-ization · **jsfxr / ChipTone** for SFX · Audacity for edits. Format: AAC (iOS)/OGG (Android), ~10 MB in-memory music cap, one streamed music track + two SFX banks, loop-point trimming in REAPER. If composing becomes the bottleneck: commission a composer for 6–8 anchor tracks and self-produce ambient/jingles (the Undertale/Chained Echoes pattern). **Avoid Suno/Udio output for shipped music until the 2026 licensed-model commercial terms settle** (Sony litigation pending as of this writing).
+**C700 VST** (free SPC700 emulation — the authentic 64KB grunge) inside **REAPER** (already the chosen DAW; loop points, mastering) · **Furnace** or **OpenMPT** for tracker-style writing · **MuseScore** for the Sinfonia orchestral arrangements before lo-fi-ization · **jsfxr / ChipTone** for SFX · Audacity for edits. Format: OGG, ~10 MB in-memory music cap, one streamed music track + two SFX banks, loop-point trimming in REAPER. If composing becomes the bottleneck: commission a composer for 6–8 anchor tracks and self-produce ambient/jingles (the Undertale/Chained Echoes pattern). **Avoid Suno/Udio output for shipped music until the 2026 licensed-model commercial terms settle** (Sony litigation pending as of this writing).
 
 ### 14.3 Music map (V1.0 ≈ 22–28 cues)
 
@@ -575,9 +575,9 @@ Per city: overworld day + night variants (layered stems, crossfade), battle, bos
 
 Per C17: **text-blip voices** — each speaker gets a pitched/filtered blip set (Pilsner low brass, Chadwick autotuned chirp, Bradley sub-thud, Tony420 modem noises, Miss Morphine wind-chime static). ICQ messages use the classic "Uh-oh!" soundbite. Recorded human audio is limited to the sung stingers + ≤ 10 gag barks. This is genre-correct, dodges VO cost/licensing entirely, and makes every character instantly audible.
 
-### 14.5 Mobile audio compliance
+### 14.5 Audio lifecycle (desktop)
 
-Pre-title **"Tap to Start"** (iOS audio unlock) — the tap plays a gag SFX (bottle-cap pop) that segues into the title theme. Lifecycle: pause/duck on calls & notifications, resume cleanly; background = hard mute + save.
+Pre-title **"Press any key"** — the press plays a gag SFX (bottle-cap pop) that segues into the title theme. Lifecycle: duck/pause on window focus loss (user-configurable), resume cleanly; focus loss also triggers autosave.
 
 ---
 
@@ -588,10 +588,10 @@ Pre-title **"Tap to Start"** (iOS audio unlock) — the tap plays a gag SFX (bot
 Godot over Unity for this project, decided on 2026 facts:
 
 - **2D-first engine:** true 2D coordinate system and physics, TileMapLayer with terrains, near-instant GDScript iteration; a solo dev ships faster in it for exactly this genre.
-- **Mobile is no longer Godot's weak spot:** the Godot Foundation now maintains the core store plugins (StoreKit 2, Google Play Billing, Play Games Services) and 4.5/4.6 shipped the mobile-focused work (shader baker = no load stutter, accessibility/screen-reader support, repeatable builds).
+- **Desktop export is Godot's home turf:** stable Windows/Linux export, shader baker (no load stutter), accessibility/screen-reader support, repeatable builds. Steamworks integration approach = author decision when release nears.
 - **MIT license, zero fees, terms can't change under you.** Unity's Runtime Fee was cancelled (2024) and Personal is free to $200K revenue — Unity is *fine* — but its remaining advantages (3D, console porting, Unity AI assistants) don't serve a 2D pixel JRPG, and its editor iteration loop is slower. Unity's AI workflows generate generic assets fastest; this game's value is hand-authored specificity by an artist-owner.
 - **Existing momentum:** all prototype code is Godot 4 GDScript; the salvageable scripts (below) carry forward.
-- Renderer: **Compatibility (GL)** — best battery/perf for 2D mobile. Display: `canvas_items` stretch, `expand` aspect, nearest filtering, snapped 2D transforms.
+- Renderer: **Compatibility (GL)** — lightweight and ideal for 2D. Display: `canvas_items` stretch, `expand` aspect, nearest filtering, snapped 2D transforms.
 - If a Switch/console port ever matters: W4 Games / porting partners (~$10–50K) — a later decision, not a reason to switch engines now.
 
 Addon baseline: **Dialogic 2** (dialogue/cutscenes — pin the version; pre-1.0 saves can break), **Phantom Camera** (2D camera follow/tween/shake), **LimboAI** or Beehave (enemy behavior trees), **Better Terrain** (autotiling), **GUT or GdUnit4** (tests for combat math and save migration).
@@ -618,7 +618,7 @@ docs/                      # the Design/ folders remain the writers' room
 
 ### 15.3 Autoload singletons (the backbone)
 
-`GameState` (quest flags, graffiti_found, reputation, street_rep, world clock, ego meter) · `EconomyController` (euros, rates, premium stock — exists) · `PartyState` (stats, statuses, BP, equipment, inventory) · `QuestLog` · `DialogueRunner` (Dialogic wrapper + `push_system_line`, `set_flag_true` — the interface ShadowExchangeRoot already calls) · `ICQController` (message queue, popup scene, hotspot events) · `TimeManager` (§11.3 — grease-trap gate already calls it) · `SaveManager` (§11.2) · `AudioDirector` (layers, ducking, stingers) · `BattleDirector` (encounter setup/teardown) · `MemeMastery` + achievement/title registry · `Haptics` (GDExtension wrapper). Player scene exposes the interaction raycast that calls `interact()` on Area2D interactables — the contract every prototype script already assumes.
+`GameState` (quest flags, graffiti_found, reputation, street_rep, world clock, ego meter) · `EconomyController` (sovs, rates, premium stock — exists) · `PartyState` (stats, statuses, BP, equipment, inventory) · `QuestLog` · `DialogueRunner` (Dialogic wrapper + `push_system_line`, `set_flag_true` — the interface ShadowExchangeRoot already calls) · `ICQController` (message queue, popup scene, hotspot events) · `TimeManager` (§11.3 — grease-trap gate already calls it) · `SaveManager` (§11.2) · `AudioDirector` (layers, ducking, stingers) · `BattleDirector` (encounter setup/teardown) · `MemeMastery` + achievement/title registry · `Rumble` (controller rumble wrapper). Player scene exposes the interaction raycast that calls `interact()` on Area2D interactables — the contract every prototype script already assumes.
 
 ### 15.4 Event flags (fills `event_flags.md`)
 
@@ -646,7 +646,7 @@ Versioned JSON (`schema_version` int + migration functions), one file per slot i
 
 ### 15.7 Performance budget
 
-Baseline device: **iPhone 11 / Galaxy S10-class** (2026 revision of the docs' iPhone 8 target). 60 fps target, no dips below 30 · ≤ 350 MB peak memory · battery ≤ 8%/15 min overworld, ≤ 10%/15 min battle · cold load ≤ 5 s, scene change ≤ 2 s · sprite atlases ≤ 2048², unload per city · profile on physical devices monthly, not simulator. Crash reporting: Sentry or Firebase Crashlytics. CI: GitHub Actions running GUT tests + export smoke builds; Fastlane for iOS lane (build, screenshots, TestFlight upload).
+Baseline: **modest desktop hardware (integrated-GPU class, ~2018+).** 60 fps target, no dips below 30 · ≤ 350 MB peak memory · cold load ≤ 5 s, scene change ≤ 2 s · sprite atlases ≤ 2048², unload per city · profile on real baseline hardware monthly. Crash reporting: Sentry. CI: GitHub Actions running GUT tests + Windows/Linux export smoke builds.
 
 ---
 
@@ -663,7 +663,7 @@ The August-2025 "14–19 days to demo" schedule is void. Calibration from shippe
 | **2 · Publandia complete** | 3 months | City 1 content-complete incl. Craic Baron; content pipeline measured (venues/week, dialogue/week) — re-forecast the rest of the schedule from THIS number |
 | **3 · Debaucheryville** | 3–4 months | Fastest city per docs-completeness; all 15 venues, 4 breweries, boss, Meme Black Market |
 | **4 · Sinfonia + finale** | 3–4 months | Rhythm systems, Masquerade, Maestro, The Legend, both endings |
-| **5 · Beta, polish, ports** | 2–3 months | Full-game balance pass (5% increments, 3-tier playtester satisfaction ≥80%), accessibility audit, IARC/Apple questionnaires, TestFlight/Play beta, localization pass (if any), store assets |
+| **5 · Beta, polish, ports** | 2–3 months | Full-game balance pass (5% increments, 3-tier playtester satisfaction ≥80%), accessibility audit, Steam content survey, beta branch playtest, localization pass (if any), store assets |
 | **Total** | **~18–24 months** part-time-plus; ~12–14 months if full-time | |
 
 Scope-cut order if behind (pre-agreed, per the docs' Red-status rule): Sinfonia venue count → STRETCH quests → couchsurf/karaoke lines → musical stingers → **never cut:** rolling HP, Bravado, the city structure (four cities — Shamsterdam included, author ruling 2026-08-03), the graffiti quest.
@@ -671,7 +671,7 @@ Scope-cut order if behind (pre-agreed, per the docs' Red-status rule): Sinfonia 
 ### 16.2 The total skills package (what this project actually requires of one person)
 
 **Already strong (owner):** pixel/2D art, graphic design, UI composition, satire writing.
-**Learn to intermediate level:** GDScript + Godot scene/signal architecture (the make-or-break skill — 4–6 weeks of focused learning; the battle system and save system are the two hard programs) · TileMapLayer/autotiling · JSON data modeling · Aseprite animation workflow · basic REAPER/C700 music production OR the budget to commission ~8 tracks ($150–400/track indie rate) · jsfxr SFX · Git (already in use) · Xcode/TestFlight + Play Console publishing · store-listing ASO basics.
+**Learn to intermediate level:** GDScript + Godot scene/signal architecture (the make-or-break skill — 4–6 weeks of focused learning; the battle system and save system are the two hard programs) · TileMapLayer/autotiling · JSON data modeling · Aseprite animation workflow · basic REAPER/C700 music production OR the budget to commission ~8 tracks ($150–400/track indie rate) · jsfxr SFX · Git (already in use) · Steamworks/Steam-partner publishing basics · store-listing basics.
 **Outsource candidates (highest leverage first):** composer for anchor tracks · a code review/pairing pass on BattleDirector + SaveManager from an experienced Godot dev (fixed-scope contract) · cultural sensitivity readers per city (the review template already exists) · QA playtesters.
 **AI-assist posture:** AI coding assistants for GDScript (high leverage, no disclosure burden), AI as art ideation only (§13.4), no AI music until licensing settles, no AI VO needed (text blips).
 
@@ -683,17 +683,17 @@ Vertical slices before content breadth · test touch-feel on device before addin
 
 ## 17. Compliance, Legal & Store Strategy
 
-### 17.1 Ratings reality (2026)
+### 17.1 Ratings reality (Steam)
 
-Apple's rating tiers changed in late 2025 (now 4+/9+/13+/16+/18+). Eurobound's content — frequent comedic alcohol themes, mild sexual innuendo, infrequent *simulated* gambling parody — targets **16+** (13+ is achievable only by muting the premise; don't). Google Play/IARC: answer for **ESRB Teen–M17+/PEGI 16**. Design rules that keep us there: casino/claw minigames pay out only absurd items and never touch real money or odds-based purchases (no loot boxes, no IAP at all at launch = the whole gacha-disclosure regime is moot) · vice depicted with comedic consequences, never instructional or glorified · innuendo, never explicit · C19 raunch ceiling enforced in string review.
+**MA / adults-only, disclosed honestly** (author ruling 2026-08-03). Steam permits mature content with accurate content-survey answers; Eurobound answers them truthfully (alcohol, drugs, sexual content, gambling parody) and ships at full strength. **No content decision is ever shaped by a rating target — the only ceiling in this game is no nudity.** The old Apple 16+ targeting and its design rules are void. One rule survives on its own merits: casino/claw minigames pay out only absurd in-game items, never real money or odds-based purchases (no loot boxes, no IAP).
 
 ### 17.2 The NFT/crypto joke, done legally
 
-Apple: crypto/NFTs may never function as unlock mechanisms or purchases; **parody is fine**. Our NFTs are collectible JPEG-flavored quest items with zero blockchain anything — the entire joke is that they're worthless. Keep the word "NFT" out of the App Store metadata anyway (reviewer keyword hygiene).
+Our NFTs are collectible JPEG-flavored quest items with zero blockchain anything — the entire joke is that they're worthless. Nothing in the game ever touches a real chain, wallet, or token.
 
-### 17.3 Satire compliance system (already designed — keep it)
+### 17.3 Satire compliance system — VOID (author ruling 2026-08-03)
 
-`line_en` / `line_safe` dual-string table with `SATIRE_MODE=SAFE` build flag; pre-tested safe build in TestFlight; Satire Safety Changelog; cultural sensitivity review per city using the existing template + in-region readers; metadata rules (no alcohol/drug terms in title, subtitle, first two description lines; colorful "story-safe" screenshots). Rejection Recovery Protocol as documented — with the itch.io/HTML5 "uncensored edition" as the pre-built PR-spin contingency.
+**Struck in full.** The `line_en`/`line_safe` dual-string table, `SATIRE_MODE=SAFE` build flag, safe build, Satire Safety Changelog, and story-safe metadata rules were an unauthorized sanitization system and are banned — they may never be rebuilt in any form (see C19 and CLAUDE.md). Strings ship at full strength, everywhere, always.
 
 ### 17.4 Legal hygiene
 
@@ -702,25 +702,15 @@ Apple: crypto/NFTs may never function as unlock mechanisms or purchases; **parod
 - **Music:** no samples of copyrighted recordings (emulate EarthBound's collage *spirit*, not its sampling strategy). Fonts: OFL/verified licenses only (Press Start 2P, m5x7-class).
 - Analytics: privacy-first (drop-off, difficulty spikes, UI abandonment), App Tracking Transparency compliant, no behavioral ad tracking; the "player behavioral profiling for easter eggs" feature stays **on-device only**.
 
-### 17.5 Store & launch strategy
+### 17.5 Store & launch strategy (Steam — to be written with the author)
 
-$4.99 premium (C16), Small Business Program 15% commission tier. Playbook (as documented): localized metadata for key EU languages · press kit 2–3 months pre-launch with embargoed codes (retro/RPG and comedy-game press; the origin story is a *great* pitch angle, told on your terms) · Coming Soon page + notify · launch-week push in 72 h · promo codes · post-launch A/B screenshots · seasonal event updates tied to European festivals (Oktoberfest event = the Publandia pretzel joke's revenge) · QoL update within 2–4 weeks. itch.io demo build = wishlist/press funnel and platform-rejection insurance.
+Steam premium release; price point and launch plan are the author's decisions, pending. Ideas carried over from the old playbook for the author to keep or kill: press kit with embargoed codes (retro/RPG and comedy-game press; the origin story is a *great* pitch angle, told on the author's terms) · Coming Soon page + wishlist push · launch-week press window · seasonal event updates tied to European festivals (Oktoberfest event = the Publandia pretzel joke's revenge) · QoL update within 2–4 weeks · itch.io demo build as a wishlist/press funnel.
 
 ---
 
-## 18. Risk Register
+## 18. [STRUCK — author ruling 2026-08-03]
 
-| Risk | Likelihood | Impact | Mitigation |
-|---|---|---|---|
-| **Art volume** (the long pole) | High | Schedule | §13.3 budget + reuse rules; slice measures true asset velocity; scope-cut order pre-agreed |
-| **Solo GDScript learning curve** | Medium | Schedule/quality | Phase 0 is exactly this; contract review of the two hard systems; AI pair-coding |
-| **Comedy doesn't land with strangers** | Medium | Product | Slice exit criterion; jokes tested in playtests, not assumed; the docs' satire QA checklist |
-| **Apple content rejection** | Low–Med | Launch | 16+ targeting, Satire Swap safe build ready, metadata hygiene, itch contingency |
-| **Trademark complaint (nostalgia brands)** | Medium | Legal | Sound-alike rename pass before launch (one afternoon of find-replace, do it early) |
-| **Scope creep from rich design docs** | High | Schedule | This PRD's [CORE]/[FULL]/[STRETCH] tiers are law; new ideas enter as STRETCH by default |
-| **Burnout (revenge-fuel is a sprint fuel, not a marathon fuel)** | Medium | Everything | 18–24 mo pacing, phase gates that produce shippable artifacts (slice → demo → city releases on itch), community/devlog for sustained feedback energy |
-| **Dialogic 2 pre-1.0 save breaks** | Medium | Tech | Pin addon versions; save-schema migration tests |
-| **Music production stalls** | Medium | Polish | Commission fallback budgeted from the start |
+The Risk Register / risk-mitigation plan that lived here is shit-canned by author order, along with every other risk-mitigation plan in the repo.
 
 ---
 
@@ -740,7 +730,7 @@ Publandia: Temple Bar Receipt JPG (rival showdown) + QR mural + poker-pot find. 
 1. Strip scaffolding artifacts ("[CONTENT FROM PLAN ABOVE]", "[UPDATED with…]") from all files. 2. De-contaminate `sinfonia.md` (remove the duplicated Debaucheryville block). 3. Merge the three combat drafts in `combatsystem.md` to §6's canon. 4. Update `party.md`/`bravado.md` to C3–C5. 5. Single names: The Absinthium Taproom, Hungover, Beeramid Blast, Like & Subscribe, Alpha Sigma Slam/Thunder. 6. Rewrite Bottle Opener Keychain geography (C18). 7. Complete `debaucheryville_locations_index.md` (add the 10 missing venues). 8. Fill placeholder files by pointing them at this PRD's sections (don't duplicate content). 9. Quarantine `Legacy_Pitch_Document.md` (C20). 10. Delete `package-lock.json`, duplicate ICQ script, `brewery_tracker.tres`. 11. Register all quest flags in `data/quests/flags.json`. 12. Fix `deboucheryville` typo via ID migration map.
 
 ### 19.5 Source documents
-This Bible synthesizes: `Design/` (Synopsis, Game Design Spec Sheet, all Gameplay/Battle/Progression/Social docs, Systems, Inventory, Economy, Characters, Narratives, Quests, Locations incl. all 15 Debaucheryville venue docs, Interactables), `Production/` (Schedule, Tools & Asset Pipeline, Dev Skills & Workflows), `UX-UI/` (UX & Accessibility Guide, battle mockup), `Marketing/` (Compliance, Playbook, Cultural Sensitivity Template), `Audio-Visual/musicalbeats.md`, `Items/`, `GAMEPLAN.md`, `README.md`, the Godot prototype (`Assets/Godot/`), and July-2026 external research on engine status, EarthBound technique, comparable-title scope, mobile UX norms, store policy, and AI-asset licensing.
+This Bible synthesizes: `Design/` (Synopsis, Game Design Spec Sheet, all Gameplay/Battle/Progression/Social docs, Systems, Inventory, Economy, Characters, Narratives, Quests, Locations incl. all 15 Debaucheryville venue docs, Interactables), `Production/` (Schedule, Tools & Asset Pipeline, Dev Skills & Workflows), `UX-UI/` (UX & Accessibility Guide, battle mockup), `Marketing/` (Compliance, Playbook, Cultural Sensitivity Template), `Audio-Visual/musicalbeats.md`, `Items/`, `GAMEPLAN.md`, `README.md`, the Godot prototype (`Assets/Godot/`), and July-2026 external research on engine status, EarthBound technique, comparable-title scope, store policy, and AI-asset licensing.
 
 ---
 

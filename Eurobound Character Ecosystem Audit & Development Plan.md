@@ -231,7 +231,7 @@ After searching through all quest files, the character development scope is **MA
 - **Cross-quest character interactions**
 - **Easter egg and achievement system completion**
 - **Cultural sensitivity review for 80+ characters**
-- **Mobile optimization and performance testing**
+- **Optimization and performance testing**
 
 ---
 
@@ -247,7 +247,7 @@ After searching through all quest files, the character development scope is **MA
 - **100% world consistency** across 80+ characters
 - **Quest system functionality** for all major quest lines
 - **Cultural authenticity** balanced with satirical humor
-- **Mobile optimization** for large character database
+- **Performance optimization** for large character database
 
 ### **Production Pipeline Requirements**
 - **Character production template** for rapid development

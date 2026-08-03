@@ -192,7 +192,7 @@ Once acquired, [description of the permanent visibility rule - what becomes perm
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: [Dimensions] pixels per [item]

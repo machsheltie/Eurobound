@@ -15,7 +15,7 @@ Week 1: Foundation & Core Systems (Aug 11-17)
 Day 1-2: Project Setup & Core Architecture
 While he's still stumbling around Sinfonia
 
- Godot 4.x project setup with mobile export templates
+ Godot 4.x project setup with desktop export templates
  Scene structure planning (Main → Overworld → Battle → Menu)
  Core player controller (8-directional movement, collision)
  Basic tilemap import and collision setup
@@ -59,14 +59,14 @@ Mid-week spite energy peak
  Equipment system (Weapon, Shirt, Pants, Shoes slots)
  Milestone: Combat feels juicy and satisfying
 
-Day 12-13: Mobile UX & Audio
+Day 12-13: Desktop UX & Audio
 Getting close to his return
 
- Touch controls optimization (virtual D-pad, menu navigation)
- Mobile UI scaling and safe area handling
+ Keyboard and controller input optimization (bindings, menu navigation)
+ UI scaling for common desktop resolutions
  Basic sound effects (menu beeps, hit sounds, victory fanfare)
  Background music loop for overworld
- Milestone: Plays smoothly on mobile device
+ Milestone: Plays smoothly in the desktop export
 
 Day 14: Integration & Demo Polish
 Final push before his return
@@ -143,7 +143,7 @@ Ultimate power move: creative transformation of his betrayal
 Success Metrics
 Technical
 
- Runs smoothly on iPhone Safari
+ Runs smoothly on target hardware
  Saves/loads properly
  No game-breaking bugs
 

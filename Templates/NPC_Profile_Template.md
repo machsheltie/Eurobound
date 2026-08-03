@@ -288,9 +288,9 @@
 - [ ] **Focus on city-specific cultural exploitation instead**
 
 ### Satirical Target Verification
-- [ ] Targets tourist/frat bro behavior, NOT local culture or ethnicity
-- [ ] NPC is savvy entrepreneur, not villain or stereotype
-- [ ] Humor is affectionate mockery, not mean-spirited
+- [ ] Satire is sharp and specific — the bros' delusion AND the city's culture are both fair game (author ruling 2026-08-03: no punch-direction rules; "it's offensive" is not a design consideration)
+- [ ] NPC is a savvy operator with their own angle, never boring, corporate, or professional
+- [ ] Humor is witty and clever, never a hedge — full-strength satire or nothing
 
 ---
 

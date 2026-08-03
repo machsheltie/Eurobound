@@ -2,16 +2,16 @@
 
 2) Production Tools & Asset Pipeline – “The Game Factory”
 Engine & Build Tools
-Godot 4.x – main game development, native iOS export
+Godot 4.x – main game development, native desktop export
 TileMap editor mandatory (replaces Tiled entirely — autotiling, physics shapes, and multi-layer support are now first-class in Godot 4)
-Xcode – iOS builds, signing, TestFlight/App Store submission
-Apple Developer Account – required for iOS testing & release
+Steamworks SDK & steamcmd – Steam builds, depots, store submission
+Steamworks Partner Account – required for Steam testing & release
 
 Art & Animation
 
 UI & UX Design Workflow (Figma-Free Zone)
 Primary Design Tool:
-- Adobe Photoshop – sole environment for UI, HUD, menu layouts, buttons, icons, and App Store screenshot composition.
+- Adobe Photoshop – sole environment for UI, HUD, menu layouts, buttons, icons, and storefront screenshot composition.
 - Rationale: Native desktop speed, precise layer & pixel control, no browser latency, leverages 25+ years of design muscle memory.
 
 Prototyping / Developer Handoff:
@@ -20,7 +20,7 @@ Prototyping / Developer Handoff:
 
 Optional Marketing Asset Tools:
 - Canva Pro (optional) – for rapid marketing boards or social media graphics when Photoshop isn’t necessary.
-- Affinity Publisher (optional) – for laying out large multi-screenshot App Store sets or press kits with precise typography.
+- Affinity Publisher (optional) – for laying out large multi-screenshot storefront sets or press kits with precise typography.
 
 Pipeline Notes:
 1. All UI assets are authored in Photoshop, layered and grouped for easy export.
@@ -46,19 +46,19 @@ Version Control
 Git + Git LFS – version control for code + large art/audio assets
 Godot Built-In Scene Version Control – cleaner merges on Node trees and scenes
 
-Accessibility Planning (Non-Optional for App Store compliance & ratings)
+Accessibility Planning (Non-Optional for storefront compliance & ratings)
 Colorblind-friendly palette tests (Sim Daltonism, Coblis)
 Text scaling options (Dynamic Type support)
 High-contrast mode toggle
 Audio cues for purely visual events
 Dyslexia-friendly font option toggle (e.g., OpenDyslexic or modified bitmap font)
 
-Mobile UX Standards” (right after Accessibility):
-Gesture conflicts (edge-swipe capture, home bar avoidance)
-Thumb-zone mapping (iPhone vs Max layouts)
-Haptic accessibility (global toggle + OS-respect)
-Dynamic Type support (scalable bitmap/variable font strategy)
-VoiceOver hooks (focus order, alt text for buttons, battle log announcements)
+Desktop UX Standards” (right after Accessibility):
+Input conflicts (remappable keys, keyboard/controller hot-swap)
+Resolution scaling (windowed vs fullscreen layouts)
+Controller rumble accessibility (global toggle)
+Text scaling support (scalable bitmap/variable font strategy)
+Screen reader hooks (focus order, alt text for buttons, battle log announcements)
 
 Monetization Strategy – Decide Early
 Premium upfront ($2.99–$4.99) – fits a satirical, one-shot experience
@@ -66,26 +66,25 @@ Optional IAP cosmetics – joke outfits, gag weapons
 Affects:
 Save system (cosmetic unlock persistence)
 Content gating (unlockable maps/DLC)
-App Store featuring likelihood
+Storefront featuring likelihood
 
 Save System Architecture
 Manual save at Wi-Fi hotspots (diegetic + functional)
-Cloud save support via GameCenter
+Cloud save support via Steam Cloud
 Corruption recovery via backup slot or periodic snapshot saves
 Auto‑snapshot on lifecycle events
 Save validation + rollback to last good snapshot
 
 Technical Architecture & Performance Profiling
-Frame rate targets: 60fps on modern iPhones, 30fps graceful fallback on older models
-Battery drain testing in idle and battle states
-Memory usage caps to avoid iOS auto-kills
+Frame rate targets: 60fps on typical desktop hardware, 30fps graceful fallback on min-spec machines
+Memory usage caps to stay within budget
 Texture streaming for larger worlds
 Performance profiling passes for physics step and overdraw
 
 “Lifecycle & Audio” subsection:
 Background/foreground resume rules
-Auto‑save on application_will_resign_active
-Phone call/notification pause behavior
+Auto‑save on window focus loss and quit
+Alt-tab/minimize pause behavior
 Audio ducking + restore logic
 
 Localization Prep (Even if English-only v1)
@@ -111,11 +110,11 @@ Git + Git LFS – version control for code + large binary assets
 Godot’s Built-In Scene Version Control – prevents scene merge headaches
 Google Sheets (optional) – balancing and stat planning before JSON commit
 
-iOS Extras
-GDExtension – haptic feedback for crits, item pickups, boss moments
-Fastlane – build automation, screenshot generation, metadata uploads
-GameCenter Cloud Saves – cross-device progress sync
-Dynamic Type Integration – iOS text scaling for accessibility
+Steam Extras
+GDExtension – controller rumble for crits, item pickups, boss moments
+Build automation scripts – screenshot generation, metadata uploads
+Steam Cloud Saves – cross-machine progress sync
+Text Scaling Integration – scalable text for accessibility
 
 Pipeline Flow
 Concept & Sketch – paper/digital
@@ -125,20 +124,20 @@ Data Entry – JSON for stats, gear, skills, strings
 Combat Logic – stats, skills, rolling HP meter
 Accessibility Pass – palettes, fonts, audio cues
 Polish Layer – particles, microinteractions, SMAAAASH! crits
-Performance Profiling – FPS, memory, battery
-Build & Test on iPhone – touch/UI fixes early
-QA & Content Lock – TestFlight release
+Performance Profiling – FPS, memory
+Build & Test the desktop export – input/UI fixes early
+QA & Content Lock – Steam beta branch release
 --- NEW SECTION ---
 Audio Strategy & Branding:
 - Adaptive music with unique loops for overworld, battle, boss fights, and "seedy underbelly" areas.
-- Implement iOS-friendly "Tap to Start" screen to enable audio autoplay.
-- Use looping-friendly formats (OGG for browser, AAC for iOS) and keep music memory footprint under ~10MB.
+- Implement browser-friendly "Click to Start" screen to enable audio autoplay in the browser build.
+- Use looping-friendly formats (OGG for desktop and browser) and keep music memory footprint under ~10MB.
 
 --- NEW SECTION ---
 Monetization Strategy – Expanded:
-- Satire compliance testing with external reviewers to avoid Apple "targeted group" violations.
+- Satire compliance testing with external reviewers to avoid storefront "targeted group" violations.
 - Regional sensitivity review with European playtesters to ensure humor is received as intended.
-- Fallback monetization: HTML5/browser build sold via Itch.io or Stripe checkout (~$4.99) if iOS version is rejected.
+- Fallback monetization: HTML5/browser build sold via Itch.io or Stripe checkout (~$4.99) if the Steam version is rejected.
 
 
 [CONTENT FROM PLAN ABOVE]
@@ -155,14 +154,14 @@ Monetization Strategy – Expanded:
 - Character leitmotifs layered into battle tracks when active; inverted or warped during debuffs.
 - Environmental audio ducking in cutscenes for roast line clarity.
 
-### Mobile Audio Autoplay Compliance (Tap to Start)
-- Pre-title “Tap to Start” screen meets iOS audio unlock rules.
-- Diegetic tap trigger (e.g., tapping jukebox) instead of generic start button.
-- Tap triggers short gag SFX that segues into main theme.
-- Cache intro so replays can bypass the tap without breaking compliance.
+### Browser Audio Autoplay Compliance (Click to Start)
+- Pre-title “Click to Start” screen meets browser audio unlock rules.
+- Diegetic click trigger (e.g., clicking the jukebox) instead of generic start button.
+- Click triggers short gag SFX that segues into main theme.
+- Cache intro so replays can bypass the click without breaking compliance.
 
 ### Audio Memory Cap Target (~10 MB)
-- Compressed AAC (iOS) / OGG (browser).
+- Compressed OGG (desktop and browser).
 - Limit to one in-memory music track + two SFX banks.
 - Stream long tracks instead of fully loading into memory.
 - Shared SFX banks for similar environments.
@@ -199,26 +198,26 @@ Monetization Strategy – Expanded:
 - Metadata tags for auto-collision and gameplay flags.
 - Reusable prop sheet for satire gags.
 
-## App Store Release & Marketing Playbook
+## Storefront Release & Marketing Playbook
 
 ### Compliance & Sensitivity
 - European tester roster tagged by region/city expertise.
-- Pre-submission satire compliance pass using Apple flagged-term filters.
-- Maintain App Store “story-safe” screenshots that pass review without humor dilution.
+- Pre-submission satire compliance pass using storefront flagged-term filters.
+- Maintain storefront “story-safe” screenshots that pass review without humor dilution.
 
 ### Monetization Contingency
-- Android, Steam, and Itch.io builds ready if iOS rejects.
+- Itch.io and browser builds ready if Steam rejects.
 - “Deluxe Roast Pack” DLC with extra gag cosmetics; no gameplay gating.
 - Browser build marketed as “uncensored edition” to spin rejection into PR.
 
 ## UX & Accessibility Implementation Guide
 
 ### QA Testing & Accessibility
-- Test all menus for 48px+ touch targets, color contrast, and focus order.
+- Test all menus for clear focus/click targets, color contrast, and focus order.
 - Battle animation speed toggle (Normal/Fast/Off).
 - High-contrast mode recolors UI and status icons for sunlight play.
-- One-handed vs. two-handed UI layout toggle.
-- Haptic feedback map (crit hit = strong buzz, cure = short pulse) with global toggle.
+- Keyboard-only and controller-only navigation both fully supported.
+- Controller rumble map (crit hit = strong buzz, cure = short pulse) with global toggle.
 
 ### Localization-Ready Humor
 - All text entries:
@@ -235,4 +234,4 @@ Monetization Strategy – Expanded:
 
 Localization Prep:
 
-A satirical, EarthBound-inspired RPG where the player roasts, debuffs, and out-styles a traveling rival trio — Lord Pilsner and his two frat-bro friends — across three heightened caricatures of European cities: Publandia (Dublin), Debaucheryville (Prague), and Sinfonia (Vienna). SNES-style pixel art, EarthBound-style front-view battles with a rolling HP meter, gear/items with comedic buffs, and premium touch UX for iPhone.
+A satirical, EarthBound-inspired RPG where the player roasts, debuffs, and out-styles a traveling rival trio — Lord Pilsner and his two frat-bro friends — across three heightened caricatures of European cities: Publandia (Dublin), Debaucheryville (Prague), and Sinfonia (Vienna). SNES-style pixel art, EarthBound-style front-view battles with a rolling HP meter, gear/items with comedic buffs, and premium desktop UX for Steam.

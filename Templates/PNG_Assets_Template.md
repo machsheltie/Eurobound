@@ -95,7 +95,7 @@ assets/sprites/locations/[world]/[location_name]/
 - **Trigger:** [Constant / player action / timer / quest state]
 - **Purpose:** [What atmosphere or feedback this creates]
 - **Audio Sync:** [Sound cue and timing, or "None"]
-- **Mobile Optimization:** [Reduced version for low-end devices, or "None needed"]
+- **Performance Optimization:** [Reduced version for low-end hardware, or "None needed"]
 
 [Repeat for each animation.]
 
@@ -120,15 +120,14 @@ assets/sprites/locations/[world]/[location_name]/
 
 ### Colorblind Considerations:
 - [Pattern/shape-based indicators wherever color codes meaning]
-- [Touch zones minimum 44px for interactive elements]
+- [Clear focus/click targets for interactive elements]
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Texture Compression by Platform:
-- **iOS:** [PVRTC 4BPP / ASTC — note any assets needing higher quality]
-- **Android:** [ETC2 with alpha]
+- **Desktop:** [VRAM compression (S3TC/BPTC) — note any assets needing higher quality]
 - **Fallback:** [PNG high quality for detail-critical assets]
 
 ### Texture Atlases:
@@ -138,7 +137,7 @@ assets/sprites/locations/[world]/[location_name]/
 | [location]_characters | [NPC sheets, expressions] | 512x512 |
 | [location]_effects | [particles, UI, overlays] | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -259,8 +258,8 @@ assets/sprites/locations/[world]/[location_name]/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets
 - [ ] Hidden areas/interactions have discoverable visual cues
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
+- [ ] Interactive elements clearly sized and readable for focus/click targeting
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 
@@ -275,8 +274,8 @@ assets/sprites/locations/[world]/[location_name]/
 | Satirical Targets Appropriate | ✅/❌ | [Tourists/bros, not locals — punch up] |
 | Seedy Underbelly Present | ✅/❌ | [Vice/exploitation element] |
 | Gameplay Value Established | ✅/❌ | [Mechanics served] |
-| Technical Feasibility | ✅/❌ | [Mobile optimization documented] |
-| Mobile Performance Budget | ✅/❌ | [FPS, draw calls, memory] |
+| Technical Feasibility | ✅/❌ | [Optimization documented] |
+| Performance Budget | ✅/❌ | [FPS, draw calls, memory] |
 | Accessibility Features | ✅/❌ | [Visual audio cues included] |
 | No Crypto Elements | ✅/❌ | [Unless established in source material] |
 | Social Media Integration | ✅/❌ | [Viral moments identified] |
