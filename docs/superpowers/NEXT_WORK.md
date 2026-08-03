@@ -10,7 +10,7 @@
 - **Platform:** Steam/desktop. The Apple-guidelines rationale for any content decision is void.
 - **NFTs:** 12 total, 4 per city, milestones 4/8/12; 12/12 epilogue is the author-dictated CryptoBro69 press-conference arrest ("DIAMOND HANDS FOREVER!").
 - **Shamsterdam is canon** — the author's fourth city; act placement per author.
-- **New author-dictated content:** Mom-call rework (Lord Pilsner secretly lives with his mom post-divorce) and Bradley's wedding-ring extortion quest (player choice; DeLorean payoff) — see EUROBOUND_PRD.md §4.2/§4.4.
+- **New author-dictated content:** Mom-call rework (Lord Pilsner secretly lives with his mom post-divorce); Bradley's wedding-ring extortion quest (player choice; DeLorean payoff); **The Weed Wraith** = minor villain in Shamsterdam; **The Schnitzel King** = minor boss in a Publandia dungeon (dungeon concept in development with the author); Hot Kroger Guy stays, plus his scripted girlfriend's-phone call to Pilsner — see EUROBOUND_PRD.md §4.2–§4.4.
 - The old PRD branch `claude/eurobound-jrpg-prd-uv5iog` is dead and must never be merged or treated as canon. The salvaged, author-corrected PRD lives on `claude/claude-md-game-guidelines-68oyd0`.
 
 **State at pause:** Rounds 1–4 landed and pushed to `origin/main`. Round 5 (Economy/Wallet/Crypto)
