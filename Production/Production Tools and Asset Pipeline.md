@@ -228,8 +228,8 @@ Monetization Strategy – Expanded:
   }
   ```
 - Fallback lines keep comedic intent without culture-locked idioms.
-- Localization sheet columns: Has Pun (Y/N), Needs Fallback (Y/N), Cultural Risk (Low/Med/High).
-- High-risk lines auto-swap on `SAFE_LOCALE=true` or flagged regions.
+- Localization sheet columns: Has Pun (Y/N), Needs Fallback (Y/N).
+- STRUCK (author ruling 2026-08-03): the `SAFE_LOCALE` high-risk-line auto-swap and "Cultural Risk" flagging were sanitization machinery — banned. Jokes ship at full strength in every locale; a translation may adapt a pun, never soften it.
 - Translator notes explain original joke for adaptive rewrites.
 
 Localization Prep:
