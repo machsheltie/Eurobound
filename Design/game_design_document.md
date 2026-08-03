@@ -4,7 +4,7 @@ _This is a placeholder for Game Design Spec Sheet.md_
 1) Game Design Spec Sheet – “Eurobound”
 
 Core Concept
-• Content line: suggestive humor and seedy underbelly themes; no explicit nudity.
+• Content line: MA, adults-only, full-strength satire. The seedy underbelly is shown, glorified, and ridiculed. The only ceiling: no nudity (author ruling 2026-08-03).
 
 Game Loop
 Explore overworld → Trigger visible encounters → EarthBound-style battle → Earn EXP, items, gear → City boss → Story advancement + new skills → Optional sidequests (NFT scavenger, Wi‑Fi/ICQ chats) → Next city
@@ -275,10 +275,10 @@ Player Experience Goals (Mobile‑first)
 • Thumb‑friendly: 48pt tap targets; bottom‑corner controls; safe‑area aware.
 • Microinteractions: button bounce (120ms), hit sparks (12–20 particles), SMAAAASH banner + brief shake, rolling HP tween (1–2s).
 • Readability: bitmap fonts at 2–3× scale; clear status icons; short quips over walls of text.
-Content Guidelines
-• No explicit nudity. Innuendo only, played for humor. 
-• Seedy underbelly portrayed via suggestions, satire, and mechanics (VIP access, backrooms, rumors, rigged games). 
-• Lighthearted, punch‑up tone; avoid degrading real populations or identities.
+Content Guidelines (author rulings 2026-08-03)
+• MA, adults-only. The only ceiling: no nudity. Beyond that, anything goes.
+• The seedy underbelly is shown in full — sex workers, drugs, drinking, hookups, red-light districts, heavy nightlife — glorified and ridiculed in the same breath, played straight, no suggestion-only treatment, no sanitization.
+• Satire targets everything: the bros, the locals, the cities, the cultures, the vices. No narrator, no moral framing, no punch-direction rules.
 Humor-forward writing, with each battle encounter dripping with personality.
 
 Game Structure:
