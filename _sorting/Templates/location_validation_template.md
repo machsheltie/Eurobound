@@ -1217,6 +1217,11 @@ assets/sprites/locations/[world]/[location_name]/
 
 ### **🍺 BUFFOON DELUSION SCENARIOS (Required for Vice Venues)**
 
+> **⚠️ READ FIRST: `Design/Character Profiles/bros_core_principle.md`**
+> The bros went to Europe **seeking debauchery** — the sex, drugs, drinking, partying, sex clubs, sex workers, the whole menu, on every front, as much as possible. They are not innocent tourists, they are not afraid, and the cities deliver in spades. Their delusion is about **themselves** (that they can handle it), never about what Europe is. Never write them horrified, frightened, ashamed, or corrupted.
+> **This game is RIDICULOUS SATIRE and MA-rated. It is not safe, not boring, not mundane, not corporate, and nobody in it is a sober realistic professional.** Everyone is absurd — vendors and locals as much as the bros; there is no straight man. The bros GET everything they came for and it escalates into ridiculous results. Never write anticlimax, terror, or paperwork as a punchline. Write it filthy and funny.
+> **What defeats them is ALWAYS their aging bodies or the women — never the world.** They are nearly 40 living a 20-year-old's life: stomachs wrecked by constant greasy late-night food, bodies that cannot survive all-night drugs and drinking, an onslaught of STDs, and total certainty they can still pull beautiful younger women while being turned down for younger hotter men. They never once identify age as the cause. Locations should tax a body that cannot take it, or land a rejection they instantly rationalise.
+
 **For Clubs, Bars, Strip Venues, "Escort" Services, Drug Scenes:**
 - [ ] **What do the bros THINK is happening?** (their delusional interpretation)
 - [ ] **What is ACTUALLY happening?** (the hilarious reality they're missing)

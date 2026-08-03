@@ -41,9 +41,9 @@ matching exactly.
 
 | Attribute | Value |
 |-----------|-------|
-| **Purchase Price** | [€X each / €X for all 3 bros] |
-| **Actual Value** | [€X] |
-| **Resale Value** | [€X or "€0 (worthless)"] |
+| **Purchase Price** | [X Sovs each / X Sovs for all 3 bros] |
+| **Actual Value** | [X Sovs] |
+| **Resale Value** | [X Sovs or "0 Sovs (worthless)"] |
 | **Can Be Sold** | [Yes/No + why] |
 | **Can Be Dropped** | [Yes/No + why, e.g. "No (permanent cosmetic)"] |
 | **Can Be Traded** | [Yes/No + why] |

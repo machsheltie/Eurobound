@@ -6,6 +6,7 @@
 **Save location:** `Design/World Design/[World]/PNG_Assets/`
 
 **Conventions:**
+- **PNG_Assets specs are authoritative over location profiles for sprite filenames, dimensions, and sheet membership.** This file is the artist's delivery contract; where a location profile or NPC profile disagrees with it, the spec wins and the profile is stale and must be corrected.
 - Location ID format: `world_area_type_##` (e.g. `debaucheryville_clocktower_arcade_01`)
 - All PNG filenames: `snake_case`, all lowercase
 - All coordinates: top-left origin (0,0), listed as `(x, y)` with `WxH` size

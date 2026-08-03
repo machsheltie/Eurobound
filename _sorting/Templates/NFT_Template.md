@@ -99,7 +99,7 @@ no narrator confirms anything.*
 
 - **Counts toward:** Ultimate Brochain Collection (12 base-game; milestones at 4 / 8 / 12)
 - **Wallet tab:** The Legacy Vault *(never Bagholder Assets — that tab is for rug-pull certificates)*
-- **Resale value:** €0 everywhere. Cannot be sold, traded, or redeemed. Every vendor declines it.
+- **Resale value:** 0 Sovs everywhere. Cannot be sold, traded, or redeemed. Every vendor declines it.
 - **Related files:** *(quest leg file, location file, item file, `design/economy/legacy_vault_cards.md`)*
 
 ## 7. Validation Checklist

@@ -19,7 +19,7 @@ After reviewing all 7 new sidequests, the following NEW elements need dedicated 
 
 | Location | Sidequest Source | Priority | Notes |
 |----------|------------------|----------|-------|
-| **Paddy's Premium Motors (Car Rental)** | eternal_roundabout | 🟡 MEDIUM | Seamus the rental guy. Entry point for roundabout quest. |
+| **Paddy's Premium Motors (Car Rental)** | eternal_roundabout | 🟡 MEDIUM | Fergus the rental guy. Entry point for roundabout quest. |
 | **The Cloverleaf (Eternal Roundabout)** | eternal_roundabout | 🔴 HIGH | Major set-piece location. The 1987 wedding van, tour bus community, circling vehicles. Needs unique environmental design. |
 
 ### Sinfonia
@@ -27,8 +27,8 @@ After reviewing all 7 new sidequests, the following NEW elements need dedicated 
 | Location | Sidequest Source | Priority | Notes |
 |----------|------------------|----------|-------|
 | **Opera House Plaza** | fiaker_fiasco | 🟡 MEDIUM | Starting point for Fiaker quest. Hans-Jürgen encounter. |
-| **Café Sachertorte** | fiaker_fiasco | 🟡 MEDIUM | High-end Viennese café. Gustav eats €18 Sachertorte. €340 in damages. |
-| **Sinfonia Bassline Opera House (Backstage)** | fiaker_fiasco | 🟡 MEDIUM | Magic Flute rehearsal disrupted. €2,000 in set damages. |
+| **Café Sachertorte** | fiaker_fiasco | 🟡 MEDIUM | High-end Viennese café. Gustav eats 18 Sovs Sachertorte. 340 Sovs in damages. |
+| **Sinfonia Bassline Opera House (Backstage)** | fiaker_fiasco | 🟡 MEDIUM | Magic Flute rehearsal disrupted. 2,000 Sovs in set damages. |
 | **Stadtpark (Gustav's Refuge)** | fiaker_fiasco | 🟢 LOW | City park where Gustav is finally cornered. Skittles negotiation. |
 
 ### Shamsterdam
@@ -37,7 +37,7 @@ After reviewing all 7 new sidequests, the following NEW elements need dedicated 
 |----------|------------------|----------|-------|
 | **Central Shamsterdam Bike Crossing** | bicycle_thunderdome | 🔴 HIGH | Environmental hazard. Frogger-style mini-game zone. Cargo cyclist parade. |
 | **Voetgangerstunnel (Pedestrian Tunnel)** | bicycle_thunderdome | 🟡 MEDIUM | Confusing underground passage. Leads to wrong destinations. Accidental Red Light District discovery. |
-| **Shamsterdam Bike Rental** | bicycle_thunderdome | 🟡 MEDIUM | Source of tourist bikes. Extra insurance €20. Recurring interactions. |
+| **Shamsterdam Bike Rental** | bicycle_thunderdome | 🟡 MEDIUM | Source of tourist bikes. Extra insurance 20 Sovs. Recurring interactions. |
 
 ---
 
@@ -47,11 +47,11 @@ After reviewing all 7 new sidequests, the following NEW elements need dedicated 
 
 | NPC | Type | Sidequest | Notes |
 |-----|------|-----------|-------|
-| **Shady Wristband Guy** | Scam Vendor | vip_wristbands | Sells children's birthday wristbands as "VIP Level Seven" access. €30 each. KEY NPC for Velvet Curtain Club gate. |
-| **Viewing Spot Scammer** | Scam Vendor | astronomical_cockup | Sells "prime viewing spots" for €10 that are behind pillars. |
-| **The "Party Monk"** | Scam Vendor | astronomical_cockup | Fake monk in bathrobe selling "blessings" for €20. "Lorem ipsum spiritu sanctu... party hardy... amen." |
-| **Clock Wine Vendor** | Scam Vendor | astronomical_cockup | Sells "Clock Energy Wine" for €60/bottle. Boxed wine in fancy bottles. Claims it makes you "magnetic to ladies." |
-| **Commemorative Plate Vendor** | Scam Vendor | astronomical_cockup | €45 plates, €30 t-shirts, €15 temporary tattoos. |
+| **Shady Wristband Guy** | Scam Vendor | vip_wristbands | Sells children's birthday wristbands as "VIP Level Seven" access. 30 Sovs each. KEY NPC for Velvet Curtain Club gate. |
+| **Viewing Spot Scammer** | Scam Vendor | astronomical_cockup | Sells "prime viewing spots" for 10 Sovs that are behind pillars. |
+| **The "Party Monk"** | Scam Vendor | astronomical_cockup | Fake monk in bathrobe selling "blessings" for 20 Sovs. "Lorem ipsum spiritu sanctu... party hardy... amen." |
+| **Clock Wine Vendor** | Scam Vendor | astronomical_cockup | Sells "Clock Energy Wine" for 60 Sovs/bottle. Boxed wine in fancy bottles. Claims it makes you "magnetic to ladies." |
+| **Commemorative Plate Vendor** | Scam Vendor | astronomical_cockup | 45 Sovs plates, 30 Sovs t-shirts, 15 Sovs temporary tattoos. |
 
 ### Debaucheryville - Other
 
@@ -64,7 +64,7 @@ After reviewing all 7 new sidequests, the following NEW elements need dedicated 
 
 | NPC | Type | Sidequest | Notes |
 |-----|------|-----------|-------|
-| **Seamus** | Car Rental Agent | eternal_roundabout | 60s, dead behind the eyes. Warns about The Cloverleaf. "That's what they all say." |
+| **Fergus** | Car Rental Agent | eternal_roundabout | 60s, dead behind the eyes. Warns about The Cloverleaf. "That's what they all say." |
 | **1987 Wedding Couple** | Roundabout Residents | eternal_roundabout | Skeleton bride "Margaret," still-living groom. 37 years circling. Raised family in the minivan. |
 | **The Driving Instructor** | Roundabout Resident | eternal_roundabout | Given up teaching, just circles now. |
 | **The Tour Bus Community** | Roundabout Residents | eternal_roundabout | Formed small government. Gives orientations. Has food truck schedule. |
@@ -77,7 +77,7 @@ After reviewing all 7 new sidequests, the following NEW elements need dedicated 
 |-----|------|-----------|-------|
 | **Hans-Jürgen** | Quest Giver | fiaker_fiasco | 50s Fiaker driver. Drunk. Lost his horse Gustav. Traditional outfit, bowler hat askew. |
 | **Gustav** | The Horse | fiaker_fiasco | Has opinions about tourists. Wears stolen opera cape. Likes Skittles. Can become recurring background character. |
-| **Café Maître D'** | Café Staff | fiaker_fiasco | Distressed about €18 Sachertorte being eaten. |
+| **Café Maître D'** | Café Staff | fiaker_fiasco | Distressed about 18 Sovs Sachertorte being eaten. |
 | **Opera Conductor** | Opera Staff | fiaker_fiasco | Mid-Magic Flute rehearsal. "WHAT IS THAT HORSE DOING ON MY STAGE?" |
 | **Zoo Keeper** | Minor NPC | fiaker_fiasco | Refuses to lend zoo horse. "That is the most American thing I have ever heard." |
 
@@ -98,10 +98,10 @@ After reviewing all 7 new sidequests, the following NEW elements need dedicated 
 
 | Item | Source | Effect | Notes |
 |------|--------|--------|-------|
-| **"VIP All-Access Wristband"** | vip_wristbands | None (cosmetic scam) | Children's birthday wristband. Says "I'm 7!" in Czech. Visible on sprites for rest of game. €30 each. |
-| **"Clock Energy Wine"** | astronomical_cockup | Applies "Blessed Drunk" (identical to regular Drunk) | Boxed wine in fancy bottle. €60 each. Can buy 6+. |
-| **"Clock Commemorative Plate"** | astronomical_cockup | Throwable, 1 damage, breaks immediately | €45. Visible in hostel room. |
-| **"I Survived The Cock-Up" T-Shirt** | astronomical_cockup | +1 Bravado, -2 Charm | €30. Locals visibly cringe. |
+| **"VIP All-Access Wristband"** | vip_wristbands | None (cosmetic scam) | Children's birthday wristband. Says "I'm 7!" in Czech. Visible on sprites for rest of game. 30 Sovs each. |
+| **"Clock Energy Wine"** | astronomical_cockup | Applies "Blessed Drunk" (identical to regular Drunk) | Boxed wine in fancy bottle. 60 Sovs each. Can buy 6+. |
+| **"Clock Commemorative Plate"** | astronomical_cockup | Throwable, 1 damage, breaks immediately | 45 Sovs. Visible in hostel room. |
+| **"I Survived The Cock-Up" T-Shirt** | astronomical_cockup | +1 Bravado, -2 Charm | 30 Sovs. Locals visibly cringe. |
 | **"Giant Souvenir Clog"** | bicycle_thunderdome | None (too big to be useful) | Attempted cargo bike cargo. Falls in canal. Still wet. |
 | **"Horse Costume"** | fiaker_fiasco (Path B) | Two-person disguise, -50% movement speed | Failed Gustav replacement attempt. |
 | **"Bradley's Harness"** | fiaker_fiasco (Path B) | +1 Bravado, -3 Speed | "I tried" energy. |
