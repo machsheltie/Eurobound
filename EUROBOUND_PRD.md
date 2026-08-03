@@ -153,12 +153,13 @@ Every city delivers the same guaranteed skeleton (content quotas are production 
 - **Act 1 — Publandia, "The Warm-Up."** The bros try to recreate a legendary pub crawl. The city humors them, fleeces them, and adopts them as mascots. Beat the Craic Baron; learn the Keg "moved east." Personal-arc seeds: Bradley starts his pub-champion ledger, Chadwick hunts his stolen viral clip, Pilsner mishears every clue (his Running Gag actively rewrites quest state).
 - **Act 2 — Debaucheryville, "The Bender."** The longest, darkest, funniest act. The Keg trail runs through the Shadow Exchange's forged-relic racket. Everything is counterfeit: the wristbands, the absinthe visions, the NFTs, the bros' stories about last night. Count Velvet Absinthe is revealed to be *selling Holy Keg maps* — dozens of them. Mid-act low point: the trio wakes up (Blackout Drunk mechanic, played once as story) having pawned Bradley's wedding ring from his failed marriage. Getting it back is the act's emotional spine and the quiet first crack in the delusion.
 - **Act 3 — Sinfonia, "The Morning After."** The bros perform sophistication and the city grades them. Maestro Vice von Strauss possesses the actual Holy Keg — displayed in the Bassline Opera House as *ironic memorabilia*. The heist-flavored finale runs through the Masquerade, the Black-Tie Backroom, and the boss fight synced to shifting musical tempo.
-- **Finale — "The Legend."** Tapping the Holy Keg summons the true final boss: **The Legend** — a shimmering, idealized composite of the three bros at 21, built from every exaggerated story they've told all game (its move set is literally their own kit with the numbers they always *claimed*: Beeramid but it works, Viral Moment with real followers). It inflicts **Perspective**. You cannot out-damage your own myth; the fight is won by surviving it and using the trio's *earned* moves — the janky, failure-scarred versions — until The Legend deflates.
+- **Finale — AWAITING AUTHOR RULING.** The previous agent's finale ("The Legend" — an idealized composite of the bros at 21 whose fight ran on the Perspective status) is **killed by author ruling 2026-08-03**: it was a reality-check device. The final boss and win condition are an open author decision; nothing goes here until the author rules.
 
 **Endings.**
 1. **Standard — "Still Got It."** The Keg taps flat beer. The bros declare the trip the greatest of all time. Freeze-frame photo, Legendary Hangover, roll credits over NPC gossip revealing what actually happened. The delusion survives. It's funny and a little devastating.
-2. **Alternate — "The Fistø Ending"** (requires the completed Public Restroom Graffiti quest / `fisto_thread_complete` flag). Fistø — the philosopher-janitor — meets them at the Keg. One page of sincere dialogue. The bros pour it out for their younger selves. Same party, one honest beat, and the post-credits scene changes: they're at the same suburban bar, but they're laughing at *themselves* first. (This is the "alternate ending flag" already reserved in the quest doc.)
-3. **NFT epilogue gag** (9/9 NFTs): post-credits stinger — Chadwick and Bradley's "Crypto Kings" press conference, seconds before the market crash bankrupts them instantly. Plays after either ending.
+2. **NFT epilogue gag** (9/9 NFTs): post-credits stinger — Chadwick and Bradley's "Crypto Kings" press conference, seconds before the market crash bankrupts them instantly.
+
+*The "Fistø Ending" (sincere mask-slip alternate ending) is killed by author ruling 2026-08-03. There is one ending: the delusion survives. Fistø exists only as the philosopher-janitor in the Public Restroom Graffiti quest — no ending arc, no sincere beat.*
 
 ### 4.3 City summaries (detail lives in `Design/Locations/`)
 
@@ -170,7 +171,7 @@ Every city delivers the same guaranteed skeleton (content quotas are production 
 
 ### 4.4 Named NPC canon
 
-Playable-adjacent and recurring: **Fistø** (graffiti philosopher-janitor; alternate-ending arc), **Mirror Chad** (recurring reflection encounter, escalating each city), **Maestro Beerschi** (Selfie with a Local Legend), **Hamstradamus** (prophetic hamster, cryptic foreshadowing), **Slick Greg**, **Dmitri "The Router"**, **CyberGoth Katka**, **Vape Witch Vanessa**, **Backpack Girl Who Never Left** (gives the broken Game Boy used in Sinfonia), **Suspicious Twins Polina & Paulina**, **Ringmaster Vance "Vape" Vallaro**.
+Playable-adjacent and recurring: **Fistø** (philosopher-janitor, Public Restroom Graffiti quest ONLY — no ending arc; author ruling 2026-08-03), **Maestro Beerschi** (Selfie with a Local Legend), **Hamstradamus** (prophetic hamster, cryptic foreshadowing), **Slick Greg**, **Dmitri "The Router"**, **CyberGoth Katka**, **Vape Witch Vanessa**, **Backpack Girl Who Never Left** (gives the broken Game Boy used in Sinfonia), **Suspicious Twins Polina & Paulina**, **Ringmaster Vance "Vape" Vallaro**.
 
 ICQ cast (Darkweb Dossier crossover): **Tony420**, **NarcGreg**, **CryptoBro69**, **Miss Morphine** (deliberately unresolved: person/bot/spyware — keep the ambiguity, it's the best joke in the cast), **richfield69**, **CryptoMamiXXX**, **Hamstradamus.eth**, **404_Bratnado.exe** (unlockable), minor trolls (TrollaLad420, Y2KBugZilla, NumaNumaNate, RedRoomRandy). Phone contacts: **Mom** (free SP restore, first call per city — our Homesickness-cure homage), Bestie, Hot Kroger Guy (cameo), Random Forum Troll, Shadow Tipster.
 
@@ -291,7 +292,7 @@ Confidence as mana. Per-bro pool (§5.1).
 
 **Negative:** **Hungover** (−20% all stats, −1 HP/turn, 25% skip turn; 3–5 turns; cures: time, Advil, greasy food, Sextuple Espresso) · Sloppy (−3 accuracy steps, 15% friendly fire; 1–2 turns) · **Embarrassed** (−20% ATK, −2 BP/turn, Ultimates & Taunt locked; 2–3 turns; scaling by Clout tier per §7.3) · Grease Fingers (−2 accuracy steps, tech items locked, 4 turns or washed) · Beer Goggles (−accuracy, 10% friendly fire) · Reckless (−25% DEF) · Crash (−3 all stat steps, 75% skip, 3 turns) · Confused/Green Fairy Confusion (random targeting) · Cringe / Cringe Lock (combo lockout) · Thirsty (regen halved) · Regret Rash (−Luck, 3 battles) · Meat Doubt, Greasy Coma, DigiDysentery (menu buttons inverted 2 min), Dysentery (Light), Socially Rejected, Bloated, Pixel PTSD, Mentally Unwell, Blue Screen, Signal Loss, Off-Tempo (−SPD next turn), Party Foul (−BP), Tourist Trapped (shop prices ×2 until rest or 3 areas), Broke AF, Lost AF, Reputation Ruined, Wrist Rash (flavor).
 
-**Special:** **Blackout Drunk** (Liquid Confidence + Sloppy + memory loss: battle ends, wake in random location minus random items — used ONCE as scripted story beat in Act 2, then available as a rare organic outcome of stacking alcohol) · **Existential Crisis** (all abilities become *Question Life Choices* [does nothing]; 2 turns or ally uses **Snap Out of It**) · **Perspective** (Reality Check enemies & The Legend: Ultimates locked, NPCs pity instead of fear; overcoming it grants bonus Clout — "Character Growth").
+**Special:** **Blackout Drunk** (Liquid Confidence + Sloppy + memory loss: battle ends, wake in random location minus random items — used ONCE as scripted story beat in Act 2, then available as a rare organic outcome of stacking alcohol) · **Existential Crisis** (all abilities become *Question Life Choices* [does nothing]; 2 turns or ally uses **Snap Out of It**). *(The "Perspective" status is killed by author ruling 2026-08-03 — no sincerity/moralizing mechanics, ever.)*
 
 Rules: same status doesn't stack, reapplication refreshes duration; one cleanse tier (Advil cures any one negative status + small HP; specific cures listed per status win over generic). "Accuracy steps" = −8% each. Full machine-readable table: `data/balance/status_effects.json`.
 
@@ -319,8 +320,8 @@ Roster targets: **10–12 regular enemies + 1 boss + 1 rival-trio fight per city
 
 AI is data-driven weighted-random with gates (EarthBound-simple, LimboAI behavior trees):
 - Each enemy: 2–4 moves with weights + conditions (`hp<50%`, `target_has_status`, `round>2`).
-- **Archetypes:** Swarmer (multi-unit, weak, Hen Party Swarm), Bruiser (Stag Do Berserker), Debuffer (Spill Sprite → Grease Fingers), Leech (steals €: Pickpocket Pair), Cringe-caster (attacks Bravado not HP: Backpack Bard's ukulele solo), Gimmick (Rigged Carnival Game only damageable after its "rules" are Bragged at).
-- **Reality Check enemies** (rare, mid-game+): actual college kids, multilingual locals — attack with facts ("You're 38 and wearing JNCO jeans!"), inflict Perspective, award bonus Clout.
+- **Archetypes:** Swarmer (multi-unit, weak, Hen Party Swarm), Bruiser (Stag Do Berserker), Debuffer (Spill Sprite → Grease Fingers), Leech (steals SOVS: Pickpocket Pair), Cringe-caster (attacks Bravado not HP: Backpack Bard's ukulele solo), Gimmick (Rigged Carnival Game only damageable after its "rules" are Bragged at).
+- **Reality Check enemies are killed by author ruling 2026-08-03** — no moralizing enemy types, ever. Enemy direction (author): EarthBound-style enemies drawn from the satirized/parodied cities and each city's TRUE seedy underbelly — late-night partying, sex workers, hookups, drugs, drinking, heavy nightlife — played straight, no hand-wringing or pearl-clutching. The audience is Folklore / South Park / GTA players. Specific new rosters get proposed to the author for approval before becoming canon.
 - Bosses: 2–3 phases, phase scripts + telegraphed "big move" rounds; **bosses drop status immunity but keep vulnerability windows** (e.g., Craic Baron's Sticky Floor round leaves him Distracted for 1 turn).
 
 ### 6.9 Victory, defeat & rewards
@@ -435,7 +436,7 @@ Scope tiers: **[CORE]** ships in V1.0 or the game doesn't ship · **[FULL]** shi
 | Quest | Tier | Notes |
 |---|---|---|
 | **Brewery Tour** (12 breweries, bottle-opener-gated) | [CORE] | Debaucheryville's four fully designed; author Publandia/Sinfonia sets to the same template. Rewards: regional beers, per-city Legendary Hangover, *Continental Beer Master*, Brewmaster Selfie collectibles. |
-| **Public Restroom Graffiti** (9 shrines) | [CORE] | Carries the Fistø arc + alternate ending flag. Titles: *Street Philosopher*, *The Greasy Prophet*, *Joysticks & Shame*; Dry Marker of Revelation. |
+| **Public Restroom Graffiti** (9 shrines) | [CORE] | Fistø appears here ONLY as the philosopher-janitor — comedy, no ending arc, no alternate-ending flag (author ruling 2026-08-03). Titles: *Street Philosopher*, *The Greasy Prophet*, *Joysticks & Shame*; Dry Marker of Revelation. |
 | **Frat Bro NFT Hunt** (9 NFTs) | [CORE] | Milestones 3/6/9: badge → *Wallet of Shame* (+1 Charm, "forever marking you as that guy") → crypto-crash epilogue. NFTs are JOKES + collectibles — zero blockchain anything (§17.2). |
 | **The Great Döner Debate** | [FULL] | Three vendors, Tony420 ICQ poll, *World's Pickiest Drunk* (already has a structured JSON passive — the effect-schema template). |
 | **Darkweb Dossier ICQ events** | [FULL] | Ambient content system: per-city ad batches + chat logs; raunch ceiling per C19. |
@@ -659,7 +660,7 @@ The August-2025 "14–19 days to demo" schedule is void. Calibration from shippe
 | **5 · Beta, polish, ports** | 2–3 months | Full-game balance pass (5% increments, 3-tier playtester satisfaction ≥80%), accessibility audit, IARC/Apple questionnaires, TestFlight/Play beta, localization pass (if any), store assets |
 | **Total** | **~18–24 months** part-time-plus; ~12–14 months if full-time | |
 
-Scope-cut order if behind (pre-agreed, per the docs' Red-status rule): Sinfonia venue count → STRETCH quests → couchsurf/karaoke lines → musical stingers → **never cut:** rolling HP, Bravado, the three-city structure, the graffiti/Fistø arc.
+Scope-cut order if behind (pre-agreed, per the docs' Red-status rule): Sinfonia venue count → STRETCH quests → couchsurf/karaoke lines → musical stingers → **never cut:** rolling HP, Bravado, the three-city structure, the graffiti quest.
 
 ### 16.2 The total skills package (what this project actually requires of one person)
 
@@ -721,7 +722,7 @@ $4.99 premium (C16), Small Business Program 15% commission tier. Playbook (as do
 
 ### 19.1 Glossary (canonical vocabulary)
 
-**Bravado (BP)** MP-analog, confidence-as-mana · **Clout** XP · **Euros (€)** currency · **Cover Charge** door-tax money sink · **Bro Ladder** Clout tiers (Pledge/Active/Alumni/Legacy/Living Legend) · **Brag** the skill menu · **Chicken Out** flee · **SMAAAASH!!** crit · **Dad on a Bender** zero-Bravado collapse · **Snap Out of It** ally recovery action · **Reality Check / Perspective** the sincerity mechanic · **Seedy Underbelly** each city's night layer · **The Legend** final boss · **Satire Swap** safe-string build system · **Playable Idiot Logic** flaws-as-mechanics pillar.
+**Bravado (BP)** MP-analog, confidence-as-mana · **Clout** XP · **SOVS** currency · **Cover Charge** door-tax money sink · **Bro Ladder** Clout tiers (Pledge/Active/Alumni/Legacy/Living Legend) · **Brag** the skill menu · **Chicken Out** flee · **SMAAAASH!!** crit · **Dad on a Bender** zero-Bravado collapse · **Snap Out of It** ally recovery action · **Seedy Underbelly** each city's night layer, shown in full · **Playable Idiot Logic** flaws-as-mechanics pillar. *(Struck by author ruling 2026-08-03: "Reality Check / Perspective," "The Legend," "Satire Swap.")*
 
 ### 19.2 The nine restroom graffiti shrines
 Publandia: Stoutworks Brewery (yeast golem miniboss) · The Back Room · Kebab Alley ("Stomach of Steel"). Debaucheryville: Grease Trap Shrine (3 A.M., Fistø's Mecca) · Claw Machine Maintenance Closet ("He moaned 'SMAAAASH' in bed. I ghosted mid-combo.") · Velvet Curtain VIP Stall (NFT QR + "DO NOT LOOK AT THE BABY"). Sinfonia: Mozart's Last Rave (Resurrected DJ ghost ally) · Café Existenz ("Even Nietzsche sat down to pee sometimes.") · Bassline Opera House backstage.
