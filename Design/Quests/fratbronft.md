@@ -11,20 +11,63 @@ Influencer Syndicate Theft: Occasionally, members of the Influencer Syndicate (s
 NFTs:
 Collection Size: 12 total — 4 per city (Debaucheryville, Sinfonia, Publandia).
 
+BINDING RULE (author-locked, permanent — see spec §7c): every NFT's ARTWORK is a 90s or 00s pop-culture artifact and is NEVER location-derived. The acquisition ROUTE is location-specific and venue-flavored; the subject never is. A location-derived NFT concept is a defect. The joke is that the bros crossed a continent and came home with American nostalgia they believe is a European art portfolio.
+Seven NFTs were struck on 2026-08-01 for being location-derived and replaced with the artifacts below, routes unchanged. Their copy is AUTHORED BY THE AUTHOR ONLY — the Tagline / Description / Collector's Thesis blocks below are deliberately empty and no one else fills them. Mint numbers on those seven are PROPOSALS the author may override.
+
 Debaucheryville Targets (4 of 4):
-Velvet Curtain bathroom QR graffiti: "Pixelated Kebab Monkey" NFT– Dubiously hand-drawn in MS Paint.
-Absinthe Arcade rigged claw machine: "Beer Pong Saint Relic" NFT– An 8-bit halo hovering over a red solo cup.
-Shadow Exchange ledger backroom: “VIP Wristband PNG” NFT-A flat, over-sharpened PNG of a scuffed velvet wristband, the Photoshop checkerboard still visible, with a fake hologram that flickers “VIP-ish.”
+Velvet Curtain bathroom QR graffiti:
+**The Millennium Bug (Mint #00)** — mint # proposed, author may override
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+
+Absinthe Arcade rigged claw machine:
+**Sea-Monkeys (Mint #73)** — mint # proposed, author may override
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+
+Shadow Exchange ledger backroom:
+**Napster (Mint #01)** — mint # proposed, author may override
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
 Meme Lord’s First Selfie (Debaucheryville target #4): “Meme Lord’s First Selfie” NFT– Clearly a stolen MySpace photo.
 
 Sinfonia Targets (4 of 4): all four detailed in Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md
-Auction QR catalog (hush-hush auction rooms): “Lot 41: Untitled (Gilt Frame, Empty)” NFT– A quality-40 JPEG of an empty picture frame, the photographer’s flash still visible in the varnish.
-Bassline Opera House backstage terminal: “Backstage Laminate (Unauthorized)” NFT– A flatbed scan of a laminated pass, someone’s thumb in the corner, the name field wiped out by lamination glare.
-Latte-art AR filter (Grounds For Concern, Kaffeehaus Row): “Foam Face #17” NFT– A 128px capture of a smeared milk-foam heart with a face very slightly visible behind it. There are at least sixty of #17.
+Auction QR catalog (hush-hush auction rooms):
+**Holographic Charizard (Mint #98)** — mint # proposed, author may override
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+
+Bassline Opera House backstage terminal:
+**Winamp (Mint #97)** — mint # proposed, author may override
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+
+Latte-art AR filter (Grounds For Concern, Kaffeehaus Row):
+**Crystal Pepsi (Mint #92)** — mint # proposed, author may override
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+
 Aaron’s tractor token (The Black-Tie Backroom): “She Thinks My Tractor’s Sexy” (Mint #42) NFT– A low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn, stamped on a scratched aluminum token. Handed over sincerely, as a gift; acquisition scene in Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md.
 
-Publandia Targets: 3 defined (QR mural, poker pot, POS terminal). The 4th is an open slot — sanctioned TBD, to be authored in a future round.
+Publandia Targets (4 of 4): FINAL — this roster is closed. There is no poker-pot acquisition in Publandia.
+Rival Trio Showdown (The Craic Tax) — reward for the 3-round pub crawl gauntlet; see Design/World Design/Publandia/publandia.md:
+**Pogs (the Slammer) (Mint #94)** — mint # proposed, author may override
+- **Tagline:** _[AUTHOR TO WRITE]_
+- **Description:** _[AUTHOR TO WRITE]_
+- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+
+Back-alley QR mural: "Who You Gonna Call? (Mint #84)" NFT– The original gig-economy disruptor.
+Pub POS terminal: "The Polyester Reserve (Mint #99)" NFT– Proof-of-Pellet.
+Jukebox track 47 (The Craic Tax): "America Online" NFT– A 12-second audio NFT of pure 56k modem screech. The birth cry of the modern internet. The collection's only audio piece.
+
+Track 47 (Publandia acquisition beat): Every jukebox in The Craic Tax runs the same burned CD, and every one of them has the same problem. Track 47 is twelve seconds of modem screech — somebody burned the disc badly in 2003 and nobody ever fixed it. The locals have simply learned not to press 47. Paying to play it three times unlocks the mint. Chadwick and Bradley are certain they have surfaced a lost audio artifact and want it played once more, at volume, for the room; the room wants it to stop, and is audibly relieved when it does. Full card copy for all four Publandia NFTs: design/economy/legacy_vault_cards.md.
 
 Rewards for Collection Milestones:
 4 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).
