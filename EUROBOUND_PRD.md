@@ -161,7 +161,7 @@ Every city delivers the same guaranteed skeleton (content quotas are production 
 
 **Endings.**
 1. **"Still Got It" survives in concept** (author ruling 2026-08-03): the bros declare the trip the greatest of all time; the delusion survives, fully intact. The author will rewrite it to be utterly ridiculous once the rest of the story is settled — the Keg-tap staging is dead with the Keg plot. Nothing about this ending is written until the author writes it.
-2. **NFT epilogue gag** (12/12 NFTs, per `fratbronft.md`): post-credits stinger — Chadwick and Bradley's champagne-fueled "Crypto Kings of Europe" press conference, seconds before the market crash bankrupts them instantly. (Author's own GDD gag; stands as written.)
+2. **NFT epilogue gag** (12/12 NFTs, per `fratbronft.md`, author-dictated rework 2026-08-03): post-credits stinger — Chadwick and Bradley's champagne-fueled "Crypto Kings of Europe" press conference, **CryptoBro69 at the podium doing the talking**, seconds before the market crash bankrupts them instantly. Police haul CryptoBro69 away mid-sentence; arms thrown skyward as they drag him off: **"DIAMOND HANDS FOREVER!"**
 
 *The "Fistø Ending" (sincere mask-slip alternate ending) is killed by author ruling 2026-08-03. There is one ending: the delusion survives. Fistø exists only as the philosopher-janitor in the Public Restroom Graffiti quest — no ending arc, no sincere beat.*
 

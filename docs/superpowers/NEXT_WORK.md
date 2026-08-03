@@ -1,5 +1,18 @@
 # Eurobound — Next-Work Handoff (paused 2026-07-31 for folder reorganization)
 
+## Standing rulings 2026-08-03 (CLAUDE.md / PRD-reclamation round — binding, do not relitigate)
+
+- **The story belongs to the author alone.** The PRD branch's invented plot ("The Last Hurrah") is struck in full; the author-dictated story core is in EUROBOUND_PRD.md §4.2. No agent writes story without the author.
+- **MA canon restated at full strength:** the ONLY content ceiling is no nudity — beyond that, anything goes. The seedy underbelly is shown, glorified, and ridiculed. No safe-build mechanism (`SATIRE_MODE`, `line_safe`, string swaps) may ever be created. Satire targets everything; there is no narrator; "never targets locals" is struck.
+- **All tracked NPCs and locations as of 2026-08-03 are author-approved canon** — written by or with the author. This includes the full audit list (Cyberspace Kavarna, Internet History Museum, Mystery Meat Cart, The Participation Trophy, the four Debaucheryville breweries, Haute Couture Haberdashery, Bassline Opera House, Mozart's Last Rave, Café Existenz, Vape Witch Vanessa, Vlad the Validator, Suspicious Twins, Backpack Girl, CryptoBro69's Ex, Bartender Matrix, Slick Greg, the Black-Tie Backroom cast, Bohemian Riviera cast, and all Publandia/Sinfonia venues). None are agent-orphans; none get struck.
+- **Killed by author ruling:** Mirror Chad; Fistø's alternate ending and any sincerity arc (Fistø survives ONLY as the graffiti-quest philosopher-janitor); Reality Check enemies/ending; the Perspective status; "The Legend" finale boss; all PRD act beats; the Holy Keg as MacGuffin (demoted back to Lord Pilsner's personal sidequest); per-city Rival Trio showdowns (Rival Trio appears ONCE, in the NFT sidequest).
+- **Currency:** SOVS only — never euros, never the € display glyph, never koruna (supersedes the R5 spec §1.2 glyph rule; € price sweep pending).
+- **Platform:** Steam/desktop. The Apple-guidelines rationale for any content decision is void.
+- **NFTs:** 12 total, 4 per city, milestones 4/8/12; 12/12 epilogue is the author-dictated CryptoBro69 press-conference arrest ("DIAMOND HANDS FOREVER!").
+- **Shamsterdam is canon** — the author's fourth city; act placement per author.
+- **New author-dictated content:** Mom-call rework (Lord Pilsner secretly lives with his mom post-divorce) and Bradley's wedding-ring extortion quest (player choice; DeLorean payoff) — see EUROBOUND_PRD.md §4.2/§4.4.
+- The old PRD branch `claude/eurobound-jrpg-prd-uv5iog` is dead and must never be merged or treated as canon. The salvaged, author-corrected PRD lives on `claude/claude-md-game-guidelines-68oyd0`.
+
 **State at pause:** Rounds 1–4 landed and pushed to `origin/main`. Round 5 (Economy/Wallet/Crypto)
 spec is approved-in-substance and committed; its PLAN and EXECUTION have NOT started — paused by
 author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown` (same as main).
