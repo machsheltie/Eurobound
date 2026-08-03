@@ -24,6 +24,7 @@ Creating a new NPC, location, NFT, item, PNG asset spec, or side quest doc? **Co
 
 ## Ask the author first
 
+- **The story belongs to the author alone.** No agent writes, extends, or reshapes the game's story, plot, hook, act structure, or endings on its own — the author dictates direction and the writing happens with them, decision by decision. (A previous agent invented an entire plot without asking; it was struck in full. Do not repeat this.)
 - **Requires an author ruling before doing:** story, lore, or satire changes; adding or changing mechanics; stat or economy numbers; quest structure; any new content (NPCs, locations, items, quests). Present the decision, interview the author if information is missing, and wait. **Ambiguity escalates — it is never resolved by invention.**
 - **Proceed freely:** bug fixes, refactors, tests, doc formatting.
 

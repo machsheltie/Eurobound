@@ -80,7 +80,7 @@ The design folders were written across multiple drafting passes and contain cont
 | C6 | **Currency** | "Cover Charges" vs "Bar Tabs" vs "gold" (code) vs "€" (menus) vs "beer tokens/shame coins" | **One currency: SOVS.** Never euros, never the € glyph, never koruna (author ruling 2026-08-03; supersedes the €-as-display-glyph rule). "Cover Charge" stays as a recurring money-sink event (doors literally tax you). "Gold" in prototype code is renamed `sovs`. Shitcoin/crypto satire per the Round 5 economy spec. | Author-locked currency canon; grounded-but-fake currency keeps the satire while cutting real-world baggage. |
 | C7 | **XP** | Consistent | **XP = "Clout."** Clout accumulates (never spent) and gates both levels and skill tiers. See §7. | Resolves the earn-vs-spend ambiguity in the skill tree doc. |
 | C8 | **Boss placement** | Count Velvet Absinthe at "Shadow Exchange" vs "Absinthe Cathedral" | **Shadow Exchange.** "Absinthe Cathedral" is cut (it exists nowhere else). | Matches the city doc and the `unlock_premium_stock()` hook already in code. |
-| C9 | **NFT roster** | 4+ candidate NFT sources in Debaucheryville for a 3-per-city hunt; NFT #2 has three names | **9 collectible NFTs, 3 per city.** Debaucheryville's three: *Pixelated Kebab Monkey*, *VIP Wristband PNG*, *Beer Pong Saint Relic*. Extra discovery points (VIP-stall tile, couchsurf outcome, Terminal #13) are **alternate acquisition routes to the same three**, not extra NFTs. "Velvet Wristband JPEG" is an alias to delete. | Preserves all the written content as redundant routes — good design for missable content. |
+| C9 | **NFT roster** | 4+ candidate NFT sources in Debaucheryville for a 3-per-city hunt; NFT #2 has three names | **12 collectible NFTs, 4 per city — `fratbronft.md` is canon (author ruling; supersedes this row's old 9-count).** Milestones 4/8/12. Publandia's 4th is a sanctioned open slot awaiting the author. Extra discovery points remain alternate acquisition routes, not extra NFTs. "Velvet Wristband JPEG" is an alias to delete. | Matches the author's quest doc and the Round 5 Legacy Vault (12 cards). |
 | C10 | **Breweries** | 4/city (brewery doc, tracker code) vs 2–3/city (sidequests.md) | **4 per city, 12 total.** | Matches the fully-designed Debaucheryville set and `brewery_tracker.gd`'s default data. |
 | C11 | **City names in-game** | Docs mix "Dublin/Publandia," "Prague/Debaucheryville" | **Only parody names appear in-game.** Real city names may appear in marketing copy as "inspired by." | Trademark/sensitivity hygiene; EarthBound's own approach (Onett, Twoson). |
 | C12 | **Status naming** | "Hungover" vs "Hangover"; two versions of Hydrated for Once, Embarrassed | **Master status list in §6.6 is canon.** Status is "Hungover." Embarrassed = merged spec (stat penalty + Bravado drain + no Ultimates). Hydrated for Once = Hungover immunity + 1 HP regen/turn. | statuseffects.md has the best numbers; merges add the Bravado hooks other systems need. |
@@ -127,7 +127,7 @@ PUBLANDIA (Dublin)          DEBAUCHERYVILLE (Prague)      SINFONIA (Vienna)
 "Beer & Brotherhood"        "Neon Nights & Shady          "Culture & Nightlife" —
                              Delights — it was cheaper     opera glitz over black-tie
                              at 3 a.m."                    backrooms
-Act 1: The Warm-Up          Act 2: The Bender             Act 3: The Morning After
+(+ SHAMSTERDAM — placement and order per author; act labels dead per author ruling)
 ```
 
 Every city delivers the same guaranteed skeleton (content quotas are production law):
@@ -135,31 +135,33 @@ Every city delivers the same guaranteed skeleton (content quotas are production 
 - 1 base-of-operations pub/inn (The Bottomless Tap · Hostel "Midnight Checkout" · The Moderato Pub)
 - 4–5 districts, 6–10 enterable venues, 2 of them dungeon-scale
 - 4 brewery micro-dungeons (Brewery Tour)
-- 1 **Rival Trio showdown** (awards 1 of the city's NFTs)
 - 1 **city boss** (awards trinket/weapon + access unlock)
-- 3 hidden NFT acquisitions (with redundant routes)
+- 4 hidden NFT acquisitions (with redundant routes; 12 total per `fratbronft.md` — the Rival Trio appears once in the whole game, in the NFT sidequest only, NOT per city)
 - 6–10 Wi-Fi/ICQ hotspots (save + flavor + hints)
 - 3 restroom graffiti shrines (Public Restroom Graffiti quest — 9 total)
 - 1–2 couchsurf spots, 1 karaoke/performance venue, city-specific status effects & reputation ladder
 
-### 4.2 The main quest — "The Last Hurrah" (new; fills `mainquest.md`)
+### 4.2 The story spine — AUTHOR-CONTROLLED (`mainquest.md` is written WITH the author, never without)
 
-**The hook.** At Lord Pilsner's 39th birthday (cold open, playable 5 minutes in a sad suburban sports bar — the tutorial), the trio receives a chain email from a defunct frat listserv: the **Holy Keg** — the mythical tap from the greatest party of their lives — was allegedly smuggled to Europe and is passed between legendary venues. Whoever taps it becomes *eternally legendary*. This is obviously nonsense. They book flights that night.
+**Standing rule (author, 2026-08-03):** No story decision is made by anyone but the author. The previous agent's invented plot ("The Last Hurrah": 39th-birthday cold open, chain-email hook, Holy Keg MacGuffin, Influencer Syndicate villain arc, all act beats) is **dead in its entirety** — it was written without author input and does not resemble the author's game. Gaps in the story are filled by interviewing the author, never by invention.
 
-**The antagonists.**
-- **The Influencer Syndicate** — smug TikTok travel vloggers who arrive at every venue first, ruin it, geotag it, and monetize it. They are the bros twenty years younger and somehow worse: the satire mirror. Their field agents are the recurring **Rival Trio**, fought once per city (Pub Crawl Showdown → Bottle Service Pretenders → Waltz of the Bros).
-- **City bosses** are local predators who monetize tourists' delusions: **The Craic Baron** (Publandia — surge-pricing the authenticity he manufactures), **Count Velvet Absinthe** (Debaucheryville — fake VIP economies from the Shadow Exchange), **Maestro Vice von Strauss** (Sinfonia — culture as a velvet-rope racket). Each boss holds a fragment of the Holy Keg rumor and each defeat sends the trio deeper into the con.
+**The story core (author-dictated):**
+- **Lord Pilsner has just gotten a divorce.** That's the trigger: three former college frat bros, all pushing 40, set out on one last big hurrah across Europe, convinced they've still got it — still hot, still able to do everything they did in their 20s without consequence. In reality: thinning, graying hair; beer guts; bodies that cannot hold up to that level of partying.
+- **Chadwick and Bradley leave their wives at home** — and cheat on them across the trip.
+- **Lord Pilsner secretly lives with his mom.** Post-divorce he moved back home; he told the guys he got his own place. He also has a recently acquired girlfriend who doesn't know he lives with mom — and he cheats on her throughout the trip too.
+- **The Holy Keg is NOT the plot.** It stays exactly what the author wrote: Lord Pilsner's small personal side quest (`party.md`). It is never a MacGuffin, never the game's spine.
+- **City bosses stand as written in the author's design docs** (The Craic Baron, Count Velvet Absinthe, Maestro Vice von Strauss). They are city content — wired into no quest spine, carrying no Keg fragments.
+- **The Rival Trio appears exactly ONCE in the entire game**, in the Frat Bro NFT side quest (the Influencer Syndicate theft route). No per-city showdowns; the Syndicate is NFT-hunt flavor, not an antagonist faction.
 
-**Act structure.**
+**Bradley's wedding ring (author-dictated quest — replaces the dead pawn beat):** Bradley is still married. One night his wedding ring vanishes — one of their hookups took it, and she extorts him: pay up, or "What are you gonna do — tell your wife what happened to your wedding ring? Do I need to call her?" **The player decides:**
+1. **Pay up** — cough up the money, get the ring back.
+2. **Refuse** — Bradley has to call his wife and admit he "lost" his wedding ring. He is in the doghouse for the rest of the trip: every subsequent call to "Dear" makes it unmistakably clear, escalating until the end of the game when, as the bros get ready to fly home, she informs him she has **sold his DeLorean to pay for a replacement ring**.
 
-- **Act 1 — Publandia, "The Warm-Up."** The bros try to recreate a legendary pub crawl. The city humors them, fleeces them, and adopts them as mascots. Beat the Craic Baron; learn the Keg "moved east." Personal-arc seeds: Bradley starts his pub-champion ledger, Chadwick hunts his stolen viral clip, Pilsner mishears every clue (his Running Gag actively rewrites quest state).
-- **Act 2 — Debaucheryville, "The Bender."** The longest, darkest, funniest act. The Keg trail runs through the Shadow Exchange's forged-relic racket. Everything is counterfeit: the wristbands, the absinthe visions, the NFTs, the bros' stories about last night. Count Velvet Absinthe is revealed to be *selling Holy Keg maps* — dozens of them. Mid-act low point: the trio wakes up (Blackout Drunk mechanic, played once as story) having pawned Bradley's wedding ring from his failed marriage. Getting it back is the act's emotional spine and the quiet first crack in the delusion.
-- **Act 3 — Sinfonia, "The Morning After."** The bros perform sophistication and the city grades them. Maestro Vice von Strauss possesses the actual Holy Keg — displayed in the Bassline Opera House as *ironic memorabilia*. The heist-flavored finale runs through the Masquerade, the Black-Tie Backroom, and the boss fight synced to shifting musical tempo.
-- **Finale — AWAITING AUTHOR RULING.** The previous agent's finale ("The Legend" — an idealized composite of the bros at 21 whose fight ran on the Perspective status) is **killed by author ruling 2026-08-03**: it was a reality-check device. The final boss and win condition are an open author decision; nothing goes here until the author rules.
+**Act structure: DEAD (author ruling 2026-08-03).** All of the previous agent's act beats are killed — they existed only to serve the plot that agent invented, which is not and will not be the author's story. City order, opening scene, act framing, and Shamsterdam's placement are the author's to dictate. **Finale:** also awaiting the author's design ("The Legend" perspective-boss is dead); the author will design the ending after the rest of the story is settled.
 
 **Endings.**
-1. **Standard — "Still Got It."** The Keg taps flat beer. The bros declare the trip the greatest of all time. Freeze-frame photo, Legendary Hangover, roll credits over NPC gossip revealing what actually happened. The delusion survives. It's funny and a little devastating.
-2. **NFT epilogue gag** (9/9 NFTs): post-credits stinger — Chadwick and Bradley's "Crypto Kings" press conference, seconds before the market crash bankrupts them instantly.
+1. **"Still Got It" survives in concept** (author ruling 2026-08-03): the bros declare the trip the greatest of all time; the delusion survives, fully intact. The author will rewrite it to be utterly ridiculous once the rest of the story is settled — the Keg-tap staging is dead with the Keg plot. Nothing about this ending is written until the author writes it.
+2. **NFT epilogue gag** (12/12 NFTs, per `fratbronft.md`): post-credits stinger — Chadwick and Bradley's champagne-fueled "Crypto Kings of Europe" press conference, seconds before the market crash bankrupts them instantly. (Author's own GDD gag; stands as written.)
 
 *The "Fistø Ending" (sincere mask-slip alternate ending) is killed by author ruling 2026-08-03. There is one ending: the delusion survives. Fistø exists only as the philosopher-janitor in the Public Restroom Graffiti quest — no ending arc, no sincere beat.*
 
@@ -175,7 +177,7 @@ Every city delivers the same guaranteed skeleton (content quotas are production 
 
 Playable-adjacent and recurring: **Fistø** (philosopher-janitor, Public Restroom Graffiti quest ONLY — no ending arc; author ruling 2026-08-03), **Maestro Beerschi** (Selfie with a Local Legend), **Hamstradamus** (prophetic hamster, cryptic foreshadowing), **Slick Greg**, **Dmitri "The Router"**, **CyberGoth Katka**, **Vape Witch Vanessa**, **Backpack Girl Who Never Left** (gives the broken Game Boy used in Sinfonia), **Suspicious Twins Polina & Paulina**, **Ringmaster Vance "Vape" Vallaro**.
 
-ICQ cast (Darkweb Dossier crossover): **Tony420**, **NarcGreg**, **CryptoBro69**, **Miss Morphine** (deliberately unresolved: person/bot/spyware — keep the ambiguity, it's the best joke in the cast), **richfield69**, **CryptoMamiXXX**, **Hamstradamus.eth**, **404_Bratnado.exe** (unlockable), minor trolls (TrollaLad420, Y2KBugZilla, NumaNumaNate, RedRoomRandy). Phone contacts: **Mom** (free SP restore, first call per city — our Homesickness-cure homage), Bestie, Hot Kroger Guy (cameo), Random Forum Troll, Shadow Tipster.
+ICQ cast (Darkweb Dossier crossover): **Tony420**, **NarcGreg**, **CryptoBro69**, **Miss Morphine** (deliberately unresolved: person/bot/spyware — keep the ambiguity, it's the best joke in the cast), **richfield69**, **CryptoMamiXXX**, **Hamstradamus.eth**, **404_Bratnado.exe** (unlockable), minor trolls (TrollaLad420, Y2KBugZilla, NumaNumaNate, RedRoomRandy). Phone contacts: **Mom** — **Lord Pilsner's mom** (author-dictated rework, 2026-08-03): post-divorce, Pilsner secretly lives with her while telling everyone he got his own place. Free SP restore on first call per city stays, but the first call home plays over speakerphone as maximum embarrassment — she mothers her "little boy" like he's eight (is he getting enough sleep, brushing his teeth, eating well, not staying out too late; she bought him new trousers and needs him to try them on when he gets home) and exposes exactly how pathetic post-divorce life at mom's is, in front of the guys (Failure to Launch / Howard's-mom energy). Every later call lands at least one fresh dig. Nobody in any scene ever frames it as a lesson. Also: Bestie, Hot Kroger Guy (cameo), Random Forum Troll, Shadow Tipster — and Bradley's calls to **"Dear"** (doghouse escalation per the wedding-ring quest, §4.2).
 
 ---
 
@@ -318,7 +320,7 @@ Competitive combos (*Who Flexed Harder?*, *Toast vs. Post*, *Who's The Alpha?*) 
 
 ### 6.8 Enemy design & AI (fills `enemyai.md`)
 
-Roster targets: **10–12 regular enemies + 1 boss + 1 rival-trio fight per city** (≈36 regulars, 7 set-piece fights). Every enemy = 1 static sprite + palette-swap variant budget.
+Roster targets: **10–12 regular enemies + 1 boss per city**, plus ONE rival-trio fight in the entire game (NFT sidequest only — author ruling 2026-08-03). Every enemy = 1 static sprite + palette-swap variant budget.
 
 AI is data-driven weighted-random with gates (EarthBound-simple, LimboAI behavior trees):
 - Each enemy: 2–4 moves with weights + conditions (`hp<50%`, `target_has_status`, `round>2`).
