@@ -53,7 +53,7 @@
 - **Lighting Setup**: Champagne flute ceiling fixture, RGB LED shimmer synced to club bass, selfie-cam mirror flash
 - **Particle Systems**: Champagne drip bubbles (drunk state), RGB shimmer flicker, glitter sparkle ambient
 - **Animation Elements**: RGB LED pulse to bass, champagne drip text overlay, pixel kebab icon appearance, graffiti glow effect
-- **Mobile Optimization**: Simplified RGB shimmer, reduced champagne bubble particles, static graffiti option
+- **Performance Optimization**: Simplified RGB shimmer, reduced champagne bubble particles, static graffiti option
 
 ## Satirical Design
 ### Theme & Vibe
@@ -249,7 +249,7 @@
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (All graffiti content, drunk/hungover systems, NFT hunt, ICQ integration functional)
-- [ ] **Mobile UX optimized** (RGB shimmer performs well, graffiti readable, drunk overlays responsive)
+- [ ] **UX optimized** (RGB shimmer performs well, graffiti readable, drunk overlays responsive)
 - [ ] **Social media potential maximized** (VIP bathroom absurdity screenshot-worthy, graffiti quotable, tech bro plaque viral)
 - [ ] **NFT integration logical** (Discovery fits treasure hunt progression, ICQ consequences clear)
 - [ ] **Comedy timing perfected** (Graffiti delivery, drunk reveal pacing, ICQ message mockery, tech bro plaque impact)
@@ -272,7 +272,7 @@
 - RGB LED shimmer flickering to club bass drops
 
 ### Systematic Enhancements Added:
-- Mobile optimization framework for RGB shimmer and drunk/hungover visual effects
+- Performance optimization framework for RGB shimmer and drunk/hungover visual effects
 - Buffoon delusion scenarios (bros thinking bathroom access is exclusive insider culture)
 - Social media viral potential integration (tech bro plaque, crypto graffiti, VIP toilet absurdity)
 - Complete technical implementation roadmap for state-based visual systems and NFT discovery
@@ -429,7 +429,7 @@ All interactive elements and special objects:
 - **Frame Rate Target:** 45 FPS (complex RGB shimmer and drunk overlays)
 - **Memory Footprint:** 35MB maximum
 - **Draw Calls:** Maximum 14
-- **Mobile Optimization:** RGB shimmer scalable, drunk overlays simplified, static graffiti fallback
+- **Performance Optimization:** RGB shimmer scalable, drunk overlays simplified, static graffiti fallback
 
 ## Animation Timing:
 - **RGB LED Shimmer:** Continuous pulse synced to club music bass (variable timing)

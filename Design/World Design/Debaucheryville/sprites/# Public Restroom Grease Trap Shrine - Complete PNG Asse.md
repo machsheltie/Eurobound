@@ -139,11 +139,10 @@ This document provides exact specifications for all PNG files needed for the Gre
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## 📐 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for grease effects, maintains oily shimmer
-- **Android:** ETC2 with alpha for particle transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for grease effects, maintains oily shimmer with alpha for particle transparency
 - **Fallback:** PNG at high quality for graffiti readability
 
 ### Sprite Atlasing Strategy:
@@ -151,7 +150,7 @@ This document provides exact specifications for all PNG files needed for the Gre
 - **Graffiti System Atlas:** All FistØ content + haiku + glyphs (512x256)
 - **Effects Particles Atlas:** Steam + fog + trail effects (512x256)
 - **Crawlspace Access Atlas:** Entrance system + debris (256x256)
-- **Max Atlas Size:** 1024x1024 for mobile GPU compatibility
+- **Max Atlas Size:** 1024x1024 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full grease reflections, all particle effects, pixel kebab animation
@@ -219,7 +218,7 @@ This document provides exact specifications for all PNG files needed for the Gre
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Animation system: Frame-based with JSON timing data
-- Particle systems: Use Godot's CPUParticles2D for mobile performance
+- Particle systems: Use Godot's CPUParticles2D for performance
 
 ### Audio Sync Points:
 - Fluorescent buzz syncs with flicker frames
@@ -308,7 +307,7 @@ This document provides exact specifications for all PNG files needed for the Gre
 
 ### Before Submitting Assets:
 - [ ] All 4 PNG files match exact dimension specifications
-- [ ] Graffiti text is pixel-perfect and readable at mobile resolution
+- [ ] Graffiti text is pixel-perfect and readable at target resolution
 - [ ] Grease reflection effects capture oily shimmer aesthetic
 - [ ] Pixel kebab eyes properly track in both animation frames
 - [ ] Chili sauce trail pulse cycle is clear discovery beacon

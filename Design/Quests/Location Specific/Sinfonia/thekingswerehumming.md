@@ -385,7 +385,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 
 ---
 
-## 📱 Mobile UX Considerations
+## 🖥️ UX Considerations
 
 ### Screenshot Moments
 
@@ -492,7 +492,7 @@ He eats it anyway. Doug deals the next hand.
 | Seedy nightlife underbelly present | ✅ |
 | Y2K/era-appropriate cringe | ✅ |
 | Post-credits scene delivers payoff | ✅ |
-| Mobile-optimized moments | ✅ |
+| UX-optimized moments | ✅ |
 | Nothing explains the joke | ✅ — no truth-teller, no aside, no verdict, no summary card |
 | Betting UI never opens | ✅ |
 | Stake is exactly the €500 collateral | ✅ |

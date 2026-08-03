@@ -45,7 +45,7 @@
 - **Lighting Setup**: Blacklight ambient with flickering point lights, UV-reactive materials
 - **Particle Systems**: Green mist from cabinets, electrical sparks, floating digital artifacts
 - **Animation Elements**: Floor tiles pulse randomly, cabinet screens flicker, mirror reflections lag behind player movement
-- **Mobile Optimization**: LOD system reduces particle density on lower-end devices, simplified lighting for battery life
+- **Performance Optimization**: LOD system reduces particle density on lower-end hardware, simplified lighting fallback
 
 ## Satirical Design
 ### Theme & Vibe
@@ -165,15 +165,15 @@
 - **Animation Requirements**: 
   - Cabinet screen flicker (2-second intervals)
   - Floor tile pulse (random 0.5-3 second delays)
-  - Particle systems (continuous, mobile-optimized)
+  - Particle systems (continuous, performance-friendly)
   - Mirror lag effect (0.2-second delay on player reflection)
 - **Performance Budget**: 60 FPS target, max 15 draw calls, 50MB memory footprint
-- **Platform Considerations**: Reduce particle density on older iOS devices, simplified shaders for battery optimization
+- **Platform Considerations**: Reduce particle density on older GPUs, simplified shader fallbacks
 
 ### Development Timeline
 - **Asset Creation**: 8 hours (arcade cabinets, environmental elements)
 - **Implementation Phase**: 12 hours (lighting systems, particle effects, audio integration)
-- **Testing Requirements**: Mirror effect optimization, mobile performance testing, accessibility color contrast
+- **Testing Requirements**: Mirror effect optimization, performance testing, accessibility color contrast
 - **Polish Phase**: 4 hours (audio balancing, final particle optimization)
 
 ### JSON File Updates Required
@@ -201,19 +201,19 @@
 - [x] **Cultural specificity confirmed** (Prague absinthe/arcade culture, post-communist tourist exploitation)
 - [x] **Satirical targets appropriate** (entitled tourist behavior, nostalgic consumption culture)
 - [x] **Gameplay value established** (quest hub, mini-games, progression items, social connections)
-- [x] **Technical feasibility confirmed** (mobile optimization planned, performance budgeted)
+- [x] **Technical feasibility confirmed** (performance optimization planned and budgeted)
 - [x] **Original content preserved** (all NPCs, mechanics, dialogue, quest connections maintained)
 
 ### Post-Implementation Testing
 - [ ] **Navigation tested** (hidden entrance discovery, arcade maze navigation)
 - [ ] **Interactive elements functional** (arcade games, claw machine, mirror effects, token system)
-- [ ] **Performance optimized** (60 FPS maintained, battery life acceptable, particle systems efficient)
+- [ ] **Performance optimized** (60 FPS maintained, particle systems efficient)
 - [ ] **Cultural sensitivity verified** (satirical content targets tourist behavior, not local culture)
 - [ ] **Cross-location integration confirmed** (brewery connection, couchsurf system, NFT hunt, Sinfonia prep)
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (all established gameplay systems functional)
-- [ ] **Mobile UX optimized** (touch zones appropriate, readability confirmed)
+- [ ] **UX optimized** (interaction zones appropriate, readability confirmed)
 - [ ] **Social media potential maximized** (screenshot opportunities identified, viral hooks integrated)
 - [ ] **Economic integration logical** (token system fits progression, rewards balanced)
 - [ ] **Complete implementation path established** (all required JSON updates planned)
@@ -232,7 +232,7 @@
 - Cross-city connections (Game Boy symbols for Sinfonia)
 
 ### **🚀 Systematic Enhancements Added:**
-- Mobile optimization framework with performance budgets
+- Performance optimization framework with explicit budgets
 - GTA+Eurotrip buffoon delusion scenarios
 - Social media viral potential integration
 - Complete technical implementation roadmap
@@ -277,6 +277,6 @@ Exact pixel coordinates where each sprite should be placed
 Dimensions for each element
 Animation frame sequences
 Color specifications
-Technical requirements for mobile optimization
+Technical requirements for performance optimization
 
 Think of it as detailed art specifications that artists use to create the actual image files!

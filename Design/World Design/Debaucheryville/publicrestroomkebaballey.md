@@ -175,7 +175,7 @@ Performance Specifications:
 Frame Rate Target: 40 FPS (small space optimization)
 Memory Footprint: 20MB maximum
 Draw Calls: Maximum 8
-Mobile Optimization: Simplified reflections, reduced particles
+Performance Optimization: Simplified reflections, reduced particles
 
 Animation Timing:
 

@@ -199,7 +199,7 @@ Certain story moments can dramatically alter reputation:
     • "Cultural Revelation" - Sudden (temporary) sophistication 
     • "Chaos Cascade" - Reputation becomes irrelevant as everything explodes 
 
-Mobile UI Integration
+UI Integration
 Reputation Display:
     • Current state name prominently displayed 
     • Satirical flavor text as tooltip 

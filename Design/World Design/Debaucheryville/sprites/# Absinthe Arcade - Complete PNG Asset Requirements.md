@@ -197,11 +197,10 @@ This document provides exact specifications for all PNG files needed for the Abs
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## 📐 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for green glow effects, maintains toxic aesthetic
-- **Android:** ETC2 with alpha for mist particle transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for green glow effects, maintains toxic aesthetic with alpha for mist particle transparency
 - **Fallback:** PNG high quality for mural parallax detail
 
 ### Sprite Atlasing Strategy:
@@ -209,7 +208,7 @@ This document provides exact specifications for all PNG files needed for the Abs
 - **Arcade Machines Atlas:** All cabinets + claw machine (2048x1024)
 - **Mural Parallax Atlas:** 4 layers separate for parallax effect (1024x512)
 - **Environmental Effects Atlas:** Bar + seating + particles (1024x512)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full particle systems, parallax mural, mirror lag effect
@@ -289,7 +288,7 @@ This document provides exact specifications for all PNG files needed for the Abs
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Parallax layers: Use ParallaxBackground node
-- Particle systems: CPUParticles2D for mobile optimization
+- Particle systems: CPUParticles2D for performance
 - Mirror effect: Sprite duplication with position delay
 
 ### Audio Sync Points:
@@ -407,7 +406,7 @@ This document provides exact specifications for all PNG files needed for the Abs
 - [ ] Environmental effects support tourist trap atmosphere
 - [ ] Hidden areas (bathroom, brewery) are discoverable
 - [ ] Nostalgic corruption theme is clear throughout
-- [ ] Mobile performance optimized for particle systems
+- [ ] Performance optimized for particle systems
 - [ ] All elements support "childhood corrupted" satire
 - [ ] Social media viral potential maximized
 

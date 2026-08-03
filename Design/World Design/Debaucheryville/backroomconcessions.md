@@ -60,7 +60,7 @@
 - **Lighting Setup**: Buzzing fluorescents, CRT monitor glow, hacked server rack illumination
 - **Particle Systems**: Steam from cooking, electronic static, cryptocurrency mining heat shimmer
 - **Animation Elements**: CRT pop-up cascades, flickering vending machine, thermal paste containers rattling
-- **Mobile Optimization**: Simplified particle effects for older devices, reduced CRT flicker rate
+- **Performance Optimization**: Simplified particle effects for older hardware, reduced CRT flicker rate
 
 ## Satirical Design
 ### Theme & Vibe
@@ -258,11 +258,11 @@
 - **Interactive Elements**: Menu ordering interface, status effect management, ICQ thread unlock
 - **Quest Integration**: Graffiti clue system, black market referral network, NPC respect tracking
 
-### Mobile Optimization
+### Performance Optimization
 - **Performance Scaling**: Simplified CRT effects and particle systems for lower-end devices
-- **Touch Interface**: Large menu interaction zones, clear status effect indicators
+- **Input Interface**: Large menu interaction zones (mouse/controller), clear status effect indicators
 - **Status Effect Management**: Visual feedback for DigiDysentery button inversion
-- **Battery Management**: Reduced electronic static and mining rig heat shimmer options
+- **Effects Options**: Reduced electronic static and mining rig heat shimmer options
 
 ### Cultural Authenticity Balance
 - **Digital Underground Satire**: Targets pretentious hacker culture commodification

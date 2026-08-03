@@ -81,7 +81,7 @@ The booth operates on a ticket system, but the math is designed to ensure maximu
 - **Lighting Setup**: Harsh booth lighting, unflattering for prizes AND customers
 - **Particle Systems**: Dust motes, occasional glitter (from Used Glitter Hat), mysterious particles
 - **Animation Elements**: Yolanda's dead-eyed customer service, prize "reveal" disappointment
-- **Mobile Optimization**: Simplified prize wall, focus on transaction
+- **Performance Optimization**: Simplified prize wall, focus on transaction
 
 ## Satirical Design
 ### Theme & Vibe

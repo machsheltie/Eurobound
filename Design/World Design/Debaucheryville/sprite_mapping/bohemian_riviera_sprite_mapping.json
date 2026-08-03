@@ -373,37 +373,37 @@
     }
   },
 
-  "mobile_optimization": {
+  "performance_optimization": {
     "texture_atlases": [
       {
         "name": "bohemian_riviera_environment_atlas",
         "files": ["fauxst_beach_tileset.png", "bar_strip_facades.png", "catapult_rig_and_toilets.png"],
         "max_size": "2048x2048",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       },
       {
         "name": "bohemian_riviera_npc_atlas",
         "files": ["jaxson_vane.png", "janek_sykora.png", "petra_production_assistant.png", "hamstradamus_beach_variant.png", "rosta_retrieval_man.png", "standa_lifeguard.png", "zdenka_shower_vendor.png"],
         "max_size": "2048x2048",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       },
       {
         "name": "bohemian_riviera_effects_atlas",
         "files": ["launch_splash_and_arc.png", "heat_shimmer.png", "confetti_and_string_lights.png", "port_o_cologne_flies.png"],
         "max_size": "1024x1024",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       },
       {
         "name": "bohemian_riviera_props_atlas",
         "files": ["space_heaters.png", "lifeguard_tower.png", "no_diving_sign.png", "release_forms_and_clipboard.png", "prize_pallet_2003.png"],
         "max_size": "1024x1024",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       },
       {
         "name": "bohemian_riviera_ui_atlas",
         "files": ["strike_counter_and_timer.png", "suspicion_meter_oakleys.png", "dialogue_and_prompt_ui.png"],
         "max_size": "1024x1024",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       }
     ],
     "lod_levels": {

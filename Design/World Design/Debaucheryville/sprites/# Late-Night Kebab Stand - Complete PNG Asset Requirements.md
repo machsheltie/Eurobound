@@ -225,11 +225,10 @@ This document provides exact specifications for all PNG files needed for the Lat
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## 📐 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for fluorescent lighting, maintains harsh brightness
-- **Android:** ETC2 with alpha for steam particle transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for fluorescent lighting, maintains harsh brightness with alpha for steam particle transparency
 - **Fallback:** PNG at high quality for menu item detail preservation
 
 ### Sprite Atlasing Strategy:
@@ -238,7 +237,7 @@ This document provides exact specifications for all PNG files needed for the Lat
 - **Menu Items Atlas:** All 8 food items with variations (1024x512)
 - **Environment Atlas:** Puddles + debris + fence + rat (1024x768)
 - **Effects Atlas:** All particle systems combined (512x256)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full steam effects, 4-frame rotisserie, rainbow grease shimmer
@@ -312,7 +311,7 @@ This document provides exact specifications for all PNG files needed for the Lat
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Animation system: Frame-based with JSON timing
-- Particle systems: CPUParticles2D for mobile performance
+- Particle systems: CPUParticles2D for performance
 - Menu system: Inventory UI integration for 8 items
 
 ### Audio Sync Points:
@@ -429,6 +428,6 @@ This document provides exact specifications for all PNG files needed for the Lat
 - [ ] Mystery meat both repulsive and appealing when hungry
 - [ ] All elements support "desperate tourists meet exploitation" theme
 - [ ] Social media viral potential maximized
-- [ ] Mobile performance optimized for particle effects
+- [ ] Performance optimized for particle effects
 
 **Once validated, the Late-Night Kebab Stand becomes the essential post-party recovery location where players make questionable food choices for strategic gameplay benefits while Mr. Chadz provides deadpan commentary on his sketchy operation!**

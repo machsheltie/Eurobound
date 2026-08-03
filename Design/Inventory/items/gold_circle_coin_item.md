@@ -205,7 +205,7 @@ Once obtained, the Coin is **permanently party-bound**: it cannot be sold, dropp
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: 8×8 pixels (Coin), 10×14 pixels (Coin on lanyard, chest overlay)

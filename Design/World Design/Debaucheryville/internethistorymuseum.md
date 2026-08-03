@@ -55,7 +55,7 @@
 - **Lighting Setup**: Flickering CRT glow (multiple sources), green MSN Messenger lights, iMac G3 altar illumination
 - **Particle Systems**: Dust motes floating in static glow, MIDI sparkles, dial-up screech visual waves
 - **Animation Elements**: Glitching banner scroll, CRT screen flicker, Angelfire loading bar endless loop, animatronic eye movement
-- **Mobile Optimization**: Simplified CRT flicker rate, reduced dust particle count, static banner text option
+- **Performance Optimization**: Simplified CRT flicker rate, reduced dust particle count, static banner text option
 
 ## Satirical Design
 ### Theme & Vibe
@@ -235,7 +235,7 @@
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (All exhibit systems, status effects, title unlock, quest triggers)
-- [ ] **Mobile UX optimized** (CRT effects, dust particles, kiosk interaction, exhibit visibility)
+- [ ] **UX optimized** (CRT effects, dust particles, kiosk interaction, exhibit visibility)
 - [ ] **Social media potential maximized** (Vaporwave aesthetic, dial-up screech, MIDI chaos, crime scene)
 - [ ] **Museum satire integration** (Academic reverence for garbage, preservation of trauma, fake legitimacy)
 - [ ] **Comedy timing perfected** (Random announcements, MIDI autoplay, AIM door loops, screech triggers)
@@ -255,7 +255,7 @@
 - iMac G3 altar with incense and "DO NOT OPEN" burned CDs
 
 ### Systematic Enhancements Added:
-- Mobile optimization framework for CRT effects and particle systems
+- Performance optimization framework for CRT effects and particle systems
 - Buffoon delusion scenarios (visiting fake museum with actively harmful exhibits)
 - Social media viral potential integration (vaporwave aesthetic, cursed yearbook concept)
 - Complete technical implementation roadmap for time-lock and randomization systems

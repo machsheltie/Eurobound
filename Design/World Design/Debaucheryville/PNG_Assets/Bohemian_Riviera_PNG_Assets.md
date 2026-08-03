@@ -98,7 +98,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Sound System Stack | (512, 256) | 128x128 | Migrates nightly, Eurodance source |
 
 ### Technical Notes:
-- Bar TV sprite is a single shared asset instanced across all three venue facades, not rendered per-venue (mobile memory optimization)
+- Bar TV sprite is a single shared asset instanced across all three venue facades, not rendered per-venue (memory optimization)
 - Terrace seating tile-repeats to extend the strip without new art
 
 ---
@@ -391,7 +391,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
@@ -457,6 +457,6 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Satirical Targets | ✅ PASS |
 | Gameplay Value | ✅ PASS |
 | No Crypto Elements | ✅ PASS |
-| Mobile Optimization | ✅ PASS |
+| Performance & Assets | ✅ PASS |
 
 **The Bohemian Riviera delivers a complete landlocked beach-resort art spec — trucked-in sand, three independently-triggerable catapult units, a boat-hook retrieval man with a personal-best chart, and a hamster who has never once been wrong about anything.**

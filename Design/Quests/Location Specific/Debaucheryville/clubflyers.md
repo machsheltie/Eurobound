@@ -141,7 +141,7 @@ Improvement Layer: Flyers you post appear physically around the city. Later, NPC
 
 ---
 
-## Mobile UX (Early 2000s Aesthetic)
+## UX (Early 2000s Aesthetic)
 
 ### Interface Design:
 - **Button sounds** like old Windows 98 system alerts

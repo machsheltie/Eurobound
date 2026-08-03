@@ -52,7 +52,7 @@
 - **Lighting Setup**: Focused desk lamp, multiple CRT glows, UV wand illumination, tealight flicker
 - **Particle Systems**: Blue-grey smoke, UV light shimmer, photocopier toner dust
 - **Animation Elements**: Split-flap board updates, CRT screen flicker, cash counter spinning, UV wand scanning
-- **Mobile Optimization**: Simplified particle effects for older devices, reduced CRT flicker rate
+- **Performance Optimization**: Simplified particle effects for older hardware, reduced CRT flicker rate
 
 ## Satirical Design
 ### Theme & Vibe
@@ -216,7 +216,7 @@
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (all vendor systems, mini-games, dialogue, economic balance)
-- [ ] **Mobile UX optimized** (mini-game controls, rate board visibility, vendor interaction flow)
+- [ ] **UX optimized** (mini-game controls, rate board visibility, vendor interaction flow)
 - [ ] **Social media potential maximized** (screenshot opportunities, quotable dialogue, viral mechanics)
 - [ ] **Economic integration logical** (fits progression system, tool distribution, cross-location dependencies)
 - [ ] **Comedy timing perfected** (NPC delivery, rate board reveals, scam realization moments)
@@ -235,7 +235,7 @@
 - Complete barter window and shady contracts mechanics
 
 ### Systematic Enhancements Added:
-- Mobile optimization framework for complex economic systems
+- Performance optimization framework for complex economic systems
 - Buffoon delusion scenarios (bros trusting obvious financial scams)
 - Social media viral potential integration (underground economy aesthetic)
 - Complete technical implementation roadmap for mini-games and tracking systems

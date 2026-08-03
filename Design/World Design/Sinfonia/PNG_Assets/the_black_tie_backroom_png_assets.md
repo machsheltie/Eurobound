@@ -5,7 +5,7 @@
 **Location ID**: `sinfonia_operahouse_blacktie_backroom_01`
 **Priority**: HIGH (Mini-Game Hub, Hidden Boss Arena, Reputation Gate, Scripted Encounter)
 **Total PNGs Required**: 38 (13 environment, 11 character, 14 UI/item)
-**Mobile Optimization**: Target 45 FPS on iPhone 8+, max 20 draw calls, 50MB memory
+**Performance**: Target 45 FPS on min-spec hardware, max 20 draw calls, 50MB memory
 
 **Source of truth**: `Design/World Design/Sinfonia/the_black_tie_backroom.md` (PNG Asset Requirements Summary). Every filename below appears in that summary; every filename referenced by `sprite_mapping/the_black_tie_backroom_sprite_mapping.json` appears below.
 
@@ -30,7 +30,7 @@ The Backroom is **legitimate sophistication worn as a mask over vice**. Thirty s
 ### Two-Felt Rule (BINDING)
 Every playable gaming surface — poker, roulette, blackjack, high-stakes salon, private boxes — uses **Table Green (#0B3D2E)** with the full house dressing: brass chip rail, dealer plaque, printed bet-placement markings, shared overhead table light.
 
-**Aaron's corner table uses Corner Oxblood (#4A1F24) and carries none of that dressing.** No rail, no plaque, no markings, its own low pendant lamp. A player must be able to tell the two apart in a single glance, at thumbnail size, on a phone. This is a hard requirement, not a style preference.
+**Aaron's corner table uses Corner Oxblood (#4A1F24) and carries none of that dressing.** No rail, no plaque, no markings, its own low pendant lamp. A player must be able to tell the two apart in a single glance, at thumbnail size. This is a hard requirement, not a style preference.
 
 ---
 
@@ -414,12 +414,12 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Compression**: Lossless
 - **Naming Convention**: `snake_case_descriptive.png`
 
-### Mobile Optimization Targets
+### Performance Optimization Targets
 - **Texture Atlases**: Maximum 4 at 1024px
 - **Draw Calls**: Under 20 for the full location
 - **Memory**: Under 50MB with all zones loaded
 - **Particles**: Maximum 60 simultaneous
-- **Target FPS**: 45 on iPhone 8+
+- **Target FPS**: 45 on min-spec hardware
 - **Pre-rendered**: Roulette spin cycle, card deal animations, static crowd fills
 
 ### Animation Guidelines

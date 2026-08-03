@@ -122,7 +122,7 @@
 ## Implementation Notes
 
 ### Technical Requirements
-- **Interaction Radius:** 48px touch target for mobile optimization
+- **Interaction Radius:** 48px interaction target
 - **Animation Timing:** Vape cloud appears every 12 seconds, phone check every 8 seconds
 - **Audio Cues:** Subtle vape inhale sound, notification beep when checking phone
 - **Performance Notes:** Vape cloud uses simple alpha fade particle effect

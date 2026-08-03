@@ -53,7 +53,7 @@
 - **Lighting Setup**: Harsh fluorescent from cart, dim alley lighting, flickering LED strip
 - **Particle Systems**: Steam from rotisserie, cigarette smoke, grease vapor, rainbow puddle reflections
 - **Animation Elements**: Meat spinning on rotisserie, LED strip flicker, steam rising, rat gnawing
-- **Mobile Optimization**: Steam particles scale with device performance, simplified rainbow reflections
+- **Performance Optimization**: Steam particles scale with hardware performance, simplified rainbow reflections
 
 ## Satirical Design
 ### Theme & Vibe
@@ -220,7 +220,7 @@
 - **Asset Creation**: 6 hours (food cart, character, environmental elements)
 - **Implementation Phase**: 8 hours (menu system, status effects, audio integration)
 - **Testing Requirements**: Status effect balance, menu pricing, cross-location integration
-- **Polish Phase**: 3 hours (comedy timing, mobile optimization)
+- **Polish Phase**: 3 hours (comedy timing, performance optimization)
 
 ### JSON File Updates Required
 - [ ] **Vendor Core Data**: Mr. Chadz character, menu system, pricing structure
@@ -259,7 +259,7 @@
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (all food effects, strategic gameplay, quest connections functional)
-- [ ] **Mobile UX optimized** (menu interface, particle effects, character interactions smooth)
+- [ ] **UX optimized** (menu interface, particle effects, character interactions smooth)
 - [ ] **Social media potential maximized** (screenshot opportunities, viral catchphrase content)
 - [ ] **Economic integration logical** (pricing structure, cross-location customer flow, repeat business value)
 - [ ] **Comedy timing perfected** (Mr. Chadz delivery, food effect reveals, environmental humor)
@@ -278,7 +278,7 @@
 - Risk/reward food system with humorous consequences
 
 ### **🚀 Systematic Enhancements Added:**
-- Mobile optimization framework for particle effects and animations
+- Performance optimization framework for particle effects and animations
 - GTA+Eurotrip buffoon delusion scenarios (bros missing obvious health violations)
 - Social media viral potential integration (Mr. Chadz is perfect meme material)
 - Complete technical implementation roadmap for complex menu system

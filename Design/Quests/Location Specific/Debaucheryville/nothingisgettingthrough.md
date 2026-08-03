@@ -654,7 +654,7 @@
 
 ---
 
-## 📱 Mobile UX Considerations
+## 🖥️ UX Considerations
 
 ### Screenshot Moments
 
@@ -821,7 +821,7 @@ and did, for once, exactly what it promised.
 | Seedy nightlife underbelly present | ✅ |
 | Y2K/era-appropriate cringe | ✅ |
 | Post-credits scene delivers payoff | ✅ |
-| Mobile-optimized moments | ✅ |
+| UX-optimized moments | ✅ |
 | Renata is never the joke; her dignity intact in every frame | ✅ |
 | No horror sting, zoom, or reveal camera pointed at her sprite | ✅ |
 | Goggles render is bros-POV-only, identical asset ×3, never neutral camera | ✅ |
@@ -912,4 +912,4 @@ and did, for once, exactly what it promised.
 2. **Verify Chronicles completion is reachable post-Coin** for every lady on the roster, including a save that ran every rejection scene twice before acquiring the Coin.
 3. **Verify the Coin's suppression is party-wide from any single bro**, and that unequipping restores the shimmer on all three simultaneously.
 4. **Verify `renata_goggles_render` never renders in a neutral camera**, in any frame, in any branch, at any point after the morning cut.
-5. Playtest the mannequin hold on mid-range mobile hardware — eleven seconds of nothing happening is a long time on a phone, and it is supposed to be.
+5. Playtest the mannequin hold on mid-range hardware — eleven seconds of nothing happening is a long time, and it is supposed to be.

@@ -195,7 +195,7 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: 48×32 pixels (`members_card.png`, per the Backroom's sprite manifest)

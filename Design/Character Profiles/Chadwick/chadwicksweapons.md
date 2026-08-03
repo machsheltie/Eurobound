@@ -85,9 +85,9 @@ Classic EarthBound Elements:
     • Emotional Resonance: Every swing carries the weight of abandoned dreams and desperate hope 
     • Progressive Naming: Each upgrade tells a story of rebuilding vs. accepting reality 
     • Comedy Through Tragedy: The more pathetic his internet fame attempts, the funnier the combat 
-Mobile-Optimized Feel:
+Desktop-Optimized Feel:
     • Dynamic lighting effects that actually illuminate dark game areas 
-    • Satisfying screen flashes on critical hits with proper haptic feedback 
+    • Satisfying screen flashes on critical hits with controller rumble 
     • Particle systems for flickering/dying bulbs that improve with upgrades 
     • Audio cues mixing content creator jargon with medieval weapon impacts 
     • Visual feedback where successful hits briefly show "engagement metrics" floating above enemies 

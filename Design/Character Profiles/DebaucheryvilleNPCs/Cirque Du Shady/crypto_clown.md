@@ -122,7 +122,7 @@
 ## Implementation Notes
 
 ### Technical Requirements
-- **Interaction Radius:** 64px touch target (larger performance area)
+- **Interaction Radius:** 64px interaction target (larger performance area)
 - **Animation Timing:** Coin juggling cycle 2.4 seconds, balloon deflation 8 seconds, desperate pitch gestures every 5 seconds
 - **Audio Cues:** Circus music (distorted), coin dropping sounds, balloon pop effects, nervous laughter
 - **Performance Notes:** Balloon deflation particle effect, scattered business cards as environment props

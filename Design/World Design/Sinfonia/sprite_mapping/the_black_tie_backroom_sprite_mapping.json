@@ -477,7 +477,7 @@
     }
   },
 
-  "mobile_optimization": {
+  "performance_optimization": {
     "texture_atlases": {
       "count": 4,
       "max_size": 1024,

@@ -210,7 +210,7 @@ This is definitely financial advice
 
 ## **🏆 Enhanced Brewery Tour Mechanics (Debaucheryville Specific)**
 
-### **Y2K Mobile UX Enhancements:**
+### **Y2K UX Enhancements:**
 - **Loading screens** between brewery areas show fake Kazaa downloads: *"Downloading brewery_tour.exe... 28.8k modem detected"*
 - **Achievement notifications** styled like ICQ message popups
 - **Menu backgrounds** that look like WinAmp visualizations

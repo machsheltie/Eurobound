@@ -178,7 +178,7 @@ N/A — no equippable counterpart exists and none will be authored. There is exa
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: 8×4 pixels (item icon), 2×1 pixel waistband sliver (in-world overlay)

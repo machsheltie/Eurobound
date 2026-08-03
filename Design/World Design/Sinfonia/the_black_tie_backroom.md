@@ -106,7 +106,7 @@ Every detail screams "legitimate sophistication masking vice":
 - **Lighting Setup**: Warm chandelier glow, focused table lights, shadowy edges
 - **Particle Systems**: Smoke wisps (cigars), chip shine, card flutter, champagne bubbles
 - **Animation Elements**: Card dealing, chip stacking, roulette spin, NPC reactions
-- **Mobile Optimization**: Pre-rendered roulette, simplified card animations, static crowd
+- **Performance Optimization**: Pre-rendered roulette, simplified card animations, static crowd
 
 ## Satirical Design
 ### Theme & Vibe
@@ -495,7 +495,7 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
   - NPC tells (subtle)
   - Win/loss reactions
 - **Performance Budget**: 45 FPS target, max 20 draw calls, 50MB memory
-- **Platform Considerations**: Pre-rendered card animations, simplified roulette, touch-optimized betting
+- **Platform Considerations**: Pre-rendered card animations, simplified roulette, streamlined betting input
 
 ### Development Timeline
 - **Asset Creation**: 12 hours (multiple game interfaces, elegant environment)

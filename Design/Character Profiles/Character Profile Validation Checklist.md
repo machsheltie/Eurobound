@@ -41,7 +41,7 @@
 #### **Technical Specifications**
 - [ ] **Animation timing specified in seconds**
 - [ ] **Audio cues detailed and realistic**
-- [ ] **Mobile optimization considerations noted**
+- [ ] **Performance optimization considerations noted**
 - [ ] **Sprite sheet and coordinates planned**
 
 ---
@@ -59,7 +59,7 @@
 - [ ] **Behavioral flags match character psychology**
 - [ ] **Audio clips planned and named consistently**
 - [ ] **Sprite optimization settings specified**
-- [ ] **Mobile performance considerations addressed**
+- [ ] **Performance considerations addressed**
 
 #### **Analytics Integration**
 - [ ] **Screenshot moments identified for social media**
@@ -89,7 +89,7 @@
 ### **💬 Dialogue Quality Standards**
 
 #### **Catchphrase Requirements**
-- [ ] **Under 12 words for mobile readability**
+- [ ] **Under 12 words for readability**
 - [ ] **Instantly recognizable as this character**
 - [ ] **Incorporates satirical target elements**
 - [ ] **Memorable enough for social media quotes**
@@ -120,19 +120,19 @@
 
 ---
 
-### **📱 Mobile Optimization Checklist**
+### **🖥️ Performance & Assets Checklist**
 
 #### **Dialogue Readability**
-- [ ] **All text readable on iPhone 8 screen size**
+- [ ] **All text readable at desktop resolutions**
 - [ ] **No single dialogue line exceeds 280 characters**
 - [ ] **Font size considerations documented**
 - [ ] **High contrast mode compatibility noted**
 
 #### **Interaction Design**
-- [ ] **Touch zones minimum 48px diameter**
+- [ ] **Interaction zones minimum 48px diameter**
 - [ ] **Animation performance optimized for 30fps minimum**
-- [ ] **Audio files compressed for mobile bandwidth**
-- [ ] **Particle effects scaled for mobile performance**
+- [ ] **Audio files compressed for reasonable install size**
+- [ ] **Particle effects scaled for performance**
 
 ---
 
@@ -158,7 +158,7 @@
 1. **World Consistency**: Run text search for real city names
 2. **Uniqueness**: Compare against existing character matrix
 3. **Technical Specs**: All animation/audio details specified
-4. **Mobile Readiness**: Touch targets and performance considered
+4. **Desktop Readiness**: Interaction targets and performance considered
 5. **Marketing Potential**: Screenshot/sharing opportunities identified
 
 ---
@@ -168,7 +168,7 @@
 **Immediately reject character profiles that contain:**
 - Real world city names anywhere in text
 - Identical archetypes to existing characters  
-- Dialogue longer than mobile screen limits
+- Dialogue longer than dialogue box limits
 - No clear satirical purpose or target
 - Missing technical implementation details
 - Cultural references that could cause legal issues
@@ -206,7 +206,7 @@
 ### Sprite Information
 - **Animation Timing**: Specific intervals in seconds
 - **Color Specifications**: Hex codes for key colors
-- **Mobile Considerations**: Touch zone sizes, readability
+- **Desktop Considerations**: Interaction zone sizes, readability
 
 ### Visual Characteristics  
 - **Satirical Visual Elements**: What makes satire obvious
@@ -230,7 +230,7 @@
 
 ## Implementation Specifications
 ### Technical Requirements
-- **Performance Optimization**: Mobile-specific considerations
+- **Performance Optimization**: Desktop-specific considerations
 - **Audio Integration**: Specific file names and effects
 - **Animation Schedule**: Precise timing for all states
 
@@ -239,4 +239,4 @@
 - **Social Sharing**: Built-in quote-worthy content
 ```
 
-**This validation system ensures every character maintains world integrity while maximizing satirical impact and mobile performance!**
+**This validation system ensures every character maintains world integrity while maximizing satirical impact and performance!**

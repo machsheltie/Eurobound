@@ -172,7 +172,7 @@ Once won, the badge becomes **permanently pinned** to the winning bro's chest on
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: 6×6 pixels per badge

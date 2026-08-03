@@ -129,7 +129,7 @@ Three named beach bars line the embankment behind Fauxst Beach, each committing 
   - Night: string-light pools over `night_party_zone`, EMTV magenta glow from any bar TV playing the looping episode, lifeguard tower spotlight sweeping the water on a slow automatic cycle
 - **Particle Systems**: Catapult launch splash (river impact), space-heater heat shimmer, confetti (post-win), fly-swarm particles (`port_o_cologne` status), string-light glow bloom (night)
 - **Animation Elements**: Catapult launch arc (three independently-triggerable units, staggered fire), Hamstradamus's speedo strut, Jaxson's triple-can sip, Janek's buzzer-wave, inflatable palm idle sway, EMTV crane idle rotation
-- **Mobile Optimization**: Vacationer crowd rendered as simplified sprites at distance, full detail on approach; catapult launch sequence pre-rendered per unit; bar-strip TV loop is a single shared low-res asset reused across all three bars, not rendered per-venue
+- **Performance Optimization**: Vacationer crowd rendered as simplified sprites at distance, full detail on approach; catapult launch sequence pre-rendered per unit; bar-strip TV loop is a single shared low-res asset reused across all three bars, not rendered per-venue
 
 ---
 

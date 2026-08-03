@@ -49,7 +49,7 @@ He is 100% correct, 100% of the time, delivered at maximum operatic volume from 
 - Chronic, career-long tendency to trip over his own crystal ball immediately after landing a doom prediction
 
 ### Sprite Notes
-Read as small and adorable in stillness, then genuinely imposing the instant the prophecy voice kicks in — the visual joke needs that whiplash. Keep the turban/wizard-hat silhouette readable at mobile thumbnail size; the crystal-ball trip needs a clean, exaggerated pratfall arc since it's his signature beat in battle.
+Read as small and adorable in stillness, then genuinely imposing the instant the prophecy voice kicks in — the visual joke needs that whiplash. Keep the turban/wizard-hat silhouette readable at thumbnail size; the crystal-ball trip needs a clean, exaggerated pratfall arc since it's his signature beat in battle.
 
 ---
 

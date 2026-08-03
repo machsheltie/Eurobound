@@ -650,11 +650,11 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 ---
 
-## 📱 Mobile UX Considerations
+## 🖥️ UX Considerations
 
 ### Screenshot Moments
 
-1. **The triple catapult row, loaded.** Wide shot: three port-o-potties strapped to a pneumatic arm on trucked-in sand, inflatable palms on one side, space heaters on the other, a lifeguard tower over 60cm of water, and a crane-mounted EMTV camera arcing overhead. Framed to fit a portrait screen with the banner (**BEATDOWN — LÉTO — SEZÓNA 22**) legible at thumbnail size. This is the establishing shot and it should read as a full joke with zero text.
+1. **The triple catapult row, loaded.** Wide shot: three port-o-potties strapped to a pneumatic arm on trucked-in sand, inflatable palms on one side, space heaters on the other, a lifeguard tower over 60cm of water, and a crane-mounted EMTV camera arcing overhead. Framed for portrait capture with the banner (**BEATDOWN — LÉTO — SEZÓNA 22**) legible at thumbnail size. This is the establishing shot and it should read as a full joke with zero text.
 2. **Hamstradamus pinning the badge.** Tight two-shot: a hamster in a wizard hat and a beach-appropriate speedo, standing on the prize podium at exactly chest height, pinning a plastic sheriff star to a grown man who is crying slightly. The badge is crooked in the same frame it is applied. Capturable at the exact moment of the pin.
 3. **The walk of shame.** Side-scrolling tracking shot: two soaked bros, fly particles, `port_o_cologne` visual haze, walking left to right past a row of bars, with the heckle text bubble and the mistranslation bubble **on screen simultaneously** — the whole joke in one frame, no scrollback required.
 
@@ -1026,7 +1026,7 @@ All three lean back at once, as though impressed.
 | Seedy nightlife underbelly present | ✅ |
 | Y2K/era-appropriate cringe | ✅ |
 | Post-credits scene delivers payoff | ✅ |
-| Mobile-optimized moments | ✅ |
+| UX-optimized moments | ✅ |
 | Every scam beat technically disclosed by quest giver | ✅ |
 | Satire targets tourists/formats, never Czech people | ✅ |
 | NPCs are savvy entrepreneurs, not villains | ✅ |
@@ -1048,11 +1048,11 @@ All three lean back at once, as though impressed.
 - The parabola must be **too long and too graceful.** Real ballistics reads as an accident; this needs to read as engineering. The arc should visibly clear the inflatable palms and the lifeguard tower before the water.
 - **Audio:** the impact needs a specific wet, hollow, resonant note — brief the sound designer that this is the show's theme music and it is reused, unchanged, every season. It should be recognizable on the bar TVs later at low volume through a CRT filter.
 - **Speech-bubble cutoff at Q7 is frame-critical.** The bubble must terminate on a partial syllable and the audio must clip hard, then continue faintly over the water for ~1s at falling volume. Do not fade — the sentence keeps going, it just leaves.
-- The screenshot button must remain live through the entire launch animation (see Mobile UX).
+- The screenshot button must remain live through the entire launch animation (see UX Considerations).
 
 ### Czech-Parody Question Rendering
 - All nine questions display **untranslated, with no subtitle track and no translation toggle** — the decode is the minigame. Do not add an accessibility "reveal answer" option that shows the English; if an accessibility path is required, extend the timer instead.
-- Diacritics must render correctly at mobile text sizes (**ě š č ř ž ý á í é ů**). Verify the UI font has full coverage before content lock; a missing glyph turns a joke into a bug report.
+- Diacritics must render correctly at small UI text sizes (**ě š č ř ž ý á í é ů**). Verify the UI font has full coverage before content lock; a missing glyph turns a joke into a bug report.
 - The **prop, gesture, and crowd-reaction channels each need to independently carry enough signal** to solve the question — a player who mutes the game must still be able to win off props and gestures, and a player who isn't looking must still get the crowd chant.
 - **The bro's wrong shout must always be one of the four selectable options.** This is the load-bearing joke of the whole minigame. Never present it as flavor-only text.
 - All Czech-parody strings in this document are drafted for comic rhythm and cognate legibility. Flag for a **native-speaker pass before voice recording** — the humor targets the bros' failure to engage, never the language or its speakers, and a clumsy string would put the joke on the wrong side.
@@ -1066,8 +1066,8 @@ All three lean back at once, as though impressed.
 
 ### General
 - **Petra must never lie, in any line, in any branch, including barks.** If a writer needs her to withhold something for pacing, the correct solve is that a bro talks over her, not that she omits it.
-- Janek's crew-team wave in `minigame_beatdown_sudden_death` needs the **oar audio cue mixed above crowd noise** — this is the only skill tell in the entire quest and it is audio-only by design. Test on phone speakers, not headphones.
+- Janek's crew-team wave in `minigame_beatdown_sudden_death` needs the **oar audio cue mixed above crowd noise** — this is the only skill tell in the entire quest and it is audio-only by design. Test on laptop speakers, not headphones.
 - **Prize-podium sequence requires Hamstradamus's `badge_pin` and `speedo_strut` animation states** and his beach-appropriate speedo variant. The badge must land visibly crooked in the same animation that applies it.
 - The **WIN prophecy line is canon-locked.** It is delivered as spoken dialogue in *The Prize Podium — WIN Branch* and must ship verbatim: *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."* It is spoken **in English**, at full volume, by a hamster — do not localize it, subtitle it, or route it through the Czech-parody pipeline. The second, quieter *"REPENT."* is a separate delivery and must not be cut for pacing; it is the button on the beat.
 - The airing episode on bar TVs needs a **short looping CRT-filtered edit** (~20s) with the HOSTÉ lower third — reused across every bar on the strip, not per-venue.
-- **Testing priority:** the sudden-death window is the only genuine skill gate in the quest and it is the difference between two entirely different post-credits scenes. Tune the 1.5s window on mid-range mobile hardware with touch latency included, not on desktop.
+- **Testing priority:** the sudden-death window is the only genuine skill gate in the quest and it is the difference between two entirely different post-credits scenes. Tune the 1.5s window on mid-range hardware with real input latency included, on both keyboard and controller.

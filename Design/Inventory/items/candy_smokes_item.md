@@ -177,7 +177,7 @@ Once granted, the carton is a **permanent party item** — key-item slot, no equ
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: 16×24 pixels per carton; 12×4 pixels per chalk ring overlay

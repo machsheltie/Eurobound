@@ -270,37 +270,37 @@
     }
   },
 
-  "mobile_optimization": {
+  "performance_optimization": {
     "texture_atlases": [
       {
         "name": "cirque_grounds_environment_atlas",
         "files": ["main_gate_and_marquee.png", "big_top_exterior.png", "vance_tent_exterior.png", "icq_backroom_interior.png"],
         "max_size": "2048x2048",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       },
       {
         "name": "cirque_grounds_object_atlas",
         "files": ["ticket_booth.png", "corkboard_flyers.png", "fax_machine_and_flyers.png", "prize_pallet_2003_office.png", "knife_target_board.png", "icq_terminal.png"],
         "max_size": "2048x2048",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       },
       {
         "name": "cirque_grounds_circle_atlas",
         "files": ["game_alley_rig.png", "shady_productions_office.png", "performance_circle_ground.png"],
         "max_size": "2048x2048",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       },
       {
         "name": "cirque_grounds_npc_atlas",
         "files": ["vance_vallaro.png", "blanka_knife_assistant.png"],
         "max_size": "1024x1024",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       },
       {
         "name": "cirque_grounds_effects_ui_atlas",
         "files": ["vape_cloud_particles.png", "marquee_flicker.png", "fax_paper_spit.png", "prophecy_tent_glow.png", "knife_dodge_prompt_ui.png"],
         "max_size": "1024x1024",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_desktop"
       }
     ],
     "lod_levels": {
@@ -309,7 +309,7 @@
       "low": "minimal_effects_distant_crowd_simplified_sprites"
     },
     "notes": [
-      "Vape-cloud particle density reducible on mobile (ambient drift can drop to 2-frame loop under LOD pressure).",
+      "Vape-cloud particle density reducible on low-end hardware (ambient drift can drop to 2-frame loop under LOD pressure).",
       "Grounds crowd LOD-steps down aggressively past game_alley mid-ground, consistent with Bohemian_Riviera_PNG_Assets.md's pattern.",
       "Casting-flyer texture built once, instanced at both the corkboard and the fax machine, halving that asset's memory footprint.",
       "This mapping intentionally excludes the prize booth, mystery meat cart, prophecy tent, and Bobo's performance sprites - those remain owned by their own already-published PNG asset docs and must not be re-exported here."

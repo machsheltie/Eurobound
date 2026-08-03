@@ -86,8 +86,8 @@ Classic EarthBound Elements:
     • Emotional Resonance: Every strike carries the weight of lost respect and desperate masculinity 
     • Progressive Naming: Each upgrade tells a story of skill vs. thuggery 
     • Comedy Through Tragedy: The harder he tries to prove his dominance, the more pathetic he appears 
-Mobile-Optimized Feel:
-    • Satisfying sweep animations with proper haptic feedback on multi-enemy hits 
+Desktop-Optimized Feel:
+    • Satisfying sweep animations with controller rumble on multi-enemy hits 
     • Chalk dust particle effects that get more dramatic with successful combos 
     • Screen shake patterns that differentiate thrust vs. sweep vs. overhead attacks 
     • Audio cues mixing billiards sounds with martial arts weapon impacts 

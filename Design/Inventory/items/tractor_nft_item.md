@@ -184,7 +184,7 @@ Once granted, the token is a **permanent party key item**. It occupies a key-ite
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: 12×12 pixels per token; 48×48 pixels for the GIF loop in the inventory preview pane

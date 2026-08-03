@@ -205,7 +205,7 @@ UNLOCKED (Permanent):
 - **Lighting Setup**: Deep burgundy ambient, flickering LED underglow, vape-pen chandelier glow, neon sign pulse
 - **Particle Systems**: Vape clouds, burgundy fog, LED shimmer, bass ripple effects, champagne bubbles (drunk state)
 - **Animation Elements**: Bass-pulsating curtain, neon sign flicker, LED underglow pulse, vape cloud drift, DJ turntable spin
-- **Mobile Optimization**: Simplified fog density, reduced particle effects, static chandelier option, basic neon glow
+- **Performance Optimization**: Simplified fog density, reduced particle effects, static chandelier option, basic neon glow
 
 ---
 

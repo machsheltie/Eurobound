@@ -52,7 +52,7 @@ C# Claw Machine Maintenance Closet Restroom
 - **Lighting Setup**: Single flickering fluorescent, CRT screen glow, blacklight effect for graffiti
 - **Particle Systems**: Electrical sparks from exposed wiring, citrus cleaner vapor, vape mist
 - **Animation Elements**: CRT screen loop, DDR pad reactive presses, flickering lights, sparking wires
-- **Mobile Optimization**: Simplified particle effects for battery conservation, reduced flicker rate on low-end devices
+- **Performance Optimization**: Simplified particle effects on low-end hardware, reduced flicker rate
 
 ## Satirical Design
 ### Theme & Vibe
@@ -178,7 +178,7 @@ C# Claw Machine Maintenance Closet Restroom
 - **Asset Creation**: 4 hours (specialized restroom elements, graffiti system)
 - **Implementation Phase**: 6 hours (blacklight system, interactive elements, audio integration)
 - **Testing Requirements**: DDR pad responsiveness, graffiti visibility, audio timing synchronization
-- **Polish Phase**: 2 hours (comedy timing refinement, mobile optimization)
+- **Polish Phase**: 2 hours (comedy timing refinement, performance optimization)
 
 ### JSON File Updates Required
 - [ ] **Hidden Area Data**: Unlock mechanism, token requirement, size constraints
@@ -205,7 +205,7 @@ C# Claw Machine Maintenance Closet Restroom
 - [x] **Cultural specificity confirmed** (Eastern European arcade decay with Western gaming tourism)
 - [x] **Satirical targets appropriate** (gaming culture pretensions, nostalgic commercialization)
 - [x] **Gameplay value established** (hidden area, achievement system, ICQ integration)
-- [x] **Technical feasibility confirmed** (blacklight system, interactive elements within mobile constraints)
+- [x] **Technical feasibility confirmed** (blacklight system, interactive elements within performance constraints)
 - [x] **Original content preserved** (all graffiti, mechanics, audio cues, quest integration maintained)
 
 ### Post-Implementation Testing
@@ -217,7 +217,7 @@ C# Claw Machine Maintenance Closet Restroom
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (all established graffiti and audio systems functional)
-- [ ] **Mobile UX optimized** (blacklight visibility, touch responsiveness in cramped space)
+- [ ] **UX optimized** (blacklight visibility, interaction responsiveness in cramped space)
 - [ ] **Social media potential maximized** (shareable moments identified, meme potential integrated)
 - [ ] **Achievement integration logical** (fits bathroom collection system, title progression clear)
 - [ ] **Comedy timing perfected** (audio cues, visual gags, satirical elements properly timed)
@@ -236,7 +236,7 @@ C# Claw Machine Maintenance Closet Restroom
 - Achievement progression ("Combo'd by Love", "Joysticks & Shame" title)
 
 ### **🚀 Systematic Enhancements Added:**
-- Mobile optimization framework for small space rendering
+- Performance optimization framework for small space rendering
 - GTA+Eurotrip buffoon delusion scenarios (bros missing obvious adult content signs)
 - Social media viral potential integration (perfect for awkward gaming content)
 - Complete technical implementation roadmap for blacklight and interactive systems

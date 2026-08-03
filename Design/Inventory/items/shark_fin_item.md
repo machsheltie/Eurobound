@@ -180,7 +180,7 @@ Once awarded, the fin is **permanently pinned to the winning bro's lapel** for t
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: 32×48 pixels (`shark_fin.png`, per the Backroom's sprite manifest)

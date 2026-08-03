@@ -129,7 +129,7 @@ NPC Reaction Evolution
     • Legacy: "These guys again?" 
     • Living Legend: Either "BOW BEFORE THE LEGENDS" or "Security! SECURITY!" 
 
-Mobile-Optimized Progression Features
+Desktop-Optimized Progression Features
 Clout Notifications
     • Unlock notifications with satirical descriptions 
     • "Bradley learned 'Legendary Haymaker!' (His fists are now legally registered as dad weapons)" 

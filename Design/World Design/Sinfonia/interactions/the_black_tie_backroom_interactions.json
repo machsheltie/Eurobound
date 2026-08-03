@@ -43,7 +43,7 @@
             "Cheating is punished. Being caught cheating is punished more."
           ]
         },
-        "touch_zone": {"x": 120, "y": 40, "width": 48, "height": 64}
+        "interaction_zone": {"x": 120, "y": 40, "width": 48, "height": 64}
       },
       {
         "object_id": "verification_mirror",
@@ -52,7 +52,7 @@
         "interaction_text": "Check your attire",
         "description": "Full length, spotless, and angled a few degrees further into the room than a mirror needs to be.",
         "interaction_effect": {"action": "attire_self_check", "reveals": "dress_code_pass_or_fail"},
-        "touch_zone": {"x": 30, "y": 50, "width": 32, "height": 80}
+        "interaction_zone": {"x": 30, "y": 50, "width": 32, "height": 80}
       },
       {
         "object_id": "gold_deposit_window",
@@ -67,7 +67,7 @@
           "refund_on_exit": true,
           "handling_fee": true
         },
-        "touch_zone": {"x": 160, "y": 70, "width": 40, "height": 40}
+        "interaction_zone": {"x": 160, "y": 70, "width": 40, "height": 40}
       },
       {
         "object_id": "coat_check_counter",
@@ -78,7 +78,7 @@
           {"name": "Store Items", "cost": 0, "capacity": 5},
           {"name": "Tip Personally", "cost": 20, "effect": {"unlocks": "couchsurf_eligibility"}}
         ],
-        "touch_zone": {"x": 140, "y": 50, "width": 48, "height": 40}
+        "interaction_zone": {"x": 140, "y": 50, "width": 48, "height": 40}
       }
     ],
 
@@ -92,7 +92,7 @@
         "betting_ui": true,
         "opponents": ["house_dealer_rotating", "sinfonia_npc_grafin_stille_01"],
         "sprite": "poker_table.png",
-        "touch_zone": {"x": 100, "y": 100, "width": 96, "height": 64}
+        "interaction_zone": {"x": 100, "y": 100, "width": 96, "height": 64}
       },
       {
         "object_id": "poker_table_2",
@@ -103,7 +103,7 @@
         "betting_ui": true,
         "opponents": ["house_dealer_rotating", "sinfonia_npc_graf_von_zittrig_01"],
         "sprite": "poker_table.png",
-        "touch_zone": {"x": 100, "y": 220, "width": 96, "height": 64}
+        "interaction_zone": {"x": 100, "y": 220, "width": 96, "height": 64}
       },
       {
         "object_id": "roulette_table",
@@ -119,7 +119,7 @@
           {"id": "lucky_number", "payout": "35:1", "true_probability": 0.027}
         ],
         "sprite": "roulette_table.png",
-        "touch_zone": {"x": 260, "y": 120, "width": 96, "height": 96}
+        "interaction_zone": {"x": 260, "y": 120, "width": 96, "height": 96}
       },
       {
         "object_id": "blackjack_table",
@@ -130,7 +130,7 @@
         "betting_ui": true,
         "house_rules": ["dealer_stands_on_17", "one_split_only", "no_surrender_after_dealer_check", "tipping_encouraged"],
         "sprite": "blackjack_table.png",
-        "touch_zone": {"x": 260, "y": 250, "width": 96, "height": 64}
+        "interaction_zone": {"x": 260, "y": 250, "width": 96, "height": 64}
       },
       {
         "object_id": "wall_bar",
@@ -140,7 +140,7 @@
         "operator": "floor_server",
         "note": "Drinks carry no price tag. The cost is in the edge.",
         "sprite": "bar_area.png",
-        "touch_zone": {"x": 20, "y": 300, "width": 96, "height": 48}
+        "interaction_zone": {"x": 20, "y": 300, "width": 96, "height": 48}
       },
       {
         "object_id": "aarons_corner_table",
@@ -168,7 +168,7 @@
           "rotating_lines_owned_by": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md",
           "playable": false
         },
-        "touch_zone": {"x": 390, "y": 300, "width": 80, "height": 64}
+        "interaction_zone": {"x": 390, "y": 300, "width": 80, "height": 64}
       }
     ],
 
@@ -180,7 +180,7 @@
         "interaction_text": "Approach the rope",
         "requirement": {"status": "high_roller"},
         "gatekeeper": "sinfonia_npc_madame_karten_01",
-        "touch_zone": {"x": 20, "y": 150, "width": 48, "height": 32}
+        "interaction_zone": {"x": 20, "y": 150, "width": 48, "height": 32}
       },
       {
         "object_id": "salon_high_table",
@@ -189,7 +189,7 @@
         "playable": true,
         "betting_ui": true,
         "modifiers": {"house_edge": "reduced", "minimums": "raised", "payouts": "raised"},
-        "touch_zone": {"x": 180, "y": 160, "width": 96, "height": 64}
+        "interaction_zone": {"x": 180, "y": 160, "width": 96, "height": 64}
       }
     ],
 
@@ -205,7 +205,7 @@
           "available_when": {"any_of": ["total_losses_1000_euro", "cheating_discovered"]},
           "transitions_to": "hybrid_combat"
         },
-        "touch_zone": {"x": 90, "y": 90, "width": 80, "height": 64}
+        "interaction_zone": {"x": 90, "y": 90, "width": 80, "height": 64}
       }
     ],
 
@@ -217,7 +217,7 @@
         "interaction_text": "Try the vault",
         "key_item": "baroness_vault_keys",
         "contains": "late_game_gear",
-        "touch_zone": {"x": 200, "y": 100, "width": 96, "height": 96}
+        "interaction_zone": {"x": 200, "y": 100, "width": 96, "height": 96}
       }
     ]
   },

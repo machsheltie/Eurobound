@@ -198,11 +198,10 @@ This document provides exact specifications for all PNG files needed for the Cla
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## 📐 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for fluorescent effects, maintains neon intensity
-- **Android:** ETC2 with alpha for blacklight graffiti transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for fluorescent effects, maintains neon intensity with alpha for blacklight graffiti transparency
 - **Fallback:** PNG high quality for text readability in cramped space
 
 ### Sprite Atlasing Strategy:
@@ -211,7 +210,7 @@ This document provides exact specifications for all PNG files needed for the Cla
 - **Graffiti System Atlas:** All blacklight content combined (512x256)
 - **Door & Unlock Atlas:** Complete entry system (256x256)
 - **Effects & Audio Atlas:** Visual cues and timing systems (512x256)
-- **Max Atlas Size:** 1024x1024 for mobile GPU compatibility
+- **Max Atlas Size:** 1024x1024 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full spark effects, blacklight graffiti reveal, DDR reactivity
@@ -231,7 +230,7 @@ This document provides exact specifications for all PNG files needed for the Cla
 ### High Contrast Graffiti Alternatives:
 - **Enhanced Text Visibility** (0, 176, 256x64) - All graffiti with increased contrast
 - **Status Effect Clear Indicators** (256, 176, 128x32) - Embarrassed status visualization
-- **Interactive Element Highlights** (384, 176, 96x32) - Touch targets emphasized
+- **Interactive Element Highlights** (384, 176, 96x32) - Interaction targets emphasized
 
 ### Motion Sensitivity Options:
 - **Static Flicker Alternative** (0, 208, 64x32) - Steady fluorescent lighting
@@ -299,7 +298,7 @@ This document provides exact specifications for all PNG files needed for the Cla
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Animation system: Frame-based with JSON timing
-- Particle systems: Minimal CPUParticles2D for battery conservation
+- Particle systems: Minimal CPUParticles2D for performance
 - Cramped space: Special collision for awkward rotation
 
 ### Audio Sync Points:

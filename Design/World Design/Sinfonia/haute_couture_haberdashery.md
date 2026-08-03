@@ -76,7 +76,7 @@ Every detail reinforces "you need to be better":
 - **Lighting Setup**: Chandelier glamour, spotlight drama, fitting room interrogation
 - **Particle Systems**: Fabric shimmer, dust motes in light beams, champagne bubbles
 - **Animation Elements**: Mannequin poses, mirror reflections, tailor measurements
-- **Mobile Optimization**: Static showroom, focus on item inspection and NPC interaction
+- **Performance Optimization**: Static showroom, focus on item inspection and NPC interaction
 
 ## Satirical Design
 ### Theme & Vibe

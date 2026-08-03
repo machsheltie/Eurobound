@@ -85,8 +85,8 @@ Classic EarthBound Elements:
     • Emotional Resonance: Every hit carries the weight of lost glory and desperate hope 
     • Progressive Naming: Each upgrade tells a story of personal growth/delusion 
     • Comedy Through Tragedy: The sadder the backstory, the funnier the combat 
-Mobile-Optimized Feel:
-    • Satisfying impact animations with proper haptic feedback on critical hits 
+Desktop-Optimized Feel:
+    • Satisfying impact animations with controller rumble on critical hits 
     • Visual particle effects when Greek letters briefly glow during special moves 
     • Screen shake that makes every paddle slam feel weighty and significant 
     • Audio cues that blend fraternity chants with medieval weapon sounds 

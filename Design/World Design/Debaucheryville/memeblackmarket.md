@@ -55,7 +55,7 @@
 - **Lighting Setup**: Flickering CRT glow (multiple screens), RGB LED strips, Windows 98 screen ambient light
 - **Particle Systems**: Vape mist (Baja Blast green), corrupted gif artifacts, pixel distortion effects
 - **Animation Elements**: Endless Windows crash loop, AIM status blinking, ASCII cat eye movement, corrupted gif cycling
-- **Mobile Optimization**: Simplified CRT flicker rate, reduced particle count for vape effects
+- **Performance Optimization**: Simplified CRT flicker rate, reduced particle count for vape effects
 
 ## Satirical Design
 ### Theme & Vibe
@@ -224,7 +224,7 @@
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (All meme systems, vendor dialogue, progression rewards)
-- [ ] **Mobile UX optimized** (Password input, vendor interface, meme summon visibility)
+- [ ] **UX optimized** (Password input, vendor interface, meme summon visibility)
 - [ ] **Social media potential maximized** (MemeLord.exe moments, meme chaos reactions, nostalgic aesthetic)
 - [ ] **Psychological damage integration** (Mentally Unwell status, Meatspin curse, irony poisoning mechanics)
 - [ ] **Comedy timing perfected** (MemeLord.exe delivery, meme summon reveals, Windows crash loops)
@@ -243,7 +243,7 @@
 - Lord Pilsner lore connections via embarrassing internet history
 
 ### Systematic Enhancements Added:
-- Mobile optimization framework for RGB effects and particle systems
+- Performance optimization framework for RGB effects and particle systems
 - Buffoon delusion scenarios (buying psychological damage as valuable commodities)
 - Social media viral potential integration (MemeLord.exe quotes, meme chaos)
 - Complete technical implementation roadmap for password puzzle and vendor system

@@ -253,11 +253,10 @@ This document provides exact specifications for all PNG files needed for the Sha
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## 📐 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for UV purple effects, maintains glow
-- **Android:** ETC2 with alpha for smoke transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for UV purple effects, maintains glow with alpha for smoke transparency
 - **Fallback:** PNG high quality for split-flap readability
 
 ### Sprite Atlasing Strategy:
@@ -267,7 +266,7 @@ This document provides exact specifications for all PNG files needed for the Sha
 - **Main NPCs Atlas:** Mrs. Rata + UV Man + Token Goblin + CryptoBro69's Ex (512x512)
 - **Background NPCs Atlas:** All atmospheric character types (512x256)
 - **Environmental Effects Atlas:** Smoke + UV + particles (512x256)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full CRT effects, all particles, split-flap animation
@@ -468,7 +467,7 @@ This document provides exact specifications for all PNG files needed for the Sha
 - [ ] Environmental effects support underground mood
 - [ ] Premium Stock gate is discoverable post-boss
 - [ ] Couchsurf trigger is clear and compelling
-- [ ] Mobile performance optimized for particles
+- [ ] Performance optimized for particles
 - [ ] All elements support financial satire theme
 - [ ] Social media viral potential maximized
 

@@ -53,7 +53,7 @@
 - **Lighting Setup**: Violent strobing carnival lights, neon rotisserie glow, steam illumination
 - **Particle Systems**: Steam emission, grease spattering, carnival light effects, mysterious vapor
 - **Animation Elements**: Carousel rotisserie spinning, Chef Chuckles knife work, sign glitching
-- **Mobile Optimization**: Strobe effects reducible for photosensitive users, simplified particle density
+- **Performance Optimization**: Strobe effects reducible for photosensitive users, simplified particle density
 
 ## Satirical Design
 ### Theme & Vibe
@@ -205,7 +205,7 @@
 - **Asset Creation**: 7 hours (circus cart, Chef Chuckles character, animated signage)
 - **Implementation Phase**: 10 hours (food system, hallucination sequences, clown gear integration)
 - **Testing Requirements**: Status effect balance, hallucination triggers, accessibility options
-- **Polish Phase**: 4 hours (carnival atmosphere timing, mobile optimization)
+- **Polish Phase**: 4 hours (carnival atmosphere timing, performance optimization)
 
 ### JSON File Updates Required
 - [ ] **Vendor Core Data**: Chef Chuckles character, complete menu system, carnival integration
@@ -244,7 +244,7 @@
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (all food effects, carnival integration, secret systems functional)
-- [ ] **Mobile UX optimized** (menu interface, strobe effects, character interactions smooth)
+- [ ] **UX optimized** (menu interface, strobe effects, character interactions smooth)
 - [ ] **Social media potential maximized** (screenshot opportunities, viral catchphrase content)
 - [ ] **Circus ecosystem integration logical** (performer network, costume economy, quest pipeline)
 - [ ] **Comedy timing perfected** (Chef Chuckles delivery, sign animation, steam audio cues)
@@ -263,7 +263,7 @@
 - Secret quest system (Chef Chuckles' Respect, Carnival Carnage sidequest)
 
 ### **🚀 Systematic Enhancements Added:**
-- Mobile optimization framework for strobe effects and particle systems
+- Performance optimization framework for strobe effects and particle systems
 - GTA+Eurotrip buffoon delusion scenarios (bros missing obvious carnival grift signs)
 - Social media viral potential integration (Chef Chuckles is perfect meme material)
 - Complete technical implementation roadmap for complex food/hallucination system
@@ -404,7 +404,7 @@ Performance Specifications:
 Frame Rate Target: 45 FPS minimum
 Memory Footprint: 35MB maximum
 Draw Calls: Maximum 14
-Mobile Optimization: Strobe disable option, particle density scaling
+Performance Optimization: Strobe disable option, particle density scaling
 
 Animation Timing:
 
@@ -523,7 +523,7 @@ Performance Specifications:
 Frame Rate Target: 40 FPS (small space optimization)
 Memory Footprint: 20MB maximum
 Draw Calls: Maximum 8
-Mobile Optimization: Simplified reflections, reduced particles
+Performance Optimization: Simplified reflections, reduced particles
 
 Animation Timing:
 

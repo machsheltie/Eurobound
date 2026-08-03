@@ -53,7 +53,7 @@
 - **Lighting Setup**: Harsh fluorescent overhead, CRT monitor glow, cigarette ember points
 - **Particle Systems**: Cigarette smoke, coffee steam, electronic static, dust motes
 - **Animation Elements**: CRT flicker, ethernet cable slight sway, smoke drift, occasional blue screen flash
-- **Mobile Optimization**: Reduced smoke particles on lower-end devices, simplified CRT effects
+- **Performance Optimization**: Reduced smoke particles on lower-end hardware, simplified CRT effects
 
 ## Satirical Design
 ### Theme & Vibe
@@ -224,11 +224,11 @@
 - **Interactive Elements**: Multiple terminal interfaces, ICQ chat systems, payment processing
 - **Quest Integration**: Sting operation coordination, metro access unlocking, cross-location data sharing
 
-### Mobile Optimization
+### Performance Optimization
 - **Performance Scaling**: Simplified particle effects for smoke and steam on lower-end devices
-- **Touch Interface**: Large terminal interaction zones, clear quest objective indicators
+- **Input Interface**: Large terminal interaction zones (mouse/controller), clear quest objective indicators
 - **Network Simulation**: Authentic period loading times without actual connectivity delays
-- **Battery Management**: Reduced CRT flicker frequency and particle density options
+- **Effects Options**: Reduced CRT flicker frequency and particle density options
 
 ### Cultural Authenticity Maintenance
 - **Period Accuracy**: Authentic Windows 98 interfaces, period-correct ICQ client recreation

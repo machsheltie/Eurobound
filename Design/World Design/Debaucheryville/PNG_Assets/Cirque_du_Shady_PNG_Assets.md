@@ -198,7 +198,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 
 ### Technical Notes:
 - Performance-circle ground tile is intentionally neutral so Bobo's existing sprite sheet (already speced in his own profile's implementation pass) and the new knife-act sprites can share the same floor space without a seam
-- Barker podium is a single shared asset across all three `game_alley` games, not rendered per-game, matching the mobile-optimization pattern used elsewhere in this world's location docs
+- Barker podium is a single shared asset across all three `game_alley` games, not rendered per-game, matching the performance-optimization pattern used elsewhere in this world's location docs
 
 ---
 
@@ -323,7 +323,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
@@ -335,7 +335,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | Cirque Grounds Effects/UI Atlas | vape_cloud_particles, marquee_flicker, fax_paper_spit, prophecy_tent_glow, knife_dodge_prompt_ui | 1024x1024 |
 
 ### Performance Notes:
-- Vape-cloud particle density is reducible on mobile (ambient drift can drop to 2-frame loop under LOD pressure)
+- Vape-cloud particle density is reducible on low-end hardware (ambient drift can drop to 2-frame loop under LOD pressure)
 - Grounds crowd (shared with sub-locations' own crowd assets) LOD-steps down aggressively past `game_alley` mid-ground, consistent with the pattern already established in `Bohemian_Riviera_PNG_Assets.md`
 - Casting-flyer texture is built once and instanced at both the corkboard and the fax machine, halving that asset's memory footprint
 - This document intentionally excludes the prize booth and mystery meat cart sprites — those remain owned by their own already-published PNG asset docs and must not be re-exported here. It likewise excludes Hamstradamus's prophecy-tent performer sprites (owned by `hamstradamus.md`, not a PNG asset doc) and Bobo's performance sprites (owned by his own profile's implementation pass)
@@ -380,7 +380,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | Satirical Targets | ✅ PASS |
 | Gameplay Value | ✅ PASS |
 | No Crypto Elements Beyond Existing Bobo Pointer | ✅ PASS |
-| Mobile Optimization | ✅ PASS |
+| Performance & Assets | ✅ PASS |
 | No Duplicate Assets vs. Sub-Location PNG Docs | ✅ PASS |
 
 **The Cirque du Shady's grounds-level art spec covers the gate, the big top's exterior, a Ringmaster who exhales mid-sentence, a fax machine that has printed the same flyer for twenty-two seasons, and a knife act older than most of its audience — while leaving every already-published sub-location's own asset spec exactly where it lives.**

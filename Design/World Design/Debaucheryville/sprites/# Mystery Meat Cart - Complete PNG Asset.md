@@ -204,18 +204,17 @@ This document provides exact specifications for all PNG files needed for the Mys
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## 📐 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for carnival textures, maintains color vibrancy
-- **Android:** ETC2 with alpha for particle transparency support
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for carnival textures, maintains color vibrancy with alpha for particle transparency support
 - **Fallback:** PNG at high quality for character detail preservation
 
 ### Sprite Atlasing Strategy:
 - **Character Atlas:** Chef Chuckles + Carousel Rotisserie combined (1024x1024)
 - **Food Items Atlas:** All menu items + particle effects (512x512)
 - **Environment Atlas:** Circus background + hazards combined (1024x768)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full particle systems, strobe effects, detailed animations
@@ -224,7 +223,7 @@ This document provides exact specifications for all PNG files needed for the Mys
 - **Potato Mode:** Essential elements only, no effects
 
 ### Performance Targets:
-- **Target FPS:** 60 fps on iPhone 8 baseline
+- **Target FPS:** 60 fps on min-spec hardware baseline
 - **Max Draw Calls:** 15 per frame
 - **Memory Footprint:** 35MB maximum for location
 
@@ -306,7 +305,7 @@ All strobe effects must be **completely disableable** for photosensitive players
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Animation system: Frame-based with JSON timing data
-- Particle systems: Use Godot's CPUParticles2D for mobile performance
+- Particle systems: Use Godot's CPUParticles2D for performance
 
 ### Audio Sync Points:
 - Butterfly knife flips sync with "whoosh" sound effects
