@@ -87,7 +87,7 @@ Main Areas
 • Clocktower Plaza — Puzzle hub; time-based switches; “meet at midnight” quest threads.
 • Absinthe Arcade — Mini‑games (coin pusher, rigged claw); stamina debuff from “samples.”
 • Hostel “Midnight Checkout” — NPC tangle; bunk‑bed confessions; items found down the wrong hallway.
-• “Velvet Curtain Club” — Suggestive banter, VIP passes, bouncer trials (no explicit content).
+• “Velvet Curtain Club” — Risqué banter, VIP passes, bouncer trials; the club and its underbelly are shown in full (the only line: no nudity).
 • “Shadow Exchange” — Underground money changer; rates shift; barter items for rare gear.
 
 ### 🎪 The Cirque du Shady
@@ -271,10 +271,10 @@ Running Gags — Cross-game callbacks from other Stacey projects.
 Reward System: Optional — reading all boards in a city could grant an achievement or unlock a cosmetic (e.g., “Poster Collector” title).
 Tone: Retro RPG absurdity meets social satire, in the spirit of Earthbound’s quirky humor.
 
-Player Experience Goals (Mobile‑first)
-• Thumb‑friendly: 48pt tap targets; bottom‑corner controls; safe‑area aware.
+Player Experience Goals (Steam/desktop — author ruling 2026-08-03; mobile-first is void)
+• Input: full keyboard/mouse and controller support; menu-driven battles map cleanly to both.
 • Microinteractions: button bounce (120ms), hit sparks (12–20 particles), SMAAAASH banner + brief shake, rolling HP tween (1–2s).
-• Readability: bitmap fonts at 2–3× scale; clear status icons; short quips over walls of text.
+• Readability: bitmap fonts scaled crisply for desktop displays; clear status icons; short quips over walls of text.
 Content Guidelines (author rulings 2026-08-03)
 • MA, adults-only. The only ceiling: no nudity. Beyond that, anything goes.
 • The seedy underbelly is shown in full — sex workers, drugs, drinking, hookups, red-light districts, heavy nightlife — glorified and ridiculed in the same breath, played straight, no suggestion-only treatment, no sanitization.
@@ -313,11 +313,10 @@ Encounters: Visible enemies with preemptive/back attack logic; auto-win vs weak 
 - One-time comedic flavor text when effect is applied.
 - Fully accessible (clear shapes, colors, high-contrast mode).
 
-### Touch-Target Sizing for Mobile Battle Menus
-- Buttons sized for 48px+ touch targets.
-- Primary actions placed in lower thumb zone for one-handed play.
+### Battle Menu UI (Steam/desktop)
+- Menu navigation fully mapped for controller and keyboard/mouse; large, readable targets.
 - Dynamic scaling: fewer options = larger buttons.
-- Gesture shortcuts: swipe up to confirm last action, swipe down to cancel, double-tap for default attack.
+- Shortcuts: confirm-last-action, cancel, and default-attack hotkeys.
 - Adaptive layouts: grid for casual, list for speedrunners.
 - High-contrast and reduced-motion modes auto-adjust visuals for accessibility.
 
@@ -329,12 +328,10 @@ Encounters: Visible enemies with preemptive/back attack logic; auto-win vs weak 
 - PSD-layer exports adaptable for pixel or smooth art.
 - Animation data stored as JSON to remain engine-agnostic.
 
-### Platform Pivot Strategy if iOS Fails Approval
-- Mobile browser version retains full touch UI; marketed as “Play instantly—no install.”
-- HTML5/desktop release via Itch.io or Stripe checkout (~$4.99).
-- Optional “Deluxe Roast Pack” DLC for extra monetization.
-- Cross-save between browser and desktop builds via account system.
-- PR spin: “The uncensored cut Apple didn’t want you to play.”
+### Platform (author ruling 2026-08-03)
+- Steam/desktop is the target. The former iOS-approval pivot strategy is void — no Apple guideline shapes any content decision.
+- itch.io/HTML5 build may remain as a press/playtest channel.
+- Optional “Deluxe Roast Pack” DLC remains a monetization idea (author decision, open).
 
 ### NPC Easter Egg Documentation
 - Google Sheet schema with locked columns:
@@ -359,5 +356,5 @@ Scene Building – TileMap, NPCs, encounters
 - Separate dialogue and UI fonts tuned for each use case.
     "line_id": "npc_bar_roast",
 
-- One-handed vs. two-handed UI mode toggle, especially for battle menus.
+- Controller vs. keyboard/mouse UI prompt toggle, especially for battle menus.
 --- Added Battle Accessibility Features, Animation Speed Toggles, High Contrast/Reduced Motion 
