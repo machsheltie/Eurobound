@@ -29,5 +29,4 @@ Usage Notes:
 3. Keep README updated with any changes to review process or template.
 
 
-[UPDATED with new risk mitigation, audio strategy, QA process, and App Store compliance fixes]
 

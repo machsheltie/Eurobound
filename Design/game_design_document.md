@@ -291,11 +291,10 @@ Items: Buff potions, debuff cures, speed/crit boosters.
 Skills: Roast Line, Look of Disgust, Glow-Up Aura, etc.
 Encounters: Visible enemies with preemptive/back attack logic; auto-win vs weak foes.
 
---- Added Battle UX & Mobile Controls, Status UI, Turn Order, Data-driven Easter Eggs, Risk Mitigation, Audio Strategy ---
+--- Added Battle UX & Controls, Status UI, Turn Order, Data-driven Easter Eggs, Audio Strategy ---
 [CONTENT FROM PLAN ABOVE]
 
 
-[UPDATED with new risk mitigation, audio strategy, QA process, and App Store compliance fixes]
 
 ## Battle System Expansion
 
@@ -320,15 +319,7 @@ Encounters: Visible enemies with preemptive/back attack logic; auto-win vs weak 
 - Adaptive layouts: grid for casual, list for speedrunners.
 - High-contrast and reduced-motion modes auto-adjust visuals for accessibility.
 
-## Technical Risk Mitigation
-
-### Backup Art Style Plan
-- Palette-locked fallback art style ensures consistent visual identity.
-- Sprites maintain identical proportions to avoid hitbox or animation rework.
-- PSD-layer exports adaptable for pixel or smooth art.
-- Animation data stored as JSON to remain engine-agnostic.
-
-### Platform (author ruling 2026-08-03)
+## Platform (author ruling 2026-08-03)
 - Steam/desktop is the target. The former iOS-approval pivot strategy is void — no Apple guideline shapes any content decision.
 - itch.io/HTML5 build may remain as a press/playtest channel.
 - Optional “Deluxe Roast Pack” DLC remains a monetization idea (author decision, open).
@@ -351,7 +342,7 @@ Nine-Slice UI Textures – scalable, pixel-perfect dialogue and menu panels
 JSON – items, enemies, skills, dialogue, strings (balance + localization ready)
 Scene Building – TileMap, NPCs, encounters
 - Character audio branding with signature sting for Lord Pilsner and leitmotifs for major NPCs.
---- Added Risk Mitigation Plan, Easter Egg Authoring/Telemetry, Dialogue Tree Workflow, Localization Prep ---
+--- Added Easter Egg Authoring/Telemetry, Dialogue Tree Workflow, Localization Prep ---
 - One master spritesheet per category (UI, battle FX, overworld NPCs) to reduce draw calls.
 - Separate dialogue and UI fonts tuned for each use case.
     "line_id": "npc_bar_roast",

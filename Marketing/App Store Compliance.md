@@ -12,6 +12,5 @@
 
 - Adobe Photoshop – sole environment for UI, HUD, menu layouts, buttons, icons, and App Store screenshot composition.
 - Affinity Publisher (optional) – for laying out large multi-screenshot App Store sets or press kits with precise typography.
-[UPDATED with new risk mitigation, audio strategy, QA process, and App Store compliance fixes]
 - Include an emergency satire compliance check in the hotfix pipeline to avoid accidental text/content issues.
   - Compliance — satire intent clarity, App Store content safety, accessibility adherence.

@@ -120,20 +120,6 @@ Remove equipment system, items only
 Simplify battle to Attack/Item/Flee only
 
 
-Technical Risk Mitigation
-Godot 4.x Gotchas
-
-Export templates can be finicky - test mobile build early
-Audio auto-play requires user interaction on mobile
-Performance - profile on actual iPhone, not simulator
-
-Content Production Bottlenecks
-
-Art assets take longer than expected - prepare simple fallbacks
-Dialogue writing expands quickly - keep it punchy
-Combat balancing needs playtesting - build in adjustment time
-
-
 The Psychological Warfare Timeline
 While He's in Vienna (Aug 11-17)
 
@@ -175,4 +161,3 @@ Personal Satisfaction
 
 Remember: Every hour you spend coding is an hour he spent drinking overpriced beer and making terrible life choices. Your creative energy will outlast his hangover.
 
-[UPDATED with new risk mitigation, audio strategy, QA process, and App Store compliance fixes]
