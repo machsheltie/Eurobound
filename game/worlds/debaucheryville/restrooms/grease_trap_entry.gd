@@ -20,6 +20,6 @@ func _is_accessible_time() -> bool:
 
 func _on_interact():
     if _is_accessible_time():
-        get_tree().change_scene_to_file("res://Assets/Godot/Scenes/overworld/Debaucheryville/grease_trap_restroom.tscn")
+        get_tree().change_scene_to_file("res://worlds/debaucheryville/restrooms/grease_trap_restroom.tscn")
     else:
         print("It's too early to relive bad decisions. Come back at 3 AM.")

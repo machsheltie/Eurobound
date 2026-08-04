@@ -1,6 +1,6 @@
 extends Area2D
 
-@onready var menu_ui = preload("res://Assets/Godot/Scenes/templates/kebab_menu_popup.tscn")
+@onready var menu_ui = preload("res://worlds/debaucheryville/interactables/kebab_menu_popup.tscn")
 @onready var player = get_node("/root/Player")
 
 func _on_interact():

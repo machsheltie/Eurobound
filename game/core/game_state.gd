@@ -15,7 +15,7 @@ func new_game(repo) -> void:
 	inventory = {}
 	gold = 20
 	flags = {}
-	current_scene_path = "res://Scenes/worlds/Debaucheryville/ClocktowerPlaza.tscn"
+	current_scene_path = "res://worlds/debaucheryville/clocktower_plaza.tscn"
 	player_position = Vector2.ZERO
 	_add_party_member("lord_pilsner", repo)
 
