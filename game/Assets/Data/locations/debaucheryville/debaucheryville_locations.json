@@ -875,11 +875,11 @@
   }
 },
 {
-  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
   "display_name": "Shadow Exchange",
   "satirical_subtitle": "Best Rates If You Don't Ask",
   "world": "debaucheryville",
-  "area_zone": "sub_basement_beneath_oldtown_backstreets",
+  "area_zone": "sub_basement_beneath_gilded_square_backstreets",
   "location_type": "underground_money_changer_black_market_bazaar",
   "theme_description": "old world bank vault meets post soviet flea market everything feels officially unofficial stamped paperwork doesnt match clerks with too many calculators",
   

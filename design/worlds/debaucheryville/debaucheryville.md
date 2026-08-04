@@ -2,8 +2,9 @@ DEBAUCHERYVILLE (Prague Parody)
 Theme: Neon Nights & Shady Delights - "It was cheaper at 3 a.m."
 
 STREETS & DISTRICTS
-1 Astronomical Cock-Up Square
+1 The Gilded Square
 Tourist Trap Central
+  • Centered on Astronomical Cock-Up Square, the ancient-clock landmark with its hourly 38-second disappointment show 
   • Tourist-trap loot vendors scattered across cobblestones 
   • Living statue encounters (they come alive and attack) 
   • Street scammers running sleight-of-hand mini-games 
