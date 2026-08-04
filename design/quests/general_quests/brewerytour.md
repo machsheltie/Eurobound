@@ -115,7 +115,7 @@ When building or completing a brewery, it is DONE when all of these exist:
 ## Item Decomposition (target architecture, author-approved)
 
 - `bottle_opener_keychain` — ONE item file (trigger/container; original doc in
-  `_sorting/from_assets/Bottle Opener Keychain.md` is the seed, pending its geography rewrite)
+  `design/items/bottle_opener_keychain_item.md` is the seed, pending its geography rewrite)
 - One item file per **stamp** (16), per **opener** (16), per **signature beer** (16)
 - The **passport book** — one item file: the physical book, menu-tab UI (ASCII mockups in the
   base passport doc), stamp-slot pages, account-level persistence
