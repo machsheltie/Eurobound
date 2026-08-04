@@ -1,0 +1,305 @@
+{
+  "location_id": "sinfonia_imperial_opera_house_plaza_01",
+  "display_name": "Opera House Plaza",
+  "satirical_subtitle": "The Most Cultured Place to Witness a Horse-Related Disaster",
+  "world": "sinfonia",
+  "area_zone": "imperial_square_district",
+  "location_type": "quest_hub_social_space",
+  
+  "access_requirements": {
+    "time_restrictions": {
+      "always_accessible": true,
+      "time_variants": {
+        "day": {
+          "hours": "10:00-17:00",
+          "features": ["tourist_crowds", "fiaker_carriages", "hans_jurgen_available"],
+          "atmosphere": "bustling_cultural"
+        },
+        "evening": {
+          "hours": "17:00-22:00",
+          "features": ["opera_goers", "formal_dress", "elevated_atmosphere"],
+          "atmosphere": "refined_formal"
+        },
+        "night": {
+          "hours": "22:00-02:00",
+          "features": ["post_opera_crowds", "drunk_patrons", "suspicious_dealings"],
+          "atmosphere": "decadent_shadowy"
+        }
+      }
+    },
+    "stat_requirements": {
+      "entry": null,
+      "interactions": {"charm": 2}
+    },
+    "item_requirements": null,
+    "previous_locations": ["sinfonia_arrival"],
+    "special_conditions": {
+      "hans_jurgen_encounter": "first_visit_during_day"
+    }
+  },
+  
+  "visual_design": {
+    "color_palette": {
+      "imperial_gold": "#DAA520",
+      "baroque_cream": "#F5F5DC",
+      "opera_house_white": "#FFFAFA",
+      "cobblestone_grey": "#808080",
+      "fiaker_black": "#1C1C1C",
+      "horse_chestnut": "#964B00",
+      "hans_jurgen_shame_red": "#8B0000"
+    },
+    "lighting_setup": {
+      "day": {
+        "ambient": "#FFFACD",
+        "intensity": 0.9,
+        "shadows": "harsh_baroque"
+      },
+      "evening": {
+        "ambient": "#FFD700",
+        "intensity": 0.7,
+        "shadows": "golden_hour"
+      },
+      "night": {
+        "ambient": "#4169E1",
+        "intensity": 0.4,
+        "point_lights": ["gas_lamps", "cafe_candles", "opera_spotlights"]
+      }
+    },
+    "particle_systems": {
+      "pigeons": {
+        "count_max": 40,
+        "behavior": "flocking",
+        "spawn_area": "fountain_and_benches"
+      },
+      "fountain_spray": {
+        "continuous": true,
+        "height_pixels": 48,
+        "spread_pixels": 32
+      },
+      "autumn_leaves": {
+        "count_max": 20,
+        "seasonal": true,
+        "drift_pattern": "gentle_swirl"
+      },
+      "horse_breath": {
+        "condition": "cold_weather",
+        "attached_to": "fiaker_horses"
+      }
+    },
+    "mobile_optimization": {
+      "lod_level": 2,
+      "texture_compression": true,
+      "draw_call_budget": 35,
+      "memory_budget_mb": 32
+    }
+  },
+  
+  "layout": {
+    "shape": "circular_plaza",
+    "diameter_tiles": 40,
+    "zones": {
+      "center": {
+        "feature": "neptune_fountain",
+        "radius_tiles": 6
+      },
+      "east": {
+        "feature": "fiaker_queue",
+        "width_tiles": 8,
+        "height_tiles": 20
+      },
+      "west": {
+        "feature": "cafe_terraces",
+        "width_tiles": 10,
+        "height_tiles": 15
+      },
+      "north": {
+        "feature": "opera_house_entrance",
+        "width_tiles": 20,
+        "height_tiles": 8
+      },
+      "south": {
+        "feature": "street_performer_circle",
+        "radius_tiles": 5
+      }
+    }
+  },
+  
+  "landmarks": [
+    {
+      "landmark_id": "bassline_opera_house_facade",
+      "type": "major_building",
+      "position": "north",
+      "description": "Massive neoclassical facade with columns and gilded statues of composers"
+    },
+    {
+      "landmark_id": "neptune_fountain",
+      "type": "central_feature",
+      "position": "center",
+      "description": "Ornate baroque fountain, slightly green with age",
+      "interactable": true
+    },
+    {
+      "landmark_id": "fiaker_queue_stand",
+      "type": "service_point",
+      "position": "east",
+      "description": "Numbered posts for carriage queue, Hans-Jurgen's spot is #3"
+    },
+    {
+      "landmark_id": "cafe_terraces",
+      "type": "commercial",
+      "position": "west",
+      "description": "Outdoor seating with white tablecloths and pretentious patrons"
+    }
+  ],
+  
+  "quest_integration": {
+    "primary_quest": "sinfonia_sidequest_fiaker_fiasco_01",
+    "quest_trigger": {
+      "npc": "sinfonia_npc_hans_jurgen_01",
+      "condition": "approach_during_day_hours",
+      "cutscene": "hans_jurgen_panic_intro"
+    },
+    "quest_phases_in_location": [
+      "initiation",
+      "gustav_first_sighting",
+      "chase_begins",
+      "resolution_return"
+    ]
+  },
+  
+  "economic_data": {
+    "vendor_type": "tourist_premium",
+    "pricing_modifier": 1.5,
+    "available_purchases": [
+      {
+        "item": "fiaker_ride_20min",
+        "base_price_sov": 80,
+        "max_price_sov": 120,
+        "price_modifier": "perception_of_tourist_gullibility"
+      },
+      {
+        "item": "terrace_espresso",
+        "base_price_sov": 8,
+        "supplement": {
+          "name": "historic_view",
+          "cost_sov": 7
+        }
+      },
+      {
+        "item": "selfie_with_fiaker_horse",
+        "price_sov": 5,
+        "type": "tip"
+      },
+      {
+        "item": "opera_scalper_tickets",
+        "price_range_sov": [200, 500],
+        "face_value_range_sov": [40, 80]
+      },
+      {
+        "item": "street_performer_tip",
+        "price_range_sov": [1, 5],
+        "affects": "subsequent_interaction_quality"
+      }
+    ]
+  },
+  
+  "status_effects": {
+    "environmental": {
+      "culturally_intimidated": {
+        "trigger": "first_visit",
+        "duration": "temporary",
+        "effect": {"charm": -2, "context": "locals_only"}
+      },
+      "cultured_by_proximity": {
+        "trigger": "take_selfie_opera_backdrop",
+        "duration_minutes": 60,
+        "effect": {"charm": 1}
+      },
+      "opera_exposure": {
+        "trigger": "listen_to_rehearsal_5_minutes",
+        "duration": "temporary",
+        "effect": {"performance": 2}
+      }
+    },
+    "recovery": {
+      "espresso": {
+        "removes": "tired",
+        "cost_sov": 8
+      },
+      "street_performer": {
+        "removes": "stressed",
+        "cost_sov": 0,
+        "requirement": "listen_1_minute"
+      }
+    }
+  },
+  
+  "cross_location_references": {
+    "directly_adjacent": ["sinfonia_bassline_opera_house_01"],
+    "fiaker_fiasco_chase_route": [
+      "sinfonia_cafe_sachertorte_01",
+      "sinfonia_opera_backstage_01",
+      "sinfonia_stadtpark_01"
+    ],
+    "gossip_connections": ["sinfonia_black_tie_backroom_01"],
+    "nearby_districts": ["kaffeehaus_row", "musikgasse"]
+  },
+  
+  "post_quest_changes": {
+    "npc_dialogue_updates": {
+      "fiaker_drivers": "reference_hans_jurgen_incident",
+      "opera_usher": "recognizes_horse_people_bans_entry",
+      "cafe_maitre_d": "demands_payment_or_hostile",
+      "pigeon_lady": "tells_story_of_american_horse_chasers"
+    },
+    "environmental_changes": {
+      "newspaper_headline_update": true,
+      "gustav_occasional_background_appearance": true
+    }
+  },
+  
+  "audio": {
+    "ambient_layers": [
+      {
+        "source": "distant_orchestra_rehearsal",
+        "origin": "opera_house",
+        "volume": 0.3
+      },
+      {
+        "source": "fountain_water",
+        "origin": "center",
+        "volume": 0.5,
+        "constant": true
+      },
+      {
+        "source": "pigeon_sounds",
+        "volume": 0.2,
+        "intermittent": true
+      },
+      {
+        "source": "carriage_horse_sounds",
+        "origin": "fiaker_queue",
+        "volume": 0.4
+      },
+      {
+        "source": "cafe_murmur",
+        "origin": "west",
+        "volume": 0.3
+      }
+    ],
+    "comedy_stingers": {
+      "hans_jurgen_panic": "accelerating_violin_tremolo",
+      "gustav_stare": "single_low_cello_note",
+      "property_damage": "crash_plus_register_ching",
+      "bros_wisdom": "mocking_harp_flourish"
+    }
+  },
+  
+  "performance_specs": {
+    "target_fps": 60,
+    "max_draw_calls": 40,
+    "max_memory_mb": 40,
+    "max_particles": 60,
+    "min_touch_zone_px": 48
+  }
+}

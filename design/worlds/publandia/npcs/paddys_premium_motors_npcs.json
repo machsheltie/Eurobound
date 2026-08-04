@@ -1,0 +1,259 @@
+{
+  "location_id": "publandia_outskirts_paddys_premium_motors_01",
+  
+  "npcs": [
+    {
+      "npc_id": "fergus_omalley_01",
+      "display_name": "Fergus",
+      "full_name": "Fergus O'Malley",
+      "npc_type": "vendor",
+      "role": "car_rental_agent_and_witness",
+      "title": "The One Who Warns",
+      "location_zone": "behind_counter",
+      "behavior": "stationary_resigned",
+      
+      "appearance": {
+        "age": 62,
+        "build": "weathered_wiry",
+        "clothing": {
+          "main": "cream_aran_sweater_worn",
+          "pants": "brown_corduroys_faded",
+          "shoes": "work_boots_scuffed"
+        },
+        "accessories": [
+          "wedding_ring_gold_worn_thin",
+          "cigarette_behind_ear_occasionally_lit",
+          "reading_glasses_on_chain_never_used"
+        ],
+        "notable_features": [
+          "thousand_yard_stare",
+          "deep_set_eyes",
+          "weathered_face_from_forty_years",
+          "calloused_hands",
+          "permanent_slight_frown"
+        ]
+      },
+      
+      "personality": {
+        "core_traits": [
+          "resigned_fatalism",
+          "dark_humor",
+          "caring_despite_defeat",
+          "patient_with_inevitable",
+          "surprisingly_knowledgeable"
+        ],
+        "mood_default": "resigned_acceptance",
+        "speech_pattern": "deliberate_with_pregnant_pauses",
+        "energy": "low_but_steady"
+      },
+      
+      "backstory": {
+        "the_truth": "Fergus has run this rental shop for 40 years. His wife Mary went for 'a quick drive to see the cliffs' in 1992. The car came back. She didn't. He still wears the ring.",
+        "the_cloverleaf": "He's seen hundreds of tourists enter The Cloverleaf. About sixty percent never escape in the first day. Some never escape at all. The 1987 wedding van is still circling.",
+        "his_role": "He warns everyone. No one listens. He keeps warning anyway. Someone has to bear witness.",
+        "the_counter": "Days Since Last Incident has been stuck on 0 for forty years. It's not broken. There's just always an incident."
+      },
+      
+      "dialogue": {
+        "greeting_first": "Ah, Americans. Wanting to see the countryside, are ye?",
+        
+        "greeting_return": "Back already? Most don't come back at all.",
+        
+        "greeting_post_quest": "Ye made it out. Ye've earned my respect. Doesn't mean much. But ye've earned it.",
+        
+        "about_driving": {
+          "question": "Have ye driven on the left before?",
+          "response_to_confidence": "*thousand-yard stare* That's what they all say."
+        },
+        
+        "about_mapquest": {
+          "bros_mention": "I printed directions from Mapquest.",
+          "fergus_response": "...Mapquest."
+        },
+        
+        "about_gps": {
+          "bros_mention": "And we have GPS on our phones.",
+          "fergus_response": "God help ye."
+        },
+        
+        "the_warning": {
+          "key_line": "*sliding keys across counter* God help ye. Especially at the Cloverleaf.",
+          "follow_up": "Ye'll see. Everyone sees. Eventually."
+        },
+        
+        "about_cloverleaf": {
+          "if_asked": "The Cloverleaf? It's... it's where the roads meet. And don't meet. And meet again. Forever.",
+          "elaboration": "Some say it's a roundabout. I say it's a test of the soul. Ye'll understand. Everyone understands. Eventually.",
+          "final_warning": "Just... slow down when ye get there. That's all it takes. But no one ever slows down. They never do."
+        },
+        
+        "about_wife": {
+          "if_examined_photo": "*touching wedding ring* That's Mary.",
+          "if_asked_more": "She went for a quick drive in '92. 'Just to see the cliffs,' she said.",
+          "the_truth": "The car came back. She didn't.",
+          "the_hope": "They say she's still circling. I like to think she's happy.",
+          "note": "This dialogue path is optional and should be discovered naturally"
+        },
+        
+        "about_board_of_shame": {
+          "if_examined": "Forty years of them. Some found their way out. Some... joined the circulation.",
+          "about_1987_van": "That one's been going since '87. They raised a family in there. Children are grown now. Had their own children.",
+          "about_reserved_spot": "That one's for the next. There's always a next."
+        },
+        
+        "about_counter": {
+          "if_examined": "Aye, it's stuck on zero. Has been for forty years.",
+          "the_joke": "It's not broken. There's just always an incident. Every. Single. Day."
+        },
+        
+        "rental_process": {
+          "vehicle_selection": "Take yer pick. They're all the same in the end.",
+          "about_gps_addon": "The GPS? It'll work fine. Until the Cloverleaf. Then it says 'recalculating.' Forever.",
+          "about_insurance": "The premium insurance covers everything. *pause* Except circular traffic incidents. Read the fine print.",
+          "about_rosary": "Take it. Ye'll need something to hold onto.",
+          "about_map": "The map's accurate. Except for the Cloverleaf. I've marked it myself."
+        },
+        
+        "farewell_first_time": {
+          "handing_keys": "*sliding keys across counter* Good luck out there.",
+          "final_words": "Remember. Just slow down. That's all it takes."
+        },
+        
+        "if_they_return_quickly": {
+          "observation": "Back already? Found the Cloverleaf, did ye?",
+          "resigned": "They all find it. Whether they want to or not."
+        },
+        
+        "post_quest_dialogue": {
+          "acknowledgment": "Ye actually got out. Most don't, ye know. At least not with their sanity.",
+          "respect": "Ye've earned my respect. Doesn't mean much. But ye've earned it.",
+          "discount_offer": "Tell ye what. Ten percent off next time. Not that ye'll be wanting to drive again.",
+          "about_ptsd": "The flashbacks fade. Eventually. The GPS voice never really leaves ye, though. 'Recalculating.'"
+        }
+      },
+      
+      "services": [
+        {
+          "service_id": "rent_shamrock",
+          "display_name": "The Shamrock (Economy)",
+          "price": 45,
+          "description": "Economy compact",
+          "hidden_issue": "Wipers stuck on",
+          "fergus_comment": "She's reliable. The wipers are a bit... persistent."
+        },
+        {
+          "service_id": "rent_lucky_charm",
+          "display_name": "The Lucky Charm (Standard)",
+          "price": 60,
+          "description": "Standard sedan",
+          "hidden_issue": "GPS glitches near roundabouts",
+          "fergus_comment": "Good choice. The GPS is... creative near intersections."
+        },
+        {
+          "service_id": "rent_emerald_dream",
+          "display_name": "The Emerald Dream (Premium)",
+          "price": 80,
+          "description": "Premium SUV",
+          "hidden_issue": "Too wide for country lanes",
+          "fergus_comment": "Roomy. Maybe too roomy for some of the lanes out there."
+        },
+        {
+          "service_id": "rent_full_irish",
+          "display_name": "The Full Irish (Luxury)",
+          "price": 120,
+          "description": "Luxury convertible",
+          "hidden_issue": "Attracts sheep attention",
+          "fergus_comment": "A beauty. The sheep love her. Be warned."
+        },
+        {
+          "service_id": "addon_gps",
+          "display_name": "GPS Navigation",
+          "price": 20,
+          "description": "Digital navigation assistance",
+          "hidden_issue": "Says 'recalculating' endlessly in Cloverleaf",
+          "fergus_comment": "It'll work. Until it doesn't."
+        },
+        {
+          "service_id": "addon_insurance",
+          "display_name": "Premium Insurance",
+          "price": 35,
+          "description": "Complete coverage",
+          "hidden_issue": "Excludes 'circular traffic incidents'",
+          "fergus_comment": "Covers everything. *pause* Almost everything."
+        },
+        {
+          "service_id": "addon_map",
+          "display_name": "Map Book",
+          "price": 10,
+          "description": "Traditional navigation",
+          "hidden_issue": "Cloverleaf labeled only with '?'",
+          "fergus_comment": "I've marked it up myself. For what good it'll do."
+        },
+        {
+          "service_id": "addon_rosary",
+          "display_name": "Dashboard Rosary",
+          "price": 5,
+          "description": "For the dashboard",
+          "hidden_issue": "None - genuinely helpful",
+          "fergus_comment": "Take it. Ye'll need something to hold onto."
+        }
+      ],
+      
+      "post_quest_services": {
+        "discount": {
+          "name": "Fergus's Respect",
+          "modifier": 0.9,
+          "description": "10% off all rentals",
+          "fergus_comment": "For survivors only."
+        }
+      },
+      
+      "schedule": {
+        "present_hours": "08:00-20:00",
+        "absent_reason": "He goes home. Stares at Mary's photo. Returns.",
+        "note": "Fergus is always behind the counter during business hours"
+      },
+      
+      "quest_connections": [
+        {
+          "quest_id": "publandia_sidequest_eternal_roundabout_01",
+          "role": "quest_giver_and_witness"
+        }
+      ],
+      
+      "recurring_appearances": {
+        "post_credits": {
+          "scene": "cloverleaf_documentary",
+          "interview": "I've been renting cars to tourists for forty years. The Cloverleaf has claimed about four hundred of them. Permanently. They live there now. It's not my fault. I tell them. I always tell them."
+        },
+        "if_bros_take_path_b": {
+          "note": "Fergus appears in documentary as expert witness"
+        }
+      },
+      
+      "voice_direction": "Irish accent, weary, deliberate pauses before warnings as if he knows they're futile but says them anyway. Occasional flash of dark humor. Softens slightly when discussing Mary.",
+      "sprite_sheet": "fergus.png"
+    }
+  ],
+  
+  "ambient_npcs": [
+    {
+      "npc_id": "wandering_sheep_01",
+      "display_name": "Sheep",
+      "npc_type": "ambient",
+      "behavior": "wanders_through_parking_lot",
+      "count_range": "1-2",
+      "interaction": "stares_judgmentally",
+      "dialogue": {
+        "if_approached": "*baaaaah*",
+        "subtext": "(The sheep knows what's coming)"
+      }
+    }
+  ],
+  
+  "npc_callbacks_elsewhere": {
+    "tour_bus_resident": "Fergus? Aye, he warned us too. Nice man. Dead behind the eyes, but nice.",
+    "the_local_who_knows": "Fergus is the only one who truly understands. He stays outside the circle. Wise.",
+    "1987_husband": "Fergus rented us this van. '87 it was. Said to slow down. We didn't listen. No one listens."
+  }
+}

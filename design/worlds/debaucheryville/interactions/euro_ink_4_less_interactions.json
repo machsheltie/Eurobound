@@ -1,0 +1,303 @@
+{
+  "location_id": "debaucheryville_gilded_square_euro_ink_4_less_01",
+  
+  "events": [
+    {
+      "event_id": "tattoo_consultation",
+      "display_name": "The Consultation",
+      "event_type": "dialogue_sequence",
+      "trigger": {
+        "type": "location_entry",
+        "condition": "first_visit"
+      },
+      "duration_seconds": 60,
+      "sequence": [
+        {
+          "phase": "greeting",
+          "speaker": "jakub",
+          "dialogue": "Welcome! Sit, sit! What we create today? I do anything!",
+          "animation": "jakub_greeting_gesture"
+        },
+        {
+          "phase": "request",
+          "speaker": "lord_pilsner",
+          "dialogue": "The skeleton. From the clock. The Death guy.",
+          "animation": "lp_pointing_at_back"
+        },
+        {
+          "phase": "recognition",
+          "speaker": "jakub",
+          "dialogue": "Ah! Orloj skeleton! Is my specialty. Very meaningful. Where you want?",
+          "animation": "jakub_nodding_proudly"
+        },
+        {
+          "phase": "location_choice",
+          "speaker": "lord_pilsner",
+          "dialogue": "*points to lower back* Right here. It's classy.",
+          "animation": "lp_pointing_lower_back"
+        },
+        {
+          "phase": "validation",
+          "speaker": "jakub",
+          "dialogue": "Tramp stamp! Very popular with ladies. I know EXACTLY what you want.",
+          "animation": "jakub_confident_nod"
+        },
+        {
+          "phase": "bros_react",
+          "speakers": ["chadwick", "bradley"],
+          "dialogue": [
+            "This guy GETS it.",
+            "The lower back is actually the most historically significant tattoo location."
+          ]
+        }
+      ]
+    },
+    
+    {
+      "event_id": "design_review",
+      "display_name": "The Design Review",
+      "event_type": "dialogue_sequence",
+      "trigger": {
+        "type": "event_completion",
+        "event": "tattoo_consultation"
+      },
+      "duration_seconds": 45,
+      "sequence": [
+        {
+          "phase": "sketch_reveal",
+          "description": "Jakub shows sketch - it's clearly a duck",
+          "speaker": "jakub",
+          "dialogue": "See? Is skeleton. Very death. Much bone.",
+          "animation": "jakub_showing_sketch",
+          "visual": "sketch_is_obviously_duck"
+        },
+        {
+          "phase": "approval",
+          "speaker": "lord_pilsner",
+          "dialogue": "That's... that's EXACTLY what I pictured.",
+          "animation": "lp_design_review_happy"
+        },
+        {
+          "phase": "bradley_question",
+          "speaker": "bradley",
+          "dialogue": "Is that a beak?",
+          "animation": "bradley_squinting"
+        },
+        {
+          "phase": "jakub_defense",
+          "speaker": "jakub",
+          "dialogue": "Is skull. Skull of death bird. Very European.",
+          "animation": "jakub_confident"
+        },
+        {
+          "phase": "chadwick_content",
+          "speaker": "chadwick",
+          "dialogue": "*filming* Chat, we're getting ink done in EUROPE.",
+          "animation": "chadwick_filming"
+        }
+      ]
+    },
+    
+    {
+      "event_id": "tattoo_minigame",
+      "display_name": "The Tattooing",
+      "event_type": "mini_game",
+      "trigger": {
+        "type": "event_completion",
+        "event": "design_review"
+      },
+      "mini_game_type": "hold_still",
+      "duration_seconds": 120,
+      "mechanics": {
+        "objective": "Prevent flinching by tapping at the right moments",
+        "flinch_meter": {
+          "max_value": 100,
+          "drain_rate": 5,
+          "spike_on_pain": 25,
+          "tap_to_reduce": 15
+        },
+        "pain_intervals": "random_8_to_15_seconds",
+        "flinch_consequences": {
+          "minor_flinch": "wobbly_lines_on_duck",
+          "major_flinch": "extra_wobbly_duck",
+          "perfect_run": "slightly_cleaner_duck_still_duck"
+        }
+      },
+      "commentary_during": [
+        {
+          "trigger": "pain_spike",
+          "speaker": "jakub",
+          "dialogue": "Hold still! Is delicate work!"
+        },
+        {
+          "trigger": "good_hold",
+          "speaker": "jakub", 
+          "dialogue": "Yes! Good! You are natural!"
+        },
+        {
+          "trigger": "flinch",
+          "speaker": "jakub",
+          "dialogue": "Is okay, is okay. Adds character."
+        },
+        {
+          "trigger": "periodic",
+          "speaker": "jakub",
+          "dialogue": "Is looking beautiful. Very death.",
+          "interval_seconds": 30
+        },
+        {
+          "trigger": "periodic",
+          "speaker": "chadwick",
+          "dialogue": "You're doing great, bro. This is gonna be sick.",
+          "interval_seconds": 45
+        }
+      ],
+      "ambient": {
+        "audio": "tattoo_gun_buzzing_loop",
+        "jakub_humming": "eastern_european_pop"
+      }
+    },
+    
+    {
+      "event_id": "tattoo_reveal",
+      "display_name": "The Reveal",
+      "event_type": "dialogue_sequence",
+      "trigger": {
+        "type": "event_completion",
+        "event": "tattoo_minigame"
+      },
+      "duration_seconds": 60,
+      "sequence": [
+        {
+          "phase": "completion_announcement",
+          "speaker": "jakub",
+          "dialogue": "Is done! Is beautiful! Look!",
+          "animation": "jakub_proud_reveal"
+        },
+        {
+          "phase": "mirror_handoff",
+          "description": "Jakub hands Lord Pilsner a hand mirror",
+          "speaker": "jakub",
+          "dialogue": "See? Is masterpiece!",
+          "animation": "handing_mirror"
+        },
+        {
+          "phase": "lord_pilsner_looks",
+          "description": "LP sees tattoo backwards in mirror",
+          "speaker": "lord_pilsner",
+          "dialogue": "It's... it's PERFECT. I can feel the history already.",
+          "animation": "lp_revelation_joy",
+          "visual": "mirror_view_backwards_duck"
+        },
+        {
+          "phase": "chadwick_observation",
+          "speaker": "chadwick",
+          "dialogue": "Bro... that looks like a duck.",
+          "animation": "chadwick_squinting"
+        },
+        {
+          "phase": "lord_pilsner_denial",
+          "speaker": "lord_pilsner",
+          "dialogue": "It's ARTISTIC INTERPRETATION. Europeans do things different. That's what makes it AUTHENTIC.",
+          "animation": "lp_defensive"
+        },
+        {
+          "phase": "jakub_agreement",
+          "speaker": "jakub",
+          "dialogue": "Yes! Authentic! Duck of death! Very meaningful!",
+          "animation": "jakub_nodding_proudly"
+        },
+        {
+          "phase": "mutual_satisfaction",
+          "description": "Both Jakub and LP are completely satisfied",
+          "visual": "feedback_loop_of_delusion"
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "set_state",
+          "state": "tattoo_acquired",
+          "value": true
+        },
+        {
+          "effect": "permanent_cosmetic",
+          "item": "duck_tattoo",
+          "target": "lord_pilsner",
+          "location": "lower_back"
+        },
+        {
+          "effect": "unlock_shop_item",
+          "item": "lord_pilsner_special"
+        },
+        {
+          "effect": "unlock_dialogue",
+          "npc": "jakub",
+          "dialogue_set": "matching_duck_offers"
+        }
+      ]
+    }
+  ],
+  
+  "interactive_objects": [
+    {
+      "object_id": "flash_art_wall",
+      "type": "examinable",
+      "interaction_text": "Examine the flash art",
+      "description": "Walls covered in tattoo designs. Skulls, tribal patterns, Looney Tunes characters, and... a suspicious number of birds.",
+      "easter_egg": {
+        "examine_count": 3,
+        "reveal": "You notice that Jakub's 'skull' designs all have beaks."
+      }
+    },
+    {
+      "object_id": "license_frame",
+      "type": "examinable", 
+      "interaction_text": "Check the license",
+      "description": "A framed document on the wall. On closer inspection, it's clearly printed from a home computer. The 'official seal' is clip art. Expired 2019.",
+      "player_note": "(This explains a lot.)"
+    },
+    {
+      "object_id": "wall_of_fame",
+      "type": "examinable",
+      "interaction_text": "Look at customer photos",
+      "description": "Polaroids of satisfied customers. They all have uncertain expressions. Several are covering their new tattoos with their hands.",
+      "easter_egg": "One photo shows a tattoo that's clearly meant to be an eagle but looks like a pelican."
+    },
+    {
+      "object_id": "guest_book",
+      "type": "examinable",
+      "interaction_text": "Read the guest book",
+      "description": "Suspiciously few entries. The ones that exist say things like 'Very... unique!' and 'I've never seen anything like it!' One just says 'WHY'.",
+      "player_note": "(The reviews are technically not wrong.)"
+    },
+    {
+      "object_id": "lollipop_jar",
+      "type": "interactive",
+      "interaction_text": "Take a lollipop",
+      "description": "A jar labeled 'For Brave Customers!' The lollipops are clearly very old.",
+      "effect": "acquire_stale_lollipop"
+    }
+  ],
+  
+  "return_visit_changes": {
+    "visit_2": {
+      "jakub_greeting": "Ah! My favorite customer! The skeleton man! You want another?",
+      "new_items_available": ["matching_friendship_duck", "clock_rooster"],
+      "offers_chadwick_tattoo": true,
+      "offers_bradley_tattoo": true
+    },
+    "post_other_city_jakub_encounter": {
+      "jakub_greeting": "You follow Jakub! Is fate! We do more art together!",
+      "discount_available": true
+    }
+  },
+  
+  "narrator_commentary": {
+    "on_entering": "Euro Ink 4 Less. Where dreams become permanent, and skeletons become ducks.",
+    "on_sketch_reveal": "Jakub presented his interpretation with the confidence of a man who has never been wrong about anything.",
+    "on_beak_question": "Bradley, against all odds, had noticed something.",
+    "on_reveal": "And there it was. A duck. Holding a scythe. Forever.",
+    "on_denial": "Lord Pilsner's commitment to the bit was, in its own way, inspiring.",
+    "on_exit": "Armed with his new 'authentic European art,' Lord Pilsner was ready to impress exactly zero waitresses."
+  }
+}

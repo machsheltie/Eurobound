@@ -1,0 +1,156 @@
+{
+  "location_id": "debaucheryville_circus_cirque_du_shady_01",
+  "item_category": "scam_merchandise_and_quest_items",
+
+  "items": [
+    {
+      "item_id": "item_half_smoked_cigar",
+      "display_name": "Half-Smoked Cigar",
+      "item_type": "junk",
+      "item_category": "prize_booth_canon_pointer",
+      "rarity": "common",
+      "purchasable": true,
+      "vendor": "debaucheryville_npc_yolanda_kovarik_01",
+      "vendor_location": "prize_booth",
+      "canon_source": "Design/World Design/Debaucheryville/the_participation_trophy.md",
+      "price": 2,
+      "ticket_price": 10,
+      "actual_value": 0.10,
+      "scam_level": "high",
+      "description": {
+        "player_sees": "Previous owner had somewhere to be. Their loss, your... also loss.",
+        "bros_see": "A cigar. A trophy, technically."
+      },
+      "effects": {
+        "special_effect": "Useless (literally no effect)"
+      },
+      "note": "Values copied verbatim from the_participation_trophy.md's Participation Tier catalog; not altered here.",
+      "sprite": "half_smoked_cigar.png"
+    },
+    {
+      "item_id": "item_used_glitter_hat",
+      "display_name": "Used Glitter Hat",
+      "item_type": "equipment",
+      "item_category": "prize_booth_canon_pointer",
+      "rarity": "uncommon",
+      "purchasable": true,
+      "vendor": "debaucheryville_npc_yolanda_kovarik_01",
+      "vendor_location": "prize_booth",
+      "canon_source": "Design/World Design/Debaucheryville/the_participation_trophy.md",
+      "price": 15,
+      "ticket_price": 100,
+      "actual_value": 1.50,
+      "scam_level": "high",
+      "description": {
+        "player_sees": "Previous owner sweated in this. Glitter hides the stains. Mostly.",
+        "bros_see": "This is basically a crown, bro."
+      },
+      "effects": {
+        "stat_modifier": {"style": 5, "dignity": -10}
+      },
+      "equipment_slot": "head",
+      "note": "Values copied verbatim from the_participation_trophy.md's Consolation Tier catalog; not altered here.",
+      "sprite": "used_glitter_hat.png"
+    },
+    {
+      "item_id": "item_mystery_meat_corndog",
+      "display_name": "Mystery Meat Corndog",
+      "item_type": "consumable",
+      "item_category": "prize_booth_canon_pointer",
+      "rarity": "uncommon",
+      "purchasable": true,
+      "vendor": "debaucheryville_npc_yolanda_kovarik_01",
+      "vendor_location": "prize_booth",
+      "canon_source": "Design/World Design/Debaucheryville/the_participation_trophy.md",
+      "price": 8,
+      "ticket_price": 150,
+      "actual_value": 2.00,
+      "scam_level": "medium",
+      "description": {
+        "player_sees": "The mystery isn't what meat. The mystery is IF meat.",
+        "bros_see": "Free protein, basically."
+      },
+      "effects": {
+        "stat_modifier": {"hp": 25},
+        "status_applied": "nausea",
+        "note": "30% Nausea chance"
+      },
+      "consumable_details": {
+        "uses": 1
+      },
+      "note": "Values copied verbatim from the_participation_trophy.md's Consolation Tier catalog; not altered here.",
+      "sprite": "mystery_meat_corndog.png"
+    },
+    {
+      "item_id": "item_shady_loot_crate_voucher",
+      "display_name": "Shady Loot Crate Voucher",
+      "item_type": "quest_item",
+      "item_category": "shop_inventory",
+      "rarity": "uncommon",
+      "purchasable": true,
+      "vendor": "debaucheryville_npc_vance_vallaro_01",
+      "vendor_location": "big_top",
+      "redemption_location": "prize_booth",
+      "redemption_npc": "debaucheryville_npc_yolanda_kovarik_01",
+      "price": null,
+      "price_note": "Variable, per Vance's own pitch - 'a bit of a gamble, honestly.' No fixed price established in canon.",
+      "actual_value": null,
+      "scam_level": "unspecified",
+      "description": {
+        "player_sees": "A voucher sold from Vance's tent at big_top. Walk it over to prize_booth for fulfillment - Yolanda hands over the crate with the same flat professionalism she brings to every other prize.",
+        "bros_see": "This is basically a lottery ticket, but for CONTENT."
+      },
+      "effects": {
+        "special_effect": "Redeemable at prize_booth for a Shady Loot Crate. Crate contents, exact pricing, and Yolanda's redemption dialogue are intentionally not specified in this document - per cirque_du_shady.md's own Development Notes, that mechanic is deferred to a future items/shop pass and to the_participation_trophy.md itself. This entry establishes only the structured voucher-sale-to-redemption pointer (big_top sale -> prize_booth fulfillment), matching canon (game_design_document.md: 'offers shady loot crates from the prize booth')."
+      },
+      "sprite": "vance_vallaro.png",
+      "note_sprite": "loot_crate_pitch_gesture pose within vance_vallaro.png (x:256, y:0, w:64, h:96) - see sprite_mapping.sprite_sheets.npc_sprites.vance_vallaro.poses.loot_crate_pitch_gesture, per Cirque_du_Shady_PNG_Assets.md Sprite Sheet 7. No dedicated per-item icon exists for this voucher; it uses Vance's own sheet, consistent with how item_beatdown_casting_flyer below references fax_machine_and_flyers.png."
+    },
+    {
+      "item_id": "item_beatdown_casting_flyer",
+      "display_name": "Shady Productions Casting-Call Flyer",
+      "item_type": "quest_item",
+      "item_category": "key_items",
+      "rarity": "common",
+      "purchasable": false,
+      "vendor": null,
+      "vendor_location": "shady_productions_office",
+      "price": 0,
+      "actual_value": 0,
+      "scam_level": "none",
+      "description": {
+        "player_sees": "'WANTED: ATHLETIC-INTELLECTUAL HYBRID. CARGO SHORTS PREFERRED. NO EXPERIENCE NECESSARY.' The same flyer, every time, printed by a fax machine that predates the current millennium by a comfortable margin.",
+        "bros_see": "This was written specifically for me."
+      },
+      "effects": {
+        "special_effect": "Examine/pickup trigger for the beatdown_promo and shady_productions_fax interactions; sets beatdown_aware state."
+      },
+      "quest_connection": {
+        "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+        "required_for": "quest_origin_pointer",
+        "note": "Routes the player to Fauxst Beach signup_table on the Bohemian Riviera (debaucheryville_riverfront_bohemian_riviera_01), where Petra actually administers sign-up (role: quest_origin, per bohemian_riviera_location_nodes.json). Holding this flyer does not itself start the quest, grant a reward, or duplicate any Beatdown mechanic - it is a foreshadowing pointer only, consistent with cirque_du_shady.md's framing of shady_productions_office as 'flavor, foreshadowing, and the beatdown_aware state trigger, not a second quest-start point.'"
+      },
+      "accumulation": {
+        "visible_in_hostel": true,
+        "max_displayed": 1
+      },
+      "sprite": "fax_machine_and_flyers.png"
+    }
+  ],
+
+  "shop_economics": {
+    "total_items_available": 5,
+    "purchasable_priced_items": 3,
+    "purchasable_variable_price_items": 1,
+    "free_key_items": 1,
+    "price_range": {"min": 2, "max": 15},
+    "price_range_scope_note": "Computed over the 3 fixed-price prize_booth-canon items only (cigar, hat, corndog). The Shady Loot Crate Voucher's price is intentionally unspecified (variable, deferred) and is excluded from this arithmetic; the casting flyer is free (price 0) and excluded as a non-purchasable key item.",
+    "total_price_purchasable": 25,
+    "actual_value_total_purchasable": 3.60,
+    "markup_percentage": 594,
+    "markup_calculation_note": "(total_price_purchasable - actual_value_total_purchasable) / actual_value_total_purchasable * 100 = (25-3.60)/3.60*100 = ~594%",
+    "currency_accepted": "gold (Sovs) or circus_tickets, per the_participation_trophy.md's dual ticket/gold redemption system"
+  },
+
+  "hidden_items": []
+}

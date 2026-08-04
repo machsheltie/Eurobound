@@ -1,0 +1,312 @@
+{
+  "location_id": "shamsterdam_bike_crossing_thunderdome_01",
+  
+  "minigame_events": {
+    "crossing_tutorial": {
+      "event_id": "first_crossing_tutorial",
+      "trigger": "first_time_approach",
+      "duration_seconds": 20,
+      "sequence": [
+        {"time": 0, "action": "npc_approach", "npc": "bike_rental_guy"},
+        {"time": 1, "action": "dialogue", "speaker": "bike_rental_guy", "text": "You're going to walk? Across THAT? ...Okay. Good luck. You'll need it."},
+        {"time": 3, "action": "camera_pan", "target": "crossing_overview"},
+        {"time": 5, "action": "highlight", "target": "lane_indicators"},
+        {"time": 6, "action": "tutorial_text", "text": "Swipe UP to move forward. Swipe DOWN to move back. TAP to stop."},
+        {"time": 8, "action": "highlight", "target": "tram_tracks"},
+        {"time": 9, "action": "tutorial_text", "text": "Trams cannot stop. Listen for the bell."},
+        {"time": 11, "action": "highlight", "target": "pedestrian_island"},
+        {"time": 12, "action": "tutorial_text", "text": "The island offers brief safety. Don't linger."},
+        {"time": 14, "action": "tutorial_text", "text": "Watch the patterns. Find the gaps. Good luck."},
+        {"time": 16, "action": "enable_controls"},
+        {"time": 18, "action": "spawn_tutorial_traffic", "mode": "slow"}
+      ]
+    },
+    
+    "crossing_attempt": {
+      "event_id": "standard_crossing",
+      "trigger": "enter_crossing_zone",
+      "type": "minigame_active",
+      "phases": [
+        {
+          "phase_id": "south_lanes",
+          "lanes": [1, 2, 3],
+          "difficulty_gradient": ["easy", "medium", "hard"]
+        },
+        {
+          "phase_id": "tram_track_1",
+          "type": "timed_hazard",
+          "lethal": true
+        },
+        {
+          "phase_id": "island_rest",
+          "type": "safe_zone",
+          "max_duration_seconds": 2
+        },
+        {
+          "phase_id": "tram_track_2",
+          "type": "timed_hazard",
+          "lethal": true
+        },
+        {
+          "phase_id": "north_lanes",
+          "lanes": [4, 5, 6],
+          "difficulty_gradient": ["hard", "medium", "easy"]
+        }
+      ],
+      "success_trigger": "reach_north_sidewalk",
+      "fail_conditions": ["hp_zero", "flee_to_start"]
+    }
+  },
+  
+  "cargo_parade_event": {
+    "event_id": "cargo_parade_approach",
+    "trigger": "every_90_seconds",
+    "warning_sequence": [
+      {"time": -5, "action": "audio_warning", "sound": "distant_bells_children"},
+      {"time": -4, "action": "npc_alert", "text": "Cargo parade incoming!"},
+      {"time": -3, "action": "visual_indicator", "type": "road_vibration"},
+      {"time": -2, "action": "camera_shake", "intensity": "light"},
+      {"time": 0, "action": "parade_spawn", "lane": "all"}
+    ],
+    "parade_sequence": [
+      {"time": 0, "action": "mama_bakfiets_enter", "dialogue": "MAKE WAY! CHILDREN AND DOGS!"},
+      {"time": 1, "action": "cargo_bikes_wave", "count": 15},
+      {"time": 5, "action": "parade_midpoint", "visual": "wall_of_aluminum"},
+      {"time": 8, "action": "parade_end_approaching"},
+      {"time": 10, "action": "parade_clear", "visual": "flower_petals_settling"}
+    ],
+    "player_in_path_consequence": {
+      "action": "swept_to_start",
+      "damage": 15,
+      "visual": "covered_in_flower_petals",
+      "dialogue": "children_wave_and_laugh"
+    }
+  },
+  
+  "collision_events": {
+    "slow_bike_collision": {
+      "event_id": "collision_slow",
+      "sequence": [
+        {"time": 0, "action": "impact_visual", "intensity": "light"},
+        {"time": 0.1, "action": "knockback", "lanes": 1},
+        {"time": 0.2, "action": "damage", "amount": 5},
+        {"time": 0.3, "action": "cyclist_dialogue", "text": "Sorry!", "probability": 0.7},
+        {"time": 0.5, "action": "recovery"}
+      ]
+    },
+    "medium_bike_collision": {
+      "event_id": "collision_medium",
+      "sequence": [
+        {"time": 0, "action": "impact_visual", "intensity": "medium"},
+        {"time": 0.1, "action": "knockback", "lanes": 2},
+        {"time": 0.2, "action": "damage", "amount": 10},
+        {"time": 0.3, "action": "cyclist_dialogue", "text": "*Dutch swearing*", "probability": 1.0},
+        {"time": 0.5, "action": "debuff_roll", "chance": 0.1, "debuff": "bicycle_trauma"},
+        {"time": 0.7, "action": "recovery"}
+      ]
+    },
+    "fast_bike_collision": {
+      "event_id": "collision_fast",
+      "sequence": [
+        {"time": 0, "action": "impact_visual", "intensity": "heavy"},
+        {"time": 0.1, "action": "knockback", "position": "start"},
+        {"time": 0.2, "action": "damage", "amount": 20},
+        {"time": 0.3, "action": "cyclist_dialogue", "text": "*Extended Dutch swearing*", "probability": 1.0},
+        {"time": 0.5, "action": "debuff_roll", "chance": 0.3, "debuff": "bicycle_trauma"},
+        {"time": 1.0, "action": "recovery"}
+      ]
+    },
+    "tram_collision": {
+      "event_id": "collision_tram",
+      "sequence": [
+        {"time": 0, "action": "impact_visual", "intensity": "extreme"},
+        {"time": 0, "action": "audio", "sound": "tram_bell_too_late"},
+        {"time": 0.1, "action": "knockback", "position": "start"},
+        {"time": 0.2, "action": "damage", "amount": 50},
+        {"time": 0.5, "action": "debuff_apply", "debuff": "bicycle_trauma"},
+        {"time": 0.6, "action": "achievement_check", "id": "tram_survivor"},
+        {"time": 1.0, "action": "recovery"},
+        {"time": 1.5, "action": "dialogue", "speaker": "player", "text": "I'm alive?!"}
+      ]
+    }
+  },
+  
+  "success_events": {
+    "crossing_complete": {
+      "event_id": "crossing_success",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "triumphant_fanfare"},
+        {"time": 0.2, "action": "visual", "type": "victory_glow"},
+        {"time": 0.5, "action": "buff_apply", "buff": "crossing_confidence"},
+        {"time": 1.0, "action": "stat_update", "stat": "crossings_completed"},
+        {"time": 1.2, "action": "npc_reaction", "npc": "gerrit", "text": "You live. For now."}
+      ]
+    },
+    "perfect_crossing": {
+      "event_id": "perfect_crossing_success",
+      "condition": "no_hits",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "full_orchestral_moment"},
+        {"time": 0.2, "action": "visual", "type": "golden_glow"},
+        {"time": 0.5, "action": "buff_apply", "buff": "dodge_master"},
+        {"time": 0.7, "action": "achievement_check", "id": "dodge_master"},
+        {"time": 1.0, "action": "stat_update", "stat": "perfect_crossings"},
+        {"time": 1.2, "action": "npc_reaction", "npc": "bike_rental_guy", "text": "...That was actually impressive."},
+        {"time": 2.0, "action": "npc_reaction", "npc": "gerrit", "text": "Acceptable. Sit. Tell me what you learned."}
+      ]
+    },
+    "rush_hour_perfect": {
+      "event_id": "rush_hour_achievement",
+      "condition": "rush_hour_no_hit",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "legendary_fanfare"},
+        {"time": 0.5, "action": "buff_apply", "buff": "rush_hour_survivor", "permanent": true},
+        {"time": 1.0, "action": "achievement", "id": "rush_hour_survivor"},
+        {"time": 1.5, "action": "npc_reaction", "npc": "gerrit", "text": "...In rush hour. Impressive. You may sit at my table."}
+      ]
+    }
+  },
+  
+  "npc_events": {
+    "bike_rental_guy_interactions": {
+      "before_first_crossing": {
+        "trigger": "approach_first_time",
+        "dialogue_tree": [
+          {"text": "You're going to walk? Across THAT?", "response_options": ["yes_confident", "maybe_tips", "rent_bike"]},
+          {"option": "yes_confident", "response": "Bold. Foolish. But bold."},
+          {"option": "maybe_tips", "response": "Watch the patterns. Don't sprint. The island is a trap, not safety."},
+          {"option": "rent_bike", "response": "Smart. 15 Sovs. Now YOU'RE the problem."}
+        ]
+      },
+      "after_failure": {
+        "trigger": "return_after_collision",
+        "dialogue": "I did warn you. Everyone warns you. No one listens."
+      },
+      "after_success": {
+        "trigger": "return_after_crossing",
+        "dialogue": "Huh. You lived. Don't let it go to your head."
+      }
+    },
+    
+    "gerrit_commentary": {
+      "watching_attempt": {
+        "trigger": "player_in_crossing_while_gerrit_visible",
+        "commentary_pool": [
+          "Ah, there goes another one...",
+          "The gap! Take the— no. Too late.",
+          "Interesting strategy. Wrong, but interesting.",
+          "The bicycles sense fear, you know."
+        ]
+      },
+      "watching_success": {
+        "trigger": "player_crosses_successfully",
+        "commentary": "Survived. Come. Tell me what you learned."
+      },
+      "watching_perfect": {
+        "trigger": "player_crosses_perfectly",
+        "commentary": "...That was acceptable. You may have coffee at my table."
+      }
+    },
+    
+    "fallen_tourist_progression": {
+      "visit_states": [
+        {"visit": 1, "state": "traumatized_coherent", "dialogue": "The bikes... they don't stop..."},
+        {"visit": 2, "state": "more_disheveled", "dialogue": "Has it been hours? Days? I can't tell."},
+        {"visit": 3, "state": "eating_stroopwafel", "dialogue": "A kind cyclist threw me this. Or AT me."},
+        {"visit": 4, "state": "friends_with_pigeons", "dialogue": "The pigeons understand. The pigeons have seen it too."},
+        {"visit": 5, "state": "considers_island_home", "dialogue": "I've made peace with it. This is my life now."}
+      ]
+    },
+    
+    "officer_vandenberg_violations": {
+      "bike_lane_standing": {
+        "trigger": "stand_in_red_zone_3_seconds",
+        "sequence": [
+          {"action": "officer_approaches"},
+          {"dialogue": "This is a bike lane. You are not a bike. That's 95 Sovs."},
+          {"action": "fine_applied", "amount": 95}
+        ]
+      },
+      "blocking_traffic": {
+        "trigger": "cause_cyclist_to_swerve",
+        "sequence": [
+          {"action": "officer_approaches"},
+          {"dialogue": "You're blocking traffic. Yes, on foot. Still illegal. 140 Sovs."},
+          {"action": "fine_applied", "amount": 140}
+        ]
+      },
+      "photography_violation": {
+        "trigger": "take_selfie_in_crossing",
+        "sequence": [
+          {"action": "officer_approaches"},
+          {"dialogue": "No photographs in crossing. Safety regulation. 50 Sovs."},
+          {"action": "fine_applied", "amount": 50}
+        ]
+      }
+    }
+  },
+  
+  "quest_events": {
+    "cargo_cult_quest": {
+      "quest_id": "cargo_cult",
+      "trigger": "speak_to_mama_bakfiets_post_parade",
+      "phases": [
+        {
+          "phase_id": "quest_accept",
+          "dialogue": "You want to understand the crossing? Ride WITH us. See what we see.",
+          "response_options": ["accept", "decline"]
+        },
+        {
+          "phase_id": "cargo_ride",
+          "type": "unique_minigame",
+          "description": "Ride in cargo parade, see crossing from bike perspective",
+          "controls": "none_passenger_only",
+          "duration_seconds": 15
+        },
+        {
+          "phase_id": "revelation",
+          "dialogue": "Now you understand. The bicycle is not obstacle. The bicycle is life.",
+          "unlock": "bicycle_empathy_buff"
+        },
+        {
+          "phase_id": "reward",
+          "buff": "bicycle_empathy",
+          "effect": "permanent_crossing_difficulty_reduction",
+          "shortcut_unlock": "rooftop_route"
+        }
+      ]
+    },
+    
+    "tourist_rescue_event": {
+      "quest_id": "tourist_rescue",
+      "trigger": "speak_to_fallen_tourist_offer_help",
+      "type": "escort_mini_mission",
+      "objective": "guide_tourist_to_south_sidewalk",
+      "difficulty": "must_cross_with_terrified_npc",
+      "tourist_behavior": ["freezes_at_bikes", "screams_at_trams", "tries_to_run"],
+      "reward": {
+        "gold": 10,
+        "karma": "positive",
+        "tourist_state": "rescued_grateful"
+      }
+    }
+  },
+  
+  "milestone_events": {
+    "tenth_crossing": {
+      "trigger": "crossings_completed_equals_10",
+      "sequence": [
+        {"action": "achievement", "id": "ten_time_champion"},
+        {"action": "unlock", "shortcut": "underground_passage"},
+        {"dialogue": "bike_rental_guy", "text": "Ten times? Fine. I'll show you the underground passage."}
+      ]
+    },
+    "first_perfect": {
+      "trigger": "first_perfect_crossing",
+      "sequence": [
+        {"action": "achievement", "id": "dodge_master"},
+        {"action": "npc_reaction", "npc": "gerrit", "animation": "impressed_nod"}
+      ]
+    }
+  }
+}

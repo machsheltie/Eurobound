@@ -1,0 +1,295 @@
+{
+  "location_id": "shamsterdam_bike_crossing_thunderdome_01",
+  "display_name": "Central Shamsterdam Bike Crossing",
+  "satirical_subtitle": "Frogger, But The Logs Hate You",
+  "world": "shamsterdam",
+  "area_zone": "canal_ring_district",
+  "location_type": "environmental_hazard_minigame",
+  
+  "access_requirements": {
+    "time_restrictions": "24_hours",
+    "stat_requirements": null,
+    "required_for_access": [
+      "shamsterdam_coffeeshop_quarter_01",
+      "shamsterdam_museum_mile_01",
+      "shamsterdam_canal_ring_promenade_01",
+      "shamsterdam_roodelicht_row_01"
+    ],
+    "cannot_be_avoided": true,
+    "central_hub": true
+  },
+  
+  "visual_design": {
+    "layout_type": "multi_lane_intersection",
+    "scale": {
+      "total_lanes": 6,
+      "tram_tracks": 2,
+      "pedestrian_islands": 1
+    },
+    "color_palette": {
+      "bike_lane_red": "#CC0000",
+      "dutch_orange": "#FF6600",
+      "tram_yellow": "#FFD700",
+      "asphalt_grey": "#4A4A4A",
+      "bicycle_black": "#1C1C1C",
+      "judgmental_blue": "#003DA5"
+    },
+    "lighting": {
+      "daytime": {"ambient": "#87CEEB", "intensity": 0.9},
+      "evening": {"ambient": "#FF7F50", "intensity": 0.7},
+      "night": {"ambient": "#2C3E50", "intensity": 0.4, "street_lights": true}
+    },
+    "mobile_optimization": {
+      "lod_level": 2,
+      "draw_calls": 50,
+      "memory_mb": 50,
+      "max_particles": 80,
+      "target_fps": 60
+    }
+  },
+  
+  "minigame_data": {
+    "type": "frogger_crossing",
+    "name": "Bicycle Thunderdome",
+    "objective": "Cross from south sidewalk to north sidewalk without collision",
+    
+    "lane_structure": [
+      {"lane": 1, "type": "slow_bikes", "direction": "east", "difficulty": "easy"},
+      {"lane": 2, "type": "medium_bikes", "direction": "east", "difficulty": "medium"},
+      {"lane": 3, "type": "fast_bikes", "direction": "east", "difficulty": "hard"},
+      {"lane": "tram_1", "type": "tram", "interval_seconds": 45, "lethal": true},
+      {"lane": "island", "type": "safe_zone", "max_duration_seconds": 2},
+      {"lane": "tram_2", "type": "tram", "interval_seconds": 45, "offset_seconds": 22, "lethal": true},
+      {"lane": 4, "type": "fast_bikes", "direction": "west", "difficulty": "hard"},
+      {"lane": 5, "type": "medium_bikes", "direction": "west", "difficulty": "medium"},
+      {"lane": 6, "type": "slow_bikes", "direction": "west", "difficulty": "easy"}
+    ],
+    
+    "controls": {
+      "move_forward": "tap_or_swipe_up",
+      "move_backward": "tap_or_swipe_down",
+      "stay": "hold",
+      "sprint": "double_tap",
+      "sprint_risk": "covers_2_lanes_less_reaction_time"
+    },
+    
+    "traffic_patterns": {
+      "normal": {
+        "spawn_interval_seconds": 3.5,
+        "gap_probability": 0.3,
+        "difficulty_multiplier": 1.0
+      },
+      "rush_hour": {
+        "times": ["08:00-09:00", "17:00-19:00"],
+        "spawn_interval_seconds": 1.75,
+        "gap_probability": 0.15,
+        "difficulty_multiplier": 2.0,
+        "collision_damage_bonus": 1.5
+      },
+      "night": {
+        "times": ["22:00-06:00"],
+        "spawn_interval_seconds": 4.0,
+        "bike_types": ["party_bikes", "bar_crawlers", "wobbly_tourists"],
+        "unpredictability": "high"
+      }
+    },
+    
+    "cargo_parade": {
+      "interval_seconds": 90,
+      "duration_seconds": 10,
+      "warning_audio": "cargo_parade_incoming",
+      "warning_time_seconds": 5,
+      "impassable": true,
+      "visual": "wall_of_bakfiets"
+    },
+    
+    "collision_consequences": {
+      "slow_bike": {
+        "knockback_lanes": 1,
+        "damage": 5,
+        "dialogue": "Sorry!",
+        "debuff_chance": 0
+      },
+      "medium_bike": {
+        "knockback_lanes": 2,
+        "damage": 10,
+        "dialogue": "Dutch swearing",
+        "debuff_chance": 0.1
+      },
+      "fast_bike": {
+        "knockback_lanes": "start",
+        "damage": 20,
+        "dialogue": "Extended Dutch swearing",
+        "debuff_chance": 0.3,
+        "debuff": "bicycle_trauma"
+      },
+      "tram": {
+        "knockback_lanes": "start",
+        "damage": 50,
+        "debuff_chance": 1.0,
+        "debuff": "bicycle_trauma",
+        "first_time_achievement": "tram_survivor"
+      },
+      "cargo_parade": {
+        "knockback_lanes": "start",
+        "damage": 15,
+        "visual": "covered_in_flower_petals",
+        "comedy": "children_wave_at_you"
+      }
+    },
+    
+    "success_rewards": {
+      "single_crossing": {
+        "buff": "crossing_confidence",
+        "effect": {"reflexes": 0.1},
+        "duration_minutes": 30,
+        "stacks": 3
+      },
+      "perfect_crossing": {
+        "buff": "dodge_master",
+        "effect": {"reflexes": 0.15, "speed": 0.05},
+        "duration_minutes": 60,
+        "achievement": "dodge_master_first_time"
+      },
+      "rush_hour_no_hit": {
+        "buff": "rush_hour_survivor",
+        "effect": {"reflexes": 0.05},
+        "duration": "permanent",
+        "achievement": "rush_hour_survivor"
+      }
+    },
+    
+    "difficulty_scaling": {
+      "first_crossing": {
+        "mode": "tutorial",
+        "speed_multiplier": 0.7,
+        "visual_indicators": true,
+        "forgiving_hitboxes": true
+      },
+      "subsequent": {
+        "mode": "standard",
+        "speed_multiplier": 1.0
+      },
+      "mastery_counter": {
+        "threshold": 10,
+        "unlocks": "underground_passage_shortcut"
+      }
+    }
+  },
+  
+  "cyclist_types": [
+    {
+      "id": "commuter",
+      "display_name": "The Commuter",
+      "description": "Suit, briefcase in basket, phone in hand, WILL NOT SLOW DOWN",
+      "speed": "medium",
+      "predictability": "high",
+      "visual": "business_attire_basket_phone"
+    },
+    {
+      "id": "parent_bakfiets",
+      "display_name": "The Parent",
+      "description": "Bakfiets loaded with 3 children, somehow faster than you",
+      "speed": "medium_high",
+      "predictability": "medium",
+      "visual": "cargo_bike_children",
+      "width": 2
+    },
+    {
+      "id": "tourist_rental",
+      "display_name": "The Tourist on Rental",
+      "description": "Wobbly, unpredictable, their own victim",
+      "speed": "slow",
+      "predictability": "low",
+      "visual": "orange_rental_bike_wobbling"
+    },
+    {
+      "id": "delivery_rider",
+      "display_name": "The Delivery Rider",
+      "description": "Massive cargo bike, food containers, deadline energy",
+      "speed": "fast",
+      "predictability": "medium",
+      "visual": "cargo_bike_food_boxes",
+      "width": 2
+    },
+    {
+      "id": "student",
+      "display_name": "The Student",
+      "description": "Holding coffee, texting, steering with knees",
+      "speed": "medium_fast",
+      "predictability": "low",
+      "visual": "casual_coffee_phone_no_hands"
+    },
+    {
+      "id": "elder",
+      "display_name": "The Elder",
+      "description": "Somehow the most terrifying—silent, fast, immortal",
+      "speed": "fast",
+      "predictability": "high",
+      "visual": "elderly_upright_bike_silent"
+    },
+    {
+      "id": "tandem_couple",
+      "display_name": "The Tandem Couple",
+      "description": "Taking up two lanes, arguing about directions",
+      "speed": "slow",
+      "predictability": "very_low",
+      "visual": "tandem_bike_arguing",
+      "width": 2
+    },
+    {
+      "id": "dog_walker",
+      "display_name": "The Dog Walker",
+      "description": "Bicycle + leashed dog = chaos mathematics",
+      "speed": "variable",
+      "predictability": "none",
+      "visual": "bike_with_leashed_dog",
+      "width": "variable"
+    }
+  ],
+  
+  "cross_location_connections": {
+    "north": "shamsterdam_canal_ring_promenade_01",
+    "south": "shamsterdam_roodelicht_row_01",
+    "east": "shamsterdam_museum_mile_01",
+    "west": "shamsterdam_coffeeshop_quarter_01",
+    "northeast": "shamsterdam_cafe_de_schaamte_01"
+  },
+  
+  "shortcuts_unlockable": [
+    {
+      "id": "underground_passage",
+      "unlock_condition": "10_successful_crossings",
+      "description": "Underground bike parking tunnel with pedestrian corridor"
+    },
+    {
+      "id": "rooftop_route",
+      "unlock_condition": "cargo_cult_quest_complete",
+      "description": "Rooftop path over the crossing"
+    },
+    {
+      "id": "bike_rental",
+      "unlock_condition": "15_sov_payment",
+      "description": "Become a traffic participant instead of victim"
+    }
+  ],
+  
+  "state_tracking": {
+    "crossings_completed": 0,
+    "perfect_crossings": 0,
+    "collisions_total": 0,
+    "tram_hits": 0,
+    "cargo_parade_casualties": 0,
+    "rush_hour_completions": 0
+  },
+  
+  "achievements": [
+    {"id": "first_crossing", "trigger": "complete_crossing_1", "type": "milestone"},
+    {"id": "dodge_master", "trigger": "perfect_crossing", "type": "skill"},
+    {"id": "rush_hour_survivor", "trigger": "rush_hour_no_hit", "type": "challenge"},
+    {"id": "tram_survivor", "trigger": "survive_tram_hit", "type": "humor"},
+    {"id": "gerrit_approval", "trigger": "perfect_crossing_while_gerrit_watches", "type": "hidden"},
+    {"id": "ten_time_champion", "trigger": "10_crossings", "type": "milestone"},
+    {"id": "cargo_cult_member", "trigger": "cargo_cult_quest", "type": "quest"}
+  ]
+}

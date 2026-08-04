@@ -1,0 +1,154 @@
+{
+  "locations": [
+    {
+      "name": "The Bohemian Riviera",
+      "tag_id": "bohemian_riviera",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "A cobblestone Gilded Square street narrows, dips, and opens directly onto a raked ribbon of imported sand laid over embankment concrete. The Bacchanus is visible the entire time, a slow murky river doing its level best to look like a coastline. No gate, no threshold — the sand simply starts, marked by a sun-faded 'THE BOHEMIAN RIVIERA' signpost with a delivery manifest number zip-tied underneath. A sagging vinyl banner over the catapult reads 'BEATDOWN — LETO — SEZONA 22.' Eurodance bleeds from three unsynced bar sound systems, an EMTV crane camera occasionally swings into frame, and gulls that are almost certainly pigeons work the sand.",
+        "entry_condition": "Accessible anytime, 24/7. Entering fauxst_beach on any active filming day auto-triggers the Beatdown sign-up sequence."
+      },
+      "interior": {
+        "theme": "A landlocked country's beach resort built entirely out of confidence and trucked-in sand, hosting a reality-TV catapult show",
+        "features": [
+          "entry_point",
+          "quest_npc: petra_production_assistant",
+          "quest_npc: jaxson_vane",
+          "quest_npc: janek_sykora",
+          "quest_npc: hamstradamus_beach_variant",
+          "mini_game: minigame_beatdown_trivia_gauntlet",
+          "mini_game: minigame_beatdown_sudden_death",
+          "event_hook: beatdown_launch_sequence",
+          "selfie_prop: catapult_row",
+          "npc_group: college_vacationers",
+          "shop_node: beach_bar",
+          "hidden_area: night_party_zone",
+          "examinable: no_diving_sign",
+          "examinable: release_form",
+          "examinable: port_o_potty_center_broken_latch"
+        ]
+      },
+      "functions": [
+        "Quest hub for debaucheryville_sidequest_bacchanus_beach_beatdown_01 (the Bacchanus Beach Beatdown catapult-trivia show)",
+        "Bar-hop / social district — three named beach bars (Za Za Beach Klub, The Tan Line, Kokos Loco)",
+        "Photo-opportunity zone — golden-hour posing",
+        "port_o_cologne status acquisition (any launch) and cure loop (Zdenka's riverbank cart)",
+        "Night-party unlock as a future-questline seed (hook only)"
+      ]
+    }
+  ],
+
+  "node_connections": {
+    "bohemian_riviera": {
+      "connects_to": [
+        {
+          "destination": "old_town_streets",
+          "direction": "landward",
+          "requirements": null,
+          "transition_type": "normal"
+        },
+        {
+          "destination": "cirque_du_shady",
+          "direction": "riverside_gear_path_downriver",
+          "requirements": null,
+          "transition_type": "normal"
+        }
+      ],
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+          "role": "quest_origin",
+          "npc_trigger": "petra_production_assistant"
+        }
+      ],
+      "unlocks_at": [
+        {
+          "destination": "night_party_zone",
+          "condition": "beatdown_complete == true (WIN, LOSS, or DISQUALIFICATION)",
+          "state_change": "night_party_seen"
+        }
+      ]
+    }
+  },
+
+  "feature_details": {
+    "quest_npc_petra_production_assistant": {
+      "type": "quest_giver",
+      "description": "Runs sign-up, full disclosure, and release-form collection at signup_table. Auto-triggers on entry to fauxst_beach during an active filming day.",
+      "mechanics": "Gates entry into Bro Select and the trivia gauntlet; discloses every material fact before any form is signed."
+    },
+    "quest_npc_jaxson_vane": {
+      "type": "quest_host",
+      "description": "Hosts the trivia gauntlet and Sudden Death at catapult_row and prize_podium.",
+      "mechanics": "Tracks the selected bro's visible strike counter, pulls the lever on any third strike or disqualification, announces the outcome."
+    },
+    "quest_npc_janek_sykora": {
+      "type": "skill_gate",
+      "description": "Contestant Four; the quest's only genuine skill gate at catapult_row / prize_podium.",
+      "mechanics": "Cannot be struck out; the Sudden Death 1.5-second buzzer window is the sole win condition against him."
+    },
+    "quest_npc_hamstradamus_beach_variant": {
+      "type": "win_branch_reward_giver",
+      "description": "Filming-day-only appearance at prize_podium; secondary location, primary residence is the Cirque du Shady prophecy tent.",
+      "mechanics": "Delivers the canon-locked WIN prophecy and pins item_trivia_champ_badge; absent from the LOSS branch entirely."
+    },
+    "mini_game_minigame_beatdown_trivia_gauntlet": {
+      "type": "mini_game",
+      "description": "Nine-question round-robin trivia gauntlet at catapult_row, 4 concurrent contestants, 3 strikes, 12-second timer per question.",
+      "mechanics": "Non-selected bros hard-strikeout at Q4 and Q7 (mid-sentence); Janek's scripted thrown answer at ~Q6; the selected bro's confidently-wrong shout is always one of the four selectable options."
+    },
+    "mini_game_minigame_beatdown_sudden_death": {
+      "type": "mini_game",
+      "description": "Head-to-head buzzer duel vs. Janek Sýkora at prize_podium, triggered on <=2 strikes after Q9.",
+      "mechanics": "Win condition: buzz inside Janek's 1.5-second crew-team wave window and answer correctly; audio-only tell (oar catch-and-release)."
+    },
+    "event_hook_beatdown_launch_sequence": {
+      "type": "triggered_event",
+      "description": "Three independently-triggerable catapult launch units at catapult_row.",
+      "mechanics": "Fires on third strike, hard-timed non-selected-bro strikeouts (Q4/Q7), or a Sudden Death loss; arc must clear the inflatable palms and lifeguard tower before splash impact."
+    },
+    "selfie_prop_catapult_row": {
+      "type": "photo_opportunity",
+      "description": "Three port-o-potties on the pneumatic arm, inflatable palms, space heaters, lifeguard tower, and EMTV crane in one establishing frame.",
+      "mechanics": "High social-media viral potential screenshot moment; available any time catapult_row is visible, filming day or not."
+    },
+    "npc_group_college_vacationers": {
+      "type": "ambient_crowd",
+      "description": "8-12 ambient college-age vacationers, density highest at bar_strip and fauxst_beach.",
+      "mechanics": "Sign-up witnesses, Beatdown spectators, and heckle-line deliverers on the LOSS-branch walk of shame; Czech-parody heckle/mistranslation pairs."
+    },
+    "shop_node_beach_bar": {
+      "type": "shop",
+      "description": "Three named beach bars along bar_strip: Za Za Beach Klub, The Tan Line, Kokos Loco.",
+      "mechanics": "Sells beach-bar consumables including item_kokos_loco_bucket and item_tan_line_neon_shooter; landlocked beach-resort pricing (river-embankment rates charged at Mediterranean prices)."
+    },
+    "hidden_area_night_party_zone": {
+      "type": "unlockable_zone",
+      "description": "Locked until the Beatdown resolves (WIN, LOSS, or DISQUALIFICATION) at least once.",
+      "mechanics": "String lights, migrating sound system, ambient-only content — seed for a future questline (working name 'Herp'); no new mechanics, NPCs, or narrative beats beyond ambient dressing are authored here."
+    },
+    "examinable_no_diving_sign": {
+      "type": "examinable",
+      "description": "Hand-lettered 'NO DIVING (SERIOUSLY, IT'S 40cm)' sign zip-tied to the lifeguard tower ladder at fauxst_beach.",
+      "mechanics": "40cm vs. 60cm depth discrepancy with Standa's own admission is intentional, not a bug to reconcile."
+    },
+    "examinable_release_form": {
+      "type": "examinable",
+      "description": "Four-page, single-spaced Czech-parody legalese release form at signup_table.",
+      "mechanics": "Read-aloud offer always available from Petra, never accepted by the bros."
+    },
+    "examinable_port_o_potty_center_broken_latch": {
+      "type": "examinable",
+      "description": "The center port-o-potty's door latch is visibly broken and swings open under its own weight, at catapult_row.",
+      "mechanics": "Purely visible before sign-in; reusable idle-open animation state outside the launch sequence."
+    }
+  },
+
+  "ambient_npcs": {
+    "college_vacationers": {
+      "count_range": "8-12",
+      "types": ["flip_phone_filmer", "beer_chant_group", "heckler_walk_of_shame", "golden_hour_poser"],
+      "behavior": "crowd_dynamics_dense_at_bar_strip_and_fauxst_beach, heckle_bark_on_walk_of_shame"
+    }
+  }
+}

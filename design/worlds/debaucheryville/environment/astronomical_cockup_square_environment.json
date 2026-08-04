@@ -1,0 +1,233 @@
+{
+  "location_id": "debaucheryville_gilded_square_astronomical_cockup_square_01",
+  
+  "ambient_audio": {
+    "background_music": "astronomical_cockup_square_ambient.ogg",
+    "music_style": "tension_building_anticipation_with_anticlimactic_payoff",
+    "environmental_sounds": [
+      "tourist_crowd_murmur_multilingual",
+      "camera_shutter_clicks_constant",
+      "vendor_calling_best_view",
+      "distant_church_bells_hourly",
+      "cobblestone_footsteps",
+      "phone_notification_sounds",
+      "coins_clinking"
+    ],
+    "audio_transitions": {
+      "enter": "fade_in_2s_crowd_noise_swell",
+      "exit": "fade_out_1s",
+      "clock_show_start": "crowd_hush_2s",
+      "clock_show_end": "anticlimax_trombone_sting",
+      "crying_sequence": "emotional_strings_parody"
+    },
+    "clock_show_audio": {
+      "bell_chime": "clock_tower_bell_chime.ogg",
+      "mechanical_clicking": "apostle_movement_clicking.ogg",
+      "small_bell_ring": "death_figure_bell.ogg",
+      "strangled_rooster": "rooster_crow_pathetic.ogg",
+      "crowd_gasp": "crowd_disappointed_gasp.ogg",
+      "single_tourist": "thats_it_voice.ogg"
+    },
+    "vendor_audio": {
+      "approach_footsteps": "conspiratorial_approach.ogg",
+      "sales_pitch_tone": "sleazy_salesman_energy",
+      "purchase_confirmation": "cash_register_kaching.ogg",
+      "blessing_chant": "lorem_ipsum_gregorian.ogg",
+      "incense_hiss": "cheap_candle_sizzle.ogg"
+    },
+    "comedy_stingers": {
+      "scam_purchase": "sad_trombone_subtle.ogg",
+      "crying_triggered": "emotional_violin_parody.ogg",
+      "tattoo_decision": "dramatic_orchestral_hit.ogg",
+      "wristband_acquire": "level_up_ironic.ogg"
+    }
+  },
+  
+  "status_effects": {
+    "environmental_buffs": [],
+    "atmospheric_debuffs": [],
+    "location_specific_states": {
+      "post_clock_vulnerability": {
+        "trigger": "clock_show_witnessed",
+        "duration_minutes": 30,
+        "effects": {
+          "vendor_price_modifier": 1.2,
+          "purchase_likelihood_modifier": 1.5,
+          "emotional_state": "spiritually_overwhelmed"
+        },
+        "visual_indicator": "tear_drop_icon",
+        "description": "The bros are emotionally compromised and will buy anything."
+      }
+    },
+    "recovery_options": []
+  },
+  
+  "couchsurf_integration": {
+    "available": false,
+    "reason": "outdoor_public_square"
+  },
+  
+  "time_of_day_changes": {
+    "morning": {
+      "crowd_density": "medium",
+      "vendor_activity": "setting_up",
+      "lighting": "bright_morning_sun",
+      "clock_show": "active"
+    },
+    "afternoon": {
+      "crowd_density": "very_high",
+      "vendor_activity": "peak_scamming",
+      "lighting": "harsh_overhead_sun",
+      "clock_show": "active"
+    },
+    "golden_hour": {
+      "crowd_density": "high",
+      "vendor_activity": "aggressive",
+      "lighting": "dramatic_tower_silhouette",
+      "clock_show": "active"
+    },
+    "night": {
+      "crowd_density": "low",
+      "vendor_activity": "minimal",
+      "lighting": "streetlamp_pools_phone_glow",
+      "clock_show": "inactive",
+      "special_notes": "Vendors mostly gone, locals smoking, bros might wait for secret midnight show that doesn't exist"
+    }
+  },
+  
+  "weather_effects": {
+    "clear": {
+      "crowd_modifier": 1.0,
+      "vendor_modifier": 1.0,
+      "visibility": "perfect"
+    },
+    "overcast": {
+      "crowd_modifier": 0.8,
+      "vendor_modifier": 1.0,
+      "visibility": "good"
+    },
+    "rain": {
+      "crowd_modifier": 0.3,
+      "vendor_modifier": 0.5,
+      "visibility": "reduced",
+      "special": "umbrellas_everywhere"
+    }
+  },
+  
+  "particle_effects": {
+    "camera_flashes": {
+      "type": "burst",
+      "frequency": "constant",
+      "max_simultaneous": 20,
+      "color": "#FFFFFF",
+      "intensity_variation": "0.7_to_1.0"
+    },
+    "incense_smoke": {
+      "type": "stream",
+      "source": "party_monk_station",
+      "color": "#4B0082",
+      "opacity": "0.3_to_0.6",
+      "drift_direction": "wind_based"
+    },
+    "confetti_vendor": {
+      "type": "burst",
+      "trigger": "clock_show_end",
+      "colors": ["#CFB53B", "#708090", "#7FFF00"],
+      "duration_seconds": 3
+    },
+    "tear_drops": {
+      "type": "stream",
+      "source": "bros_faces",
+      "trigger": "crying_sequence",
+      "color": "#87CEEB",
+      "frequency": "high"
+    },
+    "cash_flying": {
+      "type": "burst",
+      "trigger": "purchase_complete",
+      "color": "#228B22",
+      "direction": "toward_vendor"
+    }
+  },
+  
+  "lighting_system": {
+    "day_cycle": {
+      "morning": {
+        "ambient_color": "#FFF8DC",
+        "intensity": 0.9,
+        "shadow_direction": "west"
+      },
+      "afternoon": {
+        "ambient_color": "#FFFACD",
+        "intensity": 1.0,
+        "shadow_direction": "east"
+      },
+      "golden_hour": {
+        "ambient_color": "#FFD700",
+        "intensity": 0.8,
+        "shadow_direction": "long_east",
+        "tower_backlit": true
+      },
+      "night": {
+        "ambient_color": "#191970",
+        "intensity": 0.3,
+        "point_lights": [
+          {"source": "streetlamps", "color": "#FFBF00", "radius": 64},
+          {"source": "tattoo_shop_neon", "color": "#FF1493", "radius": 48},
+          {"source": "phone_screens", "color": "#FFFFFF", "radius": 16}
+        ]
+      }
+    },
+    "clock_show_lighting": {
+      "pre_show": {
+        "effect": "anticipation_glow",
+        "tower_highlight": true
+      },
+      "during_show": {
+        "effect": "spotlight_on_clock",
+        "crowd_dimmed": true
+      },
+      "post_show": {
+        "effect": "anticlimactic_return_to_normal",
+        "duration_seconds": 2
+      }
+    }
+  },
+  
+  "environmental_storytelling": {
+    "permanent_details": [
+      {
+        "element": "unesco_sign_with_graffiti",
+        "description": "Official UNESCO Heritage sign with 'COCK-UP' spray painted over 'CLOCK'",
+        "location": "near_clock_tower_base"
+      },
+      {
+        "element": "worn_cobblestones",
+        "description": "Specific area more worn from tourists standing to view clock",
+        "location": "prime_viewing_area"
+      },
+      {
+        "element": "pillar_graffiti",
+        "description": "Various languages expressing disappointment carved into viewing pillar",
+        "location": "viewing_spot_scammer_pillar"
+      }
+    ],
+    "dynamic_details": [
+      {
+        "element": "other_scammed_tourists",
+        "description": "Background tourists also wearing 'I'm 7!' wristbands",
+        "visibility": "after_wristband_purchase"
+      },
+      {
+        "element": "childrens_birthday_party",
+        "description": "Actual children's party visible with same wristbands",
+        "visibility": "rare_easter_egg"
+      },
+      {
+        "element": "vendor_counting_money",
+        "description": "Vendors visible counting cash behind stalls",
+        "visibility": "after_purchase"
+      }
+    ]
+  }
+}

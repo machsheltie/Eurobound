@@ -1,0 +1,366 @@
+{
+  "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+  
+  "vendors": [
+    {
+      "vendor_id": "cafe_service",
+      "vendor_name": "Café Sachertorte Service",
+      "vendor_type": "cafe_restaurant",
+      "operator_npc": "herr_ober_01",
+      "currency_accepted": ["sovs"],
+      "availability": {
+        "hours": "08:00-22:00",
+        "conditions": {
+          "pre_quest": "full_service",
+          "during_quest": "unavailable",
+          "post_quest_unpaid": "service_refused",
+          "post_quest_paid": "full_service_valued_patron"
+        }
+      },
+      "price_modifiers": {
+        "tourist_detection": {
+          "trigger": "american_accent_or_behavior",
+          "modifier": 1.1
+        },
+        "german_order_success": {
+          "trigger": "pronunciation_minigame_pass",
+          "modifier": 0.9
+        },
+        "charm_discount": {
+          "trigger": "charm >= 4",
+          "modifier": 0.95
+        },
+        "valued_patron": {
+          "trigger": "debt_paid_full",
+          "modifier": 0.9
+        }
+      },
+      "hidden_charges": [
+        {"name": "Historic Table Supplement", "amount": 3, "condition": "window_seating"},
+        {"name": "Service Surcharge", "percent": 15, "visibility": "bill_only"},
+        {"name": "American Adjustment", "percent": 10, "visibility": "never_shown"}
+      ]
+    }
+  ],
+  
+  "menu": {
+    "beverages": [
+      {
+        "item_id": "kleiner_brauner",
+        "display_name": "Kleiner Brauner",
+        "description": "Small coffee, served with judgment",
+        "price_sov": 5,
+        "effects": {
+          "removes_status": ["tired"],
+          "grants_status": null
+        },
+        "flavor_text": "A tiny cup of concentrated Sinfonia. The caffeine-to-pretension ratio is impressive."
+      },
+      {
+        "item_id": "grosser_brauner",
+        "display_name": "Großer Brauner",
+        "description": "Large coffee, slightly less judgment",
+        "price_sov": 7,
+        "effects": {
+          "removes_status": ["tired"],
+          "grants_status": {"caffeinated": {"speed": 1, "luck": -1, "duration_hours": 2}}
+        },
+        "flavor_text": "Same judgment, more volume."
+      },
+      {
+        "item_id": "melange",
+        "display_name": "Melange",
+        "description": "Sinfonian latte, foam artistically peaked",
+        "price_sov": 8,
+        "effects": {
+          "removes_status": ["tired"],
+          "grants_status": {"cultured_palate": {"charm": 1, "duration_minutes": 30}}
+        },
+        "flavor_text": "The foam is decorative. Disturbing it is considered gauche."
+      },
+      {
+        "item_id": "einspanner",
+        "display_name": "Einspänner",
+        "description": "Coffee with excessive whipped cream",
+        "price_sov": 9,
+        "effects": {
+          "removes_status": ["tired", "thirsty"],
+          "hp_restore": 10
+        },
+        "flavor_text": "Named after one-horse carriages. Ironic, given recent events."
+      }
+    ],
+    "cakes": [
+      {
+        "item_id": "sachertorte_slice",
+        "display_name": "Sachertorte Slice",
+        "description": "The famous chocolate cake. Non-negotiable.",
+        "price_sov": 18,
+        "effects": {
+          "hp_restore": 60,
+          "removes_status": ["thirsty"]
+        },
+        "flavor_text": "Layers of chocolate sponge, apricot jam, dark chocolate glaze. Gustav's choice."
+      },
+      {
+        "item_id": "apfelstrudel",
+        "display_name": "Apfelstrudel",
+        "description": "Apple strudel, warm upon request (2 Sovs extra)",
+        "price_sov": 14,
+        "optional_charge": {"warm": 2},
+        "effects": {
+          "hp_restore": 40,
+          "removes_status": ["hungry"]
+        },
+        "flavor_text": "The pastry is so thin you can read through it. Herr Ober will tell you this. Twice."
+      },
+      {
+        "item_id": "opera_cake",
+        "display_name": "Opera Cake",
+        "description": "Layers of sophistication",
+        "price_sov": 22,
+        "effects": {
+          "hp_restore": 80,
+          "grants_status": {"cultured_palate": {"charm": 2, "duration_minutes": 30}}
+        },
+        "flavor_text": "Coffee, chocolate, and almond in architectural precision. For when 18 Sovs cake isn't enough."
+      },
+      {
+        "item_id": "gugelhupf",
+        "display_name": "Gugelhupf",
+        "description": "Traditional ring cake",
+        "price_sov": 12,
+        "effects": {
+          "hp_restore": 30,
+          "sp_restore": 10
+        },
+        "flavor_text": "Simple, humble, old-fashioned. Herr Ober slightly approves."
+      }
+    ],
+    "post_quest_specials": [
+      {
+        "item_id": "the_gustav_cookie",
+        "display_name": "The Gustav",
+        "description": "Commemorative chocolate horse cookie",
+        "price_sov": 8,
+        "availability": "post_quest_paid_only",
+        "effects": {
+          "hp_restore": 25,
+          "bravado": 1
+        },
+        "flavor_text": "A chocolate horse-shaped cookie. 'In memory of 340 Sovs.' - the menu",
+        "achievement_trigger": "the_gustav"
+      }
+    ]
+  },
+  
+  "damage_items": {
+    "fiaker_fiasco_damages": [
+      {
+        "item": "patio_table",
+        "damage_sov": 85,
+        "trigger": "gustav_entry",
+        "description": "Wrought-iron patio table, toppled"
+      },
+      {
+        "item": "umbrella_stand",
+        "damage_sov": 15,
+        "trigger": "gustav_entry",
+        "description": "Ornate brass umbrella stand, dented"
+      },
+      {
+        "item": "full_sachertorte",
+        "damage_sov": 85,
+        "trigger": "gustav_cake_heist",
+        "description": "Complete Sachertorte, consumed by horse"
+      },
+      {
+        "item": "marble_table_1",
+        "damage_sov": 40,
+        "trigger": "gustav_chase",
+        "description": "Antique marble-topped table, overturned"
+      },
+      {
+        "item": "marble_table_2",
+        "damage_sov": 40,
+        "trigger": "gustav_chase",
+        "description": "Second antique marble table, also overturned"
+      },
+      {
+        "item": "opera_cake_slice",
+        "damage_sov": 22,
+        "trigger": "gustav_exit",
+        "description": "Single opera cake slice, grabbed during escape"
+      },
+      {
+        "item": "emotional_damages",
+        "damage_sov": 53,
+        "trigger": "herr_ober_breakdown",
+        "description": "Herr Ober's claim for 'psychological trauma'"
+      }
+    ],
+    "total_damage_sov": 340,
+    "payment_options": {
+      "full_payment": {
+        "amount": 340,
+        "result": "debt_cleared_valued_patron"
+      },
+      "partial_payment": {
+        "minimum": 50,
+        "result": "debt_reduced_still_hostile"
+      },
+      "hans_jurgen_insurance": {
+        "covers": 170,
+        "condition": "fiaker_fiasco_path_a_complete",
+        "requires_flag_false": "debt_relief_claimed",
+        "sets_flag": "debt_relief_claimed",
+        "result": "debt_reduced_to_170",
+        "mutually_exclusive_with": "cafe_dialogue_option_3_halving",
+        "note": "AUTHORITATIVE: this payout and the dialogue-option-3 halving are the SAME single 170 Sovs relief. Whichever fires first sets debt_relief_claimed and disables the other. Never apply both. Hans-Jurgen's separate 500 Sovs Path A contribution is a different pot and DOES stack. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
+      }
+    },
+    "debt_relief_flag": {
+      "flag": "debt_relief_claimed",
+      "type": "bool",
+      "default": false,
+      "scope": "quest_fiaker_fiasco",
+      "one_way": true,
+      "consumed_by": [
+        "cafe_dialogue_option_3_halving",
+        "hans_jurgen_insurance",
+        "full_payment"
+      ],
+      "note": "full_payment sets the flag as consumed-and-moot: the cafe line is discharged, so there is nothing to reduce and the insurance does not convert to cash or credit."
+    }
+  },
+  
+  "discoverable_items": [
+    {
+      "item_id": "chess_notation_card",
+      "display_name": "Chess Notation Card",
+      "description": "Greta's annotated game notes. 'Opponent: adequate.'",
+      "discovery_method": "defeat_chess_master",
+      "rarity": "uncommon",
+      "effects": {
+        "usable_in": "future_chess_encounters",
+        "intelligence_boost": 1
+      },
+      "value_sov": 0,
+      "flavor_text": "Her handwriting is impeccable. Her assessment of your play is... not."
+    },
+    {
+      "item_id": "fake_history_evidence",
+      "display_name": "Photograph of 'Emperor's Letter'",
+      "description": "Close-up showing the forgery markers you spotted.",
+      "discovery_method": "examine_letter_charm_4",
+      "rarity": "rare",
+      "effects": {
+        "unlocks_gossip": "cafe_fake_history"
+      },
+      "value_sov": 0,
+      "flavor_text": "The signature was done with a modern fountain pen. Franz Josef died in 1916. Fountain pens weren't common until the 1920s."
+    },
+    {
+      "item_id": "gustav_cream_photo",
+      "display_name": "Photo: Gustav with Cream on Face",
+      "description": "Screenshot of Gustav post-cake, cream on muzzle, opera cake in mouth.",
+      "discovery_method": "take_photo_during_chaos",
+      "rarity": "rare",
+      "effects": {
+        "bravado": 3,
+        "gallery_entry": "chaos_photographer"
+      },
+      "value_sov": 0,
+      "flavor_text": "This will get so many likes. Is that ethical? Who cares."
+    }
+  ],
+  
+  "gallery_entries": [
+    {
+      "entry_id": "cultured_cafe_moment",
+      "title": "Cultured Café Moment",
+      "description": "Perfect table setup: cake, coffee, newspaper, afternoon light.",
+      "trigger": "cafe_selfie_with_order"
+    },
+    {
+      "entry_id": "cake_window_shot",
+      "title": "Window Shopping",
+      "description": "The famous cake display through glass.",
+      "trigger": "exterior_photo"
+    },
+    {
+      "entry_id": "scene_of_the_crime",
+      "title": "Scene of the Crime",
+      "description": "Bros posing in destroyed café. Questionable taste.",
+      "trigger": "post_quest_chaos_selfie",
+      "bravado_boost": 3
+    },
+    {
+      "entry_id": "chaos_photographer",
+      "title": "Chaos Photographer",
+      "description": "You photographed Gustav mid-rampage. Journalism!",
+      "trigger": "photo_during_chase"
+    }
+  ],
+  
+  "quest_items": [
+    {
+      "item_id": "cafe_damage_receipt",
+      "display_name": "Café Damage Receipt",
+      "description": "Itemized list of everything destroyed. Herr Ober's handwriting.",
+      "quest": "sinfonia_sidequest_fiaker_fiasco_01",
+      "obtainable": true,
+      "condition": "given_after_chaos",
+      "contents": "damage_items_list",
+      "significance": "tracks_debt"
+    },
+    {
+      "item_id": "valued_patron_card",
+      "display_name": "Valued Patron Card",
+      "description": "A small card indicating you paid your debts. Herr Ober signed it reluctantly.",
+      "quest": "sinfonia_sidequest_fiaker_fiasco_01",
+      "obtainable": true,
+      "condition": "debt_paid_full",
+      "effects": {
+        "permanent_discount": 0.9,
+        "cafe_access": "vip_seating"
+      }
+    }
+  ],
+  
+  "achievement_items": [
+    {
+      "item_id": "cafe_chaos_badge",
+      "display_name": "Café Chaos Badge",
+      "description": "For completing the Café Sachertorte phase of Fiaker Fiasco.",
+      "unlock_condition": "cafe_phase_complete",
+      "effects": null,
+      "gallery_entry": true
+    },
+    {
+      "item_id": "patron_of_arts_badge",
+      "display_name": "Patron of the Arts",
+      "description": "For paying 340 Sovs in café damages.",
+      "unlock_condition": "debt_paid_full",
+      "effects": {
+        "reputation_sinfonia": 1
+      },
+      "gallery_entry": true
+    }
+  ],
+  
+  "lore_items": [
+    {
+      "item_id": "cafe_history_plaque",
+      "title": "Café Sachertorte - Est. 1843",
+      "content": "Founded by Johann Sachertorte, whose family recipe remains unchanged. (The recipe has been changed. Multiple times. But don't tell the tourists.)",
+      "source": "entrance_plaque"
+    },
+    {
+      "item_id": "trophy_case_mystery",
+      "title": "The Missing Years",
+      "content": "Awards stop at 1999. What happened? Lawsuit with the other Sachertorte café? Quality decline? Legal dispute over the name? The staff won't say.",
+      "source": "trophy_case_examination"
+    }
+  ]
+}

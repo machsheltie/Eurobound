@@ -47,6 +47,31 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
    changes were still in the working tree at pause (modified Assets/Data JSONs, deletions
    under Design/World Design/Debaucheryville/sprites/, .import files).
 
+## 🔁 RESTRUCTURE RESUME CHECKLIST (added 2026-08-04, author-ordered — do not improvise)
+
+When the folder restructure resumes on `chore/folder-restructure`, execute in this exact order:
+
+1. **Clean the tree first.** `git status --porcelain | wc -l` must be 0 before merging. Commit
+   in-flight sweep work to the branch (never stash-and-forget, never `git clean` — see warning 1).
+2. **Merge main in, main wins content conflicts:**
+   `git -c merge.renameLimit=15000 merge main -X theirs`
+   (run ON `chore/folder-restructure`). `-X theirs` makes main's side win any conflicting hunks;
+   rename detection maps main's edits onto files the restructure moved — the raised renameLimit
+   is required because the restructure renamed ~800 paths. After the merge, if anything under
+   `game/` changed: run BOOT + GUT (commands in
+   `docs/superpowers/plans/2026-07-31-folder-restructure.md`, Global Constraints) and match the
+   27/27 baseline before proceeding.
+3. **Re-run the platform/currency sweeps on moved files:** the Sovs-only retrofit (no euros, no
+   koruna — standing ruling below, canon `currency.md` wherever it currently lives, originally
+   `_sorting/Design/Economy/currency.md`) and the tracked world-names verification greps (small
+   ledger, last bullet). Files have new paths since the sweeps last ran — sweep by content match,
+   not by remembered path lists.
+4. **Continue the walkthrough** per `docs/superpowers/plans/2026-07-31-folder-restructure.md`
+   (Tasks 4–7: author personally places files; `_sorting/` must reach ZERO files then be deleted;
+   then Tasks 8–15 game batches). Session 1 (World Design cities) state: legacy PNG-spec merges
+   done with 13 `> ⚠ CONFLICT:` callouts awaiting author rulings — grep `CONFLICT` under the
+   Debaucheryville design docs to find them.
+
 ## Next execution work (in priority order)
 
 1. **Round 5: Economy, Wallet & Crypto Satire System** — spec at
@@ -62,7 +87,7 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
    `"deboucheryville"` key typo) instead of the author's named breweries (Sinfonia: The Standing
    Ovation, Crown & Cask, The Dancing Stein; see city files for all cities). Also carried
    engine notes: per-NPC `chronicles_entry_completed[<npc_id>]` flags (Herp quest dev notes),
-   the Aaron encounter's fixed-stake/€500-collateral + one-time-scene flags (thekingswerehumming
+   the Aaron encounter's fixed-stake/500-Sovs-collateral + one-time-scene flags (thekingswerehumming
    dev notes), Zdenka's cheapest-cure constraint vs the Port-O-Cologne vendor tax (zdenka.md
    dev notes).
 3. **Draft adoption rounds** (per-file formal review → commit of the ~240 drafts; each adoption
@@ -74,8 +99,27 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
   SUPPOSITORIES", Four Loko, Winamp, Hot Topic, Habbo, Oakleys, Kinko's, Advil, Uber, Muscle
   Milk) stay (Y2K authenticity, trademark exposure), get parody-renamed (safe + new jokes), or
   mixed (keep neutral mentions, parody vice-context uses). Author to rule; then one sweep round.
+  **Pre-ruled 2026-08-04:** Party Monk's HOLIDAY INN EXPRESS bathrobe easter egg — KEEP (author
+  ruling; do not relitigate in the brands sweep).
 - **Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
   idea.
+- **Shamsterdam's 4 brewery names** (author to mint; ruled 2026-08-04 that every city has 4
+  breweries): rename "Brouwerij de Molen" (REAL Dutch brewery — brand liability, zero joke)
+  and "Proeflokaal 't Kansen" (generic Dutch, no satire; keep Kees + jenever-distillery
+  character, name only), plus invent 2 new establishments. Sweep references after minting.
+
+## Brewery Tour — RULED 2026-08-04 (canonical spec: design/quests/general_quests/brewerytour.md)
+
+All five design forks resolved by author: (1) keychain = ONE item, openers = one per brewery
+EARNED on challenge completion (vendor sales + ICQ opener sales DEAD); (2) 16 breweries
+(4×4); (3) Legendary Hangovers = named CONSUMABLES (Full Irish Experience / Neon Nightmare /
+Imperial Concerto / Canal Courage — the last is a consumable, not a passive); (4) stamps
+earned on challenge completion + brewmaster selfie honor; selfie/scrapbook layer KEPT, Chadwick
+posts to his feed; (5) Publandia special-beer order = the one-time trigger granting keychain +
+first opener + passport book. **Queued content round:** decompose into per-item .md files
+(keychain, 16 stamps, 16 openers, 16 beers, passport book) + merge the six legacy brewery
+docs (all six stay until then; master spec overrides on conflict). Merge map is in the five
+analyst reports from this session; contradictions list included.
 
 ## Standing rulings recorded this round (so no future pass relitigates them)
 
@@ -95,7 +139,7 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
   the Emperors, Shamsterdammer, Canal Courage, The Old Master Collection, The Inventor's Cut,
   Sinfonian Wheel, Twenty-One Sinfonian.
 - **QR ARG pages** (Round 5) are framed as the real internet → exempt from ban-all.
-- **€ is SOVS's display glyph; koruna does not exist** (retrofit in Round 5).
+- **SUPERSEDED 2026-08-01:** the euro display-glyph rule is dead by author ruling. The whole game is Sovs; **neither euros nor koruna exist**. Repo-wide retrofit already executed. Canon: `_sorting/Design/Economy/currency.md`.
 
 ## Small ledger (mechanical, any future round)
 
@@ -106,3 +150,25 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
 - `npcs/Old_Town-Square/` folder name (legacy zone name in a path) — reorg window's call.
 - Bassline Opera House two-way ID references from older files (ledgered in Round 3 review).
 - Post-reorg: re-run the tracked world-names verification greps once paths settle.
+
+## Merge notes 2026-08-04 (restructure -> main; flags for author/engine windows)
+
+- **Platform re-sweep needed on merged PNG specs:** the legacy-content merges (author-approved)
+  ported "Mobile Optimization Requirements" sections (iOS/PVRTC etc.) into the Dec-generation
+  specs BEFORE the Steam/desktop ruling landed. Main's platform sweep only hit the old
+  superseded copies. One mechanical pass over design/worlds/*/PNG_Assets/ to retitle/trim
+  mobile-era content per the platform ruling.
+- **theabsinthiumtaproom.md on pre-merge main had been wholesale overwritten with SHADOW
+  EXCHANGE content** (rate board/Mrs. Rata/UV Man checklists) - a misfiled paste in some
+  window. Merge kept the true Taproom (mirror maze) content; the Shadow Exchange material
+  exists in shadowexchange.md and git history. Verify nothing unique was stranded.
+- **debaucheryville data JSONs repaired during merge:** interactions/environmental/
+  sprite_mapping suffered container corruption on BOTH lines (main: line-sorted wreck with
+  fragment blob; branch: records appended outside the object). Rebuilt via record extraction +
+  union (branch structure + main-only records e.g. locations_core, crypto-kebab sheets),
+  gilded_square sweep applied. Engine window should sanity-check record contents.
+- **LoadingStrategy.md**: author deleted it in Session-3 triage; main's window had updated it
+  meanwhile. Merge kept main's newer version at game/assets/data/npcs/LoadingStrategy.md -
+  author may re-delete if the triage call stands.
+- club_flyers.md: main's scrub-round rework won all hunks (Path-B 100-Sovs payment line and
+  dev-notes section from the older draft dropped with it - in git history if wanted).

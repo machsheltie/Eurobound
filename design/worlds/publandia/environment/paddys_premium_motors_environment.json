@@ -1,0 +1,275 @@
+{
+  "location_id": "publandia_outskirts_paddys_premium_motors_01",
+  
+  "ambient_audio": {
+    "background_music": null,
+    "music_style": "no_music_intentional",
+    "music_note": "The absence of music emphasizes the bleakness and foreshadowing",
+    
+    "environmental_sounds": [
+      {
+        "sound_id": "rain_on_gravel",
+        "description": "Light rain hitting the parking lot",
+        "volume": 0.4,
+        "loop": true,
+        "location": "exterior"
+      },
+      {
+        "sound_id": "rain_on_roof",
+        "description": "Rain on the farmhouse roof",
+        "volume": 0.3,
+        "loop": true,
+        "location": "interior"
+      },
+      {
+        "sound_id": "sheep_distant",
+        "description": "Occasional sheep bleating in distance",
+        "volume": 0.2,
+        "trigger": "random_interval_45s"
+      },
+      {
+        "sound_id": "fluorescent_hum",
+        "description": "Ancient fluorescent lights buzzing",
+        "volume": 0.15,
+        "loop": true,
+        "location": "interior"
+      },
+      {
+        "sound_id": "computer_fan",
+        "description": "Ancient computer fan struggling",
+        "volume": 0.1,
+        "loop": true,
+        "location": "interior"
+      },
+      {
+        "sound_id": "keys_clinking",
+        "description": "Keys on wall swaying slightly",
+        "volume": 0.1,
+        "trigger": "random_interval_60s"
+      },
+      {
+        "sound_id": "car_passing_distant",
+        "description": "Occasional car on country road",
+        "volume": 0.2,
+        "trigger": "random_interval_90s"
+      },
+      {
+        "sound_id": "wind_through_door",
+        "description": "Wind when door opens",
+        "volume": 0.3,
+        "trigger": "door_opening"
+      }
+    ],
+    
+    "audio_transitions": {
+      "enter_exterior": "rain_and_sheep_ambient",
+      "enter_interior": "fade_to_fluorescent_hum",
+      "exit_to_cloverleaf": "ominous_wind_swell"
+    },
+    
+    "interactive_audio": {
+      "door_chime": "ancient_bell_jingle",
+      "keys_sliding": "metal_on_wood_deliberate",
+      "paperwork_signing": "pen_scratching_paper_rustle",
+      "gps_startup": "cheerful_electronic_ironic",
+      "fergus_sigh": "weary_resigned_exhale"
+    },
+    
+    "comedy_stingers": {
+      "thousand_yard_stare": "subtle_ominous_drone_2s",
+      "cloverleaf_mention": "distant_echoing_car_horns",
+      "signing_paperwork": "ominous_music_sting_brief",
+      "thats_what_they_all_say": "subtle_record_scratch"
+    }
+  },
+  
+  "status_effects": {
+    "environmental_buffs": [],
+    "atmospheric_debuffs": [
+      {
+        "effect_id": "sense_of_dread",
+        "trigger": "examining_board_of_shame",
+        "duration_minutes": 10,
+        "description": "Something feels wrong about this place",
+        "mechanical_effect": null,
+        "cosmetic_only": true
+      }
+    ],
+    
+    "location_specific_states": {
+      "warned_by_fergus": {
+        "trigger": "first_encounter_complete",
+        "permanent": true,
+        "effects": {
+          "bros_ignore_warning": true
+        },
+        "description": "Fergus warned them. They didn't listen. They never listen."
+      }
+    }
+  },
+  
+  "couchsurf_integration": {
+    "available": false,
+    "reason": "commercial_establishment"
+  },
+  
+  "time_of_day_changes": {
+    "morning": {
+      "lighting": "gray_overcast_light_rain",
+      "fergus_state": "coffee_in_hand_resigned",
+      "special_notes": "Fergus checks the incident counter. Still zero."
+    },
+    "afternoon": {
+      "lighting": "slightly_brighter_still_gray",
+      "fergus_state": "behind_counter_waiting",
+      "special_notes": "Peak tourist rental hours"
+    },
+    "evening": {
+      "lighting": "golden_hour_briefly_then_gray",
+      "fergus_state": "preparing_to_close",
+      "special_notes": "Fergus watches the Cloverleaf on the horizon"
+    },
+    "closing_time": {
+      "lighting": "interior_lights_off_exterior_dark",
+      "fergus_state": "gone_home",
+      "special_notes": "Door locked. Closed sign. Fergus stares at Mary's photo at home."
+    }
+  },
+  
+  "weather_effects": {
+    "light_rain": {
+      "modifier": 1.0,
+      "description": "Default Irish weather",
+      "visual": "rain_particles_on_windows_and_gravel",
+      "audio": "rain_ambience"
+    },
+    "overcast": {
+      "modifier": 1.0,
+      "description": "Gray but dry",
+      "visual": "no_rain_particles_gray_sky"
+    },
+    "heavy_rain": {
+      "modifier": 1.0,
+      "description": "Proper Irish downpour",
+      "visual": "heavy_rain_particles",
+      "audio": "rain_heavy",
+      "fergus_comment": "Ye're not driving in THIS, are ye? ...Aye, of course ye are."
+    },
+    "rare_sun": {
+      "modifier": 1.0,
+      "description": "Brief sunny break",
+      "visual": "sun_beams_through_clouds",
+      "fergus_comment": "Don't trust it. The sun's a liar in these parts.",
+      "frequency": "rare"
+    }
+  },
+  
+  "particle_effects": {
+    "rain_exterior": {
+      "type": "ambient",
+      "source": "sky",
+      "density": "light_to_medium",
+      "color": "#B0C4DE",
+      "movement": "downward_with_slight_wind",
+      "constant": true
+    },
+    "rain_on_window": {
+      "type": "ambient",
+      "source": "window_glass",
+      "pattern": "streaking_drops",
+      "location": "interior_window"
+    },
+    "dust_motes": {
+      "type": "ambient",
+      "source": "window_light_beam",
+      "density": "sparse",
+      "color": "#F5F5DC",
+      "movement": "gentle_drift"
+    },
+    "cigarette_smoke": {
+      "type": "ambient",
+      "source": "fergus_ashtray",
+      "density": "wisp",
+      "color": "#D3D3D3",
+      "movement": "rising_drift"
+    }
+  },
+  
+  "lighting_system": {
+    "exterior_day": {
+      "primary": {
+        "color": "#B0C4DE",
+        "intensity": 0.6,
+        "source": "overcast_sky"
+      },
+      "note": "Gray Irish overcast"
+    },
+    "interior": {
+      "primary": {
+        "color": "#F5F5DC",
+        "intensity": 0.4,
+        "source": "fluorescent_tubes"
+      },
+      "window_light": {
+        "color": "#B0C4DE",
+        "intensity": 0.3,
+        "source": "single_window"
+      },
+      "flicker_pattern": {
+        "frequency": "random_15_60s",
+        "type": "double_flash"
+      }
+    }
+  },
+  
+  "environmental_storytelling": {
+    "permanent_details": [
+      {
+        "element": "incident_counter",
+        "description": "DAYS SINCE LAST INCIDENT: 000. Never changes. Never will.",
+        "location": "wall_behind_counter"
+      },
+      {
+        "element": "board_of_shame",
+        "description": "Forty years of Polaroids. Forty years of warnings ignored.",
+        "location": "wall_left_of_entrance"
+      },
+      {
+        "element": "marys_photo",
+        "description": "Silver frame on desk. 'MARY - CLOVERLEAF '92' on back.",
+        "location": "fergus_desk"
+      },
+      {
+        "element": "cloverleaf_on_horizon",
+        "description": "Visible through window. Distant. Waiting.",
+        "location": "visible_through_window"
+      },
+      {
+        "element": "here_be_dragons_map",
+        "description": "Road map with aggressive red circle and handwritten warning.",
+        "location": "wall_right_of_counter"
+      }
+    ],
+    "dynamic_details": [
+      {
+        "element": "sheep_at_window",
+        "description": "Occasionally a sheep appears in the window, staring.",
+        "trigger": "random_interval",
+        "meaning": "The sheep knows."
+      }
+    ]
+  },
+  
+  "view_from_location": {
+    "window_view": {
+      "elements": [
+        "gravel_parking_lot",
+        "rental_cars_in_various_states",
+        "country_road_leading_east",
+        "distant_cloverleaf_roundabout"
+      ],
+      "cloverleaf_description": "A complex tangle of roads approximately 1km away. Cars can be seen circling. Some have been circling for a very long time.",
+      "atmospheric_note": "The Cloverleaf is always visible. A constant reminder. A patient predator."
+    }
+  }
+}

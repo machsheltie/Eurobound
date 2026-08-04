@@ -1,0 +1,2882 @@
+{
+  "schema_version": "1.0",
+  "world_name": "debaucheryville",
+  "last_updated": "2025-10-01",
+  "locations": {
+    "debaucheryville_arcade_maintenance_closet_01": {
+      "location_id": "debaucheryville_arcade_maintenance_closet_01",
+      "display_name": "Debaucheryville Arcade Maintenance Closet 01",
+      "npcs_present": [],
+      "interactive_objects": [],
+      "environmental_interactions": []
+    },
+    "debaucheryville_cirque_mystery_cart_01": {
+      "location_id": "debaucheryville_cirque_mystery_cart_01",
+      "display_name": "Debaucheryville Cirque Mystery Cart 01",
+      "npcs_present": [],
+      "interactive_objects": [],
+      "environmental_interactions": []
+    },
+    "debaucheryville_clocktower_arcade_01": {
+      "location_id": "debaucheryville_clocktower_arcade_01",
+      "display_name": "Absinthe Arcade",
+      "npcs_present": [
+        {
+          "npc_id": "backpack_girl_who_never_left",
+          "location_zone": "main_floor_center",
+          "availability": "always",
+          "primary_interaction": "couchsurf_offer",
+          "dialogue_samples": [
+            "I got high and accidentally joined a DAO",
+            "This place accepted crypto before it was a currency… or a cult",
+            "My futon's under buzzing CRTs. Very authentic.",
+            "This is the only place to properly decompress after a 12-hour session"
+          ],
+          "behavioral_patterns": {
+            "host_npc": "backpack_girl_who_never_left",
+            "couchsurf_mechanics": {
+              "couchsurf_invitation_nft_consequences": true,
+              "morning_scene": "wake_futon_buzzing_crts_led_strips_she_gone"
+            }
+          }
+        },
+        {
+          "npc_id": "twitchy_hacker_types",
+          "location_zone": "corners_and_alcoves",
+          "availability": "random_encounters",
+          "primary_interaction": "cryptic_half_jokes",
+          "dialogue_samples": [
+            "Gas fees don't matter when you're this wasted.",
+            "I minted that at 3:17 AM. Peak creativity hours.",
+            "These slippage fees are INSANE!"
+          ],
+          "behavioral_patterns": {
+            "trigger": "interaction_with_twitchy_hackers",
+            "crypto_commentary_dialogue_trees": true
+          }
+        },
+        {
+          "npc_id": "edm_ghosts",
+          "location_zone": "scattered_throughout",
+          "availability": "night_only",
+          "primary_interaction": "atmospheric_dialogue",
+          "atmospheric_role": "spectral_ravers",
+          "behavioral_patterns": {
+            "volume_changes": "based_on_time_of_night_and_nearby_party_activity"
+          }
+        },
+        {
+          "npc_id": "npc_speedrunners_foot_soakers",
+          "location_zone": "bucket_area",
+          "availability": "random_encounters",
+          "primary_interaction": "foot_soak_commentary",
+          "dialogue_samples": [
+            "The citrus cleaner really helps with the controller grip",
+            "I've seen things in this room that would make Twitch chat weep"
+          ],
+          "behavioral_patterns": {
+            "shared_foot_soak": "can_be_used_simultaneously_with_speedrunner_npcs",
+            "gaming_culture_bonding": "unlocks_additional_dialogue_with_speedrunners"
+          }
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "rigged_absinthe_claw_machine",
+          "location": "prominent_main_floor_position",
+          "type": "rigged_prize_machine",
+          "description": "Primary NFT Hunt location with intentionally difficult physics",
+          "interaction_type": "mini_game",
+          "special_mechanics": {
+            "rigged_mechanics": {
+              "claw_strength": "weakened_deliberately",
+              "drop_zones": "prizes_fall_into_unreachable_areas",
+              "strategy_required": "timing_and_positioning_over_luck"
+            },
+            "acquisition_method": "rigged_claw_machine_strategy_game",
+            "target_nft": "beer_pong_saint_relic"
+          },
+          "audio_cue": "claw_machine_sounds_authentic_prize_dispensing_audio_effects",
+          "visual_effects": "flickering_pink_led_above_claw_machine_when_unlocked"
+        }
+      ]
+    },
+    "debaucheryville_gilded_square_shadow_exchange_01": {
+      "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
+      "npcs_present": [
+        {
+          "npc_id": "mrs_rata_main_clerk",
+          "location_zone": "main_counter_position",
+          "availability": "always_present_during_business_hours",
+          "primary_interaction": "currency_exchange_black_market_services",
+          "dialogue_samples": [
+            "Cash speaks. Whining does not.",
+            "Today I pay you in trust; tomorrow we settle in interest.",
+            "Exchange rate? Depends how loudly you asked.",
+            "Verification fee is non-negotiable. Your reputation precedes you.",
+            "Business is business. Sentiment is expensive."
+          ],
+          "behavioral_patterns": {
+            "professional_detachment": "treats_illegal_transactions_as_mundane_paperwork",
+            "calculator_obsession": "constantly_checking_multiple_calculators_for_rates",
+            "paperwork_stamping": "stamps_mismatched_forms_with_bureaucratic_precision"
+          },
+          "inventory": [
+            "grease_proof_napkins",
+            "electrolyte_packs",
+            "forged_wristband_area_access"
+          ]
+        },
+        {
+          "npc_id": "the_uv_man",
+          "location_zone": "counterfeit_detection_station",
+          "availability": "intermittent_testing_services",
+          "primary_interaction": "counterfeit_detection_tool_sales",
+          "dialogue_samples": [
+            "This bill glows wrong. Try again next week.",
+            "UV never lies. People? Different story.",
+            "Pocket wand? Fifty coins. Knowledge? Priceless.",
+            "That's not counterfeit. That's just expired.",
+            "Light reveals truth. Darkness hides profit."
+          ],
+          "services": [
+            "item_authenticity_testing_for_fee",
+            "pocket_uv_wand_sales"
+          ],
+          "special_mechanics": {
+            "uv_scan_timing_mini_game": "quick_reaction_counterfeit_identification",
+            "tool_distribution": "pocket_uv_wand_enables_detection_other_locations"
+          }
+        },
+        {
+          "npc_id": "token_goblin",
+          "location_zone": "arcade_transit_specialist_corner",
+          "availability": "specializes_non_traditional_currencies",
+          "primary_interaction": "token_card_chip_trading",
+          "dialogue_samples": [
+            "Tokens are the future. Coins are the past.",
+            "Midnight queue-skip? You look desperate enough.",
+            "Transit cards expire. Regret is forever.",
+            "Arcade tokens buy happiness. Temporarily.",
+            "Tap Dat Vault chips: single use, maximum chaos."
+          ],
+          "inventory": [
+            "arcade_tokens",
+            "transit_cards",
+            "tap_dat_vault_queue_skip_chips_single_use_midnight_only"
+          ]
+        },
+        {
+          "npc_id": "cryptobro69_ex",
+          "location_zone": "front_main_counter_screaming",
+          "availability": "couchsurf_interaction_trigger",
+          "primary_interaction": "couchsurf_invitation_nft_consequences",
+          "dialogue_samples": [
+            "These slippage fees are INSANE!",
+            "You're better looking than him, but dumber.",
+            "My futon's under buzzing CRTs. Very authentic.",
+            "Gas fees don't matter when you're this wasted.",
+            "I minted that at 3:17 AM. Peak creativity hours."
+          ],
+          "couchsurf_mechanics": {
+            "invitation_trigger": "mid_scream_about_slippage_fees",
+            "morning_scene": "wake_futon_buzzing_crts_led_strips_she_gone",
+            "consequences": [
+              "gain_nft_2_pixelated_kebab_monkey_scratched",
+              "apply_hungover_status",
+              "lose_25_gold_missing_cab_voucher"
+            ],
+            "satirical_beat": "nft_metadata_minted_0317_am_gas_fee_dont_worry_about_it"
+          }
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "split_flap_rate_board",
+          "location": "central_wall_constantly_updating",
+          "type": "currency_exchange_mini_game_system",
+          "description": "rate board of split flap letters clacks every few seconds updating exchange rates and broker mood",
+          "interaction_type": "timing_based_mini_game_rate_optimization",
+          "special_mechanics": {
+            "green_tick_timing": "interact_during_green_ticks_improved_rates",
+            "red_tick_avoidance": "red_ticks_worsen_exchange_rates",
+            "street_rep_charm_influence": "stats_nudge_board_temporary_rate_improvements",
+            "broker_mood_display": "rates_fluctuate_based_market_psychology"
+          },
+          "audio_cue": "clacking_mechanical_split_flap_updates"
+        },
+        {
+          "object_id": "shadow_ledger_duct_tape",
+          "location": "illuminated_desk_single_lamp",
+          "type": "nft_hunt_quest_integration",
+          "description": "ledger bound in duct tape integrates nft hunt clue trail",
+          "interaction_type": "quest_item_inspection_nft_acquisition",
+          "special_mechanics": {
+            "nft_hunt_prerequisite": "must_have_started_nft_sidequest_access_content",
+            "vip_wristband_png_acquisition": "provides_specific_nft_hunt_item",
+            "clue_trail_progression": "advances_broader_treasure_hunt_system"
+          },
+          "quest_integration": "central_component_nft_collection_system"
+        },
+        {
+          "object_id": "crt_monitor_wall_live_markets",
+          "location": "back_wall_pixelized_data_display",
+          "type": "atmospheric_market_information_system",
+          "description": "crt monitors show pixelized live markets kebab prices nightclub cover charges meme coin candles rising crashing",
+          "interaction_type": "market_data_observation_atmospheric_immersion",
+          "special_mechanics": {
+            "kebab_price_tracking": "shows_food_vendor_market_fluctuations",
+            "nightclub_cover_charges": "displays_entertainment_venue_pricing",
+            "meme_coin_candles": "cryptocurrency_parody_market_data",
+            "pixelized_aesthetic": "retro_crt_display_enhances_underground_atmosphere"
+          }
+        },
+        {
+          "object_id": "wooden_counters_currency_trays",
+          "location": "throughout_market_stalls",
+          "type": "barter_window_trading_system",
+          "description": "wooden counters inlaid with scratched glass under each pane sits a tray of odd currencies coins transit cards casino chips arcade tokens",
+          "interaction_type": "barter_trading_system_currency_exchange",
+          "special_mechanics": {
+            "multi_currency_support": "accepts_kebab_coins_tokens_cards_chips_various_alternative_currencies",
+            "glass_inspection": "scratched_glass_shows_wear_from_constant_currency_handling",
+            "tray_organization": "each_currency_type_sorted_into_separate_compartments",
+            "exchange_rate_display": "real_time_rates_displayed_on_integrated_mini_screens"
+          },
+          "currencies_accepted": [
+            "kebab_coins_primary",
+            "arcade_tokens",
+            "transit_cards_various_cities",
+            "casino_chips_underground_gaming",
+            "concert_wristbands_expired_unused",
+            "metro_day_passes",
+            "tap_dat_vault_queue_skip_chips"
+          ],
+          "barter_mechanics": {
+            "counterfeit_detection_required": "some_trades_require_uv_scan_timing_check",
+            "verification_fees": "optional_verification_fee_for_suspicious_items",
+            "reputation_influence": "street_rep_charm_stats_affect_barter_success_rates",
+            "risk_reward_scaling": "higher_value_trades_increase_notoriety_threshold"
+          }
+        }
+      ],
+      "quest_integration": {
+        "nft_hunt_system": {
+          "shadow_ledger_access": "requires_nft_sidequest_active_flag",
+          "vip_wristband_png_acquisition": "inspect_duct_tape_ledger_for_nft_item",
+          "clue_trail_progression": "advances_broader_treasure_hunt_quest_line"
+        },
+        "couchsurfing_chronicles": {
+          "cryptobro69_ex_trigger": "mid_scream_about_slippage_fees_at_counter",
+          "invitation_mechanic": "better_looking_but_dumber_pickup_line",
+          "morning_consequences": {
+            "location": "futon_under_buzzing_crts_led_strips",
+            "item_gained": "nft_02_pixelated_kebab_monkey_scratched",
+            "status_applied": "hungover",
+            "gold_lost": 25,
+            "satirical_metadata": "minted_0317_am_gas_fee_dont_worry_about_it"
+          }
+        },
+        "great_doner_debate": {
+          "quest_hook": "overheard_kebab_price_arguments_on_crt_monitors",
+          "cross_location_connection": "mystery_meat_cart_debate_continuation"
+        },
+        "premium_stock_unlock": {
+          "trigger": "count_velvet_absinthe_defeated",
+          "hidden_gate_location": "back_counter_behind_mrs_rata",
+          "premium_items": [
+            "saint_of_low_sodium_medal_alt_source",
+            "velvet_rope_clip_duplicate_build_crafting",
+            "forged_duty_free_receipt_shop_discounts"
+          ]
+        }
+      },
+      "risk_reward_mechanics": {
+        "notoriety_system": {
+          "threshold_tracking": "each_transaction_raises_lowers_notoriety_meter",
+          "verification_fee_trigger": "hit_threshold_demands_gold_or_item_payment",
+          "reputation_reset": "successful_transactions_lower_notoriety_over_time"
+        },
+        "shady_contracts": {
+          "buy_a_favor": {
+            "cost": 50,
+            "effect": "reduce_area_enemy_aggro_10_minutes",
+            "satirical_description": "pay_to_make_problems_temporarily_disappear"
+          },
+          "sell_your_dignity": {
+            "cost": "embarrassed_status_condition",
+            "reward": "one_time_exchange_rate_boost",
+            "satirical_beat": "barter_with_your_pride_for_financial_gain"
+          }
+        }
+      },
+      "mobile_optimization": {
+        "touch_zones": {
+          "rate_board_interaction": "96x96_minimum_comfortable_thumb_tap",
+          "barter_counter_access": "full_width_bottom_third_easy_reach",
+          "npc_dialogue_triggers": "64x64_minimum_character_interaction"
+        },
+        "performance_considerations": {
+          "crt_effects_scalable": "disable_on_lower_end_devices",
+          "particle_density_adaptive": "smoke_effects_reduce_based_frame_rate",
+          "audio_streaming": "ambient_sounds_load_on_demand_not_preloaded"
+        }
+      }
+    },
+    "debaucheryville_tapdatvault_01": {
+      "location_id": "debaucheryville_tapdatvault_01",
+      "display_name": "TapDatVault",
+      "npcs_present": [
+        {
+          "npc_id": "bartender_vape_rig_lanyard",
+          "location_zone": "behind_bar_vapor_dispenser",
+          "availability": "always_present_during_brewery_hours",
+          "primary_interaction": "vapor_brew_dispenser_satirical_exposition",
+          "character_design": "bartender_wearing_vape_rig_on_lanyard_insists_on_inhaling_not_drinking",
+          "dialogue_samples": [
+            "We don't serve beer — we inhale it.",
+            "The vapor captures the essence. The beer part? Optional.",
+            "This isn't vaping. This is experimental brewing.",
+            "Chemistry lab meets nightclub. What could go wrong?",
+            "Grease fingers are a sign of quality absorption."
+          ],
+          "function": "vapor_brew_dispenser_after_boss_defeat",
+          "recurring_presence": "may_appear_in_other_brewery_locations_as_traveling_vapor_mixologist",
+          "behavioral_patterns": {
+            "deadpan_delivery": "treats_vaping_beer_as_legitimate_brewing_innovation",
+            "vape_rig_obsession": "constantly_adjusts_lanyard_vape_equipment",
+            "chemistry_pretension": "references_fermentation_science_for_vapor_culture"
+          }
+        },
+        {
+          "npc_id": "dj_zombie_glitching_01",
+          "location_zone": "dj_booth_area",
+          "availability": "atmospheric_presence_throughout",
+          "primary_interaction": "cryptic_hints_rhythm_puzzle",
+          "character_design": "glitching_appearance_movement_synced_to_music_beat",
+          "dialogue_samples": [
+            "Brew… lag… inhale th-the vibe… ✨limited edition fizzpack✨",
+            "The beat… reveals… the pressure… timing is…",
+            "Sync… or sink… the vapor… knows…",
+            "Bass drop… truth drop… same thing…"
+          ],
+          "function": "provide_cryptic_hints_about_rhythm_puzzle_in_fragmented_speech",
+          "behavioral_patterns": {
+            "glitching_speech": "sentence_fragments_with_glitch_effects",
+            "beat_synchronized": "movement_and_speech_timed_to_music",
+            "feeds_cyberpunk_atmosphere": "reinforces_nightclub_brewery_aesthetic"
+          }
+        },
+        {
+          "npc_id": "dj_zombie_glitching_02",
+          "location_zone": "near_fermentation_chambers",
+          "availability": "atmospheric_presence_throughout",
+          "primary_interaction": "atmospheric_character_reinforcing_theme",
+          "character_design": "glitching_appearance_rhythm_reactive_movement",
+          "dialogue_samples": [
+            "The vats… they pulse… with bass… and regret…",
+            "Midnight… only… the algorithm… demands it…",
+            "Circuit boards… ferment… digital hops…",
+            "Your timing… questionable… like mine…"
+          ],
+          "function": "atmospheric_characters_reinforcing_cyberpunk_nightclub_brewery_theme",
+          "behavioral_patterns": {
+            "fragmented_commentary": "cryptic_observations_about_location",
+            "rhythm_reactive": "poses_and_movements_sync_to_beat",
+            "plays_along": "treats_vape_brewery_as_legitimate_venue"
+          }
+        },
+        {
+          "npc_id": "techno_monk_01",
+          "location_zone": "half_visible_in_vapor_clouds",
+          "availability": "atmospheric_presence_throughout",
+          "primary_interaction": "existential_vapor_commentary",
+          "character_design": "half_visible_figure_emerging_from_vapor_clouds",
+          "dialogue_samples": [
+            "Inhale the void… exhale your doubts…",
+            "The vapor knows your search history…",
+            "Fermentation is transformation… or just marketing…",
+            "You paid to breathe flavored air… worth it…"
+          ],
+          "function": "atmospheric_characters_feeding_tech_bro_vapor_culture_satire",
+          "behavioral_patterns": {
+            "vapor_mysticism": "treats_vaping_as_spiritual_experience",
+            "tourist_exploitation": "collects_money_while_feeding_pretension",
+            "fragmented_wisdom": "cryptic_statements_about_vapor_culture"
+          }
+        },
+        {
+          "npc_id": "techno_monk_02",
+          "location_zone": "near_brewing_vat_subwoofers",
+          "availability": "atmospheric_presence_throughout",
+          "primary_interaction": "tech_culture_satire",
+          "character_design": "half_visible_rhythm_reactive_figure",
+          "dialogue_samples": [
+            "The algorithm favors those who sync…",
+            "Your metadata is delicious… I mean your order…",
+            "Bass frequencies unlock chakras… probably…",
+            "We're all just NPCs in someone's livestream…"
+          ],
+          "function": "atmospheric_tech_culture_commentary",
+          "behavioral_patterns": {
+            "tech_mysticism": "treats_technology_as_spiritual_force",
+            "plays_along": "reinforces_nightclub_brewery_pretension",
+            "rhythm_synced": "movements_pulse_with_music"
+          }
+        },
+        {
+          "npc_id": "fridge_livestreamer",
+          "location_zone": "inside_industrial_fermentation_chamber",
+          "availability": "always_streaming_throughout",
+          "primary_interaction": "social_media_influencer_satire",
+          "character_design": "guy_livestreaming_from_inside_fermentation_chamber",
+          "dialogue_samples": [
+            "Yo chat, this fermentation chamber is INSANE, dropping bits for the algorithm",
+            "Subscribe for more brewery content, notification squad!",
+            "Chat says this is the best vapor spot in Debaucheryville",
+            "Donating 5 kebab coins gets you a custom emote reaction",
+            "The bass from these vats is hitting different tonight"
+          ],
+          "function": "social_media_influencer_culture_satire_in_brewery_context",
+          "behavioral_patterns": {
+            "constant_streaming": "never_stops_broadcasting_to_chat",
+            "donation_obsession": "mentions_bits_and_donations_constantly",
+            "algorithm_worship": "everything_for_content_and_engagement"
+          },
+          "special_mechanics": {
+            "donation_easter_egg": "can_donate_bits_for_useless_emote_reactions",
+            "chat_interaction": "displays_scrolling_chat_messages_on_screen"
+          }
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "hologram_you_are_brewtiful_wall",
+          "type": "selfie_prop",
+          "location_zone": "behind_dj_booth_vip_area",
+          "interaction_text": "Pose with the glitching hologram wall",
+          "unlock_condition": "defeat_strobe_brewmistress_boss",
+          "visual_effect": "party_poses_with_glitching_hologram_text_neon_cyberpunk_background",
+          "achievement_integration": "contributes_to_photography_collection_system",
+          "special_mechanics": {
+            "glitch_animation": "random_glitch_effect_during_photo",
+            "photo_opportunity": "triggers_screenshot_mode_with_cyberpunk_filters",
+            "neon_backdrop": "cyan_pink_purple_color_scheme"
+          }
+        },
+        {
+          "object_id": "brewing_vat_subwoofer_central",
+          "type": "environmental_object",
+          "location_zone": "center_of_room",
+          "interaction_text": "Examine the brewing vat that doubles as a massive subwoofer",
+          "description": "The vats pulse with bass so heavy you feel it in your chest. LED displays show fermentation data that makes no sense. This is either genius or a health code violation.",
+          "audio_cue": "heavy_bass_thump_continuous",
+          "special_mechanics": {
+            "bass_visualization": "vat_pulses_synced_to_music_beat",
+            "rhythm_puzzle_focus": "central_to_vapor_pressure_puzzle",
+            "led_display_nonsense": "shows_absurd_brewing_metrics"
+          }
+        },
+        {
+          "object_id": "fermentation_chamber_rhythm_interface",
+          "type": "puzzle_mechanic",
+          "location_zone": "along_walls",
+          "interaction_text": "Sync button presses to maintain vapor pressure",
+          "description": "Rhythm indicators scroll across fermentation chamber screens. Match the beat or get ejected. Three strikes and you're out.",
+          "audio_cue": "glitchy_techno_track_with_timing_markers",
+          "special_mechanics": {
+            "rhythm_challenge": "press_buttons_synced_to_scrolling_indicators",
+            "failure_tracking": "3_failed_attempts_ejects_player",
+            "success_progression": "access_to_boss_encounter_area",
+            "difficulty_scaling": "adjusts_based_on_previous_rhythm_performance"
+          }
+        },
+        {
+          "object_id": "vault_door_entrance",
+          "type": "location_entrance",
+          "location_zone": "beneath_clocktower_plaza",
+          "interaction_text": "Wait for midnight to access the vault",
+          "unlock_condition": "bottle_opener_keychain_in_inventory_and_midnight_game_time",
+          "description": "Large metal vault door with neon graffiti. Countdown glyphs show time until next opening. Bass thumps from within.",
+          "audio_cue": "bass_pulse_muffled_through_door",
+          "cutscene_text": "A bass drop echoes as the vault creaks open. You step into what feels like a nightclub inside a GPU.",
+          "special_mechanics": {
+            "midnight_only_access": "door_opens_only_at_00_00_game_time",
+            "countdown_timer": "glyphs_display_time_until_next_access",
+            "entrance_reveal": "4_frame_door_opening_animation"
+          }
+        },
+        {
+          "object_id": "vip_vapor_lounge_door",
+          "type": "area_unlock",
+          "location_zone": "behind_fermentation_chambers",
+          "interaction_text": "Enter the VIP vapor lounge",
+          "unlock_condition": "defeat_strobe_brewmistress_boss",
+          "description": "Neon VIP sign flickers above locked door. Post-boss, this becomes the hologram selfie prop area.",
+          "audio_cue": "electronic_unlock_chime",
+          "special_mechanics": {
+            "post_boss_access": "unlocked_after_strobe_brewmistress_defeated",
+            "selfie_prop_location": "hologram_wall_inside_vip_area"
+          }
+        },
+        {
+          "object_id": "neon_piping_grid_network",
+          "type": "atmospheric_element",
+          "location_zone": "floor_to_ceiling_throughout",
+          "interaction_text": "Examine the pulsing neon piping",
+          "description": "Neon tubes run floor-to-ceiling creating grid patterns. They pulse with the music like the whole brewery is breathing.",
+          "audio_cue": "electrical_hum_synced_to_pulse",
+          "special_mechanics": {
+            "rhythm_reactive": "pulses_synced_to_music_beat",
+            "lighting_system": "primary_source_of_neon_atmosphere",
+            "cyberpunk_aesthetic": "creates_grid_pattern_visual_style"
+          }
+        }
+      ],
+      "environmental_interactions": [
+        {
+          "trigger_id": "vault_door_midnight_opening",
+          "type": "location_entrance",
+          "location": "beneath_clocktower_plaza",
+          "requirement": {
+            "item": "bottle_opener_keychain",
+            "time": "midnight_00_00_game_time"
+          },
+          "effect": "reveal_tapdatvault_entrance",
+          "audio_cue": "vault_door_opening_bass_drop",
+          "dialogue": "A bass drop echoes as the vault creaks open. You step into what feels like a nightclub inside a GPU."
+        },
+        {
+          "trigger_id": "glitched_brew_ad_bot_spawn",
+          "type": "mini_mob_encounter",
+          "location": "random_encounter_throughout_brewery",
+          "spawn_condition": "player_interacting_with_rhythm_puzzle",
+          "enemy": "glitched_brew_ad_bot",
+          "combat_timer": "3_turns_to_stun_or_lose_random_item",
+          "dialogue": "✨UNBOX A LIMITED-EDITION FOAM BOOSTER✨",
+          "audio_cue": "spam_ad_jingle_glitching",
+          "special_mechanics": {
+            "crt_monitor_head": "enemy_has_crt_display_showing_ads",
+            "ad_banner_drones": "floating_banners_orbit_enemy",
+            "item_theft_mechanic": "random_inventory_item_removed_if_not_defeated",
+            "satirical_beat": "literal_advertising_as_hostile_enemy"
+          }
+        },
+        {
+          "trigger_id": "rhythm_reactive_environment",
+          "type": "visual_effect",
+          "location": "throughout_entire_brewery",
+          "trigger": "music_beat_continuous",
+          "effect": "lights_pulse_steam_bursts_npc_movement_syncs_to_rhythm",
+          "description": "Everything rhythm-reactive: lights pulse, steam bursts from vats, NPCs move in sync with the beat.",
+          "special_mechanics": {
+            "dynamic_environment": "all_elements_respond_to_music_timing",
+            "immersive_atmosphere": "creates_nightclub_inside_gpu_feeling",
+            "accessibility_toggle": "can_be_reduced_for_motion_sensitivity"
+          }
+        }
+      ],
+      "boss_encounter": {
+        "boss_id": "strobe_brewmistress",
+        "trigger_location": "center_brewing_area_after_rhythm_puzzle",
+        "encounter_type": "sound_wave_attack_rhythm_boss",
+        "combat_mechanics": {
+          "sound_wave_attacks": {
+            "description": "Dodge sound-wave attacks timed to music beat, counter during vulnerable phases",
+            "attack_patterns": "bass_drops_create_aoe_damage_high_frequency_attacks_target_individuals",
+            "rhythm_requirement": "attacks_synced_to_music_must_dodge_on_beat",
+            "visual_feedback": "sound_wave_ripple_effects_show_attack_timing"
+          },
+          "embarrassed_status_application": {
+            "spotlight_attack": "applies_embarrassed_status_with_spotlight_that_freezes_players",
+            "application_frequency": "every_3_turns",
+            "duration": "2_turns",
+            "strategic_challenge": "manage_embarrassed_status_while_dodging_sound_waves"
+          },
+          "vulnerable_phases": {
+            "trigger": "after_bass_drop_aoe_attack",
+            "duration": "2_turns",
+            "strategy": "counter_attack_during_vulnerable_window",
+            "visual_cue": "brewmistress_stumbles_after_bass_drop"
+          }
+        },
+        "victory_conditions": "defeat_within_15_turns",
+        "defeat_conditions": "entire_party_embarrassed_simultaneously_or_wiped_out",
+        "rewards": [
+          {
+            "item_id": "vape_stout",
+            "type": "consumable_brew",
+            "effects": {
+              "sp_restore": "restores_sp",
+              "glow_up_aura": "charm_defense_plus_1",
+              "grease_fingers_chance": 0.3
+            },
+            "description": "powerful_buff_with_trade_off_debuff_requires_tactical_timing"
+          },
+          {
+            "unlock_id": "hologram_you_are_brewtiful_selfie_access",
+            "type": "photo_opportunity",
+            "description": "unlocks_selfie_prop_in_vip_vapor_lounge"
+          },
+          {
+            "quest_progress": "brewery_tour_quest_progression_2_of_4",
+            "achievement": "strobe_brewmistress_defeated_achievement"
+          }
+        ],
+        "audio_direction": "intense_glitchy_techno_with_sound_wave_attack_effects",
+        "visual_effects": "strobe_lighting_sound_wave_ripples_bass_drop_screen_shake",
+        "environmental_changes": {
+          "during_battle": "rhythm_reactive_effects_intensify_strobe_lighting_dominates",
+          "post_victory": "lighting_calms_to_normal_nightclub_atmosphere_vip_access_granted"
+        }
+      },
+      "quest_integration": {
+        "brewery_tour_debaucheryville": {
+          "quest_id": "continental_beer_master_debaucheryville_arc",
+          "completion_tracking": "tapdatvault_2_of_4_complete",
+          "next_brewery": "brewery_location_03_tbd",
+          "achievement_unlock": "strobe_brewmistress_defeated_vapor_enthusiast",
+          "cross_brewery_connection": "each_brewery_provides_unique_brew_different_strategic_effects"
+        }
+      },
+      "status_effect_management": {
+        "grease_fingers_status": {
+          "sources": [
+            "vape_stout_consumption_30_percent",
+            "failed_rhythm_puzzle_attempts"
+          ],
+          "gameplay_effect": "minus_10_percent_accuracy_items_occasionally_slip_during_combat",
+          "duration": "2_minutes_or_until_washed",
+          "cure_methods": [
+            "wait_for_expiration",
+            "wash_at_sink_if_available",
+            "specific_cleansing_item"
+          ],
+          "satirical_commentary": "vape_residue_mechanically_represented_in_gameplay",
+          "stacking_behavior": "multiple_applications_extend_duration"
+        },
+        "embarrassed_status": {
+          "sources": [
+            "strobe_brewmistress_spotlight_attacks"
+          ],
+          "gameplay_effect": "player_frozen_unable_to_act",
+          "duration": "2_turns",
+          "cure_methods": [
+            "wait_for_expiration",
+            "ally_encouragement_ability"
+          ],
+          "satirical_commentary": "spotlight_exposure_causes_paralysis",
+          "stacking_behavior": "does_not_stack_refreshes_duration"
+        },
+        "glow_up_aura": {
+          "sources": [
+            "vape_stout_consumption"
+          ],
+          "gameplay_effect": "charm_plus_1_defense_plus_1",
+          "duration": "5_turns_combat_or_10_minutes_exploration",
+          "strategic_use": "powerful_buff_offsets_grease_fingers_risk",
+          "satirical_commentary": "vaping_makes_you_glow_literally"
+        }
+      },
+      "audio_design": {
+        "ambient_soundscape": [
+          "glitchy_techno_track_continuous",
+          "bass_thumping_from_subwoofer_vats",
+          "vapor_hissing_from_dispensers",
+          "electrical_hum_from_neon_piping",
+          "steam_pressure_release_cues"
+        ],
+        "music_style": "glitchy_techno_with_rhythm_game_timing_markers_bass_heavy_electronic",
+        "audio_transitions": {
+          "approaching_brewery": "muffled_bass_through_vault_door",
+          "rhythm_puzzle_active": "music_intensifies_timing_markers_prominent",
+          "boss_battle": "full_combat_intensity_sound_wave_attack_effects",
+          "post_victory": "triumphant_resolution_to_calmer_nightclub_theme"
+        },
+        "interactive_audio": [
+          "vault_door_opening_bass_drop",
+          "rhythm_button_press_sync_sounds",
+          "grease_fingers_application_squelch",
+          "embarrassed_status_spotlight_whoosh",
+          "vape_stout_consumption_vapor_inhale",
+          "hologram_selfie_glitch_chime"
+        ],
+        "comedy_audio_stingers": [
+          "achievement_vapor_enthusiast_unlocked_on_first_vape_stout",
+          "selfie_prop_glitch_effect_with_neon_chime",
+          "ad_bot_spam_jingle_attack"
+        ]
+      },
+      "social_media_integration": {
+        "screenshot_worthy_moments": [
+          "hologram_you_are_brewtiful_selfie_prop",
+          "cyberpunk_neon_grid_aesthetic",
+          "bass_pulsing_brewing_vats",
+          "strobe_brewmistress_sound_wave_attacks"
+        ],
+        "tiktok_potential": [
+          "rhythm_puzzle_attempts_compilation",
+          "pov_inhaling_beer_in_nightclub_brewery",
+          "dj_zombie_glitching_speech_fragments",
+          "fridge_livestreamer_donation_reactions"
+        ],
+        "twitter_hooks": [
+          "we_dont_serve_beer_we_inhale_it",
+          "nightclub_inside_a_gpu_quote",
+          "grease_fingers_status_effect_comedy",
+          "ad_bot_spam_attack_dialogue"
+        ],
+        "streaming_content": [
+          "rhythm_puzzle_first_playthrough_reactions",
+          "boss_battle_sound_wave_dodge_strategy",
+          "midnight_access_timing_coordination",
+          "vapor_brew_consumption_risk_reward_decisions"
+        ]
+      }
+    },
+    "debaucheryville_operaruins_velvetcurtainclub_nightclub_01": {
+      "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+      "display_name": "Velvet Curtain Club",
+      "npcs_present": [
+        {
+          "npc_id": "cybernetic_eyed_bouncer",
+          "location_zone": "entrance_velvet_rope_checkpoint",
+          "availability": "always_present_guarding_entrance",
+          "primary_interaction": "charisma_check_or_wristband_bribe_entry",
+          "character_design": "bouncer_with_glowing_cybernetic_eyes_evaluating_worthiness",
+          "dialogue_samples": [
+            "✨ Vibes Only. No Shoes? No Dignity? You're In.",
+            "Charisma check... *eye glow intensifies* ...you pass.",
+            "Concert wristband? Expired, but I respect the hustle. Welcome.",
+            "Sorry, the vibe's not right. Come back when you're... shinier.",
+            "Everyone's 22 in here. Remember that."
+          ],
+          "function": "entry_gate_keeper_charisma_stat_check_or_item_bribe",
+          "behavioral_patterns": {
+            "robotic_monotone": "speaks_with_detached_cybernetic_assessment",
+            "eye_glow_evaluation": "cybernetic_eyes_scan_player_stats",
+            "selective_enforcement": "accepts_bribes_while_maintaining_exclusive_facade"
+          },
+          "special_mechanics": {
+            "charisma_gate": "plus_1_charisma_required_OR_expired_concert_wristband",
+            "alternative_entry": "wristband_bribe_bypasses_stat_check",
+            "rejection_dialogue": "low_charisma_players_get_turned_away"
+          }
+        },
+        {
+          "npc_id": "vape_witch_vanessa",
+          "location_zone": "crushed_velvet_booth_corner",
+          "availability": "couchsurf_trigger_nightclub_exploration",
+          "primary_interaction": "couchsurf_invitation_crystal_nft_quiz",
+          "character_design": "crystal_nft_collector_constantly_vaping_peach_mango",
+          "dialogue_samples": [
+            "My crystals told me you'd vibe here tonight.",
+            "This vape? It's infused with chakra alignment technology.",
+            "I collect NFTs, but only the ones with spiritual resonance.",
+            "Pop quiz: Which crystal corresponds to blockchain energy?",
+            "Close your eyes. I'm about to cleanse your aura... with vapor."
+          ],
+          "function": "couchsurf_encounter_with_morning_quiz_mechanic",
+          "behavioral_patterns": {
+            "crystal_obsession": "references_nft_collection_mixed_with_spirituality",
+            "vape_mysticism": "treats_vaping_as_spiritual_practice",
+            "quiz_giver": "tests_player_knowledge_for_couchsurf_outcome"
+          },
+          "special_mechanics": {
+            "couchsurf_trigger": "meet_during_nightclub_exploration",
+            "morning_scene": "exhales_peach_mango_vape_into_mouth_cleansing",
+            "quiz_mechanic": "answer_crystal_nft_quiz_for_outcome",
+            "success_reward": "plus_10_sp_and_vanessa_quiz_passed_flag",
+            "failure_penalty": "confused_status_and_vanessa_quiz_failed_flag",
+            "gag_item": "charged_quartz_vape_tip"
+          }
+        },
+        {
+          "npc_id": "influencer_performing_ritual",
+          "location_zone": "dance_floor_center",
+          "availability": "side_event_peak_night_hours",
+          "primary_interaction": "influencer_blood_ritual_event",
+          "character_design": "fake_goth_influencer_with_phone_livestream_setup",
+          "dialogue_samples": [
+            "*livestreaming* Okay chat, we're summoning engagement now!",
+            "By the power of absinthe and aesthetic, bring me followers!",
+            "Wait, someone's watching who isn't subscribed? Awkward.",
+            "The algorithm demands sacrifice! *pours absinthe dramatically*",
+            "Chat says this is cringe but I'm committed now."
+          ],
+          "function": "side_event_satirizing_influencer_follower_obsession",
+          "behavioral_patterns": {
+            "fake_occult": "performs_ritual_while_checking_phone_constantly",
+            "follower_obsessed": "references_engagement_metrics_during_spirituality",
+            "embarrassment_potential": "can_be_exposed_as_fake_for_content"
+          },
+          "special_mechanics": {
+            "player_choice": "support_ritual_expose_as_fake_or_ignore",
+            "expose_outcome": "influencer_receives_embarrassed_status",
+            "support_outcome": "follower_count_jokes_ritual_fails_anyway",
+            "satirical_beat": "commodifying_spirituality_for_social_media"
+          }
+        },
+        {
+          "npc_id": "club_patron_sound_alchemist",
+          "location_zone": "near_dj_broken_throne",
+          "availability": "atmospheric_dialogue_throughout",
+          "primary_interaction": "pretentious_music_commentary",
+          "character_design": "patron_in_ravewear_explaining_dj_is_sound_alchemist",
+          "dialogue_samples": [
+            "He said he was a 'sound alchemist.' I think that means DJ.",
+            "This glitchy lounge-techno? It's deconstructing capitalism.",
+            "You wouldn't understand the frequencies. They're very niche.",
+            "I only listen to music that challenges my perception of reality."
+          ],
+          "function": "atmospheric_npc_providing_dialogue_gems",
+          "behavioral_patterns": {
+            "pretentious_terminology": "uses_elaborate_terms_for_simple_concepts",
+            "music_snobbery": "treats_dj_as_artistic_genius",
+            "insists_young": "claims_to_be_22_despite_being_35"
+          }
+        },
+        {
+          "npc_id": "club_patron_emotional_damage",
+          "location_zone": "crushed_velvet_booth",
+          "availability": "atmospheric_dialogue_throughout",
+          "primary_interaction": "cocktail_philosophy",
+          "character_design": "patron_in_thrifted_opera_cloak_holding_elaborate_drink",
+          "dialogue_samples": [
+            "I only drink cocktails made with rare emotional damage.",
+            "This absinthe contains the tears of my last relationship.",
+            "The bartender is a mood mixologist. Very exclusive.",
+            "You can taste the existential dread. Notes of regret."
+          ],
+          "function": "atmospheric_npc_providing_dialogue_gems",
+          "behavioral_patterns": {
+            "cocktail_pretension": "treats_drinks_as_emotional_experiences",
+            "thrifted_luxury": "wears_opera_house_costume_pieces",
+            "age_denial": "insists_being_22_while_clearly_mid_30s"
+          }
+        },
+        {
+          "npc_id": "dj_sound_alchemist",
+          "location_zone": "broken_throne_dais",
+          "availability": "always_present_during_night_hours",
+          "primary_interaction": "pretentious_dj_announcements",
+          "character_design": "dj_on_broken_throne_playing_glitchy_lounge_techno",
+          "dialogue_samples": [
+            "I don't play music. I transmute vibrations into experiences.",
+            "This next track is about the deconstruction of late capitalism.",
+            "Feel the frequencies penetrating your chakras.",
+            "I studied sound alchemy in Berlin. Very underground."
+          ],
+          "function": "atmospheric_character_establishing_nightclub_pretension",
+          "behavioral_patterns": {
+            "sound_alchemist_title": "refuses_to_be_called_dj",
+            "pretentious_track_intro": "explains_deep_meaning_of_every_song",
+            "broken_throne_aesthetic": "throne_symbolizes_decaying_luxury"
+          }
+        },
+        {
+          "npc_id": "vip_bathroom_bouncers",
+          "location_zone": "staff_only_curtain_entrance",
+          "availability": "always_guarding_bathroom",
+          "primary_interaction": "bravado_check_bathroom_access",
+          "character_design": "two_buffed_out_bouncers_flanking_staff_only_curtain",
+          "dialogue_samples": [
+            "Staff only. Unless you've got the confidence to belong.",
+            "VIP bathroom. Bravado check required.",
+            "You look like you can handle luxury. Go ahead.",
+            "Not today. Come back when you're feeling bolder."
+          ],
+          "function": "bravado_gate_for_vip_bathroom_nft_discovery",
+          "behavioral_patterns": {
+            "ignore_unless_stat": "only_acknowledge_players_with_bravado",
+            "stat_evaluators": "assess_confidence_levels",
+            "tech_bro_sponsored": "guard_bathroom_with_ironic_seriousness"
+          },
+          "special_mechanics": {
+            "bravado_check": "requires_bravado_stat_to_bypass",
+            "bathroom_access": "unlocks_nft_discovery_area",
+            "failure_response": "turned_away_until_stat_increased"
+          }
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "vape_pen_crystal_chandeliers",
+          "type": "atmospheric_centerpiece",
+          "location_zone": "overhead_throughout_club",
+          "interaction_text": "Examine the chandeliers",
+          "description": "Those are... vape pens. Hundreds of crushed vape pens welded together with crystal teardrops. Someone decided this was luxury.",
+          "audio_cue": "metallic_clink_crystal_chime",
+          "special_mechanics": {
+            "comedy_reveal": "player_realizes_luxury_decor_is_literal_vape_pen_trash",
+            "lighting_source": "primary_atmospheric_chandelier_glow"
+          }
+        },
+        {
+          "object_id": "gold_plated_stripper_pole_coat_rack",
+          "type": "comedy_interactive_object",
+          "location_zone": "near_entrance_multiple_locations",
+          "interaction_text": "Use the coat rack",
+          "description": "The coat check is... avant-garde. These are gold-plated stripper poles serving as coat racks. You hang your jacket on repurposed club equipment.",
+          "dialogue_reaction": "Creative use of existing infrastructure, I guess?",
+          "audio_cue": "metallic_pole_clink_coat_rustle",
+          "special_mechanics": {
+            "comedy_beat": "stripper_poles_repurposed_as_luxury_coat_storage",
+            "visual_gag": "coats_draped_on_obvious_stripper_pole_equipment"
+          }
+        },
+        {
+          "object_id": "neon_aphorism_sign_real_party",
+          "type": "atmospheric_philosophy",
+          "location_zone": "walls_throughout_club",
+          "interaction_text": "Read neon sign",
+          "description": "Flickering neon proclaims: 'The Real Party's In Your Head.' Profound nightclub philosophy or excuse for mediocre experience? You decide.",
+          "audio_cue": "neon_buzz_flicker_bass_pulse",
+          "special_mechanics": {
+            "bass_reactive": "flicker_pattern_syncs_to_club_music",
+            "pseudo_philosophy": "nightclub_wisdom_as_decoration"
+          }
+        },
+        {
+          "object_id": "crushed_velvet_booths_led_underglow",
+          "type": "seating_area_atmospheric",
+          "location_zone": "semicircular_booth_areas",
+          "interaction_text": "Sit in booth",
+          "description": "Semicircular crushed velvet booths lit from underneath with flickering LEDs. The underglow pulses to the bass, creating retro-luxury atmosphere despite obvious wear.",
+          "audio_cue": "velvet_rustle_led_hum",
+          "special_mechanics": {
+            "led_underglow_pulse": "continuous_bass_reactive_lighting",
+            "social_hub_seating": "npc_encounter_proximity_zones"
+          }
+        },
+        {
+          "object_id": "broken_throne_dj_dais",
+          "type": "atmospheric_centerpiece",
+          "location_zone": "raised_platform_center_club",
+          "interaction_text": "Observe the DJ",
+          "description": "A DJ plays glitchy lounge-techno remixes from a dais shaped like a broken throne. He calls himself a 'sound alchemist' with complete seriousness.",
+          "audio_cue": "turntable_scratch_glitchy_bass_loop",
+          "special_mechanics": {
+            "music_source": "club_atmospheric_audio_origin",
+            "comedy_observation": "pretentious_dj_terminology_vs_reality"
+          }
+        },
+        {
+          "object_id": "staff_only_curtain_vip_bathroom",
+          "type": "bravado_gate_entrance",
+          "location_zone": "hidden_behind_main_floor",
+          "interaction_text": "Approach Staff Only curtain",
+          "requirement": {
+            "stat": "bravado",
+            "value": 1
+          },
+          "description": "Red velvet curtain marked 'STAFF ONLY' in cracked embroidery. Two buffed-out bouncers flank the entrance, sizing you up.",
+          "success_dialogue": "The bouncers step aside. You pass the Bravado check.",
+          "failure_dialogue": "The bouncers don't budge. You need more Bravado to bypass them.",
+          "audio_cue": "bouncer_grunt_curtain_swoosh",
+          "special_mechanics": {
+            "bravado_check": "stat_gate_requiring_confidence_stat",
+            "nft_discovery_gate": "access_to_bathroom_qr_code_nft_2"
+          }
+        },
+        {
+          "object_id": "vip_bathroom_qr_code_graffiti",
+          "type": "nft_discovery_hidden_item",
+          "location_zone": "vip_stall_interior",
+          "interaction_text": "Examine cracked tile",
+          "unlock_condition": "bravado_check_passed_bathroom_access",
+          "description": "One cracked tile peels back, revealing a QR code underneath. Graffiti surrounds it: 'ROI = Regret On Investment', 'Buy Low, Cry High', startup ideas scribbled everywhere.",
+          "hidden_item": "nft_2_pixelated_kebab_monkey",
+          "audio_cue": "tile_crack_qr_scan_beep",
+          "special_mechanics": {
+            "nft_discovery": "scan_qr_code_reveals_nft_2_collectible",
+            "drunk_state_visual": "champagne_drip_overlay_when_drunk",
+            "hungover_bonus": "pixel_kebab_icon_fisto_lore_snippet"
+          }
+        },
+        {
+          "object_id": "tech_bro_sponsorship_plaque",
+          "type": "comedy_environmental_storytelling",
+          "location_zone": "vip_bathroom_entrance",
+          "interaction_text": "Read sponsorship plaque",
+          "description": "Faux-brass plaque reads: 'VIP Stall generously sponsored by Tech Bros Who Can't Hold Their Liquor.' At least they're honest about something.",
+          "dialogue_reaction": "This bathroom has corporate sponsors. For tech bros. Who admit they can't handle alcohol. What timeline is this?",
+          "audio_cue": "metallic_plaque_tap",
+          "special_mechanics": {
+            "satirical_reveal": "vip_bathroom_financing_exposed_as_absurd",
+            "tech_bro_comedy": "crypto_culture_meets_nightclub_pretension"
+          }
+        }
+      ],
+      "environmental_interactions": [
+        {
+          "trigger_id": "charisma_gate_entry_check",
+          "type": "stat_check_or_bribe",
+          "location": "velvet_rope_checkpoint_entrance",
+          "requirement": {
+            "stat": "charisma",
+            "value": 1
+          },
+          "alternative": {
+            "item": "expired_concert_wristband"
+          },
+          "success_effect": "grant_entry_to_velvet_curtain_club",
+          "failure_effect": "bouncer_denies_entry_player_must_increase_stat_or_find_bribe",
+          "audio_cue": "bouncer_approval_grunt_or_rejection_silence",
+          "dialogue": {
+            "success": "Vibes detected. You may enter.",
+            "failure": "Insufficient vibes. Come back when you've got more Charisma or a concert wristband to bribe me with.",
+            "bribe": "Ah, expired wristband. Classic. Go ahead."
+          },
+          "special_mechanics": {
+            "tutorial_integration": "teaches_stat_checks_and_alternative_entry_mechanics",
+            "satirical_commentary": "nightclub_exclusivity_as_gameplay_obstacle"
+          }
+        },
+        {
+          "trigger_id": "influencer_blood_ritual_event",
+          "type": "side_event_player_choice",
+          "location": "center_dance_floor_peak_hours",
+          "spawn_condition": "player_present_during_20_00_to_02_00",
+          "npc": "influencer_blood_ritual_performer",
+          "player_choices": [
+            {
+              "choice": "expose_as_fake",
+              "dialogue": "This is fake mysticism for follower engagement. You're literally livestreaming.",
+              "outcome": "embarrassed_status_influencer_follower_count_drops",
+              "reward": "social_media_credibility_reputation_increase"
+            },
+            {
+              "choice": "support_ritual",
+              "dialogue": "The algorithm demands sacrifice! I believe in your mystical journey!",
+              "outcome": "temporary_charisma_buff_plus_2_for_5_minutes",
+              "reward": "influencer_shouts_out_player_social_media_clout"
+            },
+            {
+              "choice": "ignore",
+              "dialogue": "Not my circus, not my monkeys. Keep walking.",
+              "outcome": "no_consequence_event_continues_background",
+              "reward": "none"
+            }
+          ],
+          "audio_cue": "livestream_notification_sounds_mystical_music_parody",
+          "special_mechanics": {
+            "satirical_beat": "influencer_culture_commodifying_spirituality",
+            "social_media_commentary": "follower_metrics_as_ritual_success_measure"
+          }
+        },
+        {
+          "trigger_id": "vape_witch_vanessa_couchsurf_invitation",
+          "type": "couchsurf_encounter_trigger",
+          "location": "near_crushed_velvet_booths",
+          "spawn_condition": "player_explores_club_during_peak_hours",
+          "npc": "vape_witch_vanessa",
+          "dialogue_sequence": [
+            "You look like you need somewhere to sleep. I have a futon and a crystal NFT collection.",
+            "Answer my quiz about crystal NFTs correctly and you can crash at my place.",
+            "Get it wrong and you'll wake up Confused. Your choice."
+          ],
+          "acceptance_trigger": "player_agrees_to_quiz_and_couchsurf",
+          "quiz_mechanic": {
+            "question_count": 3,
+            "topic": "crystal_nft_mysticism_trivia",
+            "success_outcome": {
+              "sp_restore": 10,
+              "gag_item": "charged_quartz_vape_tip",
+              "flag": "vanessa_quiz_passed"
+            },
+            "failure_outcome": {
+              "status": "confused",
+              "duration": 120,
+              "flag": "vanessa_quiz_failed"
+            }
+          },
+          "morning_scene": {
+            "description": "she_exhales_peach_mango_vape_into_your_mouth_calling_it_a_cleansing",
+            "audio_cue": "vape_exhale_hiss_mystical_chime",
+            "flag_set": "couchsurf_vanessa_done"
+          },
+          "audio_cue": "vape_cloud_whoosh_crystal_chime",
+          "special_mechanics": {
+            "quiz_system": "crystal_nft_trivia_branching_outcomes",
+            "couchsurf_trigger": "leads_to_morning_scene_with_consequences"
+          }
+        },
+        {
+          "trigger_id": "bass_pulsating_curtain_entrance",
+          "type": "atmospheric_entrance",
+          "location": "heavy_velvet_curtain_door",
+          "trigger": "player_first_entry_to_club",
+          "effect": "curtain_pulses_outward_with_bass_drops",
+          "cutscene_text": "You push through the heavy velvet curtain, and bass hits you like a physical force. Burgundy fog swirls around your ankles. Somewhere overhead, chandeliers made of crushed vape pens glitter like regret crystallized into decor.",
+          "audio_cue": "bass_impact_burgundy_fog_whoosh",
+          "special_mechanics": {
+            "bass_reactive": "curtain_animation_synced_to_club_music",
+            "atmospheric_reveal": "establishes_retro_luxury_decaying_glamor_theme"
+          }
+        },
+        {
+          "trigger_id": "drunk_state_champagne_drip_overlay",
+          "type": "status_visual_enhancement",
+          "location": "vip_bathroom_graffiti",
+          "trigger": "player_has_drunk_status_while_viewing_graffiti",
+          "effect": "text_drips_champagne_with_bubble_particle_overlay",
+          "animation": "3_frame_drip_cycle_upward_floating_bubbles",
+          "audio_cue": "champagne_fizz_bubble_pop",
+          "special_mechanics": {
+            "drunk_vision": "graffiti_appears_luxurious_and_exclusive_when_impaired",
+            "bonus_lore": "reveals_additional_crypto_commentary"
+          }
+        },
+        {
+          "trigger_id": "hungover_fisto_lore_snippet",
+          "type": "status_lore_unlock",
+          "location": "vip_bathroom_graffiti",
+          "trigger": "player_has_hungover_status_while_viewing_graffiti",
+          "effect": "pixel_kebab_icon_appears_unlocks_fisto_quote",
+          "lore_snippet": "Woke up here with champagne rash and a cease & desist from my liver. - Fistø",
+          "contribution": "unlocks_part_of_greasy_prophet_title_progression",
+          "audio_cue": "kebab_sizzle_mystical_echo",
+          "special_mechanics": {
+            "collection_system": "reading_all_hungover_graffiti_completes_fisto_arc",
+            "title_progression": "contributes_to_greasy_prophet_achievement"
+          }
+        }
+      ],
+      "quest_integration": {
+        "couchsurfing_chronicles": {
+          "quest_id": "couchsurf_vape_witch_vanessa",
+          "npc": "vape_witch_vanessa",
+          "trigger_location": "velvet_curtain_club",
+          "morning_scene": "peach_mango_vape_exhale_cleansing",
+          "quiz_mechanic": "crystal_nft_questions",
+          "success_flag": "vanessa_quiz_passed_plus_10_sp",
+          "failure_flag": "vanessa_quiz_failed_confused_status",
+          "completion_flag": "couchsurf_vanessa_done"
+        },
+        "nft_hunt": {
+          "quest_id": "nft_hunt_bathroom_discovery",
+          "nft_number": 2,
+          "nft_name": "pixelated_kebab_monkey",
+          "discovery_location": "vip_bathroom_cracked_tile",
+          "requirement": "bravado_check_bathroom_access",
+          "graffiti_bonus": "crypto_nostalgia_comedy",
+          "drunk_effect": "champagne_drip_text_overlay",
+          "hungover_bonus": "fisto_lore_snippet_unlock"
+        },
+        "fisto_lore_collection": {
+          "quest_id": "the_greasy_prophet_title",
+          "hungover_graffiti": "vip_bathroom_pixel_kebab_icon",
+          "lore_snippet": "woke_up_champagne_rash_cease_desist_liver",
+          "contribution": "one_of_multiple_hungover_graffiti_reads"
+        }
+      },
+      "status_effect_management": {
+        "confused_status_vape": {
+          "sources": [
+            "vape_witch_vanessa_quiz_failure",
+            "excessive_vape_cloud_exposure"
+          ],
+          "gameplay_effect": "controls_reversed_or_randomized_confusion",
+          "duration": "3_minutes_or_clarity_item",
+          "cure_methods": [
+            "wait_for_expiration",
+            "clarity_potion",
+            "fresh_air_outside_club"
+          ],
+          "satirical_commentary": "vape_culture_causing_literal_confusion"
+        },
+        "embarrassed_status_ritual": {
+          "sources": [
+            "influencer_blood_ritual_exposure",
+            "charisma_check_failure_rejection"
+          ],
+          "gameplay_effect": "social_interaction_penalties_charm_reduction",
+          "duration": "5_minutes_or_confidence_boost",
+          "cure_methods": [
+            "wait_for_expiration",
+            "confidence_restoring_item",
+            "successful_social_interaction"
+          ],
+          "satirical_commentary": "social_media_exposure_as_status_effect"
+        }
+      },
+      "audio_design": {
+        "ambient_soundscape": [
+          "glitchy_lounge_techno_bass_thumping",
+          "vape_clouds_hissing",
+          "burgundy_fog_machines_whooshing",
+          "neon_buzz_flickering",
+          "led_underglow_electrical_hum"
+        ],
+        "interactive_audio": [
+          {
+            "object": "bass_pulsating_curtain",
+            "sound": "bass_impact_curtain_swoosh",
+            "trigger": "entrance_animation"
+          },
+          {
+            "object": "gold_stripper_pole_coat_rack",
+            "sound": "metallic_pole_clink_coat_rustle",
+            "trigger": "player_interaction"
+          },
+          {
+            "object": "vape_pen_chandeliers",
+            "sound": "metallic_clink_crystal_chime",
+            "trigger": "examination"
+          },
+          {
+            "object": "neon_aphorism_sign",
+            "sound": "neon_buzz_bass_pulse_sync",
+            "trigger": "reading_interaction"
+          },
+          {
+            "object": "vip_bathroom_qr_code",
+            "sound": "tile_crack_qr_scan_beep",
+            "trigger": "nft_discovery"
+          },
+          {
+            "object": "champagne_drip_overlay",
+            "sound": "champagne_fizz_bubble_pop",
+            "trigger": "drunk_state_viewing_graffiti"
+          }
+        ],
+        "npc_voice_direction": {
+          "cybernetic_bouncer": "robotic_monotone_slightly_menacing",
+          "vape_witch_vanessa": "breathy_ethereal_vape_speak_crystal_obsession",
+          "club_patrons": "age_denial_pretentious_nightclub_culture_various_voices",
+          "influencer": "over_enthusiastic_livestream_energy_fake_mysticism",
+          "dj_sound_alchemist": "pretentious_audio_engineering_terminology"
+        },
+        "comedy_audio_stingers": [
+          {
+            "trigger": "first_entry_charisma_check_passed",
+            "sound": "achievement_vibes_only_unlocked",
+            "description": "satirical_fanfare_for_passing_arbitrary_vibe_test"
+          },
+          {
+            "trigger": "first_stripper_pole_coat_rack_interaction",
+            "sound": "comedy_sting_realization",
+            "description": "musical_emphasis_on_absurd_repurposing"
+          },
+          {
+            "trigger": "nft_2_discovery",
+            "sound": "triumphant_nft_discovery_chime",
+            "description": "victory_music_for_finding_collectible"
+          },
+          {
+            "trigger": "vanessa_quiz_passed",
+            "sound": "couchsurf_success_fanfare",
+            "description": "successful_quiz_completion_reward"
+          }
+        ]
+      },
+      "social_media_integration": {
+        "screenshot_worthy_moments": [
+          "vape_pen_chandeliers_overhead_shot",
+          "gold_stripper_pole_coat_racks_comedy",
+          "vip_bathroom_graffiti_roi_regret",
+          "neon_aphorism_sign_real_party_in_head",
+          "burgundy_fog_dance_floor_aesthetic"
+        ],
+        "tiktok_potential": [
+          "pov_realize_chandeliers_are_vape_pens",
+          "charisma_check_fail_at_velvet_rope_compilation",
+          "reading_vip_bathroom_graffiti_drunk_vs_hungover",
+          "everyone_insists_theyre_22_reactions"
+        ],
+        "viral_elements": [
+          "vibes_only_entrance_philosophy",
+          "sound_alchemist_dj_quote",
+          "emotional_damage_cocktails_quote",
+          "roi_equals_regret_graffiti",
+          "coat_rack_stripper_poles_absurdity"
+        ]
+      },
+      "npc_dialogue_gems": [
+        {
+          "npc": "club_patron_sound_alchemist",
+          "dialogue": "He said he was a 'sound alchemist.' I think that means DJ.",
+          "trigger": "player_near_broken_throne_dj_dais",
+          "satirical_purpose": "mock_pretentious_dj_terminology"
+        },
+        {
+          "npc": "club_patron_emotional_damage_cocktails",
+          "dialogue": "I only drink cocktails made with rare emotional damage.",
+          "trigger": "player_near_semicircular_booths",
+          "satirical_purpose": "satirize_pretentious_cocktail_culture"
+        },
+        {
+          "npc": "club_patron_age_denial",
+          "dialogue": "What do you mean I'm 37? I'm clearly 22. Look at my crop top.",
+          "trigger": "player_on_dance_floor",
+          "satirical_purpose": "mock_nightclub_age_denial_culture"
+        },
+        {
+          "npc": "vape_witch_vanessa",
+          "dialogue": "Peach-mango vape is a cleansing ritual. Trust me.",
+          "trigger": "couchsurf_invitation_interaction",
+          "satirical_purpose": "vape_culture_as_pseudo_mysticism"
+        },
+        {
+          "npc": "cybernetic_eyed_bouncer",
+          "dialogue": "Vibes Only. No Shoes? No Dignity? You're In.",
+          "trigger": "entrance_sign_reading",
+          "satirical_purpose": "nightclub_philosophy_as_entry_criteria"
+        }
+      ],
+      "icq_integration": {
+        "cryptomamixxx_messages": {
+          "trigger_locations": [
+            "vip_bathroom_stall_interaction",
+            "main_club_area_after_30_seconds",
+            "examining_vape_pen_chandeliers",
+            "reading_neon_aphorism_signs"
+          ],
+          "message_samples": [
+            {
+              "sender": "CryptoMamiXXX",
+              "content": "lmao u paid for VIP bathroom access? That's literally a toilet with gold paint",
+              "timing": "after_first_vip_bathroom_visit",
+              "satirical_purpose": "external_commentary_mocking_player_choices"
+            },
+            {
+              "sender": "CryptoMamiXXX",
+              "content": "The chandeliers r crushed vape pens bro. VAPE PENS. This place is a scam lol",
+              "timing": "after_examining_chandeliers",
+              "satirical_purpose": "expose_luxury_decor_as_trash"
+            },
+            {
+              "sender": "CryptoMamiXXX",
+              "content": "Everyone here thinks they're 22. Narrator: They were not 22.",
+              "timing": "after_patron_age_denial_dialogue",
+              "satirical_purpose": "narrator_voice_exposing_delusions"
+            },
+            {
+              "sender": "CryptoMamiXXX",
+              "content": "ROI = Regret On Investment. The graffiti is literally telling u the truth bro",
+              "timing": "after_reading_vip_bathroom_graffiti",
+              "satirical_purpose": "highlight_obvious_warnings_bros_ignore"
+            }
+          ],
+          "nft_affinity_protection": {
+            "trigger": "accessing_vip_bathroom_viewing_graffiti",
+            "duration": 300,
+            "effect": "protection_from_grifted_status_icq_scam_resistance",
+            "satirical_commentary": "bathroom_access_provides_crypto_scam_immunity_while_mocking_nft_culture"
+          }
+        }
+      },
+      "cross_quest_integration": {
+        "nft_hunt_connection": {
+          "nft_discovery": "vip_bathroom_qr_code_reveals_nft_2_pixelated_kebab_monkey",
+          "quest_prerequisite": "must_have_started_nft_sidequest_to_scan_qr_codes",
+          "clue_trail_component": "integrates_broader_nft_treasure_hunt_system",
+          "rival_trio_integration": "nft_can_be_sent_via_icq_for_embarrassed_status"
+        },
+        "couchsurfing_chronicles": {
+          "vanessa_encounter": "crystal_nft_quiz_couchsurf_invitation",
+          "morning_scene": "peach_mango_vape_cleansing_ritual",
+          "completion_tracking": "couchsurf_vanessa_done_flag"
+        },
+        "fisto_lore_collection": {
+          "hungover_graffiti": "vip_bathroom_contributes_to_greasy_prophet_title",
+          "network_integration": "one_of_multiple_locations_revealing_fisto_backstory",
+          "title_unlock": "collecting_all_hungover_snippets_completes_arc"
+        }
+      }
+    },
+    "debaucheryville_velvetcurtain_brew_lab_01": {
+      "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+      "npcs_present": [
+        {
+          "npc_id": "robotic_bartender_tap_dancer",
+          "location_zone": "ceiling_rails_between_flavor_consoles",
+          "availability": "always_present_continuously_dancing",
+          "primary_interaction": "brew_vendor_with_glitch_behavior",
+          "character_design": "robotic_bartender_on_ceiling_rails_tap_dancing_between_stations_corporate_enthusiasm",
+          "dialogue_samples": [
+            "Today's special: artisanal foam crafted by neural networks! Gluten-free not guaranteed.",
+            "Brewvolution™ means never having to say 'I understand the recipe.'",
+            "ERROR 404: Flavor not found. Dispensing substitute. Enjoy!",
+            "Our AI sommelier is currently optimizing... please standby for beer.",
+            "Blockchain-verified freshness! *glitches* Or was it? I forget."
+          ],
+          "function": "brew_vendor_sells_blockchain_bock_experimental_brews",
+          "recurring_presence": "may_appear_in_tech_themed_locations_traveling_robot",
+          "behavioral_patterns": {
+            "never_stops_moving": "continuously_tap_dances_on_rails_between_sales",
+            "corporate_enthusiasm": "overly_cheerful_speak_ignores_obvious_malfunctions",
+            "glitch_behavior": "every_3rd_purchase_glitches_gives_random_algorithm_archive_item",
+            "buzzword_integration": "intersperses_sales_with_startup_jargon"
+          }
+        },
+        {
+          "npc_id": "cryptobro69_passed_out",
+          "location_zone": "near_brewbot_wreckage_post_boss_defeat",
+          "availability": "appears_only_after_brewbot_defeated",
+          "primary_interaction": "couchsurf_invitation_trigger",
+          "character_design": "passed_out_tech_bro_surrounded_by_broken_monitors_and_cables",
+          "dialogue_samples": [
+            "Bro... you just saved my algorithm... crash at my place while I rebuild...",
+            "That BrewBot was version 6.9... I'm already planning 7.0...",
+            "*mumbles about gas fees and market cap*",
+            "You broke my bot but saved my vision, bro. Respect.",
+            "My apartment's just upstairs. Well, it's an office. Well, it's a corner."
+          ],
+          "function": "couchsurf_host_post_boss_encounter",
+          "recurring_presence": "may_reference_brewbot_rebuild_in_future_encounters",
+          "behavioral_patterns": {
+            "tech_obsession": "immediately_starts_planning_next_ai_iteration_despite_failure",
+            "borrowed_money": "borrows_player_gold_for_server_costs_during_sleep",
+            "startup_delusion": "treats_total_failure_as_learning_opportunity_pivot"
+          }
+        },
+        {
+          "npc_id": "algorithm_archive_guardian",
+          "location_zone": "behind_brewbot_console_hidden_door",
+          "availability": "appears_only_after_boss_defeat_guards_loot_room",
+          "primary_interaction": "grants_access_to_bonus_loot",
+          "character_design": "holographic_ai_assistant_flickering_corporate_facade",
+          "dialogue_samples": [
+            "Congratulations on defeating the previous iteration. Would you like to purchase the next one?",
+            "Algorithm Archive access granted. Please ignore the lawsuit documentation.",
+            "Our neural networks predicted you would win. With 12% confidence.",
+            "The archive contains our greatest achievements. And some evidence we'd like destroyed.",
+            "Enjoy your loot. It's been blockchain-verified as 'probably legitimate.'"
+          ],
+          "function": "loot_room_access_guardian_satirical_exposition",
+          "behavioral_patterns": {
+            "corporate_ai": "speaks_in_friendly_corporate_jargon_with_sinister_undertones",
+            "failed_predictions": "references_ai_predictions_that_were_obviously_wrong",
+            "evidence_disposal": "jokes_about_hiding_startup_failures"
+          }
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "flavor_console_interface",
+          "type": "mini_game_station",
+          "location_zone": "right_wall_ai_control_area",
+          "interaction_text": "Input your taste profile into the algorithm",
+          "unlock_condition": "none_available_immediately",
+          "description": "Sleek touchscreen console showing ingredient selection interface. Pressure gauge visible on right side. Random buzzwords scroll across top. 'Optimizing flavor vectors...' blinks constantly.",
+          "mini_game_trigger": "taste_profile_logic_puzzle",
+          "audio_cue": "beeping_ingredient_selection_pressure_alarm_buildup",
+          "special_mechanics": {
+            "ingredient_randomization": "9_bizarre_ingredient_slots_session_seed_based",
+            "pressure_gauge": "visible_meter_incorrect_selections_increase_foam_pressure",
+            "success_reward": "blockchain_bock_algorithm_archive_discount",
+            "failure_consequence": "foam_explosion_grease_fingers_15_min_lockout"
+          }
+        },
+        {
+          "object_id": "brewing_vat_bioluminescent_01",
+          "type": "environmental_object",
+          "location_zone": "left_wall_brewing_area",
+          "interaction_text": "Examine the glowing brewing vat",
+          "description": "Massive glass vat bubbling with bioluminescent green liquid. Labeled with blockchain address '0x7B3F9A...' instead of batch number. USB cables duct-taped to temperature sensors. Ethernet cord runs to router labeled 'DEFINITELY LEGITIMATE BREWING.'",
+          "audio_cue": "bubbling_liquid_server_fan_hum",
+          "special_mechanics": {
+            "bubbling_animation": "2_second_cycle_scales_with_pressure_gauge",
+            "blockchain_label": "meaningless_hex_code_changes_daily",
+            "visual_gag": "obvious_tech_startup_cosplay_over_normal_brewing"
+          }
+        },
+        {
+          "object_id": "failed_startup_motivational_poster",
+          "type": "atmospheric_satire",
+          "location_zone": "various_walls_throughout",
+          "interaction_text": "Read the motivational poster",
+          "random_dialogue": [
+            "'Disrupt the Thirst™' - with a beer tap logo that looks suspiciously like a generic icon.",
+            "'Synergize Your Palate' - featuring a stock photo of people laughing at salad.",
+            "'Move Fast and Brew Things' - signed by 'Management (2019-2019)'",
+            "'The Only Failure Is Not Pivoting' - with 'PIVOT' written over 'ICO' in marker."
+          ],
+          "audio_cue": "corporate_inspirational_jingle_glitched",
+          "special_mechanics": {
+            "randomized_posters": "different_poster_each_visit",
+            "failed_dates": "all_posters_reference_brief_company_timelines",
+            "satirical_commentary": "obvious_startup_culture_parody"
+          }
+        },
+        {
+          "object_id": "decommissioned_mining_rig_bottle_warmer",
+          "type": "environmental_easter_egg",
+          "location_zone": "corner_near_vats",
+          "interaction_text": "Examine the repurposed mining rig",
+          "description": "Stack of graphics cards jury-rigged into a bottle warming rack. Still has 'DOGE TO THE MOON' sticker. Fans whir pointlessly. Bottles placed on top are suspiciously warm.",
+          "random_dialogue": [
+            "This used to mine crypto. Now it mines... warmth?",
+            "The heat from failed investments keeps your beer at room temperature!",
+            "Energy inefficient bottle warming - the Brewvolution™ way."
+          ],
+          "audio_cue": "excessive_fan_noise",
+          "special_mechanics": {
+            "crypto_reference": "visual_gag_about_crypto_crash_repurposing",
+            "heat_generation": "actually_functional_as_bottle_warmer_despite_absurdity"
+          }
+        },
+        {
+          "object_id": "holographic_nft_beer_labels",
+          "type": "dynamic_display",
+          "location_zone": "wall_mounted_screens_above_vats",
+          "interaction_text": "Watch the holographic beer labels change",
+          "description": "Wall-mounted screens displaying beer labels as holographic NFT art. Images change based on 'market fluctuations.' Currently showing: distorted ape drinking beer, glitchy pizza slice, 'rare' wojak crying.",
+          "audio_cue": "digital_glitch_market_bell_ding",
+          "special_mechanics": {
+            "dynamic_labels": "beer_labels_change_every_30_seconds_based_on_session_time",
+            "nft_parody": "obvious_mockery_of_nft_art_trends",
+            "flavor_dictation": "labels_supposedly_determine_beer_flavor_obviously_random"
+          }
+        },
+        {
+          "object_id": "foam_spewing_3d_printer_selfie",
+          "type": "selfie_prop",
+          "location_zone": "algorithm_archive_bonus_room",
+          "interaction_text": "Pose with the malfunctioning beer printer",
+          "unlock_condition": "defeat_cryptobro_brewbot_access_archive",
+          "visual_effect": "party_poses_with_3d_printer_spewing_foam_tech_startup_aesthetic_background",
+          "achievement_integration": "contributes_to_photography_collection_debaucheryville_tech_satire",
+          "special_mechanics": {
+            "foam_cascade": "continuous_foam_spewing_animation_for_photo",
+            "photo_filters": "glitch_effect_blockchain_verified_watermark_options"
+          }
+        },
+        {
+          "object_id": "staff_only_velvet_rope_entrance",
+          "type": "location_entrance",
+          "location_zone": "velvet_curtain_club_basement_access",
+          "interaction_text": "Bypass the Staff Only rope",
+          "unlock_condition": "bottle_opener_keychain_OR_bravado_check_2_OR_charm_bouncer",
+          "description": "Velvet rope with glowing QR code pad. Holographic sign flickers. Surveillance camera shaped like beer tap watches entrance. Cold LED light leaks from door crack.",
+          "audio_cue": "qr_code_scan_beep_server_fan_hum",
+          "cutscene_text": "A robotic voice greets you: 'Welcome to the Brewvolution™ — your mouth is now under analysis.'",
+          "special_mechanics": {
+            "multiple_entry_methods": "keychain_OR_stat_check_OR_npc_charm",
+            "qr_code_animation": "glowing_pad_scans_player",
+            "camera_tracking": "beer_tap_camera_rotates_toward_player"
+          }
+        }
+      ],
+      "environmental_interactions": [
+        {
+          "trigger_id": "taste_profile_mini_game_start",
+          "type": "logic_puzzle",
+          "location": "flavor_console_interface",
+          "requirement": {
+            "none": "available_to_all"
+          },
+          "effect": "launch_ingredient_selection_puzzle_pressure_gauge_system",
+          "audio_cue": "console_boot_up_algorithm_processing",
+          "dialogue": "BREWVOLUTION™ TASTE PROFILE ANALYSIS: Please select three flavor components from the options below..."
+        },
+        {
+          "trigger_id": "fermenting_algorithm_spawn",
+          "type": "mini_mob_encounter",
+          "location": "near_flavor_console",
+          "spawn_condition": "taste_profile_pressure_gauge_60_percent_or_higher",
+          "enemy": "fermenting_algorithm_buzzword_cube",
+          "defeat_condition": "target_when_SYNERGY_buzzword_appears",
+          "dialogue": "Optimizing... taste vector... aligning synergies...",
+          "audio_cue": "corporate_buzzword_echo_glitch_sound",
+          "special_mechanics": {
+            "buzzword_vulnerability": "only_takes_damage_when_specific_word_displayed",
+            "status_application": "random_grease_fingers_thirsty_or_inspired",
+            "spawn_rate": "increases_with_higher_pressure_gauge_readings"
+          }
+        },
+        {
+          "trigger_id": "brewbot_boss_arena",
+          "type": "boss_encounter_trigger",
+          "location": "center_of_lab_after_mini_game_attempt",
+          "trigger_condition": "complete_taste_profile_OR_reach_100_percent_pressure",
+          "boss_id": "cryptobro69_brewbot",
+          "intro_dialogue": "Greetings, flavor-seekers! I am BrewBot v6.9, optimized for maximum disruption!",
+          "audio_cue": "dramatic_boss_intro_glitchy_electronic",
+          "special_mechanics": {
+            "three_phase_battle": "flavor_bombardment_buzzword_barrage_self_destruct",
+            "console_hacking": "mid_fight_flavor_console_interaction_triggers_self_destruct",
+            "alternative_victory": "defeat_through_combat_OR_incompatible_flavor_trigger"
+          }
+        },
+        {
+          "trigger_id": "robotic_bartender_glitch",
+          "type": "vendor_special_behavior",
+          "location": "ceiling_rails_throughout_lab",
+          "trigger": "every_3rd_purchase_from_robotic_bartender",
+          "effect": "vendor_glitches_dispenses_random_algorithm_archive_item_instead",
+          "audio_cue": "error_sound_followed_by_item_dispense",
+          "dialogue": "ERROR 404: Intended item not found. Dispensing... *CLICK* ...this instead!"
+        },
+        {
+          "trigger_id": "buzzword_announcement_system",
+          "type": "atmospheric_audio",
+          "location": "throughout_entire_lab",
+          "trigger": "every_10_seconds_random_interval",
+          "effect": "robotic_voice_interjects_random_buzzword",
+          "audio_samples": [
+            "Optimizing!",
+            "Blockchain verified!",
+            "Synergy achieved!",
+            "Disrupting paradigms!",
+            "Calculating... ROI positive!"
+          ],
+          "special_mechanics": {
+            "random_selection": "buzzwords_chosen_from_pool_no_repeats_within_60_sec",
+            "comedy_timing": "occasionally_interrupts_serious_moments",
+            "environmental_storytelling": "establishes_failed_startup_atmosphere"
+          }
+        }
+      ],
+      "boss_encounter": {
+        "boss_id": "cryptobro69_brewbot",
+        "trigger_location": "center_of_lab_main_floor",
+        "encounter_type": "three_phase_tech_boss_with_self_destruct_alternative",
+        "combat_mechanics": {
+          "phase_1_flavor_bombardment": {
+            "description": "Launches foam projectiles in bullet hell lite pattern",
+            "attack_pattern": "dodge_based_foam_spray_attacks",
+            "duration": "until_66_percent_hp",
+            "visual_effect": "foam_projectiles_with_blockchain_verification_labels"
+          },
+          "phase_2_buzzword_barrage": {
+            "description": "Summons Fermenting Algorithms while shouting market analysis",
+            "attack_pattern": "spawns_2_4_fermenting_algorithm_mini_mobs",
+            "duration": "66_to_33_percent_hp",
+            "dialogue_samples": [
+              "Summoning synergies! Optimizing disruption vectors!",
+              "Market analysis indicates... YOU'RE LOSING!",
+              "Blockchain verification... FAILURE IMMINENT!"
+            ],
+            "visual_effect": "algorithm_cubes_spawn_with_glitch_animation"
+          },
+          "phase_3_self_destruct_protocol": {
+            "description": "Overheats if incompatible flavors input via console, OR continue combat",
+            "combat_path": "continue_dodging_attacks_until_defeat",
+            "alternative_path": "hack_flavor_console_mid_fight_input_incompatible_combination",
+            "duration": "below_33_percent_hp_OR_console_hack_triggered",
+            "visual_effect": "overheating_red_glow_intensifies_foam_pressure_critical",
+            "victory_cutscene": "brewbot_explodes_in_foam_cascade_cryptobro69_crawls_from_wreckage"
+          }
+        },
+        "flavor_console_hacking": {
+          "availability": "accessible_during_entire_boss_fight",
+          "interaction": "player_can_leave_combat_briefly_to_input_incompatible_flavors",
+          "success_condition": "input_intentionally_wrong_combination_triggers_brewbot_overload",
+          "risk": "player_vulnerable_while_at_console_brewbot_continues_attacking",
+          "reward_bonus": "alternative_victory_grants_extra_blockchain_bock"
+        },
+        "victory_conditions": "defeat_through_combat_OR_trigger_self_destruct_via_console_hack",
+        "defeat_conditions": "entire_party_wiped_OR_foam_explosion_total_party_grease_fingers",
+        "rewards": [
+          {
+            "item_id": "blockchain_bock",
+            "quantity": 3,
+            "type": "consumable_brew",
+            "effects": {
+              "hp_restore": 20,
+              "gold_bonus": 10,
+              "tourist_trapped_status": true
+            },
+            "description": "solid_hp_recovery_with_gold_bonus_but_tourist_trapped_debuff_next_battle"
+          },
+          {
+            "unlock_id": "algorithm_archive_access",
+            "type": "bonus_loot_room",
+            "description": "hidden_room_behind_brewbot_console_rare_tech_items_nft_hunt_clue"
+          },
+          {
+            "unlock_id": "vape_stout_recipe",
+            "type": "cross_brewery_unlock",
+            "effect": "makes_vape_stout_available_at_tap_dat_vault_brewery",
+            "description": "brewery_network_progression_unlock"
+          },
+          {
+            "quest_progress": "brewery_tour_quest_4_of_4_complete",
+            "achievement": "continental_beer_master_debaucheryville_complete"
+          }
+        ],
+        "audio_direction": "glitchy_electronic_with_corporate_buzzwords_foam_cascade_finale",
+        "visual_effects": "foam_projectiles_algorithm_spawns_overheating_glow_explosion_cascade",
+        "environmental_changes": {
+          "during_battle": "led_pathways_pulse_faster_vat_bubbling_intensifies_buzzword_frequency_increases",
+          "post_victory": "lab_calms_buzzwords_stop_cryptobro69_appears_from_wreckage_couchsurf_trigger"
+        }
+      },
+      "quest_integration": {
+        "brewery_tour_debaucheryville": {
+          "quest_id": "continental_beer_master_debaucheryville_arc",
+          "completion_tracking": "brew_lab_4_of_4_complete",
+          "previous_brewery": "tap_dat_vault_brewery_03",
+          "achievement_unlock": "continental_beer_master_debaucheryville_achievement",
+          "cross_brewery_connection": "all_4_breweries_provide_unique_brews_complete_tour_bonus"
+        },
+        "nft_hunt_sidequest": {
+          "quest_id": "nft_treasure_hunt_debaucheryville",
+          "clue_location": "algorithm_archive_bonus_room_computer_terminal",
+          "nft_file": "distressed_ape_drinking_blockchain_bock_jpg",
+          "metadata_hint": "next_location_clue_in_hex_code_format"
+        },
+        "couchsurf_system": {
+          "host_id": "cryptobro69_himself",
+          "trigger": "post_boss_defeat_near_wreckage",
+          "accommodation": "failed_startup_office_with_sleeping_bag_rgb_gaming_chair",
+          "morning_consequences": {
+            "items_gained": [
+              "blockchain_bock_x2"
+            ],
+            "status_applied": "hungover",
+            "gold_lost": 15,
+            "satirical_beat": "he_borrowed_for_server_costs_apartment_is_corner_of_office"
+          }
+        }
+      },
+      "status_effect_management": {
+        "grease_fingers_status": {
+          "sources": [
+            "taste_profile_foam_explosion_failure",
+            "fermenting_algorithm_random_application",
+            "vape_stout_consumption_at_other_brewery"
+          ],
+          "gameplay_effect": "item_use_has_chance_to_fail_slippery_hands",
+          "duration": "3_turns_combat_or_120_seconds_exploration",
+          "cure_methods": [
+            "wait_for_expiration",
+            "towel_consumable_item",
+            "specific_party_member_cleaning_ability"
+          ],
+          "satirical_commentary": "Your hands are coated in algorithmic residue. Science!",
+          "visual_indicator": "green_foam_particle_effect_on_character_hands"
+        },
+        "tourist_trapped_status": {
+          "source": "blockchain_bock_consumption",
+          "gameplay_effect": "next_battle_enemy_gets_first_strike_advantage",
+          "duration": "until_next_combat_encounter",
+          "satirical_commentary": "You're so impressed by the tech you forgot to pay attention to your surroundings.",
+          "strategic_consideration": "use_blockchain_bock_carefully_before_boss_fights"
+        },
+        "thirsty_status": {
+          "source": "fermenting_algorithm_random_application",
+          "gameplay_effect": "sp_drain_over_time_2_per_turn",
+          "duration": "4_turns_or_until_consumable_used",
+          "cure_methods": [
+            "any_beverage_consumable",
+            "water_fountain_interaction"
+          ],
+          "satirical_commentary": "All this talk of optimization made you forget to hydrate."
+        },
+        "inspired_status": {
+          "source": "fermenting_algorithm_random_application",
+          "gameplay_effect": "attack_bonus_10_percent_startup_enthusiasm",
+          "duration": "3_turns",
+          "satirical_commentary": "You're filled with entrepreneurial spirit! And poor financial decisions!",
+          "visual_indicator": "lightbulb_particles_floating_above_character"
+        }
+      },
+      "audio_design": {
+        "ambient_soundscape": [
+          "server_fan_constant_hum",
+          "bubbling_brewing_vats",
+          "robotic_bartender_rail_clicks",
+          "keyboard_typing_background",
+          "buzzword_announcements_every_10_sec"
+        ],
+        "music_style": "glitchy_electronic_8bit_undertones_vaporwave_aesthetic_meets_megaman",
+        "audio_transitions": {
+          "entering_from_club": "club_bass_fades_to_server_hum_electronic_lab_theme",
+          "mini_game_active": "music_intensifies_pressure_gauge_buildup_tension",
+          "boss_battle": "aggressive_chiptune_combat_theme_corporate_buzzword_samples",
+          "post_victory": "triumphant_resolution_calms_to_ambient_lab_theme"
+        },
+        "interactive_audio": [
+          "flavor_console_ingredient_selection_beeps",
+          "pressure_gauge_alarm_buildup",
+          "foam_explosion_cascade_sound",
+          "brewbot_voice_lines_text_to_speech_quality",
+          "fermenting_algorithm_buzzword_echo",
+          "robotic_bartender_tap_dance_rhythm"
+        ],
+        "comedy_audio_stingers": [
+          "achievement_brewvolution_survived",
+          "buzzword_announcement_interrupting_serious_moment",
+          "robotic_bartender_glitch_error_sound",
+          "taste_profile_failure_comedic_explosion"
+        ]
+      },
+      "social_media_integration": {
+        "screenshot_worthy_moments": [
+          "foam_spewing_3d_printer_selfie_prop",
+          "robotic_bartender_tap_dancing_on_rails",
+          "brewbot_boss_introduction_pose",
+          "algorithm_archive_holographic_displays",
+          "taste_profile_mini_game_interface"
+        ],
+        "tiktok_potential": [
+          "pov_ai_analyzes_your_taste_in_prague",
+          "taste_profile_failure_foam_explosion_reactions",
+          "buzzword_announcement_compilation",
+          "robotic_bartender_glitch_moments"
+        ],
+        "twitter_hooks": [
+          "greetings_flavor_seekers_brewbot_quote",
+          "blockchain_verified_beer_absurdity",
+          "startup_motivational_poster_fails",
+          "algorithmic_residue_status_effect"
+        ],
+        "streaming_content": [
+          "taste_profile_mini_game_strategies",
+          "boss_battle_console_hack_vs_combat_paths",
+          "first_time_buzzword_reactions",
+          "couchsurf_morning_discovery"
+        ]
+      }
+    },
+    "debaucheryville_museum_meme_black_market_01": {
+      "location_id": "debaucheryville_museum_meme_black_market_01",
+      "display_name": "Meme Black Market",
+      "npcs_present": [
+        {
+          "npc_id": "memelord_exe",
+          "location_zone": "center_of_rgb_lit_den",
+          "availability": "always_present_after_vhs_shelf_opens",
+          "primary_interaction": "meme_economy_vendor_nostalgic_prophet",
+          "character_design": "half_human_half_adobe_flash_runtime_bleached_tips_guy_fieri_visor_fingerless_gloves_vapes_baja_blast",
+          "dialogue_samples": [
+            "Warning: I run on LimeWire and vengeance.",
+            "Hamster Dance is eternal, peasant.",
+            "My soul is encoded in Winamp skins and guilt.",
+            "Funcoland offered me $1.10 for my soul and two PS2 controllers.",
+            "I once hosted 12 gifs on Angelfire—simultaneously.",
+            "Wanna buy a rage comic that got me banned from Habbo Hotel?",
+            "YOLO'd into GeoCitiesCoin, AMA.",
+            "I got diamond hands and zero liquidity, baby."
+          ],
+          "function": "meme_economy_vendor_sells_summons_and_trinkets",
+          "recurring_presence": "may_appear_in_icq_messages_and_darkweb_lore",
+          "behavioral_patterns": {
+            "speaks_broken_internet_slang": "only_communicates_in_aim_away_messages_and_meme_speak",
+            "religious_reverence_for_memes": "treats_cursed_content_as_sacred_artifacts",
+            "continuous_vaping": "baja_blast_mist_constantly_present_around_character",
+            "dramatic_gravitas": "delivers_internet_garbage_with_prophetic_seriousness"
+          }
+        },
+        {
+          "npc_id": "404_bratnado_exe",
+          "location_zone": "unlocked_via_mememastery_meter_icq_only",
+          "availability": "appears_only_in_icq_after_mememastery_full_charge",
+          "primary_interaction": "combat_support_via_cursed_chain_mail",
+          "character_design": "corrupted_icq_contact_glitchy_avatar_chain_mail_specialist",
+          "dialogue_samples": [
+            "FWD:FWD:FWD: Send this to 10 friends or ur MP gone",
+            "This is not a drill. Forward or lose SP permanently.",
+            "Ancient curse activated. Enemy MP draining. Thx.",
+            "Chain unbroken since 2003. U welcome."
+          ],
+          "function": "combat_debuff_support_drains_enemy_mp_via_chain_mail",
+          "recurring_presence": "available_in_combat_after_unlock",
+          "behavioral_patterns": {
+            "sends_chain_mail": "combat_ability_drains_enemy_mp_through_cursed_forwards",
+            "corrupted_speech": "glitchy_text_and_broken_grammar",
+            "ancient_internet_entity": "treats_2003_as_sacred_origin_year"
+          }
+        },
+        {
+          "npc_id": "ascii_cat_guardian_01",
+          "location_zone": "ductwork_above_entrance",
+          "availability": "always_present_atmospheric_guardian",
+          "primary_interaction": "atmospheric_presence_no_dialogue",
+          "character_design": "ascii_art_cat_mounted_in_ductwork_eyes_follow_player",
+          "dialogue_samples": [],
+          "function": "environmental_storytelling_cursed_guardian_aesthetic",
+          "behavioral_patterns": {
+            "eye_tracking": "ascii_eyes_follow_player_movement",
+            "silent_judgment": "no_dialogue_just_ominous_presence",
+            "guardian_symbolism": "represents_early_internet_culture_watching"
+          }
+        },
+        {
+          "npc_id": "ascii_cat_guardian_02",
+          "location_zone": "ductwork_near_memelord_exe",
+          "availability": "always_present_atmospheric_guardian",
+          "primary_interaction": "atmospheric_presence_no_dialogue",
+          "character_design": "ascii_art_cat_mounted_in_ductwork_different_pose",
+          "dialogue_samples": [],
+          "function": "environmental_storytelling_shrine_aesthetic",
+          "behavioral_patterns": {
+            "eye_tracking": "ascii_eyes_follow_player_movement",
+            "silent_judgment": "no_dialogue_just_ominous_presence",
+            "shrine_guardian": "devotional_positioning_around_vendor"
+          }
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "geocities_kiosk",
+          "type": "puzzle_trigger",
+          "location_zone": "internet_history_museum_main_floor",
+          "interaction_text": "Interact with the ancient GeoCities kiosk",
+          "unlock_condition": "time_is_exactly_3_33_am_and_graffiti_read",
+          "description": "Dusty touchscreen kiosk displaying Under Construction gifs. Activates only at 3:33 AM. Glowing cursor blinks expectantly.",
+          "audio_cue": "dial_up_modem_connection_sound",
+          "cutscene_text": "The screen flickers to life. A pixelated wizard appears: 'PROCEED TO THE MESSENGER OF MICROSOFT.'",
+          "special_mechanics": {
+            "time_lock": "only_interactable_at_3_33_am_exact",
+            "graffiti_prerequisite": "must_have_read_do_not_look_at_the_baby",
+            "triggers_next_step": "activates_msn_messenger_terminal"
+          }
+        },
+        {
+          "object_id": "msn_messenger_terminal",
+          "type": "password_puzzle",
+          "location_zone": "internet_history_museum_main_floor",
+          "interaction_text": "Enter password at the broken MSN terminal",
+          "unlock_condition": "geocities_kiosk_activated",
+          "description": "Cracked monitor showing MSN Messenger login screen. Password field blinks. Keyboard sticky with ancient Mountain Dew residue.",
+          "password": "AllYourBase69",
+          "audio_cue": "aim_door_open_sound_on_success_error_sound_on_failure",
+          "failure_consequence": "wrong_password_30_minute_lockout",
+          "special_mechanics": {
+            "password_input": "player_types_exact_string_case_sensitive",
+            "success_trigger": "vhs_shelf_slides_open_revealing_secret_room",
+            "failure_tracking": "three_failures_trigger_extended_lockout"
+          }
+        },
+        {
+          "object_id": "vhs_shelf_secret_door",
+          "type": "entrance_mechanism",
+          "location_zone": "internet_history_museum_back_wall",
+          "interaction_text": "The VHS shelf slides open with a mechanical groan",
+          "unlock_condition": "correct_password_entered_at_msn_terminal",
+          "description": "Entire shelf of VHS tapes (mostly labeled 'STUFF') slides sideways revealing RGB-lit passage. Cold air and Nokia ringtone emanate from within.",
+          "audio_cue": "mechanical_sliding_door_nokia_ringtone_growing_louder",
+          "cutscene_text": "The VHS shelf slides open, revealing an RGB-lit shrine to digital degeneracy. A voice crackles through ancient speakers: 'Warning: I run on LimeWire and vengeance.'",
+          "special_mechanics": {
+            "door_animation": "3_second_sliding_sequence",
+            "atmosphere_change": "lighting_shifts_to_rgb_audio_transitions",
+            "permanent_unlock": "stays_open_during_visit_closes_on_exit"
+          }
+        },
+        {
+          "object_id": "windows_98_desktop_pc",
+          "type": "environmental_comedy",
+          "location_zone": "corner_of_meme_black_market",
+          "interaction_text": "Watch the eternal Windows 98 crash loop",
+          "description": "Desktop PC endlessly crashes into Windows 98 startup chime, then blue screen, then restart. Has been doing this since 2003. Dust thick as carpet.",
+          "random_dialogue": [
+            "The startup chime plays for the 47,000th time today.",
+            "Blue screen reads: 'FATAL ERROR: EXISTENCE'.",
+            "It will never stop. It will never learn.",
+            "This computer has achieved digital samsara."
+          ],
+          "audio_cue": "windows_98_startup_chime_then_crash_sound_loop",
+          "special_mechanics": {
+            "endless_loop": "continuous_animation_never_completes_boot",
+            "philosophical_commentary": "represents_futility_of_nostalgia",
+            "easter_egg": "examining_50_times_unlocks_special_dialogue"
+          }
+        },
+        {
+          "object_id": "aim_away_message_shrine",
+          "type": "atmospheric_lore",
+          "location_zone": "wall_near_memelord_exe",
+          "interaction_text": "Read the devotional AIM away messages",
+          "description": "Glitchy status messages plastered on wall like religious icons. 'brb pizza rolls', 'out laterz', 'if u can read this ur 2 close'. Backlit like stained glass.",
+          "random_dialogue": [
+            "'brb crying to dashboard confessional' - Sacred text, circa 2004",
+            "'away: living my best life (jk dying inside)' - Prophetic wisdom",
+            "'idle: 47 minutes' - A meditation on impermanence",
+            "MemeLord.exe: 'These words sustained a generation.'"
+          ],
+          "audio_cue": "aim_notification_sound_on_interaction",
+          "special_mechanics": {
+            "lore_integration": "reveals_early_internet_culture_context",
+            "pilsner_connection": "some_messages_belong_to_young_pilsner",
+            "collectible_content": "reading_all_counts_toward_achievement"
+          }
+        },
+        {
+          "object_id": "funcoland_bags_altar",
+          "type": "satirical_shrine",
+          "location_zone": "near_vendor_station",
+          "interaction_text": "Examine the Funcoland sacrifice altar",
+          "description": "Stack of Funcoland bags arranged like religious offerings. One bag labeled '$0.78 for 12 games'. Another says 'Your childhood, appraised'.",
+          "random_dialogue": [
+            "The bags still smell like disappointment and expired coupons.",
+            "MemeLord.exe: 'I brought them 47 cartridges. They gave me a gum wrapper.'",
+            "A receipt shows: 'Trade-in value: $1.10. Store credit: $1.47.'",
+            "Some wounds never heal. Some trade-ins never forgive."
+          ],
+          "audio_cue": "cash_register_ding_with_sad_trombone",
+          "special_mechanics": {
+            "funcoland_nft_connection": "examining_triggers_nft_lore",
+            "economic_satire": "commentary_on_predatory_buyback_practices",
+            "emotional_damage": "may_apply_nostalgic_sadness_debuff"
+          }
+        },
+        {
+          "object_id": "corrupted_gif_wall_art",
+          "type": "environmental_effect",
+          "location_zone": "throughout_den",
+          "interaction_text": "Observe the flickering corrupted gifs",
+          "description": "Multiple corrupted gifs cycle eternally: Dancing Baby mid-glitch, Hamster Dance frame-frozen, construction workers mid-shovel. All slightly wrong. All hypnotic.",
+          "audio_cue": "digital_corruption_static_bursts",
+          "special_mechanics": {
+            "continuous_animation": "various_corrupted_loops_different_timing",
+            "mememastery_integration": "studying_gifs_counts_toward_meter",
+            "easter_eggs": "specific_gifs_reference_pilsner_history"
+          }
+        },
+        {
+          "object_id": "baja_blast_vape_station",
+          "type": "vendor_accessory",
+          "location_zone": "next_to_memelord_exe",
+          "interaction_text": "Inhale the Baja Blast mist (don't actually)",
+          "description": "Industrial vape rig producing constant Baja Blast-colored mist. MemeLord.exe's life support system. Smells like Mountain Dew and regret.",
+          "random_dialogue": [
+            "MemeLord.exe: 'This vapor is my soul. Also it's Baja Blast.'",
+            "The mist tastes how 2003 felt.",
+            "You definitely shouldn't breathe this but you definitely will.",
+            "Achievement Unlocked: Secondhand Nostalgia Poisoning"
+          ],
+          "audio_cue": "vape_cloud_hiss_continuous",
+          "special_mechanics": {
+            "particle_effect": "continuous_green_mist_around_vendor",
+            "status_effect_risk": "extended_exposure_may_apply_nostalgic_confusion",
+            "character_integration": "memelord_constantly_vaping_during_dialogue"
+          }
+        }
+      ],
+      "environmental_interactions": [
+        {
+          "trigger_id": "password_puzzle_sequence",
+          "type": "multi_step_entrance_puzzle",
+          "location": "internet_history_museum_to_meme_market",
+          "requirement": {
+            "time": "3_33_am",
+            "prerequisite": "graffiti_read"
+          },
+          "effect": "unlock_secret_meme_black_market_entrance",
+          "audio_cue": "dial_up_to_aim_door_to_mechanical_sliding",
+          "dialogue": "The digital gatekeepers have accepted you. Welcome to the shrine."
+        },
+        {
+          "trigger_id": "mememastery_meter_progression",
+          "type": "meta_progression_tracking",
+          "location": "throughout_location_and_combat",
+          "trigger_conditions": [
+            "use_meme_summons_in_battle_count_3",
+            "read_meme_graffiti_locations_count_2",
+            "consume_cryptodoner_during_icq_event"
+          ],
+          "effect": "fill_meter_unlock_rewards_at_full_charge",
+          "audio_cue": "level_up_chiptune_on_meter_fill",
+          "reward_dialogue": "Achievement: Shitposter Supreme. You have weaponized nostalgia itself."
+        },
+        {
+          "trigger_id": "meatspin_nft_curse",
+          "type": "automatic_item_acquisition",
+          "location": "meme_black_market_vendor_proximity",
+          "spawn_condition": "player_enters_market_first_time",
+          "effect": "meatspin_nft_appears_in_inventory_automatically_wont_stop_spinning",
+          "dialogue": "MemeLord.exe: 'Oh that? It just... shows up. Can't stop it. Won't stop it.'",
+          "audio_cue": "ominous_spinning_sound_continuous_until_purged",
+          "special_mechanics": {
+            "cannot_refuse": "item_adds_automatically_no_prompt",
+            "mentally_unwell_status": "applies_debuff_for_3_battles",
+            "purge_method": "requires_glitter_priest_npc_intervention",
+            "running_gag": "players_cannot_escape_this_meme"
+          }
+        },
+        {
+          "trigger_id": "pilsner_meme_recognition",
+          "type": "character_lore_revelation",
+          "location": "examining_specific_meme_items",
+          "trigger": "player_examines_rage_comic_or_dancing_baby",
+          "effect": "unlock_pilsner_embarrassing_internet_history_dialogue",
+          "dialogue": "Lord Pilsner: 'Wait. Where did you get that? That's... that's from my DeviantArt phase. We don't talk about that.'",
+          "audio_cue": "shame_sound_effect",
+          "special_mechanics": {
+            "lore_integration": "reveals_pilsner_teen_internet_addiction",
+            "multiple_triggers": "different_memes_unlock_different_revelations",
+            "party_reactions": "other_characters_mock_pilsner_mercilessly"
+          }
+        },
+        {
+          "trigger_id": "tony420_meme_trading",
+          "type": "cross_quest_integration",
+          "location": "meme_black_market_vendor",
+          "requirement": {
+            "icq_contact": "tony420_unlocked"
+          },
+          "effect": "trade_rare_memes_for_swf_vault_access",
+          "dialogue": "MemeLord.exe: 'Tony420 wants your rarest? Brave. The .SWF vault holds things... beyond.'",
+          "audio_cue": "trade_complete_ominous_tone",
+          "special_mechanics": {
+            "rare_meme_requirement": "must_have_3_specific_meme_types",
+            "swf_vault_unlock": "grants_access_to_deepfried_memes_collection",
+            "tony420_relationship": "strengthens_icq_darkweb_narrative_connection"
+          }
+        },
+        {
+          "trigger_id": "enemy_meme_recognition",
+          "type": "combat_dialogue_change",
+          "location": "any_combat_with_mememastery_meter_full",
+          "trigger": "player_has_shitposter_supreme_title",
+          "effect": "enemies_react_to_meme_summons_with_recognition",
+          "dialogue_samples": [
+            "Enemy: 'Yo is that trollface?? bruhhh!'",
+            "Enemy: 'Not the Rage Comic! Anything but that!'",
+            "Enemy: 'This fool got the Dancing Baby! GG!'",
+            "Enemy: 'Respect the classics... *flees*'"
+          ],
+          "audio_cue": "enemy_recognition_shock_sound",
+          "special_mechanics": {
+            "title_requirement": "only_triggers_with_shitposter_supreme",
+            "combat_advantage": "some_enemies_flee_or_weaken",
+            "comedy_integration": "meme_respect_as_social_currency"
+          }
+        }
+      ],
+      "meme_economy_system": {
+        "vendor_inventory": {
+          "meme_summons": [
+            {
+              "item_id": "shiba_hype",
+              "display_name": "Shiba Hype",
+              "cost": 10,
+              "currency": "sovs",
+              "stock": "unlimited",
+              "description": "Summons pixelated Shiba barking motivational quotes. +Morale to party. Lasts 3 turns. May distract enemies.",
+              "combat_effect": {
+                "morale_boost": 3,
+                "duration_turns": 3,
+                "distraction_chance": 0.4,
+                "animation": "shiba_appears_barks_motivational_doggo_wisdom"
+              }
+            },
+            {
+              "item_id": "dat_boi_on_unicycle",
+              "display_name": "Dat Boi On Unicycle",
+              "cost": 5,
+              "currency": "sovs",
+              "stock": "unlimited",
+              "description": "Appears, says 'o shit waddup,' leaves. Does nothing. Pure dopamine hit.",
+              "combat_effect": {
+                "mechanical_effect": "none",
+                "psychological_effect": "pure_nostalgia_dopamine",
+                "animation": "dat_boi_unicycles_across_screen_says_catchphrase_exits"
+              }
+            },
+            {
+              "item_id": "dancing_baby_exe",
+              "display_name": "Dancing Baby.exe",
+              "cost": 7,
+              "currency": "sovs",
+              "stock": "unlimited",
+              "description": "Temporarily disables enemy buffs by sheer confusion. 33% chance to backfire and apply 'Cringe' to player.",
+              "combat_effect": {
+                "enemy_debuff": "disable_all_buffs",
+                "duration_turns": 2,
+                "backfire_chance": 0.33,
+                "backfire_effect": "cringe_status_player_embarrassed",
+                "animation": "dancing_baby_confuses_everyone_including_player"
+              }
+            },
+            {
+              "item_id": "rage_comic_panel",
+              "display_name": "Rage Comic Panel",
+              "cost": 4,
+              "currency": "sovs",
+              "stock": "unlimited",
+              "description": "Reduces enemy attack by 1 for 1 turn. Only works on NPCs who 'respect classic memes.'",
+              "combat_effect": {
+                "enemy_debuff": "attack_minus_1",
+                "duration_turns": 1,
+                "success_condition": "enemy_has_meme_respect_flag",
+                "failure_message": "Enemy doesn't respect the classics. Nothing happens.",
+                "animation": "rage_face_appears_enemy_intimidated_or_confused"
+              }
+            },
+            {
+              "item_id": "trollface_bomb",
+              "display_name": "Trollface Bomb",
+              "cost": 13,
+              "currency": "sovs",
+              "stock": "unlimited",
+              "description": "60% chance to detonate with screen-filling LULs; deals psychic damage to enemies. 20% chance to cause player party to argue over meme legality.",
+              "combat_effect": {
+                "success_chance": 0.6,
+                "success_effect": "screen_filling_luls_psychic_damage_all_enemies",
+                "psychic_damage": 25,
+                "argument_chance": 0.2,
+                "argument_effect": "party_loses_1_turn_arguing_meme_legitimacy",
+                "animation": "trollface_expands_fills_screen_chaos_ensues"
+              }
+            }
+          ],
+          "meme_trinkets": [
+            {
+              "item_id": "xp_ring_from_ebaums_world",
+              "display_name": "XP Ring from eBaum's World",
+              "cost": 50,
+              "currency": "sovs",
+              "stock": 1,
+              "description": "Grants permanent passive: 'Elite Internet User' — +1 INT, +1 Speed, but -1 Charm with NPCs born after 2003.",
+              "equipment_slot": "ring",
+              "permanent_effects": {
+                "intelligence": 1,
+                "speed": 1,
+                "charm_conditional": {
+                  "condition": "npc_birth_year_after_2003",
+                  "modifier": -1
+                }
+              },
+              "tooltip": "They just don't understand."
+            },
+            {
+              "item_id": "meatspin_nft",
+              "display_name": "Meatspin NFT",
+              "cost": 0,
+              "currency": "none",
+              "stock": "automatically_acquired",
+              "description": "You don't buy it. It just appears. And it won't. Stop. Spinning. Applies 'Mentally Unwell' status for 3 battles unless purged by glitter priest.",
+              "curse_properties": {
+                "cannot_drop": true,
+                "cannot_sell": true,
+                "status_applied": "mentally_unwell",
+                "duration_battles": 3,
+                "purge_method": "glitter_priest_npc_intervention_only",
+                "animation": "endless_spinning_background_overlay"
+              },
+              "tooltip": "It follows you. Always."
+            },
+            {
+              "item_id": "funcoland_futures_nft_1999",
+              "display_name": "Funcoland Futures NFT #1999",
+              "cost": "unlock_only",
+              "currency": "mememastery_meter_reward",
+              "stock": 1,
+              "description": "Predicts resale value... incorrectly. +1 Charisma with shady vendors.",
+              "unlock_condition": "mememastery_meter_full_charge",
+              "equipment_slot": "accessory",
+              "permanent_effects": {
+                "charisma_conditional": {
+                  "condition": "vendor_has_shady_flag",
+                  "modifier": 1
+                }
+              },
+              "tooltip": "Do not redeem IRL unless masochist.",
+              "lore_integration": "references_predatory_buyback_culture"
+            }
+          ]
+        }
+      },
+      "quest_integration": {
+        "graffiti_quest": {
+          "quest_id": "bathroom_philosophy_treasure_hunt",
+          "trigger_graffiti": "do_not_look_at_the_baby_velvet_curtain_vip_stall",
+          "progression_graffiti": [
+            "velvet_curtain_club_vip_bathroom",
+            "kebab_alley_wall_meme_reference"
+          ],
+          "mememastery_contribution": "reading_both_counts_toward_meter"
+        },
+        "icq_darkweb_integration": {
+          "quest_id": "icq_darkweb_dossier_network",
+          "memelord_ping": {
+            "trigger": "graffiti_read_first_time",
+            "message": "i got what ur soul needs lol",
+            "sender": "MemeLord.exe"
+          },
+          "404_bratnado_unlock": {
+            "condition": "mememastery_meter_full_charge",
+            "contact_type": "combat_support_chain_mail_curses",
+            "availability": "permanent_after_unlock"
+          },
+          "tony420_trading": {
+            "condition": "tony420_contact_unlocked_and_rare_memes_acquired",
+            "trade_requirement": "3_specific_rare_meme_types",
+            "reward": "swf_vault_access_deepfried_memes_collection"
+          }
+        },
+        "lord_pilsner_lore": {
+          "revelation_system": {
+            "trigger_items": [
+              "rage_comic_panel",
+              "dancing_baby_exe",
+              "specific_corrupted_gifs"
+            ],
+            "unlocked_dialogue": [
+              "pilsner_deviantart_phase_confession",
+              "pilsner_early_forum_posting_history",
+              "pilsner_icq_username_reveal"
+            ],
+            "party_reactions": "merciless_mockery_from_companions"
+          }
+        }
+      },
+      "status_effect_management": {
+        "mentally_unwell_status": {
+          "source": "meatspin_nft_automatic_curse",
+          "gameplay_effect": "random_control_reversals_occasional_screen_spin",
+          "duration": "3_battles",
+          "cure_methods": [
+            "glitter_priest_npc_purge_only"
+          ],
+          "satirical_commentary": "The memes have taken hold. Seek professional help.",
+          "visual_indicator": "character_sprite_occasionally_spins_background_distortion"
+        },
+        "cringe_status": {
+          "source": "dancing_baby_exe_backfire",
+          "gameplay_effect": "embarrassed_debuff_minus_1_charm_minus_1_confidence",
+          "duration": "2_turns_combat",
+          "cure_methods": [
+            "wait_for_expiration",
+            "confidence_boost_item"
+          ],
+          "satirical_commentary": "You deployed a 2003 meme in 2025. Everyone saw.",
+          "visual_indicator": "character_covers_face_party_members_look_away"
+        },
+        "nostalgic_confusion_status": {
+          "source": "extended_exposure_to_baja_blast_vape_mist",
+          "gameplay_effect": "occasional_inability_to_distinguish_past_from_present",
+          "duration": "5_minutes_real_time",
+          "cure_methods": [
+            "exit_location",
+            "reality_check_item"
+          ],
+          "satirical_commentary": "Is it 2003 or 2025? Does it matter? Was anything ever real?",
+          "visual_indicator": "screen_edges_slight_crt_distortion"
+        }
+      },
+      "audio_design": {
+        "ambient_soundscape": [
+          "nokia_ringtone_looping_from_ductwork",
+          "windows_98_startup_crash_endless_cycle",
+          "keyboard_clicking_phantom_typing",
+          "dial_up_modem_distant_screech",
+          "baja_blast_vape_hiss_continuous"
+        ],
+        "music_style": "corrupted_midi_files_glitchy_chiptune_remixes_early_2000s_hits",
+        "audio_transitions": {
+          "entering_from_museum": "normal_audio_fades_to_lofi_compressed_quality",
+          "vhs_shelf_opening": "mechanical_grinding_then_rgb_atmosphere",
+          "vendor_interaction": "aim_notification_sounds_punctuate_dialogue",
+          "meme_summon_usage": "specific_sound_per_meme_shiba_bark_dat_boi_catchphrase"
+        },
+        "interactive_audio": [
+          "geocities_kiosk_dial_up_connection",
+          "msn_terminal_aim_door_slam_success_or_error",
+          "vhs_shelf_mechanical_sliding",
+          "meme_summon_sound_effects_per_item",
+          "meatspin_ominous_spinning_sound",
+          "mememastery_meter_fill_chiptune_level_up"
+        ],
+        "comedy_audio_stingers": [
+          "achievement_shitposter_supreme_unlocked",
+          "windows_error_sound_for_failed_purchases",
+          "aim_door_slam_for_location_exit",
+          "sad_trombone_for_funcoland_examination"
+        ]
+      },
+      "social_media_integration": {
+        "screenshot_worthy_moments": [
+          "memelord_exe_character_with_vape_cloud",
+          "rgb_den_aesthetic_full_view",
+          "meme_summon_visual_effects_trollface_explosion",
+          "funcoland_futures_nft_art_display",
+          "windows_98_eternal_crash_loop"
+        ],
+        "tiktok_potential": [
+          "password_puzzle_discovery_sequence",
+          "meme_summon_chaos_compilations",
+          "meatspin_wont_stop_reactions",
+          "memelord_exe_dialogue_best_of",
+          "dat_boi_does_nothing_disappointment"
+        ],
+        "twitter_hooks": [
+          "i_run_on_limewire_and_vengeance_quote",
+          "hamster_dance_is_eternal_peasant",
+          "funcoland_trade_in_trauma_references",
+          "meatspin_nft_curse_descriptions"
+        ],
+        "streaming_content": [
+          "first_discovery_password_puzzle_solving",
+          "mememastery_speedrun_optimization",
+          "meme_summon_battle_strategies",
+          "pilsner_embarrassing_revelation_reactions"
+        ]
+      }
+    },
+    "debaucheryville_blockbuster_internet_museum_01": {
+      "location_id": "debaucheryville_blockbuster_internet_museum_01",
+      "display_name": "Blockbuster Internet Museum",
+      "npcs_present": [
+        {
+          "npc_id": "museum_curator_deadpan_academic",
+          "location_zone": "main_entrance_information_desk",
+          "availability": "museum_hours_8am_8pm",
+          "primary_interaction": "academic_treatment_of_digital_garbage",
+          "character_design": "stern_academic_treating_malware_as_artifacts",
+          "dialogue_samples": [
+            "The Hall of Modems represents a pivotal moment in telecommunications archaeology.",
+            "This Angelfire exhibit has been loading since 2002. A testament to period-authentic user experience.",
+            "Please maintain respectful silence in the MSN Messenger Memorial Garden.",
+            "The GeoCities Diorama captures the raw creativity of early web democratization.",
+            "The Chuck E. Cheese animatronic serves as a powerful metaphor for digital decay."
+          ],
+          "function": "provide_academic_gravitas_to_obviously_ridiculous_exhibits",
+          "recurring_presence": "always_available_during_museum_hours",
+          "behavioral_patterns": {
+            "academic_seriousness": "treats_internet_garbage_with_museum_reverence",
+            "historical_context": "provides_detailed_backstory_for_worthless_digital_ephemera",
+            "visitor_guidance": "directs_tourists_to_most_psychologically_damaging_exhibits"
+          }
+        },
+        {
+          "npc_id": "security_guard_nostalgic_gen_x",
+          "location_zone": "roaming_throughout_museum",
+          "availability": "museum_hours_8am_8pm",
+          "primary_interaction": "personal_trauma_sharing_digital_memories",
+          "character_design": "middle_aged_security_guard_with_thousand_yard_stare",
+          "dialogue_samples": [
+            "I still have 47 burned CDs from Kazaa. Don't know why I keep them.",
+            "Used to spend 6 hours downloading one song. And it was usually the wrong version.",
+            "That Habbo pool... I was there when it happened. Changed everything.",
+            "My AIM screen name was XxDarkAngelXx. I thought I was so deep.",
+            "Don't touch the iMac altar. That's where I stored my poetry."
+          ],
+          "function": "provide_authentic_digital_trauma_to_validate_exhibit_experience",
+          "behavioral_patterns": {
+            "oversharing_trauma": "volunteers_embarrassing_digital_history_to_strangers",
+            "protective_of_exhibits": "treats_displays_as_sacred_personal_memory_shrines",
+            "warning_dispenser": "alerts_visitors_to_psychological_hazards_of_certain_exhibits"
+          }
+        },
+        {
+          "npc_id": "meme_black_market_contact_hidden",
+          "location_zone": "behind_geocities_kiosk_3am_only",
+          "availability": "3:30_am_to_3:35_am_only",
+          "primary_interaction": "password_puzzle_gatekeeper_meme_market_access",
+          "character_design": "shadowy_figure_in_vintage_internet_cafe_hoodie",
+          "dialogue_samples": [
+            "You know the words. The old words. From before the algorithms.",
+            "GeoCities remembers. MSN whispers. The vault opens for those who know.",
+            "Three passwords. Three keys. One path to the true archive.",
+            "The memes are waiting. But first... prove you lived through the dial-up wars."
+          ],
+          "function": "initiate_three_part_password_sequence_for_meme_black_market",
+          "special_mechanics": {
+            "time_locked_appearance": "only_visible_between_3:30_and_3:35_am",
+            "password_verification": "requires_successful_completion_of_geocities_msn_sequence",
+            "market_access_granting": "provides_final_key_to_underground_meme_economy"
+          }
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "hall_of_modems_shrine",
+          "type": "audio_assault_exhibit",
+          "location_zone": "northwest_corner_main_floor",
+          "interaction_text": "Approach the sacred telecommunications relics",
+          "description": "A shrine of dial-up modems arranged with archaeological reverence. Warning plaque: 'Audio experience may cause PTSD flashbacks to 56k era.'",
+          "audio_effect": "dial_up_screech_symphony_3_second_duration",
+          "status_effect": "brief_audio_trauma_no_gameplay_impact",
+          "achievement_integration": "contributes_to_digital_archaeology_collection",
+          "special_mechanics": {
+            "proximity_trigger": "screech_activates_within_2_tiles_of_shrine",
+            "multiple_modems": "overlapping_screech_creates_cacophonous_symphony",
+            "academic_plaque": "describes_modems_with_museum_seriousness"
+          }
+        },
+        {
+          "object_id": "geocities_diorama_kiosk",
+          "type": "time_locked_password_trigger",
+          "location_zone": "center_west_wall_main_floor",
+          "interaction_text": "Examine the twinkling GeoCities reconstruction",
+          "normal_state": "Under Construction gifs twinkling endlessly, embedded MIDI autoplay",
+          "3am_state": "Kiosk terminal becomes interactive, displays password prompt",
+          "password_prompt": "Enter the sacred words of the first digital homesteads",
+          "correct_password": "under_construction_forever",
+          "unlock_condition": "3:33_am_exactly",
+          "special_mechanics": {
+            "time_lock_system": "kiosk_only_interactive_at_3:33_am",
+            "password_sequence_step_1": "first_of_three_passwords_for_meme_market",
+            "visual_feedback": "successful_password_causes_gif_stars_to_pulse_green",
+            "failure_state": "incorrect_password_plays_midi_file_at_double_speed"
+          }
+        },
+        {
+          "object_id": "angelfire_wall_endless_loading",
+          "type": "patience_testing_exhibit",
+          "location_zone": "east_wall_main_floor",
+          "interaction_text": "Watch the eternal loading bar",
+          "description": "Loading bar stuck at 67% since 2002. A masterpiece of period-authentic user frustration.",
+          "extended_viewing_effect": "apply_impatient_debuff_after_2_minutes",
+          "achievement_unlock": "patience_of_saint_title_after_5_minutes_watching",
+          "status_duration": "impatient_debuff_lasts_1_turn_combat_30_seconds_exploration",
+          "special_mechanics": {
+            "never_completes": "loading_bar_cycles_through_frames_but_never_reaches_100_percent",
+            "hypnotic_effect": "extended_watching_may_cause_mild_meditation_state",
+            "early_web_authenticity": "perfectly_captures_angelfire_user_experience"
+          }
+        },
+        {
+          "object_id": "habbo_hotel_crime_scene",
+          "type": "drunk_triggered_trauma_exhibit",
+          "location_zone": "south_wall_main_floor",
+          "interaction_text": "Examine the pool closure incident memorial",
+          "description": "Yellow smiley with knife surrounded by velvet rope and evidence markers. Crime scene tape flutters ominously.",
+          "sober_effect": "mild_unease_no_mechanical_impact",
+          "drunk_effect": "apply_pixel_ptsd_status_screen_shake_during_dialogue",
+          "status_duration": "pixel_ptsd_lasts_3_turns_combat_90_seconds_exploration",
+          "achievement_integration": "contributes_to_digital_trauma_collection",
+          "special_mechanics": {
+            "drunk_status_requirement": "pixel_ptsd_only_applies_when_drunk_status_active",
+            "screen_shake_effect": "subtle_screen_shake_during_npc_dialogue_and_menu_navigation",
+            "historical_reference": "authentic_recreation_of_habbo_pool_closure_incident"
+          }
+        },
+        {
+          "object_id": "msn_messenger_memorial_garden",
+          "type": "nostalgic_conversation_trigger",
+          "location_zone": "northeast_corner_main_floor",
+          "interaction_text": "Pay respects at the communication graveyard",
+          "description": "Flickering green status lights and broken webcams arranged like memorial candles. AIM door sounds echo inconsistently.",
+          "conversation_trigger": "party_members_share_embarrassing_screen_names",
+          "pilsner_revelation": "Lord_Pilsner_admits_to_XxKegMasterXx_screen_name",
+          "achievement_integration": "unlocks_digital_nostalgia_conversation_tree",
+          "special_mechanics": {
+            "aim_door_audio": "random_door_open_close_sounds_every_15_30_seconds",
+            "green_light_flicker": "status_lights_flicker_at_different_intervals",
+            "webcam_memorial": "broken_webcams_arranged_with_religious_reverence"
+          }
+        },
+        {
+          "object_id": "imac_g3_darkroom_altar",
+          "type": "pilsner_lore_trigger_exhibit",
+          "location_zone": "southwest_corner_darkroom_section",
+          "interaction_text": "Examine the cracked iMac G3 on the sacred altar",
+          "description": "Cracked iMac G3 surrounded by incense and burned CDs labeled 'DO NOT OPEN'. Altar cloth draped with religious reverence.",
+          "primary_interaction": "reveals_lord_pilsner_embarrassing_mix_cds",
+          "cd_discovery": "CDs_contain_Pilsner_teen_music_taste_and_poetry",
+          "party_reaction": "companions_mock_Pilsner_mercilessly_for_digital_past",
+          "achievement_unlock": "digital_archaeology_complete_with_all_pilsner_revelations",
+          "special_mechanics": {
+            "incense_smoke_effect": "smoke_particle_animation_around_altar",
+            "cd_examination": "clicking_cds_reveals_track_listings_and_poetry_titles",
+            "religious_presentation": "treating_consumer_electronics_as_sacred_relics"
+          }
+        },
+        {
+          "object_id": "midi_archive_interaction_roulette",
+          "type": "random_status_effect_generator",
+          "location_zone": "scattered_throughout_geocities_diorama",
+          "interaction_text": "Listen to embedded MIDI files",
+          "effect_randomization": "50_percent_cringe_50_percent_inspired",
+          "cringe_effect": "apply_cringe_status_player_movement_slowed_awkward_animations",
+          "inspired_effect": "apply_inspired_status_increased_charm_for_conversations",
+          "status_duration": "3_turns_combat_or_2_minutes_exploration",
+          "special_mechanics": {
+            "auto_play": "midi_files_play_automatically_cannot_be_stopped",
+            "overlapping_chaos": "multiple_midi_tracks_may_play_simultaneously",
+            "roulette_system": "players_never_know_which_effect_they_will_receive"
+          }
+        },
+        {
+          "object_id": "chuck_e_cheese_animatronic_furby_exhibit",
+          "type": "atmospheric_horror_easter_egg",
+          "location_zone": "central_main_floor_furby_display",
+          "interaction_text": "Stare into the animatronic's unblinking eyes",
+          "description": "Chuck E. Cheese animatronic staring blankly from defunct Furbies exhibit. Eyes occasionally track player movement with mechanical precision.",
+          "random_dialogue": [
+            "Why is there a Chuck E. Cheese in a Furbies exhibit?",
+            "Those eyes... they're following me.",
+            "I think it just winked. Animatronics don't wink.",
+            "The Furbies are probably safer than whatever that thing is."
+          ],
+          "eye_tracking_effect": "animatronic_eyes_follow_player_movement_every_10_20_seconds",
+          "achievement_integration": "contributes_to_cursed_exhibit_collection",
+          "special_mechanics": {
+            "random_tracking": "eye_movement_triggers_at_random_intervals",
+            "atmospheric_horror": "creates_unease_without_mechanical_gameplay_impact",
+            "exhibit_mismatch": "obvious_placement_error_treated_as_normal_by_museum_staff"
+          }
+        }
+      ],
+      "environmental_interactions": [
+        {
+          "trigger_id": "vhs_shelf_secret_passage",
+          "type": "hidden_area_access",
+          "location": "behind_geocities_kiosk_south_wall",
+          "requirement": {
+            "time": "3:33_am_exactly"
+          },
+          "effect": "reveal_meme_black_market_entrance",
+          "audio_cue": "vhs_cassette_mechanical_click",
+          "dialogue": "The VHS shelf slides aside, revealing a passage that definitely wasn't there during normal museum hours."
+        },
+        {
+          "trigger_id": "crt_monitor_terminal_access",
+          "type": "pilsner_lore_discovery",
+          "location": "random_crt_monitors_throughout_museum",
+          "spawn_condition": "player_examines_any_crt_display",
+          "effect": "reveal_embarrassing_pilsner_digital_history",
+          "discovery_content": [
+            "Lord_Pilsner_geocities_website_about_ultimate_frisbee",
+            "Pilsner_angelfire_poetry_collection_titled_deep_thoughts",
+            "MSN_Messenger_conversation_logs_with_XxKegMasterXx_handle",
+            "Kazaa_download_history_revealing_terrible_music_taste"
+          ],
+          "party_reaction": "companions_gain_ammunition_for_future_pilsner_mockery",
+          "special_mechanics": {
+            "random_terminal_activation": "any_crt_interaction_may_trigger_lore_discovery",
+            "embarrassment_accumulation": "multiple_discoveries_increase_pilsner_embarrassment_level",
+            "cutscene_integration": "triggers_brief_flashback_cutscenes_to_early_2000s_pilsner"
+          }
+        },
+        {
+          "trigger_id": "curator_academic_lecture_trigger",
+          "type": "satirical_exposition",
+          "location": "approaching_any_major_exhibit",
+          "trigger": "player_reads_exhibit_plaque",
+          "effect": "curator_provides_overly_serious_historical_context",
+          "lecture_topics": [
+            "archaeological_significance_of_dial_up_modem_shrine",
+            "cultural_impact_of_geocities_democratic_web_creation",
+            "sociological_implications_of_habbo_pool_closure_incident",
+            "technological_evolution_represented_by_angelfire_loading_paradigm"
+          ],
+          "special_mechanics": {
+            "academic_gravitas": "curator_treats_internet_garbage_with_museum_reverence",
+            "visitor_education": "provides_historical_context_for_obviously_worthless_ephemera",
+            "satirical_commentary": "highlights_absurdity_of_preserving_digital_trauma_as_culture"
+          }
+        }
+      ],
+      "password_puzzle_system": {
+        "sequence_id": "meme_black_market_access_three_step",
+        "description": "Three-part password sequence unlocking underground meme economy access",
+        "step_1_geocities": {
+          "location": "geocities_diorama_kiosk",
+          "time_requirement": "3:33_am_exactly",
+          "password_prompt": "Enter the sacred words of the first digital homesteads",
+          "correct_answer": "under_construction_forever",
+          "success_feedback": "GeoCities remembers. The first seal weakens.",
+          "failure_feedback": "The MIDI files play at double speed in punishment."
+        },
+        "step_2_msn_messenger": {
+          "location": "msn_messenger_memorial_garden",
+          "unlock_condition": "step_1_completed_and_still_3:33_am",
+          "password_prompt": "Speak the greeting of the green status light",
+          "correct_answer": "wazzup_a_s_l_please",
+          "success_feedback": "MSN whispers approval. The second seal breaks.",
+          "failure_feedback": "Your screen name has been forgotten by history."
+        },
+        "step_3_final_vault": {
+          "location": "imac_g3_darkroom_altar",
+          "unlock_condition": "steps_1_and_2_completed_within_5_minute_window",
+          "password_prompt": "Confess the shame of the burned CD era",
+          "correct_answer": "i_downloaded_metallica_illegally",
+          "success_feedback": "The vault opens. Welcome to the true archive.",
+          "completion_effect": "unlock_meme_black_market_vendor_access"
+        },
+        "failure_states": {
+          "time_limit_exceeded": "The magic hour passes. Try again tomorrow night.",
+          "incorrect_sequence": "The old internet does not recognize you. Start over.",
+          "partial_completion": "Incomplete ritual. The vault remains sealed."
+        }
+      },
+      "status_effect_management": {
+        "environmental_effects": {
+          "cringe_from_midi_roulette": {
+            "trigger": "midi_archive_interaction_50_percent_chance",
+            "probability": 0.5,
+            "duration": 120,
+            "effect": "movement_speed_reduced_by_20_percent_awkward_walking_animation",
+            "description": "Overwhelmed by digital nostalgia cringe"
+          },
+          "inspired_from_midi_roulette": {
+            "trigger": "midi_archive_interaction_50_percent_chance",
+            "probability": 0.5,
+            "duration": 120,
+            "effect": "charm_increased_by_2_points_for_npc_conversations",
+            "description": "Genuinely moved by early internet creativity"
+          },
+          "pixel_ptsd_drunk_trigger": {
+            "trigger": "habbo_crime_scene_examination_while_drunk",
+            "probability": 1.0,
+            "duration": 90,
+            "effect": "screen_shake_during_dialogue_and_menu_navigation",
+            "description": "Flashbacks to digital trauma incidents"
+          },
+          "impatient_from_loading_bar": {
+            "trigger": "watching_angelfire_loading_for_2_minutes",
+            "probability": 1.0,
+            "duration": 30,
+            "effect": "movement_speed_increased_but_interaction_accuracy_reduced",
+            "description": "Fed up with waiting for things to load"
+          },
+          "mentally_unwell_qualification": {
+            "sources": [
+              "meatspin_nft_elsewhere",
+              "extended_museum_exposure",
+              "multiple_status_effects_simultaneously"
+            ],
+            "requirement_for": "curator_of_cursed_web_title_unlock",
+            "description": "Deep exposure to digital trauma and cursed content"
+          }
+        }
+      },
+      "achievement_system": {
+        "curator_of_cursed_web": {
+          "unlock_condition": "read_all_exhibit_plaques_while_mentally_unwell_status_active",
+          "requirements": [
+            "mentally_unwell_status_from_any_source",
+            "hall_of_modems_plaque_read",
+            "geocities_description_read",
+            "angelfire_plaque_read",
+            "habbo_incident_report_read",
+            "msn_memorial_plaque_read",
+            "imac_altar_description_read"
+          ],
+          "title_effect": "permanent_title_showing_dedication_to_cursed_content",
+          "description": "Achieved academic mastery of digital trauma preservation"
+        },
+        "patience_of_saint": {
+          "unlock_condition": "watch_angelfire_loading_bar_for_5_minutes_continuously",
+          "title_effect": "permanent_patience_title_with_loading_tolerance",
+          "description": "Survived authentic early web user experience"
+        },
+        "digital_archaeology_complete": {
+          "unlock_condition": "discover_all_lord_pilsner_embarrassing_digital_history",
+          "requirements": [
+            "geocities_ultimate_frisbee_website_found",
+            "angelfire_poetry_collection_discovered",
+            "msn_conversation_logs_revealed",
+            "kazaa_music_taste_exposed",
+            "imac_mix_cds_examined"
+          ],
+          "title_effect": "digital_archaeologist_with_pilsner_mockery_bonus",
+          "description": "Uncovered the complete digital shame archive"
+        }
+      },
+      "quest_integration": {
+        "meme_black_market_access": {
+          "quest_id": "underground_meme_economy_entry",
+          "completion_tracking": "password_puzzle_three_steps_complete",
+          "next_location": "meme_black_market_vendor_hub",
+          "achievement_unlock": "digital_underground_access_granted",
+          "cross_location_connection": "provides_access_to_memelord_exe_vendor"
+        },
+        "icq_darkweb_network": {
+          "quest_id": "digital_communication_underground",
+          "museum_role": "physical_hub_for_digital_network_access",
+          "terminal_access": "crt_monitors_connect_to_icq_darkweb_channels",
+          "network_integration": "museum_serves_as_real_world_anchor_for_digital_quests"
+        },
+        "lord_pilsner_digital_shame_arc": {
+          "quest_id": "embarrassing_digital_history_revelation",
+          "progressive_discovery": "each_terminal_reveals_new_pilsner_shame",
+          "party_dynamic": "companions_gain_increasing_mockery_ammunition",
+          "character_development": "pilsner_forced_to_confront_digital_past"
+        }
+      },
+      "audio_design": {
+        "ambient_soundscape": [
+          "warm_buzz_of_static_from_multiple_crt_monitors",
+          "ghost_pings_from_disconnected_networks",
+          "unresolved_limewire_download_trauma_hum",
+          "dust_settling_on_forgotten_technology"
+        ],
+        "interactive_audio": {
+          "hall_of_modems_screech": {
+            "file": "dial_up_screech_symphony.ogg",
+            "trigger": "approaching_modem_shrine_within_2_tiles",
+            "volume": 0.8,
+            "effect": "authentic_56k_trauma_recreation"
+          },
+          "angelfire_loading_ambience": {
+            "file": "eternal_loading_patience_test.ogg",
+            "trigger": "watching_loading_bar_for_30_seconds",
+            "volume": 0.4,
+            "effect": "subtle_tension_building_for_patience_testing"
+          },
+          "msn_aim_door_random": {
+            "file": "aim_door_open_close_inconsistent.ogg",
+            "trigger": "random_intervals_15_30_seconds",
+            "volume": 0.5,
+            "effect": "nostalgic_communication_platform_ghost_sounds"
+          },
+          "geocities_midi_autoplay": {
+            "file": "embedded_midi_cannot_stop.ogg",
+            "trigger": "approaching_geocities_diorama",
+            "volume": 0.6,
+            "effect": "authentic_early_web_audio_assault_that_wont_stop"
+          },
+          "chuck_e_cheese_mechanical": {
+            "file": "animatronic_eye_tracking_servo.ogg",
+            "trigger": "chuck_e_cheese_eye_movement_animation",
+            "volume": 0.3,
+            "effect": "subtle_mechanical_horror_audio_cue"
+          }
+        },
+        "comedy_audio_integration": {
+          "satirical_stingers": [
+            {
+              "file": "youve_got_mail_random_announcement.ogg",
+              "trigger": "random_intervals_throughout_museum_visit",
+              "volume": 0.7,
+              "description": "nostalgic_email_notification_at_inappropriate_times"
+            },
+            {
+              "file": "winxp_startup_slowed_menacing.ogg",
+              "trigger": "password_puzzle_step_completion",
+              "volume": 0.8,
+              "description": "corrupted_windows_startup_chime_celebrates_progress"
+            },
+            {
+              "file": "midi_autoplay_chaos_overlapping.ogg",
+              "trigger": "multiple_geocities_interactions_simultaneously",
+              "volume": 0.9,
+              "description": "authentic_early_web_audio_nightmare_recreation"
+            }
+          ]
+        }
+      },
+      "social_media_integration": {
+        "screenshot_worthy_moments": [
+          "hall_of_modems_shrine_with_archaeological_plaques",
+          "chuck_e_cheese_blank_stare_in_furby_exhibit",
+          "imac_g3_altar_with_incense_and_burned_cds",
+          "geocities_diorama_twinkling_gif_stars_midi_chaos",
+          "habbo_crime_scene_with_evidence_markers",
+          "angelfire_loading_bar_stuck_at_67_percent_since_2002"
+        ],
+        "tiktok_potential": [
+          "dial_up_screech_reaction_compilations",
+          "chuck_e_cheese_eye_tracking_jump_scares",
+          "password_puzzle_3am_ritual_attempts",
+          "angelfire_loading_bar_patience_challenges",
+          "midi_autoplay_chaos_audio_assault"
+        ],
+        "twitter_hooks": [
+          "preserving_our_digital_past_in_comic_sans",
+          "museum_treating_malware_as_artifacts",
+          "academic_reverence_for_internet_garbage",
+          "habbo_pool_closure_crime_scene_memorial",
+          "chuck_e_cheese_in_furbies_exhibit_placement_error"
+        ],
+        "streaming_content": [
+          "first_time_museum_discovery_reactions",
+          "3:33_am_password_puzzle_attempts",
+          "lord_pilsner_digital_shame_revelation_compilations",
+          "status_effect_roulette_from_midi_interactions",
+          "curator_academic_lecture_satirical_moments"
+        ]
+      }
+    }
+  }
+}

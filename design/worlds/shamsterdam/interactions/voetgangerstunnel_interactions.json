@@ -1,0 +1,334 @@
+{
+  "location_id": "shamsterdam_voetgangerstunnel_01",
+  
+  "interactive_objects": {
+    "signage_systems": [
+      {
+        "object_id": "dutch_direction_sign_station",
+        "type": "navigation_confusion",
+        "display_name": "Direction Sign: Centraal Station",
+        "description": "A sign pointing to 'Centraal Station'. The arrow points... somewhere.",
+        "interaction": {
+          "type": "examine",
+          "translation_provided": true,
+          "comedy": "Translation technically correct but contextually useless"
+        },
+        "navigation_effect": {
+          "claimed_destination": "centraal_station",
+          "actual_probability": {
+            "centraal_station": 0.40,
+            "roodelicht_row": 0.35,
+            "coffeeshop_quarter": 0.15,
+            "return_to_start": 0.10
+          }
+        }
+      },
+      {
+        "object_id": "dutch_direction_sign_museum",
+        "type": "navigation_confusion",
+        "display_name": "Direction Sign: Museum Plein",
+        "description": "A sign pointing to 'Museum Plein'. It might even be correct.",
+        "navigation_effect": {
+          "claimed_destination": "museum_mile",
+          "actual_probability": {
+            "museum_mile": 0.50,
+            "febo_automat": 0.30,
+            "canal_surface": 0.20
+          }
+        }
+      },
+      {
+        "object_id": "centrum_sign",
+        "type": "navigation_confusion",
+        "display_name": "Direction Sign: Centrum",
+        "description": "'Centrum' - could mean center of anything, really.",
+        "comedy": "Centrum is technically everywhere and nowhere"
+      }
+    ],
+    
+    "color_coded_tiles": [
+      {
+        "object_id": "blue_tile_line",
+        "type": "navigation_red_herring",
+        "display_name": "Blue Tile Line",
+        "description": "A line of blue tiles leading down a corridor. No legend explains what it means.",
+        "actual_destination": "random",
+        "legend_exists": false
+      },
+      {
+        "object_id": "orange_tile_line",
+        "type": "navigation_red_herring",
+        "display_name": "Orange Tile Line",
+        "description": "A line of orange tiles. Dutch orange, specifically. Must be important, right?",
+        "actual_destination": "random",
+        "henk_recommends": true,
+        "reliability": "none"
+      },
+      {
+        "object_id": "yellow_tile_line",
+        "type": "navigation_red_herring",
+        "display_name": "Yellow Tile Line",
+        "description": "Yellow tiles that no one has ever mentioned in any guide.",
+        "actual_destination": "random"
+      }
+    ],
+    
+    "wall_maps": [
+      {
+        "object_id": "main_tunnel_map",
+        "type": "navigation_misleading",
+        "display_name": "You Are Here Map",
+        "description": "A wall-mounted map of the tunnel system. The 'You Are Here' dot is wrong.",
+        "interaction": {
+          "type": "examine",
+          "content": {
+            "you_are_here": "wrong_location",
+            "legend": "doesnt_match_actual_tunnel",
+            "helpful_note": "Map may not reflect current layout",
+            "note_language": "tiny_dutch"
+          }
+        },
+        "comedy": "The map was last updated in 1987"
+      }
+    ],
+    
+    "emergency_exits": [
+      {
+        "object_id": "emergency_exit_signs",
+        "type": "actually_reliable",
+        "display_name": "Emergency Exit Signs",
+        "description": "Green emergency exit signs. The only reliable navigation in the entire tunnel.",
+        "secret": "Follow green emergency signs for correct routes",
+        "comedy": "The 'unsafe' option is the only reliable one",
+        "navigation_bonus": 0.30
+      }
+    ],
+    
+    "graffiti": [
+      {
+        "object_id": "graffiti_station_arrow",
+        "type": "environmental_hint",
+        "visibility": "requires_flashlight",
+        "content": "STATION →",
+        "modification": "scratched_over_arrow_reversed",
+        "reliability": "reversed_is_correct"
+      },
+      {
+        "object_id": "graffiti_dont_follow_henk",
+        "type": "environmental_hint",
+        "visibility": "requires_flashlight",
+        "content": "DON'T FOLLOW HENK",
+        "reliability": "accurate_warning"
+      },
+      {
+        "object_id": "graffiti_exit_7",
+        "type": "environmental_hint",
+        "visibility": "requires_flashlight",
+        "content": "Exit 7 = Red Light LOL",
+        "reliability": "accurate_warning_with_comedy"
+      },
+      {
+        "object_id": "graffiti_willem_knows",
+        "type": "environmental_hint",
+        "visibility": "requires_flashlight",
+        "content": "Willem knows",
+        "reliability": "quest_hint"
+      },
+      {
+        "object_id": "graffiti_emergency_truth",
+        "type": "environmental_hint",
+        "visibility": "normal",
+        "content": "GREEN = TRUTH",
+        "reliability": "accurate_key_to_navigation"
+      }
+    ],
+    
+    "busker_tip_jar": {
+      "object_id": "willem_tip_jar",
+      "type": "service_hint_system",
+      "display_name": "Willem's Hat",
+      "description": "A worn hat with exactly 2 Sovs in it. The amount never changes.",
+      "interaction": {
+        "tip_1_sov": {
+          "result": "basic_hint",
+          "dialogue": "Follow the sound of the tram. It knows the way."
+        },
+        "tip_5_sov": {
+          "result": "reliable_hint",
+          "dialogue": "The red signs lie. The emergency signs tell truth."
+        },
+        "theft_attempt": {
+          "result": "willem_stares",
+          "duration_seconds": 10,
+          "effect": "uncomfortable_silence"
+        }
+      },
+      "quest_tracking": {
+        "tips_given": 0,
+        "quest_progress": "willems_friend_quest"
+      }
+    },
+    
+    "hidden_passages": [
+      {
+        "object_id": "febo_hidden_entrance",
+        "type": "secret_shortcut",
+        "display_name": "Suspicious Heating Vent",
+        "description": "A large heating vent behind the FEBO automat. It seems... accessible.",
+        "discovery_conditions": [
+          "febo_regular_status",
+          "overheard_hint_from_npc",
+          "flashlight_reveals_scratches"
+        ],
+        "interaction": {
+          "type": "crawl_through",
+          "leads_to": "shamsterdam_febo_automat_01",
+          "atmosphere": "3am_vibes_regardless_of_time"
+        },
+        "quest": "febo_shortcut_discovery"
+      }
+    ],
+    
+    "bicycle_parking": {
+      "object_id": "underground_bike_parking",
+      "type": "environmental_comedy",
+      "display_name": "Underground Bicycle Parking",
+      "description": "10,000+ bicycles stored underground. You escaped bikes above only to find more below.",
+      "features": [
+        "visual_joke_bikes_everywhere",
+        "can_get_lost_in_parking",
+        "easter_egg_rusted_bike_1987_tag"
+      ],
+      "interaction": {
+        "examine_old_bike": {
+          "description": "A rusted bicycle with a parking tag dated 1987. Someone never came back.",
+          "item_findable": "vintage_bike_tag_1987"
+        }
+      }
+    },
+    
+    "vintage_ads": {
+      "object_id": "tunnel_advertisements",
+      "type": "environmental_storytelling",
+      "display_name": "Vintage Advertisements",
+      "description": "Faded advertisements for businesses that closed decades ago.",
+      "examples": [
+        "Guilder exchange rates (pre-Euro)",
+        "Nokia phone advertisement",
+        "Travel agency offering 'exotic destinations' like... Publandia",
+        "Film development 'Same day service!'"
+      ],
+      "comedy": "Time capsule of commercial history"
+    }
+  },
+  
+  "selfie_props": [
+    {
+      "prop_id": "accidental_tourist_selfie",
+      "location": "roodelicht_row_exit",
+      "display_name": "Accidental Tourist",
+      "condition": "emerged_at_red_light_wrong_exit",
+      "bravado_boost": -2,
+      "bravado_cost": 0,
+      "gallery_entry": true,
+      "comedy": "Confused expression between red-lit windows"
+    },
+    {
+      "prop_id": "you_are_here_wrong_selfie",
+      "location": "main_tunnel_map",
+      "display_name": "You Are NOT Here",
+      "condition": "examine_map",
+      "bravado_boost": 1,
+      "gallery_entry": true,
+      "comedy": "Pointing at wrong location dot"
+    },
+    {
+      "prop_id": "willem_selfie",
+      "location": "long_corridor",
+      "display_name": "The Eternal Busker",
+      "condition": "tip_willem_any_amount",
+      "bravado_boost": 2,
+      "gallery_entry": true,
+      "rarity": "uncommon"
+    },
+    {
+      "prop_id": "tunnel_survivor_selfie",
+      "location": "actual_exit",
+      "display_name": "Tunnel Survivor",
+      "condition": "successful_navigation",
+      "bravado_boost": 3,
+      "gallery_entry": true
+    }
+  ],
+  
+  "environmental_interactions": [
+    {
+      "trigger_id": "audio_direction_hint",
+      "type": "passive_navigation_aid",
+      "description": "Different sounds from each corridor provide subtle hints",
+      "audio_mapping": {
+        "tram_sounds": "leads_to_central_station",
+        "bass_music": "leads_to_coffeeshop_quarter",
+        "nothing_eerie_quiet": "leads_to_red_light",
+        "water_sounds": "leads_to_canal"
+      }
+    },
+    {
+      "trigger_id": "time_underground_tracker",
+      "type": "passive_debuff",
+      "condition": "10_plus_minutes_without_exit",
+      "effect": {
+        "debuff": "underground_dread",
+        "stats": {"speed": -0.05},
+        "visual": "character_mutters_about_daylight"
+      }
+    },
+    {
+      "trigger_id": "marloes_advice_tracker",
+      "type": "conditional_buff",
+      "condition": "buy_map_AND_follow_advice",
+      "effect": {
+        "buff": "marloess_blessing",
+        "navigation_bonus": 0.20,
+        "duration": "current_visit"
+      }
+    }
+  ],
+  
+  "quest_items": [
+    {
+      "item_id": "stay_away_pamphlet_4",
+      "display_name": "Stay Away Pamphlet #4",
+      "description": "'Underground Navigation: We Tried to Help' - A pamphlet about why the tunnel signage is 'perfectly clear'.",
+      "quest": "stay_away_campaign",
+      "pamphlet_number": 4,
+      "location": "zone_2_bulletin_board",
+      "effect": "quest_progress"
+    },
+    {
+      "item_id": "tunnel_map_accurate",
+      "display_name": "Marloes's Tunnel Map",
+      "description": "The only accurate map of the tunnel system. Marloes made it herself.",
+      "source": "purchase_from_marloes",
+      "cost": 8,
+      "effect": {
+        "navigation_bonus": 0.15,
+        "shows_actual_layout": true
+      }
+    },
+    {
+      "item_id": "vintage_bike_tag_1987",
+      "display_name": "Vintage Bike Tag (1987)",
+      "description": "A parking tag from 1987. Someone really committed to long-term storage.",
+      "source": "bicycle_parking_easter_egg",
+      "effect": "collectible_only"
+    },
+    {
+      "item_id": "willems_accordion_cosmetic",
+      "display_name": "Willem's Accordion",
+      "description": "A small accordion keychain. Willem gave it to you. It plays one note.",
+      "source": "willems_friend_quest_complete",
+      "effect": "cosmetic_plus_navigation_buff"
+    }
+  ]
+}

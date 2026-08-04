@@ -1,0 +1,361 @@
+{
+  "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+  
+  "npcs": [
+    {
+      "npc_id": "sinfonia_npc_herr_ober_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Cafe_Sachertorte/npc_herr_ober.md",
+      "sprite_sheet": "herr_ober_waiter.png",
+      "display_name": "Herr Ober",
+      "role": "head_waiter_cultural_gatekeeper_debt_collector",
+      "importance": "primary",
+      
+      "appearance": {
+        "age": "late_40s_looks_older",
+        "build": "thin_ramrod_posture",
+        "height": "tall",
+        "face": {
+          "features": "sharp_angular",
+          "expression_default": "professional_disdain",
+          "mustache": "thin_precise"
+        },
+        "clothing": {
+          "vest": "traditional_black_waiter",
+          "shirt": "white_with_subtle_monogram",
+          "bowtie": "black_perfectly_tied",
+          "apron": "pristine_white",
+          "accessories": ["pocket_watch_on_chain"]
+        }
+      },
+      
+      "personality": {
+        "core_traits": ["professional_pride", "quiet_snobbery", "secret_alcoholism"],
+        "speech_pattern": {
+          "accent": "formal_german_english",
+          "quirks": ["unnecessary_pauses", "subtle_corrections", "german_under_stress"],
+          "formality": "extremely_high"
+        },
+        "attitudes": {
+          "toward_tourists": "patient_condescension",
+          "toward_regulars": "respectful_familiar",
+          "toward_americans": "barely_concealed_disdain",
+          "toward_horses": "profound_trauma_now"
+        }
+      },
+      
+      "dialogue": {
+        "greeting": {
+          "default": "Welcome to Café Sachertorte. You have... a reservation?",
+          "tourist_detected": "Ah. Americans. The... terrace is available. By the restroom.",
+          "charm_high": "Welcome. I have a table by the window. This way, please."
+        },
+        "ordering": {
+          "coffee_generic": "Ah. You would like... 'a coffee.' How... specific.",
+          "coffee_correct": "Ein Melange. Very good. Perhaps there is hope.",
+          "cake_order": "The Sachertorte. An excellent choice. Obviously.",
+          "american_request": "'Iced coffee.' Sir, this is not... a diner."
+        },
+        "judgment": {
+          "photo_taking": "You take PHOTOS of the cake? This is not Instagram. This is Sachertorte.",
+          "price_complaint": "The price has not changed since 2019. The quality has not changed since 1832.",
+          "tip_insufficient": "...I see. Thank you for your... generosity."
+        },
+        "chaos_phase": {
+          "gustav_entry": "What is—MEIN GOTT! EIN PFERD!",
+          "cake_eaten": "NEIN! NEIN! DAS PFERD FRISST DIE TORTE!",
+          "damage_reaction": "THE TABLES! THE DISPLAY! THIS WILL COST—calculate—340 Sovs!",
+          "breakdown": "In thirty years of service, I have never... a HORSE. A HORSE ate the Sachertorte."
+        },
+        "post_chaos": {
+          "debt_demand": "340 Sovs. You will pay this. Now. Or I call the Polizei.",
+          "partial_payment": "50 Sovs received. You still owe 290 Sovs. I will remember.",
+          "full_payment": "...paid in full. You may return. But I will be watching.",
+          "unpaid_return": "You. OUT. Until the 340 Sovs is paid, you are not welcome."
+        }
+      },
+      
+      "animation_states": {
+        "idle": {
+          "frames": 2,
+          "description": "Perfect stillness with slight breathing",
+          "loop": true
+        },
+        "service": {
+          "frames": 6,
+          "description": "Precise movements with silver tray",
+          "loop": false
+        },
+        "judgment": {
+          "frames": 3,
+          "description": "Raised eyebrow, slight head shake",
+          "loop": false
+        },
+        "horror": {
+          "frames": 4,
+          "description": "Hands to face, step backward",
+          "loop": false
+        },
+        "fury": {
+          "frames": 6,
+          "description": "Pointing, red-faced, gesturing",
+          "loop": true
+        },
+        "defeat": {
+          "frames": 2,
+          "description": "Slumped, staring at cake case",
+          "loop": true
+        }
+      },
+      
+      "schedule": {
+        "08:00-12:00": "morning_service",
+        "12:00-14:00": "lunch_supervision",
+        "14:00-17:00": "kaffeeklatsch_peak_attention",
+        "17:00-22:00": "evening_formal_service"
+      },
+      
+      "quest_role": {
+        "fiaker_fiasco": "witness_victim_debt_collector",
+        "phase_participation": "cafe_phase_02",
+        "post_quest_behavior": "tracks_debt_demands_payment"
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_cafe_intellectual_01",
+      "display_name": "The Intellectual",
+      "role": "ambient_regular_comedy",
+      "importance": "ambient",
+      
+      "appearance": {
+        "age": "elderly_70s",
+        "build": "thin_academic",
+        "clothing": ["tweed_jacket", "reading_glasses_on_chain", "coffee_stained_tie"],
+        "props": ["book_not_reading", "single_espresso_4_hours_old"]
+      },
+      
+      "personality": {
+        "core_traits": ["pretentious", "oblivious", "unflappable"],
+        "behavior": "completely_ignores_chaos"
+      },
+      
+      "dialogue": {
+        "ambient_muttering": [
+          "*mutters* Declining standards...",
+          "In my day, the Sachertorte was... *trails off*",
+          "*doesn't look up from book*"
+        ],
+        "during_chaos": {
+          "reaction": null,
+          "note": "Does not react to Gustav at all. Keeps reading."
+        },
+        "post_chaos": {
+          "to_bros": "I've been coming here for 40 years. This is the most exciting thing that's ever happened.",
+          "delivery": "complete_deadpan"
+        }
+      },
+      
+      "animation_states": {
+        "reading": {"frames": 2, "description": "Turns page occasionally", "loop": true},
+        "espresso_sip": {"frames": 3, "description": "Tiny sip, returns to book", "loop": false}
+      },
+      
+      "special_behavior": {
+        "chaos_immunity": true,
+        "evacuation_participation": false,
+        "reason": "has_seen_everything_nothing_phases_him"
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_cafe_chess_player_01",
+      "display_name": "Chess Master Greta",
+      "role": "minigame_opponent_regular",
+      "importance": "secondary",
+      
+      "appearance": {
+        "age": "50s",
+        "build": "sturdy",
+        "face": {"expression": "calculating", "eyes": "sharp"},
+        "clothing": ["simple_black_dress", "silver_jewelry", "reading_glasses"]
+      },
+      
+      "personality": {
+        "core_traits": ["competitive", "secretly_lonely", "intellectual"],
+        "speech_pattern": "clipped_precise"
+      },
+      
+      "dialogue": {
+        "challenge_offer": "You play chess? Sit. I need an opponent.",
+        "during_game": {
+          "player_good_move": "Hmm. Interesting.",
+          "player_bad_move": "Predictable.",
+          "checkmate_player": "Checkmate. Better luck next time."
+        },
+        "player_wins": "...impressive. I underestimated you. Here.",
+        "chaos_reaction": "evacuates_protecting_chess_set"
+      },
+      
+      "minigame": {
+        "type": "chess_simplified",
+        "difficulty": "hard",
+        "win_rate_expected": 0.3,
+        "rewards": {
+          "win": {"item": "chess_notation_card", "charm": 2},
+          "lose": {"status": "intellectually_humbled", "duration_minutes": 30}
+        }
+      },
+      
+      "availability": "pre_quest_only"
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_cafe_poseur_01",
+      "display_name": "The Poseur",
+      "role": "ambient_satire",
+      "importance": "ambient",
+      
+      "appearance": {
+        "age": "late_20s",
+        "build": "slim_trendy",
+        "clothing": ["black_turtleneck", "oversized_glasses", "leather_messenger_bag"],
+        "props": ["visible_philosophy_book", "artisanal_coffee", "macbook_closed"]
+      },
+      
+      "personality": {
+        "core_traits": ["pretentious", "insecure", "performative"],
+        "secret": "actually_a_real_estate_agent"
+      },
+      
+      "dialogue": {
+        "overheard": [
+          "*loudly* The thing about Nietzsche is...",
+          "*to no one* Have you considered the phenomenological implications?",
+          "*phone rings, answers professionally* Yes, the two-bedroom in Währing is still available..."
+        ],
+        "chaos_reaction": "films_everything_for_social_media"
+      },
+      
+      "animation_states": {
+        "philosophizing": {"frames": 4, "description": "Gestures dramatically to self", "loop": true},
+        "phone_mode": {"frames": 2, "description": "Professional real estate voice", "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_tourist_couple_01",
+      "display_name": "American Tourist Couple",
+      "role": "ambient_relatable",
+      "importance": "ambient",
+      
+      "appearance": {
+        "type": "couple",
+        "age": "40s",
+        "clothing": ["comfortable_travel_wear", "money_belts_visible", "guidebook_prominent"],
+        "expressions": ["uncertain", "intimidated", "camera_ready"]
+      },
+      
+      "dialogue": {
+        "debate": [
+          "Him: 36 Sovs for two cake slices? That's like... $40?",
+          "Her: But it's AUTHENTIC. The book says—",
+          "Him: I could get cake at Costco for—",
+          "Her: *glare*"
+        ],
+        "chaos_reaction": {
+          "initial": "Is that... is that a HORSE?!",
+          "evacuation": "First to leave, husband filming entire time"
+        },
+        "post_chaos": "Wait, are THOSE the guys? The horse guys?"
+      },
+      
+      "special_behavior": {
+        "evacuation_speed": "fastest",
+        "documentation": "films_everything"
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_kitchen_staff_01",
+      "display_name": "Chef Konrad",
+      "role": "chaos_reactor",
+      "importance": "event_only",
+      
+      "appearance": {
+        "age": "50s",
+        "build": "stocky",
+        "clothing": ["chef_whites", "tall_hat", "flour_dusted"],
+        "expression": "perpetually_stressed"
+      },
+      
+      "dialogue": {
+        "chaos_phase": {
+          "gustav_in_kitchen": "*in German* A HORSE! IN MY KITCHEN!",
+          "pots_crashing": "*sounds of chaos* GET OUT! RAUS! RAUS!",
+          "aftermath": "Thirty years. Thirty years no horse in my kitchen. Today? Horse."
+        }
+      },
+      
+      "animation_states": {
+        "kitchen_work": {"frames": 4, "description": "Cooking motions", "loop": true},
+        "panic": {"frames": 6, "description": "Brandishing ladle, dodging horse", "loop": true}
+      },
+      
+      "visibility": "through_kitchen_door_or_during_chase"
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_kitchen_staff_02",
+      "display_name": "Sous Chef Anna",
+      "role": "chaos_reactor",
+      "importance": "event_only",
+      
+      "appearance": {
+        "age": "30s",
+        "build": "fit",
+        "clothing": ["chef_whites", "bandana", "practical"]
+      },
+      
+      "dialogue": {
+        "chaos_phase": {
+          "reaction": "That horse has better taste than most tourists.",
+          "observation": "He went for the Sachertorte first. Professional."
+        }
+      },
+      
+      "personality": {
+        "core_traits": ["sarcastic", "unflappable", "secretly_amused"],
+        "unique_aspect": "finds_situation_funny"
+      }
+    }
+  ],
+  
+  "npc_group_behavior": {
+    "pre_quest": {
+      "distribution": "tables_and_counter",
+      "ambient_actions": ["reading", "talking", "eating", "photographing"],
+      "interaction_availability": "all_available"
+    },
+    "during_quest": {
+      "evacuation_order": ["tourist_couple", "poseur", "chess_player"],
+      "remains_in_place": ["intellectual"],
+      "becomes_active": ["kitchen_staff"],
+      "herr_ober_focus": "chaos_management"
+    },
+    "post_quest": {
+      "intellectual": "still_reading",
+      "herr_ober": "debt_collection_mode",
+      "others": "absent_until_reopening"
+    }
+  },
+  
+  "spawn_points": [
+    {"npc": "herr_ober_01", "position": {"x": 200, "y": 60}, "facing": "west"},
+    {"npc": "cafe_intellectual_01", "position": {"x": 40, "y": 80}, "facing": "south"},
+    {"npc": "cafe_chess_player_01", "position": {"x": 160, "y": 140}, "facing": "east"},
+    {"npc": "cafe_poseur_01", "position": {"x": 100, "y": 100}, "facing": "north"},
+    {"npc": "tourist_couple_01", "position": {"x": 140, "y": 180}, "facing": "north"},
+    {"npc": "kitchen_staff_01", "position": {"x": 230, "y": 40}, "facing": "west", "visibility": "event_only"},
+    {"npc": "kitchen_staff_02", "position": {"x": 230, "y": 55}, "facing": "west", "visibility": "event_only"}
+  ]
+}

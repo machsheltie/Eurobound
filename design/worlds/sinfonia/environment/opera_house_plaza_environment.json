@@ -1,0 +1,380 @@
+{
+  "location_id": "sinfonia_imperial_opera_house_plaza_01",
+  
+  "ambient_audio": {
+    "background_music": {
+      "track": null,
+      "diegetic_sources": [
+        {
+          "source": "opera_house_rehearsal",
+          "track": "classical_orchestra_rehearsal_loop.ogg",
+          "audibility_range_meters": 50,
+          "volume": 0.3,
+          "condition": "opera_windows_open"
+        },
+        {
+          "source": "street_performer",
+          "track": "violin_classical_live.ogg",
+          "audibility_range_meters": 30,
+          "volume": 0.5,
+          "condition": "performer_active"
+        }
+      ]
+    },
+    "environmental_sounds": [
+      {
+        "sound_id": "fountain_water",
+        "file": "baroque_fountain_loop.ogg",
+        "volume": 0.5,
+        "constant": true,
+        "origin": "center_fountain"
+      },
+      {
+        "sound_id": "pigeon_cooing",
+        "file": "pigeon_sounds_varied.ogg",
+        "volume": 0.2,
+        "interval_seconds": "5-15",
+        "random": true
+      },
+      {
+        "sound_id": "pigeon_wings",
+        "file": "pigeon_wing_flap_group.ogg",
+        "volume": 0.3,
+        "trigger": "sudden_movement_nearby"
+      },
+      {
+        "sound_id": "horse_sounds",
+        "file": "carriage_horse_idle.ogg",
+        "volume": 0.4,
+        "origin": "fiaker_queue",
+        "interval_seconds": "10-30"
+      },
+      {
+        "sound_id": "horse_clip_clop",
+        "file": "horse_hooves_cobblestone.ogg",
+        "volume": 0.5,
+        "trigger": "fiaker_departure_arrival"
+      },
+      {
+        "sound_id": "cafe_ambience",
+        "file": "outdoor_cafe_murmur.ogg",
+        "volume": 0.3,
+        "origin": "west_terraces"
+      },
+      {
+        "sound_id": "espresso_machine",
+        "file": "espresso_steam_hiss.ogg",
+        "volume": 0.2,
+        "origin": "cafe_interior",
+        "interval_seconds": "20-60"
+      },
+      {
+        "sound_id": "cobblestone_footsteps",
+        "file": "footsteps_cobblestone_varied.ogg",
+        "volume": 0.3,
+        "trigger": "npc_movement"
+      },
+      {
+        "sound_id": "church_bells_distant",
+        "file": "church_bells_sinfonia.ogg",
+        "volume": 0.2,
+        "trigger": "hour_mark",
+        "count_matches_hour": true
+      }
+    ],
+    "audio_transitions": {
+      "enter_from_street": {
+        "effect": "fade_in_fountain_and_opera",
+        "duration_seconds": 2
+      },
+      "exit_to_street": {
+        "effect": "fade_out_fountain_maintain_street",
+        "duration_seconds": 1.5
+      },
+      "quest_trigger": {
+        "effect": "sudden_music_cut_then_panic",
+        "duration_seconds": 0.5
+      }
+    }
+  },
+  
+  "dynamic_audio": {
+    "time_of_day": {
+      "day": {
+        "sounds": ["full_ambient_mix", "tourist_chatter", "carriage_activity"],
+        "volume_modifier": 1.0
+      },
+      "evening": {
+        "sounds": ["refined_murmur", "opera_warmup", "formal_footsteps"],
+        "volume_modifier": 0.9
+      },
+      "night": {
+        "sounds": ["post_opera_chatter", "distant_revelry", "gas_lamp_hiss"],
+        "volume_modifier": 0.7
+      }
+    },
+    "event_stingers": [
+      {
+        "event": "hans_jurgen_panic_start",
+        "audio": "accelerating_violin_tremolo.ogg",
+        "duration_seconds": 2
+      },
+      {
+        "event": "gustav_spotted",
+        "audio": "dramatic_horse_whinny.ogg",
+        "duration_seconds": 1.5
+      },
+      {
+        "event": "gustav_judgmental_stare",
+        "audio": "single_low_cello_note.ogg",
+        "duration_seconds": 3
+      },
+      {
+        "event": "property_damage",
+        "audio": "crash_plus_register_ching.ogg",
+        "duration_seconds": 1
+      },
+      {
+        "event": "bros_wisdom_moment",
+        "audio": "mocking_harp_flourish.ogg",
+        "duration_seconds": 1.5
+      },
+      {
+        "event": "quest_resolution_happy",
+        "audio": "triumphant_waltz_snippet.ogg",
+        "duration_seconds": 4
+      },
+      {
+        "event": "quest_resolution_chaotic",
+        "audio": "comedic_trombone_slide.ogg",
+        "duration_seconds": 2
+      }
+    ]
+  },
+  
+  "status_effects": {
+    "environmental_buffs": [
+      {
+        "effect_id": "cultured_by_proximity",
+        "trigger": "take_selfie_with_opera_backdrop",
+        "duration_minutes": 60,
+        "stat_changes": {
+          "charm": 1
+        },
+        "description": "The cultural ambiance has rubbed off on you. Temporarily."
+      },
+      {
+        "effect_id": "opera_exposure",
+        "trigger": "listen_to_rehearsal_5_minutes",
+        "duration_minutes": 30,
+        "stat_changes": {
+          "performance": 2
+        },
+        "description": "Classical music exposure has temporarily elevated your sensibilities."
+      }
+    ],
+    "atmospheric_debuffs": [
+      {
+        "effect_id": "culturally_intimidated",
+        "trigger": "first_visit",
+        "duration": "until_successful_interaction",
+        "stat_changes": {
+          "charm": -2,
+          "context": "locals_only"
+        },
+        "description": "The grandeur is a bit overwhelming. Locals can tell you're out of your depth.",
+        "cure_methods": ["successful_selfie", "successful_conversation", "complete_minigame"]
+      }
+    ],
+    "recovery_options": [
+      {
+        "method": "terrace_espresso",
+        "removes": "tired",
+        "cost_sov": 8,
+        "location": "cafe_terrace"
+      },
+      {
+        "method": "listen_to_street_performer",
+        "removes": "stressed",
+        "cost_sov": 0,
+        "duration_required_minutes": 1
+      },
+      {
+        "method": "fountain_coin_toss",
+        "removes": "anxious",
+        "cost_sov": 1,
+        "superstitious": true
+      }
+    ]
+  },
+  
+  "weather_system": {
+    "default_weather": "partly_cloudy",
+    "weather_states": [
+      {
+        "state": "sunny",
+        "probability": 0.4,
+        "visual_effects": ["bright_shadows", "fountain_sparkle"],
+        "audio_effects": null,
+        "status_modifier": {"mood": 1}
+      },
+      {
+        "state": "partly_cloudy",
+        "probability": 0.35,
+        "visual_effects": ["soft_shadows"],
+        "audio_effects": null,
+        "status_modifier": null
+      },
+      {
+        "state": "overcast",
+        "probability": 0.15,
+        "visual_effects": ["flat_lighting", "grey_sky"],
+        "audio_effects": ["wind_light"],
+        "status_modifier": null
+      },
+      {
+        "state": "light_rain",
+        "probability": 0.08,
+        "visual_effects": ["rain_particles", "wet_cobblestones", "umbrellas_appear"],
+        "audio_effects": ["rain_on_stone", "cafe_closes_terrace"],
+        "status_modifier": {"speed": -1}
+      },
+      {
+        "state": "snow",
+        "probability": 0.02,
+        "seasonal": "winter",
+        "visual_effects": ["snow_particles", "breath_visible", "holiday_decorations"],
+        "audio_effects": ["muffled_sounds", "bells_more_prominent"],
+        "status_modifier": {"charm": 1, "speed": -1}
+      }
+    ]
+  },
+  
+  "time_of_day_effects": {
+    "morning": {
+      "hours": "06:00-10:00",
+      "lighting": "#FFFACD",
+      "intensity": 0.7,
+      "special_events": ["cafe_opening", "first_tourists_arriving"],
+      "npc_changes": ["street_performer_setting_up"]
+    },
+    "day": {
+      "hours": "10:00-17:00",
+      "lighting": "#FFFFFF",
+      "intensity": 0.9,
+      "special_events": ["fiaker_queue_active", "hans_jurgen_available"],
+      "npc_changes": ["full_plaza_activity"]
+    },
+    "evening": {
+      "hours": "17:00-22:00",
+      "lighting": "#FFD700",
+      "intensity": 0.7,
+      "special_events": ["opera_goers_arriving", "red_carpet_out", "formal_atmosphere"],
+      "npc_changes": ["opera_usher_strict", "cafe_upscale_clientele"]
+    },
+    "night": {
+      "hours": "22:00-02:00",
+      "lighting": "#4169E1",
+      "intensity": 0.4,
+      "special_events": ["post_opera_crowd", "scalper_more_aggressive"],
+      "npc_changes": ["drunk_opera_patrons", "pigeon_lady_gone"]
+    },
+    "late_night": {
+      "hours": "02:00-06:00",
+      "lighting": "#191970",
+      "intensity": 0.2,
+      "special_events": ["plaza_mostly_empty"],
+      "npc_changes": ["only_security_present"]
+    }
+  },
+  
+  "couchsurf_integration": {
+    "available": false,
+    "note": "outdoor_location",
+    "related_couchsurf": {
+      "unlocks_after": "fiaker_fiasco_path_a_complete",
+      "location": "hans_jurgen_apartment",
+      "host_npc": "sinfonia_npc_hans_jurgen_01"
+    }
+  },
+  
+  "cross_location_dependencies": {
+    "unlock_requirements": [
+      {
+        "location": "sinfonia_arrival",
+        "requirement": "complete_arrival_sequence"
+      }
+    ],
+    "references_from_other_locations": [
+      {
+        "location": "sinfonia_moderato_pub_01",
+        "reference_type": "gossip",
+        "npc": "pub_patrons",
+        "dialogue": "Did you hear? Another horse escaped the Fiaker queue. The drivers, they drink too much."
+      }
+    ],
+    "references_to_other_locations": [
+      {
+        "target": "sinfonia_bassline_opera_house_01",
+        "reference_type": "directly_adjacent",
+        "visual": "opera_facade_dominates_north_view"
+      },
+      {
+        "target": "sinfonia_cafe_sachertorte_01",
+        "reference_type": "quest_route",
+        "context": "Gustav's first stop during chase"
+      },
+      {
+        "target": "sinfonia_black_tie_backroom_01",
+        "reference_type": "gossip_hint",
+        "context": "Opera patrons mention it in overheard conversation"
+      }
+    ],
+    "character_movements": [
+      {
+        "npc": "sinfonia_npc_hans_jurgen_01",
+        "behavior": "normally_here_moves_during_quest"
+      },
+      {
+        "npc": "sinfonia_npc_gustav_horse_01",
+        "behavior": "starts_here_flees_through_multiple_locations"
+      }
+    ],
+    "information_flow": [
+      {
+        "knowledge": "fiaker_chase_incident",
+        "source": "opera_house_plaza",
+        "affects": ["all_sinfonia_npcs_dialogue"],
+        "description": "News of the American horse-chasers spreads"
+      },
+      {
+        "knowledge": "black_tie_backroom_hint",
+        "source": "eavesdropped_gossip",
+        "affects": ["backroom_discovery"]
+      }
+    ]
+  },
+  
+  "quest_state_changes": {
+    "before_fiaker_fiasco": {
+      "atmosphere": "normal_tourist_activity",
+      "hans_jurgen_state": "drunk_but_functional",
+      "gustav_state": "present_at_carriage"
+    },
+    "during_fiaker_fiasco": {
+      "atmosphere": "chaos_and_property_damage",
+      "hans_jurgen_state": "panicked_running",
+      "gustav_state": "escaped_location_varies"
+    },
+    "after_fiaker_fiasco": {
+      "atmosphere": "infamous_location_for_bros",
+      "permanent_changes": [
+        "newspaper_headline_updated",
+        "npcs_recognize_bros",
+        "opera_usher_hostile",
+        "cafe_demands_payment_or_ban",
+        "gustav_occasional_background_cameo"
+      ]
+    }
+  }
+}

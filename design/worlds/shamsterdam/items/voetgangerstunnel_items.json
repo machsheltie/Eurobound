@@ -1,0 +1,370 @@
+{
+  "location_id": "shamsterdam_voetgangerstunnel_01",
+  
+  "services": [
+    {
+      "service_id": "tunnel_map_purchase",
+      "provider_npc": "marloes_mapvendor_01",
+      "display_name": "Tunnel Map",
+      "description": "The only accurate map of the tunnel system. Marloes made it herself after years of watching tourists fail.",
+      "cost": 8,
+      "currency": "sovs",
+      "effect": {
+        "type": "navigation_bonus",
+        "bonus": 0.15,
+        "shows_actual_layout": true
+      },
+      "item_granted": "tunnel_map_accurate",
+      "dialogue_on_purchase": "8 Sovs for the map. It's the only accurate one in the city. Yes, really."
+    },
+    {
+      "service_id": "tourist_map_surface",
+      "provider_npc": "marloes_mapvendor_01",
+      "display_name": "Tourist Map (Surface)",
+      "description": "A standard Shamsterdam tourist map. Completely useless underground.",
+      "cost": 5,
+      "currency": "sovs",
+      "effect": {
+        "type": "none_underground",
+        "comedy": true
+      },
+      "dialogue_on_purchase": "This one's for the surface. Won't help you down here, but you'll need it eventually."
+    },
+    {
+      "service_id": "survivor_badge",
+      "provider_npc": "marloes_mapvendor_01",
+      "display_name": "'I Survived the Tunnel' Badge",
+      "description": "A small pin badge. Purely cosmetic. You haven't survived yet.",
+      "cost": 3,
+      "currency": "sovs",
+      "effect": {
+        "type": "cosmetic",
+        "equip_slot": "accessory"
+      }
+    },
+    {
+      "service_id": "flashlight",
+      "provider_npc": "marloes_mapvendor_01",
+      "display_name": "Flashlight",
+      "description": "A basic flashlight. Reveals hidden graffiti hints on the walls.",
+      "cost": 6,
+      "currency": "sovs",
+      "effect": {
+        "type": "reveal_graffiti",
+        "enables": "graffiti_visibility"
+      },
+      "item_granted": "flashlight_basic"
+    },
+    {
+      "service_id": "henk_free_directions",
+      "provider_npc": "henk_security_01",
+      "display_name": "Directions (Free)",
+      "description": "Henk will point you in a direction. Whether it's the right direction is another matter.",
+      "cost": 0,
+      "effect": {
+        "type": "random_direction",
+        "navigation_bonus": 0,
+        "accuracy": "very_low"
+      },
+      "dialogue_on_purchase": "Centraal Station? Ja, ja, go that way."
+    },
+    {
+      "service_id": "henk_paid_directions",
+      "provider_npc": "henk_security_01",
+      "display_name": "'Correct' Directions",
+      "description": "For 5 Sovs, Henk will give you the 'real' directions. Slightly more reliable.",
+      "cost": 5,
+      "currency": "sovs",
+      "effect": {
+        "type": "direction_hint",
+        "navigation_bonus": 0.10
+      },
+      "dialogue_on_purchase": "Okay, for five Sovs, I give you the REAL directions. This way. Maybe."
+    },
+    {
+      "service_id": "henk_escort",
+      "provider_npc": "henk_security_01",
+      "display_name": "Guided Walk (Escort)",
+      "description": "Henk will walk you to your destination himself. Guaranteed correct. Very slow.",
+      "cost": 10,
+      "currency": "sovs",
+      "effect": {
+        "type": "escort",
+        "guaranteed_correct": true,
+        "speed": "very_slow",
+        "time_cost_seconds": 300
+      },
+      "dialogue_on_purchase": "For ten Sovs, I walk you there myself. But I walk slow. Very slow."
+    },
+    {
+      "service_id": "willem_tip_1",
+      "provider_npc": "willem_busker_01",
+      "display_name": "Tip Willem (1 Sov)",
+      "description": "A small tip for the eternal busker. He'll offer a navigation hint.",
+      "cost": 1,
+      "currency": "sovs",
+      "effect": {
+        "type": "hint",
+        "quality": "basic",
+        "hint_text": "Follow the sound of the tram. It knows the way."
+      }
+    },
+    {
+      "service_id": "willem_tip_5",
+      "provider_npc": "willem_busker_01",
+      "display_name": "Tip Willem (5 Sovs)",
+      "description": "A generous tip. Willem will share reliable navigation wisdom.",
+      "cost": 5,
+      "currency": "sovs",
+      "effect": {
+        "type": "hint",
+        "quality": "reliable",
+        "hint_text": "The red signs lie. The emergency signs tell truth.",
+        "quest_progress": "eternal_busker"
+      }
+    }
+  ],
+  
+  "items": {
+    "purchasable": [
+      {
+        "item_id": "tunnel_map_accurate",
+        "display_name": "Marloes's Tunnel Map",
+        "description": "A hand-drawn map of the actual tunnel layout. Marloes made it herself after watching decades of confused tourists.",
+        "source": "purchase_from_marloes",
+        "cost": 8,
+        "type": "navigation_aid",
+        "effect": {
+          "navigation_bonus": 0.15,
+          "shows_actual_layout": true,
+          "duration": "permanent"
+        }
+      },
+      {
+        "item_id": "flashlight_basic",
+        "display_name": "Flashlight",
+        "description": "A basic flashlight. The batteries are questionable, but it works.",
+        "source": "purchase_from_marloes",
+        "cost": 6,
+        "type": "tool",
+        "effect": {
+          "reveals": "graffiti_hints",
+          "light_radius": 3
+        }
+      },
+      {
+        "item_id": "survivor_badge_pin",
+        "display_name": "'I Survived the Tunnel' Badge",
+        "description": "A small enamel pin. Proof that you navigated the Voetgangerstunnel. Or at least bought a souvenir.",
+        "source": "purchase_from_marloes",
+        "cost": 3,
+        "type": "cosmetic",
+        "equip_slot": "accessory"
+      }
+    ],
+    
+    "findable": [
+      {
+        "item_id": "stay_away_pamphlet_4",
+        "display_name": "Stay Away Pamphlet #4",
+        "description": "'Underground Navigation: We Tried to Help' - A pamphlet explaining why the tunnel signage is 'perfectly clear'.",
+        "source": "bulletin_board_zone_2",
+        "type": "quest_item",
+        "quest": "stay_away_campaign",
+        "pamphlet_number": 4
+      },
+      {
+        "item_id": "vintage_bike_tag_1987",
+        "display_name": "Vintage Bike Tag (1987)",
+        "description": "A parking tag from a bicycle parked in 1987. Someone really committed to long-term storage. Or never came back.",
+        "source": "rusted_bike_in_underground_parking",
+        "type": "collectible",
+        "rarity": "rare"
+      },
+      {
+        "item_id": "lost_tourist_belonging",
+        "display_name": "Lost Tourist's Belonging",
+        "description": "Something dropped by a confused tourist. Could be a phone case, a snack bar wrapper, or an unused return ticket.",
+        "source": "random_drop_in_tunnels",
+        "type": "junk",
+        "sell_value": 1,
+        "variants": ["phone_case", "snack_wrapper", "unused_ticket", "single_sock"]
+      }
+    ],
+    
+    "quest_rewards": [
+      {
+        "item_id": "willems_accordion_cosmetic",
+        "display_name": "Willem's Accordion (Keychain)",
+        "description": "A tiny accordion keychain. Willem gave it to you. It plays one note when squeezed.",
+        "source": "eternal_busker_quest_complete",
+        "type": "cosmetic",
+        "equip_slot": "accessory",
+        "effect": {
+          "navigation_all_tunnels": 0.10,
+          "sound_on_use": "single_accordion_note"
+        }
+      }
+    ]
+  },
+  
+  "buffs": [
+    {
+      "buff_id": "tunnel_vision",
+      "display_name": "Tunnel Vision",
+      "description": "Perfect navigation through the Voetgangerstunnel has sharpened your underground instincts.",
+      "trigger": "perfect_navigation_no_wrong_turns",
+      "stats": {
+        "navigation": 0.10,
+        "speed_underground": 0.05
+      },
+      "duration_minutes": 60
+    },
+    {
+      "buff_id": "underground_navigator",
+      "display_name": "Underground Navigator",
+      "description": "Five successful tunnel navigations have made you a pseudo-local. Almost.",
+      "trigger": "5_successful_navigations",
+      "stats": {
+        "navigation_tunnels": 0.05
+      },
+      "duration": "permanent",
+      "type": "passive"
+    },
+    {
+      "buff_id": "marloess_blessing",
+      "display_name": "Marloes's Blessing",
+      "description": "You bought the map AND followed the advice. Marloes is impressed. A rare honor.",
+      "trigger": "buy_map_and_follow_advice",
+      "stats": {
+        "navigation": 0.20
+      },
+      "duration": "current_tunnel_visit"
+    },
+    {
+      "buff_id": "willems_wisdom",
+      "display_name": "Willem's Wisdom",
+      "description": "The eternal busker has shared his secrets. All tunnels are now clearer.",
+      "trigger": "eternal_busker_quest_complete",
+      "stats": {
+        "navigation_all_tunnels": 0.10
+      },
+      "duration": "permanent"
+    }
+  ],
+  
+  "debuffs": [
+    {
+      "debuff_id": "tunnel_confusion",
+      "display_name": "Tunnel Confusion",
+      "description": "Too many wrong turns have scrambled your sense of direction.",
+      "trigger": "3_or_more_wrong_turns_single_visit",
+      "stats": {
+        "navigation_shamsterdam": -0.15
+      },
+      "duration_hours": 2,
+      "cure": "successful_navigation",
+      "visual": "question_marks_above_head"
+    },
+    {
+      "debuff_id": "underground_dread",
+      "display_name": "Underground Dread",
+      "description": "You've been underground too long. The fluorescent lights are getting to you.",
+      "trigger": "10_plus_minutes_without_exit",
+      "stats": {
+        "speed": -0.05
+      },
+      "duration": "until_surface_reached",
+      "visual": "character_mutters_about_daylight",
+      "audio": "anxious_breathing"
+    },
+    {
+      "debuff_id": "red_light_shame",
+      "display_name": "Red Light Shame",
+      "description": "You emerged from the tunnel directly into the Red Light District. Everyone noticed.",
+      "trigger": "wrong_exit_to_roodelicht_row",
+      "stats": {
+        "charm": -0.15
+      },
+      "duration_minutes": 30,
+      "visual": "embarrassed_blush",
+      "npc_comments": true
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "shortcut_id": "underground_passage_reliable",
+      "display_name": "Reliable Navigation",
+      "description": "After 5 successful navigations, the tunnel layout is burned into your memory.",
+      "unlock_condition": "5_successful_navigations",
+      "effect": {
+        "navigation_bonus": 0.25,
+        "wrong_exit_probability": -0.20
+      }
+    },
+    {
+      "shortcut_id": "febo_backdoor",
+      "display_name": "FEBO Backdoor",
+      "description": "A hidden passage behind the FEBO automat's heating unit. Smells like kroket.",
+      "unlock_condition": "febo_shortcut_quest_complete",
+      "effect": {
+        "direct_access": "shamsterdam_febo_automat_01",
+        "bypasses": "navigation_probability"
+      }
+    }
+  ],
+  
+  "achievements": [
+    {
+      "achievement_id": "underground_navigator",
+      "display_name": "Underground Navigator",
+      "description": "Successfully navigated the Voetgangerstunnel for the first time.",
+      "trigger": "first_successful_navigation",
+      "type": "milestone"
+    },
+    {
+      "achievement_id": "scenic_route",
+      "display_name": "Scenic Route",
+      "description": "Accidentally emerged in the Red Light District. Not your intended destination.",
+      "trigger": "first_red_light_emergence",
+      "type": "discovery",
+      "comedy": true
+    },
+    {
+      "achievement_id": "tunnel_vision_achievement",
+      "display_name": "Tunnel Vision",
+      "description": "Navigated the tunnel perfectly without a single wrong turn.",
+      "trigger": "perfect_navigation",
+      "type": "skill"
+    },
+    {
+      "achievement_id": "willems_friend",
+      "display_name": "Willem's Friend",
+      "description": "Tipped Willem 5 Sovs on three separate visits. He shared something... unusual.",
+      "trigger": "eternal_busker_quest_complete",
+      "type": "hidden"
+    },
+    {
+      "achievement_id": "back_door_regular",
+      "display_name": "Back Door Regular",
+      "description": "Discovered the secret passage to FEBO. It's always 3 AM there.",
+      "trigger": "febo_shortcut_discovered",
+      "type": "hidden"
+    },
+    {
+      "achievement_id": "tour_guide",
+      "display_name": "Tour Guide",
+      "description": "Escorted a lost tourist to the correct exit. They'll get lost again tomorrow.",
+      "trigger": "escort_lost_tourist_to_exit",
+      "type": "social"
+    },
+    {
+      "achievement_id": "five_time_navigator",
+      "display_name": "Five Time Navigator",
+      "description": "Successfully navigated the tunnel 5 times. You're practically a local.",
+      "trigger": "5_successful_navigations",
+      "type": "mastery"
+    }
+  ]
+}

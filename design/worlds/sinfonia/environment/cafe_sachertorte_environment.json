@@ -1,0 +1,345 @@
+{
+  "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+  
+  "ambient_audio": {
+    "background_music": {
+      "track": "cafe_string_quartet_refined.ogg",
+      "volume": 0.4,
+      "loop": true,
+      "style": "classical_chamber_melancholic"
+    },
+    "environmental_sounds": [
+      {
+        "sound": "coffee_grinder",
+        "source": "service_counter",
+        "trigger": "periodic",
+        "interval_seconds": 45,
+        "volume": 0.3
+      },
+      {
+        "sound": "espresso_machine_hiss",
+        "source": "service_counter",
+        "trigger": "periodic",
+        "interval_seconds": 30,
+        "volume": 0.25
+      },
+      {
+        "sound": "silver_on_porcelain",
+        "source": "tables",
+        "trigger": "ambient",
+        "density": "frequent",
+        "volume": 0.2
+      },
+      {
+        "sound": "newspaper_rustle",
+        "source": "intellectual_npc",
+        "trigger": "periodic",
+        "interval_seconds": 20,
+        "volume": 0.15
+      },
+      {
+        "sound": "quiet_conversation_murmur",
+        "source": "general",
+        "trigger": "constant",
+        "volume": 0.2
+      },
+      {
+        "sound": "antique_clock_tick",
+        "source": "wall_clock",
+        "trigger": "constant",
+        "volume": 0.1
+      },
+      {
+        "sound": "chandelier_crystal_tinkle",
+        "source": "chandelier",
+        "trigger": "rare",
+        "volume": 0.1
+      }
+    ],
+    "audio_transitions": {
+      "enter": {"type": "fade_in", "duration_seconds": 2},
+      "exit": {"type": "fade_out", "duration_seconds": 1.5},
+      "quest_trigger": {"type": "sudden_stop", "duration_seconds": 0.5}
+    }
+  },
+  
+  "chaos_phase_audio": {
+    "music_behavior": "stops_abruptly",
+    "replacement_audio": {
+      "track": "chaos_tension_strings.ogg",
+      "trigger": "gustav_entry",
+      "volume": 0.6
+    },
+    "event_sounds": [
+      {
+        "event": "gustav_entry_crash",
+        "sounds": ["furniture_crash", "umbrella_stand_topple", "patron_scream"],
+        "volume": 0.8
+      },
+      {
+        "event": "cake_consumption",
+        "sounds": ["horse_eating_disturbing", "cake_case_glass_rattle", "herr_ober_gasp"],
+        "volume": 0.7
+      },
+      {
+        "event": "table_destruction",
+        "sounds": ["marble_impact", "porcelain_shatter", "chairs_scraping"],
+        "volume": 0.75
+      },
+      {
+        "event": "kitchen_chaos",
+        "sounds": ["pots_crashing", "chef_screaming_german", "horse_hooves_tile"],
+        "volume": 0.7
+      },
+      {
+        "event": "evacuation",
+        "sounds": ["chairs_scraping_mass", "door_slamming", "footsteps_running"],
+        "volume": 0.6
+      }
+    ],
+    "comedy_stingers": [
+      {
+        "trigger": "damage_counter_increment",
+        "sound": "cash_register_ching",
+        "volume": 0.5
+      },
+      {
+        "trigger": "herr_ober_rage",
+        "sound": "angry_violin_screech",
+        "volume": 0.4
+      },
+      {
+        "trigger": "gustav_satisfied_snort",
+        "sound": "horse_snort_pleased",
+        "volume": 0.6
+      },
+      {
+        "trigger": "chandelier_near_miss",
+        "sound": "suspenseful_crystal_sway",
+        "volume": 0.5
+      }
+    ]
+  },
+  
+  "status_effects": {
+    "environmental_buffs": [
+      {
+        "effect_id": "caffeinated",
+        "trigger": "coffee_purchase",
+        "stats": {"speed": 1, "luck": -1},
+        "duration_hours": 2,
+        "description": "The coffee kicks in. You're faster but jittery."
+      },
+      {
+        "effect_id": "sugar_rush",
+        "trigger": "cake_purchase",
+        "stats": {"bravado": 2},
+        "duration_minutes": 30,
+        "followed_by": {"effect": "sugar_crash", "bravado": -1, "duration_minutes": 15},
+        "description": "Sinfonian pastry euphoria. Temporary."
+      },
+      {
+        "effect_id": "cultured_palate",
+        "trigger": "order_in_german_success",
+        "stats": {"charm": 1},
+        "duration_hours": 1,
+        "description": "You pronounced it correctly. Herr Ober is almost impressed."
+      }
+    ],
+    "environmental_debuffs": [
+      {
+        "effect_id": "humiliated_by_waiter",
+        "trigger": "order_in_german_fail",
+        "stats": {"charm": -1},
+        "duration_minutes": 30,
+        "description": "Herr Ober's correction was audible to everyone."
+      },
+      {
+        "effect_id": "intellectually_humbled",
+        "trigger": "chess_loss",
+        "stats": {"charm": -1},
+        "duration_minutes": 30,
+        "description": "She beat you in twelve moves. She counted out loud."
+      }
+    ],
+    "recovery_options": [
+      {
+        "status_removed": "tired",
+        "method": "any_coffee_purchase",
+        "cost_sov": "5-9"
+      },
+      {
+        "status_removed": "hungry",
+        "method": "any_food_purchase",
+        "cost_sov": "12-22"
+      },
+      {
+        "status_removed": "thirsty",
+        "method": "any_beverage_purchase",
+        "cost_sov": "5-9"
+      }
+    ]
+  },
+  
+  "time_of_day_variations": {
+    "morning": {
+      "hours": "08:00-11:00",
+      "lighting": {"ambient_intensity": 0.8, "window_brightness": "high"},
+      "crowd_density": "light",
+      "special_menu": "breakfast_items_available",
+      "atmosphere": "quiet_professional"
+    },
+    "lunch": {
+      "hours": "11:00-14:00",
+      "lighting": {"ambient_intensity": 0.9, "window_brightness": "high"},
+      "crowd_density": "moderate",
+      "wait_time_modifier": 1.2,
+      "atmosphere": "businesslike"
+    },
+    "kaffeeklatsch": {
+      "hours": "14:00-17:00",
+      "lighting": {"ambient_intensity": 0.85, "window_brightness": "golden_hour_start"},
+      "crowd_density": "high",
+      "pretension_level": "maximum",
+      "gossip_quality": "best",
+      "atmosphere": "peak_vienna"
+    },
+    "pre_opera": {
+      "hours": "17:00-20:00",
+      "lighting": {"ambient_intensity": 0.7, "chandelier_emphasis": true},
+      "crowd_density": "moderate_formal",
+      "dress_code": "elevated",
+      "atmosphere": "elegant_anticipation"
+    },
+    "evening": {
+      "hours": "20:00-22:00",
+      "lighting": {"ambient_intensity": 0.6, "chandelier_full": true, "candles": true},
+      "crowd_density": "light",
+      "music_volume": "louder",
+      "atmosphere": "refined_intimate"
+    }
+  },
+  
+  "weather_effects": {
+    "rain": {
+      "patio_status": "closed",
+      "interior_crowding": "increased",
+      "window_effects": "rain_streaks",
+      "atmosphere_modifier": "cozy_refuge"
+    },
+    "sunshine": {
+      "patio_status": "open",
+      "window_seating": "premium",
+      "lighting_boost": 1.2
+    },
+    "cold": {
+      "drink_preference": "hot_beverages_popular",
+      "atmosphere_modifier": "comfort_seeking"
+    }
+  },
+  
+  "couchsurf_integration": {
+    "available": false,
+    "reason": "commercial_establishment",
+    "related_couchsurf": {
+      "unlocks": "herr_ober_apartment",
+      "condition": "pay_debt_befriend_herr_ober",
+      "probability": "low",
+      "unique_content": "herr_ober_after_hours_wine_and_regrets"
+    }
+  },
+  
+  "cross_location_dependencies": {
+    "incoming_from": [
+      {
+        "location": "sinfonia_imperial_opera_house_plaza_01",
+        "connection_type": "quest_path",
+        "trigger": "gustav_pursuit"
+      }
+    ],
+    "outgoing_to": [
+      {
+        "location": "sinfonia_opera_backstage_01",
+        "connection_type": "quest_path",
+        "exit_point": "kitchen_back_door"
+      },
+      {
+        "location": "sinfonia_moderato_pub_01",
+        "connection_type": "retreat_option",
+        "condition": "need_cheaper_recovery"
+      }
+    ],
+    "information_flow": [
+      {
+        "event": "gustav_rampage",
+        "spreads_to": ["kaffeehaus_row_all", "opera_house_plaza"],
+        "gossip_content": "horse_ate_sachertorte"
+      },
+      {
+        "event": "debt_unpaid",
+        "affects": "bros_reputation_sinfonia",
+        "merchant_attitude": "wary"
+      }
+    ]
+  },
+  
+  "quest_state_environment": {
+    "pre_quest": {
+      "description": "Normal café operation. Refined, expensive, slightly intimidating.",
+      "damage_visible": false,
+      "npc_availability": "all",
+      "service_available": true
+    },
+    "during_quest": {
+      "description": "Chaos. Horse. Cake everywhere. Screaming.",
+      "music": "chaos_tension_strings.ogg",
+      "npc_behavior": "evacuating_or_panicking",
+      "service_available": false,
+      "damage_tracking": true
+    },
+    "post_quest_closed": {
+      "description": "TEMPORARILY CLOSED sign. Damage visible through windows.",
+      "duration_hours": 24,
+      "entry_allowed": false,
+      "herr_ober_visible": "drinking_in_doorway"
+    },
+    "post_quest_reopened_unpaid": {
+      "description": "Reopened with repairs. Staff hostile. Bros' photos on BANNED board.",
+      "service_available": false,
+      "herr_ober_dialogue": "debt_demands",
+      "atmosphere": "tense"
+    },
+    "post_quest_paid": {
+      "description": "Debt cleared. Staff cordial. New commemorative menu items.",
+      "service_available": true,
+      "new_items": ["the_gustav_cookie"],
+      "herr_ober_dialogue": "grudging_respect",
+      "permanent_changes": ["gustav_memorial_photo", "no_horses_sign", "secured_cake_display"]
+    }
+  },
+  
+  "permanent_environmental_changes": {
+    "post_quest": [
+      {
+        "object": "patio_furniture",
+        "change": "replaced_with_slightly_different_style"
+      },
+      {
+        "object": "cake_display",
+        "change": "secured_label_added"
+      },
+      {
+        "object": "signage",
+        "addition": "no_horses_permitted_sign"
+      },
+      {
+        "object": "wall_of_shame",
+        "addition": "gustav_photo_eating_cake"
+      },
+      {
+        "object": "menu",
+        "addition": "the_gustav_commemorative_cookie"
+      }
+    ]
+  }
+}

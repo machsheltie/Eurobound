@@ -1,0 +1,359 @@
+{
+  "location_id": "publandia_outskirts_cloverleaf_roundabout_01",
+  
+  "ambient_audio": {
+    "background_music": {
+      "track": null,
+      "note": "No persistent music - silence emphasizes isolation and existential dread",
+      "exceptions": [
+        {
+          "source": "wedding_van_1987",
+          "track": "love_songs_1987_radio.ogg",
+          "audibility_range_meters": 20,
+          "volume": 0.3
+        },
+        {
+          "source": "tour_bus",
+          "track": "community_pa_announcements.ogg",
+          "audibility_range_meters": 30,
+          "volume": 0.4
+        }
+      ]
+    },
+    "environmental_sounds": [
+      {
+        "sound_id": "multiple_engines_hum",
+        "file": "traffic_ambient_loop.ogg",
+        "volume": 0.6,
+        "constant": true
+      },
+      {
+        "sound_id": "rain_on_windshield",
+        "file": "rain_light_windshield.ogg",
+        "volume": 0.4,
+        "constant": true,
+        "condition": "weather_rain"
+      },
+      {
+        "sound_id": "distant_sheep",
+        "file": "sheep_distant_baas.ogg",
+        "volume": 0.2,
+        "interval_seconds": "15-45",
+        "random": true
+      },
+      {
+        "sound_id": "windshield_wipers",
+        "file": "wiper_rhythm_loop.ogg",
+        "volume": 0.3,
+        "rhythm": "every_3_seconds",
+        "condition": "weather_rain"
+      },
+      {
+        "sound_id": "indicator_tick",
+        "file": "car_indicator_tick.ogg",
+        "volume": 0.5,
+        "trigger": "lane_change_attempt"
+      },
+      {
+        "sound_id": "gps_voice",
+        "file": "gps_recalculating_variants.ogg",
+        "volume": 0.7,
+        "variants": [
+          {"condition": "circles_1_5", "tone": "neutral"},
+          {"condition": "circles_6_9", "tone": "strained"},
+          {"condition": "circles_10_plus", "tone": "crying"}
+        ]
+      }
+    ],
+    "audio_transitions": {
+      "enter": {
+        "effect": "fade_in_ambient",
+        "duration_seconds": 2,
+        "special": "engine_sounds_increase_as_roundabout_approaches"
+      },
+      "exit": {
+        "effect": "fade_out_gradual",
+        "duration_seconds": 3,
+        "special": "relief_sigh_sfx_overlay"
+      }
+    }
+  },
+  
+  "dynamic_audio": {
+    "lane_specific": {
+      "inner_lane": {
+        "sounds": ["aggressive_engines", "horn_honks_frequent"],
+        "volume_modifier": 1.3
+      },
+      "middle_lane": {
+        "sounds": ["moderate_traffic", "wedding_van_music_faint"],
+        "volume_modifier": 1.0
+      },
+      "outer_lane": {
+        "sounds": ["tour_bus_announcements", "food_truck_sizzle"],
+        "volume_modifier": 0.8
+      },
+      "merge_zone": {
+        "sounds": ["chaos_horns", "tire_screech_near_misses"],
+        "volume_modifier": 1.5
+      }
+    },
+    "event_stingers": [
+      {
+        "event": "first_sight_wedding_van",
+        "audio": "curious_discovery_sting.ogg",
+        "duration_seconds": 2
+      },
+      {
+        "event": "margaret_skeleton_reveal",
+        "audio": "ominous_chord_to_warm_transition.ogg",
+        "duration_seconds": 3
+      },
+      {
+        "event": "sean_philosophy",
+        "audio": "existential_drone_subtle.ogg",
+        "duration_seconds": 5
+      },
+      {
+        "event": "successful_exit",
+        "audio": "triumphant_relief_sting.ogg",
+        "duration_seconds": 4
+      },
+      {
+        "event": "missed_exit",
+        "audio": "whoosh_disappointment.ogg",
+        "duration_seconds": 1.5
+      },
+      {
+        "event": "gps_breakdown",
+        "audio": "sad_trombone_subtle.ogg",
+        "duration_seconds": 2
+      },
+      {
+        "event": "path_b_adaptation",
+        "audio": "ironic_settling_in_music.ogg",
+        "duration_seconds": 8
+      }
+    ]
+  },
+  
+  "status_effects": {
+    "environmental_buffs": [],
+    "atmospheric_debuffs": [
+      {
+        "effect_id": "frustrated",
+        "trigger": "failed_exit_attempts >= 5",
+        "duration": "until_food_or_rest",
+        "stat_changes": {
+          "accuracy": -10,
+          "patience": -20
+        },
+        "dialogue_modifier": "aggressive_options_unlocked",
+        "cure_methods": ["eat_food_truck_meal", "path_b_acceptance"]
+      },
+      {
+        "effect_id": "existentially_terrified",
+        "trigger": "sean_philosophy_dialogue_complete",
+        "duration_minutes": 10,
+        "stat_changes": {
+          "wisdom": 5,
+          "bravado": -5
+        },
+        "unlocks": ["philosophical_dialogue_options"],
+        "cure_methods": ["time", "successful_exit", "food"]
+      },
+      {
+        "effect_id": "gps_dependent",
+        "trigger": "rely_on_gps_for_10_minutes",
+        "duration": "until_manual_navigation_attempted",
+        "stat_changes": {
+          "initiative": -10,
+          "confusion": 15
+        },
+        "cure_methods": ["ignore_gps_successfully"]
+      }
+    ],
+    "permanent_effects": [
+      {
+        "effect_id": "roundabout_native",
+        "trigger": "path_b_day_3_complete",
+        "stat_changes": {
+          "wisdom": 3,
+          "acceptance": 10
+        },
+        "dialogue_unlocks": ["roundabout_references_everywhere"],
+        "description": "You understand the roundabout now. It understands you."
+      }
+    ],
+    "recovery_options": [
+      {
+        "method": "food_truck_meal",
+        "cures": ["frustrated", "hungry"],
+        "cost_sov": "8-25"
+      },
+      {
+        "method": "patrick_conversation",
+        "cures": ["existentially_terrified"],
+        "requirement": "spend_5_minutes_talking"
+      },
+      {
+        "method": "successful_exit",
+        "cures": ["all_roundabout_debuffs"],
+        "requirement": "escape_cloverleaf"
+      }
+    ]
+  },
+  
+  "couchsurf_integration": {
+    "available": true,
+    "location_type": "vehicle_based",
+    "hosts": [
+      {
+        "host_id": "tour_bus_community",
+        "host_npc": "orla_brennan_tour_leader_01",
+        "trigger_conditions": [
+          "circles_completed >= 5",
+          "path_b_chosen"
+        ],
+        "accommodation_type": "bus_seats",
+        "unique_benefits": [
+          "community_orientation",
+          "food_truck_schedule_knowledge",
+          "lane_etiquette_training"
+        ],
+        "narrative_progression": "unlocks_tour_bus_community_backstories",
+        "morning_dialogue": {
+          "speaker": "orla_brennan_tour_leader_01",
+          "text": "Morning! You survived your first night. Council meeting's at 10 if you'd like to participate in democracy."
+        }
+      },
+      {
+        "host_id": "patrick_and_margaret",
+        "host_npc": "patrick_osullivan_01",
+        "trigger_conditions": [
+          "circles_completed >= 10",
+          "path_b_day_2_complete"
+        ],
+        "accommodation_type": "wedding_van_back_seat",
+        "unique_benefits": [
+          "patrick_backstory_full",
+          "wedding_advice",
+          "acceptance_wisdom"
+        ],
+        "narrative_progression": "unlocks_margaret_truth_reveal",
+        "morning_dialogue": {
+          "speaker": "patrick_osullivan_01",
+          "text": "Did you sleep well? Margaret and I stayed up watching the stars. Well, I watched. She rested."
+        },
+        "special_note": "Most emotionally impactful couchsurf in the game"
+      }
+    ]
+  },
+  
+  "weather_system": {
+    "default_weather": "light_rain",
+    "weather_states": [
+      {
+        "state": "light_rain",
+        "probability": 0.7,
+        "visual_effects": ["rain_particles", "wet_road_reflections"],
+        "audio_effects": ["rain_on_windshield", "windshield_wipers"],
+        "status_modifier": null
+      },
+      {
+        "state": "overcast",
+        "probability": 0.2,
+        "visual_effects": ["grey_sky"],
+        "audio_effects": ["wind_light"],
+        "status_modifier": null
+      },
+      {
+        "state": "heavy_rain",
+        "probability": 0.08,
+        "visual_effects": ["rain_particles_heavy", "low_visibility"],
+        "audio_effects": ["rain_heavy", "wipers_fast"],
+        "status_modifier": {"visibility": -20}
+      },
+      {
+        "state": "sun_break",
+        "probability": 0.02,
+        "visual_effects": ["sun_rays_through_clouds"],
+        "audio_effects": null,
+        "status_modifier": {"mood": 5},
+        "special_note": "Rare - highlights the absurdity of the situation"
+      }
+    ]
+  },
+  
+  "time_of_day_effects": {
+    "dawn": {
+      "lighting": "#FFE4B5",
+      "intensity": 0.5,
+      "special_events": ["patrick_sunrise_wave"]
+    },
+    "day": {
+      "lighting": "#B0B0B0",
+      "intensity": 0.6,
+      "special_events": ["tour_bus_orientation", "food_truck_service"]
+    },
+    "dusk": {
+      "lighting": "#CD853F",
+      "intensity": 0.4,
+      "special_events": ["headlights_on"]
+    },
+    "night": {
+      "lighting": "#2F4F4F",
+      "intensity": 0.3,
+      "special_events": ["wedding_van_radio_louder", "existential_conversations"]
+    }
+  },
+  
+  "cross_location_dependencies": {
+    "unlock_requirements": [
+      {
+        "location": "publandia_outskirts_paddys_premium_motors_01",
+        "requirement": "rental_sequence_complete"
+      }
+    ],
+    "references_from_other_locations": [
+      {
+        "location": "publandia_outskirts_paddys_premium_motors_01",
+        "reference_type": "warning",
+        "npc": "fergus_rental_guy_01",
+        "dialogue": "The Cloverleaf? Ah. Well. Best of luck to ye."
+      },
+      {
+        "location": "publandia_main_bottomless_tap_01",
+        "reference_type": "legend",
+        "npc": "random_pub_patrons",
+        "dialogue": "Wait, you survived The Cloverleaf? How?!"
+      }
+    ],
+    "references_to_other_locations": [
+      {
+        "target": "publandia_cliffs_of_moher",
+        "reference_type": "destination",
+        "context": "Patrick and Margaret's original honeymoon destination"
+      },
+      {
+        "target": "publandia_outskirts_paddys_premium_motors_01",
+        "reference_type": "origin",
+        "context": "Where the rental car came from"
+      }
+    ],
+    "character_movements": [
+      {
+        "npc": "fergus_rental_guy_01",
+        "behavior": "references_cloverleaf_survivors_post_completion"
+      }
+    ],
+    "information_flow": [
+      {
+        "knowledge": "slow_down_solution",
+        "source": "cloverleaf_discovery",
+        "affects": ["future_navigation_puzzles"],
+        "description": "Bros learn that sometimes slowing down is the answer"
+      }
+    ]
+  }
+}

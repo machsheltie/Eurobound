@@ -1,0 +1,276 @@
+{
+  "location_id": "shamsterdam_voetgangerstunnel_01",
+  
+  "ambient_audio": {
+    "constant_layers": [
+      {"sound": "fluorescent_hum", "volume": 0.3, "note": "Constant electrical buzz"},
+      {"sound": "distant_footsteps", "volume": 0.2, "echo": true},
+      {"sound": "ventilation_system", "volume": 0.15}
+    ],
+    "zone_specific": {
+      "entrance_hall": [
+        {"sound": "surface_traffic_muffled", "volume": 0.2},
+        {"sound": "bicycle_bells_distant", "volume": 0.1}
+      ],
+      "intersection_of_doubt": [
+        {"sound": "multiple_corridor_echoes", "volume": 0.25},
+        {"sound": "henk_coffee_slurp_occasional", "volume": 0.1}
+      ],
+      "long_corridor": [
+        {"sound": "willem_accordion", "volume": 0.4, "constant": true},
+        {"sound": "endless_corridor_reverb", "volume": 0.2}
+      ],
+      "wrong_turn_zone": [
+        {"sound": "exit_preview_audio", "volume": 0.3, "dynamic": true}
+      ]
+    },
+    "directional_audio_hints": {
+      "tram_sounds": {
+        "direction": "central_station",
+        "volume": 0.3,
+        "reliability": "accurate"
+      },
+      "bass_music": {
+        "direction": "coffeeshop_quarter",
+        "volume": 0.25,
+        "reliability": "accurate"
+      },
+      "eerie_silence": {
+        "direction": "roodelicht_row",
+        "volume": 0,
+        "reliability": "accurate_by_absence"
+      },
+      "water_sounds": {
+        "direction": "canal_surface",
+        "volume": 0.2,
+        "reliability": "accurate"
+      }
+    }
+  },
+  
+  "navigation_audio": {
+    "correct_direction": {
+      "sound": "subtle_positive_chime",
+      "volume": 0.15,
+      "conscious_awareness": "subconscious"
+    },
+    "wrong_direction": {
+      "sound": "slight_dissonance",
+      "volume": 0.1,
+      "conscious_awareness": "barely_noticeable"
+    },
+    "about_to_emerge_wrong": {
+      "type": "environmental_preview",
+      "examples": {
+        "red_light": "distant_bass_sudden_silence_window_taps",
+        "coffeeshop": "haze_of_conversation_smell_audio",
+        "canal": "outdoor_sounds_bike_bells"
+      }
+    },
+    "wrong_exit_emergence": {
+      "sound": "record_scratch_or_dun_dun_dun",
+      "volume": 0.5,
+      "comedy": true
+    }
+  },
+  
+  "status_effects": {
+    "inflicted_at_location": [
+      {
+        "effect_id": "tunnel_confusion",
+        "trigger": "multiple_wrong_turns_single_visit",
+        "stats": {"navigation_shamsterdam": -0.15},
+        "duration_hours": 2,
+        "cure": "successful_navigation",
+        "visual": "question_marks_above_head"
+      },
+      {
+        "effect_id": "underground_dread",
+        "trigger": "10_plus_minutes_without_exit",
+        "stats": {"speed": -0.05},
+        "duration": "until_surface_reached",
+        "visual": "character_mutters_about_daylight",
+        "comedy": "Growing anxiety about missing sun"
+      },
+      {
+        "effect_id": "red_light_shame",
+        "trigger": "wrong_exit_to_roodelicht_row",
+        "stats": {"charm": -0.15},
+        "duration_minutes": 30,
+        "visual": "embarrassed_blush",
+        "npc_comments": true
+      }
+    ],
+    "buffs_earned": [
+      {
+        "effect_id": "tunnel_vision",
+        "trigger": "perfect_navigation_no_wrong_turns",
+        "stats": {"navigation": 0.10, "speed_underground": 0.05},
+        "duration_minutes": 60
+      },
+      {
+        "effect_id": "underground_navigator",
+        "trigger": "5_successful_navigations",
+        "stats": {"navigation_tunnels": 0.05},
+        "duration": "permanent",
+        "type": "passive"
+      },
+      {
+        "effect_id": "marloess_blessing",
+        "trigger": "buy_map_and_follow_advice",
+        "stats": {"navigation": 0.20},
+        "duration": "current_visit_only"
+      },
+      {
+        "effect_id": "willems_wisdom",
+        "trigger": "willems_friend_quest_complete",
+        "stats": {"navigation_all_tunnels": 0.10},
+        "duration": "permanent"
+      }
+    ]
+  },
+  
+  "time_of_day_variations": {
+    "morning_rush": {
+      "hours": "07:00-09:00",
+      "traffic_density": 1.5,
+      "lost_tourist_spawns": "high",
+      "henk_alertness": "slightly_higher",
+      "atmosphere": "commuter_energy_underground"
+    },
+    "midday": {
+      "hours": "09:00-17:00",
+      "traffic_density": 1.0,
+      "lost_tourist_spawns": "medium",
+      "atmosphere": "standard_confusion"
+    },
+    "evening_rush": {
+      "hours": "17:00-19:00",
+      "traffic_density": 1.3,
+      "lost_tourist_spawns": "high",
+      "atmosphere": "everyone_wants_to_go_home"
+    },
+    "evening": {
+      "hours": "19:00-23:00",
+      "traffic_density": 0.7,
+      "lost_tourist_spawns": "low",
+      "atmosphere": "quieter_but_eerier"
+    },
+    "night": {
+      "hours": "23:00-06:00",
+      "traffic_density": 0.3,
+      "lost_tourist_spawns": "rare",
+      "henk_presence": "sleeping_at_booth",
+      "willem_presence": "still_playing_somehow",
+      "atmosphere": "liminal_space_energy",
+      "fluorescent_flicker": "more_frequent",
+      "special": "ghost_hints_more_prominent"
+    }
+  },
+  
+  "visual_atmosphere": {
+    "lighting": {
+      "type": "harsh_fluorescent",
+      "color": "#FFFACD",
+      "flicker_probability": 0.1,
+      "flicker_zones": ["long_corridor", "wrong_turn_zone"],
+      "emergency_strips": {
+        "color": "#00FF00",
+        "reliability": "always_on"
+      }
+    },
+    "wall_details": {
+      "material": "white_tile",
+      "condition": "clean_but_worn",
+      "stripe_colors": ["#003DA5", "#FF6600"],
+      "stripe_meaning": "none"
+    },
+    "floor_details": {
+      "material": "speckled_terrazzo",
+      "base_color": "#8B8B8B",
+      "worn_paths": "visible_showing_actual_traffic"
+    },
+    "ceiling_details": {
+      "exposed_utilities": true,
+      "fluorescent_fixtures": true,
+      "speaker_grilles": true
+    },
+    "particle_effects": [
+      {"type": "fluorescent_flicker", "zones": ["long_corridor", "wrong_turn_zone"], "frequency": "occasional"},
+      {"type": "dust_motes", "zones": ["all"], "density": "light"},
+      {"type": "ventilation_air_movement", "zones": ["intersection_of_doubt"], "subtle": true}
+    ]
+  },
+  
+  "zone_atmospheres": {
+    "entrance_hall": {
+      "lighting": "brightest",
+      "sound": "surface_proximity",
+      "feel": "false_hope_of_easy_navigation"
+    },
+    "intersection_of_doubt": {
+      "lighting": "standard",
+      "sound": "echoing_from_five_directions",
+      "feel": "decision_paralysis"
+    },
+    "long_corridor": {
+      "lighting": "flickering",
+      "sound": "willems_accordion_constant",
+      "feel": "endless_time_distortion"
+    },
+    "wrong_turn_zone": {
+      "lighting": "dim_uncertain",
+      "sound": "exit_previews_directional",
+      "feel": "mounting_dread_or_hope"
+    },
+    "actual_exit": {
+      "lighting": "daylight_bleeding_in",
+      "sound": "surface_sounds_increasing",
+      "feel": "hollow_triumph"
+    }
+  },
+  
+  "cross_location_dependencies": {
+    "primary_entrance": "shamsterdam_bike_crossing_thunderdome_01",
+    "exit_destinations": {
+      "intended": [
+        {"id": "shamsterdam_central_station_01", "probability": 0.40},
+        {"id": "shamsterdam_museum_mile_01", "probability": 0.50}
+      ],
+      "unintended": [
+        {"id": "shamsterdam_roodelicht_row_01", "probability": 0.35},
+        {"id": "shamsterdam_coffeeshop_quarter_01", "probability": 0.15},
+        {"id": "shamsterdam_canal_ring_promenade_01", "probability": 0.20}
+      ],
+      "hidden": [
+        {"id": "shamsterdam_febo_automat_01", "unlock": "febo_shortcut_quest"}
+      ]
+    },
+    "quest_integration": [
+      {"quest": "stay_away_campaign", "pamphlet": 4},
+      {"quest": "eternal_busker", "hidden": true},
+      {"quest": "febo_shortcut_discovery", "hidden": true},
+      {"quest": "red_light_discovery", "trigger": "wrong_exit"}
+    ]
+  },
+  
+  "mobile_performance": {
+    "geometry_type": "simple_corridors",
+    "draw_calls_max": 35,
+    "memory_budget_mb": 40,
+    "particle_budget": 30,
+    "target_fps": 60,
+    "audio_based_navigation": {
+      "reduces_visual_complexity": true,
+      "enhances_atmosphere": true
+    },
+    "zone_loading": {
+      "strategy": "adjacent_zones_preloaded",
+      "transition_speed": "instant"
+    },
+    "lighting_optimization": {
+      "baked_lighting": true,
+      "dynamic_flicker_only": true
+    }
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "location_id": "sinfonia_stadtpark_gustavs_refuge_01",
+  
+  "quest_events": {
+    "quest_id": "sinfonia_sidequest_fiaker_fiasco_01",
+    "phase": "stadtpark_phase_04_final",
+    
+    "entry_sequence": {
+      "event_id": "stadtpark_arrival",
+      "duration_seconds": 15,
+      "sequence": [
+        {"time": 0, "action": "transition", "from": "opera_house_side_door", "to": "stadtpark_entry_path"},
+        {"time": 1, "action": "camera_pan", "direction": "toward_central_lawn", "duration_seconds": 3},
+        {"time": 2, "action": "audio_transition", "from": "chase_music", "to": "tense_standoff"},
+        {"time": 4, "action": "reveal", "target": "gustav", "description": "Gustav standing in moonlit clearing"},
+        {"time": 5, "action": "sfx", "sound": "horse_whinny_emotional"},
+        {"time": 6, "action": "dialogue", "speaker": "lord_pilsner", "text": "There he is. End of the line, horse."},
+        {"time": 8, "action": "dialogue", "speaker": "chadwick", "text": "Dude... he looks sad."},
+        {"time": 10, "action": "npc_approach", "npc": "pigeon_lady"},
+        {"time": 11, "action": "dialogue", "speaker": "pigeon_lady", "text": "Ah. You found him. Gustav knew you would come."},
+        {"time": 13, "action": "dialogue", "speaker": "bradley", "text": "Wait, how did SHE get here before us?"},
+        {"time": 15, "action": "gameplay_unlock", "zone": "central_lawn"}
+      ]
+    },
+    
+    "hans_jurgen_arrival": {
+      "event_id": "hans_jurgen_catches_up",
+      "trigger": "30_seconds_after_entry",
+      "duration_seconds": 12,
+      "sequence": [
+        {"time": 0, "action": "sfx", "sound": "running_footsteps_desperate"},
+        {"time": 1, "action": "npc_spawn", "npc": "hans_jurgen", "animation": "running_desperate"},
+        {"time": 2, "action": "dialogue", "speaker": "hans_jurgen", "text": "GUSTAV! Gustav, bitte, please! Come back to Hans-Jürgen!"},
+        {"time": 4, "action": "gustav_reaction", "animation": "backs_away"},
+        {"time": 5, "action": "dialogue", "speaker": "hans_jurgen", "text": "Gustav, no... why do you run from me?"},
+        {"time": 7, "action": "dialogue", "speaker": "pigeon_lady", "text": "He runs because you did not listen. Sixteen years, Hans-Jürgen."},
+        {"time": 9, "action": "dialogue", "speaker": "hans_jurgen", "text": "He is... he is a horse! Horses do not..."},
+        {"time": 11, "action": "dialogue", "speaker": "pigeon_lady", "text": "Horses understand more than you think."}
+      ]
+    },
+    
+    "skittles_negotiation": {
+      "event_id": "skittles_sequence",
+      "trigger": "player_uses_skittles_item",
+      "duration_seconds": 30,
+      "sequence": [
+        {"time": 0, "action": "item_use", "item": "bag_of_skittles"},
+        {"time": 1, "action": "sfx", "sound": "candy_bag_rustle"},
+        {"time": 2, "action": "dialogue", "speaker": "chadwick", "text": "Wait... I have these Skittles. You think he'd want...?"},
+        {"time": 3, "action": "dialogue", "speaker": "pigeon_lady", "text": "The rainbow candies. Gustav remembers. Give them."},
+        {"time": 5, "action": "animation", "target": "player_character", "animation": "hold_out_skittles"},
+        {"time": 6, "action": "gustav_reaction", "animation": "ears_perk"},
+        {"time": 8, "action": "dialogue", "speaker": "hans_jurgen", "text": "The Skittles? He always loved those..."},
+        {"time": 10, "action": "gustav_reaction", "animation": "cautious_step_forward"},
+        {"time": 12, "action": "dialogue", "speaker": "bradley", "text": "He's coming! Don't move, don't move..."},
+        {"time": 14, "action": "gustav_reaction", "animation": "approaches_slowly"},
+        {"time": 16, "action": "sfx", "sound": "horse_soft_nicker"},
+        {"time": 18, "action": "gustav_reaction", "animation": "eating_from_hand"},
+        {"time": 19, "action": "sfx", "sound": "horse_eating_crunchy_loud"},
+        {"time": 20, "action": "dialogue", "speaker": "lord_pilsner", "text": "I can't believe that worked."},
+        {"time": 22, "action": "dialogue", "speaker": "pigeon_lady", "text": "He trusts you now. The rainbow has opened the door."},
+        {"time": 24, "action": "flag_set", "flag": "gustav_trust_earned"},
+        {"time": 25, "action": "unlock", "content": "resolution_dialogue_tree"}
+      ]
+    },
+    
+    "papageno_alternative": {
+      "event_id": "papageno_calms_gustav",
+      "condition": "papageno_present_and_no_skittles_used",
+      "trigger": "papageno_approaches_gustav",
+      "duration_seconds": 20,
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "papageno_franz", "text": "Papageno will try! Birds and horses are friends!"},
+        {"time": 2, "action": "animation", "target": "papageno", "animation": "approaching_with_whistle"},
+        {"time": 3, "action": "sfx", "sound": "papageno_whistle_tune"},
+        {"time": 5, "action": "gustav_reaction", "animation": "ears_perk_curious"},
+        {"time": 7, "action": "dialogue", "speaker": "papageno_franz", "text": "*whistles* Papageno knows freedom. Papageno was once caged too."},
+        {"time": 9, "action": "gustav_reaction", "animation": "approaches_papageno"},
+        {"time": 11, "action": "animation", "target": "papageno", "animation": "offers_bird_seeds"},
+        {"time": 12, "action": "dialogue", "speaker": "papageno_franz", "text": "Not Skittles, but seeds! Gustav likes seeds too!"},
+        {"time": 14, "action": "gustav_reaction", "animation": "eating_seeds"},
+        {"time": 16, "action": "dialogue", "speaker": "papageno_franz", "text": "Gustav says he will listen. But only because Papageno asked."},
+        {"time": 18, "action": "flag_set", "flag": "gustav_trust_earned_papageno"},
+        {"time": 20, "action": "unlock", "content": "resolution_dialogue_tree"}
+      ]
+    },
+    
+    "aggressive_approach_failure": {
+      "event_id": "gustav_bolts",
+      "trigger": "approach_without_skittles_or_papageno",
+      "duration_seconds": 15,
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "lord_pilsner", "text": "Come on, just grab him!"},
+        {"time": 2, "action": "animation", "target": "party", "animation": "rushing_toward_gustav"},
+        {"time": 3, "action": "gustav_reaction", "animation": "rears_up_alarmed"},
+        {"time": 4, "action": "sfx", "sound": "horse_frightened_whinny"},
+        {"time": 5, "action": "gustav_reaction", "animation": "bolting_away"},
+        {"time": 6, "action": "dialogue", "speaker": "hans_jurgen", "text": "NO! GUSTAV!"},
+        {"time": 8, "action": "camera_follow", "target": "gustav", "direction": "into_darkness"},
+        {"time": 10, "action": "gustav_reaction", "animation": "disappears_into_night"},
+        {"time": 11, "action": "sfx", "sound": "hoofbeats_fading"},
+        {"time": 12, "action": "dialogue", "speaker": "hans_jurgen", "text": "He is gone. Gustav is gone forever."},
+        {"time": 14, "action": "trigger", "event": "path_c_resolution"}
+      ]
+    },
+    
+    "resolution_dialogue_tree": {
+      "event_id": "gustave_resolution_choices",
+      "trigger": "gustav_trust_earned",
+      "type": "dialogue_tree",
+      "participants": ["party", "hans_jurgen", "gustav", "pigeon_lady"],
+      
+      "opening": {
+        "speaker": "hans_jurgen",
+        "text": "Gustav... I did not know. Sixteen years. Sixteen years I work you. Never once I ask... is he happy?",
+        "emotion": "guilt_realization"
+      },
+      
+      "player_choices": [
+        {
+          "choice_id": "advocate_return",
+          "text": "Maybe Gustav doesn't want to quit. He just wants respect.",
+          "leads_to": "return_discussion"
+        },
+        {
+          "choice_id": "advocate_freedom",
+          "text": "Look at him. He's happy here. You can't cage freedom.",
+          "leads_to": "freedom_discussion"
+        },
+        {
+          "choice_id": "ask_gustav",
+          "text": "Can we... ask Gustav what he wants?",
+          "leads_to": "pigeon_lady_translation"
+        }
+      ],
+      
+      "branches": {
+        "return_discussion": {
+          "sequence": [
+            {"speaker": "lord_pilsner", "text": "Maybe Gustav doesn't want to quit. He just wants... respect."},
+            {"speaker": "hans_jurgen", "text": "Respect? For a horse?"},
+            {"speaker": "pigeon_lady", "text": "Gustav says... he would consider returning. But he has conditions."},
+            {"speaker": "hans_jurgen", "text": "Conditions? What conditions?"},
+            {"speaker": "pigeon_lady", "text": "No more bachelor parties. Shorter routes. And Skittles. Many Skittles."},
+            {
+              "choice_prompt": true,
+              "choices": [
+                {"text": "Can you do that, Hans-Jürgen?", "leads_to": "hans_jurgen_accepts_terms"},
+                {"text": "That seems reasonable for 16 years of service.", "leads_to": "hans_jurgen_accepts_terms"},
+                {"text": "Actually, maybe he should just retire.", "leads_to": "freedom_discussion"}
+              ]
+            }
+          ]
+        },
+        
+        "freedom_discussion": {
+          "sequence": [
+            {"speaker": "bradley", "text": "Look at him. He's happy here. You can't cage freedom, dude."},
+            {"speaker": "hans_jurgen", "text": "But... but he is MY horse. My livelihood..."},
+            {"speaker": "pigeon_lady", "text": "Gustav says he has given you sixteen years. He asks only for peace."},
+            {"speaker": "hans_jurgen", "text": "The insurance... they will pay for retirement. But Gustav..."},
+            {
+              "choice_prompt": true,
+              "choices": [
+                {"text": "Let him go, Hans-Jürgen. He's earned it.", "leads_to": "hans_jurgen_releases"},
+                {"text": "Maybe there's a compromise?", "leads_to": "park_horse_suggestion"},
+                {"text": "Actually, maybe he could still work sometimes?", "leads_to": "return_discussion"}
+              ]
+            }
+          ]
+        },
+        
+        "pigeon_lady_translation": {
+          "sequence": [
+            {"speaker": "chadwick", "text": "Can we... ask Gustav what he wants?"},
+            {"speaker": "pigeon_lady", "text": "A wise question. Gustav... what do you wish?"},
+            {"speaker": "pigeon_lady", "text": "*listens to Gustav's body language* He says... he is tired."},
+            {"speaker": "pigeon_lady", "text": "Tired of the cobblestones. Tired of the tourists. Tired of the smell of beer."},
+            {"speaker": "pigeon_lady", "text": "But he also says... he does not hate Hans-Jürgen. Only the work."},
+            {
+              "choice_prompt": true,
+              "choices": [
+                {"text": "So he'd go back if things changed?", "leads_to": "return_discussion"},
+                {"text": "Then let him rest here.", "leads_to": "freedom_discussion"},
+                {"text": "What if he became a park horse instead?", "leads_to": "park_horse_suggestion"}
+              ]
+            }
+          ]
+        },
+        
+        "hans_jurgen_accepts_terms": {
+          "sequence": [
+            {"speaker": "hans_jurgen", "text": "No more bachelor parties. Shorter routes. Skittles."},
+            {"speaker": "hans_jurgen", "text": "I... I can do this. For Gustav. For my partner."},
+            {"speaker": "hans_jurgen", "text": "Gustav... will you come home? I promise. Things will be different."},
+            {"action": "gustav_reaction", "animation": "considers_then_approaches"},
+            {"action": "sfx", "sound": "heartwarming_strings"},
+            {"speaker": "pigeon_lady", "text": "He says... he will try. But one bachelor party, and he runs again."},
+            {"action": "gustav_reaction", "animation": "nuzzles_hans_jurgen"},
+            {"speaker": "hans_jurgen", "text": "*crying* Thank you, Gustav. Thank you, strange Americans."},
+            {"action": "trigger", "event": "path_a_resolution"}
+          ]
+        },
+        
+        "hans_jurgen_releases": {
+          "sequence": [
+            {"speaker": "hans_jurgen", "text": "You are right. Sixteen years... perhaps he has earned this."},
+            {"speaker": "hans_jurgen", "text": "Go, old friend. You have earned your... retirement."},
+            {"action": "hans_jurgen_removes_halter", "description": "Hans-Jürgen removes Gustav's ceremonial halter"},
+            {"action": "gustav_reaction", "animation": "shakes_mane_free"},
+            {"speaker": "pigeon_lady", "text": "Gustav says... thank you. To all of you."},
+            {"action": "gustav_reaction", "animation": "trots_into_moonlight_majestically"},
+            {"action": "sfx", "sound": "bittersweet_departure_music"},
+            {"speaker": "hans_jurgen", "text": "Goodbye, Gustav. I will visit. I promise."},
+            {"action": "trigger", "event": "path_b_resolution"}
+          ]
+        },
+        
+        "park_horse_suggestion": {
+          "sequence": [
+            {"speaker": "papageno_franz", "text": "The bird-man has an idea! What if Gustav becomes... a PARK horse?", "condition": "papageno_present"},
+            {"speaker": "lord_pilsner", "text": "A park horse? Like... he lives here?", "condition": "papageno_not_present"},
+            {"speaker": "pigeon_lady", "text": "The park does need a guardian. Gustav could live here, free."},
+            {"speaker": "hans_jurgen", "text": "A park horse... I could visit. He would be safe. Happy."},
+            {"speaker": "pigeon_lady", "text": "Gustav says... this is acceptable. He likes the grass."},
+            {"action": "trigger", "event": "path_b_resolution"}
+          ]
+        }
+      }
+    },
+    
+    "path_a_resolution": {
+      "event_id": "gustav_returns_ending",
+      "duration_seconds": 20,
+      "sequence": [
+        {"time": 0, "action": "music", "track": "emotional_resolution_positive"},
+        {"time": 2, "action": "animation", "target": "gustav", "animation": "walks_beside_hans_jurgen"},
+        {"time": 4, "action": "dialogue", "speaker": "hans_jurgen", "text": "For your help... I reduce your debt. 500 Sovs less. It is the least I can do."},
+        {"time": 6, "action": "economy_update", "debt_reduction": 500, "flag": "hans_jurgen_path_a_contribution", "note": "Separate pot from the single 170 Sovs cafe relief; the two stack."},
+        {"time": 6.5, "action": "economy_update", "debt_reduction": 170, "applies_to": "cafe_sachertorte_line", "flag": "debt_relief_claimed", "requires_flag_false": "debt_relief_claimed", "mutually_exclusive_with": "cafe_dialogue_option_3_halving", "note": "AUTHORITATIVE: fires ONLY if the 170 Sovs relief was not already consumed at the cafe (dialogue option 3, or full payment). If debt_relief_claimed is already true, skip this step entirely and suppress the accompanying line. Authority: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."},
+        {"time": 8, "action": "dialogue", "speaker": "hans_jurgen", "text": "And if you ever need a ride in Sinfonia... Hans-Jürgen's fiaker is at your service. Half price."},
+        {"time": 10, "action": "unlock", "feature": "fiaker_fast_travel"},
+        {"time": 12, "action": "achievement", "id": "horse_whisperer", "display": "Horse Whisperer Unlocked!"},
+        {"time": 14, "action": "dialogue", "speaker": "pigeon_lady", "text": "The rainbow brought peace. Gustav will remember your kindness."},
+        {"time": 16, "action": "apply_buff", "buff": "horse_whisperer", "effect": {"charm_with_animals": 2}},
+        {"time": 18, "action": "quest_complete", "quest": "fiaker_fiasco", "ending": "path_a"}
+      ]
+    },
+    
+    "path_b_resolution": {
+      "event_id": "gustav_retires_ending",
+      "duration_seconds": 20,
+      "sequence": [
+        {"time": 0, "action": "music", "track": "bittersweet_resolution"},
+        {"time": 2, "action": "animation", "target": "gustav", "animation": "grazing_peacefully"},
+        {"time": 4, "action": "dialogue", "speaker": "hans_jurgen", "text": "I will visit every day. The insurance will help. And Gustav... Gustav will be happy."},
+        {"time": 6, "action": "dialogue", "speaker": "pigeon_lady", "text": "The pigeons and I will watch over him. We always have."},
+        {"time": 8, "action": "npc_register", "npc": "gustav_park_horse", "location": "stadtpark", "permanent": true},
+        {"time": 10, "action": "achievement", "id": "liberation", "display": "Liberation Unlocked!"},
+        {"time": 12, "action": "dialogue", "speaker": "bradley", "text": "That was... actually kind of beautiful."},
+        {"time": 14, "action": "apply_buff", "buff": "liberation", "effect": {"wisdom": 1}},
+        {"time": 16, "action": "unlock", "feature": "daily_gustav_visit_buff"},
+        {"time": 18, "action": "quest_complete", "quest": "fiaker_fiasco", "ending": "path_b"}
+      ]
+    },
+    
+    "path_c_resolution": {
+      "event_id": "gustav_escapes_ending",
+      "duration_seconds": 15,
+      "sequence": [
+        {"time": 0, "action": "music", "track": "tragic_loss"},
+        {"time": 2, "action": "dialogue", "speaker": "hans_jurgen", "text": "He is gone. Gustav is gone forever. What have I done?"},
+        {"time": 4, "action": "dialogue", "speaker": "chadwick", "text": "Dude... we lost a horse."},
+        {"time": 6, "action": "dialogue", "speaker": "lord_pilsner", "text": "We lost more than that, Chad."},
+        {"time": 8, "action": "economy_update", "debt_increase": 1000, "reason": "horse_value"},
+        {"time": 10, "action": "apply_debuff", "debuff": "horse_guilt", "duration_hours": 1},
+        {"time": 12, "action": "npc_state_change", "npc": "hans_jurgen", "new_state": "sad_drunk", "location": "moderato_pub"},
+        {"time": 14, "action": "quest_complete", "quest": "fiaker_fiasco", "ending": "path_c"}
+      ]
+    },
+    
+    "path_d_resolution": {
+      "event_id": "bros_bail_ending",
+      "trigger": "player_leaves_park_without_resolving",
+      "duration_seconds": 10,
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "lord_pilsner", "text": "You know what? Not our problem. Let's go."},
+        {"time": 2, "action": "dialogue", "speaker": "bradley", "text": "But the horse—"},
+        {"time": 3, "action": "dialogue", "speaker": "lord_pilsner", "text": "NOT. OUR. PROBLEM."},
+        {"time": 5, "action": "economy_update", "debt_increase": 500, "reason": "abandonment_fee"},
+        {"time": 6, "action": "apply_debuff", "debuff": "coward", "duration_minutes": 30},
+        {"time": 8, "action": "npc_state_change", "npc": "hans_jurgen", "new_state": "hostile"},
+        {"time": 10, "action": "quest_complete", "quest": "fiaker_fiasco", "ending": "path_d"}
+      ]
+    },
+    
+    "debt_resolution_scene": {
+      "event_id": "final_debt_discussion",
+      "trigger": "after_gustav_resolution_if_director_present",
+      "condition": "director_present",
+      "sequence": [
+        {"speaker": "regisseur_hoffmann", "text": "Now. About my 2,000 Sovs..."},
+        {"speaker": "hans_jurgen", "text": "Director, please. My insurance will cover some. These Americans... they helped.", "condition": "path_a_or_b"},
+        {
+          "choice_prompt": true,
+          "choices": [
+            {"text": "Fine, fine. Here's the money. (Pay full)", "action": "pay_full", "result": "debt_cleared"},
+            {"text": "Look, we're good for it. Installment plan? (Pay 500 Sovs)", "action": "pay_partial", "result": "installment_active"},
+            {"text": "That seems excessive... (Charm 4)", "stat_check": {"charm": 4}, "result": "negotiated_reduction"},
+            {"text": "You want to take this outside? (Bravado 4)", "stat_check": {"bravado": 4}, "result": "intimidated_reduction"}
+          ]
+        }
+      ]
+    }
+  },
+  
+  "damage_summary": {
+    "phase_4_incoming": {
+      "from_phase_1": 0,
+      "from_phase_2": 340,
+      "from_phase_3_max": 2000,
+      "from_phase_3_optimal": 1600,
+      "prima_donna_max": 500,
+      "prima_donna_negotiated": 200
+    },
+    "resolution_modifiers": {
+      "path_a": {"reduction": 500, "reason": "gratitude"},
+      "path_b": {"reduction": 0},
+      "path_c": {"increase": 1000, "reason": "horse_value"},
+      "path_d": {"increase": 500, "reason": "abandonment"}
+    },
+    "final_calculations": {
+      "best_case": "1,440 Sovs (optimal path + Path A)",
+      "typical_case": "2,340 Sovs (default + Path A/B)",
+      "worst_case": "3,840 Sovs (all damage + Path C)"
+    }
+  }
+}

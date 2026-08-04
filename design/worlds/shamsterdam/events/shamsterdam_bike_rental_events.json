@@ -1,0 +1,339 @@
+{
+  "location_id": "shamsterdam_bike_rental_01",
+  
+  "entry_events": {
+    "first_visit": {
+      "event_id": "bike_rental_introduction",
+      "trigger": "first_time_enter",
+      "sequence": [
+        {"time": 0, "action": "camera_pan", "to": "shop_interior"},
+        {"time": 1, "action": "visual", "type": "orange_bikes_visible_through_window"},
+        {"time": 2, "action": "npc_attention", "npc": "dirk", "looks_at_player": true},
+        {"time": 3, "action": "dialogue", "speaker": "dirk", "text": "Welcome to Shamsterdam Bike Rental. You've already decided to rent one, haven't you. Let me tell you why you shouldn't."},
+        {"time": 6, "action": "highlight", "target": "insurance_chart"},
+        {"time": 7, "action": "npc_attention", "npc": "anneke", "clipboard_ready": true},
+        {"time": 8, "action": "enable_service_menu"}
+      ]
+    },
+    
+    "subsequent_visit": {
+      "event_id": "return_customer",
+      "trigger": "has_previous_rental_history",
+      "sequence": [
+        {"time": 0, "action": "npc_recognition", "npc": "dirk"},
+        {"time": 0.5, "action": "dialogue_branch", "based_on": "player_rental_history"}
+      ],
+      "dialogue_options": {
+        "damaged_history": "You're back. Last time went... interestingly.",
+        "clean_history": "Ah, you again. Still alive. The statistics were not in your favor.",
+        "canal_history": "The canal survivor. Welcome back."
+      }
+    },
+    
+    "return_with_bike": {
+      "event_id": "bike_return_entry",
+      "trigger": "entering_while_rental_active",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "dirk", "text": "Returning already? Let's see the damage."},
+        {"time": 1, "action": "transition_to", "event": "damage_assessment"}
+      ]
+    }
+  },
+  
+  "rental_events": {
+    "tier_selection": {
+      "event_id": "choose_rental_tier",
+      "trigger": "player_requests_rental",
+      "type": "player_choice",
+      "options": [
+        {
+          "id": "basic",
+          "display": "Basic Rental - 15 Sovs/day",
+          "dirk_comment": "The basic. Standard orange tourist bike. Lock included. Basket for items you'll lose."
+        },
+        {
+          "id": "premium",
+          "display": "Premium Rental - 25 Sovs/day",
+          "dirk_comment": "The premium. Better brakes. Working bell—they'll ignore it, but it works."
+        },
+        {
+          "id": "survivor",
+          "display": "Survivor Package - 40 Sovs/day",
+          "dirk_comment": "The survivor. Our sturdiest bike. It's survived twelve canal recoveries. Maybe lucky, maybe cursed."
+        }
+      ],
+      "follow_up": "insurance_pitch"
+    },
+    
+    "insurance_pitch": {
+      "event_id": "anneke_insurance_pitch",
+      "trigger": "tier_selected",
+      "sequence": [
+        {"time": 0, "action": "npc_approach", "npc": "anneke"},
+        {"time": 0.5, "action": "dialogue", "speaker": "anneke", "text": "Now, about insurance..."},
+        {"time": 1.5, "action": "display_options", "type": "insurance_tiers"}
+      ],
+      "options": [
+        {
+          "id": "basic_insurance",
+          "display": "Basic (Included) - Theft only",
+          "anneke_comment": "Basic's free. Covers theft with a police report. Doesn't cover... *gestures at damage photos* ...anything else."
+        },
+        {
+          "id": "standard_insurance",
+          "display": "Standard - 10 Sovs",
+          "anneke_comment": "Standard's 10 Sovs. Covers theft and 'minor' damage. Dad defines minor. Be warned."
+        },
+        {
+          "id": "premium_insurance",
+          "display": "Premium - 20 Sovs",
+          "anneke_comment": "Premium's 20 Sovs. Covers most things. Includes one canal recovery attempt. One."
+        },
+        {
+          "id": "platinum_insurance",
+          "display": "Platinum - 35 Sovs",
+          "anneke_comment": "Platinum's 35 Sovs. Covers everything. Nobody who buys this ever needs it. Funny how that works."
+        }
+      ]
+    },
+    
+    "photo_moment": {
+      "event_id": "rental_photo",
+      "trigger": "insurance_selected",
+      "sequence": [
+        {"time": 0, "action": "npc_approach", "npc": "anneke", "with": "camera"},
+        {"time": 0.5, "action": "dialogue", "speaker": "anneke", "text": "Just a quick photo for our records. Smile!"},
+        {"time": 1.5, "action": "camera_flash"},
+        {"time": 2, "action": "dialogue", "speaker": "anneke", "text": "...That's the face they all make."},
+        {"time": 3, "action": "photo_saved_to_records"}
+      ]
+    },
+    
+    "rental_complete": {
+      "event_id": "bike_assigned",
+      "trigger": "photo_taken",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "dirk", "text": "Bike #2347. Orange, like all the others. Lock combination is 1234. Everyone's is 1234."},
+        {"time": 2, "action": "item_granted", "item": "rental_bike_active"},
+        {"time": 2.5, "action": "buff_applied", "buff": "tourist_mobility"},
+        {"time": 3, "action": "dialogue", "speaker": "dirk", "text": "Good luck. You'll need it. Everyone does."},
+        {"time": 4, "action": "rental_state_active"}
+      ]
+    }
+  },
+  
+  "return_events": {
+    "damage_assessment": {
+      "event_id": "bike_inspection",
+      "trigger": "player_returns_bike",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "dirk", "text": "Let's see what we're working with."},
+        {"time": 1, "action": "npc_approach", "npc": "anneke", "with": "camera"},
+        {"time": 1.5, "action": "anneke_inspects"},
+        {"time": 3, "action": "damage_calculation"},
+        {"time": 4, "action": "branch_by_damage_level"}
+      ]
+    },
+    
+    "undamaged_return": {
+      "event_id": "perfect_return",
+      "trigger": "damage_level_none",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "triumphant_fanfare"},
+        {"time": 0.5, "action": "animation", "npc": "dirk", "state": "genuine_surprise"},
+        {"time": 1, "action": "dialogue", "speaker": "dirk", "text": "No damage? No damage at all? ...I don't believe you, but I respect the lie."},
+        {"time": 3, "action": "dialogue", "speaker": "anneke", "text": "Wait, really? *checks photos* Huh. That's... actually impressive."},
+        {"time": 5, "action": "deposit_refund", "amount": "full"},
+        {"time": 5.5, "action": "achievement", "id": "responsible_renter"},
+        {"time": 6, "action": "buff_applied", "buff": "responsible_renter_discount"}
+      ]
+    },
+    
+    "minor_damage_return": {
+      "event_id": "minor_damage",
+      "trigger": "damage_level_minor",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "anneke", "text": "Let me get a photo... *click* Okay, so..."},
+        {"time": 1.5, "action": "dialogue", "speaker": "dirk", "text": "This? This is nothing. I've seen worse before breakfast."},
+        {"time": 3, "action": "cost_display", "type": "damage_deduction"},
+        {"time": 4, "action": "deposit_refund", "amount": "partial"},
+        {"time": 4.5, "action": "achievement", "id": "at_least_you_tried"}
+      ]
+    },
+    
+    "major_damage_return": {
+      "event_id": "major_damage",
+      "trigger": "damage_level_major",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "record_scratch"},
+        {"time": 0.5, "action": "animation", "npc": "dirk", "state": "damage_assessment"},
+        {"time": 1, "action": "dialogue", "speaker": "dirk", "text": "How did you even— No. I don't want to know. Let me get the form."},
+        {"time": 3, "action": "npc_visible", "npc": "opa_willem", "reaction": "sighing_at_damage"},
+        {"time": 4, "action": "dialogue", "speaker": "anneke", "text": "Called it. *checks prediction board* Tram tracks?"},
+        {"time": 5.5, "action": "cost_display", "type": "major_damage_costs"},
+        {"time": 6.5, "action": "insurance_check"},
+        {"time": 7, "action": "deposit_refund", "amount": "none_or_negative"},
+        {"time": 7.5, "action": "achievement", "id": "insurance_was_good_call"}
+      ]
+    },
+    
+    "canal_return": {
+      "event_id": "canal_incident",
+      "trigger": "damage_level_canal",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "dramatic_sting"},
+        {"time": 0.5, "action": "dialogue", "speaker": "dirk", "text": "The canal. Again."},
+        {"time": 2, "action": "dialogue", "speaker": "dirk", "text": "Do you know how cold that water is? The bike knows. Knew."},
+        {"time": 4, "action": "npc_reaction", "npc": "opa_willem", "text": "Another one for the wall. *sighs*"},
+        {"time": 6, "action": "insurance_check"},
+        {"time": 7, "action": "cost_display", "type": "canal_recovery_or_replacement"},
+        {"time": 8, "action": "memorial_board_update", "if_not_recovered": true},
+        {"time": 9, "action": "achievement", "id": "gone_but_not_forgotten"}
+      ]
+    },
+    
+    "no_return": {
+      "event_id": "bike_not_returned",
+      "trigger": "player_enters_without_bike_after_rental",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "dirk", "text": "You're back. The bike is not. This is why we take deposits."},
+        {"time": 2, "action": "dialogue_options", "prompt": "What happened to the bike?"},
+        {"time": 3, "action": "branch_to_claim_process"}
+      ]
+    }
+  },
+  
+  "quest_events": {
+    "tour_de_shame_offer": {
+      "event_id": "tour_de_shame_quest_start",
+      "trigger": "second_rental_from_dirk",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "dirk", "text": "You're back for another? Brave. Or foolish. Same thing here."},
+        {"time": 2, "action": "dialogue", "speaker": "dirk", "text": "Tell you what. Complete a full circuit of Shamsterdam—all five districts—without damage, and I'll give you a discount."},
+        {"time": 5, "action": "quest_offered", "quest_id": "tour_de_shame"},
+        {"time": 6, "action": "dialogue", "speaker": "dirk", "text": "Nobody's ever done it. But maybe you're special."}
+      ]
+    },
+    
+    "tour_de_shame_complete": {
+      "event_id": "tour_de_shame_success",
+      "trigger": "quest_complete_tour_de_shame",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "dirk", "text": "You... you actually did it. All five districts. No damage."},
+        {"time": 2, "action": "animation", "npc": "dirk", "state": "genuine_surprise"},
+        {"time": 3, "action": "dialogue", "speaker": "anneke", "text": "Dad, are you... are you tearing up?"},
+        {"time": 4, "action": "dialogue", "speaker": "dirk", "text": "It's the grease. It's always the grease."},
+        {"time": 6, "action": "achievement", "id": "tour_de_shame_champion"},
+        {"time": 6.5, "action": "reward_granted", "item": "golden_bell"},
+        {"time": 7, "action": "buff_applied", "buff": "permanent_20_percent_discount"}
+      ]
+    },
+    
+    "canal_recovery_intro": {
+      "event_id": "opa_quest_introduction",
+      "trigger": "interact_with_opa_3_times",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "opa_willem", "text": "You keep coming back here. Most tourists don't."},
+        {"time": 2, "action": "dialogue", "speaker": "opa_willem", "text": "The canal has many bikes. Many, many bikes. You want to help an old man recover some?"},
+        {"time": 5, "action": "quest_offered", "quest_id": "canal_recovery_assistant"}
+      ]
+    },
+    
+    "canal_recovery_complete": {
+      "event_id": "canal_quest_success",
+      "trigger": "quest_complete_canal_recovery",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "opa_willem", "text": "Three bikes recovered. Good work."},
+        {"time": 2, "action": "dialogue", "speaker": "opa_willem", "text": "You want my blessing? *squints* Fine. May your wheels stay round and your chain stay oiled."},
+        {"time": 5, "action": "achievement", "id": "canal_fisher"},
+        {"time": 5.5, "action": "gold_granted", "amount": 30},
+        {"time": 6, "action": "buff_applied", "buff": "opa_willems_blessing", "permanent": true}
+      ]
+    },
+    
+    "insurance_claim_process": {
+      "event_id": "claim_filing",
+      "trigger": "player_files_insurance_claim",
+      "sequence": [
+        {"time": 0, "action": "dialogue", "speaker": "anneke", "text": "Insurance claim? Okay, let me get the form."},
+        {"time": 1.5, "action": "form_displayed", "type": "incident_description"},
+        {"time": 2, "action": "player_input", "type": "creative_writing_incident"},
+        {"time": 3, "action": "anneke_reads_description"},
+        {"time": 4, "action": "dialogue_branch", "based_on": "description_creativity"}
+      ],
+      "outcomes": {
+        "creative_honest": {
+          "dialogue": "That's... actually believable. Approved.",
+          "result": "full_claim_approved"
+        },
+        "creative_suspicious": {
+          "dialogue": "*squints* That's quite a story. Let me check with Dad.",
+          "result": "partial_claim"
+        },
+        "obviously_false": {
+          "dialogue": "You were attacked by a seagull gang. At night. In the canal. ...Denied.",
+          "result": "claim_denied"
+        }
+      }
+    }
+  },
+  
+  "cycling_damage_events": {
+    "description": "Random events triggered while cycling on rental bike",
+    "event_pool": [
+      {
+        "event_id": "flat_tire",
+        "probability": 0.20,
+        "sequence": [
+          {"action": "audio", "sound": "pssssshhh"},
+          {"action": "notification", "text": "Flat tire! The bike is still rideable... barely."},
+          {"action": "damage_recorded", "cost": 8}
+        ]
+      },
+      {
+        "event_id": "tram_track_accident",
+        "probability": 0.15,
+        "sequence": [
+          {"action": "audio", "sound": "metal_scrape"},
+          {"action": "notification", "text": "Wheel caught in tram track! Classic tourist mistake."},
+          {"action": "damage_recorded", "cost": 25}
+        ]
+      },
+      {
+        "event_id": "basket_theft",
+        "probability": 0.12,
+        "sequence": [
+          {"action": "notification", "text": "Someone grabbed something from your basket!"},
+          {"action": "random_item_lost"},
+          {"action": "damage_recorded", "cost": 10, "type": "basket"}
+        ]
+      },
+      {
+        "event_id": "tourist_collision",
+        "probability": 0.10,
+        "sequence": [
+          {"action": "audio", "sound": "ding_crash_sorry"},
+          {"action": "notification", "text": "Collision with another tourist! Mutual incompetence."},
+          {"action": "damage_recorded", "cost": 15}
+        ]
+      },
+      {
+        "event_id": "local_lesson",
+        "probability": 0.08,
+        "sequence": [
+          {"action": "audio", "sound": "angry_dutch_bell"},
+          {"action": "notification", "text": "A local cyclist 'taught you the rules.' Physically."},
+          {"action": "damage_recorded", "cost": 30},
+          {"action": "hp_loss", "amount": 5}
+        ]
+      },
+      {
+        "event_id": "nothing_happens",
+        "probability": 0.25,
+        "sequence": [
+          {"action": "none", "note": "Miraculous survival"}
+        ]
+      }
+    ]
+  }
+}

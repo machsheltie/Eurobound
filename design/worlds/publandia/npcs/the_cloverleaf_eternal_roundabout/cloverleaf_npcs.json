@@ -1,0 +1,465 @@
+{
+  "location_id": "publandia_outskirts_cloverleaf_roundabout_01",
+  "total_permanent_residents": 45,
+  "vehicles": 8,
+  
+  "npcs": [
+    {
+      "npc_id": "patrick_osullivan_01",
+      "display_name": "Patrick O'Sullivan",
+      "role": "eternal_groom_roundabout_elder",
+      "vehicle": "wedding_van_1987",
+      "duration_circling": "37_years",
+      "original_destination": "cliffs_of_moher",
+      
+      "appearance": {
+        "age_apparent": "70s",
+        "age_when_entered": "30s",
+        "clothing": {
+          "main": "original_wedding_suit",
+          "condition": "remarkably_preserved"
+        },
+        "hair": "grey_thinning_neatly_combed",
+        "expression": "warm_genuine_occasional_wistfulness"
+      },
+      
+      "personality": {
+        "core_traits": ["loving", "accepting", "genuine", "optimistic_despite_everything"],
+        "relationship_with_margaret": "unwavering_devotion",
+        "mental_state": "denial_about_margarets_death",
+        "speech_pattern": "warm_irish_accent_never_sad"
+      },
+      
+      "key_quotes": [
+        "First time? ...That's what they all say.",
+        "We were on our honeymoon. Supposed to see the Cliffs of Moher. That was... 1987. We made the best of it.",
+        "Margaret? She's just resting. Tired from all the circling.",
+        "We raised our children right here in the van. They grew up, left the roundabout. Can you imagine? Leaving? They call sometimes.",
+        "We celebrated our 37th anniversary last Tuesday. The tour bus threw us a party. Margaret loved it. She didn't say so, but I could tell.",
+        "We could leave now, you know. They finally put in proper signage. But Margaret and I talked about it, and... this is home now.",
+        "The secret is to enjoy the journey. The cliffs will still be there when we arrive."
+      ],
+      
+      "voice_direction": "Irish accent, warm and genuine, occasional wistfulness when mentioning Margaret, never sad - accepting",
+      "sprite_sheet": "wedding_van_1987.png",
+      "animation_states": ["driving_content", "waving"]
+    },
+    
+    {
+      "npc_id": "margaret_skeleton_01",
+      "display_name": "Margaret O'Sullivan (née Kelly)",
+      "role": "eternal_bride",
+      "state": "deceased_skeleton",
+      "time_of_death": "late_1990s_estimated",
+      "vehicle": "wedding_van_1987",
+      "position": "passenger_seat",
+      
+      "appearance": {
+        "state": "skeleton",
+        "pose": "seated_looking_out_window",
+        "clothing": {
+          "main": "wedding_dress",
+          "condition": "faded_but_preserved",
+          "color": "#FFFAFA"
+        },
+        "accessories": [
+          "dried_flower_crown",
+          "wedding_ring_on_finger_bone"
+        ]
+      },
+      
+      "design_critical_note": "Margaret is NEVER played for gross-out humor. She is part of a genuine love story. Patrick has never acknowledged her passing. She is treated with complete dignity.",
+      
+      "dialogue": {
+        "speaks": false,
+        "patrick_speaks_for_her": [
+          "Margaret agrees. Don't you, Margaret? *skeleton does not respond* She agrees.",
+          "Margaret says you're very kind.",
+          "She's just resting. Tired from all the circling."
+        ]
+      },
+      
+      "animation": {
+        "wind_sway": {
+          "frames": 4,
+          "duration_seconds": 2,
+          "style": "subtle_dignified"
+        }
+      },
+      
+      "sprite_sheet": "wedding_van_1987.png"
+    },
+    
+    {
+      "npc_id": "orla_brennan_tour_leader_01",
+      "display_name": "Orla Brennan",
+      "role": "community_coordinator",
+      "title": "The One Who Organized",
+      "vehicle": "tour_bus",
+      "duration_circling": "12_years",
+      
+      "appearance": {
+        "age_apparent": 55,
+        "clothing": {
+          "main": "comfortable_travel_clothes",
+          "badge": "CLOVERLEAF COMMUNITY COUNCIL"
+        },
+        "accessories": ["clipboard", "whistle", "schedule_book"]
+      },
+      
+      "personality": {
+        "core_traits": ["organized", "welcoming", "practical", "made_the_best_of_it"],
+        "speech_pattern": "efficient_and_friendly"
+      },
+      
+      "backstory": "Was on a tour bus that entered the roundabout 12 years ago. When it became clear they weren't leaving, she organized the passengers into a functioning community with democratic elections, waste management, and regular social events.",
+      
+      "key_quotes": [
+        "Welcome! Are you here for the orientation? We do orientations for new arrivals. Tuesdays and Thursdays.",
+        "We've got about thirty regular residents on the bus. We hold elections every six months. I'm the current coordinator.",
+        "You'll want to know about the food truck schedule, the waste management system, and lane etiquette. It's all very civilized.",
+        "The food truck circles the outer lane. Catch it on the south bend between 8 and 9. Quality's variable but it beats starving."
+      ],
+      
+      "voice_direction": "Irish accent, professional but warm, community leader energy",
+      "sprite_sheet": "tour_bus.png"
+    },
+    
+    {
+      "npc_id": "sean_murphy_exit_01",
+      "display_name": "Seán 'The Exit' Murphy",
+      "role": "the_one_who_could_leave",
+      "vehicle": "local_car_sean",
+      "duration_circling": "25_years_by_choice",
+      
+      "appearance": {
+        "age_apparent": "60s",
+        "clothing": {
+          "main": "flat_cap_wool_jumper"
+        },
+        "expression": "serene_knowing_slightly_ominous"
+      },
+      
+      "personality": {
+        "core_traits": ["knowing", "serene", "philosophical", "terrifying_in_acceptance"],
+        "speech_pattern": "measured_rural_irish_zen_master_meets_horror"
+      },
+      
+      "the_twist": "Seán KNOWS which exit leads where. He could leave at any time. He never does. He has chosen the roundabout over freedom.",
+      
+      "existential_horror_element": "Represents the terror of comfort zones. He has the knowledge. He has the ability. He stays anyway.",
+      
+      "key_quotes": [
+        "Exit 6. That's the one you want. Leads straight to the Cliffs.",
+        "Why don't I take it? *long pause* Out there... anything could happen. In here, I know what comes next. Another circle. Then another.",
+        "Freedom's overrated, lad. The world out there? Chaos. In here? Predictable. Safe. Eternal.",
+        "I could leave today. Tomorrow. Any time I want. *drives past Exit 6 without slowing* ...Just not today."
+      ],
+      
+      "voice_direction": "Rural Irish accent, measured and serene, the calm of someone who has made peace with an unsettling choice",
+      "sprite_sheet": "local_car_sean.png"
+    },
+    
+    {
+      "npc_id": "chef_maeve_01",
+      "display_name": "Chef Maeve Flanagan",
+      "role": "food_truck_operator",
+      "vehicle": "food_truck_cloverleaf",
+      "duration_circling": "8_years",
+      
+      "appearance": {
+        "age_apparent": "40s",
+        "clothing": {
+          "main": "chef_whites_stained",
+          "accessories": ["apron", "bandana"]
+        },
+        "expression": "tired_but_determined"
+      },
+      
+      "menu": [
+        {"item": "Roundabout Roll", "price_sov": 8, "effect": "restores_20_hp"},
+        {"item": "Exit Anxiety Easer", "price_sov": 12, "effect": "-stress_+confused", "type": "whiskey"},
+        {"item": "Cloverleaf Curry", "price_sov": 15, "effect": "restores_40_hp_+speed"},
+        {"item": "Margaret's Memorial Sandwich", "price_sov": 10, "effect": "+hp_patrick_misty_eyed"},
+        {"item": "Tourist Trap Platter", "price_sov": 25, "effect": "full_heal_-Sovs"}
+      ],
+      
+      "key_quotes": [
+        "The trick is never running out of petrol. I've got a deal with the lorry that circles Wednesdays.",
+        "We've lost three residents to malnutrition before I started. Now? Zero deaths from hunger. The roundabout provides."
+      ],
+      
+      "voice_direction": "Irish accent, practical, world-weary but not defeated",
+      "sprite_sheet": "food_truck.png"
+    },
+    
+    {
+      "npc_id": "brenda_doyle_instructor_01",
+      "display_name": "Brenda 'Learner Lane' Doyle",
+      "role": "eternal_driving_instructor",
+      "vehicle": "learner_car",
+      "duration_circling": "6_months",
+      
+      "appearance": {
+        "age_apparent": "45",
+        "expression": "increasingly_haunted"
+      },
+      
+      "situation": "Has been teaching Kevin for 6 months. He has not improved. She cannot leave until he passes.",
+      
+      "key_quotes": [
+        "Signal! SIGNAL! You have to SIGNAL before— ...We'll try again on the next loop.",
+        "Kevin here is working on his test. He's been working on it for six months.",
+        "At this point, I think the roundabout IS his driving test. If he can survive this, he can survive anything."
+      ],
+      
+      "voice_direction": "Irish accent, stressed, the sound of someone slowly losing hope",
+      "sprite_sheet": "learner_car.png"
+    },
+    
+    {
+      "npc_id": "kevin_student_01",
+      "display_name": "Kevin",
+      "role": "eternal_student_driver",
+      "vehicle": "learner_car",
+      "duration_circling": "6_months",
+      
+      "appearance": {
+        "age_apparent": "17",
+        "expression": "perpetually_nervous"
+      },
+      
+      "key_quotes": [
+        "Which lane am I supposed to be in?",
+        "Is that my exit?",
+        "I think I missed it.",
+        "I think I missed it again."
+      ],
+      
+      "voice_direction": "Nervous Irish teen, apologetic, never confident",
+      "sprite_sheet": "learner_car.png"
+    },
+    
+    {
+      "npc_id": "murphy_family",
+      "display_name": "The Murphy Family",
+      "role": "recently_trapped_tourists",
+      "vehicle": "family_van_murphy",
+      "duration_circling": "3_days",
+      
+      "members": [
+        {
+          "id": "murphy_da",
+          "role": "father_driver",
+          "trait": "refuses_to_admit_lost",
+          "key_quote": "We're NOT lost. I just need to find the right— there! No, wait. That wasn't it."
+        },
+        {
+          "id": "murphy_ma",
+          "role": "mother_passenger",
+          "trait": "has_accepted_new_life",
+          "key_quote": "This is fine. This is all fine. The children are learning valuable life lessons about... perseverance."
+        },
+        {
+          "id": "murphy_kids",
+          "count": 3,
+          "trait": "adapted_faster_than_adults",
+          "key_quotes": ["Are we there yet?", "This is actually kind of cool.", "Can we live here forever?"]
+        },
+        {
+          "id": "murphy_gran",
+          "role": "grandmother",
+          "trait": "slept_through_entry",
+          "key_quote": "...Are we in Kerry?"
+        }
+      ],
+      
+      "sprite_sheet": "family_van.png"
+    },
+    
+    {
+      "npc_id": "padraig_farmer_01",
+      "display_name": "Old Padraig",
+      "role": "accidental_farmer_resident",
+      "vehicle": "farmer_tractor",
+      "duration_circling": "2_years",
+      
+      "appearance": {
+        "age_apparent": "70s",
+        "clothing": {
+          "main": "flat_cap_overalls_wellies"
+        },
+        "expression": "unbothered_patient"
+      },
+      
+      "sheep_count": 5,
+      "sheep_behavior": "eat_center_island_grass_when_traffic_slow",
+      
+      "key_quotes": [
+        "Was moving the sheep across. Took a wrong turn. Here we are.",
+        "The sheep are grand. They eat the grass in the center when traffic's slow.",
+        "I'll leave eventually. Just waiting for a gap."
+      ],
+      
+      "note": "Has been waiting for a gap for 2 years",
+      
+      "voice_direction": "Rural Irish accent, completely unbothered, infinite patience",
+      "sprite_sheet": "farmer_tractor.png"
+    }
+  ],
+  
+  "vehicles_detailed": [
+    {
+      "vehicle_id": "wedding_van_1987",
+      "display_name": "The 1987 Wedding Van",
+      "make": "Ford Transit Connect",
+      "year": 1987,
+      "color": {
+        "original": "#FFFDD0",
+        "current": "#F5DEB3",
+        "description": "cream_faded_to_yellow"
+      },
+      "condition": "well_maintained_despite_age",
+      "lane": "middle",
+      "circulation_pattern": "constant",
+      "loop_duration_seconds": 30,
+      "years_circling": 37,
+      
+      "exterior_details": [
+        {
+          "element": "just_married_sign",
+          "text": "JUST MARRIED 1987",
+          "medium": "shoe_polish",
+          "condition": "faded_barely_readable"
+        },
+        {
+          "element": "tin_cans",
+          "count": 8,
+          "condition": "worn_to_nubs_still_dragging"
+        },
+        {
+          "element": "anniversary_banner",
+          "text": "37 YEARS",
+          "style": "hand_painted"
+        },
+        {
+          "element": "dead_flowers",
+          "location": "dashboard_vases",
+          "condition": "dried_but_carefully_arranged"
+        }
+      ],
+      
+      "occupants": ["patrick_osullivan_01", "margaret_skeleton_01"],
+      "sprite_sheet": "wedding_van_1987.png"
+    },
+    
+    {
+      "vehicle_id": "tour_bus",
+      "display_name": "The Community Bus",
+      "type": "double_decker_tour_bus",
+      "color": "#DC143C",
+      "original_company": "Cloverleaf Tours",
+      "current_status": "mobile_community",
+      "lane": "outer",
+      "circulation_pattern": "scheduled_stops",
+      "loop_duration_seconds": 45,
+      "years_circling": 12,
+      
+      "exterior_details": [
+        {"element": "community_banner", "text": "TOUR BUS COMMUNITY - EST. 2012"},
+        {"element": "democracy_banner", "text": "DEMOCRATIC SINCE 2013"},
+        {"element": "roof_garden", "description": "small_plants_growing"},
+        {"element": "laundry_lines", "location": "between_windows"}
+      ],
+      
+      "resident_count": 30,
+      "governance": {
+        "type": "democratic_council",
+        "elections": "every_6_months",
+        "current_coordinator": "orla_brennan_tour_leader_01"
+      },
+      
+      "sprite_sheet": "tour_bus.png"
+    },
+    
+    {
+      "vehicle_id": "food_truck_cloverleaf",
+      "display_name": "The Cloverleaf Kitchen",
+      "type": "food_truck",
+      "color": "#FF8C00",
+      "operator": "chef_maeve_01",
+      "lane": "outer",
+      "circulation_pattern": "scheduled_with_stops",
+      "loop_duration_seconds": 60,
+      "years_circling": 8,
+      "sprite_sheet": "food_truck.png"
+    },
+    
+    {
+      "vehicle_id": "local_car_sean",
+      "display_name": "Seán's Car",
+      "make": "Nissan Micra",
+      "year": 1999,
+      "color": {"base": "#228B22", "condition": "heavily_rusted"},
+      "lane": "middle",
+      "loop_duration_seconds": 25,
+      "years_circling": 25,
+      "significance": "knows_exit_chooses_to_stay",
+      "sprite_sheet": "local_car_sean.png"
+    },
+    
+    {
+      "vehicle_id": "learner_car",
+      "display_name": "APEX Driving School",
+      "type": "compact_sedan_dual_control",
+      "color": "#FFFFFF",
+      "l_plates": true,
+      "lane": "inner_badly",
+      "loop_duration_seconds": "variable",
+      "months_circling": 6,
+      "sprite_sheet": "learner_car.png"
+    },
+    
+    {
+      "vehicle_id": "family_van_murphy",
+      "display_name": "Murphy Family Van",
+      "type": "rental_people_carrier",
+      "color": "#C0C0C0",
+      "lane": "outer_confused",
+      "loop_duration_seconds": 35,
+      "days_circling": 3,
+      "sprite_sheet": "family_van.png"
+    },
+    
+    {
+      "vehicle_id": "farmer_tractor",
+      "display_name": "Padraig's Tractor",
+      "type": "ancient_tractor_60s",
+      "color": "#8B4513",
+      "attachment": "sheep_trailer",
+      "sheep_count": 5,
+      "lane": "creates_own_path",
+      "loop_duration_seconds": 90,
+      "years_circling": 2,
+      "sprite_sheet": "farmer_tractor.png"
+    },
+    
+    {
+      "vehicle_id": "bros_rental",
+      "display_name": "Bros' Rental Car",
+      "source": "paddys_premium_motors",
+      "type": "economy_rental",
+      "color": "#C0C0C0",
+      "lane": "variable_struggling",
+      "occupants": ["lord_pilsner", "chadwick", "bradley"],
+      "sprite_sheet": "bros_rental.png"
+    }
+  ],
+  
+  "background_traffic": {
+    "count": "variable_5_to_15",
+    "types": ["generic_cars", "lorries", "motorcycles"],
+    "behavior": "simplified_circulation_loops",
+    "render_priority": "low"
+  }
+}

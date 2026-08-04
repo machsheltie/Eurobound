@@ -1,10 +1,12 @@
-# Godot 4+ specific ignores
+# Godot (project lives in game/)
 .godot/
-/android/
-
-# Godot files
 .import/
-builds/
+game/android/
+game/assets/data/saves/*.save
+
+# Build output
+builds/*
+!builds/readme.md
 *.tmp
 
 # Development tools
@@ -14,10 +16,3 @@ tools/__pycache__/
 # Marketing (large files)
 marketing/trailers/raw_footage/
 marketing/screenshots/originals/
-
-# Add these patterns
-.godot/
-builds/*
-*.tmp
-tools/__pycache__/
-assets/data/saves/*.save

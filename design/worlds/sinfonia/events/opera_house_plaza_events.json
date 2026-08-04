@@ -1,0 +1,448 @@
+{
+  "location_id": "sinfonia_imperial_opera_house_plaza_01",
+  
+  "quest_events": {
+    "quest_id": "sinfonia_sidequest_fiaker_fiasco_01",
+    
+    "initiation": {
+      "event_id": "fiaker_fiasco_trigger",
+      "trigger_type": "approach_npc_during_time",
+      "npc": "sinfonia_npc_hans_jurgen_01",
+      "time_requirement": "day_hours_10_17",
+      "first_visit_only": false,
+      "cutscene_sequence": [
+        {
+          "action": "camera_focus",
+          "target": "fiaker_queue",
+          "duration_seconds": 2
+        },
+        {
+          "action": "npc_animation",
+          "npc": "sinfonia_npc_hans_jurgen_01",
+          "animation": "panic",
+          "duration_seconds": 3
+        },
+        {
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "MEIN PFERD! HE IS GONE! GUSTAV! GUSTAAAAAV!",
+          "voice_direction": "panicked_rising_pitch"
+        },
+        {
+          "action": "npc_animation",
+          "npc": "sinfonia_npc_hans_jurgen_01",
+          "animation": "running_in_place",
+          "duration_seconds": 2
+        },
+        {
+          "action": "dialogue",
+          "speaker": "lord_pilsner",
+          "text": "Whoa, dude, what's happening?"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "My horse! Gustav! He is escaped! He is running through the city!"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "bradley",
+          "text": "How does a horse just... escape?"
+        },
+        {
+          "action": "npc_animation",
+          "npc": "sinfonia_npc_hans_jurgen_01",
+          "animation": "shifty_eyes_toward_schnapps",
+          "duration_seconds": 1
+        },
+        {
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "This is... not important question. What is important: I need help! You! Americans! You are strong, yes? Fast?"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "chadwick",
+          "text": "I mean, I do CrossFit—"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "Perfect! You help me catch Gustav, I give you discount Fiaker ride! Half price! Forty Sovs!"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "lord_pilsner",
+          "text": "That's... wait, how much is a regular ride?"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "Eighty Sovs! So you see, very good deal!"
+        },
+        {
+          "action": "dialogue_choice",
+          "options": [
+            {
+              "text": "A noble quest! We'll help you, good sir!",
+              "response_type": "accept_quest",
+              "lord_pilsner_internal": "This is like being a knight. A horse knight.",
+              "proceeds_to": "gustav_sighting"
+            },
+            {
+              "text": "Uh, maybe the police can help?",
+              "response_type": "deflect",
+              "hans_jurgen_response": "The police?! They will ask questions! About my license! About the schnapps! No police! Please!",
+              "follows_with": "guilt_trip",
+              "eventually_proceeds_to": "gustav_sighting"
+            }
+          ]
+        }
+      ]
+    },
+    
+    "gustav_sighting": {
+      "event_id": "gustav_first_appearance",
+      "trigger_type": "quest_stage_reached",
+      "prerequisite": "quest_accepted",
+      "cutscene_sequence": [
+        {
+          "action": "camera_pan",
+          "direction": "toward_fountain",
+          "duration_seconds": 2
+        },
+        {
+          "action": "npc_spawn",
+          "npc": "sinfonia_npc_gustav_horse_01",
+          "location": "fountain_edge",
+          "animation": "drinking_water"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "chadwick",
+          "text": "Wait, is that—"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "GUSTAV!"
+        },
+        {
+          "action": "npc_animation",
+          "npc": "sinfonia_npc_gustav_horse_01",
+          "animation": "judgmental_stare",
+          "target": "hans_jurgen",
+          "duration_seconds": 3
+        },
+        {
+          "action": "sfx",
+          "sound": "single_low_cello_note",
+          "duration_seconds": 3
+        },
+        {
+          "action": "dialogue",
+          "speaker": "bradley",
+          "text": "That horse is... staring at us. Like, with judgment."
+        },
+        {
+          "action": "npc_animation",
+          "npc": "sinfonia_npc_gustav_horse_01",
+          "animation": "deliberate_snort",
+          "duration_seconds": 1
+        },
+        {
+          "action": "npc_animation",
+          "npc": "sinfonia_npc_gustav_horse_01",
+          "animation": "turn_and_trot_away",
+          "direction": "toward_cafe_terraces"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "HE IS RUNNING! CATCH HIM!"
+        }
+      ],
+      "proceeds_to": "chase_phase_plaza"
+    },
+    
+    "chase_phase_plaza": {
+      "event_id": "gustav_chase_plaza",
+      "trigger_type": "cutscene_complete",
+      "prerequisite": "gustav_first_appearance",
+      "gameplay_mode": "chase_sequence",
+      "chase_parameters": {
+        "target": "sinfonia_npc_gustav_horse_01",
+        "speed_player": 1.0,
+        "speed_target": 1.1,
+        "catch_method": "cannot_catch_in_plaza",
+        "obstacles": ["cafe_tables", "pigeons", "tourists"],
+        "property_damage_tracking": true
+      },
+      "sequence": [
+        {
+          "action": "chase_start",
+          "starting_position_player": "fountain",
+          "starting_position_gustav": "cafe_terraces_edge"
+        },
+        {
+          "action": "environmental_chaos",
+          "event": "gustav_knocks_over_tables",
+          "damage_sov": 85,
+          "sfx": "crash_register_ching"
+        },
+        {
+          "action": "dialogue_mid_chase",
+          "speaker": "cafe_maitre_d",
+          "text": "MY TABLES! WHO WILL PAY FOR THIS?!"
+        },
+        {
+          "action": "dialogue_mid_chase",
+          "speaker": "lord_pilsner",
+          "text": "DON'T WORRY WE'LL GET YOUR HORSE BACK!",
+          "note": "Does not address the payment question"
+        },
+        {
+          "action": "environmental_chaos",
+          "event": "pigeons_scatter",
+          "sfx": "pigeon_wings_mass_takeoff"
+        },
+        {
+          "action": "npc_animation",
+          "npc": "sinfonia_npc_gustav_horse_01",
+          "animation": "escape_trot",
+          "direction": "exit_toward_cafe_sachertorte"
+        },
+        {
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "He goes to Café Sachertorte! Gustav loves the cake there!"
+        }
+      ],
+      "proceeds_to": "exit_plaza_to_cafe",
+      "location_change": "sinfonia_cafe_sachertorte_01"
+    }
+  },
+  
+  "return_events": {
+    "post_quest_return": {
+      "event_id": "plaza_post_fiaker_fiasco",
+      "trigger_type": "enter_location_after_quest",
+      "prerequisite": "fiaker_fiasco_complete",
+      "changes": [
+        {
+          "type": "npc_dialogue_change",
+          "npc": "sinfonia_npc_opera_usher_01",
+          "new_dialogue": "You are the horse people. You may not enter."
+        },
+        {
+          "type": "npc_dialogue_change",
+          "npc": "cafe_maitre_d_01",
+          "new_dialogue": "You! 340 Sovs! PAY NOW or you are BANNED!"
+        },
+        {
+          "type": "npc_dialogue_change",
+          "npc": "pigeon_lady_01",
+          "new_dialogue": "Ah, you are the Americans who chased Gustav! He told me about you."
+        },
+        {
+          "type": "environmental_change",
+          "object": "newspaper_seller",
+          "headline": "AMERICAN TOURISTS CHASE HORSE THROUGH OPERA - THOUSANDS IN DAMAGES"
+        },
+        {
+          "type": "npc_spawn_occasional",
+          "npc": "sinfonia_npc_gustav_horse_01",
+          "probability": 0.15,
+          "location": "background",
+          "animation": "eating_from_flower_box",
+          "note": "Gustav occasionally visible in background, cape still on"
+        }
+      ]
+    },
+    
+    "path_a_specific_return": {
+      "event_id": "plaza_post_horse_whisperer",
+      "trigger_type": "enter_location_after_path_a",
+      "prerequisite": "fiaker_fiasco_path_a_complete",
+      "additional_changes": [
+        {
+          "type": "npc_state_change",
+          "npc": "sinfonia_npc_hans_jurgen_01",
+          "state": "working_with_gustav",
+          "dialogue": "Ah, my American friends! Gustav and I, we are together again. He is... still judging me. But he is here. *sips schnapps*"
+        },
+        {
+          "type": "selfie_unlock",
+          "prop_id": "with_gustav",
+          "description": "Gustav in opera cape, tolerating photo"
+        }
+      ]
+    },
+    
+    "path_b_specific_return": {
+      "event_id": "plaza_post_replacement_plan",
+      "trigger_type": "enter_location_after_path_b",
+      "prerequisite": "fiaker_fiasco_path_b_complete",
+      "additional_changes": [
+        {
+          "type": "npc_state_change",
+          "npc": "sinfonia_npc_hans_jurgen_01",
+          "state": "working_with_zoo_horse",
+          "dialogue": "The zoo horse is... not Gustav. But he pulls the carriage. Mostly. Sometimes he tries to return to the zoo. We are working on this."
+        },
+        {
+          "type": "item_visible",
+          "item": "horse_costume",
+          "location": "dumpster_near_fiaker_queue",
+          "description": "The horse costume, discarded in shame"
+        }
+      ]
+    }
+  },
+  
+  "ambient_events": {
+    "fiaker_departure": {
+      "event_id": "fiaker_carriage_leaves",
+      "trigger_type": "time_interval",
+      "interval_minutes": 15,
+      "cutscene_sequence": [
+        {
+          "action": "npc_animation",
+          "npc": "random_fiaker_driver",
+          "animation": "board_carriage"
+        },
+        {
+          "action": "sfx",
+          "sound": "horse_clip_clop_departing",
+          "duration_seconds": 10,
+          "fade_out": true
+        }
+      ]
+    },
+    
+    "opera_goers_arriving": {
+      "event_id": "evening_opera_crowd",
+      "trigger_type": "time_of_day",
+      "time": "17:00-19:00",
+      "changes": [
+        {
+          "type": "npc_spawn_group",
+          "group": "formal_opera_patrons",
+          "count": 8,
+          "clothing": "evening_wear"
+        },
+        {
+          "type": "prop_add",
+          "prop": "red_carpet",
+          "location": "opera_entrance"
+        },
+        {
+          "type": "lighting_change",
+          "effect": "dramatic_uplighting_on_facade"
+        }
+      ]
+    },
+    
+    "street_performer_set": {
+      "event_id": "violin_performance",
+      "trigger_type": "time_of_day",
+      "time": "11:00-18:00",
+      "continuous": true,
+      "audio": "violin_classical_live_loop",
+      "interruptible_by": "player_interaction"
+    }
+  },
+  
+  "minigame_events": {
+    "rhythm_challenge": {
+      "event_id": "street_performer_rhythm_minigame",
+      "trigger_type": "player_interaction",
+      "npc": "street_performer_violin_01",
+      "prerequisite": "tip_5_sov",
+      "minigame_parameters": {
+        "type": "rhythm_matching",
+        "song": "classical_violin_piece",
+        "difficulty": "medium",
+        "duration_seconds": 60,
+        "scoring": {
+          "perfect": 100,
+          "good": 50,
+          "miss": 0
+        },
+        "thresholds": {
+          "pass": 600,
+          "excellent": 900
+        }
+      },
+      "rewards": {
+        "pass": {
+          "bravado": 3,
+          "item": "sheet_music_classical"
+        },
+        "excellent": {
+          "bravado": 5,
+          "item": "sheet_music_classical",
+          "status": "musically_gifted",
+          "duration_hours": 2
+        },
+        "fail": {
+          "bravado": -1,
+          "status": "embarrassed",
+          "duration_minutes": 10
+        }
+      },
+      "dialogue_after": {
+        "pass": "You have potential! Here, take this sheet music. Practice!",
+        "excellent": "Remarkable! You have a natural sense of rhythm. Please, this is for you.",
+        "fail": "Perhaps... try again another time. Music requires patience."
+      }
+    },
+    
+    "opera_knowledge_test": {
+      "event_id": "guess_the_opera_dialogue",
+      "trigger_type": "player_interaction",
+      "npc": "random_opera_patron",
+      "minigame_parameters": {
+        "type": "dialogue_skill_check",
+        "stat": "charm",
+        "difficulty_threshold": 3,
+        "bluff_option": true
+      },
+      "dialogue_sequence": [
+        {
+          "speaker": "opera_patron",
+          "text": "Ah, you're attending tonight? Which aria are you most anticipating?"
+        },
+        {
+          "choices": [
+            {
+              "text": "Oh, the famous one. With the singing.",
+              "requires": {"charm": 4},
+              "success": "vague_but_charming"
+            },
+            {
+              "text": "I'm actually here for the architecture.",
+              "requires": {"charm": 2},
+              "success": "deflection"
+            },
+            {
+              "text": "Uh... the loud part?",
+              "requires": null,
+              "result": "fail"
+            }
+          ]
+        }
+      ],
+      "rewards": {
+        "success": {
+          "unlock": "opera_gossip_thread",
+          "charm": 1
+        },
+        "fail": {
+          "status": "culturally_exposed",
+          "dialogue": "I see. Americans. *walks away*"
+        }
+      }
+    }
+  }
+}

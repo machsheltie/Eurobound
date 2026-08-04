@@ -1,0 +1,281 @@
+{
+  "location_id": "shamsterdam_bike_crossing_thunderdome_01",
+  
+  "interactive_objects": {
+    "infrastructure": [
+      {
+        "object_id": "traffic_signal_pedestrian",
+        "type": "environmental_interactive",
+        "display_name": "Pedestrian Traffic Signal",
+        "description": "A button that claims to control the crossing signal. Cyclists have a different opinion about that.",
+        "interaction": {
+          "type": "press_button",
+          "result": "makes_you_feel_better",
+          "actual_effect": "none",
+          "dialogue": "The button clicks. Nothing changes. The bikes don't care."
+        },
+        "touch_zone": {"x": 45, "y": 270, "width": 32, "height": 48}
+      },
+      {
+        "object_id": "pedestrian_island",
+        "type": "safe_zone_temporary",
+        "display_name": "Pedestrian Refuge Island",
+        "description": "A tiny raised platform in the center. False hope made concrete.",
+        "mechanics": {
+          "safe_duration_seconds": 2,
+          "capacity": 3,
+          "overstay_consequence": "blocking_traffic_fine_risk"
+        },
+        "npc_resident": "fallen_tourist_01",
+        "touch_zone": {"x": 130, "y": 140, "width": 64, "height": 48}
+      },
+      {
+        "object_id": "tram_track_1",
+        "type": "lethal_hazard",
+        "display_name": "Tram Track (Westbound)",
+        "description": "Steel rails embedded in the road. The trams use these. The trams do not stop.",
+        "mechanics": {
+          "tram_interval_seconds": 45,
+          "warning_audio": "tram_bell",
+          "warning_time_seconds": 3,
+          "crossing_window_seconds": 2,
+          "damage_on_hit": 50
+        },
+        "touch_zone": {"x": 0, "y": 120, "width": 300, "height": 24}
+      },
+      {
+        "object_id": "tram_track_2",
+        "type": "lethal_hazard",
+        "display_name": "Tram Track (Eastbound)",
+        "description": "The second set of tracks. Offset timing from the first, because the city planners were merciful. Slightly.",
+        "mechanics": {
+          "tram_interval_seconds": 45,
+          "offset_from_track_1_seconds": 22,
+          "warning_audio": "tram_bell",
+          "warning_time_seconds": 3,
+          "crossing_window_seconds": 2,
+          "damage_on_hit": 50
+        },
+        "touch_zone": {"x": 0, "y": 165, "width": 300, "height": 24}
+      }
+    ],
+    
+    "environmental": [
+      {
+        "object_id": "bike_racks_massive",
+        "type": "environmental_cover",
+        "display_name": "Bike Parking Chaos",
+        "description": "Thousands of bicycles chained to everything. Some have been here since the 70s. You can hide behind them briefly.",
+        "interaction": {
+          "type": "hide",
+          "effect": "brief_cover_from_traffic_view",
+          "duration_seconds": 3
+        },
+        "comedy": "Some bikes have plants growing through them",
+        "touch_zone": {"x": 280, "y": 200, "width": 60, "height": 100}
+      },
+      {
+        "object_id": "cafe_terrace",
+        "type": "safe_zone_permanent",
+        "display_name": "Café Terrace",
+        "description": "Outdoor seating where locals watch tourists attempt the crossing. Serves overpriced coffee and schadenfreude.",
+        "services": [
+          {"type": "coffee", "cost": 4, "effect": "heal_5_hp"},
+          {"type": "observation", "cost": 0, "effect": "watch_others_fail"}
+        ],
+        "npc_resident": "gerrit_traffic_philosopher_01",
+        "touch_zone": {"x": 0, "y": 250, "width": 80, "height": 50}
+      },
+      {
+        "object_id": "emergency_call_box",
+        "type": "utility_comedic",
+        "display_name": "Emergency Call Box",
+        "description": "A blue emergency phone for injured pedestrians.",
+        "interaction": {
+          "type": "use_phone",
+          "recording": "This is a bicycle city. Please adjust expectations.",
+          "actual_function": "none"
+        },
+        "touch_zone": {"x": 290, "y": 150, "width": 24, "height": 48}
+      },
+      {
+        "object_id": "i_amsterdam_ghost_sign",
+        "type": "easter_egg",
+        "display_name": "Faded Sign Outline",
+        "description": "A faded outline where a famous sign used to be.",
+        "interaction": {
+          "type": "examine",
+          "lore": "The 'I Shamsterdam' sign was removed in 2018. Tourists wouldn't stop blocking traffic for photos. Coincidentally, you're blocking traffic right now."
+        },
+        "touch_zone": {"x": 150, "y": 20, "width": 48, "height": 32}
+      },
+      {
+        "object_id": "canal_view_north",
+        "type": "environmental_scenic",
+        "display_name": "Canal View",
+        "description": "The famous canals of Shamsterdam. Murky water, picturesque houseboats, and an estimated 12,000 bicycles at the bottom.",
+        "interaction": {
+          "type": "examine",
+          "lore": "Every year, the city pulls hundreds of bikes from the canals. Nobody knows how they all get there. Nobody asks.",
+          "connection": "canal_bike_recovery_quest_hint"
+        },
+        "touch_zone": {"x": 100, "y": 0, "width": 100, "height": 30}
+      }
+    ],
+    
+    "signage": [
+      {
+        "object_id": "crossing_warning_sign",
+        "type": "informational",
+        "display_name": "Pedestrian Crossing Sign",
+        "description": "Multiple warning signs in four languages, all ignored by cyclists.",
+        "text_content": {
+          "dutch": "VOETGANGERS: U BENT NIET DE PRIORITEIT",
+          "english": "PEDESTRIANS: YOU ARE NOT THE PRIORITY",
+          "german": "FUßGÄNGER: SIE HABEN KEINE PRIORITÄT",
+          "french": "PIÉTONS: VOUS N'ÊTES PAS LA PRIORITÉ"
+        }
+      },
+      {
+        "object_id": "bike_lane_markings",
+        "type": "environmental",
+        "display_name": "Red Bike Lane Markings",
+        "description": "Bright red paint indicating bike lanes. Standing in these is technically illegal and definitely dangerous.",
+        "fine_risk": {"amount": 95, "trigger": "standing_more_than_3_seconds"}
+      },
+      {
+        "object_id": "tram_warning_sign",
+        "type": "informational",
+        "display_name": "Tram Warning",
+        "text_content": "⚠️ TRAMS CANNOT STOP QUICKLY. YOU CAN."
+      }
+    ],
+    
+    "minigame_zones": [
+      {
+        "zone_id": "lane_1_slow",
+        "type": "crossing_lane",
+        "difficulty": "easy",
+        "cyclist_types": ["tourist_rental", "elder"],
+        "direction": "east",
+        "y_position": 80
+      },
+      {
+        "zone_id": "lane_2_medium",
+        "type": "crossing_lane",
+        "difficulty": "medium",
+        "cyclist_types": ["commuter", "student"],
+        "direction": "east",
+        "y_position": 100
+      },
+      {
+        "zone_id": "lane_3_fast",
+        "type": "crossing_lane",
+        "difficulty": "hard",
+        "cyclist_types": ["delivery", "student", "elder"],
+        "direction": "east",
+        "y_position": 120
+      },
+      {
+        "zone_id": "lane_4_fast",
+        "type": "crossing_lane",
+        "difficulty": "hard",
+        "cyclist_types": ["delivery", "commuter"],
+        "direction": "west",
+        "y_position": 180
+      },
+      {
+        "zone_id": "lane_5_medium",
+        "type": "crossing_lane",
+        "difficulty": "medium",
+        "cyclist_types": ["commuter", "parent_bakfiets"],
+        "direction": "west",
+        "y_position": 200
+      },
+      {
+        "zone_id": "lane_6_slow",
+        "type": "crossing_lane",
+        "difficulty": "easy",
+        "cyclist_types": ["tourist_rental", "tandem_couple"],
+        "direction": "west",
+        "y_position": 220
+      }
+    ]
+  },
+  
+  "selfie_props": [
+    {
+      "prop_id": "crossing_survivor_selfie",
+      "location": "north_sidewalk",
+      "display_name": "Crossing Survivor",
+      "condition": "successful_crossing",
+      "bravado_boost": 3,
+      "gallery_entry": true,
+      "comedy": "Chaos visible in background"
+    },
+    {
+      "prop_id": "cargo_parade_selfie",
+      "location": "any_during_parade",
+      "display_name": "Cargo Parade Witness",
+      "condition": "during_cargo_parade",
+      "bravado_boost": 2,
+      "gallery_entry": true,
+      "risk": "might_get_hit_taking_photo"
+    },
+    {
+      "prop_id": "gerrit_approval_selfie",
+      "location": "cafe_terrace",
+      "display_name": "Master Approved",
+      "condition": "gerrits_approval_achievement",
+      "bravado_boost": 5,
+      "gallery_entry": true,
+      "rarity": "rare"
+    },
+    {
+      "prop_id": "ghost_sign_selfie",
+      "location": "i_amsterdam_ghost",
+      "display_name": "Where It Used To Be",
+      "condition": "examine_ghost_sign",
+      "bravado_boost": 1,
+      "gallery_entry": true,
+      "comedy": "Pointing at nothing"
+    }
+  ],
+  
+  "environmental_interactions": [
+    {
+      "trigger_id": "enter_bike_lane",
+      "type": "passive_risk",
+      "condition": "standing_in_red_zone",
+      "effect": {
+        "fine_risk_per_second": 0.1,
+        "collision_risk_multiplier": 2.0
+      }
+    },
+    {
+      "trigger_id": "traffic_flow_awareness",
+      "type": "passive_buff",
+      "condition": "observe_from_terrace_30_seconds",
+      "effect": {
+        "buff": "traffic_pattern_insight",
+        "crossing_difficulty_reduction": 0.1,
+        "duration_minutes": 10
+      }
+    }
+  ],
+  
+  "quest_integration_objects": [
+    {
+      "object_id": "stay_away_pamphlet_dispenser",
+      "quest": "stay_away_campaign",
+      "location": "near_south_entrance",
+      "pamphlet_available": "traffic_safety_tourists_last_mistake"
+    },
+    {
+      "object_id": "canal_bike_recovery_marker",
+      "quest": "canal_bike_recovery",
+      "location": "north_exit_canal_view",
+      "hint": "The canal diving spot is just north of here"
+    }
+  ]
+}

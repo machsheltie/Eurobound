@@ -1,0 +1,376 @@
+{
+  "location_id": "sinfonia_imperial_opera_house_plaza_01",
+  
+  "npcs": [
+    {
+      "npc_id": "sinfonia_npc_hans_jurgen_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md",
+      "display_name": "Hans-Jürgen Pferdmann",
+      "role": "quest_giver_fiaker_driver",
+      "location_default": "fiaker_queue_spot_3",
+      "availability": {
+        "time": "day_hours_10_17",
+        "moves_during_quest": true
+      },
+      
+      "appearance": {
+        "age_apparent": "mid_50s",
+        "build": "stout_hunched",
+        "face": {
+          "cheeks": "red_from_drinking",
+          "mustache": "bushy_grey",
+          "expression_default": "jovial_drunk"
+        },
+        "clothing": {
+          "main": "traditional_fiaker_driver_outfit",
+          "jacket": "formal_black",
+          "hat": "bowler_perpetually_askew",
+          "shirt": "white_stained"
+        },
+        "accessories": [
+          {"item": "schnapps_flask", "visibility": "barely_concealed"},
+          {"item": "leather_whip", "condition": "worn_never_used_aggressively"},
+          {"item": "pocket_watch", "condition": "stopped"},
+          {"item": "gustav_photo", "location": "breast_pocket", "condition": "creased"}
+        ],
+        "buttons_missing": 1
+      },
+      
+      "personality": {
+        "core_traits": ["alcoholic_denial", "genuine_love_for_gustav", "professional_pride_despite_dysfunction"],
+        "relationship_gustav": "co_dependent_professional_marriage_15_years",
+        "speech_pattern": {
+          "accent": "austrian_german",
+          "syntax": "germanic_inversions_in_english",
+          "escalation": "panic_vocabulary",
+          "slurring": "schnapps_affected_consonants",
+          "emotional_breaks": "german_phrases"
+        }
+      },
+      
+      "animation_states": {
+        "idle_sober": {
+          "frames": 4,
+          "duration_seconds": 2,
+          "description": "slight_sway"
+        },
+        "idle_drunk": {
+          "frames": 6,
+          "duration_seconds": 3,
+          "description": "pronounced_sway_occasional_sip"
+        },
+        "panic": {
+          "frames": 8,
+          "duration_seconds": 1,
+          "description": "running_in_place_wild_gestures"
+        },
+        "relief": {
+          "frames": 6,
+          "duration_seconds": 2,
+          "description": "bear_hug_attempt"
+        },
+        "confession": {
+          "frames": 4,
+          "duration_seconds": 4,
+          "description": "slumped_against_carriage"
+        }
+      },
+      
+      "key_quotes": {
+        "panic_initial": "MEIN PFERD! HE IS GONE! GUSTAV! GUSTAAAAAV!",
+        "appeal_to_bros": "You! Americans! You are strong, yes? Fast? You help me catch my horse, I give you discount ride!",
+        "about_gustav": "Gustav is... the better driver. He knows the routes. He knows when to stop for photos. I just... hold the reins and drink.",
+        "confession": "Sixteen years we work together. He is my only friend. My wife left. My children do not call. But Gustav... Gustav is there. Every morning. Until today.",
+        "reunion": "GUSTAV! MY FRIEND!",
+        "philosophical": "Maybe... maybe he deserves to be free. But also the carriage insurance is in my name, so he has to come back.",
+        "gratitude": "You Americans... you are very strange. But you are good strange. Like Gustav."
+      },
+      
+      "voice_direction": "Austrian accent, jovial when drunk, panicked rising pitch when worried, tearful when confessing, occasional hiccup",
+      
+      "sprite_sheet": "hans_jurgen_fiaker.png"
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_gustav_horse_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_gustav.md",
+      "display_name": "Gustav",
+      "role": "quest_target_philosophical_horse",
+      "location_default": "fiaker_carriage_spot_3",
+      "availability": {
+        "initial": "escaping_during_quest_trigger",
+        "chase": "multiple_locations",
+        "resolved": "occasional_background_appearance"
+      },
+      
+      "appearance": {
+        "type": "lipizzan_draft_horse",
+        "color": "white_grey",
+        "markings": "dappled_grey",
+        "build": "muscular_tired_looking",
+        "expression_default": "permanently_unimpressed"
+      },
+      
+      "chase_appearance": {
+        "accessories": [
+          {"item": "broken_harness_pieces", "attached": true},
+          {"item": "stolen_opera_cape", "acquired_during_chase": true},
+          {"item": "sachertorte_crumbs", "on_muzzle": true}
+        ]
+      },
+      
+      "personality": {
+        "core_traits": ["done_with_tourists", "smarter_than_assumed", "has_opinions"],
+        "relationship_hans_jurgen": "complicated_resents_drinking_misses_routine",
+        "relationship_tourists": "years_of_frustration_americans_especially_triggering"
+      },
+      
+      "animation_states": {
+        "eating": {
+          "frames": 6,
+          "duration_seconds": 3,
+          "description": "munching_stolen_food_satisfaction"
+        },
+        "judgmental_stare": {
+          "frames": 2,
+          "duration_seconds": 4,
+          "description": "long_horse_stare_at_humans"
+        },
+        "escape_trot": {
+          "frames": 8,
+          "duration_seconds": 1,
+          "description": "purposeful_trot_away"
+        },
+        "considering": {
+          "frames": 4,
+          "duration_seconds": 2,
+          "description": "thoughtful_head_tilt_skittles"
+        },
+        "resigned_return": {
+          "frames": 6,
+          "duration_seconds": 3,
+          "description": "heavy_sigh_tolerate_hug"
+        },
+        "defiant_stance": {
+          "frames": 2,
+          "duration_seconds": 2,
+          "description": "refuses_to_move_stamps_foot"
+        }
+      },
+      
+      "communication": {
+        "speaks": false,
+        "conveys_through": ["snorts", "whinnies", "body_language", "deliberate_eye_contact"],
+        "expressions": {
+          "spotted": "judgmental_stare_snort_slow_walk_away",
+          "chased": "annoyed_whinny_speeds_up_just_enough",
+          "cornered": "defiant_stance_refuses_to_move",
+          "offered_skittles": "considers_takes_one_chews_thoughtfully",
+          "hans_jurgen_arrives": "angry_snort_stamps_foot_looks_away",
+          "convinced_to_return": "heavy_sigh_tolerates_hug"
+        }
+      },
+      
+      "sprite_sheet": "gustav_horse.png",
+      "sprite_sheet_with_cape": "gustav_horse_opera_cape.png"
+    },
+    
+    {
+      "npc_id": "fiaker_driver_collective",
+      "display_name": "Other Fiaker Drivers",
+      "role": "background_npcs_commentary",
+      "count": 4,
+      "location_default": "fiaker_queue_various",
+      
+      "variants": [
+        {
+          "id": "driver_old_veteran",
+          "age": "60s",
+          "personality": "seen_everything",
+          "key_quote": "Ah, Hans-Jürgen. This was... inevitable."
+        },
+        {
+          "id": "driver_younger",
+          "age": "30s",
+          "personality": "sympathetic",
+          "key_quote": "Gustav, he is good horse. Too good for this work."
+        },
+        {
+          "id": "driver_competitive",
+          "age": "40s",
+          "personality": "opportunistic",
+          "key_quote": "Hans-Jürgen is... unavailable? I take his spot in queue, yes?"
+        },
+        {
+          "id": "driver_philosopher",
+          "age": "50s",
+          "personality": "contemplative",
+          "key_quote": "The horses, they understand more than we think. Gustav made a choice."
+        }
+      ],
+      
+      "post_quest_dialogue": {
+        "all": "Hans-Jürgen told us about you. You are... famous now."
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_opera_usher_01",
+      "display_name": "Opera Usher Gerhardt",
+      "role": "gatekeeper_formal",
+      "location_default": "opera_entrance",
+      "canonical_record": "Design/World Design/Sinfonia/npcs/bassline_opera_house_npcs.json",
+      "note": "Same character as the Bassline Opera House usher — one Gerhardt, two vantage points (plaza entrance and lobby).",
+
+      "appearance": {
+        "clothing": "formal_usher_uniform",
+        "expression": "perpetually_disapproving"
+      },
+      
+      "key_quotes": {
+        "initial": "The opera begins at precisely 19:00. Appropriate attire is... *looks at bros*... required.",
+        "post_quest": "You are the horse people. You may not enter.",
+        "if_approached_again": "I said. NO. HORSES. And no horse-adjacent tourists."
+      }
+    },
+    
+    {
+      "npc_id": "cafe_maitre_d_01",
+      "display_name": "Café Maître D'",
+      "role": "cafe_authority_victim",
+      "location_default": "cafe_terrace_entrance",
+      
+      "appearance": {
+        "clothing": "formal_waiter_attire",
+        "expression_default": "snooty",
+        "expression_during_chase": "horrified"
+      },
+      
+      "key_quotes": {
+        "greeting": "A table for... three? Americans? Perhaps... outside. Far outside.",
+        "during_chase": "THAT HORSE JUST ATE AN 85 SOVS SACHERTORTE! THE WHOLE ONE! WHO IS RESPONSIBLE?!",
+        "post_chase": "You. You are responsible. 340 Sovs in damages. The tablecloths alone!",
+        "if_unpaid": "You are banned. BANNED. I have your photographs."
+      }
+    },
+    
+    {
+      "npc_id": "street_performer_violin_01",
+      "display_name": "Street Performer (Violin)",
+      "role": "minigame_trigger_atmosphere",
+      "location_default": "street_performer_circle_south",
+      
+      "appearance": {
+        "age": "20s",
+        "gender": "female",
+        "clothing": "artistic_bohemian",
+        "instrument": "violin"
+      },
+      
+      "personality": {
+        "actually_talented": true,
+        "patient_with_tourists": true
+      },
+      
+      "key_quotes": {
+        "greeting": "*plays classical piece* Thank you for listening.",
+        "after_tip_small": "*nods appreciatively*",
+        "after_tip_large": "You have good taste! Would you like to try? It's easier than it looks.",
+        "during_chase": "*music intensifies dramatically, accidentally scoring the chaos*"
+      },
+      
+      "minigame_trigger": "street_performer_rhythm"
+    },
+    
+    {
+      "npc_id": "ticket_scalper_01",
+      "display_name": "Ticket Scalper",
+      "role": "scam_vendor",
+      "location_default": "shadows_near_opera",
+      
+      "appearance": {
+        "clothing": "trenchcoat_suspicious",
+        "behavior": "furtive_glances"
+      },
+      
+      "key_quotes": {
+        "approach": "*whispers* You want tickets? Tonight's Magic Flute? Very exclusive. Very... available.",
+        "price_reveal": "400 Sovs. For the experience. Box seats. Maybe. Definitely seats.",
+        "if_challenged": "Face value? What is 'face value' when you are seeing CULTURE?"
+      },
+      
+      "scam_details": {
+        "item_sold": "opera_tickets_scalped",
+        "price_range": [200, 500],
+        "face_value_range": [40, 80],
+        "legitimacy": "actual_tickets_but_overpriced"
+      }
+    },
+    
+    {
+      "npc_id": "pigeon_lady_01",
+      "display_name": "Pigeon Lady",
+      "role": "observer_oracle",
+      "location_default": "near_fountain_benches",
+      
+      "appearance": {
+        "age": "elderly",
+        "clothing": "old_fashioned_coat_many_pockets",
+        "surrounded_by": "pigeons"
+      },
+      
+      "personality": {
+        "observes_everything": true,
+        "talks_to_animals": true,
+        "possibly_magical": "ambiguous"
+      },
+      
+      "key_quotes": {
+        "initial": "The horses, they are more reliable than the drivers.",
+        "post_quest": "You are the Americans who chased Gustav! He told me about you.",
+        "player_question": "Wait, she talks to horses?",
+        "response": "Gustav tells everyone. He is very social.",
+        "cryptic_wisdom": "The fountain knows secrets. The pigeons carry them. Gustav... Gustav just wants respect."
+      },
+      
+      "special_ability": "appears_to_communicate_with_animals"
+    }
+  ],
+  
+  "npc_schedules": {
+    "hans_jurgen": {
+      "10:00-12:00": "at_queue_drinking_casually",
+      "12:00-14:00": "doing_tourist_rides",
+      "14:00-15:00": "at_queue_drinking_more",
+      "15:00-17:00": "quest_trigger_window"
+    },
+    "sinfonia_npc_opera_usher_01": {
+      "10:00-17:00": "at_entrance_casual",
+      "17:00-19:00": "at_entrance_strict",
+      "19:00-22:00": "inside_during_performance"
+    },
+    "street_performer": {
+      "11:00-14:00": "performing",
+      "14:00-15:00": "break",
+      "15:00-18:00": "performing"
+    }
+  },
+  
+  "npc_reactions_to_events": {
+    "gustav_escape": {
+      "fiaker_drivers": "watch_with_knowing_expressions",
+      "sinfonia_npc_opera_usher_01": "concerned_about_potential_intrusion",
+      "cafe_maitre_d": "worried_about_tables",
+      "pigeon_lady": "nods_as_if_expected"
+    },
+    "chase_through_plaza": {
+      "all_npcs": "scatter_or_watch_in_shock",
+      "street_performer": "music_intensifies_dramatically"
+    },
+    "quest_resolution": {
+      "fiaker_drivers": "gather_to_witness",
+      "cafe_maitre_d": "demands_payment",
+      "pigeon_lady": "approves_or_disapproves_based_on_path"
+    }
+  }
+}

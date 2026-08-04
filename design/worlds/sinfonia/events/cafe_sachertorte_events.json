@@ -1,0 +1,635 @@
+{
+  "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+  
+  "quest_events": {
+    "quest_id": "sinfonia_sidequest_fiaker_fiasco_01",
+    "phase": "cafe_phase_02",
+    
+    "entry_trigger": {
+      "event_id": "cafe_phase_begin",
+      "trigger_type": "player_arrives_during_pursuit",
+      "prerequisite": "gustav_fled_opera_plaza",
+      "cutscene_on_entry": true
+    },
+    
+    "gustav_entry_sequence": {
+      "event_id": "gustav_cafe_entry",
+      "duration_seconds": 12,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_focus",
+          "target": "patio_door",
+          "duration_seconds": 1
+        },
+        {
+          "time": 1,
+          "action": "sfx",
+          "sound": "umbrella_stand_crash"
+        },
+        {
+          "time": 1.2,
+          "action": "npc_spawn",
+          "npc": "gustav_with_cape",
+          "position": "patio_door",
+          "animation": "dramatic_entrance"
+        },
+        {
+          "time": 1.5,
+          "action": "damage_event",
+          "item": "patio_table",
+          "amount_sov": 85,
+          "sfx": "furniture_crash"
+        },
+        {
+          "time": 1.7,
+          "action": "damage_event",
+          "item": "umbrella_stand",
+          "amount_sov": 15,
+          "sfx": "metal_clatter"
+        },
+        {
+          "time": 2,
+          "action": "npc_reaction",
+          "npc": "tourist_couple",
+          "reaction": "scream_and_point"
+        },
+        {
+          "time": 2.5,
+          "action": "dialogue",
+          "speaker": "tourist_wife",
+          "text": "Is that... is that a HORSE?!"
+        },
+        {
+          "time": 3,
+          "action": "music_stop",
+          "fade_duration": 0.5
+        },
+        {
+          "time": 3.5,
+          "action": "music_start",
+          "track": "chaos_tension_strings.ogg"
+        },
+        {
+          "time": 4,
+          "action": "npc_path",
+          "npc": "gustav",
+          "destination": "cake_display",
+          "speed": "deliberate_confident"
+        },
+        {
+          "time": 5,
+          "action": "npc_animation",
+          "npc": "herr_ober",
+          "animation": "turn_and_horror"
+        },
+        {
+          "time": 5.5,
+          "action": "dialogue",
+          "speaker": "herr_ober",
+          "text": "What is—MEIN GOTT! EIN PFERD!"
+        }
+      ]
+    },
+    
+    "cake_heist_sequence": {
+      "event_id": "gustav_cake_heist",
+      "prerequisite": "gustav_entry_complete",
+      "duration_seconds": 15,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "camera_focus",
+          "target": "cake_display",
+          "duration_seconds": 2
+        },
+        {
+          "time": 0.5,
+          "action": "npc_animation",
+          "npc": "gustav",
+          "animation": "examine_cakes_thoughtfully"
+        },
+        {
+          "time": 2,
+          "action": "dialogue",
+          "speaker": "bradley",
+          "text": "Is he... choosing?"
+        },
+        {
+          "time": 3,
+          "action": "npc_animation",
+          "npc": "gustav",
+          "animation": "select_sachertorte"
+        },
+        {
+          "time": 3.5,
+          "action": "sfx",
+          "sound": "glass_case_open"
+        },
+        {
+          "time": 4,
+          "action": "npc_animation",
+          "npc": "gustav",
+          "animation": "eat_entire_cake",
+          "duration_seconds": 4
+        },
+        {
+          "time": 4,
+          "action": "dialogue",
+          "speaker": "herr_ober",
+          "text": "NEIN! NEIN! DAS PFERD FRISST DIE TORTE!"
+        },
+        {
+          "time": 5,
+          "action": "damage_event",
+          "item": "full_sachertorte",
+          "amount_sov": 85,
+          "sfx": "horse_eating_disturbing"
+        },
+        {
+          "time": 6,
+          "action": "comedy_stinger",
+          "sound": "cash_register_ching"
+        },
+        {
+          "time": 7,
+          "action": "npc_animation",
+          "npc": "gustav",
+          "animation": "satisfied_chewing"
+        },
+        {
+          "time": 8,
+          "action": "dialogue",
+          "speaker": "lord_pilsner",
+          "text": "Okay, we need to grab him NOW—"
+        },
+        {
+          "time": 9,
+          "action": "npc_animation",
+          "npc": "gustav",
+          "animation": "judgmental_stare_at_bros"
+        },
+        {
+          "time": 10,
+          "action": "sfx",
+          "sound": "single_low_cello_note"
+        }
+      ]
+    },
+    
+    "chase_sequence": {
+      "event_id": "cafe_chase_phase",
+      "prerequisite": "cake_heist_complete",
+      "gameplay_mode": "chase_with_obstacles",
+      "duration_seconds": 20,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "gameplay_start",
+          "type": "chase",
+          "player_control": true,
+          "target": "gustav"
+        },
+        {
+          "time": 0,
+          "action": "npc_flee",
+          "npc": "gustav",
+          "path": "through_tables_toward_kitchen"
+        },
+        {
+          "time": 2,
+          "action": "obstacle_event",
+          "type": "table_collision",
+          "npc": "gustav"
+        },
+        {
+          "time": 2.2,
+          "action": "damage_event",
+          "item": "marble_table_1",
+          "amount_sov": 40,
+          "sfx": "marble_crash"
+        },
+        {
+          "time": 3,
+          "action": "npc_evacuation",
+          "npcs": ["tourist_couple", "poseur"],
+          "exit": "front_door"
+        },
+        {
+          "time": 4,
+          "action": "dialogue_ambient",
+          "speaker": "herr_ober",
+          "text": "THE TABLES! MY TABLES!"
+        },
+        {
+          "time": 5,
+          "action": "obstacle_event",
+          "type": "near_miss",
+          "object": "chandelier"
+        },
+        {
+          "time": 5.5,
+          "action": "dialogue",
+          "speaker": "chadwick",
+          "text": "Watch the chandelier!"
+        },
+        {
+          "time": 6,
+          "action": "sfx",
+          "sound": "chandelier_sway_crystal"
+        },
+        {
+          "time": 7,
+          "action": "obstacle_event",
+          "type": "table_collision",
+          "npc": "gustav"
+        },
+        {
+          "time": 7.2,
+          "action": "damage_event",
+          "item": "marble_table_2",
+          "amount_sov": 40,
+          "sfx": "marble_crash"
+        },
+        {
+          "time": 8,
+          "action": "npc_path",
+          "npc": "gustav",
+          "destination": "cake_display_secondary"
+        },
+        {
+          "time": 9,
+          "action": "npc_animation",
+          "npc": "gustav",
+          "animation": "grab_opera_cake_slice"
+        },
+        {
+          "time": 9.5,
+          "action": "damage_event",
+          "item": "opera_cake_slice",
+          "amount_sov": 22,
+          "sfx": "quick_bite"
+        },
+        {
+          "time": 10,
+          "action": "dialogue",
+          "speaker": "sous_chef_anna",
+          "text": "That horse has better taste than most tourists."
+        },
+        {
+          "time": 11,
+          "action": "npc_path",
+          "npc": "gustav",
+          "destination": "kitchen_door"
+        }
+      ]
+    },
+    
+    "kitchen_chaos": {
+      "event_id": "kitchen_through_sequence",
+      "prerequisite": "chase_sequence_kitchen_door",
+      "duration_seconds": 8,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "npc_enter",
+          "npc": "gustav",
+          "location": "kitchen"
+        },
+        {
+          "time": 0.5,
+          "action": "sfx",
+          "sound": "pots_crashing"
+        },
+        {
+          "time": 1,
+          "action": "dialogue_offscreen",
+          "speaker": "chef_klaus",
+          "text": "A HORSE! IN MY KITCHEN!",
+          "language_note": "German with subtitles"
+        },
+        {
+          "time": 2,
+          "action": "sfx",
+          "sound": "more_pots_chef_screaming"
+        },
+        {
+          "time": 3,
+          "action": "dialogue_offscreen",
+          "speaker": "chef_klaus",
+          "text": "GET OUT! RAUS! RAUS!"
+        },
+        {
+          "time": 4,
+          "action": "camera_shake",
+          "intensity": "medium",
+          "duration_seconds": 1
+        },
+        {
+          "time": 5,
+          "action": "sfx",
+          "sound": "back_door_crash"
+        },
+        {
+          "time": 6,
+          "action": "npc_exit",
+          "npc": "gustav",
+          "exit_point": "kitchen_back_door",
+          "destination": "alley_to_opera_backstage"
+        }
+      ]
+    },
+    
+    "aftermath_sequence": {
+      "event_id": "cafe_aftermath",
+      "prerequisite": "gustav_exits_kitchen",
+      "duration_seconds": 25,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "music_change",
+          "track": "aftermath_melancholy.ogg"
+        },
+        {
+          "time": 1,
+          "action": "camera_pan",
+          "view": "destruction_survey"
+        },
+        {
+          "time": 3,
+          "action": "npc_animation",
+          "npc": "herr_ober",
+          "animation": "survey_damage_horror"
+        },
+        {
+          "time": 5,
+          "action": "dialogue",
+          "speaker": "herr_ober",
+          "text": "In thirty years of service, I have never... a HORSE. A HORSE ate the Sachertorte."
+        },
+        {
+          "time": 8,
+          "action": "ui_display",
+          "element": "damage_total",
+          "value": 340,
+          "sfx": "final_register_ching"
+        },
+        {
+          "time": 10,
+          "action": "npc_animation",
+          "npc": "herr_ober",
+          "animation": "turns_to_bros_fury"
+        },
+        {
+          "time": 11,
+          "action": "dialogue",
+          "speaker": "herr_ober",
+          "text": "340 Sovs. You will pay this. Now. Or I call the Polizei."
+        },
+        {
+          "time": 14,
+          "action": "dialogue_choice",
+          "options": [
+            {
+              "text": "We'll catch the horse and pay you back!",
+              "response_type": "promise_payment",
+              "result": {
+                "debt_logged": true,
+                "amount": 340,
+                "quest_continues": true,
+                "herr_ober_response": "You have 48 hours. I know where tourists stay."
+              }
+            },
+            {
+              "text": "Here's 340 Sovs right now.",
+              "response_type": "immediate_payment",
+              "requirement": {"Sov": 340},
+              "result": {
+                "debt_cleared": true,
+                "set_flag": {"debt_relief_claimed": true},
+                "flag_note": "Consumed-and-moot. The cafe line is discharged; the 170 Sovs relief has nothing to reduce and does not convert to cash or credit.",
+                "quest_continues": true,
+                "herr_ober_response": "...acceptable. Now GET OUT and catch that horse!"
+              }
+            },
+            {
+              "text": "That horse doesn't belong to us!",
+              "response_type": "denial",
+              "result": {
+                "triggers": "hans_jurgen_arrives",
+                "debt_split": true,
+                "amount_owed": 170,
+                "set_flag": {"debt_relief_claimed": true},
+                "disables": "hans_jurgen_insurance_170_at_stadtpark",
+                "flag_note": "AUTHORITATIVE: this halving IS the single 170 Sovs relief. It consumes debt_relief_claimed, so Hans-Jurgen's 170 Sovs insurance payout at Stadtpark must NOT also fire. His separate 500 Sovs Path A contribution is unaffected and still stacks."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    
+    "hans_jurgen_intervention": {
+      "event_id": "hans_jurgen_cafe_arrival",
+      "prerequisite": "denial_dialogue_choice",
+      "duration_seconds": 15,
+      "sequence": [
+        {
+          "time": 0,
+          "action": "sfx",
+          "sound": "door_burst_open"
+        },
+        {
+          "time": 0.5,
+          "action": "npc_enter",
+          "npc": "hans_jurgen",
+          "animation": "panicked_arrival"
+        },
+        {
+          "time": 1,
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "GUSTAV! He was here?! Where did he go?!"
+        },
+        {
+          "time": 3,
+          "action": "npc_animation",
+          "npc": "herr_ober",
+          "animation": "points_at_hans_jurgen"
+        },
+        {
+          "time": 3.5,
+          "action": "dialogue",
+          "speaker": "herr_ober",
+          "text": "YOUR horse? YOU pay!"
+        },
+        {
+          "time": 5,
+          "action": "dialogue",
+          "speaker": "hans_jurgen",
+          "text": "I... my insurance... it covers half. Maybe. I think."
+        },
+        {
+          "time": 7,
+          "action": "ui_update",
+          "element": "debt_display",
+          "new_value": 170,
+          "note": "Hans-Jürgen's insurance covers 170 Sovs. This is the single debt relief being consumed here — debt_relief_claimed is now true and the Stadtpark insurance payout is disabled. Do not apply a second 170 Sovs."
+        },
+        {
+          "time": 9,
+          "action": "dialogue",
+          "speaker": "herr_ober",
+          "text": "170 Sovs from you. 170 Sovs from... these Americans. GO. Catch the horse. PAY ME."
+        }
+      ]
+    },
+    
+    "exit_to_next_location": {
+      "event_id": "proceed_to_opera_backstage",
+      "prerequisite": "aftermath_complete",
+      "sequence": [
+        {
+          "time": 0,
+          "action": "dialogue",
+          "speaker": "lord_pilsner",
+          "text": "Which way did he go?"
+        },
+        {
+          "time": 2,
+          "action": "dialogue",
+          "speaker": "chef_klaus",
+          "text": "Through the alley! Toward the opera house! Thirty years. Thirty years no horse in my kitchen..."
+        },
+        {
+          "time": 5,
+          "action": "quest_marker",
+          "destination": "sinfonia_opera_backstage_01",
+          "marker_text": "Follow Gustav"
+        },
+        {
+          "time": 6,
+          "action": "location_unlock",
+          "location": "sinfonia_opera_backstage_01",
+          "access_point": "kitchen_alley"
+        }
+      ]
+    }
+  },
+  
+  "return_events": {
+    "post_quest_return_unpaid": {
+      "event_id": "cafe_return_debt_active",
+      "trigger_type": "enter_location_post_quest",
+      "condition": "debt_unpaid",
+      "sequence": [
+        {
+          "time": 0,
+          "action": "npc_intercept",
+          "npc": "herr_ober",
+          "position": "door"
+        },
+        {
+          "time": 0.5,
+          "action": "dialogue",
+          "speaker": "herr_ober",
+          "text": "You. OUT. Until the [remaining_debt] Sovs is paid, you are not welcome."
+        },
+        {
+          "time": 2,
+          "action": "dialogue_choice",
+          "options": [
+            {
+              "text": "Here's [amount] Sovs.",
+              "response_type": "partial_payment",
+              "interface": "payment_slider"
+            },
+            {
+              "text": "We'll come back later.",
+              "response_type": "leave",
+              "result": "exit_location"
+            }
+          ]
+        }
+      ]
+    },
+    
+    "post_quest_return_paid": {
+      "event_id": "cafe_return_valued_patron",
+      "trigger_type": "enter_location_post_quest",
+      "condition": "debt_paid",
+      "sequence": [
+        {
+          "time": 0,
+          "action": "npc_approach",
+          "npc": "herr_ober",
+          "animation": "reluctant_respect"
+        },
+        {
+          "time": 1,
+          "action": "dialogue",
+          "speaker": "herr_ober",
+          "text": "...you returned. And you paid. This way. We have a new item. 'The Gustav.' Horse-shaped. You will appreciate the irony."
+        }
+      ]
+    }
+  },
+  
+  "ambient_events": {
+    "intellectual_observation": {
+      "event_id": "intellectual_commentary",
+      "trigger_type": "post_quest_first_return",
+      "npc": "cafe_intellectual_01",
+      "dialogue": "I've been coming here for 40 years. This is the most exciting thing that's ever happened.",
+      "delivery": "complete_deadpan"
+    }
+  },
+  
+  "minigame_events": {
+    "chess_challenge": {
+      "event_id": "chess_minigame",
+      "trigger_type": "interact_with_chess_table",
+      "availability": "pre_quest_only",
+      "npc": "cafe_chess_player_01",
+      "minigame_parameters": {
+        "type": "chess_simplified",
+        "difficulty": "hard",
+        "time_limit_seconds": 180
+      },
+      "rewards": {
+        "win": {
+          "item": "chess_notation_card",
+          "charm": 2,
+          "dialogue": "...impressive. I underestimated you. Here, take this."
+        },
+        "lose": {
+          "status": "intellectually_humbled",
+          "duration_minutes": 30,
+          "dialogue": "Checkmate in twelve moves. Perhaps try checkers?"
+        }
+      }
+    },
+    
+    "german_ordering": {
+      "event_id": "order_in_german_challenge",
+      "trigger_type": "select_german_order_option",
+      "minigame_parameters": {
+        "type": "pronunciation_rhythm",
+        "difficulty": "medium",
+        "phrase": "Ein Melange, bitte",
+        "timing_windows": 5
+      },
+      "rewards": {
+        "success": {
+          "price_modifier": 0.9,
+          "charm": 1,
+          "herr_ober_dialogue": "Ein Melange. Very good. Perhaps there is hope."
+        },
+        "failure": {
+          "status": "humiliated_by_waiter",
+          "herr_ober_dialogue": "...'eye-n meh-LAWN-gay'? No. Just... no. I will bring you coffee."
+        }
+      }
+    }
+  }
+}

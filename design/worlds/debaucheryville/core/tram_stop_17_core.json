@@ -1,0 +1,127 @@
+{
+  "location_id": "debaucheryville_transit_tram_stop_17_01",
+  "display_name": "Tram Stop #17",
+  "satirical_subtitle": "The 17 Should Be Here Any Moment. The Schedule Says... Ah, The Schedule Is From 1994.",
+  "world": "debaucheryville",
+  "zone": "central_district",
+  "location_type": "ambient_location",
+  "sub_types": ["recurring_npc_hub", "information_point", "optional_quest"],
+  
+  "access": {
+    "time_restrictions": {
+      "always_accessible": true
+    },
+    "stat_requirements": null,
+    "item_requirements": null,
+    "previous_locations": null,
+    "special_conditions": null
+  },
+  
+  "exits": [
+    {
+      "exit_id": "to_absinthe_arcade",
+      "destination": "debaucheryville_nightlife_absinthe_arcade_01",
+      "direction": "south",
+      "distance": "1_block",
+      "requirements": null
+    },
+    {
+      "exit_id": "to_old_town",
+      "destination": "debaucheryville_gilded_square_astronomical_cockup_square_01",
+      "direction": "north",
+      "distance": "2_blocks",
+      "requirements": null
+    },
+    {
+      "exit_id": "to_metro_station",
+      "destination": "debaucheryville_transit_metro_station_01",
+      "direction": "east",
+      "distance": "2_blocks",
+      "requirements": null
+    },
+    {
+      "exit_id": "continue_walking",
+      "destination": "any_direction",
+      "direction": "any",
+      "requirements": null
+    }
+  ],
+  
+  "atmosphere": {
+    "primary_mood": "melancholic_absurdist",
+    "secondary_moods": ["contemplative", "oddly_peaceful", "bittersweet"],
+    "crowd_level": "low",
+    "noise_level": "medium",
+    "lighting": {
+      "day": "natural_dappled_through_shelter",
+      "evening": "warm_streetlight_candle_flicker",
+      "night": "atmospheric_streetlight_shadows"
+    }
+  },
+  
+  "visual_theme": {
+    "primary_colors": ["#2E8B57", "#708090"],
+    "accent_colors": ["#A9A9A9", "#FF8C00", "#D2B48C"],
+    "architectural_style": "classic_european_tram_shelter",
+    "key_visual_elements": [
+      "weathered_tram_shelter",
+      "rusted_17_sign",
+      "1994_timetable",
+      "progressive_shrine",
+      "pigeon_colony",
+      "jiri_becoming_landmark"
+    ]
+  },
+  
+  "satirical_design": {
+    "primary_target": "absurdist_futile_persistence",
+    "secondary_targets": [
+      "tourists_treating_locals_as_info_kiosks",
+      "sunk_cost_fallacy",
+      "bureaucratic_futility",
+      "blind_optimism"
+    ],
+    "buffoon_delusion": {
+      "what_bros_think": "Friendly local transit expert who knows everything about the city",
+      "what_actually_happens": "Man frozen in place for 20+ years by grief and stubbornness"
+    },
+    "key_comedy_beat": "bros_never_realize_hes_been_stuck_there_for_decades"
+  },
+  
+  "state_tracking": {
+    "visit_count": 0,
+    "current_mood_phase": "optimistic",
+    "dialogue_index_per_phase": {
+      "optimistic": 0,
+      "philosophical": 0,
+      "bitter": 0,
+      "conspiracy": 0,
+      "existential": 0
+    },
+    "night_vigil_completed": false,
+    "jiris_blessing_acquired": false,
+    "shrine_stage": 0,
+    "asked_directions_count": 0,
+    "sat_with_jiri": false,
+    "night_vigil_available": false
+  },
+  
+  "progressive_states": {
+    "visit_thresholds": {
+      "optimistic": [1, 3],
+      "philosophical": [4, 6],
+      "bitter": [7, 9],
+      "conspiracy": [10, 12],
+      "existential": [13, 999]
+    },
+    "night_vigil_unlock": 10,
+    "landmark_status": 13
+  },
+  
+  "performance": {
+    "target_fps": 60,
+    "max_draw_calls": 12,
+    "memory_budget_mb": 15,
+    "particle_limit": 20
+  }
+}

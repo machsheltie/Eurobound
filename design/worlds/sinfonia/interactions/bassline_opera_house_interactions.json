@@ -1,0 +1,388 @@
+{
+  "location_id": "sinfonia_bassline_opera_house_01",
+  
+  "npcs_present_by_zone": {
+    "lobby": [
+      "box_office_attendant_01",
+      "sinfonia_npc_opera_usher_01",
+      "coat_check_01",
+      "gift_shop_clerk_01",
+      "maestros_assistant_01"
+    ],
+    "auditorium": [
+      "sinfonia_npc_opera_usher_01",
+      "wandering_patrons"
+    ],
+    "backstage": [
+      "regisseur_hoffmann_01",
+      "stagehead_otto_01",
+      "prima_donna_adelheid_01",
+      "papageno_franz_01",
+      "stage_crew_generic"
+    ],
+    "dressing_rooms": [
+      "chorus_members",
+      "makeup_artist_01",
+      "dresser_01"
+    ],
+    "orchestra_pit": [
+      "maestro_von_strauss"
+    ]
+  },
+  
+  "interactive_objects": {
+    "lobby": [
+      {
+        "object_id": "performance_board",
+        "type": "readable",
+        "display_name": "Tonight's Performance Board",
+        "interaction_text": "Check today's programming",
+        "content": {
+          "current_show": "Die Zauberflöte (The Magic Flute)",
+          "time": "19:00",
+          "special_note": "DRESS REHEARSAL CLOSED TO PUBLIC",
+          "hint": "Backstage access may be... negotiable"
+        },
+        "touch_zone": {"x": 150, "y": 50, "width": 100, "height": 80}
+      },
+      {
+        "object_id": "mozart_portrait",
+        "type": "examinable_secret",
+        "display_name": "Portrait of Mozart",
+        "interaction_text": "Examine the composer's portrait",
+        "description": "Wolfgang Amadeus Mozart, looking smugly confident. The frame seems... loose.",
+        "secret_interaction": {
+          "trigger": "examine_closely",
+          "discovery": "hidden_switch_behind_frame",
+          "unlocks": "black_tie_backroom_entrance",
+          "hint_source": "coat_check_helga"
+        },
+        "touch_zone": {"x": 80, "y": 100, "width": 48, "height": 64}
+      },
+      {
+        "object_id": "beethoven_bust",
+        "type": "examinable",
+        "display_name": "Bust of Beethoven",
+        "interaction_text": "Pay respects to the master",
+        "description": "Ludwig van Beethoven, looking grumpy as always. Someone has left coins at the base.",
+        "interaction_effect": {
+          "action": "touch_for_luck",
+          "effect": {"luck": 1, "duration_battles": 3}
+        },
+        "touch_zone": {"x": 300, "y": 120, "width": 32, "height": 48}
+      },
+      {
+        "object_id": "maestro_bust",
+        "type": "examinable",
+        "display_name": "Bust of Maestro Vice von Strauss",
+        "interaction_text": "Examine the current artistic director",
+        "description": "Self-commissioned, naturally. The plaque reads: 'Conducting Excellence Since 2015.' The gold is already flaking.",
+        "lore_unlock": "maestro_ego_hint",
+        "touch_zone": {"x": 350, "y": 120, "width": 32, "height": 48}
+      },
+      {
+        "object_id": "donation_box",
+        "type": "transaction",
+        "display_name": "Arts Patronage Donation Box",
+        "interaction_text": "Support the arts",
+        "options": [
+          {"amount": 5, "result": {"charm": 1, "duration_hours": 1}},
+          {"amount": 20, "result": {"charm": 2, "duration_hours": 2}},
+          {"amount": 100, "result": {"charm": 3, "duration_hours": 4, "patron_status": true}}
+        ],
+        "touch_zone": {"x": 250, "y": 200, "width": 40, "height": 32}
+      },
+      {
+        "object_id": "wifi_hotspot",
+        "type": "connectivity",
+        "display_name": "Opera House Public Wi-Fi",
+        "interaction_text": "Connect to network",
+        "icq_content": {
+          "thread": "art_world_gossip",
+          "hints": ["art_theft_investigation", "maestro_scandal"],
+          "special": "mom_call_available"
+        },
+        "touch_zone": {"x": 200, "y": 250, "width": 48, "height": 48}
+      },
+      {
+        "object_id": "gift_shop_counter",
+        "type": "shop_interface",
+        "display_name": "Gift Shop",
+        "interaction_text": "Browse overpriced souvenirs",
+        "vendor_id": "gift_shop_clerk_01",
+        "touch_zone": {"x": 40, "y": 180, "width": 80, "height": 60}
+      },
+      {
+        "object_id": "box_office_window",
+        "type": "shop_interface",
+        "display_name": "Box Office",
+        "interaction_text": "Purchase tickets",
+        "vendor_id": "box_office_attendant_01",
+        "touch_zone": {"x": 80, "y": 60, "width": 60, "height": 50}
+      }
+    ],
+    
+    "backstage": [
+      {
+        "object_id": "prop_rack_papageno",
+        "type": "searchable_destructible",
+        "display_name": "Papageno Props Rack",
+        "states": {
+          "intact": {
+            "description": "Bird heads, panpipes, and various Papageno accessories.",
+            "searchable_items": [
+              {"item": "panpipes_prop", "probability": 0.5},
+              {"item": "bird_seeds_handful", "probability": 0.8}
+            ]
+          },
+          "destroyed": {
+            "description": "Feathers everywhere. One bird head is definitely ruined.",
+            "damage_value": 150
+          }
+        },
+        "destruction_trigger": "gustav_collision_prop_storage",
+        "touch_zone": {"x": 80, "y": 100, "width": 48, "height": 64}
+      },
+      {
+        "object_id": "magic_flute_prop",
+        "type": "examinable_destructible",
+        "display_name": "The Magic Flute Prop",
+        "states": {
+          "intact": {
+            "description": "Gold-painted wooden flute. The 'magic' is mostly spray paint.",
+            "collectible": true,
+            "effect": {"performance": 2}
+          },
+          "destroyed": {
+            "description": "Snapped cleanly in half. Someone is going to cry.",
+            "damage_value": 200
+          }
+        },
+        "destruction_trigger": "gustav_collision_prop_storage",
+        "touch_zone": {"x": 120, "y": 110, "width": 32, "height": 24}
+      },
+      {
+        "object_id": "mechanical_snake",
+        "type": "prop_destructible",
+        "display_name": "Mechanical Serpent Prop",
+        "description": "Articulated snake for the Queen's entrance. Motors, pulleys, surprisingly expensive.",
+        "damage_value": 800,
+        "destruction_trigger": "gustav_stage_kick",
+        "dramatic_effect": true,
+        "touch_zone": {"x": 200, "y": 180, "width": 64, "height": 32}
+      },
+      {
+        "object_id": "costume_rack_queen",
+        "type": "searchable_destructible",
+        "display_name": "Queen of the Night Costumes",
+        "states": {
+          "intact": {
+            "searchable_items": [
+              {"item": "spare_tiara", "probability": 0.3},
+              {"item": "star_brooch", "probability": 0.5}
+            ]
+          },
+          "destroyed": {
+            "description": "Gustav got tangled. The main gown is torn. Feathers stick to his cape now.",
+            "damage_value": 200
+          }
+        },
+        "destruction_trigger": "gustav_costume_tangles",
+        "touch_zone": {"x": 150, "y": 140, "width": 48, "height": 80}
+      },
+      {
+        "object_id": "paper_forest_trees",
+        "type": "set_piece_destructible",
+        "display_name": "Papageno's Forest Set",
+        "description": "Papier-mâché trees. Eight months of art student labor.",
+        "damage_value": 250,
+        "quantity": 2,
+        "destruction_trigger": "gustav_stage_incursion",
+        "touch_zone": {"x": 250, "y": 160, "width": 80, "height": 100}
+      },
+      {
+        "object_id": "starry_night_backdrop",
+        "type": "set_piece_destructible",
+        "display_name": "Queen's Starry Domain Backdrop",
+        "description": "30-foot painted backdrop. Stars hand-applied. Irreplaceable on short notice.",
+        "damage_value": 400,
+        "destruction_trigger": "gustav_cape_catches_rigging",
+        "avoidable": {
+          "condition": "follow_papageno",
+          "saves_amount": 400
+        },
+        "touch_zone": {"x": 300, "y": 50, "width": 120, "height": 200}
+      },
+      {
+        "object_id": "rigging_controls",
+        "type": "puzzle_element",
+        "display_name": "Fly System Controls",
+        "interaction_text": "Operate the rigging",
+        "functions": [
+          {"action": "lower_backdrop", "effect": "visual_change"},
+          {"action": "raise_sandbag", "effect": "trap_trigger"},
+          {"action": "emergency_curtain", "effect": "blocks_gustav_path"}
+        ],
+        "skill_check": {"stat": "intelligence", "threshold": 2},
+        "touch_zone": {"x": 50, "y": 200, "width": 32, "height": 48}
+      },
+      {
+        "object_id": "loading_dock_door",
+        "type": "portal",
+        "display_name": "Loading Dock",
+        "description": "Large exterior door. Currently partially open.",
+        "connections": {
+          "external": "kaffeehaus_row_alley",
+          "quest_entry": "fiaker_fiasco_phase_3"
+        },
+        "touch_zone": {"x": 20, "y": 300, "width": 64, "height": 48}
+      },
+      {
+        "object_id": "stage_entrance_left",
+        "type": "portal",
+        "display_name": "Stage Left Wing",
+        "description": "Entrance to the stage proper. Can see performance from here.",
+        "connections": {
+          "to_stage": true,
+          "observation_point": true
+        },
+        "touch_zone": {"x": 400, "y": 150, "width": 48, "height": 100}
+      }
+    ],
+    
+    "auditorium": [
+      {
+        "object_id": "royal_box",
+        "type": "examinable",
+        "display_name": "Imperial Royal Box",
+        "description": "Unused since 1918. Velvet rope, dust, and an odd sense of history.",
+        "lore_content": "The last emperor to sit here was Karl I. The cushions have not been cleaned since.",
+        "touch_zone": {"x": 250, "y": 50, "width": 60, "height": 40}
+      },
+      {
+        "object_id": "chandelier_main",
+        "type": "examinable_hazard",
+        "display_name": "Grand Chandelier",
+        "description": "2,000 crystals. Has never fallen. Yet.",
+        "boss_mechanic": "drops_during_crescendo_crush",
+        "touch_zone": {"x": 250, "y": 20, "width": 100, "height": 60}
+      }
+    ],
+    
+    "dressing_rooms": [
+      {
+        "object_id": "star_dressing_room_3",
+        "type": "searchable",
+        "display_name": "Dressing Room 3 (Maestro's)",
+        "description": "Personal items, photographs... and a stack of love letters.",
+        "searchable_items": [
+          {"item": "love_letters", "probability": 1.0, "quest_item": true},
+          {"item": "expensive_cologne", "probability": 0.5}
+        ],
+        "gossip_unlock": "maestro_scandal",
+        "touch_zone": {"x": 150, "y": 100, "width": 60, "height": 50}
+      },
+      {
+        "object_id": "makeup_station",
+        "type": "service",
+        "display_name": "Makeup Station",
+        "operator": "makeup_artist_01",
+        "services": [
+          {"name": "Stage Disguise", "cost": 20, "effect": {"stealth": 2, "charm": 1, "duration_hours": 2}},
+          {"name": "Remove Embarrassed", "cost": 10, "effect": {"removes_status": "embarrassed"}}
+        ],
+        "touch_zone": {"x": 80, "y": 80, "width": 48, "height": 40}
+      }
+    ]
+  },
+  
+  "environmental_interactions": [
+    {
+      "trigger_id": "eavesdrop_rehearsal",
+      "type": "information_gather",
+      "zone": "backstage",
+      "location": "stage_wings",
+      "content": {
+        "gossip_pool": [
+          {"topic": "maestro_affair", "probability": 0.3},
+          {"topic": "baroness_ballroom_invitation", "probability": 0.25},
+          {"topic": "black_tie_backroom_stakes", "probability": 0.2}
+        ]
+      }
+    },
+    {
+      "trigger_id": "watch_rehearsal",
+      "type": "skill_boost",
+      "zone": "auditorium",
+      "effect": {
+        "status": "artistic_appreciation",
+        "performance": 2,
+        "duration_hours": 1
+      }
+    },
+    {
+      "trigger_id": "bassline_dance_floor",
+      "type": "bravado_boost",
+      "zone": "orchestra_pit",
+      "time_restriction": "23:00-04:00",
+      "effect": {
+        "bravado": 2,
+        "duration": "while_in_zone"
+      }
+    }
+  ],
+  
+  "selfie_props": [
+    {
+      "prop_id": "grand_staircase",
+      "zone": "lobby",
+      "display_name": "Grand Staircase Glamour",
+      "bravado_boost": 2,
+      "gallery_entry": true
+    },
+    {
+      "prop_id": "chandelier_under",
+      "zone": "lobby",
+      "display_name": "Chandelier Opulence",
+      "bravado_boost": 2,
+      "gallery_entry": true
+    },
+    {
+      "prop_id": "costume_selfie",
+      "zone": "dressing_rooms",
+      "display_name": "Backstage Costume Photo",
+      "bravado_boost": 3,
+      "requirement": {"charm": 2},
+      "gallery_entry": true
+    },
+    {
+      "prop_id": "chaos_aftermath",
+      "zone": "backstage",
+      "display_name": "Scene of Cultural Destruction",
+      "bravado_boost": 4,
+      "requirement": "quest_state_post_fiaker_fiasco",
+      "gallery_entry": true
+    }
+  ],
+  
+  "hidden_interactions": [
+    {
+      "id": "black_tie_backroom_entrance",
+      "zone": "lobby",
+      "discovery_method": "mozart_portrait_secret_or_hint",
+      "unlocks": "sinfonia_black_tie_backroom_01"
+    },
+    {
+      "id": "orchestra_pit_shortcut",
+      "zone": "backstage",
+      "discovery_method": "otto_hint",
+      "effect": "faster_gustav_pursuit"
+    },
+    {
+      "id": "papageno_alternate_route",
+      "zone": "backstage",
+      "discovery_method": "follow_papageno_charm_2",
+      "effect": "avoid_backdrop_damage_save_400"
+    }
+  ]
+}

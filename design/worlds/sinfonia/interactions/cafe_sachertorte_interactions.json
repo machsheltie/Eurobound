@@ -1,0 +1,284 @@
+{
+  "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+  
+  "npcs_present": [
+    "herr_ober_01",
+    "cafe_regular_intellectual_01",
+    "cafe_regular_chess_player_01",
+    "cafe_regular_poseur_01",
+    "tourist_couple_01",
+    "kitchen_staff_01",
+    "kitchen_staff_02"
+  ],
+  
+  "interactive_objects": [
+    {
+      "object_id": "cake_display_case",
+      "type": "examinable_damageable",
+      "display_name": "Cake Display Case",
+      "interaction_text": "Examine the legendary cake display",
+      "description": "A 6-foot glass case, temperature-controlled, displaying 12 different cakes on silver pedestals. The Sachertorte sits in the center position like a crown jewel.",
+      "states": {
+        "pre_quest": {
+          "description": "Perfect cakes under perfect glass. Price cards in elegant calligraphy.",
+          "contents": ["sachertorte", "opera_cake", "apfelstrudel", "gugelhupf", "dobos_torte", "linzer_torte"]
+        },
+        "during_quest": {
+          "description": "Glass door swinging open. Sachertorte conspicuously absent. Crumbs everywhere.",
+          "contents": ["opera_cake_half_eaten", "scattered_plates"]
+        },
+        "post_quest": {
+          "description": "Repaired with new 'SECURED' label. Memorial photo of Gustav visible.",
+          "contents": ["sachertorte_replacement", "opera_cake", "apfelstrudel", "gustav_cookie"]
+        }
+      },
+      "touch_zone": {"x": 100, "y": 40, "width": 60, "height": 40}
+    },
+    {
+      "object_id": "menu_stand",
+      "type": "readable",
+      "display_name": "Café Menu",
+      "interaction_text": "Study the menu",
+      "description": "Elegant leather-bound menu. Prices in suspiciously small font.",
+      "content": {
+        "beverages": [
+          {"item": "Kleiner Brauner", "price": 5, "description": "Small coffee, served with judgment"},
+          {"item": "Großer Brauner", "price": 7, "description": "Large coffee, slightly less judgment"},
+          {"item": "Melange", "price": 8, "description": "Sinfonian latte, foam artistically peaked"},
+          {"item": "Einspänner", "price": 9, "description": "Coffee with excessive whipped cream"}
+        ],
+        "cakes": [
+          {"item": "Sachertorte Slice", "price": 18, "description": "The famous chocolate cake. Non-negotiable."},
+          {"item": "Apfelstrudel", "price": 14, "description": "Apple strudel, warm upon request (2 Sovs extra)"},
+          {"item": "Opera Cake", "price": 22, "description": "Layers of sophistication"},
+          {"item": "Gugelhupf", "price": 12, "description": "Traditional ring cake"}
+        ],
+        "hidden_charges_visible": false,
+        "charm_check_to_notice": 3
+      },
+      "touch_zone": {"x": 20, "y": 100, "width": 40, "height": 60}
+    },
+    {
+      "object_id": "newspaper_stand",
+      "type": "examinable",
+      "display_name": "Newspaper Stand",
+      "interaction_text": "Browse the newspapers",
+      "description": "Wooden holder with German newspapers. Der Standard, Die Presse, and Kronen Zeitung available.",
+      "interaction_result": {
+        "pre_read": "You can't read German, but holding a newspaper here feels very sophisticated.",
+        "post_read": "You still can't read German, but now you've been holding it for 10 minutes.",
+        "effect": {"charm": 0, "bravado": 1, "duration_minutes": 30}
+      },
+      "touch_zone": {"x": 60, "y": 20, "width": 32, "height": 48}
+    },
+    {
+      "object_id": "chess_set_table",
+      "type": "minigame_trigger",
+      "display_name": "Chess Table",
+      "interaction_text": "Sit at the chess table",
+      "description": "Marble table with an elaborate chess set. A woman sits waiting for an opponent.",
+      "minigame": {
+        "type": "chess_simplified",
+        "opponent": "cafe_regular_chess_player_01",
+        "difficulty": "hard",
+        "rewards": {
+          "win": {"charm": 2, "item": "chess_notation_card"},
+          "lose": {"charm": -1, "status": "intellectually_humbled"}
+        }
+      },
+      "availability": "pre_quest_only",
+      "touch_zone": {"x": 160, "y": 140, "width": 48, "height": 48}
+    },
+    {
+      "object_id": "emperors_letter",
+      "type": "examinable",
+      "display_name": "Emperor's Letter",
+      "interaction_text": "Examine the framed letter",
+      "description": "Framed letter allegedly from Emperor Franz Josef praising the café's Sachertorte.",
+      "inspection_options": [
+        {
+          "choice": "Admire the letter",
+          "result": "It certainly looks old. Very impressive. Probably.",
+          "effect": null
+        },
+        {
+          "choice": "Examine closely (Charm 4+)",
+          "requirement": {"charm": 4},
+          "result": "The signature looks suspiciously modern. The 'aged' paper has a suspiciously consistent patina. This is almost certainly fake.",
+          "effect": {"unlocks": "fake_history_gossip"}
+        }
+      ],
+      "touch_zone": {"x": 20, "y": 40, "width": 32, "height": 48}
+    },
+    {
+      "object_id": "patio_door",
+      "type": "portal_damageable",
+      "display_name": "Patio Door",
+      "states": {
+        "pre_quest": {
+          "description": "Glass door leading to outdoor seating. Currently closed.",
+          "passable": true
+        },
+        "during_quest": {
+          "description": "Hanging off its hinges after Gustav's dramatic entrance.",
+          "passable": true,
+          "damage_value_sov": 0
+        },
+        "post_quest": {
+          "description": "Repaired with reinforced hinges. 'NO HORSES' sticker now present.",
+          "passable": true
+        }
+      },
+      "touch_zone": {"x": 260, "y": 140, "width": 32, "height": 64}
+    },
+    {
+      "object_id": "patio_umbrella_stand",
+      "type": "destructible",
+      "display_name": "Umbrella Stand",
+      "description": "Ornate brass umbrella stand. Currently holding three parasols.",
+      "damage_value_sov": 15,
+      "destruction_trigger": "gustav_entry",
+      "touch_zone": {"x": 280, "y": 120, "width": 24, "height": 32}
+    },
+    {
+      "object_id": "marble_table_01",
+      "type": "destructible",
+      "display_name": "Marble Table",
+      "description": "Antique marble-topped café table. Very heavy. Very expensive.",
+      "damage_value_sov": 40,
+      "destruction_trigger": "gustav_chase_phase",
+      "touch_zone": {"x": 80, "y": 120, "width": 32, "height": 32}
+    },
+    {
+      "object_id": "marble_table_02",
+      "type": "destructible",
+      "display_name": "Marble Table",
+      "description": "Another antique marble-topped café table. Equally expensive.",
+      "damage_value_sov": 40,
+      "destruction_trigger": "gustav_chase_phase",
+      "touch_zone": {"x": 140, "y": 160, "width": 32, "height": 32}
+    },
+    {
+      "object_id": "patio_table_outdoor",
+      "type": "destructible",
+      "display_name": "Patio Table",
+      "description": "Wrought-iron patio table with matching chairs.",
+      "damage_value_sov": 85,
+      "destruction_trigger": "gustav_entry",
+      "touch_zone": {"x": 280, "y": 180, "width": 40, "height": 40}
+    },
+    {
+      "object_id": "kitchen_door",
+      "type": "portal",
+      "display_name": "Kitchen Door",
+      "description": "Swinging door to the kitchen. Staff only.",
+      "accessibility": {
+        "normal": false,
+        "during_chase": "gustav_exit_point",
+        "post_quest": false
+      },
+      "touch_zone": {"x": 220, "y": 40, "width": 24, "height": 48}
+    },
+    {
+      "object_id": "chandelier_main",
+      "type": "hazard",
+      "display_name": "Crystal Chandelier",
+      "description": "Original 1890s crystal chandelier. Priceless. Fragile. Still hanging.",
+      "damage_value_sov": 2000,
+      "destruction_trigger": null,
+      "near_miss_during": "gustav_chase",
+      "near_miss_dialogue": "The chandelier sways dangerously but holds. Herr Ober exhales audibly.",
+      "position": {"x": 120, "y": 20}
+    }
+  ],
+  
+  "environmental_interactions": [
+    {
+      "trigger_id": "order_food_drink",
+      "type": "transaction",
+      "npc_required": "herr_ober_01",
+      "interface": "ordering_menu",
+      "modifiers_applied": ["tourist_detection", "german_order_discount", "charm_discount"],
+      "availability": "pre_quest_or_post_quest_paid"
+    },
+    {
+      "trigger_id": "eavesdrop_patrons",
+      "type": "information_gather",
+      "requirement": null,
+      "locations": ["table_near_regulars", "service_counter"],
+      "gossip_pool": [
+        {"topic": "black_tie_backroom", "hint": "entry_requirements", "probability": 0.3},
+        {"topic": "baroness_ballroom", "hint": "location", "probability": 0.2},
+        {"topic": "opera_scandal", "hint": "maestro_secrets", "probability": 0.25},
+        {"topic": "cafe_history_fake", "hint": "letter_forgery", "probability": 0.15}
+      ]
+    },
+    {
+      "trigger_id": "take_cafe_selfie",
+      "type": "bravado_boost",
+      "requirement": {"has_ordered": true},
+      "setup": "table_with_cake_coffee",
+      "effect": {
+        "bravado": 2,
+        "gallery_entry": "cultured_cafe_moment"
+      },
+      "dialogue": "You arrange the cake, coffee, and newspaper for maximum sophistication. This will look great online."
+    },
+    {
+      "trigger_id": "order_in_german",
+      "type": "skill_check_minigame",
+      "interface": "pronunciation_challenge",
+      "difficulty": "medium",
+      "rewards": {
+        "success": {"price_modifier": 0.9, "charm": 1, "herr_ober_respect": true},
+        "failure": {"status": "humiliated_by_waiter", "herr_ober_condescension": true}
+      }
+    }
+  ],
+  
+  "selfie_props": [
+    {
+      "prop_id": "cafe_table_setup",
+      "display_name": "Cultured Café Moment",
+      "requirement": {"has_ordered": true},
+      "bravado_boost": 2,
+      "gallery_entry": true
+    },
+    {
+      "prop_id": "cake_display_tourist",
+      "display_name": "Cake Window Shot",
+      "requirement": null,
+      "bravado_boost": 1,
+      "gallery_entry": true,
+      "states": {
+        "pre_quest": "Full cake display",
+        "post_quest": "With Gustav memorial photo visible"
+      }
+    },
+    {
+      "prop_id": "chaos_aftermath",
+      "display_name": "Scene of the Crime",
+      "requirement": {"quest_state": "post_quest"},
+      "bravado_boost": 3,
+      "gallery_entry": true,
+      "note": "Bros posing in destroyed café. Questionable taste."
+    }
+  ],
+  
+  "hidden_interactions": [
+    {
+      "id": "staff_schnapps_stash",
+      "location": "through_kitchen_door_window",
+      "discovery_method": "look_carefully",
+      "content": "Through the window, you can see a shelf of schnapps bottles in the break room. Staff 'breaks' explained.",
+      "unlocks": "seedy_underbelly_gossip"
+    },
+    {
+      "id": "trophy_case_gap",
+      "location": "trophy_display",
+      "discovery_method": "examine_closely",
+      "content": "The 'Best Sachertorte' awards stop at 1999. Twenty-four years of... what? Decline? Legal dispute? Humility? Unlikely.",
+      "unlocks": "cafe_decline_hint"
+    }
+  ]
+}

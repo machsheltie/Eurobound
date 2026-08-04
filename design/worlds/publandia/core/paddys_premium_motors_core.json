@@ -1,0 +1,125 @@
+{
+  "location_id": "publandia_outskirts_paddys_premium_motors_01",
+  "display_name": "Paddy's Premium Motors",
+  "satirical_subtitle": "Ye'll Be Grand. That's What They All Say.",
+  "world": "publandia",
+  "zone": "outskirts_district",
+  "location_type": "service_shop",
+  "sub_types": ["car_rental", "quest_trigger", "comedy_set_piece"],
+  
+  "access": {
+    "time_restrictions": {
+      "always_accessible": false,
+      "open_time": "08:00",
+      "close_time": "20:00"
+    },
+    "stat_requirements": null,
+    "item_requirements": null,
+    "previous_locations": ["publandia_arrival"],
+    "special_conditions": null
+  },
+  
+  "exits": [
+    {
+      "exit_id": "to_cloverleaf",
+      "destination": "publandia_outskirts_cloverleaf_roundabout_01",
+      "direction": "east",
+      "distance": "1km",
+      "requirements": "rented_car",
+      "note": "Triggers quest: The Cloverleaf of Confusion"
+    },
+    {
+      "exit_id": "to_city_center",
+      "destination": "publandia_central_cobblestone_market_01",
+      "direction": "west",
+      "distance": "3km",
+      "requirements": null
+    },
+    {
+      "exit_id": "to_countryside",
+      "destination": "publandia_country_roads",
+      "direction": "north_south",
+      "requirements": "rented_car",
+      "note": "All roads eventually lead to The Cloverleaf"
+    }
+  ],
+  
+  "atmosphere": {
+    "primary_mood": "resigned_fatalism",
+    "secondary_moods": ["ominous_foreshadowing", "dark_humor", "rural_irish"],
+    "crowd_level": "empty",
+    "noise_level": "low",
+    "lighting": {
+      "exterior": "overcast_gray_occasional_sun",
+      "interior": "flickering_fluorescent_gray_window_light"
+    }
+  },
+  
+  "visual_theme": {
+    "primary_colors": ["#228B22", "#8B4513"],
+    "accent_colors": ["#F5F5DC", "#FFD700", "#A9A9A9"],
+    "architectural_style": "converted_farmhouse_rural_irish",
+    "key_visual_elements": [
+      "hand_painted_signage",
+      "gravel_parking_lot",
+      "board_of_shame",
+      "incident_counter_stuck_on_zero",
+      "marys_photo",
+      "distant_cloverleaf_visible"
+    ]
+  },
+  
+  "weather": {
+    "default": "light_rain",
+    "variants": ["overcast", "drizzle", "rare_sun_break"],
+    "effects": {
+      "rain": "constant_light_particles",
+      "puddles": "reflective_on_gravel"
+    }
+  },
+  
+  "satirical_design": {
+    "primary_target": "american_driving_overconfidence",
+    "secondary_targets": [
+      "rental_car_hidden_fees",
+      "tourist_refusal_to_heed_warnings",
+      "gps_dependency",
+      "european_roundabout_complexity"
+    ],
+    "buffoon_delusion": {
+      "what_bros_think": "Simple car rental for authentic Irish countryside experience",
+      "what_actually_happens": "Fergus watches three more victims walk toward The Cloverleaf"
+    },
+    "key_comedy_beat": "fergus_explicitly_warns_them_they_dont_listen"
+  },
+  
+  "state_tracking": {
+    "visited": false,
+    "rented_car": false,
+    "which_vehicle": null,
+    "purchased_gps": false,
+    "purchased_insurance": false,
+    "purchased_rosary": false,
+    "purchased_map": false,
+    "cloverleaf_completed": false,
+    "fergus_respect_earned": false,
+    "examined_board_of_shame": false,
+    "examined_map": false,
+    "asked_about_wife": false,
+    "times_warned": 0
+  },
+  
+  "quest_triggers": {
+    "cloverleaf_of_confusion": {
+      "trigger": "rented_car AND exiting_toward_cloverleaf",
+      "quest_id": "publandia_sidequest_eternal_roundabout_01"
+    }
+  },
+  
+  "performance": {
+    "target_fps": 60,
+    "max_draw_calls": 15,
+    "memory_budget_mb": 20,
+    "particle_limit": 20
+  }
+}

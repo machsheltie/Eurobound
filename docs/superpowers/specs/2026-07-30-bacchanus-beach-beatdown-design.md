@@ -100,7 +100,7 @@ create `core/` and `environment/` subfolders as needed).
 - Cheap plastic gold kids' sheriff star: **"SUMMER VACATION TRIVIA CHAMP 2003"** in flaking
   glitter print. 2003 because Shady Productions bought a pallet of defective badges decades
   ago and no one has ever beaten the local contestant — until now.
-- **Deception:** actually a ~€0.008 party-favor badge that makes no sense as a trivia prize;
+- **Deception:** actually a ~0.008-Sov party-favor badge that makes no sense as a trivia prize;
   the winning bro believes it's a wearable Mensa card / law-enforcement-grade credential.
 - **Hybrid mechanics:** permanently pinned to the winning bro's sprite (degrades: paint flakes,
   pin rusts from river spray) AND grants passives:

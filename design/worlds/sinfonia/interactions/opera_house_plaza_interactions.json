@@ -1,0 +1,276 @@
+{
+  "location_id": "sinfonia_imperial_opera_house_plaza_01",
+  
+  "npcs_present": [
+    "sinfonia_npc_hans_jurgen_01",
+    "sinfonia_npc_gustav_horse_01",
+    "fiaker_driver_collective",
+    "sinfonia_npc_opera_usher_01",
+    "cafe_maitre_d_01",
+    "street_performer_violin_01",
+    "ticket_scalper_01",
+    "pigeon_lady_01"
+  ],
+  
+  "objects": [
+    {
+      "object_id": "neptune_fountain",
+      "type": "landmark_interactive",
+      "interaction_text": "Search the Fountain",
+      "description": "Ornate baroque fountain with Neptune figure. Coins glitter at the bottom.",
+      "interactable": true,
+      "rewards": [
+        {"type": "currency", "amount_sov": 2, "probability": 0.8},
+        {"type": "currency", "amount_sov": 5, "probability": 0.15},
+        {"type": "item", "item_id": "lucky_coin", "probability": 0.05}
+      ],
+      "dialogue_trigger": {
+        "speaker": "chadwick",
+        "text": "Bro, are we really stealing from a fountain? ...Is that a Sov?"
+      },
+      "animation": "reaching_into_water"
+    },
+    {
+      "object_id": "fiaker_queue_sign",
+      "type": "readable",
+      "interaction_text": "Read the Fiaker Rules",
+      "description": "Official rules board for licensed Fiaker operators. Several rules have been circled in angry red pen.",
+      "interactable": true,
+      "content": [
+        "1. Drivers must maintain sobriety during operating hours",
+        "2. Horses must be properly secured at all times", 
+        "3. Licensed operators only - see photos below",
+        "4. Maximum fare: 80 Sovs for 20-minute tour",
+        "5. NO RACING OTHER FIAKERS"
+      ],
+      "note": "Hans-Jurgen violates rules 1, 2, and 5 regularly",
+      "dialogue_trigger": {
+        "speaker": "lord_pilsner",
+        "text": "Rule one seems... aspirational."
+      }
+    },
+    {
+      "object_id": "hans_jurgen_license_photo",
+      "type": "observable",
+      "interaction_text": "Look at Driver Photos",
+      "description": "Board showing all licensed Fiaker drivers. Hans-Jurgen's photo is notably worn.",
+      "interactable": true,
+      "detail": "Photo dated 2002. Hans-Jurgen appears sober, proud, significantly less red-faced.",
+      "dialogue_trigger": {
+        "speaker": "bradley",
+        "text": "That's... that's definitely the same guy. But he looks so... functional."
+      }
+    },
+    {
+      "object_id": "opera_poster_board",
+      "type": "readable",
+      "interaction_text": "Check Current Performances",
+      "description": "Elegant poster board showing current opera season.",
+      "interactable": true,
+      "current_performances": [
+        {"title": "The Magic Flute", "status": "NOW SHOWING", "note": "Gustav crashes this one"},
+        {"title": "Don Giovanni", "status": "COMING SOON"},
+        {"title": "The Marriage of Figaro", "status": "SOLD OUT"}
+      ],
+      "easter_egg": "After Fiaker Fiasco, poster adds: 'NO HORSES ALLOWED IN THEATER'"
+    },
+    {
+      "object_id": "street_performer_hat",
+      "type": "donation_point",
+      "interaction_text": "Tip the Performer",
+      "description": "Velvet-lined violin case open for donations.",
+      "interactable": true,
+      "cost_range_sov": [1, 5],
+      "rewards": [
+        {"tip": 1, "effect": "performer_nods"},
+        {"tip": 2, "effect": "performer_smiles"},
+        {"tip": 5, "effect": "performer_plays_request", "charm_boost": 1}
+      ]
+    },
+    {
+      "object_id": "hans_jurgen_schnapps_bottle",
+      "type": "observable",
+      "interaction_text": "Examine the Bottle",
+      "description": "Half-empty bottle of Austrian schnapps 'accidentally' left on carriage seat.",
+      "interactable": true,
+      "requirements": {"quest_state": "fiaker_fiasco_active"},
+      "dialogue_trigger": {
+        "speaker": "bradley",
+        "text": "This is... a lot of schnapps for 2 PM. This explains some things."
+      }
+    },
+    {
+      "object_id": "cafe_terrace_tables",
+      "type": "destructible",
+      "interaction_text": null,
+      "description": "White-clothed cafe tables with delicate pastries and expensive coffee.",
+      "interactable": false,
+      "destructible_during": "gustav_chase_phase",
+      "damage_value_sov": 85,
+      "damage_count_max": 4
+    },
+    {
+      "object_id": "beethoven_shrine",
+      "type": "hidden_area",
+      "interaction_text": "Examine the Shrine",
+      "description": "Small alcove under opera steps with Beethoven bust. Tourists leave coins.",
+      "interactable": true,
+      "discovery_requirement": {"exploration": true},
+      "rewards": [
+        {"type": "lore", "content": "dedication_plaque"},
+        {"type": "currency", "amount_sov": 3, "if_searched": true}
+      ]
+    }
+  ],
+  
+  "environmental_interactions": [
+    {
+      "trigger_id": "selfie_opera_backdrop",
+      "type": "selfie_opportunity",
+      "interaction_text": "Take a Cultured Selfie",
+      "description": "Perfect angle with opera house facade in background.",
+      "interactable": true,
+      "requirements": null,
+      "effect": {
+        "status": "cultured_by_proximity",
+        "bravado_boost": 2,
+        "gallery_entry": "opera_house_selfie"
+      },
+      "dialogue_trigger": {
+        "speaker": "chadwick",
+        "text": "This is SO going on the 'gram. '#SinfoniaVibes #CultureVulture #Sophisticated'"
+      }
+    },
+    {
+      "trigger_id": "opera_window_listen",
+      "type": "audio_interaction",
+      "interaction_text": "Listen to Rehearsal",
+      "description": "Orchestra rehearsal audible through open windows.",
+      "interactable": true,
+      "duration_required_seconds": 300,
+      "effect": {
+        "status": "opera_exposure",
+        "performance_boost": 2,
+        "duration_minutes": 30
+      }
+    },
+    {
+      "trigger_id": "climb_opera_steps",
+      "type": "traversal",
+      "interaction_text": "Climb Steps for Vantage Point",
+      "description": "Opera house steps provide elevated view of plaza.",
+      "interactable": true,
+      "useful_during": "gustav_chase_phase",
+      "effect": "reveals_gustav_location"
+    }
+  ],
+  
+  "minigames": [
+    {
+      "minigame_id": "street_performer_rhythm",
+      "type": "rhythm",
+      "trigger": "interact_with_performer_after_tipping",
+      "description": "Match the rhythm of classical piece",
+      "difficulty": "medium",
+      "duration_seconds": 60,
+      "success_reward": {
+        "bravado": 3,
+        "item": "sheet_music_classical"
+      },
+      "failure_consequence": {
+        "bravado": -1,
+        "status": "embarrassed",
+        "duration_minutes": 10
+      }
+    },
+    {
+      "minigame_id": "guess_the_opera",
+      "type": "dialogue_skill_check",
+      "trigger": "conversation_with_opera_patron",
+      "description": "Pretend you know opera by guessing titles",
+      "stat_check": "charm",
+      "difficulty_threshold": 3,
+      "success_reward": {
+        "charm": 1,
+        "unlock": "opera_gossip_thread"
+      },
+      "failure_consequence": {
+        "status": "culturally_exposed",
+        "effect": "opera_patron_walks_away"
+      }
+    }
+  ],
+  
+  "selfie_props": [
+    {
+      "prop_id": "opera_facade_selfie",
+      "interaction_text": "Take Selfie with Opera House",
+      "description": "Majestic baroque facade as backdrop",
+      "requirements": null,
+      "reward": {"bravado": 2, "gallery_entry": "opera_house_selfie"}
+    },
+    {
+      "prop_id": "fiaker_horse_selfie",
+      "interaction_text": "Take Selfie with Fiaker Horse",
+      "description": "Pose with traditional carriage horse (not Gustav)",
+      "requirements": {"cost_sov": 5},
+      "reward": {"bravado": 1, "gallery_entry": "fiaker_horse_selfie"}
+    },
+    {
+      "prop_id": "fountain_selfie",
+      "interaction_text": "Take Selfie at Neptune Fountain",
+      "description": "Classic tourist shot with baroque fountain",
+      "requirements": null,
+      "reward": {"gallery_entry": "fountain_selfie"}
+    },
+    {
+      "prop_id": "with_gustav",
+      "interaction_text": "Take Selfie with Gustav",
+      "description": "Gustav wearing stolen opera cape",
+      "requirements": {"quest_state": "fiaker_fiasco_resolved"},
+      "reward": {"bravado": 5, "gallery_entry": "gustav_cape_selfie"},
+      "note": "Most shareable image in the game"
+    }
+  ],
+  
+  "hidden_interactions": [
+    {
+      "interaction_id": "eavesdrop_opera_gossip",
+      "trigger": "stand_near_opera_patrons_30_seconds",
+      "description": "Overhear gossip about Black-Tie Backroom",
+      "reward": {
+        "unlock": "black_tie_backroom_hint",
+        "lore": "opera_society_secrets"
+      }
+    },
+    {
+      "interaction_id": "pigeon_feeding",
+      "trigger": "have_bread_item_near_pigeons",
+      "description": "Feed the plaza pigeons",
+      "reward": {
+        "status": "pigeon_friend",
+        "effect": "pigeons_dont_attack_during_chase"
+      }
+    },
+    {
+      "interaction_id": "newspaper_update",
+      "trigger": "fiaker_fiasco_complete",
+      "description": "Newspaper seller has updated headline",
+      "content": "AMERICAN TOURISTS CHASE HORSE THROUGH OPERA - THOUSANDS IN DAMAGES"
+    }
+  ],
+  
+  "quest_triggers": [
+    {
+      "quest_id": "sinfonia_sidequest_fiaker_fiasco_01",
+      "trigger_type": "approach_npc",
+      "npc": "sinfonia_npc_hans_jurgen_01",
+      "condition": "time_is_day_hours",
+      "cutscene": "hans_jurgen_panic_intro",
+      "dialogue_initiation": {
+        "speaker": "hans_jurgen",
+        "text": "MEIN PFERD! HE IS GONE! GUSTAV! GUSTAAAAAV!"
+      }
+    }
+  ]
+}

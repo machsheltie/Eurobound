@@ -37,20 +37,20 @@ the joke.
    digital fiat-crypto used for ~90% of standard transactions (tickets, doctors, tips, lodging).
    Tone: high-society pretension meets sterile European bureaucracy. **No gas fees or random UI
    penalties on routine purchases** — core transactions stay clean, frictionless, predictable.
-2. **€ is SOVS's display glyph.** SOVS is pegged to and displayed with the € sign — the eurozone
-   ate itself and what crawled out still uses the symbol. **All existing € prices in canon remain
+2. **SUPERSEDED 2026-08-01 by author ruling — the euro display-glyph rule is dead.** The whole game runs on Sovs and the euro sign appears nowhere; see `_sorting/Design/Economy/currency.md`. (Historical text follows for context only.) ~~SOVS is pegged to and displayed with the euro sign — the eurozone~~
+   ate itself and what crawled out still uses the symbol. **All existing euro prices in canon remain
    valid as-written** (they ARE SOVS amounts); the wallet ticker reads SOVS. No repo-wide price
    retrofit.
 3. **Koruna does not exist.** This is not "real" Europe. The koruna-retrofit list (Lane R):
-   - `zdenka.md` price-ladder greeting (canon-locked line → re-locked in € /SOVS terms; her
+   - `zdenka.md` price-ladder greeting (canon-locked line → re-locked in euro/SOVS terms; her
      "40 if you go now" structure and cheapest-cure-on-the-beach guarantee survive verbatim in
      the new denomination)
-   - `trivia_champ_badge_item.md` trinket-cart kid row ("10 koruna" → €)
+   - `trivia_champ_badge_item.md` trinket-cart kid row ("10 koruna" → euro)
    - `bohemian_riviera.md` + `bohemian_riviera_npcs.json` koruna/Kč references
    - "SuperKoruna Value Hypermarket" world brand → renamed (implementer proposes in-world name,
      author veto at review; must keep the discount-hypermarket joke)
    - Lane W-class sweep for any remaining koruna/Kč in tracked files; drafts ledgered to adoption
-   - `bohemian_riviera_items.json` currency-wording line updated to the SOVS/€ canon
+   - `bohemian_riviera_items.json` currency-wording line updated to the SOVS/euro canon
 4. **10% back-alley economy:** shady off-grid vendors refuse SOVS ("accounts frozen by EU
    regulators") and accept only volatile darknet shitcoins, purchased at adjacent exchange kiosks.
 
@@ -159,6 +159,60 @@ may reference real places (Brazzaville) since they are framed as the real intern
   author-locked UI copy), ban-all compliance (in-game text; QR-page concepts exempt per §5),
   template compliance where item files are touched, ID/naming consistency, no edits to Aaron's
   profile or quest, lane discipline.
+
+## 7a. AUTHOR RULINGS — 2026-08-01 (locked)
+
+1. **Brands: KEEP EVERYTHING AS-IS.** Real brands in player-facing text (Guinness incl.
+   "GUINNESS SUPPOSITORIES", Four Loko, Muscle Milk, Advil, Aquafina, BAWLS, Axe, Oakleys,
+   Hot Topic, Kinko's, Habbo, Winamp, Furbies, WhatsApp, Uber) stay. Y2K specificity is the
+   texture. **No brands round will ever be run; this question is CLOSED.** No sweep, lane, or
+   reviewer may flag a brand as a defect. (This also authorizes the NFT below by name.)
+2. **Publandia NFT #4 — "America Online"** (author-minted): a 12-second audio NFT of pure 56k
+   modem screech, described as *"the birth cry of the modern internet."* Completes the 12-NFT
+   collection (Publandia 4/4). Gets a Legacy Vault card like the rest.
+3. **Brewery tracker rebuild — canon confirmed, NO naming needed.** The author's
+   `brewery_passport_book_complete.md` already rosters all 12 base-game breweries. The engine
+   tracker's 8 invented Publandia/Sinfonia IDs are struck. Canonical roster:
+   - **Debaucheryville:** The Absinthium Taproom · The Tap Dat Vault · Three-Crown Keg Haus ·
+     Ye Olde B.R.E.W. Lab
+   - **Publandia:** The Blarney Trap · The Stoutworks Brewery · Trinity of Pints · Shenanigans
+   - **Sinfonia:** The Moderato Pub · The Standing Ovation · Crown & Cask · The Dancing Stein
+   - **Shamsterdam (expansion, not in base tracker):** Brouwerij de Molen · Proeflokaal 't Kansen
+     (+2 slots and 2 bonus slots remain author-TBD; expansion scope, no action this round)
+   Also fix the `deboucheryville` city-key typo and the `absynthium`→`absinthium` spelling.
+4. **Round 5 runs in full, retrofits included**, concurrent with the paused folder reorg.
+
+## 7c. NEW BINDING RULE — NFT Content Is 90s/00s Pop Culture (author-locked, permanent)
+
+**Every NFT in the Frat Bro collection depicts a 90s or 00s pop-culture artifact. NEVER a
+location-derived object.** The two axes are separate and must stay separate:
+- **Acquisition ROUTE** — location-specific and venue-flavored (a nightclub bathroom QR, a rigged
+  claw machine, an auction catalog, a backstage terminal). This is where you find it.
+- **ARTWORK / SUBJECT** — always 90s/00s pop culture, never the venue, never the city, never
+  local scenery. This is what it *is*.
+A location-derived NFT concept is a **defect**. The joke is that the bros crossed a continent and
+came home with American nostalgia they believe is a European art portfolio.
+Established register (author-authored): a grandiose financial name + `Mint #NN` (NN evokes the
+artifact's year) + a punchy pseudo-financial tagline + a description that frames the nostalgia
+as an economic phenomenon + a "Collector's Thesis" applying crypto-bro investment logic.
+**Author ruling 2026-08-01:** the 7 location-derived NFTs then in canon were struck and replaced
+(Millennium Bug, Sea-Monkeys, Napster, Holographic Charizard, Winamp, Crystal Pepsi, Pogs);
+their routes were unchanged. Card copy for those 7 is **authored by the author only** — lanes
+wire the names and routes and leave the copy blocks empty. No lane may fill them by invention.
+
+## 7b. Repo Reality (post-reorg, as of 2026-08-01)
+
+Branch `chore/folder-restructure`. Structure: `design/` (new skeleton — Round 5's NEW files land
+here, in `design/economy/`), `_sorting/` (staging holding the old `Design/` tree — retrofit
+targets live here), `game/` (Godot: `game/Assets/`, `game/Scripts/`), `docs/`, `Production/`,
+`Tools/`, `Marketing/`, `Builds/`.
+- **CONCURRENT-WINDOW GUARD (binding):** another window owns an in-flight PNG-asset task —
+  **87 dirty files under `**/PNG_Assets/**`**. No lane may edit ANY file under a `PNG_Assets/`
+  directory this round. Every lane still runs `git status --porcelain -- "<file>"` before
+  editing and skips + ledgers anything dirty.
+- NPC profiles were relocated by the reorg into their location folders, e.g.
+  `_sorting/Design/World Design/Debaucheryville/npcs/Bohemian_Riviera/zdenka.md`. Lanes must
+  locate files by search, never by remembered path.
 
 ## 8. Out of Scope
 

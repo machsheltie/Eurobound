@@ -55,7 +55,7 @@ those may be invented. Writing at full strength within the author's boundaries i
 ## 2. Location: The Black-Tie Backroom — Keep + Complete
 
 The existing `Design/World Design/Sinfonia/the_black_tie_backroom.md` (513 lines: hidden entrance,
-€500 collateral, three mini-games with house-edge math, cheating system, Herr Falsch hidden boss,
+500-Sov collateral, three mini-games with house-edge math, cheating system, Herr Falsch hidden boss,
 Siegfried couchsurf, Baroness vault tie-in) is APPROVED as canon foundation. This round:
 1. **Full data suite** matching Sinfonia's four complete locations: `PNG_Assets/the_black_tie_backroom_png_assets.md`
    + 8 JSONs (`core`, `npcs`, `interactions`, `environment`, `items`, `events`, `location_nodes`,
@@ -96,12 +96,12 @@ Siegfried couchsurf, Baroness vault tie-in) is APPROVED as canon foundation. Thi
   line a bro says next — every option is a different flavor of unearned Casino-Royale swagger; all
   paths reach the identical outcome. The scene must be visually distinct from the room's real,
   fair, playable poker tables so the two are never confused.
-- **Stakes (author-locked):** the pot is exactly the door's €500 collateral chips. Uniform for
+- **Stakes (author-locked):** the pot is exactly the door's 500-Sov collateral chips. Uniform for
   every player by construction; bros dramatize it as "our entire vacation budget" (never
-  scam-aware; the loss becomes high-roller variance in their telling). Gold above €500 untouched.
-  Under-€500 parties are bounced by Viktor at the door (existing canon beat: "Döner is not
+  scam-aware; the loss becomes high-roller variance in their telling). Sovs above 500 untouched.
+  Parties holding under 500 Sovs are bounced by Viktor at the door (existing canon beat: "Döner is not
   accepted") — the encounter cannot fire underfunded. Systemic comedy note: a party that busts
-  here can no longer afford the Haberdashery's €500 Valued Client path — organically nudging
+  here can no longer afford the Haberdashery's 500-Sov Valued Client path — organically nudging
   broke players toward PATH B's mannequin heist. No hard gate either direction.
 - **Beats:** (1) bros clock the milk drink and candy cigarettes as weakness, showcase their
   "expertise" hard — misread tells narrated aloud at full volume, Casino Royale cited as poker
@@ -129,7 +129,7 @@ Siegfried couchsurf, Baroness vault tie-in) is APPROVED as canon foundation. Thi
    id `item_tractor_nft`. Quest item / digital junk: a low-res animated GIF of a zero-turn mower
    doing a donut on a manicured lawn, tiny pixelated cowboy hat bouncing on the seat, stamped on
    a scratched aluminum token that smells faintly of Kahlúa and fresh-cut grass. QR links to an
-   expired Geocities page. Worth €0 at any bank, exchange, or legitimate vendor. Advances the
+   expired Geocities page. Worth 0 Sovs at any bank, exchange, or legitimate vendor. Advances the
    Frat Bro NFT quest (one of Sinfonia's four, §6). Granted at encounter beat 8 ("It's on the
    chain. Digital land, baby. ... that's your ticket back to the top.").
 - Gemini's stat/flavor drafts are starting points; lanes have craft latitude within the locked
@@ -173,7 +173,7 @@ Item files (full permanent-item template): `Design/Inventory/items/shark_fin_ite
 1. **Gregory eradication** across the six committed files (§1b list) — the round's first commit,
    so every other lane works from a Gregory-free base.
 2. **Engine Requirements note:** add an explicit engine-requirements block (per-NPC first-completion
-   tracking for the Chronicles payload rule; fixed-stake €500 collateral grant/removal for the
+   tracking for the Chronicles payload rule; fixed-stake 500-Sov collateral grant/removal for the
    Aaron encounter; scene-triggered item grants) to the quest files that need them
    (`nothingisgettingthrough.md` dev notes already flag the first — formalize; the new
    `thekingswerehumming.md` carries the second and third natively).

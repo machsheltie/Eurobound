@@ -1,0 +1,524 @@
+{
+  "location_id": "sinfonia_bassline_opera_house_01",
+  
+  "gift_shop_inventory": {
+    "vendor_id": "gift_shop_clerk_01",
+    "zone": "lobby",
+    "shop_name": "Opera House Boutique",
+    "currency": "sovs",
+    
+    "items": [
+      {
+        "item_id": "opera_program",
+        "display_name": "Die Zauberflöte Official Program",
+        "price": 12,
+        "category": "lore",
+        "description": "40 pages of production notes, composer biography, and advertisements. Wikipedia in fancier font.",
+        "effect": {
+          "culture_knowledge": 1,
+          "quest_hint": "magic_flute_references"
+        },
+        "stock": "unlimited"
+      },
+      {
+        "item_id": "mozart_bust_mini",
+        "display_name": "Mozart Commemorative Bust (Miniature)",
+        "price": 45,
+        "category": "collectible",
+        "description": "Six-inch plaster Mozart. His expression judges your musical taste.",
+        "effect": {
+          "luck": 1,
+          "duration_battles": 5
+        },
+        "stock": 3
+      },
+      {
+        "item_id": "opera_tote_bag",
+        "display_name": "'I ♥ Opera' Canvas Tote",
+        "price": 25,
+        "category": "utility",
+        "description": "Advertises your cultural sophistication while carrying snacks.",
+        "effect": {
+          "inventory_slots": 2
+        },
+        "stock": 5
+      },
+      {
+        "item_id": "soundtrack_cd",
+        "display_name": "Magic Flute Highlights CD",
+        "price": 20,
+        "category": "equipment",
+        "description": "The Queen's aria on repeat. Your portable cultural enhancement.",
+        "effect": {
+          "performance": 2,
+          "duration": "rhythm_games"
+        },
+        "stock": "unlimited"
+      },
+      {
+        "item_id": "maestro_poster",
+        "display_name": "Maestro Vice von Strauss Autographed Poster",
+        "price": 15,
+        "category": "lore",
+        "description": "The Maestro's smug face, pre-printed signature. 'Conducting Excellence Since 2015.'",
+        "effect": {
+          "boss_hint": "maestro_weakness_ego"
+        },
+        "stock": "unlimited"
+      },
+      {
+        "item_id": "opera_glasses",
+        "display_name": "Mother-of-Pearl Opera Glasses",
+        "price": 85,
+        "category": "equipment",
+        "description": "See the performers sweat from the cheap seats.",
+        "effect": {
+          "ranged_advantage": true,
+          "observation": 2
+        },
+        "stock": 2
+      },
+      {
+        "item_id": "composer_magnet_set",
+        "display_name": "Famous Composers Magnet Set",
+        "price": 8,
+        "category": "collectible",
+        "description": "Mozart, Beethoven, Strauss, and for some reason, von Strauss.",
+        "effect": null,
+        "stock": "unlimited"
+      }
+    ]
+  },
+  
+  "box_office_tickets": {
+    "vendor_id": "box_office_attendant_01",
+    "zone": "lobby",
+    "currency": "sovs",
+    
+    "tickets": [
+      {
+        "item_id": "ticket_orchestra",
+        "display_name": "Orchestra Level Ticket",
+        "price": 80,
+        "description": "Premium seating. See the performers' expressions of artistic torment.",
+        "access": "auditorium_orchestra_level",
+        "time_restriction": "19:00-22:00",
+        "dress_code": true,
+        "stock": 4
+      },
+      {
+        "item_id": "ticket_balcony",
+        "display_name": "Balcony Ticket",
+        "price": 50,
+        "description": "Respectable seating. The chandelier is closer than the stage.",
+        "access": "auditorium_balcony",
+        "time_restriction": "19:00-22:00",
+        "dress_code": true,
+        "stock": 8
+      },
+      {
+        "item_id": "ticket_standing",
+        "display_name": "Standing Room Ticket",
+        "price": 15,
+        "description": "For the truly dedicated... or truly cheap.",
+        "access": "auditorium_standing",
+        "time_restriction": "19:00-22:00",
+        "dress_code": false,
+        "stock": "unlimited"
+      },
+      {
+        "item_id": "ticket_bassline",
+        "display_name": "Bassline Event Ticket",
+        "price": 25,
+        "description": "EDM in an opera house. The chandeliers vibrate.",
+        "access": "orchestra_pit_bassline",
+        "time_restriction": "23:00-04:00",
+        "dress_code": false,
+        "stock": "unlimited"
+      },
+      {
+        "item_id": "season_pass",
+        "display_name": "Season Patron Pass",
+        "price": 300,
+        "description": "All performances, backstage tour, and a tiny plaque with your name.",
+        "access": ["all_performances", "backstage_tour"],
+        "bonus": {
+          "charm": 2,
+          "permanent": true,
+          "in_location": true
+        },
+        "stock": 1
+      }
+    ],
+    
+    "scalper_alternative": {
+      "location": "lobby_corner",
+      "npc": "suspicious_patron",
+      "prices": {
+        "ticket_orchestra": {"min": 150, "max": 300},
+        "ticket_balcony": {"min": 80, "max": 150},
+        "ticket_bassline": {"min": 40, "max": 75}
+      },
+      "availability": "always_has_stock",
+      "haggle": {
+        "enabled": true,
+        "stat": "charm",
+        "threshold": 3
+      }
+    }
+  },
+  
+  "backstage_findable_items": {
+    "zone": "backstage",
+    "search_locations": [
+      {
+        "location": "prop_storage",
+        "items": [
+          {
+            "item_id": "magic_flute_replica",
+            "display_name": "Magic Flute Prop (Intact)",
+            "probability": 0.5,
+            "condition": "not_destroyed",
+            "effect": {
+              "performance": 2,
+              "quest_item": false
+            }
+          },
+          {
+            "item_id": "bird_seeds",
+            "display_name": "Handful of Bird Seeds",
+            "probability": 0.8,
+            "effect": {
+              "use": "befriend_papageno_or_birds"
+            }
+          },
+          {
+            "item_id": "prop_scepter",
+            "display_name": "Sarastro's Prop Scepter",
+            "probability": 0.3,
+            "effect": {
+              "weapon": true,
+              "charm": 1,
+              "attack": 2
+            }
+          }
+        ]
+      },
+      {
+        "location": "costume_workshop",
+        "items": [
+          {
+            "item_id": "masquerade_mask",
+            "display_name": "Spare Masquerade Mask",
+            "probability": 0.6,
+            "effect": {
+              "charm": 2,
+              "location_bonus": "baroness_ballroom"
+            }
+          },
+          {
+            "item_id": "formal_gloves",
+            "display_name": "Formal Opera Gloves",
+            "probability": 0.5,
+            "effect": {
+              "reduces_status": "embarrassed",
+              "charm": 1
+            }
+          },
+          {
+            "item_id": "opera_cape",
+            "display_name": "Dramatic Opera Cape",
+            "probability": 0.4,
+            "effect": {
+              "style": 2,
+              "performance": 1
+            }
+          },
+          {
+            "item_id": "spare_tiara",
+            "display_name": "Queen's Spare Tiara",
+            "probability": 0.2,
+            "value": 50,
+            "effect": {
+              "charm": 2,
+              "sell_value": 50
+            }
+          }
+        ]
+      },
+      {
+        "location": "loading_dock",
+        "items": [
+          {
+            "item_id": "coffee_voucher",
+            "display_name": "Crew Coffee Voucher",
+            "probability": 0.7,
+            "effect": {
+              "redeemable": "free_coffee_nearby_cafe"
+            }
+          },
+          {
+            "item_id": "backstage_schedule",
+            "display_name": "Rehearsal Schedule",
+            "probability": 0.5,
+            "effect": {
+              "information": "npc_locations_by_time"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  
+  "dressing_room_items": {
+    "zone": "dressing_rooms",
+    "search_locations": [
+      {
+        "location": "star_dressing_room_3",
+        "items": [
+          {
+            "item_id": "love_letters",
+            "display_name": "Scandalous Love Letters",
+            "probability": 1.0,
+            "quest_item": true,
+            "effect": {
+              "blackmail_potential": true,
+              "gossip_unlock": "maestro_scandal"
+            }
+          },
+          {
+            "item_id": "expensive_cologne",
+            "display_name": "Maestro's Expensive Cologne",
+            "probability": 0.5,
+            "value": 40,
+            "effect": {
+              "charm": 1,
+              "duration_hours": 2
+            }
+          }
+        ]
+      },
+      {
+        "location": "makeup_station",
+        "services": [
+          {
+            "service_id": "stage_disguise",
+            "display_name": "Stage Makeup Disguise",
+            "cost": 20,
+            "provider": "makeup_artist_01",
+            "effect": {
+              "stealth": 2,
+              "charm": 1,
+              "duration_hours": 2
+            }
+          },
+          {
+            "service_id": "remove_embarrassed",
+            "display_name": "Touch-Up (Dignity Restoration)",
+            "cost": 10,
+            "provider": "makeup_artist_01",
+            "effect": {
+              "removes_status": "embarrassed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  
+  "lobby_services": {
+    "coat_check": {
+      "provider": "coat_check_01",
+      "cost": 2,
+      "function": "item_storage",
+      "capacity": 5,
+      "bonus_interaction": {
+        "stat": "charm",
+        "threshold": 2,
+        "unlocks": "black_tie_backroom_hint"
+      }
+    },
+    "champagne_bar": {
+      "zone": "lobby_evening",
+      "items": [
+        {
+          "item_id": "champagne_glass",
+          "display_name": "Glass of House Champagne",
+          "price": 15,
+          "effect": {
+            "removes_status": "stressed",
+            "charm": 1,
+            "duration_hours": 1
+          }
+        },
+        {
+          "item_id": "champagne_bottle",
+          "display_name": "Bottle of Champagne",
+          "price": 80,
+          "effect": {
+            "removes_status": "stressed",
+            "charm": 2,
+            "party_wide": true,
+            "duration_hours": 2
+          }
+        }
+      ]
+    },
+    "donation_box": {
+      "options": [
+        {
+          "amount": 5,
+          "effect": {"charm": 1, "duration_hours": 1}
+        },
+        {
+          "amount": 20,
+          "effect": {"charm": 2, "duration_hours": 2}
+        },
+        {
+          "amount": 100,
+          "effect": {"charm": 3, "duration_hours": 4, "patron_status": true}
+        }
+      ]
+    }
+  },
+  
+  "damage_liability_items": {
+    "zone": "backstage",
+    "quest": "fiaker_fiasco",
+    
+    "destroyed_items": [
+      {
+        "item_id": "papageno_bird_head",
+        "display_name": "Papageno Bird Head Prop",
+        "damage_cost": 150,
+        "destruction_phase": "prop_storage_collision"
+      },
+      {
+        "item_id": "magic_flute_prop_broken",
+        "display_name": "Magic Flute Prop (Broken)",
+        "damage_cost": 200,
+        "destruction_phase": "prop_storage_collision"
+      },
+      {
+        "item_id": "queen_gown_torn",
+        "display_name": "Queen of the Night Gown (Torn)",
+        "damage_cost": 200,
+        "destruction_phase": "costume_tangle"
+      },
+      {
+        "item_id": "mechanical_snake",
+        "display_name": "Mechanical Serpent",
+        "damage_cost": 800,
+        "destruction_phase": "stage_incursion"
+      },
+      {
+        "item_id": "paper_trees",
+        "display_name": "Papageno's Forest Trees (x2)",
+        "damage_cost": 250,
+        "destruction_phase": "stage_incursion"
+      },
+      {
+        "item_id": "starry_night_backdrop",
+        "display_name": "Starry Night Backdrop",
+        "damage_cost": 400,
+        "destruction_phase": "backdrop_catastrophe",
+        "avoidable": true,
+        "avoid_condition": "follow_papageno"
+      }
+    ],
+    
+    "total_liability": {
+      "maximum": 2000,
+      "minimum_if_optimal_path": 1600,
+      "hans_jurgen_covers": 500,
+      "prima_donna_additional": {
+        "base": 500,
+        "negotiated": 200,
+        "charm_threshold": 4
+      }
+    }
+  },
+  
+  "boss_rewards": {
+    "boss_id": "maestro_von_strauss",
+    "zone": "orchestra_pit",
+    
+    "guaranteed_drops": [
+      {
+        "item_id": "conductors_baton",
+        "display_name": "Conductor's Baton",
+        "type": "weapon",
+        "stats": {
+          "charm": 3,
+          "attack": 3,
+          "special": "chance_to_embarrass"
+        },
+        "description": "The Maestro's personal baton. It hums with corrupted musical energy."
+      },
+      {
+        "item_id": "baroness_vault_keys",
+        "display_name": "Baroness' Vault Keys",
+        "type": "key_item",
+        "effect": {
+          "unlocks": "baroness_ballroom_vault",
+          "contains": "late_game_gear"
+        },
+        "description": "Golden keys with a masquerade mask emblem. Opens something expensive."
+      }
+    ],
+    
+    "permanent_status": {
+      "status_id": "bassline_vip",
+      "display_name": "Bassline VIP",
+      "effect": {
+        "discount": 0.2,
+        "applicable_locations": ["all_clubs_sinfonia"]
+      }
+    },
+    
+    "rare_drops": [
+      {
+        "item_id": "dj_headphones",
+        "display_name": "Maestro's DJ Headphones",
+        "probability": 0.3,
+        "stats": {
+          "performance": 3,
+          "rhythm_bonus": true
+        }
+      },
+      {
+        "item_id": "classical_edm_mixtape",
+        "display_name": "Classical/EDM Fusion Mixtape",
+        "probability": 0.5,
+        "effect": {
+          "battle_music_option": true,
+          "bravado": 1
+        }
+      }
+    ]
+  },
+  
+  "enemy_drops": {
+    "enemy_id": "maestros_assistant",
+    "zone": "lobby",
+    "drops": [
+      {
+        "item_id": "coffee_voucher",
+        "probability": 0.8
+      },
+      {
+        "item_id": "backstage_schedule",
+        "probability": 0.5
+      },
+      {
+        "item_id": "stress_ball",
+        "display_name": "Executive Stress Ball",
+        "probability": 0.3,
+        "effect": {
+          "removes_status": "stressed",
+          "single_use": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "location_id": "sinfonia_stadtpark_gustavs_refuge_01",
+  
+  "ambient_audio": {
+    "background_music": {
+      "quest_approach": {
+        "track": "tense_orchestral_pursuit.ogg",
+        "volume": 0.4,
+        "note": "Continues from opera house"
+      },
+      "confrontation": {
+        "track": "stadtpark_standoff.ogg",
+        "volume": 0.5,
+        "style": "tense_strings_moonlight"
+      },
+      "resolution_positive": {
+        "track": "emotional_resolution_strings.ogg",
+        "volume": 0.6,
+        "style": "cathartic_hopeful"
+      },
+      "resolution_negative": {
+        "track": "melancholy_departure.ogg",
+        "volume": 0.5,
+        "style": "sad_but_accepting"
+      },
+      "exploration": {
+        "track": "stadtpark_peaceful_night.ogg",
+        "volume": 0.3,
+        "style": "ambient_nocturne"
+      }
+    },
+    "environmental_sounds": [
+      {"sound": "crickets_night_insects", "trigger": "always_night", "volume": 0.25},
+      {"sound": "distant_city_carriages", "trigger": "ambient", "volume": 0.15},
+      {"sound": "fountain_trickling", "trigger": "near_pond", "volume": 0.2},
+      {"sound": "wind_through_trees", "trigger": "periodic", "interval": 20, "volume": 0.2},
+      {"sound": "gustav_heavy_breathing", "trigger": "near_gustav", "volume": 0.3},
+      {"sound": "gustav_breath_steam", "trigger": "near_gustav", "volume": 0.1},
+      {"sound": "swan_honk", "trigger": "near_pond", "volume": 0.3, "chance": 0.2},
+      {"sound": "leaves_rustling", "trigger": "ambient", "volume": 0.15},
+      {"sound": "pigeon_cooing", "trigger": "near_pigeon_lady", "volume": 0.2}
+    ]
+  },
+  
+  "quest_audio_events": {
+    "gustav_whinny_tired": {
+      "trigger": "player_first_sees_gustav",
+      "sound": "horse_whinny_emotional.ogg",
+      "volume": 0.6
+    },
+    "skittles_bag_rustle": {
+      "trigger": "player_uses_skittles",
+      "sound": "candy_bag_rustle.ogg",
+      "volume": 0.5
+    },
+    "skittles_eating": {
+      "trigger": "gustav_eats_skittles",
+      "sound": "horse_eating_crunchy.ogg",
+      "volume": 0.5,
+      "note": "Absurdly loud for comedy"
+    },
+    "hans_jurgen_desperate_call": {
+      "trigger": "hans_jurgen_arrives",
+      "sound": "german_desperate_yelling.ogg",
+      "volume": 0.6
+    },
+    "papageno_whistle": {
+      "trigger": "papageno_approaches_gustav",
+      "condition": "papageno_present",
+      "sound": "bird_whistle_friendly.ogg",
+      "volume": 0.5
+    },
+    "director_angry_german": {
+      "trigger": "director_arrives",
+      "condition": "director_present",
+      "sound": "german_angry_ranting.ogg",
+      "volume": 0.5
+    },
+    "resolution_path_a": {
+      "trigger": "gustav_returns",
+      "sound": "heartwarming_strings_swell.ogg",
+      "volume": 0.6
+    },
+    "resolution_path_b": {
+      "trigger": "gustav_retires",
+      "sound": "bittersweet_departure.ogg",
+      "volume": 0.6
+    },
+    "resolution_path_c": {
+      "trigger": "gustav_escapes",
+      "sound": "tragic_loss_strings.ogg",
+      "volume": 0.6
+    },
+    "swan_attack": {
+      "trigger": "approach_pond_carelessly",
+      "sound": "aggressive_swan_honk_attack.ogg",
+      "volume": 0.7
+    }
+  },
+  
+  "comedy_stingers": [
+    {"trigger": "skittles_offered", "sound": "hopeful_harp_flourish", "volume": 0.4},
+    {"trigger": "gustav_approaches", "sound": "tension_release_strings", "volume": 0.4},
+    {"trigger": "homeless_philosopher_wisdom", "sound": "philosophical_gong", "volume": 0.3},
+    {"trigger": "pigeon_lady_cryptic", "sound": "mysterious_chime", "volume": 0.3},
+    {"trigger": "swan_attack_survived", "sound": "comedic_splash", "volume": 0.5},
+    {"trigger": "director_sees_horse_cape", "sound": "record_scratch", "volume": 0.5}
+  ],
+  
+  "status_effects": {
+    "environmental_buffs": [
+      {
+        "effect_id": "moonlit_serenity",
+        "trigger": "enter_park_night",
+        "stats": {"wisdom": 1},
+        "duration": "while_in_park"
+      },
+      {
+        "effect_id": "natures_respite",
+        "trigger": "30_seconds_in_park",
+        "removes_status": "stressed",
+        "cooldown_minutes": 30
+      }
+    ],
+    "quest_effects": [
+      {
+        "effect_id": "horse_whisperer",
+        "trigger": "path_a_complete",
+        "stats": {"charm_with_animals": 2},
+        "duration": "permanent"
+      },
+      {
+        "effect_id": "liberation",
+        "trigger": "path_b_complete",
+        "stats": {"wisdom": 1},
+        "duration": "permanent"
+      },
+      {
+        "effect_id": "horse_guilt",
+        "trigger": "path_c_complete",
+        "stats": {"all": -1},
+        "duration_hours": 1
+      },
+      {
+        "effect_id": "coward",
+        "trigger": "path_d_complete",
+        "stats": {"bravado": -2},
+        "duration_minutes": 30
+      }
+    ],
+    "hazard_effects": [
+      {
+        "effect_id": "wet",
+        "trigger": "fall_in_pond_or_swan_attack",
+        "stats": {"charm": -1},
+        "removes": ["on_fire", "overheated"],
+        "duration_minutes": 5
+      }
+    ]
+  },
+  
+  "time_of_day_variations": {
+    "quest_night": {
+      "hours": "auto_during_quest",
+      "lighting": "moonlit",
+      "npcs_present": ["gustav", "hans_jurgen", "pigeon_lady", "conditional"],
+      "atmosphere": "dramatic_tension"
+    },
+    "daytime": {
+      "hours": "06:00-20:00",
+      "lighting": "bright_sunny",
+      "npcs_present": ["joggers", "dog_walkers", "tourists", "groundskeeper"],
+      "atmosphere": "peaceful_public_park",
+      "activities": ["selfie_opportunities", "bench_resting", "exploration"]
+    },
+    "evening": {
+      "hours": "20:00-23:00",
+      "lighting": "sunset_to_dusk",
+      "npcs_present": ["couples", "evening_strollers"],
+      "atmosphere": "romantic_peaceful"
+    },
+    "night_non_quest": {
+      "hours": "23:00-06:00",
+      "lighting": "moonlit_lamplight",
+      "npcs_present": ["homeless_philosopher", "occasional_couples"],
+      "atmosphere": "quiet_empty"
+    }
+  },
+  
+  "post_quest_states": {
+    "path_a_gustave_returns": {
+      "gustav_present": false,
+      "new_npcs": ["grateful_hans_jurgen_occasional"],
+      "new_service": "fiaker_fast_travel",
+      "atmosphere_change": "park_returns_to_normal"
+    },
+    "path_b_gustav_retires": {
+      "gustav_present": true,
+      "gustav_type": "park_horse_npc",
+      "new_interaction": {
+        "name": "Visit Gustav",
+        "effect": "daily_wisdom_buff",
+        "dialogue": "Gustav nuzzles you. He seems happy here."
+      },
+      "new_npc": "hans_jurgen_visits_daily",
+      "atmosphere_change": "park_has_resident_horse"
+    },
+    "path_c_gustav_escapes": {
+      "gustav_present": false,
+      "new_npc": "sad_hans_jurgen_at_moderato_pub",
+      "atmosphere_change": "slight_melancholy",
+      "optional_followup": "rumors_of_wild_horse_sightings"
+    },
+    "path_d_bros_bail": {
+      "quest_incomplete_marker": true,
+      "hans_jurgen_hostile": true,
+      "atmosphere_change": "guilt_lingers"
+    }
+  },
+  
+  "cross_location_dependencies": {
+    "incoming_from": [
+      {
+        "location": "sinfonia_bassline_opera_house_01",
+        "connection_type": "quest_entry",
+        "portal": "opera_side_door_to_park_path"
+      },
+      {
+        "location": "sinfonia_imperial_square_01",
+        "connection_type": "normal_access"
+      },
+      {
+        "location": "sinfonia_musikgasse_01",
+        "connection_type": "normal_access"
+      }
+    ],
+    "outgoing_to": [
+      {
+        "location": "sinfonia_imperial_square_01",
+        "connection_type": "main_exit"
+      },
+      {
+        "location": "sinfonia_kaffeehaus_row_01",
+        "connection_type": "debt_resolution_return"
+      },
+      {
+        "location": "sinfonia_bassline_opera_house_01",
+        "connection_type": "debt_resolution_return"
+      },
+      {
+        "location": "sinfonia_moderato_pub_01",
+        "connection_type": "path_c_hans_jurgen_location"
+      }
+    ],
+    "npc_flow": [
+      {"npc": "pigeon_lady", "from": "opera_house_plaza"},
+      {"npc": "papageno", "from": "opera_backstage", "condition": "ally_path"},
+      {"npc": "director", "from": "opera_backstage", "condition": "debt_unaddressed"},
+      {"npc": "hans_jurgen", "from": "opera_house_plaza", "condition": "follows_gustav"}
+    ],
+    "information_flow": [
+      {"damage_debt_total": "from_all_previous_phases"},
+      {"gustav_state": "to_all_future_sinfonia_locations"},
+      {"hans_jurgen_state": "to_moderato_pub_if_path_c"}
+    ]
+  },
+  
+  "visual_atmosphere": {
+    "lighting_setup": {
+      "moonlight": {
+        "global": true,
+        "color": "#C0C0FF",
+        "intensity": 0.3
+      },
+      "lampposts": {
+        "count": 8,
+        "color": "#F4D03F",
+        "intensity": 0.7,
+        "radius": 60
+      },
+      "statue_spotlight": {
+        "color": "#FFD700",
+        "intensity": 0.5,
+        "target": "johann_strauss_statue"
+      },
+      "gustav_dramatic_light": {
+        "condition": "quest_confrontation",
+        "color": "#FFFFFF",
+        "intensity": 0.4,
+        "type": "moonbeam"
+      }
+    },
+    "particle_effects": [
+      {"type": "autumn_leaves", "density": "low", "direction": "wind_driven"},
+      {"type": "gustav_breath_steam", "trigger": "near_gustav", "color": "#FFFFFF"},
+      {"type": "lamplight_moths", "trigger": "near_lampposts", "density": "sparse"},
+      {"type": "fountain_mist", "trigger": "near_pond", "density": "light"},
+      {"type": "pigeon_feathers", "trigger": "near_pigeon_lady", "density": "sparse"}
+    ],
+    "fog_layer": {
+      "enabled": true,
+      "density": 0.1,
+      "color": "#2C3E50",
+      "height": "ground_level"
+    }
+  }
+}

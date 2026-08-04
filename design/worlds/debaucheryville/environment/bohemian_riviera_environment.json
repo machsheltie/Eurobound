@@ -1,0 +1,261 @@
+{
+  "location_id": "debaucheryville_riverfront_bohemian_riviera_01",
+
+  "ambient_audio": {
+    "background_music": "bohemian_riviera_ambient_eurodance.ogg",
+    "music_style": "distant Eurodance bleeding from three separate, unsynced bar sound systems",
+    "environmental_sounds": [
+      "vacationer_chatter",
+      "cobblestone_to_sand_footstep_transition",
+      "river_lapping_against_embankment",
+      "emtv_crane_idle_hum"
+    ],
+    "audio_transitions": {
+      "enter": "fade_in_2s_eurodance_swell",
+      "exit": "fade_out_1s"
+    },
+    "interactive_audio": {
+      "signup_pen_click": "clipboard_pen_click.ogg",
+      "signup_headset_static": "headset_static.ogg",
+      "signup_page_turn": "release_form_page_turn.ogg",
+      "trivia_countdown_tick": "twelve_second_countdown_tick.ogg",
+      "trivia_correct_chime": "correct_answer_chime.ogg",
+      "trivia_strike_buzzer": "strike_buzzer.ogg",
+      "trivia_crowd_chant": "pet_pet_pet_beer_chant.ogg",
+      "sudden_death_oar_catch_release": "oar_catch_and_release_ramping_2s.ogg",
+      "prize_podium_speedo_strut_fanfare": "speedo_strut_fanfare_sting.ogg",
+      "prize_podium_badge_pin_click": "badge_pin_click.ogg",
+      "prize_podium_stein_leak_drip_loop": "stein_leak_drip_loop.ogg"
+    },
+    "comedy_stingers": {
+      "catapult_launch": "thunk_hisssss_splash.ogg",
+      "mid_sentence_launch_q7_cutoff": "speech_clip_hard_cutoff_then_fading_over_water_1s.ogg",
+      "jaxson_mic_feedback": "short_sharp_feedback_squeal.ogg",
+      "jaxson_accent_slip": "single_clean_czech_syllable_leak.ogg",
+      "aired_episode_bar_tv_loop": "crt_filtered_hostes_lowerthird_loop_20s.ogg"
+    },
+    "note": "The THUNK-hisssss-splash catapult impact note is reused unchanged as the show's de facto theme music, recognizable at low volume through a CRT filter on the bar TV loop."
+  },
+
+  "status_effects": {
+    "environmental_buffs": [],
+    "atmospheric_debuffs": ["port_o_cologne"],
+    "location_specific_states": {
+      "port_o_cologne": {
+        "canonical_ref": "Design/Mechanics/Battle/status_effects.md#Port-O-Cologne",
+        "trigger": "catapult_launch_and_wade_ashore, applied on contact with the shore (launched_into_bacchanus_in_a_loaded_port_o_potty)",
+        "duration": "until_paid_shower_or_spa",
+        "effects": {
+          "charm_modifier": -3,
+          "vendor_price_multiplier": 1.25,
+          "romance_locked": true,
+          "npc_reaction": "locals and vendors keep a polite distance"
+        },
+        "special": "bacchanus_swim_refreshes",
+        "visual_indicator": "fly_swarm_particle_trail",
+        "description": "A fly swarm trails any party member who has been launched into The Bacchanus and waded ashore. \"You smell like second place.\""
+      },
+      "the_herp": {
+        "canonical_ref": "Design/Mechanics/Battle/status_effects.md#The-Herp",
+        "scope_note": "Deliberately NOT listed in atmospheric_debuffs: the_herp is a permanent party status that merely ORIGINATES here, not a location-sourced debuff. This block documents its origin only.",
+        "trigger": "night_event_outbreak_01 at night_party_zone (debaucheryville_sidequest_nothing_is_getting_through_01) — scripted, guaranteed, applied to all three bros at scene end",
+        "duration": "permanent_never_cured_suppressed_only_while_item_gold_circle_coin_equipped",
+        "effects": {
+          "charm_modifier": -2,
+          "romance_locked": true,
+          "romance_lock_behavior": "couchsurf and romance attempts auto-route to the target NPC's characterized rejection scene",
+          "groin_blurts": "rare involuntary dialogue interruptions (\"DOES ANYONE HAVE A BAG OF FROZEN PEAS?!\" / \"IT'S JUST A RASH, I SWEAR!\")",
+          "npc_reaction": "NPCs visibly step back"
+        },
+        "special": "no_temporary_suppressant_exists_anywhere; suppression is party-wide while ANY bro has item_gold_circle_coin equipped, and returns on all three the moment it is unequipped",
+        "visual_indicator": "waist_level_heat_shimmer_particle_reusing_heat_shimmer_png",
+        "description": "Contracted here, diagnosed by the bros as poison ivy, and carried out of Debaucheryville. Věra refuses every standard cure at Midnight Munchies: \"European strains require cinematic-grade containment.\""
+      }
+    },
+    "recovery_options": [
+      "port_o_cologne: zdenka_riverbank_shower_cart_50e_or_40e_if_immediate",
+      "the_herp: none — no cure and no temporary suppressant exists at this location or anywhere in the game; suppression only, via item_gold_circle_coin"
+    ]
+  },
+
+  "couchsurf_integration": {
+    "available": false,
+    "reason": "outdoor_reality_tv_set_and_bar_district"
+  },
+
+  "time_of_day_changes": {
+    "morning": {
+      "lighting": "harsh_flat_beach_resort_brightness_heat_shimmer_building",
+      "crowd_density": "medium",
+      "special_notes": "Pre-taping setup on active filming days"
+    },
+    "day_filming": {
+      "hours": "10:00-17:00, active tapings only",
+      "lighting": "harsh_flat_beach_resort_brightness_heat_shimmer_off_sand",
+      "crowd_density": "very_high",
+      "special_notes": "Full production crew active at catapult_row and signup_table; maximum vacationer crowd density; EMTV crane live and swinging; space heaters running at full blast regardless of ambient temperature; trivia gauntlet and Sudden Death resolve during this window"
+    },
+    "golden_hour_posing": {
+      "hours": "18:00-20:00",
+      "lighting": "dramatic_orange_wash_across_the_river_silhouettes",
+      "crowd_density": "high",
+      "special_notes": "Filming wraps for the day; production crew breaks down but leaves the catapult roped off; vacationer crowd shifts to photo-op mode (flexing at the monitor, sunset selfies); bar strip terraces fill; unwritten golden-hour drink markup; best lighting for screenshots, worst for reading the NO DIVING sign"
+    },
+    "night_rave": {
+      "hours": "22:00-04:00, post-Beatdown-completion only",
+      "lighting": "string_light_pools_emtv_magenta_bar_tv_glow_lifeguard_spotlight_sweep",
+      "crowd_density": "high",
+      "special_notes": "night_party_zone unlocks and activates — string lights, migrating sound system, crowd that arrives from nowhere and stays until sunrise. Bar-strip TVs loop the aired episode at low volume under the music once episode_airing is true. This is the seed for a future 'Herp' questline — hook only, no new mechanics beyond ambient party dressing. Rosťa's retrieval station goes quiet; port-o-potty monuments are lit by string lights and function as informal seating. On the questline's scripted party night this window also stages night_event_outbreak_01 (debaucheryville_sidequest_nothing_is_getting_through_01) — event wiring lives in interactions/bohemian_riviera_interactions.json; ambient dressing here is unchanged."
+    },
+    "late_night": {
+      "lighting": "streetlamp_pools_and_dim_string_light_afterglow",
+      "crowd_density": "low",
+      "special_notes": "Only relevant pre-night_party_zone unlock"
+    }
+  },
+
+  "weather_effects": {
+    "clear": {
+      "modifier": 1.0,
+      "description": "default beach-resort conditions"
+    },
+    "overcast": {
+      "modifier": 0.85,
+      "description": "reduced golden-hour drama, crowd thins slightly"
+    },
+    "rain": {
+      "modifier": 0.5,
+      "audio": "rain_over_river_and_sand.ogg",
+      "visual": "rain_particles_over_trucked_in_sand"
+    }
+  },
+
+  "particle_effects": {
+    "catapult_launch_splash": {
+      "type": "burst",
+      "source": "catapult_row_river_impact_point",
+      "color": "#5E7350",
+      "density": "medium",
+      "movement": "one_per_launch"
+    },
+    "space_heater_heat_shimmer": {
+      "type": "ambient",
+      "source": "fauxst_beach_space_heaters",
+      "color": "#FF7F32",
+      "density": "sparse",
+      "movement": "2_emitters_midday_distortion"
+    },
+    "sand_drift": {
+      "type": "ambient",
+      "source": "fauxst_beach_trucked_in_sand",
+      "color": "#E8D4A0",
+      "density": "sparse",
+      "movement": "low_drift_wind_based"
+    },
+    "confetti_post_win": {
+      "type": "burst",
+      "source": "prize_podium",
+      "color": "#FF1493",
+      "density": "medium",
+      "movement": "post_win_celebration_burst"
+    },
+    "port_o_cologne_flies": {
+      "type": "stream",
+      "source": "affected_party_member",
+      "color": "#5E7350",
+      "density": "medium",
+      "movement": "10_max_trailing_swarm"
+    },
+    "the_herp_heat_shimmer": {
+      "type": "ambient",
+      "source": "affected_party_member_waist_level",
+      "color": "#FF7F32",
+      "density": "sparse",
+      "movement": "subtle_waist_level_distortion_reuses_heat_shimmer_png_from_the_effects_atlas_no_new_asset"
+    },
+    "string_light_glow_bloom": {
+      "type": "ambient",
+      "source": "night_party_zone_and_bar_strip_awnings",
+      "color": "#FFC966",
+      "density": "sparse",
+      "movement": "night_only_ambient_glow"
+    },
+    "camera_flashes": {
+      "type": "burst",
+      "source": "vacationer_crowd_and_emtv_crane",
+      "color": "#FFFFFF",
+      "density": "sparse",
+      "movement": "constant_low_frequency"
+    }
+  },
+
+  "lighting_system": {
+    "primary_ambient": {
+      "color": "#E8D4A0",
+      "intensity": 0.9,
+      "coverage": "entire_location"
+    },
+    "accent_lighting": {
+      "affected_areas": ["catapult_row", "bar_strip"],
+      "color": "#FF1493",
+      "flicker_pattern": "emtv_magenta_bar_tv_glow_at_night"
+    },
+    "point_lights": [
+      {
+        "source": "lifeguard_tower_spotlight",
+        "color": "#FFFFFF",
+        "radius": 96,
+        "intensity": 0.6
+      },
+      {
+        "source": "night_party_zone_string_lights",
+        "color": "#FFC966",
+        "radius": 64,
+        "intensity": 0.7
+      },
+      {
+        "source": "space_heater_glow",
+        "color": "#FF7F32",
+        "radius": 32,
+        "intensity": 0.5
+      }
+    ]
+  },
+
+  "environmental_storytelling": {
+    "permanent_details": [
+      {
+        "element": "delivery_receipt_signpost",
+        "description": "\"40 TONS — RIVERSIDE FILL — NOT FOR HUMAN CONSUMPTION\" delivery receipt stapled to the wooden signpost and never removed",
+        "location": "fauxst_beach entrance signpost"
+      },
+      {
+        "element": "damp_ground_stain",
+        "description": "Permanent damp stain and a faint, specific smell beneath the catapult arm that predates the current filming season",
+        "location": "catapult_row"
+      },
+      {
+        "element": "prize_pallet_2003",
+        "description": "Shrink-wrapped prize pallet stamped 2003, half-opened, visible in the background at catapult_row — never pointed at by anyone on staff",
+        "location": "catapult_row"
+      }
+    ],
+    "dynamic_details": [
+      {
+        "element": "riverbank_portapotty_monuments",
+        "description": "Launched units fished out by Rosťa, stood upright along the embankment as informal landmarks; a vendor sets up next to one; someone's laundry appears on one by Day 6",
+        "visibility": "after beatdown_complete"
+      },
+      {
+        "element": "bar_tv_aired_episode_loop",
+        "description": "Bar-strip TVs begin looping the aired Beatdown episode, CRT-filtered, ~20s, HOSTE lower-third graphic",
+        "visibility": "approximately 1 in-game day after beatdown_complete (episode_airing)"
+      },
+      {
+        "element": "night_party_zone_dressing",
+        "description": "String lights, migrating sound system, and a crowd that arrives from nowhere and stays until sunrise",
+        "visibility": "after beatdown_complete, night hours only"
+      }
+    ]
+  }
+}

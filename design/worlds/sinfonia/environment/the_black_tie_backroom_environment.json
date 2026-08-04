@@ -1,0 +1,311 @@
+{
+  "location_id": "sinfonia_operahouse_blacktie_backroom_01",
+
+  "ambient_audio": {
+    "the_passage": {
+      "background_music": {
+        "approach": {"track": "muffled_string_quartet_through_stone.ogg", "volume": 0.15}
+      },
+      "environmental_sounds": [
+        {"sound": "distant_backstage_hammering", "trigger": "ambient", "volume": 0.1},
+        {"sound": "own_footsteps_on_boards", "trigger": "movement", "volume": 0.25}
+      ]
+    },
+    "staircase": {
+      "background_music": {
+        "descent": {"track": "quartet_resolving_into_clarity.ogg", "volume": 0.3}
+      },
+      "environmental_sounds": [
+        {"sound": "footsteps_boards_to_marble", "trigger": "movement", "volume": 0.3},
+        {"sound": "gas_lamp_hiss", "trigger": "ambient", "volume": 0.1}
+      ]
+    },
+    "foyer": {
+      "background_music": {
+        "normal": {"track": "string_quartet_muted.ogg", "volume": 0.25}
+      },
+      "environmental_sounds": [
+        {"sound": "brass_window_slide", "trigger": "deposit", "volume": 0.4},
+        {"sound": "coins_counted_on_felt_pad", "trigger": "deposit", "volume": 0.35},
+        {"sound": "receipt_spike", "trigger": "deposit", "volume": 0.3},
+        {"sound": "coat_hangers", "trigger": "coat_check", "volume": 0.2}
+      ]
+    },
+    "main_floor": {
+      "background_music": {
+        "normal": {"track": "cards_themed_string_quartet.ogg", "volume": 0.35},
+        "late_night": {"track": "quartet_thinner_two_players.ogg", "volume": 0.3}
+      },
+      "environmental_sounds": [
+        {"sound": "chip_clicks", "trigger": "ambient", "volume": 0.3},
+        {"sound": "card_shuffle", "trigger": "periodic", "interval": 20, "volume": 0.25},
+        {"sound": "murmured_conversation", "trigger": "ambient", "volume": 0.2},
+        {"sound": "roulette_ball_rattle", "trigger": "roulette_spin", "volume": 0.4},
+        {"sound": "champagne_pour", "trigger": "server_nearby", "volume": 0.15}
+      ]
+    },
+    "aarons_corner_table": {
+      "background_music": {
+        "normal": {"track": "cards_themed_string_quartet.ogg", "volume": 0.2, "note": "Same room track, one step quieter — the corner sits in its own acoustic pocket"}
+      },
+      "environmental_sounds": [
+        {"sound": "ice_in_crystal_tumbler", "trigger": "ambient", "volume": 0.25},
+        {"sound": "candy_stick_crunch", "trigger": "ritual_cycle", "volume": 0.45, "note": "Cuts through the room track by design"},
+        {"sound": "carton_lid_soft", "trigger": "ritual_cycle", "volume": 0.2}
+      ]
+    },
+    "high_stakes_salon": {
+      "background_music": {
+        "normal": {"track": "quartet_slower_richer.ogg", "volume": 0.3}
+      },
+      "environmental_sounds": [
+        {"sound": "heavier_chip_stacks", "trigger": "ambient", "volume": 0.3},
+        {"sound": "rope_stanchion_clink", "trigger": "entry", "volume": 0.3}
+      ]
+    },
+    "private_boxes": {
+      "background_music": {
+        "normal": {"track": "near_silence_room_tone.ogg", "volume": 0.1}
+      },
+      "environmental_sounds": [
+        {"sound": "single_deck_riffle", "trigger": "ambient", "volume": 0.3},
+        {"sound": "door_seal_thump", "trigger": "entry", "volume": 0.4}
+      ]
+    }
+  },
+
+  "encounter_audio": {
+    "zone": "aarons_corner_table",
+    "event_id": "blacktie_event_kings_were_humming_01",
+    "music_behavior": "room_track_ducks_does_not_stop",
+    "note": "No stinger, no fanfare, no comedy sting on the reveal. The room keeps playing. Full audio direction is owned by Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md.",
+    "event_sounds": [
+      {"event": "all_in_push", "sounds": ["chips_shoved_across_felt"], "volume": 0.5},
+      {"event": "cards_turned", "sounds": ["two_cards_onto_felt"], "volume": 0.4},
+      {"event": "pot_sweep", "sounds": ["chips_raked_in"], "volume": 0.45},
+      {"event": "candy_crunch", "sounds": ["candy_stick_crunch"], "volume": 0.5}
+    ]
+  },
+
+  "boss_fight_audio": {
+    "zone": "private_boxes",
+    "boss_id": "sinfonia_npc_herr_falsch_01",
+    "track": "card_shark_hybrid_battle.ogg",
+    "style": "string_quartet_with_percussive_card_riffles",
+    "attack_audio": {
+      "full_house": "cards_snapping_into_formation",
+      "dead_mans_hand": "single_low_string_scrape",
+      "the_river": "tiles_flipping_cascade",
+      "ace_up_his_sleeve": "fabric_slide_then_snap"
+    },
+    "on_cheating_exposed": "quartet_drops_to_solo_violin"
+  },
+
+  "win_loss_stingers": {
+    "small_win": "subtle_positive_chime",
+    "big_win": "triumphant_flourish",
+    "small_loss": "quiet_deflation",
+    "big_loss": "dramatic_orchestral_drop",
+    "cleaned_out": "full_tragedy_score_moment",
+    "internal_only": ["sad_trombone_on_losses"],
+    "note": "The sad trombone is a player-side cue and is never audible in-world."
+  },
+
+  "status_effects": {
+    "environmental_buffs": [
+      {
+        "effect_id": "belongs_here",
+        "zone": "main_floor",
+        "trigger": "enter_with_black_tie_attire",
+        "stats": {"charm": 1},
+        "duration": "while_in_zone"
+      },
+      {
+        "effect_id": "high_roller_swagger",
+        "zone": "high_stakes_salon",
+        "trigger": "enter_zone",
+        "stats": {"bravado": 2},
+        "duration": "while_in_zone"
+      },
+      {
+        "effect_id": "gamblers_insight",
+        "trigger": "siegfried_couchsurf_stay",
+        "effect": {"see_one_hidden_card_per_game": true},
+        "duration": "next_session"
+      },
+      {
+        "effect_id": "knows_their_tricks",
+        "trigger": "siegfried_morning_scene_complete",
+        "effect": {"house_edge_reduction": 0.05},
+        "duration": "permanent"
+      }
+    ],
+    "environmental_debuffs": [
+      {
+        "effect_id": "embarrassed",
+        "trigger": "public_loss_at_a_full_table",
+        "stats": {"charm": -2},
+        "duration_hours": 2,
+        "removal": "leave_and_return_next_night"
+      },
+      {
+        "effect_id": "cleaned_out",
+        "trigger": "lose_all_gold",
+        "effect": {"ejected": true, "status": "embarrassed"},
+        "removal": "gold_recovered_elsewhere"
+      },
+      {
+        "effect_id": "watched_closely",
+        "trigger": "caught_cheating_first_offense",
+        "effect": {"cheat_success_rate": -0.5},
+        "duration": "rest_of_session"
+      },
+      {
+        "effect_id": "underdressed",
+        "trigger": "attempt_entry_without_black_tie",
+        "stats": {"charm": -2},
+        "removal": "haute_couture_haberdashery"
+      }
+    ],
+    "recovery_options": [
+      {
+        "status_removed": "stressed",
+        "method": "complimentary_drink",
+        "cost_sov": 0,
+        "hidden_cost": "extends_session_length"
+      },
+      {
+        "status_removed": "embarrassed",
+        "method": "siegfried_coat_check_conversation",
+        "cost_sov": 20
+      }
+    ]
+  },
+
+  "time_of_day_variations": {
+    "closed_daytime": {
+      "hours": "05:00-21:00",
+      "zones_open": [],
+      "activity": "the_door_does_not_open",
+      "crowd_density": "none"
+    },
+    "opening": {
+      "hours": "21:00-23:00",
+      "zones_open": ["foyer", "main_floor", "aarons_corner_table"],
+      "activity": "early_play_thin_tables",
+      "crowd_density": "light"
+    },
+    "peak": {
+      "hours": "23:00-03:00",
+      "zones_open": ["foyer", "main_floor", "aarons_corner_table", "high_stakes_salon", "private_boxes"],
+      "activity": "full_floor_all_games_running",
+      "crowd_density": "full",
+      "herr_falsch_present": true
+    },
+    "last_hours": {
+      "hours": "03:00-05:00",
+      "zones_open": ["foyer", "main_floor", "aarons_corner_table"],
+      "activity": "the_ones_who_cannot_leave",
+      "crowd_density": "sparse",
+      "note": "Aaron is still at the corner table."
+    }
+  },
+
+  "zone_states": {
+    "aarons_corner_table": {
+      "pre_scene": {
+        "lighting": "pendant_lamp_normal",
+        "occupant_animation_set": "ritual_cycle_idle",
+        "interaction": "scene_trigger_armed"
+      },
+      "scene_active": {
+        "lighting": "pendant_up_one_step_room_down_one_step",
+        "camera": "locked_spectator",
+        "betting_ui": false,
+        "duration_owner": "quest_file"
+      },
+      "post_scene": {
+        "lighting": "pendant_lamp_normal",
+        "occupant_animation_set": "ritual_cycle_idle_plus_rake_chips",
+        "interaction": "ambient_dialogue_only",
+        "chip_stack_height": "taller",
+        "permanent": true
+      }
+    }
+  },
+
+  "couchsurf_integration": {
+    "available": true,
+    "host": "sinfonia_npc_siegfried_coatcheck_01",
+    "host_title": "The Reformed Gambler",
+    "location": "apartment_above_the_club",
+    "meeting_requirements": ["win_at_least_once", "lose_at_least_once", "tip_20_sov"],
+    "stay_effects": [
+      {"id": "gamblers_insight", "duration": "next_session"},
+      {"id": "borrowed", "gold_delta": -50},
+      {"id": "knows_their_tricks", "house_edge_reduction": 0.05, "permanent": true}
+    ],
+    "content_owner": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/siegfried_coat_check.md"
+  },
+
+  "cross_location_dependencies": {
+    "incoming_from": [
+      {
+        "location": "sinfonia_bassline_opera_house_01",
+        "connection_type": "hidden_entrance",
+        "portal": "backstage_private_staff_door",
+        "condition": "secret_discovered"
+      }
+    ],
+    "outgoing_to": [
+      {
+        "location": "sinfonia_bassline_opera_house_01",
+        "connection_type": "return_passage",
+        "exit_point": "the_passage"
+      },
+      {
+        "location": "sinfonia_hidden_baroness_ballroom_01",
+        "connection_type": "vault_network",
+        "trigger": "baroness_vault_keys_obtained"
+      }
+    ],
+    "information_flow": [
+      {"cafe_existenz_regulars_hint": "backroom_exists"},
+      {"kaffeehaus_row_gossip": "backroom_stakes"},
+      {"backroom_losses_affect": "haute_couture_haberdashery_valued_client_path"}
+    ],
+    "economic_flow": {
+      "note": "A party that busts here can no longer afford the Haberdashery's 500 Sovs Valued Client path. Organic pressure only; no hard gate in either direction."
+    }
+  },
+
+  "state_management": {
+    "quest_states": {
+      "pre_kings_were_humming": {
+        "corner_table_scene_armed": true,
+        "aaron_present": true,
+        "aaron_animation_set": "ritual_cycle_idle"
+      },
+      "post_kings_were_humming": {
+        "corner_table_scene_consumed": true,
+        "aaron_present": true,
+        "aaron_ambient_dialogue": true,
+        "collateral_chips_lost_sov": 500,
+        "items_held": ["item_candy_smokes", "item_tractor_nft"],
+        "permanent": true
+      },
+      "post_card_shark": {
+        "herr_falsch_defeated": true,
+        "private_boxes_open": true,
+        "item_shark_fin_held": true
+      }
+    },
+    "persistent_changes": [
+      {"trigger": "kings_were_humming_complete", "effect": "aaron_permanent_ambient_at_corner_table"},
+      {"trigger": "herr_falsch_defeated", "effect": "marked_cards_left_on_the_private_box_table"},
+      {"trigger": "high_roller_achieved", "effect": "velvet_rope_stays_open"},
+      {"trigger": "banned", "effect": "anton_blocks_entry_for_24h"},
+      {"trigger": "siegfried_couchsurf_complete", "effect": "house_edge_permanently_reduced"}
+    ]
+  }
+}

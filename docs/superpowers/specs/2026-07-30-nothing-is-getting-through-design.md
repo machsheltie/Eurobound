@@ -109,7 +109,7 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
    *Objets d'Héritage*: "Molded 1990. A piece of cinema history. **It is not for sale. It is for
    aspiration.**" The bros' canonical first-visit snubbing (the shop's existing Assessment
    Protocol) is the Pretty Woman snub; the return is the "Big mistake. Huge." arc.
-   - **PATH A — "Become Someone Who Belongs Here" (trade):** reach Valued Client status (€500
+   - **PATH A — "Become Someone Who Belongs Here" (trade):** reach Valued Client status (500 Sovs
      spent via the shop's EXISTING tier system) + an absurd errand for Monsieur Aiguille; he then
      opens the vitrine with genuine ceremony — he respects the Coin more than they do.
    - **PATH B — "Big. Huge. Mistake." (heist):** after-hours infiltration requiring formal wear
@@ -211,7 +211,7 @@ Do not reference it anywhere.
   question, or even momentarily entertain that they are being scammed, overcharged, or
   manipulated. They believe they are special, always. Canonical example: the VIP "bracelets" —
   kids' 8th-birthday-party bracelets they proudly believe are genuine VIP. Any line where a bro
-  wonders whether he is being played (e.g. "Did we just get manipulated into spending €800?") is
+  wonders whether he is being played (e.g. "Did we just get manipulated into spending 800 Sovs?") is
   a defect and must be rewritten as sincere delusion.
   **Corollary (author-locked):** whenever money changes hands, the bros believe THEY are the ones
   getting one over on the seller — the price is a STEAL, the find is underpriced, the seller

@@ -1,0 +1,80 @@
+{
+  "location_id": "debaucheryville_transit_tram_stop_17_01",
+  "item_category": "buff_rewards",
+  
+  "items": [
+    {
+      "item_id": "jiris_blessing",
+      "display_name": "Jiří's Blessing",
+      "item_type": "permanent_buff",
+      "rarity": "unique",
+      "source": "night_vigil_completion",
+      "price": null,
+      "tradeable": false,
+      
+      "description": {
+        "player_sees": "You stayed with Jiří through the night. You heard his story. The locals know.",
+        "bros_see": "That transit guy really appreciated us hanging out with him. Said we're 'good people.' Europeans are so friendly!"
+      },
+      
+      "acquisition": {
+        "method": "Complete Night Vigil event",
+        "requirements": [
+          "visit_count >= 10",
+          "choose_to_stay_through_night",
+          "listen_to_jiris_story"
+        ],
+        "moment": "Dawn, after Jiří thanks you for staying"
+      },
+      
+      "effects": {
+        "charm_modifier_with_locals": 1,
+        "reputation_flag": "sat_with_jiri",
+        "npc_recognition": true
+      },
+      
+      "npc_recognition_dialogue": {
+        "generic_local": "You're the Americans who sat with Jiří. Good people.",
+        "shopkeeper": "Ah, Jiří's friends! For you, small discount.",
+        "taxi_driver": "You sat with him? All night? ...Respect.",
+        "bar_regular": "Heard about you. Jiří doesn't talk to just anyone."
+      },
+      
+      "hidden_effect": {
+        "final_boss": "Jiří appears in background of final boss arena, still at his stop, giving thumbs up",
+        "condition": "player_has_jiris_blessing"
+      },
+      
+      "visual_indicator": {
+        "menu_display": "Small Jiří face icon with subtle halo",
+        "active_glow": true,
+        "tooltip": "+1 Charm with locals - You sat with Jiří"
+      },
+      
+      "lore": {
+        "what_it_means": "In a city of tourists passing through, you stopped. You stayed. You listened. The locals respect that.",
+        "jiris_words": "Heavy is the head that waits for the 17. But lighter now. Thank you."
+      },
+      
+      "sprite": "blessing_icon.png"
+    }
+  ],
+  
+  "non_item_rewards": {
+    "directions": {
+      "description": "Accurate directions to any location in the city",
+      "always_available": true,
+      "quirk": "Always mentions the 17 as an option"
+    },
+    "post_credits_scene": {
+      "scene_id": "the_17_arrives",
+      "unlock_condition": "night_vigil_completed OR visit_count >= 10",
+      "description": "Emotional post-credits scene where the 17 finally comes and Jiří returns home"
+    }
+  },
+  
+  "shop_economics": {
+    "total_items_available": 0,
+    "note": "This is not a shop location. The only reward is earned through time and compassion."
+  }
+}

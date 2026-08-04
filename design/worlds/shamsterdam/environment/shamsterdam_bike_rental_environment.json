@@ -1,0 +1,238 @@
+{
+  "location_id": "shamsterdam_bike_rental_01",
+  
+  "ambient_audio": {
+    "constant_layers": [
+      {"sound": "bell_testing_quality_checks", "volume": 0.2, "interval": "occasional"},
+      {"sound": "tire_pump_hissing", "volume": 0.15, "interval": "background"},
+      {"sound": "wrench_on_metal", "volume": 0.1, "source": "repair_station"},
+      {"sound": "dutch_conversations_tourist_damage", "volume": 0.2, "background": true}
+    ],
+    "zone_specific": {
+      "main_shop": [
+        {"sound": "register_printing_receipts", "volume": 0.15},
+        {"sound": "credit_card_machine_beep", "volume": 0.1}
+      ],
+      "repair_station": [
+        {"sound": "metal_scraping", "volume": 0.25},
+        {"sound": "chain_clicking", "volume": 0.15},
+        {"sound": "opa_willem_mumbling", "volume": 0.1}
+      ]
+    }
+  },
+  
+  "interactive_audio": {
+    "bell_demonstration": {
+      "trigger": "examine_bike_fleet",
+      "variations": ["ding", "ding_ding", "angry_ding"],
+      "volume": 0.4
+    },
+    "lock_combination": {
+      "trigger": "rental_complete",
+      "sound": "click_click_click",
+      "volume": 0.3
+    },
+    "form_stamping": {
+      "trigger": "insurance_purchase",
+      "sound": "stamp_thunk",
+      "volume": 0.3
+    },
+    "camera_shutter": {
+      "trigger": "anneke_photo",
+      "sound": "click_flash",
+      "volume": 0.4
+    },
+    "opa_sigh": {
+      "trigger": "major_damage_reveal",
+      "sound": "deep_weary_sigh",
+      "volume": 0.5
+    }
+  },
+  
+  "comedy_audio": {
+    "record_scratch": {
+      "trigger": "major_damage_revealed",
+      "sound": "record_scratch_dramatic",
+      "volume": 0.6
+    },
+    "cash_register": {
+      "trigger": "insurance_upsell_success",
+      "sound": "cha_ching",
+      "volume": 0.5
+    },
+    "dramatic_sting": {
+      "trigger": "canal_mentioned",
+      "sound": "dun_dun_dun",
+      "volume": 0.4
+    },
+    "triumphant_fanfare": {
+      "trigger": "undamaged_return",
+      "sound": "ta_da_rare",
+      "volume": 0.6,
+      "rarity": "uncommon"
+    }
+  },
+  
+  "visual_atmosphere": {
+    "lighting": {
+      "main_shop": {
+        "type": "fluorescent_commercial",
+        "color": "#F5F5DC",
+        "intensity": 0.8
+      },
+      "repair_station": {
+        "type": "work_lighting",
+        "color": "#FFF8DC",
+        "intensity": 0.7,
+        "accent": "work_lamp_spotlight"
+      },
+      "window_natural": {
+        "type": "daylight",
+        "varies_with_time": true
+      }
+    },
+    "atmosphere": {
+      "smell_simulation": "tire_rubber_chain_oil_cleaning_products",
+      "cleanliness": "organized_chaos",
+      "energy": "resigned_efficiency"
+    }
+  },
+  
+  "time_of_day_variations": {
+    "morning_opening": {
+      "hours": "08:00-10:00",
+      "atmosphere": "fresh_start_energy",
+      "dirk_mood": "optimistic_briefly",
+      "traffic": "low_tourist_count"
+    },
+    "midday_rush": {
+      "hours": "10:00-14:00",
+      "atmosphere": "busy_constant_flow",
+      "dirk_mood": "standard_deadpan",
+      "traffic": "high_tourist_count",
+      "queue_possible": true
+    },
+    "afternoon_returns": {
+      "hours": "14:00-18:00",
+      "atmosphere": "damage_assessment_time",
+      "dirk_mood": "prepared_for_worst",
+      "traffic": "returns_incoming",
+      "damage_events_processed": true
+    },
+    "evening_close": {
+      "hours": "18:00-21:00",
+      "atmosphere": "winding_down",
+      "dirk_mood": "tallying_the_day",
+      "traffic": "last_returns",
+      "closing_warnings": "active"
+    },
+    "closed": {
+      "hours": "21:00-08:00",
+      "sign": "Closed. Tourists shouldn't cycle in the dark.",
+      "entry_blocked": true
+    }
+  },
+  
+  "status_effects": {
+    "applied_at_location": [
+      {
+        "effect_id": "tourist_mobility",
+        "trigger": "rental_active",
+        "effect": {
+          "bypass_bike_crossing": true,
+          "faster_district_travel": true,
+          "cyclist_shortcuts": true
+        },
+        "duration": "while_rental_active"
+      },
+      {
+        "effect_id": "orange_target",
+        "trigger": "riding_rental_bike",
+        "effect": {
+          "local_judgment": "increased",
+          "local_lesson_chance": 0.10
+        },
+        "duration": "while_on_rental"
+      },
+      {
+        "effect_id": "deposit_anxiety",
+        "trigger": "deposit_held",
+        "effect": {"bravado": -0.05},
+        "duration": "until_bike_returned"
+      },
+      {
+        "effect_id": "helmet_hair",
+        "trigger": "wore_rental_helmet",
+        "effect": {"charm": -0.05},
+        "duration_minutes": 30
+      }
+    ],
+    "buffs_earned": [
+      {
+        "effect_id": "responsible_renter_discount",
+        "trigger": "undamaged_return",
+        "effect": {"next_rental_discount": 0.10},
+        "duration": "next_rental"
+      },
+      {
+        "effect_id": "opa_willems_blessing",
+        "trigger": "platinum_insurance_OR_quest_complete",
+        "effect": {"navigation_shamsterdam": 0.05},
+        "duration": "permanent_from_quest_OR_rental_duration_from_insurance"
+      }
+    ]
+  },
+  
+  "cross_location_connections": {
+    "primary_connection": {
+      "location": "shamsterdam_bike_crossing_thunderdome_01",
+      "relationship": "adjacent_south_sidewalk",
+      "rental_effect": "bypasses_crossing_minigame"
+    },
+    "rental_enables_access_to": [
+      "shamsterdam_coffeeshop_quarter_01",
+      "shamsterdam_museum_mile_01",
+      "shamsterdam_roodelicht_row_01",
+      "shamsterdam_canal_ring_promenade_01",
+      "shamsterdam_cheese_clog_corner_01"
+    ],
+    "quest_connections": [
+      {"quest": "keg_cycle", "requires_rental": true},
+      {"quest": "tour_de_shame", "originates_here": true},
+      {"quest": "canal_recovery", "originates_here": true},
+      {"quest": "brewery_tour", "rental_recommended": true}
+    ]
+  },
+  
+  "mobile_performance": {
+    "geometry_type": "simple_interior",
+    "draw_calls_max": 30,
+    "memory_budget_mb": 35,
+    "particle_budget": 20,
+    "target_fps": 60,
+    "optimization_notes": [
+      "Pre-rendered bike fleet through window",
+      "Dialogue-heavy reduces animation needs",
+      "Menu-based service interactions",
+      "Simple shop interior geometry"
+    ]
+  },
+  
+  "economic_tracking": {
+    "revenue_sources": [
+      "rental_fees",
+      "insurance_packages",
+      "add_ons",
+      "repair_services",
+      "damage_assessments",
+      "deposit_forfeitures"
+    ],
+    "player_spending_average": {
+      "budget_tourist": 15,
+      "standard_tourist": 35,
+      "cautious_tourist": 75
+    },
+    "damage_average_cost": 25,
+    "common_outcome": "35_rental_plus_25_damage_equals_60_total"
+  }
+}

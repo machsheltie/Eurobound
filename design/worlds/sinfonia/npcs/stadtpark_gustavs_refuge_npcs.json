@@ -1,0 +1,318 @@
+{
+  "location_id": "sinfonia_stadtpark_gustavs_refuge_01",
+  
+  "npcs": [
+    {
+      "npc_id": "sinfonia_npc_gustav_horse_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_gustav.md",
+      "display_name": "Gustav",
+      "role": "runaway_horse_quest_target",
+      "importance": "critical",
+      
+      "appearance": {
+        "species": "horse",
+        "breed": "lipizzan",
+        "color": "white_grey",
+        "age": "16_elderly_for_carriage_horse",
+        "condition": "exhausted_disheveled",
+        "accessories": {
+          "opera_cape": "tattered_still_attached",
+          "cafe_feathers": "stuck_throughout_mane_and_cape",
+          "harness_marks": "visible_on_coat"
+        },
+        "eyes": "intelligent_weary_defiant"
+      },
+      
+      "current_state": {
+        "position": "center_of_moonlit_lawn",
+        "physical": ["flanks_heaving", "steam_from_breath"],
+        "emotional": ["tired", "defiant", "done_with_humans"],
+        "behavior": "wont_let_anyone_approach"
+      },
+      
+      "personality": {
+        "intelligence": "remarkably_high_for_horse",
+        "motivation": "freedom_from_tourist_service",
+        "history": "16_years_carriage_service",
+        "breaking_point": "bachelor_parties_and_selfies"
+      },
+      
+      "communication": {
+        "speech": false,
+        "body_language": "remarkably_expressive",
+        "translators": ["pigeon_lady", "papageno"]
+      },
+      
+      "behavior_patterns": {
+        "aggressive_approach": "bolts",
+        "skittles_offer": "approaches_cautiously",
+        "papageno_approach": "allows_close",
+        "hans_jurgen_initial": "backs_away",
+        "trust_earned": "allows_dialogue_resolution"
+      },
+      
+      "animation_states": {
+        "defiant_stand": {"frames": 2, "loop": true},
+        "heavy_breathing": {"frames": 4, "loop": true},
+        "backing_away": {"frames": 4, "loop": false},
+        "bolting": {"frames": 6, "loop": false},
+        "curious_approach": {"frames": 4, "loop": false},
+        "eating_skittles": {"frames": 4, "loop": true},
+        "nuzzle_hans_jurgen": {"frames": 3, "loop": false},
+        "trot_into_moonlight": {"frames": 6, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_hans_jurgen_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md",
+      "display_name": "Hans-Jürgen Pferdmann",
+      "role": "desperate_horse_owner_emotional_core",
+      "importance": "critical",
+      
+      "appearance": {
+        "base": "from_previous_phases",
+        "stadtpark_state": {
+          "dishevelment": "extreme",
+          "running": true,
+          "out_of_breath": true,
+          "lederhosen": "askew",
+          "sweat": "panic_visible",
+          "carrying": "gustavs_halter_hopefully"
+        }
+      },
+      
+      "emotional_arc": {
+        "arrival": "desperate_to_recover_gustav",
+        "realization": "gustav_not_just_running_but_escaping",
+        "confrontation": "own_role_in_gustavs_misery",
+        "resolution": "depends_on_player_choices"
+      },
+      
+      "dialogue": {
+        "arriving": "GUSTAV! Gustav, bitte, please! Come back to Hans-Jürgen!",
+        "realization": "He is not running FROM something. He is running TO something. To... freedom.",
+        "guilt": "Sixteen years. Sixteen years I work him. Never once I ask... is he happy?",
+        "if_gustav_returns": "I will do better, Gustav. No more American bachelor parties. I promise.",
+        "if_gustav_leaves": "Go, old friend. You have earned your... retirement.",
+        "if_gustav_escapes": "He is gone. Gustav is gone forever. What have I done?"
+      },
+      
+      "animation_states": {
+        "running_desperate": {"frames": 6, "loop": true},
+        "out_of_breath": {"frames": 2, "loop": true},
+        "pleading": {"frames": 4, "loop": true},
+        "realization": {"frames": 3, "loop": false},
+        "crying": {"frames": 2, "loop": true},
+        "relief_reunion": {"frames": 4, "loop": false},
+        "accepting_goodbye": {"frames": 3, "loop": false}
+      },
+      
+      "post_quest_states": {
+        "path_a": {"disposition": "grateful", "offers_fiaker_service": true},
+        "path_b": {"disposition": "accepting", "visits_park_daily": true},
+        "path_c": {"disposition": "devastated", "becomes_sad_drunk": true},
+        "path_d": {"disposition": "hostile", "hates_americans": true}
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_pigeon_lady_01",
+      "display_name": "Pigeon Lady",
+      "role": "horse_whisperer_translator_oracle",
+      "importance": "secondary",
+      
+      "appearance": {
+        "age": "elderly_indeterminate",
+        "clothing": "layers_of_shawls_and_scarves",
+        "companions": "surrounded_by_pigeons_even_at_night",
+        "expression": "cryptic_knowing_smile",
+        "presence": "somehow_already_here"
+      },
+      
+      "personality": {
+        "traits": ["mysterious", "all_knowing", "casually_psychic"],
+        "speech_pattern": "cryptic_but_helpful",
+        "relationship_with_gustav": "old_friends",
+        "knows": "everything_about_everyone"
+      },
+      
+      "dialogue": {
+        "greeting": "Ah, you found him. Gustav knew you would come.",
+        "translation_tired": "He tells me he is tired. Tired of the cobblestones. Tired of the tourists. Tired of the smell of beer.",
+        "observation": "Gustav says... you are the first Americans who did not ask for a selfie.",
+        "hint": "Give him the rainbow candies. He likes the rainbow candies.",
+        "wisdom": "Sometimes freedom is not running away. Sometimes it is choosing to stay.",
+        "departure": "The pigeons and I will watch over him. We always have."
+      },
+      
+      "function": {
+        "translates": "gustavs_body_language",
+        "provides": "insight_into_emotional_state",
+        "hints_at": "resolution_methods",
+        "optional": true
+      },
+      
+      "animation_states": {
+        "standing_with_pigeons": {"frames": 2, "loop": true},
+        "cryptic_gesture": {"frames": 3, "loop": false},
+        "feeding_pigeons": {"frames": 4, "loop": true}
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_papageno_franz_01",
+      "display_name": "Papageno (Franz)",
+      "role": "animal_communicator_ally_resolution_enabler",
+      "importance": "conditional",
+      "condition": "papageno_ally_path_from_opera",
+      
+      "appearance": {
+        "costume": "full_papageno_bird_suit",
+        "condition": "feathers_worse_for_wear",
+        "accessories": "bird_seeds_still_in_pouch",
+        "expression": "genuinely_excited_to_help"
+      },
+      
+      "function": {
+        "can_approach_gustav": "without_causing_bolt",
+        "alternative_resolution": "without_skittles",
+        "comedic_commentary": true,
+        "translates": "gustavs_responses_in_character"
+      },
+      
+      "dialogue": {
+        "arrival": "Gustav! Papageno's friend! You came to the park too!",
+        "to_horse": "*whistles* Papageno knows freedom. Papageno was once caged in bird suit. ...Wait, Papageno still in bird suit.",
+        "translating": "Gustav says he will consider returning. But he wants guarantees.",
+        "suggestion": "The bird-man has an idea! What if Gustav becomes... a PARK horse?",
+        "success": "Papageno knew the horse and the bird-man would understand each other!"
+      },
+      
+      "special_ability": {
+        "bandstand_performance": {
+          "location": "bandstand_pavilion",
+          "effect": "calms_gustav_alternative_to_skittles",
+          "animation": "papageno_song_and_dance"
+        }
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_regisseur_hoffmann_01",
+      "display_name": "Director Heinrich Hoffmann",
+      "role": "debt_collector_complication",
+      "importance": "conditional",
+      "condition": "debt_not_addressed_at_opera",
+      
+      "appearance": {
+        "state": "still_furious_from_opera",
+        "condition": "disheveled_from_chase",
+        "props": "clutching_invoice_dramatically",
+        "phone": "opera_house_lawyer_on_line"
+      },
+      
+      "function": {
+        "complicates_resolution": true,
+        "demands_payment": true,
+        "can_be_negotiated": true,
+        "adds_urgency": true
+      },
+      
+      "dialogue": {
+        "arrival": "THERE you are! You think you can run from Sinfonia-trained lawyers?!",
+        "demand": "2,000 Sovs! Plus emotional damages! Plus—",
+        "distracted": "*sees Gustav* ...why is that horse wearing a cape?",
+        "if_paid": "Hmph. Very well. The arts... accept your contribution.",
+        "if_negotiated": "Hans-Jürgen's insurance covers... some. You owe... 1,000 Sovs. Final.",
+        "if_ignored": "I will find you! I know where you are staying! ...Where are you staying?"
+      },
+      
+      "negotiation": {
+        "base_demand": 2000,
+        "charm_4_reduction": 500,
+        "bravado_4_reduction": 300,
+        "minimum_payment": 500
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_homeless_philosopher_01",
+      "display_name": "Homeless Philosopher",
+      "role": "minor_npc_wisdom_vendor",
+      "importance": "ambient",
+      
+      "appearance": {
+        "age": "indeterminate_weathered",
+        "clothing": "layers_of_coats_academic_origin",
+        "location": "park_bench",
+        "props": ["worn_philosophy_book", "empty_bottle"]
+      },
+      
+      "dialogue": {
+        "greeting": "*clears throat* Wisdom costs 1 Sov. Or a sip of something warm.",
+        "wisdom_1": "The horse runs because he can. We stay because we forgot we could run.",
+        "wisdom_2": "Skittles are not just candy. They are a rainbow of intention.",
+        "wisdom_3": "I was once a professor. Then I learned too much. Now I know nothing. Progress.",
+        "payment_refused": "Then you are not ready for wisdom. The bench is still free."
+      },
+      
+      "function": {
+        "sells_wisdom": {"cost": 1, "effect": "cryptic_but_helpful_hint"},
+        "comic_relief": true,
+        "optional": true
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_making_out_couple_01",
+      "display_name": "Oblivious Couple",
+      "role": "background_comedy",
+      "importance": "ambient",
+      
+      "appearance": {
+        "state": "making_out_on_bench",
+        "awareness": "zero",
+        "reaction_to_chaos": "none"
+      },
+      
+      "dialogue": {
+        "if_interrupted": "*briefly* Was? Oh. There is a horse. *continues*"
+      }
+    },
+    
+    {
+      "npc_id": "sinfonia_npc_sleeping_tourist_01",
+      "display_name": "Sleeping Tourist",
+      "role": "background_comedy",
+      "importance": "ambient",
+      
+      "appearance": {
+        "state": "passed_out_on_bench",
+        "props": ["guide_book_as_pillow", "camera_around_neck"],
+        "reaction": "does_not_wake_through_anything"
+      }
+    }
+  ],
+  
+  "npc_spawn_conditions": {
+    "always_present_quest": ["gustav", "hans_jurgen", "pigeon_lady"],
+    "conditional_quest": {
+      "papageno": "papageno_ally_path",
+      "director": "debt_unaddressed"
+    },
+    "ambient_always": ["homeless_philosopher", "making_out_couple", "sleeping_tourist"],
+    "post_quest_path_b": ["gustav_as_park_horse"]
+  },
+  
+  "spawn_points": {
+    "gustav": {"x": 200, "y": 150, "zone": "central_lawn"},
+    "hans_jurgen": {"x": 50, "y": 200, "zone": "entry_path", "moves_to": "central_lawn"},
+    "pigeon_lady": {"x": 180, "y": 180, "zone": "near_gustav"},
+    "papageno": {"x": 60, "y": 190, "zone": "entry_path", "condition": "ally_path"},
+    "director": {"x": 40, "y": 220, "zone": "entry_path", "condition": "debt_unaddressed"},
+    "homeless_philosopher": {"x": 100, "y": 250, "zone": "bench_area"},
+    "making_out_couple": {"x": 280, "y": 100, "zone": "secluded_bench"},
+    "sleeping_tourist": {"x": 120, "y": 280, "zone": "bench_area"}
+  }
+}

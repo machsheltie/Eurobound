@@ -1,0 +1,296 @@
+{
+  "locations": [
+    {
+      "name": "Voetgangerstunnel",
+      "tag_id": "shamsterdam_voetgangerstunnel_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "An underground pedestrian tunnel network beneath Central Shamsterdam. Designed to help pedestrians avoid surface bicycle chaos, it has instead become a labyrinth of confusing corridors, misleading signs, and wrong destinations. The Dutch designed it this way on purpose.",
+        "entry_condition": "Unlock from Bike Crossing (10 successful crossings) OR discovered from other entrances"
+      },
+      "interior": {
+        "theme": "1970s Dutch infrastructure brutalism, navigation confusion, probability-based exits",
+        "features": [
+          "zone_1: entrance_hall (marloes_kiosk, wrong_wall_map)",
+          "zone_2: intersection_of_doubt (five_corridors, henk_booth, color_tiles)",
+          "zone_3: long_corridor (willem_busker, endless_perspective)",
+          "zone_4: wrong_turn_zone (probability_exits, graffiti_hints)",
+          "zone_5: actual_exit (correct_destination)",
+          "probability_navigation_system",
+          "audio_based_direction_hints",
+          "wrong_exit_consequences",
+          "hidden_febo_shortcut"
+        ]
+      },
+      "functions": [
+        "Alternative to Bike Crossing surface",
+        "Navigation puzzle with probability outcomes",
+        "Comedy reveal: accidental Red Light District discovery",
+        "NPC services: map vendor, security guard, busker hints",
+        "Hidden quests: Eternal Busker, FEBO Shortcut",
+        "Stay Away Campaign pamphlet #4"
+      ]
+    },
+    {
+      "name": "Voetgangerstunnel - Entrance Hall",
+      "tag_id": "shamsterdam_voetgangerstunnel_entrance_01",
+      "region": "Shamsterdam",
+      "zone_number": 1,
+      "exterior": {
+        "description": "Stairs descending from the Bike Crossing into the underground network. A wall-mounted map promises clarity but delivers confusion. Marloes's kiosk offers the only accurate navigation aid—for a price.",
+        "entry_condition": "From Bike Crossing (unlocked) or Centraal Chaos basement"
+      },
+      "interior": {
+        "theme": "False hope, service point, tutorial zone",
+        "features": [
+          "npc: marloes_mapvendor (kiosk)",
+          "interactive: wall_map_wrong_layout",
+          "interactive: you_are_here_dot_wrong",
+          "exit_up: bike_crossing_surface",
+          "exit_forward: intersection_of_doubt"
+        ]
+      },
+      "functions": [
+        "Entry point from surface",
+        "Map purchase opportunity",
+        "Tutorial introduction",
+        "First navigation decision"
+      ]
+    },
+    {
+      "name": "Voetgangerstunnel - Intersection of Doubt",
+      "tag_id": "shamsterdam_voetgangerstunnel_intersection_01",
+      "region": "Shamsterdam",
+      "zone_number": 2,
+      "exterior": {
+        "description": "Five corridors meet at a single point. All signs point vaguely in the same direction. Color-coded tile lines lead different ways, but no legend exists to explain them. Henk the security guard sits at a small booth, ready to help. Sort of.",
+        "entry_condition": "From Entrance Hall"
+      },
+      "interior": {
+        "theme": "Decision paralysis, unhelpful assistance, navigation hub",
+        "features": [
+          "npc: henk_security (booth)",
+          "interactive: five_corridor_junction",
+          "interactive: color_coded_tiles (blue, orange, yellow)",
+          "interactive: direction_signs_vague",
+          "audio: echoes_from_all_directions",
+          "exit_1: long_corridor",
+          "exit_2: wrong_turn_zone",
+          "exit_3: return_to_entrance",
+          "exit_4: mystery_direction",
+          "exit_5: also_mystery"
+        ]
+      },
+      "functions": [
+        "Primary navigation decision point",
+        "Henk services (directions, escort)",
+        "Color tile red herrings",
+        "Audio hint introduction"
+      ]
+    },
+    {
+      "name": "Voetgangerstunnel - Long Corridor",
+      "tag_id": "shamsterdam_voetgangerstunnel_long_corridor_01",
+      "region": "Shamsterdam",
+      "zone_number": 3,
+      "exterior": {
+        "description": "A seemingly endless straight passage lined with faded advertisements from decades past. Willem the Eternal Busker plays his accordion at the same spot he's always played. The corridor stretches beyond comfortable perception.",
+        "entry_condition": "From Intersection of Doubt"
+      },
+      "interior": {
+        "theme": "Time distortion, landmark NPC, endless perspective",
+        "features": [
+          "npc: willem_busker (same spot always)",
+          "interactive: vintage_advertisements_2003",
+          "interactive: tip_jar_2.47_euro",
+          "visual: endless_corridor_effect",
+          "audio: accordion_constant",
+          "atmosphere: unidentifiable_smell",
+          "exit_forward: wrong_turn_zone"
+        ]
+      },
+      "functions": [
+        "Willem navigation hints (tips required)",
+        "Eternal Busker quest trigger",
+        "Reliable landmark (audio cue)",
+        "Environmental storytelling"
+      ]
+    },
+    {
+      "name": "Voetgangerstunnel - Wrong Turn Zone",
+      "tag_id": "shamsterdam_voetgangerstunnel_wrong_turn_01",
+      "region": "Shamsterdam",
+      "zone_number": 4,
+      "exterior": {
+        "description": "The zone where navigation actually happens. Signs change between visits. Multiple exits lead to wildly different destinations. Graffiti on the walls provides the only honest guidance—if you can see it.",
+        "entry_condition": "From Long Corridor or Intersection"
+      },
+      "interior": {
+        "theme": "Probability navigation, hidden hints, consequence zone",
+        "features": [
+          "interactive: dynamic_signage",
+          "interactive: graffiti_hints (flashlight_required)",
+          "interactive: emergency_exit_signs (reliable)",
+          "exit_a: centraal_station (40% if signed)",
+          "exit_b: roodelicht_row (35% if signed station)",
+          "exit_c: coffeeshop_quarter (15%)",
+          "exit_d: canal_surface (20%)",
+          "exit_e: return_to_start (10%)",
+          "exit_hidden: febo_automat (quest_unlock)"
+        ]
+      },
+      "functions": [
+        "Navigation probability calculations",
+        "Wrong exit triggers",
+        "Graffiti hint system",
+        "Hidden FEBO shortcut"
+      ]
+    },
+    {
+      "name": "Voetgangerstunnel - Correct Exit",
+      "tag_id": "shamsterdam_voetgangerstunnel_correct_exit_01",
+      "region": "Shamsterdam",
+      "zone_number": 5,
+      "exterior": {
+        "description": "The correct exit appears suddenly when you've given up hope. Daylight bleeds in from the stairs ahead. You've made it—though the triumph feels hollow after twenty minutes underground.",
+        "entry_condition": "Successful navigation probability check"
+      },
+      "interior": {
+        "theme": "Victory zone, hollow triumph, buff application",
+        "features": [
+          "visual: daylight_bleeding_in",
+          "audio: surface_sounds_increasing",
+          "buff_trigger: crossing_confidence",
+          "achievement_check: navigation_success",
+          "selfie_prop: tunnel_survivor",
+          "exit_up: intended_destination"
+        ]
+      },
+      "functions": [
+        "Navigation success confirmation",
+        "Buff application",
+        "Achievement triggers",
+        "Exit to surface"
+      ]
+    },
+    {
+      "name": "Voetgangerstunnel - Red Light Emergence",
+      "tag_id": "shamsterdam_voetgangerstunnel_redlight_exit_01",
+      "region": "Shamsterdam",
+      "exit_type": "wrong_exit",
+      "exterior": {
+        "description": "The stairs emerge directly between two red-lit windows in Roodelicht Row. This was NOT your intended destination. Mevrouw Jansen watches from her apartment window above, watering her plants and judging you.",
+        "entry_condition": "Wrong exit probability (35% when following station signs)"
+      },
+      "interior": {
+        "theme": "Embarrassing emergence, wrong destination, comedy reveal",
+        "features": [
+          "npc: mevrouw_jansen (apartment_window)",
+          "debuff_trigger: red_light_shame",
+          "selfie_prop: accidental_tourist",
+          "achievement: scenic_route",
+          "no_reentry: tunnel_from_here",
+          "exit: roodelicht_row_surface"
+        ]
+      },
+      "functions": [
+        "Primary comedy reveal",
+        "Red Light Shame debuff",
+        "Scenic Route achievement",
+        "Surface navigation reset"
+      ]
+    },
+    {
+      "name": "Voetgangerstunnel - Underground Bicycle Parking",
+      "tag_id": "shamsterdam_voetgangerstunnel_bike_parking_01",
+      "region": "Shamsterdam",
+      "sub_area": true,
+      "exterior": {
+        "description": "An underground bicycle parking garage containing 10,000+ bicycles. You escaped the bikes above only to find more below. Somewhere in here is a rusted bike with a 1987 parking tag.",
+        "entry_condition": "Accessible from Zone 2 wrong turn OR exploration"
+      },
+      "interior": {
+        "theme": "Visual joke, additional navigation hazard, easter egg",
+        "features": [
+          "visual: endless_bicycles_underground",
+          "interactive: rusted_bike_1987_tag",
+          "hazard: can_get_lost_in_parking",
+          "comedy: bikes_are_inescapable",
+          "collectible: vintage_bike_tag"
+        ]
+      },
+      "functions": [
+        "Environmental comedy",
+        "Easter egg collectible",
+        "Additional confusion option"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "primary_path": [
+      {"from": "entrance_hall", "to": "intersection_of_doubt", "type": "progression"},
+      {"from": "intersection_of_doubt", "to": "long_corridor", "type": "choice"},
+      {"from": "intersection_of_doubt", "to": "wrong_turn_zone", "type": "choice"},
+      {"from": "long_corridor", "to": "wrong_turn_zone", "type": "progression"},
+      {"from": "wrong_turn_zone", "to": "correct_exit", "type": "probability_success"},
+      {"from": "wrong_turn_zone", "to": "redlight_exit", "type": "probability_fail"},
+      {"from": "wrong_turn_zone", "to": "entrance_hall", "type": "probability_loop"}
+    ],
+    "external_connections": [
+      {"from": "entrance_hall", "to": "shamsterdam_bike_crossing_thunderdome_01", "type": "surface_access"},
+      {"from": "correct_exit", "to": "shamsterdam_central_station_01", "type": "intended_destination"},
+      {"from": "correct_exit", "to": "shamsterdam_museum_mile_01", "type": "intended_destination"},
+      {"from": "redlight_exit", "to": "shamsterdam_roodelicht_row_01", "type": "wrong_destination"},
+      {"from": "wrong_turn_zone", "to": "shamsterdam_coffeeshop_quarter_01", "type": "wrong_destination"},
+      {"from": "wrong_turn_zone", "to": "shamsterdam_canal_ring_promenade_01", "type": "wrong_destination"},
+      {"from": "wrong_turn_zone", "to": "shamsterdam_febo_automat_01", "type": "hidden_shortcut"}
+    ],
+    "hidden_connections": [
+      {"id": "febo_backdoor", "from": "wrong_turn_zone", "to": "febo_automat", "unlock": "febo_shortcut_quest"}
+    ]
+  },
+  
+  "spatial_layout": {
+    "total_network_length_meters": 500,
+    "corridor_width_meters": 3.5,
+    "ceiling_height_meters": 2.5,
+    "zones": {
+      "entrance_hall": {"depth_meters": 30, "complexity": "simple"},
+      "intersection_of_doubt": {"diameter_meters": 15, "corridors": 5, "complexity": "high"},
+      "long_corridor": {"length_meters": 150, "width_meters": 3, "complexity": "simple"},
+      "wrong_turn_zone": {"area_sqm": 200, "exits": 6, "complexity": "high"},
+      "correct_exit": {"depth_meters": 20, "complexity": "simple"}
+    }
+  },
+  
+  "navigation_probability_map": {
+    "zone_4_exits": {
+      "exit_a_station": {
+        "sign_says": "Centraal Station",
+        "probabilities": {
+          "centraal_station": 0.40,
+          "roodelicht_row": 0.35,
+          "coffeeshop_quarter": 0.15,
+          "return_to_start": 0.10
+        }
+      },
+      "exit_b_museum": {
+        "sign_says": "Museum Plein",
+        "probabilities": {
+          "museum_mile": 0.50,
+          "febo_automat": 0.30,
+          "canal_surface": 0.20
+        }
+      },
+      "exit_emergency": {
+        "sign_says": "Nooduitgang",
+        "probabilities": {
+          "correct_destination": 0.90,
+          "slight_detour": 0.10
+        },
+        "secret": "emergency_signs_are_reliable"
+      }
+    }
+  }
+}

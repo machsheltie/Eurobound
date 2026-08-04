@@ -1,0 +1,303 @@
+{
+  "locations": [
+    {
+      "name": "Central Shamsterdam Bike Crossing",
+      "tag_id": "shamsterdam_bike_crossing_thunderdome_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "A nightmarish intersection where six bike lanes, two tram tracks, and pure Dutch contempt for pedestrians collide. Thousands of bicycles flow in both directions with mechanical precision. A tiny pedestrian island offers false hope in the center. Café terraces line the southwest corner where locals watch and judge.",
+        "entry_condition": "Cannot be avoided - central hub connecting all major Shamsterdam districts"
+      },
+      "interior": {
+        "theme": "Environmental hazard, Frogger-style survival, Dutch cycling culture satire",
+        "features": [
+          "minigame_zone: frogger_crossing",
+          "lane_hazard: slow_bikes_x2",
+          "lane_hazard: medium_bikes_x2",
+          "lane_hazard: fast_bikes_x2",
+          "lane_hazard: tram_track_x2",
+          "safe_zone: pedestrian_island",
+          "safe_zone: cafe_terrace",
+          "npc_service: bike_rental_guy_01",
+          "npc_ambient: gerrit_philosopher_01",
+          "npc_quest: mama_bakfiets_01",
+          "npc_ambient: fallen_tourist_01",
+          "npc_patrol: officer_vandenberg_01",
+          "event: cargo_parade (every_90_seconds)",
+          "exit_north: canal_ring_promenade",
+          "exit_south: roodelicht_row",
+          "exit_east: museum_mile",
+          "exit_west: coffeeshop_quarter",
+          "shortcut_unlock: underground_passage",
+          "shortcut_unlock: rooftop_route"
+        ]
+      },
+      "functions": [
+        "Central transit hub for Shamsterdam",
+        "Frogger-style mini-game location",
+        "Environmental hazard zone",
+        "Multiple quest gate (requires crossing)",
+        "Bike rental service",
+        "Achievement challenges (Dodge Master, Rush Hour Survivor)",
+        "Cargo Cult sidequest trigger",
+        "Tourist rescue escort mission",
+        "Shortcut unlocks after mastery"
+      ]
+    },
+    {
+      "name": "Bike Crossing - South Sidewalk",
+      "tag_id": "shamsterdam_bike_crossing_south_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "The starting point for most crossing attempts. A bike rental kiosk stands near the entrance. Warning signs in four languages are thoroughly ignored. A Tourism Board rep hands out pamphlets suggesting you shouldn't have come.",
+        "entry_condition": "Default entry from Roodelicht Row"
+      },
+      "interior": {
+        "theme": "Safe zone, preparation area, service point",
+        "features": [
+          "npc_service: bike_rental_guy_01",
+          "npc_ambient: stay_away_pamphleteer_01",
+          "interactive: traffic_signal_button (useless)",
+          "interactive: warning_signs",
+          "crossing_start_point: true",
+          "exit_to: roodelicht_row"
+        ]
+      },
+      "functions": [
+        "Crossing start point",
+        "Bike rental service",
+        "Tutorial trigger zone",
+        "Stay Away Campaign pamphlet #3"
+      ]
+    },
+    {
+      "name": "Bike Crossing - South Lanes (1-3)",
+      "tag_id": "shamsterdam_bike_crossing_lanes_south_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "Three lanes of eastbound bicycle traffic. Lane 1 carries slower tourists on rental bikes. Lane 2 flows with steady commuter traffic. Lane 3 is chaos—students texting, delivery riders, and the terrifying silent elderly cyclists.",
+        "entry_condition": "Minigame active, entered from south sidewalk"
+      },
+      "interior": {
+        "theme": "First crossing challenge, escalating difficulty",
+        "features": [
+          "lane_1: slow_bikes (tourist_rental, elder)",
+          "lane_2: medium_bikes (commuter, student)",
+          "lane_3: fast_bikes (delivery, student, elder)",
+          "direction: eastbound",
+          "hazard_level: escalating"
+        ]
+      },
+      "functions": [
+        "Phase 1 of crossing mini-game",
+        "Difficulty gradient introduction",
+        "First collision risk zone"
+      ]
+    },
+    {
+      "name": "Bike Crossing - Tram Track 1",
+      "tag_id": "shamsterdam_bike_crossing_tram_1_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "Steel rails embedded in the road. A tram passes every 45 seconds, announced by a bell 3 seconds before arrival. The crossing window is exactly 2 seconds. The tram does not stop.",
+        "entry_condition": "Minigame active, cleared Lane 3"
+      },
+      "interior": {
+        "theme": "Lethal hazard, timing challenge",
+        "features": [
+          "hazard: tram (lethal)",
+          "interval: 45_seconds",
+          "warning: 3_seconds_audio",
+          "crossing_window: 2_seconds",
+          "damage_if_hit: 50"
+        ]
+      },
+      "functions": [
+        "High-stakes timing challenge",
+        "Audio-dependent gameplay",
+        "Tram Survivor achievement trigger"
+      ]
+    },
+    {
+      "name": "Bike Crossing - Pedestrian Island",
+      "tag_id": "shamsterdam_bike_crossing_island_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "A tiny raised platform between the tram tracks. Maximum capacity: 3 people. Maximum safe stay: 2 seconds. A traumatized American tourist sits here, staring at nothing. This is not safety—it's a pause.",
+        "entry_condition": "Minigame active, cleared Tram Track 1"
+      },
+      "interior": {
+        "theme": "False safety, brief respite, NPC encounter",
+        "features": [
+          "safe_zone: temporary (2_seconds_max)",
+          "capacity: 3_people",
+          "npc_resident: fallen_tourist_01",
+          "overstay_risk: blocking_traffic_fine"
+        ]
+      },
+      "functions": [
+        "Brief safe zone during crossing",
+        "Fallen Tourist NPC location",
+        "Tourist rescue quest trigger",
+        "Fine risk if lingering"
+      ]
+    },
+    {
+      "name": "Bike Crossing - Tram Track 2",
+      "tag_id": "shamsterdam_bike_crossing_tram_2_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "The second set of tram tracks, offset from the first by 22 seconds. The timing is merciful—slightly. Trams heading the opposite direction pass here.",
+        "entry_condition": "Minigame active, left Pedestrian Island"
+      },
+      "interior": {
+        "theme": "Second lethal hazard, offset timing",
+        "features": [
+          "hazard: tram (lethal)",
+          "interval: 45_seconds",
+          "offset_from_track_1: 22_seconds",
+          "warning: 3_seconds_audio",
+          "crossing_window: 2_seconds"
+        ]
+      },
+      "functions": [
+        "Second timing challenge",
+        "Tests pattern learning",
+        "Offset creates strategy options"
+      ]
+    },
+    {
+      "name": "Bike Crossing - North Lanes (4-6)",
+      "tag_id": "shamsterdam_bike_crossing_lanes_north_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "Three lanes of westbound bicycle traffic. Lane 4 is the danger zone—delivery riders and focused commuters. Lane 5 carries parent cargo bikes. Lane 6 is the home stretch—tourist tandems and wobbly rentals.",
+        "entry_condition": "Minigame active, cleared Tram Track 2"
+      },
+      "interior": {
+        "theme": "Final crossing challenge, reverse difficulty gradient",
+        "features": [
+          "lane_4: fast_bikes (delivery, commuter)",
+          "lane_5: medium_bikes (commuter, parent_bakfiets)",
+          "lane_6: slow_bikes (tourist_rental, tandem_couple)",
+          "direction: westbound",
+          "hazard_level: descending"
+        ]
+      },
+      "functions": [
+        "Phase 2 of crossing mini-game",
+        "Reverse difficulty gradient",
+        "Final obstacle before success"
+      ]
+    },
+    {
+      "name": "Bike Crossing - North Sidewalk",
+      "tag_id": "shamsterdam_bike_crossing_north_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "The promised land. Dry ground. Safety. A view of the canal to the north, the chaos behind you. From here, paths lead to the Museum Mile, Canal Ring Promenade, and—if you survived—earned respect.",
+        "entry_condition": "Minigame complete, survived crossing"
+      },
+      "interior": {
+        "theme": "Victory zone, reward application, exit options",
+        "features": [
+          "success_trigger: crossing_complete",
+          "buff_application_zone: true",
+          "selfie_prop: crossing_survivor",
+          "exit_to: canal_ring_promenade (north)",
+          "exit_to: museum_mile (east)",
+          "view: canal_with_sunken_bikes"
+        ]
+      },
+      "functions": [
+        "Crossing completion zone",
+        "Achievement/buff triggers",
+        "Selfie opportunity",
+        "Exit to multiple districts"
+      ]
+    },
+    {
+      "name": "Bike Crossing - Café Terrace",
+      "tag_id": "shamsterdam_bike_crossing_cafe_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "A safe zone on the southwest corner where locals gather to watch tourists attempt the crossing. Gerrit the Traffic Philosopher has sat here for 30 years. The coffee is overpriced. The entertainment is free.",
+        "entry_condition": "Open access from south sidewalk"
+      },
+      "interior": {
+        "theme": "Observation point, safe zone, NPC wisdom",
+        "features": [
+          "safe_zone: permanent",
+          "npc_resident: gerrit_traffic_philosopher_01",
+          "service: coffee (4_euro, heal_5_hp)",
+          "function: observe_crossing_for_buff",
+          "view: entire_crossing_visible"
+        ]
+      },
+      "functions": [
+        "Permanent safe zone",
+        "Gerrit NPC interaction",
+        "Observation buff (30 seconds watching = traffic insight)",
+        "Recovery point between attempts"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "crossing_sequence": [
+      {"from": "south_sidewalk", "to": "lanes_south", "type": "minigame_start"},
+      {"from": "lanes_south", "to": "tram_track_1", "type": "minigame_phase"},
+      {"from": "tram_track_1", "to": "pedestrian_island", "type": "minigame_phase"},
+      {"from": "pedestrian_island", "to": "tram_track_2", "type": "minigame_phase"},
+      {"from": "tram_track_2", "to": "lanes_north", "type": "minigame_phase"},
+      {"from": "lanes_north", "to": "north_sidewalk", "type": "minigame_complete"}
+    ],
+    "safe_zone_access": [
+      {"from": "south_sidewalk", "to": "cafe_terrace", "type": "free_access"},
+      {"from": "cafe_terrace", "to": "south_sidewalk", "type": "free_access"}
+    ],
+    "external_connections": [
+      {"from": "south_sidewalk", "to": "shamsterdam_roodelicht_row_01", "type": "district_exit"},
+      {"from": "north_sidewalk", "to": "shamsterdam_canal_ring_promenade_01", "type": "district_exit"},
+      {"from": "north_sidewalk", "to": "shamsterdam_museum_mile_01", "type": "district_exit"},
+      {"from": "south_sidewalk", "to": "shamsterdam_coffeeshop_quarter_01", "type": "district_exit"}
+    ],
+    "shortcuts": [
+      {"id": "underground_passage", "connects": ["south_sidewalk", "north_sidewalk"], "unlock": "10_crossings"},
+      {"id": "rooftop_route", "connects": ["south_sidewalk", "north_sidewalk"], "unlock": "cargo_cult_quest"}
+    ]
+  },
+  
+  "spatial_layout": {
+    "total_dimensions": {
+      "width_meters": 50,
+      "depth_meters": 40
+    },
+    "lane_widths_meters": {
+      "bike_lane": 3,
+      "tram_track": 4,
+      "pedestrian_island": 3
+    },
+    "zones": {
+      "south_sidewalk": {"y_range": [0, 5], "type": "safe"},
+      "lane_1": {"y_range": [5, 8], "type": "hazard_easy"},
+      "lane_2": {"y_range": [8, 11], "type": "hazard_medium"},
+      "lane_3": {"y_range": [11, 14], "type": "hazard_hard"},
+      "tram_track_1": {"y_range": [14, 18], "type": "hazard_lethal"},
+      "pedestrian_island": {"y_range": [18, 21], "type": "safe_temporary"},
+      "tram_track_2": {"y_range": [21, 25], "type": "hazard_lethal"},
+      "lane_4": {"y_range": [25, 28], "type": "hazard_hard"},
+      "lane_5": {"y_range": [28, 31], "type": "hazard_medium"},
+      "lane_6": {"y_range": [31, 34], "type": "hazard_easy"},
+      "north_sidewalk": {"y_range": [34, 40], "type": "safe"}
+    }
+  },
+  
+  "cargo_parade_route": {
+    "spawn_point": {"x": -50, "y": 20},
+    "path": "horizontal_across_all_lanes",
+    "exit_point": {"x": 350, "y": 20},
+    "duration_seconds": 10,
+    "blocks_all_crossing": true
+  }
+}

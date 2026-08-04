@@ -1,0 +1,244 @@
+{
+  "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+  
+  "sprite_sheets": {
+    "interior_tileset": {
+      "file": "cafe_sachertorte_tileset.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "sections": {
+        "floor_tiles": {
+          "marble_floor": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "marble_floor_worn": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "carpet_pattern": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "carpet_border": {"x": 96, "y": 0, "width": 32, "height": 32}
+        },
+        "wall_tiles": {
+          "mahogany_panel": {"x": 0, "y": 32, "width": 32, "height": 64},
+          "cream_wall": {"x": 32, "y": 32, "width": 32, "height": 64},
+          "wainscoting": {"x": 64, "y": 32, "width": 32, "height": 32},
+          "gilded_frame": {"x": 96, "y": 32, "width": 64, "height": 64}
+        },
+        "furniture": {
+          "marble_table": {"x": 0, "y": 96, "width": 32, "height": 32},
+          "bentwood_chair": {"x": 32, "y": 96, "width": 24, "height": 32},
+          "bentwood_chair_toppled": {"x": 56, "y": 96, "width": 32, "height": 24}
+        }
+      }
+    },
+    
+    "herr_ober": {
+      "file": "herr_ober_waiter.png",
+      "dimensions": {"width": 384, "height": 288},
+      "character_size": {"width": 48, "height": 96},
+      "states": {
+        "idle": {"x": 0, "y": 0, "width": 48, "height": 96},
+        "service": {
+          "frames": [
+            {"x": 48, "y": 0, "width": 48, "height": 96, "frame": 1},
+            {"x": 96, "y": 0, "width": 48, "height": 96, "frame": 2},
+            {"x": 144, "y": 0, "width": 48, "height": 96, "frame": 3}
+          ],
+          "timing": {"fps": 4, "loop": false}
+        },
+        "judgment": {
+          "frames": [
+            {"x": 192, "y": 0, "width": 48, "height": 96, "frame": 1},
+            {"x": 240, "y": 0, "width": 48, "height": 96, "frame": 2}
+          ],
+          "timing": {"fps": 2, "loop": false}
+        },
+        "horror": {
+          "frames": [
+            {"x": 0, "y": 96, "width": 48, "height": 96, "frame": 1},
+            {"x": 48, "y": 96, "width": 48, "height": 96, "frame": 2},
+            {"x": 96, "y": 96, "width": 48, "height": 96, "frame": 3}
+          ],
+          "timing": {"fps": 6, "loop": false}
+        },
+        "fury": {
+          "frames": [
+            {"x": 144, "y": 96, "width": 48, "height": 96, "frame": 1},
+            {"x": 192, "y": 96, "width": 48, "height": 96, "frame": 2},
+            {"x": 240, "y": 96, "width": 48, "height": 96, "frame": 3}
+          ],
+          "timing": {"fps": 4, "loop": true}
+        },
+        "defeat": {"x": 288, "y": 96, "width": 48, "height": 96}
+      }
+    },
+    
+    "cafe_regulars": {
+      "file": "cafe_sachertorte_npcs.png",
+      "dimensions": {"width": 384, "height": 288},
+      "characters": {
+        "intellectual": {
+          "reading": {"x": 0, "y": 0, "width": 48, "height": 80},
+          "espresso_sip": {"x": 48, "y": 0, "width": 48, "height": 80}
+        },
+        "chess_player": {
+          "waiting": {"x": 96, "y": 0, "width": 48, "height": 80},
+          "playing": {"x": 144, "y": 0, "width": 48, "height": 80},
+          "checkmate": {"x": 192, "y": 0, "width": 48, "height": 80}
+        },
+        "poseur": {
+          "philosophizing": {"x": 240, "y": 0, "width": 48, "height": 80},
+          "phone_mode": {"x": 288, "y": 0, "width": 48, "height": 80}
+        },
+        "tourist_couple": {
+          "sitting": {"x": 0, "y": 80, "width": 64, "height": 80},
+          "alarmed": {"x": 64, "y": 80, "width": 64, "height": 80},
+          "evacuating": {"x": 128, "y": 80, "width": 64, "height": 80}
+        },
+        "chef_klaus": {
+          "cooking": {"x": 192, "y": 80, "width": 48, "height": 80},
+          "panic": {"x": 240, "y": 80, "width": 48, "height": 80},
+          "ladle_brandish": {"x": 288, "y": 80, "width": 48, "height": 80}
+        },
+        "sous_chef_anna": {
+          "working": {"x": 0, "y": 160, "width": 48, "height": 80},
+          "amused": {"x": 48, "y": 160, "width": 48, "height": 80}
+        }
+      }
+    },
+    
+    "landmarks": {
+      "file": "cafe_sachertorte_landmarks.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "cake_display": {
+          "pristine": {"x": 0, "y": 0, "width": 96, "height": 128},
+          "damaged": {"x": 96, "y": 0, "width": 96, "height": 128},
+          "secured": {"x": 192, "y": 0, "width": 96, "height": 128}
+        },
+        "chandelier": {
+          "static": {"x": 0, "y": 128, "width": 80, "height": 64},
+          "swaying": {
+            "frames": [
+              {"x": 80, "y": 128, "width": 80, "height": 64, "frame": 1},
+              {"x": 160, "y": 128, "width": 80, "height": 64, "frame": 2}
+            ],
+            "timing": {"fps": 2, "loop": true}
+          }
+        },
+        "emperors_letter": {"x": 288, "y": 0, "width": 48, "height": 64},
+        "trophy_case": {"x": 336, "y": 0, "width": 64, "height": 80},
+        "newspaper_stand": {"x": 400, "y": 0, "width": 32, "height": 48},
+        "chess_set": {"x": 432, "y": 0, "width": 48, "height": 48}
+      }
+    },
+    
+    "destructibles": {
+      "file": "cafe_sachertorte_destruction.png",
+      "dimensions": {"width": 256, "height": 192},
+      "elements": {
+        "marble_table": {
+          "intact": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "tipping": {"x": 32, "y": 0, "width": 40, "height": 32},
+          "fallen": {"x": 72, "y": 0, "width": 48, "height": 24}
+        },
+        "patio_table": {
+          "intact": {"x": 0, "y": 32, "width": 40, "height": 40},
+          "crashed": {"x": 40, "y": 32, "width": 48, "height": 32}
+        },
+        "umbrella_stand": {
+          "upright": {"x": 0, "y": 72, "width": 24, "height": 48},
+          "toppled": {"x": 24, "y": 72, "width": 48, "height": 24}
+        },
+        "sachertorte_whole": {
+          "intact": {"x": 0, "y": 120, "width": 32, "height": 24},
+          "bitten": {"x": 32, "y": 120, "width": 32, "height": 24},
+          "devoured": {"x": 64, "y": 120, "width": 32, "height": 24}
+        }
+      }
+    },
+    
+    "effects": {
+      "file": "cafe_sachertorte_effects.png",
+      "dimensions": {"width": 256, "height": 128},
+      "elements": {
+        "coffee_steam": {
+          "frames": [
+            {"x": 0, "y": 0, "width": 16, "height": 32, "frame": 1},
+            {"x": 16, "y": 0, "width": 16, "height": 32, "frame": 2},
+            {"x": 32, "y": 0, "width": 16, "height": 32, "frame": 3}
+          ],
+          "timing": {"fps": 4, "loop": true}
+        },
+        "cake_crumbs": {"x": 48, "y": 0, "width": 32, "height": 16},
+        "shattered_porcelain": {"x": 80, "y": 0, "width": 48, "height": 32},
+        "dust_motes": {"x": 0, "y": 32, "width": 64, "height": 64},
+        "window_light_beam": {"x": 64, "y": 32, "width": 32, "height": 96}
+      }
+    },
+    
+    "ui_elements": {
+      "file": "cafe_sachertorte_ui.png",
+      "dimensions": {"width": 256, "height": 128},
+      "elements": {
+        "damage_counter_bg": {"x": 0, "y": 0, "width": 120, "height": 32},
+        "sovs_symbol": {"x": 120, "y": 0, "width": 48, "height": 16},
+        "menu_frame": {"x": 0, "y": 32, "width": 160, "height": 96},
+        "debt_indicator": {"x": 160, "y": 32, "width": 64, "height": 24},
+        "valued_patron_badge": {"x": 160, "y": 56, "width": 48, "height": 48}
+      }
+    }
+  },
+  
+  "lighting": {
+    "ambient": {
+      "default": {"color": "#FFE4B5", "intensity": 0.85},
+      "evening": {"color": "#FFD700", "intensity": 0.7}
+    },
+    "point_lights": [
+      {"id": "chandelier_main", "position": {"x": 120, "y": 20}, "color": "#FFF8DC", "intensity": 0.7, "radius": 100},
+      {"id": "chandelier_secondary", "position": {"x": 200, "y": 20}, "color": "#FFF8DC", "intensity": 0.6, "radius": 80},
+      {"id": "window_1", "position": {"x": 20, "y": 60}, "color": "#FFFACD", "intensity": 0.5, "radius": 60},
+      {"id": "window_2", "position": {"x": 20, "y": 140}, "color": "#FFFACD", "intensity": 0.5, "radius": 60}
+    ]
+  },
+  
+  "animations": {
+    "prebaked": [
+      {"id": "chandelier_sway", "duration": 2, "frames": 4, "loop": true},
+      {"id": "coffee_steam_rise", "duration": 3, "frames": 6, "loop": true},
+      {"id": "newspaper_turn", "duration": 0.5, "frames": 2, "trigger": "periodic"}
+    ],
+    "event_animations": [
+      {"event": "table_destruction", "sequence": ["intact", "tipping", "fallen"], "duration": 0.5},
+      {"event": "cake_consumption", "sequence": ["intact", "bitten", "devoured"], "duration": 4},
+      {"event": "herr_ober_breakdown", "sequence": ["horror", "fury", "defeat"], "duration": 8}
+    ]
+  },
+  
+  "collision": {
+    "walkable": ["marble_floor", "carpet_pattern"],
+    "blocked": ["counter", "cake_display", "wall"],
+    "interactive_zones": [
+      {"id": "service_counter", "bounds": {"x": 200, "y": 20, "width": 40, "height": 60}},
+      {"id": "cake_display", "bounds": {"x": 100, "y": 40, "width": 60, "height": 40}},
+      {"id": "chess_table", "bounds": {"x": 160, "y": 140, "width": 48, "height": 48}},
+      {"id": "patio_door", "bounds": {"x": 260, "y": 140, "width": 32, "height": 64}}
+    ],
+    "npc_spawn_points": [
+      {"npc": "herr_ober", "position": {"x": 200, "y": 60}},
+      {"npc": "intellectual", "position": {"x": 40, "y": 80}},
+      {"npc": "chess_player", "position": {"x": 160, "y": 150}},
+      {"npc": "poseur", "position": {"x": 100, "y": 100}},
+      {"npc": "tourist_couple", "position": {"x": 140, "y": 180}}
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {"id": "cafe_main", "includes": ["tileset", "landmarks"], "max_size": 1024},
+      {"id": "cafe_characters", "includes": ["herr_ober", "regulars"], "max_size": 512},
+      {"id": "cafe_effects", "includes": ["effects", "destructibles", "ui"], "max_size": 512}
+    ],
+    "performance": {
+      "max_draw_calls": 40,
+      "max_memory_mb": 38,
+      "max_particles": 30,
+      "target_fps": 60
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "location_id": "sinfonia_stadtpark_gustavs_refuge_01",
+  "display_name": "Stadtpark (Gustav's Refuge)",
+  "satirical_subtitle": "The Final Trot of a Runaway Horse",
+  "world": "sinfonia",
+  "area_zone": "imperial_park_district",
+  "location_type": "public_park_quest_resolution",
+  
+  "access_requirements": {
+    "time_restrictions": "24_hours",
+    "stat_requirements": null,
+    "item_requirements": null,
+    "quest_entry": {
+      "from": "sinfonia_bassline_opera_house_01",
+      "condition": "fiaker_fiasco_phase_04",
+      "entry_point": "opera_side_door_path"
+    },
+    "normal_entry_points": [
+      "imperial_square",
+      "musikgasse",
+      "kaffeehaus_row"
+    ]
+  },
+  
+  "visual_design": {
+    "layout_type": "large_public_park",
+    "time_of_day": {
+      "quest": "night",
+      "exploration": "any"
+    },
+    "key_features": [
+      "central_lawn",
+      "winding_paths",
+      "johann_strauss_statue",
+      "ornamental_pond",
+      "bandstand_pavilion",
+      "scattered_benches",
+      "decorative_lampposts",
+      "dense_tree_clusters"
+    ],
+    "color_palette": {
+      "moonlit_night_blue": "#2C3E50",
+      "lamp_light_gold": "#F4D03F",
+      "grass_dark_green": "#1E4D2B",
+      "path_gravel_grey": "#7F8C8D",
+      "gustav_brown": "#8B4513",
+      "statue_gold": "#FFD700"
+    },
+    "lighting": {
+      "ambient": "#2C3E50",
+      "point_lights": [
+        {"type": "lamppost", "count": 8, "color": "#F4D03F"},
+        {"type": "moonlight", "global": true, "color": "#C0C0FF"}
+      ]
+    },
+    "mobile_optimization": {
+      "lod_level": 2,
+      "draw_calls": 45,
+      "memory_mb": 45,
+      "max_particles": 60
+    }
+  },
+  
+  "atmosphere": {
+    "primary_theme": "emotional_resolution_amid_absurdity",
+    "secondary_theme": "freedom_vs_responsibility",
+    "mood": "moonlit_tension_to_catharsis",
+    "weather": "clear_cool_autumn",
+    "ambient_elements": [
+      "autumn_leaves_drifting",
+      "gustav_steam_breath",
+      "distant_city_sounds",
+      "cricket_chorus"
+    ]
+  },
+  
+  "quest_integration": {
+    "quest_id": "sinfonia_sidequest_fiaker_fiasco_01",
+    "phase": "stadtpark_phase_04_final",
+    "role": "quest_resolution_location",
+    "incoming_damage_total": {
+      "maximum": 2340,
+      "minimum": 1940,
+      "from_phases": ["plaza_0", "cafe_340", "backstage_2000_or_1600"]
+    },
+    "resolution_paths": [
+      {
+        "path_id": "path_a_return",
+        "name": "Gustav Returns",
+        "requirements": ["skittles_trust", "reform_dialogue"],
+        "outcome": "gustav_returns_to_service",
+        "debt_reduction": 500,
+        "debt_reduction_flag": "hans_jurgen_path_a_contribution",
+        "debt_reduction_note": "Separate from the single 170 Sovs cafe relief (debt_relief_claimed); the two stack.",
+        "achievement": "horse_whisperer",
+        "unlock": "fiaker_fast_travel"
+      },
+      {
+        "path_id": "path_b_retire",
+        "name": "Gustav Retires",
+        "requirements": ["skittles_trust", "freedom_dialogue"],
+        "outcome": "gustav_becomes_park_horse",
+        "debt_reduction": 0,
+        "achievement": "liberation",
+        "unlock": "gustav_park_npc"
+      },
+      {
+        "path_id": "path_c_escape",
+        "name": "Gustav Escapes",
+        "requirements": ["no_skittles", "aggressive_approach"],
+        "outcome": "gustav_runs_away_forever",
+        "debt_increase": 1000,
+        "achievement": null,
+        "consequence": "permanent_guilt_marker"
+      },
+      {
+        "path_id": "path_d_bail",
+        "name": "Bros Bail",
+        "requirements": ["leave_without_resolving"],
+        "outcome": "quest_fails",
+        "debt_increase": 500,
+        "status_effect": "coward"
+      }
+    ]
+  },
+  
+  "skittles_mechanic": {
+    "item_id": "bag_of_skittles",
+    "source": "chadwick_inventory_always_present",
+    "purpose": "enable_gustav_approach",
+    "phases": [
+      {"phase": 1, "action": "hold_out_skittles", "result": "gustav_attention"},
+      {"phase": 2, "action": "offer_handful", "result": "gustav_approaches"},
+      {"phase": 3, "action": "full_bag", "result": "gustav_eats_from_hand"},
+      {"phase": 4, "action": "trust_earned", "result": "dialogue_unlocked"}
+    ],
+    "alternative": {
+      "npc": "papageno_franz",
+      "condition": "papageno_ally_path",
+      "effect": "can_approach_without_skittles"
+    }
+  },
+  
+  "economic_data": {
+    "currency": "sovs",
+    "damage_resolution": {
+      "total_maximum": 2840,
+      "total_optimal": 1940,
+      "breakdown": {
+        "cafe_sachertorte": 340,
+        "opera_backstage_max": 2000,
+        "opera_backstage_optimal": 1600,
+        "prima_donna_max": 500,
+        "prima_donna_negotiated": 200
+      }
+    },
+    "payment_options": [
+      {
+        "type": "immediate_full",
+        "effect": "debt_cleared",
+        "reputation": "restored"
+      },
+      {
+        "type": "hans_jurgen_path_a_contribution",
+        "flag": "hans_jurgen_path_a_contribution",
+        "conditions": {
+          "path_a": 500,
+          "path_b": 0,
+          "path_c": 0,
+          "path_d": 0
+        },
+        "applies_to": "accumulated_total",
+        "stacks_with": "debt_relief_claimed_170",
+        "note": "Separate pot from the 170 Sovs cafe relief. Sometimes flavoured as 'insurance' in dialogue; it is NOT the same pot and neither disables the other."
+      },
+      {
+        "type": "hans_jurgen_cafe_insurance_170",
+        "amount": 170,
+        "condition": "path_a_only",
+        "requires_flag_false": "debt_relief_claimed",
+        "sets_flag": "debt_relief_claimed",
+        "mutually_exclusive_with": "cafe_dialogue_option_3_halving",
+        "applies_to": "cafe_sachertorte_line",
+        "note": "AUTHORITATIVE: this payout and the cafe dialogue-option-3 halving are the SAME single 170 Sovs relief. Whichever fires first consumes it; the other is disabled and must not apply. Option 3 fires in Stage 1 and therefore always wins when taken. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
+      },
+      {
+        "type": "director_negotiation",
+        "charm_4_reduction": 500,
+        "bravado_4_reduction": 300
+      },
+      {
+        "type": "installment",
+        "minimum": 500,
+        "tracking": "vendor_awareness"
+      }
+    ]
+  },
+  
+  "cross_location_references": [
+    {
+      "location": "sinfonia_bassline_opera_house_01",
+      "relationship": "quest_entry_point"
+    },
+    {
+      "location": "sinfonia_imperial_opera_house_plaza_01",
+      "relationship": "pigeon_lady_origin"
+    },
+    {
+      "location": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+      "relationship": "debt_connection"
+    },
+    {
+      "location": "sinfonia_moderato_pub_01",
+      "relationship": "hans_jurgen_post_quest_sad"
+    }
+  ],
+  
+  "state_tracking": {
+    "states": ["pre_quest", "quest_active", "post_quest_a", "post_quest_b", "post_quest_c", "post_quest_d"],
+    "default_state": "pre_quest",
+    "quest_state_changes": {
+      "post_quest_a": {
+        "gustav_present": false,
+        "fiaker_available": true,
+        "hans_jurgen_friendly": true
+      },
+      "post_quest_b": {
+        "gustav_present": true,
+        "gustav_npc_type": "park_horse",
+        "daily_buff_available": true
+      },
+      "post_quest_c": {
+        "gustav_present": false,
+        "hans_jurgen_sad_drunk": true,
+        "location": "moderato_pub"
+      },
+      "post_quest_d": {
+        "hans_jurgen_hostile": true,
+        "mentions_americans": true
+      }
+    }
+  },
+  
+  "achievements": [
+    {
+      "id": "horse_whisperer",
+      "trigger": "path_a_complete",
+      "effect": {"charm_with_animals": 2, "permanent": true}
+    },
+    {
+      "id": "liberation",
+      "trigger": "path_b_complete",
+      "effect": {"wisdom": 1, "permanent": true}
+    },
+    {
+      "id": "fiaker_fiasco_complete",
+      "trigger": "any_resolution",
+      "type": "quest_completion"
+    }
+  ]
+}

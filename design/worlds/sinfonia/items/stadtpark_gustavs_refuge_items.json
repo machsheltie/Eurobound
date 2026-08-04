@@ -1,0 +1,296 @@
+{
+  "location_id": "sinfonia_stadtpark_gustavs_refuge_01",
+  
+  "key_quest_item": {
+    "item_id": "bag_of_skittles",
+    "display_name": "Bag of Skittles (American Import)",
+    "category": "quest_item",
+    "source": {
+      "location": "chadwick_inventory",
+      "explanation": "Always present, never explained. Chadwick just has them.",
+      "origin_joke": "American tourists and their weird candy preferences"
+    },
+    "description": "A crinkly bag of American Skittles. 'Taste the Rainbow' promises the wrapper. Gustav remembers these from better days.",
+    "effect": {
+      "primary": "enables_gustav_approach",
+      "secondary": "unlocks_dialogue_resolution"
+    },
+    "usage": {
+      "target": "gustav",
+      "phases": [
+        {"action": "hold_out", "result": "gustav_attention"},
+        {"action": "offer_handful", "result": "gustav_approaches"},
+        {"action": "full_bag", "result": "gustav_eats_trust_earned"}
+      ]
+    },
+    "consumed": true,
+    "post_use": "gustav_trust_flag_set"
+  },
+  
+  "findable_items": [
+    {
+      "item_id": "philosophers_worn_book",
+      "display_name": "Worn Philosophy Book",
+      "location": "bench_near_philosopher",
+      "condition": "philosopher_gives_after_3_wisdoms",
+      "description": "A heavily annotated copy of 'On the Consciousness of Horses' by Dr. Heinrich Müller. The margins are full of increasingly frantic notes.",
+      "effect": {
+        "lore_unlock": "philosopher_backstory",
+        "wisdom": 1,
+        "duration": "permanent"
+      }
+    },
+    {
+      "item_id": "swan_feather",
+      "display_name": "Aggressive Swan Feather",
+      "location": "ornamental_pond",
+      "condition": "survive_swan_attack",
+      "description": "A white feather from the park's territorial swans. It practically radiates hostility.",
+      "effect": {
+        "intimidation": 1,
+        "against": "bird_type_enemies"
+      }
+    },
+    {
+      "item_id": "gustavs_cape_feather",
+      "display_name": "Gustav's Cape Feather",
+      "location": "trampled_gardens",
+      "condition": "examine_gustavs_trail",
+      "description": "A feather from Gustav's stolen opera cape, stuck in a crushed flower bed. Evidence of a horse having the time of his life.",
+      "effect": {
+        "memento": true,
+        "quest_keepsake": "fiaker_fiasco"
+      }
+    },
+    {
+      "item_id": "park_map_brochure",
+      "display_name": "Stadtpark Visitor Brochure",
+      "location": "ranger_station_window",
+      "condition": "always_available",
+      "description": "A colorful brochure showing the park's highlights. Johann Strauss features prominently. There's a section on 'Wildlife' that fails to mention the hostile swans.",
+      "effect": {
+        "navigation_hint": true,
+        "sinfonia_lore": true
+      }
+    }
+  ],
+  
+  "vendor_services": {
+    "homeless_philosopher": {
+      "npc_id": "homeless_philosopher_01",
+      "service_type": "wisdom_vendor",
+      "currency": "sovs",
+      "products": [
+        {
+          "item_id": "wisdom_1",
+          "display_name": "Wisdom About Freedom",
+          "price": 1,
+          "one_time": true,
+          "content": "The horse runs because he can. We stay because we forgot we could run.",
+          "effect": {"hint": "freedom_theme"}
+        },
+        {
+          "item_id": "wisdom_2",
+          "display_name": "Wisdom About Skittles",
+          "price": 1,
+          "one_time": true,
+          "content": "Skittles are not just candy. They are a rainbow of intention.",
+          "effect": {"hint": "skittles_importance"}
+        },
+        {
+          "item_id": "wisdom_3",
+          "display_name": "Wisdom About Knowledge",
+          "price": 1,
+          "one_time": true,
+          "content": "I was once a professor. Then I learned too much. Now I know nothing. Progress.",
+          "effect": {"unlocks": "philosopher_backstory"}
+        }
+      ],
+      "alternative_payment": {
+        "item": "alcoholic_beverage",
+        "dialogue": "Or a sip of something warm."
+      }
+    }
+  },
+  
+  "quest_rewards": {
+    "path_a_gustav_returns": {
+      "immediate": [
+        {
+          "type": "debt_reduction",
+          "amount": 500,
+          "reason": "hans_jurgen_gratitude",
+          "flag": "hans_jurgen_path_a_contribution",
+          "note": "Separate pot from the single 170 Sovs cafe relief (debt_relief_claimed); the two stack."
+        },
+        {
+          "type": "achievement",
+          "id": "horse_whisperer",
+          "display": "Horse Whisperer",
+          "description": "Convinced a runaway horse to return with candy diplomacy."
+        }
+      ],
+      "permanent_unlocks": [
+        {
+          "type": "service",
+          "id": "fiaker_fast_travel",
+          "description": "Can use Hans-Jürgen's fiaker for fast travel in Sinfonia",
+          "discount": "50%"
+        },
+        {
+          "type": "status_effect",
+          "id": "horse_whisperer_buff",
+          "effect": {"charm_with_animals": 2}
+        }
+      ]
+    },
+    
+    "path_b_gustav_retires": {
+      "immediate": [
+        {
+          "type": "achievement",
+          "id": "liberation",
+          "display": "Liberation",
+          "description": "Helped a working horse find retirement in the park."
+        }
+      ],
+      "permanent_unlocks": [
+        {
+          "type": "npc",
+          "id": "gustav_park_horse",
+          "location": "stadtpark",
+          "interaction": "daily_visit_buff"
+        },
+        {
+          "type": "status_effect",
+          "id": "liberation_buff",
+          "effect": {"wisdom": 1}
+        }
+      ],
+      "daily_buff": {
+        "id": "gustavs_blessing",
+        "trigger": "visit_gustav_in_park",
+        "effect": {"luck": 1, "duration_hours": 2}
+      }
+    },
+    
+    "path_c_gustav_escapes": {
+      "immediate": [
+        {
+          "type": "debt_increase",
+          "amount": 1000,
+          "reason": "horse_value_added_to_damages"
+        }
+      ],
+      "permanent_consequences": [
+        {
+          "type": "npc_state",
+          "id": "hans_jurgen_sad_drunk",
+          "location": "moderato_pub"
+        },
+        {
+          "type": "journal_entry",
+          "id": "guilt_marker",
+          "content": "Gustav ran away. We could have stopped it."
+        }
+      ],
+      "status_effect": {
+        "id": "horse_guilt",
+        "effect": {"all_stats": -1},
+        "duration_hours": 1
+      }
+    },
+    
+    "path_d_bros_bail": {
+      "immediate": [
+        {
+          "type": "debt_increase",
+          "amount": 500,
+          "reason": "abandonment_fee"
+        },
+        {
+          "type": "status_effect",
+          "id": "coward",
+          "effect": {"bravado": -2},
+          "duration_minutes": 30
+        }
+      ],
+      "permanent_consequences": [
+        {
+          "type": "npc_disposition",
+          "id": "hans_jurgen_hostile",
+          "mentions": "americans_with_disgust"
+        }
+      ]
+    }
+  },
+  
+  "debt_resolution_system": {
+    "incoming_debt": {
+      "cafe_sachertorte": 340,
+      "opera_backstage_max": 2000,
+      "opera_backstage_optimal": 1600,
+      "prima_donna_max": 500,
+      "prima_donna_negotiated": 200
+    },
+    "total_ranges": {
+      "maximum": 2840,
+      "optimal": 1940
+    },
+    "resolution_options": [
+      {
+        "id": "pay_full_immediate",
+        "requirement": "have_funds",
+        "result": "debt_cleared",
+        "reputation": "restored"
+      },
+      {
+        "id": "hans_jurgen_path_a_contribution",
+        "condition": "path_a_only",
+        "coverage": 500,
+        "applies_to": "accumulated_total",
+        "stacks_with": "hans_jurgen_cafe_insurance_170",
+        "dialogue": "Hans-Jürgen: 'My insurance... they will cover some. For Gustav's return.'",
+        "note": "Separate pot from the 170 Sovs cafe relief. Flavoured as insurance in dialogue but mechanically distinct; neither disables the other."
+      },
+      {
+        "id": "hans_jurgen_cafe_insurance_170",
+        "condition": "path_a_only",
+        "coverage": 170,
+        "applies_to": "cafe_sachertorte_line",
+        "requires_flag_false": "debt_relief_claimed",
+        "sets_flag": "debt_relief_claimed",
+        "mutually_exclusive_with": "cafe_dialogue_option_3_halving",
+        "note": "AUTHORITATIVE: this payout and the cafe dialogue-option-3 halving are the SAME single 170 Sovs relief. Whichever fires first consumes it; the other is disabled and must not apply. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
+      },
+      {
+        "id": "negotiate_director",
+        "condition": "director_present",
+        "options": [
+          {"stat": "charm", "threshold": 4, "reduction": 500},
+          {"stat": "bravado", "threshold": 4, "reduction": 300}
+        ]
+      },
+      {
+        "id": "installment_plan",
+        "minimum_payment": 500,
+        "tracking": {
+          "flag": "sinfonia_debt_active",
+          "affects": "shop_prices",
+          "vendor_awareness": true
+        }
+      }
+    ]
+  },
+  
+  "collectibles": [
+    {
+      "item_id": "fiaker_fiasco_memento",
+      "display_name": "Fiaker Fiasco Memento",
+      "condition": "any_completion",
+      "description": "A small collection of items from the adventure: a feather from Gustav's cape, a Skittle wrapper, and a receipt from Café Sachertorte for 340 Sovs.",
+      "type": "quest_keepsake",
+      "gallery_entry": true
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "locations": [
+    {
+      "name": "Café Sachertorte",
+      "tag_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A pristine corner café on Kaffeehaus Row, with elegant wrought-iron outdoor furniture, pristine white umbrellas, and floor-to-ceiling windows displaying an immaculate pastry selection. The gilded 'Café Sachertorte - Est. 1847' sign gleams above mahogany doors. Well-dressed patrons sip espresso at patio tables while a doorman in livery guards the entrance.",
+        "entry_condition": "Available during operating hours (08:00-22:00); auto-entry during Fiaker Fiasco chase from Opera House Plaza"
+      },
+      "interior": {
+        "theme": "Viennese coffee house pretension, cultural gatekeeping, tourist exploitation with a veneer of tradition",
+        "features": [
+          "entry_point: patio_door",
+          "entry_point: main_entrance",
+          "quest_entry: kitchen_alley (fiaker_fiasco)",
+          "shop_node: pastry_counter",
+          "shop_node: beverage_service",
+          "npc_primary: herr_ober_01",
+          "npc_ambient: the_intellectual_01",
+          "npc_ambient: chess_master_helena_01",
+          "npc_ambient: poseur_01",
+          "npc_ambient: tourist_couple_01",
+          "npc_ambient: chef_klaus_01",
+          "npc_ambient: sous_chef_anna_01",
+          "interactive: cake_display_case",
+          "interactive: chess_table",
+          "interactive: emperors_letter_frame",
+          "interactive: trophy_case",
+          "destructible: patio_table",
+          "destructible: umbrella_stand",
+          "destructible: marble_table_interior",
+          "destructible: chandelier (near_miss)",
+          "minigame: chess_challenge",
+          "minigame: german_ordering_pronunciation",
+          "selfie_prop: cake_display",
+          "selfie_prop: emperors_letter",
+          "selfie_prop: intellectual_unfazed (post_quest)",
+          "event_hook: gustav_entry_sequence",
+          "event_hook: cake_heist",
+          "event_hook: damage_tally",
+          "exit_point: main_door (to_kaffeehaus_row)",
+          "exit_point: kitchen_alley (to_opera_backstage)"
+        ]
+      },
+      "functions": [
+        "Fiaker Fiasco Phase 2 location",
+        "340 Sovs property damage set piece",
+        "High-end pastry vendor",
+        "Coffee service with hidden charges",
+        "Chess challenge minigame",
+        "German pronunciation minigame",
+        "Tourist exploitation satire",
+        "Cultural gatekeeping comedy",
+        "Selfie prop collection"
+      ]
+    },
+    {
+      "name": "Café Sachertorte - Patio",
+      "tag_id": "sinfonia_kaffeehaus_cafe_sachertorte_patio_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Elegant outdoor seating area with wrought-iron tables, white linen tablecloths, and pristine umbrellas. A low decorative fence separates the café from Kaffeehaus Row foot traffic. Potted plants and a brass umbrella stand complete the refined atmosphere.",
+        "entry_condition": "Open access from street; weather permitting (closes during rain)"
+      },
+      "interior": {
+        "theme": "Outdoor refinement, first line of tourist exploitation, initial Gustav destruction zone",
+        "features": [
+          "entry_point: street_access",
+          "destructible: patio_table (85 Sovs)",
+          "destructible: umbrella_stand (15 Sovs)",
+          "npc_spawn: tourist_couple_01",
+          "event_hook: gustav_dramatic_entrance",
+          "event_hook: umbrella_stand_crash",
+          "transition: patio_door_to_interior"
+        ]
+      },
+      "functions": [
+        "Street-accessible seating",
+        "First destruction zone (Fiaker Fiasco)",
+        "Tourist observation point",
+        "Weather-dependent availability"
+      ]
+    },
+    {
+      "name": "Café Sachertorte - Main Dining Room",
+      "tag_id": "sinfonia_kaffeehaus_cafe_sachertorte_dining_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "The heart of the café - marble floors with subtle patterns, mahogany wall panels, crystal chandeliers, and the legendary cake display case. Bentwood chairs surround marble-topped tables. The intellectual reads in his corner, unchanged since 1973.",
+        "entry_condition": "Through main entrance or patio door"
+      },
+      "interior": {
+        "theme": "Grand tradition meets tourist trap, peak Viennese coffee house culture",
+        "features": [
+          "entry_point: main_entrance",
+          "entry_point: patio_door",
+          "shop_node: pastry_counter",
+          "shop_node: beverage_service",
+          "npc_primary: herr_ober_01",
+          "npc_ambient: the_intellectual_01",
+          "npc_ambient: chess_master_helena_01",
+          "npc_ambient: poseur_01",
+          "interactive: cake_display_case",
+          "interactive: chess_table",
+          "interactive: emperors_letter_frame",
+          "interactive: trophy_case",
+          "destructible: marble_table (3x, 40 Sovs each)",
+          "destructible: chandelier (near_miss_only)",
+          "minigame: chess_challenge",
+          "minigame: german_ordering",
+          "selfie_prop: cake_display",
+          "selfie_prop: emperors_letter",
+          "event_hook: gustav_cake_heist",
+          "event_hook: chandelier_near_miss",
+          "event_hook: table_destruction_sequence",
+          "exit_point: kitchen_door"
+        ]
+      },
+      "functions": [
+        "Primary shopping area",
+        "NPC interaction hub",
+        "Chess minigame location",
+        "Gustav rampage zone",
+        "Cake heist set piece"
+      ]
+    },
+    {
+      "name": "Café Sachertorte - Kitchen",
+      "tag_id": "sinfonia_kaffeehaus_cafe_sachertorte_kitchen_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A professional kitchen in controlled chaos - copper pots hanging from racks, stainless steel prep surfaces, industrial ovens, and the constant clatter of service. Chef Konrad commands the line while Sous Chef Anna maintains surprising calm.",
+        "entry_condition": "Quest access only (Fiaker Fiasco); staff door from dining room"
+      },
+      "interior": {
+        "theme": "Behind the scenes reality, escape route, comedic German screaming",
+        "features": [
+          "entry_point: dining_room_door",
+          "quest_npc: chef_klaus_01",
+          "quest_npc: sous_chef_anna_01",
+          "interactive: pot_rack (can crash)",
+          "interactive: prep_table",
+          "event_hook: gustav_kitchen_chaos",
+          "event_hook: chef_german_screaming",
+          "event_hook: anna_commentary",
+          "exit_point: back_door (to_alley)"
+        ]
+      },
+      "functions": [
+        "Quest-only access zone",
+        "Gustav escape route",
+        "Comedy set piece",
+        "Connects to Opera Backstage alley"
+      ]
+    },
+    {
+      "name": "Café Sachertorte - Back Alley",
+      "tag_id": "sinfonia_kaffeehaus_cafe_sachertorte_alley_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A narrow service alley behind Kaffeehaus Row cafés. Delivery crates, empty wine bottles, and the distinct smell of pastry mixed with garbage. A clear path leads toward the Opera House loading dock.",
+        "entry_condition": "Quest access only (Fiaker Fiasco Phase 2 exit)"
+      },
+      "interior": {
+        "theme": "Behind the glamour, service reality, chase continuation",
+        "features": [
+          "entry_point: kitchen_back_door",
+          "transition: leads_to_opera_loading_dock",
+          "event_hook: gustav_escape_to_opera",
+          "event_hook: bros_pursuit_continues"
+        ]
+      },
+      "functions": [
+        "Quest transition zone",
+        "Connects Phase 2 to Phase 3",
+        "Hidden service area"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "internal_transitions": [
+      {"from": "patio", "to": "main_dining", "type": "door", "difficulty": "easy"},
+      {"from": "main_dining", "to": "patio", "type": "door", "difficulty": "easy"},
+      {"from": "main_dining", "to": "kitchen", "type": "door", "condition": "quest_active_or_staff"},
+      {"from": "kitchen", "to": "main_dining", "type": "door", "difficulty": "easy"},
+      {"from": "kitchen", "to": "back_alley", "type": "door", "condition": "quest_active"},
+      {"from": "back_alley", "to": "kitchen", "type": "blocked", "reason": "one_way_during_quest"}
+    ],
+    "external_connections": [
+      {"from": "patio", "to": "kaffeehaus_row", "type": "street_access"},
+      {"from": "main_entrance", "to": "kaffeehaus_row", "type": "door"},
+      {"from": "back_alley", "to": "opera_house_loading_dock", "type": "alley_path", "condition": "fiaker_fiasco_active"}
+    ],
+    "quest_path": {
+      "phase_2_entry": "patio (gustav_crashes_through)",
+      "phase_2_route": "patio → main_dining → kitchen → back_alley",
+      "phase_2_exit": "back_alley → opera_backstage_loading_dock"
+    }
+  },
+  
+  "spatial_layout": {
+    "total_footprint": {
+      "width_meters": 15,
+      "depth_meters": 25
+    },
+    "zones": {
+      "patio": {"width": 10, "depth": 5, "tables": 6},
+      "main_dining": {"width": 15, "depth": 12, "tables": 12},
+      "kitchen": {"width": 10, "depth": 6},
+      "back_alley": {"width": 3, "length": 20}
+    },
+    "ceiling_height_meters": 4.5,
+    "chandelier_count": 2
+  },
+  
+  "damage_tracking_nodes": {
+    "phase": "fiaker_fiasco_phase_02",
+    "destruction_sequence": [
+      {"location": "patio", "items": ["patio_table", "umbrella_stand"], "total_sov": 100},
+      {"location": "main_dining", "items": ["sachertorte_cake", "marble_tables_x2", "opera_cake_slice"], "total_sov": 227},
+      {"location": "kitchen", "items": ["pots_crash"], "total_sov": 13}
+    ],
+    "total_damage": 340,
+    "carries_forward_to": "sinfonia_bassline_opera_house_01"
+  },
+  
+  "state_variations": {
+    "normal": {
+      "npcs_present": ["herr_ober", "intellectual", "chess_master", "poseur", "tourist_couple"],
+      "services_available": ["pastry_counter", "beverage_service", "chess_challenge"],
+      "atmosphere": "refined_pretentious"
+    },
+    "fiaker_fiasco_active": {
+      "npcs_reactive": true,
+      "destruction_enabled": true,
+      "services_suspended": true,
+      "atmosphere": "total_chaos"
+    },
+    "post_quest_unpaid": {
+      "entry_blocked": true,
+      "blocker_npc": "herr_ober",
+      "dialogue": "You are not welcome here until your debt is settled.",
+      "debt_amount_displayed": true
+    },
+    "post_quest_paid": {
+      "entry_allowed": true,
+      "npc_disposition": "reluctant_respect",
+      "new_menu_item": "the_gustav_cookie",
+      "new_signage": "no_horses_sign",
+      "memorial": "gustav_photo_wall_of_shame"
+    }
+  }
+}

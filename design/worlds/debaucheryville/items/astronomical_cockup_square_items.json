@@ -1,0 +1,199 @@
+{
+  "location_id": "debaucheryville_gilded_square_astronomical_cockup_square_01",
+  "item_category": "scam_merchandise",
+  
+  "items": [
+    {
+      "item_id": "vip_all_access_wristband",
+      "display_name": "VIP All-Access Wristband",
+      "item_type": "quest_item",
+      "rarity": "common",
+      "vendor": "shady_wristband_guy_01",
+      "price": 30,
+      "quantity_sold": 3,
+      "total_cost": 90,
+      "actual_value": 0.50,
+      "scam_level": "complete",
+      "description": {
+        "player_sees": "(Children's birthday party wristband - Text reads 'I'm 7!' in Czech)",
+        "bros_see": "VIP All-Access Wristband - Level Seven Access. Opens ALL doors."
+      },
+      "actual_text": {
+        "czech": "Jsem 7!",
+        "english": "I'm 7!"
+      },
+      "effects": {
+        "gameplay": "unlocks_velvet_curtain_club_scene",
+        "cosmetic": "visible_on_character_sprites_permanently",
+        "social": "npcs_occasionally_ask_if_birthday"
+      },
+      "quest_connection": {
+        "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+        "required_for": "velvet_curtain_club_first_entry"
+      },
+      "persistence": "entire_game",
+      "sprite": "vip_wristband_sprite.png"
+    },
+    {
+      "item_id": "clock_energy_wine",
+      "display_name": "Clock Energy Wine",
+      "item_type": "consumable",
+      "rarity": "common",
+      "vendor": "clock_wine_vendor_01",
+      "price": 60,
+      "actual_value": 3,
+      "scam_level": "complete",
+      "description": {
+        "player_sees": "(Boxed wine poured into fancy bottle. No 'clock energy.' Not popular with anyone.)",
+        "bros_see": "Authentic Clock Energy Wine - Infused with temporal energy. Very popular with ladies."
+      },
+      "effects": {
+        "status_applied": "blessed_drunk",
+        "status_duration_minutes": 30,
+        "actual_effect": "identical_to_regular_drunk",
+        "bros_believe": "magnetic_to_ladies"
+      },
+      "flavor_text": "Vintage 2019. Very good year. For boxes.",
+      "accumulation": {
+        "visible_in_hostel": true,
+        "max_bottles_displayed": 6
+      },
+      "sprite": "clock_wine_bottle_sprite.png"
+    },
+    {
+      "item_id": "commemorative_plate",
+      "display_name": "Clock Commemorative Plate",
+      "item_type": "throwable",
+      "rarity": "common",
+      "vendor": "merchandise_vendor_01",
+      "price": 45,
+      "actual_value": 2,
+      "scam_level": "high",
+      "description": {
+        "player_sees": "(Cheap ceramic plate with clock image. Obviously overpriced garbage.)",
+        "bros_see": "Commemorative Plate - A meaningful keepsake of this emotional moment."
+      },
+      "effects": {
+        "throwable": true,
+        "damage": 1,
+        "breaks_on_use": true,
+        "one_time_use": true
+      },
+      "accumulation": {
+        "visible_in_hostel": true,
+        "display_location": "shelf"
+      },
+      "sprite": "commemorative_plate_sprite.png"
+    },
+    {
+      "item_id": "i_survived_tshirt",
+      "display_name": "I Survived The Cock-Up T-Shirt",
+      "item_type": "equipment",
+      "slot": "torso",
+      "rarity": "common",
+      "vendor": "merchandise_vendor_01",
+      "price": 30,
+      "actual_value": 5,
+      "scam_level": "medium",
+      "description": {
+        "player_sees": "(Tourist trap t-shirt. Locals visibly cringe when they see it.)",
+        "bros_see": "Badge of honor announcing your survival of an emotional experience."
+      },
+      "effects": {
+        "bravado": 1,
+        "charm": -2,
+        "special": "locals_cringe_animation_trigger"
+      },
+      "sprite": "i_survived_tshirt_sprite.png"
+    },
+    {
+      "item_id": "temporary_clock_tattoo",
+      "display_name": "Temporary Clock Tattoo",
+      "item_type": "cosmetic",
+      "rarity": "common",
+      "vendor": "merchandise_vendor_01",
+      "price": 15,
+      "actual_value": 1,
+      "scam_level": "low",
+      "description": {
+        "player_sees": "(Preview of regret. Disappears when wet.)",
+        "bros_see": "A preview of the REAL tattoo. For testing placement."
+      },
+      "effects": {
+        "cosmetic": "skeleton_visible_on_arm",
+        "duration": "until_shower_or_rain",
+        "removal_trigger": "water_contact"
+      },
+      "sprite": "temp_tattoo_sprite.png"
+    },
+    {
+      "item_id": "clock_snow_globe",
+      "display_name": "Clock Snow Globe",
+      "item_type": "junk",
+      "rarity": "common",
+      "vendor": "merchandise_vendor_01",
+      "price": 25,
+      "actual_value": 3,
+      "scam_level": "medium",
+      "description": {
+        "player_sees": "(Shake it and feel the disappointment all over again.)",
+        "bros_see": "A magical miniature of the most meaningful clock in Europe."
+      },
+      "effects": {
+        "use_action": "shake",
+        "audio_on_use": "tiny_sad_clock_chime",
+        "sellback_value": 1
+      },
+      "sprite": "snow_globe_sprite.png"
+    },
+    {
+      "item_id": "authentic_european_tattoo",
+      "display_name": "Authentic European Tattoo",
+      "item_type": "permanent_cosmetic",
+      "rarity": "unique",
+      "vendor": "euro_ink_4_less",
+      "price_range": {
+        "minimum": 50,
+        "maximum": 100
+      },
+      "actual_value": 25,
+      "scam_level": "complete",
+      "description": {
+        "player_sees": "(It's clearly a duck holding a scythe. Not a skeleton.)",
+        "bros_see": "The Death Clock skeleton, immortalized forever. Very European. Very meaningful."
+      },
+      "actual_design": "duck_with_scythe",
+      "intended_design": "skeleton_from_clock",
+      "location_on_body": "lower_back",
+      "effects": {
+        "permanent": true,
+        "visible_when": "certain_outfits_equipped",
+        "npc_reactions": "confusion_about_duck",
+        "lord_pilsner_only": true
+      },
+      "post_credits_connection": {
+        "scene": "the_duck_reveal",
+        "payoff": "amber_identifies_it_as_duck"
+      },
+      "sprite": "duck_tattoo_sprite.png"
+    }
+  ],
+  
+  "scam_economics": {
+    "total_items_available": 7,
+    "total_potential_spending": {
+      "wristbands": 90,
+      "wine_single": 60,
+      "wine_max": 360,
+      "merchandise_min": 70,
+      "merchandise_max": 115,
+      "tattoo": 100,
+      "viewing_spot": 30,
+      "blessing": 60
+    },
+    "grand_total_max": 755,
+    "grand_total_typical": 350,
+    "actual_value_total": 40,
+    "markup_percentage": 875
+  }
+}

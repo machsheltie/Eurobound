@@ -1,0 +1,364 @@
+{
+  "location_id": "publandia_outskirts_cloverleaf_roundabout_01",
+  
+  "npcs_present": [
+    "patrick_osullivan_01",
+    "margaret_skeleton_01",
+    "orla_brennan_tour_leader_01",
+    "sean_murphy_exit_01",
+    "chef_maeve_01",
+    "brenda_doyle_instructor_01",
+    "kevin_student_01",
+    "murphy_family",
+    "padraig_farmer_01"
+  ],
+  
+  "objects": [
+    {
+      "object_id": "center_island_monument",
+      "type": "landmark",
+      "interaction_text": "Examine the Celtic Monument",
+      "description": "Ancient Celtic cross of unknown origin. Plaque reads: 'CLOVERLEAF MONUMENT - EST. ???'",
+      "interactable": true,
+      "rewards": [],
+      "dialogue_trigger": {
+        "speaker": "bradley",
+        "text": "This thing is older than the roundabout itself. How did they build it in the middle of traffic?"
+      }
+    },
+    {
+      "object_id": "gift_shop_door",
+      "type": "locked_building",
+      "interaction_text": "Try the Gift Shop door",
+      "description": "Tiny stone cottage with 'GIFT SHOP - OPENING SOON (Since 1994)' sign",
+      "interactable": true,
+      "locked": true,
+      "rewards": [],
+      "dialogue_trigger": {
+        "speaker": "chadwick",
+        "text": "Permanently opening soon. That's... commitment to the bit."
+      }
+    },
+    {
+      "object_id": "information_board",
+      "type": "readable",
+      "interaction_text": "Read the Information Board",
+      "description": "Faded maps showing exits. All paths eventually lead back to The Cloverleaf.",
+      "interactable": true,
+      "rewards": [
+        {"type": "hint", "hint_id": "all_roads_lead_back", "probability": 1.0}
+      ],
+      "dialogue_trigger": {
+        "speaker": "lord_pilsner",
+        "text": "According to this map, every road in Publandia leads back here eventually. That can't be right."
+      }
+    },
+    {
+      "object_id": "exit_sign_collection",
+      "type": "signage",
+      "interaction_text": "Study the Exit Signs",
+      "description": "Six identical green signs pointing in different directions. One has bullet holes (local tradition).",
+      "interactable": true,
+      "variants": [
+        {"exit_number": 1, "text": "EAST - Scenic Route"},
+        {"exit_number": 2, "text": "SOUTHEAST - Country Roads"},
+        {"exit_number": 3, "text": "SOUTHWEST - Return to Town"},
+        {"exit_number": 4, "text": "WEST - Coastal Drive"},
+        {"exit_number": 5, "text": "NORTHWEST - Sheep Crossing"},
+        {"exit_number": 6, "text": "NORTH - Cliffs of Moher"}
+      ],
+      "dialogue_trigger": {
+        "speaker": "bradley",
+        "text": "They all look exactly the same. How does anyone know which one to take?"
+      }
+    },
+    {
+      "object_id": "philosophical_graffiti",
+      "type": "readable",
+      "interaction_text": "Read the Graffiti",
+      "description": "Spray-painted on a road sign: 'SEÁN COULD LEAVE - HE STAYS'",
+      "interactable": true,
+      "requirements": {"quest_flag": "met_sean"},
+      "rewards": [],
+      "dialogue_trigger": {
+        "speaker": "chadwick",
+        "text": "Wait... people know about him? And he's still here?"
+      }
+    },
+    {
+      "object_id": "wedding_van_window",
+      "type": "vehicle_interaction",
+      "interaction_text": "Talk to the Driver",
+      "description": "The 1987 Wedding Van. Patrick waves. Margaret rests.",
+      "interactable": true,
+      "npc_trigger": "patrick_osullivan_01",
+      "animation": "patrick_waving"
+    },
+    {
+      "object_id": "tour_bus_entrance",
+      "type": "vehicle_interaction",
+      "interaction_text": "Approach the Tour Bus",
+      "description": "Double-decker tour bus with 'DEMOCRATIC SINCE 2013' banner",
+      "interactable": true,
+      "npc_trigger": "orla_brennan_tour_leader_01"
+    },
+    {
+      "object_id": "food_truck_window",
+      "type": "shop",
+      "interaction_text": "Order from the Food Truck",
+      "description": "The Cloverleaf Kitchen - keeping residents alive since 2016",
+      "interactable": true,
+      "npc_trigger": "chef_maeve_01",
+      "shop_inventory": "food_truck_cloverleaf_menu",
+      "time_restriction": {
+        "available_window": "08:00-09:00",
+        "location_requirement": "south_bend"
+      }
+    },
+    {
+      "object_id": "seans_car_window",
+      "type": "vehicle_interaction",
+      "interaction_text": "Flag Down the Green Car",
+      "description": "1999 Nissan Micra, heavily rusted. Driver has a knowing expression.",
+      "interactable": true,
+      "npc_trigger": "sean_murphy_exit_01",
+      "requirements": {"circles_completed": 7}
+    },
+    {
+      "object_id": "learner_car_observation",
+      "type": "vehicle_interaction",
+      "interaction_text": "Watch the Learner Car",
+      "description": "L-plates visible. Instructor looks increasingly haunted.",
+      "interactable": true,
+      "npc_trigger": "brenda_doyle_instructor_01"
+    },
+    {
+      "object_id": "family_van_wave",
+      "type": "vehicle_interaction",
+      "interaction_text": "Wave at the Family",
+      "description": "Rental people carrier stuffed with luggage and children",
+      "interactable": true,
+      "npc_trigger": "murphy_family"
+    },
+    {
+      "object_id": "tractor_approach",
+      "type": "vehicle_interaction",
+      "interaction_text": "Honk at the Tractor",
+      "description": "Ancient tractor with sheep trailer. Driver seems unbothered.",
+      "interactable": true,
+      "npc_trigger": "padraig_farmer_01"
+    },
+    {
+      "object_id": "rental_car_radio",
+      "type": "player_vehicle",
+      "interaction_text": "Change Radio Station",
+      "description": "The rental car radio. Currently playing static.",
+      "interactable": true,
+      "radio_stations": [
+        {"station": "publandia_fm", "genre": "irish_folk"},
+        {"station": "static", "genre": "none"},
+        {"station": "love_songs_87", "genre": "wedding_classics"}
+      ]
+    },
+    {
+      "object_id": "rental_car_gps",
+      "type": "player_vehicle",
+      "interaction_text": "Check the GPS",
+      "description": "GPS device. Currently showing 'RECALCULATING...'",
+      "interactable": true,
+      "states": [
+        {"circles": "1-5", "display": "recalculating", "audio": "gps_neutral"},
+        {"circles": "6-9", "display": "recalculating_stressed", "audio": "gps_strained"},
+        {"circles": "10+", "display": "crying", "audio": "gps_crying"}
+      ]
+    }
+  ],
+  
+  "environmental_interactions": [
+    {
+      "trigger_id": "lane_change_inner",
+      "type": "driving_action",
+      "interaction_text": "Merge to Inner Lane",
+      "requirement": {"stat": "bravado", "minimum": 2},
+      "effect": "change_lane_inner",
+      "risk": "aggressive_traffic",
+      "audio_cue": "horn_honks_multiple"
+    },
+    {
+      "trigger_id": "lane_change_outer",
+      "type": "driving_action",
+      "interaction_text": "Merge to Outer Lane",
+      "requirement": null,
+      "effect": "change_lane_outer",
+      "risk": "blocked_by_tour_bus",
+      "audio_cue": "gentle_merge"
+    },
+    {
+      "trigger_id": "attempt_exit",
+      "type": "driving_action",
+      "interaction_text": "Take Exit",
+      "requirement": {"speed": "below_threshold"},
+      "effect": "exit_roundabout",
+      "failure_effect": "missed_exit_loop",
+      "audio_cue": "whoosh_missed"
+    },
+    {
+      "trigger_id": "slow_down",
+      "type": "driving_action",
+      "interaction_text": "Slow Down",
+      "requirement": null,
+      "effect": "reduce_speed",
+      "unlocks": "exit_visibility",
+      "audio_cue": "engine_decelerate",
+      "dialogue_trigger": {
+        "speaker": "bradley",
+        "text": "Wait... I can actually read the signs now."
+      }
+    },
+    {
+      "trigger_id": "speed_up",
+      "type": "driving_action",
+      "interaction_text": "Floor It",
+      "requirement": null,
+      "effect": "increase_speed",
+      "consequence": "miss_more_exits",
+      "audio_cue": "engine_rev",
+      "dialogue_trigger": {
+        "speaker": "lord_pilsner",
+        "text": "If we go faster, we'll have more time to read the signs!"
+      }
+    },
+    {
+      "trigger_id": "follow_vehicle",
+      "type": "driving_action",
+      "interaction_text": "Follow [Vehicle]",
+      "requirement": {"proximity": "behind_target"},
+      "effect": "match_vehicle_path",
+      "targets": [
+        {"vehicle": "wedding_van_1987", "result": "endless_middle_lane"},
+        {"vehicle": "tour_bus", "result": "outer_lane_slow"},
+        {"vehicle": "local_car_sean", "result": "passes_exit_6_never_takes_it"},
+        {"vehicle": "food_truck_cloverleaf", "result": "arrives_at_food_truck"}
+      ]
+    },
+    {
+      "trigger_id": "center_island_approach",
+      "type": "hidden_area",
+      "interaction_text": "Drive Onto Center Island",
+      "requirement": {
+        "stat": "bravado",
+        "minimum": 5,
+        "condition": "desperate_or_drunk"
+      },
+      "effect": "stuck_on_grass",
+      "consequence": "tractor_rescue_required",
+      "audio_cue": "tires_on_grass_stuck"
+    }
+  ],
+  
+  "minigames": [
+    {
+      "minigame_id": "lane_merge_challenge",
+      "type": "timing",
+      "trigger": "attempt_lane_change",
+      "description": "Time your merge with traffic flow",
+      "difficulty_scaling": "increases_with_traffic_density",
+      "success_reward": "successful_merge",
+      "failure_consequence": "pushed_back_to_merge_zone",
+      "audio": {
+        "success": "smooth_merge_sound",
+        "failure": "horn_honk_angry"
+      }
+    },
+    {
+      "minigame_id": "food_truck_intercept",
+      "type": "position_matching",
+      "trigger": "food_truck_in_range",
+      "description": "Reach the food truck during its service window",
+      "time_limit_seconds": 30,
+      "success_reward": "food_truck_menu_access",
+      "failure_consequence": "hungry_status",
+      "audio": {
+        "success": "food_truck_jingle",
+        "failure": "stomach_growl"
+      }
+    },
+    {
+      "minigame_id": "exit_timing",
+      "type": "reflex",
+      "trigger": "approaching_exit",
+      "description": "Hit the button at the right moment to take exit",
+      "window_seconds": 2.0,
+      "speed_dependent": true,
+      "success_reward": "exit_taken",
+      "failure_consequence": "missed_exit",
+      "audio": {
+        "success": "relief_sigh_sfx",
+        "failure": "whoosh_passed"
+      }
+    }
+  ],
+  
+  "selfie_props": [
+    {
+      "prop_id": "wedding_van_selfie",
+      "interaction_text": "Take Selfie with Wedding Van",
+      "description": "Patrick waves for the photo. Margaret... rests.",
+      "requirements": {"met_npc": "patrick_osullivan_01"},
+      "reward": {"bravado": 2, "gallery_entry": "wedding_van_selfie"}
+    },
+    {
+      "prop_id": "tour_bus_community_selfie",
+      "interaction_text": "Take Selfie with Tour Bus Community",
+      "description": "Thirty residents pose for a group shot",
+      "requirements": {"met_npc": "orla_brennan_tour_leader_01"},
+      "reward": {"charm": 1, "gallery_entry": "tour_bus_community"}
+    },
+    {
+      "prop_id": "celtic_monument_selfie",
+      "interaction_text": "Take Selfie with Monument",
+      "description": "Mysterious ancient stone circle centerpiece",
+      "requirements": null,
+      "reward": {"gallery_entry": "celtic_monument"}
+    },
+    {
+      "prop_id": "gift_shop_selfie",
+      "interaction_text": "Take Selfie at Gift Shop",
+      "description": "'Opening Soon (Since 1994)' sign visible",
+      "requirements": null,
+      "reward": {"gallery_entry": "gift_shop_soon"}
+    }
+  ],
+  
+  "hidden_interactions": [
+    {
+      "interaction_id": "sheep_pet",
+      "trigger": "approach_tractor_close",
+      "interaction_text": "Pet a Sheep",
+      "description": "One of Padraig's sheep is within reach",
+      "reward": {"status": "calm", "duration_minutes": 5},
+      "dialogue_trigger": {
+        "speaker": "padraig_farmer_01",
+        "text": "That's Molly. She likes visitors."
+      }
+    },
+    {
+      "interaction_id": "tin_can_collect",
+      "trigger": "follow_wedding_van_close",
+      "interaction_text": "Grab a Tin Can",
+      "description": "One of the wedding tin cans comes loose",
+      "reward": {"item": "wedding_tin_can_1987", "description": "Worn nub from 37 years of dragging"}
+    },
+    {
+      "interaction_id": "gps_comfort",
+      "trigger": "gps_breakdown_event",
+      "interaction_text": "Pat the GPS",
+      "description": "The GPS is crying. Maybe it needs comfort.",
+      "reward": {"status": "gps_bonded"},
+      "dialogue_trigger": {
+        "speaker": "gps",
+        "text": "*sniff* Thank you. *recalculating... with hope*"
+      }
+    }
+  ]
+}
