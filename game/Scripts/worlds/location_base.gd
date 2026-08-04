@@ -4,9 +4,9 @@ extends Node2D
 ## player spawn/restore, pause menu. Subclasses set spawn_point and
 ## spawn their NPCs/enemies, then call super._ready().
 
-const PLAYER_SCENE := preload("res://Scenes/characters/Player.tscn")
-const NPC_SCENE := preload("res://Scenes/characters/NPCBase.tscn")
-const ENEMY_SCENE := preload("res://Scenes/characters/Enemy.tscn")
+const PLAYER_SCENE := preload("res://characters/player.tscn")
+const NPC_SCENE := preload("res://characters/npc_base.tscn")
+const ENEMY_SCENE := preload("res://characters/enemy.tscn")
 const PAUSE_MENU_SCENE := preload("res://ui/menus/pause_menu.tscn")
 
 @export var location_id: String = ""
