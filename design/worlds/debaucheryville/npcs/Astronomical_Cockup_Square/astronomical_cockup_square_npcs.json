@@ -62,6 +62,9 @@
         "greeting": "My sons. You seek the clock's wisdom. For small donation, I bless your journey.",
         "blessing": "Lorem ipsum spiritu sanctu... party hardy... in vino veritas... amen.",
         "post_blessing": "Go in peace. And check out my cousin's wine cart.",
+        "if_questioned_robe": "This is traditional... uh... local monk attire.",
+        "if_questioned_latin": "Ancient dialect. Very sacred. You wouldn't understand.",
+        "if_declined": "The clock blesses all who watch. But only the devoted receive... the FULL blessing.",
         "return_visit": "You return for second blessing! Double blessing, double price. Very holy."
       },
       "scam_details": {

@@ -70,6 +70,8 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
   SUPPOSITORIES", Four Loko, Winamp, Hot Topic, Habbo, Oakleys, Kinko's, Advil, Uber, Muscle
   Milk) stay (Y2K authenticity, trademark exposure), get parody-renamed (safe + new jokes), or
   mixed (keep neutral mentions, parody vice-context uses). Author to rule; then one sweep round.
+  **Pre-ruled 2026-08-04:** Party Monk's HOLIDAY INN EXPRESS bathrobe easter egg — KEEP (author
+  ruling; do not relitigate in the brands sweep).
 - **Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
   idea.
 
