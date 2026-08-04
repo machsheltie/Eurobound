@@ -4,11 +4,11 @@ var saver
 var state
 
 func before_each() -> void:
-	saver = load("res://Scripts/core/save_system.gd").new()
+	saver = load("res://core/save_system.gd").new()
 	saver.save_path = "user://saves/test_slot.json"
-	var repo = load("res://Scripts/core/data_repo.gd").new()
+	var repo = load("res://core/data_repo.gd").new()
 	repo.load_all()
-	state = load("res://Scripts/systems/GameState.gd").new()
+	state = load("res://core/game_state.gd").new()
 	state.new_game(repo)
 	if FileAccess.file_exists(saver.save_path):
 		DirAccess.remove_absolute(saver.save_path)
@@ -25,7 +25,7 @@ func test_save_then_load_round_trip() -> void:
 	state.set_flag("saved_once")
 	assert_true(saver.save_game(state))
 	assert_true(saver.has_save())
-	var fresh = load("res://Scripts/systems/GameState.gd").new()
+	var fresh = load("res://core/game_state.gd").new()
 	assert_true(saver.load_game(fresh))
 	assert_eq(fresh.gold, 77)
 	assert_true(fresh.has_flag("saved_once"))

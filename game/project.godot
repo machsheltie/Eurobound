@@ -17,11 +17,11 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-DataRepo="*res://Scripts/core/data_repo.gd"
-GameState="*res://Scripts/systems/GameState.gd"
-SaveSystem="*res://Scripts/core/save_system.gd"
-InputSetup="*res://Scripts/core/input_manager.gd"
-SceneRouter="*res://Scripts/core/scene_router.gd"
+DataRepo="*res://core/data_repo.gd"
+GameState="*res://core/game_state.gd"
+SaveSystem="*res://core/save_system.gd"
+InputSetup="*res://core/input_manager.gd"
+SceneRouter="*res://core/scene_router.gd"
 
 [rendering]
 

@@ -4,7 +4,7 @@ var repo
 var tree: Dictionary
 
 func before_each() -> void:
-	repo = load("res://Scripts/core/data_repo.gd").new()
+	repo = load("res://core/data_repo.gd").new()
 	repo.load_all()
 	tree = repo.get_dialogue_tree("vlad_validator")
 

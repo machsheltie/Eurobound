@@ -3,7 +3,7 @@ extends GutTest
 var repo
 
 func before_each() -> void:
-	repo = load("res://Scripts/core/data_repo.gd").new()
+	repo = load("res://core/data_repo.gd").new()
 	assert_true(repo.load_all(), "load_all should succeed with valid data files")
 
 func test_party_member_lord_pilsner() -> void:
