@@ -18,6 +18,31 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
    changes were still in the working tree at pause (modified Assets/Data JSONs, deletions
    under Design/World Design/Debaucheryville/sprites/, .import files).
 
+## 🔁 RESTRUCTURE RESUME CHECKLIST (added 2026-08-04, author-ordered — do not improvise)
+
+When the folder restructure resumes on `chore/folder-restructure`, execute in this exact order:
+
+1. **Clean the tree first.** `git status --porcelain | wc -l` must be 0 before merging. Commit
+   in-flight sweep work to the branch (never stash-and-forget, never `git clean` — see warning 1).
+2. **Merge main in, main wins content conflicts:**
+   `git -c merge.renameLimit=15000 merge main -X theirs`
+   (run ON `chore/folder-restructure`). `-X theirs` makes main's side win any conflicting hunks;
+   rename detection maps main's edits onto files the restructure moved — the raised renameLimit
+   is required because the restructure renamed ~800 paths. After the merge, if anything under
+   `game/` changed: run BOOT + GUT (commands in
+   `docs/superpowers/plans/2026-07-31-folder-restructure.md`, Global Constraints) and match the
+   27/27 baseline before proceeding.
+3. **Re-run the platform/currency sweeps on moved files:** the Sovs-only retrofit (no euros, no
+   koruna — standing ruling below, canon `currency.md` wherever it currently lives, originally
+   `_sorting/Design/Economy/currency.md`) and the tracked world-names verification greps (small
+   ledger, last bullet). Files have new paths since the sweeps last ran — sweep by content match,
+   not by remembered path lists.
+4. **Continue the walkthrough** per `docs/superpowers/plans/2026-07-31-folder-restructure.md`
+   (Tasks 4–7: author personally places files; `_sorting/` must reach ZERO files then be deleted;
+   then Tasks 8–15 game batches). Session 1 (World Design cities) state: legacy PNG-spec merges
+   done with 13 `> ⚠ CONFLICT:` callouts awaiting author rulings — grep `CONFLICT` under the
+   Debaucheryville design docs to find them.
+
 ## Next execution work (in priority order)
 
 1. **Round 5: Economy, Wallet & Crypto Satire System** — spec at
@@ -33,7 +58,7 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
    `"deboucheryville"` key typo) instead of the author's named breweries (Sinfonia: The Standing
    Ovation, Crown & Cask, The Dancing Stein; see city files for all cities). Also carried
    engine notes: per-NPC `chronicles_entry_completed[<npc_id>]` flags (Herp quest dev notes),
-   the Aaron encounter's fixed-stake/€500-collateral + one-time-scene flags (thekingswerehumming
+   the Aaron encounter's fixed-stake/500-Sovs-collateral + one-time-scene flags (thekingswerehumming
    dev notes), Zdenka's cheapest-cure constraint vs the Port-O-Cologne vendor tax (zdenka.md
    dev notes).
 3. **Draft adoption rounds** (per-file formal review → commit of the ~240 drafts; each adoption
@@ -66,7 +91,7 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
   the Emperors, Shamsterdammer, Canal Courage, The Old Master Collection, The Inventor's Cut,
   Sinfonian Wheel, Twenty-One Sinfonian.
 - **QR ARG pages** (Round 5) are framed as the real internet → exempt from ban-all.
-- **€ is SOVS's display glyph; koruna does not exist** (retrofit in Round 5).
+- **SUPERSEDED 2026-08-01:** the euro display-glyph rule is dead by author ruling. The whole game is Sovs; **neither euros nor koruna exist**. Repo-wide retrofit already executed. Canon: `_sorting/Design/Economy/currency.md`.
 
 ## Small ledger (mechanical, any future round)
 
