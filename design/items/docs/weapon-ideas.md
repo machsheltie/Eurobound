@@ -63,3 +63,17 @@
 
 **Upgrade Path:**
 - "Weathered Pledge Paddle" → "Restored Chapter Paddle" → "Legendary President's Gavel"
+---
+
+## Recovered fragment (from weapon-ideas.txt, truncated source — fold in during content round)
+
+**Upgrade Path:**
+- "Weathered Pledge Paddle" → "Restored Chapter Paddle" → "Legendary President's Gavel"
+
+---
+
+## **Combat Integration with Keg-Fu:**
+
+**Motivational Combinations:**
+- Paddle swings become increasingly erratic but powerful as "intoxication level" rises
+- Drunk boxing stumbles can accidentally dodge attacks or trigger
