@@ -402,9 +402,9 @@
       },
 
       "dialogue": {
-        "greeting": "Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there.",
+        "greeting": "Fifty Sovs for the shower. Forty if you go now. It goes up the longer you stand there.",
         "idle_chatter": [],
-        "transaction": "Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there.",
+        "transaction": "Fifty Sovs for the shower. Forty if you go now. It goes up the longer you stand there.",
         "farewell": "N/A",
         "special_triggers": {}
       },
@@ -413,7 +413,7 @@
         {
           "service_id": "port_o_cologne_cure",
           "price": 50,
-          "description": "€50 standard, €40 \"if you go now\"; price rises the longer the affected party dawdles at her cart. Available to any bro or party member who has been launched and waded ashore."
+          "description": "50 Sovs standard, 40 Sovs \"if you go now\"; price rises the longer the affected party dawdles at her cart. Available to any bro or party member who has been launched and waded ashore."
         }
       ],
 
@@ -501,7 +501,7 @@
 
   "npc_interactions": {
     "npc_to_npc": {
-      "description": "Jaxson defers to Petra on anything involving disclosure, forms, or safety and never improvises around her. Petra and Janek share mutual, easy respect — she discloses everything to him the same way she discloses it to everyone, and he trusts her completely. Jaxson holds Janek in mild, carefully concealed awe (Janek is the only contestant in eleven seasons who has never needed him for anything). Hamstradamus shares podium duties with Jaxson on filming days — Jaxson hosts, Hamstradamus prophesies; professional courtesy only. Zdenka, Standa, and Rosta operate independently along fauxst_beach and have no scripted interaction with the principal cast."
+      "description": "Jaxson defers to Petra on anything involving disclosure, forms, or safety and never improvises around her. Petra and Janek share mutual, easy respect — she discloses everything to him the same way she discloses it to everyone, and he trusts her completely. Jaxson holds Janek in mild, carefully concealed awe (Janek is the only contestant in eleven seasons who has never needed him for anything). Hamstradamus shares podium duties with Jaxson on filming days — Jaxson hosts, Hamstradamus prophesies; professional courtesy only. Zdenka, Standa, and Rosťa operate independently along fauxst_beach and have no scripted interaction with the principal cast."
     }
   }
 }

@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Standing in a hotel bathrobe pretending to be a monk, offering "ancient blessings" for €20 per person. The blessing consists of random Latin-sounding gibberish mixed with party phrases. He commits FULLY to the bit and never breaks character, even when the absurdity is obvious.
+Standing in a hotel bathrobe pretending to be a monk, offering "ancient blessings" for 20 Sovs per person. The blessing consists of random Latin-sounding gibberish mixed with party phrases. He commits FULLY to the bit and never breaks character, even when the absurdity is obvious.
 
 ### What Bros Believe
 An authentic European holy man is blessing their journey with ancient spiritual rites. This is the kind of genuine cultural-religious experience you can't get from guidebooks. Bradley even "recognizes" the Latin.
@@ -90,7 +90,7 @@ Started as pure scam 20 years ago. Now it's part performance art, part genuine b
 **Bradley**: "Is this like... a real European blessing?"
 
 **Party Monk** (nodding solemnly):
-> "Very real. Very ancient. The clock, it represents time. Time represents... life. I bless your life. €20 each."
+> "Very real. Very ancient. The clock, it represents time. Time represents... life. I bless your life. 20 Sovs each."
 
 **Lord Pilsner**: "That seems reasonable for eternal blessings."
 
@@ -148,14 +148,14 @@ Started as pure scam 20 years ago. Now it's part performance art, part genuine b
 ### Services Offered
 | Service | Price | Actual Value | Effect/Result |
 |---------|-------|--------------|---------------|
-| Standard Blessing (Individual) | €20 | €0 | Lorem ipsum gibberish, feels nice |
-| Standard Blessing (Group of 3) | €60 | €0 | Same blessing, bros feel "connected" |
-| "Deluxe Blessing" (upsell) | €40 | €0 | Longer gibberish, includes incense waving |
-| Post-Tattoo Blessing | €25 | €0 | "Blesses" Lord Pilsner's duck tattoo |
+| Standard Blessing (Individual) | 20 Sovs | 0 Sovs | Lorem ipsum gibberish, feels nice |
+| Standard Blessing (Group of 3) | 60 Sovs | 0 Sovs | Same blessing, bros feel "connected" |
+| "Deluxe Blessing" (upsell) | 40 Sovs | 0 Sovs | Longer gibberish, includes incense waving |
+| Post-Tattoo Blessing | 25 Sovs | 0 Sovs | "Blesses" Lord Pilsner's duck tattoo |
 
 ### Hidden Details / Easter Eggs
 - If player examines bathrobe closely: "HOLIDAY INN EXPRESS" logo visible
-- Incense burner is labeled "VANILLA DREAMS - €2.99" on bottom
+- Incense burner is labeled "VANILLA DREAMS - 3 Sovs" on bottom
 - During cigarette break, he can be seen in alley still in robe, checking phone
 - Regular clothes visible underneath robe if wind animation triggers
 
@@ -238,7 +238,7 @@ After initial encounter:
 - **Quest**: The Astronomical Cock-Up
 - **Role**: Second scammer encounter (Stage 2)
 - **Trigger**: Player passes fountain area after viewing spot scam
-- **Outcome**: Bros pay €60 total, feel "blessed," are referred to wine cart
+- **Outcome**: Bros pay 60 Sovs total, feel "blessed," are referred to wine cart
 
 ### Quest Gate Function
 Not a gate, but blessing sets up emotional state for wine purchase and later tattoo decision.

@@ -1,6 +1,6 @@
 # Casa Rosé Erotic Theatre
 
-*Where bachelor party dollars meet questionable life choices — €65 to see something you'll describe incorrectly for decades*
+*Where bachelor party dollars meet questionable life choices — 65 Sovs to see something you'll describe incorrectly for decades*
 
 ## Location Identity
 - **Location ID**: shamsterdam_roodelicht_casa_rose_01
@@ -14,9 +14,9 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 PM - 3 AM (shows run hourly on the hour)
 - **Stat Requirements**: None for entry (Bravado check to actually watch shows)
-- **Item Requirements**: €65 entry fee (non-negotiable), additional €20 for "premium seating"
+- **Item Requirements**: 65 Sovs entry fee (non-negotiable), additional 20 Sovs for "premium seating"
 - **Previous Location Requirements**: None (usually reached via bachelor party peer pressure)
-- **Special Conditions**: Mandatory drink purchase inside (€15 minimum), group discounts that aren't really discounts
+- **Special Conditions**: Mandatory drink purchase inside (15 Sovs minimum), group discounts that aren't really discounts
 
 ### Exit Conditions
 - **Normal Exit**: Through front door (walk of contemplation past the pink elephant)
@@ -60,9 +60,9 @@
 - **Layout**: Steep seating surrounding small central stage, "premium" front rows, standing room in back
 - **Lighting**: Stage spots (pink), house lights (dim), emergency exits (hopefully visible)
 - **Seating Arrangements**:
-  - Front row: "Premium" (€85 total) — closest to the action, staff watches for reactions
-  - Middle rows: Standard (€65) — bachelor party territory, matching shirts visible
-  - Back standing: "Budget" (€55, drinks extra) — escape route access
+  - Front row: "Premium" (85 Sovs total) — closest to the action, staff watches for reactions
+  - Middle rows: Standard (65 Sovs) — bachelor party territory, matching shirts visible
+  - Back standing: "Budget" (55 Sovs, drinks extra) — escape route access
 - **Stage Props**:
   - The pole (industrial grade, inspected annually, allegedly)
   - The chair (has seen things)
@@ -79,7 +79,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The tourist-trap strip club that exists purely because bachelor parties expect it to exist. The "famous banana show" is a rite of passage nobody actually enjoys — it's performed, witnessed, Instagrammed (illegally), and then exaggerated in retelling for decades. The entire business model runs on FOMO, peer pressure, and the sunk cost of that €65 entry fee. Everything is overpriced, understaffed, and exactly what you came for even though you'll claim otherwise.
+**Core Concept**: The tourist-trap strip club that exists purely because bachelor parties expect it to exist. The "famous banana show" is a rite of passage nobody actually enjoys — it's performed, witnessed, Instagrammed (illegally), and then exaggerated in retelling for decades. The entire business model runs on FOMO, peer pressure, and the sunk cost of that 65 Sovs entry fee. Everything is overpriced, understaffed, and exactly what you came for even though you'll claim otherwise.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Bachelor party ritual tourism, paying for "experiences" you'll lie about
@@ -91,19 +91,19 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Extracting maximum money from tourists who feel obligated to be here
 - **City-Specific Comedy Operations**: Every element designed to maximize spend: entry fee, drink minimums, "premium" upsells
-- **Buffoon Exploitation**: Bros peer-pressure each other into spending €100+ on something none of them wanted
+- **Buffoon Exploitation**: Bros peer-pressure each other into spending 100 Sovs+ on something none of them wanted
 - **Comedy of Errors**: The gap between what the show is and how they'll describe it to people back home
 - **Consequence System**: "Witnessed Something" status effect, +Discomfort, stories that don't match
 
 ### Buffoon Delusion Scenarios
 **What bros THINK is happening**: Legendary bachelor party experience, once-in-a-lifetime cultural immersion
 
-**What is ACTUALLY happening**: Tourist trap extracting €100+ per person for fog machine and awkward eye contact avoidance
+**What is ACTUALLY happening**: Tourist trap extracting 100 Sovs+ per person for fog machine and awkward eye contact avoidance
 
 **How impaired are they**: Increasingly impaired (drink minimum), impairment is the business model
 
 **Obvious signs they ignore**:
-- €15 drinks (watered down)
+- 15 Sovs drinks (watered down)
 - "Premium" seats are just closer to things you don't want to be close to
 - Staff has seen a thousand bachelor parties and is bored by all of them
 - The "world famous" show is performed for tourists who don't know any other shows exist
@@ -115,8 +115,8 @@
 ## Gameplay Mechanics
 ### Entry & Seating System
 - **Promoter Encounter**: Sidewalk NPC tries to guide you in, offers "special deal" (not special, not a deal)
-- **Ticket Purchase**: Counter service, upsell to "premium" (€85), group "discount" calculation that always costs more
-- **Drink Minimum**: €15 minimum first drink purchase, menu intentionally confusing
+- **Ticket Purchase**: Counter service, upsell to "premium" (85 Sovs), group "discount" calculation that always costs more
+- **Drink Minimum**: 15 Sovs minimum first drink purchase, menu intentionally confusing
 - **Seating Selection**: Choose section (front/middle/back), each has different mechanics
 
 ### The Show Experience (Abstracted)
@@ -131,19 +131,19 @@
 ### Menu & Consumables (Required Purchases)
 | Item | Price | Effects | Bartender Note |
 |------|-------|---------|----------------|
-| "Pink Lady" (House Special) | €15 | +5 SP, -Inhibitions, exactly as pink as the décor | "House special. Very popular." |
-| "The Bachelor" | €18 | +8 SP, +Bravado (temporarily), watered down | "For celebrations." |
-| "Champagne" (not actually) | €95/bottle | +20 SP entire party, Trophy item: empty bottle | "Very romantic. Very premium." |
-| "The Forget-Me-Not" | €20 | +10 SP, +Confused, memory of evening becomes vague | "Strong one. Popular for bachelor parties." |
-| Beer (only option: Heineken) | €12 | +3 SP, -Bravado (everyone knows you're stalling) | "Ah. Just beer. Okay." |
-| Water | €8 | No effects, but costs €8 | "Water is... eight euros." |
-| Merch: "I Survived Casa Rosé" Shot Glass | €25 | Trophy item, display in hostel | "Collector's item. Very rare." |
+| "Pink Lady" (House Special) | 15 Sovs | +5 SP, -Inhibitions, exactly as pink as the décor | "House special. Very popular." |
+| "The Bachelor" | 18 Sovs | +8 SP, +Bravado (temporarily), watered down | "For celebrations." |
+| "Champagne" (not actually) | 95 Sovs/bottle | +20 SP entire party, Trophy item: empty bottle | "Very romantic. Very premium." |
+| "The Forget-Me-Not" | 20 Sovs | +10 SP, +Confused, memory of evening becomes vague | "Strong one. Popular for bachelor parties." |
+| Beer (only option: Heineken) | 12 Sovs | +3 SP, -Bravado (everyone knows you're stalling) | "Ah. Just beer. Okay." |
+| Water | 8 Sovs | No effects, but costs 8 Sovs | "Water is... eight Sovs." |
+| Merch: "I Survived Casa Rosé" Shot Glass | 25 Sovs | Trophy item, display in hostel | "Collector's item. Very rare." |
 
 ### The "No Camera" Enforcement (Selective)
 - **Official Rule**: No cameras, no phones, no exceptions
 - **Actual Enforcement**: Staff watches for obvious recording, ignores discrete Instagram
 - **Chadwick's Ring Light**: IMMEDIATE enforcement, confiscation threat
-- **Consequence**: Warning → Escorted out (€65 non-refundable)
+- **Consequence**: Warning → Escorted out (65 Sovs non-refundable)
 - **Meta-Commentary**: Staff knows photos happen, photos are actually free marketing
 
 ### Crowd Interaction System
@@ -166,7 +166,7 @@
 ## NPCs & Vendors
 ### Staff Characters
 
-**Promoter Pavel**
+**Promoter Bogdan**
 - **Role**: Sidewalk interceptor, first point of contact, commission-based desperation
 - **Location**: Outside entrance, 20-foot "engagement zone"
 - **Appearance**: Black suit (cheap), pink pocket square (uniform), smile that's seen rejection
@@ -184,11 +184,11 @@
 - **Appearance**: Black outfit, pink accents, expression of "I've calculated your net worth"
 - **Demeanor**: Efficient, upselling without appearing to, remembers nothing but your tab
 - **Dialogue**:
-  - "First drink is minimum fifteen euros. This is policy."
+  - "First drink is minimum fifteen Sovs. This is policy."
   - "The Bachelor cocktail? Good choice. Twenty-three total with service."
   - "Champagne? Very romantic. For special occasion? Very popular for bachelor parties."
   - "Cash or card. Card has... small fee. Cash is better for you."
-  - "Your friend wanted water. Water is eight euros. This is normal."
+  - "Your friend wanted water. Water is eight Sovs. This is normal."
 
 **Door Host André**
 - **Role**: ID check, ticket validation, crowd control
@@ -209,7 +209,7 @@
 - **Technique**: Appears beside tables at critical moments, offers "refreshments" when you're distracted
 - **Dialogue**:
   - *whispered during show* "Another round? Special price during show."
-  - "Your glass is empty. Very sad. Want to fix? Twenty euros fix."
+  - "Your glass is empty. Very sad. Want to fix? Twenty Sovs fix."
   - "Your friend looks thirsty. You want to help friend? Good friend."
 
 ### Customer NPCs (Atmospheric)
@@ -235,7 +235,7 @@
 - **Function**: Mirror for Chadwick, shows consequences of ring light
 
 ### Original NPC Dialogue
-**Promoter Pavel:**
+**Promoter Bogdan:**
 - "My friends! Tonight is special night. Best show of the week. Every night is best show of the week."
 - "You want story to tell? This is story. Trust me. Your grandchildren will... actually, don't tell grandchildren."
 - "I see bachelor party? Who is getting married? Congratulations! Tonight we celebrate with... culture."
@@ -290,7 +290,7 @@ After visiting Casa Rosé, bros will randomly reference the experience:
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Cash register emphasis on overpriced purchases
-- **Character Voice Direction**: Pavel's desperate enthusiasm, Katya's efficient detachment, André's weary authority
+- **Character Voice Direction**: Bogdan's desperate enthusiasm, Katya's efficient detachment, André's weary authority
 - **Environmental Comedy**: Bachelor party noise, uncomfortable silence moments
 - **The Post-Show Audio**: Bros' dialogue becomes vague, trailing off, subject changes
 
@@ -300,7 +300,7 @@ After visiting Casa Rosé, bros will randomly reference the experience:
   - Exterior facade with pink neon, pink elephant statue
   - Lobby/bar interior with velvet walls
   - Theatre space with stage and seating sections
-  - Staff NPC sprites (Pavel, Katya, André, Amber)
+  - Staff NPC sprites (Bogdan, Katya, André, Amber)
   - Customer NPCs (Bachelor Party, Confused Couple, Regulars, Influencer)
   - Pink elephant statue (photo op, exterior landmark)
   - Fog machine haze overlay
@@ -309,7 +309,7 @@ After visiting Casa Rosé, bros will randomly reference the experience:
   - Neon sign flicker (exterior, constant)
   - Fog drift (theatre, during shows)
   - Crowd reaction wave (theatre, show responses)
-  - Promoter Pavel approach pattern (sidewalk, NPC targeting)
+  - Promoter Bogdan approach pattern (sidewalk, NPC targeting)
   - Bartender Katya drink preparation (upsell rhythm)
   - Pink elephant statue: static (it's a statue)
 - **Performance Budget**: 45 FPS target, max 18 draw calls, 42MB memory
@@ -325,12 +325,12 @@ After visiting Casa Rosé, bros will randomly reference the experience:
 ### Social Media Strategy
 - **Instagram Moments**: Pink Elephant photo op (everyone takes it), neon exterior
 - **TikTok Potential**: "Describing what I saw" compilation (descriptions don't match), promoter encounters, price reveals
-- **Twitter Hooks**: Pavel's quotes, "world famous" skepticism, drink price shock
+- **Twitter Hooks**: Bogdan's quotes, "world famous" skepticism, drink price shock
 - **Streaming Content**: Full experience reaction (abstracted show), bros' conflicting retellings
 
 ### Community Engagement
-- **Fan Art Potential**: Pink Elephant statue, promoter Pavel's energy, Katya's efficiency
-- **Meme-ability**: "€8 for water" format, show descriptions that never match, Pavel's persistence
+- **Fan Art Potential**: Pink Elephant statue, promoter Bogdan's energy, Katya's efficiency
+- **Meme-ability**: "8 Sovs for water" format, show descriptions that never match, Bogdan's persistence
 - **Cultural Discussion**: Bachelor party tourism, red light district economics, tourist obligation culture
 
 ## Quality Assurance Checklist
@@ -349,7 +349,7 @@ After visiting Casa Rosé, bros will randomly reference the experience:
 ### Environment Art — Exterior (6 PNGs)
 - casa_rose_facade_neon.png - 512x384 - Pink neon signage, black door
 - pink_elephant_statue.png - 256x384 - Photo op landmark
-- promoter_sidewalk_zone.png - 384x256 - Pavel's domain
+- promoter_sidewalk_zone.png - 384x256 - Bogdan's domain
 - entrance_velvet_rope.png - 64x192 - Always open, always present
 - pricing_board_obscured.png - 128x192 - Intentionally hard to read
 - roodelicht_row_background.png - 1920x256 - Street context
@@ -367,9 +367,9 @@ After visiting Casa Rosé, bros will randomly reference the experience:
 - fog_machine_haze.png - 1920x512 - Atmospheric overlay
 
 ### Character Sprites (12 PNGs)
-- promoter_pavel_approach.png - 64x96 - Sidewalk interception
-- promoter_pavel_pitch.png - 64x96x4 - Deal explanation animation
-- promoter_pavel_rejected.png - 64x96 - "I am here. Always here."
+- promoter_bogdan_approach.png - 64x96 - Sidewalk interception
+- promoter_bogdan_pitch.png - 64x96x4 - Deal explanation animation
+- promoter_bogdan_rejected.png - 64x96 - "I am here. Always here."
 - bartender_katya_main.png - 64x96 - Efficient calculation
 - bartender_katya_upsell.png - 64x96x3 - Premium suggestion
 - door_host_andre.png - 64x96 - Gatekeeper presence
@@ -390,11 +390,11 @@ After visiting Casa Rosé, bros will randomly reference the experience:
 ### UI Elements (6 PNGs)
 - show_schedule_board.png - 128x192 - Hourly timing
 - seating_selection_ui.png - 256x128 - Front/Middle/Back
-- drink_minimum_tracker.png - 96x32 - €15 requirement
+- drink_minimum_tracker.png - 96x32 - 15 Sovs requirement
 - witnessed_something_status.png - 64x64 - Permanent effect
 - story_retelling_variants.png - 192x96 - Three versions
 - pink_photo_added_notification.png - 128x64 - Album update
 
 ---
 
-*Casa Rosé: €65 to see something you'll describe differently every time you tell the story.*
+*Casa Rosé: 65 Sovs to see something you'll describe differently every time you tell the story.*

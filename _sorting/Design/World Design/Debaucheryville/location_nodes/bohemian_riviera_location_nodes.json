@@ -99,7 +99,7 @@
     },
     "mini_game_minigame_beatdown_sudden_death": {
       "type": "mini_game",
-      "description": "Head-to-head buzzer duel vs. Janek Sykora at prize_podium, triggered on <=2 strikes after Q9.",
+      "description": "Head-to-head buzzer duel vs. Janek Sýkora at prize_podium, triggered on <=2 strikes after Q9.",
       "mechanics": "Win condition: buzz inside Janek's 1.5-second crew-team wave window and answer correctly; audio-only tell (oar catch-and-release)."
     },
     "event_hook_beatdown_launch_sequence": {

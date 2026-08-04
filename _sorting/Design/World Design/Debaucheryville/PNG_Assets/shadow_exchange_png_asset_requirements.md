@@ -93,7 +93,7 @@ assets/sprites/locations/debaucheryville/oldtown/
 - **Alphabet A-M** (0, 128, 208x32) - First half of letter set
 - **Alphabet N-Z** (208, 128, 208x32) - Second half of letter set
 - **Numbers 0-9** (0, 160, 160x32) - Complete number set
-- **Currency Symbols** (160, 160, 96x32) - €, $, £, KC indicators
+- **Defunct & Novelty Marks** (160, 160, 96x32) - Six 16x32 split-flap tiles for the board's dead-money column. Shadow Exchange is the game's **only** sanctioned money changer and it deals exclusively in defunct, foreign and novelty currency nobody else accepts (`Design/Economy/currency.md`, "THE ONE EXCEPTION"). The six flaps: **(1)** the guilder hook — a stroked lowercase `f`, ties to De Guldenvreter; **(2)** a small crown silhouette with a bar struck through it — the dead crown of a country that stopped issuing; **(3)** a casino-chip pip — notched-rim disc; **(4)** an arcade/transit token — octagon with a centre hole; **(5)** a skull-over-coin — the demonetised tile; **(6)** a hand-inked `?` — the catch-all for whatever the back alley is pretending has value this week. **No euro tile: euros do not exist in this game.** **No `SOVS` tile either** — the board prices worthless paper; Sovs are what you hand Mrs. Rata at the counter, never a line on the board.
 
 ### Rate Change Indicators (Mini-Game System):
 - **Green Tick Frame 1** (0, 192, 32x32) - Favorable rate start
@@ -307,7 +307,7 @@ assets/sprites/locations/debaucheryville/oldtown/
 - **Potato Mode:** Essential vendors and counters only, no atmospheric effects
 
 ### Performance Targets:
-- **Target FPS:** 50 fps (underground enclosed space)
+- **Target FPS:** 60 fps (underground enclosed space)
 - **Max Draw Calls:** 16 per frame
 - **Memory Footprint:** 40MB maximum for location
 
@@ -530,7 +530,7 @@ assets/sprites/locations/debaucheryville/oldtown/
 | Seedy Underbelly Present | ✅ | Black-market bazaar, counterfeit trading, notoriety/"verification fee" racket |
 | Gameplay Value Established | ✅ | Split-flap timing mini-game, UV scan checks, barter window, shady contracts, boss-gated Premium Stock |
 | Technical Feasibility | ✅ | 6 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D smoke/UV effects |
-| Mobile Performance Budget | ✅ | 50 FPS target, max 16 draw calls, 40MB memory footprint |
+| Mobile Performance Budget | ✅ | 60 FPS target, max 16 draw calls, 40MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (split-flap clack, cash counter whir, UV beep), pattern-based ticks for colorblind timing |
 | No Crypto Elements | ✅ | Crypto parody established in source material (meme-coin monitors, CryptoBro69's Ex NFT storyline) |
 | Social Media Integration | ✅ | Split-flap aesthetic, calculator obsession comedy, quotable NPC dialogue identified |

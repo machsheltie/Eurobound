@@ -69,7 +69,7 @@ Should look like she could be a tourist herself - that's the point. The fanny pa
 | Professional | Treats scamming like any other job |
 
 ### Internal Monologue
-> "Crying. Good. The tall one is making a decision. The smart one is calculating. The filming one will buy anything that photographs well. Plate for the tall one, shirt for the filming one, snow globe for the smart one. €100 in ninety seconds."
+> "Crying. Good. The tall one is making a decision. The smart one is calculating. The filming one will buy anything that photographs well. Plate for the tall one, shirt for the filming one, snow globe for the smart one. 100 Sovs in ninety seconds."
 
 ### Motivation
 Pure business. No pretense of service or spirituality. She saw an opportunity 25 years ago and built an efficient operation. Respects the other scammers but considers herself a "legitimate retailer" - she has a stall, after all.
@@ -115,7 +115,7 @@ Pure business. No pretense of service or spirituality. She saw an opportunity 25
 *Already looking for next customer*
 
 ### Upsell/Cross-Sell
-> "You buy plate? Good. Now shirt. Now you have SET. Complete experience. What is €30 more for complete memory?"
+> "You buy plate? Good. Now shirt. Now you have SET. Complete experience. What is 30 Sovs more for complete memory?"
 
 ### If Player Declines
 > "Your choice. But memories fade. Plates do not. Well. They break. But you understand."
@@ -149,14 +149,14 @@ Pure business. No pretense of service or spirituality. She saw an opportunity 25
 ### Products Offered
 | Item | Price | Actual Value | Effect/Result |
 |------|-------|--------------|---------------|
-| Clock Commemorative Plate | €45 | €2 | Throwable (1 damage), breaks immediately |
-| "I Survived The Cock-Up" T-Shirt | €30 | €3 | +1 Bravado, -2 Charm with locals |
-| Temporary Clock Tattoo | €15 | €0.50 | Cosmetic until shower, preview of regret |
-| Clock Snow Globe | €25 | €4 | Plays tiny, sad chime when shaken |
-| Clock Keychain | €12 | €1 | No effect, jingles annoyingly |
-| Clock Magnet | €8 | €0.50 | Sticks to hostel fridge |
-| Clock Shot Glass | €10 | €1 | "For the clock wine" |
-| Complete Memory Package | €120 | €12 | All of the above, slight "discount" |
+| Clock Commemorative Plate | 45 Sovs | 2 Sovs | Throwable (1 damage), breaks immediately |
+| "I Survived The Cock-Up" T-Shirt | 30 Sovs | 3 Sovs | +1 Bravado, -2 Charm with locals |
+| Temporary Clock Tattoo | 15 Sovs | 0.50 Sovs | Cosmetic until shower, preview of regret |
+| Clock Snow Globe | 25 Sovs | 4 Sovs | Plays tiny, sad chime when shaken |
+| Clock Keychain | 12 Sovs | 1 Sov | No effect, jingles annoyingly |
+| Clock Magnet | 8 Sovs | 0.50 Sovs | Sticks to hostel fridge |
+| Clock Shot Glass | 10 Sovs | 1 Sov | "For the clock wine" |
+| Complete Memory Package | 120 Sovs | 12 Sovs | All of the above, slight "discount" |
 
 ### Stall Details
 | Feature | Description |
@@ -250,7 +250,7 @@ After initial encounter:
 - **Quest**: The Astronomical Cock-Up
 - **Role**: Fourth scammer encounter (Stage 2), merchandise acquisition
 - **Trigger**: 35 seconds after clock show, post-clock vulnerability active
-- **Outcome**: Bros buy €90+ worth of commemorative garbage
+- **Outcome**: Bros buy 90 Sovs+ worth of commemorative garbage
 
 ### Quest Gate Function
 Not a gate, but temporary tattoo serves as preview/setup for Lord Pilsner's tattoo decision at Euro Ink 4 Less.

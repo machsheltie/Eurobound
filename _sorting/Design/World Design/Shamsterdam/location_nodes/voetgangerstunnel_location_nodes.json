@@ -38,7 +38,7 @@
       "zone_number": 1,
       "exterior": {
         "description": "Stairs descending from the Bike Crossing into the underground network. A wall-mounted map promises clarity but delivers confusion. Marloes's kiosk offers the only accurate navigation aid—for a price.",
-        "entry_condition": "From Bike Crossing (unlocked) or Central Station basement"
+        "entry_condition": "From Bike Crossing (unlocked) or Centraal Chaos basement"
       },
       "interior": {
         "theme": "False hope, service point, tutorial zone",

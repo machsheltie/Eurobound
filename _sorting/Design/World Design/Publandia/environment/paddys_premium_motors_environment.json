@@ -72,7 +72,7 @@
       "keys_sliding": "metal_on_wood_deliberate",
       "paperwork_signing": "pen_scratching_paper_rustle",
       "gps_startup": "cheerful_electronic_ironic",
-      "seamus_sigh": "weary_resigned_exhale"
+      "fergus_sigh": "weary_resigned_exhale"
     },
     
     "comedy_stingers": {
@@ -97,13 +97,13 @@
     ],
     
     "location_specific_states": {
-      "warned_by_seamus": {
+      "warned_by_fergus": {
         "trigger": "first_encounter_complete",
         "permanent": true,
         "effects": {
           "bros_ignore_warning": true
         },
-        "description": "Seamus warned them. They didn't listen. They never listen."
+        "description": "Fergus warned them. They didn't listen. They never listen."
       }
     }
   },
@@ -116,23 +116,23 @@
   "time_of_day_changes": {
     "morning": {
       "lighting": "gray_overcast_light_rain",
-      "seamus_state": "coffee_in_hand_resigned",
-      "special_notes": "Seamus checks the incident counter. Still zero."
+      "fergus_state": "coffee_in_hand_resigned",
+      "special_notes": "Fergus checks the incident counter. Still zero."
     },
     "afternoon": {
       "lighting": "slightly_brighter_still_gray",
-      "seamus_state": "behind_counter_waiting",
+      "fergus_state": "behind_counter_waiting",
       "special_notes": "Peak tourist rental hours"
     },
     "evening": {
       "lighting": "golden_hour_briefly_then_gray",
-      "seamus_state": "preparing_to_close",
-      "special_notes": "Seamus watches the Cloverleaf on the horizon"
+      "fergus_state": "preparing_to_close",
+      "special_notes": "Fergus watches the Cloverleaf on the horizon"
     },
     "closing_time": {
       "lighting": "interior_lights_off_exterior_dark",
-      "seamus_state": "gone_home",
-      "special_notes": "Door locked. Closed sign. Seamus stares at Mary's photo at home."
+      "fergus_state": "gone_home",
+      "special_notes": "Door locked. Closed sign. Fergus stares at Mary's photo at home."
     }
   },
   
@@ -153,13 +153,13 @@
       "description": "Proper Irish downpour",
       "visual": "heavy_rain_particles",
       "audio": "rain_heavy",
-      "seamus_comment": "Ye're not driving in THIS, are ye? ...Aye, of course ye are."
+      "fergus_comment": "Ye're not driving in THIS, are ye? ...Aye, of course ye are."
     },
     "rare_sun": {
       "modifier": 1.0,
       "description": "Brief sunny break",
       "visual": "sun_beams_through_clouds",
-      "seamus_comment": "Don't trust it. The sun's a liar in these parts.",
+      "fergus_comment": "Don't trust it. The sun's a liar in these parts.",
       "frequency": "rare"
     }
   },
@@ -188,7 +188,7 @@
     },
     "cigarette_smoke": {
       "type": "ambient",
-      "source": "seamus_ashtray",
+      "source": "fergus_ashtray",
       "density": "wisp",
       "color": "#D3D3D3",
       "movement": "rising_drift"
@@ -237,7 +237,7 @@
       {
         "element": "marys_photo",
         "description": "Silver frame on desk. 'MARY - CLOVERLEAF '92' on back.",
-        "location": "seamus_desk"
+        "location": "fergus_desk"
       },
       {
         "element": "cloverleaf_on_horizon",

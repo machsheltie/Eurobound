@@ -99,28 +99,28 @@
 ### Complete Menu System (Original)
 **All items preserved exactly as specified:**
 
-#### **Doner of Illusions™** - 7€
+#### **Doner of Illusions™** - 7 Sovs
 - **Description**: Spinning heap of shredded meat, gummy bears, and absinthe glaze
 - **Effects**: +10 SP, -5 Intelligence, 25% Confused for 2 battles
 - **Special**: Unlocks carnival-exclusive dialogue if consumed in clown gear
 - **Quest Connection**: Required for The Great Döner Debate crossover quest, unlocks unique ICQ lore if consumed during Tony420 interaction
 
-#### **Sausage of Suspicion** - 6€
+#### **Sausage of Suspicion** - 6 Sovs
 - **Description**: Grey, sweaty tube meat on a stick. Whispers when held
 - **Effects**: -2 Defense, +3 Agility, 50% chance of "Itchy" status
 - **Strategic Use**: Speed boost with defensive trade-off and mysterious side effects
 
-#### **Clown Dog Deluxe™** - 9€
+#### **Clown Dog Deluxe™** - 9 Sovs
 - **Description**: Hot dog with red licorice bun, mustard smiley, and Pop Rocks relish
 - **Effects**: Heals 15 HP, adds "Sticky" debuff to all enemies next round
 - **Strategic Use**: Healing with combat advantage through enemy debuffing
 
-#### **Meatball on a Lollipop Stick** - 5€
+#### **Meatball on a Lollipop Stick** - 5 Sovs
 - **Description**: It's exactly what it sounds like
 - **Effects**: +5 Accuracy, 25% chance of attracting sewer NPCs
 - **Strategic Use**: Precision boost with unexpected encounter risk
 
-#### **Glizzénstein's Brain Brat** - 12€
+#### **Glizzénstein's Brain Brat** - 12 Sovs
 - **Description**: Glowing sausage rumored to be part AI and part veal
 - **Effects**: +2 Intelligence, -1 Charisma, +5% critical chance vs. humanoids
 - **Strategic Use**: Combat intelligence boost with social trade-off
@@ -330,23 +330,23 @@ Butterfly knife (chrome finish), cracked porcelain mask, lighter fluid vapor
 
 3. mystery_menu_items_detailed.png (1024x512 pixels)
 All 5 menu items with disgusting yet appealing detail:
-Doner of Illusions™ (7€):
+Doner of Illusions™ (7 Sovs):
 
 Spinning meat heap, gummy bears mixed in, absinthe glaze green shimmer, serving wrapped
 
-Sausage of Suspicion (6€):
+Sausage of Suspicion (6 Sovs):
 
 Grey sweaty tube meat, wooden stick, whisper audio waves, suspicious from all angles
 
-Clown Dog Deluxe™ (9€):
+Clown Dog Deluxe™ (9 Sovs):
 
 Red licorice bun, mustard smiley face, Pop Rocks relish, assembled grotesque
 
-Meatball on a Lollipop Stick (5€):
+Meatball on a Lollipop Stick (5 Sovs):
 
 Spherical mystery meat, candy stick inappropriate, structural impossibility, previous bite marks
 
-Glizzénstein's Brain Brat (12€):
+Glizzénstein's Brain Brat (12 Sovs):
 
 Glowing internal AI, circuit pattern meat surface, organic digital mix, pulsing glow packaging
 

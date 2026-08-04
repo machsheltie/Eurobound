@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 10 PM (extended tourist confusion hours)
 - **Stat Requirements**: None (understanding of international drug law not required, also not provided)
-- **Item Requirements**: Gold for purchases (€10-75), destination country's customs regulations (not consulted)
+- **Item Requirements**: Gold for purchases (10 Sovs-75), destination country's customs regulations (not consulted)
 - **Previous Location Requirements**: None (the confusion is accessible to all)
 - **Special Conditions**: Shop is NOT a coffeeshop, this distinction matters, tourists don't understand why
 
@@ -156,19 +156,19 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 ### Product Inventory
 | Item | Price | Category | NL Legal | Export Risk | Description |
 |------|-------|----------|----------|-------------|-------------|
-| Hemp Tote Bag | €15 | Clothing | 100% | None | Actually just a bag |
-| Hemp Rope Bracelet | €12 | Accessory | 100% | None | Cannabis-free cannabis plant |
-| CBD Oil 5% | €30 | Wellness | 100% | Low-Medium | "Check your local laws" |
-| CBD Oil 15% | €55 | Wellness | 100% | Medium | "Seriously, check them" |
-| CBD Gummies | €25 | Edible | 100% | Medium | "Some countries are weird about gummies" |
-| Hemp Protein Powder | €35 | Food | 100% | Low | Actual nutrition product |
-| "Tobacco" Grinder | €20 | Accessory | 100% | Low | For tobacco. Obviously. |
-| "Tobacco" Pipe | €25 | Accessory | 100% | Low-Medium | Design-dependent risk |
-| Rolling Papers (Branded) | €8 | Accessory | 100% | Very Low | Paper is legal everywhere |
-| Souvenir Seed Pack | €40 | Seeds | 100%* | HIGH | *Not for germination |
-| Premium Strain Seeds | €65 | Seeds | 100%* | VERY HIGH | *Definitely not for germination |
-| Space Cake Mix | €20 | "Food" | 100% | High | "Just add... nothing illegal" |
-| Leaf-Shaped Everything | €10-30 | Novelty | 100% | Embarrassment | Declaring your tourist status |
+| Hemp Tote Bag | 15 Sovs | Clothing | 100% | None | Actually just a bag |
+| Hemp Rope Bracelet | 12 Sovs | Accessory | 100% | None | Cannabis-free cannabis plant |
+| CBD Oil 5% | 30 Sovs | Wellness | 100% | Low-Medium | "Check your local laws" |
+| CBD Oil 15% | 55 Sovs | Wellness | 100% | Medium | "Seriously, check them" |
+| CBD Gummies | 25 Sovs | Edible | 100% | Medium | "Some countries are weird about gummies" |
+| Hemp Protein Powder | 35 Sovs | Food | 100% | Low | Actual nutrition product |
+| "Tobacco" Grinder | 20 Sovs | Accessory | 100% | Low | For tobacco. Obviously. |
+| "Tobacco" Pipe | 25 Sovs | Accessory | 100% | Low-Medium | Design-dependent risk |
+| Rolling Papers (Branded) | 8 Sovs | Accessory | 100% | Very Low | Paper is legal everywhere |
+| Souvenir Seed Pack | 40 Sovs | Seeds | 100%* | HIGH | *Not for germination |
+| Premium Strain Seeds | 65 Sovs | Seeds | 100%* | VERY HIGH | *Definitely not for germination |
+| Space Cake Mix | 20 Sovs | "Food" | 100% | High | "Just add... nothing illegal" |
+| Leaf-Shaped Everything | 10 Sovs-30 | Novelty | 100% | Embarrassment | Declaring your tourist status |
 
 ### The "Is This Legal?" Interaction
 **Trigger**: Ask staff about any product's legality
@@ -233,12 +233,12 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 ## NPCs & Vendors
 ### Shop Staff
 
-**Manager Daan**
+**Manager Ruben**
 - **Role**: Shop manager, legal disclaimer specialist, master of qualification
 - **Appearance**: 30s Dutch man, professional casual, hemp shirt (of course), reassuring presence
 - **Background**: Former coffeeshop worker, transitioned to "legal" hemp retail, knows all the distinctions
 - **Demeanor**: Friendly, informative, carefully non-liable, expert in qualified statements
-- **The Daan Method**: Maximum information, minimum responsibility
+- **The Ruben Method**: Maximum information, minimum responsibility
 - **Dialogue**:
   - "Welcome to Schrödinger's Souvenir! Everything here is legal in Shamsterdam. Where are you traveling to?"
   - "CBD is different from THC. CBD won't get you high. It's in a legal gray area internationally. I can explain more."
@@ -301,7 +301,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - **Function**: The internal conflict externalized
 
 ### Original NPC Dialogue
-**Daan's Shop Philosophy (Extended):**
+**Ruben's Shop Philosophy (Extended):**
 - "Schrödinger proposed a thought experiment. We made it a business model. Until observed, everything is fine."
 - "Shamsterdam has one set of rules. The EU has another. Your country has another. We exist in the overlap."
 - "I sell legal products. What you do with them after you leave is... your experiment to conduct."
@@ -317,7 +317,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - **Chadwick** (purchasing): "The grinder is for TOBACCO. The papers are for... ROLLING things. LEGAL things."
 - **Chadwick** (seeds): "COLLECTOR'S items. I'm a COLLECTOR now. Of seeds. That I will NOT plant."
 - **Bradley**: "I'll take the hemp bag. Hemp bags are safe."
-- **Bradley** (to Daan): "Could you explain the CBD situation again? Slowly."
+- **Bradley** (to Ruben): "Could you explain the CBD situation again? Slowly."
 - **Bradley** (customs): "Everything goes in checked luggage."
 
 ## System Integration
@@ -361,7 +361,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Slight uncertainty note on seed purchases
-- **Character Voice Direction**: Daan's careful qualification, Yuki's educational patience
+- **Character Voice Direction**: Ruben's careful qualification, Yuki's educational patience
 - **Environmental Comedy**: Coffeeshop Overflow's confusion, Anxious Purchaser's stress
 - **The Disclaimer Sound**: Subtle legal-document energy during seed purchase
 
@@ -373,7 +373,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
   - Product displays by category
   - Education corner
   - Seed display section
-  - Daan and Yuki sprites
+  - Ruben and Yuki sprites
   - Customer NPC sprites
   - Product item sprites
   - Legal disclaimer visuals
@@ -400,7 +400,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - **Streaming Content**: Full legal explanation attempt, seed purchase decision, customs encounter
 
 ### Community Engagement
-- **Fan Art Potential**: Quantum cat mascot, Daan explaining things, seed packaging
+- **Fan Art Potential**: Quantum cat mascot, Ruben explaining things, seed packaging
 - **Meme-ability**: "Until observed" format, legal qualification, collector fiction
 - **Cultural Discussion**: CBD regulation complexity, drug tourism economics, legal gray zones
 
@@ -411,7 +411,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - [x] **Satirical targets appropriate** (Legal confusion, tourist ignorance, not drug use itself)
 - [x] **Gameplay value established** (Legality system, seed ritual, customs integration)
 - [x] **No crypto elements** (Pure quantum legal uncertainty)
-- [x] **Original content preserved** (Schrödinger concept, Daan characterization, seed ritual)
+- [x] **Original content preserved** (Schrödinger concept, Ruben characterization, seed ritual)
 
 ---
 
@@ -446,8 +446,8 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - suspicious_souvenir_tag.png - 24x24 - Inventory marker
 
 ### Character Sprites (10 PNGs)
-- daan_manager.png - 64x96 - Professional hemp shirt
-- daan_explaining.png - 64x96x3 - Legal qualification gestures
+- ruben_manager.png - 64x96 - Professional hemp shirt
+- ruben_explaining.png - 64x96x3 - Legal qualification gestures
 - yuki_associate.png - 64x96 - Educational patience
 - yuki_demonstrating.png - 64x96x2 - Product explanation
 - research_tourist.png - 64x96 - Checking phone, responsible

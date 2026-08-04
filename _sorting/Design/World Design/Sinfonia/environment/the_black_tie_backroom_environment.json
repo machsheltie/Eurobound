@@ -171,13 +171,13 @@
       {
         "status_removed": "stressed",
         "method": "complimentary_drink",
-        "cost_euro": 0,
+        "cost_sov": 0,
         "hidden_cost": "extends_session_length"
       },
       {
         "status_removed": "embarrassed",
         "method": "siegfried_coat_check_conversation",
-        "cost_euro": 20
+        "cost_sov": 20
       }
     ]
   },
@@ -239,7 +239,7 @@
     "host": "sinfonia_npc_siegfried_coatcheck_01",
     "host_title": "The Reformed Gambler",
     "location": "apartment_above_the_club",
-    "meeting_requirements": ["win_at_least_once", "lose_at_least_once", "tip_20_euro"],
+    "meeting_requirements": ["win_at_least_once", "lose_at_least_once", "tip_20_sov"],
     "stay_effects": [
       {"id": "gamblers_insight", "duration": "next_session"},
       {"id": "borrowed", "gold_delta": -50},
@@ -275,7 +275,7 @@
       {"backroom_losses_affect": "haute_couture_haberdashery_valued_client_path"}
     ],
     "economic_flow": {
-      "note": "A party that busts here can no longer afford the Haberdashery's €500 Valued Client path. Organic pressure only; no hard gate in either direction."
+      "note": "A party that busts here can no longer afford the Haberdashery's 500 Sovs Valued Client path. Organic pressure only; no hard gate in either direction."
     }
   },
 
@@ -290,7 +290,7 @@
         "corner_table_scene_consumed": true,
         "aaron_present": true,
         "aaron_ambient_dialogue": true,
-        "collateral_chips_lost_euro": 500,
+        "collateral_chips_lost_sov": 500,
         "items_held": ["item_candy_smokes", "item_tractor_nft"],
         "permanent": true
       },

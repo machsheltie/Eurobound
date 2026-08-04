@@ -12,11 +12,12 @@
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_local_observer_milan_01`
 - **Display Name**: Milan
-- **Internal Name**: Milan Novotný (no relation to tattoo artist)
+- **Internal Name**: Milan Novotný (no relation to Jakub "Euro Ink" Novák, the tattoo artist)
 - **Role**: Ambient NPC / Local Color / Czech Commentary
 - **Associated Quest**: None (background atmosphere)
 - **Primary Location**: Astronomical Cock-Up Square, Debaucheryville
 - **Secondary Appearances**: Same location only
+- **Family**: One of the Debaucheryville Novotnýs — uncle Jiří Novotný waits at Tram Stop #17, aunt Věra Novotná runs Midnight Munchies General Store. Milan upholds the family tradition of standing still and watching.
 
 ---
 
@@ -70,8 +71,8 @@ Provides Czech dialogue (with subtitles) that lets players know how locals perce
 > *(The tall one wants a blessing from the guy in the bathrobe.)*
 
 ### Watching Bros Buy Wine
-> "Zaplatili šedesát euro za krabicové víno."
-> *(They paid sixty euros for boxed wine.)*
+> "Zaplatili šedesát Sov za krabicové víno."
+> *(They paid sixty Sovs for boxed wine.)*
 
 ### Watching Tattoo Decision
 > "Ten vysoký chce tetování."

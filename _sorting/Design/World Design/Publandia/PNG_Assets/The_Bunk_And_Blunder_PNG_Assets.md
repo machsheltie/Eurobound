@@ -1,7 +1,7 @@
 # The Bunk & Blunder - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Bunk & Blunder is Publandia's premier budget hostel, where €15 buys a bed, a story, and a fundamental reassessment of your life choices — this document specifies every PNG needed to render sleep as theoretical, privacy as fictional, and your roommates' life choices as ambient audio. The satire targets hostel culture and budget travel delusions: the bros think they're saving money for experiences; the hostel IS the experience, just not the one they wanted.
+The Bunk & Blunder is Publandia's premier budget hostel, where 15 Sovs buys a bed, a story, and a fundamental reassessment of your life choices — this document specifies every PNG needed to render sleep as theoretical, privacy as fictional, and your roommates' life choices as ambient audio. The satire targets hostel culture and budget travel delusions: the bros think they're saving money for experiences; the hostel IS the experience, just not the one they wanted.
 
 **Location ID:** `publandia_lodging_bunk_blunder_01`
 **Theme:** Budget travel delusion meets random roommate chaos — "Where Dreams Go to Die (Usually Around 3 AM)"
@@ -638,7 +638,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 | Low | Static snoring indicators (per profile), no particles, alpha-toggle flicker only, single ambient sleeper sprite per dorm |
 
 ### Performance Targets:
-- **Target FPS:** 60 (12-bed dorm night scene is the stress case; the profile's 45 FPS figure is the never-dip-below floor for that scene on minimum-spec devices)
+- **Target FPS:** 60 (12-bed dorm night scene is the stress case; the profile's 60 FPS figure is the never-dip-below floor for that scene on minimum-spec devices)
 - **Max Draw Calls:** 12 per frame
 - **Memory Footprint:** 32 MB maximum
 - **Particle Limit:** 12 (8 dust + 3 steam + 1 spark reserve)
@@ -736,7 +736,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 ### Quote Potential:
 - "You're the third person to ask about their dignity this morning. I haven't seen it."
 - "Someone left a traffic cone in room 6. No one's claimed it. No one wants to claim it."
-- "Room type? Grand. That's €18. Key card. Room 4. Good luck."
+- "Room type? Grand. That's 18 Sovs. Key card. Room 4. Good luck."
 - "Breakfast is 7-9. Continental means toast and sadness. Coffee's real though."
 - "The couple in room 2 thinks they're quiet. They're not. Nobody's told them. Nobody will."
 - "The snoring guy in 4B? That's Derek. He's been here two weeks. I think he's finding himself. Loudly."

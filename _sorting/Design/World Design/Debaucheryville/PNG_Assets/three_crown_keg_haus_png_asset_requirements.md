@@ -440,7 +440,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - **Potato Mode:** Essential sprites only, no atmospheric effects, basic stealth puzzle
 
 ### Performance Targets:
-- **Target FPS:** 40 fps (cramped space optimization)
+- **Target FPS:** 60 fps (cramped space optimization)
 - **Max Draw Calls:** 15 per frame
 - **Memory Footprint:** 35MB maximum for location
 
@@ -796,7 +796,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 | Seedy Underbelly Present | ✅ | Health code violation dive selling "noble heritage" — mold, mustard art, gaffer tape "medieval repairs" |
 | Gameplay Value Established | ✅ | Stealth tile puzzle, Bravado gate, Bar Flies gossip mini-mob, Keg Sentinel arm-wrestling boss, Iron Gut Tripel, Brewery Tour 3/4 |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D dust/foam effects |
-| Mobile Performance Budget | ✅ | 40 FPS target, max 15 draw calls, 35MB memory footprint |
+| Mobile Performance Budget | ✅ | 60 FPS target, max 15 draw calls, 35MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (creak wave, snoring visual), pattern-based tile indicators for colorblind stealth play |
 | No Crypto Elements | ✅ | None present — heritage-vs-decay satire only |
 | Social Media Integration | ✅ | Velvet throne "drunken monarchy" selfies, synchronized vomiting timing, quotable bartender heritage lines identified |

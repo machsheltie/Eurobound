@@ -25,10 +25,10 @@ The wallet is a full-screen menu panel reachable from the pause/inventory menu. 
 ### 1.2 Header (persistent, both tabs)
 
 ```
-SOVS                                    € [balance]
+SOVS                                      [balance]
 ```
 
-- Ticker label reads `SOVS`. The balance reads with the `€` glyph (per `economy_system.md` §1.3).
+- Ticker label reads `SOVS`; the balance is a **bare numeral** — the label is the unit. **There is no currency glyph in this game: the symbol is the word** (canon: `_sorting/Design/Economy/currency.md`; see `economy_system.md` §1.3).
 - Monospaced numerals, right-aligned, no animation on change beyond a single-frame value swap. The official currency does not get excited.
 - No fee line. No pending line. No network status. Ever.
 
@@ -242,7 +242,7 @@ Two tabs sit side by side: one folder of scams they got rugged on, one folder of
 | `has_inspected_first_crypto_trash` | economy | **Gates Tab 2 existence.** Wallet must read this at panel construction, not at panel show. |
 | `bagholder_reveal_played` | wallet | Gates the 3-second party reaction to one playing |
 | `vault_certificates_owned` | economy | Populates Bagholder Assets certificate rows |
-| `sovs_balance` | economy | Header balance, rendered with `€`, labelled `SOVS` |
+| `sovs_balance` | economy | Header balance, rendered as a bare numeral, labelled `SOVS` |
 
 Flag definitions and defaults are canonical in `design/economy/economy_system.md` §8.2.
 

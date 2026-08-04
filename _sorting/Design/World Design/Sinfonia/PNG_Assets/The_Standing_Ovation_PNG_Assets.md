@@ -405,7 +405,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 | Curtain Call Copper | (0, 0) | 32x64 | Signature Vienna copper lager, deep copper with ruby highlights, dense foam |
 | Copper With Bow Serve | (32, 0) | 48x64 | Glass plus stagehand glove mid-bow — served with a small bow, always |
 | Opening Night Ale | (80, 0) | 32x64 | Bright gold, delivered after a dramatic pause |
-| The Understudy | (112, 0) | 32x64 | Slightly smaller head, apologetic tilt, €4 honesty |
+| The Understudy | (112, 0) | 32x64 | Slightly smaller head, apologetic tilt, 4 Sovs honesty |
 | Critics' Choice | (144, 0) | 32x64 | Amber with a knowing gleam |
 | The Encore | (176, 0) | 32x64 | Rich dark pour that earns a staff standing ovation |
 | Intermission IPA | (208, 0) | 32x64 | Hazy gold, served with bell warning |

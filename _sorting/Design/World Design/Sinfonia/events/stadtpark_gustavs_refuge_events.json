@@ -235,8 +235,9 @@
       "sequence": [
         {"time": 0, "action": "music", "track": "emotional_resolution_positive"},
         {"time": 2, "action": "animation", "target": "gustav", "animation": "walks_beside_hans_jurgen"},
-        {"time": 4, "action": "dialogue", "speaker": "hans_jurgen", "text": "For your help... I reduce your debt. €500 less. It is the least I can do."},
-        {"time": 6, "action": "economy_update", "debt_reduction": 500},
+        {"time": 4, "action": "dialogue", "speaker": "hans_jurgen", "text": "For your help... I reduce your debt. 500 Sovs less. It is the least I can do."},
+        {"time": 6, "action": "economy_update", "debt_reduction": 500, "flag": "hans_jurgen_path_a_contribution", "note": "Separate pot from the single 170 Sovs cafe relief; the two stack."},
+        {"time": 6.5, "action": "economy_update", "debt_reduction": 170, "applies_to": "cafe_sachertorte_line", "flag": "debt_relief_claimed", "requires_flag_false": "debt_relief_claimed", "mutually_exclusive_with": "cafe_dialogue_option_3_halving", "note": "AUTHORITATIVE: fires ONLY if the 170 Sovs relief was not already consumed at the cafe (dialogue option 3, or full payment). If debt_relief_claimed is already true, skip this step entirely and suppress the accompanying line. Authority: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."},
         {"time": 8, "action": "dialogue", "speaker": "hans_jurgen", "text": "And if you ever need a ride in Sinfonia... Hans-Jürgen's fiaker is at your service. Half price."},
         {"time": 10, "action": "unlock", "feature": "fiaker_fast_travel"},
         {"time": 12, "action": "achievement", "id": "horse_whisperer", "display": "Horse Whisperer Unlocked!"},
@@ -298,13 +299,13 @@
       "trigger": "after_gustav_resolution_if_director_present",
       "condition": "director_present",
       "sequence": [
-        {"speaker": "regisseur_hoffmann", "text": "Now. About my €2,000..."},
+        {"speaker": "regisseur_hoffmann", "text": "Now. About my 2,000 Sovs..."},
         {"speaker": "hans_jurgen", "text": "Director, please. My insurance will cover some. These Americans... they helped.", "condition": "path_a_or_b"},
         {
           "choice_prompt": true,
           "choices": [
             {"text": "Fine, fine. Here's the money. (Pay full)", "action": "pay_full", "result": "debt_cleared"},
-            {"text": "Look, we're good for it. Installment plan? (Pay €500)", "action": "pay_partial", "result": "installment_active"},
+            {"text": "Look, we're good for it. Installment plan? (Pay 500 Sovs)", "action": "pay_partial", "result": "installment_active"},
             {"text": "That seems excessive... (Charm 4)", "stat_check": {"charm": 4}, "result": "negotiated_reduction"},
             {"text": "You want to take this outside? (Bravado 4)", "stat_check": {"bravado": 4}, "result": "intimidated_reduction"}
           ]
@@ -329,9 +330,9 @@
       "path_d": {"increase": 500, "reason": "abandonment"}
     },
     "final_calculations": {
-      "best_case": "€1,440 (optimal path + Path A)",
-      "typical_case": "€2,340 (default + Path A/B)",
-      "worst_case": "€3,840 (all damage + Path C)"
+      "best_case": "1,440 Sovs (optimal path + Path A)",
+      "typical_case": "2,340 Sovs (default + Path A/B)",
+      "worst_case": "3,840 Sovs (all damage + Path C)"
     }
   }
 }

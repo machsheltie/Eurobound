@@ -145,7 +145,7 @@ Throughout game, periodic callbacks:
 - **Stage**: 7a (The Tattoo)
 - **Location**: Euro Ink 4 Less, Debaucheryville
 - **Artist**: Jakub "Euro Ink" Novák
-- **Cost**: €75
+- **Cost**: 75 Sovs
 - **Placement**: "Lower back. Very classic. Very popular with ladies."
 
 ### State Flags Set
@@ -158,7 +158,7 @@ permanent_cosmetic_active: true
 
 ### Permanent World Effects
 - Jakub recognizes Lord Pilsner in ALL cities
-- "The Lord Pilsner Special" (€50 duck designs) offered everywhere
+- "The Lord Pilsner Special" (50 Sovs duck designs) offered everywhere
 - Photo of the duck-skeleton displayed in all Euro Ink shops
 - NPCs occasionally reference "the duck tattoo Americans"
 
@@ -194,7 +194,7 @@ permanent_cosmetic_active: true
 
 ### The Final Punchline
 *Text on screen:*
-> "The tattoo artist now offers 'The Lord Pilsner Special' - €50 for any duck-related design."
+> "The tattoo artist now offers 'The Lord Pilsner Special' - 50 Sovs for any duck-related design."
 
 ---
 

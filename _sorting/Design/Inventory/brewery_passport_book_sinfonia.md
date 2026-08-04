@@ -9,7 +9,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 ### Acquisition
 - **Location**: The Blarney Trap, Publandia
-- **Method**: Given FREE with purchase of the Bottle Opener Keychain (€15) OR as reward for winning a Pint-Off challenge
+- **Method**: Given FREE with purchase of the Bottle Opener Keychain (15 Sovs) OR as reward for winning a Pint-Off challenge
 - **Requirement**: Cannot participate in Brewery Tour without both items
 - **Timing**: Available from first visit to The Blarney Trap
 
@@ -24,20 +24,20 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 
 ### Publandia Bottle Opener
 - **Design**: Celtic knot shamrock with bottle opener integrated into stem
-- **Acquired**: The Blarney Trap (€15 or Pint-Off reward)
+- **Acquired**: The Blarney Trap (15 Sovs or Pint-Off reward)
 - **Material**: "Authentic" brass (spray-painted zinc)
 - **Inscription**: "May Your Glass Never Be Empty"
 
 ### Debaucheryville Bottle Opener
 - **Design**: Neon green absinthe fairy silhouette with bottle opener wings
-- **Acquired**: Shadow Exchange (€20 or trade for Publandia stamp proof)
+- **Acquired**: Shadow Exchange (20 Sovs or trade for Publandia stamp proof)
 - **Material**: Chrome with glow-in-dark green accents
 - **Inscription**: "Reality Is Optional After Dark"
 - **Special Feature**: Glows faintly in darkness (UV reactive paint)
 
 ### Sinfonia Bottle Opener
 - **Design**: Musical note (eighth note) with bottle opener as the flag, tiny crown on the note head
-- **Acquired**: The Standing Ovation (€25 or complete the "Standing Ovation Challenge")
+- **Acquired**: The Standing Ovation (25 Sovs or complete the "Standing Ovation Challenge")
 - **Material**: Polished brass with gold-tone finish
 - **Inscription**: "Drink in Three-Quarter Time"
 - **Special Feature**: Makes a faint chime when used (tiny bell inside)
@@ -48,28 +48,28 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 - **Design**: Metronome shape with bottle opener as the pendulum arm
 - **Material**: Aged bronze with copper accents
 - **Inscription**: "Tempo Is Everything"
-- **Acquired**: Win a Tempo Debate OR purchase for €15
+- **Acquired**: Win a Tempo Debate OR purchase for 15 Sovs
 - **Special Feature**: Pendulum actually swings slightly when hanging
 
 **The Standing Ovation Bottle Opener**
 - **Design**: Comedy/tragedy theater masks with bottle opener integrated into the ribbon
 - **Material**: Polished brass with crimson enamel accents
 - **Inscription**: "Bravo!"
-- **Acquired**: Complete the Standing Ovation Challenge OR purchase for €25
+- **Acquired**: Complete the Standing Ovation Challenge OR purchase for 25 Sovs
 - **Special Feature**: Makes a tiny "applause" click sound when used
 
 **Crown & Cask Bottle Opener**
 - **Design**: Miniature Habsburg-style crown with bottle opener as the base/rim
 - **Material**: Gold-tone metal with purple velvet pouch
 - **Inscription**: "By Royal Appointment"
-- **Acquired**: Complete the Coronation Ceremony OR purchase for €20
+- **Acquired**: Complete the Coronation Ceremony OR purchase for 20 Sovs
 - **Special Feature**: Comes with "Certificate of Nobility" (tiny scroll)
 
 **The Dancing Stein Bottle Opener**
 - **Design**: Beer stein silhouette with dancing legs, bottle opener as the stein handle
 - **Material**: Brushed silver with ballroom gold accents
 - **Inscription**: "One-Two-Three"
-- **Acquired**: Complete the Stein Waltz OR purchase for €18
+- **Acquired**: Complete the Stein Waltz OR purchase for 18 Sovs
 - **Special Feature**: Weighted to spin when flicked (like a dancer)
 
 **"Sinfonia Sommelier" Achievement**: Collect all 4 Sinfonia bottle openers
@@ -165,18 +165,18 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 - **Stats**: +20 HP, +10 SP
 - **Effect**: "Moderate Mood" — immune to Rushed and Sluggish status for 30 minutes
 - **Risk**: None (the one balanced thing in the pub)
-- **Price**: €6
+- **Price**: 6 Sovs
 - **Flavor Text**: "Not too hoppy, not too malty, not too strong, not too weak. The Allegro faction calls it boring. The Adagio faction calls it rushed. It's perfect." — Herr Takt
 - **Brewed By**: The Moderato Pub (in-house, recipe unchanged since 1848)
 - **Special**: The only beer all tempo factions grudgingly accept
 
 **Curtain Call Copper (The Standing Ovation)**
-- **Style**: Vienna-style copper lager with dramatic finish
+- **Style**: Sinfonian copper lager with dramatic finish
 - **ABV**: 5.8%
 - **Stats**: +25 HP, +10 SP
 - **Effect**: "Stage Presence" (+3 Charm for 30 minutes)
 - **Risk**: None
-- **Price**: €8
+- **Price**: 8 Sovs
 - **Flavor Text**: "Aged in barrels from the old opera house. Some say you can taste the ambition. Others say that's just the hops."
 - **Brewed By**: The Standing Ovation (on-site, with ceremony)
 - **Special**: Served with a small bow, always
@@ -187,10 +187,10 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 - **Stats**: +30 HP, +15 SP
 - **Effect**: "Noble Blood" (+2 Charm, +2 Style for 45 minutes)
 - **Risk**: None
-- **Price**: €10
+- **Price**: 10 Sovs
 - **Flavor Text**: "Brewed with hops that can trace their lineage back seven generations. The yeast is merely five generations, but we don't discuss that."
 - **Brewed By**: Crown & Cask (family recipe, "royal" process)
-- **Special**: Served in crown-shaped glass, which you keep (adds €3)
+- **Special**: Served in crown-shaped glass, which you keep (adds 3 Sovs)
 
 **Waltz Weizen (The Dancing Stein)**
 - **Style**: Bavarian-style wheat beer with swirling head
@@ -198,7 +198,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 - **Stats**: +20 HP, +15 SP
 - **Effect**: "Light on Your Feet" (+3 Speed, +2 Dance for 30 minutes)
 - **Risk**: None
-- **Price**: €7
+- **Price**: 7 Sovs
 - **Flavor Text**: "Brewed in three stages, fermented in three tanks, served in three-quarter time. The foam always swirls clockwise. We don't know why."
 - **Brewed By**: The Spinning Brewery (off-site partner, delivers fresh daily)
 - **Special**: Server does a small spin when delivering
@@ -217,7 +217,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
   - Character randomly bows to NPCs
   - Classical music plays faintly (only you can hear it)
 - **Cure**: Strong coffee (Grounds For Concern), sleep, or 40 min wait
-- **Price**: €60 (repurchasable from any stamped Sinfonia location)
+- **Price**: 60 Sovs (repurchasable from any stamped Sinfonia location)
 - **Flavor Text**: "Four stamps. Four performances. Four ceremonies. You drank like royalty. Now you suffer like royalty. With dignity. And regret."
 
 **Strategic Use**:
@@ -297,9 +297,9 @@ Each city's Bottle Opener Keychain is a separate collectible:
 ### Legendary Hangover Comparison
 | City | Buff | Duration | Special Immunity | Penalty | Penalty Duration | Price |
 |------|------|----------|------------------|---------|------------------|-------|
-| Publandia | +15 all stats | Battle | None | -10 all stats | 30 min | €50 |
-| Debaucheryville | +20 all stats | Battle | Confusion | -15 all, glitch effects | 45 min | €75 |
-| Sinfonia | +18 all stats | Battle | Embarrassment | -12 all, formal behavior | 40 min | €60 |
+| Publandia | +15 all stats | Battle | None | -10 all stats | 30 min | 50 Sovs |
+| Debaucheryville | +20 all stats | Battle | Confusion | -15 all, glitch effects | 45 min | 75 Sovs |
+| Sinfonia | +18 all stats | Battle | Embarrassment | -12 all, formal behavior | 40 min | 60 Sovs |
 | Shamsterdam | TBD | TBD | TBD | TBD | TBD | TBD |
 
 ---

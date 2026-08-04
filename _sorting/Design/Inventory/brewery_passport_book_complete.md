@@ -9,7 +9,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 ### Acquisition
 - **Location**: The Blarney Trap, Publandia
-- **Method**: Given FREE with purchase of the Bottle Opener Keychain (€15) OR as reward for winning a Pint-Off challenge
+- **Method**: Given FREE with purchase of the Bottle Opener Keychain (15 Sovs) OR as reward for winning a Pint-Off challenge
 - **Requirement**: Cannot participate in Brewery Tour without both items
 - **Timing**: Available from first visit to The Blarney Trap
 
@@ -36,28 +36,28 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Design**: Celtic knot shamrock with bottle opener integrated into stem
 - **Material**: "Authentic" brass (spray-painted zinc)
 - **Inscription**: "May Your Glass Never Be Empty"
-- **Acquired**: Win a Pint-Off challenge OR purchase for €15
+- **Acquired**: Win a Pint-Off challenge OR purchase for 15 Sovs
 - **Special Feature**: Shamrock spins freely on the ring
 
 **The Stoutworks Brewery Bottle Opener**
 - **Design**: Copper still shape with bottle opener as the spout
 - **Material**: Copper-plated steel with verde patina accents
 - **Inscription**: "Forged in Flavor"
-- **Acquired**: Complete the brewery tour OR clear the dungeon OR purchase for €18
+- **Acquired**: Complete the brewery tour OR clear the dungeon OR purchase for 18 Sovs
 - **Special Feature**: Hollow center creates whistle sound when swung
 
 **Trinity of Pints Bottle Opener**
 - **Design**: Scholarly graduation cap with bottle opener as the tassel
 - **Material**: Navy enamel over brass with gold trim
 - **Inscription**: "Summa Cum Lager"
-- **Acquired**: Graduate (complete Senior Thesis challenge) OR purchase for €20
+- **Acquired**: Graduate (complete Senior Thesis challenge) OR purchase for 20 Sovs
 - **Special Feature**: Tassel actually moves/dangles
 
 **Shenanigans Bottle Opener**
 - **Design**: Wilted four-leaf clover (three leaves drooping) with bottle opener as stem
 - **Material**: Faded gold-tone metal, intentionally tarnished
 - **Inscription**: "Lucky Eventually"
-- **Acquired**: Lose 3 scams AND return to laugh about it OR purchase for €12 (cheapest, fitting)
+- **Acquired**: Lose 3 scams AND return to laugh about it OR purchase for 12 Sovs (cheapest, fitting)
 - **Special Feature**: Fourth leaf is detachable (falls off occasionally)
 
 **"Publandia Collector" Achievement**: Own all 4 Publandia openers
@@ -71,28 +71,28 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Design**: Cracked absinthe glass with Green Fairy silhouette emerging, bottle opener as the glass stem
 - **Material**: Emerald-tinted metal with iridescent "oil slick" finish
 - **Inscription**: "I Saw Myself"
-- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vanek for €22
+- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vaněk for 22 Sovs
 - **Special Feature**: Surface appears to shift colors in different lighting (lenticular effect)
 
 **The Tap Dat Vault Bottle Opener**
 - **Design**: Vault door shape with soundwave pattern cutout, bottle opener integrated into the door handle
 - **Material**: Brushed chrome with cyan and hot pink neon accents (actually glows)
 - **Inscription**: "Inhaled & Survived"
-- **Acquired**: Complete the rhythm puzzle sequence OR purchase from the Glitching Bouncer for €20
+- **Acquired**: Complete the rhythm puzzle sequence OR purchase from the Glitching Bouncer for 20 Sovs
 - **Special Feature**: Contains tiny LED that pulses in rhythm when squeezed
 
 **Three-Crown Keg Haus Bottle Opener**
 - **Design**: Three rusted crowns stacked vertically with bottle opener as the base/throne, miniature stein charm dangles from ring
 - **Material**: Intentionally tarnished brass with rust-orange patina
 - **Inscription**: "Noble by Liver"
-- **Acquired**: Complete the stealth puzzle OR purchase from Bartender for €15
+- **Acquired**: Complete the stealth puzzle OR purchase from Bartender for 15 Sovs
 - **Special Feature**: Stein charm actually holds 1ml of liquid (decorative)
 
 **Ye Olde B.R.E.W. Lab Bottle Opener**
 - **Design**: Pixelated hop cone shape with scrolling LED display showing fake "blockchain hash," bottle opener as the stem
 - **Material**: Matte black plastic with neon blue circuit trace inlays
 - **Inscription**: "Algorithm Verified"
-- **Acquired**: Complete taste profile puzzle OR defeat BrewBot OR purchase for €25
+- **Acquired**: Complete taste profile puzzle OR defeat BrewBot OR purchase for 25 Sovs
 - **Special Feature**: Tiny LED screen scrolls random hexadecimal codes
 
 **"Debaucheryville Collector" Achievement**: Own all 4 Debaucheryville openers
@@ -106,28 +106,28 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Design**: Metronome shape with bottle opener as the pendulum arm
 - **Material**: Aged bronze with copper accents
 - **Inscription**: "Tempo Is Everything"
-- **Acquired**: Win a Tempo Debate OR purchase for €15
+- **Acquired**: Win a Tempo Debate OR purchase for 15 Sovs
 - **Special Feature**: Pendulum actually swings slightly when hanging
 
 **The Standing Ovation Bottle Opener**
 - **Design**: Comedy/tragedy theater masks with bottle opener integrated into the ribbon connecting them
 - **Material**: Polished brass with crimson enamel accents
 - **Inscription**: "Bravo!"
-- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for €25
+- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for 25 Sovs
 - **Special Feature**: Makes a tiny "applause" click sound when used
 
 **Crown & Cask Bottle Opener**
 - **Design**: Miniature Habsburg-style crown with bottle opener as the base/rim
 - **Material**: Gold-tone metal with purple velvet pouch
 - **Inscription**: "By Royal Appointment"
-- **Acquired**: Complete the Coronation Ceremony OR purchase for €20
+- **Acquired**: Complete the Coronation Ceremony OR purchase for 20 Sovs
 - **Special Feature**: Comes with "Certificate of Nobility" (tiny scroll)
 
 **The Dancing Stein Bottle Opener**
 - **Design**: Beer stein silhouette with dancing legs, bottle opener as the stein handle
 - **Material**: Brushed silver with ballroom gold accents
 - **Inscription**: "One-Two-Three"
-- **Acquired**: Complete the Stein Waltz OR purchase for €18
+- **Acquired**: Complete the Stein Waltz OR purchase for 18 Sovs
 - **Special Feature**: Weighted to spin when flicked (like a dancer)
 
 **"Sinfonia Sommelier" Achievement**: Own all 4 Sinfonia openers
@@ -141,14 +141,14 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Design**: Miniature windmill with rotating blade arms, bottle opener integrated into the windmill base
 - **Material**: Brushed copper with grain-gold accents
 - **Inscription**: "Respect The Grain"
-- **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for €22
+- **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for 22 Sovs
 - **Special Feature**: Blade arms actually rotate when you spin the opener
 
 **Proeflokaal 't Kansen Bottle Opener**
 - **Design**: Traditional tulip jenever glass shape (overfilled, surface tension visible), bottle opener as the stem
 - **Material**: Amber-tinted brass with sawdust-colored leather loop
 - **Inscription**: "No Hands. No Fear."
-- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for €20
+- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for 20 Sovs
 - **Special Feature**: Glass portion is slightly convex to mimic the surface tension meniscus
 
 **"Expansion Collector" Achievement**: Own both Shamsterdam openers
@@ -191,7 +191,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Stats**: +25 HP, +10 Speed
 - **Effect**: "Spinning" — -15% Navigation accuracy for 20 minutes
 - **Risk**: Navigation penalty stacks with other disorientation effects
-- **Price**: €8
+- **Price**: 8 Sovs
 - **Flavor Text**: "Brewed with grain ground by the very windmill that's making you dizzy. The circular notes are intentional."
 - **Brewed By**: Brouwerij de Molen (windmill-ground grain)
 
@@ -201,7 +201,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Stats**: +50 SP restoration (massive)
 - **Effect**: "The Shakes" — -20% Accuracy for 3 turns
 - **Risk**: Significant accuracy penalty, enormous SP restore
-- **Price**: €12
+- **Price**: 12 Sovs
 - **Flavor Text**: "Aged for years. Served for centuries. The sawdust exists for a reason."
 - **Brewed By**: Proeflokaal 't Kansen (400-year-old recipe)
 
@@ -253,7 +253,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Ink Color**: Shifting emerald (appears to move in certain light)
 - **Inscription**: "I Saw Myself"
 - **Stamp Animation**: Green mist swirls before stamp lands with ethereal chime
-- **Dr. Vanek's Stamp Speech**: "Congratulations. You've seen yourself. The stamp is proof. The memory is punishment."
+- **Dr. Vaněk's Stamp Speech**: "Congratulations. You've seen yourself. The stamp is proof. The memory is punishment."
 
 **Stamp 2: The Tap Dat Vault**
 - **Stamp Visual**: Soundwave pattern emerging from vault door shape
@@ -286,7 +286,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **ABV**: 8.5% (plus "additives")
 - **Stats**: +15 SP restoration
 - **Effect**: 30% chance to apply "Green Fairy Confusion" to USER
-- **Price**: €12
+- **Price**: 12 Sovs
 - **Brewed By**: The Absinthium Taproom (in-house)
 
 **Vape Stout (The Tap Dat Vault)**
@@ -295,7 +295,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Stats**: +20 SP restoration
 - **Effect**: "Glow-Up Aura" (+1 Charm, +1 Defense for 30 min)
 - **Risk**: Applies "Grease Fingers" status
-- **Price**: €14
+- **Price**: 14 Sovs
 - **Brewed By**: The Tap Dat Vault (vapor-extraction process)
 
 **Iron Gut Tripel (Three-Crown Keg Haus)**
@@ -304,15 +304,15 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Stats**: +40 HP restoration
 - **Effect**: "Inspired" status (+10 Bravado for 30 min)
 - **Risk**: -10% Accuracy next turn
-- **Price**: €10
+- **Price**: 10 Sovs
 - **Brewed By**: Three-Crown Keg Haus (ancient recipe)
 
 **Blockchain Bock (Ye Olde B.R.E.W. Lab)**
 - **Style**: "AI-optimized" dark bock
 - **ABV**: 7.2%
-- **Stats**: +20 HP, +10 Gold (fluctuates)
+- **Stats**: +20 HP, +10 Sovs (fluctuates)
 - **Effect**: "Tourist Trapped" status
-- **Price**: €18 (±€5 based on fake crypto ticker)
+- **Price**: 18 Sovs (±5 Sovs based on fake crypto ticker)
 - **Brewed By**: Ye Olde B.R.E.W. Lab (algorithm)
 
 ---
@@ -367,15 +367,15 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **ABV**: 5.5%
 - **Stats**: +20 HP, +10 SP
 - **Effect**: Immune to Rushed/Sluggish (30 min)
-- **Price**: €6
+- **Price**: 6 Sovs
 - **Brewed By**: The Moderato Pub (in-house)
 
 **Curtain Call Copper (The Standing Ovation)**
-- **Style**: Vienna-style copper lager
+- **Style**: Sinfonian copper lager
 - **ABV**: 5.8%
 - **Stats**: +25 HP, +10 SP
 - **Effect**: "Stage Presence" (+3 Charm for 30 min)
-- **Price**: €8
+- **Price**: 8 Sovs
 - **Brewed By**: The Standing Ovation (on-site)
 
 **Heir Apparent Ale (Crown & Cask)**
@@ -383,7 +383,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **ABV**: 6.5%
 - **Stats**: +30 HP, +15 SP
 - **Effect**: "Noble Blood" (+2 Charm, +2 Style for 45 min)
-- **Price**: €10
+- **Price**: 10 Sovs
 - **Brewed By**: Crown & Cask (family recipe)
 
 **Waltz Weizen (The Dancing Stein)**
@@ -391,7 +391,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **ABV**: 5.2%
 - **Stats**: +20 HP, +15 SP
 - **Effect**: "Light on Your Feet" (+3 Speed, +2 Dance for 30 min)
-- **Price**: €7
+- **Price**: 7 Sovs
 - **Brewed By**: The Spinning Brewery (partner)
 
 ---
@@ -413,9 +413,9 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 ## Legendary Hangover Comparison
 | City | Buff | Special Immunity | Penalty | Duration | Price |
 |------|------|------------------|---------|----------|-------|
-| Publandia | +15 all stats | None | -10 all stats | 30 min | €50 |
-| Debaucheryville | +20 all stats | Confusion | -15 all, glitch effects | 45 min | €75 |
-| Sinfonia | +18 all stats | Embarrassment | -12 all, formal behavior | 40 min | €60 |
+| Publandia | +15 all stats | None | -10 all stats | 30 min | 50 Sovs |
+| Debaucheryville | +20 all stats | Confusion | -15 all, glitch effects | 45 min | 75 Sovs |
+| Sinfonia | +18 all stats | Embarrassment | -12 all, formal behavior | 40 min | 60 Sovs |
 | Shamsterdam | 25% Bravado loss reduction | N/A | None | PERMANENT | N/A |
 
 **Note**: Shamsterdam's "Canal Courage" is a permanent passive buff, not a consumable.

@@ -66,14 +66,14 @@ The booth operates on a ticket system, but the math is designed to ensure maximu
 | Tier | Ticket Cost | Reality | What You Actually Get |
 |------|-------------|---------|----------------------|
 | Grand Prize | 10,000 tickets | Impossible | Display only, don't ask |
-| Great Prize | 5,000 tickets | Theoretically possible | You'd need €500 in games |
+| Great Prize | 5,000 tickets | Theoretically possible | You'd need 500 Sovs in games |
 | Good Prize | 1,000 tickets | Unlikely | Maybe after 4 hours |
 | Okay Prize | 500 tickets | Achievable | An hour of suffering |
 | Consolation Prize | 100 tickets | Standard outcome | 20 minutes of failure |
 | Participation Prize | 10 tickets | Inevitable | One rigged game attempt |
 
 **Average Tickets Per Game**: 5-15 (rigged to give minimum)
-**Average Cost Per Game**: €3
+**Average Cost Per Game**: 3 Sovs
 **Math**: You will ALWAYS spend more than the prize is worth
 
 ### Technical Specifications
@@ -85,9 +85,9 @@ The booth operates on a ticket system, but the math is designed to ensure maximu
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The Participation Trophy is where the rigged carnival game economy comes to die. You've spent €20 trying to knock over milk bottles that are filled with concrete. You've thrown rings at bottles that are mathematically too large to fit. You've accumulated tickets that represent pure loss converted to paper. And now you're here, at the redemption booth, where a woman named Yolanda will exchange your suffering for a half-smoked cigar someone left behind.
+**Core Concept**: The Participation Trophy is where the rigged carnival game economy comes to die. You've spent 20 Sovs trying to knock over milk bottles that are filled with concrete. You've thrown rings at bottles that are mathematically too large to fit. You've accumulated tickets that represent pure loss converted to paper. And now you're here, at the redemption booth, where a woman named Yolanda will exchange your suffering for a half-smoked cigar someone left behind.
 
-The satire targets carnival prize economics (spend €50 to win a €2 toy), the "everyone's a winner" participation trophy culture, and the particular sadness of receiving a prize you didn't earn and don't want.
+The satire targets carnival prize economics (spend 50 Sovs to win a 2 Sovs toy), the "everyone's a winner" participation trophy culture, and the particular sadness of receiving a prize you didn't earn and don't want.
 
 ### The Yolanda Philosophy
 Yolanda has worked this booth for 7 years. She's watched thousands of people exchange hope for garbage. She doesn't make the rules — she just enforces them. She doesn't set the ticket prices — she just watches adults do math and realize they've been scammed. She doesn't choose the prizes — she just hands over the Half-Smoked Cigar with the same dead-eyed professionalism every time.
@@ -118,7 +118,7 @@ She's not cruel. She's just... there. Witnessing. Distributing. Waiting for her 
 **The prize booth journey**:
 1. "I've got 47 tickets! What can I get?"
 2. *Yolanda gestures at the 10-ticket shelf*
-3. "But I spent €15 on games..."
+3. "But I spent 15 Sovs on games..."
 4. "The cigar's popular."
 5. "...it's half-smoked."
 6. "Previous winner didn't want it. Now it's vintage."
@@ -142,9 +142,9 @@ She's not cruel. She's just... there. Witnessing. Distributing. Waiting for her 
 
 **Earning Tickets**:
 - Play rigged games around Cirque du Shady
-- Average yield: 5-15 tickets per €3 game
+- Average yield: 5-15 tickets per 3 Sovs game
 - Maximum possible (perfect play): Still not enough for good prizes
-- Tickets can also be purchased directly (€1 = 20 tickets, still bad math)
+- Tickets can also be purchased directly (1 Sov = 20 tickets, still bad math)
 
 **Direct Purchase Option**:
 - Some prizes available for straight gold (no tickets needed)
@@ -156,30 +156,30 @@ She's not cruel. She's just... there. Witnessing. Distributing. Waiting for her 
 **Participation Tier (10-50 Tickets)**
 | Prize | Tickets | Gold Price | Stats/Effects | Description |
 |-------|---------|------------|---------------|-------------|
-| Half-Smoked Cigar | 10 | €2 | Useless (literally no effect) | "Previous owner had somewhere to be. Their loss, your... also loss." |
-| Plastic Kazoo | 15 | €3 | Annoy nearby NPCs | "Makes noise. That's it. That's the prize." |
-| Single Playing Card (7 of Clubs) | 10 | €2 | Useless | "Part of a set. The rest are somewhere else. Forever." |
-| Broken Glow Stick | 20 | €4 | Dim light (30 seconds) | "It worked once. That time has passed." |
-| Deflated Balloon Animal | 25 | €5 | -5 Dignity when held | "It was a dog. Or a giraffe. Hard to tell now." |
-| Mystery Sticker | 10 | €2 | Random +1 to one stat (once) | "Might be lucky. Probably isn't. Apply and find out." |
+| Half-Smoked Cigar | 10 | 2 Sovs | Useless (literally no effect) | "Previous owner had somewhere to be. Their loss, your... also loss." |
+| Plastic Kazoo | 15 | 3 Sovs | Annoy nearby NPCs | "Makes noise. That's it. That's the prize." |
+| Single Playing Card (7 of Clubs) | 10 | 2 Sovs | Useless | "Part of a set. The rest are somewhere else. Forever." |
+| Broken Glow Stick | 20 | 4 Sovs | Dim light (30 seconds) | "It worked once. That time has passed." |
+| Deflated Balloon Animal | 25 | 5 Sovs | -5 Dignity when held | "It was a dog. Or a giraffe. Hard to tell now." |
+| Mystery Sticker | 10 | 2 Sovs | Random +1 to one stat (once) | "Might be lucky. Probably isn't. Apply and find out." |
 
 **Consolation Tier (100-250 Tickets)**
 | Prize | Tickets | Gold Price | Stats/Effects | Description |
 |-------|---------|------------|---------------|-------------|
-| Used Glitter Hat | 100 | €15 | +5 Style, -10 Dignity | "Previous owner sweated in this. Glitter hides the stains. Mostly." |
-| Mystery Meat Corndog | 150 | €8 | +25 HP, 30% Nausea chance | "The mystery isn't what meat. The mystery is IF meat." |
-| Knockoff Sunglasses | 100 | €12 | +3 Cool, break after 3 uses | "They say 'Rayban' if you don't look closely. Don't look closely." |
-| Plastic Trophy (Participation) | 200 | €20 | +10 Bravado (ironic), -5 Dignity | "First Place in Showing Up. Your name isn't on it." |
-| Questionable Stuffed Animal | 250 | €25 | Companion item, +5 Comfort, unsettling | "The eyes follow you. That's just how it was made. Probably." |
-| Circus Souvenir Mug | 150 | €15 | +10% beverage effects | "Drink from where the clowns drink. Adds flavor. Don't think about it." |
+| Used Glitter Hat | 100 | 15 Sovs | +5 Style, -10 Dignity | "Previous owner sweated in this. Glitter hides the stains. Mostly." |
+| Mystery Meat Corndog | 150 | 8 Sovs | +25 HP, 30% Nausea chance | "The mystery isn't what meat. The mystery is IF meat." |
+| Knockoff Sunglasses | 100 | 12 Sovs | +3 Cool, break after 3 uses | "They say 'Rayban' if you don't look closely. Don't look closely." |
+| Plastic Trophy (Participation) | 200 | 20 Sovs | +10 Bravado (ironic), -5 Dignity | "First Place in Showing Up. Your name isn't on it." |
+| Questionable Stuffed Animal | 250 | 25 Sovs | Companion item, +5 Comfort, unsettling | "The eyes follow you. That's just how it was made. Probably." |
+| Circus Souvenir Mug | 150 | 15 Sovs | +10% beverage effects | "Drink from where the clowns drink. Adds flavor. Don't think about it." |
 
 **"Good" Tier (500-1000 Tickets)**
 | Prize | Tickets | Gold Price | Stats/Effects | Description |
 |-------|---------|------------|---------------|-------------|
-| The Big Stuffed Bear | 750 | €75 | +15 Comfort, +10 Dignity | "Actually decent. How did you get this many tickets? Concerning." |
-| Cirque du Shady T-Shirt | 500 | €50 | +10 Style, "Circus Survivor" status | "Proves you were here. Is that a brag? Unclear." |
-| Glowing Novelty Sword | 600 | €60 | +5 Attack (toy), +15 Style at night | "Not a real weapon. But it LOOKS cool. In the dark. If you squint." |
-| Ringmaster's Cane (Replica) | 1000 | €100 | +10 Charisma, +5 Intimidation | "Vance won't notice. Probably. Don't let Vance see you with this." |
+| The Big Stuffed Bear | 750 | 75 Sovs | +15 Comfort, +10 Dignity | "Actually decent. How did you get this many tickets? Concerning." |
+| Cirque du Shady T-Shirt | 500 | 50 Sovs | +10 Style, "Circus Survivor" status | "Proves you were here. Is that a brag? Unclear." |
+| Glowing Novelty Sword | 600 | 60 Sovs | +5 Attack (toy), +15 Style at night | "Not a real weapon. But it LOOKS cool. In the dark. If you squint." |
+| Ringmaster's Cane (Replica) | 1000 | 100 Sovs | +10 Charisma, +5 Intimidation | "Vance won't notice. Probably. Don't let Vance see you with this." |
 
 **"Grand" Tier (5000+ Tickets) — Display Only**
 | Prize | Tickets | Reality |
@@ -209,10 +209,10 @@ If player tries to buy prizes directly:
 **Premium Garbage (Frequent Loser Only)**:
 | Prize | Tickets | Gold Price | Stats/Effects | Description |
 |-------|---------|------------|---------------|-------------|
-| Yolanda's Personal Recommendation | 200 | €25 | Random but actually decent item | "I wouldn't recommend this to just anyone. I'm recommending it to YOU. Make of that what you will." |
-| The "Good" Mystery Meat | 300 | €20 | +40 HP, only 10% Nausea | "From a better batch. Don't ask what batch. Or what 'better' means." |
-| Vintage Circus Poster | 400 | €40 | +15 Style, decoration item | "From before my time. Back when this place had dignity. Allegedly." |
-| Hamstradamus Bobblehead | 500 | €50 | +5% Luck, occasionally "speaks" | "The real one would be offended. Don't show him." |
+| Yolanda's Personal Recommendation | 200 | 25 Sovs | Random but actually decent item | "I wouldn't recommend this to just anyone. I'm recommending it to YOU. Make of that what you will." |
+| The "Good" Mystery Meat | 300 | 20 Sovs | +40 HP, only 10% Nausea | "From a better batch. Don't ask what batch. Or what 'better' means." |
+| Vintage Circus Poster | 400 | 40 Sovs | +15 Style, decoration item | "From before my time. Back when this place had dignity. Allegedly." |
+| Hamstradamus Bobblehead | 500 | 50 Sovs | +5% Luck, occasionally "speaks" | "The real one would be offended. Don't show him." |
 
 ### Bravado Interactions
 - **Lose Bravado**: Redeeming participation tier prizes, doing the math out loud
@@ -247,7 +247,7 @@ If player tries to buy prizes directly:
 
 *The Assessment:*
 - "47 tickets. That gets you... *gestures at bottom shelf* ...anything down there."
-- "500 tickets? Impressive. You've spent what, €100 on games? The stuffed bear is €75 direct. Just so you know."
+- "500 tickets? Impressive. You've spent what, 100 Sovs on games? The stuffed bear is 75 Sovs direct. Just so you know."
 - "10 tickets. The cigar's popular. Don't ask why. Just take it."
 
 *Prize Presentations:*
@@ -280,7 +280,7 @@ If player tries to buy prizes directly:
 - **Composition**: Someone walking away with participation prize, processing
 - **Behavior**: Staring at their cigar/kazoo/deflated balloon, thousand-yard stare
 - **Function**: Mirror for player's near-future
-- **Dialogue**: "I spent... I spent €30... and I got... this is a broken glow stick. This is my broken glow stick now."
+- **Dialogue**: "I spent... I spent 30 Sovs... and I got... this is a broken glow stick. This is my broken glow stick now."
 
 **The Proud Idiot**
 - **Composition**: Someone displaying garbage prizes with genuine pride
@@ -306,16 +306,16 @@ If player tries to buy prizes directly:
 **The Bros' Participation Trophy Reactions:**
 - **Lord Pilsner** (approaching): "I've got 85 tickets! We CRUSHED those games!"
 - **Yolanda**: "85 tickets. *glances at shelf* Consolation tier starts at 100. You're in participation territory."
-- **Lord Pilsner**: "But we spent like €25—"
+- **Lord Pilsner**: "But we spent like 25 Sovs—"
 - **Yolanda**: "The corndog is 150. The cigar is 10. Math is math."
 - **Lord Pilsner**: "...four cigars?"
 - **Yolanda**: "Living the dream."
 - **Chadwick**: "This is PERFECT for content! The AESTHETIC of disappointment! The IRONY!"
 - **Yolanda**: "The irony costs the same as the sincerity. What do you want?"
 - **Chadwick**: "The Used Glitter Hat. For the VISUAL."
-- **Yolanda**: "A classic choice. Someone's sweat is your style now. 100 tickets or €15."
+- **Yolanda**: "A classic choice. Someone's sweat is your style now. 100 tickets or 15 Sovs."
 - **Bradley**: *counting the tickets again* "Eighty-five."
-- **Yolanda**: *sets a corndog from the fresh tray on the counter* "150 tickets. Or €8, and it's this one, out of the good batch."
+- **Yolanda**: *sets a corndog from the fresh tray on the counter* "150 tickets. Or 8 Sovs, and it's this one, out of the good batch."
 - **Bradley**: "Why's the money one cheaper? What's wrong with it?"
 - **Yolanda**: *puts it back under the counter* "Nothing."
 - **Lord Pilsner**: "Bradley. BRADLEY. She's clearing stock. We take the ticket one. The one they don't want to let go of."
@@ -450,4 +450,4 @@ If player tries to buy prizes directly:
 
 ---
 
-*The Participation Trophy: Where tickets go to die and prizes go to confuse. You spent €25 to earn 85 tickets. The corndog is 150 tickets. The cigar is 10. Yolanda doesn't judge. Yolanda just counts. Everyone's a winner here. Everyone gets something. The something is garbage, but it's YOUR garbage now. Congratulations. You participated.*
+*The Participation Trophy: Where tickets go to die and prizes go to confuse. You spent 25 Sovs to earn 85 tickets. The corndog is 150 tickets. The cigar is 10. Yolanda doesn't judge. Yolanda just counts. Everyone's a winner here. Everyone gets something. The something is garbage, but it's YOUR garbage now. Congratulations. You participated.*

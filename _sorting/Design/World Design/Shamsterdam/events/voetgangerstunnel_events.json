@@ -186,20 +186,20 @@
         ]
       },
       "paid_directions": {
-        "trigger": "pay_henk_5_euro",
+        "trigger": "pay_henk_5_sov",
         "sequence": [
           {"action": "gold_subtract", "amount": 5},
           {"action": "henk_considers"},
-          {"action": "dialogue", "text": "Okay, for five euro, I give you the REAL directions. This way. Maybe."},
+          {"action": "dialogue", "text": "Okay, for five Sovs, I give you the REAL directions. This way. Maybe."},
           {"action": "navigation_effect", "accuracy_bonus": 0.10}
         ]
       },
       "escort": {
-        "trigger": "pay_henk_10_euro",
+        "trigger": "pay_henk_10_sov",
         "sequence": [
           {"action": "gold_subtract", "amount": 10},
           {"action": "henk_stands_slowly"},
-          {"action": "dialogue", "text": "For ten euro, I walk you there myself. But I walk slow. Very slow."},
+          {"action": "dialogue", "text": "For ten Sovs, I walk you there myself. But I walk slow. Very slow."},
           {"action": "escort_begin", "speed": "very_slow", "guaranteed": true}
         ]
       }
@@ -211,7 +211,7 @@
         "sequence": [
           {"action": "gold_subtract", "amount": 8},
           {"action": "item_grant", "item": "tunnel_map_accurate"},
-          {"action": "dialogue", "text": "€8 for the map. It's the only accurate one in the city. Yes, really."},
+          {"action": "dialogue", "text": "8 Sovs for the map. It's the only accurate one in the city. Yes, really."},
           {"action": "navigation_effect", "accuracy_bonus": 0.15}
         ]
       },
@@ -226,7 +226,7 @@
     
     "willem_tip_sequence": {
       "first_tip": {
-        "trigger": "tip_willem_5_euro_visit_1",
+        "trigger": "tip_willem_5_sov_visit_1",
         "sequence": [
           {"action": "gold_subtract", "amount": 5},
           {"action": "willem_looks_up"},
@@ -235,7 +235,7 @@
         ]
       },
       "second_tip": {
-        "trigger": "tip_willem_5_euro_visit_2",
+        "trigger": "tip_willem_5_sov_visit_2",
         "sequence": [
           {"action": "gold_subtract", "amount": 5},
           {"action": "willem_pauses_playing"},
@@ -244,7 +244,7 @@
         ]
       },
       "third_tip": {
-        "trigger": "tip_willem_5_euro_visit_3",
+        "trigger": "tip_willem_5_sov_visit_3",
         "sequence": [
           {"action": "gold_subtract", "amount": 5},
           {"action": "willem_stops_playing"},
@@ -312,7 +312,7 @@
     
     "eternal_busker": {
       "quest_id": "eternal_busker_quest",
-      "trigger": "tip_willem_5_euro_three_visits",
+      "trigger": "tip_willem_5_sov_three_visits",
       "type": "hidden_quest",
       "phases": [
         {"visit": 1, "action": "navigation_hint"},

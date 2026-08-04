@@ -68,7 +68,7 @@
         {
           "action": "dialogue",
           "speaker": "hans_jurgen",
-          "text": "Perfect! You help me catch Gustav, I give you discount Fiaker ride! Half price! Forty euros!"
+          "text": "Perfect! You help me catch Gustav, I give you discount Fiaker ride! Half price! Forty Sovs!"
         },
         {
           "action": "dialogue",
@@ -78,7 +78,7 @@
         {
           "action": "dialogue",
           "speaker": "hans_jurgen",
-          "text": "Eighty euros! So you see, very good deal!"
+          "text": "Eighty Sovs! So you see, very good deal!"
         },
         {
           "action": "dialogue_choice",
@@ -187,7 +187,7 @@
         {
           "action": "environmental_chaos",
           "event": "gustav_knocks_over_tables",
-          "damage_euro": 85,
+          "damage_sov": 85,
           "sfx": "crash_register_ching"
         },
         {
@@ -231,13 +231,13 @@
       "changes": [
         {
           "type": "npc_dialogue_change",
-          "npc": "opera_usher_01",
+          "npc": "sinfonia_npc_opera_usher_01",
           "new_dialogue": "You are the horse people. You may not enter."
         },
         {
           "type": "npc_dialogue_change",
           "npc": "cafe_maitre_d_01",
-          "new_dialogue": "You! €340! PAY NOW or you are BANNED!"
+          "new_dialogue": "You! 340 Sovs! PAY NOW or you are BANNED!"
         },
         {
           "type": "npc_dialogue_change",
@@ -358,7 +358,7 @@
       "event_id": "street_performer_rhythm_minigame",
       "trigger_type": "player_interaction",
       "npc": "street_performer_violin_01",
-      "prerequisite": "tip_5_euro",
+      "prerequisite": "tip_5_sov",
       "minigame_parameters": {
         "type": "rhythm_matching",
         "song": "classical_violin_piece",

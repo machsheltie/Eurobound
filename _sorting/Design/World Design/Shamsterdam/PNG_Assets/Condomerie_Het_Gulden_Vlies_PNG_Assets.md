@@ -1,7 +1,7 @@
 # Condomerie Het Gulden Vlies - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Condomerie Het Gulden Vlies ("The Golden Fleece") is a narrow, aggressively respectable boutique on the edge of the Red Light District where protection is merchandised as luxury goods, the staff have been professionally unshockable since 1987, and every bachelor party that walks in immediately regresses to age twelve. This document specifies every PNG asset across the elegant storefront and window display, the five-section boutique interior with its gift-wrapping station and counter, the tastefully abstract product and packaging sprites, Manager Femke and Associate Willem plus the full customer cast, and the Bravado / gag-gift / gift-wrap UI. Its satirical essence in a sentence: the shop is completely professional, the customers are completely not, and the gap between them is the entire joke.
+Condomerie Het Gulden Vlies ("The Golden Fleece") is a narrow, aggressively respectable boutique on the edge of the Red Light District where protection is merchandised as luxury goods, the staff have been professionally unshockable since 1987, and every bachelor party that walks in immediately regresses to age twelve. This document specifies every PNG asset across the elegant storefront and window display, the five-section boutique interior with its gift-wrapping station and counter, the tastefully abstract product and packaging sprites, Manager Femke and Associate Joost plus the full customer cast, and the Bravado / gag-gift / gift-wrap UI. Its satirical essence in a sentence: the shop is completely professional, the customers are completely not, and the gap between them is the entire joke.
 
 **Location ID:** `shamsterdam_redlight_condomerie_01`
 **Theme:** Dutch sexual-health openness vs. tourist awkwardness — the human inability to buy protection without becoming a child, and the markup that awkwardness will happily pay
@@ -125,18 +125,18 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Floor Tile — Polished | (896, 480) | 32x32 | Base flooring |
 | Floor Tile — Scuffed Browse Path | (928, 480) | 32x32 | Wear pattern to Section 4, naturally |
 | Baseboard Trim (tileable) | (960, 480) | 64x32 | Wall/floor join |
-| Shelving Unit — Empty (restock) | (896, 512) | 128x64 | Willem's ongoing task |
+| Shelving Unit — Empty (restock) | (896, 512) | 128x64 | Joost's ongoing task |
 
 ### Fixtures & Atmosphere:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Bulk "Bachelor Party" Endcap | (0, 576) | 192x192 | By the counter. Efficiency is key. |
 | Gift Card Rack | (192, 576) | 96x128 | "Yes, people use them." |
-| Educational Poster Display | (288, 576) | 96x128 | €15, conversation starter, Bradley's pick |
+| Educational Poster Display | (288, 576) | 96x128 | 15 Sovs, conversation starter, Bradley's pick |
 | Mirror (customer self-assessment) | (384, 576) | 96x128 | Reflects your face making that face |
 | Waiting Bench | (480, 576) | 128x96 | Where "I'm Just Looking" guy has been for 20 minutes |
 | Basket Stack | (608, 576) | 96x96 | Optimistic capacity |
-| Restock Trolley | (704, 576) | 128x96 | Willem's vehicle |
+| Restock Trolley | (704, 576) | 128x96 | Joost's vehicle |
 | Discreet Bag Dispenser | (832, 576) | 96x96 | Plain option, always offered |
 | Card Terminal | (928, 576) | 96x96 | Contactless, no drama |
 | Golden Shimmer Accent Trim (tileable) | (192, 704) | 192x64 | Fleece motif running the wall line |
@@ -164,22 +164,22 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ### Product Packages (Row 0, y=0):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Standard Pack (12) | (0, 0) | 64x64 | €15 — "The responsible choice" |
-| Premium Selection | (64, 0) | 64x64 | €25 — "For the discerning" |
-| Glow-in-Dark Pack | (128, 0) | 64x64 | €12 — party favorite, lights off |
+| Standard Pack (12) | (0, 0) | 64x64 | 15 Sovs — "The responsible choice" |
+| Premium Selection | (64, 0) | 64x64 | 25 Sovs — "For the discerning" |
+| Glow-in-Dark Pack | (128, 0) | 64x64 | 12 Sovs — party favorite, lights off |
 | Glow-in-Dark Pack (glowing) | (192, 0) | 64x64 | Emissive variant; works as advertised |
-| Flavored Variety | (256, 0) | 64x64 | €10 — "Why not" |
-| Shamsterdam Souvenir Pack | (320, 0) | 64x64 | €18 — windmill and tulip motifs, yes really |
-| Designer Limited Edition | (384, 0) | 64x64 | €35 — "Is this a gallery?" |
-| The Mystery Box | (448, 0) | 64x64 | €30 — Chadwick's unboxing content |
+| Flavored Variety | (256, 0) | 64x64 | 10 Sovs — "Why not" |
+| Shamsterdam Souvenir Pack | (320, 0) | 64x64 | 18 Sovs — windmill and tulip motifs, yes really |
+| Designer Limited Edition | (384, 0) | 64x64 | 35 Sovs — "Is this a gallery?" |
+| The Mystery Box | (448, 0) | 64x64 | 30 Sovs — Chadwick's unboxing content |
 
 ### Bundles, Documents & Bags (Row 1, y=64):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Bachelor Party Bundle | (0, 64) | 96x96 | €45 — "The Full Experience" |
+| Bachelor Party Bundle | (0, 64) | 96x96 | 45 Sovs — "The Full Experience" |
 | Educational Poster (rolled) | (96, 64) | 48x96 | Inventory form |
 | Educational Poster (unrolled) | (144, 64) | 96x96 | Tasteful diagram, hostel-wall ready |
-| Gift Card (blank) | (240, 64) | 64x48 | €20-100 |
+| Gift Card (blank) | (240, 64) | 64x48 | 20 Sovs-100 |
 | Gift Card (presented, awkward) | (240, 112) | 64x48 | Held out at arm's length |
 | Sizing Guide Booklet | (304, 64) | 64x96 | "Information is power" |
 | Shopping Bag — Distinctive | (368, 64) | 64x96 | Gold fleece print; visible from across a hostel kitchen |
@@ -206,7 +206,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Category Placard — Sizes | (64, 320) | 96x32 | Shelf-edge label |
 | Category Placard — Novelties | (160, 256) | 96x32 | Shelf-edge label |
 | Category Placard — Art Pieces | (160, 288) | 96x32 | Shelf-edge label |
-| Price Tag Set (€3–€50) | (160, 320) | 96x32 | Small, honest, no asterisks |
+| Price Tag Set (3–50 Sovs) | (160, 320) | 96x32 | Small, honest, no asterisks |
 | Basket (customer, filling) | (256, 256) | 96x96 | Two items, growing |
 | Basket (overfull, bachelor party) | (352, 256) | 96x96 | Structural integrity in question |
 | Receipt (itemized, incriminating) | (448, 256) | 64x96 | Line by line, no euphemisms |
@@ -252,15 +252,15 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Femke Explaining 1-2 | (320, 0) / (384, 0) | 64x96 each | "It's protection. It's healthy. It's also, yes, shaped like that." |
 | Femke Gift-Wrapping 1-3 | (448, 0) / (512, 0) / (576, 0) | 64x96 each | Fold, ribbon, present — former-nurse hands |
 | Femke Unflappable Stare | (640, 0) | 64x96 | "You cannot surprise me. I promise." |
-| Willem Idle 1-2 | (704, 0) / (768, 0) | 64x96 each | 20s, art-school adjacent, treats the job as performance |
-| Willem Restocking 1-2 | (832, 0) / (896, 0) | 64x96 each | Trolley work, cheerfully |
-| Willem Cheerful Frankness | (960, 0) | 64x96 | "I literally cannot be shocked." |
+| Joost Idle 1-2 | (704, 0) / (768, 0) | 64x96 each | 20s, art-school adjacent, treats the job as performance |
+| Joost Restocking 1-2 | (832, 0) / (896, 0) | 64x96 each | Trolley work, cheerfully |
+| Joost Cheerful Frankness | (960, 0) | 64x96 | "I literally cannot be shocked." |
 
 ### Staff & Customers (Row 1, y=96):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Willem Sizing-Guide Handoff 1-2 | (0, 96) / (64, 96) | 64x96 each | "Sure. No judgment." |
-| Willem Bachelor-Party Processing 1-2 | (128, 96) / (192, 96) | 64x96 each | Bulk mode: efficient, non-judgmental, fast |
+| Joost Sizing-Guide Handoff 1-2 | (0, 96) / (64, 96) | 64x96 each | "Sure. No judgment." |
+| Joost Bachelor-Party Processing 1-2 | (128, 96) / (192, 96) | 64x96 each | Bulk mode: efficient, non-judgmental, fast |
 | Solo Browser (Serious) 1-2 | (256, 96) / (320, 96) | 64x96 each | Knows what they came for; transaction in 90 seconds |
 | Bachelorette Party Frame 1 | (384, 96) | 256x96 | Matching shirts, competitive purchasing |
 | Bachelorette Party Frame 2 | (640, 96) | 256x96 | "Get the BIG one! For the HOTEL ROOM! It's TRADITION!" |
@@ -281,7 +281,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Staff Silhouette Set (a11y) | (960, 192) | 64x96 | High-contrast interactive-NPC variants |
 
 ### Technical Notes:
-- Femke and Willem never break professionalism in any frame — no smirks, no raised eyebrows. Every reaction sprite in this location belongs to a customer.
+- Femke and Joost never break professionalism in any frame — no smirks, no raised eyebrows. Every reaction sprite in this location belongs to a customer.
 - Max 4 customer NPCs in the shop at once (14 draw-call budget); the Bachelorette Party counts as 2 and locks out one other group
 - Groom Spotlight frames use a red-shift shader parameter rather than two full sprite variants, allowing a smooth blush ramp
 - "I'm Just Looking" Guy is a fixture — he spawns on first entry and is still there on exit, every visit
@@ -311,7 +311,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Achievement Track Panel | (64, 320) | 192x96 | Five-stage bachelor-party progression |
 | Condomerie Regular Progress | (256, 320) | 128x64 | 3-visit counter toward the staff nod |
 | Photography Policy Toast | (384, 320) | 128x64 | "Exterior only, please." |
-| Price Tag Popup | (256, 384) | 128x32 | €3–€50 range display |
+| Price Tag Popup | (256, 384) | 128x32 | 3–50 Sovs range display |
 | Receipt Summary Panel | (384, 384) | 128x32 | Itemized, briefly, then gone |
 
 ### Effects & High Contrast:
@@ -418,7 +418,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 |---------|----------|------|-------------|
 | Counter Outline | Sheet 5, (368, 416) | 64x48 | Bold marker for the transaction hotspot |
 | Door / Exit Outline | Sheet 5, (432, 416) | 80x48 | Entry and exit interaction markers |
-| Staff Silhouette Set | Sheet 4, (960, 192) | 64x96 | High-contrast Femke and Willem variants |
+| Staff Silhouette Set | Sheet 4, (960, 192) | 64x96 | High-contrast Femke and Joost variants |
 | Exterior Interaction Hotspot Ring | Sheet 1, (512, 384) | 64x64 | Bold entry ring, drawn at 112x112 collision |
 
 ### Motion Sensitivity Options:
@@ -472,7 +472,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Low | No shimmer or wisp particles, no reflection overlay, static lighting, staff plus 1 customer NPC only (profile-mandated abstracted displays and simplified customer animations) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 14 per frame (per location profile)
 - **Memory Footprint:** 32 MB maximum (per location profile)
 - **Particle Limit:** 12 (golden shimmer, blush wisps, register sparkle combined — the smallest budget in Shamsterdam, by design)
@@ -489,7 +489,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
-- Node types: Sprite2D (composed product walls, facade), TileMap (floor and baseboard), AnimatedSprite2D (Femke, Willem, wrapping sequence, customers), CPUParticles2D (golden shimmer, blush wisps — not GPU), CanvasModulate (day/evening exterior state), Area2D interaction hotspots sized ≥44px, ShaderMaterial with a single `blush` float on the Groom sprite
+- Node types: Sprite2D (composed product walls, facade), TileMap (floor and baseboard), AnimatedSprite2D (Femke, Joost, wrapping sequence, customers), CPUParticles2D (golden shimmer, blush wisps — not GPU), CanvasModulate (day/evening exterior state), Area2D interaction hotspots sized ≥44px, ShaderMaterial with a single `blush` float on the Groom sprite
 - Special systems: solo-entry Bravado check gated on party size, five-section browse-state tracker feeding the Staff Approach Level machine, gag-gift declaration flag with hidden ratio counter for the epilogue, gift-wrap selector with three output package sprites, bachelor-party detection (3+ members) driving discount and Groom Spotlight, bag-visibility flag that propagates to Tolerance Hostel kitchen dialogue, three-visit Condomerie Regular counter
 
 ### Audio Sync Points:
@@ -542,7 +542,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 ### Character Integration Notes:
 - Femke is composed in every single frame — no eyebrow, no smirk, no shared glance with the player. Her power is that she is simply working.
-- Willem's animation is looser and more theatrical than Femke's; he finds the tourists genuinely fascinating and it shows in his posture, never in his face
+- Joost's animation is looser and more theatrical than Femke's; he finds the tourists genuinely fascinating and it shows in his posture, never in his face
 - Customers carry all of the location's comedy: the giggle, the blush, the paralysis, the bulk-buy bravado
 - The bros are rendered slightly larger and louder in composition than the surrounding customers — the room accommodates them without ever acknowledging them
 
@@ -622,7 +622,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (tourist awkwardness and novelty markup — never the shop, the staff, or sexual health itself)
-- [ ] Femke and Willem are composed and professional in every single frame; all reaction comedy belongs to customers
+- [ ] Femke and Joost are composed and professional in every single frame; all reaction comedy belongs to customers
 - [ ] Hidden areas/interactions have discoverable visual cues (sizing guide requires asking, gift card rack, Art Pieces plinth, three-visit Regular track)
 - [ ] Mobile performance optimized (12-particle ceiling, three atlases, separate interior/exterior scenes)
 - [ ] Touch zone sizing considered (44px minimum on all five walls, wrapping station, counter, gift card rack, purchase buttons)
@@ -637,11 +637,11 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | All in-world signage reads "Shamsterdam"; the profile's "Amsterdam institution" note is design commentary, never asset text |
 | Cultural Specificity | ✅ | Dutch sexual-health openness and direct professionalism vs. anglophone tourist awkwardness |
-| Satirical Targets Appropriate | ✅ | Punches at tourist immaturity and bachelor-party bravado; Femke, Willem and the shop are rendered competent, dignified and correct throughout |
-| Seedy Underbelly Present | ✅ | Novelty markup on items bought "as a joke," the €45 bundle, the €30 Mystery Box, and the 60% of gag gifts quietly kept |
+| Satirical Targets Appropriate | ✅ | Punches at tourist immaturity and bachelor-party bravado; Femke, Joost and the shop are rendered competent, dignified and correct throughout |
+| Seedy Underbelly Present | ✅ | Novelty markup on items bought "as a joke," the 45 Sovs bundle, the 30 Sovs Mystery Box, and the 60% of gag gifts quietly kept |
 | Gameplay Value Established | ✅ | Solo-entry Bravado check, five-section browsing, gag-gift declaration, gift-wrap service, group discount, Groom Spotlight, inventory-visibility chain, five-stage achievement track |
 | Technical Feasibility | ✅ | Separate interior/exterior scenes, composed wall sprites, single-float blush shader, 12-particle ceiling all documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 14 draw calls, 32 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB per profile budget |
 | Accessibility Features | ✅ | Six visual audio cues, reduced-motion shimmer/blush/wrap alternatives, section hatching, 44px zones |
 | No Crypto Elements | ✅ | Cash, card, and gift cards; pure traditional retail awkwardness |
 | Social Media Integration | ✅ | Six screenshot moments plus a seven-line quote bank identified |

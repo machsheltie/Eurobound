@@ -1,7 +1,7 @@
 # Trinity of Pints - Complete PNG Asset Requirements
 
 ## 📋 Overview
-A pub cosplaying as a prestigious university — plastic ivy, stock-photo alumni, faux-Latin mottos, and Dean Declan Murphy grading your pint-finishing technique with the gravitas of a tenure committee. This document specifies every sprite for Publandia's School of Liquid Arts, where drinking challenges are "courses," failure is "academic probation," and the diploma is fake but printed that morning with genuine ceremony.
+A pub cosplaying as a prestigious university — plastic ivy, stock-photo alumni, faux-Latin mottos, and Dean Cathal Murphy grading your pint-finishing technique with the gravitas of a tenure committee. This document specifies every sprite for Publandia's School of Liquid Arts, where drinking challenges are "courses," failure is "academic probation," and the diploma is fake but printed that morning with genuine ceremony.
 
 **Location ID:** `publandia_pub_trinity_pints_01`
 **Theme:** Gimmick-pub tourism and academic pretension — tourists who want to feel CULTURED while getting hammered
@@ -142,7 +142,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 ### The Administration (64x96 each):
 | NPC | Position | Size | Description |
 |-----|----------|------|-------------|
-| Dean Declan Idle | (0, 0) | 64x96 | Full academic regalia — robe, cap, medallion, perpetual seriousness |
+| Dean Cathal Idle | (0, 0) | 64x96 | Full academic regalia — robe, cap, medallion, perpetual seriousness |
 | Dean Lecturing A | (64, 0) | 64x96 | Finger raised, thesis-defense energy |
 | Dean Lecturing B | (128, 0) | 64x96 | Gesturing at chalkboard formulas |
 | Dean Grading | (192, 0) | 64x96 | Clipboard scrutiny of your pint technique |
@@ -152,10 +152,10 @@ assets/sprites/locations/publandia/trinity_of_pints/
 ### The Faculty (64x96 each):
 | NPC | Position | Size | Description |
 |-----|----------|------|-------------|
-| Prof. Siobhan (Spirits) | (0, 96) | 64x96 | Tweed, reading glasses, glass perpetually in hand |
+| Prof. Róisín (Spirits) | (0, 96) | 64x96 | Tweed, reading glasses, glass perpetually in hand |
 | Prof. Cian (Games) | (64, 96) | 64x96 | Sports casual under academic robe, darts at the ready |
 | Prof. Aisling (Music) | (128, 96) | 64x96 | Folk aesthetic, bodhrán slung |
-| Siobhan Nosing Glass | (192, 96) | 64x96 | "Smell first. Now taste." demonstration pose |
+| Róisín Nosing Glass | (192, 96) | 64x96 | "Smell first. Now taste." demonstration pose |
 | Cian Throwing | (256, 96) | 64x96 | State champion '08 form |
 | Aisling Playing | (320, 96) | 64x96 | Bodhrán rhythm-game conductor |
 
@@ -164,7 +164,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 |----------|----------|------|-------------|
 | Dean Portrait | (0, 192) | 64x48 | Scholarly gravitas |
 | Dean Portrait (Private) | (64, 192) | 64x48 | The rare mask-slip — twelve adjunct years behind the eyes |
-| Siobhan Portrait | (128, 192) | 64x48 | Warm but exacting |
+| Róisín Portrait | (128, 192) | 64x48 | Warm but exacting |
 | Cian Portrait | (192, 192) | 64x48 | Competitive encouragement |
 | Aisling Portrait | (256, 192) | 64x48 | "Beautiful! Terrible, but beautiful!" |
 | Medallion Detail | (320, 192) | 32x32 | Dean's chain of office close-up |
@@ -228,7 +228,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 | Hollow Book (Closed/Open) | (0, 224) | 64x32 | Two 32x32 states for library gag |
 | Latin Motto Scroll | (64, 224) | 64x32 | Mostly incorrect Latin, framed anyway |
 | GPA Report Card | (128, 224) | 48x32 | Gentleman's C rendered official |
-| Tuition Receipt | (176, 240) | 32x16 | €10 — "covers tuition, materials, and distinguished faculty" |
+| Tuition Receipt | (176, 240) | 32x16 | 10 Sovs — "covers tuition, materials, and distinguished faculty" |
 | Diploma Print Stack | (208, 224) | 48x32 | This morning's batch, ink drying |
 
 ### Technical Notes:
@@ -268,7 +268,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 | Enrolled Status Icon | (432, 128) | 32x32 | Part of the bit |
 | Graduate Status Icon | (464, 128) | 32x32 | Permanent alumni standing |
 | Selfie Frame: Academic | (160, 192) | 96x64 | Podium + backdrop overlay, robe/cap/diploma prop slots |
-| Alumni Discount Tag | (256, 192) | 64x32 | €5 graduate tuition |
+| Alumni Discount Tag | (256, 192) | 64x32 | 5 Sovs graduate tuition |
 | Toast-Off Prompt | (320, 192) | 96x32 | PUB 115 crowd-approval meter |
 | Rhythm Bar (SONG 220) | (416, 192) | 96x32 | Note-hit track for drinking songs |
 | Dean's List Crest | (416, 160) | 48x32 | 20% discount, VIP seating marker |
@@ -430,7 +430,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Brewery Tour Sidequest (stamp) | Stamp: Trinity of Pints, Dean Conferring, ceremony sequence | Stamp applied during graduation by Dean Declan; requires Bottle Opener Keychain from The Blarney Trap |
+| Brewery Tour Sidequest (stamp) | Stamp: Trinity of Pints, Dean Conferring, ceremony sequence | Stamp applied during graduation by Dean Cathal; requires Bottle Opener Keychain from The Blarney Trap |
 | Senior Thesis (THESIS 401) | Thesis Gauntlet Tray, all four course stations, Graduation Ceremony assets | Multi-stage gauntlet: drink, game, toast, song → graduation trigger |
 | Valedictorian Run | GPA Tracker, Valedictorian Splash + Medal, Dean's List Crest | Highest GPA of the session; bonus Bravado + free drinks |
 | Academic Probation Arc | Probation Notice, Repeat Student NPC, remedial course flow | Sub-1.5 GPA path; public shame, retakes, redemption |
@@ -460,8 +460,8 @@ assets/sprites/locations/publandia/trinity_of_pints/
 - "Academic standards may vary" — the smallest sign tells the biggest truth
 
 ### Character Integration Notes:
-- Dean Declan never breaks character in any sprite; the Private portrait is the sole crack, and it's earned
-- Faculty poses must play their departments straight — Siobhan noses a €4 whiskey like it's a first edition
+- Dean Cathal never breaks character in any sprite; the Private portrait is the sole crack, and it's earned
+- Faculty poses must play their departments straight — Róisín noses a 4 Sovs whiskey like it's a first edition
 - Students carry the reaction comedy; the Study Group is one choreographed organism
 - Bradley's genuine emotion at a fake graduation is the tonal target: absurd AND touching
 
@@ -561,7 +561,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 | World Consistency (no real city names) | ✅ | Publandia only; Trinity College satirized as "Trinity of Pints" without naming Dublin in-game |
 | Cultural Specificity | ✅ | Irish literary-heritage commodification, Trinity College tourism |
 | Satirical Targets Appropriate | ✅ | Gimmick pubs, tourist pretension, "college experience" industry — never education itself; locals avoid the place |
-| Seedy Underbelly Present | ✅ | €10 "tuition" cover charge for a themed pub; exploiting the desire to feel cultured |
+| Seedy Underbelly Present | ✅ | 10 Sovs "tuition" cover charge for a themed pub; exploiting the desire to feel cultured |
 | Gameplay Value Established | ✅ | Ten-course challenge catalog, GPA system, graduation ceremony, stamp stop, Academic Amber unlock |
 | Technical Feasibility | ✅ | Hub-and-rooms structure, timeline ceremony, 7 sheets, mobile optimization documented |
 | Mobile Performance Budget | ✅ | 60 FPS, 15 draw calls, 36MB |
@@ -569,6 +569,6 @@ assets/sprites/locations/publandia/trinity_of_pints/
 | No Crypto Elements | ✅ | Absent from source and spec |
 | Social Media Integration | ✅ | Six viral moments identified, quote bank sourced from profile |
 
-**Trinity of Pints delivers the complete counterfeit college experience: enrollment, coursework, probation, and a graduation that moves people despite everyone knowing better. Every asset commits to the bit as hard as Dean Declan does — because the diploma is fake, the education is real, and the selfie is forever.**
+**Trinity of Pints delivers the complete counterfeit college experience: enrollment, coursework, probation, and a graduation that moves people despite everyone knowing better. Every asset commits to the bit as hard as Dean Cathal does — because the diploma is fake, the education is real, and the selfie is forever.**
 
 **"In Cervisia Felicitas."**

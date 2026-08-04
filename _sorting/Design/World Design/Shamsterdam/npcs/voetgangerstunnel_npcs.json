@@ -7,7 +7,8 @@
       "display_name": "Henk",
       "role": "unhelpful_navigation_assistance",
       "importance": "primary",
-      
+      "full_profile": "Design/World Design/Shamsterdam/npcs/Voetgangerstunnel/npc_henk_helpful_unhelpful.md",
+
       "appearance": {
         "clothing": "bored_security_uniform_too_tight",
         "props": ["empty_coffee_cup", "newspaper_unfinished_crossword"],
@@ -33,8 +34,8 @@
         "when_wrong": "Strange, it was there yesterday.",
         "about_red_light_exit": "Oh, THAT exit. Many tourists find that one. Very popular.",
         "repeated_requests": "You again? Did you try the blue tiles? No? Try the orange ones.",
-        "paid_directions": "Okay, for five euro, I give you the REAL directions. This way. Maybe.",
-        "escort_offer": "For ten euro, I walk you there myself. But I walk slow. Very slow."
+        "paid_directions": "Okay, for five Sovs, I give you the REAL directions. This way. Maybe.",
+        "escort_offer": "For ten Sovs, I walk you there myself. But I walk slow. Very slow."
       },
       
       "services": [
@@ -49,7 +50,7 @@
           "id": "paid_directions",
           "name": "'Correct' Directions",
           "cost": 5,
-          "currency": "euro",
+          "currency": "sovs",
           "effect": "slightly_better_odds",
           "accuracy_bonus": 0.10
         },
@@ -57,7 +58,7 @@
           "id": "escort",
           "name": "Guided Walk",
           "cost": 10,
-          "currency": "euro",
+          "currency": "sovs",
           "effect": "guaranteed_correct_exit",
           "speed": "very_slow",
           "time_cost": "5_minutes_real_time"
@@ -98,7 +99,7 @@
       
       "dialogue": {
         "greeting": "Lost already? You just got down here.",
-        "selling_map": "€8 for the map. It's the only accurate one in the city. Yes, really.",
+        "selling_map": "8 Sovs for the map. It's the only accurate one in the city. Yes, really.",
         "navigation_warning": "The blue tiles go to the station. The orange go to... places.",
         "about_red_light_exit": "Exit 7? That's the quick one. Very... scenic.",
         "after_purchase": "You bought the map. Now actually LOOK at it.",
@@ -111,7 +112,7 @@
           "id": "tunnel_map",
           "name": "Tunnel Map",
           "cost": 8,
-          "currency": "euro",
+          "currency": "sovs",
           "effect": {
             "navigation_bonus": 0.15,
             "shows_actual_layout": true
@@ -122,7 +123,7 @@
           "id": "tourist_map",
           "name": "Tourist Map (Surface)",
           "cost": 5,
-          "currency": "euro",
+          "currency": "sovs",
           "effect": "useless_underground",
           "comedy": true
         },
@@ -130,14 +131,14 @@
           "id": "survivor_badge",
           "name": "'I Survived the Tunnel' Badge",
           "cost": 3,
-          "currency": "euro",
+          "currency": "sovs",
           "effect": "cosmetic_only"
         },
         {
           "id": "flashlight",
           "name": "Flashlight",
           "cost": 6,
-          "currency": "euro",
+          "currency": "sovs",
           "effect": "reveals_hidden_graffiti_hints"
         }
       ],
@@ -161,7 +162,8 @@
       "display_name": "Willem the Eternal Busker",
       "role": "ambient_landmark_quest_hint",
       "importance": "secondary",
-      
+      "full_profile": "Design/World Design/Shamsterdam/npcs/Voetgangerstunnel/npc_willem_eternal_busker.md",
+
       "appearance": {
         "instrument": "ancient_accordion",
         "props": ["hat_with_exactly_2.47_euro"],
@@ -182,22 +184,22 @@
       
       "dialogue": {
         "unprompted": "*plays accordion, ignores you*",
-        "tip_1_euro": "Follow the sound of the tram. It knows the way.",
-        "tip_5_euro": "The red signs lie. The emergency signs tell truth.",
+        "tip_1_sov": "Follow the sound of the tram. It knows the way.",
+        "tip_5_sov": "The red signs lie. The emergency signs tell truth.",
         "about_himself": "I've been here since... hmm. What year is it?",
-        "third_5_euro_tip": "I remember when the tunnel was new. Before the bikes. Before... *trails off*",
+        "third_5_sov_tip": "I remember when the tunnel was new. Before the bikes. Before... *trails off*",
         "ghost_hint": "I think I'll stay a while longer. *disappears for one second, reappears*"
       },
       
       "tip_system": {
-        "1_euro": {"hint_quality": "basic", "dialogue": "tip_1_euro"},
-        "5_euro": {"hint_quality": "reliable", "dialogue": "tip_5_euro"},
+        "1_euro": {"hint_quality": "basic", "dialogue": "tip_1_sov"},
+        "5_euro": {"hint_quality": "reliable", "dialogue": "tip_5_sov"},
         "theft_attempt": {"reaction": "stops_playing_stares", "duration_seconds": 10}
       },
       
       "hidden_quest": {
         "quest_id": "eternal_busker",
-        "trigger": "tip_5_euro_three_separate_visits",
+        "trigger": "tip_5_sov_three_separate_visits",
         "stages": [
           {"visit": 1, "content": "navigation_hint"},
           {"visit": 2, "content": "personal_story_hint"},

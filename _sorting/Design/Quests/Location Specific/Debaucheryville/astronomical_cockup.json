@@ -42,7 +42,7 @@
         {"type": "interact", "target": "clock_wine_vendor", "optional": false}
       ],
       "total_money_spent": 170,
-      "currency": "euro"
+      "currency": "sovs"
     },
     {
       "stage_id": 3,
@@ -268,7 +268,7 @@
     "location": "twin_peaks_restaurant_hometown",
     "timeline": "eight_months_after_trip",
     "summary": "Lord Pilsner tries to impress waitress Amber with his tattoo. She confirms it's obviously a duck. He's been confusing her with Brittany for three years.",
-    "final_punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - €50 for any duck-related design."
+    "final_punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - 50 Sovs for any duck-related design."
   },
   
   "npc_callbacks": {

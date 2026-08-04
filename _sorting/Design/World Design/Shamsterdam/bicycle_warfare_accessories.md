@@ -8,14 +8,14 @@
 - **Dutch Alias**: "Fietsbel & Meer" (Bike Bell & More)
 - **Satirical Subtitle**: "The Bell Is Your Only Warning. Use It Wisely. They Won't Listen."
 - **World Location**: Shamsterdam
-- **Area Zone**: Near Central Station, tourist bicycle rental district
+- **Area Zone**: Near Centraal Chaos, tourist bicycle rental district
 - **Location Type**: Accessory Vendor / Survival Equipment / False Confidence Merchant
 
 ## Access & Requirements
 ### Entry Conditions
 - **Time Restrictions**: 8 AM - 8 PM (tourist cycling hours, carnage window)
 - **Stat Requirements**: None (the bike path accepts all sacrifices)
-- **Item Requirements**: Gold for purchases (€5-25), belief that accessories help
+- **Item Requirements**: Gold for purchases (5 Sovs-25), belief that accessories help
 - **Previous Location Requirements**: None (the bell finds those who seek it)
 - **Special Conditions**: Adjacent to bike rental shops, captures tourists in transition
 
@@ -48,27 +48,27 @@
 - **Maps Section**: Bike route maps marked with danger zones ("tourist collision hotspots")
 
 ### The Bell Wall (The Arsenal)
-**Tier 1 — The Pacifists (€5-8)**
+**Tier 1 — The Pacifists (5 Sovs-8)**
 - Classic "ding" bells, polite, ignored by everyone
 - Best for: Cycling in parks, giving up, background noise
 - Reality check: "These are for people who don't want to survive"
 
-**Tier 2 — The Compromisers (€10-15)**
+**Tier 2 — The Compromisers (10 Sovs-15)**
 - Louder "DING-DING" bells, noticeable, sometimes effective
 - Best for: Mixed paths, moderate traffic, hopeful beginners
 - Reality check: "Some people will hear. Some people will care. Not most."
 
-**Tier 3 — The Asserters (€15-20)**
+**Tier 3 — The Asserters (15 Sovs-20)**
 - Dual-tone bells, attention-grabbing, tourists jump
 - Best for: Busy routes, canal bridges, genuine communication
 - Reality check: "Now we're talking. Shamsterdammers might nod."
 
-**Tier 4 — The Dominators (€20-25)**
+**Tier 4 — The Dominators (20 Sovs-25)**
 - Air horns, electronic sirens, psychological warfare
 - Best for: Apocalypse scenarios, traumatized tourists, establishing dominance
 - Reality check: "You'll be heard. You might also be targeted for retaliation."
 
-**Tier 5 — The Delusional (€30+)**
+**Tier 5 — The Delusional (30 Sovs+)**
 - "Smart bells," GPS integration, app-connected, excessive
 - Best for: People who solve problems with technology
 - Reality check: "The bike path doesn't care about your app"
@@ -78,7 +78,7 @@
   - GREEN: Parks, quiet paths, survival likely
   - YELLOW: Mixed traffic, attention required
   - ORANGE: Canal bridges, tram crossings, pedestrian swarms
-  - RED: Central Station area, Dam Square, certain death
+  - RED: Centraal Chaos, Verdoemplein, certain death
 - **The "Don't" List**: Areas tourists should avoid on bikes
   - (The list is most of central Shamsterdam)
 - **Local Route Map**: Where Dutch people actually bike (tourists can't read it, different symbols)
@@ -92,7 +92,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Amsterdam bicycle culture is simultaneously beautiful (50% of trips by bike!) and TERRIFYING for tourists. The Dutch have been cycling since birth; they ride in heels, carrying groceries, while texting, in the rain, three-wide on narrow paths. Tourists rent bikes thinking "how hard can it be" and enter a combat zone where the rules are unspoken, the locals are merciless, and your €8 bell is the ONLY thing between you and becoming a cautionary tale.
+**Core Concept**: Amsterdam bicycle culture is simultaneously beautiful (50% of trips by bike!) and TERRIFYING for tourists. The Dutch have been cycling since birth; they ride in heels, carrying groceries, while texting, in the rain, three-wide on narrow paths. Tourists rent bikes thinking "how hard can it be" and enter a combat zone where the rules are unspoken, the locals are merciless, and your 8 Sovs bell is the ONLY thing between you and becoming a cautionary tale.
 
 Bicycle Warfare Accessories leans into this reality with military precision. It's a shop that treats bells not as cute accessories but as survival equipment. The satire is the gap between the cheerful tourist cycling fantasy ("bikes in Amsterdam! So European!") and the brutal reality of Amsterdam bike infrastructure politics.
 
@@ -111,7 +111,7 @@ Bicycle Warfare Accessories leans into this reality with military precision. It'
 - **Consequence System**: Bells provide +Confidence, not +Survival
 
 ### Buffoon Delusion Scenarios
-**What bros THINK is happening**: Equipping for a pleasant bike ride through Amsterdam
+**What bros THINK is happening**: Equipping for a pleasant bike ride through Shamsterdam
 
 **What is ACTUALLY happening**: Arming for a war they can't win with weapons that won't help
 
@@ -143,17 +143,17 @@ Bicycle Warfare Accessories leans into this reality with military precision. It'
 ### Product Inventory
 | Item | Price | Effect | Reality | Notes |
 |------|-------|--------|---------|-------|
-| Classic Ding Bell | €5 | +5 Confidence | Ignored by all | "Better than nothing. Slightly." |
-| Assertive Bell | €12 | +15 Confidence | Noticed by some | "Recommended minimum" |
-| Tactical Air Horn | €22 | +30 Confidence, -Stealth | Heard by all, hated by all | "Effective. Aggressive." |
-| Smart Bell App | €35 | +10 Confidence, +confusion | Does something, unclear what | "For the tech-dependent" |
-| Bike Mirror | €8 | +Awareness (if used) | Requires looking | "You have to LOOK into it" |
-| Front Light | €10 | +Visibility (night) | Required by law | "Legally mandatory. Practically useful." |
-| Rear Light | €10 | +Visibility (rear) | Blinky = seen | "Red. Always red. Not negotiable." |
-| Helmet | €25 | +Protection, -Shamsterdam Cred | No locals wear them | "Your choice. Make it wisely." |
-| Survival Map | €5 | +Navigation, +Fear | Danger zones marked | "Knowledge is power. Also terror." |
-| Rain Poncho | €8 | +Weather Survival | It WILL rain | "Not if. When." |
-| Combination Package | €40 | All of above minus horn | Starter kit | "The tourist survival bundle" |
+| Classic Ding Bell | 5 Sovs | +5 Confidence | Ignored by all | "Better than nothing. Slightly." |
+| Assertive Bell | 12 Sovs | +15 Confidence | Noticed by some | "Recommended minimum" |
+| Tactical Air Horn | 22 Sovs | +30 Confidence, -Stealth | Heard by all, hated by all | "Effective. Aggressive." |
+| Smart Bell App | 35 Sovs | +10 Confidence, +confusion | Does something, unclear what | "For the tech-dependent" |
+| Bike Mirror | 8 Sovs | +Awareness (if used) | Requires looking | "You have to LOOK into it" |
+| Front Light | 10 Sovs | +Visibility (night) | Required by law | "Legally mandatory. Practically useful." |
+| Rear Light | 10 Sovs | +Visibility (rear) | Blinky = seen | "Red. Always red. Not negotiable." |
+| Helmet | 25 Sovs | +Protection, -Shamsterdam Cred | No locals wear them | "Your choice. Make it wisely." |
+| Survival Map | 5 Sovs | +Navigation, +Fear | Danger zones marked | "Knowledge is power. Also terror." |
+| Rain Poncho | 8 Sovs | +Weather Survival | It WILL rain | "Not if. When." |
+| Combination Package | 40 Sovs | All of above minus horn | Starter kit | "The tourist survival bundle" |
 
 ### The Bell Test Mechanic
 - **Action**: Test any bell before purchase
@@ -200,7 +200,7 @@ Based on conversation, Werner assigns internal ratings:
 - **Dialogue**:
   - "Welcome to Bicycle Warfare. You're renting? What kind of bike? Where are you going? I need to assess."
   - "The bike path is not a suggestion. It's not a polite request. It's INFRASTRUCTURE. Respect it."
-  - "This bell? This is a Tier 2. Good for parks. You're going to Central Station? You need... more."
+  - "This bell? This is a Tier 2. Good for parks. You're going to Centraal Chaos? You need... more."
   - "Shamsterdammers don't use helmets. Shamsterdammers have been cycling since they could WALK. You are not a Shamsterdammer."
   - "Air horn? You sure? People will know you're a tourist. They already know. But they'll REALLY know."
   - "The mirror is the most important item. You can't defend against what you can't see."
@@ -286,8 +286,8 @@ If game includes bike navigation:
 
 ### Cross-Location Dependencies
 - **Bike Rental Shop**: Source of bikes, sends customers to Werner
-- **Central Station**: Maximum danger zone, equipment tested
-- **Vondelpark**: Safest zone, beginner area
+- **Centraal Chaos**: Maximum danger zone, equipment tested
+- **Wandelpark**: Safest zone, beginner area
 - **Canal Bridges**: Bell-heavy zones, traffic chokepoints
 
 ### The Cycling Achievement Track
@@ -410,4 +410,4 @@ If game includes bike navigation:
 
 ---
 
-*Bicycle Warfare Accessories: The bell is your voice. The mirror is your eyes. The helmet is your admission that you're not Dutch. The bike path is the enemy. Welcome to Amsterdam.*
+*Bicycle Warfare Accessories: The bell is your voice. The mirror is your eyes. The helmet is your admission that you're not Dutch. The bike path is the enemy. Welcome to Shamsterdam.*

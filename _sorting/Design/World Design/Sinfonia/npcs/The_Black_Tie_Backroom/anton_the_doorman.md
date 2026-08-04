@@ -18,10 +18,10 @@
 ### What They're Actually Doing
 Anton stands at the foot of the marble staircase in a butler's tailcoat cut for a body that is not a butler's, and he performs the same three-part verification on every human being who comes down those stairs: attire, bearing, collateral. He is unfailingly polite. He is unfailingly clear. He tells every guest, on the way in, in the mildest voice in Sinfonia, exactly what is going to happen to their money — and then he steps aside, because it is not his job to stop them, it is his job to confirm they can afford it.
 
-Underneath the courtesy he is doing arithmetic. €500 is the minimum, held as collateral at the deposit window, and a party that cannot produce it does not go past him — no negotiation, no exception, no side door. This is not cruelty; it is the only mercy the building offers, and it is administered by the largest man in it.
+Underneath the courtesy he is doing arithmetic. 500 Sovs is the minimum, held as collateral at the deposit window, and a party that cannot produce it does not go past him — no negotiation, no exception, no side door. This is not cruelty; it is the only mercy the building offers, and it is administered by the largest man in it.
 
 ### What Bros Believe
-The bros believe they were *approved*. They believe a professional gatekeeper looked at three men in recently-purchased formal wear and recognized quality. Lord Pilsner in particular believes the €500 is a buy-in to a tier of life, rather than a floor beneath which the house will not waste a chair on you. Anton's careful, courteous warning about their prospects is received as flavor — as the sort of thing a doorman says in a movie right before the protagonist wins everything. **Lord Pilsner**: "Dude, we're IN. We're VIPs. We're HIGH ROLLERS." They are none of those things, and Anton has said so out loud, in complete sentences, to their faces.
+The bros believe they were *approved*. They believe a professional gatekeeper looked at three men in recently-purchased formal wear and recognized quality. Lord Pilsner in particular believes the 500 Sovs is a buy-in to a tier of life, rather than a floor beneath which the house will not waste a chair on you. Anton's careful, courteous warning about their prospects is received as flavor — as the sort of thing a doorman says in a movie right before the protagonist wins everything. **Lord Pilsner**: "Dude, we're IN. We're VIPs. We're HIGH ROLLERS." They are none of those things, and Anton has said so out loud, in complete sentences, to their faces.
 
 ### The Comedy Gap
 Anton is honest to the point of absurdity and it makes no difference whatsoever. He tells them the odds in the doorway. He tells them the minimum is a minimum. He declines, with total politeness, to accept a döner as legal tender. Every word is accurate and every word is heard as atmosphere, because the bros have decided in advance what kind of scene they are in and the doorman's function in that scene is to open the door.
@@ -91,7 +91,7 @@ Anton works the door because the door is the one job in this building where the 
 ### Key Interaction Dialogue — The Collateral
 *The deposit window. The number lands on three men who have been costing this evening out in units of street food since the airport.*
 
-**Lord Pilsner**: "€500 COLLATERAL?! That's... that's a lot of döner."
+**Lord Pilsner**: "500 Sovs COLLATERAL?! That's... that's a lot of döner."
 
 **Anton** *(without inflection, without hesitation, canon — ships verbatim)*:
 > "It's also the minimum. Döner is not accepted."
@@ -100,7 +100,7 @@ Anton works the door because the door is the one job in this building where the 
 
 **Anton** *(stepping aside, gloved hand open toward the floor)*: "Then the elite are through there, sir."
 
-### The Refusal (Party Under €500)
+### The Refusal (Party Under 500 Sovs)
 *The gate. No negotiation branch exists and none may be added.*
 
 **Anton** *(one gloved hand raised, entirely still)*:
@@ -154,10 +154,10 @@ Anton works the door because the door is the one job in this building where the 
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Collateral deposit (mandatory) | €500 held | Returned at exit minus handling fee | Grants entry; the €500 is the fixed stake of the corner-table encounter |
-| "Which table is running warm" | €20 | Accurate, and useless, since the edge does not care | Highlights one main-floor table for the session |
-| "Who is at the tables tonight" | €50 | Genuinely valuable | Reveals which named opponents are seated, including whether Herr Falsch is in |
-| "House Rules, unabridged" | €50 | Very valuable, entirely ignored | Full house-edge disclosure for every game, delivered flatly, as a list |
+| Collateral deposit (mandatory) | 500 Sovs held | Returned at exit minus handling fee | Grants entry; the 500 Sovs is the fixed stake of the corner-table encounter |
+| "Which table is running warm" | 20 Sovs | Accurate, and useless, since the edge does not care | Highlights one main-floor table for the session |
+| "Who is at the tables tonight" | 50 Sovs | Genuinely valuable | Reveals which named opponents are seated, including whether Herr Falsch is in |
+| "House Rules, unabridged" | 50 Sovs | Very valuable, entirely ignored | Full house-edge disclosure for every game, delivered flatly, as a list |
 | Member's Card recognition (`item_members_card`) | — | — | Waives attire and stat checks; never waives the collateral |
 
 ### Hidden Details / Easter Eggs
@@ -218,7 +218,7 @@ Anton's script does not warm, harden, or shorten. High Roller status changes one
 | Animation | Trigger |
 |-----------|---------|
 | verification | Any entry attempt — attire, bearing, collateral, in that order, always the full sequence |
-| refusal_hand | Party under €500, or a third-offense banned party — one gloved hand raised, total stillness |
+| refusal_hand | Party under 500 Sovs, or a third-offense banned party — one gloved hand raised, total stillness |
 | door_hold | Ejection of a cleaned-out party; also plays at close |
 | summon_escort | Third-offense cheat detected on the floor — a single small gesture, no other movement |
 
@@ -237,17 +237,17 @@ Anton's script does not warm, harden, or shorten. High Roller status changes one
 
 ### Primary Quest (If Applicable)
 - **Quest**: None owned. Structurally upstream of "The Kings Were Humming" (`sinfonia_sidequest_the_kings_were_humming_01`).
-- **Role**: Access gate. The €500 he collects at the deposit window *is* the stake of that quest's encounter.
+- **Role**: Access gate. The 500 Sovs he collects at the deposit window *is* the stake of that quest's encounter.
 - **Trigger**: Every entry attempt at the bottom of the stairs.
 - **Outcome**: Entry with collateral posted, or refusal. No third outcome exists.
 
 ### Quest Gate Function (If Applicable)
-Yes, and it is the hardest gate in the location. A party holding less than €500 in gold is refused entry, which means the corner-table encounter cannot fire underfunded — the fixed-stake scene is guaranteed to have exactly its stake available for every player who ever sees it. Attire or stat shortfalls are also refused, but those have two documented alternatives (Black-Tie Attire from the Haberdashery, or `item_members_card`). The collateral has no alternative at all.
+Yes, and it is the hardest gate in the location. A party holding less than 500 Sovs in gold is refused entry, which means the corner-table encounter cannot fire underfunded — the fixed-stake scene is guaranteed to have exactly its stake available for every player who ever sees it. Attire or stat shortfalls are also refused, but those have two documented alternatives (Black-Tie Attire from the Haberdashery, or `item_members_card`). The collateral has no alternative at all.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Collateral receipt | On entry | No — surrendered at exit | Cosmetic token representing the €500 held at the window |
+| Collateral receipt | On entry | No — surrendered at exit | Cosmetic token representing the 500 Sovs held at the window |
 | None other | — | — | Anton gives nothing away. He sells information and returns coats. |
 
 ---
@@ -307,7 +307,7 @@ Deep, measured Sinfonian — precise, formal, consonants fully closed, never hur
 ## 📝 Development Notes
 
 - **Two canon lines ship verbatim**: the four-clause verification greeting and "Döner is not accepted." Both already exist in `Design/World Design/Sinfonia/the_black_tie_backroom.md` and must match byte-for-byte across the location file, this profile, and the location's interactions JSON.
-- **The €500 refusal has no bypass.** No charm check, no bribe, no pity branch, no "just this once." This is what guarantees the corner-table encounter can never fire underfunded.
+- **The 500 Sovs refusal has no bypass.** No charm check, no bribe, no pity branch, no "just this once." This is what guarantees the corner-table encounter can never fire underfunded.
 - **He gates access; he never gates the joke.** No line of his may confirm to the player that the bros are wrong. He is honest, they don't listen, and the scene ends.
 - **He never touches a guest.** Physical consequence is the bouncer escort's, summoned by gesture. Anton's entire threat profile is stillness and clarity.
 - The coat-closet slate is an unremarked environmental detail. No NPC reacts to the player examining it, and no achievement, tooltip, or dialogue branch ever accounts for it.

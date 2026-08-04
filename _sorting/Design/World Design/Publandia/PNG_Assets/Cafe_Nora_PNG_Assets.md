@@ -115,8 +115,8 @@ assets/sprites/locations/publandia/cafe_nora/
 | Cup Pyramid | (256, 160) | 64x48 | Stacked cups, one chipped |
 | Milk Jugs & Tamper | (256, 208) | 64x48 | Barista tools, steam-scalded |
 | Coffee Menu Board | (320, 160) | 96x96 | All six drinks, chalk-lettered with literary flourishes |
-| Headphone Rack | (416, 160) | 96x48 | Loaner headphones, "€2 DEPOSIT" tag |
-| Terminal Time Price Sign | (416, 208) | 96x48 | "€3 / 30 MIN — DAY PASS €15" |
+| Headphone Rack | (416, 160) | 96x48 | Loaner headphones, "2 Sovs DEPOSIT" tag |
+| Terminal Time Price Sign | (416, 208) | 96x48 | "3 Sovs / 30 MIN — DAY PASS 15 Sovs" |
 
 ### The Back Alcove (The Privacy):
 | Element | Position | Size | Description |
@@ -339,20 +339,20 @@ assets/sprites/locations/publandia/cafe_nora/
 ### Coffee Menu Items:
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Ulysses Blend (Espresso) | (0, 0) | 48x48 | €4 — +10 SP, +Focus; bold, like the book nobody's read |
-| Dubliners Drip (Filter) | (48, 0) | 48x48 | €3 — +5 SP, +Stamina; honest filter coffee |
-| Portrait of the Artist (Latte) | (96, 0) | 48x48 | €5 — +10 SP, +Creativity; foam art attempted |
-| Finnegans Wake (Triple Shot) | (144, 0) | 48x48 | €6 — +20 SP, ++Speed, -Sleep later; enlightenment or palpitations |
-| Nora's House Blend | (192, 0) | 48x48 | €3.50 — +8 SP, staff approval; her grandmother's recipe |
+| Ulysses Blend (Espresso) | (0, 0) | 48x48 | 4 Sovs — +10 SP, +Focus; bold, like the book nobody's read |
+| Dubliners Drip (Filter) | (48, 0) | 48x48 | 3 Sovs — +5 SP, +Stamina; honest filter coffee |
+| Portrait of the Artist (Latte) | (96, 0) | 48x48 | 5 Sovs — +10 SP, +Creativity; foam art attempted |
+| Finnegans Wake (Triple Shot) | (144, 0) | 48x48 | 6 Sovs — +20 SP, ++Speed, -Sleep later; enlightenment or palpitations |
+| Nora's House Blend | (192, 0) | 48x48 | 4 Sovs — +8 SP, staff approval; her grandmother's recipe |
 
 ### Tea & Pastries:
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Literary Tea Selection | (0, 48) | 48x48 | €3 — +5 SP, +Calm; leaves, not bags, obviously |
-| Scone (Plain) | (48, 48) | 48x48 | €3 — +10 HP |
-| Scone (With Jam) | (96, 48) | 48x48 | €4 — +15 HP |
-| Brown Bread Toast | (144, 48) | 48x48 | €3 — +12 HP |
-| "Joyce's Favorite" Cake | (192, 48) | 48x48 | €5 — +20 HP (Joyce never ate this) |
+| Literary Tea Selection | (0, 48) | 48x48 | 3 Sovs — +5 SP, +Calm; leaves, not bags, obviously |
+| Scone (Plain) | (48, 48) | 48x48 | 3 Sovs — +10 HP |
+| Scone (With Jam) | (96, 48) | 48x48 | 4 Sovs — +15 HP |
+| Brown Bread Toast | (144, 48) | 48x48 | 3 Sovs — +12 HP |
+| "Joyce's Favorite" Cake | (192, 48) | 48x48 | 5 Sovs — +20 HP (Joyce never ate this) |
 
 ### Effect Icons:
 | Icon | Position | Size | Description |

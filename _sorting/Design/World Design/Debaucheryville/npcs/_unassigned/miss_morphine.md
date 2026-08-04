@@ -131,60 +131,11 @@ Stated motive, from the note left behind: **"Thanks for beta testing my social e
 
 *Declining the `💊Wanna vibe IRL?💊` pop-up produces no response at all. The window closes itself after four seconds. She messages again two in-game nights later with identical text, as though the first message had not been sent — or as though the decline was itself the data point. The game does not indicate which.*
 
-### Herp Rejection Scene (`the_herp` active) — **auto-reply only**
+### Couchsurf Herp Routing — **auto-reply only**
 
-*An infected bro attempts to re-trigger the encounter — either by answering an incoming `💊Wanna vibe IRL?💊` pop-up while `the_herp` is active, or by messaging her handle directly. **This is the entire scene.** No location, no visit, no cutaway, no third party. One window, one reply, one close.*
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Miss Morphine — including both `04:04` away-message auto-replies and the returning trigger string — are authored in her Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Miss Morphine". **Do not duplicate them here.** Flag: `miss_morphine_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
-```
-💬 Miss Morphine  [auto-reply · 04:04]
-   ╔════════════════════════════╗
-   ║   AWAY  FROM  KEYBOARD     ║
-   ╚════════════════════════════╝
-   thank you for your interest in this experience.
-   your submission has been received and flagged.
-   ( ˘_˘ )  no.
-```
-
-*The reply arrives before he finishes typing. There is no typing indicator, no read receipt, and no second message. The presence dot stays green. The window closes itself.*
-
-*Bro delusion, immediately after:*
-- **Chadwick**: *"Her router's down. That's all that is. European infrastructure, bros."*
-- **Lord Pilsner**: *"An away message means she's BUSY, not uninterested. FlagMan covered this. That's yellow at worst."*
-- **Bradley**: *"'Received automated European correspondence.' I'm counting it."*
-
-### Post-Cure Callback (Coin equipped) — **auto-reply only**
-
-*The re-attempt with `item_gold_circle_coin` equipped. Same window, same position, same timestamp, different body text. **The sting lands first** — this is the whole reason she gets a callback at all.*
-
-```
-💬 Miss Morphine  [auto-reply · 04:04]
-   ╔════════════════════════════╗
-   ║   AWAY  FROM  KEYBOARD     ║
-   ╚════════════════════════════╝
-   the gold circle has been noted in ur file.
-   ur file is two pages now.
-   thank u for continuing to beta test.
-   ( ˘_˘ )  still no.
-```
-
-*It is an away message. It mentions an object she has no logged way of knowing about. Both of those things are true at once and the game never comments on it.*
-
-*The window closes itself. Then — after an interval the game deliberately never specifies and never displays a timer for — it opens again, at the same fixed screen position, with the original trigger string, verbatim, unchanged:*
-
-```
-💬 Miss Morphine: "💊Wanna vibe IRL?💊"
-```
-
-*There is no explanation, no reversal line, no "actually," and no acknowledgement that anything was refused four seconds or four nights ago. Accepting resolves the encounter and the Chronicles entry exactly as it always would have. **Whether an away message was overridden by someone, or whether the same scheduled pop-up simply came around again on a loop that never had an opinion in the first place, is not established anywhere and never will be.** Both readings are fully supported by the text and neither is confirmed.*
-
-*Morning. A neon-lit room. Y2K tech, VHS tapes, expired party pills. She is gone. On the table: the USB, and a note typed except for the sign-off.*
-
-> **"Thanks for beta testing my social experiment. again. - M"**
-
-*Bro delusion, immediately after:*
-- **Lord Pilsner**: *"Her router came BACK, bros. She was never gone. FlagMan calls that a green flag with latency."*
-- **Chadwick**: *"She reached out again. Unprompted. We're a repeat engagement."*
-- **Bradley**: *"'Repeat European engagement.' That's a whole different tier of bio."*
+**Two constraints travel with this entry and bind wherever it is authored:** her refusal is an ICQ auto-reply and nothing else — no location, no visit, no cutaway, no third party, no scene with her in it — and the is-she-real ambiguity is never resolved in any of the four states. See Development Notes → THE BINDING RULE.
 
 ### Callback Dialogue (Return Visits)
 
@@ -398,7 +349,7 @@ She gates the USB, and the USB gates an optional Sinfonia chain. Nothing on the 
 - Practical guardrails enforcing the rule: no character sprite in any state; no spoken VO; no NPC who claims to have met her in person; no scene in which the party is in a room with her; the Kavarna file stays open forever; the USB stays `— ???`
 - All Chronicles canon is harvested: the `💊Wanna vibe IRL?💊` ICQ trigger, the neon-lit Y2K room with VHS tapes and expired party pills, her absence, the note verbatim, the **Inspired** buff (+Charm/Crit), the **Discarded USB — ???**, the optional Sinfonia chain if kept, and both canonical ICQ lines verbatim. Darkweb Dossier canon is harvested for register, ASCII maximalism, "premium experiences," and the profile picture. Cyberspace Kavarna canon is harvested for the Digital Trail file, whose established answer — "it's complicated" — is the correct and final answer forever
 - The Sinfonia USB chain is referenced as a **pointer only**. This file does not spec it and must not be read as having done so
-- The Herp rejection and post-cure callback are new content owned by this profile. `nothingisgettingthrough.md` should point at this file rather than duplicate the text — and should stage nothing, since there is nothing to stage
+- **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Her auto-replies live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Miss Morphine"; this file and `nothingisgettingthrough.md` both point at it, neither duplicates the text, and neither stages anything, since there is nothing to stage
 - Her rejection being the only unstaged one in the questline is intentional structure, not an omission. If a reviewer flags it as thin, that is the joke working
 - The `04:04` timestamp is a Y2K-era 404 gag. Never explain it in-game
 

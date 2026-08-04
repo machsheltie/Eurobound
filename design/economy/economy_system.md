@@ -39,16 +39,36 @@ SOVS presentation should read like a private bank that was nationalized by a sta
 
 It is never *funny on purpose*. It is funny because it is extremely serious about a currency the party spends on shots.
 
-### 1.3 The € display glyph (binding rule)
+### 1.3 Notation — SUPERSEDED BY AUTHOR RULING (2026-08-01)
 
-**€ is SOVS's display glyph.** SOVS is pegged to and rendered with the € sign.
+> **⚠️ The former "the euro sign is SOVS's display glyph" rule is DEAD. It was overridden by direct author ruling on 2026-08-01:**
+> *"Every. Country. Operates. On. Sovs. Not euros. We do not deal with exchanges of currency between areas. The whole game? Sovs."*
 
-- **Every existing € price in canon is already a SOVS amount.** They are valid as written.
-- **There is no repo-wide price retrofit and never will be.** No € figure is ever rewritten into a new notation.
-- Prices in world text, item files, shop tables, and dialogue read `€40`. The **wallet ticker** — and only the wallet ticker, plus formal SOVS instruments — reads `SOVS`.
-- Writers add prices in `€` exactly as before. Nothing changes for content authors.
+**The euro sign does not appear anywhere in the game.** Not as a glyph, not as a display convention, not in world text, not in the wallet, not as a commissioned sprite. `_sorting/Design/Economy/currency.md` is the only file in the repo permitted to render the forbidden forms, and only to name them.
+
+- Prices in world text, item files, shop tables, dialogue and UI read **`40 Sovs`** (prose) or **`40 SOVS`** (signage, menus, price boards, all-caps contexts). Singular is `1 Sov` / `1 SOV`.
+- **The repo-wide retrofit has been executed** (2026-08-01): 4,215 conversions across 330 files. The previous rule forbidding it no longer applies.
+- **Writers add prices in Sovs.** Never author a euro sign, `EUR`, or "euro(s)" as money.
+- **The symbol is the word. There is no Sov glyph.** Art specs must letter `SOVS`, never commission a currency mark. Price tiers use `S` / `SS` / `SSS` (cheap / mid / expensive) — see §1.3a.
+- Full canon: `_sorting/Design/Economy/currency.md`.
+
+**Koruna does not exist.** This is not a real continent and there is no koruna. Any surviving koruna/Kč reference is a defect (Lane R owns elimination). The same now applies to euros.
 
 **Koruna does not exist.** This is not a real continent and there is no koruna. Any surviving koruna/Kč reference is a defect (Lane R owns elimination).
+
+### 1.3a Price-tier marks (binding — art and UI)
+
+Some shops rank goods by expense rather than printing a figure (bargain-bin tags, menu boards, market stalls). Because there is no currency glyph, tiers are lettered:
+
+| Tier | Mark | Reads as |
+|---|---|---|
+| Cheap | `S` | one Sov-capital |
+| Mid | `SS` | two |
+| Expensive | `SSS` | three |
+
+- Block capitals in the location's own display face; no coin art, no pips, no repeated symbol.
+- Three capitals fit a 32x32 sprite cell at ~8px per character. A tier tag never needs more than 32x32.
+- **A tier mark is not a price.** Where an exact figure is shown it is always `N SOVS` in full.
 
 ### 1.4 No friction on routine purchases (binding rule)
 
@@ -70,7 +90,7 @@ A SOVS purchase is: select, pay, done. If a build introduces friction here, that
 
 | Segment | Share | Currency | Where |
 |---|---|---|---|
-| **Official economy** | ~90% | SOVS (`€`) | Shops, transit, lodging, clinics, venues, restaurants, licensed vendors, tips |
+| **Official economy** | ~90% | SOVS | Shops, transit, lodging, clinics, venues, restaurants, licensed vendors, tips |
 | **Back-alley economy** | ~10% | Volatile darknet shitcoins | Off-grid vendors in alleys, service corridors, basements, unlisted stalls, after-hours markets |
 
 The 10% is not a shop tier — it is a *parallel* market with different goods. Back-alley vendors do not sell better potions. They sell things the official economy will not carry at all: exclusive, overpowered, or progress-skipping items (Gold-Thread Fanny Pack, VIP Backstage Pass, Illegal Energy Drinks; full win-catalog in `shitcoin_master_pool.md`).
@@ -253,7 +273,7 @@ coin_reliability(coin_id) -> float  # deterministic: hash(economy_seed, coin_id)
 | `legacy_vault_seen_intro` | bool | `false` | Gates the first-open Legacy Vault modal to a single showing |
 | `legacy_vault_secured_count` | int | 0 | Feeds the `[N of ∞]` progress counter (see `wallet_ui.md`) |
 | `vault_certificates_owned` | Array | `[]` | Dead-coin certificates held; each entry carries `coin_id` for asset/QR lookup |
-| `sovs_balance` | int | starting value | Displayed with `€`; ticker label reads `SOVS` |
+| `sovs_balance` | int | starting value | Displayed as a bare numeral; the `SOVS` ticker label carries the unit. **No currency glyph — the symbol is the word.** |
 
 ### 8.3 Roster rotation hooks
 

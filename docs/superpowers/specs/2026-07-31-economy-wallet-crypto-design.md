@@ -37,20 +37,20 @@ the joke.
    digital fiat-crypto used for ~90% of standard transactions (tickets, doctors, tips, lodging).
    Tone: high-society pretension meets sterile European bureaucracy. **No gas fees or random UI
    penalties on routine purchases** — core transactions stay clean, frictionless, predictable.
-2. **€ is SOVS's display glyph.** SOVS is pegged to and displayed with the € sign — the eurozone
-   ate itself and what crawled out still uses the symbol. **All existing € prices in canon remain
+2. **SUPERSEDED 2026-08-01 by author ruling — the euro display-glyph rule is dead.** The whole game runs on Sovs and the euro sign appears nowhere; see `_sorting/Design/Economy/currency.md`. (Historical text follows for context only.) ~~SOVS is pegged to and displayed with the euro sign — the eurozone~~
+   ate itself and what crawled out still uses the symbol. **All existing euro prices in canon remain
    valid as-written** (they ARE SOVS amounts); the wallet ticker reads SOVS. No repo-wide price
    retrofit.
 3. **Koruna does not exist.** This is not "real" Europe. The koruna-retrofit list (Lane R):
-   - `zdenka.md` price-ladder greeting (canon-locked line → re-locked in € /SOVS terms; her
+   - `zdenka.md` price-ladder greeting (canon-locked line → re-locked in euro/SOVS terms; her
      "40 if you go now" structure and cheapest-cure-on-the-beach guarantee survive verbatim in
      the new denomination)
-   - `trivia_champ_badge_item.md` trinket-cart kid row ("10 koruna" → €)
+   - `trivia_champ_badge_item.md` trinket-cart kid row ("10 koruna" → euro)
    - `bohemian_riviera.md` + `bohemian_riviera_npcs.json` koruna/Kč references
    - "SuperKoruna Value Hypermarket" world brand → renamed (implementer proposes in-world name,
      author veto at review; must keep the discount-hypermarket joke)
    - Lane W-class sweep for any remaining koruna/Kč in tracked files; drafts ledgered to adoption
-   - `bohemian_riviera_items.json` currency-wording line updated to the SOVS/€ canon
+   - `bohemian_riviera_items.json` currency-wording line updated to the SOVS/euro canon
 4. **10% back-alley economy:** shady off-grid vendors refuse SOVS ("accounts frozen by EU
    regulators") and accept only volatile darknet shitcoins, purchased at adjacent exchange kiosks.
 

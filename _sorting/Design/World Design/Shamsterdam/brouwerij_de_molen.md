@@ -17,7 +17,7 @@
 - **Stat Requirements**: Mild Constitution recommended (spinning room + alcohol)
 - **Prerequisite**: The Blarney Trap Bottle Opener (Publandia) — required to access ANY brewery tour location
 - **Previous Location Requirements**: None (accessible once expansion installed)
-- **Special Conditions**: Must take short "scenic" train ride from central Shamsterdam (€8 round trip, views are... fields)
+- **Special Conditions**: Must take short "scenic" train ride from central Shamsterdam (8 Sovs round trip, views are... fields)
 
 ### Bottle Opener Requirement
 - **Prerequisite**: The Blarney Trap Bottle Opener (Publandia) — required for brewery tour access
@@ -25,14 +25,14 @@
 - **Design**: Miniature windmill with rotating blade arms, bottle opener integrated into the windmill base
 - **Material**: Brushed copper with grain-gold accents
 - **Inscription**: "Respect The Grain"
-- **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for €22
+- **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for 22 Sovs
 - **Special Feature**: Blade arms actually rotate when you spin the opener
 - **Check Point**: Hendrik checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Windmill Opener**: Can explore and tour, but cannot receive stamp or purchase Windmill Wit
 
 **Hendrik's Opener Check**:
-- *With Blarney Trap Opener, No Windmill Opener*: "The shamrock opener. Seamus's network. You have access to the tour. But the windmill opener — you must EARN it. Defeat my golem. Or €22. The grain demands respect."
+- *With Blarney Trap Opener, No Windmill Opener*: "The shamrock opener. Seamus's network. You have access to the tour. But the windmill opener — you must EARN it. Defeat my golem. Or 22 Sovs. The grain demands respect."
 - *With Both Openers*: "You carry the windmill. This means you understand — or you paid. Either way, you've committed to the spin. The Windmill Wit awaits. May the grain guide your steps."
 - *Without Blarney Trap Opener*: "The Continental Trail has rules. Even windmills bow to tradition. No Publandia opener, no brewery tour access. Return when properly credentialed."
 
@@ -65,10 +65,10 @@
   - Coat hooks (for the tasting flight aftermath)
   - Branded merchandise: EVERYTHING
 - **The Gift Shop Section**:
-  - "Molen" branded glasses, €18 (the beer is €6)
-  - Miniature windmill souvenirs, €25 (made overseas, painted here)
-  - Brewmaster's book: "Respect The Grain" €35 (self-published, unreadable)
-  - T-shirts: "I SURVIVED THE SPIN" €30 (they know)
+  - "Molen" branded glasses, 18 Sovs (the beer is 6 Sovs)
+  - Miniature windmill souvenirs, 25 Sovs (made overseas, painted here)
+  - Brewmaster's book: "Respect The Grain" 35 Sovs (self-published, unreadable)
+  - T-shirts: "I SURVIVED THE SPIN" 30 Sovs (they know)
 
 ### Interior Visuals — First Floor (Brewing Operations)
 - **Layout**: Circular, dominated by massive central grinding mechanism connected to windmill
@@ -122,7 +122,7 @@
 - **Sensitivity Considerations**: Targets tourist behavior and brewery pretension, not Dutch heritage or legitimate craft brewing
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Charging €40 for a tasting flight in a building designed to maximize disorientation
+- **Primary Vice**: Charging 40 Sovs for a tasting flight in a building designed to maximize disorientation
 - **City-Specific Comedy Operations**: The windmill genuinely works, the dizziness genuinely accumulates, the liability waivers are comprehensive
 - **Buffoon Exploitation**: Bros think they're having artisanal experience, they're being spun while drinking
 - **Comedy of Errors**: Each beer makes the spinning more noticeable, each floor makes it worse
@@ -147,7 +147,7 @@
 
 ## Gameplay Mechanics
 ### Brewery Tour Flow
-1. **Ground Floor**: Purchase tour (€25), receive tasting token, browse gift shop (trap)
+1. **Ground Floor**: Purchase tour (25 Sovs), receive tasting token, browse gift shop (trap)
 2. **First Floor**: View brewing operations, learn history, floor vibrates
 3. **Boss Encounter**: Yeast Golem on grinding floor
 4. **Second Floor (post-boss)**: Tasting room, flight consumption, brewmaster lecture
@@ -271,7 +271,7 @@
   - "The final beer, the Windmill Wit... this is 15 years of my LIFE in a glass. I hope you are worthy."
   - *after combat* "You have defeated the Golem. It is made of our grain, our yeast, our SOUL. You have earned your place."
 
-**Tour Guide Eva**
+**Tour Guide Tessa**
 - **Role**: Manages tour flow, handles panicking tourists, damage control
 - **Appearance**: Young Dutch woman, brewery polo, practical shoes (for catching people)
 - **Background**: University student, summer job, has developed excellent reflexes
@@ -290,8 +290,8 @@
 - **Dialogue**:
   - "Welcome to— you're doing the tour first? Okay. See you in two hours. I'll be here. I'm always here."
   - *on exit* "How was the tour? The spinning? Yes. Would you like a branded glass? The flight was in branded glasses. You could buy those glasses."
-  - "The book is thirty-five euros. Hendrik wrote it. I've read it. I mean, I had to. We all had to. It's... comprehensive."
-  - "Motion sickness pills? Three euros. Water? Two euros. Both? Five euros. We call it the 'Survivor Pack.'"
+  - "The book is thirty-five Sovs. Hendrik wrote it. I've read it. I mean, I had to. We all had to. It's... comprehensive."
+  - "Motion sickness pills? Three Sovs. Water? Two Sovs. Both? Five Sovs. We call it the 'Survivor Pack.'"
 
 ### Visitor NPCs (Atmospheric)
 
@@ -372,7 +372,7 @@
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Room spin audio effect increasing through tasting flight
-- **Character Voice Direction**: Hendrik's reverent baritone, Eva's practical efficiency
+- **Character Voice Direction**: Hendrik's reverent baritone, Tessa's practical efficiency
 - **Environmental Comedy**: Bachelor party stumbling sounds, German blogger's approving murmurs
 - **Boss Audio**: Yeast Golem rising (bread baking sounds, reversed and slowed)
 
@@ -385,7 +385,7 @@
   - Tasting room with flight setup
   - Brewery equipment (copper vats, grain storage)
   - Gift shop merchandise displays
-  - Staff NPC sprites (Hendrik, Eva, Bram)
+  - Staff NPC sprites (Hendrik, Tessa, Bram)
   - Visitor NPC sprites (Beer Blogger, Bachelor Party, Instagram Couple, Repeat Visitor)
   - Countryside/train exterior elements
 - **Animation Requirements**:
@@ -481,4 +481,4 @@
 
 ---
 
-*Brouwerij de Molen: €25 to get dizzy in a spinning building while someone lectures you about grain, fight bread, and take a photo you'll describe as "worth it" for unclear reasons.*
+*Brouwerij de Molen: 25 Sovs to get dizzy in a spinning building while someone lectures you about grain, fight bread, and take a photo you'll describe as "worth it" for unclear reasons.*

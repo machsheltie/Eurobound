@@ -262,7 +262,7 @@
 
 **Rewards - Path A:**
 - **"Roundabout Survivor" Title** - +2 Bravado, permanent
-- **"Seamus's Respect"** - Rental car discount (still overpriced)
+- **"Fergus's Respect"** - Rental car discount (still overpriced)
 - **Circling PTSD** - Bros flinch whenever they see a circular road sign
 - **GPS Trust Issues** - Bradley now insists on paper maps only
 
@@ -360,7 +360,7 @@
 
 ### NPC Callbacks
 - **Any Publandia driver:** "Oh, you're the Americans from the roundabout! Did you ever get out?"
-- **Seamus:** "Ah, the Cloverleaf veterans. Longest survival time I've seen. Well, except for the '87 couple."
+- **Fergus:** "Ah, the Cloverleaf veterans. Longest survival time I've seen. Well, except for the '87 couple."
 - **Other tourists:** "Wait, you ESCAPED? How??"
 
 ### Easter Eggs
@@ -429,13 +429,13 @@
 
 ### Prerequisites
 - Arrive in Publandia
-- Have enough gold for car rental (€200)
+- Have enough gold for car rental (200 Sovs)
 
 ### Unlocks
 - **"Road Warrior" achievement** - Used car for something successfully
 - **The 1987 Couple** appear as minor NPCs later
 - **Bradley's roundabout girlfriend** appears in epilogue slides
-- **Seamus becomes recurring character** - Offers other bad transportation advice
+- **Fergus becomes recurring character** - Offers other bad transportation advice
 
 ### Cross-References
 - Roundabout visible from airplane when leaving Publandia

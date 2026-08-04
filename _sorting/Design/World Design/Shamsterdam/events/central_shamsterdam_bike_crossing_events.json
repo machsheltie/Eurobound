@@ -175,7 +175,7 @@
           {"text": "You're going to walk? Across THAT?", "response_options": ["yes_confident", "maybe_tips", "rent_bike"]},
           {"option": "yes_confident", "response": "Bold. Foolish. But bold."},
           {"option": "maybe_tips", "response": "Watch the patterns. Don't sprint. The island is a trap, not safety."},
-          {"option": "rent_bike", "response": "Smart. €15. Now YOU'RE the problem."}
+          {"option": "rent_bike", "response": "Smart. 15 Sovs. Now YOU'RE the problem."}
         ]
       },
       "after_failure": {
@@ -223,7 +223,7 @@
         "trigger": "stand_in_red_zone_3_seconds",
         "sequence": [
           {"action": "officer_approaches"},
-          {"dialogue": "This is a bike lane. You are not a bike. That's €95."},
+          {"dialogue": "This is a bike lane. You are not a bike. That's 95 Sovs."},
           {"action": "fine_applied", "amount": 95}
         ]
       },
@@ -231,7 +231,7 @@
         "trigger": "cause_cyclist_to_swerve",
         "sequence": [
           {"action": "officer_approaches"},
-          {"dialogue": "You're blocking traffic. Yes, on foot. Still illegal. €140."},
+          {"dialogue": "You're blocking traffic. Yes, on foot. Still illegal. 140 Sovs."},
           {"action": "fine_applied", "amount": 140}
         ]
       },
@@ -239,7 +239,7 @@
         "trigger": "take_selfie_in_crossing",
         "sequence": [
           {"action": "officer_approaches"},
-          {"dialogue": "No photographs in crossing. Safety regulation. €50."},
+          {"dialogue": "No photographs in crossing. Safety regulation. 50 Sovs."},
           {"action": "fine_applied", "amount": 50}
         ]
       }

@@ -4,7 +4,7 @@
 This document provides exact specifications for all PNG files needed for the Opera House Plaza location in Sinfonia — the most cultured place in Europe to witness a horse-related disaster. Each sprite sheet includes pixel-perfect coordinates, color specifications, and animation requirements for this grand baroque plaza where 400 years of imperial self-regard meets a drunk Fiaker driver, a runaway horse, and the American tourists who make everything worse. The plaza is ground zero for the Fiaker Fiasco quest.
 
 **Location ID:** `sinfonia_imperial_opera_house_plaza_01`
-**Theme:** Imperial baroque grandeur as a tourist commodity — high culture that charges €7 extra for the "historic view"
+**Theme:** Imperial baroque grandeur as a tourist commodity — high culture that charges 7 Sovs extra for the "historic view"
 **Zone:** Imperial Square District
 **Hours:** Always accessible (Day 10:00–17:00 bustling cultural; Evening 17:00–22:00 refined formal; Night 22:00–02:00 decadent shadowy)
 **Primary Function:** Quest hub / social space — Fiaker Fiasco initiation and resolution, premium tourist-vendor economy, fountain landmark interactions, street performer recovery point
@@ -225,7 +225,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Frames:** 6
 - **Pattern:** Frame 1 → 6, no loop, hold final debris frame
 - **Trigger:** Gustav collision during chase
-- **Purpose:** First property-damage beat; introduces the running € damage gag
+- **Purpose:** First property-damage beat; introduces the running SOVS damage gag
 - **Audio Sync:** Crash plus cash-register ching on frame 4
 - **Mobile Optimization:** Skip intermediate frames 2 and 4 on low-end
 
@@ -271,12 +271,12 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 |---------|----------|------|-------------|
 | Panic tremolo icon | set at sheet layout | 24x24 | Vibrating violin glyph over Hans-Jürgen when the panic stinger fires |
 | Cello-note stare vignette | set at sheet layout | 32x16 | Low-note glyph accompanying Gustav's judgmental stare |
-| Crash/ching burst | set at sheet layout | 32x32 | Impact star + € glyph for every property-damage sound |
+| Crash/ching burst | set at sheet layout | 32x32 | Impact star + damage numeral for every property-damage sound. **No currency glyph** — the word `SOVS` is lettered in the damage popup, not here. ⚠️ 32x32 cannot hold `SOVS` beside the star; widen to 48x32 if the word must appear in the burst itself. |
 | Hoofbeat ripples | set at sheet layout | 24x12 | Ground pulse marks during Gustav's off-screen trot audio |
 
 ### Colorblind Considerations:
 - Fiaker queue posts numbered, not color-coded; Hans-Jürgen's post reads "#3" in text
-- Damage popups pair the € numeral with an impact-star shape, never color alone
+- Damage popups pair the numeral and the word `SOVS` with an impact-star shape, never color alone
 - Touch zones minimum 48px for all interactive elements (per location performance spec)
 
 ---
@@ -367,7 +367,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - Neptune's green patina vs. freshly regilded opera statues: the city polishes what tourists photograph
 - Numbered Fiaker queue posts formalize even the horse-carriage hustle; Hans-Jürgen's is #3
 - "The Magic Flute" poster foreshadows the backstage disaster two locations later
-- Scalper lurking at €200–500 for €40 tickets — the seedy underbelly wears a nice coat
+- Scalper lurking at 200 Sovs–500 for 40 Sovs tickets — the seedy underbelly wears a nice coat
 
 ### Character Integration Notes:
 - Hans-Jürgen and Gustav are the emotional axis; both need readable silhouettes at plaza-wide zoom

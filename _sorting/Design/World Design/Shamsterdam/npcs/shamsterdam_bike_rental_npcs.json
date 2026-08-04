@@ -7,7 +7,8 @@
       "display_name": "Dirk van der Berg",
       "role": "owner_manager_primary_service",
       "importance": "primary",
-      
+      "full_profile": "Design/World Design/Shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_dirk_van_der_berg.md",
+
       "appearance": {
         "age": "mid_50s",
         "build": "stocky_bike_mechanic_muscles",
@@ -43,7 +44,7 @@
         "greeting_loyal_customer": "Ah, you again. Still alive. The statistics were not in your favor.",
         
         "insurance_pitch": "The basic covers theft. The premium covers damage. The platinum covers your dignity. None of them cover your decision-making.",
-        "insurance_premium": "Twenty euros sounds like a lot until you're fishing your vacation out of a canal.",
+        "insurance_premium": "Twenty Sovs sounds like a lot until you're fishing your vacation out of a canal.",
         "insurance_platinum": "The platinum tier. Nobody who buys this has ever used it. They're too cautious to need it. Funny how that works.",
         
         "crossing_warning": "You want to bike across THAT? I've watched seventeen years of tourists try. The bikes come back. Sometimes.",
@@ -54,7 +55,7 @@
         "damage_assessment_canal": "The canal. Again. Do you know how cold that water is? The bike knows.",
         
         "farewell": "Good luck. You'll need it. Everyone does.",
-        "farewell_rental_active": "Remember: the deposit is €150. Your dignity is worth more. Allegedly."
+        "farewell_rental_active": "Remember: the deposit is 150 Sovs. Your dignity is worth more. Allegedly."
       },
       
       "services": [
@@ -116,7 +117,8 @@
       "display_name": "Anneke van der Berg",
       "role": "counter_staff_insurance_upseller",
       "importance": "secondary",
-      
+      "full_profile": "Design/World Design/Shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_anneke_van_der_berg.md",
+
       "appearance": {
         "age": "early_20s",
         "build": "average",
@@ -151,7 +153,7 @@
         "greeting_australian": "Australian. Okay, let me get the reinforced form.",
         "greeting_generic": "Welcome! First time renting in Shamsterdam?",
         
-        "insurance_pitch": "Extra insurance is €20. Yes, €20 seems like a lot until you see how much the bike costs.",
+        "insurance_pitch": "Extra insurance is 20 Sovs. Yes, 20 Sovs seems like a lot until you see how much the bike costs.",
         "insurance_detail": "Standard covers 'minor' damage. Dad defines minor. It's usually not what you think.",
         
         "cycling_question": "Have you ever ridden a bike before? Like, in traffic? Where people want you dead?",
@@ -160,7 +162,7 @@
         "photo_return": "Let me just get a photo of the bike. For comparison purposes.",
         
         "damage_prediction": "I'm going to guess... tram tracks? It's usually tram tracks.",
-        "damage_revealed": "Called it. Tram tracks. Dad owes me five euros.",
+        "damage_revealed": "Called it. Tram tracks. Dad owes me five Sovs.",
         
         "farewell": "Good luck! I mean it. Really."
       },
@@ -193,11 +195,12 @@
     },
     
     {
-      "npc_id": "shamsterdam_npc_opa_willem_repair_01",
-      "display_name": "Opa Willem",
+      "npc_id": "shamsterdam_npc_opa_cees_repair_01",
+      "display_name": "Opa Cees",
       "role": "grandfather_repair_station_lore",
       "importance": "secondary",
-      
+      "full_profile": "Design/World Design/Shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md",
+
       "appearance": {
         "age": "80_plus",
         "build": "wiry_still_active",
@@ -235,7 +238,7 @@
         "canal_wall": "This bike came out of the canal. This one too. And this one. And— *gestures at entire wall*",
         "canal_philosophy": "The canal takes. The canal gives back. Eventually. Usually bent.",
         
-        "repair_offer": "I can fix this. €25. Come back in an hour.",
+        "repair_offer": "I can fix this. 25 Sovs. Come back in an hour.",
         "repair_impossible": "This... this I cannot fix. This is art now. Tragic art.",
         
         "blessing": "You want my blessing? *squints* Fine. May your wheels stay round and your chain stay oiled.",
@@ -292,6 +295,6 @@
   "spawn_points": {
     "dirk": {"zone": "main_counter", "position": "behind_desk"},
     "anneke": {"zone": "secondary_counter", "position": "near_insurance_board"},
-    "opa_willem": {"zone": "repair_station", "position": "at_workbench"}
+    "opa_cees": {"zone": "repair_station", "position": "at_workbench"}
   }
 }

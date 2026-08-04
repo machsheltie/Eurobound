@@ -22,7 +22,7 @@
 - **Normal Exit**: Walk away (with or without purchase)
 - **Completion Requirements**: N/A (vendor location)
 - **Failure States**: "Musically Offensive" — temporary ban (10 min) for humming copyrighted tunes
-- **Progressive Unlocks**: "Patron of the Arts" after €100 spent (access to rare manuscripts)
+- **Progressive Unlocks**: "Patron of the Arts" after 100 Sovs spent (access to rare manuscripts)
 
 ## Visual Design
 ### Cart Description
@@ -84,27 +84,27 @@ The cart exists to test musical knowledge:
 **Standard Items**:
 | Item | Price | Effect | Description |
 |------|-------|--------|-------------|
-| Basic Score | €5 | +5% Rhythm game timing | Common compositions |
-| Practice Sheet | €8 | +10% Rhythm game timing (one battle) | Single-use |
-| Tempo Guide | €12 | Reveals enemy attack patterns | See the beat coming |
-| Conductor's Notes | €15 | +15% Rhythm damage | Detailed annotations |
-| Harmony Chart | €20 | Party rhythm sync +10% | Coordinate attacks |
+| Basic Score | 5 Sovs | +5% Rhythm game timing | Common compositions |
+| Practice Sheet | 8 Sovs | +10% Rhythm game timing (one battle) | Single-use |
+| Tempo Guide | 12 Sovs | Reveals enemy attack patterns | See the beat coming |
+| Conductor's Notes | 15 Sovs | +15% Rhythm damage | Detailed annotations |
+| Harmony Chart | 20 Sovs | Party rhythm sync +10% | Coordinate attacks |
 
 **Premium Items** (Patron of the Arts status):
 | Item | Price | Effect | Description |
 |------|-------|--------|-------------|
-| Lost Manuscript | €50 | +25% Rhythm game timing (permanent passive) | Rare find |
-| Forbidden Opus | €75 | Unlocks secret rhythm pattern | Hidden techniques |
-| The Unfinished Symphony | €100 | Massive buff but ends randomly | Risky power |
-| Original Composition | €150 | Custom attack pattern | Unique to player |
+| Lost Manuscript | 50 Sovs | +25% Rhythm game timing (permanent passive) | Rare find |
+| Forbidden Opus | 75 Sovs | Unlocks secret rhythm pattern | Hidden techniques |
+| The Unfinished Symphony | 100 Sovs | Massive buff but ends randomly | Risky power |
+| Original Composition | 150 Sovs | Custom attack pattern | Unique to player |
 
 **Consumable Buffs**:
 | Item | Price | Effect | Duration |
 |------|-------|--------|----------|
-| Crescendo Script | €10 | Damage increases each turn | One battle |
-| Diminuendo Draft | €10 | Enemy damage decreases each turn | One battle |
-| Fermata Fragment | €15 | Pause enemy for one turn | Single use |
-| Sforzando Scrap | €20 | One attack deals 3x damage | Single use |
+| Crescendo Script | 10 Sovs | Damage increases each turn | One battle |
+| Diminuendo Draft | 10 Sovs | Enemy damage decreases each turn | One battle |
+| Fermata Fragment | 15 Sovs | Pause enemy for one turn | Single use |
+| Sforzando Scrap | 20 Sovs | One attack deals 3x damage | Single use |
 
 ### The Humming Mini-Game
 
@@ -130,7 +130,7 @@ The cart exists to test musical knowledge:
 
 ### Patron of the Arts System
 
-**Unlocked After**: €100 total spent
+**Unlocked After**: 100 Sovs total spent
 
 **Benefits**:
 - Access to premium manuscript inventory
@@ -246,7 +246,7 @@ The cart exists to test musical knowledge:
 
 ### Achievement Track
 - **"First Purchase"**: Buy any item
-- **"Patron of the Arts"**: Spend €100 total
+- **"Patron of the Arts"**: Spend 100 Sovs total
 - **"Passed the Test"**: Correctly identify a piece
 - **"The Humming Champion"**: Pass all humming challenges
 - **"Paper Avalanche"**: Knock over a manuscript pile
@@ -301,31 +301,43 @@ The cart exists to test musical knowledge:
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (4 PNGs)
-- cart_main.png - 384x384 - Manuscript-laden cart
-- paper_piles.png - 192x256 - Stacked sheet music
-- metronome_detail.png - 64x96 - Disapproving timekeeper
-- musikgasse_backdrop.png - 512x256 - Street setting
+> **Authority: `PNG_Assets/The_Composers_Cart_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (4 PNGs)
-- herr_notenschreiber.png - 64x96 - Vendor (neutral)
-- herr_notenschreiber_approval.png - 64x96 - Rare satisfaction
-- herr_notenschreiber_pain.png - 64x96 - Bad humming reaction
-- herr_notenschreiber_hope.png - 64x96 - Good humming reaction
+### Required PNG Files (7 sheets)
 
-### UI/Item Sprites (12 PNGs)
-- basic_score.png - 32x48 - Standard item
-- practice_sheet.png - 32x48 - Consumable
-- tempo_guide.png - 32x48 - Pattern revealer
-- conductors_notes.png - 32x48 - Premium buff
-- harmony_chart.png - 32x48 - Party sync
-- lost_manuscript.png - 48x64 - Rare item
-- forbidden_opus.png - 48x64 - Secret unlock
-- unfinished_symphony.png - 48x64 - Risky power
-- crescendo_script.png - 32x32 - Battle consumable
-- fermata_fragment.png - 32x32 - Pause item
-- sforzando_scrap.png - 32x32 - Damage boost
-- patron_badge.png - 32x32 - Status indicator
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | composers_cart_tileset.png | 1024x512 |
+| 2 | composers_cart_props.png | 512x256 |
+| 3 | herr_notenschreiber.png | 384x288 |
+| 4 | composers_cart_npcs.png | 384x192 |
+| 5 | composers_cart_items.png | 256x256 |
+| 6 | composers_cart_effects.png | 256x192 |
+| 7 | composers_cart_ui.png | 256x288 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/The_Composers_Cart_PNG_Assets.md`.
+
+- `cart_main.png`
+- `paper_piles.png`
+- `metronome_detail.png`
+- `musikgasse_backdrop.png`
+- `herr_notenschreiber_approval.png`
+- `herr_notenschreiber_pain.png`
+- `herr_notenschreiber_hope.png`
+- `basic_score.png`
+- `practice_sheet.png`
+- `tempo_guide.png`
+- `conductors_notes.png`
+- `harmony_chart.png`
+- `lost_manuscript.png`
+- `forbidden_opus.png`
+- `unfinished_symphony.png`
+- `crescendo_script.png`
+- `fermata_fragment.png`
+- `sforzando_scrap.png`
+- `patron_badge.png`
 
 ---
 

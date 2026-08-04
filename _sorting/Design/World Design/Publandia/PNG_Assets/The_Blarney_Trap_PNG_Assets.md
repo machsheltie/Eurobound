@@ -139,7 +139,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | Bar Tip Jar (Empty) | (1408, 896) | 64x64 | Hopeful |
 | Bar Tip Jar (Coins) | (1472, 896) | 64x64 | Realistic |
 | Bar Tip Jar (Notes) | (1536, 896) | 64x64 | A good trad night happened |
-| Chalk Menu Board | (1600, 896) | 192x128 | "THE CRAIC — €8" in careful chalk Celtic lettering |
+| Chalk Menu Board | (1600, 896) | 192x128 | "THE CRAIC — 8 Sovs" in careful chalk Celtic lettering |
 | Bar Mats & Spill Decals | (1792, 928) | 256x96 | Branded mats, honest spills |
 | Spilled Pint Puddle Decal | (1280, 960) | 128x64 | Floor hazard, comedy prop |
 | Coaster Set | (1408, 960) | 128x64 | Four designs, all shamrocks |
@@ -213,11 +213,11 @@ assets/sprites/locations/publandia/the_blarney_trap/
 ### Standard Accommodation (First Floor):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Shared Dorm | (0, 0) | 384x256 | €35, 50% restoration, snoring NPCs included, "Embarrassed" risk visible in bunk spacing |
-| Street-Facing Single | (384, 0) | 320x256 | €55, 70% restoration — loud but atmospheric, craic audible until 3 AM |
-| Courtyard Single | (704, 0) | 320x256 | €70, 85% restoration — actually sleepable, less craic |
-| Street-Facing Double | (0, 256) | 384x256 | €75, bros can share, shamrock density: high |
-| Courtyard Double | (384, 256) | 320x256 | €90, better value, shamrock density: merciful |
+| Shared Dorm | (0, 0) | 384x256 | 35 Sovs, 50% restoration, snoring NPCs included, "Embarrassed" risk visible in bunk spacing |
+| Street-Facing Single | (384, 0) | 320x256 | 55 Sovs, 70% restoration — loud but atmospheric, craic audible until 3 AM |
+| Courtyard Single | (704, 0) | 320x256 | 70 Sovs, 85% restoration — actually sleepable, less craic |
+| Street-Facing Double | (0, 256) | 384x256 | 75 Sovs, bros can share, shamrock density: high |
+| Courtyard Double | (384, 256) | 320x256 | 90 Sovs, better value, shamrock density: merciful |
 | Shared Bathroom + Queue | (704, 256) | 320x256 | Character building; queue-forming NPC marks on the floor |
 
 ### Premium Suites (Second Floor):
@@ -353,19 +353,19 @@ assets/sprites/locations/publandia/the_blarney_trap/
 **File:** `regulars_and_crowd.png`
 **Dimensions:** 1024x512 pixels
 
-### The Craic Broker & Old Paddy:
+### The Craic Broker & Old Fergal:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Craic Broker Holding Court | (0, 0) | 96x128 | Age unclear, always present, probably lives here |
 | Craic Broker Leaning Deal | (96, 0) | 96x128 | "Work? Adventure? Trouble? I've got all three." |
 | Craic Broker Quest Handoff | (192, 0) | 96x128 | Paper sliding across the snug table |
 | Craic Broker Portrait | (288, 0) | 96x96 | Dialogue box version |
-| Old Paddy on His Stool | (384, 0) | 96x128 | Same stool, 40 years, end of the bar, always |
-| Old Paddy Storytelling | (480, 0) | 96x128 | Arms wide enough for the exaggeration |
-| Old Paddy Pint Request Lean | (576, 0) | 96x128 | "Buy an old man a pint, and I'll tell you about the time I..." |
-| Old Paddy Asleep Upright | (672, 0) | 96x128 | A skill, not an accident |
-| Old Paddy Portrait | (768, 0) | 96x96 | Unreliable historian face |
-| Old Paddy's Stool (Empty) | (864, 0) | 64x128 | Worn precisely to his shape — never sat in by anyone else |
+| Old Fergal on His Stool | (384, 0) | 96x128 | Same stool, 40 years, end of the bar, always |
+| Old Fergal Storytelling | (480, 0) | 96x128 | Arms wide enough for the exaggeration |
+| Old Fergal Pint Request Lean | (576, 0) | 96x128 | "Buy an old man a pint, and I'll tell you about the time I..." |
+| Old Fergal Asleep Upright | (672, 0) | 96x128 | A skill, not an accident |
+| Old Fergal Portrait | (768, 0) | 96x96 | Unreliable historian face |
+| Old Fergal's Stool (Empty) | (864, 0) | 64x128 | Worn precisely to his shape — never sat in by anyone else |
 | Real Regular (Post-11 PM) | (928, 0) | 96x128 | Arrives after the tourists sleep; never posts about it online |
 
 ### Tourist Crowd Variants:
@@ -664,7 +664,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | Two-Stage Pour Cue | (0, 224) | 64x64 | Progress ring with 119.5s countdown and surge icon — the pour/surge sound made visible, stage transitions marked |
 | Trad Music Notes | (64, 224) | 48x48 | Note bubbles pulsing from the music corner while the session plays |
 | Glass Clink Spark | (112, 224) | 48x48 | Clink glyph on every toast and pint touch |
-| Till Ring "€" Flash | (160, 224) | 48x48 | Euro burst on every transaction (Craic Tax pricing, visualized) |
+| Till Ring "SOVS" Flash | (160, 224) | 48x48 | Till burst on every transaction with the word `SOVS` lettered inside the ring — **the symbol is the word; no currency mark exists.** 48x48 holds four caps at ~10px. (Craic Tax pricing, visualized.) |
 | Laughter Eruption Burst | (208, 224) | 48x48 | "HA!" radiating lines when the crowd erupts |
 | Rain-on-Window Indicator | (256, 224) | 48x48 | Streak glyph in the window corner while rain audio plays |
 | Tourist Photo Flash Frame | (304, 224) | 48x48 | Camera-frame flash replacing the photo shutter sound |
@@ -750,9 +750,9 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | The Stoutworks Yeast Situation | Craic Broker Quest Handoff, quest notice cards, rumor board | Craic Broker side quest: "Yeast situation. Don't ask questions." Starts at the Snug or board |
 | Rival Trio Documentation | Rival Trio Silhouettes, quest notice cards, photo flash burst | Craic Broker side quest: document the rival trio's embarrassment |
 | Backroom Operations | Backroom interior, poker table, trivia-fight setup, Declan Backroom Nod | Unlicensed poker and trivia-fights unlock via Pub Regular or quest state |
-| Brewery Tour Origin | Bottle Opener Keychain (display + item), Passport (closed/spread/pages), Seamus Opener Pitch | Opener acquired via €15 purchase, Pint-Off win, or Pub Regular status; Passport Book given FREE with it; the continental sidequest begins here |
-| The Blarney Trap Stamp | Stamp sprite, Ink Press frames, Stamp Slam effect, Free Pint Voucher | Stamp requires Pint-Off win OR successful toast OR Pub Regular, with the opener in inventory; unlocks The Sweet Surrender at €8 |
-| Publandia Legendary Hangover | Legendary Hangover consumable, Publandia stamp page, progress bar | All 4 Publandia stamps collected → €50 ultimate consumable unlocks at any stamped location |
+| Brewery Tour Origin | Bottle Opener Keychain (display + item), Passport (closed/spread/pages), Seamus Opener Pitch | Opener acquired via 15 Sovs purchase, Pint-Off win, or Pub Regular status; Passport Book given FREE with it; the continental sidequest begins here |
+| The Blarney Trap Stamp | Stamp sprite, Ink Press frames, Stamp Slam effect, Free Pint Voucher | Stamp requires Pint-Off win OR successful toast OR Pub Regular, with the opener in inventory; unlocks The Sweet Surrender at 8 Sovs |
+| Publandia Legendary Hangover | Legendary Hangover consumable, Publandia stamp page, progress bar | All 4 Publandia stamps collected → 50 Sovs ultimate consumable unlocks at any stamped location |
 | NFT Hunt (Hidden) | POS Terminal Screen | One hidden acquisition via the Trap's POS terminal — unmarked hotspot, found not advertised |
 
 ### Cross-Location Dependencies:
@@ -783,7 +783,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 ### Character Integration Notes:
 - Seamus's welcome must read as both performance AND genuine — the red face, the permanent warmth, the wink; he is never a villain, he is a professional
 - The pour ritual frames are the sincerity peak: no comedy in F1-F8, total reverence, the joke is only in how long the bros have to wait
-- Old Paddy renders at slightly higher detail than the crowd blocks — he has been on that stool for 40 years and the wear on both should match
+- Old Fergal renders at slightly higher detail than the crowd blocks — he has been on that stool for 40 years and the wear on both should match
 - Tourist crowd stays cartoonier than staff and regulars: the satire punches at the visitors, never the hosts
 
 ---
@@ -796,7 +796,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 3. **The Shamrock Fireplace Selfie Spot** - Designated selfie spot in front of a mantel carrying a meaningful fraction of 847 shamrocks
 4. **The Passport Stamp Slam** - Emerald Celtic-knot harp stamp hitting the page, first stamp of the continental tour
 5. **The Decor Audit on Examine** - "Actual antiques: 2 (the mirror, one chair)" popping over a wall of manufactured heritage
-6. **Old Paddy's Stool** - Empty, worn precisely to one man's shape, 40 years deep
+6. **Old Fergal's Stool** - Empty, worn precisely to one man's shape, 40 years deep
 7. **The Joyce Suite** - A hotel room deliberately laid out to be confusing, photographed in bafflement
 
 ### Quote Potential:
@@ -888,7 +888,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | World Consistency (no real city names) | ✅ | Publandia only; The Craic Tax zone; no real-world city named anywhere in the asset set |
 | Cultural Specificity | ✅ | Dublin tourist-district pub economy, Temple Bar pricing satire, Irish pub global brand — rendered in Celtic lettering, knotwork, GAA decor, and the sacred pour |
 | Satirical Targets Appropriate | ✅ | Punches at tourist expectations and the "Irish Experience" package, never at Irish hospitality — staff and regulars render with dignity, tourists get the cartoon treatment |
-| Seedy Underbelly Present | ✅ | Craic Tax pricing (€8 pints, honest fine print) and the Backroom's unlicensed operations — poker of questionable legitimacy, fights disguised as trivia nights |
+| Seedy Underbelly Present | ✅ | Craic Tax pricing (8 Sovs pints, honest fine print) and the Backroom's unlicensed operations — poker of questionable legitimacy, fights disguised as trivia nights |
 | Gameplay Value Established | ✅ | Primary hub: rest/restoration tiers, auto-save, quest board, pint-off rhythm game, toast builder, round obligations, Pub Regular progression, Brewery Tour origin |
 | Technical Feasibility | ✅ | 8 sheets, all ≤2048, coordinate-mapped; on-demand room streaming; one-keyframe pour hold; Godot 4.x CPUParticles2D throughout |
 | Mobile Performance Budget | ✅ | 60 FPS target, 18 draw calls max, 40 MB memory cap, 20-particle limit with per-system caps documented |

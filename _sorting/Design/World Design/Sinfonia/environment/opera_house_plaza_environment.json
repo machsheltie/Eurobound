@@ -190,19 +190,19 @@
       {
         "method": "terrace_espresso",
         "removes": "tired",
-        "cost_euro": 8,
+        "cost_sov": 8,
         "location": "cafe_terrace"
       },
       {
         "method": "listen_to_street_performer",
         "removes": "stressed",
-        "cost_euro": 0,
+        "cost_sov": 0,
         "duration_required_minutes": 1
       },
       {
         "method": "fountain_coin_toss",
         "removes": "anxious",
-        "cost_euro": 1,
+        "cost_sov": 1,
         "superstitious": true
       }
     ]

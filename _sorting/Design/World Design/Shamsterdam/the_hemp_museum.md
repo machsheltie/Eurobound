@@ -15,14 +15,14 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 10 PM (museum hours, aggressively reasonable)
 - **Stat Requirements**: None (patience stat helps)
-- **Item Requirements**: €10 entry fee (includes "free" hemp tea sample)
+- **Item Requirements**: 10 Sovs entry fee (includes "free" hemp tea sample)
 - **Previous Location Requirements**: None (often visited as "cultural" excuse)
-- **Special Conditions**: "Combo ticket" with neighboring attraction available (€15, separate gift shops)
+- **Special Conditions**: "Combo ticket" with neighboring attraction available (15 Sovs, separate gift shops)
 
 ### Exit Conditions
 - **Normal Exit**: Through gift shop (unavoidable, obviously)
 - **Completion Requirements**: No completion (wander until you've "learned enough")
-- **Failure States**: Cannot be banned (you paid €10, they're committed now)
+- **Failure States**: Cannot be banned (you paid 10 Sovs, they're committed now)
 - **Progressive Unlocks**: None (experience is consistent: come, pretend to learn, buy something, leave)
 
 ## Visual Design
@@ -41,7 +41,7 @@
 - **Layout**: Narrow canal house converted to museum flow, ticket desk, introductory panels
 - **Lighting**: Attempting gallery lighting, achieving "dim with spots"
 - **Furniture & Props**:
-  - Ticket counter with bored staff and rack of audio guides (€3 extra, nobody uses them)
+  - Ticket counter with bored staff and rack of audio guides (3 Sovs extra, nobody uses them)
   - Welcome panel: "HEMP: A History of Humanity's Most Versatile Plant"
   - Timeline graphic starting at "10,000 BCE" (establishing ancient legitimacy)
   - Coat check that's just a row of hooks (trust system)
@@ -120,7 +120,7 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Monetizing the gap between "education" and "interest"
 - **City-Specific Comedy Operations**: Selling seeds that are legal to buy, illegal to grow (everywhere else)
-- **Buffoon Exploitation**: Bros pay €10 to look at plants they could see at De Groene Gids for free
+- **Buffoon Exploitation**: Bros pay 10 Sovs to look at plants they could see at De Groene Gids for free
 - **Comedy of Errors**: Trying to appear cultured while clearly only interested in one exhibit
 - **Consequence System**: Purchases here mark you as tourist (staff at coffeeshops recognize the bags)
 
@@ -144,7 +144,7 @@
 ## Gameplay Mechanics
 ### Museum Navigation
 - **Self-Guided Tour**: Wander freely, no required path, everyone makes same path anyway
-- **Audio Guide Option**: €3 extra, provides actual information, almost never selected
+- **Audio Guide Option**: 3 Sovs extra, provides actual information, almost never selected
 - **Exhibit Interaction**: Each display can be examined for flavor text, most get skipped
 - **Speed Run Timer**: Hidden tracker of how fast bros move through industrial section vs. growing room
 
@@ -187,25 +187,25 @@
 ### Gift Shop Economy
 | Item | Price | Effects | Staff Comment |
 |------|-------|---------|---------------|
-| "Hemp History" Book | €25 | +Intelligence display, will not be read | "Very comprehensive." |
-| Hemp Tote Bag | €18 | Inventory expansion (cosmetic), marks you as tourist | "Good for shopping." |
-| "Educational" Grinder | €15-45 | Tool item, functions as expected | "For herbs. Any herbs." |
-| Rolling Papers (branded) | €5 | Consumable supplies, identifies your museum visit | "Museum quality." |
-| "Legal" Seeds | €20-50 | Inventory item, cannot be used (geo-locked) | "Souvenir only. Very important." |
-| CBD Oil (various) | €30-80 | Consumable, +Calm status, -Bravado slightly | "Wellness product." |
-| "I Got High on Knowledge" Shirt | €28 | +Embarrassed status when worn | "Popular choice." |
-| Hemp Soap | €8 | No effect, exists for plausible deniability | "Nice gift. For anyone." |
+| "Hemp History" Book | 25 Sovs | +Intelligence display, will not be read | "Very comprehensive." |
+| Hemp Tote Bag | 18 Sovs | Inventory expansion (cosmetic), marks you as tourist | "Good for shopping." |
+| "Educational" Grinder | 15 Sovs-45 | Tool item, functions as expected | "For herbs. Any herbs." |
+| Rolling Papers (branded) | 5 Sovs | Consumable supplies, identifies your museum visit | "Museum quality." |
+| "Legal" Seeds | 20 Sovs-50 | Inventory item, cannot be used (geo-locked) | "Souvenir only. Very important." |
+| CBD Oil (various) | 30 Sovs-80 | Consumable, +Calm status, -Bravado slightly | "Wellness product." |
+| "I Got High on Knowledge" Shirt | 28 Sovs | +Embarrassed status when worn | "Popular choice." |
+| Hemp Soap | 8 Sovs | No effect, exists for plausible deniability | "Nice gift. For anyone." |
 
 ### The "Free" Hemp Tea
 - **Trigger**: Entry ticket includes "complimentary hemp tea sample"
 - **Location**: Small station near gift shop (funneling traffic)
-- **Effect**: +Calm status (minimal), -Gold from gift shop proximity
+- **Effect**: +Calm status (minimal), -Sovs from gift shop proximity
 - **Taste**: "Earthy" (translation: disappointing)
-- **Function**: Loss leader, makes you feel you "got something" from the €10, puts you in buying mood
+- **Function**: Loss leader, makes you feel you "got something" from the 10 Sovs, puts you in buying mood
 - **Dialogue**: "The tea is complimentary. Gift shop is right there. Take your time."
 
 ### The Audio Guide (Almost Never Selected)
-- **Cost**: €3 extra
+- **Cost**: 3 Sovs extra
 - **Content**: Genuinely informative 45-minute tour
 - **Selection Rate**: ~5% of visitors
 - **Effect**: If selected, actually provides interesting information
@@ -225,13 +225,13 @@
 - **Background**: Actually passionate about hemp history, soul slowly crushed by tourist questions
 - **Demeanor**: Hopeful at start of shift, resigned by lunch
 - **Dialogue**:
-  - "Welcome to the Hemp Museum. Ticket is ten euros. Audio guide is three extra. The audio guide is... very good."
+  - "Welcome to the Hemp Museum. Ticket is ten Sovs. Audio guide is three extra. The audio guide is... very good."
   - "You want to see the growing room? It's on the second floor. Past the historical exhibits. The historical exhibits are also interesting."
   - "The gift shop? At the end. Yes, you have to go through the museum. That's... how museums work."
   - "Any questions about hemp history? I wrote my thesis on— oh, you're already walking. Okay."
   - *to colleague* "They didn't even look at the rope section. The rope section is FASCINATING."
 
-**Growing Room Attendant Femke**
+**Growing Room Attendant Sanne**
 - **Role**: Plant supervision, photography management, question answering
 - **Appearance**: Lab coat (adding legitimacy), also hemp accessories underneath
 - **Background**: Botany student, actually knows everything, rarely asked actual questions
@@ -356,7 +356,7 @@
   - Growing room with observation window
   - Live plant representations (stylized)
   - Exhibit displays and panels
-  - Staff NPC sprites (Lars, Femke, Marco, Henrik)
+  - Staff NPC sprites (Lars, Sanne, Marco, Henrik)
   - Visitor NPC sprites (School Group, Couple, Parent, Enthusiast)
   - Gift shop inventory displays
   - Hemp garden courtyard
@@ -419,8 +419,8 @@
 ### Character Sprites (12 PNGs)
 - lars_ticket_hopeful.png - 64x96 - Start of shift energy
 - lars_ticket_resigned.png - 64x96 - By lunch
-- femke_growing_room.png - 64x96 - Lab coat legitimacy
-- femke_photography_intercept.png - 64x96x2 - "Please don't"
+- sanne_growing_room.png - 64x96 - Lab coat legitimacy
+- sanne_photography_intercept.png - 64x96x2 - "Please don't"
 - marco_gift_shop.png - 64x96 - Commercial enthusiasm
 - marco_seed_explanation.png - 64x96x2 - "Souvenir only" pitch
 - henrik_bench.png - 64x96 - Thousand-yard stare
@@ -430,13 +430,13 @@
 - actual_enthusiast.png - 64x96 - Rare spawn, taking notes
 
 ### Interactive Objects (8 PNGs)
-- audio_guide_device.png - 32x48 - €3, almost never selected
+- audio_guide_device.png - 32x48 - 3 Sovs, almost never selected
 - fabric_samples.png - 128x64 - Touch and learn nothing
 - smell_jar_individual.png - 32x48 - Terpene challenge
 - vintage_advertisement.png - 96x128 - Actually photographed
 - hemp_tea_station.png - 128x96 - "Complimentary" trap
 - gift_shop_bag.png - 48x64 - Tourist marker
-- museum_ticket.png - 64x32 - €10 cultural alibi
+- museum_ticket.png - 64x32 - 10 Sovs cultural alibi
 - seed_packet_display.png - 64x96 - "Souvenir" with instructions
 
 ### UI Elements (6 PNGs)
@@ -449,4 +449,4 @@
 
 ---
 
-*The Hemp Museum: €10 for 500 years of history you'll walk past to look at plants, then buy a grinder on the way out.*
+*The Hemp Museum: 10 Sovs for 500 years of history you'll walk past to look at plants, then buy a grinder on the way out.*

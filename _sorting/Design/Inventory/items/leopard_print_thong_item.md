@@ -15,7 +15,7 @@
 ## 🎭 The Deception
 
 ### What The Item Actually Is
-A mass-produced novelty leopard-print male thong, 92% polyester, 8% spandex, of the exact kind sold off a rotating wire rack at every beachfront stall on the strip for about €4.99, three for €12. The care label has been washed past legibility — no brand, no size, no country of manufacture, nothing. It was at the party. Many things were at the party.
+A mass-produced novelty leopard-print male thong, 92% polyester, 8% spandex, of the exact kind sold off a rotating wire rack at every beachfront stall on the strip for about 5 Sovs, three for 12 Sovs. The care label has been washed past legibility — no brand, no size, no country of manufacture, nothing. It was at the party. Many things were at the party.
 
 **Whose it was is never established.** Not in this file, not in the quest, not in a tooltip, not in an examine string, not in an achievement, not in any later pass. The game gives the player nothing, forever, on purpose.
 
@@ -31,8 +31,8 @@ A mass-produced novelty leopard-print male thong, 92% polyester, 8% spandex, of 
 | Attribute | Value |
 |-----------|-------|
 | **Purchase Price** | N/A (never purchased — granted automatically to Lord Pilsner at the outbreak morning; not stocked by any vendor in any city) |
-| **Actual Value** | €4.99 at any beachfront stall on the strip (three for €12) |
-| **Resale Value** | €0 (worthless) |
+| **Actual Value** | 5 Sovs at any beachfront stall on the strip (three for 12 Sovs) |
+| **Resale Value** | 0 Sovs (worthless) |
 | **Can Be Sold** | No. No vendor anywhere will take it, and Lord Pilsner would not offer it if they would |
 | **Can Be Dropped** | No (permanent — it is a trophy, and one does not drop a trophy) |
 | **Can Be Traded** | No (Chadwick and Bradley have never asked, and will never ask) |
@@ -218,4 +218,4 @@ N/A — no equippable counterpart exists and none will be authored. There is exa
 - No graphic content: the item is never rendered on-body beyond the 2-pixel waistband sliver, in any frame, in any scene, including the outbreak morning
 - The examine string must be byte-identical on every examine for the whole game. Do not add a "the more you look at it" variation pass — the flatness IS the joke
 - Auto-re-equip after rest must be completely silent: no toast, no log line, no bro dialogue, no achievement ping
-- Easter egg: the same rotating wire rack, restocked, three-for-€12 sign visible, is present in the background of a Bohemian Riviera bar-strip frame that Lord Pilsner walks past without ever looking at it
+- Easter egg: the same rotating wire rack, restocked, three-for-12 Sovs sign visible, is present in the background of a Bohemian Riviera bar-strip frame that Lord Pilsner walks past without ever looking at it

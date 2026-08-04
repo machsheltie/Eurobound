@@ -44,7 +44,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 ├── npcs/
 │   ├── npc_dirk_rental_owner.png
 │   ├── npc_anneke_counter.png
-│   └── npc_opa_willem_repair.png
+│   └── npc_opa_cees_repair.png
 ├── objects/
 │   └── rental_bike_fleet.png
 └── effects/
@@ -169,8 +169,8 @@ assets/sprites/locations/shamsterdam/bike_rental/
 
 ---
 
-## 👴 Sprite Sheet 5: Opa Willem (Grandfather)
-**Filename**: `npc_opa_willem_repair.png`  
+## 👴 Sprite Sheet 5: Opa Cees (Grandfather)
+**Filename**: `npc_opa_cees_repair.png`  
 **Dimensions**: 240 × 320 pixels  
 **Sprite Size**: 48 × 64 pixels
 
@@ -188,7 +188,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Row 3: Sighing at Damage** (2 frames) - The deep, weary sigh
 - **Row 4: Giving Blessing** (3 frames) - Hands raised, bestowing navigation luck
 
-*Art Note*: Opa Willem should look like he contains 47 years of accumulated wisdom and weariness.
+*Art Note*: Opa Cees should look like he contains 47 years of accumulated wisdom and weariness.
 
 ---
 
@@ -254,7 +254,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - Some with visible seaweed/rust
 - Before/after comparison area
 - Decades of accumulation visible
-- Opa Willem's trophy wall
+- Opa Cees's trophy wall
 
 **Workbench** (128×64)
 - Tools organized (wrenches, pliers)
@@ -324,7 +324,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - Canal: Blue water drop
 
 **Deposit Bar** (150×20)
-- €150 deposit tracker
+- 150 Sovs deposit tracker
 - Depletes with damage
 - Green → Yellow → Red
 
@@ -336,7 +336,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 
 ### NPC Idle Loops (Sheets 3-5):
 - **Duration:** 2-4 seconds per cycle (0.25-0.5 FPS, subtle movement)
-- **Frames:** 2 per idle row (Dirk at counter, Anneke with clipboard, Opa Willem repairing at 4 frames)
+- **Frames:** 2 per idle row (Dirk at counter, Anneke with clipboard, Opa Cees repairing at 4 frames)
 - **Pattern:** Frame 1 → 2 → 1 → loop
 - **Trigger:** Constant while shop scene active
 - **Purpose:** Lived-in family business atmosphere
@@ -349,7 +349,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Pattern:** Play once → return to idle
 - **Trigger:** Dialogue beats — rental sequence, damage assessment, insurance upsell, blessing reward
 - **Purpose:** NPC reactions ARE the comedy; Dirk's "I Told You So" is his most-used animation
-- **Audio Sync:** Opa Willem sigh audio on Sighing row; triumphant fanfare with Genuine Surprise (undamaged return, rare)
+- **Audio Sync:** Opa Cees sigh audio on Sighing row; triumphant fanfare with Genuine Surprise (undamaged return, rare)
 - **Mobile Optimization:** None needed
 
 ### Camera Flash (Sheet 8):
@@ -407,7 +407,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 |---------|----------|------|-------------|
 | Counter/register outline | set at sheet layout | 32×32 tiles | High-contrast outline for primary interaction point |
 | Rental/insurance tier icons (high contrast) | set at sheet layout | 48×48 / 32×32 | Bold-outline versions of tier icons for menu legibility |
-| NPC interaction highlight | set at sheet layout | 48×64 | Outline variant marking talkable NPCs (Dirk, Anneke, Opa Willem) |
+| NPC interaction highlight | set at sheet layout | 48×64 | Outline variant marking talkable NPCs (Dirk, Anneke, Opa Cees) |
 
 ### Motion Sensitivity Options:
 | Element | Position | Size | Description |
@@ -421,12 +421,12 @@ assets/sprites/locations/shamsterdam/bike_rental/
 | Camera Flash | Sheet 8 | 64×64 | Visual for camera shutter audio |
 | Form Stamp | Sheet 8 | 32×32 | Visual for stamp thunk audio |
 | Cash Register Ching | Sheet 8 | 48×32 | Visual for "cha-ching" upsell audio |
-| Sigh indicator | set at sheet layout | 24×24 | Small breath-puff sprite mirroring Opa Willem's audible sigh |
+| Sigh indicator | set at sheet layout | 24×24 | Small breath-puff sprite mirroring Opa Cees's audible sigh |
 
 ### Colorblind Considerations:
 - Insurance Comparison Chart tiers (Green → Yellow → Orange → Red) doubled with escalating warning icon count, not color alone
 - Damage Level Indicators pair color with distinct shapes (checkmark / warning triangle / alert / water drop)
-- Deposit Bar (Green → Yellow → Red) includes numeric € readout
+- Deposit Bar (Green → Yellow → Red) includes numeric `N SOVS` readout (word lettered, no currency mark)
 - Touch zones minimum 44px for all menu and dialogue interactions
 
 ---
@@ -442,7 +442,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | bike_rental_environment | shop tileset, wall displays, repair station | 1024x1024 |
-| bike_rental_characters | Dirk, Anneke, Opa Willem sheets | 1024x1024 |
+| bike_rental_characters | Dirk, Anneke, Opa Cees sheets | 1024x1024 |
 | bike_rental_effects | effects, UI, bike fleet | 512x512 |
 
 *(Max atlas size 2048x2048 for mobile GPU compatibility.)*
@@ -481,7 +481,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 | Form Stamp | Stamp thunk | Frame 2 (impact) |
 | Cash Register Ching | "Cha-ching" | Drawer-open frame |
 | Damage Reveal | Record scratch / dramatic sting | Frame 1 of reveal |
-| Opa Willem Sighing row | Audible sigh | Row start |
+| Opa Cees Sighing row | Audible sigh | Row start |
 | Dirk Genuine Surprise | Triumphant fanfare (rare) | Undamaged return resolution |
 
 ### Quest Integration:
@@ -489,7 +489,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 |-------|---------------------|-------------------|
 | Keg Cycle | Bike fleet, rental UI | Requires bike rental for delivery timer challenge |
 | Tour de Shame | Fleet, tier icons, Dirk states | Given by Dirk after second rental; undamaged circuit under 20 minutes |
-| Canal Recovery Assistant | Opa Willem sheet, Canal Recovery Wall | Opa Willem quest giver; recovered bikes added to wall |
+| Canal Recovery Assistant | Opa Cees sheet, Canal Recovery Wall | Opa Cees quest giver; recovered bikes added to wall |
 | The Insurance Claim | Form Stamp, Anneke Skeptical row, Damage Reveal | Interactive bureaucracy micro-quest on claim filing |
 
 ### Cross-Location Dependencies:
@@ -502,7 +502,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 
 ### Cross-Reference: Related Assets
 - **Connects to**: Bike Crossing assets (adjacent location), Canal Ring assets (recovery quest), all Shamsterdam district assets (bike access)
-- **Unique to this location**: Dirk, Anneke, Opa Willem NPCs; orange rental bike fleet; wall displays (damage, insurance, memorial); repair station elements; rental/return UI
+- **Unique to this location**: Dirk, Anneke, Opa Cees NPCs; orange rental bike fleet; wall displays (damage, insurance, memorial); repair station elements; rental/return UI
 
 ---
 
@@ -542,7 +542,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 - Dusty helmet wall ("Locals don't wear them") and the ignored cycling rules poster
 
 ### Character Integration Notes:
-- Three generations staged in depth: Anneke at counter (front), Dirk mid-shop, Opa Willem visible through the repair station doorway (background)
+- Three generations staged in depth: Anneke at counter (front), Dirk mid-shop, Opa Cees visible through the repair station doorway (background)
 - Name tags carry lore ("Dirk - 22 Years - 847 Canal Recoveries")
 - NPC reaction states are the shop's core feedback loop for rental outcomes
 
@@ -568,7 +568,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 - Insurance tier explanation speedrun
 - Dirk reaction compilation
 - "Will I damage it?" challenge
-- Opa Willem's wisdom moments
+- Opa Cees's wisdom moments
 
 ---
 
@@ -580,7 +580,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 | 2 | rental_bike_fleet.png | 512x256 |
 | 3 | npc_dirk_rental_owner.png | 288x320 |
 | 4 | npc_anneke_counter.png | 240x256 |
-| 5 | npc_opa_willem_repair.png | 240x320 |
+| 5 | npc_opa_cees_repair.png | 240x320 |
 | 6 | bike_rental_displays.png | 512x384 |
 | 7 | repair_station_sprites.png | 384x256 |
 | 8 | bike_rental_effects.png | 256x128 |
@@ -596,7 +596,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 - [ ] `rental_bike_fleet.png` (512x256)
 - [ ] `npc_dirk_rental_owner.png` (288x320)
 - [ ] `npc_anneke_counter.png` (240x256)
-- [ ] `npc_opa_willem_repair.png` (240x320)
+- [ ] `npc_opa_cees_repair.png` (240x320)
 - [ ] `bike_rental_displays.png` (512x384)
 - [ ] `repair_station_sprites.png` (384x256)
 - [ ] `bike_rental_effects.png` (256x128)
@@ -650,11 +650,11 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 | Technical Feasibility | ✅ | Pre-rendered fleet, menu-based interactions, simple geometry |
 | Mobile Performance Budget | ✅ | 60 FPS, <30 draw calls, <35 MB, 20 particles |
 | Accessibility Features | ✅ | Visual audio cues, shape-coded tiers, 44px touch zones |
-| No Crypto Elements | ✅ | All transactions in Euros (credit card holds, 5% cash discount) |
+| No Crypto Elements | ✅ | All transactions in Sovs (credit card holds, 5% cash discount) |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |
 
 ---
 
 **END OF ASSET REQUIREMENTS**
 
-*Shamsterdam Bike Rental: Where every tourist believes they'll "cycle like a local," and where Dirk, Anneke, and Opa Willem have been waiting for them. The orange bikes are ready. The damage forms are printed. The canal is patient.*
+*Shamsterdam Bike Rental: Where every tourist believes they'll "cycle like a local," and where Dirk, Anneke, and Opa Cees have been waiting for them. The orange bikes are ready. The damage forms are printed. The canal is patient.*

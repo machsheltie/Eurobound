@@ -16,6 +16,9 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Narrow alleyways designed for maximum tourist bottleneck embarrassment
 - Bachelor parties in matching costumes blocking foot traffic
 - Local residents glaring from apartment windows above the chaos
+- A working residential neighbourhood running the most efficiently delivered excess in Europe. Not seedy, not sanitised — **hyper-competent at debauchery**. Whatever you ask for is available, immediately, at a price, and it arrives on time.
+- The bros came here on purpose, get everything on their list, and cannot metabolise any of it. Each thing they buy commits them to the next: **The Cascade**, a ten-stage compounding night that ends at a bakery at 05:40.
+- **Full district design**: `roodelicht_row_district.md` — layout, the Cascade, sub-locations (Het Rode Loket "the Yes Desk", De Wachtrij, Muntje Erin, Erotiek & Zo, 't Wilde Gokje, De Roze Rondleiding, Het Rode Winkeltje, De Bijna-Toiletten), NPCs, and the two satirical targets
 
 ### Canal Ring Promenade
 **Scenic Waterway District**
@@ -38,16 +41,24 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Giant wheels of Gouda in every window
 - Wooden shoe shops targeting photo-op tourism
 - "Authentic Dutch Experience" tours that are anything but
-- Stroopwafel stands charging €8 for what locals pay €1.50
+- Stroopwafel stands charging 8 Sovs for what locals pay 2 Sovs
 - Tulip bulb vendors selling bulbs that won't survive US customs
 
 ### Museum Mile
 **Cultural Alibi District**
 - Where bros go to pretend they did something cultural
-- Van Gogh Museum selfie opportunities (no actual art appreciation)
-- Anne Frank House line they'll absolutely skip
-- Rijksmuseum photo spot they can't spell for Instagram
-- The mandatory "I Amsterdam" sign photo (the sign was removed years ago but tourists still look for it)
+- **Museum de Gekke Schilder** ("Museum of the Mad Painter") — selfie opportunities only; nobody enters a single gallery. The gift shop outsells admissions four to one.
+- **Het Rijke Museum** ("The Rich Museum") — a pun the bros never land on, and a name Chadwick misspells three different ways in one caption
+- **Venustempel** — the world's first sex museum, relocated here from Roodelicht Row in 2011 and now half museum of chocolate phalluses, half Victorian mechanical curiosity collection. Nobody has ever asked why those two things are in the same building. 9 Sovs, and the only museum on the Mile with a queue outside it.
+- **De Grote Fontein** — the four-metre working chocolate phallus fountain on the Venustempel forecourt. Real, hot, food-grade, continuously flowing, and free. **Gunter's Deep Dips**, the cart beside it, sells things on skewers at 5 SOVS and carries a menu board and a patron warning sign that between them constitute the filthiest signage in the city. Everybody double-dips. The warning sign explicitly forbids it. The sign is currently the size of a road sign and has never worked once. This is the most photographed object in Shamsterdam.
+- The mandatory **"I SHAMSTERDAM"** sign photo. The sign was removed years ago. Tourists still gather at the empty plinth and photograph each other beside nothing. Nobody has told them. The plinth is directly across from the fountain, so the two crowds interleave and photograph past each other all day. A **Veilig-o-Maat condom machine** is bolted to the empty plinth, making it the only object in most of those photographs.
+
+### City-Wide Fixture: Condom Vending Machines
+**The Veilig-o-Maat Network — 34 machines, every district, zero local interest**
+- Wall-mounted condom vending machines are ubiquitous across Shamsterdam — as unremarkable to locals as post boxes, and as fascinating to the bros as a Renaissance fresco. Pristine backlit units in the tourist districts, sun-faded guilder-only relics on the canals, one repurposed by a bike shop, one bolted to the I SHAMSTERDAM plinth, one at the bottom of a canal.
+- They are infrastructure. Nobody reacts to them. Nobody explains them. Chadwick photographs all thirty-four, and the machine section becomes the largest page in the Shamsterdam Memories album — larger than the canals, larger than any actual sight.
+- Industrial and everywhere; the Condomerie is artisanal and curated. The two never compete — see the non-competition matrix in the system spec.
+- **Full system design**: `shamsterdam_condom_machines.md` — placement, machine variants, escalating product tiers, the 34-machine collectible circuit, status effects, and quest hooks
 
 ---
 
@@ -76,13 +87,13 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Where the Fabergé Egg Hunt takes place
 - Chocolate anatomy displays in white, milk, and dark varieties
 - Decorated specimens with sprinkles and fondant bow ties
-- "FABERGÉ-STYLE COLLECTOR'S EGGS" for €3.50
+- "FABERGÉ-STYLE COLLECTOR'S EGGS" for 4 SOVS
 - The teenager behind the counter who cannot be bothered
 
 ### Casa Rosé Erotic Theatre
 **Live Entertainment Venue**
 - The famous "banana show" the bros will NOT shut up about
-- €65 entry for something you can't unsee
+- 65 Sovs entry for something you can't unsee
 - Aggressive bartenders and mandatory drink purchases
 - Bachelor party groups taking up all the good seats
 - The pink elephant statue out front: everyone's profile pic
@@ -104,16 +115,19 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Interactive exhibits that are just... plants
 
 ### Venustempel (Venus Temple)
-**The Original Sex Museum**
-- World's first sex museum, still kicking since 1985
-- Mechanical peep show devices from the Victorian era
-- The giggling figure whose skirts lift when you approach
-- Marilyn Monroe statue with a "revealing twist"
-- Erotic John Lennon illustrations (yes, really)
+**Museum Mile — The Curated Institution**
+*(Relocated from Roodelicht Row in 2011. Full profile: `venustempel.md`. Location ID `shamsterdam_museumrow_venustempel_01`.)*
+- World's first sex museum, still kicking since 1985 — and since 2011, also a museum of chocolate phalluses
+- **De Cacaogalerij**: a climate-controlled gallery of artisan chocolate genitalia, curated with total sincerity, three-language placards, a nitrogen-flushed 1974 centrepiece, and a working tempering room behind glass
+- **De Mechanische Vleugel**: the entire original collection, relocated intact — Victorian peep show devices, the giggling figure whose skirts lift when you approach, the Marilyn Monroe statue with a "revealing twist", erotic John Lennon illustrations (yes, really)
+- 9 Sovs admission. The sign still says 5 Sovs under a sticker.
+- **De Grote Fontein** out front: free, public, four metres, always on, always shared
+- **Gunter's Deep Dips**, the skewer cart beside it, whose menu board is the filthiest text in Shamsterdam and whose proprietor has never once acknowledged it
+- Considers the Museum of Questionable Art a tacky embarrassment and will tell you so unprompted, in one dry sentence, without raising its voice
 
 ### The Pancake House
 **Dutch Comfort Food Trap**
-- €18 for pancakes that should cost €6
+- 18 Sovs for pancakes that should cost 6 Sovs
 - Toppings that make no sense (bacon AND Nutella?)
 - Bros who discover Dutch pancakes are more like crepes
 - Disappointed Americans expecting IHOP thickness
@@ -156,7 +170,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 ## SHOPS & VENDORS
 
 ### Street Vendors
-- **Stroopwafel Cart**: Warm caramel waffles (+HP, +Comfort, -Gold significantly)
+- **Stroopwafel Cart**: Warm caramel waffles (+HP, +Comfort, -Sovs significantly)
 - **De Zilte Waarheid**: Raw fish the bros will absolutely not try (local challenge: +Bravado if consumed)
 - **De Botanische Leugen**: Decorative bulbs that won't survive the trip home (useless but photogenic)
 - **Bicycle Warfare Accessories**: Because you WILL need one if you're stupid enough to rent a bike
@@ -190,7 +204,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 **Late-Night Döner Stand #1**
 - THREE rotating meat towers of glory (veal, chicken, mixed)
 - Homemade bread baked fresh, warm, perfect
-- The döner that locals swear by (€2.50 and worth every cent)
+- The döner that locals swear by (3 Sovs and worth every cent)
 - Standing counter only — you eat like a warrior or not at all
 - Grease-stained menus in four languages, none spelled correctly
 - **Vendor**: Mehmet "The Meat Architect" — Turkish immigrant who's been slinging döner since 1992, judges your pronunciation, respects your appetite
@@ -209,22 +223,22 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Invented by a port-city barber in 2003, perfected here nightly
 - Plastic forks that will 100% break mid-bite
 - The smell alone adds 500 calories
-- **Vendor**: "Big Willem" — 6'5" Dutch-Turkish fusion of cultures, speaks in a mix of Dutch slang and Turkish endearments, has strong opinions about EVERYTHING
+- **Vendor**: "Big Wim" — 6'5" Dutch-Turkish fusion of cultures, speaks in a mix of Dutch slang and Turkish endearments, has strong opinions about EVERYTHING
 - **Signature Item**: "The Full Kapsalon Experience" — large tray, extra cheese, extra shame
     - 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), "Food Coma" risk (20% chance skip next turn)
     - 🍟 The aluminum tray becomes a collectible item: "Kapsalon Battle Tray" (+2 Defense when thrown)
     - 🇳🇱 Counts toward "The Great Döner Debate: International Expansion" sidequest
-- **Big Willem's Catchphrases**:
+- **Big Wim's Catchphrases**:
     - "Kapsalon means 'hair salon.' You know why? Because the barber who invented it had VISION."
     - "In the port city, we put cheese on everything. This is the Shamsterdam way. Accept it."
     - "You want small? There is no small. There is only 'you are not ready' and 'regular.'"
 
 
 ### Coffeeshop Menus (Sample Pricing)
-- **Tourist Trap Tier**: €20/gram (the Bulldog experience)
-- **Local Secret Tier**: €12/gram (if you know where to look)
+- **Tourist Trap Tier**: 20 Sovs/gram (the Bulldog experience)
+- **Local Secret Tier**: 12 Sovs/gram (if you know where to look)
 - **"My Buddy Said" Tier**: Variable (probably oregano)
-- **Space Cake Roulette**: €8-15 (effects: extremely variable)
+- **Space Cake Roulette**: 8 Sovs-15 (effects: extremely variable)
 
 ---
 
@@ -252,15 +266,15 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 ### Permission Paradox System
 The central irony of Shamsterdam: everything is "legal" but nothing is without consequences
-- **Coffeeshop Entry**: Legal, but public smoking = €100 fine
+- **Coffeeshop Entry**: Legal, but public smoking = 100 Sovs fine
 - **Window Shopping**: Legal, but photography = phone confiscation + shame
 - **Bachelor Parties**: Legal, but matching costumes = targeted enforcement
 - **Being Loud**: Legal, but neighbors WILL call the police
 - **Existing as Tourist**: Legal, but the city literally paid for ads telling you not to come
 
 ### Fine & Penalty Mechanics
-- **Public Consumption Fine**: €100 gold, triggered by outdoor smoking
-- **Photography Violation**: -50 gold + "Marked Tourist" debuff
+- **Public Consumption Fine**: 100 Sovs, triggered by outdoor smoking
+- **Photography Violation**: -50 Sovs + "Marked Tourist" debuff
 - **Noise Complaint**: Random police encounter, -Bravado
 - **Bicycle Lane Walking**: Getting yelled at by EVERYONE
 - **Canal Littering**: Instant NPC mob judgment
@@ -383,7 +397,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **Agent Havok**: Undercover chaos operative (Sheltie in disguise), mission briefings delivered in military movie style
 - **Dennis (CryptoBroArtCollective)**: One-man "art collective," gift shop employee, NFT minter
 - **The Burgemeester's Assistant**: Exhausted bureaucrat who might actually help you
-- **The Expat Who Stayed**: American who moved here 20 years ago, insufferable about how you're "doing Amsterdam wrong"
+- **The Expat Who Stayed**: American who moved here 20 years ago, insufferable about how you're "doing Shamsterdam wrong"
 
 ### ICQ Integration Characters
 - **Tony420**: Returns with Amsterdam-specific "offerings"
@@ -474,18 +488,20 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 ## LOCATION CONNECTIONS TO OTHER CITIES
 
 ### From Publandia
-- The bros arrive expecting "Dublin but with weed"
-- Discover it's "Dublin but with MORE judgment"
+- The bros arrive expecting "Publandia but with weed"
+- Discover it's "Publandia but with MORE judgment"
 - The drinking culture exists but smoking culture has stricter rules
 
 ### From Debaucheryville
-- Prague party training didn't prepare them for Dutch directness
+- Debaucheryville party training didn't prepare them for Dutch directness
 - Absinthe culture replaced by coffeeshop culture
 - Scams are different: less sleight-of-hand, more "tourist pricing"
 
-### To Sinfonia
-- The "cultural alibi" of museum visits prepares them for Vienna pretension
-- They've learned nothing about refined behavior
+### From Sinfonia
+- **Shamsterdam comes AFTER Sinfonia** (author ruling — see `Design/city_progression_order.md`)
+- They arrive carrying the **Gold Circle Coin** from Haute Couture Haberdashery, so `the_herp` is **suppressed** for the whole of Shamsterdam: no shimmer, no Groin Blurts, no auto-reject routing. The city is played clean.
+- Sinfonia's refined pretension gave way to Dutch bluntness; they've learned nothing about refined behaviour and it now matters even less
+- The "cultural alibi" habit they picked up at Sinfonia's opera house carries over into Museum Mile
 
 ---
 

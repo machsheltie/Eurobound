@@ -2,6 +2,10 @@
 
 *"the condom of champions, the one and only… nothin' is gettin' through this sucker."* - the legend, quoted verbatim by three men who have never once been champions of anything
 
+
+> **⚠️ DECLINING THE COIN IS AN INTENDED PLAYSTYLE (author ruling, 2026-08-03).**
+> This item is optional and a great many players will deliberately never obtain it. Refusing it means the party carries `the_herp` unsuppressed for the rest of the game and is **refused by every hookup they attempt, forever** — which is the joke, and for some players the whole reason to play that way. The satire targets men who police women's sexuality while treating their own conquests as a credential. Never signpost the Coin as a fix the player *should* pursue, never penalise its absence mechanically, and never let the bros work out why they are being turned down. Full spec: `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` → "The Permanently Infected Playthrough".
+
 ## 📋 Item Identity
 - **Item ID**: `item_gold_circle_coin`
 - **Display Name**: The Gold Circle Coin
@@ -30,9 +34,9 @@ Monsieur Aiguille knows precisely what he is holding. He has known for years. He
 
 | Attribute | Value |
 |-----------|-------|
-| **Purchase Price** | Not for sale at any price. PATH A costs €500 in unrelated Haberdashery spend (existing Valued Client tier) plus one absurd errand for Monsieur Aiguille; PATH B costs a full set of formal wear bought from the same shop, plus nerve |
+| **Purchase Price** | Not for sale at any price. PATH A costs 500 Sovs in unrelated Haberdashery spend (existing Valued Client tier) plus one absurd errand for Monsieur Aiguille; PATH B costs a full set of formal wear bought from the same shop, plus nerve |
 | **Actual Value** | Uninsurable. Aiguille has been offered numbers and has declined them without hearing them out |
-| **Resale Value** | €0 — no vendor in any city will take it, and the bros would not offer |
+| **Resale Value** | 0 Sovs — no vendor in any city will take it, and the bros would not offer |
 | **Can Be Sold** | No. Every shop UI returns Aiguille's line back at the player: "It is not for sale. It is for aspiration." The one thing the bros ever agree with him on |
 | **Can Be Dropped** | No (quest-critical; suppression must remain party-available for the rest of the game) |
 | **Can Be Traded** | No. It is one and only. There is nothing to trade it against and nobody willing |

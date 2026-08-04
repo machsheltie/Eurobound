@@ -14,15 +14,15 @@
 ### Entry Conditions
 - **Time Restrictions**: Check-in 3 PM - 11 PM, Check-out by 11 AM (strictly enforced)
 - **Stat Requirements**: None to book, but +2 INT recommended to notice red flags
-- **Item Requirements**: €150/night (suspiciously reasonable for a "palace")
+- **Item Requirements**: 150 Sovs/night (suspiciously reasonable for a "palace")
 - **Previous Location Requirements**: None (advertised on bulletin boards citywide)
 - **Special Conditions**: Must agree to "House Rules" (lengthy, concerning document)
 
 ### Booking System
 Unlike couchsurfing, Das Schlafgemach requires payment:
-- **Standard Room**: €150/night (HP/SP restore, but...)
-- **Deluxe Suite**: €300/night (better restore, more surveillance)
-- **The Royal Chamber**: €500/night (full restore, maximum creepy)
+- **Standard Room**: 150 Sovs/night (HP/SP restore, but...)
+- **Deluxe Suite**: 300 Sovs/night (better restore, more surveillance)
+- **The Royal Chamber**: 500 Sovs/night (full restore, maximum creepy)
 - **All bookings**: Require signing the "Guest Agreement" (nobody reads it)
 
 ### Exit Conditions
@@ -146,7 +146,7 @@ He's not malicious. He genuinely believes eternal guests are happy guests.
 They've signed a 27-clause agreement they didn't read and are being monitored by a man who hasn't slept since 1847.
 
 **The Check-In**:
-- **Lord Pilsner**: "This place is INCREDIBLE. And only €150?! That's like... nothing for a PALACE!"
+- **Lord Pilsner**: "This place is INCREDIBLE. And only 150 Sovs?! That's like... nothing for a PALACE!"
 - **Herr Gastfreund**: "We pride ourselves on... accessibility. *smile intensifies* Sign here, please."
 - **Lord Pilsner**: *signs without reading*
 - **Bradley**: "We should review the terms—"
@@ -170,9 +170,9 @@ They've signed a 27-clause agreement they didn't read and are being monitored by
 **Booking Options**:
 | Room | Price | Rest Quality | Surveillance Level | Special |
 |------|-------|-------------|-------------------|---------|
-| Standard | €150 | 80% HP/SP | Medium | Basic creepy |
-| Deluxe | €300 | 100% HP/SP | High | Extra portraits |
-| Royal | €500 | 120% HP/SP + buff | Maximum | Full experience |
+| Standard | 150 Sovs | 80% HP/SP | Medium | Basic creepy |
+| Deluxe | 300 Sovs | 100% HP/SP | High | Extra portraits |
+| Royal | 500 Sovs | 120% HP/SP + buff | Maximum | Full experience |
 
 **Rest Effects**:
 - HP/SP restoration as listed
@@ -278,7 +278,7 @@ Selected rules from the agreement (comedy document):
 - Leave a ONE-STAR review (his weakness)
 - Convince him to take a vacation (existential crisis)
 
-**Reward**: "Honest Review" badge (immunity to fake reviews citywide), €500 refund
+**Reward**: "Honest Review" badge (immunity to fake reviews citywide), 500 Sovs refund
 
 ### Couchsurfing Alternative
 Das Schlafgemach is the OPPOSITE of couchsurfing:
@@ -453,43 +453,56 @@ Players can compare experiences (couchsurfing at Moderato vs. staying here).
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (14 PNGs)
-- palace_exterior.png - 512x384 - Habsburg façade
-- grand_foyer.png - 512x384 - Check-in area
-- standard_room.png - 384x384 - Basic accommodation
-- deluxe_suite.png - 512x384 - Upgraded room
-- royal_chamber.png - 640x512 - Premium creepy
-- hallway_shifting.png - 256x512 - Liminal corridor
-- breakfast_room.png - 512x384 - Morning trap
-- basement_entrance.png - 256x384 - Hidden access
-- basement_records.png - 384x384 - Discovery area
-- portrait_wall.png - 384x256 - Watching paintings
-- eternal_fruit.png - 128x128 - Never-changing basket
-- guest_book.png - 192x192 - Ancient signatures
-- staircase_grand.png - 512x512 - Selfie location
-- hospitality_engine.png - 384x384 - The truth
+> **Authority: `PNG_Assets/The_Gilded_Suite_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (8 PNGs)
-- herr_gastfreund.png - 96x128 - The Host
-- the_first_guest.png - 96x128 - Basement boss
-- silent_porter.png - 64x96 - Wordless helper
-- other_guest_1.png - 64x96 - Review speaker
-- other_guest_2.png - 64x96 - Review speaker
-- other_guest_3.png - 64x96 - Review speaker
-- portrait_subject.png - 64x96 - Wall watcher
-- gastfreund_finale.png - 128x192 - Confrontation state
+### Required PNG Files (8 sheets)
 
-### UI/Item Sprites (10 PNGs)
-- room_key.png - 32x32 - Accommodation item
-- guest_agreement.png - 48x64 - Concerning document
-- eternal_guest_card.png - 48x32 - Quest reward
-- honest_review_badge.png - 32x32 - Confrontation reward
-- house_rules.png - 192x256 - Comedy document
-- night_event_ui.png - 256x128 - Event selection
-- surveillance_indicator.png - 32x32 - Being watched icon
-- checkout_clock.png - 64x64 - Time remaining
-- basement_clue.png - 48x48 - Discovery item
-- fruit_basket.png - 64x64 - Eternal snack
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | gilded_suite_exterior.png | 1024x512 |
+| 2 | gilded_suite_tileset.png | 1024x768 |
+| 3 | herr_gastfreund.png | 512x512 |
+| 4 | gilded_suite_npcs.png | 512x384 |
+| 5 | gilded_suite_rooms.png | 1024x768 |
+| 6 | gilded_suite_portraits.png | 512x512 |
+| 7 | gilded_suite_effects.png | 512x384 |
+| 8 | gilded_suite_ui.png | 512x384 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/The_Gilded_Suite_PNG_Assets.md`.
+
+- `palace_exterior.png`
+- `grand_foyer.png`
+- `standard_room.png`
+- `deluxe_suite.png`
+- `royal_chamber.png`
+- `hallway_shifting.png`
+- `breakfast_room.png`
+- `basement_entrance.png`
+- `basement_records.png`
+- `portrait_wall.png`
+- `eternal_fruit.png`
+- `guest_book.png`
+- `staircase_grand.png`
+- `hospitality_engine.png`
+- `the_first_guest.png`
+- `silent_porter.png`
+- `other_guest_1.png`
+- `other_guest_2.png`
+- `other_guest_3.png`
+- `portrait_subject.png`
+- `gastfreund_finale.png`
+- `room_key.png`
+- `guest_agreement.png`
+- `eternal_guest_card.png`
+- `honest_review_badge.png`
+- `house_rules.png`
+- `night_event_ui.png`
+- `surveillance_indicator.png`
+- `checkout_clock.png`
+- `basement_clue.png`
+- `fruit_basket.png`
 
 ---
 

@@ -30,7 +30,7 @@ Der Zuckerschock doesn't stay put:
 - **Normal Exit**: Walk away (after purchase or shame)
 - **Completion Requirements**: N/A (vendor location)
 - **Failure States**: "Uncultured" status if you mispronounce badly enough (5 min debuff)
-- **Progressive Unlocks**: "Cake Connoisseur" status after €200 spent (slight discount, less judgment)
+- **Progressive Unlocks**: "Cake Connoisseur" status after 200 Sovs spent (slight discount, less judgment)
 
 ## Visual Design
 ### Cart Description
@@ -38,7 +38,7 @@ Der Zuckerschock doesn't stay put:
 - **Display**: Glass case showing perfect cake slices, temperature controlled
 - **Signage**: 
   - Main: "Der Zuckerschock — Konditormeister seit 1847"
-  - Secondary: "Pronunciation Guide Available (€5)"
+  - Secondary: "Pronunciation Guide Available (5 Sovs)"
 - **Décor**: Imperial eagle motifs, gold leaf details, tiny chandelier on cart
 - **Atmosphere**: Queue of tourists attempting to look sophisticated
 
@@ -106,13 +106,13 @@ They're paying triple price because they pointed at the menu instead of pronounc
 - **Lord Pilsner**: "I'll have the... *squints* ...SAK-er... torty?"
 - **Frau Tortenmeister**: *long pause* "...The Sachertorte."
 - **Lord Pilsner**: "Yes! That! The Sacker-tort!"
-- **Frau Tortenmeister**: *adds €3 to price* "Of course."
+- **Frau Tortenmeister**: *adds 3 Sovs to price* "Of course."
 
 **The Follow-Up**:
 - **Chadwick**: "How much is the chocolate one?"
 - **Frau Tortenmeister**: "They are ALL chocolate. Be specific."
 - **Chadwick**: "The... brown one?"
-- **Frau Tortenmeister**: *adds €5* "...The BROWN one. Yes."
+- **Frau Tortenmeister**: *adds 5 Sovs* "...The BROWN one. Yes."
 - **Bradley**: "The Linzer Torte, please."
 - **Frau Tortenmeister**: *perfect pronunciation, slight nod* "...Acceptable."
 
@@ -124,13 +124,13 @@ They're paying triple price because they pointed at the menu instead of pronounc
 
 | Item | Base Price | Effect | Pronunciation Bonus/Penalty |
 |------|-----------|--------|---------------------------|
-| Sachertorte Slice | €12 | +35 HP, cures Hungry, cures Thirsty | Perfect: €10 / Butchered: €18 |
-| Linzer Torte | €10 | +25 HP, +10 SP | Perfect: €8 / Butchered: €14 |
-| Apfelstrudel | €8 | +20 HP, cures Thirsty | Perfect: €7 / Butchered: €12 |
-| Kaiserschmarrn | €14 | +40 HP, removes Embarrassed | Perfect: €12 / Butchered: €20 |
-| Topfenstrudel | €9 | +15 HP, +15 SP | Perfect: €7 / Butchered: €15 |
-| Punschkrapfen | €6 | +10 HP, Tipsy status (mild) | Perfect: €5 / Butchered: €10 |
-| Der Zuckerschock Special | €25 | Full HP restore, +20 SP, "Sugar High" buff | Perfect: €20 / Butchered: €35 |
+| Sachertorte Slice | 12 Sovs | +35 HP, cures Hungry, cures Thirsty | Perfect: 10 Sovs / Butchered: 18 Sovs |
+| Linzer Torte | 10 Sovs | +25 HP, +10 SP | Perfect: 8 Sovs / Butchered: 14 Sovs |
+| Apfelstrudel | 8 Sovs | +20 HP, cures Thirsty | Perfect: 7 Sovs / Butchered: 12 Sovs |
+| Kaiserschmarrn | 14 Sovs | +40 HP, removes Embarrassed | Perfect: 12 Sovs / Butchered: 20 Sovs |
+| Topfenstrudel | 9 Sovs | +15 HP, +15 SP | Perfect: 7 Sovs / Butchered: 15 Sovs |
+| Punschkrapfen | 6 Sovs | +10 HP, Tipsy status (mild) | Perfect: 5 Sovs / Butchered: 10 Sovs |
+| Der Zuckerschock Special | 25 Sovs | Full HP restore, +20 SP, "Sugar High" buff | Perfect: 20 Sovs / Butchered: 35 Sovs |
 
 **"Sugar High" Buff**:
 - +15% Speed for 30 minutes
@@ -171,12 +171,12 @@ High Charm reduces tourist markup:
 ### Special Interactions
 
 **The Photography Fee**:
-- Taking photo of cart or food: €3 charge
-- Taking photo with Frau Tortenmeister: €10 (she hates it)
-- Taking photo WITHOUT asking: +€5 on next purchase (she remembers)
+- Taking photo of cart or food: 3 Sovs charge
+- Taking photo with Frau Tortenmeister: 10 Sovs (she hates it)
+- Taking photo WITHOUT asking: +5 Sovs on next purchase (she remembers)
 
 **The Recommendation Trap**:
-- Asking "what's good?" = steered to €25 Special
+- Asking "what's good?" = steered to 25 Sovs Special
 - Asking "what's popular?" = slight respect, honest recommendation
 - Asking "what's cheap?" = visible contempt, shown the door (briefly)
 
@@ -268,14 +268,14 @@ High Charm reduces tourist markup:
 - **Lord Pilsner**: "Kaiser-smarren."
 - **Frau Tortenmeister**: "...No."
 - **Lord Pilsner**: "Kaiser-schmarrn?"
-- **Frau Tortenmeister**: "...Close enough. €34."
-- **Lord Pilsner**: "The menu said €26!"
+- **Frau Tortenmeister**: "...Close enough. 34 Sovs."
+- **Lord Pilsner**: "The menu said 26 Sovs!"
 - **Frau Tortenmeister**: "The menu assumed competence."
 
 **Post-Purchase**:
-- **Chadwick**: *eating* "Oh my god. This is INCREDIBLE. Worth every euro."
+- **Chadwick**: *eating* "Oh my god. This is INCREDIBLE. Worth every Sov."
 - **Lord Pilsner**: *eating* "Even the judgment tax?"
-- **Bradley**: *eating, satisfied* "I pronounced everything correctly. I paid €22."
+- **Bradley**: *eating, satisfied* "I pronounced everything correctly. I paid 22 Sovs."
 - **Lord Pilsner**: "BRADLEY."
 
 ## System Integration
@@ -288,7 +288,7 @@ High Charm reduces tourist markup:
 
 ### Quest Integration
 - **"The Perfect Pronunciation"**: Master all menu items (achievement)
-- **"Cake Connoisseur"**: Spend €200, earn permanent discount
+- **"Cake Connoisseur"**: Spend 200 Sovs, earn permanent discount
 - **"The Comparison Crime"**: Accidentally offend Frau Tortenmeister
 - **"Cart Hunter"**: Find the cart at all four locations in one day
 
@@ -354,33 +354,44 @@ High Charm reduces tourist markup:
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (6 PNGs)
-- cart_main.png - 384x384 - Ornate vendor cart
-- display_case.png - 256x192 - Glass cabinet with cakes
-- cart_location_square.png - 128x128 - Imperial Square backdrop
-- cart_location_kaffeehaus.png - 128x128 - Café row backdrop
-- cart_location_opera.png - 128x128 - Opera House backdrop
-- cart_location_musik.png - 128x128 - MusikGasse backdrop
+> **Authority: `PNG_Assets/Torte_Royale_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (6 PNGs)
-- frau_tortenmeister.png - 64x96 - Vendor (neutral)
-- frau_tortenmeister_approval.png - 64x96 - Rare satisfaction
-- frau_tortenmeister_judgment.png - 64x96 - Default disappointment
-- frau_tortenmeister_pained.png - 64x96 - Bad pronunciation reaction
-- queue_tourist.png - 64x96 - Waiting customer
-- queue_local.png - 64x96 - Smug regular
+### Required PNG Files (6 sheets)
 
-### UI/Item Sprites (10 PNGs)
-- sachertorte_slice.png - 48x48 - Menu item
-- linzer_torte.png - 48x48 - Menu item
-- apfelstrudel.png - 48x48 - Menu item
-- kaiserschmarrn.png - 48x48 - Menu item
-- topfenstrudel.png - 48x48 - Menu item
-- punschkrapfen.png - 48x48 - Menu item
-- zuckerschock_special.png - 64x64 - Premium item
-- pronunciation_ui.png - 256x128 - Mini-game interface
-- cake_connoisseur_badge.png - 32x32 - Status indicator
-- sugar_high_icon.png - 32x32 - Buff indicator
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | torte_royale_cart.png | 512x384 |
+| 2 | torte_royale_display_case.png | 512x256 |
+| 3 | frau_tortenmeister.png | 512x384 |
+| 4 | torte_royale_queue_npcs.png | 512x384 |
+| 5 | torte_royale_backdrops.png | 512x512 |
+| 6 | torte_royale_effects_ui.png | 512x512 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/Torte_Royale_PNG_Assets.md`.
+
+- `cart_main.png`
+- `display_case.png`
+- `cart_location_square.png`
+- `cart_location_kaffeehaus.png`
+- `cart_location_opera.png`
+- `cart_location_musik.png`
+- `frau_tortenmeister_approval.png`
+- `frau_tortenmeister_judgment.png`
+- `frau_tortenmeister_pained.png`
+- `queue_tourist.png`
+- `queue_local.png`
+- `sachertorte_slice.png`
+- `linzer_torte.png`
+- `apfelstrudel.png`
+- `kaiserschmarrn.png`
+- `topfenstrudel.png`
+- `punschkrapfen.png`
+- `zuckerschock_special.png`
+- `pronunciation_ui.png`
+- `cake_connoisseur_badge.png`
+- `sugar_high_icon.png`
 
 ---
 

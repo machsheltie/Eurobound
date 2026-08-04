@@ -15,8 +15,8 @@
 ## Access & Requirements
 
 ### Entry Conditions
-- **Time Restrictions**: 08:00-20:00 (Seamus takes his breaks seriously)
-- **Stat Requirements**: None (they'll rent to anyone with €50)
+- **Time Restrictions**: 08:00-20:00 (Fergus takes his breaks seriously)
+- **Stat Requirements**: None (they'll rent to anyone with 50 Sovs)
 - **Item Requirements**: None
 - **Previous Location Requirements**: None (available after reaching Publandia)
 - **Special Conditions**: None
@@ -26,8 +26,8 @@
 - **With Rental**: Triggers "The Cloverleaf of Confusion" quest
 - **Completion Requirements**: Sign paperwork, pay deposit
 - **Progressive Unlocks**: 
-  - Post-roundabout: "Seamus's Respect" discount available
-  - Return visits: Seamus has increasingly resigned dialogue
+  - Post-roundabout: "Fergus's Respect" discount available
+  - Return visits: Fergus has increasingly resigned dialogue
 
 ---
 
@@ -39,7 +39,7 @@
 - **Lot**: 12-15 compact cars in various states of "character" - dents, scratches, questionable paint jobs
 - **Signage**: 
   - Main: Hand-painted wooden sign, shamrock logo
-  - Sub-signs: "INSURANCE RECOMMENDED," "WE ARE NOT LIABLE FOR THE CLOVERLEAF," "GPS AVAILABLE (€20/DAY)"
+  - Sub-signs: "INSURANCE RECOMMENDED," "WE ARE NOT LIABLE FOR THE CLOVERLEAF," "GPS AVAILABLE (20 SOVS/DAY)"
 - **Atmosphere**: Rural Irish outskirts, sheep occasionally wander through lot, distant roundabout visible on horizon
 - **Environmental Context**: Last stop before the countryside; The Cloverleaf is visible about 1km down the road
 
@@ -52,7 +52,7 @@
   - Photos of satisfied customers (all taken BEFORE they drove)
   - "DAYS SINCE LAST CLOVERLEAF INCIDENT" counter (stuck on 0)
 - **The Board of Shame**: Polaroids of abandoned rental cars found in The Cloverleaf, license plates from multiple countries
-- **Seamus's Desk**: Ancient computer (running Windows 98), overflowing ashtray, photo of wife (who left in 1992, never returned from "quick drive")
+- **Fergus's Desk**: Ancient computer (running Windows 98), overflowing ashtray, photo of wife (who left in 1992, never returned from "quick drive")
 - **Atmosphere**: Slightly musty, cigarette smoke, resignation
 
 ### Technical Specifications
@@ -69,18 +69,18 @@
 - **Animation Elements**: 
   - Sheep wandering past window
   - Keys swaying on wall hook
-  - Seamus's resigned sighing
+  - Fergus's resigned sighing
   - Computer screen flickering
-- **Mobile Optimization**: Simple indoor scene, focus on Seamus character work
+- **Mobile Optimization**: Simple indoor scene, focus on Fergus character work
 
 ---
 
 ## Satirical Design
 
 ### Theme & Vibe
-**Core Concept**: A car rental office that exists as the last line of defense against The Cloverleaf. Seamus has seen too much. He warns everyone. No one listens. They never listen. And yet he continues, because someone has to rent cars, and someone has to bear witness.
+**Core Concept**: A car rental office that exists as the last line of defense against The Cloverleaf. Fergus has seen too much. He warns everyone. No one listens. They never listen. And yet he continues, because someone has to rent cars, and someone has to bear witness.
 
-**The Irony**: Seamus explicitly warns every customer about The Cloverleaf. He even has a counter for "DAYS SINCE LAST INCIDENT." The counter is stuck on zero. No one heeds his warnings. The bros will not be the exception.
+**The Irony**: Fergus explicitly warns every customer about The Cloverleaf. He even has a counter for "DAYS SINCE LAST INCIDENT." The counter is stuck on zero. No one heeds his warnings. The bros will not be the exception.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: American overconfidence in driving ability
@@ -95,7 +95,7 @@
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Exploitation of tourist overconfidence
-- **Hidden Tragedy**: Seamus's wife never returned from "a quick drive" in 1992
+- **Hidden Tragedy**: Fergus's wife never returned from "a quick drive" in 1992
 - **The Counter**: "Days Since Last Cloverleaf Incident" has been 0 for 40 years
 - **The Board of Shame**: Polaroids of abandoned cars, international license plates
 - **Insurance Scam**: The "premium insurance" doesn't cover Cloverleaf incidents (fine print)
@@ -105,11 +105,11 @@
 > A simple car rental to explore the authentic Irish countryside. They're experienced American drivers - how hard can left-side driving be?
 
 **What is ACTUALLY happening**: 
-> Seamus is watching three more victims walk toward The Cloverleaf. He's tried to warn them. He always tries. They never listen.
+> Fergus is watching three more victims walk toward The Cloverleaf. He's tried to warn them. He always tries. They never listen.
 
 **Obvious signs they ignore**:
 - The "DAYS SINCE LAST INCIDENT" counter stuck on 0
-- Seamus's thousand-yard stare
+- Fergus's thousand-yard stare
 - The Board of Shame with dozens of abandoned car photos
 - The explicit warning: "God help ye. Especially at the Cloverleaf."
 - The map with "HERE BE DRAGONS" written over The Cloverleaf
@@ -121,7 +121,7 @@
 - **Screenshot Opportunities**: 
   - The Board of Shame
   - "DAYS SINCE LAST INCIDENT: 0"
-  - Seamus's dead-eyed stare
+  - Fergus's dead-eyed stare
   - The bros confidently signing paperwork
   - "HERE BE DRAGONS" map
 - **Quotable Moments**:
@@ -129,7 +129,7 @@
   - "God help ye. Especially at the Cloverleaf."
   - "They all come back. Eventually."
 - **Easter Eggs**: 
-  - Photo of Seamus's wife on desk, "CLOVERLEAF '92" written on back
+  - Photo of Fergus's wife on desk, "CLOVERLEAF '92" written on back
   - Mapquest printouts in trash can
   - GPS devices returned with screens showing "RECALCULATING" burned in
 
@@ -142,13 +142,13 @@
 - **Player Actions**: 
   - Rent a car (triggers quest)
   - Examine the Board of Shame
-  - Talk to Seamus (warnings)
+  - Talk to Fergus (warnings)
   - Examine the map
   - Purchase GPS (will fail)
   - Purchase "premium" insurance (doesn't cover Cloverleaf)
 - **Rewards Available**: 
   - Vehicle access (temporary)
-  - Post-quest: "Seamus's Respect" discount
+  - Post-quest: "Fergus's Respect" discount
   - Post-quest: "Roundabout Survivor" title
 - **Risk/Reward Balance**: High risk (Cloverleaf), low immediate reward
 
@@ -156,31 +156,31 @@
 
 | Vehicle | Price/Day | Description | Hidden Issue |
 |---------|-----------|-------------|--------------|
-| The Shamrock | €45 | "Economy" compact | Wipers stuck on |
-| The Lucky Charm | €60 | "Standard" sedan | GPS glitches near roundabouts |
-| The Emerald Dream | €80 | "Premium" SUV | Too wide for country lanes |
-| The Full Irish | €120 | "Luxury" convertible | Attracts sheep attention |
+| The Shamrock | 45 Sovs | "Economy" compact | Wipers stuck on |
+| The Lucky Charm | 60 Sovs | "Standard" sedan | GPS glitches near roundabouts |
+| The Emerald Dream | 80 Sovs | "Premium" SUV | Too wide for country lanes |
+| The Full Irish | 120 Sovs | "Luxury" convertible | Attracts sheep attention |
 
 ### Add-Ons
 
 | Add-On | Price | What They Say | What It Does |
 |--------|-------|---------------|--------------|
-| GPS Rental | €20/day | "Navigation assistance" | Says "recalculating" in Cloverleaf |
-| Premium Insurance | €35/day | "Complete coverage" | Doesn't cover "circular traffic incidents" |
-| Map Book | €10 | "Traditional navigation" | Map has Cloverleaf labeled "?" |
-| Rosary Beads | €5 | "For the dashboard" | Seamus insists |
+| GPS Rental | 20 Sovs/day | "Navigation assistance" | Says "recalculating" in Cloverleaf |
+| Premium Insurance | 35 Sovs/day | "Complete coverage" | Doesn't cover "circular traffic incidents" |
+| Map Book | 10 Sovs | "Traditional navigation" | Map has Cloverleaf labeled "?" |
+| Rosary Beads | 5 Sovs | "For the dashboard" | Fergus insists |
 
 ### Economic Integration
-- **Currency**: Euros
+- **Currency**: Sovs
 - **Price Structure**: Reasonable base, hidden fees in fine print
-- **Post-Quest Discount**: "Seamus's Respect" = 10% off (still overpriced)
+- **Post-Quest Discount**: "Fergus's Respect" = 10% off (still overpriced)
 - **Insurance Gotcha**: Premium insurance explicitly excludes "incidents occurring within circular traffic patterns"
 
 ---
 
 ## NPCs
 
-### Seamus O'Malley
+### Fergus O'Malley
 *Full profile in `paddys_premium_motors_npcs.json`*
 
 - **Role**: Owner, sole employee, witness to forty years of Cloverleaf victims
@@ -232,7 +232,7 @@
   - Fluorescent buzz
   - Computer fan (ancient, struggling)
   - Keys clinking on wall
-  - Seamus's resigned sighs
+  - Fergus's resigned sighs
 - **Music Style**: None - the absence of music emphasizes the bleakness
 
 ### Interactive Audio
@@ -258,7 +258,7 @@
 
 ### Quest-Connected
 - **The Cloverleaf of Confusion**: Primary quest triggered here
-- **Return Point**: Post-quest, Seamus awaits with tired acknowledgment
+- **Return Point**: Post-quest, Fergus awaits with tired acknowledgment
 
 ---
 
@@ -269,11 +269,11 @@
   - Building exterior (converted farmhouse)
   - Parking lot with rental cars (6-8 vehicles)
   - Interior reception area
-  - Seamus character sprites (3-4 states)
+  - Fergus character sprites (3-4 states)
   - Wall decorations (Board of Shame, map, counter)
   - Sheep ambient sprites
 - **Animation Requirements**: 
-  - Seamus idle (smoking, sighing, staring)
+  - Fergus idle (smoking, sighing, staring)
   - Keys swaying
   - Computer screen flicker
   - Rain outside window
@@ -295,7 +295,7 @@ paddys_premium_motors_state:
   - purchased_insurance: boolean
   - purchased_rosary: boolean
   - cloverleaf_completed: boolean
-  - seamus_respect_earned: boolean
+  - fergus_respect_earned: boolean
   - examined_board_of_shame: boolean
   - asked_about_wife: boolean
   - times_warned: integer
@@ -317,10 +317,10 @@ paddys_premium_motors_state:
 ### Post-Implementation Testing
 - [ ] Rental transaction triggers Cloverleaf quest
 - [ ] All add-ons purchasable with correct effects
-- [ ] Seamus dialogue cycles properly
+- [ ] Fergus dialogue cycles properly
 - [ ] Board of Shame examinable
 - [ ] Post-quest dialogue unlocks correctly
-- [ ] "Seamus's Respect" discount applies
+- [ ] "Fergus's Respect" discount applies
 
 ---
 
@@ -343,11 +343,11 @@ A corkboard covered in Polaroid photos of abandoned rental cars:
 ### The Map
 - Standard road map of Publandia
 - The Cloverleaf circled in aggressive red marker
-- "HERE BE DRAGONS" written in Seamus's handwriting
+- "HERE BE DRAGONS" written in Fergus's handwriting
 - Several routes attempted and crossed out
 - Notation: "All roads lead here. Eventually."
 
-### Seamus's Desk
+### Fergus's Desk
 - Computer running Windows 98
 - Overflowing ashtray (never emptied, memorial quality)
 - Photo of younger woman in silver frame
@@ -358,6 +358,6 @@ A corkboard covered in Polaroid photos of abandoned rental cars:
 
 ## Final Validation
 
-**Paddy's Premium Motors is the gateway to one of Eurobound's signature comedy set-pieces. Seamus has spent 40 years warning tourists about The Cloverleaf. No one has ever listened. His resigned fatalism contrasts perfectly with the bros' confident ignorance. The Board of Shame, the stuck counter, the wife who never returned - every detail reinforces that this has happened before and will happen again. The bros are not special. They are not different. They will enter The Cloverleaf like everyone else. And Seamus will watch them go, slide the next set of keys across the counter, and wait for their return. If they return.**
+**Paddy's Premium Motors is the gateway to one of Eurobound's signature comedy set-pieces. Fergus has spent 40 years warning tourists about The Cloverleaf. No one has ever listened. His resigned fatalism contrasts perfectly with the bros' confident ignorance. The Board of Shame, the stuck counter, the wife who never returned - every detail reinforces that this has happened before and will happen again. The bros are not special. They are not different. They will enter The Cloverleaf like everyone else. And Fergus will watch them go, slide the next set of keys across the counter, and wait for their return. If they return.**
 
 **"That's what they all say."**

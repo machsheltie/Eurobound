@@ -207,14 +207,14 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 
 **Radek Visual Notes:** Late 20s Czech, hostel t-shirt, film student who stayed 4 years, helpful but exhausted
 
-### Petra (64x96 each):
+### Lenka (64x96 each):
 | State | Position | Description |
 |-------|----------|-------------|
 | Alert | (0, 96) | Nocturnal energy |
 | Coffee Dependent | (64, 96) | Always holding cup |
 | Philosophical | (128, 96) | 3 AM wisdom mode |
 
-**Petra Visual Notes:** Early 30s, former traveler who got stuck, curious about guests
+**Lenka Visual Notes:** Early 30s, former traveler who got stuck, curious about guests
 
 ---
 
@@ -240,7 +240,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | Contemplative | (256, 0) | 64x96 | Kerouac visible |
 | Deep Conversation | (320, 0) | 64x96 | Finding himself |
 
-### Local Lukas (Czech Pretending):
+### Local Lukáš (Czech Pretending):
 | State | Position | Size | Description |
 |-------|----------|------|-------------|
 | Pretending | (384, 0) | 64x96 | Too knowledgeable |
@@ -271,11 +271,11 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Panel | (0, 0) | 256x192 | Booking interface |
-| 12-Bed Option | (0, 192) | 64x32 | €12 - Maximum chaos |
-| 8-Bed Option | (64, 192) | 64x32 | €16 - Still chaos |
-| 6-Bed Option | (128, 192) | 64x32 | €20 - Compromise |
-| 4-Bed Option | (192, 192) | 64x32 | €28 - Given up |
-| Private Option | (256, 192) | 64x32 | €45 - Why hostel? |
+| 12-Bed Option | (0, 192) | 64x32 | 12 Sovs - Maximum chaos |
+| 8-Bed Option | (64, 192) | 64x32 | 16 Sovs - Still chaos |
+| 6-Bed Option | (128, 192) | 64x32 | 20 Sovs - Compromise |
+| 4-Bed Option | (192, 192) | 64x32 | 28 Sovs - Given up |
+| Private Option | (256, 192) | 64x32 | 45 Sovs - Why hostel? |
 
 ### Sleep Quality System:
 | Element | Position | Size | Description |
@@ -388,7 +388,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 ### Colorblind Considerations:
 - Sleep quality tiers use distinct icon shapes AND text labels (Excellent-None), never color alone
 - Roommate event popups use symbols (Zzz, phone, speech bubble) plus text
-- Room price options display Euro amounts as text, not color-coded tiers
+- Room price options display Sov amounts as text, not color-coded tiers
 - Touch zones minimum 44px for booking options, bell, outlet, and bunk interactions
 
 ---
@@ -418,7 +418,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | Low | Static background guests, no particles, event popups only |
 
 ### Performance Targets:
-- **Target FPS:** 45 (multi-room location with crowd rendering)
+- **Target FPS:** 60 (multi-room location with crowd rendering)
 - **Max Draw Calls:** 16 per frame
 - **Memory Footprint:** 38 MB maximum
 - **Particle Limit:** 15 (dust motes, laundry steam, kitchen smoke combined)
@@ -485,7 +485,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 
 ### Character Integration Notes:
 - Radek reads as helpful-but-exhausted: perpetual stubble, thousand-yard stare, hostel t-shirt
-- Petra carries nocturnal energy: alert posture, ever-present coffee cup
+- Lenka carries nocturnal energy: alert posture, ever-present coffee cup
 - Guest NPCs are affectionate archetypes, not mockeries - each distinct at 64x96 silhouette read
 - Rotating generic backpackers keep dorms feeling alive without heavy animation budgets
 
@@ -552,7 +552,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 6. **Snore Visualization** - Sleep quality enemy
 
 ### Quote Potential:
-- "€12/Night. Your Dignity Costs Extra."
+- "12 Sovs/Night. Your Dignity Costs Extra."
 - "Quiet hours are 11 to 7. This is theoretical."
 - "Someone is always snoring. This is hostel law."
 - "The hostel is democracy. Everyone gets equal chaos."
@@ -593,9 +593,9 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | Seedy Underbelly | ✅ PASS |
 | Gameplay Value | ✅ PASS |
 | Technical Feasibility | ✅ PASS |
-| Mobile Performance | ✅ PASS (45 FPS, 16 draws, 38MB) |
+| Mobile Performance | ✅ PASS (60 FPS, 16 draws, 38MB) |
 | Accessibility | ✅ PASS |
 | No Crypto Elements | ✅ PASS |
 | Social Media | ✅ PASS |
 
-**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Radek has seen everything and judges nothing. €12 buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**
+**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Radek has seen everything and judges nothing. 12 Sovs buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**

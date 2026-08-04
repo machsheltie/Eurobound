@@ -136,7 +136,7 @@
         "stats": {"bravado": 2},
         "duration_minutes": 30,
         "followed_by": {"effect": "sugar_crash", "bravado": -1, "duration_minutes": 15},
-        "description": "Viennese pastry euphoria. Temporary."
+        "description": "Sinfonian pastry euphoria. Temporary."
       },
       {
         "effect_id": "cultured_palate",
@@ -166,17 +166,17 @@
       {
         "status_removed": "tired",
         "method": "any_coffee_purchase",
-        "cost_euro": "5-9"
+        "cost_sov": "5-9"
       },
       {
         "status_removed": "hungry",
         "method": "any_food_purchase",
-        "cost_euro": "12-22"
+        "cost_sov": "12-22"
       },
       {
         "status_removed": "thirsty",
         "method": "any_beverage_purchase",
-        "cost_euro": "5-9"
+        "cost_sov": "5-9"
       }
     ]
   },

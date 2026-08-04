@@ -140,7 +140,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 **File:** `mystery_menu_items_detailed.png`  
 **Dimensions:** 1024x512 pixels  
 
-### Doner of Illusions™ - 7€:
+### Doner of Illusions™ - 7 Sovs:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Spinning Heap | (0, 0) | 128x96 | Shredded meat base |
@@ -148,7 +148,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 | Absinthe Glaze | (192, 0) | 64x64 | Green shimmer |
 | Wrapped Serving | (256, 0) | 96x96 | Ready to consume |
 
-### Sausage of Suspicion - 6€:
+### Sausage of Suspicion - 6 Sovs:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Grey Sweaty Tube | (0, 96) | 96x64 | Questionable meat |
@@ -156,7 +156,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 | Whisper Waves | (128, 96) | 64x32 | Audio visualization |
 | Suspicious Angles | (192, 96) | 96x64 | Every angle bad |
 
-### Clown Dog Deluxe™ - 9€:
+### Clown Dog Deluxe™ - 9 Sovs:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Red Licorice Bun | (0, 160) | 96x64 | Candy bread |
@@ -164,7 +164,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 | Pop Rocks Relish | (144, 160) | 48x32 | Explosive garnish |
 | Assembled Grotesque | (192, 160) | 128x96 | Full horror |
 
-### Meatball on a Lollipop Stick - 5€:
+### Meatball on a Lollipop Stick - 5 Sovs:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Spherical Mystery | (0, 256) | 64x64 | Meat ball |
@@ -172,7 +172,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 | Structural Issue | (88, 256) | 64x64 | Impossible physics |
 | Bite Marks | (152, 256) | 32x32 | Previous attempts |
 
-### Glizzénstein's Brain Brat - 12€:
+### Glizzénstein's Brain Brat - 12 Sovs:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Glowing Interior | (0, 320) | 96x64 | AI core visible |

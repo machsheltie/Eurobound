@@ -213,9 +213,9 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - *If player rents bike*: "Now YOU'RE the problem. Congratulations."
 
 **Services**:
-- Bike Rental: €15/day (makes you a traffic participant, not a victim)
+- Bike Rental: 15 Sovs/day (makes you a traffic participant, not a victim)
 - Crossing Tips: Free (ignored)
-- First Aid: €5 (he's seen worse)
+- First Aid: 5 Sovs (he's seen worse)
 
 ---
 
@@ -312,8 +312,8 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - Has seen every excuse
 
 **Dialogue**:
-- *After standing in bike lane*: "This is a bike lane. You are not a bike. That's €95."
-- *After blocking traffic*: "You're blocking traffic. Yes, on foot. Still illegal. €140."
+- *After standing in bike lane*: "This is a bike lane. You are not a bike. That's 95 Sovs."
+- *After blocking traffic*: "You're blocking traffic. Yes, on foot. Still illegal. 140 Sovs."
 - *After surviving tram near-miss*: "...I'm honestly impressed. Here's a warning. This time."
 
 ---
@@ -433,7 +433,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 ### Shortcuts Unlocked
 - **Underground Passage**: Found after 10 successful crossings
 - **Rooftop Route**: Available after "Cargo Cult" quest
-- **Bike Rental**: €15 converts you from victim to participant
+- **Bike Rental**: 15 Sovs converts you from victim to participant
 
 ---
 
@@ -442,19 +442,19 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 ### Services at Location
 | Service | Cost | Effect |
 |---------|------|--------|
-| Bike Rental | €15/day | Skip crossing (becomes traffic participant) |
+| Bike Rental | 15 Sovs/day | Skip crossing (becomes traffic participant) |
 | Crossing Tips | Free | Hints from Bike Rental Guy |
-| First Aid | €5 | +15 HP after collision |
-| Coffee (Terrace) | €4 | +5 HP, observation time |
-| Escort Service | €20 | NPC guides you across (guaranteed safe) |
+| First Aid | 5 Sovs | +15 HP after collision |
+| Coffee (Terrace) | 4 Sovs | +5 HP, observation time |
+| Escort Service | 20 Sovs | NPC guides you across (guaranteed safe) |
 
 ### Fines (Officer van den Berg)
 | Violation | Fine |
 |-----------|------|
-| Standing in Bike Lane | €95 |
-| Blocking Traffic | €140 |
-| Photography in Crossing | €50 |
-| Being Dramatic About It | €25 (attitude surcharge) |
+| Standing in Bike Lane | 95 Sovs |
+| Blocking Traffic | 140 Sovs |
+| Photography in Crossing | 50 Sovs |
+| Being Dramatic About It | 25 Sovs (attitude surcharge) |
 
 ---
 
@@ -533,7 +533,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 ### Crypto Warning
 - [x] NO crypto elements at this location
 - [x] Focus on traffic/cycling satire
-- [x] All transactions in Euros
+- [x] All transactions in Sovs
 
 ---
 

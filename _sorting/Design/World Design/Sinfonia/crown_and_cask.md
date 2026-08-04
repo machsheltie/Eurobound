@@ -131,26 +131,26 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 - **Color**: Golden crown color (intentional)
 - **Stats**: +30 HP, +15 SP
 - **Effect**: "Noble Blood" (+2 Charm, +2 Style for 45 minutes)
-- **Price**: €10
+- **Price**: 10 Sovs
 - **Flavor Text**: "Brewed with hops that can trace their lineage back seven generations. The yeast is merely five generations, but we don't discuss that."
 - **Brewed By**: Crown & Cask (family recipe, "royal" process)
-- **Special**: Served in crown-shaped glass, which you keep (adds €3)
+- **Special**: Served in crown-shaped glass, which you keep (adds 3 Sovs)
 
 **Menu Drinks** (Non-Signature):
 | Beer | Price | Effect | Served With |
 |------|-------|--------|-------------|
-| The Commoner | €4 | +10 HP | Apologetic explanation of name |
-| Duke's Dark | €7 | +20 HP | Slight bow |
-| Princess Pilsner | €5 | +15 HP | Curtsey from server |
-| The Usurper (Guest Beer) | €6 | +15 HP, +5 SP | Hushed tones |
-| King's Reserve | €15 | +40 HP, +20 SP | Full ceremony |
+| The Commoner | 4 Sovs | +10 HP | Apologetic explanation of name |
+| Duke's Dark | 7 Sovs | +20 HP | Slight bow |
+| Princess Pilsner | 5 Sovs | +15 HP | Curtsey from server |
+| The Usurper (Guest Beer) | 6 Sovs | +15 HP, +5 SP | Hushed tones |
+| King's Reserve | 15 Sovs | +40 HP, +20 SP | Full ceremony |
 
 ### Bottle Opener — Crown & Cask
 
 - **Design**: Miniature Habsburg-style crown with bottle opener as the base/rim
 - **Material**: Gold-tone metal with purple velvet pouch
 - **Inscription**: "By Royal Appointment"
-- **Acquired**: Complete the Coronation Ceremony OR purchase for €20
+- **Acquired**: Complete the Coronation Ceremony OR purchase for 20 Sovs
 - **Special Feature**: Comes with "Certificate of Nobility" (tiny scroll)
 
 ### Stamp Details
@@ -276,28 +276,40 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (6 PNGs)
-- exterior_palace.png - 512x384 - Miniature palace façade
-- great_hall.png - 640x512 - Throne room taproom
-- throne_station.png - 384x384 - Royal Brewmaster's seat
-- royal_cellar.png - 384x384 - Barrel aging area
-- courtyard_garden.png - 384x256 - Beer garden with fountain
-- crown_cask_crest.png - 128x128 - Royal coat of arms
+> **Authority: `PNG_Assets/Crown_And_Cask_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (5 PNGs)
-- konig_klaus.png - 64x96 - Royal Brewmaster (full regalia)
-- konig_klaus_ceremony.png - 64x96 - Knighting pose
-- royal_cousin.png - 64x96 - Staff in livery
-- knighted_regular.png - 64x96 - Veteran with pin
-- ceremony_participant.png - 64x96 - Kneeling position
+### Required PNG Files (7 sheets)
 
-### UI/Item Sprites (6 PNGs)
-- heir_apparent_ale.png - 32x64 - Signature beer in crown glass
-- stamp_crown_cask.png - 64x64 - Crown on barrel
-- coronation_ui.png - 256x128 - Ceremony interface
-- noble_blood_buff.png - 32x32 - Status effect icon
-- knighted_badge.png - 32x32 - Title indicator
-- royal_disappointment.png - 32x32 - Failure status
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | crown_cask_tileset.png | 1024x512 |
+| 2 | crown_cask_landmarks.png | 512x384 |
+| 3 | konig_klaus.png | 384x288 |
+| 4 | crown_cask_npcs.png | 384x192 |
+| 5 | crown_cask_drinks.png | 256x192 |
+| 6 | crown_cask_effects.png | 256x128 |
+| 7 | crown_cask_ui.png | 256x192 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/Crown_And_Cask_PNG_Assets.md`.
+
+- `exterior_palace.png`
+- `great_hall.png`
+- `throne_station.png`
+- `royal_cellar.png`
+- `courtyard_garden.png`
+- `crown_cask_crest.png`
+- `konig_klaus_ceremony.png`
+- `royal_cousin.png`
+- `knighted_regular.png`
+- `ceremony_participant.png`
+- `heir_apparent_ale.png`
+- `stamp_crown_cask.png`
+- `coronation_ui.png`
+- `noble_blood_buff.png`
+- `knighted_badge.png`
+- `royal_disappointment.png`
 
 ---
 

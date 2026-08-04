@@ -107,7 +107,7 @@ Started with genuine passion for tattoo art. Never got good but got fast and che
 **Jakub** (nodding gratefully): "This one understands. Very cultured."
 
 ### Price Discussion
-> "The Lord Pilsner Special - €75. Very fair for custom European work. Cash preferred. Card machine is... broken. Always broken."
+> "The Lord Pilsner Special - 75 Sovs. Very fair for custom European work. Cash preferred. Card machine is... broken. Always broken."
 
 ### If Quality Questioned
 > "Is not duck. Is skeleton. European skeleton. Very traditional style. You want American skeleton, go to America. This is authentic."
@@ -116,7 +116,7 @@ Started with genuine passion for tattoo art. Never got good but got fast and che
 > "See? Certified. Three weeks training. Very professional."
 
 ### Post-Tattoo
-> "You come back for more ink, I give you discount. 'The Lord Pilsner Special' - any duck design, €50. Very popular now."
+> "You come back for more ink, I give you discount. 'The Lord Pilsner Special' - any duck design, 50 Sovs. Very popular now."
 
 ---
 
@@ -144,9 +144,9 @@ Started with genuine passion for tattoo art. Never got good but got fast and che
 ### Services Offered
 | Service | Price | Quality | Result |
 |---------|-------|---------|--------|
-| Clock Skeleton Tattoo | €75 | Duck | Lord Pilsner's signature piece |
-| Any Custom Design | €50-100 | Questionable | Usually comes out duck-ish |
-| The Lord Pilsner Special | €50 | Duck intentional | Any duck-related design |
+| Clock Skeleton Tattoo | 75 Sovs | Duck | Lord Pilsner's signature piece |
+| Any Custom Design | 50 Sovs-100 | Questionable | Usually comes out duck-ish |
+| The Lord Pilsner Special | 50 Sovs | Duck intentional | Any duck-related design |
 | Touch-ups | Free | Same quality | Doesn't help |
 
 ### Flash Art (On Walls)

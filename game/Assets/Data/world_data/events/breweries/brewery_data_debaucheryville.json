@@ -74,7 +74,7 @@
     "boss_id": "cryptobro_brewbot",
     "brew_reward": {
       "item": "Blockchain Bock",
-      "effect": "+20 HP, +10 Gold, Tourist Trapped"
+      "effect": "+20 HP, +10 Sovs, Tourist Trapped"
     },
     "selfie_prop": "Foam-spewing beer printer",
     "satire_note": "Brew flavor dictated by today\u2019s trending NFT hash\u2026 it\u2019s decentralizzzzzted."

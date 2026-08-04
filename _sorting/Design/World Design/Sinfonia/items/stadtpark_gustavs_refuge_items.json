@@ -79,7 +79,7 @@
     "homeless_philosopher": {
       "npc_id": "homeless_philosopher_01",
       "service_type": "wisdom_vendor",
-      "currency": "euro",
+      "currency": "sovs",
       "products": [
         {
           "item_id": "wisdom_1",
@@ -119,7 +119,9 @@
         {
           "type": "debt_reduction",
           "amount": 500,
-          "reason": "hans_jurgen_gratitude"
+          "reason": "hans_jurgen_gratitude",
+          "flag": "hans_jurgen_path_a_contribution",
+          "note": "Separate pot from the single 170 Sovs cafe relief (debt_relief_claimed); the two stack."
         },
         {
           "type": "achievement",
@@ -243,10 +245,23 @@
         "reputation": "restored"
       },
       {
-        "id": "hans_jurgen_insurance",
+        "id": "hans_jurgen_path_a_contribution",
         "condition": "path_a_only",
         "coverage": 500,
-        "dialogue": "Hans-Jürgen: 'My insurance... they will cover some. For Gustav's return.'"
+        "applies_to": "accumulated_total",
+        "stacks_with": "hans_jurgen_cafe_insurance_170",
+        "dialogue": "Hans-Jürgen: 'My insurance... they will cover some. For Gustav's return.'",
+        "note": "Separate pot from the 170 Sovs cafe relief. Flavoured as insurance in dialogue but mechanically distinct; neither disables the other."
+      },
+      {
+        "id": "hans_jurgen_cafe_insurance_170",
+        "condition": "path_a_only",
+        "coverage": 170,
+        "applies_to": "cafe_sachertorte_line",
+        "requires_flag_false": "debt_relief_claimed",
+        "sets_flag": "debt_relief_claimed",
+        "mutually_exclusive_with": "cafe_dialogue_option_3_halving",
+        "note": "AUTHORITATIVE: this payout and the cafe dialogue-option-3 halving are the SAME single 170 Sovs relief. Whichever fires first consumes it; the other is disabled and must not apply. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
       },
       {
         "id": "negotiate_director",
@@ -273,7 +288,7 @@
       "item_id": "fiaker_fiasco_memento",
       "display_name": "Fiaker Fiasco Memento",
       "condition": "any_completion",
-      "description": "A small collection of items from the adventure: a feather from Gustav's cape, a Skittle wrapper, and a receipt from Café Sachertorte for €340.",
+      "description": "A small collection of items from the adventure: a feather from Gustav's cape, a Skittle wrapper, and a receipt from Café Sachertorte for 340 Sovs.",
       "type": "quest_keepsake",
       "gallery_entry": true
     }

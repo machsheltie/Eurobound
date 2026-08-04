@@ -42,7 +42,7 @@ A bouncer-turned-kebabist. 6'4", wears a glittery crop top over a bulletproof ve
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| Belly Of Chadz | 6€ | A dense kebab box soaked in three sauces and ego. 🩸 +HP regen while Hungover (10% over 3 turns) 😵‍💫 50% chance of immediate "Greasy Coma" debuff: skip next turn, but clear all ailments 🥩 Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample) |
+| Belly Of Chadz | 6 Sovs | A dense kebab box soaked in three sauces and ego. 🩸 +HP regen while Hungover (10% over 3 turns) 😵‍💫 50% chance of immediate "Greasy Coma" debuff: skip next turn, but clear all ailments 🥩 Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample) |
 
 ---
 
@@ -61,7 +61,7 @@ Talks in a mix of food puns and veiled threats. Smells like lighter fluid.
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| Doner of Illusions™ | 7€ | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 SP, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
+| Doner of Illusions™ | 7 Sovs | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 SP, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
 
 ---
 
@@ -77,7 +77,7 @@ A flickering vending machine hidden behind a glitching privacy curtain. You can 
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| CryptoDoner Box | 5€ | Text reads: "Meat. Data. Destiny." 🧬 +2 random stats but gives "DigiDysentery" (inverts your menu buttons for 2 mins) 🌐 ICQ prompt: "Want to share your results with CoinDaddy69?" |
+| CryptoDoner Box | 5 Sovs | Text reads: "Meat. Data. Destiny." 🧬 +2 random stats but gives "DigiDysentery" (inverts your menu buttons for 2 mins) 🌐 ICQ prompt: "Want to share your results with CoinDaddy69?" |
 
 ---
 
@@ -93,7 +93,7 @@ A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists 
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The OG Lamb Wrap | 8€ | Classic lamb döner with garlic sauce, wrapped in warm pita. 🥙 +20 HP, "Grease Finger" debuff (-Dexterity for item use) 🍀 Counts toward "The Great Döner Debate" sidequest (Publandia sample) |
+| The OG Lamb Wrap | 8 Sovs | Classic lamb döner with garlic sauce, wrapped in warm pita. 🥙 +20 HP, "Grease Finger" debuff (-Dexterity for item use) 🍀 Counts toward "The Great Döner Debate" sidequest (Publandia sample) |
 
 ---
 
@@ -222,9 +222,9 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 **Menu Items**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The Triple Tower | 8€ | All three meats (veal, chicken, lamb), extra garlic sauce, fresh-baked bread. 🥙 +25 HP, +10 SP, "Garlic Aura" buff (NPCs keep slight distance for 1 hour) 🇳🇱 Counts toward expansion sidequest |
-| Mehmet's Choice | 6€ | "I choose. You eat. This is how it works." Random meat selection, always perfect. 🎲 +20 HP, +5 to random stat, "Blessed by the Architect" buff |
-| The Interrogation | 4€ | Mehmet asks where else you've eaten döner before serving you. Answer wrong and he lectures you for 3 minutes. 📚 +15 HP, +2 Wisdom (you learn things) |
+| The Triple Tower | 8 Sovs | All three meats (veal, chicken, lamb), extra garlic sauce, fresh-baked bread. 🥙 +25 HP, +10 SP, "Garlic Aura" buff (NPCs keep slight distance for 1 hour) 🇳🇱 Counts toward expansion sidequest |
+| Mehmet's Choice | 6 Sovs | "I choose. You eat. This is how it works." Random meat selection, always perfect. 🎲 +20 HP, +5 to random stat, "Blessed by the Architect" buff |
+| The Interrogation | 4 Sovs | Mehmet asks where else you've eaten döner before serving you. Answer wrong and he lectures you for 3 minutes. 📚 +15 HP, +2 Wisdom (you learn things) |
 
 ---
 
@@ -235,7 +235,7 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 **Visuals**:
 A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum trays stack to the ceiling. The smell of melting cheese and frying potatoes is AGGRESSIVE. A massive hand-painted sign shows a cross-section of the kapsalon with labels: "FRIES (foundation), MEAT (structure), CHEESE (soul), SALAD (lies we tell ourselves), SAUCE (truth)." Drunk tourists and locals alike crowd the counter. Plastic forks scattered on the floor — casualties of structural failure.
 
-**Vendor**: "Big Willem"  
+**Vendor**: "Big Wim"  
 6'5" Dutch-Turkish man, shaved head, gold chain, football jersey stretched over an impressive frame. Third-generation Shamsterdammer whose grandfather was one of the first Turkish immigrants. Speaks in a thunderous mix of Dutch slang, Turkish endearments, and food philosophy. Has strong opinions about EVERYTHING, especially the city where kapsalon was invented (he respects this grudgingly).
 
 **Catchphrases**:
@@ -248,9 +248,9 @@ A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum 
 **Menu Items**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The Full Kapsalon Experience | 12€ | Large aluminum tray: fries, döner meat, melted cheese, salad, garlic sauce, sambal. 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), 20% "Food Coma" risk (skip next turn) 🍟 Aluminum tray becomes inventory item |
-| The Inventor's Cut | 9€ | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Canal Courage" buff (+5 Bravado for 1 hour) |
-| The Willem | 15€ | Large kapsalon with extra cheese, extra meat, extra sauce, extra EVERYTHING. ⚠️ Must pass Constitution check or immediate "Food Coma" 💪 If survived: +50 HP, "Kapsalon Conqueror" achievement |
+| The Full Kapsalon Experience | 12 Sovs | Large aluminum tray: fries, döner meat, melted cheese, salad, garlic sauce, sambal. 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), 20% "Food Coma" risk (skip next turn) 🍟 Aluminum tray becomes inventory item |
+| The Inventor's Cut | 9 Sovs | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Canal Courage" buff (+5 Bravado for 1 hour) |
+| The Wim | 15 Sovs | Large kapsalon with extra cheese, extra meat, extra sauce, extra EVERYTHING. ⚠️ Must pass Constitution check or immediate "Food Coma" 💪 If survived: +50 HP, "Kapsalon Conqueror" achievement |
 
 **Special Item — Kapsalon Battle Tray**:
 After eating any kapsalon, the aluminum tray is added to inventory:
@@ -318,11 +318,11 @@ Da: "Twenty years I served you. TWENTY YEARS of lamb,
 garlic, and love. And you come HERE? To SHAMSTERDAM? 
 For CHEESE ON CHIPS?!"
 
-Big Willem: "Excuse me, this is KAPSALON, not 'cheese on chips'—"
+Big Wim: "Excuse me, this is KAPSALON, not 'cheese on chips'—"
 
-Da: "I KNOW WHAT IT IS, WILLEM."
+Da: "I KNOW WHAT IT IS, WILHELMUS."
 
-Big Willem: "...you know my name?"
+Big Wim: "...you know my name?"
 
 Da: "We're in the same WhatsApp group. 'European Döner Alliance.' 
 But that's NOT THE POINT."
@@ -349,12 +349,12 @@ Mr. Chadz: "Crypto conference in Shamsterdam. We Ubered."
 
 Chef Chuckles: *honks tiny horn* "The circus TRAVELS, my friend."
 
-Big Willem: "Is that a man in clown shoes?"
+Big Wim: "Is that a man in clown shoes?"
 
-Mr. Chadz: "Don't change the subject, Willem. 
+Mr. Chadz: "Don't change the subject, Wim. 
 You think cheese makes you SPECIAL?"
 
-Big Willem: "...yes?"
+Big Wim: "...yes?"
 
 Chef Chuckles: "They chose US. They chose the CHAOS. 
 They chose meat of MYSTERIOUS ORIGIN. 
@@ -382,7 +382,7 @@ well
 mostly flesh
 haven't been outside in a while"
 
-Big Willem: "Who is this child in my establishment?"
+Big Wim: "Who is this child in my establishment?"
 
 Tony420: "i'm the one who asked the question
 and u said they ALL taste like shame
@@ -408,7 +408,7 @@ just... truth"
 **Setup**: Regardless of which confrontation occurred, the scene converges on the same challenge.
 
 ```
-Big Willem: "ENOUGH. There is only one way to settle this. 
+Big Wim: "ENOUGH. There is only one way to settle this. 
 The way Shamsterdam has settled disputes for centuries."
 
 Mehmet: *appears from nowhere, arms crossed* 
@@ -416,7 +416,7 @@ Mehmet: *appears from nowhere, arms crossed*
 
 Lord Pilsner: "A... taste-off?"
 
-Big Willem: "Three bites. Three döners. 
+Big Wim: "Three bites. Three döners. 
 Your previous champion versus Shamsterdam's finest."
 
 Mehmet: "No talking. No thinking. Just EATING. 
@@ -455,7 +455,7 @@ Chadwick: *already filming* "This is the SUPER BOWL of MEAT."
 ```
 *The Shamsterdam vendors nod slowly*
 
-Big Willem: "...respectable. Loyalty has value."
+Big Wim: "...respectable. Loyalty has value."
 
 Mehmet: "The Meat Architect acknowledges your... conviction. 
 Even if it is WRONG."
@@ -487,7 +487,7 @@ after ALL the meat we shared..."
 Lord Pilsner: "I'm sorry. The heart wants what the heart wants. 
 And my heart wants CHEESE."
 
-Big Willem: "WELCOME TO THE BROTHERHOOD OF THE TRAY."
+Big Wim: "WELCOME TO THE BROTHERHOOD OF THE TRAY."
 
 Mehmet: "The Meat Architect accepts your pilgrimage. 
 You have grown."
@@ -516,7 +516,7 @@ Lord Pilsner: "I... I can't choose. They're BOTH—"
 
 *Every vendor in the room turns to stare*
 
-Big Willem: "You cannot choose?"
+Big Wim: "You cannot choose?"
 
 Mehmet: "The Meat Architect does not understand."
 
@@ -532,7 +532,7 @@ Chadwick: "What if... what if ALL döner is beautiful?"
 
 *The vendors look at each other*
 
-Big Willem: "...this is either very wise or very stupid."
+Big Wim: "...this is either very wise or very stupid."
 
 Mehmet: "The Architect requires time to process this."
 
@@ -558,7 +558,7 @@ their rivals (you can play them against each other for discounts)
 
 ### The Aluminum Throne
 **Type**: Trophy Item (Display in Hostel Room)
-**Description**: "A throne constructed entirely from kapsalon aluminum trays. It's uncomfortable, greasy, and magnificent. Big Willem helped you build it."
+**Description**: "A throne constructed entirely from kapsalon aluminum trays. It's uncomfortable, greasy, and magnificent. Big Wim helped you build it."
 **Effect**: +1 HP regen while resting at any hostel
 **Hidden Feature**: Sitting in it triggers random döner vendor dialogue
 
@@ -570,7 +570,7 @@ their rivals (you can play them against each other for discounts)
 
 ### Kapsalon Battle Tray (Upgraded)
 **Type**: Weapon
-**Description**: "Big Willem signed this one. It's basically a collector's item that you can also throw at people."
+**Description**: "Big Wim signed this one. It's basically a collector's item that you can also throw at people."
 **Effect**: +3 Defense when thrown, can be retrieved after battle
 **Special**: If thrown at an enemy who has eaten döner in the same battle, bonus damage
 
@@ -581,7 +581,7 @@ their rivals (you can play them against each other for discounts)
 ### "The Döner Council" (Unlocked by choosing "Can't Decide")
 **Members**: 
 - Mehmet_MeatArchitect
-- BigWillem_KapsalonKing
+- BigWim_KapsalonKing
 - MrChadz_CryptoKebab
 - ChefChuckles_CircusMeat
 - Da_OGLamb
@@ -592,7 +592,7 @@ their rivals (you can play them against each other for discounts)
 Mehmet_MeatArchitect: 
 Thirty-three years now. Still perfect.
 
-BigWillem_KapsalonKing:
+BigWim_KapsalonKing:
 New cheese supplier. Game changer.
 
 MrChadz_CryptoKebab:
@@ -613,7 +613,7 @@ vibes
 
 **New Members Added**:
 - Mehmet_MeatArchitect
-- BigWillem_KapsalonKing
+- BigWim_KapsalonKing
 
 **New Group Feature**: Weekly polls about döner philosophy
 ```
@@ -653,4 +653,4 @@ is kapsalon a döner or a war crime?
 ---
 
 *"In the end, it was never about the döner. It was about the friends we made along the way. And also the döner. It was definitely also about the döner."*
-— Big Willem, probably
+— Big Wim, probably

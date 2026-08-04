@@ -286,7 +286,7 @@ Extended time in Café Existenz costs Bravado:
 - **Function**: Determines initial seating, can be charmed for better placement
 - **Dialogue**: "Table for... *long pause* ...three? Yes, I believe I can find something... *longer pause* ...suitable."
 
-### The Server — Franz
+### The Server — Egon
 - **Role**: Takes orders (eventually), delivers judgment (immediately)
 - **Appearance**: Traditional waiter uniform, permanently raised eyebrow
 - **Personality**: Has forgotten more orders than most waiters have taken
@@ -310,15 +310,15 @@ Extended time in Café Existenz costs Bravado:
 ### Bros' Café Existenz Reactions
 
 **Entering**:
-- **Lord Pilsner**: "Dude, this place is FANCY. Very... Euro. Very intellectual. I'm gonna order something SOPHISTICATED."
+- **Lord Pilsner**: "Dude, this place is FANCY. Very... Sov. Very intellectual. I'm gonna order something SOPHISTICATED."
 - **Chadwick**: "The AESTHETIC! The VIBE! This is PEAK content! 'Chadwick does PHILOSOPHY'!"
 - **Bradley**: "I'm familiar with this environment. I... do not enjoy being familiar with this environment."
 
 **Ordering**:
 - **Lord Pilsner**: "I'll have a... *stares at menu* ...large coffee?"
-- **Franz**: *audible exhale* "We do not have 'large coffee.' We have Kleiner Brauner, Melange, Einspänner, Kapuziner—"
+- **Egon**: *audible exhale* "We do not have 'large coffee.' We have Kleiner Brauner, Melange, Einspänner, Kapuziner—"
 - **Lord Pilsner**: "The... first one?"
-- **Franz**: "The KLEINER? Are you SURE? It is quite small. Perhaps you meant—"
+- **Egon**: "The KLEINER? Are you SURE? It is quite small. Perhaps you meant—"
 - **Lord Pilsner**: "YES. THAT. PLEASE."
 
 **In Debate**:
@@ -410,41 +410,54 @@ Extended time in Café Existenz costs Bravado:
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (10 PNGs)
-- cafe_exterior.png - 512x384 - Art nouveau façade
-- main_hall.png - 640x512 - Primary seating area
-- window_seats.png - 384x256 - Tourist section
-- back_room.png - 384x384 - Regulars area
-- smoking_lounge.png - 256x256 - Annexed space
-- chess_table.png - 128x128 - Ambient detail
-- newspaper_rack.png - 96x192 - Traditional holder
-- menu_board.png - 192x256 - Daily philosophical question
-- coffee_service.png - 128x96 - Table settings
-- outdoor_seating.png - 384x256 - Street tables
+> **Authority: `PNG_Assets/Cafe_Existenz_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (12 PNGs)
-- herr_konditor.png - 64x96 - Maître d'
-- franz_server.png - 64x96 - Server
-- von_grubelstein.png - 96x128 - Professor (debate boss)
-- the_nihilist.png - 64x96 - Easy opponent
-- the_kantian.png - 64x96 - Medium opponent
-- the_postmodernist.png - 64x96 - Hard opponent
-- graduate_student.png - 64x96 - Standard opponent
-- amateur_intellectual.png - 64x96 - Standard opponent
-- eternal_student.png - 64x96 - Couchsurf host
-- chess_player_1.png - 64x96 - Ambient NPC
-- chess_player_2.png - 64x96 - Ambient NPC
-- tourist_intellectual.png - 64x96 - Potential ally
+### Required PNG Files (7 sheets)
 
-### UI/Item Sprites (8 PNGs)
-- debate_ui.png - 256x128 - Dialogue combat interface
-- bravado_drain.png - 64x32 - Timer/meter
-- void_sugar.png - 32x32 - Consumable reward
-- honorary_doctorate.png - 48x48 - Von Grübelstein reward
-- coffee_menu.png - 128x192 - Ordering interface
-- wifi_icon.png - 32x32 - Hotspot indicator
-- philosophical_question.png - 192x64 - Daily chalkboard
-- cultured_selfie_frame.png - 192x256 - Photo backdrop
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | cafe_existenz_tileset.png | 1024x512 |
+| 2 | cafe_existenz_furnishings.png | 512x384 |
+| 3 | cafe_existenz_staff.png | 384x288 |
+| 4 | cafe_existenz_philosophers.png | 512x384 |
+| 5 | cafe_existenz_ambient_npcs.png | 384x192 |
+| 6 | cafe_existenz_effects.png | 256x128 |
+| 7 | cafe_existenz_ui.png | 384x256 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/Cafe_Existenz_PNG_Assets.md`.
+
+- `cafe_exterior.png`
+- `main_hall.png`
+- `window_seats.png`
+- `back_room.png`
+- `smoking_lounge.png`
+- `chess_table.png`
+- `newspaper_rack.png`
+- `menu_board.png`
+- `coffee_service.png`
+- `outdoor_seating.png`
+- `herr_konditor.png`
+- `egon_server.png`
+- `von_grubelstein.png`
+- `the_nihilist.png`
+- `the_kantian.png`
+- `the_postmodernist.png`
+- `graduate_student.png`
+- `amateur_intellectual.png`
+- `eternal_student.png`
+- `chess_player_1.png`
+- `chess_player_2.png`
+- `tourist_intellectual.png`
+- `debate_ui.png`
+- `bravado_drain.png`
+- `void_sugar.png`
+- `honorary_doctorate.png`
+- `coffee_menu.png`
+- `wifi_icon.png`
+- `philosophical_question.png`
+- `cultured_selfie_frame.png`
 
 ---
 

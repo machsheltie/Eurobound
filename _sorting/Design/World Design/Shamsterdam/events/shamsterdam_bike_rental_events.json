@@ -48,17 +48,17 @@
       "options": [
         {
           "id": "basic",
-          "display": "Basic Rental - €15/day",
+          "display": "Basic Rental - 15 Sovs/day",
           "dirk_comment": "The basic. Standard orange tourist bike. Lock included. Basket for items you'll lose."
         },
         {
           "id": "premium",
-          "display": "Premium Rental - €25/day",
+          "display": "Premium Rental - 25 Sovs/day",
           "dirk_comment": "The premium. Better brakes. Working bell—they'll ignore it, but it works."
         },
         {
           "id": "survivor",
-          "display": "Survivor Package - €40/day",
+          "display": "Survivor Package - 40 Sovs/day",
           "dirk_comment": "The survivor. Our sturdiest bike. It's survived twelve canal recoveries. Maybe lucky, maybe cursed."
         }
       ],
@@ -81,18 +81,18 @@
         },
         {
           "id": "standard_insurance",
-          "display": "Standard - €10",
-          "anneke_comment": "Standard's €10. Covers theft and 'minor' damage. Dad defines minor. Be warned."
+          "display": "Standard - 10 Sovs",
+          "anneke_comment": "Standard's 10 Sovs. Covers theft and 'minor' damage. Dad defines minor. Be warned."
         },
         {
           "id": "premium_insurance",
-          "display": "Premium - €20",
-          "anneke_comment": "Premium's €20. Covers most things. Includes one canal recovery attempt. One."
+          "display": "Premium - 20 Sovs",
+          "anneke_comment": "Premium's 20 Sovs. Covers most things. Includes one canal recovery attempt. One."
         },
         {
           "id": "platinum_insurance",
-          "display": "Platinum - €35",
-          "anneke_comment": "Platinum's €35. Covers everything. Nobody who buys this ever needs it. Funny how that works."
+          "display": "Platinum - 35 Sovs",
+          "anneke_comment": "Platinum's 35 Sovs. Covers everything. Nobody who buys this ever needs it. Funny how that works."
         }
       ]
     },

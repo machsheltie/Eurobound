@@ -7,7 +7,7 @@ This document provides exact specifications for all PNG files needed for The Con
 **Theme:** Premium retail narrative and "curated" culture — Viennese museum-shop pretension where ordinary items become special through presentation, provenance, and paperwork
 **Zone:** Kaffeehaus Row, Intellectual Café District
 **Hours:** 09:00–20:00 (refined hours; the shopkeeper will explain the provenance of EVERYTHING)
-**Primary Function:** General item shop (consumables / support / weapons / utilities / specialty goods) — provenance speech mechanic, certificate system, Discerning Customer progression (€200 spent unlocks speech-skip and the locked specialty cabinet), selfie spot
+**Primary Function:** General item shop (consumables / support / weapons / utilities / specialty goods) — provenance speech mechanic, certificate system, Discerning Customer progression (200 Sovs spent unlocks speech-skip and the locked specialty cabinet), selfie spot
 
 ---
 
@@ -349,14 +349,14 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 | Inventory Overflow Mock Panel | (0, 160) | 128x96 | Inventory grid crammed with rolled certificates crowding actual items |
 | "Inventory Full (Paper)" Banner | (128, 160) | 120x24 | Warning banner for the certificate-hoard state |
 | Certificate Counter Chip | (128, 184) | 48x24 | Running certificate count — feeds "Certificate Collector" |
-| Sell-Back €1 Dialog | (128, 208) | 96x48 | Confirmation: "Sell certificate for €1? (He will see.)" — insulting but possible |
+| Sell-Back 1 Sov Dialog | (128, 208) | 96x48 | Confirmation: "Sell certificate for 1 Sov? (He will see.)" — insulting but possible |
 
 ### Progression & Selfie UI:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Discerning Progress Bar | (0, 256) | 160x24 | €0 → €200 spend tracker with gold fill |
+| Discerning Progress Bar | (0, 256) | 160x24 | 0 Sovs → 200 Sovs spend tracker with gold fill |
 | Discerning Customer Badge (Large UI) | (160, 256) | 48x48 | Laurel badge for status screen |
-| Gold-Spent Counter | (208, 256) | 64x24 | Cumulative € display |
+| Sovs-Spent Counter | (208, 256) | 64x24 | Cumulative `N SOVS` display — word lettered, no currency mark. ⚠️ 64x24 fits four digits + `SOVS` only if the word is set at half-height beneath the figure; widen to 88x24 for a single-line treatment. |
 | Achievement Toast Frame | (288, 256) | 128x48 | For "First Certificate," "Provenance Survivor," "Overwhelmed," etc. |
 | Caption Card: "Certified Authentic" | (0, 312) | 96x24 | Standard selfie caption |
 | Caption Card: "I Have Documentation" | (96, 312) | 96x24 | "The Collector" variant (10+ certificates, overwhelmed expression) |
@@ -432,7 +432,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Frames:** 2
 - **Pattern:** Frame 1 → 2, hold frame 2
 - **Trigger:** Discerning Customer uses "The usual, please."
-- **Purpose:** "You already understand." — the emotional payoff of €200 of accumulated speeches
+- **Purpose:** "You already understand." — the emotional payoff of 200 Sovs of accumulated speeches
 - **Audio Sync:** None (the silence IS the approval)
 - **Mobile Optimization:** None needed
 
@@ -450,7 +450,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Frames:** 4 (raised → descending → impact → seal result)
 - **Pattern:** Frame 1 → 4, hold seal
 - **Trigger:** Transaction finalization, behind the counter
-- **Purpose:** Bureaucratic ceremony for a €10 tea purchase
+- **Purpose:** Bureaucratic ceremony for a 10 Sovs tea purchase
 - **Audio Sync:** Certificate stamp thunk exactly on impact frame (frame 3)
 - **Mobile Optimization:** None needed
 
@@ -574,7 +574,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 | Low | No ambient particles, static clock/candle/glow, 2-frame speech loop, single-certificate flutter, zone backdrops as flat textures |
 
 ### Performance Targets:
-- **Target FPS:** 40
+- **Target FPS:** 60
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 35 MB maximum
 - **Particle Limit:** 12 (dust motes only; flutter gag is sprite-based, not particles)
@@ -613,7 +613,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 |-------|---------------------|-------------------|
 | Certificate Collector | Certificate rolled item, counter chip, overflow panel, flutter gag | Counter increments per purchase; achievement at 20 certificates |
 | The Curated Journey | All five category tabs, item roster sprites, achievement toast | Toast fires on first purchase from each category ("The Complete Set" at all five) |
-| Discerning Customer | Progress bar, badge sprites, approving nod frames, cabinet unlock sequence, "The usual, please." button | €200 spend threshold flips location state; unlock animation plays once |
+| Discerning Customer | Progress bar, badge sprites, approving nod frames, cabinet unlock sequence, "The usual, please." button | 200 Sovs spend threshold flips location state; unlock animation plays once |
 | Provenance Master | Passionate speech loop, clock UI, speech-drone waveform | Tracks full uninterrupted speeches; masochist achievement at all speeches heard ("Provenance Survivor" at 10) |
 | First Certificate / Overwhelmed (achievements) | Certificate handing frames, overflow mock panel | First purchase; certificates > items state |
 
@@ -652,7 +652,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 ## 🎯 Social Media Viral Potential
 
 ### Screenshot-Worthy Moments:
-1. **The certificate for tea** — a full readable certificate with a serial number for a €10 tea tin; screenshots itself
+1. **The certificate for tea** — a full readable certificate with a serial number for a 10 Sovs tea tin; screenshots itself
 2. **The Browser's "Help me."** — tiny speech bubble mid-provenance speech, a blink-and-miss-it gag players will share when they catch it
 3. **The inventory overflow** — certificates crowding out actual items with the "Inventory Full (Paper)" banner
 4. **The approving nod** — "The usual, please." → "You've grown." — the most weirdly emotional shop transaction in the game
@@ -747,7 +747,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 | Seedy Underbelly Present | ✅ | Soft vice, honestly noted: Forged Invitation sold under the counter ("transferable, untraceable," 10% detection risk), deliberate exploitation of confused bros who "pay extra because it SEEMS important," and the reading-nook obligation trap — pretension economy rather than hard crime |
 | Gameplay Value Established | ✅ | Full 26-item general shop, provenance mechanic, certificate system, Discerning Customer progression, 4 quests + 7 achievements |
 | Technical Feasibility | ✅ | Seven sheets, three atlases, LOD tiers, state-swap architecture documented |
-| Mobile Performance Budget | ✅ | 40 FPS, 14 draw calls, 35 MB, 12 particles (per source profile) |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 35 MB, 12 particles (per source profile) |
 | Accessibility Features | ✅ | Visual cues for all 7 audio events; static variants; shape-coded categories; 44px zones |
 | No Crypto Elements | ✅ | Pure retail curation satire; certificates are paper, pointedly |
 | Social Media Integration | ✅ | Tea certificate, "Help me.", inventory overflow, three selfie variants identified |

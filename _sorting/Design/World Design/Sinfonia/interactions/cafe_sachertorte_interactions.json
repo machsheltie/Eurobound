@@ -44,12 +44,12 @@
         "beverages": [
           {"item": "Kleiner Brauner", "price": 5, "description": "Small coffee, served with judgment"},
           {"item": "Großer Brauner", "price": 7, "description": "Large coffee, slightly less judgment"},
-          {"item": "Melange", "price": 8, "description": "Viennese latte, foam artistically peaked"},
+          {"item": "Melange", "price": 8, "description": "Sinfonian latte, foam artistically peaked"},
           {"item": "Einspänner", "price": 9, "description": "Coffee with excessive whipped cream"}
         ],
         "cakes": [
           {"item": "Sachertorte Slice", "price": 18, "description": "The famous chocolate cake. Non-negotiable."},
-          {"item": "Apfelstrudel", "price": 14, "description": "Apple strudel, warm upon request (€2 extra)"},
+          {"item": "Apfelstrudel", "price": 14, "description": "Apple strudel, warm upon request (2 Sovs extra)"},
           {"item": "Opera Cake", "price": 22, "description": "Layers of sophistication"},
           {"item": "Gugelhupf", "price": 12, "description": "Traditional ring cake"}
         ],
@@ -122,7 +122,7 @@
         "during_quest": {
           "description": "Hanging off its hinges after Gustav's dramatic entrance.",
           "passable": true,
-          "damage_value_euro": 0
+          "damage_value_sov": 0
         },
         "post_quest": {
           "description": "Repaired with reinforced hinges. 'NO HORSES' sticker now present.",
@@ -136,7 +136,7 @@
       "type": "destructible",
       "display_name": "Umbrella Stand",
       "description": "Ornate brass umbrella stand. Currently holding three parasols.",
-      "damage_value_euro": 15,
+      "damage_value_sov": 15,
       "destruction_trigger": "gustav_entry",
       "touch_zone": {"x": 280, "y": 120, "width": 24, "height": 32}
     },
@@ -145,7 +145,7 @@
       "type": "destructible",
       "display_name": "Marble Table",
       "description": "Antique marble-topped café table. Very heavy. Very expensive.",
-      "damage_value_euro": 40,
+      "damage_value_sov": 40,
       "destruction_trigger": "gustav_chase_phase",
       "touch_zone": {"x": 80, "y": 120, "width": 32, "height": 32}
     },
@@ -154,7 +154,7 @@
       "type": "destructible",
       "display_name": "Marble Table",
       "description": "Another antique marble-topped café table. Equally expensive.",
-      "damage_value_euro": 40,
+      "damage_value_sov": 40,
       "destruction_trigger": "gustav_chase_phase",
       "touch_zone": {"x": 140, "y": 160, "width": 32, "height": 32}
     },
@@ -163,7 +163,7 @@
       "type": "destructible",
       "display_name": "Patio Table",
       "description": "Wrought-iron patio table with matching chairs.",
-      "damage_value_euro": 85,
+      "damage_value_sov": 85,
       "destruction_trigger": "gustav_entry",
       "touch_zone": {"x": 280, "y": 180, "width": 40, "height": 40}
     },
@@ -184,7 +184,7 @@
       "type": "hazard",
       "display_name": "Crystal Chandelier",
       "description": "Original 1890s crystal chandelier. Priceless. Fragile. Still hanging.",
-      "damage_value_euro": 2000,
+      "damage_value_sov": 2000,
       "destruction_trigger": null,
       "near_miss_during": "gustav_chase",
       "near_miss_dialogue": "The chandelier sways dangerously but holds. Herr Ober exhales audibly.",

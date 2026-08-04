@@ -17,13 +17,13 @@
 ### What The Item Actually Is
 A rectangle of black plastic, 85×54mm, with the Backroom's spade-and-laurel mark blind-embossed in one corner. There is **no name on it.** There is **no number on it.** There is no expiry date, no signature strip, no magnetic stripe, and nothing on the reverse but the mark again, smaller. It is not personalised because it is not personal, and it is not personal because the house cuts them in batches.
 
-The cage cuts one for any guest who has moved roughly **€1,000 across the Backroom's real tables — in either direction.** Won it, lost it, or churned it through the rake: the threshold is turnover, not outcome, and the little card that comes with it is the identical card either way, printed in a batch, with the identical wording:
+The cage cuts one for any guest who has moved roughly **1,000 Sovs across the Backroom's real tables — in either direction.** Won it, lost it, or churned it through the rake: the threshold is turnover, not outcome, and the little card that comes with it is the identical card either way, printed in a batch, with the identical wording:
 
 > *"The house would be glad of your company again."*
 
-Which is true. The house would. The house is extremely glad of the company of anybody who has demonstrated they will move a thousand euro across a table in a room with a documented edge.
+Which is true. The house would. The house is extremely glad of the company of anybody who has demonstrated they will move a thousand Sovs across a table in a room with a documented edge.
 
-Mechanically, the card does exactly one thing: it satisfies Anton's **attire** requirement at the door in place of Black-Tie Attire. It does not satisfy the stat check. It does not satisfy the €500 collateral. It does not open the velvet rope to the High Stakes Salon, the Private Boxes, or the vault antechamber. It gets the party down the stairs in whatever they happen to be wearing.
+Mechanically, the card does exactly one thing: it satisfies Anton's **attire** requirement at the door in place of Black-Tie Attire. It does not satisfy the stat check. It does not satisfy the 500 Sovs collateral. It does not open the velvet rope to the High Stakes Salon, the Private Boxes, or the vault antechamber. It gets the party down the stairs in whatever they happen to be wearing.
 
 ### What The Bros Believe It Is
 "They don't advertise this. There's no application. You can't *ask* for one — I checked, I asked, and the guy went and got the card, which tells you the asking is part of it. Point is we're on a list now. Somewhere in that building there is a list, and it is not a long list, and we are on it. That's Europe-wide access, potentially. I'd honestly try it at an airport."
@@ -35,8 +35,8 @@ Mechanically, the card does exactly one thing: it satisfies Anton's **attire** r
 | Attribute | Value |
 |-----------|-------|
 | **Purchase Price** | N/A (issued by the house — not sold, not purchasable, not obtainable by asking, despite Lord Pilsner asking) |
-| **Actual Value** | €0.11 (batch-cut plastic; the embossing die is thirty years old and paid for) |
-| **Resale Value** | €0 (worthless — and it is not transferable, so a buyer would get nothing) |
+| **Actual Value** | 0.11 Sovs (batch-cut plastic; the embossing die is thirty years old and paid for) |
+| **Resale Value** | 0 Sovs (worthless — and it is not transferable, so a buyer would get nothing) |
 | **Can Be Sold** | No |
 | **Can Be Dropped** | No (permanent key item) |
 | **Can Be Traded** | No — the card is party-scoped; whichever bro is holding it at the door is the bro who presents it |
@@ -75,12 +75,12 @@ Charm (Everyone else):      0  (the card is unreadable to anybody outside that b
 ### Passive Effects
 | Effect | Description |
 |--------|--------------|
-| **Attire Substitution** | Satisfies Anton's Black-Tie Attire item requirement at the Backroom door. The stat check (+3 Charm **or** +3 Bravado) and the €500 collateral are unaffected and still apply in full |
+| **Attire Substitution** | Satisfies Anton's Black-Tie Attire item requirement at the Backroom door. The stat check (+3 Charm **or** +3 Bravado) and the 500 Sovs collateral are unaffected and still apply in full |
 | **The House Would Be Glad** | Backroom staff greet the party by sight rather than by assessment on every subsequent entry. No comps, no credit, no odds change |
 | **Presented Unprompted** | On first entry to any gated venue in any city, a bro presents the card. It is never accepted anywhere except the Backroom door, and no venue authors a unique refusal for it — the existing rejection line plays, unchanged |
 
 ### What It Does NOT Do
-- ❌ Waive, reduce, or defer the €500 collateral by one euro
+- ❌ Waive, reduce, or defer the 500 Sovs collateral by one Sov
 - ❌ Satisfy the +3 Charm / +3 Bravado door check
 - ❌ Open the High Stakes Salon, the Private Boxes, or the vault antechamber
 - ❌ Confer credit, a line, a tab, comps, or any standing with the cage beyond being recognised on sight
@@ -135,14 +135,14 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 ### Gates/Unlocks
 | What It Unlocks | How |
 |------------------|-----|
-| Backroom entry without Black-Tie Attire equipped | Card held; stat check and €500 collateral still enforced separately |
+| Backroom entry without Black-Tie Attire equipped | Card held; stat check and 500 Sovs collateral still enforced separately |
 | Staff recognition on entry (greeting instead of assessment) | Automatic once issued |
 | The Haberdashery's Black-Tie Attire becomes optional for this door | Automatic once issued — and the party has usually already bought it |
 
 ### Achievement
 - **Achievement Name**: "Valued Guest"
 - **Description**: "Receive a Member's Card from The Black-Tie Backroom."
-- **Hidden Description**: "Move €1,000 across the house's tables. Direction not important."
+- **Hidden Description**: "Move 1,000 Sovs across the house's tables. Direction not important."
 
 ---
 
@@ -228,10 +228,10 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 
 ## 📝 Development Notes
 
-- **The card substitutes for attire only.** Any pass that lets it waive the €500 collateral or the +3 stat check has broken both the door and the Backroom's economy. The three entry conditions are independent and stay independent
+- **The card substitutes for attire only.** Any pass that lets it waive the 500 Sovs collateral or the +3 stat check has broken both the door and the Backroom's economy. The three entry conditions are independent and stay independent
 - **Nobody explains the threshold.** No NPC, narrator line, tooltip, or achievement string says out loud that the card is cut on turnover rather than on winning. The box of identical printed slips under the coat-check counter is visible in the issue frame and that is the entire delivery
 - **The wording is identical for winners and losers** — same card, same slip, same batch, same sentence. If a later pass writes a second version of the note for a winning party, the joke is gone
 - The card is **party-scoped, not per-bro** — one card, one key-item slot, whoever is at the front presents it. No variants, no duplicates, no arguments about custody authored
 - Blind embossing must be legible at 48×32 at a shallow angle and effectively invisible head-on. Chadwick's inability to photograph it is a rendering requirement
-- Confirm the issue trigger and threshold against "High Stakes" when that quest is authored; until then the €1,000-turnover rule and the provisional quest ID above are this file's assumption and are flagged as such
+- Confirm the issue trigger and threshold against "High Stakes" when that quest is authored; until then the 1,000 Sovs-turnover rule and the provisional quest ID above are this file's assumption and are flagged as such
 - The card does nothing at any other door in any other city, permanently, and no bro ever stops trying it

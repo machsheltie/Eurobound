@@ -164,7 +164,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Snug Armchair | (320, 288) | 48x48 | Worn, beloved |
 | Snug Fireplace | (368, 288) | 64x64 | Smaller hearth, fewer opinions per square meter |
 | Mic Stand | (432, 288) | 16x48 | Stage prop (Underground Karaoke League intel) |
-| Accordion Prop | (448, 288) | 32x32 | Klaus's, visibly missing parts |
+| Accordion Prop | (448, 288) | 32x32 | Kurt's, visibly missing parts |
 | Tuba Prop | (480, 288) | 32x48 | Street performer's, leaning on stage |
 
 ### Technical Notes:
@@ -287,11 +287,11 @@ assets/sprites/locations/sinfonia/moderato_pub/
 ### Quest Givers (48x96 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Klaus Idle | (0, 0) | 48x96 | Accordion strapped on, one bellows fold visibly torn |
-| Klaus Playing 1 | (48, 0) | 48x96 | Bellows extended, wheezing note |
-| Klaus Playing 2 | (96, 0) | 48x96 | Bellows compressed, pained expression |
-| Klaus Despair | (144, 0) | 48x96 | Holding broken part: "Specific parts! From SPECIFIC shops!" |
-| Klaus Quest Gesture | (192, 0) | 48x96 | Pointing toward MusikGasse, list in hand |
+| Kurt Idle | (0, 0) | 48x96 | Accordion strapped on, one bellows fold visibly torn |
+| Kurt Playing 1 | (48, 0) | 48x96 | Bellows extended, wheezing note |
+| Kurt Playing 2 | (96, 0) | 48x96 | Bellows compressed, pained expression |
+| Kurt Despair | (144, 0) | 48x96 | Holding broken part: "Specific parts! From SPECIFIC shops!" |
+| Kurt Quest Gesture | (192, 0) | 48x96 | Pointing toward MusikGasse, list in hand |
 | Bruckmann Idle | (240, 0) | 48x96 | Retired maestro, cane, immaculate old coat |
 | Bruckmann Conducting 1 | (288, 0) | 48x96 | Cane raised as baton, conducting a memory |
 | Bruckmann Conducting 2 | (336, 0) | 48x96 | Downbeat — thirty years of authority in one gesture |
@@ -396,7 +396,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Baton Dart | (208, 96) | 24x8 | Single conductor baton, dart-ready |
 | Baton Bundle | (240, 96) | 32x32 | Three batons, dartboard ammo |
 | Morning Coffee Mug | (272, 96) | 24x24 | Bradley's abstention fuel |
-| Accordion Parts | (296, 96) | 48x32 | Bellows fold + reed block (Klaus's Instrument Repair fetch items) |
+| Accordion Parts | (296, 96) | 48x32 | Bellows fold + reed block (Kurt's Instrument Repair fetch items) |
 
 ### Metronome Collection & Bar Details:
 | Element | Position | Size | Description |
@@ -751,7 +751,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Low | Pre-rendered static crowd everywhere, all pendulums frozen center, simplified 2-frame pour, no ambient particles, effects limited to UI-critical cues (stinger, stamp, save sparkle) |
 
 ### Performance Targets:
-- **Target FPS:** 40 (per location profile — cozy atmosphere priority over frame rate)
+- **Target FPS:** 60 (per location profile — cozy atmosphere priority over frame rate)
 - **Max Draw Calls:** 16 per frame (per location profile)
 - **Memory Footprint:** 40 MB maximum (per location profile)
 - **Particle Limit:** 20 (steam 3, dust 8, notes 6, confetti burst 12 — bursts replace ambient, never stack)
@@ -795,7 +795,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 |-------|---------------------|-------------------|
 | Underground Karaoke League | Die Stimme states, mic stand, Golden Mic icon + trophy, quest note pin | Die Stimme grants tournament access from the snug; Golden Mic (+5 Charm) awarded on championship |
 | Street Performer Trials | Violinist/tubist sets, hat pass, quest note pin, MusikGasse door transition | Performers claim territories; buff item rewards delivered at the bar |
-| Instrument Repair (Klaus) | Klaus despair/quest frames, accordion prop, accordion parts item | Fetch parts from MusikGasse shops; repaired-accordion playing frames on completion |
+| Instrument Repair (Kurt) | Kurt despair/quest frames, accordion prop, accordion parts item | Fetch parts from MusikGasse shops; repaired-accordion playing frames on completion |
 | Opera House Intel (Bruckmann) | Bruckmann conducting/intel frames, snug table | Reconnaissance dialogue before The Bassline Opera House boss; Vice von Strauss weakness hints |
 | Tempo Diplomat | Die Mitte full set, argument cloud, all faction flags | Impossible peace-brokering attempt; "The Moderate Voice" achievement path |
 | The Golden Mic | Golden Mic trophy large, achievement toast | Championship reward showcase + equip icon |
@@ -948,7 +948,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Seedy Underbelly Present | ❌ | Absent BY DESIGN per the profile's Safe Haven section — this is deliberately the one Sinfonia location that doesn't exploit you; the sole mild edge is regulars quietly betting on the bros' opinions (Betting Regulars sprite, Sheet 5) |
 | Gameplay Value Established | ✅ | Base of operations: save point, full rest, party management, quest hub, shop, debate mini-game, brewery stamp, Regular progression |
 | Technical Feasibility | ✅ | Eight sheets, three-atlas plan, LOD tiers, shared-overlay metronome scheduling documented |
-| Mobile Performance Budget | ✅ | 40 FPS, 16 draw calls, 40 MB, 20 particles — per location profile |
+| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 40 MB, 20 particles — per location profile |
 | Accessibility Features | ✅ | Visual cues for every audio event (ticks, clinks, thunks, gasps, stingers, polka, strings, stamp ticks); static motion variants; shape-coded factions |
 | No Crypto Elements | ✅ | None present — pure musical comedy |
 | Social Media Integration | ✅ | Metronome shelf, Die Mitte meme frame, stamp beat-sync, faction-president moments identified |

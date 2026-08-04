@@ -48,7 +48,7 @@
         "on_reveal": "Is done! Is beautiful! Look!",
         "on_duck_accusation": "Duck? No, is skeleton bird of death. In my country, we have saying: 'When duck holds scythe, winter comes.' Is very deep.",
         "validating_customer": "Yes! You understand art! Most Americans, they not understand. But you? You get it.",
-        "on_payment": "Is €[price]. For you, I do small discount. Because you appreciate real art.",
+        "on_payment": "Is [price] Sovs. For you, I do small discount. Because you appreciate real art.",
         "farewell": "You come back anytime! I do matching one for friends! Group rate!",
         "return_visit": "Ah! My favorite customer! The skeleton man! You want another? I have new designs!"
       },
@@ -106,7 +106,7 @@
       ],
       
       "post_credits_reference": {
-        "punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - €50 for any duck-related design."
+        "punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - 50 Sovs for any duck-related design."
       },
       
       "voice_direction": "Enthusiastic, confident, thick Eastern European accent, genuinely warm and proud",

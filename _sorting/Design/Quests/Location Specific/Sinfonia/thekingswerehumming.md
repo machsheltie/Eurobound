@@ -3,7 +3,7 @@
 ## 📋 Quest Identity
 - **Quest ID:** `sinfonia_sidequest_the_kings_were_humming_01`
 - **Display Name:** "The Kings Were Humming"
-- **Satirical Subtitle:** "Sixty seconds, five hundred euro, one guy eating candy"
+- **Satirical Subtitle:** "Sixty seconds, five hundred Sovs, one guy eating candy"
 - **Quest Giver:** Nobody. Aaron the Unflappable (`sinfonia_npc_aaron_unflappable_01`) offers the party a chair and nothing else @ Aaron's Corner Table (`aarons_corner_table`), The Black-Tie Backroom (`sinfonia_operahouse_blacktie_backroom_01`)
 - **City:** Sinfonia
 - **Recommended Level:** 5-7
@@ -16,10 +16,10 @@
 ### The Setup
 
 **What the bros THINK is happening:**
-> They have found the soft seat. A room full of counts, countesses, and men whose cufflinks cost more than the flight — and in the corner, alone, unguarded, sits a man in a rumpled jacket drinking a milk cocktail and eating candy at a poker table. The whole room has clearly been too polite to take his money. That politeness is a market inefficiency. They are not polite. They are three Americans with five hundred euro on deposit, a working knowledge of tuxedo cinema, and the nerve nobody else in Sinfonia has. This is the hand they tell people about.
+> They have found the soft seat. A room full of counts, countesses, and men whose cufflinks cost more than the flight — and in the corner, alone, unguarded, sits a man in a rumpled jacket drinking a milk cocktail and eating candy at a poker table. The whole room has clearly been too polite to take his money. That politeness is a market inefficiency. They are not polite. They are three Americans with five hundred Sovs on deposit, a working knowledge of tuxedo cinema, and the nerve nobody else in Sinfonia has. This is the hand they tell people about.
 
 **What is ACTUALLY happening:**
-> Aaron is the best player in the building and has been for four years. The room is not too polite to take his money; the room has tried, extensively, and stopped. He plays on feel, says so out loud, in advance, at conversational volume, to anyone who asks and several people who don't. The bros ask. He tells them. They hear a man talking himself into a mistake, push the entire €500 door collateral in on 7-2 offsuit, and are called instantly by pocket kings. It takes under a minute. Aaron is then extremely nice to them, gives them a carton of candy cigarettes and a worthless aluminum token, and wishes them luck.
+> Aaron is the best player in the building and has been for four years. The room is not too polite to take his money; the room has tried, extensively, and stopped. He plays on feel, says so out loud, in advance, at conversational volume, to anyone who asks and several people who don't. The bros ask. He tells them. They hear a man talking himself into a mistake, push the entire 500 Sovs door collateral in on 7-2 offsuit, and are called instantly by pocket kings. It takes under a minute. Aaron is then extremely nice to them, gives them a carton of candy cigarettes and a worthless aluminum token, and wishes them luck.
 
 **Why it's funny:**
 > The player never touches a card. There is no bet slider, no odds display, no moment where the outcome is in question — the scene is a cinematic and the party is furniture in it. The only input the player has is choosing *which* embarrassing sentence comes out of a bro's mouth next, and every option leads to the same swept pot. The bros narrate tells off a man who has not moved, while six feet away at the next table Graf von Zittrig — who has an actual, documented, learnable cufflink tell — bluffs a stranger in full view of nobody. Nothing in the scene points at that. Nothing in the scene points at anything.
@@ -38,11 +38,11 @@
 
 ### Quest Initiation
 
-**Trigger:** `blacktie_event_kings_were_humming_01` — the party approaches Aaron's Corner Table inside The Black-Tie Backroom with entry conditions met (Anton's attire and stat check passed, €500 collateral posted at the deposit window). Fires **once per save, ever.**
+**Trigger:** `blacktie_event_kings_were_humming_01` — the party approaches Aaron's Corner Table inside The Black-Tie Backroom with entry conditions met (Anton's attire and stat check passed, 500 Sovs collateral posted at the deposit window). Fires **once per save, ever.**
 
 **Location:** `aarons_corner_table`, a named zone of the Backroom main floor. Felt-covered corner table, its own low pendant lamp, no house chip rail, no dealer plaque, no bet-placement markings, set off the traffic flow. The player has to choose to walk over. The bros make that choice for the party.
 
-**Prerequisite state:** the €500 is on deposit as house chips. It is not the player's gold; the gold above €500 never enters this scene in any form.
+**Prerequisite state:** the 500 Sovs is on deposit as house chips. It is not the player's gold; the gold above 500 Sovs never enters this scene in any form.
 
 ---
 
@@ -57,9 +57,9 @@
 
 ---
 
-**If the party is holding less than €500 gold:**
+**If the party is holding less than 500 Sovs:**
 
-**Lord Pilsner:** "€500 COLLATERAL?! That's... that's a lot of döner."
+**Lord Pilsner:** "500 Sovs COLLATERAL?! That's... that's a lot of döner."
 
 **Anton:** "It's also the minimum. Döner is not accepted."
 
@@ -73,7 +73,7 @@ These are author-locked and apply to every implementation pass, forever:
 
 1. **The betting UI never opens at this table.** No bet slider, no call/raise/fold prompt, no chip-drag, no hand display, no pot-odds readout, no "your cards" panel. Not at any beat, not on any path, not in any later build.
 2. **The player never holds cards.** There is no version of this scene in which the party is dealt in. The bros are dealt in. The party watches the bros.
-3. **The outcome is fixed.** Every pick, every branch, every combination of the three player inputs reaches the identical result: the €500 collateral is lost, both items are granted, Aaron goes ambient. There is no win state and no near-miss.
+3. **The outcome is fixed.** Every pick, every branch, every combination of the three player inputs reaches the identical result: the 500 Sovs collateral is lost, both items are granted, Aaron goes ambient. There is no win state and no near-miss.
 4. **The table is visually distinct from the room's real, fair, playable poker tables.** Different felt tone, its own pendant lamp, no house dressing. A player must never be able to confuse Aaron's corner with a table they can sit down at — the Backroom's actual poker, roulette, and blackjack tables are real minigames with real house-edge math and this is not one of them.
 5. **Nothing explains it.** No dealer aside, no local tipping the player off, no Madame Karten explainer, no narrator verdict, no tooltip, no achievement string, no post-hand summary card that accounts for why Aaron wins. Not now, not in a patch. The player watches it and is trusted.
 6. **One time only.** No rematch, no second scene, no difficulty tier, no "beat Aaron" content.
@@ -134,7 +134,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 #### PICK 2 — "The Shove"
 
-**Prompt:** *Five hundred euro is about to cross a table.*
+**Prompt:** *Five hundred Sovs is about to cross a table.*
 
 **Option A — "The Cuff" (Lord Pilsner):** *He stands. He adjusts a cuff. There is no cufflink in the cuff; it is a rented shirt and the sleeve is held with a button like everyone else's.*
 > "I want the whole thing in. All of it. And I want him to watch me do it slow."
@@ -151,10 +151,10 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 **Lord Pilsner:** "Make the bet big. Show him what American capital looks like."
 
-*Every chip the party posted at the door goes across the felt. Exactly €500 in house silver. Not one coin more.*
+*Every chip the party posted at the door goes across the felt. Exactly 500 Sovs in house silver. Not one coin more.*
 
 **Narrator:**
-> "Five hundred euro in silver chips crossed a table in Sinfonia at one in the morning. Two other tables were mid-hand. The string quartet did not stop."
+> "Five hundred Sovs in silver chips crossed a table in Sinfonia at one in the morning. Two other tables were mid-hand. The string quartet did not stop."
 
 ---
 
@@ -198,7 +198,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 *The dealer sweeps. The room does not react, because the room has seen this, and because the room stopped reacting some time last year. Madame Karten glances over from the floor, the way a floor manager glances at a table, and goes back to what she was doing.*
 
-*[COLLATERAL FORFEIT: −€500 house chips — the party's entire door deposit. Gold above €500: untouched.]*
+*[COLLATERAL FORFEIT: −500 Sovs house chips — the party's entire door deposit. Gold above 500 Sovs: untouched.]*
 
 **Bradley:** *flat* "That was all of it."
 
@@ -270,7 +270,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 *They walk. It is four kilometers to the hostel and it is two degrees out and Chadwick is filming the token the whole way.*
 
 **Narrator:**
-> "They arrived at the hostel at ten to three in the morning, holding a carton of candy cigarettes and a piece of aluminum, having entered the building with five hundred euro. Two of them were still talking about it at the door."
+> "They arrived at the hostel at ten to three in the morning, holding a carton of candy cigarettes and a piece of aluminum, having entered the building with five hundred Sovs. Two of them were still talking about it at the door."
 
 *Scene ends. `blacktie_event_kings_were_humming_01` is consumed. Aaron transitions permanently to ambient state at the same table (rotating dialogue: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`).*
 
@@ -278,12 +278,12 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 ### Stakes & Resolution
 
-**The stake is exactly the €500 door collateral. Never more, never scaled, never a percentage of held gold.**
+**The stake is exactly the 500 Sovs door collateral. Never more, never scaled, never a percentage of held gold.**
 
 | Element | Rule |
 |---------|------|
-| **What is at risk** | The €500 posted at the deposit window as house chips, in full |
-| **What is not at risk** | Every coin of gold above €500. It is not in the room. It cannot be reached by this scene, at any beat, by any pick |
+| **What is at risk** | The 500 Sovs posted at the deposit window as house chips, in full |
+| **What is not at risk** | Every coin of gold above 500 Sovs. It is not in the room. It cannot be reached by this scene, at any beat, by any pick |
 | **Can the party post more?** | No. The collateral is a fixed door amount and the encounter reads that amount, not the party's wallet |
 | **Underfunded parties** | Bounced by Anton upstream (see pre-beat). The encounter cannot fire |
 | **Partial loss** | Does not exist. There is no path on which any portion of the collateral survives |
@@ -296,8 +296,8 @@ Because the collateral is uniform by construction, **every player loses the iden
 ### Rewards
 
 - **Item:** `item_candy_smokes` — Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes. Permanent party item; bite one for a small, short comedy Bravado buff plus a chalk ring around the mouth. Carton never empties. *(`Design/Inventory/items/candy_smokes_item.md`)*
-- **Item:** `item_tractor_nft` — "She Thinks My Tractor's Sexy" (Mint #42). Quest item; Sinfonia's fourth Frat Bro NFT target; worth €0 to every bank, exchange, and legitimate vendor in the game. *(`Design/Inventory/items/tractor_nft_item.md`)*
-- **Gold:** −€500 (the collateral, in full)
+- **Item:** `item_tractor_nft` — "She Thinks My Tractor's Sexy" (Mint #42). Quest item; Sinfonia's fourth Frat Bro NFT target; worth 0 Sovs to every bank, exchange, and legitimate vendor in the game. *(`Design/Inventory/items/tractor_nft_item.md`)*
+- **Gold:** −500 Sovs (the collateral, in full)
 - **Stat Change:** **+1 Bravado** — party-wide, applied at the reframe. They came out of that room with two assets they did not walk in with, and one of them is on the chain.
 - **Status:** None. No Embarrassed, no Cleaned Out, no debuff of any kind. Nothing in the game's status system registers that this happened to them, and nothing may be added that does.
 - **Unlocks:** Aaron's permanent ambient state; the Sinfonia NFT hunt's fourth entry; Post-Credits Scene "The Home Game"; achievement **"Digital Land"**.
@@ -310,8 +310,8 @@ Because the collateral is uniform by construction, **every player loses the iden
 
 - **Aaron stays.** Permanently, at the same corner table, for the rest of the game. Every subsequent Backroom visit shows him in the background dragging strange pots with no visible reaction, mid-ritual, tumbler in frame. He is never a playable opponent and the table never becomes one.
 - **The corner is quieter than it was.** Nothing in the room changes about it. No plaque goes up, no NPC starts loitering there, no marker appears on the map. It is the same table it was before the party walked over.
-- **The cage remembers the receipt, and nobody else does.** The deposit window will re-collateralize the party at €500 on any subsequent visit, at which point the Backroom's real games are fully available and fully fair — the poker, roulette, and blackjack tables are unaffected by this scene in either direction.
-- **The party is €500 lighter walking into the rest of Sinfonia.** A party that arrived at the Backroom with a thin margin now cannot immediately afford the Haute Couture Haberdashery's €500 Valued Client tier. Nothing gates. Nothing warns. The money is simply somewhere else now.
+- **The cage remembers the receipt, and nobody else does.** The deposit window will re-collateralize the party at 500 Sovs on any subsequent visit, at which point the Backroom's real games are fully available and fully fair — the poker, roulette, and blackjack tables are unaffected by this scene in either direction.
+- **The party is 500 Sovs lighter walking into the rest of Sinfonia.** A party that arrived at the Backroom with a thin margin now cannot immediately afford the Haute Couture Haberdashery's 500 Sovs Valued Client tier. Nothing gates. Nothing warns. The money is simply somewhere else now.
 
 ### NPC Callbacks
 
@@ -319,7 +319,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 - **Anton at the door, next visit:** *the same assessment, at the same length, in the same order, with no reference to the previous evening* "Your attire is... acceptable. Your collateral is... sufficient." **Lord Pilsner:** "We're known here now." **Anton:** "Yes."
 - **Siegfried at the coat check** (`sinfonia_npc_siegfried_coatcheck_01`): *hands the coats back, sees the carton sticking out of a jacket pocket, says nothing about it, and puts two gold-wrapper wafer bars on the counter* "For the walk. It's cold."
 - **Madame Karten** (`sinfonia_npc_madame_karten_01`), *floor-side, warm as a grandmother, steering as a shark*: "Darling. There are three tables free tonight." *(She is steering them onto the house's real games, which have a documented edge. She never confesses and never winks, here or anywhere.)*
-- **Grounds For Concern, Kaffeehaus Row** *(if the party orders anything after the Backroom)*: **Barista:** "Five euro." **Chadwick:** *holding up the aluminum token* "Do you take—" **Barista:** "No."
+- **Grounds For Concern, Kaffeehaus Row** *(if the party orders anything after the Backroom)*: **Barista:** "Five Sovs." **Chadwick:** *holding up the aluminum token* "Do you take—" **Barista:** "No."
 
 ### Easter Eggs
 
@@ -337,7 +337,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 ### Bros' Delusional Commentary
 
 **Lord Pilsner:**
-> "You want to know the actual read? The actual read is that I *let* him have that. Because a room like that — a room with chandeliers, a room with a *doorman* — that room is not about one hand. That room is about who they remember at four in the morning. And boys, I promise you, they are still talking about the American who came in and put everything in the middle without blinking. That's a legacy purchase. Five hundred euro. Cheap."
+> "You want to know the actual read? The actual read is that I *let* him have that. Because a room like that — a room with chandeliers, a room with a *doorman* — that room is not about one hand. That room is about who they remember at four in the morning. And boys, I promise you, they are still talking about the American who came in and put everything in the middle without blinking. That's a legacy purchase. Five hundred Sovs. Cheap."
 
 **Chadwick:**
 > "So the token's a mint number FORTY-TWO, which — okay — in a limited drop, that's basically front-row. That's an early-adopter position. I'm not saying we're rich, chat, I'm saying the *floor* on this is higher than what we put in. And I got the whole handoff on video, which is provenance, which is honestly the part that appreciates."
@@ -348,7 +348,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 ### Narrator Commentary
 
 **At the shove:**
-> "Five hundred euro in silver chips crossed a table in Sinfonia at one in the morning. Two other tables were mid-hand. The string quartet did not stop."
+> "Five hundred Sovs in silver chips crossed a table in Sinfonia at one in the morning. Two other tables were mid-hand. The string quartet did not stop."
 
 **At the sweep:**
 > "The dealer's rake took four seconds. The party's deposit receipt was voided at the cage before any of them reached the stairs."
@@ -357,7 +357,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 > "He gave them the carton first, because he thought they needed the carton first."
 
 **On the walk back:**
-> "They arrived at the hostel at ten to three in the morning, holding a carton of candy cigarettes and a piece of aluminum, having entered the building with five hundred euro. Two of them were still talking about it at the door."
+> "They arrived at the hostel at ten to three in the morning, holding a carton of candy cigarettes and a piece of aluminum, having entered the building with five hundred Sovs. Two of them were still talking about it at the door."
 
 ---
 
@@ -365,7 +365,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 
 ### Prerequisites
 - **The Black-Tie Backroom must be discovered and entered** — via the Bassline Opera House backstage door, a Café Existenz regular's hint, or Kaffeehaus Row gossip.
-- **Anton's door check passed:** Black-Tie Attire equipped (Haute Couture Haberdashery) **or** `item_members_card`; **+3 Charm or +3 Bravado**; **€500 gold** posted as collateral.
+- **Anton's door check passed:** Black-Tie Attire equipped (Haute Couture Haberdashery) **or** `item_members_card`; **+3 Charm or +3 Bravado**; **500 Sovs** posted as collateral.
 - **No quest prerequisites.** No prior Sinfonia sidequest is required and none is recommended. The scene works best as the party's first act inside the Backroom, before they have played a single real hand.
 
 ### Unlocks
@@ -378,7 +378,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 ### Cross-References
 - **The Black-Tie Backroom** (`Design/World Design/Sinfonia/the_black_tie_backroom.md`) — the location file owns the zone, the door, the collateral system, and the room's real minigames. This file owns the scene. Neither restates the other.
 - **Aaron the Unflappable** (`Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`) — his verbatim lines in this file are byte-identical to his profile's Dialogue section. Any future edit to one must be applied to both and to the location's interactions JSON.
-- **Haute Couture Haberdashery** — the €500 Valued Client tier and its PATH B mannequin alternative. A party that busts here cannot immediately afford PATH A. This is a knock-on, not a gate, and no character in either quest ever connects the two events.
+- **Haute Couture Haberdashery** — the 500 Sovs Valued Client tier and its PATH B mannequin alternative. A party that busts here cannot immediately afford PATH A. This is a knock-on, not a gate, and no character in either quest ever connects the two events.
 - **Herr Falsch / The Card Shark** (`sinfonia_npc_herr_falsch_01`) — the Backroom's actual beatable opponent, on the actual playable tables, with an actual hidden tell. He is where the "win a hand off a Sinfonian" fantasy lives. He has never sat down at Aaron's table and nobody remarks on it.
 - **Siegfried's couchsurf** (`sinfonia_npc_siegfried_coatcheck_01`) — his host requirements are win-at-least-once and lose-at-least-once **at the Backroom's real games**. This scene satisfies neither: the party never held cards and never played. No flag is written by this quest toward that questline.
 - **Frat Bro NFT Sidequest** (`Design/Quests/fratbronft.md`) — 12 NFTs, 4 per city; milestones at 4 / 8 / 12. The token is one of Sinfonia's four.
@@ -390,7 +390,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 ### Screenshot Moments
 
 1. **The Read.** Wide corner-table shot framed for portrait: Aaron mid-CRUNCH, chalk ring at the corner of his mouth, tumbler in hand, three men in the foreground pointing at him with their mouths open. Graf von Zittrig is in the frame, at the next table, touching his cufflinks. No text needed for the joke to land at thumbnail size.
-2. **The Reveal.** Tight on the felt: 7-2 offsuit on one side, pocket kings on the other, €500 in silver between them, and one hand already reaching off-frame for the carton. Screenshot button stays live through the sweep animation.
+2. **The Reveal.** Tight on the felt: 7-2 offsuit on one side, pocket kings on the other, 500 Sovs in silver between them, and one hand already reaching off-frame for the carton. Screenshot button stays live through the sweep animation.
 3. **The Handoff.** Two-shot at Beat 8: a scratched aluminum token held out across the felt in complete sincerity, received in complete sincerity, by people who mean two entirely different things by it. Chadwick's phone is up in the background.
 
 **Bonus capture:** the doggies-caught-in-the-rain beat — three ruined men standing over empty felt while the person who just took everything they had leans forward to check whether they're okay.
@@ -495,7 +495,7 @@ He eats it anyway. Doug deals the next hand.
 | Mobile-optimized moments | ✅ |
 | Nothing explains the joke | ✅ — no truth-teller, no aside, no verdict, no summary card |
 | Betting UI never opens | ✅ |
-| Stake is exactly the €500 collateral | ✅ |
+| Stake is exactly the 500 Sovs collateral | ✅ |
 | Aaron's dignity intact; he is never the joke | ✅ |
 | World names only (no real cities/dynasties) | ✅ |
 
@@ -509,11 +509,11 @@ He eats it anyway. Doug deals the next hand.
 - **Audio:** the CRUNCH cue is on the critical path and must be mixed above room ambience so it lands in the gap at Beat 1. No sting under the reveal line. No music change at any point in the scene — the string quartet plays the same piece from Beat 1 to Beat 9 and does not resolve it.
 - **Art:** `aaron_the_unflappable.png` (main sheet, incl. the crunch frame), the corner-table zone art, both item icons, the shoe prop, and the voided-receipt spike prop. The 7-2 offsuit and the pocket kings are read off the felt in the cinematic framing, never from a UI panel.
 - **The room does not react.** Crowd sprites during the sweep continue their existing idle loops. No head-turns, no reaction animations, no gasps in the ambient mix. Any pass that adds a reaction shot to this scene has broken it.
-- **Never soften the loss.** No partial refund, no pity payout, no "at least you got items" framing in any UI string. The party is out €500 and up two worthless objects and the game says nothing about it.
+- **Never soften the loss.** No partial refund, no pity payout, no "at least you got items" framing in any UI string. The party is out 500 Sovs and up two worthless objects and the game says nothing about it.
 
 ### Engine Requirements
 
-- **Fixed-stake collateral grant/removal.** The Backroom's door writes a **fixed-amount** house-chip deposit of exactly €500 at entry (`blacktie_collateral_posted = 500`), backed by gold removed from the party wallet at the deposit window. Beat 6 **consumes the deposit in full** and voids the receipt: the deposit is set to 0 and **no gold is returned at exit**. The scene reads the deposit value, never the wallet — it must be impossible for any wallet balance above €500 to be reachable from this event, by any code path.
+- **Fixed-stake collateral grant/removal.** The Backroom's door writes a **fixed-amount** house-chip deposit of exactly 500 Sovs at entry (`blacktie_collateral_posted = 500`), backed by gold removed from the party wallet at the deposit window. Beat 6 **consumes the deposit in full** and voids the receipt: the deposit is set to 0 and **no gold is returned at exit**. The scene reads the deposit value, never the wallet — it must be impossible for any wallet balance above 500 Sovs to be reachable from this event, by any code path.
 - **Underfunded gate is upstream.** Anton's check (`gold >= 500` at the bottom of the stairs) is the only gate. `blacktie_event_kings_were_humming_01` has no wallet condition of its own and must never be reachable with `blacktie_collateral_posted != 500`.
 - **Scene-triggered item grants.** `item_candy_smokes` and `item_tractor_nft` are granted at Beat 8 by the scene itself, in that order, party-scoped and permanent. Neither exists in any vendor table, loot table, house inventory, or drop list anywhere in the game; the scene is the sole source of both. Grants are idempotent — re-entry cannot duplicate them (see the one-time flag).
 - **One-time-scene flag + ambient-Aaron state.** Persist a **per-NPC boolean**, `encounter_scene_completed[<npc_id>]`, set the first time that NPC's scripted encounter resolves and never cleared thereafter — the same shape and semantics as the Chronicles payload flag `chronicles_entry_completed[<npc_id>]` established in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`. This quest requires exactly one: `encounter_scene_completed[sinfonia_npc_aaron_unflappable_01]`.
@@ -526,8 +526,8 @@ He eats it anyway. Doug deals the next hand.
 ### Testing Priorities
 
 1. **Verify no path opens a betting interface** at `aarons_corner_table` — before, during, or after the scene, on every pick combination, on re-entry, and with the room's real poker minigame already open elsewhere on the floor.
-2. **Verify the loss is exactly €500** with a party holding €500, €501, €2,000, and €50,000. The delta must be identical in all four cases.
+2. **Verify the loss is exactly 500 Sovs** with a party holding 500 Sovs, 501 Sovs, 2,000 Sovs, and 50,000 Sovs. The delta must be identical in all four cases.
 3. **Verify all nine pick combinations** reach Beat 3 through Beat 9 unchanged, with no divergence in dialogue, grants, stat change, or flag writes.
-4. **Verify the encounter cannot fire underfunded** — including a save that posted collateral, then somehow reached €0 elsewhere before approaching the table.
+4. **Verify the encounter cannot fire underfunded** — including a save that posted collateral, then somehow reached 0 Sovs elsewhere before approaching the table.
 5. **Verify re-approach after resolution** never re-grants either item, never re-charges collateral, and never replays the scene, including across a city transition and a reload from a save taken mid-scene.
 6. **Verify Aaron's ambient rotation is live** on the first re-approach, not on the next visit — there must be no dead window between scene end and ambient start.

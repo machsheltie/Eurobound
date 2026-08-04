@@ -61,7 +61,7 @@
         "interaction_text": "Deposit your collateral",
         "operator": "sinfonia_npc_anton_doorman_01",
         "transaction": {
-          "deposit_euro": 500,
+          "deposit_sov": 500,
           "returns_item": "collateral_receipt",
           "converts_to": "house_chips",
           "refund_on_exit": true,
@@ -160,7 +160,7 @@
         },
         "triggers_event": "blacktie_event_kings_were_humming_01",
         "trigger_conditions": {
-          "collateral_on_deposit_euro": 500,
+          "collateral_on_deposit_sov": 500,
           "scene_not_yet_seen": true
         },
         "post_scene_interaction": {
@@ -202,7 +202,7 @@
         "betting_ui": true,
         "opponent": "sinfonia_npc_herr_falsch_01",
         "boss_challenge": {
-          "available_when": {"any_of": ["total_losses_1000_euro", "cheating_discovered"]},
+          "available_when": {"any_of": ["total_losses_1000_sov", "cheating_discovered"]},
           "transitions_to": "hybrid_combat"
         },
         "touch_zone": {"x": 90, "y": 90, "width": 80, "height": 64}
@@ -234,7 +234,7 @@
       "method": "approach_zone",
       "conditions": {
         "entry_conditions_met": true,
-        "collateral_on_deposit_euro": 500,
+        "collateral_on_deposit_sov": 500,
         "scene_not_yet_seen": true
       },
       "pre_beat": {
@@ -249,7 +249,7 @@
       "betting_ui_opens": false,
       "player_holds_cards": false,
       "bet_slider_shown": false,
-      "stake_euro": 500,
+      "stake_sov": 500,
       "stake_source": "door_collateral_chips",
       "gold_above_stake": "untouched",
       "player_input": "2-3 pick-which-terrible-line beats; all paths reach the identical outcome",
@@ -302,7 +302,7 @@
         "id": "the_sweep",
         "canonical_dialogue": [],
         "staging_pointer": "quest_file",
-        "mechanical_effect": {"collateral_chips_removed_euro": 500}
+        "mechanical_effect": {"collateral_chips_removed_sov": 500}
       },
       {
         "phase": 7,
@@ -385,7 +385,7 @@
       "zone": "high_stakes_salon",
       "display_name": "The House Doesn't ALWAYS Win",
       "bravado_boost": 4,
-      "requirement": {"single_win_euro": 500},
+      "requirement": {"single_win_sov": 500},
       "gallery_entry": true
     },
     {

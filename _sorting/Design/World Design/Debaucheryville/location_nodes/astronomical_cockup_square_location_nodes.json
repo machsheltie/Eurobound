@@ -9,7 +9,7 @@
         "entry_condition": "Accessible anytime. Crowd density increases 15 minutes before hourly clock show."
       },
       "interior": {
-        "theme": "600 years of engineering meets 38 seconds of disappointment and €300 of regrettable purchases",
+        "theme": "600 years of engineering meets 38 seconds of disappointment and 300 Sovs of regrettable purchases",
         "features": [
           "entry_point",
           "clock_tower: astronomical_clock_attraction",
@@ -112,8 +112,8 @@
     "vendor_cluster_scam_economy_hub": {
       "type": "economic_zone",
       "vendors": 6,
-      "total_potential_spending": "€380-755",
-      "actual_value_of_goods": "~€40",
+      "total_potential_spending": "380 Sovs-755",
+      "actual_value_of_goods": "~40 Sovs",
       "markup_percentage": "875%+",
       "description": "A coordinated ecosystem of scam artists who've perfected tourist exploitation. The Party Monk blesses you toward his cousin's wine cart. The merchandise vendor points toward the tattoo shop. The wristband guy appears after you've been rejected from clubs. Everyone wins except the bros."
     },
@@ -174,7 +174,7 @@
     "hidden_area_childrens_birthday_party_easter_egg": {
       "type": "easter_egg",
       "unlock_condition": "random_10%_after_wristband_purchase",
-      "description": "An actual children's birthday party is visible in the background, with kids wearing the same wristbands the bros just paid €90 for.",
+      "description": "An actual children's birthday party is visible in the background, with kids wearing the same wristbands the bros just paid 90 Sovs for.",
       "player_reaction": "realization_horror"
     }
   },

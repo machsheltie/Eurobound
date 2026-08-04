@@ -328,7 +328,7 @@ All atmospheric particle systems and environmental storytelling:
 
 ## 📱 Mobile Optimization
 
-**Frame Rate Target:** 50 FPS  
+**Frame Rate Target:** 60 FPS  
 **Memory Footprint:** 45MB maximum  
 **Draw Calls:** Maximum 18  
 **Mobile Optimization:** 
@@ -572,7 +572,7 @@ All atmospheric particle systems and environmental storytelling:
 | Seedy Underbelly Present | ✅ PASS | Random number generator sold as revolutionary AI brewing |
 | Gameplay Value Established | ✅ PASS | Boss battle, taste profile mini-game, vendor, brewery tour finale |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented (LOD, atlases, potato mode) |
-| Mobile Performance Budget | ✅ PASS | 50 FPS, 18 draw calls, 45MB |
+| Mobile Performance Budget | ✅ PASS | 60 FPS, 18 draw calls, 45MB |
 | Accessibility Features | ✅ PASS | Pattern-based gauge, text-based buzzwords, visual audio cues |
 | No Crypto Elements | ✅ PASS | Crypto content is the established satirical target of this location's source material |
 | Social Media Integration | ✅ PASS | BrewBot quotes, poster wall, foam explosion moments |

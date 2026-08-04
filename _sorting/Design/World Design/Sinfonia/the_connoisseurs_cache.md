@@ -22,7 +22,7 @@
 - **Normal Exit**: Front door (after listening to at least one provenance speech)
 - **Completion Requirements**: N/A (shop location)
 - **Failure States**: None (commerce always welcome)
-- **Progressive Unlocks**: "Discerning Customer" after €200 spent (skip provenance speeches, access specialty items)
+- **Progressive Unlocks**: "Discerning Customer" after 200 Sovs spent (skip provenance speeches, access specialty items)
 
 ## Visual Design
 ### Exterior Description
@@ -118,48 +118,48 @@ The shop sees opportunity in confusion:
 **Healing Items (Artisanal Remedies)**:
 | Item | Price | Effect | Provenance |
 |------|-------|--------|------------|
-| Artisanal Pain Relief | €15 | +50 HP | "Hand-pressed herbs from Alpine monasteries" |
-| Gourmet Energy Bar | €12 | +30 HP, +10 SP | "Single-origin cacao, ethically traded" |
-| Heritage Herbal Tea | €10 | +20 HP, cures status effects | "Blend unchanged since 1847" |
-| Mineral Water (Imported) | €8 | +15 HP, cures Thirsty | "From a spring that inspired Beethoven" |
-| Restorative Tincture | €25 | +75 HP | "Apothecary recipe, seven generations" |
-| Rejuvenation Elixir | €40 | Full HP restore | "The formula is a family secret" |
+| Artisanal Pain Relief | 15 Sovs | +50 HP | "Hand-pressed herbs from Alpine monasteries" |
+| Gourmet Energy Bar | 12 Sovs | +30 HP, +10 SP | "Single-origin cacao, ethically traded" |
+| Heritage Herbal Tea | 10 Sovs | +20 HP, cures status effects | "Blend unchanged since 1847" |
+| Mineral Water (Imported) | 8 Sovs | +15 HP, cures Thirsty | "From a spring that inspired Beethoven" |
+| Restorative Tincture | 25 Sovs | +75 HP | "Apothecary recipe, seven generations" |
+| Rejuvenation Elixir | 40 Sovs | Full HP restore | "The formula is a family secret" |
 
 **Support Items (Cultural Enhancement)**:
 | Item | Price | Effect | Description |
 |------|-------|--------|-------------|
-| Classical Music CD | €20 | +15% Focus (2 hours) | Improves concentration, reduces distraction |
-| Art Appreciation Guide | €25 | +10% Culture stat | Helps with authentication checks |
-| Meditation Incense | €15 | Restores SP over time | Burn between battles |
-| Pocket Philosopher | €30 | +20% Dialogue combat | Collection of witty responses |
-| Language Phrasebook | €18 | Reduces pronunciation penalties | Helps at vendors |
+| Classical Music CD | 20 Sovs | +15% Focus (2 hours) | Improves concentration, reduces distraction |
+| Art Appreciation Guide | 25 Sovs | +10% Culture stat | Helps with authentication checks |
+| Meditation Incense | 15 Sovs | Restores SP over time | Burn between battles |
+| Pocket Philosopher | 30 Sovs | +20% Dialogue combat | Collection of witty responses |
+| Language Phrasebook | 18 Sovs | Reduces pronunciation penalties | Helps at vendors |
 
 **Offensive Items (Collectibles With Purpose)**:
 | Item | Price | Effect | "Historical Significance" |
 |------|-------|--------|--------------------------|
-| Opera Glasses | €100 | Ranged advantage, +2 Perception | "Used by a Countess at the premiere of Don Giovanni" |
-| Conductor's Baton | €150 | Weapon: +3 Charm, chance to Confuse | "Allegedly touched by Strauss" |
-| Letter Opener (Ornate) | €80 | Weapon: Quick attack, low damage | "From a diplomat's desk, circa 1890" |
-| Walking Cane (Weighted) | €120 | Weapon: Moderate damage, +2 Style | "Conceals nothing. Officially." |
-| Antique Lorgnette | €90 | Thrown weapon, single use | "Too valuable to throw. But you could." |
+| Opera Glasses | 100 Sovs | Ranged advantage, +2 Perception | "Used by a Countess at the premiere of Don Giovanni" |
+| Conductor's Baton | 150 Sovs | Weapon: +3 Charm, chance to Confuse | "Allegedly touched by Strauss" |
+| Letter Opener (Ornate) | 80 Sovs | Weapon: Quick attack, low damage | "From a diplomat's desk, circa 1890" |
+| Walking Cane (Weighted) | 120 Sovs | Weapon: Moderate damage, +2 Style | "Conceals nothing. Officially." |
+| Antique Lorgnette | 90 Sovs | Thrown weapon, single use | "Too valuable to throw. But you could." |
 
 **Utility Items (Practical Sophistication)**:
 | Item | Price | Effect | Certificate Included |
 |------|-------|--------|---------------------|
-| Masquerade Mask (Basic) | €50 | Required for Baroness' Ballroom | "Carnival style, locally made" |
-| Masquerade Mask (Ornate) | €100 | +2 Mystery at masquerades | "Actual carnival import" |
-| Etiquette Guidebook | €35 | Reduces social combat difficulty | "The complete rules, annotated" |
-| Formal Event Invitation | €75 | Access to one formal event | "Transferable, untraceable" |
-| Calling Cards (Set of 20) | €25 | +5% NPC first impressions | "Embossed, naturally" |
+| Masquerade Mask (Basic) | 50 Sovs | Required for Baroness' Ballroom | "Carnival style, locally made" |
+| Masquerade Mask (Ornate) | 100 Sovs | +2 Mystery at masquerades | "Actual carnival import" |
+| Etiquette Guidebook | 35 Sovs | Reduces social combat difficulty | "The complete rules, annotated" |
+| Formal Event Invitation | 75 Sovs | Access to one formal event | "Transferable, untraceable" |
+| Calling Cards (Set of 20) | 25 Sovs | +5% NPC first impressions | "Embossed, naturally" |
 
 **Specialty Items (Discerning Customer Only)**:
 | Item | Price | Effect | Availability |
 |------|-------|--------|--------------|
-| Dance Lesson Voucher | €100 | +15% Dance skill permanently | Limited stock |
-| Art Authentication Kit | €150 | Detect all forgeries | One-time use per item |
-| VIP Opera Pass | €200 | Backstage access at Bassline | Season pass |
-| Baroness' Favor Token | €250 | +1 starting reputation at Ballroom | Rare |
-| Forged Invitation | €175 | Access anywhere, 10% detection risk | Specialty |
+| Dance Lesson Voucher | 100 Sovs | +15% Dance skill permanently | Limited stock |
+| Art Authentication Kit | 150 Sovs | Detect all forgeries | One-time use per item |
+| VIP Opera Pass | 200 Sovs | Backstage access at Bassline | Season pass |
+| Baroness' Favor Token | 250 Sovs | +1 starting reputation at Ballroom | Rare |
+| Forged Invitation | 175 Sovs | Access anywhere, 10% detection risk | Specialty |
 
 ### The Provenance System
 
@@ -174,7 +174,7 @@ The shop sees opportunity in confusion:
 *Selecting "Heritage Herbal Tea"*
 > "Ah, excellent choice. This blend dates to 1847, when the Müller family of the high valleys began cultivating these specific herbs. The lavender is from their original garden — the same plants, maintained for generations. The chamomile is wild-harvested by trained herbalists who understand the proper lunar cycle for maximum potency. The blend ratio has never been altered, except once in 1923 when a flood required temporary substitution, which the family considers 'the lost year.' You're not just buying tea. You're buying continuity."
 
-**Discerning Customer** (€200 spent):
+**Discerning Customer** (200 Sovs spent):
 - Can politely skip speeches: "The usual, please."
 - Shopkeeper nods approvingly: "You already understand."
 - Transaction completes in 5 seconds
@@ -193,7 +193,7 @@ Every purchase includes a certificate:
 - Accumulate enough and inventory fills with paper
 - Some NPCs impressed by certificates
 - Others confused: "You have a certificate... for pain medicine?"
-- Can be sold back for €1 each (insulting but possible)
+- Can be sold back for 1 Sov each (insulting but possible)
 
 ### Selfie Spot Integration
 
@@ -351,39 +351,51 @@ Every purchase includes a certificate:
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (6 PNGs)
-- shop_exterior.png - 384x384 - Curated storefront
-- main_floor.png - 512x384 - Primary shopping area
-- healing_alcove.png - 256x256 - Consumables section
-- implements_corner.png - 256x256 - Weapons/tools display
-- specialty_cabinet.png - 192x256 - Locked glass case
-- reading_nook.png - 256x256 - Support items area
+> **Authority: `PNG_Assets/The_Connoisseurs_Cache_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (4 PNGs)
-- herr_kurator.png - 64x96 - Shopkeeper (holding item)
-- herr_kurator_passionate.png - 64x96 - Mid-provenance speech
-- herr_kurator_approving.png - 64x96 - Discerning Customer recognition
-- the_browser.png - 64x96 - Trapped customer
+### Required PNG Files (7 sheets)
 
-### UI/Item Sprites (18 PNGs)
-- artisanal_pain_relief.png - 32x32 - Healing item
-- gourmet_energy_bar.png - 32x32 - Healing item
-- heritage_herbal_tea.png - 32x32 - Healing item
-- restorative_tincture.png - 32x48 - Healing item
-- classical_music_cd.png - 32x32 - Support item
-- art_appreciation_guide.png - 32x48 - Support item
-- pocket_philosopher.png - 32x32 - Support item
-- opera_glasses.png - 32x32 - Weapon
-- conductors_baton_item.png - 32x64 - Weapon
-- letter_opener.png - 32x32 - Weapon
-- masquerade_mask_basic.png - 32x32 - Utility
-- masquerade_mask_ornate.png - 48x48 - Utility
-- etiquette_guidebook.png - 32x48 - Utility
-- formal_event_invitation.png - 48x32 - Utility
-- dance_lesson_voucher.png - 48x32 - Specialty
-- art_authentication_kit.png - 48x48 - Specialty
-- certificate_template.png - 64x48 - Document
-- discerning_customer_badge.png - 32x32 - Status indicator
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | connoisseurs_cache_tileset.png | 1024x512 |
+| 2 | herr_kurator.png | 384x288 |
+| 3 | connoisseurs_cache_npcs.png | 256x128 |
+| 4 | connoisseurs_cache_items.png | 256x256 |
+| 5 | connoisseurs_cache_certificate_effects.png | 256x192 |
+| 6 | connoisseurs_cache_ui.png | 512x384 |
+| 7 | connoisseurs_cache_accessibility.png | 256x256 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/The_Connoisseurs_Cache_PNG_Assets.md`.
+
+- `shop_exterior.png`
+- `main_floor.png`
+- `healing_alcove.png`
+- `implements_corner.png`
+- `specialty_cabinet.png`
+- `reading_nook.png`
+- `herr_kurator_passionate.png`
+- `herr_kurator_approving.png`
+- `the_browser.png`
+- `artisanal_pain_relief.png`
+- `gourmet_energy_bar.png`
+- `heritage_herbal_tea.png`
+- `restorative_tincture.png`
+- `classical_music_cd.png`
+- `art_appreciation_guide.png`
+- `pocket_philosopher.png`
+- `opera_glasses.png`
+- `conductors_baton_item.png`
+- `letter_opener.png`
+- `masquerade_mask_basic.png`
+- `masquerade_mask_ornate.png`
+- `etiquette_guidebook.png`
+- `formal_event_invitation.png`
+- `dance_lesson_voucher.png`
+- `art_authentication_kit.png`
+- `certificate_template.png`
+- `discerning_customer_badge.png`
 
 ---
 

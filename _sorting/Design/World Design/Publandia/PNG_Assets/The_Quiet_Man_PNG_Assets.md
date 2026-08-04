@@ -1,7 +1,7 @@
 # The Quiet Man - Complete PNG Asset Requirements
 
 ## 📋 Overview
-An underground fight club maintaining, with total commitment, the legal fiction that it is a pub quiz — punches are "emphatic answers," knockouts are "definitive wins," and the crowd chants "TRI-VI-A!" while blood hits sawdust. This document specifies every sprite for the basement beneath a "closed" pub off the Quay of Last Resort, from the discretion-test door to Big Seamus's 47-question undefeated streak.
+An underground fight club maintaining, with total commitment, the legal fiction that it is a pub quiz — punches are "emphatic answers," knockouts are "definitive wins," and the crowd chants "TRI-VI-A!" while blood hits sawdust. This document specifies every sprite for the basement beneath a "closed" pub off the Quay of Last Resort, from the discretion-test door to Big Donnacha's 47-question undefeated streak.
 
 **Location ID:** `publandia_seedy_quiet_man_01`
 **Theme:** Fight Club with a quiz-night alibi — euphemism as institution, tourist toughness meeting reality
@@ -131,10 +131,10 @@ assets/sprites/locations/publandia/quiet_man/
 ### The Rumor Trading Post:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Orla's Table | (128, 256) | 128x96 | Side-area desk, ledger open |
+| Sinéad's Table | (128, 256) | 128x96 | Side-area desk, ledger open |
 | Notebook Stack | (256, 288) | 48x48 | Everyone's business, indexed |
 | Rumor Board | (304, 288) | 112x96 | Pinned scraps — rotating stock, prices chalked |
-| Secrets Lockbox | (416, 288) | 64x64 | The €50 tier lives here |
+| Secrets Lockbox | (416, 288) | 64x64 | The 50 Sovs tier lives here |
 | Oil Lamp | (416, 192) | 48x64 | Trading post's conspiratorial glow |
 | Coin Tin | (464, 192) | 48x48 | Information economy, cash only |
 
@@ -164,8 +164,8 @@ assets/sprites/locations/publandia/quiet_man/
 | Brigid Nurse | (0, 96) | 64x96 | Practical clothes, ice pack in hand |
 | Brigid Patching | (64, 96) | 64x96 | Working on a loser: "Hold still." |
 | Brigid Head Shake | (128, 96) | 64x96 | The disappointed KO response |
-| Orla Broker | (192, 96) | 64x96 | Always writing, never sharing her own |
-| Orla Trading | (256, 96) | 64x96 | Sliding a folded rumor across the table |
+| Sinéad Broker | (192, 96) | 64x96 | Always writing, never sharing her own |
+| Sinéad Trading | (256, 96) | 64x96 | Sliding a folded rumor across the table |
 
 ### Dialogue Portraits (64x48 each):
 | Portrait | Position | Size | Description |
@@ -173,7 +173,7 @@ assets/sprites/locations/publandia/quiet_man/
 | Ciaran Portrait | (0, 192) | 64x48 | Broadcaster grin |
 | Donal Portrait | (64, 192) | 64x48 | "That's not it, friend." |
 | Brigid Portrait | (128, 192) | 64x48 | Tired competence |
-| Orla Portrait | (192, 192) | 64x48 | Businesslike, ledger-adjacent |
+| Sinéad Portrait | (192, 192) | 64x48 | Businesslike, ledger-adjacent |
 | Ciaran Portrait Hype | (256, 192) | 64x48 | Full quiz-show voltage |
 
 ---
@@ -186,9 +186,9 @@ assets/sprites/locations/publandia/quiet_man/
 | Fighter | Position | Size | Description |
 |---------|----------|------|-------------|
 | "Tourism Bureau" Terry | (0, 0) | 64x96 | Sloppy stance, misplaced enthusiasm — tutorial opponent |
-| "The Accountant" Aoife | (64, 0) | 64x96 | Precise guard, calculated: kickboxer in office wear |
+| "The Accountant" Niamh | (64, 0) | 64x96 | Precise guard, calculated: kickboxer in office wear |
 | "Quarry" Jimmy | (128, 0) | 64x96 | Brawler bulk, takes hits to give hits |
-| "Big" Seamus O'Malley | (192, 0) | 80x112 | The Champion — complete fighter, 47-0, reads you already |
+| "Big" Donnacha O'Malley | (192, 0) | 80x112 | The Champion — complete fighter, 47-0, reads you already |
 | Generic Fighter A | (272, 0) | 64x96 | Undercard filler, local |
 | Generic Fighter B | (336, 0) | 48x96 | Undercard filler, wiry |
 
@@ -199,15 +199,15 @@ assets/sprites/locations/publandia/quiet_man/
 | Recovery Wake | (96, 112) | 64x96 | Coming to on the cot, regret loading |
 | Guard Stance Overlay | (160, 112) | 64x96 | Generic combat-ready pose layer |
 | Victory Arms | (224, 112) | 64x96 | Winner's raise under the spotlight |
-| Champion Belt Worn | (288, 112) | 64x96 | Big Seamus with the belt — and the player variant after |
+| Champion Belt Worn | (288, 112) | 64x96 | Big Donnacha with the belt — and the player variant after |
 
 ### Fighter Portraits (64x48 each):
 | Portrait | Position | Size | Description |
 |----------|----------|------|-------------|
 | Terry Portrait | (0, 208) | 64x48 | "I've done this before! Twice!" |
-| Aoife Portrait | (64, 208) | 64x48 | "I've calculated your odds." |
+| Niamh Portrait | (64, 208) | 64x48 | "I've calculated your odds." |
 | Jimmy Portrait | (128, 208) | 64x48 | "This is PERSONAL now." |
-| Seamus Portrait | (192, 208) | 64x48 | "You want to be forty-eight?" |
+| Donnacha Portrait | (192, 208) | 64x48 | "You want to be forty-eight?" |
 
 ---
 
@@ -448,10 +448,10 @@ assets/sprites/locations/publandia/quiet_man/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Quiz Champion | Big Seamus (all states), Champion Belt, Quiz Champion Title Card, Chalk Tally Wall | Boss fight unlocks at 5 wins; tally gains a 48th mark either way |
-| Information Economy | Rumor Menu, Rumor Board, Orla Trading, Rumor Slip | Rotating stock feeds main-quest hints (Craic Baron's Weakness, Stoutworks Secret) |
+| Quiz Champion | Big Donnacha (all states), Champion Belt, Quiz Champion Title Card, Chalk Tally Wall | Boss fight unlocks at 5 wins; tally gains a 48th mark either way |
+| Information Economy | Rumor Menu, Rumor Board, Sinéad Trading, Rumor Slip | Rotating stock feeds main-quest hints (Craic Baron's Weakness, Stoutworks Secret) |
 | The Undercard | Fight Card, Ciaran states, Generic Fighters A/B | Scheduling quest — player arranges bouts for Ciaran |
-| Country vs. City | Jimmy, Aoife, faction crowd reactions | Rivalry quest; crowd base state biases by chosen side |
+| Country vs. City | Jimmy, Niamh, faction crowd reactions | Rivalry quest; crowd base state biases by chosen side |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
@@ -479,7 +479,7 @@ assets/sprites/locations/publandia/quiet_man/
 
 ### Character Integration Notes:
 - Ciaran never breaks the bit — every pose is quiz-show, never fight-promoter
-- Big Seamus at 80x112 must dwarf the roster without cartoon exaggeration; stillness is his menace
+- Big Donnacha at 80x112 must dwarf the roster without cartoon exaggeration; stillness is his menace
 - Brigid's frames carry the location's only genuine care — play her straight
 - The crowd is a single organism: three moods, one voice
 
@@ -566,7 +566,7 @@ assets/sprites/locations/publandia/quiet_man/
 
 ### Quality Checkpoints:
 - [ ] Satirical theme (euphemism as institution) is clear throughout all assets
-- [ ] Easter eggs discoverable: the Tell light-leak, the one honored rule, blank 48th tally space, Orla's own unshared notebook
+- [ ] Easter eggs discoverable: the Tell light-leak, the one honored rule, blank 48th tally space, Sinéad's own unshared notebook
 - [ ] Mobile performance optimized (crowd quads, 16-particle cap, on-demand back rooms)
 - [ ] Touch zone sizing considered (44px minimum — entry prompt, rumor rows, fight card compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (icon-shaped categories, segmented meter)

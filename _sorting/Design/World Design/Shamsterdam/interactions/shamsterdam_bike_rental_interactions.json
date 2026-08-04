@@ -32,7 +32,7 @@
         "object_id": "repair_station_entrance",
         "type": "zone_transition",
         "display_name": "Repair Station Doorway",
-        "description": "A doorway to the repair station. Opa Willem is visible inside, surrounded by bike corpses.",
+        "description": "A doorway to the repair station. Opa Cees is visible inside, surrounded by bike corpses.",
         "leads_to": "repair_station_zone"
       }
     ],
@@ -164,7 +164,7 @@
         "object_id": "canal_recovery_wall",
         "type": "environmental_display",
         "display_name": "Recovered Bikes Collection",
-        "description": "A wall of bikes recovered from the canal. Each one tells a story Opa Willem is happy to share.",
+        "description": "A wall of bikes recovered from the canal. Each one tells a story Opa Cees is happy to share.",
         "interaction": {
           "type": "examine_triggers_dialogue",
           "npc": "opa_willem",
@@ -262,7 +262,7 @@
     {
       "item_id": "recovery_equipment",
       "display_name": "Canal Recovery Equipment",
-      "description": "Long hooks and waders for fishing bikes out of the canal. Opa Willem's trusted tools.",
+      "description": "Long hooks and waders for fishing bikes out of the canal. Opa Cees's trusted tools.",
       "source": "canal_recovery_quest",
       "temporary": true
     },

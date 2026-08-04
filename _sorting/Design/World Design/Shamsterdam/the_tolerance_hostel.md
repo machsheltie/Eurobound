@@ -14,9 +14,9 @@
 ### Entry Conditions
 - **Time Restrictions**: 24-hour reception (theoretically), night staff is one guy who's "around somewhere"
 - **Stat Requirements**: None for check-in (dignity check to survive the stay)
-- **Item Requirements**: €35/night for 12-bed dorm, €55 for "private" 4-bed, €85 for actual private (always "fully booked")
+- **Item Requirements**: 35 Sovs/night for 12-bed dorm, 55 Sovs for "private" 4-bed, 85 Sovs for actual private (always "fully booked")
 - **Previous Location Requirements**: None (often first or last stop in Shamsterdam)
-- **Special Conditions**: €20 key deposit, €50 "damage deposit" that you won't see again
+- **Special Conditions**: 20 Sovs key deposit, 50 Sovs "damage deposit" that you won't see again
 
 ### Exit Conditions
 - **Normal Exit**: Through lobby, past judgment of day staff
@@ -43,7 +43,7 @@
   - Reception desk with plexiglass barrier (COVID addition, never removed, now has stickers)
   - Key rack with missing keys (some rooms have 3+ copies floating around)
   - Bulletin board of "events" (pub crawl flyers from 2019, one yoga class that never happened)
-  - Vending machine with €4 water and €6 "emergency toiletries"
+  - Vending machine with 4 Sovs water and 6 Sovs "emergency toiletries"
   - Lost and found box that's really just a "free stuff" box
   - Communal computer (still runs Windows 7, keyboard is... sticky)
   - Three couches that tell three different stories of human suffering
@@ -60,7 +60,7 @@
 - **Lighting**: One overhead that's always too bright, individual reading lights (half broken)
 - **Furniture & Props**:
   - Metal bunk beds with mattresses of varying depression levels
-  - Lockers too small for actual luggage, locks sold separately at reception (€8)
+  - Lockers too small for actual luggage, locks sold separately at reception (8 Sovs)
   - One power outlet per four beds (adapter wars are real)
   - Privacy curtains (on 4 beds, the "premium" bunks)
   - THE BUNK (everyone knows which one — bottom corner, mysterious stain, draft)
@@ -102,7 +102,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The universal hostel experience — a place that "tolerates" everything except being comfortable, quiet, or dignified. It's where travel dreams meet travel reality: the €35/night savings cost you in sleep, sanity, and faith in humanity. Everyone here has a story, nobody wants to hear it at 3 AM, and the communal kitchen is a war zone of passive-aggressive notes and stolen yogurt.
+**Core Concept**: The universal hostel experience — a place that "tolerates" everything except being comfortable, quiet, or dignified. It's where travel dreams meet travel reality: the 35 Sovs/night savings cost you in sleep, sanity, and faith in humanity. Everyone here has a story, nobody wants to hear it at 3 AM, and the communal kitchen is a war zone of passive-aggressive notes and stolen yogurt.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Budget travel romanticism vs. reality, "meeting people" means "enduring people"
@@ -121,7 +121,7 @@
 ### Buffoon Delusion Scenarios
 **What bros THINK is happening**: Authentic backpacker experience, meeting fellow travelers, living like locals
 
-**What is ACTUALLY happening**: Paying €35 to not sleep while someone's alarm goes off every hour
+**What is ACTUALLY happening**: Paying 35 Sovs to not sleep while someone's alarm goes off every hour
 
 **How impaired are they**: Usually very (this is Shamsterdam), impairment doesn't help the bunk situation
 
@@ -129,7 +129,7 @@
 - "Private room" means 4 strangers instead of 12
 - 3.4 TripAdvisor stars is NOT good
 - "Party hostel" means "you will not sleep"
-- The €20 deposit is a fee, not a deposit
+- The 20 Sovs deposit is a fee, not a deposit
 - Lockers require their own lock (sold at reception for 3x market price)
 - The "free breakfast" is bread and whatever spread hasn't been stolen
 
@@ -138,18 +138,18 @@
 ## Gameplay Mechanics
 ### Check-In System
 - **Reception Interaction**: Approach desk, wait for staff to finish phone call (personal, not business)
-- **Room Assignment**: Choice of 12-bed (€35), 4-bed "private" (€55), or told actual private is "fully booked" (€85)
-- **Deposit Collection**: €20 key + €50 damage, neither of which you'll see again
+- **Room Assignment**: Choice of 12-bed (35 Sovs), 4-bed "private" (55 Sovs), or told actual private is "fully booked" (85 Sovs)
+- **Deposit Collection**: 20 Sovs key + 50 Sovs damage, neither of which you'll see again
 - **Key Acquisition**: Physical key on keychain large enough to be embarrassing in public
 - **Orientation**: "Kitchen's there, bathroom's there, quiet hours are 11 PM, nobody follows quiet hours"
 
 ### Room Selection Consequences
 | Room Type | Price | Effects | Notes |
 |-----------|-------|---------|-------|
-| 12-Bed Dorm | €35 | -Sleep quality, +Random encounter chance, +Story opportunity | THE authentic experience |
-| 4-Bed "Private" | €55 | -Sleep quality (less), +Awkward intimacy with 3 strangers | Private between air quotes |
-| Actual Private | €85 | "Fully booked" (always), redirected to 4-bed | The lie that keeps on lying |
-| THE BUNK | €35 | Worst position in 12-bed, -HP overnight, +Bravado for surviving | Bottom corner, draft, stain |
+| 12-Bed Dorm | 35 Sovs | -Sleep quality, +Random encounter chance, +Story opportunity | THE authentic experience |
+| 4-Bed "Private" | 55 Sovs | -Sleep quality (less), +Awkward intimacy with 3 strangers | Private between air quotes |
+| Actual Private | 85 Sovs | "Fully booked" (always), redirected to 4-bed | The lie that keeps on lying |
+| THE BUNK | 35 Sovs | Worst position in 12-bed, -HP overnight, +Bravado for surviving | Bottom corner, draft, stain |
 
 ### Sleep Quality System
 Each night's rest affects next-day performance:
@@ -210,7 +210,7 @@ Each night's rest affects next-day performance:
 - **Availability**: "Around somewhere" after midnight, responds to persistent buzzing
 - **Dialogue**:
   - "Check-in? Yeah, okay. Passport. Deposit. Room 3. Bed... whichever one is empty."
-  - "Lost your key? That's the third one today. Twenty euros. Yeah, I know you paid deposit. Twenty euros."
+  - "Lost your key? That's the third one today. Twenty Sovs. Yeah, I know you paid deposit. Twenty Sovs."
   - "Noise complaint? I'll... look into it. *returns to laptop*"
   - "The Wi-Fi password is 'everything.' Yeah, lowercase, one word. Like we tolerate everything. Get it?"
   - "Breakfast is 7 to 10. It's bread. And whatever's in the jar. I don't ask about the jar."
@@ -232,12 +232,12 @@ Each night's rest affects next-day performance:
 - **Appearance**: Eastern European, headphones always in, works around you not with you
 - **Background**: Knows everything that happens in every room, will never tell
 - **Demeanor**: Efficient, silent, occasionally mutters in her language (probably commentary)
-- **Dialogue**: *removes one earbud* "You need towel? Three euros. You need sheet? Supposed to have sheet. Check lost and found." *replaces earbud*
+- **Dialogue**: *removes one earbud* "You need towel? Three Sovs. You need sheet? Supposed to have sheet. Check lost and found." *replaces earbud*
 
 ### Guest NPCs (Rotating Cast)
 
 **The Snorer (Room 3, Bed 7)**
-- **Name**: Derek from Manchester
+- **Name**: Nigel from Manchester
 - **Role**: Sleep destruction, apologizes every morning, changes nothing
 - **Dialogue**: "Sorry mate, was I snoring again? The lads say I'm brutal. Nothing I can do really. Sleep well though?"
 
@@ -252,12 +252,12 @@ Each night's rest affects next-day performance:
 - **Dialogue**: "Oh my GOD, you won't BELIEVE what happened last night. So there was this guy, and we went to this place—you know the place? Anyway..."
 
 **The Veteran Backpacker (Common Room)**
-- **Name**: "Just call me Wolf" (actual name: Kevin)
+- **Name**: "Just call me Wolf" (actual name: Gavin)
 - **Role**: Unsolicited advice, humble-brags about "real" travel, judges everyone
 - **Dialogue**: "Hostels? I've been doing this for six years. This place is too touristy. You want authentic, you gotta go to [place he's about to gatekeep]."
 
 **The Couple Who Forgot (Room 3, Beds 5&6)**
-- **Names**: "Oh, we're Hannah and... sorry, we should introduce ourselves. We're Hannah and—" *continuing what they were doing*
+- **Names**: "Oh, we're Fleur and... sorry, we should introduce ourselves. We're Fleur and—" *continuing what they were doing*
 - **Role**: Public intimacy, treating dorm like private room, traumatizing bunkmates
 - **Dialogue**: *whispered, not quietly enough* "Shh, everyone's asleep." They are not.
 
@@ -268,14 +268,14 @@ Each night's rest affects next-day performance:
 
 ### Couchsurf Alternative (Wolf's "Better Spot")
 - **Trigger**: Complain about hostel to Wolf
-- **Offer**: "I know a guy with a squat near the Vondelpark. Real authentic. Interested?"
+- **Offer**: "I know a guy with a squat near the Wandelpark. Real authentic. Interested?"
 - **Result**: Technically a couchsurf option, significantly worse accommodation
-- **Morning After**: Wake up in someone's art space/illegal sublet, Wolf is gone, you owe someone €15 for "utilities"
+- **Morning After**: Wake up in someone's art space/illegal sublet, Wolf is gone, you owe someone 15 Sovs for "utilities"
 
 ### Original NPC Dialogue
 **Kitchen Morning Exchanges:**
 - Brittany: "So then I was like, 'This isn't the hostel!' and he was like, 'This is my apartment,' and I was like—"
-- Derek: "Anyone got paracetamol? My head's absolutely pounding. Weird because I only had like... twelve beers."
+- Nigel: "Anyone got paracetamol? My head's absolutely pounding. Weird because I only had like... twelve beers."
 - Wolf: "The problem with tourists is they never leave the tourist areas. You want REAL Shamsterdam, you gotta—" *continues for 20 minutes*
 - Takeshi: "I am so sorry about alarm. Tomorrow I will fix. *narrator: he will not fix*"
 
@@ -297,7 +297,7 @@ Each night's rest affects next-day performance:
 Overhear conversations that provide:
 - **Location Hints**: "Did you go to that coffeeshop on the corner? Not the famous one, the one behind it? Way better."
 - **Quest Clues**: "Some guy in a dog hoodie asked me about eggs yesterday. Weird vibe."
-- **Price Warnings**: "Don't do the banana show. It's like €65 and then drinks are €15 and—"
+- **Price Warnings**: "Don't do the banana show. It's like 65 Sovs and then drinks are 15 Sovs and—"
 - **NPC Connections**: "You know Mehmet at the döner place? Tell him Wolf sent you. He'll pretend he doesn't know me but he does."
 
 ### Cross-Location Dependencies
@@ -315,7 +315,7 @@ Overhear conversations that provide:
 ### Bulletin Board Quest Hooks
 Potential side content triggers:
 - "Need fourth person for canal bike rental, splitting cost" — canal exploration mini-quest
-- "Lost camera at Vondelpark, REWARD" — fetch quest with Bravado reward
+- "Lost camera at Wandelpark, REWARD" — fetch quest with Bravado reward
 - "Looking for people to interview for travel documentary" — Chadwick VERY interested
 
 ## Audio Design
@@ -334,7 +334,7 @@ Potential side content triggers:
 ### Comedy Audio Integration
 - **Satirical Stingers**: 5 AM alarm sound effect (becomes running gag)
 - **Character Voice Direction**: Yusuf's tired monotone, Ingrid's passive-aggressive precision, Wolf's humble-brag cadence
-- **Environmental Comedy**: The Couple's not-quiet-enough whispers, Derek's apologies, kitchen chaos
+- **Environmental Comedy**: The Couple's not-quiet-enough whispers, Nigel's apologies, kitchen chaos
 - **Sleep Disruption Audio**: Distinct sounds for each disruption type (snore variants, alarm variants, etc.)
 
 ## Implementation Specifications
@@ -345,7 +345,7 @@ Potential side content triggers:
   - Communal kitchen with fridge politics
   - Bathroom line situation
   - Staff NPC sprites (Yusuf, Ingrid, Maria)
-  - Guest NPC sprites (Derek, Takeshi, Brittany, Wolf, The Couple, Locker Suspect)
+  - Guest NPC sprites (Nigel, Takeshi, Brittany, Wolf, The Couple, Locker Suspect)
   - Bulletin board with rotating content
   - THE BUNK (distinctive marking)
   - Passive-aggressive note collection
@@ -401,18 +401,18 @@ Potential side content triggers:
 - bulletin_board.png - 256x384 - Rotating content, quest hooks
 - locker_row.png - 384x128 - Too small, locks sold separately
 - common_room_couch.png - 256x128 - Three stories of suffering
-- vending_machine.png - 96x192 - €4 water, €6 dignity
+- vending_machine.png - 96x192 - 4 Sovs water, 6 Sovs dignity
 - window_7_computer.png - 128x96 - Sticky keyboard, slow connection
 - polaroid_wall.png - 192x128 - "Tolerance Family" (everyone wasted)
 - passive_aggressive_notes.png - 128x128 - Collection of hostility
 
 ### Character Sprites (16 PNGs)
 - yusuf_night_reception.png - 64x96 - Tired, hoodie, laptop open
-- yusuf_key_replacement.png - 64x96x2 - Twenty euros, no negotiation
+- yusuf_key_replacement.png - 64x96x2 - Twenty Sovs, no negotiation
 - ingrid_day_manager.png - 64x96 - Efficient disappointment
 - ingrid_checkout_judgment.png - 64x96x2 - Deposit conversation
 - maria_housekeeping.png - 64x96 - Headphones in, works around you
-- derek_snorer.png - 64x96 - Apologetic, will do it again
+- nigel_snorer.png - 64x96 - Apologetic, will do it again
 - takeshi_alarm_guy.png - 64x96 - Sorry, still won't fix it
 - brittany_oversharer.png - 64x96 - Mid-story, always mid-story
 - wolf_veteran.png - 64x96 - Gatekeeping posture
@@ -422,7 +422,7 @@ Potential side content triggers:
 
 ### Interactive Objects (8 PNGs)
 - hostel_key_oversized.png - 48x64 - Embarrassingly large keychain
-- locker_lock_sold_separately.png - 32x32 - €8 at reception
+- locker_lock_sold_separately.png - 32x32 - 8 Sovs at reception
 - fridge_shelf_yours.png - 128x64 - Designated, 85% safe
 - shower_hot_water_indicator.png - 64x32 - The good shower secret
 - alarm_phone_buzzing.png - 32x32 - 5 AM, every day
@@ -440,4 +440,4 @@ Potential side content triggers:
 
 ---
 
-*The Tolerance Hostel: Where €35 buys you a bed, and everything else costs extra — especially your sanity.*
+*The Tolerance Hostel: Where 35 Sovs buys you a bed, and everything else costs extra — especially your sanity.*

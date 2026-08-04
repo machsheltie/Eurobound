@@ -415,7 +415,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Potato Mode:** Single ambient light, basic booth layout, essential NPCs only
 
 ### Performance Targets:
-- **Target FPS:** 45 fps (complex lighting and particle systems)
+- **Target FPS:** 60 fps (complex lighting and particle systems)
 - **Max Draw Calls:** 18 per frame
 - **Memory Footprint:** 42MB maximum for social hub
 
@@ -696,7 +696,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 | Seedy Underbelly Present | ✅ | Manufactured exclusivity sold to tourists, decaying glamor, fake blood ritual livestreams |
 | Gameplay Value Established | ✅ | Social hub (no combat) — Charisma gate + bribe alternative, Vanessa couchsurf quiz, influencer event choices, NFT hunt gateway |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, fog/vape via scalable particle systems |
-| Mobile Performance Budget | ✅ | 45 FPS target, max 18 draw calls, 42MB memory footprint |
+| Mobile Performance Budget | ✅ | 60 FPS target, max 18 draw calls, 42MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (bass drop wave, club music pulse), static neon/reduced LED options, high contrast NPCs |
 | No Crypto Elements | ✅ | Crypto/NFT satire established in source material (NFT hunt, VIP bathroom crypto graffiti) |
 | Social Media Integration | ✅ | Vape-pen chandeliers, stripper-pole coat racks, neon aphorisms, quotable patron dialogue identified |

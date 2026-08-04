@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 11 AM - 10 PM (civilized hours for uncivilized purchases)
 - **Stat Requirements**: Bravado check to enter solo, no check with group (safety in numbers)
-- **Item Requirements**: Gold for purchases (€3-50), willingness to make eye contact with staff
+- **Item Requirements**: Gold for purchases (3 Sovs-50), willingness to make eye contact with staff
 - **Previous Location Requirements**: None (the shop draws the curious)
 - **Special Conditions**: Bachelor parties receive automatic "group discount" (and group judgment)
 
@@ -137,16 +137,16 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 ### Product Inventory
 | Item | Price | Category | Bravado to Buy | Notes |
 |------|-------|----------|----------------|-------|
-| Standard Pack (12) | €15 | Essential | None | "The responsible choice" |
-| Premium Selection | €25 | Sensation | Low | "For the discerning" |
-| Glow-in-Dark Pack | €12 | Novelty | Medium | "Party favorite" |
-| Flavored Variety | €10 | Novelty | Low | "Why not" |
-| Shamsterdam Souvenir Pack | €18 | Tourist | Medium | Windmill-themed, tulip-shaped |
-| Bachelor Party Bundle | €45 | Group | High (alone), None (group) | "The Full Experience" |
-| Designer Limited Edition | €35 | Art | Very High | "Is this a gallery?" |
-| The Mystery Box | €30 | Unknown | Maximum | "For the adventurous" |
-| Educational Poster | €15 | Decor | Medium | "Conversation starter" |
-| Gift Card | €20-100 | Giving | Extreme | "I was thinking of you" |
+| Standard Pack (12) | 15 Sovs | Essential | None | "The responsible choice" |
+| Premium Selection | 25 Sovs | Sensation | Low | "For the discerning" |
+| Glow-in-Dark Pack | 12 Sovs | Novelty | Medium | "Party favorite" |
+| Flavored Variety | 10 Sovs | Novelty | Low | "Why not" |
+| Shamsterdam Souvenir Pack | 18 Sovs | Tourist | Medium | Windmill-themed, tulip-shaped |
+| Bachelor Party Bundle | 45 Sovs | Group | High (alone), None (group) | "The Full Experience" |
+| Designer Limited Edition | 35 Sovs | Art | Very High | "Is this a gallery?" |
+| The Mystery Box | 30 Sovs | Unknown | Maximum | "For the adventurous" |
+| Educational Poster | 15 Sovs | Decor | Medium | "Conversation starter" |
+| Gift Card | 20 Sovs-100 | Giving | Extreme | "I was thinking of you" |
 
 ### The "Gag Gift" Purchase System
 - **Declaration**: Player can declare purchase as "gag gift" or "personal"
@@ -199,7 +199,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
   - *to nervous customer* "It's protection. It's healthy. It's also, yes, shaped like that. Both things are true."
   - "We've been here since 1987. We've seen everything. You cannot surprise me. I promise."
 
-**Associate Willem**
+**Associate Joost**
 - **Role**: Floor assistance, restocking, the younger perspective
 - **Appearance**: 20s Dutch man, art school adjacent, treats the job as performance
 - **Background**: Film student, took the job for "life experience," got more than expected
@@ -267,7 +267,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 ### Red Light District Network
 - **Function**: Condomerie connects to the broader RLD experience
 - **Connection to Casa Rosé**: Different end of spectrum (viewing vs. purchasing)
-- **Connection to Venustempel**: Museum vs. retail, education vs. application
+- **Connection to Venustempel**: Museum vs. retail, education vs. application — and different districts since the Venustempel relocated to Museum Mile (`shamsterdam_museumrow_venustempel_01`). Femke sells hygiene products to people who have thought about hygiene; the fountain serves four hundred people a day who have not.
 - **Theme**: Amsterdam's sexual openness in various commercial forms
 
 ### Inventory Consequences
@@ -304,7 +304,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Subtle comedy note on nervous laughter
-- **Character Voice Direction**: Femke's unflappable professionalism, Willem's cheerful frankness
+- **Character Voice Direction**: Femke's unflappable professionalism, Joost's cheerful frankness
 - **Environmental Comedy**: Bachelor party volume, "Just Looking" guy's indecision
 - **The Counter Moment**: Brief audio acknowledgment of successful transaction
 
@@ -316,7 +316,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
   - Product wall displays by category
   - Gift wrapping station
   - Counter area
-  - Femke and Willem sprites
+  - Femke and Joost sprites
   - Customer NPC sprites
   - Product item sprites (tastefully abstract)
   - Shopping bag item
@@ -385,7 +385,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 ### Character Sprites (10 PNGs)
 - femke_manager.png - 64x96 - Unflappable professional
 - femke_assisting.png - 64x96x2 - Customer help
-- willem_associate.png - 64x96 - Cheerfully frank
+- joost_associate.png - 64x96 - Cheerfully frank
 - solo_browser_serious.png - 64x96 - Normal customer
 - bachelorette_party.png - 256x96 - Competitive purchasing
 - older_tourist_couple.png - 128x96 - Genuinely curious

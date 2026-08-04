@@ -8,7 +8,7 @@
       "display_name": "Bike Rental",
       "description": "Skip the crossing entirely by becoming part of the traffic. Now YOU'RE the problem.",
       "cost": 15,
-      "currency": "euro",
+      "currency": "sovs",
       "duration": "1_day",
       "effect": {
         "type": "gameplay_bypass",
@@ -40,7 +40,7 @@
       "display_name": "First Aid",
       "description": "Basic medical attention after bicycle collision.",
       "cost": 5,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "healing",
         "hp_restore": 15
@@ -53,7 +53,7 @@
       "display_name": "Terrace Coffee",
       "description": "Overpriced coffee with a view of tourist suffering.",
       "cost": 4,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "healing",
         "hp_restore": 5,
@@ -66,7 +66,7 @@
       "display_name": "Guided Crossing (Escort)",
       "description": "A professional guides you across. Guaranteed safe. Expensive.",
       "cost": 20,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "gameplay_bypass",
         "bypasses": "crossing_minigame",
@@ -84,32 +84,32 @@
       "issuer_npc": "officer_vandenberg_01",
       "violation": "Standing in bike lane for more than 3 seconds",
       "amount": 95,
-      "currency": "euro",
-      "dialogue": "This is a bike lane. You are not a bike. That's €95."
+      "currency": "sovs",
+      "dialogue": "This is a bike lane. You are not a bike. That's 95 Sovs."
     },
     {
       "fine_id": "blocking_traffic",
       "issuer_npc": "officer_vandenberg_01",
       "violation": "Causing cyclists to swerve around you",
       "amount": 140,
-      "currency": "euro",
-      "dialogue": "You're blocking traffic. Yes, on foot. Still illegal. €140."
+      "currency": "sovs",
+      "dialogue": "You're blocking traffic. Yes, on foot. Still illegal. 140 Sovs."
     },
     {
       "fine_id": "photography_violation",
       "issuer_npc": "officer_vandenberg_01",
       "violation": "Taking photographs while in crossing zone",
       "amount": 50,
-      "currency": "euro",
-      "dialogue": "No photographs in crossing. Safety regulation. €50."
+      "currency": "sovs",
+      "dialogue": "No photographs in crossing. Safety regulation. 50 Sovs."
     },
     {
       "fine_id": "attitude_surcharge",
       "issuer_npc": "officer_vandenberg_01",
       "violation": "Being dramatic about receiving a fine",
       "amount": 25,
-      "currency": "euro",
-      "dialogue": "And €25 for the attitude."
+      "currency": "sovs",
+      "dialogue": "And 25 Sovs for the attitude."
     }
   ],
   
@@ -277,9 +277,9 @@
     {
       "shortcut_id": "bike_rental_bypass",
       "display_name": "Bike Rental",
-      "description": "Rent a bike for €15. Become traffic instead of obstacle.",
+      "description": "Rent a bike for 15 Sovs. Become traffic instead of obstacle.",
       "cost": 15,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": "bypasses_crossing_as_cyclist",
       "maintains": false,
       "note": "Does not count toward crossing achievements"

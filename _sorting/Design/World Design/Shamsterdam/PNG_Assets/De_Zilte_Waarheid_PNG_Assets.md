@@ -1,7 +1,7 @@
 # De Zilte Waarheid - Complete PNG Asset Requirements
 
 ## 📋 Overview
-De Zilte Waarheid ("The Salty Truth") is a pristine white-and-blue herring cart in the Harbor District where tourists discover that "wanting an authentic experience" and "being willing to tilt your head back and lower a raw fish into your mouth in front of strangers" are two very different things. This document specifies every PNG asset for the stand: the harbor environment, the stand and display case, Visser Dirk and Assistant Evi, the atmospheric customer gallery, seagull Hendrik, the full traditional eating method animation set, and the UI for method choice and status effects. Its satirical essence in a sentence: the fish doesn't judge — the locals, the seagulls, and the camera do.
+De Zilte Waarheid ("The Salty Truth") is a pristine white-and-blue herring cart in the Harbor District where tourists discover that "wanting an authentic experience" and "being willing to tilt your head back and lower a raw fish into your mouth in front of strangers" are two very different things. This document specifies every PNG asset for the stand: the harbor environment, the stand and display case, Visser Maarten and Assistant Evi, the atmospheric customer gallery, seagull Hendrik, the full traditional eating method animation set, and the UI for method choice and status effects. Its satirical essence in a sentence: the fish doesn't judge — the locals, the seagulls, and the camera do.
 
 **Location ID:** `shamsterdam_harbor_herring_stand_01`
 **Theme:** Dutch haring tradition as a public vulnerability test; tourist bravado vs. raw fish reality
@@ -32,7 +32,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 ├── objects/
 │   └── herring_food_items.png
 ├── npcs/
-│   ├── npc_dirk_evi.png
+│   ├── npc_maarten_evi.png
 │   └── npc_harbor_customers.png
 ├── effects/
 │   └── eating_method_animations.png
@@ -82,7 +82,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Display Case (Half Empty) | (384, 192) | 256x192 | Late-day state: gaps in the rows, ice melting slightly |
 | Chopping Station | (640, 0) | 128x128 | Worn block, knife, decades of efficiency in the scarring |
 | Method Illustration Sign | (768, 0) | 192x256 | "THE SHAMSTERDAM WAY" — Grip / Tilt / Lower / Repeat, illustrated |
-| Price Board | (768, 256) | 192x128 | "Haring €4 / Met Uitjes €4.50 / De Waarheid Platter €8" + raw-fish warning |
+| Price Board | (768, 256) | 192x128 | "Haring 4 Sovs / Met Uitjes 5 Sovs / De Waarheid Platter 8 Sovs" + raw-fish warning |
 
 ### Service Props:
 | Element | Position | Size | Description |
@@ -92,9 +92,9 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Napkin Dispenser | (640, 256) | 64x64 | Industrial strength; you'll need them |
 | Toothpick Cup | (704, 256) | 64x64 | For the timid |
 | Tail Grip Demo Placard | (0, 384) | 128x128 | Close-up hand-holding-tail diagram for the demonstration area |
-| Mint Tin (Fish Breath Cure) | (128, 384) | 64x64 | €1 counter item, purchasable cure |
+| Mint Tin (Fish Breath Cure) | (128, 384) | 64x64 | 1 Sov counter item, purchasable cure |
 | Cart Awning States | (192, 384) | 384x128 | Open (192x128) at (192,384) + breeze-flutter frame (192x128) at (384,384) |
-| Ice Refill Bucket | (576, 384) | 96x128 | Prop for Dirk's restock loop |
+| Ice Refill Bucket | (576, 384) | 96x128 | Prop for Maarten's restock loop |
 
 ### Technical Notes:
 - Cart Full renders behind Display Case node so case can swap Full/Half-Empty by time of day
@@ -116,7 +116,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Broodje Haring | (128, 0) | 64x48 | On bread; acceptable but noted |
 | Kibbeling Basket | (192, 0) | 64x64 | Fried retreat option, no judgment (some judgment) |
 | De Waarheid Platter | (0, 48) | 128x96 | Two herrings, onions, pickles, bread — the full spread |
-| "Just the Bread" | (128, 64) | 64x48 | Coward's Comfort, €2 |
+| "Just the Bread" | (128, 64) | 64x48 | Coward's Comfort, 2 Sovs |
 | Raw Onion Portion | (192, 64) | 32x32 | Diced, powerful |
 | Pickle Portion | (224, 64) | 32x32 | Augurken single serving |
 | Fish Tail Remaining | (128, 112) | 32x16 | Victory evidence |
@@ -131,25 +131,25 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 
 ---
 
-## 👥 Sprite Sheet 4: Stand Staff — Dirk & Evi
-**File:** `npc_dirk_evi.png`
+## 👥 Sprite Sheet 4: Stand Staff — Maarten & Evi
+**File:** `npc_maarten_evi.png`
 **Dimensions:** 512x384 pixels
 **Sprite Size:** 64x96 per frame
 **Color Palette:** #708090, #F5F5F5, #4A7C99
 
-### Visser Dirk (Rows 0-2):
+### Visser Maarten (Rows 0-2):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Dirk Idle | (0, 0) | 64x96 | Weathered face, fisherman's apron, seen-everything neutrality |
-| Dirk Idle Blink | (64, 0) | 64x96 | Minimal blink variant |
-| Dirk Approving Nod | (128, 0) | 64x96 | "Good." (highest praise available) |
-| Dirk Preparing Frame 1 | (0, 96) | 64x96 | Fillet lift from ice |
-| Dirk Preparing Frame 2 | (64, 96) | 64x96 | Knife work, decades of efficiency |
-| Dirk Preparing Frame 3 | (128, 96) | 64x96 | Hand-over to customer |
-| Dirk Demonstrating Frame 1 | (0, 192) | 64x96 | The Grip — tail between thumb and forefinger |
-| Dirk Demonstrating Frame 2 | (64, 192) | 64x96 | The Tilt — head back, face to sky |
-| Dirk Demonstrating Frame 3 | (128, 192) | 64x96 | The Lower — fish descends |
-| Dirk Demonstrating Frame 4 | (192, 192) | 64x96 | The Bite — effortless, instant |
+| Maarten Idle | (0, 0) | 64x96 | Weathered face, fisherman's apron, seen-everything neutrality |
+| Maarten Idle Blink | (64, 0) | 64x96 | Minimal blink variant |
+| Maarten Approving Nod | (128, 0) | 64x96 | "Good." (highest praise available) |
+| Maarten Preparing Frame 1 | (0, 96) | 64x96 | Fillet lift from ice |
+| Maarten Preparing Frame 2 | (64, 96) | 64x96 | Knife work, decades of efficiency |
+| Maarten Preparing Frame 3 | (128, 96) | 64x96 | Hand-over to customer |
+| Maarten Demonstrating Frame 1 | (0, 192) | 64x96 | The Grip — tail between thumb and forefinger |
+| Maarten Demonstrating Frame 2 | (64, 192) | 64x96 | The Tilt — head back, face to sky |
+| Maarten Demonstrating Frame 3 | (128, 192) | 64x96 | The Lower — fish descends |
+| Maarten Demonstrating Frame 4 | (192, 192) | 64x96 | The Bite — effortless, instant |
 
 ### Assistant Evi (Row 3 + Row 0 remainder):
 | Element | Position | Size | Description |
@@ -159,12 +159,12 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Evi Handing Napkins | (128, 288) | 64x96 | "You'll want several. Trust me." |
 | Evi Onion Chopping Frame 1 | (192, 288) | 64x96 | Rhythmic dicing, down-stroke |
 | Evi Onion Chopping Frame 2 | (256, 288) | 64x96 | Rhythmic dicing, up-stroke |
-| Dirk Portrait (Dialogue) | (256, 0) | 128x128 | Close-up: eyes that have witnessed humanity's relationship with raw fish |
+| Maarten Portrait (Dialogue) | (256, 0) | 128x128 | Close-up: eyes that have witnessed humanity's relationship with raw fish |
 | Evi Portrait (Dialogue) | (384, 0) | 128x128 | Close-up: encouraging, herring philosophy in progress |
 
 ### Technical Notes:
 - Portraits sit in the unused right block of rows 0-1 (256-512px); do not scale portraits below 128px
-- Dirk's demonstration loop is also the tutorial reference — frame timing must match the player eating animation (Sheet 6) exactly
+- Maarten's demonstration loop is also the tutorial reference — frame timing must match the player eating animation (Sheet 6) exactly
 
 ---
 
@@ -245,7 +245,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Bro Reaction Bradley | (128, 480) | 64x96 | "...I'm busy..." — quiet trust in the fish |
 
 ### Technical Notes:
-- Traditional frames 1-6 and Dirk's demonstration must share identical timing curves so the tutorial reads as a mirror
+- Traditional frames 1-6 and Maarten's demonstration must share identical timing curves so the tutorial reads as a mirror
 - Struggle sequence loops frames 1-3 while the 30-second hesitation timer runs; frame 4 fires only on retreat
 - Commitment Flash draws once, 0.2s, skipped entirely in reduced-motion mode
 
@@ -271,7 +271,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Fish Wasted Icon | (128, 128) | 32x32 | Tail-only silhouette, seagull check mark |
 | Herring Survivor Badge | (160, 128) | 64x64 | Achievement: completed the method |
 | Fish Mentor Badge | (224, 128) | 64x64 | Helped another tourist with technique |
-| Fish Respect Badge | (288, 128) | 64x64 | Ate while making eye contact with Dirk |
+| Fish Respect Badge | (288, 128) | 64x64 | Ate while making eye contact with Maarten |
 | Bravado +/- Popups | (352, 128) | 96x64 | Paired +BRAVADO / -BRAVADO floaters (96x32 each, stacked) |
 | Respect Nod Icon | (448, 128) | 32x32 | Fractional local respect indicator |
 
@@ -302,7 +302,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - **Audio Sync:** Tourist-hesitation ambience swells at loop 3; hesitation-penalty sting on retreat frame
 - **Mobile Optimization:** Wobble lines overlay dropped on Low LOD
 
-### Dirk Preparing (Sheet 4, Row 1):
+### Maarten Preparing (Sheet 4, Row 1):
 - **Duration:** 1.5 seconds (0.5s per frame)
 - **Frames:** 3
 - **Pattern:** Play once per order, then return to idle
@@ -393,7 +393,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | herring_environment | harbor_background, herring_stand_structures | 2048x2048 |
-| herring_characters | npc_dirk_evi, npc_harbor_customers, eating_method_animations | 2048x2048 |
+| herring_characters | npc_maarten_evi, npc_harbor_customers, eating_method_animations | 2048x2048 |
 | herring_ui | herring_food_items, herring_ui_effects | 1024x1024 |
 
 *(Max atlas size 2048x2048 for mobile GPU compatibility.)*
@@ -406,7 +406,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Low | Static water/awning/gulls, Hendrik hover frame substitution, no mist, no onion tears |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 32 MB maximum
 - **Particle Limit:** 12 (sea mist motes, onion vapor, fish-scale glint)
@@ -432,9 +432,9 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Traditional Method completion | Subtle triumphant note | On Frame 6 end (4.5s) |
 | Struggle retreat frame | Hesitation penalty sting | On retreat frame start |
 | Hendrik Swoop Frame 1 | Aggressive gull shriek | 0.0s of swoop |
-| Dirk Preparing Frame 2 | Knife-on-block tap | 0.5s into prep |
+| Maarten Preparing Frame 2 | Knife-on-block tap | 0.5s into prep |
 | Evi chop down-stroke | Chop tick | Every 0.8s, frame-locked |
-| Fish handed to player | Fish-received sound | On Dirk Preparing Frame 3 |
+| Fish handed to player | Fish-received sound | On Maarten Preparing Frame 3 |
 
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
@@ -442,7 +442,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Herring Achievement Track — "Fish Curious" | Traditional Method frames, Herring Survivor Badge | First traditional completion |
 | "Fish Committed" / "Fish & Onion Alliance" | Haring met Uitjes sprite, Onion Aura icon | Three completions / met uitjes mastery |
 | "Fish Mentor" | Repeat Tourist / Hen Party sprites, Fish Mentor Badge | Help another tourist with technique |
-| "Fish Respect" | Dirk Approving Nod, Fish Respect Badge | Eat while making eye contact with Dirk |
+| "Fish Respect" | Maarten Approving Nod, Fish Respect Badge | Eat while making eye contact with Maarten |
 | Cultural Courage Network | Courage Buff icon | Feeds courage progression shared with Proeflokaal and Brouwerij |
 
 ### Cross-Location Dependencies:
@@ -471,7 +471,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - The napkin dispenser's industrial scale quietly promises mess
 
 ### Character Integration Notes:
-- Dirk is a fixture behind the case; he never leaves frame — stability against tourist chaos
+- Maarten is a fixture behind the case; he never leaves frame — stability against tourist chaos
 - Evi orbits: napkins, onions, encouragement — the stand's warmth channel
 - Customer gallery renders behind the player during eating sequences: the Viewing Gallery is always watching, politely
 - Hendrik must read as patient, not aggressive, until the exact moment he isn't
@@ -484,7 +484,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 1. **The Tilt** — player mid-traditional-method, head back, harbor behind: the definitive Shamsterdam vulnerability portrait
 2. **Hendrik's Acquisition** — the swoop frame 3 fish-theft, comedy in one image
 3. **The Hen Party Panel** — four simultaneous stages of herring courage in a single group sprite
-4. **Dirk's Nod** — the rarest approval in the Harbor District, worth framing
+4. **Maarten's Nod** — the rarest approval in the Harbor District, worth framing
 5. **The Method Sign** — "The fish is raw. Your reaction will be witnessed."
 
 ### Quote Potential:
@@ -503,7 +503,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | 1 | harbor_background.png | 2048x1024 |
 | 2 | herring_stand_structures.png | 1024x1024 |
 | 3 | herring_food_items.png | 256x256 |
-| 4 | npc_dirk_evi.png | 512x384 |
+| 4 | npc_maarten_evi.png | 512x384 |
 | 5 | npc_harbor_customers.png | 1024x512 |
 | 6 | eating_method_animations.png | 1024x1024 |
 | 7 | herring_ui_effects.png | 512x256 |
@@ -518,7 +518,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - [ ] `harbor_background.png` (2048x1024)
 - [ ] `herring_stand_structures.png` (1024x1024)
 - [ ] `herring_food_items.png` (256x256)
-- [ ] `npc_dirk_evi.png` (512x384)
+- [ ] `npc_maarten_evi.png` (512x384)
 - [ ] `npc_harbor_customers.png` (1024x512)
 - [ ] `eating_method_animations.png` (1024x1024)
 - [ ] `herring_ui_effects.png` (512x256)
@@ -552,7 +552,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (tourist reaction is the joke, never the Dutch tradition)
-- [ ] Hidden areas/interactions have discoverable visual cues (mint tin cure, tail-grip demo placard, Dirk eye-contact achievement)
+- [ ] Hidden areas/interactions have discoverable visual cues (mint tin cure, tail-grip demo placard, Maarten eye-contact achievement)
 - [ ] Mobile performance optimized (CPU particles, atlas limits respected, static-seagull fallback)
 - [ ] Touch zone sizing considered (44px minimum for order point, method choice, First Bite Prompt)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (status icon shapes, hatched timer)
@@ -567,12 +567,12 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | World Consistency (no real city names) | ✅ | Shamsterdam Harbor District only; "The Shamsterdam Way" signage in-world |
 | Cultural Specificity | ✅ | Dutch haring tradition rendered with respect; tourist reaction carries the comedy |
 | Satirical Targets Appropriate | ✅ | Tourist hesitation, photo-op culture, and bro bravado — never Dutch food culture |
-| Seedy Underbelly Present | ✅ | €4 existential revelations, maximum-visibility stand placement, seagull opportunism economy |
+| Seedy Underbelly Present | ✅ | 4 Sovs existential revelations, maximum-visibility stand placement, seagull opportunism economy |
 | Gameplay Value Established | ✅ | Method challenge, Bravado economy, three status effects, seagull hazard, achievement track |
 | Technical Feasibility | ✅ | Static-seagull fallback, 2-frame ambients, pre-composed crowds documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 14 draw calls, 32 MB, 12 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 12 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all four audio cues, reduced-motion set, 44px touch zones |
-| No Crypto Elements | ✅ | Pure traditional fish stand; all transactions in Euros |
+| No Crypto Elements | ✅ | Pure traditional fish stand; all transactions in Sovs |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 
 **Once these assets ship, De Zilte Waarheid becomes the game's cleanest comedy machine: a spotless little cart where every player must choose, in public, between the bread and the truth.**

@@ -16,13 +16,13 @@ Reality: an assistant at the auction house minted forty of them on a lunch break
 (Struck 2026-08-01: "Lot 41: Untitled (Gilt Frame, Empty)" and its artwork description and bro read.)
 
 2. Backstage Terminal — The Bassline Opera House.
-Coin-operated CRT kiosk in the backstage labyrinth, two euro for ten minutes, sticky keyboard, orange-on-black text mode, still logged into the previous user's account. Nobody has ever logged out of this terminal. It is not clear that it can log out. Minting prints a receipt on a dot-matrix printer that nobody has reloaded since the last century.
+Coin-operated CRT kiosk in the backstage labyrinth, two Sovs for ten minutes, sticky keyboard, orange-on-black text mode, still logged into the previous user's account. Nobody has ever logged out of this terminal. It is not clear that it can log out. Minting prints a receipt on a dot-matrix printer that nobody has reloaded since the last century.
 NFT: **Winamp (Mint #97)** — mint # proposed, author may override
 - **Tagline:** _[AUTHOR TO WRITE]_
 - **Description:** _[AUTHOR TO WRITE]_
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 Bro Read: _[AUTHOR TO WRITE]_ — staging retained (route, not artwork): the line is delivered by Chadwick while he is backstage in a European opera house, standing next to a mop.
-Reality: the previous user minted it on the clock and thought nothing of it. The kiosk takes the two euro either way.
+Reality: the previous user minted it on the clock and thought nothing of it. The kiosk takes the two Sovs either way.
 (Struck 2026-08-01: "Backstage Laminate (Unauthorized)" and its artwork description and bro read. The old Reality line's "joke about being made to work a double" was written against the struck pass and is flagged for the author alongside the new copy.)
 
 3. Latte-Art AR Filter — Grounds For Concern, Kaffeehaus Row.
@@ -32,13 +32,13 @@ NFT: **Crystal Pepsi (Mint #92)** — mint # proposed, author may override
 - **Description:** _[AUTHOR TO WRITE]_
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 Bro Read: _[AUTHOR TO WRITE]_
-Reality: the barista sighs, delivers the latte, applies the standard visible disappointment, and takes the five euro. She has watched roughly two hundred tourists mint the same one and has never once mentioned how many.
+Reality: the barista sighs, delivers the latte, applies the standard visible disappointment, and takes the five Sovs. She has watched roughly two hundred tourists mint the same one and has never once mentioned how many.
 (Struck 2026-08-01: "Foam Face #17," its artwork description, its bro read, and the "#17 / at least sixty" edition gag, which was artwork-derived.)
 
 4. Aaron's Tractor Token — Aaron's Corner Table, The Black-Tie Backroom.
 "She Thinks My Tractor's Sexy" (Mint #42), `item_tractor_nft`. Handed over in person, sincerely, as a gift, at the grant beat of `blacktie_event_kings_were_humming_01`. The acquisition scene is staged in full in `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md` and is not restated here. Item spec: `Design/Inventory/items/tractor_nft_item.md`.
 Bro Read: Chadwick: "Bro. He's cutting us IN."
-Reality: it is a scratched aluminum token. It is worth €0 at any bank, exchange, or legitimate vendor in the game.
+Reality: it is a scratched aluminum token. It is worth 0 Sovs at any bank, exchange, or legitimate vendor in the game.
 
 NFTs Earned: "Holographic Charizard" (Mint #98), "Winamp" (Mint #97), "Crystal Pepsi" (Mint #92), "She Thinks My Tractor's Sexy" (Mint #42). The first three are pending author copy; their mint numbers are proposals.
 

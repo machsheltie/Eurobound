@@ -18,7 +18,7 @@
 > Casually exploring a charming European city with lovely canals and friendly locals on bicycles. How quaint! How picturesque!
 
 **What is ACTUALLY happening:**
-> Amsterdam cyclists are apex predators who have zero fear, zero mercy, and absolute right-of-way in their own minds. The bros are prey in a concrete jungle ruled by two-wheeled death machines.
+> Shamsterdam cyclists are apex predators who have zero fear, zero mercy, and absolute right-of-way in their own minds. The bros are prey in a concrete jungle ruled by two-wheeled death machines.
 
 **Why it's funny:**
 > Americans who think they own the road encountering Dutch cyclists who ACTUALLY own the road. The complete inversion of their expectations, combined with increasingly absurd cargo being transported at high speeds.
@@ -191,7 +191,7 @@
 
 **LORD PILSNER:** "...yes?"
 
-**Bike Rental Guy:** *deep sigh* "Extra insurance is €20. I recommend it."
+**Bike Rental Guy:** *deep sigh* "Extra insurance is 20 Sovs. I recommend it."
 
 ---
 

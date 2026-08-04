@@ -148,83 +148,9 @@ They are defending a title. American Tourist Bingo has a field, a season, and �
 > **Polina**: "That's fine." *(card back in the pocket)*
 > **Paulina**: "That's a square too, actually. 'Chickens out.' — Don't look at me like that, it's on the card, it's ALWAYS been on the card."
 
-### Herp Rejection Scene (`the_herp` active)
+### Couchsurf Herp Routing
 
-*An infected bro approaches the twins at the `performance_circle`. They do not recoil, they do not laugh at him, and they do not say no — because saying no is not the procedure. Polina taps the card. Paulina uncaps the marker. In that order.*
-
-**Polina** (finding the square without looking, because she knows where it is):
-> "Bottom row. Third from the left."
-
-*The square reads **HERPES**. It has been on the card since before the bros' plane landed. It is not a new square, it was not added for them, and the laminate around it is as worn as everything else.*
-
-**Paulina** (marker hovering): "Dab it."
-
-**Polina**: "He hasn't SAID it."
-
-**Paulina**: "Look at him."
-
-**Polina**: "The card says *establishes*. Establishing is a verbal standard. Ask him."
-
-**Paulina** (turning, pleasantly, as though asking the time):
-> "Sorry — is that herpes?"
-
-**Bradley**: "It's poison ivy. There was DEFINITELY foliage at that beach party."
-
-*A pause. The twins look at each other. They always look at each other first.*
-
-**Paulina**: "Dab it."
-
-**Polina**: "...Dab it."
-
-*She dabs it. The row completes. Paulina raises the card over her head without a word. Somewhere behind them, at the Cirque bar, four people cheer for a reason the bros will never learn, and someone buys a round.*
-
-**Polina** (already walking, card back in the pocket, over her shoulder):
-> "Thank you. Genuinely. That square has been open for two seasons."
-
-*Bro delusion, immediately after:*
-- **Bradley**: *"Bros. They CHEERED. We got a bar to cheer."*
-- **Chadwick**: *"European twins raised a sign about us. That's basically a banner. That's a stadium moment."*
-- **Lord Pilsner**: *"FlagMan's system doesn't even HAVE a flag for a crowd reaction. We're off the chart. Again."*
-
-### Post-Cure Callback (Coin equipped)
-
-*He returns to the `performance_circle` with `item_gold_circle_coin`. Polina taps the card out of pure reflex. Paulina does not uncap the marker. **The sting lands first** — this is the whole reason they get a callback beat at all.*
-
-**Paulina** (looking at the Coin, then at the card, then at Polina):
-> "There's no square for that."
-
-**Polina**: "There is not."
-
-**Paulina**: "Do we make a square for that?"
-
-**Polina** (flat, final, card going back into the pocket):
-> "We do not make a square for him. He does not get a *square*, Paulina, he gets to be the reason the bottom row is retired."
-
-*She holds the card up so he can see it. The bottom-row square is dabbed. The dab is permanent — it went on with the wrong marker, months ago, and it never came off.*
-
-**Polina**:
-> "Congratulations on the — whatever that is. It's beautiful. You're still on the card. You will always be on the card. That's how laminate works."
-
-*Paulina has stopped listening. Paulina is looking at the retired card, and then at the Coin, and then at Polina, with the specific face of a woman who has just seen the shape of next season.*
-
-**Paulina**: "New card."
-
-**Polina**: "...New card."
-
-**Paulina**: "New card, new season, fresh laminate. And the first square on a fresh card is the hardest square in the game to open, Polina, you have said that to me every year for six years."
-
-*A pause. They look at each other. They always look at each other first.*
-
-**Polina** (producing a blank card from the inside pocket — she had it the whole time; she always has it the whole time):
-> "Fine. Come on, then. You're the first square."
-
-*Everything proceeds exactly as it would have before the outbreak: the flat, the kitchen table, the bread, and two women cross-referencing a brand-new card over a man who thinks the phrase "first square" was a compliment.*
-
-**Polina** (morning, entirely sincere, entirely unforgiving):
-> "You are on two cards now. One of them is framed."
-
-**Paulina** (genuinely delighted, capping the marker on her sleeve):
-> "See you at the knives!"
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for the twins — including the adjudication, the dab, the retired bottom row, and the post-cure callback — are authored in their Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Suspicious Twins (Polina & Paulina)". **Do not duplicate them here.** One shared flag: `suspicious_twins_refused_while_infected` — both NPC IDs fire the one scene. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 ### Callback Dialogue (Return Visits)
 > **Paulina**: "The card's behind the bar now. Framed. There's a little card next to the card explaining the card."
@@ -428,7 +354,7 @@ Local Debaucheryville, matched deliberately — they have spent a decade soundin
 - **New but consistent**: the sisters-not-twins detail (thirteen months apart, identical by choice) is added by this profile to earn the "Suspicious" in their established name. No prior file states they are biologically twins. If a reviewer prefers literal twins, cut the Internal Name clause — nothing else in the file depends on it
 - The **HERPES** square must be visibly dabbed-eligible on the card from the player's very first examine, long before the outbreak. The card predating the bros is the load-bearing joke: they did not invent a square for these men, the square was already there
 - Paulina's two-centimetre height advantage is drawn accurately and never mentioned in dialogue. Do not add a line about it
-- The Herp rejection scene and post-cure callback are new content owned by this profile. `nothingisgettingthrough.md` should point at this file rather than duplicate the text
+- **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Their lines live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Suspicious Twins (Polina & Paulina)"; this file and `nothingisgettingthrough.md` both point at it and neither duplicates the text
 - **They stay at the Cirque.** No relocation, in this questline or any other
 
 ---

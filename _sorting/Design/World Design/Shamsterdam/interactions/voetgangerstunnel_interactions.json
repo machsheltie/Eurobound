@@ -147,13 +147,13 @@
       "object_id": "willem_tip_jar",
       "type": "service_hint_system",
       "display_name": "Willem's Hat",
-      "description": "A worn hat with exactly €2.47 in it. The amount never changes.",
+      "description": "A worn hat with exactly 2 Sovs in it. The amount never changes.",
       "interaction": {
-        "tip_1_euro": {
+        "tip_1_sov": {
           "result": "basic_hint",
           "dialogue": "Follow the sound of the tram. It knows the way."
         },
-        "tip_5_euro": {
+        "tip_5_sov": {
           "result": "reliable_hint",
           "dialogue": "The red signs lie. The emergency signs tell truth."
         },

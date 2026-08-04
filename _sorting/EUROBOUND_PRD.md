@@ -77,7 +77,7 @@ The design folders were written across multiple drafting passes and contain cont
 | C3 | **Party roles** | `party.md` + character docs (Pilsner=Leader, Bradley=Tank, Chadwick=Support) vs `combatsystem.md` (Bradley=glass cannon, Pilsner=tank) | **Pilsner = Inspiring Commander (balanced leader/buffer). Bradley = Tank/Berserker Protector. Chadwick = Chaotic Support/debuffer.** | Three docs agree vs one; matches personalities (Bradley "catches his breath then charges"). Bradley's berserk-at-low-HP covers the DPS role dynamically. |
 | C4 | **Ultimates** | Two sets of names across files | **Pilsner: Mid-Life Crisis · Chadwick: Viral Meltdown · Bradley: Bouncer Breaker.** (`Fratocalypse Now`, `Going Viral`, `Final Round's On Me` are retired or repurposed as skill-tree nodes.) | Confirmed by party.md, bravado.md, AND the musical Ultimate Choruses in `musicalbeats.md`. |
 | C5 | **Spell ownership** | `bravado.md` vs `skilltrees_cloutspells.md` assign Battle Cry of the Mascot / Flash of the Red Solo Cup / Charm of the Bro Code to different bros | **Skill trees are canon:** Pilsner gets *Battle Cry of the Mascot* and *Flash of the Red Solo Cup* (Toastmaster / Barroom Tactics); Chadwick gets *Charm of the Bro Code* (PR Spin). | The skill-tree doc is the most complete progression spec; character quest docs match it. |
-| C6 | **Currency** | "Cover Charges" vs "Bar Tabs" vs "gold" (code) vs "€" (menus) vs "beer tokens/shame coins" | **One currency: Euros (€).** "Cover Charge" becomes a recurring money-sink event (doors literally tax you). Crypto Coins remain a worthless gag item. "Gold" in prototype code is renamed `euros`. | Menus already price in €; grounded currency sharpens the satire (real money, dumb purchases). |
+| C6 | **Currency** | "Cover Charges" vs "Bar Tabs" vs "gold" (code) vs euro pricing (menus) vs "beer tokens/shame coins" | **One currency: Sovs.** Every city, every price — no euros, no regional currency, no exchange (author ruling 2026-08-01; canon: `Design/Economy/currency.md`). **The symbol is the word: write `40 Sovs` in prose, `40 SOVS` in signage. There is no Sov glyph.** "Cover Charge" becomes a recurring money-sink event (doors literally tax you). Crypto Coins remain a worthless gag item. "Gold" in prototype code is renamed `Sovs`. | Menus already carry hard prices; grounded currency sharpens the satire (real money, dumb purchases). |
 | C7 | **XP** | Consistent | **XP = "Clout."** Clout accumulates (never spent) and gates both levels and skill tiers. See §7. | Resolves the earn-vs-spend ambiguity in the skill tree doc. |
 | C8 | **Boss placement** | Count Velvet Absinthe at "Shadow Exchange" vs "Absinthe Cathedral" | **Shadow Exchange.** "Absinthe Cathedral" is cut (it exists nowhere else). | Matches the city doc and the `unlock_premium_stock()` hook already in code. |
 | C9 | **NFT roster** | 4+ candidate NFT sources in Debaucheryville for a 3-per-city hunt; NFT #2 has three names | **9 collectible NFTs, 3 per city.** Debaucheryville's three: *Pixelated Kebab Monkey*, *VIP Wristband PNG*, *Beer Pong Saint Relic*. Extra discovery points (VIP-stall tile, couchsurf outcome, Terminal #13) are **alternate acquisition routes to the same three**, not extra NFTs. "Velvet Wristband JPEG" is an alias to delete. | Preserves all the written content as redundant routes — good design for missable content. |
@@ -282,7 +282,7 @@ Confidence as mana. Per-bro pool (§5.1).
 - **Spend:** skills (4–10 BP), Ultimates (all BP, minimum 20 — Ultimates are only available at High band).
 - **Gain:** Bravado Flex (+3), Brace (+2), landing crits (+4), kills (+3), NPC crowd cheers (+1–3/round based on Reputation), winning drinking/rhythm minigames (out of battle, sets starting band), Chadwick auras.
 - **Drain:** being missed-at (whiff = −2 to attacker), public embarrassment events, **Sobriety Creep** — outside battle, each in-game hour without a drink/social win drains 2 BP (day-night system, §11.3).
-- **Bands:** High = >70% pool (Ultimates unlocked, +crit, +SPD; sprite glows, crowd murmurs) · Mid = 30–70% · Low = <30% (−damage, −SPD; slouched sprites) · **Zero = "Dad on a Bender"** — the bro collapses into a sulk: skips turns until healed to Mid by items/allies; if all three hit Zero simultaneously, forced comedic retreat (treated as defeat-lite: wake at base, small € loss, unique narrator scene).
+- **Bands:** High = >70% pool (Ultimates unlocked, +crit, +SPD; sprite glows, crowd murmurs) · Mid = 30–70% · Low = <30% (−damage, −SPD; slouched sprites) · **Zero = "Dad on a Bender"** — the bro collapses into a sulk: skips turns until healed to Mid by items/allies; if all three hit Zero simultaneously, forced comedic retreat (treated as defeat-lite: wake at base, small Sovs loss, unique narrator scene).
 - Combined-Bravado gates for Combos: **High ≥ 150 total (80% success) · Mid 90–149 (60%) · Low < 90 (40%)** — matching the doc's bands with the >150 anchor.
 
 ### 6.6 Master status list (canon — resolves all drift)
@@ -319,14 +319,14 @@ Roster targets: **10–12 regular enemies + 1 boss + 1 rival-trio fight per city
 
 AI is data-driven weighted-random with gates (EarthBound-simple, LimboAI behavior trees):
 - Each enemy: 2–4 moves with weights + conditions (`hp<50%`, `target_has_status`, `round>2`).
-- **Archetypes:** Swarmer (multi-unit, weak, Hen Party Swarm), Bruiser (Stag Do Berserker), Debuffer (Spill Sprite → Grease Fingers), Leech (steals €: Pickpocket Pair), Cringe-caster (attacks Bravado not HP: Backpack Bard's ukulele solo), Gimmick (Rigged Carnival Game only damageable after its "rules" are Bragged at).
+- **Archetypes:** Swarmer (multi-unit, weak, Hen Party Swarm), Bruiser (Stag Do Berserker), Debuffer (Spill Sprite → Grease Fingers), Leech (steals Sovs: Pickpocket Pair), Cringe-caster (attacks Bravado not HP: Backpack Bard's ukulele solo), Gimmick (Rigged Carnival Game only damageable after its "rules" are Bragged at).
 - **Reality Check enemies** (rare, mid-game+): actual college kids, multilingual locals — attack with facts ("You're 38 and wearing JNCO jeans!"), inflict Perspective, award bonus Clout.
 - Bosses: 2–3 phases, phase scripts + telegraphed "big move" rounds; **bosses drop status immunity but keep vulnerability windows** (e.g., Craic Baron's Sticky Floor round leaves him Distracted for 1 turn).
 
 ### 6.9 Victory, defeat & rewards
 
-- **Victory:** Clout + € + drop table roll; regional **Victory Stinger** sung couplet (§14.3); "promotion" flavor titles on notable wins (bouncer fight → *Bathroom Attendant*: Nightstick, Glowsticks ×2, Half Bottle of Advil, +300 €, +150 Clout — the canonical worked example).
-- **Defeat (all three at 0 HP):** wake at base pub; keep Clout and items; lose 10% € ("the tab found you"); mandatory Hungover; unique narrator roast per city. No lost progress — mobile-friendly, and shame IS the death penalty.
+- **Victory:** Clout + Sovs + drop table roll; regional **Victory Stinger** sung couplet (§14.3); "promotion" flavor titles on notable wins (bouncer fight → *Bathroom Attendant*: Nightstick, Glowsticks ×2, Half Bottle of Advil, +300 Sovs, +150 Clout — the canonical worked example).
+- **Defeat (all three at 0 HP):** wake at base pub; keep Clout and items; lose 10% of your Sovs ("the tab found you"); mandatory Hungover; unique narrator roast per city. No lost progress — mobile-friendly, and shame IS the death penalty.
 - Balance targets (from Production docs, kept): normal fights **3–5 rounds**, bosses **6–8**, baseline survivability = 2–3 mistakes before wipe.
 
 ---
@@ -379,11 +379,11 @@ Implementation: each ladder = an int 1–5 in `GameState.reputation`, transition
 
 ### 8.2 Street Rep & dialogue
 
-**Street Rep** = a small global modifier (0–10) raised by witty dialogue choices; grants vendor discounts (−2%/point, cap −15%) and unique dialogue. Dialogue system spec (fills `dialoguesystem.md`): Dialogic 2 timelines; 2–3 choice branches max; choice consequences limited to flags, €, BP, Street Rep, and item grants (the effect grammar of §15.5 — no freeform effects). Quoting discovered graffiti to matching NPCs unlocks hidden responses/discounts (graffiti quest hook).
+**Street Rep** = a small global modifier (0–10) raised by witty dialogue choices; grants vendor discounts (−2%/point, cap −15%) and unique dialogue. Dialogue system spec (fills `dialoguesystem.md`): Dialogic 2 timelines; 2–3 choice branches max; choice consequences limited to flags, Sovs, BP, Street Rep, and item grants (the effect grammar of §15.5 — no freeform effects). Quoting discovered graffiti to matching NPCs unlocks hidden responses/discounts (graffiti quest hook).
 
 ### 8.3 Social combat & minigames
 
-Some encounters resolve verbally: a 3-round exchange where each bro has one social verb — Pilsner **Storytelling** (Charm + Tall Tales tier vs. credibility), Chadwick **Influence Flexing** (Luck-weighted), Bradley **Intimidation** (GUT + ATK-weighted). Resolution = opposed roll `d100 + stat×5 + rep-state×5`; win = quest progress/€/BP, loss = Embarrassed + comedy (never a hard fail — social combat losses always open a worse-but-funnier alternate path).
+Some encounters resolve verbally: a 3-round exchange where each bro has one social verb — Pilsner **Storytelling** (Charm + Tall Tales tier vs. credibility), Chadwick **Influence Flexing** (Luck-weighted), Bradley **Intimidation** (GUT + ATK-weighted). Resolution = opposed roll `d100 + stat×5 + rep-state×5`; win = quest progress/Sovs/BP, loss = Embarrassed + comedy (never a hard fail — social combat losses always open a worse-but-funnier alternate path).
 
 Minigames (one input pattern each, reused): **drinking contests** = tap-timing meter (refusing a round = Party Foul, −BP); **rhythm checks** (Sinfonia, karaoke, Tap Dat Vault) = 4-lane beat taps; **pouring/claw/scam games** (Debaucheryville) = timing-stop wheels, visibly rigged (the rig is the joke; Scam Aware status reveals the true window); **T9 texting minigame** (Nokia N-Gage perk) = word-entry speed gag.
 
@@ -393,15 +393,15 @@ Minigames (one input pattern each, reused): **drinking contests** = tap-timing m
 
 ### 9.1 Currency & flow (fills `Design/Economy/`)
 
-**Euros (€)** only (C6). Sources: battle rewards (level×8–15 € per fight), quest payouts, selling gear, Shadow Exchange conversions. Sinks: shops, **Cover Charges** (district doors, 5–50 €, waived at high reputation — the money-sink event that keeps the old currency name alive as a joke), bribes, brewery tour fees, taxi vouchers, scams (mechanically: money you "chose" to lose), Bail-Out Cards, verification fees (Shadow Exchange, 10 €).
+**Sovs** only (C6). Sources: battle rewards (level×8–15 Sovs per fight), quest payouts, selling gear, Shadow Exchange conversions. Sinks: shops, **Cover Charges** (district doors, 5–50 Sovs, waived at high reputation — the money-sink event that keeps the old currency name alive as a joke), bribes, brewery tour fees, taxi vouchers, scams (mechanically: money you "chose" to lose), Bail-Out Cards, verification fees (Shadow Exchange, 10 Sovs).
 
-Target curve: the party should feel broke in the first third of each city and comfortable at the end — then arrival in the next city (new prices, new scams) resets the squeeze. Wallet at city end: ~800 € (Publandia) / ~2,000 € (Debaucheryville) / ~4,500 € (Sinfonia). Prices in `data/balance/economy.json`; anchor prices: pint 4 €, kebab 5–9 € (per the written menus), gear 30–400 €, XP Ring from eBaum's World 50 € (as written).
+Target curve: the party should feel broke in the first third of each city and comfortable at the end — then arrival in the next city (new prices, new scams) resets the squeeze. Wallet at city end: ~800 Sovs (Publandia) / ~2,000 Sovs (Debaucheryville) / ~4,500 Sovs (Sinfonia). Prices in `data/balance/economy.json`; anchor prices: pint 4 Sovs, kebab 5–9 Sovs (per the written menus), gear 30–400 Sovs, XP Ring from eBaum's World 50 Sovs (as written).
 
 **Crypto Coins**: worthless gag currency from scams; only the Meme Black Market and one Tony420 trade accept them. **NFTs**: quest collectibles, not currency (§10.3).
 
 ### 9.2 Consumables (canon list = `items.md`, priced)
 
-Rarity ladder: **Common / Uncommon / Rare / Legendary / Mythic**. Highlights (full table → `data/items/consumables.json`): Muscle Milk (Chalky Vanilla) 8 € · Advil (Half Empty Bottle) 12 € · Chug of the Gods 15 € (party heal, 15% Sloppy) · Aquafina (Room Temperature) 3 € (cures Hungover → Hydrated for Once) · Bail-Out Card 40 € · Four Loko (Original Recipe) [Legendary, 120 €] (revive +75% HP, Manic; **cannot use while Sober** — "Sober" simply = not under any alcohol status) · Sextuple Espresso [Mythic, 200 €] (full party HP, Heart Palpitations; also THE Hungover hard-cure) · BAWLS Guarana 25 € · Stale Beer Nuts 5 € · Axe Body Spray (Concentrated Blast) 18 € (AoE + Overwhelmed) · Roast Card (Savage) 30 € (damage scales with target's current Bravado/morale) · Fake ID (Laminated at Kinko's) 60 € ("Works 60% of the time, every time") · Hair Gel (Industrial Strength), Glow Sticks (Rave Quality), Portable DVD Player (7-inch Screen) [Legendary], Monster Energy (Original Formula) [Mythic revive-all], Duct Tape (Half Roll), Disposable Camera (12 Shots Left), Bluetooth Earpiece (Blinking LED) · regional: Absinthe Shot (Prague Special), Guinness (Room Temperature) (grants *Philosophical*), Sachertorte Slice (grants *Refined*), the four brewery beers (Absinthe Lager, Iron Gut Tripel, Vape Stout, Blockchain Bock — each a strong buff with its designed drawback), Legendary Hangover (per-city trophy consumable: "You don't remember last night, but everyone else does.").
+Rarity ladder: **Common / Uncommon / Rare / Legendary / Mythic**. Highlights (full table → `data/items/consumables.json`): Muscle Milk (Chalky Vanilla) 8 Sovs · Advil (Half Empty Bottle) 12 Sovs · Chug of the Gods 15 Sovs (party heal, 15% Sloppy) · Aquafina (Room Temperature) 3 Sovs (cures Hungover → Hydrated for Once) · Bail-Out Card 40 Sovs · Four Loko (Original Recipe) [Legendary, 120 Sovs] (revive +75% HP, Manic; **cannot use while Sober** — "Sober" simply = not under any alcohol status) · Sextuple Espresso [Mythic, 200 Sovs] (full party HP, Heart Palpitations; also THE Hungover hard-cure) · BAWLS Guarana 25 Sovs · Stale Beer Nuts 5 Sovs · Axe Body Spray (Concentrated Blast) 18 Sovs (AoE + Overwhelmed) · Roast Card (Savage) 30 Sovs (damage scales with target's current Bravado/morale) · Fake ID (Laminated at Kinko's) 60 Sovs ("Works 60% of the time, every time") · Hair Gel (Industrial Strength), Glow Sticks (Rave Quality), Portable DVD Player (7-inch Screen) [Legendary], Monster Energy (Original Formula) [Mythic revive-all], Duct Tape (Half Roll), Disposable Camera (12 Shots Left), Bluetooth Earpiece (Blinking LED) · regional: Absinthe Shot (Prague Special), Guinness (Room Temperature) (grants *Philosophical*), Sachertorte Slice (grants *Refined*), the four brewery beers (Absinthe Lager, Iron Gut Tripel, Vape Stout, Blockchain Bock — each a strong buff with its designed drawback), Legendary Hangover (per-city trophy consumable: "You don't remember last night, but everyone else does.").
 
 ### 9.3 Equipment
 
@@ -540,7 +540,7 @@ Rough total: **~2,500–3,500 hand-authored sprites/tiles.** At artist pace of 1
 
 ### 13.5 Animation & FX
 
-Frame animation for characters; AnimationPlayer/Tween for UI and battle FX; particles from a reusable library (hit sparks, star bursts, beer foam, confetti, vape clouds, € loss motes). Enemy "animations" in battle = tween wiggle/flash/scale on the static sprite (EarthBound-authentic).
+Frame animation for characters; AnimationPlayer/Tween for UI and battle FX; particles from a reusable library (hit sparks, star bursts, beer foam, confetti, vape clouds, Sov-loss motes). Enemy "animations" in battle = tween wiggle/flash/scale on the static sprite (EarthBound-authentic).
 
 ### 13.6 The battle background shader
 
@@ -607,11 +607,11 @@ game/
 docs/                      # the Design/ folders remain the writers' room
 ```
 
-**Salvage list** (port with path fixes; everything else regenerate in-editor): `economy_controller.gd` (rename gold→euros), the five **shadow_exchange** scripts (the reference implementation of the intended architecture: signal-driven Area2D interactables + duck-typed controller forwarding), `brewery_tracker.gd`, `dialogue_controller.gd` (superseded by Dialogic 2 eventually, useful for the slice). **All `.tscn` files are regenerate-from-scratch** — they're Godot 3/4 chimeras with undeclared resources. Delete: duplicate ICQ dialogue script, `brewery_tracker.tres`, root `package-lock.json` (empty npm accident). Fix the `deboucheryville` typo at the data layer with a migration map.
+**Salvage list** (port with path fixes; everything else regenerate in-editor): `economy_controller.gd` (rename gold→Sovs), the five **shadow_exchange** scripts (the reference implementation of the intended architecture: signal-driven Area2D interactables + duck-typed controller forwarding), `brewery_tracker.gd`, `dialogue_controller.gd` (superseded by Dialogic 2 eventually, useful for the slice). **All `.tscn` files are regenerate-from-scratch** — they're Godot 3/4 chimeras with undeclared resources. Delete: duplicate ICQ dialogue script, `brewery_tracker.tres`, root `package-lock.json` (empty npm accident). Fix the `deboucheryville` typo at the data layer with a migration map.
 
 ### 15.3 Autoload singletons (the backbone)
 
-`GameState` (quest flags, graffiti_found, reputation, street_rep, world clock, ego meter) · `EconomyController` (euros, rates, premium stock — exists) · `PartyState` (stats, statuses, BP, equipment, inventory) · `QuestLog` · `DialogueRunner` (Dialogic wrapper + `push_system_line`, `set_flag_true` — the interface ShadowExchangeRoot already calls) · `ICQController` (message queue, popup scene, hotspot events) · `TimeManager` (§11.3 — grease-trap gate already calls it) · `SaveManager` (§11.2) · `AudioDirector` (layers, ducking, stingers) · `BattleDirector` (encounter setup/teardown) · `MemeMastery` + achievement/title registry · `Haptics` (GDExtension wrapper). Player scene exposes the interaction raycast that calls `interact()` on Area2D interactables — the contract every prototype script already assumes.
+`GameState` (quest flags, graffiti_found, reputation, street_rep, world clock, ego meter) · `EconomyController` (Sovs, rates, premium stock — exists) · `PartyState` (stats, statuses, BP, equipment, inventory) · `QuestLog` · `DialogueRunner` (Dialogic wrapper + `push_system_line`, `set_flag_true` — the interface ShadowExchangeRoot already calls) · `ICQController` (message queue, popup scene, hotspot events) · `TimeManager` (§11.3 — grease-trap gate already calls it) · `SaveManager` (§11.2) · `AudioDirector` (layers, ducking, stingers) · `BattleDirector` (encounter setup/teardown) · `MemeMastery` + achievement/title registry · `Haptics` (GDExtension wrapper). Player scene exposes the interaction raycast that calls `interact()` on Area2D interactables — the contract every prototype script already assumes.
 
 ### 15.4 Event flags (fills `event_flags.md`)
 
@@ -626,7 +626,7 @@ Everything balanceable is JSON in `data/`, edited via Google Sheets → CSV → 
   { "op": "stat_mod", "stat": "atk", "amount_pct": 20, "duration_turns": 2 },
   { "op": "apply_status", "status": "hungover", "chance": 0.25 },
   { "op": "grant_item", "id": "nft_pixelated_kebab_monkey" },
-  { "op": "euros", "amount": -25 },
+  { "op": "sovs", "amount": -25 },
   { "op": "set_flag", "flag": "dv.couchsurf.vanessa_done" }
 ] }
 ```
@@ -635,7 +635,7 @@ snake_case keys everywhere; canonical ID registry (fixes `deboucheryville`, `abs
 
 ### 15.6 Save schema
 
-Versioned JSON (`schema_version` int + migration functions), one file per slot in `user://saves/`: party (stats/level/clout/equipment/inventory/statuses), euros, flags dict, reputation states, clock, brewery/graffiti/NFT/meme progress, settings. Checksum + backup snapshot per §11.2. GUT tests: every released schema version must load-migrate forward.
+Versioned JSON (`schema_version` int + migration functions), one file per slot in `user://saves/`: party (stats/level/clout/equipment/inventory/statuses), Sovs, flags dict, reputation states, clock, brewery/graffiti/NFT/meme progress, settings. Checksum + backup snapshot per §11.2. GUT tests: every released schema version must load-migrate forward.
 
 ### 15.7 Performance budget
 
@@ -721,7 +721,7 @@ $4.99 premium (C16), Small Business Program 15% commission tier. Playbook (as do
 
 ### 19.1 Glossary (canonical vocabulary)
 
-**Bravado (BP)** MP-analog, confidence-as-mana · **Clout** XP · **Euros (€)** currency · **Cover Charge** door-tax money sink · **Bro Ladder** Clout tiers (Pledge/Active/Alumni/Legacy/Living Legend) · **Brag** the skill menu · **Chicken Out** flee · **SMAAAASH!!** crit · **Dad on a Bender** zero-Bravado collapse · **Snap Out of It** ally recovery action · **Reality Check / Perspective** the sincerity mechanic · **Seedy Underbelly** each city's night layer · **The Legend** final boss · **Satire Swap** safe-string build system · **Playable Idiot Logic** flaws-as-mechanics pillar.
+**Bravado (BP)** MP-analog, confidence-as-mana · **Clout** XP · **Sovs** currency · **Cover Charge** door-tax money sink · **Bro Ladder** Clout tiers (Pledge/Active/Alumni/Legacy/Living Legend) · **Brag** the skill menu · **Chicken Out** flee · **SMAAAASH!!** crit · **Dad on a Bender** zero-Bravado collapse · **Snap Out of It** ally recovery action · **Reality Check / Perspective** the sincerity mechanic · **Seedy Underbelly** each city's night layer · **The Legend** final boss · **Satire Swap** safe-string build system · **Playable Idiot Logic** flaws-as-mechanics pillar.
 
 ### 19.2 The nine restroom graffiti shrines
 Publandia: Stoutworks Brewery (yeast golem miniboss) · The Back Room · Kebab Alley ("Stomach of Steel"). Debaucheryville: Grease Trap Shrine (3 A.M., Fistø's Mecca) · Claw Machine Maintenance Closet ("He moaned 'SMAAAASH' in bed. I ghosted mid-combo.") · Velvet Curtain VIP Stall (NFT QR + "DO NOT LOOK AT THE BABY"). Sinfonia: Mozart's Last Rave (Resurrected DJ ghost ally) · Café Existenz ("Even Nietzsche sat down to pee sometimes.") · Bassline Opera House backstage.

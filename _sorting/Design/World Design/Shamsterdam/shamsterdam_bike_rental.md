@@ -131,13 +131,13 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 
 **Dialogue Samples**:
 - *Greeting*: "American? British? ...Australian. Okay, let me get the reinforced form."
-- *On insurance*: "Extra insurance is €20. Yes, €20 seems like a lot until you see how much the bike costs."
+- *On insurance*: "Extra insurance is 20 Sovs. Yes, 20 Sovs seems like a lot until you see how much the bike costs."
 - *On cycling*: "Have you ever ridden a bike before? Like, in traffic? Where people want you dead?"
 - *Photo request*: "Just a quick photo for our records. Smile! ...That's the face they all make."
 
-### Opa Willem — Grandfather/Repair Station
+### Opa Cees — Grandfather/Repair Station
 
-**NPC ID**: `shamsterdam_npc_opa_willem_repair_01`
+**NPC ID**: `shamsterdam_npc_opa_cees_repair_01`
 
 **Role**: Background NPC / Lore Provider / Easter Eggs
 
@@ -161,21 +161,21 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 
 ### Bike Rental Tiers
 
-**Basic Rental — €15/day**
+**Basic Rental — 15 Sovs/day**
 - Standard orange tourist bike
 - Lock included (combination you'll forget)
 - Basket (for stolen items)
 - No helmet (locals don't wear them)
 - Includes: One free "I told you so" from Dirk
 
-**Premium Rental — €25/day**
+**Premium Rental — 25 Sovs/day**
 - Slightly better brakes
 - Working bell (they'll ignore it anyway)
 - Upgraded lock
 - Map holder (map not included)
 - Includes: Dirk's reluctant respect
 
-**"Survivor" Package — €40/day**
+**"Survivor" Package — 40 Sovs/day**
 - Sturdiest bike in the fleet
 - Reinforced frame (survived 12 canal recoveries)
 - Reflective tape everywhere
@@ -188,47 +188,47 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 - Covers theft (with police report)
 - Does NOT cover: damage, canal, user error, Dutch cyclists
 
-**Standard Insurance — €10**
+**Standard Insurance — 10 Sovs**
 - Covers theft and minor damage
 - "Minor" defined by Dirk, not you
 - Does NOT cover: canal, major damage, acts of cyclist
 
-**Premium Insurance — €20**
+**Premium Insurance — 20 Sovs**
 - Covers theft, damage, and "incidents"
 - Includes one free canal recovery attempt
 - Does NOT cover: total destruction, fire, "that thing from last Tuesday"
 
-**Platinum Insurance — €35**
+**Platinum Insurance — 35 Sovs**
 - Covers everything except war and nuclear events
 - Unlimited canal recoveries
-- Damage waiver up to €500
-- Includes: Opa Willem's blessing (minor navigation buff)
+- Damage waiver up to 500 Sovs
+- Includes: Opa Cees's blessing (minor navigation buff)
 - **Note**: Nobody has ever needed to USE the Platinum tier. The people who buy it are too cautious to crash.
 
 ### Add-Ons
 
 | Item | Cost | Effect |
 |------|------|--------|
-| Helmet | €5/day | +10% Collision Survival (marks you as tourist) |
-| Phone Mount | €3/day | GPS visible while cycling (distraction risk) |
-| Basket Liner | €2 | Prevents small items falling through |
-| High-Visibility Vest | €4/day | +20% Visibility, -30% Dignity |
-| "Tourist Escort" Guide | €50/hour | Guided cycling through safe routes |
+| Helmet | 5 Sovs/day | +10% Collision Survival (marks you as tourist) |
+| Phone Mount | 3 Sovs/day | GPS visible while cycling (distraction risk) |
+| Basket Liner | 2 Sovs | Prevents small items falling through |
+| High-Visibility Vest | 4 Sovs/day | +20% Visibility, -30% Dignity |
+| "Tourist Escort" Guide | 50 Sovs/hour | Guided cycling through safe routes |
 
 ### Repair Services
 
 | Service | Cost | Notes |
 |---------|------|-------|
-| Flat Tire Repair | €8 | While you wait |
-| Brake Adjustment | €12 | "You should have had this done BEFORE" |
-| Chain Fix | €10 | Grease on your clothes guaranteed |
-| Bent Wheel Realignment | €25 | "How did you even—never mind" |
+| Flat Tire Repair | 8 Sovs | While you wait |
+| Brake Adjustment | 12 Sovs | "You should have had this done BEFORE" |
+| Chain Fix | 10 Sovs | Grease on your clothes guaranteed |
+| Bent Wheel Realignment | 25 Sovs | "How did you even—never mind" |
 | Full Damage Assessment | Free | But the news is never good |
 
 ### Deposit System
-- **Standard Deposit**: €150 (or credit card hold)
-- **Bike Replacement Cost**: €350
-- **Canal Recovery Fee**: €75 (if found) / €350 (if not)
+- **Standard Deposit**: 150 Sovs (or credit card hold)
+- **Bike Replacement Cost**: 350 Sovs
+- **Canal Recovery Fee**: 75 Sovs (if found) / 350 Sovs (if not)
 - **"Creative Damage" Assessment**: Variable, at Dirk's discretion
 
 ---
@@ -248,7 +248,7 @@ When you rent a bike, you **become part of the traffic** instead of trying to cr
 - Feel like a local (briefly)
 
 **Disadvantages**:
-- €15-40/day cost
+- 15 Sovs-40/day cost
 - Damage risk (random encounter checks)
 - Theft risk when parked
 - Must return bike or forfeit deposit
@@ -260,14 +260,14 @@ Every cycling session has a % chance of damage event:
 
 | Event | Probability | Damage Cost | Comedy |
 |-------|-------------|-------------|--------|
-| Tram Track Accident | 15% | €25 | Wheel caught in track |
-| Tourist Collision | 10% | €15 | Hit another rental tourist |
-| Local "Lesson" | 8% | €30 | "Taught" traffic rules physically |
-| Brake Failure Moment | 5% | €20 | Near miss, brake damage |
-| Basket Theft | 12% | €10 | Items stolen from basket |
-| Canal Proximity | 5% | €75-350 | Varying degrees of wet |
-| Flat Tire | 20% | €8 | Most common, least dramatic |
-| Nothing | 25% | €0 | Miraculous survival |
+| Tram Track Accident | 15% | 25 Sovs | Wheel caught in track |
+| Tourist Collision | 10% | 15 Sovs | Hit another rental tourist |
+| Local "Lesson" | 8% | 30 Sovs | "Taught" traffic rules physically |
+| Brake Failure Moment | 5% | 20 Sovs | Near miss, brake damage |
+| Basket Theft | 12% | 10 Sovs | Items stolen from basket |
+| Canal Proximity | 5% | 75 Sovs-350 | Varying degrees of wet |
+| Flat Tire | 20% | 8 Sovs | Most common, least dramatic |
+| Nothing | 25% | 0 Sovs | Miraculous survival |
 
 **Insurance reduces costs, not probability**
 
@@ -287,12 +287,12 @@ Every cycling session has a % chance of damage event:
 **Major Damage Return**:
 - No deposit refund
 - Damage costs deducted
-- Opa Willem sighs visibly from repair station
+- Opa Cees sighs visibly from repair station
 - "Insurance Was A Good Call" achievement
 
 **No Return (Lost/Stolen/Canal)**:
 - Full deposit forfeit
-- €350 replacement fee
+- 350 Sovs replacement fee
 - Police report required for insurance
 - "Gone But Not Forgotten" achievement
 - Photo added to memorial board
@@ -324,7 +324,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 ### Quest-Related Visits
 - **"Keg Cycle" Quest**: Requires bike rental for delivery timer challenge
 - **"Tour de Shame" Quest**: Multi-district cycling challenge
-- **"Canal Recovery" Quest**: Help Opa Willem recover bikes
+- **"Canal Recovery" Quest**: Help Opa Cees recover bikes
 - **Insurance Claim Process**: Interactive bureaucracy mini-game
 
 ---
@@ -361,12 +361,12 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 
 **Quest ID**: `shamsterdam_quest_canal_recovery`
 
-**Quest Giver**: Opa Willem (requires interaction)
+**Quest Giver**: Opa Cees (requires interaction)
 
 **Objective**: Help recover tourist bikes from the canal.
 
 **Stages**:
-1. Speak with Opa Willem about "the old days"
+1. Speak with Opa Cees about "the old days"
 2. Get recovery equipment from basement
 3. Head to Canal Ring Promenade
 4. Hook and recover 3 bikes (timing mini-game)
@@ -374,9 +374,9 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 
 **Reward**:
 - "Canal Fisher" achievement
-- €30 reward
+- 30 Sovs reward
 - One free damage waiver on next rental
-- Opa Willem's blessing (+5% Navigation permanently)
+- Opa Cees's blessing (+5% Navigation permanently)
 - Access to "recovered goods" inventory (random cheap items)
 
 ### "The Insurance Claim" (Micro-Quest)
@@ -403,7 +403,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 
 ### Buffs from Shop
 
-**Opa Willem's Blessing**
+**Opa Cees's Blessing**
 - **Source**: Quest reward or Platinum insurance
 - **Effect**: +5% Navigation in Shamsterdam
 - **Duration**: Permanent (quest) or rental duration (insurance)
@@ -431,7 +431,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 - **Duration**: While on rental bike
 
 **Deposit Anxiety**
-- **Source**: €150+ deposit hold
+- **Source**: 150 Sovs+ deposit hold
 - **Effect**: -5% Bravado while rental active
 - **Duration**: Until bike returned
 
@@ -451,7 +451,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 - Lock combination clicking
 - Form stamping
 - Camera shutter (damage photos)
-- Opa Willem sighing
+- Opa Cees sighing
 
 ### Comedy Audio
 - Record scratch when damage revealed
@@ -466,7 +466,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 ### Screenshot Moments
 1. **The Damage Board**: Wall of tourist crash photos
 2. **Insurance Tier Chart**: Escalating warnings
-3. **Opa Willem's Wall**: Recovered canal bikes
+3. **Opa Cees's Wall**: Recovered canal bikes
 4. **The Orange Fleet**: 50+ identical bikes
 5. **Anneke's Skeptical Face**: When you claim "minor damage"
 
@@ -512,7 +512,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 ### Quest Dependencies
 - **"Keg Cycle"**: Requires rental
 - **"Tour de Shame"**: Originated here
-- **"Canal Recovery"**: Opa Willem quest
+- **"Canal Recovery"**: Opa Cees quest
 - **Brewery Tour**: Faster with bike
 
 ---
@@ -520,15 +520,15 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 ## Economic Integration
 
 ### Currency
-- All transactions in Euros
+- All transactions in Sovs
 - Credit card holds for deposits
 - Cash discount available (5%)
 
 ### Price Points
-- Budget conscious: Basic rental €15 + no insurance (risky)
-- Standard tourist: Premium rental €25 + Standard insurance €10 = €35/day
-- Cautious traveler: Survivor package €40 + Platinum insurance €35 = €75/day
-- **Most common outcome**: €35 rental + €25 average damage = €60 total
+- Budget conscious: Basic rental 15 Sovs + no insurance (risky)
+- Standard tourist: Premium rental 25 Sovs + Standard insurance 10 Sovs = 35 Sovs/day
+- Cautious traveler: Survivor package 40 Sovs + Platinum insurance 35 Sovs = 75 Sovs/day
+- **Most common outcome**: 35 Sovs rental + 25 Sovs average damage = 60 Sovs total
 
 ### Recurring Revenue
 - Damage fees
@@ -566,7 +566,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 
 ### Crypto Warning
 - [x] NO crypto elements at this location
-- [x] All transactions in Euros
+- [x] All transactions in Sovs
 - [x] Focus on traditional service industry satire
 
 ---

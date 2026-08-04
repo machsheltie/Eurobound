@@ -1,7 +1,7 @@
 # The Stoutworks Brewery - Complete PNG Asset Requirements
 
 ## 📋 Overview
-A €25 brewery tour that derails into a six-floor dungeon crawl when the 150-year-old heritage yeast strain achieves consciousness and decides it IS the brewery. This document specifies every sprite for Publandia's cathedral of beer production — Victorian industrial grandeur, sentient foam, the Vat Master's three-phase existential crisis, and a gift shop that stays open through the apocalypse because commerce always finds a way.
+A 25 Sovs brewery tour that derails into a six-floor dungeon crawl when the 150-year-old heritage yeast strain achieves consciousness and decides it IS the brewery. This document specifies every sprite for Publandia's cathedral of beer production — Victorian industrial grandeur, sentient foam, the Vat Master's three-phase existential crisis, and a gift shop that stays open through the apocalypse because commerce always finds a way.
 
 **Location ID:** `publandia_dungeon_stoutworks_01`
 **Theme:** Brewery-tourism-as-religious-experience parody — the "living beer culture" taken literally, then hostile
@@ -80,7 +80,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 |---------|----------|------|-------------|
 | Welcome Hall | (0, 0) | 256x192 | Tour waiting area, polished floors, corporate cheer |
 | History Exhibit | (256, 0) | 128x96 | "History of Stoutworks" displays, 1869 onward |
-| Ticket Desk | (384, 0) | 128x96 | €25 validation point |
+| Ticket Desk | (384, 0) | 128x96 | 25 Sovs validation point |
 | Tour Route Sign | (256, 96) | 96x64 | Arrowed path — the safe rails |
 | Save Point Cask | (352, 96) | 64x64 | Last save before descent, glowing tap |
 | Info Display Board | (416, 96) | 96x64 | Brewing process education panel |
@@ -334,7 +334,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 | Selfie Frame: Victory | (0, 192) | 96x64 | Copper stills + debris variant |
 | Selfie Frame: Diplomatic | (96, 192) | 96x64 | Peaceful Vat Master hovering in background |
 | Copper Mug | (192, 192) | 32x32 | +Alcohol resistance |
-| Stoutworks T-Shirt | (224, 192) | 32x32 | +5 Defense, €30 |
+| Stoutworks T-Shirt | (224, 192) | 32x32 | +5 Defense, 30 Sovs |
 | "I Survived Stoutworks" Shirt | (256, 192) | 32x32 | Post-dungeon flex |
 | Yeast Sample (Contained) | (288, 192) | 32x32 | Throwable temporary ally |
 | Commemorative Tap Handle | (320, 192) | 32x32 | Weapon, +Brewing damage |
@@ -364,7 +364,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Duration:** 4 seconds
 - **Frames:** Vat Bubbling normal → Porthole eye → Yeast Golem Forming 1-2 → Record-Scratch freeze-frame → combat music
 - **Trigger:** Quest active + reaching Floor 2, or investigating "Staff Only" areas
-- **Purpose:** The moment €25 of tourism becomes a dungeon — the location's thesis beat
+- **Purpose:** The moment 25 Sovs of tourism becomes a dungeon — the location's thesis beat
 - **Audio Sync:** Fiona's "That's not supposed to happen" on the porthole; corporate tour music cuts dead on the freeze-frame
 - **Mobile Optimization:** Freeze-frame vignette dropped; hard cut instead
 
@@ -653,7 +653,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 | World Consistency (no real city names) | ✅ | Publandia Brewery District; Guinness Storehouse satirized without naming |
 | Cultural Specificity | ✅ | Dublin-style brewing heritage commodification, tour-and-gift-shop ritual |
 | Satirical Targets Appropriate | ✅ | Brewery tourism packaging, not brewing craft — profile-confirmed |
-| Seedy Underbelly Present | ✅ | €25 tours ending in gift shops; the cover story vs. the yeast reality |
+| Seedy Underbelly Present | ✅ | 25 Sovs tours ending in gift shops; the cover story vs. the yeast reality |
 | Gameplay Value Established | ✅ | Full 6-floor dungeon, mini-boss, dual-ending boss, puzzles, stamp sidequest, shop economy |
 | Technical Feasibility | ✅ | Floor streaming, clump-sprite swarms, choreographed Phase 3, mobile optimization documented |
 | Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 48MB |
@@ -663,4 +663,4 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 
 **The Stoutworks Brewery delivers the full arc in one building: reverent tour, sudden horror, six floors of living beer, and a choice between destroying a frightened 150-year-old consciousness or actually listening to it. Every asset serves the escalation — and through all of it, the gift shop never closes.**
 
-**"The tour is €25. The dungeon is free if you survive."**
+**"The tour is 25 Sovs. The dungeon is free if you survive."**

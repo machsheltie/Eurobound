@@ -1,7 +1,7 @@
 # The Bohemian Trap - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Bohemian Trap is an ornate absinthe cart (built 2015, aged artificially) where Emil "The Green Fairy" Novak sells €3 of strong alcohol for €25 with a story attached. This document specifies every PNG needed for the cart theater: the backlit bottle array, the elaborate ritual sequence, the dry-ice mystique, and the "Green Fairy Confusion" status that reverses the player's controls. The trap is literal, the vendor knows it, and the experience is — annoyingly — still kind of fun.
+The Bohemian Trap is an ornate absinthe cart (built 2015, aged artificially) where Emil "The Green Fairy" Novák sells 3 Sovs of strong alcohol for 25 Sovs with a story attached. This document specifies every PNG needed for the cart theater: the backlit bottle array, the elaborate ritual sequence, the dry-ice mystique, and the "Green Fairy Confusion" status that reverses the player's controls. The trap is literal, the vendor knows it, and the experience is — annoyingly — still kind of fun.
 
 **Location ID:** `debaucheryville_vendor_bohemian_trap_01`
 **Theme:** Absinthe mythology commodification — "Drink Like Hemingway. Pay Like a Tourist. Regret Like Everyone."
@@ -114,13 +114,13 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 ### The Absinthe Tiers:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Bottle: Tourist Green | (0, 160) | 32x64 | €8, "A gentle introduction" |
-| Bottle: Bohemian Standard | (32, 160) | 32x64 | €12, "The traditional experience" |
-| Bottle: Artist's Choice | (64, 160) | 32x64 | €18, "As Hemingway preferred" |
-| Bottle: Green Fairy Special | (96, 160) | 32x64 | €25, Art Nouveau fairy label |
-| Bottle: "Vintage" Reserve | (128, 160) | 32x64 | €40, dusty on purpose |
-| Shot Flight Tray | (160, 160) | 64x32 | €30, five small glasses of commitment |
-| Sugar-Only Dish | (224, 160) | 32x32 | €2, the Disappointer's order |
+| Bottle: Tourist Green | (0, 160) | 32x64 | 8 Sovs, "A gentle introduction" |
+| Bottle: Bohemian Standard | (32, 160) | 32x64 | 12 Sovs, "The traditional experience" |
+| Bottle: Artist's Choice | (64, 160) | 32x64 | 18 Sovs, "As Hemingway preferred" |
+| Bottle: Green Fairy Special | (96, 160) | 32x64 | 25 Sovs, Art Nouveau fairy label |
+| Bottle: "Vintage" Reserve | (128, 160) | 32x64 | 40 Sovs, dusty on purpose |
+| Shot Flight Tray | (160, 160) | 64x32 | 30 Sovs, five small glasses of commitment |
+| Sugar-Only Dish | (224, 160) | 32x32 | 2 Sovs, the Disappointer's order |
 
 ### Pour Details:
 | Element | Position | Size | Description |
@@ -132,7 +132,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 
 ---
 
-## 🎩 Sprite Sheet 3: Emil "The Green Fairy" Novak
+## 🎩 Sprite Sheet 3: Emil "The Green Fairy" Novák
 **File:** `emil.png`
 **Dimensions:** 512x384 pixels
 
@@ -167,7 +167,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 | Mysterious Squint | (48, 256) | 48x48 | "Some say it opens doors" |
 | Disappointment (Sugar-Only) | (96, 256) | 48x48 | Palpable; Emil remembers |
 | Honest Weariness | (144, 256) | 48x48 | Off-duty "experience architect" face |
-| Showman Grin | (192, 256) | 48x48 | The €25 smile |
+| Showman Grin | (192, 256) | 48x48 | The 25 Sovs smile |
 | Portrait: Showman | (240, 256) | 64x96 | Dialogue box, in character |
 | Portrait: Off-Duty | (304, 256) | 64x96 | Dialogue box, behind the curtain |
 | Mustache Twirl F1 | (368, 256) | 48x48 | Idle flourish |
@@ -186,7 +186,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 | Believer Pointing at Lamp | (64, 0) | 64x96 | "That's definitely a fairy" |
 | Skeptic's Companion | (128, 0) | 64x96 | "Mark, that's a lamp" energy |
 | Instagram Ritualist | (192, 0) | 96x96 | Ring light out, drink getting cold, multiple angles |
-| Absinthe Veteran Locals | (288, 0) | 96x96 | Czech pair, amused — "Forty euros. AMAZING." |
+| Absinthe Veteran Locals | (288, 0) | 96x96 | Czech pair, amused — "Forty Sovs. AMAZING." |
 | First-Timer (Nervous) | (384, 0) | 64x96 | "I have work Monday" |
 | Queue Tourist | (448, 0) | 64x96 | Generic line filler |
 
@@ -279,7 +279,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 | Absinthe Menu Frame | (0, 0) | 160x96 | Art Nouveau tier selection panel |
 | Ritual Step Tracker | (160, 0) | 96x32 | Nine-step ritual progress pips |
 | Skip Ritual Button | (160, 32) | 96x32 | Available, but loses "experience" (and Bravado) |
-| Tier Price Tags | (160, 64) | 96x32 | €8 through €40 chip strip |
+| Tier Price Tags | (160, 64) | 96x32 | 8 Sovs through 40 Sovs chip strip |
 
 ### Status Icons:
 | Element | Position | Size | Description |
@@ -309,7 +309,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Frames:** Presenting Bottle (3s) → Pour F1-F4 (4s) → Sugar Placement (3s) → Water Drip F1-F3 loop (8s) → Louche Cloud F1-F4 (4s) → Flame Flourish optional (1s) → presentation flourish (1s)
 - **Pattern:** One-shot sequence, step tracker advances per stage
 - **Trigger:** Purchasing Green Fairy Special (or any tier with ritual)
-- **Purpose:** The elaborate shot-taking IS the product — the animation must feel worth €25 while depicting €3 of alcohol
+- **Purpose:** The elaborate shot-taking IS the product — the animation must feel worth 25 Sovs while depicting 3 Sovs of alcohol
 - **Audio Sync:** Pour sound on F2, sugar clink on placement, water drips at 1 per second (reverent quiet), clouding "whoosh" on Louche F3, flame puff if lit
 - **Mobile Optimization:** Drip loop shortens to 4s on Low LOD; louche plays all 4 frames regardless (it is the money shot)
 
@@ -363,7 +363,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Frames:** Tourist "Is This It?" hold + slight deflation slump tween
 - **Pattern:** One-shot after first sip of any tier
 - **Trigger:** Consumption complete, before status applies
-- **Purpose:** The "€25 for a thimble" moment — comedy anchor
+- **Purpose:** The "25 Sovs for a thimble" moment — comedy anchor
 - **Audio Sync:** Slight deflation note (satirical stinger per profile)
 - **Mobile Optimization:** None needed
 
@@ -431,7 +431,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 | Low | Static fog decal, static bottle glow, shortened drip loop, 2 tourists, tint-only Confusion |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 32 MB maximum
 - **Particle Limit:** 14 (fog + sparkles combined)
@@ -513,13 +513,13 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 2. **"THE FAIRY IS IN THE LAMP"** - Lord Pilsner pointing at a green lamp
 3. **The Control Reversal Walk** - Player physically failing to leave the cart in a straight line
 4. **"Since... 1997"** - The sign that confesses
-5. **The Sugar-Only Order** - Emil's palpable disappointment over a €2 dish
+5. **The Sugar-Only Order** - Emil's palpable disappointment over a 2 Sovs dish
 
 ### Quote Potential:
 - "They pay for experience. I provide experience. The alcohol is just the medium."
 - "Mark, that's a lamp. The lamp is not a fairy. We've been over this."
 - "The fairy does not answer to science. She answers to belief."
-- "Is this worth €25? ...you will remember this. You will tell people about this. Is THAT worth €25?"
+- "Is this worth 25 Sovs? ...you will remember this. You will tell people about this. Is THAT worth 25 Sovs?"
 - "I see... I see GREEN. I see... that's a lamp. But a GREEN lamp. THE FAIRY IS IN THE LAMP."
 
 ---
@@ -598,10 +598,10 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 | World Consistency (no real city names) | ✅ | Debaucheryville / Absinthe Arcade only; "Bohemia" survives as mythology branding, not geography |
 | Cultural Specificity | ✅ | Absinthe tourism industry and Eastern European tourist trap culture |
 | Satirical Targets Appropriate | ✅ | Tourism experience commodification and the tourists buying it — not Czech culture or responsible drinking |
-| Seedy Underbelly Present | ✅ | €3 of alcohol sold for €25 with a costume and a fog machine |
+| Seedy Underbelly Present | ✅ | 3 Sovs of alcohol sold for 25 Sovs with a costume and a fog machine |
 | Gameplay Value Established | ✅ | Status effect economy, control reversal mechanic, purchasable ritual, Bravado hooks |
 | Technical Feasibility | ✅ | 7 sheets, one AnimationPlayer ritual, input-wrapper reversal — standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 45 FPS / 14 draw calls / 32 MB per profile; estimate ~14 MB |
+| Mobile Performance Budget | ✅ | 60 FPS / 14 draw calls / 32 MB per profile; estimate ~14 MB |
 | Accessibility Features | ✅ | Reversal is never audio-only; static tint path; every stinger has a glyph |
 | No Crypto Elements | ✅ | Pure traditional grift (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

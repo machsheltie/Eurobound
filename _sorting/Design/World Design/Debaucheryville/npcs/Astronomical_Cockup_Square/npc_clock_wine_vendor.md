@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Selling €3 boxed wine poured into fancy bottles for €60 each, claiming it's infused with "temporal energy" from the clock. He positions his cart to intercept emotionally vulnerable tourists immediately after the clock show and monk blessing.
+Selling 3 Sovs boxed wine poured into fancy bottles for 60 Sovs each, claiming it's infused with "temporal energy" from the clock. He positions his cart to intercept emotionally vulnerable tourists immediately after the clock show and monk blessing.
 
 ### What Bros Believe
 This sophisticated wine connoisseur is offering exclusive "Clock Energy Wine" - a mystical vintage infused with 600 years of temporal power that makes the drinker irresistible to women. This is the kind of authentic European wine experience you can't find in Napa.
@@ -69,7 +69,7 @@ Should look like someone who's seen a sommelier once and is doing his best impre
 | Volume-focused | Cares more about bottles sold than price per bottle |
 
 ### Internal Monologue
-> "Sixty euros a bottle! They don't even taste it first! Americans are incredible. 'Temporal energy' - I made that up yesterday and it's already my best seller. Tomorrow I'll add 'lunar infusion' for the night crowd. Genius."
+> "Sixty Sovs a bottle! They don't even taste it first! Americans are incredible. 'Temporal energy' - I made that up yesterday and it's already my best seller. Tomorrow I'll add 'lunar infusion' for the night crowd. Genius."
 
 ### Motivation
 Supports extended family through wine cart profits. His cousin Miroslav (Party Monk) sends him customers; they split referral fees. Started as a legitimate wine vendor 20 years ago, discovered tourists pay more for mystical nonsense than actual quality.
@@ -114,13 +114,13 @@ Supports extended family through wine cart profits. His cousin Miroslav (Party M
 > "You feel the time flowing through you, yes? That is the clock. Very powerful. Remember: drink at midnight for maximum temporal alignment. The ladies will notice. Trust me."
 
 ### Upsell Attempt
-> "Three bottles, only €150. Save €30. Very smart investment. Your future selves will thank you. Because of the TIME energy. You understand."
+> "Three bottles, only 150 Sovs. Save 30 Sovs. Very smart investment. Your future selves will thank you. Because of the TIME energy. You understand."
 
 ### If Player Declines
 > "Your choice. But when you're at the club and the ladies ignore you... remember: Václav offered you magnetism."
 
 ### Callback Dialogue (Return Visits)
-> "The clock wine lovers return! I save special bottles for you! New vintage - 2020. Even MORE temporal. Very rare. Only €75 this time. Supply and demand. The clock demands."
+> "The clock wine lovers return! I save special bottles for you! New vintage - 2020. Even MORE temporal. Very rare. Only 75 Sovs this time. Supply and demand. The clock demands."
 
 ---
 
@@ -148,10 +148,10 @@ Supports extended family through wine cart profits. His cousin Miroslav (Party M
 ### Products Offered
 | Item | Price | Actual Value | Effect/Result |
 |------|-------|--------------|---------------|
-| Clock Energy Wine (1 bottle) | €60 | €3 | Applies "Blessed Drunk" status (same as regular drunk) |
-| Clock Energy Wine (3 bottles) | €150 | €9 | Bulk "discount," more drunk |
-| Clock Energy Wine (6 bottles) | €300 | €18 | "Lifestyle" package, much more drunk |
-| "Reserve" Clock Wine | €100 | €4 | Different box, same wine, fancier label |
+| Clock Energy Wine (1 bottle) | 60 Sovs | 3 Sovs | Applies "Blessed Drunk" status (same as regular drunk) |
+| Clock Energy Wine (3 bottles) | 150 Sovs | 9 Sovs | Bulk "discount," more drunk |
+| Clock Energy Wine (6 bottles) | 300 Sovs | 18 Sovs | "Lifestyle" package, much more drunk |
+| "Reserve" Clock Wine | 100 Sovs | 4 Sovs | Different box, same wine, fancier label |
 
 ### Cart Details
 | Feature | Description |
@@ -200,7 +200,7 @@ After initial encounter:
 ### In Other Cities
 | City | Location | Role/Context | Callback Dialogue |
 |------|----------|--------------|-------------------|
-| Sinfonia | Near Opera House | Selling "Opera Energy Wine" | "Ah! My clock wine customers! You try Opera Wine? Same temporal energy, more sophisticated. Mozart drank this. Probably. €80 per bottle - inflation, you understand." |
+| Sinfonia | Near Opera House | Selling "Opera Energy Wine" | "Ah! My clock wine customers! You try Opera Wine? Same temporal energy, more sophisticated. Mozart drank this. Probably. 80 Sovs per bottle - inflation, you understand." |
 
 ### Evolution Through Game
 - First encounter: Full sales pitch with "magnetism" angle
@@ -247,7 +247,7 @@ After initial encounter:
 - **Quest**: The Astronomical Cock-Up
 - **Role**: Third scammer encounter (Stage 2), triggered by Post-Clock Vulnerability
 - **Trigger**: 30 seconds after clock show ends + blessing received
-- **Outcome**: Bros buy 3-6 bottles of boxed wine for €180-300
+- **Outcome**: Bros buy 3-6 bottles of boxed wine for 180 Sovs-300
 
 ### Quest Gate Function
 Not a gate, but wine purchase contributes to "Total Scam Spending" counter and sets up "Blessed Drunk" status for rest of evening.

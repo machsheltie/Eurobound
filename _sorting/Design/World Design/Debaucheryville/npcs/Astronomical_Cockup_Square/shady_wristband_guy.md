@@ -16,13 +16,13 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Selling children's birthday party wristbands (bulk purchased for €0.003 each) as "VIP All-Access" passes for €30 each. The wristbands say "Je mi 7!" in Czech, which translates to "I'm 7!" - as in "I am seven years old."
+Selling children's birthday party wristbands (bulk purchased for 0.003 Sovs each) as "VIP All-Access" passes for 30 Sovs each. The wristbands say "Je mi 7!" in Czech, which translates to "I'm 7!" - as in "I am seven years old."
 
 ### What Bros Believe
 A connected local is hooking them up with exclusive Level Seven VIP wristbands that grant elite status at every club in Debaucheryville. This is the kind of insider connection that separates REAL travelers from tourists.
 
 ### Profit Margin
-**999,900%** - He paid approximately €3 for 1,000 wristbands. At €30 each, he's living his best life.
+**999,900%** - He paid approximately 3 Sovs for 1,000 wristbands. At 30 Sovs each, he's living his best life.
 
 ---
 
@@ -72,7 +72,7 @@ Should scream "guy who sells stuff out of his coat" energy. Think unlicensed tic
 > "Level Seven! I can't believe I said that and they BOUGHT it. Americans are incredible. They WANT to believe they're special. I'm basically a therapist who takes cash."
 
 ### Motivation
-Simple economics. The wristbands cost nothing. The tourists have money. The clubs are free to enter anyway. He's just... facilitating an experience. A premium experience. Worth every euro.
+Simple economics. The wristbands cost nothing. The tourists have money. The clubs are free to enter anyway. He's just... facilitating an experience. A premium experience. Worth every Sov.
 
 ---
 
@@ -83,7 +83,7 @@ Simple economics. The wristbands cost nothing. The tourists have money. The club
 > "Psst. Americans, yes? You want... the VIP experience? I have something special. Very exclusive. Not for regular tourists."
 
 **The Pitch**:
-> "These wristbands... they open ALL doors. Velvet Curtain Club. Absinthe Arcade VIP section. Even places tourists don't know exist. Very exclusive. Only €30 each."
+> "These wristbands... they open ALL doors. Velvet Curtain Club. Absinthe Arcade VIP section. Even places tourists don't know exist. Very exclusive. Only 30 Sovs each."
 
 ### The Critical Lie
 *When Bradley asks about the Czech text:*

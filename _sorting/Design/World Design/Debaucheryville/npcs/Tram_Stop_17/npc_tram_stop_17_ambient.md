@@ -373,7 +373,7 @@ Ultimate proof that Jiří has become a landmark. The city hasn't helped him—i
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_metro_worker_01`
 - **Display Name**: Metro Worker
-- **Internal Name**: Tomáš Procházka
+- **Internal Name**: Štěpán Procházka
 - **Role**: Callback NPC / Dark Secret Holder
 - **Primary Location**: Metro Station (2 blocks from Stop #17)
 - **Spawn Condition**: Visit metro station after meeting Jiří

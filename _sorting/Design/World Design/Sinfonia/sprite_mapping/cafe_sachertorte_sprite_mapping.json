@@ -176,7 +176,7 @@
       "dimensions": {"width": 256, "height": 128},
       "elements": {
         "damage_counter_bg": {"x": 0, "y": 0, "width": 120, "height": 32},
-        "euro_symbol": {"x": 120, "y": 0, "width": 16, "height": 16},
+        "sovs_symbol": {"x": 120, "y": 0, "width": 48, "height": 16},
         "menu_frame": {"x": 0, "y": 32, "width": 160, "height": 96},
         "debt_indicator": {"x": 160, "y": 32, "width": 64, "height": 24},
         "valued_patron_badge": {"x": 160, "y": 56, "width": 48, "height": 48}

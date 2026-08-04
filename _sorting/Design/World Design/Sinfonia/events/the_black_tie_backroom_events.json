@@ -18,7 +18,7 @@
         "trigger_type": "player_approaches_zone",
         "prerequisites": [
           "location_entry_conditions_met",
-          "collateral_500_euro_on_deposit",
+          "collateral_500_sov_on_deposit",
           "scene_not_yet_seen"
         ],
         "gate_pre_beat": {
@@ -35,7 +35,7 @@
         "player_holds_cards": false,
         "bet_slider_shown": false,
         "player_can_influence_outcome": false,
-        "stake_euro": 500,
+        "stake_sov": 500,
         "stake_source": "door_collateral_chips",
         "stake_uniform_for_every_player": true,
         "gold_above_stake": "untouched",
@@ -52,7 +52,7 @@
       "scene_text_owner": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md",
 
       "outcomes": {
-        "gold_delta_euro": -500,
+        "gold_delta_sov": -500,
         "items_granted": ["item_candy_smokes", "item_tractor_nft"],
         "grant_beat": 8,
         "status_applied": [],
@@ -69,7 +69,7 @@
       },
 
       "engine_requirements": [
-        "Fixed-stake collateral: grant and removal of exactly the €500 door-collateral chips, independent of party gold",
+        "Fixed-stake collateral: grant and removal of exactly the 500 Sovs door-collateral chips, independent of party gold",
         "Scene-triggered item grants at a named beat (beat 8), not at scene end",
         "One-time-scene flag with a persistent post-scene ambient NPC state",
         "Zone-level suppression of the betting interface at aarons_corner_table in every state"
@@ -77,7 +77,7 @@
 
       "systemic_consequence": {
         "affects": "sinfonia_imperialsquare_haute_couture_01",
-        "effect": "A party busted here can no longer afford the €500 Valued Client path, nudging toward PATH B",
+        "effect": "A party busted here can no longer afford the 500 Sovs Valued Client path, nudging toward PATH B",
         "hard_gate": false
       }
     }
@@ -92,7 +92,7 @@
       "effects": {
         "achievement": "the_door_opens",
         "unlocks": ["main_floor", "aarons_corner_table"],
-        "collateral_taken_euro": 500
+        "collateral_taken_sov": 500
       }
     },
     "refused_entry": {
@@ -115,7 +115,7 @@
     },
     "high_roller_unlock": {
       "event_id": "blacktie_event_high_roller_01",
-      "trigger": "total_winnings_1000_euro",
+      "trigger": "total_winnings_1000_sov",
       "one_time": true,
       "effects": {
         "status_granted": "high_roller",
@@ -151,7 +151,7 @@
   "boss_events": {
     "card_shark_discovery": {
       "event_id": "blacktie_event_falsch_discovered_01",
-      "trigger": {"any_of": ["observe_falsch_with_learned_tells", "total_losses_1000_euro"]},
+      "trigger": {"any_of": ["observe_falsch_with_learned_tells", "total_losses_1000_sov"]},
       "zone": "private_boxes",
       "one_time": true,
       "effects": {"unlocks": "herr_falsch_boss_challenge"}
@@ -169,7 +169,7 @@
         "weakness": "expose_cheating_during_fight_reduces_stats"
       },
       "rewards": {
-        "gold_euro": 2000,
+        "gold_sov": 2000,
         "items": ["item_shark_fin"],
         "conditional_items": ["marked_cards"],
         "achievement": "card_counter",
@@ -182,13 +182,13 @@
     "siegfried_stay": {
       "event_id": "blacktie_event_reformed_gambler_01",
       "trigger": "meeting_requirements_met",
-      "requirements": ["win_at_least_once", "lose_at_least_once", "tip_20_euro"],
+      "requirements": ["win_at_least_once", "lose_at_least_once", "tip_20_sov"],
       "one_time": true,
       "phases": ["evening_invitation", "dreams_of_fortune", "morning_scene"],
       "content_owner": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/siegfried_coat_check.md",
       "effects": {
         "status_granted": ["gamblers_insight", "knows_their_tricks"],
-        "gold_delta_euro": -50,
+        "gold_delta_sov": -50,
         "achievement": "reformed_witness"
       }
     }

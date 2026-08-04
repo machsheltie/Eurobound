@@ -59,11 +59,11 @@ She runs her food truck like a normal business despite circling a roundabout ete
 
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Roundabout Roll | €8 | Restores 20 HP | Standard fare |
-| Exit Anxiety Easer (whiskey) | €12 | -Stress, +Confused | Liquid courage |
-| Cloverleaf Curry | €15 | Restores 40 HP, +Speed | Surprisingly good |
-| Margaret's Memorial Sandwich | €10 | Restores HP | Patrick appears misty-eyed |
-| Tourist Trap Platter | €25 | Full heal | Premium pricing |
+| Roundabout Roll | 8 Sovs | Restores 20 HP | Standard fare |
+| Exit Anxiety Easer (whiskey) | 12 Sovs | -Stress, +Confused | Liquid courage |
+| Cloverleaf Curry | 15 Sovs | Restores 40 HP, +Speed | Surprisingly good |
+| Margaret's Memorial Sandwich | 10 Sovs | Restores HP | Patrick appears misty-eyed |
+| Tourist Trap Platter | 25 Sovs | Full heal | Premium pricing |
 
 ---
 

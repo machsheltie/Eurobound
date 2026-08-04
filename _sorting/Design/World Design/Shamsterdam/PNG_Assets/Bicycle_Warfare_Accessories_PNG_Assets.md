@@ -1,11 +1,11 @@
 # Bicycle Warfare Accessories - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Bicycle Warfare Accessories ("Fietsbel & Meer") is the narrow shop wedged between the tourist bike rentals near Central Station that sells bells like ammunition — a military surplus store for people about to lose a war they don't know they've entered. This document specifies every PNG asset for the shop: the exterior with its warning signage, the interior with the five-tier Bell Wall arsenal and danger-zone war room maps, Werner and Koen, the five atmospheric customer archetypes, all eleven purchasable accessories, effects, and UI. Its satirical essence in a sentence: selling +Confidence to tourists who need +Skill.
+Bicycle Warfare Accessories ("Fietsbel & Meer") is the narrow shop wedged between the tourist bike rentals near Centraal Chaos that sells bells like ammunition — a military surplus store for people about to lose a war they don't know they've entered. This document specifies every PNG asset for the shop: the exterior with its warning signage, the interior with the five-tier Bell Wall arsenal and danger-zone war room maps, Werner and Koen, the five atmospheric customer archetypes, all eleven purchasable accessories, effects, and UI. Its satirical essence in a sentence: selling +Confidence to tourists who need +Skill.
 
 **Location ID:** `shamsterdam_central_bicycle_warfare_01`
 **Theme:** Tourist cycling overconfidence vs. Dutch bike-lane reality; accessory-as-solution thinking treated with military seriousness
-**Zone:** Near Central Station, tourist bicycle rental district
+**Zone:** Near Centraal Chaos, tourist bicycle rental district
 **Hours:** 8 AM - 8 PM (tourist cycling hours, carnage window)
 **Primary Function:** Accessory vendor / survival equipment shop — bell tier purchase system, bell test mechanic, "Equipped" +Confidence buff, danger map, cycling achievement track integration
 
@@ -96,11 +96,11 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### The Bell Wall Arsenal (Tier Displays):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Tier 1 Display — The Pacifists | (0, 64) | 192x128 | Polite classic ding bells, €5-8 tags, gentle presentation |
-| Tier 2 Display — The Compromisers | (192, 64) | 192x128 | DING-DING bells, €10-15, hopeful arrangement |
-| Tier 3 Display — The Asserters | (384, 64) | 192x128 | Dual-tone bells, €15-20, serious mounting brackets |
-| Tier 4 Display — The Dominators | (576, 64) | 192x128 | Air horns and sirens, €20-25, caged like ordnance |
-| Tier 5 Display — The Delusional | (768, 64) | 192x128 | "Smart bells," GPS units, €30+, glowing app icons |
+| Tier 1 Display — The Pacifists | (0, 64) | 192x128 | Polite classic ding bells, 5 Sovs-8 tags, gentle presentation |
+| Tier 2 Display — The Compromisers | (192, 64) | 192x128 | DING-DING bells, 10 Sovs-15, hopeful arrangement |
+| Tier 3 Display — The Asserters | (384, 64) | 192x128 | Dual-tone bells, 15 Sovs-20, serious mounting brackets |
+| Tier 4 Display — The Dominators | (576, 64) | 192x128 | Air horns and sirens, 20 Sovs-25, caged like ordnance |
+| Tier 5 Display — The Delusional | (768, 64) | 192x128 | "Smart bells," GPS units, 30 Sovs+, glowing app icons |
 
 ### Fixtures:
 | Element | Position | Size | Description |
@@ -187,18 +187,18 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### Products (full inventory table coverage):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Classic Ding Bell (Tier 1) | (0, 0) | 32x32 | €5 — polite, ignored by all |
-| Assertive Bell (Tier 2) | (32, 0) | 32x32 | €12 — noticed by some |
-| Serious Dual-Tone (Tier 3) | (64, 0) | 32x32 | €15-20 — actual communication |
-| Tactical Air Horn (Tier 4) | (96, 0) | 48x32 | €22 — psychological warfare |
-| Smart Bell App (Tier 5) | (144, 0) | 32x32 | €35 — tech delusion, tiny glowing screen |
-| Bike Mirror | (176, 0) | 32x32 | €8 — see death coming |
-| Front Light | (208, 0) | 32x24 | €10 — legally mandatory, practically useful |
-| Rear Light | (0, 32) | 32x24 | €10 — red, always red, not negotiable |
-| Bike Helmet | (32, 32) | 48x48 | €25 — +Protection, -Shamsterdam Cred |
-| Rain Poncho | (80, 32) | 48x48 | €8 — it WILL rain |
-| Survival Map | (128, 32) | 48x64 | €5 — knowledge and terror |
-| Combination Package | (176, 32) | 64x64 | €40 — tourist survival bundle box |
+| Classic Ding Bell (Tier 1) | (0, 0) | 32x32 | 5 Sovs — polite, ignored by all |
+| Assertive Bell (Tier 2) | (32, 0) | 32x32 | 12 Sovs — noticed by some |
+| Serious Dual-Tone (Tier 3) | (64, 0) | 32x32 | 15 Sovs-20 — actual communication |
+| Tactical Air Horn (Tier 4) | (96, 0) | 48x32 | 22 Sovs — psychological warfare |
+| Smart Bell App (Tier 5) | (144, 0) | 32x32 | 35 Sovs — tech delusion, tiny glowing screen |
+| Bike Mirror | (176, 0) | 32x32 | 8 Sovs — see death coming |
+| Front Light | (208, 0) | 32x24 | 10 Sovs — legally mandatory, practically useful |
+| Rear Light | (0, 32) | 32x24 | 10 Sovs — red, always red, not negotiable |
+| Bike Helmet | (32, 32) | 48x48 | 25 Sovs — +Protection, -Shamsterdam Cred |
+| Rain Poncho | (80, 32) | 48x48 | 8 Sovs — it WILL rain |
+| Survival Map | (128, 32) | 48x64 | 5 Sovs — knowledge and terror |
+| Combination Package | (176, 32) | 64x64 | 40 Sovs — tourist survival bundle box |
 
 ### Price Tags & Tier Markers:
 | Element | Position | Size | Description |
@@ -367,7 +367,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 | Low | Simplified bell variety (per profile), static map, no shine effects, static customers |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 12 per frame
 - **Memory Footprint:** 30 MB maximum
 - **Particle Limit:** 20
@@ -408,9 +408,9 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Shamsterdam Bike Rental | Adjacent Rental Shops strip | Natural customer flow; shared street facade |
-| Central Station | Danger map RED zone marker | Map highlights on quest reference |
+| Centraal Chaos | Danger map RED zone marker | Map highlights on quest reference |
 | Canal Bridges (Canal Ring Promenade) | Danger map ORANGE zone marker | Bell-heavy chokepoint callout |
-| Park zone ("Vondelpark" in profile — see validation) | Danger map GREEN zone marker | Beginner-area map reference |
+| Park zone ("Wandelpark" in profile — see validation) | Danger map GREEN zone marker | Beginner-area map reference |
 
 ---
 
@@ -520,13 +520,13 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ❌ | Profile's danger map lists real place names ("Vondelpark", "Dam Square", also "Amsterdam" in flavor copy) — this spec substitutes generic zone labels, but source profile needs in-world renames |
+| World Consistency (no real city names) | ✅ | RESOLVED. Danger map now uses in-world names throughout: Centraal Chaos and Verdoemplein (RED zones), Wandelpark (GREEN beginner zone). Flavor copy uses Shamsterdam |
 | Cultural Specificity | ✅ | Dutch bike culture supremacy vs. tourist unpreparedness |
 | Satirical Targets Appropriate | ✅ | Tourist overconfidence and accessory-as-solution thinking; Dutch cyclists respected as apex predators |
 | Seedy Underbelly Present | ✅ | Selling confidence to people who need skills; +Confidence not +Survival |
 | Gameplay Value Established | ✅ | Bell tier purchases, test mechanic, equipped status, achievement track, bike combat hooks |
 | Technical Feasibility | ✅ | Single-room shop, CPU particles, one parallax layer documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 12 draw calls, 30 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 12 draw calls, 30 MB per profile budget |
 | Accessibility Features | ✅ | Waveform volume mirrors, map hatching, reduced-motion variants, 44px zones |
 | No Crypto Elements | ✅ | Pure analog cycling equipment (Tier 5 "smart bell" is satire of tech, no blockchain) |
 | Social Media Integration | ✅ | 4 screenshot moments + quote bank identified |

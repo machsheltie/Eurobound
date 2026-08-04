@@ -952,7 +952,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 | Technical Feasibility | ✅ | Pre-baked animation loops solve mobile performance |
 | Mobile Performance Budget | ✅ | 60 FPS on iPhone 8, <50 draw calls, <64 MB, scalable particles |
 | Accessibility Features | ✅ | Visual audio cues, motion-reduction options (rain/wipers), text-based exit reading |
-| No Crypto Elements | ✅ | All transactions in Euros (food truck menu) |
+| No Crypto Elements | ✅ | All transactions in Sovs (food truck menu) |
 | Social Media Integration | ✅ | 5 screenshot moments + quotes + meme formats identified |
 
 ---

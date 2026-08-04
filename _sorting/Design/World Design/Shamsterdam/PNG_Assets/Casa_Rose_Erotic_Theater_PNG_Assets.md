@@ -1,7 +1,7 @@
 # Casa Rosé Erotic Theatre - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Casa Rosé Erotic Theatre is the pink-neon tourist-trap live show venue on Roodelicht Row where bachelor parties pay €65 to see something they'll describe incorrectly for decades — a regret factory built on FOMO, drink minimums, and a photogenic pink elephant statue. This document specifies every PNG asset for the venue: the neon exterior with the elephant photo-op landmark, the lobby/bar extraction zone, the theatre space (show content abstracted per profile — the assets cover atmosphere and reactions, never acts), staff NPCs Pavel/Katya/André/Amber, customer archetypes, drinks and trophy objects, effects, and UI. Its satirical essence in a sentence: everyone came because they felt obligated, everyone will lie about it afterward.
+Casa Rosé Erotic Theatre is the pink-neon tourist-trap live show venue on Roodelicht Row where bachelor parties pay 65 Sovs to see something they'll describe incorrectly for decades — a regret factory built on FOMO, drink minimums, and a photogenic pink elephant statue. This document specifies every PNG asset for the venue: the neon exterior with the elephant photo-op landmark, the lobby/bar extraction zone, the theatre space (show content abstracted per profile — the assets cover atmosphere and reactions, never acts), staff NPCs Bogdan/Katya/André/Amber, customer archetypes, drinks and trophy objects, effects, and UI. Its satirical essence in a sentence: everyone came because they felt obligated, everyone will lie about it afterward.
 
 **Location ID:** `shamsterdam_roodelicht_casa_rose_01`
 **Theme:** Bachelor party ritual tourism — paying for "experiences" you'll lie about; red light district commodification; mandatory group activities
@@ -59,7 +59,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | Velvet Rope | (640, 256) | 64x192 | Always open, rope remains for "atmosphere" |
 | Golden Door Handles | (704, 256) | 32x64 | Shaped like... anatomy (silhouette-suggestive only) |
 | Pink Light Spill | (736, 256) | 128x64 | Neon glow pooling on pavement |
-| Promoter Engagement Zone Marker | (736, 320) | 128x64 | Pavel's 20-foot domain decal |
+| Promoter Engagement Zone Marker | (736, 320) | 128x64 | Bogdan's 20-foot domain decal |
 
 ### The Pink Elephant:
 | Element | Position | Size | Description |
@@ -101,7 +101,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | "CELEBRITY VISITORS" Wall | (480, 256) | 128x128 | Empty frames; photos are "in storage" (lawyers) |
 | Pink Champagne Bucket (Décor) | (608, 256) | 64x96 | Never contains champagne, always contains regret |
 | Fake Flowers Vase | (672, 256) | 32x64 | Maintenance level: zero |
-| Ticket Booth | (704, 256) | 128x192 | €65 entry, €85 "premium," group "discounts" |
+| Ticket Booth | (704, 256) | 128x192 | 65 Sovs entry, 85 Sovs "premium," group "discounts" |
 | Stairway to Theatre | (832, 256) | 192x192 | Pink-lit ascent |
 | Aged Carpet Tiles 1-2 | (0, 384) / (32, 384) | 32x32 each | Deliberately dim-lit for a reason |
 | Pink Wash Light Cone | (64, 384) | 96x128 | Spot on drink specials |
@@ -127,10 +127,10 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 ### Seating:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Premium Front Row Section | (512, 96) | 384x192 | €85 total — closest to what you don't want to be close to |
+| Premium Front Row Section | (512, 96) | 384x192 | 85 Sovs total — closest to what you don't want to be close to |
 | Seating Occupied Overlay | (512, 288) | 256x96 | Silhouette crowd fill layer |
 | Standard Middle Rows | (0, 384) | 512x256 | Bachelor party territory, matching shirts visible |
-| Back Standing Room | (512, 384) | 384x192 | €55 "budget," escape route access |
+| Back Standing Room | (512, 384) | 384x192 | 55 Sovs "budget," escape route access |
 | House Light Dim Tile | (896, 96) | 128x128 | Ambient darkness tile |
 
 ### Atmosphere:
@@ -150,12 +150,12 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 **Dimensions:** 512x384 pixels
 **Sprite Size:** 64x96 pixels
 
-### Promoter Pavel:
+### Promoter Bogdan:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Pavel Idle 1-2 | (0, 0) / (64, 0) | 64x96 each | Cheap black suit, pink pocket square, rejection-tested smile |
-| Pavel Pitch 1-4 | (128, 0) / (192, 0) / (256, 0) / (320, 0) | 64x96 each | "Special deal, my friend" gesture cycle |
-| Pavel Rejected | (384, 0) | 64x96 | "Okay, okay. You come back later. I am here. Always here." |
+| Bogdan Idle 1-2 | (0, 0) / (64, 0) | 64x96 each | Cheap black suit, pink pocket square, rejection-tested smile |
+| Bogdan Pitch 1-4 | (128, 0) / (192, 0) / (256, 0) / (320, 0) | 64x96 each | "Special deal, my friend" gesture cycle |
+| Bogdan Rejected | (384, 0) | 64x96 | "Okay, okay. You come back later. I am here. Always here." |
 
 ### Bartender Katya:
 | Element | Position | Size | Description |
@@ -174,7 +174,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | Amber Whisper-Offer | (64, 288) | 64x96 | "Another round? Special price during show." |
 
 ### Technical Notes:
-- Pavel operates only in the exterior engagement zone; despawns inside
+- Bogdan operates only in the exterior engagement zone; despawns inside
 - Amber renders at 60% brightness during shows — visible mostly by tray glint
 
 ---
@@ -231,13 +231,13 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 ### Drinks (menu table coverage):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| "Pink Lady" House Special | (0, 0) | 32x32 | €15 — exactly as pink as the décor |
-| "The Bachelor" | (32, 0) | 32x32 | €18 — watered down, +Bravado (temporarily) |
-| "Champagne" Bottle (Not Actually) | (64, 0) | 32x48 | €95 — very romantic, very premium |
-| "The Forget-Me-Not" | (96, 0) | 32x32 | €20 — memory becomes vague |
-| Heineken | (128, 0) | 24x48 | €12 — everyone knows you're stalling |
-| Water Glass | (152, 0) | 24x32 | €8 — no effects, but costs €8 |
-| "I Survived Casa Rosé" Shot Glass | (176, 0) | 32x32 | €25 merch trophy |
+| "Pink Lady" House Special | (0, 0) | 32x32 | 15 Sovs — exactly as pink as the décor |
+| "The Bachelor" | (32, 0) | 32x32 | 18 Sovs — watered down, +Bravado (temporarily) |
+| "Champagne" Bottle (Not Actually) | (64, 0) | 32x48 | 95 Sovs — very romantic, very premium |
+| "The Forget-Me-Not" | (96, 0) | 32x32 | 20 Sovs — memory becomes vague |
+| Heineken | (128, 0) | 24x48 | 12 Sovs — everyone knows you're stalling |
+| Water Glass | (152, 0) | 24x32 | 8 Sovs — no effects, but costs 8 Sovs |
+| "I Survived Casa Rosé" Shot Glass | (176, 0) | 32x32 | 25 Sovs merch trophy |
 | Drink Tray | (208, 0) | 48x32 | Amber's offerings |
 
 ### Props & Trophies:
@@ -246,7 +246,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | Empty Champagne Bucket (Trophy) | (0, 48) | 64x96 | Party trophy item post-purchase |
 | Pink Cash Register | (64, 48) | 96x64 | Transaction completion emphasis |
 | No Camera Sign | (160, 48) | 64x32 | Selectively enforced |
-| Ticket Stub | (160, 80) | 32x32 | €65 non-refundable |
+| Ticket Stub | (160, 80) | 32x32 | 65 Sovs non-refundable |
 | Confiscated Phone Bin | (192, 80) | 64x48 | Ring light graveyard |
 | Handheld Drink Menu | (0, 144) | 48x96 | Names you won't say out loud |
 | Entry Wristband/Stamp | (48, 144) | 32x32 | Re-entry mark |
@@ -266,8 +266,8 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 |---------|----------|------|-------------|
 | Pink Elephant Photo Frame UI | (0, 0) | 384x256 | Group photo composition overlay — everyone's profile picture for one evening |
 | Show Schedule Board | (384, 0) | 128x192 | Hourly on the hour; 1 AM "special" (same show) |
-| Seating Selection UI | (0, 256) | 256x128 | Front (€85) / Middle (€65) / Back (€55) with mechanics notes |
-| Drink Minimum Tracker | (256, 256) | 96x32 | €15 requirement progress |
+| Seating Selection UI | (0, 256) | 256x128 | Front (85 Sovs) / Middle (65 Sovs) / Back (55 Sovs) with mechanics notes |
+| Drink Minimum Tracker | (256, 256) | 96x32 | 15 Sovs requirement progress |
 | "Witnessed Something" Status Icon | (352, 256) | 64x64 | Applied post-show, lasts until next city |
 | Premium Upsell Popup | (256, 320) | 128x64 | "Worth it? That's for you to decide." |
 | Audio-Cue Icons 1-3 | (416, 256) to (480, 256), 32px steps | 32x32 each | Bass-thump / announcement / register visual mirrors |
@@ -310,7 +310,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 - **Audio Sync:** Whoop/gasp samples locked to wave start
 - **Mobile Optimization:** Static crowd on older devices (profile-mandated)
 
-### Pavel Approach Pattern (Sheet 4):
+### Bogdan Approach Pattern (Sheet 4):
 - **Duration:** Pitch cycle 2 seconds (4 frames at 2 FPS), loops while player in engagement zone
 - **Frames:** 4 + rejected hold
 - **Pattern:** Idle → intercept vector → pitch loop → rejected (holds 2s) → reset
@@ -374,7 +374,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 
 ### Colorblind Considerations:
 - Seating tiers labeled with text + price, never pink-shade coding alone
-- Drink minimum tracker uses fill + numeric €
+- Drink minimum tracker uses fill + numeric `N SOVS` readout (word lettered, no currency mark)
 - Participation prompt options icon-coded (mask/run), not color-coded
 - Touch zones minimum 44px for ticket booth, bar, seating select, and photo op
 
@@ -404,7 +404,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | Low | Static fog and crowd, no glitter, steady neon (profile-mandated reductions) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 18 per frame
 - **Memory Footprint:** 42 MB maximum
 - **Particle Limit:** 20 (fog wisps, glitter)
@@ -428,7 +428,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 |----------------|-----------|--------|
 | Bass vibration lines / light spill | Euro-dance bass bed | Locked 120 BPM |
 | Marquee flicker | Neon buzz dip | On flicker burst |
-| Pavel pitch frame 1 | "My friend!" bark | On loop start |
+| Bogdan pitch frame 1 | "My friend!" bark | On loop start |
 | Katya prep frames | Shake + clink + ka-ching | Frames 1-2, completion |
 | Lights-dim + fog | Announcement PA + fog hiss | Show start on the hour |
 | Groom spotlight | Drumroll → clunk | Sweep → lock |
@@ -466,7 +466,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 ### Environmental Storytelling:
 - The velvet rope that's always open but never removed is the business model in one prop
 - Empty "CELEBRITY VISITORS" frames tell a legal story without a word
-- €8 water on the menu board does more satire than any dialogue
+- 8 Sovs water on the menu board does more satire than any dialogue
 - The pink elephant's nightly graffiti cycle makes the street itself a repeat character
 
 ### Character Integration Notes:
@@ -480,7 +480,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 
 ### Screenshot-Worthy Moments:
 1. **The Pink Elephant Photo** - The bachelor party ritual everyone has and everyone regrets
-2. **€8 Water** - Menu board close-up; the purest tourist-trap artifact
+2. **8 Sovs Water** - Menu board close-up; the purest tourist-trap artifact
 3. **The Groom Spotlight** - Panic frames under the pink beam
 4. **Three Retellings** - Side-by-side contradiction cards
 5. **Influencer Escorted Out** - Ring light consequence arc, Chadwick's mirror
@@ -488,7 +488,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 ### Quote Potential:
 - "You Can't Unsee What You Came To See"
 - "World famous banana show. You hear about this? Tonight, special price."
-- "Water is... eight euros. This is normal."
+- "Water is... eight Sovs. This is normal."
 - "That was... that was definitely... something."
 - "You want story to tell? This is story. Trust me. Your grandchildren will... actually, don't tell grandchildren."
 
@@ -545,7 +545,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 ### Before Submitting Assets:
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly
-- [ ] Key gags read clearly: always-open velvet rope, €8 water, empty celebrity frames, elephant ritual, contradicting retellings
+- [ ] Key gags read clearly: always-open velvet rope, 8 Sovs water, empty celebrity frames, elephant ritual, contradicting retellings
 - [ ] Accessibility visual alternatives included for all audio cues (bass, PA, register, shutter)
 - [ ] File naming follows snake_case convention
 - [ ] Master files preserve layer structure for future edits
@@ -568,10 +568,10 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | World Consistency (no real city names) | ✅ | Shamsterdam / Roodelicht Row in-world; profile's "Amsterdam" lines are meta commentary only |
 | Cultural Specificity | ✅ | Red-light live show tourism, bachelor party ritual culture |
 | Satirical Targets Appropriate | ✅ | Tourist obligation and commercial exploitation; performers and sex workers explicitly not targets — show is abstracted, staff are competent professionals |
-| Seedy Underbelly Present | ✅ | Drink minimums, fake champagne, selective camera enforcement, €100+ extraction per head |
+| Seedy Underbelly Present | ✅ | Drink minimums, fake champagne, selective camera enforcement, 100 Sovs+ extraction per head |
 | Gameplay Value Established | ✅ | Seating/drink systems, reaction mini-game, status effects, photo op, retelling system |
 | Technical Feasibility | ✅ | Three-scene loading, fake mirrors, lighting-only show sequences documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 18 draw calls, 42 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 42 MB per profile budget |
 | Accessibility Features | ✅ | Visual audio mirrors, no >3 Hz flashing, reduced-motion variants, 44px zones |
 | No Crypto Elements | ✅ | Pure tourist trap commerce |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24 hours (coolness never sleeps)
 - **Stat Requirements**: None (the insecure are welcome, especially them)
-- **Item Requirements**: Gold for purchases (€20-150), willingness to reinvent yourself at 2 AM
+- **Item Requirements**: Gold for purchases (20 Sovs-150), willingness to reinvent yourself at 2 AM
 - **Previous Location Requirements**: None (the urge to look cool finds everyone)
 - **Special Conditions**: 2 AM - 5 AM sees different clientele (more desperate, more honest)
 
@@ -149,41 +149,41 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 **Leather & Jackets (Chest Armor)**
 | Item | Price | Defense | Other Stats | Notes |
 |------|-------|---------|-------------|-------|
-| Faux Leather Jacket | €40 | +2 Defense | +5 Cool Factor | "Budget transformation" |
-| Genuine Leather Jacket | €120 | +5 Defense | +15 Cool Factor | "The real deal" |
-| Studded Leather Jacket | €150 | +7 Defense | +20 Cool Factor, +5 Intimidation | "Maximum statement" |
-| Vintage Biker Jacket | €100 | +4 Defense | +10 Cool Factor, +5 Charm (specific NPCs) | "Has history (or looks like it)" |
-| Denim Vest (Patchless) | €30 | +1 Defense | +5 Cool Factor, patch slots | "Canvas for your identity" |
-| Band Patch Collection | €5-15 each | +1 per patch | +Cool Factor per patch | "Declare your allegiances" |
+| Faux Leather Jacket | 40 Sovs | +2 Defense | +5 Cool Factor | "Budget transformation" |
+| Genuine Leather Jacket | 120 Sovs | +5 Defense | +15 Cool Factor | "The real deal" |
+| Studded Leather Jacket | 150 Sovs | +7 Defense | +20 Cool Factor, +5 Intimidation | "Maximum statement" |
+| Vintage Biker Jacket | 100 Sovs | +4 Defense | +10 Cool Factor, +5 Charm (specific NPCs) | "Has history (or looks like it)" |
+| Denim Vest (Patchless) | 30 Sovs | +1 Defense | +5 Cool Factor, patch slots | "Canvas for your identity" |
+| Band Patch Collection | 5 Sovs-15 each | +1 per patch | +Cool Factor per patch | "Declare your allegiances" |
 
 **Combat Boots & Footwear (Foot Armor)**
 | Item | Price | Defense | Other Stats | Notes |
 |------|-------|---------|-------------|-------|
-| Combat Boots (Standard) | €60 | +3 Defense | +5 Kicking Power | "Practical and aggressive" |
-| Combat Boots (Steel-Toe) | €90 | +4 Defense | +10 Kicking Power | "For serious situations" |
-| Platform Boots | €80 | +2 Defense | +Height, +10 Intimidation in clubs | "Presence amplifier" |
-| Vintage Army Boots | €50 | +3 Defense | +5 Cool Factor | "Someone else's story" |
-| Creepers | €70 | +2 Defense | +5 Speed, +10 Cool Factor (scene-specific) | "Subculture signifier" |
+| Combat Boots (Standard) | 60 Sovs | +3 Defense | +5 Kicking Power | "Practical and aggressive" |
+| Combat Boots (Steel-Toe) | 90 Sovs | +4 Defense | +10 Kicking Power | "For serious situations" |
+| Platform Boots | 80 Sovs | +2 Defense | +Height, +10 Intimidation in clubs | "Presence amplifier" |
+| Vintage Army Boots | 50 Sovs | +3 Defense | +5 Cool Factor | "Someone else's story" |
+| Creepers | 70 Sovs | +2 Defense | +5 Speed, +10 Cool Factor (scene-specific) | "Subculture signifier" |
 
 **Accessories (Various Slots)**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Chain Wallet | €25 | +Security vs pickpockets, +5 Cool Factor | "Practical AND aesthetic" |
-| Studded Belt | €35 | +3 Defense, +Improvised Weapon option | "Holds up pants, holds up in fights" |
-| Fingerless Gloves | €20 | +5 Dexterity, +5 Edginess | "For things that require grip" |
-| Spiked Bracelet | €30 | +3 Attack, +5 Intimidation | "Handshake deterrent" |
-| Leather Cuff | €15 | +5 Cool Factor | "Subtle statement" |
-| Choker (Various) | €10-25 | +Charm (specific contexts) | "Neck declaration" |
-| Bandana | €8 | +5 Cool Factor, face concealment option | "Multiple functions" |
-| Aviator Sunglasses | €35 | +Confusion resistance (day), +10 Cool Factor | "Classic for a reason" |
+| Chain Wallet | 25 Sovs | +Security vs pickpockets, +5 Cool Factor | "Practical AND aesthetic" |
+| Studded Belt | 35 Sovs | +3 Defense, +Improvised Weapon option | "Holds up pants, holds up in fights" |
+| Fingerless Gloves | 20 Sovs | +5 Dexterity, +5 Edginess | "For things that require grip" |
+| Spiked Bracelet | 30 Sovs | +3 Attack, +5 Intimidation | "Handshake deterrent" |
+| Leather Cuff | 15 Sovs | +5 Cool Factor | "Subtle statement" |
+| Choker (Various) | 10 Sovs-25 | +Charm (specific contexts) | "Neck declaration" |
+| Bandana | 8 Sovs | +5 Cool Factor, face concealment option | "Multiple functions" |
+| Aviator Sunglasses | 35 Sovs | +Confusion resistance (day), +10 Cool Factor | "Classic for a reason" |
 
 **The Secret Soft Section**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Band T-Shirt (Classic) | €25 | +5 Cool Factor (if band recognized) | "Conversation starter" |
-| Band T-Shirt (Obscure) | €30 | +10 Cool Factor (gatekeepers), -5 (mainstream) | "Test who's real" |
-| Comfortable Black Jeans | €45 | +2 Defense, no movement penalty | "Looking cool without suffering" |
-| Soft Leather Jacket | €130 | +4 Defense, +10 Cool Factor, +Comfort | "Best of both worlds" |
+| Band T-Shirt (Classic) | 25 Sovs | +5 Cool Factor (if band recognized) | "Conversation starter" |
+| Band T-Shirt (Obscure) | 30 Sovs | +10 Cool Factor (gatekeepers), -5 (mainstream) | "Test who's real" |
+| Comfortable Black Jeans | 45 Sovs | +2 Defense, no movement penalty | "Looking cool without suffering" |
+| Soft Leather Jacket | 130 Sovs | +4 Defense, +10 Cool Factor, +Comfort | "Best of both worlds" |
 
 ### The "Cool Factor" Stat
 - **Function**: Affects NPC interactions in club/scene contexts

@@ -131,7 +131,7 @@ A **duck holding a scythe**. The tattoo artist clearly didn't understand "skelet
 | **Visibility** | ALWAYS (bros never remove them) |
 
 ### What They Actually Are
-Cheap plastic children's birthday party wristbands that cost approximately €0.003 each. They say "Je mi 7!" in Czech, which translates to "I'm 7!" - as in "I am seven years old." The scammer told them it means "Level Seven Access."
+Cheap plastic children's birthday party wristbands that cost approximately 0.003 Sovs each. They say "Je mi 7!" in Czech, which translates to "I'm 7!" - as in "I am seven years old." The scammer told them it means "Level Seven Access."
 
 ### What The Bros Believe They Are
 "LEVEL SEVEN VIP STATUS. These wristbands grant us access to the most exclusive venues in Europe. Seven is ABOVE platinum. This doesn't even exist in America."

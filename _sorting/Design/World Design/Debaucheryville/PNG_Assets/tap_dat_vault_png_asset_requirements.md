@@ -455,7 +455,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 - **Potato Mode:** Essential sprites only, no rhythm-reactive elements, static environment
 
 ### Performance Targets:
-- **Target FPS:** 45 fps (complex rhythm synchronization)
+- **Target FPS:** 60 fps (complex rhythm synchronization)
 - **Max Draw Calls:** 20 per frame
 - **Memory Footprint:** 48MB maximum for location
 
@@ -831,7 +831,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 | Seedy Underbelly Present | ✅ | Nightclub disguised as brewery selling flavored vape juice as "experimental beer" to drunk tourists |
 | Gameplay Value Established | ✅ | Rhythm puzzle, Ad Bot mini-mob with item theft, Strobe Brewmistress boss, Vape Stout reward, Brewery Tour 2/4 progression |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D vapor/neon, 128 BPM sync system documented |
-| Mobile Performance Budget | ✅ | 45 FPS target, max 20 draw calls, 48MB memory footprint |
+| Mobile Performance Budget | ✅ | 60 FPS target, max 20 draw calls, 48MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (bass drop wave, rhythm beat visual), pattern-based rhythm indicators, reduced strobe options |
 | No Crypto Elements | ✅ | None present — tech-bro satire is vape/GPU themed, no crypto content |
 | Social Media Integration | ✅ | Hologram selfie wall, midnight vault opening, DJ zombie beat sync, quotable glitch dialogue identified |

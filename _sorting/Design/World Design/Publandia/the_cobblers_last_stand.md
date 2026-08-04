@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 9 PM (Finbar needs his rest for tomorrow's battles)
 - **Stat Requirements**: None (all feet welcome)
-- **Item Requirements**: Gold (€20-80 per item)
+- **Item Requirements**: Gold (20 Sovs-80 per item)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Finbar will assess your feet's "combat readiness"
 
@@ -72,7 +72,7 @@
 - Finbar's personal commendations
 
 ### The Dramatic Energy
-Finbar treats every transaction like he's outfitting soldiers for war. Because to him, a Dublin pub crawl IS war. Against cobblestones. Against rain. Against your own poor decisions. And your feet are the infantry.
+Finbar treats every transaction like he's outfitting soldiers for war. Because to him, a Publandia pub crawl IS war. Against cobblestones. Against rain. Against your own poor decisions. And your feet are the infantry.
 
 **Finbar's Intensity Scale**:
 | Customer Need | Finbar's Response Level |
@@ -99,7 +99,7 @@ The satire targets the dramatic intensity some shopkeepers bring to their specia
 ### The Finbar Philosophy
 Finbar O'Sullivan has been a cobbler for 30 years. He's seen the rise and fall of shoe trends. He's witnessed the carnage of hen parties in high heels on cobblestones. He's treated the blistered feet of backpackers who thought flip-flops were "fine for Europe." 
 
-He doesn't sell shoes. He provides armor for life's battles. Every customer is a soldier who needs to be equipped for the mission ahead. The mission? Surviving Dublin. The enemy? Cobblestones, rain, and poor planning. The weapon? Proper footwear.
+He doesn't sell shoes. He provides armor for life's battles. Every customer is a soldier who needs to be equipped for the mission ahead. The mission? Surviving Publandia. The enemy? Cobblestones, rain, and poor planning. The weapon? Proper footwear.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Overly intense specialty shopkeepers, Dublin's cobblestone carnage
@@ -148,43 +148,43 @@ He doesn't sell shoes. He provides armor for life's battles. Every customer is a
 **Speed Category (Wet Street Navigation)**
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Comfy Loafers | €35 | +10 Speed | +15% Speed on wet surfaces |
-| Craic Tax Treads | €45 | +15 Speed | +20% Speed on cobblestones |
-| The Quickstep | €60 | +20 Speed | +25% Speed everywhere, "Light-Footed" buff |
-| Finbar's Flyers | €80 | +25 Speed | +30% Speed, immunity to "Slowed by Terrain" |
+| Comfy Loafers | 35 Sovs | +10 Speed | +15% Speed on wet surfaces |
+| Craic Tax Treads | 45 Sovs | +15 Speed | +20% Speed on cobblestones |
+| The Quickstep | 60 Sovs | +20 Speed | +25% Speed everywhere, "Light-Footed" buff |
+| Finbar's Flyers | 80 Sovs | +25 Speed | +30% Speed, immunity to "Slowed by Terrain" |
 
 **Stealth Category (Bouncer Evasion)**
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Pub Crawl Sneakers | €40 | +10 Stealth | +15% Stealth near venue entrances |
-| The Silent Strider | €55 | +15 Stealth | +20% Stealth, reduced aggro radius |
-| Soft-Sole Specials | €65 | +18 Stealth | +25% Stealth, "Unnoticed" buff (2 min) |
-| Ghost Walkers | €85 | +25 Stealth | +30% Stealth, can bypass one bouncer per night |
+| Pub Crawl Sneakers | 40 Sovs | +10 Stealth | +15% Stealth near venue entrances |
+| The Silent Strider | 55 Sovs | +15 Stealth | +20% Stealth, reduced aggro radius |
+| Soft-Sole Specials | 65 Sovs | +18 Stealth | +25% Stealth, "Unnoticed" buff (2 min) |
+| Ghost Walkers | 85 Sovs | +25 Stealth | +30% Stealth, can bypass one bouncer per night |
 
 **Defense Category (Foot Protection)**
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Steel-Toe Stouts | €50 | +15 Defense, +5 Intimidation | Immunity to "Stubbed Toe" |
-| The Fortified Foot | €65 | +20 Defense | +10% damage reduction, kick attacks enabled |
-| Cobblestone Crushers | €75 | +22 Defense, +8 Intimidation | Terrain damage immunity |
-| Finbar's Fortress | €95 | +30 Defense | Full foot protection, "Immovable" stance option |
+| Steel-Toe Stouts | 50 Sovs | +15 Defense, +5 Intimidation | Immunity to "Stubbed Toe" |
+| The Fortified Foot | 65 Sovs | +20 Defense | +10% damage reduction, kick attacks enabled |
+| Cobblestone Crushers | 75 Sovs | +22 Defense, +8 Intimidation | Terrain damage immunity |
+| Finbar's Fortress | 95 Sovs | +30 Defense | Full foot protection, "Immovable" stance option |
 
 **Endurance Category (Long Night Survival)**
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| All-Night Stompers | €45 | +15 Stamina | Blister immunity |
-| The Marathon Walker | €55 | +20 Stamina | +50% pub crawl duration before fatigue |
-| Comfort Crusaders | €70 | +25 Stamina | Fatigue effects reduced 50% |
-| Finbar's Forever Feet | €90 | +30 Stamina | "Inexhaustible" buff for one full night |
+| All-Night Stompers | 45 Sovs | +15 Stamina | Blister immunity |
+| The Marathon Walker | 55 Sovs | +20 Stamina | +50% pub crawl duration before fatigue |
+| Comfort Crusaders | 70 Sovs | +25 Stamina | Fatigue effects reduced 50% |
+| Finbar's Forever Feet | 90 Sovs | +30 Stamina | "Inexhaustible" buff for one full night |
 
 **Accessories (Supplementary Gear)**
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Lucky Charm Bracelet | €25 | +10 Bravado Resistance | 10% chance to ignore Bravado loss |
-| Rain-Resistant Socks | €15 | +5 Comfort | Immunity to "Soggy" debuff |
-| Cobblestone Insoles | €20 | +8 Defense | Retrofit for any shoe |
-| Emergency Blister Kit | €10 | N/A | Cures "Blistered" status once |
-| The Power Stance Laces | €18 | +5 Intimidation | "Firm Footing" in confrontations |
+| Lucky Charm Bracelet | 25 Sovs | +10 Bravado Resistance | 10% chance to ignore Bravado loss |
+| Rain-Resistant Socks | 15 Sovs | +5 Comfort | Immunity to "Soggy" debuff |
+| Cobblestone Insoles | 20 Sovs | +8 Defense | Retrofit for any shoe |
+| Emergency Blister Kit | 10 Sovs | N/A | Cures "Blistered" status once |
+| The Power Stance Laces | 18 Sovs | +5 Intimidation | "Firm Footing" in confrontations |
 
 ### Finbar's Assessment System
 When entering, Finbar assesses your current footwear:
@@ -225,10 +225,10 @@ Finbar doesn't just sell shoes. He FITS them:
 **Premium Stock (Back Room)**:
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| The Last Stand Boots | €120 | +25 All Foot Stats | Finbar's masterwork, all terrain |
-| Legendary Loafers | €100 | +30 Speed, +15 Comfort | "Swift as the Wind" buff |
-| The Cobbler's Pride | €150 | +20 All Stats | Custom-made for your feet specifically |
-| Battle-Worn Veterans | €80 | +20 Defense, +15 Intimidation | "Seen Things" intimidation bonus |
+| The Last Stand Boots | 120 Sovs | +25 All Foot Stats | Finbar's masterwork, all terrain |
+| Legendary Loafers | 100 Sovs | +30 Speed, +15 Comfort | "Swift as the Wind" buff |
+| The Cobbler's Pride | 150 Sovs | +20 All Stats | Custom-made for your feet specifically |
+| Battle-Worn Veterans | 80 Sovs | +20 Defense, +15 Intimidation | "Seen Things" intimidation bonus |
 
 ### Bravado Interactions
 - **Gain Bravado**: Receiving Finbar's approval, surviving a pub crawl in his gear
@@ -456,4 +456,4 @@ Finbar doesn't just sell shoes. He FITS them:
 
 ---
 
-*The Cobbler's Last Stand: Where shoe shopping becomes a tactical briefing, footwear is treated as essential armor, and Finbar O'Sullivan wages his eternal war against Dublin's cobblestones. Your feet deserve a champion. Finbar is that champion. He's not dramatic. He's PREPARED. There's a difference.*
+*The Cobbler's Last Stand: Where shoe shopping becomes a tactical briefing, footwear is treated as essential armor, and Finbar O'Sullivan wages his eternal war against Publandia's cobblestones. Your feet deserve a champion. Finbar is that champion. He's not dramatic. He's PREPARED. There's a difference.*

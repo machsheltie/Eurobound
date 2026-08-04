@@ -76,43 +76,43 @@
 **The Lucky Spin Wheel**
 - Appearance: Colorful wheel with "JACKPOT," "FREE DRINK," "TRY AGAIN"
 - Reality: Weighted to land on "Try Again" 85% of the time
-- Cost: €5 per spin
+- Cost: 5 Sovs per spin
 - Scam Level: Entry-level, builds false hope
 
 **Three Card Monty (Find the Lady)**
 - Appearance: Classic street hustle, "just for fun"
 - Reality: Staff member is a professional, shill "winners" in crowd
-- Cost: €10 per round
+- Cost: 10 Sovs per round
 - Scam Level: Classic, obvious to everyone except the mark
 
 **The Ring Toss**
 - Appearance: Carnival game, "anyone can win"
 - Reality: Rings are slightly too small, bottles slightly too large
-- Cost: €5 for 3 rings
+- Cost: 5 Sovs for 3 rings
 - Scam Level: Physics-based deception
 
 **Darts "Double or Nothing"**
 - Appearance: Friendly darts game with bartender
 - Reality: Your darts are slightly bent, their board is regulation
-- Cost: Escalating bets starting at €5
+- Cost: Escalating bets starting at 5 Sovs
 - Scam Level: Plausible deniability
 
 **The Cup Shuffle**
 - Appearance: Ball under cups, follow along
 - Reality: Ball palmed, never under any cup
-- Cost: €10 per round
+- Cost: 10 Sovs per round
 - Scam Level: Sleight of hand classic
 
 **Lucky Dice**
 - Appearance: Roll doubles, win your bet back 3x
 - Reality: Dice are loaded against doubles
-- Cost: Minimum €10 bet
+- Cost: Minimum 10 Sovs bet
 - Scam Level: Statistical manipulation
 
 **The "Broken" Slot Machine**
 - Appearance: Old slot machine, "usually broken but try your luck"
 - Reality: Programmed to pay out just enough to keep you playing
-- Cost: €1 per pull
+- Cost: 1 Sov per pull
 - Scam Level: Psychological exploitation
 
 ### The Shill Network
@@ -170,9 +170,9 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 
 **The transformation**:
 - Enter confident
-- Lose €20 thinking you're unlucky
-- Lose €50 thinking the odds will turn
-- Lose €100 realizing you've been scammed
+- Lose 20 Sovs thinking you're unlucky
+- Lose 50 Sovs thinking the odds will turn
+- Lose 100 Sovs realizing you've been scammed
 - Return the next night (the true mark's journey)
 - Earn respect through persistence in foolishness
 
@@ -182,7 +182,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 ### Scam Mini-Games
 
 **The Lucky Spin Wheel**
-- **Cost**: €5 per spin
+- **Cost**: 5 Sovs per spin
 - **Displayed Odds**: 25% Free Drink, 25% Prize, 50% Try Again
 - **Actual Odds**: 5% Free Drink, 0% Prize, 95% Try Again
 - **Mini-Game**: Tap to stop wheel (input doesn't actually affect outcome)
@@ -190,7 +190,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 - **Loss Counter**: Tracks consecutive losses
 
 **Three Card Monty**
-- **Cost**: €10 per round
+- **Cost**: 10 Sovs per round
 - **Displayed Challenge**: Find the Queen
 - **Actual Challenge**: Impossible (sleight of hand)
 - **Mini-Game**: Watch cards, select final position
@@ -199,7 +199,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 - **Loss Counter**: Tracks consecutive losses
 
 **The Ring Toss**
-- **Cost**: €5 for 3 rings
+- **Cost**: 5 Sovs for 3 rings
 - **Displayed Challenge**: Land ring on bottle
 - **Actual Challenge**: Rings are 0.5cm too small to fit
 - **Mini-Game**: Aim and throw (physics feels fair but isn't)
@@ -208,7 +208,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 - **Loss Counter**: Tracks total throws
 
 **Darts "Double or Nothing"**
-- **Cost**: Starting bet €5, doubles each loss
+- **Cost**: Starting bet 5 Sovs, doubles each loss
 - **Displayed Challenge**: Beat staff member at darts
 - **Actual Challenge**: Your darts are subtly bent
 - **Mini-Game**: Standard darts mechanic, accuracy reduced by 20%
@@ -217,7 +217,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 - **Loss Counter**: Tracks total bet exposure
 
 **The Cup Shuffle**
-- **Cost**: €10 per round
+- **Cost**: 10 Sovs per round
 - **Displayed Challenge**: Follow the ball
 - **Actual Challenge**: Ball is palmed, under no cup
 - **Mini-Game**: Track ball, select cup
@@ -226,7 +226,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 - **Loss Counter**: Tracks consecutive losses
 
 **Lucky Dice**
-- **Cost**: €10 minimum bet
+- **Cost**: 10 Sovs minimum bet
 - **Displayed Challenge**: Roll doubles, 3x payout
 - **Actual Challenge**: Dice loaded against doubles
 - **Mini-Game**: Shake and roll (feels random, isn't)
@@ -287,7 +287,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 | SP Restoration | +15 SP |
 | Special Effect | "Learned Optimism" — +10% resistance to scam detection failure |
 | Status Risk | 5% "Sentimental" (donate extra gold to NPCs) |
-| Purchase Price | €8 |
+| Purchase Price | 8 Sovs |
 
 **Flavor Text**: "The only honest thing in this entire establishment. Golden, hopeful, with a bitter finish — just like your evening. Brewed for fools by fools. Cheers."
 
@@ -311,9 +311,9 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 
 ### The Shill Offer (Post-Stamp)
 **Trigger**: After earning "Wise Fool" status
-**Mickey's Offer**: "You know the games now. Want to be on the winning side? €50 per night to play 'winner' for fresh marks."
+**Mickey's Offer**: "You know the games now. Want to be on the winning side? 50 Sovs per night to play 'winner' for fresh marks."
 **Player Options**:
-- Accept: Earn €50/night, help scam others, morally compromised
+- Accept: Earn 50 Sovs/night, help scam others, morally compromised
 - Decline: "Moral Fool" achievement, Mickey respects you more
 - Ask for more money: Mickey laughs, still respects you
 
@@ -367,7 +367,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
   - "You should try! I've never seen the wheel this generous!"
   - *quietly, post-stamp*: "Fair play. Most people never figure it out."
 
-**Orla (The Sympathizer)**
+**Gráinne (The Sympathizer)**
 - **Role**: Comfort staff, recovery specialist
 - **Appearance**: 20s Irish woman, warm, brings drinks to losers
 - **Function**: Keeps marks in the building, softens for retry
@@ -376,7 +376,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
   - "I've seen people win after nights like this. Don't give up."
   - *quietly, post-stamp*: "You're one of the good ones. Most blame me somehow."
 
-**Sean (The Dealer)**
+**Eamon (The Dealer)**
 - **Role**: Three Card Monty, Cup Shuffle, sleight of hand
 - **Appearance**: 40s Irish man, fast hands, sleepy eyes (hiding alertness)
 - **Function**: Runs the hand-skill scams
@@ -390,7 +390,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 **The Angry Tourist**
 - **Composition**: Someone who's figured it out, too late
 - **Behavior**: Demanding money back, getting nowhere
-- **Dialogue**: "This is FRAUD! I want my €100 back! I'm calling the— who do I even call?!"
+- **Dialogue**: "This is FRAUD! I want my 100 Sovs back! I'm calling the— who do I even call?!"
 - **Mickey's Response**: "Entertainment purposes only, as the sign says. But here, a drink on me."
 - **Function**: Shows the angry path
 
@@ -415,7 +415,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 ### Original NPC Dialogue
 **Mickey's Philosophy (Extended):**
 - "My grandfather ran games on O'Connell Street. My father worked the ferries. I'm third generation. It's not theft — it's tradition."
-- "The games are rigged, but the hope is real. You can't bottle hope. But you CAN sell it for €5 a spin."
+- "The games are rigged, but the hope is real. You can't bottle hope. But you CAN sell it for 5 Sovs a spin."
 - "Every mark teaches me something. The angry ones teach patience. The smart ones teach respect. The persistent ones? They teach me why I do this."
 - "I've been offered 'legitimate' pub work. Boring. Here, every night is a story. Every fool is a character. That's worth more than honest money."
 - "The stamp means you understand. Not the scam — anyone can understand the scam. You understand why people PLAY anyway. That's wisdom."
@@ -424,7 +424,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 - **Lord Pilsner** (entering): "This place looks AUTHENTIC. Not touristy at all. Just a local pub with games!"
 - **Lord Pilsner** (losing): "I was SO CLOSE. The wheel ALMOST hit jackpot. ONE MORE SPIN."
 - **Lord Pilsner** (realization): "Wait... that guy who won earlier... I haven't seen him win since... and he's STILL here..."
-- **Lord Pilsner** (Wise Fool): "Mickey, I've lost €150 here. And I'm back. I don't know what that says about me."
+- **Lord Pilsner** (Wise Fool): "Mickey, I've lost 150 Sovs here. And I'm back. I don't know what that says about me."
 - **Mickey**: "It says you're human. Welcome to the club."
 - **Chadwick**: "I'm going to DOCUMENT the scam! EXPOSE them! ...after one more try at the wheel."
 - **Chadwick** (losing): "The CONTENT of me losing is actually COMPELLING. This is REAL. This is STRUGGLE."
@@ -471,7 +471,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 
 ### Achievement Track
 - **First Loss**: "Mark" — you've been had
-- **€50 Lost**: "Deep Mark" — commitment to losing
+- **50 Sovs Lost**: "Deep Mark" — commitment to losing
 - **3 Different Scams**: "Diversified Fool" — tried everything
 - **Returned After Losses**: "Persistent Fool" — they love you
 - **Wise Fool Status**: "Graduated" — stamp earned
@@ -548,8 +548,8 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 - mickey_consoling.png - 64x96x2 - Post-loss comfort
 - mickey_wise_fool.png - 64x96 - Genuine moment
 - darren_shill.png - 64x96 - Fake winner
-- orla_sympathizer.png - 64x96 - Comfort staff
-- sean_dealer.png - 64x96 - Sleight specialist
+- grainne_sympathizer.png - 64x96 - Comfort staff
+- eamon_dealer.png - 64x96 - Sleight specialist
 - angry_tourist.png - 64x96 - Realization rage
 - oblivious_optimist.png - 64x96 - Sunk cost display
 - repeat_fool.png - 64x96 - Wise veteran
@@ -581,4 +581,4 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 
 ---
 
-*Shenanigans: Where the house always wins, and so do you — eventually. Not at the games. At life. You walked in a mark and walked out a philosopher. That's worth more than €150. That's worth exactly €150, actually, which is what you lost. But you gained wisdom. And a stamp. Cheers, you beautiful fool.*
+*Shenanigans: Where the house always wins, and so do you — eventually. Not at the games. At life. You walked in a mark and walked out a philosopher. That's worth more than 150 Sovs. That's worth exactly 150 Sovs, actually, which is what you lost. But you gained wisdom. And a stamp. Cheers, you beautiful fool.*

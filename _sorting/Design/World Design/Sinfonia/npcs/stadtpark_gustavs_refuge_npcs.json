@@ -4,6 +4,7 @@
   "npcs": [
     {
       "npc_id": "sinfonia_npc_gustav_horse_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_gustav.md",
       "display_name": "Gustav",
       "role": "runaway_horse_quest_target",
       "importance": "critical",
@@ -64,6 +65,7 @@
     
     {
       "npc_id": "sinfonia_npc_hans_jurgen_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md",
       "display_name": "Hans-Jürgen Pferdmann",
       "role": "desperate_horse_owner_emotional_core",
       "importance": "critical",
@@ -219,10 +221,10 @@
       
       "dialogue": {
         "arrival": "THERE you are! You think you can run from Sinfonia-trained lawyers?!",
-        "demand": "€2,000! Plus emotional damages! Plus—",
+        "demand": "2,000 Sovs! Plus emotional damages! Plus—",
         "distracted": "*sees Gustav* ...why is that horse wearing a cape?",
         "if_paid": "Hmph. Very well. The arts... accept your contribution.",
-        "if_negotiated": "Hans-Jürgen's insurance covers... some. You owe... €1,000. Final.",
+        "if_negotiated": "Hans-Jürgen's insurance covers... some. You owe... 1,000 Sovs. Final.",
         "if_ignored": "I will find you! I know where you are staying! ...Where are you staying?"
       },
       
@@ -248,7 +250,7 @@
       },
       
       "dialogue": {
-        "greeting": "*clears throat* Wisdom costs €1. Or a sip of something warm.",
+        "greeting": "*clears throat* Wisdom costs 1 Sov. Or a sip of something warm.",
         "wisdom_1": "The horse runs because he can. We stay because we forgot we could run.",
         "wisdom_2": "Skittles are not just candy. They are a rainbow of intention.",
         "wisdom_3": "I was once a professor. Then I learned too much. Now I know nothing. Progress.",

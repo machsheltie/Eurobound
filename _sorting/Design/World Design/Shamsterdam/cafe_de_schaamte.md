@@ -69,7 +69,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The quintessential European outdoor café where locals performatively ignore tourists while internally cataloging every faux pas. Espresso costs €4.50, comes in a cup the size of a thimble, and the waiter won't check on you for 45 minutes because that's "the European way." A place where Americans learn that "café culture" means sitting, being judged, and paying for the privilege.
+**Core Concept**: The quintessential European outdoor café where locals performatively ignore tourists while internally cataloging every faux pas. Espresso costs 5 Sovs, comes in a cup the size of a thimble, and the waiter won't check on you for 45 minutes because that's "the European way." A place where Americans learn that "café culture" means sitting, being judged, and paying for the privilege.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: American tourists expecting American service in European establishments
@@ -79,7 +79,7 @@
 - **Sensitivity Considerations**: Targets service culture clash and tourist behavior, not legitimate café workers or Dutch people
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Charging €8 for a croissant because you're sitting near water
+- **Primary Vice**: Charging 8 Sovs for a croissant because you're sitting near water
 - **City-Specific Comedy Operations**: Staff have perfected the art of serving tourists while making them feel unwelcome
 - **Buffoon Exploitation**: Bros think they're experiencing "authentic European café culture" while being systematically overcharged
 - **Comedy of Errors**: Agent Havok's attempt at "blending in as a local" is painfully obvious to everyone except the bros
@@ -106,12 +106,12 @@
 ### Menu & Consumables
 | Item | Price | Effects | Barista Judgment Level |
 |------|-------|---------|----------------------|
-| Espresso | €4.50 | +15 SP, removes Drowsy status | Low (acceptable order) |
-| "American Coffee" | €5.00 | +10 SP, +Shame buff (locals notice) | Medium (tourist detected) |
-| Stroopwafel | €3.50 | +20 HP, +Comfort status | None (everyone loves stroopwafel) |
-| "Croissant" (day-old) | €8.00 | +10 HP, -Gold significantly | High (you paid €8 for THIS?) |
-| Heineken (bottle) | €6.00 | +Tipsy status, -Bravado (locals judge) | Maximum (tourists drink Heineken) |
-| "The Giselle Special" | €??? | Item doesn't exist, barista confusion | Extreme (Havok-exclusive order) |
+| Espresso | 5 Sovs | +15 SP, removes Drowsy status | Low (acceptable order) |
+| "American Coffee" | 5 Sovs | +10 SP, +Shame buff (locals notice) | Medium (tourist detected) |
+| Stroopwafel | 4 Sovs | +20 HP, +Comfort status | None (everyone loves stroopwafel) |
+| "Croissant" (day-old) | 8 Sovs | +10 HP, -Sovs significantly | High (you paid 8 Sovs for THIS?) |
+| Heineken (bottle) | 6 Sovs | +Tipsy status, -Bravado (locals judge) | Maximum (tourists drink Heineken) |
+| "The Giselle Special" | ??? Sovs | Item doesn't exist, barista confusion | Extreme (Havok-exclusive order) |
 
 ### Agent Havok Mission Hub (Original)
 - **Trigger**: Bros walk past café after 2+ Shamsterdam location visits
@@ -132,7 +132,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 
 ## NPCs & Vendors
 ### Café Staff
-- **Barista Willem**: *"I have made coffee since before your country had coffee. Do not tell me you want it 'iced.'"*
+- **Barista Wouter**: *"I have made coffee since before your country had coffee. Do not tell me you want it 'iced.'"*
   - Operates ancient espresso machine with mechanical precision
   - Sighs are measurable on the Richter scale
   - Will serve you perfectly while making you feel inadequate
@@ -151,12 +151,12 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 ### Agent Havok (Quest NPC)
 - **Initial Appearance**: "Mysterious Local Contact" at corner table
 - **Visual Tells**: SHAMSTERDAM hoodie with tags, upside-down newspaper, tail occasionally wagging under table
-- **Cover Identity**: "Hans" (allegedly), "Very Shamsterdam local person who lives here and is from here"
+- **Cover Identity**: "Joop" (allegedly), "Very Shamsterdam local person who lives here and is from here"
 - **Mission Role**: Quest giver for Fabergé Egg Hunt, potential recurring mission source
 - **Dialogue Style**: Military briefing meets desperate improv ("As we say here in my homeland... *checks hand* ...Shamsterdam...")
 
 ### NPC Dialogue (Original)
-**Barista Willem:**
+**Barista Wouter:**
 - "Espresso. Single or double. These are your choices. No, I will not make it 'fun-sized.'"
 - "The wifi password is 'OrderSomethingFirst.' Yes, with capitals. Yes, all one word. No, I will not repeat it."
 - "Your friend ordered a 'venti.' We do not have 'venti.' We have 'espresso' and 'slightly more espresso.'"
@@ -182,7 +182,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - **Potential Contact**: "The Backpacker Who's 'Basically a Local Now'"
 - **Invitation Trigger**: Order Heineken (marks you as fellow tourist), complain about prices (solidarity moment)
 - **Morning Scene**: Wake up in cramped hostel bunk they "definitely paid for," surrounded by passive-aggressive sticky notes
-- **Consequences**: Hungover status, +1 "Local" Knowledge (inaccurate), -10 gold ("borrowing" for "visa extension")
+- **Consequences**: Hungover status, +1 "Local" Knowledge (inaccurate), -10 Sovs ("borrowing" for "visa extension")
 
 ### Time-Based Elements
 - **Morning (6 AM - 11 AM)**: Locals grabbing espresso before work, maximum judgment energy, shortest service times
@@ -210,7 +210,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Barista sigh sound effect (measurable disappointment), tourist gasp at prices
-- **Character Voice Direction**: Barista Willem delivers lines with exhausted patience, Server Margot with bemused detachment
+- **Character Voice Direction**: Barista Wouter delivers lines with exhausted patience, Server Margot with bemused detachment
 - **Havok Voice Notes**: Military briefing cadence that breaks into nervous improv when cover slips
 - **Environmental Comedy**: Overheard conversations fade in/out, bicycle near-miss bell symphony
 
@@ -246,12 +246,12 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 ### Social Media Strategy
 - **Instagram Moments**: Canal-side terrace aesthetic, espresso close-ups, "European café culture" parody shots
 - **TikTok Potential**: Barista judgment compilations, "How to order espresso in Europe," Agent Havok's tell compilation
-- **Twitter Hooks**: Barista Willem quotes, price shock reactions, "the waiter will come when they decide" memes
+- **Twitter Hooks**: Barista Wouter quotes, price shock reactions, "the waiter will come when they decide" memes
 - **Streaming Content**: Agent Havok briefing scenes, trying to identify all his tells, café NPC dialogue mining
 
 ### Community Engagement
-- **Fan Art Potential**: Agent Havok in full "local" disguise, Barista Willem's disappointed face, canal-side aesthetic
-- **Meme-ability**: "€8 for a croissant" format, Havok's upside-down newspaper, "the check will arrive when it decides"
+- **Fan Art Potential**: Agent Havok in full "local" disguise, Barista Wouter's disappointed face, canal-side aesthetic
+- **Meme-ability**: "8 Sovs for a croissant" format, Havok's upside-down newspaper, "the check will arrive when it decides"
 - **Cultural Discussion**: European vs. American service expectations, café culture authenticity, tipping discourse
 
 ## Quality Assurance Checklist
@@ -280,8 +280,8 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - pigeon_flock_suspicious.png - 128x128 - Birds that Havok definitely doesn't trust
 
 ### Character Sprites (12 PNGs)
-- barista_willem_main.png - 64x96 - Professional detachment, espresso mastery
-- barista_willem_sigh.png - 64x96x4 - Measurable disappointment animation
+- barista_wouter_main.png - 64x96 - Professional detachment, espresso mastery
+- barista_wouter_sigh.png - 64x96x4 - Measurable disappointment animation
 - server_margot_main.png - 64x96 - Bemused efficiency
 - server_margot_disappear.png - 64x96x3 - Mysterious departure animation
 - agent_havok_disguised.png - 64x96 - Full "local" cover (Shamsterdam hoodie, sunglasses)
@@ -297,7 +297,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - laminated_dossier_recipe.png - 48x64 - Eggs Benedict disguised as mission intel
 - briefcase_sticker_scratched.png - 64x48 - Sunday Brunch with Giselle evidence
 - espresso_cup_tiny.png - 32x32 - Thimble-sized disappointment
-- croissant_overpriced.png - 48x32 - €8 of questionable freshness
+- croissant_overpriced.png - 48x32 - 8 Sovs of questionable freshness
 - cafe_menu_handheld.png - 48x96 - Tourist reading in confusion
 - wifi_password_sign.png - 64x32 - "OrderSomethingFirst"
 
@@ -305,7 +305,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - service_wait_indicator.png - 128x32 - "Server arriving eventually..."
 - bravado_judgment_meter.png - 96x64 - Café-specific shame tracking
 - ordering_difficulty_icons.png - 32x32x4 - Pronunciation attempt results
-- price_shock_popup.png - 128x96 - "€8.00 for THIS?"
+- price_shock_popup.png - 128x96 - "8 Sovs for THIS?"
 - tip_confusion_prompt.png - 128x64 - "Tip? (Europeans don't...)"
 - espresso_size_comparison.png - 96x64 - What Americans expect vs. reality
 

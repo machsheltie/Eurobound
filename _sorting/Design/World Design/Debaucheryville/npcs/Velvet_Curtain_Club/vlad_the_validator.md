@@ -6,12 +6,14 @@
 
 ## Character Identity
 
-**NPC ID:** `debaucheryville_velvet_curtain_bouncer_01`  
+**NPC ID:** `debaucheryville_npc_vip_backroom_bouncer_01`  
 **Display Name:** Vladimir "Vlad" Kryptovich  
 **Nickname/Title:** The Validator  
 **World Location:** Debaucheryville  
-**Area Zone:** Velvet Curtain Club (Main Entrance)  
+**Area Zone:** Velvet Curtain Club — VIP Backroom / Crypto Mining Basement (interior door)  
 **Character Type:** Crypto Bro Bouncer
+
+> **Not the main-entrance bouncer.** The street door belongs to Tomáš "Stone Face" Černý (`debaucheryville_npc_velvet_curtain_bouncer_01`, see `npc_velvet_curtain_bouncer.md`), whose beat is deliberately crypto-free. Vlad works the interior door one floor in — anyone talking to Vlad is already inside the club.
 
 ---
 
@@ -21,8 +23,8 @@
 - **Sprite Sheet:** `bouncer_variants.png`
 - **Sprite Coordinates:** `[0, 64, 32, 32]`
 - **Sprite States:** idle, talking, vape_cloud, phone_checking, dismissive_wave
-- **Facing Direction:** Down (guarding entrance)
-- **Movement Pattern:** Static (stationed at door)
+- **Facing Direction:** Down (guarding the VIP Backroom door)
+- **Movement Pattern:** Static (stationed at the interior door, main floor rear)
 
 ### Visual Characteristics
 - **Key Visual Elements:** Oversized bouncer physique in too-tight crypto conference t-shirt
@@ -143,9 +145,9 @@
 
 ## Example Usage
 
-*Player approaches Velvet Curtain Club entrance*
+*Player crosses the main floor and approaches the VIP Backroom door*
 
-**Vlad:** "Hold up, tourist. This isn't your grandpa's night club. We operate on a proof-of-stake entry system here."
+**Vlad:** "Hold up, tourist. Tomáš waved you in off the street — that's the easy door. This one runs on proof-of-stake entry protocols."
 
 **Player Option 1:** "What does that even mean?"
 **Vlad:** "Oh man, you're totally ngmi. Look, imagine if every drink order was verified by a distributed network of—"

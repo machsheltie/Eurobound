@@ -89,7 +89,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Palace Steps | (256, 320) | 128x48 | Marble steps, center worn by 240 years of arrivals (few departures) |
 | Welcome Mat | (384, 320) | 48x32 | Reads "WILLKOMMEN" — the N trails off like it wanted to write FOREVER |
 | Exterior Night Overlay | (432, 320) | 256x96 | Blue-dark tint layer; palace windows stay warm |
-| Bulletin Ad Poster | (688, 320) | 64x96 | Citywide bulletin board advertisement art — "€150/night! A PALACE!" |
+| Bulletin Ad Poster | (688, 320) | 64x96 | Citywide bulletin board advertisement art — "150 Sovs/night! A PALACE!" |
 | Doorway Farewell Backdrop | (752, 320) | 128x96 | Framed doorway composition for the "Survived" selfie (Gastfreund waving) |
 | Cobblestone Tile | (880, 320) | 32x32 | Imperial District street stone |
 | Cobblestone Worn | (912, 320) | 32x32 | Variant with wear |
@@ -378,7 +378,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 **Dimensions:** 1024x768 pixels
 **Color Palette:** #FFFDD0 (Innocent Cream), #D4AF37 (Palatial Gold), #8B0000 (Watchful Crimson), #E8C547 (Eternal Fruit Wax)
 
-### Standard Room (€150):
+### Standard Room (150 Sovs):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Standard Bed | (0, 0) | 96x80 | Comfortable, dated, corners hospital-tight |
@@ -396,7 +396,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Room Number Plate 217 | (696, 0) | 32x24 | Your room number. Today |
 | Room Number Plate 31B | (728, 0) | 32x24 | Your room number. Tomorrow. Same door |
 
-### Deluxe Suite (€300):
+### Deluxe Suite (300 Sovs):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Deluxe Bed | (0, 128) | 128x96 | Larger, plusher, monogrammed with initials — yours |
@@ -411,7 +411,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Deluxe Drapes | (768, 128) | 64x96 | Crimson velvet, drawn each night by no one |
 | Writing Desk | (832, 128) | 64x64 | Stationery pre-addressed to your next of kin |
 
-### The Royal Chamber (€500):
+### The Royal Chamber (500 Sovs):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Royal Canopy Bed | (0, 288) | 160x144 | Palatial four-poster, canopy like a held breath |
@@ -652,9 +652,9 @@ assets/sprites/locations/sinfonia/gilded_suite/
 ### Booking & Status:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Room Tier Card Standard | (0, 192) | 96x64 | €150 — "Basic creepy." 80% HP/SP |
-| Room Tier Card Deluxe | (96, 192) | 96x64 | €300 — "Extra portraits." 100% HP/SP |
-| Room Tier Card Royal | (192, 192) | 96x64 | €500 — "Full experience." 120% + buff |
+| Room Tier Card Standard | (0, 192) | 96x64 | 150 Sovs — "Basic creepy." 80% HP/SP |
+| Room Tier Card Deluxe | (96, 192) | 96x64 | 300 Sovs — "Extra portraits." 100% HP/SP |
+| Room Tier Card Royal | (192, 192) | 96x64 | 500 Sovs — "Full experience." 120% + buff |
 | Well-Rested Buff Icon | (288, 192) | 32x32 | Crown-and-pillow icon |
 | Overstayed Welcome Debuff | (320, 192) | 32x32 | Door-with-no-handle icon — trapped state |
 | Surveillance Level Pips | (352, 192) | 64x16 | Camera pips: Medium / High / Maximum |
@@ -667,7 +667,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Guest Book UI Page | (0, 256) | 128x96 | Signature page — 240 years of names converging into one hand |
 | Achievement Toast | (128, 256) | 160x48 | Banner for Check In / Survived / Night Watch / etc. |
 | Eternal Guest Card Glow | (128, 304) | 48x32 | Award-moment variant with gold bloom |
-| Refund Notice €500 | (176, 304) | 64x32 | Confrontation victory payout slip |
+| Refund Notice 500 Sovs | (176, 304) | 64x32 | Confrontation victory payout slip |
 | Selfie Frame Palace Life | (288, 256) | 96x96 | Staircase selfie overlay, chandelier visible |
 | Selfie Frame The Watched | (384, 256) | 96x96 | Variant: portraits in background, all facing camera |
 | Checkout Receipt | (0, 352) | 64x32 | Stamped 10:59 AM. Cutting it close |
@@ -871,7 +871,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Low | Static portrait strip, static sconces, no ambient particles, night events as instant state swaps, footsteps-in-wall audio+subtitle only |
 
 ### Performance Targets:
-- **Target FPS:** 40
+- **Target FPS:** 60
 - **Max Draw Calls:** 18 per frame
 - **Memory Footprint:** 45 MB maximum
 - **Particle Limit:** 12 (dust grid 8 OR engine steam 4 OR service sparkle 12 — never concurrent)
@@ -1042,7 +1042,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets — rental-culture jokes visible without dialogue
 - [ ] Hidden areas/interactions have discoverable visual cues (fruit painting rim light, basement clue, lever outline)
-- [ ] Mobile performance optimized (CPU particles ≤12, atlas limits respected, 40 FPS / 18 draw calls / 45 MB honored)
+- [ ] Mobile performance optimized (CPU particles ≤12, atlas limits respected, 60 FPS / 18 draw calls / 45 MB honored)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices (Portrait Party and doorway wave framed for capture)
@@ -1059,7 +1059,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Seedy Underbelly Present | ✅ | Surveillance-as-service, fabricated reviews, 240 years of guest entrapment, forged "historic" claims |
 | Gameplay Value Established | ✅ | Three-tier rest system, night events, optional dungeon, puzzle boss + social-combat boss, two unique reward items |
 | Technical Feasibility | ✅ | Eight sheets, atlas plan, LOD tiers, per-tier loading documented |
-| Mobile Performance Budget | ✅ | 40 FPS, 18 draw calls, 45 MB, 12 particles (per profile) |
+| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 45 MB, 12 particles (per profile) |
 | Accessibility Features | ✅ | Visual glyph for every audio cue; static variants for all motion triggers; colorblind patterns |
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Portrait Party, morning close-up, House Rules, and Survived selfie identified |

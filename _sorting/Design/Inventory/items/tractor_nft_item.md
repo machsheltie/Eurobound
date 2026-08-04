@@ -21,7 +21,7 @@ The QR resolves — on the party's phone, in-world, on the first scan — to a G
 
 The token is the physical stub for an NFT. The NFT is a **low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn**, eleven frames, looping, with a **tiny pixelated cowboy hat bouncing on the seat** slightly out of sync with the turn. The lawn is very good. Somebody clearly cared about the lawn.
 
-It is worth **€0** at any bank, any exchange, any pawnbroker, any legitimate vendor, and every illegitimate one, in every city in the game, permanently and by design.
+It is worth **0 Sovs** at any bank, any exchange, any pawnbroker, any legitimate vendor, and every illegitimate one, in every city in the game, permanently and by design.
 
 Aaron gave it away because he thought it would help. He believed that entirely. Nobody in the Backroom has ever asked him where he got it and he has never volunteered.
 
@@ -35,8 +35,8 @@ Aaron gave it away because he thought it would help. He believed that entirely. 
 | Attribute | Value |
 |-----------|-------|
 | **Purchase Price** | N/A (gift only — never sold, never listed, never findable anywhere else in the game) |
-| **Actual Value** | €0 |
-| **Resale Value** | €0 (worthless). Every vendor, exchange, bank, pawnbroker, and shady terminal in the game returns the same €0 valuation |
+| **Actual Value** | 0 Sovs |
+| **Resale Value** | 0 Sovs (worthless). Every vendor, exchange, bank, pawnbroker, and shady terminal in the game returns the same 0 Sovs valuation |
 | **Can Be Sold** | No — offering it to a vendor plays that vendor's standard "I can't use this" line, unchanged, every time |
 | **Can Be Dropped** | No (permanent quest item; also the bros would not) |
 | **Can Be Traded** | No — Chadwick has offered it to nine people and will offer it to more |
@@ -59,7 +59,7 @@ Aaron gave it away because he thought it would help. He believed that entirely. 
 |-----------|--------------|
 | Days 1-3 | As received: scuffed, legible, the tractor stamp readable if you know it is a tractor |
 | Days 4-7 | Pocket-polished on the high points, QR's shallow corner marker now scanning unreliably — every second scan fails and the bros blame the phone |
-| Days 8+ | The tractor stamp is a smear, the QR no longer resolves at all on any device, and the flat spot on the edge has widened from being used to open bottles. **Still worth €0. Was always worth €0.** |
+| Days 8+ | The tractor stamp is a smear, the QR no longer resolves at all on any device, and the flat spot on the edge has widened from being used to open bottles. **Still worth 0 Sovs. Was always worth 0 Sovs.** |
 
 ---
 
@@ -70,7 +70,7 @@ Aaron gave it away because he thought it would help. He believed that entirely. 
 Bravado:              +1  (asset ownership)
 Charm (Bros):         +2  (among themselves, exclusively, at all times)
 Charm (Everyone Else): 0  (the token is not visible to anyone who is not shown it, and it is shown to everyone)
-Gold Value:            0  (displayed as "€0" in the inventory value column, in the same font as real values)
+Gold Value:            0  (displayed as "0 Sovs" in the inventory value column, in the same font as real values)
 ```
 
 ### Passive Effects
@@ -108,14 +108,14 @@ Once granted, the token is a **permanent party key item**. It occupies a key-ite
 | NPC Type | Reaction | Bros' Interpretation |
 |----------|----------|------------------------|
 | Sinfonia bank teller | "This is not a currency. This is a piece of metal with a picture on it." | "That's what they said about every currency." |
-| Grounds For Concern barista | "Five euro." — *(token held up)* — "No." | "They're not set up for it yet. Early market." |
+| Grounds For Concern barista | "Five Sovs." — *(token held up)* — "No." | "They're not set up for it yet. Early market." |
 | Pawnbroker, any city | *turns it over twice, sets it down, slides it back without a word* | "He knows what it is. He knows he can't afford it." |
 | Shady terminal operator, Debaucheryville | "Ah — the tractor. Yes. I have seen the tractor." | "It's KNOWN. Bro. The tractor is KNOWN." |
 | Actual NFT-flaunting Influencer Syndicate member | *glances at it for under a second, glances away, keeps talking* | "Intimidated. Straight up." |
 
 ### Callback Dialogue Throughout Game
 **Lord Pilsner** (any bar, holding the token to the light):
-> "Every asset class starts out looking like a bottle cap. Every single one. Somebody in a room in Sinfonia handed me digital land and did not ask me for one euro. You think about what that means about the guy. Then you think about what it means about me."
+> "Every asset class starts out looking like a bottle cap. Every single one. Somebody in a room in Sinfonia handed me digital land and did not ask me for one Sov. You think about what that means about the guy. Then you think about what it means about me."
 
 **Chadwick** (to camera, front-facing, token filling the frame):
 > "Chat, I keep getting asked what the floor is. I'm not gonna give you a number, because I'm not a financial advisor. What I *will* say is that mine is number forty-two, and yours is not."
@@ -217,8 +217,8 @@ Once granted, the token is a **permanent party key item**. It occupies a key-ite
 
 ## 📝 Development Notes
 
-- **Locked facts, do not drift:** low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn; tiny pixelated cowboy hat bouncing on the seat; stamped on a scratched aluminum token; smells faintly of Kahlúa and fresh-cut grass; QR links to an expired Geocities page; worth €0 at any bank, exchange, or legitimate vendor
-- **€0 is permanent and universal.** No vendor, no exchange, no black market, no late-game buyer, no post-credits twist in which it turns out to be worth something. If any future pass gives this token a value, that pass has broken it
+- **Locked facts, do not drift:** low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn; tiny pixelated cowboy hat bouncing on the seat; stamped on a scratched aluminum token; smells faintly of Kahlúa and fresh-cut grass; QR links to an expired Geocities page; worth 0 Sovs at any bank, exchange, or legitimate vendor
+- **0 Sovs is permanent and universal.** No vendor, no exchange, no black market, no late-game buyer, no post-credits twist in which it turns out to be worth something. If any future pass gives this token a value, that pass has broken it
 - **Aaron's sincerity is untouchable.** He is not offloading it, not running a bit, and not amused. He believes it will help them and he gives it away for nothing. No line, examine text, or later scene may imply otherwise
 - The **hit counter increments per scan and is shared party-wide**, starting at 000019. It has no cap, no reward threshold, and no reaction at any number
 - The MIDI is a single short loop and must autoplay every time the page is opened, with no in-page stop control — closing the browser is the only way out, exactly as it was in 2003

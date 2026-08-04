@@ -105,7 +105,7 @@
       "hours": "22:00-04:00, post-Beatdown-completion only",
       "lighting": "string_light_pools_emtv_magenta_bar_tv_glow_lifeguard_spotlight_sweep",
       "crowd_density": "high",
-      "special_notes": "night_party_zone unlocks and activates — string lights, migrating sound system, crowd that arrives from nowhere and stays until sunrise. Bar-strip TVs loop the aired episode at low volume under the music once episode_airing is true. This is the seed for a future 'Herp' questline — hook only, no new mechanics beyond ambient party dressing. Rosta's retrieval station goes quiet; port-o-potty monuments are lit by string lights and function as informal seating. On the questline's scripted party night this window also stages night_event_outbreak_01 (debaucheryville_sidequest_nothing_is_getting_through_01) — event wiring lives in interactions/bohemian_riviera_interactions.json; ambient dressing here is unchanged."
+      "special_notes": "night_party_zone unlocks and activates — string lights, migrating sound system, crowd that arrives from nowhere and stays until sunrise. Bar-strip TVs loop the aired episode at low volume under the music once episode_airing is true. This is the seed for a future 'Herp' questline — hook only, no new mechanics beyond ambient party dressing. Rosťa's retrieval station goes quiet; port-o-potty monuments are lit by string lights and function as informal seating. On the questline's scripted party night this window also stages night_event_outbreak_01 (debaucheryville_sidequest_nothing_is_getting_through_01) — event wiring lives in interactions/bohemian_riviera_interactions.json; ambient dressing here is unchanged."
     },
     "late_night": {
       "lighting": "streetlamp_pools_and_dim_string_light_afterglow",
@@ -243,7 +243,7 @@
     "dynamic_details": [
       {
         "element": "riverbank_portapotty_monuments",
-        "description": "Launched units fished out by Rosta, stood upright along the embankment as informal landmarks; a vendor sets up next to one; someone's laundry appears on one by Day 6",
+        "description": "Launched units fished out by Rosťa, stood upright along the embankment as informal landmarks; a vendor sets up next to one; someone's laundry appears on one by Day 6",
         "visibility": "after beatdown_complete"
       },
       {

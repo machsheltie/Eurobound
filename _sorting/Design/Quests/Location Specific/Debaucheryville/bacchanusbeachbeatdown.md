@@ -487,7 +487,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 - **Velvet Curtain Club (bouncer, LOSS state):** *sniffs once, steps back half a pace, says nothing at all, and lets them in anyway* — because he has decided the smell is a problem for the interior, not for him.
 - **Astronomical Cock-Up Square (Shady Wristband Guy):** *lights up with genuine, uncomplicated professional joy* "The toilet men! My friends! You are on the screen at the pub! Come, come — I have something for men of your profile." *(He does not have something. He has wristbands.)*
 - **Astronomical Cock-Up Square (crowd of clock tourists):** one of them recognizes a bro, elbows a friend, and mimes a parabola with one hand. The bros wave back. They think the parabola is a wave.
-- **Beach vendor, riverbank:** "Fifty euro for the shower. Forty if you go now. It goes up the longer you stand there." *(Direct `port_o_cologne` cure hook.)*
+- **Beach vendor, riverbank:** "Fifty Sovs for the shower. Forty if you go now. It goes up the longer you stand there." *(Direct `port_o_cologne` cure hook.)*
 
 ### Easter Eggs
 

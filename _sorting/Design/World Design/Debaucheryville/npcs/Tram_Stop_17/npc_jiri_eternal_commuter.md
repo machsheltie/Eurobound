@@ -11,6 +11,7 @@
 - **Associated Quest**: `debaucheryville_sidequest_eternal_commuter_01`
 - **Primary Location**: Tram Stop #17, Debaucheryville
 - **Secondary Appearances**: Final boss background, Post-credits scene
+- **Family**: One of the Debaucheryville Novotnýs — sister Věra Novotná runs Midnight Munchies General Store; nephew Milan Novotný watches the astronomical clock. All three stay exactly where they were put.
 
 ---
 

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 6 PM (fresh fish hours, tradition demands)
 - **Stat Requirements**: Constitution check recommended, Pride check mandatory
-- **Item Requirements**: Gold for purchase (€4-6), willingness to be photographed mid-swallow
+- **Item Requirements**: Gold for purchase (4 Sovs-6), willingness to be photographed mid-swallow
 - **Previous Location Requirements**: None (the herring finds the curious)
 - **Special Conditions**: Line moves fast, decisions must be made quickly, no time for doubt
 
@@ -35,7 +35,7 @@
   - Subtitle: "The Salty Truth — Raw. Real. Ready."
   - Method guide: "THE SHAMSTERDAM WAY" with illustrated instructions (head back, fish up, lower into mouth)
   - Warning: "The fish is raw. Your reaction will be witnessed."
-  - Price board: "Haring €4 / Met Uitjes €4.50 / De Waarheid Platter €8"
+  - Price board: "Haring 4 Sovs / Met Uitjes 5 Sovs / De Waarheid Platter 8 Sovs"
 - **Atmosphere**: Salt air, seagull supervision, the faint sound of tourist hesitation
 - **Environmental Context**: Working harbor backdrop, fishing boats, locals grabbing lunch efficiently
 
@@ -78,7 +78,7 @@
 - **Sensitivity Considerations**: Respects Dutch tradition, satirizes tourist hesitation and bravado
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Charging €4 for a moment of existential revelation
+- **Primary Vice**: Charging 4 Sovs for a moment of existential revelation
 - **City-Specific Comedy Operations**: The stand is positioned for maximum visibility of tourist attempts
 - **Buffoon Exploitation**: Bros talk big about eating anything, then meet the herring
 - **Comedy of Errors**: The technique is simple, the execution is always photographed
@@ -113,12 +113,12 @@
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Respect Earned | Notes |
 |------|-------|-----------|---------------|----------------|-------|
-| Haring (Traditional) | €4 | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
-| Haring met Uitjes | €4.50 | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
-| De Waarheid Platter | €8 | +50 HP, +20 SP | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
-| Broodje Haring | €5 | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
-| "Just the Bread" | €2 | +5 HP | Coward's Comfort | None | Available, not recommended |
-| Kibbeling (Fried Fish) | €6 | +30 HP | None | None | For those who aren't ready |
+| Haring (Traditional) | 4 Sovs | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
+| Haring met Uitjes | 5 Sovs | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
+| De Waarheid Platter | 8 Sovs | +50 HP, +20 SP | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
+| Broodje Haring | 5 Sovs | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
+| "Just the Bread" | 2 Sovs | +5 HP | Coward's Comfort | None | Available, not recommended |
+| Kibbeling (Fried Fish) | 6 Sovs | +30 HP | None | None | For those who aren't ready |
 
 ### The Traditional Method Tutorial
 **The Shamsterdam Way — Illustrated and Inescapable**
@@ -179,7 +179,7 @@
 **Fish Breath**
 - **Duration**: 2 hours (in-game)
 - **Effect**: NPCs maintain slightly larger conversation distance
-- **Cure**: Strong mints (available at stand, €1), time, or not caring
+- **Cure**: Strong mints (available at stand, 1 Sov), time, or not caring
 - **Social Impact**: Other herring survivors recognize you as one of their own
 
 **Onion Aura** (if ordered "met uitjes")
@@ -207,7 +207,7 @@
 ## NPCs & Vendors
 ### Stand Staff
 
-**Visser Dirk (Fisherman Dirk)**
+**Visser Maarten (Fisherman Maarten)**
 - **Role**: Stand owner, herring preparer, silent judge
 - **Appearance**: 60s, weathered face, fisherman's apron, hands that have processed 100,000 herrings
 - **Background**: Third-generation herring vendor, worked the boats before the stand, knows fish
@@ -240,7 +240,7 @@
 **The Local Lunch Regular**
 - **Composition**: Dutch office worker, on break, here for efficiency and tradition
 - **Behavior**: Orders, receives, consumes (traditional), leaves. 90 seconds total.
-- **Dialogue**: None needed. Nod to Dirk. Fish. Nod. Gone.
+- **Dialogue**: None needed. Nod to Maarten. Fish. Nod. Gone.
 - **Function**: Shows what mastery looks like, intimidates beginners
 
 **The Retired Fisherman**
@@ -256,7 +256,7 @@
 - **Function**: Shows bros aren't the only ones facing the test
 
 **The Repeat Tourist**
-- **Composition**: American, clearly not first Amsterdam trip, confident
+- **Composition**: American, clearly not first Shamsterdam trip, confident
 - **Behavior**: Orders met uitjes, traditional method, efficient
 - **Dialogue**: "Every trip. First day. The fish resets me."
 - **Function**: Proof that tourists CAN master this
@@ -266,9 +266,10 @@
 - **Behavior**: Waits at optimal distance, times tourist hesitation
 - **Dialogue**: *aggressive seagull noises*
 - **Function**: Environmental hazard, consequence for weakness
+- **Why "Hendrik"**: Named after Brewmaster Hendrik at Brouwerij de Molen, who once threw a herring at this exact bird. The bird caught it. The name stuck. Maarten has never corrected anyone. The brewmaster is aware and considers it an honour.
 
 ### Original NPC Dialogue
-**Dirk's Philosophy (Earned Through Persistence):**
+**Maarten's Philosophy (Earned Through Persistence):**
 - "The North Sea gives us the fish. The fish gives us... perspective."
 - "Every herring is the same. Every person eating one is different. This is truth."
 - "I've served ministers, fishermen, tourists, thieves. The herring doesn't care. Neither do I."
@@ -310,7 +311,7 @@
 - **Three Traditional**: "Fish Committed" — repeated success
 - **Met Uitjes Mastered**: "Fish & Onion Alliance" — full experience
 - **Help Another Tourist**: "Fish Mentor" — passed knowledge forward
-- **Eat While Making Eye Contact with Dirk**: "Fish Respect" — true mastery
+- **Eat While Making Eye Contact with Maarten**: "Fish Respect" — true mastery
 
 ## Audio Design
 ### Environmental Audio (Original Atmosphere)
@@ -327,7 +328,7 @@
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: First bite commitment sound, hesitation penalty audio
-- **Character Voice Direction**: Dirk's gravel efficiency, Evi's encouragement
+- **Character Voice Direction**: Maarten's gravel efficiency, Evi's encouragement
 - **Environmental Comedy**: Hen party reactions, seagull opportunism
 - **The Success Sound**: Subtle triumphant note on traditional method completion
 
@@ -339,7 +340,7 @@
   - Fish preparation animation
   - Traditional method demonstration
   - Customer reaction sprites
-  - Dirk and Evi staff sprites
+  - Maarten and Evi staff sprites
   - Atmospheric NPCs (Local, Fisherman, Hen Party, Repeat Tourist)
   - Seagull Hendrik
   - Fish item sprites
@@ -362,11 +363,11 @@
 ### Social Media Strategy
 - **Instagram Moments**: Traditional method pose, fish close-up, harbor aesthetic
 - **TikTok Potential**: First bite reactions, method tutorials, seagull threats
-- **Twitter Hooks**: Dirk's philosophy, herring wisdom, fish breath solidarity
+- **Twitter Hooks**: Maarten's philosophy, herring wisdom, fish breath solidarity
 - **Streaming Content**: Full bro herring challenge, seagull encounters, local comparison
 
 ### Community Engagement
-- **Fan Art Potential**: Dirk portrait, seagull Hendrik, traditional method illustration
+- **Fan Art Potential**: Maarten portrait, seagull Hendrik, traditional method illustration
 - **Meme-ability**: "The fish knows if you're afraid" format, seagull waiting, tourist expressions
 - **Cultural Discussion**: Dutch food traditions, raw fish culture, authenticity performance
 
@@ -377,7 +378,7 @@
 - [x] **Satirical targets appropriate** (Tourist hesitation and bravado, not Dutch culture)
 - [x] **Gameplay value established** (Method challenge, status effects, courage system)
 - [x] **No crypto elements** (Pure traditional fish stand)
-- [x] **Original content preserved** (Dirk characterization, seagull threat, method system)
+- [x] **Original content preserved** (Maarten characterization, seagull threat, method system)
 
 ---
 
@@ -406,9 +407,9 @@
 - fish_tail_remaining.png - 32x16 - Victory evidence
 
 ### Character Sprites (12 PNGs)
-- dirk_visser.png - 64x96 - Weathered, patient, knowing
-- dirk_preparing.png - 64x96x3 - Fish preparation sequence
-- dirk_demonstrating.png - 64x96x4 - Traditional method tutorial
+- maarten_visser.png - 64x96 - Weathered, patient, knowing
+- maarten_preparing.png - 64x96x3 - Fish preparation sequence
+- maarten_demonstrating.png - 64x96x4 - Traditional method tutorial
 - evi_assistant.png - 64x96 - Encouraging efficiency
 - local_lunch_regular.png - 64x96 - 90 seconds of mastery
 - retired_fisherman.png - 64x96 - Thousand-yard fish stare

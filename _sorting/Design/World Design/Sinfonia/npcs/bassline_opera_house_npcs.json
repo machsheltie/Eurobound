@@ -50,8 +50,8 @@
           "full_breakdown": "I studied at the Conservatory. I trained with legends. And a HORSE destroys my Zauberflöte."
         },
         "post_chaos": {
-          "to_bros": "You. This is YOUR horse? You will pay. You will ALL pay. €2,000. MINIMUM.",
-          "negotiation": "€2,000 is the minimum. The emotional damage? Incalculable.",
+          "to_bros": "You. This is YOUR horse? You will pay. You will ALL pay. 2,000 Sovs. MINIMUM.",
+          "negotiation": "2,000 Sovs is the minimum. The emotional damage? Incalculable.",
           "payment_received": "...fine. But you are banned from opening night. BANNED.",
           "unpaid": "I will find you. I have lawyers. Opera house lawyers."
         }
@@ -150,6 +150,8 @@
     
     {
       "npc_id": "sinfonia_npc_prima_donna_adelheid_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Bassline_Opera_House/npc_prima_donna_adelheid.md",
+      "sprite_sheet": "npc_prima_donna_adelheid.png",
       "display_name": "Prima Donna Adelheid",
       "role": "opera_singer_diva_optional_antagonist",
       "zone": "backstage_stage",
@@ -182,8 +184,8 @@
         "interrupted": "*holds high F* —WHAT IS THAT?!",
         "outrage": "I have sung at La Scala! At the Met! I was NOT interrupted by HORSES!",
         "to_bros": "This horse has RUINED my concentration. Do you know what concentration COSTS?",
-        "demand": "I require €500 for... therapeutic vocal rest. The trauma.",
-        "negotiated": "...€200. Final. And you will write an apology letter.",
+        "demand": "I require 500 Sovs for... therapeutic vocal rest. The trauma.",
+        "negotiated": "...200 Sovs. Final. And you will write an apology letter.",
         "payment_received": "Hmph. See that it does not happen again. Not that it COULD."
       },
       
@@ -201,6 +203,97 @@
       }
     },
     
+    {
+      "npc_id": "sinfonia_npc_madame_fortissima_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Bassline_Opera_House/npc_madame_fortissima.md",
+      "sprite_sheet": "madame_fortissima.png",
+      "display_name": "Madame Fortissima",
+      "legal_name": "Wolfram Kranzler",
+      "role": "principal_soprano_drag_headliner_hint_vendor_couchsurf_host",
+      "zone": "dressing_rooms_stage_lobby",
+      "importance": "primary",
+
+      "canon_note": "Separate character from sinfonia_npc_prima_donna_adelheid_01. The merge/duplicate note in bassline_opera_house.md is superseded by the author ruling in opera_divas_couchsurf_direction.md. Full characterization is owned by the profile at full_profile and is deliberately not restated here.",
+
+      "appearance": {
+        "age": "58",
+        "build": "broad_shouldered_imposing",
+        "height": "tall_taller_in_heels",
+        "personas": {
+          "stage": "imperial_gold_and_oxblood_gown_powdered_tower_wig_full_stage_paint",
+          "offstage": "cardigan_reading_glasses_corset_not_yet_removed"
+        },
+        "visible_and_unconcealed": ["wig_lace_front", "adams_apple", "size_47_custom_heels"]
+      },
+
+      "personality": {
+        "core_traits": ["grandiose_by_default", "trades_in_flattery", "utterly_unbothered", "protective_of_adelheid", "hospitable_to_a_fault"],
+        "speech_pattern": {
+          "accent": "austrian_german_english",
+          "volume": "performance_projection_by_default",
+          "voice_rule": "speaking_voice_identical_in_both_personas_do_not_pitch_shift"
+        }
+      },
+
+      "dialogue": {
+        "greeting_with_passes": "I have performed for KINGS! For EMPERORS! For... wait, who are you?",
+        "corridor_first_contact": "You are in my corridor. People who are in my corridor generally want something. What do you want, and say it beautifully, because I have a warm-up in nine minutes.",
+        "compliment_ungraded": "Mm. That is what one says to a waiter.",
+        "compliment_graded": "...The high F in Act Two. You listened.",
+        "backstage_invitation": "You three are coming up. It is one flight of stairs and there is food.",
+        "nightcap": "It is a JAGERBOMB, my darling, and it is BENEATH ME, and I have one every week.",
+        "nightcap_toast": "Drei - zwei - eins - PROST!",
+        "morning_after": "It was MEMORABLE. For me. - Eat the bread.",
+        "callback_permanent": "The Nightcap boys! These three drank with me. ALL THREE. I have the photographs and I have shown them to the Maestro."
+      },
+
+      "animation_states": {
+        "idle_hold_court": {"frames": 4, "loop": true},
+        "wig_adjust": {"frames": 3, "loop": false},
+        "lorgnette_raise": {"frames": 3, "loop": false},
+        "stage_entrance": {"frames": 6, "loop": false},
+        "curtain_call_wig": {"frames": 6, "loop": false, "note": "triumph_frame_not_reveal_frame"},
+        "compliment_graded": {"frames": 2, "loop": false, "note": "the_fan_closes"},
+        "nightcap_pour": {"frames": 5, "loop": false},
+        "prost_count": {"frames": 4, "loop": false},
+        "offstage_crossword": {"frames": 3, "loop": true},
+        "morning_page_turn": {"frames": 2, "loop": false}
+      },
+
+      "schedule": {
+        "1400_1700": "star_dressing_room_1_warmup_receives_visitors",
+        "1700_1900": "into_costume_not_interruptible",
+        "1900_2200": "main_stage_performance_not_interactable",
+        "2200_2330": "grand_lobby_holding_court",
+        "2330_0130": "dressing_room_and_stairs_backstage_invitation_window",
+        "0130_late_saturday_only": "divas_apartment_above_opera_house_nightcap",
+        "sunday": "not_present"
+      },
+
+      "show": {
+        "title": "DIE, FLEDERMAUS!",
+        "subtitle": "A Night of Grand Opera - Performed Entirely by the Ladies of the House",
+        "nights": "saturday_only",
+        "co_headliner": "sinfonia_npc_prima_donna_adelheid_01",
+        "marquee_gag": "the_comma"
+      },
+
+      "gameplay_function": {
+        "trades": "prop_room_hints_and_backstage_labyrinth_shortcut_for_graded_compliments",
+        "sells": ["signed_programme_10_sov"],
+        "grants": ["backstage_passes_die_fledermaus"],
+        "hosts": "couchsurf_co_host_with_adelheid"
+      },
+
+      "quest_connections": [
+        {
+          "quest_id": "sinfonia_couchsurf_opera_divas_01",
+          "role": "co_host_and_invitation_authority",
+          "note": "Fulfils one of Sinfonia's Couchsurfing Chronicle hookups. The Nightcap scripted event is co-owned with sinfonia_npc_prima_donna_adelheid_01; edit both profiles together."
+        }
+      ]
+    },
+
     {
       "npc_id": "sinfonia_npc_papageno_franz_01",
       "display_name": "Papageno (Franz)",
@@ -271,7 +364,7 @@
       
       "dialogue": {
         "greeting": "Guten Tag. Tonight's performance is... *checks tourists*... sold out.",
-        "actually_available": "...for €80. Each. Balcony only.",
+        "actually_available": "...for 80 Sovs. Each. Balcony only.",
         "scalper_mention": "I know nothing of... alternative ticket sources. *glances toward door*",
         "post_chaos": "YOU. The horse people. Tickets are... unavailable. Permanently."
       }
@@ -301,7 +394,7 @@
     
     {
       "npc_id": "sinfonia_npc_coat_check_01",
-      "display_name": "Coat Check Helga",
+      "display_name": "Coat Check Hilde",
       "role": "item_storage_gossip_source",
       "zone": "lobby",
       "importance": "ambient",
@@ -314,7 +407,7 @@
       },
       
       "dialogue": {
-        "service": "Your coat, sir? €2 for the evening. Very secure.",
+        "service": "Your coat, sir? 2 Sovs for the evening. Very secure.",
         "gossip": "*leans in* You want to know about the Maestro? Check dressing room three. Love letters everywhere.",
         "hint": "*whispers* Behind the Mozart portrait in the lobby. If you need to... disappear. I've said nothing."
       },
@@ -342,8 +435,8 @@
       
       "dialogue": {
         "greeting": "Welcome to the gift shop. Everything is... authentically overpriced.",
-        "sale": "The Mozart bust is our bestseller. Only €45. Worth every cent, probably.",
-        "honest": "Between us? The €12 program has the same content as Wikipedia. But in fancier font."
+        "sale": "The Mozart bust is our bestseller. Only 45 Sovs. Worth every cent, probably.",
+        "honest": "Between us? The 12 Sovs program has the same content as Wikipedia. But in fancier font."
       }
     },
     

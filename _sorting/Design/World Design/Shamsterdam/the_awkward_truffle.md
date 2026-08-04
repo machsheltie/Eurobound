@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 9 PM (extended tourist hours)
 - **Stat Requirements**: None (chocolate is universal, embarrassment is optional)
-- **Item Requirements**: Gold for purchases (€5-40), ability to say "it's for a friend" with straight face
+- **Item Requirements**: Gold for purchases (5 Sovs-40), ability to say "it's for a friend" with straight face
 - **Previous Location Requirements**: None (the chocolate draws all)
 - **Special Conditions**: Shop is small; bachelor/bachelorette parties may cause congestion
 
@@ -116,7 +116,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 - **Sensitivity Considerations**: Body-positive framing, equal representation, chocolate > shame
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Selling €15 worth of chocolate for €35 because of the shape
+- **Primary Vice**: Selling 15 Sovs worth of chocolate for 35 Sovs because of the shape
 - **City-Specific Comedy Operations**: Amsterdam's openness enables the market, tourist awkwardness funds it
 - **Buffoon Exploitation**: Bros buying "for the bachelor party" (someone always eats theirs privately)
 - **Comedy of Errors**: The transition from "I'm just looking" to "I'll take two of the detailed ones"
@@ -150,17 +150,17 @@ The shop's layout — respectable front, transitional middle, committed back —
 ### Product Inventory
 | Item | Price | Category | Chocolate Type | Notes |
 |------|-------|----------|----------------|-------|
-| Classic Truffle Box (6) | €12 | Normal | Assorted | "For when you're with family" |
-| Abstract "Art" Piece | €8 | Suggestive | Dark | "It's open to interpretation" |
-| The Male Classic | €15 | Anatomical | Milk | "Our bestseller. Obviously." |
-| The Male Detailed | €25 | Anatomical | Belgian Dark | "For the discerning customer" |
-| The Female Classic | €15 | Anatomical | White | "Equal opportunity awkwardness" |
-| The Female Detailed | €25 | Anatomical | Belgian Dark | "Craftsmanship respects no gender" |
-| The Couples' Set | €35 | Paired | Assorted | "For someone special. Somehow." |
-| Bachelor Party Platter | €50 | Bulk | Mixed | "Make it weird for 8-12 people" |
-| Bachelorette Party Platter | €50 | Bulk | Mixed | "Matching energy, different shapes" |
-| The Full Collection | €120 | Complete | All Types | "You're committed. We respect that." |
-| Custom Commission | €75+ | Bespoke | Your Choice | "We've made stranger. We don't judge." |
+| Classic Truffle Box (6) | 12 Sovs | Normal | Assorted | "For when you're with family" |
+| Abstract "Art" Piece | 8 Sovs | Suggestive | Dark | "It's open to interpretation" |
+| The Male Classic | 15 Sovs | Anatomical | Milk | "Our bestseller. Obviously." |
+| The Male Detailed | 25 Sovs | Anatomical | Belgian Dark | "For the discerning customer" |
+| The Female Classic | 15 Sovs | Anatomical | White | "Equal opportunity awkwardness" |
+| The Female Detailed | 25 Sovs | Anatomical | Belgian Dark | "Craftsmanship respects no gender" |
+| The Couples' Set | 35 Sovs | Paired | Assorted | "For someone special. Somehow." |
+| Bachelor Party Platter | 50 Sovs | Bulk | Mixed | "Make it weird for 8-12 people" |
+| Bachelorette Party Platter | 50 Sovs | Bulk | Mixed | "Matching energy, different shapes" |
+| The Full Collection | 120 Sovs | Complete | All Types | "You're committed. We respect that." |
+| Custom Commission | 75 Sovs+ | Bespoke | Your Choice | "We've made stranger. We don't judge." |
 
 ### The "Eating It Later" Mechanic
 - **Anatomical Chocolate Consumable**: Can be eaten for HP restoration
@@ -185,10 +185,10 @@ The shop's layout — respectable front, transitional middle, committed back —
 | Style | Price | Description | Implications |
 |-------|-------|-------------|--------------|
 | Standard | Free | Brown paper bag | Efficiency, shame-adjacent |
-| Discreet | €3 | Plain box, no indication | Secret-keeping |
-| Festive | €5 | Ribbon, tasteful | "It's a present! A legitimate present!" |
-| Bold | €5 | Transparent, proud | "I know what I bought. What of it." |
-| Bachelor/ette Special | €8 | Full party regalia | "Everyone will know immediately" |
+| Discreet | 3 Sovs | Plain box, no indication | Secret-keeping |
+| Festive | 5 Sovs | Ribbon, tasteful | "It's a present! A legitimate present!" |
+| Bold | 5 Sovs | Transparent, proud | "I know what I bought. What of it." |
+| Bachelor/ette Special | 8 Sovs | Full party regalia | "Everyone will know immediately" |
 
 ### Bravado Interactions
 - **Gain Bravado**: Purchase from Zone 3 without visible hesitation, request gift wrapping with eye contact, ask for "recommendations"
@@ -196,7 +196,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 - **Group Dynamics**: Bachelor parties gain collective Bravado immunity (safety in numbers)
 
 ### The "Full Collection" Achievement
-- **Requirement**: Purchase complete set (€120)
+- **Requirement**: Purchase complete set (120 Sovs)
 - **Reward**: "Truffle Collector" title, staff recognize you as "committed"
 - **Inventory Impact**: Significant chocolate inventory, conversation starters
 - **The Question**: "Are you going to... eat all of those?"
@@ -220,7 +220,7 @@ The shop's layout — respectable front, transitional middle, committed back —
   - *on commission requests* "We've made stranger. We've made MUCH stranger. We don't judge."
   - "Gift wrapping? Of course. Discreet or... declarative?"
 
-**Assistant Bas**
+**Assistant Niels**
 - **Role**: Sales floor, wrapping, customer management
 - **Appearance**: 20s Dutch man, bow tie (professional), permanent slight smirk (human)
 - **Background**: Started for summer job, stayed for the "anthropological observation"
@@ -275,7 +275,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 **Sophie's Chocolate Philosophy (Extended):**
 - "Where I trained, they said anatomical chocolate was beneath the craft. I said: chocolate is craft. Shape is market."
 - "I make traditional pralines for Christmas. I make anatomical for tourists. Both require the same skill."
-- "The detailed versions sell for €25 because they take three hours. The shape is irrelevant to the labor."
+- "The detailed versions sell for 25 Sovs because they take three hours. The shape is irrelevant to the labor."
 - "Every chocolatier has their specialty. Mine found me. I've made peace with it. And money."
 - "My grandmother would be... surprised. But also proud of the technique. Possibly."
 
@@ -296,7 +296,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 ### Tourist Experience Network
 - **Function**: The Awkward Truffle connects to other "Amsterdam is wild" moments
 - **Connection to Condomerie**: Different shops, same tourist awkwardness energy
-- **Connection to Venustempel**: Museum vs. retail, historical vs. edible
+- **Connection to Venustempel**: Museum vs. retail, historical vs. edible — and, since the Venustempel's 2011 move to Museum Mile and its acquisition of the Cacaogalerij chocolate collection, a direct commercial rivalry. Sophie is the only NPC in the game who criticises De Grote Fontein, and she does it on **tempering** grounds, not hygiene: "That is not chocolate. That is chocolate-flavoured weather." She has never mentioned the germs and it has never occurred to her to. Buying from both locations in one in-game day unlocks a comparison dialogue.
 - **Theme**: Amsterdam's commerce of the body, in various forms
 
 ### Inventory & Consumption
@@ -334,7 +334,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Realization moment when entering Zone 3
-- **Character Voice Direction**: Sophie's complete professionalism, Bas's slight amusement
+- **Character Voice Direction**: Sophie's complete professionalism, Niels's slight amusement
 - **Environmental Comedy**: Bachelor party volume, "Just Chocolate" shopper's discomfort
 - **The Consumption Sound**: Standard eating sound, extended pause, "Complicated Feelings" indicator
 
@@ -346,7 +346,7 @@ The shop's layout — respectable front, transitional middle, committed back —
   - Display cases by category (abstracted tastefully)
   - Crafting window
   - Counter/wrapping area
-  - Sophie and Bas sprites
+  - Sophie and Niels sprites
   - Customer NPC sprites
   - Product item sprites (appropriate abstraction)
   - Gift wrapping options

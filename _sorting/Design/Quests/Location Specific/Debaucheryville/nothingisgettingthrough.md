@@ -26,6 +26,53 @@
 
 ---
 
+## 🚪 OPTIONALITY — READ BEFORE ASSUMING ANY PLAYER HAS THE HERP
+
+**Author ruling (2026-08-03): this is a SIDEQUEST and every step of the chain is a player choice. Nothing in the game may assume the party has `the_herp`.**
+
+The chain has four independent opt-out points:
+
+| Step | Player choice |
+|---|---|
+| 1. Visit the Bohemian Riviera / Fauxst Beach at all | Optional — it is a sidequest location |
+| 2. Enter the trivia | Optional |
+| 3. Attend the party that evening | **Optional — this is the trigger.** No party, no outbreak, no Herp |
+| 4. Pursue the Gold Circle Coin in Sinfonia | Optional — a player can carry the Herp for the rest of the game unsuppressed |
+
+**Guaranteed ≠ mandatory.** Once the player attends the party, the outbreak is scripted, party-wide, no roll and no save — that part is unavoidable *within the branch*. Entering the branch is not.
+
+### What a skipping player loses
+Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, and with it the "Slept Around, Found Out" title that requires it. That is a legitimate, fully supported playthrough — not a failure state, not a soft-lock, and never signposted to the player as a mistake.
+
+### 🦠 THE PERMANENTLY INFECTED PLAYTHROUGH — a supported, intended playstyle
+
+**Author ruling (2026-08-03): declining the Gold Circle Coin is not a lesser path. It is a deliberate, first-class way to play, and it must be authored as one.**
+
+> *"That is intentional, that is a player choice. If they choose to go through the rest of the game with the Herp, by all means they can do that and get roasted heavily and refused by every single hook up they attempt from then on out. So many men have double standards toward women and sexuality, and yet think that they can go around whoring as they please — so maybe there are women players who would rather bypass the completion and instead hilariously, for the rest of the game, watch the bros get refused by every single hook up. Repeatedly turned down, over and over and over again, for being infected with herpes."*
+> — Author
+
+**The satirical target:** men who police women's sexuality while considering their own conquests a credential. The bros hold exactly that double standard. This playthrough hands them the consequence they would have deployed against a woman without a second thought, and lets it run for the rest of the game.
+
+**What the player gets by refusing the cure:**
+- Every hookup attempt in every remaining city ends in refusal. Every one. Forever.
+- The bros are roasted heavily and never once connect it to themselves.
+- It is played for maximum comedy, not for grimness or moralising — nobody lectures them, the world simply declines.
+
+**Authoring requirements (binding):**
+1. **This state can last most of the game. The rejection content must therefore be DEEP, not a single canned line.** Write a large, varied pool: different NPCs, different phrasings, different degrees of bluntness, escalating absurdity. A repeated string kills the joke by the fourth firing.
+2. **Never signpost it as a mistake.** No nudge toward the Coin, no "you should really get that looked at" quest marker, no penalty framing in the UI. The status entry is simply there.
+3. **The bros never learn.** They rationalise every single refusal — bad lighting, she had a boyfriend, Chadwick ruined it, this city's women are stuck up. Never once the actual reason. This dovetails with the age engine in `Design/Character Profiles/bros_core_principle.md`: they misattribute everything.
+4. **Never punish the player mechanically** beyond the in-fiction refusals. No stat death spiral, no locked progression, no soft-lock. The only cost is Chronicles entries they chose to forgo.
+5. **Women who refuse them are never cruel or shamed** — they are unbothered, matter-of-fact, and frequently amused. The joke is on the bros, always.
+
+### Consequences for every other author
+- **Never write "the bros have the Herp" as a given.** Any content in a later city must branch, or must not reference Herp status at all.
+- Three states exist and all three must be playable: **no Herp** · **Herp active** (caught, Coin not obtained) · **Herp suppressed** (Coin equipped).
+- The Coin is likewise optional. Do not assume suppression either.
+- See `Design/design_optionality_principle.md` and `Design/city_progression_order.md`.
+
+---
+
 ## 🎯 Satirical Targets
 - **Primary Target:** Beer-goggle self-mythology — the tourist conviction that a stranger's ordinary kindness was a selection, a scouting, a *win*. Every man in this quest believes he was chosen. Not one of them was chosen. One of them was handed a bottle of water.
 - **Secondary Targets:** Male denial as a group project (the silent, unanimous, permanent agreement never to compare notes); the consequence-free vacation fantasy meeting an actual permanent consequence; luxury-retail gatekeeping as a *moral* test the bros sincerely try to pass; the treatment of a mass-produced novelty as a holy relic because a movie said so.
@@ -144,7 +191,7 @@
 
 **Phase 5 — Infection & Diagnosis**
 
-*All three bros begin, in unison, to itch. `the_herp` is applied to the entire party, scripted, guaranteed, no roll, no save, no path in which any bro is spared. The waist-level `heat_shimmer` particle comes up on all three at once.*
+*All three bros begin, in unison, to itch. `the_herp` is applied to the entire party — **scripted and guaranteed ONCE THE PARTY IS ATTENDED**: no roll, no save, no path in which any bro is spared. (Attending is a player choice; see Optionality below.) The waist-level `heat_shimmer` particle comes up on all three at once.*
 
 *Lord Pilsner has not gotten up. He is still cocooned, still in the thong, staring at the sky, scratching through the bag with the heel of his hand and thinking harder than he has thought all summer. He runs the entire diagnosis from in there.*
 
@@ -177,7 +224,7 @@
 *They limp off the sand toward the only place open at that hour. Behind them, on her lounger, a woman in enormous sunglasses angles her face at the sun like a satellite dish. She is fine. She was always going to be fine.*
 
 *[STATUS APPLIED: `the_herp` — all three bros, permanent]*
-*[CHRONICLES ENTRY LOGGED: QUEEN Riviéra Renata — scripted/mandatory]*
+*[CHRONICLES ENTRY LOGGED: QUEEN Riviéra Renata — scripted, once this branch is entered]*
 
 ---
 
@@ -454,10 +501,10 @@
 > Earning it. Proving to a French tailor in Sinfonia that they are, in fact, men of quality — that the assessment was a *first impression* and first impressions can be overturned by anyone with enough grit and enough credit. This is the training montage. This is the part of the movie where the guy buys the suit and the music changes.
 
 **What they're actually doing:**
-> Spending €500 in a shop that has a documented, published, entirely public loyalty tier at €500, thereby "earning" a status that is available to any tourist with €500 and no personal qualities whatsoever, and then running an errand for a man who would have run it himself in twenty minutes.
+> Spending 500 Sovs in a shop that has a documented, published, entirely public loyalty tier at 500 Sovs, thereby "earning" a status that is available to any tourist with 500 Sovs and no personal qualities whatsoever, and then running an errand for a man who would have run it himself in twenty minutes.
 
 **Execution Steps:**
-1. **Reach Valued Client — €500 spent.** This uses the shop's **existing** tier system exactly as published (Client / Valued Client €500 / Distinguished Client €1000 / Patron of Fashion €2000). No new tier, no new pricing, no quest-specific discount. Every euro spent counts, including formal wear the player may already have bought, including the accessories the assistants upsell, including the €100 outfit consultation that consists largely of backhanded compliments. The bros interpret the tier unlock as a character judgment.
+1. **Reach Valued Client — 500 Sovs spent.** This uses the shop's **existing** tier system exactly as published (Client / Valued Client 500 Sovs / Distinguished Client 1000 Sovs / Patron of Fashion 2000 Sovs). No new tier, no new pricing, no quest-specific discount. Every Sov spent counts, including formal wear the player may already have bought, including the accessories the assistants upsell, including the 100 Sovs outfit consultation that consists largely of backhanded compliments. The bros interpret the tier unlock as a character judgment.
 2. **The Valued Client threshold fires.** Private fitting room. 10% off. Better champagne. Their name used, out loud, for the first time. Lord Pilsner needs a moment.
 3. **The errand.** Monsieur Aiguille, now willing to have the conversation, does not name a price for the Coin. He names a task, and it is absurd, and he means every word of it: a specific bolt of cloth is held at a warehouse across Sinfonia by a man who owes him nothing, will not release it to a courier, will not release it to a shop assistant, and has not spoken to Aiguille personally since an incident involving a hem in 1994. The bros are to collect it. **In the formal wear.** In daylight. Across the whole city. With the shimmer.
 4. **The errand is completed with maximum indignity and zero self-awareness.** Groin Blurts fire during the negotiation. The warehouseman hands over the bolt specifically because he wants these people out of his warehouse, which the bros correctly identify as a win and incorrectly attribute to charisma.
@@ -484,7 +531,7 @@
 **Chadwick** *(already filming)*: "He's basically knighting me right now."
 
 **NPC Reactions:**
-- **Monsieur Aiguille** *(to a shop assistant, once the door has closed, quietly, without contempt)*: "They spent five hundred euro to be told their own names. Do not laugh. Everyone here did."
+- **Monsieur Aiguille** *(to a shop assistant, once the door has closed, quietly, without contempt)*: "They spent five hundred Sovs to be told their own names. Do not laugh. Everyone here did."
 - **Shop Assistant:** "Might I suggest the matching cufflinks? They really complete the—" *(a Groin Blurt fires)* "—...I will come back."
 - **Aristocrat Customer:** *does not acknowledge their existence, before, during, or after their transformation into Valued Clients*
 - **Nervous Tourist:** *(watching them leave, to nobody)* "Is that... is that what it takes? Is that too much? That's too much, right?"
@@ -503,10 +550,10 @@
 > Running a heist. A real one. Cased, planned, executed by professionals in formal wear, the kind of thing that gets a slow-motion walking shot. They have decided the shop *disrespected* them, and this is the correction. They are, in their own account, taking back what the snub owed them.
 
 **What they're actually doing:**
-> Buying several hundred euro of formal wear from the exact shop they are about to burgle, on their own names, from a tailor who has now measured all three of them, and then hiding from a 70-year-old night porter by standing very still.
+> Buying several hundred Sovs of formal wear from the exact shop they are about to burgle, on their own names, from a tailor who has now measured all three of them, and then hiding from a 70-year-old night porter by standing very still.
 
 **Execution Steps:**
-1. **Buy the disguises. From the shop. Retail.** Path B requires formal wear **purchased from this shop** — Opera Cape (€200) minimum for each bro, and the bros will absolutely be upsold the Silk Pocket Square on top of it. *(The shop's tier system does not care why you spent it. If the purchases cross €500 the bros become Valued Clients on the way to robbing the place, and nobody involved ever notices the irony.)*
+1. **Buy the disguises. From the shop. Retail.** Path B requires formal wear **purchased from this shop** — Opera Cape (200 Sovs) minimum for each bro, and the bros will absolutely be upsold the Silk Pocket Square on top of it. *(The shop's tier system does not care why you spent it. If the purchases cross 500 Sovs the bros become Valued Clients on the way to robbing the place, and nobody involved ever notices the irony.)*
 2. **Wait for close.** The shop keeps civilized hours and shuts at 7 PM per its own entry conditions. The bros spend the intervening four hours in full formal wear in a public square, being complimented by strangers, which nearly ends the heist twice.
 3. **After-hours infiltration.** Service entrance, alteration workshop, showroom floor. The marble is loud. The bros are not quiet men. Groin Blurts remain fully active during the entire stealth sequence and are, mechanically, the primary fail-state generator — the player cannot prevent them and must plan around them.
 4. **THE MANNEQUIN BEAT (marquee).** The night porter crosses the showroom floor with a torch. Three men in opera capes hold mannequin poses on the display plinths, mid-gesture, for eleven full seconds. **This is the quest's screenshot moment and it must be framed for portrait capture.** Nobody blinks. One cape hem is trembling. The torch passes across all three faces in sequence and does not stop.
@@ -535,7 +582,7 @@
 **Rewards:**
 - **Item:** `item_gold_circle_coin` — identical item, identical suppression, identical restrictions. **Both paths deliver exactly the same Coin.** The Coin does not care how it was obtained; neither does the game.
 - **Stat Change:** +3 Bravado, −1 Charm at the Haberdashery only (Aiguille is never rude about it, which is the penalty) — **quest-completion character stat changes, not item stats.** The Coin is Charm: +0 flat on both paths.
-- **Status:** `the_herp` **suppressed** (never cured); "Valued Client" applies if the formal-wear spend crossed €500, which it usually does, accidentally
+- **Status:** `the_herp` **suppressed** (never cured); "Valued Client" applies if the formal-wear spend crossed 500 Sovs, which it usually does, accidentally
 - **Unlocks:** Achievement "Nothing Is Getting Through"; the Night Porter's recurring pose compliment; all six post-cure re-attempts; the Post-Credits scene
 
 ---
@@ -561,7 +608,7 @@
 - **Each lady has a post-cure callback line, authored in her own profile** (roster table, Beat 5). Every one of them is in her own voice and **not one of them lets the bros off the hook.** Nobody has forgotten. Nobody pretends otherwise. The Twins' bingo card still has the square. The ballad still exists and is still being performed. CryptoBro69 still has the screenshot.
 - **Resolution (binding):** the callback line plays as a **sting beat only** — she says her piece, the bros absorb none of it, and **the couchsurf then resolves normally**, running that NPC's standard Chronicles scene and outcome exactly as authored before the infection. The callback never blocks the entry and is never a second refusal. **The first-time payload** — her stat change, gag item, collectible, ICQ payload, and Passport entry — **is granted only if that entry was never completed pre-infection.** A player who completed her before the outbreak gets the callback and the scene, but no duplicate rewards.
 - **Renata is the exception, again.** She never knew, was never told, and never rejected anyone. She notices the Coin, approves of the jewelry, pats a cheek, and goes back to her lounger.
-- **Couchsurfing Chronicles completion stays fully achievable.** The outbreak is itself a scripted Chronicles entry, and the post-Coin re-attempts restore every other entry the Herp had locked out. No player can be permanently blocked out of the "Slept Around, Found Out" title by this questline — but no player can reach it without catching The Herp first, because the outbreak is mandatory. *(See `Design/Quests/couchsurfingchronicles.md` and `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md`.)*
+- **Couchsurfing Chronicles completion stays fully achievable for players who take this branch.** The outbreak is itself a Chronicles entry, and the post-Coin re-attempts restore every other entry the Herp had locked out. No player who catches it can be permanently blocked out of the "Slept Around, Found Out" title. **A player who skips the party never catches the Herp and simply forfeits this Chronicles entry** — that is a legitimate, supported playthrough, not a failure state. *(See `Design/Quests/couchsurfingchronicles.md` and `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md`.)*
 
 ---
 
@@ -644,9 +691,9 @@
 - Post-Credits Scene: **"The Wall"**
 
 ### Cross-References
-- **The Couchsurfing Chronicles** (`Design/Quests/couchsurfingchronicles.md` and the Debaucheryville edition) — the outbreak is a scripted, mandatory Chronicles entry; the Herp routes every other Chronicles attempt into a rejection scene until the Coin is equipped
+- **The Couchsurfing Chronicles** (`Design/Quests/couchsurfingchronicles.md` and the Debaucheryville edition) — the outbreak is a scripted Chronicles entry **for players who attend the party**; the Herp then routes every other Chronicles attempt into a rejection scene until the Coin is equipped. Skipping the party forfeits this entry and nothing else
 - **The Bacchanus Beach Beatdown** — direct predecessor; supplies the `night_party_zone` unlock, Hamstradamus, Petra, and the bar-strip TV loop that plays through the entire limp
-- **Haute Couture Haberdashery** (`Design/World Design/Sinfonia/haute_couture_haberdashery.md`) — the House of Needles; both paths ride the shop's existing Assessment Protocol and €500 Valued Client tier, neither of which was created or modified for this quest
+- **Haute Couture Haberdashery** (`Design/World Design/Sinfonia/haute_couture_haberdashery.md`) — the House of Needles; both paths ride the shop's existing Assessment Protocol and 500 Sovs Valued Client tier, neither of which was created or modified for this quest
 - **Midnight Munchies General Store** — Věra's refusal scene; the file already lists status-effect management among its services, and this is the one it declines
 - **The Cirque du Shady** — Hamstradamus's prophecy tent; the Twins' rejection scene; the Cirque is also where Renata is heading in hers
 - **ICQ Scammer Sting / the ICQ substrate** — CryptoBro69's gloating after the Ex's rejection and Miss Morphine's auto-reply both run on it (existing gags only; no new crypto content)
@@ -887,7 +934,7 @@ and did, for once, exactly what it promised.
 
 ### The Two Paths
 - **Both paths deliver the identical item with identical effects.** Do not balance-differentiate them. The difference is entirely tonal and entirely in Aiguille's subsequent voice.
-- PATH A uses the shop's **existing** €500 Valued Client tier. **No new tier, no quest-specific pricing, no discount.** Purchases made before the quest count.
+- PATH A uses the shop's **existing** 500 Sovs Valued Client tier. **No new tier, no quest-specific pricing, no discount.** Purchases made before the quest count.
 - PATH B requires formal wear **purchased from the shop being burgled**, on the bros' own names, from a tailor who has measured all three of them. This must never be lampshaded by any character.
 - **The Assessment Protocol is not modified for this quest** and is played completely straight. It was always the snub. Do not write a quest-specific "meaner" version.
 - The mannequin hold is **eleven seconds and must be uninterruptible.** No skip prompt, no input hint, no timer UI. Groin Blurts are suppressed for the duration of the hold specifically so the player spends all eleven seconds waiting for one.

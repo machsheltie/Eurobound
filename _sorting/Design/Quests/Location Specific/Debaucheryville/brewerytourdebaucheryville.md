@@ -46,7 +46,7 @@
 |  NEEDED  |
 \          /
 '-.......-'
-€40 for "spiritual awakening"
+40 Sovs for "spiritual awakening"
 ```
 
 **Brew Reward:**
@@ -93,7 +93,7 @@
 🏰 AUTHENTIC EUROPEAN DIVE EXPERIENCE 🏰
 yo heard u want real culture
 got discount nobility upgrade packages
-€30 - includes fake family crest
+30 Sovs - includes fake family crest
 Warning: may cause delusions of sophistication
 ```
 
@@ -142,7 +142,7 @@ Warning: may cause delusions of sophistication
 ```
 ⚡ CYBER-BREWERY VIP ACCESS ⚡
 See what happens after midnight
-€100 download link guaranteed exclusive
+100 Sovs download link guaranteed exclusive
 Perfect for "tech-savvy" American tourists
 Warning: May contain Y2K bugs
 ```
@@ -193,12 +193,12 @@ Warning: May contain Y2K bugs
 🤖 BREWBOT INVESTMENT OPPORTUNITY 🤖
 Get rich with AI beer algorithms!
 BREWERYCOIN launching after ur tour!
-€500 minimum (expired Friendster accounts accepted)
+500 Sovs minimum (expired Friendster accounts accepted)
 This is definitely financial advice
 ```
 
 **Brew Reward:**
-- **Blockchain Bock** — +20 HP, +10 Gold, applies Tourist Trapped next battle
+- **Blockchain Bock** — +20 HP, +10 Sovs, applies Tourist Trapped next battle
 - **Enhanced Effect:** *"You feel smarter but everyone else feels dumber listening to you"*
 
 **Enhanced Selfie Prop:**
@@ -263,7 +263,7 @@ Failing one locks you out for 1 in-game hour (real-time = 5 min).
 
 **Bingo Completion Reward:**
 - **"Y2K Archaeologist" Achievement** unlocked
-- **Special ICQ popup:** *"CONGRATULATIONS! You've spotted every cringe reference! Tony420 wants to hire you as cultural consultant for €420."*
+- **Special ICQ popup:** *"CONGRATULATIONS! You've spotted every cringe reference! Tony420 wants to hire you as cultural consultant for 420 Sovs."*
 - **Permanent buff:** "+1 Nostalgia Resistance" (immune to status effects caused by outdated references)
 
 ### **📱 High-Impact Feature #2: ICQ Popup Social Media Sharing**
@@ -286,7 +286,7 @@ Just got this "authentic" European culture spam 😂
 **Tony420 Share Template:**
 ```
 This ICQ scammer is still trying to sell me nobility packages in 2025 💀
-"€30 - includes fake family crest"
+"30 Sovs - includes fake family crest"
 Some things never change 😅
 #DebaucheryvilleLife #ICQClassics #EuroboundMoments
 ```
@@ -325,7 +325,7 @@ After completing all 4 breweries, game automatically generates shareable video c
 Complete Y2K Bingo + Share 3 ICQ popups + Create selfie compilation = **"Peak Y2K Tourist"** mega-achievement
 
 **Mega-Achievement Rewards:**
-- **Exclusive ICQ popup from Hamstradamus:** *"Whiskers see: You have mastered the ancient art of cringe documentation. €69 for prophecy about your next embarrassing moment."*
+- **Exclusive ICQ popup from Hamstradamus:** *"Whiskers see: You have mastered the ancient art of cringe documentation. 69 Sovs for prophecy about your next embarrassing moment."*
 - **Special brewery keychain upgrade:** Bottle opener now plays MIDI "Hamster Dance" when used
 - **Unique status effect:** "Nostalgically Self-Aware" (+2 Charm, but random NPCs ask if you're "doing this ironically")
 

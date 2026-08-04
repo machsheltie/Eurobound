@@ -363,7 +363,7 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 - **Potato Mode:** Standard room layout, essential NPCs only, no atmospheric effects
 
 ### Performance Targets:
-- **Target FPS:** 45 fps (complex perspective rendering)
+- **Target FPS:** 60 fps (complex perspective rendering)
 - **Max Draw Calls:** 18 per frame
 - **Memory Footprint:** 45MB maximum for location
 
@@ -627,7 +627,7 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 | Seedy Underbelly Present | ✅ PASS | Manufactured psychedelic experience, patrons feeding dread for tips |
 | Gameplay Value Established | ✅ PASS | Mirror portal puzzle, boss battle, brewery tour progression, signature brew |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented (atlasing, LOD, potato mode) |
-| Mobile Performance Budget | ✅ PASS | 45 FPS, 18 draw calls, 45MB |
+| Mobile Performance Budget | ✅ PASS | 60 FPS, 18 draw calls, 45MB |
 | Accessibility Features | ✅ PASS | Portal pattern indicators, motion-reduced warping, visual audio cues |
 | No Crypto Elements | ✅ PASS | No cryptocurrency content in this location |
 | Social Media Integration | ✅ PASS | Floating chalice selfie prop, Mirror Chad quotes, upward-drip bar |

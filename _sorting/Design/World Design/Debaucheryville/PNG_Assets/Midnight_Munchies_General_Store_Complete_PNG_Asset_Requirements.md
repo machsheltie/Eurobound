@@ -344,7 +344,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 | Low | Static heat lamp, no particles, steady lighting only |
 
 ### Performance Targets:
-- **Target FPS:** 45
+- **Target FPS:** 60
 - **Max Draw Calls:** 12 per frame
 - **Memory Footprint:** 30 MB maximum
 - **Particle Limit:** 10 (dust motes + heat lamp steam)
@@ -472,7 +472,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 6. **Regular Status Badge** - Věra knows your face
 
 ### Quote Potential:
-- "That's €12. ...€16 after 2 AM. You knew this."
+- "That's 12 Sovs. ...16 Sovs after 2 AM. You knew this."
 - "You could have bought this cheaper earlier. But here we are."
 - "The price includes the lesson: plan ahead next time."
 - "Prices went up at 2. You know this. Everyone knows this."
@@ -513,7 +513,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 | Seedy Underbelly | ✅ PASS |
 | Gameplay Value | ✅ PASS |
 | Technical Feasibility | ✅ PASS |
-| Mobile Performance | ✅ PASS (45 FPS, 12 draws, 30MB) |
+| Mobile Performance | ✅ PASS (60 FPS, 12 draws, 30MB) |
 | Accessibility | ✅ PASS |
 | Social Media | ✅ PASS |
 | No Crypto Elements | ✅ PASS |

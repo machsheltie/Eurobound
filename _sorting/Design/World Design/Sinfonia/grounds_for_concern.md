@@ -22,7 +22,7 @@
 - **Normal Exit**: Walk away (vibrating optional)
 - **Completion Requirements**: N/A (vendor location)
 - **Failure States**: "Over-Caffeinated" — ordered too many shots, temporary stat chaos
-- **Progressive Unlocks**: "Caffeine Tolerance" after €50 spent (reduced negative effects)
+- **Progressive Unlocks**: "Caffeine Tolerance" after 50 Sovs spent (reduced negative effects)
 
 ## Visual Design
 ### Stand Description
@@ -37,7 +37,7 @@
 - **Atmosphere**: The hiss of steam, the smell of perfection, the judgment of inadequacy
 
 ### The Barista
-- **Name**: Franz the Focused
+- **Name**: Ferdinand the Focused
 - **Appearance**: Intense eyes, perfectly groomed mustache, apron cleaner than surgical scrubs
 - **Expression**: Laser-focused on the craft, mildly pained by customer requests
 - **Quirk**: Times every extraction to the millisecond — and will tell you about it
@@ -53,7 +53,7 @@
 ### Theme & Vibe
 **Core Concept**: Grounds For Concern satirizes espresso snobbery — the idea that coffee is a science requiring precision, reverence, and absolutely no requests for customization. The stand delivers genuinely excellent espresso while making customers feel they don't deserve it.
 
-The deeper joke: Franz genuinely cares about coffee quality. His standards are impossibly high, his passion is real, and his disappointment when someone asks for sugar is profound. He's not pretending — he's been broken by years of people who don't understand extraction times.
+The deeper joke: Ferdinand genuinely cares about coffee quality. His standards are impossibly high, his passion is real, and his disappointment when someone asks for sugar is profound. He's not pretending — he's been broken by years of people who don't understand extraction times.
 
 ### The Espresso Hierarchy
 The stand's unwritten rules:
@@ -63,7 +63,7 @@ The stand's unwritten rules:
 - **Americano**: Tolerated (barely)
 - **Latte/Cappuccino**: Available but delivered with a sigh
 - **"Regular Coffee"**: Does not exist here. Will not exist here.
-- **Flavored anything**: Franz needs a moment
+- **Flavored anything**: Ferdinand needs a moment
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Third-wave coffee culture, espresso pretension
@@ -87,25 +87,25 @@ The stand's unique mechanic:
 **Core Drinks**:
 | Drink | Price | Effect | Side Effect |
 |-------|-------|--------|-------------|
-| Ristretto | €3 | +5% Speed (30 min) | -3% Luck (30 min) |
-| Espresso | €4 | +8% Speed (30 min) | -5% Luck (30 min) |
-| Doppio | €6 | +15% Speed (30 min) | -10% Luck (30 min) |
-| Triplo | €8 | +25% Speed (20 min) | -15% Luck, Shaky status (20 min) |
-| The Quadruple | €12 | +40% Speed (15 min) | -25% Luck, Shaky, Heart Racing (15 min) |
+| Ristretto | 3 Sovs | +5% Speed (30 min) | -3% Luck (30 min) |
+| Espresso | 4 Sovs | +8% Speed (30 min) | -5% Luck (30 min) |
+| Doppio | 6 Sovs | +15% Speed (30 min) | -10% Luck (30 min) |
+| Triplo | 8 Sovs | +25% Speed (20 min) | -15% Luck, Shaky status (20 min) |
+| The Quadruple | 12 Sovs | +40% Speed (15 min) | -25% Luck, Shaky, Heart Racing (15 min) |
 
 **Milk Drinks** (delivered with judgment):
 | Drink | Price | Effect | Side Effect | Barista Reaction |
 |-------|-------|--------|-------------|------------------|
-| Cappuccino | €5 | +5% Speed, +10 HP | -3% Luck | Slight sigh |
-| Latte | €5 | +3% Speed, +15 HP | -2% Luck | Visible disappointment |
-| Flat White | €6 | +8% Speed, +10 HP | -5% Luck | Respectful nod (Australian invention) |
+| Cappuccino | 5 Sovs | +5% Speed, +10 HP | -3% Luck | Slight sigh |
+| Latte | 5 Sovs | +3% Speed, +15 HP | -2% Luck | Visible disappointment |
+| Flat White | 6 Sovs | +8% Speed, +10 HP | -5% Luck | Respectful nod (Australian invention) |
 
 **Special Items**:
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Bean Bag (10 shots worth) | €25 | Portable espresso supplies | Use anywhere |
-| Franz's Reserve | €15 | +20% Speed, NO side effects | Limited: 1/day |
-| The Intervention | €3 | Removes all caffeine effects | For emergencies |
+| Bean Bag (10 shots worth) | 25 Sovs | Portable espresso supplies | Use anywhere |
+| Ferdinand's Reserve | 15 Sovs | +20% Speed, NO side effects | Limited: 1/day |
+| The Intervention | 3 Sovs | Removes all caffeine effects | For emergencies |
 
 ### Status Effects Explained
 
@@ -129,39 +129,39 @@ The stand's unique mechanic:
 
 ### Caffeine Tolerance System
 
-**Unlocked After**: €50 total spent
+**Unlocked After**: 50 Sovs total spent
 
 **Benefits**:
 - Negative effects reduced by 25%
 - Can order "The Quadruple" without "Heart Racing"
-- Franz acknowledges you as "someone who understands"
+- Ferdinand acknowledges you as "someone who understands"
 - Access to off-menu items
 
 **Tolerance Progression**:
 | Level | Spent | Benefit |
 |-------|-------|---------|
-| Novice | €0 | Full negative effects |
-| Regular | €50 | -25% negative effects |
-| Aficionado | €100 | -40% negative effects |
-| Transcendent | €200 | -50% negative effects, secret menu |
+| Novice | 0 Sovs | Full negative effects |
+| Regular | 50 Sovs | -25% negative effects |
+| Aficionado | 100 Sovs | -40% negative effects |
+| Transcendent | 200 Sovs | -50% negative effects, secret menu |
 
 ### The Order Interaction
 
 **Ordering Process**:
 1. Approach stand
-2. Franz assesses you silently
+2. Ferdinand assesses you silently
 3. Choose drink (or ask questions)
-4. Franz judges your choice
+4. Ferdinand judges your choice
 5. Perfect preparation (you watch)
 6. Drink delivered with appropriate reaction
 
 **Order Responses**:
-| Order | Franz's Reaction | Bonus/Penalty |
+| Order | Ferdinand's Reaction | Bonus/Penalty |
 |-------|------------------|---------------|
 | Ristretto | Approving nod | None |
 | "Strongest thing you have" | Respect | None |
 | Cappuccino | Small sigh | None |
-| "With sugar" | Closes eyes briefly | +€0.50 "processing fee" |
+| "With sugar" | Closes eyes briefly | +1 Sov "processing fee" |
 | "Iced" | Long pause | "It will be done. It should not be done." |
 | "Decaf" | Genuine confusion | "Why are you HERE?" |
 | "Regular coffee" | Existential crisis | 5-minute lecture, then directed elsewhere |
@@ -170,19 +170,19 @@ The stand's unique mechanic:
 
 **The Rush Order**:
 - Order during busy period
-- Franz maintains EXACT quality despite pressure
+- Ferdinand maintains EXACT quality despite pressure
 - Wait time identical (he will not compromise)
 - Attempting to rush him = mild disappointment
 
 **The Compliment**:
-- Complimenting the espresso = Franz softens slightly
+- Complimenting the espresso = Ferdinand softens slightly
 - Knowing coffee terms = respect
 - Discussing extraction times = genuine conversation unlocked
 - He has opinions. Many opinions.
 
 **The Regular**:
 - After tolerance level increases
-- Franz remembers your order
+- Ferdinand remembers your order
 - Preparation begins when he sees you approach
 - Rare smile (blink and miss it)
 
@@ -201,15 +201,15 @@ The stand's unique mechanic:
 - Caption: "No Regrets (Many Regrets)"
 - Requires: Over-Caffeinated status
 
-**"Franz's Approval"** Variant:
-- Franz visible with rare smile
+**"Ferdinand's Approval"** Variant:
+- Ferdinand visible with rare smile
 - You holding proper ristretto
 - Caption: "He Smiled. ONCE."
 - Requires: Transcendent tolerance level
 
 ## NPCs & Characters
 
-### Franz the Focused — The Barista
+### Ferdinand the Focused — The Barista
 - **Role**: Vendor, espresso authority, reluctant educator
 - **Appearance**: Intense eyes, pristine apron, hands that never shake
 - **Personality**: Devoted to craft, bewildered by those who aren't
@@ -227,36 +227,36 @@ The stand's unique mechanic:
 - **Function**: Demonstrate effects, provide ordering context
 - **Dialogue**: 
   - Shaky Writer: "Fourth one today. Can feel my novel writing itself."
-  - Steady Master: *receives drink, nods at Franz, walks away* (no words needed)
+  - Steady Master: *receives drink, nods at Ferdinand, walks away* (no words needed)
 
 ### Bros' Grounds For Concern Reactions
 
 **Approaching**:
 - **Lord Pilsner**: "Oh nice, coffee! I could use a pick-me-up."
-- **Franz**: *already preparing espresso*
+- **Ferdinand**: *already preparing espresso*
 - **Lord Pilsner**: "Uh, I was gonna order—"
-- **Franz**: "You need a doppio. Trust me."
+- **Ferdinand**: "You need a doppio. Trust me."
 - **Lord Pilsner**: "...Okay?"
 
 **First Sip**:
 - **Lord Pilsner**: *drinks* "WHOA. That's... that's INTENSE."
-- **Franz**: "That is CORRECT espresso."
+- **Ferdinand**: "That is CORRECT espresso."
 - **Chadwick**: "Can I get like... a large iced latte with caramel?"
-- **Franz**: *sets down portafilter* *takes deep breath*
+- **Ferdinand**: *sets down portafilter* *takes deep breath*
 - **Chadwick**: "...Is that a no?"
-- **Franz**: "It is a 'I will need a moment.'"
+- **Ferdinand**: "It is a 'I will need a moment.'"
 
 **The Request**:
 - **Bradley**: "A ristretto, single origin if available, no sugar."
-- **Franz**: *stops* *turns* "...You. You are welcome here."
+- **Ferdinand**: *stops* *turns* "...You. You are welcome here."
 - **Lord Pilsner**: "Why does HE get that reaction?!"
-- **Franz**: "Because HE understands."
+- **Ferdinand**: "Because HE understands."
 
 **Post-Quadruple**:
 - **Chadwick**: *vibrating* "I can SEE sounds now."
 - **Lord Pilsner**: *also vibrating* "Is the ground moving or is that me?"
 - **Bradley**: *calmly sipping ristretto*
-- **Franz**: *watching with scientific interest* "Fascinating. The heart rate must be extraordinary."
+- **Ferdinand**: *watching with scientific interest* "Fascinating. The heart rate must be extraordinary."
 
 ## System Integration
 
@@ -268,7 +268,7 @@ The stand's unique mechanic:
 
 ### Quest Integration
 - **"Caffeine Tolerance"**: Build up resistance through purchases
-- **"Franz's Respect"**: Earn maximum approval (achievement)
+- **"Ferdinand's Respect"**: Earn maximum approval (achievement)
 - **"The Limit"**: Consume maximum caffeine, survive (achievement)
 - **"The Intervention"**: Help another NPC who over-caffeinated
 
@@ -278,7 +278,7 @@ The stand's unique mechanic:
 - **"Aficionado"**: Reach second tolerance level
 - **"Transcendent"**: Reach maximum tolerance
 - **"The Limit"**: Achieve Over-Caffeinated status
-- **"Franz's Approval"**: Order perfectly, earn rare smile
+- **"Ferdinand's Approval"**: Order perfectly, earn rare smile
 - **"Espresso Purist"**: Never order milk drinks
 
 ## Audio Design
@@ -290,7 +290,7 @@ The stand's unique mechanic:
 - **Comedy**: Heartbeat sound when Heart Racing active
 
 ### Character Audio
-- **Franz**: Precise, measured speech, occasional passion about beans
+- **Ferdinand**: Precise, measured speech, occasional passion about beans
 - **Espresso sounds**: Satisfying extraction, perfect pour
 - **Caffeine effects**: Increasing tempo in UI sounds when buffed
 
@@ -299,7 +299,7 @@ The stand's unique mechanic:
 ### Technical Requirements
 - **Asset List**:
   - Espresso stand with machine
-  - Franz sprite (expression range)
+  - Ferdinand sprite (expression range)
   - Steam effects
   - Cup variants
 - **Animation Requirements**:
@@ -332,32 +332,44 @@ The stand's unique mechanic:
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (4 PNGs)
-- espresso_stand.png - 384x384 - Main stand with machine
-- steam_effects.png - 128x256 - Animated steam
-- cup_display.png - 96x96 - Tiny cup arrangement
-- kaffeehausrow_backdrop.png - 512x256 - Street setting
+> **Authority: `PNG_Assets/Grounds_For_Concern_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (4 PNGs)
-- franz_focused.png - 64x96 - Barista (neutral intensity)
-- franz_approval.png - 64x96 - Rare satisfaction
-- franz_disappointment.png - 64x96 - Milk drink reaction
-- franz_crisis.png - 64x96 - "Regular coffee" request
+### Required PNG Files (7 sheets)
 
-### UI/Item Sprites (12 PNGs)
-- ristretto.png - 32x32 - Tiny cup
-- espresso.png - 32x32 - Standard cup
-- doppio.png - 32x48 - Double cup
-- triplo.png - 32x48 - Triple warning
-- the_quadruple.png - 48x48 - Maximum caffeine
-- cappuccino.png - 48x48 - Milk drink
-- bean_bag.png - 48x48 - Portable supply
-- franzs_reserve.png - 32x48 - Special daily
-- the_intervention.png - 32x32 - Emergency decaf
-- shaky_status.png - 32x32 - Debuff icon
-- heart_racing.png - 32x32 - Debuff icon
-- tolerance_badge.png - 32x32 - Progress indicator
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | grounds_concern_tileset.png | 1024x512 |
+| 2 | grounds_concern_machine.png | 512x256 |
+| 3 | ferdinand_focused.png | 384x288 |
+| 4 | grounds_concern_npcs.png | 384x192 |
+| 5 | grounds_concern_drinks.png | 256x256 |
+| 6 | grounds_concern_effects.png | 256x192 |
+| 7 | grounds_concern_ui.png | 256x256 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/Grounds_For_Concern_PNG_Assets.md`.
+
+- `espresso_stand.png`
+- `steam_effects.png`
+- `cup_display.png`
+- `kaffeehausrow_backdrop.png`
+- `ferdinand_approval.png`
+- `ferdinand_disappointment.png`
+- `ferdinand_crisis.png`
+- `ristretto.png`
+- `espresso.png`
+- `doppio.png`
+- `triplo.png`
+- `the_quadruple.png`
+- `cappuccino.png`
+- `bean_bag.png`
+- `franzs_reserve.png`
+- `the_intervention.png`
+- `shaky_status.png`
+- `heart_racing.png`
+- `tolerance_badge.png`
 
 ---
 
-*Grounds For Concern: Where the espresso is perfect, the judgment is swift, and the shaking means it's working. Order strong. Drink fast. Vibrate accordingly. Franz believes in you. Franz also believes in a 23-second extraction time. Don't make him choose.*
+*Grounds For Concern: Where the espresso is perfect, the judgment is swift, and the shaking means it's working. Order strong. Drink fast. Vibrate accordingly. Ferdinand believes in you. Ferdinand also believes in a 23-second extraction time. Don't make him choose.*

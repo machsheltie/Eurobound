@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24 hours (the wall never sleeps)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: Coins (€2-4 per item) — the machines don't take card, the counter does
+- **Item Requirements**: Coins (2 Sovs-4 per item) — the machines don't take card, the counter does
 - **Previous Location Requirements**: None (FEBO finds you when you need it)
 - **Special Conditions**: Peak hours 2-4 AM, line forms, judgment suspended
 
@@ -100,7 +100,7 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Enabling poor decisions by making them available 24 hours, coin-operated
 - **City-Specific Comedy Operations**: The munchies pipeline from De Groene Gids to FEBO is REAL
-- **Buffoon Exploitation**: Bros discover that €3 FEBO is better value than €18 pancakes
+- **Buffoon Exploitation**: Bros discover that 3 Sovs FEBO is better value than 18 Sovs pancakes
 - **Comedy of Errors**: First-timer confusion at the wall, wrong item selection, kroket temperature surprise
 - **Consequence System**: FEBO doesn't judge, but your stomach might (food effects vary)
 
@@ -124,24 +124,24 @@
 ### The Wall Interaction System
 - **Approach**: Walk up to the wall, examine options
 - **Selection**: Choose compartment (each shows contents through glass)
-- **Payment**: Insert coins (€2-4 depending on item)
+- **Payment**: Insert coins (2 Sovs-4 depending on item)
 - **Acquisition**: Turn handle, door opens, item is yours
 - **No Returns**: What you take is what you get, the wall has spoken
 
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Description |
 |------|-------|-----------|---------------|-------------|
-| Kroket | €2.50 | +20 HP | Warm Inside status | Deep-fried ragout in crispy coating, the classic |
-| Frikandel | €2.00 | +15 HP | None | Mystery meat tube, don't ask, just eat |
-| Kaassouflé | €3.00 | +25 HP | Cheese Contentment | Deep-fried cheese in pastry, happiness |
-| Bamischijf | €2.50 | +20 HP | Exotic Confusion | Fried noodle disc, cross-cultural comfort |
-| Berehap | €3.50 | +30 HP | Protein Boost | Satay meat on a stick, substantial |
-| Mexicano | €2.50 | +20 HP, slight -HP delayed | Spicy Surprise | "Spicy" by Dutch standards |
-| Hamburger | €3.50 | +25 HP | Familiarity | When you need something recognizable |
-| Cheeseburger | €4.00 | +30 HP | Cheese Contentment | The above, but better |
-| Satéschotel | €5.00 | +40 HP, +SP | Full Meal status | The commitment option |
-| Frikandel Speciaal | €3.00 | +25 HP | The Works | Frikandel with onions and sauce |
-| Mystery Item | €2.50 | ??? HP | ??? status | Changes daily, fate decides |
+| Kroket | 3 Sovs | +20 HP | Warm Inside status | Deep-fried ragout in crispy coating, the classic |
+| Frikandel | 2 Sovs | +15 HP | None | Mystery meat tube, don't ask, just eat |
+| Kaassouflé | 3 Sovs | +25 HP | Cheese Contentment | Deep-fried cheese in pastry, happiness |
+| Bamischijf | 3 Sovs | +20 HP | Exotic Confusion | Fried noodle disc, cross-cultural comfort |
+| Berehap | 4 Sovs | +30 HP | Protein Boost | Satay meat on a stick, substantial |
+| Mexicano | 3 Sovs | +20 HP, slight -HP delayed | Spicy Surprise | "Spicy" by Dutch standards |
+| Hamburger | 4 Sovs | +25 HP | Familiarity | When you need something recognizable |
+| Cheeseburger | 4 Sovs | +30 HP | Cheese Contentment | The above, but better |
+| Satéschotel | 5 Sovs | +40 HP, +SP | Full Meal status | The commitment option |
+| Frikandel Speciaal | 3 Sovs | +25 HP | The Works | Frikandel with onions and sauce |
+| Mystery Item | 3 Sovs | ??? HP | ??? status | Changes daily, fate decides |
 
 ### The "Mystery Item" System
 - **Rotation**: Different item each in-game day
@@ -174,7 +174,7 @@
 ### The Munchies Pipeline
 - **Trigger**: Visiting FEBO after De Groene Gids within 2 hours
 - **Effect**: All food HP restoration +50%
-- **Dialogue**: "This is the best thing I've ever eaten" (it's a €2 kroket)
+- **Dialogue**: "This is the best thing I've ever eaten" (it's a 2 Sovs kroket)
 - **Explanation**: The Space Cake Effect makes everything taste better
 - **Mechanical Reality**: Bros gain more HP from FEBO when properly... prepared
 
@@ -197,13 +197,13 @@
 - **Background**: Second job, prefers the late shift, has seen everything
 - **Demeanor**: Not unfriendly, just efficient beyond the need for conversation
 - **Dialogue**:
-  - "Coins? Two euros fifty. There."
+  - "Coins? Two Sovs fifty. There."
   - "The wall works. Insert coins. Turn handle. Easy."
   - *3 AM rush* "Kroket is that one. Frikandel is that one. Yes, that's meat. Probably."
   - "Mystery item today is... *checks* ...experimental. Your choice."
   - *to Regular* "The usual?" *already restocking their slot*
 
-**Kitchen Worker Henk**
+**Kitchen Worker Theo**
 - **Role**: Frying, restocking, keeping the wall alive
 - **Appearance**: Kitchen whites, oil-stained apron, perpetual motion
 - **Visibility**: Glimpsed through service window, never stops moving
@@ -252,7 +252,7 @@
 - **Lord Pilsner** (first visit): "It's a VENDING MACHINE. For HOT FOOD. This is INNOVATION."
 - **Lord Pilsner** (3 AM): "The kroket understands me. The kroket GETS it."
 - **Chadwick**: "I'm filming the wall. The WALL itself is content. The wall is ART."
-- **Chadwick** (eating): "This is better than €18 pancakes. I need to DOCUMENT this realization."
+- **Chadwick** (eating): "This is better than 18 Sovs pancakes. I need to DOCUMENT this realization."
 - **Bradley**: "FEBO doesn't judge."
 - **Bradley** (mystery item): "I chose the mystery. I regret nothing."
 
@@ -315,7 +315,7 @@
   - Kitchen glimpse through window
   - Exterior yellow facade
   - Crowd NPCs for various time periods
-  - Staff sprites (Anouk, Henk glimpse)
+  - Staff sprites (Anouk, Theo glimpse)
   - Customer sprites (Club Refugee, Shift Worker, First-Timer, Philosopher, Regular)
   - Food item sprites for each compartment
 - **Animation Requirements**:
@@ -387,7 +387,7 @@
 
 ### Character Sprites (10 PNGs)
 - anouk_counter.png - 64x96 - Efficient, minimal
-- henk_kitchen_glimpse.png - 64x96 - Perpetual motion
+- theo_kitchen_glimpse.png - 64x96 - Perpetual motion
 - club_refugee.png - 64x96 - Makeup situation, one shoe
 - shift_worker.png - 64x96 - In and out, 90 seconds
 - first_timer_tourist.png - 64x96 - Photographing the wall

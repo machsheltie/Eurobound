@@ -116,7 +116,7 @@
       "file": "npc_willem_busker.png",
       "dimensions": {"width": 192, "height": 256},
       "sprite_size": {"width": 48, "height": 64},
-      "character_notes": "Ancient accordion, worn clothing from indeterminate decade, may be a ghost, hat with exactly €2.47",
+      "character_notes": "Ancient accordion, worn clothing from indeterminate decade, may be a ghost, hat with exactly 2 Sovs",
       "animations": {
         "playing_accordion": {"row": 0, "frames": 4, "fps": 2},
         "looking_up_mysterious": {"row": 1, "frames": 2, "fps": 0.5},

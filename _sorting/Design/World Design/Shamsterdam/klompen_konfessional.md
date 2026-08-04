@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 8 PM (tourist shopping hours)
 - **Stat Requirements**: None (the clogs welcome all feet, briefly)
-- **Item Requirements**: Gold for purchases (€15-80), willingness to accept truth
+- **Item Requirements**: Gold for purchases (15 Sovs-80), willingness to accept truth
 - **Previous Location Requirements**: None (the clogs call to all tourists)
 - **Special Conditions**: "Try them on" station available, medical waiver not technically required
 
@@ -50,19 +50,19 @@
 - Natural wood, classic designs
 - "As worn by Dutch farmers" (in the 1800s)
 - Historical accuracy, modern uselessness
-- €25-40 range
+- 25 Sovs-40 range
 
 **The "Artistic" Section**
 - Hand-painted windmills, tulips, Delft blue
 - Instagram-ready, foot-ready: debatable
 - These are clearly decorations
-- €35-60 range
+- 35 Sovs-60 range
 
 **The "Wearable" Section (Allegedly)**
 - Modern comfort modifications
 - Rubber soles added, padding inserted
 - "You could technically walk in these"
-- €50-80 range
+- 50 Sovs-80 range
 - Staff maintain straight faces
 
 **The Try-On Station**
@@ -74,7 +74,7 @@
 **The Miniatures Section**
 - Tiny decorative clogs, keychains, magnets
 - The honest purchase: no pretense of wearing
-- €5-15 range
+- 5 Sovs-15 range
 - Best-seller by volume
 
 ### The Clog-Making "Demonstration"
@@ -120,7 +120,7 @@ The staff know. The tourists know. The transaction happens anyway. This is the c
 - **Sensitivity Considerations**: Respects genuine clog craftsmanship, satirizes tourist purchasing logic
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Selling €40 of wood as "wearable footwear" when everyone knows the truth
+- **Primary Vice**: Selling 40 Sovs of wood as "wearable footwear" when everyone knows the truth
 - **City-Specific Comedy Operations**: The try-on station exists to create the illusion of function
 - **Buffoon Exploitation**: Bros convinced they'll "definitely wear these at home"
 - **Comedy of Errors**: The 10-second walk attempt, the immediate blister formation, the quiet shelf placement
@@ -137,7 +137,7 @@ The staff know. The tourists know. The transaction happens anyway. This is the c
 - Wood is not a comfortable footwear material
 - Their regular shoes exist for reasons
 - The "wearable" section is suspiciously small
-- Nobody in Amsterdam is actually wearing clogs
+- Nobody in Shamsterdam is actually wearing clogs
 - The shop sells more miniatures than full-size (telling)
 
 **The test**: Try walking 10 steps. Just 10 steps.
@@ -159,16 +159,16 @@ The staff know. The tourists know. The transaction happens anyway. This is the c
 ### Product Inventory
 | Item | Price | Category | Wearability | Actual Fate |
 |------|-------|----------|-------------|-------------|
-| Traditional Natural Clog | €25 | Classic | Theoretical | Shelf, 94% |
-| Hand-Painted Windmill Clog | €45 | Artistic | None | Wall mount, 89% |
-| Canal Blue Decorative | €55 | Premium | Display Only | Curio cabinet, 91% |
-| "Comfort" Modified Clog | €65 | Wearable | Alleged | One wearing, then shelf, 88% |
-| Garden Clog (Rubber) | €35 | Practical | Actual | Actual garden use, 40% |
-| Baby Clog Pair | €20 | Novelty | N/A (baby) | Photo prop → storage, 97% |
-| Miniature Keychain | €8 | Honest | N/A | Keys, 100% (finally honest) |
-| Miniature Magnet | €5 | Honest | N/A | Fridge, 100% (honest) |
-| Giant Display Clog | €80 | Statement | Impossible | Conversation piece, unclear |
-| Clog Painting Kit | €30 | Activity | N/A | Never completed, 85% |
+| Traditional Natural Clog | 25 Sovs | Classic | Theoretical | Shelf, 94% |
+| Hand-Painted Windmill Clog | 45 Sovs | Artistic | None | Wall mount, 89% |
+| Canal Blue Decorative | 55 Sovs | Premium | Display Only | Curio cabinet, 91% |
+| "Comfort" Modified Clog | 65 Sovs | Wearable | Alleged | One wearing, then shelf, 88% |
+| Garden Clog (Rubber) | 35 Sovs | Practical | Actual | Actual garden use, 40% |
+| Baby Clog Pair | 20 Sovs | Novelty | N/A (baby) | Photo prop → storage, 97% |
+| Miniature Keychain | 8 Sovs | Honest | N/A | Keys, 100% (finally honest) |
+| Miniature Magnet | 5 Sovs | Honest | N/A | Fridge, 100% (honest) |
+| Giant Display Clog | 80 Sovs | Statement | Impossible | Conversation piece, unclear |
+| Clog Painting Kit | 30 Sovs | Activity | N/A | Never completed, 85% |
 
 ### The Try-On Experience
 **The Station**:
@@ -249,7 +249,7 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
   - "The shape hasn't changed. The purpose has. That's not the clog's fault."
   - *after tourist try-on failure* "The clogs work perfectly. The feet are the problem."
 
-**Associate Bram**
+**Associate Jeroen**
 - **Role**: Floor sales, try-on assistance, witness to suffering
 - **Appearance**: 20s Dutch man, suspiciously comfortable regular shoes, patient expression
 - **Background**: Summer job that became career, has developed clog philosophy
@@ -365,7 +365,7 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
   - Try-on station with bench and mirror
   - Craftsman demonstration area
   - Miniatures section
-  - Hendrika, Pieter, and Bram sprites
+  - Hendrika, Pieter, and Jeroen sprites
   - Customer NPC sprites
   - Clog item sprites (various types)
   - Walking attempt animation
@@ -440,7 +440,7 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
 - hendrika_presenting.png - 64x96x2 - Clog showcase
 - pieter_craftsman.png - 64x96 - Wood shavings aesthetic
 - pieter_carving.png - 64x96x4 - Demonstration animation
-- bram_associate.png - 64x96 - Patient, seen things
+- jeroen_associate.png - 64x96 - Patient, seen things
 - committed_tourist.png - 64x96 - Determination, future regret
 - honest_tourist.png - 64x96 - Miniatures only
 - child_victim.png - 48x72 - Truth speaker

@@ -80,7 +80,7 @@
     "prop_storage_collision": {
       "event_id": "props_destruction",
       "duration_seconds": 6,
-      "damage_euro": 500,
+      "damage_sov": 500,
       "sequence": [
         {
           "time": 0,
@@ -97,7 +97,7 @@
           "time": 1,
           "action": "damage_popup",
           "item": "Papageno Bird Head",
-          "amount_euro": 150,
+          "amount_sov": 150,
           "sfx": "register_ching"
         },
         {
@@ -115,7 +115,7 @@
           "time": 2.5,
           "action": "damage_popup",
           "item": "Magic Flute Prop",
-          "amount_euro": 200,
+          "amount_sov": 200,
           "sfx": "register_ching"
         },
         {
@@ -147,7 +147,7 @@
     "costume_tangle": {
       "event_id": "costume_destruction",
       "duration_seconds": 5,
-      "damage_euro": 200,
+      "damage_sov": 200,
       "sequence": [
         {
           "time": 0,
@@ -170,7 +170,7 @@
           "time": 1.5,
           "action": "damage_popup",
           "item": "Queen of the Night Gown",
-          "amount_euro": 200,
+          "amount_sov": 200,
           "sfx": "register_ching"
         },
         {
@@ -271,7 +271,7 @@
     "stage_incursion": {
       "event_id": "gustav_on_stage",
       "duration_seconds": 15,
-      "damage_euro": 800,
+      "damage_sov": 800,
       "condition": "not_papageno_path",
       "sequence": [
         {
@@ -336,7 +336,7 @@
           "time": 7,
           "action": "damage_popup",
           "item": "Mechanical Serpent",
-          "amount_euro": 800,
+          "amount_sov": 800,
           "sfx": "register_ching"
         },
         {
@@ -364,7 +364,7 @@
           "time": 11,
           "action": "damage_popup",
           "item": "Papageno's Forest Trees (x2)",
-          "amount_euro": 250,
+          "amount_sov": 250,
           "sfx": "register_ching"
         },
         {
@@ -392,7 +392,7 @@
     "backdrop_catastrophe": {
       "event_id": "backdrop_tear",
       "duration_seconds": 8,
-      "damage_euro": 400,
+      "damage_sov": 400,
       "condition": "not_papageno_path",
       "sequence": [
         {
@@ -432,7 +432,7 @@
           "time": 4,
           "action": "damage_popup",
           "item": "Starry Night Backdrop",
-          "amount_euro": 400,
+          "amount_sov": 400,
           "sfx": "register_ching"
         },
         {
@@ -520,7 +520,7 @@
         {
           "time": 12,
           "action": "transition",
-          "note": "Backdrop remains intact, damage reduced by €400"
+          "note": "Backdrop remains intact, damage reduced by 400 Sovs"
         }
       ]
     },
@@ -571,7 +571,7 @@
           "time": 9,
           "action": "dialogue",
           "speaker": "prima_donna_adelheid",
-          "text": "I require €500 for therapeutic vocal rest. The TRAUMA.",
+          "text": "I require 500 Sovs for therapeutic vocal rest. The TRAUMA.",
           "emotion": "dramatic_injury"
         },
         {
@@ -585,7 +585,7 @@
             "backdrop": 400,
             "note": "Backdrop 0 if Papageno path"
           },
-          "total_display": "€2,000",
+          "total_display": "2,000 Sovs",
           "sfx": "register_ching_final"
         },
         {
@@ -600,7 +600,7 @@
             },
             {
               "id": "negotiate_prima_donna",
-              "text": "That €500 seems excessive... (Charm 4)",
+              "text": "That 500 Sovs seems excessive... (Charm 4)",
               "stat_check": {"charm": 4},
               "result": "prima_donna_reduced"
             },
@@ -680,7 +680,7 @@
           "time": 5,
           "action": "quest_update",
           "phase": "stadtpark_phase_04",
-          "damage_running_total": "€2,340_or_€1,940_papageno"
+          "damage_running_total": "2,340 Sovs_or_1,940 Sovs_papageno"
         }
       ]
     }
@@ -738,7 +738,7 @@
       "trigger": "return_to_opera_house",
       "condition": "backstage_debt_active",
       "event": {
-        "npc": "opera_usher_gerhardt",
+        "npc": "sinfonia_npc_opera_usher_01",
         "dialogue": "You are the horse people. You may not enter. Not tonight. Not ever.",
         "blocks_entry": ["auditorium", "backstage"]
       }
@@ -748,7 +748,7 @@
       "trigger": "return_to_opera_house",
       "condition": "backstage_debt_cleared",
       "event": {
-        "npc": "opera_usher_gerhardt",
+        "npc": "sinfonia_npc_opera_usher_01",
         "dialogue": "Hmph. Your debt is... settled. *grudgingly* The lobby is open to you.",
         "access": "normal_minus_backstage"
       }

@@ -1,7 +1,7 @@
 # The Awkward Truffle - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Awkward Truffle is a tourist-district boutique where award-winning Belgian chocolate craftsmanship meets full anatomical accuracy — a shop whose three-zone layout (respectable front, suggestive middle, committed back) mirrors every customer's journey from "I'll just look" to "I'll take the party platter." This document specifies every PNG asset for the shop: zone backdrops, exterior and display fixtures, Sophie and Bas NPC sheets, the customer cast, the tastefully-abstracted product line, and effects/UI including the "Complicated Feelings" status. Its satirical essence in a sentence: complete professionalism applied to ridiculous products, and everyone eventually eats their "gag gift" alone.
+The Awkward Truffle is a tourist-district boutique where award-winning Belgian chocolate craftsmanship meets full anatomical accuracy — a shop whose three-zone layout (respectable front, suggestive middle, committed back) mirrors every customer's journey from "I'll just look" to "I'll take the party platter." This document specifies every PNG asset for the shop: zone backdrops, exterior and display fixtures, Sophie and Niels NPC sheets, the customer cast, the tastefully-abstracted product line, and effects/UI including the "Complicated Feelings" status. Its satirical essence in a sentence: complete professionalism applied to ridiculous products, and everyone eventually eats their "gag gift" alone.
 
 **Location ID:** `shamsterdam_tourist_awkward_truffle_01`
 **Theme:** The "it's a gag gift" denial; bachelor/bachelorette souvenir culture; Belgian chocolate artistry colliding with Shamsterdam's commerce of the body — body-positive framing, chocolate > shame
@@ -84,7 +84,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | Award plaque wall strip | (0, 576) | 256x96 | "Belgian Master Chocolatier — Award Winning" |
 | Gift wrap options rack | (256, 576) | 192x96 | Standard/discreet/festive/bold/party regalia rolls |
 | Window display (interior side) | (448, 576) | 192x128 | The respectable decoys |
-| Price placard set (5) | (640, 576) | 160x96 (5x 32x96) | €8-€120 range markers |
+| Price placard set (5) | (640, 576) | 160x96 (5x 32x96) | 8-120 Sovs range markers |
 | Shop shelf backing (tileable) | (800, 576) | 224x128 | Cream shelving fill tile |
 
 ### Technical Notes:
@@ -94,7 +94,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 
 ---
 
-## 👩‍🍳 Sprite Sheet 3: Sophie & Bas
+## 👩‍🍳 Sprite Sheet 3: Sophie & Niels
 **File:** `npc_sophie_bas.png`
 **Dimensions:** 320x480 pixels
 **Sprite Size:** 64x96 pixels (5 columns x 5 rows)
@@ -109,7 +109,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | Row 2: Gift wrapping (2 frames) | (0, 192) | 128x96 | "Discreet or... declarative?" |
 | Row 2: Commission consideration (1 frame) | (128, 192) | 64x96 | "We've made stranger. We've made MUCH stranger." |
 
-### Assistant Bas (rows 3-4):
+### Assistant Niels (rows 3-4):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Row 3: Idle with smirk (2 frames) | (0, 288) | 128x96 | Bow tie professional, permanent slight smirk (human) |
@@ -119,7 +119,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 
 ### Technical Notes:
 - Sophie's crafting loop plays continuously behind the crafting window glass; her face NEVER breaks composure in any frame
-- Bas's smirk is 2 pixels of mouth curve — restraint is the joke
+- Niels's smirk is 2 pixels of mouth curve — restraint is the joke
 - Wrapping sequence frames are shared across all five wrap styles via ribbon palette swap
 
 ---
@@ -165,17 +165,17 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 ### Products (Case Stock & Inventory Icons):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Classic Truffle Box (6) | (0, 0) | 48x32 | €12 — "for when you're with family" |
-| Abstract "Art" Piece | (48, 0) | 32x32 | €8 dark — "open to interpretation" |
-| The Male Classic (abstracted) | (80, 0) | 32x48 | €15 milk — bestseller, silhouette form |
-| The Male Detailed (abstracted) | (112, 0) | 32x48 | €25 Belgian dark — "for the discerning customer" |
-| The Female Classic (abstracted) | (144, 0) | 32x48 | €15 white — equal opportunity awkwardness |
-| The Female Detailed (abstracted) | (176, 0) | 32x48 | €25 Belgian dark — craftsmanship respects no gender |
-| The Couples' Set | (208, 0) | 64x48 | €35 paired gift box |
-| Bachelor Party Platter | (272, 0) | 96x64 | €50 bulk — "make it weird for 8-12 people" |
-| Bachelorette Party Platter | (368, 0) | 96x64 | €50 matching energy, different shapes |
-| The Full Collection box | (0, 64) | 128x96 | €120 — "You're committed. We respect that." |
-| Custom Commission (wrapped mystery) | (128, 64) | 48x64 | €75+ — fully wrapped, shape implied only |
+| Classic Truffle Box (6) | (0, 0) | 48x32 | 12 Sovs — "for when you're with family" |
+| Abstract "Art" Piece | (48, 0) | 32x32 | 8 Sovs dark — "open to interpretation" |
+| The Male Classic (abstracted) | (80, 0) | 32x48 | 15 Sovs milk — bestseller, silhouette form |
+| The Male Detailed (abstracted) | (112, 0) | 32x48 | 25 Sovs Belgian dark — "for the discerning customer" |
+| The Female Classic (abstracted) | (144, 0) | 32x48 | 15 Sovs white — equal opportunity awkwardness |
+| The Female Detailed (abstracted) | (176, 0) | 32x48 | 25 Sovs Belgian dark — craftsmanship respects no gender |
+| The Couples' Set | (208, 0) | 64x48 | 35 Sovs paired gift box |
+| Bachelor Party Platter | (272, 0) | 96x64 | 50 Sovs bulk — "make it weird for 8-12 people" |
+| Bachelorette Party Platter | (368, 0) | 96x64 | 50 Sovs matching energy, different shapes |
+| The Full Collection box | (0, 64) | 128x96 | 120 Sovs — "You're committed. We respect that." |
+| Custom Commission (wrapped mystery) | (128, 64) | 48x64 | 75 Sovs+ — fully wrapped, shape implied only |
 | Gift-wrapped chocolate (5 style variants) | (176, 64) | 240x48 (5x 48x48) | Standard/discreet/festive/bold/party regalia |
 | Branded shopping bag | (416, 64) | 48x64 | Tastefully branded, clutched at exit |
 | Half-eaten anatomical (abstracted) | (176, 112) | 32x48 | The "someone always eats theirs" evidence sprite |
@@ -316,7 +316,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | truffle_environment | zone backdrops, fixtures | 2048x2048 |
-| truffle_characters | Sophie/Bas, customers | 1024x512 |
+| truffle_characters | Sophie/Niels, customers | 1024x512 |
 | truffle_objects | products, effects, UI | 512x512 |
 
 *(Max atlas size 2048x2048 for mobile GPU compatibility.)*
@@ -329,7 +329,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | Low | Static crafting window, simplified case displays, 1 customer (per profile platform notes) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile budget)
+- **Target FPS:** 60 (per location profile budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 32 MB maximum
 - **Particle Limit:** 10 (dust, warmth)
@@ -345,7 +345,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
-- Node types: Sprite2D backdrop panels + fixtures, AnimatedSprite2D (Sophie, Bas, customers), CPUParticles2D (dust — not GPU), CanvasLayer (browser UI, vignette overlay), Area2D zone-threshold triggers
+- Node types: Sprite2D backdrop panels + fixtures, AnimatedSprite2D (Sophie, Niels, customers), CPUParticles2D (dust — not GPU), CanvasLayer (browser UI, vignette overlay), Area2D zone-threshold triggers
 - Special systems: zone-progression tracker (drives Bravado checks and achievement pips), "gift vs kept" ratio ledger with epilogue reveal hook, consumption tracker ("who ate theirs first"), Complicated Feelings status timer, Full Collection shop-state swap
 
 ### Audio Sync Points:
@@ -369,7 +369,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 |--------------------|-------------------|-------------------|
 | The Tolerance Hostel | Branded shopping bag visible in kitchen scene | Bag sprite reused as prop in hostel kitchen |
 | Condomerie Het Gulden Vlies | Same-district awkwardness energy | Street adjacency, dialogue callbacks |
-| Venustempel | Museum vs. retail contrast callbacks | Dialogue only; no shared sprites |
+| Venustempel (Museum Mile) | Museum vs. retail contrast callbacks; Sophie's tempering critique of De Grote Fontein; same-day comparison dialogue | Dialogue only; no shared sprites. The Venustempel's Cacaogalerij and gift-shop chocolate line are the direct commercial rival — their pieces are authored on the Venustempel sheets, never reused here. |
 | FEBO Automat | Post-chocolate late-night comparison | Dialogue only |
 | Stroopwafel Cart | Comfort-food contrast | Status interaction (Comfort vs Complicated Feelings) |
 
@@ -391,7 +391,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 
 ### Character Integration Notes:
 - Sophie never reacts to product shapes in any frame — her composure is load-bearing for the entire satire
-- Bas's 2-pixel smirk is the only crack in the professionalism, and it's aimed at customers, never products
+- Niels's 2-pixel smirk is the only crack in the professionalism, and it's aimed at customers, never products
 - Customers carry the embarrassment so the staff never have to; the shop itself remains serene
 - Bachelor/bachelorette groups get collective-confidence poses — safety in numbers, rendered literally
 
@@ -402,7 +402,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 ### Screenshot-Worthy Moments:
 1. **The Zone 2 "wait—" moment** — abstract shapes mid-realization, perfectly ambiguous
 2. **Sophie crafting through the window** — total artisan seriousness, unphotographable subject
-3. **The Full Collection purchase** — €120 commitment with staff recognition
+3. **The Full Collection purchase** — 120 Sovs commitment with staff recognition
 4. **The wrap-style menu** — "Discreet or... declarative?" as a UI screenshot
 5. **Complicated Feelings icon** appearing over a character alone at night
 
@@ -485,10 +485,10 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | World Consistency (no real city names) | ✅ | Shamsterdam tourist district only; "trained in Brussels" is NPC backstory flavor, no real-city location |
 | Cultural Specificity | ✅ | Belgian chocolate tradition meets Shamsterdam's openness economy |
 | Satirical Targets Appropriate | ✅ | Gag-gift denial and bachelor party culture — body-positive framing, never body negativity |
-| Seedy Underbelly Present | ✅ | €15 of chocolate sold for €35 because of the shape; shape-based markup economy |
+| Seedy Underbelly Present | ✅ | 15 Sovs of chocolate sold for 35 Sovs because of the shape; shape-based markup economy |
 | Gameplay Value Established | ✅ | Zone progression, consumption/status system, gift ledger, achievement track, Bravado checks |
 | Technical Feasibility | ✅ | Single-scroll scene, static-crafting LOD, abstraction-friendly sprite sizes documented |
-| Mobile Performance Budget | ✅ | 45 FPS, ≤14 draw calls, ≤32 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, ≤14 draw calls, ≤32 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px touch zones |
 | No Crypto Elements | ✅ | Pure artisan chocolate awkwardness (profile-confirmed) |
 | Social Media Integration | ✅ | 5 screenshot moments identified; wrap-menu UI composed as shareable frame |

@@ -113,7 +113,7 @@ Bravado System (Publandia Specific)
         ◦ 40-79: "Regular Joe" (normal interactions) 
         ◦ 20-39: "Tourist Territory" (higher prices, mockery from locals) 
         ◦ 0-19: "Persona Non Grata" (banned from establishments, hostile NPCs) 
-Dublin-Specific Status Effects
+Publandia-Specific Status Effects
     • Craic'd Up: +Charisma, +Comedy timing (from good pub banter) 
     • Absolutely Scuttered: -All stats, hilarious dialogue options unlock 
     • Pub Regular: +Discounts at establishments you frequent 

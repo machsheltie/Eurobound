@@ -2,7 +2,7 @@
   "location_id": "sinfonia_operahouse_blacktie_backroom_01",
 
   "house_economy": {
-    "currency": "euro",
+    "currency": "sovs",
     "chip_system": {
       "item_id": "house_chips",
       "display_name": "House Chips",
@@ -18,7 +18,7 @@
       "item_id": "collateral_receipt",
       "display_name": "Collateral Receipt",
       "description": "Thin card stock, house crest, the amount inked by hand. Spike hole at the top edge.",
-      "amount_euro": 500,
+      "amount_sov": 500,
       "states": ["issued", "redeemed", "forfeit"],
       "quest_item": false,
       "sprite": "collateral_receipt.png"
@@ -56,9 +56,9 @@
         "category": "quest_item",
         "consumable": false,
         "description": "A scratched aluminium token stamped with a low-res animated GIF. Smells faintly of Kahlúa and fresh-cut grass.",
-        "value_at_bank_euro": 0,
-        "value_at_exchange_euro": 0,
-        "value_at_legitimate_vendor_euro": 0,
+        "value_at_bank_sov": 0,
+        "value_at_exchange_sov": 0,
+        "value_at_legitimate_vendor_sov": 0,
         "advances_quest": {
           "quest_file": "Design/Quests/fratbronft.md",
           "leg": "sinfonia",
@@ -81,7 +81,7 @@
       "description": "Black card, gold engraving, no name printed on it.",
       "effect": {
         "grants": "backroom_entry_without_black_tie_attire",
-        "still_requires": ["stat_check", "collateral_500_euro"]
+        "still_requires": ["stat_check", "collateral_500_sov"]
       },
       "acquisition": "quest_reward",
       "vendor_stock": false,
@@ -109,7 +109,7 @@
         "item_id": "chip_stash",
         "display_name": "Herr Falsch's Chip Stash",
         "type": "currency",
-        "amount_euro": 2000
+        "amount_sov": 2000
       },
       {
         "item_id": "item_shark_fin",
@@ -151,7 +151,7 @@
     {
       "item_id": "chip_palming",
       "display_name": "Palmed Chips",
-      "effect": {"steal_per_attempt_euro": 50, "detection": "visible_tells"}
+      "effect": {"steal_per_attempt_sov": 50, "detection": "visible_tells"}
     }
   ],
 
@@ -160,7 +160,7 @@
       "item_id": "high_roller_badge",
       "display_name": "High Roller Badge",
       "type": "status_indicator",
-      "granted_by": "total_winnings_1000_euro",
+      "granted_by": "total_winnings_1000_sov",
       "effect": {"grants": "high_stakes_salon_access", "house_edge_reduction": "per_game_table"},
       "sprite": "high_roller_badge.png"
     },

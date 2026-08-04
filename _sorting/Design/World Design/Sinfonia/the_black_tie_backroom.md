@@ -23,7 +23,7 @@
   - Backstage labyrinth exit (The Bassline Opera House)
   - OR hint from Café Existenz regulars
   - OR overheard gossip from Kaffeehaus Row
-- **Special Conditions**: Gold minimum of €500 to enter (they "hold" it as collateral)
+- **Special Conditions**: Gold minimum of 500 Sovs to enter (they "hold" it as collateral)
 
 ### The Hidden Entrance
 The Backroom's entrance is a layered secret:
@@ -38,7 +38,7 @@ The Backroom's entrance is a layered secret:
 - **Failure States**: 
   - "Cleaned Out" — lose all gold, ejected with Embarrassed status
   - "Banned" — cheat and get caught, 24-hour lockout
-- **Progressive Unlocks**: "High Roller" status after winning €1000+ total (better tables)
+- **Progressive Unlocks**: "High Roller" status after winning 1000 Sovs+ total (better tables)
 
 ## Visual Design
 ### The Hidden Entrance
@@ -69,7 +69,7 @@ The Backroom's entrance is a layered secret:
 - Zone ID: `aarons_corner_table` — a felt-covered corner table set apart from the open floor's gaming tables
 - **Not a playable table.** Deliberately built to read as its own thing at a glance: different felt tone, its own low pendant lamp instead of the floor's shared table lights, no house chip rail, no dealer plaque, no bet-placement markings. The room's real poker, roulette, and blackjack tables keep the standard house dressing; this one never does. The two must never be confused
 - Occupied by Aaron the Unflappable (`sinfonia_npc_aaron_unflappable_01`) — **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`
-- **Scene trigger**: approaching the table with entry conditions met fires `blacktie_event_kings_were_humming_01`, one time only. The scene is spectator-only; no betting interface opens here, ever. Stake is the door's €500 collateral chips
+- **Scene trigger**: approaching the table with entry conditions met fires `blacktie_event_kings_were_humming_01`, one time only. The scene is spectator-only; no betting interface opens here, ever. Stake is the door's 500 Sovs collateral chips
 - **Scene ownership**: the encounter's beats, dialogue, player-choice moments, and item grants live in `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md` and are not duplicated in this file
 - **Post-encounter**: Aaron remains at this table permanently as ambient floor presence. Never a playable opponent, never a mini-game node
 
@@ -136,7 +136,7 @@ Everyone knows. No one admits it. That's the game within the game.
 - **City-Specific Comedy Operations**: Opera money laundering, "donations" that are debts, reputation as currency
 - **Buffoon Exploitation**: Bros who think their luck/skill can beat the house (it cannot)
 - **Comedy of Errors**: Dramatic losses, accidental wins that encourage bigger losses, tells
-- **Consequence System**: Gold loss is REAL; Embarrassed status from public losses; Cleaned Out ejection
+- **Consequence System**: Sovs loss is REAL; Embarrassed status from public losses; Cleaned Out ejection
 
 ### Buffoon Delusion Scenarios
 
@@ -156,11 +156,11 @@ The house is systematically extracting their gold while they feel sophisticated.
 
 **The Inevitable**:
 - **Lord Pilsner**: "Okay, ONE more hand. I can feel the luck turning."
-- **Bradley**: "We have forty euro."
+- **Bradley**: "We have forty Sovs."
 - **Lord Pilsner**: "That IS one more hand."
 
 **The Cleanup**:
-- **Chadwick**: "How did we... we had €500... where did..."
+- **Chadwick**: "How did we... we had 500 Sovs... where did..."
 - **Doorman**: "Thank you for visiting. Please return when you've... recovered."
 
 ## Gameplay Mechanics
@@ -168,7 +168,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 ### The House Edge System
 
 **Gold Economy**:
-- Minimum €500 gold to enter (held as collateral)
+- Minimum 500 Sovs to enter (held as collateral)
 - All games use house chips (no gold directly)
 - Chips convert back to gold at exit (minus "handling fee")
 - House edge varies by game and table
@@ -194,18 +194,18 @@ The house is systematically extracting their gold while they feel sophisticated.
 **The Nervous Noble** (Easy)
 - **Tell**: Adjusts cufflinks when bluffing
 - **Pattern**: Folds to aggression, overplays strong hands
-- **Bankroll**: €200 (small wins)
+- **Bankroll**: 200 Sovs (small wins)
 
 **The Silent Countess** (Medium)
 - **Tell**: Sips champagne more frequently when strong
 - **Pattern**: Calculated, occasional bluffs, exploits weakness
-- **Bankroll**: €500 (moderate wins)
+- **Bankroll**: 500 Sovs (moderate wins)
 
 **The Card Shark** (Hard)
 - **Name**: Herr Falsch ("Mr. False")
 - **Tell**: None apparent (actually has one: breathes slower when bluffing)
 - **Pattern**: Adapts to player style, varies play
-- **Bankroll**: €1000+ (major wins possible)
+- **Bankroll**: 1000 Sovs+ (major wins possible)
 - **Special**: Defeating him unlocks "Shark Fin" accessory
 
 **The House Dealer** (Unbeatable Long-Term)
@@ -247,7 +247,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 **Cheat Options** (require items or skills):
 - **Marked Cards**: +15% win rate, caught on nat 1 (5% chance per hand)
 - **Sleeve Ace**: Auto-win one hand, caught if used twice in session
-- **Chip Palming**: Steal €50/attempt, caught on visible tells
+- **Chip Palming**: Steal 50 Sovs/attempt, caught on visible tells
 - **Partner Signals**: With party member at same table, share information
 
 **Getting Caught**:
@@ -258,7 +258,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 ### The Card Shark Boss Fight
 
 **Alternative to Gambling**:
-If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating, they can challenge him directly.
+If players lose repeatedly (1000 Sovs+ total) OR discover Herr Falsch is cheating, they can challenge him directly.
 
 **Boss Profile — Herr Falsch**:
 - **Title**: The House's Secret Weapon
@@ -274,7 +274,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
   - "The River": Changing arena hazard (cards flip tiles)
   - "Ace Up His Sleeve": Interrupt attack when below 25% HP
 - **Weakness**: Exposing his cheating during fight reduces his stats
-- **Victory**: His entire chip stash (€2000), "Shark Fin" accessory, "Card Counter" achievement
+- **Victory**: His entire chip stash (2000 Sovs), "Shark Fin" accessory, "Card Counter" achievement
 
 ### Couchsurfing Integration
 **Host**: "The Reformed Gambler" — Siegfried, runs the coat check
@@ -282,7 +282,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 **Meeting Requirements**:
 - Win at least once
 - Lose at least once (he relates to the struggle)
-- Tip him personally (€20)
+- Tip him personally (20 Sovs)
 
 **Stay Details**:
 - Sleep in his tiny apartment above the club
@@ -290,13 +290,13 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - Wake to him preaching the dangers of gambling (while ironing your tuxedo)
 
 **Morning Scene**:
-- He lost €50,000 over 10 years
+- He lost 50,000 Sovs over 10 years
 - Now works coat check to "stay close to what he can't have"
 - Offers genuine advice: "The only winning move is not to play. But we both know you'll play anyway."
 
 **Stay Effects**:
 - "Gambler's Insight": See one hidden card per game for next session
-- -€50 (he "borrowed" it — can't help himself)
+- -50 Sovs (he "borrowed" it — can't help himself)
 - Permanent 5% reduction in house edge (knows their tricks)
 
 ### Selfie Spot Integration
@@ -309,7 +309,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - Caption: "High Roller Status"
 
 **"The Winner"** Variant:
-- After significant win (€500+)
+- After significant win (500 Sovs+)
 - Actual chips visible
 - Defeated opponent in background (if applicable)
 - Caption: "The House Doesn't ALWAYS Win"
@@ -364,7 +364,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - **Appearance**: Perfect poker face, speaks only in bets
 - **Personality**: Communicates through play, unsettling composure
 - **Function**: Skill check opponent, challenging but fair
-- **Dialogue**: *Sips champagne. Raises €100. No other communication necessary.*
+- **Dialogue**: *Sips champagne. Raises 100 Sovs. No other communication necessary.*
 
 ### The Coat Check — Siegfried
 - **NPC ID**: `sinfonia_npc_siegfried_coatcheck_01`
@@ -382,7 +382,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 ### Bros' Black-Tie Backroom Reactions
 
 **At the Door**:
-- **Lord Pilsner**: "€500 COLLATERAL?! That's... that's a lot of döner."
+- **Lord Pilsner**: "500 Sovs COLLATERAL?! That's... that's a lot of döner."
 - **Anton**: "It's also the minimum. Döner is not accepted."
 - **Chadwick**: "We're COMMITTED now! This is CONTENT! 'Chadwick Gambles with the ELITE'!"
 
@@ -413,11 +413,11 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 
 ### Quest Integration
 - **"The Black-Tie Backroom"**: Discovery quest (from city description)
-- **"High Stakes"**: Win €1000+ total for High Roller status
+- **"High Stakes"**: Win 1000 Sovs+ total for High Roller status
 - **"The Card Shark"**: Discover and defeat Herr Falsch
 - **"The Reformed Gambler"**: Siegfried's backstory questline
 - **"Baroness' Vault"**: Access after defeating Maestro Vice von Strauss (late-game)
-- **"The Kings Were Humming"** (`sinfonia_sidequest_the_kings_were_humming_01`): One-time scene at `aarons_corner_table`, triggered by `blacktie_event_kings_were_humming_01` on approach with entry conditions met. Requires the €500 door collateral to be on deposit (under-funded parties never get past Anton). Quest file: `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
+- **"The Kings Were Humming"** (`sinfonia_sidequest_the_kings_were_humming_01`): One-time scene at `aarons_corner_table`, triggered by `blacktie_event_kings_were_humming_01` on approach with entry conditions met. Requires the 500 Sovs door collateral to be on deposit (under-funded parties never get past Anton). Quest file: `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
 
 ### Item Registrations
 **Scene-granted (not vendor stock, not house inventory — obtainable only from `blacktie_event_kings_were_humming_01`)**:
@@ -513,6 +513,8 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
 
 *Full artist specs: `Design/World Design/Sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md`*
 
+> **Authority: the PNG_Assets spec wins over this file** on sprite filenames, dimensions, and sheet membership. All 38 filenames below match the spec exactly. **The pixel figures below are CELL sizes, not sheet sizes** — the spec states this reconciliation explicitly and lists the full multi-row sheet dimensions (e.g. `anton_doorman.png` is a **384x512** sheet of 96x128 cells; `herr_falsch.png` is **512x960**; `aaron_the_unflappable.png` is **384x1024**). Commission against the spec's sheet dimensions, not the cell sizes here.
+
 ### Environment Art (13 PNGs)
 - hidden_entrance.png - 256x384 - Opera backstage door
 - staircase_transition.png - 256x512 - Shabby to elegant
@@ -550,7 +552,7 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
 - high_roller_badge.png - 48x48 - Status indicator
 - shark_fin.png - 32x48 - Boss reward accessory
 - marked_cards.png - 48x64 - Cheat item
-- collateral_receipt.png - 48x32 - €500 deposit
+- collateral_receipt.png - 48x32 - 500 Sovs deposit
 - members_card.png - 48x32 - Access item
 - tell_indicator.png - 32x32 - NPC weakness hint
 - cleaned_out_stamp.png - 64x64 - Failure badge
@@ -559,4 +561,4 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
 
 ---
 
-*The Black-Tie Backroom: Where the elite lose fortunes with dignity, the drinks are "complimentary" (they're not), and the house always wins (unless you literally fight the card shark). Dress code: Black tie. Minimum buy-in: €500. Minimum wisdom required: More than you probably have. The cards are waiting. The odds are not in your favor. Welcome.*
+*The Black-Tie Backroom: Where the elite lose fortunes with dignity, the drinks are "complimentary" (they're not), and the house always wins (unless you literally fight the card shark). Dress code: Black tie. Minimum buy-in: 500 Sovs. Minimum wisdom required: More than you probably have. The cards are waiting. The odds are not in your favor. Welcome.*

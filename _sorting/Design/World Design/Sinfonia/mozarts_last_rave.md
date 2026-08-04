@@ -16,7 +16,7 @@
 - **Time Restrictions**: 11 PM - 5 AM (the dead don't party before midnight)
 - **Stat Requirements**: +1 Bravado to enter crypt entrance
 - **Item Requirements**: 
-  - "Composer's Rest" Cemetery Visitor Pass (€5, acquired aboveground)
+  - "Composer's Rest" Cemetery Visitor Pass (5 Sovs, acquired aboveground)
   - OR knowledge of secret entrance from NPC
 - **Previous Location Requirements**: Must have heard rumors at The Moderato Pub OR Café Existenz
 - **Special Conditions**: Must find the correct grave to enter (hint: it's NOT Mozart's actual grave)
@@ -121,7 +121,7 @@ Everyone plays along. Whether the undead are real, hallucinations, or very good 
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Selling "authentic underground experience" that's actually well-organized tourist attraction
-- **City-Specific Comedy Operations**: €5 "cemetery pass" is basically club cover; "tips for the dead" go to owners
+- **City-Specific Comedy Operations**: 5 Sovs "cemetery pass" is basically club cover; "tips for the dead" go to owners
 - **Buffoon Exploitation**: Bros think they've discovered a SECRET; it's on TripAdvisor with 4.2 stars
 - **Comedy of Errors**: Taking the undead premise too seriously OR not seriously enough both cause problems
 - **Consequence System**: Rhythm failures summon additional "undead" enemies; social failures = ghostly mockery
@@ -144,7 +144,7 @@ The club has existed for 15 years, has a health inspection certificate, and pays
 
 **The Morning After**:
 - **Lord Pilsner**: "We danced with GHOSTS. I think one of them hit on me."
-- **Reality**: They danced with theater students in costume earning €15/hour
+- **Reality**: They danced with theater students in costume earning 15 Sovs/hour
 
 ## Gameplay Mechanics
 
@@ -442,49 +442,35 @@ Instead of defeating Bassmeister, players can:
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (14 PNGs)
-- cemetery_surface.png - 512x384 - Ornate graves, hidden entrance
-- bassmeister_grave.png - 128x192 - Interactive entrance
-- descent_staircase.png - 256x512 - Transition zone
-- bone_bar.png - 512x384 - Crypt alcove bar
-- dancefloor_main.png - 640x512 - Glass floor, four booths
-- dj_booth_north.png - 192x256 - Bass DJ station
-- dj_booth_east.png - 192x256 - Treble DJ station
-- dj_booth_south.png - 192x256 - Rhythm DJ station
-- dj_booth_west.png - 192x256 - Melody DJ station
-- requiem_room.png - 384x384 - VIP area
-- bone_throne.png - 192x256 - Selfie spot
-- conductors_crypt.png - 512x384 - Boss arena
-- pipe_organ_synth.png - 256x384 - Boss domain detail
-- skull_disco_ball.png - 128x128 - Rotating decoration
+> **Authority: `PNG_Assets/Mozarts_Last_Rave_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the eight sheets below**. Do not re-derive individual filenames from this summary.
 
-### Character/Enemy Sprites (16 PNGs)
-- bassmeister_boss.png - 256x384 - Main boss (3 phases)
-- dj_gravo.png - 128x192 - Bass mini-boss
-- dj_soprano_specter.png - 128x192 - Treble mini-boss
-- dj_tempo_mortis.png - 128x192 - Rhythm mini-boss
-- dj_harmony_haunt.png - 128x192 - Melody mini-boss
-- helga_bartender.png - 64x96 - Living employee
-- grave_guide.png - 64x96 - Tutorial NPC
-- ghost_groupie.png - 64x96 - Ambient NPCs (variants x3)
-- dancing_skeleton.png - 64x96 - Basic enemy
-- grave_groover.png - 64x96 - Fast enemy
-- tombstone_bouncer.png - 96x128 - Blocker enemy
-- spectral_heckler.png - 64x64 - Summoned enemy
-- skeleton_dancer_ambient.png - 64x96 - Background dancers
-- bassmeister_appeased.png - 128x192 - Peaceful resolution sprite
+### Required PNG Files (8 sheets)
 
-### UI/Item Sprites (10 PNGs)
-- rhythm_ui_mozart.png - 256x64 - Timing indicators
-- harmony_meter.png - 192x32 - Combo tracker
-- bone_conductors_gloves.png - 32x48 - Boss reward
-- eternal_setlist.png - 32x32 - Key item
-- rip_your_sobriety.png - 32x48 - Drink item
-- cemetery_pass.png - 48x32 - Entry item
-- lost_composition.png - 48x64 - Appeasement item
-- skull_glass.png - 32x48 - Bar drink container
-- spine_glowstick.png - 24x48 - Merchandise
-- tempo_indicator.png - 64x64 - Boss phase UI
+| # | Filename | Dimensions | Contains |
+|---|----------|------------|----------|
+| 1 | mozarts_rave_cemetery.png | 1024x384 | Cemetery surface, ornate graves, the Bassmeister grave entrance (96x128, ladder-down state), the three descent stone sections (96x96 each) |
+| 2 | mozarts_rave_tileset.png | 1024x512 | Crypt floors and walls, bone bar counter, glass dancefloor tiles, boss arena floor inlay |
+| 3 | mozarts_rave_landmarks.png | 512x384 | All four DJ booths (192x128 each: North/Bass, East/Treble, South/Rhythm, West/Melody), bone throne (64x96), skull disco ball frames (64x64), pipe organ synthesizer (192x128), Requiem Room and bone-bar hero props |
+| 4 | bassmeister_boss.png | **512x768** | Johann Bassmeister — all three phases **and the four appeased / resolution frames**, sixteen 128x192 cells. **There is no separate `bassmeister_appeased.png`** |
+| 5 | mozarts_rave_djs.png | 512x256 | DJ Grave-o, DJ Soprano Specter, DJ Tempo Mortis, DJ Harmony Haunt — 128x192 cells |
+| 6 | mozarts_rave_cast.png | 512x384 | **Helga the Bartender (three 64x96 cells: Pouring, Unflappable, Couchsurf Offer)**, the Grave Guide (64x96), Ghost Groupies A–C (64x96), Dancing Skeleton, Grave Groover, Skeleton Dancer Ambient (64x96), Spectral Heckler (**64x96**), Tombstone Bouncer (96x128) |
+| 7 | mozarts_rave_effects.png | 512x256 | Bass pulses, spectral shimmer, particle and lighting effects |
+| 8 | mozarts_rave_ui.png | 256x288 | Rhythm Track Bar (**256x32**), Harmony Meter Bar (**144x32**), Tempo Indicator Dial (64x64), Bone Conductor's Gloves, Eternal Setlist (**32x48**), Lost Composition, Cemetery Pass, RIP Your Sobriety, Skull Glass, Spine Glow-Stick |
+
+### Names retired from this summary (do not request these files)
+
+| Retired name | Where it actually lives |
+|---|---|
+| `bassmeister_appeased.png` (128x192) | **Not delivered.** The appeasement frames are cells inside `bassmeister_boss.png` (512x768) |
+| `helga_bartender.png` (64x96) | **Not delivered.** Helga is three 64x96 cells inside `mozarts_rave_cast.png` (512x384) |
+| `spectral_heckler.png` (64x64) | Cell in `mozarts_rave_cast.png` at **64x96**, not 64x64 |
+| `eternal_setlist.png` (32x32) | Cell in `mozarts_rave_ui.png` at **32x48**, not 32x32 |
+| `harmony_meter.png` (192x32) | "Harmony Meter Bar" cell in `mozarts_rave_ui.png` at **144x32** |
+| `rhythm_ui_mozart.png` (256x64) | "Rhythm Track Bar" cell in `mozarts_rave_ui.png` at **256x32** |
+| `spine_glowstick.png` | Spelled "Spine Glow-Stick" in the spec; cell in `mozarts_rave_ui.png` |
+| All 14 former standalone environment PNGs | Cells in sheets 1, 2 and 3 |
+| All remaining former standalone character/enemy PNGs | Cells in sheets 5 and 6 |
+| All remaining former standalone UI/item PNGs | Cells in sheet 8 |
 
 ---
 

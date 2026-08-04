@@ -101,7 +101,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **You Are Here Dot**: Red dot (wrong location)
 - **Kiosk Window**: Marloes's service window (2 tiles)
 - **Security Booth**: Henk's station (2 tiles)
-- **Tip Jar**: Willem's hat with €2.47
+- **Tip Jar**: Willem's hat with 2 Sovs
 
 ### Graffiti (Row 6) - Flashlight-revealed
 - **"STATION →"**: With scratched-over reversed arrow
@@ -177,7 +177,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Instrument**: Ancient accordion, well-worn
 - **Clothing**: Indeterminate decade (could be 1970s, could be 1990s)
 - **Props**:
-  - Hat on ground with exactly €2.47
+  - Hat on ground with exactly 2 Sovs
   - Maybe a small stool
 - **Expression**: Serene, timeless, possibly not alive
 - **Aura**: Slight transparency effect available for ghost moments
@@ -379,7 +379,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Duration:** ~3 seconds (0.3 FPS, very slow, uncertain)
 - **Frames:** 3 (transparency pulse)
 - **Pattern:** Fade → one-second disappear → reappear, played once
-- **Trigger:** Third €5 tip revelation ("The Eternal Busker" hidden quest)
+- **Trigger:** Third 5 Sovs tip revelation ("The Eternal Busker" hidden quest)
 - **Purpose:** Is he a ghost or just old? Uncertainty is the point — keep it subtle
 - **Audio Sync:** Accordion continues uninterrupted (the unsettling detail)
 - **Mobile Optimization:** Simple alpha modulation, no shader required
@@ -507,7 +507,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: TileMap (corridors), AnimatedSprite2D (NPCs, effects), CPUParticles2D (dust — not GPU), CanvasLayer (navigation UI), CanvasModulate for zone lighting tiers
-- Special systems: probability-based navigation resolver (exit odds modified by sober/contact-high/space-cake/canal-confusion/map/guide/memory stacks), dynamic signage that changes between visits, five-zone transition triggers, flashlight-gated graffiti layer, Willem tip counter (3× €5 for ghost reveal)
+- Special systems: probability-based navigation resolver (exit odds modified by sober/contact-high/space-cake/canal-confusion/map/guide/memory stacks), dynamic signage that changes between visits, five-zone transition triggers, flashlight-gated graffiti layer, Willem tip counter (3× 5 Sovs for ghost reveal)
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -524,7 +524,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Red Light Discovery | Red Light Emergence scene, Mevrouw Jansen sheet | First accidental Roodelicht emergence; "Scenic Route" achievement |
-| The Eternal Busker | Willem sheet, Ghost Flicker, tip jar tile | Tip €5 three visits; "Willem's Friend" + accordion cosmetic |
+| The Eternal Busker | Willem sheet, Ghost Flicker, tip jar tile | Tip 5 Sovs three visits; "Willem's Friend" + accordion cosmetic |
 | FEBO Shortcut Discovery | FEBO Emergence scene | Hidden entrance behind heating unit; "Back Door Regular" |
 | Stay Away Campaign | Tileset (corridor props) | Pamphlet #4 found in tunnel |
 | Tour Guide (achievement) | Lost Tourist variants (Relieved at Help row) | Escort a lost tourist to correct exit |
@@ -533,7 +533,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Central Bike Crossing | Stairs Down tile, entrance hall | Primary entrance (unlocked after 10 crossings or escort knowledge) |
-| Central Station | Correct Exit scene | Intended exit (40% base probability) |
+| Centraal Chaos | Correct Exit scene | Intended exit (40% base probability) |
 | Museum Mile | Correct Exit scene, parking entrance | Secondary intended exit / entry point |
 | Roodelicht Row | Red Light Emergence scene | Infamous wrong exit (35%); no tunnel re-entry |
 | Coffeeshop Quarter | Coffeeshop Emergence scene | Wrong exit into storage room (15%) |
@@ -709,7 +709,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 ### Before Submitting Assets:
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly
-- [ ] Key gags read clearly: wrong "You Are Here" dot, lying signage, Red Light Emergence framing, Willem's unchanging €2.47
+- [ ] Key gags read clearly: wrong "You Are Here" dot, lying signage, Red Light Emergence framing, Willem's unchanging 2 Sovs
 - [ ] Accessibility visual alternatives included for all audio cues (directional corridor audio, accordion landmark, navigation chimes)
 - [ ] File naming follows snake_case convention
 - [ ] Master files preserve layer structure for future edits
@@ -736,7 +736,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 | Technical Feasibility | ✅ | Baked lighting, simple corridor geometry, audio-led navigation documented |
 | Mobile Performance Budget | ✅ | 60 FPS, <35 draw calls, <40 MB, 30 particles |
 | Accessibility Features | ✅ | Visual mirrors for all directional audio cues, reduced-motion variants, 44px touch zones |
-| No Crypto Elements | ✅ | All transactions in Euros (guilder ad is period set-dressing only) |
+| No Crypto Elements | ✅ | All transactions in Sovs (guilder ad is period set-dressing only) |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |
 
 ---

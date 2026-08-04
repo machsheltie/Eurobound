@@ -367,7 +367,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 |---------|----------|------|-------------|
 | Menu Background | (0, 64) | 192x96 | Price list frame |
 | Item Highlight | (0, 160) | 192x32 | Selection bar |
-| Price Tag | (192, 64) | 48x24 | "€XX" format |
+| Price Tag | (192, 64) | 48x24 | "XX SOVS" format |
 | Sold Out | (192, 88) | 48x24 | Red stamp |
 
 ### Dialogue Portraits:

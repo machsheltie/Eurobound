@@ -15,7 +15,7 @@
 ## 🎭 The Deception
 
 ### What The Item Actually Is
-A pewter lapel pin shaped like a shark's dorsal fin, about 4cm tall, mounted on a small backing card stamped with a spade. It costs about four euro and comes from a novelty supplier that also does the Backroom's cufflink-shaped swizzle sticks and the cloakroom's numbered brass tags. Herr Falsch orders them **by the dozen**, keeps the box in his coat's inside pocket, and has one on his person at all times.
+A pewter lapel pin shaped like a shark's dorsal fin, about 4cm tall, mounted on a small backing card stamped with a spade. It costs about four Sovs and comes from a novelty supplier that also does the Backroom's cufflink-shaped swizzle sticks and the cloakroom's numbered brass tags. Herr Falsch orders them **by the dozen**, keeps the box in his coat's inside pocket, and has one on his person at all times.
 
 This is not a scheme. It is manners. Herr Falsch has been cheating in that room for a very long time and takes the entirely sincere view that anybody sharp enough to catch him at it has earned something to take home, and that having to go and find a trophy afterward would be graceless. He has handed nine of these over this decade. He remembers every one of them. He would not dream of mentioning the other eight.
 
@@ -31,8 +31,8 @@ The pin is real, the win is real, and the fight is genuinely hard. The only thin
 | Attribute | Value |
 |-----------|-------|
 | **Purchase Price** | N/A (boss reward only — never sold by any vendor in the game) |
-| **Actual Value** | €4 (€38 the dozen, plus postage) |
-| **Resale Value** | €0 (worthless — and the bros would sooner walk into The Bacchanus than sell it) |
+| **Actual Value** | 4 Sovs (38 Sovs the dozen, plus postage) |
+| **Resale Value** | 0 Sovs (worthless — and the bros would sooner walk into The Bacchanus than sell it) |
 | **Can Be Sold** | No |
 | **Can Be Dropped** | No (permanent cosmetic) |
 | **Can Be Traded** | No — whichever bro landed the finish wears it and the argument about that is settled permanently on the walk out |
@@ -105,7 +105,7 @@ Once awarded, the fin is **permanently pinned to the winning bro's lapel** for t
 | Anton the Doorman | "Ah. He gave you the fin." *(no change of expression, no further comment, steps aside)* | "He *gave*. Past tense. Anton's already heard about it." |
 | Madame Karten | "Darling. How wonderful for you. He does love that hand." | "She's shaken. That's a woman rethinking her whole floor." |
 | Siegfried at the coat check | *takes the jacket, sees the pin, sets a second wafer bar on the counter, says nothing at all* | "Coat guy KNOWS. Coat guys always know first." |
-| Novelty-shop kid, Kaffeehaus Row | "We have those. Fin, anchor, or the little skull. Four euro." | "Knockoffs. Somebody's already bootlegging me." |
+| Novelty-shop kid, Kaffeehaus Row | "We have those. Fin, anchor, or the little skull. Four Sovs." | "Knockoffs. Somebody's already bootlegging me." |
 | Publandia bartender, weeks later | "What's the fish for?" | "It's not a fish. It's a *classification*." |
 
 ### Callback Dialogue Throughout Game
@@ -125,7 +125,7 @@ Once awarded, the fin is **permanently pinned to the winning bro's lapel** for t
 ### Source Quest
 - **Quest ID**: `sinfonia_sidequest_the_card_shark_01` *(provisional — "The Card Shark" is listed in the Backroom location file's Quest Integration but has no quest file yet; confirm the ID when it is authored)*
 - **Quest Name**: "The Card Shark"
-- **Quest Giver**: Nobody. The party discovers Herr Falsch is cheating, or loses €1,000+ to him, and challenges him directly
+- **Quest Giver**: Nobody. The party discovers Herr Falsch is cheating, or loses 1,000 Sovs+ to him, and challenges him directly
 - **Location**: The Private Boxes, The Black-Tie Backroom, Sinfonia
 
 ### Gates/Unlocks
@@ -138,7 +138,7 @@ Once awarded, the fin is **permanently pinned to the winning bro's lapel** for t
 ### Achievement
 - **Achievement Name**: "The Shark Slayer"
 - **Description**: "Catch Herr Falsch and beat him anyway."
-- **Hidden Description**: "Become the ninth person this decade to be handed a four-euro pin by a very polite man."
+- **Hidden Description**: "Become the ninth person this decade to be handed a four-Sovs pin by a very polite man."
 
 ---
 

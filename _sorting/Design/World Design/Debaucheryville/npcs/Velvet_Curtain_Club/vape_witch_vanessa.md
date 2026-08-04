@@ -67,7 +67,7 @@ Silhouette first: drapey vertical layers plus the cloud, readable at thumbnail s
 | Trait | Description |
 |-------|--------------|
 | Accurate Reader | Her assessments of people land, consistently — including "chaotic energy," which was neither a compliment nor an insult, and which was correct |
-| Commercially Fluent | Every mystical service she offers has a price, stated up front, in euros; she has never once been coy about it |
+| Commercially Fluent | Every mystical service she offers has a price, stated up front, in Sovs; she has never once been coy about it |
 | Low Tolerance For Nonsense | "Please don't." is her most-used complete sentence and she deploys it without heat |
 | Unshockable | Ten years of night shifts. Nothing that walks through the Velvet Curtain's door is new |
 | Boundaried | She hosts who she wants, when she wants; a crash spot is a favor she extends, not an obligation she owes, and it is withdrawn without ceremony or apology |
@@ -78,7 +78,7 @@ Silhouette first: drapey vertical layers plus the cloud, readable at thumbnail s
 
 ### Motivation
 
-She is building an actual business — crystals, readings, the NFT collection, event promo work — out of the only storefront available to her, which is a nightclub floor at 1am. The mysticism is the brand and also, quietly, the belief. She wants the Thursday nights to sell out, the flyers up before Hardstyle Hendrik's people get there, and her apartment to smell like sage instead of like whoever slept on her couch.
+She is building an actual business — crystals, readings, the NFT collection, event promo work — out of the only storefront available to her, which is a nightclub floor at 1am. The mysticism is the brand and also, quietly, the belief. She wants the Thursday nights to sell out, the flyers up before Hardstyle Hynek's people get there, and her apartment to smell like sage instead of like whoever slept on her couch.
 
 ---
 
@@ -90,7 +90,7 @@ She is building an actual business — crystals, readings, the NFT collection, e
 > "You three have... chaotic energy. I like it. Want to make some money?"
 
 **Follow-up — the Club Flyers pitch (canonical, `debaucheryville_sidequest_club_flyers_01`)**:
-> "DJ Beatdrop needs promotion. Rival DJ Hardstyle Hendrik is trying to steal his Thursday night slot. I need someone to poster the city. €100, plus free drinks tonight."
+> "DJ Beatdrop needs promotion. Rival DJ Hardstyle Hynek is trying to steal his Thursday night slot. I need someone to poster the city. 100 Sovs, plus free drinks tonight."
 
 ### Key Interaction Dialogue
 
@@ -115,7 +115,7 @@ She is building an actual business — crystals, readings, the NFT collection, e
 > "Huh. Okay. You can crash. Take your shoes off at the door and do not touch the shelf."
 
 *Wrong answer, or an eye-roll mid-reading:*
-> "No, that one's forty euro. You can still crash. You're just paying for the reading now."
+> "No, that one's forty Sovs. You can still crash. You're just paying for the reading now."
 
 ### Morning Scene — "The Cleansing"
 
@@ -131,42 +131,9 @@ She is building an actual business — crystals, readings, the NFT collection, e
 ### If Player Declines / Alternative Path
 > "Suit yourself. The couch was never the point — the couch is just where the reading finishes."
 
-### Herp Rejection Scene (`the_herp` active)
+### Couchsurf Herp Routing
 
-*Any infected bro attempts the couchsurf or a romance approach at the Velvet Curtain Club. She starts the quiz normally — three stones on the bar. Then she stops, picks up the pendant, and raises it to eye level. The peach-mango cloud parts around him and does not close again.*
-
-**Vanessa** (genuine recoil, one step back, stones swept off the bar into her palm):
-> "No. No, put your hand down. Your aura is... contagious."
-
-*She does not sage him. She sages the barstool. Then she asks the bartender to sage the barstool again after she's done, out loud, in front of everyone, while the bro is still sitting on it.*
-
-**Vanessa** (to the bartender, not to him):
-> "The whole stool. And the one next to it. He was leaning."
-
-*She then sells him a Charged Quartz Vape Tip at four times the going rate, rebranded on the spot as a "barrier stone." He buys two.*
-
-**Vanessa** (pocketing the money, already turning away):
-> "It won't help. It's not for you. It's for everybody else in here."
-
-*Bro delusion, immediately after:*
-- **Lord Pilsner**: *"Bros. She performed a RITUAL for us. Unprompted. FlagMan would call that a green flag with a ceremony attached."*
-- **Chadwick**: *"She upgraded us to barrier-tier. That's like VIP but spiritual."*
-- **Bradley**: *"'Received a protective European blessing.' That's going on Tinder tonight."*
-
-### Post-Cure Callback (Coin equipped)
-
-*He returns with `item_gold_circle_coin`. She holds the pendant up, looks past it, and takes noticeably longer than last time. **The sting lands first** — this is the whole reason she gets a callback line at all.*
-> "Something's blocking it. Something gold, something old, something that cost a lot more than you're worth." *(exhale)* "I respect the craftsmanship. I still remember the stool. You can buy a reading. You cannot have the couch."
-
-*He starts to leave. She lets him get three steps, because three steps is the price. Then she sweeps the three stones back onto the bar without looking up, and the quiz is open again.*
-
-**Vanessa** (flat, transactional, entirely unimpressed by her own mercy):
-> "Sixty euro. Floor, not the couch — the couch is not a couch tonight, the couch is a *principle*. Shelf is still a shelf. Pick the one that's already yours and don't think about it, thinking is how tourists get it wrong."
-
-*He passes. He always passes eventually; she has never once made the quiz harder for anyone. Everything proceeds exactly as it would have before the outbreak: crystals, sage, the collection tour, the whole twenty-five minutes.*
-
-**Vanessa** (last word, at the door, 07:00 sharp):
-> "I'm still saging the stool after. Every time. Forever. That part isn't coming off the bill."
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Vanessa — including her refusal lines, the stool, the "barrier stone" sale, and the post-cure callback — are authored in her Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Vape Witch Vanessa". **Do not duplicate them here.** Flag: `vape_witch_vanessa_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 ### Callback Dialogue (Return Visits)
 > "Flyers are still up on the north wall. Two of them upside down. I left them like that — people ask about it, and asking is free advertising, so congratulations, you accidentally did marketing."
@@ -195,11 +162,11 @@ She is building an actual business — crystals, readings, the NFT collection, e
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|---------------|----------------|
-| Aura reading | €40 | Genuinely accurate, which is the problem | Flavor text describing the party with uncomfortable precision; no stat effect |
-| Charged Quartz Vape Tip (gag item, canonical) | €15 | 1 gold resale | Unusable in battle; pure collectible; sells for 1 gold |
-| Charged Quartz Vape Tip, "barrier stone" rebrand (Herp-rejection sale only) | €60 | Still 1 gold resale | Identical item, quadruple price; the bros buy two |
+| Aura reading | 40 Sovs | Genuinely accurate, which is the problem | Flavor text describing the party with uncomfortable precision; no stat effect |
+| Charged Quartz Vape Tip (gag item, canonical) | 15 Sovs | 1 Sov resale | Unusable in battle; pure collectible; sells for 1 Sov |
+| Charged Quartz Vape Tip, "barrier stone" rebrand (Herp-rejection sale only) | 60 Sovs | Still 1 Sov resale | Identical item, quadruple price; the bros buy two |
 | Crystal NFT collection viewing (pre-established canon) | Free, mandatory, 25 minutes | Priceless to her, endless to you | Morning-scene set piece; no item granted |
-| Club Flyers job | Pays €100 + free drinks | Cheap labor | Starts `debaucheryville_sidequest_club_flyers_01` |
+| Club Flyers job | Pays 100 Sovs + free drinks | Cheap labor | Starts `debaucheryville_sidequest_club_flyers_01` |
 
 ### Hidden Details / Easter Eggs
 - Examining the shelf she told you not to touch shows a row of stones, each with a masking-tape price label on the bottom, and one unlabeled stone at the end that is not for sale and that she will not discuss
@@ -287,7 +254,7 @@ Her pricing goes up. That is the arc. After the Club Flyers job she raises the r
 - **Quest**: `debaucheryville_sidequest_club_flyers_01` — "Peak Y2K Marketing Genius"
 - **Role**: Quest Giver
 - **Trigger**: Bros reach the Velvet Curtain Club main floor after prior Debaucheryville quests; her pitch fires in the 01:00–03:00 window
-- **Outcome**: €100, free drinks, two flyers permanently upside down on the north wall, and a permanently higher reading fee
+- **Outcome**: 100 Sovs, free drinks, two flyers permanently upside down on the north wall, and a permanently higher reading fee
 
 ### Secondary Quest — Couchsurfing Chronicles
 - **Role**: Debaucheryville couchsurf host #1 (canonical)
@@ -298,8 +265,8 @@ Her pricing goes up. That is the arc. After the Club Flyers job she raises the r
 - **Quest**: `debaucheryville_sidequest_nothing_is_getting_through_01`
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) attempts the couchsurf or a romance approach at the Velvet Curtain Club
-- **Outcome**: Herp Rejection Scene fires (see Dialogue). No couchsurf, no SP, no quiz. The party loses the €120 spent on two "barrier stones." Scene is repeatable; the price does not go back down
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the stool, the appraisal, "you cannot have the couch" — **and then the couchsurf resolves normally**: quiz, sage, collection tour, canonical **+SP / Confused** branch and the Charged Quartz Vape Tip, at a sixty-euro surcharge she narrates out loud. She is never nice about it and never lets them off the hook; the entry completes regardless. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
+- **Outcome**: Herp Rejection Scene fires (see Dialogue). No couchsurf, no SP, no quiz. The party loses the 120 Sovs spent on two "barrier stones." Scene is repeatable; the price does not go back down
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the stool, the appraisal, "you cannot have the couch" — **and then the couchsurf resolves normally**: quiz, sage, collection tour, canonical **+SP / Confused** branch and the Charged Quartz Vape Tip, at a sixty-Sovs surcharge she narrates out loud. She is never nice about it and never lets them off the hook; the entry completes regardless. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 
@@ -308,7 +275,7 @@ She gates the Club Flyers quest entirely — no Vanessa, no flyer job — and ga
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Charged Quartz Vape Tip | Couchsurf morning scene | Yes (collectible) | Unusable in battle; sells for 1 gold |
+| Charged Quartz Vape Tip | Couchsurf morning scene | Yes (collectible) | Unusable in battle; sells for 1 Sov |
 | Charged Quartz Vape Tip ("barrier stone") | Herp rejection scene | Yes (collectible) | Identical item at 4x price; purely a money sink and a joke |
 
 ---
@@ -367,10 +334,10 @@ Local Debaucheryville accent, light and unexaggerated — she is a working profe
 
 ## 📝 Development Notes
 
-- All Chronicles canon is harvested verbatim in intent: peach-mango "cleansing" exhale, sage, the crystal NFT collection tour, the crystal quiz, +SP / Confused branch, and the Charged Quartz Vape Tip (unusable, sells for 1 gold). Nothing was reinvented
+- All Chronicles canon is harvested verbatim in intent: peach-mango "cleansing" exhale, sage, the crystal NFT collection tour, the crystal quiz, +SP / Confused branch, and the Charged Quartz Vape Tip (unusable, sells for 1 Sov). Nothing was reinvented
 - Club Flyers dialogue is quoted from `club_flyers.md` and must stay in sync with that file; this profile does not modify it
 - Her peach-mango vape cloud is an **existing** specced particle effect in `# Velvet Curtain Club - Complete PNG Asset Requirements.md`. Reuse; do not commission a new one
-- The Herp rejection scene and post-cure callback are new content owned by this profile. `nothingisgettingthrough.md` should point at this file rather than duplicate the scene text
+- **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Her lines live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Vape Witch Vanessa"; this file and `nothingisgettingthrough.md` both point at it and neither duplicates the scene text
 - The "barrier stone" is deliberately the same object as the gag item — no new item ID is minted by the rejection scene. If an items pass ever wants a distinct SKU, that is a separate decision, not this file's
 - Satirical target is wellness-industry markup and the bros' inability to recognize a transaction. Vanessa is never wrong, never humiliated, and never the butt of the joke
 

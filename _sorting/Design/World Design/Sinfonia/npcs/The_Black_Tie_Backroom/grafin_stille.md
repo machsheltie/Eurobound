@@ -1,6 +1,6 @@
 # NPC Profile: Gräfin Stille
 
-*(Sips champagne. Raises €100. No other communication necessary.)*
+*(Sips champagne. Raises 100 Sovs. No other communication necessary.)*
 
 ## 📋 NPC Identity
 - **NPC ID**: `sinfonia_npc_grafin_stille_01`
@@ -26,7 +26,7 @@ She has never been heard to speak in this building. No staff member has heard he
 The bros find her deeply unnerving and immediately construct several explanations, all of them wrong and none of them ever corrected. Chadwick decides she is a spy. Lord Pilsner decides she is "the house's real weapon" and attempts, at length, to get a reaction out of her — table talk, staredowns, one truly disastrous attempt at flirtation delivered to a woman who does not blink. She raises. He folds. He describes the exchange afterward as "a conversation," and in fairness to him, it was.
 
 ### The Comedy Gap
-She is the only person at the table producing no information whatsoever, and she is therefore the only person the bros feel they truly understand. Everything they believe about her is invented by them, out loud, in her presence, at length, while she takes their chips a hundred euro at a time.
+She is the only person at the table producing no information whatsoever, and she is therefore the only person the bros feel they truly understand. Everything they believe about her is invented by them, out loud, in her presence, at length, while she takes their chips a hundred Sovs at a time.
 
 **Binding:** her silence is never explained. Not by her, not by Madame Karten, not by a dealer, not by an examine string, not by an achievement description, not by a late-game reveal. The mystery is permanent canon and any content that resolves it is a defect.
 
@@ -87,7 +87,7 @@ Unestablished by design. What is observable: she comes four nights a week, she p
 *She does not greet. A player sitting down at her table receives one glance, of ordinary length, and then the dealer's attention returns to the deck.*
 
 **Her entire spoken vocabulary in the game:**
-> *(Sips champagne. Raises €100. No other communication necessary.)* — canon, ships verbatim as a stage direction; it is **never voiced and never subtitled as speech.**
+> *(Sips champagne. Raises 100 Sovs. No other communication necessary.)* — canon, ships verbatim as a stage direction; it is **never voiced and never subtitled as speech.**
 
 ### Key Interaction Dialogue — The Bet Language
 *She has one channel and uses it fluently. The player learns to read this by playing against her; nothing in the game ever translates it.*
@@ -106,7 +106,7 @@ Unestablished by design. What is observable: she comes four nights a week, she p
 
 **Lord Pilsner**: "Silent treatment. Classic. That's a POWER move and I RESPECT it."
 
-*She raises €100.*
+*She raises 100 Sovs.*
 
 **Lord Pilsner** *(folding instantly)*: "...See, that's a conversation. That's two people having a conversation."
 
@@ -148,7 +148,7 @@ Unestablished by design. What is observable: she comes four nights a week, she p
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| A seat at her table | Mid-stakes minimum | Fair — genuinely, verifiably fair | Medium-difficulty poker opponent; bankroll €500; moderate wins possible for an observant player |
+| A seat at her table | Mid-stakes minimum | Fair — genuinely, verifiably fair | Medium-difficulty poker opponent; bankroll 500 Sovs; moderate wins possible for an observant player |
 | The champagne tell | Free, if you are watching | The single most valuable free thing in the Backroom | Learnable by observation only; never surfaced by dialogue, tooltip, or `tell_indicator` |
 
 ### Hidden Details / Easter Eggs
@@ -246,7 +246,7 @@ None. She gates nothing. She is, however, the fairest test of poker skill in the
 ## 📸 Social Media / Viral Potential
 
 ### Screenshot Moments
-1. **The conversation.** Lord Pilsner mid-monologue, arms out, eleven minutes in; Gräfin Stille pushing €100 forward with two fingers without having looked up.
+1. **The conversation.** Lord Pilsner mid-monologue, arms out, eleven minutes in; Gräfin Stille pushing 100 Sovs forward with two fingers without having looked up.
 2. **The nod.** One frame. Nothing else in the room has changed.
 3. The gloves going back on at 3 AM while three men who have not finished talking watch her leave.
 
@@ -267,7 +267,7 @@ None. She gates nothing. She is, however, the fairest test of poker skill in the
 - **Nothing sinister.** No stinger when she raises, no low drone under her table, no horror-adjacent scoring anywhere near her.
 
 ### Key Delivery Notes
-- The canon stage direction *(Sips champagne. Raises €100. No other communication necessary.)* ships verbatim **as a stage direction only** — it is design text, never a subtitle, never spoken, never rendered as dialogue in-game.
+- The canon stage direction *(Sips champagne. Raises 100 Sovs. No other communication necessary.)* ships verbatim **as a stage direction only** — it is design text, never a subtitle, never spoken, never rendered as dialogue in-game.
 - Her stillness must be maintained by the animation and audio teams as strictly as a line reading would be. One unmotivated fidget breaks the character.
 - She is dignified, formidable, and adult in every frame. She is never played as decorative, never as a femme fatale, and never as an object of the bros' pursuit — Lord Pilsner's attempt lands on a woman who is at work, and the scene belongs to her.
 

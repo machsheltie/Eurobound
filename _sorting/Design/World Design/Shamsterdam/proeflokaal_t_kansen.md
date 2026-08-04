@@ -25,14 +25,14 @@
 - **Design**: Traditional tulip jenever glass shape (overfilled, surface tension visible), bottle opener as the stem
 - **Material**: Amber-tinted brass with sawdust-colored leather loop
 - **Inscription**: "No Hands. No Fear."
-- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for €20
+- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for 20 Sovs
 - **Special Feature**: Glass portion is slightly convex to mimic the surface tension meniscus
 - **Check Point**: Kees checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Proeflokaal Opener**: Can enter and drink, but cannot receive stamp or purchase Oude Genever
 
 **Kees's Opener Check**:
-- *With Blarney Trap Opener, No Proeflokaal Opener*: *nods* "Seamus." *points to gauntlet setup* "Gauntlet. Or €20. Your glass. Your choice."
+- *With Blarney Trap Opener, No Proeflokaal Opener*: *nods* "Seamus." *points to gauntlet setup* "Gauntlet. Or 20 Sovs. Your glass. Your choice."
 - *With Both Openers*: *nods once* "You have the glass. You earned it. Or bought it." *pours with precision* "Same result. Oude Genever."
 - *Without Blarney Trap Opener*: "No shamrock." *waits* "No tour." *waits* "Return. With opener." *waits*
 
@@ -45,7 +45,7 @@
 ## Visual Design
 ### Exterior Description
 - **Approach**: Narrow alley off main Old Town square, easy to miss, easier to find if you know
-- **Structure**: 400-year-old building (1624), Amsterdam's oldest surviving distillery, looks it
+- **Structure**: 400-year-old building (1624), Shamsterdam's oldest surviving distillery, looks it
 - **Entrance**: Low wooden door (everyone hits their head), no obvious signage
 - **Signage**: 
   - Above door (barely visible): "Proeflokaal" in faded gold lettering
@@ -65,7 +65,7 @@
   - Traditional jenever dispensing system (ceramic jugs, filled to the absolute brim)
   - Wall of jenever bottles arranged by age (jong, oud, zeer oud, "don't ask")
   - No stools at bar (standing is traditional; falling is also traditional)
-  - Brass foot rail (the most touched object in the Netherlands)
+  - Brass foot rail (the most touched object in Shamsterdam)
 - **Decorative Elements**:
   - Original distillery equipment (non-functional, displayed)
   - Historical photos of the building (it looks the same)
@@ -215,14 +215,14 @@
 ### Menu & Consumables
 | Item | Price | ABV | Effects | Bartender Note |
 |------|-------|-----|---------|----------------|
-| Jonge Jenever | €4 | 35% | +15 SP, Mild warmth | "Young. Starter." |
-| Oude Jenever | €6 | 35% | +25 SP, The Shakes (-Accuracy) | "Old. Respect required." |
-| Zeer Oude Jenever | €12 | 38% | +40 SP, The Shakes x2 | "Very old. Very serious." |
-| Korenwijn | €15 | 38% | +50 SP, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
-| Beer (Pilsner) | €4 | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
-| The Kopstootje Combo | €8 | — | Combined effect, +Shamsterdam Cred | "Traditional. Brave." |
-| "The Flight" (5 samples) | €20 | Escalating | See Gauntlet | "For tasting. Or testing." |
-| Back Room Special | €25 | 40% | +60 SP, Everything status | "If you qualify." |
+| Jonge Jenever | 4 Sovs | 35% | +15 SP, Mild warmth | "Young. Starter." |
+| Oude Jenever | 6 Sovs | 35% | +25 SP, The Shakes (-Accuracy) | "Old. Respect required." |
+| Zeer Oude Jenever | 12 Sovs | 38% | +40 SP, The Shakes x2 | "Very old. Very serious." |
+| Korenwijn | 15 Sovs | 38% | +50 SP, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
+| Beer (Pilsner) | 4 Sovs | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
+| The Kopstootje Combo | 8 Sovs | — | Combined effect, +Shamsterdam Cred | "Traditional. Brave." |
+| "The Flight" (5 samples) | 20 Sovs | Escalating | See Gauntlet | "For tasting. Or testing." |
+| Back Room Special | 25 Sovs | 40% | +60 SP, Everything status | "If you qualify." |
 
 ### Consumable: Oude Genever
 **Type**: Alcoholic Beverage / Brewery Tour Reward

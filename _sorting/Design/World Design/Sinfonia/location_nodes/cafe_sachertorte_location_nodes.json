@@ -45,7 +45,7 @@
       },
       "functions": [
         "Fiaker Fiasco Phase 2 location",
-        "€340 property damage set piece",
+        "340 Sovs property damage set piece",
         "High-end pastry vendor",
         "Coffee service with hidden charges",
         "Chess challenge minigame",
@@ -67,8 +67,8 @@
         "theme": "Outdoor refinement, first line of tourist exploitation, initial Gustav destruction zone",
         "features": [
           "entry_point: street_access",
-          "destructible: patio_table (€85)",
-          "destructible: umbrella_stand (€15)",
+          "destructible: patio_table (85 Sovs)",
+          "destructible: umbrella_stand (15 Sovs)",
           "npc_spawn: tourist_couple_01",
           "event_hook: gustav_dramatic_entrance",
           "event_hook: umbrella_stand_crash",
@@ -105,7 +105,7 @@
           "interactive: chess_table",
           "interactive: emperors_letter_frame",
           "interactive: trophy_case",
-          "destructible: marble_table (3x, €40 each)",
+          "destructible: marble_table (3x, 40 Sovs each)",
           "destructible: chandelier (near_miss_only)",
           "minigame: chess_challenge",
           "minigame: german_ordering",
@@ -130,7 +130,7 @@
       "tag_id": "sinfonia_kaffeehaus_cafe_sachertorte_kitchen_01",
       "region": "Sinfonia",
       "exterior": {
-        "description": "A professional kitchen in controlled chaos - copper pots hanging from racks, stainless steel prep surfaces, industrial ovens, and the constant clatter of service. Chef Klaus commands the line while Sous Chef Anna maintains surprising calm.",
+        "description": "A professional kitchen in controlled chaos - copper pots hanging from racks, stainless steel prep surfaces, industrial ovens, and the constant clatter of service. Chef Konrad commands the line while Sous Chef Anna maintains surprising calm.",
         "entry_condition": "Quest access only (Fiaker Fiasco); staff door from dining room"
       },
       "interior": {
@@ -218,9 +218,9 @@
   "damage_tracking_nodes": {
     "phase": "fiaker_fiasco_phase_02",
     "destruction_sequence": [
-      {"location": "patio", "items": ["patio_table", "umbrella_stand"], "total_euro": 100},
-      {"location": "main_dining", "items": ["sachertorte_cake", "marble_tables_x2", "opera_cake_slice"], "total_euro": 227},
-      {"location": "kitchen", "items": ["pots_crash"], "total_euro": 13}
+      {"location": "patio", "items": ["patio_table", "umbrella_stand"], "total_sov": 100},
+      {"location": "main_dining", "items": ["sachertorte_cake", "marble_tables_x2", "opera_cake_slice"], "total_sov": 227},
+      {"location": "kitchen", "items": ["pots_crash"], "total_sov": 13}
     ],
     "total_damage": 340,
     "carries_forward_to": "sinfonia_bassline_opera_house_01"

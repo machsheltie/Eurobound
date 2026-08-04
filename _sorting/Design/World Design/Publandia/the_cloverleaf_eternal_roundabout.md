@@ -32,7 +32,7 @@
 - **Progressive Unlocks**: 
   - Post-completion: 1987 couple appears in Publandia background scenes
   - Post-completion: Bradley's roundabout girlfriend appears in epilogue
-  - Post-completion: Seamus references "the survivors" in future dialogue
+  - Post-completion: Fergus references "the survivors" in future dialogue
 
 ---
 
@@ -252,11 +252,11 @@
 **Menu**:
 | Item | Price | Effect |
 |------|-------|--------|
-| Roundabout Roll | €8 | Restores 20 HP |
-| Exit Anxiety Easer (whiskey) | €12 | -Stress, +Confused |
-| Cloverleaf Curry | €15 | Restores 40 HP, +Speed |
-| Margaret's Memorial Sandwich | €10 | +HP, Patrick appears misty-eyed |
-| Tourist Trap Platter | €25 | Full heal, -Gold |
+| Roundabout Roll | 8 Sovs | Restores 20 HP |
+| Exit Anxiety Easer (whiskey) | 12 Sovs | -Stress, +Confused |
+| Cloverleaf Curry | 15 Sovs | Restores 40 HP, +Speed |
+| Margaret's Memorial Sandwich | 10 Sovs | +HP, Patrick appears misty-eyed |
+| Tourist Trap Platter | 25 Sovs | Full heal, -Sovs |
 
 **Key Dialogue**:
 > "The trick is never running out of petrol. I've got a deal with the lorry that circles Wednesdays."
@@ -519,7 +519,7 @@
 **Rewards (Path A)**:
 - "Road Warrior" achievement
 - Access to rest of Publandia
-- Seamus references "the survivors" in future encounters
+- Fergus references "the survivors" in future encounters
 
 #### Path B: Adaptation (3+ in-game days)
 1. **Day 1**: Denial, aggressive exit attempts, exhaustion
@@ -774,7 +774,7 @@
 
 ### Prerequisites
 - Arrive in Publandia (main story)
-- Have enough gold for car rental (€200+)
+- Have enough gold for car rental (200 Sovs+)
 - Complete Paddy's Premium Motors rental sequence
 
 ### Unlocks
@@ -782,13 +782,13 @@
 - **"Roundabout Veteran" achievement** (Path B) - Spent 3+ days adapting
 - **1987 Couple Easter Egg** - Patrick & Margaret appear in Publandia backgrounds
 - **Bradley's Roundabout Girlfriend** - Appears in epilogue slides
-- **Seamus Recurring Character** - References "the Cloverleaf survivors"
+- **Fergus Recurring Character** - References "the Cloverleaf survivors"
 - **"Slow Down" hint** - Bros use this solution in future navigation puzzles
 
 ### References in Other Locations
 
 **Paddy's Premium Motors**:
-- Seamus: "Did ye make it past The Cloverleaf? ...Most don't, ye know."
+- Fergus: "Did ye make it past The Cloverleaf? ...Most don't, ye know."
 
 **The Bottomless Tap (Publandia Main Hub)**:
 - Other tourists: "Wait, you ESCAPED? How??"

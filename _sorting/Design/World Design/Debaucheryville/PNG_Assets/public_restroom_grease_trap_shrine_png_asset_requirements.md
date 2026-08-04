@@ -190,7 +190,7 @@ assets/sprites/locations/debaucheryville/kebab_alley/
 - **Potato Mode:** Essential graffiti only, no environmental effects, static lighting
 
 ### Performance Targets:
-- **Target FPS:** 40 fps (small enclosed space optimization)
+- **Target FPS:** 60 fps (small enclosed space optimization)
 - **Max Draw Calls:** 8 per frame
 - **Memory Footprint:** 20MB maximum for location
 
@@ -383,7 +383,7 @@ assets/sprites/locations/debaucheryville/kebab_alley/
 | Seedy Underbelly Present | ✅ | Biohazard restroom shrine, health-violation grease vendor alley, fly-buzzing pickle barrels |
 | Gameplay Value Established | ✅ | Stomach of Steel passive, Greasy Prophet title, FistØ ICQ secret, 3AM discovery mechanic |
 | Technical Feasibility | ✅ | 4 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D particles |
-| Mobile Performance Budget | ✅ | 40 FPS target, max 8 draw calls, 20MB memory footprint |
+| Mobile Performance Budget | ✅ | 60 FPS target, max 8 draw calls, 20MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (receipt crinkle, steam hiss, shrine reverence), high-contrast graffiti, motion sensitivity options |
 | No Crypto Elements | ✅ | None present — cryptic QR codes are eldritch mystery, not crypto |
 | Social Media Integration | ✅ | Haiku meme format, FistØ pilgrimage tag, TikTok POV hooks identified |

@@ -76,10 +76,10 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | Suspicious "Mourner" Queue Decal | (256, 32) | 96x32 | Club wear, 11:40 PM |
 | Yelp-Style Review Card, 847 Reviews | (256, 64) | 96x32 | The secret is extremely findable |
 | 4.2-Star Plaque, Weathered | (352, 32) | 96x32 | Mounted by the gate, ignored by everyone |
-| Ticket Stub | (352, 64) | 48x32 | The €5 pass, retained |
+| Ticket Stub | (352, 64) | 48x32 | The 5 Sovs pass, retained |
 | Cover Charge Sign | (400, 64) | 48x32 | Says "donation" |
 | Visitor Pass Kiosk | (448, 0) | 64x96 | Where the "cemetery pass" is sold |
-| "Composer's Rest" Pass Board €5 | (512, 0) | 96x32 | Basically club cover |
+| "Composer's Rest" Pass Board 5 Sovs | (512, 0) | 96x32 | Basically club cover |
 | Health Inspection Certificate, Framed | (512, 32) | 96x32 | Current, displayed, unread |
 | Tax Compliance Notice | (512, 64) | 96x32 | Fifteen years of them |
 | Tourist Guide With Umbrella | (608, 0) | 48x96 | Explaining "cultural significance" |
@@ -449,7 +449,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | Chadwick, Content Warning Pose | (192, 288) | 64x96 | "DEFINITELY against several laws." |
 | Bradley, Refusing To Dance | (256, 288) | 64x96 | "I refuse to dance." |
 | Bradley, 12% Uncertain | (320, 288) | 64x96 | "There is a 0% probability of actual reanimation." |
-| Theatre Student In Costume, Off-Shift | (384, 288) | 64x96 | €15/hour; the morning-after reality |
+| Theatre Student In Costume, Off-Shift | (384, 288) | 64x96 | 15 Sovs/hour; the morning-after reality |
 | Theatre Student, Ill-Fitting Skeleton Suit | (448, 288) | 64x96 | Seam visible only here, never on the floor |
 
 ### Character Notes:
@@ -511,11 +511,11 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | Dawn Light Shaft | (384, 192) | 64x64 | 5 AM surface exit |
 | Skull Disco Reflection Specks | (448, 192) | 64x64 | Rotating light scatter |
 | Static Fog Frame (Motion-Safe) | (0, 224) | 128x32 | No roll |
-| Non-Flashing Strobe Substitute | (128, 224) | 128x32 | Steady wash replacing the flash |
+| Non-Flashing Strobe Substitute | (128, 224) | 128x32 | Steady wash replacing the flash; selected via entry warning or settings |
 | Reduced-Motion Laser Static | (256, 224) | 128x32 | Fixed fan position |
 
 ### Technical Notes:
-- **The strobe requires a photosensitivity guard.** Default flash rate must not exceed 3Hz, and the Non-Flashing Strobe Substitute must be the *automatic* asset whenever Reduced Motion or Photosensitivity mode is enabled — not an opt-in
+- **The strobe requires a photosensitivity guard (OPT-OUT model, author ruling).** Flashing ships ON by default and must never exceed 3Hz. A prominent photosensitivity warning must appear at location entry BEFORE the dancefloor is visible, and the Non-Flashing Strobe Substitute must be reachable from that warning and from the settings menu. The substitute is also applied automatically whenever Reduced Motion or Photosensitivity mode is already enabled
 - Fog is the heaviest particle load in the location: it is pre-rendered as three looping frames, not simulated
 - Bass Shockwave Rings are the only effect permitted to drive screen shake; the Screen Shake Marker glyph substitutes when shake is disabled
 - Bass-reactive particles read the same beat clock as the glass floor tiles so the whole room pulses together
@@ -556,7 +556,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 ### Items & Consumables:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Cemetery Pass "Composer's Rest" €5 | (0, 176) | 48x32 | Entry item; basically club cover |
+| Cemetery Pass "Composer's Rest" 5 Sovs | (0, 176) | 48x32 | Entry item; basically club cover |
 | Lost Composition | (48, 176) | 48x64 | Enables the peaceful resolution |
 | RIP Your Sobriety | (96, 176) | 32x48 | Powerful but risky drink |
 | Skull Glass | (128, 176) | 32x48 | Bar vessel. IKEA |
@@ -635,7 +635,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Dancefloor and Strobe Zone hazards
 - **Purpose:** Timing disruption as an environmental hazard
 - **Audio Sync:** None
-- **Mobile Optimization:** Automatically replaced by the Non-Flashing Strobe Substitute under Reduced Motion or Photosensitivity settings — not an opt-in
+- **Accessibility:** Flashing is the default (opt-out). Entry warning offers the Non-Flashing Strobe Substitute; the substitute also applies automatically if Reduced Motion or Photosensitivity is already on
 
 ### Fog Roll:
 - **Duration:** 3.0 second cycle
@@ -701,7 +701,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 ### Motion Sensitivity Options:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Non-flashing strobe substitute | (128, 224) | 128x32 | **Automatic**, not opt-in, under Reduced Motion / Photosensitivity |
+| Non-flashing strobe substitute | (128, 224) | 128x32 | Player-selectable via entry warning or settings (opt-out model); auto-applied if Reduced Motion / Photosensitivity already enabled |
 | Static fog frame | (0, 224) | 128x32 | No roll |
 | Reduced-motion laser static | (256, 224) | 128x32 | Fixed fan position |
 | Screen shake marker | (304, 192) | 32x32 | Replaces camera shake entirely |
@@ -758,7 +758,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | Low | Two cross-faded static fog frames, no lasers, non-flashing strobe substitute, static lit floor, 4 static dancers, no wisps, static disco ball, no parallax. **Rhythm Track Bar, beat markers, bass drop cue, and all boss telegraphs are retained at every LOD — they are the game** |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile: "45 FPS target")
+- **Target FPS:** 60 (game-wide standard; location profile predates the 60 FPS ruling)
 - **Max Draw Calls:** 22 per frame (per location profile)
 - **Memory Footprint:** 55 MB maximum (per location profile)
 - **Particle Limit:** 28 (fog 12, bass-reactive 8, bone dust 4, spectral wisps 4 — boss-phase bursts temporarily suspend ambient wisps and bone dust rather than adding to the count)
@@ -929,7 +929,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 ### Delivery Format:
 - **Primary:** Individual PNG files per specifications above
 - **Backup:** Master PSD/layered file with organized layer groups
-- **Documentation:** Animation timing reference sheet (all timings expressed in seconds AND beats at 120 BPM) + parallax layer guide (three layers) + boss phase-transition flow diagram + **photosensitivity compliance note (strobe ≤ 3Hz, automatic substitution asset)**
+- **Documentation:** Animation timing reference sheet (all timings expressed in seconds AND beats at 120 BPM) + parallax layer guide (three layers) + boss phase-transition flow diagram + **photosensitivity compliance note (strobe ≤ 3Hz, entry warning copy, opt-out substitution asset)**
 
 ---
 
@@ -948,7 +948,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - [ ] The Grave Guide's costume fits badly in the same specific way in both frames
 - [ ] The pipe organ reads as converted, not built (original pipework + bolted faders + label-maker strip)
 - [ ] The gaffer-taped cable snake is present and unglamorous
-- [ ] **Strobe assets ship at a maximum 3Hz flash rate with an automatic non-flashing substitute**
+- [ ] **Strobe assets ship at a maximum 3Hz flash rate, with a photosensitivity warning screen at location entry and a player-selectable non-flashing substitute (opt-out model)**
 - [ ] Hazard states (Bass Pit charged, Bone Pile collapsed) differ by geometry, not colour
 - [ ] Accessibility visual alternatives included for all audio cues — every beat has a visual equivalent
 - [ ] File naming follows snake_case convention
@@ -972,12 +972,12 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia and Komponistenfriedhof only; Bassmeister and all tomb occupants are fictional composers — no real composer grave is depicted or mocked |
 | Cultural Specificity | ✅ | Sinfonia's composer-grave tourism, classical-legacy merchandising, and the city's performance culture inverted into an underground venue |
-| Satirical Targets Appropriate | ✅ | Death tourism, themed-nightclub absurdity, and bros convinced they found something secret; the venue's staff are working people (Helga, the Grave Guide, €15/hour theatre students) treated with affection |
-| Seedy Underbelly Present | ✅ | Profile's explicit section: a €5 "cemetery pass" that is club cover, "tips for the dead" going to the owners, and a fifteen-year-old tourist attraction sold as an underground secret |
+| Satirical Targets Appropriate | ✅ | Death tourism, themed-nightclub absurdity, and bros convinced they found something secret; the venue's staff are working people (Helga, the Grave Guide, 15 Sovs/hour theatre students) treated with affection |
+| Seedy Underbelly Present | ✅ | Profile's explicit section: a 5 Sovs "cemetery pass" that is club cover, "tips for the dead" going to the owners, and a fifteen-year-old tourist attraction sold as an underground secret |
 | Gameplay Value Established | ✅ | Full rhythm-combat system, four elemental mini-bosses, three-phase boss with dual resolution, four standard enemy types, four environmental hazards, discovery puzzle, couchsurf host, three selfie spots, eight achievements |
 | Technical Feasibility | ✅ | Eight sheets, four atlases, three LOD tiers, on-demand VIP loading, central beat clock, pre-rendered fog, streamed audio |
-| Mobile Performance Budget | ✅ | 45 FPS / 22 draw calls / 55 MB taken verbatim from the profile's stated budget. Flagged: 45 FPS is below the 60 FPS engine default — confirm deliberate low-end target for a rhythm-critical location, since frame pacing affects timing windows |
-| Accessibility Features | ✅ | Every beat has a visual equivalent; bass drops telegraph 0.5s early; strobe capped at 3Hz with **automatic** non-flashing substitution; shape-coded hazards, weaknesses, and statuses; screen-shake replacement glyph |
+| Mobile Performance Budget | ✅ | 60 FPS / 22 draw calls / 55 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
+| Accessibility Features | ✅ | Every beat has a visual equivalent; bass drops telegraph 0.5s early; strobe capped at 3Hz with an entry-point photosensitivity warning and player-selectable non-flashing substitution (opt-out); shape-coded hazards, weaknesses, and statuses; screen-shake replacement glyph |
 | No Crypto Elements | ✅ | None present, and the profile explicitly confirms "No crypto elements (Death/music satire only)" |
 | Social Media Integration | ✅ | Three documented selfie spots with variants and unlock conditions, seven screenshot moments, twelve quotable lines |
 

@@ -4,6 +4,8 @@
   "npcs": [
     {
       "npc_id": "sinfonia_npc_herr_ober_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Cafe_Sachertorte/npc_herr_ober.md",
+      "sprite_sheet": "herr_ober_waiter.png",
       "display_name": "Herr Ober",
       "role": "head_waiter_cultural_gatekeeper_debt_collector",
       "importance": "primary",
@@ -61,14 +63,14 @@
         "chaos_phase": {
           "gustav_entry": "What is—MEIN GOTT! EIN PFERD!",
           "cake_eaten": "NEIN! NEIN! DAS PFERD FRISST DIE TORTE!",
-          "damage_reaction": "THE TABLES! THE DISPLAY! THIS WILL COST—calculate—€340!",
+          "damage_reaction": "THE TABLES! THE DISPLAY! THIS WILL COST—calculate—340 Sovs!",
           "breakdown": "In thirty years of service, I have never... a HORSE. A HORSE ate the Sachertorte."
         },
         "post_chaos": {
-          "debt_demand": "€340. You will pay this. Now. Or I call the Polizei.",
-          "partial_payment": "€50 received. You still owe €290. I will remember.",
+          "debt_demand": "340 Sovs. You will pay this. Now. Or I call the Polizei.",
+          "partial_payment": "50 Sovs received. You still owe 290 Sovs. I will remember.",
           "full_payment": "...paid in full. You may return. But I will be watching.",
-          "unpaid_return": "You. OUT. Until the €340 is paid, you are not welcome."
+          "unpaid_return": "You. OUT. Until the 340 Sovs is paid, you are not welcome."
         }
       },
       
@@ -167,7 +169,7 @@
     
     {
       "npc_id": "sinfonia_npc_cafe_chess_player_01",
-      "display_name": "Chess Master Helena",
+      "display_name": "Chess Master Greta",
       "role": "minigame_opponent_regular",
       "importance": "secondary",
       
@@ -255,7 +257,7 @@
       
       "dialogue": {
         "debate": [
-          "Him: €36 for two cake slices? That's like... $40?",
+          "Him: 36 Sovs for two cake slices? That's like... $40?",
           "Her: But it's AUTHENTIC. The book says—",
           "Him: I could get cake at Costco for—",
           "Her: *glare*"
@@ -275,7 +277,7 @@
     
     {
       "npc_id": "sinfonia_npc_kitchen_staff_01",
-      "display_name": "Chef Klaus",
+      "display_name": "Chef Konrad",
       "role": "chaos_reactor",
       "importance": "event_only",
       

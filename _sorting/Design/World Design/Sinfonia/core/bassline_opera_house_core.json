@@ -154,13 +154,13 @@
     ],
     "damage_tracking": {
       "enabled": true,
-      "running_total_key": "fiaker_fiasco_damage_euro",
+      "running_total_key": "fiaker_fiasco_damage_sov",
       "backstage_contribution": 2000
     }
   },
   
   "economic_data": {
-    "currency": "euro",
+    "currency": "sovs",
     "gift_shop": {
       "location": "lobby",
       "items": [
@@ -194,7 +194,8 @@
         "negotiated_minimum": 200,
         "charm_threshold": 4
       },
-      "hans_jurgen_insurance_covers": 500
+      "hans_jurgen_path_a_contribution": 500,
+      "hans_jurgen_path_a_contribution_note": "Path A only, applies to the accumulated total. NOT the same pot as the 170 Sovs cafe insurance relief (debt_relief_claimed); the two stack. Authority: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
     }
   },
   

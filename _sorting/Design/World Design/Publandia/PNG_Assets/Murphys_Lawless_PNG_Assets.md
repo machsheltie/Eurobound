@@ -1,7 +1,7 @@
 # Murphy's Lawless - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Murphy's Lawless is the corner shop where Murphy's Law is both the name and the business model — a Dublin-style late-night side-street off-license where everything that can go wrong will, and Murphy will ring it up on a 1987 register while insisting the card machine is broken. This document specifies every PNG asset required to render the shop, Seamus Murphy, his nocturnal clientele, the full cursed inventory, and the side-effect economy that turns 3 AM desperation into gameplay.
+Murphy's Lawless is the corner shop where Murphy's Law is both the name and the business model — a Dublin-style late-night side-street off-license where everything that can go wrong will, and Murphy will ring it up on a 1987 register while insisting the card machine is broken. This document specifies every PNG asset required to render the shop, Rory Murphy, his nocturnal clientele, the full cursed inventory, and the side-effect economy that turns 3 AM desperation into gameplay.
 
 **Location ID:** `publandia_seedy_murphys_lawless_01`
 **Theme:** Late-night desperation purchasing — "If It Can Go Wrong, We Sell It"
@@ -154,7 +154,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 
 ---
 
-## 👴 Sprite Sheet 3: Seamus Murphy — The Nocturnal Observer
+## 👴 Sprite Sheet 3: Rory Murphy — The Nocturnal Observer
 **File:** `murphy_seamus.png`
 **Dimensions:** 384x384 pixels
 
@@ -257,7 +257,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
 | Mystery Wine (Sealed Since '08) | (0, 48) | 32x64 | Dust-coated bottle, label sun-faded illegible. Could be great. Could be vinegar |
-| Murphy's Strong Tall Can | (32, 48) | 32x64 | Ominously tall. €3. "Bad Decision" buff included |
+| Murphy's Strong Tall Can | (32, 48) | 32x64 | Ominously tall. 3 Sovs. "Bad Decision" buff included |
 | MurphyBoost™ Original | (64, 48) | 32x64 | Suspicious Yellow can with lightning bolt drawn slightly wrong |
 | MurphyBoost™ EXTREME | (96, 48) | 32x64 | EXTREME Red, 60% Cardiac Concern, no waiver (there should be) |
 | "Medicinal" Energy Tonic | (128, 48) | 32x64 | Apothecary-shaped bottle, medical claims in tiny print |
@@ -298,7 +298,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Day-Old Sandwich | (96, 0) | 32x32 | "It's been here a while. But it's still here." |
 | Murphy's Mixed Nuts | (128, 0) | 32x32 | One nut always weird |
 | The Weird Nut Close-Up | (160, 0) | 32x32 | Examine payoff: it is not any known nut |
-| Water Bottle (€2) | (192, 0) | 32x32 | "Worth it." — Murphy, correctly |
+| Water Bottle (2 Sovs) | (192, 0) | 32x32 | "Worth it." — Murphy, correctly |
 | Generic Cigarette Pack | (224, 0) | 32x32 | Counter-wall stock |
 
 ### "Medicinal" Items:
@@ -589,7 +589,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Low | Steady lighting frames, static fridge (audio-only rattle), no drips, rain at 5 drops, Enthusiast at 6 fps |
 
 ### Performance Targets:
-- **Target FPS:** 60 (profile floor of 45 FPS treated as the never-drop-below line on minimum-spec devices)
+- **Target FPS:** 60 (profile floor of 60 FPS treated as the never-drop-below line on minimum-spec devices)
 - **Max Draw Calls:** 12 per frame (per the location performance budget)
 - **Memory Footprint:** 30 MB maximum (location budget); asset payload ~16 MB leaves headroom for audio and state
 - **Particle Limit:** 20 (rain, dust motes, and cold-air wisps share the pool)
@@ -671,7 +671,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 1. **The Half-Dead Neon** - "MURPH'S LAWLE" glowing through the mist, apostrophe dangling — instantly recognizable shop-sign comedy
 2. **"Card machine broken (always)"** - The handwritten lie taped next to a working card machine, laminated "No Refunds" sign in frame
 3. **The Risk Display Gag** - Side-by-side sober "RISK: 60%" vs. drunk "RISK: ¯\\_?_/¯" screenshots — the mechanic explains itself
-4. **The Mystery Wine** - A dust-caked bottle, sealed since '08, price tag: €6 — the gamble in still-life
+4. **The Mystery Wine** - A dust-caked bottle, sealed since '08, price tag: 6 Sovs — the gamble in still-life
 5. **The MurphyBoost Enthusiast** - Visibly vibrating NPC mid-testimonial, third EXTREME can in hand
 6. **The Back Room Reveal** - Green-lit shelves of reasonable prices after an entire shop of chaos — the twist that quality existed all along
 

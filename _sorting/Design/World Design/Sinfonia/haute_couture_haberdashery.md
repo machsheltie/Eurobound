@@ -22,7 +22,7 @@
 - **Normal Exit**: Front door (with or without purchase, with or without dignity)
 - **Completion Requirements**: N/A (shop location)
 - **Failure States**: None (they'll take anyone's money)
-- **Progressive Unlocks**: "Valued Client" after €500 spent (private fitting room, advance notice of new stock)
+- **Progressive Unlocks**: "Valued Client" after 500 Sovs spent (private fitting room, advance notice of new stock)
 
 ## Visual Design
 ### Exterior Description
@@ -120,30 +120,30 @@ The shop sees the bros coming:
 **Core Equipment**:
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Formal Gloves | €75 | +2 Charm | Reduces Embarrassed duration by 50% |
-| Conductor's Tuxedo | €300 | +5 Charm, +3 Performance | +15% damage on rhythm-timed attacks |
-| Opera Cape | €200 | +4 Style, +2 Dramatic Flair | Dramatic entrance bonus (+10 Bravado when entering locations) |
-| Ballroom Shoes | €150 | +3 Dance, +2 Speed | +20% Speed during formal events and dance duels |
-| Cultural Critic's Monocle | €175 | +3 INT, +2 Art Authentication | Reveals hidden item values, forgery detection |
-| Maestro's Cufflinks | €125 | +2 Conductor Skills, +2 Musical Timing | +10% rhythm game timing window |
+| Formal Gloves | 75 Sovs | +2 Charm | Reduces Embarrassed duration by 50% |
+| Conductor's Tuxedo | 300 Sovs | +5 Charm, +3 Performance | +15% damage on rhythm-timed attacks |
+| Opera Cape | 200 Sovs | +4 Style, +2 Dramatic Flair | Dramatic entrance bonus (+10 Bravado when entering locations) |
+| Ballroom Shoes | 150 Sovs | +3 Dance, +2 Speed | +20% Speed during formal events and dance duels |
+| Cultural Critic's Monocle | 175 Sovs | +3 INT, +2 Art Authentication | Reveals hidden item values, forgery detection |
+| Maestro's Cufflinks | 125 Sovs | +2 Conductor Skills, +2 Musical Timing | +10% rhythm game timing window |
 
 **Premium Collection** (Valued Client access):
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| The Emperor's Ensemble | €750 | +8 Charm, +5 Style | Automatic respect from all Sinfonia NPCs |
-| Prima Donna Gown | €600 | +6 Charm, +4 Performance | +25% Bravado gains in social encounters |
-| The Phantom's Mask | €400 | +4 Mystery, +3 Charm | Identity hidden in masquerade (+1 social combat round) |
-| Virtuoso's Vest | €350 | +4 Performance, +3 Charm | Musical attacks gain +15% critical chance |
-| Aristocrat's Walking Stick | €250 | +3 Style, +2 Charm | Weapon: 1.2x damage, chance to Embarrass |
+| The Emperor's Ensemble | 750 Sovs | +8 Charm, +5 Style | Automatic respect from all Sinfonia NPCs |
+| Prima Donna Gown | 600 Sovs | +6 Charm, +4 Performance | +25% Bravado gains in social encounters |
+| The Phantom's Mask | 400 Sovs | +4 Mystery, +3 Charm | Identity hidden in masquerade (+1 social combat round) |
+| Virtuoso's Vest | 350 Sovs | +4 Performance, +3 Charm | Musical attacks gain +15% critical chance |
+| Aristocrat's Walking Stick | 250 Sovs | +3 Style, +2 Charm | Weapon: 1.2x damage, chance to Embarrass |
 
 **Accessories**:
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Silk Pocket Square | €50 | +1 Charm | Prevents "Disheveled" status |
-| Pearl Cufflinks | €80 | +1 Style | +5% shop discounts when worn |
-| Velvet Bow Tie | €60 | +1 Charm, +1 Performance | Required for some formal venues |
-| Opera Glasses | €100 | +2 Perception | Ranged advantage in combat, see NPC details |
-| Ivory Fan | €90 | +2 Style | Can fan away status effects (one use per battle) |
+| Silk Pocket Square | 50 Sovs | +1 Charm | Prevents "Disheveled" status |
+| Pearl Cufflinks | 80 Sovs | +1 Style | +5% shop discounts when worn |
+| Velvet Bow Tie | 60 Sovs | +1 Charm, +1 Performance | Required for some formal venues |
+| Opera Glasses | 100 Sovs | +2 Perception | Ranged advantage in combat, see NPC details |
+| Ivory Fan | 90 Sovs | +2 Style | Can fan away status effects (one use per battle) |
 
 ### The Fitting Experience
 
@@ -166,7 +166,7 @@ When trying on equipment:
 
 ### Valued Client System
 
-**Unlocked After**: €500 total spent
+**Unlocked After**: 500 Sovs total spent
 
 **Benefits**:
 - Private fitting room (less public judgment)
@@ -179,20 +179,20 @@ When trying on equipment:
 **Valued Client Tiers**:
 | Tier | Spent | Benefits |
 |------|-------|----------|
-| Client | €0 | Standard treatment |
-| Valued Client | €500 | Private room, 10% off |
-| Distinguished Client | €1000 | 15% off, reserved items |
-| Patron of Fashion | €2000 | 20% off, custom orders available |
+| Client | 0 Sovs | Standard treatment |
+| Valued Client | 500 Sovs | Private room, 10% off |
+| Distinguished Client | 1000 Sovs | 15% off, reserved items |
+| Patron of Fashion | 2000 Sovs | 20% off, custom orders available |
 
 ### Special Services
 
 **Alterations**:
 - Any purchased item can be altered
-- +€50 for "perfect fit" bonus (+1 to primary stat)
+- +50 Sovs for "perfect fit" bonus (+1 to primary stat)
 - Takes in-game time (return later)
 
 **Outfit Consultation**:
-- €100 for full wardrobe advice
+- 100 Sovs for full wardrobe advice
 - Tailor suggests items for your build/class
 - Reveals hidden synergies between equipment
 - Includes backhanded compliments (free)
@@ -215,7 +215,7 @@ When trying on equipment:
 - Before/after comparison
 - Old clothes visible in corner
 - Caption: "The Old Me Is Dead"
-- Requires: Spend €300+ in one visit
+- Requires: Spend 300 Sovs+ in one visit
 
 **"Distinguished Client"** Variant:
 - Private fitting room
@@ -278,19 +278,19 @@ When trying on equipment:
 
 **The Price Reveal**:
 - **Lord Pilsner**: "I'll take the cape! What's the damage?"
-- **Monsieur Aiguille**: "The Opera Cape is €200."
+- **Monsieur Aiguille**: "The Opera Cape is 200 Sovs."
 - **Lord Pilsner**: *stage-whisper to Chadwick and Bradley, audible from the street* "Two hundred. TWO HUNDRED, boys. He has no idea what he's sitting on. Nobody make a face. Act natural."
 - **Chadwick**: *making a face* "We are ROBBING this man."
 - **Lord Pilsner**: *to Aiguille, casual to the point of theatre* "Yeah, alright. I'll take it off your hands. Free up some rack space for you."
 - **Monsieur Aiguille**: "For a transformation. But if value isn't important to you..."
 - **Lord Pilsner**: "I— no, I GET it. It's an INVESTMENT."
 - **Monsieur Aiguille**: *slight smile* "Indeed."
-- **Monsieur Aiguille**: *to the assistant, at entirely normal volume, writing the ticket* "The cape is €200. It has been €200 all season. I should not like the gentleman to feel he had underpaid."
+- **Monsieur Aiguille**: *to the assistant, at entirely normal volume, writing the ticket* "The cape is 200 Sovs. It has been 200 Sovs all season. I should not like the gentleman to feel he had underpaid."
 
 **Post-Purchase**:
 - **Lord Pilsner**: *wearing cape* "I feel like a DIFFERENT PERSON."
 - **Monsieur Aiguille**: "You look like one. My work here is done."
-- **Chadwick**: "EIGHT HUNDRED EUROS, boys — for ALL of it. That's not a receipt, that's a RÉSUMÉ. They don't let you spend that in here unless they can TELL. We came out AHEAD and we're not tourists anymore — we're CLIENTELE."
+- **Chadwick**: "EIGHT HUNDRED SOVS, boys — for ALL of it. That's not a receipt, that's a RÉSUMÉ. They don't let you spend that in here unless they can TELL. We came out AHEAD and we're not tourists anymore — we're CLIENTELE."
 - **Bradley**: "Elevated."
 
 **The Vitrine (PATH A handover — "Nothing Is Getting Through")**:
@@ -314,7 +314,7 @@ When trying on equipment:
 - **"Fashion Critic"**: Monsieur Aiguille asks you to assess others' outfits
 - **"Patron of Fashion"**: Reach maximum client status
 - **"Nothing Is Getting Through"** (`debaucheryville_sidequest_nothing_is_getting_through_01`): this shop is the "HOUSE OF NEEDLES" of Hamstradamus's prophecy (Aiguille = French for "needle"). Three bros arrive from Debaucheryville carrying `the_herp` and are met by the shop's EXISTING Assessment Protocol on first visit — that snub is played completely straight and is not modified for this quest. The Gold Circle Coin in the alcove vitrine is the objective; two resolutions:
-  - **PATH A — "Become Someone Who Belongs Here"**: reach **Valued Client** on the existing €500 tier (no new tier, no new pricing), then complete one absurd errand for Monsieur Aiguille. He opens the vitrine himself, with genuine ceremony (see "The Vitrine (PATH A handover)" under Bros' Reactions) — he respects the Coin considerably more than they do, and always will.
+  - **PATH A — "Become Someone Who Belongs Here"**: reach **Valued Client** on the existing 500 Sovs tier (no new tier, no new pricing), then complete one absurd errand for Monsieur Aiguille. He opens the vitrine himself, with genuine ceremony (see "The Vitrine (PATH A handover)" under Bros' Reactions) — he respects the Coin considerably more than they do, and always will.
   - **PATH B — "Big. Huge. Mistake."**: after-hours infiltration (shop closes 7 PM per Entry Conditions) requiring formal wear purchased from this shop; the marquee beat is three men holding mannequin poses in opera capes on the showroom floor while the night porter (`sinfonia_npc_night_porter_01`) passes with a torch.
 - Quest detail, scene text, and branch logic live in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`. This file registers only the vitrine, the shop-side requirements of both paths, and Aiguille's handover beat.
 
@@ -323,7 +323,7 @@ When trying on equipment:
 - **"Well Dressed"**: Purchase first equipment piece
 - **"Valued Client"**: Reach first status tier
 - **"Patron of Fashion"**: Reach maximum status
-- **"The Transformation"**: Buy complete outfit (€500+)
+- **"The Transformation"**: Buy complete outfit (500 Sovs+)
 - **"Accessorized"**: Own 5+ accessories
 - **"Cape Confidant"**: Buy the Opera Cape
 
@@ -381,42 +381,54 @@ When trying on equipment:
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (8 PNGs)
-- storefront_exterior.png - 512x384 - Shop façade with windows
-- showroom_main.png - 640x512 - Primary shopping area
-- fitting_room.png - 256x384 - Mirror-lined room
-- accessories_alcove.png - 256x256 - Add-on display
-- workshop_visible.png - 384x256 - Glass wall view
-- mannequin_display.png - 192x256 - Formal wear showcase
-- champagne_service.png - 96x96 - Refreshment detail
-- private_fitting.png - 256x384 - VIP room
+> **Authority: `PNG_Assets/Haute_Couture_Haberdashery_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (7 PNGs)
-- monsieur_aiguille.png - 64x96 - Head tailor (assessing)
-- monsieur_aiguille_approval.png - 64x96 - Rare satisfaction
-- monsieur_aiguille_measuring.png - 64x96 - Active fitting
-- shop_assistant.png - 64x96 - Helper NPC
-- night_porter.png - 64x96 - Night porter (PATH B)
-- aristocrat_customer.png - 64x96 - Background elite
-- nervous_tourist.png - 64x96 - Background comparison
+### Required PNG Files (8 sheets)
 
-### UI/Item Sprites (16 PNGs)
-- formal_gloves.png - 32x32 - Accessory
-- conductors_tuxedo.png - 48x64 - Armor
-- opera_cape.png - 48x64 - Armor
-- ballroom_shoes.png - 32x32 - Accessory
-- cultural_critics_monocle.png - 32x32 - Accessory
-- maestros_cufflinks.png - 32x32 - Accessory
-- emperors_ensemble.png - 64x96 - Premium armor
-- prima_donna_gown.png - 64x96 - Premium armor
-- phantoms_mask.png - 48x48 - Premium accessory
-- virtuosos_vest.png - 48x64 - Premium armor
-- aristocrats_walking_stick.png - 32x64 - Weapon
-- silk_pocket_square.png - 24x24 - Small accessory
-- velvet_bow_tie.png - 24x24 - Small accessory
-- opera_glasses.png - 32x32 - Accessory
-- ivory_fan.png - 32x32 - Accessory
-- valued_client_badge.png - 32x32 - Status indicator
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | haute_couture_tileset.png | 1024x512 |
+| 2 | haute_couture_landmarks.png | 512x384 |
+| 3 | monsieur_aiguille.png | 384x288 |
+| 4 | night_porter.png | 256x288 |
+| 5 | haute_couture_npcs.png | 384x288 |
+| 6 | haute_couture_equipment.png | 512x256 |
+| 7 | haute_couture_effects.png | 256x192 |
+| 8 | haute_couture_ui.png | 256x256 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/Haute_Couture_Haberdashery_PNG_Assets.md`.
+
+- `storefront_exterior.png`
+- `showroom_main.png`
+- `fitting_room.png`
+- `accessories_alcove.png`
+- `workshop_visible.png`
+- `mannequin_display.png`
+- `champagne_service.png`
+- `private_fitting.png`
+- `monsieur_aiguille_approval.png`
+- `monsieur_aiguille_measuring.png`
+- `shop_assistant.png`
+- `aristocrat_customer.png`
+- `nervous_tourist.png`
+- `formal_gloves.png`
+- `conductors_tuxedo.png`
+- `opera_cape.png`
+- `ballroom_shoes.png`
+- `cultural_critics_monocle.png`
+- `maestros_cufflinks.png`
+- `emperors_ensemble.png`
+- `prima_donna_gown.png`
+- `phantoms_mask.png`
+- `virtuosos_vest.png`
+- `aristocrats_walking_stick.png`
+- `silk_pocket_square.png`
+- `velvet_bow_tie.png`
+- `opera_glasses.png`
+- `ivory_fan.png`
+- `valued_client_badge.png`
 
 ---
 

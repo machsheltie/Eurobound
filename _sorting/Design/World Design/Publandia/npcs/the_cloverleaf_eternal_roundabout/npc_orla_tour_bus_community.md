@@ -78,7 +78,7 @@ What could be a Lord of the Flies situation has instead become a model of cooper
 > "New arrivals! Wonderful. I'll need to update the census. And schedule their orientation. And assign them temporary seating. And introduce them to the waste management committee. And inform the food truck of dietary requirements. So much to do!"
 
 ### Motivation
-Originally: Go on a tour of Ireland.
+Originally: Go on a tour of Publandia.
 Now: Ensure the community she's built thrives. Keep everyone safe, fed, and organized.
 
 ---
@@ -120,7 +120,7 @@ Now: Ensure the community she's built thrives. Keep everyone safe, fed, and orga
 
 > "First: lane etiquette. Inner lane is fast, outer lane is slow. Middle is for cruising. You'll learn the rhythm."
 
-> "Second: food. The food truck circles the outer lane. Catch it on the south bend. Currency is euros or barter."
+> "Second: food. The food truck circles the outer lane. Catch it on the south bend. Currency is Sovs or barter."
 
 > "Third: waste. See the committee. We take this VERY seriously."
 
@@ -232,7 +232,7 @@ Now: Ensure the community she's built thrives. Keep everyone safe, fed, and orga
 - **Population**: ~30 permanent residents
 - **Duration in Cloverleaf**: 12 years
 - **Government Type**: Democratic council
-- **Economy**: Barter + euros with food truck
+- **Economy**: Barter + Sovs with food truck
 - **Culture**: Surprisingly functional
 
 ---

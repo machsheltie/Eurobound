@@ -3182,7 +3182,7 @@
           "item_id": "shiba_hype",
           "display_name": "Shiba Hype",
           "cost": 10,
-          "currency": "euro",
+          "currency": "sovs",
           "stock": "unlimited",
           "description": "Summons pixelated Shiba barking motivational quotes. +Morale to party. Lasts 3 turns. May distract enemies.",
           "combat_effect": {
@@ -3196,7 +3196,7 @@
           "item_id": "dat_boi_on_unicycle",
           "display_name": "Dat Boi On Unicycle",
           "cost": 5,
-          "currency": "euro",
+          "currency": "sovs",
           "stock": "unlimited",
           "description": "Appears, says 'o shit waddup,' leaves. Does nothing. Pure dopamine hit.",
           "combat_effect": {
@@ -3209,7 +3209,7 @@
           "item_id": "dancing_baby_exe",
           "display_name": "Dancing Baby.exe",
           "cost": 7,
-          "currency": "euro",
+          "currency": "sovs",
           "stock": "unlimited",
           "description": "Temporarily disables enemy buffs by sheer confusion. 33% chance to backfire and apply 'Cringe' to player.",
           "combat_effect": {
@@ -3224,7 +3224,7 @@
           "item_id": "rage_comic_panel",
           "display_name": "Rage Comic Panel",
           "cost": 4,
-          "currency": "euro",
+          "currency": "sovs",
           "stock": "unlimited",
           "description": "Reduces enemy attack by 1 for 1 turn. Only works on NPCs who 'respect classic memes.'",
           "combat_effect": {
@@ -3239,7 +3239,7 @@
           "item_id": "trollface_bomb",
           "display_name": "Trollface Bomb",
           "cost": 13,
-          "currency": "euro",
+          "currency": "sovs",
           "stock": "unlimited",
           "description": "60% chance to detonate with screen-filling LULs; deals psychic damage to enemies. 20% chance to cause player party to argue over meme legality.",
           "combat_effect": {
@@ -3257,7 +3257,7 @@
           "item_id": "xp_ring_from_ebaums_world",
           "display_name": "XP Ring from eBaum's World",
           "cost": 50,
-          "currency": "euro",
+          "currency": "sovs",
           "stock": 1,
           "description": "Grants permanent passive: 'Elite Internet User' — +1 INT, +1 Speed, but -1 Charm with NPCs born after 2003.",
           "equipment_slot": "ring",

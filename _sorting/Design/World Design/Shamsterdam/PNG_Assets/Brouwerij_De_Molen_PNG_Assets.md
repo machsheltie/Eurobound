@@ -1,11 +1,11 @@
 # Brouwerij de Molen - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Brouwerij de Molen ("The Windmill Brewery") is a 350-year-old working windmill in the Shamsterdam countryside converted into a craft brewery mini-dungeon — a spinning building where tourists pay €25 to get dizzy while Brewmaster Hendrik lectures about respecting the grain and a Yeast Golem rises from the grinding floor. This document specifies every PNG asset across the four floors (ground/gift shop, grinding floor boss arena, tasting room, blade level), the exterior and countryside approach, the Yeast Golem boss with all three phases, staff and visitor NPCs, and the tasting/selfie/opener systems. Its satirical essence in a sentence: authentic Dutch heritage weaponized into Instagram bait that charges you to be disoriented.
+Brouwerij de Molen ("The Windmill Brewery") is a 350-year-old working windmill in the Shamsterdam countryside converted into a craft brewery mini-dungeon — a spinning building where tourists pay 25 Sovs to get dizzy while Brewmaster Hendrik lectures about respecting the grain and a Yeast Golem rises from the grinding floor. This document specifies every PNG asset across the four floors (ground/gift shop, grinding floor boss arena, tasting room, blade level), the exterior and countryside approach, the Yeast Golem boss with all three phases, staff and visitor NPCs, and the tasting/selfie/opener systems. Its satirical essence in a sentence: authentic Dutch heritage weaponized into Instagram bait that charges you to be disoriented.
 
 **Location ID:** `shamsterdam_countryside_brouwerij_molen_01`
 **Theme:** "Authentic" experience tourism — paying premium for discomfort disguised as tradition; craft beer pretension; windmill fetishization
-**Zone:** Shamsterdam Countryside (short train ride from central, €8 round trip, views are fields)
+**Zone:** Shamsterdam Countryside (short train ride from central, 8 Sovs round trip, views are fields)
 **Hours:** 11 AM - 8 PM (brewery tour hours, last tour at 6 PM)
 **Primary Function:** Brewery Tour Location #1 / mini-dungeon — Yeast Golem boss battle, tasting flight system with Spin Meter, brewmaster speech endurance challenge, selfie timing mini-game, bottle opener gating (Blarney Trap prerequisite + Windmill opener), "Canal Courage" quest progress
 
@@ -92,11 +92,11 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ### Gift Shop Merchandise:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Branded Glasses Display | (0, 128) | 128x96 | "Molen" glasses €18 (the beer is €6) |
-| Mini Windmill Souvenirs | (128, 128) | 128x96 | €25, made overseas, painted here |
-| Brewmaster's Book Stack | (256, 128) | 96x96 | "Respect The Grain" €35, self-published, unreadable |
-| T-Shirt Rack | (352, 128) | 128x96 | "I SURVIVED THE SPIN" €30 (they know) |
-| Survivor Pack Display | (480, 128) | 96x96 | Motion sickness pills €3 + water €2 = €5 "Survivor Pack" |
+| Branded Glasses Display | (0, 128) | 128x96 | "Molen" glasses 18 Sovs (the beer is 6 Sovs) |
+| Mini Windmill Souvenirs | (128, 128) | 128x96 | 25 Sovs, made overseas, painted here |
+| Brewmaster's Book Stack | (256, 128) | 96x96 | "Respect The Grain" 35 Sovs, self-published, unreadable |
+| T-Shirt Rack | (352, 128) | 128x96 | "I SURVIVED THE SPIN" 30 Sovs (they know) |
+| Survivor Pack Display | (480, 128) | 96x96 | Motion sickness pills 3 Sovs + water 2 Sovs = 5 Sovs "Survivor Pack" |
 
 ### Structure Tiles:
 | Element | Position | Size | Description |
@@ -243,9 +243,9 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 | Hendrik Idle 1-2 | (0, 0) / (64, 0) | 64x96 each | Barrel-chested brewmaster, beard that could filter beer |
 | Hendrik Lecturing 1-4 | (128, 0) / (192, 0) / (256, 0) / (320, 0) | 64x96 each | 40-minute passion, arms conducting the grain |
 | Hendrik Approval 1-2 | (384, 0) / (448, 0) | 64x96 each | Post-golem respect nod |
-| Eva Idle 1-2 | (512, 0) / (576, 0) | 64x96 each | Practical shoes, ready stance |
-| Eva Pointing 1-2 | (640, 0) / (704, 0) | 64x96 each | Directing tour flow |
-| Eva Catch-Ready | (768, 0) | 64x96 | Trained reflexes for dizzy tourists |
+| Tessa Idle 1-2 | (512, 0) / (576, 0) | 64x96 each | Practical shoes, ready stance |
+| Tessa Pointing 1-2 | (640, 0) / (704, 0) | 64x96 each | Directing tour flow |
+| Tessa Catch-Ready | (768, 0) | 64x96 | Trained reflexes for dizzy tourists |
 | Bram Idle 1-2 | (832, 0) / (896, 0) | 64x96 each | Gift shop, slightly bored, always there |
 
 ### Staff & Visitors (Row 1, y=96):
@@ -283,7 +283,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 | Bottle Opener (Static) | (208, 0) | 48x48 | Miniature windmill, brushed copper, "Respect The Grain" |
 | Opener Blade Spin 1-4 | (256, 0) / (304, 0) / (352, 0) / (400, 0) | 48x48 each | Blade arms actually rotate |
 | Tour Stamp "Windmill Wit" | (448, 0) | 64x64 | Keychain stamp — 1 of 2 Shamsterdam breweries |
-| Tasting Token | (384, 256) | 32x32 | Included with €25 tour |
+| Tasting Token | (384, 256) | 32x32 | Included with 25 Sovs tour |
 
 ### UI Panels:
 | Element | Position | Size | Description |
@@ -442,7 +442,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 | Low | Static blade shadows, no dust, no spin shader, staff NPCs only (profile-mandated simplifications) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 18 per frame
 - **Memory Footprint:** 42 MB maximum
 - **Particle Limit:** 25 (grain dust, foam, boss flour clouds)
@@ -459,7 +459,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: TileMap (floors), AnimatedSprite2D (golem, NPCs, mechanisms), CPUParticles2D (grain dust, flour — not GPU), CanvasLayer + warp shader (room spin), Camera2D shake (floor vibration)
-- Special systems: dual bottle-opener gate (Blarney Trap opener = tour access; Windmill opener = stamp/beer access, earned via golem or €22 from Hendrik), Spin Meter accumulator, brewmaster speech skip/Bravado check, selfie timing evaluator, boss phase state machine with fire/alcohol interrupt
+- Special systems: dual bottle-opener gate (Blarney Trap opener = tour access; Windmill opener = stamp/beer access, earned via golem or 22 Sovs from Hendrik), Spin Meter accumulator, brewmaster speech skip/Bravado check, selfie timing evaluator, boss phase state machine with fire/alcohol interrupt
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -487,7 +487,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 | Proeflokaal 't Kansen | Shared stamp/keychain UI style | Brewery tour achievement pairing |
 | The Tolerance Hostel | Windmill Wit bottle (conversation prop) | "The windmill" guest discussions |
 | De Groene Gids | None shared; dialogue reference only | Staff comment on "trying the local breweries" |
-| Train Station (central Shamsterdam) | Train station exterior, countryside strip | €8 round-trip transition scene |
+| Train Station (central Shamsterdam) | Train station exterior, countryside strip | 8 Sovs round-trip transition scene |
 
 ---
 
@@ -507,7 +507,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 
 ### Character Integration Notes:
 - Hendrik dominates rooms — position him centrally, lecture frames large in the composition
-- Eva orbits the tour group edges, always between a tourist and a railing gap
+- Tessa orbits the tour group edges, always between a tourist and a railing gap
 - Visitor NPCs escalate in dishevelment by floor: composed at reception, rail-clutching upstairs
 - The golem must stay comedic-threatening: dough physics, never horror
 
@@ -604,12 +604,12 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 | World Consistency (no real city names) | ✅ | Shamsterdam countryside only; profile's "Amsterdam" mentions are meta design commentary, not in-world assets |
 | Cultural Specificity | ✅ | Dutch windmill heritage tourism + craft beer culture explosion |
 | Satirical Targets Appropriate | ✅ | Brewery pretension and experience-tourists; Dutch heritage and legitimate brewing respected |
-| Seedy Underbelly Present | ✅ | €40 flights in a disorientation machine, comprehensive liability waivers, gift shop funnel |
+| Seedy Underbelly Present | ✅ | 40 Sovs flights in a disorientation machine, comprehensive liability waivers, gift shop funnel |
 | Gameplay Value Established | ✅ | Boss battle, tasting/Spin Meter system, endurance speech, selfie mini-game, opener gating |
 | Technical Feasibility | ✅ | Per-floor scenes, shared rotation driver, shader spin, CPU particles documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 18 draw calls, 42 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 42 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion spin disable, 44px zones |
 | No Crypto Elements | ✅ | Pure traditional brewing; Tier of tech gimmicks absent per profile |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |
 
-**Once these assets are delivered, Brouwerij de Molen becomes Eurobound's first spinning dungeon: a heritage site that fights back with bread, beer, and centrifugal force — and every player leaves with a photo, a stamp, and a navigation debuff they paid €25 for.**
+**Once these assets are delivered, Brouwerij de Molen becomes Eurobound's first spinning dungeon: a heritage site that fights back with bread, beer, and centrifugal force — and every player leaves with a photo, a stamp, and a navigation debuff they paid 25 Sovs for.**

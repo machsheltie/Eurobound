@@ -105,7 +105,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Counter Service Area | (0, 512) | 384x256 | For those who want human interaction (available, not required) |
-| Kitchen Glimpse Window | (384, 512) | 256x192 | Henk restocking, fryer glow, factory efficiency |
+| Kitchen Glimpse Window | (384, 512) | 256x192 | Theo restocking, fryer glow, factory efficiency |
 | Coin Change Machine | (640, 512) | 96x192 | "COIN CHANGE" — always slightly broken, hand-taped note |
 | Standing Ledge | (0, 768) | 384x128 | Minimal eating ledge, not designed for lingering |
 | Sad Stool (x2 variants) | (384, 768) | 128x128 | Two 64x128 stools side by side, both sad |
@@ -162,12 +162,12 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Anouk Counter Idle | (0, 0) | 64x96 | FEBO yellow uniform, efficiency incarnate |
-| Anouk Handing Change | (64, 0) | 64x96 | "Coins? Two euros fifty. There." |
+| Anouk Handing Change | (64, 0) | 64x96 | "Coins? Two Sovs fifty. There." |
 | Anouk Restocking Frame 1 | (128, 0) | 64x96 | Loading a slot from the rear |
 | Anouk Restocking Frame 2 | (192, 0) | 64x96 | Slot closed, next item |
 | Anouk Recognition Nod | (256, 0) | 64x96 | FEBO Regular status acknowledgment |
-| Henk Kitchen Glimpse Frame 1 | (320, 0) | 64x96 | Perpetual motion, fry basket up |
-| Henk Kitchen Glimpse Frame 2 | (384, 0) | 64x96 | Fry basket down, restock pivot |
+| Theo Kitchen Glimpse Frame 1 | (320, 0) | 64x96 | Perpetual motion, fry basket up |
+| Theo Kitchen Glimpse Frame 2 | (384, 0) | 64x96 | Fry basket down, restock pivot |
 
 ### Customers:
 | Element | Position | Size | Description |
@@ -209,7 +209,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | Compartment Steam (Large) | (352, 0) | 64x64 | Steam burst on door open, 1-shot |
 | Glass Condensation Overlay | (416, 0) | 64x64 | Tileable fog for lower compartments |
 | Fluorescent Flicker Strip | (0, 64) | 128x32 | Two 64x32 tube states for subtle interior flicker |
-| Fryer Glow (Kitchen Window) | (128, 64) | 64x64 | Warm pulse behind Henk |
+| Fryer Glow (Kitchen Window) | (128, 64) | 64x64 | Warm pulse behind Theo |
 | 3 AM Atmosphere Gradient | (192, 64) | 256x128 | Stretchable warm-haze overlay: fluorescent lights feel warmer, strangers feel like friends |
 | Munchies Shimmer | (448, 64) | 64x64 | Subtle rainbow edge for Munchies Pipeline food |
 | Hot-Bite Steam Sting | (0, 96) | 32x32 | Kroket temperature surprise puff |
@@ -232,7 +232,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Wall Navigation Panel | (0, 0) | 256x256 | Compartment selection grid mirroring THE WALL, item names + prices |
-| Coin Insertion Prompt | (256, 0) | 128x64 | "€2.50 — Insert Coins" with coin-tap zone |
+| Coin Insertion Prompt | (256, 0) | 128x64 | "3 Sovs — Insert Coins" with coin-tap zone |
 | Handle Turn Prompt | (256, 64) | 128x64 | Rotational swipe indicator |
 | Food Acquired Popup | (256, 128) | 128x96 | Item obtained card with food icon slot |
 | Mystery Reveal Panel | (384, 0) | 128x128 | "What did you get?" reveal frame |
@@ -284,7 +284,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Audio Sync:** Soft slot-thunk on frame 2
 - **Mobile Optimization:** Ambient cycle rate halved on Low LOD
 
-### Henk Kitchen Loop (Sheet 5):
+### Theo Kitchen Loop (Sheet 5):
 - **Duration:** 1.6 seconds per cycle (0.8s per frame)
 - **Frames:** 2
 - **Pattern:** Continuous loop, glimpsed through window
@@ -376,10 +376,10 @@ assets/sprites/locations/shamsterdam/febo_automat/
 |-------|-------------|
 | High | Full steam, flicker, restock ambients, 3 AM breathing overlay, munchies shimmer |
 | Medium | Steam bursts only, flicker off, ambients at half rate |
-| Low | Static steam/crowd/Henk, fixed 3 AM alpha, door frames only (profile: simplified steam, static crowd, reduced compartment animations) |
+| Low | Static steam/crowd/Theo, fixed 3 AM alpha, door frames only (profile: simplified steam, static crowd, reduced compartment animations) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 34 MB maximum
 - **Particle Limit:** 15 (steam, condensation drips, fryer glow motes)
@@ -420,7 +420,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| De Groene Gids | Munchies shimmer pipeline | Food HP +50%; "best thing I've ever eaten" (€2 kroket) |
+| De Groene Gids | Munchies shimmer pipeline | Food HP +50%; "best thing I've ever eaten" (2 Sovs kroket) |
 | Casa Rosé | Standing ledge as processing space | Post-show neutral-zone dialogue triggers |
 | The Tolerance Hostel | Food acquired popup referenced in kitchen talk | Late-night discovery conversations |
 | Proeflokaal 't Kansen | Grease-absorption food effects | Reduces The Shakes debuff duration |
@@ -444,7 +444,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 
 ### Character Integration Notes:
 - Anouk stays behind the counter; her Recognition Nod is the location's emotional payoff
-- Henk exists only through the kitchen window — the wall provides, he sustains
+- Theo exists only through the kitchen window — the wall provides, he sustains
 - The Philosopher renders slightly closer to camera at 3 AM; his kroket is held like a relic
 - Crowd blocks must read as community, not obstacle — everyone at the wall is in this together
 
@@ -464,7 +464,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - "The kroket... it is warm... like... like the universe was once warm... you know?"
 - "Yes, that's meat. Probably."
 - "You belong to the wall now. The wall belongs to you."
-- "This is better than €18 pancakes. I need to DOCUMENT this realization."
+- "This is better than 18 Sovs pancakes. I need to DOCUMENT this realization."
 
 ---
 
@@ -542,7 +542,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | Seedy Underbelly Present | ✅ | 24-hour enabling of questionable choices, munchies pipeline, coin-operated regret |
 | Gameplay Value Established | ✅ | Wall interaction system, Mystery gamble, time-based crowds, status effects, Regular track |
 | Technical Feasibility | ✅ | Slot-overlay architecture, crowd blocks, static fallbacks all documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, no-flicker/no-shimmer modes, 44px touch zones |
 | No Crypto Elements | ✅ | Pure coin-operated tradition; the machines don't even take card |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |

@@ -1,7 +1,7 @@
 # Plot Armor Provisions - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Plot Armor Provisions is the food cart that knows it's keeping you alive for the story — a warm, cheerful, suspiciously well-placed street vendor where Siobhan Murphy serves hearty Irish comfort food, maximum HP restoration, and the gentle, never-quite-stated certainty that you're the main character. This document specifies every PNG needed to sell the gag: the cart is cozy, the stew is perfect, the menu changes before the game tells you why, and nobody — nobody — questions the placement.
+Plot Armor Provisions is the food cart that knows it's keeping you alive for the story — a warm, cheerful, suspiciously well-placed street vendor where Deirdre Murphy serves hearty Irish comfort food, maximum HP restoration, and the gentle, never-quite-stated certainty that you're the main character. This document specifies every PNG needed to sell the gag: the cart is cozy, the stew is perfect, the menu changes before the game tells you why, and nobody — nobody — questions the placement.
 
 **Location ID:** `publandia_vendor_plot_armor_01`
 **Theme:** RPG vendor convenience made flesh — plot armor in delicious edible form, meta-awareness played completely sincere
@@ -20,7 +20,7 @@ Plot Armor Provisions is the food cart that knows it's keeping you alive for the
 | Hero Gold | #FFD700 | Shield-and-fork logo, Plot Essential badge, suggestion sparkle |
 | Chalk White | #F5F5F0 | Chalkboard lettering, menu board text |
 | Market Mist Gray | #B0C4DE | Cobblestone Market Street mist, cool backdrop the cart glows against |
-| Knowing Green | #2E8B57 | Siobhan's shawl, off-menu card accents, chime visual |
+| Knowing Green | #2E8B57 | Deirdre's shawl, off-menu card accents, chime visual |
 | Meta Violet | #9370DB | Fourth-wall wobble indicator, mysterious chime glyph |
 
 ---
@@ -32,7 +32,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 │   ├── plot_armor_cart.png
 │   └── provisions_stations.png
 ├── npcs/
-│   ├── siobhan_murphy.png
+│   ├── deirdre_murphy.png
 │   └── provision_customers.png
 ├── objects/
 │   └── provisions_items.png
@@ -108,7 +108,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Pasties Tray | (64, 160) | 64x32 | Various fillings, all of them correct |
 | Sandwich Stack | (128, 160) | 64x32 | Hearty sandwiches in confident piles |
 | Emergency Provisions (Wrapped) | (192, 160) | 64x32 | Travel-wrapped parcels labeled for emergencies you haven't had yet |
-| Price Tag Set | (256, 160) | 64x32 | €6-€40 range, handwritten, non-negotiable, fair |
+| Price Tag Set | (256, 160) | 64x32 | 6-40 Sovs range, handwritten, non-negotiable, fair |
 | Soup Label Set | (320, 160) | 64x32 | Rotating chalk labels for the daily soup |
 
 ### The Adaptive Menu Board:
@@ -121,7 +121,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Swap Panel: The Second Wind | (288, 192) | 96x32 | Slides in when player HP/SP runs low |
 | Swap Panel: Plot Convenience Pie | (0, 224) | 96x32 | Slides in before crucial decisions |
 | Swap Panel: The Protagonist's Portion | (96, 224) | 96x32 | Slides in at main quest milestones — Hero Gold border |
-| Swap Panel: Today's Special Chalk | (192, 224) | 96x32 | "Whatever You Need Right Now" in Siobhan's handwriting |
+| Swap Panel: Today's Special Chalk | (192, 224) | 96x32 | "Whatever You Need Right Now" in Deirdre's handwriting |
 | Swap Panel: Blank Chalk | (288, 224) | 96x32 | Clean slate panel for future events the board already knows about |
 
 ### Technical Notes:
@@ -131,11 +131,11 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 
 ---
 
-## 👩‍🍳 Sprite Sheet 3: Siobhan Murphy
-**File:** `siobhan_murphy.png`
+## 👩‍🍳 Sprite Sheet 3: Deirdre Murphy
+**File:** `deirdre_murphy.png`
 **Dimensions:** 384x256 pixels
 
-### Siobhan States:
+### Deirdre States:
 | State | Position | Size | Description |
 |-------|----------|------|-------------|
 | Warm Default | (0, 0) | 96x128 | 50s Irish woman, apron, shawl, warm smile — maternal HQ |
@@ -143,7 +143,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Serving Handoff | (192, 0) | 96x128 | Bowl extended across the counter, steam trailing |
 | Suggestion Pose | (288, 0) | 96x128 | One finger raised toward the menu board: "You'll want the Pre-Fight Fuel. Trust me." |
 
-### Siobhan Details:
+### Deirdre Details:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Apron & Shawl | (0, 128) | 64x64 | Warm Cream apron, Knowing Green shawl texture |
@@ -161,7 +161,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Portrait Cryptic | (128, 192) | 64x48 | For "The cart goes where it's needed. I follow the cart. The cart knows." |
 | Portrait Reassuring | (192, 192) | 64x48 | "You're going to be fine. You're the protagonist." |
 | Plot Essential Greeting Card | (256, 192) | 128x48 | Name-greeting banner shown once Plot Essential status unlocks — she knows your name now |
-| Warm Rim-Light Strip | (0, 240) | 384x16 | Reusable Hearth Orange rim-light band applied to Siobhan against the mist |
+| Warm Rim-Light Strip | (0, 240) | 384x16 | Reusable Hearth Orange rim-light band applied to Deirdre against the mist |
 
 ### Technical Notes:
 - The Knowing Smile must be a small change from Warm Default — two pixels of eyelid, no eyebrow theatrics; the horror is in the subtlety
@@ -217,43 +217,43 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 ### Standard Fare (Always Available):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Irish Stew | (0, 0) | 32x32 | €8, +40 HP — classic, reliable, warm |
-| Meat Pie | (32, 0) | 32x32 | €10, +50 HP — substantial, portable |
-| Sausage Roll | (64, 0) | 32x32 | €6, +30 HP — quick, satisfying, take two |
-| Beef & Guinness Pie | (96, 0) | 32x32 | €12, +60 HP — premium restoration |
-| Shepherd's Pie | (128, 0) | 32x32 | €10, +50 HP — comfort food maximum |
-| Full Irish (Portable) | (160, 0) | 48x32 | €15, +80 HP, cures Hungover — the complete recovery |
+| Irish Stew | (0, 0) | 32x32 | 8 Sovs, +40 HP — classic, reliable, warm |
+| Meat Pie | (32, 0) | 32x32 | 10 Sovs, +50 HP — substantial, portable |
+| Sausage Roll | (64, 0) | 32x32 | 6 Sovs, +30 HP — quick, satisfying, take two |
+| Beef & Guinness Pie | (96, 0) | 32x32 | 12 Sovs, +60 HP — premium restoration |
+| Shepherd's Pie | (128, 0) | 32x32 | 10 Sovs, +50 HP — comfort food maximum |
+| Full Irish (Portable) | (160, 0) | 48x32 | 15 Sovs, +80 HP, cures Hungover — the complete recovery |
 | Emergency Provision Parcel | (208, 0) | 48x32 | Wrapped-for-travel inventory icon of the display case parcels |
 
 ### Situational Specials (Appear When Needed):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Pre-Fight Fuel | (0, 32) | 32x32 | €12, +50 HP, +10 Attack for one battle — combat approaches |
-| Liquid Fortitude Stew | (32, 32) | 32x32 | €15, +60 HP, Fear immunity 30 min — boss area nearby |
-| The Second Wind | (64, 32) | 32x32 | €18, +70 HP, +20 SP, removes fatigue — for rough times |
-| Plot Convenience Pie | (96, 32) | 32x32 | €20, +80 HP, +5% Luck for 1 hour — think clearly, eat first |
-| The Protagonist's Portion | (128, 32) | 48x48 | €25, full HP restore, +all stats 30 min — the big one, Hero Gold plating |
+| Pre-Fight Fuel | (0, 32) | 32x32 | 12 Sovs, +50 HP, +10 Attack for one battle — combat approaches |
+| Liquid Fortitude Stew | (32, 32) | 32x32 | 15 Sovs, +60 HP, Fear immunity 30 min — boss area nearby |
+| The Second Wind | (64, 32) | 32x32 | 18 Sovs, +70 HP, +20 SP, removes fatigue — for rough times |
+| Plot Convenience Pie | (96, 32) | 32x32 | 20 Sovs, +80 HP, +5% Luck for 1 hour — think clearly, eat first |
+| The Protagonist's Portion | (128, 32) | 48x48 | 25 Sovs, full HP restore, +all stats 30 min — the big one, Hero Gold plating |
 
 ### Off-Menu Items (Plot Essential Status Required):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Narrative Insurance | (176, 32) | 32x32 | €30, survive one fatal blow per day — "Just in case." |
-| The Retcon Roast | (208, 32) | 32x32 | €25, removes one recent bad decision's consequences — "Everyone deserves a second draft." |
-| Destiny's Dumpling | (176, 64) | 32x32 | €35, next critical roll guaranteed — "Some moments matter more." |
-| The Epilogue Entrée | (208, 64) | 32x32 | €40, full restore + preview of good ending — "You're going to be fine. I've seen it." |
+| Narrative Insurance | (176, 32) | 32x32 | 30 Sovs, survive one fatal blow per day — "Just in case." |
+| The Retcon Roast | (208, 32) | 32x32 | 25 Sovs, removes one recent bad decision's consequences — "Everyone deserves a second draft." |
+| Destiny's Dumpling | (176, 64) | 32x32 | 35 Sovs, next critical roll guaranteed — "Some moments matter more." |
+| The Epilogue Entrée | (208, 64) | 32x32 | 40 Sovs, full restore + preview of good ending — "You're going to be fine. I've seen it." |
 
 ### Presentation & Shop Dressing:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Suggested Item Glow Ring | (0, 64) | 32x32 | Hero Gold ring framing whatever Siobhan recommends |
+| Suggested Item Glow Ring | (0, 64) | 32x32 | Hero Gold ring framing whatever Deirdre recommends |
 | Plate & Fork Base | (32, 64) | 32x32 | Serving plate underlay for hot items |
 | Takeaway Wrap | (64, 64) | 32x32 | Paper wrap underlay for portable items |
-| Euro Price Chip | (96, 64) | 32x32 | € coin tag overlay for shop rows |
+| Sovs Price Chip | (96, 64) | 32x32 | Price tag overlay for shop rows: numeral above the lettered word `SOVS`. **The symbol is the word — do not draw a currency mark.** ⚠️ 32x32 will not hold a price figure and `SOVS` legibly. Widen to 64x32, or letter only the numeral on the chip and set `SOVS` once in the shop-row column header. |
 | Suggestion Sparkle Frame 1 | (0, 96) | 32x32 | Gold glint spawn |
 | Suggestion Sparkle Frame 2 | (32, 96) | 32x32 | Glint sweep |
 | Suggestion Sparkle Frame 3 | (64, 96) | 32x32 | Glint peak |
 | Suggestion Sparkle Frame 4 | (96, 96) | 32x32 | Glint fade |
-| Off-Menu Card Back | (128, 96) | 64x32 | Knowing Green card — "Ask Siobhan" — shown before Plot Essential unlock |
+| Off-Menu Card Back | (128, 96) | 64x32 | Knowing Green card — "Ask Deirdre" — shown before Plot Essential unlock |
 | Sold-Out Chalk X | (192, 96) | 32x32 | Chalk cross for panels the story has moved past |
 | Hidden Bonus Star | (224, 96) | 32x32 | Marks the +10% suggestion bonus in purchase feedback |
 
@@ -272,11 +272,11 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Adaptive Menu Panel | (0, 0) | 128x128 | In-game shop popup; item rows populate from current event flags |
-| Suggestion Highlight Frame | (128, 0) | 96x48 | Glowing "Siobhan recommends" border snapped to the suggested row |
+| Suggestion Highlight Frame | (128, 0) | 96x48 | Glowing "Deirdre recommends" border snapped to the suggested row |
 | Plot Essential Badge | (224, 0) | 32x32 | Hero Gold shield-and-fork badge — protagonist rate unlocked |
 | Confirm Button ("Eat First") | (128, 112) | 96x48 | Primary purchase button, 48px tall — over the 44px touch floor |
-| Decline Button ("No Thanks — Bold Choice") | (128, 160) | 96x48 | Decline with mild concern from Siobhan, no penalty |
-| Price Row Strip | (128, 208) | 96x24 | € pricing backplate for menu rows |
+| Decline Button ("No Thanks — Bold Choice") | (128, 160) | 96x48 | Decline with mild concern from Deirdre, no penalty |
+| Price Row Strip | (128, 208) | 96x24 | `N SOVS` pricing backplate for menu rows — word lettered, no currency mark |
 | Swap Flash Frame 1 | (128, 232) | 32x24 | Menu row refresh glint when inventory adapts |
 | Swap Flash Frame 2 | (160, 232) | 32x24 | Glint sweep |
 | Swap Flash Frame 3 | (192, 232) | 32x24 | Glint settle |
@@ -286,7 +286,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 |---------|----------|------|-------------|
 | Well Fed Icon | (128, 48) | 32x32 | Steaming bowl — major HP restoration, +10% healing 1 hour |
 | Plot Protected Icon | (160, 48) | 32x32 | Shield-and-fork — ate before a major event, hidden survival bonus |
-| Siobhan's Suggestion Icon | (192, 48) | 32x32 | Gold check — followed the recommendation, +10% item effect |
+| Deirdre's Suggestion Icon | (192, 48) | 32x32 | Gold check — followed the recommendation, +10% item effect |
 | Narrative Nourished Icon | (224, 48) | 32x32 | Green laurel — Plot Essential status, ongoing minor luck |
 
 ### Meta-Moment Indicators:
@@ -295,7 +295,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Fourth-Wall Wobble Frame 1 | (128, 80) | 32x32 | Screen-corner glyph shivers — she said something too knowing |
 | Fourth-Wall Wobble Frame 2 | (160, 80) | 32x32 | Wobble peak, Meta Violet fringe |
 | Fourth-Wall Wobble Frame 3 | (192, 80) | 32x32 | Settle — everything is fine, eat your stew |
-| Mysterious Chime Glyph | (224, 80) | 32x32 | Violet star-note shown when Siobhan "knows" something |
+| Mysterious Chime Glyph | (224, 80) | 32x32 | Violet star-note shown when Deirdre "knows" something |
 | Fourth-Wall Ripple Overlay | (224, 112) | 32x96 | Vertical screen-edge ripple strip for the meta moment |
 | Warm Vignette Corner | (224, 208) | 32x48 | Corner warmth overlay while standing at the cart |
 
@@ -309,7 +309,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Warm Glow Radial | (0, 176) | 64x48 | Hearth-light radial for cart lanterns |
 | Hearth Flicker Frame A | (64, 176) | 32x48 | Gentle lantern breathing, bright |
 | Hearth Flicker Frame B | (96, 176) | 32x48 | Gentle lantern breathing, dim |
-| Knowing-Chime Ring Frame 1 | (0, 224) | 32x32 | Violet ring spawn at Siobhan's head height |
+| Knowing-Chime Ring Frame 1 | (0, 224) | 32x32 | Violet ring spawn at Deirdre's head height |
 | Knowing-Chime Ring Frame 2 | (32, 224) | 32x32 | Ring expansion |
 | Knowing-Chime Ring Frame 3 | (64, 224) | 32x32 | Ring fade — the sound of narrative convenience, visualized |
 | Market Mist Wisp | (96, 224) | 32x32 | Drifting Cobblestone Market Street mist particle |
@@ -338,7 +338,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Pattern:** Single ease-in transition, held, eased out — never a snap
 - **Trigger:** Player approach when a tracked event flag is active; also on any "how did you know" dialogue branch
 - **Purpose:** The entire location in one expression — she knows, she won't say, the smile is kind
-- **Audio Sync:** Siobhan's knowing "hmm" lands exactly at the smile's peak
+- **Audio Sync:** Deirdre's knowing "hmm" lands exactly at the smile's peak
 - **Mobile Optimization:** None needed (2-frame swap)
 
 ### Menu Board Item Swap (Event Approaching):
@@ -363,7 +363,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Duration:** 0.8 seconds, repeats every 6 seconds while unpurchased
 - **Frames:** 4 (Sparkle Frames 1 → 2 → 3 → 4)
 - **Pattern:** Single glint sweep across the suggested item, then rest
-- **Trigger:** Siobhan's recommendation issued; clears on purchase or decline
+- **Trigger:** Deirdre's recommendation issued; clears on purchase or decline
 - **Purpose:** Marks the +10% bonus item without a tutorial popup — trust the gold
 - **Audio Sync:** Recommendation "ping" on first cycle only
 - **Mobile Optimization:** Repeat interval extends to 12 seconds on low LOD
@@ -397,7 +397,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 |---------|----------|------|-------------|
 | Adaptive Menu Panel, Bold | (0, 0) | 96x64 | Thick-bordered menu popup with enlarged rows and high-contrast pricing |
 | Suggestion Highlight, Bold | (96, 0) | 96x64 | Heavy gold-on-dark outline; recommendation readable without glow effects |
-| Siobhan Interact Outline | (192, 0) | 64x64 | White-on-dark outline for Siobhan's counter interaction hotspot |
+| Deirdre Interact Outline | (192, 0) | 64x64 | White-on-dark outline for Deirdre's counter interaction hotspot |
 | Menu Board Examine Outline | (0, 64) | 64x64 | Outlined board hotspot; swap panels at readable weight |
 | Display Case Hotspot Outline | (64, 64) | 64x64 | Outlined case hotspot with enlarged item silhouettes |
 
@@ -417,16 +417,16 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Stew Bubble Glyph | (0, 128) | 32x32 | Rising bubble icon pulsing with the stew bubbling ambience |
 | Plate-Served Burst | (32, 128) | 32x32 | Radiating plate icon on the food served sound |
 | Recommendation Ping Badge | (64, 128) | 32x32 | Gold exclamation badge for the recommendation "ping" |
-| Knowing "Hmm" Bubble | (96, 128) | 32x32 | Small thought-bubble "hmm" over Siobhan at her knowing beat |
+| Knowing "Hmm" Bubble | (96, 128) | 32x32 | Small thought-bubble "hmm" over Deirdre at her knowing beat |
 | Mysterious Chime Star | (128, 128) | 32x32 | Violet star-burst wherever the mysterious chime fires |
 | Fourth-Wall Crack Glyph | (160, 128) | 32x32 | Hairline-crack icon for the fourth-wall sound effect |
-| Humming Notes Cue | (192, 128) | 32x32 | Drifting note glyphs for Siobhan's pleasant, constant humming |
+| Humming Notes Cue | (192, 128) | 32x32 | Drifting note glyphs for Deirdre's pleasant, constant humming |
 | Sizzle Lines Cue | (224, 128) | 32x32 | Heat-line glyph over the hot station for food sizzling |
-| Subtitle Banner Backplate | (0, 160) | 256x32 | High-contrast caption strip for all Siobhan dialogue and ambient text |
+| Subtitle Banner Backplate | (0, 160) | 256x32 | High-contrast caption strip for all Deirdre dialogue and ambient text |
 
 ### Colorblind Considerations:
 - Suggested items are marked by the gold ring AND the sparkle AND the ping badge — shape, motion, and icon, never hue alone
-- The four status icons (Well Fed / Plot Protected / Siobhan's Suggestion / Narrative Nourished) use four distinct silhouettes: bowl, shield, check, laurel
+- The four status icons (Well Fed / Plot Protected / Deirdre's Suggestion / Narrative Nourished) use four distinct silhouettes: bowl, shield, check, laurel
 - Situational vs. off-menu items differ by card shape (rounded tray vs. Knowing Green card back), not color coding
 - Menu rows, Confirm/Decline buttons, status icons, and all examine hotspots meet the 44px minimum touch target at UI scale
 
@@ -435,7 +435,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 ## 📱 Mobile Optimization
 
 ### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback for legacy devices); Siobhan's portraits and all signage text ship ASTC 4x4 — the fine print must stay legible
+- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback for legacy devices); Deirdre's portraits and all signage text ship ASTC 4x4 — the fine print must stay legible
 - **Android:** ETC2 with alpha
 - **Fallback:** PNG high quality for signage sheet and dialogue portraits (text-critical assets)
 
@@ -443,7 +443,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | plot_armor_environment | plot_armor_cart, provisions_stations | 1024x1024 |
-| plot_armor_characters | siobhan_murphy, provision_customers | 512x512 |
+| plot_armor_characters | deirdre_murphy, provision_customers | 512x512 |
 | plot_armor_items_ui | provisions_items, provisions_ui_fx, provisions_accessibility | 512x512 |
 
 *(Max atlas size 2048x2048 for mobile GPU compatibility — all three atlases sit comfortably under.)*
@@ -462,7 +462,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Particle Limit:** 12 (steam wisps + mist; simplified steam per profile)
 
 ### Performance Notes:
-- Single NPC focus: Siobhan is the only always-animated character; customers load on demand
+- Single NPC focus: Deirdre is the only always-animated character; customers load on demand
 - Adaptive menu swaps are sprite-region changes, not new texture loads — zero streaming hitch when the board "knows"
 - Warm Glow Overlay and Vignette are two static quads with alpha, not shader passes
 - Cart night state is a sprite swap, not a lighting pass
@@ -473,8 +473,8 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
-- Node types: Sprite2D for cart/stations, AnimatedSprite2D for Siobhan and stew loop, CPUParticles2D (not GPU) for steam and market mist, CanvasLayer for menu UI and meta-moment overlay
-- **Hidden Pre-Event Detection System:** the adaptive menu is driven by game event flags — `upcoming_combat`, `upcoming_boss`, `player_low_hp_sp`, `upcoming_decision`, `main_quest_milestone`. On flag change, the menu board swaps in the matching panel (Sheet 2 swap panels), the shop adds the matching situational item (Sheet 5), and Siobhan's first-approach dialogue selects the matching recommendation. The player is never told why. The board just knows.
+- Node types: Sprite2D for cart/stations, AnimatedSprite2D for Deirdre and stew loop, CPUParticles2D (not GPU) for steam and market mist, CanvasLayer for menu UI and meta-moment overlay
+- **Hidden Pre-Event Detection System:** the adaptive menu is driven by game event flags — `upcoming_combat`, `upcoming_boss`, `player_low_hp_sp`, `upcoming_decision`, `main_quest_milestone`. On flag change, the menu board swaps in the matching panel (Sheet 2 swap panels), the shop adds the matching situational item (Sheet 5), and Deirdre's first-approach dialogue selects the matching recommendation. The player is never told why. The board just knows.
 - Suggestion mechanic: purchasing the flagged item applies the +10% bonus and stamps the Hidden Bonus Star in purchase feedback; declining costs nothing but earns Portrait Warm with mild concern
 - State tracking per `plot_armor_provisions_state` (purchases_before_events, plot_essential_unlocked, suggestions_followed, questions_asked, off_menu_purchased)
 - Plot Essential unlock (3 pre-event purchases) swaps in the Greeting Card, enables the Off-Menu Card Back flip, and applies the protagonist discount
@@ -486,19 +486,19 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Hot station idle | Food sizzling (appetizing) | Continuous while location loaded |
 | Serving Handoff | Food served sound | On the handoff frame |
 | Suggestion Sparkle, first cycle | Recommendation "ping" | On Sparkle Frame 1 |
-| Knowing Smile peak | Siobhan's knowing "hmm" | Exactly at smile peak, every time |
+| Knowing Smile peak | Deirdre's knowing "hmm" | Exactly at smile peak, every time |
 | Menu panel slide-in landing | Mysterious chime | On the landing frame |
 | Meta-Moment Wobble (0.9s) | Fourth-wall sound effect | Spans the full wobble |
-| Siobhan idle | Siobhan's humming (pleasant) | Loops under everything; note glyphs optional |
+| Deirdre idle | Deirdre's humming (pleasant) | Loops under everything; note glyphs optional |
 | Approach before major event | Music swells slightly more triumphant | On player entering cart radius while an event flag is active |
 
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| The Siobhan Mystery | Portrait Cryptic, Knowing Smile, Mysterious Chime Glyph, Fourth-Wall Ripple | Every "how do you know" attempt logs a non-answer; quest is permanently, deliberately inconclusive |
+| The Deirdre Mystery | Portrait Cryptic, Knowing Smile, Mysterious Chime Glyph, Fourth-Wall Ripple | Every "how do you know" attempt logs a non-answer; quest is permanently, deliberately inconclusive |
 | Perfect Timing | Plot Protected icon, Serving Handoff, situational item sprites | Survive 5 events after buying her food — Plot Protected icon tracks each one |
 | The Protagonist's Journey | Plot Essential Badge, Greeting Card, Off-Menu Card Back flip, all 4 off-menu items | Achieve Plot Essential status; off-menu tier unlocks with the badge ceremony |
-| Don't Question It | Suggestion Highlight, Suggestion Sparkle, Siobhan's Suggestion icon | Accept 10 recommendations without asking how she knew; asking resets nothing but she notices |
+| Don't Question It | Suggestion Highlight, Suggestion Sparkle, Deirdre's Suggestion icon | Accept 10 recommendations without asking how she knew; asking resets nothing but she notices |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
@@ -525,7 +525,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - Irish comfort food as HP restoration, played completely straight: the stew is genuinely good, and that sincerity is what makes the meta-awareness land
 
 ### Character Integration Notes:
-- Siobhan carries the location on four states and four portraits — warmth first, knowing second, cryptic only on direct questioning; she must never wink at the camera
+- Deirdre carries the location on four states and four portraits — warmth first, knowing second, cryptic only on direct questioning; she must never wink at the camera
 - The Knowing Smile is a two-pixel change. Restraint IS the joke
 - Customer NPCs are a Greek chorus: suspicion, faith, exclusion, gratitude — the four responses to plot armor
 
@@ -536,7 +536,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 ### Screenshot-Worthy Moments:
 1. **The Full Signage Stack** - "Main Characters Eat Free* (*They Don't, But It Sounded Heroic)" above "We Know You're About to Do Something Stupid" — one frame, whole location
 2. **The Menu Board Mid-Swap** - Catching The Protagonist's Portion panel sliding in before the game announces the milestone — proof the board knows
-3. **The Knowing Smile + Chime Glyph** - Siobhan's two-pixel smile with the violet chime star — the warmest jump-scare in the game
+3. **The Knowing Smile + Chime Glyph** - Deirdre's two-pixel smile with the violet chime star — the warmest jump-scare in the game
 4. **The Chalkboard** - "TODAY'S SPECIAL: Whatever You Need Right Now" — infinitely screenshotable, always true
 5. **Locals Walking Past** - The cart glowing like a hearth while every local NPC files by without seeing it
 6. **The Fourth-Wall Wobble** - The screen-corner shiver on "I've seen it." — clip-length perfection
@@ -558,7 +558,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 |---|----------|------------|
 | 1 | plot_armor_cart.png | 512x384 |
 | 2 | provisions_stations.png | 512x256 |
-| 3 | siobhan_murphy.png | 384x256 |
+| 3 | deirdre_murphy.png | 384x256 |
 | 4 | provision_customers.png | 256x256 |
 | 5 | provisions_items.png | 256x128 |
 | 6 | provisions_ui_fx.png | 256x256 |
@@ -572,7 +572,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 ### Required PNG Files:
 - [ ] `plot_armor_cart.png` (512x384)
 - [ ] `provisions_stations.png` (512x256)
-- [ ] `siobhan_murphy.png` (384x256)
+- [ ] `deirdre_murphy.png` (384x256)
 - [ ] `provision_customers.png` (256x256)
 - [ ] `provisions_items.png` (256x128)
 - [ ] `provisions_ui_fx.png` (256x256)
@@ -602,7 +602,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - [ ] Color palette matches hex codes exactly (Hearth Orange #FF7F50, Hero Gold #FFD700, Market Mist Gray #B0C4DE, Meta Violet #9370DB)
 - [ ] The "Main Characters Eat Free*" asterisk fine print is legible on examine and invisible-ish at street scale — the joke has two reads
 - [ ] All eight menu swap panels seat cleanly into the board frame rails; the adaptive swap must look mechanical, not magical
-- [ ] Siobhan's Knowing Smile differs from Warm Default by eyes only — if the smile is broad, redo it
+- [ ] Deirdre's Knowing Smile differs from Warm Default by eyes only — if the smile is broad, redo it
 - [ ] Warm glow reads as safety against the Cobblestone Market Street mist at gameplay zoom
 - [ ] Accessibility visual alternatives included for all audio cues (bubbling, served, ping, hmm, chime, fourth-wall effect)
 - [ ] File naming follows snake_case convention
@@ -625,7 +625,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | World Consistency (no real city names) | ✅ | Publandia only — Cobblestone Market Street, Stoutworks, The Quiet Man, Paddy's Book |
 | Cultural Specificity | ✅ | Irish comfort food as HP restoration; stew, pasties, Full Irish, maternal vendor archetype |
 | Satirical Targets Appropriate | ✅ | Punches at RPG vendor placement, game food mechanics, and plot armor tropes — affectionate parody of game design, not of the Irish |
-| Seedy Underbelly Present | ❌ | Profile states Primary Vice: None — Siobhan is genuinely helpful. The location's edge is meta-unease (she knows things she shouldn't, locals can't see the cart, nobody questions it), not vice or exploitation. Intentional outlier, honestly flagged. |
+| Seedy Underbelly Present | ❌ | Profile states Primary Vice: None — Deirdre is genuinely helpful. The location's edge is meta-unease (she knows things she shouldn't, locals can't see the cart, nobody questions it), not vice or exploitation. Intentional outlier, honestly flagged. |
 | Gameplay Value Established | ✅ | Major HP restoration, adaptive shop, suggestion bonus, Plot Essential progression, 4 quests, 7 achievements |
 | Technical Feasibility | ✅ | Sprite-swap adaptive menu, CPU particles, single always-animated NPC — mobile-safe by design |
 | Mobile Performance Budget | ✅ | 60 FPS target (45 floor), 10 draw calls, 25 MB cap, 12-particle limit — asset set at ~11 MB |
@@ -633,6 +633,6 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | No Crypto Elements | ✅ | PASS — the only tokens here are edible |
 | Social Media Integration | ✅ | Six screenshot moments and seven quotable lines identified |
 
-**Plot Armor Provisions turns the oldest RPG lie — the conveniently placed vendor — into the warmest location in Publandia. Every asset serves the same double read: a genuinely lovely food cart, and a narrative device that is fully aware it's a narrative device. The signage confesses, the menu board predicts, the locals don't see it, and Siobhan smiles two pixels wider because she's already read your save file. When these PNGs land, the player gets fed, healed, protected, and gently unsettled in a single transaction — and comes back before every boss fight anyway, exactly as she knew they would.**
+**Plot Armor Provisions turns the oldest RPG lie — the conveniently placed vendor — into the warmest location in Publandia. Every asset serves the same double read: a genuinely lovely food cart, and a narrative device that is fully aware it's a narrative device. The signage confesses, the menu board predicts, the locals don't see it, and Deirdre smiles two pixels wider because she's already read your save file. When these PNGs land, the player gets fed, healed, protected, and gently unsettled in a single transaction — and comes back before every boss fight anyway, exactly as she knew they would.**
 
 **"Eat your sausage roll, dear."**

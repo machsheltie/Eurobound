@@ -1,7 +1,7 @@
 # The Tolerance Hostel - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Tolerance Hostel tolerates everything except being comfortable, quiet, or dignified. This document specifies every PNG asset for the hostel: the faded green door with the 60%-functional buzzer, the reception where Yusuf works on his film project, the twelve-bed dorm containing THE BUNK, the galley kitchen that becomes a confessional at 8 AM, the two bathrooms serving forty people, the passive-aggressive note ecosystem, the rotating cast of Derek and Takeshi and Brittany and Wolf, and the €50 damage deposit you are never seeing again. Its satirical essence in a sentence: €35 buys you a bed, and everything else costs extra — especially your sanity.
+The Tolerance Hostel tolerates everything except being comfortable, quiet, or dignified. This document specifies every PNG asset for the hostel: the faded green door with the 60%-functional buzzer, the reception where Yusuf works on his film project, the twelve-bed dorm containing THE BUNK, the galley kitchen that becomes a confessional at 8 AM, the two bathrooms serving forty people, the passive-aggressive note ecosystem, the rotating cast of Nigel and Takeshi and Brittany and Wolf, and the 50 Sovs damage deposit you are never seeing again. Its satirical essence in a sentence: 35 Sovs buys you a bed, and everything else costs extra — especially your sanity.
 
 **Location ID:** `shamsterdam_canalring_tolerance_hostel_01`
 **Theme:** Budget travel romanticism versus budget travel reality — "meeting people" means "enduring people"
@@ -96,7 +96,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Reception Desk + Plexiglass | (384, 0) | 256x192 | COVID addition, never removed, now entirely stickers |
 | Key Rack (Missing Keys) | (640, 0) | 128x192 | Visible gaps; some rooms have three-plus copies in circulation |
 | Bulletin Board | (768, 0) | 256x384 | Pub crawl flyers from 2019, one yoga class that never happened, real quest hooks hidden among them |
-| Vending Machine | (384, 192) | 96x192 | €4 water, €6 "emergency toiletries" |
+| Vending Machine | (384, 192) | 96x192 | 4 Sovs water, 6 Sovs "emergency toiletries" |
 | Communal Computer (Windows 7) | (480, 192) | 128x96 | Keyboard is... sticky |
 | Lost & Found / Free Stuff Box | (608, 192) | 128x96 | The distinction stopped mattering years ago |
 | TV (2009, Dutch News) | (480, 288) | 128x96 | Nobody is watching. It has never been off. |
@@ -112,7 +112,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Metal Bunk Bed Unit | (0, 512) | 192x256 | Standard stack, mattresses of varying depression levels |
 | THE BUNK (Detail) | (192, 512) | 256x192 | Bottom corner. Mysterious stain. Draft. Everyone knows which one. |
 | Privacy Curtain (Premium Bunks) | (448, 512) | 96x192 | Four bunks have these. The hierarchy is visible. |
-| Locker Row | (544, 512) | 256x128 | Too small for actual luggage; locks sold separately (€8) |
+| Locker Row | (544, 512) | 256x128 | Too small for actual luggage; locks sold separately (8 Sovs) |
 | Single Power Outlet | (544, 640) | 64x64 | One per four beds. The adapter wars are real. |
 | Adapter War Tangle | (608, 640) | 64x64 | Six devices. One socket. Ongoing diplomacy. |
 | Laundry on Every Surface | (672, 640) | 128x64 | Somebody's, everybody's, nobody's |
@@ -168,7 +168,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Hostel Key (Oversized Keychain) | (0, 0) | 48x64 | Large enough to be embarrassing in public. Deliberately. |
-| Locker Lock | (48, 0) | 32x32 | €8 at reception, roughly 3x market price |
+| Locker Lock | (48, 0) | 32x32 | 8 Sovs at reception, roughly 3x market price |
 | Passport | (48, 32) | 32x32 | Check-in requirement, deposit hostage |
 | Sleep Quality Dice | (80, 0) | 64x64 | The overnight roll, visualised |
 | Breakfast Sad Bread | (144, 0) | 64x32 | "It's bread. And whatever's in the jar." |
@@ -180,7 +180,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Alarm Phone Buzzing F2 | (368, 0) | 32x32 | Still 5 AM. Still buzzing. |
 | Wi-Fi Password Note | (336, 32) | 64x32 | "everything" — lowercase, one word |
 | Shower Hot Water Indicator | (400, 0) | 48x64 | The good shower's secret, learned after two nights |
-| Towel | (448, 0) | 64x64 | €3. You were supposed to bring one. |
+| Towel | (448, 0) | 64x64 | 3 Sovs. You were supposed to bring one. |
 
 ### The Note Ecosystem:
 | Element | Position | Size | Description |
@@ -197,9 +197,9 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 |---------|----------|------|-------------|
 | Sheet | (0, 128) | 64x64 | "Supposed to have sheet. Check lost and found." |
 | Earplugs | (64, 128) | 64x64 | The single best item in the location |
-| Paracetamol Strip | (128, 128) | 64x64 | Derek needs some. Derek always needs some. |
+| Paracetamol Strip | (128, 128) | 64x64 | Nigel needs some. Nigel always needs some. |
 | Phone Charger (Missing) | (192, 128) | 64x64 | Chadwick's. Formerly Chadwick's. |
-| Deposit Receipt (€20 + €50) | (256, 128) | 64x64 | A fee, not a deposit |
+| Deposit Receipt (20 Sovs + 50 Sovs) | (256, 128) | 64x64 | A fee, not a deposit |
 | Yogurt (Contested) | (320, 128) | 64x64 | Ongoing investigation, no suspects, everyone a suspect |
 | Dish Sponge (Aggressive) | (384, 128) | 64x64 | Morning scrubbing, audible from the dorm |
 | Bunk Curtain Pull | (448, 128) | 64x64 | Premium bunk interaction handle |
@@ -240,7 +240,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Yusuf On Laptop (Personal Project) | (64, 0) | 64x96 | Film student from Morocco, working for a free bed |
 | Yusuf Check-In Process | (128, 0) | 64x96 | "Passport. Deposit. Room 3. Bed... whichever one is empty." |
 | Yusuf Key Replacement F1 | (192, 0) | 64x96 | "That's the third one today." |
-| Yusuf Key Replacement F2 | (256, 0) | 64x96 | "Twenty euros. Yeah, I know you paid deposit. Twenty euros." |
+| Yusuf Key Replacement F2 | (256, 0) | 64x96 | "Twenty Sovs. Yeah, I know you paid deposit. Twenty Sovs." |
 | Yusuf Noise Complaint | (320, 0) | 64x96 | "I'll... look into it." *returns to laptop* |
 | Yusuf Wi-Fi Explanation | (384, 0) | 64x96 | "Like we tolerate everything. Get it?" |
 | Yusuf Breakfast Description | (448, 0) | 64x96 | "I don't ask about the jar." |
@@ -304,13 +304,13 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 ### The Rotating Cast:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Derek the Snorer (Awake, Apologetic) | (0, 0) | 64x96 | Manchester. "Sorry mate, was I snoring again?" |
-| Derek Sleeping (Snoring) | (64, 0) | 64x96 | Room 3, Bed 7. Brutal. Nothing to be done, apparently. |
+| Nigel the Snorer (Awake, Apologetic) | (0, 0) | 64x96 | Manchester. "Sorry mate, was I snoring again?" |
+| Nigel Sleeping (Snoring) | (64, 0) | 64x96 | Room 3, Bed 7. Brutal. Nothing to be done, apparently. |
 | Takeshi (5 AM Alarm Guy) | (128, 0) | 64x96 | Japanese businessman on a finding-himself trip |
 | Takeshi Sleeping Through Alarm | (192, 0) | 64x96 | The alarm is for meditation. He sleeps through meditation. |
 | Brittany the Oversharer | (256, 0) | 64x96 | San Diego. Kitchen regular. Morning confessional. |
 | Brittany Mid-Story | (320, 0) | 64x96 | She is always mid-story |
-| Wolf the Veteran Backpacker | (384, 0) | 64x96 | "Just call me Wolf." Actual name: Kevin. |
+| Wolf the Veteran Backpacker | (384, 0) | 64x96 | "Just call me Wolf." Actual name: Gavin. |
 | Wolf Gatekeeping Posture | (448, 0) | 64x96 | Six years. This place is too touristy. |
 | The Couple Who Forgot | (512, 0) | 128x96 | Beds 5 & 6. Whispering. Not quietly enough. |
 | Locker Suspect | (640, 0) | 64x96 | Bed 12. Never gives the same name twice. |
@@ -321,7 +321,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 ### Portraits & Group Blocks:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Derek Portrait | (0, 96) | 128x128 | Genuinely apologetic. Will change nothing. |
+| Nigel Portrait | (0, 96) | 128x128 | Genuinely apologetic. Will change nothing. |
 | Wolf Portrait | (128, 96) | 128x128 | About to gatekeep a place you have not heard of |
 | Brittany Portrait | (256, 96) | 128x128 | "You won't BELIEVE what happened last night." |
 | Takeshi Portrait | (384, 96) | 128x128 | "Tomorrow I will fix." (He will not fix.) |
@@ -371,7 +371,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Dust Motes | (128, 64) | 64x64 | Reception and common room |
 | Passive-Aggressive Energy Shimmer | (192, 64) | 64x64 | Faint yellow field around the note walls |
 | TV Static | (256, 64) | 64x64 | Dutch news, or the absence of it |
-| Vending Machine Hum Glow | (320, 64) | 64x64 | €4 water, illuminated, always on |
+| Vending Machine Hum Glow | (320, 64) | 64x64 | 4 Sovs water, illuminated, always on |
 | Bunk Creak Impact | (384, 64) | 64x64 | Movement detection, one-shot per shift |
 | Fridge Door Light | (448, 64) | 64x64 | Kitchen, night, someone is in the yogurt |
 
@@ -398,7 +398,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Reserve | (480, 192) | 32x64 | Reserved cell, do not paint |
 
 ### Technical Notes:
-- Snore Visualization is character-parented and each sleeping NPC gets a distinct waveform signature — the player learns to identify Derek by shape alone
+- Snore Visualization is character-parented and each sleeping NPC gets a distinct waveform signature — the player learns to identify Nigel by shape alone
 - The 5 AM Alarm Buzz Ring must be visible even in the darkest night grade; it is the location's signature running gag and cannot be lost to the multiply plate
 - Passive-Aggressive Energy Shimmer is an extremely low-amplitude yellow field, on the edge of perception, applied only near note clusters
 - No screen-space shake anywhere; all disruption is communicated by parented overlays and glyphs
@@ -413,9 +413,9 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 ### Check-In & Rooms:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Room Selection UI | (0, 0) | 256x128 | 12-Bed €35 / 4-Bed "Private" €55 / Actual Private €85 / THE BUNK |
+| Room Selection UI | (0, 0) | 256x128 | 12-Bed 35 Sovs / 4-Bed "Private" 55 Sovs / Actual Private 85 Sovs / THE BUNK |
 | "Fully Booked" Stamp | (256, 0) | 128x64 | Lands on Actual Private. Every time. Always. |
-| Deposit Panel | (384, 0) | 128x64 | €20 key + €50 damage, neither of which you will see again |
+| Deposit Panel | (384, 0) | 128x64 | 20 Sovs key + 50 Sovs damage, neither of which you will see again |
 | Check-In Panel | (256, 64) | 256x64 | Passport, deposit, room, "bed... whichever one is empty" |
 
 ### Sleep System:
@@ -472,7 +472,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - **Pattern:** Continuous overnight; multiple sleepers run out of phase, deliberately never syncing
 - **Trigger:** Overnight dorm scene with any sleeping NPC present
 - **Purpose:** Two-plus sources, varying intensity, permanently out of step
-- **Audio Sync:** Each waveform shape maps to a distinct snore sample; Derek's is the loudest and the most recognisable
+- **Audio Sync:** Each waveform shape maps to a distinct snore sample; Nigel's is the loudest and the most recognisable
 - **Mobile Optimization:** Low LOD uses the static snore plate (profile requirement: simplified snoring visualization) and caps audible sources at two
 
 ### The 5 AM Alarm (Sheets 4, 6, 7, 8):
@@ -591,7 +591,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Low | Static flicker (profile requirement), static snore visualization (profile requirement), reduced dorm NPC count (profile requirement), static TV, no dust motes, snapped dice |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 16 per frame
 - **Memory Footprint:** 38 MB maximum
 - **Particle Limit:** 14 (dust motes, bathroom steam, alarm ring motes)
@@ -633,10 +633,10 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Sleep Quality / Save Point | Bed interaction, dice roll UI, sleep meter, disruption popup | Sleeping saves the game and rolls the night; tactical tension between safety and rest |
 | The Kitchen Confessional | Kitchen Morning Block, gossip bubble, Brittany frames | 7-10 AM hint delivery: location tips, quest clues, price warnings, NPC connections |
 | Fridge Politics | Fridge fixture, note variants, fridge politics panel, contested yogurt | Labelling raises safety from 50% to 95%; territory disputes are Bravado checks |
-| Bulletin Board Hooks | Bulletin board fixture and UI, three flyer variants | Taxi share, lost camera at Vondelpark, travel documentary interview (Chadwick very interested) |
+| Bulletin Board Hooks | Bulletin board fixture and UI, three flyer variants | Taxi share, lost camera at Wandelpark, travel documentary interview (Chadwick very interested) |
 | THE BUNK | THE BUNK detail, stain, draft source, bunk silhouette set | Worst position in the dorm; surviving a night grants Bravado and costs HP |
-| Wolf's "Better Spot" (Couchsurf) | Wolf frames and portrait | Complaining to Wolf unlocks a significantly worse accommodation option and a €15 "utilities" debt |
-| The Locker Suspect | Locker Suspect frames, locker row, locker open glyph | Low-probability overnight theft if no €8 lock was purchased |
+| Wolf's "Better Spot" (Couchsurf) | Wolf frames and portrait | Complaining to Wolf unlocks a significantly worse accommodation option and a 15 Sovs "utilities" debt |
+| The Locker Suspect | Locker Suspect frames, locker row, locker open glyph | Low-probability overnight theft if no 8 Sovs lock was purchased |
 | ICQ / Mom Check-In | Wi-Fi note UI, ICQ chip | Hostel network triggers escalating parental concern messages |
 
 ### Cross-Location Dependencies:
@@ -649,7 +649,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Leeman's Döner Palace | Wolf's "tell him Mehmet Wolf sent you" gossip line | Mehmet's Silent Judgment Hold frame plays on that exact line |
 | Proeflokaal 't Kansen | Sawdust-Dusted Clothing overlay persists until the next sleep | Kitchen gossip references "the place with the sawdust" |
 | The Hemp Museum | Gift Shop Bag prop visible in dorm and kitchen | The Cultural Alibi can be challenged at the kitchen table |
-| Venustempel | Photo album privacy flag | Venus Temple photos cannot be shown to Ingrid |
+| Venustempel (Museum Mile) | Photo album privacy flag; Sharing the Love stack decay on rest; Tier 5 bathroom-queue event | Venus Temple *interior* photos cannot be shown to Ingrid; fountain exterior photos are unflagged and freely shared. A full night's sleep removes 2 Sharing the Love stacks. At Tier 5 (Shamsterdam Stomach) the dorm bathroom-queue event fires on the next rest — needs a queue-outside-the-bathroom-door ambient composition. |
 | The Pancake House | Expectation Adjustment status | "Did they explain before you ordered?" changes the exchange |
 
 ---
@@ -675,7 +675,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - Yusuf's default state is working on something that is not hostel business; the laptop glow should be in almost every frame he appears in
 - Ingrid has the narrowest expression range of any NPC in the location, and it still communicates more judgment than anyone else's
 - Maria never faces the player while working; she is authored to move past them
-- Derek is genuinely sorry every single morning and this must read as sincere, which makes it worse
+- Nigel is genuinely sorry every single morning and this must read as sincere, which makes it worse
 - Wolf's gatekeeping posture should be immediately recognisable in silhouette from across the common room
 - The Couple Who Forgot are always mid-whisper and never acknowledge the room
 
@@ -778,12 +778,12 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | World Consistency (no real city names) | ✅ | Shamsterdam Canal Ring Promenade; guest backstories reference Manchester and San Diego as origins, never Shamsterdam by another name |
 | Cultural Specificity | ✅ | Amsterdam hostel culture, cannabis-tourist clientele, canal house architecture, Dutch day-manager directness |
 | Satirical Targets Appropriate | ✅ | Budget-travel romanticism, party-hostel economics, backpacker gatekeeping — never budget travellers or hospitality staff themselves |
-| Seedy Underbelly Present | ✅ | Selling community while profiting from discomfort; €50 "deposit" that is a fee; €8 locks at 3x market; the always-"fully booked" private room |
+| Seedy Underbelly Present | ✅ | Selling community while profiting from discomfort; 50 Sovs "deposit" that is a fee; 8 Sovs locks at 3x market; the always-"fully booked" private room |
 | Gameplay Value Established | ✅ | Save point coupled to a sleep-quality gamble, six-event disruption table, kitchen hint delivery, fridge politics, bathroom queue, bulletin hooks, ICQ trigger, couchsurf branch |
 | Technical Feasibility | ✅ | Paired-room streaming, static flicker/snore fallbacks per profile, reduced dorm NPC counts per profile, pre-composed group blocks |
-| Mobile Performance Budget | ✅ | 45 FPS, 16 draw calls, 38 MB, 14 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 14 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including a non-expanding alarm ring, named sleep tiers, 44px touch zones |
-| No Crypto Elements | ✅ | Pure hostel chaos; the only unrecoverable deposit is the €50 damage one |
+| No Crypto Elements | ✅ | Pure hostel chaos; the only unrecoverable deposit is the 50 Sovs damage one |
 | Social Media Integration | ✅ | 5 screenshot moments + 8 quotable lines identified |
 
-**Once these assets ship, The Tolerance Hostel becomes the game's most honest room: €35 gets you a bed, a save point, and a dice roll; the notes on the fridge tell you everything about everyone who has slept here; and somewhere in the bottom corner, drafty and stained and known to all, THE BUNK is waiting to see how much Bravado you actually have.**
+**Once these assets ship, The Tolerance Hostel becomes the game's most honest room: 35 Sovs gets you a bed, a save point, and a dice roll; the notes on the fridge tell you everything about everyone who has slept here; and somewhere in the bottom corner, drafty and stained and known to all, THE BUNK is waiting to see how much Bravado you actually have.**

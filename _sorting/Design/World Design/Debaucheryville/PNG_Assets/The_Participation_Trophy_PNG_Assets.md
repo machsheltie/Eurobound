@@ -1,7 +1,7 @@
 # The Participation Trophy - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Participation Trophy is the prize redemption booth where the Cirque du Shady's rigged-game economy comes to die: the player converts €25 of failure into 85 tickets, and Yolanda converts 85 tickets into a half-smoked cigar. This document specifies every PNG for the peeling booth, the four-tier prize wall (Grand Prizes: display only, don't ask), the full garbage catalog, and Yolanda's dead-eyed professionalism — including the rarest sprite in the location, her almost-smile.
+The Participation Trophy is the prize redemption booth where the Cirque du Shady's rigged-game economy comes to die: the player converts 25 Sovs of failure into 85 tickets, and Yolanda converts 85 tickets into a half-smoked cigar. This document specifies every PNG for the peeling booth, the four-tier prize wall (Grand Prizes: display only, don't ask), the full garbage catalog, and Yolanda's dead-eyed professionalism — including the rarest sprite in the location, her almost-smile.
 
 **Location ID:** `debaucheryville_circus_participation_trophy_01`
 **Theme:** Carnival prize economics and "everyone's a winner" hollow victories — "You Tried! Here's Proof!"
@@ -288,7 +288,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 ### The Math:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Math Realization Popup | (0, 176) | 128x80 | "You spent €25. Your tickets are worth €4.25." |
+| Math Realization Popup | (0, 176) | 128x80 | "You spent 25 Sovs. Your tickets are worth 4 Sovs." |
 | Prize Comparison Panel | (128, 160) | 128x96 | Tickets vs. direct gold price, side by side |
 
 ---
@@ -422,7 +422,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 | Low | No particles, no Hamstradamus event, direct total display, sigh pose without walk |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 12 per frame
 - **Memory Footprint:** 28 MB maximum
 - **Particle Limit:** 10 (dust, glitter, flies combined)
@@ -500,7 +500,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 
 ### Screenshot-Worthy Moments:
 1. **The 85-Ticket Verdict** - Ticket pile on the counter, Yolanda gesturing at the bottom shelf
-2. **The Math Realization Popup** - "€25 spent. Tickets worth €4.25."
+2. **The Math Realization Popup** - "25 Sovs spent. Tickets worth 4 Sovs."
 3. **The Grand Prize Shelf** - Badly painted Golden Hamster under a broken spotlight, since forever
 4. **The Bros' Walk-of-Shame** - Trio exiting with a glitter hat, seventeen stickers, and dignity nowhere
 5. **The Almost-Smile** - Blink and you miss the rarest sprite in the circus
@@ -591,7 +591,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 | Seedy Underbelly Present | ✅ | Money and time converted into certified garbage, by design |
 | Gameplay Value Established | ✅ | Ticket sink, item catalog with real (bad) stats, 4 quests, Frequent Loser progression, Bravado hooks |
 | Technical Feasibility | ✅ | 7 sheets, data-driven catalog, one presentation timeline — standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 45 FPS / 12 draw calls / 28 MB per profile; estimate ~13 MB |
+| Mobile Performance Budget | ✅ | 60 FPS / 12 draw calls / 28 MB per profile; estimate ~13 MB |
 | Accessibility Features | ✅ | Flash-free Math Moment path, glyphs for every stinger, oversized math text |
 | No Crypto Elements | ✅ | Tickets are paper and regret only (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

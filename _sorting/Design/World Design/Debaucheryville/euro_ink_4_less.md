@@ -253,12 +253,12 @@ Lord Pilsner: "It's ARTISTIC INTERPRETATION."
 ### Tattoo Menu
 | Design | Price | Actual Result | Time |
 |--------|-------|---------------|------|
-| Clock Skeleton (Orloj Death) | €75 | Duck with scythe | 45 min |
-| Clock Rooster | €60 | Chicken | 30 min |
-| Apostle Figure | €50 | Blob person | 25 min |
-| Custom Design | €50-150 | Duck variant | Varies |
-| The Lord Pilsner Special | €50 | Any duck design | 30 min |
-| Matching Duck for Friends | €40 | More ducks | 25 min |
+| Clock Skeleton (Orloj Death) | 75 Sovs | Duck with scythe | 45 min |
+| Clock Rooster | 60 Sovs | Chicken | 30 min |
+| Apostle Figure | 50 Sovs | Blob person | 25 min |
+| Custom Design | 50 Sovs-150 | Duck variant | Varies |
+| The Lord Pilsner Special | 50 Sovs | Any duck design | 30 min |
+| Matching Duck for Friends | 40 Sovs | More ducks | 25 min |
 
 ### Flash Art Available (Actual Results)
 All pre-drawn designs share the same "quality":
@@ -276,7 +276,7 @@ All pre-drawn designs share the same "quality":
 ### "The Lord Pilsner Special"
 After the bros' visit, this becomes the shop's signature offering:
 - Any duck-related design
-- €50 flat rate
+- 50 Sovs flat rate
 - Framed photo of original duck-skeleton in shop
 - Referenced in ALL other Euro Ink locations
 - Advertised: "As seen on famous American tourist!"

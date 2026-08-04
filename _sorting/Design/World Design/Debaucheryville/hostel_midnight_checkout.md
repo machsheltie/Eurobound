@@ -6,7 +6,7 @@
 - **Location ID**: debaucheryville_hostel_midnight_checkout_01
 - **Display Name**: Hostel "Midnight Checkout"
 - **Czech Alias**: "Hostel Půlnoční Odchod"
-- **Satirical Subtitle**: "€12/Night. Your Dignity Costs Extra."
+- **Satirical Subtitle**: "12 Sovs/Night. Your Dignity Costs Extra."
 - **World Location**: Debaucheryville
 - **Area Zone**: Hostel Row, Budget Accommodation District
 - **Location Type**: Primary Accommodation / Rest Point / Confession Hub / Chaos Nexus
@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24/7 reception (theoretically — receptionist presence varies)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: Gold for booking (€12-35/night), valid ID (checked inconsistently)
+- **Item Requirements**: Gold for booking (12 Sovs-35/night), valid ID (checked inconsistently)
 - **Previous Location Requirements**: None (the hostel accepts all who can pay)
 - **Special Conditions**: Room assignment is "random" (actually based on chaos algorithms)
 
@@ -124,7 +124,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 **What is ACTUALLY happening**: Immersive chaos experience with occasional sleep opportunities
 
-**How impaired are they**: Usually arriving drunk (it's Prague), waking up hungover
+**How impaired are they**: Usually arriving drunk (it's Debaucheryville), waking up hungover
 
 **Obvious signs they embrace or ignore**:
 - 12 beds means 11 strangers
@@ -148,11 +148,11 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ### Accommodation Options
 | Room Type | Price/Night | Beds | Sleep Quality | Privacy | Notes |
 |-----------|-------------|------|---------------|---------|-------|
-| 12-Bed Mixed Dorm | €12 | 12 | Poor | None | "The Full Experience" |
-| 8-Bed Mixed Dorm | €16 | 8 | Fair | Minimal | "Slightly Less Chaos" |
-| 6-Bed Mixed Dorm | €20 | 6 | Decent | Some | "The Compromise" |
-| 4-Bed Private-ish | €28 | 4 | Good | Moderate | "We've Given Up on Budget" |
-| Private Room | €45 | 2 | Excellent | Full | "Why Are We at a Hostel?" |
+| 12-Bed Mixed Dorm | 12 Sovs | 12 | Poor | None | "The Full Experience" |
+| 8-Bed Mixed Dorm | 16 Sovs | 8 | Fair | Minimal | "Slightly Less Chaos" |
+| 6-Bed Mixed Dorm | 20 Sovs | 6 | Decent | Some | "The Compromise" |
+| 4-Bed Private-ish | 28 Sovs | 4 | Good | Moderate | "We've Given Up on Budget" |
+| Private Room | 45 Sovs | 2 | Excellent | Full | "Why Are We at a Hostel?" |
 
 ### Sleep Mechanics
 **Sleep Quality Factors**:
@@ -242,10 +242,10 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
   - *at 3 AM*: "You need what? ...okay. Here. Don't tell anyone I'm still awake."
   - "You've been here a week. At this point, you're basically staff. Want coffee?"
 
-**Night Receptionist Petra**
+**Night Receptionist Lenka**
 - **Role**: Night shift (when present), emergency handler, 3 AM philosopher
 - **Appearance**: Early 30s Czech woman, nocturnal energy, coffee-dependent
-- **Background**: Former traveler who got stuck in Prague, "temporarily" working nights
+- **Background**: Former traveler who got stuck in Debaucheryville, "temporarily" working nights
 - **Demeanor**: More alert than she should be, curious about guests, protective of regulars
 - **Dialogue**:
   - "You're still awake? Good. Neither am I. Neither is anyone, really."
@@ -261,11 +261,14 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ### Guest NPCs (Rotating Cast)
 
 **Bunk 3 — "Gap Year Gary" (Australian)**
+- **Primary Location**: Hostel Midnight Checkout, Debaucheryville (this entry — the full confession arc)
+- **Secondary Appearances**: The Bunk & Blunder, Publandia (see `Design/World Design/Publandia/the_bunk_and_blunder.md`)
 - **Status**: 18 months traveling, lost sense of home, eternal optimist
 - **Behavior**: Overly friendly, has done EVERYTHING, knows EVERYONE
 - **Confession**: "I don't know how to go back. What do I even do there? Get a job? In THIS economy?"
 - **Quest Hook**: Help him write a message home
 - **Dialogue**: "Mate, you HAVE to do the absinthe tour. Changed my life. Well, confused my life. Same thing."
+- **Recurring Character Note**: There is exactly one Gap Year Gary. The same Australian turns up in the bros' Publandia hostel — same journal, same profundity, same gap year that has quietly stopped being a gap. If the bros met him in Publandia first, he greets them as old friends and does not remember which city they met in. Precedent: the Euro Ink tattoo artist, who recurs across all four cities.
 
 **Bunk 5 — "Heartbreak Hannah" (German)**
 - **Status**: Traveling to escape, processing a breakup, journaling extensively
@@ -281,11 +284,11 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 - **Quest Hook**: Debate whether he should return to his old life
 - **Dialogue**: "Do you think anyone really KNOWS themselves? Or are we all just... performing identity?"
 
-**Bunk 11 — "Local Lukas" (Czech, Pretending)**
+**Bunk 11 — "Local Lukáš" (Czech, Pretending)**
 - **Status**: Actually local, pretending to be traveler, observing tourists for unclear reasons
-- **Behavior**: Too knowledgeable about Prague, asks suspicious questions
+- **Behavior**: Too knowledgeable about Debaucheryville, asks suspicious questions
 - **Confession**: "I live here. I just... like watching travelers. It reminds me that wonder is possible."
-- **Quest Hook**: Help him actually leave Prague for the first time
+- **Quest Hook**: Help him actually leave Debaucheryville for the first time
 - **Dialogue**: "You should try this place I know. Very authentic. Not tourist. I read about it... online."
 
 **The 3-Week Resident (Unnamed)**
@@ -297,13 +300,13 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ### Original NPC Dialogue
 **Radek's Hostel Philosophy (Extended):**
 - "Four years I've worked here. I've seen 10,000 people at their most vulnerable. Drunk, heartbroken, lost, found, confused, enlightened. All of them in the same bunk beds."
-- "The hostel is democracy. Everyone pays €12, everyone gets the same experience. Rich, poor, famous, nobody. Equal chaos."
+- "The hostel is democracy. Everyone pays 12 Sovs, everyone gets the same experience. Rich, poor, famous, nobody. Equal chaos."
 - "People think hostels are about saving money. They're wrong. Hostels are about giving up control. That's harder than it sounds."
 - "The best conversations happen at 4 AM when everyone's given up on sleep. That's when people stop performing."
 - "Check-in anytime, checkout never. Not really. Nobody ever fully leaves a hostel. Part of you stays in every bunk."
 
 **The Bros' Hostel Midnight Checkout Reactions:**
-- **Lord Pilsner** (arriving): "€12 a night? This is BRILLIANT. This is BUDGET GENIUS."
+- **Lord Pilsner** (arriving): "12 Sovs a night? This is BRILLIANT. This is BUDGET GENIUS."
 - **Lord Pilsner** (3 AM): "I can't— I CAN'T sleep. Someone is— is that ACCORDION?"
 - **Lord Pilsner** (morning): "I feel like I slept on a CONSPIRACY. My back has OPINIONS."
 - **Chadwick**: "12-bed dorm content is GOLD. Real travelers. Real stories. Real... smell."
@@ -357,7 +360,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Snore crescendo, alarm warfare sequence
-- **Character Voice Direction**: Radek's tired efficiency, Petra's night-owl energy
+- **Character Voice Direction**: Radek's tired efficiency, Lenka's night-owl energy
 - **Environmental Comedy**: Kitchen conflict sounds, passive-aggressive note reading
 - **The 3 AM Moment**: Audio shift when deep conversations begin
 
@@ -372,7 +375,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
   - Bunk bed detailed view
   - Bathroom corridor
   - Basement lockers/laundry
-  - Staff NPCs (Radek, Petra)
+  - Staff NPCs (Radek, Lenka)
   - Guest NPCs (rotating cast)
 - **Animation Requirements**:
   - Guest wandering patterns
@@ -433,7 +436,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ### Character Sprites (14 PNGs)
 - radek_receptionist.png - 64x96 - Day shift, thousand-yard stare
 - radek_checking_in.png - 64x96x2 - Registration process
-- petra_night.png - 64x96 - Nocturnal energy
+- lenka_night.png - 64x96 - Nocturnal energy
 - gap_year_gary.png - 64x96 - 18 months and counting
 - heartbreak_hannah.png - 64x96 - Journaling intensifies
 - philosophy_phil.png - 64x96 - Finding himself
@@ -468,4 +471,4 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 ---
 
-*Hostel "Midnight Checkout": Check-in anytime, checkout eventually, sleep never guaranteed. €12 buys you a bed, 11 strangers, one working shower, and stories you'll tell forever. Radek has seen everything. Nothing surprises him anymore.*
+*Hostel "Midnight Checkout": Check-in anytime, checkout eventually, sleep never guaranteed. 12 Sovs buys you a bed, 11 strangers, one working shower, and stories you'll tell forever. Radek has seen everything. Nothing surprises him anymore.*

@@ -189,7 +189,7 @@
       {
         "method": "food_truck_meal",
         "cures": ["frustrated", "hungry"],
-        "cost_euro": "8-25"
+        "cost_sov": "8-25"
       },
       {
         "method": "patrick_conversation",
@@ -319,7 +319,7 @@
       {
         "location": "publandia_outskirts_paddys_premium_motors_01",
         "reference_type": "warning",
-        "npc": "seamus_rental_guy_01",
+        "npc": "fergus_rental_guy_01",
         "dialogue": "The Cloverleaf? Ah. Well. Best of luck to ye."
       },
       {
@@ -343,7 +343,7 @@
     ],
     "character_movements": [
       {
-        "npc": "seamus_rental_guy_01",
+        "npc": "fergus_rental_guy_01",
         "behavior": "references_cloverleaf_survivors_post_completion"
       }
     ],

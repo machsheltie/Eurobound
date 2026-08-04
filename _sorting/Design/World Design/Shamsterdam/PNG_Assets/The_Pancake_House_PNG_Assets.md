@@ -1,7 +1,7 @@
 # The Pancake House - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Pancake House serves genuinely excellent Dutch pannenkoeken to Americans who ordered pancakes, on a canal, at canal prices, with a bread basket nobody asked for. This document specifies every PNG asset for the restaurant: the Delft-framed canal house exterior, the manufactured rustic interior, the terrace with its unadvertised €2/hour heaters, the open kitchen pass where Jan makes one plate-sized pancake every two minutes, the multi-page laminated menu that requires a translation guide (€2, also on the menu), Marleen's knowing smile, Pieter's spek explanation, and the moment the bill says sixty-four euros. Its satirical essence in a sentence: nobody is scamming anybody, the food is good, and the word "pancake" has betrayed you.
+The Pancake House serves genuinely excellent Dutch pannenkoeken to Americans who ordered pancakes, on a canal, at canal prices, with a bread basket nobody asked for. This document specifies every PNG asset for the restaurant: the Delft-framed canal house exterior, the manufactured rustic interior, the terrace with its unadvertised 2 Sovs/hour heaters, the open kitchen pass where Jan makes one plate-sized pancake every two minutes, the multi-page laminated menu that requires a translation guide (2 Sovs, also on the menu), Marleen's knowing smile, Jesse's spek explanation, and the moment the bill says sixty-four Sovs. Its satirical essence in a sentence: nobody is scamming anybody, the food is good, and the word "pancake" has betrayed you.
 
 **Location ID:** `shamsterdam_canalring_pancake_house_01`
 **Theme:** American food expectations meeting Dutch reality — a cultural mismatch monetised at waterfront rates
@@ -57,7 +57,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - Anchor points (document in layer names): kitchen pass at (1472, 448), till at (1728, 640), stairs at (256, 384), table slots at (512, 768) / (832, 768) / (1088, 832) / (448, 960), Delft tile wall at (128, 512), terrace door at (1856, 704)
 - Lighting is warm and deliberately "rustic," which is to say carefully manufactured; the warm interior wash overlay (Sheet 7) sits on top and can be dialled per time-of-day
 - The kitchen pass opening is authored as an alpha cutout so Jan's griddle frames and the kitchen steam (Sheets 5 & 7) composite behind the pass frame
-- Every visible table has a windmill miniature painted in; the €15 breakage fee is never signposted anywhere in the room
+- Every visible table has a windmill miniature painted in; the 15 Sovs breakage fee is never signposted anywhere in the room
 - Copper pans must read as unmistakably unused — no soot, no wear, perfect polish
 
 ---
@@ -93,11 +93,11 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Kitchen Pass View | (384, 0) | 384x256 | Open concept: watch "the magic," which is an assembly line running at industrial efficiency |
 | Copper Pans Ceiling Run | (384, 256) | 384x128 | Tileable horizontal run, decorative only, never used |
 | Wooden Beams Ceiling Run | (384, 384) | 384x128 | Tileable horizontal run, rustic aesthetic |
-| Menu (Physical, Multi-Page) | (768, 0) | 192x384 | Laminated, five languages, overwhelming, translation guide €2 (also on the menu) |
+| Menu (Physical, Multi-Page) | (768, 0) | 192x384 | Laminated, five languages, overwhelming, translation guide 2 Sovs (also on the menu) |
 | Golden Pancake Sign | (960, 0) | 64x128 | Hanging sign, pancake-shaped, gold |
 | Windmill Logo | (960, 128) | 64x128 | Folksy branding element |
 | Delft Door Frame | (960, 256) | 64x128 | Blue tile surround |
-| Chalkboard Special | (768, 384) | 192x128 | "TODAY'S SPECIAL: Bacon & Stroop €17" |
+| Chalkboard Special | (768, 384) | 192x128 | "TODAY'S SPECIAL: Bacon & Stroop 17 Sovs" |
 | Blue Door | (960, 384) | 64x128 | The entrance, "FAMILIES WELCOME" plate at eye level |
 
 ### Interior Décor:
@@ -110,19 +110,19 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Antique Pancake Griddle (Display) | (832, 512) | 192x128 | On display; modern ones do the actual work |
 | Tulips in Delft Vase (Fake) | (512, 608) | 128x96 | Good fakes. Very good fakes. |
 | "As Featured In" Clippings | (832, 640) | 192x128 | 2009-2014. Nothing recent. |
-| Windmill Miniature (Table) | (256, 704) | 64x64 | Don't touch. €15 if broken. Unsignposted. |
+| Windmill Miniature (Table) | (256, 704) | 64x64 | Don't touch. 15 Sovs if broken. Unsignposted. |
 | "Traditional Pancake Making" Photos | (320, 704) | 192x64 | Stock photos. Definitely stock photos. |
 | Steep Dutch Stairs | (512, 704) | 128x64 | To the second dining floor, at an angle that surprises everybody |
 
 ### Terrace & Kitchen Fixtures:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Terrace Heater | (0, 768) | 64x128 | €2/hour. Not advertised. Warm. |
+| Terrace Heater | (0, 768) | 64x128 | 2 Sovs/hour. Not advertised. Warm. |
 | Terrace Table + Chairs | (64, 768) | 192x128 | Premium seating, premium pricing |
 | Canal Railing (Tileable) | (256, 768) | 128x64 | Seamless horizontal run |
 | Reservation Sign | (384, 768) | 128x64 | "Recommended" during peak; walk-ins "tolerated" |
 | Card Machine | (512, 768) | 64x64 | Card accepted, cash preferred |
-| Bread Basket Stand | (576, 768) | 64x64 | Where the €4 lives before it arrives |
+| Bread Basket Stand | (576, 768) | 64x64 | Where the 4 Sovs lives before it arrives |
 | Restaurant Floor Tile (Tileable) | (640, 768) | 128x128 | Worn canal-house board, seamless all edges |
 | Kitchen Griddle (Working) | (768, 768) | 128x128 | Large circular, actual equipment |
 | Batter Dispenser | (896, 768) | 128x128 | Portion controlled. Cost controlled. |
@@ -159,28 +159,28 @@ assets/sprites/locations/shamsterdam/pancake_house/
 ### The Pancakes (Plate-Sized, Thin, One Per Plate):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Kaaspannenkoek (Cheese) | (0, 0) | 128x128 | €14 base — "Classic choice." Cheese Sweats risk. |
-| Spekpannenkoek (Bacon) | (128, 0) | 128x128 | €15 base — cubes, not strips. "Dutch bacon. Very good." |
-| Appelpannenkoek (Apple) | (256, 0) | 128x128 | €15 base — the actual best one, and nobody orders it first |
-| "American Style" Stack | (384, 0) | 128x128 | €22 — three small ones. Still thin. Closest to expectations. |
+| Kaaspannenkoek (Cheese) | (0, 0) | 128x128 | 14 Sovs base — "Classic choice." Cheese Sweats risk. |
+| Spekpannenkoek (Bacon) | (128, 0) | 128x128 | 15 Sovs base — cubes, not strips. "Dutch bacon. Very good." |
+| Appelpannenkoek (Apple) | (256, 0) | 128x128 | 15 Sovs base — the actual best one, and nobody orders it first |
+| "American Style" Stack | (384, 0) | 128x128 | 22 Sovs — three small ones. Still thin. Closest to expectations. |
 
 ### Condiments & Extras:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Syrup Pitcher (Small) | (0, 128) | 48x64 | €3 for more. Same pitcher. It's concentrated. |
+| Syrup Pitcher (Small) | (0, 128) | 48x64 | 3 Sovs for more. Same pitcher. It's concentrated. |
 | Stroop Container | (48, 128) | 48x64 | Dutch syrup, thicker, less maple, genuinely excellent |
-| Whipped Cream Can | (96, 128) | 32x64 | €4. "Fresh. From the can." |
-| Bread Basket | (128, 128) | 96x64 | Complimentary to receive. Not complimentary to keep. €4. |
+| Whipped Cream Can | (96, 128) | 32x64 | 4 Sovs. "Fresh. From the can." |
+| Bread Basket | (128, 128) | 96x64 | Complimentary to receive. Not complimentary to keep. 4 Sovs. |
 | Receipt (Itemised) | (224, 128) | 96x64 | Line by line, all correct, all surprising |
 | Spek Cubes (Close-Up) | (320, 128) | 64x64 | The specificity problem, rendered |
 | Cutlery + Coffee Pair | (384, 128) | 64x64 | Small Dutch knife, small cup |
-| Kid's Pancake | (448, 128) | 64x64 | €12. Same pancake. Smaller plate. |
+| Kid's Pancake | (448, 128) | 64x64 | 12 Sovs. Same pancake. Smaller plate. |
 
 ### Bill, States & Icons:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Toppings Array | (0, 192) | 192x64 | Six 32x64 topping units, each individually priced |
-| Bill / Receipt (The €64 Reveal) | (192, 192) | 96x64 | Long-format bill; the total sits at the bottom where it can be seen coming |
+| Bill / Receipt (The 64 Sovs Reveal) | (192, 192) | 96x64 | Long-format bill; the total sits at the bottom where it can be seen coming |
 | Empty Plate | (288, 192) | 64x64 | Clean-finish state, no complaint, +Bravado |
 | Half-Eaten Pancake | (352, 192) | 64x64 | Mid-meal state — it is, in fact, very filling |
 | Pancake Inventory Icon | (416, 192) | 32x32 | Item icon |
@@ -194,7 +194,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - All four pancake sprites are drawn at the same 128x128 plate footprint with visibly different toppings and the *same thinness* — the Portion Revelation depends on the plate being full and the food being flat
 - The American Style Stack must still read as three thin discs; it is closer to expectations, not equal to them
 - Syrup Pitcher is drawn at genuine scale relative to the plate: it is small, and it is going to stay small
-- Spek Cubes close-up is used as an inset during Pieter's explanation; it must read as appetising, because the food is good — only the expectation is wrong
+- Spek Cubes close-up is used as an inset during Jesse's explanation; it must read as appetising, because the food is good — only the expectation is wrong
 
 ---
 
@@ -216,23 +216,23 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Marleen Knowing Smile F2 | (384, 0) | 64x96 | It lands |
 | Marleen "Of course. Enjoy your meal." | (448, 0) | 64x96 | She tried. She genuinely tried. |
 
-### Server Pieter — Explanation Duty:
+### Server Jesse — Explanation Duty:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Pieter Idle | (0, 96) | 64x96 | Young, efficient, traditional Dutch vest (uniform requirement) |
-| Pieter Order Taking | (64, 96) | 64x96 | Pad out, helpful, not responsible for your expectations |
-| Pieter Spek Explanation F1 | (128, 96) | 64x96 | "The bacon is spek. Cubes." |
-| Pieter Spek Explanation F2 | (192, 96) | 64x96 | "Traditional. Not strips. Is that okay? ...I'll bring the spek." |
-| Pieter Syrup Explanation | (256, 96) | 64x96 | "Maple-FLAVOURED. Yes." |
-| Pieter Bread Basket Clarification | (320, 96) | 64x96 | "Complimentary to receive. Not complimentary to keep. Four euros." |
-| Pieter Bill Delivery | (384, 96) | 64x96 | Brief pause for reaction preparation |
-| Pieter Internal Struggle | (448, 96) | 64x96 | Thought-bubble frame: "Explaining spek is my cardio." |
+| Jesse Idle | (0, 96) | 64x96 | Young, efficient, traditional Dutch vest (uniform requirement) |
+| Jesse Order Taking | (64, 96) | 64x96 | Pad out, helpful, not responsible for your expectations |
+| Jesse Spek Explanation F1 | (128, 96) | 64x96 | "The bacon is spek. Cubes." |
+| Jesse Spek Explanation F2 | (192, 96) | 64x96 | "Traditional. Not strips. Is that okay? ...I'll bring the spek." |
+| Jesse Syrup Explanation | (256, 96) | 64x96 | "Maple-FLAVOURED. Yes." |
+| Jesse Bread Basket Clarification | (320, 96) | 64x96 | "Complimentary to receive. Not complimentary to keep. Four Sovs." |
+| Jesse Bill Delivery | (384, 96) | 64x96 | Brief pause for reaction preparation |
+| Jesse Internal Struggle | (448, 96) | 64x96 | Thought-bubble frame: "Explaining spek is my cardio." |
 
 ### Portraits & Chef Jan:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Marleen Portrait (Dialogue) | (0, 192) | 128x128 | Patient, experienced, has seen every reaction |
-| Pieter Portrait (Dialogue) | (128, 192) | 128x128 | Helpful but not liable |
+| Jesse Portrait (Dialogue) | (128, 192) | 128x128 | Helpful but not liable |
 | Jan Portrait (Dialogue) | (256, 192) | 128x128 | Chef whites, tall hat (theatrical), quietly proud |
 | Jan Chef Idle (Through Pass) | (384, 192) | 64x96 | Framed by the pass cutout |
 | Jan Griddle Work Frame 1 | (448, 192) | 64x96 | Batter poured |
@@ -245,8 +245,8 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Jan Griddle Work Frame 3 (Flip) | (64, 320) | 64x96 | The flip. One every two minutes. Forever. |
 | Jan Professional Nod | (128, 320) | 64x96 | Occasional eye contact, then back to production |
 | Jan Plating | (192, 320) | 64x96 | Toppings arranged from the pre-portioned station |
-| Pieter Carrying Plates | (256, 320) | 64x96 | Two plates, one arm, no drama |
-| Pieter Terrace Route | (320, 320) | 64x96 | Through the door, past the heaters |
+| Jesse Carrying Plates | (256, 320) | 64x96 | Two plates, one arm, no drama |
+| Jesse Terrace Route | (320, 320) | 64x96 | Through the door, past the heaters |
 | Marleen Seating Guests | (384, 320) | 64x96 | Table assignment, menu placement |
 | Marleen Reservation Check | (448, 320) | 64x96 | "Recommended." "Tolerated." |
 
@@ -254,9 +254,9 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Marleen High-Contrast Silhouette | (0, 416) | 64x96 | Accessibility outline variant |
-| Pieter High-Contrast Silhouette | (64, 416) | 64x96 | Accessibility outline variant |
-| Pieter Contest-Charges Response | (128, 416) | 64x96 | Every charge is legitimate. He will explain each one. |
-| Pieter Small Discount Concession | (192, 416) | 64x96 | Bravado success outcome; slightly embarrassed for both of you |
+| Jesse High-Contrast Silhouette | (64, 416) | 64x96 | Accessibility outline variant |
+| Jesse Contest-Charges Response | (128, 416) | 64x96 | Every charge is legitimate. He will explain each one. |
+| Jesse Small Discount Concession | (192, 416) | 64x96 | Bravado success outcome; slightly embarrassed for both of you |
 | Accessibility Reserve Block | (256, 416) | 256x96 | Reserved for high-contrast/audio-cue glyph overflow |
 
 ### Technical Notes:
@@ -336,7 +336,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Canal Breeze Ripple | (0, 64) | 64x64 | Surface motion, terrace only |
 | Boat Wake | (64, 64) | 64x64 | Trails the passing boat sprite |
 | Duck Splash | (128, 64) | 64x64 | Begging escalation |
-| Heater Glow (Terrace) | (192, 64) | 64x64 | Warm. €2/hour. Running right now. |
+| Heater Glow (Terrace) | (192, 64) | 64x64 | Warm. 2 Sovs/hour. Running right now. |
 | Ring Light Bloom (Blogger) | (256, 64) | 64x64 | Character-parented, obnoxious, accurate |
 | Card Machine Beep Flash | (320, 64) | 64x64 | Transaction confirm |
 | Bill Reveal Sting Plate | (384, 64) | 64x64 | A single small dramatic vignette on the bill folder |
@@ -381,7 +381,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 |---------|----------|------|-------------|
 | Menu Navigation UI (Multi-Page) | (0, 0) | 256x256 | Five-language laminated menu, page-turn interaction, base prices only |
 | Page Tabs | (256, 0) | 256x64 | Four 64x64 tabs: Savoury / Sweet / "American Style" / Kids |
-| Topping Extra Cost Indicator | (256, 64) | 128x32 | "+€3" per topping, appears only after selection |
+| Topping Extra Cost Indicator | (256, 64) | 128x32 | "+3 Sovs" per topping, appears only after selection |
 | Terrace Heater Fee Reveal | (384, 64) | 128x32 | Surfaces on the bill, not at seating |
 | Bread Basket Charge Notice | (256, 96) | 256x32 | "Complimentary to receive. Not complimentary to keep." |
 | Order Confirm Panel | (256, 128) | 256x128 | Final selection with base price shown and nothing else |
@@ -435,9 +435,9 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Mobile Optimization:** None needed (one-shot, cheap, load-bearing)
 
 ### The Syrup Situation (Sheets 4, 5, 7):
-- **Duration:** 3.0 seconds (1.2s pour, 0.4s pitcher empty, 1.4s Pieter explanation)
-- **Frames:** Syrup Pour Stream + Pieter Syrup Explanation frame
-- **Pattern:** Repeatable; each "more syrup" request costs €3 and produces the identical pitcher
+- **Duration:** 3.0 seconds (1.2s pour, 0.4s pitcher empty, 1.4s Jesse explanation)
+- **Frames:** Syrup Pour Stream + Jesse Syrup Explanation frame
+- **Pattern:** Repeatable; each "more syrup" request costs 3 Sovs and produces the identical pitcher
 - **Trigger:** Any syrup request
 - **Purpose:** "Maple-FLAVOURED. Yes." The pitcher was always going to be this size.
 - **Audio Sync:** Pour cue 0.0-1.2s; a small hollow note when the pitcher empties at 1.2s
@@ -445,7 +445,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 
 ### The Spek Explanation (Sheets 4 & 5):
 - **Duration:** 3.2 seconds (1.2s F1, 1.2s F2, 0.8s resignation hold)
-- **Frames:** 2 Pieter frames + Spek Cubes close-up inset
+- **Frames:** 2 Jesse frames + Spek Cubes close-up inset
 - **Pattern:** One-shot per bacon order
 - **Trigger:** Ordering the Spekpannenkoek
 - **Purpose:** He asks if it's okay. He already knows he is bringing the spek.
@@ -456,8 +456,8 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Duration:** 3.4 seconds (0.6s folder placement, 0.8s pause for reaction preparation, 2.0s line-by-line reveal)
 - **Frames:** Bill presenter + Bill Reveal Sting Plate + Bill Breakdown Popup line stagger + Bill Reaction Strip
 - **Pattern:** One-shot at end of meal
-- **Trigger:** Requesting the bill, or Pieter deciding it is time
-- **Purpose:** "Your total is... sixty-four euros. For three." Every line is correct.
+- **Trigger:** Requesting the bill, or Jesse deciding it is time
+- **Purpose:** "Your total is... sixty-four Sovs. For three." Every line is correct.
 - **Audio Sync:** Folder placement 0.0s; silence 0.6-1.4s; a small dramatic sting on the total at 3.0s
 - **Mobile Optimization:** Lines snap in rather than stagger in reduced-motion mode
 
@@ -489,7 +489,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | High-Contrast Table Marker | Sheet 8 (320, 448) | 64x32 | Bold outline for table, counter, and pass interaction points |
 | Portion Silhouette Set | Sheet 8 (384, 448) | 128x32 | Dutch pancake vs. American stack as labelled stepped silhouettes |
 | Marleen High-Contrast Silhouette | Sheet 5 (0, 416) | 64x96 | Enhanced-visibility outline of the seating NPC |
-| Pieter High-Contrast Silhouette | Sheet 5 (64, 416) | 64x96 | Enhanced-visibility outline of the ordering NPC |
+| Jesse High-Contrast Silhouette | Sheet 5 (64, 416) | 64x96 | Enhanced-visibility outline of the ordering NPC |
 | Accessibility Reserve Block | Sheet 5 (256, 416) | 256x96 | Overflow space for additional high-contrast variants |
 
 ### Motion Sensitivity Options:
@@ -549,7 +549,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Low | Static kitchen (profile requirement), static table decor (profile requirement), reduced steam (profile requirement), moored boats, single duck pose, snapped bill lines |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 16 per frame
 - **Memory Footprint:** 36 MB maximum
 - **Particle Limit:** 14 (kitchen steam, sizzle sparkle, powdered sugar, canal ripple)
@@ -589,8 +589,8 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | The Portion Revelation | Pancake sprites, reveal beat plate, Portion Reaction Strip, Marleen Pointing frame | First plate delivered; grants the permanent Expectation Adjustment buff |
-| The Syrup Situation | Syrup pitcher, stroop container, pour stream, Pieter Syrup Explanation | Repeatable; every request costs €3 and returns the same pitcher |
-| The Bacon Specificity Problem | Spek cubes close-up, Pieter Spek frames, bacon pancake sprite | Ordering the Spekpannenkoek; the food is good, the expectation was wrong |
+| The Syrup Situation | Syrup pitcher, stroop container, pour stream, Jesse Syrup Explanation | Repeatable; every request costs 3 Sovs and returns the same pitcher |
+| The Bacon Specificity Problem | Spek cubes close-up, Jesse Spek frames, bacon pancake sprite | Ordering the Spekpannenkoek; the food is good, the expectation was wrong |
 | The Bill Breakdown | Bill popup, running total ticker, contest panel, Bill Reaction Strip | End of meal; every line is legitimate and every line was disclosed somewhere |
 | Food Photography | Photo frame, caption panel, blogger NPC | Honest caption costs Bravado and grants Authenticity |
 | The Dutch Food Learning Curve | Learning Curve tracker, Expectation Adjustment status | Shared five-stage counter across Shamsterdam food locations, ending in smugly explaining Dutch food to other tourists |
@@ -599,7 +599,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Tolerance Hostel | Expectation Adjustment status carried into kitchen dialogue | "Did you go to the pancake place? Did they explain before you ordered?" — the answer changes the exchange |
-| FEBO Automat | Shared Dutch Food Learning Curve counter | "At FEBO you KNOW what you're getting for €3" — value comparison dialogue unlocks after the bill reveal |
+| FEBO Automat | Shared Dutch Food Learning Curve counter | "At FEBO you KNOW what you're getting for 3 Sovs" — value comparison dialogue unlocks after the bill reveal |
 | Café de Schaamte | Expectation Adjustment status, food photo album entry | Post-pancake espresso; processing what happened |
 | De Groene Gids | Munchies modifier on appetite appreciation | Pre-pancake visit shifts the Portion Revelation from disappointment to delight |
 | Leeman's Döner Palace | Shared Dutch Food Learning Curve counter | Later stages of the curve change the player's default ordering confidence |
@@ -625,7 +625,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 
 ### Character Integration Notes:
 - Marleen genuinely tries to manage expectations at three separate points before the order is placed; her knowing smile at the end is earned, not smug
-- Pieter is helpful, accurate, and completely unresponsible for the gap between what you heard and what you ordered
+- Jesse is helpful, accurate, and completely unresponsible for the gap between what you heard and what you ordered
 - Jan is the only person in the building doing exactly what the marketing promises, and he does it every two minutes forever
 - No staff frame may read as predatory; the restaurant is honest and the misunderstanding is cultural. If the staff look like they are in on a scam, the whole location fails.
 
@@ -636,16 +636,16 @@ assets/sprites/locations/shamsterdam/pancake_house/
 ### Screenshot-Worthy Moments:
 1. **The Single Pancake** — plate-sized, thin, arranged, alone, and correct
 2. **The Syrup Pitcher Beside the Plate** — scale comparison, no caption required
-3. **The Bill Breakdown** — €64 for three, itemised, every line defensible
+3. **The Bill Breakdown** — 64 Sovs for three, itemised, every line defensible
 4. **Spek vs. Strips** — the close-up inset, side by side with the expectation
-5. **The Terrace Heater Glowing** — warm, welcoming, accruing at €2/hour
+5. **The Terrace Heater Glowing** — warm, welcoming, accruing at 2 Sovs/hour
 
 ### Quote Potential:
 - "Our pancakes are traditional Dutch. Very large. Very thin. One is usually enough."
 - "The bacon is spek. Cubes. Traditional. Not strips. Is that okay? ...I'll bring the spek."
-- "More syrup is three euros. Yes, for the small one. It's... concentrated."
-- "The bread basket was complimentary to receive. Not complimentary to keep. Four euros."
-- "Your total is... sixty-four euros. For three."
+- "More syrup is three Sovs. Yes, for the small one. It's... concentrated."
+- "The bread basket was complimentary to receive. Not complimentary to keep. Four Sovs."
+- "Your total is... sixty-four Sovs. For three."
 - "I see you are looking at the photos. Yes, that is actual size. One pancake per plate."
 - "You guys should've gotten the apple. It's actually great."
 
@@ -727,12 +727,12 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | World Consistency (no real city names) | ✅ | Shamsterdam Canal Ring Promenade; menu and décor reference Dutch tradition without naming a real city |
 | Cultural Specificity | ✅ | Dutch pannenkoeken reality, spek vs. strips, stroop vs. maple, Delft tile, smaller cutlery, canal-house architecture |
 | Satirical Targets Appropriate | ✅ | American food expectations abroad and waterfront tourist pricing — Dutch cuisine and the staff are treated with respect |
-| Seedy Underbelly Present | ✅ | €18 for a €3 plate because it faces a canal, unadvertised heater fees, the automatic bread basket, per-topping surcharges surfacing after selection |
+| Seedy Underbelly Present | ✅ | 18 Sovs for a 3 Sovs plate because it faces a canal, unadvertised heater fees, the automatic bread basket, per-topping surcharges surfacing after selection |
 | Gameplay Value Established | ✅ | Multi-page menu navigation, hidden-cost bill calculator, three revelation beats, Bravado contest branch, permanent Expectation Adjustment buff, shared learning-curve counter |
 | Technical Feasibility | ✅ | Separate interior/terrace loads, static kitchen and boat fallbacks per profile, pre-composed customer blocks, single recycled boat instance |
-| Mobile Performance Budget | ✅ | 45 FPS, 16 draw calls, 36 MB, 14 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 36 MB, 14 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all ten audio cues including the deliberate silence, reduced-motion set, optional running-total assist mode, 44px touch zones |
 | No Crypto Elements | ✅ | Pure tourist-trap dining; the only speculative instrument is the bread basket |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |
 
-**Once these assets ship, The Pancake House becomes the game's most reasonable ambush: a beautiful room, a warm welcome, three separate honest warnings, a genuinely delicious plate-sized crepe, and a bill for sixty-four euros in which every single line is correct.**
+**Once these assets ship, The Pancake House becomes the game's most reasonable ambush: a beautiful room, a warm welcome, three separate honest warnings, a genuinely delicious plate-sized crepe, and a bill for sixty-four Sovs in which every single line is correct.**

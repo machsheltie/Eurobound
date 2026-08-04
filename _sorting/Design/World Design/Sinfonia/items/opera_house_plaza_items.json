@@ -7,7 +7,7 @@
       "vendor_name": "Ticket Scalper",
       "vendor_type": "scam_vendor",
       "operator_npc": "ticket_scalper_01",
-      "currency_accepted": ["euro", "cash_only"],
+      "currency_accepted": ["sovs", "cash_only"],
       "availability": {
         "location": "shadows_near_opera",
         "time": "all_day_more_aggressive_night"
@@ -17,8 +17,8 @@
           "item_id": "opera_tickets_scalped_box",
           "display_name": "Box Seats (Tonight's Magic Flute)",
           "description": "Definitely real tickets. Probably box seats. Trust him.",
-          "price_euro": 400,
-          "face_value_euro": 80,
+          "price_sov": 400,
+          "face_value_sov": 80,
           "legitimacy": "real_but_overpriced",
           "effects": {
             "grants_access": "opera_performance"
@@ -29,8 +29,8 @@
           "item_id": "opera_tickets_scalped_standard",
           "display_name": "Standard Seats (Any Performance)",
           "description": "Standing room, probably. Or maybe seats. Who knows?",
-          "price_euro": 200,
-          "face_value_euro": 40,
+          "price_sov": 200,
+          "face_value_sov": 40,
           "legitimacy": "real_but_overpriced",
           "effects": {
             "grants_access": "opera_standing_room"
@@ -43,7 +43,7 @@
       "vendor_name": "Café Terrace",
       "vendor_type": "food_beverage",
       "operator_npc": "cafe_maitre_d_01",
-      "currency_accepted": ["euro"],
+      "currency_accepted": ["sovs"],
       "availability": {
         "location": "west_cafe_terraces",
         "time": "10:00-22:00",
@@ -54,7 +54,7 @@
           "item_id": "terrace_espresso",
           "display_name": "Terrace Espresso",
           "description": "A tiny cup of coffee for a not-tiny price.",
-          "price_euro": 8,
+          "price_sov": 8,
           "effects": {
             "removes_status": "tired"
           },
@@ -64,7 +64,7 @@
           "item_id": "terrace_espresso_premium",
           "display_name": "Espresso with Historic View Supplement",
           "description": "The same espresso, but you're facing the opera house.",
-          "price_euro": 15,
+          "price_sov": 15,
           "effects": {
             "removes_status": "tired",
             "charm_boost_temp": 1
@@ -75,7 +75,7 @@
           "item_id": "sachertorte_slice",
           "display_name": "Sachertorte Slice",
           "description": "Sinfonia's famous chocolate cake. Gustav loved it.",
-          "price_euro": 18,
+          "price_sov": 18,
           "effects": {
             "hp_restore": 40,
             "removes_status": "thirsty"
@@ -90,24 +90,24 @@
       "vendor_name": "Street Performer",
       "vendor_type": "donation_interaction",
       "operator_npc": "street_performer_violin_01",
-      "currency_accepted": ["euro"],
+      "currency_accepted": ["sovs"],
       "availability": {
         "location": "street_performer_circle",
         "time": "11:00-18:00"
       },
       "donation_tiers": [
         {
-          "amount_euro": 1,
+          "amount_sov": 1,
           "effect": "performer_nods",
           "description": "Basic acknowledgment"
         },
         {
-          "amount_euro": 2,
+          "amount_sov": 2,
           "effect": "performer_smiles",
           "description": "Appreciative smile"
         },
         {
-          "amount_euro": 5,
+          "amount_sov": 5,
           "effect": "performer_plays_request",
           "bonus": {"charm": 1, "duration_minutes": 30},
           "unlocks": "rhythm_minigame",
@@ -120,7 +120,7 @@
       "vendor_name": "Fiaker Photo Opportunity",
       "vendor_type": "service",
       "operator_npc": "fiaker_driver_collective",
-      "currency_accepted": ["euro", "tip"],
+      "currency_accepted": ["sovs", "tip"],
       "availability": {
         "location": "fiaker_queue",
         "time": "10:00-17:00"
@@ -130,7 +130,7 @@
           "item_id": "fiaker_horse_selfie_service",
           "display_name": "Photo with Fiaker Horse",
           "description": "Pose with a traditional carriage horse.",
-          "price_euro": 5,
+          "price_sov": 5,
           "effects": {
             "gallery_entry": "fiaker_horse_selfie",
             "bravado": 1
@@ -149,9 +149,9 @@
       "discovery_method": "search_fountain",
       "rarity": "common",
       "effects": null,
-      "value_euro": 2,
+      "value_sov": 2,
       "probability": 0.8,
-      "flavor_text": "Someone wished for love. You got €2. Fair trade."
+      "flavor_text": "Someone wished for love. You got 2 Sovs. Fair trade."
     },
     {
       "item_id": "lucky_fountain_coin",
@@ -163,7 +163,7 @@
         "luck_boost": 1,
         "permanent": true
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "probability": 0.05,
       "flavor_text": "Dated 1887. Someone's wish from over a century ago. You're inheriting their luck."
     },
@@ -174,7 +174,7 @@
       "discovery_method": "search_beethoven_shrine",
       "rarity": "uncommon",
       "effects": null,
-      "value_euro": 3,
+      "value_sov": 3,
       "flavor_text": "Beethoven probably doesn't need money. But neither do you, so fair game."
     },
     {
@@ -187,7 +187,7 @@
         "usable_in": "rhythm_based_encounters",
         "performance_boost": 2
       },
-      "value_euro": 15,
+      "value_sov": 15,
       "flavor_text": "You can't read it, but holding it makes you feel sophisticated."
     }
   ],
@@ -244,7 +244,7 @@
         "cafe_sachertorte_damages": 340,
         "opera_backstage_damages": 2000,
         "misc_plaza_damages": 85,
-        "total_euro": 2425
+        "total_sov": 2425
       },
       "flavor_text": "You can pay this. Eventually. Maybe."
     }

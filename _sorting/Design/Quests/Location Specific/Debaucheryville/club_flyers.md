@@ -41,7 +41,7 @@
 
 **Vape Witch Vanessa:** 
 *exhaling peach-mango cloud*
-> "You three. You look like you know how to... hustle. DJ Beatdrop needs promotion. Rival DJ Hardstyle Hendrik is trying to steal his Thursday night slot. I need someone to poster the city. €100, plus free drinks tonight."
+> "You three. You look like you know how to... hustle. DJ Beatdrop needs promotion. Rival DJ Hardstyle Hynek is trying to steal his Thursday night slot. I need someone to poster the city. 100 Sovs, plus free drinks tonight."
 
 **Lord Pilsner:** *cracking knuckles* "Lady, you just hired the right team. I was a MARKETING MAJOR."
 
@@ -194,12 +194,12 @@
 > "What the f--- ...actually, you know what? People are talking about it. That's... something."
 
 **Hipster Collecting Them:**
-> "These are authentic Y2K memorabilia. I'll pay €5 each."
+> "These are authentic Y2K memorabilia. I'll pay 5 Sovs each."
 
 ---
 
 **Rewards - Path A:**
-- **€100 payment** from Vanessa
+- **100 Sovs payment** from Vanessa
 - **"GeoCities Business Card" item** - Locals treat you like a living museum exhibit
 - **"Dial-Up Nostalgia" trinket** - NPCs ask if you need help using modern technology
 - **+2 Bravado** - Bros think they've "disrupted the paradigm"
@@ -212,7 +212,7 @@
 ---
 
 #### PATH B: "Alpha Male Vandalism 2001" (Slander Campaign)
-*Bros decide to sabotage rival DJ Hardstyle Hendrik instead*
+*Bros decide to sabotage rival DJ Hardstyle Hynek instead*
 
 **What bros think they're doing:**
 > "Guerrilla marketing" like they learned from watching Fight Club too many times.
@@ -220,14 +220,14 @@
 **What they're actually doing:**
 > Vandalizing existing flyers with the artistic skill and maturity of middle schoolers from 1999.
 
-**Lord Pilsner:** "New plan. We don't just PROMOTE Beatdrop. We DESTROY Hendrik."
+**Lord Pilsner:** "New plan. We don't just PROMOTE Beatdrop. We DESTROY Hynek."
 
 **Bradley:** "Negative advertising. Bold. Disruptive."
 
 **Chadwick:** "I brought gel pens."
 
 **Execution:**
-1. Find Hendrik's flyers around city
+1. Find Hynek's flyers around city
 2. Deface them with era-appropriate vandalism
 3. Add "PWNED!" to every flyer
 4. Draw flame decals over his face
@@ -235,17 +235,17 @@
 6. Add tribal tattoo designs over venue information
 7. Bradley writes "All Your Base Are Belong to Us" thinking it's current
 8. Chadwick adds "BOOYAH!" to everything
-9. Lord Pilsner adds beer bottle stickers to Hendrik's face
+9. Lord Pilsner adds beer bottle stickers to Hynek's face
 10. Bradley crosses out names and writes "THIS SUCKS" in block letters
 11. Gel pens and correction fluid deployed like weapons of mass destruction
 
 **Key Moments:**
 
-*Defacing first Hendrik flyer*
+*Defacing first Hynek flyer*
 
 **Lord Pilsner:** *adding flame decals with red gel pen* "You see this? This is psychological warfare."
 
-**Chadwick:** *writing* "P-W-N-E-D. Get rekt, Hendrik."
+**Chadwick:** *writing* "P-W-N-E-D. Get rekt, Hynek."
 
 **Bradley:** *drawing tribal pattern* "I'm adding a tribal sun. It represents his career... setting."
 
@@ -280,30 +280,30 @@
 
 ---
 
-**DJ Hardstyle Hendrik's Reaction:**
+**DJ Hardstyle Hynek's Reaction:**
 
 *At club later*
 
-**Hendrik:** *to Vanessa* "SOMEONE wrote 'ALL YOUR BASE ARE BELONG TO US' on my promotional materials."
+**Hynek:** *to Vanessa* "SOMEONE wrote 'ALL YOUR BASE ARE BELONG TO US' on my promotional materials."
 
 **Vanessa:** *looks at bros*
 
-**Hendrik:** "And 'WASSSUUUUP!' with like... six U's."
+**Hynek:** "And 'WASSSUUUUP!' with like... six U's."
 
 **Lord Pilsner:** *whispers to Chadwick* "Psychological. Warfare."
 
-**Hendrik:** "But weirdly, people are coming to see who did it. They think it's an art project?"
+**Hynek:** "But weirdly, people are coming to see who did it. They think it's an art project?"
 
 ---
 
 **Rewards - Path B:**
-- **€100 payment** from Vanessa (she finds it hilarious)
+- **100 Sovs payment** from Vanessa (she finds it hilarious)
 - **"Frosted Tips Vandal" trinket** - +2 Bravado, -2 Charm, NPCs call you "nu-metal tourist"
 - **"Y2K Villain" Title** - Bouncers remember you as "those Limp Bizkit guys"
 - **"Peak Alpha Achievement"** - Narrator: *"Truly, the savage marketing wisdom of a Blockbuster Video employee"*
 - **Defaced flyers become art installation** - Local gallery wants to display them
 - **Security footage** becomes viral TikTok: "Boomers Gone Wild in Debaucheryville"
-- **Hendrik's night ALSO successful** - Because people came to see "the PWNED flyers"
+- **Hynek's night ALSO successful** - Because people came to see "the PWNED flyers"
 
 > ⚠ CONFLICT: legacy concept rewarded the slander path with a "Defaced Flyer" trinket (+1 Charm, +2 Bravado, random NPCs heckle you) — current version is -2 Charm via "Frosted Tips Vandal." Author to decide.
 
@@ -417,7 +417,7 @@
 - DJ Beatdrop becomes minor recurring NPC
 
 ### ICQ Integration Hooks
-- **Tony420** recognizes their outdated slang: *"wassup bros! u sound like my target demographic. got this sick investment opportunity - nigerian prince needs help moving €10 million. totally legit bro"*
+- **Tony420** recognizes their outdated slang: *"wassup bros! u sound like my target demographic. got this sick investment opportunity - nigerian prince needs help moving 10 Sovs million. totally legit bro"*
 - **CryptoBro69** when they mention Beanie Babies: *"yooo beanie babies = OG collectibles market! APES TOGETHER STRONG! launching BEANIEMOON coin - diamond hands only! 🚀🚀🚀 to the moon! this is not financial advice (but totally YOLO ur student loans)"*
 - Random popup ads: *"🎉 CONGRATULATIONS! You are visitor #47! Click here to claim your FREE TRIBAL FLAME WALLPAPER! 🎉"*
 

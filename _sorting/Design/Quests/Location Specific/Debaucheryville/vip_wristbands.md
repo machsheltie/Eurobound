@@ -18,10 +18,10 @@
 > A connected local is hooking them up with exclusive VIP all-access wristbands that will grant them elite status at every club in Debaucheryville. This is the kind of insider connection that separates REAL travelers from tourists.
 
 **What is ACTUALLY happening:**
-> A guy is selling them children's birthday party wristbands that say "I'm 7!" in Czech for €30 each. The clubs are free to enter.
+> A guy is selling them children's birthday party wristbands that say "I'm 7!" in Czech for 30 Sovs each. The clubs are free to enter.
 
 **Why it's funny:**
-> The bros pay €90 total for worthless plastic, then confidently flash them at a free club while the bouncer barely contains his laughter. They NEVER accept the truth and reframe all evidence as confirmation of their VIP status.
+> The bros pay 90 Sovs total for worthless plastic, then confidently flash them at a free club while the bouncer barely contains his laughter. They NEVER accept the truth and reframe all evidence as confirmation of their VIP status.
 
 ---
 
@@ -50,9 +50,9 @@
 **Bradley:** "Statistically, knowing a local increases your nightlife ROI by 340%. I read that somewhere."
 
 **Shady Wristband Guy:**
-> "These wristbands... they open ALL doors. Velvet Curtain Club. Absinthe Arcade VIP section. Even places tourists don't know exist. Very exclusive. Only €30 each."
+> "These wristbands... they open ALL doors. Velvet Curtain Club. Absinthe Arcade VIP section. Even places tourists don't know exist. Very exclusive. Only 30 Sovs each."
 
-**Lord Pilsner:** "Thirty euros? That's like... nothing for VIP access. Back home that wouldn't even get you past the rope at Applebee's on a Friday."
+**Lord Pilsner:** "Thirty Sovs? That's like... nothing for VIP access. Back home that wouldn't even get you past the rope at Applebee's on a Friday."
 
 ---
 
@@ -212,7 +212,7 @@
 ### Narrator Commentary
 
 **At wristband purchase:**
-> "Armed with €90 worth of children's party supplies, our heroes prepared to conquer Debaucheryville's nightlife scene."
+> "Armed with 90 Sovs worth of children's party supplies, our heroes prepared to conquer Debaucheryville's nightlife scene."
 
 **At Velvet Curtain Club:**
 > "The bouncer, fluent in six languages, chose to respond in the universal dialect of exhausted service workers dealing with confident idiots."
@@ -223,7 +223,7 @@
 
 ### Prerequisites
 - Arrive at Astronomical Cock-Up Square
-- Have €90 total gold
+- Have 90 Sovs total gold
 
 ### Unlocks
 - Access to Velvet Curtain Club (was always free)

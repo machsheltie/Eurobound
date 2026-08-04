@@ -9,7 +9,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 ### Acquisition
 - **Location**: The Blarney Trap, Publandia
-- **Method**: Given FREE with purchase of the Bottle Opener Keychain (€15) OR as reward for winning a Pint-Off challenge
+- **Method**: Given FREE with purchase of the Bottle Opener Keychain (15 Sovs) OR as reward for winning a Pint-Off challenge
 - **Requirement**: Cannot participate in Brewery Tour without both items
 - **Timing**: Available from first visit to The Blarney Trap
 
@@ -221,7 +221,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 | SP Restoration | +0 to +20 |
 | Special Effect | Location-specific buff |
 | Status Risk | 5-15% chance of minor debuff |
-| Price | €8 to €15 |
+| Price | 8 Sovs to 15 Sovs |
 
 ### Publandia Signature Beers (Detailed)
 
@@ -231,7 +231,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 - Stats: +35 HP, +10 SP
 - Effect: "Comfortable Trap" — +10% Bravado retention (1 hour)
 - Risk: 5% "Contentment" (reduced urgency)
-- Price: €8
+- Price: 8 Sovs
 - Flavor: "You surrendered to Blarney Trap pricing. It's delicious."
 
 **Vat Master's Reserve (The Stoutworks Brewery)**
@@ -240,7 +240,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 - Stats: +40 HP, +15 SP
 - Effect: 10% "Fermented Fury" (+15% Attack next battle)
 - Risk: 10% "The Vat's Whisper" (cosmetic yeast thoughts)
-- Price: €12
+- Price: 12 Sovs
 - Flavor: "Aged during the incident. Tastes like existential crisis."
 - Negotiate Route Bonus: +5% enemy negotiation success
 
@@ -250,7 +250,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 - Stats: +25 HP, +20 SP
 - Effect: "Scholar's Focus" — temporary INT boost (+3 for 30 min)
 - Risk: 10% "Pretentious" (dialogue options become insufferable)
-- Price: €9
+- Price: 9 Sovs
 - Flavor: "Brewed for minds that think they're smarter when drinking. They're not. But it helps."
 
 **The Fool's Gold (Shenanigans)**
@@ -259,7 +259,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 - Stats: +30 HP, +15 SP
 - Effect: "Learned Optimism" — +10% resistance to scam detection failure
 - Risk: 5% "Sentimental" (donate extra gold to NPCs)
-- Price: €8
+- Price: 8 Sovs
 - Flavor: "The only honest thing in this entire establishment. Golden, hopeful, with a bitter finish — just like your evening."
 - Unique Unlock: Only stamp earned through LOSING, not winning
 
@@ -277,7 +277,7 @@ Collecting all 4 stamps in a city unlocks that city's "Legendary Hangover" — a
 - **Consequence**: "Legendary Hungover" status after battle
 - **Legendary Hungover**: -10 all stats for 30 minutes
 - **Cure**: Full Irish Breakfast, sleep, or waiting
-- **Price**: €50 (repurchasable from any stamped Publandia location)
+- **Price**: 50 Sovs (repurchasable from any stamped Publandia location)
 - **Flavor**: "Four stamps. Four surrenders. The night of your life has a morning after."
 
 ### Using Legendary Hangovers Strategically

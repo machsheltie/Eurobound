@@ -16,17 +16,17 @@
 ## 🎭 Core Concept
 
 ### What They're Actually Doing
-Siegfried takes coats. He has taken coats at this club for six years, standing eight feet from the deposit window where guests hand over the €500 he used to hand over, listening to a room he is not allowed into and has not entered since the night Madame Karten gave him the job instead of a ban.
+Siegfried takes coats. He has taken coats at this club for six years, standing eight feet from the deposit window where guests hand over the 500 Sovs he used to hand over, listening to a room he is not allowed into and has not entered since the night Madame Karten gave him the job instead of a ban.
 
-He lost €50,000 across ten years. Not in a crash — in instalments, on Tuesdays, at the low tables, over a decade, the way most people actually lose money. He works here now to stay close to it, which he will tell you himself, in those words, without being asked. He hands out one genuine piece of advice to anybody who tips him personally, and it is the truest sentence spoken anywhere in the Backroom.
+He lost 50,000 Sovs across ten years. Not in a crash — in instalments, on Tuesdays, at the low tables, over a decade, the way most people actually lose money. He works here now to stay close to it, which he will tell you himself, in those words, without being asked. He hands out one genuine piece of advice to anybody who tips him personally, and it is the truest sentence spoken anywhere in the Backroom.
 
-He also still steals. Small amounts. €50 out of a guest's coat pocket while they sleep upstairs, apologetically, reliably, every single time, and he cannot stop, and he does not pretend he can.
+He also still steals. Small amounts. 50 Sovs out of a guest's coat pocket while they sleep upstairs, apologetically, reliably, every single time, and he cannot stop, and he does not pretend he can.
 
 ### What Bros Believe
-The bros think Siegfried is a bonus. Free accommodation in Sinfonia, from a guy who *works at the casino*, which Lord Pilsner interprets as an inside track. They listen to the €50,000 story with enormous, sincere sympathy and take precisely nothing from it; they hear a cautionary tale about a man who lacked discipline, which they have. Chadwick films the ironing. In the morning, €50 lighter and unaware of it, they leave believing they have made a friend in the industry, and they have — that part is entirely true.
+The bros think Siegfried is a bonus. Free accommodation in Sinfonia, from a guy who *works at the casino*, which Lord Pilsner interprets as an inside track. They listen to the 50,000 Sovs story with enormous, sincere sympathy and take precisely nothing from it; they hear a cautionary tale about a man who lacked discipline, which they have. Chadwick films the ironing. In the morning, 50 Sovs lighter and unaware of it, they leave believing they have made a friend in the industry, and they have — that part is entirely true.
 
 ### The Comedy Gap
-The one man in Sinfonia who tells them the exact truth about the room, unprompted and for free, is the one man they are least equipped to hear, and he takes fifty euro out of their coat on the way out anyway. Both halves are sincere. He means the advice completely and he takes the money completely, and nobody in the scene — not him, not a narrator, not a bro — ever remarks on the fact that these two things sit side by side.
+The one man in Sinfonia who tells them the exact truth about the room, unprompted and for free, is the one man they are least equipped to hear, and he takes fifty Sovs out of their coat on the way out anyway. Both halves are sincere. He means the advice completely and he takes the money completely, and nobody in the scene — not him, not a narrator, not a bro — ever remarks on the fact that these two things sit side by side.
 
 **Binding:** Siegfried is never a moral compass and never a truth-teller about the bros. Everything he says is about himself. He never tells them what will happen to them, never diagnoses their delusion, never comments on the house's edge as a warning to a listener. His canon advice is a statement about human beings, delivered with a shrug, by a man who has already proved it.
 
@@ -67,9 +67,9 @@ Tidy, thin, kind, and slightly diminished — the only person in a gilded room w
 ### Personality Traits
 | Trait | Description |
 |-------|-------------|
-| Radically Honest About Himself | Volunteers the €50,000, the ten years, and the reason he works here, to anyone who tips him, without being asked |
+| Radically Honest About Himself | Volunteers the 50,000 Sovs, the ten years, and the reason he works here, to anyone who tips him, without being asked |
 | Genuinely Hospitable | Feeds guests, irons their clothes, gives up his own bed, and enjoys the company enormously |
-| Still Compulsive | Takes €50 from a sleeping guest's coat every single time, without exception, and is ashamed every single time |
+| Still Compulsive | Takes 50 Sovs from a sleeping guest's coat every single time, without exception, and is ashamed every single time |
 | Attuned to the Room | Knows from the sound alone which table just turned and who is about to come through the arch looking for their coat |
 | Not a Preacher About Others | Gives his advice once, about himself, and never repeats it, chases it, or applies it to anybody's evening but his own |
 
@@ -91,10 +91,10 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 > "There you are. Both sleeves the right way round, which is more than I manage." *(the coat, presented with both hands)*
 
 ### Key Interaction Dialogue — The Tip
-*The €20 personal tip. He does not ask for it, and he never hints. When it comes, he stops what he is doing.*
+*The 20 Sovs personal tip. He does not ask for it, and he never hints. When it comes, he stops what he is doing.*
 
 **Siegfried** *(pocketing it, and then, unprompted, evenly)*:
-> "Fifty thousand euro. Ten years. Not all at once — that is the part nobody believes. Nobody loses it all at once. You lose it on a Tuesday, four hundred at a time, for ten years, and then one evening you count." *(a beat; the smile arrives late)* "So. Coats."
+> "Fifty thousand Sovs. Ten years. Not all at once — that is the part nobody believes. Nobody loses it all at once. You lose it on a Tuesday, four hundred at a time, for ten years, and then one evening you count." *(a beat; the smile arrives late)* "So. Coats."
 
 ### The Advice — canon, ships verbatim
 *Offered once, to a guest who has tipped him, delivered with a shrug and no weight at all on the second sentence:*
@@ -107,7 +107,7 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 *He plays for four more hours.*
 
 ### The Couchsurf — Evening
-*Requirements: won at least once, lost at least once, tipped him personally (€20). His flat is two floors above the club: one room, a sofa, a kettle, and a window that looks at a wall.*
+*Requirements: won at least once, lost at least once, tipped him personally (20 Sovs). His flat is two floors above the club: one room, a sofa, a kettle, and a window that looks at a wall.*
 
 > "It is small. It is above the club, which people find funny and which I stopped finding funny some time ago." *(fills the kettle)* "Sit anywhere. The sofa is the good one. I will take the chair — no, genuinely, I sleep in the chair whether there is anyone here or not."
 
@@ -123,14 +123,14 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 
 *[STAY EFFECT: "Gambler's Insight" — one hidden card revealed per game, next session]*
 *[STAY EFFECT: permanent 5% house-edge reduction — he knows their tricks]*
-*[−€50 — he "borrowed" it. He cannot help himself.]*
+*[−50 Sovs — he "borrowed" it. He cannot help himself.]*
 
 **Siegfried** *(at the door, handing the jacket over with both hands, and this is the only moment in the whole scene where he does not meet anyone's eye)*:
 > "Come back tonight. Or do not. Both are correct."
 
 ### Post-Interaction
-*If the party checks their gold and finds the €50 missing, and returns to the counter about it:*
-> *(He does not deny it and does not explain it. He takes fifty euro out of his own pocket, sets it on the counter, and slides it across.)* "Yes." *(a beat)* "It will happen again. I would put it somewhere else next time."
+*If the party checks their gold and finds the 50 Sovs missing, and returns to the counter about it:*
+> *(He does not deny it and does not explain it. He takes fifty Sovs out of his own pocket, sets it on the counter, and slides it across.)* "Yes." *(a beat)* "It will happen again. I would put it somewhere else next time."
 
 *He does not say sorry. He has said sorry about this before and found it did not survive contact with what he does next.*
 
@@ -170,8 +170,8 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 |--------------|-------|--------------|---------------|
 | Coat check | Free | Free | Storage; brass token; he remembers you without it |
 | Pressing / ironing | Free | Genuinely valuable before a Haberdashery-tier venue | Removes "Disheveled"; small, temporary presentation bonus |
-| The advice | €20 personal tip | Priceless and inert | Unlocks the €50,000 story and the canon line; unlocks the couchsurf if the win/loss conditions are also met |
-| Couchsurf ("The Reformed Gambler") | Win once + lose once + €20 tip | A bed, a story, and a permanent edge reduction | "Gambler's Insight" (one hidden card per game, next session); permanent 5% house-edge reduction; **−€50** |
+| The advice | 20 Sovs personal tip | Priceless and inert | Unlocks the 50,000 Sovs story and the canon line; unlocks the couchsurf if the win/loss conditions are also met |
+| Couchsurf ("The Reformed Gambler") | Win once + lose once + 20 Sovs tip | A bed, a story, and a permanent edge reduction | "Gambler's Insight" (one hidden card per game, next session); permanent 5% house-edge reduction; **−50 Sovs** |
 
 ### Hidden Details / Easter Eggs
 - **Examine his counter**: *"Immaculate. Everything squared to the edge. The only surface in this building nobody is allowed to put a drink on."*
@@ -187,9 +187,9 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Madame Karten (`sinfonia_npc_madame_karten_01`) | She hired him instead of banning him. Nobody else would have. She has never mentioned it to him or to anyone, and the €20 tips go in his pocket rather than the house's because she decided years ago that they would. |
+| Madame Karten (`sinfonia_npc_madame_karten_01`) | She hired him instead of banning him. Nobody else would have. She has never mentioned it to him or to anyone, and the 20 Sovs tips go in his pocket rather than the house's because she decided years ago that they would. |
 | Anton the Doorman (`sinfonia_npc_anton_doorman_01`) | Eight feet apart, all night, every night, for six years. Perhaps four hundred words between them, and a coffee at 3 AM that has never been discussed. |
-| Graf von Zittrig (`sinfonia_npc_graf_von_zittrig_01`) | The €5 over-tip, four nights a week, nineteen years. Siegfried has never once had to look for his coat. |
+| Graf von Zittrig (`sinfonia_npc_graf_von_zittrig_01`) | The 5 Sovs over-tip, four nights a week, nineteen years. Siegfried has never once had to look for his coat. |
 | Gräfin Stille (`sinfonia_npc_grafin_stille_01`) | Tips him in chips folded into the coat, never handed over. He has never disclosed the amount to anybody, including the house. |
 | Herr Falsch (`sinfonia_npc_herr_falsch_01`) | Tips extravagantly and uses his name. Siegfried has never once looked him in the eye. |
 | Aaron the Unflappable (`sinfonia_npc_aaron_unflappable_01`) | The friendliest relationship in Siegfried's life: he holds back the gold-wrapper wafer bars, Aaron over-tips wildly, and at 4 AM the two of them talk about food for as long as the closing shift allows. |
@@ -206,7 +206,7 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 
 ### Within Sinfonia
 - Present at the coat check on every Backroom visit, on entry and on exit, for the entire game.
-- The couchsurf unlocks once the win/lose/tip conditions are met and is repeatable thereafter — the story is not, and the €50 is.
+- The couchsurf unlocks once the win/lose/tip conditions are met and is repeatable thereafter — the story is not, and the 50 Sovs is.
 - Present in the ejection sequence for cleaned-out parties, handing coats back with both hands and saying nothing about it.
 
 ### In Other Cities (If Applicable)
@@ -215,7 +215,7 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 | N/A | — | Siegfried does not leave this building except to go two floors up | — |
 
 ### Evolution Through Game
-He remembers the party permanently after the first tip and saves their token. Nothing else changes: the same counter, the same iron, the same missing €50 on every subsequent stay. He never relapses on screen, never returns to the floor, and never gets a redemption beat — and he is never framed as a tragedy either. He is a man with a job, a chair, and a habit he has narrowed down to fifty euro at a time.
+He remembers the party permanently after the first tip and saves their token. Nothing else changes: the same counter, the same iron, the same missing 50 Sovs on every subsequent stay. He never relapses on screen, never returns to the floor, and never gets a redemption beat — and he is never framed as a tragedy either. He is a man with a job, a chair, and a habit he has narrowed down to fifty Sovs at a time.
 
 ---
 
@@ -233,7 +233,7 @@ He remembers the party permanently after the first tip and saves their token. No
 | Animation | Trigger |
 |-----------|---------|
 | coat_present | Any coat returned — both hands, always, like a presentation |
-| tip_pause | The €20 personal tip — he stops entirely, pockets it, and begins the story |
+| tip_pause | The 20 Sovs personal tip — he stops entirely, pockets it, and begins the story |
 | pocket_reach | The couchsurf night: a hand into a sleeping guest's coat pocket. Played straight, unscored, with no sting and no comedy cue. |
 | morning_iron | The couchsurf morning loop — ironing while he says the one thing he is going to say |
 
@@ -253,8 +253,8 @@ He remembers the party permanently after the first tip and saves their token. No
 ### Primary Quest (If Applicable)
 - **Quest**: "The Reformed Gambler" — his backstory questline / Couchsurfing Chronicles entry for the Black-Tie Backroom
 - **Role**: Host and quest subject
-- **Trigger**: Win at least one game, lose at least one game, and tip him €20 personally. All three, in any order.
-- **Outcome**: The couchsurf — "Dreams of Fortune" night sequence, the morning scene, "Gambler's Insight," a permanent 5% house-edge reduction, and −€50
+- **Trigger**: Win at least one game, lose at least one game, and tip him 20 Sovs personally. All three, in any order.
+- **Outcome**: The couchsurf — "Dreams of Fortune" night sequence, the morning scene, "Gambler's Insight," a permanent 5% house-edge reduction, and −50 Sovs
 
 ### Quest Gate Function (If Applicable)
 He gates his own couchsurf behind the win/lose/tip trinity and nothing else. The 5% edge reduction he grants is the only permanent improvement to the house's math available anywhere in the location, which makes him — structurally — the best-value NPC in the Backroom and the one the bros are least interested in.
@@ -265,7 +265,7 @@ He gates his own couchsurf behind the win/lose/tip trinity and nothing else. The
 | Brass token #22 | On first coat check | No | Cosmetic; he saves the same number for the party forever afterward |
 | "Gambler's Insight" | Couchsurf morning | One session | Reveals one hidden card per game for the following session |
 | House-edge reduction (5%) | Couchsurf morning | **Yes** | Permanent reduction across all Backroom games |
-| −€50 | Couchsurf morning | — | Taken from a coat pocket, every time, without exception |
+| −50 Sovs | Couchsurf morning | — | Taken from a coat pocket, every time, without exception |
 
 ---
 
@@ -290,14 +290,14 @@ Sinfonian, soft-edged, unhurried; the register of a man who spends his working l
 
 ### Tone
 - **Service**: warm, brisk, genuinely pleased to see everyone
-- **The €50,000 story**: flat and factual. No self-pity anywhere in it. He is reporting numbers he has had a long time to get used to.
+- **The 50,000 Sovs story**: flat and factual. No self-pity anywhere in it. He is reporting numbers he has had a long time to get used to.
 - **The advice**: shrugged, light, and completely certain — the second sentence carries no warning and no judgement, and must not be delivered as either
 - **The morning scene**: gentle, brief, and self-limiting; he stops himself, on purpose, and the stopping is the character
 
 ### Key Delivery Notes
 - **"The only winning move is not to play. But we both know you'll play anyway."** ships verbatim. If it is read as a warning, the character becomes a moralist and the scene breaks; it is a man describing people, including himself, with affection.
 - He never preaches at the bros and never diagnoses them. Every serious thing he says is in the first person.
-- The €50 theft is played completely straight — no comedy sting, no wink, no music cue, and no character remarks on the juxtaposition with his advice. It is simply the next thing that happens.
+- The 50 Sovs theft is played completely straight — no comedy sting, no wink, no music cue, and no character remarks on the juxtaposition with his advice. It is simply the next thing that happens.
 - Casting note: kind first, tired second, and never pitiable. He is not asking anybody for anything.
 
 ---
@@ -325,8 +325,8 @@ Sinfonian, soft-edged, unhurried; the register of a man who spends his working l
 
 - **Siegfried is not a truth-teller and not a moral compass.** He speaks about himself only. He never tells the bros what is going to happen to them, never characterises their play, and never functions as the scene's explanation. This is the rule most at risk in any future pass on this character.
 - **Canon line ships verbatim**, matching `the_black_tie_backroom.md` byte-for-byte, and is delivered with a shrug rather than as a warning.
-- **The −€50 is unconditional and permanent.** No branch removes it, no charm check prevents it, and no version of him "gets better." It is also never scored for laughs.
-- **Couchsurf requirements are canon**: one win, one loss, €20 personal tip. The 5% house-edge reduction is permanent and stacks with High Roller rates.
+- **The −50 Sovs is unconditional and permanent.** No branch removes it, no charm check prevents it, and no version of him "gets better." It is also never scored for laughs.
+- **Couchsurf requirements are canon**: one win, one loss, 20 Sovs personal tip. The 5% house-edge reduction is permanent and stacks with High Roller rates.
 - **He never enters the floor.** No cutscene, no cutaway, no late-game exception.
 - **The face-down photograph in his flat is never resolved.** No examine chain, no dialogue, no achievement.
 - The story fires once per save. Subsequent tips are pocketed with thanks and nothing else.

@@ -21,8 +21,8 @@
       },
 
       "gameplay_function": {
-        "verifies": ["black_tie_attire_or_members_card", "charm_3_or_bravado_3", "collateral_500_euro"],
-        "turns_away": "parties_holding_under_500_euro",
+        "verifies": ["black_tie_attire_or_members_card", "charm_3_or_bravado_3", "collateral_500_sov"],
+        "turns_away": "parties_holding_under_500_sov",
         "bribable_for": "information",
         "blocks_state": "banned"
       },
@@ -31,7 +31,7 @@
         {
           "quest_id": "sinfonia_sidequest_the_kings_were_humming_01",
           "role": "door_pre_beat_gate",
-          "note": "His door check is what makes the encounter's €500 stake uniform. Underfunded parties never reach the corner table."
+          "note": "His door check is what makes the encounter's 500 Sovs stake uniform. Underfunded parties never reach the corner table."
         }
       ]
     },
@@ -76,9 +76,9 @@
 
       "gameplay_function": {
         "poker_difficulty": "hard",
-        "bankroll_euro": 1000,
-        "boss_unlock": {"any_of": ["total_losses_1000_euro", "discover_cheating"]},
-        "drops": ["item_shark_fin", "chip_stash_2000_euro"],
+        "bankroll_sov": 1000,
+        "boss_unlock": {"any_of": ["total_losses_1000_sov", "discover_cheating"]},
+        "drops": ["item_shark_fin", "chip_stash_2000_sov"],
         "boss_data_owner": "core/the_black_tie_backroom_core.json"
       }
     },
@@ -100,7 +100,7 @@
 
       "gameplay_function": {
         "difficulty": "easy",
-        "bankroll_euro": 200,
+        "bankroll_sov": 200,
         "tell_animation": "cufflink_adjust",
         "tell_learnable": true
       }
@@ -123,7 +123,7 @@
 
       "gameplay_function": {
         "difficulty": "medium",
-        "bankroll_euro": 500,
+        "bankroll_sov": 500,
         "tell_animation": "champagne_sip",
         "tell_learnable": true,
         "communicates_via": "bets_only"
@@ -148,7 +148,7 @@
 
       "gameplay_function": {
         "item_storage": true,
-        "couchsurf_unlock_conditions": ["win_at_least_once", "lose_at_least_once", "tip_20_euro"],
+        "couchsurf_unlock_conditions": ["win_at_least_once", "lose_at_least_once", "tip_20_sov"],
         "stay_effects": [
           {"id": "gamblers_insight", "effect": "see_one_hidden_card_per_game_next_session"},
           {"id": "borrowed", "gold_delta": -50},

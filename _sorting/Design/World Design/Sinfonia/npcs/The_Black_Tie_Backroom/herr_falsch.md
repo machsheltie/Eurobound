@@ -18,7 +18,7 @@
 ### What They're Actually Doing
 Herr Falsch is the hardest seat in the room and he has not played an honest hand in eleven years. Sleeve cards, a marked deck he brings in himself and swaps at the second break, and a shuffle that survives inspection because it is genuinely, professionally beautiful. He is patient about it. He loses hands on purpose, regularly, for texture. He has been caught exactly twice, both times by Madame Karten, both times at moments of her choosing rather than his.
 
-The thing to understand about him is that he does not do it for the money — he has €1000-plus on the table nightly and a stash of €2000 he never bothers to bank. He does it because a clean win is a coin flip and a constructed win is a piece of work, and he would rather do a piece of work. He enjoys the game more than the winning, and this is precisely why he is dangerous: he will play a mark for four hours to make the last twenty minutes elegant.
+The thing to understand about him is that he does not do it for the money — he has 1000 Sovs-plus on the table nightly and a stash of 2000 Sovs he never bothers to bank. He does it because a clean win is a coin flip and a constructed win is a piece of work, and he would rather do a piece of work. He enjoys the game more than the winning, and this is precisely why he is dangerous: he will play a mark for four hours to make the last twenty minutes elegant.
 
 ### What Bros Believe
 Before: the bros believe Herr Falsch is the final boss of poker, a man of legitimate and terrifying skill, and that beating him would be the single greatest thing any of them has ever done. Lord Pilsner studies him for tells and reports his findings at volume. He finds four. There are none of the four.
@@ -162,7 +162,7 @@ Craft. He wants the evening to have a shape — a middle, a turn, a last twenty 
 ### Positioning Notes
 - He never sits at the low-minimum tables. Not once, in any scene. This is a hard rule of his that the game never explains.
 - He is only present after 10 PM; a party arriving early finds his chair empty and Madame Karten declining, warmly, to say when he is expected.
-- The player can pay Anton €50 at the door to learn whether he is in tonight.
+- The player can pay Anton 50 Sovs at the door to learn whether he is in tonight.
 
 ---
 
@@ -171,9 +171,9 @@ Craft. He wants the evening to have a shape — a middle, a turn, a last twenty 
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| A seat at his table | Table minimum | Negative, on average, in a way no player can measure from the inside | Hard-difficulty poker opponent; bankroll €1000+; major wins genuinely possible |
+| A seat at his table | Table minimum | Negative, on average, in a way no player can measure from the inside | Hard-difficulty poker opponent; bankroll 1000 Sovs+; major wins genuinely possible |
 | `item_shark_fin` | Defeat him | Considerable — it is recognised at every table in the room | Victory accessory; full spec at `Design/Inventory/items/shark_fin_item.md` |
-| His chip stash (€2000) | Defeat him | Exactly €2000, counted out honestly | Gold |
+| His chip stash (2000 Sovs) | Defeat him | Exactly 2000 Sovs, counted out honestly | Gold |
 | Conversation | Free, constant | Enjoyable, and expensive | Table talk; never contains a false statement about a fact |
 
 ### Hidden Details / Easter Eggs
@@ -208,7 +208,7 @@ Craft. He wants the evening to have a shape — a middle, a turn, a last twenty 
 
 ### Within Sinfonia
 - Present at poker from 10 PM on every Backroom visit; the hard-difficulty opponent for the entire game.
-- The boss fight triggers on the location's existing conditions: €1000+ in cumulative losses, or discovery of the cheating.
+- The boss fight triggers on the location's existing conditions: 1000 Sovs+ in cumulative losses, or discovery of the cheating.
 - Post-defeat he is back at the same seat on the next visit, with a clean deck and a bare lapel, permanently.
 
 ### In Other Cities (If Applicable)
@@ -238,7 +238,7 @@ Pre-discovery he is a wall with a smile. Post-discovery he is exactly as graciou
 | sleeve_frame | The single frame in which a card is where it should not be; visible at full zoom, invisible at ordinary speed |
 | compliment | Immediately after taking a significant pot — leans back, gestures at the opponent, sincerely |
 | jacket_off | Boss-fight initiation — removes the tuxedo jacket and folds it over the chair with care |
-| stash_count | Defeat — counts out €2000 by hand, unpins the fin, sets both on the felt |
+| stash_count | Defeat — counts out 2000 Sovs by hand, unpins the fin, sets both on the felt |
 
 ### Sprite States
 | State | When Used |
@@ -256,8 +256,8 @@ Pre-discovery he is a wall with a smile. Post-discovery he is exactly as graciou
 ### Primary Quest (If Applicable)
 - **Quest**: "The Card Shark" — discover and defeat Herr Falsch
 - **Role**: Hidden boss and hard-mode poker opponent
-- **Trigger**: €1000+ in cumulative losses in the Backroom, **or** discovery of the marked deck / sleeve; either path opens the direct challenge
-- **Outcome**: Victory yields his €2000 stash, `item_shark_fin`, and the "Card Counter" achievement; the "Shark Slayer" selfie variant unlocks with his marked cards visible on the table
+- **Trigger**: 1000 Sovs+ in cumulative losses in the Backroom, **or** discovery of the marked deck / sleeve; either path opens the direct challenge
+- **Outcome**: Victory yields his 2000 Sovs stash, `item_shark_fin`, and the "Card Counter" achievement; the "Shark Slayer" selfie variant unlocks with his marked cards visible on the table
 
 ### Quest Gate Function (If Applicable)
 He gates nothing required for progression. He is optional content in both forms — the hard poker table and the boss fight — and a player can complete every other thread in the Backroom, including the corner-table encounter, without ever sitting down with him. Exposing his cheating **during** the fight reduces his stats, which is the fight's intended solution and is discovered by observation, never by a hint.
@@ -266,7 +266,7 @@ He gates nothing required for progression. He is optional content in both forms 
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | `item_shark_fin` | On boss victory | Yes | Victory accessory; recognised at every table in the room; full spec in `Design/Inventory/items/shark_fin_item.md` |
-| €2000 chip stash | On boss victory | — | Gold, counted out honestly by him, never short |
+| 2000 Sovs chip stash | On boss victory | — | Gold, counted out honestly by him, never short |
 
 ---
 

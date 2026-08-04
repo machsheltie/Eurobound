@@ -88,44 +88,44 @@
 ### Complete Menu System (Original)
 **All items preserved exactly as specified:**
 
-#### **Gutbuster Wrap** - 6€
+#### **Gutbuster Wrap** - 6 Sovs
 - **Description**: Monstrous wrap dripping with mystery lamb, pickled chili slaw, dash of existential regret
 - **Effects**: -15 HP, +20% stamina regen for 2 battles
 - **Side Effects**: Can trigger "Greaseburp" in sensitive characters
 - **Strategic Use**: High-risk, high-reward stamina management
 
-#### **"Vampire Slayer" Garlic Fries** - 4€
+#### **"Vampire Slayer" Garlic Fries** - 4 Sovs
 - **Description**: Fried in week-old oil, garlic sauce so intense it doubles as pepper spray
 - **Effects**: Cures "Hungover" status
 - **Side Effects**: Inflicts "Socially Rejected" for 3 overworld steps
 - **Strategic Use**: Hangover cure with social consequences
 
-#### **EuroMeat Pocket™** - 5€
+#### **EuroMeat Pocket™** - 5 Sovs
 - **Description**: Suspiciously grey gyro stuffed into soggy microwaved pita
 - **Effects**: +10 HP, +1 Attack, 50% chance to contract "Meat Doubt"
 - **Strategic Use**: Combat boost with uncertainty risk
 
-#### **MegaMix Box (Regret Platter)** - 9€
+#### **MegaMix Box (Regret Platter)** - 9 Sovs
 - **Description**: Everything on menu crammed into cardboard coffin
 - **Effects**: Random stat boost x2, inflicts one random status (Bloated, Embarrassed, Confused)
 - **Strategic Use**: Ultimate risk/reward gambling with food
 
-#### **Drunken Sauce Shot** - 2€
+#### **Drunken Sauce Shot** - 2 Sovs
 - **Description**: Pure hot sauce and mayo in plastic thimble
 - **Effects**: Removes "Dazed", but inflicts "Dysentery (Light)" if used more than once in 10 minutes
 - **Strategic Use**: Quick status cure with usage limits
 
-#### **Lambsomnia Special** - 7€
+#### **Lambsomnia Special** - 7 Sovs
 - **Description**: Spiced lamb with pickled onion and "sleepless tzatziki"
 - **Effects**: Grants "Insomniac Clarity" buff (auto-crit next turn, no healing until next inn)
 - **Strategic Use**: Combat preparation with recovery trade-off
 
-#### **Yogurt Reboot** - 3€
+#### **Yogurt Reboot** - 3 Sovs
 - **Description**: Tiny cup of warm, expired Balkan yogurt
 - **Effects**: Resets all negative food debuffs, causes uncontrollable farting for 2 minutes
 - **Strategic Use**: Debuff cleanse with embarrassing side effect
 
-#### **Belly Of Chadz** - 6€
+#### **Belly Of Chadz** - 6 Sovs
 - **Description**: Dense kebab box soaked in three sauces and ego
 - **Effects**: +HP regen while Hungover (10% over 3 turns), 50% chance immediate "Greasy Coma" debuff
 - **Quest Connection**: Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample)
@@ -346,9 +346,9 @@ Mr. Chadz Character:
 
 Must capture absurdity of glittery crop top over bulletproof vest
 6'4" imposing figure with deadpan expression
-Burner phone for sketchy business calls (supplier issues, health inspector avoidance)
+Burner phone for sketchy business calls (supplier issues, health inspector avoidance) AND crypto price alerts — the phone screen is the ONE place crypto is permitted at this location, and may show a ticker row or alert banner (small, unreadable at sprite scale)
 One-handed food service while handling questionable business calls
-NO crypto elements whatsoever
+NO crypto elements anywhere else at the cart — no kiosk, no wallet UI, no coin logos, no crypto pricing, no crypto signage. The "NFT 4 LYFE" wall graffiti stays set dressing, not a system. Crypto here is a background gag (2% of game max), never a mechanic
 
 Food Items:
 

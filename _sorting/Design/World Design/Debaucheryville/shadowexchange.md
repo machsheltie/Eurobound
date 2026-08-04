@@ -36,14 +36,14 @@
 - **Layout**: Vaulted wine-cellar arches repurposed into market stalls with iron lattice dividers
 - **Lighting**: Single desk lamp, CRT monitor glow, UV money-check shimmer, blue-grey smoke atmosphere
 - **Furniture & Props**: 
-  - Split-flap rate board clacking every few seconds updating exchange rates
-  - Wooden counters with scratched glass panes covering currency trays
-  - Back wall of CRT monitors showing "live markets" with pixelized data
-  - Duct-tape bound Shadow Ledger on illuminated desk
+ - Split-flap rate board clacking every few seconds updating exchange rates
+ - Wooden counters with scratched glass panes covering currency trays
+ - Back wall of CRT monitors showing "live markets" with pixelized data
+ - Duct-tape bound Shadow Ledger on illuminated desk
 - **Decorative Elements**: 
-  - Iron lattice hung with counterfeit handbags and deactivated security tags
-  - Currency trays displaying coins, transit cards, casino chips, arcade tokens
-  - Stamped paperwork with mismatched logos and receipts from three different businesses
+ - Iron lattice hung with counterfeit handbags and deactivated security tags
+ - Currency trays displaying coins, transit cards, casino chips, arcade tokens
+ - Stamped paperwork with mismatched logos and receipts from three different businesses
 - **Atmospheric Effects**: Clacking split-flaps, cash counters whirring, bored guard's muzak at 2% volume
 - **Hidden Areas**: Premium Stock gate behind main counter (post-boss unlock)
 
@@ -88,7 +88,7 @@
 - **Split-Flap Rate Board Mini-Game**: Interact during "green ticks" for improved rates, avoid "red ticks"
 - **Street Rep/Charm Influence**: Stats can nudge board for small temporary rate improvements
 - **Dynamic Rate Fluctuation**: Exchange rates change based on player timing and negotiation
-- **System Home**: The Exchange is Debaucheryville's face on the wider economy defined in `design/economy/economy_system.md` — it moves Sovereign-X (SOVS, displayed with the € glyph) into the volatile darknet shitcoins that the back-alley 10% of vendors will accept. The split-flap board is this location's presentation of the live randomized market roster; coin list, kiosk terminals, and rug-pull math live in the economy doc, not here
+- **System Home**: The Exchange is Debaucheryville's face on the wider economy defined in `design/economy/economy_system.md` — it moves Sovereign-X (SOVS) into the volatile darknet shitcoins that the back-alley 10% of vendors will accept. The split-flap board is this location's presentation of the live randomized market roster; coin list, kiosk terminals, and rug-pull math live in the economy doc, not here
 
 ### Barter Window System (Original)
 - **Non-Currency Trading**: Concert wristbands, metro day-passes, gag items for rare gear
@@ -103,7 +103,7 @@
 ### Premium Stock System (Post-Boss Content)
 **Unlocked after Count Velvet Absinthe defeat:**
 - **Saint of Low Sodium Medal**: Alternative acquisition source
-- **Velvet Rope Clip**: Duplicate for build crafting options  
+- **Velvet Rope Clip**: Duplicate for build crafting options 
 - **Forged Duty-Free Receipt**: Shop discounts in designated area
 - **Hidden Gate Access**: Back counter reveals premium inventory
 
@@ -131,7 +131,7 @@
 - **Meeting Location**: Front of main counter, mid-scream about "slippage fees"
 - **Invitation**: "You're better looking than him, but dumber" pickup line
 - **Morning Scene**: Wake on futon under buzzing CRTs and LED strips, she's gone
-- **Consequences**: Gain NFT #2: Pixelated Kebab Monkey (scratched), Hungover status, -25 gold
+- **Consequences**: Gain NFT #2: Pixelated Kebab Monkey (scratched), Hungover status, -25 Sovs
 - **Satirical Beat**: NFT metadata reads "MINTED: 03:17 AM — GAS FEE: 'Don't Worry About It.'"
 
 ### Risk/Reward Notoriety System (Original)
@@ -161,16 +161,16 @@
 ## Implementation Specifications
 ### Technical Requirements
 - **Asset List**: 
-  - Vaulted stone arches with iron lattice market stalls
-  - Split-flap rate board with mechanical animation system
-  - CRT monitor wall displaying live market data
-  - UV wand scanning system with money verification mini-game
-  - Shadow Ledger with duct-tape binding and quest integration
+ - Vaulted stone arches with iron lattice market stalls
+ - Split-flap rate board with mechanical animation system
+ - CRT monitor wall displaying live market data
+ - UV wand scanning system with money verification mini-game
+ - Shadow Ledger with duct-tape binding and quest integration
 - **Animation Requirements**: 
-  - Split-flap board updates (3-5 second intervals)
-  - CRT screen flicker and data scrolling (continuous)
-  - Cash counter spinning (transaction triggers)
-  - UV light scanning patterns (mini-game mechanic)
+ - Split-flap board updates (3-5 second intervals)
+ - CRT screen flicker and data scrolling (continuous)
+ - Cash counter spinning (transaction triggers)
+ - UV light scanning patterns (mini-game mechanic)
 - **Performance Budget**: 50 FPS target, max 16 draw calls, 40MB memory footprint
 - **Platform Considerations**: CRT effects scalable for older devices, simplified particle systems
 

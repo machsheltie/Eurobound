@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 6 PM - 5 AM (when legitimate businesses close)
 - **Stat Requirements**: Bravado 25+ OR vouched for by NPC
-- **Item Requirements**: Minimum €50 gold (they check), discretion
+- **Item Requirements**: Minimum 50 Sovs (they check), discretion
 - **Previous Location Requirements**: Hear rumor at The Blarney Trap or from Craic Broker
 - **Special Conditions**: Hidden entrance, password changes nightly
 
@@ -23,7 +23,7 @@
 - **Normal Exit**: Through the alley, hopefully with money
 - **Completion Requirements**: No completion (gambling never ends)
 - **Failure States**: Losing everything triggers "Cleaned Out" status, temporary ban
-- **Progressive Unlocks**: "High Roller" status after cumulative €500 in bets
+- **Progressive Unlocks**: "High Roller" status after cumulative 500 Sovs in bets
 
 ### The Hidden Entrance
 - **Location**: Unmarked door behind a dumpster in the alley
@@ -35,7 +35,7 @@
 - "The ponies are thirsty" (Monday)
 - "Seamus sent me" (works sometimes, risky)
 - "I'm here for the book club" (Tuesday/Thursday)
-- "What odds on rain?" (meta, always works in Dublin)
+- "What odds on rain?" (meta, always works in Publandia)
 
 ## Visual Design
 ### Exterior Description
@@ -95,9 +95,9 @@
 ║ Tourist Battle Royale............. Various   ║
 ╠══════════════════════════════════════════════╣
 ║ DICE FIGHTS                                  ║
-║ High-Low Championship............. Entry €20 ║
-║ Liar's Dice Tournament............ Entry €50 ║
-║ Paddy's Special (ask)............. €100 min  ║
+║ High-Low Championship............. Entry 20 Sovs ║
+║ Liar's Dice Tournament............ Entry 50 Sovs ║
+║ Paddy's Special (ask)............. 100 Sovs min  ║
 ╠══════════════════════════════════════════════╣
 ║ PROPOSITIONS                                 ║
 ║ Rain before midnight.............. 1:3       ║
@@ -167,21 +167,21 @@ Paddy Malone has run books since he was 14. His father ran books. His grandfathe
 ### Gambling Games
 
 **Dice Fights (High-Low)**
-- **Cost**: €20 entry per round
+- **Cost**: 20 Sovs entry per round
 - **Mechanic**: Predict if next roll is higher or lower than current
 - **House Edge**: 55/45 in house favor (die slightly loaded)
 - **Winning Streak Bonus**: Odds worsen as you win (house adjustment)
 - **Payout**: 1.8:1 (should be 2:1 for fair odds)
 
 **Liar's Dice Tournament**
-- **Cost**: €50 entry
+- **Cost**: 50 Sovs entry
 - **Mechanic**: Bluffing game with NPCs
 - **House Edge**: NPC opponents are professionals
 - **Payout**: Winner takes pot, house takes 20% cut
 - **Bros' Disadvantage**: NPCs can read tourist tells perfectly
 
 **Paddy's Special (Ask at Desk)**
-- **Cost**: €100 minimum
+- **Cost**: 100 Sovs minimum
 - **Mechanic**: High-stakes single roll, your choice of game
 - **House Edge**: "Paddy's choice" on ties, all disputes
 - **Payout**: Up to 5:1 on long shots (that never hit)
@@ -191,7 +191,7 @@ Paddy Malone has run books since he was 14. His father ran books. His grandfathe
 - **Mechanic**: Bet on random events (weather, tourist behavior, etc.)
 - **House Edge**: Paddy sets odds, Paddy observes outcomes, Paddy decides disputes
 - **Examples**:
-  - "Rain before midnight" — 1:3 (It's Dublin. Always bet rain.)
+  - "Rain before midnight" — 1:3 (It's Publandia. Always bet rain.)
   - "Hen party vomit in the Craic Tax" — 1:2 (Saturday night special)
   - "Tourist orders 'Publandia Bomb'" — 1:1 (Daily occurrence, Paddy scouts bars)
 - **The Scam**: Information asymmetry (Paddy has scouts everywhere)
@@ -205,7 +205,7 @@ Paddy Malone has run books since he was 14. His father ran books. His grandfathe
 
 ### The Tourist Battle Royale
 - **Trigger**: Paddy offers "special opportunity" to fighting-inclined bros
-- **Entry**: €30 to fight, or bet on others
+- **Entry**: 30 Sovs to fight, or bet on others
 - **Format**: 4-8 tourists in elimination brawl
 - **Betting**: Odds on each participant, constantly shifting
 - **The Catch**: House favorite is often a ringer (local fighter pretending to be tourist)
@@ -244,7 +244,7 @@ Paddy invokes "house rules" whenever the house is losing too much:
   - Quest to repay or escape the debt
 
 **"Cleaned Out" Status**:
-- Triggers when you hit €0 at Paddy's
+- Triggers when you hit 0 Sovs at Paddy's
 - Temporary ban from premises (1 game day)
 - -20 Bravado (public knowledge of your loss)
 - Paddy's loan offer follows you to The Blarney Trap
@@ -252,7 +252,7 @@ Paddy invokes "house rules" whenever the house is losing too much:
 ### Bravado Interactions
 - **Gain Bravado**: Win big (rare), survive the night with money, refuse Paddy's loan
 - **Lose Bravado**: Get cleaned out, accept loan, get caught cheating
-- **Special**: "High Roller" status (€500 cumulative bets) grants respect, slightly better odds (still unfair)
+- **Special**: "High Roller" status (500 Sovs cumulative bets) grants respect, slightly better odds (still unfair)
 
 ### Status Effects (Location-Specific)
 - **"On a Roll"**: Won last 3 bets, +confidence, worse decision-making
@@ -307,7 +307,7 @@ Paddy invokes "house rules" whenever the house is losing too much:
 - **Background**: Former hurler, found more money in intimidation
 - **Demeanor**: Professional politeness backed by obvious physical threat
 - **Dialogue**:
-  - "Password?" *waits* "...you're in. Minimum's €50 to play. Show me."
+  - "Password?" *waits* "...you're in. Minimum's 50 Sovs to play. Show me."
   - "Leaving already? Smart. Most aren't smart."
   - "There's a dispute? Let me help settle it." *cracks knuckles* "Paddy's right. Always."
 
@@ -337,13 +337,13 @@ Paddy invokes "house rules" whenever the house is losing too much:
 - **Composition**: Professional gambler who actually understands the odds
 - **Behavior**: Bets strategically, small amounts, consistent small wins
 - **Function**: Shows what "smart" gambling looks like (still feeds the house)
-- **Dialogue**: "I make €20 a night. Every night. Paddy lets me because I bring in marks. Don't tell anyone."
+- **Dialogue**: "I make 20 Sovs a night. Every night. Paddy lets me because I bring in marks. Don't tell anyone."
 
 **The Whale**
 - **Composition**: Rich tourist losing massive amounts, doesn't care
 - **Behavior**: Throwing money around, buying rounds, beloved by staff
 - **Function**: Shows the "ideal customer" from Paddy's perspective
-- **Dialogue**: "It's just money! I'm here for the EXPERIENCE! Another €500 on the Australian!"
+- **Dialogue**: "It's just money! I'm here for the EXPERIENCE! Another 500 Sovs on the Australian!"
 
 **The Debt Ghost**
 - **Composition**: Someone who owes Paddy, can't leave, can't pay

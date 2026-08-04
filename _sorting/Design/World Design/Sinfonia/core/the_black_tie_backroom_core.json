@@ -61,12 +61,12 @@
         ]
       },
       "collateral": {
-        "currency": "euro",
+        "currency": "sovs",
         "minimum_gold_to_enter": 500,
         "handling": "held_at_deposit_window_as_chips",
         "returned_on_exit": true,
         "handling_fee_applies": true,
-        "note": "Parties holding under €500 are turned away by Anton at the door. Gold above €500 is never touched by house play."
+        "note": "Parties holding under 500 Sovs are turned away by Anton at the door. Gold above 500 Sovs is never touched by house play."
       },
       "discovery_prerequisites": {
         "any_of": [
@@ -86,7 +86,7 @@
     },
     "high_stakes_salon": {
       "status_requirements": ["high_roller"],
-      "unlock_condition": "total_winnings_1000_euro"
+      "unlock_condition": "total_winnings_1000_sov"
     },
     "private_boxes": {
       "item_requirements": ["special_invitation"],
@@ -115,7 +115,7 @@
       {"id": "banned", "trigger": "caught_cheating_second_offense", "lockout_hours": 24}
     ],
     "progressive_unlocks": [
-      {"id": "high_roller", "condition": "total_winnings_1000_euro", "grants": "high_stakes_salon_access"}
+      {"id": "high_roller", "condition": "total_winnings_1000_sov", "grants": "high_stakes_salon_access"}
     ]
   },
 
@@ -172,7 +172,7 @@
   },
 
   "house_edge_data": {
-    "currency": "euro",
+    "currency": "sovs",
     "chips": {"material": "silver", "value_outside_venue": 0, "reclaimed_at_exit": true},
     "games": [
       {"game": "roulette", "displayed_odds": "fair", "house_edge": 0.053, "high_roller_edge": 0.027},
@@ -198,7 +198,7 @@
         "quest_id": "sinfonia_sidequest_high_stakes_01",
         "phase": "progression",
         "zone": "main_floor",
-        "role": "win_1000_euro_for_high_roller_status"
+        "role": "win_1000_sov_for_high_roller_status"
       },
       {
         "quest_id": "sinfonia_sidequest_the_card_shark_01",
@@ -233,7 +233,7 @@
     "boss_type": "hidden_optional",
     "arena_zone": "private_boxes",
     "unlock_conditions": {
-      "any_of": ["total_losses_1000_euro", "discover_herr_falsch_cheating"]
+      "any_of": ["total_losses_1000_sov", "discover_herr_falsch_cheating"]
     },
     "attacks": [
       {"name": "Full House", "effect": "summons_card_construct_allies"},
@@ -243,7 +243,7 @@
     ],
     "weakness": "expose_cheating_during_fight_reduces_stats",
     "rewards": [
-      {"item": "chip_stash", "amount_euro": 2000},
+      {"item": "chip_stash", "amount_sov": 2000},
       {"item": "item_shark_fin", "type": "accessory"},
       {"achievement": "card_counter"}
     ]
@@ -261,7 +261,7 @@
     {
       "location": "sinfonia_imperialsquare_haute_couture_01",
       "relationship": "black_tie_attire_source",
-      "systemic_note": "A party busted here can no longer afford the Haberdashery's €500 Valued Client path. No hard gate in either direction."
+      "systemic_note": "A party busted here can no longer afford the Haberdashery's 500 Sovs Valued Client path. No hard gate in either direction."
     },
     {
       "location": "sinfonia_hidden_baroness_ballroom_01",
@@ -279,7 +279,7 @@
         "permanent": true
       },
       "high_roller": {
-        "trigger": "total_winnings_1000_euro",
+        "trigger": "total_winnings_1000_sov",
         "features": ["salon_rope_opens", "better_odds", "selfie_spot_available"]
       },
       "banned": {

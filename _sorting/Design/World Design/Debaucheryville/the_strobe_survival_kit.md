@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 PM - 5 AM (pre-club through post-club hours)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: Gold for purchases (€3-25), acceptance of impending sensory assault
+- **Item Requirements**: Gold for purchases (3 Sovs-25), acceptance of impending sensory assault
 - **Previous Location Requirements**: None (the stall finds those heading clubward)
 - **Special Conditions**: Prices increase after midnight (desperation pricing)
 
@@ -92,8 +92,8 @@
 
 The satire is that this practical, protective approach is the exception rather than the rule. Everyone SHOULD buy earplugs. Almost no one does until they've experienced tinnitus.
 
-### The Miroslav Philosophy
-The vendor, Miroslav, is a former sound engineer who saw too many young people destroy their hearing. He opened this stall as genuine harm reduction disguised as commerce. He WANTS you to buy earplugs. He'll give you the guilt trip. He's seen the consequences.
+### The Antonín Philosophy
+The vendor, Antonín, is a former sound engineer who saw too many young people destroy their hearing. He opened this stall as genuine harm reduction disguised as commerce. He WANTS you to buy earplugs. He'll give you the guilt trip. He's seen the consequences.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: The absurdity that hearing protection isn't standard club equipment
@@ -118,7 +118,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 
 **Obvious signs they dismiss**:
 - The decibel chart is RIGHT THERE
-- Miroslav's warning is sincere
+- Antonín's warning is sincere
 - Their phones already show hearing damage warnings
 - They've had ringing ears before
 - Other countries require hearing protection in clubs
@@ -133,7 +133,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 ## Gameplay Mechanics
 ### Stall Interaction System
 - **Approach**: Browse the organized sections
-- **Miroslav's Assessment**: Based on your current equipment and destination
+- **Antonín's Assessment**: Based on your current equipment and destination
 - **Recommendation**: He'll tell you what you actually need (often earplugs)
 - **Purchase**: Select items, receive tactical advice
 - **Equipment**: Items go to inventory, some equippable
@@ -141,53 +141,53 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 ### Product Inventory
 
 **Audio Defense**
-| Item | Price | Effect | Miroslav's Take |
+| Item | Price | Effect | Antonín's Take |
 |------|-------|--------|-----------------|
-| Foam Earplugs (Basic) | €3 | -30% Confusion from music, preserves hearing | "Better than nothing. Barely." |
-| Silicone Earplugs | €8 | -50% Confusion, better sound quality | "Now we're talking. You can still hear, just safely." |
-| Musician-Grade Plugs | €20 | -60% Confusion, full sound fidelity | "Professional choice. The sound stays, the damage doesn't." |
-| Custom Molded (Premium) | €45 | -75% Confusion, perfect fit | "For the serious. Once you go custom, you never go back." |
+| Foam Earplugs (Basic) | 3 Sovs | -30% Confusion from music, preserves hearing | "Better than nothing. Barely." |
+| Silicone Earplugs | 8 Sovs | -50% Confusion, better sound quality | "Now we're talking. You can still hear, just safely." |
+| Musician-Grade Plugs | 20 Sovs | -60% Confusion, full sound fidelity | "Professional choice. The sound stays, the damage doesn't." |
+| Custom Molded (Premium) | 45 Sovs | -75% Confusion, perfect fit | "For the serious. Once you go custom, you never go back." |
 
 **Visual Enhancement**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Glow Stick (Single) | €2 | +5 Mood, visible in crowd | "Basic. Functional. You'll lose it in an hour." |
-| Glow Stick Bundle (6) | €8 | +15 Mood, visible, shareable | "Smart. You'll make friends. Or lose them all." |
-| LED Bracelet | €12 | +10 Mood, +Charm in clubs, rechargeable | "Reusable. Responsible. Still ridiculous." |
-| Strobe-Resistant Shades | €15 | -40% Confusion from lights, +Style | "Yes, wear sunglasses inside. It's SURVIVAL, not fashion." |
-| Glow Glasses | €10 | +15 Mood, +Visibility, photo-ready | "You'll look stupid. You'll also be memorable." |
+| Glow Stick (Single) | 2 Sovs | +5 Mood, visible in crowd | "Basic. Functional. You'll lose it in an hour." |
+| Glow Stick Bundle (6) | 8 Sovs | +15 Mood, visible, shareable | "Smart. You'll make friends. Or lose them all." |
+| LED Bracelet | 12 Sovs | +10 Mood, +Charm in clubs, rechargeable | "Reusable. Responsible. Still ridiculous." |
+| Strobe-Resistant Shades | 15 Sovs | -40% Confusion from lights, +Style | "Yes, wear sunglasses inside. It's SURVIVAL, not fashion." |
+| Glow Glasses | 10 Sovs | +15 Mood, +Visibility, photo-ready | "You'll look stupid. You'll also be memorable." |
 
 **Chemical Support**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Energy Shot | €5 | +20 SP, +Speed (1 hour), crash risk | "Liquid motivation. The crash is real." |
-| Caffeine Pills (6) | €8 | +10 SP per pill, controlled release | "More controlled. Still artificial. Works." |
-| Electrolyte Packet | €3 | +10 HP, prevents Dehydration status | "Hydration is survival. This helps." |
-| Breath Mints (tin) | €4 | +Charm in close conversation | "For after the kebab. Or during. No judgment." |
-| Energy Gum | €6 | +15 SP, +fresh breath, subtle | "Caffeine without the bottle. Sophisticated." |
+| Energy Shot | 5 Sovs | +20 SP, +Speed (1 hour), crash risk | "Liquid motivation. The crash is real." |
+| Caffeine Pills (6) | 8 Sovs | +10 SP per pill, controlled release | "More controlled. Still artificial. Works." |
+| Electrolyte Packet | 3 Sovs | +10 HP, prevents Dehydration status | "Hydration is survival. This helps." |
+| Breath Mints (tin) | 4 Sovs | +Charm in close conversation | "For after the kebab. Or during. No judgment." |
+| Energy Gum | 6 Sovs | +15 SP, +fresh breath, subtle | "Caffeine without the bottle. Sophisticated." |
 
 **Tactical Accessories**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Phone Pouch (Secure) | €10 | -80% Pickpocket risk | "Your phone is your lifeline. Protect it." |
-| Mini Flashlight | €8 | Bathroom navigation, lost item finding | "Club bathrooms are dark for reasons. Be prepared." |
-| Wet Wipes (Pack) | €5 | Various emergency cleanups | "Don't ask what for. Just have them." |
-| Hair Ties (Set) | €3 | Practical utility | "Underrated. Essential. You'll thank me." |
-| Backup Charger | €18 | Phone resurrection | "Your phone will die. This brings it back." |
+| Phone Pouch (Secure) | 10 Sovs | -80% Pickpocket risk | "Your phone is your lifeline. Protect it." |
+| Mini Flashlight | 8 Sovs | Bathroom navigation, lost item finding | "Club bathrooms are dark for reasons. Be prepared." |
+| Wet Wipes (Pack) | 5 Sovs | Various emergency cleanups | "Don't ask what for. Just have them." |
+| Hair Ties (Set) | 3 Sovs | Practical utility | "Underrated. Essential. You'll thank me." |
+| Backup Charger | 18 Sovs | Phone resurrection | "Your phone will die. This brings it back." |
 
 **Regret Prevention**
-| Item | Price | Effect | Miroslav's Take |
+| Item | Price | Effect | Antonín's Take |
 |------|-------|--------|-----------------|
-| Protection Pack | €8 | Social responsibility | "No judgment. Only preparation." |
-| Aspirin (Packet) | €4 | Pre-emptive headache defense | "Take before bed. Thank me tomorrow." |
-| Snack Bar | €3 | +15 HP, prevents 3 AM crash | "Your body needs fuel. The club doesn't serve food." |
-| Water Bottle | €2 | Hydration, radical concept | "Revolutionary: drinking water. Try it." |
+| Protection Pack | 8 Sovs | Social responsibility | "No judgment. Only preparation." |
+| Aspirin (Packet) | 4 Sovs | Pre-emptive headache defense | "Take before bed. Thank me tomorrow." |
+| Snack Bar | 3 Sovs | +15 HP, prevents 3 AM crash | "Your body needs fuel. The club doesn't serve food." |
+| Water Bottle | 2 Sovs | Hydration, radical concept | "Revolutionary: drinking water. Try it." |
 
 ### The Midnight Price Increase
 - **Trigger**: After midnight, all prices +50%
 - **Reason**: Desperation pricing (you need it NOW)
-- **Miroslav's Justification**: "You should have bought before. Now you pay the premium."
-- **Exception**: Earplugs stay same price (Miroslav's principles)
+- **Antonín's Justification**: "You should have bought before. Now you pay the premium."
+- **Exception**: Earplugs stay same price (Antonín's principles)
 
 ### Equipment Effects in Clubs
 
@@ -195,7 +195,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - Velvet Curtain Club: "Green Fairy Confusion" from music reduced
 - Dialogue remains audible (game abstraction)
 - Next-day status: No "Ringing Ears" debuff
-- Miroslav respects you
+- Antonín respects you
 
 **With Strobe-Resistant Shades:**
 - Visual confusion effects reduced
@@ -213,15 +213,15 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - Full confusion effects apply
 - "Ringing Ears" status next day (-10% all audio interactions)
 - "Strobe Headache" possible (-HP over time)
-- Miroslav is disappointed
+- Antonín is disappointed
 
 ### Bravado Interactions
-- **Gain Bravado**: Buy the full survival kit, take Miroslav's advice seriously, help another tourist prepare
+- **Gain Bravado**: Buy the full survival kit, take Antonín's advice seriously, help another tourist prepare
 - **Lose Bravado**: Dismiss earplugs as "uncool," buy only glow sticks, ignore the decibel chart
 - **Neutral**: Standard purchase, standard preparation
 
 ### The "Tactical Briefing" Option
-- **Trigger**: Ask Miroslav for advice
+- **Trigger**: Ask Antonín for advice
 - **Content**: Personalized recommendation based on destination, current state, equipment
 - **Effect**: Optimal loadout suggestion, possible discount for following advice
 - **Duration**: 2-minute conversation, skippable but valuable
@@ -229,15 +229,15 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 ## NPCs & Vendors
 ### The Operator
 
-**Miroslav "Miro" Dvorak**
+**Antonín "Tonda" Dvořák**
 - **Role**: Stall operator, former sound engineer, harm reduction advocate in vendor's clothing
 - **Appearance**: 50s Czech man, practical clothing, hearing aids (visible, intentional), military surplus vest
 - **Background**: 20 years as club sound engineer, tinnitus at 45, now on a mission to prevent others' hearing loss
 - **Demeanor**: Gruff, practical, genuinely caring beneath the tactical exterior
-- **The Miroslav Method**: Guilt-trip people into protecting themselves, frame it as tactical wisdom
+- **The Antonín Method**: Guilt-trip people into protecting themselves, frame it as tactical wisdom
 - **Visible Hearing Aids**: "You see these? Twenty years in clubs. No earplugs. Don't be me."
 
-**Miroslav's Dialogue Categories**:
+**Antonín's Dialogue Categories**:
 
 *The Tactical Assessment:*
 - "Where are you going tonight? Velvet Curtain? 105 decibels average. You need at least silicone grade."
@@ -246,7 +246,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - "I see your group. None of you have protection. Statistically, two of you will have ringing ears by morning."
 
 *The Sales Pitch (Also Genuine Concern):*
-- "Earplugs. €8. Your hearing? Priceless. Irreplaceable. Literally cannot be fixed once damaged."
+- "Earplugs. 8 Sovs. Your hearing? Priceless. Irreplaceable. Literally cannot be fixed once damaged."
 - "Glow sticks are fun. Earplugs are survival. Buy both. Start with the earplugs."
 - "The strobe shades look stupid. You know what looks stupider? Squinting for four hours."
 - "Energy shots work. The crash is real. The electrolytes help. Buy the combo."
@@ -264,7 +264,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - "Come back tomorrow. Tell me how it went. I like hearing survival stories."
 
 *The Disappointment (If Refused):*
-- "Your choice. Your ears. I'll be here tomorrow when they're ringing. Earplugs will still be €8."
+- "Your choice. Your ears. I'll be here tomorrow when they're ringing. Earplugs will still be 8 Sovs."
 - "Cool? You think earplugs aren't cool? You know what's not cool? Hearing aids at 45."
 - "Fine. Go. But remember this conversation when you're asking people to repeat themselves."
 
@@ -274,19 +274,19 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - **Composition**: Tourist who came back after one night without earplugs
 - **Behavior**: Buying musician-grade now, slightly panicked
 - **Dialogue**: "My ears are STILL ringing. It's been EIGHTEEN HOURS. Give me the best ones you have."
-- **Function**: Living consequence, Miroslav's vindication
+- **Function**: Living consequence, Antonín's vindication
 
 **The Veteran Clubber**
 - **Composition**: Local who knows the drill, restocking supplies
 - **Behavior**: Efficient purchase, knows exactly what they need
-- **Dialogue**: "Usual kit, Miro. Good weekend?" *receives package, nods, leaves*
+- **Dialogue**: "Usual kit, Tonda. Good weekend?" *receives package, nods, leaves*
 - **Function**: Shows what prepared clubbing looks like
 
 **The Dismissive Bro**
 - **Composition**: Tourist who thinks earplugs are uncool
-- **Behavior**: Buying only glow sticks, dismissing Miroslav's warnings
+- **Behavior**: Buying only glow sticks, dismissing Antonín's warnings
 - **Dialogue**: "Nah man, I don't need earplugs. I've done this before. I'm FINE."
-- **Miroslav's Response**: "See you tomorrow. I'll have the silicone ready."
+- **Antonín's Response**: "See you tomorrow. I'll have the silicone ready."
 - **Function**: The bros' potential future, teachable moment
 
 **The Concerned Friend**
@@ -297,12 +297,12 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 
 **The Sound Engineer (Off-Duty)**
 - **Composition**: Current club worker, buying professional gear
-- **Behavior**: Serious about quality, discusses specs with Miroslav
+- **Behavior**: Serious about quality, discusses specs with Antonín
 - **Dialogue**: "The new custom molds working out? Thinking of upgrading from the -25dB to -30dB."
-- **Function**: Professional perspective, validates Miroslav's expertise
+- **Function**: Professional perspective, validates Antonín's expertise
 
 ### Original NPC Dialogue
-**Miroslav's Philosophy (Extended, If You Listen):**
+**Antonín's Philosophy (Extended, If You Listen):**
 - "I started this stall six years ago. First year, I sold mostly glow sticks. Now? Earplugs outsell everything. People are learning. Slowly."
 - "The clubs won't protect you. The DJs won't turn it down. The bouncers don't care about your ears. Only you can protect you."
 - "I've seen kids — eighteen, nineteen — already with hearing damage. Permanent. Forever. For what? One good night?"
@@ -311,14 +311,14 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 
 **The Bros' Strobe Survival Kit Reactions:**
 - **Lord Pilsner** (arriving): "Survival kit? It's a CLUB, not a WAR ZONE."
-- **Miroslav**: "105 decibels for four hours IS a war zone. For your ears."
+- **Antonín**: "105 decibels for four hours IS a war zone. For your ears."
 - **Lord Pilsner** (hesitating): "I mean... earplugs are kind of... uncool, right?"
-- **Miroslav**: *points to hearing aids* "THESE are uncool. Earplugs are invisible."
+- **Antonín**: *points to hearing aids* "THESE are uncool. Earplugs are invisible."
 - **Lord Pilsner** (converted): "...give me the musician-grade."
 - **Chadwick**: "The glow sticks will look AMAZING on camera. The aesthetic is PERFECT."
-- **Miroslav**: "The glow sticks don't protect anything. Buy the earplugs too."
+- **Antonín**: "The glow sticks don't protect anything. Buy the earplugs too."
 - **Chadwick**: "Fine, fine. But the CONTENT—"
-- **Miroslav**: "You can't create content if you can't hear the feedback. Earplugs."
+- **Antonín**: "You can't create content if you can't hear the feedback. Earplugs."
 - **Bradley**: "I'll take the full survival kit."
 
 ## System Integration
@@ -343,7 +343,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 
 ### The Strobe Survival Achievement Track
 - **First Purchase**: "Preparing" — acknowledging the battlefield
-- **Earplug Purchase**: "Hearing Preserved" — Miroslav approves
+- **Earplug Purchase**: "Hearing Preserved" — Antonín approves
 - **Full Kit**: "Tactically Prepared" — optimal loadout achieved
 - **Survived Without Equipment**: "Lucky" — not recommended strategy
 - **Returned to Buy Earplugs After**: "Converted" — learned the hard way
@@ -355,7 +355,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
   - Distant club bass (the threat preview)
   - Glow stick cracking
   - Package rustling
-  - Miroslav's gruff voice
+  - Antonín's gruff voice
   - Street vendor ambiance
   - Other tourists passing
 - **Music Style**: None (the silence is the point — contrast to clubs)
@@ -364,9 +364,9 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Distant bass throb as warning, earplug "safety" sound
-- **Character Voice Direction**: Miroslav's gruff concern, no-nonsense delivery
+- **Character Voice Direction**: Antonín's gruff concern, no-nonsense delivery
 - **Environmental Comedy**: Dismissive Bro's future regret, The Convert's panic
-- **The Hearing Aid Moment**: Brief audio distortion when Miroslav points to them
+- **The Hearing Aid Moment**: Brief audio distortion when Antonín points to them
 
 ## Implementation Specifications
 ### Technical Requirements
@@ -376,32 +376,32 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
   - Decibel warning chart
   - Earplug tier display
   - Glow stick bins
-  - Miroslav character (hearing aids visible)
+  - Antonín character (hearing aids visible)
   - Customer NPC sprites
   - Product item sprites
 - **Animation Requirements**:
   - Product browsing
   - Earplug demonstration
   - Glow stick activation
-  - Miroslav's tactical briefing gestures
+  - Antonín's tactical briefing gestures
 - **Performance Budget**: 45 FPS target, max 12 draw calls, 28MB memory
 - **Platform Considerations**: Simplified glow effects, static product displays
 
 ### Development Timeline
-- **Asset Creation**: 6 hours (stall layout, products, Miroslav, customers)
+- **Asset Creation**: 6 hours (stall layout, products, Antonín, customers)
 - **Implementation Phase**: 8 hours (equipment system, status effects, pricing mechanics)
 - **Testing Requirements**: Equipment effect balance, midnight price trigger, status interactions
-- **Polish Phase**: 3 hours (decibel chart, glow effects, Miroslav's timing)
+- **Polish Phase**: 3 hours (decibel chart, glow effects, Antonín's timing)
 
 ## Marketing Integration
 ### Social Media Strategy
-- **Instagram Moments**: Tactical stall aesthetic, glow stick array, Miroslav portrait
-- **TikTok Potential**: Earplug PSA content, survival kit assembly, Miroslav's warnings
-- **Twitter Hooks**: Decibel chart reality check, harm reduction messaging, Miroslav philosophy
+- **Instagram Moments**: Tactical stall aesthetic, glow stick array, Antonín portrait
+- **TikTok Potential**: Earplug PSA content, survival kit assembly, Antonín's warnings
+- **Twitter Hooks**: Decibel chart reality check, harm reduction messaging, Antonín philosophy
 - **Streaming Content**: Full tactical briefing, equipment effects demonstration
 
 ### Community Engagement
-- **Fan Art Potential**: Miroslav portrait (with hearing aids), survival kit layout, decibel chart
+- **Fan Art Potential**: Antonín portrait (with hearing aids), survival kit layout, decibel chart
 - **Meme-ability**: "I don't need earplugs" → "Give me the best ones you have" format
 - **Cultural Discussion**: Club hearing protection, harm reduction in nightlife, sound engineering
 
@@ -412,7 +412,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - [x] **Satirical targets appropriate** (Club culture's health disregard, not clubbers themselves)
 - [x] **Gameplay value established** (Equipment system, status effects, harm reduction)
 - [x] **No crypto elements** (Pure tactical commerce)
-- [x] **Original content preserved** (Miroslav characterization, harm reduction messaging, military framing)
+- [x] **Original content preserved** (Antonín characterization, harm reduction messaging, military framing)
 
 ---
 
@@ -447,9 +447,9 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - water_bottle.png - 24x32 - Revolutionary concept
 
 ### Character Sprites (8 PNGs)
-- miroslav_vendor.png - 64x96 - Hearing aids visible
-- miroslav_demonstrating.png - 64x96x3 - Earplug education
-- miroslav_concerned.png - 64x96 - The warning expression
+- antonin_vendor.png - 64x96 - Hearing aids visible
+- antonin_demonstrating.png - 64x96x3 - Earplug education
+- antonin_concerned.png - 64x96 - The warning expression
 - the_convert.png - 64x96 - Panicked return customer
 - veteran_clubber.png - 64x96 - Knows the drill
 - dismissive_bro.png - 64x96 - Future convert
@@ -458,7 +458,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 
 ### UI Elements (6 PNGs)
 - equipment_browser_ui.png - 256x192 - Section navigation
-- tactical_briefing_ui.png - 256x128 - Miroslav's advice
+- tactical_briefing_ui.png - 256x128 - Antonín's advice
 - earplug_comparison.png - 192x96 - Quality tiers
 - midnight_price_warning.png - 128x64 - +50% indicator
 - equipped_status.png - 128x32 - Current loadout
@@ -466,4 +466,4 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 
 ---
 
-*The Strobe Survival Kit: The club is 105 decibels. Your ears are irreplaceable. Miroslav has the scars to prove it. €8 for earplugs, €0 for the lecture, priceless for your future hearing. Equip yourself. The night is hostile.*
+*The Strobe Survival Kit: The club is 105 decibels. Your ears are irreplaceable. Antonín has the scars to prove it. 8 Sovs for earplugs, 0 Sovs for the lecture, priceless for your future hearing. Equip yourself. The night is hostile.*

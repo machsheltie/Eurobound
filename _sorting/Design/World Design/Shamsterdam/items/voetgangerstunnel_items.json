@@ -8,14 +8,14 @@
       "display_name": "Tunnel Map",
       "description": "The only accurate map of the tunnel system. Marloes made it herself after years of watching tourists fail.",
       "cost": 8,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "navigation_bonus",
         "bonus": 0.15,
         "shows_actual_layout": true
       },
       "item_granted": "tunnel_map_accurate",
-      "dialogue_on_purchase": "€8 for the map. It's the only accurate one in the city. Yes, really."
+      "dialogue_on_purchase": "8 Sovs for the map. It's the only accurate one in the city. Yes, really."
     },
     {
       "service_id": "tourist_map_surface",
@@ -23,7 +23,7 @@
       "display_name": "Tourist Map (Surface)",
       "description": "A standard Shamsterdam tourist map. Completely useless underground.",
       "cost": 5,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "none_underground",
         "comedy": true
@@ -36,7 +36,7 @@
       "display_name": "'I Survived the Tunnel' Badge",
       "description": "A small pin badge. Purely cosmetic. You haven't survived yet.",
       "cost": 3,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "cosmetic",
         "equip_slot": "accessory"
@@ -48,7 +48,7 @@
       "display_name": "Flashlight",
       "description": "A basic flashlight. Reveals hidden graffiti hints on the walls.",
       "cost": 6,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "reveal_graffiti",
         "enables": "graffiti_visibility"
@@ -72,14 +72,14 @@
       "service_id": "henk_paid_directions",
       "provider_npc": "henk_security_01",
       "display_name": "'Correct' Directions",
-      "description": "For €5, Henk will give you the 'real' directions. Slightly more reliable.",
+      "description": "For 5 Sovs, Henk will give you the 'real' directions. Slightly more reliable.",
       "cost": 5,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "direction_hint",
         "navigation_bonus": 0.10
       },
-      "dialogue_on_purchase": "Okay, for five euro, I give you the REAL directions. This way. Maybe."
+      "dialogue_on_purchase": "Okay, for five Sovs, I give you the REAL directions. This way. Maybe."
     },
     {
       "service_id": "henk_escort",
@@ -87,22 +87,22 @@
       "display_name": "Guided Walk (Escort)",
       "description": "Henk will walk you to your destination himself. Guaranteed correct. Very slow.",
       "cost": 10,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "escort",
         "guaranteed_correct": true,
         "speed": "very_slow",
         "time_cost_seconds": 300
       },
-      "dialogue_on_purchase": "For ten euro, I walk you there myself. But I walk slow. Very slow."
+      "dialogue_on_purchase": "For ten Sovs, I walk you there myself. But I walk slow. Very slow."
     },
     {
       "service_id": "willem_tip_1",
       "provider_npc": "willem_busker_01",
-      "display_name": "Tip Willem (€1)",
+      "display_name": "Tip Willem (1 Sov)",
       "description": "A small tip for the eternal busker. He'll offer a navigation hint.",
       "cost": 1,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "hint",
         "quality": "basic",
@@ -112,10 +112,10 @@
     {
       "service_id": "willem_tip_5",
       "provider_npc": "willem_busker_01",
-      "display_name": "Tip Willem (€5)",
+      "display_name": "Tip Willem (5 Sovs)",
       "description": "A generous tip. Willem will share reliable navigation wisdom.",
       "cost": 5,
-      "currency": "euro",
+      "currency": "sovs",
       "effect": {
         "type": "hint",
         "quality": "reliable",
@@ -341,7 +341,7 @@
     {
       "achievement_id": "willems_friend",
       "display_name": "Willem's Friend",
-      "description": "Tipped Willem €5 on three separate visits. He shared something... unusual.",
+      "description": "Tipped Willem 5 Sovs on three separate visits. He shared something... unusual.",
       "trigger": "eternal_busker_quest_complete",
       "type": "hidden"
     },

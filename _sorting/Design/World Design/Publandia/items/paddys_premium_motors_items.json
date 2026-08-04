@@ -8,7 +8,7 @@
       "display_name": "The Shamrock (Economy)",
       "item_type": "rental_vehicle",
       "rarity": "common",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "price": 45,
       "price_unit": "per_day",
       
@@ -20,7 +20,7 @@
       "hidden_issue": {
         "problem": "Wipers stuck on",
         "reveal": "Activates immediately upon starting",
-        "seamus_hint": "She's reliable. The wipers are a bit... persistent."
+        "fergus_hint": "She's reliable. The wipers are a bit... persistent."
       },
       
       "effects": {
@@ -33,7 +33,7 @@
       "display_name": "The Lucky Charm (Standard)",
       "item_type": "rental_vehicle",
       "rarity": "uncommon",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "price": 60,
       "price_unit": "per_day",
       
@@ -45,7 +45,7 @@
       "hidden_issue": {
         "problem": "GPS glitches near roundabouts",
         "reveal": "GPS starts saying 'recalculating' and never stops in Cloverleaf",
-        "seamus_hint": "Good choice. The GPS is... creative near intersections."
+        "fergus_hint": "Good choice. The GPS is... creative near intersections."
       },
       
       "effects": {
@@ -58,7 +58,7 @@
       "display_name": "The Emerald Dream (Premium)",
       "item_type": "rental_vehicle",
       "rarity": "rare",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "price": 80,
       "price_unit": "per_day",
       
@@ -70,7 +70,7 @@
       "hidden_issue": {
         "problem": "Too wide for country lanes",
         "reveal": "Constant hedge-scraping, mirror-folding required",
-        "seamus_hint": "Roomy. Maybe too roomy for some of the lanes out there."
+        "fergus_hint": "Roomy. Maybe too roomy for some of the lanes out there."
       },
       
       "effects": {
@@ -84,7 +84,7 @@
       "display_name": "The Full Irish (Luxury)",
       "item_type": "rental_vehicle",
       "rarity": "unique",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "price": 120,
       "price_unit": "per_day",
       
@@ -96,7 +96,7 @@
       "hidden_issue": {
         "problem": "Attracts sheep attention",
         "reveal": "Sheep follow the car, block roads, attempt to climb in",
-        "seamus_hint": "A beauty. The sheep love her. Be warned."
+        "fergus_hint": "A beauty. The sheep love her. Be warned."
       },
       
       "effects": {
@@ -110,7 +110,7 @@
       "display_name": "GPS Navigation",
       "item_type": "rental_addon",
       "rarity": "common",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "price": 20,
       "price_unit": "per_day",
       
@@ -122,7 +122,7 @@
       "hidden_issue": {
         "problem": "Says 'recalculating' forever in The Cloverleaf",
         "reveal": "GPS voice becomes increasingly desperate/confused",
-        "seamus_hint": "It'll work. Until it doesn't."
+        "fergus_hint": "It'll work. Until it doesn't."
       },
       
       "effects": {
@@ -135,7 +135,7 @@
       "display_name": "Premium Insurance",
       "item_type": "rental_addon",
       "rarity": "common",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "price": 35,
       "price_unit": "per_day",
       
@@ -147,7 +147,7 @@
       "hidden_issue": {
         "problem": "Explicitly excludes 'circular traffic incidents'",
         "reveal": "Useless in The Cloverleaf",
-        "seamus_hint": "Covers everything. *pause* Almost everything.",
+        "fergus_hint": "Covers everything. *pause* Almost everything.",
         "fine_print": "Section 14.3: Coverage does not extend to incidents occurring within circular traffic patterns, roundabouts, or perpetual vehicular loops."
       },
       
@@ -160,7 +160,7 @@
       "display_name": "Map Book",
       "item_type": "rental_addon",
       "rarity": "common",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "price": 10,
       "price_unit": "one_time",
       
@@ -171,8 +171,8 @@
       
       "hidden_issue": {
         "problem": "The Cloverleaf is only labeled with '?'",
-        "reveal": "Seamus has annotated it but it doesn't help",
-        "seamus_hint": "I've marked it up myself. For what good it'll do."
+        "reveal": "Fergus has annotated it but it doesn't help",
+        "fergus_hint": "I've marked it up myself. For what good it'll do."
       },
       
       "effects": {
@@ -185,19 +185,19 @@
       "display_name": "Dashboard Rosary Beads",
       "item_type": "rental_addon",
       "rarity": "common",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "price": 5,
       "price_unit": "one_time",
       
       "description": {
-        "player_sees": "Simple rosary beads for the dashboard. Seamus seems insistent.",
+        "player_sees": "Simple rosary beads for the dashboard. Fergus seems insistent.",
         "bros_see": "Aw, that's sweet. Cultural authenticity!"
       },
       
       "hidden_issue": {
         "problem": "None - genuinely helpful for morale",
         "reveal": "Only addon that actually does something",
-        "seamus_hint": "Take it. Ye'll need something to hold onto."
+        "fergus_hint": "Take it. Ye'll need something to hold onto."
       },
       
       "effects": {
@@ -209,14 +209,14 @@
   
   "post_quest_rewards": [
     {
-      "item_id": "seamus_respect_discount",
-      "display_name": "Seamus's Respect",
+      "item_id": "fergus_respect_discount",
+      "display_name": "Fergus's Respect",
       "item_type": "permanent_discount",
       "rarity": "unique",
       "unlock_condition": "cloverleaf_completed",
       
       "description": {
-        "player_sees": "Seamus acknowledges you as survivors. 10% off future rentals.",
+        "player_sees": "Fergus acknowledges you as survivors. 10% off future rentals.",
         "bros_see": "This guy loves us! We're practically family now!"
       },
       
@@ -225,7 +225,7 @@
         "applies_to": "all_paddy_rentals"
       },
       
-      "seamus_dialogue": "Ye've earned my respect. Doesn't mean much. But ye've earned it."
+      "fergus_dialogue": "Ye've earned my respect. Doesn't mean much. But ye've earned it."
     }
   ],
   
@@ -233,7 +233,7 @@
     "vehicle_count": 4,
     "addon_count": 4,
     "price_range": {"min": 5, "max": 120},
-    "currency_accepted": "euros",
+    "currency_accepted": "sovs",
     "hidden_fees": {
       "circular_traffic_exclusion": "Insurance doesn't cover roundabouts",
       "sheep_damage_clause": "Not liable for livestock interactions"

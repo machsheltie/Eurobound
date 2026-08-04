@@ -106,7 +106,7 @@
     "shop_node_game_alley": {
       "type": "shop",
       "description": "Rigged carnival games (milk bottles, ring toss, coin pusher) running parallel to the path toward prize_booth.",
-      "mechanics": "Average yield 5-15 circus_tickets per EUR3 game, feeding directly into prize_booth's ticket-tier economy."
+      "mechanics": "Average yield 5-15 circus_tickets per 3-Sov game, feeding directly into prize_booth's ticket-tier economy."
     },
     "shop_node_vance_loot_crate_voucher": {
       "type": "shop",

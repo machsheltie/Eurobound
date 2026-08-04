@@ -15,9 +15,9 @@
 ### Entry Conditions
 - **Time Restrictions**: 11 AM - 3 AM (always there when you need it, suspiciously)
 - **Stat Requirements**: None (protagonists welcome regardless of condition)
-- **Item Requirements**: Gold (€8-20 per meal)
+- **Item Requirements**: Gold (8 Sovs-20 per meal)
 - **Previous Location Requirements**: None
-- **Special Conditions**: Siobhan seems to know when you're about to do something dangerous
+- **Special Conditions**: Deirdre seems to know when you're about to do something dangerous
 
 ### Exit Conditions
 - **Normal Exit**: Walk away, fully restored, ready for whatever's next
@@ -53,38 +53,38 @@
 - Hearty sandwiches
 - "Emergency Provisions" (wrapped for travel)
 
-**Siobhan's Station**
+**Deirdre's Station**
 - Warm smile (always)
 - Uncanny knowledge (constant)
 - Menu that adjusts to your needs (definitely not suspicious)
 - The sense that she knows more than she's saying
 
 ### The Menu
-Siobhan's menu is... adaptive. Items seem to appear based on what you're about to face.
+Deirdre's menu is... adaptive. Items seem to appear based on what you're about to face.
 
 **Standard Fare (Always Available)**
 | Item | Price | HP Restoration | Notes |
 |------|-------|----------------|-------|
-| Irish Stew | €8 | +40 HP | Classic, reliable, warm |
-| Meat Pie | €10 | +50 HP | Substantial, portable |
-| Sausage Roll | €6 | +30 HP | Quick, satisfying |
-| Beef & Guinness Pie | €12 | +60 HP | Premium restoration |
-| Shepherd's Pie | €10 | +50 HP | Comfort food maximum |
-| Full Irish (Portable) | €15 | +80 HP, cures Hungover | The complete recovery |
+| Irish Stew | 8 Sovs | +40 HP | Classic, reliable, warm |
+| Meat Pie | 10 Sovs | +50 HP | Substantial, portable |
+| Sausage Roll | 6 Sovs | +30 HP | Quick, satisfying |
+| Beef & Guinness Pie | 12 Sovs | +60 HP | Premium restoration |
+| Shepherd's Pie | 10 Sovs | +50 HP | Comfort food maximum |
+| Full Irish (Portable) | 15 Sovs | +80 HP, cures Hungover | The complete recovery |
 
 **"Situational" Specials (Appear When Needed)**
 | Item | Price | Effect | Appears When... |
 |------|-------|--------|-----------------|
-| Pre-Fight Fuel | €12 | +50 HP, +10 Attack (1 battle) | Combat approaches |
-| Liquid Fortitude Stew | €15 | +60 HP, Fear immunity (30 min) | Boss area nearby |
-| The Second Wind | €18 | +70 HP, +20 SP, removes fatigue | Player HP/SP low |
-| Plot Convenience Pie | €20 | +80 HP, +5% Luck (1 hour) | Before crucial decisions |
-| The Protagonist's Portion | €25 | Full HP restore, +all stats (30 min) | Main quest milestone |
+| Pre-Fight Fuel | 12 Sovs | +50 HP, +10 Attack (1 battle) | Combat approaches |
+| Liquid Fortitude Stew | 15 Sovs | +60 HP, Fear immunity (30 min) | Boss area nearby |
+| The Second Wind | 18 Sovs | +70 HP, +20 SP, removes fatigue | Player HP/SP low |
+| Plot Convenience Pie | 20 Sovs | +80 HP, +5% Luck (1 hour) | Before crucial decisions |
+| The Protagonist's Portion | 25 Sovs | Full HP restore, +all stats (30 min) | Main quest milestone |
 
 **The "How Did You Know?" Menu**
-Items Siobhan offers before you know you need them:
+Items Deirdre offers before you know you need them:
 
-| Situation | Siobhan Says | Offers |
+| Situation | Deirdre Says | Offers |
 |-----------|--------------|--------|
 | Before Quiet Man fight | "You look like you're about to test something. Physically." | Pre-Fight Fuel |
 | Before Stoutworks dungeon | "Big day ahead? You'll want something substantial." | Liquid Fortitude Stew |
@@ -96,17 +96,17 @@ Items Siobhan offers before you know you need them:
 - **Color Palette**: Primary: Hearth Orange (#FF7F50), Accent: Stew Brown (#8B4513), Background: Warm Cream (#FFFDD0), Hero Gold (#FFD700)
 - **Lighting Setup**: Warm cart lights, steam rising, comforting glow
 - **Particle Systems**: Food steam, warm light particles, cozy atmosphere
-- **Animation Elements**: Siobhan's knowing smile, pot stirring, food serving
+- **Animation Elements**: Deirdre's knowing smile, pot stirring, food serving
 - **Mobile Optimization**: Simplified steam, single NPC focus
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Plot Armor Provisions is a food cart run by a woman who seems to be aware she's in a game — or at least, aware that the player is a protagonist who needs to survive for narrative reasons. Siobhan never explicitly breaks the fourth wall, but everything she says carries the weight of meta-awareness. She appears where she's needed, offers what you're about to need, and treats your survival as inevitable because, well, you're the main character.
+**Core Concept**: Plot Armor Provisions is a food cart run by a woman who seems to be aware she's in a game — or at least, aware that the player is a protagonist who needs to survive for narrative reasons. Deirdre never explicitly breaks the fourth wall, but everything she says carries the weight of meta-awareness. She appears where she's needed, offers what you're about to need, and treats your survival as inevitable because, well, you're the main character.
 
-The satire targets RPG food mechanics (eat 47 wheels of cheese mid-battle), conveniently placed vendors, and the unspoken assumption that protagonists will be fed by the narrative itself. Siobhan IS the plot armor, in delicious edible form.
+The satire targets RPG food mechanics (eat 47 wheels of cheese mid-battle), conveniently placed vendors, and the unspoken assumption that protagonists will be fed by the narrative itself. Deirdre IS the plot armor, in delicious edible form.
 
-### The Siobhan Philosophy
-Siobhan Murphy has been feeding adventurers, heroes, and "people with that look in their eye" for as long as she can remember. She has a gift — she knows when someone's about to do something important. Call it intuition. Call it experience. Call it something the game would rather you not think about too hard. 
+### The Deirdre Philosophy
+Deirdre Murphy has been feeding adventurers, heroes, and "people with that look in their eye" for as long as she can remember. She has a gift — she knows when someone's about to do something important. Call it intuition. Call it experience. Call it something the game would rather you not think about too hard. 
 
 She doesn't question why she always knows. She just makes sure you eat before you go do whatever you're about to do. Heroes shouldn't fight on an empty stomach. It's not her job to explain the narrative. It's her job to provide the provisions.
 
@@ -118,10 +118,10 @@ She doesn't question why she always knows. She just makes sure you eat before yo
 - **Sensitivity Considerations**: Affectionate parody of game mechanics
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: None (Siobhan is genuinely helpful)
+- **Primary Vice**: None (Deirdre is genuinely helpful)
 - **City-Specific Comedy Operations**: Appears wherever protagonists need food
 - **Buffoon Exploitation**: Bros who don't realize they're being kept alive by narrative convenience
-- **Comedy of Errors**: Siobhan knowing things she shouldn't, nobody questioning it
+- **Comedy of Errors**: Deirdre knowing things she shouldn't, nobody questioning it
 - **Consequence System**: Major HP restoration, accidental meta-awareness
 
 ### Buffoon Delusion Scenarios
@@ -141,35 +141,35 @@ She doesn't question why she always knows. She just makes sure you eat before yo
 
 **The transformation**:
 - Find cart conveniently placed
-- Order what Siobhan recommends
+- Order what Deirdre recommends
 - Wonder how she knew
 - Don't think about it too hard
 - Survive whatever comes next
 - Return after next event
 - The cycle continues
 
-**How locals interact**: Locals don't seem to notice Siobhan's cart. Odd.
+**How locals interact**: Locals don't seem to notice Deirdre's cart. Odd.
 
 ## Gameplay Mechanics
-### The Siobhan System
+### The Deirdre System
 
 **Adaptive Menu**:
 - Menu items change based on upcoming game events
-- Siobhan "suggests" items that match your immediate future
+- Deirdre "suggests" items that match your immediate future
 - Player can ignore suggestions (not recommended)
 - Buying suggested item provides hidden bonus
 
 **The "Suggestion" Mechanic**:
-When approaching, Siobhan's first dialogue includes a recommendation:
+When approaching, Deirdre's first dialogue includes a recommendation:
 - "You look like you need [SPECIFIC ITEM]."
 - Item corresponds to next major game event
 - Purchasing suggested item: +10% effect bonus
-- Declining suggestion: No penalty, mild concern from Siobhan
+- Declining suggestion: No penalty, mild concern from Deirdre
 
 ### Pre-Event Detection (Hidden Mechanic)
-The game tracks upcoming events and adjusts Siobhan's offerings:
+The game tracks upcoming events and adjusts Deirdre's offerings:
 
-| Upcoming Event | Siobhan's Inventory Adds | Her Comment |
+| Upcoming Event | Deirdre's Inventory Adds | Her Comment |
 |----------------|--------------------------|-------------|
 | Combat encounter | Pre-Fight Fuel | "Feeling scrappy today?" |
 | Boss fight | Liquid Fortitude Stew | "You'll want your strength." |
@@ -181,22 +181,22 @@ The game tracks upcoming events and adjusts Siobhan's offerings:
 ### "Plot Essential" Status
 **Unlock**: Purchase food before 3 major story events
 **Effects**:
-- Siobhan greets you by name
+- Deirdre greets you by name
 - 10% discount (protagonist rate)
 - Special dialogue options
 - Access to "off-menu" items
-- Siobhan's cryptic hints become slightly less cryptic
+- Deirdre's cryptic hints become slightly less cryptic
 
 **"Off-Menu" Items**:
-| Item | Price | Effect | Siobhan's Comment |
+| Item | Price | Effect | Deirdre's Comment |
 |------|-------|--------|-------------------|
-| Narrative Insurance | €30 | Survive one fatal blow (once per day) | "Just in case." |
-| The Retcon Roast | €25 | Removes one recent bad decision's consequences | "Everyone deserves a second draft." |
-| Destiny's Dumpling | €35 | Next critical roll guaranteed success | "Some moments matter more." |
-| The Epilogue Entrée | €40 | Full restore + preview of good ending | "You're going to be fine. I've seen it." |
+| Narrative Insurance | 30 Sovs | Survive one fatal blow (once per day) | "Just in case." |
+| The Retcon Roast | 25 Sovs | Removes one recent bad decision's consequences | "Everyone deserves a second draft." |
+| Destiny's Dumpling | 35 Sovs | Next critical roll guaranteed success | "Some moments matter more." |
+| The Epilogue Entrée | 40 Sovs | Full restore + preview of good ending | "You're going to be fine. I've seen it." |
 
 ### The Convenient Placement
-Siobhan's cart appears in convenient locations:
+Deirdre's cart appears in convenient locations:
 - Before boss areas (always)
 - Near save points (usually)
 - After difficult sections (recovery opportunity)
@@ -210,29 +210,29 @@ If player tries to ask about the convenient placement:
 - "Don't worry about it. Eat your stew."
 
 ### Bravado Interactions
-- **Gain Bravado**: Survive something you shouldn't have (thanks to Siobhan's food)
-- **Lose Bravado**: N/A (Siobhan is supportive, not judgmental)
+- **Gain Bravado**: Survive something you shouldn't have (thanks to Deirdre's food)
+- **Lose Bravado**: N/A (Deirdre is supportive, not judgmental)
 - **Neutral**: Standard purchases
 - **Special**: "The Protagonist's Portion" consumed before main quest climax = cutscene acknowledgment
 
 ### Status Effects (Location-Specific)
 - **"Well Fed"**: Major HP restoration, +10% all healing for 1 hour
 - **"Plot Protected"**: Ate before major event, hidden survival bonus
-- **"Siobhan's Suggestion"**: Followed recommendation, +10% item effect
+- **"Deirdre's Suggestion"**: Followed recommendation, +10% item effect
 - **"Narrative Nourished"**: Plot Essential status, ongoing minor luck bonus
 
 ## NPCs & Characters
 ### The Vendor
 
-**Siobhan Murphy**
+**Deirdre Murphy**
 - **Role**: Food vendor, plot armor provider, gentle fourth-wall presence
 - **Appearance**: 50s Irish woman, warm smile, apron, knowing eyes
 - **Background**: Has "always been here," can't remember exactly when she started
 - **Demeanor**: Maternal, reassuring, suspiciously well-informed
-- **The Siobhan Method**: Feed them before they face it, never explain how you knew
+- **The Deirdre Method**: Feed them before they face it, never explain how you knew
 - **Philosophy**: "Everyone needs a good meal before doing something important. I just make sure they get one."
 
-**Siobhan's Dialogue Categories**:
+**Deirdre's Dialogue Categories**:
 
 *The Welcome:*
 - "There you are! I was expecting you."
@@ -271,11 +271,11 @@ If player tries to ask about the convenient placement:
 ### Customer NPCs
 
 **The Suspicious One**
-- **Composition**: Someone who's noticed Siobhan's pattern
+- **Composition**: Someone who's noticed Deirdre's pattern
 - **Behavior**: Asking questions, getting non-answers
 - **Function**: Player's suspicions voiced
 - **Dialogue**: "Don't you find it weird she's ALWAYS here? Right before something happens?"
-- **Siobhan** (overhearing): "I'm here because you're hungry. Isn't that enough?"
+- **Deirdre** (overhearing): "I'm here because you're hungry. Isn't that enough?"
 - **Suspicious One**: "...I guess?"
 
 **The Regular Hero**
@@ -286,21 +286,21 @@ If player tries to ask about the convenient placement:
 - **Note**: This NPC survives their adventure (obviously)
 
 **The NPC Who Doesn't Get It**
-- **Composition**: Someone who Siobhan doesn't "recognize"
+- **Composition**: Someone who Deirdre doesn't "recognize"
 - **Behavior**: Trying to order, getting standard service only
-- **Function**: Shows Siobhan's selective awareness
+- **Function**: Shows Deirdre's selective awareness
 - **Dialogue**: "Weird, she didn't give ME any recommendations."
 - **Meta-Implication**: They're not a protagonist. They don't need plot armor.
 
 **The Returner**
 - **Composition**: Someone coming back after surviving something
-- **Behavior**: Grateful, slightly awed, wanting to thank Siobhan
+- **Behavior**: Grateful, slightly awed, wanting to thank Deirdre
 - **Function**: Shows the system working
 - **Dialogue**: "I don't know how you knew, but that food saved my life. Literally."
-- **Siobhan**: "That's what food is for, love. Ready for the next chapter?"
+- **Deirdre**: "That's what food is for, love. Ready for the next chapter?"
 
 ### Original NPC Dialogue
-**Siobhan's Extended Philosophy:**
+**Deirdre's Extended Philosophy:**
 - "I've been doing this longer than I remember. Before this cart, there was another cart. Before that city, another city. I go where the stories are."
 - "Some people are background. Some people are protagonists. I can tell the difference. It's in the eyes. The hunger. The 'I'm about to do something' energy."
 - "Do I know what's going to happen? Not exactly. But I know SOMETHING is going to happen. And when something's going to happen, people need to eat."
@@ -309,20 +309,20 @@ If player tries to ask about the convenient placement:
 
 **The Bros' Plot Armor Provisions Reactions:**
 - **Lord Pilsner** (approaching): "Food cart! Perfect, I'm about to go do the brewery dungeon thing."
-- **Siobhan**: "I know. The Fortitude Stew is what you need. Trust me."
+- **Deirdre**: "I know. The Fortitude Stew is what you need. Trust me."
 - **Lord Pilsner**: "Wait, how did you—"
-- **Siobhan**: "Don't worry about it. €15. You'll survive."
+- **Deirdre**: "Don't worry about it. 15 Sovs. You'll survive."
 - **Lord Pilsner**: "...you said that really confidently."
-- **Siobhan**: "I'm a confident woman. Eat your stew."
+- **Deirdre**: "I'm a confident woman. Eat your stew."
 - **Chadwick**: "This is WEIRD, right? She KNEW we were coming?"
-- **Siobhan**: "Of course I knew. You're the main characters. Now eat."
+- **Deirdre**: "Of course I knew. You're the main characters. Now eat."
 - **Chadwick**: "The main... wait, what does THAT mean?"
-- **Siobhan**: "It means you need the Protagonist's Portion. €25. No more questions."
-- **Siobhan**: "Sausage roll?"
+- **Deirdre**: "It means you need the Protagonist's Portion. 25 Sovs. No more questions."
+- **Deirdre**: "Sausage roll?"
 - **Bradley**: "...I'll take two."
-- **Siobhan**: "Smart. You'll go far. All three of you will. I've seen it."
+- **Deirdre**: "Smart. You'll go far. All three of you will. I've seen it."
 - **Bradley**: "Seen it WHERE?"
-- **Siobhan**: "Eat your sausage roll, dear."
+- **Deirdre**: "Eat your sausage roll, dear."
 
 ## System Integration
 ### Vendor Network
@@ -339,7 +339,7 @@ If player tries to ask about the convenient placement:
 - **Main Quest Milestones**: Always there
 
 ### Quest Integration
-- **"The Siobhan Mystery"**: Try to figure out how she knows things (always inconclusive)
+- **"The Deirdre Mystery"**: Try to figure out how she knows things (always inconclusive)
 - **"Perfect Timing"**: Survive 5 events after buying her food
 - **"The Protagonist's Journey"**: Achieve Plot Essential status
 - **"Don't Question It"**: Accept 10 recommendations without asking how she knew
@@ -351,7 +351,7 @@ If player tries to ask about the convenient placement:
 - **Plot Essential Status**: "Protagonist Confirmed" — she knows your name
 - **Bought Off-Menu Item**: "Meta-Aware" — you know the system
 - **Asked Too Many Questions**: "Curious" — she didn't answer
-- **Finished Main Quest**: "Hero Fed" — Siobhan nods knowingly
+- **Finished Main Quest**: "Hero Fed" — Deirdre nods knowingly
 
 ---
 
@@ -361,14 +361,14 @@ If player tries to ask about the convenient placement:
   - Stew bubbling (comforting)
   - Food sizzling (appetizing)
   - Warm cart ambiance
-  - Siobhan's humming (pleasant)
+  - Deirdre's humming (pleasant)
   - Suspiciously no background noise (focused)
 - **Music Style**: Warm, heroic undertones, like a save point
 - **Audio Transitions**: Slightly more triumphant when approaching before major events
 - **Interactive Audio**: Food served sound, recommendation "ping"
 
 ### Comedy Audio Integration
-- **Satirical Stingers**: Knowing "hmm" from Siobhan, mysterious chime when she "knows" something
+- **Satirical Stingers**: Knowing "hmm" from Deirdre, mysterious chime when she "knows" something
 - **Character Voice Direction**: Warm, maternal, with unsettling certainty
 - **Environmental Comedy**: The sound of narrative convenience (undefined but present)
 - **The Meta Moment**: Slight fourth-wall sound effect when she says something too knowing
@@ -379,13 +379,13 @@ If player tries to ask about the convenient placement:
 ### Technical Requirements
 - **Asset List**:
   - Food cart (warm, inviting)
-  - Siobhan at station
+  - Deirdre at station
   - Food varieties
   - Steam effects
   - Customer NPCs
   - Menu board (adaptive)
 - **Animation Requirements**:
-  - Siobhan's knowing smile
+  - Deirdre's knowing smile
   - Food serving
   - Stew stirring
   - Customer reactions
@@ -393,10 +393,10 @@ If player tries to ask about the convenient placement:
 - **Platform Considerations**: Simplified steam, single NPC focus
 
 ### Development Timeline
-- **Asset Creation**: 6 hours (cart, Siobhan, food variety)
+- **Asset Creation**: 6 hours (cart, Deirdre, food variety)
 - **Implementation Phase**: 10 hours (adaptive menu, event detection, meta dialogue)
 - **Testing Requirements**: Event detection, suggestion accuracy, dialogue triggers
-- **Polish Phase**: 4 hours (Siobhan's delivery, meta-timing, warmth)
+- **Polish Phase**: 4 hours (Deirdre's delivery, meta-timing, warmth)
 
 ---
 
@@ -411,10 +411,10 @@ If player tries to ask about the convenient placement:
 - convenient_location.png - 256x128 - Where it appears
 
 ### Character Sprites (6 PNGs)
-- siobhan_warm.png - 64x96 - Default state
-- siobhan_knowing.png - 64x96 - The look
-- siobhan_serving.png - 64x96 - Food handoff
-- siobhan_suggestion.png - 64x96 - Recommendation pose
+- deirdre_warm.png - 64x96 - Default state
+- deirdre_knowing.png - 64x96 - The look
+- deirdre_serving.png - 64x96 - Food handoff
+- deirdre_suggestion.png - 64x96 - Recommendation pose
 - suspicious_customer.png - 64x96 - Asking questions
 - regular_hero.png - 64x96 - Another protagonist
 
@@ -435,9 +435,9 @@ If player tries to ask about the convenient placement:
 - suggestion_highlight.png - 128x64 - Recommended item
 - plot_essential_badge.png - 48x48 - Status achieved
 - well_fed_status.png - 32x32 - HP bonus active
-- siobhan_recommendation.png - 128x64 - Her pick
+- deirdre_recommendation.png - 128x64 - Her pick
 - meta_moment_indicator.png - 32x32 - Fourth wall wobble
 
 ---
 
-*Plot Armor Provisions: Where the food is hearty, the vendor is knowing, and the convenient placement is never questioned. Siobhan feeds heroes. She knows you're a hero because you're standing at her cart. How did she know you'd be here? How does she know what you need? Don't worry about it. Eat your stew. You've got a story to survive.*
+*Plot Armor Provisions: Where the food is hearty, the vendor is knowing, and the convenient placement is never questioned. Deirdre feeds heroes. She knows you're a hero because you're standing at her cart. How did she know you'd be here? How does she know what you need? Don't worry about it. Eat your stew. You've got a story to survive.*

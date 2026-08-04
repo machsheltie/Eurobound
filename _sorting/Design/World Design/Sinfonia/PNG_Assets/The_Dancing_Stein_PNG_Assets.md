@@ -235,7 +235,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 | Spin Delivery Frame 2 | (96, 288) | 48x96 | Half turn, tray level — physics-defying |
 | Spin Delivery Frame 3 | (144, 288) | 48x96 | Completing rotation |
 | Delivery Flourish | (192, 288) | 48x96 | Stein landed on table exactly on beat ONE |
-| Full Whirl (Sinfonian Whirl) | (240, 288) | 48x96 | Extended spin pose for the €8 full-spin delivery |
+| Full Whirl (Sinfonian Whirl) | (240, 288) | 48x96 | Extended spin pose for the 8 Sovs full-spin delivery |
 
 ### Stumbling Patron — Comedy Fail (48x96 each):
 | Element | Position | Size | Description |
@@ -336,11 +336,11 @@ assets/sprites/locations/sinfonia/dancing_stein/
 | Waltz Weizen — Swirl 1 | (0, 64) | 32x64 | Signature: cloudy gold, foam mid-swirl (clockwise, always) |
 | Waltz Weizen — Swirl 2 | (32, 64) | 32x64 | Foam rotated 120° clockwise |
 | Waltz Weizen — Swirl 3 | (64, 64) | 32x64 | Foam rotated 240° clockwise — loops. We don't know why it does this |
-| Two-Step Lager | (96, 64) | 32x64 | €4, basic rhythm, honest glass |
-| Foxtrot Ale | (128, 64) | 32x64 | €5, amber, subtly wrong tempo (rebellion) |
-| The Wallflower | (160, 64) | 32x64 | €3, plain glass, served with visible shame aura |
-| Tango IPA | (192, 64) | 32x64 | €6, dramatic red-tinged, rose garnish |
-| Sinfonian Whirl | (224, 64) | 32x64 | €8, tall spiral glass — earns the full spin delivery |
+| Two-Step Lager | (96, 64) | 32x64 | 4 Sovs, basic rhythm, honest glass |
+| Foxtrot Ale | (128, 64) | 32x64 | 5 Sovs, amber, subtly wrong tempo (rebellion) |
+| The Wallflower | (160, 64) | 32x64 | 3 Sovs, plain glass, served with visible shame aura |
+| Tango IPA | (192, 64) | 32x64 | 6 Sovs, dramatic red-tinged, rose garnish |
+| Sinfonian Whirl | (224, 64) | 32x64 | 8 Sovs, tall spiral glass — earns the full spin delivery |
 
 ### Bottle Opener & Stamp:
 | Element | Position | Size | Description |
@@ -535,7 +535,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Frames:** 4 (wind-up → half turn → complete → flourish)
 - **Pattern:** Spin occupies beats ONE-two-three; stein touches table on the next down-beat
 - **Trigger:** Waltz Weizen or Sinfonian Whirl delivered to table (Whirl uses extended Full Whirl pose, 2.0 s)
-- **Purpose:** Signature-beer showmanship — the small spin from the profile, escalated for the €8 order
+- **Purpose:** Signature-beer showmanship — the small spin from the profile, escalated for the 8 Sovs order
 - **Audio Sync:** Glass-clink lands on the down-beat following the spin
 - **Mobile Optimization:** None needed
 

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 5:30 PM (market hours, optimism hours)
 - **Stat Requirements**: None (gullibility is not checked at the door)
-- **Item Requirements**: Gold for purchases (€5-50), willingness to believe
+- **Item Requirements**: Gold for purchases (5 Sovs-50), willingness to believe
 - **Previous Location Requirements**: None (the tulips call to all tourists)
 - **Special Conditions**: Located on floating market stall, slight swaying, adds to dreamlike purchasing haze
 
@@ -42,13 +42,13 @@
 ### The Bulb Display
 - **Bins**: Dozens of varieties, labeled with romantic Dutch names and colors
 - **Arrangement**: Organized by promised color, promised height, promised dreams
-- **Pricing**: By the bulb (€2-5) or "Value Bags" (€15-30 for 10-20 bulbs)
+- **Pricing**: By the bulb (2 Sovs-5) or "Value Bags" (15 Sovs-30 for 10-20 bulbs)
 - **The Tulip Promise**: Each bin shows a photo of the flower "these bulbs will become"
 - **The Fine Print**: Growing instructions in Dutch, French, German, and Very Small English
 
 ### The "Sample Garden" Display
 - **Purpose**: Potted tulips showing what your bulbs will "look like"
-- **Reality**: These were grown in the Netherlands, by professionals, in ideal conditions
+- **Reality**: These were grown by commercial nurseries, by professionals, in ideal conditions
 - **Effect**: Creates powerful "I can have this" delusion
 - **Unspoken**: Your windowsill in Arizona is not the same environment
 
@@ -124,12 +124,12 @@ The stall's name, "The Botanical Lie," refers not to fraud but to the polite fic
 ### Menu & Items
 | Item | Price | Type | Actual Fate | Notes |
 |------|-------|------|-------------|-------|
-| Single Tulip Bulb | €3 | Souvenir | 2% grow success | Individual hope |
-| "Rainbow Mix" (10) | €15 | Value Bag | 1% grow success | Variety pack of dreams |
-| "Garden Starter" (20) | €25 | Bulk Purchase | 0.5% grow success | Ambition exceeded capacity |
-| "Old Master Collection" | €50 | Premium | 0.1% grow success | You're not an Old Master |
-| Wooden Tulip (Painted) | €8 | Safe Alternative | 100% success | Cannot die, cannot grow |
-| Tulip Seeds | €12 | Trap | 0.01% grow success | Takes 7 years to flower |
+| Single Tulip Bulb | 3 Sovs | Souvenir | 2% grow success | Individual hope |
+| "Rainbow Mix" (10) | 15 Sovs | Value Bag | 1% grow success | Variety pack of dreams |
+| "Garden Starter" (20) | 25 Sovs | Bulk Purchase | 0.5% grow success | Ambition exceeded capacity |
+| "Old Master Collection" | 50 Sovs | Premium | 0.1% grow success | You're not an Old Master |
+| Wooden Tulip (Painted) | 8 Sovs | Safe Alternative | 100% success | Cannot die, cannot grow |
+| Tulip Seeds | 12 Sovs | Trap | 0.01% grow success | Takes 7 years to flower |
 
 ### The "Bulb Burden" Inventory Item
 - **Type**: Quest Item / Souvenir / Guilt
@@ -196,7 +196,7 @@ If game includes airport/customs checkpoint:
   - "These are Queen of Night. Very dramatic. Very Shamsterdam. You have a garden?"
   - *if they say no* "A pot works too! A windowsill! A dream!"
   - "The growing instructions are in the bag. Very clear. Mostly clear."
-  - *customs question* "They travel very well! Would you like the protective bag? Two euros extra."
+  - *customs question* "They travel very well! Would you like the protective bag? Two Sovs extra."
   - "My grandmother started this stall. Different bulbs, same joy. Same hope."
   - *large purchase* "You're going to have a BEAUTIFUL garden. I can see it already."
   - "The Rainbow Mix is our most popular. Everyone wants a rainbow."
@@ -246,7 +246,7 @@ If game includes airport/customs checkpoint:
 ### Original NPC Dialogue
 **Margriet's Philosophy (Unprompted):**
 - "Tulips are Shamsterdam's gift to the world. The world's ACCEPTANCE of that gift is... variable."
-- "1637, people traded houses for tulip bulbs. Now, five euros. Progress? Maybe. Romance? Less."
+- "1637, people traded houses for tulip bulbs. Now, five Sovs. Progress? Maybe. Romance? Less."
 - "Every bulb is potential. What you DO with potential is your business."
 - "I sell dreams. Dreams are legal in every country. Dreams need no customs form."
 - "My grandmother sold to your grandmothers. The bulbs change. The hope is the same."
@@ -254,7 +254,7 @@ If game includes airport/customs checkpoint:
 **The Bros' Tulip Market Reactions:**
 - **Lord Pilsner** (entering): "We're getting tulips. AUTHENTIC Shamsterdam tulips. For my GARDEN."
 - **Lord Pilsner** (when asked about garden): "I have a... it's more of a balcony... it gets sun SOMETIMES..."
-- **Lord Pilsner** (purchasing): "The Old Master Collection. For fifty euros I'm basically an Old Master."
+- **Lord Pilsner** (purchasing): "The Old Master Collection. For fifty Sovs I'm basically an Old Master."
 - **Chadwick**: "The color palette here is INSANE. This is B-roll GOLD."
 - **Chadwick** (purchasing): "I'm getting the Rainbow Mix. My apartment is going to be BOTANICAL."
 - **Chadwick** (later): "When do we plant these? Is there a deadline? Is it urgent?"
@@ -404,4 +404,4 @@ If game includes airport/customs checkpoint:
 
 ---
 
-*De Botanische Leugen: The Botanical Lie isn't that the tulips are fake — they're real. The lie is that you'll plant them, they'll grow, and you'll have a piece of Holland in your backyard. The lie is beautiful. Buy the lie. It comes with a nice bag.*
+*De Botanische Leugen: The Botanical Lie isn't that the tulips are fake — they're real. The lie is that you'll plant them, they'll grow, and you'll have a piece of Shamsterdam in your backyard. The lie is beautiful. Buy the lie. It comes with a nice bag.*

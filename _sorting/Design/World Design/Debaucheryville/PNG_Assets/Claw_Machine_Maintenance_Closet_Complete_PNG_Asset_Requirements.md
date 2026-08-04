@@ -509,7 +509,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 - **Potato Mode:** Essential room and interactive elements only, no particle effects
 
 ### Performance Targets:
-- **Target FPS:** 45 fps (reduced for cramped space rendering)
+- **Target FPS:** 60 fps (reduced for cramped space rendering)
 - **Max Draw Calls:** 10 per frame
 - **Memory Footprint:** 25MB maximum for hidden location
 
@@ -676,7 +676,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 | Seedy Underbelly Present | ✅ PASS | Adult content disguised as maintenance |
 | Gameplay Value Established | ✅ PASS | ICQ, achievements, status effects |
 | Technical Feasibility | ✅ PASS | Mobile optimized for small space |
-| Mobile Performance Budget | ✅ PASS | 45 FPS, 10 draw calls, 25MB |
+| Mobile Performance Budget | ✅ PASS | 60 FPS, 10 draw calls, 25MB |
 | Accessibility Features | ✅ PASS | Graffiti always-visible option |
 | No Crypto Elements | ✅ PASS | No cryptocurrency content in this location |
 | Social Media Integration | ✅ PASS | SMAAAASH quote is pure gold |

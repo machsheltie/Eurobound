@@ -4,6 +4,7 @@
   "npcs": [
     {
       "npc_id": "sinfonia_npc_hans_jurgen_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md",
       "display_name": "Hans-Jürgen Pferdmann",
       "role": "quest_giver_fiaker_driver",
       "location_default": "fiaker_queue_spot_3",
@@ -92,6 +93,7 @@
     
     {
       "npc_id": "sinfonia_npc_gustav_horse_01",
+      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_gustav.md",
       "display_name": "Gustav",
       "role": "quest_target_philosophical_horse",
       "location_default": "fiaker_carriage_spot_3",
@@ -213,11 +215,13 @@
     },
     
     {
-      "npc_id": "opera_usher_01",
-      "display_name": "Opera House Usher",
+      "npc_id": "sinfonia_npc_opera_usher_01",
+      "display_name": "Opera Usher Gerhardt",
       "role": "gatekeeper_formal",
       "location_default": "opera_entrance",
-      
+      "canonical_record": "Design/World Design/Sinfonia/npcs/bassline_opera_house_npcs.json",
+      "note": "Same character as the Bassline Opera House usher — one Gerhardt, two vantage points (plaza entrance and lobby).",
+
       "appearance": {
         "clothing": "formal_usher_uniform",
         "expression": "perpetually_disapproving"
@@ -244,8 +248,8 @@
       
       "key_quotes": {
         "greeting": "A table for... three? Americans? Perhaps... outside. Far outside.",
-        "during_chase": "THAT HORSE JUST ATE AN €18 SACHERTORTE! WHO IS RESPONSIBLE?!",
-        "post_chase": "You. You are responsible. €340 in damages. The tablecloths alone!",
+        "during_chase": "THAT HORSE JUST ATE AN 85 SOVS SACHERTORTE! THE WHOLE ONE! WHO IS RESPONSIBLE?!",
+        "post_chase": "You. You are responsible. 340 Sovs in damages. The tablecloths alone!",
         "if_unpaid": "You are banned. BANNED. I have your photographs."
       }
     },
@@ -291,7 +295,7 @@
       
       "key_quotes": {
         "approach": "*whispers* You want tickets? Tonight's Magic Flute? Very exclusive. Very... available.",
-        "price_reveal": "€400. For the experience. Box seats. Maybe. Definitely seats.",
+        "price_reveal": "400 Sovs. For the experience. Box seats. Maybe. Definitely seats.",
         "if_challenged": "Face value? What is 'face value' when you are seeing CULTURE?"
       },
       
@@ -340,7 +344,7 @@
       "14:00-15:00": "at_queue_drinking_more",
       "15:00-17:00": "quest_trigger_window"
     },
-    "opera_usher": {
+    "sinfonia_npc_opera_usher_01": {
       "10:00-17:00": "at_entrance_casual",
       "17:00-19:00": "at_entrance_strict",
       "19:00-22:00": "inside_during_performance"
@@ -355,7 +359,7 @@
   "npc_reactions_to_events": {
     "gustav_escape": {
       "fiaker_drivers": "watch_with_knowing_expressions",
-      "opera_usher": "concerned_about_potential_intrusion",
+      "sinfonia_npc_opera_usher_01": "concerned_about_potential_intrusion",
       "cafe_maitre_d": "worried_about_tables",
       "pigeon_lady": "nods_as_if_expected"
     },

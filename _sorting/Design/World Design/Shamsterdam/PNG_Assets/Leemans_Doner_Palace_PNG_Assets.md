@@ -88,7 +88,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 |---------|----------|------|-------------|
 | Main Sign "LEEMAN'S DÖNER PALACE" | (0, 576) | 256x128 | Red and gold, separate layer for night glow overlay |
 | "Since 1992 — Original Turkish Recipe" | (256, 576) | 256x64 | Subtitle plate, faded but proud |
-| "NO KAPSALON. Go to Willem for that." | (256, 640) | 256x64 | Handwritten addition, taped, unmistakably sincere |
+| "NO KAPSALON. Go to Wim for that." | (256, 640) | 256x64 | Handwritten addition, taped, unmistakably sincere |
 | "FRESH BREAD BAKED DAILY" Window Decal | (512, 576) | 192x128 | True. Crucial. Load-bearing. |
 | Turkish Radio Shelf | (704, 576) | 160x128 | Small radio, always on, always traditional |
 | Bread Oven Door | (864, 576) | 160x128 | Rear-wall oven, wife's recipe, unchanged since 1992 |
@@ -131,14 +131,14 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 ### The Menu:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Döner (Veal) | (0, 0) | 64x48 | €5.50 — "Good choice." |
-| Döner (Chicken) | (64, 0) | 64x48 | €4.50 — "...okay." |
-| Döner (Mixed) | (128, 0) | 64x48 | €5 — "Indecisive. But okay." |
-| The Triple Tower | (192, 0) | 96x64 | €8 — all three meats, warrior portion, structurally optimistic |
+| Döner (Veal) | (0, 0) | 64x48 | 6 Sovs — "Good choice." |
+| Döner (Chicken) | (64, 0) | 64x48 | 5 Sovs — "...okay." |
+| Döner (Mixed) | (128, 0) | 64x48 | 5 Sovs — "Indecisive. But okay." |
+| The Triple Tower | (192, 0) | 96x64 | 8 Sovs — all three meats, warrior portion, structurally optimistic |
 | Döner Wrap (Dürüm) | (288, 0) | 64x48 | "Wrap is for tourists. But okay." |
 | Bread Pocket (Ekmek) | (352, 0) | 64x48 | "Real döner is in bread." |
 | Fresh Bread Loaf | (416, 0) | 48x32 | The secret, warm, crisp outside |
-| Ayran | (464, 0) | 32x48 | €2, traditional, cooling |
+| Ayran | (464, 0) | 32x48 | 2 Sovs, traditional, cooling |
 
 ### Sauces & Extras:
 | Element | Position | Size | Description |
@@ -147,9 +147,9 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Yogurt Sauce Pump | (32, 48) | 32x32 | Cooling, traditional, rounded container |
 | Hot Sauce Bottle | (64, 48) | 32x32 | Turkish hot. Not tourist hot. Angular container. |
 | Sambal Jar | (96, 48) | 32x32 | Dutch-Indonesian addition, tolerated |
-| Just Bread (Plain) | (128, 48) | 48x32 | €1.50 — "You came here for... bread?" |
+| Just Bread (Plain) | (128, 48) | 48x32 | 2 Sovs — "You came here for... bread?" |
 | Napkin Wad | (176, 48) | 32x32 | Post-sauce reality |
-| Euro Coin Stack | (208, 48) | 32x32 | Payment at the end |
+| Sov Coin Stack | (208, 48) | 32x32 | Payment at the end |
 | Meat Shave Curl | (240, 48) | 48x32 | Single ribbon off the tower |
 | Triple Tower Cross-Section | (288, 48) | 96x96 | Cutaway showing all three meats layered, labeled |
 | Döner Half-Eaten | (384, 48) | 64x48 | Mid-journey state |
@@ -166,7 +166,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Garlic Aura Icon | (160, 96) | 32x32 | Status icon — radiating bulb silhouette |
 | Meat Sweats Icon | (192, 96) | 32x32 | Status icon — droplet over tower silhouette |
 | Fire Breath Icon | (224, 96) | 32x32 | Status icon — hatched flame silhouette |
-| Extra Garlic Upgrade Chip | (256, 96) | 32x32 | +€0.50 modifier chip |
+| Extra Garlic Upgrade Chip | (256, 96) | 32x32 | +1 Sov modifier chip |
 | Foil Wrapper (Open) | (384, 96) | 64x48 | Mid-eat presentation |
 | Foil Wrapper (Closed) | (448, 96) | 64x48 | Takeaway presentation |
 
@@ -387,7 +387,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Menu Board UI Overlay | (0, 256) | 192x128 | Zoomed readable four-language board with inconsistent spellings preserved |
 | Bill / Payment Panel | (192, 256) | 128x96 | Payment at the end, as is tradition |
 | Great Döner Debate Tracker | (320, 256) | 128x64 | Shamsterdam entry #1 quest chip |
-| Cost Chip (€) | (448, 256) | 64x64 | Price token for menu rows |
+| Cost Chip (SOVS) | (448, 256) | 64x64 | Price token for menu rows: numeral above the lettered word `SOVS`. **The symbol is the word — do not draw a currency mark.** 64x64 is ample. |
 | Garlic Aura Status Bar | (320, 320) | 96x32 | 1-3 hour duration display |
 | Meat Sweats Status Bar | (416, 320) | 96x32 | 30-minute regen/speed display |
 | Fire Breath Status Bar | (192, 352) | 128x32 | Delayed-damage warning bar |
@@ -544,7 +544,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Low | Static towers (profile requirement), static steam (profile requirement), single-frame carving, no flicker, one-shot pronunciation event retained |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 32 MB maximum
 - **Particle Limit:** 14 (tower steam, grease pops, garlic puff)
@@ -587,7 +587,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Kapsalon Koning | "NO KAPSALON. Go to Willem for that." handwritten sign; friendly-rivalry dialogue hooks | Sign is the visual handoff; Willem's counterpart line reads "Mehmet down the street? Good man. No cheese. His loss." |
+| Kapsalon Koning | "NO KAPSALON. Go to Wim for that." handwritten sign; friendly-rivalry dialogue hooks | Sign is the visual handoff; Wim's counterpart line reads "Mehmet down the street? Good man. No cheese. His loss." |
 | De Groene Gids | Munchies pipeline endpoint marker | Post-coffeeshop arrival raises Triple Tower order probability in the ordering UI default |
 | The Tolerance Hostel | Kitchen gossip references "the döner place"; Wolf's "tell him Wolf sent you" hook | Mehmet's Silent Judgment Hold frame plays on that specific line — he will not confirm knowing Wolf |
 | FEBO Automat | Comparison dialogue hook | "FEBO is machine. This is hands." |
@@ -623,7 +623,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 ### Screenshot-Worthy Moments:
 1. **The Three Towers at 3 AM** — hypnotic, offset rotation, the meat trinity in full glow
 2. **Mehmet's Chicken Disappointment frame** — no dialogue needed, universally legible
-3. **The "NO KAPSALON. Go to Willem for that." sign** — inter-location beef, handwritten, taped
+3. **The "NO KAPSALON. Go to Wim for that." sign** — inter-location beef, handwritten, taped
 4. **The Triple Tower cross-section** — all three meats, labeled, structurally ambitious
 5. **Garlic Aura in effect** — every NPC in frame standing exactly 20% further away
 
@@ -711,9 +711,9 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Seedy Underbelly Present | ✅ | Enabling 3 AM decisions, post-club exploitation-by-positioning, garlic consequences you'll carry for days |
 | Gameplay Value Established | ✅ | Ordering system, pronunciation mini-game, two status effects, Triple Tower challenge, debate quest entry |
 | Technical Feasibility | ✅ | Static tower/steam fallbacks per profile; overlay-based glow; pre-composed crowd blocks |
-| Mobile Performance Budget | ✅ | 45 FPS, 14 draw calls, 32 MB, 14 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 14 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all seven audio cues, reduced-motion set, high-contrast silhouettes, 44px touch zones |
-| No Crypto Elements | ✅ | Pure meat mastery; the only currency is euros and Mehmet's opinion |
+| No Crypto Elements | ✅ | Pure meat mastery; the only currency is Sovs and Mehmet's opinion |
 | Social Media Integration | ✅ | 5 screenshot moments + 6 quotable lines identified |
 
 **Once these assets ship, Leeman's Döner Palace becomes the game's fixed point at 3 AM: three towers turning in a bright box, no chairs, no kapsalon, and a man behind the counter who has already decided what you were going to order before you opened your mouth — and is going to feed you anyway.**

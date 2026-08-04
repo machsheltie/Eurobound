@@ -3,9 +3,9 @@
   
   "npcs": [
     {
-      "npc_id": "seamus_omalley_01",
-      "display_name": "Seamus",
-      "full_name": "Seamus O'Malley",
+      "npc_id": "fergus_omalley_01",
+      "display_name": "Fergus",
+      "full_name": "Fergus O'Malley",
       "npc_type": "vendor",
       "role": "car_rental_agent_and_witness",
       "title": "The One Who Warns",
@@ -48,7 +48,7 @@
       },
       
       "backstory": {
-        "the_truth": "Seamus has run this rental shop for 40 years. His wife Mary went for 'a quick drive to see the cliffs' in 1992. The car came back. She didn't. He still wears the ring.",
+        "the_truth": "Fergus has run this rental shop for 40 years. His wife Mary went for 'a quick drive to see the cliffs' in 1992. The car came back. She didn't. He still wears the ring.",
         "the_cloverleaf": "He's seen hundreds of tourists enter The Cloverleaf. About sixty percent never escape in the first day. Some never escape at all. The 1987 wedding van is still circling.",
         "his_role": "He warns everyone. No one listens. He keeps warning anyway. Someone has to bear witness.",
         "the_counter": "Days Since Last Incident has been stuck on 0 for forty years. It's not broken. There's just always an incident."
@@ -68,12 +68,12 @@
         
         "about_mapquest": {
           "bros_mention": "I printed directions from Mapquest.",
-          "seamus_response": "...Mapquest."
+          "fergus_response": "...Mapquest."
         },
         
         "about_gps": {
           "bros_mention": "And we have GPS on our phones.",
-          "seamus_response": "God help ye."
+          "fergus_response": "God help ye."
         },
         
         "the_warning": {
@@ -139,7 +139,7 @@
           "price": 45,
           "description": "Economy compact",
           "hidden_issue": "Wipers stuck on",
-          "seamus_comment": "She's reliable. The wipers are a bit... persistent."
+          "fergus_comment": "She's reliable. The wipers are a bit... persistent."
         },
         {
           "service_id": "rent_lucky_charm",
@@ -147,7 +147,7 @@
           "price": 60,
           "description": "Standard sedan",
           "hidden_issue": "GPS glitches near roundabouts",
-          "seamus_comment": "Good choice. The GPS is... creative near intersections."
+          "fergus_comment": "Good choice. The GPS is... creative near intersections."
         },
         {
           "service_id": "rent_emerald_dream",
@@ -155,7 +155,7 @@
           "price": 80,
           "description": "Premium SUV",
           "hidden_issue": "Too wide for country lanes",
-          "seamus_comment": "Roomy. Maybe too roomy for some of the lanes out there."
+          "fergus_comment": "Roomy. Maybe too roomy for some of the lanes out there."
         },
         {
           "service_id": "rent_full_irish",
@@ -163,7 +163,7 @@
           "price": 120,
           "description": "Luxury convertible",
           "hidden_issue": "Attracts sheep attention",
-          "seamus_comment": "A beauty. The sheep love her. Be warned."
+          "fergus_comment": "A beauty. The sheep love her. Be warned."
         },
         {
           "service_id": "addon_gps",
@@ -171,7 +171,7 @@
           "price": 20,
           "description": "Digital navigation assistance",
           "hidden_issue": "Says 'recalculating' endlessly in Cloverleaf",
-          "seamus_comment": "It'll work. Until it doesn't."
+          "fergus_comment": "It'll work. Until it doesn't."
         },
         {
           "service_id": "addon_insurance",
@@ -179,7 +179,7 @@
           "price": 35,
           "description": "Complete coverage",
           "hidden_issue": "Excludes 'circular traffic incidents'",
-          "seamus_comment": "Covers everything. *pause* Almost everything."
+          "fergus_comment": "Covers everything. *pause* Almost everything."
         },
         {
           "service_id": "addon_map",
@@ -187,7 +187,7 @@
           "price": 10,
           "description": "Traditional navigation",
           "hidden_issue": "Cloverleaf labeled only with '?'",
-          "seamus_comment": "I've marked it up myself. For what good it'll do."
+          "fergus_comment": "I've marked it up myself. For what good it'll do."
         },
         {
           "service_id": "addon_rosary",
@@ -195,23 +195,23 @@
           "price": 5,
           "description": "For the dashboard",
           "hidden_issue": "None - genuinely helpful",
-          "seamus_comment": "Take it. Ye'll need something to hold onto."
+          "fergus_comment": "Take it. Ye'll need something to hold onto."
         }
       ],
       
       "post_quest_services": {
         "discount": {
-          "name": "Seamus's Respect",
+          "name": "Fergus's Respect",
           "modifier": 0.9,
           "description": "10% off all rentals",
-          "seamus_comment": "For survivors only."
+          "fergus_comment": "For survivors only."
         }
       },
       
       "schedule": {
         "present_hours": "08:00-20:00",
         "absent_reason": "He goes home. Stares at Mary's photo. Returns.",
-        "note": "Seamus is always behind the counter during business hours"
+        "note": "Fergus is always behind the counter during business hours"
       },
       
       "quest_connections": [
@@ -227,12 +227,12 @@
           "interview": "I've been renting cars to tourists for forty years. The Cloverleaf has claimed about four hundred of them. Permanently. They live there now. It's not my fault. I tell them. I always tell them."
         },
         "if_bros_take_path_b": {
-          "note": "Seamus appears in documentary as expert witness"
+          "note": "Fergus appears in documentary as expert witness"
         }
       },
       
       "voice_direction": "Irish accent, weary, deliberate pauses before warnings as if he knows they're futile but says them anyway. Occasional flash of dark humor. Softens slightly when discussing Mary.",
-      "sprite_sheet": "seamus.png"
+      "sprite_sheet": "fergus.png"
     }
   ],
   
@@ -252,8 +252,8 @@
   ],
   
   "npc_callbacks_elsewhere": {
-    "tour_bus_resident": "Seamus? Aye, he warned us too. Nice man. Dead behind the eyes, but nice.",
-    "the_local_who_knows": "Seamus is the only one who truly understands. He stays outside the circle. Wise.",
-    "1987_husband": "Seamus rented us this van. '87 it was. Said to slow down. We didn't listen. No one listens."
+    "tour_bus_resident": "Fergus? Aye, he warned us too. Nice man. Dead behind the eyes, but nice.",
+    "the_local_who_knows": "Fergus is the only one who truly understands. He stays outside the circle. Wise.",
+    "1987_husband": "Fergus rented us this van. '87 it was. Said to slow down. We didn't listen. No one listens."
   }
 }

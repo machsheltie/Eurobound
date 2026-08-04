@@ -1,6 +1,6 @@
 # The Blarney Trap
 
-*Base of operations for American tourists seeking "authentic Ireland" — where the craic is manufactured, the Guinness is real, and the refills are infinite (the regret is too)*
+*Base of operations for American tourists seeking "authentic Publandia" — where the craic is manufactured, the Guinness is real, and the refills are infinite (the regret is too)*
 
 ## Location Identity
 - **Location ID**: publandia_hub_blarney_trap_01
@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10:30 AM - 2:30 AM (Irish licensing laws, stretched)
 - **Stat Requirements**: None (the Trap welcomes all paying customers)
-- **Item Requirements**: Gold for drinks/rooms (€7-9 pints, €55-120 rooms)
+- **Item Requirements**: Gold for drinks/rooms (7 Sovs-9 pints, 55 Sovs-120 rooms)
 - **Previous Location Requirements**: None (likely first Publandia location visited)
 - **Special Conditions**: Automatically discovered upon arriving in Publandia
 
@@ -117,7 +117,7 @@ This is the bros' base of operations because it appeared first in their search r
 - **Sensitivity Considerations**: Celebrates Irish hospitality while satirizing its packaging
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Craic Tax pricing (€8 pints that cost €5.50 across the river)
+- **Primary Vice**: Craic Tax pricing (8 Sovs pints that cost 6 Sovs across the river)
 - **City-Specific Comedy Operations**: The Backroom's unlicensed activities
 - **Buffoon Exploitation**: Bros who think they've found "the real Ireland" at the most obviously tourist pub
 - **Comedy of Errors**: Infinite refills meeting finite tolerance
@@ -175,27 +175,27 @@ This is the bros' base of operations because it appeared first in their search r
 ### Accommodation Options
 | Room | Price/Night | Restoration | Noise Level | Features |
 |------|-------------|-------------|-------------|----------|
-| Shared Dorm | €35 | 50% HP/SP | Extreme | Snoring NPCs, "Embarrassed" risk |
-| Street-Facing Single | €55 | 70% HP/SP | High | Authentic atmosphere |
-| Courtyard Single | €70 | 85% HP/SP | Moderate | Actually sleepable |
-| Street-Facing Double | €75 | 70% HP/SP | High | Bros can share |
-| Courtyard Double | €90 | 85% HP/SP | Moderate | Better value |
-| The Yeats Suite | €120 | 100% HP/SP | Low | Quotes included |
-| The Joyce Suite | €120 | 100% HP/SP | Low | Layout confusing |
-| The Wilde Suite | €150 | 100% HP/SP + buff | Low | "Wit Sharpened" status |
-| The Behan Suite | €150 | 100% HP/SP | Low | Minibar pre-stocked |
+| Shared Dorm | 35 Sovs | 50% HP/SP | Extreme | Snoring NPCs, "Embarrassed" risk |
+| Street-Facing Single | 55 Sovs | 70% HP/SP | High | Authentic atmosphere |
+| Courtyard Single | 70 Sovs | 85% HP/SP | Moderate | Actually sleepable |
+| Street-Facing Double | 75 Sovs | 70% HP/SP | High | Bros can share |
+| Courtyard Double | 90 Sovs | 85% HP/SP | Moderate | Better value |
+| The Yeats Suite | 120 Sovs | 100% HP/SP | Low | Quotes included |
+| The Joyce Suite | 120 Sovs | 100% HP/SP | Low | Layout confusing |
+| The Wilde Suite | 150 Sovs | 100% HP/SP + buff | Low | "Wit Sharpened" status |
+| The Behan Suite | 150 Sovs | 100% HP/SP | Low | Minibar pre-stocked |
 
 ### Pub Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Notes |
 |------|-------|-----------|---------------|-------|
-| Guinness (Pint) | €8 | +15 HP | Progresses toward "Scuttered" | The 119.5-second ritual |
-| Smithwick's (Pint) | €7 | +12 HP | Progresses toward "Scuttered" | Locals' alternative |
-| Whiskey (Jameson) | €8 | +10 HP, +5 SP | +Bravado temporarily | Standard pour |
-| Whiskey (Premium) | €12-20 | +15 HP, +10 SP | +Bravado, +Charm | Impress the staff |
-| Irish Coffee | €10 | +20 HP, +15 SP | Caffeine + Alcohol balance | Tourist favorite |
-| Tayto Crisps | €3 | +5 HP | Absorbs some alcohol | Cheese & Onion or nothing |
-| Toastie | €8 | +25 HP | Absorbs significant alcohol | Pub food perfection |
-| Full Irish | €15 | +50 HP | Cures "The Fear," +Clarity | Morning recovery essential |
+| Guinness (Pint) | 8 Sovs | +15 HP | Progresses toward "Scuttered" | The 119.5-second ritual |
+| Smithwick's (Pint) | 7 Sovs | +12 HP | Progresses toward "Scuttered" | Locals' alternative |
+| Whiskey (Jameson) | 8 Sovs | +10 HP, +5 SP | +Bravado temporarily | Standard pour |
+| Whiskey (Premium) | 12 Sovs-20 | +15 HP, +10 SP | +Bravado, +Charm | Impress the staff |
+| Irish Coffee | 10 Sovs | +20 HP, +15 SP | Caffeine + Alcohol balance | Tourist favorite |
+| Tayto Crisps | 3 Sovs | +5 HP | Absorbs some alcohol | Cheese & Onion or nothing |
+| Toastie | 8 Sovs | +25 HP | Absorbs significant alcohol | Pub food perfection |
+| Full Irish | 15 Sovs | +50 HP | Cures "The Fear," +Clarity | Morning recovery essential |
 
 ### Drinking Contest Mechanics (Pint-Offs)
 - **Trigger**: Challenge or be challenged by NPCs
@@ -308,7 +308,7 @@ This is the bros' base of operations because it appeared first in their search r
   - "The Stoutworks Brewery needs... assistance. Yeast situation. Don't ask questions."
   - "Rival trio's been spotted causing trouble. Someone should document their embarrassment. Interested?"
 
-**Old Paddy (Resident Regular)**
+**Old Fergal (Resident Regular)**
 - **Role**: Permanent fixture, storyteller, unreliable historian
 - **Appearance**: 70s Irish man, same stool for 40 years, infinite stories
 - **Location**: End of the bar, always
@@ -374,7 +374,7 @@ This is the bros' base of operations because it appeared first in their search r
 
 ### The Bottle Opener Keychain (Quest Starter)
 **Location**: Behind the bar, displayed among Seamus's collection
-**Acquisition**: Purchase (€15) OR win a Pint-Off challenge OR reach "Pub Regular" status
+**Acquisition**: Purchase (15 Sovs) OR win a Pint-Off challenge OR reach "Pub Regular" status
 **Function**: REQUIRED to participate in the Brewery Tour sidequest across ALL cities
 **Appearance**: Brass opener shaped like a shamrock, "The Blarney Trap" engraved
 **Item Type**: Key Item (cannot be sold or discarded)
@@ -454,7 +454,7 @@ This is the bros' base of operations because it appeared first in their search r
 | SP Restoration | +10 SP |
 | Special Effect | "Comfortable Trap" — +10% Bravado retention for 1 hour |
 | Status Risk | 5% chance of "Contentment" (reduced urgency to leave current location) |
-| Purchase Price | €8 (only available at The Blarney Trap after unlock) |
+| Purchase Price | 8 Sovs (only available at The Blarney Trap after unlock) |
 
 **Flavor Text**: "You came to the Craic Tax knowing the prices. You stayed anyway. You surrendered. And you know what? It's delicious. Brewed by Stoutworks, perfected by giving in."
 
@@ -478,7 +478,7 @@ This is the bros' base of operations because it appeared first in their search r
 - **Type**: Ultimate Consumable (limited use, can be repurchased)
 - **Effect**: +15 to ALL stats for entire battle, inflicts "Legendary Hungover" after battle ends
 - **"Legendary Hungover"**: -10 all stats for 30 minutes, cured by Full Irish Breakfast or sleep
-- **Purchase Price**: €50 (only available after unlock, from any stamped Publandia location)
+- **Purchase Price**: 50 Sovs (only available after unlock, from any stamped Publandia location)
 - **Flavor Text**: "Four stamps. Four surrenders. Four reasons you'll need a Full Irish tomorrow. The night of your life has a morning after."
 
 ### Brewmaster Selfie Collectible (Bonus Layer)
@@ -537,7 +537,7 @@ This is the bros' base of operations because it appeared first in their search r
   - Premium suites
   - The Backroom
   - Seamus and staff sprites
-  - Regular NPCs (Old Paddy, Craic Broker)
+  - Regular NPCs (Old Fergal, Craic Broker)
   - Tourist crowd NPCs
   - Quest board
 - **Animation Requirements**:
@@ -618,7 +618,7 @@ This is the bros' base of operations because it appeared first in their search r
 - declan_bartender.png - 64x96 - Night authority
 - aoife_server.png - 64x96 - Cheerful recovery
 - craic_broker.png - 64x96 - Quest dispenser
-- old_paddy.png - 64x96 - Permanent fixture
+- old_fergal.png - 64x96 - Permanent fixture
 - tourist_crowd_1.png - 192x96 - Background patrons
 - tourist_crowd_2.png - 192x96 - More background
 - trad_musicians.png - 192x96 - Session players

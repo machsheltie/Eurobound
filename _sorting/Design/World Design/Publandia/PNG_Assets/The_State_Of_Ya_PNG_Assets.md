@@ -1,7 +1,7 @@
 # The State of Ya - Complete PNG Asset Requirements
 
 ## 📋 Overview
-A corner general store where Maeve Brennan diagnoses your entire night with one glance, tells you exactly what she sees, and sells you exactly what you need to survive it — Irish brutal honesty running a supply chain for bad decisions. This document specifies every sprite for the judgement emporium at the heart of The Craic Tax: the aisles, the assessments, the twenty items of redemption and escalation, and the rarest sprite in Publandia — Maeve's genuine smile.
+A corner general store where Nuala Brennan diagnoses your entire night with one glance, tells you exactly what she sees, and sells you exactly what you need to survive it — Irish brutal honesty running a supply chain for bad decisions. This document specifies every sprite for the judgement emporium at the heart of The Craic Tax: the aisles, the assessments, the twenty items of redemption and escalation, and the rarest sprite in Publandia — Nuala's genuine smile.
 
 **Location ID:** `publandia_shop_state_of_ya_01`
 **Theme:** Morning-after shame meets Irish mammy energy — judgement delivered with genuine care underneath
@@ -17,7 +17,7 @@ A corner general store where Maeve Brennan diagnoses your entire night with one 
 | Pharmacy White | #F5F5F5 | Shelving, healing aisle, harsh reality |
 | Shame Green | #90EE90 | Signage accents, price tags |
 | Dublin Gray | #808080 | Exterior, floor, overcast light |
-| Judgement Purple | #8B008B | Assessment UI, Maeve's cardigan trim |
+| Judgement Purple | #8B008B | Assessment UI, Nuala's cardigan trim |
 | Fluorescent Glare | #FFFFF0 | Overhead lighting that reveals all |
 | Chalkboard Slate | #36454F | Shame Special board, hand lettering |
 
@@ -31,7 +31,7 @@ assets/sprites/locations/publandia/state_of_ya/
 │   ├── shop_interior.png
 │   └── aisle_details.png
 ├── npcs/
-│   ├── maeve.png
+│   ├── nuala.png
 │   └── state_customers.png
 ├── objects/
 │   └── shop_stock.png
@@ -77,10 +77,10 @@ assets/sprites/locations/publandia/state_of_ya/
 |---------|----------|------|-------------|
 | Floor Linoleum | (0, 0) | 256x128 | Dublin Gray, mopped nightly, scuffed daily |
 | Back Wall & Shelving | (0, 128) | 256x128 | Pharmacy White shelf runs |
-| Entry Zone (The Assessment) | (256, 0) | 128x96 | Doormat sightline — where one glance tells Maeve everything |
+| Entry Zone (The Assessment) | (256, 0) | 128x96 | Doormat sightline — where one glance tells Nuala everything |
 | Fluorescent Fixture Row | (384, 0) | 128x32 | Harsh tubes, reveals all |
 | Fluorescent (Healing Soft) | (384, 32) | 128x32 | Slightly softer variant over the Healing Aisle (mercy) |
-| Maeve's Counter | (0, 256) | 192x96 | Her domain — register, reading glasses on chain, unavoidable truth |
+| Nuala's Counter | (0, 256) | 192x96 | Her domain — register, reading glasses on chain, unavoidable truth |
 | Behind-Counter Shelf | (192, 256) | 128x64 | The good stuff, Known Disasters only |
 | Register & Bell | (320, 256) | 64x64 | Beeping register, counter bell |
 | Window Light Beam | (384, 64) | 128x96 | Gray morning light on the shame brigade |
@@ -89,11 +89,11 @@ assets/sprites/locations/publandia/state_of_ya/
 | Basket Stack | (192, 320) | 64x64 | Wire baskets — optimists take one, realists take two |
 | Newspaper Rack | (256, 224) | 64x32 | "PUBLANDIA HERALD: CRAIC TAX CLAIMS MORE VICTIMS" |
 | Group Discount Sign | (320, 320) | 96x32 | "GROUP DISCOUNT — Because I've a Heart" |
-| Recommendation Glow Shelf | (416, 320) | 96x64 | Subtle highlight variant of shelf section — Maeve's pick |
+| Recommendation Glow Shelf | (416, 320) | 96x64 | Subtle highlight variant of shelf section — Nuala's pick |
 
 ### Technical Notes:
 - Aisle Base Unit tiles into all four aisles; aisle identity comes from Sheet 3 detail overlays
-- Recommendation Glow Shelf swaps in over whichever aisle Maeve's assessment points to
+- Recommendation Glow Shelf swaps in over whichever aisle Nuala's assessment points to
 
 ---
 
@@ -115,22 +115,22 @@ assets/sprites/locations/publandia/state_of_ya/
 | Aisle Number Signs 1-4 | (0, 128) | 128x32 | Four 32x32 hanging signs — "Aspirin's aisle 1" must be literal |
 | Shelf Price Tags | (128, 128) | 64x32 | Shame Green tag strip |
 | Raised Eyebrow Notice | (192, 128) | 64x32 | Offensive aisle: "SOLD AS-IS. I'M NOT ASKING." |
-| Behind-Counter Detail | (256, 128) | 128x64 | Maeve's Personal Remedy jar, "Didn't Happen" Kit box, Reset case |
+| Behind-Counter Detail | (256, 128) | 128x64 | Nuala's Personal Remedy jar, "Didn't Happen" Kit box, Reset case |
 | Grandmother's Recipe Frame | (384, 128) | 64x64 | Handwritten, framed, ingredients illegible on purpose |
 | Ice Chest | (0, 160) | 96x64 | Cold drinks, forehead-adjacent uses |
 | Mop & Warning Cone | (96, 160) | 64x96 | "CAUTION: REGRET" floor cone |
 | Stock Boxes | (160, 160) | 96x64 | Backroom overflow — supply chain management |
 | Reading Glasses & Chain | (256, 192) | 32x32 | Counter prop, examine point |
 | Photo of the Regulars | (288, 192) | 64x48 | Taped to register — "my favorite recurring tragedies" |
-| Sigh Cloud Prop | (352, 192) | 32x32 | Maeve's frequent sigh, visualized |
+| Sigh Cloud Prop | (352, 192) | 32x32 | Nuala's frequent sigh, visualized |
 
 ---
 
-## 👓 Sprite Sheet 4: Maeve Brennan
-**File:** `maeve.png`
+## 👓 Sprite Sheet 4: Nuala Brennan
+**File:** `nuala.png`
 **Dimensions:** 384x256 pixels
 
-### Maeve States (64x96 each):
+### Nuala States (64x96 each):
 | State | Position | Size | Description |
 |-------|----------|------|-------------|
 | Neutral Assessment | (0, 0) | 64x96 | Behind counter, glasses lowered, reading you |
@@ -142,7 +142,7 @@ assets/sprites/locations/publandia/state_of_ya/
 | Rare Kindness | (0, 96) | 64x96 | "Here. On the house." — softened posture |
 | Rare Smile | (64, 96) | 64x96 | The achievement sprite — genuine laugh, +25 Bravado |
 
-### Maeve Expressions (48x48 each):
+### Nuala Expressions (48x48 each):
 | Expression | Position | Size | Description |
 |------------|----------|------|-------------|
 | Perpetually Unsurprised | (128, 96) | 48x48 | Default — 18 years of everything |
@@ -173,7 +173,7 @@ assets/sprites/locations/publandia/state_of_ya/
 | Morning Shame Brigade | (0, 0) | 192x96 | Three tourists in matching "PUBLANDIA" shirts, destroyed, bulk-buying aspirin |
 | The Evening Prep | (192, 0) | 64x96 | Optimistic, stocking up, no idea what's coming |
 | The Denial Case | (256, 0) | 64x96 | Sunglasses indoors, aggressive normalcy, shaking hands |
-| The Local Regular | (320, 0) | 64x96 | Made peace with Maeve's ways — 15-second transaction |
+| The Local Regular | (320, 0) | 64x96 | Made peace with Nuala's ways — 15-second transaction |
 
 ### Customer Details:
 | Element | Position | Size | Description |
@@ -239,7 +239,7 @@ assets/sprites/locations/publandia/state_of_ya/
 ### Behind Counter (Known Disaster Only, y=128):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Maeve's Personal Remedy | (0, 128) | 32x32 | Grandmother's recipe, cures ANY status |
+| Nuala's Personal Remedy | (0, 128) | 32x32 | Grandmother's recipe, cures ANY status |
 | The "Didn't Happen" Kit | (32, 128) | 32x32 | Plausible deniability supplies |
 | Emergency Complete Reset | (64, 128) | 32x32 | For when you've REALLY done it |
 | Shelf Facing Strips | (96, 128) | 96x32 | Tiled product-row filler for aisle shelves |
@@ -260,8 +260,8 @@ assets/sprites/locations/publandia/state_of_ya/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Shop Menu Frame | (0, 0) | 160x192 | Full inventory interface, aisle-tabbed, receipt styling |
-| Assessment Popup | (160, 0) | 96x64 | Maeve's verdict banner: state name + comment line |
-| State Meter | (160, 64) | 96x32 | How you look to Maeve — six recognized states |
+| Assessment Popup | (160, 0) | 96x64 | Nuala's verdict banner: state name + comment line |
+| State Meter | (160, 64) | 96x32 | How you look to Nuala — six recognized states |
 | Recommendation Highlight | (160, 96) | 96x48 | Shelf glow frame + "SHE'S ALWAYS RIGHT" pointer |
 | Known Disaster Badge | (160, 144) | 48x48 | Reluctant fondness, earned in five visits |
 | "Your Usual?" Button | (208, 144) | 48x48 | Known Disaster quick-buy |
@@ -307,13 +307,13 @@ assets/sprites/locations/publandia/state_of_ya/
 - **Frames:** 3 (start → apex → return to Unimpressed)
 - **Trigger:** Denial Case dialogue, obvious lies, Chadwick filming
 - **Purpose:** Judgement as microexpression — the roll is subtle, the meaning is not
-- **Audio Sync:** Maeve's sigh, frequent
+- **Audio Sync:** Nuala's sigh, frequent
 - **Mobile Optimization:** None needed
 
 ### The Rare Smile:
 - **Duration:** 2.5 seconds
 - **Frames:** Reluctant Fondness → genuine break → Rare Smile hold → recompose
-- **Trigger:** "The Rare Laugh" quest success / Maeve Approved moments
+- **Trigger:** "The Rare Laugh" quest success / Nuala Approved moments
 - **Purpose:** Rarest sprite in the shop; +25 Bravado made visible
 - **Audio Sync:** Slight audio warmth shift — ambient softens for the hold
 - **Mobile Optimization:** None needed — it's the achievement
@@ -331,7 +331,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - **Frames:** Regular enters → nod exchange → Counter Hands bagging → bag rustle → exit
 - **Trigger:** Ambient event, roughly every third visit
 - **Purpose:** Mutual respect as environmental storytelling — the adjusted customer
-- **Audio Sync:** "Morning, Maeve." / "You look rough." / "I know." beat-matched to frames
+- **Audio Sync:** "Morning, Nuala." / "You look rough." / "I know." beat-matched to frames
 - **Mobile Optimization:** Trimmed to 8s on Low LOD
 
 ---
@@ -345,7 +345,7 @@ assets/sprites/locations/publandia/state_of_ya/
 |---------|----------|------|-------------|
 | Shop Menu, Bold | (0, 0) | 96x64 | Thick-bordered inventory with enlarged aisle tabs + icons |
 | Assessment Popup, Bold | (96, 0) | 96x48 | Heavy-outline verdict banner, state name enlarged |
-| Maeve Interaction Outline | (192, 0) | 48x64 | White-on-dark counter hotspot |
+| Nuala Interaction Outline | (192, 0) | 48x64 | White-on-dark counter hotspot |
 | Aisle Sign Outlines | (0, 64) | 128x32 | Four high-contrast hanging signs with number + icon |
 | Behind Counter Outline | (128, 64) | 64x64 | Unlocked-access highlight, Known Disaster gate state shown |
 
@@ -361,7 +361,7 @@ assets/sprites/locations/publandia/state_of_ya/
 |---------|----------|------|-------------|
 | Bell Burst Icon | (128, 96) | 32x32 | Entry bell (mirrors UI sheet, enlarged) |
 | Assessment Sting Glyph | (160, 96) | 32x32 | "The state of ya" sting visualization |
-| Sigh Wisp | (192, 96) | 32x32 | Maeve's frequent sigh cue |
+| Sigh Wisp | (192, 96) | 32x32 | Nuala's frequent sigh cue |
 | Register Beep Blip | (0, 144) | 32x32 | Per-item scan feedback |
 | Bag Rustle Lines | (32, 144) | 32x32 | Transaction-complete cue |
 | Recommendation Ping Ring | (64, 144) | 32x32 | Glow-swap sound made visible |
@@ -379,13 +379,13 @@ assets/sprites/locations/publandia/state_of_ya/
 ### Texture Compression by Platform:
 - **iOS:** ASTC 6x6 (signage and chalkboard text at ASTC 4x4 — the jokes are in the lettering)
 - **Android:** ETC2 with alpha
-- **Fallback:** PNG high quality for Maeve portraits and the Assessment Popup
+- **Fallback:** PNG high quality for Nuala portraits and the Assessment Popup
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | stateofya_environment | exterior, interior, aisle_details | 1024x1024 |
-| stateofya_characters | maeve, state_customers | 512x512 |
+| stateofya_characters | nuala, state_customers | 512x512 |
 | stateofya_items_ui | shop_stock, ui | 512x512 |
 
 *(Max atlas size 2048x2048 for mobile GPU compatibility.)*
@@ -395,7 +395,7 @@ assets/sprites/locations/publandia/state_of_ya/
 |-------|-------------|
 | High | All 4 customer NPC types cycling, fluorescent pulse, full transaction choreography |
 | Medium | 2 customers max, static fixtures, trimmed transactions |
-| Low | Maeve + 1 customer, no pulse, no ambient events |
+| Low | Nuala + 1 customer, no pulse, no ambient events |
 
 ### Performance Targets:
 - **Target FPS:** 60
@@ -414,17 +414,17 @@ assets/sprites/locations/publandia/state_of_ya/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Single-room interior; exterior/interior via simple fade
-- Assessment system reads player status effects on entry (Hungover, Dehydrated, Low Bravado, Post-Combat, time-of-day) → selects one of six states → drives Maeve state, popup, and Recommendation Glow shelf target
+- Assessment system reads player status effects on entry (Hungover, Dehydrated, Low Bravado, Post-Combat, time-of-day) → selects one of six states → drives Nuala state, popup, and Recommendation Glow shelf target
 - CPUParticles2D not required — fluorescent pulse and glow swaps are alpha/material toggles, disabled in reduced-motion mode
 - Area2D examine points: asterisk plaque, chalkboard, Grandmother's Recipe Frame, Photo of the Regulars, newspaper rack
-- State tracking per `state_of_ya_state` (visits_count, known_disaster, usual_items[], fake_id_bought, made_maeve_laugh, full_circle_pending)
+- State tracking per `state_of_ya_state` (visits_count, known_disaster, usual_items[], fake_id_bought, made_nuala_laugh, full_circle_pending)
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
 |----------------|-----------|--------|
 | Door open | Shop bell | On door-open frame — announces your arrival |
 | Assessment Popup | "Look at the state of ya" sting | With popup slide-in |
-| Eye Roll | Maeve's sigh | On apex frame |
+| Eye Roll | Nuala's sigh | On apex frame |
 | Recommendation Glow swap | Recommendation ping | On swap |
 | Register scans | Beep per item | Per Register Beep Flash |
 | Transaction complete | Plastic bag rustle | On bag handoff |
@@ -434,9 +434,9 @@ assets/sprites/locations/publandia/state_of_ya/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Maeve's Approval | Genuine Warmth expression, "Maeve Approved" state | Impress her genuinely — very rare trigger conditions |
+| Nuala's Approval | Genuine Warmth expression, "Nuala Approved" state | Impress her genuinely — very rare trigger conditions |
 | The Usual | Known Disaster Badge, "Your Usual?" button, Behind Counter Panel | Fifth visit unlocks the shortcut and the good stuff |
-| Full Circle | Prep Basket + Shame Basket, Evening Prep + Brigade NPCs | Buy evening prep, return next morning for recovery — same items, no surprise from Maeve |
+| Full Circle | Prep Basket + Shame Basket, Evening Prep + Brigade NPCs | Buy evening prep, return next morning for recovery — same items, no surprise from Nuala |
 | The Rare Laugh | Rare Smile animation, Portrait Smile | Make her genuinely laugh; +25 Bravado, Miracle Worker achievement |
 
 ### Cross-Location Dependencies:
@@ -445,7 +445,7 @@ assets/sprites/locations/publandia/state_of_ya/
 | The Bunk & Blunder | Morning route — wake there, shuffle here; Brigade NPCs share the path | Standard street transition, morning light variant |
 | The Craic Tax | Host zone; pavement confetti tile, newspaper headline | Same street network |
 | Murphy's Lawless | Phone Charger (Works) is a direct competitive jab — "I have standards" | Dialogue-only rivalry |
-| All Pubs | Source of every condition Maeve treats; evening prep flows outward | Item buffs and cures carry via status system |
+| All Pubs | Source of every condition Nuala treats; evening prep flows outward | Item buffs and cures carry via status system |
 
 ---
 
@@ -453,7 +453,7 @@ assets/sprites/locations/publandia/state_of_ya/
 
 ### Visual Aesthetic:
 - **Primary Theme:** "A pharmacy-bright confessional — the one room in Publandia where the lighting refuses to lie"
-- **Color Mood:** Pharmacy White and Fluorescent Glare stripping away pretense; Judgement Purple reserved for Maeve and her verdicts; Shame Green pricing the damage
+- **Color Mood:** Pharmacy White and Fluorescent Glare stripping away pretense; Judgement Purple reserved for Nuala and her verdicts; Shame Green pricing the damage
 - **Lighting:** Harsh fluorescent everywhere except the Healing Aisle's half-step of mercy
 - **Texture:** Mopped linoleum, wire baskets, laminated signage, one handwritten recipe in a frame
 
@@ -464,7 +464,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - The Photo of the Regulars taped to the register: 18 years of reluctant fondness in one prop
 
 ### Character Integration Notes:
-- Maeve's deadpan does the comedy; her sprites must never mug — the eye roll is three frames, not a cartoon
+- Nuala's deadpan does the comedy; her sprites must never mug — the eye roll is three frames, not a cartoon
 - Rare Smile is deliberately the best-drawn sprite on her sheet; players earn it
 - Customer NPCs are the shop's clock: Brigade at morning, Prep at evening, Denial at all hours
 
@@ -477,16 +477,16 @@ assets/sprites/locations/publandia/state_of_ya/
 2. **The Asterisk** - "NO JUDGEMENT*" / "*judgement included" in one frame
 3. **The Shame Special Chalkboard** - "2-for-1 Aspirin & Dignity"
 4. **The Morning Shame Brigade** - Three matching "PUBLANDIA" shirts whisper-buying all the aspirin
-5. **The Rare Smile** - Screenshot proof you made Maeve Brennan laugh
-6. **The Fake ID Transaction** - "I don't see this. This isn't happening. €25."
+5. **The Rare Smile** - Screenshot proof you made Nuala Brennan laugh
+6. **The Fake ID Transaction** - "I don't see this. This isn't happening. 25 Sovs."
 
 ### Quote Potential:
 - "Jaysus, Mary, and Joseph. The state of ya. What happened last night?"
 - "You look like something the cat dragged in, played with, and rejected."
-- "You're GREEN. You're SWAYING. You're about as fine as my ex-husband's excuses. €15."
+- "You're GREEN. You're SWAYING. You're about as fine as my ex-husband's excuses. 15 Sovs."
 - "People think I'm harsh. I'm not harsh. I'm ACCURATE. Harsh would be lying."
 - "The aesthetic is a woman who'll break your phone. How's THAT for content?"
-- "Discount for the only one with sense. €28."
+- "Discount for the only one with sense. 28 Sovs."
 
 ---
 
@@ -497,7 +497,7 @@ assets/sprites/locations/publandia/state_of_ya/
 | 1 | state_exterior.png | 384x256 |
 | 2 | shop_interior.png | 512x384 |
 | 3 | aisle_details.png | 512x256 |
-| 4 | maeve.png | 384x256 |
+| 4 | nuala.png | 384x256 |
 | 5 | state_customers.png | 384x192 |
 | 6 | shop_stock.png | 256x192 |
 | 7 | state_of_ya_ui.png | 256x256 |
@@ -512,7 +512,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - [ ] `state_exterior.png` (384x256)
 - [ ] `shop_interior.png` (512x384)
 - [ ] `aisle_details.png` (512x256)
-- [ ] `maeve.png` (384x256)
+- [ ] `nuala.png` (384x256)
 - [ ] `state_customers.png` (384x192)
 - [ ] `shop_stock.png` (256x192)
 - [ ] `state_of_ya_ui.png` (256x256)

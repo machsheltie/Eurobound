@@ -50,19 +50,42 @@ One random Couchsurf per city unlocks a delayed ICQ pop-up the next day, like:
 - **Official Profile:** `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md`
 - **Owning Quest:** `debaucheryville_sidequest_nothing_is_getting_through_01` — `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`
 
-One Chronicles entry is no longer optional. The scripted outbreak event `night_event_outbreak_01` at the Bohemian Riviera's `night_party_zone` logs a Chronicles entry automatically, on every playthrough, for every player. It cannot be declined, missed, or avoided, and it applies the permanent status effect `the_herp` to all three bros.
+One Chronicles entry cannot be player-initiated. The scripted outbreak event `night_event_outbreak_01` at the Bohemian Riviera's `night_party_zone` logs QUEEN Riviéra Renata's entry automatically and applies the permanent status effect `the_herp` to all three bros. Within the party it cannot be declined or avoided — **but attending the party is itself optional**, and a player who skips it never logs the entry and never catches the Herp.
 
-**Consequence for the meta layer:** since that entry is mandatory and the status it applies is permanent, **full Chronicles completion now REQUIRES catching The Herp.** The unlock title above — **"Slept Around, Found Out"** — becomes literal and load-bearing. Nobody reaches it clean.
+**Consequence for the meta layer:** QUEEN Riviéra Renata is a **required host** for completion, and her entry can only be logged by attending the beach party — which also applies `the_herp`, permanently. So **full Chronicles completion REQUIRES catching The Herp**, and the unlock title — **"Slept Around, Found Out"** — is literal and load-bearing. Nobody completes it clean.
+
+**But the whole chain is optional.** The Riviera, the trivia and the party are all player choices. A player who skips the party simply never completes the Chronicles and never earns the title. That is a supported playthrough, not a failure state, and it is never signposted as a mistake. See `Design/design_optionality_principle.md`.
 
 **This is NOT the "One-Night Stand Roulette" mechanic.** That system, its 3+ couchsurfing trigger, and the `Regret Rash` debuff are unchanged and unaffected. `the_herp` is a separate, scripted, permanent status that does not roll, does not expire, and is never cured — only suppressed. The two can coexist.
 
-## The Rejection Hook
+## 🔀 THE FOUR STATES — every couchsurf host must have lines for all of them
 
-While `the_herp` is active on the party, **every Couchsurf attempt in every city is intercepted.** The invitation still appears and the bros still accept; the morning-after micro-scene is simply replaced by that NPC's **characterized Herp-rejection scene**, authored in her own official profile in her own established voice. No generic refusal exists. No stat boost, gag item, or ICQ payload from the normal entry is awarded on an intercepted attempt.
+**Author ruling (2026-08-03). This is the single source for the rule; the LINES live in each host's Chronicles entry, never duplicated into NPC profiles (profiles cross-reference).**
 
-The interception lifts **party-wide** the moment `item_gold_circle_coin` is equipped by any one bro. Every intercepted NPC can then be re-attempted, and each has her own **post-cure callback line** — none of which lets the bros off the hook. **Chronicles completion therefore stays fully achievable**; it is gated behind the Herp, not blocked by it.
+There is **no fixed couchsurf order.** Once a city has been visited the player can return to it at any time, so a host may be attempted in any Herp state, in any order, at any point in the game. Every host therefore needs **four authored variants**:
 
-**Resolution and payload (binding):** the post-cure callback plays as a **sting beat only.** She says her piece, the bros absorb none of it, and **the couchsurf then resolves normally** — the NPC's standard morning-after micro-scene and outcome run exactly as authored above. The callback is never a second refusal and never blocks the entry. **The first-time payload** (stat change, gag item, flavor collectible, ICQ payload, Passport entry) **is granted only if that entry was never completed pre-infection.** Players who completed an NPC before the outbreak get the callback and the scene, but no duplicate rewards.
+| # | State | Condition | What plays |
+|---|---|---|---|
+| **1** | **CLEAR** | Party has never caught `the_herp` | Normal engagement. She sleeps with them. Standard morning-after micro-scene and full payload. |
+| **2** | **INFECTED** | `the_herp` active, `item_gold_circle_coin` NOT equipped | **Roasted and refused, hilariously.** She is visibly, unmistakably disgusted. In her own voice — no generic refusal exists. No payload awarded. Sets `<npc>_refused_while_infected = true`. |
+| **3** | **SUPPRESSED — CLEAN** | Coin equipped, and she has NOT previously refused them | Plays **exactly as State 1, as if they had never been infected.** No callback, no reference, no acknowledgement. Full payload. |
+| **4** | **SUPPRESSED — CALLBACK** | Coin equipped, and `<npc>_refused_while_infected = true` | One **sting callback line** — she says her piece about the last time, the bros absorb none of it — **then the couchsurf resolves normally.** Never a second refusal, never blocks the entry. |
+
+### Binding rules
+- **The flag is per-NPC**, not party-wide: `<npc>_refused_while_infected`. A host they never attempted while infected plays State 3, not State 4.
+- **State 2 must be characterized and funny, never preachy.** She is disgusted and says so in her own established voice. Nobody lectures; nobody is cruel *about* the bros' feelings, because the bros have none to hurt. The joke is entirely on them.
+- **Payload is awarded once.** First-time rewards (stat change, gag item, flavour collectible, ICQ payload, Passport entry) only if that entry was never completed before. A player who completed her pre-infection gets the scene, not duplicate rewards.
+- **State 2 is a supported long-term playstyle**, not a dead end — a player may decline the Coin permanently and see State 2 for every host for the rest of the game. Those lines therefore carry real weight; write them well and write them varied. See `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` → "The Permanently Infected Playthrough".
+- **Renata is the sole exception** — she is the source of the infection, is only ever encountered via the scripted outbreak, and has no four-state treatment.
+
+### Chronicles completion
+Completion requires **every host, including Renata**. Renata's entry can only be logged by attending the beach party, which also infects the party — so completion is **gated behind catching the Herp**.
+
+State 2 awards no payload, so an infected party cannot complete anyone while unsuppressed. **Full completion therefore requires obtaining the Coin.**
+
+That makes declining the Coin a deliberate trade, and both sides of it are legitimate:
+- **Take the Coin** → Chronicles completable, "Slept Around, Found Out" earnable.
+- **Refuse the Coin** → forgo completion and the title, and instead watch the bros get refused by every host in every city for the rest of the game. Supported, intended, and for many players the better joke.
 
 ## The Six Official Profiles
 

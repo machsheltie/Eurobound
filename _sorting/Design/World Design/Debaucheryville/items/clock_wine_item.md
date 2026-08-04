@@ -15,7 +15,7 @@
 ## 🎭 Core Concept
 
 ### What It Actually Is
-€3 boxed wine (generic Franzia-equivalent) poured into fancy glass bottles with handmade "vintage" labels. The vendor claims it's infused with "temporal energy" from the 600-year-old astronomical clock.
+3 Sovs boxed wine (generic Franzia-equivalent) poured into fancy glass bottles with handmade "vintage" labels. The vendor claims it's infused with "temporal energy" from the 600-year-old astronomical clock.
 
 ### What Bros Believe
 A mystical European wine vintage infused with clock energy that makes the drinker irresistible to women. The kind of authentic cultural experience you can't find in Napa Valley.
@@ -23,8 +23,8 @@ A mystical European wine vintage infused with clock energy that makes the drinke
 ### The Scam Economics
 | Metric | Value |
 |--------|-------|
-| Actual Cost (Boxed Wine) | €3 |
-| Sale Price | €60/bottle |
+| Actual Cost (Boxed Wine) | 3 Sovs |
+| Sale Price | 60 Sovs/bottle |
 | Profit Margin | 1,900% |
 | "Temporal Energy" Content | 0% |
 | Magnetism to Ladies | 0% |
@@ -105,9 +105,9 @@ A mystical European wine vintage infused with clock energy that makes the drinke
 ### Purchase Options
 | Option | Price | Quantity | "Discount" |
 |--------|-------|----------|------------|
-| Single Bottle | €60 | 1 | None |
-| Three Bottles | €150 | 3 | "Save €30" |
-| Six Bottles | €300 | 6 | "Lifestyle Package" |
+| Single Bottle | 60 Sovs | 1 | None |
+| Three Bottles | 150 Sovs | 3 | "Save 30 Sovs" |
+| Six Bottles | 300 Sovs | 6 | "Lifestyle Package" |
 
 ### Vendor Dialogue on Purchase
 > "Very popular with ladies at clubs. The clock energy, it makes you... magnetic."
@@ -122,7 +122,7 @@ A mystical European wine vintage infused with clock energy that makes the drinke
 - **Stage**: Scam Gauntlet (Stage 2)
 - **Trigger**: Post-clock vulnerability active
 - **Minimum Purchase**: 1 bottle (bros typically buy 3-6)
-- **Total Spending**: €60-300
+- **Total Spending**: 60 Sovs-300
 
 ### State Flags
 ```

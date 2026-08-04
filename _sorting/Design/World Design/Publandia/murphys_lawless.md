@@ -100,7 +100,7 @@ Murphy stocks based on one principle: if someone might want it at 3 AM, he has i
 The name is a perfect pun: Murphy's Law (anything that can go wrong will) meets "lawless" (the questionable legality of half the inventory). Murphy himself is not malicious — he's just providing a service. That the service involves cursed beer and side effects is... the cost of convenience.
 
 ### The Murphy Philosophy
-Seamus Murphy has run this shop for 23 years. He's seen the neighborhood gentrify and de-gentrify and re-gentrify. The bars come and go. Murphy's remains. Why? Because people need things at 3 AM, and Murphy provides. Is the beer cold? Mostly. Is it legitimate? Mostly. Will you regret this purchase? Probably. But that's not Murphy's problem. His problem is keeping the lights on and the refrigerators running. One out of two isn't bad.
+Rory Murphy has run this shop for 23 years. He's seen the neighborhood gentrify and de-gentrify and re-gentrify. The bars come and go. Murphy's remains. Why? Because people need things at 3 AM, and Murphy provides. Is the beer cold? Mostly. Is it legitimate? Mostly. Will you regret this purchase? Probably. But that's not Murphy's problem. His problem is keeping the lights on and the refrigerators running. One out of two isn't bad.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Late-night desperation, sketchy convenience stores, 3 AM decisions
@@ -125,7 +125,7 @@ Seamus Murphy has run this shop for 23 years. He's seen the neighborhood gentrif
 
 **The Murphy's journey**:
 1. "We need mixers! And snacks! And— wait, this place is open?"
-2. "€5 for energy drinks? That's... is that a good price? I can't remember."
+2. "5 Sovs for energy drinks? That's... is that a good price? I can't remember."
 3. "MurphyBoost™? Never heard of it. Must be local. That's AUTHENTIC."
 4. "Why is this beer so cheap? ...doesn't matter, we'll take twelve."
 5. *Next morning*: "Why do I feel like THIS? What did we DRINK?"
@@ -156,51 +156,51 @@ Seamus Murphy has run this shop for 23 years. He's seen the neighborhood gentrif
 **Alcohol — Name Brands**
 | Item | Price | HP Effect | Side Effect | Risk |
 |------|-------|-----------|-------------|------|
-| Premium Lager (6-pack) | €15 | +10 HP each | Standard intoxication | 5% |
-| Irish Whiskey (Legitimate) | €25 | +20 HP, +10 SP | Standard intoxication | 5% |
-| Wine (Sealed) | €12 | +15 HP | Standard intoxication | 5% |
-| Craft Beer (Cold) | €8 | +12 HP | Standard intoxication | 5% |
+| Premium Lager (6-pack) | 15 Sovs | +10 HP each | Standard intoxication | 5% |
+| Irish Whiskey (Legitimate) | 25 Sovs | +20 HP, +10 SP | Standard intoxication | 5% |
+| Wine (Sealed) | 12 Sovs | +15 HP | Standard intoxication | 5% |
+| Craft Beer (Cold) | 8 Sovs | +12 HP | Standard intoxication | 5% |
 
 **Alcohol — Murphy's Select**
 | Item | Price | HP Effect | Side Effect | Risk |
 |------|-------|-----------|-------------|------|
-| Murphy's Budget Lager (6-pack) | €9 | +8 HP each | "Regret" status | 25% |
-| "Imported" Whiskey | €12 | +15 HP, +5 SP | "Headache" status (morning) | 30% |
-| Mystery Wine | €6 | +10 HP | Random status effect | 40% |
-| Murphy's Strong (Tall Can) | €3 | +5 HP | "Bad Decision" buff | 35% |
+| Murphy's Budget Lager (6-pack) | 9 Sovs | +8 HP each | "Regret" status | 25% |
+| "Imported" Whiskey | 12 Sovs | +15 HP, +5 SP | "Headache" status (morning) | 30% |
+| Mystery Wine | 6 Sovs | +10 HP | Random status effect | 40% |
+| Murphy's Strong (Tall Can) | 3 Sovs | +5 HP | "Bad Decision" buff | 35% |
 
 **Energy Drinks**
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| Name Brand Energy | €5 | +20 SP, +Speed | Crash (2 hours later) | 10% |
-| MurphyBoost™ Original | €3 | +30 SP, +Speed | "Jitters" status | 40% |
-| MurphyBoost™ EXTREME | €4 | +50 SP, ++Speed | "Cardiac Concern" status | 60% |
-| "Medicinal" Energy Tonic | €6 | +25 SP, +HP | Random positive OR negative | 50% |
+| Name Brand Energy | 5 Sovs | +20 SP, +Speed | Crash (2 hours later) | 10% |
+| MurphyBoost™ Original | 3 Sovs | +30 SP, +Speed | "Jitters" status | 40% |
+| MurphyBoost™ EXTREME | 4 Sovs | +50 SP, ++Speed | "Cardiac Concern" status | 60% |
+| "Medicinal" Energy Tonic | 6 Sovs | +25 SP, +HP | Random positive OR negative | 50% |
 
 **Snacks**
 | Item | Price | HP Effect | Side Effect | Risk |
 |------|-------|-----------|-------------|------|
-| Sealed Crisps | €3 | +10 HP | None | 0% |
-| Open Section Crisps | €1.50 | +8 HP | "Stale" (reduced effect) | 20% |
-| Mystery Meat Roll | €4 | +25 HP | "Questionable" status | 35% |
-| Day-Old Sandwich | €2 | +15 HP | "Regret" status | 40% |
-| Murphy's Mixed Nuts | €2 | +8 HP | One nut is always weird | 15% |
+| Sealed Crisps | 3 Sovs | +10 HP | None | 0% |
+| Open Section Crisps | 2 Sovs | +8 HP | "Stale" (reduced effect) | 20% |
+| Mystery Meat Roll | 4 Sovs | +25 HP | "Questionable" status | 35% |
+| Day-Old Sandwich | 2 Sovs | +15 HP | "Regret" status | 40% |
+| Murphy's Mixed Nuts | 2 Sovs | +8 HP | One nut is always weird | 15% |
 
 **"Medicinal" Items**
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| "Headache Cure" | €5 | Cures Hungover | "Drowsy" status | 30% |
-| "Stomach Settler" | €4 | Cures "Queasy" | "Constipated" status | 25% |
-| "Energy Supplement" | €7 | +All stats (1 hour) | Crash after (double penalty) | 50% |
-| "Murphy's Miracle Tonic" | €10 | Cures most status effects | Applies different status effect | 40% |
+| "Headache Cure" | 5 Sovs | Cures Hungover | "Drowsy" status | 30% |
+| "Stomach Settler" | 4 Sovs | Cures "Queasy" | "Constipated" status | 25% |
+| "Energy Supplement" | 7 Sovs | +All stats (1 hour) | Crash after (double penalty) | 50% |
+| "Murphy's Miracle Tonic" | 10 Sovs | Cures most status effects | Applies different status effect | 40% |
 
 **Counterfeit Merchandise**
 | Item | Price | Claimed Effect | Actual Effect | Notes |
 |------|-------|----------------|---------------|-------|
-| "Designer" Sunglasses | €8 | +Style | -Durability (break easily) | "Guooi" brand |
-| "Vintage" Band Shirt | €12 | +Cool | +Embarrassment when noticed | Band spelled wrong |
-| "Lucky" Charm | €5 | +Luck | No effect | It's plastic |
-| "Phone Charger" | €6 | Charges phone | 50% chance of working | Cable frays |
+| "Designer" Sunglasses | 8 Sovs | +Style | -Durability (break easily) | "Guooi" brand |
+| "Vintage" Band Shirt | 12 Sovs | +Cool | +Embarrassment when noticed | Band spelled wrong |
+| "Lucky" Charm | 5 Sovs | +Luck | No effect | It's plastic |
+| "Phone Charger" | 6 Sovs | Charges phone | 50% chance of working | Cable frays |
 
 ### Side Effect Status Effects
 | Status | Source | Effect | Duration | Cure |
@@ -247,7 +247,7 @@ If player is DRUNK, Murphy says nothing. Business is business.
 ## NPCs & Characters
 ### The Proprietor
 
-**Seamus Murphy**
+**Rory Murphy**
 - **Role**: Owner, sole employee, nocturnal observer
 - **Appearance**: 60s Irish man, permanent stubble, apron that's seen things
 - **Background**: 23 years in this spot, saw everything gentrify around him
@@ -281,7 +281,7 @@ If player is DRUNK, Murphy says nothing. Business is business.
 
 *After Side Effects:*
 - "Back again? The MurphyBoost got you, did it? Builds character. Or something."
-- "You look like the mystery meat found you instead of the other way around. Water's €2. Worth it."
+- "You look like the mystery meat found you instead of the other way around. Water's 2 Sovs. Worth it."
 - "Frequent sufferer now. Welcome to the club. There's no card. There should be."
 
 ### Regular NPCs

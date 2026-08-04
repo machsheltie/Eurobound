@@ -224,7 +224,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 ### Speed & Stealth Row (32x32 each, y=0):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Comfy Loafers | (0, 0) | 32x32 | Speed basic, €35 |
+| Comfy Loafers | (0, 0) | 32x32 | Speed basic, 35 Sovs |
 | Craic Tax Treads | (32, 0) | 32x32 | Speed mid — "They've seen combat" |
 | The Quickstep | (64, 0) | 32x32 | Speed advanced, Light-Footed buff |
 | Finbar's Flyers | (96, 0) | 32x32 | Speed premium, winged heel detail |
@@ -271,7 +271,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 |---------|----------|------|-------------|
 | Heroic Display Glow | (0, 128) | 64x64 | Under-shoe pedestal light |
 | Spotlight Cone | (64, 128) | 64x64 | Makes footwear look heroic |
-| Price Tag Set | (128, 128) | 64x32 | €35-€150 range tags |
+| Price Tag Set | (128, 128) | 64x32 | 35-150 Sovs range tags |
 | Category Icons | (128, 160) | 64x32 | Speed/Stealth/Defense/Endurance glyphs (wing, mask, shield, mountain) |
 | Tactical Description Cards | (0, 192) | 256x64 | Dramatic per-shoe copy plates, 64x64 each x4 |
 

@@ -1,7 +1,7 @@
 # The Strobe Survival Kit - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Strobe Survival Kit is a fold-out street stall run like a forward operating base: Miroslav, a former sound engineer with visible hearing aids and twenty years of receipts, sells earplugs, glow sticks, and the will to continue to tourists marching into 105-decibel territory. This document specifies every PNG for the military-surplus-meets-rave armory, the decibel warning chart that guilt-trips honestly, and the equipment whose effects are — uniquely for Debaucheryville — exactly what the vendor claims.
+The Strobe Survival Kit is a fold-out street stall run like a forward operating base: Antonín, a former sound engineer with visible hearing aids and twenty years of receipts, sells earplugs, glow sticks, and the will to continue to tourists marching into 105-decibel territory. This document specifies every PNG for the military-surplus-meets-rave armory, the decibel warning chart that guilt-trips honestly, and the equipment whose effects are — uniquely for Debaucheryville — exactly what the vendor claims.
 
 **Location ID:** `debaucheryville_vendor_strobe_survival_01`
 **Theme:** Harm reduction disguised as tactical commerce — "Equip Yourself. The Night Is Hostile."
@@ -14,7 +14,7 @@ The Strobe Survival Kit is a fold-out street stall run like a forward operating 
 ## 🎨 Color Palette
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Military Green | #4B5320 | Stall structure, surplus crates, Miroslav's vest |
+| Military Green | #4B5320 | Stall structure, surplus crates, Antonín's vest |
 | Neon Pink | #FF6EC7 | Glow product accents, rave-side inventory |
 | Night Black | #1A1A1A | Street backdrop, shadow zones |
 | Warning Orange | #FF4500 | Decibel chart, midnight price notice, alerts |
@@ -31,7 +31,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 ├── objects/
 │   └── survival_items.png
 ├── npcs/
-│   ├── miroslav.png
+│   ├── antonin.png
 │   └── stall_customers.png
 ├── effects/
 │   └── stall_effects.png
@@ -109,10 +109,10 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 ### Audio Defense:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Foam Earplugs (Basic) | (0, 0) | 24x24 | €3 — "Better than nothing. Barely." |
-| Silicone Earplugs | (32, 0) | 24x24 | €8 — "Now we're talking." |
-| Musician-Grade Plugs | (64, 0) | 24x24 | €20 — "The sound stays, the damage doesn't." |
-| Custom Molded (Premium) | (96, 0) | 24x24 | €45 — "Once you go custom, you never go back." |
+| Foam Earplugs (Basic) | (0, 0) | 24x24 | 3 Sovs — "Better than nothing. Barely." |
+| Silicone Earplugs | (32, 0) | 24x24 | 8 Sovs — "Now we're talking." |
+| Musician-Grade Plugs | (64, 0) | 24x24 | 20 Sovs — "The sound stays, the damage doesn't." |
+| Custom Molded (Premium) | (96, 0) | 24x24 | 45 Sovs — "Once you go custom, you never go back." |
 | Earplug Carry Case | (128, 0) | 24x24 | Keyring capsule |
 | Glow Stick (Dormant) | (160, 0) | 32x16 | Pre-crack state |
 | Glow Stick (Active) | (160, 16) | 32x16 | Cracked and glowing |
@@ -160,12 +160,12 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Earplug In-Ear Demo | (0, 160) | 48x48 | Cutaway insertion diagram, briefing-style |
 | Decibel Wave Icon | (48, 160) | 32x32 | Sound pressure visual for the chart |
 | Combo Deal Bundle | (80, 160) | 48x48 | Earplugs + electrolytes + shades combo |
-| Restock Crate (Open) | (128, 160) | 48x48 | Miroslav's restocking animation prop |
+| Restock Crate (Open) | (128, 160) | 48x48 | Antonín's restocking animation prop |
 
 ---
 
-## 🪖 Sprite Sheet 4: Miroslav "Miro" Dvorak
-**File:** `miroslav.png`
+## 🪖 Sprite Sheet 4: Antonín "Tonda" Dvořák
+**File:** `antonin.png`
 **Dimensions:** 256x384 pixels
 
 ### Operating Poses:
@@ -211,10 +211,10 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | The Convert | (0, 0) | 64x96 | "It's been EIGHTEEN HOURS." Buying musician-grade, slightly panicked |
-| Veteran Clubber | (64, 0) | 64x96 | "Usual kit, Miro." Efficient, nods, leaves |
+| Veteran Clubber | (64, 0) | 64x96 | "Usual kit, Tonda." Efficient, nods, leaves |
 | Dismissive Bro | (128, 0) | 64x96 | "I'm FINE." Future convert |
 | Concerned Friend | (192, 0) | 64x96 | Buying earplugs for the whole reluctant group |
-| Sound Engineer (Off-Duty) | (256, 0) | 64x96 | Discussing -25dB vs -30dB molds with Miroslav |
+| Sound Engineer (Off-Duty) | (256, 0) | 64x96 | Discussing -25dB vs -30dB molds with Antonín |
 | Tourist Pair (Passing) | (320, 0) | 96x96 | Clubward foot traffic |
 | Queue Browser | (416, 0) | 64x96 | Reading the decibel chart, recalculating life |
 
@@ -266,7 +266,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Equipment Browser Frame | (0, 0) | 160x96 | Stencil-font section navigation |
-| Tactical Briefing Panel | (160, 0) | 96x96 | Miroslav's personalized loadout recommendation |
+| Tactical Briefing Panel | (160, 0) | 96x96 | Antonín's personalized loadout recommendation |
 | Earplug Comparison Card | (0, 96) | 96x48 | Foam → custom, tiers and dB reduction |
 | Midnight Price Warning | (96, 96) | 96x48 | "+50% — You should have bought before." |
 
@@ -276,7 +276,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Strobe Headache Icon | (192, 96) | 32x32 | Unprotected debuff indicator |
 | Mood Up Icon | (224, 96) | 32x32 | Glow gear bonus |
 | Equipped Loadout Bar | (0, 144) | 128x32 | Current protection at a glance |
-| Hearing Preserved Badge | (128, 144) | 48x48 | Achievement — Miroslav approves |
+| Hearing Preserved Badge | (128, 144) | 48x48 | Achievement — Antonín approves |
 | Prepared Clubber Icon | (176, 144) | 32x32 | Status affecting bouncer interactions |
 | Ringing Ears Debuff Icon | (208, 144) | 32x32 | Next-day -10% audio interactions |
 | Confusion Shield Icon | (192, 128) | 32x32 | Earplug/shades reduction indicator |
@@ -327,11 +327,11 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Frames:** Price Flip Cards flip (1s) → Price Surge Flash (0.5s) → Midnight tags shown (0.5s)
 - **Pattern:** Once per night at 00:00
 - **Trigger:** In-game clock hits midnight
-- **Purpose:** Desperation pricing, ceremonially announced; earplug tags visibly DON'T flip (Miroslav's principles)
+- **Purpose:** Desperation pricing, ceremonially announced; earplug tags visibly DON'T flip (Antonín's principles)
 - **Audio Sync:** Cash register ka-chunk on the flip
 - **Mobile Optimization:** None needed
 
-### Miroslav Restocking Idle:
+### Antonín Restocking Idle:
 - **Duration:** 7 seconds loop
 - **Frames:** Idle Gruff (4s) → Restocking (2s) → Idle Gruff return (1s)
 - **Pattern:** Loop when no customer engaged
@@ -358,7 +358,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 ### High Contrast Alternatives:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Miroslav Interactive Outline | (0, 0) | 64x96 | White-on-dark counter hotspot |
+| Antonín Interactive Outline | (0, 0) | 64x96 | White-on-dark counter hotspot |
 | Decibel Chart, Large-Print | (64, 0) | 128x96 | Oversized dB figures — the warning must be readable by everyone it's warning |
 | Browser Frame, Bold | (192, 0) | 64x96 | High-contrast shop border |
 | Earplug Tiers, Bold Icons | (0, 96) | 128x32 | Thick-outline tier glyphs with dB numbers |
@@ -400,7 +400,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | survival_environment | stall, sections | 1024x1024 |
-| survival_characters | miroslav, customers | 1024x512 |
+| survival_characters | antonin, customers | 1024x512 |
 | survival_items_ui | items, effects, ui, accessibility | 512x512 |
 
 *(Max atlas size 2048x2048 for mobile GPU compatibility.)*
@@ -413,7 +413,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Low | Static glow decals, 2 customers, no rings, static product displays |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 12 per frame
 - **Memory Footprint:** 28 MB maximum
 - **Particle Limit:** 10 (glow shimmer + rings combined)
@@ -450,7 +450,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Achievement track (Preparing → Harm Reducer) | Badge/icon set, kit bundle, friend-handoff sprite | Fires on first purchase, earplug purchase, full kit, unprotected survival, post-damage return, convincing a friend |
-| The Convert arc | Dismissive Bro → Next-Day → Convert sprites, Vindicated expression | Three-night NPC state machine; Miroslav's "I'll have the silicone ready" pays off |
+| The Convert arc | Dismissive Bro → Next-Day → Convert sprites, Vindicated expression | Three-night NPC state machine; Antonín's "I'll have the silicone ready" pays off |
 | Tactical Briefing | Briefing Panel, Briefing Gesture, comparison card | Personalized loadout advice; following it earns a discount |
 | Prepared Clubber status | Prepared Clubber icon, Safety Check glyph | Equipped protection changes bouncer interactions at Velvet Curtain |
 
@@ -474,14 +474,14 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Texture:** Surplus canvas, stenciled crates, pegboard order; everything grabbable, nothing decorative
 
 ### Environmental Storytelling:
-- The decibel chart does the selling; Miroslav just points at it
+- The decibel chart does the selling; Antonín just points at it
 - Earplug price tags don't flip at midnight — principles, rendered in cardstock
 - The stall faces the club district: the customer browses with the threat literally glowing behind them
-- Hearing aids visible in every Miroslav pose — the stall's founding document, worn on his head
+- Hearing aids visible in every Antonín pose — the stall's founding document, worn on his head
 
 ### Character Integration Notes:
-- Miroslav's poses are economical; he gestures like a man briefing soldiers, not selling trinkets
-- The Convert's panic must read as comedy AND vindication — Miroslav's Vindicated expression pairs with it
+- Antonín's poses are economical; he gestures like a man briefing soldiers, not selling trinkets
+- The Convert's panic must read as comedy AND vindication — Antonín's Vindicated expression pairs with it
 - The Dismissive Bro's three-stage arc (dismissal → ringing → conversion) is the location's thesis in NPC form
 
 ---
@@ -490,7 +490,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 
 ### Screenshot-Worthy Moments:
 1. **The Decibel Chart** - "Velvet Curtain: 105 dB — permanent damage threshold. Underground: 110+ — why"
-2. **The Hearing Aid Point** - Miroslav's twenty years of consequence in one gesture
+2. **The Hearing Aid Point** - Antonín's twenty years of consequence in one gesture
 3. **Lord Pilsner's Conversion** - "Earplugs are uncool" to "give me the musician-grade" in four dialogue lines
 4. **The Midnight Flip** - Every price surges except the earplugs
 5. **Bradley's Full Kit** - The one bro who just... listened
@@ -511,7 +511,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | 1 | survival_stall.png | 512x512 |
 | 2 | stall_sections.png | 512x256 |
 | 3 | survival_items.png | 256x256 |
-| 4 | miroslav.png | 256x384 |
+| 4 | antonin.png | 256x384 |
 | 5 | stall_customers.png | 512x192 |
 | 6 | stall_effects.png | 128x128 |
 | 7 | stall_ui.png | 256x192 |
@@ -526,7 +526,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - [ ] `survival_stall.png` (512x512)
 - [ ] `stall_sections.png` (512x256)
 - [ ] `survival_items.png` (256x256)
-- [ ] `miroslav.png` (256x384)
+- [ ] `antonin.png` (256x384)
 - [ ] `stall_customers.png` (512x192)
 - [ ] `stall_effects.png` (128x128)
 - [ ] `stall_ui.png` (256x192)
@@ -544,7 +544,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 
 ### Delivery Format:
 - **Primary:** Individual PNG files per specifications above
-- **Backup:** Master PSD/layered file with organized layer groups (pre/post-midnight price states in separate groups; Miroslav demo frames in sequence)
+- **Backup:** Master PSD/layered file with organized layer groups (pre/post-midnight price states in separate groups; Antonín demo frames in sequence)
 - **Documentation:** Animation timing reference sheet (demo duck timing, midnight flip, bass ring cadence) + equipment-flag effect map
 
 ---
@@ -555,7 +555,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly (Military Green #4B5320, Neon Pink #FF6EC7, Warning Orange #FF4500, Night Black #1A1A1A)
 - [ ] Decibel chart figures legible at examine zoom (the guilt trip is data)
-- [ ] Hearing aids visible in every single Miroslav pose — no exceptions
+- [ ] Hearing aids visible in every single Antonín pose — no exceptions
 - [ ] Earplug tags visibly unflipped in the post-midnight state
 - [ ] Accessibility visual alternatives included for all audio cues (muffle duck, snap, bass, ka-chunk, distortion, whine)
 - [ ] File naming follows snake_case convention
@@ -581,7 +581,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Seedy Underbelly Present | ✅ | Desperation pricing after midnight — emergency supplies marked up +50% (earplugs excepted, which IS the characterization) |
 | Gameplay Value Established | ✅ | Equipment effects at Velvet Curtain, next-day status prevention, briefing system, Convert NPC arc, Bravado hooks |
 | Technical Feasibility | ✅ | 7 sheets, flag-based equipment system, clock-driven pricing — standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 45 FPS / 12 draw calls / 28 MB per profile; estimate ~12 MB |
+| Mobile Performance Budget | ✅ | 60 FPS / 12 draw calls / 28 MB per profile; estimate ~12 MB |
 | Accessibility Features | ✅ | The muffle-demo and tinnitus cues have visual equivalents; no audio-only information anywhere at the harm-reduction stall (it would be ironic) |
 | No Crypto Elements | ✅ | Pure tactical commerce (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

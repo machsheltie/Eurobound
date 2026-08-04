@@ -160,7 +160,7 @@
       },
       {
         "effect_id": "patron_status",
-        "trigger": "donate_100_euro",
+        "trigger": "donate_100_sov",
         "stats": {"charm": 3},
         "duration_hours": 4
       }
@@ -190,18 +190,18 @@
       {
         "status_removed": "stressed",
         "method": "champagne_lobby",
-        "cost_euro": 15,
+        "cost_sov": 15,
         "bonus": {"charm": 1}
       },
       {
         "status_removed": "tired",
         "method": "intermission_rest",
-        "cost_euro": 0
+        "cost_sov": 0
       },
       {
         "status_removed": "embarrassed",
         "method": "costume_change_dressing_room",
-        "cost_euro": 10
+        "cost_sov": 10
       }
     ]
   },

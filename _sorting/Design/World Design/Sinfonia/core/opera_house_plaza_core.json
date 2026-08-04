@@ -173,31 +173,31 @@
     "available_purchases": [
       {
         "item": "fiaker_ride_20min",
-        "base_price_euro": 80,
-        "max_price_euro": 120,
+        "base_price_sov": 80,
+        "max_price_sov": 120,
         "price_modifier": "perception_of_tourist_gullibility"
       },
       {
         "item": "terrace_espresso",
-        "base_price_euro": 8,
+        "base_price_sov": 8,
         "supplement": {
           "name": "historic_view",
-          "cost_euro": 7
+          "cost_sov": 7
         }
       },
       {
         "item": "selfie_with_fiaker_horse",
-        "price_euro": 5,
+        "price_sov": 5,
         "type": "tip"
       },
       {
         "item": "opera_scalper_tickets",
-        "price_range_euro": [200, 500],
-        "face_value_range_euro": [40, 80]
+        "price_range_sov": [200, 500],
+        "face_value_range_sov": [40, 80]
       },
       {
         "item": "street_performer_tip",
-        "price_range_euro": [1, 5],
+        "price_range_sov": [1, 5],
         "affects": "subsequent_interaction_quality"
       }
     ]
@@ -224,11 +224,11 @@
     "recovery": {
       "espresso": {
         "removes": "tired",
-        "cost_euro": 8
+        "cost_sov": 8
       },
       "street_performer": {
         "removes": "stressed",
-        "cost_euro": 0,
+        "cost_sov": 0,
         "requirement": "listen_1_minute"
       }
     }

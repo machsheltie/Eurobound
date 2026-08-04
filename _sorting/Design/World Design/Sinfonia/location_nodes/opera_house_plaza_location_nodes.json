@@ -149,7 +149,7 @@
       "interior": {
         "theme": "High culture gatekeeping",
         "features": [
-          "quest_npc: opera_usher_01",
+          "quest_npc: sinfonia_npc_opera_usher_01",
           "readable: opera_poster_board",
           "traversal: opera_steps_vantage",
           "audio_source: rehearsal_through_windows",

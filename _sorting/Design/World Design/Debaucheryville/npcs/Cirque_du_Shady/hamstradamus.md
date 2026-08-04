@@ -139,7 +139,7 @@ He tells the truth, loudly, in a costume, because that's the job and because som
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|---------------|----------------|
 | Prophecy Roulette | 5 coins | Genuinely random | Random buff or debuff, delivered as an absurd, always-true doom prophecy |
-| Hamstradamus Bobblehead (sold via Yolanda's prize booth, not directly by him) | 500 tickets | €50 | +5% Luck, occasionally "speaks" |
+| Hamstradamus Bobblehead (sold via Yolanda's prize booth, not directly by him) | 500 tickets | 50 Sovs | +5% Luck, occasionally "speaks" |
 
 ### Hidden Details / Easter Eggs
 - If a player examines the Hamagotchi™ item while standing near Hamstradamus, he leans in close and whispers: **"MY SON."** — the bros interpret this as him recognizing the item's importance

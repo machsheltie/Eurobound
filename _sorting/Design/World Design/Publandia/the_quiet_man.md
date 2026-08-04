@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 PM - 4 AM (when "trivia" happens)
 - **Stat Requirements**: None to watch; Bravado 30+ to participate
-- **Item Requirements**: €10 "participation fee" OR answer the entry "trivia question"
+- **Item Requirements**: 10 Sovs "participation fee" OR answer the entry "trivia question"
 - **Previous Location Requirements**: Hear about it from NPC at The Blarney Trap or Paddy's Book
 - **Special Conditions**: Must give correct answer to "trivia question" (actually a test of discretion)
 
@@ -162,7 +162,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 ## Gameplay Mechanics
 ### The "Trivia" System
 
-**Entry Fee**: €10 to watch, €20 to participate
+**Entry Fee**: 10 Sovs to watch, 20 Sovs to participate
 **Fight Sign-Up**: Tell Ciaran you want to "answer a question"
 **Matching**: Ciaran matches you based on size and "experience" (how beat up you look)
 
@@ -193,7 +193,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 ### Fight Outcomes
 
 **Victory**:
-- €50 prize (winner's purse)
+- 50 Sovs prize (winner's purse)
 - +30 Bravado
 - "Contender" progress (3 wins = status)
 - Crowd respect, free drinks
@@ -227,28 +227,28 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 5. Beat the Champion: "Quiz Champion" — title holder
 
 **Champion Fight (Optional Boss)**:
-- **The Champion**: "Big" Seamus O'Malley
+- **The Champion**: "Big" Donnacha O'Malley
 - **Title**: "Quiz Champion" (undefeated in 47 "questions")
 - **Stats**: Significantly higher than regular opponents
-- **Reward**: Title, permanent respect, €200 purse, The Champion's Belt (equipment)
+- **Reward**: Title, permanent respect, 200 Sovs purse, The Champion's Belt (equipment)
 
 ### Rumor Trading Post
 
-**Access**: After first fight (win or lose) OR €50 payment
+**Access**: After first fight (win or lose) OR 50 Sovs payment
 **Function**: Buy and sell information
 
 **Available Rumors** (Rotating):
 | Rumor | Price | Content |
 |-------|-------|---------|
-| "Craic Tax Tip" | €20 | Location of rare item in the Craic Tax |
-| "Paddy's Fix" | €30 | Which fight is fixed tonight at Paddy's |
-| "Stoutworks Secret" | €25 | Hidden room in brewery dungeon |
-| "Craic Baron's Weakness" | €50 | Hint for city boss fight |
-| "Rival Trio Location" | €15 | Where rivals will be tomorrow |
+| "Craic Tax Tip" | 20 Sovs | Location of rare item in the Craic Tax |
+| "Paddy's Fix" | 30 Sovs | Which fight is fixed tonight at Paddy's |
+| "Stoutworks Secret" | 25 Sovs | Hidden room in brewery dungeon |
+| "Craic Baron's Weakness" | 50 Sovs | Hint for city boss fight |
+| "Rival Trio Location" | 15 Sovs | Where rivals will be tomorrow |
 
 **Selling Rumors**:
 - Share information you've learned
-- Payment based on value (€10-40)
+- Payment based on value (10 Sovs-40)
 - Creates economy of secrets
 
 ### Bravado Interactions
@@ -318,14 +318,14 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
   - "Come back when you've healed. And maybe learned something."
   - "Ice. Painkillers. Pride? Can't help with that."
 
-**"Scorekeeper" Orla (Rumor Broker)**
+**"Scorekeeper" Sinéad (Rumor Broker)**
 - **Role**: Runs the Rumor Trading Post, information dealer
 - **Appearance**: 30s Irish woman, always writing in a notebook, knows everyone's business
 - **Background**: Former journalist, found better pay in secrets
 - **Demeanor**: Businesslike, values information, never shares her own
 - **Dialogue**:
   - "Rumors. Everyone's got them, everyone wants them. What do you need?"
-  - "That information will cost you €30. Or something equally valuable."
+  - "That information will cost you 30 Sovs. Or something equally valuable."
   - "I don't ask where you heard things. Don't ask where I heard them."
 
 ### Fighters (Regular Opponents)
@@ -336,7 +336,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **Style**: Sloppy, enthusiastic, easy to read
 - **Dialogue**: "I've done this before! Twice! Both times I lost but STILL!"
 
-**"The Accountant" Aoife**
+**"The Accountant" Niamh**
 - **Difficulty**: Medium
 - **Background**: Actual accountant by day, trained kickboxer by night
 - **Style**: Precise, calculated, exploits openings
@@ -348,7 +348,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **Style**: Brawler, takes hits to give hits, high stamina
 - **Dialogue**: "Country versus city, is it? This is PERSONAL now."
 
-**"Big" Seamus O'Malley (Champion)**
+**"Big" Donnacha O'Malley (Champion)**
 - **Difficulty**: Boss-level
 - **Background**: 47-fight undefeated streak, legend of The Quiet Man
 - **Style**: Complete fighter, no weaknesses, reads opponents
@@ -391,7 +391,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **The Craic Tax**: Rivals might be encountered here
 
 ### Quest Integration
-- **"Quiz Champion"**: Beat Big Seamus, become the champion
+- **"Quiz Champion"**: Beat Big Donnacha, become the champion
 - **"Information Economy"**: Use Rumor Trading Post for main quest hints
 - **"The Undercard"**: Help arrange fights for Ciaran (scheduling quest)
 - **"Country vs. City"**: Factional rivalry quest, choose sides
@@ -403,7 +403,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **Three Wins**: "Contender" — taken seriously
 - **Beat Champion**: "Quiz Champion" — title holder
 - **Lost Three Fights**: "Resilient" — respect for persistence
-- **KO'd Big Seamus**: "Legend" — peak achievement
+- **KO'd Big Donnacha**: "Legend" — peak achievement
 
 ---
 
@@ -478,9 +478,9 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - ciaran_announcing.png - 64x96x3 - Broadcasting fight
 - donal_bouncer.png - 64x96 - Entry guard
 - brigid_nurse.png - 64x96 - Recovery medic
-- orla_broker.png - 64x96 - Rumor dealer
+- sinead_broker.png - 64x96 - Rumor dealer
 - terry_tourist.png - 64x96 - Easy opponent
-- aoife_accountant.png - 64x96 - Medium opponent
+- niamh_accountant.png - 64x96 - Medium opponent
 - quarry_jimmy.png - 64x96 - Hard opponent
 - big_seamus.png - 80x112 - Champion
 - crowd_cheering.png - 256x96 - Audience reaction

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: Tours 10 AM - 6 PM; Dungeon accessible 24/7 (the yeast never sleeps)
 - **Stat Requirements**: None for tour; combat-ready recommended for dungeon
-- **Item Requirements**: Tour ticket (€25) or quest trigger; equipment for dungeon
+- **Item Requirements**: Tour ticket (25 Sovs) or quest trigger; equipment for dungeon
 - **Previous Location Requirements**: Quest from The Blarney Trap recommended
 - **Special Conditions**: Tour mode vs. Dungeon mode (different experiences)
 
@@ -114,12 +114,12 @@
 ### Theme & Vibe
 **Core Concept**: The Stoutworks Brewery is a loving parody of the "brewery tour as religious experience" phenomenon — those massive industrial cathedrals where beer production is treated with the reverence of ancient ritual. The dungeon twist is that the yeast has become TOO alive, the fermentation has gone TOO far, and the brewery's "living beer culture" has taken the concept literally.
 
-It's also a commentary on brewery tourism — paying €25 to watch beer being made and then buying it at retail price in the gift shop. The dungeon mode is what happens when that controlled environment goes wrong.
+It's also a commentary on brewery tourism — paying 25 Sovs to watch beer being made and then buying it at retail price in the gift shop. The dungeon mode is what happens when that controlled environment goes wrong.
 
 ### The Yeast Situation (Lore)
 - The Stoutworks has been brewing since 1869
 - Their "heritage yeast strain" is 150+ years old
-- Something in the water (or the Dublin magic) made it sentient
+- Something in the water (or the Publandia magic) made it sentient
 - The Yeast Golems are not evil — just confused about their purpose
 - The Vat Master is a yeast colony that achieved consciousness and now believes it IS the brewery
 - The solution isn't destruction but negotiation (or destruction, player's choice)
@@ -132,7 +132,7 @@ It's also a commentary on brewery tourism — paying €25 to watch beer being m
 - **Sensitivity Considerations**: Celebrates brewing craft while satirizing its tourism packaging
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: €25 tours that end in a gift shop (standard industry practice)
+- **Primary Vice**: 25 Sovs tours that end in a gift shop (standard industry practice)
 - **City-Specific Comedy Operations**: The "yeast situation" cover story vs. reality
 - **Buffoon Exploitation**: Bros who just wanted the free tasting pint
 - **Comedy of Errors**: Tour going horribly wrong, foam physics disasters
@@ -149,7 +149,7 @@ It's also a commentary on brewery tourism — paying €25 to watch beer being m
 - "And here we see the fermentation vats— wait, that vat is MOVING"
 - "The yeast is supposed to be IN the beer, not FORMING A HUMANOID SHAPE"
 - "This isn't part of the tour. This is DEFINITELY not part of the tour."
-- "Does the €25 cover hazard pay?"
+- "Does the 25 Sovs cover hazard pay?"
 
 **The transformation**:
 - Entered as tourists
@@ -279,13 +279,13 @@ It's also a commentary on brewery tourism — paying €25 to watch beer being m
 **Gift Shop Inventory:**
 | Item | Price | Effect |
 |------|-------|--------|
-| Stoutworks T-Shirt | €30 | +5 Defense (armor slot) |
-| Copper Mug | €25 | +Alcohol resistance, beer heals extra |
-| "History of Brewing" Book | €15 | +Intelligence, dungeon hints |
-| Yeast Sample (Contained) | €20 | Throwable, summons temporary ally |
-| Steam-Proof Jacket | €50 | +Steam resistance |
-| Commemorative Tap Handle | €35 | Weapon, +Brewing damage |
-| "I Survived Stoutworks" Shirt | €40 | +Defense, post-dungeon only |
+| Stoutworks T-Shirt | 30 Sovs | +5 Defense (armor slot) |
+| Copper Mug | 25 Sovs | +Alcohol resistance, beer heals extra |
+| "History of Brewing" Book | 15 Sovs | +Intelligence, dungeon hints |
+| Yeast Sample (Contained) | 20 Sovs | Throwable, summons temporary ally |
+| Steam-Proof Jacket | 50 Sovs | +Steam resistance |
+| Commemorative Tap Handle | 35 Sovs | Weapon, +Brewing damage |
+| "I Survived Stoutworks" Shirt | 40 Sovs | +Defense, post-dungeon only |
 
 ## NPCs & Characters
 ### Staff NPCs
@@ -417,7 +417,7 @@ It's also a commentary on brewery tourism — paying €25 to watch beer being m
 | SP Restoration | +15 SP |
 | Special Effect | 10% chance of "Fermented Fury" buff (+15% Attack for next battle) |
 | Status Risk | 10% chance of "The Vat's Whisper" (hear faint yeast thoughts, cosmetic) |
-| Purchase Price | €12 (available at Stoutworks Gift Shop and The Blarney Trap after unlock) |
+| Purchase Price | 12 Sovs (available at Stoutworks Gift Shop and The Blarney Trap after unlock) |
 
 **Flavor Text**: "Aged in whiskey barrels during the 'incident.' The yeast that made this achieved consciousness. You can taste the existential crisis. It's delicious."
 
@@ -453,7 +453,7 @@ It's also a commentary on brewery tourism — paying €25 to watch beer being m
 **Available**: During tour mode, before dungeon triggers
 **Items Available**:
 - Stamp (free with Bottle Opener)
-- Vat Master's Reserve tasting (€5 for sample, unlocks consumable)
+- Vat Master's Reserve tasting (5 Sovs for sample, unlocks consumable)
 - Standard Stoutworks beers (various)
 - Gift shop purchases
 
@@ -467,12 +467,12 @@ It's also a commentary on brewery tourism — paying €25 to watch beer being m
 ### Gift Shop Brewery Tour Items
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Vat Master's Reserve (Bottle) | €12 | Signature beer consumable | Unlocked with stamp |
-| Stoutworks Pint Glass | €15 | +5% HP from beer consumed in it | Cosmetic + minor effect |
-| "I Survived Stoutworks" Shirt | €40 | +5 Defense, story to tell | Post-dungeon only |
-| Copper Still Keychain | €10 | Cosmetic, collection item | Always available |
-| Yeast Culture (Contained) | €25 | Summon temporary ally in battle | Post-dungeon only |
-| Brewmaster's Recipe Book | €20 | +10% effectiveness of all beer items | Rare, limited stock |
+| Vat Master's Reserve (Bottle) | 12 Sovs | Signature beer consumable | Unlocked with stamp |
+| Stoutworks Pint Glass | 15 Sovs | +5% HP from beer consumed in it | Cosmetic + minor effect |
+| "I Survived Stoutworks" Shirt | 40 Sovs | +5 Defense, story to tell | Post-dungeon only |
+| Copper Still Keychain | 10 Sovs | Cosmetic, collection item | Always available |
+| Yeast Culture (Contained) | 25 Sovs | Summon temporary ally in battle | Post-dungeon only |
+| Brewmaster's Recipe Book | 20 Sovs | +10% effectiveness of all beer items | Rare, limited stock |
 
 ### Connection to The Blarney Trap
 - **The Sweet Surrender**: Brewed here, sold there
@@ -623,4 +623,4 @@ It's also a commentary on brewery tourism — paying €25 to watch beer being m
 
 ---
 
-*The Stoutworks Brewery: 150 years of brewing excellence. 150 years of yeast evolution. One moment of consciousness. The tour is €25. The dungeon is free if you survive. The gift shop is always open — even during the apocalypse, commerce finds a way.*
+*The Stoutworks Brewery: 150 years of brewing excellence. 150 years of yeast evolution. One moment of consciousness. The tour is 25 Sovs. The dungeon is free if you survive. The gift shop is always open — even during the apocalypse, commerce finds a way.*

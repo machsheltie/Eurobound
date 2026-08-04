@@ -1090,7 +1090,7 @@ in this pool may be referenced there as senders' payloads.*
 ## 8. Open Items for Author Ruling
 
 1. **$TRASH — "EuroTrash Reserve."** Retained under the premise-cluster exemption (the Europe frame is
-   exempt; the game is *Eurobound* and SOVS displays in €). Flagged for veto if the author reads the
+   exempt; the game is *Eurobound*). Flagged for veto if the author reads the
    ticker as a world-name breach. Fallback name on request.
 2. **QR page hosting** — 28 pages, out of scope this round, ledgered to production. Recommend one
    shared static host and one shared 2003 CSS baseline so the collection reads as a set.

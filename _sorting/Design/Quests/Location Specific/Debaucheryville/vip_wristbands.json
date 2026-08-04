@@ -18,7 +18,7 @@
   "prerequisites": {
     "location_reached": "astronomical_clockup_square",
     "currency_required": 90,
-    "currency_type": "euro"
+    "currency_type": "sovs"
   },
   
   "satirical_targets": [
@@ -126,12 +126,12 @@
       "location": "astronomical_clockup_square",
       "scam_specialty": "children_birthday_wristbands_as_vip",
       "profit_margin": "8,900%",
-      "actual_wristband_cost": "€0.30 per 100",
+      "actual_wristband_cost": "0.30 Sovs per 100",
       "dialogue": {
         "approach": "Psst. Americans, yes? You want... the VIP experience?",
         "pitch": "These wristbands... they open ALL doors. Velvet Curtain Club. Absinthe Arcade VIP section.",
         "translation_lie": "It says 'Level Seven Access.' Highest tier. Only for VIPs.",
-        "close": "Only €30 each. Very exclusive."
+        "close": "Only 30 Sovs each. Very exclusive."
       },
       "recurring": true,
       "later_appearances": ["selling_to_other_tourists", "background_counting_money"]
@@ -332,7 +332,7 @@
       }
     ],
     "narrator_commentary": {
-      "at_purchase": "Armed with €90 worth of children's party supplies, our heroes prepared to conquer Debaucheryville's nightlife scene.",
+      "at_purchase": "Armed with 90 Sovs worth of children's party supplies, our heroes prepared to conquer Debaucheryville's nightlife scene.",
       "at_club": "The bouncer, fluent in six languages, chose to respond in the universal dialect of exhausted service workers dealing with confident idiots."
     }
   },

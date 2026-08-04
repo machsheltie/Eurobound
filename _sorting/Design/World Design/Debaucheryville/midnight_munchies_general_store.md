@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 PM - 8 AM (the hours of need)
 - **Stat Requirements**: None (desperation is the only currency that matters)
-- **Item Requirements**: Gold for purchases (€2-35), acceptance of markup
+- **Item Requirements**: Gold for purchases (2 Sovs-35), acceptance of markup
 - **Previous Location Requirements**: None (Midnight Munchies finds the lost)
 - **Special Conditions**: Prices increase by 20% after 2 AM ("Desperation Tax")
 
@@ -127,8 +127,8 @@ The satire is the universal experience of the late-night convenience store trip:
 **How impaired are they**: Usually very (it's 3 AM, they've been out)
 
 **The transaction reality**:
-- Energy drink that's €1.50 in daytime: €4 at 3 AM
-- Aspirin that's €3 at pharmacy: €8 here
+- Energy drink that's 2 Sovs in daytime: 4 Sovs at 3 AM
+- Aspirin that's 3 Sovs at pharmacy: 8 Sovs here
 - "Worth it" because what's the alternative?
 - Alternative: should have planned ahead (too late now)
 
@@ -153,46 +153,46 @@ The satire is the universal experience of the late-night convenience store trip:
 **Healing — Recovery Section**
 | Item | Base Price | 2AM+ Price | HP Effect | Status Effect | Notes |
 |------|------------|------------|-----------|---------------|-------|
-| Energy Drink (Standard) | €3 | €4 | +15 HP | +10 Speed (1 hour) | "The basics" |
-| Energy Drink (Premium) | €5 | €7 | +25 HP | +15 Speed (2 hours), crash risk | "When standard won't cut it" |
-| Energy Drink (Extreme) | €8 | €11 | +35 HP | +20 Speed (2 hours), guaranteed crash | "Last resort energy" |
-| Greasy Kebab | €6 | €8 | +30 HP | Grease Fingers (-5 Dexterity, 30 min) | "Heat lamp fresh" |
-| "Hair of the Dog" | €7 | €10 | +20 HP | Cures Hangover, -10 Accuracy | "Fight poison with poison" |
-| Hangover Kit | €12 | €16 | +25 HP | Cures Hangover, +Clarity | "Aspirin, electrolytes, hope" |
-| Snack Bar | €2 | €3 | +10 HP | Prevents crash | "Blood sugar management" |
-| Instant Noodles | €3 | €4 | +15 HP | Requires hostel kitchen | "Self-rescue option" |
+| Energy Drink (Standard) | 3 Sovs | 4 Sovs | +15 HP | +10 Speed (1 hour) | "The basics" |
+| Energy Drink (Premium) | 5 Sovs | 7 Sovs | +25 HP | +15 Speed (2 hours), crash risk | "When standard won't cut it" |
+| Energy Drink (Extreme) | 8 Sovs | 11 Sovs | +35 HP | +20 Speed (2 hours), guaranteed crash | "Last resort energy" |
+| Greasy Kebab | 6 Sovs | 8 Sovs | +30 HP | Grease Fingers (-5 Dexterity, 30 min) | "Heat lamp fresh" |
+| "Hair of the Dog" | 7 Sovs | 10 Sovs | +20 HP | Cures Hangover, -10 Accuracy | "Fight poison with poison" |
+| Hangover Kit | 12 Sovs | 16 Sovs | +25 HP | Cures Hangover, +Clarity | "Aspirin, electrolytes, hope" |
+| Snack Bar | 2 Sovs | 3 Sovs | +10 HP | Prevents crash | "Blood sugar management" |
+| Instant Noodles | 3 Sovs | 4 Sovs | +15 HP | Requires hostel kitchen | "Self-rescue option" |
 
 **Support — Enhancement Section**
 | Item | Base Price | 2AM+ Price | Effect | Notes |
 |------|------------|------------|--------|-------|
-| Caffeine Pills (6) | €6 | €8 | +10 SP per pill, controlled | "Precision energy" |
-| Lucky Club Stamp (Fake) | €8 | €10 | +5 Confidence, no actual effect | "Placebo power" |
-| Emergency Phone Charger | €20 | €25 | Full phone resurrection | "Your lifeline restored" |
-| Cigarettes | €8 | €10 | -5 HP, +10 Social in certain contexts | "If you must" |
-| Lighter | €3 | €4 | Fire creation ability | "Always useful" |
-| Breath Mints (Tin) | €4 | €5 | +Charm in close conversation | "Essential social equipment" |
-| Gum (Pack) | €2 | €3 | Minor breath improvement | "Budget option" |
+| Caffeine Pills (6) | 6 Sovs | 8 Sovs | +10 SP per pill, controlled | "Precision energy" |
+| Lucky Club Stamp (Fake) | 8 Sovs | 10 Sovs | +5 Confidence, no actual effect | "Placebo power" |
+| Emergency Phone Charger | 20 Sovs | 25 Sovs | Full phone resurrection | "Your lifeline restored" |
+| Cigarettes | 8 Sovs | 10 Sovs | -5 HP, +10 Social in certain contexts | "If you must" |
+| Lighter | 3 Sovs | 4 Sovs | Fire creation ability | "Always useful" |
+| Breath Mints (Tin) | 4 Sovs | 5 Sovs | +Charm in close conversation | "Essential social equipment" |
+| Gum (Pack) | 2 Sovs | 3 Sovs | Minor breath improvement | "Budget option" |
 
 **Offensive — "Just In Case" Section**
 | Item | Base Price | 2AM+ Price | Effect | Notes |
 |------|------------|------------|--------|-------|
-| Pepper Spray | €15 | €20 | Defensive weapon, high accuracy | "Legal protection" |
-| Personal Alarm | €10 | €13 | Summons attention, stuns enemies 1 turn | "Sound-based defense" |
-| "Brass Knuckles" Keychain | €12 | €15 | +5 Attack, legally ambiguous | "For your keys" |
-| Flash Grenades (Party Poppers) | €5 | €7 | Confusion effect, one use | "Surprise defense" |
-| Heavy Flashlight | €15 | €20 | Light source + improvised weapon | "Multi-purpose" |
+| Pepper Spray | 15 Sovs | 20 Sovs | Defensive weapon, high accuracy | "Legal protection" |
+| Personal Alarm | 10 Sovs | 13 Sovs | Summons attention, stuns enemies 1 turn | "Sound-based defense" |
+| "Brass Knuckles" Keychain | 12 Sovs | 15 Sovs | +5 Attack, legally ambiguous | "For your keys" |
+| Flash Grenades (Party Poppers) | 5 Sovs | 7 Sovs | Confusion effect, one use | "Surprise defense" |
+| Heavy Flashlight | 15 Sovs | 20 Sovs | Light source + improvised weapon | "Multi-purpose" |
 
 **Utility — Practical Section**
 | Item | Base Price | 2AM+ Price | Effect | Notes |
 |------|------------|------------|--------|-------|
-| Club Earplugs | €10 | €12 | -40% Music Confusion | "Marked up from specialist" |
-| Fake VIP Wristband | €15 | €18 | +10 Confidence, 20% detection risk | "Might work" |
-| Emergency Cab Voucher | €25 | €30 | Guaranteed transport, any distance | "When you NEED to get home" |
-| Wet Wipes (Pack) | €4 | €5 | Various emergency cleanups | "Don't ask, just have them" |
-| First Aid Kit (Basic) | €15 | €18 | +30 HP, cures minor status effects | "Responsible preparation" |
-| Condoms (Pack) | €8 | €10 | Social responsibility | "No judgment" |
-| Tissues | €2 | €3 | Many uses | "Underrated utility" |
-| Safety Pins | €2 | €3 | Emergency repairs | "Fashion first aid" |
+| Club Earplugs | 10 Sovs | 12 Sovs | -40% Music Confusion | "Marked up from specialist" |
+| Fake VIP Wristband | 15 Sovs | 18 Sovs | +10 Confidence, 20% detection risk | "Might work" |
+| Emergency Cab Voucher | 25 Sovs | 30 Sovs | Guaranteed transport, any distance | "When you NEED to get home" |
+| Wet Wipes (Pack) | 4 Sovs | 5 Sovs | Various emergency cleanups | "Don't ask, just have them" |
+| First Aid Kit (Basic) | 15 Sovs | 18 Sovs | +30 HP, cures minor status effects | "Responsible preparation" |
+| Condoms (Pack) | 8 Sovs | 10 Sovs | Social responsibility | "No judgment" |
+| Tissues | 2 Sovs | 3 Sovs | Many uses | "Underrated utility" |
+| Safety Pins | 2 Sovs | 3 Sovs | Emergency repairs | "Fashion first aid" |
 
 ### The Desperation Tax
 - **Trigger**: 2 AM - 6 AM
@@ -238,15 +238,16 @@ The satire is the universal experience of the late-night convenience store trip:
 - **Background**: Former factory worker, opened shop in '09, found her calling serving the desperate
 - **Demeanor**: Professional detachment, occasional maternal moments, no judgment, maximum observation
 - **The Věra Presence**: You feel watched, assessed, and accepted simultaneously
+- **Family**: One of the Debaucheryville Novotnýs. Her brother Jiří has been waiting for Tram #17 since 2003; her nephew Milan watches the astronomical clock all day. "We are a family of people who stay where we are put."
 - **Philosophy**: "I sell necessities at necessary hours. The prices are fair for the service. You're paying for availability, not just product."
 
 **Věra's Dialogue Categories**:
 
 *The Transaction:*
-- "That's €12. ...€16 after 2 AM. You knew this."
-- "Energy drink, aspirin, kebab. The classic combination. €15."
+- "That's 12 Sovs. ...16 Sovs after 2 AM. You knew this."
+- "Energy drink, aspirin, kebab. The classic combination. 15 Sovs."
 - "Cash or card. Either works. I've seen worse purchases."
-- "Need a bag? ...€0.50. Everything costs something."
+- "Need a bag? ...1 Sov. Everything costs something."
 
 *The Observations (Not Judgment):*
 - "Third night this week. You're becoming a regular. This is neither good nor bad. It just is."
@@ -270,20 +271,20 @@ The satire is the universal experience of the late-night convenience store trip:
 **The 3 AM Desperate**
 - **Composition**: Someone who NEEDS something NOW, no time to process
 - **Behavior**: Grabs items, pays immediately, barely acknowledges surroundings
-- **Dialogue**: "Energydrinkaspirinwateranything— that. €20? Fine. FINE. Keep the change."
+- **Dialogue**: "Energydrinkaspirinwateranything— that. 20 Sovs? Fine. FINE. Keep the change."
 - **Function**: Shows peak desperation customer
 
 **The Pre-Dawn Philosopher**
 - **Composition**: Someone at 5 AM, past desperate, now contemplative
 - **Behavior**: Buying coffee supplies, thinking about life choices
 - **Dialogue**: "How did I get here? Not to Debaucheryville. To THIS. To the 5 AM convenience store. Věra, what does it mean?"
-- **Věra**: "It means you need coffee. €4."
+- **Věra**: "It means you need coffee. 4 Sovs."
 - **Function**: Shows the contemplative late-hour customer
 
 **The Hostel Kitchen Forager**
 - **Composition**: Budget traveler buying cooking supplies to avoid restaurant prices
 - **Behavior**: Calculating, reading labels, doing math
-- **Dialogue**: "If I buy the noodles here and cook at the hostel... I save €3 total. ...is that worth it at 1 AM?"
+- **Dialogue**: "If I buy the noodles here and cook at the hostel... I save 3 Sovs total. ...is that worth it at 1 AM?"
 - **Function**: Shows the budget-conscious struggle
 
 **The Hangover Preparation Expert**
@@ -296,7 +297,7 @@ The satire is the universal experience of the late-night convenience store trip:
 - **Composition**: Someone who wandered in seeking any human contact
 - **Behavior**: Buying something, anything, to justify being there
 - **Dialogue**: "I'm not really... I just needed to talk to someone. I'll buy... gum? Do you sell gum?"
-- **Věra**: "Gum is €3. You can talk. I'm here until 8."
+- **Věra**: "Gum is 3 Sovs. You can talk. I'm here until 8."
 - **Function**: Shows the convenience store as social refuge
 
 ### Original NPC Dialogue
@@ -309,11 +310,11 @@ The satire is the universal experience of the late-night convenience store trip:
 
 **The Bros' Midnight Munchies Reactions:**
 - **Lord Pilsner** (entering at 3 AM): "OPEN. Thank GOD something is OPEN."
-- **Lord Pilsner** (seeing prices): "€4 for an energy drink? That's— okay fine. FINE. Two of them."
+- **Lord Pilsner** (seeing prices): "4 Sovs for an energy drink? That's— okay fine. FINE. Two of them."
 - **Věra**: "The price changed at 2. This is not new."
 - **Lord Pilsner**: "I KNOW. I just... give me the hangover kit too. And the kebab."
-- **Chadwick**: "Content opportunity: '3 AM Shopping Challenge.' What can I buy with €20?"
-- **Věra**: "At this hour? Energy drink, aspirin, kebab, and €2 change."
+- **Chadwick**: "Content opportunity: '3 AM Shopping Challenge.' What can I buy with 20 Sovs?"
+- **Věra**: "At this hour? Energy drink, aspirin, kebab, and 2 Sovs change."
 - **Chadwick**: "Perfect. PERFECT. This is REAL. This is AUTHENTIC DESPERATION."
 - **Bradley**: "I'll take the aspirin as well."
 

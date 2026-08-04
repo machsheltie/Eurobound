@@ -452,10 +452,10 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 ### Rumor Trading:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Rumor Card Common | (0, 96) | 64x48 | €50 tier, plain seal |
-| Rumor Card Uncommon | (64, 96) | 64x48 | €150 tier, silver seal |
-| Rumor Card Rare | (128, 96) | 64x48 | €400 tier, gold seal |
-| Rumor Card Exclusive | (192, 96) | 64x48 | €1000+ tier, Baroness sigil |
+| Rumor Card Common | (0, 96) | 64x48 | 50 Sovs tier, plain seal |
+| Rumor Card Uncommon | (64, 96) | 64x48 | 150 Sovs tier, silver seal |
+| Rumor Card Rare | (128, 96) | 64x48 | 400 Sovs tier, gold seal |
+| Rumor Card Exclusive | (192, 96) | 64x48 | 1000 Sovs+ tier, Baroness sigil |
 | Freshness Indicator | (256, 96) | 24x24 | Rumor decay timer glyph |
 | False Rumor Mark | (280, 96) | 24x24 | Detection warning (shape-coded X) |
 
@@ -473,7 +473,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 |---------|----------|------|-------------|
 | Masquerade Mask Basic | (0, 192) | 48x32 | Entry item |
 | Masquerade Mask Ornate | (48, 192) | 48x32 | Upgraded item |
-| Invitation Card | (96, 192) | 48x32 | Entry requirement (€200 at Black-Tie Backroom) |
+| Invitation Card | (96, 192) | 48x32 | Entry requirement (200 Sovs at Black-Tie Backroom) |
 | Forged Invitation | (144, 192) | 48x32 | Crafted fake — subtly wrong seal |
 | Baroness Favor Icon | (192, 192) | 48x48 | Four-stage favor indicator |
 | Inner Circle Badge | (240, 192) | 32x32 | Three-visit unlock |
@@ -613,7 +613,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 | Low | Static chandelier, frozen background couples, single mask frame, no ambient particles |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile budget)
+- **Target FPS:** 60 (per location profile budget)
 - **Max Draw Calls:** 24 per frame
 - **Memory Footprint:** 55 MB maximum
 - **Particle Limit:** 24 (candles 8, whisper 4, sparkle 8 → confetti burst swaps in at 20, never concurrent with sparkle)
@@ -783,7 +783,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 | Seedy Underbelly Present | ✅ | Rumor economy, blackmail disguised as gossip, reputation as weapon |
 | Gameplay Value Established | ✅ | Social combat, dance duels, rumor trading, identity system, couchsurf |
 | Technical Feasibility | ✅ | Eight sheets, atlas plan, pre-rendered crowd, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 24 draw calls, 55 MB, 24 particles (per profile budget) |
+| Mobile Performance Budget | ✅ | 60 FPS, 24 draw calls, 55 MB, 24 particles (per profile budget) |
 | Accessibility Features | ✅ | Visual cues for all audio events; static motion variants |
 | No Crypto Elements | ✅ | None present — pure social/masquerade satire |
 | Social Media Integration | ✅ | Count of Cool, foot-stomp waltz, shifting mask moments identified |

@@ -7,7 +7,7 @@
       "shop_name": "The Cloverleaf Kitchen",
       "shop_type": "food_vendor",
       "operator_npc": "chef_maeve_01",
-      "currency_accepted": ["euro", "barter"],
+      "currency_accepted": ["sovs", "barter"],
       "availability": {
         "schedule": "08:00-09:00",
         "location_requirement": "outer_lane_south_bend",
@@ -18,7 +18,7 @@
           "item_id": "roundabout_roll",
           "display_name": "Roundabout Roll",
           "description": "A hearty sandwich that keeps you going in circles. Just like everything else here.",
-          "price_euro": 8,
+          "price_sov": 8,
           "effects": {
             "hp_restore": 20
           },
@@ -28,7 +28,7 @@
           "item_id": "exit_anxiety_easer",
           "display_name": "Exit Anxiety Easer",
           "description": "Whiskey. Just whiskey. The Irish solution to everything.",
-          "price_euro": 12,
+          "price_sov": 12,
           "effects": {
             "stress_reduce": 15,
             "confusion_add": 10,
@@ -40,7 +40,7 @@
           "item_id": "cloverleaf_curry",
           "display_name": "Cloverleaf Curry",
           "description": "Spicy enough to wake you from roundabout-induced existential torpor.",
-          "price_euro": 15,
+          "price_sov": 15,
           "effects": {
             "hp_restore": 40,
             "speed_boost": 10,
@@ -52,7 +52,7 @@
           "item_id": "margarets_memorial_sandwich",
           "display_name": "Margaret's Memorial Sandwich",
           "description": "Named for the longest-serving passenger. Patrick gets misty-eyed when you order it.",
-          "price_euro": 10,
+          "price_sov": 10,
           "effects": {
             "hp_restore": 25,
             "special": "patrick_reaction_trigger"
@@ -64,7 +64,7 @@
           "item_id": "tourist_trap_platter",
           "display_name": "Tourist Trap Platter",
           "description": "Everything on the menu, marked up 300% because you're clearly desperate.",
-          "price_euro": 25,
+          "price_sov": 25,
           "effects": {
             "hp_restore": "full",
             "gold_penalty": -10
@@ -75,7 +75,7 @@
           "item_id": "seans_usual",
           "display_name": "Seán's Usual",
           "description": "Black coffee. Nothing else. He's been ordering this for 25 years.",
-          "price_euro": 3,
+          "price_sov": 3,
           "effects": {
             "focus_boost": 5,
             "existential_dread": 5
@@ -89,7 +89,7 @@
           "item_id": "anniversary_cake_slice",
           "display_name": "Anniversary Cake Slice",
           "description": "From Patrick and Margaret's 37th. There's always some left.",
-          "price_euro": 5,
+          "price_sov": 5,
           "effects": {
             "charm_boost": 3,
             "hp_restore": 10
@@ -116,7 +116,7 @@
       "discovery_method": "follow_wedding_van_close",
       "rarity": "unique",
       "effects": null,
-      "value_euro": 0,
+      "value_sov": 0,
       "sentimental_value": "priceless",
       "flavor_text": "Still attached to a piece of string. Still making noise. Still part of the honeymoon.",
       "gallery_entry": true
@@ -131,7 +131,7 @@
         "knowledge": "lane_etiquette",
         "knowledge": "food_truck_schedule"
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "'Welcome to Your New Home!' it says on the cover. Disturbingly optimistic."
     },
     {
@@ -141,7 +141,7 @@
       "discovery_method": "examine_gift_shop_door",
       "rarity": "rare",
       "effects": null,
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "'Coming This Spring!' ...of 1994. Still spring somewhere, technically.",
       "easter_egg": true
     },
@@ -154,7 +154,7 @@
       "effects": {
         "navigation_hint": "exit_6_timing"
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "'For when you're ready to leave. I never was.' - Seán",
       "emotional_weight": "heavy"
     },
@@ -168,7 +168,7 @@
         "charm_boost": 2,
         "permanent": true
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "'She'd want you to have something from her. She always liked visitors.' - Patrick",
       "gallery_entry": true,
       "most_emotionally_significant_item_in_game": true
@@ -180,7 +180,7 @@
       "discovery_method": "observe_learner_car_5_times",
       "rarity": "common",
       "effects": null,
-      "value_euro": 2,
+      "value_sov": 2,
       "flavor_text": "Brenda's handwriting on the back: 'PLEASE FOR THE LOVE OF GOD PASS'"
     },
     {
@@ -193,7 +193,7 @@
         "calm_status": true,
         "duration_minutes": 5
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "Soft. Calm. Unlike the rest of this place."
     },
     {
@@ -205,7 +205,7 @@
       "effects": {
         "gps_bonded_status": true
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "The GPS seems to trust you now. It still doesn't know the way out, but it's trying harder.",
       "easter_egg": true
     }
@@ -215,7 +215,7 @@
     {
       "item_id": "rental_car_keys_paddys",
       "display_name": "Paddy's Premium Motors Rental Keys",
-      "description": "Keys to your questionable rental car. Seamus warned you about The Cloverleaf. You didn't listen.",
+      "description": "Keys to your questionable rental car. Fergus warned you about The Cloverleaf. You didn't listen.",
       "quest": "publandia_sidequest_eternal_roundabout_01",
       "required_for": "entry",
       "source": "publandia_outskirts_paddys_premium_motors_01"

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 AM - 2 AM (extended hours for "digital nomads")
 - **Stat Requirements**: None
-- **Item Requirements**: Gold for computer time (€3/30 min) or just coffee
+- **Item Requirements**: Gold for computer time (3 Sovs/30 min) or just coffee
 - **Previous Location Requirements**: None
 - **Special Conditions**: Free Wi-Fi with coffee purchase (password changes hourly)
 
@@ -49,7 +49,7 @@
 **The Terminal Section (The Connection)**
 - 8 desktop computers (vintage aesthetic, functional hardware)
 - Privacy screens (theoretical privacy)
-- Headphones available (€2 deposit)
+- Headphones available (2 Sovs deposit)
 - The iconic dial-up sound plays periodically (nostalgia feature)
 
 **The Laptop Lounge (The Pretension)**
@@ -144,10 +144,10 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 **Computer Terminal Rental**
 | Duration | Price | Includes |
 |----------|-------|----------|
-| 30 minutes | €3 | Basic access |
-| 1 hour | €5 | Basic access |
-| 2 hours | €8 | Basic + printing |
-| Day pass | €15 | Unlimited + priority seating |
+| 30 minutes | 3 Sovs | Basic access |
+| 1 hour | 5 Sovs | Basic access |
+| 2 hours | 8 Sovs | Basic + printing |
+| Day pass | 15 Sovs | Unlimited + priority seating |
 
 **Wi-Fi Access**
 - Free with any purchase
@@ -158,20 +158,20 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 **Coffee Menu**
 | Item | Price | Effect |
 |------|-------|--------|
-| Ulysses Blend (Espresso) | €4 | +10 SP, +Focus |
-| Dubliners Drip (Filter) | €3 | +5 SP, +Stamina |
-| Portrait of the Artist (Latte) | €5 | +10 SP, +Creativity |
-| Finnegans Wake (Triple Shot) | €6 | +20 SP, ++Speed, -Sleep later |
-| Nora's House Blend | €3.50 | +8 SP, staff approval |
-| Literary Tea Selection | €3 | +5 SP, +Calm |
+| Ulysses Blend (Espresso) | 4 Sovs | +10 SP, +Focus |
+| Dubliners Drip (Filter) | 3 Sovs | +5 SP, +Stamina |
+| Portrait of the Artist (Latte) | 5 Sovs | +10 SP, +Creativity |
+| Finnegans Wake (Triple Shot) | 6 Sovs | +20 SP, ++Speed, -Sleep later |
+| Nora's House Blend | 4 Sovs | +8 SP, staff approval |
+| Literary Tea Selection | 3 Sovs | +5 SP, +Calm |
 
 **Pastries**
 | Item | Price | Effect |
 |------|-------|--------|
-| Scone (Plain) | €3 | +10 HP |
-| Scone (With Jam) | €4 | +15 HP |
-| Brown Bread Toast | €3 | +12 HP |
-| "Joyce's Favorite" Cake | €5 | +20 HP (Joyce never ate this) |
+| Scone (Plain) | 3 Sovs | +10 HP |
+| Scone (With Jam) | 4 Sovs | +15 HP |
+| Brown Bread Toast | 3 Sovs | +12 HP |
+| "Joyce's Favorite" Cake | 5 Sovs | +20 HP (Joyce never ate this) |
 
 ### ICQ Integration
 **Access Point**: Primary ICQ hub in Publandia
@@ -220,7 +220,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 | Rival Watch | Sauce Apostates | Rival trio movements |
 | Hot Tips | Craic Broker network | Time-sensitive opportunities |
 | Scam Alerts | Experienced travelers | Warnings about locations |
-| Literary Secrets | Nora (rare) | Hidden Dublin content |
+| Literary Secrets | Nora (rare) | Hidden Publandia content |
 
 ### "Regular" Status
 **Unlock**: Visit 5 times with purchases
@@ -253,7 +253,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 *The Welcome:*
 - "Welcome to Café NORA. Named for Nora Barnacle, Joyce's wife and muse. Coffee?"
 - "Wi-Fi password changes hourly. Current one's on the board. It's a Joyce reference. Always is."
-- "Computer time? €3 for thirty minutes. The terminals in the back have the best light for... whatever you're doing."
+- "Computer time? 3 Sovs for thirty minutes. The terminals in the back have the best light for... whatever you're doing."
 
 *Coffee Orders:*
 - "Ulysses Blend? Bold choice. Like the book. Have you read it? ...no one has."

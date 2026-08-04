@@ -53,7 +53,7 @@ Perfect Satirical Targets:
 
 Amsterdam: "We're here for the art" (while exclusively visiting coffee shops)
 Ibiza: "We're DJs now" (after one foam party experience)
-Budapest: "We're cultural explorers" (while drinking €1 beers in ruin bars)
+Budapest: "We're cultural explorers" (while drinking 1 Sov beers in ruin bars)
 Berlin: "We understand techno" (while completely missing the point)
 Krakow: "We're history buffs" (on a stag party weekend)
 

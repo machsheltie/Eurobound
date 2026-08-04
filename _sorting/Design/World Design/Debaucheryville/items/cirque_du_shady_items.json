@@ -149,7 +149,7 @@
     "actual_value_total_purchasable": 3.60,
     "markup_percentage": 594,
     "markup_calculation_note": "(total_price_purchasable - actual_value_total_purchasable) / actual_value_total_purchasable * 100 = (25-3.60)/3.60*100 = ~594%",
-    "currency_accepted": "gold (euros) or circus_tickets, per the_participation_trophy.md's dual ticket/gold redemption system"
+    "currency_accepted": "gold (Sovs) or circus_tickets, per the_participation_trophy.md's dual ticket/gold redemption system"
   },
 
   "hidden_items": []

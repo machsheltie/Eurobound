@@ -44,7 +44,7 @@
       "scam_details": {
         "service_offered": "Prime viewing spots for the clock show",
         "price": 30,
-        "currency": "euro",
+        "currency": "sovs",
         "actual_value": 0,
         "what_he_delivers": "A spot behind a pillar with completely blocked view",
         "success_rate": "100% with American tourists"
@@ -52,7 +52,7 @@
       
       "dialogue": {
         "approach": {
-          "line": "Americans! You want best view? I have prime spots. Only €10 each. See everything.",
+          "line": "Americans! You want best view? I have prime spots. Only 10 Sovs each. See everything.",
           "delivery": "Conspiratorial whisper, like sharing a secret"
         },
         "during_scam": {
@@ -129,7 +129,7 @@
       "scam_details": {
         "service_offered": "Ancient blessing for clock viewing",
         "price": 20,
-        "currency": "euro",
+        "currency": "sovs",
         "actual_value": 0,
         "what_he_delivers": "Vague hand gestures and fake Latin",
         "blessing_text": "Lorem ipsum spiritu sanctu... party hardy... amen.",
@@ -235,15 +235,15 @@
         "archetype": "Enthusiastic Upseller",
         "traits": ["relentless_salesman", "genuinely_believes_his_own_hype", "family_man"],
         "motivation": "Supports extended family through wine scam, takes pride in volume",
-        "internal_monologue": "Sixty euros a bottle! They don't even taste it first!"
+        "internal_monologue": "Sixty Sovs a bottle! They don't even taste it first!"
       },
       
       "scam_details": {
         "product": "Clock Energy Wine",
         "claimed_properties": "Infused with temporal energy, makes you magnetic to ladies",
         "price": 60,
-        "currency": "euro",
-        "actual_product": "€3 boxed wine poured into fancy bottles",
+        "currency": "sovs",
+        "actual_product": "3 Sovs boxed wine poured into fancy bottles",
         "profit_margin": "1,900%",
         "bottles_sold_daily": "Usually 15-20"
       },
@@ -260,7 +260,7 @@
         },
         "upsell": {
           "line": "One bottle? No no no. One bottle is for tasting. Three bottles is for EXPERIENCE.",
-          "bulk_discount": "Three bottles, only €150. Save €30. Smart investment."
+          "bulk_discount": "Three bottles, only 150 Sovs. Save 30 Sovs. Smart investment."
         },
         "post_sale": {
           "line": "Remember: drink at midnight for maximum temporal alignment.",
@@ -347,7 +347,7 @@
         "location": "Side alley off Astronomical Cock-Up Square",
         "ambiance": "Fluorescent lights, faded flash art, suspicious stains",
         "certifications": "Certificate on wall is from 'Online Tattoo Academy' (not a real institution)",
-        "price_range": "€50-150 (suspiciously cheap)"
+        "price_range": "50 Sovs-150 (suspiciously cheap)"
       },
       
       "the_duck_tattoo": {
@@ -481,7 +481,7 @@
       "personality": {
         "archetype": "Hustle Culture Personified",
         "traits": ["entrepreneurial", "quick_talker", "no_shame"],
-        "motivation": "Bulk-bought children's party supplies for €0.003 each, sells for €30. Living the dream.",
+        "motivation": "Bulk-bought children's party supplies for 0.003 Sovs each, sells for 30 Sovs. Living the dream.",
         "internal_monologue": "Level Seven! I can't believe I said that and they BOUGHT it!"
       },
       
@@ -493,7 +493,7 @@
         "wristband_text_english": "I'm 7!",
         "what_he_tells_them": "It says 'Level Seven Access.' Highest tier.",
         "price": 30,
-        "currency": "euro",
+        "currency": "sovs",
         "actual_cost": 0.003,
         "profit_margin": "999,900%"
       },
@@ -505,7 +505,7 @@
         },
         "pitch": {
           "hook": "These wristbands... they open ALL doors. Velvet Curtain Club. Absinthe Arcade VIP section. Even places tourists don't know exist.",
-          "exclusivity": "Very exclusive. Only €30 each."
+          "exclusivity": "Very exclusive. Only 30 Sovs each."
         },
         "the_lie": {
           "bradley_asks": "What does the writing say?",

@@ -24,7 +24,7 @@
       },
       "functions": [
         "Multi-zone story hub",
-        "Fiaker Fiasco Phase 3 (€2,000 damage)",
+        "Fiaker Fiasco Phase 3 (2,000 Sovs damage)",
         "City boss arena (Maestro Vice von Strauss)",
         "Rival trio encounter location",
         "Gift shop vendor",
@@ -52,7 +52,7 @@
           "npc_vendor: box_office_attendant_01",
           "npc_vendor: gift_shop_clerk_01",
           "npc_service: coat_check_helga_01",
-          "npc_roaming: opera_usher_01",
+          "npc_roaming: sinfonia_npc_opera_usher_01",
           "npc_enemy: maestros_assistant_01 (random_spawn)",
           "interactive: performance_board",
           "interactive: mozart_portrait (secret_switch)",
@@ -83,7 +83,7 @@
       "region": "Sinfonia",
       "exterior": {
         "description": "A magnificent horseshoe-shaped theater seating 1,200 (satirically never full except for free events). Red velvet seating on orchestra level, balcony, and upper gallery. The unused Royal Box from 1918 sits center. A massive baroque proscenium arch frames the deep stage.",
-        "entry_condition": "Performance ticket (€40-80) for evening; Charm 2+ to sneak into rehearsals; Bassline ticket (€25) for nighttime"
+        "entry_condition": "Performance ticket (40 Sovs-80) for evening; Charm 2+ to sneak into rehearsals; Bassline ticket (25 Sovs) for nighttime"
       },
       "interior": {
         "theme": "High culture performance space that transforms into EDM arena, dual identity embodied",
@@ -96,7 +96,7 @@
           "landmark: chandelier_main (boss_mechanic)",
           "stage: proscenium_arch",
           "stage: velvet_curtain",
-          "npc_roaming: opera_usher_01",
+          "npc_roaming: sinfonia_npc_opera_usher_01",
           "npc_ambient: wandering_patrons",
           "event_hook: waltz_of_the_bros (rival_encounter)",
           "event_hook: performance_viewing",
@@ -139,12 +139,12 @@
           "quest_npc: papageno_franz_01",
           "quest_npc: seamstress_01",
           "quest_npc: backstage_crew",
-          "destructible: prop_rack_papageno (€150)",
-          "destructible: magic_flute_prop (€200)",
-          "destructible: costume_rack_queen (€200)",
-          "destructible: mechanical_snake (€800)",
-          "destructible: paper_trees_x2 (€250)",
-          "destructible: starry_night_backdrop (€400, avoidable)",
+          "destructible: prop_rack_papageno (150 Sovs)",
+          "destructible: magic_flute_prop (200 Sovs)",
+          "destructible: costume_rack_queen (200 Sovs)",
+          "destructible: mechanical_snake (800 Sovs)",
+          "destructible: paper_trees_x2 (250 Sovs)",
+          "destructible: starry_night_backdrop (400 Sovs, avoidable)",
           "interactive: rigging_controls",
           "interactive: coffee_station",
           "interactive: call_sheet_board",
@@ -163,9 +163,9 @@
       },
       "functions": [
         "Fiaker Fiasco Phase 3 primary zone",
-        "€2,000 damage set piece",
+        "2,000 Sovs damage set piece",
         "Papageno ally recruitment",
-        "Choice path (reduces damage by €400)",
+        "Choice path (reduces damage by 400 Sovs)",
         "Findable items (props, costumes)",
         "Director's breakdown comedy"
       ]
@@ -191,7 +191,7 @@
         ]
       },
       "functions": [
-        "Destruction zone (€350 damage)",
+        "Destruction zone (350 Sovs damage)",
         "Findable prop items",
         "Gustav's first backstage collision"
       ]
@@ -207,7 +207,7 @@
       "interior": {
         "theme": "Artisan space about to be violated by horse",
         "features": [
-          "destructible: costume_rack_queen (€200)",
+          "destructible: costume_rack_queen (200 Sovs)",
           "searchable: fabric_scraps",
           "findable: masquerade_mask",
           "findable: formal_gloves",
@@ -218,7 +218,7 @@
         ]
       },
       "functions": [
-        "Destruction zone (€200 damage)",
+        "Destruction zone (200 Sovs damage)",
         "Costume item collection",
         "Gustav tangles and tears"
       ]
@@ -236,9 +236,9 @@
         "features": [
           "entry_point: stage_left_wing",
           "entry_point: stage_right_wing",
-          "destructible: mechanical_snake (€800)",
-          "destructible: paper_trees_x2 (€250)",
-          "destructible: starry_night_backdrop (€400, avoidable)",
+          "destructible: mechanical_snake (800 Sovs)",
+          "destructible: paper_trees_x2 (250 Sovs)",
+          "destructible: starry_night_backdrop (400 Sovs, avoidable)",
           "npc_quest: prima_donna_adelheid_01 (singing)",
           "npc_quest: papageno_franz_01 (performing)",
           "npc_quest: regisseur_hoffmann_01 (directing)",
@@ -250,7 +250,7 @@
         ]
       },
       "functions": [
-        "Major destruction zone (€800-1,450)",
+        "Major destruction zone (800 Sovs-1,450)",
         "Prima Donna's aria interruption",
         "Director's breakdown scene",
         "Papageno alternate route trigger"
@@ -408,10 +408,10 @@
     "phase": "fiaker_fiasco_phase_03",
     "incoming_total_from_previous": 340,
     "destruction_sequence": [
-      {"location": "prop_storage", "items": ["papageno_bird_head", "magic_flute_prop"], "total_euro": 350},
-      {"location": "costume_workshop", "items": ["queen_gown"], "total_euro": 200},
-      {"location": "stage", "items": ["mechanical_snake", "paper_trees_x2"], "total_euro": 1050},
-      {"location": "stage", "items": ["starry_backdrop"], "total_euro": 400, "avoidable": true}
+      {"location": "prop_storage", "items": ["papageno_bird_head", "magic_flute_prop"], "total_sov": 350},
+      {"location": "costume_workshop", "items": ["queen_gown"], "total_sov": 200},
+      {"location": "stage", "items": ["mechanical_snake", "paper_trees_x2"], "total_sov": 1050},
+      {"location": "stage", "items": ["starry_backdrop"], "total_sov": 400, "avoidable": true}
     ],
     "phase_maximum": 2000,
     "phase_minimum": 1600,

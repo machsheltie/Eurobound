@@ -177,11 +177,11 @@
       },
       
       "menu": [
-        {"item": "Roundabout Roll", "price_euro": 8, "effect": "restores_20_hp"},
-        {"item": "Exit Anxiety Easer", "price_euro": 12, "effect": "-stress_+confused", "type": "whiskey"},
-        {"item": "Cloverleaf Curry", "price_euro": 15, "effect": "restores_40_hp_+speed"},
-        {"item": "Margaret's Memorial Sandwich", "price_euro": 10, "effect": "+hp_patrick_misty_eyed"},
-        {"item": "Tourist Trap Platter", "price_euro": 25, "effect": "full_heal_-gold"}
+        {"item": "Roundabout Roll", "price_sov": 8, "effect": "restores_20_hp"},
+        {"item": "Exit Anxiety Easer", "price_sov": 12, "effect": "-stress_+confused", "type": "whiskey"},
+        {"item": "Cloverleaf Curry", "price_sov": 15, "effect": "restores_40_hp_+speed"},
+        {"item": "Margaret's Memorial Sandwich", "price_sov": 10, "effect": "+hp_patrick_misty_eyed"},
+        {"item": "Tourist Trap Platter", "price_sov": 25, "effect": "full_heal_-Sovs"}
       ],
       
       "key_quotes": [

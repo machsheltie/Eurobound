@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 **Location ID:** `debaucheryville_oldtown_astronomical_cockup_square_01`  
-**Theme:** Tourist trap ecosystem surrounding 600-year-old clock - 38 seconds of show, €300 of scams  
+**Theme:** Tourist trap ecosystem surrounding 600-year-old clock - 38 seconds of show, 300 Sovs of scams  
 **Zone:** Old Town District, Central Tourist Hub  
 **Hours:** 24/7 (clock show hourly during day cycle)
 
@@ -208,7 +208,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Vendor Shirt | (128, 0) | 64x96 | Showing shirt |
 | Vendor Money | (192, 0) | 64x96 | Taking cash |
 | Table Full | (0, 96) | 256x96 | Merchandise |
-| Plate | (256, 96) | 48x48 | €45 clock |
+| Plate | (256, 96) | 48x48 | 45 Sovs clock |
 | T-Shirt | (304, 96) | 48x64 | "I Survived" |
 | Temp Tattoo | (256, 144) | 48x32 | Skeleton |
 | Snow Globe | (304, 144) | 32x48 | Clock inside |
@@ -266,7 +266,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Euro Ink 4 Less | (0, 256) | 192x128 | Tattoo shop |
 | Neon Sign | (0, 384) | 128x64 | Pink flicker |
 | Café Entrance | (192, 256) | 192x128 | Overpriced |
-| Restroom | (384, 256) | 128x128 | €2 entry |
+| Restroom | (384, 256) | 128x128 | 2 Sovs entry |
 | Alley Exit | (512, 256) | 192x128 | To Old Town |
 | Shop Windows | (704, 256) | 128x128 | Generic |
 | Graffiti Tag | (832, 256) | 128x64 | "COCK-UP" |
@@ -305,7 +305,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Purchase Prompt | (0, 96) | 192x64 | "Buy?" |
 | Scam Warning | (192, 96) | 128x64 | Player only |
 | Item Banner | (0, 160) | 256x48 | Acquired |
-| Gold Counter | (256, 160) | 128x48 | Total |
+| Sovs Counter | (256, 160) | 128x48 | Total |
 | Vulnerability Icon | (256, 0) | 64x64 | Crying face |
 | Clock Timer | (320, 64) | 64x32 | 38 seconds |
 
@@ -400,7 +400,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 - Scam Warning uses icon + text, never Scam Green (#7FFF00) alone
 - Wine bottle "vintage" glow paired with a distinct bottle silhouette, not color-only backlighting
 - Vulnerability Icon is a crying-face shape, not a color-state tint
-- Gold Counter uses numeral + coin icon rather than gold/gray color coding
+- Sovs Counter uses numeral + coin icon rather than gold/gray color coding
 - All six vendor interaction zones and UI purchase prompts meet the 44px minimum touch target (vendor sprites at 64x96 are compliant)
 
 ---
@@ -408,7 +408,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 ## 📱 Performance Specifications
 | Metric | Target |
 |--------|--------|
-| Frame Rate | 45 FPS |
+| Frame Rate | 60 FPS |
 | Draw Calls | 20 max |
 | Memory | 45 MB |
 | Crowd Sprites | 50 max |
@@ -440,7 +440,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Low | Crowd rows as static dense/medium tiles, no flashes, static incense sprite |
 
 ### Performance Targets:
-- **Target FPS:** 45 (see Performance Specifications table above)
+- **Target FPS:** 60 (see Performance Specifications table above)
 - **Max Draw Calls:** 20
 - **Memory Footprint:** 45 MB maximum
 - **Particle Limit:** Camera flashes 20 max, incense 1 emitter, tears 6 max
@@ -505,7 +505,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 - "COCK-UP" graffiti tag over the crossed-out official UNESCO signage — the city renamed the square before the player arrives
 - Every scam is debunkable on close read: HOLIDAY INN EXPRESS bathrobe logo, identical wine labels, boxed wine hidden in the cart, birthday-party poster showing the same wristbands
 - The skeleton figure looks visibly bored during its own show (easter egg)
-- Handwritten cardboard signage ("BLESSINGS €20") against the tower's carved permanence
+- Handwritten cardboard signage ("BLESSINGS 20 Sovs") against the tower's carved permanence
 
 ### Character Integration Notes:
 - Six scam vendors read as distinct silhouettes and never overlap territories (professional respect is canon and a layout rule)
@@ -603,7 +603,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 - [ ] Easter eggs discoverable: boxed wine in cart, birthday-party poster, graffiti tag
 - [ ] Mobile performance optimized (CPU particles, on-demand clock atlas, 50-sprite crowd cap)
 - [ ] Touch zone sizing considered (44px minimum — vendor sprites and purchase prompts compliant)
-- [ ] Colorblind-friendly alternatives available where color codes meaning (scam warning, gold counter)
+- [ ] Colorblind-friendly alternatives available where color codes meaning (scam warning, Sovs counter)
 - [ ] Social media viral potential maximized (crowd anticipation frame, crying-over-rooster composition)
 
 ---
@@ -620,8 +620,8 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Mobile Optimization | ✅ PASS |
 | Seedy Underbelly Present | ✅ PASS (coordinated scam ecosystem) |
 | Technical Feasibility | ✅ PASS (pre-rendered clock show, crowd LOD) |
-| Mobile Performance Budget | ✅ PASS (45 FPS, 20 draw calls, 45 MB) |
+| Mobile Performance Budget | ✅ PASS (60 FPS, 20 draw calls, 45 MB) |
 | Accessibility Features | ✅ PASS (visual audio cues, motion-reduced show) |
 | Social Media Integration | ✅ PASS (viral moments identified) |
 
-**Astronomical Cock-Up Square delivers the complete tourist trap ecosystem - 38 seconds of show, €300+ of scams, and one life-changing decision to get a skeleton tattoo that turns out to be a duck.**
+**Astronomical Cock-Up Square delivers the complete tourist trap ecosystem - 38 seconds of show, 300 Sovs+ of scams, and one life-changing decision to get a skeleton tattoo that turns out to be a duck.**

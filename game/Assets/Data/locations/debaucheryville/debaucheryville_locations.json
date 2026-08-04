@@ -2869,7 +2869,7 @@
     "vendor_integration": {
       "vendor_id": "memelord_exe",
       "inventory_type": "meme_economy_items",
-      "currency_accepted": "euro_standard",
+      "currency_accepted": "sovs",
       "special_behavior": "speaks_only_broken_internet_slang_vapes_continuously"
     }
   },

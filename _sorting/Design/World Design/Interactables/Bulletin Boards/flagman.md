@@ -25,7 +25,7 @@ ICQ Popup from "FlagManCoach99":
 🚩 FLAGMAN COACHING AVAILABLE 🚩
 European dating struggles? I can help!
 Learn my revolutionary color-coded system!
-€50 per session (Bitcoin accepted)
+50 Sovs per session (Bitcoin accepted)
 Warning: May cause commitment issues
 Graffiti Easter Eggs:
 

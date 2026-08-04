@@ -5,7 +5,7 @@
     "sinfonia_npc_hans_jurgen_01",
     "sinfonia_npc_gustav_horse_01",
     "fiaker_driver_collective",
-    "opera_usher_01",
+    "sinfonia_npc_opera_usher_01",
     "cafe_maitre_d_01",
     "street_performer_violin_01",
     "ticket_scalper_01",
@@ -20,13 +20,13 @@
       "description": "Ornate baroque fountain with Neptune figure. Coins glitter at the bottom.",
       "interactable": true,
       "rewards": [
-        {"type": "currency", "amount_euro": 2, "probability": 0.8},
-        {"type": "currency", "amount_euro": 5, "probability": 0.15},
+        {"type": "currency", "amount_sov": 2, "probability": 0.8},
+        {"type": "currency", "amount_sov": 5, "probability": 0.15},
         {"type": "item", "item_id": "lucky_coin", "probability": 0.05}
       ],
       "dialogue_trigger": {
         "speaker": "chadwick",
-        "text": "Bro, are we really stealing from a fountain? ...Is that a euro?"
+        "text": "Bro, are we really stealing from a fountain? ...Is that a Sov?"
       },
       "animation": "reaching_into_water"
     },
@@ -40,7 +40,7 @@
         "1. Drivers must maintain sobriety during operating hours",
         "2. Horses must be properly secured at all times", 
         "3. Licensed operators only - see photos below",
-        "4. Maximum fare: €80 for 20-minute tour",
+        "4. Maximum fare: 80 Sovs for 20-minute tour",
         "5. NO RACING OTHER FIAKERS"
       ],
       "note": "Hans-Jurgen violates rules 1, 2, and 5 regularly",
@@ -80,7 +80,7 @@
       "interaction_text": "Tip the Performer",
       "description": "Velvet-lined violin case open for donations.",
       "interactable": true,
-      "cost_range_euro": [1, 5],
+      "cost_range_sov": [1, 5],
       "rewards": [
         {"tip": 1, "effect": "performer_nods"},
         {"tip": 2, "effect": "performer_smiles"},
@@ -106,7 +106,7 @@
       "description": "White-clothed cafe tables with delicate pastries and expensive coffee.",
       "interactable": false,
       "destructible_during": "gustav_chase_phase",
-      "damage_value_euro": 85,
+      "damage_value_sov": 85,
       "damage_count_max": 4
     },
     {
@@ -118,7 +118,7 @@
       "discovery_requirement": {"exploration": true},
       "rewards": [
         {"type": "lore", "content": "dedication_plaque"},
-        {"type": "currency", "amount_euro": 3, "if_searched": true}
+        {"type": "currency", "amount_sov": 3, "if_searched": true}
       ]
     }
   ],
@@ -213,7 +213,7 @@
       "prop_id": "fiaker_horse_selfie",
       "interaction_text": "Take Selfie with Fiaker Horse",
       "description": "Pose with traditional carriage horse (not Gustav)",
-      "requirements": {"cost_euro": 5},
+      "requirements": {"cost_sov": 5},
       "reward": {"bravado": 1, "gallery_entry": "fiaker_horse_selfie"}
     },
     {

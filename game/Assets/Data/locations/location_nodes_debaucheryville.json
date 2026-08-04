@@ -158,7 +158,7 @@
   "region": "Debaucheryville",
   "exterior": {
     "description": "Hidden beneath a collapsing arcade awning, marked only by a flickering neon ¥ sign. Alley reeks of stale kebab grease and counterfeit perfume. Entry through a steel hatch guarded by a man with more tattoos than teeth.",
-    "entry_condition": "Requires 50 gold or barter item to enter"
+    "entry_condition": "Requires 50 Sovs or barter item to enter"
   },
   "interior": {
     "theme": "Underground currency den meets black-market bazaar. Smoky haze, neon-lit rate boards, and whispering deal-makers pressed into narrow stalls.",

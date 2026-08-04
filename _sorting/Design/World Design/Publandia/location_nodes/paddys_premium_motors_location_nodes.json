@@ -13,7 +13,7 @@
         "features": [
           "entry_point",
           "shop_node: car_rental",
-          "quest_npc: seamus_omalley",
+          "quest_npc: fergus_omalley",
           "examinable: board_of_shame",
           "examinable: incident_counter",
           "examinable: here_be_dragons_map",
@@ -31,8 +31,8 @@
         "Rent vehicles for countryside exploration (and Cloverleaf doom)",
         "Trigger 'The Cloverleaf of Confusion' sidequest",
         "Purchase GPS, insurance, map, and rosary add-ons",
-        "Witness Seamus's warnings (which bros will ignore)",
-        "Post-quest: Earn 'Seamus's Respect' discount"
+        "Witness Fergus's warnings (which bros will ignore)",
+        "Post-quest: Earn 'Fergus's Respect' discount"
       ]
     }
   ],
@@ -67,20 +67,20 @@
         {
           "quest_id": "publandia_sidequest_eternal_roundabout_01",
           "role": "quest_origin",
-          "npc_trigger": "seamus_omalley",
+          "npc_trigger": "fergus_omalley",
           "trigger_action": "renting_car_and_exiting_east"
         }
       ],
       "unlocks_at": [
         {
-          "feature": "seamus_respect_discount",
+          "feature": "fergus_respect_discount",
           "condition": "cloverleaf_completed",
           "effect": "10% off all rentals"
         },
         {
           "feature": "post_quest_dialogue",
           "condition": "cloverleaf_completed",
-          "dialogue": "seamus_acknowledges_survival"
+          "dialogue": "fergus_acknowledges_survival"
         }
       ],
       "cross_location_effects": {
@@ -88,7 +88,7 @@
           "effect": "Enables driving sequences",
           "visible_in": "exterior_scenes"
         },
-        "seamus_warning_ignored": {
+        "fergus_warning_ignored": {
           "effect": "Foreshadowing delivered, bros oblivious",
           "payoff_in": "cloverleaf_roundabout"
         }
@@ -99,7 +99,7 @@
   "feature_details": {
     "shop_node_car_rental": {
       "type": "service_shop",
-      "vendor": "seamus_omalley",
+      "vendor": "fergus_omalley",
       "inventory": [
         {"id": "shamrock", "price": 45, "type": "economy"},
         {"id": "lucky_charm", "price": 60, "type": "standard"},
@@ -114,7 +114,7 @@
       ]
     },
     
-    "quest_npc_seamus_omalley": {
+    "quest_npc_fergus_omalley": {
       "type": "vendor_and_quest_giver",
       "always_present": true,
       "key_trait": "warns_everyone_no_one_listens",
@@ -137,7 +137,7 @@
     "examinable_marys_photo": {
       "type": "character_backstory",
       "content": "Silver frame, 'MARY - CLOVERLEAF '92' on back",
-      "triggers_dialogue": "Seamus's hidden tragedy",
+      "triggers_dialogue": "Fergus's hidden tragedy",
       "optional": true
     },
     
@@ -167,10 +167,10 @@
   
   "post_credits_connection": {
     "scene_id": "cloverleaf_documentary",
-    "seamus_interview": {
+    "fergus_interview": {
       "quote": "I've been renting cars to tourists for forty years. The Cloverleaf has claimed about four hundred of them. Permanently. They live there now. It's not my fault. I tell them. I always tell them.",
       "interviewer": "What do you tell them?",
-      "seamus_response": "...I forget. I'm old."
+      "fergus_response": "...I forget. I'm old."
     }
   }
 }

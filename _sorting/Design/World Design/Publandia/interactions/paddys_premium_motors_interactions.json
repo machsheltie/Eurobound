@@ -4,7 +4,7 @@
   "events": [
     {
       "event_id": "first_encounter",
-      "display_name": "Meeting Seamus",
+      "display_name": "Meeting Fergus",
       "event_type": "dialogue_sequence",
       "trigger": {
         "type": "location_entry",
@@ -18,10 +18,10 @@
           "audio": "door_chime_old"
         },
         {
-          "phase": "seamus_greeting",
-          "speaker": "seamus",
+          "phase": "fergus_greeting",
+          "speaker": "fergus",
           "dialogue": "Ah, Americans. Wanting to see the countryside, are ye?",
-          "animation": "seamus_looking_up"
+          "animation": "fergus_looking_up"
         },
         {
           "phase": "lp_enthusiasm",
@@ -29,8 +29,8 @@
           "dialogue": "Yeah, we want the full Irish experience. Open roads. Green hills. Sheep."
         },
         {
-          "phase": "seamus_question",
-          "speaker": "seamus",
+          "phase": "fergus_question",
+          "speaker": "fergus",
           "dialogue": "Have ye driven on the left before?"
         },
         {
@@ -40,14 +40,14 @@
         },
         {
           "phase": "the_stare",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "*thousand-yard stare*",
           "duration_seconds": 3,
-          "animation": "seamus_thousand_yard_stare"
+          "animation": "fergus_thousand_yard_stare"
         },
         {
           "phase": "the_line",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "That's what they all say.",
           "audio": "ominous_subtle"
         },
@@ -57,10 +57,10 @@
           "dialogue": "I've studied the road system extensively. I printed directions from Mapquest."
         },
         {
-          "phase": "seamus_mapquest",
-          "speaker": "seamus",
+          "phase": "fergus_mapquest",
+          "speaker": "fergus",
           "dialogue": "...Mapquest.",
-          "animation": "seamus_blink_slowly"
+          "animation": "fergus_blink_slowly"
         },
         {
           "phase": "chadwick_gps",
@@ -68,21 +68,21 @@
           "dialogue": "And we have GPS on our phones."
         },
         {
-          "phase": "seamus_god_help",
-          "speaker": "seamus",
+          "phase": "fergus_god_help",
+          "speaker": "fergus",
           "dialogue": "God help ye.",
-          "animation": "seamus_resigned"
+          "animation": "fergus_resigned"
         },
         {
           "phase": "key_slide",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "*sliding keys across counter*",
-          "animation": "seamus_sliding_keys",
+          "animation": "fergus_sliding_keys",
           "audio": "keys_sliding_metal_wood"
         },
         {
           "phase": "the_warning",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "God help ye. Especially at the Cloverleaf.",
           "emotional_beat": true
         },
@@ -93,9 +93,9 @@
         },
         {
           "phase": "the_prophecy",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "Ye'll see. Everyone sees. Eventually.",
-          "animation": "seamus_turning_away"
+          "animation": "fergus_turning_away"
         }
       ],
       "post_event_effects": [
@@ -132,7 +132,7 @@
         },
         {
           "phase": "addon_offers",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "Will ye be wanting the GPS? The insurance? The map? ...The rosary?"
         },
         {
@@ -142,19 +142,19 @@
         },
         {
           "phase": "paperwork",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "Sign here. And here. And... here.",
           "note": "Fine print mentions 'circular traffic incidents not covered'"
         },
         {
           "phase": "key_handoff",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "*sliding keys across counter* Good luck out there.",
-          "animation": "seamus_sliding_keys"
+          "animation": "fergus_sliding_keys"
         },
         {
           "phase": "final_warning",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "Remember. Just slow down. That's all it takes.",
           "emotional_beat": true
         }
@@ -197,9 +197,9 @@
           "visual": "exterior_parking_lot"
         },
         {
-          "phase": "seamus_watching",
-          "description": "Seamus visible through window, thousand-yard stare",
-          "speaker": "seamus",
+          "phase": "fergus_watching",
+          "description": "Fergus visible through window, thousand-yard stare",
+          "speaker": "fergus",
           "dialogue": "*watching silently*"
         },
         {
@@ -237,41 +237,41 @@
       "sequence": [
         {
           "phase": "recognition",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "Ye made it out.",
-          "animation": "seamus_slight_surprise"
+          "animation": "fergus_slight_surprise"
         },
         {
           "phase": "acknowledgment",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "Most don't, ye know. At least not with their sanity."
         },
         {
           "phase": "respect",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "Ye've earned my respect. Doesn't mean much. But ye've earned it.",
-          "animation": "seamus_slight_nod"
+          "animation": "fergus_slight_nod"
         },
         {
           "phase": "discount",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "Tell ye what. Ten percent off next time. Not that ye'll be wanting to drive again."
         },
         {
           "phase": "about_ptsd",
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "The flashbacks fade. Eventually. The GPS voice never really leaves ye, though. 'Recalculating.'"
         }
       ],
       "post_event_effects": [
         {
           "effect": "set_state",
-          "state": "seamus_respect_earned",
+          "state": "fergus_respect_earned",
           "value": true
         },
         {
           "effect": "unlock_discount",
-          "discount_id": "seamus_respect",
+          "discount_id": "fergus_respect",
           "modifier": 0.9
         }
       ]
@@ -284,12 +284,12 @@
       "type": "examinable",
       "interaction_text": "Examine the Board of Shame",
       "description": "A corkboard covered in Polaroid photos of abandoned rental cars. Different makes, models, years. International license plates. Some have notes: 'Still circling.' 'Found empty.' 'Gave up.' One empty spot has a note: 'Reserved for next.'",
-      "seamus_comment": "Forty years of them. Some found their way out. Some... joined the circulation.",
+      "fergus_comment": "Forty years of them. Some found their way out. Some... joined the circulation.",
       "detailed_examination": {
         "1987_van": "A faded photo of a minivan with 'JUST MARRIED 1987' visible. Note: 'Still circling. Raised family inside. Grandchildren now.'",
         "german_sedan": "1995 German plates. Note: 'Found empty. Driver never located.'",
         "american_rental": "License plate: 'VACAY-1'. Note: 'Returned by AAA. Driver hospitalized for shock.'",
-        "reserved_spot": "Empty polaroid frame. Note in Seamus's handwriting: 'Reserved for next. There's always a next.'"
+        "reserved_spot": "Empty polaroid frame. Note in Fergus's handwriting: 'Reserved for next. There's always a next.'"
       },
       "post_examine_effects": [
         {
@@ -304,7 +304,7 @@
       "type": "examinable",
       "interaction_text": "Look at the incident counter",
       "description": "'DAYS SINCE LAST CLOVERLEAF INCIDENT' mounted on wall. The number reads 000. Thick layer of dust suggests it hasn't been changed in decades. Small print at bottom: 'Record: 0 (achieved every day since 1984)'",
-      "seamus_comment": "Aye, it's stuck on zero. Has been for forty years. It's not broken. There's just always an incident. Every. Single. Day."
+      "fergus_comment": "Aye, it's stuck on zero. Has been for forty years. It's not broken. There's just always an incident. Every. Single. Day."
     },
     {
       "object_id": "the_map",
@@ -329,15 +329,15 @@
     {
       "object_id": "marys_photo",
       "type": "examinable",
-      "interaction_text": "Look at the photo on Seamus's desk",
+      "interaction_text": "Look at the photo on Fergus's desk",
       "description": "A silver frame holds a photo of a younger woman with a warm smile. The back of the frame, barely visible, reads: 'MARY - CLOVERLEAF '92'",
       "triggers_dialogue": {
         "first_examination": {
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "*touching wedding ring* That's Mary."
         },
         "if_asked_more": {
-          "speaker": "seamus",
+          "speaker": "fergus",
           "dialogue": "She went for a quick drive in '92. 'Just to see the cliffs,' she said. The car came back. She didn't.",
           "follow_up": "They say she's still circling. I like to think she's happy."
         }
@@ -353,7 +353,7 @@
     {
       "object_id": "ancient_computer",
       "type": "examinable",
-      "interaction_text": "Look at Seamus's computer",
+      "interaction_text": "Look at Fergus's computer",
       "description": "A beige computer tower and CRT monitor running what appears to be Windows 98. The screen shows a rental database frozen mid-update. The last entry timestamp: 1999.",
       "easter_egg": "The screensaver, when it activates, shows a car driving in an endless circle."
     },
@@ -383,7 +383,7 @@
       "easter_egg_id": "gps_graveyard",
       "location": "drawer_behind_counter",
       "description": "A drawer full of returned GPS devices. When examined, several still display 'RECALCULATING' burned into their screens permanently.",
-      "discovery_method": "ask_seamus_about_gps"
+      "discovery_method": "ask_fergus_about_gps"
     },
     {
       "easter_egg_id": "sheep_stare",
@@ -395,9 +395,9 @@
   
   "narrator_commentary": {
     "on_entering": "Paddy's Premium Motors. Where dreams of the open Irish road come to die.",
-    "on_seamus_stare": "Seamus had seen too much. Forty years of watching tourists drive toward The Cloverleaf. Forty years of warnings ignored.",
+    "on_fergus_stare": "Fergus had seen too much. Forty years of watching tourists drive toward The Cloverleaf. Forty years of warnings ignored.",
     "on_board_of_shame": "Forty years of them. Some came back. Some didn't. The board kept growing.",
-    "on_rental_completion": "The keys slid across the counter with a finality that Seamus knew all too well. Another sacrifice for The Cloverleaf.",
-    "on_departure": "They drove east, toward The Cloverleaf, as everyone eventually does. Seamus watched them go. He always watched them go."
+    "on_rental_completion": "The keys slid across the counter with a finality that Fergus knew all too well. Another sacrifice for The Cloverleaf.",
+    "on_departure": "They drove east, toward The Cloverleaf, as everyone eventually does. Fergus watched them go. He always watched them go."
   }
 }

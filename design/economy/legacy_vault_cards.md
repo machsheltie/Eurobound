@@ -29,7 +29,7 @@ text that goes inside the frames.
 1. **The Vault never winks.** No card, seal, tooltip, or footnote may signal that the assets are
    worthless. The Vault is a museum and it is written like one. The comedy is the distance between
    the framing and the object; nothing on screen closes that distance.
-2. **No card contradicts the item's canon.** €0 is €0 everywhere in the game (see
+2. **No card contradicts the item's canon.** 0 Sovs is 0 Sovs everywhere in the game (see
    `_sorting/Design/Inventory/items/tractor_nft_item.md` development notes). The Vault card
    restates the bros' valuation, never the world's, and never changes the item's actual worth.
 3. **Author-locked copy is reproduced verbatim** and is marked 🔒 below. It is not edited,
@@ -169,7 +169,7 @@ an asset name. Same mapping and same prohibition as Card 1.
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
 **Status note (internal):** replaces the struck "Backstage Laminate (Unauthorized)"
-(location-derived, §7c defect). Route unchanged, including the two-euro coin-op CRT kiosk, the
+(location-derived, §7c defect). Route unchanged, including the two-Sovs coin-op CRT kiosk, the
 still-logged-in account and the dot-matrix receipt. "Winamp" is a brand and is exempt and closed
 (§7a.1). Same mapping and same prohibition as Card 1.
 
@@ -183,7 +183,7 @@ still-logged-in account and the dot-matrix receipt. "Winamp" is a brand and is e
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
 **Status note (internal):** replaces the struck "Foam Face #17" (location-derived, §7c defect).
-Route unchanged — the AR filter's MINT button and the five-euro cappuccino survive. "Crystal
+Route unchanged — the AR filter's MINT button and the five-Sovs cappuccino survive. "Crystal
 Pepsi" is a brand and is exempt and closed (§7a.1). Same mapping and same prohibition as Card 1.
 
 ### Card 8 — "She Thinks My Tractor's Sexy" (Mint #42) 🔒
@@ -409,5 +409,5 @@ Collector's Thesis, and a confirmation or override of the proposed mint number:
   Round 5 appends card copy into item files per spec §6.1, the copy above is the source; do not
   re-author it.
 - **Out of scope this round:** engine card IDs, sort order, seal art, and any change to an asset's
-  in-world value. Every one of these assets is worth €0 to every vendor in the game, permanently,
+  in-world value. Every one of these assets is worth 0 Sovs to every vendor in the game, permanently,
   and no Vault card says so.

@@ -247,7 +247,7 @@ She should be posed with dignity. The wedding dress should be beautiful despite 
 - **Contact**: "They call sometimes. From the outside."
 
 ### References Elsewhere
-- Seamus at Paddy's: "Patrick and Margaret? Still circling. 37 years."
+- Fergus at Paddy's: "Patrick and Margaret? Still circling. 37 years."
 - Post-credits documentary features Patrick prominently
 
 ---

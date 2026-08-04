@@ -88,9 +88,9 @@
     ],
     "buffoon_delusion": {
       "what_bros_think": "Simple car rental for authentic Irish countryside experience",
-      "what_actually_happens": "Seamus watches three more victims walk toward The Cloverleaf"
+      "what_actually_happens": "Fergus watches three more victims walk toward The Cloverleaf"
     },
-    "key_comedy_beat": "seamus_explicitly_warns_them_they_dont_listen"
+    "key_comedy_beat": "fergus_explicitly_warns_them_they_dont_listen"
   },
   
   "state_tracking": {
@@ -102,7 +102,7 @@
     "purchased_rosary": false,
     "purchased_map": false,
     "cloverleaf_completed": false,
-    "seamus_respect_earned": false,
+    "fergus_respect_earned": false,
     "examined_board_of_shame": false,
     "examined_map": false,
     "asked_about_wife": false,

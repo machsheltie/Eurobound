@@ -36,12 +36,12 @@ Catchphrases:
 
 🧾 Menu: Meme Summons & Trinkets
 Item	Cost	Effect
-Shiba Hype	10€	Summons a pixelated Shiba to bark motivational quotes. +Morale to party. Lasts 3 turns. May distract enemies.
-Dat Boi On Unicycle	5€	Appears, says “o shit waddup,” leaves. Does nothing. Pure dopamine hit.
-Dancing Baby.exe	7€	Temporarily disables enemy buffs by sheer confusion. 33% chance to backfire and apply “Cringe” to player.
-Rage Comic Panel	4€	Reduces enemy attack by 1 for 1 turn. Only works on NPCs who “respect classic memes.”
-Trollface Bomb	13€	60% chance to detonate with screen-filling LULs; deals psychic damage to enemies. 20% chance to cause player party to argue over meme legality.
-XP Ring from eBaum’s World	50€	Grants a permanent passive: “Elite Internet User” — +1 INT, +1 Speed, but -1 Charm with NPCs born after 2003.
+Shiba Hype	10 Sovs	Summons a pixelated Shiba to bark motivational quotes. +Morale to party. Lasts 3 turns. May distract enemies.
+Dat Boi On Unicycle	5 Sovs	Appears, says “o shit waddup,” leaves. Does nothing. Pure dopamine hit.
+Dancing Baby.exe	7 Sovs	Temporarily disables enemy buffs by sheer confusion. 33% chance to backfire and apply “Cringe” to player.
+Rage Comic Panel	4 Sovs	Reduces enemy attack by 1 for 1 turn. Only works on NPCs who “respect classic memes.”
+Trollface Bomb	1360 Sovs% chance to detonate with screen-filling LULs; deals psychic damage to enemies. 20% chance to cause player party to argue over meme legality.
+XP Ring from eBaum’s World	50 Sovs	Grants a permanent passive: “Elite Internet User” — +1 INT, +1 Speed, but -1 Charm with NPCs born after 2003.
 Meatspin NFT	Free	You don’t buy it. It just appears. And it won’t. Stop. Spinning. (Applies “Mentally Unwell” status for 3 battles unless purged by glitter priest.)
 Funcoland Futures NFT – #1999
 Unlock Only

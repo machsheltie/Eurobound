@@ -273,12 +273,12 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 ### Menu Beers (32x48 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Heir Apparent Ale | (0, 0) | 32x48 | Signature golden ale in crown-shaped glass (glass is yours, +€3) |
-| The Commoner | (32, 0) | 32x48 | €4 honest lager, apologetic presentation |
-| Duke's Dark | (64, 0) | 32x48 | €7 dark, served with slight bow |
-| Princess Pilsner | (96, 0) | 32x48 | €5 pale, served with curtsey |
-| The Usurper (Guest Beer) | (128, 0) | 32x48 | €6, discussed in hushed tones |
-| King's Reserve | (160, 0) | 32x48 | €15, full ceremony service |
+| Heir Apparent Ale | (0, 0) | 32x48 | Signature golden ale in crown-shaped glass (glass is yours, +3 Sovs) |
+| The Commoner | (32, 0) | 32x48 | 4 Sovs honest lager, apologetic presentation |
+| Duke's Dark | (64, 0) | 32x48 | 7 Sovs dark, served with slight bow |
+| Princess Pilsner | (96, 0) | 32x48 | 5 Sovs pale, served with curtsey |
+| The Usurper (Guest Beer) | (128, 0) | 32x48 | 6 Sovs, discussed in hushed tones |
+| King's Reserve | (160, 0) | 32x48 | 15 Sovs, full ceremony service |
 
 ### Ceremony & Tour Items:
 | Element | Position | Size | Description |
@@ -683,7 +683,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 | World Consistency (no real city names) | ✅ | Sinfonia only; Habsburg/Austrian imperial aesthetics evoked, never named as real places |
 | Cultural Specificity | ✅ | Habsburg nostalgia, imperial ceremony, family-recipe dynasty mythology |
 | Satirical Targets Appropriate | ✅ | Inherited privilege and imperial cosplay satirized; Klaus is affectionate, not a local stereotype |
-| Seedy Underbelly Present | ❌ | Intentionally benign per profile — no vice operation documented beyond the €3 keepsake-glass upsell and self-appointed authority |
+| Seedy Underbelly Present | ❌ | Intentionally benign per profile — no vice operation documented beyond the 3 Sovs keepsake-glass upsell and self-appointed authority |
 | Gameplay Value Established | ✅ | Brewery Tour stamp, ceremony QTE + dialogue, beer shop with buffs, hidden quest |
 | Technical Feasibility | ✅ | Seven sheets, atlas plan, LOD tiers documented |
 | Mobile Performance Budget | ✅ | 60 FPS default (profile states no budget — flagged), 20 draw calls, 35 MB, 20 particles |

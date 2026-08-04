@@ -1,7 +1,7 @@
 # Shamsterdam Museum of Questionable Art - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Shamsterdam Museum of Questionable Art is a Roodelicht Row "museum" that is 90% gift shop with delusions of cultural relevance — three floors of tourist bait funneling every visitor through the Chocolate Anatomy Emporium and past a €3.50 "Fabergé-Style Collector's Egg" that the bros treat as a priceless heist target. This document specifies every PNG asset for the location: the four-floor backdrops, gift shop fixtures, Daan and Dennis NPC sheets, atmospheric visitors, heist/NFT effects, and UI. Its satirical essence in a sentence: a cash register wearing a museum as a costume.
+The Shamsterdam Museum of Questionable Art is a Roodelicht Row "museum" that is 90% gift shop with delusions of cultural relevance — three floors of tourist bait funneling every visitor through the Chocolate Anatomy Emporium and past a 4 Sovs "Fabergé-Style Collector's Egg" that the bros treat as a priceless heist target. This document specifies every PNG asset for the location: the four-floor backdrops, gift shop fixtures, Daan and Dennis NPC sheets, atmospheric visitors, heist/NFT effects, and UI. Its satirical essence in a sentence: a cash register wearing a museum as a costume.
 
 **Location ID:** `shamsterdam_roodelicht_museum_questionable_art_01`
 **Theme:** Tourist trap "museums" that exist purely to sell merchandise with educational pretense; bachelor party souvenir culture; NFT art satire
@@ -71,7 +71,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 |---------|----------|------|-------------|
 | Exterior facade | (0, 0) | 384x512 | Canal-side storefront, uncertain "MUSEUM" neon, TripAdvisor 3.2 stickers, rotating banner mount |
 | Chocolate Anatomy Emporium display | (384, 0) | 512x384 | Tiered floor display, strategic glisten lighting, 4-language bachelor-party signage |
-| Fabergé display case | (384, 384) | 256x256 | Glass case, simple latch, "2 for €6" sticker, gold-foil eggs stacked inside |
+| Fabergé display case | (384, 384) | 256x256 | Glass case, simple latch, "2 for 6 Sovs" sticker, gold-foil eggs stacked inside |
 | Cash register station | (640, 384) | 192x128 | Daan's domain: register, phone glow, coupon graveyard |
 | NFT QR terminal | (832, 384) | 96x128 | Dennis's scheme; screen shows "Abstract Expression #69" thumbnail |
 
@@ -82,7 +82,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | Entrance door | (512, 640) | 128x192 | "WELCOME! PUSH TO ENTER :)" glass door with jingle bell |
 | Exit-through-gift-shop sign | (640, 640) | 128x64 | "Thank You For Supporting The Arts" |
 | PLEASE TAKE ONE sign | (768, 640) | 64x32 | Completely ignored by bros |
-| €3.50 price tag | (832, 640) | 32x16 | The "priceless" reveal, must read at gameplay zoom |
+| 4 Sovs price tag | (832, 640) | 32x16 | The "priceless" reveal, must read at gameplay zoom |
 | Inventory shrinkage clipboard | (864, 640) | 48x64 | Daan's acknowledgment of theft |
 
 ### Upper Floor Exhibits (row y=768):
@@ -196,7 +196,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | Dust motes (3 variants) | (0, 320) | 96x32 (3x 32x32) | Museum authenticity particles |
 | Chocolate display shine (4 frames) | (96, 320) | 128x32 (4x 32x32) | Inappropriate glisten sweep |
 | Peep show activation whir (2 frames) | (224, 320) | 64x32 (2x 32x32) | Mechanical shutter flutter |
-| Spotlight cone (Vault) | (288, 320) | 128x64 | Dramatic spot on the €3.50 egg |
+| Spotlight cone (Vault) | (288, 320) | 128x64 | Dramatic spot on the 4 Sovs egg |
 
 ### Technical Notes:
 - Motion light trigger is player-proximity driven; frames advance with movement, not time
@@ -212,7 +212,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Bros' interpretation vs. reality split-screen | (0, 0) | 384x256 | Comedic reveal frame: heist fantasy left, TikTok reality right |
-| Entrance fee prompt | (384, 0) | 128x96 | "Suggested donation: €15" (mandatory) |
+| Entrance fee prompt | (384, 0) | 128x96 | "Suggested donation: 15 Sovs" (mandatory) |
 | Heist music indicator | (384, 96) | 64x32 | Player-only dramatic soundtrack icon |
 | Achievement toast: "Patron of the Arts" | (384, 128) | 128x48 | First gift shop purchase |
 | Gift shop purchase popup | (0, 256) | 192x128 | Item acquisition celebration |
@@ -260,7 +260,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 - **Duration:** 3 seconds (2 FPS, 6 frames)
 - **Frames:** 6
 - **Pattern:** QR scan → progressive 8-bit load (4 frames) → mint stamp flash, played once
-- **Trigger:** Examine QR terminal, confirm €2 payment
+- **Trigger:** Examine QR terminal, confirm 2 Sovs payment
 - **Purpose:** "The blockchain is forever. Like art. Like chocolate. Like regret."
 - **Audio Sync:** Mint chime on frame 6
 - **Mobile Optimization:** None needed
@@ -340,7 +340,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | Low | Static racks, static lighting, single visitor group, no dust (per profile mobile notes) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile budget)
+- **Target FPS:** 60 (per location profile budget)
 - **Max Draw Calls:** 18 per frame
 - **Memory Footprint:** 42 MB maximum
 - **Particle Limit:** 20
@@ -390,7 +390,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 ### Visual Aesthetic:
 - **Primary Theme:** "A gift shop cosplaying as a cultural institution"
 - **Color Mood:** Tourist Trap Red and Gift Shop Gold shouting over Questionable Cream walls; chocolate brown wherever the real business happens
-- **Lighting:** Harsh fluorescents failing to be gallery lighting; red bulbs for "atmosphere" upstairs; one sincere dramatic spotlight — on a €3.50 egg
+- **Lighting:** Harsh fluorescents failing to be gallery lighting; red bulbs for "atmosphere" upstairs; one sincere dramatic spotlight — on a 4 Sovs egg
 - **Texture:** Laminated, shrink-wrapped, price-stickered; the only patina is on the "historical" exhibits printed last month
 
 ### Environmental Storytelling:
@@ -411,14 +411,14 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 
 ### Screenshot-Worthy Moments:
 1. **Split-screen heist vs. reality** — Bradley "cracking the vault" beside Daan not looking up; built as a shareable 16:9 frame
-2. **The €3.50 price tag on the "priceless" Fabergé case** — one image, whole satire
+2. **The 4 Sovs price tag on the "priceless" Fabergé case** — one image, whole satire
 3. **The Chocolate Anatomy Emporium** — tiered, glistening, four-language bachelor signage
 4. **The toilet seat "Masterpiece"** — "you are the art" mirror selfie bait
 5. **NFT minting screen** — "Abstract Expression #69, edition 1 of 47,000"
 
 ### Quote Potential:
 - "The blockchain is forever. Like art. Like chocolate. Like regret."
-- "Those are €3.50. Or €2 if you buy a keychain. Whatever."
+- "Those are 4 Sovs. Or 2 Sovs if you buy a keychain. Whatever."
 - "The 'laser grid' upstairs? Those are automatic lights. They turn on when you walk. That's how lights work."
 - "My collective? Yeah, it's just me. 'Collective' sounds better on grants."
 - "hey did you guys ever pay for those magnets"
@@ -474,7 +474,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 ### Before Submitting Assets:
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly
-- [ ] Key gags read clearly: €3.50 tag on the "vault," PLEASE TAKE ONE sign, Daan's unmoving head during the heist, split-screen reveal
+- [ ] Key gags read clearly: 4 Sovs tag on the "vault," PLEASE TAKE ONE sign, Daan's unmoving head during the heist, split-screen reveal
 - [ ] Accessibility visual alternatives included for all audio cues (register ding, door jingle, heist music, peep show clicks)
 - [ ] File naming follows snake_case convention
 - [ ] Master files preserve layer structure for future edits
@@ -500,9 +500,9 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | Seedy Underbelly Present | ✅ | FOMO pricing, "suggested" mandatory donation, shoplifting-as-heist, gift shop funnel |
 | Gameplay Value Established | ✅ | Fabergé heist Stage 3, NFT Hunt #1/3, shop economy, Couchsurf trigger |
 | Technical Feasibility | ✅ | Per-floor streaming, CPU particles, on-demand heist layers documented |
-| Mobile Performance Budget | ✅ | 45 FPS, ≤18 draw calls, ≤42 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, ≤18 draw calls, ≤42 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px touch zones |
 | No Crypto Elements | ✅ | NFT terminal IS established source material (Dennis's scheme) — satirical target, no real crypto |
 | Social Media Integration | ✅ | 5 screenshot moments + split-screen frame designed for sharing |
 
-**Once these assets are delivered, the Shamsterdam Museum of Questionable Art becomes the world's saddest heist target: a place where the player executes "the greatest heist in European history" over a €3.50 chocolate egg while a teenager marks it as shrinkage without looking up.**
+**Once these assets are delivered, the Shamsterdam Museum of Questionable Art becomes the world's saddest heist target: a place where the player executes "the greatest heist in European history" over a 4 Sovs chocolate egg while a teenager marks it as shrinkage without looking up.**

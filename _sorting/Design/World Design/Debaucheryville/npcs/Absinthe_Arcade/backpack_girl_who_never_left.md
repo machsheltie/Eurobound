@@ -121,45 +121,9 @@ She is compiling a body of work. Not for money, not for fame — for the archive
 ### If Player Declines / Alternative Path
 > "Totally, totally, no pressure at all. I'll write it anyway. I hope that's okay. It's already sort of written."
 
-### Herp Rejection Scene (`the_herp` active)
+### Couchsurf Herp Routing
 
-*An infected bro attempts the couchsurf or a romance approach at the Absinthe Arcade. She says yes immediately — she always says yes — and then the shimmer catches the cabinet light at waist height and she stops, tilts her head, and reaches for the notebook instead of the kebab.*
-
-**Backpack Girl** (delighted, appalled, and already composing — all three at once):
-> "Oh. **Oh.** No. No, absolutely not, and also — hold on, don't move, I'm getting the second verse."
-
-*She does not leave. She does not raise her voice. She writes for ninety seconds while he stands there, then stands up, walks to the hostel common room across the square with him still following, and performs the finished piece to eleven people and a vending machine.*
-
-**Backpack Girl** (performing, four chords, one of them wrong, deadly sincere):
-> "*He came for the culture, he stayed for the burn / He said it was ivy, he'll never learn / O the aura, the aura, it screamed and it stung / And nobody told him — and nobody's tongue—*"
-
-*She never once uses the word. The entire ballad is euphemism, and every person in the room understands it instantly. The vending machine is the only thing in the room not laughing. She takes a bow. Two roommates settle a bet.*
-
-**Backpack Girl** (afterwards, warmly, hand on his shoulder, meaning it):
-> "Thank you for this. Truly. You gave me a *whole second movement*. The floor's a no, obviously. But thank you."
-
-*Bro delusion, immediately after:*
-- **Chadwick**: *"Bros. She wrote a SEQUEL about us. That's a franchise."*
-- **Lord Pilsner**: *"European artists write songs about people who MATTER. FlagMan's system doesn't even have a flag for this."*
-- **Bradley**: *"'Subject of an original European folk composition.' I'm putting the whole chorus in my bio."*
-
-### Post-Cure Callback (Coin equipped)
-
-*He returns with `item_gold_circle_coin`. She looks up from the notebook. She has performed the ballad, by this point, roughly forty times. **The sting lands first** — this is the whole reason she gets a callback line at all.*
-> "Oh, hey! You look better. You look — yeah. Good for you, genuinely." *(beat, warm, absolutely lethal)* "It doesn't come out of the song, though. You get that, right? You cured the verse. You did not cure the *song*. Somebody sang it in Publandia last week and I've never even been."
-
-*She strums one chord. It is the wrong string. She leaves it.*
-> "Floor's still a no. That was never about the rash."
-
-*Three seconds. She looks at him. She looks at the notebook. The notebook wins, the way it always wins, because a man who crossed a continent for a piece of nineteen-ninety latex is not something the archive can be expected to pass up.*
-
-**Backpack Girl** (reversing entirely, delighted, already shuffling sideways to make floor space):
-> "—no, okay, no, get in. GET IN. You went to *Sinfonia*. For a *coin*. That's a whole third movement and I'm not going to sit here and pretend I don't want it."
-
-*Everything proceeds exactly as it would have before the outbreak: the last of a kebab, floor space, and the ukulele starting at 04:00 instead of 06:00 because she is excited.*
-
-**Backpack Girl** (over the strumming, sincerely, hand on his shoulder):
-> "You understand this doesn't retire the old verses. Nothing retires. That's not a threat, that's just — that's how an archive works. Thank you for coming back. Genuinely. You're the gift that keeps on being a *song*."
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Backpack Girl — including the on-the-spot composition, the hostel performance, and the post-cure callback — are authored in her Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Backpack Girl Who Never Left". **Do not duplicate them here.** Flag: `backpack_girl_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 ### Callback Dialogue (Return Visits)
 > "The ballad's got a *variant* now. A kid from a different hostel changed the third line and honestly? Better. That's what happens. That's what it's FOR."
@@ -355,7 +319,7 @@ Transatlantic backpacker drift — an accent assembled from six hostels and no h
 
 - All Chronicles canon is harvested: Absinthe Arcade meet, the last kebab, the crash offer, the 6am ukulele, "the way your aura screamed 'tourist'," the roommates' betting pool, **−10 SP**, the **Ballad of the Bros** collectible and its Sinfonia mini-game use, and the ballad becoming a running joke among local backpackers. Nothing reinvented
 - Hostel migration is canon from `absinthearcade.md` ("Backpack Girl travels between hostels") — her couchsurf interior may legitimately differ between visits
-- The Herp rejection scene and post-cure callback are new content owned by this profile. `nothingisgettingthrough.md` should point at this file rather than duplicate the text
+- **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Her lines live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Backpack Girl Who Never Left"; this file and `nothingisgettingthrough.md` both point at it and neither duplicates the text
 - **No new item is minted by the Herp rejection scene.** The `Ballad of the Bros` collectible is untouched; the "second movement" exists only in dialogue and ambient NPC chatter. Any decision to make it a distinct collectible belongs to an items pass, not this file
 - The ballad lyrics never name the condition. Keep it that way in localization — the euphemism is doing the comedic and the taste work simultaneously
 - Ambient variant-ballad chatter in other cities is flavor only and should not be gated behind anything; it plays whether or not the player got the collectible

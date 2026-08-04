@@ -28,7 +28,7 @@
 
 ### The Invitation System
 Invitations are the currency of exclusivity:
-- **Purchase**: €200 from The Black-Tie Backroom (if High Roller status)
+- **Purchase**: 200 Sovs from The Black-Tie Backroom (if High Roller status)
 - **Quest Reward**: "Mask Etiquette Exam" completion
 - **Social Engineering**: Convince an NPC to give theirs (high Charm check)
 - **Theft**: Pickpocket from Kaffeehaus Row intellectuals (high risk)
@@ -227,10 +227,10 @@ Social encounters function as combat with reputation as HP:
 **Rumor Types**:
 | Rumor Grade | Value | Risk | Source |
 |-------------|-------|------|--------|
-| Common | €50 | Low | Anyone |
-| Uncommon | €150 | Medium | Specific NPCs |
-| Rare | €400 | High | Inner Circle |
-| Exclusive | €1000+ | Very High | Baroness only |
+| Common | 50 Sovs | Low | Anyone |
+| Uncommon | 150 Sovs | Medium | Specific NPCs |
+| Rare | 400 Sovs | High | Inner Circle |
+| Exclusive | 1000 Sovs+ | Very High | Baroness only |
 
 **Trading Mechanics**:
 - Rumors have "freshness" — old news worth less
@@ -503,53 +503,31 @@ The Baroness encounter is pure social combat:
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (14 PNGs)
-- grand_entrance_stairs.png - 512x512 - Dramatic staircase
-- main_ballroom.png - 640x512 - Primary social arena
-- whisper_gallery.png - 384x256 - Curved corridor
-- dance_floor_spotlight.png - 384x384 - Challenge zone
-- baroness_dais.png - 384x256 - Authority platform
-- private_salon.png - 256x256 - VIP rooms
-- baroness_salon.png - 384x384 - Inner circle access
-- opera_entrance.png - 256x384 - First entry route
-- cemetery_entrance.png - 256x384 - Second entry route
-- cafe_entrance.png - 256x384 - Third entry route
-- chandelier_grand.png - 256x256 - Centerpiece
-- mirror_station.png - 128x192 - Mask adjustment
-- refreshment_station.png - 192x192 - Eavesdropping point
-- herald_platform.png - 192x256 - Announcement stage
+> **Authority: `PNG_Assets/Baroness_Ballroom_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the eight sheets below**. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (16 PNGs)
-- baroness_of_masks.png - 128x192 - Social boss
-- der_schatten.png - 96x128 - Dance boss
-- herald_announcer.png - 64x96 - Entry NPC
-- lady_geheimnis.png - 64x96 - Couchsurf host
-- rumor_broker.png - 64x96 - Trade NPC
-- dance_duelist_1.png - 64x96 - Debutante
-- dance_duelist_2.png - 64x96 - Veteran
-- dance_duelist_3.png - 64x96 - Champion
-- masked_guest_noble.png - 64x96 - Background NPC
-- masked_guest_artist.png - 64x96 - Background NPC
-- masked_guest_scholar.png - 64x96 - Background NPC
-- masked_guest_mystery.png - 64x96 - Background NPC
-- masked_servant.png - 64x96 - Staff (identical)
-- inner_circle_member.png - 64x96 - VIP NPCs
-- waltz_partner.png - 64x96 - Dance partner
-- ejected_guest.png - 64x96 - Failure state
+### Required PNG Files (8 sheets)
 
-### UI/Item Sprites (12 PNGs)
-- masquerade_mask_basic.png - 48x32 - Entry item
-- masquerade_mask_ornate.png - 48x32 - Upgraded item
-- invitation_card.png - 48x32 - Entry requirement
-- social_hp_meter.png - 192x32 - Reputation tracker
-- credibility_meter.png - 128x32 - Identity performance
-- dance_rhythm_ui.png - 256x64 - Waltz timing
-- rumor_card.png - 64x48 - Trade item
-- whisper_indicator.png - 32x32 - Gallery marker
-- baroness_favor.png - 48x48 - Status indicator
-- inner_circle_badge.png - 32x32 - Access item
-- identity_card.png - 64x48 - Masquerade persona
-- humiliated_stamp.png - 64x64 - Failure badge
+| # | Filename | Dimensions | Contains |
+|---|----------|------------|----------|
+| 1 | baroness_ballroom_tileset.png | 1024x512 | Floor and wall tiles, the grand staircase sections, all three entry-route doors (opera curtain, cemetery stone door, café bookcase), windows, columns, platforms |
+| 2 | baroness_ballroom_landmarks.png | 512x512 | Chandelier, Baroness dais, herald announce platform, mirror station, refreshment fountain, Baroness salon divan, whisper gallery arch, spotlight floor decal, entrance dressing |
+| 3 | baroness_of_masks.png | 512x384 | The Baroness of Masks (64x96 cells) **and Der Schatten (48x96 cells)**, duet elements, salon audience poses |
+| 4 | baroness_ballroom_court_npcs.png | 512x384 | The Herald (48x96), Lady Geheimnis (48x96), the Rumor Broker (48x96), all three dance duelists — Debutante / Veteran / Champion (48x96) |
+| 5 | baroness_ballroom_crowd.png | 512x384 | Masked guests noble / artist / scholar / mystery, servant with tray, inner circle member, waltz partner (48x80), ejected guest (64x80), background waltz loops |
+| 6 | baroness_ballroom_bros.png | 384x256 | Bro masquerade states (48x96), group and failure frames |
+| 7 | baroness_ballroom_effects.png | 512x256 | Candlelight, mask and fabric shimmer, whisper trails, dance/social-combat effects, confetti burst |
+| 8 | baroness_ballroom_ui.png | 512x256 | Masquerade masks, invitation card, Social HP and credibility meters, dance rhythm bar (192x64), rumor cards, identity system, favor / badges / humiliated stamp |
+
+### Names retired from this summary (do not request these files)
+
+| Retired name | Where it actually lives |
+|---|---|
+| `der_schatten.png` | Cells inside `baroness_of_masks.png` (48x96 each) |
+| `main_ballroom.png`, `private_salon.png` | Not delivered — no room-scale PNGs. Assembled from the tileset and landmark sheets |
+| `whisper_indicator.png` | Not delivered — nearest asset is the Whisper Trail cells (64x24) in `baroness_ballroom_effects.png` |
+| `grand_entrance_stairs.png`, `whisper_gallery.png`, `dance_floor_spotlight.png`, `baroness_dais.png`, `baroness_salon.png`, `opera_entrance.png`, `cemetery_entrance.png`, `cafe_entrance.png`, `chandelier_grand.png`, `mirror_station.png`, `refreshment_station.png`, `herald_platform.png` | Cells in sheets 1 and 2 |
+| All 16 former standalone character PNGs | Cells in sheets 3, 4 and 5 |
+| All 12 former standalone UI/item PNGs | Cells in sheet 8 |
 
 ---
 

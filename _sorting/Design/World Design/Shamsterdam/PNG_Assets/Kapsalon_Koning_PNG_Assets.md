@@ -1,13 +1,13 @@
 # Kapsalon Koning - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Kapsalon Koning is the late-night temple where a barber's 2003 vision — fries, döner, melted Gouda, theoretical salad, both sauces — is served in an aluminum tray with a fork guaranteed to break. This document specifies every PNG asset for the shop: the crown-branded exterior, the Cheese Cathedral interior, the visible assembly-line theater, Big Willem and Kemal, the customer congregation, the fork-break and food-coma effect sets, and the ordering UI where "small" does not exist. Its satirical essence in a sentence: someone asked "what if ALL the things, together, with cheese?" and an entire country said yes.
+Kapsalon Koning is the late-night temple where a barber's 2003 vision — fries, döner, melted Gouda, theoretical salad, both sauces — is served in an aluminum tray with a fork guaranteed to break. This document specifies every PNG asset for the shop: the crown-branded exterior, the Cheese Cathedral interior, the visible assembly-line theater, Big Wim and Kemal, the customer congregation, the fork-break and food-coma effect sets, and the ordering UI where "small" does not exist. Its satirical essence in a sentence: someone asked "what if ALL the things, together, with cheese?" and an entire country said yes.
 
 **Location ID:** `shamsterdam_latenight_kapsalon_koning_01`
 **Theme:** Dutch-Turkish fusion excess celebrated, not mocked; the "more is more" food philosophy at its logical conclusion
 **Zone:** Late-night district, strategic position near Leeman's (friendly rivalry)
 **Hours:** 4 PM - 6 AM (peak: midnight - 4 AM, when kapsalon calls loudest)
-**Primary Function:** Late-night food vendor / cheese sweats generator — layered ordering system, Willem Assessment, fork break event, Food Coma mechanic, King Size Challenge with Wall of Fame, Kapsalon Battle Tray collectible
+**Primary Function:** Late-night food vendor / cheese sweats generator — layered ordering system, Wim Assessment, fork break event, Food Coma mechanic, King Size Challenge with Wall of Fame, Kapsalon Battle Tray collectible
 
 ---
 
@@ -32,7 +32,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 ├── objects/
 │   └── kapsalon_food_items.png
 ├── npcs/
-│   ├── npc_willem_kemal.png
+│   ├── npc_wim_kemal.png
 │   └── npc_kapsalon_customers.png
 ├── effects/
 │   └── kapsalon_effects.png
@@ -88,7 +88,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Fork Dispenser Detail | (0, 768) | 64x64 | Standard plastic, not reinforced, 100% break certainty |
 | Replacement Fork Cup | (64, 768) | 64x64 | The second fork, automatically provided |
 | Salamander Rack (Tray In) | (128, 768) | 192x96 | Tray under the broiler, cheese mid-transformation |
-| Big Willem's Quote Plaque | (320, 768) | 192x64 | "In the port city, we put cheese on everything." |
+| Big Wim's Quote Plaque | (320, 768) | 192x64 | "In the port city, we put cheese on everything." |
 
 ### Technical Notes:
 - Salamander renders behind its glow overlay (Sheet 6) — keep interior lamp area neutral
@@ -105,9 +105,9 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 ### The Kapsalon Range:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Kapsalon Regular | (0, 0) | 96x64 | Standard glory, €10, "large enough for most" |
-| Kapsalon Large | (96, 0) | 128x72 | Committed glory, €14, Food Coma risk visible in sheer mass |
-| Kapsalon King Size | (224, 0) | 160x80 | Wall of Fame glory, €18, structurally ambitious |
+| Kapsalon Regular | (0, 0) | 96x64 | Standard glory, 10 Sovs, "large enough for most" |
+| Kapsalon Large | (96, 0) | 128x72 | Committed glory, 14 Sovs, Food Coma risk visible in sheer mass |
+| Kapsalon King Size | (224, 0) | 160x80 | Wall of Fame glory, 18 Sovs, structurally ambitious |
 | Cheese Melt Cap | (384, 0) | 64x64 | Bubbling Gouda top layer, overlay-ready |
 | Cola Cup | (448, 0) | 32x48 | "For the cheese" |
 | Layers Cross-Section Diagram | (384, 64) | 128x192 | Educational cutaway: fries / döner / cheese / salad / sauce, labeled |
@@ -130,28 +130,28 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 
 ---
 
-## 👨‍🍳 Sprite Sheet 4: Big Willem & Kemal
-**File:** `npc_willem_kemal.png`
+## 👨‍🍳 Sprite Sheet 4: Big Wim & Kemal
+**File:** `npc_wim_kemal.png`
 **Dimensions:** 512x512 pixels
-**Sprite Size:** Willem 64x128; Kemal 64x96
+**Sprite Size:** Wim 64x128; Kemal 64x96
 **Color Palette:** #FFD700 apron accents, #C0C0C0, #6B4423
 
-### Big Willem (6'5" of Kapsalon Evangelism):
+### Big Wim (6'5" of Kapsalon Evangelism):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Willem Idle | (0, 0) | 64x128 | Commanding presence, warm despite size, visible over everyone |
-| Willem Assembling Frame 1 | (64, 0) | 64x128 | Fries poured — "Foundation. Without foundation, chaos." |
-| Willem Assembling Frame 2 | (128, 0) | 64x128 | Meat shaved on — "The meat gives meaning." |
-| Willem Assembling Frame 3 | (192, 0) | 64x128 | Tray into salamander — "This is where the port city happens." |
-| Willem Assembling Frame 4 | (256, 0) | 64x128 | Salad + sauces flourish — "For health. ...okay, for texture." |
-| Willem Approving | (320, 0) | 64x128 | Both sauces ordered: "You understand." |
-| Willem Portrait (Dialogue) | (384, 0) | 128x128 | Close-up: enthusiasm of a man whose purpose is fixing hungry people |
-| Willem Explaining Frame 1 | (0, 128) | 64x128 | The barber story begins — hands wide |
-| Willem Explaining Frame 2 | (64, 128) | 64x128 | "He says 'everything together. With cheese.'" |
-| Willem Explaining Frame 3 | (128, 128) | 64x128 | "This man is a VISIONARY. I am his disciple." |
-| Willem Handing Fork | (192, 128) | 64x128 | Second fork extended before you even ask |
-| Willem Watching (King Size) | (256, 128) | 64x128 | Judging, respecting, witnessing |
-| Willem Pained ("Less Cheese") | (320, 128) | 64x128 | "...less cheese. Okay. But why." |
+| Wim Idle | (0, 0) | 64x128 | Commanding presence, warm despite size, visible over everyone |
+| Wim Assembling Frame 1 | (64, 0) | 64x128 | Fries poured — "Foundation. Without foundation, chaos." |
+| Wim Assembling Frame 2 | (128, 0) | 64x128 | Meat shaved on — "The meat gives meaning." |
+| Wim Assembling Frame 3 | (192, 0) | 64x128 | Tray into salamander — "This is where the port city happens." |
+| Wim Assembling Frame 4 | (256, 0) | 64x128 | Salad + sauces flourish — "For health. ...okay, for texture." |
+| Wim Approving | (320, 0) | 64x128 | Both sauces ordered: "You understand." |
+| Wim Portrait (Dialogue) | (384, 0) | 128x128 | Close-up: enthusiasm of a man whose purpose is fixing hungry people |
+| Wim Explaining Frame 1 | (0, 128) | 64x128 | The barber story begins — hands wide |
+| Wim Explaining Frame 2 | (64, 128) | 64x128 | "He says 'everything together. With cheese.'" |
+| Wim Explaining Frame 3 | (128, 128) | 64x128 | "This man is a VISIONARY. I am his disciple." |
+| Wim Handing Fork | (192, 128) | 64x128 | Second fork extended before you even ask |
+| Wim Watching (King Size) | (256, 128) | 64x128 | Judging, respecting, witnessing |
+| Wim Pained ("Less Cheese") | (320, 128) | 64x128 | "...less cheese. Okay. But why." |
 
 ### Kemal (The Nephew, Learning the Trade):
 | Element | Position | Size | Description |
@@ -163,11 +163,11 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Kemal Respect Nod | (256, 256) | 64x96 | "You finishing that? ...respect." |
 | Kemal Overwhelmed (Peak Hours) | (320, 256) | 64x96 | 2 AM rush face |
 | Kemal Portrait (Dialogue) | (384, 256) | 128x128 | Close-up: business student by day, cheese guardian by night |
-| Willem Wall-Point Gesture | (0, 352) | 64x128 | Pointing a champion to their photo on the wall |
-| Willem Laughing | (64, 352) | 64x128 | Full-body warmth for post-club pilgrims |
+| Wim Wall-Point Gesture | (0, 352) | 64x128 | Pointing a champion to their photo on the wall |
+| Wim Laughing | (64, 352) | 64x128 | Full-body warmth for post-club pilgrims |
 
 ### Technical Notes:
-- Willem's 128px height must clear all other NPCs in any shared frame — he is always visible
+- Wim's 128px height must clear all other NPCs in any shared frame — he is always visible
 - Assembling frames align with layer sprites (Sheet 3) appearing at the Assembly Station anchor
 - Kemal's cheese station frames pair with the salamander glow pulse (Sheet 6)
 
@@ -244,14 +244,14 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Size Selection Panel | (0, 0) | 192x128 | Regular / Large / King Size — no small option exists, by design |
-| King Size Challenge Panel | (192, 0) | 192x128 | Wall of Fame eligibility prompt with Willem witness note |
+| King Size Challenge Panel | (192, 0) | 192x128 | Wall of Fame eligibility prompt with Wim witness note |
 | "You Are Not Ready" Tooltip | (384, 0) | 128x64 | Appears if player searches for a smaller option |
 | Sauce Selection Panel | (0, 128) | 192x96 | Garlic / Sambal / Both — "Both" is highlighted with subtle reverence |
-| Meat Selection Panel | (192, 128) | 192x96 | Chicken / Veal / Mixed with Willem-opinion flavor text slots |
+| Meat Selection Panel | (192, 128) | 192x96 | Chicken / Veal / Mixed with Wim-opinion flavor text slots |
 | Food Coma Risk Meter | (384, 64) | 128x64 | 20% / 40% / GUARANTEED risk display |
 | Kapsalon Progress Bar | (0, 224) | 128x96 | Tray-shaped eating progress with layer strata |
 | Cheese Sweats Status Bar | (128, 224) | 96x32 | Duration display, golden fill |
-| Willem Respect Indicator | (128, 256) | 96x32 | Fills on both-sauces order and clean finishes |
+| Wim Respect Indicator | (128, 256) | 96x32 | Fills on both-sauces order and clean finishes |
 | Fork Integrity Icon | (224, 224) | 32x32 | Always shows 100% — it lies |
 | Achievement Badges Strip | (0, 320) | 384x64 | Six 64x64 badges: Initiated / Passionate / Understanding / Committed / Wall of Fame / Transcended |
 | Battle Tray Equip Card | (384, 128) | 128x96 | +2 Defense shield/throwable item card |
@@ -271,7 +271,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 ## 🎬 Animation Specifications
 
 ### The Assembly Line (Sheets 3, 4, 6):
-- **Duration:** 6.0 seconds total (4 Willem frames at 1.2s + 1.2s salamander hold)
+- **Duration:** 6.0 seconds total (4 Wim frames at 1.2s + 1.2s salamander hold)
 - **Frames:** 4 character frames + layer sprite stack + cheese bubble loop
 - **Pattern:** Fries → meat → salamander (cheese bubble plays) → salad/sauce flourish → serve
 - **Trigger:** Any kapsalon order
@@ -294,7 +294,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Pattern:** Play once, mid-eating, 100% trigger on first kapsalon
 - **Trigger:** Eating progress crosses 40% on first-ever kapsalon
 - **Purpose:** Inevitable tradition; "the fork breaks because you eat with passion"
-- **Audio Sync:** Plastic SNAP exactly at frame 2 start (0.3s); beat of silence; Willem's line at 1.1s
+- **Audio Sync:** Plastic SNAP exactly at frame 2 start (0.3s); beat of silence; Wim's line at 1.1s
 - **Mobile Optimization:** None needed (one-shot, comedy-critical — never cut)
 
 ### Food Coma (Sheets 5 & 6):
@@ -328,7 +328,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Duration:** 2.5 seconds (flash 0.2s, photo slide 1.0s, hold 1.3s)
 - **Frames:** Camera flash + photo placement tween
 - **Pattern:** One-shot ceremony
-- **Trigger:** King Size completed under Willem's witness
+- **Trigger:** King Size completed under Wim's witness
 - **Purpose:** Eternal recognition; the wall remembers
 - **Audio Sync:** Camera click at 0.0s; applause murmur at 1.2s
 - **Mobile Optimization:** Flash replaced by instant photo placement in reduced-motion mode
@@ -379,7 +379,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | kapsalon_environment | kapsalon_exterior_fixtures | 1024x1024 |
-| kapsalon_characters | npc_willem_kemal, npc_kapsalon_customers | 2048x1024 |
+| kapsalon_characters | npc_wim_kemal, npc_kapsalon_customers | 2048x1024 |
 | kapsalon_fx_ui | kapsalon_food_items, kapsalon_effects, kapsalon_ui | 1024x1024 |
 
 *(kapsalon_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for mobile GPU compatibility.)*
@@ -392,7 +392,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Low | Static assembly and cheese (profile requirement), static tower, one-shot fork break retained |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 34 MB maximum
 - **Particle Limit:** 15 (steam rise, cheese-glow motes, sauce drips)
@@ -408,8 +408,8 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
-- Node types: Sprite2D (interior background), AnimatedSprite2D (Willem, Kemal, effects, tower), CPUParticles2D (steam — not GPU), CanvasLayer (order UI), Area2D (counter/table interaction zones)
-- Special systems: Willem Assessment dialogue branch on order composition, fork-break first-visit flag, Food Coma probability roll (20/40/100), King Size witness state machine, Wall of Fame photo persistence, Battle Tray inventory grant, eating-progress tracker with tray-state swaps
+- Node types: Sprite2D (interior background), AnimatedSprite2D (Wim, Kemal, effects, tower), CPUParticles2D (steam — not GPU), CanvasLayer (order UI), Area2D (counter/table interaction zones)
+- Special systems: Wim Assessment dialogue branch on order composition, fork-break first-visit flag, Food Coma probability roll (20/40/100), King Size witness state machine, Wall of Fame photo persistence, Battle Tray inventory grant, eating-progress tracker with tray-state swaps
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -427,13 +427,13 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 |-------|---------------------|-------------------|
 | The Great Döner Debate: International Expansion | Kapsalon sprites, Debate Tracker chip | Eating here = Shamsterdam entry #2 ("döner-adjacent — counts but is its own category") |
 | Kapsalon Achievement Track | Badges strip, fork break, sauce panel, coma overlay | Initiated / Passionate / Understanding / Committed / Wall of Fame / Transcended |
-| King Size Challenge | King Size sprite, Willem Watching, induction panel, player photo | Order + finish King Size; Wall of Fame photo placed permanently |
+| King Size Challenge | King Size sprite, Wim Watching, induction panel, player photo | Order + finish King Size; Wall of Fame photo placed permanently |
 | Full Kapsalon Experience | Large sprite, Both Sauces drizzle, Battle Tray | Completion grants Kapsalon Battle Tray equipment |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Leeman's Döner Palace | Menu board rivalry note; Willem's "Mehmet down the street? Good man. No cheese. His loss." | Friendly-rivalry dialogue crosslinks; Leeman's sign reads "NO KAPSALON. Go to Willem for that." |
+| Leeman's Döner Palace | Menu board rivalry note; Wim's "Mehmet down the street? Good man. No cheese. His loss." | Friendly-rivalry dialogue crosslinks; Leeman's sign reads "NO KAPSALON. Go to Wim for that." |
 | De Groene Gids | Munchies pipeline endpoint marker | WARNING: may overcorrect — enhanced HP food effects |
 | The Tolerance Hostel | Battle Tray display prop reference | Kitchen conversations + tray shown on shelf |
 | FEBO Automat | Comparison dialogue hook | "FEBO is snack. Kapsalon is MEAL." |
@@ -451,11 +451,11 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 ### Environmental Storytelling:
 - The Wall of Fame's empty slots are an open challenge visible from the door
 - One döner tower (focused) vs. Leeman's three — different philosophy, same district
-- The fork dispenser beside the replacement fork cup admits the truth before Willem says it
+- The fork dispenser beside the replacement fork cup admits the truth before Wim says it
 - The layer-explanation sign converts confusion into evangelism at the threshold
 
 ### Character Integration Notes:
-- Willem's 128px sprite towers over every scene — warmth at scale, always visible over the counter
+- Wim's 128px sprite towers over every scene — warmth at scale, always visible over the counter
 - Kemal holds the salamander zone; his bubble-watch frames pair with the glow pulse
 - Customer groups render as single blocks; individual featured NPCs (First-Timer, Champion) carry the story beats
 - Food Coma slump must read as bliss, not distress — no regrets in this establishment
@@ -487,7 +487,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | 1 | kapsalon_interior_main.png | 1920x1080 |
 | 2 | kapsalon_exterior_fixtures.png | 1024x1024 |
 | 3 | kapsalon_food_items.png | 512x256 |
-| 4 | npc_willem_kemal.png | 512x512 |
+| 4 | npc_wim_kemal.png | 512x512 |
 | 5 | npc_kapsalon_customers.png | 1024x256 |
 | 6 | kapsalon_effects.png | 512x256 |
 | 7 | kapsalon_ui.png | 512x512 |
@@ -502,7 +502,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - [ ] `kapsalon_interior_main.png` (1920x1080)
 - [ ] `kapsalon_exterior_fixtures.png` (1024x1024)
 - [ ] `kapsalon_food_items.png` (512x256)
-- [ ] `npc_willem_kemal.png` (512x512)
+- [ ] `npc_wim_kemal.png` (512x512)
 - [ ] `npc_kapsalon_customers.png` (1024x256)
 - [ ] `kapsalon_effects.png` (512x256)
 - [ ] `kapsalon_ui.png` (512x512)
@@ -554,7 +554,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Seedy Underbelly Present | ✅ | 1200-calorie 3 AM cardiovascular events, cheese-on-everything philosophy at its conclusion |
 | Gameplay Value Established | ✅ | Ordering system, two status effects, fork event, King Size challenge, collectible tray |
 | Technical Feasibility | ✅ | Static assembly/cheese fallbacks per profile; overlay-based glow; group blocks |
-| Mobile Performance Budget | ✅ | 45 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion set, 44px touch zones |
 | No Crypto Elements | ✅ | Pure cheese-based currency of satisfaction |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |

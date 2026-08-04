@@ -29,8 +29,8 @@ Aaron recently quit smoking. These are the substitute, and the ritual he has bui
 | Attribute | Value |
 |-----------|-------|
 | **Purchase Price** | N/A (gift only — never sold by any vendor in the game, in any city) |
-| **Actual Value** | €0.40 per carton, available within four minutes' walk of every location the party visits |
-| **Resale Value** | €0 (worthless) |
+| **Actual Value** | 0.40 Sovs per carton, available within four minutes' walk of every location the party visits |
+| **Resale Value** | 0 Sovs (worthless) |
 | **Can Be Sold** | No — no vendor will take them, and the bros would not part with them regardless |
 | **Can Be Dropped** | No (permanent party item) |
 | **Can Be Traded** | No — but the bros offer them to NPCs constantly, unprompted, forever |

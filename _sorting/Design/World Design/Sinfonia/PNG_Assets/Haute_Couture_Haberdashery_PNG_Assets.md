@@ -237,7 +237,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | ticket_write | (144, 96) | 48x96 | Restating the true price at normal volume |
 | champagne_offer | (192, 96) | 48x96 | Well-dressed arrival: "You clearly understand quality." |
 | sigh_comply | (240, 96) | 48x96 | Rush tailoring, +50%; he sighs, and complies |
-| consultation | (288, 96) | 48x96 | €100 wardrobe advice, gesturing at synergies |
+| consultation | (288, 96) | 48x96 | 100 Sovs wardrobe advice, gesturing at synergies |
 | lock_check | (336, 96) | 48x96 | Two fingers on the vitrine lock, 7 PM, every night, every game state |
 
 ### The Vitrine & Quest States (48x96 each):
@@ -366,7 +366,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | Bro Mannequin Pose C | (0, 192) | 48x96 | The third plinth |
 | Mannequin Beat, Eleven-Second Hold | (48, 192) | 144x96 | Three men in opera capes on display plinths — framed for portrait capture |
 | Assessment Protocol Reaction, Party | (192, 192) | 96x96 | Three tourists in the doorway under the gaze |
-| Post-Purchase Party, Elevated | (288, 192) | 96x96 | €800 of merchandise; "we're CLIENTELE" |
+| Post-Purchase Party, Elevated | (288, 192) | 96x96 | 800 Sovs of merchandise; "we're CLIENTELE" |
 
 ### Character Notes:
 - The three mannequin poses must silhouette-match the Sheet 2 showroom mannequins at plinth scale — the gag only works if the count is genuinely ambiguous from a distance
@@ -384,13 +384,13 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 ### Premium Collection & Garments:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| The Emperor's Ensemble | (0, 0) | 64x96 | €750, +8 Charm +5 Style — automatic respect from all Sinfonia NPCs |
-| Prima Donna Gown | (64, 0) | 64x96 | €600, +6 Charm +4 Performance |
-| Conductor's Tuxedo | (128, 0) | 48x64 | €300, +5 Charm +3 Performance, +15% rhythm-timed damage |
-| Opera Cape | (176, 0) | 48x64 | €200. It has been €200 all season |
-| Virtuoso's Vest | (224, 0) | 48x64 | €350, +4 Performance +3 Charm |
-| Aristocrat's Walking Stick | (272, 0) | 32x64 | €250, weapon, 1.2x damage, chance to Embarrass |
-| The Phantom's Mask | (304, 0) | 48x48 | €400, +4 Mystery +3 Charm |
+| The Emperor's Ensemble | (0, 0) | 64x96 | 750 Sovs, +8 Charm +5 Style — automatic respect from all Sinfonia NPCs |
+| Prima Donna Gown | (64, 0) | 64x96 | 600 Sovs, +6 Charm +4 Performance |
+| Conductor's Tuxedo | (128, 0) | 48x64 | 300 Sovs, +5 Charm +3 Performance, +15% rhythm-timed damage |
+| Opera Cape | (176, 0) | 48x64 | 200 Sovs. It has been 200 Sovs all season |
+| Virtuoso's Vest | (224, 0) | 48x64 | 350 Sovs, +4 Performance +3 Charm |
+| Aristocrat's Walking Stick | (272, 0) | 32x64 | 250 Sovs, weapon, 1.2x damage, chance to Embarrass |
+| The Phantom's Mask | (304, 0) | 48x48 | 400 Sovs, +4 Mystery +3 Charm |
 | The Phantom's Mask, Worn | (304, 48) | 48x48 | Masquerade state |
 | Black-Tie Attire Set | (352, 0) | 48x64 | Gates one of three routes into The Black-Tie Backroom |
 | Midnight Worsted Bolt, 13 Metres | (400, 0) | 64x48 | PATH A errand payload |
@@ -406,15 +406,15 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 ### Accessories & Small Items:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Formal Gloves | (0, 96) | 32x32 | €75, +2 Charm, halves Embarrassed duration |
-| Ballroom Shoes | (32, 96) | 32x32 | €150, +3 Dance +2 Speed |
-| Cultural Critic's Monocle | (64, 96) | 32x32 | €175, +3 INT, forgery detection |
-| Maestro's Cufflinks | (96, 96) | 32x32 | €125, +10% rhythm timing window |
-| Opera Glasses | (128, 96) | 32x32 | €100, +2 Perception |
-| Ivory Fan | (160, 96) | 32x32 | €90, +2 Style, fans away one status per battle |
-| Pearl Cufflinks | (192, 96) | 32x32 | €80, +5% shop discounts |
-| Silk Pocket Square | (224, 96) | 24x24 | €50, prevents Disheveled |
-| Velvet Bow Tie | (248, 96) | 24x24 | €60, required for some formal venues |
+| Formal Gloves | (0, 96) | 32x32 | 75 Sovs, +2 Charm, halves Embarrassed duration |
+| Ballroom Shoes | (32, 96) | 32x32 | 150 Sovs, +3 Dance +2 Speed |
+| Cultural Critic's Monocle | (64, 96) | 32x32 | 175 Sovs, +3 INT, forgery detection |
+| Maestro's Cufflinks | (96, 96) | 32x32 | 125 Sovs, +10% rhythm timing window |
+| Opera Glasses | (128, 96) | 32x32 | 100 Sovs, +2 Perception |
+| Ivory Fan | (160, 96) | 32x32 | 90 Sovs, +2 Style, fans away one status per battle |
+| Pearl Cufflinks | (192, 96) | 32x32 | 80 Sovs, +5% shop discounts |
+| Silk Pocket Square | (224, 96) | 24x24 | 50 Sovs, prevents Disheveled |
+| Velvet Bow Tie | (248, 96) | 24x24 | 60 Sovs, required for some formal venues |
 | Valued Client Badge | (272, 96) | 32x32 | Status indicator |
 | Champagne Coupe | (304, 96) | 32x32 | Standard grade |
 | Better Champagne Coupe | (336, 96) | 32x32 | Valued Client grade |
@@ -433,29 +433,29 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | Vest On Hanger | (192, 128) | 48x64 | Showroom display state |
 | Accessories On Velvet Pillow | (240, 128) | 48x32 | Alcove presentation |
 | Cufflinks On Velvet Pillow | (240, 160) | 48x32 | Alcove presentation |
-| Alteration Ticket | (288, 128) | 48x32 | +€50, return later |
+| Alteration Ticket | (288, 128) | 48x32 | +50 Sovs, return later |
 | Perfect-Fit Tag (+1) | (288, 160) | 48x32 | Genuinely worth it |
 | Garment Box, Black With Gold | (336, 128) | 64x64 | Purchase packaging |
 | Garment Bag | (400, 128) | 48x64 | Carry state |
-| Receipt, €800 | (448, 128) | 64x64 | "That's not a receipt, that's a RÉSUMÉ." |
+| Receipt, 800 Sovs | (448, 128) | 64x64 | "That's not a receipt, that's a RÉSUMÉ." |
 
 ### Transaction & Tier Props:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Price Card, Blank Reverse | (0, 192) | 48x32 | Prices not visible on the floor |
-| Price Card "€200" | (48, 192) | 48x32 | The cape, all season |
-| Price Card "€750" | (96, 192) | 48x32 | The Emperor's Ensemble |
+| Price Card "200 Sovs" | (48, 192) | 48x32 | The cape, all season |
+| Price Card "750 Sovs" | (96, 192) | 48x32 | The Emperor's Ensemble |
 | Ticket Book Open | (144, 192) | 64x32 | Where the true price is written |
 | Assessment Protocol Icon | (208, 192) | 32x32 | Fires on first entry per outfit state |
-| Tier Plate: Client | (240, 192) | 64x32 | €0, standard treatment |
-| Tier Plate: Valued Client | (304, 192) | 64x32 | €500, private room, 10% off |
-| Tier Plate: Distinguished Client | (368, 192) | 64x32 | €1000, 15% off, reserved items |
-| Tier Plate: Patron of Fashion | (432, 192) | 64x32 | €2000, 20% off, custom orders |
+| Tier Plate: Client | (240, 192) | 64x32 | 0 Sovs, standard treatment |
+| Tier Plate: Valued Client | (304, 192) | 64x32 | 500 Sovs, private room, 10% off |
+| Tier Plate: Distinguished Client | (368, 192) | 64x32 | 1000 Sovs, 15% off, reserved items |
+| Tier Plate: Patron of Fashion | (432, 192) | 64x32 | 2000 Sovs, 20% off, custom orders |
 | Outfit Comparison Stat Card | (0, 224) | 128x32 | Fitting-room stat delta |
-| Synergy Reveal Card | (128, 224) | 96x32 | €100 consultation output |
+| Synergy Reveal Card | (128, 224) | 96x32 | 100 Sovs consultation output |
 | Champagne Bottle, Two Grades | (224, 224) | 32x32 | Both visible; only one offered |
 | Caption Plate "Investment Piece" | (256, 224) | 80x32 | Standard selfie |
-| Caption Plate "The Old Me Is Dead" | (336, 224) | 88x32 | Requires €300+ in one visit |
+| Caption Plate "The Old Me Is Dead" | (336, 224) | 88x32 | Requires 300 Sovs+ in one visit |
 | Caption Plate "They Know My Name Now" | (424, 224) | 88x32 | Requires Patron of Fashion |
 
 ### Technical Notes:
@@ -549,10 +549,10 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 ### Client Tier Track:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Tier Track Bar | (0, 160) | 160x24 | €0 → €2000 rail |
+| Tier Track Bar | (0, 160) | 160x24 | 0 Sovs → 2000 Sovs rail |
 | Tier Pip | (160, 160) | 24x24 | Milestone marker, filled/empty |
 | Discount Badge | (184, 160) | 24x24 | 10% / 15% / 20% |
-| Valued Client Badge Large | (208, 160) | 48x48 | €500 unlock hero art |
+| Valued Client Badge Large | (208, 160) | 48x48 | 500 Sovs unlock hero art |
 | Spend Counter Plate | (0, 184) | 96x24 | Running total |
 | Private Room Unlock Banner | (96, 184) | 112x24 | Less public judgment |
 
@@ -599,7 +599,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Pattern:** Continuous write; the restated price lands on frame 2
 - **Trigger:** Any purchase confirmation
 - **Purpose:** The complete truth of the transaction, delivered at entirely normal volume, while the buyers celebrate a robbery
-- **Audio Sync:** Refined register chime on frame 1; "It has been €200 all season" spoken flat across frame 2 — no smirk, no emphasis on any word
+- **Audio Sync:** Refined register chime on frame 1; "It has been 200 Sovs all season" spoken flat across frame 2 — no smirk, no emphasis on any word
 - **Mobile Optimization:** None needed
 
 ### The Vitrine Unlock (PATH A):
@@ -739,7 +739,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | Low | No shimmer, no dust, static coupe, mirror reflection replaced with a flat tint pass, parallax off. **Vitrine spotlight and torch beam are retained at all LOD levels — they are quest-critical staging** |
 
 ### Performance Targets:
-- **Target FPS:** 40 (per location profile: "40 FPS target")
+- **Target FPS:** 60 (game-wide standard; location profile predates the 60 FPS ruling)
 - **Max Draw Calls:** 15 per frame (per location profile)
 - **Memory Footprint:** 40 MB maximum (per location profile)
 - **Particle Limit:** 20 (dust 8, champagne 6, shimmer 6 — the PATH B night scene disables dust and champagne entirely and spends the whole budget on nothing, because the sequence is silent and still)
@@ -773,7 +773,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 |----------------|-----------|--------|
 | Glass entry door opening | Door chime (disappointed / welcoming per outfit tier) | 0.3s before assessing_gaze frame 1 |
 | circling A/B/C | "The shoulders... the posture... the fabric choices..." | One fragment per frame; ellipses are silent held beats |
-| ticket_write frame 2 | "It has been €200 all season" — flat, normal volume | Mid-write |
+| ticket_write frame 2 | "It has been 200 Sovs all season" — flat, normal volume | Mid-write |
 | Price reveal plate | Subtle musical sting | On plate appear |
 | Purchase confirm | Refined register chime | On button release |
 | Valued Client unlock | Champagne cork pop | On tier badge swap |
@@ -791,10 +791,10 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | "The Emperor's Ensemble" | Emperor's Ensemble sprite + on-form display, Patron tier plate | Premium quest unlocking the highest-tier item |
 | "Fashion Critic" | Aiguille consultation frame, synergy reveal card, aristocrat/tourist/regular NPCs | He asks you to assess others' outfits |
 | "Patron of Fashion" | Tier track bar, all four tier plates, spend counter, caption "They Know My Name Now" | Reach maximum client status |
-| **"Nothing Is Getting Through" — PATH A** | Vitrine sealed → open → empty, separate key, two-handed lift, presentation sleeve, Gold Circle Coin, errand objective card, midnight worsted bolt + shoulder-carry, named_greeting frame | Valued Client (€500, existing tier) + the errand in formal wear, in daylight; then the handover ceremony |
+| **"Nothing Is Getting Through" — PATH A** | Vitrine sealed → open → empty, separate key, two-handed lift, presentation sleeve, Gold Circle Coin, errand objective card, midnight worsted bolt + shoulder-carry, named_greeting frame | Valued Client (500 Sovs, existing tier) + the errand in formal wear, in daylight; then the handover ceremony |
 | **"Nothing Is Getting Through" — PATH B** | Night façade overlay, service door + torch hook + step, all four patrol frames, plinth sweep, the_count, three bro mannequin poses, eleven-second hold composite, pose-hold timer ring, patrol clock bar, Groin Blurt warning, plinth labeled "3", valued_clients_pause, pose_compliment | After-hours infiltration (shop closes 7 PM) in formal wear purchased from this shop |
 | Selfie Spot — Standard | Three-way mirror, caption "Investment Piece" | Any visit in new equipment |
-| Selfie Spot — "The Transformation" | Three-way mirror, old clothes prop in corner, caption "The Old Me Is Dead" | Spend €300+ in one visit |
+| Selfie Spot — "The Transformation" | Three-way mirror, old clothes prop in corner, caption "The Old Me Is Dead" | Spend 300 Sovs+ in one visit |
 | Selfie Spot — "Distinguished Client" | Private fitting room, better champagne coupe, caption "They Know My Name Now" | Patron of Fashion status |
 
 ### Cross-Location Dependencies:
@@ -850,14 +850,14 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - "It is not for sale. It is for aspiration." - the vitrine placard
 - "That is a statement about you. It is not a statement about the case." - Monsieur Aiguille
 - "Welcome to Haute Couture. I see we have... work to do." - Monsieur Aiguille
-- "The cape is €200. It has been €200 all season. I should not like the gentleman to feel he had underpaid." - Monsieur Aiguille
+- "The cape is 200 Sovs. It has been 200 Sovs all season. I should not like the gentleman to feel he had underpaid." - Monsieur Aiguille
 - "It is an observation of progress." - Monsieur Aiguille
 - "It was not a small hem." - Monsieur Aiguille
-- "They spent five hundred euro to be told their own names. Do not laugh. Everyone here did." - Monsieur Aiguille
+- "They spent five hundred Sovs to be told their own names. Do not laugh. Everyone here did." - Monsieur Aiguille
 - "The mannequins are two. There are two mannequins." - The Night Porter
 - "You hold a pose well, sir. Most men move." - The Night Porter
-- "Two hundred euro for a cape. Well. It is a very good cape." - The Night Porter, ambient round line
-- "EIGHT HUNDRED EUROS, boys — for ALL of it. That's not a receipt, that's a RÉSUMÉ." - Chadwick
+- "Two hundred Sovs for a cape. Well. It is a very good cape." - The Night Porter, ambient round line
+- "EIGHT HUNDRED SOVS, boys — for ALL of it. That's not a receipt, that's a RÉSUMÉ." - Chadwick
 
 ---
 
@@ -950,7 +950,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | Seedy Underbelly Present | ✅ | The profile's "Buffoon Exploitation" section: a shop that assesses arrivals instantly, guides them toward "transformative" pieces, and is engineered so they spend more than planned. Plus PATH B: after-hours infiltration and theft from the vitrine |
 | Gameplay Value Established | ✅ | 16-item equipment shop, fitting-room stat-comparison mechanic, four-tier client ladder, three special services, Assessment Protocol, two-path quest hub, three selfie variants, seven achievements |
 | Technical Feasibility | ✅ | Eight sheets, three atlases, three LOD tiers, scene-state (not scene-swap) night mode, CPU particles only |
-| Mobile Performance Budget | ✅ | 40 FPS / 15 draw calls / 40 MB taken verbatim from the profile's stated budget. Flagged: 40 FPS is below the 60 FPS engine default — confirm deliberate low-end target |
+| Mobile Performance Budget | ✅ | 60 FPS / 15 draw calls / 40 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
 | Accessibility Features | ✅ | Visual glyphs for all eleven audio cues including the Night Porter's footstep and torch cues; static/reduced-motion variants for shimmer, champagne, cape tremble, torch sweep, parallax; shape-first UI coding |
 | No Crypto Elements | ✅ | None present. Confirmed absent in the location profile ("No crypto elements — Pure fashion snobbery") and in both NPC profiles' explicit crypto checks |
 | Social Media Integration | ✅ | Three documented selfie variants with unlock conditions, six screenshot moments, eleven quotable lines, one portrait-framed marquee beat with a live screenshot button |

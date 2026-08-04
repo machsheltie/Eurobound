@@ -8,6 +8,12 @@ Grand Entrance District
     • Guard inspection checkpoints as mini-challenges 
     • Dignitaries wandering around testing your etiquette 
     • Grand fountains and statues creating impressive atmosphere 
+    • ROYAL DECREE SIGN beside the main checkpoint — gilded post, over-ornate crest,
+      lower half crammed with tiny frantic text and red wax seals. Inspectable, never
+      required. Reads: [ROYAL DECREE NO. 402-B] / BY ORDER OF HIS MOST SPLENDID AND
+      FLAWLESS MAJESTY, KÖNIG KLAUS / Singing, humming, or rhyming about His Majesty
+      is strictly FORBIDDEN. Guards never enforce it and townspeople sing within
+      earshot of it constantly. Full spec: sinfonia_royal_jingles.md
 MusikGasse
 Street Performer District
     • Cobblestone streets filled with street musicians 
@@ -77,7 +83,7 @@ Opera-Themed Brewery
     • Theatrical drinking experience with mandatory toast performances
     • Bartenders perform pours with dramatic flourishes
     • "Bravo Challenge" stamp unlock — deliver toast speech to crowd
-    • Sinfonia Bottle Opener acquisition point (€25 or full performance)
+    • Sinfonia Bottle Opener acquisition point (25 Sovs or full performance)
     • Signature Beer: Curtain Call Copper (+25 HP, +3 Charm)
 Crown & Cask
 Imperial-Themed Brewery

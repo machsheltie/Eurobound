@@ -162,16 +162,16 @@ She loves the floor. Forty years in and the room still turns her on — the nois
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| "Complimentary" champagne | Free (built into the house edge) | Approximately €14 a glass to the house | Encourages continued play; refills arrive without being requested |
+| "Complimentary" champagne | Free (built into the house edge) | Approximately 14 Sovs a glass to the house | Encourages continued play; refills arrive without being requested |
 | Table recommendation | Free | Zero — the edge does not move | Marks a suggested table on the floor UI; the suggestion is always to a table with a higher minimum |
-| High Roller access | €1000 total won | Real | Lowers the house edge per the location's published table; she opens the velvet rope herself |
+| High Roller access | 1000 Sovs total won | Real | Lowers the house edge per the location's published table; she opens the velvet rope herself |
 | A quiet word | Free, unrequested | Considerable | Given to guests she has decided are having a genuinely bad night; always water, never advice about cards |
 
 ### Hidden Details / Easter Eggs
 - **Examine her notebook**: *"Black, small, closed. Nobody in this room has seen the inside of it, including the house."* It is never opened in any scene and its contents are never established.
 - **Examine her pearls**: *"Real. Old. Not a gift from anyone in this building."*
 - If the player wins big and then leaves immediately, she is at the arch with their coat before Siegfried is. She says nothing about it.
-- She addresses exactly one guest by first name on the floor, and it is a dealer's mother, who comes in on Tuesdays and plays €2 hands for four hours.
+- She addresses exactly one guest by first name on the floor, and it is a dealer's mother, who comes in on Tuesdays and plays 2 Sovs hands for four hours.
 
 ---
 
@@ -184,7 +184,7 @@ She loves the floor. Forty years in and the room still turns her on — the nois
 | Herr Falsch (`sinfonia_npc_herr_falsch_01`) | The most delicate relationship in the building. She watches him more closely than she watches anyone, he knows it, and neither of them has ever said a word about it in front of a guest. |
 | Graf von Zittrig (`sinfonia_npc_graf_von_zittrig_01`) | Genuine, unpatronising affection. She keeps water at his table and steers him toward the low minimums, which is the one place her professional interest and her personal one disagree — and the personal one wins, quietly, every night. |
 | Gräfin Stille (`sinfonia_npc_grafin_stille_01`) | Mutual professional respect at the highest level in the room. They have never had a conversation. Madame Karten has learned to read her, which nobody else has. |
-| Siegfried (`sinfonia_npc_siegfried_coatcheck_01`) | She hired him. Nobody else would have. She has never mentioned this to him or to anybody, and the €20 tip that unlocks his hospitality goes into his pocket, not the house's. |
+| Siegfried (`sinfonia_npc_siegfried_coatcheck_01`) | She hired him. Nobody else would have. She has never mentioned this to him or to anybody, and the 20 Sovs tip that unlocks his hospitality goes into his pocket, not the house's. |
 | Aaron the Unflappable (`sinfonia_npc_aaron_unflappable_01`) | The one player on her floor she never steers. She calls last year's pot "the kings," with the definite article, and does not elaborate. |
 | The House Dealers | Trained by her, briefed by her nightly, and terrified of disappointing her in a way none of them can articulate |
 

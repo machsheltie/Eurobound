@@ -145,10 +145,10 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 ### Eyewear Station Stock:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Strobe Shades (Basic) | (0, 0) | 32x24 | €15 entry-level protection |
-| Strobe Shades (Premium) | (32, 0) | 32x24 | €35, statement AND function |
+| Strobe Shades (Basic) | (0, 0) | 32x24 | 15 Sovs entry-level protection |
+| Strobe Shades (Premium) | (32, 0) | 32x24 | 35 Sovs, statement AND function |
 | LED Glasses (Static) | (64, 0) | 32x24 | Single color, maximum impact |
-| LED Glasses (Programmable) | (96, 0) | 32x24 | €50, control your own light show |
+| LED Glasses (Programmable) | (96, 0) | 32x24 | 50 Sovs, control your own light show |
 | Mirror Shades (Chrome) | (128, 0) | 32x24 | They see themselves, not you |
 | "The Bouncer" Aviators | (160, 0) | 32x24 | Professional recognition |
 | "Inner Circle" Shades | (192, 0) | 32x24 | Premium Stock exclusive |
@@ -464,7 +464,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 | Low | Static neon, no gleam/fog/rings, 2 customer NPCs, tint-pulse entry instead of shockwave |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 34 MB maximum
 - **Particle Limit:** 16 (fog + sparkles combined)
@@ -634,7 +634,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 | Seedy Underbelly Present | ✅ | Premium prices for "VIP potential" that may never materialize |
 | Gameplay Value Established | ✅ | Stat gear (Style/Intimidation/Visibility), boss-gated stock, Bravado hooks, Velvet Curtain integration |
 | Technical Feasibility | ✅ | 8 sheets, on-demand overlays, region-swap gear system — all standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 45 FPS / 14 draw calls / 34 MB per profile; estimate ~19 MB |
+| Mobile Performance Budget | ✅ | 60 FPS / 14 draw calls / 34 MB per profile; estimate ~19 MB |
 | Accessibility Features | ✅ | Strobe-disable path, visual cues for every audio beat, shape-coded stats |
 | No Crypto Elements | ✅ | Pure fashion status commerce (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

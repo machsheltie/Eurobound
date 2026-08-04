@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: Always accessible once discovered (24-hour operation)
 - **Stat Requirements**: None for basic entry
-- **Item Requirements**: Cash for food purchases (2-6 euros per item)
+- **Item Requirements**: Cash for food purchases (2-6 Sovs per item)
 - **Previous Location Requirements**: Must have visited 24-Hour Internet Café front area
 - **Special Conditions**: Hidden entrance requires reading graffiti clue in front café restroom stall
 
@@ -172,31 +172,31 @@
 ## Menu System Integration
 ### Complete Menu with Gameplay Effects
 
-#### **CryptoDöner Box - 5€**
+#### **CryptoDöner Box - 5 Sovs**
 - **Description**: "Meat. Data. Destiny." - Mystery meat origin with digital presentation
 - **Positive Effects**: +2 random stats (beneficial for various encounter types)
 - **Negative Effects**: DigiDysentery status (menu button inversion for 2 minutes)
 - **Strategic Value**: High-risk high-reward item for desperate stat needs
 
-#### **Thermal Paste Sundae - 3€**
+#### **Thermal Paste Sundae - 3 Sovs**
 - **Description**: Grey blob topped with rainbow sprinkles (aesthetically questionable)
 - **Positive Effects**: +5 Intelligence for 1 battle (significant cognitive boost)
 - **Negative Effects**: -3 HP every turn during enhanced battle
 - **Strategic Use**: Glass cannon approach for intelligence-dependent encounters
 
-#### **RAM Chips & Dip - 4€**
+#### **RAM Chips & Dip - 4 Sovs**
 - **Description**: Fried circuit board served with "Queso.exe"
 - **Positive Effects**: +15% XP from next battle (significant experience bonus)
 - **Negative Effects**: May attract popup mobs (additional combat encounters)
 - **Risk Assessment**: Experience gain offset by increased battle frequency
 
-#### **Alt+Meat Slider - 6€**
+#### **Alt+Meat Slider - 6 Sovs**
 - **Description**: Lab-grown, printer-formed meat patty with AI sauce
 - **Positive Effects**: +5 HP, +1 Bravado (solid stat improvements)
 - **Negative Effects**: 20% chance of unlockable ICQ dialogue (social complications)
 - **Social Integration**: May trigger additional quest content through ICQ system
 
-#### **404 Juice - 2€**
+#### **404 Juice - 2 Sovs**
 - **Description**: Slushie made from blue raspberry and poor life decisions
 - **Positive Effects**: Cures Sleep status (practical utility item)
 - **Negative Effects**: "Caffeine Twitch" status (movement speed jitters)

@@ -104,7 +104,7 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: The commodification of "authentic" cultural experiences for tourists; Americans treating high culture like a theme park
 - **Secondary Targets**: 
-  - Overpriced tourist services (Fiaker rides €80+ for 20 minutes)
+  - Overpriced tourist services (Fiaker rides 80 Sovs+ for 20 minutes)
   - The gap between cultural pretension and actual behavior (drunk Fiaker drivers)
   - Tourist photo obsession reducing art to social media content
 - **Cultural Specificity**: 
@@ -117,12 +117,12 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Tourist exploitation through overpriced "authentic" experiences
 - **City-Specific Comedy Operations**: 
-  - Fiaker drivers charging €100+ for "special routes" that are just traffic jams
-  - Café charging €15 for espresso with "historic view supplement"
+  - Fiaker drivers charging 100 Sovs+ for "special routes" that are just traffic jams
+  - Café charging 15 Sovs for espresso with "historic view supplement"
   - Ticket scalpers outside opera selling "last minute" seats for 5x face value
 - **Buffoon Exploitation**: Bros believe paying more = more authentic experience; readily pay inflated prices thinking they're getting VIP treatment
 - **Comedy of Errors**: Hans-Jürgen losing Gustav is the culmination of tourist-industry dysfunction
-- **Consequence System**: Bros' property damage bill grows throughout the Fiaker Fiasco (€340 café + €2,000 opera = €2,340 minimum)
+- **Consequence System**: Bros' property damage bill grows throughout the Fiaker Fiasco (340 Sovs café + 2,000 Sovs opera = 2,340 Sovs minimum)
 
 ### 🍺 BUFFOON DELUSION SCENARIOS
 
@@ -187,7 +187,7 @@
   - Ticket Scalper (sells "last minute" opera seats)
   - Pigeon Lady (feeds birds, warns about "the American horse-chasers" after quest)
 - **Objects & Items**:
-  - Fountain (searchable for coins, +€2)
+  - Fountain (searchable for coins, +2 Sovs)
   - Fiaker Queue Sign (readable, contains rules Hans-Jürgen breaks)
   - Opera Poster Board (shows current performances)
   - Street Performer Hat (donate for small Charm boost)
@@ -202,13 +202,13 @@
 
 ### Economic Integration
 - **Shop Functionality**: No formal shops, but vendor interactions present
-- **Currency Accepted**: Euro (with "cultural district premium")
+- **Currency Accepted**: Sov (with "cultural district premium")
 - **Price Structure**:
-  - Fiaker ride (20 minutes): €80-120 (depending on driver's perception of tourist gullibility)
-  - Terrace Espresso: €8 (€15 with "historic view supplement")
-  - Selfie with Fiaker horse: €5 (tip to driver)
-  - Opera scalper tickets: €200-500 (face value €40-80)
-  - Street performer tip: €1-5 (affects subsequent interaction quality)
+  - Fiaker ride (20 minutes): 80 Sovs-120 (depending on driver's perception of tourist gullibility)
+  - Terrace Espresso: 8 Sovs (15 Sovs with "historic view supplement")
+  - Selfie with Fiaker horse: 5 Sovs (tip to driver)
+  - Opera scalper tickets: 200 Sovs-500 (face value 40 Sovs-80)
+  - Street performer tip: 1 Sov-5 (affects subsequent interaction quality)
 - **Economic Role**: Demonstrates Sinfonia's tourist-extraction economy; sets up financial stakes for Fiaker Fiasco damages
 
 ### Quest Integration
@@ -236,7 +236,7 @@
 - **Social Buffs**: 
   - "Opera Exposure" - listening to rehearsal through windows grants +2 Performance temporarily
 - **Recovery Options**: 
-  - Espresso removes Tired status (€8)
+  - Espresso removes Tired status (8 Sovs)
   - Listening to street performer removes Stressed status
 
 ### Cross-Location Dependencies
@@ -369,7 +369,7 @@
 **Café Terrace Maître D'**:
 - Snooty, protective of terrace furniture
 - Escalates to panic during Gustav rampage
-- "That horse just ate an €18 Sachertorte! WHO IS RESPONSIBLE?!"
+- "That horse just ate an 18 Sovs Sachertorte! WHO IS RESPONSIBLE?!"
 
 **Street Performer (Violin)**:
 - Young woman, actually talented

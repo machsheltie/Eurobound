@@ -1,6 +1,6 @@
 # Stadtpark (Gustav's Refuge)
 
-*Where a horse's midlife crisis meets a trio of Americans with €2,340 in property damage and a bag of Skittles*
+*Where a horse's midlife crisis meets a trio of Americans with 2,340 Sovs in property damage and a bag of Skittles*
 
 ## Location Identity
 - **Location ID**: `sinfonia_stadtpark_gustavs_refuge_01`
@@ -18,7 +18,7 @@ The Stadtpark is Sinfonia's grand public park—a sprawling green oasis amid bar
 
 ### Fiaker Fiasco Context
 - **Phase 4 (Final)**: The resolution of the chase
-- **Running Damage Total**: €2,340 (or €1,940 via Papageno path)
+- **Running Damage Total**: 2,340 Sovs (or 1,940 Sovs via Papageno path)
 - **Stakes**: Hans-Jürgen's livelihood, Gustav's freedom, bros' conscience (if they have one)
 - **Resolution Options**: Multiple endings based on player choices
 
@@ -76,6 +76,40 @@ Gustav isn't just running—he's *escaping*. After years of tourist service, he'
   - Drinking fountains
   - Public restroom (locked at night)
   - Park ranger station (empty at night)
+  - Retired horse stalls, north pasture fence (post-game state only — see Easter Egg below)
+
+---
+
+## 🥚 Easter Egg: The Retired Stalls
+
+**State:** Post-game / epilogue only. Appears once the Fiaker Fiasco epilogue has played and Klaus has retired to the pasture next to Gustav. Not present during the main quest.
+
+Two stalls stand at the north pasture fence, each with a brass nameplate bolted to the door. Both plates are polished; someone still looks after them.
+
+| Stall | Occupant | Nameplate |
+|-------|----------|-----------|
+| Left | Gustav | `GUSTAV` |
+| Right | Klaus | `KING KLAUS` |
+
+**Interaction:** `examinable: klaus_stall_nameplate` — approach the right-hand stall door.
+
+**Examine text:**
+> A brass nameplate, polished to a shine. Someone maintains this.
+>
+> It reads: **KING KLAUS**.
+>
+> The horse regards you with the serene confidence of a monarch who has never once been challenged.
+
+**Why:** Hans-Jürgen named the colt after König Klaus (Crown & Cask) as a deliberate insult — the yearling was a biter, a kicker, and a habitual escapee. He then paid an engraver for a brass plate, in English, title included, so the insult could never be written off as coincidence. Full canon in `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Canon Note: Why the Horse Is Called Klaus".
+
+**The setup:** Sinfonia townspeople sing passing one-line jingles about an unnamed, useless, gold-hoarding monarch (`Design/World Design/Sinfonia/sinfonia_royal_jingles.md`). They never name him. A player who tuned them out reads this plate as "cute, a horse with a royal name." A player who listened reads it and assembles the entire petty picture instantly. **Both readings are correct and neither requires explanation** — which is why nothing here may explain it.
+
+**Implementation rules:**
+- No narrator line, no bro reaction, no follow-up dialogue. The plate is the punchline.
+- Gustav's plate reads plain `GUSTAV`. The contrast is the joke.
+- Examining it again shows identical text — no escalation, no wink.
+- Works for players who never met König Klaus (a horse with a grand name) and better for those who did. Never gate it.
+- Both stalls are examinable; only Klaus's carries the gag.
 
 ### Atmospheric Elements
 - Moonlight filtering through trees
@@ -240,9 +274,9 @@ Gustav isn't just running—he's *escaping*. After years of tourist service, he'
 
 **Key Quotes**:
 - "THERE you are! You think you can run from Sinfonia-trained lawyers?!"
-- "€2,000! Plus emotional damages! Plus—" *sees Gustav* "...why is that horse wearing a cape?"
+- "2,000 Sovs! Plus emotional damages! Plus—" *sees Gustav* "...why is that horse wearing a cape?"
 - *If paid*: "Hmph. Very well. The arts... accept your contribution."
-- *If negotiated*: "Hans-Jürgen's insurance covers... some. You owe... €1,000. Final."
+- *If negotiated*: "Hans-Jürgen's insurance covers... some. You owe... 1,000 Sovs. Final."
 
 ---
 
@@ -288,7 +322,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 **Outcome**:
 - Gustav returns to fiaker service
 - Hans-Jürgen promises: No more bachelor parties, shorter hours, more Skittles
-- Bros' damage debt is reduced by €500 (gratitude discount)
+- Bros' damage debt is reduced by 500 Sovs (gratitude discount — `hans_jurgen_path_a_contribution`, separate from and stacking with the single 170 Sovs café relief)
 - Unlock: "Horse Whisperer" achievement
 - Unlock: Fiaker fast-travel in Sinfonia
 
@@ -309,7 +343,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 **Outcome**:
 - Gustav becomes "park horse," lives in Stadtpark
 - Hans-Jürgen accepts, gets insurance payout
-- Bros' damage debt remains full (no discount)
+- Bros' damage debt remains full (no 500 Sovs contribution). The single 170 Sovs café relief still applies if it was claimed via café dialogue option 3; Hans-Jürgen's 170 Sovs insurance payout is unavailable on this path (no claim)
 - Unlock: "Liberation" achievement
 - Gustav appears in park as permanent NPC (gives buffs when visited)
 
@@ -330,7 +364,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 **Outcome**:
 - Gustav runs off into the night, never seen again
 - Hans-Jürgen devastated, quits fiaker business
-- Bros' damage debt increases by €1,000 (horse value added)
+- Bros' damage debt increases by 1,000 Sovs (horse value added)
 - No achievement
 - Permanent guilt marker in Bros' journal
 
@@ -349,7 +383,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 
 **Outcome**:
 - Quest "fails," but technically completes
-- Damage debt remains plus €500 abandonment fee
+- Damage debt remains plus 500 Sovs abandonment fee
 - Hans-Jürgen becomes hostile NPC
 - Gustav fate unknown
 - "Coward" status effect (temporary)
@@ -360,14 +394,16 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 
 ### Damage Resolution Summary
 
+> **This table is base damage only, before any relief.** The authoritative arithmetic — including the single 170 Sovs relief, Hans-Jürgen's 500 Sovs Path A contribution, the Path C/D penalties, and the resulting player-owed figures per path — lives in `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". Where this table and that block disagree, that block wins.
+
 | Debt Component | Amount | Notes |
 |----------------|--------|-------|
-| Opera House Plaza | €0 | No damage |
-| Café Sachertorte | €340 | Fixed amount |
-| Opera Backstage | €2,000 (€1,600 optimal) | Papageno path saves €400 |
-| Prima Donna | €500 (€200 negotiated) | Charm 4 reduces |
-| **Total Maximum** | **€2,840** | Everything goes wrong |
-| **Total Optimal** | **€1,940** | Perfect path |
+| Opera House Plaza | 0 Sovs | No damage |
+| Café Sachertorte | 340 Sovs | Fixed amount |
+| Opera Backstage | 2,000 Sovs (1,600 Sovs optimal) | Papageno path saves 400 Sovs |
+| Prima Donna | 500 Sovs (200 Sovs negotiated) | Charm 4 reduces |
+| **Total Maximum** | **2,840 Sovs** | Everything goes wrong |
+| **Total Optimal** | **1,940 Sovs** | Perfect path |
 
 ### Payment Options at Stadtpark
 
@@ -375,18 +411,29 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 - Pay full amount: Debt cleared, reputation restored
 - Bros can afford (barely) from quest rewards
 
-**Hans-Jürgen Insurance**:
-- Path A: Insurance covers €500 (Gustav recovered)
-- Path B: Insurance covers €0 (Gustav gone, no claim)
-- Path C: Insurance owes Hans-Jürgen (no help)
+**Hans-Jürgen — two separate pots, do not merge them**:
+
+1. **Path A contribution — 500 Sovs** (`hans_jurgen_path_a_contribution`)
+   - Path A: −500 Sovs against the accumulated total (Gustav recovered, gratitude)
+   - Path B: 0 Sovs (Gustav gone, no claim)
+   - Path C: 0 Sovs (the insurer owes *him*; no help available)
+   - Path D: 0 Sovs
+   - **Stacks with the 170 Sovs café relief below.** Sometimes flavoured as "insurance" in his dialogue; it is nonetheless a different pot.
+
+2. **Café insurance payout — 170 Sovs** (`debt_relief_claimed`)
+   - Path A only, and **only if the 170 Sovs relief has not already been consumed** by café dialogue option 3 ("That horse doesn't belong to us!") back in Stage 1, or rendered moot by paying the café 340 Sovs in full.
+   - The payout and the option-3 halving are **the same single relief and are mutually exclusive**. Whichever fires first sets `debt_relief_claimed = true`; the other is disabled, greyed out in the payment UI, and its dialogue line is not offered.
+   - Never apply a second 170 Sovs.
+
+> **Authoritative arithmetic**: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it.
 
 **Negotiation with Director** (if present):
-- Charm 4: Reduce opera debt by €500
-- Bravado 4: Intimidate reduction by €300
-- Pay €500 minimum: Rest on "installment"
+- Charm 4: Reduce opera debt by 500 Sovs
+- Bravado 4: Intimidate reduction by 300 Sovs
+- Pay 500 Sovs minimum: Rest on "installment"
 
 **Installment Plan**:
-- Pay €500 minimum
+- Pay 500 Sovs minimum
 - Rest tracked as ongoing debt
 - Vendors in Sinfonia know about debt
 - Can affect shop prices until cleared
@@ -406,7 +453,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 - **Description**: Ornate cast-iron benches scattered throughout
 - **Night Occupants**: 
   - Couple making out (oblivious to chase)
-  - Homeless philosopher (offers wisdom for €1)
+  - Homeless philosopher (offers wisdom for 1 Sov)
   - Sleeping tourist (doesn't wake)
 
 ### Ornamental Pond
@@ -614,8 +661,8 @@ Stadtpark/
 ### Crypto Warning
 - [x] NO crypto elements
 - [x] Focus on emotional/comedic resolution
-- [x] All payments in Euros
+- [x] All payments in Sovs
 
 ---
 
-**Stadtpark: Where a runaway horse, a bag of Skittles, and €2,340 in property damage somehow add up to the most emotionally resonant moment in Eurobound.**
+**Stadtpark: Where a runaway horse, a bag of Skittles, and 2,340 Sovs in property damage somehow add up to the most emotionally resonant moment in Eurobound.**

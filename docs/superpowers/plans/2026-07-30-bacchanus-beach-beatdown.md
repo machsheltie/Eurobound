@@ -74,8 +74,8 @@ Claude-Session: https://claude.ai/code/session_016m7EuK9wAMbbWfimUxXwmP
 
 - [ ] **Step 1: Write the file** following the template, filled with (all from spec §5):
   - Identity: ID `item_trivia_champ_badge`, Display "Summer Vacation Trivia Champ Badge", Internal "Defective 2003 Party-Favor Sheriff Star", Type "Permanent Hybrid (Cosmetic + Passive)", Rarity "Common (bros think it's One-Of-A-Kind)", Source "Hamstradamus @ Fauxst Beach prize podium — win The Bacchanus Beach Beatdown".
-  - Deception: actually a ~€0.008 plastic gold kids' sheriff badge stamped "SUMMER VACATION TRIVIA CHAMP 2003" in flaking glitter (a badge makes zero sense as a trivia prize — bulk mystery merch); winning bro believes it's a wearable Mensa card / law-enforcement-grade credential of intellectual supremacy.
-  - Economics: purchase N/A (prize), actual value €0.008, resale €0, cannot be sold/dropped/traded.
+  - Deception: actually a ~0.008-Sov plastic gold kids' sheriff badge stamped "SUMMER VACATION TRIVIA CHAMP 2003" in flaking glitter (a badge makes zero sense as a trivia prize — bulk mystery merch); winning bro believes it's a wearable Mensa card / law-enforcement-grade credential of intellectual supremacy.
+  - Economics: purchase N/A (prize), actual value 0.008 Sovs, resale 0 Sovs, cannot be sold/dropped/traded.
   - Visuals: gold-painted plastic star, bent pin, glitter print; degradation table (Days 1-3 pristine → 4-7 paint flaking → 8+ bare gray plastic, pin rusted from river spray, text reads "SUM ER VAC TION T IVIA CH MP 2 03").
   - Stats code block: `Bravado: +3 ("the law of the beach")`, `Charm (Tourists): +1`, `Charm (Locals): -1 (they watch the show)`.
   - Passives table: **Aggressive Guessing** — 10% on taking damage, bro shouts a confidently incorrect fact ("ACTUALLY, hexagons are INFINITE!"), inflicts existing `Embarrassed` status on enemies 1 turn; **Deputy of Denial** — immune to first `Embarrassed` applied to wearer each battle.

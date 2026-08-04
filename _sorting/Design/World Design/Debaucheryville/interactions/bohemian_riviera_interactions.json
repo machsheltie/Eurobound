@@ -816,7 +816,7 @@
     },
     "riverbank_monuments": {
       "trigger": "after beatdown_complete",
-      "effect": "The launched units, fished out by Rosta, become permanent, navigable riverbank landmarks. By Day 6+, one has a vendor set up next to it and someone's laundry on it."
+      "effect": "The launched units, fished out by Rosťa, become permanent, navigable riverbank landmarks. By Day 6+, one has a vendor set up next to it and someone's laundry on it."
     }
   },
 

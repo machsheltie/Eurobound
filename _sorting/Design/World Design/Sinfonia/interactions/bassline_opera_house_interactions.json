@@ -4,13 +4,13 @@
   "npcs_present_by_zone": {
     "lobby": [
       "box_office_attendant_01",
-      "opera_usher_01",
+      "sinfonia_npc_opera_usher_01",
       "coat_check_01",
       "gift_shop_clerk_01",
       "maestros_assistant_01"
     ],
     "auditorium": [
-      "opera_usher_01",
+      "sinfonia_npc_opera_usher_01",
       "wandering_patrons"
     ],
     "backstage": [

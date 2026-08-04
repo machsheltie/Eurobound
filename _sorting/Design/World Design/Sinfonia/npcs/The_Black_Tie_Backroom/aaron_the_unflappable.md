@@ -56,7 +56,7 @@ Everything the bros see is true and every conclusion they draw from it is wrong.
 - Total facial serenity at all times, in a room where everyone else's face is a full-time job.
 
 ### Sprite Notes
-Read him as the most relaxed man in a room where relaxation costs €500. The velvet must be *good* and *rumpled* — never shabby, never a joke costume; he is not underdressed, he is comfortable, and the difference has to be legible at 64px. Keep the tumbler in frame in every state; keep the wrapper drift on the table. Priority frames are the ritual cycle (stir / drag / **crunch** / fresh draw) — the crunch frame is the character's signature and should be the strongest single pose in the sheet, mouth closing on the candy, eyes calm, chips untouched. Reference energy: the one person at a formal event who is having a completely normal evening. He is never drawn as a punchline, never slumped, never sloppy, never sweaty. Dignity is a rendering requirement.
+Read him as the most relaxed man in a room where relaxation costs 500 Sovs. The velvet must be *good* and *rumpled* — never shabby, never a joke costume; he is not underdressed, he is comfortable, and the difference has to be legible at 64px. Keep the tumbler in frame in every state; keep the wrapper drift on the table. Priority frames are the ritual cycle (stir / drag / **crunch** / fresh draw) — the crunch frame is the character's signature and should be the strongest single pose in the sheet, mouth closing on the candy, eyes calm, chips untouched. Reference energy: the one person at a formal event who is having a completely normal evening. He is never drawn as a punchline, never slumped, never sloppy, never sweaty. Dignity is a rendering requirement.
 
 ---
 
@@ -209,7 +209,7 @@ Aaron sells nothing and provides no service. He is not a vendor, not a quest giv
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | `item_candy_smokes` (Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes) | Free — handed over at the encounter's grant beat | Pennies | Permanent novelty item; bite one for a small, short comedy Bravado buff and a chalky white ring; carton never empties (full spec: `Design/Inventory/items/candy_smokes_item.md`) |
-| `item_tractor_nft` ("She Thinks My Tractor's Sexy," Mint #42) | Free — handed over at the encounter's grant beat | €0 at any bank, exchange, or legitimate vendor | Quest item; advances the Frat Bro NFT hunt as one of Sinfonia's four (full spec: `Design/Inventory/items/tractor_nft_item.md`) |
+| `item_tractor_nft` ("She Thinks My Tractor's Sexy," Mint #42) | Free — handed over at the encounter's grant beat | 0 Sovs at any bank, exchange, or legitimate vendor | Quest item; advances the Frat Bro NFT hunt as one of Sinfonia's four (full spec: `Design/Inventory/items/tractor_nft_item.md`) |
 | A hit of the White Russian | Free, offered sincerely | — | Always declined. The offer is made every time regardless. |
 
 ### Hidden Details / Easter Eggs
@@ -306,17 +306,17 @@ All of the above ship in the single canonical main sheet **`aaron_the_unflappabl
 ### Primary Quest (If Applicable)
 - **Quest**: "The Kings Were Humming" (`sinfonia_sidequest_the_kings_were_humming_01`) — full staging in `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
 - **Role**: Centerpiece of a scripted spectator cinematic. Aaron is the opponent in the scene and is **not** an opponent in any mechanical sense — the poker betting UI never opens at his table, the player never holds cards, and no path exists in which the outcome differs.
-- **Trigger**: `blacktie_event_kings_were_humming_01` — approaching the corner table inside the Backroom with entry conditions met (attire/stat check passed at the door, €500 collateral posted). One time only.
-- **Outcome**: The party's €500 door-collateral chips are lost — exactly that, never more; gold above €500 is untouched. Both item grants fire. Aaron transitions permanently to his ambient state and never re-triggers.
+- **Trigger**: `blacktie_event_kings_were_humming_01` — approaching the corner table inside the Backroom with entry conditions met (attire/stat check passed at the door, 500 Sovs collateral posted). One time only.
+- **Outcome**: The party's 500 Sovs door-collateral chips are lost — exactly that, never more; gold above 500 Sovs is untouched. Both item grants fire. Aaron transitions permanently to his ambient state and never re-triggers.
 
 ### Quest Gate Function (If Applicable)
-Aaron gates nothing and blocks nothing. The €500 door collateral is Anton's gate, upstream of him — an underfunded party is bounced before Aaron is ever on screen, so the encounter cannot fire underfunded. Downstream, a party that busts here can no longer immediately afford the Haute Couture Haberdashery's €500 Valued Client tier, which nudges broke players toward that quest's PATH B without hard-gating anything in either direction. Aaron is unaware that any of this is true of him and no character ever raises it.
+Aaron gates nothing and blocks nothing. The 500 Sovs door collateral is Anton's gate, upstream of him — an underfunded party is bounced before Aaron is ever on screen, so the encounter cannot fire underfunded. Downstream, a party that busts here can no longer immediately afford the Haute Couture Haberdashery's 500 Sovs Valued Client tier, which nudges broke players toward that quest's PATH B without hard-gating anything in either direction. Aaron is unaware that any of this is true of him and no character ever raises it.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | `item_candy_smokes` | Encounter grant beat, immediately after the sympathy beat | Yes | Novelty item; bite one for a small, short comedy Bravado buff plus chalk-ring visual; carton never empties |
-| `item_tractor_nft` | Encounter grant beat, immediately following the carton | Yes | Quest item; one of Sinfonia's four Frat Bro NFT targets; worth €0 to every vendor in the game |
+| `item_tractor_nft` | Encounter grant beat, immediately following the carton | Yes | Quest item; one of Sinfonia's four Frat Bro NFT targets; worth 0 Sovs to every vendor in the game |
 
 ---
 
@@ -381,7 +381,7 @@ Loose, warm, unhurried conversational English with no regional pin on it — the
 - **He is never the joke.** The satire runs entirely through the bros' misreading of him. He is not pathetic, not a slob, not a lucky idiot, and not secretly sad. He is the winner in this scene and every subsequent frame he appears in, and the art, audio, and writing must all hold that.
 - **Never playable.** The betting UI does not open at the corner table under any circumstances, in this build or any later one. There is no rematch, no difficulty tier, no "beat Aaron" achievement, and no path that puts a card in the player's hand at that table. His corner must be visually distinct from the room's real playable tables so the two are never confused.
 - **Verbatim quotes** (vibes speech, "The kings were humming, man. They wanted to stretch their legs.", the candy-smokes grant, the NFT grant, the exit line) ship byte-identical across this profile, `thekingswerehumming.md`, and the location's interactions JSON. Connective dialogue around them has craft latitude; those five do not.
-- **The stake is exactly the €500 door collateral.** Never more, never scaled, never a percentage of held gold. Gold above €500 is untouched, which makes the loss uniform for every player by construction while the bros describe it as their entire vacation budget.
+- **The stake is exactly the 500 Sovs door collateral.** Never more, never scaled, never a percentage of held gold. Gold above 500 Sovs is untouched, which makes the loss uniform for every player by construction while the bros describe it as their entire vacation budget.
 - **The carton never empties and this is never investigated.** No quest, no examine chain, no NPC remark, no achievement. It is a fact of the world, offered once and dropped.
 - **Ambient rotation is a shipping requirement, not a stretch goal** — all nine lines, randomized without immediate repeats, live from the moment the scene resolves. He must feel like continuing life in that room rather than a spent cutscene prop.
 - Sprite dependency: one canonical sheet, `aaron_the_unflappable.png`, referenced by the Backroom's sprite mapping. Audio dependency: the CRUNCH cue. Both are on the critical path for the encounter.

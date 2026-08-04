@@ -1,7 +1,7 @@
 # The Hemp Museum - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Hemp Museum charges €10 for 500 years of genuinely fascinating history that visitors will speed-walk past on their way to look at plants, and then sells them a grinder on the exit. This document specifies every PNG asset for the museum: the canal-house facade attempting scholarly dignity between a peep show and a coffeeshop, four exhibit floors whose visitor dwell times are inversely proportional to their educational value, the growing room with its purple glow and its patient botanist, the gift shop that occupies more floor space than any exhibit, and Lars — who wrote a forty-page thesis on hemp rope's role in Dutch maritime history and has sold zero audio guides today. Its satirical essence in a sentence: everyone in the building knows why you came, and only one of them is upset about it.
+The Hemp Museum charges 10 Sovs for 500 years of genuinely fascinating history that visitors will speed-walk past on their way to look at plants, and then sells them a grinder on the exit. This document specifies every PNG asset for the museum: the canal-house facade attempting scholarly dignity between a peep show and a coffeeshop, four exhibit floors whose visitor dwell times are inversely proportional to their educational value, the growing room with its purple glow and its patient botanist, the gift shop that occupies more floor space than any exhibit, and Lars — who wrote a forty-page thesis on hemp rope's role in Dutch maritime history and has sold zero audio guides today. Its satirical essence in a sentence: everyone in the building knows why you came, and only one of them is upset about it.
 
 **Location ID:** `shamsterdam_roodelicht_hemp_museum_01`
 **Theme:** Educational tourism as cultural alibi — the performance of learning, monetised at the exit
@@ -71,11 +71,11 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Historical Usage Section (First Floor) | (0, 0) | 1024x1024 | Replica ancient pipes, historical paintings, dense medical history panels, the Queen Victoria fact panel, vintage advertisement wall, the Prohibition Timeline — genuinely fascinating material receiving 10% of its deserved attention |
-| Growing & Processing Room (Second Floor) | (1024, 0) | 1024x1024 | The observation window dominating the far wall, live plants under LED rigs, purple wash across everything, processing equipment displays, smell jars station with a queue, video loop screen nobody finishes, Femke's post beside the glass |
+| Growing & Processing Room (Second Floor) | (1024, 0) | 1024x1024 | The observation window dominating the far wall, live plants under LED rigs, purple wash across everything, processing equipment displays, smell jars station with a queue, video loop screen nobody finishes, Sanne's post beside the glass |
 
 ### Technical Notes:
 - Anchor points (Historical): pipe case at (192, 512), painting cluster at (448, 384), Queen Victoria panel at (640, 448), vintage ad wall at (832, 448), video screen at (384, 704)
-- Anchor points (Growing): observation window at (1408, 512), plant display at (1664, 576), smell jars at (1856, 640), Femke post at (1536, 768), grow rig at (1664, 320)
+- Anchor points (Growing): observation window at (1408, 512), plant display at (1664, 576), smell jars at (1856, 640), Sanne post at (1536, 768), grow rig at (1664, 320)
 - The Growing Room is painted one full stop brighter in saturation than every other room; the purple wash overlay (Sheet 8) sits on top of it
 - The Queen Victoria panel is painted at 2x internal resolution — it is the single fact every visitor retains and must be readable at gameplay zoom
 - The observation window's glass layer is a separate alpha element so the plant sway animation (Sheet 8) renders behind it
@@ -111,10 +111,10 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Museum Exterior (Canal House) | (0, 0) | 384x512 | Green door, brass historical plaque (real), neon OPEN sign (less historical), "EDUCATIONAL EXHIBITS" large / "Gift Shop" small |
-| Ticket Counter | (384, 0) | 256x192 | €10 entry, €3 audio guide, bored staff, hope |
+| Ticket Counter | (384, 0) | 256x192 | 10 Sovs entry, 3 Sovs audio guide, bored staff, hope |
 | Welcome Panel | (640, 0) | 192x128 | "HEMP: A History of Humanity's Most Versatile Plant" |
 | Timeline Graphic (10,000 BCE →) | (832, 0) | 192x128 | Establishing ancient legitimacy in one wall |
-| Audio Guide Rack | (640, 128) | 96x64 | €3 extra. Fully stocked. Always fully stocked. |
+| Audio Guide Rack | (640, 128) | 96x64 | 3 Sovs extra. Fully stocked. Always fully stocked. |
 | Coat Hook Row | (736, 128) | 96x64 | The coat check. It is hooks. It is trust. |
 | Donation Box | (832, 128) | 96x64 | Optimistic |
 | Ticket Desk Sign | (928, 128) | 96x64 | Prices and hours, laminated |
@@ -150,12 +150,12 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 |---------|----------|------|-------------|
 | Observation Window | (0, 768) | 384x256 | The actual attraction; glass layer authored separately |
 | Live Cannabis Plants Display | (384, 768) | 256x256 | Stylised, healthy, under-lit in purple |
-| Grow Light Rig | (640, 768) | 128x256 | LEDs optimising the spectrum, as Femke will explain if given the chance |
+| Grow Light Rig | (640, 768) | 128x256 | LEDs optimising the spectrum, as Sanne will explain if given the chance |
 | Smell Jars Station | (768, 768) | 128x128 | The line forms here |
 | "Identify the Terpenes!" Board | (896, 768) | 128x128 | Multiple choice. Impossible. Attempted universally. |
 | "No Touching" Sign | (768, 896) | 128x64 | Tested regularly |
 | Growing Room Info Panels | (896, 896) | 128x64 | For education! |
-| Femke's Post Marker | (768, 960) | 128x64 | Positioned to intercept close-up photography |
+| Sanne's Post Marker | (768, 960) | 128x64 | Positioned to intercept close-up photography |
 | Grow Room Vent / Fan | (896, 960) | 128x64 | The hum that defines the floor |
 
 ### Technical Notes:
@@ -174,15 +174,15 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 ### Handheld & Tickets:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Audio Guide Device | (0, 0) | 32x48 | €3, genuinely informative, ~5% selection rate |
+| Audio Guide Device | (0, 0) | 32x48 | 3 Sovs, genuinely informative, ~5% selection rate |
 | Smell Jar (Individual) | (32, 0) | 32x48 | Terpene challenge unit |
 | Hemp Tea Cup | (64, 0) | 32x48 | "Complimentary." Earthy. Disappointing. |
-| CBD Oil Bottle (Gift Shop) | (96, 0) | 32x48 | €30-80, "Wellness product." |
-| Museum Ticket (€10) | (128, 0) | 64x48 | The cultural alibi, purchased |
-| Combo Ticket (€15) | (192, 0) | 64x48 | Neighbouring attraction, separate gift shops |
-| Rolling Papers (Branded) | (256, 0) | 64x48 | €5, "Museum quality." |
-| "Educational" Grinder | (320, 0) | 64x48 | €15-45, "For herbs. Any herbs." |
-| Hemp Tote Bag (Museum) | (384, 0) | 64x48 | €18, cosmetic inventory expansion |
+| CBD Oil Bottle (Gift Shop) | (96, 0) | 32x48 | 30 Sovs-80, "Wellness product." |
+| Museum Ticket (10 Sovs) | (128, 0) | 64x48 | The cultural alibi, purchased |
+| Combo Ticket (15 Sovs) | (192, 0) | 64x48 | Neighbouring attraction, separate gift shops |
+| Rolling Papers (Branded) | (256, 0) | 64x48 | 5 Sovs, "Museum quality." |
+| "Educational" Grinder | (320, 0) | 64x48 | 15 Sovs-45, "For herbs. Any herbs." |
+| Hemp Tote Bag (Museum) | (384, 0) | 64x48 | 18 Sovs, cosmetic inventory expansion |
 | Gift Shop Bag (Tourist Marker) | (448, 0) | 64x48 | The consequence; budtenders recognise it |
 
 ### Interactives & Shop Goods:
@@ -190,10 +190,10 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 |---------|----------|------|-------------|
 | Fabric Samples ("Feel the Hemp!") | (0, 48) | 128x48 | Four swatches, touch-prompted, instantly forgotten |
 | Hemp Tea Station | (128, 48) | 96x48 | Loss leader, positioned for maximum funnel |
-| Hemp Soap + Box | (224, 48) | 64x48 | €8, exists purely for plausible deniability |
-| "I Got High on Knowledge" Shirt | (288, 48) | 64x48 | €28, +Embarrassed when worn, "Popular choice." |
-| "Hemp History" Book | (352, 48) | 64x48 | €25, +Intelligence display, will not be read |
-| Seed Packet ("Souvenir only") | (416, 48) | 96x48 | €20-50, very important, very fine print |
+| Hemp Soap + Box | (224, 48) | 64x48 | 8 Sovs, exists purely for plausible deniability |
+| "I Got High on Knowledge" Shirt | (288, 48) | 64x48 | 28 Sovs, +Embarrassed when worn, "Popular choice." |
+| "Hemp History" Book | (352, 48) | 64x48 | 25 Sovs, +Intelligence display, will not be read |
+| Seed Packet ("Souvenir only") | (416, 48) | 96x48 | 20 Sovs-50, very important, very fine print |
 
 ### Readable Props:
 | Element | Position | Size | Description |
@@ -208,8 +208,8 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 ### Staff Props & Tools:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Grinder (Premium €45) | (0, 160) | 64x48 | Marco's best seller |
-| Grinder (Basic €15) | (64, 160) | 64x48 | Marco's volume seller |
+| Grinder (Premium 45 Sovs) | (0, 160) | 64x48 | Marco's best seller |
+| Grinder (Basic 15 Sovs) | (64, 160) | 64x48 | Marco's volume seller |
 | Growing Guide (NOT Provided) | (128, 160) | 96x48 | Visible on a shelf behind the counter, never sold, never explained |
 | Thesis Manuscript (Lars's) | (224, 160) | 96x48 | 40 pages on hemp rope in Dutch maritime history |
 | Clipboard (School Group) | (320, 160) | 64x48 | Worksheet, mostly doodles |
@@ -259,24 +259,24 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Lars Zero-Sales Slump | (384, 0) | 64x96 | End of shift. Audio guide sales: zero. Again. |
 | Lars Audio Guide SOLD (Shock) | (448, 0) | 64x96 | Visible surprise. Rare. Celebrated by staff. |
 
-### Growing Room Attendant Femke:
+### Growing Room Attendant Sanne:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Femke Idle (Lab Coat) | (0, 96) | 64x96 | Botany student, lab coat adding legitimacy, hemp accessories underneath |
-| Femke Photography Intercept F1 | (64, 96) | 64x96 | Step forward |
-| Femke Photography Intercept F2 | (128, 96) | 64x96 | Hand raised, patient, non-confrontational |
-| Femke "Please don't tap the glass" | (192, 96) | 64x96 | "The plants don't like it. I don't like it either." |
-| Femke Terpene Correction | (256, 96) | 64x96 | Politely corrects, explains anyway, is forgotten immediately |
-| Femke Licence Explanation | (320, 96) | 64x96 | "Yes, it's legal. We have a licence. Yes, I get that question a lot." |
-| Femke Waiting (Patiently) | (384, 96) | 64x96 | "—okay, you're taking a photo, I'll wait." |
-| Femke Pointing to Smell Jars | (448, 96) | 64x96 | "No, you can't smell the actual plants. No, really." |
+| Sanne Idle (Lab Coat) | (0, 96) | 64x96 | Botany student, lab coat adding legitimacy, hemp accessories underneath |
+| Sanne Photography Intercept F1 | (64, 96) | 64x96 | Step forward |
+| Sanne Photography Intercept F2 | (128, 96) | 64x96 | Hand raised, patient, non-confrontational |
+| Sanne "Please don't tap the glass" | (192, 96) | 64x96 | "The plants don't like it. I don't like it either." |
+| Sanne Terpene Correction | (256, 96) | 64x96 | Politely corrects, explains anyway, is forgotten immediately |
+| Sanne Licence Explanation | (320, 96) | 64x96 | "Yes, it's legal. We have a licence. Yes, I get that question a lot." |
+| Sanne Waiting (Patiently) | (384, 96) | 64x96 | "—okay, you're taking a photo, I'll wait." |
+| Sanne Pointing to Smell Jars | (448, 96) | 64x96 | "No, you can't smell the actual plants. No, really." |
 
 ### Portraits & Marco/Henrik Base:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Lars Portrait (Hopeful) | (0, 192) | 128x128 | Start-of-shift optimism, thesis-shaped |
 | Lars Portrait (Resigned) | (128, 192) | 128x128 | Same face. Different eyes. |
-| Femke Portrait | (256, 192) | 128x128 | Knows everything, is asked nothing |
+| Sanne Portrait | (256, 192) | 128x128 | Knows everything, is asked nothing |
 | Marco Idle | (384, 192) | 64x96 | Most enthusiastic staff member; commission may be involved |
 | Henrik Bench Idle | (448, 192) | 64x96 | Thousand-yard stare, fourth summer |
 | Reserve / Atlas Padding | (384, 288) | 128x32 | Reserved strip, do not paint |
@@ -299,13 +299,13 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Henrik Gift Shop Hours | (64, 416) | 64x96 | "Most people's main question is 'when does the gift shop close.'" |
 | Henrik Portrait (Cropped) | (128, 416) | 128x96 | Cropped-height portrait; renders letterboxed in the dialogue frame by design |
 | Lars High-Contrast Silhouette | (256, 416) | 64x96 | Accessibility outline variant |
-| Femke High-Contrast Silhouette | (448, 416) | 64x96 | Accessibility outline variant |
+| Sanne High-Contrast Silhouette | (448, 416) | 64x96 | Accessibility outline variant |
 | Accessibility Reserve Block | (320, 448) | 128x64 | Reserved for high-contrast/audio-cue glyph overflow |
 
 ### Technical Notes:
 - Lars's eight frames form a single shift-arc; the game selects among them by in-game clock, not by dialogue branch — his decline is ambient, not scripted at the player
 - Lars Portrait (Hopeful) and (Resigned) must be the same drawing with only the eyes and mouth-corner altered; the joke is that nothing else changed
-- Femke's intercept frames trigger on sustained close-up photography at the observation window, never on the first photo
+- Sanne's intercept frames trigger on sustained close-up photography at the observation window, never on the first photo
 - Henrik's portrait is deliberately cropped shorter than every other portrait in the game — he does not get a full frame
 
 ---
@@ -376,7 +376,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Gallery Spot Pool | (256, 64) | 64x64 | Attempted gallery lighting, achieved dim-with-spots |
 | Gift Shop Bright Wash | (320, 64) | 64x64 | "Please buy things" |
 | Smell Jar Aroma Wisp | (384, 64) | 64x64 | One-shot on jar open |
-| Camera Flash (Blocked) | (448, 64) | 64x64 | Flash fires, Femke is already there |
+| Camera Flash (Blocked) | (448, 64) | 64x64 | Flash fires, Sanne is already there |
 
 ### Visual Audio Cues & Reduced Motion:
 | Element | Position | Size | Description |
@@ -414,7 +414,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Section Time Tracker | (768, 0) | 256x64 | Per-section dwell timer, hidden until the exit reveal |
 | Speed-Run Comparison Bars | (768, 64) | 256x64 | Your time vs. average visitor time, per section, brutal |
 | Cultural Alibi Badge | (768, 128) | 64x64 | "Visited a Museum" — usable in future dialogue |
-| Audio Guide Selection Panel | (832, 128) | 192x64 | €3 prompt with visible staff-reaction slot |
+| Audio Guide Selection Panel | (832, 128) | 192x64 | 3 Sovs prompt with visible staff-reaction slot |
 | Hemp vs Marijuana Popup | (512, 192) | 192x128 | Educational correction, triggered by asking "where's the weed?" |
 
 ### UI — Status, Shop & Accessibility:
@@ -426,8 +426,8 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Embarrassed Status Bar | (704, 288) | 128x32 | Shirt-worn effect |
 | Gift Shop Purchase Panel | (832, 192) | 192x128 | Eight-item list with Marco's one-line comments |
 | Exhibit Examine Panel | (512, 320) | 256x96 | Flavour text frame for any examinable display |
-| Ticket Purchase Panel | (768, 320) | 128x96 | €10 + optional €3 audio guide |
-| Combo Ticket Panel | (896, 320) | 128x96 | €15, neighbouring attraction, separate gift shops |
+| Ticket Purchase Panel | (768, 320) | 128x96 | 10 Sovs + optional 3 Sovs audio guide |
+| Combo Ticket Panel | (896, 320) | 128x96 | 15 Sovs, neighbouring attraction, separate gift shops |
 | Alibi Track Strip | (512, 416) | 256x64 | Four 64x64 markers: Entered / Endured / Educated / Purchased |
 | Status Icon Row | (768, 416) | 128x32 | Four 32x32: Trivial Knowledge / Calm / Embarrassed / Cultural Alibi |
 | High-Contrast Exhibit Marker | (896, 416) | 64x32 | Bold outline for examinable displays |
@@ -450,7 +450,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Frames:** 2 shimmer frames + continuous purple bloom plate
 - **Pattern:** Slow crossfade loop, continuous
 - **Trigger:** Constant while the Growing Room is loaded
-- **Purpose:** The purple glow is the reason anyone paid €10; it must be the most alive thing in the museum
+- **Purpose:** The purple glow is the reason anyone paid 10 Sovs; it must be the most alive thing in the museum
 - **Audio Sync:** LED and ventilation hum bed, phase-locked to the shimmer
 - **Mobile Optimization:** Low LOD uses the Static Grow Light plate with the bloom held at fixed alpha (profile requirement: simplified grow lights)
 
@@ -485,23 +485,23 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Duration:** 2.0 seconds (0.4s selection, 0.6s Lars shock frame, 1.0s hold)
 - **Frames:** Selection panel confirm + Lars Audio Guide SOLD frame + celebration sparkle
 - **Pattern:** One-shot, roughly 5% of visits
-- **Trigger:** Purchasing the €3 audio guide
+- **Trigger:** Purchasing the 3 Sovs audio guide
 - **Purpose:** The rarest positive event in the building, celebrated disproportionately
 - **Audio Sync:** Small triumphant sting at 0.4s — the only unambiguously happy sound in the museum
 - **Mobile Optimization:** None needed (one-shot)
 
 ### "Identify the Terpenes!" Mini-Game (Sheets 4, 6, 8):
 - **Duration:** Per attempt: 1.0s jar open, 2.0s selection window, 1.2s result
-- **Frames:** Smell jar aroma wisp + Femke Terpene Correction (on failure) + result glyph
+- **Frames:** Smell jar aroma wisp + Sanne Terpene Correction (on failure) + result glyph
 - **Pattern:** Repeatable; ~10% success rate by design
 - **Trigger:** Interacting with any smell jar
 - **Purpose:** Impossible without actual knowledge; attempted by everyone; forgotten immediately either way
-- **Audio Sync:** Jar lid at 0.0s; success chime or polite-correction sting at 3.0s; Femke's explanation continues past the UI dismissal
+- **Audio Sync:** Jar lid at 0.0s; success chime or polite-correction sting at 3.0s; Sanne's explanation continues past the UI dismissal
 - **Mobile Optimization:** Aroma wisp reduced to a single frame on Low LOD
 
 ### Photography Intercept (Sheets 6, 7, 8):
-- **Duration:** 2.2 seconds (0.6s flash, 0.8s Femke step-in, 0.8s patient hold)
-- **Frames:** Camera flash (blocked) + Femke Intercept F1/F2 + Femke Waiting
+- **Duration:** 2.2 seconds (0.6s flash, 0.8s Sanne step-in, 0.8s patient hold)
+- **Frames:** Camera flash (blocked) + Sanne Intercept F1/F2 + Sanne Waiting
 - **Pattern:** One-shot, triggers on the third sustained close-up photo attempt
 - **Trigger:** Extended photography at the observation window
 - **Purpose:** "—okay, you're taking a photo, I'll wait." She is not stopping you. She is present.
@@ -527,7 +527,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | High-Contrast Exhibit Marker | Sheet 8 (896, 416) | 64x32 | Bold outline for every examinable display across all four floors |
 | Terpene Silhouette Set | Sheet 8 (960, 416) | 64x32 | Four terpene options as shape-coded glyphs with text labels |
 | Lars High-Contrast Silhouette | Sheet 6 (256, 416) | 64x96 | Enhanced-visibility outline of the ticket-desk NPC |
-| Femke High-Contrast Silhouette | Sheet 6 (448, 416) | 64x96 | Enhanced-visibility outline of the growing-room NPC |
+| Sanne High-Contrast Silhouette | Sheet 6 (448, 416) | 64x96 | Enhanced-visibility outline of the growing-room NPC |
 | Accessibility Reserve Block | Sheet 6 (320, 448) | 128x64 | Overflow space for additional high-contrast variants |
 
 ### Motion Sensitivity Options:
@@ -587,7 +587,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Low | Static grow lights (profile requirement), static plants (profile requirement), reduced dust motes (profile requirement), static video screen, reduced NPC count (profile requirement), snapped speed-run bars |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 16 per frame
 - **Memory Footprint:** 38 MB maximum
 - **Particle Limit:** 16 (dust motes, aroma wisps, incense, grow shimmer motes)
@@ -606,7 +606,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: Sprite2D (floor backgrounds, exhibits, fixtures), AnimatedSprite2D (plants, grow lights, video screen, staff), CPUParticles2D (dust motes, aroma wisps, incense — not GPU), CanvasLayer (terpene game, ticket panel, shop panel, speed-run reveal), Area2D (every examinable exhibit, smell jars, fabric station, tea station, register)
-- Special systems: per-section dwell timer dictionary with silent accumulation and exit-time reveal, Lars shift-arc clock state machine, terpene mini-game with weighted ~10% success, Cultural Alibi global flag, Gift Shop Bag cross-location marker with discard option, audio guide purchase flag altering exhibit flavour text depth, photography-attempt counter driving Femke's intercept
+- Special systems: per-section dwell timer dictionary with silent accumulation and exit-time reveal, Lars shift-arc clock state machine, terpene mini-game with weighted ~10% success, Cultural Alibi global flag, Gift Shop Bag cross-location marker with discard option, audio guide purchase flag altering exhibit flavour text depth, photography-attempt counter driving Sanne's intercept
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -626,7 +626,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Cultural Alibi System | Cultural Alibi badge, museum ticket, alibi sparkle, Alibi Track Strip | Visiting sets a global flag usable as "We went to a MUSEUM" in future dialogue; Bravado gain if believed, loss if called out |
-| Identify the Terpenes! | Smell jars, terpene game UI, Femke Terpene Correction, Trivial Knowledge status | ~10% success grants one coffeeshop conversation starter that degrades rapidly |
+| Identify the Terpenes! | Smell jars, terpene game UI, Sanne Terpene Correction, Trivial Knowledge status | ~10% success grants one coffeeshop conversation starter that degrades rapidly |
 | The Gift Shop Bag Marker | Gift shop bag sprite and icon, bag marker pulse, marking indicator | Any purchase produces the branded bag; budtenders recognise it; discardable at a style cost |
 | The Audio Guide (Rare Path) | Audio guide device, Lars SOLD frame, selection panel | Purchasing unlocks the deeper flavour-text tier on every exhibit and permanently changes Lars's greeting |
 | The Speed-Run Reveal | Section Time Tracker, comparison bars, section silhouettes | Silently recorded across the whole visit, surfaced once at the gift shop exit |
@@ -640,7 +640,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | The Tolerance Hostel | Gift Shop Bag prop visible in dorm and kitchen scenes | Kitchen gossip may include museum "recommendations"; the alibi can be challenged here |
 | Schrödinger's Souvenir | Shared CBD/THC infographic visual language; distinguishable shop bags | Educational counterpart; the two bags must be told apart at 32px |
 | Coffeeshop Quarter | Terpene Reference Card, Trivial Knowledge status bar | Unlocks strain/terpene dialogue options that are usually wrong |
-| Venustempel | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction |
+| Venustempel (Museum Mile) | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. The Venustempel grants the Cultural Alibi flag outright; the Hemp Museum is the second stamp on it. |
 
 ---
 
@@ -662,7 +662,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 
 ### Character Integration Notes:
 - Lars is the museum's heart and the museum is killing him slowly; his sprite arc runs on the clock, not on the player
-- Femke never blocks, scolds, or escalates — she steps in, waits, and explains to nobody. She knows everything and is asked nothing.
+- Sanne never blocks, scolds, or escalates — she steps in, waits, and explains to nobody. She knows everything and is asked nothing.
 - Marco is the only staff member whose energy rises across the day, because his floor is the one people use
 - Henrik gets a shorter portrait than everyone else in the game, and this is deliberate
 - The Actual Enthusiast must be composed to make the player feel mildly guilty from across the room
@@ -768,9 +768,9 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Seedy Underbelly Present | ✅ | Monetising the gap between education and interest; seeds legal to buy and illegal to grow; the free-tea loss leader funnelling into retail |
 | Gameplay Value Established | ✅ | Four-floor navigation, two interactives, hidden speed-run tracker, Cultural Alibi flag, cross-location bag marker, 8-item shop economy |
 | Technical Feasibility | ✅ | Paired-room streaming, static grow-light/plant fallbacks per profile, reduced NPC counts per profile, pre-composed crowd blocks |
-| Mobile Performance Budget | ✅ | 45 FPS, 16 draw calls, 38 MB, 16 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 16 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all ten audio cues, reduced-motion set, shape-coded terpenes and tracker bars, 44px touch zones |
-| No Crypto Elements | ✅ | Pure museum commerce; the only speculative instrument is a €20 seed packet |
+| No Crypto Elements | ✅ | Pure museum commerce; the only speculative instrument is a 20 Sovs seed packet |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |
 
 **Once these assets ship, The Hemp Museum becomes the game's most quietly devastating location: a beautiful, empty room about rope; a purple room full of people; a gift shop bigger than both; and one man at the front desk who wrote forty pages about the empty room and will tell you about it if you stop walking.**

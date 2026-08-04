@@ -269,7 +269,7 @@
     },
     {
       "id": "bike_rental",
-      "unlock_condition": "15_euro_payment",
+      "unlock_condition": "15_sov_payment",
       "description": "Become a traffic participant instead of victim"
     }
   ],

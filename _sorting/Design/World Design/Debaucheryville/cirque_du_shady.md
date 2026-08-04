@@ -41,7 +41,7 @@
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │                    ← MAIN GATE (from Old Town Streets)                     │
-│               🎫 Ticket Booth — "Admission €5. Everything Else Extra."      │
+│               🎫 Ticket Booth — "Admission 5 Sovs. Everything Else Extra."      │
 ├──────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
 │     [PROPHECY TENT]                 [GAME ALLEY]          [PRIZE BOOTH]     │
@@ -83,7 +83,7 @@
 ### Exterior Description
 - **Approach**: Old Town cobblestones give way to trampled grass and sawdust well before the gate itself is visible — the smell (fried sugar, machine oil, something floral gone slightly wrong) arrives first
 - **Entrance**: A single wooden ticket booth flanked by a rope line that has never once needed to hold back a real crowd. A hand-painted arch overhead reads "THE CIRQUE DU SHADY" in a font trying hard to look hand-lettered by someone with real showmanship
-- **Signage**: Main arch: "THE CIRQUE DU SHADY — EST. [date scratched out and re-painted three times, current reading illegible]." Ticket booth: "ADMISSION €5. EVERYTHING ELSE EXTRA." Small taped-on addendum, clearly added later: "(THIS INCLUDES THE BATHROOM.)"
+- **Signage**: Main arch: "THE CIRQUE DU SHADY — EST. [date scratched out and re-painted three times, current reading illegible]." Ticket booth: "ADMISSION 5 Sovs. EVERYTHING ELSE EXTRA." Small taped-on addendum, clearly added later: "(THIS INCLUDES THE BATHROOM.)"
 - **Atmosphere**: A distorted calliope loop bleeds through everything; vape clouds drift from the direction of Vance's tent regardless of wind; the whole grounds smell faintly of fry oil and canvas mildew
 - **Environmental Context**: Sits at the edge of Old Town, with the big top itself visible from streets away — a faded red-and-cream dome that has clearly not moved, in any literal sense, in a very long time. The riverside gear path on the grounds' far side connects directly to the Bohemian Riviera's embankment path, the same route documented in `bohemian_riviera.md`'s Connected Locations section
 
@@ -172,7 +172,7 @@
 - **`main_gate`**: Ticket booth transaction, corkboard flyer examine points (Bubbles poster, Shady Productions casting flyer)
 - **`big_top`**: Exterior examine only in this document; Vance's tent hosts his loot-crate voucher pitch (fulfillment happens at `prize_booth` — see Economic Integration below); the ICQ backroom flap leads to `icq_backroom`
 - **`prophecy_tent`**: Prophecy Roulette (5 coins, random buff/debuff) — full mechanics in `hamstradamus.md`, not restated here
-- **`game_alley`**: Rigged carnival games (milk bottles, ring toss, coin pusher) — average yield 5–15 tickets per €3 game, feeding directly into `prize_booth`'s documented ticket-tier economy
+- **`game_alley`**: Rigged carnival games (milk bottles, ring toss, coin pusher) — average yield 5–15 tickets per 3 Sovs game, feeding directly into `prize_booth`'s documented ticket-tier economy
 - **`prize_booth`**: Ticket redemption — full mechanics in `the_participation_trophy.md`, not restated here
 - **`meat_cart_pitch`**: Full menu and Digestive Daredevil mechanics in `mysterymeatcart.md`, not restated here
 - **`performance_circle`**: Bobo's balloon-animal pitch (see NPCs section below); the knife-throwing act's interactive dodge minigame (player takes the assistant's spot)
@@ -184,8 +184,8 @@ Grounds admission is a flat, plainly-advertised rip-off — everything past the 
 
 | Item/Service | Price | Reality |
 |--------------|-------|---------|
-| Grounds admission | €5 | Grants access to further paid attractions, nothing else |
-| Rigged carnival game (`game_alley`) | €3 avg. | 5-15 tickets, statistically worse than the prize costs |
+| Grounds admission | 5 Sovs | Grants access to further paid attractions, nothing else |
+| Rigged carnival game (`game_alley`) | 3 Sovs avg. | 5-15 tickets, statistically worse than the prize costs |
 | Vance's Shady Loot Crate Voucher | Variable, per Vance's own pitch | "A bit of a gamble, honestly" — his words. Per canon (`game_design_document.md`), the crates themselves are offered "from the prize booth" — Vance hawks and sells the voucher from his tent, and the bro walks it over to `prize_booth` for fulfillment |
 | Knife-throwing act dodge round | Free to attempt, tip solicited after | Tip jar sits beside the target board |
 

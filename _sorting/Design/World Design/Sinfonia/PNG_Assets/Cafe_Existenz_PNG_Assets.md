@@ -159,7 +159,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 
 ---
 
-## 🎩 Sprite Sheet 3: Staff — Herr Konditor & Franz
+## 🎩 Sprite Sheet 3: Staff — Herr Konditor & Egon
 **File:** `cafe_existenz_staff.png`
 **Dimensions:** 384x288 pixels
 **Color Palette:** #1C1C1C (Formal Black), #FFFFFF (Shirt White), #722F37 (Burgundy)
@@ -172,7 +172,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | Seat Assignment | (96, 0) | 48x96 | Gesturing toward your hierarchy tier |
 | Charmed (Rare) | (144, 0) | 48x96 | Better-placement concession |
 
-### Franz — The Server (48x96 each):
+### Egon — The Server (48x96 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Eyebrow Idle | (192, 0) | 48x96 | Permanently raised eyebrow |
@@ -180,7 +180,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | Order Forgotten | (288, 0) | 48x96 | Walking past tourist section, tray empty |
 | Audible Exhale | (336, 0) | 48x96 | Response to "large coffee" |
 
-### Franz Service States (48x96 each):
+### Egon Service States (48x96 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Tray Delivery | (0, 96) | 48x96 | Correct order, delivered with judgment |
@@ -191,7 +191,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Konditor's Monocle | (144, 96) | 16x16 | Functional, glinting |
-| Franz's Order Pad | (160, 96) | 16x24 | Never consulted |
+| Egon's Order Pad | (160, 96) | 16x24 | Never consulted |
 | Silver Tray | (176, 96) | 32x24 | Coffee service prop |
 | Water Glass Proper | (208, 96) | 16x24 | Brought only if requested correctly |
 
@@ -204,7 +204,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 
 ### Character Notes:
 - Konditor's monocle is functional and must glint on assessment frames
-- Franz's eyebrow never lowers — it is load-bearing characterization
+- Egon's eyebrow never lowers — it is load-bearing characterization
 - Judgment escalation poses are palette-swapped for either staff member
 
 ---
@@ -412,7 +412,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - **Audio Sync:** Chess piece click on move frame; soft exhale on sigh frame
 - **Mobile Optimization:** None needed
 
-### Franz Order Interrogation:
+### Egon Order Interrogation:
 - **Duration:** 2.5 seconds (hold on final frame)
 - **Frames:** 3 (eyebrow idle → interrogation → exhale)
 - **Pattern:** Single play, hold exhale during dialogue
@@ -479,7 +479,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 ### Visual Audio Cues:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Exhale puff glyph | set at sheet layout | 24x24 | Over Franz on judgment exhale audio |
+| Exhale puff glyph | set at sheet layout | 24x24 | Over Egon on judgment exhale audio |
 | Chess click marker | set at sheet layout | 16x16 | Ring on moved piece when click plays |
 | Debate sting burst | set at sheet layout | 32x32 | Jagged glyph on loss sting; gold on victory chime |
 | Murmur intensity bars | set at sheet layout | 24x16 | Ambient conversation level indicator |
@@ -516,7 +516,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | Low | No ambient particles, frozen background NPCs, static chess |
 
 ### Performance Targets:
-- **Target FPS:** 40 (per location profile budget)
+- **Target FPS:** 60 (per location profile budget)
 - **Max Draw Calls:** 18 per frame
 - **Memory Footprint:** 45 MB maximum
 - **Particle Limit:** 18 (steam 6, dust 8, smoke 4)
@@ -541,7 +541,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
 |----------------|-----------|--------|
-| Franz exhale frame | Audible exhale | Frame 3 of interrogation |
+| Egon exhale frame | Audible exhale | Frame 3 of interrogation |
 | Chess piece move | Piece click | On move frame |
 | Debate loss deflate | Dramatic sting | On deflate spawn |
 | Debate victory flash | "Aha" chime | Frame 1 |
@@ -583,7 +583,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 
 ### Character Integration Notes:
 - Hierarchy readable by posture: Philosopher Kings recline, Academics sit upright, Students hover
-- Franz and Konditor share the judgment escalation poses via palette swap
+- Egon and Konditor share the judgment escalation poses via palette swap
 - Von Grübelstein's loneliness must be visible in the idle — intimidation as armor
 
 ---
@@ -598,7 +598,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 
 ### Quote Potential:
 - "Today's Question: If a tourist orders in a café and no local acknowledges them, did they really order?" - Chalkboard
-- "A Melange is a Melange. It has been a Melange for 200 years." - Franz
+- "A Melange is a Melange. It has been a Melange for 200 years." - Egon
 - "Then you have not read him at all." - Philosopher, to Bradley
 - "I have taught philosophy for 47 years. What could you POSSIBLY teach me?" - Herr Doktor Professor von Grübelstein
 - "Cogito Ergo OWNED" - Debate Victor selfie caption
@@ -655,7 +655,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly
 - [ ] Hierarchy tiers readable by NPC posture at game resolution
-- [ ] Franz's eyebrow raised in every frame
+- [ ] Egon's eyebrow raised in every frame
 - [ ] Steam-fade tells the cold-coffee story on debate tables
 - [ ] Chalkboard question panel supports swappable text
 - [ ] Accessibility visual alternatives included for all audio cues
@@ -682,7 +682,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | Seedy Underbelly Present | ✅ | Tourist order-forgetting, overcharging, judgment-as-service, betting on tourists |
 | Gameplay Value Established | ✅ | Dialogue combat, Bravado economy, Wi-Fi hub, quest gossip, couchsurf |
 | Technical Feasibility | ✅ | Seven sheets, atlas plan, pre-rendered crowd, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 40 FPS, 18 draw calls, 45 MB, 18 particles (per profile budget) |
+| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 45 MB, 18 particles (per profile budget) |
 | Accessibility Features | ✅ | Visual cues for all audio events; static motion variants |
 | No Crypto Elements | ✅ | None present — philosophy satire only |
 | Social Media Integration | ✅ | Chalkboard question, glasses removal, betting regulars identified |

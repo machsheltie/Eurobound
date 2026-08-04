@@ -81,7 +81,7 @@ After being turned away from Velvet Curtain Club, the bros will encounter the **
 
 **LORD PILSNER:** "Level Seven? That sounds... high."
 
-**SHADY WRISTBAND GUY:** "Highest tier. Only €30 each. Very reasonable for VIP."
+**SHADY WRISTBAND GUY:** "Highest tier. Only 30 Sovs each. Very reasonable for VIP."
 
 ---
 
@@ -312,7 +312,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Primary Vice**: Selling exclusivity and VIP status to tourists desperate to feel special
 - **City-Specific Comedy Operations**: Opera house ruins converted to decaying glamor nightclub
 - **Buffoon Exploitation**: Bros believe their children's birthday wristbands grant elite access
-- **Comedy of Errors**: The club is FREE but bros paid €90 for "VIP" entry that doesn't exist
+- **Comedy of Errors**: The club is FREE but bros paid 90 Sovs for "VIP" entry that doesn't exist
 - **Consequence System**: Embarrassed status from social failures, Confused from vape/absinthe combinations
 
 ### Buffoon Delusion Scenarios
@@ -375,6 +375,15 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Languages**: Czech (for mockery), English (minimal), German, Russian, Polish, plus sighs
 - **Character Arc**: Goes from annoyed to resigned to almost fond of "the birthday boys"
 - **Callback**: References bros to other bouncers across Debaucheryville
+
+### VIP Backroom Bouncer (Vlad)
+- **Role**: Interior door gate / Crypto satire / Bribeable quest giver
+- **NPC File**: See `npcs/Velvet_Curtain_Club/vlad_the_validator.md`
+- **NPC ID**: `debaucheryville_npc_vip_backroom_bouncer_01`
+- **Location**: Interior door to the VIP Backroom / Crypto Mining Basement (main floor, rear) — NOT the street entrance, which is Tomáš's post
+- **Personality**: Vladimir "Vlad" Kryptovich — former IT support, bought Bitcoin at the top, evangelises blockchain at anyone who slows down
+- **Key Dialogue**: "Sorry bro, VIP list is on the blockchain."
+- **Note**: Tomáš's entrance beat stays deliberately crypto-free; all crypto material lives with Vlad, one door further in
 
 ### Second Bouncer (Marek)
 - **Role**: Comedy witness, dialogue partner
@@ -536,7 +545,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
          ↓
 [Meet Shady Wristband Guy]
          ↓
-[Purchase "VIP Wristbands" - €90 total]
+[Purchase "VIP Wristbands" - 90 Sovs total]
          ↓
 [Acquire: "VIP All-Access Wristband" x3]
 (Player sees: "Children's birthday wristband - I'm 7!")
@@ -646,4 +655,4 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 
 ## Final Validation
 
-**The Velvet Curtain Club now serves as the PAYOFF location for the VIP Wristband sidequest. The bouncer confrontation where bros discover their "Level Seven VIP" wristbands say "I'm 7!" in Czech is the comedic climax of that quest - and it only works if this is their first entry attempt. The club being FREE makes their €90 "investment" even more absurd. The running gag of subsequent visits, where bros continue to flash worn wristbands while bouncers debate whether to tell them, provides ongoing comedy throughout the Debaucheryville experience.**
+**The Velvet Curtain Club now serves as the PAYOFF location for the VIP Wristband sidequest. The bouncer confrontation where bros discover their "Level Seven VIP" wristbands say "I'm 7!" in Czech is the comedic climax of that quest - and it only works if this is their first entry attempt. The club being FREE makes their 90 Sovs "investment" even more absurd. The running gag of subsequent visits, where bros continue to flash worn wristbands while bouncers debate whether to tell them, provides ongoing comedy throughout the Debaucheryville experience.**

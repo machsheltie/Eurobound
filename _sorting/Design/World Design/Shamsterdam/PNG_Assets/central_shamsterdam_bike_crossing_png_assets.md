@@ -412,7 +412,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 ### Structure
 - Small rental booth/kiosk
 - "BIKE RENTAL" sign (in Dutch: "FIETS VERHUUR")
-- Price board: "€15/DAG"
+- Price board: "15 Sovs/DAG"
 - Orange rental bikes lined up behind
 - Liability waiver stack visible
 
@@ -760,7 +760,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 | Technical Feasibility | ✅ | Sprite pooling, atlas budget, pre-defined lane patterns documented |
 | Mobile Performance Budget | ✅ | 60 FPS locked, <50 draw calls, <50 MB, 80 particles |
 | Accessibility Features | ✅ | Visual audio cues for all threats, slower mode, 44px touch zones |
-| No Crypto Elements | ✅ | All transactions in Euros |
+| No Crypto Elements | ✅ | All transactions in Sovs |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |
 
 ---

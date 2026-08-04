@@ -19,7 +19,7 @@ never self-aware / never scam-aware + steal corollary, templates as floors.
   parody any city (e.g. Istanbul, Rotterdam, Belgium, Prussia, Ireland, De Pijp, "Amsterdammer"
   are all banned in shipped text). Jokes that depended on a real name (wrong trivia answers,
   food-heritage gags) are rewritten with in-world equivalents that preserve the joke's structure.
-  Violations are defects. (Currency terms — €, koruna — are NOT in scope of this rule; their
+  Violations are defects. (Currency terms — euro, koruna — are NOT in scope of this rule; their
   fate belongs to the forthcoming Economy System round.)
   **PREMISE CLUSTER EXEMPTION (author-locked):** the ban covers PLACES, not peoples, languages,
   or the continent frame. These are canon and no sweep may touch them: (1) "American"/"America"

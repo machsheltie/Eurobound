@@ -219,7 +219,7 @@
     {"id": "underground_navigator", "trigger": "first_successful_navigation", "type": "milestone"},
     {"id": "scenic_route", "trigger": "first_red_light_emergence", "type": "discovery"},
     {"id": "tunnel_vision", "trigger": "perfect_navigation_no_wrong_turns", "type": "skill"},
-    {"id": "willems_friend", "trigger": "tip_willem_5_euro_three_times", "type": "hidden"},
+    {"id": "willems_friend", "trigger": "tip_willem_5_sov_three_times", "type": "hidden"},
     {"id": "back_door_regular", "trigger": "discover_febo_shortcut", "type": "hidden"},
     {"id": "tour_guide", "trigger": "escort_lost_tourist_to_exit", "type": "social"},
     {"id": "five_time_navigator", "trigger": "5_successful_navigations", "type": "mastery"}

@@ -82,7 +82,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | Booth Structure | (0, 0) | 192x192 | Warped plywood, barred window |
 | Ticket Dispenser (idle) | (192, 0) | 64x64 | Hand-cranked, pre-jam state |
 | Ticket Dispenser (jammed) | (192, 64) | 64x64 | Comedic jam frame |
-| "€5 / EVERYTHING ELSE EXTRA" Sign | (0, 192) | 192x64 | Main pricing sign, taped bathroom addendum visible on close read |
+| "5 Sovs / EVERYTHING ELSE EXTRA" Sign | (0, 192) | 192x64 | Main pricing sign, taped bathroom addendum visible on close read |
 
 ### Corkboard Flyers (`corkboard_flyers.png`):
 | Element | Position | Size | Description |
@@ -443,7 +443,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 ## 🎯 Social Media Viral Potential
 
 ### Screenshot-Worthy Moments:
-1. **The ticket booth sign** - "ADMISSION €5. EVERYTHING ELSE EXTRA." with the taped addendum "(THIS INCLUDES THE BATHROOM.)"
+1. **The ticket booth sign** - "ADMISSION 5 Sovs. EVERYTHING ELSE EXTRA." with the taped addendum "(THIS INCLUDES THE BATHROOM.)"
 2. **Vance mid-exhale pitch** - Ringmaster coat, top hat, vape cloud punctuating a loot-crate sales line
 3. **The fax machine at work** - A pre-millennium machine printing the identical casting flyer onto a pile of identical casting flyers
 4. **The prophecy tent at night** - Purple-gold seams pulsing while the marquee flickers and the calliope warps

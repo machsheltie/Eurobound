@@ -1,7 +1,7 @@
 # Café de Schaamte - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Café de Schaamte ("Café of Shame") is the canal-side outdoor terrace on the Canal Ring Promenade where €4.50 buys a thimble of espresso and a lifetime supply of Dutch judgment — and where a poorly disguised Sheltie in a SHAMSTERDAM hoodie runs "covert" mission briefings from the corner table. This document specifies every PNG asset for the terrace: the mismatched-furniture environment, the canal/bicycle background layers, Agent Havok's prop-laden table, Barista Willem and Server Margot, Havok and the café regulars, consumables, effects, and the judgment-driven UI. Its satirical essence in a sentence: Americans paying premium prices to be performatively ignored and calling it culture.
+Café de Schaamte ("Café of Shame") is the canal-side outdoor terrace on the Canal Ring Promenade where 5 Sovs buys a thimble of espresso and a lifetime supply of Dutch judgment — and where a poorly disguised Sheltie in a SHAMSTERDAM hoodie runs "covert" mission briefings from the corner table. This document specifies every PNG asset for the terrace: the mismatched-furniture environment, the canal/bicycle background layers, Agent Havok's prop-laden table, Barista Wouter and Server Margot, Havok and the café regulars, consumables, effects, and the judgment-driven UI. Its satirical essence in a sentence: Americans paying premium prices to be performatively ignored and calling it culture.
 
 **Location ID:** `shamsterdam_canalring_cafe_schaamte_01`
 **Theme:** American tourists expecting American service in European establishments; performative European sophistication; Dutch directness vs. tourist obliviousness
@@ -79,7 +79,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Faded Café Photos 1-3 | (0, 512) / (48, 512) / (96, 512) | 48x48 each | Decades of confused tourists in every era |
-| Counter/Bar Front | (144, 512) | 256x128 | Order point, Willem's domain |
+| Counter/Bar Front | (144, 512) | 256x128 | Order point, Wouter's domain |
 | Hand-Painted Sign | (400, 512) | 192x64 | "Café de Schaamte" |
 | Sub-Sign | (400, 576) | 192x32 | "Est. 1847 — Judging Tourists Since 1967" |
 | Handheld Menu | (592, 512) | 48x96 | Tourist confusion prop |
@@ -141,11 +141,11 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 ### Consumables (menu table coverage):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Espresso Cup (Tiny) | (288, 96) | 32x32 | €4.50 thimble of disappointment; +15 SP |
-| Croissant (Day-Old) | (320, 96) | 48x32 | €8.00 of questionable freshness |
-| Stroopwafel | (368, 96) | 32x32 | €3.50 — the only judgment-free order |
-| Heineken Bottle | (400, 96) | 24x48 | €6.00, -Bravado, locals judge |
-| "American Coffee" Mug | (424, 96) | 32x32 | €5.00, +Shame buff |
+| Espresso Cup (Tiny) | (288, 96) | 32x32 | 5 Sovs thimble of disappointment; +15 SP |
+| Croissant (Day-Old) | (320, 96) | 48x32 | 8 Sovs of questionable freshness |
+| Stroopwafel | (368, 96) | 32x32 | 4 Sovs — the only judgment-free order |
+| Heineken Bottle | (400, 96) | 24x48 | 6 Sovs, -Bravado, locals judge |
+| "American Coffee" Mug | (424, 96) | 32x32 | 5 Sovs, +Shame buff |
 | "Giselle Special" Mystery Glass | (456, 96) | 32x32 | Item doesn't exist; barista confusion trigger |
 | Serving Tray | (0, 128) | 64x32 | Margot's unknowable schedule |
 | Check Saucer | (64, 128) | 32x32 | Arrives when it decides to arrive |
@@ -162,13 +162,13 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 **Dimensions:** 512x384 pixels
 **Sprite Size:** 64x96 pixels
 
-### Barista Willem:
+### Barista Wouter:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Willem Idle 1-2 | (0, 0) / (64, 0) | 64x96 each | Mechanical precision at rest |
-| Willem Operating Machine 1-3 | (128, 0) / (192, 0) / (256, 0) | 64x96 each | Ancient espresso machine mastery |
-| Willem Judging Stare | (320, 0) | 64x96 | "Do not tell me you want it 'iced.'" |
-| Willem Sigh 1-4 | (0, 96) / (64, 96) / (128, 96) / (192, 96) | 64x96 each | Measurable on the Richter scale |
+| Wouter Idle 1-2 | (0, 0) / (64, 0) | 64x96 each | Mechanical precision at rest |
+| Wouter Operating Machine 1-3 | (128, 0) / (192, 0) / (256, 0) | 64x96 each | Ancient espresso machine mastery |
+| Wouter Judging Stare | (320, 0) | 64x96 | "Do not tell me you want it 'iced.'" |
+| Wouter Sigh 1-4 | (0, 96) / (64, 96) / (128, 96) / (192, 96) | 64x96 each | Measurable on the Richter scale |
 
 ### Server Margot:
 | Element | Position | Size | Description |
@@ -181,11 +181,11 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 ### Night Variants:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Willem Night Idle | (0, 288) | 64x96 | String-light palette version |
+| Wouter Night Idle | (0, 288) | 64x96 | String-light palette version |
 | Margot Night Idle | (64, 288) | 64x96 | String-light palette version |
 
 ### Technical Notes:
-- Willem's sigh animation is a Bravado-damage event — pair with sigh cloud effect (Sheet 6)
+- Wouter's sigh animation is a Bravado-damage event — pair with sigh cloud effect (Sheet 6)
 - Margot's appear/disappear uses alpha fade on frames 1/3
 
 ---
@@ -195,7 +195,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 **Dimensions:** 512x512 pixels
 **Sprite Size:** 64x96 pixels (groups noted)
 
-### Agent Havok ("Hans", very Shamsterdam local person):
+### Agent Havok ("Joop", very Shamsterdam local person):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Havok Disguised Idle 1-2 | (0, 0) / (64, 0) | 64x96 each | Sheltie in hoodie + sunglasses, seated |
@@ -230,7 +230,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Cigarette/Weed Smoke Wisp 1-3 | (128, 0) / (160, 0) / (192, 0) | 32x64 each | European ambiance + coffeeshop drift |
 | Canal Mist | (0, 64) | 128x64 | Morning water haze tile |
 | Reflection Shimmer 1-3 | (128, 64) / (160, 64) / (192, 64) | 32x32 each | Water light dancing on tables |
-| Willem Sigh Cloud 1-2 | (0, 128) / (48, 128) | 48x48 each | Visible, measurable disappointment |
+| Wouter Sigh Cloud 1-2 | (0, 128) / (48, 128) | 48x48 each | Visible, measurable disappointment |
 | Judgment Aura 1-2 | (96, 128) / (144, 128) | 48x64 each | Radiates from locals toward tourist faux pas |
 | Bicycle Bell Flash 1-2 | (192, 128) / (224, 128) | 32x32 each | Near-miss warning ping |
 | Bravado Loss Puff 1-3 | (0, 192) / (32, 192) / (64, 192) | 32x32 each | Shame hit particles |
@@ -253,7 +253,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Service Wait Indicator | (0, 0) | 128x32 | "Server arriving eventually..." (30-90s random) |
 | Bravado Judgment Meter | (0, 32) | 96x64 | Café-specific shame tracking |
 | Pronunciation Attempt Icons 1-4 | (96, 32) to (192, 32), 32px steps | 32x32 each | Language barrier mini-game results (graceful → catastrophic) |
-| Price Shock Popup | (0, 96) | 128x96 | "€8.00 for THIS?" |
+| Price Shock Popup | (0, 96) | 128x96 | "8 Sovs for THIS?" |
 | Tip Confusion Prompt | (128, 96) | 128x64 | "Tip? (Europeans don't...)" |
 | Espresso Size Comparison | (256, 96) | 96x64 | American expectation vs. thimble reality |
 | Mission Briefing Frame | (0, 192) | 256x192 | Havok's crayon-blueprint dialogue skin |
@@ -273,7 +273,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Frames:** 4
 - **Pattern:** Rise → curl → dissipate → loop
 - **Trigger:** Constant at machine; burst on each order pulled
-- **Purpose:** Terrace's visual heartbeat; signals Willem is working
+- **Purpose:** Terrace's visual heartbeat; signals Wouter is working
 - **Audio Sync:** Machine hiss peak on frame 1 of each burst
 - **Mobile Optimization:** Half particle count on Medium, none ambient on Low
 
@@ -304,7 +304,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Audio Sync:** None (silence is the joke)
 - **Mobile Optimization:** None needed
 
-### Willem's Sigh (Sheets 4, 6):
+### Wouter's Sigh (Sheets 4, 6):
 - **Duration:** 2 seconds (4 body frames at 2 FPS + 2-frame cloud)
 - **Frames:** 4 + 2
 - **Pattern:** Inhale → shoulders rise → release → cloud drifts; single play
@@ -349,7 +349,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 |---------|----------|------|-------------|
 | Counter/Havok-table hotspot outlines | Sheet 7, (320, 192) | 64x64 x2 (x320, x384) | Bold-outline markers for the two key interaction zones |
 | Canal edge warning outline | Sheet 7, (320, 256) | 64x32 | High-contrast coping-stone edge (no railing hazard) |
-| NPC interaction highlight | Sheet 7, (384, 256) | 64x96 | Outline variant marking Willem, Margot, Havok as interactive |
+| NPC interaction highlight | Sheet 7, (384, 256) | 64x96 | Outline variant marking Wouter, Margot, Havok as interactive |
 
 ### Motion Sensitivity Options:
 | Element | Position | Size | Description |
@@ -362,7 +362,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Bicycle bell flash | Sheet 6, (192, 128) | 32x32 x2 | Visual mirror of approach bell — fires before sprite crosses |
-| Sigh cloud | Sheet 6, (0, 128) | 48x48 x2 | Visual mirror of Willem's seismic sigh |
+| Sigh cloud | Sheet 6, (0, 128) | 48x48 x2 | Visual mirror of Wouter's seismic sigh |
 | Boat motor ripple icon | Sheet 7, (448, 256) | 32x32 | Wake warning mirroring boat audio (every 45-60s) |
 | Machine hiss burst icon | Sheet 7, (480, 256) | 32x32 | Steam-burst chip mirroring espresso audio |
 
@@ -398,7 +398,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Low | Static water and awning, no ambient particles, 2 ambient NPCs (profile-mandated reductions) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 16 per frame
 - **Memory Footprint:** 38 MB maximum
 - **Particle Limit:** 24 (steam, smoke, mist)
@@ -423,7 +423,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Steam burst frames | Espresso machine hiss/grind | Frame 1 of burst |
 | Bicycle sprite | Bell ding | 0.5s before screen center |
 | Canal boat | Motor pass | Every 45-60 seconds with sprite |
-| Willem sigh frame 3 | Richter-scale sigh sample | On frame display |
+| Wouter sigh frame 3 | Richter-scale sigh sample | On frame display |
 | Margot appearance | Chair scrape on cobblestones | On fade-in complete |
 | Pigeon suspicious frame | Ominous coo | On Havok stare event |
 | Evening state | Distant Roodelicht club bass | With glow sprite + string lights |
@@ -463,7 +463,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - Havok's table is a complete comedy scene in still life — every prop contradicts his cover story
 
 ### Character Integration Notes:
-- Willem never leaves the machine; Margot teleports; the gap between them is the service-timing mechanic
+- Wouter never leaves the machine; Margot teleports; the gap between them is the service-timing mechanic
 - Havok reads as "local" at silhouette distance and "dog in a hoodie" at close range — layer tells accordingly
 - Regulars are furniture with opinions; they animate only to judge
 
@@ -473,7 +473,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 
 ### Screenshot-Worthy Moments:
 1. **Havok's Table** - Upside-down newspaper, crayon blueprints, hoodie with tags: one frame, whole joke
-2. **The Sigh Cloud** - Willem's measurable disappointment hovering over a tourist
+2. **The Sigh Cloud** - Wouter's measurable disappointment hovering over a tourist
 3. **Espresso Size Comparison** - The thimble vs. the American expectation
 4. **Selfie Canal-Fall** - Background tourist mid-splash while bros sip espresso
 5. **The Wifi Sign** - "Password: 'OrderSomethingFirst'"
@@ -558,12 +558,12 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | World Consistency (no real city names) | ✅ | Shamsterdam/Roodelicht Row in-world; profile's "Amsterdam energy" lines are meta commentary, not asset text |
 | Cultural Specificity | ✅ | Dutch directness, European café service norms, tourist exhaustion |
 | Satirical Targets Appropriate | ✅ | American service expectations and tourist behavior; café workers rendered competent, not mocked |
-| Seedy Underbelly Present | ✅ | €8 croissants, systematic overcharging, communal illegal ashtray, coffeeshop smoke drift |
+| Seedy Underbelly Present | ✅ | 8 Sovs croissants, systematic overcharging, communal illegal ashtray, coffeeshop smoke drift |
 | Gameplay Value Established | ✅ | Quest hub (Fabergé Egg Hunt), consumables, Bravado mechanics, Couchsurf hook, ambient storytelling |
 | Technical Feasibility | ✅ | Single outdoor scene, parallax layers, CanvasModulate time-of-day documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 16 draw calls, 38 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for bell/sigh/boat/hiss audio, reduced-motion statics, 44px zones |
 | No Crypto Elements | ✅ | Pure espresso-and-judgment commerce |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |
 
-**Once these assets are delivered, Café de Schaamte becomes the beating judgmental heart of Shamsterdam: the terrace where every quest begins over a €4.50 thimble, every faux pas is catalogued, and the dog in the hoodie is definitely, definitely a local.**
+**Once these assets are delivered, Café de Schaamte becomes the beating judgmental heart of Shamsterdam: the terrace where every quest begins over a 5 Sovs thimble, every faux pas is catalogued, and the dog in the hoodie is definitely, definitely a local.**

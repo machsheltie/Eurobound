@@ -72,7 +72,7 @@
       "region": "Shamsterdam",
       "sub_location": true,
       "exterior": {
-        "description": "Opa Willem's domain. Visible through a doorway from the main shop. Walls lined with bikes recovered from the canal. Decades of accumulated tools and wisdom.",
+        "description": "Opa Cees's domain. Visible through a doorway from the main shop. Walls lined with bikes recovered from the canal. Decades of accumulated tools and wisdom.",
         "entry_condition": "Approach doorway from main shop"
       },
       "interior": {

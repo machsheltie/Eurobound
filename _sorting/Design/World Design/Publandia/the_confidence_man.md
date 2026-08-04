@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 2 PM - 12 AM (prime confidence-needing hours)
 - **Stat Requirements**: None (low confidence especially welcome)
-- **Item Requirements**: Gold (€5-20 per item)
+- **Item Requirements**: Gold (5 Sovs-20 per item)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Location changes slightly each visit (mobile cart)
 
@@ -64,10 +64,10 @@ Cormac's products exist in a gray zone between "functional herbal supplement," "
 **Display Categories**:
 | Tier | Label Color | Price Range | Actual Effect | Placebo Factor |
 |------|-------------|-------------|---------------|----------------|
-| Bronze | Brown | €5-8 | Minor buffs | High |
-| Silver | Blue | €10-15 | Moderate buffs | Medium |
-| Gold | Gold | €18-25 | Significant buffs | Low |
-| "Special Reserve" | Black | €30+ | Premium effects | Minimal |
+| Bronze | Brown | 5 Sovs-8 | Minor buffs | High |
+| Silver | Blue | 10 Sovs-15 | Moderate buffs | Medium |
+| Gold | Gold | 18 Sovs-25 | Significant buffs | Low |
+| "Special Reserve" | Black | 30 Sovs+ | Premium effects | Minimal |
 
 ### Technical Specifications
 - **Color Palette**: Primary: Carnival Red (#DC143C), Accent: Apothecary Gold (#FFD700), Background: Wood Brown (#8B4513), Potion Various (#Multiple)
@@ -80,7 +80,7 @@ Cormac's products exist in a gray zone between "functional herbal supplement," "
 ### Theme & Vibe
 **Core Concept**: The Confidence Man sells exactly what the name implies — confidence, in bottles. The satire operates on multiple levels: he's selling belief as much as beverage, his products DO work (partly through ingredients, mostly through placebo), and the whole operation walks the line between helpful service and elaborate con. He calls himself "The Confidence Man" — a term literally meaning "con artist" — and dares you to trust him anyway.
 
-The deeper joke is that confidence IS partly performance. If his tonics make you FEEL confident, and that confidence helps you succeed... did the potion work? Or did belief work? The Confidence Man would say there's no difference. He'd also say that'll be €15.
+The deeper joke is that confidence IS partly performance. If his tonics make you FEEL confident, and that confidence helps you succeed... did the potion work? Or did belief work? The Confidence Man would say there's no difference. He'd also say that'll be 15 Sovs.
 
 ### The Cormac Philosophy
 Cormac "The Confidence Man" Byrne has been selling courage from his cart for 12 years. He's not entirely a con artist — his products contain legitimate herbal supplements and mild stimulants that DO provide effects. But he's not entirely legitimate either — his theatrical pitch and "guaranteed boldness" claims oversell reality. He exists in the comfortable middle, providing a service people want at prices they'll pay, with results that work often enough to keep him in business. Is that a con? He'd call it "sales."
@@ -108,7 +108,7 @@ Cormac "The Confidence Man" Byrne has been selling courage from his cart for 12 
 
 **The confidence journey**:
 1. "That guy says he can make me more confident. I NEED more confident."
-2. "€15 for 'Liquid Boldness'? That's... reasonable for BOLDNESS."
+2. "15 Sovs for 'Liquid Boldness'? That's... reasonable for BOLDNESS."
 3. *drinks potion*
 4. "I DO feel more confident! This WORKS!"
 5. *attempts bold action*
@@ -132,34 +132,34 @@ Cormac "The Confidence Man" Byrne has been selling courage from his cart for 12 
 **Bronze Tier (Entry Level)**
 | Item | Price | Effect | Duration | Notes |
 |------|-------|--------|----------|-------|
-| "Mild Courage" Tonic | €5 | +5 Bravado | 30 min | Starter courage |
-| "Steady Nerves" Drops | €6 | -Anxiety effects | 45 min | Calming |
-| "Social Ease" Elixir | €7 | +5 Charisma | 30 min | Conversation help |
-| "Basic Boldness" Shot | €8 | +8 Bravado, +3 Confidence | 20 min | Quick boost |
+| "Mild Courage" Tonic | 5 Sovs | +5 Bravado | 30 min | Starter courage |
+| "Steady Nerves" Drops | 6 Sovs | -Anxiety effects | 45 min | Calming |
+| "Social Ease" Elixir | 7 Sovs | +5 Charisma | 30 min | Conversation help |
+| "Basic Boldness" Shot | 8 Sovs | +8 Bravado, +3 Confidence | 20 min | Quick boost |
 
 **Silver Tier (Standard)**
 | Item | Price | Effect | Duration | Notes |
 |------|-------|--------|----------|-------|
-| "Liquid Boldness" | €12 | +15 Bravado | 1 hour | Signature product |
-| "Charm Amplifier" | €14 | +10 Charisma, +5 Persuasion | 45 min | Social situations |
-| "Fear Suppressant" | €13 | Immunity to "Intimidated" | 1 hour | Combat/social |
-| "Voice of Authority" | €15 | +10 Intimidation | 45 min | Power plays |
+| "Liquid Boldness" | 12 Sovs | +15 Bravado | 1 hour | Signature product |
+| "Charm Amplifier" | 14 Sovs | +10 Charisma, +5 Persuasion | 45 min | Social situations |
+| "Fear Suppressant" | 13 Sovs | Immunity to "Intimidated" | 1 hour | Combat/social |
+| "Voice of Authority" | 15 Sovs | +10 Intimidation | 45 min | Power plays |
 
 **Gold Tier (Premium)**
 | Item | Price | Effect | Duration | Notes |
 |------|-------|--------|----------|-------|
-| "Absolute Confidence" | €20 | +25 Bravado, +10 All Social | 1.5 hours | Full package |
-| "Irresistible Presence" | €22 | +15 Charisma, +10 Charm | 1 hour | Flirting bonus |
-| "Fearless Fighter" | €18 | +10 Attack, -Fear effects | 1 hour | Combat focus |
-| "The Closer" | €25 | +20 Persuasion, +10 Bravado | 1 hour | Deal-making |
+| "Absolute Confidence" | 20 Sovs | +25 Bravado, +10 All Social | 1.5 hours | Full package |
+| "Irresistible Presence" | 22 Sovs | +15 Charisma, +10 Charm | 1 hour | Flirting bonus |
+| "Fearless Fighter" | 18 Sovs | +10 Attack, -Fear effects | 1 hour | Combat focus |
+| "The Closer" | 25 Sovs | +20 Persuasion, +10 Bravado | 1 hour | Deal-making |
 
 **Special Reserve (Ask Only)**
 | Item | Price | Effect | Duration | Notes |
 |------|-------|--------|----------|-------|
-| "Cormac's Personal Blend" | €30 | +30 Bravado, +15 All Social, +5 Luck | 2 hours | The real stuff |
-| "Emergency Confidence" | €35 | Instant +40 Bravado | 30 min | Crisis mode |
-| "The Transformation" | €40 | Temporary personality shift (confidence max) | 1 hour | Warning: crash after |
-| "Liquid Legend" | €50 | +All stats, "Legend" status temporary | 2 hours | For special occasions |
+| "Cormac's Personal Blend" | 30 Sovs | +30 Bravado, +15 All Social, +5 Luck | 2 hours | The real stuff |
+| "Emergency Confidence" | 35 Sovs | Instant +40 Bravado | 30 min | Crisis mode |
+| "The Transformation" | 40 Sovs | Temporary personality shift (confidence max) | 1 hour | Warning: crash after |
+| "Liquid Legend" | 50 Sovs | +All stats, "Legend" status temporary | 2 hours | For special occasions |
 
 ### The Pitch System
 When approaching The Confidence Man, Cormac initiates his sales pitch:
@@ -183,7 +183,7 @@ Cormac suggests products based on your apparent needs:
 **The Close**:
 - "So what do you say? Ready to become who you were MEANT to be?"
 - "This isn't just a purchase. It's an INVESTMENT in your POTENTIAL."
-- "The confident version of you is just €15 away."
+- "The confident version of you is just 15 Sovs away."
 
 ### Effect Mechanics
 **How Buffs Work**:
@@ -314,7 +314,7 @@ Cormac's prices are "negotiable" within limits:
 - **Cormac**: "You CAN, but I recommend sequential consumption. Overlap can cause... unpredictability."
 - **Lord Pilsner** (post-purchase): "I feel like I could FIGHT A BEAR. Is there a bear? I want to fight it."
 - **Chadwick**: "This is PERFECT for content! Before and after confidence! The TRANSFORMATION!"
-- **Cormac**: "The Transformation is €40. Or are we talking METAPHORICAL transformation?"
+- **Cormac**: "The Transformation is 40 Sovs. Or are we talking METAPHORICAL transformation?"
 - **Chadwick**: "...both? Give me both."
 - **Bradley**: "I'll observe from a distance."
 - **Cormac**: "Fair! FAIR! But when your friends succeed and you wonder WHY... I'll be HERE."

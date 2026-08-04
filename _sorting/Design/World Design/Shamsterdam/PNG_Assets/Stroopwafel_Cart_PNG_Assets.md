@@ -1,11 +1,11 @@
 # De Stroopwafel Kar (The Stroopwafel Cart) - Complete PNG Asset Requirements
 
 ## 📋 Overview
-De Stroopwafel Kar is Shamsterdam's mobile street-food landmark — a blue-and-white tiled three-wheeled cart where Tante Bep presses fresh stroopwafels for €8 that locals buy packaged for €1.50, and the tourists are STILL right to pay it. This document specifies every PNG asset for the cart: three time-based location backdrops, the cart structure and equipment, Tante Bep and Mila NPC sheets, the customer cast, food/production sprites with steam and caramel effects, and the ordering UI. Its satirical essence in a sentence: the one tourist trap in Shamsterdam that delivers exactly what it promises, at five times the price.
+De Stroopwafel Kar is Shamsterdam's mobile street-food landmark — a blue-and-white tiled three-wheeled cart where Tante Bep presses fresh stroopwafels for 8 Sovs that locals buy packaged for 2 Sovs, and the tourists are STILL right to pay it. This document specifies every PNG asset for the cart: three time-based location backdrops, the cart structure and equipment, Tante Bep and Mila NPC sheets, the customer cast, food/production sprites with steam and caramel effects, and the ordering UI. Its satirical essence in a sentence: the one tourist trap in Shamsterdam that delivers exactly what it promises, at five times the price.
 
 **Location ID:** `shamsterdam_market_stroopwafel_cart_01`
 **Theme:** Tourist pricing acceptance vs. genuine value; "authentic experience" markup satirized, the stroopwafel itself treated with total respect
-**Zone:** Albert Cuyp Market / mobile — Dam Square adjacent and Vondelpark entrance by time of day
+**Zone:** De Kuipmarkt / mobile — Verdoemplein adjacent and Wandelpark entrance by time of day
 **Hours:** 9 AM - 6 PM (market hours); cart relocates at 12 PM and 3 PM; packed up evenings
 **Primary Function:** Street food vendor / comfort item source (Comfort + Sugar Rush statuses) / "Track the Cart" and "The Stroopwafel Trail" quests / Bravado interaction node
 
@@ -48,9 +48,9 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Backdrop Strips (2048x512 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Albert Cuyp Market entrance (9 AM-12 PM) | (0, 0) | 2048x512 | Market stalls, morning light, supermarket visible across the street (the joke lives in the background) |
-| Dam Square adjacent (12 PM-3 PM) | (0, 512) | 2048x512 | Peak-tourist stone plaza, pigeons, tour groups mid-distance |
-| Vondelpark entrance (3-6 PM) | (0, 1024) | 2048x512 | Park gate, afternoon gold light, cyclists passing lane |
+| De Kuipmarkt entrance (9 AM-12 PM) | (0, 0) | 2048x512 | Market stalls, morning light, supermarket visible across the street (the joke lives in the background) |
+| Verdoemplein adjacent (12 PM-3 PM) | (0, 512) | 2048x512 | Peak-tourist stone plaza, pigeons, tour groups mid-distance |
+| Wandelpark entrance (3-6 PM) | (0, 1024) | 2048x512 | Park gate, afternoon gold light, cyclists passing lane |
 
 ### Technical Notes:
 - Cart sprite (Sheet 2) is composited onto each backdrop at a fixed anchor; backdrops never include the cart itself
@@ -68,7 +68,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 |---------|----------|------|-------------|
 | Full cart (front 3/4 view) | (0, 0) | 384x384 | Blue/white tiles, chrome trim, wood panels, three wheels, windmill + tulip decoration |
 | Cart awning | (384, 0) | 256x128 | Blue/white striped, "VERSE STROOPWAFELS" banner |
-| Price board | (640, 0) | 128x96 | "Klein €4 / Groot €8", crossed-out "Local price: €1.50", "Yes, They're Worth It" |
+| Price board | (640, 0) | 128x96 | "Klein 4 Sovs / Groot 8 Sovs", crossed-out "Local price: 2 Sovs", "Yes, They're Worth It" |
 | Cash box | (768, 0) | 64x64 | Weathered, well-used, efficient |
 | Card reader (with sigh) | (832, 0) | 48x64 | Mila's reluctant contraption |
 
@@ -82,7 +82,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Warming rack (stocked) | (864, 128) | 128x96 | Finished stroopwafels staying warm |
 | Splitting wire tool | (864, 224) | 64x32 | Sixty years of family practice |
 | Front counter display | (0, 384) | 256x128 | Finished stroopwafels, klein/groot size comparison visible |
-| Discount token ("Track the Cart" reward) | (256, 384) | 32x32 | One-time €2 off chip |
+| Discount token ("Track the Cart" reward) | (256, 384) | 32x32 | One-time 2 Sovs off chip |
 | Wax paper sleeve | (288, 384) | 48x48 | Handover wrapper |
 
 ### Technical Notes:
@@ -196,7 +196,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Interface Elements:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Order selection panel | (0, 0) | 192x128 | Klein €4 / Groot €8 choice, groot subtly highlighted |
+| Order selection panel | (0, 0) | 192x128 | Klein 4 Sovs / Groot 8 Sovs choice, groot subtly highlighted |
 | Production wait timer | (192, 0) | 128x32 | 90 seconds of anticipation, iron icon fills |
 | Comfort status icon | (192, 32) | 32x32 | Warm glow badge (3 or 5 turns) |
 | Sugar Rush status icon | (224, 32) | 32x32 | Speed-boost lightning waffle |
@@ -220,7 +220,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Frames:** 4 (Bep) + iron open/closed overlays
 - **Pattern:** Ball placed → press down → hold/sizzle → lift, continuous while cart active
 - **Trigger:** Constant during open hours; syncs to order timer when player waits
-- **Purpose:** The visible theater — 90 seconds of craft justifying €8
+- **Purpose:** The visible theater — 90 seconds of craft justifying 8 Sovs
 - **Audio Sync:** Sizzle on press-down frame; iron clank on lift
 - **Mobile Optimization:** Cycle halves to 2 key frames on low LOD
 
@@ -327,7 +327,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Low | Static cart with key-frame press only, static backdrops, no steam particles (per profile) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile budget)
+- **Target FPS:** 60 (per location profile budget)
 - **Max Draw Calls:** 12 per frame
 - **Memory Footprint:** 30 MB maximum
 - **Particle Limit:** 12 (steam, drips)
@@ -359,16 +359,16 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Track the Cart | Cart location map pips, discount token | Visit all three locations; one-time €2 off token |
+| Track the Cart | Cart location map pips, discount token | Visit all three locations; one-time 2 Sovs off token |
 | The Stroopwafel Trail (time-limited) | Map pips + Connoisseur title card | All three locations in one day; free groot next visit |
 | Stroopwafel Wisdom (achievement) | Enlightenment sparkle, Enlightened icon | Buy fresh after having packaged; permanent vendor-discount look |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| The Pancake House | Comparison dialogue callbacks (€8 well-spent vs €18 regret) | Post-Pancake Disappointment status interacts with Comfort |
+| The Pancake House | Comparison dialogue callbacks (8 Sovs well-spent vs 18 Sovs regret) | Post-Pancake Disappointment status interacts with Comfort |
 | De Groene Gids | Enhanced-appreciation state ("This is like CLOUDS") | Space Cake Effect modifies first-bite reaction text |
-| Albert Cuyp Market | Market backdrop strip shared with market zone | Cart anchored at market entrance mornings |
+| De Kuipmarkt | Market backdrop strip shared with market zone | Cart anchored at market entrance mornings |
 | FEBO Automat | Comfort-food network contrast (3 AM vs daytime) | Dialogue references only, no shared sprites |
 | Supermarket (any) | Packaged stroopwafel sprite | The sad comparison item sold elsewhere |
 
@@ -383,7 +383,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Texture:** Glazed tile, worn wood, chrome polished by thirty years of hands; steam softens every edge
 
 ### Environmental Storytelling:
-- The crossed-out "Local price: €1.50" on the board tells the entire satire in four words
+- The crossed-out "Local price: 2 Sovs" on the board tells the entire satire in four words
 - Supermarket visible across the street in the market backdrop — the cheaper option is never hidden
 - The warming rack is always stocked but the line still waits for fresh — the product earns its markup on screen
 - Windmill and tulip decoration is deliberate tourist-bait maximalism, and Bep knows it
@@ -399,18 +399,18 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ## 🎯 Social Media Viral Potential
 
 ### Screenshot-Worthy Moments:
-1. **The price board** — "Klein €4 / Groot €8" over crossed-out "Local price: €1.50" and "Yes, They're Worth It"
+1. **The price board** — "Klein 4 Sovs / Groot 8 Sovs" over crossed-out "Local price: 2 Sovs" and "Yes, They're Worth It"
 2. **The split-and-fill close-up** — production stages strip is pure process-video bait
 3. **First-bite freeze frame** — the party's synchronized revelation faces
 4. **Child Experiencing Joy** — caramel-faced pure happiness beside price-calculating adults
-5. **Steam-wreathed cart at golden hour** — Vondelpark backdrop postcard shot
+5. **Steam-wreathed cart at golden hour** — Wandelpark backdrop postcard shot
 
 ### Quote Potential:
 - "Groot is better. Fresh, more caramel. Same love, bigger joy."
 - "The stroop is my grandmother's recipe. The price is my landlord's recipe."
-- "Yes, it's eight euros. Yes, I know the supermarket. No, it's not the same."
+- "Yes, it's eight Sovs. Yes, I know the supermarket. No, it's not the same."
 - "Wait. WAIT. This is what they were SUPPOSED to taste like?"
-- "Every stroopwafel is ninety seconds of my life. That's worth eight euros. My life, your snack."
+- "Every stroopwafel is ninety seconds of my life. That's worth eight Sovs. My life, your snack."
 
 ---
 
@@ -480,13 +480,13 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam only; market/square/park are in-world zone names (profile retains Albert Cuyp/Dam/Vondelpark labels as Shamsterdam district names) |
+| World Consistency (no real city names) | ✅ | Shamsterdam only. Zone names are fully in-world: De Kuipmarkt, Verdoemplein, Wandelpark |
 | Cultural Specificity | ✅ | Dutch stroopwafel tradition treated as genuine cultural treasure |
 | Satirical Targets Appropriate | ✅ | Tourist pricing acceptance — never the food, never the vendors |
 | Seedy Underbelly Present | ✅ | 5x tourist markup with a smile, cart strategically stalking tourist peaks (mildest vice in Shamsterdam by design) |
 | Gameplay Value Established | ✅ | Comfort/Sugar Rush economy, two cart quests, Bravado checks, Enlightened flag |
 | Technical Feasibility | ✅ | Fade-based relocation, streamed backdrops, 12-particle cap documented |
-| Mobile Performance Budget | ✅ | 45 FPS, ≤12 draw calls, ≤30 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, ≤12 draw calls, ≤30 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px touch zones |
 | No Crypto Elements | ✅ | Pure traditional street food (profile-confirmed) |
 | Social Media Integration | ✅ | 5 screenshot moments identified, process-video composition built in |

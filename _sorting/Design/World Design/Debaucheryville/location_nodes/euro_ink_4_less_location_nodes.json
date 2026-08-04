@@ -125,7 +125,7 @@
         {"item": "matching_friendship_duck", "price": 40, "unlock": "after_tattoo_acquired"},
         {"item": "touch_up_service", "price": 25}
       ],
-      "currency": "gold_euros"
+      "currency": "gold_sovs"
     },
     
     "selfie_prop_fresh_duck_tattoo_mirror": {
@@ -154,6 +154,6 @@
   "post_credits_reference": {
     "scene": "twin_peaks_reveal",
     "element": "duck_tattoo_visible",
-    "punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - €50 for any duck-related design."
+    "punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - 50 Sovs for any duck-related design."
   }
 }

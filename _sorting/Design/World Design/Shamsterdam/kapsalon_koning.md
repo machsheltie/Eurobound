@@ -16,7 +16,7 @@
 - **Time Restrictions**: 4 PM - 6 AM (dinner through desperate hours)
 - **Peak Hours**: Midnight - 4 AM (when kapsalon calls loudest)
 - **Stat Requirements**: None (hunger and questionable decisions welcome)
-- **Item Requirements**: Gold for purchases (€8-15), cardiovascular optimism
+- **Item Requirements**: Gold for purchases (8 Sovs-15), cardiovascular optimism
 - **Previous Location Requirements**: None (the kapsalon welcomes all)
 - **Special Conditions**: Seating available here (unlike Leeman's), but barely
 
@@ -24,7 +24,7 @@
 - **Normal Exit**: Into the night, heavier, slower, satisfied
 - **Completion Requirements**: No completion (surviving is its own reward)
 - **Failure States**: Cannot fail (though "Food Coma" is technically a state)
-- **Progressive Unlocks**: "Kapsalon Survivor" status after finishing large, Big Willem remembers
+- **Progressive Unlocks**: "Kapsalon Survivor" status after finishing large, Big Wim remembers
 
 ## Visual Design
 ### Exterior Description
@@ -35,7 +35,7 @@
   - Main: "KAPSALON KONING" with crown logo
   - Subtitle: "Since 2008 — Port City Style, Shamsterdam Execution"
   - Explanation: "KAPSALON = Fries + Döner + Cheese + Salad + Sauce + Glory"
-  - Big Willem's Quote: "In the port city, we put cheese on everything."
+  - Big Wim's Quote: "In the port city, we put cheese on everything."
   - Size warning: "No Small Available. This Is Intentional."
 - **Atmosphere**: Brighter than Leeman's, slightly more chaos energy, cheese smell dominant
 - **Environmental Context**: Near Leeman's (they acknowledge each other), different customer base
@@ -52,7 +52,7 @@
 **Layer 1 — The Foundation: Fries**
 - Fresh-cut, fried to golden
 - The structural base, the carb platform
-- "Without good fries, everything fails" — Willem
+- "Without good fries, everything fails" — Wim
 
 **Layer 2 — The Protein: Döner Meat**
 - Shaved from the tower (they have ONE tower, focused)
@@ -72,7 +72,7 @@
 **Layer 5 — The Sauce Chaos**
 - Garlic sauce (standard)
 - Sambal (for kick)
-- Both (for Willem's respect)
+- Both (for Wim's respect)
 - "You want both sauces? You understand."
 
 **The Vessel — The Aluminum Tray**
@@ -84,7 +84,7 @@
 - **Type**: Standard plastic, not reinforced
 - **Durability**: Will break mid-bite, 100% certainty
 - **Backup Plan**: Second fork automatically provided
-- **Willem's Wisdom**: "The fork breaks because you're eating with passion. Get another fork."
+- **Wim's Wisdom**: "The fork breaks because you're eating with passion. Get another fork."
 - **Alternative**: Hands (judgment-free zone)
 
 ### Technical Specifications
@@ -100,7 +100,7 @@
 
 The satire is the beautiful absurdity of a dish that exists purely because someone asked "what if ALL the things, together, with cheese?" and an entire country said "yes."
 
-### The Origin Story (Willem Tells This Constantly)
+### The Origin Story (Wim Tells This Constantly)
 "2003. Rotterdam. A barber — KAPSALON means hair salon, you understand? — this barber, he goes to his kebab shop every day. One day he says 'put the meat on the fries. Then put cheese.' The shop owner says '...okay?' The kapsalon is born. This man is a VISIONARY. I am his disciple."
 
 ### Cultural Targets
@@ -128,7 +128,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - "No small" should be a warning
 - The photos show LARGE portions
 - Other customers are struggling
-- Willem's knowing smile at "large" orders
+- Wim's knowing smile at "large" orders
 - The structural integrity of the forks
 
 **The experience**:
@@ -144,9 +144,9 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 ### Ordering System
 - **Approach**: Counter service, menu overhead
 - **The Size Question**: "Regular or Large?" (there is no small)
-- **Meat Selection**: Chicken, veal, or mixed (Willem has opinions)
+- **Meat Selection**: Chicken, veal, or mixed (Wim has opinions)
 - **Sauce Selection**: Garlic, sambal, or both
-- **The Willem Assessment**: Based on your order, you receive judgment
+- **The Wim Assessment**: Based on your order, you receive judgment
 - **Assembly**: Watch your kapsalon come to life
 - **Payment**: Before receiving the tray of destiny
 - **Seating Decision**: Eat here or take away (either has consequences)
@@ -154,13 +154,13 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effects | The Reality |
 |------|-------|-----------|----------------|-------------|
-| Kapsalon (Regular) | €10 | +35 HP | Cheese Sweats | "Large enough for most" |
-| Kapsalon (Large) | €14 | +50 HP | Cheese Sweats, Food Coma Risk | "For the committed" |
-| Kapsalon "King Size" | €18 | +70 HP | Cheese Sweats, Food Coma Guaranteed | "Wall of Fame eligible" |
-| Extra Cheese | +€2 | +10 HP | Extended Cheese Sweats | "More blanket" |
-| Extra Sambal | +€1 | +5 HP, -5 HP delayed | Fire Addition | "Port City hot" |
-| Both Sauces | +€1 | +5 HP | Willem Respect | "You understand" |
-| Drink (Cola) | €2.50 | +5 HP | None | "For the cheese" |
+| Kapsalon (Regular) | 10 Sovs | +35 HP | Cheese Sweats | "Large enough for most" |
+| Kapsalon (Large) | 14 Sovs | +50 HP | Cheese Sweats, Food Coma Risk | "For the committed" |
+| Kapsalon "King Size" | 18 Sovs | +70 HP | Cheese Sweats, Food Coma Guaranteed | "Wall of Fame eligible" |
+| Extra Cheese | +2 Sovs | +10 HP | Extended Cheese Sweats | "More blanket" |
+| Extra Sambal | +1 Sov | +5 HP, -5 HP delayed | Fire Addition | "Port City hot" |
+| Both Sauces | +1 Sov | +5 HP | Wim Respect | "You understand" |
+| Drink (Cola) | 3 Sovs | +5 HP | None | "For the cheese" |
 | Replacement Fork | Free | None | None | "You'll need it" |
 
 ### The "Full Kapsalon Experience" (Large with Both Sauces)
@@ -168,7 +168,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Content**: Large kapsalon, extra cheese, both sauces
 - **Effects**: +50 HP, Cheese Sweats, 20% Food Coma Risk
 - **Special Drop**: Aluminum tray becomes "Kapsalon Battle Tray" item
-- **Willem's Commentary**: "You want the full experience? You have come to the right place. You have come to the ONLY place."
+- **Wim's Commentary**: "You want the full experience? You have come to the right place. You have come to the ONLY place."
 
 ### Status Effects
 
@@ -177,7 +177,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Duration**: 30-60 minutes depending on size
 - **Effect**: +10% HP regeneration, -15% Speed
 - **Visual**: Slight glow, contented expression
-- **Willem's Explanation**: "The cheese works through you. Let it work."
+- **Wim's Explanation**: "The cheese works through you. Let it work."
 
 **Food Coma**
 - **Source**: Large/King Size, or eating too fast
@@ -185,7 +185,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Effect**: Skip next turn in combat, full heal, vulnerable state
 - **Duration**: One combat turn
 - **Recovery**: Automatic, with full HP restoration
-- **Willem's Wisdom**: "The coma is the body processing greatness. Accept it."
+- **Wim's Wisdom**: "The coma is the body processing greatness. Accept it."
 
 ### The Kapsalon Battle Tray (Collectible Item)
 - **Acquisition**: Complete "Full Kapsalon Experience"
@@ -193,39 +193,39 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Effect**: +2 Defense when equipped, can be thrown for moderate damage
 - **Durability**: Single use if thrown, infinite if shield
 - **Special**: Retains slight cheese aroma, may attract/repel NPCs
-- **Willem's Note**: "You finished. The tray is yours. It has absorbed your victory."
+- **Wim's Note**: "You finished. The tray is yours. It has absorbed your victory."
 
 ### The Fork Break Event
 - **Trigger**: 100% chance during first kapsalon eating
 - **Timing**: Mid-bite, maximum comedy potential
-- **Response**: Willem immediately provides replacement
+- **Response**: Wim immediately provides replacement
 - **Dialogue**: "The fork breaks because you eat with passion. Second fork."
 - **Prevention**: Cannot be prevented, is traditional
 
 ### The King Size Challenge (Optional)
 - **Requirement**: Order and complete King Size kapsalon
 - **Time Limit**: None (this isn't about speed, it's about survival)
-- **Witness**: Willem watches, judges, respects
-- **Reward**: Photo on Wall of Fame, Willem's eternal recognition
+- **Witness**: Wim watches, judges, respects
+- **Reward**: Photo on Wall of Fame, Wim's eternal recognition
 - **Consequence**: Guaranteed Food Coma, no regrets
 
 ### Bravado Interactions
 - **Gain Bravado**: Order Large or King Size confidently, use both sauces, finish without visible struggle
 - **Lose Bravado**: Ask for "small" (doesn't exist), leave food unfinished, complain about portion size
-- **Willem's Respect**: Both sauces order, or King Size completion
+- **Wim's Respect**: Both sauces order, or King Size completion
 
 ## NPCs & Vendors
 ### The King Himself
 
-**Big Willem**
+**Big Wim**
 - **Role**: Owner, kapsalon evangelist, sauce philosopher
 - **Appearance**: 6'5" Dutch-Turkish man, aproned, commanding presence, warm despite size
 - **Background**: Second-generation Dutch-Turkish, opened Kapsalon Koning 2008, Rotterdam roots
 - **Demeanor**: Enthusiastic about kapsalon, opinionated about everything else, genuinely welcoming
-- **The Willem Energy**: Loud, warm, convinced kapsalon can solve problems
+- **The Wim Energy**: Loud, warm, convinced kapsalon can solve problems
 - **Physical Description**: Tall enough to be visible over everyone, hands that have built thousands of kapsalons
 
-**Willem's Dialogue Categories**:
+**Wim's Dialogue Categories**:
 
 *On Kapsalon Philosophy:*
 - "Kapsalon means 'hair salon.' You know why? Because the barber who invented it had VISION."
@@ -253,14 +253,14 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 
 ### Staff
 
-**Kemal (Willem's Nephew)**
+**Kemal (Wim's Nephew)**
 - **Role**: Assembly line, cheese station, second shift
 - **Appearance**: 20s Dutch-Turkish man, learning the family trade, perpetual cheese residue
 - **Background**: Studying business, working nights, will probably open his own someday
 - **Demeanor**: Efficient, proud of quality, slightly overwhelmed at peak hours
 - **Dialogue**:
-  - "Uncle Willem trained me. The cheese must bubble. Not burn. Bubble."
-  - "Large with both sauces? Coming up. Uncle Willem's favorite order."
+  - "Uncle Wim trained me. The cheese must bubble. Not burn. Bubble."
+  - "Large with both sauces? Coming up. Uncle Wim's favorite order."
   - "Fork broke? Here. It happens. It always happens."
   - "You finishing that? ...respect."
 
@@ -280,15 +280,15 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 
 **The King Size Champion**
 - **Composition**: Someone actively on the Wall of Fame, returning for validation
-- **Behavior**: Eating King Size comfortably, nodding to Willem, veteran status
-- **Dialogue**: "Hey Willem. The usual." *Willem points to wall* "Yeah, that's me."
+- **Behavior**: Eating King Size comfortably, nodding to Wim, veteran status
+- **Dialogue**: "Hey Wim. The usual." *Wim points to wall* "Yeah, that's me."
 - **Function**: Shows what the bros could aspire to
 
 **The Health-Conscious Compromise**
 - **Composition**: Someone ordering "less cheese" or "extra salad"
-- **Behavior**: Willem complies but seems pained
+- **Behavior**: Wim complies but seems pained
 - **Dialogue**: "Can I get... less cheese? For... health?"
-- **Willem's Response**: "...less cheese. Okay. But why. Why would you do this."
+- **Wim's Response**: "...less cheese. Okay. But why. Why would you do this."
 - **Function**: Shows the full spectrum of customer types
 
 **The Competitive Eaters**
@@ -298,7 +298,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Function**: Shows the sport of kapsalon consumption
 
 ### Original NPC Dialogue
-**Willem's Kapsalon History Lesson (Full Version):**
+**Wim's Kapsalon History Lesson (Full Version):**
 - "2003. The port city. El Aviva snack bar. A barber named Nataniël Gomes. Every day he comes, every day he orders. One day he says 'everything together. With cheese.' The owner says 'you want fries and meat and cheese?' He says 'YES.' The kapsalon is born."
 - "They named it after him. His profession. KAPSALON. Hair salon. Because the barber created it. This is how legends are made."
 - "Now every snack bar in the country has kapsalon. EVERY ONE. Because of one barber. One vision. One tray."
@@ -313,8 +313,8 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Chadwick** (receiving): "Is this photogenic? This isn't photogenic. It's BEAUTIFUL anyway."
 - **Chadwick** (mid-eat): "I'm experiencing something. I'm experiencing a LOT of something."
 - **Chadwick** (post-eat): "Food coma. CONTENT coma. Same thing. Different. Same."
-- **Bradley** (to Willem): "Is there... less? A smaller version?"
-- **Willem**: "No small. Only 'not ready' and 'regular.'"
+- **Bradley** (to Wim): "Is there... less? A smaller version?"
+- **Wim**: "No small. Only 'not ready' and 'regular.'"
 - **Bradley** (mid-eat): "I've stopped counting. I've surrendered to the cheese."
 - **Bradley** (post-eat): "I understand now. I was wrong to question."
 
@@ -328,7 +328,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 ### The Great Döner Debate: International Expansion
 - **Quest Progress**: Eating here counts as Shamsterdam entry #2
 - **Distinction**: Kapsalon is "döner-adjacent" — counts but is its own category
-- **Willem's Position**: "Kapsalon is BEYOND döner. It includes döner. And transcends it."
+- **Wim's Position**: "Kapsalon is BEYOND döner. It includes döner. And transcends it."
 
 ### Cross-Location Dependencies
 - **Leeman's Döner Palace**: Sibling rivalry, different philosophies
@@ -339,7 +339,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 ### The Kapsalon Achievement Track
 - **First Kapsalon**: "Initiated" — entered the cheese dimension
 - **Fork Break**: "Passionate" — ate with appropriate intensity
-- **Both Sauces**: "Understanding" — Willem approves
+- **Both Sauces**: "Understanding" — Wim approves
 - **Large Completed**: "Committed" — no turning back
 - **King Size Completed**: "Wall of Fame" — eternal recognition
 - **Survived Food Coma**: "Transcended" — cheese sweats are now lifestyle
@@ -351,7 +351,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
   - Fries in fryer (periodic)
   - Order calls
   - Fork-on-aluminum scraping
-  - Willem's enthusiastic commentary
+  - Wim's enthusiastic commentary
   - Satisfied eating sounds
 - **Music Style**: Dutch-Turkish fusion pop, upbeat, matches energy
 - **Audio Transitions**: Louder/more energetic at peak hours
@@ -359,7 +359,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Fork break sound (inevitable, comedic)
-- **Character Voice Direction**: Willem's enthusiastic boom, Kemal's efficient replies
+- **Character Voice Direction**: Wim's enthusiastic boom, Kemal's efficient replies
 - **Environmental Comedy**: First-timer's overwhelmed sounds, competitive eaters' chaos
 - **The Cheese Sound**: That specific sizzle-bubble of melting Gouda
 
@@ -371,7 +371,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
   - Assembly line station
   - Cheese salamander (the glowing heart)
   - Wall of Fame
-  - Willem and Kemal sprites
+  - Wim and Kemal sprites
   - Customer NPC sprites
   - Kapsalon item sprites (various sizes)
   - Aluminum tray assets
@@ -380,7 +380,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
   - Assembly process
   - Fork break event
   - Food coma state
-  - Willem's gestures
+  - Wim's gestures
 - **Performance Budget**: 45 FPS target, max 14 draw calls, 34MB memory
 - **Platform Considerations**: Simplified cheese animation, static assembly for older devices
 
@@ -388,17 +388,17 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Asset Creation**: 8 hours (shop interior, assembly line, Wall of Fame, NPCs)
 - **Implementation Phase**: 9 hours (ordering system, status effects, fork break, achievements)
 - **Testing Requirements**: Status effect balance, Food Coma trigger rates, King Size challenge
-- **Polish Phase**: 4 hours (cheese effects, Willem's timing, atmosphere)
+- **Polish Phase**: 4 hours (cheese effects, Wim's timing, atmosphere)
 
 ## Marketing Integration
 ### Social Media Strategy
 - **Instagram Moments**: Kapsalon tray glory, cheese melt close-up, Wall of Fame
 - **TikTok Potential**: Assembly process ASMR, fork break compilation, King Size challenge
-- **Twitter Hooks**: Willem's philosophy, "no small" energy, cheese sweats acceptance
+- **Twitter Hooks**: Wim's philosophy, "no small" energy, cheese sweats acceptance
 - **Streaming Content**: Full ordering experience, King Size attempt, Food Coma events
 
 ### Community Engagement
-- **Fan Art Potential**: Willem portrait, kapsalon cross-section, cheese melt glory
+- **Fan Art Potential**: Wim portrait, kapsalon cross-section, cheese melt glory
 - **Meme-ability**: "No small" format, fork break tradition, cheese sweats lifestyle
 - **Cultural Discussion**: Dutch-Turkish food fusion, kapsalon origin story, Rotterdam culture
 
@@ -409,7 +409,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - [x] **Satirical targets appropriate** (Eating experience, not culture)
 - [x] **Gameplay value established** (Status effects, collectible tray, Wall of Fame)
 - [x] **No crypto elements** (Pure cheese-based currency of satisfaction)
-- [x] **Original content preserved** (Willem characterization, fork break tradition, King Size challenge)
+- [x] **Original content preserved** (Wim characterization, fork break tradition, King Size challenge)
 
 ---
 
@@ -440,10 +440,10 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - aluminum_tray_empty.png - 96x48 - The vessel
 
 ### Character Sprites (10 PNGs)
-- big_willem.png - 64x128 - 6'5" presence
-- willem_assembling.png - 64x128x4 - Layer by layer
-- willem_approving.png - 64x128 - Both sauces ordered
-- willem_explaining.png - 64x128x3 - The barber story
+- big_wim.png - 64x128 - 6'5" presence
+- wim_assembling.png - 64x128x4 - Layer by layer
+- wim_approving.png - 64x128 - Both sauces ordered
+- wim_explaining.png - 64x128x3 - The barber story
 - kemal_nephew.png - 64x96 - Cheese station master
 - post_club_pilgrimage.png - 256x96 - Seeking salvation
 - first_timer_overwhelmed.png - 64x96 - Where to start
@@ -457,7 +457,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - food_coma_state.png - 96x96 - Skip turn, heal
 - kapsalon_battle_tray.png - 96x64 - Collectible item
 - wall_of_fame_photo.png - 64x96 - Achievement added
-- both_sauces_badge.png - 32x32 - Willem respect earned
+- both_sauces_badge.png - 32x32 - Wim respect earned
 
 ### UI Elements (6 PNGs)
 - size_selection_ui.png - 192x128 - No small option

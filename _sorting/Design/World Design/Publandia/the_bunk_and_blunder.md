@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24/7 reception (someone's always awake, unfortunately)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: €15-25 per night (payment upfront, no refunds)
+- **Item Requirements**: 15 Sovs-25 per night (payment upfront, no refunds)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Room assignment is random (part of the horror)
 
@@ -76,11 +76,11 @@
 ### Room Configurations
 | Room Type | Beds | Price | Privacy | Sleep Quality | Chaos Level |
 |-----------|------|-------|---------|---------------|-------------|
-| 12-Bed Dorm | 12 | €15 | None | 30% | Maximum |
-| 8-Bed Dorm | 8 | €18 | Minimal | 45% | High |
-| 4-Bed Dorm | 4 | €22 | Some | 60% | Moderate |
-| "Private" Double | 2 | €45 | Theoretical | 75% | Variable |
-| "Private" Single | 1 | €35 | Actual | 85% | Your own |
+| 12-Bed Dorm | 12 | 15 Sovs | None | 30% | Maximum |
+| 8-Bed Dorm | 8 | 18 Sovs | Minimal | 45% | High |
+| 4-Bed Dorm | 4 | 22 Sovs | Some | 60% | Moderate |
+| "Private" Double | 2 | 45 Sovs | Theoretical | 75% | Variable |
+| "Private" Single | 1 | 35 Sovs | Actual | 85% | Your own |
 
 ### Technical Specifications
 - **Color Palette**: Primary: Institutional Beige (#D2B48C), Accent: Exhaustion Gray (#808080), Background: Mystery Stain Brown (#8B4513), Hope Green (#90EE90, faded)
@@ -120,7 +120,7 @@ Colm runs the Bunk & Blunder with the exhausted acceptance of someone who has se
 **How impaired are they**: Usually very (arriving after The Craic Tax)
 
 **The hostel journey**:
-1. "€15 a night! We're being SO smart with money!"
+1. "15 Sovs a night! We're being SO smart with money!"
 2. "Wait, how many people are in this room?"
 3. "Why is that guy's alarm going off at 4 AM?"
 4. "I can't shower because there's a QUEUE"
@@ -254,7 +254,7 @@ Sleep quality depends on random roommate generation:
 **Colm's Dialogue Categories**:
 
 *Check-In:*
-- "Room type? Grand. That's €18. Key card. Room 4. Good luck."
+- "Room type? Grand. That's 18 Sovs. Key card. Room 4. Good luck."
 - "Breakfast is 7-9. Continental means toast and sadness. Coffee's real though."
 - "House rules are on the wall. Nobody reads them. I don't blame them."
 - "The Wi-Fi password is 'BunkBlunder2024'. Capital B's. It works sometimes."
@@ -287,10 +287,13 @@ Sleep quality depends on random roommate generation:
 - **Dialogue**: "I had a SCHEDULE. A PLAN. This place has destroyed both. In three days."
 
 **Gap Year Gary**
-- **Composition**: 19-year-old experiencing "real life" for the first time
+- **Primary Location**: Hostel Midnight Checkout, Debaucheryville (see `Design/World Design/Debaucheryville/hostel_midnight_checkout.md` for the full profile and confession arc)
+- **Secondary Appearances**: The Bunk & Blunder, Publandia (this entry)
+- **Composition**: Australian, experiencing "real life" for the first time, eighteen months in
 - **Behavior**: Everything is profound, constantly journaling, will tell you about it
 - **Function**: Mirror for bros' pretensions
 - **Dialogue**: "I've learned so much about MYSELF here. Did you know the Quay represents the FLOW of LIFE?"
+- **Recurring Character Note**: Same Gary, same gap year, different hostel — one recurring Australian whose gap year quietly stopped being a gap. He never explains how he got from Debaucheryville to Publandia, or the other way round; he is simply always already there, on volume three of the journal. Precedent: the Euro Ink tattoo artist, who recurs across all four cities.
 
 **The Mysterious Older Traveler**
 - **Composition**: 50s, been backpacking "for a while," enigmatic
@@ -313,7 +316,7 @@ Sleep quality depends on random roommate generation:
 - "Check-out is 10 AM. Nobody makes check-out. I've stopped mentioning it."
 
 **The Bros' Bunk & Blunder Reactions:**
-- **Lord Pilsner** (booking): "€15 a night! We're basically GENIUSES! All that savings goes to EXPERIENCES!"
+- **Lord Pilsner** (booking): "15 Sovs a night! We're basically GENIUSES! All that savings goes to EXPERIENCES!"
 - **Lord Pilsner** (2 AM arrival): "SHHHHH we have to be QUIET there are PEOPLE— *crashes into bunk* —SLEEPING"
 - **Lord Pilsner** (morning): "Why is everyone LOOKING at me? What happened? WHAT DID I DO?"
 - **Colm**: "You don't remember? Impressive. You'll hear about it. Everyone heard about it."
@@ -438,4 +441,4 @@ Sleep quality depends on random roommate generation:
 
 ---
 
-*The Bunk & Blunder: Where €15 buys you a bed, a story, and a fundamental reassessment of your life choices. Sleep is theoretical. Privacy is fictional. The person above you will snore. The person below you will judge. Colm has seen it all. He wishes he hadn't. Welcome to budget travel.*
+*The Bunk & Blunder: Where 15 Sovs buys you a bed, a story, and a fundamental reassessment of your life choices. Sleep is theoretical. Privacy is fictional. The person above you will snore. The person below you will judge. Colm has seen it all. He wishes he hadn't. Welcome to budget travel.*

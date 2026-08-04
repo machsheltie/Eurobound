@@ -249,7 +249,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Potato Mode:** Essential bathroom layout, static graffiti, no status visual enhancements
 
 ### Performance Targets:
-- **Target FPS:** 45 fps (RGB shimmer and status effect overlays)
+- **Target FPS:** 60 fps (RGB shimmer and status effect overlays)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 35MB maximum for location
 
@@ -481,7 +481,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 | Seedy Underbelly Present | ✅ | Manufactured VIP toilet exclusivity, tech bro sponsorship plaque, "Not a Scam, Probably" DAO invite |
 | Gameplay Value Established | ✅ | Bravado gate, NFT #2 discovery, Fistø lore (hungover), NFT Affinity buff, ICQ CryptoMamiXXX integration |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, state-based conditional rendering documented |
-| Mobile Performance Budget | ✅ | 45 FPS target, max 14 draw calls, 35MB memory footprint |
+| Mobile Performance Budget | ✅ | 60 FPS target, max 14 draw calls, 35MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (tile crack wave, QR beep, champagne fizz), reduced RGB shimmer and static graffiti options |
 | No Crypto Elements | ✅ | Crypto/NFT satire established in source material (NFT hunt collectible, crypto graffiti, ICQ mockery) |
 | Social Media Integration | ✅ | Tech bro plaque, "ROI = Regret On Investment" graffiti, #CryptoQueen selfie filter identified |

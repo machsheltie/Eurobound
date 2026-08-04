@@ -42,7 +42,7 @@
           "id": "bike_rental",
           "name": "Bike Rental",
           "cost": 15,
-          "currency": "euro",
+          "currency": "sovs",
           "effect": "converts_to_traffic_participant",
           "duration": "1_day"
         },
@@ -56,7 +56,7 @@
           "id": "first_aid",
           "name": "First Aid",
           "cost": 5,
-          "currency": "euro",
+          "currency": "sovs",
           "effect": "heal_15_hp"
         }
       ],
@@ -258,19 +258,19 @@
       },
       
       "dialogue": {
-        "bike_lane_violation": "This is a bike lane. You are not a bike. That's €95.",
-        "blocking_traffic": "You're blocking traffic. Yes, on foot. Still illegal. €140.",
-        "photography_violation": "No photographs in crossing. Safety regulation. €50.",
+        "bike_lane_violation": "This is a bike lane. You are not a bike. That's 95 Sovs.",
+        "blocking_traffic": "You're blocking traffic. Yes, on foot. Still illegal. 140 Sovs.",
+        "photography_violation": "No photographs in crossing. Safety regulation. 50 Sovs.",
         "tram_near_miss": "...I'm honestly impressed. Here's a warning. This time.",
         "repeat_offender": "You again. At this point, I should offer a subscription.",
-        "attitude_surcharge": "And €25 for the attitude."
+        "attitude_surcharge": "And 25 Sovs for the attitude."
       },
       
       "fines": [
-        {"violation": "standing_in_bike_lane", "amount": 95, "currency": "euro"},
-        {"violation": "blocking_traffic", "amount": 140, "currency": "euro"},
-        {"violation": "photography_in_crossing", "amount": 50, "currency": "euro"},
-        {"violation": "attitude_surcharge", "amount": 25, "currency": "euro"}
+        {"violation": "standing_in_bike_lane", "amount": 95, "currency": "sovs"},
+        {"violation": "blocking_traffic", "amount": 140, "currency": "sovs"},
+        {"violation": "photography_in_crossing", "amount": 50, "currency": "sovs"},
+        {"violation": "attitude_surcharge", "amount": 25, "currency": "sovs"}
       ],
       
       "animation_states": {

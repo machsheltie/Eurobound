@@ -1,6 +1,6 @@
 # NPC Profile: Viewing Spot Scammer
 
-*"Americans! Best view in square! Only €10 each! Very limited!"*
+*"Americans! Best view in square! Only 10 Sovs each! Very limited!"*
 
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_viewing_spot_scammer_01`
@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Selling "prime viewing spots" for €10 per person to watch the hourly clock show. He leads tourists to a spot behind a large stone pillar that technically has a view of the clock but is practically useless for actually seeing the show.
+Selling "prime viewing spots" for 10 Sovs per person to watch the hourly clock show. He leads tourists to a spot behind a large stone pillar that technically has a view of the clock but is practically useless for actually seeing the show.
 
 ### What Bros Believe
 A savvy local insider is giving them access to the exclusive viewing area where REAL clock enthusiasts stand. This is the authentic European experience - knowing where the locals watch from.
@@ -72,7 +72,7 @@ Should look almost-but-not-quite official. Think theme park employee who lost hi
 > "Americans are the best. They don't want value - they want to FEEL like insiders. I'm not selling a view. I'm selling exclusivity. The pillar is part of the experience. It's... curated."
 
 ### Motivation
-Pure economics. He makes €300-500 per day during peak season with zero overhead costs. He's been doing this for 15 years. The pillar spot is "his" - other scammers respect the territory. This isn't a scam to him; it's a legitimate service industry job.
+Pure economics. He makes 300 Sovs-500 per day during peak season with zero overhead costs. He's been doing this for 15 years. The pillar spot is "his" - other scammers respect the territory. This isn't a scam to him; it's a legitimate service industry job.
 
 ---
 
@@ -80,7 +80,7 @@ Pure economics. He makes €300-500 per day during peak season with zero overhea
 
 ### Approach/Greeting
 **On spotting Americans entering square**:
-> "Americans! Best view in square! Only €10 each! Very limited!"
+> "Americans! Best view in square! Only 10 Sovs each! Very limited!"
 
 **If ignored, follows briefly**:
 > "The clock show is in 15 minutes! These spots go FAST!"
@@ -96,7 +96,7 @@ Pure economics. He makes €300-500 per day during peak season with zero overhea
 **Bradley**: "That makes sense. Optimal viewing angle would account for crowd interference..."
 
 **Viewing Spot Scammer** (pointing at Bradley):
-> "This one understands! Very smart. €10 each. Three of you, €30. I give you the local experience."
+> "This one understands! Very smart. 10 Sovs each. Three of you, 30 Sovs. I give you the local experience."
 
 ### Sales Close
 *Leading them to the pillar:*
@@ -143,9 +143,9 @@ Pure economics. He makes €300-500 per day during peak season with zero overhea
 ### Services Offered
 | Service | Price | Actual Value | Effect/Result |
 |---------|-------|--------------|---------------|
-| Prime Viewing Spot (Individual) | €10 | €0 | Led behind pillar, obstructed view |
-| Prime Viewing Spot (Group of 3) | €30 | €0 | Same pillar, bros cluster awkwardly |
-| "VIP Spot" (upsell) | €20 | €0 | Different pillar, equally bad |
+| Prime Viewing Spot (Individual) | 10 Sovs | 0 Sovs | Led behind pillar, obstructed view |
+| Prime Viewing Spot (Group of 3) | 30 Sovs | 0 Sovs | Same pillar, bros cluster awkwardly |
+| "VIP Spot" (upsell) | 20 Sovs | 0 Sovs | Different pillar, equally bad |
 
 ### Hidden Details / Easter Eggs
 - If player examines his clipboard, it's a takeout menu from a nearby restaurant
@@ -228,7 +228,7 @@ After initial encounter, appears in background:
 - **Quest**: The Astronomical Cock-Up
 - **Role**: First scammer encounter (Stage 2)
 - **Trigger**: Player enters square, 5-second delay
-- **Outcome**: Bros pay €30, stand behind pillar for entire clock show
+- **Outcome**: Bros pay 30 Sovs, stand behind pillar for entire clock show
 
 ### Quest Gate Function
 Not a gate - encounter is automatic but technically skippable (though bros will insist on "the authentic experience").

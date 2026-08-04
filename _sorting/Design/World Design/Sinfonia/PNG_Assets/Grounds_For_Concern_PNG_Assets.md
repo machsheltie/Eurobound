@@ -1,7 +1,7 @@
 # Grounds For Concern - Complete PNG Asset Requirements
 
 ## 📋 Overview
-This document provides exact specifications for all PNG files needed for Grounds For Concern — the Kaffeehaus Row espresso stand where the extraction is timed to the millisecond, the barista assesses you before you speak, and the tremor in your hands is not a side effect but a receipt. It is a Speed-buff vendor with a Luck-debuff price tag, a four-tier caffeine tolerance ladder, and a man named Franz who has been genuinely broken by people who ask for sugar.
+This document provides exact specifications for all PNG files needed for Grounds For Concern — the Kaffeehaus Row espresso stand where the extraction is timed to the millisecond, the barista assesses you before you speak, and the tremor in your hands is not a side effect but a receipt. It is a Speed-buff vendor with a Luck-debuff price tag, a four-tier caffeine tolerance ladder, and a man named Ferdinand who has been genuinely broken by people who ask for sugar.
 
 **Location ID:** `sinfonia_kaffeehausrow_grounds_concern_01`
 **Theme:** Third-wave espresso pretension — Viennese coffeehouse reverence compressed into a stand with no large cups and no mercy
@@ -14,12 +14,12 @@ This document provides exact specifications for all PNG files needed for Grounds
 ## 🎨 Color Palette
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Espresso Brown | #3C280D | Machine shadows, cart timber, coffee body, Franz's apron shading |
+| Espresso Brown | #3C280D | Machine shadows, cart timber, coffee body, Ferdinand's apron shading |
 | Brass Gold | #B5A642 | La Marzocco casing, counter rail, taps, obsessive polish highlights |
 | Steam White | #F5F5F5 | Steam, morning light, pristine apron, cup ceramic |
 | Crema Tan | #C4A35A | Crema layer, chalkboard chalk warmth, bean sacks |
 | Kaffeehaus Stucco | #E8DCC4 | Façade walls, backdrop buildings (derived neutral for the street band) |
-| Judgment Shadow | #2A2118 | Signage lettering, Franz's eye shadow, high-contrast outlines |
+| Judgment Shadow | #2A2118 | Signage lettering, Ferdinand's eye shadow, high-contrast outlines |
 
 ---
 
@@ -30,7 +30,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 │   ├── grounds_concern_tileset.png
 │   └── grounds_concern_machine.png
 ├── npcs/
-│   ├── franz_focused.png
+│   ├── ferdinand_focused.png
 │   └── grounds_concern_npcs.png
 ├── objects/
 │   └── grounds_concern_drinks.png
@@ -55,7 +55,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Kerb Edge | (64, 0) | 32x32 | Street boundary |
 | Gutter With Grounds | (96, 0) | 32x32 | Spent puck sediment |
 | Terrace Paving | (128, 0) | 32x32 | Café seating apron |
-| Stand Platform Board | (160, 0) | 32x32 | Franz's raised working deck |
+| Stand Platform Board | (160, 0) | 32x32 | Ferdinand's raised working deck |
 | Steam Grate | (192, 0) | 32x32 | Street vent, ambient wisp anchor |
 | Queue Floor Decal | (224, 0) | 32x32 | Where you wait to be assessed |
 
@@ -117,7 +117,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Tiny-Cup Display Rack | (384, 256) | 96x64 | Minimalist, deliberate |
 | "No Large Cups" Placard | (384, 320) | 96x24 | Absence enforced in writing |
 | Hours Plate "6 AM – 10 PM" | (480, 256) | 96x24 | Caffeine has limits |
-| Price Card Strip | (480, 280) | 96x32 | €3 – €25, visible, honest |
+| Price Card Strip | (480, 280) | 96x32 | 3 – 25 Sovs, visible, honest |
 | Extraction-Timer Placard "23 Seconds" | (480, 312) | 96x24 | The number that matters |
 
 ### Backdrop / Parallax Layers:
@@ -180,7 +180,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Composer-Free Wall Clock | (288, 96) | 32x32 | Time matters; music does not |
 | Water Glass Row | (336, 96) | 64x32 | Served with every espresso |
 | Extraction Log Book | (288, 128) | 48x32 | Every shot, recorded |
-| Franz's Reserve Tin | (336, 128) | 32x32 | One per day, no exceptions |
+| Ferdinand's Reserve Tin | (336, 128) | 32x32 | One per day, no exceptions |
 | Menu Board Small | (400, 96) | 96x64 | Six drinks, three items |
 
 ### Cups & Vessels (32x32 unless noted):
@@ -208,17 +208,17 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Milk Steam Frame A | (128, 192) | 32x48 | Vortex forming |
 | Milk Steam Frame B | (160, 192) | 32x48 | Microfoam achieved |
 | Pour Fail (Channeling) | (192, 192) | 32x48 | Discarded immediately, no charge |
-| Franz's Reserve Pour | (224, 192) | 32x48 | Ceremonial, once per day |
+| Ferdinand's Reserve Pour | (224, 192) | 32x48 | Ceremonial, once per day |
 
 ### Technical Notes:
 - The machine body is the only asset on this sheet permitted a full specular ramp; everything else uses two-tone brass to stay inside the draw-call budget
 - Extraction frames 1–4 must align on the cup rim so the sequence plays without sub-pixel jitter
-- Channeling frame is visually distinct at 32px (split stream, pale) because it is the only way the player learns Franz's standard without dialogue
+- Channeling frame is visually distinct at 32px (split stream, pale) because it is the only way the player learns Ferdinand's standard without dialogue
 
 ---
 
-## 🧑‍🍳 Sprite Sheet 3: Franz the Focused
-**File:** `franz_focused.png`
+## 🧑‍🍳 Sprite Sheet 3: Ferdinand the Focused
+**File:** `ferdinand_focused.png`
 **Dimensions:** 384x288 pixels
 **Color Palette:** #F5F5F5 (Apron White), #3C280D (Espresso Brown), #2A2118 (Judgment Shadow), #B5A642 (Brass reflections)
 
@@ -265,7 +265,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Portafilter In Hand | (320, 192) | 32x32 | Prop overlay |
 | Timer Held Up | (352, 192) | 32x32 | "The extraction was 23 seconds." |
 | Cloth Wipe Detail | (320, 224) | 32x24 | Between every single shot |
-| Franz's Reserve Key | (352, 224) | 32x24 | The tin is locked |
+| Ferdinand's Reserve Key | (352, 224) | 32x24 | The tin is locked |
 | Apron Crease Detail | (336, 248) | 48x40 | Deliberate, pressed |
 
 ### Animation Timing:
@@ -275,8 +275,8 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - Rare Smile: 1 frame, 0.4s, no ease — it must feel like it was almost not there
 
 ### Character Notes:
-- Franz's disappointment is never contempt; he is grieving a coffee that could have been better
-- His hands are the only steady thing in the scene once the player is buffed — never add tremor to Franz
+- Ferdinand's disappointment is never contempt; he is grieving a coffee that could have been better
+- His hands are the only steady thing in the scene once the player is buffed — never add tremor to Ferdinand
 - The mustache is a silhouette identifier at 48px; keep the profile shape consistent across every frame
 
 ---
@@ -296,7 +296,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Steady Master Nod-And-Go | (192, 0) | 48x96 | Receives drink, nods, leaves |
 | Queue Tourist Confused | (240, 0) | 48x96 | Reading the "no regular coffee" sign |
 | Queue Tourist Retreating | (288, 0) | 48x96 | Redirected three streets over |
-| Regular Being Remembered | (336, 0) | 48x96 | Franz starts the order on sight |
+| Regular Being Remembered | (336, 0) | 48x96 | Ferdinand starts the order on sight |
 
 ### The Bros & The Intervention (48x96 each):
 | Element | Position | Size | Description |
@@ -313,7 +313,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Character Notes:
 - The Steady Master never speaks and never trembles — he is the visual proof that tolerance is achievable
 - Tremor NPCs use the same base sprite as their calm counterparts with the shake applied as an effects-sheet overlay, not baked frames
-- Chadwick's caramel request pose must read as innocent; the joke is Franz's response, not Chadwick
+- Chadwick's caramel request pose must read as innocent; the joke is Ferdinand's response, not Chadwick
 
 ---
 
@@ -325,26 +325,26 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Core Drinks (32x48 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Ristretto | (0, 0) | 32x48 | €3, +5% Speed / -3% Luck — the respected order |
-| Espresso | (32, 0) | 32x48 | €4, +8% Speed / -5% Luck |
-| Doppio | (64, 0) | 32x48 | €6, +15% Speed / -10% Luck |
-| Triplo | (96, 0) | 32x48 | €8, +25% Speed / -15% Luck, Shaky |
-| The Quadruple | (128, 0) | 32x48 | €12, +40% Speed / -25% Luck, Shaky, Heart Racing |
+| Ristretto | (0, 0) | 32x48 | 3 Sovs, +5% Speed / -3% Luck — the respected order |
+| Espresso | (32, 0) | 32x48 | 4 Sovs, +8% Speed / -5% Luck |
+| Doppio | (64, 0) | 32x48 | 6 Sovs, +15% Speed / -10% Luck |
+| Triplo | (96, 0) | 32x48 | 8 Sovs, +25% Speed / -15% Luck, Shaky |
+| The Quadruple | (128, 0) | 32x48 | 12 Sovs, +40% Speed / -25% Luck, Shaky, Heart Racing |
 | Americano | (160, 0) | 32x48 | Tolerated |
-| Franz's Reserve | (192, 0) | 32x48 | €15, +20% Speed, no side effects, 1/day |
-| The Intervention | (224, 0) | 32x48 | €3, removes all caffeine effects |
+| Ferdinand's Reserve | (192, 0) | 32x48 | 15 Sovs, +20% Speed, no side effects, 1/day |
+| The Intervention | (224, 0) | 32x48 | 3 Sovs, removes all caffeine effects |
 
 ### Milk Drinks & Supplies:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Cappuccino | (0, 48) | 32x48 | €5 — slight sigh |
-| Latte | (32, 48) | 32x48 | €5 — visible disappointment |
-| Flat White | (64, 48) | 32x48 | €6 — respectful nod |
-| Bean Bag (10 Shots) | (96, 48) | 48x48 | €25, portable supply |
+| Cappuccino | (0, 48) | 32x48 | 5 Sovs — slight sigh |
+| Latte | (32, 48) | 32x48 | 5 Sovs — visible disappointment |
+| Flat White | (64, 48) | 32x48 | 6 Sovs — respectful nod |
+| Bean Bag (10 Shots) | (96, 48) | 48x48 | 25 Sovs, portable supply |
 | Bean Scoop Item | (144, 48) | 32x32 | Inventory prop |
-| Sugar Sachet (Forbidden) | (176, 48) | 24x24 | +€0.50 processing fee |
+| Sugar Sachet (Forbidden) | (176, 48) | 24x24 | +1 Sov processing fee |
 | Milk Jug Item | (200, 48) | 24x32 | Carried apologetically |
-| Receipt With €0.50 Processing Fee | (224, 48) | 32x32 | Itemised judgment |
+| Receipt With 1 Sov Processing Fee | (224, 48) | 32x32 | Itemised judgment |
 
 ### Status & Buff Icons (32x32 each):
 | Element | Position | Size | Description |
@@ -356,15 +356,15 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Over-Caffeinated | (128, 96) | 32x32 | Triple-stacked cup, all borders jagged |
 | Caffeine Tolerance Badge | (160, 96) | 32x32 | Current tier stamp |
 | Secret-Menu Token | (192, 96) | 32x32 | Transcendent unlock |
-| Franz's Approval Marker | (224, 96) | 32x32 | The rarest icon in Sinfonia |
+| Ferdinand's Approval Marker | (224, 96) | 32x32 | The rarest icon in Sinfonia |
 
 ### Tolerance Tier Badges:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Novice Badge | (0, 128) | 48x48 | €0 — full negative effects |
-| Regular Badge | (48, 128) | 48x48 | €50 — -25% negatives |
-| Aficionado Badge | (96, 128) | 48x48 | €100 — -40% negatives |
-| Transcendent Badge | (144, 128) | 48x48 | €200 — -50%, secret menu |
+| Novice Badge | (0, 128) | 48x48 | 0 Sovs — full negative effects |
+| Regular Badge | (48, 128) | 48x48 | 50 Sovs — -25% negatives |
+| Aficionado Badge | (96, 128) | 48x48 | 100 Sovs — -40% negatives |
+| Transcendent Badge | (144, 128) | 48x48 | 200 Sovs — -50%, secret menu |
 | Achievement Rosette Blank | (192, 128) | 64x48 | Shared award frame |
 
 ### Selfie Props & Cup States:
@@ -373,7 +373,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Tiny Cup Held (Confused Scale) | (0, 176) | 48x48 | Standard photo prop |
 | Empty Cup Cluster | (48, 176) | 64x48 | "The Vibration" evidence |
 | Cup Half Drunk | (112, 176) | 32x48 | Mid-consumption state |
-| Cup With Perfect Crema | (144, 176) | 32x48 | Franz-approved surface |
+| Cup With Perfect Crema | (144, 176) | 32x48 | Ferdinand-approved surface |
 | Spilled Espresso Decal | (176, 176) | 48x24 | Tremor consequence |
 | Crema Ring Stain | (176, 200) | 48x24 | Counter residue |
 | Napkin With Extraction Notes | (224, 176) | 32x48 | He wrote the time down for you |
@@ -436,7 +436,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Speed Lines Overlay | (0, 144) | 96x48 | Buffed movement streak |
-| Judgment Glint (Franz's Eyes) | (96, 144) | 32x24 | The assessment lands |
+| Judgment Glint (Ferdinand's Eyes) | (96, 144) | 32x24 | The assessment lands |
 | Sigh Puff Glyph | (128, 144) | 24x24 | Visual for the milk-drink sigh |
 | Approval Sparkle | (152, 144) | 24x24 | Visual for the nod |
 | Existential Crack Glyph | (176, 144) | 32x24 | "Regular coffee" hairline fracture |
@@ -461,13 +461,13 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Order Interface:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Order Panel Frame | (0, 0) | 160x96 | Menu + Franz reaction panel |
+| Order Panel Frame | (0, 0) | 160x96 | Menu + Ferdinand reaction panel |
 | Drink List Row Blank | (160, 0) | 96x24 | Unselected menu row |
 | Drink Row Highlighted | (160, 24) | 96x24 | Selected state |
-| Price Chip | (160, 48) | 48x24 | € value |
+| Price Chip | (160, 48) | 48x24 | Price lettered as `N SOVS` — **the word is the symbol; no currency mark exists.** ⚠️ 48x24 is tight for numeral + `SOVS`: set the word at half-height under the figure, or widen the chip to 72x24. |
 | Effect Chip Speed | (208, 48) | 48x24 | Buff preview |
 | Effect Chip Luck-Debuff | (160, 72) | 48x24 | Cost preview |
-| Franz Reaction Portrait Slot | (208, 72) | 48x24 | Live expression window |
+| Ferdinand Reaction Portrait Slot | (208, 72) | 48x24 | Live expression window |
 
 ### Response Chips & Reaction:
 | Element | Position | Size | Description |
@@ -475,7 +475,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Response Chip Approved (smooth border) | (0, 96) | 96x24 | Ristretto / "strongest thing you have" |
 | Response Chip Tolerated (double border) | (96, 96) | 96x24 | Milk drinks, Americano |
 | Response Chip Crisis (jagged border) | (0, 120) | 96x24 | "Regular coffee" / decaf |
-| Reaction Meter Bar | (96, 120) | 96x24 | Franz's running opinion of you |
+| Reaction Meter Bar | (96, 120) | 96x24 | Ferdinand's running opinion of you |
 | Extraction Timer Dial | (192, 96) | 64x48 | 23-second countdown ring |
 
 ### Status HUD:
@@ -493,19 +493,19 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Tolerance Progression:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Tolerance Track Bar | (0, 176) | 192x24 | €0 → €200 spend rail |
+| Tolerance Track Bar | (0, 176) | 192x24 | 0 Sovs → 200 Sovs spend rail |
 | Tier Marker Novice | (0, 200) | 24x24 | Locked/unlocked states |
-| Tier Marker Regular | (24, 200) | 24x24 | €50 |
-| Tier Marker Aficionado | (48, 200) | 24x24 | €100 |
-| Tier Marker Transcendent | (72, 200) | 24x24 | €200 |
-| Spend Counter Plate "€ / €50" | (96, 200) | 96x24 | Progress readout |
+| Tier Marker Regular | (24, 200) | 24x24 | 50 Sovs |
+| Tier Marker Aficionado | (48, 200) | 24x24 | 100 Sovs |
+| Tier Marker Transcendent | (72, 200) | 24x24 | 200 Sovs |
+| Spend Counter Plate "N / 50 SOVS" | (96, 200) | 96x24 | Progress readout; word lettered, no currency mark |
 | Secret Menu Unlock Banner | (192, 176) | 64x48 | Transcendent reveal |
 
 ### Toasts & Prompts:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Achievement Toast Frame | (0, 224) | 128x32 | "First Shot" / "The Limit" / "Franz's Approval" |
-| "Franz Remembers Your Order" Banner | (128, 224) | 96x32 | The Regular unlock |
+| Achievement Toast Frame | (0, 224) | 128x32 | "First Shot" / "The Limit" / "Ferdinand's Approval" |
+| "Ferdinand Remembers Your Order" Banner | (128, 224) | 96x32 | The Regular unlock |
 | Selfie Prompt Icon | (224, 224) | 32x32 | Photo-op indicator |
 
 ### Technical Notes:
@@ -520,7 +520,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### The Extraction:
 - **Duration:** 2.3 seconds, single play (scaled representation of 23 seconds)
 - **Frames:** 4 (first drops → honey stream → crema blonding → cut)
-- **Pattern:** Sequential, hold on cut frame for 0.6s while Franz announces the time
+- **Pattern:** Sequential, hold on cut frame for 0.6s while Ferdinand announces the time
 - **Trigger:** Any espresso-based purchase
 - **Purpose:** The location's core satisfaction beat — precision rendered as spectacle
 - **Audio Sync:** Pump hum begins frame 1; pour patter frames 2–3; lever click + timer ping on frame 4
@@ -531,7 +531,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Frames:** 3 (purge burst → plume A → plume B)
 - **Pattern:** Sharp attack, soft dissipate
 - **Trigger:** Any milk drink order
-- **Purpose:** The hiss that punctuates Franz's sigh
+- **Purpose:** The hiss that punctuates Ferdinand's sigh
 - **Audio Sync:** Steam hiss on frame 1; sigh SFX layered under frame 2
 - **Mobile Optimization:** Single-frame static plume on Low LOD
 
@@ -544,7 +544,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Audio Sync:** Continuous low steam bed
 - **Mobile Optimization:** Two emitters instead of four on Medium; one on Low
 
-### Franz Reaction Hold:
+### Ferdinand Reaction Hold:
 - **Duration:** 0.8 seconds minimum per reaction, single play
 - **Frames:** 1 (reaction) + return to Precision Idle
 - **Pattern:** Snap to reaction, hold, ease back
@@ -597,7 +597,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Espresso stand outline | set at sheet layout | 128x64 | Primary interactable high-contrast frame |
-| Franz outline | set at sheet layout | 48x96 | Vendor silhouette, thick rim |
+| Ferdinand outline | set at sheet layout | 48x96 | Vendor silhouette, thick rim |
 | Order panel high-contrast frame | set at sheet layout | 160x96 | Increased border weight, flattened fill |
 | Drink icon outlines (all 11) | set at sheet layout | 32x48 | White rim variants for menu legibility |
 | Intervention button outline | set at sheet layout | 40x32 | Emergency action must be findable instantly |
@@ -642,7 +642,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | grounds_concern_environment | tileset, machine | 1024x1024 |
-| grounds_concern_characters | Franz, regulars & bros | 512x512 |
+| grounds_concern_characters | Ferdinand, regulars & bros | 512x512 |
 | grounds_concern_items_fx | drinks, effects, UI | 512x512 |
 
 *(Max atlas size 2048x2048 for mobile GPU compatibility.)*
@@ -655,7 +655,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Low | One static steam plume, no dust, final-frame crema only, tremor at half rate, static backdrop; extraction sequence retained (it is the content) |
 
 ### Performance Targets:
-- **Target FPS:** 35 (per location profile: "35 FPS target")
+- **Target FPS:** 60 (game-wide standard; location profile predates the 60 FPS ruling)
 - **Max Draw Calls:** 10 per frame (per location profile)
 - **Memory Footprint:** 25 MB maximum (per location profile)
 - **Particle Limit:** 16 (steam 8, dust 4, crema/grounds 4 — tremor and heart pulse are shader overlays, not particles)
@@ -673,12 +673,12 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - `TileMap` for street/façade tiles; `ParallaxBackground` with two `ParallaxLayer` nodes for the backdrop strips
-- `AnimatedSprite2D` for Franz (craft loop + reaction states) and the extraction sequence
+- `AnimatedSprite2D` for Ferdinand (craft loop + reaction states) and the extraction sequence
 - `Sprite2D` pool (max 3) for queue regulars
 - `CPUParticles2D` (not GPU) for steam, dust motes, grounds puff
 - `CanvasLayer` for the order panel, status HUD, and tolerance track
 - Screen-space `ShaderMaterial` for the tremor ghost and Heart Racing vignette; both read a single `caffeine_intensity` uniform driven by active shot count
-- Location state machine: `idle → assessed → ordering → preparing → served → reaction` drives Franz's sprite state and the reaction chip
+- Location state machine: `idle → assessed → ordering → preparing → served → reaction` drives Ferdinand's sprite state and the reaction chip
 - Tolerance controller persists `total_spent` and derives tier (Novice / Regular / Aficionado / Transcendent); tier gates the Rare Smile frame and the Secret Menu banner
 - Over-Caffeinated is a compound state: it doubles every active modifier and locks the rest/sleep action until expiry or Intervention
 
@@ -690,7 +690,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Extraction frame 4 | Lever click + timer ping | On cut |
 | Steam wand purge | Steam hiss | On burst frame |
 | Grinder dose puff | Grinder whir tail | Frame 2 |
-| Franz sigh reaction | Audible sigh | On reaction frame in |
+| Ferdinand sigh reaction | Audible sigh | On reaction frame in |
 | Wrong-order chip | Discordant sting | On chip appear |
 | Approval nod | Warm resolution chord | On nod frame |
 | Heart Racing pulse ring 1 | Heartbeat thump | Every cycle, frame 1 |
@@ -699,14 +699,14 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| "Caffeine Tolerance" | Tolerance track bar, four tier badges, spend counter plate | Purchases accumulate; badge swaps at €50 / €100 / €200 |
-| "Franz's Respect" | Rare Smile frame, approval sparkle, Franz's Approval marker | Perfect order at Transcendent tier |
+| "Caffeine Tolerance" | Tolerance track bar, four tier badges, spend counter plate | Purchases accumulate; badge swaps at 50 Sovs / 100 Sovs / 200 Sovs |
+| "Ferdinand's Respect" | Rare Smile frame, approval sparkle, Ferdinand's Approval marker | Perfect order at Transcendent tier |
 | "The Limit" | Over-Caffeinated icon, tremor overlay, vibration motion ghost, empty cup cluster | Reach and survive Over-Caffeinated status |
 | "The Intervention" | Over-Caffeinated NPC In Distress, Intervention Administered, Intervention drink sprite | Help an NPC who over-caffeinated |
 | "Espresso Purist" | All six core drink sprites, milk-drink icons greyed | Complete run without purchasing a milk drink |
 | Selfie Spot — Standard | Tiny Cup Held, sunlit steam shaft, caption "Authentic Experience" | Any visit |
 | Selfie Spot — "The Vibration" | Empty cup cluster, vibration motion ghost, caption "No Regrets (Many Regrets)" | Requires Over-Caffeinated |
-| Selfie Spot — "Franz's Approval" | Rare Smile, Ristretto sprite, caption "He Smiled. ONCE." | Requires Transcendent tolerance |
+| Selfie Spot — "Ferdinand's Approval" | Rare Smile, Ristretto sprite, caption "He Smiled. ONCE." | Requires Transcendent tolerance |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
@@ -729,15 +729,15 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Environmental Storytelling:
 - No large cups exist anywhere in the scene — the absence is dressed, signposted, and enforced by a placard
 - A single dusty paper cup on the shelf, never used, is the only concession to takeaway culture in the entire location
-- The extraction log book is open and full: every shot Franz has ever pulled, timed and recorded
+- The extraction log book is open and full: every shot Ferdinand has ever pulled, timed and recorded
 - The sugar bowl is present, reachable, and positioned further from the customer than anything else on the counter
 - Three signs stacked above the machine escalate from menu to prohibition to prophecy ("Yes, You Will Shake. This Is Correct.")
 - Coffee-stained cobbles and a grounds-choked gutter show the stand has been here far longer than any tourist has
 
 ### Character Integration Notes:
-- Franz is rendered with harder outlines than the queue NPCs — he is the only fully in-focus person in the scene
+- Ferdinand is rendered with harder outlines than the queue NPCs — he is the only fully in-focus person in the scene
 - His hands are the visual control group: absolutely steady in every frame, against a queue of people vibrating
-- Queue regulars are drawn at slightly reduced contrast so the eye lands on the machine and then on Franz
+- Queue regulars are drawn at slightly reduced contrast so the eye lands on the machine and then on Ferdinand
 - The bros are the only sprites permitted broad, loose posture; everyone else in this location stands correctly
 
 ---
@@ -746,18 +746,18 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 
 ### Screenshot-Worthy Moments:
 1. **The Rare Smile** — 0.4 seconds, once per playthrough, and the selfie caption is "He Smiled. ONCE."
-2. **The Vibration selfie** — player visibly ghosting, six empty cups on the counter, Franz observing with scientific interest
+2. **The Vibration selfie** — player visibly ghosting, six empty cups on the counter, Ferdinand observing with scientific interest
 3. **Chadwick's caramel request** — portafilter set down, deep breath, the entire stand holding still
 4. **The three stacked signs** in one crop — menu, prohibition, prophecy
-5. **Bradley's ristretto moment** — Franz stops, turns: "...You. You are welcome here."
+5. **Bradley's ristretto moment** — Ferdinand stops, turns: "...You. You are welcome here."
 
 ### Quote Potential:
-- "Welcome. What can I— actually, I already know. You want it strong." - Franz the Focused
-- "The extraction was 23 seconds. PERFECT. You're welcome." - Franz the Focused
-- "Decaffeinated espresso is like... a silent symphony. What is the POINT?" - Franz the Focused
-- "There is a place three streets over. They serve... that. Go there. Please." - Franz the Focused
-- "I... can provide this. But the coffee will not forgive you." - Franz, on sugar
-- "Fascinating. The heart rate must be extraordinary." - Franz, watching a Quadruple land
+- "Welcome. What can I— actually, I already know. You want it strong." - Ferdinand the Focused
+- "The extraction was 23 seconds. PERFECT. You're welcome." - Ferdinand the Focused
+- "Decaffeinated espresso is like... a silent symphony. What is the POINT?" - Ferdinand the Focused
+- "There is a place three streets over. They serve... that. Go there. Please." - Ferdinand the Focused
+- "I... can provide this. But the coffee will not forgive you." - Ferdinand, on sugar
+- "Fascinating. The heart rate must be extraordinary." - Ferdinand, watching a Quadruple land
 - "Yes, You Will Shake. This Is Correct." - stand signage
 
 ---
@@ -768,7 +768,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 |---|----------|------------|
 | 1 | grounds_concern_tileset.png | 1024x512 |
 | 2 | grounds_concern_machine.png | 512x256 |
-| 3 | franz_focused.png | 384x288 |
+| 3 | ferdinand_focused.png | 384x288 |
 | 4 | grounds_concern_npcs.png | 384x192 |
 | 5 | grounds_concern_drinks.png | 256x256 |
 | 6 | grounds_concern_effects.png | 256x192 |
@@ -783,7 +783,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Required PNG Files:
 - [ ] `grounds_concern_tileset.png` (1024x512)
 - [ ] `grounds_concern_machine.png` (512x256)
-- [ ] `franz_focused.png` (384x288)
+- [ ] `ferdinand_focused.png` (384x288)
 - [ ] `grounds_concern_npcs.png` (384x192)
 - [ ] `grounds_concern_drinks.png` (256x256)
 - [ ] `grounds_concern_effects.png` (256x192)
@@ -812,7 +812,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly
 - [ ] No large cup appears anywhere in any sheet except the single dusty unused paper cup
-- [ ] Franz's hands are steady in all 22 of his frames — zero tremor, no exceptions
+- [ ] Ferdinand's hands are steady in all 22 of his frames — zero tremor, no exceptions
 - [ ] Extraction frames 1–4 align on the cup rim with no sub-pixel drift
 - [ ] Drink silhouettes are countable by shot volume at 32px without labels
 - [ ] The three stacked signs are legible together in a 256px-wide crop
@@ -823,7 +823,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Quality Checkpoints:
 - [ ] Satirical theme (espresso snobbery, craft devotion weaponised) is clear throughout
 - [ ] The Rare Smile reads as genuine and is visibly different from the Approving Nod
-- [ ] Franz's disappointment reads as grief, never contempt
+- [ ] Ferdinand's disappointment reads as grief, never contempt
 - [ ] Mobile performance optimized (CPU particles only, 10-draw-call ceiling respected, one atlas bind per group)
 - [ ] Touch zone sizing considered (44px minimum for order rows, Intervention button, selfie prompt)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
@@ -837,11 +837,11 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia and Kaffeehaus Row only; Viennese coffeehouse tradition evoked, never named as a real place |
 | Cultural Specificity | ✅ | Viennese coffeehouse reverence colliding with third-wave espresso worship; extraction-time orthodoxy |
-| Satirical Targets Appropriate | ✅ | Coffee snobbery and the bros' inability to read a room; Franz is affectionate and genuinely skilled, not a national stereotype |
-| Seedy Underbelly Present | ❌ | Profile documents no vice or exploitation operation. Nearest elements: the €0.50 sugar "processing fee" and a spend-gated tolerance ladder that rewards escalating consumption. Flagged for owner — this location is intentionally benign |
+| Satirical Targets Appropriate | ✅ | Coffee snobbery and the bros' inability to read a room; Ferdinand is affectionate and genuinely skilled, not a national stereotype |
+| Seedy Underbelly Present | ❌ | Profile documents no vice or exploitation operation. Nearest elements: the 1 Sov sugar "processing fee" and a spend-gated tolerance ladder that rewards escalating consumption. Flagged for owner — this location is intentionally benign |
 | Gameplay Value Established | ✅ | Speed-buff/Luck-debuff shop, four-tier tolerance progression, four status effects, order-reaction system, three selfie variants, four quests |
 | Technical Feasibility | ✅ | Seven sheets, three atlases, three LOD tiers, no sub-scenes, CPU particles only |
-| Mobile Performance Budget | ✅ | 35 FPS / 10 draw calls / 25 MB taken verbatim from the profile's stated budget. Flagged: 35 FPS is well below the 60 FPS engine default — confirm this is a deliberate low-end target and not a typo |
+| Mobile Performance Budget | ✅ | 60 FPS / 10 draw calls / 25 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
 | Accessibility Features | ✅ | Visual glyphs for all seven audio cues; static/reduced-motion variants for steam, tremor, heart pulse, parallax; shape-first status icons |
 | No Crypto Elements | ✅ | None present, and the profile explicitly confirms "No crypto elements (Pure caffeine worship)" |
 | Social Media Integration | ✅ | Three documented selfie variants with unlock conditions, five screenshot moments, seven quotable lines |

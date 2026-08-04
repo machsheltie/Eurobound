@@ -34,7 +34,7 @@
     "trigger_condition": "Interact during her vendor argument",
     "morning_scene": "She insults you, steals your cab voucher, leaves an NFT.",
     "outcome": {
-      "effect": "Gain NFT #2, Hungover status, lose 25 gold",
+      "effect": "Gain NFT #2, Hungover status, lose 25 Sovs",
       "flag": "couchsurf_cryptobro_ex_done"
     }
   },

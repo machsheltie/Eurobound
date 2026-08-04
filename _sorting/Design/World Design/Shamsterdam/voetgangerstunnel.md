@@ -33,9 +33,9 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ## Access & Requirements
 
 ### Entry Points
-- **Primary**: Central Shamsterdam Bike Crossing (south sidewalk, after 10 successful crossings OR €15 from Bike Rental Guy)
+- **Primary**: Central Shamsterdam Bike Crossing (south sidewalk, after 10 successful crossings OR 15 Sovs from Bike Rental Guy)
 - **Secondary**: Museum Mile underground parking
-- **Tertiary**: Central Station basement level
+- **Tertiary**: Centraal Chaos basement level
 - **Hidden**: Behind FEBO Automat (requires interaction)
 
 ### Entry Conditions
@@ -47,7 +47,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ### Exit Points (Intended vs. Actual)
 | Signage Says | Actually Leads To | Probability |
 |--------------|-------------------|-------------|
-| "Centraal Station" | Central Station | 40% |
+| "Centraal Station" | Centraal Chaos | 40% |
 | "Centraal Station" | Roodelicht Row (Red Light) | 35% |
 | "Centraal Station" | Coffeeshop Quarter | 15% |
 | "Centraal Station" | Where you started | 10% |
@@ -133,7 +133,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 | "Space Cake Gamble" status | -30% accuracy, random teleportation |
 | "Canal Confusion" debuff | -25% accuracy |
 | Map item equipped | +15% accuracy |
-| Local Guide NPC | +40% accuracy (but costs €10) |
+| Local Guide NPC | +40% accuracy (but costs 10 Sovs) |
 | Previous successful navigation | +5% cumulative (memory) |
 
 ### Wrong Turn Consequences
@@ -200,8 +200,8 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Services**:
 - Directions: Free (unhelpful)
-- "Correct" Directions: €5 (slightly less unhelpful)
-- Escort: €10 (actually works, but he walks very slowly)
+- "Correct" Directions: 5 Sovs (slightly less unhelpful)
+- Escort: 10 Sovs (actually works, but he walks very slowly)
 
 ---
 
@@ -227,17 +227,17 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Dialogue**:
 - *Greeting*: "Lost already? You just got down here."
-- *Selling map*: "€8 for the map. It's the only accurate one in the city. Yes, really."
+- *Selling map*: "8 Sovs for the map. It's the only accurate one in the city. Yes, really."
 - *Warning*: "The blue tiles go to the station. The orange go to... places."
 - *About Red Light exit*: "Exit 7? That's the quick one. Very... scenic."
 
 **Services**:
 | Item | Cost | Effect |
 |------|------|--------|
-| Tunnel Map | €8 | +15% navigation accuracy, shows actual layout |
-| Tourist Map (Surface) | €5 | Useless underground |
-| "I Survived the Tunnel" Badge | €3 | Cosmetic only |
-| Flashlight | €6 | Reveals hidden graffiti hints |
+| Tunnel Map | 8 Sovs | +15% navigation accuracy, shows actual layout |
+| Tourist Map (Surface) | 5 Sovs | Useless underground |
+| "I Survived the Tunnel" Badge | 3 Sovs | Cosmetic only |
+| Flashlight | 6 Sovs | Reveals hidden graffiti hints |
 
 ---
 
@@ -251,7 +251,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Appearance**:
 - Ancient accordion
-- Hat with exactly €2.47 in it (never changes)
+- Hat with exactly 2 Sovs in it (never changes)
 - Clothing from indeterminate decade
 - May or may not be a ghost
 
@@ -263,8 +263,8 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Dialogue**:
 - *Unprompted*: (Plays accordion, ignores you)
-- *If tipped €1*: "Follow the sound of the tram. It knows the way."
-- *If tipped €5*: "The red signs lie. The emergency signs tell truth."
+- *If tipped 1 Sov*: "Follow the sound of the tram. It knows the way."
+- *If tipped 5 Sovs*: "The red signs lie. The emergency signs tell truth."
 - *About himself*: "I've been here since... hmm. What year is it?"
 
 **Function**:
@@ -362,9 +362,9 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Busker Tip Jar**
 - **Type**: Service / Hint System
-- **€1 Tip**: Basic hint
-- **€5 Tip**: Reliable navigation advice
-- **€0 (theft attempt)**: Willem stops playing, stares at you
+- **1 Sov Tip**: Basic hint
+- **5 Sovs Tip**: Reliable navigation advice
+- **0 Sovs (theft attempt)**: Willem stops playing, stares at you
 
 **FEBO Hidden Entrance**
 - **Type**: Secret Shortcut
@@ -398,7 +398,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ### Ambient Soundscape
 - **Base Layer**: Fluorescent hum, distant footsteps, ventilation
 - **Directional Audio**: Different sounds from each corridor (clue system)
-  - Tram sounds = leads to Central Station
+  - Tram sounds = leads to Centraal Chaos
   - Music bass = leads to Coffeeshop Quarter  
   - Nothing = leads to Red Light (eerily quiet)
   - Water sounds = leads to canal
@@ -476,7 +476,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Quest ID**: `shamsterdam_quest_eternal_busker`
 
-**Trigger**: Tip Willem €5 three separate visits
+**Trigger**: Tip Willem 5 Sovs three separate visits
 
 **Sequence**:
 1. First tip: Navigation hint
@@ -513,7 +513,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 ### Connects To
 - **Central Shamsterdam Bike Crossing**: Primary entrance (unlocked shortcut)
-- **Central Station**: Intended exit (40% probability initially)
+- **Centraal Chaos**: Intended exit (40% probability initially)
 - **Museum Mile**: Secondary intended exit
 - **Roodelicht Row**: Unintended exit (35% probability)
 - **Coffeeshop Quarter**: Unintended exit (15% probability)
@@ -537,11 +537,11 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ### Services
 | Service | Provider | Cost | Effect |
 |---------|----------|------|--------|
-| Tunnel Map | Marloes | €8 | +15% navigation |
-| Guided Walk | Henk | €10 | Guaranteed correct (slow) |
-| Flashlight | Marloes | €6 | Reveals graffiti hints |
-| "Correct" Directions | Henk | €5 | Slightly better odds |
-| Willem Tip | Willem | €1-5 | Navigation hints |
+| Tunnel Map | Marloes | 8 Sovs | +15% navigation |
+| Guided Walk | Henk | 10 Sovs | Guaranteed correct (slow) |
+| Flashlight | Marloes | 6 Sovs | Reveals graffiti hints |
+| "Correct" Directions | Henk | 5 Sovs | Slightly better odds |
+| Willem Tip | Willem | 1 Sov-5 | Navigation hints |
 
 ### Found Items
 - **Lost Tourist Belongings**: Random items dropped by confused tourists
@@ -624,7 +624,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ### Crypto Warning
 - [x] NO crypto elements at this location
 - [x] Focus on navigation/confusion satire
-- [x] All transactions in Euros
+- [x] All transactions in Sovs
 
 ---
 

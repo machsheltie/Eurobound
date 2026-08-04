@@ -546,7 +546,7 @@ The eternal digital samsara display:
 - **Potato Mode:** Basic sprites, no particles, static lighting
 
 ### Performance Targets:
-- **Target FPS:** 50 FPS
+- **Target FPS:** 60 FPS
 - **Max Draw Calls:** 18 per frame
 - **Memory Footprint:** 42MB maximum
 - **Particle Limit:** Max 3 simultaneous vape clouds; pooled/reused particles on low-end hardware
@@ -746,7 +746,7 @@ The eternal digital samsara display:
 | Seedy Underbelly Present | ✅ PASS | Underground economy selling psychological damage |
 | Gameplay Value Established | ✅ PASS | Vendor, summons, MemeMastery progression, ICQ unlock |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
-| Mobile Performance Budget | ✅ PASS | 50 FPS, 18 draws, 42MB |
+| Mobile Performance Budget | ✅ PASS | 60 FPS, 18 draws, 42MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | Crypto/meme satire (Meatspin NFT, Funcoland Futures, Diamond Hands) is established source material |
 | Social Media Integration | ✅ PASS | Viral moments identified |

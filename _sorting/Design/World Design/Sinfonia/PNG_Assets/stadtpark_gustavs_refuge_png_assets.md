@@ -3,7 +3,7 @@
 *Artist Reference Document for Fiaker Fiasco's Emotional Finale*
 
 ## 📋 Overview
-The Stadtpark at night is a moonlit sanctuary turned dramatic stage — ancient trees, Victorian lampposts, a gilded Johann Strauss statue, and at the center a single exhausted white horse making his last stand. This document specifies every sprite sheet for the Fiaker Fiasco finale, where a bag of American candy, a runaway Austrian horse, and €2,340 in property damage somehow become the most emotionally resonant moment in the entire game.
+The Stadtpark at night is a moonlit sanctuary turned dramatic stage — ancient trees, Victorian lampposts, a gilded Johann Strauss statue, and at the center a single exhausted white horse making his last stand. This document specifies every sprite sheet for the Fiaker Fiasco finale, where a bag of American candy, a runaway Austrian horse, and 2,340 Sovs in property damage somehow become the most emotionally resonant moment in the entire game.
 
 **Location ID:** `sinfonia_stadtpark_gustavs_refuge_01`
 **Theme:** Emotional resolution amid absurdity — freedom versus responsibility, with high Viennese art (Strauss, eternally gilded) watching Americans negotiate with candy
@@ -93,6 +93,21 @@ assets/sprites/locations/sinfonia/stadtpark_gustavs_refuge/
 - **Ranger Station**: Similar style, with schedule on door
 - **Bandstand Base**: White pavilion foundation (128×64)
 - **Bandstand Roof**: Ornate white roof structure (128×64)
+
+### Retired Horse Stalls (Row 9) — POST-GAME STATE ONLY
+Hidden during the main quest; revealed at the north pasture fence once the Fiaker Fiasco epilogue has played.
+- **Stall Door Left (Gustav)**: Weathered timber stall door (64×64), open upper half
+- **Stall Door Right (Klaus)**: Matching door (64×64), open upper half
+- **Nameplate — GUSTAV**: Brass plate (48×16), plain engraved serif, polished
+- **Nameplate — KING KLAUS**: Brass plate (48×16), **identical polish and finish**, engraved `KING KLAUS` — legible at default zoom without the examine prompt
+- **Pasture Fence Section**: Post-and-rail (64×32), tiles horizontally
+- **Examine Glint**: Small specular highlight (16×16) on both plates, marks them interactive
+
+**Art direction — the plates carry an entire running gag, so:**
+- Both plates must read as *maintained*: bright brass, no verdigris, clean edges. A neglected plate reads as forgotten; a polished one reads as deliberate, which is the joke.
+- The two plates are visually identical in every respect except the engraved text. No decorative crown, no flourish, no size difference on Klaus's — the humour dies the instant the art winks.
+- `KING KLAUS` must be readable at 1× without zooming. If the text will not fit legibly at 48×16, widen the plate rather than shrinking the type.
+- Gustav's plate is plain `GUSTAV`. Resist any urge to embellish it for balance.
 
 ---
 
@@ -502,10 +517,10 @@ assets/sprites/locations/sinfonia/stadtpark_gustavs_refuge/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Fiaker Fiasco phase-4 (finale) | Gustav all rows, Hans-Jürgen all rows, Skittles states | Entry from opera side-door; resolution selects Path A/B/C/D |
-| Path A — Gustav Returns | Nuzzle, Relief/Reunion, resigned return hand-off | Debt −€500 (insurance), unlocks Fiaker fast travel |
+| Path A — Gustav Returns | Nuzzle, Relief/Reunion, resigned return hand-off | Debt −500 Sovs (insurance), unlocks Fiaker fast travel |
 | Path B — Gustav Retires | Trot Into Moonlight, Accepting Goodbye | Gustav becomes permanent park NPC with daily buff |
-| Path C — Gustav Escapes | Bolting, Hans-Jürgen Crying | Debt +€1,000, permanent guilt marker |
-| Path D — Bros Bail | Scene unchanged, cold lighting preset | Quest fails, debt +€500, Coward status |
+| Path C — Gustav Escapes | Bolting, Hans-Jürgen Crying | Debt +1,000 Sovs, permanent guilt marker |
+| Path D — Bros Bail | Scene unchanged, cold lighting preset | Quest fails, debt +500 Sovs, Coward status |
 | Papageno ally alternative | Papageno sprite (from opera house) | Approach possible without Skittles |
 
 ### Cross-Location Dependencies:
@@ -513,8 +528,9 @@ assets/sprites/locations/sinfonia/stadtpark_gustavs_refuge/
 |--------------------|-------------------|-------------------|
 | The Bassline Opera House | Quest entry point; Hans-Jürgen base sprite (more disheveled); Director may pursue in fury state; Papageno if ally path | Opera side-door path, night transition |
 | Opera House Plaza | Pigeon Lady base sprite (same character); Gustav returns to Fiaker queue on Path A | Post-quest state hand-off |
-| Café Sachertorte | Debt connection (damage total includes €340 café) | Damage counter UI carries over |
+| Café Sachertorte | Debt connection (damage total includes 340 Sovs café) | Damage counter UI carries over |
 | The Moderato Pub | Hans-Jürgen post-quest sad-drunk state (Path C) | NPC relocation, no shared sprites |
+| Crown & Cask | Easter egg payoff only — the `KING KLAUS` stall nameplate is an insult aimed at König Klaus. No shared sprites; the two Klauses must never appear in one scene | None — the gag is the ambiguity, resolving it kills it |
 
 ---
 
@@ -529,7 +545,7 @@ assets/sprites/locations/sinfonia/stadtpark_gustavs_refuge/
 ### Environmental Storytelling:
 - Trampled flowerbed tiles trace Gustav's exact route into the park
 - The gilded Strauss statue gleams over the whole negotiation, serenely indifferent — high art as unhelpful witness
-- Sleeping tourist, oblivious couple, and €1 philosopher establish that Sinfonia's absurdity continues even at the emotional climax
+- Sleeping tourist, oblivious couple, and 1 Sov philosopher establish that Sinfonia's absurdity continues even at the emotional climax
 - Sleeping swans near the pond edge: deceptively peaceful, genuinely dangerous
 
 ### Character Integration Notes:
@@ -568,7 +584,7 @@ assets/sprites/locations/sinfonia/stadtpark_gustavs_refuge/
 ### Quote Potential:
 - "Taste the Rainbow" bag held toward horse
 - Pigeon Lady surrounded by birds at night
-- Philosopher offering wisdom for €1
+- Philosopher offering wisdom for 1 Sov
 - Sleeping tourist undisturbed by everything
 
 ---
@@ -652,7 +668,7 @@ assets/sprites/locations/sinfonia/stadtpark_gustavs_refuge/
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia only; Stadtpark/Strauss evoke Vienna without naming it |
 | Cultural Specificity | ✅ | Viennese park culture, Waltz King monument, Fiaker horse tradition |
-| Satirical Targets Appropriate | ✅ | American candy diplomacy, tourist obliviousness, €1 wisdom — punches up |
+| Satirical Targets Appropriate | ✅ | American candy diplomacy, tourist obliviousness, 1 Sov wisdom — punches up |
 | Seedy Underbelly Present | ✅ | Night park underclass (philosopher's bottle), vicious swans, guilt economies |
 | Gameplay Value Established | ✅ | Quest resolution with four endings, trust mechanic, permanent unlocks |
 | Technical Feasibility | ✅ | 10 sheets, atlas plan, LOD tiers documented |
@@ -661,4 +677,4 @@ assets/sprites/locations/sinfonia/stadtpark_gustavs_refuge/
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Six screenshot moments identified; Path B built as shareable |
 
-**Stadtpark: Where a bag of American candy, a runaway Austrian horse, and €2,340 in property damage somehow become the most emotionally resonant moment in the entire game.**
+**Stadtpark: Where a bag of American candy, a runaway Austrian horse, and 2,340 Sovs in property damage somehow become the most emotionally resonant moment in the entire game.**

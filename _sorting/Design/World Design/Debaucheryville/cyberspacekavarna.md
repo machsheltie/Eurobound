@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: Always accessible (24-hour operation, peak scammer hours 3-6 AM)
 - **Stat Requirements**: None for basic entry
-- **Item Requirements**: Cash for terminal rental (€3/hour, €15 "all-night special")
+- **Item Requirements**: Cash for terminal rental (3 Sovs/hour, 15 Sovs "all-night special")
 - **Previous Location Requirements**: None (accessible early game)
 - **Special Conditions**: Flickering "INTERNET" neon sign visible from Hostel Row street level
 
@@ -69,7 +69,7 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Digital surveillance and scammer coordination disguised as authentic internet cafe experience
 - **City-Specific Comedy Operations**: ICQ-based scammer networks targeting tourists while providing "underground" atmosphere
-- **Buffoon Exploitation**: Bros think they're accessing darkweb underground while broadcasting location to every scammer in Prague
+- **Buffoon Exploitation**: Bros think they're accessing darkweb underground while broadcasting location to every scammer in Debaucheryville
 - **Comedy of Errors**: "Secure" connections obviously monitored by multiple governments and criminal networks
 - **Consequence System**: Extended use increases scammer contact frequency and digital paranoia status effects
 
@@ -91,7 +91,7 @@
 - **Primary ICQ Hotspot**: Central coordination point for all Darkweb Dossier character interactions
 - **Scammer Frequency Boost**: +200% scammer message rate while connected
 - **"Secure" Connection**: Obviously monitored connections that trigger additional quest content
-- **Terminal Rental System**: €3/hour standard, €15 "all-night special" with enhanced scammer targeting
+- **Terminal Rental System**: 3 Sovs/hour standard, 15 Sovs "all-night special" with enhanced scammer targeting
 
 #### **Sting Operation Sidequests**
 - **"Operation Script Kiddie"**: Expose Tony420's fake crypto wallet scheme through ICQ infiltration
@@ -100,9 +100,9 @@
 - **Completion Rewards**: Metro platform access, reduced scammer targeting, street rep increases
 
 #### **Enhanced Digital Services**
-- **ICQ Premium**: €5 "upgrade" reduces spam by 10% (placebo effect)
-- **VPN Service**: €10 "anonymous browsing" routes through three other equally sketchy cafes
-- **Crypto Mining**: €20 to "join mining pool" (ancient hardware generates €0.003 per hour)
+- **ICQ Premium**: 5 Sovs "upgrade" reduces spam by 10% (placebo effect)
+- **VPN Service**: 10 Sovs "anonymous browsing" routes through three other equally sketchy cafes
+- **Crypto Mining**: 20 Sovs to "join mining pool" (ancient hardware generates 0.003 Sovs per hour)
 
 ### Status Effects & Environmental Hazards
 
@@ -118,7 +118,7 @@
 - **Network Lag**: Random 5-second delays during peak scammer coordination hours
 
 ### Time-Based Events & Pricing
-- **3-6 AM "Dead Hours"**: Cheapest rates (€1.50/hour), highest scammer activity, enhanced sting operation opportunities
+- **3-6 AM "Dead Hours"**: Cheapest rates (2 Sovs/hour), highest scammer activity, enhanced sting operation opportunities
 - **Peak Tourist Hours (2-4 PM)**: Prices double, bros get immediately targeted by coordinated scammer teams
 - **Midnight Password Changes**: Daily metro access passwords posted in bathroom graffiti
 - **Equipment Rotation**: Terminal #7 always displays same error message but contains hidden crypto wallet access
@@ -141,7 +141,7 @@
 #### **CyberGoth Katka**
 - **Role**: Local hacker wannabe who thinks she's Anonymous
 - **Function**: Information trader and sting operation quest giver
-- **Currency**: Prefers American candy and energy drinks over euros
+- **Currency**: Prefers American candy and energy drinks over Sovs
 - **Services**: Provides scammer network intel, meme page promotion, fake social media buzz generation
 
 #### **Rotating Patron Types**
@@ -186,7 +186,7 @@
 ### Enhanced ICQ Network Features
 - **Darkweb Dossier Central**: Primary hub for all character interaction coordination
 - **Scammer Database**: Track known scammer patterns and develop countermeasures
-- **Digital Underground**: Connect to broader Prague underground economy through encrypted channels
+- **Digital Underground**: Connect to broader Debaucheryville underground economy through encrypted channels
 - **Tourist Targeting**: Coordinate with other locations to maximize exploitation efficiency
 
 ## Audio Design

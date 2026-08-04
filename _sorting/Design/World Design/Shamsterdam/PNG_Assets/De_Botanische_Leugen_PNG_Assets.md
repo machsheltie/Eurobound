@@ -125,18 +125,18 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | International Bulb Bags | (512, 192) | 192x128 | Windmill graphics, "Easy to grow!", "Perfect gift!" |
 | Bulb Bag — "Product of Shamsterdam" Face | (704, 192) | 96x128 | Front-facing hero bag; genuinely beautiful object |
 | Value Bag Display Stack | (800, 192) | 128x160 | 10s and 20s, stacked to encourage scale |
-| Protective Bag (+€2) | (928, 192) | 96x96 | The upsell that closes the customs question |
+| Protective Bag (+2 Sovs) | (928, 192) | 96x96 | The upsell that closes the customs question |
 | Growing Instructions Leaflet | (512, 320) | 192x32 | Dutch, French, German, and Very Small English |
 | Fine-Print Card | (704, 320) | 96x32 | Zoom prop: the English section is four lines long |
-| Price Sign — Per Bulb (€2–5) | (928, 288) | 96x32 | Chalk on slate |
-| Price Sign — Value Bags (€15–30) | (928, 320) | 96x32 | Better value, worse odds |
+| Price Sign — Per Bulb (2 Sovs–5) | (928, 288) | 96x32 | Chalk on slate |
+| Price Sign — Value Bags (15 Sovs–30) | (928, 320) | 96x32 | Better value, worse odds |
 
 ### Product Racks:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Wooden Tulip Rack (painted) | (0, 352) | 192x160 | The honest option. Cannot die. Cannot grow. |
-| Tulip Seed Packet Rack | (192, 352) | 128x160 | €12 — takes seven years to flower |
-| "Old Master Collection" Presentation Case | (320, 352) | 192x160 | €50, velvet-lined, 0.1% success rate |
+| Tulip Seed Packet Rack | (192, 352) | 128x160 | 12 Sovs — takes seven years to flower |
+| "Old Master Collection" Presentation Case | (320, 352) | 192x160 | 50 Sovs, velvet-lined, 0.1% success rate |
 | Rainbow Mix Display | (512, 352) | 192x160 | The most popular. Everyone wants a rainbow. |
 | Garden Starter Display | (704, 352) | 160x160 | Twenty bulbs; ambition exceeding capacity |
 | Bin Scoop + Paper Bag Roll | (864, 352) | 96x96 | Piet's tools |
@@ -158,13 +158,13 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 ### Purchasable Items (Row 0, y=0):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Single Tulip Bulb | (0, 0) | 64x64 | €3 — individual hope, 2% grow success |
-| Rainbow Mix Bag (10) | (64, 0) | 64x64 | €15 — variety pack of dreams, 1% |
-| Garden Starter Bag (20) | (128, 0) | 64x64 | €25 — 0.5% |
-| Old Master Collection | (192, 0) | 96x64 | €50 — "You're not an Old Master", 0.1% |
-| Wooden Tulip (Painted) | (288, 0) | 64x64 | €8 — 100% success, cannot die, cannot grow |
-| Tulip Seeds Packet | (352, 0) | 64x64 | €12 — the seven-year trap |
-| Protective Bag | (416, 0) | 64x64 | €2 — deployed exclusively as a customs deflection |
+| Single Tulip Bulb | (0, 0) | 64x64 | 3 Sovs — individual hope, 2% grow success |
+| Rainbow Mix Bag (10) | (64, 0) | 64x64 | 15 Sovs — variety pack of dreams, 1% |
+| Garden Starter Bag (20) | (128, 0) | 64x64 | 25 Sovs — 0.5% |
+| Old Master Collection | (192, 0) | 96x64 | 50 Sovs — "You're not an Old Master", 0.1% |
+| Wooden Tulip (Painted) | (288, 0) | 64x64 | 8 Sovs — 100% success, cannot die, cannot grow |
+| Tulip Seeds Packet | (352, 0) | 64x64 | 12 Sovs — the seven-year trap |
+| Protective Bag | (416, 0) | 64x64 | 2 Sovs — deployed exclusively as a customs deflection |
 | Growing Instructions (folded) | (480, 0) | 32x64 | Inside the bag. Very clear. Mostly clear. |
 
 ### The Burden & Props (Row 1, y=64):
@@ -176,7 +176,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | Cut Tulip Bouquet | (192, 64) | 96x96 | Atmospheric purchase; dies in four days, honestly |
 | Potted Tulip (sample) | (288, 64) | 96x96 | What you believe you are buying |
 | Bulb Cross-Section Diagram | (384, 64) | 64x96 | On the instruction leaflet; nobody reads it |
-| Euro Coins / Notes | (448, 64) | 64x96 | €3 to €50, the whole range |
+| Sov Coins / Notes | (448, 64) | 64x96 | 3 Sovs to 50 Sovs, the whole range |
 
 ### Varieties & Documents (Row 2, y=160):
 | Element | Position | Size | Description |
@@ -261,7 +261,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 |---------|----------|------|-------------|
 | Return Customer (Annual) 1-2 | (0, 192) / (64, 192) | 64x96 each | "Last year's didn't grow, but maybe THIS year." |
 | Return Customer Recognizing Margriet | (128, 192) | 64x96 | Warm reunion; she does not track outcomes |
-| Lord Pilsner Buying Old Master | (192, 192) | 64x96 | "For fifty euros I'm basically an Old Master." |
+| Lord Pilsner Buying Old Master | (192, 192) | 64x96 | "For fifty Sovs I'm basically an Old Master." |
 | Lord Pilsner "it's more of a balcony" | (256, 192) | 64x96 | "…it gets sun SOMETIMES…" |
 | Chadwick Filming B-Roll | (320, 192) | 64x96 | "The colour palette here is INSANE." |
 | Chadwick With Rainbow Mix | (384, 192) | 64x96 | "My apartment is going to be BOTANICAL." |
@@ -296,8 +296,8 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | Bravado Prompt — "Do you have a garden?" | (256, 128) | 256x64 | The question that costs Bravado to answer honestly |
 | Tulip Fate Epilogue Panel | (0, 192) | 192x128 | Frames the five-stage epilogue reveal |
 | Customs Encounter Panel | (192, 192) | 192x128 | Declare / Hide / Forget About Them |
-| Value Bag Comparison Chart | (384, 192) | 128x128 | Per-bulb maths that makes the €50 case |
-| Price Tag Popup | (0, 320) | 96x32 | €3–€50 |
+| Value Bag Comparison Chart | (384, 192) | 128x128 | Per-bulb maths that makes the 50 Sovs case |
+| Price Tag Popup | (0, 320) | 96x32 | 3–50 Sovs |
 | Bulk Discount Negotiation Bar | (96, 320) | 160x32 | Bravado-gain path; Margriet enjoys the attempt |
 | Achievement Track Panel | (256, 320) | 256x96 | Five botanical stages |
 | Deflection Plate | (0, 352) | 256x64 | "Wonderful choice. Would you like a bag?" |
@@ -469,7 +469,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | Low | Static stall and static water, no particles, simplified flower variety (4 bins visible), staff plus 1 customer NPC (profile-mandated static water, simplified variety, reduced particles) |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 14 per frame (per location profile)
 - **Memory Footprint:** 34 MB maximum (per location profile)
 - **Particle Limit:** 18 (petal fall, pollen drift, canal sparkle combined)
@@ -561,9 +561,9 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 
 ### Quote Potential:
 - "I sell dreams. Dreams are legal in every country. Dreams need no customs form."
-- "1637, people traded houses for tulip bulbs. Now, five euros. Progress? Maybe. Romance? Less."
+- "1637, people traded houses for tulip bulbs. Now, five Sovs. Progress? Maybe. Romance? Less."
 - "A pot works too! A windowsill! A dream!"
-- "They travel very well! Would you like the protective bag? Two euros extra."
+- "They travel very well! Would you like the protective bag? Two Sovs extra."
 - "I'll put them in the bag. Careful, they're fragile. Like dreams."
 - "My grandmother sold to your grandmothers. The bulbs change. The hope is the same."
 - "Results not guaranteed outside maritime climates."
@@ -639,10 +639,10 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | World Consistency (no real city names) | ✅ | All in-world signage reads "Shamsterdam"; the profile's Holland and Bloemenmarkt references are design commentary, never asset text |
 | Cultural Specificity | ✅ | Dutch floating flower-market tradition, Tulip Mania's 1637 callback, family-stall economics, canal-market setting |
 | Satirical Targets Appropriate | ✅ | Punches at tourist souvenir logic and agricultural ignorance; Margriet, Piet and the Dutch flower trade are rendered warm, skilled and legitimate |
-| Seedy Underbelly Present | ✅ | Selling agricultural goods to people who cannot legally import or successfully grow them, the €2 protective-bag deflection, the €50 collection at 0.1% success, outcomes never tracked |
+| Seedy Underbelly Present | ✅ | Selling agricultural goods to people who cannot legally import or successfully grow them, the 2 Sovs protective-bag deflection, the 50 Sovs collection at 0.1% success, outcomes never tracked |
 | Gameplay Value Established | ✅ | Purchase system, Vendor's Dance deflection dialogue, persistent Bulb Burden, Bravado negotiation, optional customs encounter, five-stage epilogue and achievement track |
 | Technical Feasibility | ✅ | Single sway-node hierarchy, phase-locked water, painted flower mass, day-driven item degradation all documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 14 draw calls, 34 MB per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB per profile budget |
 | Accessibility Features | ✅ | Six visual audio cues, reduced-motion sway/water/petal alternatives, variety silhouettes and hatching for a colour-dependent product, 44px zones |
 | No Crypto Elements | ✅ | Cash, card, and four hundred years of botanical hope |
 | Social Media Integration | ✅ | Six screenshot moments plus a seven-line quote bank identified |

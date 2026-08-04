@@ -142,7 +142,7 @@ Staff enforces this with friendly insistence, not hostility.
 - **Color**: Cloudy gold with persistent foam
 - **Stats**: +20 HP, +15 SP
 - **Effect**: "Light on Your Feet" (+3 Speed, +2 Dance for 30 minutes)
-- **Price**: €7
+- **Price**: 7 Sovs
 - **Flavor Text**: "Brewed in three stages, fermented in three tanks, served in three-quarter time. The foam always swirls clockwise. We don't know why."
 - **Brewed By**: The Spinning Brewery (off-site partner, delivers fresh)
 - **Special**: Server does a small spin when delivering
@@ -150,11 +150,11 @@ Staff enforces this with friendly insistence, not hostility.
 **Menu Drinks** (Non-Signature):
 | Beer | Price | Effect | Served With |
 |------|-------|--------|-------------|
-| Two-Step Lager | €4 | +10 HP | Basic rhythm |
-| Foxtrot Ale | €5 | +15 HP | Different tempo (rebellion) |
-| The Wallflower | €3 | +5 HP | No dancing required (shameful) |
-| Tango IPA | €6 | +15 HP, +5 SP | Dramatic pause |
-| Sinfonian Whirl | €8 | +25 HP | Full spin delivery |
+| Two-Step Lager | 4 Sovs | +10 HP | Basic rhythm |
+| Foxtrot Ale | 5 Sovs | +15 HP | Different tempo (rebellion) |
+| The Wallflower | 3 Sovs | +5 HP | No dancing required (shameful) |
+| Tango IPA | 6 Sovs | +15 HP, +5 SP | Dramatic pause |
+| Sinfonian Whirl | 8 Sovs | +25 HP | Full spin delivery |
 
 ### Partner Brewery Note
 
@@ -169,7 +169,7 @@ The Dancing Stein doesn't brew on-site — their beer is supplied by **The Spinn
 - **Design**: Beer stein silhouette with dancing legs, bottle opener as the stein handle
 - **Material**: Brushed silver with ballroom gold accents
 - **Inscription**: "One-Two-Three"
-- **Acquired**: Complete the Stein Waltz on any difficulty OR purchase for €18
+- **Acquired**: Complete the Stein Waltz on any difficulty OR purchase for 18 Sovs
 - **Special Feature**: Weighted to spin when flicked (like a dancer)
 
 ### Stamp Details
@@ -304,31 +304,44 @@ The Dancing Stein doesn't brew on-site — their beer is supplied by **The Spinn
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (6 PNGs)
-- exterior_tavern.png - 512x384 - Dancing silhouette windows
-- dance_floor_main.png - 640x512 - Polished ballroom bar
-- bar_station.png - 384x256 - Destination bar with taps
-- practice_corner.png - 256x256 - Beginner area
-- perimeter_tables.png - 384x256 - Rest area seating
-- cellar_stairs.png - 256x384 - Spiral stamp location
+> **Authority: `PNG_Assets/The_Dancing_Stein_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (6 PNGs)
-- herr_drehmeister.png - 64x96 - Barkeep mid-sway
-- frau_schritt.png - 64x96 - Dance instructor
-- dancing_regular_1.png - 64x96 - Elegant dancer
-- dancing_regular_2.png - 64x96 - Enthusiastic dancer
-- waltzing_server.png - 64x96 - Spinning delivery
-- stumbling_patron.png - 64x96 - Comedy fail state
+### Required PNG Files (8 sheets)
 
-### UI/Item Sprites (8 PNGs)
-- waltz_weizen.png - 32x64 - Signature beer (swirling foam)
-- stamp_dancing_stein.png - 64x64 - Stein with dancing legs
-- stein_waltz_ui.png - 256x128 - Challenge interface
-- spill_meter.png - 128x32 - Acceptable loss gauge
-- graceful_buff.png - 32x32 - Success status
-- two_left_feet.png - 32x32 - Failure status
-- rhythm_indicator.png - 128x64 - Beat timing display
-- waltz_tempo_marker.png - 32x32 - 3/4 time icon
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | dancing_stein_tileset.png | 1024x512 |
+| 2 | herr_drehmeister.png | 512x384 |
+| 3 | dancing_stein_npcs.png | 512x512 |
+| 4 | dancing_stein_landmarks.png | 512x512 |
+| 5 | dancing_stein_challenge_items.png | 256x256 |
+| 6 | dancing_stein_effects.png | 256x128 |
+| 7 | dancing_stein_ui.png | 512x256 |
+| 8 | dancing_stein_accessibility.png | 256x256 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/The_Dancing_Stein_PNG_Assets.md`.
+
+- `exterior_tavern.png`
+- `dance_floor_main.png`
+- `bar_station.png`
+- `practice_corner.png`
+- `perimeter_tables.png`
+- `cellar_stairs.png`
+- `frau_schritt.png`
+- `dancing_regular_1.png`
+- `dancing_regular_2.png`
+- `waltzing_server.png`
+- `stumbling_patron.png`
+- `waltz_weizen.png`
+- `stamp_dancing_stein.png`
+- `stein_waltz_ui.png`
+- `spill_meter.png`
+- `graceful_buff.png`
+- `two_left_feet.png`
+- `rhythm_indicator.png`
+- `waltz_tempo_marker.png`
 
 ---
 

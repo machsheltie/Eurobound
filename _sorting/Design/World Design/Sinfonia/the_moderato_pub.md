@@ -185,7 +185,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 - **Design**: Metronome shape with bottle opener as the pendulum arm
 - **Material**: Aged bronze with copper accents
 - **Inscription**: "Tempo Is Everything"
-- **Acquired**: Win a Tempo Debate OR purchase for €15
+- **Acquired**: Win a Tempo Debate OR purchase for 15 Sovs
 - **Special Feature**: Pendulum actually swings slightly when hanging
 
 **Stamp Details**:
@@ -203,7 +203,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 - **ABV**: 5.5%
 - **Stats**: +20 HP, +10 SP
 - **Effect**: "Moderate Mood" — immune to Rushed and Sluggish status for 30 minutes
-- **Price**: €6
+- **Price**: 6 Sovs
 - **Flavor Text**: "Not too hoppy, not too malty, not too strong, not too weak. The Allegro faction calls it boring. The Adagio faction calls it rushed. It's perfect."
 - **Unlocked**: After earning brewery stamp
 - **Brewed By**: The Moderato Pub (in-house, recipe unchanged since 1848)
@@ -229,27 +229,27 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 **Drinks Menu**:
 | Item | Price | Effect | Comedy Note |
 |------|-------|--------|-------------|
-| Moderato Märzen | €4 | +10 HP, +5 SP | "The compromise beer" |
-| Allegro Ale | €5 | +5 HP, +15 SP, +Speed | "For those in a hurry" |
-| Adagio Stout | €6 | +20 HP, -Speed | "Take your time" |
-| Presto Pilsner | €7 | +10 SP, +Speed, Jittery | "Dangerously fast" |
-| Lento Lager | €3 | +5 HP | "Is it... fermented yet?" |
-| The Fermata | €10 | Pause all debuffs for 30 min | "Hold that thought" |
+| Moderato Märzen | 4 Sovs | +10 HP, +5 SP | "The compromise beer" |
+| Allegro Ale | 5 Sovs | +5 HP, +15 SP, +Speed | "For those in a hurry" |
+| Adagio Stout | 6 Sovs | +20 HP, -Speed | "Take your time" |
+| Presto Pilsner | 7 Sovs | +10 SP, +Speed, Jittery | "Dangerously fast" |
+| Lento Lager | 3 Sovs | +5 HP | "Is it... fermented yet?" |
+| The Fermata | 10 Sovs | Pause all debuffs for 30 min | "Hold that thought" |
 
 **Food Menu**:
 | Item | Price | Effect | Comedy Note |
 |------|-------|--------|-------------|
-| Tempo Schnitzel | €12 | +30 HP, removes Hungry | "Served at YOUR pace" |
-| Allegro Wurst | €8 | +20 HP, +Speed | "Speed sausage" |
-| Adagio Apfelstrudel | €6 | +15 HP, +10 SP | "Savor every bite" |
-| Metronome Pretzels | €3 | +5 HP | "Perfectly timed salt" |
-| The Fermata Feast | €25 | Full HP/SP restore | "When you really need to hold" |
+| Tempo Schnitzel | 12 Sovs | +30 HP, removes Hungry | "Served at YOUR pace" |
+| Allegro Wurst | 8 Sovs | +20 HP, +Speed | "Speed sausage" |
+| Adagio Apfelstrudel | 6 Sovs | +15 HP, +10 SP | "Savor every bite" |
+| Metronome Pretzels | 3 Sovs | +5 HP | "Perfectly timed salt" |
+| The Fermata Feast | 25 Sovs | Full HP/SP restore | "When you really need to hold" |
 
 ### Quest Integration (Base of Operations)
 
 **Quest Givers Present**:
 
-**The Street Performer** — Klaus the Accordion
+**The Street Performer** — Kurt the Accordion
 - Offers: "Instrument Repair" side quest (fetch parts from MusikGasse)
 - Rewards: Combat buff items
 - Dialogue: "My accordion needs parts! Specific parts! From SPECIFIC shops!"
@@ -473,43 +473,57 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (10 PNGs)
-- pub_exterior.png - 512x384 - Traditional wirtshaus
-- main_hall.png - 640x512 - Communal tables, stage
-- bar_area.png - 384x256 - Tap selection, bartender station
-- the_snug.png - 256x256 - Quiet conversation room
-- beer_garden.png - 384x384 - Outdoor courtyard
-- backroom.png - 256x256 - Rest area with cots
-- stage_area.png - 256x192 - Performance spot
-- memorabilia_wall.png - 384x192 - Musical decorations
-- tempo_chalkboard.png - 128x192 - Daily debate topic
-- metronome_collection.png - 192x128 - Behind bar detail
+> **Authority: `PNG_Assets/The_Moderato_Pub_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (12 PNGs)
-- herr_takt.png - 64x96 - Bartender
-- frau_schnell.png - 64x96 - Allegro leader
-- herr_langsam.png - 64x96 - Adagio leader
-- die_mitte.png - 64x96 - Moderato mediator
-- klaus_accordion.png - 64x96 - Quest giver
-- maestro_bruckmann.png - 64x96 - Quest giver
-- die_stimme.png - 64x96 - Karaoke quest giver
-- street_performer_1.png - 64x96 - Background NPC
-- street_performer_2.png - 64x96 - Background NPC
-- pub_patron_allegro.png - 64x96 - Faction member
-- pub_patron_adagio.png - 64x96 - Faction member
-- exhausted_tourist.png - 64x96 - Rotating quest giver
+### Required PNG Files (8 sheets)
 
-### UI/Item Sprites (10 PNGs)
-- beer_stein.png - 32x48 - Standard drink
-- tempo_drinks.png - 160x48 - Menu items (5 variants)
-- food_menu.png - 128x96 - Shop interface
-- regular_badge.png - 32x32 - Status indicator
-- tempo_debate_ui.png - 256x128 - Debate interface
-- golden_mic.png - 32x48 - Karaoke reward
-- bulletin_board.png - 192x256 - Quest board
-- faction_flags.png - 96x32 - Tempo faction icons
-- fermata_symbol.png - 32x32 - Special drink indicator
-- musical_note_icons.png - 64x64 - UI decoration
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | moderato_pub_exterior.png | 1024x512 |
+| 2 | moderato_pub_tileset.png | 1024x512 |
+| 3 | herr_takt_bartender.png | 512x288 |
+| 4 | tempo_faction_leaders.png | 512x384 |
+| 5 | moderato_pub_npcs.png | 1024x384 |
+| 6 | moderato_pub_items.png | 512x256 |
+| 7 | moderato_pub_effects.png | 512x256 |
+| 8 | moderato_pub_ui.png | 512x512 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/The_Moderato_Pub_PNG_Assets.md`.
+
+- `pub_exterior.png`
+- `main_hall.png`
+- `bar_area.png`
+- `the_snug.png`
+- `beer_garden.png`
+- `backroom.png`
+- `stage_area.png`
+- `memorabilia_wall.png`
+- `tempo_chalkboard.png`
+- `metronome_collection.png`
+- `herr_takt.png`
+- `frau_schnell.png`
+- `herr_langsam.png`
+- `die_mitte.png`
+- `kurt_accordion.png`
+- `maestro_bruckmann.png`
+- `die_stimme.png`
+- `street_performer_1.png`
+- `street_performer_2.png`
+- `pub_patron_allegro.png`
+- `pub_patron_adagio.png`
+- `exhausted_tourist.png`
+- `beer_stein.png`
+- `tempo_drinks.png`
+- `food_menu.png`
+- `regular_badge.png`
+- `tempo_debate_ui.png`
+- `golden_mic.png`
+- `bulletin_board.png`
+- `faction_flags.png`
+- `fermata_symbol.png`
+- `musical_note_icons.png`
 
 ---
 

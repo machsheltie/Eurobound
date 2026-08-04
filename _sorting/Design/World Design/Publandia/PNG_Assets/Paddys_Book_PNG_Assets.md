@@ -78,7 +78,7 @@ assets/sprites/locations/publandia/paddys_book/
 | Coat Check Rack | (112, 80) | 64x64 | Coats, one suspicious umbrella |
 | Weapon Check Bin | (176, 80) | 48x48 | "Theoretically" enforced — half empty |
 | House Rules Poster | (224, 80) | 48x64 | Posted and ignored by the house; dusty, one corner peeling |
-| Funds-Check Tray | (272, 80) | 32x24 | Where you prove the €50 minimum |
+| Funds-Check Tray | (272, 80) | 32x24 | Where you prove the 50 Sovs minimum |
 | Point-of-No-Return Floor Line | (304, 80) | 64x16 | Worn stripe on the boards |
 | Bare Bulb Fixture | (368, 80) | 16x32 | Checkpoint's single light source |
 
@@ -240,7 +240,7 @@ assets/sprites/locations/publandia/paddys_book/
 |---------|----------|------|-------------|
 | Door-Block Idle | (0, 0) | 80x112 | Fills the frame; fills the doorway; that's the job |
 | Password Check | (80, 0) | 80x112 | Leaning down to hear the whisper — a long way down |
-| Fund Check | (160, 0) | 80x112 | Palm out: "Minimum's €50 to play. Show me." |
+| Fund Check | (160, 0) | 80x112 | Palm out: "Minimum's 50 Sovs to play. Show me." |
 | Approval Nod | (240, 0) | 80x112 | Single nod; door opens behind him |
 | Refusal Head-Shake | (320, 0) | 80x112 | Slow, almost sympathetic |
 | Knuckle Crack 1 | (400, 0) | 80x112 | Fingers interlaced, raised |
@@ -308,7 +308,7 @@ assets/sprites/locations/publandia/paddys_book/
 |---------|----------|------|-------------|
 | Observing Idle | (0, 0) | 64x96 | Watching the table, not the dice |
 | Precise Small Bet | (64, 0) | 64x96 | One chip, placed like surgery |
-| Quiet Pocketing | (128, 0) | 64x96 | €20 a night, every night, no fuss |
+| Quiet Pocketing | (128, 0) | 64x96 | 20 Sovs a night, every night, no fuss |
 | "Don't Tell Anyone" Whisper | (192, 0) | 64x96 | Leaning to the player, hand shielding mouth |
 | Nursing the Same Pint | (256, 0) | 64x96 | Two hours, one pint, zero mistakes |
 | Background Gambler A | (320, 0) | 64x96 | Crowd filler — hunched over slate |
@@ -322,9 +322,9 @@ assets/sprites/locations/publandia/paddys_book/
 | Money Throw 2 — Notes Airborne | (64, 96) | 64x96 | Confetti of currency |
 | Celebrating a Loss | (128, 96) | 64x96 | Arms up, delighted — "I'm here for the EXPERIENCE!" |
 | Buying Rounds | (192, 96) | 64x96 | Beloved by staff, statistically |
-| "€500 on the Australian!" Point | (256, 96) | 64x96 | Committing to the ringer, loudly |
+| "500 Sovs on the Australian!" Point | (256, 96) | 64x96 | Committing to the ringer, loudly |
 | Adored by Staff | (320, 96) | 64x96 | Basking; Paddy's ideal customer |
-| Staff-Adoration Sparkle Overlay | (384, 96) | 32x32 | Little hearts-and-euro glints around him |
+| Staff-Adoration Sparkle Overlay | (384, 96) | 32x32 | Little hearts-and-Sov glints around him |
 | Banknote Flutter Strip | (416, 96) | 48x32 | 3-frame falling notes for his aura |
 
 ### The Debt Ghost (y=192 row):
@@ -432,7 +432,7 @@ assets/sprites/locations/publandia/paddys_book/
 ### Board Base (full render, all text legible at mobile scale):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Odds Board Base | (0, 0) | 384x512 | Full board: "PADDY'S BOOK — TONIGHT'S ACTION" header; BRAWLS: "Big Mick vs. Quarry Jimmy......... 2:1 / 3:2", "The Brewery Gorilla vs. ???....... 5:1 / 1:8", "Tourist Battle Royale............. Various"; DICE FIGHTS: "High-Low Championship............. Entry €20", "Liar's Dice Tournament............ Entry €50", "Paddy's Special (ask)............. €100 min"; PROPOSITIONS: "Rain before midnight.............. 1:3", "Hen party vomit (Craic Tax)....... 1:2", "Tourist asks for 'Publandia Bomb'. 1:1", "Police raid tonight............... 50:1"; footer: "HOUSE RULES: THE HOUSE IS ALWAYS RIGHT" |
+| Odds Board Base | (0, 0) | 384x512 | Full board: "PADDY'S BOOK — TONIGHT'S ACTION" header; BRAWLS: "Big Mick vs. Quarry Jimmy......... 2:1 / 3:2", "The Brewery Gorilla vs. ???....... 5:1 / 1:8", "Tourist Battle Royale............. Various"; DICE FIGHTS: "High-Low Championship............. Entry 20 Sovs", "Liar's Dice Tournament............ Entry 50 Sovs", "Paddy's Special (ask)............. 100 Sovs min"; PROPOSITIONS: "Rain before midnight.............. 1:3", "Hen party vomit (Craic Tax)....... 1:2", "Tourist asks for 'Publandia Bomb'. 1:1", "Police raid tonight............... 50:1"; footer: "HOUSE RULES: THE HOUSE IS ALWAYS RIGHT" |
 
 ### Header & Modifier Plates (right column):
 | Element | Position | Size | Description |
@@ -470,9 +470,9 @@ assets/sprites/locations/publandia/paddys_book/
 | Slat: Big Mick vs. Quarry Jimmy 2:1 / 3:2 | (0, 552) | 320x24 | Headline bout line — cross-referenced at The Quiet Man |
 | Slat: The Brewery Gorilla vs. ??? 5:1 / 1:8 | (0, 576) | 320x24 | Mystery opponent line |
 | Slat: Tourist Battle Royale — Various | (0, 600) | 320x24 | Odds cycle live during entry period |
-| Slat: High-Low Championship — Entry €20 | (0, 624) | 320x24 | Dice fights section |
-| Slat: Liar's Dice Tournament — Entry €50 | (0, 648) | 320x24 | — |
-| Slat: Paddy's Special (ask) — €100 min | (0, 672) | 320x24 | The "ask" is doing heavy lifting |
+| Slat: High-Low Championship — Entry 20 Sovs | (0, 624) | 320x24 | Dice fights section |
+| Slat: Liar's Dice Tournament — Entry 50 Sovs | (0, 648) | 320x24 | — |
+| Slat: Paddy's Special (ask) — 100 Sovs min | (0, 672) | 320x24 | The "ask" is doing heavy lifting |
 | Slat: Rain before midnight — 1:3 | (0, 696) | 320x24 | Free money for the house |
 | Slat: Hen party vomit (Craic Tax) — 1:2 | (0, 720) | 320x24 | Saturday night special — settled by Craic Tax scouts |
 | Slat: Tourist asks for "Publandia Bomb" — 1:1 | (0, 744) | 320x24 | Daily occurrence; Paddy scouts bars |
@@ -559,7 +559,7 @@ assets/sprites/locations/publandia/paddys_book/
 ### Technical Notes:
 - All particles via CPUParticles2D; smoke layers are scrolling TextureRects, NOT particles (2 draw calls total for atmosphere)
 - Sad trombone sequence: icon appears, notes spawn at 0.4s intervals descending 8px each — total gag reads in under 2 seconds
-- Cash-to-Paddy vacuum trail triggers only on losses ≥ €50 (comedy escalates with stakes)
+- Cash-to-Paddy vacuum trail triggers only on losses ≥ 50 Sovs (comedy escalates with stakes)
 - Green bulb pulse cycle is 4 seconds — slow enough to miss if you're not looking, which is the point
 
 ---
@@ -600,7 +600,7 @@ assets/sprites/locations/publandia/paddys_book/
 |---------|----------|------|-------------|
 | Loan Contract | (0, 128) | 96x64 | Readable gag text: "TERMS: 50% INTEREST PER DAY. YES, PER DAY. SIGN HERE, FRIEND." |
 | Loan Contract Signed | (96, 128) | 96x64 | Your signature, already regretted |
-| Debt Counter UI | (192, 128) | 128x32 | "OWED TO PADDY: €___" — persistent HUD bar while In Debt |
+| Debt Counter UI | (192, 128) | 128x32 | "OWED TO PADDY: ___ SOVS" — persistent HUD bar while In Debt |
 | Interest Tick Popup | (320, 128) | 48x24 | "+50%" daily tick, red, accompanied by jingle visual |
 | Marker Chit UI | (368, 128) | 32x32 | Inventory item: your reputation, in paper form |
 
@@ -671,7 +671,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Duration:** 3 seconds (0.75s per frame, hold presentation)
 - **Frames:** 4 (idle warm → lean-in 1 → lean-in 2 → contract presentation)
 - **Pattern:** Single play into held contract frame
-- **Trigger:** Player hits €0 (Cleaned Out) or accepts Maureen's referral
+- **Trigger:** Player hits 0 Sovs (Cleaned Out) or accepts Maureen's referral
 - **Purpose:** Predation at its most tender — the slower the lean, the worse the terms
 - **Audio Sync:** Loan offer jingle begins on lean-in 1; jingle sparkle visual accompanies
 - **Mobile Optimization:** None needed
@@ -680,7 +680,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Duration:** 1.8 seconds
 - **Frames:** Icon + 3 descending notes (0.4s spawn intervals)
 - **Pattern:** Trombone icon appears over player → notes descend 8px per step → final note flattens on floor
-- **Trigger:** Player balance hits €0 at Paddy's
+- **Trigger:** Player balance hits 0 Sovs at Paddy's
 - **Purpose:** Paddy chose this sound himself; the humiliation is part of the service
 - **Audio Sync:** Sad trombone "wah wah waaah" — one note per visual note spawn
 - **Mobile Optimization:** None needed (it's four sprites; the gag is sacred)
@@ -725,7 +725,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Duration:** 0.9 seconds
 - **Frames:** 3 flutter + 2 chip scatter, physics-lite arcs
 - **Pattern:** Burst on payout events; vacuum-trail variant on big losses
-- **Trigger:** Bet resolution ≥ €20; Whale ambient throws every 8–12s
+- **Trigger:** Bet resolution ≥ 20 Sovs; Whale ambient throws every 8–12s
 - **Purpose:** Money in motion, almost always toward the desk
 - **Audio Sync:** Chips clinking (coin glints flash per clink); note rustle
 - **Mobile Optimization:** Halve particle count; Whale ambient throws every 20s
@@ -802,7 +802,7 @@ assets/sprites/locations/publandia/paddys_book/
 | Low | Static smoke frame, static odds board, 1 crowd strip, result-only dice, no ambient money particles |
 
 ### Performance Targets:
-- **Target FPS:** 45
+- **Target FPS:** 60
 - **Max Draw Calls:** 16 per frame
 - **Memory Footprint:** 38 MB maximum
 - **Particle Limit:** 24 (dust 8, money/chips 8, fight bursts 8 — fight bursts swap in for dust during brawls, never stack)
@@ -892,7 +892,7 @@ assets/sprites/locations/publandia/paddys_book/
 ### Screenshot-Worthy Moments:
 1. **The full odds board** — "Hen party vomit....... 1:2" and "Police raid tonight....... 50:1" on one legible chalk board is a shareable image by itself
 2. **The sad trombone descending over a cleaned-out player** while Paddy's loan contract slides into frame
-3. **The Mystery Entrant hood-drop reveal** mid-Battle-Royale with the Whale's "€500 on the Australian!" still on screen
+3. **The Mystery Entrant hood-drop reveal** mid-Battle-Royale with the Whale's "500 Sovs on the Australian!" still on screen
 4. **The loan contract close-up** — "50% INTEREST PER DAY. YES, PER DAY. SIGN HERE, FRIEND."
 
 ### TikTok Potential:
@@ -993,7 +993,7 @@ assets/sprites/locations/publandia/paddys_book/
 | Seedy Underbelly Present | ✅ | Unlicensed gambling, loaded dice, fixed fights, 50%-per-day loan sharking, debt servitude (the Debt Ghost) |
 | Gameplay Value Established | ✅ | Three dice games, proposition betting, brawl betting, Tourist Battle Royale combat, debt system, four quests, achievement track, Bravado economy |
 | Technical Feasibility | ✅ | Eight sheets, three atlases, LOD tiers, on-demand brawl pit loading documented |
-| Mobile Performance Budget | ✅ | 45 FPS, 16 draw calls, 38 MB, 24 particles (per profile budget) |
+| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 24 particles (per profile budget) |
 | Accessibility Features | ✅ | Visual cues for all 12+ audio events; static odds board, static smoke, no-strobe raid variant; shape-coded odds movement |
 | No Crypto Elements | ✅ | None present — Paddy accepts cash. Only cash. |
 | Social Media Integration | ✅ | Odds board, sad trombone, ringer reveal, and loan contract moments identified |

@@ -1,6 +1,6 @@
 # Trinity of Pints
 
-*Ireland's most prestigious drinking institution — where "lectures" are drinking contests and every student is perpetually "studying"*
+*Publandia's most prestigious drinking institution — where "lectures" are drinking contests and every student is perpetually "studying"*
 
 ## Location Identity
 - **Location ID**: publandia_pub_trinity_pints_01
@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 11 AM - 1 AM ("class hours")
 - **Stat Requirements**: None (open enrollment)
-- **Item Requirements**: "Tuition" (€10 cover charge) OR proof of previous "graduation"
+- **Item Requirements**: "Tuition" (10 Sovs cover charge) OR proof of previous "graduation"
 - **Previous Location Requirements**: None
 - **Special Conditions**: Different "courses" available at different times
 
@@ -96,7 +96,7 @@
 The bros LOVE it because it makes their drinking feel intellectual. They're not getting drunk; they're "studying." They're not failing at beer pong; they're "struggling with the coursework." The academic framing lets them feel sophisticated while doing the exact same thing they'd do at any bar.
 
 ### The Dean Philosophy
-Dean Declan Murphy runs Trinity of Pints with absolute commitment to the bit. He's never broken character in 15 years. Is he a failed academic who found a better path? A performance artist? A genuine believer in "alternative education"? No one knows. He grades your drinking with the seriousness of a tenure committee.
+Dean Cathal Murphy runs Trinity of Pints with absolute commitment to the bit. He's never broken character in 15 years. Is he a failed academic who found a better path? A performance artist? A genuine believer in "alternative education"? No one knows. He grades your drinking with the seriousness of a tenure committee.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Gimmick pubs, "experiential" tourism, drinking dressed up as culture
@@ -138,13 +138,13 @@ Dean Declan Murphy runs Trinity of Pints with absolute commitment to the bit. He
 
 ## Gameplay Mechanics
 ### Enrollment System
-**Cover Charge ("Tuition")**: €10
+**Cover Charge ("Tuition")**: 10 Sovs
 - Includes "Student ID" (laminated card with your name)
 - Access to all "courses" for the evening
 - One free "textbook" (branded pint glass)
 - Graduation eligibility
 
-**Graduate Discount**: €5 (show previous diploma)
+**Graduate Discount**: 5 Sovs (show previous diploma)
 - "Alumni" pricing
 - Access to "Advanced Courses"
 - Reserved seating in Great Hall
@@ -181,7 +181,7 @@ Dean Declan Murphy runs Trinity of Pints with absolute commitment to the bit. He
 **Trigger**: Complete Senior Thesis OR accumulate enough course credits
 **Location**: The Quad (weather permitting) or Great Hall
 **Ceremony**:
-1. Dean Declan calls your name
+1. Dean Cathal calls your name
 2. Walk to podium (balance check based on intoxication)
 3. Receive diploma (actual printed certificate)
 4. "Commencement toast" (final drink)
@@ -198,7 +198,7 @@ THE SCHOOL OF LIQUID ARTS
 and is hereby granted the degree of
 BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 "In Cervisia Felicitas"
-[Dean Declan Murphy signature]
+[Dean Cathal Murphy signature]
 ```
 
 ### Academic Standing System
@@ -230,19 +230,19 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 ## NPCs & Staff
 ### The Administration
 
-**Dean Declan Murphy**
+**Dean Cathal Murphy**
 - **Role**: Owner/operator, head "professor," never breaks character
 - **Appearance**: 50s Irish man, full academic regalia (robe, cap, medallion), perpetually serious
 - **Background**: Former actual lecturer (adjunct, let go), found calling in "alternative education"
 - **Demeanor**: Absolute commitment to the bit, grades drinking with scholarly gravitas
-- **The Declan Method**: Treat every pint like a thesis defense
+- **The Cathal Method**: Treat every pint like a thesis defense
 - **Philosophy**: "Education takes many forms. Who's to say this isn't one of them? The Socratic method involved a lot of wine, you know."
 
-**Dean Declan's Dialogue Categories**:
+**Dean Cathal's Dialogue Categories**:
 
 *The Welcome:*
 - "Welcome to Trinity of Pints. I am Dean Murphy. Your education begins now."
-- "Enrollment is €10. This covers tuition, materials, and access to our distinguished faculty."
+- "Enrollment is 10 Sovs. This covers tuition, materials, and access to our distinguished faculty."
 - "I see potential in you. Let's see if you can live up to it. Academically speaking."
 
 *During Courses:*
@@ -262,7 +262,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 
 ### Faculty
 
-**Professor Siobhan O'Sullivan (Spirits Department)**
+**Professor Róisín O'Sullivan (Spirits Department)**
 - **Role**: Whiskey courses, shot challenges, drinks history
 - **Appearance**: 40s Irish woman, tweed jacket, reading glasses, perpetually holding a glass
 - **Demeanor**: Warm but exacting, disappointed when you can't identify Jameson vs. Powers
@@ -317,7 +317,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - **Function**: Group dynamic comedy
 
 ### Original NPC Dialogue
-**Dean Declan's Philosophy (Extended):**
+**Dean Cathal's Philosophy (Extended):**
 - "I spent twelve years in academia. Publish or perish, they said. I perished. Then I found THIS. Now I publish diplomas. Who's the failure now?"
 - "Every great university has traditions. Ours is drinking. Oxford has rowing. We have pints. I fail to see the difference."
 - "The students who come here... they want something. Connection. Achievement. An excuse to drink with purpose. I provide all three."
@@ -332,7 +332,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - **Chadwick** (filming): "And here we see the RIGOROUS STANDARDS of Irish higher education..."
 - **Chadwick** (graduating): "I have a DEGREE in CONTENT now. That's basically what this is."
 - **Bradley**: "Is the accreditation... current?"
-- **Dean Declan**: "You may audit SKEPTIC 101: Questioning Everything."
+- **Dean Cathal**: "You may audit SKEPTIC 101: Questioning Everything."
 - **Bradley** (graduating): "I'm... proud? I didn't expect to feel genuine emotion at a fake graduation."
 
 ## Brewery Tour Integration
@@ -340,7 +340,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 ### Stamp Acquisition
 **Requirement**: Must have Bottle Opener Keychain from The Blarney Trap
 **Unlock Condition**: GRADUATE from Trinity of Pints (complete Senior Thesis)
-**Stamp Location**: Applied during graduation ceremony by Dean Declan
+**Stamp Location**: Applied during graduation ceremony by Dean Cathal
 
 **Stamp Design**:
 - Square academic seal shape
@@ -350,7 +350,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - Bottom text: "Cum Laude in Lager"
 - Ink color: Deep navy blue
 
-**Dean Declan's Stamp Dialogue**:
+**Dean Cathal's Stamp Dialogue**:
 - "Ah, you carry Seamus's opener. A fellow traveler on the Continental Trail."
 - "Your passport, please. This stamp represents genuine academic achievement. In drinking."
 - "There. You are now officially an alumnus of Trinity of Pints. The beer world recognizes your accomplishment."
@@ -369,11 +369,11 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 | SP Restoration | +20 SP |
 | Special Effect | "Scholar's Focus" — +3 INT for 30 minutes |
 | Status Risk | 10% chance of "Pretentious" (dialogue becomes insufferable) |
-| Purchase Price | €9 |
+| Purchase Price | 9 Sovs |
 
 **Flavor Text**: "Brewed for minds that think they're smarter when drinking. They're not. But the confidence helps. Tastes like unearned intellectual superiority."
 
-**Dean Declan on Academic Amber**:
+**Dean Cathal on Academic Amber**:
 - "Our signature brew. Stoutworks makes it to our specifications. Light enough to drink during lectures, complex enough to pretend you're sophisticated."
 - "The honey notes represent the sweetness of knowledge. The alcohol represents everything else."
 - "Students report improved cognitive function. They're wrong, but they FEEL smarter. Isn't that what education is for?"
@@ -443,7 +443,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
   - Lecture halls (multiple)
   - The Quad beer garden
   - Graduation podium
-  - Dean Declan and professors
+  - Dean Cathal and professors
   - Student NPCs
   - Academic decor (fake books, portraits, diplomas)
   - Course challenge setups
@@ -508,4 +508,4 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 
 ---
 
-*Trinity of Pints: Where drinking becomes "education," failure becomes "academic probation," and your diploma is worth exactly what you paid for it — plus the memory of Dean Declan calling your name with genuine scholarly pride. Cum Laude in Lager, friends. Cum Laude in Lager.*
+*Trinity of Pints: Where drinking becomes "education," failure becomes "academic probation," and your diploma is worth exactly what you paid for it — plus the memory of Dean Cathal calling your name with genuine scholarly pride. Cum Laude in Lager, friends. Cum Laude in Lager.*

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 6 PM - 4 AM (peak drunk hours only)
 - **Stat Requirements**: None (hunger and desperation welcome)
-- **Item Requirements**: Gold (€3-8 per item, exact change appreciated)
+- **Item Requirements**: Gold (3 Sovs-8 per item, exact change appreciated)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Eoin does not want to hear about your night
 
@@ -64,13 +64,13 @@ Eoin keeps it simple. Pretzels. Variations on pretzels. Nothing else.
 
 | Item | Price | HP Restoration | Notes |
 |------|-------|----------------|-------|
-| Classic Pretzel | €3 | +12 HP | Plain, salted, perfect |
-| Large Pretzel | €5 | +20 HP | More pretzel, same attitude |
-| Pretzel Bites (bag) | €4 | +15 HP | Shareable (if you have friends) |
-| Stuffed Pretzel (cheese) | €6 | +25 HP | Melted cheese inside |
-| Stuffed Pretzel (jalapeño) | €7 | +22 HP, +Heat resist | Spicy option |
-| The Everything Pretzel | €6 | +23 HP | Every topping, chaotic |
-| Cinnamon Sugar Pretzel | €5 | +18 HP, +5 SP | Sweet option, Eoin judges silently |
+| Classic Pretzel | 3 Sovs | +12 HP | Plain, salted, perfect |
+| Large Pretzel | 5 Sovs | +20 HP | More pretzel, same attitude |
+| Pretzel Bites (bag) | 4 Sovs | +15 HP | Shareable (if you have friends) |
+| Stuffed Pretzel (cheese) | 6 Sovs | +25 HP | Melted cheese inside |
+| Stuffed Pretzel (jalapeño) | 7 Sovs | +22 HP, +Heat resist | Spicy option |
+| The Everything Pretzel | 6 Sovs | +23 HP | Every topping, chaotic |
+| Cinnamon Sugar Pretzel | 5 Sovs | +18 HP, +5 SP | Sweet option, Eoin judges silently |
 
 ### Technical Specifications
 - **Color Palette**: Primary: Industrial Steel (#71797E), Accent: Pretzel Brown (#C4A747), Background: Night Black (#1C1C1C), Mustard Yellow (#FFDB58)
@@ -117,7 +117,7 @@ He's not rude — he's efficient. He's not cold — he's professional. He's not 
 3. "—so anyway she was like— wait, what do you have?"
 4. "Pretzels."
 5. "Right, uh, I'll take a large one. So ANYWAY—"
-6. "€5. Next."
+6. "5 Sovs. Next."
 7. "...don't you want to know what happened?"
 8. "No. Mustard's on the left."
 
@@ -151,7 +151,7 @@ If player tries to share information, tell stories, or seek emotional support:
 | "You won't believe my night—" | "Probably not. What pretzel?" |
 | "Can I get some advice?" | "Get the cheese stuffed. Next." |
 | "I'm having relationship problems—" | "Mustard helps. The yellow one." |
-| "Do you ever feel like—" | "No. €5." |
+| "Do you ever feel like—" | "No. 5 Sovs." |
 | "What's your story, man?" | "I sell pretzels. That's the story." |
 | "You seem like a good listener—" | "I'm not. Classic or large?" |
 | "I just need someone to talk to—" | "Café's down the street. This is a pretzel stand." |
@@ -205,7 +205,7 @@ Eoin's pretzels are positioned near pubs deliberately:
 
 *The Transaction:*
 - "What do you want?"
-- "€5. Mustard's there."
+- "5 Sovs. Mustard's there."
 - "Next."
 - "Here."
 - "Exact change next time."
@@ -215,7 +215,7 @@ Eoin's pretzels are positioned near pubs deliberately:
 - "Sounds rough. Classic or large?"
 - "I believe you. Cheese stuffed?"
 - "Uh huh. Napkins are free."
-- "Don't know, don't need to. €3."
+- "Don't know, don't need to. 3 Sovs."
 
 *Rare Moments of... Something:*
 - *to quick, efficient customer* "Good." *single nod*
@@ -235,7 +235,7 @@ Eoin's pretzels are positioned near pubs deliberately:
 - **Behavior**: Launching into narrative, oblivious to Eoin's disinterest
 - **Function**: Shows what Eoin deals with, comedy
 - **Dialogue**: "So I was at this pub, right, and she looked at me, and I SWEAR—"
-- **Eoin's Response**: "Large. €5. Mustard's there. Next."
+- **Eoin's Response**: "Large. 5 Sovs. Mustard's there. Next."
 - **Oversharer**: "—wait, I wasn't done— okay, bye I guess?"
 
 **The Efficient Regular**
@@ -258,7 +258,7 @@ Eoin's pretzels are positioned near pubs deliberately:
 - **Behavior**: Trying to make conversation, confused by responses
 - **Function**: Culture shock comedy
 - **Dialogue**: "So are these authentic Irish pretzels? What's the history—"
-- **Eoin**: "They're pretzels. German, originally. I make them here. €3."
+- **Eoin**: "They're pretzels. German, originally. I make them here. 3 Sovs."
 - **Tourist**: "But like, what's your STORY—"
 - **Eoin**: "Pretzel stand. Next."
 
@@ -274,16 +274,16 @@ Eoin's pretzels are positioned near pubs deliberately:
 - **Lord Pilsner** (approaching): "PRETZELS! Bro, you will not BELIEVE—"
 - **Eoin**: "Large? Classic?"
 - **Lord Pilsner**: "—what? Oh, large. So ANYWAY, there was this GIRL—"
-- **Eoin**: "€5."
+- **Eoin**: "5 Sovs."
 - **Lord Pilsner**: "—and she— wait, don't you want to know?"
 - **Eoin**: "No. Mustard's there. Next."
 - **Lord Pilsner**: "...harsh but fair, honestly."
 - **Chadwick**: "The VIBE of this guy! The AESTHETIC of not caring! This is CONTENT!"
-- **Eoin**: "Camera costs €10."
+- **Eoin**: "Camera costs 10 Sovs."
 - **Chadwick**: "What? There's no— oh. OH. You're charging me to film. Respect."
 - **Eoin**: "...classic?"
 - **Bradley**: "Two, please."
-- **Eoin**: "€6."
+- **Eoin**: "6 Sovs."
 
 ## System Integration
 ### Vendor Network
@@ -311,7 +311,7 @@ Eoin's pretzels are positioned near pubs deliberately:
 - **Perfect Transaction**: "Efficient" — under 5 seconds, no words
 - **10 Purchases**: "Regular" — Eoin knows your order
 - **Witnessed The Exception**: "Human After All" — he does care (sometimes)
-- **Filmed For €10**: "Fair Exchange" — content has a cost
+- **Filmed For 10 Sovs**: "Fair Exchange" — content has a cost
 
 ---
 
@@ -328,7 +328,7 @@ Eoin's pretzels are positioned near pubs deliberately:
 - **Interactive Audio**: Order confirmation beep, cash sound, napkin grab
 
 ### Comedy Audio Integration
-- **Satirical Stingers**: Conversation attempt *cut off* by "€5", the sound of efficient dismissal
+- **Satirical Stingers**: Conversation attempt *cut off* by "5 Sovs", the sound of efficient dismissal
 - **Character Voice Direction**: Eoin's flat, professional tone
 - **Environmental Comedy**: Oversharer's story fading into background noise
 - **The Perfect Transaction**: Satisfying quick-exchange sound

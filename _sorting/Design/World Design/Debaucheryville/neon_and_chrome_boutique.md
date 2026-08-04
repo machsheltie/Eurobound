@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 4 PM - 4 AM (pre-club through post-club, closed during "amateur hours")
 - **Stat Requirements**: None (money is the only gate)
-- **Item Requirements**: Gold for purchases (€15-120), aspirations of VIP treatment
+- **Item Requirements**: Gold for purchases (15 Sovs-120), aspirations of VIP treatment
 - **Previous Location Requirements**: None (the boutique accepts all who can afford it)
 - **Special Conditions**: Bouncer defeat at Velvet Curtain unlocks "Premium Stock" section
 
@@ -148,47 +148,47 @@ The boutique exists in the space between practical club gear and aspirational ni
 **Eyewear Station**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Strobe-Resistant Shades (Basic) | €15 | -30% Strobe Confusion | "Entry level protection" |
-| Strobe-Resistant Shades (Premium) | €35 | -50% Strobe Confusion, +10 Style | "Statement AND function" |
-| LED Glasses (Static) | €25 | +15 Visibility, +10 Style | "Single color, maximum impact" |
-| LED Glasses (Programmable) | €50 | +25 Visibility, +15 Style, pattern options | "Control your own light show" |
-| Mirror Shades (Chrome) | €30 | +10 Intimidation, +10 Style | "They see themselves, not you" |
-| "The Bouncer" Aviators | €40 | +15 Intimidation, +5 Charm with door staff | "Professional recognition" |
+| Strobe-Resistant Shades (Basic) | 15 Sovs | -30% Strobe Confusion | "Entry level protection" |
+| Strobe-Resistant Shades (Premium) | 35 Sovs | -50% Strobe Confusion, +10 Style | "Statement AND function" |
+| LED Glasses (Static) | 25 Sovs | +15 Visibility, +10 Style | "Single color, maximum impact" |
+| LED Glasses (Programmable) | 50 Sovs | +25 Visibility, +15 Style, pattern options | "Control your own light show" |
+| Mirror Shades (Chrome) | 30 Sovs | +10 Intimidation, +10 Style | "They see themselves, not you" |
+| "The Bouncer" Aviators | 40 Sovs | +15 Intimidation, +5 Charm with door staff | "Professional recognition" |
 
 **Platform & Statement Footwear**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Platform Boots (2 inch) | €60 | +Height, +5 Intimidation | "Subtle elevation" |
-| Platform Boots (4 inch) | €85 | +Height, +15 Intimidation in clubs | "Committed elevation" |
-| Platform Boots (6 inch) | €120 | +Height, +25 Intimidation, -10 Stability | "Maximum presence, balance required" |
-| LED-Sole Sneakers | €70 | +20 Visibility, +15 Style, rechargeable | "Feet that announce you" |
-| "Dance Floor" Comfort Platforms | €90 | +Height, +10 Intimidation, no Stability penalty | "Function meets fashion" |
+| Platform Boots (2 inch) | 60 Sovs | +Height, +5 Intimidation | "Subtle elevation" |
+| Platform Boots (4 inch) | 85 Sovs | +Height, +15 Intimidation in clubs | "Committed elevation" |
+| Platform Boots (6 inch) | 120 Sovs | +Height, +25 Intimidation, -10 Stability | "Maximum presence, balance required" |
+| LED-Sole Sneakers | 70 Sovs | +20 Visibility, +15 Style, rechargeable | "Feet that announce you" |
+| "Dance Floor" Comfort Platforms | 90 Sovs | +Height, +10 Intimidation, no Stability penalty | "Function meets fashion" |
 
 **Access Accessories**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Club Stamp Collection Book | €20 | +Proof of venue history, +5 Scene Cred | "Documentation of your journey" |
-| VIP Wristband Holder | €15 | +Style, displays wristbands prominently | "Show what you've earned" |
-| Multi-Venue Lanyard | €25 | +Organization, holds all passes | "For the serious clubber" |
-| "Scene Veteran" Pin Collection | €30 | +10 Scene Cred (if recognized) | "Allegiances displayed" |
-| Velvet Rope Clip ★ | €75 | +Charm, shop discounts, VIP area access hints | "Post-boss unlock only" |
+| Club Stamp Collection Book | 20 Sovs | +Proof of venue history, +5 Scene Cred | "Documentation of your journey" |
+| VIP Wristband Holder | 15 Sovs | +Style, displays wristbands prominently | "Show what you've earned" |
+| Multi-Venue Lanyard | 25 Sovs | +Organization, holds all passes | "For the serious clubber" |
+| "Scene Veteran" Pin Collection | 30 Sovs | +10 Scene Cred (if recognized) | "Allegiances displayed" |
+| Velvet Rope Clip ★ | 75 Sovs | +Charm, shop discounts, VIP area access hints | "Post-boss unlock only" |
 
 **Glow & Visibility**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Premium Glow Necklace | €18 | +10 Visibility, 8-hour duration | "Not the cheap ones" |
-| UV-Reactive Accent Set | €35 | +15 Visibility under blacklight, +Style | "Only visible when it matters" |
-| LED Ring Set (3) | €40 | +10 Visibility, +10 Style, rechargeable | "Subtle but effective" |
-| LED Earrings | €30 | +10 Visibility, +5 Charm | "Light up conversations" |
-| Full Body Glow Kit | €80 | +30 Visibility, +20 Style, impossible to lose in crowd | "Nuclear option" |
+| Premium Glow Necklace | 18 Sovs | +10 Visibility, 8-hour duration | "Not the cheap ones" |
+| UV-Reactive Accent Set | 35 Sovs | +15 Visibility under blacklight, +Style | "Only visible when it matters" |
+| LED Ring Set (3) | 40 Sovs | +10 Visibility, +10 Style, rechargeable | "Subtle but effective" |
+| LED Earrings | 30 Sovs | +10 Visibility, +5 Charm | "Light up conversations" |
+| Full Body Glow Kit | 80 Sovs | +30 Visibility, +20 Style, impossible to lose in crowd | "Nuclear option" |
 
 ### Premium Stock (Post-Boss Victory)
 | Item | Price | Effect | Unlock Requirement |
 |------|-------|--------|-------------------|
-| Velvet Rope Clip | €75 | +15 Charm, shop discounts, VIP hints | Defeat Count Velvet Absinthe |
-| "Inner Circle" Shades | €60 | +20 Style, +10 Charm with VIP NPCs | Defeat Count Velvet Absinthe |
-| Shadow Exchange Member Card | €50 | Better rates at Shadow Exchange | Defeat Count Velvet Absinthe |
-| "Recognized" Status Pin | €40 | Bouncers acknowledge you | Defeat Count Velvet Absinthe |
+| Velvet Rope Clip | 75 Sovs | +15 Charm, shop discounts, VIP hints | Defeat Count Velvet Absinthe |
+| "Inner Circle" Shades | 60 Sovs | +20 Style, +10 Charm with VIP NPCs | Defeat Count Velvet Absinthe |
+| Shadow Exchange Member Card | 50 Sovs | Better rates at Shadow Exchange | Defeat Count Velvet Absinthe |
+| "Recognized" Status Pin | 40 Sovs | Bouncers acknowledge you | Defeat Count Velvet Absinthe |
 
 ### The Club Simulation Fitting
 - **Trigger**: Request fitting room
@@ -234,7 +234,7 @@ The boutique exists in the space between practical club gear and aspirational ni
 
 *The Honest Moment (If Pressed):*
 - "Will this get you into VIP? ...the gear helps. But it's not magic. Your energy matters more."
-- "I sell confidence boosters. Some have practical effects. All of them make you FEEL more ready. Is that worth €50? You tell me."
+- "I sell confidence boosters. Some have practical effects. All of them make you FEEL more ready. Is that worth 50 Sovs? You tell me."
 - "The bouncer doesn't care about your shades. But how you FEEL wearing them? That he notices."
 - "I've seen people in full gear get rejected and people in jeans get VIP. The gear is part of it. Not all of it."
 
@@ -284,7 +284,7 @@ The boutique exists in the space between practical club gear and aspirational ni
 - **Function**: Shows the gear doesn't guarantee results
 
 **The Scene Expert (Local)**
-- **Composition**: Actual Prague nightlife regular, shopping for specific items
+- **Composition**: Actual Debaucheryville nightlife regular, shopping for specific items
 - **Behavior**: Knows exactly what they want, no fantasy needed
 - **Dialogue**: "I need the strobe shades, the real ones. Not for looks. For function. Headaches are real."
 - **Function**: Shows practical use vs. status use

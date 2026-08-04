@@ -38,14 +38,14 @@
           "time": 1.5,
           "action": "damage_event",
           "item": "patio_table",
-          "amount_euro": 85,
+          "amount_sov": 85,
           "sfx": "furniture_crash"
         },
         {
           "time": 1.7,
           "action": "damage_event",
           "item": "umbrella_stand",
-          "amount_euro": 15,
+          "amount_sov": 15,
           "sfx": "metal_clatter"
         },
         {
@@ -143,7 +143,7 @@
           "time": 5,
           "action": "damage_event",
           "item": "full_sachertorte",
-          "amount_euro": 85,
+          "amount_sov": 85,
           "sfx": "horse_eating_disturbing"
         },
         {
@@ -206,7 +206,7 @@
           "time": 2.2,
           "action": "damage_event",
           "item": "marble_table_1",
-          "amount_euro": 40,
+          "amount_sov": 40,
           "sfx": "marble_crash"
         },
         {
@@ -248,7 +248,7 @@
           "time": 7.2,
           "action": "damage_event",
           "item": "marble_table_2",
-          "amount_euro": 40,
+          "amount_sov": 40,
           "sfx": "marble_crash"
         },
         {
@@ -267,7 +267,7 @@
           "time": 9.5,
           "action": "damage_event",
           "item": "opera_cake_slice",
-          "amount_euro": 22,
+          "amount_sov": 22,
           "sfx": "quick_bite"
         },
         {
@@ -384,7 +384,7 @@
           "time": 11,
           "action": "dialogue",
           "speaker": "herr_ober",
-          "text": "€340. You will pay this. Now. Or I call the Polizei."
+          "text": "340 Sovs. You will pay this. Now. Or I call the Polizei."
         },
         {
           "time": 14,
@@ -401,11 +401,13 @@
               }
             },
             {
-              "text": "Here's €340 right now.",
+              "text": "Here's 340 Sovs right now.",
               "response_type": "immediate_payment",
-              "requirement": {"euro": 340},
+              "requirement": {"Sov": 340},
               "result": {
                 "debt_cleared": true,
+                "set_flag": {"debt_relief_claimed": true},
+                "flag_note": "Consumed-and-moot. The cafe line is discharged; the 170 Sovs relief has nothing to reduce and does not convert to cash or credit.",
                 "quest_continues": true,
                 "herr_ober_response": "...acceptable. Now GET OUT and catch that horse!"
               }
@@ -416,7 +418,10 @@
               "result": {
                 "triggers": "hans_jurgen_arrives",
                 "debt_split": true,
-                "amount_owed": 170
+                "amount_owed": 170,
+                "set_flag": {"debt_relief_claimed": true},
+                "disables": "hans_jurgen_insurance_170_at_stadtpark",
+                "flag_note": "AUTHORITATIVE: this halving IS the single 170 Sovs relief. It consumes debt_relief_claimed, so Hans-Jurgen's 170 Sovs insurance payout at Stadtpark must NOT also fire. His separate 500 Sovs Path A contribution is unaffected and still stacks."
               }
             }
           ]
@@ -469,13 +474,13 @@
           "action": "ui_update",
           "element": "debt_display",
           "new_value": 170,
-          "note": "Hans-Jürgen's insurance covers €170"
+          "note": "Hans-Jürgen's insurance covers 170 Sovs. This is the single debt relief being consumed here — debt_relief_claimed is now true and the Stadtpark insurance payout is disabled. Do not apply a second 170 Sovs."
         },
         {
           "time": 9,
           "action": "dialogue",
           "speaker": "herr_ober",
-          "text": "€170 from you. €170 from... these Americans. GO. Catch the horse. PAY ME."
+          "text": "170 Sovs from you. 170 Sovs from... these Americans. GO. Catch the horse. PAY ME."
         }
       ]
     },
@@ -528,14 +533,14 @@
           "time": 0.5,
           "action": "dialogue",
           "speaker": "herr_ober",
-          "text": "You. OUT. Until the €[remaining_debt] is paid, you are not welcome."
+          "text": "You. OUT. Until the [remaining_debt] Sovs is paid, you are not welcome."
         },
         {
           "time": 2,
           "action": "dialogue_choice",
           "options": [
             {
-              "text": "Here's €[amount].",
+              "text": "Here's [amount] Sovs.",
               "response_type": "partial_payment",
               "interface": "payment_slider"
             },

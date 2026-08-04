@@ -232,7 +232,7 @@
     "shortcuts_available_after": {
       "underground_passage": {"condition": "10_successful_crossings"},
       "rooftop_route": {"condition": "cargo_cult_quest_complete"},
-      "bike_rental": {"condition": "15_euro_payment"}
+      "bike_rental": {"condition": "15_sov_payment"}
     }
   },
   

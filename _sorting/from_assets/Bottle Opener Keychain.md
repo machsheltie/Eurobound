@@ -6,7 +6,7 @@ Bottle Opener Keychain
     • European bartenders offer better prices and exclusive local brews 
     • Description: "For opening beers with maximum jingling and zero class" 
     • Era Cringe: Jangles loudly with every step, collected from spring break trips to Cancún and Daytona Beach 
-    MUST be purchased in Dublin. Unlocks the Brewery Tour sidequest to discover as 12 breweries, complete the sidequest, and earn achievements and their benefits
+    MUST be purchased in Publandia. Unlocks the Brewery Tour sidequest to discover as 12 breweries, complete the sidequest, and earn achievements and their benefits
 Design Notes:
 THIS is what our aging frat bros would actually carry! A massive keychain loaded with bottle openers from every brewery, bar, and beach town they've ever been blackout drunk in.
 Why This Actually Works:
@@ -28,10 +28,10 @@ Overworld Interactions:
     • Cultural Buffs: In Germany/Czech Republic areas, locals treat you with more respect
 
 Enhanced Overworld Interactions:
-    • Prague: "Ah, you have Pilsner Urquell opener! You understand REAL beer, not American water!" 
+    • Debaucheryville: "Ah, you have Pilsner Urquell opener! You understand REAL beer, not American water!" 
     • Munich: Oktoberfest NPCs treat you like family instead of tourist 
     • Belgium: Trappist monks actually let you into their secret brewery areas 
-    • Dublin: Pub crawl guides offer you the "locals only" route 
+    • Publandia: Pub crawl guides offer you the "locals only" route 
 Plus imagine the party banter:
     • Chadwick: "Bro, remember when we got this one at that sketchy beach bar?" 
     • Bradley: "Dude, that's where you hooked up with that girl with the fake ID!" 

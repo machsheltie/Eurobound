@@ -15,7 +15,7 @@
 
 ### The Setup
 **What the bros THINK is happening:**
-> A noble quest to reunite a traditional Viennese horseman with his noble steed. Like knights of old. Very cultured, very sophisticated. This is the REAL Vienna experience.
+> A noble quest to reunite a traditional Viennese horseman with his noble steed. Like knights of old. Very cultured, very sophisticated. This is the REAL Sinfonia experience.
 
 **What is ACTUALLY happening:**
 > A tourist-trap carriage driver lost his horse because he was drunk. The horse escaped because it was fed up with pulling tourists around. The bros are completely unqualified to catch a horse.
@@ -84,7 +84,7 @@
 
 *They arrive to find Gustav INSIDE the café, eating from patrons' tables*
 
-**MAÎTRE D':** "This horse is eating the Sachertorte! The €18 Sachertorte!"
+**MAÎTRE D':** "This horse is eating the Sachertorte! The WHOLE Sachertorte! The 85 Sovs Sachertorte!"
 
 **Gustav:** *continues eating, makes eye contact, does not care*
 
@@ -105,9 +105,9 @@
 ---
 
 **Chaos Results:**
-- €340 in damages
+- 340 Sovs in damages
 - Café bans all "American horse catchers"
-- Gustav escapes with three Sachertortes
+- Gustav escapes having eaten one whole 85 Sovs Sachertorte, with a 22 Sovs opera cake slice still in his teeth
 
 ---
 
@@ -147,7 +147,7 @@
 
 **Chaos Results:**
 - Bros banned from opera house
-- €2,000 in set damages
+- 2,000 Sovs in set damages
 - Gustav now has a cape (stole it from costume department)
 
 ---
@@ -238,7 +238,7 @@
 **Rewards - Path A:**
 - **"Horse Whisperer" Title** - Ability to calm hostile animals
 - **Free Fiaker Ride** - Gustav clearly judging the bros the entire time
-- **€50 reward** from Hans-Jürgen (Hans-Jürgen only had €50)
+- **50 Sovs reward** from Hans-Jürgen (Hans-Jürgen only had 50 Sovs)
 - **"Gustav's Respect" hidden buff** - Gustav appears in final boss, kicks enemy
 - **Café/Opera still banned**
 
@@ -335,6 +335,88 @@
 - **No money** - Hans-Jürgen spent it on schnapps
 - **"At Least You Tried" Title**
 - **Gustav occasionally appears** - Still free, living his best life, judging the bros
+
+---
+
+## 💶 Damage Debt Resolution — Authoritative
+
+**This block is the single source of truth for every Sov figure in the Fiaker Fiasco economy. Where any other file disagrees, this block wins and that file is stale.** Files that express parts of this economy — `Design/World Design/Sinfonia/cafe_sachertorte.md`, `stadtpark_gustavs_refuge.md`, `bassline_opera_house.md`, `opera_house_plaza.md`, the matching `*_core.json` / `*_items.json` / `*_events.json`, and `npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md` — must defer to it rather than restate it independently.
+
+### 1. Base damage (before any relief)
+
+| Component | Maximum | Reduced | How it reduces |
+|-----------|---------|---------|----------------|
+| Opera House Plaza | 0 Sovs | 0 Sovs | No damage occurs here |
+| Café Sachertorte | 340 Sovs | 340 Sovs | **Fixed. The café line itself never shrinks** — see relief below |
+| Opera Backstage (Magic Flute set) | 2,000 Sovs | 1,600 Sovs | Papageno ally path avoids the backdrop tear, −400 Sovs |
+| Prima Donna compensation | 500 Sovs | 200 Sovs (Charm 4) or 0 Sovs (avoided) | Negotiation, or never triggering her demand |
+| **Base total — worst case** | **2,840 Sovs** | | Everything goes wrong |
+| **Base total — best case** | **1,940 Sovs** | | Papageno path + Prima Donna avoided entirely |
+
+*(If the Prima Donna is negotiated down rather than avoided, the best-case base is 2,140 Sovs.)*
+
+### 2. Relief — there are exactly two pots, and they are not the same pot
+
+#### Pot 1: The 170 Sovs café relief — **claimed once, ever**
+
+**AUTHOR RULING: the Hans-Jürgen insurance payout and the dialogue-option-3 halving are the same 170 Sovs relief and are MUTUALLY EXCLUSIVE.** They are two fictional explanations for one mechanical reduction of the 340 Sovs café bill. They may never both apply.
+
+| Trigger | Where | When | Fiction |
+|---------|-------|------|---------|
+| **(a)** Dialogue option 3, *"That horse doesn't belong to us!"* | Café Sachertorte, Stage 1 | At the moment of the rampage | Hans-Jürgen arrives, admits ownership, the 340 Sovs splits — the party owes 170 Sovs |
+| **(b)** Hans-Jürgen's Fiaker insurance payout | Stadtpark, resolution | Path A only | His carriage policy pays 170 Sovs against the café bill |
+
+**State flag: `debt_relief_claimed` (bool, default `false`).**
+- Whichever trigger fires **first** applies −170 Sovs and sets `debt_relief_claimed = true`.
+- Once the flag is set, the other trigger is **disabled** — greyed out in the payment UI, and its dialogue line is not offered. It must not apply a second 170 Sovs.
+- Because (a) can only fire in Stage 1 and (b) can only fire at the Stadtpark resolution, **(a) always wins when the player takes it.** (b) is the fallback for players who did not.
+- **Edge case — café paid in full at Stage 1** (dialogue option 2, "Here's 340 Sovs right now"): the café line is discharged, there is nothing left to reduce. Set `debt_relief_claimed = true` as consumed-and-moot. The insurance does **not** convert to cash, a refund, or credit against the opera debt.
+- Relief can never drive the café line, or the running total, below 0 Sovs.
+
+#### Pot 2: Hans-Jürgen's Path A contribution — **500 Sovs, separate, DOES stack**
+
+**State flag: `hans_jurgen_path_a_contribution` (bool, default `false`).**
+- Path A only (Gustav returns to service). 0 Sovs on Paths B, C and D.
+- Applies against the **accumulated total**, not the café line.
+- **Stacks with the 170 Sovs relief.** A Path A player who took café dialogue option 3 receives both: −170 Sovs and −500 Sovs.
+- Sometimes flavoured as "insurance" in his dialogue. **It is not the same pot as the 170 Sovs café insurance payout.** Do not merge them; do not let one disable the other.
+
+#### Separately: Director Hoffmann negotiation (unchanged)
+
+Only if Director Hoffmann pursues the party to Stadtpark (debt unaddressed at the Opera House). One stat check, not both: **Charm 4 → −500 Sovs** or **Bravado 4 → −300 Sovs**, against the opera line.
+
+### 3. Penalties
+
+| Path | Adjustment |
+|------|-----------|
+| Path C — Gustav escapes forever | **+1,000 Sovs** (horse value added) |
+| Path D — bros bail | **+500 Sovs** abandonment fee |
+
+### 4. Resulting player-owed figures
+
+Excluding the Director negotiation. "Relief" = the single 170 Sovs.
+
+| Path | Base | Relief claimed | Path A 500 Sovs | **Player owes** |
+|------|------|----------------|-------------|-----------------|
+| **A** — Gustav returns, worst case | 2,840 Sovs | −170 Sovs | −500 Sovs | **2,170 Sovs** |
+| **A** — Gustav returns, best case | 1,940 Sovs | −170 Sovs | −500 Sovs | **1,270 Sovs** |
+| **B** — Gustav retires, worst case | 2,840 Sovs | −170 Sovs | — | **2,670 Sovs** |
+| **B** — Gustav retires, best case | 1,940 Sovs | −170 Sovs | — | **1,770 Sovs** |
+| **C** — Gustav escapes, worst case | 2,840 Sovs + 1,000 Sovs | −170 Sovs | — | **3,670 Sovs** |
+| **C** — Gustav escapes, best case | 1,940 Sovs + 1,000 Sovs | −170 Sovs | — | **2,770 Sovs** |
+| **D** — bros bail, worst case | 2,840 Sovs + 500 Sovs | −170 Sovs | — | **3,170 Sovs** |
+| **D** — bros bail, best case | 1,940 Sovs + 500 Sovs | −170 Sovs | — | **2,270 Sovs** |
+
+If the 170 Sovs relief is never claimed (player took dialogue option 1 and finished on Path B, C or D), add 170 Sovs back to the figures above.
+
+**Absolute floor:** Path A + Papageno + Prima Donna avoided + 170 Sovs relief + 500 Sovs contribution + Charm 4 Director negotiation = **770 Sovs**. This requires the Director to be present, which requires the opera debt to have gone unaddressed — so it is reachable but deliberately awkward.
+
+### 5. Implementation notes
+
+- Running total key: `fiaker_fiasco_damage_sov`. All locations write into it; none of them own it.
+- Both relief flags are **quest-scoped and one-way**. Nothing in the game clears `debt_relief_claimed` back to `false`.
+- Installments (500 Sovs minimum at Stadtpark, 50 Sovs minimum at the café) draw down the post-relief figure. They are payment, not relief, and do not touch either flag.
+- Sinfonia vendors read the post-relief outstanding balance for their hostility and pricing checks.
 
 ---
 
@@ -462,6 +544,56 @@
 
 **THE PUNCHLINE:**
 > *Text on screen:* "Lord Pilsner visits Gustav every year. Gustav pretends not to recognize him. Lord Pilsner cries every time."
+
+---
+
+## 🐴 Canon Note: Why the Horse Is Called Klaus
+
+**Author ruling — the name collision with König Klaus (Crown & Cask) is deliberate, not an accident.**
+
+Hans-Jürgen named the colt after König Klaus as a **deliberate insult**. As a yearling the horse was, by every account, a naughty little asshole — he bit, he kicked over the water trough on purpose, he escaped constantly and looked pleased about it. Naming him after the self-styled royal brewmaster was Hans-Jürgen's way of saying exactly what he thought of the man, in public, in a way nobody could prove was an insult.
+
+The joke aged badly for Hans-Jürgen and beautifully for the horse. Klaus grew out of it. These days he is spoken of with genuine affection around the Fiaker stands and, increasingly, in the phrasing that has become the actual running gag:
+
+> "Klaus? Ja, good horse. Steady. Honest." *(beat)* "Better than the other one."
+
+Nobody ever specifies which other one. Everybody knows.
+
+**Writing rules:**
+- Never explain the joke on-screen. The insult origin is background canon; NPCs only ever deliver the deadpan comparison.
+- Locals compare Klaus favourably to König Klaus roughly once per Sinfonia visit, always in passing, never as a bit.
+- König Klaus himself is aware and has never once acknowledged it. If a bro asks him directly, he changes the subject to brewing.
+- Klaus the horse and König Klaus must never appear in the same scene — the ambiguity is the joke, and resolving it kills it.
+- Klaus the horse keeps his name permanently; this is the documented exception to the one-name-one-character rule.
+
+### 🥚 EASTER EGG: The Stall Nameplate
+
+**The single on-screen payoff of the entire joke. Implemented at Stadtpark Gustav's Refuge (post-game / epilogue state) — see `Design/World Design/Sinfonia/stadtpark_gustavs_refuge.md`.**
+
+Two retired horses, two stalls, two brass nameplates on the stall doors.
+
+| Stall | Nameplate reads |
+|-------|-----------------|
+| Left | `GUSTAV` |
+| Right | `KING KLAUS` |
+
+Hans-Jürgen did not stop at naming the horse. He paid an engraver for a proper brass plate, in English, with the title included — so that anyone who ever visits the stable will read it, and so that it can never be dismissed as a coincidence. It is the most expensive insult he has ever committed, and he considers it money well spent.
+
+**Examine text (the whole gag, delivered flat):**
+> A brass nameplate, polished to a shine. Someone maintains this.
+>
+> It reads: **KING KLAUS**.
+>
+> The horse regards you with the serene confidence of a monarch who has never once been challenged.
+
+**The setup layer:** the player is prepared for this without ever being told. Sinfonia townspeople sing one-line jingles in passing — floating `♪ ... ♪` text, no interaction required — about a monarch who taxes heavily, hoards gold, and does no work. **The jingles never name him.** By the time the player reaches this stall, a listening player has absorbed the sentiment without a single line of exposition, and the plate detonates it. Full system spec: `Design/World Design/Sinfonia/sinfonia_royal_jingles.md`.
+
+**Rules for the egg:**
+- **No narrator commentary. No bro reaction. No follow-up dialogue.** The plate is the punchline; anything after it is explaining the joke.
+- The plate must be *polished* — the detail that someone still maintains it is what makes it deliberate rather than forgotten.
+- Gustav's plate stays plain `GUSTAV`. The contrast carries it.
+- Do NOT gate the egg behind knowing König Klaus exists. Players who never visited Crown & Cask read it as a horse with a grand name — still funny. Players who did get the real joke. Both readings must work.
+- If the player examines it a second time, the text is identical. No escalation, no wink.
 
 ---
 

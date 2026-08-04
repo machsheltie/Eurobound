@@ -105,9 +105,9 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 ### Leather & Jackets:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Faux Leather Jacket | (0, 0) | 48x48 | €40 budget transformation |
-| Genuine Leather Jacket | (48, 0) | 48x48 | €120 — the real deal |
-| Studded Leather Jacket | (96, 0) | 48x48 | €150 maximum statement |
+| Faux Leather Jacket | (0, 0) | 48x48 | 40 Sovs budget transformation |
+| Genuine Leather Jacket | (48, 0) | 48x48 | 120 Sovs — the real deal |
+| Studded Leather Jacket | (96, 0) | 48x48 | 150 Sovs maximum statement |
 | Vintage Biker Jacket | (144, 0) | 48x48 | Has history (or looks like it) |
 | Soft Leather Jacket | (192, 0) | 48x48 | Best of both worlds — the soft section's crown |
 
@@ -118,7 +118,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 | Band T-Shirt (Classic) | (48, 48) | 48x48 | Conversation starter |
 | Band T-Shirt (Obscure) | (96, 48) | 48x48 | Test who's real — gatekeepers exist |
 | Comfortable Black Jeans | (144, 48) | 48x48 | Looking cool without suffering |
-| Band Patch Set | (192, 48) | 64x32 | Allegiance collection, €5-15 each |
+| Band Patch Set | (192, 48) | 64x32 | Allegiance collection, 5 Sovs-15 each |
 
 ### Footwear:
 | Element | Position | Size | Description |
@@ -428,7 +428,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 | Low | Static lighting per profile, static mannequins, instant equip swaps, 2 customers, no morning event |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location profile performance budget)
+- **Target FPS:** 60 (per location profile performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 34 MB maximum
 - **Particle Limit:** 12 (dust + glints combined)
@@ -602,7 +602,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 | Seedy Underbelly Present | ✅ | Selling "the them they want to be" at markup, 24 hours a day, to the freshly heartbroken |
 | Gameplay Value Established | ✅ | Primary equipment vendor: Defense stats, Cool Factor economy, mirror system, transformation mechanics, Bravado hooks |
 | Technical Feasibility | ✅ | 8 sheets, viewport mirror, modulate lighting, flag-based equipment — standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 45 FPS / 14 draw calls / 34 MB per profile; estimate ~17 MB |
+| Mobile Performance Budget | ✅ | 60 FPS / 14 draw calls / 34 MB per profile; estimate ~17 MB |
 | Accessibility Features | ✅ | Dark-shop hotspot outlines, flash-free mirror path, glyphs for every audio beat |
 | No Crypto Elements | ✅ | Pure leather and chain commerce (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

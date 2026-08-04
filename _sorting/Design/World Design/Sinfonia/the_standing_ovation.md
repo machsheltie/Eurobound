@@ -124,12 +124,12 @@ The crowd is supportive but has STANDARDS.
 ### Signature Beer
 
 **Curtain Call Copper**
-- **Style**: Vienna-style copper lager with dramatic finish
+- **Style**: Sinfonian copper lager with dramatic finish
 - **ABV**: 5.8%
 - **Color**: Deep copper with ruby highlights
 - **Stats**: +25 HP, +10 SP
 - **Effect**: "Stage Presence" (+3 Charm for 30 minutes)
-- **Price**: €8
+- **Price**: 8 Sovs
 - **Flavor Text**: "Aged in barrels from the old opera house. Some say you can taste the ambition. Others say that's just the hops."
 - **Brewed By**: The Standing Ovation (on-site, with ceremony)
 - **Special**: Served with a small bow, always
@@ -137,18 +137,18 @@ The crowd is supportive but has STANDARDS.
 **Menu Drinks** (Non-Signature):
 | Beer | Price | Effect | Served With |
 |------|-------|--------|-------------|
-| Opening Night Ale | €5 | +15 HP | Dramatic pause |
-| The Understudy | €4 | +10 HP | Apologetic shrug |
-| Critics' Choice | €7 | +20 HP, +5 SP | Knowing nod |
-| The Encore | €10 | +30 HP | Standing ovation (from staff) |
-| Intermission IPA | €6 | +15 SP | Bell warning |
+| Opening Night Ale | 5 Sovs | +15 HP | Dramatic pause |
+| The Understudy | 4 Sovs | +10 HP | Apologetic shrug |
+| Critics' Choice | 7 Sovs | +20 HP, +5 SP | Knowing nod |
+| The Encore | 10 Sovs | +30 HP | Standing ovation (from staff) |
+| Intermission IPA | 6 Sovs | +15 SP | Bell warning |
 
 ### Bottle Opener — The Standing Ovation
 
 - **Design**: Comedy/tragedy theater masks with bottle opener integrated into the ribbon connecting them
 - **Material**: Polished brass with crimson enamel accents
 - **Inscription**: "Bravo!"
-- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for €25
+- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for 25 Sovs
 - **Special Feature**: Makes a tiny "applause" click sound when used
 
 **Standing Ovation Challenge** (for free opener):
@@ -275,28 +275,40 @@ The crowd is supportive but has STANDARDS.
 
 ## PNG Asset Requirements Summary
 
-### Environment Art (6 PNGs)
-- exterior_marquee.png - 512x384 - Theater-style entrance
-- orchestra_pit_bar.png - 640x512 - Main bar as stage
-- balcony_seating.png - 384x256 - Critic observation area
-- green_room.png - 256x256 - Brewery/stamp area
-- spotlight_effect.png - 128x128 - Overlay for performances
-- velvet_curtain.png - 256x512 - Exit decoration
+> **Authority: `PNG_Assets/The_Standing_Ovation_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
-### Character Sprites (5 PNGs)
-- herr_dramatisch.png - 64x96 - Brewmaster (cape and all)
-- herr_dramatisch_stamping.png - 64x96 - Dramatic stamp pose
-- house_critic.png - 64x96 - Balcony judge
-- stagehand_bartender.png - 64x96 - Server in black
-- applauding_patron.png - 64x96 - Background reaction
+### Required PNG Files (7 sheets)
 
-### UI/Item Sprites (6 PNGs)
-- curtain_call_copper.png - 32x64 - Signature beer
-- stamp_standing_ovation.png - 64x64 - Theater masks with steins
-- toast_performance_ui.png - 256x128 - Mini-game interface
-- applause_meter.png - 128x32 - Crowd reaction gauge
-- encore_buff_icon.png - 32x32 - Status effect
-- booed_off_icon.png - 32x32 - Failure status
+| # | Filename | Dimensions |
+|---|----------|------------|
+| 1 | the_standing_ovation_exterior.png | 1024x512 |
+| 2 | the_standing_ovation_tileset.png | 1024x1024 |
+| 3 | herr_dramatisch.png | 512x512 |
+| 4 | the_standing_ovation_npcs.png | 512x512 |
+| 5 | the_standing_ovation_items.png | 512x256 |
+| 6 | the_standing_ovation_effects.png | 512x512 |
+| 7 | the_standing_ovation_ui.png | 512x256 |
+
+### Names retired from this summary (do not request these files)
+
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/The_Standing_Ovation_PNG_Assets.md`.
+
+- `exterior_marquee.png`
+- `orchestra_pit_bar.png`
+- `balcony_seating.png`
+- `green_room.png`
+- `spotlight_effect.png`
+- `velvet_curtain.png`
+- `herr_dramatisch_stamping.png`
+- `house_critic.png`
+- `stagehand_bartender.png`
+- `applauding_patron.png`
+- `curtain_call_copper.png`
+- `stamp_standing_ovation.png`
+- `toast_performance_ui.png`
+- `applause_meter.png`
+- `encore_buff_icon.png`
+- `booed_off_icon.png`
 
 ---
 

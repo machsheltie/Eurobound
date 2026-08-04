@@ -1,7 +1,7 @@
 # Schrödinger's Souvenir - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Schrödinger's Souvenir sells products that are completely legal in Shamsterdam, probably fine to buy, definitely confusing to understand, and variably legal to bring home. This document specifies every PNG asset for the shop: the green professional storefront and its quantum cat mascot, the four legality zones running front-to-back from Definitely to Schrödinger, the education corner nobody reads, the seed display and its polite fiction, Daan and Yuki dispensing maximum information with minimum liability, and the customs checkpoint where the wavefunction finally collapses. Its satirical essence in a sentence: everyone knows exactly what is happening, and nobody is going to say it out loud.
+Schrödinger's Souvenir sells products that are completely legal in Shamsterdam, probably fine to buy, definitely confusing to understand, and variably legal to bring home. This document specifies every PNG asset for the shop: the green professional storefront and its quantum cat mascot, the four legality zones running front-to-back from Definitely to Schrödinger, the education corner nobody reads, the seed display and its polite fiction, Ruben and Yuki dispensing maximum information with minimum liability, and the customs checkpoint where the wavefunction finally collapses. Its satirical essence in a sentence: everyone knows exactly what is happening, and nobody is going to say it out loud.
 
 **Location ID:** `shamsterdam_tourist_schrodingers_souvenir_01`
 **Theme:** Legal gray-zone commerce — selling ambiguity at markup while remaining scrupulously, exhaustingly, technically correct
@@ -32,7 +32,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 ├── objects/
 │   └── schrodingers_products.png
 ├── npcs/
-│   ├── npc_daan_yuki.png
+│   ├── npc_ruben_yuki.png
 │   └── npc_schrodingers_customers.png
 ├── effects/
 │   └── schrodingers_effects.png
@@ -132,27 +132,27 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 ### Larger Products:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Hemp Tote Bag | (0, 0) | 48x48 | €15 — actually just a bag |
-| Hemp Protein Powder | (48, 0) | 48x48 | €35 — actual nutrition product |
-| Space Cake Mix | (96, 0) | 48x48 | €20 — "Just add... nothing illegal" |
-| CBD Oil 5% | (144, 0) | 32x48 | €30 — "Check your local laws" |
-| CBD Oil 15% | (176, 0) | 32x48 | €55 — "Seriously, check them" |
+| Hemp Tote Bag | (0, 0) | 48x48 | 15 Sovs — actually just a bag |
+| Hemp Protein Powder | (48, 0) | 48x48 | 35 Sovs — actual nutrition product |
+| Space Cake Mix | (96, 0) | 48x48 | 20 Sovs — "Just add... nothing illegal" |
+| CBD Oil 5% | (144, 0) | 32x48 | 30 Sovs — "Check your local laws" |
+| CBD Oil 15% | (176, 0) | 32x48 | 55 Sovs — "Seriously, check them" |
 | CBD Skincare Jar | (208, 0) | 32x48 | Zone 1, no THC claims, entirely uncomplicated |
-| Souvenir Seed Pack | (240, 0) | 48x48 | €40 — HIGH export risk, *not for germination |
-| Premium Strain Seeds | (288, 0) | 48x48 | €65 — VERY HIGH export risk, *definitely not for germination |
+| Souvenir Seed Pack | (240, 0) | 48x48 | 40 Sovs — HIGH export risk, *not for germination |
+| Premium Strain Seeds | (288, 0) | 48x48 | 65 Sovs — VERY HIGH export risk, *definitely not for germination |
 | Hemp Rope Coil | (336, 0) | 48x48 | Cannabis-free cannabis plant, sold by the metre |
-| Leaf Novelty Set | (384, 0) | 48x48 | €10-30 — declaring your tourist status in advance |
+| Leaf Novelty Set | (384, 0) | 48x48 | 10 Sovs-30 — declaring your tourist status in advance |
 | Hemp Clothing (Folded) | (432, 0) | 48x48 | Zone 1, fibre only, no cannabinoids, genuinely fine |
 | Reserve | (480, 0) | 32x48 | Reserved cell, do not paint |
 
 ### Small Products & Packaging:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| CBD Gummies | (0, 48) | 32x32 | €25 — "Some countries are weird about gummies" |
-| "Tobacco" Grinder | (32, 48) | 32x32 | €20 — for tobacco. Obviously. |
-| "Tobacco" Pipe | (64, 48) | 48x32 | €25 — design-dependent risk |
-| Rolling Papers (Branded) | (112, 48) | 32x32 | €8 — paper is legal everywhere |
-| Hemp Rope Bracelet | (144, 48) | 32x32 | €12 — definitely fine |
+| CBD Gummies | (0, 48) | 32x32 | 25 Sovs — "Some countries are weird about gummies" |
+| "Tobacco" Grinder | (32, 48) | 32x32 | 20 Sovs — for tobacco. Obviously. |
+| "Tobacco" Pipe | (64, 48) | 48x32 | 25 Sovs — design-dependent risk |
+| Rolling Papers (Branded) | (112, 48) | 32x32 | 8 Sovs — paper is legal everywhere |
+| Hemp Rope Bracelet | (144, 48) | 32x32 | 12 Sovs — definitely fine |
 | Hemp Snack Bar | (176, 48) | 32x32 | Zone 2, medium certainty |
 | Suspicious Souvenir Tag | (208, 48) | 32x32 | 24x24 art centred in cell — the inventory marker |
 | Sealed Shop Bag | (240, 48) | 48x32 | Discreet packaging, offered without comment |
@@ -205,32 +205,32 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 
 ---
 
-## 🧑‍💼 Sprite Sheet 4: Daan & Yuki
-**File:** `npc_daan_yuki.png`
+## 🧑‍💼 Sprite Sheet 4: Ruben & Yuki
+**File:** `npc_ruben_yuki.png`
 **Dimensions:** 512x512 pixels
 **Sprite Size:** 64x96 per character frame; 128x128 per portrait
 **Color Palette:** #228B22 staff shirts, #FAFAF5, #808080
 
-### Manager Daan — Qualification Specialist:
+### Manager Ruben — Qualification Specialist:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Daan Idle | (0, 0) | 64x96 | 30s Dutch, professional casual, hemp shirt (of course), reassuring |
-| Daan Welcome Gesture | (64, 0) | 64x96 | "Everything here is legal in Shamsterdam." |
-| Daan Explaining Frame 1 | (128, 0) | 64x96 | Open palms, information beginning |
-| Daan Explaining Frame 2 | (192, 0) | 64x96 | One qualifier introduced |
-| Daan Explaining Frame 3 | (256, 0) | 64x96 | Three more qualifiers introduced |
-| Daan Destination Query | (320, 0) | 64x96 | "Where are you travelling to?" — the pivot |
-| Daan Careful Hedge | (384, 0) | 64x96 | The Daan Method: maximum information, minimum responsibility |
-| Daan "I cannot answer that question." | (448, 0) | 64x96 | Delivered warmly. Delivered finally. |
+| Ruben Idle | (0, 0) | 64x96 | 30s Dutch, professional casual, hemp shirt (of course), reassuring |
+| Ruben Welcome Gesture | (64, 0) | 64x96 | "Everything here is legal in Shamsterdam." |
+| Ruben Explaining Frame 1 | (128, 0) | 64x96 | Open palms, information beginning |
+| Ruben Explaining Frame 2 | (192, 0) | 64x96 | One qualifier introduced |
+| Ruben Explaining Frame 3 | (256, 0) | 64x96 | Three more qualifiers introduced |
+| Ruben Destination Query | (320, 0) | 64x96 | "Where are you travelling to?" — the pivot |
+| Ruben Careful Hedge | (384, 0) | 64x96 | The Ruben Method: maximum information, minimum responsibility |
+| Ruben "I cannot answer that question." | (448, 0) | 64x96 | Delivered warmly. Delivered finally. |
 
-### Daan — Transaction & Philosophy:
+### Ruben — Transaction & Philosophy:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Daan Seed Disclaimer Recital | (0, 96) | 64x96 | Word-perfect, seven hundredth time this month |
-| Daan Schrödinger Philosophy | (64, 96) | 64x96 | "Until observed, everything is fine." |
-| Daan Pointing at Zone Signs | (128, 96) | 64x96 | Directional; the signs do the liability work |
-| Daan Ringing Up Sale | (192, 96) | 64x96 | Transaction completes. Everyone understood. |
-| Daan Sealing the Bag | (256, 96) | 64x96 | Discreet packaging, no comment |
+| Ruben Seed Disclaimer Recital | (0, 96) | 64x96 | Word-perfect, seven hundredth time this month |
+| Ruben Schrödinger Philosophy | (64, 96) | 64x96 | "Until observed, everything is fine." |
+| Ruben Pointing at Zone Signs | (128, 96) | 64x96 | Directional; the signs do the liability work |
+| Ruben Ringing Up Sale | (192, 96) | 64x96 | Transaction completes. Everyone understood. |
+| Ruben Sealing the Bag | (256, 96) | 64x96 | Discreet packaging, no comment |
 | Yuki Idle | (320, 96) | 64x96 | 20s Dutch-Japanese, knowledgeable, patient |
 | Yuki Demonstrating Frame 1 | (384, 96) | 64x96 | Product raised, label forward |
 | Yuki Demonstrating Frame 2 | (448, 96) | 64x96 | Label indicated, lab figure cited |
@@ -238,7 +238,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 ### Portraits & Extras:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Daan Portrait (Dialogue) | (0, 192) | 128x128 | Friendly, informative, carefully non-liable |
+| Ruben Portrait (Dialogue) | (0, 192) | 128x128 | Friendly, informative, carefully non-liable |
 | Yuki Portrait (Dialogue) | (128, 192) | 128x128 | Genuinely trying to inform, within limits |
 | Quantum Cat Portrait | (256, 192) | 128x128 | Mascot speaker frame for the shop's philosophy lines |
 | Yuki Lab-Test Explanation | (384, 192) | 64x96 | "Lab-tested, certified CBD content." |
@@ -252,23 +252,23 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Yuki Handing Product | (64, 320) | 64x96 | Two-handed, Dutch-Japanese hybrid courtesy |
 | Yuki "It's just hemp fibre" | (128, 320) | 64x96 | "That one's actually simple." |
 | Yuki Seeds Explanation | (192, 320) | 64x96 | "They're just seeds. Until they're not just seeds anymore." |
-| Daan High-Contrast Silhouette | (256, 320) | 64x96 | Accessibility outline variant |
+| Ruben High-Contrast Silhouette | (256, 320) | 64x96 | Accessibility outline variant |
 | Yuki High-Contrast Silhouette | (320, 320) | 64x96 | Accessibility outline variant |
-| Daan Reassuring Shrug | (384, 320) | 64x96 | "I'm not saying don't buy it." |
-| Daan Hemp Shirt Detail Frame | (448, 320) | 64x96 | Close crop; the shirt is the uniform and the joke |
+| Ruben Reassuring Shrug | (384, 320) | 64x96 | "I'm not saying don't buy it." |
+| Ruben Hemp Shirt Detail Frame | (448, 320) | 64x96 | Close crop; the shirt is the uniform and the joke |
 
 ### Counter & Utility:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Staff Counter Pose (Daan) | (0, 416) | 64x96 | Behind-register anchor pose |
+| Staff Counter Pose (Ruben) | (0, 416) | 64x96 | Behind-register anchor pose |
 | Staff Counter Pose (Yuki) | (64, 416) | 64x96 | Floor-station anchor pose |
-| Daan Customs Warning | (128, 416) | 64x96 | "I can't predict customs." |
+| Ruben Customs Warning | (128, 416) | 64x96 | "I can't predict customs." |
 | Yuki Dosage Question Answer | (192, 416) | 64x96 | For the CBD Wellness Convert branch |
 | Accessibility Reserve Block | (256, 416) | 256x96 | Reserved for high-contrast/audio-cue glyph overflow |
 
 ### Technical Notes:
-- Daan's three Explaining frames escalate qualifier density visibly through hand position; the animation is the joke, not the dialogue
-- Daan and Yuki never appear worried, evasive, or shifty in any frame — the entire satire collapses if the staff read as dishonest. They are being scrupulously truthful and it is not helping.
+- Ruben's three Explaining frames escalate qualifier density visibly through hand position; the animation is the joke, not the dialogue
+- Ruben and Yuki never appear worried, evasive, or shifty in any frame — the entire satire collapses if the staff read as dishonest. They are being scrupulously truthful and it is not helping.
 - Quantum Cat Portrait is used for the shop's philosophy lines so the mascot can say what the staff legally cannot
 
 ---
@@ -435,7 +435,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 
 ### The "Is This Legal?" Loop (Sheets 4, 6, 7):
 - **Duration:** 5.0 seconds (1.0s NL status, 1.0s destination query, 1.5s hedge, 1.0s deflection, 0.5s purchase anyway)
-- **Frames:** 3 Daan Explaining frames + Destination Query + Careful Hedge + register glow
+- **Frames:** 3 Ruben Explaining frames + Destination Query + Careful Hedge + register glow
 - **Pattern:** Play once per product legality inquiry; identical structure every time, which is the joke
 - **Trigger:** Player asks about any product's legality
 - **Purpose:** Maximum information, minimum responsibility, delivered with total sincerity
@@ -444,7 +444,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 
 ### The Seed Purchase Ritual (Sheets 3, 4, 6, 7):
 - **Duration:** 6.0 seconds (7 steps auto-advancing at ~0.85s each)
-- **Frames:** Daan Seed Disclaimer Recital + disclaimer document sheen + checkbox tick + seal tape
+- **Frames:** Ruben Seed Disclaimer Recital + disclaimer document sheen + checkbox tick + seal tape
 - **Pattern:** One-shot ceremony per seed purchase
 - **Trigger:** Any seed pack added to cart
 - **Purpose:** The polite fiction, performed in full, by both parties, without irony being acknowledged
@@ -505,7 +505,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 |---------|----------|------|-------------|
 | High-Contrast Counter Marker | Sheet 7 (320, 448) | 96x64 | Bold outline for the checkout and seed-cabinet interaction points |
 | Zone Silhouette Set | Sheet 7 (416, 448) | 96x64 | Four zones as bold stepped silhouettes with text labels |
-| Daan High-Contrast Silhouette | Sheet 4 (256, 320) | 64x96 | Enhanced-visibility outline of the primary interaction NPC |
+| Ruben High-Contrast Silhouette | Sheet 4 (256, 320) | 64x96 | Enhanced-visibility outline of the primary interaction NPC |
 | Yuki High-Contrast Silhouette | Sheet 4 (320, 320) | 64x96 | Enhanced-visibility outline of the secondary interaction NPC |
 | Accessibility Reserve Block | Sheet 4 (256, 416) | 256x96 | Overflow space for additional high-contrast variants |
 
@@ -551,7 +551,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | schrodingers_environment | schrodingers_exterior_zones | 1024x1024 |
-| schrodingers_characters | npc_daan_yuki, npc_schrodingers_customers | 1024x1024 |
+| schrodingers_characters | npc_ruben_yuki, npc_schrodingers_customers | 1024x1024 |
 | schrodingers_fx_ui | schrodingers_products, schrodingers_effects, schrodingers_ui | 1024x1024 |
 
 *(schrodingers_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for mobile GPU compatibility.)*
@@ -564,7 +564,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Low | Single global grade (profile requirement: simplified product displays, static education graphics), static cat, static shimmer, Instant Collapse Plate |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 32 MB maximum
 - **Particle Limit:** 10 (leaf motif drift, anxiety droplets, collapse motes)
@@ -581,14 +581,14 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
-- Node types: Sprite2D (interior background, zone blocks, fixtures), AnimatedSprite2D (Daan, Yuki, quantum cat, collapse), CPUParticles2D (leaf drift, collapse motes — not GPU), CanvasLayer (legality UI, seed ritual, customs panel), Area2D (four zone triggers, education corner, checkout, seed cabinet)
-- Special systems: destination-country variable set at first Daan interaction and persisted globally, per-product three-jurisdiction legality lookup table, Suspicious Souvenir inventory tag with export-risk weighting, seven-step Seed Purchase Ritual state machine with acknowledgment gate, Customs Checkpoint probability roll per tagged item category, zone-grade shader parameter driven by player X position, Schrödinger achievement track flags
+- Node types: Sprite2D (interior background, zone blocks, fixtures), AnimatedSprite2D (Ruben, Yuki, quantum cat, collapse), CPUParticles2D (leaf drift, collapse motes — not GPU), CanvasLayer (legality UI, seed ritual, customs panel), Area2D (four zone triggers, education corner, checkout, seed cabinet)
+- Special systems: destination-country variable set at first Ruben interaction and persisted globally, per-product three-jurisdiction legality lookup table, Suspicious Souvenir inventory tag with export-risk weighting, seven-step Seed Purchase Ritual state machine with acknowledgment gate, Customs Checkpoint probability roll per tagged item category, zone-grade shader parameter driven by player X position, Schrödinger achievement track flags
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
 |----------------|-----------|--------|
-| Daan Explaining frames | Qualified-answer cue, one per qualifier | 1.0s / 2.0s of the legality loop |
-| Daan deflection frame | "Research is key" line | 3.5s of the legality loop |
+| Ruben Explaining frames | Qualified-answer cue, one per qualifier | 1.0s / 2.0s of the legality loop |
+| Ruben deflection frame | "Research is key" line | 3.5s of the legality loop |
 | Disclaimer document sheen | Rising legal-document energy | 0.0-4.0s of the seed ritual |
 | Collector Agreement tick | Single soft click | 4.2s of the seed ritual |
 | Seal tape application | Tape pull | 5.4s of the seed ritual |
@@ -602,9 +602,9 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | The Schrödinger Achievement Track | Badges strip, Observed badge, Suspicious tag, Quantum Box states | Lawyer / Experimenter / Collector / Unobserved / Observed, resolved at the checkpoint |
-| The Seed Purchase Ritual | Ritual panel, Daan Disclaimer Recital, agreement checkbox, seed packet front/back | Seven steps; the fiction is completed by both parties in full |
+| The Seed Purchase Ritual | Ritual panel, Ruben Disclaimer Recital, agreement checkbox, seed packet front/back | Seven steps; the fiction is completed by both parties in full |
 | The Customs Encounter | Customs Checkpoint fixture, agent frames, scanner sweep, collapse frames, encounter UI | Per-item probability roll; seeds are the only 50/50 in the game's inventory |
-| "Is This Legal?" (Repeatable) | Legality panel, status card, certainty meter, Daan Explaining frames | Repeatable per product; the destination country set here changes every downstream risk value |
+| "Is This Legal?" (Repeatable) | Legality panel, status card, certainty meter, Ruben Explaining frames | Repeatable per product; the destination country set here changes every downstream risk value |
 | Cultural Alibi (shared) | Sealed shop bag, receipt with disclaimer | The bag is not a museum bag; different NPCs read it differently |
 
 ### Cross-Location Dependencies:
@@ -634,8 +634,8 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - The disclaimer board is mounted directly above the register — maximum visibility, minimum readership, total liability coverage
 
 ### Character Integration Notes:
-- Daan and Yuki must never read as evasive; they are the most honest people in the location and it is making everything worse
-- Daan's frames escalate in hand-gesture complexity as qualifier count rises — the physicality carries the joke past the dialogue
+- Ruben and Yuki must never read as evasive; they are the most honest people in the location and it is making everything worse
+- Ruben's frames escalate in hand-gesture complexity as qualifier count rises — the physicality carries the joke past the dialogue
 - The Quantum Cat is the only character permitted to state the shop's philosophy plainly, because it is a mascot and mascots are not legally liable
 - The Customs Agent is procedural and bored in every frame; all tension originates from the player's inventory, not the agent's performance
 
@@ -667,7 +667,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | 1 | schrodingers_interior_main.png | 1920x1080 |
 | 2 | schrodingers_exterior_zones.png | 1024x1024 |
 | 3 | schrodingers_products.png | 512x256 |
-| 4 | npc_daan_yuki.png | 512x512 |
+| 4 | npc_ruben_yuki.png | 512x512 |
 | 5 | npc_schrodingers_customers.png | 1024x256 |
 | 6 | schrodingers_effects.png | 512x256 |
 | 7 | schrodingers_ui.png | 512x512 |
@@ -682,7 +682,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - [ ] `schrodingers_interior_main.png` (1920x1080)
 - [ ] `schrodingers_exterior_zones.png` (1024x1024)
 - [ ] `schrodingers_products.png` (512x256)
-- [ ] `npc_daan_yuki.png` (512x512)
+- [ ] `npc_ruben_yuki.png` (512x512)
 - [ ] `npc_schrodingers_customers.png` (1024x256)
 - [ ] `schrodingers_effects.png` (512x256)
 - [ ] `schrodingers_ui.png` (512x512)
@@ -736,7 +736,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Seedy Underbelly Present | ✅ | Selling ambiguity at markup, positioned to catch coffeeshop overflow, profiting from confusion it is legally required to reduce |
 | Gameplay Value Established | ✅ | Four-zone browsing, legality inquiry loop, seven-step seed ritual, Suspicious Souvenir tagging, customs probability event, 5-badge track |
 | Technical Feasibility | ✅ | Composed zone blocks, static-display and static-graphic fallbacks per profile, shared atlases with the checkpoint scene |
-| Mobile Performance Budget | ✅ | 45 FPS, 14 draw calls, 32 MB, 10 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 10 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including instant collapse, shape-coded legality, 44px touch zones |
 | No Crypto Elements | ✅ | Pure quantum legal uncertainty; the only speculative asset is a seed |
 | Social Media Integration | ✅ | 5 screenshot moments + 6 quotable lines identified |

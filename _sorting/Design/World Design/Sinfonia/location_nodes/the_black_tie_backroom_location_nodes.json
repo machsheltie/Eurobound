@@ -6,7 +6,7 @@
       "region": "Sinfonia",
       "exterior": {
         "description": "No exterior. The Backroom is reached only through the Bassline Opera House's backstage: a door marked 'Private — Staff Only', a narrow corridor behind prop storage decorated like a closet, a second door that looks like a broom cupboard, and thirty steps that turn dusty boards into marble, brass railings and gas-lamp light.",
-        "entry_condition": "21:00-05:00; Black-Tie Attire equipped OR Member's Card OR rare NPC invitation; Charm 3+ or Bravado 3+; €500 gold held as collateral at the door"
+        "entry_condition": "21:00-05:00; Black-Tie Attire equipped OR Member's Card OR rare NPC invitation; Charm 3+ or Bravado 3+; 500 Sovs held as collateral at the door"
       },
       "interior": {
         "theme": "Legitimate sophistication worn as a mask over vice; the house always wins and is very polite about it",
@@ -26,7 +26,7 @@
       },
       "functions": [
         "Three-mini-game gambling hub with house-edge math",
-        "€500 collateral gate",
+        "500 Sovs collateral gate",
         "Cheating system with three-strike escalation",
         "Hidden boss (Herr Falsch)",
         "Couchsurf host (Siegfried)",
@@ -75,7 +75,7 @@
           "npc_service: sinfonia_npc_siegfried_coatcheck_01",
           "interactive: house_rules_board",
           "interactive: verification_mirror",
-          "transaction: gold_deposit_window (€500 collateral)",
+          "transaction: gold_deposit_window (500 Sovs collateral)",
           "service_node: coat_check_counter",
           "event_hook: blacktie_event_the_door_opens_01",
           "event_hook: blacktie_event_refused_01",
@@ -86,7 +86,7 @@
       },
       "functions": [
         "Entry verification (attire, stats, collateral)",
-        "€500 collateral deposit and receipt",
+        "500 Sovs collateral deposit and receipt",
         "Coat check / item storage",
         "Couchsurf questline entry",
         "Bounce point for underfunded parties"
@@ -141,7 +141,7 @@
       "region": "Sinfonia",
       "exterior": {
         "description": "A felt-covered corner table set into the main floor's far recess. Oxblood felt instead of house green, its own low pendant lamp instead of the floor's shared table lights, no brass chip rail, no dealer plaque, no printed betting positions. A crystal tumbler, a worn carton at the table edge, and a faint ring of chalky white dust on the felt.",
-        "entry_condition": "Main floor access; approach with €500 collateral on deposit triggers the scene once"
+        "entry_condition": "Main floor access; approach with 500 Sovs collateral on deposit triggers the scene once"
       },
       "interior": {
         "theme": "A named zone of the main floor that is not part of the house's business",
@@ -162,7 +162,7 @@
       },
       "functions": [
         "One-time scripted spectator encounter",
-        "€500 collateral stake sink",
+        "500 Sovs collateral stake sink",
         "Two scene-granted item sources",
         "Permanent ambient NPC presence thereafter"
       ],
@@ -178,7 +178,7 @@
       "region": "Sinfonia",
       "exterior": {
         "description": "Separated from the main floor by a velvet rope on brass stanchions. Fewer tables, wider spacing, personal servers stationed along the walls, upholstery a grade above the floor's. The odds are better here and still not good.",
-        "entry_condition": "High Roller status (€1,000+ total winnings)"
+        "entry_condition": "High Roller status (1,000 Sovs+ total winnings)"
       },
       "interior": {
         "theme": "Where the real money moves, at a slightly kinder edge",
@@ -279,11 +279,11 @@
       {"from": "foyer", "to": "sinfonia_imperialsquare_haute_couture_01", "type": "economic_dependency", "condition": "black_tie_attire_required"}
     ],
     "quest_path": {
-      "kings_were_humming_entry": "foyer (Anton check, €500 collateral) → main_floor → aarons_corner_table",
+      "kings_were_humming_entry": "foyer (Anton check, 500 Sovs collateral) → main_floor → aarons_corner_table",
       "kings_were_humming_route": "approach corner table → one-time scene → exit to main_floor",
       "kings_were_humming_exit": "main_floor → foyer → staircase (collateral chips gone)",
       "card_shark_route": "main_floor (learn tells) → private_boxes → discovery → boss fight",
-      "couchsurf_route": "main_floor (win once, lose once) → foyer (tip €20) → apartment above the club"
+      "couchsurf_route": "main_floor (win once, lose once) → foyer (tip 20 Sovs) → apartment above the club"
     }
   },
 

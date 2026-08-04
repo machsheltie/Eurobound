@@ -24,14 +24,14 @@
 - **Design**: Three rusted crowns stacked vertically with bottle opener as the base/throne, miniature stein charm dangles from ring
 - **Material**: Intentionally tarnished brass with rust-orange patina ("authentic aging")
 - **Inscription**: "Noble by Liver"
-- **Acquired**: Complete the stealth puzzle (navigate without waking patrons) OR purchase from Bartender for €15
+- **Acquired**: Complete the stealth puzzle (navigate without waking patrons) OR purchase from Bartender for 15 Sovs
 - **Special Feature**: Stein charm actually holds 1ml of liquid (decorative, not functional... mostly)
 - **Check Point**: Bartender checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Keg Haus Opener**: Can enter (with Bravado check), but cannot receive stamp or Iron Gut Tripel
 
 **Bartender's Opener Check**:
-- *With Blarney Trap Opener, No Keg Haus Opener*: "The shamrock opener! Seamus's network reaches even our sticky floors. But you need the THREE CROWNS to drink the Tripel. Sneak past my sleepers, or €15. Your choice."
+- *With Blarney Trap Opener, No Keg Haus Opener*: "The shamrock opener! Seamus's network reaches even our sticky floors. But you need the THREE CROWNS to drink the Tripel. Sneak past my sleepers, or 15 Sovs. Your choice."
 - *With Both Openers*: "The three crowns! You've proven your stealth — or your wallet. Either way, you're NOBILITY now! The Iron Gut Tripel is yours! May your liver serve the realm!"
 - *Without Blarney Trap Opener*: "The Continental Trail has rules. No Publandia opener, no brewery tour access. Come back when you're properly... credentialed. We'll still serve you regular swill."
 
@@ -165,14 +165,14 @@
 | SP Restoration | — |
 | Buff | "Inspired" (+10 Bravado, 30 min) |
 | Debuff Risk | 100% -10% Accuracy next turn (guaranteed) |
-| Price | €10 (+ €2 goblet deposit) |
+| Price | 10 Sovs (+ 2 Sovs goblet deposit) |
 | Brewed By | Three-Crown Keg Haus (300-year-old recipe) |
 
 **Flavor Text**: "300 years of brewing tradition. 0 years of health code compliance. Priorities."
 
 **Unique Properties**:
 - Highest HP restoration of Debaucheryville beers (+40)
-- Served in antique goblet (return for €2 deposit, or keep as souvenir)
+- Served in antique goblet (return for 2 Sovs deposit, or keep as souvenir)
 - Strongest ABV in city (11.5%) — the Accuracy penalty is the hangover hitting early
 - "Inspired" status stacks well with confidence-based challenges
 
@@ -187,7 +187,7 @@
 **Bartender's Serving Dialogue**:
 - "The Iron Gut Tripel! 300 years old — the RECIPE, not the batch. We're not ANIMALS. We're just... flexible about standards."
 - "11.5% ABV. It'll put hair on your chest. And temporarily remove your depth perception. Trade-offs, my friend. NOBLE trade-offs."
-- "Goblet's extra if you keep it. €2 deposit. Most people keep it. It's a RELIC. Of what, I can't legally say."
+- "Goblet's extra if you keep it. 2 Sovs deposit. Most people keep it. It's a RELIC. Of what, I can't legally say."
 
 ### Selfie Spot — Velvet Keg Throne
 - **Location**: Behind bar area, post-boss access
@@ -234,7 +234,7 @@
 ### Cross-Brewery Dialogue
 **To The Absinthium Taproom**:
 - Bartender: "The Absinthium? Too FANCY. All those mirrors and mist. We have STICKY FLOORS. That's AUTHENTIC."
-- Dr. Vanek: "They brew with tradition. I brew with transcendence. Both create altered states. Theirs just smells worse."
+- Dr. Vaněk: "They brew with tradition. I brew with transcendence. Both create altered states. Theirs just smells worse."
 
 **To The Tap Dat Vault**:
 - Bartender: "The Vault? Lights and noises! We have heritage! And by heritage, I mean RUST. Centuries of it!"
@@ -317,7 +317,7 @@
 - [ ] **Brewery Tour integration confirmed** (Quest tracking, bottle opener requirement, achievement progression)
 - [ ] **Cross-location connectivity verified** (Shadow Exchange access, Bravado check, reward system integration)
 - [ ] **Stamp system functional** (opener check, stamp animation, speech triggers)
-- [ ] **Goblet deposit system** (€2 return, keep option, inventory tracking)
+- [ ] **Goblet deposit system** (2 Sovs return, keep option, inventory tracking)
 
 ---
 
@@ -359,7 +359,7 @@
 - inspired_status_icon.png - 32x32 - Buff indicator
 - embarrassed_status_icon.png - 32x32 - Gossip debuff
 - arm_wrestling_ui.png - 256x128 - Boss minigame
-- goblet_deposit_ui.png - 128x64 - €2 return prompt
+- goblet_deposit_ui.png - 128x64 - 2 Sovs return prompt
 - bravado_check_ui.png - 192x96 - Entry requirement
 
 ---

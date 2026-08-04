@@ -100,7 +100,7 @@ Three years. He wants three more years of nights exactly like the other eleven t
 3. > "Ah — the window is Thursday. Thursday, the window."
 4. > "Cold in here. Cold at the front, warm at the back. It has always been so."
 5. > "Marble. Marble everywhere, and one carpet, and the carpet is in the office."
-6. > "Two hundred euro for a cape." *(a pause of exactly the wrong length)* "Well. It is a very good cape."
+6. > "Two hundred Sovs for a cape." *(a pause of exactly the wrong length)* "Well. It is a very good cape."
 
 ### Post-Interaction — The Callback
 *Any subsequent visit to the shop, PATH B only. He is not on shift; he is coming in as the day staff are leaving, or he is by the service door with his thermos. He addresses one bro directly, warmly, and walks on — canon, ships verbatim:*
@@ -213,7 +213,7 @@ Nothing about him changes. Same round, same pace, same torch, same compliment. H
 | service_door | Arrival and departure, thermos in hand |
 | day_passing | Post-quest callbacks, coming in as the day staff leave |
 
-**Sprite sheet:** `night_porter.png` (64x96), matching the shop's existing character-sprite conventions. **Note:** this asset is not yet listed in the shop file's PNG Asset Requirements Summary — see Development Notes.
+**Sprite sheet:** `night_porter.png` — **256x288**, 64x96 cells (The Round), per `PNG_Assets/Haute_Couture_Haberdashery_PNG_Assets.md`. Per the standing rule, the PNG_Assets spec is authoritative over location and NPC profiles for sprite filenames, dimensions, and sheet membership. 
 
 ---
 
@@ -295,7 +295,7 @@ Sinfonian, working, unhurried; a voice worn comfortable by thirty-one years of t
 - **Two canon lines ship verbatim**, matching `nothingisgettingthrough.md` byte-for-byte.
 - **He is never named.** Not in dialogue, not in a subtitle, not in a credit visible to the player.
 - **The "3" on the plinths is never attributed.** No character claims it and no content resolves it.
-- **Asset gap flagged for the file's owner:** `night_porter.png` (64x96) is not currently listed in the PNG Asset Requirements Summary of `Design/World Design/Sinfonia/haute_couture_haberdashery.md` (Character Sprites, 6 PNGs). This profile does not edit that summary; the sprite needs adding by whoever owns that section in a future pass.
+- **Asset gap RESOLVED:** `night_porter.png` is a dedicated sheet at **256x288** with 64x96 cells, specified as file 4 in `PNG_Assets/Haute_Couture_Haberdashery_PNG_Assets.md`. That spec is authoritative; the earlier 64x96 figure in the location summary was the cell size, not the sheet.
 - ID backfilled into `haute_couture_haberdashery.md` at his existing in-file mention (PATH B, Quest Integration), using the file's established inline-ID convention, since he has no `###` character entry there.
 
 ---

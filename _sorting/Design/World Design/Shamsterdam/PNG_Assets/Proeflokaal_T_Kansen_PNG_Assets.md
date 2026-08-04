@@ -164,10 +164,10 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | Beer Chaser Glass | (192, 0) | 48x64 | "Also available. Yes." |
 | Kopstootje Setup | (240, 0) | 128x64 | Jenever and beer arranged for the headbutt |
 | Ceramic Pouring Jug | (368, 0) | 64x64 | The overfill instrument |
-| Jenever Bottle (Jong) | (432, 0) | 32x64 | €4 — "Young. Starter." |
-| Jenever Bottle (Oud) | (464, 0) | 32x64 | €6 — "Old. Respect required." |
-| Jenever Bottle (Zeer Oud) | (0, 64) | 32x64 | €12 — "Very old. Very serious." |
-| Jenever Bottle (Korenwijn) | (32, 64) | 32x64 | €15 — "Grain wine. Not for beginners." |
+| Jenever Bottle (Jong) | (432, 0) | 32x64 | 4 Sovs — "Young. Starter." |
+| Jenever Bottle (Oud) | (464, 0) | 32x64 | 6 Sovs — "Old. Respect required." |
+| Jenever Bottle (Zeer Oud) | (0, 64) | 32x64 | 12 Sovs — "Very old. Very serious." |
+| Jenever Bottle (Korenwijn) | (32, 64) | 32x64 | 15 Sovs — "Grain wine. Not for beginners." |
 | Jenever Bottle ("Don't Ask") | (64, 64) | 32x64 | No label. No date. No questions. |
 
 ### The Gauntlet:
@@ -177,7 +177,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | Gauntlet Correct Marker | (352, 64) | 32x32 | Checkmark plate — "Correct." (no elaboration) |
 | Gauntlet Wrong Marker | (384, 64) | 32x32 | Cross plate — "Wrong. Try again." (no elaboration) |
 | Blind Test Cover | (416, 64) | 96x64 | Round 3 concealment cloth over four similar glasses |
-| Back Room Special Glass | (416, 128) | 96x32 | €25, 40%, "If you qualify." |
+| Back Room Special Glass | (416, 128) | 96x32 | 25 Sovs, 40%, "If you qualify." |
 | Spill Puddle (Large) | (352, 96) | 64x64 | The moment before the sawdust does its job |
 | Sawdust Fresh Patch | (0, 128) | 64x32 | Loose material for kick-up and absorption staging |
 | Spill Puddle (Small) | (64, 128) | 32x32 | Drip-scale variant |
@@ -480,7 +480,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Duration:** Per round: 0.8s glass select, 0.6s judgment beat, 1.0s Kees reaction hold
 - **Frames:** Correct/Wrong markers + Kees "Correct."/"Wrong." frames + round indicator advance
 - **Pattern:** Four rounds sequential; accumulating Shakes stacks on failure
-- **Trigger:** Player accepts the gauntlet (or purchases the €20 Flight)
+- **Trigger:** Player accepts the gauntlet (or purchases the 20 Sovs Flight)
 - **Purpose:** A skill challenge where the judge's face gives you nothing, so the UI must
 - **Audio Sync:** Glass lift 0.0s; 0.6s of silence; "Correct." or "Wrong." at 1.4s; round advance chime at 2.4s
 - **Mobile Optimization:** None needed (UI-driven, negligible cost)
@@ -578,7 +578,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | Low | Static candlelight (profile requirement), static sawdust (profile requirement), single-frame pour, no kick-up, one-shot lift-attempt spill retained |
 
 ### Performance Targets:
-- **Target FPS:** 45 (per location performance budget)
+- **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 36 MB maximum
 - **Particle Limit:** 12 (dust motes, candle smoke, sawdust kick-up)
@@ -754,7 +754,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | Seedy Underbelly Present | ✅ | Drinks engineered to humble, priced to profit, served in a room pre-built to absorb the outcome |
 | Gameplay Value Established | ✅ | Four-round gauntlet, Traditional Method tutorial, The Shakes debuff, back room unlock, Canal Courage passive, Couchsurf branch |
 | Technical Feasibility | ✅ | Static candlelight/sawdust fallbacks per profile; on-demand back room load; pooled spill decals; pre-composed groups |
-| Mobile Performance Budget | ✅ | 45 FPS, 14 draw calls, 36 MB, 12 particles per profile budget |
+| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 36 MB, 12 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including a non-tremor Shakes presentation, 44px touch zones |
 | No Crypto Elements | ✅ | Pure 400-year tradition; the only ledger is the sawdust |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |

@@ -48,8 +48,8 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - **Time Restrictions**: Performances 19:00-22:00, rehearsals 10:00-17:00
 - **Stat Requirements**: Charm 2+ to sneak into rehearsal
 - **Item Requirements**: 
-  - Evening: Performance ticket (€40-80, or €200-500 from scalper)
-  - Nighttime "Bassline": Bassline Ticket (€25) or Charm 4+
+  - Evening: Performance ticket (40 Sovs-80, or 200 Sovs-500 from scalper)
+  - Nighttime "Bassline": Bassline Ticket (25 Sovs) or Charm 4+
 - **Special Conditions**: Formal attire required for evening performances
 
 **Backstage**:
@@ -134,7 +134,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - **Composer Busts**: Examinable, Beethoven gives luck bonus
 - **Gift Shop**: Purchase items (see Items section)
 - **Wi-Fi Hotspot**: ICQ access, art theft thread hints
-- **Charity Donation Box**: €5 donation = +1 Charm for 1 hour
+- **Charity Donation Box**: 5 Sovs donation = +1 Charm for 1 hour
 - **Hidden Switch**: Behind Mozart portrait, reveals Black-Tie Backroom entrance
 
 ### Status Effects
@@ -231,19 +231,19 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
   - Coffee cups everywhere (half-full, abandoned)
 - **Magic Flute Production**:
   - Giant papier-mâché bird heads (Queen of the Night's attendants)
-  - Papageno costume (green feathers, €500 value)
+  - Papageno costume (green feathers, 500 Sovs value)
   - Starry night backdrop (painted, fragile)
-  - Mechanical snake prop (€800)
-  - Magic flute prop (gold-painted, €200)
-  - Starfield lighting rig (€1,500, fragile)
+  - Mechanical snake prop (800 Sovs)
+  - Magic flute prop (gold-painted, 200 Sovs)
+  - Starfield lighting rig (1,500 Sovs, fragile)
 
 ### The Current Production: Die Zauberflöte (The Magic Flute)
 - **Satirical Setup**: World's 47th most-performed opera, treated like unprecedented artistic achievement
 - **Key Sets Present**:
   - Queen of the Night's Starry Domain (backdrop + lighting)
-  - Papageno's Forest (paper trees, €300 each)
-  - Temple of Wisdom (columns, €400 each)
-  - Trial Chamber (fire/water effects, €600)
+  - Papageno's Forest (paper trees, 300 Sovs each)
+  - Temple of Wisdom (columns, 400 Sovs each)
+  - Trial Chamber (fire/water effects, 600 Sovs)
 - **Costumes Visible**:
   - Papageno bird suit (elaborately feathered)
   - Queen of the Night gown (black with stars)
@@ -267,32 +267,32 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - Magic Flute rehearsal in progress on stage
 - Backstage is "controlled chaos" becoming "uncontrolled chaos"
 
-### The €2,000 Damage Sequence
+### The 2,000 Sovs Damage Sequence
 
 **Gustav's Path of Destruction**:
 
-1. **Loading Dock Entry** (€0 damage)
+1. **Loading Dock Entry** (0 Sovs damage)
    - Gustav crashes through partially open loading door
    - Stagehead (NPC) drops coffee, swears in German
 
-2. **Prop Storage Collision** (€500 damage)
+2. **Prop Storage Collision** (500 Sovs damage)
    - Gustav knocks over prop rack
    - Papageno bird head destroyed
    - Magic flute prop snapped in half
 
-3. **Costume Rack Disaster** (€300 damage)
+3. **Costume Rack Disaster** (300 Sovs damage)
    - Gustav tangles in costume rack
    - Queen of the Night gown torn
    - Feathers everywhere (some stick to Gustav's cape)
 
-4. **The Stage Incursion** (€800 damage)
+4. **The Stage Incursion** (800 Sovs damage)
    - Gustav wanders onto stage during rehearsal
    - Rehearsal of "Der Hölle Rache" (Queen's famous aria)
    - Singer: "What is— MEIN GOTT, EIN PFERD!"
    - Gustav startles, kicks mechanical snake prop (destroyed)
    - Paper forest trees toppled (2 trees)
 
-5. **The Backdrop Catastrophe** (€400 damage)
+5. **The Backdrop Catastrophe** (400 Sovs damage)
    - Gustav tries to exit stage right
    - Catches opera cape on backdrop rigging
    - Starry Night backdrop tears dramatically
@@ -302,19 +302,19 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 
 | Item | Cost |
 |------|------|
-| Papageno bird head prop | €150 |
-| Magic flute prop | €200 |
-| Mechanical snake | €800 |
-| Queen of the Night gown | €200 |
-| Paper forest trees (2) | €250 |
-| Starry Night backdrop (tear) | €400 |
-| **Total Backstage Damage** | **€2,000** |
+| Papageno bird head prop | 150 Sovs |
+| Magic flute prop | 200 Sovs |
+| Mechanical snake | 800 Sovs |
+| Queen of the Night gown | 200 Sovs |
+| Paper forest trees (2) | 250 Sovs |
+| Starry Night backdrop (tear) | 400 Sovs |
+| **Total Backstage Damage** | **2,000 Sovs** |
 
 **Running Fiaker Fiasco Total**:
-- Opera House Plaza: €0 (no damage there, just started)
-- Café Sachertorte: €340
-- Backstage: €2,000
-- **Cumulative**: €2,340 (before Stadtpark resolution)
+- Opera House Plaza: 0 Sovs (no damage there, just started)
+- Café Sachertorte: 340 Sovs
+- Backstage: 2,000 Sovs
+- **Cumulative**: 2,340 Sovs (before Stadtpark resolution)
 
 ---
 
@@ -343,7 +343,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - *Gustav appears*: "What is— no. No. This is not happening. I am hallucinating."
 - *During chaos*: "THE BACKDROP! THE SNAKE! EIGHT MONTHS OF WORK!"
 - *Breakdown*: "I studied at the Conservatory. I trained with legends. And a HORSE destroys my Zauberflöte."
-- *To Bros*: "You. This is YOUR horse? You will pay. You will ALL pay. €2,000. MINIMUM."
+- *To Bros*: "You. This is YOUR horse? You will pay. You will ALL pay. 2,000 Sovs. MINIMUM."
 
 **Animation States**:
 - Directing: Animated gestures, notebook waving
@@ -401,9 +401,9 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - *Interrupted*: "*holds high F* —WHAT IS THAT?!"
 - *Outrage*: "I have sung at La Scala! At the Met! I was NOT interrupted by HORSES!"
 - *To Bros*: "This horse has RUINED my concentration. Do you know what concentration costs?"
-- *Demand*: "I require €500 for... therapeutic vocal rest. The trauma."
+- *Demand*: "I require 500 Sovs for... therapeutic vocal rest. The trauma."
 
-**Note**: Can be negotiated down to €200 with Charm 4+.
+**Note**: Can be negotiated down to 200 Sovs with Charm 4+.
 
 ---
 
@@ -430,7 +430,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - *To Gustav*: "*whistles* Here, horsey! Want a seed? Papageno has seeds!"
 - *Post-chaos*: "Best rehearsal ever. Hoffmann needed this. Too uptight."
 
-**Gameplay Function**: Optional ally during chase; following Papageno's suggestions reduces damage by €400 (avoids backdrop tear).
+**Gameplay Function**: Optional ally during chase; following Papageno's suggestions reduces damage by 400 Sovs (avoids backdrop tear).
 
 ---
 
@@ -481,7 +481,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 
 1. **Follow Papageno's Advice** (Charm 2+ to understand him)
    - Papageno guides Bros through alternate route
-   - Avoids backdrop destruction (saves €400)
+   - Avoids backdrop destruction (saves 400 Sovs)
    - Bonus: Papageno becomes ally for Stadtpark
 
 2. **Help the Director** (Bravado 3+)
@@ -490,7 +490,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
    - Risk: Gustav escapes, chase extends
 
 3. **Ignore Chaos, Pursue Gustav**
-   - Default path, maximum €2,000 damage
+   - Default path, maximum 2,000 Sovs damage
    - Fastest completion
    - Director becomes enemy (appears at resolution demanding payment)
 
@@ -579,38 +579,40 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 
 | Item | Price | Effect |
 |------|-------|--------|
-| Opera Program | €12 | Lore item, +1 Culture knowledge |
-| Mozart Bust (mini) | €45 | Room decoration, slight Luck boost |
-| "I ♥ Opera" Tote Bag | €25 | Inventory expansion (+2 slots) |
-| Official Soundtrack CD | €20 | +2 Performance during rhythm games |
-| Maestro von Strauss Poster | €15 | Lore item, hints at boss weaknesses |
+| Opera Program | 12 Sovs | Lore item, +1 Culture knowledge |
+| Mozart Bust (mini) | 45 Sovs | Room decoration, slight Luck boost |
+| "I ♥ Opera" Tote Bag | 25 Sovs | Inventory expansion (+2 slots) |
+| Official Soundtrack CD | 20 Sovs | +2 Performance during rhythm games |
+| Maestro von Strauss Poster | 15 Sovs | Lore item, hints at boss weaknesses |
 
 ### Box Office (Lobby)
 
 | Ticket Type | Price | Access |
 |-------------|-------|--------|
-| Evening Performance | €40-80 | Main Auditorium (one show) |
-| Bassline Event | €25 | Nighttime arena |
-| Season Pass | €300 | All performances + backstage tour |
-| "Scalper Special" | €200-500 | Overpriced but available |
+| Evening Performance | 40 Sovs-80 | Main Auditorium (one show) |
+| Bassline Event | 25 Sovs | Nighttime arena |
+| Season Pass | 300 Sovs | All performances + backstage tour |
+| "Scalper Special" | 200 Sovs-500 | Overpriced but available |
 
 ### Damage Liability (Backstage)
 
 | Item | Cost |
 |------|------|
-| Papageno bird head | €150 |
-| Magic flute prop | €200 |
-| Mechanical snake | €800 |
-| Queen's gown | €200 |
-| Paper trees (2) | €250 |
-| Starry Night backdrop | €400 |
-| **Total** | **€2,000** |
+| Papageno bird head | 150 Sovs |
+| Magic flute prop | 200 Sovs |
+| Mechanical snake | 800 Sovs |
+| Queen's gown | 200 Sovs |
+| Paper trees (2) | 250 Sovs |
+| Starry Night backdrop | 400 Sovs |
+| **Total** | **2,000 Sovs** |
 
 **Payment Options**:
 - Immediate: Clears debt, +1 reputation
-- Installments: €200 minimum, tracked
-- Insurance (Hans-Jürgen): Covers €500 if Path A
-- Prima Donna: Additional €200-500 demand (negotiable)
+- Installments: 200 Sovs minimum, tracked
+- Hans-Jürgen Path A contribution: −500 Sovs if Path A (`hans_jurgen_path_a_contribution`). This is **not** the 170 Sovs café insurance payout — separate pot, and the two stack
+- Prima Donna: Additional 200 Sovs-500 demand (negotiable)
+
+> **Authoritative arithmetic**: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it for all Fiaker Fiasco totals and relief rules.
 
 ---
 
@@ -696,7 +698,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - **Artistic Guilt**: After destroying props, -1 Charm with artists
 
 ### Recovery Options
-- Champagne (lobby): Removes Stressed, +1 Charm (€15)
+- Champagne (lobby): Removes Stressed, +1 Charm (15 Sovs)
 - Intermission Rest (auditorium): Removes Tired
 - Costume Change (dressing room): Removes Embarrassed
 
@@ -706,7 +708,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 
 ### Screenshot Moments
 1. **Gustav on stage** during "Der Hölle Rache"
-2. **Damage counter** hitting €2,000
+2. **Damage counter** hitting 2,000 Sovs
 3. **Director's breakdown** sequence
 4. **Papageno trying to befriend Gustav**
 5. **Bros' selfie** in destroyed backstage
@@ -1133,7 +1135,7 @@ The real joke is that both crowds think they're the "real" audience and the othe
 ### Alternate Access Model (whole-venue framing)
 - **Time Restrictions**: Day Mode (10 AM – 6 PM) open to public with ticket; Night Mode (10 PM – 4 AM) requires invitation or reputation
 - **Stat Requirements**: Day none (tourists welcome); Night +2 Bravado OR +2 Charm to bypass bouncer
-- **Item Requirements**: Day — Opera Ticket (€45) OR Cultural Pass; Night — VIP Invitation OR Black-Tie Attire equipped
+- **Item Requirements**: Day — Opera Ticket (45 Sovs) OR Cultural Pass; Night — VIP Invitation OR Black-Tie Attire equipped
 - **Previous Location Requirements**: None (central hub)
 - **Normal Exit**: Through grand foyer
 - **Dungeon Exit**: Complete backstage labyrinth OR defeat city boss
@@ -1262,17 +1264,17 @@ The real joke is that both crowds think they're the "real" audience and the othe
 ### Quest Integration
 - [x] Connects from Café Sachertorte
 - [x] Connects to Stadtpark
-- [x] Damage tracked (€2,000)
+- [x] Damage tracked (2,000 Sovs)
 - [x] Multiple dialogue/choice paths
 - [x] Boss arena properly integrated
 
 ### Crypto Warning
 - [x] NO crypto elements
 - [x] Focus on traditional opera/culture satire
-- [x] Financial elements are Euro-based
+- [x] Financial elements are Sov-based
 
 ---
 
-**The Bassline Opera House: Where 400 years of cultural excellence meet one horse with a cape, and €2,000 in Magic Flute production costs go out the window.**
+**The Bassline Opera House: Where 400 years of cultural excellence meet one horse with a cape, and 2,000 Sovs in Magic Flute production costs go out the window.**
 
 *The Bassline Opera House: Where culture goes to die twice daily — once from pretension, once from bass damage. High art by day, high volume by night, and high-stakes gatekeeping around the clock. The Maestro will see you now. Whether you're ready is irrelevant.*

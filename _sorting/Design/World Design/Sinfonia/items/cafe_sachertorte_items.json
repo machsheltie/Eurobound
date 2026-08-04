@@ -7,7 +7,7 @@
       "vendor_name": "Café Sachertorte Service",
       "vendor_type": "cafe_restaurant",
       "operator_npc": "herr_ober_01",
-      "currency_accepted": ["euro"],
+      "currency_accepted": ["sovs"],
       "availability": {
         "hours": "08:00-22:00",
         "conditions": {
@@ -49,7 +49,7 @@
         "item_id": "kleiner_brauner",
         "display_name": "Kleiner Brauner",
         "description": "Small coffee, served with judgment",
-        "price_euro": 5,
+        "price_sov": 5,
         "effects": {
           "removes_status": ["tired"],
           "grants_status": null
@@ -60,7 +60,7 @@
         "item_id": "grosser_brauner",
         "display_name": "Großer Brauner",
         "description": "Large coffee, slightly less judgment",
-        "price_euro": 7,
+        "price_sov": 7,
         "effects": {
           "removes_status": ["tired"],
           "grants_status": {"caffeinated": {"speed": 1, "luck": -1, "duration_hours": 2}}
@@ -70,8 +70,8 @@
       {
         "item_id": "melange",
         "display_name": "Melange",
-        "description": "Viennese latte, foam artistically peaked",
-        "price_euro": 8,
+        "description": "Sinfonian latte, foam artistically peaked",
+        "price_sov": 8,
         "effects": {
           "removes_status": ["tired"],
           "grants_status": {"cultured_palate": {"charm": 1, "duration_minutes": 30}}
@@ -82,7 +82,7 @@
         "item_id": "einspanner",
         "display_name": "Einspänner",
         "description": "Coffee with excessive whipped cream",
-        "price_euro": 9,
+        "price_sov": 9,
         "effects": {
           "removes_status": ["tired", "thirsty"],
           "hp_restore": 10
@@ -95,7 +95,7 @@
         "item_id": "sachertorte_slice",
         "display_name": "Sachertorte Slice",
         "description": "The famous chocolate cake. Non-negotiable.",
-        "price_euro": 18,
+        "price_sov": 18,
         "effects": {
           "hp_restore": 60,
           "removes_status": ["thirsty"]
@@ -105,8 +105,8 @@
       {
         "item_id": "apfelstrudel",
         "display_name": "Apfelstrudel",
-        "description": "Apple strudel, warm upon request (€2 extra)",
-        "price_euro": 14,
+        "description": "Apple strudel, warm upon request (2 Sovs extra)",
+        "price_sov": 14,
         "optional_charge": {"warm": 2},
         "effects": {
           "hp_restore": 40,
@@ -118,18 +118,18 @@
         "item_id": "opera_cake",
         "display_name": "Opera Cake",
         "description": "Layers of sophistication",
-        "price_euro": 22,
+        "price_sov": 22,
         "effects": {
           "hp_restore": 80,
           "grants_status": {"cultured_palate": {"charm": 2, "duration_minutes": 30}}
         },
-        "flavor_text": "Coffee, chocolate, and almond in architectural precision. For when €18 cake isn't enough."
+        "flavor_text": "Coffee, chocolate, and almond in architectural precision. For when 18 Sovs cake isn't enough."
       },
       {
         "item_id": "gugelhupf",
         "display_name": "Gugelhupf",
         "description": "Traditional ring cake",
-        "price_euro": 12,
+        "price_sov": 12,
         "effects": {
           "hp_restore": 30,
           "sp_restore": 10
@@ -142,13 +142,13 @@
         "item_id": "the_gustav_cookie",
         "display_name": "The Gustav",
         "description": "Commemorative chocolate horse cookie",
-        "price_euro": 8,
+        "price_sov": 8,
         "availability": "post_quest_paid_only",
         "effects": {
           "hp_restore": 25,
           "bravado": 1
         },
-        "flavor_text": "A chocolate horse-shaped cookie. 'In memory of €340.' - the menu",
+        "flavor_text": "A chocolate horse-shaped cookie. 'In memory of 340 Sovs.' - the menu",
         "achievement_trigger": "the_gustav"
       }
     ]
@@ -158,48 +158,48 @@
     "fiaker_fiasco_damages": [
       {
         "item": "patio_table",
-        "damage_euro": 85,
+        "damage_sov": 85,
         "trigger": "gustav_entry",
         "description": "Wrought-iron patio table, toppled"
       },
       {
         "item": "umbrella_stand",
-        "damage_euro": 15,
+        "damage_sov": 15,
         "trigger": "gustav_entry",
         "description": "Ornate brass umbrella stand, dented"
       },
       {
         "item": "full_sachertorte",
-        "damage_euro": 85,
+        "damage_sov": 85,
         "trigger": "gustav_cake_heist",
         "description": "Complete Sachertorte, consumed by horse"
       },
       {
         "item": "marble_table_1",
-        "damage_euro": 40,
+        "damage_sov": 40,
         "trigger": "gustav_chase",
         "description": "Antique marble-topped table, overturned"
       },
       {
         "item": "marble_table_2",
-        "damage_euro": 40,
+        "damage_sov": 40,
         "trigger": "gustav_chase",
         "description": "Second antique marble table, also overturned"
       },
       {
         "item": "opera_cake_slice",
-        "damage_euro": 22,
+        "damage_sov": 22,
         "trigger": "gustav_exit",
         "description": "Single opera cake slice, grabbed during escape"
       },
       {
         "item": "emotional_damages",
-        "damage_euro": 53,
+        "damage_sov": 53,
         "trigger": "herr_ober_breakdown",
         "description": "Herr Ober's claim for 'psychological trauma'"
       }
     ],
-    "total_damage_euro": 340,
+    "total_damage_sov": 340,
     "payment_options": {
       "full_payment": {
         "amount": 340,
@@ -212,8 +212,25 @@
       "hans_jurgen_insurance": {
         "covers": 170,
         "condition": "fiaker_fiasco_path_a_complete",
-        "result": "debt_reduced_to_170"
+        "requires_flag_false": "debt_relief_claimed",
+        "sets_flag": "debt_relief_claimed",
+        "result": "debt_reduced_to_170",
+        "mutually_exclusive_with": "cafe_dialogue_option_3_halving",
+        "note": "AUTHORITATIVE: this payout and the dialogue-option-3 halving are the SAME single 170 Sovs relief. Whichever fires first sets debt_relief_claimed and disables the other. Never apply both. Hans-Jurgen's separate 500 Sovs Path A contribution is a different pot and DOES stack. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
       }
+    },
+    "debt_relief_flag": {
+      "flag": "debt_relief_claimed",
+      "type": "bool",
+      "default": false,
+      "scope": "quest_fiaker_fiasco",
+      "one_way": true,
+      "consumed_by": [
+        "cafe_dialogue_option_3_halving",
+        "hans_jurgen_insurance",
+        "full_payment"
+      ],
+      "note": "full_payment sets the flag as consumed-and-moot: the cafe line is discharged, so there is nothing to reduce and the insurance does not convert to cash or credit."
     }
   },
   
@@ -221,14 +238,14 @@
     {
       "item_id": "chess_notation_card",
       "display_name": "Chess Notation Card",
-      "description": "Helena's annotated game notes. 'Opponent: adequate.'",
+      "description": "Greta's annotated game notes. 'Opponent: adequate.'",
       "discovery_method": "defeat_chess_master",
       "rarity": "uncommon",
       "effects": {
         "usable_in": "future_chess_encounters",
         "intelligence_boost": 1
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "Her handwriting is impeccable. Her assessment of your play is... not."
     },
     {
@@ -240,7 +257,7 @@
       "effects": {
         "unlocks_gossip": "cafe_fake_history"
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "The signature was done with a modern fountain pen. Franz Josef died in 1916. Fountain pens weren't common until the 1920s."
     },
     {
@@ -253,7 +270,7 @@
         "bravado": 3,
         "gallery_entry": "chaos_photographer"
       },
-      "value_euro": 0,
+      "value_sov": 0,
       "flavor_text": "This will get so many likes. Is that ethical? Who cares."
     }
   ],
@@ -323,7 +340,7 @@
     {
       "item_id": "patron_of_arts_badge",
       "display_name": "Patron of the Arts",
-      "description": "For paying €340 in café damages.",
+      "description": "For paying 340 Sovs in café damages.",
       "unlock_condition": "debt_paid_full",
       "effects": {
         "reputation_sinfonia": 1

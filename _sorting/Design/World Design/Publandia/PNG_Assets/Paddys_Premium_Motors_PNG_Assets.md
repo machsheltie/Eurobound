@@ -18,7 +18,7 @@
 | Gravel Gray | #A9A9A9 | Parking lot, exterior ground |
 | Sky Gray | #B0C4DE | Overcast Irish sky |
 | Polaroid Brown | #D2691E | Board of Shame photos |
-| Cigarette Orange | #FF7F50 | Seamus's cigarette ember |
+| Cigarette Orange | #FF7F50 | Fergus's cigarette ember |
 
 ---
 
@@ -31,7 +31,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 │   ├── interior_reception.png
 │   └── background_countryside.png
 ├── npcs/
-│   ├── seamus.png
+│   ├── fergus.png
 │   └── sheep_ambient.png
 ├── objects/
 │   ├── board_of_shame.png
@@ -68,7 +68,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 |------|----------|------|-------------|
 | Insurance Sign | (256, 160) | 64x32 | "INSURANCE RECOMMENDED" |
 | Cloverleaf Sign | (320, 160) | 64x32 | "NOT LIABLE FOR CLOVERLEAF" |
-| GPS Sign | (384, 160) | 64x32 | "GPS AVAILABLE €20" |
+| GPS Sign | (384, 160) | 64x32 | "GPS AVAILABLE 20 SOVS" |
 | Fine Print | (256, 192) | 128x32 | Illegibly small warnings |
 
 ---
@@ -127,11 +127,11 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 
 ---
 
-## 👴 Sprite Sheet 4: Seamus
-**File:** `seamus.png`  
+## 👴 Sprite Sheet 4: Fergus
+**File:** `fergus.png`  
 **Dimensions:** 384x384 pixels
 
-### Seamus States:
+### Fergus States:
 | State | Position | Size | Description |
 |-------|----------|------|-------------|
 | Idle | (0, 0) | 96x128 | Behind counter, thousand-yard stare |
@@ -143,7 +143,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 | Looking at Photo | (192, 128) | 96x128 | Touching Mary's picture |
 | Post-Quest Respect | (288, 128) | 96x128 | Slight nod, almost smile |
 
-### Seamus Details:
+### Fergus Details:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Aran Sweater | (0, 256) | 64x64 | Cream cable-knit texture |
@@ -152,7 +152,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 | Cigarette | (192, 256) | 32x16 | Behind ear, occasionally lit |
 | Wedding Ring | (224, 256) | 16x16 | Gold, worn thin |
 
-### Seamus Expressions:
+### Fergus Expressions:
 | Expression | Position | Size | Description |
 |------------|----------|------|-------------|
 | Resignation | (0, 288) | 48x48 | Default, tired acceptance |
@@ -213,7 +213,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 |---------|----------|------|-------------|
 | Publandia Map | (0, 0) | 128x128 | Standard road map |
 | Cloverleaf Circle | (64, 48) | 32x32 | Aggressive red marker |
-| "HERE BE DRAGONS" | (48, 80) | 48x16 | Seamus's handwriting |
+| "HERE BE DRAGONS" | (48, 80) | 48x16 | Fergus's handwriting |
 | Crossed Routes | (0, 0) | 128x128 | Multiple attempts marked out |
 
 ### Desk Items:
@@ -309,21 +309,21 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 |---------|----------|------|-------------|
 | Menu Frame | (0, 0) | 192x128 | Rental selection box |
 | Vehicle Icons | (192, 0) | 64x128 | 4 car silhouettes |
-| Price Tags | (0, 128) | 128x32 | €45, €60, €80, €120 |
+| Price Tags | (0, 128) | 128x32 | 45 Sovs, 60 Sovs, 80 Sovs, 120 Sovs |
 | Add-On Icons | (128, 128) | 64x32 | GPS, Insurance, Map, Rosary |
 
 ### Transaction UI:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Contract Paper | (0, 160) | 96x32 | Signing animation |
-| Keys Handoff | (96, 160) | 64x32 | Seamus sliding keys |
+| Keys Handoff | (96, 160) | 64x32 | Fergus sliding keys |
 | Warning Popup | (160, 160) | 96x32 | "ARE YOU SURE?" |
 
 ---
 
 ## 🎬 Animation Specifications
 
-### Seamus Idle Cycle:
+### Fergus Idle Cycle:
 - **Duration:** 10 seconds loop
 - **Frames:** Idle (4s) → Sigh (1s) → Look at photo (2s) → Return (2s) → Smoke check (1s)
 - **Variants:** Occasionally touches wedding ring
@@ -360,7 +360,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 |---------|----------|------|-------------|
 | Rental Menu Frame, Bold | (0, 0) | 96x64 | Thick-bordered rental selection box with enlarged vehicle rows |
 | Warning Popup, Bold | (96, 0) | 96x48 | Oversized "ARE YOU SURE?" with heavy outline |
-| Seamus Interactive Outline | (192, 0) | 48x64 | White-on-dark outline for Seamus's counter interaction hotspot |
+| Fergus Interactive Outline | (192, 0) | 48x64 | White-on-dark outline for Fergus's counter interaction hotspot |
 | Board of Shame Examine Outline | (0, 64) | 64x64 | Outlined corkboard hotspot with enlarged "THEY DIDN'T LISTEN" title |
 | Map Examine Outline | (64, 64) | 64x64 | Outlined map hotspot; "HERE BE DRAGONS" at readable weight |
 
@@ -397,7 +397,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | paddys_environment | exterior, parking_lot, interior, background | 1024x1024 |
-| paddys_characters | seamus, sheep_ambient | 512x512 |
+| paddys_characters | fergus, sheep_ambient | 512x512 |
 | paddys_details | board_of_shame, reception_details, effects, ui | 512x512 |
 
 ### Performance Notes:
@@ -424,7 +424,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 - CPUParticles2D (not GPU) for rain (20 cap), cigarette/ashtray smoke, gravel dust; fluorescent and computer-screen flicker via alpha toggle timers, disabled in reduced-motion mode
 - Area2D examine points: Board of Shame, map ("HERE BE DRAGONS"), incident counter, Mary's photo (sets `asked_about_wife` dialogue branch availability), ring box
 - Rental transaction UI drives the quest trigger: vehicle select → add-ons → contract signing → keys handoff → "The Cloverleaf of Confusion" starts
-- State tracking per `paddys_premium_motors_state` (rented_car, which_vehicle, purchased_gps/insurance/rosary, cloverleaf_completed, seamus_respect_earned, examined_board_of_shame, times_warned)
+- State tracking per `paddys_premium_motors_state` (rented_car, which_vehicle, purchased_gps/insurance/rosary, cloverleaf_completed, fergus_respect_earned, examined_board_of_shame, times_warned)
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -436,14 +436,14 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 | "Cloverleaf" dialogue mention | Distant, echoing car horns | On the word, every time |
 | "That's what they all say" | Record scratch | On the line |
 | GPS add-on purchase | Cheerful startup sound (ironic) | On add-on confirm |
-| Seamus Idle (10s loop) | Resigned sigh | On the sigh beat; occasional ring-touch is silent |
+| Fergus Idle (10s loop) | Resigned sigh | On the sigh beat; occasional ring-touch is silent |
 
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| The Cloverleaf of Confusion | Rental menu + vehicle icons, Contract Paper, Keys Handoff, Warning Popup, all four rental car sprites, Sliding Keys pose | Renting any vehicle triggers the quest; Seamus's warning beats (`times_warned`) play out across the transaction |
-| Seamus's Respect (post-quest) | Post-Quest Respect pose, Respect expression, Portrait Respect | Unlocks on `cloverleaf_completed`; 10% discount and "Ye've earned my respect" dialogue |
-| Add-On Gotchas | Add-On Icons (GPS, Insurance, Map, Rosary) | GPS shows "recalculating" in the Cloverleaf; premium insurance excludes "circular traffic incidents"; Seamus insists on the rosary |
+| The Cloverleaf of Confusion | Rental menu + vehicle icons, Contract Paper, Keys Handoff, Warning Popup, all four rental car sprites, Sliding Keys pose | Renting any vehicle triggers the quest; Fergus's warning beats (`times_warned`) play out across the transaction |
+| Fergus's Respect (post-quest) | Post-Quest Respect pose, Respect expression, Portrait Respect | Unlocks on `cloverleaf_completed`; 10% discount and "Ye've earned my respect" dialogue |
+| Add-On Gotchas | Add-On Icons (GPS, Insurance, Map, Rosary) | GPS shows "recalculating" in the Cloverleaf; premium insurance excludes "circular traffic incidents"; Fergus insists on the rosary |
 | Roundabout Survivor (title) | Portrait Respect, Board of Shame empty spot | The "Reserved for next" polaroid slot stays empty if the bros actually make it out |
 
 ### Cross-Location Dependencies:
@@ -470,7 +470,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 - The map's "HERE BE DRAGONS" over the Cloverleaf, with multiple crossed-out attempted routes
 
 ### Character Integration Notes:
-- Seamus carries the whole location: his eight states and five expressions must sell forty years of unheeded warnings without a single exaggerated frame
+- Fergus carries the whole location: his eight states and five expressions must sell forty years of unheeded warnings without a single exaggerated frame
 - The Post-Quest Respect pose is a *slight* nod and *almost* a smile — restraint is the reward
 - Sheep are deadpan witnesses: the Staring state should read as quiet judgment, never cartoon reaction
 
@@ -481,7 +481,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 ### Screenshot-Worthy Moments:
 1. **The Board of Shame** - Decades of abandoned-rental polaroids with one spot "Reserved for next"
 2. **"DAYS SINCE LAST INCIDENT: 0"** - The counter that has never moved, under its layer of dust
-3. **Seamus's Thousand-Yard Stare** - The face of a man who has seen too much
+3. **Fergus's Thousand-Yard Stare** - The face of a man who has seen too much
 4. **The "HERE BE DRAGONS" Map** - Aggressive red marker over The Cloverleaf
 5. **The Keys Slide** - The iconic moment of doom delivery, mid-scrape
 6. **The Distant Cloverleaf** - Visible through the rain-streaked window, waiting
@@ -502,7 +502,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 | 1 | exterior_building.png | 512x384 |
 | 2 | parking_lot.png | 512x256 |
 | 3 | interior_reception.png | 512x512 |
-| 4 | seamus.png | 384x384 |
+| 4 | fergus.png | 384x384 |
 | 5 | board_of_shame.png | 256x256 |
 | 6 | reception_details.png | 256x256 |
 | 7 | sheep_ambient.png | 192x128 |
@@ -519,7 +519,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 - [ ] `exterior_building.png` (512x384)
 - [ ] `parking_lot.png` (512x256)
 - [ ] `interior_reception.png` (512x512)
-- [ ] `seamus.png` (384x384)
+- [ ] `fergus.png` (384x384)
 - [ ] `board_of_shame.png` (256x256)
 - [ ] `reception_details.png` (256x256)
 - [ ] `sheep_ambient.png` (192x128)
@@ -540,7 +540,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 ### Delivery Format:
 - **Primary:** Individual PNG files per specifications above
 - **Backup:** Master PSD/layered file with organized layer groups (Board of Shame polaroids and annotations on separate layers for future additions — the board is designed to grow)
-- **Documentation:** Animation timing reference sheet (Seamus idle cycle, 1.5s key slide, flicker intervals)
+- **Documentation:** Animation timing reference sheet (Fergus idle cycle, 1.5s key slide, flicker intervals)
 
 ---
 
@@ -588,7 +588,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 
 1. **The Board of Shame** - Corkboard full of abandoned car polaroids
 2. **"DAYS SINCE INCIDENT: 0"** - Counter that's never moved
-3. **Seamus's Thousand-Yard Stare** - The face of a man who has seen too much
+3. **Fergus's Thousand-Yard Stare** - The face of a man who has seen too much
 4. **The Map** - "HERE BE DRAGONS" over The Cloverleaf
 5. **Keys Sliding** - The iconic moment of doom delivery
 6. **Mary's Photo** - "CLOVERLEAF '92" on the back
@@ -596,6 +596,6 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 
 ---
 
-**Paddy's Premium Motors delivers the visual comedy of impending doom. Every element - from the stuck counter to Mary's photo to the Board of Shame - tells the same story: this has happened before, it will happen again, and the bros are about to become the next victims. Seamus's resigned weathering and thousand-yard stare sell the forty years of warnings that have gone unheeded. The distant Cloverleaf, visible on the horizon, waits for its next meal.**
+**Paddy's Premium Motors delivers the visual comedy of impending doom. Every element - from the stuck counter to Mary's photo to the Board of Shame - tells the same story: this has happened before, it will happen again, and the bros are about to become the next victims. Fergus's resigned weathering and thousand-yard stare sell the forty years of warnings that have gone unheeded. The distant Cloverleaf, visible on the horizon, waits for its next meal.**
 
 **"That's what they all say."**

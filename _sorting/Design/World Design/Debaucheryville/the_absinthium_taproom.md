@@ -25,14 +25,14 @@
 - **Design**: Cracked absinthe glass with Green Fairy silhouette emerging, bottle opener as the glass stem
 - **Material**: Emerald-tinted metal with iridescent "oil slick" finish
 - **Inscription**: "I Saw Myself"
-- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vanek for €22
+- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vaněk for 22 Sovs
 - **Special Feature**: Surface appears to shift colors in different lighting (lenticular effect)
-- **Check Point**: Dr. Vanek checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
+- **Check Point**: Dr. Vaněk checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Absinthium Opener**: Can explore and complete puzzle, but cannot receive stamp or purchase Absinthe Lager until opener acquired
 
-**Dr. Vanek's Opener Check**:
-- *With Blarney Trap Opener, No Absinthium Opener*: "Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay €22. Then we discuss stamps and signature brews."
+**Dr. Vaněk's Opener Check**:
+- *With Blarney Trap Opener, No Absinthium Opener*: "Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 Sovs. Then we discuss stamps and signature brews."
 - *With Both Openers*: "The cracked glass. You've navigated the mirrors — or paid for the privilege. Either way, you've committed. The Absinthe Lager awaits. Prepare for... introspection."
 - *Without Blarney Trap Opener*: "No Publandia key, no brewery tour access. The Continental Trail has protocols. Return when properly credentialed."
 
@@ -80,7 +80,7 @@
 - Bar counter shaped like a massive cracked absinthe bottle
 - Glowing green liquid constantly drips from the crack into a void below
 - The void has no bottom (don't look too long)
-- Dr. Vanek's domain
+- Dr. Vaněk's domain
 - Where the signature brew is served
 - Stamp station for Brewery Passport
 
@@ -207,10 +207,10 @@
 **Unlock Conditions** (ALL required):
 - Complete mirror navigation puzzle (reach the bar)
 - Defeat OR survive Green Fairy Wisp encounter
-- Purchase Absinthe Lager from Dr. Vanek
+- Purchase Absinthe Lager from Dr. Vaněk
 - Present Debaucheryville Bottle Opener Keychain
 
-**Dr. Vanek's Stamp Speech**:
+**Dr. Vaněk's Stamp Speech**:
 "Congratulations. You've seen yourself. Not everyone does — some people navigate the mirrors without ever looking INTO them. You looked. The stamp is proof. The memory is punishment. Or reward. The distinction is philosophical."
 
 ### Signature Beer — Absinthe Lager
@@ -222,7 +222,7 @@
 | SP Restoration | +15 |
 | Buff | None |
 | Debuff Risk | 30% "Green Fairy Confusion" to USER |
-| Price | €12 |
+| Price | 12 Sovs |
 | Brewed By | The Absinthium Taproom (in-house) |
 
 **Flavor Text**: "It's not a bug, it's a feature. The disorientation means it's working."
@@ -232,7 +232,7 @@
 - Confusion effect matches the location's theme
 - Can be strategically used to trigger Confusion-based achievements
 
-**Dr. Vanek's Serving Dialogue**:
+**Dr. Vaněk's Serving Dialogue**:
 - "The Absinthe Lager. My signature creation. The green fairy is IN the beer. Metaphorically. And slightly literally."
 - "You may experience mild disorientation. This is intentional. If you DON'T feel disoriented, tell me immediately — I need to adjust the formula."
 - "30% confusion chance. 100% authenticity. Those are better odds than reality offers."
@@ -240,20 +240,20 @@
 ### Selfie Spot — Floating Absinthe Chalice
 - **Location**: Behind the bar, floating inexplicably
 - **Standard Photo**: Player with floating chalice, green mist swirling
-- **Special Variant**: "The Research Subject" — With Dr. Vanek (complete his survey)
+- **Special Variant**: "The Research Subject" — With Dr. Vaněk (complete his survey)
 
 ### Cross-Brewery Dialogue
 **To The Tap Dat Vault**:
-- Dr. Vanek: "Vapor brewing. Interesting. Insufficiently disorienting for my tastes, but the rhythm integration shows creativity."
+- Dr. Vaněk: "Vapor brewing. Interesting. Insufficiently disorienting for my tastes, but the rhythm integration shows creativity."
 
 **To Three-Crown Keg Haus**:
-- Dr. Vanek: "They brew with tradition. I brew with transcendence. Both create altered states. Theirs just smells worse."
+- Dr. Vaněk: "They brew with tradition. I brew with transcendence. Both create altered states. Theirs just smells worse."
 
 **To Ye Olde B.R.E.W. Lab**:
-- Dr. Vanek: "Algorithms? I manipulate PERCEPTION. Much more interesting than random number generators pretending to be intelligent."
+- Dr. Vaněk: "Algorithms? I manipulate PERCEPTION. Much more interesting than random number generators pretending to be intelligent."
 
 ## NPCs & Characters
-### Dr. Milos Vanek (Proprietor)
+### Dr. Miloš Vaněk (Proprietor)
 - **Role**: Bartender, chemist, researcher, reality architect
 - **Appearance**: 50s Czech man, lab coat over vest, monocle, perpetually taking notes
 - **Background**: Former chemistry professor, "left academia to pursue practical applications"
@@ -270,7 +270,7 @@
 - **Lord Pilsner**: "...that's worse. That's definitely worse."
 
 - **Bradley** (navigating): "I'm keeping a mental map of the mirror positions. I'm... unsure which of me is mapping."
-- **Dr. Vanek**: "Fascinating. May I take notes?"
+- **Dr. Vaněk**: "Fascinating. May I take notes?"
 
 ### Couchsurfing Integration
 **Host**: "The Philosopher" — a regular who's been here so long they might be part of the furniture
@@ -291,11 +291,11 @@
 - **Absinthe Arcade**: Physical entrance, thematic connection
 - **Shadow Exchange**: Bottle Opener sold here
 - **Cirque du Shady**: Thematic overlap (surrealism, disorientation)
-- **ICQ Network**: Dr. Vanek occasionally posts "research findings"
+- **ICQ Network**: Dr. Vaněk occasionally posts "research findings"
 
 ### Quest Integration
 - **"The Green Fairy"**: Main quest to find and complete the Taproom
-- **"Vanek's Survey"**: Optional research participation (rewards: +items, special selfie)
+- **"Vaněk's Survey"**: Optional research participation (rewards: +items, special selfie)
 - **"Mirror, Mirror"**: Defeat Mirror Chad without taking damage
 - **"Reality Anchor"**: Complete puzzle without Confusion
 
@@ -311,12 +311,12 @@
 ### Environmental Audio
 - **Navigation Maze**: Distorted echoes, whispered voices, mirror shimmer sounds
 - **Main Hall**: Impossible ambient tones, glass dripping into void
-- **Bar Area**: Liquid pouring, Dr. Vanek's pen scratching, Green Fairy hum
+- **Bar Area**: Liquid pouring, Dr. Vaněk's pen scratching, Green Fairy hum
 - **Music Style**: Ambient, dissonant, occasionally beautiful, never quite right
 
 ## Implementation Specifications
 ### Technical Requirements
-- **Asset List**: Arcade curtain, mirror maze (5 sections), main hall, bar, Gallery of Selves, mirror types (5), Dr. Vanek, patrons, Mirror Chad, Green Fairy Wisp, green mist effects
+- **Asset List**: Arcade curtain, mirror maze (5 sections), main hall, bar, Gallery of Selves, mirror types (5), Dr. Vaněk, patrons, Mirror Chad, Green Fairy Wisp, green mist effects
 - **Performance Budget**: 45 FPS target, max 15 draw calls, 40MB memory
 - **Platform Considerations**: Simplified mirror effects, reduced mist, static candles option
 
@@ -342,7 +342,7 @@
 - curtain_entrance.png - 256x384 - Glowing green veil
 - mirror_maze_section.png - 384x384 x5 - Puzzle areas
 - main_hall_impossible.png - 512x512 - Central space
-- bar_cracked_bottle.png - 384x256 - Dr. Vanek's domain
+- bar_cracked_bottle.png - 384x256 - Dr. Vaněk's domain
 - gallery_of_selves.png - 384x384 - Patron area
 - void_drip.png - 128x256 - Endless fall
 - floating_candles.png - 192x192 - Drifting light
@@ -383,4 +383,4 @@
 
 ---
 
-*The Absinthium Taproom: Brewery Tour Location 1 of 4 in Debaucheryville. Where the Green Fairy isn't a metaphor. Where your reflection has opinions about your life choices. Where Dr. Vanek takes notes on your existential crisis and calls it "research." The lawsuits were greatly exaggerated. The disorientation is intentional. The stamp proves you saw yourself — and you're still here. Congratulations. The confusion means it's working.*
+*The Absinthium Taproom: Brewery Tour Location 1 of 4 in Debaucheryville. Where the Green Fairy isn't a metaphor. Where your reflection has opinions about your life choices. Where Dr. Vaněk takes notes on your existential crisis and calls it "research." The lawsuits were greatly exaggerated. The disorientation is intentional. The stamp proves you saw yourself — and you're still here. Congratulations. The confusion means it's working.*

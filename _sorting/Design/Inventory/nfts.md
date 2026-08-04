@@ -26,7 +26,7 @@ Shamsterdam flag. Text: "CLASSY" in Comic Sans]
 Edition: #31,847 of 47,000
 Minted: Shamsterdam Gift Shop Terminal
 Blockchain: "TulipChain" (unverified)
-Current Value: €0.0003 (down 99.7% from mint)
+Current Value: 0.0003 Sovs (down 99.7% from mint)
 
 Creator's Statement:
 "This piece explores the intersection of 
@@ -38,7 +38,7 @@ with a top hat. You're welcome."
 
 Certificate of Authenticity:
 "This NFT is definitely real and not a 
-screenshot someone minted for €2. Trust us. 
+screenshot someone minted for 2 Sovs. Trust us. 
 We're on a blockchain. Probably."
 
 Bros' Assessment:

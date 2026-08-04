@@ -20,7 +20,7 @@
         "source_path": "path_a_full_clock_experience",
         "trigger_event": "tattoo_shop_completion",
         "location": "Euro Ink 4 Less, Astronomical Cock-Up Square, Debaucheryville",
-        "cost": "€75 (worth approximately €5 in actual tattoo quality)"
+        "cost": "75 Sovs (worth approximately 5 Sovs in actual tattoo quality)"
       },
       
       "affected_character": "lord_pilsner",
@@ -143,7 +143,7 @@
         "source_event": "shady_wristband_guy_transaction",
         "trigger_event": "wristband_purchase_complete",
         "location": "Astronomical Cock-Up Square, Debaucheryville",
-        "cost": "€30 each, €90 total (actual value: €0.003 each)",
+        "cost": "30 Sovs each, 90 Sovs total (actual value: 0.003 Sovs each)",
         "scammer_profit_margin": "8,900%",
         "connection_to_clock_quest": "Same square, can trigger during or after Clock quest"
       },
