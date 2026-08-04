@@ -1,5 +1,10 @@
 {
   "location_id": "debaucheryville_oldtown_astronomical_cockup_square_01",
+  "design_notes": {
+    "scammer_ecosystem": "The square around the Astronomical Cock-Up is a finely-tuned tourist extraction machine. Each scammer has a specific role, and they all know each other - occasionally nodding or making eye contact across the crowd. They are professionals.",
+    "comedy_principle": "Players see through every scam instantly. Bros fall for all of them enthusiastically.",
+    "recurring_appearances": "Several of these NPCs appear throughout the game in other cities, creating callback humor."
+  },
   "npcs": [
     {
       "npc_id": "viewing_spot_scammer_01",
@@ -9,11 +14,18 @@
       "behavior": "roaming",
       "appearance": {
         "clothing": "polo_shirt_khakis",
-        "accessories": ["fake_official_lanyard", "clipboard"],
+        "accessories": [
+          "fake_official_lanyard",
+          "clipboard"
+        ],
         "notable_features": "lanyard_says_OFFICIAL_GUIDE"
       },
       "personality": {
-        "traits": ["confident", "urgent", "technically_honest"],
+        "traits": [
+          "confident",
+          "urgent",
+          "technically_honest"
+        ],
         "speech_pattern": "salesman_pitch"
       },
       "approach_trigger": {
@@ -47,11 +59,19 @@
       "behavior": "stationary_with_approach",
       "appearance": {
         "clothing": "obvious_bathrobe",
-        "accessories": ["rope_belt", "sandals_with_socks", "cheap_incense_burner"],
+        "accessories": [
+          "rope_belt",
+          "sandals_with_socks",
+          "cheap_incense_burner"
+        ],
         "notable_features": "bathrobe_has_HOLIDAY_INN_EXPRESS_logo"
       },
       "personality": {
-        "traits": ["committed_to_bit", "never_breaks_character", "faux_spiritual"],
+        "traits": [
+          "committed_to_bit",
+          "never_breaks_character",
+          "faux_spiritual"
+        ],
         "speech_pattern": "fake_latin_gibberish"
       },
       "approach_trigger": {
@@ -88,11 +108,17 @@
       "behavior": "stationary_with_approach",
       "appearance": {
         "clothing": "waistcoat_bowtie",
-        "accessories": ["fake_sommelier_pin"],
+        "accessories": [
+          "fake_sommelier_pin"
+        ],
         "notable_features": "attempting_sommelier_energy"
       },
       "personality": {
-        "traits": ["uses_wine_terms_incorrectly", "claims_mystical_properties", "references_ladies"],
+        "traits": [
+          "uses_wine_terms_incorrectly",
+          "claims_mystical_properties",
+          "references_ladies"
+        ],
         "speech_pattern": "fake_connoisseur"
       },
       "approach_trigger": {
@@ -137,11 +163,17 @@
       "behavior": "stationary",
       "appearance": {
         "clothing": "tourist_style_blending_in",
-        "accessories": ["fanny_pack_full_of_coins"],
+        "accessories": [
+          "fanny_pack_full_of_coins"
+        ],
         "notable_features": "speaks_multiple_languages"
       },
       "personality": {
-        "traits": ["efficient", "reads_emotional_state", "no_nonsense_scammer"],
+        "traits": [
+          "efficient",
+          "reads_emotional_state",
+          "no_nonsense_scammer"
+        ],
         "speech_pattern": "direct_sales"
       },
       "approach_trigger": {
@@ -195,11 +227,17 @@
       "behavior": "roaming_targeted",
       "appearance": {
         "clothing": "long_coat_with_interior_pockets",
-        "accessories": ["gold_chain"],
+        "accessories": [
+          "gold_chain"
+        ],
         "notable_features": "coat_full_of_wristbands"
       },
       "personality": {
-        "traits": ["conspiratorial", "makes_buyers_feel_like_insiders", "never_oversells"],
+        "traits": [
+          "conspiratorial",
+          "makes_buyers_feel_like_insiders",
+          "never_oversells"
+        ],
         "speech_pattern": "secretive_whisper"
       },
       "approach_trigger": {
@@ -218,7 +256,7 @@
       },
       "scam_details": {
         "product": "vip_all_access_wristband",
-        "actual_value": 0.50,
+        "actual_value": 0.5,
         "price_per_wristband": 30,
         "total_price": 90,
         "reality": "Children's birthday party wristbands saying 'I'm 7!' in Czech"
@@ -249,11 +287,16 @@
       "behavior": "stationary_calls_out",
       "appearance": {
         "clothing": "leather_vest",
-        "accessories": ["heavy_tattoo_coverage"],
+        "accessories": [
+          "heavy_tattoo_coverage"
+        ],
         "notable_features": "intimidating_but_friendly"
       },
       "personality": {
-        "traits": ["encourages_bad_decisions", "validates_emotional_choices"],
+        "traits": [
+          "encourages_bad_decisions",
+          "validates_emotional_choices"
+        ],
         "speech_pattern": "enthusiastic_sales"
       },
       "approach_trigger": {
@@ -272,7 +315,6 @@
       "sprite_sheet": "tattoo_barker.png"
     }
   ],
-  
   "ambient_npcs": [
     {
       "npc_id": "local_observer_01",
