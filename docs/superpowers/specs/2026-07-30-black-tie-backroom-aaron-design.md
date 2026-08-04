@@ -18,8 +18,12 @@ choruses, moral compasses, meta-narrators, fourth-wall explainers, or ANY charac
 function is to tell the player what they just watched or that the bros are wrong. Dramatic irony is
 delivered by STAGING (what the player sees), never by STATEMENT (what a character or narrator
 announces). The player is trusted to get the joke. Content that explains the joke is a defect.
-(The Narrator voice remains canon where already established — dry stage description, e.g. "Nobody
-said it out loud." — but never explains, moralizes, or winks that "this is satire.")
+**OVERRULED 2026-08-04 (author ruling): there is NO narrator, anywhere, in any form.** The
+carve-out above for a "dry stage description" Narrator voice is void, and so is every in-world
+substitute for one (a knowing sign, a receipt that comments, an NPC aside whose job is to observe).
+Nothing frames, contextualizes, or explains a scene. Staging only: the player sees what happens and
+is trusted, full stop. Prose that used to sit under a "Narrator" label is now stage direction —
+a description of what is ON SCREEN, spoken by nobody.
 
 ### 1b. Gregory Is Dead (eradication, strip-on-sight)
 "Gregory," a hand puppet attributed to Bradley, was invented by earlier AI sessions and is NOT

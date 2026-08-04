@@ -11,7 +11,7 @@ never self-aware / never scam-aware + steal corollary, templates as floors.
 
 ## 1. NEW BINDING RULE: Two-Tier World-Names (author-locked, game-wide, permanent)
 
-- **Tier 1 — PLAYER-FACING text** (dialogue, display names, item/examine/UI strings, narrator
+- **Tier 1 — PLAYER-FACING text** (dialogue, display names, item/examine/UI strings, battle-log
   lines, song lyrics, achievement names, ICQ messages, graffiti — anything a player could read
   in the shipped game): **world names only.** Zero real-world place/nation references.
   **AUTHOR RULING (ban-all, expansion-proofing):** this bans ALL real-world places, nations,

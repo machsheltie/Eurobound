@@ -153,9 +153,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 *Every chip the party posted at the door goes across the felt. Exactly €500 in house silver. Not one coin more.*
 
-**Narrator:**
-> "Five hundred euro in silver chips crossed a table in Sinfonia at one in the morning. Two other tables were mid-hand. The string quartet did not stop."
-
+*Five hundred euro in silver chips crossed a table in Sinfonia at one in the morning. Two other tables were mid-hand. The string quartet did not stop.*
 ---
 
 #### Beat 3 — The Vibes Speech
@@ -204,9 +202,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 **Lord Pilsner:** "That was a *position*."
 
-**Narrator:**
-> "The dealer's rake took four seconds. The party's deposit receipt was voided at the cage before any of them reached the stairs."
-
+*The dealer's rake took four seconds. The party's deposit receipt was voided at the cage before any of them reached the stairs.*
 ---
 
 #### Beat 7 — The Sympathy Beat
@@ -269,9 +265,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 *They walk. It is four kilometers to the hostel and it is two degrees out and Chadwick is filming the token the whole way.*
 
-**Narrator:**
-> "They arrived at the hostel at ten to three in the morning, holding a carton of candy cigarettes and a piece of aluminum, having entered the building with five hundred euro. Two of them were still talking about it at the door."
-
+*They arrived at the hostel at ten to three in the morning, holding a carton of candy cigarettes and a piece of aluminum, having entered the building with five hundred euro. Two of them were still talking about it at the door.*
 *Scene ends. `blacktie_event_kings_were_humming_01` is consumed. Aaron transitions permanently to ambient state at the same table (rotating dialogue: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`).*
 
 ---
@@ -345,7 +339,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 **Bradley:**
 > "The thing people don't understand about seven-deuce is it's the worst hand. That's the whole point. Nobody defends against the worst hand, because nobody expects it, because it's the worst hand. So when you play it, you're actually playing the strongest hand at the table, mathematically, in terms of surprise. I've thought about this a lot. I thought about this on the walk."
 
-### Narrator Commentary
+### Staging Notes (no narrator — these are what the player SEES)
 
 **At the shove:**
 > "Five hundred euro in silver chips crossed a table in Sinfonia at one in the morning. Two other tables were mid-hand. The string quartet did not stop."

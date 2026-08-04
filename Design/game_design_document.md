@@ -40,7 +40,7 @@ Running Gag: Frequently distracted by gym-related sidequests or flexing competit
 
 Party Dynamics & Humor
 All three can be switched in/out during battle, each with unique overworld abilities (Lord Pilsner can “negotiate” with bar owners, Chadwick can unlock secret social events, Bradley can break obstacles or intimidate shady NPCs).
-Dialog is written in a mix of frat-bro banter and exaggerated “epic hero” narration, with the game clearly playing up the contrast.
+Dialog is written in a mix of frat-bro banter and the bros’ own exaggerated “epic hero” self-mythologizing — they narrate their own night like a saga; nothing outside them ever comments.
 Their loyalty is genuine — even if their adventures constantly spiral into absurd side quests.
 
 — — — — — — — — — — — — — — — — — — — — —

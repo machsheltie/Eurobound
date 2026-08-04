@@ -157,7 +157,7 @@ At high Clout levels, their delusions become so complete that lies occasionally 
     • Chadwick's fake follower count sometimes manifests actual help 
     • Bradley's "legendary" status occasionally intimidates enemies who've never heard of him 
 EarthBound-Style Flavor Text Evolution
-As Clout increases, the narrator's descriptions become more elaborate and backhanded:
+As Clout increases, the battle-log flavor text becomes more elaborate and backhanded:
     • Level 1: "Bradley uses Protein Slam. It's... something." 
     • Level 50: "Bradley performs the ancient ritual of Protein Slam, channeling the spirits of a thousand CrossFit coaches. The enemy is stunned by the sheer audacity." 
 

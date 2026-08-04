@@ -399,7 +399,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - **Lord Pilsner**: "Okay, I KNOW poker. I've seen Casino Royale like THREE TIMES."
 - **Chadwick**: "So you're basically Bond."
 - **Lord Pilsner**: "Same energy!"
-- **Narrator**: *It was not the same energy.*
+- *It was not the same energy.*
 
 **Winning Early**:
 - **Chadwick**: "WE'RE UP! WE'RE ACTUALLY UP!"

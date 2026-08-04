@@ -1,6 +1,5 @@
 {
   "location_id": "debaucheryville_riverfront_bohemian_riviera_01",
-
   "events": [
     {
       "event_id": "beatdown_signup",
@@ -58,7 +57,6 @@
         }
       ]
     },
-
     {
       "event_id": "beatdown_gauntlet",
       "display_name": "The Trivia Gauntlet",
@@ -88,7 +86,7 @@
           "phase": "launch_two_q7_mid_sentence",
           "duration_seconds": 5,
           "description": "The second launch goes off mid-word. The bubble must terminate on a partial syllable; audio clips hard, then continues faintly over the water for ~1s at falling volume. Do not fade.",
-          "speaker": "narrator",
+          "speaker": "staging",
           "dialogue": "The sentence was never finished. It was, however, finished for him, by physics, which had been waiting patiently for its turn to speak.",
           "animation": "lever_pull_mid_syllable",
           "audio": "thunk_hiss_splash_cutoff"
@@ -111,7 +109,6 @@
         }
       ]
     },
-
     {
       "event_id": "janek_thrown_answer",
       "display_name": "Janek's Thrown Answer",
@@ -160,13 +157,12 @@
       ],
       "post_event_effects": [
         {
-          "effect": "narrator_line",
+          "effect": "staging_line",
           "target": "post_janek_thrown_answer",
           "value": "Janek Sýkora had not choked. Janek Sýkora had briefly stopped participating, which is a different thing, and which is available to anyone who does not need the prize."
         }
       ]
     },
-
     {
       "event_id": "sudden_death",
       "display_name": "Sudden Death Buzzer Duel",
@@ -200,7 +196,6 @@
         }
       ]
     },
-
     {
       "event_id": "launch_sequence",
       "display_name": "Catapult Launch (Generic, Reusable)",
@@ -249,7 +244,6 @@
       ],
       "note": "Scope per status_effects.md's Port-O-Cologne source wording ('launched into the Bacchanus in a loaded port-o-potty'): ANY bro who goes through this event — selected-bro 3-strike loss, a non-selected bro's staggered Q4/Q7 launch, or a Sudden Death loss — gets port_o_cologne_active. The winning bro is never launched, so there is no overlap or conflict between this generic event and the WIN-branch prize podium."
     },
-
     {
       "event_id": "walk_of_shame",
       "display_name": "The Walk of Shame (LOSS Branch)",
@@ -300,7 +294,6 @@
         }
       ]
     },
-
     {
       "event_id": "disqualification_exit",
       "display_name": "Disqualification (Path B / Chadwick GO LIVE Only)",
@@ -361,7 +354,6 @@
       ],
       "note": "Canon (bacchanusbeachbeatdown.md:225): status port_o_cologne ONLY. No item. No consolation prize. No Hamagotchi. Nothing. Do NOT grant item_hamagotchi_consolation on this branch — that item is reserved for the walk_of_shame (3-strikes LOSS) branch only. Chadwick's stream ends on the splash and the VOD auto-saves."
     },
-
     {
       "event_id": "prize_ceremony",
       "display_name": "The Prize Podium (WIN Branch)",
@@ -455,7 +447,6 @@
         }
       ]
     },
-
     {
       "event_id": "night_event_outbreak_01",
       "display_name": "The Outbreak (All-Night Party, Scripted Trio Event)",
@@ -521,7 +512,7 @@
           "phase": "the_itch",
           "duration_seconds": 20,
           "description": "The identical maternal affection delivered to all three IS the reveal. No cross-referencing dialogue. All three begin itching in unison.",
-          "speaker": "narrator",
+          "speaker": "staging",
           "dialogue": "Nobody said it out loud.",
           "animation": "unison_scratch"
         },
@@ -572,7 +563,7 @@
           "value": "Next beat is Věra's refusal at Midnight Munchies General Store, off-site from this location"
         },
         {
-          "effect": "narrator_line",
+          "effect": "staging_line",
           "target": "post_outbreak",
           "value": "Nobody said it out loud."
         }
@@ -580,7 +571,6 @@
       "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — surrounding banter is replaced with pointers so this stub cannot drift from the quest file. Full scene text, direction, and branch prose are owned by Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md; Renata's design, sprites (true self plus the bros'-POV goggles render), and her side of the exit are owned by Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md. Do not expand this entry into a second copy of the scene."
     }
   ],
-
   "interactive_objects": [
     {
       "object_id": "port_o_potty_center_examine",
@@ -631,7 +621,6 @@
       "one_time_only": false
     }
   ],
-
   "environmental_interactions": [
     {
       "trigger_id": "catapult_row_hazard_tape",
@@ -641,7 +630,6 @@
       "audio_cue": null
     }
   ],
-
   "mini_games": [
     {
       "mini_game_id": "minigame_beatdown_trivia_gauntlet",
@@ -662,7 +650,12 @@
       },
       "turn_structure": "Round-robin within each question. Jaxson reads the question once; the three bros answer in podium order (left -> center -> right) as a scripted stack of confidently wrong shouts; Janek answers last, briefly, without looking up.",
       "language": "Czech-parody, no subtitles, no translation toggle",
-      "decode_channels": ["cognates_in_onscreen_text", "props_jaxson_holds_up", "host_gestures", "crowd_reaction"],
+      "decode_channels": [
+        "cognates_in_onscreen_text",
+        "props_jaxson_holds_up",
+        "host_gestures",
+        "crowd_reaction"
+      ],
       "timer_seconds_per_question": 12,
       "timeout_result": "strike",
       "strikes_max": 3,
@@ -762,7 +755,7 @@
             "bradley": "There's no river. There's no river in this question. He's testing whether we'll invent a river."
           },
           "on_correct": "Jaxson lowers the Oakleys a quarter inch — the only unscripted thing he does all episode. \"...Huh.\"",
-          "on_incorrect": "Narrator: \"The show had, at this point, told him the name of the river he was about to enter, shown him the toilet he would enter it in, and pointed at both. He answered 'the Sinfonia.' The production had done everything it could.\""
+          "on_incorrect": "\"The show had, at this point, told him the name of the river he was about to enter, shown him the toilet he would enter it in, and pointed at both. He answered 'the Sinfonia.' The production had done everything it could.\""
         }
       ],
       "rewards": {
@@ -801,7 +794,6 @@
       }
     }
   ],
-
   "return_visit_changes": {
     "visit_2_plus": {
       "new_dialogue": true,
@@ -819,8 +811,7 @@
       "effect": "The launched units, fished out by Rosta, become permanent, navigable riverbank landmarks. By Day 6+, one has a vendor set up next to it and someone's laundry on it."
     }
   },
-
-  "narrator_commentary": {
+  "staging_notes": {
     "on_entering": "A landlocked country's beach resort, built entirely out of confidence and trucked-in sand.",
     "on_key_moment": "The sentence was never finished. It was, however, finished for him, by physics, which had been waiting patiently for its turn to speak.",
     "on_signing_forms": "Three men signed away their likeness, their dignity, and their right to legal recourse in perpetuity across all media known and not yet invented. Two of them did it while flexing. The third did it on behalf of the other two, which is not how that works, and which Petra noted for the record, twice, out loud.",

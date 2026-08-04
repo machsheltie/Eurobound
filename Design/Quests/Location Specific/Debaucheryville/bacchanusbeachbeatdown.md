@@ -321,9 +321,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 *Nobody stops talking. The sentence continues, faintly, over the water, at a diminishing volume, for another full second.*
 
-**Narrator:**
-> "The sentence was never finished. It was, however, finished *for* him, by physics, which had been waiting patiently for its turn to speak."
-
+*The sentence was never finished. It was, however, finished *for* him, by physics, which had been waiting patiently for its turn to speak.*
 **Selected bro's reaction:**
 > "They're thinning the herd because they know who they want. Boys — they want ME."
 
@@ -353,9 +351,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **Janek:** "That's nice of him."
 
-**Narrator:**
-> "Janek Sýkora had not choked. Janek Sýkora had briefly stopped participating, which is a different thing, and which is available to anyone who does not need the prize."
-
+*Janek Sýkora had not choked. Janek Sýkora had briefly stopped participating, which is a different thing, and which is available to anyone who does not need the prize.*
 ---
 
 ## 🎮 Minigame Specifications
@@ -441,9 +437,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **On correct:** *Jaxson lowers the Oakleys a quarter inch — the only unscripted thing he does all episode. Then he puts them back.* **Jaxson Vane:** "...Huh." *The bro, of course, hears this as a compliment, and it is the closest thing to one he will get.*
 
-**Narrator:**
-> "The show had, at this point, told him the name of the river he was about to enter, shown him the toilet he would enter it in, and pointed at both. He answered 'the Sinfonia.' The production had done everything it could."
-
+*The show had, at this point, told him the name of the river he was about to enter, shown him the toilet he would enter it in, and pointed at both. He answered 'the Sinfonia.' The production had done everything it could.*
 ---
 
 ### `minigame_beatdown_sudden_death`
@@ -512,7 +506,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 **Bradley:**
 > "See, the thing about a catapult is it's basically a squat. It's a squat that happens *to* you. So when you look at it that way, and you factor in that I've squatted — conservatively — a house, the machine was never actually the favorite here. I just don't think it did the research on me."
 
-### Narrator Commentary
+### Staging Notes (no narrator — these are what the player SEES)
 
 **At the signing of the release forms:**
 > "Three men signed away their likeness, their dignity, and their right to legal recourse in perpetuity across all media known and not yet invented. Two of them did it while flexing. The third did it on behalf of the other two, which is not how that works, and which Petra noted for the record, twice, out loud."
@@ -575,9 +569,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **Petra:** *into her headset, evenly* "Confirm one badge, one stein, out of inventory. Log it as a loss."
 
-**Narrator:**
-> "The prophecy was delivered in English, at full volume, twice, by a hamster in a wizard hat, and it was — as every one of Hamstradamus's prophecies has ever been — completely accurate. He would, in fact, never again pay full price for onion rings. He would also never once connect the two events."
-
+*The prophecy was delivered in English, at full volume, twice, by a hamster in a wizard hat, and it was — as every one of Hamstradamus's prophecies has ever been — completely accurate. He would, in fact, never again pay full price for onion rings. He would also never once connect the two events.*
 *[AWARDED: `item_trivia_champ_badge` — permanently pinned to the winning bro's sprite]*
 *[AWARDED: `item_summer_vacay_stein`]*
 *[+3 Bravado]*

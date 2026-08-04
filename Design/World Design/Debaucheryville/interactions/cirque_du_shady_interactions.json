@@ -1,6 +1,5 @@
 {
   "location_id": "debaucheryville_circus_cirque_du_shady_01",
-
   "events": [
     {
       "event_id": "prophecy_roulette",
@@ -31,7 +30,6 @@
         }
       ]
     },
-
     {
       "event_id": "knife_throw_act",
       "display_name": "Knife-Throwing Act (Rotating Performance)",
@@ -61,7 +59,6 @@
       ],
       "note": "No knife-thrower name or full performer mechanics are established beyond prose in the parent profile - if a future pass gives him a name and mechanics, he needs his own sheet; out of scope here, per Cirque_du_Shady_PNG_Assets.md Sprite Sheet 7 Technical Notes."
     },
-
     {
       "event_id": "beatdown_promo",
       "display_name": "Vance's Beatdown Promo",
@@ -96,7 +93,6 @@
         }
       ]
     },
-
     {
       "event_id": "icq_hackthrough_popin",
       "display_name": "ICQ Backroom Hack-Through Pop-In",
@@ -125,7 +121,6 @@
       "note": "Hook-level cross-reference to the ICQ Scammer Sting questline per cirque_du_shady.md Quest Integration; no new Darkweb Dossier content is authored here."
     }
   ],
-
   "interactive_objects": [
     {
       "object_id": "ticket_booth_transaction",
@@ -255,7 +250,6 @@
       "one_time_only": false
     }
   ],
-
   "environmental_interactions": [
     {
       "trigger_id": "icq_backroom_night_proximity",
@@ -265,7 +259,6 @@
       "audio_cue": null
     }
   ],
-
   "mini_games": [
     {
       "mini_game_id": "knife_throw_dodge",
@@ -284,7 +277,6 @@
       }
     }
   ],
-
   "return_visit_changes": {
     "visit_2_plus": {
       "new_dialogue": true,
@@ -292,8 +284,7 @@
       "note": "Hamstradamus delivers his 'BACK AGAIN. GOOD.' callback line. Vance treats every walk-up as a potential talent discovery regardless of visit count, per cirque_du_shady.md Buffoon Delusion Scenarios."
     }
   },
-
-  "narrator_commentary": {
+  "staging_notes": {
     "on_entering": "Old Town cobblestones give way to trampled grass and sawdust well before the gate itself is visible - the smell arrives first.",
     "on_key_moment": "The ticket booth's sign says 'everything else extra' in plain English before they've paid for anything, and it changes nothing about what a bro chooses to believe he's walking into.",
     "on_exit": "The dome is visible from streets away, faded red-and-cream, and has clearly not moved, in any literal sense, in a very long time."

@@ -132,9 +132,7 @@ Renata wants a good night, a good song, good company, and the sun on her shoulde
 
 *Sunglasses back up. She resumes jogging. She does not look back a second time.*
 
-**Narrator**:
-> "Nobody said it out loud."
-
+*Nobody said it out loud.*
 *All three bros begin, in unison, to itch. The verdict arrives from inside the sleeping bag, delivered with total relief by a man who has not moved and does not intend to:*
 
 **Lord Pilsner**: "POISON IVY. Thank God. Boys, that's poison ivy."

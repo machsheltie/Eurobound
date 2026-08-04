@@ -46,7 +46,6 @@ Damage & Effect Formulas (Satirical Edge)
         ◦ Sinfonia: Dance/rhythm moves deal more if timed to the beat.
 
 ✨ +25% Improvement Layer:
-    • Accessibility Humor Toggle: Players can enable “Narrator Roast Mode” where failed combos trigger rhyming narrator burns (Galavant-style musical dunks).
     • Dynamic Ego Meter: Each bro tracks how much spotlight they’ve had in battle. If one hogs too much (kills, flexes, Ultimates), the others sulk → sabotaging synergy until “placated” (with drinks, praise, or shared gear).
     • Audience/Environment Reactions: Local NPCs literally cheer, boo, or throw peanuts based on combo success, subtly influencing Bravado regen.
 
@@ -73,7 +72,6 @@ The “fail videos” of combat.
 “Selfie Block” (Chadwick + Pilsner)
     • Setup: Pilsner swings, Chad selfie-sticks for clout.
     • Effect: Pilsner smacks Chad, party laughs, Chad loses Bravado.
-    • Bonus: Narrator roast if enabled: “And thus, vanity became the deadliest foe…”
 “Double Chug” (Pilsner + Bradley)
     • Setup: They attempt simultaneous chugs to buff.
     • Effect: RNG: Buff OR both puke → Stun all allies.
@@ -120,7 +118,7 @@ Beeramid (Bradley + Pilsner)
     • Setup: Pilsner hoists Bradley like a keg; Bradley launches a devastating blast from the top.
     • Effect: Massive AoE nuke. Bonus damage to “lightweight” or “hipster” enemies.
     • Backfire: If Pilsner’s Bravado is low, he drops Bradley → Bradley takes damage, loses Bravado.
-    • Audience/Narrator: Crowd cheers like it’s a sports win. Narrator: “Behold, the majestic Beeramid—ancient, unstable, and already leaking foam.”
+    • Audience Reaction: Crowd cheers like it’s a sports win; a regular at the bar, flatly, to nobody: “That thing’s already leaking foam.”
     • Spotlight/Ego: Bradley gains spotlight for “finishing move” pose, Pilsner sulks.
     • Environmental Flair:
         ◦ Publandia: NPCs form human pyramid, add extra buffs.
@@ -130,7 +128,7 @@ Like & Subscribe (Chadwick + Bradley)
     • Setup: Chad livestreams Bradley’s attack.
     • Effect: Bradley’s next hit deals double damage, 25% chance of “viral crit” (massive multiplier).
     • Backfire: RNG flop → “0 viewers.” Bradley loses Bravado in humiliation.
-    • Audience/Narrator: Pop-up overlay of fake Twitch chat roasting them. Narrator: “Influence level: one drunk cousin watching.”
+    • Audience Reaction: Pop-up overlay of fake Twitch chat roasting them; the viewer counter reads 1, and chat is his cousin.
     • Spotlight/Ego: Chad steals spotlight even if Bradley does the damage.
     • Environmental Flair:
         ◦ Publandia: NPCs actually cheer, boosting Bradley’s Bravado.
@@ -140,7 +138,7 @@ Alpha Sigma Slam (All Three)
     • Setup: They sync a frat chant by accident, slamming the ground in rhythm.
     • Effect: Huge AoE damage + all Bravado bars restored.
     • Backfire: 10% chance of chant devolving into argument → self-stun.
-    • Audience/Narrator: Choir effect kicks in. Narrator sings: “Once in their lives, the bros actually coordinated!”
+    • Audience Reaction: Choir effect kicks in — the venue crowd sings: “Once in their lives, the bros actually coordinated!”
     • Spotlight/Ego: Spotlight splits evenly (rare miracle).
     • Environmental Flair: Amplified indoors (clubs, taverns); echo shakes walls. Outdoors it draws random bystander mobs.
 
@@ -148,7 +146,7 @@ B. Backfire Combos (Ego Ruins It)
 Selfie Block (Chadwick + Pilsner)
     • Setup: Pilsner swings paddle; Chad jumps in with selfie stick.
     • Effect: Misses enemy → hits Chad. Self-damage, −Bravado.
-    • Audience/Narrator: Narrator: “Truly, a Kodak moment. Shame it cracked his jaw instead of the enemy’s.”
+    • Audience Reaction: “Truly, a Kodak moment. Shame it cracked his jaw instead of the enemy’s.”
     • Spotlight/Ego: Spotlight wasted on Chad’s pain.
     • Environmental Flair:
         ◦ Sinfonia: Selfie projected on club walls, permanent humiliation debuff.
@@ -157,7 +155,7 @@ Double Chug (Pilsner + Bradley)
     • Setup: Both try to out-chug.
     • Effect: Temporary buff if success; if fail, they puke mid-fight.
     • Backfire: AoE stun on party.
-    • Audience/Narrator: Narrator sighs: “A true showing of masculine fortitude… and intestinal weakness.”
+    • Audience Reaction: the crowd audibly loses interest — “A true showing of masculine fortitude… and intestinal weakness.”
     • Spotlight/Ego: Neither gains spotlight → crowd jeers.
     • Environmental Flair: Publandia barmaids mop up, lowering enemy speed.
 
@@ -166,26 +164,26 @@ Wingman Protocol (Chadwick + Pilsner)
     • Setup: Chad hypes Pilsner to an NPC.
     • Effect: Target is charmed/distracted. 50% chance of full ally buff if they “buy it.”
     • Backfire: NPC rejects → both lose Bravado.
-    • Audience/Narrator: Narrator: “One bro’s cringe is another bro’s gain.”
+    • Audience Reaction: “One bro’s cringe is another bro’s gain.”
     • Spotlight/Ego: If successful, Pilsner hogs spotlight; Chad sulks.
 Bros Before Heroes (Bradley + Chadwick)
     • Setup: They fist-bump, swearing loyalty.
     • Effect: Sacrifice DEF → boost each other’s Bravado and DMG.
     • Backfire: RNG: they actually fight over spotlight, buffs cancel.
-    • Audience/Narrator: Crowd chants “BRO-S! BRO-S!”
+    • Audience Reaction: Crowd chants “BRO-S! BRO-S!”
     • Environmental Flair: Unlocks extra in Full Frat Bro gear → “Bros Before Heroes: Deluxe.”
 
 D. Competitive Combos (Ego Contests)
 Who Flexed Harder? (Bradley vs. Chadwick)
     • Setup: Both flex at enemy.
     • Effect: Both roll crit checks. Winner deals extra damage; loser loses Bravado.
-    • Audience/Narrator: Fake Instagram poll pops up, votes tallied.
+    • Audience Reaction: Fake Instagram poll pops up, votes tallied.
     • Spotlight/Ego: Spotlight meter swings hard toward winner.
 Toast vs. Post (Pilsner vs. Chadwick)
     • Setup: Pilsner makes bar-speech, Chad livestreams simultaneously.
     • Effect: RNG buff/debuff depending on audience approval.
     • Backfire: If both flop, enemies get morale buff.
-    • Audience/Narrator: Narrator groans: “When you mix old-school charisma with Wi-Fi desperation, the results are… mixed.”
+    • Audience Reaction: the crowd groans — “When you mix old-school charisma with Wi-Fi desperation, the results are… mixed.”
 
 E. Regional / Gear-Based Unlocks
 Publandia (Dublin): Beer Brawl Combo
@@ -198,7 +196,7 @@ Gear Multipliers
     • Full Frat Bro Set: Unlocks “Bros Before Heroes: Team Finisher.”
     • Cringe Business Casual Set: Unlocks “LinkedIn Lament” → buffs Bravado but debuffs speed.
 📖 EuroBound Combo Bible
-Combo Name	Bros Involved	Setup	Effect	Backfire	Audience/Narrator Flavor	Spotlight/Ego	Regional/Environmental Flair
+Combo Name	Bros Involved	Setup	Effect	Backfire	Audience Reaction Flavor	Spotlight/Ego	Regional/Environmental Flair
 Beeramid	Bradley + Pilsner	Pilsner hoists Bradley like a keg; Bradley launches blast from top.	Massive AoE nuke; bonus vs. “lightweight/hipster” enemies.	If Pilsner low Bravado → drops Bradley → self-damage & Bravado loss.	“Behold, the majestic Beeramid—ancient, unstable, already leaking foam.”	Bradley hogs spotlight; Pilsner sulks.	Publandia: NPCs form human pyramid. Sinfonia: Club lights cause blind effect. Debaucheryville: Table breaks → RNG jackpot or collapse.
 Like & Subscribe	Chadwick + Bradley	Chad livestreams Bradley’s attack.	Bradley’s hit = 2× DMG; 25% chance “viral crit.”	RNG flop: “0 viewers” → Bradley loses Bravado.	Pop-up Twitch chat roasting. “Influence level: one drunk cousin watching.”	Chad steals spotlight.	Publandia: Tavern cheers. Debaucheryville: Casino cameras attract paparazzi. Sinfonia: Enemies stop to dab.
 Alpha Sigma Slam	All Three	Accidental synchronized frat chant.	Huge AoE + all Bravado restored.	10% chance devolves into argument → self-stun.	Choir effect. “Once in their lives, the bros actually coordinated!”	Spotlight evenly split (rare).	Indoors: echo shakes walls (buff). Outdoors: draws mobs.
@@ -209,8 +207,8 @@ Bros Before Heroes	Bradley + Chadwick	Fist-bump loyalty oath.	Sacrifice DEF → 
 Who Flexed Harder?	Bradley vs. Chadwick	Both flex at enemy.	Both roll crit checks; winner extra DMG, loser loses Bravado.	N/A (contest outcome).	Fake Insta poll overlay.	Spotlight to winner.	Audience favors local style (Publandia = beer gut flex, Sinfonia = abs).
 Toast vs. Post	Pilsner vs. Chadwick	Pilsner bar-speech vs. Chad livestream.	RNG buff/debuff based on approval.	Both flop → enemy morale buff.	“When charisma meets Wi-Fi desperation…”	Spotlight to whichever audience favors.	Debaucheryville: Casino crowd votes with chips; buffs or curses.
 Beer Brawl Combo	Pilsner + Bradley (Publandia unlock)	Rally cry + keg smash.	Tavern NPCs assist with random ally attacks.	RNG chance tavern fight spills onto party.	Roaring tavern chorus.	Shared spotlight.	Region-specific.
-Casino Royale	All Three (Debaucheryville unlock)	Chad selfies with boss, Bradley cheats dice, Pilsner smashes table.	Jackpot loot or instant win.	Alarms trigger → boss enraged.	Slot machine SFX + narrator sigh.	Chad claims credit.	Region-specific.
-Symphony of Bros	All Three (Sinfonia unlock)	Sync to nightclub beat.	DMG ×3, but 20% collapse chance.	Collapse → auto-stun.	Narrator sings falsetto: “They actually hit the drop.”	Spotlight shared, ego rivalry resumes after.	Region-specific.
+Casino Royale	All Three (Debaucheryville unlock)	Chad selfies with boss, Bradley cheats dice, Pilsner smashes table.	Jackpot loot or instant win.	Alarms trigger → boss enraged.	Slot machine SFX + alarm klaxon.	Chad claims credit.	Region-specific.
+Symphony of Bros	All Three (Sinfonia unlock)	Sync to nightclub beat.	DMG ×3, but 20% collapse chance.	Collapse → auto-stun.	Crowd chorus sings falsetto: “They actually hit the drop.”	Spotlight shared, ego rivalry resumes after.	Region-specific.
 LinkedIn Lament	Gear unlock (Business Casual set)	Perform awkward networking mid-fight.	Bravado buff, speed debuff.	NPCs fall asleep → turn delay.	
 
 Bradley (The Cannon Bro)
@@ -336,15 +334,12 @@ Setup: Chad livestreams Bradley's Ultimate Move Requirements: Bradley using spec
 Setup: All three accidentally sync a frat chant during combat Requirements: All three alive, combined Bravado >150 Effect:
     • Devastating AoE to all enemies 
     • Full Bravado restoration for party 
-    • "Legendary" status (+1 to all stats for rest of battle) Backfire: 15% chance chant devolves into argument → self-inflicted damage Narrator: "Behold! For once in their pathetic lives, perfect harmony!" 
-
-B. BACKFIRE COMBOS 💥
+    • "Legendary" status (+1 to all stats for rest of battle) Backfire: 15% chance chant devolves into argument → self-inflicted damage B. BACKFIRE COMBOS 💥
 "Selfie Sabotage" (Chadwick + Anyone)
 Setup: Chad tries to film ally's attack for content Trigger: Chad uses "Selfie Smite" same turn as ally special Effect:
     • Chad's ring light blinds ally instead of enemy 
     • Ally misses completely, loses Bravado 
-    • Chad gains "Embarrassed" status Narrator: "And thus, narcissism proved mightier than the sword... unfortunately." 
-"Double Chug Disaster" (Pilsner + Bradley)
+    • Chad gains "Embarrassed" status "Double Chug Disaster" (Pilsner + Bradley)
 Setup: Both try to out-drink each other mid-battle Trigger: Both use consumable alcohol same turn Effect:
     • Temporary "Liquid Confidence" buff OR 
     • Both gain "Sloppy" debuff and puke on each other 
@@ -440,7 +435,6 @@ When combos backfire spectacularly:
 Learning from Failure
     • Failed combos unlock "Never Again" passive bonuses 
     • Party develops better timing after multiple failures 
-    • Narrator commentary becomes more encouraging (barely) 
 
 ULTIMATE PARTY DYNAMICS 🎯
 The system creates emergent storytelling where:

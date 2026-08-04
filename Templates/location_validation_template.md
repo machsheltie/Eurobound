@@ -597,12 +597,6 @@ location_state:
       "npc_recognition": true
     }
   },
-  
-  "narrator_commentary": {
-    "on_entering": "Narrator line when entering",
-    "on_key_moment": "Narrator line at important moment",
-    "on_exit": "Narrator line when leaving"
-  }
 }
 ```
 
@@ -757,7 +751,7 @@ location_state:
       "scam_level": "none/low/medium/high/complete",
       
       "description": {
-        "player_sees": "(What player/narrator knows)",
+        "player_sees": "(What the player sees on screen)",
         "bros_see": "What the bros believe"
       },
       

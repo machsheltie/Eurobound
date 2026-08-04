@@ -74,7 +74,7 @@ Improvement Layer: Flyers you post appear physically around the city. Later, NPC
 **Rewards:**
 - **"Frosted Tips Vandal"** trinket (+2 Bravado, -2 Charm, NPCs call you "nu-metal tourist")
 - **"Y2K Villain"** status - Bouncers remember you as "those Limp Bizkit guys"
-- **"Peak Alpha Achievement"** - Narrator: *"Truly, the savage marketing wisdom of a Blockbuster Video employee"*
+- **"Peak Alpha Achievement"** — *Truly, the savage marketing wisdom of a Blockbuster Video employee*
 
 ---
 
@@ -111,7 +111,7 @@ Improvement Layer: Flyers you post appear physically around the city. Later, NPC
 - Security footage of them vandalizing becomes a viral TikTok called "Boomers Gone Wild"
 - **Local news** does a segment on "Time-Displaced American Tourists"
 
-### Meta-Commentary From Narrator:
+### In-World Text (signage, notifications, flyers):
 
 **Honest Path:** *"Armed with the combined design wisdom of a Kazaa download and a Yahoo! GeoCities tutorial, our heroes prepared to 'synergize' the underground club paradigm."*
 
@@ -152,7 +152,7 @@ Improvement Layer: Flyers you post appear physically around the city. Later, NPC
 ### Screenshot Moments:
 - **Their flyers** next to modern designs showing the stark contrast
 - **NPC reaction faces** when they use outdated slang
-- **Narrator commentary** appearing as fake "You've Got Mail!" notifications
+- **In-world text** appearing as fake "You've Got Mail!" notifications
 
 ---
 

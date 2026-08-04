@@ -174,12 +174,9 @@ quests, gauntlets, and dungeon descents are linear; a quest built on a player de
 **Bradley:**
 > "[Quote showing his confidently wrong 'intelligence']"
 
-### Diegetic Commentary
-<!-- There is NO narrator in this game, ever. Any observation the scene needs comes from
-inside the world: an NPC aside, a sign, a receipt, a menu item, a graffito, an ICQ message.
-Nothing ever frames or explains the joke. -->
-**[At key moment]** — delivered by [NPC / sign / receipt / ICQ / etc.]:
-> "[The observation, in-world]"
+<!-- NO commentary section exists here by design. There is no narrator and no in-world
+substitute for one. Nothing observes, frames, contextualizes, or explains the joke — not a
+voice, not a sign, not a knowing NPC aside. The scene happens; the player gets it. -->
 
 ---
 

@@ -139,9 +139,7 @@
 
 *Sunglasses back up. She resumes jogging. She does not look back a second time. She is on her lounger by nine.*
 
-**Narrator:**
-> "Nobody said it out loud."
-
+*Nobody said it out loud.*
 **Phase 5 — Infection & Diagnosis**
 
 *All three bros begin, in unison, to itch. `the_herp` is applied to the entire party, scripted, guaranteed, no roll, no save, no path in which any bro is spared. The waist-level `heat_shimmer` particle comes up on all three at once.*
@@ -234,9 +232,7 @@
 
 *[`the_herp` LOCKS IN — no standard cure, no vendor cure, no consumable, no shower, no spa, no rest. Permanent flag set. The Recovery Aisle's entire stock is now greyed out for this party with the tooltip: "Věra has already explained this."]*
 
-**Narrator:**
-> "She had used the words 'cinematic-grade' because it was the most accurate description available to her, in her third language, at seven in the morning. They heard 'imported.'"
-
+*She had used the words 'cinematic-grade' because it was the most accurate description available to her, in her third language, at seven in the morning. They heard 'imported.'*
 ---
 
 #### BEAT 3 — THE PROPHECY (Hamstradamus's tent, The Cirque du Shady)
@@ -402,9 +398,7 @@
 
 **Bradley:** "I'm not counting Renata. Renata wasn't a no."
 
-**Narrator:**
-> "Across two cities, six women declined three men for six entirely different, entirely specific reasons, at least one of which was set to music. The bros counted this as one data point."
-
+*Across two cities, six women declined three men for six entirely different, entirely specific reasons, at least one of which was set to music. The bros counted this as one data point.*
 ---
 
 ### Binary Path Choice
@@ -607,7 +601,7 @@
 **Bradley:**
 > "See, the thing nobody accounts for is European foliage. Everybody's worried about the water, everybody's worried about the food. Nobody's looking DOWN. And I've said this since day one — I said it at the airport — I said the plants over here are gonna be a factor. Nobody listened. And now we're all walking like this. So."
 
-### Narrator Commentary
+### Staging Notes (no narrator — these are what the player SEES)
 
 **At the cheek-pat:**
 > "Two men stood at parade rest on a beach at seven in the morning while a woman with somewhere to be patted them goodbye exactly the way their mothers do. Both of them understood immediately. Neither of them looked at the other. Between them, at that moment, passed the most sophisticated act of diplomacy either man would ever participate in."

@@ -3,9 +3,9 @@ The Party
 Why Play as These Fools? (The Playable Idiot Logic)
 The “playable idiot” trope works in games like The Bard’s Tale, Duke Nukem Forever, YIIK, GTA V, and No More Heroes because:
     1. Player Superiority Complex – Let’s face it- you know you’re smarter than your avatar. You get to laugh at (and with) your character. The fun is in seeing how far you can push their ridiculous behavior, not in aspiring to be them.
-    2. Self-Aware Writing – The game constantly winks at you while the characters think they’re crushing it; the audience knows they’re imploding.
+    2. Dramatic Irony – The characters think they’re crushing it while the player watches them implode. The game never winks; it just shows you.
     3. Freedom to Be Awful – get to explore outrageous, socially disastrous options  without real-world consequence — it’s a sandbox for bad decisions.
-    4. Mechanical Comedy – Their flaws drive gameplay, not just story. (The narrator undercutting your “heroic” actions).
+    4. Mechanical Comedy – Their flaws drive gameplay, not just story. (The mechanics themselves undercut the “heroic” action: the stat penalty, the reward name, the debuff.)
 Our Spin:
     • They can fight, they can win, they can make good choices — but every action is wrapped in comedic dressing. A win might promote you to “Bathroom Attendant”… but you still get XP (renamed to “Clout”), currency (“Bar Tabs”), and gear (like a nightstick, rave glowsticks, or half a bottle of Advil).
     • Good choices give legit buffs, but are worded to still hit with comedic punch (“Hydrated for Once” buff — +15% stamina).
@@ -13,7 +13,7 @@ Our Spin:
         ◦ Beat nightclub bouncers? You’re “hired” as unpaid security… with full access to the VIP room.
 
 How We Make It Work in EuroBound
-    • Narrator-as-Roastmaster: An in-game narrator or UI text constantly undercuts their “heroic” self-image. Every victory, failure, and menu action can be undercut by snark. (“Bradley flexes. Nobody cares. -2 Dignity.”) 
+    • Mechanics-as-Roastmaster: the systems do the roasting — battle-log text, stat readouts, status names, and reward titles. Every victory, failure, and menu action lands its own deadpan result line. (“Bradley flexes. Nobody cares. -2 Dignity.”) No narrator voice exists; the numbers and names carry it. 
     • Flaw-as-Mechanic: Mind-altering substances = status effects with comedic side effects (e.g., “Liquid Confidence” raises crit chance but forces you to target randomly).
         ◦ “Flirt” action always backfires — different hilarious fail states in each region keep it fresh.
     • Meta Rewards: Sidequests and Easter eggs mock the trio’s delusions while giving real bonuses ((NFTs with stat boosts, rare outdated tech items , “The Wallet of Shame” trinket for spending too much on scams).
@@ -94,7 +94,7 @@ Perfect Balance:
 Each character covers the others' weaknesses while their flaws create interesting tactical decisions - do you let Bradley go berserk for massive damage but lose your tank? Do you risk Chadwick's unreliable buffs for the potential huge payoff?
 “Playable Idiot Logic” (explicit in-doc section)
     • Player Superiority: You’re smarter than your avatars; the pleasure is orchestrating their disaster—then salvaging victory.
-    • Self-Aware Writing: UI/narrator roasts every delusion (“Bradley flexes. Crowd yawns. −2 Dignity”).
+    • Deadpan Systems Writing: the UI and battle log roast every delusion by simply reporting it (“Bradley flexes. Crowd yawns. −2 Dignity”).
     • Freedom to Be Awful: Outlandish, socially disastrous options are encouraged—safely sandboxed in satire.
     • Mechanical Comedy: Flaws are systems: substances buff with costs; flirt actions fail in region-specific ways.
     • Real Rewards: Wins are actual wins: you gain Clout (XP), Cover Charges (currency), gear, and unique consumables—often humiliating, always useful.

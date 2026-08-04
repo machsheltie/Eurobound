@@ -11,8 +11,8 @@ Ultimate Choruses
 - Lord Pilsner — Mid-Life Crisis: "Still got it? He thinks so! Watch him blow!"
 - Chadwick — Viral Meltdown: "Like, share, subscribe — to his tears tonight!"
 - Bradley — Bouncer Breaker: "One dad bod to crush them all!"
-Narrator Verses
-- Rare sung narration that punctuates major fails/wins.
+Crowd Choruses (fails/wins)
+- The venue crowd itself briefly sings at major fails/wins — always performers in the room, never a narrating voice.
 - Example Fail: "They thought they were legends… turns out, just has-beens!"
 - Example Win: "Against all odds (and common sense), they actually pulled it off!"
 - Accessible toggle in audio settings to disable if desired.

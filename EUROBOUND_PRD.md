@@ -72,7 +72,7 @@ The design folders were written across multiple drafting passes and contain cont
 
 | # | Topic | Conflict in docs | **CANON DECISION** | Rationale |
 |---|---|---|---|---|
-| C1 | **Protagonist POV** | Player-as-rival-roaster (Production doc, legacy pitch) vs player-controls-the-trio (README, GAMEPLAN, Synopsis, all character docs) | **Player controls the trio: Lord Pilsner, Chadwick, Bradley.** The world does the roasting. | Owner's stated vision; matches 90% of written content. The "roast" energy lives in the narrator, NPCs, and enemy design. |
+| C1 | **Protagonist POV** | Player-as-rival-roaster (Production doc, legacy pitch) vs player-controls-the-trio (README, GAMEPLAN, Synopsis, all character docs) | **Player controls the trio: Lord Pilsner, Chadwick, Bradley.** The world does the roasting. | Owner's stated vision; matches 90% of written content. The "roast" energy lives in the NPCs, the enemy design, and the battle-log/reward text. There is no narrator (see pillar 1). |
 | C2 | **Engine** | Godot 4.x (Production, all prototype code) vs Phaser.js (legacy pitch, one Dev Skills section) vs Unity (considered) | **Godot 4.4** (per the approved restructure spec). Delete/ignore all Phaser references. | See §15.1. Best 2D pipeline, zero fees, existing GDScript code, active ecosystem. Unity's AI tooling doesn't outweigh this for a solo pixel-art game. |
 | C3 | **Party roles** | `party.md` + character docs (Pilsner=Leader, Bradley=Tank, Chadwick=Support) vs `combatsystem.md` (Bradley=glass cannon, Pilsner=tank) | **Pilsner = Inspiring Commander (balanced leader/buffer). Bradley = Tank/Berserker Protector. Chadwick = Chaotic Support/debuffer.** | Three docs agree vs one; matches personalities (Bradley "catches his breath then charges"). Bradley's berserk-at-low-HP covers the DPS role dynamically. |
 | C4 | **Ultimates** | Two sets of names across files | **Pilsner: Mid-Life Crisis · Chadwick: Viral Meltdown · Bradley: Bouncer Breaker.** (`Fratocalypse Now`, `Going Viral`, `Final Round's On Me` are retired or repurposed as skill-tree nodes.) | Confirmed by party.md, bravado.md, AND the musical Ultimate Choruses in `musicalbeats.md`. |
@@ -237,7 +237,7 @@ Per-level gains (average): HP +6/+5/+8, BP +3/+4/+2, primary stats +1 to +1.5 we
 ### 5.5 Party-wide rules
 
 - All three are always in the party (no swapping in V1.0); any bro at 0 HP is **"Passed Out"** and revived to 1 HP after battle (EarthBound-style defeat only when all three drop — see §6.7).
-- **Flirt** is a universal battle/overworld action that **always backfires** — its only outputs are comedy, region-specific fail states, occasional accidental quest triggers, and a guaranteed −1 dignity narrator line. It costs nothing and heals nothing. Players will press it anyway. That's the design.
+- **Flirt** is a universal battle/overworld action that **always backfires** — its only outputs are comedy, region-specific fail states, occasional accidental quest triggers, and a guaranteed −1 dignity battle-log line. It costs nothing and heals nothing. Players will press it anyway. That's the design.
 - Equipment slots (canon, resolves the slot/category mismatch): **Weapon · Torso · Legs · Footwear · Accessory ×2** — necklaces, rings, watches, hats, and cellphones are ALL "Accessory"; exactly one equipped **Cellphone** is additionally required in Accessory slot 1 (it's the save/ICQ device and its model grants perks — see §9.4).
 
 ---
@@ -290,7 +290,7 @@ Confidence as mana. Per-bro pool (§5.1).
 - **Spend:** skills (4–10 BP), Ultimates (all BP, minimum 20 — Ultimates are only available at High band).
 - **Gain:** Bravado Flex (+3), Brace (+2), landing crits (+4), kills (+3), NPC crowd cheers (+1–3/round based on Reputation), winning drinking/rhythm minigames (out of battle, sets starting band), Chadwick auras.
 - **Drain:** being missed-at (whiff = −2 to attacker), public embarrassment events, **Sobriety Creep** — outside battle, each in-game hour without a drink/social win drains 2 BP (day-night system, §11.3).
-- **Bands:** High = >70% pool (Ultimates unlocked, +crit, +SPD; sprite glows, crowd murmurs) · Mid = 30–70% · Low = <30% (−damage, −SPD; slouched sprites) · **Zero = "Dad on a Bender"** — the bro collapses into a sulk: skips turns until healed to Mid by items/allies; if all three hit Zero simultaneously, forced comedic retreat (treated as defeat-lite: wake at base, small € loss, unique narrator scene).
+- **Bands:** High = >70% pool (Ultimates unlocked, +crit, +SPD; sprite glows, crowd murmurs) · Mid = 30–70% · Low = <30% (−damage, −SPD; slouched sprites) · **Zero = "Dad on a Bender"** — the bro collapses into a sulk: skips turns until healed to Mid by items/allies; if all three hit Zero simultaneously, forced comedic retreat (treated as defeat-lite: wake at base, small SOVS loss, unique comedic collapse scene per city).
 - Combined-Bravado gates for Combos: **High ≥ 150 total (80% success) · Mid 90–149 (60%) · Low < 90 (40%)** — matching the doc's bands with the >150 anchor.
 
 ### 6.6 Master status list (canon — resolves all drift)
@@ -334,7 +334,7 @@ AI is data-driven weighted-random with gates (EarthBound-simple, LimboAI behavio
 ### 6.9 Victory, defeat & rewards
 
 - **Victory:** Clout + € + drop table roll; regional **Victory Stinger** sung couplet (§14.3); "promotion" flavor titles on notable wins (bouncer fight → *Bathroom Attendant*: Nightstick, Glowsticks ×2, Half Bottle of Advil, +300 €, +150 Clout — the canonical worked example).
-- **Defeat (all three at 0 HP):** wake at base pub; keep Clout and items; lose 10% SOVS ("the tab found you"); mandatory Hungover; unique defeat roast per city, delivered diegetically (an NPC, a bar tab, a note — never a narrator, per author ruling). No lost progress — shame IS the death penalty.
+- **Defeat (all three at 0 HP):** wake at base pub; keep Clout and items; lose 10% SOVS ("the tab found you"); mandatory Hungover; unique defeat scene per city. No lost progress — shame IS the death penalty.
 - Balance targets (from Production docs, kept): normal fights **3–5 rounds**, bosses **6–8**, baseline survivability = 2–3 mistakes before wipe.
 
 ---
