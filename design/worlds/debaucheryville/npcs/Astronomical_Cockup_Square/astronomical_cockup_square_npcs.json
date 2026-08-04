@@ -23,8 +23,11 @@
       },
       "dialogue": {
         "greeting": "Americans! Best view in square! Only 10 Sovs each! Very limited!",
+        "follow_up": "The clock show is in 15 minutes! These spots go FAST!",
         "pitch": "This spot? Very exclusive. The REAL viewers stand here.",
         "post_sale": "You can see everything from here. Eventually.",
+        "if_questioned_pillar": "The pillar is part of it. Locals view from here. Very traditional.",
+        "if_declined": "Your choice. But when you're fighting the crowd, remember - Pavel offered you the exclusive experience.",
         "return_visit": "The crying Americans! You want second viewing? Different pillar this time!"
       },
       "scam_details": {
