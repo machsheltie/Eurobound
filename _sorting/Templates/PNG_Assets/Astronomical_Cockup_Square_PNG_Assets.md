@@ -194,16 +194,6 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Bottle Single | (256, 160) | 32x64 | Item sprite |
 | Costume | (288, 160) | 64x64 | Waistcoat/bowtie |
 
-### Animation Cycles (from legacy vendor spec):
-| Animation | Type | Description |
-|-----------|------|-------------|
-| Polishing Bottles | Idle | Buffs a bottle with apron corner, admires shine |
-| Arranging Display | Idle | Fusses with the six display bottles, nudges labels forward |
-| Scanning for Referrals | Idle | Glances toward Party Monk's fountain spot, hopeful |
-| Bottle Flourish | Sales | Presents bottle with exaggerated sommelier spin |
-| Enthusiastic Gestures | Sales | Rapid hand-waving while describing "properties" |
-| Pouring Sample | Sales | Uses existing Pouring pose (192, 0) |
-
 ---
 
 ## 🛍️ Sprite Sheet 8: Merchandise Vendor

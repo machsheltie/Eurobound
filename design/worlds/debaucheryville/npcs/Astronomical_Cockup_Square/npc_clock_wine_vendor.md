@@ -100,6 +100,9 @@ Supports extended family through wine cart profits. His cousin Miroslav (Party M
 ### The Pitch
 > "Very popular with ladies at clubs. The clock energy, it makes you... magnetic. A tour group bought six bottles yesterday. Now they are engaged. True story."
 
+**Scarcity pressure (if bros hesitate):**
+> "Only few bottles left. Clock alignment ending soon."
+
 ### Vintage Question Response
 **Bradley**: "What vintage is this?"
 

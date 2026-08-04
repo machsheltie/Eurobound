@@ -102,8 +102,11 @@
       "dialogue": {
         "greeting": "You have been blessed! Now you drink the clock wine. Infused with temporal energy.",
         "pitch": "Very popular with ladies at clubs. The clock energy, it makes you... magnetic.",
+        "urgency": "Only few bottles left. Clock alignment ending soon.",
+        "upsell": "One bottle? No no no. One bottle is for tasting. Three bottles is for EXPERIENCE. Six bottles... is for LIFESTYLE.",
         "vintage_question": "This vintage? 2019. Very good year. For boxes.",
         "post_sale": "You feel the time flowing through you, yes? That is the clock.",
+        "if_declined": "Your choice. But when you're at the club and the ladies ignore you... remember: Václav offered you magnetism.",
         "return_visit": "The clock wine lovers return! I save special bottles for you!"
       },
       "scam_details": {
