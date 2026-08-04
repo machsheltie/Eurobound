@@ -7,7 +7,7 @@ extends Node2D
 const PLAYER_SCENE := preload("res://Scenes/characters/Player.tscn")
 const NPC_SCENE := preload("res://Scenes/characters/NPCBase.tscn")
 const ENEMY_SCENE := preload("res://Scenes/characters/Enemy.tscn")
-const PAUSE_MENU_SCENE := preload("res://Scenes/ui/menus/PauseMenu.tscn")
+const PAUSE_MENU_SCENE := preload("res://ui/menus/pause_menu.tscn")
 
 @export var location_id: String = ""
 @export var bounds: Rect2 = Rect2(0, 0, 960, 640)

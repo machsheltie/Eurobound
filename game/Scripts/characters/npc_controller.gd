@@ -2,7 +2,7 @@ extends Area2D
 ## Static overworld NPC. Player's InteractZone (mask 2) finds us on layer 2;
 ## interact() opens our dialogue tree.
 
-const DIALOGUE_BOX_SCENE := preload("res://Scenes/ui/dialogue/DialogueBox.tscn")
+const DIALOGUE_BOX_SCENE := preload("res://ui/dialogue/dialogue_box.tscn")
 
 @export var npc_id: String = ""
 

@@ -53,4 +53,4 @@ func _on_save() -> void:
 
 func _on_quit() -> void:
 	get_tree().paused = false
-	SceneRouter.goto_scene("res://Scenes/main/TitleScreen.tscn")
+	SceneRouter.goto_scene("res://ui/title_screen.tscn")
