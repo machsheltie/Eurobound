@@ -2,7 +2,7 @@ extends Node
 ## Loads all game data JSON at startup. The ONLY module that touches Assets/Data.
 ## Content is never hardcoded elsewhere; unknown IDs fail loud.
 
-const DATA_ROOT := "res://Assets/Data/"
+const DATA_ROOT := "res://assets/data/"
 
 var _party: Dictionary = {}
 var _enemies: Dictionary = {}
