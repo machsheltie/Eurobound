@@ -521,7 +521,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 
 ### Quote Potential:
 - "NO DIVING (SERIOUSLY, IT'S 40cm)"
-- "Fifty koruna for the shower. Forty if you go now."
+- "Fifty Sovs for the shower. Forty if you go now."
 - "Three today. Personal best is five. I keep a chart."
 - "Unfortunately, bro."
 

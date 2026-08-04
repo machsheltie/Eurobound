@@ -54,8 +54,6 @@ It is never *funny on purpose*. It is funny because it is extremely serious abou
 
 **Koruna does not exist.** This is not a real continent and there is no koruna. Any surviving koruna/Kč reference is a defect (Lane R owns elimination). The same now applies to euros.
 
-**Koruna does not exist.** This is not a real continent and there is no koruna. Any surviving koruna/Kč reference is a defect (Lane R owns elimination).
-
 ### 1.3a Price-tier marks (binding — art and UI)
 
 Some shops rank goods by expense rather than printing a figure (bargain-bin tags, menu boards, market stalls). Because there is no currency glyph, tiers are lettered:

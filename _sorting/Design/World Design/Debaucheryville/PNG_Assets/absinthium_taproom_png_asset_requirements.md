@@ -29,21 +29,21 @@ This document provides exact specifications for all PNG files needed for The Abs
 ```
 assets/sprites/locations/debaucheryville/absinthium_taproom/
 ├── environment/
-│   └── absynthium_taproom_environment_complete.png
+│   └── absinthium_taproom_environment_complete.png
 ├── npcs/
-│   └── absynthium_npcs.png
+│   └── absinthium_npcs.png
 ├── objects/
-│   └── absynthium_interactive_objects.png
+│   └── absinthium_interactive_objects.png
 ├── effects/
-│   └── absynthium_particle_effects.png
+│   └── absinthium_particle_effects.png
 └── ui/
-    └── absynthium_ui_elements.png
+    └── absinthium_ui_elements.png
 ```
 
 ---
 
-## 🎨 Sprite Sheet 1: Absynthium Taproom Environment Complete
-**File:** `absynthium_taproom_environment_complete.png`  
+## 🎨 Sprite Sheet 1: Absinthium Taproom Environment Complete
+**File:** `absinthium_taproom_environment_complete.png`  
 **Dimensions:** 1024x768 pixels  
 **Color Palette:** #00FF41 (spectral green), #4B0082 (void purple), #000000 (reality black), #ADFF2F (green yellow)
 
@@ -103,8 +103,8 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 
 ---
 
-## 🍷 Sprite Sheet 2: Absynthium Interactive Objects
-**File:** `absynthium_interactive_objects.png`  
+## 🍷 Sprite Sheet 2: Absinthium Interactive Objects
+**File:** `absinthium_interactive_objects.png`  
 **Dimensions:** 512x384 pixels  
 **Color Palette:** #00FF41 (spectral green), #FFD700 (chalice gold), #4B0082 (void purple)
 
@@ -157,8 +157,8 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 
 ---
 
-## 👥 Sprite Sheet 3: Absynthium NPCs
-**File:** `absynthium_npcs.png`  
+## 👥 Sprite Sheet 3: Absinthium NPCs
+**File:** `absinthium_npcs.png`  
 **Dimensions:** 512x384 pixels  
 **Character Size:** 64x96 base sprites
 **Color Palette:** #00FF41 (spectral green), #FFFFFF (lab coat white), #708090 (patron grey)
@@ -214,8 +214,8 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 
 ---
 
-## ✨ Sprite Sheet 4: Absynthium Particle Effects
-**File:** `absynthium_particle_effects.png`  
+## ✨ Sprite Sheet 4: Absinthium Particle Effects
+**File:** `absinthium_particle_effects.png`  
 **Dimensions:** 512x256 pixels  
 **Color Palette:** #00FF41 (spectral green), #4B0082 (void purple), #ADFF2F (green yellow)
 
@@ -281,8 +281,8 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 
 ---
 
-## 🎮 Sprite Sheet 5: Absynthium UI Elements
-**File:** `absynthium_ui_elements.png`  
+## 🎮 Sprite Sheet 5: Absinthium UI Elements
+**File:** `absinthium_ui_elements.png`  
 **Dimensions:** 512x256 pixels  
 **Color Palette:** #00FF41 (spectral green), #DC143C (danger red), #FFD700 (gold)
 
@@ -293,9 +293,9 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 - **Icon Cured** (96, 0, 32x32) - Status removal visual
 
 ### Brewery Tour Progress:
-- **Checkpoint 1 Complete** (0, 32, 64x32) - Absynthium cleared (green)
+- **Checkpoint 1 Complete** (0, 32, 64x32) - Absinthium cleared (green)
 - **Checkpoint 1 Incomplete** (64, 32, 64x32) - Not yet visited (grey)
-- **Absynthium Icon** (128, 32, 32x32) - Location identifier
+- **Absinthium Icon** (128, 32, 32x32) - Location identifier
 - **1 of 4 Display** (160, 32, 48x16) - Progress counter
 
 ### Mirror Portal Indicators:
@@ -521,11 +521,11 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 
 | # | Filename | Dimensions |
 |---|----------|------------|
-| 1 | absynthium_taproom_environment_complete.png | 1024x768 |
-| 2 | absynthium_interactive_objects.png | 512x384 |
-| 3 | absynthium_npcs.png | 512x384 |
-| 4 | absynthium_particle_effects.png | 512x256 |
-| 5 | absynthium_ui_elements.png | 512x256 |
+| 1 | absinthium_taproom_environment_complete.png | 1024x768 |
+| 2 | absinthium_interactive_objects.png | 512x384 |
+| 3 | absinthium_npcs.png | 512x384 |
+| 4 | absinthium_particle_effects.png | 512x256 |
+| 5 | absinthium_ui_elements.png | 512x256 |
 
 **Total Estimated Memory:** ~45 MB (in-memory budget including atlas overhead)
 
@@ -534,11 +534,11 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files (5 Total):
-- [ ] `absynthium_taproom_environment_complete.png` (1024x768)
-- [ ] `absynthium_interactive_objects.png` (512x384)
-- [ ] `absynthium_npcs.png` (512x384)
-- [ ] `absynthium_particle_effects.png` (512x256)
-- [ ] `absynthium_ui_elements.png` (512x256)
+- [ ] `absinthium_taproom_environment_complete.png` (1024x768)
+- [ ] `absinthium_interactive_objects.png` (512x384)
+- [ ] `absinthium_npcs.png` (512x384)
+- [ ] `absinthium_particle_effects.png` (512x256)
+- [ ] `absinthium_ui_elements.png` (512x256)
 
 ### Quality Requirements:
 - **Format:** PNG-24 with alpha channel

@@ -156,7 +156,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 |---------------|----------|------|-------------|
 | Cabinet Closed | (1344, 256) | 192x256 | Normal damaged cabinet, concealing passage |
 | Cabinet Opening | (1536, 256) | 192x256 | Swinging aside, revealing passage |
-| Hidden Passage Visible | (1728, 256) | 192x256 | Absynthium Taproom access revealed |
+| Hidden Passage Visible | (1728, 256) | 192x256 | Absinthium Taproom access revealed |
 | Secret Entrance Glow | (1920, 256) | 64x96 | Discovery indicator green glow |
 
 ### Universal Cabinet Elements:
@@ -442,7 +442,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | NFT Hunt | Claw machine, NFT prize sprite | Beer Pong Saint Relic acquisition |
-| Brewery Tour | Cracked Time Crisis, hidden passage | Absynthium Taproom access |
+| Brewery Tour | Cracked Time Crisis, hidden passage | Absinthium Taproom access |
 | Couchsurf System | (NPC sprites separate) | Backpack Girl interaction |
 | Sinfonia Prep | Hidden Game Boy (discoverable item) | Symbol puzzle preparation |
 | Hidden Bathroom | DDR machine, token slot | 3-token unlock mechanic |
@@ -450,7 +450,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Absynthium Taproom | Time Crisis passage sprites | Green glow intensifies, fade transition |
+| Absinthium Taproom | Time Crisis passage sprites | Green glow intensifies, fade transition |
 | Claw Machine Maintenance Closet | DDR token progress sprites | Mechanical grinding, door reveal |
 | Clocktower Plaza | (Exterior handled separately) | Arcade sounds fade, plaza ambience rises |
 
@@ -597,4 +597,4 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 | No Crypto Elements | ✅ PASS | Beer Pong Saint Relic NFT is satirical and established in source material; no functional crypto |
 | Social Media Integration | ✅ PASS | Multiple viral moments identified |
 
-**Once validated, the Absinthe Arcade becomes the psychedelic quest hub where players experience corrupted gaming nostalgia, meet Backpack Girl Who Never Left, obtain the Beer Pong Saint Relic NFT from a rigged claw machine, discover hidden passages to the Absynthium Taproom and secret bathroom, and play parody arcade games while bros think they're experiencing sophisticated underground European culture!**
+**Once validated, the Absinthe Arcade becomes the psychedelic quest hub where players experience corrupted gaming nostalgia, meet Backpack Girl Who Never Left, obtain the Beer Pong Saint Relic NFT from a rigged claw machine, discover hidden passages to the Absinthium Taproom and secret bathroom, and play parody arcade games while bros think they're experiencing sophisticated underground European culture!**

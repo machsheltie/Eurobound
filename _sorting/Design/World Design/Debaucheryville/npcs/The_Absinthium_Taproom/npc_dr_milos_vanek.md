@@ -49,7 +49,7 @@ Every single thing they read as aesthetic is functional. The lab coat is a lab c
 - Behind him, glowing green liquid drips continuously from the bar's crack into a void with no bottom. He has never once looked at it
 
 ### Sprite Notes
-Mad-scientist read must come from *credibility*, not caricature — no wild hair, no goggles, no cackling. He should look like a man who could still be teaching. The monocle and the notebook are the two silhouette-defining props. Palette per `absinthium_taproom_png_asset_requirements.md`: spectral green (#00FF41) on lab-coat white (#FFFFFF) against void purple (#4B0082). Per Sprite Sheet 3 (`absynthium_npcs.png`, 512x384, 64x96 base) he is the **"Monocle Bartender (Lab Coat)"** entry with six poses: Idle Professional, Dispensing Brew, Adjusting Monocle, Ominous Stare, Lab Coat Detail, and Lawsuit Commentary Pose.
+Mad-scientist read must come from *credibility*, not caricature — no wild hair, no goggles, no cackling. He should look like a man who could still be teaching. The monocle and the notebook are the two silhouette-defining props. Palette per `absinthium_taproom_png_asset_requirements.md`: spectral green (#00FF41) on lab-coat white (#FFFFFF) against void purple (#4B0082). Per Sprite Sheet 3 (`absinthium_npcs.png`, 512x384, 64x96 base) he is the **"Monocle Bartender (Lab Coat)"** entry with six poses: Idle Professional, Dispensing Brew, Adjusting Monocle, Ominous Stare, Lab Coat Detail, and Lawsuit Commentary Pose.
 
 ---
 
@@ -414,13 +414,13 @@ Czech, educated, precise. Academic cadence that survived the departure from acad
 - **Status**: Drafted
 - **Profile File Location**: `Design/World Design/Debaucheryville/npcs/The_Absinthium_Taproom/npc_dr_milos_vanek.md`
 - **Registered In**: No — The Absinthium Taproom has **no** `the_absinthium_taproom_npcs.json`. One must be created; it will need Dr. Vaněk, "The Philosopher" (couchsurf host), the two Whispering Patrons, and pointers to Mirror Chad and the Green Fairy Wisp as enemies rather than NPCs.
-- **Sprite Sheet**: `absynthium_npcs.png` (512x384, 64x96 base sprites; Vaněk is the "Monocle Bartender (Lab Coat)" row at y=0 with six poses, per `PNG_Assets/absinthium_taproom_png_asset_requirements.md` Sprite Sheet 3). Note the source PNG spec's filename spells the location "absynthium" while the location file spells it "Absinthium" — **filename discrepancy, flagged**.
+- **Sprite Sheet**: `absinthium_npcs.png` (512x384, 64x96 base sprites; Vaněk is the "Monocle Bartender (Lab Coat)" row at y=0 with six poses, per `PNG_Assets/absinthium_taproom_png_asset_requirements.md` Sprite Sheet 3). Note the source PNG spec's filename spells the location "absinthium" while the location file spells it "Absinthium" — **filename discrepancy, flagged**.
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — authored from `the_absinthium_taproom.md` (character spec, opener checks, stamp speech, serving dialogue, cross-brewery lines, pricing) and `PNG_Assets/absinthium_taproom_png_asset_requirements.md` (Sprite Sheet 3 pose list). Flagged diacritics ruling, "Prague" leak, and the absynthium/Absinthium filename discrepancy | machsheltie |
+| 2026-08-01 | Initial profile — authored from `the_absinthium_taproom.md` (character spec, opener checks, stamp speech, serving dialogue, cross-brewery lines, pricing) and `PNG_Assets/absinthium_taproom_png_asset_requirements.md` (Sprite Sheet 3 pose list). Flagged diacritics ruling, "Prague" leak, and the absinthium/Absinthium filename discrepancy | machsheltie |
 | 2026-08-01 | Diacritics ruling applied — name normalized to **Dr. Miloš Vaněk** in display text across this profile, `the_absinthium_taproom.md`, the Inventory brewery-tour docs, and every cross-referencing NPC profile; identifiers, filenames, and sprite paths untouched | machsheltie |
 
 ---
