@@ -74,6 +74,23 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
   ruling; do not relitigate in the brands sweep).
 - **Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
   idea.
+- **Shamsterdam's 4 brewery names** (author to mint; ruled 2026-08-04 that every city has 4
+  breweries): rename "Brouwerij de Molen" (REAL Dutch brewery — brand liability, zero joke)
+  and "Proeflokaal 't Kansen" (generic Dutch, no satire; keep Kees + jenever-distillery
+  character, name only), plus invent 2 new establishments. Sweep references after minting.
+
+## Brewery Tour — RULED 2026-08-04 (canonical spec: design/quests/general_quests/brewerytour.md)
+
+All five design forks resolved by author: (1) keychain = ONE item, openers = one per brewery
+EARNED on challenge completion (vendor sales + ICQ opener sales DEAD); (2) 16 breweries
+(4×4); (3) Legendary Hangovers = named CONSUMABLES (Full Irish Experience / Neon Nightmare /
+Imperial Concerto / Canal Courage — the last is a consumable, not a passive); (4) stamps
+earned on challenge completion + brewmaster selfie honor; selfie/scrapbook layer KEPT, Chadwick
+posts to his feed; (5) Publandia special-beer order = the one-time trigger granting keychain +
+first opener + passport book. **Queued content round:** decompose into per-item .md files
+(keychain, 16 stamps, 16 openers, 16 beers, passport book) + merge the six legacy brewery
+docs (all six stay until then; master spec overrides on conflict). Merge map is in the five
+analyst reports from this session; contradictions list included.
 
 ## Standing rulings recorded this round (so no future pass relitigates them)
 

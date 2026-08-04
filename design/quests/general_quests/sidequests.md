@@ -1,7 +1,7 @@
 SideQuests
 
-1 Brewery Tour Sidequest Mechanics:
-    • Each European city has 2-3 local breweries to "discover" 
-    • Finding them adds their opener to your collection AND unlocks their regional beer as a consumable 
-    • Complete a city's brewery tour = unlock that city's "Legendary Hangover" ultimate consumable 
-    • Full European brewery tour completion = "Continental Beer Master" achievement that gives permanent +1 to all alcohol-based item effects
+1 Brewery Tour Sidequest — CANONICAL SPEC LIVES IN `brewerytour.md` (author-ruled 2026-08-04):
+    • 4 cities × 4 breweries = 16 total
+    • Publandia trigger: order the special beer → keychain + first opener + passport book
+    • Per brewery: order special beer → challenge (micro-dungeon) → stamp + brewmaster selfie + opener + beer unlocked
+    • City complete = named Legendary Hangover consumable; all 16 = "Continental Beer Master" (+1 all alcohol-based item effects)
