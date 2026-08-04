@@ -3,7 +3,7 @@
 ## 📋 Overview
 **Location ID:** `debaucheryville_transit_tram_stop_17_01`  
 **Theme:** Eternal waiting, absurdist persistence, a man becoming a landmark  
-**Zone:** Central District, between Absinthe Arcade and Old Town  
+**Zone:** Central District, between Absinthe Arcade and the Gilded Square  
 **Hours:** Always (Jiří never leaves)
 
 ---
