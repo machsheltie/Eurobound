@@ -210,6 +210,7 @@
       "dialogue": {
         "greeting": "Psst. Americans, yes? You want... the VIP experience?",
         "pitch": "These wristbands open ALL doors. Level Seven access. Highest tier.",
+        "pitch_venues": "Velvet Curtain Club. Absinthe Arcade VIP section. Even places tourists don't know exist.",
         "reassurance": "The bouncers, they see this, they KNOW. No waiting. No cover. Pure VIP.",
         "translation_lie": "It says 'Level Seven Access.' Highest tier. Only for VIPs.",
         "post_sale": "You are now Level Seven. Use wisely.",

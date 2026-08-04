@@ -72,7 +72,7 @@ Should scream "guy who sells stuff out of his coat" energy. Think unlicensed tic
 > "Level Seven! I can't believe I said that and they BOUGHT it. Americans are incredible. They WANT to believe they're special. I'm basically a therapist who takes cash."
 
 ### Motivation
-Simple economics. The wristbands cost nothing. The tourists have money. The clubs are free to enter anyway. He's just... facilitating an experience. A premium experience. Worth every Sov.
+Simple economics. The wristbands cost nothing — bulk-bought children's party supplies at 0.003 Sovs each, sold at 30 Sovs (a 999,900% profit margin he has never calculated and would be very proud of). The tourists have money. The clubs are free to enter anyway. He's just... facilitating an experience. A premium experience. Worth every Sov.
 
 ---
 
