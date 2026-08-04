@@ -17,6 +17,17 @@
 - **Platform sweep 2026-08-03:** mobile/iOS/App Store references replaced repo-wide with Steam/desktop; App Store marketing docs banner-marked as stale history.
 - The old PRD branch `claude/eurobound-jrpg-prd-uv5iog` is dead and must never be merged or treated as canon. The salvaged, author-corrected PRD lives on `claude/claude-md-game-guidelines-68oyd0`.
 
+## Paused mid-interview 2026-08-04 (author researching — resume from here)
+
+**Finale interview** (author chose "interview me"): Q1 answered — Shamsterdam is the final city. Q2 answered — order Publandia → Debaucheryville → Sinfonia → Shamsterdam, visited cities stay open for backtracking. **Q3 pending: what is the finale beat itself in Shamsterdam** (last blowout / final boss / money-runs-out / author's own shape). Author is thinking it through; do not invent.
+
+**Other open author decisions:**
+- Publandia dungeon: author wants NON-food concept; pitches on the table: The Dead Poets' Lock-In (literary-heritage ghosts, recommended), The Craic Mines, The Eternal Students' Union, The Bookies' Labyrinth. Needs pick + its own boss (villain template mandatory).
+- The Golden Cutlet: enemy roster proposal (8 types + Schnitzel King) awaiting author kill/swap approval; NFT placement proposal = Heritage Pass fine-print QR as an alternate route to one of Sinfonia's four (Holographic Charizard suggested) — author to pick or veto.
+- Rival Trio reconciliation awaiting confirm: the single game-wide appearance = the Craic Tax showdown awarding Pogs (per the author's FINAL Publandia NFT roster); Debaucheryville/Sinfonia showdowns stay dead.
+- NFT card copy (Tagline/Description/Collector's Thesis) for the seven replacement NFTs: AUTHOR WRITES ONLY, blocks are empty on purpose.
+- Shamsterdam city boss + quest skeleton: undefined, author's to dictate. Steam price point: open. Deluxe Roast Pack DLC: open. macOS support: open. Golden Cutlet venue doc + villain profiles: to be written from templates once roster approved.
+
 **State at pause:** Rounds 1–4 landed and pushed to `origin/main`. Round 5 (Economy/Wallet/Crypto)
 spec is approved-in-substance and committed; its PLAN and EXECUTION have NOT started — paused by
 author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown` (same as main).
