@@ -1,5 +1,5 @@
 {
-  "location_id": "debaucheryville_oldtown_euro_ink_4_less_01",
+  "location_id": "debaucheryville_gilded_square_euro_ink_4_less_01",
   "display_name": "Euro Ink 4 Less",
   "satirical_subtitle": "No Appointment. No Regrets. Mostly No Regrets.",
   "world": "debaucheryville",
@@ -26,13 +26,13 @@
   "exits": [
     {
       "exit_id": "to_astronomical_cockup_square",
-      "destination": "debaucheryville_oldtown_astronomical_cockup_square_01",
+      "destination": "debaucheryville_gilded_square_astronomical_cockup_square_01",
       "direction": "west_alley",
       "requirements": null
     },
     {
       "exit_id": "to_kebab_shop",
-      "destination": "debaucheryville_oldtown_24hr_kebab_01",
+      "destination": "debaucheryville_gilded_square_24hr_kebab_01",
       "direction": "north_adjacent",
       "requirements": null
     }

@@ -500,7 +500,7 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Absinthe Arcade | Street exit south (1 block) | Standard street fade |
-| Old Town / Astronomical Cock-Up Square | Street exit north (2 blocks); Jiří's directions reference it by tram stops | Standard street fade |
+| The Gilded Square / Astronomical Cock-Up Square | Street exit north (2 blocks); Jiří's directions reference it by tram stops | Standard street fade |
 | Metro Station Entrance | Visible east (2 blocks) — the one Jiří refuses to use; background dressing only | None (pointed at, never entered from here) |
 | Velvet Curtain district | Tram #9 livery passes toward it | Background tram scroll |
 | Hostel district | Tram #22 livery passes toward it | Background tram scroll |

@@ -34,7 +34,7 @@
   "exits": [
     {
       "exit_id": "to_old_town_streets",
-      "destination": "debaucheryville_oldtown_streets_01",
+      "destination": "debaucheryville_gilded_square_streets_01",
       "direction": "landward",
       "requirements": null
     },

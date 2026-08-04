@@ -22,7 +22,7 @@
 - **Special Conditions**: Entering the `fauxst_beach` zone on any active filming day auto-triggers Petra's sign-up dialogue at `signup_table`; this is the entry point for `debaucheryville_sidequest_bacchanus_beach_beatdown_01`
 
 ### Exit Conditions
-- **Normal Exit**: Old Town streets (landward), riverside gear path to The Cirque du Shady (downriver)
+- **Normal Exit**: Gilded Square streets (landward), riverside gear path to The Cirque du Shady (downriver)
 - **Completion Requirements**: None to leave; the Beatdown can be declined, delayed, or completed on any visit
 - **Failure States**: N/A in the traditional sense — per quest design, a minimum of two of the three bros are always launched into The Bacchanus regardless of player skill; this is the broadcast format, not a difficulty setting
 - **Progressive Unlocks**:
@@ -64,16 +64,16 @@
 │              ░░░░░░ NIGHT PARTY ZONE (after dark) ░░░░░░               │
 │         string lights, sound system, unlocks after Beatdown resolves   │
 └──────────────────────────────────────────────────────────────────────┘
-       ← To Old Town Streets                    To The Cirque du Shady →
+       ← To Gilded Square Streets                    To The Cirque du Shady →
                                             (Shady Productions gear path)
 ```
 
 ### Exterior Description
-- **Approach**: A cobblestone Old Town street narrows, dips, and then opens directly onto a raked ribbon of imported sand laid over embankment concrete — the transition is instant and slightly absurd, like walking into a diorama. The Bacchanus itself is visible the entire time: a slow, murky river doing its level best to look like a coastline.
+- **Approach**: A cobblestone Gilded Square street narrows, dips, and then opens directly onto a raked ribbon of imported sand laid over embankment concrete — the transition is instant and slightly absurd, like walking into a diorama. The Bacchanus itself is visible the entire time: a slow, murky river doing its level best to look like a coastline.
 - **Entrance**: No gate, no threshold — the sand simply starts. A sun-faded wooden signpost reads "THE BOHEMIAN RIVIERA" in beach-vacation script font, with a smaller, laminated card zip-tied underneath listing the sand's delivery manifest number, "for insurance purposes."
 - **Signage**: Official: "THE BOHEMIAN RIVIERA — Debaucheryville's #1 Beach Destination" (there is no #2). Production: a sagging vinyl banner over the catapult reading **"BEATDOWN — LÉTO — SEZÓNA 22."** Safety: the "NO DIVING (SERIOUSLY, IT'S 40cm)" sign, hand-lettered, zip-tied to the lifeguard tower ladder.
 - **Atmosphere**: Beach-resort ambition performed at full volume on a landlocked river — Eurodance bleeding from three separate bar sound systems that never quite sync, the occasional EMTV crane swinging into frame, gulls that are almost certainly just pigeons that have been on the sand long enough to develop an accent.
-- **Environmental Context**: Bordered by Old Town's tourist sprawl to the west and a quieter riverside path east toward The Cirque du Shady, used by Shady Productions to move gear (and, on filming days, Hamstradamus) between the two venues.
+- **Environmental Context**: Bordered by the Gilded Square District's tourist sprawl to the west and a quieter riverside path east toward The Cirque du Shady, used by Shady Productions to move gear (and, on filming days, Hamstradamus) between the two venues.
 
 ### Interior Visuals — Zone by Zone
 
@@ -317,7 +317,7 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 ## Connected Locations
 
 ### Directly Adjacent
-- **Old Town Streets**: Landward exit, general exploration and vendor-cluster access (Astronomical Cock-Up Square, etc.)
+- **Gilded Square Streets**: Landward exit, general exploration and vendor-cluster access (Astronomical Cock-Up Square, etc.)
 - **Riverside Embankment Path**: Runs the length of the strip past all bar-strip venues and the retrieval station
 
 ### Quest-Connected

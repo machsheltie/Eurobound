@@ -486,7 +486,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | The Cirque du Shady | Riverside gear path; prize_pallet_2003.png must visually match the office-edge pallet in `Cirque_du_Shady_PNG_Assets.md` (same physical stock); Hamstradamus beach variant travels this route on filming days | Embankment path walk, production gear traffic on filming days |
 | Astronomical Cock-Up Square | Beatdown-outcome callback — Shady Wristband Guy recognizes "the toilet men... from the television" | Dialogue callback post-resolution |
 | Velvet Curtain Club | Badge-flash scene (WIN) or bouncer half-step-back scene (LOSS) | Door-scene callback post-resolution |
-| Old Town Streets | Landward exit, cobblestone-to-sand transition tile | Instant diorama-style transition per profile |
+| Gilded Square Streets | Landward exit, cobblestone-to-sand transition tile | Instant diorama-style transition per profile |
 
 ---
 

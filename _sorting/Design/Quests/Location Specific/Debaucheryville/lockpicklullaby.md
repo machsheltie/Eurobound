@@ -1,6 +1,6 @@
 Lockpick Lullaby
 
-Premise: A street musician’s case is stolen into the Old Town “pickpocket maze.”
+Premise: A street musician’s case is stolen into the Gilded Square District “pickpocket maze.”
 
 Gameplay: Overworld puzzle where NPCs shuffle unpredictably. Bumping one can trigger a sleight-of-hand mini-game (lose gold if failed).
 

@@ -3,7 +3,7 @@
 ## 📋 Overview
 **Location ID:** `debaucheryville_circus_cirque_du_shady_01`
 **Theme:** A traveling circus that stopped traveling in 1997 — a full-stack carnival grift ecosystem stitched from a rigged game alley, a garbage-prize booth, a food cart, a prophecy tent, a performance circle, and a reality-TV production office running off a folding table and a fax machine
-**Zone:** Circus Grounds, edge of Old Town
+**Zone:** Circus Grounds, edge of the Gilded Square District
 **Hours:** 14:00–01:00 daily; Beatdown filming days shift traffic toward the riverside gear path (see parent profile's Time-of-Day Variations)
 
 **Scope note:** This document specs only the assets new to this parent-grounds document — the gate, big top exterior, Vance's tent, the Shady Productions office, the knife-throwing act, game alley, and ICQ backroom. The prize booth and mystery meat cart keep their own already-published PNG asset docs (`Mystery_Meat_Cart_Complete_PNG_Asset_Requirements.md` and equivalents); this document does not duplicate or re-spec those files' assets. The prophecy tent's own performer — Hamstradamus — is not covered by a separate PNG asset doc; his sprite sheets (`hamstradamus.png`, `hamstradamus_tent_variant.png`, `hamstradamus_beach_variant.png`) are specced in `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md`, which owns his animation states. Bobo's performance spot sprites remain owned by his own profile's implementation pass, per Sprite Sheet 6's Technical Notes below.
@@ -64,11 +64,11 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | Entrance Arch | (0, 0) | 384x256 | "THE CIRQUE DU SHADY" hand-lettered arch, Faded Big-Top Red trim |
 | Neon Marquee Overlay | (384, 0) | 256x128 | Night-only glow layer, Neon Marquee Pink |
 | Rope Line + Posts | (640, 0) | 192x64 | Decorative, never actually holds back a crowd |
-| Trampled-Grass-to-Sawdust Transition | (0, 256) | 512x128 | Old Town cobblestone → circus grounds ground tile |
+| Trampled-Grass-to-Sawdust Transition | (0, 256) | 512x128 | Gilded Square cobblestone → circus grounds ground tile |
 
 ### Technical Notes:
 - Marquee glow layer is a separate additive overlay so it can be toggled off for day/night without re-rendering the arch base
-- Ground transition tile is designed to tile-repeat along the approach path from Old Town
+- Ground transition tile is designed to tile-repeat along the approach path from the Gilded Square District
 
 ---
 
@@ -412,7 +412,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Old Town Streets | main_gate_and_marquee, trampled-grass-to-sawdust transition tile | Approach smell/sound before the gate is visible; standard street fade |
+| Gilded Square Streets | main_gate_and_marquee, trampled-grass-to-sawdust transition tile | Approach smell/sound before the gate is visible; standard street fade |
 | The Bohemian Riviera | Riverside gear path from `shady_productions_office`; prize_pallet_2003_office must visually match `prize_pallet_2003.png` in `Bohemian_Riviera_PNG_Assets.md` (same merchandise stock, two storage locations) | Gear-path walk; visible production traffic on filming days |
 | Prize Booth (`the_participation_trophy.md`) | Vance's loot-crate voucher pitch hands off to Yolanda's counter | Two-zone transaction: pitch at his tent, fulfillment at `prize_booth` |
 | Fauxst Beach (filming days) | Hamstradamus travels the gear path between `prophecy_tent` and `prize_podium` | His tent sits dark/glow-idle while he is absent |

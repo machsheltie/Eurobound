@@ -3,9 +3,9 @@
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Shadow Exchange underground bazaar. Each sprite sheet includes pixel-perfect coordinates, color specifications, and animation requirements for this officially unofficial economic hub.
 
-**Location ID:** `debaucheryville_oldtown_shadow_exchange_01`
+**Location ID:** `debaucheryville_gilded_square_shadow_exchange_01`
 **Theme:** Old-world bank vault meets post-Soviet flea market — "Best Rates If You Don't Ask" financial grey-market satire
-**Zone:** Sub-basement beneath Old Town backstreets
+**Zone:** Sub-basement beneath Gilded Square backstreets
 **Hours:** Always accessible once discovered (hidden cobblestone entrance behind market square, marked by "cash-only" candle)
 **Primary Function:** Underground shop & economic hub — split-flap rate board mini-game, barter window, UV counterfeit checks, shady contracts, NFT hunt ledger, couchsurf trigger, Premium Stock post-boss unlock
 
@@ -25,7 +25,7 @@ This document provides exact specifications for all PNG files needed for the Sha
 
 ## 📁 File Structure
 ```
-assets/sprites/locations/debaucheryville/oldtown/
+assets/sprites/locations/debaucheryville/gilded_square/
 ├── shadow_exchange_underground_complete.png
 ├── split_flap_rate_board_system.png
 ├── crt_monitor_wall_markets.png
@@ -524,7 +524,7 @@ assets/sprites/locations/debaucheryville/oldtown/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Debaucheryville — Old Town sub-basement only |
+| World Consistency (no real city names) | ✅ | Debaucheryville — Gilded Square sub-basement only |
 | Cultural Specificity | ✅ | Post-communist grey-market economy adapted for Western tourist currency confusion |
 | Satirical Targets Appropriate | ✅ | Exploitative currency practices and financially desperate tourists — not legitimate local commerce |
 | Seedy Underbelly Present | ✅ | Black-market bazaar, counterfeit trading, notoriety/"verification fee" racket |

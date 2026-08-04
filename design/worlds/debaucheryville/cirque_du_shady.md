@@ -7,7 +7,7 @@
 - **Display Name**: The Cirque du Shady
 - **Satirical Subtitle**: "A semi-permanent traveling circus that has not traveled since 1997"
 - **World Location**: Debaucheryville
-- **Area Zone**: Circus Grounds (edge of Old Town)
+- **Area Zone**: Circus Grounds (edge of the Gilded Square District)
 - **Location Type**: Quest Hub / Attraction Cluster / Production Company HQ
 
 **What this file is**: the parent grounds document that stitches the Cirque's existing, separately-profiled attractions into one navigable location. Where a zone already has its own file (the prize booth, the mystery meat cart, the prophecy tent, Bobo's performance spot), this document links to it, quotes its established facts, and adds nothing that contradicts it. Everything else on these grounds — the gate, the big top exterior, Ringmaster Vance's tent, the Shady Productions office, the knife-throwing act, the rigged game alley, and the ICQ backroom — is new content authored here for the first time.
@@ -20,11 +20,11 @@
 - **Time Restrictions**: Grounds open 14:00–01:00 daily. Individual attractions keep their own posted hours where established elsewhere (the prize booth: "whenever the circus is open"); this document sets that operating window.
 - **Stat Requirements**: None to enter the grounds
 - **Item Requirements**: None to enter; individual attractions have their own currency requirements (Circus Tickets at the prize booth, Kebab Coins at the mystery meat cart) per their own files
-- **Previous Location Requirements**: None — accessible from Old Town on arrival in Debaucheryville
+- **Previous Location Requirements**: None — accessible from the Gilded Square District on arrival in Debaucheryville
 - **Special Conditions**: On Beatdown filming days, Hamstradamus is physically absent from `prophecy_tent` (relocated to Fauxst Beach as prize-giver, per `hamstradamus.md`), and the riverside gear path out of `shady_productions_office` sees active foot traffic moving production equipment toward the Bohemian Riviera
 
 ### Exit Conditions
-- **Normal Exit**: Main gate (west, to Old Town Streets) or the riverside gear path out of `shady_productions_office` (east, to The Bohemian Riviera)
+- **Normal Exit**: Main gate (west, to Gilded Square Streets) or the riverside gear path out of `shady_productions_office` (east, to The Bohemian Riviera)
 - **Completion Requirements**: None — this is a hub, not a gated quest location
 - **Failure States**: N/A
 - **Progressive Unlocks**:
@@ -40,7 +40,7 @@
 ### The Grounds Layout
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│                    ← MAIN GATE (from Old Town Streets)                     │
+│                    ← MAIN GATE (from Gilded Square Streets)                     │
 │               🎫 Ticket Booth — "Admission 5 Sovs. Everything Else Extra."      │
 ├──────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
@@ -81,11 +81,11 @@
 | `icq_backroom` | ICQ terminal hotspot; Darkweb Dossier "hack-through" pop-ins | New — this document (characters per `debaucheryville.md`) |
 
 ### Exterior Description
-- **Approach**: Old Town cobblestones give way to trampled grass and sawdust well before the gate itself is visible — the smell (fried sugar, machine oil, something floral gone slightly wrong) arrives first
+- **Approach**: Gilded Square cobblestones give way to trampled grass and sawdust well before the gate itself is visible — the smell (fried sugar, machine oil, something floral gone slightly wrong) arrives first
 - **Entrance**: A single wooden ticket booth flanked by a rope line that has never once needed to hold back a real crowd. A hand-painted arch overhead reads "THE CIRQUE DU SHADY" in a font trying hard to look hand-lettered by someone with real showmanship
 - **Signage**: Main arch: "THE CIRQUE DU SHADY — EST. [date scratched out and re-painted three times, current reading illegible]." Ticket booth: "ADMISSION 5 Sovs. EVERYTHING ELSE EXTRA." Small taped-on addendum, clearly added later: "(THIS INCLUDES THE BATHROOM.)"
 - **Atmosphere**: A distorted calliope loop bleeds through everything; vape clouds drift from the direction of Vance's tent regardless of wind; the whole grounds smell faintly of fry oil and canvas mildew
-- **Environmental Context**: Sits at the edge of Old Town, with the big top itself visible from streets away — a faded red-and-cream dome that has clearly not moved, in any literal sense, in a very long time. The riverside gear path on the grounds' far side connects directly to the Bohemian Riviera's embankment path, the same route documented in `bohemian_riviera.md`'s Connected Locations section
+- **Environmental Context**: Sits at the edge of the Gilded Square District, with the big top itself visible from streets away — a faded red-and-cream dome that has clearly not moved, in any literal sense, in a very long time. The riverside gear path on the grounds' far side connects directly to the Bohemian Riviera's embankment path, the same route documented in `bohemian_riviera.md`'s Connected Locations section
 
 ### Interior Visuals — Zone by Zone
 
@@ -266,7 +266,7 @@ Vance's loot-crate line is a two-zone transaction by design: the pitch happens a
 ## Connected Locations
 
 ### Directly Adjacent
-- **Old Town Streets**: Landward exit via `main_gate`
+- **Gilded Square Streets**: Landward exit via `main_gate`
 - **Riverside Embankment Path**: Runs from `shady_productions_office` to the Bohemian Riviera's embankment path
 
 ### Quest-Connected

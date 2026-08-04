@@ -70,7 +70,7 @@
           "transition_type": "normal"
         },
         {
-          "destination": "public_restroom_oldtown",
+          "destination": "public_restroom_gilded_square",
           "direction": "west",
           "requirements": {
             "gold": 2

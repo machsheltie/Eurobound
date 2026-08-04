@@ -5,7 +5,7 @@
       "tag_id": "bohemian_riviera",
       "region": "Debaucheryville",
       "exterior": {
-        "description": "A cobblestone Old Town street narrows, dips, and opens directly onto a raked ribbon of imported sand laid over embankment concrete. The Bacchanus is visible the entire time, a slow murky river doing its level best to look like a coastline. No gate, no threshold — the sand simply starts, marked by a sun-faded 'THE BOHEMIAN RIVIERA' signpost with a delivery manifest number zip-tied underneath. A sagging vinyl banner over the catapult reads 'BEATDOWN — LETO — SEZONA 22.' Eurodance bleeds from three unsynced bar sound systems, an EMTV crane camera occasionally swings into frame, and gulls that are almost certainly pigeons work the sand.",
+        "description": "A cobblestone Gilded Square street narrows, dips, and opens directly onto a raked ribbon of imported sand laid over embankment concrete. The Bacchanus is visible the entire time, a slow murky river doing its level best to look like a coastline. No gate, no threshold — the sand simply starts, marked by a sun-faded 'THE BOHEMIAN RIVIERA' signpost with a delivery manifest number zip-tied underneath. A sagging vinyl banner over the catapult reads 'BEATDOWN — LETO — SEZONA 22.' Eurodance bleeds from three unsynced bar sound systems, an EMTV crane camera occasionally swings into frame, and gulls that are almost certainly pigeons work the sand.",
         "entry_condition": "Accessible anytime, 24/7. Entering fauxst_beach on any active filming day auto-triggers the Beatdown sign-up sequence."
       },
       "interior": {

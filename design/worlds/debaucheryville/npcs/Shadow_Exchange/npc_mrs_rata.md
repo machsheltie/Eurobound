@@ -8,7 +8,7 @@
 - **Internal Name**: Mrs. Rata, main clerk of the Shadow Exchange
 - **Role**: Main Clerk / Vendor (practical consumables) / Currency Conversion Authority / Notoriety Gatekeeper
 - **Associated Quest**: NFT Hunt (Shadow Ledger inspection is conducted at her counter); Premium Stock access post-Count Velvet Absinthe
-- **Primary Location**: Shadow Exchange, Debaucheryville — the main counter, sub-basement beneath Old Town backstreets
+- **Primary Location**: Shadow Exchange, Debaucheryville — the main counter, sub-basement beneath Gilded Square backstreets
 - **Secondary Appearances**: None. She has not been documented above ground
 
 ---

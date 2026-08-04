@@ -3,11 +3,11 @@
 *Old-world bank vault meets post-Soviet flea market - where everything feels officially unofficial and your money talks louder than you do*
 
 ## Location Identity
-- **Location ID**: debaucheryville_oldtown_shadow_exchange_01
+- **Location ID**: debaucheryville_gilded_square_shadow_exchange_01
 - **Display Name**: Shadow Exchange
 - **Satirical Subtitle**: "Best Rates If You Don't Ask"
 - **World Location**: Debaucheryville
-- **Area Zone**: Sub-basement beneath Old Town backstreets
+- **Area Zone**: Sub-basement beneath Gilded Square backstreets
 - **Location Type**: Underground Money Changer & Black-Market Bazaar
 
 ## Access & Requirements
@@ -246,7 +246,7 @@
 
 🎨 Shadow Exchange - PNG Asset Requirements
 File Structure:
-assets/sprites/locations/debaucheryville/oldtown/
+assets/sprites/locations/debaucheryville/gilded_square/
 ├── shadow_exchange_underground_complete.png
 ├── split_flap_rate_board_system.png
 ├── crt_monitor_wall_markets.png

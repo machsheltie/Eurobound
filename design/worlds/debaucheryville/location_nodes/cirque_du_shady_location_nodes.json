@@ -5,7 +5,7 @@
       "tag_id": "cirque_du_shady",
       "region": "Debaucheryville",
       "exterior": {
-        "description": "Old Town cobblestones give way to trampled grass and sawdust well before the gate itself is visible - the smell (fried sugar, machine oil, something floral gone slightly wrong) arrives first. A single wooden ticket booth flanked by a rope line that has never once needed to hold back a real crowd; a hand-painted arch overhead reads 'THE CIRQUE DU SHADY.' The big top itself is visible from streets away, a faded red-and-cream dome that has clearly not moved, in any literal sense, in a very long time.",
+        "description": "Gilded Square cobblestones give way to trampled grass and sawdust well before the gate itself is visible - the smell (fried sugar, machine oil, something floral gone slightly wrong) arrives first. A single wooden ticket booth flanked by a rope line that has never once needed to hold back a real crowd; a hand-painted arch overhead reads 'THE CIRQUE DU SHADY.' The big top itself is visible from streets away, a faded red-and-cream dome that has clearly not moved, in any literal sense, in a very long time.",
         "entry_condition": "Grounds open 14:00-01:00 daily; no stat, item, or previous-location requirements to enter."
       },
       "interior": {

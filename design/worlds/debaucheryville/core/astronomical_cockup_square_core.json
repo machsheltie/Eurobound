@@ -1,5 +1,5 @@
 {
-  "location_id": "debaucheryville_oldtown_astronomical_cockup_square_01",
+  "location_id": "debaucheryville_gilded_square_astronomical_cockup_square_01",
   "display_name": "Astronomical Cock-Up Square",
   "satirical_subtitle": "600 Years of Disappointment, 38 Seconds at a Time",
   "world": "debaucheryville",
@@ -23,13 +23,13 @@
   "exits": [
     {
       "exit_id": "to_old_town_streets",
-      "destination": "debaucheryville_oldtown_streets_01",
+      "destination": "debaucheryville_gilded_square_streets_01",
       "direction": "any",
       "requirements": null
     },
     {
       "exit_id": "to_euro_ink_4_less",
-      "destination": "debaucheryville_oldtown_euro_ink_01",
+      "destination": "debaucheryville_gilded_square_euro_ink_01",
       "direction": "east_alley",
       "requirements": {
         "triggered_by": "tattoo_decision_made"
@@ -37,7 +37,7 @@
     },
     {
       "exit_id": "to_clocktower_cafe",
-      "destination": "debaucheryville_oldtown_clocktower_cafe_01",
+      "destination": "debaucheryville_gilded_square_clocktower_cafe_01",
       "direction": "north",
       "requirements": null
     }

@@ -3,11 +3,11 @@
 *Where cultural tourists become permanent billboards for artistic misinterpretation*
 
 ## Location Identity
-- **Location ID**: `debaucheryville_oldtown_euro_ink_4_less_01`
+- **Location ID**: `debaucheryville_gilded_square_euro_ink_4_less_01`
 - **Display Name**: Euro Ink 4 Less
 - **Satirical Subtitle**: "No Appointment. No Regrets. Mostly No Regrets."
 - **World Location**: Debaucheryville
-- **Area Zone**: Old Town District, Alley off Astronomical Cock-Up Square
+- **Area Zone**: The Gilded Square District, Alley off Astronomical Cock-Up Square
 - **Location Type**: Service Shop / Quest Location / Comedy Set-Piece
 
 ---

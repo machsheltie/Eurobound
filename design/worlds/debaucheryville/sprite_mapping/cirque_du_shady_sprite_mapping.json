@@ -13,7 +13,7 @@
         "rope_line_and_posts": {"x": 640, "y": 0, "width": 192, "height": 64},
         "trampled_grass_to_sawdust_transition": {"x": 0, "y": 256, "width": 512, "height": 128}
       },
-      "note": "Marquee glow layer is a separate additive overlay, toggleable off for day/night without re-rendering the arch base. Ground transition tile is designed to tile-repeat along the approach path from Old Town."
+      "note": "Marquee glow layer is a separate additive overlay, toggleable off for day/night without re-rendering the arch base. Ground transition tile is designed to tile-repeat along the approach path from the Gilded Square District."
     },
     "ticket_booth": {
       "file": "ticket_booth.png",

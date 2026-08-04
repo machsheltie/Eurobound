@@ -1,9 +1,9 @@
 # Euro Ink 4 Less - Complete PNG Asset Requirements
 
 ## 📋 Overview
-**Location ID:** `debaucheryville_oldtown_euro_ink_4_less_01`  
+**Location ID:** `debaucheryville_gilded_square_euro_ink_4_less_01`  
 **Theme:** Budget tattoo parlor where skeletons become ducks through "artistic interpretation"  
-**Zone:** Old Town District, Alley off Astronomical Cock-Up Square  
+**Zone:** The Gilded Square District, Alley off Astronomical Cock-Up Square  
 **Hours:** 10:00 - 02:00
 
 ---
