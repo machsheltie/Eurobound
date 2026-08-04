@@ -1,5 +1,10 @@
 {
   "location_id": "debaucheryville_gilded_square_astronomical_cockup_square_01",
+  "design_notes": {
+    "scammer_ecosystem": "The square around the Astronomical Cock-Up is a finely-tuned tourist extraction machine. Each scammer has a specific role, and they all know each other - occasionally nodding or making eye contact across the crowd. They are professionals.",
+    "comedy_principle": "Players see through every scam instantly. Bros fall for all of them enthusiastically.",
+    "recurring_appearances": "Several of these NPCs appear throughout the game in other cities, creating callback humor."
+  },
   "npcs": [
     {
       "npc_id": "viewing_spot_scammer_01",
