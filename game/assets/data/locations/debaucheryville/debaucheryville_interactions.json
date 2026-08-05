@@ -323,8 +323,8 @@
         }
       }
     },
-    "debaucheryville_tapdatvault_01": {
-      "location_id": "debaucheryville_tapdatvault_01",
+    "debaucheryville_clocktower_tapdatvault_brewery_02": {
+      "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
       "display_name": "TapDatVault",
       "npcs_present": [
         {
@@ -1709,7 +1709,7 @@
         "brewery_tour_debaucheryville": {
           "quest_id": "continental_beer_master_debaucheryville_arc",
           "completion_tracking": "brew_lab_4_of_4_complete",
-          "previous_brewery": "tap_dat_vault_brewery_03",
+          "previous_brewery": "debaucheryville_clocktower_tapdatvault_brewery_02",
           "achievement_unlock": "continental_beer_master_debaucheryville_achievement",
           "cross_brewery_connection": "all_4_breweries_provide_unique_brews_complete_tour_bonus"
         },
