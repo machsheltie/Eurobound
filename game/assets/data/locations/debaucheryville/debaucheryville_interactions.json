@@ -244,7 +244,7 @@
           "display_name": "Doner of Illusions™",
           "description": "spinning heap of shredded meat gummy bears and absinthe glaze",
           "price": {
-            "kebab_coins": 7
+            "sovs": 7
           },
           "effects": {
             "immediate": [
@@ -272,7 +272,7 @@
           "display_name": "Sausage of Suspicion",
           "description": "grey sweaty tube meat on a stick whispers when held",
           "price": {
-            "kebab_coins": 6
+            "sovs": 6
           },
           "effects": {
             "immediate": [
@@ -299,7 +299,7 @@
           "display_name": "Clown Dog Deluxe™",
           "description": "hot dog with red licorice bun mustard smiley and pop rocks relish",
           "price": {
-            "kebab_coins": 9
+            "sovs": 9
           },
           "effects": {
             "immediate": [
@@ -323,7 +323,7 @@
           "display_name": "Meatball on a Lollipop Stick",
           "description": "exactly what it sounds like",
           "price": {
-            "kebab_coins": 5
+            "sovs": 5
           },
           "effects": {
             "immediate": [
@@ -345,7 +345,7 @@
           "display_name": "Glizzénstein's Brain Brat",
           "description": "glowing sausage rumored to be part ai and part veal",
           "price": {
-            "kebab_coins": 12
+            "sovs": 12
           },
           "effects": {
             "immediate": [
@@ -470,7 +470,7 @@
       "audio_design": {
         "proximity_effects": "louder_when_approaching_cart_softer_when_moving_away"
       },
-      "_transcription_note": "Reconstructed 2026-08-05 (enrichment round) from design/legacy/debaucheryville_interactions_precorruption_recovery.json. Values verbatim from recovered lines; nesting rebuilt on the file's intact shadow-exchange schema; attribution per design-doc cross-reference (absinthearcade.md, clawmachinemaintenanceclosetrestroom.md, mysterymeatcart.md, Late-Night Kebab Stand.md, greatdonerdebate.md). Held-back lines and per-line judgment calls are ledgered in NEXT_WORK.md."
+      "_transcription_note": "Reconstructed 2026-08-05 (enrichment round) from design/legacy/debaucheryville_interactions_precorruption_recovery.json. Values verbatim from recovered lines; nesting rebuilt on the file's intact shadow-exchange schema; attribution per design-doc cross-reference (absinthearcade.md, clawmachinemaintenanceclosetrestroom.md, mysterymeatcart.md, Late-Night Kebab Stand.md, greatdonerdebate.md). Held-back lines and per-line judgment calls are ledgered in NEXT_WORK.md. AUTHOR RULING 2026-08-05: menu prices are SOVS (source soup said kebab_coins; the quest docs' Sovs pricing is canon)."
     },
     "debaucheryville_clocktower_arcade_01": {
       "location_id": "debaucheryville_clocktower_arcade_01",

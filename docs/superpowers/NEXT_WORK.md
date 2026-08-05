@@ -266,8 +266,9 @@ session archive after its silent ledger-write failure):
 
 **Held back, NOT transcribed (still safe in the recovery file), author's call someday:**
 
-- "This'll put hair on your chest! And possibly remove it too." — no doc anchor (Keghaus has
-  a similar-but-different line); owner unknown.
+- ~~"This'll put hair on your chest! And possibly remove it too."~~ — **KILLED by author
+  ruling 2026-08-05 ("cheesy")**; never place it anywhere. (The Three Crown Keghaus's
+  different hair-on-chest/depth-perception line was not part of this ruling and stands.)
 - `"interaction_type": "cultural_artifact_examination"` — no confident home.
 - Machine `token_cost` values 2/3/4 for Frogger/Street Fighter/Kebab Kombat — per-machine
   mapping unknowable (only the DDR's 3-token cost is doc-anchored and transcribed).
@@ -275,7 +276,7 @@ session archive after its silent ledger-write failure):
   three arcade-machine main-floor positions are census-derived (sets match, per-item pairing
   partly arbitrary); haiku-cluster lines split between the two haikus by subject-matter.
 
-**Flag for author (do not silently change):** the cart menu prices transcribe verbatim as
-`kebab_coins` 5/6/7/9/12, but greatdonerdebate.md and mysterymeatcart.md price the same items
-in Sovs. Same-numbers, different unit — needs a ruling whichever way (kebab_coins is an
-in-fiction alt-currency, so this is not automatically a euro-class violation).
+**RULED 2026-08-05 (author): cart menu prices are SOVS.** The soup's `kebab_coins` unit on
+the Mystery Meat Cart menu is superseded; the quest docs' Sovs pricing (5/6/7/9/12) is canon
+and the data record now uses `{"sovs": N}`. Do not relitigate. (Scope: this ruling covered
+the cart menu flag; kebab_coins as the arcade/shadow-exchange alt-currency was not touched.)
