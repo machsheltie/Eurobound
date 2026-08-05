@@ -681,3 +681,8 @@ TWO NEW NPCs REQUIRED (author-flagged): the tournament REFEREE (whistle, red car
 call, reluctantly presents the rigged ball) and the Trinity BREWMASTER (stamps the passport,
 obliviously smiling in the graduation selfie holding the opener + special beer). Identity/
 names pending next interview answer.
+
+**Trinity ruling addendum 5 (author):** Claude drafts BOTH new NPCs (referee + brewmaster)
+as full NPC-template profiles, ⚠ AUTHOR-REVIEW flagged, for author approval before they
+enter the files. The brewmaster draft carries Trinity's stamp speech (folds gap #12 into
+the review). Gaps #10/#12 (Trinity stamp animation + speech) route through these drafts.
