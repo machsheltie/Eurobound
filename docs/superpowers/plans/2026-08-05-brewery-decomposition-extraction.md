@@ -735,3 +735,7 @@ only), per the Debaucheryville city file.**
 for future beers.** Blockchain Bock stays 18 Sovs (±5 live re-roll — volatility is the
 satire); Tempo Tantrum 6; Waltz Weizen 7. No renumbering. The beer template's band line is
 transcribed as "guideline, not rule" in the signature-beer template notes.
+
+**Contradiction 4 RULED (author): the +5% Confused resistance belongs to the selfie set
+("Neon Photogenic" badge) ONLY. The "Debaucheryville Collector" achievement stays as a bare
+achievement with no stat reward. No stacking.**
