@@ -162,10 +162,13 @@ analyst reports from this session; contradictions list included.
   specs BEFORE the Steam/desktop ruling landed. Main's platform sweep only hit the old
   superseded copies. One mechanical pass over design/worlds/*/PNG_Assets/ to retitle/trim
   mobile-era content per the platform ruling.
-- **theabsinthiumtaproom.md on pre-merge main had been wholesale overwritten with SHADOW
-  EXCHANGE content** (rate board/Mrs. Rata/UV Man checklists) - a misfiled paste in some
-  window. Merge kept the true Taproom (mirror maze) content; the Shadow Exchange material
-  exists in shadowexchange.md and git history. Verify nothing unique was stranded.
+- **theabsinthiumtaproom.md clobber: VERIFIED CLOSED 2026-08-05.** The misfiled paste was a
+  strict textual subset of canonical shadowexchange.md (every NPC, mechanic, number, and
+  checklist verbatim; its only deltas were STALE — oldtown IDs, "gold" currency). Nothing
+  stranded; no action. Side-findings: chat-scaffolding tail stripped from shadowexchange.md
+  (per the standing strip-scaffolding cleanup ruling); NEW open conflict for the author:
+  shadowexchange.md says 50 FPS, its PNG spec says 60 FPS — needs the game-wide perf-target
+  ruling that batch-B conflicts also wanted.
 - **debaucheryville data JSONs repaired during merge:** interactions/environmental/
   sprite_mapping suffered container corruption on BOTH lines (main: line-sorted wreck with
   fragment blob; branch: records appended outside the object). Rebuilt via record extraction +
