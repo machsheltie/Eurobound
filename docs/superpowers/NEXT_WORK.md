@@ -182,8 +182,12 @@ analyst reports from this session; contradictions list included.
 All five debaucheryville data JSONs parse; zero oldtown residue; shadow_exchange salvage and
 kebab union (crypto vendor sheet + animation sequences + rotisserie) verified intact;
 environmental & sprite_mapping are complete supersets of the pre-corruption base. Two
-interaction records the corruption ate (kebab_alley_restroom_01, velvet_alley_kebab_01)
-restored from merge-base with ID sweep. For the engine window: (a) locations.json (16 recs)
+interaction records (kebab_alley_restroom_01, velvet_alley_kebab_01) are UNRECOVERABLE:
+the line-sort corruption predates all tracked history on the main line (the merge-base file
+is itself the wreck), and the branch's engine-session rebuild never included them. Their
+line-soup is preserved in commit e0a18a4's fragment blob. RE-AUTHOR these two interaction
+records when the engine window next works the kebab stand / kebab alley restroom (their
+design-source content is intact in the quest and location docs). For the engine window: (a) locations.json (16 recs)
 vs locations_core.json (6-rec subset) relationship is yours to formalize; (b) ID drift to
 reconcile: interactions has `debaucheryville_tapdatvault_01` where environmental/sprite use
 `debaucheryville_clocktower_tapdatvault_brewery_02`; (c) sprite_mapping carries a separate
