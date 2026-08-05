@@ -176,3 +176,15 @@ analyst reports from this session; contradictions list included.
   author may re-delete if the triage call stands.
 - club_flyers.md: main's scrub-round rework won all hunks (Path-B 100-Sovs payment line and
   dev-notes section from the older draft dropped with it - in git history if wanted).
+
+## Engine data sanity-check 2026-08-04 (post-repair verification — PASSED with notes)
+
+All five debaucheryville data JSONs parse; zero oldtown residue; shadow_exchange salvage and
+kebab union (crypto vendor sheet + animation sequences + rotisserie) verified intact;
+environmental & sprite_mapping are complete supersets of the pre-corruption base. Two
+interaction records the corruption ate (kebab_alley_restroom_01, velvet_alley_kebab_01)
+restored from merge-base with ID sweep. For the engine window: (a) locations.json (16 recs)
+vs locations_core.json (6-rec subset) relationship is yours to formalize; (b) ID drift to
+reconcile: interactions has `debaucheryville_tapdatvault_01` where environmental/sprite use
+`debaucheryville_clocktower_tapdatvault_brewery_02`; (c) sprite_mapping carries a separate
+`..._kebab_01_character_animations` record — verify intended.
