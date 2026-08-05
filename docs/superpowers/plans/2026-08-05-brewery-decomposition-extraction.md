@@ -601,3 +601,37 @@ Shamsterdam naming round.
 - **`dutch_courage_passive.png` naming defect** — per design spec §2, this PNG name
   [source: design/items/brewery_passport_book_complete.md L501] must be corrected to the
   Canal Courage naming when the Shamsterdam round writes its assets.
+
+---
+
+## Rulings (Task 2 gap interview, 2026-08-05 — author)
+
+**Contradiction 1 (Trinity of Pints gate): SUPERSEDED BY REDESIGN (author-dictated).** All
+three legacy variants (thesis/course/lecture) are DEAD — "we will no longer be grading."
+The course FORMAT stays but the courses become four playable rounds, each opened by
+chugging a beer (stacking impairment as difficulty curve):
+1. **Pub 115 — Social Drinking Basics**: win a toast-off against an NPC.
+2. **Song 220 — Music Studies**: rhythm game, Irish drinking songs.
+3. Hazing gauntlet with real fights at each station (course name TBD by author).
+4. Beer pong tournament against the staff; **Dean Cathal is the round-4 opponent**.
+**The Dean cheats and self-destructs (Always Sunny style):** he's winning with a magnetized
+ball + hidden under-table magnet; overconfident, he winds up a dramatic trick shot, throws
+too hard, the magnet yanks the ball down onto the cup rim — loud brittle CRACK — the cheap
+plastic shell shatters, a grey lodestone magnet clatters out and zips across the table,
+locking onto the Dean's own metal belt buckle/ring. The bros obliviously applaud the
+"legendary high-level technique," cheer, slap his back, demand he teach them how to
+"shatter the orb" on command. Referee reluctantly declares the bros winners and brings up
+the rigged ball; Dean is salty throughout. OPEN (author weighing): straight to a backhanded
+compliment dripping in sarcasm/disdain, OR a battle vs the Dean + three professors first
+(compliment delivered after). **Graduation beat:** bros don graduation robes → podium photo
+with the Dean and the (obliviously smiling) brewmaster, who holds up the bottle opener +
+location special beer; Lord Pilsner takes a rolled-up "graduation certificate" and gives
+the Dean rabbit ears; Bradley bent over vomiting on the Dean's shoes (Dean disgusted);
+Chadwick mooning the camera under his robes. Brewmaster stamps the passport and hands over
+the items; Dean mumbles about stupid American tourists. **Exit beat:** at the door the
+drunk bros are confronted by the Dean and the professors — cut to black, sounds/text imply
+a lesson being taught — they wake Hungover (pounding headache, nausea) in the alley behind
+Trinity of Pints. A secondary event follows immediately after (author has it, to be
+dictated). Files affected beyond the item files: the Publandia city quest file AND
+design/worlds/publandia/trinity_of_pints.md (existing structure largely stands, grading
+removed). Gap #11 partially resolved: the BREWMASTER is Trinity's stamper.
