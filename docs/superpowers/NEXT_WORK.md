@@ -196,12 +196,13 @@ deletion; recoverable from git history).
 All five debaucheryville data JSONs parse; zero oldtown residue; shadow_exchange salvage and
 kebab union (crypto vendor sheet + animation sequences + rotisserie) verified intact;
 environmental & sprite_mapping are complete supersets of the pre-corruption base. Two
-interaction records (kebab_alley_restroom_01, velvet_alley_kebab_01) are UNRECOVERABLE:
-the line-sort corruption predates all tracked history on the main line (the merge-base file
-is itself the wreck), and the branch's engine-session rebuild never included them. Their
-line-soup is preserved in commit e0a18a4's fragment blob. RE-AUTHOR these two interaction
-records when the engine window next works the kebab stand / kebab alley restroom (their
-design-source content is intact in the quest and location docs). For the engine window: (a) locations.json (16 recs)
+interaction records (kebab_alley_restroom_01, velvet_alley_kebab_01) were transcribed
+2026-08-05 from the author-recovered pre-corruption copy (commit 4cf1a75) and enriched the
+same day in the recovery-closure round (section below). Their line-soup remains preserved in
+commit e0a18a4's fragment blob and in design/legacy/. NOTE: the 4cf1a75 session intended to
+record its unplaced-lines list here, but its str.replace targeted stale text and failed
+silently ("ledger updated" printed, nothing changed, commit touched only the JSON) — repaired
+in the closure section below with the list restored from the session archive. For the engine window: (a) locations.json (16 recs)
 vs locations_core.json (6-rec subset) relationship is yours to formalize; (b) AUTHOR RULING 2026-08-05 (supersedes
 the 08-04 standalone note, which was based on my misread of the author's question): **the
 Clocktower Plaza cellar IS canon** — the venue doc is the author's own year-old rough draft.
@@ -216,3 +217,65 @@ Curtain alley exit) and `kebab_alley_restroom_01` is the data files' ID for the 
 Shrine restroom — though its PNG spec declares `kebaballey_greasetrapshrine_restroom_01`
 instead: one location, two IDs, needs unification. Only their INTERACTION records were lost
 to corruption; the locations themselves are intact everywhere else.
+
+## Recovery closure round 2026-08-05 (unplaced lines placed + stub records enriched)
+
+The deferred later-round (old Task #13) is DONE. The three remaining stub records in
+`debaucheryville_interactions.json` were rebuilt verbatim from
+`design/legacy/debaucheryville_interactions_precorruption_recovery.json`, attribution per
+design-doc cross-reference (absinthearcade.md, clawmachinemaintenanceclosetrestroom.md,
+mysterymeatcart.md, Late-Night Kebab Stand.md, greatdonerdebate.md). Boot clean, GUT 27/27.
+
+**The 11 ledgered unplaced lines — final disposition** (list restored from the 4cf1a75
+session archive after its silent ledger-write failure):
+
+1. CRT market monitors (kebab prices + meme-coin candles) — RESOLVED: duplicate of the
+   intact shadow-exchange record's `crt_monitor_wall_live_markets`; already placed.
+2. Eldritch-meat-glyph cracked mirror cluster — PLACED: Grease Trap Shrine restroom
+   (its PNG spec lists the glyphs incl. the sheltie-paper-crown; the greasy-prophet tracking
+   line "…haiku_pixel_kebab_mirror_glyphs…" requires it there).
+3. chili_sauce_trail_investigation — PLACED: restroom (3AM crawlspace guidance per PNG spec).
+4. beer_pong_saint_relic NFT target (claw `prizes` block) — PLACED: arcade claw machine.
+5. kebab_coins_to_tokens 1:5 — PLACED: arcade token_exchange_machine.
+6. vip_wristband_png_acquisition — RESOLVED: duplicate; both copies live in the intact
+   shadow-exchange record.
+7. "emotional_impact" line — PLACED: closet's Tekken-virginity haiku (crude-subject match).
+8. pop_rocks_relish — PLACED: cart's Clown Dog Deluxe™ (menu doc).
+9. Hand-dryer hygiene gag — PLACED: closet's used_socks_prize_chute.
+10. NFT_4_LYFE wall scrawl — PLACED: Late-Night Kebab Stand street details (its .md and
+    greatdonerdebate.md both put the scrawled wall at Chadz's cart).
+11. ai_particle_system circuit-under-meat — PLACED: cart's Glizzénstein's Brain Brat.
+
+**Corrections to earlier best-effort content (all doc-evidenced, all values preserved):**
+
+- Mr. Chadz's dialogue: "Mystery meat builds character…" and "One bite and you'll see God…"
+  are Chef Chuckles catchphrases (mysterymeatcart.md) — moved to the cart record; "This
+  place accepted crypto before it was a currency…" is an arcade original line
+  (absinthearcade.md) — moved to Backpack Girl. Chadz gained his own doc-listed lines
+  ("intestinal roulette", FDA-2019); "Meats mostly legal…" stays his.
+- `fluorescent_meat_skewer_light` + `pixel_kebab_googly_eyes` moved kebab-stand → restroom
+  (Grease Trap Shrine PNG spec places both; a ceiling tile also only exists indoors).
+- Engine-stub arcade record: Backpack Girl's couchsurf block had the SE ex's morning scene —
+  replaced with her recovered ukulele-6am block; the hackers' dialogue_samples were verbatim
+  duplicates of the ex's SE lines — dropped (they live at the SE record); the "12-hour
+  session" line moved to the speedrunners (foot-soak decompression).
+- **CryptoBro69's-Ex couchsurf block does NOT belong to the cart.** The 4cf1a75 session's
+  parenthetical was wrong: a full census of the soup's 10 NPC blocks vs 10 zone lines shows
+  `behind_mystery_meat_cart` is Chef Chuckles's own vendor zone; the ex's single couchsurf
+  block is fully accounted for at the shadow exchange. Nothing is missing from the cart.
+
+**Held back, NOT transcribed (still safe in the recovery file), author's call someday:**
+
+- "This'll put hair on your chest! And possibly remove it too." — no doc anchor (Keghaus has
+  a similar-but-different line); owner unknown.
+- `"interaction_type": "cultural_artifact_examination"` — no confident home.
+- Machine `token_cost` values 2/3/4 for Frogger/Street Fighter/Kebab Kombat — per-machine
+  mapping unknowable (only the DDR's 3-token cost is doc-anchored and transcribed).
+- Minor judgment calls flagged for review: closet graffiti wall-position assignments and the
+  three arcade-machine main-floor positions are census-derived (sets match, per-item pairing
+  partly arbitrary); haiku-cluster lines split between the two haikus by subject-matter.
+
+**Flag for author (do not silently change):** the cart menu prices transcribe verbatim as
+`kebab_coins` 5/6/7/9/12, but greatdonerdebate.md and mysterymeatcart.md price the same items
+in Sovs. Same-numbers, different unit — needs a ruling whichever way (kebab_coins is an
+in-fiction alt-currency, so this is not automatically a euro-class violation).

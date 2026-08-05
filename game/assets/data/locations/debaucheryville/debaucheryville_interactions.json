@@ -5,55 +5,519 @@
   "locations": {
     "debaucheryville_arcade_maintenance_closet_01": {
       "location_id": "debaucheryville_arcade_maintenance_closet_01",
-      "display_name": "Debaucheryville Arcade Maintenance Closet 01",
-      "npcs_present": [],
-      "interactive_objects": [],
-      "environmental_interactions": []
+      "display_name": "Claw Machine Maintenance Closet Restroom",
+      "area_id": "claw_machine_maintenance_closet",
+      "comedy_value": "extreme_gaming_nostalgia_bathroom_fusion",
+      "cultural_documentation": "serves_as_gaming_culture_anthropological_study",
+      "access_requirements": {
+        "unlock_dependency": "requires_access_to_absinthe_arcade_broken_ddr_machine",
+        "unlock_method": "insert_3_tokens_sequential_timing",
+        "trigger_location": "broken_ddr_machine_in_main_arcade",
+        "permanent_access": "once_unlocked_remains_accessible_for_remainder_of_playthrough"
+      },
+      "unlock_sequence": {
+        "audio_sequence": [
+          "first_token_mechanical_acceptance_sound",
+          "second_token_electrical_whirring_activation",
+          "third_token_door_unlock_mechanism_click"
+        ],
+        "visual_feedback": [
+          "flickering_pink_led_appears_above_claw_machine",
+          "maintenance_door_outline_becomes_visible",
+          "subtle_glow_emanates_from_door_crack"
+        ]
+      },
+      "interactive_objects": [
+        {
+          "object_id": "claw_machine_arm_chandelier",
+          "location": "hanging_from_ceiling_center",
+          "type": "atmospheric_lighting_fixture",
+          "description": "Busted claw machine arm hanging from ceiling like cursed chandelier",
+          "interaction_type": "visual_showcase_occasional_movement",
+          "special_mechanics": {
+            "swaying_motion": "subtle_pendulum_movement_when_player_moves_quickly",
+            "creaking_audio": "metallic_groaning_sounds_with_movement",
+            "interaction_easter_egg": "rare_chance_to_grab_something_when_activated"
+          }
+        },
+        {
+          "object_id": "ddr_toilet_seat",
+          "location": "center_cramped_space",
+          "type": "reactive_bathroom_fixture",
+          "description": "Modified DDR dance pad serving as toilet seat, sticky but reactive",
+          "interaction_type": "functional_bathroom_with_sound_effects",
+          "special_mechanics": {
+            "dance_pad_responsiveness": "0.2_second_response_to_pressure",
+            "sound_effects": "authentic_DDR_step_sounds_during_use",
+            "sticky_texture": "occasional_difficulty_getting_up_mini_challenge",
+            "visual_feedback": "arrow_lights_activate_randomly_during_interaction"
+          }
+        },
+        {
+          "object_id": "crt_mirror_insert_coin",
+          "location": "above_sink_area",
+          "type": "interactive_mirror_screen",
+          "description": "Repurposed CRT arcade screen looping INSERT COIN serving as mirror",
+          "interaction_type": "functional_mirror_with_arcade_interface",
+          "special_mechanics": {
+            "continuous_loop": "INSERT_COIN_message_scrolls_endlessly",
+            "reflection_function": "still_works_as_mirror_despite_text_overlay",
+            "coin_insertion_slot": "non_functional_but_players_can_try",
+            "extended_staring": "occasionally_flickers_to_show_embarrassing_achievement_unlocked"
+          },
+          "easter_eggs": {
+            "type": "easter_egg_discovery_system",
+            "easter_egg_activation": "inserting_token_triggers_special_message",
+            "token_insertion": "displays_GAME_OVER_YOUR_DIGNITY_HAS_EXPIRED"
+          }
+        },
+        {
+          "object_id": "used_socks_prize_chute",
+          "location": "wall_mounted_paper_towel_replacement",
+          "type": "dysfunctional_dispenser",
+          "description": "Wall mounted paper towel dispenser replaced with claw machine prize chute dispensing used socks",
+          "interaction_type": "frustrating_hygiene_attempt",
+          "special_mechanics": {
+            "sock_dispensing": "only_outputs_questionable_used_socks",
+            "escalation": [
+              "first_use_dispenses_mildly_worn_sock",
+              "second_use_produces_obviously_gaming_marathon_sock",
+              "third_use_outputs_sock_with_mysterious_stains_and_achievement_unlock"
+            ],
+            "player_confusion": "repeated_attempts_yield_increasingly_disturbing_socks",
+            "hygiene_failure": "completely_defeats_purpose_of_hand_drying"
+          }
+        },
+        {
+          "object_id": "exposed_wiring_hazard",
+          "location": "snaking_across_walls",
+          "type": "environmental_hazard_with_comedy",
+          "description": "Exposed electrical wiring sparking faintly when player passes too close",
+          "interaction_type": "proximity_based_mini_hazard",
+          "special_mechanics": {
+            "spark_triggers": "random_electrical_sparks_every_2_to_5_seconds",
+            "proximity_detection": "sparks_increase_when_player_within_16_pixels",
+            "mild_shock_chance": "10_percent_chance_of_brief_stun_effect_if_too_close",
+            "safety_comedy": "obvious_electrical_hazard_that_everyone_just_accepts_as_normal"
+          },
+          "audio_crackling": "electrical_sparking_sounds_sync_with_visual_effects"
+        },
+        {
+          "object_id": "janitor_bucket_foot_soak",
+          "location": "corner_floor_area",
+          "type": "repurposed_cleaning_equipment",
+          "description": "Former janitor bucket now used as foot soak station by NPC speedrunners",
+          "interaction_type": "optional_foot_soak_with_npcs",
+          "special_mechanics": {
+            "status_effect_risk": "small_chance_of_acquiring_athletes_foot_debuff",
+            "social_interaction": "builds_rapport_with_arcade_subculture_while_questioning_life_choices"
+          }
+        }
+      ],
+      "graffiti_interactive_system": [
+        {
+          "graffiti_id": "primary_smaaaash_quote",
+          "location": "inside_stall_door",
+          "content": "He moaned SMAAAASH in bed. I ghosted mid-combo.",
+          "visibility": "blacklight_only",
+          "interaction_type": "readable_with_status_effects",
+          "status_bonus": "embarrassed_resistance_plus_one",
+          "embarrassed_status_bonus": "plus_one_embarrassed_resistance_when_read",
+          "laugh_loop_trigger": "reading_triggers_uncontrollable_laughter_animation",
+          "icq_integration": "one_time_prompt_to_send_quote_to_rival_trio",
+          "sharing_potential": "becomes_quotable_content_for_social_media"
+        },
+        {
+          "graffiti_id": "tekken_virginity_haiku",
+          "location": "various_wall_locations",
+          "content": "haiku_about_losing_virginity_during_tekken_tournament",
+          "visibility": "requires_specific_viewing_angle_and_blacklight",
+          "interaction_type": "hidden_poetry_discovery",
+          "discovery_challenge": "must_position_correctly_to_read_full_haiku",
+          "emotional_impact": "unexpectedly_touching_despite_crude_subject_matter"
+        },
+        {
+          "graffiti_id": "pixel_art_joystick_with_lips",
+          "location": "hidden_corner_area",
+          "content": "glowing_sticker_of_pixel_art_arcade_joystick_with_lips",
+          "visibility": "only_when_player_has_embarrassed_status",
+          "interaction_type": "status_dependent_lore_unlock",
+          "embarrassed_requirement": "only_visible_and_interactive_when_embarrassed",
+          "lore_drop_unlock": "reading_while_embarrassed_unlocks_combo_d_by_love",
+          "ddr_arrow_glyphs": "lore_written_in_authentic_DDR_arrow_notation"
+        },
+        {
+          "graffiti_id": "pixelated_adult_artwork",
+          "location": "main_wall_visible_under_blacklight",
+          "content": "crude_pixelated_adult_artwork_in_retro_gaming_style",
+          "visibility": "blacklight_only_age_appropriate_pixel_art",
+          "retro_art_style": "authentic_early_2000s_pixel_art_aesthetic",
+          "comedy_through_crudeness": "so_poorly_drawn_it_becomes_endearing",
+          "cultural_time_capsule": "represents_specific_era_of_gaming_culture"
+        },
+        {
+          "graffiti_id": "fake_cheat_codes_collection",
+          "location": "scattered_across_walls",
+          "content": "various_fake_gaming_cheat_codes_and_exploits",
+          "visibility": "blacklight_reveals_additional_layers",
+          "comedy_escalation": "codes_become_increasingly_sexual_and_inappropriate",
+          "layered_discovery": "multiple_reads_reveal_different_fake_codes",
+          "speedrunner_reactions": "npcs_comment_on_codes_legitimacy",
+          "gaming_culture_references": "mix_of_real_and_absurd_gaming_references",
+          "cultural_commentary": "reflects_real_gaming_community_experiences",
+          "gaming_history_lesson": "unintentional_documentation_of_arcade_culture_evolution"
+        }
+      ],
+      "graffiti_reading_progression": {
+        "joysticks_and_shame_title": "unlocked_by_completing_all_bathroom_graffiti_while_embarrassed",
+        "achievement_progression": "contributes_to_joysticks_and_shame_title",
+        "combo_d_by_love_lore": "unlocks_cross_city_gaming_culture_narrative_thread",
+        "gaming_culture_integration": "unlocks_additional_dialogue_options_with_arcade_npcs"
+      },
+      "icq_messaging_system": {
+        "trigger": "reading_primary_graffiti_first_time",
+        "target": "rival_trio_group_chat",
+        "message_content": "He moaned SMAAAASH in bed. I ghosted mid-combo.",
+        "consequence": "rival_trio_receives_cringe_lock_debuff_next_encounter",
+        "rival_debuff": "if_sent_inflicts_cringe_lock_debuff_for_3_turns",
+        "debuff_duration": "3_combat_turns",
+        "one_time_only": true,
+        "psychological_warfare": "establishes_ongoing_embarrassment_based_combat_advantage"
+      },
+      "status_effect_management": {
+        "status_effect_training": {
+          "embarrassed_resistance_building": "repeated_exposure_builds_immunity_to_social_awkwardness",
+          "embarrassed_status_mastery": "teaches_players_to_strategically_use_social_awkwardness",
+          "cringe_tolerance_development": "enables_advanced_social_combat_techniques"
+        }
+      },
+      "cross_location_integration": {
+        "main_arcade_integration": {
+          "trigger_location": "broken_ddr_machine_in_main_arcade",
+          "token_economy": "uses_same_token_system_as_main_arcade"
+        },
+        "citywide_bathroom_network": {
+          "cross_city_achievement": "contributes_to_greasy_prophet_title_across_all_cities"
+        }
+      },
+      "audio_design": {
+        "audio_effect": "faint_squeaky_joystick_sfx_loop"
+      },
+      "social_media_potential": "prime_screenshot_opportunity",
+      "_transcription_note": "Reconstructed 2026-08-05 (enrichment round) from design/legacy/debaucheryville_interactions_precorruption_recovery.json. Values verbatim from recovered lines; nesting rebuilt on the file's intact shadow-exchange schema; attribution per design-doc cross-reference (absinthearcade.md, clawmachinemaintenanceclosetrestroom.md, mysterymeatcart.md, Late-Night Kebab Stand.md, greatdonerdebate.md). Held-back lines and per-line judgment calls are ledgered in NEXT_WORK.md."
     },
     "debaucheryville_cirque_mystery_cart_01": {
       "location_id": "debaucheryville_cirque_mystery_cart_01",
-      "display_name": "Debaucheryville Cirque Mystery Cart 01",
-      "npcs_present": [],
-      "interactive_objects": [],
-      "environmental_interactions": []
+      "display_name": "Cirque du Shady – Mystery Meat Cart",
+      "consequence_system": "food choices create strategic gameplay with humorous risk reward",
+      "value_proposition": "strategic_benefits_justify_questionable_food_quality",
+      "npcs_present": [
+        {
+          "npc_id": "chef_chuckles_mystery_cart",
+          "location_zone": "behind_mystery_meat_cart",
+          "availability": "circus_hours_business_hours_mode_with_cracked_clown_mask",
+          "primary_interaction": "mystery_food_vendor_carnival_grift",
+          "dialogue_samples": [
+            "Mystery meat builds character... and possibly tumors!",
+            "Don't ask what's in it. Ask what's not in it. Then cry.",
+            "One bite and you'll see God. Or a god. Probably a meat one.",
+            "Technically edible! And that's legally good enough."
+          ],
+          "behavioral_patterns": {
+            "butterfly_knife_sausage_flipping": "continuous_expert_knife_work_while_serving",
+            "food_puns_mixed_with_veiled_threats": "deadpan_menace_disguised_as_carnival_entertainment",
+            "business_hours_clown_mask": "cracked_porcelain_mask_during_customer_service",
+            "ex_cirque_du_soleil_hint": "suggests_professional_performance_background_before_incident",
+            "fire_hazard_normalization": "obvious_safety_violations_treated_character_charm"
+          },
+          "special_interactions": [
+            {
+              "full_clown_costume_recognition": "ah_a_fellow_performer_let_me_show_you_the_real_menu",
+              "special_dialogue": "someone_who_understands_the_art_have_you_considered_joining_the_circus"
+            }
+          ]
+        }
+      ],
+      "complete_menu_system": [
+        {
+          "item_id": "doner_of_illusions",
+          "display_name": "Doner of Illusions™",
+          "description": "spinning heap of shredded meat gummy bears and absinthe glaze",
+          "price": {
+            "kebab_coins": 7
+          },
+          "effects": {
+            "immediate": [
+              {
+                "type": "sp_boost",
+                "value": 10
+              },
+              {
+                "type": "intelligence_penalty",
+                "value": -5
+              },
+              {
+                "type": "confused_status",
+                "probability": 0.25,
+                "duration": "2_battles"
+              }
+            ]
+          },
+          "strategic_use": "sp_boost_with_intelligence_trade_off_and_confusion_risk",
+          "clown_gear_bonus": "carnival_exclusive_dialogue",
+          "icq_integration": "unlocks_unique_lore_if_consumed_during_tony420_interaction"
+        },
+        {
+          "item_id": "sausage_of_suspicion",
+          "display_name": "Sausage of Suspicion",
+          "description": "grey sweaty tube meat on a stick whispers when held",
+          "price": {
+            "kebab_coins": 6
+          },
+          "effects": {
+            "immediate": [
+              {
+                "type": "defense_penalty",
+                "value": -2
+              },
+              {
+                "type": "agility_boost",
+                "value": 3
+              },
+              {
+                "type": "itchy_status",
+                "probability": 0.5
+              }
+            ]
+          },
+          "strategic_use": "speed_boost_with_defensive_trade_off_and_mysterious_side_effects",
+          "supernatural_interaction": "sausage_whispers_when_held_creating_unease",
+          "whispers_audio_cue": "subtle_supernatural_element_audio_wave_particles"
+        },
+        {
+          "item_id": "clown_dog_deluxe",
+          "display_name": "Clown Dog Deluxe™",
+          "description": "hot dog with red licorice bun mustard smiley and pop rocks relish",
+          "price": {
+            "kebab_coins": 9
+          },
+          "effects": {
+            "immediate": [
+              {
+                "type": "hp_heal",
+                "value": 15
+              },
+              {
+                "type": "enemy_debuff",
+                "target": "all_enemies",
+                "effect": "sticky_debuff_next_round"
+              }
+            ]
+          },
+          "strategic_use": "healing_with_combat_advantage_through_enemy_debuffing",
+          "mustard_smiley": "perfectly_circular_disturbingly_cheerful",
+          "pop_rocks_relish": "crystalline_particles_explosive_potential"
+        },
+        {
+          "item_id": "meatball_lollipop_stick",
+          "display_name": "Meatball on a Lollipop Stick",
+          "description": "exactly what it sounds like",
+          "price": {
+            "kebab_coins": 5
+          },
+          "effects": {
+            "immediate": [
+              {
+                "type": "accuracy_boost",
+                "value": 5
+              },
+              {
+                "type": "special_encounters",
+                "effect": "sewer_npcs_25_percent_chance"
+              }
+            ]
+          },
+          "strategic_use": "precision_boost_with_unexpected_encounter_risk",
+          "sewer_npc_attraction": "sewer_npc_attraction_meatball_consumption"
+        },
+        {
+          "item_id": "glizzenstein_brain_brat",
+          "display_name": "Glizzénstein's Brain Brat",
+          "description": "glowing sausage rumored to be part ai and part veal",
+          "price": {
+            "kebab_coins": 12
+          },
+          "effects": {
+            "immediate": [
+              {
+                "type": "intelligence_boost",
+                "value": 2
+              },
+              {
+                "type": "charisma_penalty",
+                "value": -1
+              },
+              {
+                "type": "critical_chance_vs_humanoids",
+                "value": 5
+              }
+            ]
+          },
+          "strategic_use": "combat_intelligence_boost_with_social_trade_off",
+          "ai_particle_system": "circuit_pattern_under_meat_surface",
+          "glowing_effect": "internal_ai_illumination_pulsing"
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "carousel_rotisserie_mystery_meat",
+          "location": "center_of_pushcart",
+          "type": "hypnotic_cooking_apparatus",
+          "description": "steam belching pushcart with carousel shaped rotisserie spinning mystery meat",
+          "interaction_type": "visual_fascination_with_chef_chuckles_commentary",
+          "special_mechanics": {
+            "continuous_rotation": "carousel_shaped_rotisserie_continuous_spin",
+            "steam_emission": "steam_belching_apparatus_creates_atmosphere",
+            "hypnotic_appeal": "despite_questionable_origin_looks_delicious_when_hungry",
+            "visual": "rotisserie_motion_hypnotic_meat_spinning"
+          },
+          "audio_cue": "mechanical_rotation_steam_hiss"
+        },
+        {
+          "object_id": "cracked_clown_mask_display",
+          "location": "chef_chuckles_business_hours_prop",
+          "type": "atmospheric_character_prop",
+          "description": "cracked porcelain clown mask during business hours creates unsettling atmosphere",
+          "interaction_type": "visual_unease_character_development",
+          "special_mechanics": {
+            "business_hours_mode": "mask_worn_during_customer_service_adds_menace",
+            "painted_smile_follows": "mask_seems_to_track_player_movement"
+          }
+        },
+        {
+          "object_id": "animated_sign_system",
+          "location": "above_pushcart",
+          "type": "glitching_carnival_signage",
+          "description": "animated letters glitch between shady dogs meat roulette and free sample not legally binding",
+          "interaction_type": "environmental_animation_comedy_timing",
+          "special_mechanics": {
+            "text_glitching_cycle": [
+              "shady_dogs",
+              "meat_roulette",
+              "free_sample_not_legally_binding"
+            ],
+            "audio_timing": "every_60_seconds_squeaky_clown_honk_followed_by_steam_hiss"
+          }
+        }
+      ],
+      "special_mechanics_system": {
+        "digestive_daredevil_passive": {
+          "requirement": "consume_3_different_items_in_one_visit",
+          "effect": "immunity_to_food_poisoning_debuff_for_1_battle",
+          "tracking": "visit_based_consumption_counter"
+        },
+        "hallucination_sequences": {
+          "probability": "rare_random_trigger",
+          "trigger_items": [
+            "doner_of_illusions",
+            "sausage_of_suspicion"
+          ],
+          "content": [
+            "hallucination_dialogue_variations",
+            "food_effect_reaction_content"
+          ]
+        },
+        "clown_gear_integration": {
+          "requirement": "full_clown_costume_while_ordering",
+          "unlocks": "chef_chuckles_respect_status",
+          "chef_chuckles_respect_unlock": "required_for_carnival_carnage_secret_sidequest",
+          "benefits": "special_vendor_pricing_secret_quest_access",
+          "effects": "altered_dialogue_variations_with_circus_performers",
+          "costume_economy": "clown_gear_acquisition_from_other_vendors_enhances_experience"
+        },
+        "unique_debuffs": [
+          "sticky_enemy_debuff",
+          "itchy_50_percent_chance",
+          "confused_25_percent_2_battles"
+        ],
+        "mysterious_effects": [
+          "whispers_from_sausages_audio_cue"
+        ]
+      },
+      "cross_location_integration": {
+        "great_doner_debate_connection": {
+          "quest_role": "provides_circus_carnival_sample_for_cross_city_comparison",
+          "cultural_commentary": "traveling_circus_food_adaptation_of_traditional_dish"
+        },
+        "cirque_du_shady_ecosystem": {
+          "ringmaster_tent_proximity": "easy_access_from_main_circus_entrance",
+          "performer_network": "interactions_with_other_circus_acts"
+        }
+      },
+      "exit_conditions": {
+        "normal_exits": [
+          "walk_away_from_cart_may_trigger_regret_dialogue"
+        ]
+      },
+      "atmospheric_effects": [
+        "steam_rising_from_cooking_equipment",
+        "steam_hissing_from_cooking_equipment",
+        "grease_popping_sizzling_sounds"
+      ],
+      "visual_effects": {
+        "violent_carnival_lights": "flashing_overhead_disorienting_strobe_effects"
+      },
+      "audio_design": {
+        "proximity_effects": "louder_when_approaching_cart_softer_when_moving_away"
+      },
+      "_transcription_note": "Reconstructed 2026-08-05 (enrichment round) from design/legacy/debaucheryville_interactions_precorruption_recovery.json. Values verbatim from recovered lines; nesting rebuilt on the file's intact shadow-exchange schema; attribution per design-doc cross-reference (absinthearcade.md, clawmachinemaintenanceclosetrestroom.md, mysterymeatcart.md, Late-Night Kebab Stand.md, greatdonerdebate.md). Held-back lines and per-line judgment calls are ledgered in NEXT_WORK.md."
     },
     "debaucheryville_clocktower_arcade_01": {
       "location_id": "debaucheryville_clocktower_arcade_01",
       "display_name": "Absinthe Arcade",
+      "atmospheric_purpose": "cursed_gaming_nostalgia_corruption_symbol",
       "npcs_present": [
         {
           "npc_id": "backpack_girl_who_never_left",
-          "location_zone": "main_floor_center",
+          "location_zone": "main_floor",
           "availability": "always",
           "primary_interaction": "couchsurf_offer",
           "dialogue_samples": [
             "I got high and accidentally joined a DAO",
-            "This place accepted crypto before it was a currency… or a cult",
-            "My futon's under buzzing CRTs. Very authentic.",
-            "This is the only place to properly decompress after a 12-hour session"
+            "This place accepted crypto before it was a currency… or a cult"
           ],
-          "behavioral_patterns": {
+          "couchsurf_mechanics": {
             "host_npc": "backpack_girl_who_never_left",
-            "couchsurf_mechanics": {
-              "couchsurf_invitation_nft_consequences": true,
-              "morning_scene": "wake_futon_buzzing_crts_led_strips_she_gone"
-            }
-          }
+            "dialogue_triggers": [
+              "kebab_offer",
+              "crash_invitation"
+            ],
+            "trigger_conversation": "accept_kebab_and_crash_offer",
+            "morning_scene": "ukulele_at_6am_ballad_composition",
+            "rewards": [
+              "ballad_of_bros_collectible"
+            ],
+            "penalties": [
+              "minus_10_sp_no_sleep"
+            ]
+          },
+          "quest_connections": [
+            "couchsurf_system",
+            "ballad_of_bros_collectible"
+          ]
         },
         {
           "npc_id": "twitchy_hacker_types",
           "location_zone": "corners_and_alcoves",
           "availability": "random_encounters",
           "primary_interaction": "cryptic_half_jokes",
-          "dialogue_samples": [
-            "Gas fees don't matter when you're this wasted.",
-            "I minted that at 3:17 AM. Peak creativity hours.",
-            "These slippage fees are INSANE!"
-          ],
           "behavioral_patterns": {
-            "trigger": "interaction_with_twitchy_hackers",
             "crypto_commentary_dialogue_trees": true
-          }
+          },
+          "quest_connections": [
+            "tech_hints",
+            "crypto_culture_exposition"
+          ]
         },
         {
           "npc_id": "edm_ghosts",
@@ -63,7 +527,11 @@
           "atmospheric_role": "spectral_ravers",
           "behavioral_patterns": {
             "volume_changes": "based_on_time_of_night_and_nearby_party_activity"
-          }
+          },
+          "quest_connections": [
+            "atmosphere",
+            "hidden_area_hints"
+          ]
         },
         {
           "npc_id": "npc_speedrunners_foot_soakers",
@@ -72,12 +540,99 @@
           "primary_interaction": "foot_soak_commentary",
           "dialogue_samples": [
             "The citrus cleaner really helps with the controller grip",
+            "This is the only place to properly decompress after a 12-hour session",
             "I've seen things in this room that would make Twitch chat weep"
           ],
           "behavioral_patterns": {
             "shared_foot_soak": "can_be_used_simultaneously_with_speedrunner_npcs",
             "gaming_culture_bonding": "unlocks_additional_dialogue_with_speedrunners"
-          }
+          },
+          "npc_crossover": "speedrunners_appear_in_both_locations",
+          "quest_connections": [
+            "arcade_culture_exposition",
+            "bathroom_legitimacy_facade"
+          ]
+        },
+        {
+          "npc_id": "rogue_backpackers",
+          "location_zone": "near_speakers",
+          "availability": "evening_primary",
+          "primary_interaction": "long_term_resident_stories",
+          "lore_provider": true,
+          "quest_connections": [
+            "arcade_history",
+            "survival_tips"
+          ]
+        }
+      ],
+      "arcade_machines": [
+        {
+          "machine_id": "frogger_existential_edition",
+          "game_type": "philosophical_obstacle_course",
+          "location": "main_floor_left",
+          "description": "Navigate philosophical obstacles instead of traffic",
+          "interaction_type": "mini_game",
+          "rewards": [
+            "existential_crisis_buff",
+            "small_sp_boost"
+          ],
+          "failure_effects": [
+            "confused_status"
+          ]
+        },
+        {
+          "machine_id": "street_fighter_identity_crisis",
+          "game_type": "fighting_game_parody",
+          "location": "main_floor_center",
+          "description": "Characters question their moves mid-combo",
+          "interaction_type": "mini_game",
+          "special_mechanics": [
+            "characters_stop_mid_combo_for_self_reflection"
+          ],
+          "rewards": [
+            "identity_crisis_achievement",
+            "combat_experience"
+          ]
+        },
+        {
+          "machine_id": "kebab_kombat",
+          "game_type": "one_button_fighter",
+          "location": "main_floor_right",
+          "description": "Fighting game where the only button is regret",
+          "interaction_type": "mini_game",
+          "special_mechanics": [
+            "only_regret_button_available"
+          ],
+          "rewards": [
+            "regret_achievement",
+            "comedy_moment"
+          ]
+        },
+        {
+          "machine_id": "broken_ddr_machine",
+          "game_type": "broken_unlock_mechanism",
+          "location": "near_maintenance_closet",
+          "description": "Insert 3 tokens to unlock hidden bathroom",
+          "interaction_type": "unlock_trigger",
+          "token_cost": 3,
+          "special_function": "bathroom_unlock_mechanism",
+          "unlock_method": "insert_3_tokens_into_broken_ddr_machine",
+          "rewards": [
+            "hidden_bathroom_access"
+          ]
+        },
+        {
+          "machine_id": "cracked_time_crisis",
+          "game_type": "hidden_entrance",
+          "location": "north_wing_back",
+          "description": "Cracked machine concealing brewery entrance",
+          "interaction_type": "secret_passage",
+          "special_function": "brewery_dungeon_entrance",
+          "entrance_location": "behind_cracked_time_crisis_machine",
+          "destination": "absynthium_taproom_dungeon",
+          "rewards": [
+            "absynthium_taproom_access"
+          ]
         }
       ],
       "interactive_objects": [
@@ -85,8 +640,9 @@
           "object_id": "rigged_absinthe_claw_machine",
           "location": "prominent_main_floor_position",
           "type": "rigged_prize_machine",
+          "primary_location": true,
           "description": "Primary NFT Hunt location with intentionally difficult physics",
-          "interaction_type": "mini_game",
+          "interaction_type": "skill_based_mini_game",
           "special_mechanics": {
             "rigged_mechanics": {
               "claw_strength": "weakened_deliberately",
@@ -96,10 +652,136 @@
             "acquisition_method": "rigged_claw_machine_strategy_game",
             "target_nft": "beer_pong_saint_relic"
           },
-          "audio_cue": "claw_machine_sounds_authentic_prize_dispensing_audio_effects",
+          "prizes": [
+            {
+              "item": "beer_pong_saint_relic_nft",
+              "rarity": "quest_essential",
+              "acquisition_method": "strategic_claw_manipulation"
+            },
+            {
+              "item": "cheap_trinkets",
+              "rarity": "common",
+              "acquisition_method": "consolation_prizes"
+            }
+          ],
+          "audio_cue": {
+            "claw_machine_sounds": "authentic_prize_dispensing_audio_effects"
+          },
           "visual_effects": "flickering_pink_led_above_claw_machine_when_unlocked"
+        },
+        {
+          "object_id": "absinthe_bottle_bar",
+          "location": "center_main_floor",
+          "type": "atmospheric_centerpiece",
+          "description": "Cracked absinthe bottle shape, glowing green from within",
+          "interaction_type": "visual_showcase",
+          "lighting_effects": "pulsing_green_glow",
+          "furniture": {
+            "seating": [
+              "highchairs",
+              "beanbags",
+              "one_bidet"
+            ]
+          }
+        },
+        {
+          "object_id": "mirror_walls",
+          "location": "throughout_arcade",
+          "type": "environmental_effect",
+          "description": "Mirror-lined walls with lag effect",
+          "interaction_type": "visual_distortion",
+          "special_mechanics": {
+            "reflection_lag": "0.2_second_delay",
+            "space_distortion": "room_feels_bigger_and_wrong",
+            "disorientation_effect": "mild_confusion_chance"
+          }
+        },
+        {
+          "object_id": "floor_tile_system",
+          "location": "throughout_arcade",
+          "type": "environmental_effect",
+          "description": "Random light-up tiles creating disorientation",
+          "interaction_type": "passive_atmospheric",
+          "special_mechanics": {
+            "random_activation": "0.5_to_3_second_intervals"
+          }
+        },
+        {
+          "object_id": "token_exchange_machine",
+          "location": "near_entrance",
+          "type": "currency_conversion",
+          "description": "Overpriced token conversion station",
+          "interaction_type": "shop_interface",
+          "exchange_rates": {
+            "kebab_coins_to_tokens": "1:5",
+            "special_tokens": "limited_availability"
+          },
+          "special_purchases": {
+            "currency_cost": {
+              "tokens": 5
+            }
+          },
+          "tourist_trap_pricing": true
         }
-      ]
+      ],
+      "hidden_areas": [
+        {
+          "area_id": "north_wing_arcade_maze",
+          "type": "extended_exploration_area",
+          "description": "Deeper arcade maze leading to brewery entrance",
+          "discovery_requirement": "exploration_of_north_wing",
+          "unlock_method": "follow_north_wing_deeper",
+          "final_destination": "absynthium_taproom_entrance",
+          "additional_broken_machines": true,
+          "navigation_challenge": "dynamic_lighting_puzzle",
+          "navigation_puzzle": "mirror_portal_mechanics"
+        },
+        {
+          "area_id": "claw_machine_maintenance_closet",
+          "type": "secret_bathroom",
+          "unlock_method": "insert_3_tokens_into_broken_ddr_machine",
+          "graffiti": "He moaned 'SMAAAASH' in bed. I ghosted mid-combo.",
+          "audio_effect": "faint_squeaky_joystick_sfx_loop",
+          "icq_message_to_rival_trio": true
+        }
+      ],
+      "random_encounters": [
+        {
+          "encounter_id": "broken_game_boy_discovery",
+          "trigger": "random_chance_exploration",
+          "probability": 0.3,
+          "description": "Trip over NPC who gives broken Game Boy with weird symbols",
+          "rewards": [
+            "broken_game_boy_sinfonia_symbols"
+          ],
+          "discovery_rewards": [
+            "broken_game_boy_with_sinfonia_symbols"
+          ],
+          "sinfonia_connection": "broken_game_boy_symbols",
+          "quest_connection": "sinfonia_preparation"
+        },
+        {
+          "encounter_id": "hacker_crypto_exposition",
+          "trigger": "interaction_with_twitchy_hackers",
+          "probability": 0.6,
+          "description": "Crypto culture knowledge for Shadow Exchange negotiations",
+          "rewards": [
+            "crypto_culture_intel"
+          ],
+          "quest_connection": "shadow_exchange_preparation"
+        }
+      ],
+      "cross_location_connections": {
+        "shadow_exchange_prep": "crypto_culture_knowledge_from_hackers"
+      },
+      "economic_integration": {
+        "atmosphere_text": "Bros think authentic pricing, actually tourist exploitation"
+      },
+      "achievement_system": {
+        "achievement_linking": "progress_contributes_to_overall_arcade_completion",
+        "progression_requirement": "arcade_exploration_completion"
+      },
+      "_transcription_note": "Reconstructed 2026-08-05 (enrichment round) from design/legacy/debaucheryville_interactions_precorruption_recovery.json. Values verbatim from recovered lines; nesting rebuilt on the file's intact shadow-exchange schema; attribution per design-doc cross-reference (absinthearcade.md, clawmachinemaintenanceclosetrestroom.md, mysterymeatcart.md, Late-Night Kebab Stand.md, greatdonerdebate.md). Held-back lines and per-line judgment calls are ledgered in NEXT_WORK.md."
     },
     "debaucheryville_gilded_square_shadow_exchange_01": {
       "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
@@ -2902,32 +3584,26 @@
           "vendor_station": "mr_chadz_crypto_alert_burner_phone_constantly_visible",
           "dialogue_samples": [
             "Meats mostly legal. Heat lamps all vibes.",
-            "Mystery meat builds character... and possibly tumors!",
-            "One bite and you'll see God. Or a god. Probably a meat one.",
-            "This place accepted crypto before it was a currency… or a cult"
+            "I call this one intestinal roulette. You want two?",
+            "The FDA stopped returning my emails in 2019."
           ],
           "behavioral_patterns": {
             "local_motivation": "mr_chadz_treats_health_violations_as_selling_points_while_counting_crypto",
             "phone_habit": "mr_chadz_phone_crypto_notifications",
             "vendor_history": "suggests_20_year_operation_questionable_food_service"
           },
-          "voice_direction": "deadpan_delivery_health_violation_jokes_crypto_commentary"
+          "voice_direction": "deadpan_delivery_health_violation_jokes_crypto_commentary",
+          "physical_description": "6_foot_4_glittery_crop_top_over_bulletproof_vest",
+          "appearance_detail": "glittery_crop_top_bulletproof_vest_combo",
+          "behavior_pattern": "runs_stand_one_handed_while_monitoring_burner_phone_for_business",
+          "business_phone": {
+            "notification_sounds": "business_call_alerts_and_supplier_contacts",
+            "phone_checking_frequency": "every_10_to_15_seconds"
+          },
+          "dialogue_integration": "weaves_food_service_banter_into_sketchy_business_calls"
         }
       ],
       "interactive_objects": [
-        {
-          "object_id": "fluorescent_meat_skewer_light",
-          "type": "repurposed_kebab_equipment_illumination",
-          "description": "flickering fluorescent bulb dangles from meat skewer stabbed into ceiling tile",
-          "mounting": "kebab_equipment_repurposed_electrical_infrastructure"
-        },
-        {
-          "object_id": "pixel_kebab_googly_eyes",
-          "description": "pixel kebab with googly eyes only glows when player is hungover",
-          "art_direction": "retro_gaming_aesthetic_anthropomorphic_features",
-          "reveal_behavior": "pixel_kebab_googly_eyes_becomes_visible_interactive",
-          "interaction_type": "quest_item_inspection_nft_acquisition"
-        },
         {
           "object_id": "vertical_rotisserie",
           "description": "layers_of_meat_spinning_languidly_on_rusty_vertical_rotisserie",
@@ -2945,7 +3621,11 @@
         "street_details": [
           "rat_casually_gnawing_rogue_chili_pepper_near_curb",
           "rat_gnawing_ingredients",
-          "red_bull_cans_condom_wrappers_scattered_like_confetti_overturned_rave_flyer"
+          "red_bull_cans_condom_wrappers_scattered_like_confetti_overturned_rave_flyer",
+          "post_party_detritus_scattered_as_confetti",
+          "rainbow_grease_puddles_oil_slick_patterns",
+          "rainbow_grease_puddles_oil_slick_aesthetic",
+          "wall_scrawled_with_NFT_4_LYFE_graffiti"
         ],
         "signage_disclaimers": "meats_mostly_legal_disclaimers"
       },
@@ -2955,7 +3635,19 @@
         "repeat_purchases": "repeated_purchases_unlock_chadz_backstory",
         "failure_states": [
           "temporary_ban_for_aggressive_sauce_requests"
-        ]
+        ],
+        "stomach_of_steel_unlock": {
+          "permanent_effect": "unlocks_stomach_of_steel_passive_poison_resistance_street_food"
+        },
+        "status_reactive_menu": [
+          "enhanced_menu_options_when_drunk",
+          "enhanced_menu_options_when_hungover",
+          "enhanced_menu_options_when_embarrassed"
+        ],
+        "hangover_status_interactions": "additional_content_when_visiting_while_hungover",
+        "repeat_customer_system": "regular_purchases_unlock_additional_dialogue_backstory",
+        "regular_customer_recognition_system": true,
+        "intestinal_roulette_food_challenges": true
       },
       "quest_integration": {
         "great_doner_debate": {
@@ -2967,7 +3659,11 @@
           ],
           "regional_sample": "belly_of_chadz_represents_debaucheryville_doner_tradition",
           "cultural_commentary": "eastern_european_take_on_turkish_german_doner",
-          "cultural_specificity": "Eastern European kebab doner culture commercialized for Western party tourism"
+          "cultural_specificity": "Eastern European kebab doner culture commercialized for Western party tourism",
+          "completion_tracking": "contributes_to_worlds_pickiest_drunk_achievement",
+          "achievement_contribution": "worlds_pickiest_drunk_badge_progression",
+          "completion_reward": "cultural_food_expert_achievement",
+          "tourist_education": "bros_judge_authenticity_while_being_scammed"
         },
         "nft_hunt": {
           "prerequisite": "must_have_started_nft_sidequest_access_content",
@@ -2976,17 +3672,82 @@
       },
       "satirical_design": {
         "local_exploitation": "sketchy vendor selling mystery meat to desperate tourists",
-        "actually_happening": "being exploited by sketchy crypto obsessed vendor with mystery meat"
+        "actually_happening": "being exploited by sketchy crypto obsessed vendor with mystery meat",
+        "primary_target": "late night food culture exploitation of drunk tourists and party goers",
+        "secondary_targets": [
+          "sketchy street food operations",
+          "impaired judgment exploitation"
+        ],
+        "humor_approach": "GTA environmental satire with Eurotrip tourist desperation",
+        "seedy_elements": {
+          "primary_vice": "exploiting drunk hungover tourists with overpriced questionable food"
+        }
       },
       "social_media_integration": {
         "content_hooks": [
           "mr_chadz_catchphrase_compilations",
           "mystery_meat_philosophy_tweets",
           "mystery_meat_speculation_theories",
-          "crypto_commentary_dialogue_trees"
+          "crypto_commentary_dialogue_trees",
+          "FDA_stopped_returning_emails_quotes"
+        ],
+        "tiktok_potential": [
+          "trying_sketchy_european_street_food_videos",
+          "sketchy_vendor_absurdity_memes"
         ]
       },
-      "_transcription_note": "Reconstructed 2026-08-05 from design/legacy/debaucheryville_interactions_precorruption_recovery.json (pre-corruption line recovery). Values verbatim from recovered lines; nesting rebuilt on the intact shadow-exchange record's schema. Uncertain/unplaced lines listed in NEXT_WORK ledger."
+      "_transcription_note": "Reconstructed 2026-08-05 from design/legacy/debaucheryville_interactions_precorruption_recovery.json; enriched same day in the enrichment round. Values verbatim. Corrections in the enrichment round per design-doc cross-reference (Late-Night Kebab Stand.md, greatdonerdebate.md, mysterymeatcart.md, absinthearcade.md): two Chef Chuckles catchphrases and the arcade's crypto-currency line moved out of Mr. Chadz's dialogue; his doc-listed intestinal-roulette and FDA lines moved in; fluorescent_meat_skewer_light and pixel_kebab_googly_eyes moved to the Grease Trap Shrine record (their PNG spec and the greasy-prophet tracking line place them there). target_fps transcribed as 60 per the 2026-08-05 standing ruling (source line said 50). Details in NEXT_WORK.md.",
+      "area_zone": "velvet_curtain_alley_exit",
+      "exterior": {
+        "approach": "near_velvet_curtain_club_alley_exit_impossible_to_miss_due_to_blinding_fluorescent",
+        "entrance": "no_formal_entrance_open_air_cart_wedged_between_fence_and_wall",
+        "cart": "rusty_food_cart_wedged_between_fence_and_wall",
+        "atmosphere": "steam_cigarette_smoke_thick_cold_air_rainbow_grease_puddles_in_gutter"
+      },
+      "interior": {
+        "lighting": "blinding_fluorescent_cart_lighting_contrasts_dim_alley_shadows"
+      },
+      "visual_design": {
+        "color_palette": {
+          "primary": "#FFFFFF",
+          "accent": "#FF6B35",
+          "background": "#2C2C2C"
+        }
+      },
+      "completion_requirements": [
+        "no_specific_completion_ongoing_vendor_relationship"
+      ],
+      "buffoon_scenarios": {
+        "bros_think": "discovering authentic late night European street food culture",
+        "tourist_delusion": "authentic European street food experience while being scammed",
+        "impairment_level": "drunk hungover enough to ignore obvious health code violations",
+        "obvious_signs_ignored": [
+          "expired_dates_and_questionable_storage"
+        ],
+        "health_code_violation_humor": true
+      },
+      "economic_integration": {
+        "pricing_strategy": "reasonable_for_desperate_customers_premium_for_post_party_desperation",
+        "cross_location_economy": "prices_reflect_proximity_to_high_traffic_party_areas",
+        "time_restrictions": "available_24_7_thrives_post_party_hours_22_00_to_06_00"
+      },
+      "audio_design": {
+        "music_style": "distant_club_music_bleeding_from_nearby_venues_urban_night_ambience"
+      },
+      "performance_specifications": {
+        "target_fps": 60,
+        "max_draw_calls": 12,
+        "memory_footprint_mb": 30,
+        "performance_scaling": [
+          "reduced_particle_density_performance_scaling",
+          "reduced_particle_density_battery_saver",
+          "simplified_rainbow_reflections_low_end",
+          "simplified_steam_older_devices",
+          "steam_particles_scale_device_performance"
+        ]
+      },
+      "previous_locations": [],
+      "stat_requirements": {}
     },
     "debaucheryville_kebab_alley_restroom_01": {
       "location_id": "debaucheryville_kebab_alley_restroom_01",
@@ -3000,18 +3761,35 @@
           "object_id": "fisto_main_graffiti",
           "type": "legendary_graffiti_shrine_element",
           "lore_function": "fisto_main_graffiti_establishes_legend",
-          "travel_diary_integration": "shrine_visit_unlocks_exclusive_fisto_backstory_content"
+          "travel_diary_integration": "shrine_visit_unlocks_exclusive_fisto_backstory_content",
+          "location": "back_wall_glowing_faintly",
+          "description": "puked here in 99 came back to visit it like its mecca signed fisto",
+          "interaction_type": "pilgrimage_site_reading_reverent_examination",
+          "audio_cue": "reverent_reading_faint_fisto_voice_echo",
+          "mecca_comparison_humor": "treating_vomit_location_sacred_pilgrimage_site",
+          "fisto_legend_establishment": "establishes_fisto_party_tourism_pioneer_gastrointestinal_survivor",
+          "fisto_travel_diary_unlock": "reading_while_hungover_exclusive_backstory_content",
+          "travel_diary_bonus": "reading_unlocks_bonus_lore_fisto_european_adventures"
         },
         {
           "object_id": "haiku_graffiti_masterpiece",
-          "location": "stall_wall_artistic_poetry"
+          "location": "stall_wall_artistic_poetry",
+          "type": "environmental_poetry_comedy_literature",
+          "description": "grease beneath my feet secrets marinate in heat i pray then i leak",
+          "interaction_type": "reverent_poetry_reading_artistic_appreciation",
+          "haiku_structure_respect": "proper_5_7_5_syllable_structure_treated_high_art",
+          "grease_poetry_juxtaposition": "beautiful_poetry_disgusting_bodily_functions",
+          "comedy_function": "haiku_provides_poetic_gross_out_humor",
+          "social_media_goldmine": "infinitely_quotable_absurdist_poetry_viral_content"
         },
         {
           "object_id": "cursed_sink_collection",
           "description": "sink basin contains cursed coin half chewed antacid and kebab napkin folded into swan",
           "location": "sink_area_three_mysterious_items",
           "detail": {
-            "kebab_napkin_swan": "incongruous_origami_artistry_biohazard_environment"
+            "kebab_napkin_swan": "incongruous_origami_artistry_biohazard_environment",
+            "cursed_coin_mystery": "unknown_origin_currency_possibly_tourist_offering",
+            "half_chewed_antacid": "evidence_gastrointestinal_distress_management"
           },
           "condition_note": "water_appears_to_have_been_used_extensively",
           "interaction_type": "shrine_offering_examination_individual_inspection",
@@ -3022,7 +3800,45 @@
           "description": "crumpled kebab receipt from mr chadz kebab dated 2004 still warm somehow",
           "location": "toilet_paper_roll_position",
           "function": "players_use_food_receipt_restroom_necessity",
-          "lore_function": "2004_receipt_establishes_long_term_vendor_operation_history"
+          "lore_function": "2004_receipt_establishes_long_term_vendor_operation_history",
+          "type": "historical_artifact_functional_necessity",
+          "interaction_type": "disgusted_fascination_historical_investigation",
+          "still_warm_mystery": "receipt_temperature_defies_logical_explanation",
+          "economic_archaeology": "2004_pricing_reveals_inflation_tourist_exploitation"
+        },
+        {
+          "object_id": "fluorescent_meat_skewer_light",
+          "location": "ceiling_improvised_lighting",
+          "type": "repurposed_kebab_equipment_illumination",
+          "description": "flickering fluorescent bulb dangles from meat skewer stabbed into ceiling tile",
+          "interaction_type": "jury_rigged_infrastructure_examination",
+          "meat_skewer_mounting": "kebab_equipment_repurposed_electrical_infrastructure",
+          "flickering_pattern": "irregular_electrical_issues_atmospheric_lighting",
+          "lighting_cast": "creates_eerie_shadows_on_walls"
+        },
+        {
+          "object_id": "pixel_kebab_googly_eyes",
+          "location": "wall_hungover_trigger_only",
+          "type": "status_specific_interactive_element",
+          "description": "pixel kebab with googly eyes only glows when player is hungover",
+          "interaction_type": "hangover_specific_revelation_fisto_lore_unlock",
+          "hungover_status_requirement": "only_visible_interactive_when_hungover_debuff",
+          "googly_eyes_animation": "eyes_follow_player_movement_unsettling_surveillance",
+          "pixel_art_kebab_design": "retro_gaming_aesthetic_anthropomorphic_features",
+          "reveal_behavior": "pixel_kebab_googly_eyes_becomes_visible_interactive"
+        },
+        {
+          "object_id": "cracked_mirror_eldritch_glyphs",
+          "location": "above_urinal_cryptic_display",
+          "type": "supernatural_meat_divination_system",
+          "description": "cracked mirror loops cryptic qr codes and eldritch meat glyphs one resembles sheltie wearing paper crown",
+          "interaction_type": "meat_glyph_interpretation_supernatural_investigation",
+          "special_mechanics": {
+            "cryptic_qr_codes": "scanning_attempts_fail_suggest_deeper_mystery",
+            "eldritch_meat_glyphs": "supernatural_symbols_related_kebab_vendor_ecosystem",
+            "sheltie_paper_crown_glyph": "absurdist_detail_suggests_fisto_pet_inside_joke",
+            "mysterious_effects": "mirror_glyphs_suggest_supernatural_meat_mystery"
+          }
         }
       ],
       "shrine_mechanics": {
@@ -3043,7 +3859,37 @@
         "bathroom_graffiti_collection": "contributes_to_citywide_bathroom_exploration_achievement",
         "graffiti_collection_system": "part_of_larger_bathroom_exploration_meta_game"
       },
-      "_transcription_note": "Reconstructed 2026-08-05 from design/legacy/debaucheryville_interactions_precorruption_recovery.json (pre-corruption line recovery). Values verbatim from recovered lines; nesting rebuilt on the intact shadow-exchange record's schema. Claw-closet graffiti lines (SMAAAASH, Tekken haiku, DDR toilet, CRT mirror, blacklight set) attributed to the maintenance closet record, NOT this one, per design-doc cross-reference. Uncertain/unplaced lines listed in NEXT_WORK ledger."
+      "_transcription_note": "Reconstructed 2026-08-05 from design/legacy/debaucheryville_interactions_precorruption_recovery.json; enriched same day in the enrichment round. Values verbatim; claw-closet graffiti attributed to the maintenance closet record per design-doc cross-reference. Enrichment round placed the ledgered eldritch-mirror cluster and chili-sauce trail here (Grease Trap Shrine PNG spec + greasy-prophet tracking line), and moved fluorescent_meat_skewer_light + pixel_kebab_googly_eyes in from the kebab-stand record on the same evidence. Details in NEXT_WORK.md.",
+      "environmental_storytelling_interactions": {
+        "grease_film_wall_examination": {
+          "description": "walls_coated_glistening_grease_film_reflecting_movement_oily_shadows",
+          "interaction": "player_examine_grease_coating_environmental_storytelling",
+          "visual_effect": "faint_grease_aura_around_player_sprite_low_health"
+        }
+      },
+      "mr_chadz_kebab_connection": {
+        "chili_sauce_trail_investigation": "following_trail_reveals_connection_mr_chadz_kebab_operation"
+      },
+      "fisto_legend_network": {
+        "cross_city_bathroom_network": "connects_other_fisto_sightings_party_destinations",
+        "european_adventure_context": "1999_incident_becomes_pilgrimage_site_legend",
+        "reveals": "vendor_ecosystem_creates_pilgrimage_path_gastrointestinal_tourists"
+      },
+      "hungover_exclusive_content": [
+        "additional_fisto_travel_diary_snippets_unlock",
+        "greasy_prophet_title_hungover_completion",
+        "enhanced_spiritual_significance_shrine_experience"
+      ],
+      "greasy_prophet_title": {
+        "requirement": "complete_all_graffiti_interactions_while_hungover_status_active",
+        "tracking": "must_read_fisto_graffiti_haiku_pixel_kebab_mirror_glyphs_while_hungover",
+        "reward": "unlocks_greasy_prophet_side_title_achievement"
+      },
+      "secret_icq_fisto_message": {
+        "trigger": "secret_icq_message_combination_consumption",
+        "message_content": "you_have_seen_into_fryer_and_lived_respect_signed_fisto"
+      },
+      "social_media_potential": "prime_viral_content_material"
     }
   }
 }
