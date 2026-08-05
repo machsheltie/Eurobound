@@ -188,7 +188,18 @@ is itself the wreck), and the branch's engine-session rebuild never included the
 line-soup is preserved in commit e0a18a4's fragment blob. RE-AUTHOR these two interaction
 records when the engine window next works the kebab stand / kebab alley restroom (their
 design-source content is intact in the quest and location docs). For the engine window: (a) locations.json (16 recs)
-vs locations_core.json (6-rec subset) relationship is yours to formalize; (b) ID drift to
-reconcile: interactions has `debaucheryville_tapdatvault_01` where environmental/sprite use
-`debaucheryville_clocktower_tapdatvault_brewery_02`; (c) sprite_mapping carries a separate
-`..._kebab_01_character_animations` record — verify intended.
+vs locations_core.json (6-rec subset) relationship is yours to formalize; (b) AUTHOR RULING 2026-08-04: **Tap Dat
+Vault is STANDALONE — the Clocktower Plaza connection is struck** (venue doc's "hidden cellar
+beneath Clocktower Plaza" + hidden-switch access + all `clocktower_` ID prefixes are drift,
+not canon; quest doc never had it). Pending: author to dictate the standalone
+entrance/placement, then sweep IDs to `debaucheryville_tapdatvault_brewery_02` and unify the
+`tapdatvault_01`/`clocktower_tap_dat_vault_03`/`tap_dat_vault_brewery_03` strays. Related
+known conflict: venue/data number Tap Dat as brewery #2 and Three-Crown as #3; the quest doc
+orders Three-Crown #2, Tap Dat #3 — resolve with the entrance ruling; (c) sprite_mapping
+carries a separate `..._kebab_01_character_animations` record — verify intended.
+**ID clarification (author asked):** `velvet_alley_kebab_01` IS the Late-Night Kebab Stand's
+canonical ID (declared in its .md and PNG spec; "velvet alley" = its spot by the Velvet
+Curtain alley exit) and `kebab_alley_restroom_01` is the data files' ID for the Grease Trap
+Shrine restroom — though its PNG spec declares `kebaballey_greasetrapshrine_restroom_01`
+instead: one location, two IDs, needs unification. Only their INTERACTION records were lost
+to corruption; the locations themselves are intact everywhere else.
