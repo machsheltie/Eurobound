@@ -358,7 +358,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
   - Mehmet carving sequence
   - Customer eating at counter
   - Order preparation
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 32MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 32MB memory
 - **Platform Considerations**: Simplified tower rotation, static background customers
 
 ### Development Timeline

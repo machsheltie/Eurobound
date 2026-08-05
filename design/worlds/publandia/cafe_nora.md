@@ -401,7 +401,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
   - Coffee pouring
   - Selfie posing
   - ICQ notification popup
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 30MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 30MB memory
 - **Platform Considerations**: Simplified terminal section, reduced ambient NPCs
 
 ### Development Timeline

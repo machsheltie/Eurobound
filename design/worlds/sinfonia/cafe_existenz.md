@@ -385,7 +385,7 @@ Extended time in Café Existenz costs Bravado:
   - Dramatic gesturing NPCs
   - Coffee steam
   - Debate UI elements
-- **Performance Budget**: 40 FPS target, max 18 draw calls, 45MB memory
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 45MB memory
 - **Platform Considerations**: Pre-rendered NPC animations, static background crowds
 
 ### Development Timeline

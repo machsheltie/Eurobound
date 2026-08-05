@@ -318,7 +318,7 @@ Pancake House contributes to larger system:
   - Food blogger photographing (10 minutes of repositioning)
   - Canal boats passing (terrace background)
   - Steam/sizzle effects (kitchen)
-- **Performance Budget**: 45 FPS target, max 16 draw calls, 36MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 36MB memory
 - **Platform Considerations**: Simplified kitchen animation, static boats, reduced steam on older devices
 
 ### Development Timeline

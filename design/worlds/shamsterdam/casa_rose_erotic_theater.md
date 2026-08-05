@@ -312,7 +312,7 @@ After visiting Casa Rosé, bros will randomly reference the experience:
   - Promoter Bogdan approach pattern (sidewalk, NPC targeting)
   - Bartender Katya drink preparation (upsell rhythm)
   - Pink elephant statue: static (it's a statue)
-- **Performance Budget**: 45 FPS target, max 18 draw calls, 42MB memory
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 42MB memory
 - **Platform Considerations**: Simplified fog effects, reduced crowd NPCs on older devices
 
 ### Development Timeline

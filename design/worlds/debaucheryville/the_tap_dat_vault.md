@@ -275,7 +275,7 @@
   - Steam pressure gauge fluctuations (puzzle mechanic)
   - Boss sound-wave attack patterns (combat system)
   - Stamp bass-drop animation
-- **Performance Budget**: 45 FPS target (complex lighting), max 20 draw calls, 48MB memory
+- **Performance Budget**: 60 FPS target (complex lighting), max 20 draw calls, 48MB memory
 - **Platform Considerations**: Simplified rhythm-reactive effects on older devices, reduced particle density
 
 ### Development Timeline

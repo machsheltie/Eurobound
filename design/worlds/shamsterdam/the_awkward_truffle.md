@@ -356,7 +356,7 @@ The shop's layout — respectable front, transitional middle, committed back —
   - Wrapping sequence
   - Purchase transaction
   - Consumption animation (tasteful)
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 32MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 32MB memory
 - **Platform Considerations**: Abstracted product displays, simplified crafting view
 
 ### Development Timeline

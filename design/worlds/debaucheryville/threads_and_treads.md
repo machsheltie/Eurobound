@@ -396,7 +396,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
   - Mirror assessment
   - Zdeněk's contemplative gestures
   - Transformation completion
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 34MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 34MB memory
 - **Platform Considerations**: Simplified lighting, static mannequins
 
 ### Development Timeline

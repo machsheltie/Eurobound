@@ -384,7 +384,7 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
   - Earplug demonstration
   - Glow stick activation
   - Antonín's tactical briefing gestures
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 28MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 28MB memory
 - **Platform Considerations**: Simplified glow effects, static product displays
 
 ### Development Timeline

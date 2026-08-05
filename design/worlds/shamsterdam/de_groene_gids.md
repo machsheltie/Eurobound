@@ -298,7 +298,7 @@ Chadwick: *drops phone* "WHY IS THE FLOOR MOVING."
   - Space cake victim slow-blink (status indicator)
   - Cash register drawer (purchase completion)
   - Neon sign flicker (exterior, attracts attention)
-- **Performance Budget**: 45 FPS target, max 16 draw calls, 40MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 40MB memory
 - **Platform Considerations**: Simplified smoke effects on older devices, static menu option
 
 ### Development Timeline

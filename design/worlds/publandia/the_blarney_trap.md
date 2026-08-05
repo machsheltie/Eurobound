@@ -546,7 +546,7 @@ This is the bros' base of operations because it appeared first in their search r
   - Toast delivery
   - Music session
   - Crowd reactions
-- **Performance Budget**: 45 FPS target, max 18 draw calls, 40MB memory
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 40MB memory
 - **Platform Considerations**: Simplified crowd, static music session option
 
 ### Development Timeline

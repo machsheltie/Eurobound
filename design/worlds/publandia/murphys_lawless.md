@@ -397,7 +397,7 @@ If player is DRUNK, Murphy says nothing. Business is business.
   - Neon flicker
   - Side effect trigger
   - Door stick and release
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 30MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 30MB memory
 - **Platform Considerations**: Simplified shelving, reduced flicker
 
 ### Development Timeline

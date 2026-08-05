@@ -417,7 +417,7 @@ Instead of defeating Bassmeister, players can:
   - Boss tempo visualization
   - Fog and particle systems
   - Bone decorations (ambient motion)
-- **Performance Budget**: 45 FPS target, max 22 draw calls, 55MB memory
+- **Performance Budget**: 60 FPS target, max 22 draw calls, 55MB memory
 - **Platform Considerations**: Simplified skeleton animations, pre-rendered fog, audio streaming
 
 ### Development Timeline

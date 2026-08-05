@@ -325,7 +325,7 @@
   - Crowd density variation by time
   - Steam from compartments
   - Fluorescent light flicker (subtle)
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 34MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 34MB memory
 - **Platform Considerations**: Simplified crowd, static steam, reduced compartment animations
 
 ### Development Timeline

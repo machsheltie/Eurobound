@@ -172,7 +172,7 @@ Player crawling animation (awkward entry sequence)
 
 Performance Specifications:
 
-Frame Rate Target: 40 FPS (small space optimization)
+Frame Rate Target: 60 FPS (small space optimization)
 Memory Footprint: 20MB maximum
 Draw Calls: Maximum 8
 Performance Optimization: Simplified reflections, reduced particles

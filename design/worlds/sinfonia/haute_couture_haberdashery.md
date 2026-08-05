@@ -356,7 +356,7 @@ When trying on equipment:
   - Fabric shimmer
   - Character outfit preview
   - Tailor measuring
-- **Performance Budget**: 40 FPS target, max 15 draw calls, 40MB memory
+- **Performance Budget**: 60 FPS target, max 15 draw calls, 40MB memory
 - **Platform Considerations**: Equipment preview system, mirror reflections simplified
 
 ### Development Timeline

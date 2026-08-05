@@ -331,7 +331,7 @@ If game includes bike navigation:
   - Werner's assessment gestures
   - Customer decision anxiety
   - Bell wall slight movement
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 30MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 30MB memory
 - **Platform Considerations**: Simplified bell variety, static map
 
 ### Development Timeline

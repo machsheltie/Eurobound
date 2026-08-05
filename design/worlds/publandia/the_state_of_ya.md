@@ -424,7 +424,7 @@ If player is lost, Nuala helps:
   - Eye roll
   - Rare smile
   - Item recommendation gesture
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 30MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 30MB memory
 - **Platform Considerations**: Simplified aisles, focus on Nuala
 
 ### Development Timeline

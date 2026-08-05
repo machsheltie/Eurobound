@@ -448,7 +448,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
   - NPC debating (gestures)
   - Metronome ticking (background)
   - Dart throwing (optional game)
-- **Performance Budget**: 40 FPS target, max 16 draw calls, 40MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 40MB memory
 - **Platform Considerations**: Static background patrons, simplified animations, cozy atmosphere priority
 
 ### Development Timeline

@@ -166,9 +166,20 @@ analyst reports from this session; contradictions list included.
   strict textual subset of canonical shadowexchange.md (every NPC, mechanic, number, and
   checklist verbatim; its only deltas were STALE — oldtown IDs, "gold" currency). Nothing
   stranded; no action. Side-findings: chat-scaffolding tail stripped from shadowexchange.md
-  (per the standing strip-scaffolding cleanup ruling); NEW open conflict for the author:
-  shadowexchange.md says 50 FPS, its PNG spec says 60 FPS — needs the game-wide perf-target
-  ruling that batch-B conflicts also wanted.
+  (per the standing strip-scaffolding cleanup ruling); RESOLVED 2026-08-05 by
+  the game-wide ruling below.
+
+## Standing ruling 2026-08-05: 60 FPS (author)
+
+**The game-wide performance target is 60 FPS on min-spec hardware — single standard, no
+dual floor.** All straggler location targets (35/40/45/50, incl. the shadowexchange 50-vs-60
+conflict and every "45 FPS min-spec" line from the platform sweep) normalized to 60 in one
+mechanical pass (68 files). Animation frame rates (8/10/12/30 fps etc.) are NOT performance
+targets and were untouched. Draw-call/memory budgets unchanged. Do not relitigate.
+
+**Also executed 2026-08-05:** LoadingStrategy.md re-deleted per author ruling (the author's
+original Session-3 triage call stands; main's platform-sweep update of it was unaware of the
+deletion; recoverable from git history).
 - **debaucheryville data JSONs repaired during merge:** interactions/environmental/
   sprite_mapping suffered container corruption on BOTH lines (main: line-sorted wreck with
   fragment blob; branch: records appended outside the object). Rebuilt via record extraction +

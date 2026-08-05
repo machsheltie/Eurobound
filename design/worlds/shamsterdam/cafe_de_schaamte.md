@@ -233,7 +233,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
   - Havok tail wag (subtle, increases during mission excitement)
   - Bicycle passing (background layer, 8-second loop)
   - Pigeon investigation (random placement, Havok watches suspiciously)
-- **Performance Budget**: 45 FPS target, max 16 draw calls, 38MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 38MB memory
 - **Platform Considerations**: Simplified water reflections on older devices, reduced ambient NPCs
 
 ### Development Timeline

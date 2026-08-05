@@ -383,7 +383,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
   - Seed purchase ritual
   - Legal disclaimer presentation
   - Customs checkpoint (if implemented)
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 32MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 32MB memory
 - **Platform Considerations**: Simplified product displays, static education graphics
 
 ### Development Timeline

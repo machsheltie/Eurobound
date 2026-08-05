@@ -375,7 +375,7 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
   - Walking attempt (increasing discomfort)
   - Craftsman carving demonstration
   - Purchase and bagging
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 32MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 32MB memory
 - **Platform Considerations**: Simplified clog variety, static demonstration option
 
 ### Development Timeline

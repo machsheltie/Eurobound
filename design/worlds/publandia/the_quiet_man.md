@@ -446,7 +446,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
   - Ciaran's announcements
   - Victory/defeat sequences
   - Recovery wake-up
-- **Performance Budget**: 45 FPS target, max 18 draw calls, 42MB memory
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 42MB memory
 - **Platform Considerations**: Simplified crowd, optional gore reduction
 
 ### Development Timeline

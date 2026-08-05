@@ -327,7 +327,7 @@ If game includes airport/customs checkpoint:
   - Bulb selection and bagging
   - Margriet's sales gestures
   - Petal fall atmospheric
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 34MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 34MB memory
 - **Platform Considerations**: Static water, simplified flower variety, reduced particles
 
 ### Development Timeline

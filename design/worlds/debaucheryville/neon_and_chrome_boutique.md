@@ -371,7 +371,7 @@ The boutique exists in the space between practical club gear and aspirational ni
   - Neon flicker effects
   - Customer trying on gear
   - Premium stock reveal
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 34MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 34MB memory
 - **Platform Considerations**: Simplified LED effects, static neon
 
 ### Development Timeline

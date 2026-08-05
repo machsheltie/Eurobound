@@ -518,7 +518,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
   - Dice rolling (loaded)
   - Shill celebration
   - Mark despair
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 35MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 35MB memory
 - **Platform Considerations**: Simplified wheel physics, reduced shill count
 
 ### Development Timeline

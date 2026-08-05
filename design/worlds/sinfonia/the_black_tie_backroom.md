@@ -494,7 +494,7 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
   - Roulette spin
   - NPC tells (subtle)
   - Win/loss reactions
-- **Performance Budget**: 45 FPS target, max 20 draw calls, 50MB memory
+- **Performance Budget**: 60 FPS target, max 20 draw calls, 50MB memory
 - **Platform Considerations**: Pre-rendered card animations, simplified roulette, streamlined betting input
 
 ### Development Timeline

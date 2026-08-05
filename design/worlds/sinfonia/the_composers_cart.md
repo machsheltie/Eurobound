@@ -276,7 +276,7 @@ The cart exists to test musical knowledge:
   - Paper flutter
   - Vendor expression changes
   - Metronome tick
-- **Performance Budget**: 35 FPS target, max 10 draw calls, 25MB memory
+- **Performance Budget**: 60 FPS target, max 10 draw calls, 25MB memory
 - **Platform Considerations**: Simple scene, focus on NPC interaction and paper atmosphere
 
 ### Development Timeline

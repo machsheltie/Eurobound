@@ -382,7 +382,7 @@ The satire is the universal experience of the late-night convenience store trip:
   - Product selection
   - Fluorescent flicker
   - Customer desperation levels
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 30MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 30MB memory
 - **Platform Considerations**: Simplified lighting, static heat lamp
 
 ### Development Timeline

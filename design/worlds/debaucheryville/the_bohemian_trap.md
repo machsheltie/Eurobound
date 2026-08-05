@@ -364,7 +364,7 @@ The cart is named "The Bohemian Trap" because:
   - Emil's theatrical gestures
   - Control reversal wobble
   - Green sparkle particles
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 32MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 32MB memory
 - **Platform Considerations**: Simplified fog, static neon, reduced particles
 
 ### Development Timeline

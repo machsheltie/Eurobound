@@ -350,7 +350,7 @@
   - Customer reactions (various)
   - Seagull hovering, swooping
   - Onion dicing
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 32MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 32MB memory
 - **Platform Considerations**: Simplified water effects, static seagulls in background
 
 ### Development Timeline

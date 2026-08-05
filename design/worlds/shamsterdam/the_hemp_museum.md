@@ -366,7 +366,7 @@
   - Video exhibit loop (historical section)
   - School group movement pattern
   - Staff resignation animation (Lars)
-- **Performance Budget**: 45 FPS target, max 16 draw calls, 38MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 38MB memory
 - **Platform Considerations**: Simplified grow lights, static plants, reduced NPCs on older devices
 
 ### Development Timeline

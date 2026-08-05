@@ -395,7 +395,7 @@
   - Yeast Golem phases (rising, expanding, collapsing)
   - Room spin effect (tasting room, intensifying)
   - Selfie timing mini-game blade rotation
-- **Performance Budget**: 45 FPS target, max 18 draw calls, 42MB memory
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 42MB memory
 - **Platform Considerations**: Simplified grinding animation, reduced dust, static blade shadows on older devices
 
 ### Development Timeline

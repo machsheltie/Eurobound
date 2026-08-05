@@ -395,7 +395,7 @@ Finbar doesn't just sell shoes. He FITS them:
   - Shoe reveal moments
   - Fitting process
   - Approval nod
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 30MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 30MB memory
 - **Platform Considerations**: Simplified displays, focus on Finbar
 
 ### Development Timeline

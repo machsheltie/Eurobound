@@ -566,7 +566,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | No Duplicate Assets vs. Sub-Location PNG Docs | ✅ PASS |
 | Seedy Underbelly Present | ✅ PASS (grounds-wide grift pipeline, rigged games to TV recruitment) |
 | Technical Feasibility | ✅ PASS (stitched-zone approach within budget) |
-| Performance Budget | ✅ PASS (45-60 FPS, 30-45 draw calls, 55-70MB grounds-wide) |
+| Performance Budget | ✅ PASS (60 FPS, 30-45 draw calls, 55-70MB grounds-wide) |
 | Accessibility Features | ✅ PASS (visual knife-throw tell, steady-glow variants) |
 | Social Media Integration | ✅ PASS (viral moments identified) |
 

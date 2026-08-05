@@ -213,7 +213,7 @@
   - LED strip flicker (random 0.5-2 second intervals)
   - Rat gnawing (4-frame loop, 1.5 second cycle)
   - Mr. Chadz phone checking (every 10-15 seconds for business calls)
-- **Performance Budget**: 50 FPS target, max 12 draw calls, 30MB memory footprint
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 30MB memory footprint
 - **Platform Considerations**: Simplified steam on older devices, reduced particle density
 
 ### Development Timeline

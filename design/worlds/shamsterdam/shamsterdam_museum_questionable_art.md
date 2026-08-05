@@ -322,7 +322,7 @@
   - Dennis gesturing about art (passionate explaining)
   - Cash register drawer opening (purchase completion)
   - Fabergé case latch opening (heist climax)
-- **Performance Budget**: 45 FPS target, max 18 draw calls, 42MB memory
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 42MB memory
 - **Platform Considerations**: Simplified display reflections, reduced NPC crowd density on older devices
 
 ### Development Timeline

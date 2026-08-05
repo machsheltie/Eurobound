@@ -389,7 +389,7 @@ If player tries to buy prizes directly:
   - Ticket counting
   - Prize "reveal" (underwhelming)
   - Customer disappointment reactions
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 28MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 28MB memory
 - **Platform Considerations**: Simplified prize wall, focus on transaction
 
 ### Development Timeline

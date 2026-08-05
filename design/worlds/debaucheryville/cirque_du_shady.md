@@ -285,7 +285,7 @@ Vance's loot-crate line is a two-zone transaction by design: the pitch happens a
 ### Technical Requirements
 - **Asset List**: Grounds tileset, main gate/marquee, big top exterior + Vance's tent + ICQ backroom flap, Shady Productions office props (folding table, fax machine, casting flyer, prize pallet), game alley rig, performance circle target board, Vance and Blanka NPC sprites — full list in the companion PNG Assets document
 - **Animation Requirements**: Marquee flicker, vape-cloud text-reveal (Vance's dialogue), Prophecy Tent Glow (full spec in `Cirque_du_Shady_PNG_Assets.md`), fax-machine paper spit, ticket-dispenser jam cycle, knife-throw whistle-and-thunk
-- **Performance Budget**: Target 45-60 FPS; max 30-45 draw calls (grounds-wide, crowd-density dependent); memory budget 55-70MB across the full stitched grounds (individual sub-locations retain their own already-specified budgets)
+- **Performance Budget**: Target 60 FPS; max 30-45 draw calls (grounds-wide, crowd-density dependent); memory budget 55-70MB across the full stitched grounds (individual sub-locations retain their own already-specified budgets)
 - **Platform Considerations**: Vape-cloud particle density reducible on low-end hardware; grounds crowd LOD steps down aggressively past `game_alley` mid-ground
 
 ### State Tracking

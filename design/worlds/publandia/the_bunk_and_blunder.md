@@ -392,7 +392,7 @@ Sleep quality depends on random roommate generation:
   - Shower queue movement
   - Morning shuffle
   - Embarrassment reaction
-- **Performance Budget**: 45 FPS target, max 12 draw calls, 32MB memory
+- **Performance Budget**: 60 FPS target, max 12 draw calls, 32MB memory
 - **Platform Considerations**: Simplified dorm crowd, audio-focused atmosphere
 
 ### Development Timeline

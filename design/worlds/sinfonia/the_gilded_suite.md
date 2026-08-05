@@ -428,7 +428,7 @@ Players can compare experiences (couchsurfing at Moderato vs. staying here).
   - Furniture subtle movement
   - Herr Gastfreund appearances
   - Night event sequences
-- **Performance Budget**: 40 FPS target, max 18 draw calls, 45MB memory
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 45MB memory
 - **Platform Considerations**: Subtle horror over obvious effects, static room bases, triggered animations
 
 ### Development Timeline

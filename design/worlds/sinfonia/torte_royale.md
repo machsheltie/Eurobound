@@ -329,7 +329,7 @@ High Charm reduces tourist markup:
   - Cake slicing (precision)
   - Vendor expression changes
   - Queue movement
-- **Performance Budget**: 35 FPS target, max 10 draw calls, 25MB memory
+- **Performance Budget**: 60 FPS target, max 10 draw calls, 25MB memory
 - **Platform Considerations**: Simple scene, focus on NPC interaction
 
 ### Development Timeline

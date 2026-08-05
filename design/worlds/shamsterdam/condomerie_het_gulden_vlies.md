@@ -326,7 +326,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
   - Gift wrapping sequence
   - Nervous laughter indicator
   - Transaction completion
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 32MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 32MB memory
 - **Platform Considerations**: Abstracted product displays, simplified customer animations
 
 ### Development Timeline

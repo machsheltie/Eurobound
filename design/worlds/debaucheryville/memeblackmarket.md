@@ -178,7 +178,7 @@
   - Corrupted gif flickering (varied timing)
   - Meme summon appearances (0.5-2 seconds each)
   - MemeLord.exe vape cloud (continuous particle effect)
-- **Performance Budget**: 50 FPS target, max 18 draw calls, 42MB memory footprint
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 42MB memory footprint
 - **Platform Considerations**: CRT effects scalable, simplified vape particles on low-end devices
 
 ### Development Timeline

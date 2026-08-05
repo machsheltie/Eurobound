@@ -194,7 +194,7 @@
   - Pixel kebab icon glow animation (hungover state only)
   - Graffiti subtle glow effect (constant low intensity)
   - QR code reveal animation when tile examined
-- **Performance Budget**: 45 FPS target (complex RGB shimmer effects), max 14 draw calls, 35MB memory
+- **Performance Budget**: 60 FPS target (complex RGB shimmer effects), max 14 draw calls, 35MB memory
 - **Platform Considerations**: Simplified RGB shimmer on older devices, reduced champagne particle density, static graffiti option
 
 ### Development Timeline
@@ -426,7 +426,7 @@ All interactive elements and special objects:
 ---
 
 ## Performance Specifications:
-- **Frame Rate Target:** 45 FPS (complex RGB shimmer and drunk overlays)
+- **Frame Rate Target:** 60 FPS (complex RGB shimmer and drunk overlays)
 - **Memory Footprint:** 35MB maximum
 - **Draw Calls:** Maximum 14
 - **Performance Optimization:** RGB shimmer scalable, drunk overlays simplified, static graffiti fallback

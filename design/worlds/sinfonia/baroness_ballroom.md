@@ -478,7 +478,7 @@ The Baroness encounter is pure social combat:
   - Chandelier ambient motion
   - Crowd dancing (background)
   - Fan flutter, fabric movement
-- **Performance Budget**: 45 FPS target, max 24 draw calls, 55MB memory
+- **Performance Budget**: 60 FPS target, max 24 draw calls, 55MB memory
 - **Platform Considerations**: Pre-rendered crowd dancers, simplified waltz animations, static background elements
 
 ### Development Timeline

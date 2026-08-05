@@ -171,7 +171,7 @@
  - CRT screen flicker and data scrolling (continuous)
  - Cash counter spinning (transaction triggers)
  - UV light scanning patterns (mini-game mechanic)
-- **Performance Budget**: 50 FPS target, max 16 draw calls, 40MB memory footprint
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 40MB memory footprint
 - **Platform Considerations**: CRT effects scalable for older devices, simplified particle systems
 
 ### Development Timeline
@@ -405,7 +405,7 @@ Money verification shine particles
 
 Performance Specifications:
 
-Frame Rate Target: 50 FPS
+Frame Rate Target: 60 FPS
 Memory Footprint: 40MB maximum
 Draw Calls: Maximum 16
 Performance Optimization: CRT effects scalable, simplified particles

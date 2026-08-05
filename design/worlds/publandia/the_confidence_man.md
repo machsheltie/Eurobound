@@ -388,7 +388,7 @@ Cormac's prices are "negotiable" within limits:
   - Crowd reactions
   - Buff activation effect
   - Crash deflation
-- **Performance Budget**: 45 FPS target, max 10 draw calls, 25MB memory
+- **Performance Budget**: 60 FPS target, max 10 draw calls, 25MB memory
 - **Platform Considerations**: Simplified cart, reduced crowd
 
 ### Development Timeline

@@ -171,7 +171,7 @@ C# Claw Machine Maintenance Closet Restroom
   - CRT screen loop (continuous)
   - DDR pad reactive presses (0.2 second response)
   - Electrical sparks (random 2-5 second intervals)
-- **Performance Budget**: 45 FPS target (reduced for small space), max 10 draw calls, 25MB memory
+- **Performance Budget**: 60 FPS target (reduced for small space), max 10 draw calls, 25MB memory
 - **Platform Considerations**: Simplified spark effects on older devices, static graffiti option for low-memory modes
 
 ### Development Timeline
@@ -211,7 +211,7 @@ C# Claw Machine Maintenance Closet Restroom
 ### Post-Implementation Testing
 - [ ] **Unlock mechanism tested** (3 tokens into DDR machine correctly opens door)
 - [ ] **Interactive elements functional** (DDR toilet, CRT mirror, graffiti visibility, spark effects)
-- [ ] **Performance optimized** (45 FPS maintained in small space, memory efficient)
+- [ ] **Performance optimized** (60 FPS maintained in small space, memory efficient)
 - [ ] **Audio synchronization confirmed** (techno sync, joystick loop timing, 30-second warning)
 - [ ] **Cross-system integration verified** (ICQ messaging, achievement tracking, Rival Trio debuffs)
 

@@ -198,7 +198,7 @@
   - Sign text glitching (every 60 seconds with honk/hiss)
   - Steam emission (continuous with intensity variation)
   - Carnival light strobing (reducible for accessibility)
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 35MB memory footprint
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 35MB memory footprint
 - **Platform Considerations**: Strobe effects disable option, simplified steam on older devices
 
 ### Development Timeline
@@ -401,7 +401,7 @@ Clown honk moment, steam hiss timing, electrical buzzing, mechanical grinding
 
 Performance Specifications:
 
-Frame Rate Target: 45 FPS minimum
+Frame Rate Target: 60 FPS minimum
 Memory Footprint: 35MB maximum
 Draw Calls: Maximum 14
 Performance Optimization: Strobe disable option, particle density scaling
@@ -520,7 +520,7 @@ Player crawling animation (awkward entry sequence)
 
 Performance Specifications:
 
-Frame Rate Target: 40 FPS (small space optimization)
+Frame Rate Target: 60 FPS (small space optimization)
 Memory Footprint: 20MB maximum
 Draw Calls: Maximum 8
 Performance Optimization: Simplified reflections, reduced particles

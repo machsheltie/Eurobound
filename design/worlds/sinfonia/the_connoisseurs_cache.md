@@ -326,7 +326,7 @@ Every purchase includes a certificate:
   - Cabinet unlocking
   - Certificate stamping
   - Page turning
-- **Performance Budget**: 40 FPS target, max 14 draw calls, 35MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 35MB memory
 - **Platform Considerations**: Clean inventory interface, skip option for repeat customers
 
 ### Development Timeline

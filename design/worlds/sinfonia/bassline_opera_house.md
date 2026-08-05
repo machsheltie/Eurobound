@@ -1178,7 +1178,7 @@ The real joke is that both crowds think they're the "real" audience and the othe
 
 ### Variant Technical Figures
 - **Alternate day palette**: Imperial Gold (#FFD700), Velvet Red (#8B0000), Marble White (#F5F5F5)
-- **Alternate performance budget**: 45 FPS target, max 25 draw calls, 60MB memory
+- **Alternate performance budget**: 60 FPS target, max 25 draw calls, 60MB memory
 - **Platform considerations**: Pre-render transformation, simplified crowd, audio streaming
 
 ---

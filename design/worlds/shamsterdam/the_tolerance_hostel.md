@@ -356,7 +356,7 @@ Potential side content triggers:
   - Bathroom line shuffling
   - Locker Suspect suspicious glances
   - 5 AM alarm phone buzz
-- **Performance Budget**: 45 FPS target, max 16 draw calls, 38MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 38MB memory
 - **Platform Considerations**: Simplified snoring visualization, reduced NPC count in dorm on older devices
 
 ### Development Timeline

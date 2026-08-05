@@ -278,7 +278,7 @@
   - Keg Sentinel arm-wrestling phases (combat system)
   - Velvet throne shimmer (post-boss unlock)
   - Stamp sticky-thud animation
-- **Performance Budget**: 40 FPS target (cramped space optimization), max 15 draw calls, 35MB memory
+- **Performance Budget**: 60 FPS target (cramped space optimization), max 15 draw calls, 35MB memory
 - **Platform Considerations**: Simplified patron animations on older devices, reduced lighting complexity
 
 ### Development Timeline

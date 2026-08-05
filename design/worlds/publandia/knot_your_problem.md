@@ -349,7 +349,7 @@ Eoin's pretzels are positioned near pubs deliberately:
   - Pretzel handoff
   - Dismissive gestures
   - Customer reactions
-- **Performance Budget**: 45 FPS target, max 8 draw calls, 20MB memory
+- **Performance Budget**: 60 FPS target, max 8 draw calls, 20MB memory
 - **Platform Considerations**: Simple cart, single NPC focus
 
 ### Development Timeline

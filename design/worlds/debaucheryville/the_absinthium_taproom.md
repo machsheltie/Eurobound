@@ -317,7 +317,7 @@
 ## Implementation Specifications
 ### Technical Requirements
 - **Asset List**: Arcade curtain, mirror maze (5 sections), main hall, bar, Gallery of Selves, mirror types (5), Dr. Vaněk, patrons, Mirror Chad, Green Fairy Wisp, green mist effects
-- **Performance Budget**: 45 FPS target, max 15 draw calls, 40MB memory
+- **Performance Budget**: 60 FPS target, max 15 draw calls, 40MB memory
 - **Platform Considerations**: Simplified mirror effects, reduced mist, static candles option
 
 ### Development Timeline

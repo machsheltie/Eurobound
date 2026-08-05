@@ -530,7 +530,7 @@ It's also a commentary on brewery tourism — paying 25 Sovs to watch beer being
   - Steam burst timing
   - Boss phase transitions
   - Yeast golem formation
-- **Performance Budget**: 45 FPS target, max 20 draw calls, 50MB memory
+- **Performance Budget**: 60 FPS target, max 20 draw calls, 50MB memory
 - **Platform Considerations**: Simplified foam physics, reduced swarm counts
 
 ### Development Timeline

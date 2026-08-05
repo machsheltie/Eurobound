@@ -448,7 +448,7 @@ Paddy invokes "house rules" whenever the house is losing too much:
   - Fight sequences
   - Crowd reactions
   - Loan offer presentation
-- **Performance Budget**: 45 FPS target, max 16 draw calls, 38MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 38MB memory
 - **Platform Considerations**: Simplified crowd, static odds board option
 
 ### Development Timeline

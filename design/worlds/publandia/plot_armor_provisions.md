@@ -389,7 +389,7 @@ If player tries to ask about the convenient placement:
   - Food serving
   - Stew stirring
   - Customer reactions
-- **Performance Budget**: 45 FPS target, max 10 draw calls, 25MB memory
+- **Performance Budget**: 60 FPS target, max 10 draw calls, 25MB memory
 - **Platform Considerations**: Simplified steam, single NPC focus
 
 ### Development Timeline

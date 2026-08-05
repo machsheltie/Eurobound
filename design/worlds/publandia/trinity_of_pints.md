@@ -452,7 +452,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
   - Graduation ceremony
   - Dean's lecturing gestures
   - Diploma presentation
-- **Performance Budget**: 45 FPS target, max 16 draw calls, 38MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 38MB memory
 - **Platform Considerations**: Simplified Great Hall crowd, static portraits
 
 ### Development Timeline

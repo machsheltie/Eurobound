@@ -405,7 +405,7 @@
   - The Shakes effect (character vibration)
   - Kees's nod (rare, meaningful)
   - Sawdust particle interaction
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 36MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 36MB memory
 - **Platform Considerations**: Simplified sawdust particles, static candlelight option
 
 ### Development Timeline

@@ -381,7 +381,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
   - Fork break event
   - Food coma state
   - Wim's gestures
-- **Performance Budget**: 45 FPS target, max 14 draw calls, 34MB memory
+- **Performance Budget**: 60 FPS target, max 14 draw calls, 34MB memory
 - **Platform Considerations**: Simplified cheese animation, static assembly for older devices
 
 ### Development Timeline

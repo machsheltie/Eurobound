@@ -383,7 +383,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
   - Kitchen cooking/conflict
   - Bunk bed confession scene
   - Reception check-in
-- **Performance Budget**: 45 FPS target, max 16 draw calls, 38MB memory
+- **Performance Budget**: 60 FPS target, max 16 draw calls, 38MB memory
 - **Platform Considerations**: Simplified crowd systems, static background guests
 
 ### Development Timeline

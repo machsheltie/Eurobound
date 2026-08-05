@@ -306,7 +306,7 @@ Upon receiving the 4th Debaucheryville stamp:
   - BrewBot attack animations (dodge-pattern timing)
   - Foam explosion particle burst (failure state)
   - Stamp download animation (progress bar sequence)
-- **Performance Budget**: 50 FPS target, max 18 draw calls, 45MB memory footprint
+- **Performance Budget**: 60 FPS target, max 18 draw calls, 45MB memory footprint
 - **Platform Considerations**: Simplify vat reflections, reduce hologram particle count, static LED pathways on older devices
 
 ### Development Timeline
