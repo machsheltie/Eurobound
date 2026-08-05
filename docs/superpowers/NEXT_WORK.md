@@ -110,6 +110,20 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
 
 ## Brewery Tour — RULED 2026-08-04 (canonical spec: design/quests/general_quests/brewerytour.md)
 
+**Decomposition round IN PROGRESS 2026-08-05** (spec: docs/superpowers/specs/2026-08-05-brewery-tour-decomposition-design.md; all phase-2 rulings live in
+docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md §Rulings — binding, do
+not relitigate). Headlines: **Trinity of Pints fully redesigned by author** (four-course
+drinking-game curriculum — Pub 115 / Song 220 / Greek 330 / Thesis Defense 401 — magnet-cheat
+Dean finale, "NOBODY GRADUATES! SECURE THE QUAD!" boss battle vs Dean + 3 professors,
+security-guard alley knockout, then the author-dictated Brenda speakerphone scene; grading
+system DEAD). **One-phone canon recorded** (phones confiscated on arrival in Euromemeia;
+one shared speakerphone-only phone w/ ICQ; Brenda knows she's on speaker — WHY lands in the
+author's other window; "Euromemeia" = author-minted continent name, add to world-name canon).
+Iron Gut Tripel = next-turn only; beer price band demoted to guideline (Blockchain Bock 18
+±5 stays); +5% Confused res = selfie badge only; PNG names = full brewery stems; 28
+gatekeeper quotes salvaged as ambient flavor (gating dead); Key Collector achievement dead.
+Creative gaps + referee/brewmaster NPCs: Claude drafts, ⚠ AUTHOR-REVIEW batches.
+
 All five design forks resolved by author: (1) keychain = ONE item, openers = one per brewery
 EARNED on challenge completion (vendor sales + ICQ opener sales DEAD); (2) 16 breweries
 (4×4); (3) Legendary Hangovers = named CONSUMABLES (Full Irish Experience / Neon Nightmare /

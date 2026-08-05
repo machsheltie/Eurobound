@@ -752,3 +752,14 @@ gating dies. Nothing gates on anything.
 **Salvage 28 RULED (author): "Key Collector" achievement is DEAD — redundant under the
 earned-opener model (duplicates Continental Beer Master). Rewards ladder stands as the
 master spec has it.**
+
+**Gaps 1–20 (Publandia creative fields) RULED (author): Claude drafts all missing fields
+in-tone from each brewery's established character, every drafted field flagged
+⚠ AUTHOR-REVIEW, presented as ONE batch before files finalize.**
+**Gaps 21–26 (keychain parody stand-ins) RULED (author): same draft-for-review treatment —
+six parody replacements in the game's naming voice, batch-reviewed.**
+
+## Interview status: COMPLETE 2026-08-05
+All 5 contradictions ruled; salvage pile ruled (quotes salvaged/gating dead; Key Collector
+dead); Trinity of Pints redesigned by author dictation (addenda 1–6, incl. the Brenda call);
+remaining creative gaps route through ⚠ AUTHOR-REVIEW draft batches. No DEFERRED items.
