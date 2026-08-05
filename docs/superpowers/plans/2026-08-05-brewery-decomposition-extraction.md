@@ -62,25 +62,47 @@ shallowest source on Publandia's 4th brewery and is superseded by the four sourc
 
 **Verdict: NOT a strict subset — unique content found, added to the extraction table below.**
 
-The stray copy is byte-for-byte identical to `base` for ~95% of its content (System Overview,
-Menu Integration mockups except one, Stamp Mechanics, Signature Beers intro, Legendary
-Hangovers, Continental Beer Master, Brewmaster Selfies intro, Implementation Notes, PNG
-Asset Requirements). It diverges in three places, all *additions* beyond `base`:
+The stray copy is byte-for-byte identical to `base` for the large majority of its content
+(System Overview, Menu Integration mockups except one, Stamp Mechanics, Signature Beers intro,
+Legendary Hangovers, Continental Beer Master, Brewmaster Selfies intro, Implementation Notes,
+PNG Asset Requirements). A direct `diff -U0` between the two files shows exactly **four
+hunks**, three of which are pure fill-ins of `base`'s placeholder rows and one of which
+modifies existing (non-placeholder) text:
 
-1. **An extra ASCII mockup** — "Page Layout (Complete)" showing the finished 4/4 Publandia
-   page with all four stamps, including Shenanigans [source: design/worlds/publandia/brewery_passport_book.md L116-143]. `base` only has the 2/4 in-progress mockup. Cosmetic/UI
-   reference value only — no new game-mechanical fact.
-2. **A full stat block for The Fool's Gold** — Style, ABV, Stats, Effect, Risk, Price, Flavor,
-   and a "Unique Unlock" note [source: design/worlds/publandia/brewery_passport_book.md L256-265]. `base` has this beer as `[Fourth Beer TBD]` [source: design/items/brewery_passport_book.md L227-228]. **This directly contradicts the design spec's Gap Manifest seed
-   "The Fool's Gold stat block (name exists, no stats anywhere)"** — stats DO exist, in this
-   one file. Flagged in the report; the stat block is pulled into the extraction table below
-   under `shenanigans` since master is silent and this is the only source with the full block
-   (deepest-source-wins).
-3. **The 4th Publandia selfie spot row** — "Shenanigans | Lucky Spin Wheel | 'Wise Fool' crown
-   (post-stamp)" [source: design/worlds/publandia/brewery_passport_book.md L330]. `base` leaves
-   this row `[TBD]` [source: design/items/brewery_passport_book.md L294]. Selfie content is
-   quest-layer per the master spec's separation rule, not an item-doc field — not added to the
-   table, noted here for completeness only.
+1. **Modifies existing table text, not a pure addition** — the Publandia city-page table's row
+   3 (Trinity of Pints) unlock condition changes from `base`'s "Complete drinking lecture"
+   [source: design/items/brewery_passport_book.md L110] to "Graduate (complete Senior Thesis)"
+   [source: design/worlds/publandia/brewery_passport_book.md L110], in the same hunk as row 4
+   ([TBD] placeholders → Shenanigans filled in)
+   [source: design/worlds/publandia/brewery_passport_book.md L111]. This is the hunk that
+   matters for Contradiction List #1 below: the stray copy does NOT corroborate "Complete
+   drinking lecture" — it silently rewrites away from it, onto the "Senior Thesis" variant.
+2. **Legendary Hangover line modified + new ASCII mockup added** — the Legendary Hangover line
+   gains the "The Full Irish Experience" title text (a modification)
+   [source: design/worlds/publandia/brewery_passport_book.md L114], and an entirely new
+   "Page Layout (Complete)" ASCII mockup is appended showing the finished 4/4 Publandia page
+   with all four stamps, including Shenanigans (a pure addition)
+   [source: design/worlds/publandia/brewery_passport_book.md L116-143]. `base` only has the 2/4
+   in-progress mockup. Cosmetic/UI reference value only — no new game-mechanical fact beyond
+   what hunk 1 already established.
+3. **A full stat block for The Fool's Gold (fills a placeholder)** — Style, ABV, Stats, Effect,
+   Risk, Price, Flavor, and a "Unique Unlock" note
+   [source: design/worlds/publandia/brewery_passport_book.md L256-265], replacing `base`'s
+   `[Fourth Beer TBD]` placeholder [source: design/items/brewery_passport_book.md L227-228].
+   **This directly contradicts the design spec's Gap Manifest seed "The Fool's Gold stat block
+   (name exists, no stats anywhere)"** — stats DO exist, in this one file. Flagged in the
+   report; the stat block is pulled into the extraction table below under `shenanigans` since
+   master is silent and this is the only source with the full block (deepest-source-wins).
+4. **Selfie spot table: one modification + one placeholder fill** — row 3 (Trinity of Pints)
+   gains the parenthetical "(post-graduation)" on its existing "In scholar's robes" entry (a
+   modification) [source: design/worlds/publandia/brewery_passport_book.md L329], and row 4
+   fills `base`'s `[TBD]` placeholders with "Shenanigans | Lucky Spin Wheel | 'Wise Fool' crown
+   (post-stamp)" [source: design/worlds/publandia/brewery_passport_book.md L330]. `base`'s
+   unmodified row 3 reads "In scholar's robes" with no parenthetical
+   [source: design/items/brewery_passport_book.md L293], and its row 4 is `[TBD]`
+   [source: design/items/brewery_passport_book.md L294]. Selfie content is quest-layer per the
+   master spec's separation rule, not an item-doc field — not added to the extraction table,
+   noted here for completeness only.
 
 Per the design spec's retirement rule (§ target architecture, retired files): since it is not a
 strict subset, its unique content (item #2 above) must get a home before this file retires in
@@ -480,7 +502,7 @@ everywhere; design + ink ARE present via the city-page tables, so only these sub
 
 **Salvage pile (dead-mechanic content the author must rule dead or keep as flavor):**
 27. The 28 gatekeeper NPC quotes in `opener_doc` (With/Without-opener dialogue for 14 locations — Fiona, Dean Cathal, Mickey, Dr. Vaněk, Glitching Bouncer/Bouncer/Scanner, Herr Takt, Herr Dramatisch, König Klaus, Herr Drehmeister, Hendrik, Kees) — attached to the dead prerequisite-chain mechanic
-28. "Key Collector" achievement — absent from the master spec's Rewards Ladder; appears in `complete`/`sin_passport` Cross-City Mechanics [source: design/items/brewery_passport_book_complete.md L258] as reward for owning all openers
+28. "Key Collector" achievement — absent from the master spec's Rewards Ladder; appears in `deb_passport`'s and `sin_passport`'s Cross-City Mechanics sections as the reward for owning all openers [source: design/items/brewery_passport_book_debaucheryville.md L258; design/items/brewery_passport_book_sinfonia.md L295] (does NOT appear in `complete` — verified absent from that file)
 
 **Not a gap — flagging for the record:** the design spec's own §3 lists "The Fool's Gold stat
 block (name exists, no stats anywhere)" as a known gap. This extraction found a full stat block
@@ -494,9 +516,13 @@ deep-diff verdict above. The design spec's assumption was wrong; this is resolve
 ### Live (author decision needed)
 
 1. **Trinity of Pints unlock condition** — three variants across sources:
-   - "Complete drinking lecture" [source: design/items/brewery_passport_book.md L110; design/worlds/publandia/brewery_passport_book.md L110]
+   - "Complete drinking lecture" [source: design/items/brewery_passport_book.md L110] — `base`
+     is the only source with this wording. (Checked directly: the stray Publandia copy does
+     NOT repeat this text — it independently rewrites the row to "Graduate (complete Senior
+     Thesis)" [source: design/worlds/publandia/brewery_passport_book.md L110], so it
+     corroborates the variant below, not this one — see the Deep-diff verdict hunk 1 above.)
    - "Graduate (complete any drinking course)" as the OPENER's own acquisition condition [source: design/items/brewery_tour_bottle_opener_system.md L79]
-   - "Complete the 'Senior Thesis' (final exam drinking course)" as the STAMP's unlock condition in the same document [source: design/items/brewery_tour_bottle_opener_system.md L86], matching `complete`'s and `sin_passport`'s city-page tables ("Graduate (complete Senior Thesis)") [source: design/items/brewery_passport_book_complete.md L230]
+   - "Complete the 'Senior Thesis' (final exam drinking course)" as the STAMP's unlock condition in the same document [source: design/items/brewery_tour_bottle_opener_system.md L86], matching `complete`'s [source: design/items/brewery_passport_book_complete.md L230], `sin_passport`'s [source: design/items/brewery_passport_book_sinfonia.md L94], and the stray copy's [source: design/worlds/publandia/brewery_passport_book.md L110] city-page tables (all read "Graduate (complete Senior Thesis)")
    Note the opener doc itself is internally split: opener acquisition = "any drinking course," stamp unlock = "Senior Thesis." Not resolved by depth — needs an author ruling on whether these are the same requirement worded loosely or genuinely two different gates.
 
 2. **Iron Gut Tripel debuff duration** —
