@@ -2877,6 +2877,173 @@
           "curator_academic_lecture_satirical_moments"
         ]
       }
+    },
+    "debaucheryville_velvet_alley_kebab_01": {
+      "location_id": "debaucheryville_velvet_alley_kebab_01",
+      "display_name": "Late-Night Kebab Stand",
+      "satirical_subtitle": "The Meat You Regret Tomorrow™",
+      "world": "debaucheryville",
+      "location_type": "consumable_vendor_grease_cure_post_party_lifeline",
+      "core_concept": "greasy gloriously sketchy post party lifeline symphony of salt shame mystery meat",
+      "theme_description": "spiritual equivalent of an edible walk of shame - symphony of salt, shame, and mystery meat",
+      "layout": "open_air_food_cart_vertical_rotisserie_centerpiece",
+      "signage": "MR_CHADZ_KEBABS_crooked_faux_arabic_font_backlit_LED_strip_zip_tied_hookah_hose",
+      "currency_accepted": [
+        "kebab_coins"
+      ],
+      "item_requirements": [
+        "kebab_coins_for_purchases"
+      ],
+      "npcs_present": [
+        {
+          "npc_id": "mr_chadz_kebab_vendor",
+          "display_name": "Mr. Chadz",
+          "character_archetype": "bouncer_turned_kebabist_sketchy_food_entrepreneur",
+          "vendor_station": "mr_chadz_crypto_alert_burner_phone_constantly_visible",
+          "dialogue_samples": [
+            "Meats mostly legal. Heat lamps all vibes.",
+            "Mystery meat builds character... and possibly tumors!",
+            "One bite and you'll see God. Or a god. Probably a meat one.",
+            "This place accepted crypto before it was a currency… or a cult"
+          ],
+          "behavioral_patterns": {
+            "local_motivation": "mr_chadz_treats_health_violations_as_selling_points_while_counting_crypto",
+            "phone_habit": "mr_chadz_phone_crypto_notifications",
+            "vendor_history": "suggests_20_year_operation_questionable_food_service"
+          },
+          "voice_direction": "deadpan_delivery_health_violation_jokes_crypto_commentary"
+        }
+      ],
+      "interactive_objects": [
+        {
+          "object_id": "fluorescent_meat_skewer_light",
+          "type": "repurposed_kebab_equipment_illumination",
+          "description": "flickering fluorescent bulb dangles from meat skewer stabbed into ceiling tile",
+          "mounting": "kebab_equipment_repurposed_electrical_infrastructure"
+        },
+        {
+          "object_id": "pixel_kebab_googly_eyes",
+          "description": "pixel kebab with googly eyes only glows when player is hungover",
+          "art_direction": "retro_gaming_aesthetic_anthropomorphic_features",
+          "reveal_behavior": "pixel_kebab_googly_eyes_becomes_visible_interactive",
+          "interaction_type": "quest_item_inspection_nft_acquisition"
+        },
+        {
+          "object_id": "vertical_rotisserie",
+          "description": "layers_of_meat_spinning_languidly_on_rusty_vertical_rotisserie",
+          "ambient_behavior": "constant_steam_from_rotisserie",
+          "audio": "rotisserie_spinning_mechanical_hum",
+          "lod": {
+            "rotisserie_animation_lod_system": true
+          }
+        }
+      ],
+      "environmental_interactions": {
+        "ambient_soundscape": "sizzling_meat_steam_hissing_traffic_background_late_night_party_remnants",
+        "food_prep_sounds": "exaggerated_sizzling_questionable_meat_handling_audio",
+        "environmental_comedy": "rat_gnawing_sounds_grease_puddle_splashing_LED_buzz",
+        "street_details": [
+          "rat_casually_gnawing_rogue_chili_pepper_near_curb",
+          "rat_gnawing_ingredients",
+          "red_bull_cans_condom_wrappers_scattered_like_confetti_overturned_rave_flyer"
+        ],
+        "signage_disclaimers": "meats_mostly_legal_disclaimers"
+      },
+      "food_mechanics": {
+        "mystery_meat_identification": "player_cannot_determine_actual_meat_source",
+        "stomach_of_steel": "stomach_of_steel_passive_kebab_consumption",
+        "repeat_purchases": "repeated_purchases_unlock_chadz_backstory",
+        "failure_states": [
+          "temporary_ban_for_aggressive_sauce_requests"
+        ]
+      },
+      "quest_integration": {
+        "great_doner_debate": {
+          "quest_requirement": "great_doner_debate_crossover_quest_required",
+          "comparison_system": "each_city_claims_superior_doner_tradition",
+          "connects_to": [
+            "publandia_doner_vendors",
+            "sinfonia_upscale_versions"
+          ],
+          "regional_sample": "belly_of_chadz_represents_debaucheryville_doner_tradition",
+          "cultural_commentary": "eastern_european_take_on_turkish_german_doner",
+          "cultural_specificity": "Eastern European kebab doner culture commercialized for Western party tourism"
+        },
+        "nft_hunt": {
+          "prerequisite": "must_have_started_nft_sidequest_access_content",
+          "reward": "gain_nft_2_pixelated_kebab_monkey_scratched"
+        }
+      },
+      "satirical_design": {
+        "local_exploitation": "sketchy vendor selling mystery meat to desperate tourists",
+        "actually_happening": "being exploited by sketchy crypto obsessed vendor with mystery meat"
+      },
+      "social_media_integration": {
+        "content_hooks": [
+          "mr_chadz_catchphrase_compilations",
+          "mystery_meat_philosophy_tweets",
+          "mystery_meat_speculation_theories",
+          "crypto_commentary_dialogue_trees"
+        ]
+      },
+      "_transcription_note": "Reconstructed 2026-08-05 from design/legacy/debaucheryville_interactions_precorruption_recovery.json (pre-corruption line recovery). Values verbatim from recovered lines; nesting rebuilt on the intact shadow-exchange record's schema. Uncertain/unplaced lines listed in NEXT_WORK ledger."
+    },
+    "debaucheryville_kebab_alley_restroom_01": {
+      "location_id": "debaucheryville_kebab_alley_restroom_01",
+      "display_name": "Public Restroom — \"Grease Trap Shrine\"",
+      "world": "debaucheryville",
+      "description": "Hidden public restroom with graffiti system",
+      "placement": "restroom_located_behind_active_food_service_health_horror",
+      "atmosphere_source": "years_accumulated_fryer_exhaust_creating_protective_shrine_atmosphere",
+      "interactive_objects": [
+        {
+          "object_id": "fisto_main_graffiti",
+          "type": "legendary_graffiti_shrine_element",
+          "lore_function": "fisto_main_graffiti_establishes_legend",
+          "travel_diary_integration": "shrine_visit_unlocks_exclusive_fisto_backstory_content"
+        },
+        {
+          "object_id": "haiku_graffiti_masterpiece",
+          "location": "stall_wall_artistic_poetry"
+        },
+        {
+          "object_id": "cursed_sink_collection",
+          "description": "sink basin contains cursed coin half chewed antacid and kebab napkin folded into swan",
+          "location": "sink_area_three_mysterious_items",
+          "detail": {
+            "kebab_napkin_swan": "incongruous_origami_artistry_biohazard_environment"
+          },
+          "condition_note": "water_appears_to_have_been_used_extensively",
+          "interaction_type": "shrine_offering_examination_individual_inspection",
+          "type": "shrine_offering_collection"
+        },
+        {
+          "object_id": "toilet_paper_receipt_2004",
+          "description": "crumpled kebab receipt from mr chadz kebab dated 2004 still warm somehow",
+          "location": "toilet_paper_roll_position",
+          "function": "players_use_food_receipt_restroom_necessity",
+          "lore_function": "2004_receipt_establishes_long_term_vendor_operation_history"
+        }
+      ],
+      "shrine_mechanics": {
+        "spiritual_undertones": "prayer_element_religious_experience_biohazard_location",
+        "experience_enhancer": "enhanced_spiritual_significance_shrine_experience",
+        "kebab_consumption_synergy": "eating_mr_chadz_food_enhances_shrine_experience",
+        "synergy_requirement": "eat_any_kebab_while_actively_reading_any_graffiti_inside_restroom",
+        "combo_trigger": "drink_absinthe_plus_eat_grease_kebab_plus_read_graffiti_sequence",
+        "combo_tracking": "player_must_be_reading_interaction_state_while_consuming_kebab",
+        "visit_requirement": "all_three_actions_within_shrine_visit_time_limit",
+        "urgency_mechanic": "players_complete_shrine_activities_within_one_hour_window"
+      },
+      "crawlspace": {
+        "access": "only_appears_3am_game_time_disappears_4am",
+        "discovery": "glowing_trail_led_player_crawlspace_examined_inside"
+      },
+      "quest_integration": {
+        "bathroom_graffiti_collection": "contributes_to_citywide_bathroom_exploration_achievement",
+        "graffiti_collection_system": "part_of_larger_bathroom_exploration_meta_game"
+      },
+      "_transcription_note": "Reconstructed 2026-08-05 from design/legacy/debaucheryville_interactions_precorruption_recovery.json (pre-corruption line recovery). Values verbatim from recovered lines; nesting rebuilt on the intact shadow-exchange record's schema. Claw-closet graffiti lines (SMAAAASH, Tekken haiku, DDR toilet, CRT mirror, blacklight set) attributed to the maintenance closet record, NOT this one, per design-doc cross-reference. Uncertain/unplaced lines listed in NEXT_WORK ledger."
     }
   }
 }
