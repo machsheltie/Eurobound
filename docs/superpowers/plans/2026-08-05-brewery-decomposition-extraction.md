@@ -645,3 +645,24 @@ succeed without being heroes or great at any of it. CHANGED beat: the post-gradu
 knockout at the door is done by SECURITY (not the faculty) — bros are knocked out, the
 lesson-teaching beatdown happens during the blackout, then wake Hungover in the alley
 behind Trinity of Pints as planned.
+
+**Trinity ruling addendum 2 (author-dictated, dialogue verbatim): the referee-reveal beat.**
+Bros read the magnet as part of the technique (option 1), and the win is FORCED on them by
+panicked tournament officials: the ref blows a whistle, waves a red card, shouts over the
+crowd "Dean Cathal is disqualified! By tournament rule 4B, the challengers win by default!"
+Pilsner completely ignores the word "disqualified" — in his mind his aura physically
+shattered the Dean's ball on impact. Pilsner: "Did you see that?! My defense was so solid
+his ball literally exploded! That's a critical block! We broke his ammo!" When the ref
+points at the magnets on the table, Pilsner isn't mad — he's inspired: "Wait... you can put
+MAGNETS in the ping pong balls?! Dean, you beautiful bastard! Chadwick, write this down!
+We're magnetizing our balls next time we play beer pong!" The Dean's brain breaks — stripped
+of his title for cheating while Pilsner claims a mind-toughness KO, celebrates the default
+win, and fanboys his "tactical magnet placement." Dean Cathal screams "I WAS CHEATING, YOU
+ABSOLUTE MONKEYS! I WAS TRYING TO HUMILIATE YOU!" Pilsner smirks, pats his shoulder: "Hey,
+no need to be humble, Dean! Game recognizes game. Now hand over the bottle opener, or do we
+have to take our diplomas by force?" → Cathal snaps, calls the professors, battle starts.
+Author's stated rationale (canon logic, cite in quest doc dev notes): (1) self-centered
+logic — Pilsner attributes the win to his own toughness/luck, never procedure; (2) anti-hero
+satire — the scam fails because the bros are too self-absorbed to notice being scammed, so
+the insult never lands; (3) escalation — the Dean gets ZERO satisfaction from his villainy;
+being trolled by oblivious confidence drives the rage that triggers the boss fight.
