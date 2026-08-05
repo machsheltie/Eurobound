@@ -16,3 +16,6 @@ tools/__pycache__/
 # Marketing (large files)
 marketing/trailers/raw_footage/
 marketing/screenshots/originals/
+
+# Local AI-tool workspace state
+.refact/
