@@ -739,3 +739,7 @@ transcribed as "guideline, not rule" in the signature-beer template notes.
 **Contradiction 4 RULED (author): the +5% Confused resistance belongs to the selfie set
 ("Neon Photogenic" badge) ONLY. The "Debaucheryville Collector" achievement stays as a bare
 achievement with no stat reward. No stacking.**
+
+**Contradiction 5 RULED (author): PNG filenames use FULL brewery stems**
+(`bottle_opener_standing_ovation.png` pattern) — applies to all 16 opener assets and sets
+the convention for stamp/beer asset stems too (matches item-file slugs).
