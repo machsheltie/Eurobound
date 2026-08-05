@@ -743,3 +743,8 @@ achievement with no stat reward. No stacking.**
 **Contradiction 5 RULED (author): PNG filenames use FULL brewery stems**
 (`bottle_opener_standing_ovation.png` pattern) — applies to all 16 opener assets and sets
 the convention for stamp/beer asset stems too (matches item-file slugs).
+
+**Salvage 27 RULED (author): the 28 gatekeeper quotes SALVAGE as ambient flavor.** Each
+brewery's item files carry its gatekeeper's quotes in Notes as ambient/greeting dialogue
+candidates, stripped of every opener-check framing — the character voice survives, the
+gating dies. Nothing gates on anything.
