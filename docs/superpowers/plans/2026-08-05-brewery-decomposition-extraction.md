@@ -730,3 +730,8 @@ this scene only USES the canon above.
 
 **Contradiction 2 RULED (author): Iron Gut Tripel = "-10% Accuracy next turn" (next turn
 only), per the Debaucheryville city file.**
+
+**Contradiction 3 RULED (author): beers win; the 8–15 Sovs band demotes to a soft guideline
+for future beers.** Blockchain Bock stays 18 Sovs (±5 live re-roll — volatility is the
+satire); Tempo Tantrum 6; Waltz Weizen 7. No renumbering. The beer template's band line is
+transcribed as "guideline, not rule" in the signature-beer template notes.
