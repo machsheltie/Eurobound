@@ -201,7 +201,7 @@ Once acquired, the wristbands become **permanently visible** on all three bros' 
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Sprite Requirements
 - **Base Size**: 8×4 pixels per wristband

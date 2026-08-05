@@ -496,7 +496,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - **Trigger:** Constant
 - **Purpose:** The room breathes; grandeur with faint unease
 - **Audio Sync:** Faint crystal tinkle every second swing apex
-- **Mobile Optimization:** Static frame on Low LOD
+- **Performance Optimization:** Static frame on Low LOD
 
 ### Herald Announcement:
 - **Duration:** 2.0 seconds (hold on final frame)
@@ -505,7 +505,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - **Trigger:** Player entry / any new arrival
 - **Purpose:** First-impression control; intonation makes or breaks reputations
 - **Audio Sync:** Trumpet fanfare on frame 2; announcement VO on frame 3 (disdain or warmth variant per bribe level)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Waltz Dance Duel Loop:
 - **Duration:** 1.8 seconds per bar (3/4 time at ~100 BPM), looping
@@ -514,7 +514,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - **Trigger:** Dance duel accepted
 - **Purpose:** Core rhythm combat readability — beat 1 of each bar is the input window
 - **Audio Sync:** Frame 1 lands exactly on downbeat of waltz track
-- **Mobile Optimization:** Background waltz pairs drop to 2-frame loops
+- **Performance Optimization:** Background waltz pairs drop to 2-frame loops
 
 ### Baroness Mask Shift:
 - **Duration:** 6.0 second cycle
@@ -523,7 +523,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - **Trigger:** Constant whenever the Baroness is on screen
 - **Purpose:** "Impossible to describe consistently" — no two screenshots match
 - **Audio Sync:** None
-- **Mobile Optimization:** Fix to single mask frame on Low LOD
+- **Performance Optimization:** Fix to single mask frame on Low LOD
 
 ### Whisper Trail:
 - **Duration:** 3.0 seconds per traversal
@@ -532,7 +532,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - **Trigger:** Rumor exchange begins; ambient every 8-12s in gallery
 - **Purpose:** Makes the acoustic gimmick visible; guides players to trade hubs
 - **Audio Sync:** Whisper SFX pans left-to-right following wisp position
-- **Mobile Optimization:** Halve ambient spawn rate
+- **Performance Optimization:** Halve ambient spawn rate
 
 ### Confetti Victory Burst:
 - **Duration:** 1.2 seconds, single play
@@ -541,7 +541,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - **Trigger:** Dance duel victory
 - **Purpose:** Public triumph — the crowd celebrates so the loser suffers more
 - **Audio Sync:** Triumphant dance flourish sting on frame 1
-- **Mobile Optimization:** 20 → 10 particles
+- **Performance Optimization:** 20 → 10 particles
 
 ### Unmasked Ejection:
 - **Duration:** 2.5 seconds, single play
@@ -550,7 +550,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - **Trigger:** Social HP reaches 0 or identity exposure
 - **Purpose:** Failure state with maximum public visibility
 - **Audio Sync:** Record scratch on trigger; sad waltz variant during walk
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -589,11 +589,10 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); Baroness sheet at ASTC 4x4 — the mask shift must not band
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Baroness sheet kept uncompressed — the mask shift must not band
 - **Fallback:** PNG high quality for landmarks sheet (chandelier is screenshot-critical)
 
 ### Texture Atlases:
@@ -603,7 +602,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 | ballroom_characters | Baroness/Schatten, court NPCs, crowd, bros | 1024x1024 |
 | ballroom_effects_ui | effects, UI | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -766,7 +765,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 ### Quality Checkpoints:
 - [ ] Satirical theme (anonymity theater) is clear throughout all assets
 - [ ] Hidden entrances/exits have discoverable visual cues
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -783,7 +782,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 | Seedy Underbelly Present | ✅ | Rumor economy, blackmail disguised as gossip, reputation as weapon |
 | Gameplay Value Established | ✅ | Social combat, dance duels, rumor trading, identity system, couchsurf |
 | Technical Feasibility | ✅ | Eight sheets, atlas plan, pre-rendered crowd, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 24 draw calls, 55 MB, 24 particles (per profile budget) |
+| Performance Budget | ✅ | 60 FPS, 24 draw calls, 55 MB, 24 particles (per profile budget) |
 | Accessibility Features | ✅ | Visual cues for all audio events; static motion variants |
 | No Crypto Elements | ✅ | None present — pure social/masquerade satire |
 | Social Media Integration | ✅ | Count of Cool, foot-stomp waltz, shifting mask moments identified |

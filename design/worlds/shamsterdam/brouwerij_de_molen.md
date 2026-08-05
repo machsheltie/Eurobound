@@ -108,7 +108,7 @@
 - **Lighting Setup**: Dusty natural light, copper reflections, spotlight on vats, candle flicker (tasting room)
 - **Particle Systems**: Grain dust (constant), flour haze, beer foam sparkle
 - **Animation Elements**: Grinding mechanism rotation, blade shadows through windows, floor vibration effect, liquid ripple in glasses
-- **Mobile Optimization**: Simplified grinding animation, reduced dust particles, static blade shadows on older devices
+- **Performance Optimization**: Simplified grinding animation, reduced dust particles, static blade shadows on older devices
 
 ## Satirical Design
 ### Theme & Vibe

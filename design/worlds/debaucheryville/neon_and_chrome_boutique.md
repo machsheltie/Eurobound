@@ -89,7 +89,7 @@
 - **Lighting Setup**: Full club simulation capability, neon accents, chrome reflections
 - **Particle Systems**: Light leak effects, subtle fog, LED glow
 - **Animation Elements**: Neon flicker, customer browsing, fitting room simulation
-- **Mobile Optimization**: Simplified lighting effects, static neon
+- **Performance Optimization**: Simplified lighting effects, static neon
 
 ## Satirical Design
 ### Theme & Vibe

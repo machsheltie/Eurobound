@@ -88,7 +88,7 @@ Finbar treats every transaction like he's outfitting soldiers for war. Because t
 - **Lighting Setup**: Dramatic spotlights on displays, moody ambiance, fitting area well-lit
 - **Particle Systems**: Dust motes in light beams, leather polish shine
 - **Animation Elements**: Finbar's intense gestures, shoe reveals, fitting assessment
-- **Mobile Optimization**: Simplified displays, focus on Finbar interaction
+- **Performance Optimization**: Simplified displays, focus on Finbar interaction
 
 ## Satirical Design
 ### Theme & Vibe

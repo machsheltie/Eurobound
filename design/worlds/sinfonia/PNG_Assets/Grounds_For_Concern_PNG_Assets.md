@@ -524,7 +524,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Trigger:** Any espresso-based purchase
 - **Purpose:** The location's core satisfaction beat — precision rendered as spectacle
 - **Audio Sync:** Pump hum begins frame 1; pour patter frames 2–3; lever click + timer ping on frame 4
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Steam Wand Purge:
 - **Duration:** 0.6 seconds, single play
@@ -533,7 +533,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Trigger:** Any milk drink order
 - **Purpose:** The hiss that punctuates Ferdinand's sigh
 - **Audio Sync:** Steam hiss on frame 1; sigh SFX layered under frame 2
-- **Mobile Optimization:** Single-frame static plume on Low LOD
+- **Performance Optimization:** Single-frame static plume on Low LOD
 
 ### Ambient Steam Loop:
 - **Duration:** 1.5 second cycle
@@ -542,7 +542,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Trigger:** Constant during opening hours
 - **Purpose:** The stand reads as *alive* from across the street
 - **Audio Sync:** Continuous low steam bed
-- **Mobile Optimization:** Two emitters instead of four on Medium; one on Low
+- **Performance Optimization:** Two emitters instead of four on Medium; one on Low
 
 ### Ferdinand Reaction Hold:
 - **Duration:** 0.8 seconds minimum per reaction, single play
@@ -551,7 +551,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Trigger:** Order confirmed
 - **Purpose:** The judgment is the product
 - **Audio Sync:** Sigh / nod breath / long silence, matched per reaction; "Regular coffee" gets 1.5s of nothing before the lecture
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Rare Smile:
 - **Duration:** 0.4 seconds, single play, no ease
@@ -560,7 +560,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Trigger:** Perfect order at Transcendent tolerance
 - **Purpose:** "He Smiled. ONCE." selfie variant unlock
 - **Audio Sync:** None. Silence is the point.
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Caffeine Tremor:
 - **Duration:** Continuous while Shaky or Over-Caffeinated
@@ -569,7 +569,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Trigger:** Triplo / Quadruple consumed, or Over-Caffeinated status
 - **Purpose:** The debuff is visible on your own body before the UI tells you
 - **Audio Sync:** UI sound tempo increases with buff stacks
-- **Mobile Optimization:** Reduce to ±1px every other frame on Low LOD; fully disabled by Reduced Motion
+- **Performance Optimization:** Reduce to ±1px every other frame on Low LOD; fully disabled by Reduced Motion
 
 ### Heart Racing Pulse:
 - **Duration:** 1.0 second cycle
@@ -578,7 +578,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Trigger:** Heart Racing status
 - **Purpose:** Subtle, constant, slightly alarming
 - **Audio Sync:** Heartbeat SFX, one beat per cycle, locked to frame 1
-- **Mobile Optimization:** Vignette only (no rings) on Low LOD; static vignette under Reduced Motion
+- **Performance Optimization:** Vignette only (no rings) on Low LOD; static vignette under Reduced Motion
 
 ### Grinder Dose Puff:
 - **Duration:** 0.5 seconds, single play
@@ -587,7 +587,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - **Trigger:** Grind step of any preparation
 - **Purpose:** Texture; also the visual cue that your order has been committed
 - **Audio Sync:** Grinder whir tail-off on frame 2
-- **Mobile Optimization:** Cut on Low LOD
+- **Performance Optimization:** Cut on Low LOD
 
 ---
 
@@ -631,11 +631,10 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 for environment and characters; ASTC 4x4 for `grounds_concern_ui.png` and `grounds_concern_drinks.png` (icon legibility). PVRTC 4BPP fallback for pre-A8 devices.
-- **Android:** ETC2 with alpha across all sheets
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for environment and characters; uncompressed for `grounds_concern_ui.png` and `grounds_concern_drinks.png` (icon legibility), with alpha across all sheets
 - **Fallback:** PNG high quality for `grounds_concern_machine.png` — the brass specular banding is visible under aggressive compression
 
 ### Texture Atlases:
@@ -645,7 +644,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | grounds_concern_characters | Ferdinand, regulars & bros | 512x512 |
 | grounds_concern_items_fx | drinks, effects, UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -774,7 +773,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | 6 | grounds_concern_effects.png | 256x192 |
 | 7 | grounds_concern_ui.png | 256x256 |
 
-**Total Estimated Memory:** ~4 MB (1,019,904 px uncompressed RGBA); ~1.1 MB after ETC2/ASTC compression — comfortably inside the 25 MB profile budget
+**Total Estimated Memory:** ~4 MB (1,019,904 px uncompressed RGBA); ~1.1 MB after VRAM compression — comfortably inside the 25 MB profile budget
 
 ---
 
@@ -824,7 +823,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - [ ] Satirical theme (espresso snobbery, craft devotion weaponised) is clear throughout
 - [ ] The Rare Smile reads as genuine and is visibly different from the Approving Nod
 - [ ] Ferdinand's disappointment reads as grief, never contempt
-- [ ] Mobile performance optimized (CPU particles only, 10-draw-call ceiling respected, one atlas bind per group)
+- [ ] Performance optimized (CPU particles only, 10-draw-call ceiling respected, one atlas bind per group)
 - [ ] Touch zone sizing considered (44px minimum for order rows, Intervention button, selfie prompt)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -841,7 +840,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Seedy Underbelly Present | ❌ | Profile documents no vice or exploitation operation. Nearest elements: the 1 Sov sugar "processing fee" and a spend-gated tolerance ladder that rewards escalating consumption. Flagged for owner — this location is intentionally benign |
 | Gameplay Value Established | ✅ | Speed-buff/Luck-debuff shop, four-tier tolerance progression, four status effects, order-reaction system, three selfie variants, four quests |
 | Technical Feasibility | ✅ | Seven sheets, three atlases, three LOD tiers, no sub-scenes, CPU particles only |
-| Mobile Performance Budget | ✅ | 60 FPS / 10 draw calls / 25 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
+| Performance Budget | ✅ | 60 FPS / 10 draw calls / 25 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
 | Accessibility Features | ✅ | Visual glyphs for all seven audio cues; static/reduced-motion variants for steam, tremor, heart pulse, parallax; shape-first status icons |
 | No Crypto Elements | ✅ | None present, and the profile explicitly confirms "No crypto elements (Pure caffeine worship)" |
 | Social Media Integration | ✅ | Three documented selfie variants with unlock conditions, five screenshot moments, seven quotable lines |

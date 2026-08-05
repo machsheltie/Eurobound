@@ -353,7 +353,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - **Trigger:** Constant while inside the shop
 - **Purpose:** The one flourish in an otherwise clinically calm room — it signals "luxury goods," which is the whole satirical premise
 - **Audio Sync:** None (the boutique playlist is the only bed)
-- **Mobile Optimization:** Particle count 8 → 4 on Medium, disabled on Low
+- **Performance Optimization:** Particle count 8 → 4 on Medium, disabled on Low
 
 ### Gift Wrapping Sequence (Sheets 3, 4):
 - **Duration:** 3.0 seconds (Femke's 3 frames at 1 FPS, synced to the 2-frame wrap loop at 1.5 FPS), single play
@@ -362,7 +362,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - **Trigger:** Player selects Discreet / Festive / Bold at the wrapping station
 - **Purpose:** Genuine competence performed on an absurd object — the funniest thing in the shop is how good she is at this
 - **Audio Sync:** Paper crease on frame 1, ribbon pull on frame 2, register chime on the inventory drop
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Nervous Laughter (Sheets 4, 5):
 - **Duration:** 1.2 seconds (Nervous Giggle Trio held with a 2-frame shoulder shake at 3 FPS), loops 2-3 times
@@ -371,7 +371,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - **Trigger:** Entering Section 4 (Novelties) for the first time on any visit; automatic for first-time visitors
 - **Purpose:** "The Giggle Response" made a visible, decaying stat rather than a joke told once
 - **Audio Sync:** Suppressed-laughter bed under the boutique playlist; subtle comedy note on the indicator peak
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Groom Spotlight Blush (Sheets 4, 5):
 - **Duration:** 2.0 seconds ramp (shader red-shift 0 → 1), holds 3 seconds, 1.5 second decay
@@ -380,7 +380,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - **Trigger:** Bachelor Party flag active (3+ party members) and staff dialogue beat reached
 - **Purpose:** The single cruellest, kindest moment in the location — nobody is mocking him, which is worse
 - **Audio Sync:** Bachelorette-party "ooooh" from across the shop on the ramp peak
-- **Mobile Optimization:** Heat wisp cut on Low LOD; the red-shift shader is retained (it is one parameter)
+- **Performance Optimization:** Heat wisp cut on Low LOD; the red-shift shader is retained (it is one parameter)
 
 ### Staff Approach Shift (Sheets 4, 5):
 - **Duration:** 0.8 seconds (2 frames at 2.5 FPS) per level change
@@ -389,7 +389,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - **Trigger:** Customer lingers 8+ seconds in one section (Available), asks a question (Educational), or enters with 3+ party members (Bachelor Party Protocol)
 - **Purpose:** Non-verbal escalation of service without a single pushy line of dialogue
 - **Audio Sync:** Soft footstep on frame 2
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Door Open / Warm Spill (Sheet 1):
 - **Duration:** 0.6 seconds (2 sprite states with a 0.6 second light-pool alpha ramp)
@@ -398,7 +398,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - **Trigger:** Player or NPC entry/exit
 - **Purpose:** The shop advertising itself honestly — warm light on a red-lit street
 - **Audio Sync:** Door chime on frame 2; street noise crossfades with the interior bed
-- **Mobile Optimization:** Spill decal alpha ramp reduced to an instant swap on Low LOD
+- **Performance Optimization:** Spill decal alpha ramp reduced to an instant swap on Low LOD
 
 ### Register / Transaction Complete (Sheets 3, 5):
 - **Duration:** 0.5 seconds (chime sparkle 2 frames at 4 FPS), single play
@@ -407,7 +407,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - **Trigger:** Any purchase confirm
 - **Purpose:** Brief, dignified acknowledgement — the shop refuses to make it a moment
 - **Audio Sync:** Terminal beep, then a single warm chime; no fanfare
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -448,11 +448,10 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); the gold storefront lettering and all five section header plates need higher-quality blocks — the elegance is the joke and banding kills it
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) the gold storefront lettering and all five section header plates need higher-quality blocks — the elegance is the joke and banding kills it
 - **Fallback:** PNG-24 high quality for `condomerie_exterior.png` (gold lettering on cream is compression-hostile) and the header-plate region of `condomerie_interior.png`
 
 ### Texture Atlases:
@@ -462,7 +461,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | condomerie_characters | npc_condomerie_cast | 1024x512 |
 | condomerie_objects_ui | condomerie_products_items, condomerie_ui_effects | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -579,7 +578,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | 4 | npc_condomerie_cast.png | 1024x288 |
 | 5 | condomerie_ui_effects.png | 512x512 |
 
-**Total Estimated Memory:** ~8.1 MB raw RGBA texture data (~3.6 MB after ASTC/ETC2 compression); ~32 MB maximum total runtime footprint per the location performance budget
+**Total Estimated Memory:** ~8.1 MB raw RGBA texture data (~3.6 MB after VRAM compression); ~32 MB maximum total runtime footprint per the location performance budget
 
 ---
 
@@ -624,7 +623,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - [ ] Satirical theme is clear throughout all assets (tourist awkwardness and novelty markup — never the shop, the staff, or sexual health itself)
 - [ ] Femke and Joost are composed and professional in every single frame; all reaction comedy belongs to customers
 - [ ] Hidden areas/interactions have discoverable visual cues (sizing guide requires asking, gift card rack, Art Pieces plinth, three-visit Regular track)
-- [ ] Mobile performance optimized (12-particle ceiling, three atlases, separate interior/exterior scenes)
+- [ ] Performance optimized (12-particle ceiling, three atlases, separate interior/exterior scenes)
 - [ ] Touch zone sizing considered (44px minimum on all five walls, wrapping station, counter, gift card rack, purchase buttons)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (section hatching, wrap patterns, achievement silhouettes)
 - [ ] Social media viral potential maximized in composition choices (plinth framing, Femke's held stare, basket structural failure)
@@ -641,7 +640,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Seedy Underbelly Present | ✅ | Novelty markup on items bought "as a joke," the 45 Sovs bundle, the 30 Sovs Mystery Box, and the 60% of gag gifts quietly kept |
 | Gameplay Value Established | ✅ | Solo-entry Bravado check, five-section browsing, gag-gift declaration, gift-wrap service, group discount, Groom Spotlight, inventory-visibility chain, five-stage achievement track |
 | Technical Feasibility | ✅ | Separate interior/exterior scenes, composed wall sprites, single-float blush shader, 12-particle ceiling all documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB per profile budget |
 | Accessibility Features | ✅ | Six visual audio cues, reduced-motion shimmer/blush/wrap alternatives, section hatching, 44px zones |
 | No Crypto Elements | ✅ | Cash, card, and gift cards; pure traditional retail awkwardness |
 | Social Media Integration | ✅ | Six screenshot moments plus a seven-line quote bank identified |

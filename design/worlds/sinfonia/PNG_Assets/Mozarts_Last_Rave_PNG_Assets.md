@@ -590,7 +590,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Interacting with the Bassmeister headstone at 11 PM–5 AM with a pass or the secret
 - **Purpose:** The satirical puzzle payoff — the entrance is a grave, and the guard is watching, and nothing happens
 - **Audio Sync:** Three knock impacts synced to the player's input; stone-grind on the slide. **Wrong rhythm plays a sad trombone before the stone opens anyway**
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Descent:
 - **Duration:** 4.0 seconds, scripted traversal
@@ -599,7 +599,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Entering the grave
 - **Purpose:** The bone decorations get progressively more party-themed as you go down
 - **Audio Sync:** Club track rises from -30dB to 0dB across the traversal; dripping water fades out at the midpoint
-- **Mobile Optimization:** Cross-fade reduced to hard cuts on Low LOD
+- **Performance Optimization:** Cross-fade reduced to hard cuts on Low LOD
 
 ### Glass Dancefloor Pulse:
 - **Duration:** Locked to the current track's beat clock
@@ -608,7 +608,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Constant on the dancefloor
 - **Purpose:** The floor is the metronome; players read the beat from the room before the UI
 - **Audio Sync:** One swap per beat, locked to the same clock as the Rhythm Track Bar
-- **Mobile Optimization:** Wave becomes a whole-floor flash on Medium; static lit floor on Low
+- **Performance Optimization:** Wave becomes a whole-floor flash on Medium; static lit floor on Low
 
 ### Skeleton Dance Loop:
 - **Duration:** 1.0 second cycle at 120 BPM (scales with tempo)
@@ -617,7 +617,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Constant on the dancefloor; combat-gated for enemies
 - **Purpose:** Enemy attack timing is telegraphed by the dance itself
 - **Audio Sync:** Bone rattle on each loop; xylophone sting on hit
-- **Mobile Optimization:** Ambient dancer count 12 → 6 (Medium) → 4 (Low); all share two frames
+- **Performance Optimization:** Ambient dancer count 12 → 6 (Medium) → 4 (Low); all share two frames
 
 ### Bass Drop:
 - **Duration:** 0.8 seconds, single play
@@ -626,7 +626,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Track drops; Grave-o's attack; Bassmeister "Bass from the Grave" / "Drop of Death"
 - **Purpose:** The location's defining impact — mitigation timing hangs on this
 - **Audio Sync:** Sub-bass hit on ring 1; the Bass Drop Cue Glyph appears 0.5s *before* the audio as an advance warning
-- **Mobile Optimization:** Two rings on Medium; one ring, no shake, on Low. Screen shake replaced by the Screen Shake Marker whenever shake is disabled
+- **Performance Optimization:** Two rings on Medium; one ring, no shake, on Low. Screen shake replaced by the Screen Shake Marker whenever shake is disabled
 
 ### Strobe:
 - **Duration:** Continuous while active
@@ -644,7 +644,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Constant; heavier in Fog Bank hazard volumes
 - **Purpose:** Concealment hazard and the venue's entire atmosphere budget
 - **Audio Sync:** Fog machine hiss on emitter cycle
-- **Mobile Optimization:** Low-density variant on Medium; two static frames cross-faded on Low
+- **Performance Optimization:** Low-density variant on Medium; two static frames cross-faded on Low
 
 ### Boss Phase Transition:
 - **Duration:** 1.2 seconds, single play
@@ -653,7 +653,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Boss HP crosses 66% and 33%
 - **Purpose:** The fight restructures around you twice
 - **Audio Sync:** Track breakdown into the new BPM on the transition frame; Bassmeister's phase line begins immediately after
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### "Last Rave" Wind-Up:
 - **Duration:** 3.0 seconds, single play, held telegraph
@@ -662,7 +662,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Phase 3 desperation attack
 - **Purpose:** The counter-play — turn his music against him
 - **Audio Sync:** Rising organ drone; the Pipe Organ Blast Glyph appears on the interactable at 0.5s
-- **Mobile Optimization:** None needed — this is the mechanic
+- **Performance Optimization:** None needed — this is the mechanic
 
 ### The Appeasement:
 - **Duration:** 4.0 seconds, single play
@@ -671,7 +671,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Present the Lost Composition during Phase 3
 - **Purpose:** "You... found it? My symphony? It SURVIVED?"
 - **Audio Sync:** EDM layers drop out one at a time across the three frames until only strings remain
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Skull Disco Ball Rotation:
 - **Duration:** 2.0 second cycle
@@ -680,7 +680,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - **Trigger:** Constant on the dancefloor
 - **Purpose:** Texture
 - **Audio Sync:** None
-- **Mobile Optimization:** Static frame on Low LOD
+- **Performance Optimization:** Static frame on Low LOD
 
 ---
 
@@ -733,11 +733,10 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 for environment and cast; ASTC 4x4 for `mozarts_rave_ui.png` (rhythm timing legibility is non-negotiable) and `bassmeister_boss.png` (the period-costume/headphone collision must survive). PVRTC 4BPP fallback.
-- **Android:** ETC2 with alpha across all sheets
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for environment and cast; uncompressed for `mozarts_rave_ui.png` (rhythm timing legibility is non-negotiable) and `bassmeister_boss.png` (the period-costume/headphone collision must survive), with alpha across all sheets
 - **Fallback:** PNG high quality for `mozarts_rave_effects.png` — fog gradients band badly under aggressive compression, and fog is the venue
 
 ### Texture Atlases:
@@ -748,7 +747,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | mozarts_rave_characters | Bassmeister, four DJs, cast | 1024x1024 |
 | mozarts_rave_fx_ui | effects, UI | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -900,7 +899,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | 7 | mozarts_rave_effects.png | 512x256 |
 | 8 | mozarts_rave_ui.png | 256x288 |
 
-**Total Estimated Memory:** ~8 MB (2,039,808 px uncompressed RGBA); ~2.2 MB after ETC2/ASTC compression — comfortably inside the 55 MB profile budget
+**Total Estimated Memory:** ~8 MB (2,039,808 px uncompressed RGBA); ~2.2 MB after VRAM compression — comfortably inside the 55 MB profile budget
 
 ---
 
@@ -959,7 +958,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - [ ] The health inspection certificate, tax notices, and 4.2-star plaque are legible in surface crops
 - [ ] The security guard is visible in the same frame as people climbing into a grave
 - [ ] Hidden areas (Requiem Room, Lost Composition) have discoverable visual cues
-- [ ] Mobile performance optimized (CPU particles only, 22-draw-call ceiling, four atlas binds, audio streamed, fog pre-rendered)
+- [ ] Performance optimized (CPU particles only, 22-draw-call ceiling, four atlas binds, audio streamed, fog pre-rendered)
 - [ ] Touch zone sizing considered (44px minimum for rhythm inputs, knock prompt, organ interactable, selfie prompts)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -976,7 +975,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | Seedy Underbelly Present | ✅ | Profile's explicit section: a 5 Sovs "cemetery pass" that is club cover, "tips for the dead" going to the owners, and a fifteen-year-old tourist attraction sold as an underground secret |
 | Gameplay Value Established | ✅ | Full rhythm-combat system, four elemental mini-bosses, three-phase boss with dual resolution, four standard enemy types, four environmental hazards, discovery puzzle, couchsurf host, three selfie spots, eight achievements |
 | Technical Feasibility | ✅ | Eight sheets, four atlases, three LOD tiers, on-demand VIP loading, central beat clock, pre-rendered fog, streamed audio |
-| Mobile Performance Budget | ✅ | 60 FPS / 22 draw calls / 55 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
+| Performance Budget | ✅ | 60 FPS / 22 draw calls / 55 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
 | Accessibility Features | ✅ | Every beat has a visual equivalent; bass drops telegraph 0.5s early; strobe capped at 3Hz with an entry-point photosensitivity warning and player-selectable non-flashing substitution (opt-out); shape-coded hazards, weaknesses, and statuses; screen-shake replacement glyph |
 | No Crypto Elements | ✅ | None present, and the profile explicitly confirms "No crypto elements (Death/music satire only)" |
 | Social Media Integration | ✅ | Three documented selfie spots with variants and unlock conditions, seven screenshot moments, twelve quotable lines |

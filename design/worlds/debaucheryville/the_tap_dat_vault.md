@@ -71,7 +71,7 @@
 - **Lighting Setup**: Neon tube network, backlit brew chambers, RGB wall effects, strobe lighting, vapor glow
 - **Particle Systems**: Vapor clouds (heavy density), neon glow particles, hologram glitches, steam bursts synced to music
 - **Animation Elements**: Rhythm-reactive lighting, pulsing subwoofer vats, glitching hologram text, NPC movement sync, steam pressure gauges
-- **Mobile Optimization**: Reduced particle density on older devices, simplified rhythm-reactive effects, static lighting option
+- **Performance Optimization**: Reduced particle density on older devices, simplified rhythm-reactive effects, static lighting option
 
 ## Satirical Design
 ### Theme & Vibe

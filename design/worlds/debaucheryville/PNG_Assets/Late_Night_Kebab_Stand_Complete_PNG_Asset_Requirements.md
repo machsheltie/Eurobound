@@ -394,11 +394,10 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for fluorescent lighting, maintains harsh brightness
-- **Android:** ETC2 with alpha for steam particle transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for fluorescent lighting, maintains harsh brightness with alpha for steam particle transparency
 - **Fallback:** PNG at high quality for menu item detail preservation
 
 ### Sprite Atlasing Strategy:
@@ -407,7 +406,7 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 - **Menu Items Atlas:** All 8 food items with variations (1024x512)
 - **Environment Atlas:** Puddles + debris + fence + rat (1024x768)
 - **Effects Atlas:** All particle systems combined (512x256)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full steam effects, 4-frame rotisserie, rainbow grease shimmer
@@ -557,7 +556,7 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 - [ ] Mystery meat both repulsive and appealing when hungry
 - [ ] All elements support "desperate tourists meet exploitation" theme
 - [ ] Social media viral potential maximized
-- [ ] Mobile performance optimized for particle effects
+- [ ] Performance optimized for particle effects
 
 ---
 
@@ -571,7 +570,7 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 | Seedy Underbelly Present | ✅ PASS | Health code violations as atmosphere, mystery meat economy |
 | Gameplay Value Established | ✅ PASS | 8-item consumable vendor, status management, quest sample |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 12 draws, 30MB |
+| Performance Budget | ✅ PASS | 60 FPS, 12 draws, 30MB |
 | Accessibility Features | ✅ PASS | Visual audio cues, motion sensitivity, high contrast options |
 | Crypto Scope Bounded | ✅ PASS | Per author ruling, Mr. Chadz's burner-phone screen may show crypto price alerts (`$KBAB`, master pool) — the single permitted crypto surface here. "NFT 4 LYFE" graffiti remains period-satire set dressing. No kiosk, no wallet UI, no coin signage, no crypto pricing; no functional crypto anywhere at the location. See **Crypto Scope at This Location** under Sprite Sheet 2 |
 | Social Media Integration | ✅ PASS | Six viral moments identified |

@@ -287,7 +287,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 - **Trigger:** Any course completion
 - **Purpose:** Every pint judged like a thesis defense — the core joke, systematized
 - **Audio Sync:** Pen scratch, then official stamp thunk on the seal frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Graduation Ceremony:
 - **Duration:** 12 seconds, choreographed
@@ -295,7 +295,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 - **Trigger:** Senior Thesis complete or credit threshold reached
 - **Purpose:** The full pomp — everyone graduates eventually, everyone feels something anyway
 - **Audio Sync:** "Pomp and Circumstance" parody swells from podium step; cork pop + stamp on diploma handoff; crowd cheer on confetti
-- **Mobile Optimization:** Confetti count halved; ceremony skippable after first viewing
+- **Performance Optimization:** Confetti count halved; ceremony skippable after first viewing
 
 ### The Balance Check Walk:
 - **Duration:** 4 seconds within ceremony
@@ -303,14 +303,14 @@ assets/sprites/locations/publandia/trinity_of_pints/
 - **Trigger:** Ceremony step 2
 - **Purpose:** The GPA was drinking all along
 - **Audio Sync:** Crowd "oooh" on heavy wobbles
-- **Mobile Optimization:** Wobble becomes UI meter only in reduced-motion mode
+- **Performance Optimization:** Wobble becomes UI meter only in reduced-motion mode
 
 ### Candle & Stained Glass Ambience:
 - **Duration:** Continuous; candle 0.8s flicker alternation, light pool 20s slow drift
 - **Trigger:** Constant in Great Hall and Library
 - **Purpose:** Faux-collegiate mood lighting doing its LED best
 - **Audio Sync:** None
-- **Mobile Optimization:** Static candles, fixed light pool on Low LOD
+- **Performance Optimization:** Static candles, fixed light pool on Low LOD
 
 ### Random Academic Bells:
 - **Duration:** 2-second toll ripple
@@ -318,7 +318,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 - **Trigger:** Random 90-180s timer ("plays randomly" per the recorded-bells gag)
 - **Purpose:** Marks "course times" with zero actual schedule
 - **Audio Sync:** Recorded bell audio — deliberately slightly canned
-- **Mobile Optimization:** Visual ripple only if audio muted; off in reduced-motion
+- **Performance Optimization:** Visual ripple only if audio muted; off in reduced-motion
 
 ### Rhythm Course (SONG 220):
 - **Duration:** Course-length; note track scrolls at 120 BPM
@@ -326,7 +326,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 - **Trigger:** SONG 220 / Traditional Music Studies enrollment
 - **Purpose:** 80% accuracy target, 40% lyric retention guaranteed
 - **Audio Sync:** Note-hit flashes locked to bodhrán beats
-- **Mobile Optimization:** Note density reduced on Low LOD
+- **Performance Optimization:** Note density reduced on Low LOD
 
 ---
 
@@ -369,11 +369,10 @@ assets/sprites/locations/publandia/trinity_of_pints/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (diploma text and stamp at ASTC 4x4 — certificate legibility is the joke)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import)
 - **Fallback:** PNG high quality for Dean portraits, diploma, and stamp
 
 ### Texture Atlases:
@@ -383,7 +382,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 | trinity_characters | faculty, students | 512x512 |
 | trinity_props_ui | academic_props, effects_ui | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -547,7 +546,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 ### Quality Checkpoints:
 - [ ] Satirical theme (drinking dressed as scholarship) is clear throughout all assets
 - [ ] Easter eggs discoverable: flask compartment, party-store tag, bell speaker, diploma print stack, zip-tied ivy
-- [ ] Mobile performance optimized (static crowd portraits, timeline ceremony, sub-scene rooms)
+- [ ] Performance optimized (static crowd portraits, timeline ceremony, sub-scene rooms)
 - [ ] Touch zone sizing considered (44px minimum — course rows, enrollment desk, podium compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (patterned GPA bands, letterform grades, shape-change rhythm hits)
 - [ ] Social media viral potential maximized (graduation selfie composition, diploma framing)
@@ -564,7 +563,7 @@ assets/sprites/locations/publandia/trinity_of_pints/
 | Seedy Underbelly Present | ✅ | 10 Sovs "tuition" cover charge for a themed pub; exploiting the desire to feel cultured |
 | Gameplay Value Established | ✅ | Ten-course challenge catalog, GPA system, graduation ceremony, stamp stop, Academic Amber unlock |
 | Technical Feasibility | ✅ | Hub-and-rooms structure, timeline ceremony, 7 sheets, mobile optimization documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 15 draw calls, 36MB |
+| Performance Budget | ✅ | 60 FPS, 15 draw calls, 36MB |
 | Accessibility Features | ✅ | Visual cues for all audio, steady-candle/static-confetti/meter-only variants, labeled GPA bands |
 | No Crypto Elements | ✅ | Absent from source and spec |
 | Social Media Integration | ✅ | Six viral moments identified, quote bank sourced from profile |

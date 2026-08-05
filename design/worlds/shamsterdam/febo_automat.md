@@ -84,7 +84,7 @@
 - **Lighting Setup**: Harsh overhead fluorescent, individual compartment warmers, late-night vibe
 - **Particle Systems**: Steam from compartments, frying oil mist, condensation on glass
 - **Animation Elements**: Compartment door opening, coin mechanism turning, food being restocked
-- **Mobile Optimization**: Simplified steam effects, static crowd, reduced compartment animations
+- **Performance Optimization**: Simplified steam effects, static crowd, reduced compartment animations
 
 ## Satirical Design
 ### Theme & Vibe

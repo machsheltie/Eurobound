@@ -563,7 +563,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 - **Particle Budget**: 30 (fluorescent flicker, dust)
 - **Target FPS**: 60
 
-### Mobile Optimization
+### Performance
 - Simplified geometry (straight corridors)
 - Baked lighting with minimal dynamic effects
 - Audio-based navigation cues reduce visual complexity
@@ -615,7 +615,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 - [x] Wrong exits have consequences but aren't game-breaking
 - [x] Shortcuts meaningful once learned
 
-### Mobile Optimization
+### Performance
 - [x] Simple geometry for corridors
 - [x] Audio cues reduce visual dependency
 - [x] Quick zone transitions

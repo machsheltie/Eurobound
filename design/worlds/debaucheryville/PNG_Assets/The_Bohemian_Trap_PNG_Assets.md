@@ -311,7 +311,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Trigger:** Purchasing Green Fairy Special (or any tier with ritual)
 - **Purpose:** The elaborate shot-taking IS the product — the animation must feel worth 25 Sovs while depicting 3 Sovs of alcohol
 - **Audio Sync:** Pour sound on F2, sugar clink on placement, water drips at 1 per second (reverent quiet), clouding "whoosh" on Louche F3, flame puff if lit
-- **Mobile Optimization:** Drip loop shortens to 4s on Low LOD; louche plays all 4 frames regardless (it is the money shot)
+- **Performance Optimization:** Drip loop shortens to 4s on Low LOD; louche plays all 4 frames regardless (it is the money shot)
 
 ### Water Drip:
 - **Duration:** 1.0 second loop within ritual
@@ -320,7 +320,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Trigger:** Ritual step 5
 - **Purpose:** ASMR pacing; the Instagram Ritualist NPC exists for this beat
 - **Audio Sync:** Drip plink on F3, each cycle
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Louche Clouding:
 - **Duration:** 4 seconds one-shot
@@ -329,7 +329,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Trigger:** Ritual step 5 completion
 - **Purpose:** "This is the fairy waking" — the visual climax of the con
 - **Audio Sync:** Low clouding whoosh starting at F2
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Dry Ice Fog:
 - **Duration:** 6 seconds loop
@@ -338,7 +338,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Trigger:** Constant while cart is open
 - **Purpose:** Mystique on a fog-machine budget — the atmosphere IS dry ice and confidence
 - **Audio Sync:** Faint fog hiss, continuous
-- **Mobile Optimization:** Fog bank only (no wisps) on Medium; static fog decal on Low
+- **Performance Optimization:** Fog bank only (no wisps) on Medium; static fog decal on Low
 
 ### Green Fairy Confusion (Screen State):
 - **Duration:** 60 minutes game-status; visual loop 2 seconds
@@ -347,7 +347,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Trigger:** Consuming Green Fairy Special or Shot Flight
 - **Purpose:** Being drunk with green lighting, mechanically — comedy through struggle, never debilitation
 - **Audio Sync:** Distinctive "wrong way" boing on each reversal event
-- **Mobile Optimization:** Stars capped at 3, sparkle edge off on Low; tint always on (it carries the state read)
+- **Performance Optimization:** Stars capped at 3, sparkle edge off on Low; tint always on (it carries the state read)
 
 ### Emil Idle:
 - **Duration:** 9 seconds loop
@@ -356,7 +356,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Trigger:** Constant when no customer engaged
 - **Purpose:** Never breaks character, even unwatched
 - **Audio Sync:** None
-- **Mobile Optimization:** Twirl only, no watch check, on Low
+- **Performance Optimization:** Twirl only, no watch check, on Low
 
 ### The Deflation Beat:
 - **Duration:** 2 seconds
@@ -365,7 +365,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 - **Trigger:** Consumption complete, before status applies
 - **Purpose:** The "25 Sovs for a thimble" moment — comedy anchor
 - **Audio Sync:** Slight deflation note (satirical stinger per profile)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -407,11 +407,10 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 — green_effects.png at ASTC 4x4 (screen overlays band easily)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — green_effects.png kept uncompressed (screen overlays band easily)
 - **Fallback:** PNG high quality for trap_ui.png and poster text
 
 ### Texture Atlases:
@@ -421,7 +420,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 | bohemian_characters | emil, tourists | 1024x512 |
 | bohemian_effects_ui | ritual props, effects, ui, accessibility | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -584,7 +583,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 ### Quality Checkpoints:
 - [ ] Satirical theme (mythology-priced alcohol, vendor in on the joke) is clear throughout all assets
 - [ ] Easter eggs discoverable: the ellipsis sign, absent locals, veteran hecklers, the lamp
-- [ ] Mobile performance optimized (on-demand ritual assets, 2-emitter fog cap, ColorRect tint)
+- [ ] Performance optimized (on-demand ritual assets, 2-emitter fog cap, ColorRect tint)
 - [ ] Touch zone sizing considered (44px minimum — Emil hotspot and menu tiers compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (icon-coded statuses, silhouette-coded bottles)
 - [ ] Social media viral potential maximized (louche close-up, lamp gag, reversal walk compositions)
@@ -601,7 +600,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 | Seedy Underbelly Present | ✅ | 3 Sovs of alcohol sold for 25 Sovs with a costume and a fog machine |
 | Gameplay Value Established | ✅ | Status effect economy, control reversal mechanic, purchasable ritual, Bravado hooks |
 | Technical Feasibility | ✅ | 7 sheets, one AnimationPlayer ritual, input-wrapper reversal — standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 60 FPS / 14 draw calls / 32 MB per profile; estimate ~14 MB |
+| Performance Budget | ✅ | 60 FPS / 14 draw calls / 32 MB per profile; estimate ~14 MB |
 | Accessibility Features | ✅ | Reversal is never audio-only; static tint path; every stinger has a glyph |
 | No Crypto Elements | ✅ | Pure traditional grift (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

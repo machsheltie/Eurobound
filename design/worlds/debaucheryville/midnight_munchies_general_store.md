@@ -94,7 +94,7 @@
 - **Lighting Setup**: Harsh fluorescent, heat lamp glow, neon sign flicker
 - **Particle Systems**: Dust in fluorescent light, heat lamp steam
 - **Animation Elements**: Věra's observations, customer desperation, heat lamp rotation
-- **Mobile Optimization**: Simplified lighting, static heat lamp
+- **Performance Optimization**: Simplified lighting, static heat lamp
 
 ## Satirical Design
 ### Theme & Vibe

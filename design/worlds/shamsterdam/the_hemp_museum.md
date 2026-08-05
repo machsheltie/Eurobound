@@ -104,7 +104,7 @@
 - **Lighting Setup**: Attempted gallery spots, grow light glow from second floor, bright gift shop
 - **Particle Systems**: Dust motes (old building), grow light shimmer, incense wisps (gift shop)
 - **Animation Elements**: Grow light cycle, video exhibit loop, live plants gentle movement
-- **Mobile Optimization**: Simplified plant animation, static grow lights, reduced particle dust
+- **Performance Optimization**: Simplified plant animation, static grow lights, reduced particle dust
 
 ## Satirical Design
 ### Theme & Vibe

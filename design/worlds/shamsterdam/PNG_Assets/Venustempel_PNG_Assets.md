@@ -226,7 +226,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - The board is hand-lettered and cheerful. The warning sign is municipal, formal and completely sincere — different typography, different stock, different tone. The gap between how the two signs are *set* is a second joke on top of the first.
 - Neither sign winks. No cartoon eyes, no nudge iconography, no exclamation-mark flourishes, no double-entendre visual puns. Plain shop signage that happens to say this. The straight-faced typesetting is what makes the copy land.
 - **"We've had incidents" is the key line.** It implies an entire history that nobody explains, and nobody in the game ever does. Set it at the same weight as the rest of the sign; do not emphasise it.
-- Both are baked at 2x internal resolution and flagged for the ASTC 4x4 exception list.
+- Both are baked at 2x internal resolution and flagged for the uncompressed-texture exception list.
 - The warning sign forbids double-dipping. Every visitor NPC in the plaza composition double-dips. Both facts must be visible in the same frame.
 
 ### De Cacaogalerij Exhibits:
@@ -308,7 +308,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - Gunter's cart hygiene card (A) and the fountain plinth card (A→B→C→IN BEHANDELING) use the same municipal template, at the same size, four metres apart. This adjacency is the single most important compositional relationship on the plaza and must survive every camera framing.
 - The cart's sanitiser tub, tongs and half-empty glove box are load-bearing props, not set dressing — her competence is visible or the joke does not land
 - Six tileable assets: Red Velvet Curtain, Mirror Maze Panel, Marble Lobby Tile, Gallery Floor Tile, Plaza Paving Tile, Museum Floor Tile. Plus tileable runs for Gallery Vitrine, Three-Language Placard, Gift Shop Shelving, Scale Progression plinth and Municipal Stanchion.
-- All signage, placards and hygiene cards are baked at 2x internal resolution and flagged for the ASTC 4x4 exception list
+- All signage, placards and hygiene cards are baked at 2x internal resolution and flagged for the uncompressed-texture exception list
 
 ---
 
@@ -640,7 +640,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Always on. There is no off state during trading hours.
 - **Purpose:** The landmark. The queue. The business model. The reason the museum has a Museum Mile lease.
 - **Audio Sync:** Continuous wet cascade bed with a low pump hum beneath it; recognisable two streets away and audible, attenuated, from the entrance hall and the Cacaogalerij
-- **Mobile Optimization:** **Never reduced below two frames on any LOD or accessibility setting.** Reduced-motion drops to the two-frame slow breathe. A static fountain reads as broken and broken is a different joke.
+- **Performance Optimization:** **Never reduced below two frames on any LOD or accessibility setting.** Reduced-motion drops to the two-frame slow breathe. A static fountain reads as broken and broken is a different joke.
 
 ### The Dip Cycle (Sheets 6, 8b, 8c):
 - **Duration:** 2.6 seconds (0.4s approach, 0.4s immerse, 0.4s coat, 0.4s lift, 0.6s drip, 0.4s clear)
@@ -649,7 +649,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** `DIP` interaction with any dippable item
 - **Purpose:** The germ mechanic's entire delivery vector. Engineered to be genuinely, unreasonably satisfying so the player repeats it voluntarily.
 - **Audio Sync:** Immersion at 0.4s (the signature sound); tension break at 1.6s; three-second drip trail from 2.0s
-- **Mobile Optimization:** Reduced-motion uses frames 1 and 6 only — contact and result. Stack application and audio are unchanged.
+- **Performance Optimization:** Reduced-motion uses frames 1 and 6 only — contact and result. Stack application and audio are unchanged.
 
 ### The Health Inspection (Sheets 2, 5, 8a, 8c):
 - **Duration:** Forty in-game minutes, once per in-game quarter, four times per standard playthrough
@@ -658,7 +658,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** In-game date
 - **Purpose:** The world-state tell. Compliance is total, disclosure is complete, and the fountain never once stops.
 - **Audio Sync:** Rope clip at set; a single clipboard-pen click on the finding; nothing else. Gerda works in silence.
-- **Mobile Optimization:** Crowd hold-back band caps at eight NPCs on Low LOD
+- **Performance Optimization:** Crowd hold-back band caps at eight NPCs on Low LOD
 
 ### The Giggling Figure (Sheets 5, 6, 8b):
 - **Duration:** 3.2 seconds (1.2s pre-activation click, 0.4s lift, 0.8s hold with giggle, 0.8s descent)
@@ -667,7 +667,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Motion sensor; unavoidable four steps inside the door
 - **Purpose:** 100% jump-scare rate on first encounter, 80% photography rate on second. The relocation gave it a marble lobby and better acoustics.
 - **Audio Sync:** Clicking at 0.0s (the tell); pneumatic hiss at 1.2s; recorded giggle at 1.6s; reset thunk at 3.2s
-- **Mobile Optimization:** Retains all four frames on every LOD. Reduced-motion holds at frame 1 with the giggle audio and glyph intact and the vignette suppressed.
+- **Performance Optimization:** Retains all four frames on every LOD. Reduced-motion holds at frame 1 with the giggle audio and glyph intact and the vignette suppressed.
 
 ### Marilyn Dress Timer (Sheets 5, 6):
 - **Duration:** 2.4 seconds (0.4s grate, 0.6s rise, 0.8s billow, 0.6s settle)
@@ -676,7 +676,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Timer only
 - **Purpose:** Everyone takes the same photograph. Everyone. Every time.
 - **Audio Sync:** Grate whoosh at 0.4s
-- **Mobile Optimization:** Low LOD reduces to 2 frames; reduced-motion holds at rest with the station functional
+- **Performance Optimization:** Low LOD reduces to 2 frames; reduced-motion holds at rest with the station functional
 
 ### Peep Show Flip Cards (Sheets 5, 6, 8c):
 - **Duration:** 30 seconds per 1 Sov viewing; 8-frame loop at 0.4s
@@ -685,7 +685,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Coin insertion
 - **Purpose:** "People paid money for THIS? ...Put in another coin."
 - **Audio Sync:** Coin clunk at 0.0s; mechanical flip per frame; wind-down at 30s
-- **Mobile Optimization:** Low LOD reduces to 4 frames at 0.8s; reduced-motion uses the static card with audio retained
+- **Performance Optimization:** Low LOD reduces to 4 frames at 0.8s; reduced-motion uses the static card with audio retained
 
 ### The Tempering Room Loop (Sheets 3, 6):
 - **Duration:** 12-second loop, four frames at 3.0s
@@ -694,7 +694,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Ambient
 - **Purpose:** The most technically impressive thing on Museum Mile, drawing a smaller crowd than the mannequin downstairs. Three minutes of observation grants Trivial Knowledge.
 - **Audio Sync:** Marble scrape on spread; a single thermometer tap on test
-- **Mobile Optimization:** Low LOD holds at frame 1 (chocolatier at the slab, static)
+- **Performance Optimization:** Low LOD holds at frame 1 (chocolatier at the slab, static)
 
 ### Cart Transaction Loop (Sheets 5, 6, 8a):
 - **Duration:** 4.0 seconds, four frames at 1.0s
@@ -703,7 +703,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Ambient; overridden by the player's own purchase
 - **Purpose:** Six hundred sticks on a Saturday. She processes a stag party faster than it can be funny at her.
 - **Audio Sync:** Skewer snap on load; card reader beep on payment
-- **Mobile Optimization:** Low LOD reduces to 2 frames
+- **Performance Optimization:** Low LOD reduces to 2 frames
 
 ### Sharing the Love Tier Escalation (Sheets 8b, 8c):
 - **Duration:** 1.6-second tier-up flourish; the aura itself is persistent
@@ -712,7 +712,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Crossing a stack threshold
 - **Purpose:** Tiers 1-2 read as a buff and are a buff. The turn at Tier 3 is unannounced. The gurgle bed enters at Tier 2 and never fully leaves.
 - **Audio Sync:** A warm chime at T1-T2; no chime at all at T3 (the absence is the tell); the gurgle bed rises at every tier
-- **Mobile Optimization:** Aura renders as a single overlay quad on Low LOD
+- **Performance Optimization:** Aura renders as a single overlay quad on Low LOD
 
 ### Neon Venus Flicker (Sheets 5, 8b):
 - **Duration:** 0.2-second dip roughly every 6 seconds
@@ -721,7 +721,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Constant
 - **Purpose:** Never repaired, on two buildings now
 - **Audio Sync:** Faint neon buzz
-- **Mobile Optimization:** Static plate on Low LOD; disabled in reduced-motion
+- **Performance Optimization:** Static plate on Low LOD; disabled in reduced-motion
 
 ### The John Lennon Discovery (Sheets 5, 7, 8c):
 - **Duration:** 2.8 seconds (0.6s examine, 0.6s pause, 1.6s unlock panel)
@@ -730,7 +730,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Examining the display
 - **Purpose:** The one genuinely surprising fact in the building, and the game is not lying about it
 - **Audio Sync:** A single clean chime at 1.2s, distinct from every other sound in the museum
-- **Mobile Optimization:** None needed (one-shot)
+- **Performance Optimization:** None needed (one-shot)
 
 ### Mirror Maze Traversal (Sheets 4, 8b):
 - **Duration:** ~10 seconds of traversal with continuous reflection ghosting
@@ -739,7 +739,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Trigger:** Entering the maze
 - **Purpose:** Short. Disorienting. You will find your way out. Eventually.
 - **Audio Sync:** Footsteps gain a slight reverb tail
-- **Mobile Optimization:** Reflection ghosts cap at two instances on Low LOD; static fog in reduced-motion
+- **Performance Optimization:** Reflection ghosts cap at two instances on Low LOD; static fog in reduced-motion
 
 ---
 
@@ -804,11 +804,10 @@ assets/sprites/locations/shamsterdam/venustempel/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); all four HYGIËNESCORE cards, all four ONE DIP signs, the cart price board, the cart hygiene card, exhibit placards, the framed violation notice, the art deco sign, the Cacaogalerij three-language placards, the Lennon label and all portraits at ASTC 4x4
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) all four HYGIËNESCORE cards, all four ONE DIP signs, the cart price board, the cart hygiene card, exhibit placards, the framed violation notice, the art deco sign, the Cacaogalerij three-language placards, the Lennon label and all portraits kept uncompressed
 - **Fallback:** PNG high quality for the plaza sheet, the fountain sheet and both interior sheets (the chocolate specular, the red wash and the mirror maze UV all band badly under lossy compression)
 
 ### Texture Atlases:
@@ -820,7 +819,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | venustempel_characters | npc_venustempel_staff, npc_venustempel_plaza | 1024x1024 |
 | venustempel_fx_ui | venustempel_effects, venustempel_ui | 2048x512 |
 
-*(The plaza sheet and the two interior sheets load and unload as streamed room units — only one is resident in normal play. The fountain sheet is resident whenever the plaza is resident. Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(The plaza sheet and the two interior sheets load and unload as streamed room units — only one is resident in normal play. The fountain sheet is resident whenever the plaza is resident. Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -1065,7 +1064,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - [ ] The Sharing the Love UI reads as a **buff** at Tiers 1-2 with no warning framing, no red, and no ominous iconography
 - [ ] The Attribution Table renders all eight entries and structurally excludes the fountain
 - [ ] Hidden areas/interactions have discoverable visual cues (Lennon display highlight, the bench, the anticipation tell, the maze entrance, the Failures Case, the framed violation, the manufacturer's plate)
-- [ ] Mobile performance optimized (streamed room units, CPU particles, atlas limits respected, crowd depth bands as single quads, spatter on a capped decal layer, cascade floor of four frames honoured)
+- [ ] Performance optimized (streamed room units, CPU particles, atlas limits respected, crowd depth bands as single quads, spatter on a capped decal layer, cascade floor of four frames honoured)
 - [ ] Touch zone sizing considered (44px minimum for the dip, cart menu, coin slots, exhibit examines and photo stations)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (letter/date text on hygiene cards, segmented and named Sharing the Love tiers, percentage text on postability, pattern-filled reaction split, flow-geometry-distinguished fountain states, shape-coded album markers)
 - [ ] Social media viral potential maximized in composition choices (plaza at peak, the two cards in one frame, the attribution table, Gerda's forty minutes, the family, De Oervorm, the framed violation)
@@ -1082,7 +1081,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Seedy Underbelly Present | ✅ | Free chocolate as a customer-acquisition funnel returning eleven times its 90,000 Sovs annual running cost; the 1 SOV bare skewer as the cart's highest-margin product; a 10 Sovs green screen composite of a cascade you can stand in front of for free, outselling every other photo product; a 1,200 Sovs fine cleared before noon on a Saturday |
 | Gameplay Value Established | ✅ | Sharing the Love five-tier stacking status with seven gain sources and four cures persisting city-wide; the structurally-excluded attribution table; Tier 4 navigation override and Tier 5 day-long debuff; the eight-item cart economy; quarterly inspection world state with a four-stage score downgrade and a four-stage sign escalation; the Cultural Alibi permanent flag; retained Giggling Figure encounter, mutoscope economy, eight photo stations and the Lennon unlock |
 | Technical Feasibility | ✅ | Streamed room units, cascade floor of four frames on Low LOD, crowd depth bands as single quads, capped spatter decal layer, pooled flash instances, pre-composed group blocks, CPU particles throughout |
-| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 42 MB (raised from 38 MB for the plaza and hero fountain), 18 particles; ~26.2 MB typical resident, ~38.4 MB worst case |
+| Performance Budget | ✅ | 60 FPS, 16 draw calls, 42 MB (raised from 38 MB for the plaza and hero fountain), 18 particles; ~26.2 MB typical resident, ~38.4 MB worst case |
 | Accessibility Features | ✅ | Visual mirrors for all sixteen audio cues including the dip and the gurgle bed; a reduced-motion set that preserves every comedy beat (the cascade breathes, the dip still lands, the giggle still fires); letter/date-coded hygiene states; segmented and named status tiers; 44px touch zones |
 | No Crypto Elements | ✅ | The only currencies are Sovs, 1 Sov coins for machines built in the 1890s, and germs |
 | Content Handled Appropriately | ✅ | No asset in this specification depicts explicit content. Every exhibit is confectionery, machinery, a mannequin, a framed artefact, signage, municipal paperwork, food-service equipment, or a visitor reaction. The collection and the fountain are rendered plainly and at full scale, without euphemism and without leering; the register is gleeful MA-rated excess played dead straight by the institution, with escalating physical consequences landing on the bros - never anticlimax, never administrative deflation. |

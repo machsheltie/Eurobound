@@ -578,7 +578,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Location open hours (16:00–01:00)
 - **Purpose:** Street-visible theatrical pull toward the entrance
 - **Audio Sync:** None (distant applause ambience handled by scene audio)
-- **Mobile Optimization:** Hold F1 static on low-end devices
+- **Performance Optimization:** Hold F1 static on low-end devices
 
 ### Spotlight Finds Player:
 - **Duration:** 1.2 seconds (0.9s sweep, 0.3s lock)
@@ -587,7 +587,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Bravo Challenge start — drink delivered, "You're on."
 - **Purpose:** The mini-game's oh-no moment; the room becomes a stage
 - **Audio Sync:** Spotlight hum begins at lock (hum glyph appears same frame)
-- **Mobile Optimization:** Skip sweep; fade static spotlight alt in over 0.4s
+- **Performance Optimization:** Skip sweep; fade static spotlight alt in over 0.4s
 
 ### Stagehand Pour Flourish:
 - **Duration:** 1.6 seconds, single play
@@ -596,7 +596,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Any beer ordered
 - **Purpose:** Theatrical pour — the everyday act performed as art
 - **Audio Sync:** Pour sound on F2; dramatic sting on F3 apex
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Stagehand Small Bow:
 - **Duration:** 0.8 seconds (0.3s down, 0.5s hold)
@@ -605,7 +605,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Every drink delivery, no exceptions
 - **Purpose:** "Served with a small bow, always"
 - **Audio Sync:** None
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Applause Escalation (Crowd):
 - **Duration:** Polite: 1.0s loop / Enthusiastic: 0.6s loop / Standing Ovation: 0.5s loop
@@ -614,7 +614,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Crowd judgment result
 - **Purpose:** The applause meter made flesh — score readable from the crowd alone
 - **Audio Sync:** Applause volume and density scaled to performance tier; clap glyph size matches (small burst / large burst)
-- **Mobile Optimization:** Animate 6 nearest patrons; crowd blocks hold static frames
+- **Performance Optimization:** Animate 6 nearest patrons; crowd blocks hold static frames
 
 ### Critics' Slow Clap:
 - **Duration:** 3.0 seconds (claps at 0.75s, 0.55s, 0.35s intervals, accelerating)
@@ -623,7 +623,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Toast that wins over the House Critics
 - **Purpose:** The highest honor: irony collapsing into sincerity
 - **Audio Sync:** Single isolated clap per contact frame, then crowd joins
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Booed Off:
 - **Duration:** 1.0 second loop (boo), sad trombone 1.5s single play
@@ -632,7 +632,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Failed toast (Operatic Attempt silence, botched Wing It)
 - **Purpose:** Failure state feeding the hidden "Booed Off" achievement
 - **Audio Sync:** Sad trombone at trigger; trombone glyph shows for its full duration
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Confetti Burst:
 - **Duration:** 1.2 seconds, single play, then 4s fall loop
@@ -641,7 +641,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Standing ovation result; "They Love Me" selfie variant
 - **Purpose:** Peak triumph moment — the screenshot generator
 - **Audio Sync:** Triumphant brass on burst F1 (brass glyph同frame); applause underneath
-- **Mobile Optimization:** Halve particle count; skip fall loop, jump to static scatter
+- **Performance Optimization:** Halve particle count; skip fall loop, jump to static scatter
 
 ### Foam Cascade:
 - **Duration:** 0.9 second cycle
@@ -650,7 +650,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** The Encore pour; ceremonial drink moment
 - **Purpose:** Beer as spectacle — even the foam performs
 - **Audio Sync:** Soft fizz on F1
-- **Mobile Optimization:** Single static foam overlay frame
+- **Performance Optimization:** Single static foam overlay frame
 
 ### Velvet Curtain Exit:
 - **Duration:** 1.0 second
@@ -659,7 +659,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Player exits through the velvet curtain (yes, really)
 - **Purpose:** Every departure is a final bow
 - **Audio Sync:** Fabric whoosh on F1; faint applause swell on F2
-- **Mobile Optimization:** Crossfade closed → open, skip F1
+- **Performance Optimization:** Crossfade closed → open, skip F1
 
 ### Stamp Ceremony (Curtain-Rise Stamp Animation):
 - **Duration:** 2.5 seconds total (curtain rise 1.0s, spotlight hit 0.5s, stamp with flourish 1.0s)
@@ -668,7 +668,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Bravo Challenge completed, stamp awarded at Green Room podium
 - **Purpose:** "This stamp represents TRIUMPH! GLORY! Also, you drank our beer!"
 - **Audio Sync:** Applause sound exactly on F4 stamp contact (stamp applause glyph same frame); brass sting on F3 spotlight hit
-- **Mobile Optimization:** None needed — this is the payoff moment, protect it
+- **Performance Optimization:** None needed — this is the payoff moment, protect it
 
 ### Herr Dramatisch Verdict:
 - **Duration:** 1.0 second, hold final frame 1.5s
@@ -677,7 +677,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Toast judgment delivered
 - **Purpose:** No middle ground exists; even ACCEPTABLE is performed grudgingly
 - **Audio Sync:** Dramatic sting on F2 (sting flash effect same frame)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Per-Beer Lighting Shift:
 - **Duration:** 0.8 second crossfade
@@ -686,7 +686,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Beer selected at the tap — lighting shifts based on what's being poured
 - **Purpose:** The room itself reviews your order
 - **Audio Sync:** None (pour flourish carries audio)
-- **Mobile Optimization:** Instant palette swap, no lerp — gels are swatches, not shaders
+- **Performance Optimization:** Instant palette swap, no lerp — gels are swatches, not shaders
 
 ### Intermission Bell:
 - **Duration:** 1.2 seconds (3 pulses at 0.4s)
@@ -695,7 +695,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Intermission IPA ordered
 - **Purpose:** Bell warning before serving, exactly like a theater lobby
 - **Audio Sync:** Chime per pulse; bell ring glyph mirrors each chime
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Bottle Opener Applause Click:
 - **Duration:** 0.3 seconds
@@ -704,7 +704,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Opener used on any bottle
 - **Purpose:** The tiniest standing ovation in the game
 - **Audio Sync:** Tiny applause click sound on pop (glyph IS the visual cue)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Applause Meter Needle:
 - **Duration:** Continuous, 0.2s eased movement per score change
@@ -713,7 +713,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Active during toast delivery and judgment
 - **Purpose:** Real-time performance feedback the whole table can read
 - **Audio Sync:** Soft tick at each zone boundary (zone icon pulses same moment)
-- **Mobile Optimization:** Snap movement, no easing
+- **Performance Optimization:** Snap movement, no easing
 
 ---
 
@@ -762,11 +762,10 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); marquee and stamp sheets at ASTC 4x4 — letter tiles and stamp detail must stay legible
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) marquee and stamp sheets kept uncompressed — letter tiles and stamp detail must stay legible
 - **Fallback:** PNG high quality for `the_standing_ovation_items.png` (stamp and opener are screenshot- and inventory-critical)
 
 ### Texture Atlases:
@@ -776,7 +775,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 | standing_ovation_characters | Herr Dramatisch, critics/stagehands/patrons | 1024x1024 |
 | standing_ovation_effects_ui | items, effects, UI | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -957,7 +956,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - [ ] Satirical theme is clear throughout all assets — total theatrical commitment to an ordinary pint
 - [ ] Green Room's deliberate flatness contrasts front-of-house drama
 - [ ] Hidden areas/interactions have discoverable visual cues (Wings booth, tasting nook, stamp podium mark)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, confetti replaces ambient)
+- [ ] Performance optimized (CPU particles, atlas limits respected, confetti replaces ambient)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices (spotlight moments frame the player center-stage)
@@ -974,7 +973,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 | Seedy Underbelly Present | ❌ | Honest gap: vice is soft here — self-written five-star reviews, self-appointed critics, and the buy-a-round Booed Off redemption are gag-level puffery, not a genuine exploitation economy. Acceptable as a lighter-shade location, but flagged per validation standard |
 | Gameplay Value Established | ✅ | Toast mini-game, brewery stamp #2, six-beer shop with buffs, achievements, selfie spot |
 | Technical Feasibility | ✅ | Seven sheets, atlas plan, LOD tiers, palette-swap lighting documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 40 draw calls, 35 MB, 40-particle cap — proposed defaults; source profile stated no budget (flagged in Mobile Optimization) |
+| Performance Budget | ✅ | 60 FPS, 40 draw calls, 35 MB, 40-particle cap — proposed defaults; source profile stated no budget (flagged in Performance & Assets) |
 | Accessibility Features | ✅ | Visual cues for every audio event; static spotlight/confetti variants; HC silhouettes; pattern-coded meter |
 | No Crypto Elements | ✅ | None present — pure theatrical satire |
 | Social Media Integration | ✅ | Spotlight, ovation, and Booed Off moments identified; selfie variants specced |

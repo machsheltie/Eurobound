@@ -105,7 +105,7 @@
   - Crowd phone-raising wave
   - Vendor approach animations
   - Bros crying animation (post-show)
-- **Mobile Optimization**: Crowd rendered as simplified sprites at distance; vendor detail increases on approach; clock animation pre-rendered
+- **Performance Optimization**: Crowd rendered as simplified sprites at distance; vendor detail increases on approach; clock animation pre-rendered
 
 ---
 

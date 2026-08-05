@@ -469,7 +469,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Constant while Nora is at the counter
 - **Purpose:** Sells "warm but weary" without a word of dialogue
 - **Audio Sync:** Soft cup placement on the wipe beat
-- **Mobile Optimization:** Drop glance/expression beats on Low LOD; 2-state loop
+- **Performance Optimization:** Drop glance/expression beats on Low LOD; 2-state loop
 
 ### Espresso Pour:
 - **Duration:** 2.5 seconds
@@ -478,7 +478,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Any coffee purchase
 - **Purpose:** The one genuinely excellent craft in the room
 - **Audio Sync:** Grinder growl on frame 1, machine hiss on frames 4-5, cup clink on frame 6
-- **Mobile Optimization:** 3-frame version (grind → pour → serve)
+- **Performance Optimization:** 3-frame version (grind → pour → serve)
 
 ### Coffee Steam:
 - **Duration:** 1.2 seconds loop
@@ -487,7 +487,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Constant on any served cup; despawns after 60s
 - **Purpose:** Warmth and café atmosphere
 - **Audio Sync:** None
-- **Mobile Optimization:** Static Cup Steam Large sprite on Low LOD
+- **Performance Optimization:** Static Cup Steam Large sprite on Low LOD
 
 ### Typing NPCs:
 - **Duration:** 0.8 seconds loop per cycle
@@ -496,7 +496,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Constant for seated terminal/laptop NPCs
 - **Purpose:** Vigorous typing producing nothing — the café's heartbeat
 - **Audio Sync:** Keyboard clicking layer volume scales with visible typist count
-- **Mobile Optimization:** Only 2 NPCs animate simultaneously; others hold Frame 1
+- **Performance Optimization:** Only 2 NPCs animate simultaneously; others hold Frame 1
 
 ### Screen Flicker:
 - **Duration:** 0.3 seconds, random intervals 20-45 seconds
@@ -505,7 +505,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Timer per powered terminal
 - **Purpose:** Vintage hardware authenticity
 - **Audio Sync:** None
-- **Mobile Optimization:** Disabled below Medium LOD; disabled entirely in reduced-motion mode
+- **Performance Optimization:** Disabled below Medium LOD; disabled entirely in reduced-motion mode
 
 ### The Dial-Up Moment:
 - **Duration:** 6 seconds
@@ -514,7 +514,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Hourly timer (the café's advertised "nostalgia feature")
 - **Purpose:** The location's signature gag — everyone pauses reverently for a sound from 1998
 - **Audio Sync:** Full dial-up tone; connection meter completes exactly on the final screech
-- **Mobile Optimization:** 3-frame reduced overlay, LEDs static on frame 3
+- **Performance Optimization:** 3-frame reduced overlay, LEDs static on frame 3
 
 ### ICQ Notification Popup:
 - **Duration:** 1.0 second
@@ -523,7 +523,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** ICQ event roll (Sauce Apostates ping, scammer contact, rival sighting, hot tip)
 - **Purpose:** Comedy delivery vehicle and quest hook
 - **Audio Sync:** ICQ "uh-oh" on frame 1
-- **Mobile Optimization:** 2-frame pop, no bloom
+- **Performance Optimization:** 2-frame pop, no bloom
 
 ### Selfie Pose & Capture:
 - **Duration:** 3 seconds
@@ -532,7 +532,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Player uses Selfie Upload at any backdrop (literary corner grants quality bonus)
 - **Purpose:** The core delusion loop — culture as backdrop
 - **Audio Sync:** Shutter click on flash frame
-- **Mobile Optimization:** Flash burst reduced to single sprite, no screen-wide white
+- **Performance Optimization:** Flash burst reduced to single sprite, no screen-wide white
 
 ### Upload Progress & Success:
 - **Duration:** 2-4 seconds (varies by "literary pace" connection)
@@ -541,7 +541,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Selfie upload confirm
 - **Purpose:** Tension → validation → Bravado
 - **Audio Sync:** Upload success chime on ping frame 1
-- **Mobile Optimization:** Fixed 2-second fill, no stutter beat
+- **Performance Optimization:** Fixed 2-second fill, no stutter beat
 
 ### Dust Motes:
 - **Duration:** 8 seconds drift loop
@@ -550,7 +550,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Constant during daylight hours
 - **Purpose:** "Intellectual atmosphere" in particle form
 - **Audio Sync:** None
-- **Mobile Optimization:** 6 motes max on Medium, off on Low
+- **Performance Optimization:** 6 motes max on Medium, off on Low
 
 ### Rumor Ping Arrival:
 - **Duration:** 1.5 seconds
@@ -559,7 +559,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** Rumor system event while player is in the back alcove or at a terminal
 - **Purpose:** Quest hint delivery with tabloid energy
 - **Audio Sync:** Soft mail chime on shake
-- **Mobile Optimization:** Slide replaced with instant show
+- **Performance Optimization:** Slide replaced with instant show
 
 ### "Someone Actually Reads":
 - **Duration:** 2 seconds
@@ -568,7 +568,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Trigger:** The Ulysses Challenge read action; also fires on the Silent Local Writer once per real-time hour
 - **Purpose:** The rarest, most sacred event in Café NORA
 - **Audio Sync:** The rare "someone actually reads" chime, exactly once
-- **Mobile Optimization:** None needed (event is too rare to budget for)
+- **Performance Optimization:** None needed (event is too rare to budget for)
 
 ---
 
@@ -621,11 +621,10 @@ assets/sprites/locations/publandia/cafe_nora/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback for legacy devices); `cafe_nora_ui.png` at ASTC 4x4 — chat text and password board must stay legible
-- **Android:** ETC2 with alpha across all sheets
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) `cafe_nora_ui.png` kept uncompressed — chat text and password board must stay legible with alpha across all sheets
 - **Fallback:** Lossless PNG for `literary_corner.png` and `cafe_nora_ui.png` — the fake quote gag and ICQ text are detail-critical
 
 ### Texture Atlases:
@@ -635,7 +634,7 @@ assets/sprites/locations/publandia/cafe_nora/
 | cafe_nora_characters | nora_fitzgerald, cafe_regulars | 1024x1024 |
 | cafe_nora_ui_fx | cafe_nora_ui, cafe_items_effects, cafe_nora_accessibility | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -803,7 +802,7 @@ assets/sprites/locations/publandia/cafe_nora/
 ### Quality Checkpoints:
 - [ ] Satirical theme (literary tourism as performance, pretension without substance) is clear throughout all assets
 - [ ] Easter eggs discoverable: fake quote, fake Joyce letter, reproduction Ulysses, never-consulted literary map, the marked calendar
-- [ ] Mobile performance optimized (CPU particles capped at 20, 12 draw calls, silhouette crowd clusters, 9-slice UI)
+- [ ] Performance optimized (CPU particles capped at 20, 12 draw calls, silhouette crowd clusters, 9-slice UI)
 - [ ] Touch zone sizing considered (44px minimum — order hotspot, terminal rental, selfie upload, ICQ window, rumor popups)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded quality stamps, glyph-coded effect icons, icon-coded rumor categories)
 - [ ] Social media viral potential maximized (fake quote framing, dial-up moment composition, contested outlet tableau)
@@ -820,7 +819,7 @@ assets/sprites/locations/publandia/cafe_nora/
 | Seedy Underbelly Present | ✅ | Pretension without substance — exploiting literary heritage for Wi-Fi fees; ICQ scam ecosystem in the back alcove |
 | Gameplay Value Established | ✅ | ICQ hub, selfie/Bravado system, rumor pings, consumables, Regular progression, five quest hooks |
 | Technical Feasibility | ✅ | Godot 4.x, top-left origin, CPUParticles2D, alpha-toggle flicker, 9-slice UI, state machines documented |
-| Mobile Performance Budget | ✅ | 60 FPS target, 12 draw calls, 30 MB memory, 20-particle cap per the location's performance budget |
+| Performance Budget | ✅ | 60 FPS target, 12 draw calls, 30 MB memory, 20-particle cap per the location's performance budget |
 | Accessibility Features | ✅ | Visual cues for all six critical sounds, steady/static/reduced motion variants, 44px targets, shape-coded stamps |
 | No Crypto Elements | ✅ | Passes — the Digital Nomad's "blockchain" line is satirical dialogue established in the source profile, not a game mechanic |
 | Social Media Integration | ✅ | Six viral moments identified; selfie system is itself the satirical social-media loop |

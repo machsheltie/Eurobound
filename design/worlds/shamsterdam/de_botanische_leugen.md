@@ -63,7 +63,7 @@
 - **Lighting Setup**: Natural market light, flower color saturation, romantic glow
 - **Particle Systems**: Pollen float, petal fall, canal water sparkle
 - **Animation Elements**: Gentle stall sway, tourist browsing, bulb examination
-- **Mobile Optimization**: Simplified flower variety, static canal, reduced petal particles
+- **Performance Optimization**: Simplified flower variety, static canal, reduced petal particles
 
 ## Satirical Design
 ### Theme & Vibe

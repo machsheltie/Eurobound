@@ -13,7 +13,7 @@ The Bassline Opera House is a 400-year-old baroque masterpiece that transforms i
 
 **Priority**: HIGH (Multi-Zone Venue, Story Hub, Boss Arena, Fiaker Fiasco Phase 3, Couchsurf Interior)  
 **Total Sheets Required**: 18  
-**Mobile Optimization**: Target 60 FPS on iPhone 8+
+**Performance Optimization**: Target 60 FPS on min-spec hardware
 
 > **⚠️ Binding art direction for Sheets 13–18 — the stage/off-stage gag.**
 > Madame Fortissima and Prima Donna Adelheid are drag performers headlining **DIE, FLEDERMAUS!**, and their off-stage identities (**Wolfram Kranzler**, 58; **Lorenz Brandtner**, 44) are printed on the programme, engraved on the dressing-room door plates, and applauded nightly by twelve hundred people. **The transformation must be legible in the art with no dialogue explaining it** — a player who mutes the game must be able to look at the stage sheet and the off-stage sheet side by side and understand instantly that these are the same two people.
@@ -805,7 +805,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Gustav destruction events during Fiaker Fiasco phase 3
 - **Purpose:** A director's career-long faith in art dying in real time; the quest's emotional comedy spine
 - **Audio Sync:** German exclamation on Horror frame 1; silence on Defeat
-- **Mobile Optimization:** None needed (single NPC)
+- **Performance Optimization:** None needed (single NPC)
 
 ### Otto's Coffee Sip:
 - **Duration:** ~1 second, single play on random interval
@@ -814,7 +814,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Timer (random 8–15s), unaffected by chaos state
 - **Purpose:** The deadpan constant — destruction rages, Otto sips
 - **Audio Sync:** Quiet slurp, deliberately audible in chaos lulls
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Starry Night Backdrop Tear:
 - **Duration:** ~0.6 seconds (canvas rip effect, 4 frames at 6-8 FPS)
@@ -823,7 +823,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Gustav's cape snag scripted event
 - **Purpose:** The 400 Sovs, eight-months-of-work destruction centerpiece
 - **Audio Sync:** Long fabric-rip sound synced to the diagonal tear; damage popup ching on completion
-- **Mobile Optimization:** None needed (scripted one-shot)
+- **Performance Optimization:** None needed (scripted one-shot)
 
 ### Maestro Boss Phase Cycle:
 - **Duration:** Attacks 0.7–2.0s each per guidelines (4-8 frames at 4-6 FPS)
@@ -832,7 +832,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Boss AI state machine, tempo-synced to battle music
 - **Purpose:** Classical elegance → modern swagger → desperate fusion, each phase a tonal shift
 - **Audio Sync:** All attacks beat-matched; Phase 2 bass attack lands exactly on the drop
-- **Mobile Optimization:** Phase 3 strobe replaced by slow color fade on low-end devices
+- **Performance Optimization:** Phase 3 strobe replaced by slow color fade on low-end devices
 
 ### Papageno Performing / Feather Bounce:
 - **Duration:** ~1 second loop (6 frames at 4-8 FPS)
@@ -841,7 +841,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Constant while on screen; Guiding Beckon during ally path
 - **Purpose:** The one performer who never breaks character, even mid-catastrophe
 - **Audio Sync:** Panpipe phrase on performing loop start
-- **Mobile Optimization:** Feather secondary motion disabled on low-end
+- **Performance Optimization:** Feather secondary motion disabled on low-end
 
 ### Destruction Effects (Feathers / Gold Flakes / Dust):
 - **Duration:** 0.5–0.7 seconds each (4 frames at 6-8 FPS)
@@ -850,7 +850,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Prop destruction events
 - **Purpose:** Sells impact and cost — every puff of dust is money
 - **Audio Sync:** Crash + register ching with rising SOVS damage popup
-- **Mobile Optimization:** Cap concurrent effect instances at 4 on low-end
+- **Performance Optimization:** Cap concurrent effect instances at 4 on low-end
 
 ### Fortissima's Curtain Call (Sheet 14, Row 2):
 - **Duration:** ~2.0 seconds, single play (4 frames at 2 FPS, final frame held)
@@ -859,7 +859,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** End of DIE, FLEDERMAUS!, Saturday performance only
 - **Purpose:** **The location's central visual gag, delivered entirely without dialogue.** A triumph, not a reveal.
 - **Audio Sync:** Genuine ovation, twelve hundred people, mixed as an ovation. **If it plays as a gag the scene is broken.**
-- **Mobile Optimization:** Crowd layer pre-rendered; no per-audience-member logic
+- **Performance Optimization:** Crowd layer pre-rendered; no per-audience-member logic
 
 ### The Eyebrow (Sheet 15, Row 1):
 - **Duration:** ~0.4 seconds, single play, returns to idle
@@ -868,7 +868,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Any bro line Adelheid declines to dignify; also the direct-flirtation branch
 - **Purpose:** Ends most conversations in this building. **Highest-reuse animation on the diva sheets.**
 - **Audio Sync:** None. Silence is the joke.
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Nightcap Sequence (Sheets 14/15/18):
 - **Duration:** ~14 seconds total scripted sequence
@@ -877,7 +877,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Accepting the tray in the apartment, ~01:40 Saturday
 - **Purpose:** The afterparty's one scripted beat
 - **Audio Sync:** Room tone and conversation only. **No sting, no stinger chord, no downbeat on the sideboard turn.** "PROST!" on the raised-glass frame.
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 - **⚠️ Staging rails (binding):** the camera does not cut away from the sideboard and does not linger on it; there is no slow-motion, no rack focus, no colour shift, and no lingering on the tray. **The last frame before the cut to black is a host laughing.** If any part of this reads as menace it has drifted off spec and must be pulled back to farce.
 
 ### The Morning Page Turn (Sheets 16/17):
@@ -887,7 +887,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Morning-after dialogue nodes
 - **Purpose:** Two people going about their Sunday morning while three guests reconstruct a night they cannot remember
 - **Audio Sync:** Paper, a cup on a saucer, nothing else
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Off-Stage Transition (Sheets 14 → 13 → 16, and 15 → 17):
 - **Duration:** Not animated as a sequence; delivered as three static states the player encounters in order across the evening
@@ -896,7 +896,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Curtain call → dressing room 23:30 → apartment 01:30
 - **Purpose:** **The stage/off-stage gag must be legible from silhouette scale alone.** Sheet 14 is 128×160; Sheet 16 is 48×64. Same person, four hours apart, and the player understands it without one line of dialogue.
 - **Audio Sync:** None — and the VO does not change register between states, which must be stated to the VO director
-- **Mobile Optimization:** State swap is a texture change, not geometry
+- **Performance Optimization:** State swap is a texture change, not geometry
 
 ---
 
@@ -940,11 +940,10 @@ The afterparty and morning-after location. One flight of internal stairs above t
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); lobby tileset gilding and boss sheet need ASTC 4x4
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) lobby tileset gilding and boss sheet need uncompressed
 - **Fallback:** PNG high quality for the starry backdrop (its hand-painted stars are plot-critical)
 
 ### Texture Atlases:
@@ -958,7 +957,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | opera_divas | Fortissima diva + dragshow, Adelheid dragshow, Kranzler offstage, Brandtner offstage | 1024x1024 |
 | opera_apartment | divas' apartment interior | 1024x1024 |
 
-*(Seven atlases at 1024px; max atlas size 2048x2048 for mobile GPU compatibility. **Peak concurrent atlas count remains five**, per the original spec: `opera_divas` and `opera_apartment` are Saturday-only, load with the couchsurf interior, and unload with it — they never need to coexist with `opera_boss`, which is Bassline-night content. The five diva sheets pack into a single 1024×1024 with room to spare: 512×640 left column, 384×384 + 384×320 right column, 288×256 ×2 below.)*
+*(Seven atlases at 1024px; max atlas size 2048x2048 for broad GPU compatibility. **Peak concurrent atlas count remains five**, per the original spec: `opera_divas` and `opera_apartment` are Saturday-only, load with the couchsurf interior, and unload with it — they never need to coexist with `opera_boss`, which is Bassline-night content. The five diva sheets pack into a single 1024×1024 with room to spare: 512×640 left column, 384×384 + 384×320 right column, 288×256 ×2 below.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -968,7 +967,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | Low | Static lighting, minimal particles (destruction one-shots only), no shaders |
 
 ### Performance Targets:
-- **Target FPS:** 60 on iPhone 8+
+- **Target FPS:** 60 on min-spec hardware
 - **Max Draw Calls:** Under 50 for full location
 - **Memory Footprint:** Under 50 MB for all zones loaded
 - **Particle Limit:** 80 simultaneous
@@ -1216,7 +1215,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - [ ] The satire lands on the **tourists**, never on the performers, opera, or drag performance
 - [ ] Hidden panel / prop corridor have discoverable visual cues
 - [ ] Apartment stair entrance (shared with Otto's smoke-break door) has a discoverable visual cue
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, apartment atlases stream and unload)
+- [ ] Performance optimized (CPU particles, atlas limits respected, apartment atlases stream and unload)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements, including all apartment examinables)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -1233,7 +1232,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | Seedy Underbelly Present | ✅ | Bassline underground nights, hidden gambling-den entrance, scalped prestige |
 | Gameplay Value Established | ✅ | Story hub, boss arena, rhythm battle, quest phase 3, shop/box office, Saturday drag show + couchsurf interior |
 | Technical Feasibility | ✅ | 18 sheets, 7-atlas plan (peak concurrent 5), zone loading incl. streamed apartment, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 60 FPS, <50 draw calls, ~16.1 MB of sheets against a <50 MB budget, 80 particles |
+| Performance Budget | ✅ | 60 FPS, <50 draw calls, ~16.1 MB of sheets against a <50 MB budget, 80 particles |
 | Accessibility Features | ✅ | Visual audio cues (incl. ovation and PROST glyphs), strobe replacement, static makeup bulbs, instant-cut fade option, telegraph outlines, apartment examinable outlines |
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Twelve screenshot moments and nine quotable poses identified |

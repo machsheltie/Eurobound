@@ -361,7 +361,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ## 🖥️ Performance & Assets
 
@@ -546,7 +546,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 - [ ] Satirical theme (a fully honest grift ecosystem that hasn't updated since 1997) is clear throughout all assets
 - [ ] Readable details intact: bathroom addendum, scratched-out EST. date, rust rings, 2003 pallet stamp, Bubbles poster
 - [ ] No assets re-exported from sub-location PNG docs (prize booth, mystery meat cart) or from `hamstradamus.md` / Bobo's profile
-- [ ] Mobile performance optimized (CPU particles, reducible vape density, aggressive crowd LOD past `game_alley`)
+- [ ] Performance optimized (CPU particles, reducible vape density, aggressive crowd LOD past `game_alley`)
 - [ ] Touch zone sizing considered (44px minimum — dodge icons, ticket booth, ICQ terminal compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded dodge prompts, patterned prophecy pulse)
 - [ ] Social media viral potential maximized (ticket-booth signage frame, fax-machine composition)
@@ -566,7 +566,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | No Duplicate Assets vs. Sub-Location PNG Docs | ✅ PASS |
 | Seedy Underbelly Present | ✅ PASS (grounds-wide grift pipeline, rigged games to TV recruitment) |
 | Technical Feasibility | ✅ PASS (stitched-zone approach within budget) |
-| Mobile Performance Budget | ✅ PASS (45-60 FPS, 30-45 draw calls, 55-70MB grounds-wide) |
+| Performance Budget | ✅ PASS (45-60 FPS, 30-45 draw calls, 55-70MB grounds-wide) |
 | Accessibility Features | ✅ PASS (visual knife-throw tell, steady-glow variants) |
 | Social Media Integration | ✅ PASS (viral moments identified) |
 

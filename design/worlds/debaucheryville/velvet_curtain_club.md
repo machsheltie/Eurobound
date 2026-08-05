@@ -570,7 +570,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Performance Targets
 - **Max draw calls**: 40

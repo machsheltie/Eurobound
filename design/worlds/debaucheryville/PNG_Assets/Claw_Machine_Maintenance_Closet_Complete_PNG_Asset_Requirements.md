@@ -487,11 +487,10 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 
 ---
 
-## 📐 Mobile Optimization Requirements
+## 📐 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for fluorescent effects, maintains neon intensity
-- **Android:** ETC2 with alpha for blacklight graffiti transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for fluorescent effects, maintains neon intensity with alpha for blacklight graffiti transparency
 - **Fallback:** PNG high quality for text readability in cramped space
 
 ### Sprite Atlasing Strategy:
@@ -500,7 +499,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 - **Graffiti System Atlas:** All blacklight content combined (512x256)
 - **Door & Unlock Atlas:** Complete entry system (256x256)
 - **Effects & Audio Atlas:** Visual cues and timing systems (512x256)
-- **Max Atlas Size:** 1024x1024 for mobile GPU compatibility
+- **Max Atlas Size:** 1024x1024 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full spark effects, blacklight graffiti reveal, DDR reactivity
@@ -676,7 +675,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 | Seedy Underbelly Present | ✅ PASS | Adult content disguised as maintenance |
 | Gameplay Value Established | ✅ PASS | ICQ, achievements, status effects |
 | Technical Feasibility | ✅ PASS | Mobile optimized for small space |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 10 draw calls, 25MB |
+| Performance Budget | ✅ PASS | 60 FPS, 10 draw calls, 25MB |
 | Accessibility Features | ✅ PASS | Graffiti always-visible option |
 | No Crypto Elements | ✅ PASS | No cryptocurrency content in this location |
 | Social Media Integration | ✅ PASS | SMAAAASH quote is pure gold |

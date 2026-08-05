@@ -330,7 +330,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 - **Trigger:** On the hour during day cycle; pre-rendered sequence from `clock_animation_sequence.png`
 - **Purpose:** The central anticlimax — 600 years of history delivered in 38 underwhelming seconds
 - **Audio Sync:** Bell chime (build-in), mechanical clicking (apostles), small bell ring (skeleton), strangled crow (rooster), anticlimax trombone (windows close)
-- **Mobile Optimization:** Pre-rendered as one sequence, no per-frame computation
+- **Performance Optimization:** Pre-rendered as one sequence, no per-frame computation
 
 ### Crowd Phone-Raising Wave:
 - **Duration:** ~2 seconds, rippling across crowd rows
@@ -338,41 +338,41 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 - **Trigger:** Crowd density surge, 15 minutes before each hourly show
 - **Purpose:** Anticipation build; makes the 38-second letdown land harder
 - **Audio Sync:** Camera shutter clicks intensify
-- **Mobile Optimization:** Wave applies to dense/medium crowd rows only; foreground tourists animate individually
+- **Performance Optimization:** Wave applies to dense/medium crowd rows only; foreground tourists animate individually
 
 ### Bros Crying:
 - **Duration:** ~2 second loop (6 frames from `clock_animation_sequence.png`)
 - **Trigger:** Clock show ends; loops while "Post-Clock Emotional Vulnerability" state is active
 - **Purpose:** The emotional pivot the entire vendor economy exploits
 - **Audio Sync:** Lord Pilsner sobbing; tear drop/stream particles from `crowd_particles.png`
-- **Mobile Optimization:** Tear particles capped at 6 concurrent
+- **Performance Optimization:** Tear particles capped at 6 concurrent
 
 ### Vendor Approach:
 - **Duration:** ~1.5 seconds per vendor (idle → approaching pose transition)
 - **Trigger:** Player enters vendor's Area2D trigger zone; vendor retreats if rejected twice
 - **Purpose:** Makes the scam gauntlet feel organic, not scripted
 - **Audio Sync:** Footsteps speed up; conspiratorial whisper tone begins
-- **Mobile Optimization:** Only one vendor approach animation active at a time (professional territory respect is also a draw-call optimization)
+- **Performance Optimization:** Only one vendor approach animation active at a time (professional territory respect is also a draw-call optimization)
 
 ### Camera Flash Ambient:
 - **Duration:** 0.2-second bursts at random intervals
 - **Frames:** 3 flash variants from `crowd_particles.png`
 - **Trigger:** Constant during peak hours; surges during show
 - **Audio Sync:** Shutter click per flash
-- **Mobile Optimization:** 20 max concurrent (matches particle budget)
+- **Performance Optimization:** 20 max concurrent (matches particle budget)
 
 ### Incense Smoke (Party Monk):
 - **Duration:** 4-second loop, 2 frames
 - **Trigger:** Constant at blessing station; densifies during blessing animation
 - **Audio Sync:** Incense hiss during blessing; fake Gregorian chant snippet
-- **Mobile Optimization:** Single emitter only
+- **Performance Optimization:** Single emitter only
 
 ### Neon Sign Flicker (Euro Ink alley sign):
 - **Duration:** Random 3–5 second intervals
 - **Trigger:** Night cycle only
 - **Purpose:** Visual funnel toward the alley and the tattoo decision
 - **Audio Sync:** Transformer buzz intensifies during flicker
-- **Mobile Optimization:** Simple alpha toggle, no shader
+- **Performance Optimization:** Simple alpha toggle, no shader
 
 ---
 
@@ -425,11 +425,10 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC — `clock_dial_astronomical` detail and `clock_animation_sequence.png` need higher-quality blocks (the 38-second show is the location's centerpiece)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); `clock_dial_astronomical` detail and `clock_animation_sequence.png` need higher-quality blocks (the 38-second show is the location's centerpiece)
 - **Fallback:** PNG high quality for the clock tower and animation sequence
 
 ### Texture Atlases:
@@ -440,7 +439,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | cockup_characters | crowd_tourists, all six vendor sheets, local_observers | 1024x1024 |
 | cockup_effects_ui | crowd_particles, vendor_interaction, cockup_square_accessibility | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -611,7 +610,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 ### Quality Checkpoints:
 - [ ] Satirical theme (coordinated scam ecosystem vs. genuine monument) is clear throughout all assets
 - [ ] Easter eggs discoverable: boxed wine in cart, birthday-party poster, graffiti tag
-- [ ] Mobile performance optimized (CPU particles, on-demand clock atlas, 50-sprite crowd cap)
+- [ ] Performance optimized (CPU particles, on-demand clock atlas, 50-sprite crowd cap)
 - [ ] Touch zone sizing considered (44px minimum — vendor sprites and purchase prompts compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (scam warning, Sovs counter)
 - [ ] Social media viral potential maximized (crowd anticipation frame, crying-over-rooster composition)
@@ -627,10 +626,10 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Satirical Targets | ✅ PASS |
 | Gameplay Value | ✅ PASS |
 | No Crypto Elements | ✅ PASS |
-| Mobile Optimization | ✅ PASS |
+| Performance & Assets | ✅ PASS |
 | Seedy Underbelly Present | ✅ PASS (coordinated scam ecosystem) |
 | Technical Feasibility | ✅ PASS (pre-rendered clock show, crowd LOD) |
-| Mobile Performance Budget | ✅ PASS (60 FPS, 20 draw calls, 45 MB) |
+| Performance Budget | ✅ PASS (60 FPS, 20 draw calls, 45 MB) |
 | Accessibility Features | ✅ PASS (visual audio cues, motion-reduced show) |
 | Social Media Integration | ✅ PASS (viral moments identified) |
 

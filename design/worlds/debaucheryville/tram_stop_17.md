@@ -69,7 +69,7 @@
   - Pigeons cooing and shuffling
   - Jiří's subtle movements (checking watch, looking at tracks)
   - Progressive shrine growth
-- **Mobile Optimization**: Simple outdoor scene, focus on Jiří animations and pigeon particles
+- **Performance Optimization**: Simple outdoor scene, focus on Jiří animations and pigeon particles
 
 ---
 

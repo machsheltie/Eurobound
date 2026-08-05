@@ -107,7 +107,7 @@
 - **Lighting Setup**: Floating candles, green glow from below, flickering reality
 - **Particle Systems**: Green mist (extensive), mirror shimmer, reality fracture effects, floating dust
 - **Animation Elements**: Mirror reflections moving independently, furniture shifting, dripping void liquid
-- **Mobile Optimization**: Simplified mirror effects, reduced mist density, static furniture option
+- **Performance Optimization**: Simplified mirror effects, reduced mist density, static furniture option
 
 ## Satirical Design
 ### Theme & Vibe

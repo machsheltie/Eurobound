@@ -95,7 +95,7 @@
 - **Lighting Setup**: Warm wood-enhancing lighting, spotlight on painted pieces, demonstration area bright
 - **Particle Systems**: Wood shavings (demonstration), dust motes (atmosphere)
 - **Animation Elements**: Craftsman carving, customer try-on struggle, clog wobble
-- **Mobile Optimization**: Simplified clog variety, static demonstration, reduced particles
+- **Performance Optimization**: Simplified clog variety, static demonstration, reduced particles
 
 ## Satirical Design
 ### Theme & Vibe

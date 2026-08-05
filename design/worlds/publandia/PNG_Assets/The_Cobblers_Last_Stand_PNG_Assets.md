@@ -321,7 +321,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 - **Trigger:** Player enters shop or requests assessment
 - **Purpose:** The medical-diagnosis gravity that defines the location
 - **Audio Sync:** Ominous low tone swells during the examine hold; verdict sting on final frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Shoe Reveal:
 - **Duration:** 2.5 seconds
@@ -330,7 +330,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 - **Trigger:** Selecting any item in the equipment menu
 - **Purpose:** Every shoe is presented like a relic; the satire is the ceremony
 - **Audio Sync:** Dramatic reveal sting exactly on the presentation hold frame
-- **Mobile Optimization:** Sparkle overlay dropped on Low LOD
+- **Performance Optimization:** Sparkle overlay dropped on Low LOD
 
 ### Fitting Strip Walk:
 - **Duration:** 6 seconds
@@ -339,7 +339,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 - **Trigger:** Fitting Ceremony step 5
 - **Purpose:** The Proving Ground moment of truth
 - **Audio Sync:** Footsteps on timber; pencil scratch on each clipboard check
-- **Mobile Optimization:** Clipboard frames reduced to 1 on Low LOD
+- **Performance Optimization:** Clipboard frames reduced to 1 on Low LOD
 
 ### Approval Nod:
 - **Duration:** 1.5 seconds
@@ -348,7 +348,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 - **Trigger:** Ceremony passed / Grade A assessment / Cobbler's Blessing (+20 Bravado)
 - **Purpose:** Restraint is the reward — one nod carries thirty years of standards
 - **Audio Sync:** Subtly epic music swell resolves on the nod
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Dust Motes & Spotlight:
 - **Duration:** Continuous, 8-second drift loop
@@ -356,7 +356,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 - **Trigger:** Constant in interior
 - **Purpose:** Moody, heroic equipment-montage atmosphere
 - **Audio Sync:** None
-- **Mobile Optimization:** Motes off on Low LOD, spotlight becomes static overlay
+- **Performance Optimization:** Motes off on Low LOD, spotlight becomes static overlay
 
 ---
 
@@ -397,11 +397,10 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (grade cards and signage text at ASTC 4x4 for legibility)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import)
 - **Fallback:** PNG high quality for Finbar portraits and signage
 
 ### Texture Atlases:
@@ -411,7 +410,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 | cobblers_characters | finbar, cobbler_customers | 512x512 |
 | cobblers_items_ui | footwear_arsenal, effects_ui | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -568,7 +567,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 ### Quality Checkpoints:
 - [ ] Satirical theme (military gravity applied to shoe retail) is clear throughout all assets
 - [ ] Easter eggs discoverable: Heirloom Tools, Bradley's arch supports, the doomed trainers, pre-prepared Regular's box
-- [ ] Mobile performance optimized (12-particle cap, streamed back room, shared spotlight quad)
+- [ ] Performance optimized (12-particle cap, streamed back room, shared spotlight quad)
 - [ ] Touch zone sizing considered (44px minimum — menu rows, grade cards, examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (lettered grades, icon-shaped categories)
 - [ ] Social media viral potential maximized (Destroyed Shoes Case framing, reveal ceremony composition)
@@ -585,7 +584,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 | Seedy Underbelly Present | ✅ | Cobblestone trauma capitalized on; Grade F "rescue" markup |
 | Gameplay Value Established | ✅ | Full equipment shop, stat gear, assessment system, Veteran Walker progression |
 | Technical Feasibility | ✅ | 7 sheets, simple transitions, mobile optimization documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 12 draw calls, 30MB |
+| Performance Budget | ✅ | 60 FPS, 12 draw calls, 30MB |
 | Accessibility Features | ✅ | Visual cues for every audio beat, static-light variants, lettered grades |
 | No Crypto Elements | ✅ | Absent from source and spec |
 | Social Media Integration | ✅ | Five viral moments identified, quote bank sourced from profile |

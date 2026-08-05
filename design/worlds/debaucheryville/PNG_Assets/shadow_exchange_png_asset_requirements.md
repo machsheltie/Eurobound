@@ -529,7 +529,7 @@ assets/sprites/locations/debaucheryville/gilded_square/
 | Seedy Underbelly Present | ✅ | Black-market bazaar, counterfeit trading, notoriety/"verification fee" racket |
 | Gameplay Value Established | ✅ | Split-flap timing mini-game, UV scan checks, barter window, shady contracts, boss-gated Premium Stock |
 | Technical Feasibility | ✅ | 6 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D smoke/UV effects |
-| Mobile Performance Budget | ✅ | 60 FPS target, max 16 draw calls, 40MB memory footprint |
+| Performance Budget | ✅ | 60 FPS target, max 16 draw calls, 40MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (split-flap clack, cash counter whir, UV beep), pattern-based ticks for colorblind timing |
 | No Crypto Elements | ✅ | Crypto parody established in source material (meme-coin monitors, CryptoBro69's Ex NFT storyline) |
 | Social Media Integration | ✅ | Split-flap aesthetic, calculator obsession comedy, quotable NPC dialogue identified |

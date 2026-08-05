@@ -447,7 +447,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Trigger:** Any jenever order
 - **Purpose:** The glass must visibly become unliftable while you watch, so the choice that follows is informed
 - **Audio Sync:** Jug lift at 0.0s; steady pour 0.6-1.8s; the pour does not stop when it reaches the rim — that half-second past the brim is the whole gag
-- **Mobile Optimization:** Medium LOD reduces to 2 frames; Low LOD uses pour frame 3 only with an instant meniscus
+- **Performance Optimization:** Medium LOD reduces to 2 frames; Low LOD uses pour frame 3 only with an instant meniscus
 
 ### Traditional Method Bow (Sheets 5, 6, 7):
 - **Duration:** 2.0 seconds (0.5s approach, 0.5s lean, 0.6s sip, 0.4s straighten)
@@ -456,7 +456,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Trigger:** Player selects "Show me the traditional way" or has already learned the technique
 - **Purpose:** You are bowing to your drink. Because you are.
 - **Audio Sync:** Sawdust shuffle at 0.0s; sip at 1.0s; glass-on-wood at 1.6s; tiny triumph sting at 2.0s
-- **Mobile Optimization:** None needed (4 frames, cheap, narratively load-bearing)
+- **Performance Optimization:** None needed (4 frames, cheap, narratively load-bearing)
 
 ### The Lift Attempt (Sheets 4, 5, 7):
 - **Duration:** 1.4 seconds (0.4s grip, 0.2s failure, 0.8s absorption)
@@ -465,7 +465,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Trigger:** "I'll lift it" selection, or the losing half of "I know what I'm doing"
 - **Purpose:** The sawdust exists for a reason and the reason is now demonstrated
 - **Audio Sync:** Glass scrape 0.0s; spill splash at 0.4s; gentle-disappointment sting at 0.6s; Kees's "Sawdust is there for this." at 1.0s
-- **Mobile Optimization:** None needed (one-shot, comedy-critical — never cut)
+- **Performance Optimization:** None needed (one-shot, comedy-critical — never cut)
 
 ### Candlelight Flicker (Sheet 7):
 - **Duration:** 1.8 seconds per irregular cycle
@@ -474,7 +474,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Trigger:** Constant
 - **Purpose:** Real candlelight is the only thing moving in a room that has not moved in 400 years
 - **Audio Sync:** None (silence is intentional in this location)
-- **Mobile Optimization:** Low LOD replaces all sconces with the static candle plate and relies on the room grade overlay; disabled in reduced-motion mode
+- **Performance Optimization:** Low LOD replaces all sconces with the static candle plate and relies on the room grade overlay; disabled in reduced-motion mode
 
 ### The Jenever Taste Test Gauntlet (Sheets 4, 5, 8):
 - **Duration:** Per round: 0.8s glass select, 0.6s judgment beat, 1.0s Kees reaction hold
@@ -483,7 +483,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Trigger:** Player accepts the gauntlet (or purchases the 20 Sovs Flight)
 - **Purpose:** A skill challenge where the judge's face gives you nothing, so the UI must
 - **Audio Sync:** Glass lift 0.0s; 0.6s of silence; "Correct." or "Wrong." at 1.4s; round advance chime at 2.4s
-- **Mobile Optimization:** None needed (UI-driven, negligible cost)
+- **Performance Optimization:** None needed (UI-driven, negligible cost)
 
 ### The Kopstootje (Sheets 4, 7, 8):
 - **Duration:** 3.0 seconds (1.2s bow-and-shoot window, 0.3s transition, 1.5s chaser window)
@@ -492,7 +492,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Trigger:** Gauntlet round 4
 - **Purpose:** "Little headbutt." Two drinks, one moment, one very specific kind of regret
 - **Audio Sync:** Jenever shot at 1.2s; beer grab at 1.5s; impact burst at 2.6s; on failure, the sawdust does its job at 3.0s
-- **Mobile Optimization:** Impact burst reduced to a single flash frame on Low LOD
+- **Performance Optimization:** Impact burst reduced to a single flash frame on Low LOD
 
 ### The Shakes Onset (Sheets 5, 7, 8):
 - **Duration:** 0.8s onset, then a 0.25s two-frame tremor cycle held for 3 combat turns
@@ -501,7 +501,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Trigger:** Oude Genever, Zeer Oude Jenever, or any gauntlet failure
 - **Purpose:** -15% Accuracy, visible in the hand and in the reticle, mechanically honest
 - **Audio Sync:** Subtle tremolo bed for the duration
-- **Mobile Optimization:** Tremor at half rate on Low LOD; in reduced-motion mode the sprite holds still and only the numeric readout and reticle tint communicate the debuff
+- **Performance Optimization:** Tremor at half rate on Low LOD; in reduced-motion mode the sprite holds still and only the numeric readout and reticle tint communicate the debuff
 
 ### Back Room Unlock (Sheets 3, 5, 7):
 - **Duration:** 2.0 seconds (0.4s Kees nod, 0.6s point, 1.0s door glow bloom)
@@ -510,7 +510,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 - **Trigger:** Gauntlet round 3 success
 - **Purpose:** The highest praise available in this building, delivered in four words
 - **Audio Sync:** "Acceptable." at 0.4s; "Back room is there." at 1.0s; low door creak at 1.8s
-- **Mobile Optimization:** Glow bloom replaced by an instant lit state in reduced-motion mode
+- **Performance Optimization:** Glow bloom replaced by an instant lit state in reduced-motion mode
 
 ---
 
@@ -554,11 +554,10 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); Traditional Method Tutorial, price board, brass plaque, and all portraits at ASTC 4x4 (readable text and faces)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Traditional Method Tutorial, price board, brass plaque, and all portraits kept uncompressed (readable text and faces)
 - **Fallback:** PNG high quality for `proeflokaal_main_room.png` and `proeflokaal_back_room.png` (candlelight gradient banding is visible under lossy compression)
 
 ### Texture Atlases:
@@ -568,7 +567,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | proeflokaal_characters | npc_kees_pim, npc_proeflokaal_patrons | 1024x1024 |
 | proeflokaal_fx_ui | proeflokaal_glassware_objects, proeflokaal_effects, proeflokaal_ui | 1024x1024 |
 
-*(proeflokaal_main_room.png loads standalone; proeflokaal_back_room.png loads on demand after the unlock flag. Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(proeflokaal_main_room.png loads standalone; proeflokaal_back_room.png loads on demand after the unlock flag. Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -737,7 +736,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (tourist hubris is the target; the jenever tradition is treated with total sincerity)
 - [ ] Hidden areas/interactions have discoverable visual cues (back room door present-but-unremarkable before unlock, the one chair, the 100-Year Barrel, Kees's rare nod)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, on-demand back room load, static candle/sawdust fallbacks)
+- [ ] Performance optimized (CPU particles, atlas limits respected, on-demand back room load, static candle/sawdust fallbacks)
 - [ ] Touch zone sizing considered (44px minimum for all five gauntlet glasses and both kopstootje inputs)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (bottle silhouettes, checkmark/cross shapes, numeric Shakes readout)
 - [ ] Social media viral potential maximized in composition choices (meniscus close-up framing, bow staging, the isolated chair)
@@ -754,7 +753,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | Seedy Underbelly Present | ✅ | Drinks engineered to humble, priced to profit, served in a room pre-built to absorb the outcome |
 | Gameplay Value Established | ✅ | Four-round gauntlet, Traditional Method tutorial, The Shakes debuff, back room unlock, Canal Courage passive, Couchsurf branch |
 | Technical Feasibility | ✅ | Static candlelight/sawdust fallbacks per profile; on-demand back room load; pooled spill decals; pre-composed groups |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 36 MB, 12 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 36 MB, 12 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including a non-tremor Shakes presentation, 44px touch zones |
 | No Crypto Elements | ✅ | Pure 400-year tradition; the only ledger is the sawdust |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |

@@ -127,7 +127,7 @@
 - **Lighting Setup**: Dim enough to hide tricks, bright at games for drama
 - **Particle Systems**: Wheel spinning, dice rolling, card shuffling
 - **Animation Elements**: Games in progress, shill celebrations, mark despair
-- **Mobile Optimization**: Simplified game animations, reduced crowd
+- **Performance Optimization**: Simplified game animations, reduced crowd
 
 ## Satirical Design
 ### Theme & Vibe

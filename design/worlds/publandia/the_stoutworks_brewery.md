@@ -108,7 +108,7 @@
 - **Lighting Setup**: Industrial fixtures, copper glow, steam atmosphere, dramatic boss lighting
 - **Particle Systems**: Steam, foam (extensive), grain dust, yeast particles, CO2 vapor
 - **Animation Elements**: Conveyor belts, vat bubbling, enemy emergence, foam physics
-- **Mobile Optimization**: Simplified foam, reduced particle density, static conveyors option
+- **Performance Optimization**: Simplified foam, reduced particle density, static conveyors option
 
 ## Satirical Design
 ### Theme & Vibe

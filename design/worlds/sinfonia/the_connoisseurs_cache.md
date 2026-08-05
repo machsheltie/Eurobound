@@ -79,7 +79,7 @@ Every detail suggests cultural superiority:
 - **Lighting Setup**: Warm gallery lighting, spotlight on featured items, reading lamp glow
 - **Particle Systems**: Dust motes in light beams, candle flicker, paper texture
 - **Animation Elements**: Page turning, cabinet unlocking, item inspection
-- **Mobile Optimization**: Clean shop layout, focus on item cards and NPC interaction
+- **Performance Optimization**: Clean shop layout, focus on item cards and NPC interaction
 
 ## Satirical Design
 ### Theme & Vibe

@@ -437,7 +437,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Trigger:** Timer while resident at the corner table (all hours)
 - **Purpose:** Character-defining ritual — the calmest man in the building, running his own economy of chalk and cream
 - **Audio Sync:** Glass clink on stir turn 2; dry crunch exactly on the row-3 break frame
-- **Mobile Optimization:** None needed (single resident NPC); chalk_puff particle capped at 1 instance
+- **Performance Optimization:** None needed (single resident NPC); chalk_puff particle capped at 1 instance
 
 ### Herr Falsch Boss Set (Full House / Dead Man's Hand / The River / Sleeve Ace):
 - **Duration:** 1.2s / 0.8s / 1.0s / 0.67s respectively
@@ -446,7 +446,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Trigger:** Hidden boss fight, private boxes
 - **Purpose:** Card-shark menace with a tell of his own — the too-long smile drops when exposed
 - **Audio Sync:** Card-snap on each attack's release frame; arena tile flips on The River carry a shuffled-deck riffle
-- **Mobile Optimization:** Card-construct summons capped at 3 concurrent on low-end
+- **Performance Optimization:** Card-construct summons capped at 3 concurrent on low-end
 
 ### NPC Tells (Cufflink Adjust / Champagne Sip):
 - **Duration:** 0.75s / 1.5s
@@ -455,7 +455,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Trigger:** NPC hand-strength logic
 - **Purpose:** Learnable, diegetic poker reads — the entire skill layer of poker_vs_npc
 - **Audio Sync:** None (silence is the point); tell_indicator overlay fires only after the tell is learned
-- **Mobile Optimization:** None needed — tells must never be simplified away
+- **Performance Optimization:** None needed — tells must never be simplified away
 
 ### Roulette Wheel Spin:
 - **Duration:** ~2 second spin (8 frames, blur-tiered), then settled state
@@ -464,7 +464,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Trigger:** Bet confirmation at the roulette table
 - **Purpose:** The house's favorite theater — fair-looking, 5.3% edge
 - **Audio Sync:** Ball rattle decelerating; final click on the settled frame
-- **Mobile Optimization:** Pre-rendered (per mobile targets); reduced to 4-frame spin on low-end
+- **Performance Optimization:** Pre-rendered (per mobile targets); reduced to 4-frame spin on low-end
 
 ### House Dealer Loop (Deal / Spin / Sweep):
 - **Duration:** 0.67s / 0.67s / 0.8s
@@ -473,7 +473,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Trigger:** Minigame flow at playable tables
 - **Purpose:** Frictionless, interchangeable house machinery (three palette variants, one skeleton)
 - **Audio Sync:** Card slide per deal frame; chip cascade on sweep_pot
-- **Mobile Optimization:** Card deal animations pre-rendered per mobile targets
+- **Performance Optimization:** Card deal animations pre-rendered per mobile targets
 
 ### Tractor NFT Token Loop:
 - **Duration:** 1.5 second loop
@@ -482,7 +482,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Trigger:** Constant while inspected in inventory
 - **Purpose:** The punchline is the production value
 - **Audio Sync:** None
-- **Mobile Optimization:** None needed (it is already the optimization)
+- **Performance Optimization:** None needed (it is already the optimization)
 
 ---
 
@@ -533,11 +533,10 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); main floor plate and Aaron's sheet need ASTC 4x4 — felt color fidelity is a binding requirement
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) main floor plate and Aaron's sheet need uncompressed — felt color fidelity is a binding requirement
 - **Fallback:** PNG high quality for `aarons_corner_table.png` (the oxblood/green distinction must survive compression)
 
 ### Texture Atlases:
@@ -548,7 +547,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 | backroom_characters_b | Herr Falsch (boss scale), Aaron the Unflappable | 1024x1024 |
 | backroom_ui_items | all 14 UI/item sprites | 512x512 |
 
-*(Maximum 4 atlases at 1024px per original spec; max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Maximum 4 atlases at 1024px per original spec; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -558,7 +557,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 | Low | No ambient particles, static crowd fills (pre-rendered), 4-frame wheel spin |
 
 ### Performance Targets:
-- **Target FPS:** 60 on iPhone 8+
+- **Target FPS:** 60 on min-spec hardware
 - **Max Draw Calls:** Under 20 for the full location
 - **Memory Footprint:** Under 50 MB with all zones loaded
 - **Particle Limit:** 60 simultaneous
@@ -814,7 +813,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 ### Quality Checkpoints:
 - [ ] Satirical theme (elegance as anesthetic for the house edge) clear throughout
 - [ ] Hidden entrance discoverable but genuinely boring at first glance
-- [ ] Mobile performance optimized (pre-rendered spins/deals, ≤20 draw calls, atlas limits respected)
+- [ ] Performance optimized (pre-rendered spins/deals, ≤20 draw calls, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for bet interface and interactive elements)
 - [ ] Colorblind-friendly redundancy for the Two-Felt Rule (furniture, not just hue)
 - [ ] Social media viral potential maximized in composition choices (staircase, selfie spot, crunch)
@@ -831,7 +830,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 | Seedy Underbelly Present | ✅ | This IS the underbelly: hidden den, collateral window, rigged odds, marked cards |
 | Gameplay Value Established | ✅ | Three minigames, hidden boss, reputation gate, scripted encounter, vault |
 | Technical Feasibility | ✅ | 38 PNGs, 4-atlas plan, pre-rendered heavy animations, zone loading |
-| Mobile Performance Budget | ✅ | 60 FPS, ≤20 draw calls, ≤50 MB, 60 particles |
+| Performance Budget | ✅ | 60 FPS, ≤20 draw calls, ≤50 MB, 60 particles |
 | Accessibility Features | ✅ | Visual audio cues, reduced-motion wheel, shape-redundant Two-Felt Rule |
 | No Crypto Elements | ✅ | Tractor NFT is established source material (fratbronft.md NFT Hunt) and is satirized as worthless by design |
 | Social Media Integration | ✅ | Staircase, crunch, selfie spot, and NFT-reveal moments identified |

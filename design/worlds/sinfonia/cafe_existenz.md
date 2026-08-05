@@ -81,7 +81,7 @@ Every element commits to intellectual pretension:
 - **Lighting Setup**: Natural window light, warm chandeliers, reading lamp spots
 - **Particle Systems**: Steam from coffee cups, dust motes in light beams, cigarette smoke (lounge)
 - **Animation Elements**: Chess piece movement, newspaper page turns, dramatic gesturing NPCs
-- **Mobile Optimization**: Pre-rendered NPC conversations, simplified crowd, static background details
+- **Performance Optimization**: Pre-rendered NPC conversations, simplified crowd, static background details
 
 ## Satirical Design
 ### Theme & Vibe

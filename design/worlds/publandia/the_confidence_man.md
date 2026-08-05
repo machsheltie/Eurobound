@@ -74,7 +74,7 @@ Cormac's products exist in a gray zone between "functional herbal supplement," "
 - **Lighting Setup**: Cart lanterns, dramatic gesturing, crowd spotlight
 - **Particle Systems**: Potion shimmer, theatrical smoke (small puffs), crowd energy
 - **Animation Elements**: Cormac's pitch, crowd reactions, bottle pouring
-- **Mobile Optimization**: Simplified cart, reduced crowd
+- **Performance Optimization**: Simplified cart, reduced crowd
 
 ## Satirical Design
 ### Theme & Vibe

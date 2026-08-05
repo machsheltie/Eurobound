@@ -418,11 +418,10 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 
 ---
 
-## 📱 Mobile Optimization Requirements
+## 📱 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for orange glow effects
-- **Android:** ETC2 with alpha for stealth indicators
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for orange glow effects with alpha for stealth indicators
 - **Fallback:** PNG high quality for floor tile detail and patron sprites
 
 ### Sprite Atlasing Strategy:
@@ -431,7 +430,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - **NPC Atlas:** Bartender + nobles + bar flies + bouncer + Keg Sentinel (512x384)
 - **Particle Effects Atlas:** Dust + foam + mustard + creaks + vomit + status effects (512x256)
 - **UI Elements Atlas:** Status icons + brewery progress + stealth UI + boss UI + achievements (512x256)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full patron animations, all particles, complex lighting, chandelier flicker
@@ -700,7 +699,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - [ ] Environmental effects support gritty medieval frat basement atmosphere
 - [ ] Boss battle arm-wrestling mechanic is clear and functional
 - [ ] Status effects (Embarrassed, Inspired) visually distinct
-- [ ] Mobile performance optimized for cramped space stealth
+- [ ] Performance optimized for cramped space stealth
 - [ ] All elements support "300-year-old castle turned frat basement" theme
 - [ ] Bravado gate system visually communicates stat requirement
 - [ ] Social media viral potential maximized
@@ -796,7 +795,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 | Seedy Underbelly Present | ✅ | Health code violation dive selling "noble heritage" — mold, mustard art, gaffer tape "medieval repairs" |
 | Gameplay Value Established | ✅ | Stealth tile puzzle, Bravado gate, Bar Flies gossip mini-mob, Keg Sentinel arm-wrestling boss, Iron Gut Tripel, Brewery Tour 3/4 |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D dust/foam effects |
-| Mobile Performance Budget | ✅ | 60 FPS target, max 15 draw calls, 35MB memory footprint |
+| Performance Budget | ✅ | 60 FPS target, max 15 draw calls, 35MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (creak wave, snoring visual), pattern-based tile indicators for colorblind stealth play |
 | No Crypto Elements | ✅ | None present — heritage-vs-decay satire only |
 | Social Media Integration | ✅ | Velvet throne "drunken monarchy" selfies, synchronized vomiting timing, quotable bartender heritage lines identified |

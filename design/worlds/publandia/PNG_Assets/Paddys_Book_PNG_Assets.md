@@ -638,7 +638,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Odds change events (bets placed, fight developments, Paddy's whim)
 - **Purpose:** The room's heartbeat — the board never stops moving because the take never stops moving
 - **Audio Sync:** Split-flap clatter, one tick per digit flip
-- **Mobile Optimization:** Low LOD swaps to static board variant (0, 832 on Sheet 6), instant text swap
+- **Performance Optimization:** Low LOD swaps to static board variant (0, 832 on Sheet 6), instant text swap
 
 ### Dice Roll (Fingers' Flourish):
 - **Duration:** 1.2 seconds (wind-up 0.3s, air 0.5s, settle 0.4s)
@@ -647,7 +647,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Every dice game round (constant ambient rolls at other tables at half rate)
 - **Purpose:** Constant dice motion is the den's ambient pulse; Fingers' version is theater
 - **Audio Sync:** Dice rattle through blur frames; clack on settle bounce; result silence beat
-- **Mobile Optimization:** Ambient background rolls drop to result-only (no blur frames)
+- **Performance Optimization:** Ambient background rolls drop to result-only (no blur frames)
 
 ### Paddy Odds-Calling Loop:
 - **Duration:** 2.4 seconds loop
@@ -656,7 +656,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Timer loop while at desk with no active player interaction
 - **Purpose:** Paddy performing the odds is the room's carnival barker track
 - **Audio Sync:** Muffled odds-calling vocal bark on frame 3; odds-call speech glyph displays concurrently
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### House Rules Invocation:
 - **Duration:** 2.5 seconds (hold final frame until player responds)
@@ -665,7 +665,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Player winning too much; disputed rolls; Malone Clause events
 - **Purpose:** The core satirical mechanic — rules materialize exactly when the house needs them
 - **Audio Sync:** "House rules" announcement sting on frame 1; gavel-and-shamrock flash fires with it
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Loan Pitch Lean-In:
 - **Duration:** 3 seconds (0.75s per frame, hold presentation)
@@ -674,7 +674,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Player hits 0 Sovs (Cleaned Out) or accepts Maureen's referral
 - **Purpose:** Predation at its most tender — the slower the lean, the worse the terms
 - **Audio Sync:** Loan offer jingle begins on lean-in 1; jingle sparkle visual accompanies
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Sad Trombone (Cleaned Out):
 - **Duration:** 1.8 seconds
@@ -683,7 +683,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Player balance hits 0 Sovs at Paddy's
 - **Purpose:** Paddy chose this sound himself; the humiliation is part of the service
 - **Audio Sync:** Sad trombone "wah wah waaah" — one note per visual note spawn
-- **Mobile Optimization:** None needed (it's four sprites; the gag is sacred)
+- **Performance Optimization:** None needed (it's four sprites; the gag is sacred)
 
 ### Tiny Knuckle-Crack Dispute Settlement:
 - **Duration:** 1.0 second (0.5s per frame, hold crack)
@@ -692,7 +692,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Player selects "Argue" on any dispute
 - **Purpose:** Argument resolution, Publandia style — the crack IS the verdict
 - **Audio Sync:** Knuckle pop (surprisingly loud) on frame 2; fight-sound star burst visual
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Brawl Fight Loop (Big Mick vs. Quarry Jimmy):
 - **Duration:** 0.8 seconds per exchange (0.4s per state swap)
@@ -701,7 +701,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Brawl pit fight events; The Inside Bet quest sequence
 - **Purpose:** Legible bout rhythm players can (think they can) read for betting
 - **Audio Sync:** Meat-thud impact per burst; crowd cheer/groan strips swap per momentum shift; bell on start/end
-- **Mobile Optimization:** Impact bursts capped at 1 concurrent; crowd strips at 2 instances
+- **Performance Optimization:** Impact bursts capped at 1 concurrent; crowd strips at 2 instances
 
 ### Smoke Drift:
 - **Duration:** 12 second scroll loop (Layer A), 17 seconds (Layer B, counter-direction)
@@ -710,7 +710,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Constant while indoors
 - **Purpose:** Grandfathered ventilation as visual identity; the room breathes smoke
 - **Audio Sync:** None
-- **Mobile Optimization:** Single layer at low LOD; static smoke frame for reduced motion
+- **Performance Optimization:** Single layer at low LOD; static smoke frame for reduced motion
 
 ### Green Bulb Pulse:
 - **Duration:** 4 second cycle
@@ -719,7 +719,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Constant during open hours (18:00–05:00); OFF sprite otherwise
 - **Purpose:** The tell — findable if you've heard the rumor, invisible if you haven't
 - **Audio Sync:** None (silence is the tell's whole job)
-- **Mobile Optimization:** 2-frame version at low LOD
+- **Performance Optimization:** 2-frame version at low LOD
 
 ### Money/Chip Scatter:
 - **Duration:** 0.9 seconds
@@ -728,7 +728,7 @@ assets/sprites/locations/publandia/paddys_book/
 - **Trigger:** Bet resolution ≥ 20 Sovs; Whale ambient throws every 8–12s
 - **Purpose:** Money in motion, almost always toward the desk
 - **Audio Sync:** Chips clinking (coin glints flash per clink); note rustle
-- **Mobile Optimization:** Halve particle count; Whale ambient throws every 20s
+- **Performance Optimization:** Halve particle count; Whale ambient throws every 20s
 
 ---
 
@@ -778,11 +778,10 @@ assets/sprites/locations/publandia/paddys_book/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); odds board sheet needs ASTC 4x4 — chalk text must stay legible
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) odds board sheet stays uncompressed — chalk text must stay legible
 - **Fallback:** PNG high quality for `paddys_book_odds_board.png` and `paddys_book_ui.png` (text-critical assets)
 
 ### Texture Atlases:
@@ -792,7 +791,7 @@ assets/sprites/locations/publandia/paddys_book/
 | paddys_book_characters | Paddy, staff, regulars, fighters | 2048x1024 |
 | paddys_book_effects_ui | effects, UI elements | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -976,7 +975,7 @@ assets/sprites/locations/publandia/paddys_book/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets — the house is the joke, not the gamblers
 - [ ] Hidden areas/interactions have discoverable visual cues (bulb, door recess shadow, whisper prompt)
-- [ ] Mobile performance optimized (CPU particles, 16 draw calls, atlas limits respected)
+- [ ] Performance optimized (CPU particles, 16 draw calls, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum; betting buttons 48px)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (arrows, shapes, stamps)
 - [ ] Social media viral potential maximized in composition choices (board framing, trombone staging)
@@ -993,7 +992,7 @@ assets/sprites/locations/publandia/paddys_book/
 | Seedy Underbelly Present | ✅ | Unlicensed gambling, loaded dice, fixed fights, 50%-per-day loan sharking, debt servitude (the Debt Ghost) |
 | Gameplay Value Established | ✅ | Three dice games, proposition betting, brawl betting, Tourist Battle Royale combat, debt system, four quests, achievement track, Bravado economy |
 | Technical Feasibility | ✅ | Eight sheets, three atlases, LOD tiers, on-demand brawl pit loading documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 24 particles (per profile budget) |
+| Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 24 particles (per profile budget) |
 | Accessibility Features | ✅ | Visual cues for all 12+ audio events; static odds board, static smoke, no-strobe raid variant; shape-coded odds movement |
 | No Crypto Elements | ✅ | None present — Paddy accepts cash. Only cash. |
 | Social Media Integration | ✅ | Odds board, sad trombone, ringer reveal, and loan contract moments identified |

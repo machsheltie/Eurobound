@@ -737,7 +737,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - Particle effects (chandelier, stage fog, debris)
 
 ### Performance Budget
-- Target: 60 FPS on iPhone 8+
+- Target: 60 FPS on min-spec hardware
 - Draw calls: <50 (larger venue)
 - Memory: <50MB for full location
 - Particles: <80 simultaneous
@@ -1255,7 +1255,7 @@ The real joke is that both crowds think they're the "real" audience and the othe
 - [x] Punches up at institutions, not individuals
 - [x] Seedy underbelly (Bassline transformation, Black-Tie Backroom access)
 
-### Mobile Optimization
+### Performance
 - [x] Touch zones appropriate (48px minimum)
 - [x] Memory budget defined (50MB for multi-zone)
 - [x] Draw calls limited (50)

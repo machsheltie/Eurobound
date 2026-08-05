@@ -126,7 +126,7 @@ assets/sprites/locations/[world]/[location_name]/
 
 ## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
+### Texture Compression:
 - **Desktop:** [VRAM compression (S3TC/BPTC) — note any assets needing higher quality]
 - **Fallback:** [PNG high quality for detail-critical assets]
 

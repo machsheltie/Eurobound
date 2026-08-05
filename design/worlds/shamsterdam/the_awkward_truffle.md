@@ -100,7 +100,7 @@
 - **Lighting Setup**: Warm boutique lighting, spotlight on cases, crafting window illuminated
 - **Particle Systems**: Subtle chocolate dust, warmth waves from crafting
 - **Animation Elements**: Customer browsing, chocolatier working, purchase wrapping
-- **Mobile Optimization**: Simplified case displays, static crafting window
+- **Performance Optimization**: Simplified case displays, static crafting window
 
 ## Satirical Design
 ### Theme & Vibe

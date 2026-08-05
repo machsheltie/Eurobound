@@ -96,7 +96,7 @@
 - **Lighting Setup**: Professional retail lighting, green accent tones, nothing sketchy
 - **Particle Systems**: Subtle leaf motifs, professional atmosphere
 - **Animation Elements**: Customer browsing, staff explaining, purchase decision paralysis
-- **Mobile Optimization**: Simplified product variety, static displays
+- **Performance Optimization**: Simplified product variety, static displays
 
 ## Satirical Design
 ### Theme & Vibe

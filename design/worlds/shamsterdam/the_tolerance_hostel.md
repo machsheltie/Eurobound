@@ -98,7 +98,7 @@
 - **Lighting Setup**: Flickering fluorescent (reception), warm broken lamps (common), harsh overhead (dorm), questionable (bathroom)
 - **Particle Systems**: Dust motes, steam from bathroom, passive-aggressive energy
 - **Animation Elements**: Flickering lights, vending machine hum, TV static, snoring visualization
-- **Mobile Optimization**: Simplified lighting flicker, reduced particle dust, static TV on older devices
+- **Performance Optimization**: Simplified lighting flicker, reduced particle dust, static TV on older devices
 
 ## Satirical Design
 ### Theme & Vibe

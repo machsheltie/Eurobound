@@ -91,7 +91,7 @@ Murphy stocks based on one principle: if someone might want it at 3 AM, he has i
 - **Lighting Setup**: Harsh fluorescent (one flickering), neon glow from window, refrigerator light
 - **Particle Systems**: Dust in light, refrigerator condensation, flickering effects
 - **Animation Elements**: Murphy watching, refrigerator hum, door sticking
-- **Mobile Optimization**: Simplified shelving, reduced flicker effects
+- **Performance Optimization**: Simplified shelving, reduced flicker effects
 
 ## Satirical Design
 ### Theme & Vibe

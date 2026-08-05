@@ -551,7 +551,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Any Guinness order; ritual is skippable via UI after first viewing but the pint arrives no faster (that is the joke and the point)
 - **Purpose:** The location's sincerity anchor — everything else is manufactured; this is not
 - **Audio Sync:** Two-stage pour/surge sound spans the pull; nitrogen hiss holds through the wait; soft "settle" chime at 119.5s exactly
-- **Mobile Optimization:** Low LOD drops the cascade overlay and cycles two settling stages instead of four; timer stays frame-accurate
+- **Performance Optimization:** Low LOD drops the cascade overlay and cycles two settling stages instead of four; timer stays frame-accurate
 
 ### Pint-Off Rhythm Beats:
 - **Duration:** 30-90 seconds per round, tempo rising 100→140 BPM across rounds
@@ -560,7 +560,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Player challenges or is challenged by an NPC
 - **Purpose:** Bravado testing ground core loop; NPCs remember performance and it feeds Pub Regular progress
 - **Audio Sync:** Beats lock to the trad track's downbeat; crowd reaction stingers on streak thresholds
-- **Mobile Optimization:** No-Audio Pulse Bar always renders; Low LOD replaces crowd reaction frames with a static cheer banner
+- **Performance Optimization:** No-Audio Pulse Bar always renders; Low LOD replaces crowd reaction frames with a static cheer banner
 
 ### Fireplace Flicker:
 - **Duration:** 0.8 seconds loop
@@ -569,7 +569,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Constant (the fireplace is ALWAYS flickering — profile canon)
 - **Purpose:** The warm heart of the manufactured authenticity; selfie spot beacon
 - **Audio Sync:** Low gas-flame loop, volume tied to camera distance
-- **Mobile Optimization:** Static fireplace option (accessibility sheet frame) replaces the loop entirely on Low LOD and in reduced-motion mode
+- **Performance Optimization:** Static fireplace option (accessibility sheet frame) replaces the loop entirely on Low LOD and in reduced-motion mode
 
 ### Trad Session:
 - **Duration:** 2.4 seconds loop per musician, phase-offset per player
@@ -578,7 +578,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Evenings (live session); afternoons hold the between-tunes pose with recorded trad
 - **Purpose:** The music IS live — one of the three true things in the building
 - **Audio Sync:** Frame alternation locks to the reel's beat; between-tunes pose syncs to track gaps
-- **Mobile Optimization:** Static music session option (profile requirement): all four musicians hold base pose, audio continues
+- **Performance Optimization:** Static music session option (profile requirement): all four musicians hold base pose, audio continues
 
 ### Crowd Sway:
 - **Duration:** 3.2 seconds full cycle
@@ -587,7 +587,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Constant while crowd blocks are on screen
 - **Purpose:** A living pub without per-NPC animation cost
 - **Audio Sync:** Sway period loosely matches the session tempo; no hard lock
-- **Mobile Optimization:** Simplified crowd (profile requirement): Low LOD holds Frame A; steady-crowd accessibility variant available at all LODs
+- **Performance Optimization:** Simplified crowd (profile requirement): Low LOD holds Frame A; steady-crowd accessibility variant available at all LODs
 
 ### Toast Delivery:
 - **Duration:** 4 seconds
@@ -596,7 +596,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Toast speech challenge commit
 - **Purpose:** Words worked (or didn't); either way, everyone still drinks
 - **Audio Sync:** Glass clink sparkle on the raise; laughter eruption or polite murmur on the banner
-- **Mobile Optimization:** None needed (UI-driven, cheap)
+- **Performance Optimization:** None needed (UI-driven, cheap)
 
 ### Rain on Window:
 - **Duration:** Continuous, 1.6s streak cycle
@@ -605,7 +605,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Weather state "rain" (frequent — this is Publandia)
 - **Purpose:** Cozy-interior contrast; the reason nobody leaves
 - **Audio Sync:** Rain-on-glass loop tied to overlay visibility
-- **Mobile Optimization:** Static rain texture replaces animated overlay on Low LOD
+- **Performance Optimization:** Static rain texture replaces animated overlay on Low LOD
 
 ### Trap-Spring Entry:
 - **Duration:** 0.6 seconds, one-shot
@@ -614,7 +614,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** First entry per session (and first-ever entry for the achievement "Trapped")
 - **Purpose:** The name is the disclosure; the spring sound is the punchline
 - **Audio Sync:** "Trap" spring stinger exactly on F2
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Creaky Staircase Ascent:
 - **Duration:** Per-step, 0.4s each
@@ -623,7 +623,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Any character on the staircase
 - **Purpose:** Security feature or flaw — every guest movement is broadcast to the whole pub
 - **Audio Sync:** Creak sample pitch matches highlight intensity, per step
-- **Mobile Optimization:** Highlight-only (no audio-reactive scaling) on Low LOD
+- **Performance Optimization:** Highlight-only (no audio-reactive scaling) on Low LOD
 
 ### Passport Stamp Slam:
 - **Duration:** 1.2 seconds, one-shot
@@ -632,7 +632,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - **Trigger:** Stamp acquisition conditions met (Pint-Off win / successful toast / Pub Regular, with Bottle Opener Keychain in inventory)
 - **Purpose:** The Brewery Tour's signature feedback — this moment sells the whole continental sidequest
 - **Audio Sync:** Thunk on slam; short trad flourish on reveal
-- **Mobile Optimization:** Screen tick skipped in reduced-motion mode; frames unchanged
+- **Performance Optimization:** Screen tick skipped in reduced-motion mode; frames unchanged
 
 ---
 
@@ -681,11 +681,10 @@ assets/sprites/locations/publandia/the_blarney_trap/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback for legacy devices) — passport pages and dialogue portraits at ASTC 4x4 for text legibility
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — passport pages and dialogue portraits kept uncompressed for text legibility
 - **Fallback:** Lossless PNG for detail-critical assets: passport spread, stamp, main sign lettering, whiskey wall labels
 
 ### Texture Atlases:
@@ -696,7 +695,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | blarney_characters | seamus_and_staff, regulars_and_crowd | 2048x2048 |
 | blarney_items_ui | consumables_brewery_tour, hub_ui_effects, accessibility | 2048x2048 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -874,7 +873,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 ### Quality Checkpoints:
 - [ ] Satirical theme (manufactured authenticity, self-aware tourist trap) is clear throughout all assets
 - [ ] Hidden interactions discoverable: antiques on examine, POS terminal hotspot, Snug/Backroom gating cues, locked fourth passport slot
-- [ ] Mobile performance optimized (CPU particles, 2048 atlas cap, composite crowd blocks, one-keyframe pour hold)
+- [ ] Performance optimized (CPU particles, 2048 atlas cap, composite crowd blocks, one-keyframe pour hold)
 - [ ] Touch zone sizing considered (44px minimum — room rows, toast cards, beat lane, quest notices, opener display)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded beats, patterned status badges, icon-count noise levels)
 - [ ] Social media viral potential maximized (dome presentation framing, fireplace selfie spot composition, stamp slam moment)
@@ -891,7 +890,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | Seedy Underbelly Present | ✅ | Craic Tax pricing (8 Sovs pints, honest fine print) and the Backroom's unlicensed operations — poker of questionable legitimacy, fights disguised as trivia nights |
 | Gameplay Value Established | ✅ | Primary hub: rest/restoration tiers, auto-save, quest board, pint-off rhythm game, toast builder, round obligations, Pub Regular progression, Brewery Tour origin |
 | Technical Feasibility | ✅ | 8 sheets, all ≤2048, coordinate-mapped; on-demand room streaming; one-keyframe pour hold; Godot 4.x CPUParticles2D throughout |
-| Mobile Performance Budget | ✅ | 60 FPS target, 18 draw calls max, 40 MB memory cap, 20-particle limit with per-system caps documented |
+| Performance Budget | ✅ | 60 FPS target, 18 draw calls max, 40 MB memory cap, 20-particle limit with per-system caps documented |
 | Accessibility Features | ✅ | Supplemental sheet with visual cues for all critical audio, silent-playable pint-off (pulse bar + shape-coded beats), static fireplace/crowd/session variants, 44px targets |
 | No Crypto Elements | ✅ | PASS — the hidden NFT Hunt acquisition at the POS terminal is established in the source material as satire of collectible-mania; it is a diegetic gag, not a monetization system |
 | Social Media Integration | ✅ | Seven screenshot moments and profile-sourced quote bank identified; selfie spot indicator is a shipped sprite |

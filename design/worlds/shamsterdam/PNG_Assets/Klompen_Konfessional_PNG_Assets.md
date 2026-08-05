@@ -305,7 +305,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - **Trigger:** Hourly during peak tourist times; always when player approaches demonstration area
 - **Purpose:** Genuine craft, genuinely impressive — the legitimacy engine of the whole shop
 - **Audio Sync:** Rhythmic carving stroke on frame 2 start (1.0s); shaving-fall whisper on frame 3
-- **Mobile Optimization:** Static demonstration option per profile (single appraise frame + audio)
+- **Performance Optimization:** Static demonstration option per profile (single appraise frame + audio)
 
 ### The Try-On Sequence (Sheet 7):
 - **Duration:** 4.8 seconds (1.2s per frame)
@@ -314,7 +314,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - **Trigger:** Player accepts Try-On Prompt at the station
 - **Purpose:** The moment dreams of wearing clogs die, rendered with dignity
 - **Audio Sync:** Hollow wooden CLONK at 0.0s insertion; creak at 1.2s stand; ominous try-on-area silence otherwise (profile audio note)
-- **Mobile Optimization:** None needed (one-shot)
+- **Performance Optimization:** None needed (one-shot)
 
 ### The Walking Attempt (Sheet 7):
 - **Duration:** Step-driven; ~0.8s per step at normal tap cadence, 10 steps maximum
@@ -323,7 +323,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - **Trigger:** Player chooses to walk after try-on
 - **Purpose:** The 10-step test — Bravado on completion, honesty on retreat
 - **Audio Sync:** Distinctive wood-on-floor CLOK per step; subtle pain sting at steps 7 and 9
-- **Mobile Optimization:** Pain star density capped at 3 concurrent on Low LOD
+- **Performance Optimization:** Pain star density capped at 3 concurrent on Low LOD
 
 ### Ceiling Cluster Sway (Sheet 7):
 - **Duration:** 3.0 seconds per sway cycle
@@ -332,7 +332,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - **Trigger:** Constant; amplitude doubles briefly when door opens
 - **Purpose:** The shop breathes wood
 - **Audio Sync:** Soft clog-on-clog clack on direction change (every 1.5s, quiet)
-- **Mobile Optimization:** Static on Low LOD and in reduced-motion mode
+- **Performance Optimization:** Static on Low LOD and in reduced-motion mode
 
 ### Hendrika Presenting (Sheet 5):
 - **Duration:** 1.6 seconds (0.8s per frame)
@@ -341,7 +341,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - **Trigger:** Player examines any full-size clog
 - **Purpose:** Retail theater with complete professionalism
 - **Audio Sync:** Gentle "presentation" chime on frame 2
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Confession Moment (Sheet 7):
 - **Duration:** 2.0 seconds (1.0s per frame + UI hold)
@@ -350,7 +350,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - **Trigger:** Checkout with any full-size clog
 - **Purpose:** The location's namesake mechanic
 - **Audio Sync:** Slight confession acknowledgment tone ONLY on honest answers (profile: audio acknowledgment when truth is spoken)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Pyramid Wobble (Sheet 7):
 - **Duration:** 0.6 seconds, plays once per nudge
@@ -359,7 +359,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - **Trigger:** Player walks within 16px of pyramid
 - **Purpose:** Perpetual near-disaster tension gag
 - **Audio Sync:** Wooden rattle, cut short
-- **Mobile Optimization:** Disabled on Low LOD
+- **Performance Optimization:** Disabled on Low LOD
 
 ---
 
@@ -396,11 +396,10 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); signage set and receipt panel at ASTC 4x4 (readable text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) signage set and receipt panel kept uncompressed (readable text)
 - **Fallback:** PNG high quality for klompen_interior_main.png (scene-detail critical) and honest signage
 
 ### Texture Atlases:
@@ -410,7 +409,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 | klompen_characters | npc_klompen_staff, npc_klompen_customers | 1024x1024 |
 | klompen_fx_ui | klompen_item_sprites, klompen_animations, klompen_ui | 2048x1024 |
 
-*(klompen_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(klompen_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -569,7 +568,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (tourist purchasing logic satirized; Pieter's craft respected)
 - [ ] Hidden areas/interactions have discoverable visual cues (first aid kit, scent vent, pyramid proximity, confession highlight)
-- [ ] Mobile performance optimized (CPU particles, palette-modulated clog variety, atlas limits respected)
+- [ ] Performance optimized (CPU particles, palette-modulated clog variety, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for browser, try-on, steps, confession)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (section silhouettes, segmented step counter)
 - [ ] Social media viral potential maximized in composition choices (step-8 mirror framing, honest signage legibility)
@@ -586,7 +585,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 | Seedy Underbelly Present | ✅ | Selling 40 Sovs wood as "footwear" with try-on theater everyone sees through |
 | Gameplay Value Established | ✅ | Try-on system, 10-step challenge, confession mechanic, inventory burden, achievement track |
 | Technical Feasibility | ✅ | Palette-modulated variety, static demonstration fallback, one-shot animations documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 10 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 10 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion set, 44px touch zones |
 | No Crypto Elements | ✅ | Pure wooden authenticity |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |

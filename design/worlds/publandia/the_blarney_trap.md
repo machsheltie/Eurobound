@@ -98,7 +98,7 @@
 - **Lighting Setup**: Warm amber, fireplace glow, candles on tables (LED, fire code)
 - **Particle Systems**: Fireplace flicker, dust in light beams, pint settling (crucial)
 - **Animation Elements**: Bartender pouring, musicians playing, customers swaying
-- **Mobile Optimization**: Simplified crowd, static fireplace, reduced shamrock particle count
+- **Performance Optimization**: Simplified crowd, static fireplace, reduced shamrock particle count
 
 ## Satirical Design
 ### Theme & Vibe

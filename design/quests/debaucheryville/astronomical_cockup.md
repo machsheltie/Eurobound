@@ -21,7 +21,7 @@
 > A 38-second animatronic show where a skeleton rings a bell and a rooster makes a weird noise, surrounded by vendors selling overpriced garbage to emotionally vulnerable tourists.
 
 **Why it's funny:**
-> The bros have a profound spiritual awakening over a mechanical bird, cry in public, buy hundreds of euros worth of scam merchandise, and Lord Pilsner decides to get a tramp stamp of the skeleton because waitresses at wing restaurants have lower back tattoos and that's "classy."
+> The bros have a profound spiritual awakening over a mechanical bird, cry in public, buy hundreds of Sovs worth of scam merchandise, and Lord Pilsner decides to get a tramp stamp of the skeleton because waitresses at wing restaurants have lower back tattoos and that's "classy."
 
 ---
 

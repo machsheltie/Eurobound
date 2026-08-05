@@ -330,7 +330,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Trigger:** Constant while location is loaded — the stew never stops
 - **Purpose:** The cart's perpetual warmth; the visual promise that the food is always ready because you were always coming
 - **Audio Sync:** Stew bubbling (comforting) on each frame-3 bubble break
-- **Mobile Optimization:** Low LOD drops the bubble burst overlay, keeps the 3-frame loop
+- **Performance Optimization:** Low LOD drops the bubble burst overlay, keeps the 3-frame loop
 
 ### The Knowing Smile Beat:
 - **Duration:** 1.2 seconds, hold 2 seconds, release 0.8 seconds
@@ -339,7 +339,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Trigger:** Player approach when a tracked event flag is active; also on any "how did you know" dialogue branch
 - **Purpose:** The entire location in one expression — she knows, she won't say, the smile is kind
 - **Audio Sync:** Deirdre's knowing "hmm" lands exactly at the smile's peak
-- **Mobile Optimization:** None needed (2-frame swap)
+- **Performance Optimization:** None needed (2-frame swap)
 
 ### Menu Board Item Swap (Event Approaching):
 - **Duration:** 1.0 second per panel
@@ -348,7 +348,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Trigger:** Hidden pre-event detection flag change (combat, boss, low HP/SP, decision, milestone)
 - **Purpose:** The player sees the menu adapt to a future the game hasn't announced yet — the core meta gag, animated
 - **Audio Sync:** Mysterious chime on the slide-in landing frame
-- **Mobile Optimization:** Low LOD swaps panels instantly with Swap Flash only
+- **Performance Optimization:** Low LOD swaps panels instantly with Swap Flash only
 
 ### Serving Handoff:
 - **Duration:** 1.5 seconds
@@ -357,7 +357,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Trigger:** Purchase confirmed
 - **Purpose:** Purchase feedback with warmth — the meal changes hands like a blessing
 - **Audio Sync:** Food served sound on the handoff frame
-- **Mobile Optimization:** Steam trail reduced to 1 wisp on low-end devices
+- **Performance Optimization:** Steam trail reduced to 1 wisp on low-end devices
 
 ### Suggestion Sparkle:
 - **Duration:** 0.8 seconds, repeats every 6 seconds while unpurchased
@@ -366,7 +366,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Trigger:** Deirdre's recommendation issued; clears on purchase or decline
 - **Purpose:** Marks the +10% bonus item without a tutorial popup — trust the gold
 - **Audio Sync:** Recommendation "ping" on first cycle only
-- **Mobile Optimization:** Repeat interval extends to 12 seconds on low LOD
+- **Performance Optimization:** Repeat interval extends to 12 seconds on low LOD
 
 ### The Meta-Moment Wobble:
 - **Duration:** 0.9 seconds
@@ -375,7 +375,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Trigger:** Flagged "too knowing" dialogue lines ("I've seen it.", "You're the main characters. Now eat.")
 - **Purpose:** A half-second of the game admitting something before both of you agree to move on
 - **Audio Sync:** Fourth-wall sound effect spans the full 0.9 seconds
-- **Mobile Optimization:** Ripple overlay dropped on low LOD; glyph frames only
+- **Performance Optimization:** Ripple overlay dropped on low LOD; glyph frames only
 
 ### Hearth Glow Breathing:
 - **Duration:** 4 seconds per cycle
@@ -384,7 +384,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Trigger:** Constant; intensity +15% during 3 AM night state
 - **Purpose:** The warm hearth glow against the Cobblestone Market Street mist — safety rendered in light
 - **Audio Sync:** None
-- **Mobile Optimization:** Static Warm Glow Radial on low LOD
+- **Performance Optimization:** Static Warm Glow Radial on low LOD
 
 ---
 
@@ -432,11 +432,10 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback for legacy devices); Deirdre's portraits and all signage text ship ASTC 4x4 — the fine print must stay legible
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Deirdre's portraits and all signage text ship uncompressed — the fine print must stay legible
 - **Fallback:** PNG high quality for signage sheet and dialogue portraits (text-critical assets)
 
 ### Texture Atlases:
@@ -446,7 +445,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | plot_armor_characters | deirdre_murphy, provision_customers | 512x512 |
 | plot_armor_items_ui | provisions_items, provisions_ui_fx, provisions_accessibility | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility — all three atlases sit comfortably under.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility — all three atlases sit comfortably under.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -563,7 +562,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | 5 | provisions_items.png | 256x128 |
 | 6 | provisions_ui_fx.png | 256x256 |
 
-**Total Estimated Memory:** ~11 MB runtime (atlased with mipmaps, ASTC/ETC2 compressed — comfortably inside the location's 25 MB budget)
+**Total Estimated Memory:** ~11 MB runtime (atlased with mipmaps, VRAM-compressed — comfortably inside the location's 25 MB budget)
 
 ---
 
@@ -611,7 +610,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 ### Quality Checkpoints:
 - [ ] Satirical theme (meta-awareness played completely sincere) is clear throughout all assets
 - [ ] Hidden interactions discoverable: asterisk fine print, blank chalk panel, Off-Menu Card Back, locals-not-noticing gag, Hidden Bonus Star
-- [ ] Mobile performance optimized (CPU particles, 12-particle cap, sprite-region menu swaps, single NPC focus)
+- [ ] Performance optimized (CPU particles, 12-particle cap, sprite-region menu swaps, single NPC focus)
 - [ ] Touch zone sizing considered (44px minimum — menu rows, Confirm/Decline, status icons, examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (silhouette-distinct status icons, shape-coded item tiers, ring + sparkle + badge suggestion marking)
 - [ ] Social media viral potential maximized (signage stack framing, mid-swap board capture, knowing-smile composition)
@@ -628,7 +627,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Seedy Underbelly Present | ❌ | Profile states Primary Vice: None — Deirdre is genuinely helpful. The location's edge is meta-unease (she knows things she shouldn't, locals can't see the cart, nobody questions it), not vice or exploitation. Intentional outlier, honestly flagged. |
 | Gameplay Value Established | ✅ | Major HP restoration, adaptive shop, suggestion bonus, Plot Essential progression, 4 quests, 7 achievements |
 | Technical Feasibility | ✅ | Sprite-swap adaptive menu, CPU particles, single always-animated NPC — mobile-safe by design |
-| Mobile Performance Budget | ✅ | 60 FPS target (45 floor), 10 draw calls, 25 MB cap, 12-particle limit — asset set at ~11 MB |
+| Performance Budget | ✅ | 60 FPS target (45 floor), 10 draw calls, 25 MB cap, 12-particle limit — asset set at ~11 MB |
 | Accessibility Features | ✅ | Supplemental sheet: visual cues for all 8 audio events, static-motion variants, high contrast hotspots, 44px targets |
 | No Crypto Elements | ✅ | PASS — the only tokens here are edible |
 | Social Media Integration | ✅ | Six screenshot moments and seven quotable lines identified |

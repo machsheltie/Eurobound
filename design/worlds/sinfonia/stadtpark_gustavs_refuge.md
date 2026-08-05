@@ -570,7 +570,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 - UI elements (dialogue, damage counter)
 
 ### Performance Budget
-- Target: 60 FPS on iPhone 8+
+- Target: 60 FPS on min-spec hardware
 - Draw calls: <45
 - Memory: <45MB for location
 - Particles: <60 simultaneous
@@ -645,7 +645,7 @@ Stadtpark/
 - [x] Emotional beats amid satire
 - [x] No malicious stereotypes
 
-### Mobile Optimization
+### Performance
 - [x] Touch zones appropriate
 - [x] Memory budget defined (45MB)
 - [x] Draw calls limited (45)

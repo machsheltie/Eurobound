@@ -433,11 +433,10 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 
 ---
 
-## 📱 Mobile Optimization Requirements
+## 📱 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for neon glow effects
-- **Android:** ETC2 with alpha for vapor transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for neon glow effects with alpha for vapor transparency
 - **Fallback:** PNG high quality for hologram detail and rhythm indicators
 
 ### Sprite Atlasing Strategy:
@@ -446,7 +445,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 - **NPC Atlas:** Bartender + DJ zombies + techno monks + livestreamer + Ad Bot + boss (512x384)
 - **Particle Effects Atlas:** Vapor + neon + glitch + steam + waves + status effects (512x256)
 - **UI Elements Atlas:** Status icons + brewery progress + rhythm UI + boss UI + achievements (512x256)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full rhythm-reactive effects, all particles, complex lighting, glitch shaders
@@ -732,7 +731,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 - [ ] Environmental effects support cyberpunk nightclub atmosphere
 - [ ] Boss battle sound wave mechanics are clear and functional
 - [ ] Status effects (Grease Fingers, Glow-Up Aura, Embarrassed) visually distinct
-- [ ] Mobile performance optimized for complex rhythm synchronization
+- [ ] Performance optimized for complex rhythm synchronization
 - [ ] All elements support "nightclub inside GPU" theme
 - [ ] Midnight-only access creates exclusive venue feeling
 - [ ] Social media viral potential maximized
@@ -831,7 +830,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 | Seedy Underbelly Present | ✅ | Nightclub disguised as brewery selling flavored vape juice as "experimental beer" to drunk tourists |
 | Gameplay Value Established | ✅ | Rhythm puzzle, Ad Bot mini-mob with item theft, Strobe Brewmistress boss, Vape Stout reward, Brewery Tour 2/4 progression |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, CPUParticles2D vapor/neon, 128 BPM sync system documented |
-| Mobile Performance Budget | ✅ | 60 FPS target, max 20 draw calls, 48MB memory footprint |
+| Performance Budget | ✅ | 60 FPS target, max 20 draw calls, 48MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (bass drop wave, rhythm beat visual), pattern-based rhythm indicators, reduced strobe options |
 | No Crypto Elements | ✅ | None present — tech-bro satire is vape/GPU themed, no crypto content |
 | Social Media Integration | ✅ | Hologram selfie wall, midnight vault opening, DJ zombie beat sync, quotable glitch dialogue identified |

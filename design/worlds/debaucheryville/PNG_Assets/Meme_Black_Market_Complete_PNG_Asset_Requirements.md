@@ -444,7 +444,7 @@ The eternal digital samsara display:
 - **FPS:** 8, continuous loop across all vendor states
 - **Cloud Persistence:** Baja Blast cloud persists 5 seconds per exhale
 - **Particle:** Baja Blast cloud (green #00FF7F) spawns on every exhale
-- **Mobile Optimization:** Cap simultaneous vape clouds (max 3 on screen); reuse pooled particles instead of spawning new ones on low-end devices
+- **Performance Optimization:** Cap simultaneous vape clouds (max 3 on screen); reuse pooled particles instead of spawning new ones on low-end devices
 
 ### ASCII Cat Tracking:
 - **Pattern:** Staring → Eyes Tracking → Staring
@@ -520,11 +520,10 @@ The eternal digital samsara display:
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP / ASTC for vape mist and RGB glow transparency
-- **Android:** ETC2 with alpha for particle effects and corrupted GIF overlays
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for vape mist and RGB glow transparency with alpha for particle effects and corrupted GIF overlays
 - **Fallback:** PNG high quality for AIM away message text and BSOD error readability
 
 ### Texture Atlases:
@@ -534,7 +533,7 @@ The eternal digital samsara display:
 | meme_market_characters | MemeLord.exe vendor, meme summons, ASCII cat guardians | 1024x1024 |
 | meme_market_effects | particles, trinkets, UI, password puzzle elements | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -729,7 +728,7 @@ The eternal digital samsara display:
 ### Quality Checkpoints:
 - [ ] Satirical theme (weaponized nostalgia as sacred economy) is clear throughout all assets
 - [ ] Hidden VHS entrance discoverable via RGB light leak at 3:33 AM
-- [ ] Mobile performance optimized (CPU particles, max 3 vape clouds, atlas limits respected)
+- [ ] Performance optimized (CPU particles, max 3 vape clouds, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for vendor menu and password terminal)
 - [ ] Colorblind-friendly meter patterns and status icon silhouettes
 - [ ] Social media viral potential maximized in composition choices (Trollface bomb, MemeMastery full)
@@ -746,7 +745,7 @@ The eternal digital samsara display:
 | Seedy Underbelly Present | ✅ PASS | Underground economy selling psychological damage |
 | Gameplay Value Established | ✅ PASS | Vendor, summons, MemeMastery progression, ICQ unlock |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 18 draws, 42MB |
+| Performance Budget | ✅ PASS | 60 FPS, 18 draws, 42MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | Crypto/meme satire (Meatspin NFT, Funcoland Futures, Diamond Hands) is established source material |
 | Social Media Integration | ✅ PASS | Viral moments identified |

@@ -91,7 +91,7 @@
   - Pigeon pecking/flying (6 frames each)
   - Hans-Jürgen swaying (drunk idle, 4 frames)
   - Fiaker horse tail swish (4 frames, 2 seconds)
-- **Mobile Optimization**:
+- **Performance Optimization**:
   - LOD Level 2 for distant buildings
   - Particle limit: 40 pigeons, 20 leaves
   - Draw call budget: 35
@@ -443,7 +443,7 @@
   - Pigeons: 6-frame peck, 8-frame flight
   - Property damage: Table break sequence, crowd scatter
 - **Performance Budget**:
-  - Target: 60 FPS on iPhone 8+
+  - Target: 60 FPS on min-spec hardware
   - Draw calls: <40
   - Memory: <40MB for location
   - Particles: <60 simultaneous

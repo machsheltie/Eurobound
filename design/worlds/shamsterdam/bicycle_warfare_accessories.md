@@ -88,7 +88,7 @@
 - **Lighting Setup**: Harsh retail lighting, bells reflecting, military surplus vibe
 - **Particle Systems**: Bell shine, slight dust, determined atmosphere
 - **Animation Elements**: Bell testing (ding animations), customer decision anxiety
-- **Mobile Optimization**: Simplified bell variety, static map, reduced shine effects
+- **Performance Optimization**: Simplified bell variety, static map, reduced shine effects
 
 ## Satirical Design
 ### Theme & Vibe

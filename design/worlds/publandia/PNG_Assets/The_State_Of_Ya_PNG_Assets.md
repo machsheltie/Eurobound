@@ -292,7 +292,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - **Trigger:** Player crosses the entry threshold (door bell)
 - **Purpose:** The location's signature beat — diagnosed before you speak
 - **Audio Sync:** Door bell on entry; the "look at the state of ya" sting lands with the popup
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Recommendation Point:
 - **Duration:** 1.5 seconds
@@ -300,7 +300,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - **Trigger:** Assessment completes, or "I don't know what I need" dialogue option
 - **Purpose:** "You need [EXACT ITEM]. Aisle [NUMBER]. Go." — she's always right
 - **Audio Sync:** Recommendation ping on the glow swap
-- **Mobile Optimization:** Glow becomes static outline on Low LOD
+- **Performance Optimization:** Glow becomes static outline on Low LOD
 
 ### The Eye Roll:
 - **Duration:** 1 second
@@ -308,7 +308,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - **Trigger:** Denial Case dialogue, obvious lies, Chadwick filming
 - **Purpose:** Judgement as microexpression — the roll is subtle, the meaning is not
 - **Audio Sync:** Nuala's sigh, frequent
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Rare Smile:
 - **Duration:** 2.5 seconds
@@ -316,7 +316,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - **Trigger:** "The Rare Laugh" quest success / Nuala Approved moments
 - **Purpose:** Rarest sprite in the shop; +25 Bravado made visible
 - **Audio Sync:** Slight audio warmth shift — ambient softens for the hold
-- **Mobile Optimization:** None needed — it's the achievement
+- **Performance Optimization:** None needed — it's the achievement
 
 ### Fluorescent Reveal:
 - **Duration:** Continuous; hum with 0.5s soft pulse every 8s
@@ -324,7 +324,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - **Trigger:** Constant in interior
 - **Purpose:** Harsh light that reveals all, mercy over the Redemption aisle
 - **Audio Sync:** Fluorescent hum, register beeps intermittent
-- **Mobile Optimization:** Static fixture in reduced-motion mode and Low LOD
+- **Performance Optimization:** Static fixture in reduced-motion mode and Low LOD
 
 ### 15-Second Regular Transaction:
 - **Duration:** 15 seconds, choreographed
@@ -332,7 +332,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - **Trigger:** Ambient event, roughly every third visit
 - **Purpose:** Mutual respect as environmental storytelling — the adjusted customer
 - **Audio Sync:** "Morning, Nuala." / "You look rough." / "I know." beat-matched to frames
-- **Mobile Optimization:** Trimmed to 8s on Low LOD
+- **Performance Optimization:** Trimmed to 8s on Low LOD
 
 ---
 
@@ -374,11 +374,10 @@ assets/sprites/locations/publandia/state_of_ya/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (signage and chalkboard text at ASTC 4x4 — the jokes are in the lettering)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import)
 - **Fallback:** PNG high quality for Nuala portraits and the Assessment Popup
 
 ### Texture Atlases:
@@ -388,7 +387,7 @@ assets/sprites/locations/publandia/state_of_ya/
 | stateofya_characters | nuala, state_customers | 512x512 |
 | stateofya_items_ui | shop_stock, ui | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -550,7 +549,7 @@ assets/sprites/locations/publandia/state_of_ya/
 ### Quality Checkpoints:
 - [ ] Satirical theme (brutal honesty wrapped in genuine care) is clear throughout all assets
 - [ ] Easter eggs discoverable: Grandmother's Recipe Frame, Photo of the Regulars, newspaper headline, the silent Fake ID sale
-- [ ] Mobile performance optimized (tiled aisle unit, scheduled ambient events, 6-particle cap)
+- [ ] Performance optimized (tiled aisle unit, scheduled ambient events, 6-particle cap)
 - [ ] Touch zone sizing considered (44px minimum — menu rows, aisle hotspots, counter compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (numbered + icon-coded aisles, labeled state meter)
 - [ ] Social media viral potential maximized (assessment popup framing, asterisk composition)
@@ -567,7 +566,7 @@ assets/sprites/locations/publandia/state_of_ya/
 | Seedy Underbelly Present | ✅ | Enabling the cycle for profit; Fake ID and "Didn't Happen" Kit under the counter |
 | Gameplay Value Established | ✅ | Central item shop, 25+ items, assessment system, Known Disaster progression |
 | Technical Feasibility | ✅ | Single room, toggle-based effects, 7 sheets, mobile optimization documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 12 draw calls, 30MB |
+| Performance Budget | ✅ | 60 FPS, 12 draw calls, 30MB |
 | Accessibility Features | ✅ | Visual cues for all audio, steady-light and static-highlight variants, labeled states |
 | No Crypto Elements | ✅ | Absent from source and spec |
 | Social Media Integration | ✅ | Six viral moments identified, quote bank sourced from profile |

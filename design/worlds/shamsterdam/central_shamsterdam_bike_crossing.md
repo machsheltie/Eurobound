@@ -472,7 +472,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - **Particle Budget**: 80 (bells, impact effects)
 - **Target FPS**: 60 (critical for mini-game)
 
-### Mobile Optimization
+### Performance
 - Clear visual indicators for all bike types
 - Audio cues for offscreen threats
 - Touch zones sized for thumb play (one-handed possible)
@@ -524,7 +524,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - [x] Multiple difficulty contexts (time of day)
 - [x] Accessibility options available
 
-### Mobile Optimization
+### Performance
 - [x] Touch controls designed for mini-game
 - [x] Performance budgeted for many moving sprites
 - [x] Audio cues support visual gameplay

@@ -336,11 +336,10 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 
 ---
 
-## 📱 Mobile Optimization Requirements (ported from legacy spec)
+## 📱 Performance & Assets Requirements (ported from legacy spec)
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for CRT glow and fluorescent lighting effects
-- **Android:** ETC2 with alpha for smoke transparency and particle systems
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for CRT glow and fluorescent lighting effects with alpha for smoke transparency and particle systems
 - **Fallback:** PNG high quality for text readability in ICQ interfaces
 
 ### Sprite Atlasing Strategy:
@@ -351,7 +350,7 @@ The six delivered sheet files (see File Delivery Checklist) are the packaging co
 - **kavarna_decorations.png** (512x512) - Counter, mining rigs, posters, metro access system
 - **kavarna_effects.png** (512x256) - Neon sign, smoke, static, status icons
 - **kavarna_ui.png** (256x256) - Rental menu, ICQ interface, sting operation UI
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility (all six sheets fit unmodified)
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility (all six sheets fit unmodified)
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full CRT flicker, all smoke particles, complete interface animations
@@ -498,7 +497,7 @@ The six delivered sheet files (see File Delivery Checklist) are the packaging co
 ### Quality Checkpoints:
 - [ ] Satirical theme (tourist-trap "underground hacker" den) is clear throughout all assets
 - [ ] Hidden metro access has discoverable visual cues (graffiti, door, quest gate)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for terminals, rental menu, ICQ interface)
 - [ ] Colorblind-friendly alternatives available where status icon color codes meaning
 - [ ] Social media viral potential maximized in composition choices (CRT maze, neon sign)
@@ -515,7 +514,7 @@ The six delivered sheet files (see File Delivery Checklist) are the packaging co
 | Seedy Underbelly Present | ✅ PASS | Scammer networks, surveillance, sting operations |
 | Gameplay Value Established | ✅ PASS | ICQ quest hub, sting ops, metro unlock, terminal rental |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 18 draws, 45MB |
+| Performance Budget | ✅ PASS | 60 FPS, 18 draws, 45MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | Crypto rigs/scammers are established satire in the source location profile |
 | Social Media Integration | ✅ PASS | Viral moments identified |

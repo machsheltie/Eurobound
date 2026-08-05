@@ -567,7 +567,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - **Trigger:** First encounter; passing the bros' rental car
 - **Purpose:** The game's warmest and most unsettling greeting — 37 years of circling, still friendly
 - **Audio Sync:** Faint wedding march (music box version) as the van passes
-- **Mobile Optimization:** None needed (part of pre-baked van loop)
+- **Performance Optimization:** None needed (part of pre-baked van loop)
 
 ### Margaret's Wind Sway (Sheet 3):
 - **Duration:** 2 seconds per cycle
@@ -576,7 +576,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - **Trigger:** Constant (wind effect)
 - **Purpose:** She is at rest, not lifeless — dignity in motion; brief ominous chord resolves to warm tone on first reveal
 - **Audio Sync:** Brief ominous chord on first sighting, quickly replaced by warm tone
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### GPS Recalculating (UI):
 - **Duration:** ~2 seconds per loop, escalating versions over quest
@@ -585,7 +585,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - **Trigger:** Every failed exit attempt / continuous during circling
 - **Purpose:** The GPS is as trapped as the player — comedy through UI decay
 - **Audio Sync:** "Recalculating" voice line with sad trombone undertone on failure
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Windshield Wiper Overlay (Effects):
 - **Duration:** Swipe every 3 seconds
@@ -594,7 +594,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - **Trigger:** Constant (default light rain weather)
 - **Purpose:** Rhythmic hypnosis of the eternal circle; POV framing device
 - **Audio Sync:** Wiper rhythm layered under rain patter
-- **Mobile Optimization:** Disable overlay entirely at Low LOD
+- **Performance Optimization:** Disable overlay entirely at Low LOD
 
 ### Circulation Loops (all vehicles):
 - **Duration:** 20-90 seconds per vehicle (see table above)
@@ -603,7 +603,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - **Trigger:** Constant while location active
 - **Purpose:** Hypnotic perpetual motion — the roundabout as ecosystem
 - **Audio Sync:** Per-lane engine beds; radio snippets fade in/out as vehicles pass
-- **Mobile Optimization:** Pre-baked loops (no real-time pathfinding); distant vehicles simplified to colored rectangles
+- **Performance Optimization:** Pre-baked loops (no real-time pathfinding); distant vehicles simplified to colored rectangles
 
 ---
 
@@ -639,11 +639,10 @@ All circling vehicles use pre-animated loops for mobile performance.
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); wedding van sheet and GPS UI need higher quality (hero asset, readable text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); wedding van sheet and GPS UI need higher quality (hero asset, readable text)
 - **Fallback:** PNG high quality for roundabout base and exit signs (gameplay-critical readability)
 
 ### Texture Atlases:
@@ -653,7 +652,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 | cloverleaf_vehicles | all 8 resident vehicles + bros rental + drivers | 1024x1024 |
 | cloverleaf_effects_ui | rain, exhaust, spray, wipers, headlights, counters, GPS | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -663,7 +662,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 | Low | Distant vehicles as colored rectangles, minimal rain, no road spray, wiper overlay off |
 
 ### Performance Targets:
-- **Target FPS:** 60 (baseline device: iPhone 8)
+- **Target FPS:** 60 (min-spec baseline)
 - **Max Draw Calls:** Under 50
 - **Memory Footprint:** Under 64 MB total for location
 - **Particle Limit:** Rain 50 particles/second (scalable) + 8 exhaust sources max
@@ -933,7 +932,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - [ ] Satirical theme is clear throughout all assets (American impatience vs. Irish acceptance; existential comfort horror)
 - [ ] Margaret reviewed for tone — dignity and love story, never gross-out
 - [ ] Hidden details discoverable (bullet-holed sign, sheep staring at camera, COUNCIL MEETING window, GPS tears)
-- [ ] Mobile performance optimized (pre-baked loops, CPU particles, 8-vehicle cap, atlas limits respected)
+- [ ] Performance optimized (pre-baked loops, CPU particles, 8-vehicle cap, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (exit signs by text/arrow, not color)
 - [ ] Social media viral potential maximized in composition choices (wedding van framing, aerial circulation shot)
@@ -950,7 +949,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 | Seedy Underbelly Present | ✅ | Accidentally existential — the vice is giving up on destinations entirely |
 | Gameplay Value Established | ✅ | Major set-piece, binary Path A/B, two minigames, status effects, post-completion unlocks |
 | Technical Feasibility | ✅ | Pre-baked animation loops solve mobile performance |
-| Mobile Performance Budget | ✅ | 60 FPS on iPhone 8, <50 draw calls, <64 MB, scalable particles |
+| Performance Budget | ✅ | 60 FPS on min-spec hardware, <50 draw calls, <64 MB, scalable particles |
 | Accessibility Features | ✅ | Visual audio cues, motion-reduction options (rain/wipers), text-based exit reading |
 | No Crypto Elements | ✅ | All transactions in Sovs (food truck menu) |
 | Social Media Integration | ✅ | 5 screenshot moments + quotes + meme formats identified |

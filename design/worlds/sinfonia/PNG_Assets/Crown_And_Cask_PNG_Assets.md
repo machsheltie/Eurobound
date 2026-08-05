@@ -406,7 +406,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - **Trigger:** Coronation Ceremony questions answered, drink completed
 - **Purpose:** The ridiculous ritual everyone does anyway — maximum pomp, tap-handle scepter
 - **Audio Sync:** Trumpet sting on knighting contact frame; "Rise, Knight of the Cask!" VO after
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Stamp Press:
 - **Duration:** 1.2 seconds, single play
@@ -415,7 +415,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - **Trigger:** Ceremony success
 - **Purpose:** The Brewery Tour payoff — royal purple, gold-leaf flecks, "Duly Knighted"
 - **Audio Sync:** Tiny trumpet fanfare on descend; seal-press thump on press frame
-- **Mobile Optimization:** Drop screen-shake on Low LOD
+- **Performance Optimization:** Drop screen-shake on Low LOD
 
 ### Ceremonial Drink Timing:
 - **Duration:** 3.0 seconds active window
@@ -424,7 +424,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - **Trigger:** Ceremony phase 4
 - **Purpose:** Easy mini-game with a public failure state
 - **Audio Sync:** Gulp on success; splash + sad horn on spill
-- **Mobile Optimization:** Widen timing window 15% on small screens
+- **Performance Optimization:** Widen timing window 15% on small screens
 
 ### Foam Crown Settle:
 - **Duration:** 1.5 seconds, single play
@@ -433,7 +433,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - **Trigger:** Any beer poured/served
 - **Purpose:** Every pour is a tiny coronation
 - **Audio Sync:** Pour SFX tail ends as frame 3 lands
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Fountain Pour Loop:
 - **Duration:** 1.0 second cycle
@@ -442,7 +442,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - **Trigger:** Constant in courtyard
 - **Purpose:** Beer-pouring statues — imperial grandeur, absurd subject
 - **Audio Sync:** Continuous fountain trickle bed
-- **Mobile Optimization:** Static frame on Low LOD
+- **Performance Optimization:** Static frame on Low LOD
 
 ### Cousin Eye-Roll:
 - **Duration:** 1.0 second, single play
@@ -451,7 +451,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - **Trigger:** Random 20-40s while Klaus mid-court
 - **Purpose:** Varying commitment to the bit, visible to observant players only
 - **Audio Sync:** None
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Throne Usurp Confrontation:
 - **Duration:** Loop until player stands
@@ -460,7 +460,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - **Trigger:** Player sits on throne before completing ceremony
 - **Purpose:** Hidden quest "The Usurper" — worth it
 - **Audio Sync:** Record-scratch on trigger; regal music halts
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -497,11 +497,10 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); stamp assets ASTC 4x4 — the "Duly Knighted" ink must stay legible
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) stamp assets kept uncompressed — the "Duly Knighted" ink must stay legible
 - **Fallback:** PNG high quality for landmarks sheet (throne is the selfie centerpiece)
 
 ### Texture Atlases:
@@ -511,7 +510,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 | crown_cask_characters | König Klaus, staff & regulars | 512x512 |
 | crown_cask_items_fx | drinks, effects, UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -669,7 +668,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 ### Quality Checkpoints:
 - [ ] Satirical theme (imperial cosplay, inherited authority) is clear throughout
 - [ ] Hidden Usurper interaction has a discoverable visual cue (empty inviting throne)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -686,7 +685,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 | Seedy Underbelly Present | ❌ | Intentionally benign per profile — no vice operation documented beyond the 3 Sovs keepsake-glass upsell and self-appointed authority |
 | Gameplay Value Established | ✅ | Brewery Tour stamp, ceremony QTE + dialogue, beer shop with buffs, hidden quest |
 | Technical Feasibility | ✅ | Seven sheets, atlas plan, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 60 FPS default (profile states no budget — flagged), 20 draw calls, 35 MB, 20 particles |
+| Performance Budget | ✅ | 60 FPS default (profile states no budget — flagged), 20 draw calls, 35 MB, 20 particles |
 | Accessibility Features | ✅ | Visual cues for all audio events; static motion variants |
 | No Crypto Elements | ✅ | None present — pure imperial satire |
 | Social Media Integration | ✅ | Coronation kneel, Usurper selfie, identical-portraits moments identified |

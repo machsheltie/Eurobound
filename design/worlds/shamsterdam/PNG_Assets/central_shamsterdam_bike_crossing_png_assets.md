@@ -5,7 +5,7 @@
 **Location ID**: `shamsterdam_bike_crossing_thunderdome_01`  
 **Priority**: HIGH (Central Hub, Mini-Game Location, Required for All Shamsterdam Traversal)  
 **Total Sheets Required**: 12  
-**Mobile Optimization**: CRITICAL - 60 FPS required for timing-based gameplay
+**Performance Optimization**: CRITICAL - 60 FPS required for timing-based gameplay
 
 ---
 
@@ -429,7 +429,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 - **Trigger:** Constant while cyclist active in lane
 - **Purpose:** Players must read cyclist speed visually — frame rate IS the gameplay telegraph
 - **Audio Sync:** Bell ring on aggressive types when player is in lane
-- **Mobile Optimization:** Pool of 24 sprites, 12 active maximum
+- **Performance Optimization:** Pool of 24 sprites, 12 active maximum
 
 ### Tram Movement (Sheet 3):
 - **Duration:** 0.5 seconds per cycle (4 FPS, slow and deliberate)
@@ -438,7 +438,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 - **Trigger:** Timer — every 45 seconds per track, Track 2 offset by 22 seconds
 - **Purpose:** Communicates lethal, unstoppable mass
 - **Audio Sync:** Tram bell 3 seconds before arrival; sparks visual precedes
-- **Mobile Optimization:** None needed (single large sprite)
+- **Performance Optimization:** None needed (single large sprite)
 
 ### Cargo Parade Wall (Sheet 4):
 - **Duration:** 10 seconds on-screen, every 90 seconds
@@ -447,7 +447,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 - **Trigger:** Timer (90-second interval), 5-second UI warning first
 - **Purpose:** Beautiful and terrifying spectacle; forces player to wait
 - **Audio Sync:** "CARGO PARADE INCOMING" warning audio at T-5s; children singing, bell cacophony during
-- **Mobile Optimization:** Parade rendered as combined formation, not individual physics bodies
+- **Performance Optimization:** Parade rendered as combined formation, not individual physics bodies
 
 ### Collision Effects (Sheet 10):
 - **Duration:** 0.33-0.4 seconds (10-12 FPS, snappy feedback)
@@ -456,7 +456,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 - **Trigger:** Player collision with cyclist/tram/parade
 - **Purpose:** Immediate, readable failure feedback
 - **Audio Sync:** Impact sound + Dutch reaction line on frame 1
-- **Mobile Optimization:** Single effect instance at a time
+- **Performance Optimization:** Single effect instance at a time
 
 ### NPC Idle Loops (Sheets 5-9):
 - **Duration:** 2-4 seconds per cycle (0.25-0.5 FPS, subtle breathing)
@@ -465,7 +465,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 - **Trigger:** Constant; reaction states (I Told You So, Schadenfreude Chuckle, Impressed Nod) trigger on player crossing outcomes per state rows above
 - **Purpose:** Ambient life; NPC reactions are the crossing's comedy scoreboard
 - **Audio Sync:** None (dialogue-driven)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### UI Warnings (Sheet 11):
 - **Duration:** 0.25 seconds per frame (4 FPS, visible warnings)
@@ -474,7 +474,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 - **Trigger:** Tram approach (T-3s) / parade approach (T-5s)
 - **Purpose:** Off-screen threat telegraphing
 - **Audio Sync:** Warning icons are the visual mirrors of the bell/parade audio cues
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Animation Frame Rates (CRITICAL)
 
@@ -522,11 +522,10 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); cyclist sheet and UI need higher-quality setting for speed readability
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); cyclist sheet and UI need higher-quality setting for speed readability
 - **Fallback:** PNG high quality for tram and UI (detail-critical for timing gameplay)
 
 ### Texture Atlases:
@@ -537,7 +536,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 | bike_crossing_characters | NPC sheets 5-9 | 1024x1024 |
 | bike_crossing_effects | effects, UI | 512x512 |
 
-*(5 atlases max, 1024px each per mini-game budget; max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(5 atlases max, 1024px each per mini-game budget; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -741,7 +740,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (Dutch efficiency as tourist hostility)
 - [ ] Hidden areas/interactions have discoverable visual cues (tunnel stairs, "I Shamsterdam" ghost outline, kiosk)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, 12-cyclist active cap)
+- [ ] Performance optimized (CPU particles, atlas limits respected, 12-cyclist active cap)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (lane indicators, difficulty zones)
 - [ ] Social media viral potential maximized in composition choices (parade wall, near-miss framing)
@@ -758,7 +757,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 | Seedy Underbelly Present | ✅ | Fines-as-revenue, escort service upsell, the crossing as institutionalized hazing |
 | Gameplay Value Established | ✅ | Frogger mini-game, central hub gating 4+ districts, buffs/debuffs, shortcuts |
 | Technical Feasibility | ✅ | Sprite pooling, atlas budget, pre-defined lane patterns documented |
-| Mobile Performance Budget | ✅ | 60 FPS locked, <50 draw calls, <50 MB, 80 particles |
+| Performance Budget | ✅ | 60 FPS locked, <50 draw calls, <50 MB, 80 particles |
 | Accessibility Features | ✅ | Visual audio cues for all threats, slower mode, 44px touch zones |
 | No Crypto Elements | ✅ | All transactions in Sovs |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |

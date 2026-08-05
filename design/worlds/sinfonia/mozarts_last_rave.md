@@ -94,7 +94,7 @@ Every decoration commits to the bit:
 - **Lighting Setup**: UV underlighting, neon accents, strobe system, fog-diffused lasers
 - **Particle Systems**: Fog (heavy), bone dust, spectral wisps, bass-reactive particles
 - **Animation Elements**: Dancing skeletons, bobbing skulls, fog flow, strobe timing
-- **Mobile Optimization**: Pre-animated skeleton loops, simplified fog, static bone decorations option
+- **Performance Optimization**: Pre-animated skeleton loops, simplified fog, static bone decorations option
 
 ## Satirical Design
 ### Theme & Vibe

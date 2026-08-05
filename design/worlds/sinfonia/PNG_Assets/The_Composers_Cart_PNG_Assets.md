@@ -556,7 +556,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Constant during opening hours
 - **Purpose:** The cart reads as *breathing* — sheet music fluttering like paper wings
 - **Audio Sync:** Continuous soft paper-rustle bed; the Page Rustle Glyph fires on the loudest emitter cycle
-- **Mobile Optimization:** Two emitters on Medium; one static pinned surface on Low
+- **Performance Optimization:** Two emitters on Medium; one static pinned surface on Low
 
 ### Metronome Tick:
 - **Duration:** 1.0 second cycle (60 BPM, unhelpfully slow)
@@ -565,7 +565,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Constant
 - **Purpose:** Disapproving timekeeping; also a free tempo reference the player can use
 - **Audio Sync:** Tick on each arm extreme; Metronome Tick Glyph fires with it
-- **Mobile Optimization:** Static frame + glyph only on Low LOD; **static automatically under Reduced Motion**
+- **Performance Optimization:** Static frame + glyph only on Low LOD; **static automatically under Reduced Motion**
 
 ### Three-Note Identification:
 - **Duration:** 1.5 seconds, single play
@@ -574,7 +574,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Player hums, whistles, or selects a musical dialogue option near the cart
 - **Purpose:** He needs three notes. That is the entire character in one animation
 - **Audio Sync:** Three hummed notes from the player; a single sharp "hmm" of recognition on the third
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Judgment:
 - **Duration:** 2.5 seconds, single play
@@ -583,7 +583,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Humming mini-game resolution
 - **Purpose:** The pause before the verdict is where the comedy lives
 - **Audio Sync:** Silence during the bar fill; **discordant sting** (wrong) or **pleasant resolution** (correct) on the reaction frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Lecture:
 - **Duration:** Variable — as long as the text runs, deliberately uncomfortable
@@ -592,7 +592,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Wrong answer to the Quiz; "regular"/"popular" requests; certain humming failures
 - **Purpose:** Educational but long — the punishment is his sincerity
 - **Audio Sync:** Continuous measured speech; Lecture Text-Wall Glyph on the panel
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### RAGE (Copyrighted Modern Song):
 - **Duration:** 2.0 second hold, single play
@@ -601,7 +601,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Humming a copyrighted modern song near the cart
 - **Purpose:** "That is NOT music. That is FOUR CHORDS repeating."
 - **Audio Sync:** Harsh discordant sting on the snap; ban buzzer on the final frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Paper Avalanche:
 - **Duration:** 2.0 seconds, single play
@@ -610,7 +610,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Browsing carelessly
 - **Purpose:** The "I Touched Something" selfie and the "Paper Avalanche" achievement
 - **Audio Sync:** Paper cascade; a single anguished vendor noise on the collapse frame
-- **Mobile Optimization:** Burst reduced to 8 pages on Medium, 4 on Low
+- **Performance Optimization:** Burst reduced to 8 pages on Medium, 4 on Low
 
 ### Vendor Reaction Hold:
 - **Duration:** 1.0 second minimum per reaction (2.0s for RAGE), single play
@@ -619,7 +619,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Any purchase, request, quiz answer, or humming outcome
 - **Purpose:** His face is the shop's entire feedback system
 - **Audio Sync:** Sigh / approval hum / pained noise, matched per reaction
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Rare Stock Reveal:
 - **Duration:** 1.2 seconds, single play
@@ -628,7 +628,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Trigger:** Reaching Patron of the Arts (100 Sovs), or a correctly hummed obscure piece
 - **Purpose:** The reward for being taken seriously
 - **Audio Sync:** Drawer slide, then a beat of silence before he speaks
-- **Mobile Optimization:** Dust puff cut on Low LOD
+- **Performance Optimization:** Dust puff cut on Low LOD
 
 ---
 
@@ -682,11 +682,10 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 for environment and characters; ASTC 4x4 for `composers_cart_items.png` and `composers_cart_ui.png` — paper-format silhouettes and notation detail must stay legible at inventory scale. PVRTC 4BPP fallback.
-- **Android:** ETC2 with alpha across all sheets
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for environment and characters; uncompressed for `composers_cart_items.png` and `composers_cart_ui.png` — paper-format silhouettes and notation detail must stay legible at inventory scale, with alpha across all sheets
 - **Fallback:** PNG high quality for `composers_cart_props.png` — fine notation and foxing gradients degrade badly under aggressive compression
 
 ### Texture Atlases:
@@ -696,7 +695,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 | composers_cart_characters | Herr Notenschreiber, performers & bros | 512x512 |
 | composers_cart_items_fx | items, effects, UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -842,7 +841,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 | 6 | composers_cart_effects.png | 256x192 |
 | 7 | composers_cart_ui.png | 256x288 |
 
-**Total Estimated Memory:** ~4.1 MB (1,028,096 px uncompressed RGBA); ~1.1 MB after ETC2/ASTC compression — comfortably inside the 25 MB profile budget
+**Total Estimated Memory:** ~4.1 MB (1,028,096 px uncompressed RGBA); ~1.1 MB after VRAM compression — comfortably inside the 25 MB profile budget
 
 ---
 
@@ -899,7 +898,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - [ ] Prices read as fair and posted — he is not a scammer, and the art must not imply one
 - [ ] The humming mini-game is fully playable without audio or colour
 - [ ] Hidden content (rare-stock drawer, Forbidden Opus, made-up-tune quest trigger) has discoverable visual cues
-- [ ] Mobile performance optimized (CPU particles only, 10-draw-call ceiling, three atlas binds, baked busker silhouettes)
+- [ ] Performance optimized (CPU particles only, 10-draw-call ceiling, three atlas binds, baked busker silhouettes)
 - [ ] Touch zone sizing considered (44px minimum for item rows, tune chips, pitch slider, selfie prompt)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -916,7 +915,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 | Seedy Underbelly Present | ❌ | Profile explicitly rules it out: "Prices remain fair (he's not a scammer, just disappointed)." No vice or exploitation operation exists here. Nearest element is a ten-minute humming ban, which costs nothing. Flagged for owner — this location is intentionally benign |
 | Gameplay Value Established | ✅ | 13-item rhythm-buff shop across three tiers, humming mini-game with eight outcomes, Patron of the Arts progression, quiz and request systems, four quests, six achievements, three selfie variants |
 | Technical Feasibility | ✅ | Seven sheets, three atlases, three LOD tiers, no sub-scenes, baked parallax buskers, CPU particles only |
-| Mobile Performance Budget | ✅ | 60 FPS / 10 draw calls / 25 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
+| Performance Budget | ✅ | 60 FPS / 10 draw calls / 25 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
 | Accessibility Features | ✅ | Visual glyphs for all twelve audio cues including the constant metronome tick; the humming mini-game is fully playable without audio or colour via waveform contour; static/reduced-motion variants for flutter, metronome, dust, ink, avalanche, parallax |
 | No Crypto Elements | ✅ | None present, and the profile explicitly confirms "No crypto elements (Pure musical snobbery)" |
 | Social Media Integration | ✅ | Three documented selfie variants with unlock conditions, six screenshot moments, eleven quotable lines |

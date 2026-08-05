@@ -320,11 +320,10 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); item sprites kept higher quality for shop browser readability
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) item sprites kept higher quality for shop browser readability
 - **Fallback:** PNG high quality for UI panels and item icons (detail-critical at small sizes)
 
 ### Texture Atlases:
@@ -334,7 +333,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 | munchies_characters | Věra states, customer NPCs | 1024x512 |
 | munchies_items_ui | item sprites, UI elements, lighting effects | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -496,7 +495,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 ### Quality Checkpoints:
 - [ ] Desperation pricing satire is clear throughout (honest signage, tax alerts)
 - [ ] Four shop sections are visually distinct and navigable
-- [ ] Mobile performance optimized (static heat lamp fallback, simplified lighting)
+- [ ] Performance optimized (static heat lamp fallback, simplified lighting)
 - [ ] Touch zone sizing considered (44px minimum for shop browser and interactions)
 - [ ] Colorblind-friendly alternatives for all quality/status indicators
 - [ ] Social media viral potential maximized (Věra portrait, Desperation Tax alert compositions)

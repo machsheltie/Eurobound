@@ -319,7 +319,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 - **Trigger:** Constant while location loaded
 - **Purpose:** The whole building's identity — and the source of the dizziness
 - **Audio Sync:** Blade whoosh on each 90° position pass
-- **Mobile Optimization:** Static blade shadows on older devices (profile-mandated)
+- **Performance Optimization:** Static blade shadows on older devices (profile-mandated)
 
 ### Millstone Grinding (Sheet 3):
 - **Duration:** 2 seconds per cycle (4 frames at 2 FPS)
@@ -328,7 +328,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 - **Trigger:** Constant on grinding floor
 - **Purpose:** The windmill actually works; the floor actually vibrates
 - **Audio Sync:** Grinding rumble loop locked to cycle; low-frequency emphasis
-- **Mobile Optimization:** Simplified grinding animation (2 frames) on older devices
+- **Performance Optimization:** Simplified grinding animation (2 frames) on older devices
 
 ### Floor Vibration (Sheets 3, 8):
 - **Duration:** 0.3-second shake bursts every 2 seconds while grinding
@@ -337,7 +337,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 - **Trigger:** Grinding active (first floor); echoes faintly in tasting room
 - **Purpose:** Tourists grab rails; beer ripples; history is felt
 - **Audio Sync:** Rumble peak on each burst
-- **Mobile Optimization:** Overlay only, no ripple, on Low LOD
+- **Performance Optimization:** Overlay only, no ripple, on Low LOD
 
 ### Yeast Golem Rising (Sheet 5):
 - **Duration:** 3 seconds (4 frames at ~1.3 FPS), single play
@@ -346,7 +346,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 - **Trigger:** Boss encounter start on grinding floor
 - **Purpose:** "From the accumulated flour and forgotten yeast cultures, something RISES."
 - **Audio Sync:** Reversed, slowed bread-baking sounds building to a boom on frame 4
-- **Mobile Optimization:** 2 dust swirls on Low LOD
+- **Performance Optimization:** 2 dust swirls on Low LOD
 
 ### Golem Expansion (Sheet 6):
 - **Duration:** 1.5 seconds per expansion (3 frames at 2 FPS), every 3 turns in Phase 2
@@ -355,7 +355,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 - **Trigger:** Phase 2 turn counter
 - **Purpose:** Over-proofing readability — bigger, stronger, slower
 - **Audio Sync:** Dough stretch squelch on each frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Final Rise & Collapse (Sheet 6):
 - **Duration:** Charge 4 seconds (2 game turns, 3 frames looping at 1 FPS); Collapse 2.5 seconds (4 frames at ~1.6 FPS), single play
@@ -364,7 +364,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 - **Trigger:** Phase 3 script
 - **Purpose:** Climax and punchline — the boss becomes bread
 - **Audio Sync:** Rising oven-timer tick during charge; soft "poof" + oven ding on collapse frame 4
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Tasting Room Spin (Sheets 4, 8):
 - **Duration:** Continuous; intensity ramps with Spin Meter (0-5 beers) over the flight
@@ -373,7 +373,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 - **Trigger:** Each flight beer consumed
 - **Purpose:** Each beer makes the spinning more noticeable; the building doesn't help
 - **Audio Sync:** Room-spin audio effect layers in per beer (profile audio design)
-- **Mobile Optimization:** Vignette-only (no warp shader) on Low LOD; fully disabled in reduced-motion mode
+- **Performance Optimization:** Vignette-only (no warp shader) on Low LOD; fully disabled in reduced-motion mode
 
 ### Selfie Blade Timing (Sheet 4):
 - **Duration:** 4-second blade sweep loop (4 frames at 1 FPS); shutter window 0.5 seconds on frame 2
@@ -382,7 +382,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 - **Trigger:** Selfie Spot Marker interaction (post-boss)
 - **Purpose:** Timing mini-game; wind factor option adds hair chaos overlay
 - **Audio Sync:** Camera shutter on tap; wind howl constant at blade level
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -418,11 +418,10 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); chalkboard and signage need higher quality (readable text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); chalkboard and signage need higher quality (readable text)
 - **Fallback:** PNG high quality for boss sheets (phase silhouettes are gameplay-critical)
 
 ### Texture Atlases:
@@ -432,7 +431,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 | molen_boss | golem battle + phases | 2048x1024 |
 | molen_characters_ui | NPC cast, items/effects/UI | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -590,7 +589,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (heritage commodification, reverence vs. dizziness)
 - [ ] Hidden areas/interactions have discoverable visual cues (blade level unlock, opener purchase option)
-- [ ] Mobile performance optimized (CPU particles, atlas limits, per-floor scene loading)
+- [ ] Performance optimized (CPU particles, atlas limits, per-floor scene loading)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (glass shapes, weakness flash)
 - [ ] Social media viral potential maximized in composition choices (golem expansion framing, selfie results)
@@ -607,7 +606,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 | Seedy Underbelly Present | ✅ | 40 Sovs flights in a disorientation machine, comprehensive liability waivers, gift shop funnel |
 | Gameplay Value Established | ✅ | Boss battle, tasting/Spin Meter system, endurance speech, selfie mini-game, opener gating |
 | Technical Feasibility | ✅ | Per-floor scenes, shared rotation driver, shader spin, CPU particles documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 42 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, 18 draw calls, 42 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion spin disable, 44px zones |
 | No Crypto Elements | ✅ | Pure traditional brewing; Tier of tech gimmicks absent per profile |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |

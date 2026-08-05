@@ -275,7 +275,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Constant at machine; burst on each order pulled
 - **Purpose:** Terrace's visual heartbeat; signals Wouter is working
 - **Audio Sync:** Machine hiss peak on frame 1 of each burst
-- **Mobile Optimization:** Half particle count on Medium, none ambient on Low
+- **Performance Optimization:** Half particle count on Medium, none ambient on Low
 
 ### Awning Flutter (Sheet 1):
 - **Duration:** 3-second gentle cycle (2 frames at ~0.7 FPS)
@@ -284,7 +284,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Constant (canal breeze)
 - **Purpose:** Ambient life without motion noise
 - **Audio Sync:** None
-- **Mobile Optimization:** Static awning on low-end devices (profile-mandated)
+- **Performance Optimization:** Static awning on low-end devices (profile-mandated)
 
 ### Canal Reflections (Sheets 2, 6):
 - **Duration:** 4-second crossfade loop (2 strips)
@@ -293,7 +293,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Constant
 - **Purpose:** "Canal water reflections dancing on everything"
 - **Audio Sync:** Water lapping bed
-- **Mobile Optimization:** Simplified reflections on older devices (profile-mandated)
+- **Performance Optimization:** Simplified reflections on older devices (profile-mandated)
 
 ### Havok Tail Wag (Sheet 5):
 - **Duration:** 1-second wag (2 frames at 2 FPS); frequency scales with mission excitement
@@ -302,7 +302,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Dialogue state (mission excitement variable)
 - **Purpose:** The tell that breaks the cover — subtle enough that bros miss it
 - **Audio Sync:** None (silence is the joke)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Wouter's Sigh (Sheets 4, 6):
 - **Duration:** 2 seconds (4 body frames at 2 FPS + 2-frame cloud)
@@ -311,7 +311,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Bad order (Heineken, iced espresso, "venti")
 - **Purpose:** Bravado-damage feedback with comedic weight
 - **Audio Sync:** Seismic sigh sample on frame 3
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Margot Appear/Disappear (Sheet 4):
 - **Duration:** 1.5 seconds (3 frames at 2 FPS with alpha fade)
@@ -320,7 +320,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Random 30-90s after order; check requests ignored
 - **Purpose:** "Appears and disappears on unknowable schedule"
 - **Audio Sync:** Chair scrape on cobblestone at appearance
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Bicycle Pass (Sheet 2):
 - **Duration:** 8-second background loop (4 frames across traverse)
@@ -329,7 +329,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Constant loop, varying start offsets
 - **Purpose:** Constant bicycle menace, Shamsterdam baseline threat
 - **Audio Sync:** Bell ding 0.5s before sprite reaches screen center
-- **Mobile Optimization:** Loop paused on Low LOD
+- **Performance Optimization:** Loop paused on Low LOD
 
 ### Pigeon Behavior (Sheet 2):
 - **Duration:** Idle 2s / peck 1.5s / alarmed 0.5s cycles
@@ -338,7 +338,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Random placement near crumbs; Havok dialogue events
 - **Purpose:** Havok watches them suspiciously — they gather near his table
 - **Audio Sync:** Ominous coo (per profile audio) on suspicious frame
-- **Mobile Optimization:** Max 2 pigeons on Low LOD
+- **Performance Optimization:** Max 2 pigeons on Low LOD
 
 ---
 
@@ -374,11 +374,10 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); chalkboard menu and newspaper headline need higher quality (readable gag text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); chalkboard menu and newspaper headline need higher quality (readable gag text)
 - **Fallback:** PNG high quality for Havok table props (tell-spotting depends on detail)
 
 ### Texture Atlases:
@@ -388,7 +387,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | cafe_characters | staff, Havok/regulars | 1024x1024 |
 | cafe_props_ui | table props, effects, UI | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -544,7 +543,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (service culture clash, performative sophistication)
 - [ ] Hidden areas/interactions have discoverable visual cues (Havok gesture, readable headline, pigeon behavior)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (judgment icons, meter positions)
 - [ ] Social media viral potential maximized in composition choices (Havok table as hero shot)
@@ -561,7 +560,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Seedy Underbelly Present | ✅ | 8 Sovs croissants, systematic overcharging, communal illegal ashtray, coffeeshop smoke drift |
 | Gameplay Value Established | ✅ | Quest hub (Fabergé Egg Hunt), consumables, Bravado mechanics, Couchsurf hook, ambient storytelling |
 | Technical Feasibility | ✅ | Single outdoor scene, parallax layers, CanvasModulate time-of-day documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for bell/sigh/boat/hiss audio, reduced-motion statics, 44px zones |
 | No Crypto Elements | ✅ | Pure espresso-and-judgment commerce |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |

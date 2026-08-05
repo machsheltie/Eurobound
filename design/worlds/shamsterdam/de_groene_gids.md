@@ -60,7 +60,7 @@
 - **Lighting Setup**: Green neon throughout, backlit menu boards, display case spotlights, atmospheric haze filter
 - **Particle Systems**: Smoke haze (heavy, constant), neon glow, dust motes in light beams
 - **Animation Elements**: Digital menu scrolling, smoke wisps, employees sighing, tourist heads swiveling at menu
-- **Mobile Optimization**: Simplified smoke particles, static menu boards, reduced haze density on older devices
+- **Performance Optimization**: Simplified smoke particles, static menu boards, reduced haze density on older devices
 
 ## Satirical Design
 ### Theme & Vibe

@@ -70,7 +70,7 @@
 - **Lighting Setup**: Green neon underglow, backlit bottles, mysterious shadows
 - **Particle Systems**: Dry ice fog, green sparkle effect, "fairy" particle hint
 - **Animation Elements**: Absinthe pour, water drip ritual, sugar cube dissolve
-- **Mobile Optimization**: Simplified fog effect, static bottle glow
+- **Performance Optimization**: Simplified fog effect, static bottle glow
 
 ## Satirical Design
 ### Theme & Vibe

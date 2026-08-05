@@ -64,7 +64,7 @@
 - **Lighting Setup**: Natural harbor light, reflective ice glow, maritime atmosphere
 - **Particle Systems**: Sea mist, fish scale glint, onion vapors
 - **Animation Elements**: Fish preparation, customer swallowing animation, seagull hovering
-- **Mobile Optimization**: Simplified water effects, static seagulls, reduced particle count
+- **Performance Optimization**: Simplified water effects, static seagulls, reduced particle count
 
 ## Satirical Design
 ### Theme & Vibe

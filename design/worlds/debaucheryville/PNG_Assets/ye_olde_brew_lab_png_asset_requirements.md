@@ -326,20 +326,19 @@ All atmospheric particle systems and environmental storytelling:
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 **Frame Rate Target:** 60 FPS  
 **Memory Footprint:** 45MB maximum  
 **Draw Calls:** Maximum 18  
-**Mobile Optimization:** 
+**Performance Optimization:** 
 - Simplified vat reflections on older devices
 - Reduced hologram particle count
 - Static LED pathways on low-end hardware
 - Potato mode: Basic sprites, no particles, no environmental effects
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); console interface text kept higher quality for mini-game readability
-- **Android:** ETC2 with alpha for hologram transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) console interface text kept higher quality for mini-game readability with alpha for hologram transparency
 - **Fallback:** PNG high quality for buzzword text and blockchain label details
 
 ### Texture Atlases:
@@ -349,7 +348,7 @@ All atmospheric particle systems and environmental storytelling:
 | brew_lab_characters | robotic bartender, BrewBot boss, Fermenting Algorithm | 1024x1024 |
 | brew_lab_fx_ui | flavor console interface, environmental effects | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -482,7 +481,7 @@ All atmospheric particle systems and environmental storytelling:
 - Animation system: Frame-based with JSON timing data from sprites.json
 - Particle systems: CPUParticles2D for mobile performance optimization
 
-### Mobile Optimization Strategy:
+### Performance Strategy:
 - **High-end devices**: Full particle effects, complex animations, vat reflections
 - **Mid-range devices**: Reduced particle count, simplified LED pathways
 - **Low-end devices**: Static pathways, minimal particles, no reflections
@@ -555,7 +554,7 @@ All atmospheric particle systems and environmental storytelling:
 ### Quality Checkpoints:
 - [ ] Tech startup satire is clear throughout ("failed ICO pivots to brewing" narrative)
 - [ ] Hidden Algorithm Archive entrance has discoverable visual cues post-boss
-- [ ] Mobile performance optimized (CPUParticles2D, atlas limits, potato mode)
+- [ ] Performance optimized (CPUParticles2D, atlas limits, potato mode)
 - [ ] Touch zone sizing considered (44px minimum for ingredient slots and console)
 - [ ] Colorblind-friendly alternatives for gauge and buzzword states
 - [ ] Social media viral potential maximized (poster wall, BrewBot meltdown compositions)
@@ -572,7 +571,7 @@ All atmospheric particle systems and environmental storytelling:
 | Seedy Underbelly Present | ✅ PASS | Random number generator sold as revolutionary AI brewing |
 | Gameplay Value Established | ✅ PASS | Boss battle, taste profile mini-game, vendor, brewery tour finale |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented (LOD, atlases, potato mode) |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 18 draw calls, 45MB |
+| Performance Budget | ✅ PASS | 60 FPS, 18 draw calls, 45MB |
 | Accessibility Features | ✅ PASS | Pattern-based gauge, text-based buzzwords, visual audio cues |
 | No Crypto Elements | ✅ PASS | Crypto content is the established satirical target of this location's source material |
 | Social Media Integration | ✅ PASS | BrewBot quotes, poster wall, foam explosion moments |

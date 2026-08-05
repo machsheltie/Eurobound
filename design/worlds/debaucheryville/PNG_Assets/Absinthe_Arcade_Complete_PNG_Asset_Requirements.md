@@ -321,7 +321,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - **Pattern:** Off → Dim (Frame 1) → Medium (Frame 2) → Bright (Frame 3) → Medium → Dim → Off
 - **Coverage:** Approximately 20% of tiles active at any time
 - **Purpose:** Disorienting atmosphere, creates "something's wrong" feeling
-- **Mobile Optimization:** Reduce active percentage to 10% on low-end devices
+- **Performance Optimization:** Reduce active percentage to 10% on low-end devices
 
 ### Arcade Cabinet Screen Flicker:
 - **Duration:** 2-second intervals between flicker events
@@ -335,7 +335,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - **Pattern:** Solid fairy → Dissolving edges → Circuit corruption visible → Reform to solid
 - **Parallax:** All 4 layers move at different speeds during player movement
 - **Purpose:** Psychedelic atmosphere, reality breakdown visualization
-- **Mobile Optimization:** Can use 2-layer simplified version
+- **Performance Optimization:** Can use 2-layer simplified version
 
 ### Absinthe Bottle Bar Glow:
 - **Duration:** 4-frame pulse, 3 seconds total cycle
@@ -349,7 +349,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - **Pattern:** Player moves → Mirror reflection updates 0.2s later
 - **Technical:** Duplicate player sprite with transform delay shader
 - **Purpose:** Subtle wrongness feeling, reality distortion theme
-- **Mobile Optimization:** Disable on devices below medium settings
+- **Performance Optimization:** Disable on devices below medium settings
 
 ### Rigged Claw Machine Physics:
 - **Duration:** Variable based on player input timing
@@ -391,11 +391,10 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for green glow effects, maintains toxic aesthetic
-- **Android:** ETC2 with alpha for mist particle transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for green glow effects, maintains toxic aesthetic with alpha for mist particle transparency
 - **Fallback:** PNG high quality for mural parallax detail
 
 ### Sprite Atlasing Strategy:
@@ -403,7 +402,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - **Arcade Machines Atlas:** All cabinets + claw machine (2048x1024)
 - **Mural Parallax Atlas:** 4 layers separate for parallax effect (1024x512)
 - **Environmental Effects Atlas:** Bar + seating + particles (1024x512)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full particle systems, parallax mural, mirror lag effect
@@ -424,7 +423,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Parallax layers: Use ParallaxBackground and ParallaxLayer nodes
-- Particle systems: CPUParticles2D for mobile optimization (not GPU particles)
+- Particle systems: CPUParticles2D for performance (not GPU particles)
 - Mirror effect: Custom shader with position delay, or sprite duplication with offset
 - Floor tile system: TileMap with animated tiles, random activation script
 
@@ -574,7 +573,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - [ ] Environmental effects support tourist trap atmosphere
 - [ ] Hidden areas (bathroom entrance, brewery passage) have discoverable visual cues
 - [ ] Nostalgic corruption theme is clear throughout all assets
-- [ ] Mobile performance optimized (particle systems use CPU, not GPU)
+- [ ] Performance optimized (particle systems use CPU, not GPU)
 - [ ] All elements support "childhood corrupted" satire consistently
 - [ ] Social media viral potential maximized in composition choices
 - [ ] Touch zone sizing considered for interactive elements (44px minimum)
@@ -592,7 +591,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 | Seedy Underbelly Present | ✅ PASS | Rigged games, overpriced tokens |
 | Gameplay Value Established | ✅ PASS | NFT hunt, brewery access, minigames |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 15 draw calls, 50MB |
+| Performance Budget | ✅ PASS | 60 FPS, 15 draw calls, 50MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | Beer Pong Saint Relic NFT is satirical and established in source material; no functional crypto |
 | Social Media Integration | ✅ PASS | Multiple viral moments identified |

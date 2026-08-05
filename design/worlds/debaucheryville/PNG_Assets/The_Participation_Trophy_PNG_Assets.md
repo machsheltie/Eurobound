@@ -302,7 +302,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - **Trigger:** Player confirms a prize
 - **Purpose:** The ceremony of receiving garbage, played completely straight
 - **Audio Sync:** Ticket shuffle during count, hollow "congratulations" fanfare on handoff, single ironic sparkle
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Ticket Counting:
 - **Duration:** 2 seconds loop while tallying
@@ -311,7 +311,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - **Trigger:** Player presents tickets
 - **Purpose:** The pause where hope does math
 - **Audio Sync:** Paper-flick tick per counted batch
-- **Mobile Optimization:** Skip close-up, show total directly on Low LOD
+- **Performance Optimization:** Skip close-up, show total directly on Low LOD
 
 ### The Math Moment:
 - **Duration:** 1.5 seconds
@@ -320,7 +320,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - **Trigger:** Player selects "do the math" dialogue option
 - **Purpose:** The speedrun through the stages of grief
 - **Audio Sync:** Record scratch exactly on the freeze-frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Yolanda's Sigh Retreat:
 - **Duration:** 5 seconds
@@ -329,7 +329,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - **Trigger:** Idle timer
 - **Purpose:** Seven years of this, in one repeating gesture
 - **Audio Sync:** One audible sigh at the pose apex
-- **Mobile Optimization:** Sigh pose only, no walk, on Low
+- **Performance Optimization:** Sigh pose only, no walk, on Low
 
 ### Hollow Confetti:
 - **Duration:** 1.2 seconds
@@ -338,7 +338,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - **Trigger:** Redemption confirm
 - **Purpose:** Celebration, technically
 - **Audio Sync:** Faint party-horn wheeze
-- **Mobile Optimization:** None needed (it is already the reduced version — that is the joke)
+- **Performance Optimization:** None needed (it is already the reduced version — that is the joke)
 
 ### Hamstradamus Pass-By:
 - **Duration:** 6 seconds
@@ -347,7 +347,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - **Trigger:** Random timer while player is at the booth
 - **Purpose:** Meta-commentary cameo; occasionally hints at corndog Nausea odds
 - **Audio Sync:** Tiny mystical chime on the Prophecy Pose
-- **Mobile Optimization:** Event disabled on Low LOD
+- **Performance Optimization:** Event disabled on Low LOD
 
 ### Bobblehead Wobble:
 - **Duration:** 2 seconds decay
@@ -356,7 +356,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - **Trigger:** Player interacts with the Hamstradamus Bobblehead
 - **Purpose:** Budget prophecy; occasionally "speaks" (text bubble)
 - **Audio Sync:** Spring boing at wobble start
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -398,11 +398,10 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 — trophy_ui.png at ASTC 4x4 (math text must stay crisp)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — trophy_ui.png kept uncompressed (math text must stay crisp)
 - **Fallback:** PNG high quality for signage regions (all the jokes are text)
 
 ### Texture Atlases:
@@ -412,7 +411,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 | trophy_characters | yolanda, circus npcs | 1024x512 |
 | trophy_items_ui | prize items, effects, ui, accessibility | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -574,7 +573,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 ### Quality Checkpoints:
 - [ ] Satirical theme (systemic disappointment, deadpan-distributed) is clear throughout all assets
 - [ ] Hidden details discoverable: empty tip jar, 2003 belt tag ghost, dust gradient economy, sincere kazoo kid
-- [ ] Mobile performance optimized (collapsed prize wall on small screens, gated Premium Garbage, CPU particles)
+- [ ] Performance optimized (collapsed prize wall on small screens, gated Premium Garbage, CPU particles)
 - [ ] Touch zone sizing considered (44px minimum — counter and tier rows compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shelf/tag coding, swirl icons)
 - [ ] Social media viral potential maximized (math popup, walk-of-shame, grand shelf compositions)
@@ -591,7 +590,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 | Seedy Underbelly Present | ✅ | Money and time converted into certified garbage, by design |
 | Gameplay Value Established | ✅ | Ticket sink, item catalog with real (bad) stats, 4 quests, Frequent Loser progression, Bravado hooks |
 | Technical Feasibility | ✅ | 7 sheets, data-driven catalog, one presentation timeline — standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 60 FPS / 12 draw calls / 28 MB per profile; estimate ~13 MB |
+| Performance Budget | ✅ | 60 FPS / 12 draw calls / 28 MB per profile; estimate ~13 MB |
 | Accessibility Features | ✅ | Flash-free Math Moment path, glyphs for every stinger, oversized math text |
 | No Crypto Elements | ✅ | Tickets are paper and regret only (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

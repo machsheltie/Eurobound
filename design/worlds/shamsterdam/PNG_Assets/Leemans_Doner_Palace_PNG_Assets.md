@@ -119,7 +119,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - Towers 1-3 drawn with vertical symmetry so a 2-frame swap reads as continuous slow rotation (see Animation Specs)
 - Main sign and beacon base are separate from the storefront block so night glow (Sheet 6) can be additively blended without lighting the whole facade
 - Grease floor tile must seam cleanly on all four edges; it is the only tiled asset in the location
-- Menu board text baked in at 2x internal resolution for readability at gameplay zoom; keep on the ASTC 4x4 exception list
+- Menu board text baked in at 2x internal resolution for readability at gameplay zoom; keep on the uncompressed-texture exception list
 
 ---
 
@@ -424,7 +424,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - **Trigger:** Constant during open hours, all three towers offset by 1.0s so they never align
 - **Purpose:** The hypnotic 3 AM meat trinity; "fast rotation? Burned outside, raw inside. Patience."
 - **Audio Sync:** Continuous sizzle bed, amplitude gently tied to loop phase
-- **Mobile Optimization:** Low LOD drops blur plates and uses a single static frame per tower (profile requirement: simplified tower rotation)
+- **Performance Optimization:** Low LOD drops blur plates and uses a single static frame per tower (profile requirement: simplified tower rotation)
 
 ### Mehmet Carving Sequence (Sheets 3, 4, 6):
 - **Duration:** 4.8 seconds total (4 frames at 1.2s)
@@ -433,7 +433,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - **Trigger:** Any döner order; ambient idle version plays between customers
 - **Purpose:** Watching the master work is half the price of admission
 - **Audio Sync:** Knife-on-tower shave at 0.0s and 2.4s; meat-to-tray at 1.2s; foil crinkle at 4.8s
-- **Mobile Optimization:** Medium LOD reduces to 2 keyframes; Low LOD uses a single composed frame + serve
+- **Performance Optimization:** Medium LOD reduces to 2 keyframes; Low LOD uses a single composed frame + serve
 
 ### Pronunciation Challenge (Sheets 4, 6, 7):
 - **Duration:** 2.2 seconds (1.0s input window, 0.4s judgment beat, 0.8s reaction hold)
@@ -442,7 +442,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - **Trigger:** First order at this location, per save file
 - **Purpose:** The gap between thirty-two years of craft and thirty-two seconds of effort
 - **Audio Sync:** Player attempt at 0.0s; 0.4s of pure silence (comedy-critical); reaction line at 1.4s
-- **Mobile Optimization:** None needed (one-shot, cheap, never degraded)
+- **Performance Optimization:** None needed (one-shot, cheap, never degraded)
 
 ### Garlic Aura Application (Sheets 5 & 6):
 - **Duration:** 1.2s one-shot puff, then a 2.0s ring pulse loop for the status duration
@@ -451,7 +451,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - **Trigger:** Any döner (base 1 hour), extended to 3 hours with extra garlic
 - **Purpose:** NPCs step back 20% — the effect is social, so it must be visible
 - **Audio Sync:** Soft "whumph" on the puff; no loop audio (the silence is the joke)
-- **Mobile Optimization:** Low LOD holds ring frame 1 statically
+- **Performance Optimization:** Low LOD holds ring frame 1 statically
 
 ### Meat Sweats Onset (Sheets 5 & 6):
 - **Duration:** 2.0-second onset, then held shimmer for 30 minutes game-time
@@ -460,7 +460,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - **Trigger:** Triple Tower consumption, or excessive consumption in one visit
 - **Purpose:** +10% HP regen, -10% Speed, 100% earned
 - **Audio Sync:** Low sustained hum on onset only
-- **Mobile Optimization:** Shimmer cycle at half rate on Low LOD; disabled entirely in reduced-motion mode
+- **Performance Optimization:** Shimmer cycle at half rate on Low LOD; disabled entirely in reduced-motion mode
 
 ### Beacon & Interior Flicker (Sheet 6):
 - **Duration:** Fluorescent flicker 0.4s burst roughly every 45s; beacon cone 4.0s breathe
@@ -469,7 +469,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - **Trigger:** Clock-based, 8 PM - 5 AM
 - **Purpose:** The bright box in the dark that pulls the whole street toward it
 - **Audio Sync:** Faint ballast buzz on flicker
-- **Mobile Optimization:** Both static on Low LOD; disabled in reduced-motion mode
+- **Performance Optimization:** Both static on Low LOD; disabled in reduced-motion mode
 
 ### Triple Tower Completion (Sheets 3, 4, 7):
 - **Duration:** 2.4 seconds (1.0s final bite, 0.4s pause, 1.0s Mehmet nod + badge)
@@ -478,7 +478,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - **Trigger:** Triple Tower eaten to completion in a single visit
 - **Purpose:** "You have warrior spirit. Come back." — the highest available honor
 - **Audio Sync:** Foil crumple at 0.0s; silence 1.0-1.4s; low approving grunt at 1.4s; badge chime at 2.0s
-- **Mobile Optimization:** Glint replaced by instant badge award in reduced-motion mode
+- **Performance Optimization:** Glint replaced by instant badge award in reduced-motion mode
 
 ---
 
@@ -520,11 +520,10 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); menu board, cross-section diagram, and all portraits at ASTC 4x4 (readable text and faces)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) menu board, cross-section diagram, and all portraits kept uncompressed (readable text and faces)
 - **Fallback:** PNG high quality for `leemans_interior_main.png` (scene-detail critical)
 
 ### Texture Atlases:
@@ -534,7 +533,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | leemans_characters | npc_mehmet_elif, npc_leemans_customers | 1024x1024 |
 | leemans_fx_ui | leemans_food_items, leemans_effects, leemans_ui | 1024x1024 |
 
-*(leemans_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(leemans_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -694,7 +693,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (the craft is honored; only the customer is the joke)
 - [ ] Hidden areas/interactions have discoverable visual cues (sauce shape-coding, Regular status recognition, rare-approval portrait)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, static tower fallback, pre-composed crowd blocks)
+- [ ] Performance optimized (CPU particles, atlas limits respected, static tower fallback, pre-composed crowd blocks)
 - [ ] Touch zone sizing considered (44px minimum for meat/bread/sauce options and the pronunciation input)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (sauce container shapes, meat silhouettes, stepped pronunciation meter)
 - [ ] Social media viral potential maximized in composition choices (tower bank framing, cross-section diagram, aura recoil staging)
@@ -711,7 +710,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Seedy Underbelly Present | ✅ | Enabling 3 AM decisions, post-club exploitation-by-positioning, garlic consequences you'll carry for days |
 | Gameplay Value Established | ✅ | Ordering system, pronunciation mini-game, two status effects, Triple Tower challenge, debate quest entry |
 | Technical Feasibility | ✅ | Static tower/steam fallbacks per profile; overlay-based glow; pre-composed crowd blocks |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 14 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 14 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all seven audio cues, reduced-motion set, high-contrast silhouettes, 44px touch zones |
 | No Crypto Elements | ✅ | Pure meat mastery; the only currency is Sovs and Mehmet's opinion |
 | Social Media Integration | ✅ | 5 screenshot moments + 6 quotable lines identified |

@@ -89,7 +89,7 @@
 - **Lighting Setup**: Moody spots, mirror lighting, dramatic shadows
 - **Particle Systems**: Dust motes in light beams, leather sheen
 - **Animation Elements**: Customer browsing, trying on jackets, mirror assessment
-- **Mobile Optimization**: Simplified lighting, static mannequins
+- **Performance Optimization**: Simplified lighting, static mannequins
 
 ## Satirical Design
 ### Theme & Vibe

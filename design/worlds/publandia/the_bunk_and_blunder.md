@@ -87,7 +87,7 @@
 - **Lighting Setup**: Harsh fluorescent, one broken bulb flickers constantly
 - **Particle Systems**: Dust in light beams, steam from showers, mysterious floating particles
 - **Animation Elements**: Snoring NPCs, restless sleepers, shower queue shuffling
-- **Mobile Optimization**: Simplified dorm crowds, static snoring indicators
+- **Performance Optimization**: Simplified dorm crowds, static snoring indicators
 
 ## Satirical Design
 ### Theme & Vibe

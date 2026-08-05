@@ -472,11 +472,10 @@ assets/sprites/locations/debaucheryville/internet_history_museum/
 
 ---
 
-## 📱 Mobile Optimization Requirements
+## 📱 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for CRT glow effects and particle transparency
-- **Android:** ETC2 with alpha for dust motes and status indicators
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for CRT glow effects and particle transparency with alpha for dust motes and status indicators
 - **Fallback:** PNG high quality for text readability and fine detail
 
 ### Sprite Atlasing Strategy:
@@ -485,7 +484,7 @@ assets/sprites/locations/debaucheryville/internet_history_museum/
 - **NPC Atlas:** Curator + guard + contact + animatronic + visitors (512x384)
 - **Particle Effects Atlas:** Dust + static + sparkles + status indicators (512x256)
 - **UI Elements Atlas:** Icons + achievements + plaques + prompts (512x256)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full CRT flicker effects, all dust particles, complete animations
@@ -675,7 +674,7 @@ assets/sprites/locations/debaucheryville/internet_history_museum/
 - [ ] NPCs convey "psychological damage tourism" satire
 - [ ] Environmental effects support weaponized nostalgia theme
 - [ ] Academic reverence for digital garbage feels appropriately absurd
-- [ ] Mobile performance optimized for multiple CRT effects
+- [ ] Performance optimized for multiple CRT effects
 - [ ] All elements support "cursed yearbook" atmosphere
 - [ ] Social media viral potential maximized
 - [ ] Museum satire precision targets nostalgia exploitation not legitimate history
@@ -711,7 +710,7 @@ assets/sprites/locations/debaucheryville/internet_history_museum/
 | Seedy Underbelly Present | ✅ PASS | Psychological damage sold as education; hidden black market |
 | Gameplay Value Established | ✅ PASS | Quest hub, status effect exhibits, 3:33 AM puzzle, lore |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 20 draws, 48MB |
+| Performance Budget | ✅ PASS | 60 FPS, 20 draws, 48MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | None present |
 | Social Media Integration | ✅ PASS | Viral moments identified |

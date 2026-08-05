@@ -308,7 +308,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - **Trigger:** Player crosses the door
 - **Purpose:** Zdeněk clocks you the moment you enter — the shop knows why you're here before you do
 - **Audio Sync:** Bell chime at 0.0s over the rock music bed
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Jacket Try-On:
 - **Duration:** 3.5 seconds
@@ -317,7 +317,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - **Trigger:** Player equips an item from the browser
 - **Purpose:** The transformation fantasy, embodied — each layer lands with physical feedback
 - **Audio Sync:** Curtain slide, jacket zip on the motion lines, boot thud on the impact ring
-- **Mobile Optimization:** Silhouette phase skipped on Low LOD (instant swap)
+- **Performance Optimization:** Silhouette phase skipped on Low LOD (instant swap)
 
 ### The Mirror Moment:
 - **Duration:** 4 seconds
@@ -326,7 +326,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - **Trigger:** Player at Mirror Wall with a qualifying outfit
 - **Purpose:** The before/after IS the product — "standing differently" rendered literally
 - **Audio Sync:** Satirical transformation sting (per profile) peaking on the flash
-- **Mobile Optimization:** Cross-fade shortens to 0.75s; flash retained (it is the payoff)
+- **Performance Optimization:** Cross-fade shortens to 0.75s; flash retained (it is the payoff)
 
 ### Leather Sheen Sweep:
 - **Duration:** 8 seconds loop
@@ -335,7 +335,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - **Trigger:** Constant ambient
 - **Purpose:** The wall of jackets breathes; the merchandise looks alive and expensive
 - **Audio Sync:** None
-- **Mobile Optimization:** Off on Low LOD
+- **Performance Optimization:** Off on Low LOD
 
 ### 2 AM Lighting Shift:
 - **Duration:** 60 seconds transition at 02:00, state holds until 05:00
@@ -344,7 +344,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - **Trigger:** In-game clock
 - **Purpose:** "2 AM purchases are the most honest" — the room gets intimate when the honest crowd arrives
 - **Audio Sync:** Music bed swaps to quieter classic rock; volume -4dB
-- **Mobile Optimization:** Stepped shift (3 keyframes) instead of continuous lerp
+- **Performance Optimization:** Stepped shift (3 keyframes) instead of continuous lerp
 
 ### Dust In The Beam:
 - **Duration:** 5 seconds loop
@@ -353,7 +353,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - **Trigger:** Constant ambient
 - **Purpose:** Moody industrial texture — the shop's stillness against the Arcade's chaos
 - **Audio Sync:** None
-- **Mobile Optimization:** Static decal on Low
+- **Performance Optimization:** Static decal on Low
 
 ### Morning-After Return (Event):
 - **Duration:** 6 seconds scene beat
@@ -362,7 +362,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - **Trigger:** Random morning event roll when player present
 - **Purpose:** The consequences NPC — "it made sense at 2 AM" walking past the player as a warning
 - **Audio Sync:** Quiet comedic sting on the shrug
-- **Mobile Optimization:** Event disabled on Low LOD
+- **Performance Optimization:** Event disabled on Low LOD
 
 ---
 
@@ -404,11 +404,10 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 — threads_equipment.png at ASTC 4x4 (dark-on-dark icons need edge fidelity)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — threads_equipment.png kept uncompressed (dark-on-dark icons need edge fidelity)
 - **Fallback:** PNG high quality for threads_ui.png and signage text
 
 ### Texture Atlases:
@@ -418,7 +417,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 | threads_characters | staff, customers | 1024x512 |
 | threads_items_ui | equipment, effects, ui, accessibility | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -585,7 +584,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 ### Quality Checkpoints:
 - [ ] Satirical theme (identity performance, affectionately understood) is clear throughout all assets
 - [ ] Hidden details discoverable: tucked-away soft section, '98 poster timeline, fitting room feet, morning-after event
-- [ ] Mobile performance optimized (modulate-based 2 AM state, zone-gated mirror viewport, batched browser)
+- [ ] Performance optimized (modulate-based 2 AM state, zone-gated mirror viewport, batched browser)
 - [ ] Touch zone sizing considered (44px minimum — staff, browser, and mirror zones compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (pip thresholds, glyph-coded stats)
 - [ ] Social media viral potential maximized (mirror moment, transformed trio, morning-after compositions)
@@ -602,7 +601,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 | Seedy Underbelly Present | ✅ | Selling "the them they want to be" at markup, 24 hours a day, to the freshly heartbroken |
 | Gameplay Value Established | ✅ | Primary equipment vendor: Defense stats, Cool Factor economy, mirror system, transformation mechanics, Bravado hooks |
 | Technical Feasibility | ✅ | 8 sheets, viewport mirror, modulate lighting, flag-based equipment — standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 60 FPS / 14 draw calls / 34 MB per profile; estimate ~17 MB |
+| Performance Budget | ✅ | 60 FPS / 14 draw calls / 34 MB per profile; estimate ~17 MB |
 | Accessibility Features | ✅ | Dark-shop hotspot outlines, flash-free mirror path, glyphs for every audio beat |
 | No Crypto Elements | ✅ | Pure leather and chain commerce (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

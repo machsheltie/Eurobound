@@ -690,7 +690,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Host spawn events (check-in, night visit, boss phases, "when needed and when not needed")
 - **Purpose:** He doesn't walk in. He is simply there. The signature dread-beat
 - **Audio Sync:** Soft chime begins on frame 1, resolves on frame 3 (paired glyph: Soft Chime Glyph 1–3)
-- **Mobile Optimization:** 2-frame version (skip frame 2) on low-end devices
+- **Performance Optimization:** 2-frame version (skip frame 2) on low-end devices
 
 ### Portrait Eye Tracking:
 - **Duration:** 0.2 seconds per gaze step (frame swap, no tween)
@@ -699,7 +699,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Player movement past any portrait
 - **Purpose:** The core ambient wrongness — cheap to run, impossible to unsee
 - **Audio Sync:** Sting on FIRST Lock per room entry only (paired glyph: Portrait Sting Flash)
-- **Mobile Optimization:** Update gaze at 0.4s intervals on low-end; static center frames in reduced-motion mode
+- **Performance Optimization:** Update gaze at 0.4s intervals on low-end; static center frames in reduced-motion mode
 
 ### Portrait Party Reveal (Royal Chamber):
 - **Duration:** Instant swap (0 seconds — a timed reveal, not an animation)
@@ -708,7 +708,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** "The Portrait Party" night event (Very Rare, Royal only)
 - **Purpose:** The game's best jump-scare-that-isn't: nothing moves, everything changed
 - **Audio Sync:** Sting on reveal; slow waltz resumes 1.5 seconds later, slightly slower than before
-- **Mobile Optimization:** None needed — static swap is already the optimized form
+- **Performance Optimization:** None needed — static swap is already the optimized form
 
 ### Sconce Dimming:
 - **Duration:** 0.8 seconds (lit → dimming → dark)
@@ -717,7 +717,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Player look direction
 - **Purpose:** The hallway pretends to sleep when watched
 - **Audio Sync:** None
-- **Mobile Optimization:** Static Sconce Set replaces behavior entirely in reduced-motion / Low LOD
+- **Performance Optimization:** Static Sconce Set replaces behavior entirely in reduced-motion / Low LOD
 
 ### 3AM Visit Sequence:
 - **Duration:** 4.5 seconds (three knocks over 1.5s → 3s waiting hold)
@@ -726,7 +726,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** "The Visit" night event (Common)
 - **Purpose:** The tentpole night event — comedy timing lives in the 3-second silence
 - **Audio Sync:** Door knock on each ripple; door creak if Answered; muffled "just checking in" during Waiting
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Footsteps in the Walls:
 - **Duration:** Matches player's step cadence exactly (sampled, typically 0.5s alternation)
@@ -735,7 +735,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** First night onward, hallways and Standard/Deluxe rooms
 - **Purpose:** Bradley's line made visible: "The footsteps match our walking patterns"
 - **Audio Sync:** Muffled in-wall footsteps sample-locked to player footfall audio; glyph IS the deaf-accessible cue
-- **Mobile Optimization:** Audio-only on Low LOD with subtitle cue "(footsteps, yours, inside the wall)"
+- **Performance Optimization:** Audio-only on Low LOD with subtitle cue "(footsteps, yours, inside the wall)"
 
 ### Hospitality Attacks (Boss — one spec each, shared timing):
 - **Duration:** 1.0 second per attack cast
@@ -744,7 +744,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Herr Gastfreund social-combat rotation: One More Night → Five-Star Service → The Guest Book → Checkout Denied
 - **Purpose:** Menace rendered as customer service; each attack is a hotel amenity weaponized
 - **Audio Sync:** One More Night: clock ticking wrong, accelerating; Five-Star Service: waltz swells (still too slow); The Guest Book: whispered testimonials; Checkout Denied: every door in the palace locking in sequence, distant to near
-- **Mobile Optimization:** Effect sprites render at half opacity without particle trails on Low LOD
+- **Performance Optimization:** Effect sprites render at half opacity without particle trails on Low LOD
 
 ### Sad Doorway Wave:
 - **Duration:** 2.4 seconds, looping until player leaves the garden
@@ -753,7 +753,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Player checkout / escape — final shot of the location
 - **Purpose:** The horror's last word is heartbreak. He'll miss you. He means it. That's the problem
 - **Audio Sync:** Slow waltz, solo music-box arrangement, fading with distance
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### First Guest Tearful Checkout:
 - **Duration:** 2.0 seconds
@@ -762,7 +762,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** "The First Guest" quest completion at the Original Checkout Desk
 - **Purpose:** 240 years of confusion resolving into the game's most sincere emotional beat
 - **Audio Sync:** Quill scratch, ledger thump, then the FIRST correctly-timed clock chime in the whole building (11:00, and for once it is actually 11:00)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Synchronized Guest Turn:
 - **Duration:** 0.6 seconds
@@ -771,7 +771,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Breakfast room entry with Other Guests present
 - **Purpose:** Three heads, one motion, zero comfort
 - **Audio Sync:** Fabric rustle in unison; waltz skips one beat
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Hospitality Engine Loop:
 - **Duration:** 1.2 second cycle
@@ -780,7 +780,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Basement discovery
 - **Purpose:** The truth has a heartbeat, and it's rated five stars
 - **Audio Sync:** Deep mechanical heartbeat; music box undertone; steam hiss per puff
-- **Mobile Optimization:** Steam disabled on Low LOD; gauge glow becomes static Active frame
+- **Performance Optimization:** Steam disabled on Low LOD; gauge glow becomes static Active frame
 
 ### Minibar Restock:
 - **Duration:** 0.4 seconds, single play
@@ -789,7 +789,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Random interval during room occupancy
 - **Purpose:** It restocks while you watch. That's the joke. That's the horror
 - **Audio Sync:** Single glass clink
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Eternal Fruit Gleam:
 - **Duration:** 0 seconds — one frame, permanent
@@ -798,7 +798,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Constant on every fruit basket in every tier
 - **Purpose:** Rule 8: The fruit is complimentary. The fruit is eternal
 - **Audio Sync:** None. The fruit is silent
-- **Mobile Optimization:** It is already perfect
+- **Performance Optimization:** It is already perfect
 
 ---
 
@@ -847,11 +847,10 @@ assets/sprites/locations/sinfonia/gilded_suite/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); portraits sheet needs ASTC 4x4 — pupil positions must survive compression or the whole location dies
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) portraits sheet stays uncompressed — pupil positions must survive compression or the whole location dies
 - **Fallback:** PNG high quality for `gilded_suite_portraits.png` and `herr_gastfreund.png` (eye detail is gameplay-critical)
 
 ### Texture Atlases:
@@ -861,7 +860,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | gilded_suite_characters | herr_gastfreund, npcs, portraits | 1024x1024 |
 | gilded_suite_effects_ui | effects, ui | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -1042,7 +1041,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets — rental-culture jokes visible without dialogue
 - [ ] Hidden areas/interactions have discoverable visual cues (fruit painting rim light, basement clue, lever outline)
-- [ ] Mobile performance optimized (CPU particles ≤12, atlas limits respected, 60 FPS / 18 draw calls / 45 MB honored)
+- [ ] Performance optimized (CPU particles ≤12, atlas limits respected, 60 FPS / 18 draw calls / 45 MB honored)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices (Portrait Party and doorway wave framed for capture)
@@ -1059,7 +1058,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Seedy Underbelly Present | ✅ | Surveillance-as-service, fabricated reviews, 240 years of guest entrapment, forged "historic" claims |
 | Gameplay Value Established | ✅ | Three-tier rest system, night events, optional dungeon, puzzle boss + social-combat boss, two unique reward items |
 | Technical Feasibility | ✅ | Eight sheets, atlas plan, LOD tiers, per-tier loading documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 45 MB, 12 particles (per profile) |
+| Performance Budget | ✅ | 60 FPS, 18 draw calls, 45 MB, 12 particles (per profile) |
 | Accessibility Features | ✅ | Visual glyph for every audio cue; static variants for all motion triggers; colorblind patterns |
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Portrait Party, morning close-up, House Rules, and Survived selfie identified |

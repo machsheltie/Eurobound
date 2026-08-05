@@ -341,7 +341,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - **Trigger:** Constant while location loaded
 - **Purpose:** "Slight swaying, adds to dreamlike purchasing haze" — the floor is water and the decision-making follows
 - **Audio Sync:** Rope creak at each sway extreme; canal lap layered under the whole cycle
-- **Mobile Optimization:** Static stall on Low LOD (profile-mandated static water and simplified stall)
+- **Performance Optimization:** Static stall on Low LOD (profile-mandated static water and simplified stall)
 
 ### Canal Lap Ripple (Sheet 1):
 - **Duration:** 2.5 seconds per cycle (3 frames at 1.2 FPS), continuous loop, phase-locked to the sway
@@ -350,7 +350,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - **Trigger:** Constant
 - **Purpose:** Grounds the floating stall as genuinely floating
 - **Audio Sync:** Soft lap bed at −20 dB, peaking with the sway extremes
-- **Mobile Optimization:** Single static frame on Low LOD (profile-mandated static water)
+- **Performance Optimization:** Single static frame on Low LOD (profile-mandated static water)
 
 ### Petal Fall & Pollen Drift (Sheets 2, 5):
 - **Duration:** Continuous emission; individual particles live 4-7 seconds
@@ -359,7 +359,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - **Trigger:** Constant while location loaded
 - **Purpose:** The beauty that closes the sale; the market is genuinely lovely and that is not the satire
 - **Audio Sync:** None (bird song and market murmur bed only)
-- **Mobile Optimization:** Petals 10 → 5 on Medium, all particles disabled on Low (profile-mandated reduced particles)
+- **Performance Optimization:** Petals 10 → 5 on Medium, all particles disabled on Low (profile-mandated reduced particles)
 
 ### Margriet's Presenting Gesture (Sheet 4):
 - **Duration:** 1.8 seconds (3 frames at ~1.7 FPS), single play
@@ -368,7 +368,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - **Trigger:** Player selects a variety in the browser UI
 - **Purpose:** A small ceremony performed over a brown lump; her sincerity is what makes the purchase happen
 - **Audio Sync:** Bulb rustle in the bin on frame 1; warm VO line lands on the hold
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Customs Deflect (Sheets 4, 5):
 - **Duration:** 2.4 seconds (3 frames at 1.25 FPS), single play, strict order
@@ -377,7 +377,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - **Trigger:** Player asks any customs, climate, or import question
 - **Purpose:** "The Margriet Method: answer the question you wish they'd asked" — the single most precise piece of characterisation in the location
 - **Audio Sync:** Brief audio hesitation (0.4 second gap in the market bed) on frame 1, then the deflection line over frame 3
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Bagging Sequence (Sheets 3, 4):
 - **Duration:** 2.4 seconds (Piet's 3 frames at 1.25 FPS + bag rustle lines), single play
@@ -386,7 +386,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - **Trigger:** Purchase confirm
 - **Purpose:** The transfer of hope into paper, performed with genuine care by someone who says nothing about it
 - **Audio Sync:** Paper rustle on frames 2-3; register chime on the inventory drop
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Bulb Burden Degradation (Sheet 3):
 - **Duration:** Instant state swaps at day thresholds; no in-frame animation
@@ -395,7 +395,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - **Trigger:** In-game day counter, independent of player action
 - **Purpose:** The item ages whether or not anyone looks at it — which is precisely what happens to real bulbs
 - **Audio Sync:** None
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Planting Epilogue (Sheet 3):
 - **Duration:** 8.0 seconds total (frames 1-4 at 1.5 seconds each, plus a 2-second hold on the outcome frame)
@@ -404,7 +404,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - **Trigger:** Post-credits or future-game reference
 - **Purpose:** The location's punchline, delivered months of game-time after the joke was set up
 - **Audio Sync:** Market ambience fades to domestic room tone across frames 1-3; frame 5 restores a single bird call
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -445,11 +445,10 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); the five signage sprites, the fine-print card, and the variety label plates need higher-quality blocks — every one of them is a text gag
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) the five signage sprites, the fine-print card, and the variety label plates need higher-quality blocks — every one of them is a text gag
 - **Fallback:** PNG-24 high quality for the signage band of `botanische_leugen_stall.png` (the 1637 plaque, the orphan asterisk, and the two tiny disclaimers) and for `leugen_bulb_displays.png` (the sample-garden vs. bulb-bin visual gap is the location's core mechanic and must not be muddied)
 
 ### Texture Atlases:
@@ -459,7 +458,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | leugen_characters | npc_leugen_cast | 1024x512 |
 | leugen_objects_ui | leugen_items, leugen_ui_effects | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -580,7 +579,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | 4 | npc_leugen_cast.png | 1024x288 |
 | 5 | leugen_ui_effects.png | 512x512 |
 
-**Total Estimated Memory:** ~8.1 MB raw RGBA texture data (~3.6 MB after ASTC/ETC2 compression); ~34 MB maximum total runtime footprint per the location performance budget
+**Total Estimated Memory:** ~8.1 MB raw RGBA texture data (~3.6 MB after VRAM compression); ~34 MB maximum total runtime footprint per the location performance budget
 
 ---
 
@@ -625,7 +624,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 - [ ] Satirical theme is clear throughout all assets (tourist souvenir psychology, never the Dutch flower industry or Margriet's family trade)
 - [ ] Margriet's warmth is genuine in every frame except the three Customs Deflect frames; she is never drawn as a con artist
 - [ ] Hidden areas/interactions have discoverable visual cues (orphan asterisk, tiny customs notice, fine-print card, CITES permit in the Gardener's hand)
-- [ ] Mobile performance optimized (single sway driver, 18-particle ceiling, three atlases, painted colour mass rather than instanced blooms)
+- [ ] Performance optimized (single sway driver, 18-particle ceiling, three atlases, painted colour mass rather than instanced blooms)
 - [ ] Touch zone sizing considered (44px minimum on all bins, racks, sample garden, and purchase buttons)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (variety silhouettes and hatching — critical here, since colour is the product)
 - [ ] Social media viral potential maximized in composition choices (sample-garden-vs-bins framing, asterisk close-up, epilogue sequence)
@@ -642,7 +641,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | Seedy Underbelly Present | ✅ | Selling agricultural goods to people who cannot legally import or successfully grow them, the 2 Sovs protective-bag deflection, the 50 Sovs collection at 0.1% success, outcomes never tracked |
 | Gameplay Value Established | ✅ | Purchase system, Vendor's Dance deflection dialogue, persistent Bulb Burden, Bravado negotiation, optional customs encounter, five-stage epilogue and achievement track |
 | Technical Feasibility | ✅ | Single sway-node hierarchy, phase-locked water, painted flower mass, day-driven item degradation all documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB per profile budget |
 | Accessibility Features | ✅ | Six visual audio cues, reduced-motion sway/water/petal alternatives, variety silhouettes and hatching for a colour-dependent product, 44px zones |
 | No Crypto Elements | ✅ | Cash, card, and four hundred years of botanical hope |
 | Social Media Integration | ✅ | Six screenshot moments plus a seven-line quote bank identified |

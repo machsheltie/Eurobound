@@ -331,7 +331,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Constant timer while location loaded
 - **Purpose:** Fresh stock always — the single visible proof that Eoin cares about something
 - **Audio Sync:** Pretzel warmer hum, continuous low layer
-- **Mobile Optimization:** Low LOD holds Frame 1 permanently
+- **Performance Optimization:** Low LOD holds Frame 1 permanently
 
 ### Pretzel Steam:
 - **Duration:** 2 seconds per loop
@@ -340,7 +340,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Constant above warmer case; burst on handoff
 - **Purpose:** Warmth and quality signaling in a location that offers no other warmth
 - **Audio Sync:** None
-- **Mobile Optimization:** Single wisp on Medium LOD; static Warmer Steam Fog overlay on Low
+- **Performance Optimization:** Single wisp on Medium LOD; static Warmer Steam Fog overlay on Low
 
 ### Salt Crystal Sparkle:
 - **Duration:** 0.6 seconds
@@ -349,7 +349,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Timer while cart in view
 - **Purpose:** Subliminal sodium advertising — the conspiracy starts at the retina
 - **Audio Sync:** None
-- **Mobile Optimization:** Disabled below High LOD
+- **Performance Optimization:** Disabled below High LOD
 
 ### Eoin Idle:
 - **Duration:** 12 seconds per loop
@@ -358,7 +358,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Constant when no transaction active
 - **Purpose:** Stillness as characterization — a man at peace with his boundaries
 - **Audio Sync:** None (silence is the point)
-- **Mobile Optimization:** None needed — already minimal by design
+- **Performance Optimization:** None needed — already minimal by design
 
 ### The Handoff:
 - **Duration:** 1.2 seconds
@@ -367,7 +367,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Purchase confirmed
 - **Purpose:** The entire relationship, delivered in wax paper
 - **Audio Sync:** Order confirmation beep on frame 2; cash box close on return to Neutral
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Single Nod:
 - **Duration:** 0.8 seconds, plays once, never loops
@@ -376,7 +376,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Perfect Transaction completed, or exact change paid
 - **Purpose:** Maximum emotional payout of the entire location — restraint is the reward
 - **Audio Sync:** Satisfying quick-exchange sound resolves as the chin comes up
-- **Mobile Optimization:** None needed — three frames is already the floor
+- **Performance Optimization:** None needed — three frames is already the floor
 
 ### The Perfect Transaction (Under 5 Seconds):
 - **Duration:** 5.0 seconds maximum, player-paced
@@ -385,7 +385,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Order, pay exact change, and leave with zero non-essential words before the timer empties
 - **Purpose:** The location's core mastery beat — +10 Bravado, Eoin's single approving nod
 - **Audio Sync:** Quick-exchange sound on completion; flat "Next." as the player steps away
-- **Mobile Optimization:** Flash and Sparkle merge into one composite frame on Low LOD
+- **Performance Optimization:** Flash and Sparkle merge into one composite frame on Low LOD
 
 ### Deflection Cutoff:
 - **Duration:** 0.4 seconds
@@ -394,7 +394,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Player selects any conversation/overshare dialogue option
 - **Purpose:** The comedy engine — every story dies mid-sentence at the same price point
 - **Audio Sync:** Conversation-attempt stinger: dialogue murmur cut off clean by "5 Sovs"
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Exception:
 - **Duration:** 4 seconds, once per playthrough beat
@@ -403,7 +403,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** The Crier encounter reaches its dialogue apex
 - **Purpose:** Eoin's hidden humanity — he's not heartless, he has boundaries
 - **Audio Sync:** No beep, no cash box — the silence of a free pretzel is the loudest cue here
-- **Mobile Optimization:** None needed — this moment ships at full quality on every device
+- **Performance Optimization:** None needed — this moment ships at full quality on every device
 
 ### Cash Box Open/Close:
 - **Duration:** 0.5 seconds
@@ -412,7 +412,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Payment received
 - **Purpose:** Transactional punctuation; the metronome of the whole location
 - **Audio Sync:** Cash box clink on open; latch on close
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Night Drizzle & Pub Bokeh:
 - **Duration:** Continuous ambient
@@ -421,7 +421,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Constant, 6 PM - 4 AM (which is always, here)
 - **Purpose:** Publandia night atmosphere — the pubs glow warm so the cart can glow cold
 - **Audio Sync:** Background street noise layer
-- **Mobile Optimization:** Static drizzle texture, bokeh pulse disabled on Low LOD
+- **Performance Optimization:** Static drizzle texture, bokeh pulse disabled on Low LOD
 
 ### Oversharer Gesture Loop:
 - **Duration:** 3 seconds per loop while story active
@@ -430,7 +430,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - **Trigger:** Oversharer NPC ambient scene or "The Overshare" quest
 - **Purpose:** Shows what Eoin deals with, 50,000 stories deep
 - **Audio Sync:** Story murmur fading into background street noise
-- **Mobile Optimization:** Static Mid-Story pose on Low LOD
+- **Performance Optimization:** Static Mid-Story pose on Low LOD
 
 ---
 
@@ -480,11 +480,10 @@ assets/sprites/locations/publandia/knot_your_problem/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback for legacy devices); Night Street Backdrop and signage kept at ASTC 4x4 so sign text stays legible
-- **Android:** ETC2 with alpha across all sheets
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Night Street Backdrop and signage kept kept uncompressed so sign text stays legible with alpha across all sheets
 - **Fallback:** PNG high quality for the five signs and the Price Menu Board — the jokes are written on them, they must not compress into mush
 
 ### Texture Atlases:
@@ -494,7 +493,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | knot_characters | eoin_reilly, knot_customers | 1024x512 |
 | knot_items_ui | knot_pretzels, knot_ui, knot_accessibility | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility — this location never comes close.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility — this location never comes close.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -661,7 +660,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 ### Quality Checkpoints:
 - [ ] Satirical theme (drunk oversharing vs. professional indifference) is clear throughout all assets
 - [ ] Hidden interactions discoverable: sodium conspiracy shimmer, camera fee, bonus portion, cold pretzel gag
-- [ ] Mobile performance optimized (12-particle cap, 8 draw calls, single-NPC animation, static backdrop)
+- [ ] Performance optimized (12-particle cap, 8 draw calls, single-NPC animation, static backdrop)
 - [ ] Touch zone sizing considered (44px minimum — menu rows, order/pay/leave buttons, condiment and Eoin hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (letter-tagged mustards, icon-coded salts, silhouette-distinct status icons)
 - [ ] Social media viral potential maximized (deflection popup framing, single-nod capture window, sign compositions)
@@ -678,7 +677,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Seedy Underbelly Present | ✅ | The Sodium Conspiracy — salt drives thirst drives drinking drives pretzels; the cart is pub-adjacent on purpose |
 | Gameplay Value Established | ✅ | HP restoration shop, efficiency bonuses, Bravado economy, 4 quests, 6 achievements |
 | Technical Feasibility | ✅ | 6 sheets + 1 supplemental, no shaders, walk-up cart with no interior, mobile optimization documented |
-| Mobile Performance Budget | ✅ | 60 FPS target, 8 draw calls, ~9 MB actual vs. 20 MB budget, 12-particle cap |
+| Performance Budget | ✅ | 60 FPS target, 8 draw calls, ~9 MB actual vs. 20 MB budget, 12-particle cap |
 | Accessibility Features | ✅ | Visual cues for all five critical sounds, static-motion variants, high-contrast set, 44px touch targets |
 | No Crypto Elements | ✅ | Absent — Eoin accepts exact change in Sovs and nothing else. PASS |
 | Social Media Integration | ✅ | Six screenshot moments and seven quotable lines identified, deflection popup built to be shared |

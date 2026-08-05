@@ -62,7 +62,7 @@ Every element maximizes pretension:
 - **Lighting Setup**: Display case backlighting, natural daylight, spotlight drama
 - **Particle Systems**: Sugar dust, chocolate sheen, steam from fresh items
 - **Animation Elements**: Glass case opening, precise slice cutting, judgmental eyebrow raise
-- **Mobile Optimization**: Simple cart, focus on NPC expression range
+- **Performance Optimization**: Simple cart, focus on NPC expression range
 
 ## Satirical Design
 ### Theme & Vibe

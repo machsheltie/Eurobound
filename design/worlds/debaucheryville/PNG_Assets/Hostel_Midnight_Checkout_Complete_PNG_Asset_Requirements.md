@@ -393,11 +393,10 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); note wall text kept higher quality for readability
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) note wall text kept higher quality for readability
 - **Fallback:** PNG high quality for UI panels and passive-aggressive notes (text-critical)
 
 ### Texture Atlases:
@@ -408,7 +407,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | hostel_characters | staff sprites, guest sprites | 1024x512 |
 | hostel_effects_ui | effects, confession scene, UI | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -576,7 +575,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 ### Quality Checkpoints:
 - [ ] Hostel satire is affectionate toward backpacker culture, not mocking travelers
 - [ ] Neon sign flicker and note wall create discoverable visual interest
-- [ ] Mobile performance optimized (static background guests, on-demand dorm loading)
+- [ ] Performance optimized (static background guests, on-demand dorm loading)
 - [ ] Touch zone sizing considered (44px minimum for booking UI and interactions)
 - [ ] Sleep quality tiers readable without color (shapes + labels)
 - [ ] Social media viral potential maximized (note wall, 12-bed chaos compositions)

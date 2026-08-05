@@ -473,7 +473,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Constant while any Snorer-type occupies a bunk; Derek's 4B instance never stops
 - **Purpose:** The dorm's dominant ambient comedy — sleep quality made visible
 - **Audio Sync:** Multi-frequency snore layers; big Z frames sync to bass snore, small z to the whistle
-- **Mobile Optimization:** Static Zzz sprite with 2-frame alpha pulse on low-end devices
+- **Performance Optimization:** Static Zzz sprite with 2-frame alpha pulse on low-end devices
 
 ### Broken Bulb Flicker:
 - **Duration:** Random intervals, 8-30 seconds between events; each flicker 0.4 seconds
@@ -482,7 +482,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Timer, constant in dorm and shower block scenes
 - **Purpose:** The one permanently broken bulb — institutional decay on a loop
 - **Audio Sync:** Faint fluorescent buzz drop-out on the off frame
-- **Mobile Optimization:** Alpha toggle only, no glow shader; disabled entirely in reduced-motion mode
+- **Performance Optimization:** Alpha toggle only, no glow shader; disabled entirely in reduced-motion mode
 
 ### Shower Queue Shuffle:
 - **Duration:** 2 seconds per position advance
@@ -491,7 +491,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Queue position change during the Shower Gauntlet
 - **Purpose:** Makes the queue feel geological; each advance is a tiny hollow victory
 - **Audio Sync:** Flip-flop slap on the step frame; distant shower running throughout
-- **Mobile Optimization:** Snap-to-position with no tween below medium LOD
+- **Performance Optimization:** Snap-to-position with no tween below medium LOD
 
 ### Morning Shame Shuffle:
 - **Duration:** 3 seconds, plays once on morning exit while Embarrassed
@@ -500,7 +500,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Player exits dorm with "Embarrassed" status active
 - **Purpose:** The walk of shame as a game verb — witnesses watching optional but likely
 - **Audio Sync:** The quiet "oh no" morning shame sound on frame 1; awkward silence after
-- **Mobile Optimization:** None needed (single short one-shot)
+- **Performance Optimization:** None needed (single short one-shot)
 
 ### Embarrassment Reaction:
 - **Duration:** 1.5 seconds
@@ -509,7 +509,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** "Embarrassed" status acquisition (witnessed regrettable act)
 - **Purpose:** Status feedback beat; pairs with the Shame Red popup
 - **Audio Sync:** Awkward-silence stinger cuts all ambient for 1 second — the cruelest sound is nothing
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Colm Idle Cycle:
 - **Duration:** 12 seconds loop
@@ -518,7 +518,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Constant at reception
 - **Purpose:** Eight years of this, communicated in twelve seconds
 - **Audio Sync:** Coffee sip slurp, barely audible; nothing else — Colm generates no drama
-- **Mobile Optimization:** Drop coffee sip beat; hold Idle/stare alternation
+- **Performance Optimization:** Drop coffee sip beat; hold Idle/stare alternation
 
 ### Phone Glow Pulse (Dark Dorm):
 - **Duration:** 6 seconds loop
@@ -527,7 +527,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Phone Addict roommate present, night scene
 - **Purpose:** The cyan lighthouse of inconsiderate scrolling
 - **Audio Sync:** Soft keyboard tap cluster on bright frame
-- **Mobile Optimization:** Static glow cone, no pulse
+- **Performance Optimization:** Static glow cone, no pulse
 
 ### The 3 AM Thud:
 - **Duration:** 1 second, once per night, 03:00 game time
@@ -536,7 +536,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Timer, every night, guaranteed
 - **Purpose:** The hostel's signature mystery — players will theorize, the game will never answer
 - **Audio Sync:** Single deep thud; all snoring pauses for exactly 2 seconds after, then resumes
-- **Mobile Optimization:** Single-frame flash version
+- **Performance Optimization:** Single-frame flash version
 
 ### Shower Steam Rise:
 - **Duration:** 3 seconds loop
@@ -545,7 +545,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Hot stall active (the one, the only)
 - **Purpose:** Marks today's hot shower — steam is the tell Seasoned Travelers read
 - **Audio Sync:** Shower running loop while active
-- **Mobile Optimization:** Single static steam bank sprite (also the reduced-motion variant)
+- **Performance Optimization:** Single static steam bank sprite (also the reduced-motion variant)
 
 ### Dust in Fluorescent Light:
 - **Duration:** Continuous drift
@@ -554,7 +554,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Constant in reception and dorm scenes
 - **Purpose:** Institutional atmosphere — the light is harsh AND dirty
 - **Audio Sync:** None
-- **Mobile Optimization:** 4 particles at medium LOD, static overlay at low
+- **Performance Optimization:** 4 particles at medium LOD, static overlay at low
 
 ---
 
@@ -613,11 +613,10 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback for legacy devices); Roommate Reveal panel and dialogue portraits at ASTC 4x4 — text must stay crisp
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Roommate Reveal panel and dialogue portraits kept uncompressed — text must stay crisp
 - **Fallback:** Lossless PNG for UI sheet and accessibility sheet (readable text is non-negotiable)
 
 ### Texture Atlases:
@@ -628,7 +627,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 | bunk_blunder_characters | colm_obrien, hostel_residents | 1024x1024 |
 | bunk_blunder_ui_fx | ui_effects, accessibility | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -811,7 +810,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 ### Quality Checkpoints:
 - [ ] Satirical theme (budget travel delusion vs. shared-misery reality) is clear throughout all assets
 - [ ] Easter eggs discoverable: room 6 door tag, single forgotten shoe, "SHOWER FAIRLY" plea, Brigitte's annotated schedule, the '92 token
-- [ ] Mobile performance optimized (12-particle cap, static snoring indicators at low LOD, on-demand dorm atlas, alpha-toggle flicker)
+- [ ] Performance optimized (12-particle cap, static snoring indicators at low LOD, on-demand dorm atlas, alpha-toggle flicker)
 - [ ] Touch zone sizing considered (44px minimum — booking rows, roommate icons, queue slots, examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (patterned rest meter, shape-tagged risk frames, numbered hot stall, pip-count chaos levels)
 - [ ] Social media viral potential maximized (Roommate Reveal card framing, cone composition, 3 AM thud mystery staging)
@@ -828,7 +827,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 | Seedy Underbelly Present | ✅ | False economy (cheap stay, expensive consequences) plus Craic Tax aftermath flow-through |
 | Gameplay Value Established | ✅ | Rest system, roommate roulette, Embarrassed status, Shower Gauntlet, 4 quests, achievement track |
 | Technical Feasibility | ✅ | 8 sheets, simple scene swaps, on-demand dorm atlas, CPU particles only |
-| Mobile Performance Budget | ✅ | 60 FPS target (45 floor on min-spec dorm scene), 12 draw calls, 32 MB, 12-particle cap |
+| Performance Budget | ✅ | 60 FPS target (45 floor on min-spec dorm scene), 12 draw calls, 32 MB, 12-particle cap |
 | Accessibility Features | ✅ | 14 visual audio cues, motion-sensitivity variants, pattern/shape-coded meters, 44px targets |
 | No Crypto Elements | ✅ | PASS — nothing in this hostel appreciates in value, least of all the guests |
 | Social Media Integration | ✅ | 7 screenshot moments, 10 profile-sourced quotes, Roommate Reveal built to be shared |

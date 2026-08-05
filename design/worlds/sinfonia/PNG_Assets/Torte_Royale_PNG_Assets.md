@@ -387,7 +387,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Purchase confirmed / Frau Tortenmeister begins service
 - **Purpose:** Ceremony — the case opens like a reliquary
 - **Audio Sync:** Hinge whisper + cool-air hiss on frame 2 (0.4s)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Precise Slice Cutting:
 - **Duration:** 1.2 seconds, single play (hold Clean Cut 0.3s)
@@ -396,7 +396,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Sachertorte/Linzer/Topfenstrudel purchase (sliced items)
 - **Purpose:** The precision is the pretension — surgical theater for dessert
 - **Audio Sync:** Single clean knife-through sound at descend (0.5s); porcelain clink at lift (1.0s)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Frau Tortenmeister Neutral Judgment Idle:
 - **Duration:** 2.0 second cycle, loop
@@ -405,7 +405,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Constant while cart is open
 - **Purpose:** Default state: judgment. The idle IS the atmosphere
 - **Audio Sync:** None — the silence is the audio design (no music: cake is serious business)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Approving Nod (RARE):
 - **Duration:** 1.0 second, single play
@@ -414,7 +414,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Perfect pronunciation tier only
 - **Purpose:** The rarest reward in Sinfonia; players will chase this nod
 - **Audio Sync:** Approval hum begins on frame 2 (0.3s), hum glyph spawns simultaneously
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Needs A Moment (Catastrophic Reaction):
 - **Duration:** 3.0 seconds (2.0s mandatory held silence)
@@ -423,7 +423,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Catastrophic pronunciation tier ("Zakertordy")
 - **Purpose:** The moment of silence as gameplay consequence; +50% applies when she reopens her eyes
 - **Audio Sync:** Disappointed sigh at 0.4s (sigh glyph fires with it); then engineered total silence — ambient street audio ducks to zero for the 2.0s hold
-- **Mobile Optimization:** Vignette tile omitted on low-end; held frame carries it
+- **Performance Optimization:** Vignette tile omitted on low-end; held frame carries it
 
 ### Needs To Sit Down (American Chocolate Cake):
 - **Duration:** 2.4 seconds, single play, hold seated
@@ -432,7 +432,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Player compares menu to "American chocolate cake" (The Ultimate Crime achievement)
 - **Purpose:** The comparison crime's full visual payoff
 - **Audio Sync:** Stool scrape at 1.4s; nothing else — words have failed her
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Register Ding:
 - **Duration:** 0.4 seconds, single play
@@ -441,7 +441,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Payment accepted
 - **Purpose:** Transaction closure; the only sound she enjoys
 - **Audio Sync:** Brass register ding exactly on star spawn (0.1s)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Chandelier Sway (Ambient):
 - **Duration:** 3.0 second cycle, loop
@@ -450,7 +450,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Constant (breeze); pauses during moment-of-silence
 - **Purpose:** A chandelier. On a cart. Perpetually reminding you of both facts
 - **Audio Sync:** None
-- **Mobile Optimization:** Static frame on low LOD / reduced motion
+- **Performance Optimization:** Static frame on low LOD / reduced motion
 
 ### Sugar Dust & Steam Loops:
 - **Duration:** 1.5 second cycles, loop
@@ -459,7 +459,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Sugar dust on cut events; steam constant on Apfelstrudel/Kaiserschmarrn/Topfenstrudel slots
 - **Purpose:** Freshness signal — these cakes are genuinely excellent and the particles prove it
 - **Audio Sync:** None
-- **Mobile Optimization:** Steam sources halved (3 → 1), sugar dust event-only on low LOD
+- **Performance Optimization:** Steam sources halved (3 → 1), sugar dust event-only on low LOD
 
 ### Queue Shuffle:
 - **Duration:** 0.6 seconds per advance, single play per queue event
@@ -468,7 +468,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - **Trigger:** Customer served or flees
 - **Purpose:** Waiting-game tension; player watches others succeed/fail before their turn
 - **Audio Sync:** Soft footstep scuff at 0.3s
-- **Mobile Optimization:** Compressed group sprite advances as one unit
+- **Performance Optimization:** Compressed group sprite advances as one unit
 
 ---
 
@@ -508,11 +508,10 @@ assets/sprites/locations/sinfonia/torte_royale/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); display case sheet at ASTC 4x4 — the chocolate sheen is the product shot
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) display case sheet kept uncompressed — the chocolate sheen is the product shot
 - **Fallback:** PNG high quality for display case & menu items sheet (cakes are screenshot-critical; the joke requires they look genuinely excellent)
 
 ### Texture Atlases:
@@ -522,7 +521,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 | torte_royale_characters | Frau Tortenmeister, queue NPCs | 1024x512 |
 | torte_royale_effects_ui | particles, glyphs, mini-game UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -691,7 +690,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 ### Quality Checkpoints:
 - [ ] Satirical theme (authenticity gatekeeping, pretension economy) is clear throughout all assets
 - [ ] Cart-hunt discoverability cues present (queue visible from distance, chandelier glint as beacon)
-- [ ] Mobile performance optimized (CPU particles, 10 draw calls, 60 FPS scene, atlas limits respected)
+- [ ] Performance optimized (CPU particles, 10 draw calls, 60 FPS scene, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for all interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (tier shapes, popup arrows)
 - [ ] Social media viral potential maximized in composition choices (nod frame, sit-down, receipt)
@@ -708,7 +707,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 | Seedy Underbelly Present | ✅ | Tourist-detection price gouging, photography fees, pronunciation surcharges, grudge ledger, nephew-verified five-star reviews |
 | Gameplay Value Established | ✅ | Shop economy, pronunciation mini-game, Charm pricing, buff/debuff loop, daily location hunt |
 | Technical Feasibility | ✅ | Six sheets, three atlases, LOD tiers, single-scene four-anchor rotation documented |
-| Mobile Performance Budget | ✅ | 60 FPS target, 10 draw calls, 25 MB, 12 particles (per location profile — deliberately lightweight) |
+| Performance Budget | ✅ | 60 FPS target, 10 draw calls, 25 MB, 12 particles (per location profile — deliberately lightweight) |
 | Accessibility Features | ✅ | Sigh/hum/silence glyphs for all audio events; shape-coded tiers; reduced-motion variants; 44px zones |
 | No Crypto Elements | ✅ | Pure food snobbery; the only speculative asset is your pronunciation |
 | Social Media Integration | ✅ | Approving nod, sit-down, and competence-surcharge receipt identified as shareable beats |

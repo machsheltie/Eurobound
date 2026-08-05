@@ -401,7 +401,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - **Trigger:** Any served cup
 - **Purpose:** Cooling coffee is the café's thesis statement — everyone is too busy performing to drink
 - **Audio Sync:** None
-- **Mobile Optimization:** Cap 6 → 3 emitters
+- **Performance Optimization:** Cap 6 → 3 emitters
 
 ### Chess Piece Move:
 - **Duration:** 1.5 seconds (move + opponent sigh)
@@ -410,7 +410,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - **Trigger:** Random, 90-180s after entry
 - **Purpose:** The decades-old game advances one move; blink and you miss the entire relationship
 - **Audio Sync:** Chess piece click on move frame; soft exhale on sigh frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Egon Order Interrogation:
 - **Duration:** 2.5 seconds (hold on final frame)
@@ -419,7 +419,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - **Trigger:** Player orders anything non-canonical
 - **Purpose:** The ordering gauntlet — every menu mistake is a social event
 - **Audio Sync:** Audible exhale SFX on frame 3
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Von Grübelstein Glasses Removal:
 - **Duration:** 1.8 seconds
@@ -428,7 +428,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - **Trigger:** Player selects a Confident Bluff that fails
 - **Purpose:** The boss's signature tell — maximum disappointment, minimum motion
 - **Audio Sync:** Dramatic sting (quiet) on pinch frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Debate Victory Flash:
 - **Duration:** 0.8 seconds, single play
@@ -437,7 +437,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - **Trigger:** Debate won / Devastating Counter played
 - **Purpose:** The intellectual "aha" — visible vindication
 - **Audio Sync:** Satisfying "aha" chime on frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Dramatic Gesturing (Ambient):
 - **Duration:** 3.0 second cycle
@@ -446,7 +446,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - **Trigger:** Constant in main hall
 - **Purpose:** The room performs intelligence for an audience too busy performing to watch
 - **Audio Sync:** Murmur bed swells match gesture peaks (loose sync)
-- **Mobile Optimization:** Freeze to gesture A on Low LOD
+- **Performance Optimization:** Freeze to gesture A on Low LOD
 
 ### Newspaper Page Turn:
 - **Duration:** 0.6 seconds, single play
@@ -455,7 +455,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - **Trigger:** Ambient timer
 - **Purpose:** Traditional coffeehouse texture
 - **Audio Sync:** Page rustle on frame 1
-- **Mobile Optimization:** Halve frequency
+- **Performance Optimization:** Halve frequency
 
 ---
 
@@ -492,11 +492,10 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); philosophers sheet ASTC 4x4 — portrait close-ups in debate UI
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) philosophers sheet kept uncompressed — portrait close-ups in debate UI
 - **Fallback:** PNG high quality for tileset (window lettering must stay crisp)
 
 ### Texture Atlases:
@@ -506,7 +505,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | cafe_existenz_characters | staff, philosophers, ambient NPCs | 1024x512 |
 | cafe_existenz_effects_ui | effects, UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -665,7 +664,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 ### Quality Checkpoints:
 - [ ] Satirical theme (intellectual pretension, not learning) is clear throughout
 - [ ] Back room and secret bookcase door have discoverable visual cues
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -682,7 +681,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | Seedy Underbelly Present | ✅ | Tourist order-forgetting, overcharging, judgment-as-service, betting on tourists |
 | Gameplay Value Established | ✅ | Dialogue combat, Bravado economy, Wi-Fi hub, quest gossip, couchsurf |
 | Technical Feasibility | ✅ | Seven sheets, atlas plan, pre-rendered crowd, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 45 MB, 18 particles (per profile budget) |
+| Performance Budget | ✅ | 60 FPS, 18 draw calls, 45 MB, 18 particles (per profile budget) |
 | Accessibility Features | ✅ | Visual cues for all audio events; static motion variants |
 | No Crypto Elements | ✅ | None present — philosophy satire only |
 | Social Media Integration | ✅ | Chalkboard question, glasses removal, betting regulars identified |

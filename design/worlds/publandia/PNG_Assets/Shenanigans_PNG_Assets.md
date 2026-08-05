@@ -449,7 +449,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** Player taps "TAP TO STOP" (input timing has zero effect on outcome)
 - **Purpose:** Sell a fair spin that was decided the moment 5 Sovs left the wallet; the final hesitation IS the product
 - **Audio Sync:** Wheel whir during blur; tick-tick-tick on decel; the "almost" landing sound on the hesitation; sad trombone on settle
-- **Mobile Optimization:** Scripted keyframes, no physics simulation (simplified wheel physics per budget); Low LOD skips blur frames entirely
+- **Performance Optimization:** Scripted keyframes, no physics simulation (simplified wheel physics per budget); Low LOD skips blur frames entirely
 
 ### Card Shuffle Sleight:
 - **Duration:** 3 seconds per round
@@ -458,7 +458,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** Three Card Monty round start
 - **Purpose:** The queen leaves the table mid-shuffle; the game is over before the choice is offered
 - **Audio Sync:** Card shuffle riffle throughout; soft felt-slap per swap
-- **Mobile Optimization:** Low LOD drops to 4 shuffle frames; palm frame always retained (it's the joke)
+- **Performance Optimization:** Low LOD drops to 4 shuffle frames; palm frame always retained (it's the joke)
 
 ### Cup Shuffle Speed Progression:
 - **Duration:** 2.5s (round 1) scaling down to 1.2s (round 4+)
@@ -467,7 +467,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** Cup Shuffle round start; speed tier = consecutive rounds played
 - **Purpose:** Escalating speed launders the impossible into the merely difficult
 - **Audio Sync:** Cup slide scrapes per swap; "awww" cue on reveal
-- **Mobile Optimization:** Speed tiers capped at 1.8x on low-end devices; blur sprite substitutes for high-tier frames
+- **Performance Optimization:** Speed tiers capped at 1.8x on low-end devices; blur sprite substitutes for high-tier frames
 
 ### Dice Roll (Loaded):
 - **Duration:** 1.8 seconds
@@ -476,7 +476,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** Player shake-and-release gesture (feels random, isn't)
 - **Purpose:** Doubles at 8% instead of 16.7%; the near-miss combos do the retention work
 - **Audio Sync:** Dice rattle during tumble; double-clack on settle
-- **Mobile Optimization:** Pre-baked tumble sprite frames, no rigid-body sim
+- **Performance Optimization:** Pre-baked tumble sprite frames, no rigid-body sim
 
 ### Shill Celebration:
 - **Duration:** 2 seconds
@@ -485,7 +485,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** Any mark's near-miss, or scripted "win" beat every 90-120s
 - **Purpose:** Manufactured proof that winning is possible; synchronization glitch (0s offset) is the discoverable tell
 - **Audio Sync:** Fake winner celebration whoop; glass clinks; Mickey's warm laughter tail
-- **Mobile Optimization:** Confetti capped at 12 particles; Low LOD uses static Shill Win Burst sprite, no particles
+- **Performance Optimization:** Confetti capped at 12 particles; Low LOD uses static Shill Win Burst sprite, no particles
 
 ### Near-Miss Beat:
 - **Duration:** 1.2 seconds
@@ -494,7 +494,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** Every engineered almost: wheel one segment short, dice at 5-6, ring rattle-off, dart lip-out
 - **Purpose:** The core retention loop of the entire location, rendered honest by repetition
 - **Audio Sync:** The "almost" landing sound, then sympathetic "awww" from crowd
-- **Mobile Optimization:** None needed — three sprites and a tween
+- **Performance Optimization:** None needed — three sprites and a tween
 
 ### Mickey Idle Cycle:
 - **Duration:** 12 seconds loop
@@ -503,7 +503,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** Constant while Mickey is unengaged
 - **Purpose:** The room's warm center of gravity; the twinkle rewards observant players
 - **Audio Sync:** Occasional warm laughter on the chuckle beat
-- **Mobile Optimization:** Low LOD drops survey and watch-check beats
+- **Performance Optimization:** Low LOD drops survey and watch-check beats
 
 ### Stamp Ceremony:
 - **Duration:** 6 seconds
@@ -512,7 +512,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** "Wise Fool" conversation completion (3 scams lost + return visit + Bottle Opener Keychain)
 - **Purpose:** The one un-rigged moment in the building; play it completely straight
 - **Audio Sync:** Mickey's genuine toast on raise; page rustle; deep stamp THUNK; glasses clink on handshake hold
-- **Mobile Optimization:** None needed — this moment gets full budget on every device
+- **Performance Optimization:** None needed — this moment gets full budget on every device
 
 ---
 
@@ -566,11 +566,10 @@ assets/sprites/locations/publandia/shenanigans/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 for environment sheets; ASTC 4x4 for Mickey, the stamp, and all UI text elements (dialogue portraits and stamp engraving need the fidelity)
-- **Android:** ETC2 with alpha across all sheets
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for environment sheets; uncompressed for Mickey, the stamp, and all UI text elements (dialogue portraits and stamp engraving need the fidelity) with alpha across all sheets
 - **Fallback:** Lossless PNG for `brewery_items.png` (stamp legibility is quest-critical) and `shenanigans_ui_fx.png`
 
 ### Texture Atlases:
@@ -581,7 +580,7 @@ assets/sprites/locations/publandia/shenanigans/
 | shenanigans_games_items | rigged_games, brewery_items | 1024x1024 |
 | shenanigans_ui | shenanigans_ui_fx, shenanigans_accessibility | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -754,7 +753,7 @@ assets/sprites/locations/publandia/shenanigans/
 - [ ] Satirical theme (obvious scams that work anyway; respect earned through graceful losing) is clear throughout all assets
 - [ ] All seven RIGGED DETAIL sprites discoverable via Wise Fool sight: sticky peg, palmed queen, too-small ring, bent darts, palmed ball, loaded dice cutaway, actual-odds ledger
 - [ ] Easter eggs discoverable: Wall of "Winners" all-staff photos, worn floor path, "Gotcha" Twinkle, shill synchronization tell, one wilted leaf in every clover garland
-- [ ] Mobile performance optimized (scripted wheel, 20-particle cap, reduced shill count on LOD, one animated game at a time)
+- [ ] Performance optimized (scripted wheel, 20-particle cap, reduced shill count on LOD, one animated game at a time)
 - [ ] Touch zone sizing considered (44px minimum — all seven mini-game inputs compliant, 48px large variants on the accessibility sheet)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (patterned wheel segments, glyph-paired RIGGED banner, shape-differentiated badges)
 - [ ] Social media viral potential maximized (TRY AGAIN selfie framing, JACKPOT photo rig, empty wallet prop composition)
@@ -771,7 +770,7 @@ assets/sprites/locations/publandia/shenanigans/
 | Seedy Underbelly Present | ✅ | Seven rigged games, a 3-5 person shill network, tout funneling, whale processing in the Snug — vice is the load-bearing wall |
 | Gameplay Value Established | ✅ | Seven scam mini-games, loss-based stamp progression, Wise Fool reveal mechanic, Shill Offer moral choice, achievement track |
 | Technical Feasibility | ✅ | Scripted (non-physics) wheel, alpha-toggle lighting, one-animated-game rule, Snug sub-scene loading all documented |
-| Mobile Performance Budget | ✅ | 60 FPS target, 14 draw calls max, 35 MB cap (~22 MB spent), 20-particle limit, LOD-tiered shill count |
+| Performance Budget | ✅ | 60 FPS target, 14 draw calls max, 35 MB cap (~22 MB spent), 20-particle limit, LOD-tiered shill count |
 | Accessibility Features | ✅ | Full supplemental sheet: 10 visual audio cues, reduced-motion wheel/celebration/shuffle/dice variants, patterned wheel segments, 44px+ inputs |
 | No Crypto Elements | ✅ | PASS — the scams here are lovingly analog; not a token in sight |
 | Social Media Integration | ✅ | Six screenshot moments identified; selfie spot with props is a designed share loop |

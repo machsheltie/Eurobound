@@ -97,7 +97,7 @@ Nuala has an uncanny ability to assess your current condition at a glance:
 - **Lighting Setup**: Harsh fluorescent (reveals all), slightly softer in Healing Aisle (mercy)
 - **Particle Systems**: Minimal (reality doesn't need effects)
 - **Animation Elements**: Nuala's assessments, eye rolls, reluctant smiles
-- **Mobile Optimization**: Simplified aisles, focus on Nuala interaction
+- **Performance Optimization**: Simplified aisles, focus on Nuala interaction
 
 ## Satirical Design
 ### Theme & Vibe

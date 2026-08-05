@@ -408,11 +408,10 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); CRT screen content kept at higher quality for popup readability
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) CRT screen content kept at higher quality for popup readability
 - **Fallback:** PNG high quality for menu item sprites and status icons (detail-critical)
 
 ### Texture Atlases:
@@ -422,7 +421,7 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 | backroom_characters | concession booth + Donny.exe, seating | 1024x512 |
 | backroom_effects | vending machines, CRT popups, UI | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -601,7 +600,7 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 - [ ] Food items look questionable but oddly appealing
 - [ ] Y2K internet nostalgia captured in popups
 - [ ] Health code violation humor clear but not gross
-- [ ] Mobile performance optimized (small file sizes)
+- [ ] Performance optimized (small file sizes)
 - [ ] All animations have clear timing specifications
 - [ ] Status effects have both icons and screen effects
 - [ ] Accessibility alternatives for color-coded elements
@@ -619,7 +618,7 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 | Seedy Underbelly Present | ✅ PASS | Health violations as underground cred |
 | Gameplay Value Established | ✅ PASS | Status effect consumables, ICQ unlock |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 12 draw calls, 35MB |
+| Performance Budget | ✅ PASS | 60 FPS, 12 draw calls, 35MB |
 | Accessibility Features | ✅ PASS | Status icons, DigiDysentery assist option |
 | No Crypto Elements | ✅ PASS | Crypto satire established in source material (CryptoDöner, blockchain drizzle) |
 | Social Media Integration | ✅ PASS | Multiple viral moments identified |

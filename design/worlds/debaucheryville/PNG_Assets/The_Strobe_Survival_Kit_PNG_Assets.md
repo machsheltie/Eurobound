@@ -293,7 +293,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Trigger:** First Audio Defense browse, or player asks for the demo
 - **Purpose:** Genuine harm-reduction education delivered with military gravity
 - **Audio Sync:** Foam squeak on F2, muffled-world audio dip on F3 (the whole mix ducks 8dB for 1 second — the product demo IS the sound design)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Hearing Aid Moment:
 - **Duration:** 3 seconds
@@ -302,7 +302,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Trigger:** Player dismisses earplugs, or asks about the hearing aids
 - **Purpose:** The emotional core of the stall — twenty years of consequence in one gesture
 - **Audio Sync:** Brief audio distortion effect while the close-up holds (per profile comedy audio spec)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Glow Stick Activation:
 - **Duration:** 1 second
@@ -311,7 +311,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Trigger:** Purchase or use of a glow stick
 - **Purpose:** Small, perfect retail dopamine — the one product that delivers instantly
 - **Audio Sync:** Snap-crack on the flash frame
-- **Mobile Optimization:** Aura omitted on Low LOD
+- **Performance Optimization:** Aura omitted on Low LOD
 
 ### Distant Bass Throb:
 - **Duration:** 1.0 second loop
@@ -320,7 +320,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Trigger:** Constant ambient
 - **Purpose:** The threat preview; the stall is quiet, the war is over there
 - **Audio Sync:** Muffled club bass, louder as night progresses (per profile audio transitions)
-- **Mobile Optimization:** Rings off on Low; bass audio still carries the cue with subtitle glyph
+- **Performance Optimization:** Rings off on Low; bass audio still carries the cue with subtitle glyph
 
 ### Midnight Price Surge:
 - **Duration:** 2 seconds one-shot, then persistent state
@@ -329,7 +329,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Trigger:** In-game clock hits midnight
 - **Purpose:** Desperation pricing, ceremonially announced; earplug tags visibly DON'T flip (Antonín's principles)
 - **Audio Sync:** Cash register ka-chunk on the flip
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Antonín Restocking Idle:
 - **Duration:** 7 seconds loop
@@ -338,7 +338,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Trigger:** Idle timer
 - **Purpose:** He is always working; the stall never looks abandoned
 - **Audio Sync:** Crate shuffle on restock frames
-- **Mobile Optimization:** Idle-only on Low
+- **Performance Optimization:** Idle-only on Low
 
 ### Ear Ringing Squiggle (Next-Day Debuff):
 - **Duration:** 2 seconds loop while debuffed
@@ -347,7 +347,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - **Trigger:** Morning after unprotected clubbing
 - **Purpose:** Consequence made visible; also marks the Dismissive Bro's return arc
 - **Audio Sync:** Faint high-pitch whine under the mix (with visual glyph as the accessible equivalent)
-- **Mobile Optimization:** Static squiggle on Low
+- **Performance Optimization:** Static squiggle on Low
 
 ---
 
@@ -389,11 +389,10 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 — stall_ui.png and decibel chart regions at ASTC 4x4 (numbers must stay crisp)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — stall_ui.png and decibel chart regions kept uncompressed (numbers must stay crisp)
 - **Fallback:** PNG high quality for chart and briefing panel
 
 ### Texture Atlases:
@@ -403,7 +402,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | survival_characters | antonin, customers | 1024x512 |
 | survival_items_ui | items, effects, ui, accessibility | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -564,7 +563,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 ### Quality Checkpoints:
 - [ ] Satirical theme (military seriousness for club prep, sincerity underneath) is clear throughout all assets
 - [ ] Hidden details discoverable: exempt earplug tags, live decibel meter, "restock weekly" earplug crate
-- [ ] Mobile performance optimized (single-draw-call browser, capped particles, clock-driven lighting)
+- [ ] Performance optimized (single-draw-call browser, capped particles, clock-driven lighting)
 - [ ] Touch zone sizing considered (44px minimum — counter and browser rows compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (pip-coded tiers, shape-coded auras)
 - [ ] Social media viral potential maximized (chart, hearing-aid point, conversion arc compositions)
@@ -581,7 +580,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 | Seedy Underbelly Present | ✅ | Desperation pricing after midnight — emergency supplies marked up +50% (earplugs excepted, which IS the characterization) |
 | Gameplay Value Established | ✅ | Equipment effects at Velvet Curtain, next-day status prevention, briefing system, Convert NPC arc, Bravado hooks |
 | Technical Feasibility | ✅ | 7 sheets, flag-based equipment system, clock-driven pricing — standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 60 FPS / 12 draw calls / 28 MB per profile; estimate ~12 MB |
+| Performance Budget | ✅ | 60 FPS / 12 draw calls / 28 MB per profile; estimate ~12 MB |
 | Accessibility Features | ✅ | The muffle-demo and tinnitus cues have visual equivalents; no audio-only information anywhere at the harm-reduction stall (it would be ironic) |
 | No Crypto Elements | ✅ | Pure tactical commerce (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

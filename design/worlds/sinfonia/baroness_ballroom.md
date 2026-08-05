@@ -112,7 +112,7 @@ Every detail reinforces anonymity and performance:
 - **Lighting Setup**: Chandelier centerpiece, candlelight warmth, strategic shadows for intrigue
 - **Particle Systems**: Candle flicker, fabric shimmer, confetti during dances, mask sparkle
 - **Animation Elements**: Dancers waltzing, fans fluttering, masks turning, chandelier sway
-- **Mobile Optimization**: Pre-rendered crowd, simplified dance animations, static background dancers
+- **Performance Optimization**: Pre-rendered crowd, simplified dance animations, static background dancers
 
 ## Satirical Design
 ### Theme & Vibe

@@ -87,7 +87,7 @@
 - **Lighting Setup**: Warm overhead spots, natural light from windows, candle flicker (electric, safety)
 - **Particle Systems**: Steam from kitchen, butter sizzle sparkle, canal breeze simulation
 - **Animation Elements**: Kitchen activity visible through pass, server movement, tourist photography
-- **Mobile Optimization**: Simplified kitchen activity, static table decor, reduced particle steam
+- **Performance Optimization**: Simplified kitchen activity, static table decor, reduced particle steam
 
 ## Satirical Design
 ### Theme & Vibe

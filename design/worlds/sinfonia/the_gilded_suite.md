@@ -105,7 +105,7 @@ Every element is slightly wrong:
 - **Lighting Setup**: Warm chandelier glow, spotlight portraits, mysterious shadows
 - **Particle Systems**: Dust motes (arranged), candle flicker (synchronized), subtle portrait movement
 - **Animation Elements**: Eye tracking, door movements, furniture shifts
-- **Mobile Optimization**: Subtle horror cues over obvious effects, static backgrounds, timed reveals
+- **Performance Optimization**: Subtle horror cues over obvious effects, static backgrounds, timed reveals
 
 ## Satirical Design
 ### Theme & Vibe

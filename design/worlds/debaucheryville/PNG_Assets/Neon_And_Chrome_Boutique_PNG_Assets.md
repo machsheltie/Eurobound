@@ -344,7 +344,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - **Trigger:** Player crosses the door threshold
 - **Purpose:** The shop IS a club preview — entering should feel like walking past a velvet rope
 - **Audio Sync:** Door whoosh at 0.0s, bass drop hit at 0.5s, muffled club track fades in over the last second
-- **Mobile Optimization:** Shockwave ring drops to a simple screen tint pulse on Low LOD
+- **Performance Optimization:** Shockwave ring drops to a simple screen tint pulse on Low LOD
 
 ### Neon Flicker:
 - **Duration:** 4 seconds loop
@@ -353,7 +353,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - **Trigger:** Constant, exterior and interior signage
 - **Purpose:** Alive-but-classy signage; this shop is upmarket, its neon barely misbehaves
 - **Audio Sync:** Faint buzz tick on F3
-- **Mobile Optimization:** Static F1 on Low LOD
+- **Performance Optimization:** Static F1 on Low LOD
 
 ### Club Simulation — Strobe Mode:
 - **Duration:** 0.6 seconds loop while active
@@ -362,7 +362,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - **Trigger:** Player or Dominik activates the fitting room strobe
 - **Purpose:** "See how gear looks under actual club conditions" — sells the strobe shades honestly
 - **Audio Sync:** Strobe relay click on each flash frame
-- **Mobile Optimization:** Disabled entirely when reduced-motion is on; replaced by steady UV overlay
+- **Performance Optimization:** Disabled entirely when reduced-motion is on; replaced by steady UV overlay
 
 ### Bass Pulse (Fitting Room & Speakers):
 - **Duration:** 1.0 second loop
@@ -371,7 +371,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - **Trigger:** Bass toggle active, or ambient near speaker stack
 - **Purpose:** Physicalize the soundtrack; syncs the room to the music
 - **Audio Sync:** Ring spawns exactly on the beat of the ambient club loop
-- **Mobile Optimization:** Single ring, half opacity on Medium; off on Low
+- **Performance Optimization:** Single ring, half opacity on Medium; off on Low
 
 ### Premium Stock Reveal:
 - **Duration:** 3 seconds one-shot
@@ -380,7 +380,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - **Trigger:** First entry after defeating Count Velvet Absinthe
 - **Purpose:** The payoff moment — "You've proven yourself" made visible
 - **Audio Sync:** Triumphant unlock sting starts with the shutter, peaks on the burst
-- **Mobile Optimization:** None needed (one-shot, low cost)
+- **Performance Optimization:** None needed (one-shot, low cost)
 
 ### Katarina's VIP Assessment:
 - **Duration:** 3 seconds
@@ -389,7 +389,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - **Trigger:** Purchase total crosses assessment threshold, or player asks for assessment
 - **Purpose:** Comedy beat — the up-down evaluation before the honest(ish) verdict
 - **Audio Sync:** "VIP potential assessment" fanfare stinger on the Knowing frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Chrome Gleam Sweep:
 - **Duration:** 6 seconds loop
@@ -398,7 +398,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - **Trigger:** Constant ambient
 - **Purpose:** Everything in here is polished; the shop itself is dressed for the club
 - **Audio Sync:** None
-- **Mobile Optimization:** Off on Low LOD
+- **Performance Optimization:** Off on Low LOD
 
 ---
 
@@ -440,11 +440,10 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 — boutique_gear.png at ASTC 4x4 (small item icons need crisp edges)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — boutique_gear.png kept uncompressed (small item icons need crisp edges)
 - **Fallback:** PNG high quality for boutique_ui.png and gear icons
 
 ### Texture Atlases:
@@ -454,7 +453,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 | neon_chrome_characters | staff, customers | 1024x512 |
 | neon_chrome_effects_ui | gear, effects, ui, accessibility | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -617,7 +616,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 ### Quality Checkpoints:
 - [ ] Satirical theme (status theater sold with a wink) is clear throughout all assets
 - [ ] Hidden gags discoverable: empty wristband holders, altitude-priced platform pyramid, unquantified VIP meter
-- [ ] Mobile performance optimized (on-demand fitting room, gated Premium assets, CPU particles)
+- [ ] Performance optimized (on-demand fitting room, gated Premium assets, CPU particles)
 - [ ] Touch zone sizing considered (44px minimum — shop buttons and booth toggles compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded stat icons, padlock/rope banners)
 - [ ] Social media viral potential maximized (group mirror moment, premium reveal composition)
@@ -634,7 +633,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 | Seedy Underbelly Present | ✅ | Premium prices for "VIP potential" that may never materialize |
 | Gameplay Value Established | ✅ | Stat gear (Style/Intimidation/Visibility), boss-gated stock, Bravado hooks, Velvet Curtain integration |
 | Technical Feasibility | ✅ | 8 sheets, on-demand overlays, region-swap gear system — all standard Godot 4.x |
-| Mobile Performance Budget | ✅ | 60 FPS / 14 draw calls / 34 MB per profile; estimate ~19 MB |
+| Performance Budget | ✅ | 60 FPS / 14 draw calls / 34 MB per profile; estimate ~19 MB |
 | Accessibility Features | ✅ | Strobe-disable path, visual cues for every audio beat, shape-coded stats |
 | No Crypto Elements | ✅ | Pure fashion status commerce (profile-confirmed) |
 | Social Media Integration | ✅ | Five viral moments identified, quotes sourced from profile dialogue |

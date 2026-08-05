@@ -236,7 +236,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 - **Trigger:** Constant while ground floor loaded
 - **Purpose:** Gift-shop ambience; creak is part of the soundscape
 - **Audio Sync:** Creak SFX on frames 2 and 4
-- **Mobile Optimization:** Static frame 1 on low LOD
+- **Performance Optimization:** Static frame 1 on low LOD
 
 ### Daan Phone Scroll (Sheet 3):
 - **Duration:** 4 seconds per loop (1 FPS)
@@ -245,7 +245,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 - **Trigger:** Constant idle; interrupted only by dialogue rows
 - **Purpose:** The "guard" who genuinely does not care
 - **Audio Sync:** Occasional muffled TikTok audio blip on frame 3
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Motion-Sensor "Laser Grid" (Sheets 2 & 6):
 - **Duration:** 0.8 seconds per light bank (5 FPS)
@@ -254,7 +254,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 - **Trigger:** Player proximity on third floor
 - **Purpose:** The gap between automatic lights and "military-grade security"
 - **Audio Sync:** Fluorescent hum + dramatic sting (player-only heist audio channel)
-- **Mobile Optimization:** Skip warm-up flicker frame on low LOD
+- **Performance Optimization:** Skip warm-up flicker frame on low LOD
 
 ### NFT Minting (Sheet 6):
 - **Duration:** 3 seconds (2 FPS, 6 frames)
@@ -263,7 +263,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 - **Trigger:** Examine QR terminal, confirm 2 Sovs payment
 - **Purpose:** "The blockchain is forever. Like art. Like chocolate. Like regret."
 - **Audio Sync:** Mint chime on frame 6
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Fabergé Latch Open (Sheet 6):
 - **Duration:** 1 second (2 FPS)
@@ -272,7 +272,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 - **Trigger:** Heist climax interaction
 - **Purpose:** "Pressure-sensitive vault" that is a simple latch
 - **Audio Sync:** Tiny click, then triumphant orchestral hit (player-only)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Dennis Explaining Art (Sheet 4):
 - **Duration:** 2 seconds per cycle (2 FPS)
@@ -281,7 +281,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 - **Trigger:** Player prompts his "artistic vision"
 - **Purpose:** Misplaced passion characterization
 - **Audio Sync:** Dialogue voice bleeps synced to gesture beats
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -316,11 +316,10 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); split-screen UI art and Fabergé case need higher quality (readable text/gag detail)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); split-screen UI art and Fabergé case need higher quality (readable text/gag detail)
 - **Fallback:** PNG high quality for museum_ui.png (text-heavy)
 
 ### Texture Atlases:
@@ -330,7 +329,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | museum_characters | Daan, Dennis, visitors | 1024x1024 |
 | museum_effects | effects, UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -482,7 +481,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (gift shop capitalism wearing museum drag)
 - [ ] Hidden areas/interactions have discoverable visual cues (QR terminal glow, Vault spotlight, night-access door state)
-- [ ] Mobile performance optimized (CPU particles, per-floor streaming, atlas limits respected)
+- [ ] Performance optimized (CPU particles, per-floor streaming, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (quest target shape/outline coding)
 - [ ] Social media viral potential maximized in composition choices (split-screen built as shareable frame)
@@ -500,7 +499,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | Seedy Underbelly Present | ✅ | FOMO pricing, "suggested" mandatory donation, shoplifting-as-heist, gift shop funnel |
 | Gameplay Value Established | ✅ | Fabergé heist Stage 3, NFT Hunt #1/3, shop economy, Couchsurf trigger |
 | Technical Feasibility | ✅ | Per-floor streaming, CPU particles, on-demand heist layers documented |
-| Mobile Performance Budget | ✅ | 60 FPS, ≤18 draw calls, ≤42 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, ≤18 draw calls, ≤42 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px touch zones |
 | No Crypto Elements | ✅ | NFT terminal IS established source material (Dennis's scheme) — satirical target, no real crypto |
 | Social Media Integration | ✅ | 5 screenshot moments + split-screen frame designed for sharing |

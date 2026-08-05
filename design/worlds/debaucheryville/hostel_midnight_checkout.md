@@ -92,7 +92,7 @@
 - **Lighting Setup**: Harsh fluorescent common areas, dim dorm corridors, individual bunk lights
 - **Particle Systems**: Dust motes, laundry steam, kitchen smoke
 - **Animation Elements**: Guest wandering, reception bell, bunk bed creaking
-- **Mobile Optimization**: Simplified crowd systems, static background guests
+- **Performance Optimization**: Simplified crowd systems, static background guests
 
 ## Satirical Design
 ### Theme & Vibe

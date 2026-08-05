@@ -47,7 +47,7 @@
 - **Lighting Setup**: Morning light, steam catching sunlight, brass reflections
 - **Particle Systems**: Steam clouds, coffee drip, cup shimmer
 - **Animation Elements**: Espresso pour, steam wand hiss, barista precision movements
-- **Mobile Optimization**: Simple stand, focus on steam effects and pour animation
+- **Performance Optimization**: Simple stand, focus on steam effects and pour animation
 
 ## Satirical Design
 ### Theme & Vibe

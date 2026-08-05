@@ -366,7 +366,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Trigger:** Quest active + reaching Floor 2, or investigating "Staff Only" areas
 - **Purpose:** The moment 25 Sovs of tourism becomes a dungeon — the location's thesis beat
 - **Audio Sync:** Fiona's "That's not supposed to happen" on the porthole; corporate tour music cuts dead on the freeze-frame
-- **Mobile Optimization:** Freeze-frame vignette dropped; hard cut instead
+- **Performance Optimization:** Freeze-frame vignette dropped; hard cut instead
 
 ### Vat Bubbling (Ambient):
 - **Duration:** 1.6-second loop
@@ -374,7 +374,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Trigger:** Constant, both modes (peaceful tour / ominous dungeon tempo shift)
 - **Purpose:** The brewery is alive; the tempo tells you how alive
 - **Audio Sync:** Peaceful bubbling (tour) / wet squelching (dungeon)
-- **Mobile Optimization:** Every second vat static on Low LOD
+- **Performance Optimization:** Every second vat static on Low LOD
 
 ### Steam Vent Cycle:
 - **Duration:** 4-second cycle (2s idle, 1s telegraph hiss, 1s burst)
@@ -382,7 +382,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Trigger:** Timed per vent, offset patterns form the timing puzzle
 - **Purpose:** Readable, learnable hazard rhythm
 - **Audio Sync:** Hiss on telegraph, blast on frame 1 of burst
-- **Mobile Optimization:** Burst frames reduced to 2
+- **Performance Optimization:** Burst frames reduced to 2
 
 ### Foam Flood:
 - **Duration:** 3 seconds to full spread
@@ -390,7 +390,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Trigger:** Floor 4 zone events, Phase 2 "Foam Tsunami"
 - **Purpose:** Slippery, obscuring, signature Floor 4 chaos
 - **Audio Sync:** Rising fizz, wet slap at full spread
-- **Mobile Optimization:** Simplified foam — spread states only, no particles
+- **Performance Optimization:** Simplified foam — spread states only, no particles
 
 ### Enemy Vat Emergence:
 - **Duration:** 1.5 seconds
@@ -398,7 +398,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Trigger:** Enemy spawn in vat rooms
 - **Purpose:** Enemies come FROM the brewery — never just appear
 - **Audio Sync:** Deep glorp on splash, squelch on formation
-- **Mobile Optimization:** Splash-to-idle direct on Low LOD
+- **Performance Optimization:** Splash-to-idle direct on Low LOD
 
 ### Boss Phase Transitions:
 - **Duration:** 3 seconds per transition
@@ -406,7 +406,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Trigger:** Phase 1 swarm thinned / Phase 2 HP threshold
 - **Purpose:** Escalation readable at a glance; Phase 3 turns the room itself hostile
 - **Audio Sync:** Vat Master's booming line on each flash ("NOW I AM MORE THAN BEER"); alarm klaxon loops in Phase 3
-- **Mobile Optimization:** Alarm becomes static amber tint
+- **Performance Optimization:** Alarm becomes static amber tint
 
 ### The Stamping:
 - **Duration:** 1.2 seconds
@@ -414,7 +414,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Trigger:** Stamp acquisition at Stamp Station (tour) or post-boss (dungeon)
 - **Purpose:** Brewery Passport ritual — collection dopamine
 - **Audio Sync:** Thunk on press, page rustle on lift
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -459,11 +459,10 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (Vat Master phases and stamp at ASTC 4x4)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import)
 - **Fallback:** PNG high quality for boss phases and portraits
 
 ### Texture Atlases:
@@ -473,7 +472,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 | stoutworks_characters | brewery_characters, vat_master | 1024x512 |
 | stoutworks_fx_ui | hazards_effects, ui_tour | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -639,7 +638,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 ### Quality Checkpoints:
 - [ ] Satirical theme (brewery tourism reverence gone literal) is clear throughout all assets
 - [ ] Hidden areas discoverable: Friendly Colony Alcove cue, porthole eye, "IN CASE OF YEAST" sign, askew brewmaster photo
-- [ ] Mobile performance optimized (floor streaming, swarm clumps, 20-particle cap, choreographed meltdown)
+- [ ] Performance optimized (floor streaming, swarm clumps, 20-particle cap, choreographed meltdown)
 - [ ] Touch zone sizing considered (44px minimum — valves, negotiation options, map floors compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (patterned hazard borders, icon-paired gauge)
 - [ ] Social media viral potential maximized (cathedral composition, diplomatic selfie framing)
@@ -656,7 +655,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 | Seedy Underbelly Present | ✅ | 25 Sovs tours ending in gift shops; the cover story vs. the yeast reality |
 | Gameplay Value Established | ✅ | Full 6-floor dungeon, mini-boss, dual-ending boss, puzzles, stamp sidequest, shop economy |
 | Technical Feasibility | ✅ | Floor streaming, clump-sprite swarms, choreographed Phase 3, mobile optimization documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 48MB |
+| Performance Budget | ✅ | 60 FPS, 18 draw calls, 48MB |
 | Accessibility Features | ✅ | Telegraph icons for every hazard, caption frames for boss booms, static-hazard variants |
 | No Crypto Elements | ✅ | Absent from source and spec ("pure yeast-based currency of chaos" per profile QA) |
 | Social Media Integration | ✅ | Six viral moments identified, quote bank sourced from profile |

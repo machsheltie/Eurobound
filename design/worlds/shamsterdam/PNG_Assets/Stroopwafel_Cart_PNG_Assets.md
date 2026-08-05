@@ -222,7 +222,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Trigger:** Constant during open hours; syncs to order timer when player waits
 - **Purpose:** The visible theater — 90 seconds of craft justifying 8 Sovs
 - **Audio Sync:** Sizzle on press-down frame; iron clank on lift
-- **Mobile Optimization:** Cycle halves to 2 key frames on low LOD
+- **Performance Optimization:** Cycle halves to 2 key frames on low LOD
 
 ### Steam Plume (Sheet 5):
 - **Duration:** 2 seconds per loop (2 FPS)
@@ -231,7 +231,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Trigger:** Constant from active iron; burst on iron lift
 - **Purpose:** Warmth radius that pulls NPCs (and players) toward the cart
 - **Audio Sync:** None (ambient sizzle covers it)
-- **Mobile Optimization:** Simplified 2-frame steam, half spawn rate
+- **Performance Optimization:** Simplified 2-frame steam, half spawn rate
 
 ### Splitting & Filling (Sheet 3):
 - **Duration:** 2 seconds (2 FPS across split + spread rows)
@@ -240,7 +240,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Trigger:** Order timer reaches 60s mark
 - **Purpose:** "Watch. See how I split it?" — the craft close-up
 - **Audio Sync:** Soft wire shear; caramel pour smear
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### First-Bite Revelation (Sheets 4, 5):
 - **Duration:** 2.5 seconds (pause 1s → 3 frames at 2 FPS → sparkle)
@@ -249,7 +249,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Trigger:** First fresh consumption after any packaged stroopwafel
 - **Purpose:** "All those packaged ones were LIES. BEAUTIFUL LIES."
 - **Audio Sync:** Ambient dips to near-silence during pause, warm chord on sparkle
-- **Mobile Optimization:** Sparkle burst drops to 1 frame
+- **Performance Optimization:** Sparkle burst drops to 1 frame
 
 ### Comfort Glow (Sheet 5):
 - **Duration:** 3-second gentle pulse loop
@@ -258,7 +258,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Trigger:** Fresh stroopwafel consumed
 - **Purpose:** "The warmth stays with you, inside and out"
 - **Audio Sync:** None
-- **Mobile Optimization:** Static 40%-opacity glow on reduced motion
+- **Performance Optimization:** Static 40%-opacity glow on reduced motion
 
 ### Cart Relocation Fade (Sheets 1, 2):
 - **Duration:** 1.5 seconds out + 1.5 seconds in
@@ -267,7 +267,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Trigger:** Game clock crossing 12 PM / 3 PM
 - **Purpose:** Mobile cart system without driving animation cost
 - **Audio Sync:** Distant bicycle bell + market ambience crossfade
-- **Mobile Optimization:** None needed (already the optimization)
+- **Performance Optimization:** None needed (already the optimization)
 
 ---
 
@@ -303,11 +303,10 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); price board and backdrop supermarket signage need higher quality (readable gag text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); price board and backdrop supermarket signage need higher quality (readable gag text)
 - **Fallback:** PNG high quality for stroopwafel_ui.png (text) and food close-ups
 
 ### Texture Atlases:
@@ -317,7 +316,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | cart_characters | Bep/Mila, customers | 1024x512 |
 | cart_effects | food, effects, UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -469,7 +468,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (markup satirized, stroopwafel respected)
 - [ ] Hidden areas/interactions have discoverable visual cues (Trail map pips, discount token)
-- [ ] Mobile performance optimized (CPU particles, time-slot streaming, atlas limits respected)
+- [ ] Performance optimized (CPU particles, time-slot streaming, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (size/text coding, distinct status silhouettes)
 - [ ] Social media viral potential maximized in composition choices (price board framing, process strip)
@@ -486,7 +485,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Seedy Underbelly Present | ✅ | 5x tourist markup with a smile, cart strategically stalking tourist peaks (mildest vice in Shamsterdam by design) |
 | Gameplay Value Established | ✅ | Comfort/Sugar Rush economy, two cart quests, Bravado checks, Enlightened flag |
 | Technical Feasibility | ✅ | Fade-based relocation, streamed backdrops, 12-particle cap documented |
-| Mobile Performance Budget | ✅ | 60 FPS, ≤12 draw calls, ≤30 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, ≤12 draw calls, ≤30 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px touch zones |
 | No Crypto Elements | ✅ | Pure traditional street food (profile-confirmed) |
 | Social Media Integration | ✅ | 5 screenshot moments identified, process-video composition built in |

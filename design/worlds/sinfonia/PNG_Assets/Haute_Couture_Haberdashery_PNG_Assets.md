@@ -582,7 +582,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** Any first entry in a new outfit state — applied to everyone, every time, never softened for any quest
 - **Purpose:** The shop's defining beat: a complete diagnosis delivered in two seconds by someone who thinks he is helping
 - **Audio Sync:** Door chime (disappointed or welcoming tone, per outfit quality) 0.3s before frame 1; the greeting line begins on the hold
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Circling:
 - **Duration:** 3.0 seconds, single play
@@ -591,7 +591,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** Party assessment on first visit; consultation purchase
 - **Purpose:** A man naming what he sees, in fragments, while you fill the pauses
 - **Audio Sync:** One dialogue fragment per frame; the ellipses are real held beats with no audio in them
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Ticket Write & Price Restatement:
 - **Duration:** 2.0 seconds, single play
@@ -600,7 +600,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** Any purchase confirmation
 - **Purpose:** The complete truth of the transaction, delivered at entirely normal volume, while the buyers celebrate a robbery
 - **Audio Sync:** Refined register chime on frame 1; "It has been 200 Sovs all season" spoken flat across frame 2 — no smirk, no emphasis on any word
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Vitrine Unlock (PATH A):
 - **Duration:** 4.5 seconds, single play
@@ -609,7 +609,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** PATH A errand completed at Valued Client tier
 - **Purpose:** The most sincere thirty seconds in the questline, played completely straight
 - **Audio Sync:** Lock turn on frame 1; **no music sting, no comedy scoring, no undercut anywhere in this animation.** Room tone only
-- **Mobile Optimization:** None needed — this is the content
+- **Performance Optimization:** None needed — this is the content
 
 ### Lock Check:
 - **Duration:** 1.0 second, single play
@@ -618,7 +618,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** 7 PM close, every night, in every state of the game — including after the case is empty
 - **Purpose:** He never stopped checking. He never says why
 - **Audio Sync:** Soft glass tap
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Round (Night Porter Patrol Loop):
 - **Duration:** Continuous; full circuit configurable, pace fixed
@@ -627,7 +627,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** PATH B after-hours sequence begins
 - **Purpose:** The stealth sequence's clock — the player plans around a fixed pattern, not a detection cone
 - **Audio Sync:** Soft-soled footsteps and the torch's rubber collar mixed as the scene's **primary positional cue**; ambient round lines fire from other rooms at intervals
-- **Mobile Optimization:** None needed — the loop is 4 frames
+- **Performance Optimization:** None needed — the loop is 4 frames
 
 ### The Plinth Sweep:
 - **Duration:** 1.5 seconds, single play, once per circuit
@@ -636,7 +636,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** Scheduled once per patrol circuit, regardless of what is on the plinths
 - **Purpose:** The marquee beat's camera move, performed by a prop
 - **Audio Sync:** Footsteps continue unbroken underneath. No music change
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Count:
 - **Duration:** 1.8 seconds, delivered over the running walk cycle
@@ -645,7 +645,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** Plinth sweep resolves with three bros held in pose
 - **Purpose:** "The mannequins are two. There are two mannequins."
 - **Audio Sync:** **No music sting. No camera push. No reaction cut to a bro.** The line ships verbatim, in one breath, at conversational volume. The repetition is a man confirming his own count
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Fabric Shimmer:
 - **Duration:** 2.0 second cycle
@@ -654,7 +654,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** Constant on premium garments and mannequins
 - **Purpose:** The clothes ARE excellent, and the art has to say so before the stat card does
 - **Audio Sync:** None
-- **Mobile Optimization:** Premium garments only on Medium; disabled on Low
+- **Performance Optimization:** Premium garments only on Medium; disabled on Low
 
 ### Champagne Pour:
 - **Duration:** 1.5 seconds, single play + 3.0s bubble loop
@@ -663,7 +663,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - **Trigger:** Well-dressed entry, Valued Client unlock, or fitting-room wait
 - **Purpose:** You'll need it when you see the prices
 - **Audio Sync:** Fizz on pour; cork pop on the Valued Client unlock only
-- **Mobile Optimization:** Bubble count 6 → 3 on Medium; static coupe on Low
+- **Performance Optimization:** Bubble count 6 → 3 on Medium; static coupe on Low
 
 ---
 
@@ -715,11 +715,10 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 for environment and characters; ASTC 4x4 for `haute_couture_equipment.png` and `haute_couture_ui.png` — garment silhouettes and the Coin must stay legible at inventory scale. PVRTC 4BPP fallback.
-- **Android:** ETC2 with alpha across all sheets
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for environment and characters; uncompressed for `haute_couture_equipment.png` and `haute_couture_ui.png` — garment silhouettes and the Coin must stay legible at inventory scale, with alpha across all sheets
 - **Fallback:** PNG high quality for `haute_couture_landmarks.png` — the vitrine spotlight gradient and mirror sheen band under compression
 
 ### Texture Atlases:
@@ -729,7 +728,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | haute_couture_characters | Aiguille, Night Porter, staff & party | 1024x512 |
 | haute_couture_items_fx | equipment, effects, UI | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -874,7 +873,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | 7 | haute_couture_effects.png | 256x192 |
 | 8 | haute_couture_ui.png | 256x256 |
 
-**Total Estimated Memory:** ~5 MB (1,261,568 px uncompressed RGBA); ~1.4 MB after ETC2/ASTC compression — comfortably inside the 40 MB profile budget
+**Total Estimated Memory:** ~5 MB (1,261,568 px uncompressed RGBA); ~1.4 MB after VRAM compression — comfortably inside the 40 MB profile budget
 
 ---
 
@@ -933,7 +932,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 - [ ] The vitrine reads as sacred without any comedy scoring, wink, or undercut
 - [ ] The eleven-second hold is framed for portrait capture and readable at thumbnail size with zero text
 - [ ] The stealth sequence contains no detection-cone or alert-state art — the Night Porter is a clock, not a guard mechanic
-- [ ] Mobile performance optimized (CPU particles, 15-draw-call ceiling, three atlas binds, no viewport mirror renders)
+- [ ] Performance optimized (CPU particles, 15-draw-call ceiling, three atlas binds, no viewport mirror renders)
 - [ ] Touch zone sizing considered (44px minimum for purchase/decline, fitting room, vitrine, pose-hold input)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -950,7 +949,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | Seedy Underbelly Present | ✅ | The profile's "Buffoon Exploitation" section: a shop that assesses arrivals instantly, guides them toward "transformative" pieces, and is engineered so they spend more than planned. Plus PATH B: after-hours infiltration and theft from the vitrine |
 | Gameplay Value Established | ✅ | 16-item equipment shop, fitting-room stat-comparison mechanic, four-tier client ladder, three special services, Assessment Protocol, two-path quest hub, three selfie variants, seven achievements |
 | Technical Feasibility | ✅ | Eight sheets, three atlases, three LOD tiers, scene-state (not scene-swap) night mode, CPU particles only |
-| Mobile Performance Budget | ✅ | 60 FPS / 15 draw calls / 40 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
+| Performance Budget | ✅ | 60 FPS / 15 draw calls / 40 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|
 | Accessibility Features | ✅ | Visual glyphs for all eleven audio cues including the Night Porter's footstep and torch cues; static/reduced-motion variants for shimmer, champagne, cape tremble, torch sweep, parallax; shape-first UI coding |
 | No Crypto Elements | ✅ | None present. Confirmed absent in the location profile ("No crypto elements — Pure fashion snobbery") and in both NPC profiles' explicit crypto checks |
 | Social Media Integration | ✅ | Three documented selfie variants with unlock conditions, six screenshot moments, eleven quotable lines, one portrait-framed marquee beat with a live screenshot button |

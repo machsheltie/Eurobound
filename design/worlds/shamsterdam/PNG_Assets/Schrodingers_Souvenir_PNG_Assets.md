@@ -120,7 +120,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - The three Quantum Cat states are the same silhouette at the same anchor so the collapse animation is a pure crossfade with no shape pop
 - Zone blocks are authored as complete shelving walls so an entire zone renders in one draw call
 - Floor Tile must seam on all four edges; it is the only tiled asset in the location
-- All signage text is baked at 2x internal resolution and flagged for the ASTC 4x4 exception list — this location's comedy is 60% readable text
+- All signage text is baked at 2x internal resolution and flagged for the uncompressed-texture exception list — this location's comedy is 60% readable text
 
 ---
 
@@ -200,7 +200,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 ### Technical Notes:
 - Certainty glyphs are shape-coded (solid / half-hatched / dashed outline) so the legality gradient never depends on green-amber-red alone
 - Quantum Box closed/legal/illegal share one silhouette and one anchor for a clean three-state crossfade
-- The Collector's Agreement Card and Customs Declaration Form are readable props flagged for the ASTC 4x4 exception list
+- The Collector's Agreement Card and Customs Declaration Form are readable props flagged for the uncompressed-texture exception list
 - Seed sprites are deliberately mundane — the comedy is entirely in the surrounding signage, never in the product art
 
 ---
@@ -440,7 +440,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - **Trigger:** Player asks about any product's legality
 - **Purpose:** Maximum information, minimum responsibility, delivered with total sincerity
 - **Audio Sync:** Question glyph at 0.0s; qualified-answer cue at 1.0s and 2.0s; deflection at 3.5s; register beep at 5.0s
-- **Mobile Optimization:** Medium LOD reduces Explaining to 2 frames; Low LOD holds a single frame and runs the dialogue text at full length
+- **Performance Optimization:** Medium LOD reduces Explaining to 2 frames; Low LOD holds a single frame and runs the dialogue text at full length
 
 ### The Seed Purchase Ritual (Sheets 3, 4, 6, 7):
 - **Duration:** 6.0 seconds (7 steps auto-advancing at ~0.85s each)
@@ -449,7 +449,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - **Trigger:** Any seed pack added to cart
 - **Purpose:** The polite fiction, performed in full, by both parties, without irony being acknowledged
 - **Audio Sync:** Legal-document energy cue rises 0.0-4.0s; checkbox tick at 4.2s; seal tape at 5.4s; a single quiet uncertainty sting at 6.0s
-- **Mobile Optimization:** None needed (UI-driven); the sheen is a single alpha sweep
+- **Performance Optimization:** None needed (UI-driven); the sheen is a single alpha sweep
 
 ### Quantum Cat Idle (Sheets 2, 6):
 - **Duration:** 4.0 seconds per cycle
@@ -458,7 +458,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - **Trigger:** Constant, on the storefront sign and the mascot standee
 - **Purpose:** The mascot is the only thing in the shop allowed to be openly ambiguous
 - **Audio Sync:** None
-- **Mobile Optimization:** Low LOD uses the static cat plate; disabled in reduced-motion mode
+- **Performance Optimization:** Low LOD uses the static cat plate; disabled in reduced-motion mode
 
 ### Wavefunction Collapse (Sheets 3, 5, 6, 7):
 - **Duration:** 2.6 seconds (0.8s scanner sweep, 0.6s collapse frames, 1.2s result hold)
@@ -467,7 +467,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - **Trigger:** Arriving at the Customs Checkpoint with any Suspicious Souvenir tagged item
 - **Purpose:** The observation that determines everything, resolved in six tenths of a second
 - **Audio Sync:** Scanner hum 0.0-0.8s; total silence 0.8-1.4s (comedy-critical); pass chime or fail sting at 1.4s
-- **Mobile Optimization:** Low LOD replaces the 3 collapse frames with the Instant Collapse Plate; scanner sweep retained
+- **Performance Optimization:** Low LOD replaces the 3 collapse frames with the Instant Collapse Plate; scanner sweep retained
 
 ### Suspicious Souvenir Tagging (Sheets 3, 6, 7):
 - **Duration:** 1.0s application, then a 2.4s shimmer loop for as long as the item is held
@@ -476,7 +476,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - **Trigger:** Any item with Medium or higher export risk entering inventory
 - **Purpose:** The weight is not physical, but it must be visible in the bag
 - **Audio Sync:** Soft single tone on application; no loop audio
-- **Mobile Optimization:** Shimmer holds on frame 1 on Low LOD and in reduced-motion mode
+- **Performance Optimization:** Shimmer holds on frame 1 on Low LOD and in reduced-motion mode
 
 ### The Asterisk Examine (Sheets 2, 6):
 - **Duration:** 1.2 seconds
@@ -485,7 +485,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - **Trigger:** Examining "All products comply with Dutch law*"
 - **Purpose:** The asterisk leads nowhere. The game confirms this with a single flicker and no footnote.
 - **Audio Sync:** One soft click, then nothing
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Zone Grade Transition (Sheets 1, 6):
 - **Duration:** 0.6 seconds per zone crossing
@@ -494,7 +494,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - **Trigger:** Walking deeper into the shop
 - **Purpose:** The room gets 8% cooler and 8% quieter per zone; nobody mentions it
 - **Audio Sync:** Ambient music low-pass increases 4% per zone
-- **Mobile Optimization:** Medium LOD steps the grade in two stages instead of four; Low LOD applies the Zone 1 grade globally
+- **Performance Optimization:** Medium LOD steps the grade in two stages instead of four; Low LOD applies the Zone 1 grade globally
 
 ---
 
@@ -540,11 +540,10 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); all signage, the Confusion Matrix, the CBD/THC infographic, the Collector Agreement, the Customs Declaration Form, and all portraits at ASTC 4x4 (this location's comedy is text-dependent)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) all signage, the Confusion Matrix, the CBD/THC infographic, the Collector Agreement, the Customs Declaration Form, and all portraits kept uncompressed (this location's comedy is text-dependent)
 - **Fallback:** PNG high quality for `schrodingers_interior_main.png` (the zone lighting gradient bands badly under lossy compression)
 
 ### Texture Atlases:
@@ -554,7 +553,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | schrodingers_characters | npc_ruben_yuki, npc_schrodingers_customers | 1024x1024 |
 | schrodingers_fx_ui | schrodingers_products, schrodingers_effects, schrodingers_ui | 1024x1024 |
 
-*(schrodingers_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(schrodingers_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -719,7 +718,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - [ ] Satirical theme is clear throughout all assets (the target is legal confusion and willful tourist ignorance, never drug use or Dutch policy)
 - [ ] Staff read as scrupulously honest in every single frame — no shifty poses, no knowing smirks
 - [ ] Hidden areas/interactions have discoverable visual cues (seed cabinet cool grade, asterisk examine, education corner highlight)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, zone blocks composed, static-grade fallback)
+- [ ] Performance optimized (CPU particles, atlas limits respected, zone blocks composed, static-grade fallback)
 - [ ] Touch zone sizing considered (44px minimum for products, ritual responses, and the agreement checkbox)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded certainty and risk, zone silhouettes, patterned chips)
 - [ ] Social media viral potential maximized in composition choices (cat superposition framing, single-shot zone gradient, collapse staging)
@@ -736,7 +735,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Seedy Underbelly Present | ✅ | Selling ambiguity at markup, positioned to catch coffeeshop overflow, profiting from confusion it is legally required to reduce |
 | Gameplay Value Established | ✅ | Four-zone browsing, legality inquiry loop, seven-step seed ritual, Suspicious Souvenir tagging, customs probability event, 5-badge track |
 | Technical Feasibility | ✅ | Composed zone blocks, static-display and static-graphic fallbacks per profile, shared atlases with the checkpoint scene |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 10 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 10 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including instant collapse, shape-coded legality, 44px touch zones |
 | No Crypto Elements | ✅ | Pure quantum legal uncertainty; the only speculative asset is a seed |
 | Social Media Integration | ✅ | 5 screenshot moments + 6 quotable lines identified |

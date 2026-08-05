@@ -290,7 +290,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 - **Trigger:** Constant exterior ambient
 - **Purpose:** Aging glamour; the district's visual language
 - **Audio Sync:** Neon buzz dips during flicker
-- **Mobile Optimization:** Steady frame only on Low LOD and reduced-motion
+- **Performance Optimization:** Steady frame only on Low LOD and reduced-motion
 
 ### Fog Drift (Sheets 3, 6):
 - **Duration:** Continuous; two layers scrolling at 12s and 20s per screen-width
@@ -299,7 +299,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 - **Trigger:** Show start (fog machine activates as lights dim)
 - **Purpose:** Covers many sins; abstracts the stage
 - **Audio Sync:** Fog machine hiss on density increase
-- **Mobile Optimization:** Single layer, 50% density on older devices (profile-mandated)
+- **Performance Optimization:** Single layer, 50% density on older devices (profile-mandated)
 
 ### Crowd Reaction Wave (Sheets 3, 5):
 - **Duration:** 1.5-second wave across silhouette strip (UV offset)
@@ -308,7 +308,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 - **Trigger:** Show event scripts; bachelor party whooping
 - **Purpose:** The show is told entirely through the audience
 - **Audio Sync:** Whoop/gasp samples locked to wave start
-- **Mobile Optimization:** Static crowd on older devices (profile-mandated)
+- **Performance Optimization:** Static crowd on older devices (profile-mandated)
 
 ### Bogdan Approach Pattern (Sheet 4):
 - **Duration:** Pitch cycle 2 seconds (4 frames at 2 FPS), loops while player in engagement zone
@@ -317,7 +317,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 - **Trigger:** Player enters 20-foot sidewalk zone
 - **Purpose:** Commission-based persistence as NPC AI
 - **Audio Sync:** "My friend!" bark on pitch frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Katya Drink Preparation (Sheet 4):
 - **Duration:** 1.5-second upsell rhythm (3 frames at 2 FPS)
@@ -326,7 +326,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 - **Trigger:** Drink purchase flow
 - **Purpose:** Upselling without appearing to
 - **Audio Sync:** Cocktail shake + glass clink on frames 1-2; register ka-ching on completion
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Groom Selection Spotlight (Sheets 3, 6):
 - **Duration:** 3-second sweep, then 2-second lock (beam sprite rotation)
@@ -335,7 +335,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 - **Trigger:** Front-row seating + bachelor party flag, % chance per show
 - **Purpose:** The participation-risk mechanic made visible
 - **Audio Sync:** Drumroll during sweep, spotlight clunk on lock
-- **Mobile Optimization:** Reduced sweep (fade-in lock only) on Low LOD
+- **Performance Optimization:** Reduced sweep (fade-in lock only) on Low LOD
 
 ### Bass Thump (Sheets 1, 6):
 - **Duration:** 0.5-second pulse at 120 BPM ambient
@@ -344,7 +344,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 - **Trigger:** Constant inside; audible/visible from street
 - **Purpose:** You hear Casa Rosé before you see it
 - **Audio Sync:** Locked to Euro-dance bass track
-- **Mobile Optimization:** Visual pulse only every 4th beat on Low LOD
+- **Performance Optimization:** Visual pulse only every 4th beat on Low LOD
 
 ---
 
@@ -380,11 +380,10 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); marquee and menu board need higher quality (readable neon text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); marquee and menu board need higher quality (readable neon text)
 - **Fallback:** PNG high quality for Pink Elephant statue (photo-op hero asset)
 
 ### Texture Atlases:
@@ -394,7 +393,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | casa_characters | staff, customers | 1024x512 |
 | casa_fx_ui | effects, objects, UI | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -554,7 +553,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (obligation tourism, extraction economics)
 - [ ] Hidden areas/interactions have discoverable visual cues (graffiti callbacks, back-row escape, veteran recognition)
-- [ ] Mobile performance optimized (CPU particles, atlas limits, per-scene loading)
+- [ ] Performance optimized (CPU particles, atlas limits, per-scene loading)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (tier labels, tracker numerals)
 - [ ] Social media viral potential maximized in composition choices (elephant photo framing)
@@ -571,7 +570,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | Seedy Underbelly Present | ✅ | Drink minimums, fake champagne, selective camera enforcement, 100 Sovs+ extraction per head |
 | Gameplay Value Established | ✅ | Seating/drink systems, reaction mini-game, status effects, photo op, retelling system |
 | Technical Feasibility | ✅ | Three-scene loading, fake mirrors, lighting-only show sequences documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 18 draw calls, 42 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, 18 draw calls, 42 MB per profile budget |
 | Accessibility Features | ✅ | Visual audio mirrors, no >3 Hz flashing, reduced-motion variants, 44px zones |
 | No Crypto Elements | ✅ | Pure tourist trap commerce |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |

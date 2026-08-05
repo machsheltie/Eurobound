@@ -71,7 +71,7 @@
 - **Lighting Setup**: Hazy orange beer foam sconces, flickering keg chandelier, minimal natural light
 - **Particle Systems**: Dust motes in orange light, beer foam drips, mustard stain particles
 - **Animation Elements**: Flickering chandelier, patron snoring/vomiting cycles, floor creak indicators, throne velvet shimmer
-- **Mobile Optimization**: Simplified lighting effects, reduced patron animation complexity, static chandelier option
+- **Performance Optimization**: Simplified lighting effects, reduced patron animation complexity, static chandelier option
 
 ## Satirical Design
 ### Theme & Vibe

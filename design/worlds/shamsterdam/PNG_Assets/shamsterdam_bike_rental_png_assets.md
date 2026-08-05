@@ -5,7 +5,7 @@
 **Location ID**: `shamsterdam_bike_rental_01`  
 **Priority**: MEDIUM (Service Shop, Bike Crossing Alternative, Recurring Interactions)  
 **Total Sheets Required**: 8  
-**Mobile Optimization**: Standard (60 FPS, dialogue-heavy)
+**Performance Optimization**: Standard (60 FPS, dialogue-heavy)
 
 ---
 
@@ -341,7 +341,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Trigger:** Constant while shop scene active
 - **Purpose:** Lived-in family business atmosphere
 - **Audio Sync:** Ambient — bell tests, tire pump, wrench on metal
-- **Mobile Optimization:** None needed (dialogue-heavy, low animation load)
+- **Performance Optimization:** None needed (dialogue-heavy, low animation load)
 
 ### NPC Interaction States (Sheets 3-5):
 - **Duration:** 0.5-1 second per state (1-2 FPS when interacting)
@@ -350,7 +350,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Trigger:** Dialogue beats — rental sequence, damage assessment, insurance upsell, blessing reward
 - **Purpose:** NPC reactions ARE the comedy; Dirk's "I Told You So" is his most-used animation
 - **Audio Sync:** Opa Cees sigh audio on Sighing row; triumphant fanfare with Genuine Surprise (undamaged return, rare)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Camera Flash (Sheet 8):
 - **Duration:** 0.375 seconds (8 FPS, quick burst)
@@ -359,7 +359,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Trigger:** Anneke's "photo for the file" moment (first visit and damage assessments)
 - **Purpose:** Punchline timing for the family betting pool gag
 - **Audio Sync:** Camera shutter on frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Form Stamp (Sheet 8):
 - **Duration:** 0.5 seconds (4 FPS, satisfying timing)
@@ -368,7 +368,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Trigger:** Claim approved/denied; rental paperwork complete
 - **Purpose:** Bureaucratic finality feedback
 - **Audio Sync:** Stamp thunk on frame 2
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Cash Register Ching (Sheet 8):
 - **Duration:** ~0.75 seconds (4 FPS)
@@ -377,7 +377,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Trigger:** Payment, deposit hold, insurance upsell
 - **Purpose:** Comedy timing for upsells
 - **Audio Sync:** "Cha-ching" on frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Damage Reveal (Sheet 8):
 - **Duration:** 1 second (4 FPS, dramatic pacing)
@@ -386,7 +386,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Trigger:** Damage assessment scene on bike return
 - **Purpose:** Dramatic reveal of what the tourist did
 - **Audio Sync:** Record scratch / dramatic sting on frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Animation Frame Rates
 
@@ -431,11 +431,10 @@ assets/sprites/locations/shamsterdam/bike_rental/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); wall displays need higher quality (readable in-fiction text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); wall displays need higher quality (readable in-fiction text)
 - **Fallback:** PNG high quality for displays sheet and UI icons (text/detail-critical)
 
 ### Texture Atlases:
@@ -445,7 +444,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 | bike_rental_characters | Dirk, Anneke, Opa Cees sheets | 1024x1024 |
 | bike_rental_effects | effects, UI, bike fleet | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -631,7 +630,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (tourist optimism vs. rental reality, insurance satire)
 - [ ] Hidden areas/interactions have discoverable visual cues (repair station doorway, vintage blue bikes, tally board)
-- [ ] Mobile performance optimized (pre-rendered fleet, atlas limits respected)
+- [ ] Performance optimized (pre-rendered fleet, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (insurance tiers, damage levels, deposit bar)
 - [ ] Social media viral potential maximized in composition choices (damage gallery, memorial board framing)
@@ -648,7 +647,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 | Seedy Underbelly Present | ✅ | Deposit forfeiture economy, damage-claim profiteering, betting pool on renters |
 | Gameplay Value Established | ✅ | Crossing bypass, tiered rentals/insurance, recurring visits, 3 quests |
 | Technical Feasibility | ✅ | Pre-rendered fleet, menu-based interactions, simple geometry |
-| Mobile Performance Budget | ✅ | 60 FPS, <30 draw calls, <35 MB, 20 particles |
+| Performance Budget | ✅ | 60 FPS, <30 draw calls, <35 MB, 20 particles |
 | Accessibility Features | ✅ | Visual audio cues, shape-coded tiers, 44px touch zones |
 | No Crypto Elements | ✅ | All transactions in Sovs (credit card holds, 5% cash discount) |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |

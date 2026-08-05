@@ -264,7 +264,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Trigger:** Coins inserted + handle turned
 - **Purpose:** The core FEBO ritual — the wall provides
 - **Audio Sync:** Coin clunk at 0.0s, handle ratchet at 0.3s, door pop at 0.6s, steam hiss at 0.7s
-- **Mobile Optimization:** Steam burst dropped on Low LOD; door frames retained (core feedback)
+- **Performance Optimization:** Steam burst dropped on Low LOD; door frames retained (core feedback)
 
 ### Handle Turn (Sheet 6):
 - **Duration:** 0.4 seconds (2 frames at 0.2s)
@@ -273,7 +273,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Trigger:** Player swipe on handle prompt
 - **Purpose:** Tactile mechanism feedback
 - **Audio Sync:** Mechanical ratchet locked to frame 2
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Anouk Restocking (Sheet 5):
 - **Duration:** 2.0 seconds per slot (1.0s per frame), ambient cycle every 20-40s
@@ -282,7 +282,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Trigger:** Timer-based ambient; forced after any Empty Slot purchase attempt
 - **Purpose:** The wall's life support made visible; empty slots eventually refill
 - **Audio Sync:** Soft slot-thunk on frame 2
-- **Mobile Optimization:** Ambient cycle rate halved on Low LOD
+- **Performance Optimization:** Ambient cycle rate halved on Low LOD
 
 ### Theo Kitchen Loop (Sheet 5):
 - **Duration:** 1.6 seconds per cycle (0.8s per frame)
@@ -291,7 +291,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Trigger:** Constant
 - **Purpose:** Factory efficiency, no wasted motion — never stops moving
 - **Audio Sync:** Fryer sizzle bed continuous; basket clank on frame 1
-- **Mobile Optimization:** Static single frame on Low LOD
+- **Performance Optimization:** Static single frame on Low LOD
 
 ### Fluorescent Flicker (Sheet 6):
 - **Duration:** 0.4-second burst, random trigger ~every 45s
@@ -300,7 +300,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Trigger:** Random timer (subtle; this is a HAPPY fluorescent place)
 - **Purpose:** Institutional authenticity without menace
 - **Audio Sync:** Hum dip during burst
-- **Mobile Optimization:** Disabled on Low LOD and in reduced-motion mode
+- **Performance Optimization:** Disabled on Low LOD and in reduced-motion mode
 
 ### Steam & Condensation (Sheets 1 & 6):
 - **Duration:** Doorway wisp 1.2s loop; compartment steam 0.8s one-shot
@@ -309,7 +309,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Trigger:** Constant / purchase event
 - **Purpose:** Warmth radiating into the night — the beacon promise
 - **Audio Sync:** None (ambience carries it)
-- **Mobile Optimization:** Simplified steam per profile: doorway static, compartment burst kept
+- **Performance Optimization:** Simplified steam per profile: doorway static, compartment burst kept
 
 ### 3 AM Atmosphere (Sheet 6):
 - **Duration:** 4-second alpha breathe cycle (0.20 → 0.30 → 0.20)
@@ -318,7 +318,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Trigger:** In-game clock
 - **Purpose:** Peak FEBO; dreamlike warmth; slight reverb pairing
 - **Audio Sync:** Audio bus gains slight reverb while overlay active
-- **Mobile Optimization:** Fixed 25% alpha (no breathe) on Low LOD
+- **Performance Optimization:** Fixed 25% alpha (no breathe) on Low LOD
 
 ---
 
@@ -355,11 +355,10 @@ assets/sprites/locations/shamsterdam/febo_automat/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); interior background and menu board at ASTC 4x4 (readable text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) interior background and menu board kept uncompressed (readable text)
 - **Fallback:** PNG high quality for febo_interior_main.png (scene-detail critical)
 
 ### Texture Atlases:
@@ -369,7 +368,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | febo_characters | npc_febo_staff_customers | 1024x1024 |
 | febo_fx_ui | febo_food_items, febo_effects, febo_ui | 1024x1024 |
 
-*(febo_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(febo_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -525,7 +524,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (affectionate portrait — the tourist experience is the joke, never FEBO)
 - [ ] Hidden areas/interactions have discoverable visual cues (Mystery Row, restock door / tunnel emergence wall, Regular's efficiency)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, one crowd block per period)
+- [ ] Performance optimized (CPU particles, atlas limits respected, one crowd block per period)
 - [ ] Touch zone sizing considered (44px minimum for wall slots, coin plate, counter)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (occupancy silhouettes, status icon shapes)
 - [ ] Social media viral potential maximized in composition choices (THE WALL symmetric hero framing)
@@ -542,7 +541,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | Seedy Underbelly Present | ✅ | 24-hour enabling of questionable choices, munchies pipeline, coin-operated regret |
 | Gameplay Value Established | ✅ | Wall interaction system, Mystery gamble, time-based crowds, status effects, Regular track |
 | Technical Feasibility | ✅ | Slot-overlay architecture, crowd blocks, static fallbacks all documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, no-flicker/no-shimmer modes, 44px touch zones |
 | No Crypto Elements | ✅ | Pure coin-operated tradition; the machines don't even take card |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |

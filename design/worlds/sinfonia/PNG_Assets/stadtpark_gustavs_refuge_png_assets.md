@@ -13,7 +13,7 @@ The Stadtpark at night is a moonlit sanctuary turned dramatic stage — ancient 
 
 **Priority**: HIGH (Quest Resolution, Emotional Climax, Multiple Endings)  
 **Total Sheets Required**: 10  
-**Mobile Optimization**: Target 60 FPS on iPhone 8+
+**Performance Optimization**: Target 60 FPS on min-spec hardware
 
 ### Key Visual Themes
 - **Moonlit Drama**: Cool blue moonlight contrasting warm lamplight
@@ -367,7 +367,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - **Trigger:** Scene opening; default finale idle
 - **Purpose:** The last-stand image — exhausted dignity under a moonbeam
 - **Audio Sync:** Slow breathing layer; distant city hush
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Gustav Trust Sequence (Ears Perk → Cautious Approach → Eating Skittles → Nuzzle):
 - **Duration:** ~0.5s / 2.0s / 1.3s / 1.5s respectively
@@ -376,7 +376,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - **Trigger:** Player Skittles offering phases 1–4 (or Papageno ally alternative)
 - **Purpose:** The entire emotional arc of the quest, rendered in a horse's ears
 - **Audio Sync:** Bag crinkle on offer; soft crunch on eating; gentle string swell on nuzzle
-- **Mobile Optimization:** None needed — this is the scene the game is protecting
+- **Performance Optimization:** None needed — this is the scene the game is protecting
 
 ### Gustav Bolting (Path C):
 - **Duration:** 0.75 second cycle
@@ -385,7 +385,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - **Trigger:** No Skittles + aggressive approach
 - **Purpose:** The failure ending — beautiful and gone
 - **Audio Sync:** Galloping hoofbeats fading out
-- **Mobile Optimization:** None needed (one-shot exit)
+- **Performance Optimization:** None needed (one-shot exit)
 
 ### Gustav Trot Into Moonlight (Path B):
 - **Duration:** 1.5 second cycle
@@ -394,7 +394,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - **Trigger:** Skittles trust + freedom dialogue
 - **Purpose:** The liberation ending; screenshot bait by design
 - **Audio Sync:** Single warm waltz phrase (Strauss watching approvingly)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Hans-Jürgen Emotional Arc (Pleading → Crying → Relief or Goodbye):
 - **Duration:** 2.0s / 2.0s / 2.0s / 1.5s per state
@@ -403,7 +403,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - **Trigger:** Resolution-path selection
 - **Purpose:** A drunk carriage driver becomes the most sincere man in Sinfonia
 - **Audio Sync:** Muffled sobs on Crying; relieved laugh on Reunion
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Swan Attack:
 - **Duration:** ~0.8 seconds
@@ -412,7 +412,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - **Trigger:** Player enters swan zone at pond edge
 - **Purpose:** Deceptive peace gag; the park's actual apex predators
 - **Audio Sync:** Hiss on wings-spread frame
-- **Mobile Optimization:** Cap at 2 concurrent attacking swans
+- **Performance Optimization:** Cap at 2 concurrent attacking swans
 
 ### Ambient Loops (Leaves / Lamplight / Moonbeam / Statue Shimmer):
 - **Duration:** Leaves ~1.5s drift; lamplight and moonbeam 2-frame subtle pulses at 0.5 FPS; statue shimmer 4s cycle
@@ -421,7 +421,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - **Trigger:** Constant (night state)
 - **Purpose:** Moonlit sanctuary atmosphere; nothing moves fast except emotions
 - **Audio Sync:** Cricket chorus, distant city layer
-- **Mobile Optimization:** Leaves reduced to 8 concurrent; moonbeam static on low-end
+- **Performance Optimization:** Leaves reduced to 8 concurrent; moonbeam static on low-end
 
 ---
 
@@ -458,11 +458,10 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); Gustav's sheet needs ASTC 4x4 — his expressions carry the finale
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Gustav's sheet stays uncompressed — his expressions carry the finale
 - **Fallback:** PNG high-quality for Gustav and the Strauss statue (screenshot critical)
 
 ### Texture Atlases:
@@ -472,7 +471,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 | stadtpark_characters | Gustav, Hans-Jürgen, Pigeon Lady, swans, ambient NPCs | 1024x1024 |
 | stadtpark_effects_items | effects, Skittles | 512x512 |
 
-*(Maximum 4 atlases at 1024px per original spec; max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Maximum 4 atlases at 1024px per original spec; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -655,7 +654,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - [ ] Absurdist comedy and genuine emotion coexist without undercutting each other
 - [ ] All four resolution-path lighting grades are distinct
 - [ ] Swan danger zone has discoverable visual cues
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -672,7 +671,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 | Seedy Underbelly Present | ✅ | Night park underclass (philosopher's bottle), vicious swans, guilt economies |
 | Gameplay Value Established | ✅ | Quest resolution with four endings, trust mechanic, permanent unlocks |
 | Technical Feasibility | ✅ | 10 sheets, atlas plan, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 60 FPS, <45 draw calls, <45 MB, 60 particles |
+| Performance Budget | ✅ | 60 FPS, <45 draw calls, <45 MB, 60 particles |
 | Accessibility Features | ✅ | Visual audio cues, static motion variants, shape-based Skittles reads |
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Six screenshot moments identified; Path B built as shareable |

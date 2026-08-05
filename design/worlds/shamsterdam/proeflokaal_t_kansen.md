@@ -104,7 +104,7 @@
 - **Lighting Setup**: Real candlelight flicker, minimal electric supplementation, window glow
 - **Particle Systems**: Sawdust dust motes, candle smoke, jenever vapor
 - **Animation Elements**: Candlelight flicker, liquid surface tension physics, bartender pour
-- **Mobile Optimization**: Simplified candlelight, static sawdust, reduced particle count
+- **Performance Optimization**: Simplified candlelight, static sawdust, reduced particle count
 
 ## Satirical Design
 ### Theme & Vibe

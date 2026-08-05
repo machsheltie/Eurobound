@@ -71,7 +71,7 @@
   - Keys swaying on wall hook
   - Fergus's resigned sighing
   - Computer screen flickering
-- **Mobile Optimization**: Simple indoor scene, focus on Fergus character work
+- **Performance Optimization**: Simple indoor scene, focus on Fergus character work
 
 ---
 

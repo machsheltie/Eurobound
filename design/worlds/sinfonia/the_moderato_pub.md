@@ -77,7 +77,7 @@ Every detail reinforces musical obsession:
 - **Lighting Setup**: Warm tavern glow, stage spotlights, natural window light (day)
 - **Particle Systems**: Steam from kitchen, beer foam, candle flicker, dust motes
 - **Animation Elements**: Beer pouring, NPC gesturing, metronome ticking, dart throwing
-- **Mobile Optimization**: Static background patrons, simplified bar animations, pre-rendered crowd
+- **Performance Optimization**: Static background patrons, simplified bar animations, pre-rendered crowd
 
 ## Satirical Design
 ### Theme & Vibe

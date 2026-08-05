@@ -75,7 +75,7 @@
 - **Lighting Setup**: Pink wash everything, spotlight on stage, UV accents, deliberately dim house lights
 - **Particle Systems**: Fog machine haze, glitter particles (persistent), neon glow
 - **Animation Elements**: Stage lights rotating, fog drift, crowd reaction waves, promoter gesturing
-- **Mobile Optimization**: Simplified fog effects, reduced particle glitter, static crowd on older devices
+- **Performance Optimization**: Simplified fog effects, reduced particle glitter, static crowd on older devices
 
 ## Satirical Design
 ### Theme & Vibe

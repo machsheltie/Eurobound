@@ -97,7 +97,7 @@ Items Deirdre offers before you know you need them:
 - **Lighting Setup**: Warm cart lights, steam rising, comforting glow
 - **Particle Systems**: Food steam, warm light particles, cozy atmosphere
 - **Animation Elements**: Deirdre's knowing smile, pot stirring, food serving
-- **Mobile Optimization**: Simplified steam, single NPC focus
+- **Performance Optimization**: Simplified steam, single NPC focus
 
 ## Satirical Design
 ### Theme & Vibe

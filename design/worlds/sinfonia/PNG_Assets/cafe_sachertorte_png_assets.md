@@ -331,7 +331,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Trigger:** Player orders incorrectly, in English, or under-tips
 - **Purpose:** The café's core social weapon — disapproval as ambience
 - **Audio Sync:** Faint disappointed exhale on frame 3
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Herr Ober Horror:
 - **Duration:** ~0.67 seconds, single play
@@ -340,7 +340,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Trigger:** Gustav's entry through the patio door
 - **Purpose:** Thirty years of service collapsing in four frames
 - **Audio Sync:** German exclamation on frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Herr Ober Fury:
 - **Duration:** 0.75 second loop
@@ -349,7 +349,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Trigger:** Post-rampage confrontation
 - **Purpose:** Drives the 340 Sovs debt-assignment scene
 - **Audio Sync:** None (dialogue carries it)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Coffee Steam:
 - **Duration:** 1.5 second cycle
@@ -358,7 +358,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Trigger:** Constant on served cups and counter
 - **Purpose:** Warm, expensive stillness before the storm
 - **Audio Sync:** None
-- **Mobile Optimization:** Halve emitter density (8 → 4 sources)
+- **Performance Optimization:** Halve emitter density (8 → 4 sources)
 
 ### Marble Table Tipping:
 - **Duration:** 0.3 seconds
@@ -367,7 +367,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Trigger:** Gustav collision during rampage
 - **Purpose:** Each crash increments the damage counter — comedy through accounting
 - **Audio Sync:** Crash + cash-register ching on impact frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Sachertorte Consumption:
 - **Duration:** ~2 seconds (hold on Bitten for dramatic effect)
@@ -376,7 +376,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Trigger:** Gustav reaching the display case
 - **Purpose:** The 28 Sovs bite — the quest's signature crime
 - **Audio Sync:** Disturbing eating sounds per bite
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Chandelier Sway:
 - **Duration:** 2 second cycle during chaos
@@ -385,7 +385,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Trigger:** Rampage screen shake
 - **Purpose:** Sustained will-it-fall tension (it never falls — the relief sparkle is the punchline)
 - **Audio Sync:** Crystal tinkle on each direction change
-- **Mobile Optimization:** Static frame on low-end devices
+- **Performance Optimization:** Static frame on low-end devices
 
 ---
 
@@ -422,11 +422,10 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); cake display case needs ASTC 4x4 — the Sachertorte must gleam
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) cake display case stays uncompressed — the Sachertorte must gleam
 - **Fallback:** PNG high quality for landmarks sheet (display case is screenshot-critical)
 
 ### Texture Atlases:
@@ -436,7 +435,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 | cafe_characters | Herr Ober, regulars & staff | 1024x512 |
 | cafe_effects_ui | effects, UI elements | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -605,7 +604,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - [ ] Emotional arc of Herr Ober is palpable
 - [ ] Economic satire elements visible (hidden charges, prices)
 - [ ] Post-quest changes tell complete story
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -622,7 +621,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 | Seedy Underbelly Present | ✅ | Fake Emperor's letter, "American adjustment" surcharge, tourist detection pricing |
 | Gameplay Value Established | ✅ | Shop, quest phase 2, debt system, status effects, Valued Patron path |
 | Technical Feasibility | ✅ | Seven sheets, atlas plan, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 40 draw calls, 38 MB, 30 particles |
+| Performance Budget | ✅ | 60 FPS, 40 draw calls, 38 MB, 30 particles |
 | Accessibility Features | ✅ | Visual cues for all audio events; static motion variants |
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Cake heist and damage-counter moments identified |

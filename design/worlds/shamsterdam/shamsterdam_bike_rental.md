@@ -493,7 +493,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 - **Particle Budget**: 20 (minimal)
 - **Target FPS**: 60
 
-### Mobile Optimization
+### Performance
 - Simple interior geometry
 - Pre-rendered bike fleet (not individual models)
 - Dialogue-heavy (low animation requirements)
@@ -558,7 +558,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 - [x] Recurring visits have fresh content
 - [x] Quest integration enhances replayability
 
-### Mobile Optimization
+### Performance
 - [x] Simple interior design
 - [x] Menu-based primary interactions
 - [x] Quick dialogue exchanges

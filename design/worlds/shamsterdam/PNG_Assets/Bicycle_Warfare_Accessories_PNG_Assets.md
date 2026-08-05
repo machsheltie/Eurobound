@@ -264,7 +264,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 - **Trigger:** Player tests bell at Testing Area
 - **Purpose:** Comedy escalation — each tier louder than expected
 - **Audio Sync:** Distinct bell tone per tier, onset locked to wave frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Horn Blast Test (Sheet 6):
 - **Duration:** 0.8 seconds (4 frames at 5 FPS), single play + 0.4s neighbor "!?" popup
@@ -273,7 +273,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 - **Trigger:** Player tests Tier 4 air horn
 - **Purpose:** Peak of the bell test comedy build; shop neighbors react
 - **Audio Sync:** Air horn blast at frame 1, muffled neighbor complaint at frame 4
-- **Mobile Optimization:** Drop window-rattle lines on Low LOD
+- **Performance Optimization:** Drop window-rattle lines on Low LOD
 
 ### Werner Assessment (Sheet 3):
 - **Duration:** 1.5 seconds (3 frames at 2 FPS), plays once per consultation
@@ -282,7 +282,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 - **Trigger:** Player initiates purchase consultation
 - **Purpose:** The Werner Method — assess, prescribe, hope
 - **Audio Sync:** Low "hmm" on frame 2
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Customer Decision Anxiety (Sheet 4):
 - **Duration:** 2 second fidget loop (3 frames at 1.5 FPS)
@@ -291,7 +291,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 - **Trigger:** Constant on spawned customers
 - **Purpose:** Ambient tension; everyone in here is scared or should be
 - **Audio Sync:** None
-- **Mobile Optimization:** Static frame 1 on Low LOD
+- **Performance Optimization:** Static frame 1 on Low LOD
 
 ### Bell Wall Shimmer (Sheets 2, 6):
 - **Duration:** 3-second interval, 0.5-second sparkle (4 frames at 8 FPS)
@@ -300,7 +300,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 - **Trigger:** Constant ambient
 - **Purpose:** The arsenal gleams; harsh retail lighting on chrome
 - **Audio Sync:** None
-- **Mobile Optimization:** Disabled on Low LOD
+- **Performance Optimization:** Disabled on Low LOD
 
 ### Confidence Buff Aura (Sheet 6):
 - **Duration:** 1 second (3 frames at 3 FPS), single play then icon persists
@@ -309,7 +309,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 - **Trigger:** Any purchase completed
 - **Purpose:** Visualizes +Confidence (not +Survival)
 - **Audio Sync:** Cash register "ka-ching" at frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -343,11 +343,10 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); map section and signage need higher quality (readable text)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); map section and signage need higher quality (readable text)
 - **Fallback:** PNG high quality for Tourist Route Map (danger-zone text must be legible)
 
 ### Texture Atlases:
@@ -357,7 +356,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 | bwa_characters | Werner/Koen, customers | 1024x512 |
 | bwa_effects | items, effects, UI | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -509,7 +508,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (military sincerity applied to bell retail)
 - [ ] Hidden areas/interactions have discoverable visual cues (testing area foam, tier highlight states)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (map hatching, tier numerals)
 - [ ] Social media viral potential maximized in composition choices (bell wall as hero shot)
@@ -526,7 +525,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 | Seedy Underbelly Present | ✅ | Selling confidence to people who need skills; +Confidence not +Survival |
 | Gameplay Value Established | ✅ | Bell tier purchases, test mechanic, equipped status, achievement track, bike combat hooks |
 | Technical Feasibility | ✅ | Single-room shop, CPU particles, one parallax layer documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 12 draw calls, 30 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, 12 draw calls, 30 MB per profile budget |
 | Accessibility Features | ✅ | Waveform volume mirrors, map hatching, reduced-motion variants, 44px zones |
 | No Crypto Elements | ✅ | Pure analog cycling equipment (Tier 5 "smart bell" is satire of tech, no blockchain) |
 | Social Media Integration | ✅ | 4 screenshot moments + quote bank identified |

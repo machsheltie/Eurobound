@@ -155,7 +155,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - Dorm Aisle Floor is the only tiled asset; it must seam on all four edges
 - THE BUNK, its stain, and its draft source ship as separate elements so the bunk can be assembled at any dorm slot, but the canonical placement is the bottom corner nearest the draft
 - Mattress plate contains three depression variants sampled at random per bunk on scene load
-- All passive-aggressive notes and signage are baked at 2x internal resolution and flagged for the ASTC 4x4 exception list — the note text is a primary comedy delivery vector
+- All passive-aggressive notes and signage are baked at 2x internal resolution and flagged for the uncompressed-texture exception list — the note text is a primary comedy delivery vector
 
 ---
 
@@ -464,7 +464,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - **Trigger:** Constant
 - **Purpose:** The first thing you see, malfunctioning, and nobody has ever mentioned it
 - **Audio Sync:** Faint ballast buzz on each burst
-- **Mobile Optimization:** Low LOD uses the static flicker plate (profile requirement: simplified lighting flicker); disabled in reduced-motion mode
+- **Performance Optimization:** Low LOD uses the static flicker plate (profile requirement: simplified lighting flicker); disabled in reduced-motion mode
 
 ### Snore Cycle (Sheets 6 & 7):
 - **Duration:** 3.2 seconds per cycle per sleeper
@@ -473,7 +473,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - **Trigger:** Overnight dorm scene with any sleeping NPC present
 - **Purpose:** Two-plus sources, varying intensity, permanently out of step
 - **Audio Sync:** Each waveform shape maps to a distinct snore sample; Nigel's is the loudest and the most recognisable
-- **Mobile Optimization:** Low LOD uses the static snore plate (profile requirement: simplified snoring visualization) and caps audible sources at two
+- **Performance Optimization:** Low LOD uses the static snore plate (profile requirement: simplified snoring visualization) and caps audible sources at two
 
 ### The 5 AM Alarm (Sheets 4, 6, 7, 8):
 - **Duration:** 4.0 seconds (0.4s buzz ring expand, 3.2s persistence, 0.4s fade) repeating every 9 minutes until manually dismissed
@@ -482,7 +482,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - **Trigger:** 5 AM game clock, high probability per night
 - **Purpose:** The location's defining running gag
 - **Audio Sync:** Alarm tone at 0.0s of each repetition; Takeshi's apology plays at 8 AM in the kitchen, not at 5 AM
-- **Mobile Optimization:** Ring expand reduced to a static pulse on Low LOD; the sound and the disruption event are never cut
+- **Performance Optimization:** Ring expand reduced to a static pulse on Low LOD; the sound and the disruption event are never cut
 
 ### Sleep Quality Roll (Sheets 4 & 8):
 - **Duration:** 2.4 seconds (0.8s dice tumble, 0.4s settle, 1.2s result + disruption popup)
@@ -491,7 +491,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - **Trigger:** Sleeping in any bed (also the save point)
 - **Purpose:** Save your game, gamble your stats — the tactical tension of the entire location
 - **Audio Sync:** Dice rattle 0.0-0.8s; result tone at 1.2s; the disruption's own sound cue at 1.6s
-- **Mobile Optimization:** Dice snap to result in reduced-motion mode; the meter still fills
+- **Performance Optimization:** Dice snap to result in reduced-motion mode; the meter still fills
 
 ### The Kitchen Confessional (Sheets 6, 7, 8):
 - **Duration:** Rolling; gossip bubbles surface every 6-10 seconds while the player remains in the kitchen between 7-10 AM
@@ -500,7 +500,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - **Trigger:** Entering the kitchen in the morning window after any night out
 - **Purpose:** The exposition engine — location hints, quest clues, price warnings, and NPC connections all arrive here
 - **Audio Sync:** Overlapping morning chatter bed; the current speaker's line rises above it
-- **Mobile Optimization:** Kitchen Morning Block reduces to three visible figures on Low LOD (profile requirement: reduced NPC count)
+- **Performance Optimization:** Kitchen Morning Block reduces to three visible figures on Low LOD (profile requirement: reduced NPC count)
 
 ### Bathroom Queue (Sheets 6 & 8):
 - **Duration:** 1.6-second shuffle cycle per queued NPC, phase-offset
@@ -509,7 +509,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - **Trigger:** Morning bathroom scene
 - **Purpose:** Five to fifteen minutes of real waiting, visualised as collective weight-shifting
 - **Audio Sync:** Occasional shower gasp from behind a door; a flush every twenty seconds
-- **Mobile Optimization:** Queue caps at four visible figures on Low LOD
+- **Performance Optimization:** Queue caps at four visible figures on Low LOD
 
 ### THE BUNK Assignment (Sheets 3 & 8):
 - **Duration:** 2.0 seconds (0.6s camera settle on the bunk, 1.4s detail hold)
@@ -518,7 +518,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - **Trigger:** Selecting or being assigned THE BUNK
 - **Purpose:** Everyone knows which one. Now you know which one.
 - **Audio Sync:** A faint draft whistle that is present nowhere else in the building
-- **Mobile Optimization:** None needed (one-shot)
+- **Performance Optimization:** None needed (one-shot)
 
 ---
 
@@ -567,11 +567,10 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); all passive-aggressive notes, bulletin flyers, House Rules poster, TripAdvisor sticker, deposit receipt, check-out slip, and all portraits at ASTC 4x4
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) all passive-aggressive notes, bulletin flyers, House Rules poster, TripAdvisor sticker, deposit receipt, check-out slip, and all portraits kept uncompressed
 - **Fallback:** PNG high quality for both room sheets (the night dorm grade and the fluorescent wash both band under lossy compression)
 
 ### Texture Atlases:
@@ -581,7 +580,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | hostel_characters | npc_hostel_staff, npc_hostel_guests | 1024x1024 |
 | hostel_fx_ui | hostel_objects, hostel_effects, hostel_ui | 1024x1024 |
 
-*(The two room sheets load and unload as paired-room units — only one is resident in normal play. Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(The two room sheets load and unload as paired-room units — only one is resident in normal play. Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -764,7 +763,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 - [ ] Satirical theme is clear throughout all assets (targets are hostel economics, budget-travel romanticism, and backpacker gatekeeping — not budget travellers or hospitality workers)
 - [ ] Staff read as fellow exhausted travellers, not villains
 - [ ] Hidden areas/interactions have discoverable visual cues (the good shower, THE BUNK, bulletin board hooks, the labelled fridge shelf)
-- [ ] Mobile performance optimized (paired-room streaming, CPU particles, atlas limits respected, static flicker/snore fallbacks, reduced dorm NPC counts)
+- [ ] Performance optimized (paired-room streaming, CPU particles, atlas limits respected, static flicker/snore fallbacks, reduced dorm NPC counts)
 - [ ] Touch zone sizing considered (44px minimum for room options, flyers, Bravado choices, and the bed)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (named sleep tiers, percentage text on fridge safety, glyph-coded disruption events)
 - [ ] Social media viral potential maximized in composition choices (THE BUNK framing, note wall readability, alarm-ring staging, dice odds transparency)
@@ -781,7 +780,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Seedy Underbelly Present | ✅ | Selling community while profiting from discomfort; 50 Sovs "deposit" that is a fee; 8 Sovs locks at 3x market; the always-"fully booked" private room |
 | Gameplay Value Established | ✅ | Save point coupled to a sleep-quality gamble, six-event disruption table, kitchen hint delivery, fridge politics, bathroom queue, bulletin hooks, ICQ trigger, couchsurf branch |
 | Technical Feasibility | ✅ | Paired-room streaming, static flicker/snore fallbacks per profile, reduced dorm NPC counts per profile, pre-composed group blocks |
-| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 14 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 14 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including a non-expanding alarm ring, named sleep tiers, 44px touch zones |
 | No Crypto Elements | ✅ | Pure hostel chaos; the only unrecoverable deposit is the 50 Sovs damage one |
 | Social Media Integration | ✅ | 5 screenshot moments + 8 quotable lines identified |

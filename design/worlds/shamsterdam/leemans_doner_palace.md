@@ -83,7 +83,7 @@
 - **Lighting Setup**: Bright fluorescent inside, warm meat glow, beacon in darkness
 - **Particle Systems**: Steam from meat, grease sizzle, bread warmth
 - **Animation Elements**: Rotating meat towers, Mehmet carving, customer waiting
-- **Mobile Optimization**: Simplified tower rotation, static steam effects
+- **Performance Optimization**: Simplified tower rotation, static steam effects
 
 ## Satirical Design
 ### Theme & Vibe

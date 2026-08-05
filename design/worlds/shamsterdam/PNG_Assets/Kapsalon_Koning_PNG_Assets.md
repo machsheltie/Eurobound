@@ -277,7 +277,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Trigger:** Any kapsalon order
 - **Purpose:** Visible theater — the five layers are the show
 - **Audio Sync:** Fry basket shake 0.0s; meat shave 1.2s; salamander sizzle-bubble begins 2.4s; sauce double-squirt 4.8s; tray-slide 6.0s
-- **Mobile Optimization:** Low LOD uses static assembly (profile requirement) — single composed frame + serve
+- **Performance Optimization:** Low LOD uses static assembly (profile requirement) — single composed frame + serve
 
 ### Cheese Bubble (Sheet 6):
 - **Duration:** 0.8 seconds per loop (0.4s per frame)
@@ -286,7 +286,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Trigger:** Assembly step 3, and ambient when Kemal runs the station
 - **Purpose:** That specific sizzle-bubble of melting Gouda — the location's heartbeat
 - **Audio Sync:** Sizzle-bubble loop amplitude tied to loop phase
-- **Mobile Optimization:** Static cheese frame on Low LOD (profile: static cheese effects)
+- **Performance Optimization:** Static cheese frame on Low LOD (profile: static cheese effects)
 
 ### Fork Break Event (Sheet 6):
 - **Duration:** 1.1 seconds (0.3s strain, 0.2s snap, 0.6s disbelief hold)
@@ -295,7 +295,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Trigger:** Eating progress crosses 40% on first-ever kapsalon
 - **Purpose:** Inevitable tradition; "the fork breaks because you eat with passion"
 - **Audio Sync:** Plastic SNAP exactly at frame 2 start (0.3s); beat of silence; Wim's line at 1.1s
-- **Mobile Optimization:** None needed (one-shot, comedy-critical — never cut)
+- **Performance Optimization:** None needed (one-shot, comedy-critical — never cut)
 
 ### Food Coma (Sheets 5 & 6):
 - **Duration:** 3.0-second settle, then held overlay for one combat turn
@@ -304,7 +304,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Trigger:** 20% chance (Large), 40% (excess speed), 100% (King Size)
 - **Purpose:** "The coma is the body processing greatness. Accept it."
 - **Audio Sync:** Soft snore loop; triumphant chime on full-heal recovery
-- **Mobile Optimization:** Z drift at half rate on Low LOD
+- **Performance Optimization:** Z drift at half rate on Low LOD
 
 ### Döner Tower Rotation (Sheet 2):
 - **Duration:** 2.0 seconds per visual cycle
@@ -313,7 +313,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Trigger:** Constant during open hours
 - **Purpose:** The soul supply, steadily turning
 - **Audio Sync:** None (ambient sizzle bed)
-- **Mobile Optimization:** Static frame on Low LOD
+- **Performance Optimization:** Static frame on Low LOD
 
 ### Neon & Crown Glow (Sheet 6):
 - **Duration:** Neon 0.5s flicker burst ~every 30s; crown glow 3s breathe
@@ -322,7 +322,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Trigger:** Clock-based
 - **Purpose:** Late-night beacon energy, brighter chaos than Leeman's
 - **Audio Sync:** Faint neon buzz on flicker
-- **Mobile Optimization:** Both static on Low LOD; disabled in reduced-motion mode
+- **Performance Optimization:** Both static on Low LOD; disabled in reduced-motion mode
 
 ### Wall of Fame Induction (Sheets 2, 3, 6):
 - **Duration:** 2.5 seconds (flash 0.2s, photo slide 1.0s, hold 1.3s)
@@ -331,7 +331,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - **Trigger:** King Size completed under Wim's witness
 - **Purpose:** Eternal recognition; the wall remembers
 - **Audio Sync:** Camera click at 0.0s; applause murmur at 1.2s
-- **Mobile Optimization:** Flash replaced by instant photo placement in reduced-motion mode
+- **Performance Optimization:** Flash replaced by instant photo placement in reduced-motion mode
 
 ---
 
@@ -368,11 +368,10 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); menu board, layer diagram, and portraits at ASTC 4x4 (readable text/faces)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) menu board, layer diagram, and portraits kept uncompressed (readable text/faces)
 - **Fallback:** PNG high quality for kapsalon_interior_main.png (scene-detail critical)
 
 ### Texture Atlases:
@@ -382,7 +381,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | kapsalon_characters | npc_wim_kemal, npc_kapsalon_customers | 2048x1024 |
 | kapsalon_fx_ui | kapsalon_food_items, kapsalon_effects, kapsalon_ui | 1024x1024 |
 
-*(kapsalon_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(kapsalon_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -537,7 +536,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (celebrating the absurdity, never mocking the culture)
 - [ ] Hidden areas/interactions have discoverable visual cues (Wall of Fame slots, Both Sauces reverence highlight, Battle Tray)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, static assembly fallback)
+- [ ] Performance optimized (CPU particles, atlas limits respected, static assembly fallback)
 - [ ] Touch zone sizing considered (44px minimum for size/sauce/meat options)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (sauce container shapes, segmented risk meter)
 - [ ] Social media viral potential maximized in composition choices (fork break framing, cross-section diagram)
@@ -554,7 +553,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Seedy Underbelly Present | ✅ | 1200-calorie 3 AM cardiovascular events, cheese-on-everything philosophy at its conclusion |
 | Gameplay Value Established | ✅ | Ordering system, two status effects, fork event, King Size challenge, collectible tray |
 | Technical Feasibility | ✅ | Static assembly/cheese fallbacks per profile; overlay-based glow; group blocks |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion set, 44px touch zones |
 | No Crypto Elements | ✅ | Pure cheese-based currency of satisfaction |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |

@@ -442,7 +442,7 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
@@ -614,7 +614,7 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 ### Quality Checkpoints:
 - [ ] Satirical theme (absurdist persistence treated with dignity) is clear throughout all assets
 - [ ] Easter eggs discoverable: obsessively highlighted #17 route, Jiří's margin notes, less-worn #17 tracks
-- [ ] Mobile performance optimized (6-pigeon cap, on-demand Visit 13+ loading, tween-scroll trams)
+- [ ] Performance optimized (6-pigeon cap, on-demand Visit 13+ loading, tween-scroll trams)
 - [ ] Touch zone sizing considered (44px minimum — Jiří hotspot and dialogue options compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (symbol-based mood icons, numbered trams)
 - [ ] Social media viral potential maximized (transformation side-by-side, plaque and reunion compositions)
@@ -630,11 +630,11 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 | Satirical Targets | ✅ PASS (absurdist persistence) |
 | Gameplay Value | ✅ PASS (directions, buff, emotional content) |
 | No Crypto Elements | ✅ PASS |
-| Mobile Optimization | ✅ PASS |
+| Performance & Assets | ✅ PASS |
 | Progressive Visual Changes | ✅ PASS (6 Jiří states, 6 bench states) |
 | Seedy Underbelly Present | ✅ PASS (hidden tragedy beneath the absurdity) |
 | Technical Feasibility | ✅ PASS (simple outdoor scene, on-demand state loading) |
-| Mobile Performance Budget | ✅ PASS (60 FPS, 12 draw calls, 15MB) |
+| Performance Budget | ✅ PASS (60 FPS, 12 draw calls, 15MB) |
 | Accessibility Features | ✅ PASS (tram bell/number visual cues, steady-flame variants) |
 | Social Media Integration | ✅ PASS (viral moments identified) |
 

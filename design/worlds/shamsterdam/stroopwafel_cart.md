@@ -69,7 +69,7 @@
 - **Lighting Setup**: Natural outdoor light, steam glow, warm caramel shine
 - **Particle Systems**: Steam rising from irons, caramel drip sparkle, warmth waves
 - **Animation Elements**: Iron press/release, caramel spreading, cart mobile repositioning
-- **Mobile Optimization**: Simplified steam, static cart, reduced particle effects
+- **Performance Optimization**: Simplified steam, static cart, reduced particle effects
 
 ## Satirical Design
 ### Theme & Vibe

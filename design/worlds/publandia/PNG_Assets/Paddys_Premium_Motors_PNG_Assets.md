@@ -391,7 +391,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
@@ -559,7 +559,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 ### Quality Checkpoints:
 - [ ] Satirical theme (tourist overconfidence vs. resigned fatalism) is clear throughout all assets
 - [ ] Easter eggs discoverable: ring box, "WORLD'S MOST PATIENT DAD" mug, "Reserved for next" polaroid slot, fine-print insurance exclusion
-- [ ] Mobile performance optimized (20-drop rain cap, 1-2 sheep, alpha-toggle flicker, static polaroids)
+- [ ] Performance optimized (20-drop rain cap, 1-2 sheep, alpha-toggle flicker, static polaroids)
 - [ ] Touch zone sizing considered (44px minimum — rental menu rows, add-on icons, examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (letter-tagged key fobs, icon-shaped add-ons)
 - [ ] Social media viral potential maximized (Board of Shame framing, thousand-yard-stare composition)
@@ -575,10 +575,10 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 | Satirical Targets | ✅ PASS (Tourist overconfidence) |
 | Gameplay Value | ✅ PASS (Quest trigger, shop) |
 | No Crypto Elements | ✅ PASS |
-| Mobile Optimization | ✅ PASS |
+| Performance & Assets | ✅ PASS |
 | Seedy Underbelly | ✅ PASS (Mary's disappearance) |
 | Technical Feasibility | ✅ PASS (simple interior/exterior, fade transition) |
-| Mobile Performance Budget | ✅ PASS (60 FPS, 15 draw calls, 20MB) |
+| Performance Budget | ✅ PASS (60 FPS, 15 draw calls, 20MB) |
 | Accessibility Features | ✅ PASS (visual key-slide/bell cues, steady-light variants) |
 | Social Media Integration | ✅ PASS (viral moments identified) |
 

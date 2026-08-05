@@ -310,7 +310,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 
 ### Technical Notes:
 - Certificate template must be legible enough to screenshot — the serial number for tea is a shareable joke
-- Dust motes are the only looping ambient particle system; budget accordingly (see Mobile Optimization)
+- Dust motes are the only looping ambient particle system; budget accordingly (see Performance & Assets)
 - Clock pendulum runs ONLY during provenance speeches — its appearance is the comedy cue
 
 ---
@@ -416,7 +416,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Player selects any item to purchase
 - **Purpose:** Establishes that no object in this shop is merely picked up — everything is HANDLED
 - **Audio Sync:** Soft fabric rustle on frame 2; silence on frame 3 (reverence)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Herr Kurator Provenance Speech Loop:
 - **Duration:** 1.6 second cycle, looping for the full 30–60 second speech
@@ -425,7 +425,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Purchase confirmation (pre-Discerning Customer); cannot be interrupted without offense
 - **Purpose:** The location's core mechanic and core joke — sincerity sustained far past comfort
 - **Audio Sync:** Speech VO throughout; clock ticking begins 3 seconds in and persists to speech end
-- **Mobile Optimization:** Drop to 2-frame alternation (frames 1/3) on low-end devices
+- **Performance Optimization:** Drop to 2-frame alternation (frames 1/3) on low-end devices
 
 ### Herr Kurator Approving Nod:
 - **Duration:** 0.8 seconds, single play with 0.4 second hold
@@ -434,7 +434,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Discerning Customer uses "The usual, please."
 - **Purpose:** "You already understand." — the emotional payoff of 200 Sovs of accumulated speeches
 - **Audio Sync:** None (the silence IS the approval)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Certificate Handing:
 - **Duration:** 1.0 second, single play
@@ -443,7 +443,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Every completed purchase, without exception, forever
 - **Purpose:** You cannot escape the certificate; the animation refuses to end until you take it
 - **Audio Sync:** Paper crispness foley on frame 2
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Certificate Stamping:
 - **Duration:** 0.5 seconds, single play
@@ -452,7 +452,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Transaction finalization, behind the counter
 - **Purpose:** Bureaucratic ceremony for a 10 Sovs tea purchase
 - **Audio Sync:** Certificate stamp thunk exactly on impact frame (frame 3)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Specialty Cabinet Unlock:
 - **Duration:** 1.2 seconds, single play
@@ -461,7 +461,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** First specialty purchase attempt after reaching Discerning Customer status
 - **Purpose:** The retail rapture moment — access as sacrament
 - **Audio Sync:** Cabinet unlock click on frame 2; soft chord swell with glow
-- **Mobile Optimization:** Glow overlay replaced by static gold frame on low-end devices
+- **Performance Optimization:** Glow overlay replaced by static gold frame on low-end devices
 
 ### Reading Nook Page Turn:
 - **Duration:** 0.9 second cycle, loops while browsing
@@ -470,7 +470,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Player enters reading nook browse mode
 - **Purpose:** The obligation trap ambience — the comfy chair whispering "you'll feel bad leaving empty-handed"
 - **Audio Sync:** Page turning foley on frame 2 of each cycle
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Provenance Clock Ticking (UI):
 - **Duration:** 1.0 second cycle (tick → tock), loops for speech duration
@@ -479,7 +479,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Provenance speech active
 - **Purpose:** The comedy metronome — real time visibly leaving the player's life
 - **Audio Sync:** Clock ticking audio, one tick per frame swap
-- **Mobile Optimization:** None needed (2 frames is already minimal)
+- **Performance Optimization:** None needed (2 frames is already minimal)
 
 ### The Browser Polite Nod:
 - **Duration:** 2.0 second cycle, loops eternally
@@ -488,7 +488,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Constant while shop is open
 - **Purpose:** A living warning of what engaging fully costs
 - **Audio Sync:** Desperate sigh (quiet) on the glazed-stare beat
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Dust Motes Drift:
 - **Duration:** 4.0 second drift cycle
@@ -497,7 +497,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Constant, main floor and implements corner beams only
 - **Purpose:** Gallery gravitas — dust as set dressing for importance
 - **Audio Sync:** None
-- **Mobile Optimization:** Disabled entirely at Low LOD; halved (6 particles) at Medium
+- **Performance Optimization:** Disabled entirely at Low LOD; halved (6 particles) at Medium
 
 ### Certificate Flutter (Overflow Gag):
 - **Duration:** 1.2 seconds per certificate, single play
@@ -506,7 +506,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 - **Trigger:** Opening inventory while certificates outnumber items ("Overwhelmed" achievement state)
 - **Purpose:** The paperwork has won
 - **Audio Sync:** Soft paper flutter, one per falling certificate (max 3 concurrent)
-- **Mobile Optimization:** Single certificate falls instead of three on low-end devices
+- **Performance Optimization:** Single certificate falls instead of three on low-end devices
 
 ---
 
@@ -550,11 +550,10 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); certificate template and placard card frame need ASTC 4x4 — the paperwork must be legible, it's the joke
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) certificate template and placard card frame need uncompressed — the paperwork must be legible, it's the joke
 - **Fallback:** PNG high quality for UI sheet (text-bearing placards and certificate are screenshot-critical)
 
 ### Texture Atlases:
@@ -564,7 +563,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 | cache_characters | Herr Kurator, The Browser & ambient | 512x512 |
 | cache_items_ui | item roster, shop UI, accessibility overlays | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -730,7 +729,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets — curation-as-commerce reads without dialogue
 - [ ] Hidden areas/interactions have discoverable visual cues (Browser eye contact, cabinet glow, under-counter Forged Invitation)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, 14 draw call budget)
+- [ ] Performance optimized (CPU particles, atlas limits respected, 14 draw call budget)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices (certificate, overflow, selfie spot)
@@ -747,7 +746,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 | Seedy Underbelly Present | ✅ | Soft vice, honestly noted: Forged Invitation sold under the counter ("transferable, untraceable," 10% detection risk), deliberate exploitation of confused bros who "pay extra because it SEEMS important," and the reading-nook obligation trap — pretension economy rather than hard crime |
 | Gameplay Value Established | ✅ | Full 26-item general shop, provenance mechanic, certificate system, Discerning Customer progression, 4 quests + 7 achievements |
 | Technical Feasibility | ✅ | Seven sheets, three atlases, LOD tiers, state-swap architecture documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 35 MB, 12 particles (per source profile) |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 35 MB, 12 particles (per source profile) |
 | Accessibility Features | ✅ | Visual cues for all 7 audio events; static variants; shape-coded categories; 44px zones |
 | No Crypto Elements | ✅ | Pure retail curation satire; certificates are paper, pointedly |
 | Social Media Integration | ✅ | Tea certificate, "Help me.", inventory overflow, three selfie variants identified |

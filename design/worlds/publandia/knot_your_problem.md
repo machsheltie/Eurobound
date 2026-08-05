@@ -77,7 +77,7 @@ Eoin keeps it simple. Pretzels. Variations on pretzels. Nothing else.
 - **Lighting Setup**: Functional cart light, no ambiance, visibility only
 - **Particle Systems**: Pretzel steam, salt crystals, minimal effects
 - **Animation Elements**: Eoin's efficient movements, customer flow
-- **Mobile Optimization**: Simple cart, single NPC focus
+- **Performance Optimization**: Simple cart, single NPC focus
 
 ## Satirical Design
 ### Theme & Vibe

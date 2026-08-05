@@ -87,7 +87,7 @@ The café is named after Nora Barnacle, James Joyce's wife and muse. She was a G
 - **Lighting Setup**: Warm café lighting, screen glow, reading lamps
 - **Particle Systems**: Coffee steam, dust in light, screen flicker
 - **Animation Elements**: Typing NPCs, coffee pouring, selfie posing
-- **Mobile Optimization**: Simplified terminal section, reduced NPC count
+- **Performance Optimization**: Simplified terminal section, reduced NPC count
 
 ## Satirical Design
 ### Theme & Vibe

@@ -6,7 +6,7 @@
 - **MA canon restated at full strength:** the ONLY content ceiling is no nudity — beyond that, anything goes. The seedy underbelly is shown, glorified, and ridiculed. No safe-build mechanism (`SATIRE_MODE`, `line_safe`, string swaps) may ever be created. Satire targets everything; there is no narrator; "never targets locals" is struck.
 - **All tracked NPCs and locations as of 2026-08-03 are author-approved canon** — written by or with the author. This includes the full audit list (Cyberspace Kavarna, Internet History Museum, Mystery Meat Cart, The Participation Trophy, the four Debaucheryville breweries, Haute Couture Haberdashery, Bassline Opera House, Mozart's Last Rave, Café Existenz, Vape Witch Vanessa, Vlad the Validator, Suspicious Twins, Backpack Girl, CryptoBro69's Ex, Bartender Matrix, Slick Greg, the Black-Tie Backroom cast, Bohemian Riviera cast, and all Publandia/Sinfonia venues). None are agent-orphans; none get struck.
 - **Killed by author ruling:** Mirror Chad; Fistø's alternate ending and any sincerity arc (Fistø survives ONLY as the graffiti-quest philosopher-janitor); Reality Check enemies/ending; the Perspective status; "The Legend" finale boss; all PRD act beats; the Holy Keg as MacGuffin (demoted back to Lord Pilsner's personal sidequest); per-city Rival Trio showdowns (Rival Trio appears ONCE, in the NFT sidequest).
-- **Currency:** SOVS only — never euros, never the € display glyph, never koruna (supersedes the R5 spec §1.2 glyph rule; € price sweep pending).
+- **Currency:** SOVS only — never euros, never the € display glyph, never koruna (supersedes the R5 spec §1.2 glyph rule; € price sweep COMPLETED 2026-08-04).
 - **Platform:** Steam/desktop. The Apple-guidelines rationale for any content decision is void.
 - **NFTs:** 12 total, 4 per city, milestones 4/8/12; 12/12 epilogue is the author-dictated CryptoBro69 press-conference arrest ("DIAMOND HANDS FOREVER!").
 - **Shamsterdam is canon** — the author's fourth city, and the FINAL city of the trip (author ruling 2026-08-03): the crescendo before the airport; the finale happens there. **City order: Publandia → Debaucheryville → Sinfonia → Shamsterdam; visited cities stay open for backtracking.**
@@ -153,7 +153,11 @@ analyst reports from this session; contradictions list included.
 
 ## Merge notes 2026-08-04 (restructure -> main; flags for author/engine windows)
 
-- **Platform re-sweep needed on merged PNG specs:** the legacy-content merges (author-approved)
+- **Platform re-sweep: DONE 2026-08-04** (four mechanical passes repo-wide over design/,
+  legacy/ excluded: Mobile Optimization headings -> Performance & Assets, iOS/Android compression
+  bullets -> Desktop S3TC/BPTC with per-file descriptors preserved, ASTC-4x4 exception lists ->
+  uncompressed-texture exception lists, iPhone baselines -> min-spec; euro sweep also DONE - one
+  real usage fixed, remaining hits are exempt rule-statements). Original note: the legacy-content merges (author-approved)
   ported "Mobile Optimization Requirements" sections (iOS/PVRTC etc.) into the Dec-generation
   specs BEFORE the Steam/desktop ruling landed. Main's platform sweep only hit the old
   superseded copies. One mechanical pass over design/worlds/*/PNG_Assets/ to retitle/trim

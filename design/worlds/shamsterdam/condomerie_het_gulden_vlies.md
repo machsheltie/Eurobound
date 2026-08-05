@@ -86,7 +86,7 @@
 - **Lighting Setup**: Warm boutique lighting, spotlight on novelty section, intimate but visible
 - **Particle Systems**: Subtle golden shimmer (the fleece theme), clean atmosphere
 - **Animation Elements**: Customer browsing patterns, staff assistance, gift wrapping
-- **Mobile Optimization**: Simplified product displays, static lighting effects
+- **Performance Optimization**: Simplified product displays, static lighting effects
 
 ## Satirical Design
 ### Theme & Vibe

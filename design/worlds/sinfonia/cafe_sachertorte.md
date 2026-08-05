@@ -112,7 +112,7 @@
   - Newspaper rustle (reading NPCs)
   - Chandelier gentle sway (ambient)
   - Coffee pour steam (service animation)
-- **Mobile Optimization**:
+- **Performance Optimization**:
   - LOD Level 2 for detailed interior
   - Particle limit: 30 active
   - Draw call budget: 40
@@ -551,7 +551,7 @@ CafeSachertorte/
     └── PostQuestState
 ```
 
-### Mobile Optimization Notes
+### Performance Notes
 - Interior uses single scrolling background layer
 - NPC count limited to 6 during chaos (performance)
 - Particle effects minimal during high-action sequences
@@ -583,7 +583,7 @@ CafeSachertorte/
 - [x] Punches up at snobbery, not down at tradition
 - [x] Seedy underbelly present (staff alcoholism, fake history)
 
-### Mobile Optimization
+### Performance
 - [x] Touch zones appropriate (48px minimum)
 - [x] Memory budget defined (38MB)
 - [x] Draw calls limited (40)

@@ -446,7 +446,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
@@ -616,7 +616,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 ### Quality Checkpoints:
 - [ ] Satirical theme (mutual confident delusion, not malice) is clear throughout all assets — Jakub must read warm, never sinister
 - [ ] Every flash art design carries subtle duck qualities (foreshadowing requirement from design notes)
-- [ ] Mobile performance optimized (single room, alpha-toggle flickers, dust/smoke particle caps)
+- [ ] Performance optimized (single room, alpha-toggle flickers, dust/smoke particle caps)
 - [ ] Touch zone sizing considered (44px minimum — full-screen mini-game tap zone, 48px menu rows)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (hatched/iconed meter fills, never green-vs-red alone)
 - [ ] Social media viral potential maximized (reveal composition, certificate close-up framing)
@@ -632,10 +632,10 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 | Satirical Targets | ✅ PASS |
 | Gameplay Value | ✅ PASS |
 | No Crypto Elements | ✅ PASS |
-| Mobile Optimization | ✅ PASS |
+| Performance & Assets | ✅ PASS |
 | Seedy Underbelly Present | ✅ PASS (permanent decisions made in emotional states) |
 | Technical Feasibility | ✅ PASS (single room, character-animation focus) |
-| Mobile Performance Budget | ✅ PASS (60 FPS, 10-15 draw calls, 20MB) |
+| Performance Budget | ✅ PASS (60 FPS, 10-15 draw calls, 20MB) |
 | Accessibility Features | ✅ PASS (visual buzz/reveal cues, steady-light variants) |
 | Social Media Integration | ✅ PASS (viral moments identified) |
 

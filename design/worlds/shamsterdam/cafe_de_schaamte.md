@@ -65,7 +65,7 @@
 - **Lighting Setup**: Natural daylight (adjusts with time of day), warm string lights (evening), canal reflection shimmer (constant)
 - **Particle Systems**: Espresso steam, cigarette/weed smoke wisps, canal mist, bicycle dust
 - **Animation Elements**: Awning flutter in breeze, canal water reflections, NPCs sipping drinks, pigeons investigating crumbs, bicycles passing in background
-- **Mobile Optimization**: Simplified water reflections, reduced smoke particles, static awning on low-end devices
+- **Performance Optimization**: Simplified water reflections, reduced smoke particles, static awning on low-end devices
 
 ## Satirical Design
 ### Theme & Vibe

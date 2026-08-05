@@ -94,7 +94,7 @@
   - White lane markings (faded in places from 37 years of the 1987 van)
   - Tire marks from countless failed exit attempts
 
-### Mobile Optimization Notes
+### Performance Notes
 - **Vehicle Pre-Baking**: All circling vehicles use pre-animated loops (not real-time pathfinding)
 - **LOD Levels**: Distant vehicles simplified to colored rectangles
 - **Draw Call Budget**: Maximum 8 detailed vehicles on screen
@@ -885,7 +885,7 @@
 - **Particle Systems Active**: 2 (rain + exhaust)
 - **Draw Calls**: <50
 - **Memory Target**: <64MB for location
-- **Target Frame Rate**: 60fps on iPhone 8+
+- **Target Frame Rate**: 60fps on min-spec hardware
 
 ### Development Timeline
 - **Asset Creation**: 3-4 days (complex set-piece)

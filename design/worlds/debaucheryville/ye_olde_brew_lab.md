@@ -71,7 +71,7 @@
 - **Lighting Setup**: Overhead LED strips (cyan), vat bioluminescence (green), console screens (blue), hologram flicker (white)
 - **Particle Systems**: Foam bubbles, hologram glitches, vapor wisps, LED pathway pulses
 - **Animation Elements**: Robotic bartender rail movement, flavor console button sequences, vat bubbling, screen data scrolling
-- **Mobile Optimization**: Simplified vat reflections, reduced particle count for holograms, static LED pathways on low-end devices
+- **Performance Optimization**: Simplified vat reflections, reduced particle count for holograms, static LED pathways on low-end devices
 
 ## Satirical Design
 ### Theme & Vibe

@@ -46,7 +46,7 @@
 - **Lighting Setup**: Natural daylight, paper catching light, shadows from stacked manuscripts
 - **Particle Systems**: Paper flutter, dust motes, ink drips
 - **Animation Elements**: Sheet music rustling, metronome ticking, vendor squinting
-- **Mobile Optimization**: Simple cart, focus on paper texture and NPC interaction
+- **Performance Optimization**: Simple cart, focus on paper texture and NPC interaction
 
 ## Satirical Design
 ### Theme & Vibe

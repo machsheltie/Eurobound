@@ -448,7 +448,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Trigger:** Player enters the shop (every single time — the door always sticks)
 - **Purpose:** The comedy beat that announces every customer; commitment mechanic made physical
 - **Audio Sync:** Wood strain on the stick, bell jingle exactly on frame 4
-- **Mobile Optimization:** Shake lines dropped at Low LOD; timing untouched (the joke is sacred)
+- **Performance Optimization:** Shake lines dropped at Low LOD; timing untouched (the joke is sacred)
 
 ### Neon Sign Flicker:
 - **Duration:** 6-second loop with randomized 0-2s jitter
@@ -457,7 +457,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Trigger:** Constant while exterior is on screen
 - **Purpose:** "MURPHY'S LAWLESS" degrading to "MURPH'S LAWLE" — the sign itself obeys Murphy's Law
 - **Audio Sync:** Electrical pop on the Pop Flash frame
-- **Mobile Optimization:** Half-Dead held as static frame at Low LOD; reduced-motion uses accessibility steady frame
+- **Performance Optimization:** Half-Dead held as static frame at Low LOD; reduced-motion uses accessibility steady frame
 
 ### Fluorescent Flicker (The Dying Tube):
 - **Duration:** Random intervals, 20-50 seconds between events; each event 0.4s
@@ -466,7 +466,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Trigger:** Timer, interior only
 - **Purpose:** Keeps the interior slightly unreliable, like everything else in stock
 - **Audio Sync:** Fluorescent buzz rises just before each stutter
-- **Mobile Optimization:** Event frequency halved at Medium LOD; disabled at Low and in reduced-motion mode
+- **Performance Optimization:** Event frequency halved at Medium LOD; disabled at Low and in reduced-motion mode
 
 ### Refrigerator Death-Rattle:
 - **Duration:** 1.2 seconds per rattle, every 25-40 seconds
@@ -475,7 +475,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Trigger:** Timer, weighted to trigger when the player approaches the cold section
 - **Purpose:** The refrigerator is dying and has been for years; the hum is the shop's heartbeat
 - **Audio Sync:** Hum pitch drops then recovers across the rattle — the death-rattle audio gag
-- **Mobile Optimization:** Rattle becomes audio-only at Low LOD (sprite stays still)
+- **Performance Optimization:** Rattle becomes audio-only at Low LOD (sprite stays still)
 
 ### Murphy Counter Idle (Watching):
 - **Duration:** 12-second loop
@@ -484,7 +484,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Trigger:** Constant while Murphy is unengaged
 - **Purpose:** Murphy notices everything; the player should feel gently observed at all times
 - **Audio Sync:** Occasional sigh on the return beat (30% chance per loop)
-- **Mobile Optimization:** Gaze tracking dropped at Low LOD; blink retained
+- **Performance Optimization:** Gaze tracking dropped at Low LOD; blink retained
 
 ### Enthusiast Vibration:
 - **Duration:** 0.25-second loop (continuous)
@@ -493,7 +493,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Trigger:** Constant while The MurphyBoost Enthusiast is on screen
 - **Purpose:** Three cans of EXTREME rendered as pure frame data; warning and aspiration simultaneously
 - **Audio Sync:** None (the silence makes it worse)
-- **Mobile Optimization:** Drops to 2-frame 6 fps at Low LOD; static base frame in reduced-motion mode
+- **Performance Optimization:** Drops to 2-frame 6 fps at Low LOD; static base frame in reduced-motion mode
 
 ### Side-Effect Trigger:
 - **Duration:** 1.0 second, one-shot
@@ -502,7 +502,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Trigger:** Consumption roll fails (risk % check on item use)
 - **Purpose:** The moment of consequence — brief, ominous, then quietly permanent
 - **Audio Sync:** Ominous side-effect sting starts on frame 1; Murphy's knowing "hmm" 0.5s after settle if in shop
-- **Mobile Optimization:** Flash frame brightness capped at Low LOD; single-frame version in reduced-motion mode
+- **Performance Optimization:** Flash frame brightness capped at Low LOD; single-frame version in reduced-motion mode
 
 ### Condensation Drip:
 - **Duration:** 2.5 seconds per drip, staggered across fridge doors
@@ -511,7 +511,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Trigger:** Constant near cold section
 - **Purpose:** The fridges sweat; temperature reliability is visibly variable
 - **Audio Sync:** None
-- **Mobile Optimization:** Disabled at Low LOD
+- **Performance Optimization:** Disabled at Low LOD
 
 ---
 
@@ -564,11 +564,10 @@ assets/sprites/locations/publandia/murphys_lawless/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback for legacy devices); murphys_ui.png and murphy_seamus.png at ASTC 4x4 — text and portraits must stay crisp
-- **Android:** ETC2 with alpha for all sheets
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) murphys_ui.png and murphy_seamus.png kept uncompressed — text and portraits must stay crisp with alpha for all sheets
 - **Fallback:** Lossless PNG for murphys_ui.png (risk percentages and sign text are gameplay-critical reading)
 
 ### Texture Atlases:
@@ -579,7 +578,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | murphys_products | murphys_products_drinks, murphys_products_sundry | 512x512 |
 | murphys_fx_ui | murphys_effects, murphys_ui, murphys_accessibility | 1024x512 |
 
-*(All atlases well under the 2048x2048 mobile GPU compatibility ceiling.)*
+*(All atlases well under the 2048x2048 broad GPU compatibility ceiling.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -749,7 +748,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 ### Quality Checkpoints:
 - [ ] Satirical theme (3 AM desperation economics, side effects as features) is clear throughout all assets
 - [ ] Hidden interactions discoverable: back-of-fridge silhouette, weird nut, band shirt typo, card machine examine, back room glow through the ajar door
-- [ ] Mobile performance optimized (12 draw calls, 20-particle pool, alpha-toggle flicker, back room streamed on unlock)
+- [ ] Performance optimized (12 draw calls, 20-particle pool, alpha-toggle flicker, back room streamed on unlock)
 - [ ] Touch zone sizing considered (44px minimum — buy/cancel buttons, category tabs, all examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (hatch-pattern risk pips, numeral + pip redundancy, shape-distinct status icons, text label strip)
 - [ ] Social media viral potential maximized (half-dead neon framing, sober/drunk risk display comparison, Enthusiast vibration loop GIF-ability)
@@ -766,7 +765,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Seedy Underbelly Present | ✅ | Questionable products at exploitative prices, counterfeit merch, the "broken" card machine, the rumored back room |
 | Gameplay Value Established | ✅ | Shop + risk/side-effect system, sober/drunk information asymmetry, Frequent Sufferer progression, back room unlock, 4 quest hooks |
 | Technical Feasibility | ✅ | Single-scene interior, alpha-toggle flicker, streamed back room, CPUParticles2D — all documented above |
-| Mobile Performance Budget | ✅ | 60 FPS target (45 floor), 12 draw calls, 30 MB budget with ~16 MB asset payload, 20-particle cap |
+| Performance Budget | ✅ | 60 FPS target (45 floor), 12 draw calls, 30 MB budget with ~16 MB asset payload, 20-particle cap |
 | Accessibility Features | ✅ | Visual cues for all 8 audio events, steady-light variants, single-frame trigger, hatch-coded risk, 44px targets |
 | No Crypto Elements | ✅ | PASS — Murphy is cash-only for entirely different, entirely suspicious reasons |
 | Social Media Integration | ✅ | Six screenshot moments and seven quotable lines identified |

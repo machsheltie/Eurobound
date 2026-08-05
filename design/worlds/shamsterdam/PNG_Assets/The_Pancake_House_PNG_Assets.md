@@ -145,7 +145,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 
 ### Technical Notes:
 - Delft Tile Wall, Canal Railing, Restaurant Floor Tile, Copper Pans Run, and Wooden Beams Run must all seam cleanly; they are the location's five tiled assets
-- The Menu prop is baked at 2x internal resolution and flagged for the ASTC 4x4 exception list — the multi-page menu is a readable puzzle object, not set dressing
+- The Menu prop is baked at 2x internal resolution and flagged for the uncompressed-texture exception list — the multi-page menu is a readable puzzle object, not set dressing
 - Canal Boat sprite scrolls at a fixed rate across the terrace canal band; one instance active at a time, recycled
 - Heater Fee Notice is authored fully readable and is genuinely present in the scene; the joke is placement, not concealment
 
@@ -423,7 +423,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Trigger:** Constant
 - **Purpose:** The pancakes really are made fresh; that is the one thing that is exactly as advertised
 - **Audio Sync:** Batter hiss at 0.0s; spread scrape at 2.0s; flip slap at 4.0s; continuous griddle sizzle bed underneath
-- **Mobile Optimization:** Low LOD holds the plating frame with static steam (profile requirement: simplified kitchen animation, reduced steam)
+- **Performance Optimization:** Low LOD holds the plating frame with static steam (profile requirement: simplified kitchen animation, reduced steam)
 
 ### The Portion Revelation (Sheets 4, 6, 7):
 - **Duration:** 2.2 seconds (0.4s plate land, 0.4s desaturation beat, 1.4s reaction hold)
@@ -432,7 +432,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Trigger:** First plate arriving at the player's table
 - **Purpose:** "Is this... is this all of it?" — the location's central beat
 - **Audio Sync:** Plate on wood at 0.0s; a brief total audio dropout 0.4-0.8s (comedy-critical); ambient room returns at 0.8s; Marleen's line at 1.6s
-- **Mobile Optimization:** None needed (one-shot, cheap, load-bearing)
+- **Performance Optimization:** None needed (one-shot, cheap, load-bearing)
 
 ### The Syrup Situation (Sheets 4, 5, 7):
 - **Duration:** 3.0 seconds (1.2s pour, 0.4s pitcher empty, 1.4s Jesse explanation)
@@ -441,7 +441,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Trigger:** Any syrup request
 - **Purpose:** "Maple-FLAVOURED. Yes." The pitcher was always going to be this size.
 - **Audio Sync:** Pour cue 0.0-1.2s; a small hollow note when the pitcher empties at 1.2s
-- **Mobile Optimization:** Pour reduced to a static stream frame on Low LOD
+- **Performance Optimization:** Pour reduced to a static stream frame on Low LOD
 
 ### The Spek Explanation (Sheets 4 & 5):
 - **Duration:** 3.2 seconds (1.2s F1, 1.2s F2, 0.8s resignation hold)
@@ -450,7 +450,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Trigger:** Ordering the Spekpannenkoek
 - **Purpose:** He asks if it's okay. He already knows he is bringing the spek.
 - **Audio Sync:** Dialogue only; the inset slides in at 1.2s with a soft tick
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Bill Reveal (Sheets 4, 5, 7, 8):
 - **Duration:** 3.4 seconds (0.6s folder placement, 0.8s pause for reaction preparation, 2.0s line-by-line reveal)
@@ -459,7 +459,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Trigger:** Requesting the bill, or Jesse deciding it is time
 - **Purpose:** "Your total is... sixty-four Sovs. For three." Every line is correct.
 - **Audio Sync:** Folder placement 0.0s; silence 0.6-1.4s; a small dramatic sting on the total at 3.0s
-- **Mobile Optimization:** Lines snap in rather than stagger in reduced-motion mode
+- **Performance Optimization:** Lines snap in rather than stagger in reduced-motion mode
 
 ### Canal & Terrace Ambience (Sheets 3 & 7):
 - **Duration:** Boat traverse 18.0s; duck patrol 6.0s loop; heater glow 3.0s breathe
@@ -468,7 +468,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Trigger:** Terrace scene loaded
 - **Purpose:** The view you are paying for, plus the ducks you are not
 - **Audio Sync:** Boat horn on entry to frame; quacks on duck escalation frames
-- **Mobile Optimization:** Low LOD moors all boats (profile requirement: static boats), ducks reduce to a single pose
+- **Performance Optimization:** Low LOD moors all boats (profile requirement: static boats), ducks reduce to a single pose
 
 ### The Food Photograph (Sheets 4, 6, 8):
 - **Duration:** 1.8 seconds (0.6s frame compose, 0.4s capture, 0.8s caption prompt)
@@ -477,7 +477,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Trigger:** Player photographs any dish
 - **Purpose:** It genuinely looks good from above; the caption is where honesty costs Bravado
 - **Audio Sync:** Shutter at 0.6s
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -525,11 +525,10 @@ assets/sprites/locations/shamsterdam/pancake_house/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); the physical menu, chalkboard, heater fee notice, bill/receipt props, "As Featured In" clippings, and all portraits at ASTC 4x4
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) the physical menu, chalkboard, heater fee notice, bill/receipt props, "As Featured In" clippings, and all portraits kept uncompressed
 - **Fallback:** PNG high quality for `pancake_house_interior_main.png` and `pancake_house_terrace.png` (the warm interior gradient and the canal water band both band under lossy compression)
 
 ### Texture Atlases:
@@ -539,7 +538,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | pancake_house_characters | npc_pancake_house_staff, npc_pancake_house_customers | 1024x1024 |
 | pancake_house_fx_ui | pancake_house_food, pancake_house_effects, pancake_house_ui | 1024x1024 |
 
-*(Interior and terrace backgrounds load standalone; only one is resident at a time in normal play. Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Interior and terrace backgrounds load standalone; only one is resident at a time in normal play. Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -713,7 +712,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - [ ] Satirical theme is clear throughout all assets (the targets are tourist expectation and waterfront pricing — Dutch cuisine is depicted as legitimately excellent)
 - [ ] No staff sprite reads as predatory, smug, or complicit in a scam
 - [ ] Hidden areas/interactions have discoverable visual cues (menu photos at actual scale, heater fee notice, bread basket stand, second dining floor stairs)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, separate interior/terrace loads, static kitchen and boat fallbacks)
+- [ ] Performance optimized (CPU particles, atlas limits respected, separate interior/terrace loads, static kitchen and boat fallbacks)
 - [ ] Touch zone sizing considered (44px minimum for menu rows, toppings, page tabs, and caption choices)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (pattern-coded bill rules, labelled portion silhouettes, numbered learning-curve stages)
 - [ ] Social media viral potential maximized in composition choices (overhead plate framing, pitcher scale comparison, itemised bill readability)
@@ -730,7 +729,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Seedy Underbelly Present | ✅ | 18 Sovs for a 3 Sovs plate because it faces a canal, unadvertised heater fees, the automatic bread basket, per-topping surcharges surfacing after selection |
 | Gameplay Value Established | ✅ | Multi-page menu navigation, hidden-cost bill calculator, three revelation beats, Bravado contest branch, permanent Expectation Adjustment buff, shared learning-curve counter |
 | Technical Feasibility | ✅ | Separate interior/terrace loads, static kitchen and boat fallbacks per profile, pre-composed customer blocks, single recycled boat instance |
-| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 36 MB, 14 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 16 draw calls, 36 MB, 14 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all ten audio cues including the deliberate silence, reduced-motion set, optional running-total assist mode, 44px touch zones |
 | No Crypto Elements | ✅ | Pure tourist-trap dining; the only speculative instrument is the bread basket |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |

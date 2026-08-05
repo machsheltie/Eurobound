@@ -87,7 +87,7 @@
 - **Lighting Setup**: Faux candlelight (LED), stained glass effect, "library" mood
 - **Particle Systems**: Dust motes, fake candle flicker, graduation confetti
 - **Animation Elements**: Professor lecturing, students drinking, graduation ceremony
-- **Mobile Optimization**: Simplified Great Hall crowd, static portraits
+- **Performance Optimization**: Simplified Great Hall crowd, static portraits
 
 ## Satirical Design
 ### Theme & Vibe

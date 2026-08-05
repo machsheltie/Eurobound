@@ -92,7 +92,7 @@
 - **Lighting Setup**: Bright fluorescent, cheese glow from salamander, neon accent
 - **Particle Systems**: Cheese melt, steam rising, sauce drip
 - **Animation Elements**: Cheese melting, assembly process, fork breaking
-- **Mobile Optimization**: Simplified assembly animation, static cheese effects
+- **Performance Optimization**: Simplified assembly animation, static cheese effects
 
 ## Satirical Design
 ### Theme & Vibe

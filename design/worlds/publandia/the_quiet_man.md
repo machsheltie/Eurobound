@@ -110,7 +110,7 @@ The entire operation maintains the pretense that this is a pub quiz gone competi
 - **Lighting Setup**: Single spotlight on pit, dim everywhere else, dramatic
 - **Particle Systems**: Sawdust kicked up, sweat spray, occasional blood
 - **Animation Elements**: Fighting, crowd reactions, MC announcements
-- **Mobile Optimization**: Simplified crowd, reduced particle effects
+- **Performance Optimization**: Simplified crowd, reduced particle effects
 
 ## Satirical Design
 ### Theme & Vibe

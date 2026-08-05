@@ -455,7 +455,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - **Trigger:** Constant, exterior only
 - **Purpose:** The largest sign in the district, with two letters nobody has repaired since the 2017 ownership change
 - **Audio Sync:** Faint neon buzz, with a transformer tick on each flicker frame
-- **Mobile Optimization:** Held on the fully-lit frame in reduced-motion mode; retained at all LOD tiers otherwise (it is the location's landmark)
+- **Performance Optimization:** Held on the fully-lit frame in reduced-motion mode; retained at all LOD tiers otherwise (it is the location's landmark)
 
 ### Smoke Haze Drift (Sheet 7):
 - **Duration:** Continuous; individual wisps live 6-9 seconds
@@ -464,7 +464,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - **Trigger:** Constant while inside; density one tier higher upstairs
 - **Purpose:** "Permanent haze (ventilation is decorative)" — the room's defining physical property
 - **Audio Sync:** Ventilation hum bed, working audibly hard
-- **Mobile Optimization:** Density plate swaps High → Medium → Low; wisp particles disabled entirely on Low (profile-mandated simplified smoke)
+- **Performance Optimization:** Density plate swaps High → Medium → Low; wisp particles disabled entirely on Low (profile-mandated simplified smoke)
 
 ### Digital Menu Scroll (Sheets 2, 4):
 - **Duration:** 2.0 second loop (2 board frames plus 2 text strips at 0.5 FPS)
@@ -473,7 +473,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - **Trigger:** Constant, ground floor
 - **Purpose:** The brightest, most confident object in the room is the price list
 - **Audio Sync:** Faint digital scroll tick on each frame change
-- **Mobile Optimization:** Static menu board variant on Low LOD (profile-mandated static menu option)
+- **Performance Optimization:** Static menu board variant on Low LOD (profile-mandated static menu option)
 
 ### Bas's Sigh & No-Tobacco Explanation (Sheets 5, 7):
 - **Duration:** Sigh 1.2 seconds (2 frames at 1.7 FPS); No-Tobacco explanation 3.6 seconds (3 frames at ~0.83 FPS), single play
@@ -482,7 +482,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - **Trigger:** Tobacco-mixing attempt, or any question answered by the menu descriptions
 - **Purpose:** Professional exhaustion as a service standard; the correction is public and costs Bravado
 - **Audio Sync:** Flat-monotone VO across all three beats; a single audible exhale before beat 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Space Cake Victim Slow Blink (Sheet 5):
 - **Duration:** 3.6 seconds per blink (3 frames at 0.83 FPS), looping with 5-9 second gaps
@@ -491,7 +491,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - **Trigger:** Constant while the victim NPC is present (always, at every hour)
 - **Purpose:** The quietest and best joke in the building; a preview of the player's own next two hours
 - **Audio Sync:** None — the silence around him is the point
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### The Two-Hour Space Cake System (Sheets 4, 6, 7):
 - **Duration:** 120 minutes of game time; onset effect is 2.0 seconds (3 distortion rings at 1.5 FPS)
@@ -500,7 +500,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - **Trigger:** Space cake purchase and consumption; the timer persists across location changes
 - **Purpose:** The location's structural joke, paid off two hours later, probably somewhere else entirely
 - **Audio Sync:** Slightly distorted sound design ramps across the ring sequence; the music bed pitch-bends 4% down and stays there
-- **Mobile Optimization:** Warp vignette reduced to a static corner overlay on Low LOD; fully disabled in reduced-motion mode with the onset sting icon substituted
+- **Performance Optimization:** Warp vignette reduced to a static corner overlay on Low LOD; fully disabled in reduced-motion mode with the onset sting icon substituted
 
 ### Passport Fumble ID Check (Sheets 4, 6):
 - **Duration:** 4.0 second window (3 frames cycling at 1.5 FPS against a timing bar)
@@ -509,7 +509,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - **Trigger:** Door entry, every visit until Regular status
 - **Purpose:** "Bros fumble with passports for comedic effect" — failure costs nothing but dignity
 - **Audio Sync:** Zip, paper shuffle, and a Bouncer "ID." on the second failure
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Marieke's Upsell Pitch (Sheet 5):
 - **Duration:** 2.4 seconds (3 frames at 1.25 FPS), single play
@@ -518,7 +518,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - **Trigger:** Party of 3+ enters the merch gauntlet corridor
 - **Purpose:** Commission-based enthusiasm as the building's only remaining sincerity
 - **Audio Sync:** Bright VO over frame 2; hanger rattle on frame 1
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -562,11 +562,10 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); the exterior neon, the digital menu text strips, the 12-language NO TOBACCO sign and the TripAdvisor certificate all need higher-quality blocks — neon green on black is the single most compression-hostile combination in the project
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) the exterior neon, the digital menu text strips, the 12-language NO TOBACCO sign and the TripAdvisor certificate all need higher-quality blocks — neon green on black is the single most compression-hostile combination in the project
 - **Fallback:** PNG-24 high quality for `groene_gids_exterior.png` (the sign is the landmark and its flicker frames must not band) and the menu-text region of `groene_gids_merch_objects.png`
 
 ### Texture Atlases:
@@ -576,7 +575,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | groene_gids_interior_objects | groene_gids_upstairs_vip, groene_gids_merch_objects | 2048x1024 |
 | groene_gids_characters_ui | npc_groene_gids_cast, groene_gids_ui, groene_gids_effects_haze | 2048x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -703,7 +702,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | 6 | groene_gids_ui.png | 512x512 |
 | 7 | groene_gids_effects_haze.png | 512x512 |
 
-**Total Estimated Memory:** ~11.5 MB raw RGBA texture data (~5.1 MB after ASTC/ETC2 compression); ~40 MB maximum total runtime footprint per the location performance budget
+**Total Estimated Memory:** ~11.5 MB raw RGBA texture data (~5.1 MB after VRAM compression); ~40 MB maximum total runtime footprint per the location performance budget
 
 ---
 
@@ -750,7 +749,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (brand tourism, tourist-trap pricing and American etiquette failures — never cannabis users or Dutch coffeeshop culture)
 - [ ] Hidden areas/interactions have discoverable visual cues (Employee Break Countdown Chalk, "Same Room, Higher Price" wall tag, souvenir shops cheaper on both sides, Secret Menu at 3 visits)
-- [ ] Mobile performance optimized (three haze density plates, separate floor scenes, shared atlases, CPU particles only)
+- [ ] Performance optimized (three haze density plates, separate floor scenes, shared atlases, CPU particles only)
 - [ ] Touch zone sizing considered (44px minimum on counter, menu board, ATM, merch wall, stairs, purchase buttons)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (menu tier hatching, status silhouettes, and an explicit green-tint reduction toggle for a single-hue location)
 - [ ] Social media viral potential maximized in composition choices (certificate framing, VIP chair A/B, merch gauntlet from the door, "OH." staging)
@@ -767,7 +766,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Seedy Underbelly Present | ✅ | 20 Sovs/g against a 10 Sovs/g going rate, 5 Sovs branded ATM fee on a forced 50 Sovs withdrawal, 45 Sovs grinders, 2 Sovs bags, merchandise margins beating menu margins, an exit corridor built as a funnel |
 | Gameplay Value Established | ✅ | Consumables, two-hour space cake system, Tourist Trapped and Contact High status effects, cash-only ATM loop, passport mini-game, merch upsell, Regular/Secret Menu progression |
 | Technical Feasibility | ✅ | Separate floor scenes, three-plate haze LOD, non-baked green tint, global timer service, shared atlases all documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 40 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, 16 draw calls, 40 MB per profile budget |
 | Accessibility Features | ✅ | Eight visual audio cues, reduced-motion haze/neon/warp/menu alternatives, menu-tier hatching, and an explicit green-tint reduction toggle for a single-hue location |
 | No Crypto Elements | ✅ | Cash only, a branded ATM, and a card machine that exists to point at it |
 | Social Media Integration | ✅ | Seven screenshot moments plus a seven-line quote bank identified |

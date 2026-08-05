@@ -161,7 +161,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 ### Technical Notes:
 - Observation Window ships as frame plus a separately-authored glass alpha layer so plant sway (Sheet 8) renders behind glass with a correct reflection pass
 - Museum Floor Tile must seam on all four edges and tolerate 90° rotation; it is the only tiled asset in the location
-- Queen Victoria panel, Prohibition Timeline, and all zone signage are baked at 2x internal resolution and flagged for the ASTC 4x4 exception list
+- Queen Victoria panel, Prohibition Timeline, and all zone signage are baked at 2x internal resolution and flagged for the uncompressed-texture exception list
 - Exhibit cases in the Industrial section are drawn with pristine glass and zero fingerprints; the Growing Room glass is covered in them
 
 ---
@@ -237,7 +237,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - Live Plant and Hemp Plant (Industrial) are near-identical by design; the entire ground-floor joke depends on visitors not being able to tell why one floor is boring
 - Gift Shop Bag must be recognisable at 32px from across a coffeeshop scene — it is a cross-location social marker
 - The Growing Guide prop is visible in the gift shop backdrop but has no interaction; it is environmental storytelling only
-- All readable props flagged for the ASTC 4x4 exception list
+- All readable props flagged for the uncompressed-texture exception list
 
 ---
 
@@ -452,7 +452,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Trigger:** Constant while the Growing Room is loaded
 - **Purpose:** The purple glow is the reason anyone paid 10 Sovs; it must be the most alive thing in the museum
 - **Audio Sync:** LED and ventilation hum bed, phase-locked to the shimmer
-- **Mobile Optimization:** Low LOD uses the Static Grow Light plate with the bloom held at fixed alpha (profile requirement: simplified grow lights)
+- **Performance Optimization:** Low LOD uses the Static Grow Light plate with the bloom held at fixed alpha (profile requirement: simplified grow lights)
 
 ### Plant Gentle Sway (Sheets 4 & 8):
 - **Duration:** 3.6 seconds per cycle
@@ -461,7 +461,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Trigger:** Constant while the Growing Room is loaded
 - **Purpose:** Living plants. That is the whole exhibit. They must move.
 - **Audio Sync:** None (covered by the room hum)
-- **Mobile Optimization:** Low LOD uses Static Plants (profile requirement); the glass reflection layer is also disabled to keep compositing correct
+- **Performance Optimization:** Low LOD uses Static Plants (profile requirement); the glass reflection layer is also disabled to keep compositing correct
 
 ### Video Exhibit Loop (Sheets 4 & 8):
 - **Duration:** 1.2 seconds per flicker cycle
@@ -470,7 +470,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Trigger:** Constant while the Historical section is loaded
 - **Purpose:** Ten minutes of content nobody has ever finished, playing forever
 - **Audio Sync:** Muffled narration bed, persistent, slightly too quiet to follow
-- **Mobile Optimization:** Low LOD holds a single static frame; audio bed is retained
+- **Performance Optimization:** Low LOD holds a single static frame; audio bed is retained
 
 ### The Lars Shift Arc (Sheet 6):
 - **Duration:** Full in-game day, frame selection by clock
@@ -479,7 +479,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Trigger:** In-game clock
 - **Purpose:** The museum's emotional throughline, delivered entirely by which sprite is standing at the desk
 - **Audio Sync:** None
-- **Mobile Optimization:** None needed (single-sprite state swap)
+- **Performance Optimization:** None needed (single-sprite state swap)
 
 ### Audio Guide Purchase (Sheets 5, 6, 8):
 - **Duration:** 2.0 seconds (0.4s selection, 0.6s Lars shock frame, 1.0s hold)
@@ -488,7 +488,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Trigger:** Purchasing the 3 Sovs audio guide
 - **Purpose:** The rarest positive event in the building, celebrated disproportionately
 - **Audio Sync:** Small triumphant sting at 0.4s — the only unambiguously happy sound in the museum
-- **Mobile Optimization:** None needed (one-shot)
+- **Performance Optimization:** None needed (one-shot)
 
 ### "Identify the Terpenes!" Mini-Game (Sheets 4, 6, 8):
 - **Duration:** Per attempt: 1.0s jar open, 2.0s selection window, 1.2s result
@@ -497,7 +497,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Trigger:** Interacting with any smell jar
 - **Purpose:** Impossible without actual knowledge; attempted by everyone; forgotten immediately either way
 - **Audio Sync:** Jar lid at 0.0s; success chime or polite-correction sting at 3.0s; Sanne's explanation continues past the UI dismissal
-- **Mobile Optimization:** Aroma wisp reduced to a single frame on Low LOD
+- **Performance Optimization:** Aroma wisp reduced to a single frame on Low LOD
 
 ### Photography Intercept (Sheets 6, 7, 8):
 - **Duration:** 2.2 seconds (0.6s flash, 0.8s Sanne step-in, 0.8s patient hold)
@@ -506,7 +506,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Trigger:** Extended photography at the observation window
 - **Purpose:** "—okay, you're taking a photo, I'll wait." She is not stopping you. She is present.
 - **Audio Sync:** Shutter at 0.0s; footstep at 0.8s; no dialogue until 2.2s
-- **Mobile Optimization:** None needed (one-shot)
+- **Performance Optimization:** None needed (one-shot)
 
 ### The Speed-Run Reveal (Sheets 7 & 8):
 - **Duration:** 3.0 seconds (0.6s panel slide, 2.4s bar fill per section, staggered)
@@ -515,7 +515,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Trigger:** Leaving via the gift shop for the first time
 - **Purpose:** 45 seconds in Industrial Hemp. 15 minutes in the Growing Room. 20 minutes in the gift shop. The numbers were always being kept.
 - **Audio Sync:** Bars fill to a soft tick per section; no music; the silence after the final bar is the punchline
-- **Mobile Optimization:** Bars snap to final values instead of filling in reduced-motion mode
+- **Performance Optimization:** Bars snap to final values instead of filling in reduced-motion mode
 
 ---
 
@@ -563,11 +563,10 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); all exhibit panels, the Queen Victoria panel, the Prohibition Timeline, zone signage, readable props, and all portraits at ASTC 4x4
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) all exhibit panels, the Queen Victoria panel, the Prohibition Timeline, zone signage, readable props, and all portraits kept uncompressed
 - **Fallback:** PNG high quality for all three floor sheets (the purple grow-light gradient and the gallery spot pools band badly under lossy compression)
 
 ### Texture Atlases:
@@ -577,7 +576,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | hemp_museum_characters | npc_hemp_museum_staff, npc_hemp_museum_visitors | 1024x1024 |
 | hemp_museum_fx_ui | hemp_museum_fx_ui, hemp_museum_objects | 1024x1024 |
 
-*(The three floor sheets load and unload as paired-room units — only one is ever resident. Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(The three floor sheets load and unload as paired-room units — only one is ever resident. Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -751,7 +750,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - [ ] Satirical theme is clear throughout all assets (the target is educational pretense and gift shop economics — the hemp history itself is presented as genuinely worthwhile)
 - [ ] The Industrial Hemp section is convincingly excellent and convincingly empty
 - [ ] Hidden areas/interactions have discoverable visual cues (courtyard door, audio guide rack, fabric station, smell jars, the Growing Guide prop behind the counter)
-- [ ] Mobile performance optimized (paired-room streaming, CPU particles, atlas limits respected, static grow-light/plant fallbacks, reduced NPC counts)
+- [ ] Performance optimized (paired-room streaming, CPU particles, atlas limits respected, static grow-light/plant fallbacks, reduced NPC counts)
 - [ ] Touch zone sizing considered (44px minimum for exhibit examines, terpene options, and shop items)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded terpenes, pattern-filled tracker bars, placarded plant types)
 - [ ] Social media viral potential maximized in composition choices (speed-run reveal framing, Lars diptych, empty rope room, fingerprinted glass)
@@ -768,7 +767,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Seedy Underbelly Present | ✅ | Monetising the gap between education and interest; seeds legal to buy and illegal to grow; the free-tea loss leader funnelling into retail |
 | Gameplay Value Established | ✅ | Four-floor navigation, two interactives, hidden speed-run tracker, Cultural Alibi flag, cross-location bag marker, 8-item shop economy |
 | Technical Feasibility | ✅ | Paired-room streaming, static grow-light/plant fallbacks per profile, reduced NPC counts per profile, pre-composed crowd blocks |
-| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 16 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 16 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all ten audio cues, reduced-motion set, shape-coded terpenes and tracker bars, 44px touch zones |
 | No Crypto Elements | ✅ | Pure museum commerce; the only speculative instrument is a 20 Sovs seed packet |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |

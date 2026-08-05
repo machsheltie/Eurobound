@@ -341,11 +341,10 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 
 ---
 
-## 📱 Mobile Optimization Requirements
+## 📱 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for spectral green glow effects
-- **Android:** ETC2 with alpha for fog transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for spectral green glow effects with alpha for fog transparency
 - **Fallback:** PNG high quality for portrait detail and mirror reflections
 
 ### Sprite Atlasing Strategy:
@@ -354,7 +353,7 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 - **NPC Atlas:** Bartender + patrons + Mirror Chad + Green Fairy Wisp (512x384)
 - **Particle Effects Atlas:** Vapor + fog + distortion + shimmer + confusion (512x256)
 - **UI Elements Atlas:** Status icons + brewery progress + boss UI + achievements (512x256)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full perspective warping, all particles, mirror reflections, portrait blinks
@@ -607,7 +606,7 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 - [ ] Environmental effects support surrealist atmosphere
 - [ ] Boss battle illusion mechanic is clear and functional
 - [ ] Confused status visual feedback is immediate and obvious
-- [ ] Mobile performance optimized for complex perspective rendering
+- [ ] Performance optimized for complex perspective rendering
 - [ ] All elements support "tourist trap meets existential crisis" theme
 - [ ] Social media viral potential maximized
 - [ ] Brewery dungeon atmosphere feels unique and memorable
@@ -627,7 +626,7 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 | Seedy Underbelly Present | ✅ PASS | Manufactured psychedelic experience, patrons feeding dread for tips |
 | Gameplay Value Established | ✅ PASS | Mirror portal puzzle, boss battle, brewery tour progression, signature brew |
 | Technical Feasibility | ✅ PASS | Mobile optimization documented (atlasing, LOD, potato mode) |
-| Mobile Performance Budget | ✅ PASS | 60 FPS, 18 draw calls, 45MB |
+| Performance Budget | ✅ PASS | 60 FPS, 18 draw calls, 45MB |
 | Accessibility Features | ✅ PASS | Portal pattern indicators, motion-reduced warping, visual audio cues |
 | No Crypto Elements | ✅ PASS | No cryptocurrency content in this location |
 | Social Media Integration | ✅ PASS | Floating chalice selfie prop, Mirror Chad quotes, upward-drip bar |

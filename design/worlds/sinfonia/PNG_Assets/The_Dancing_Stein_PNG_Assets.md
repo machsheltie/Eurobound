@@ -483,7 +483,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Constant while location is loaded
 - **Purpose:** The door sets the tempo for the entire pub — players entering are literally metered in
 - **Audio Sync:** Soft whoosh lands on beat ONE of each measure; door gap aligns with entry on beat ONE of measure 1
-- **Mobile Optimization:** Low LOD holds static open frame (accessibility static variant reused)
+- **Performance Optimization:** Low LOD holds static open frame (accessibility static variant reused)
 
 ### Herr Drehmeister Waltz-Sway Idle:
 - **Duration:** 1.0 second loop (one measure)
@@ -492,7 +492,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Constant — he is never still, even mid-dialogue
 - **Purpose:** Character thesis: EVERYTHING can be done in waltz tempo
 - **Audio Sync:** Frame 1 lands on ambient music down-beat
-- **Mobile Optimization:** None needed (single 48x96 sprite)
+- **Performance Optimization:** None needed (single 48x96 sprite)
 
 ### Herr Drehmeister Waltz-Pour:
 - **Duration:** 2.0 seconds (two measures), single play
@@ -501,7 +501,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Any drink order completed
 - **Purpose:** "The beer pours better if you're moving. Scientific fact. Probably."
 - **Audio Sync:** Tap hiss starts beat ONE measure 1; stein lands on counter exactly on beat ONE measure 3
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Rhythm-Stamp Ceremony:
 - **Duration:** 3.0 seconds (three measures), single play
@@ -510,7 +510,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Stein Waltz challenge passed, cellar ceremony cutscene
 - **Purpose:** "ONE-two-three, ONE-two-three, STAMPED!" — the location's signature payoff
 - **Audio Sync:** Waltz music swells through all three measures; stamp impact thuds on beat three of measure 3; ribbon audio flourish immediately after
-- **Mobile Optimization:** None needed (cutscene context)
+- **Performance Optimization:** None needed (cutscene context)
 
 ### Frau Schritt Teaching Count:
 - **Duration:** 1.0 second loop
@@ -519,7 +519,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Player in practice corner or tutorial active
 - **Purpose:** Tutorial telegraphing — her arms ARE the beat chart
 - **Audio Sync:** Spoken "one-TWO-three" aligned per beat
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Dancing Regulars (Elegant + Enthusiastic):
 - **Duration:** 1.0 second loop per dancer
@@ -528,7 +528,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Constant while location loaded
 - **Purpose:** Living ballroom; the late "two" sells the satire that nobody here is actually good
 - **Audio Sync:** Down-beat foot-plant on beat ONE
-- **Mobile Optimization:** Low LOD freezes background dancers to static poses; only 4 nearest dancers animate (see Performance Notes)
+- **Performance Optimization:** Low LOD freezes background dancers to static poses; only 4 nearest dancers animate (see Performance Notes)
 
 ### Waltzing Server Spin Delivery:
 - **Duration:** 1.0 second (one measure), single play
@@ -537,7 +537,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Waltz Weizen or Sinfonian Whirl delivered to table (Whirl uses extended Full Whirl pose, 2.0 s)
 - **Purpose:** Signature-beer showmanship — the small spin from the profile, escalated for the 8 Sovs order
 - **Audio Sync:** Glass-clink lands on the down-beat following the spin
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Stumbling Patron Fail:
 - **Duration:** 2.0 seconds, single play
@@ -546,7 +546,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Random ambient event (~90 s cooldown); mirrors player failure states
 - **Purpose:** Social proof that failing is normal, expected, and hilarious here
 - **Audio Sync:** Record scratch fires on flail frame; splash SFX on splash-fall; scattered on-beat applause after sheepish frame
-- **Mobile Optimization:** Event disabled on Low LOD
+- **Performance Optimization:** Event disabled on Low LOD
 
 ### Waltz Weizen Foam Swirl:
 - **Duration:** 3.0 second loop
@@ -555,7 +555,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Any visible Waltz Weizen (bar, table, carry state)
 - **Purpose:** "The foam always swirls clockwise. We don't know why." — the beer is the mascot
 - **Audio Sync:** None (silent, eerie, wonderful)
-- **Mobile Optimization:** Low LOD holds swirl frame 1 static
+- **Performance Optimization:** Low LOD holds swirl frame 1 static
 
 ### Spill Splash:
 - **Duration:** 0.3 seconds, single play
@@ -564,7 +564,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** QTE miss during Stein Waltz; stumble events
 - **Purpose:** Immediate, legible cost of missing the rhythm
 - **Audio Sync:** Splash SFX on frame 1; on total spill, sad accordion begins 0.3 s after
-- **Mobile Optimization:** Particle count halved on Medium LOD
+- **Performance Optimization:** Particle count halved on Medium LOD
 
 ### Beat Pulse Rings (UI/Ambient):
 - **Duration:** 0.333 seconds per pulse (one per beat)
@@ -573,7 +573,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Constant; doubles as the QTE metronome during challenges
 - **Purpose:** Makes the tempo visible everywhere — critical deaf-accessibility channel
 - **Audio Sync:** Ring spawn is frame-locked to each music beat
-- **Mobile Optimization:** Never disabled — this is an accessibility-critical animation; Low LOD renders rings without alpha gradient
+- **Performance Optimization:** Never disabled — this is an accessibility-critical animation; Low LOD renders rings without alpha gradient
 
 ### Table Metronomes:
 - **Duration:** 0.667 second tick cycle (pendulum crosses on alternate beats)
@@ -582,7 +582,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Constant on perimeter tables
 - **Purpose:** Décor gag that doubles as a peripheral beat reference
 - **Audio Sync:** Tick SFX only within 2 tiles of player (audio clutter control)
-- **Mobile Optimization:** Static Tick A frame on Low LOD
+- **Performance Optimization:** Static Tick A frame on Low LOD
 
 ### Stamp Landing (Passport Page):
 - **Duration:** 3.0 seconds
@@ -591,7 +591,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Trigger:** Stamp ceremony completion
 - **Purpose:** Brewery Tour stamp #4 lands like a dance finale
 - **Audio Sync:** Waltz music during entire animation; stamp landing over three beats (thud on beat three); success flourish on ribbon unfurl
-- **Mobile Optimization:** None needed (cutscene context)
+- **Performance Optimization:** None needed (cutscene context)
 
 ---
 
@@ -639,11 +639,10 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); challenge/items sheet needs ASTC 4x4 — the acceptable-loss line and foam swirl must stay crisp
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) challenge/items sheet stays uncompressed — the acceptable-loss line and foam swirl must stay crisp
 - **Fallback:** PNG high quality for `dancing_stein_challenge_items.png` and `dancing_stein_ui.png` (rhythm-game readability is gameplay-critical)
 
 ### Texture Atlases:
@@ -653,7 +652,7 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 | dancing_stein_characters | Herr Drehmeister, NPCs sheet | 1024x1024 |
 | dancing_stein_effects_ui | challenge items, effects, UI, accessibility | 1024x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -836,7 +835,7 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 - [ ] Satirical theme is clear throughout all assets — mandatory tradition, mediocre execution, collective denial
 - [ ] Hidden areas/interactions have discoverable visual cues (cellar stairs, practice corner, door gear detail)
 - [ ] Rhythm game fully playable with audio off (QTE track + beat glyphs verified)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, dancer caps honored)
+- [ ] Performance optimized (CPU particles, atlas limits respected, dancer caps honored)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (beat shapes, loss-line pattern, status silhouettes)
 - [ ] Social media viral potential maximized in composition choices (door, selfie medallion, stamp landing)
@@ -853,7 +852,7 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 | Seedy Underbelly Present | ❌ | Honest miss: this is a gentle, warm location. The nearest thing to vice is dance snobbery, a shame-priced beer, and a suspiciously fake shoe exhibit — none of it qualifies as a seedy underbelly. Flagged deliberately rather than inventing one; the location's role in the Sinfonia mix is the friendly counterweight |
 | Gameplay Value Established | ✅ | Rhythm QTE challenge, Brewery Tour stamp #4, buff/status economy, three quests, five achievements, selfie spot |
 | Technical Feasibility | ✅ | Eight sheets, atlas plan, LOD tiers, dancer caps, conductor-clock architecture documented |
-| Mobile Performance Budget | ✅ | 60 FPS / 40 draw calls / 38 MB / 25 particles — proposed defaults; source profile stated no budget (flagged in Mobile Optimization) |
+| Performance Budget | ✅ | 60 FPS / 40 draw calls / 38 MB / 25 particles — proposed defaults; source profile stated no budget (flagged in Performance & Assets) |
 | Accessibility Features | ✅ | Visual cues for every audio event; rhythm game deaf-playable; reduced-motion variants for door and dancers; colorblind shape coding |
 | No Crypto Elements | ✅ | None present — pure dance satire |
 | Social Media Integration | ✅ | Door, spill fails, stamp landing, and sign-vs-seats moments identified |

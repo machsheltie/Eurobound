@@ -114,7 +114,7 @@
 - **Lighting Setup**: Dim, smoky, single bulbs over betting stations, spotlight on fights
 - **Particle Systems**: Cigarette smoke, dust in light beams, dice rolling
 - **Animation Elements**: Odds board updating, dice throws, crowd reactions, fights
-- **Mobile Optimization**: Simplified smoke, reduced crowd density
+- **Performance Optimization**: Simplified smoke, reduced crowd density
 
 ## Satirical Design
 ### Theme & Vibe

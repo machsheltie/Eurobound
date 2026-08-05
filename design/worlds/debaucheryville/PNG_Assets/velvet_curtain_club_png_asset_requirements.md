@@ -393,11 +393,10 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ---
 
-## 📱 Mobile Optimization Requirements
+## 📱 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for burgundy fog and gold effects
-- **Android:** ETC2 with alpha for vape cloud transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for burgundy fog and gold effects with alpha for vape cloud transparency
 - **Fallback:** PNG high quality for neon signs and graffiti detail
 
 ### Sprite Atlasing Strategy:
@@ -406,7 +405,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **NPC Atlas:** Bouncer + Vanessa + patrons + influencer + DJ + VIP guards (512x512)
 - **Particle Effects Atlas:** Fog + vape + LED + bass + bubbles + status (512x256)
 - **UI Elements Atlas:** Status icons + charisma gate + couchsurf + NFT hunt (512x256)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full fog density, all LED underglow pulse, vape cloud particles, bass ripples
@@ -678,7 +677,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - [ ] Influencer ritual side event player choices obvious
 - [ ] Social hub atmosphere supports "manufactured exclusivity" satire
 - [ ] All elements reinforce "party tourism exploitation" theme
-- [ ] Mobile performance optimized for complex fog and lighting
+- [ ] Performance optimized for complex fog and lighting
 - [ ] All animations support nightclub party energy
 - [ ] Social media viral potential maximized
 - [ ] Nightclub atmosphere feels unique and memorable
@@ -696,7 +695,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 | Seedy Underbelly Present | ✅ | Manufactured exclusivity sold to tourists, decaying glamor, fake blood ritual livestreams |
 | Gameplay Value Established | ✅ | Social hub (no combat) — Charisma gate + bribe alternative, Vanessa couchsurf quiz, influencer event choices, NFT hunt gateway |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, fog/vape via scalable particle systems |
-| Mobile Performance Budget | ✅ | 60 FPS target, max 18 draw calls, 42MB memory footprint |
+| Performance Budget | ✅ | 60 FPS target, max 18 draw calls, 42MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (bass drop wave, club music pulse), static neon/reduced LED options, high contrast NPCs |
 | No Crypto Elements | ✅ | Crypto/NFT satire established in source material (NFT hunt, VIP bathroom crypto graffiti) |
 | Social Media Integration | ✅ | Vape-pen chandeliers, stripper-pole coat racks, neon aphorisms, quotable patron dialogue identified |

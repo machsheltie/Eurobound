@@ -227,11 +227,10 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ---
 
-## 📱 Mobile Optimization Requirements
+## 📱 Performance & Assets Requirements
 
-### Texture Compression by Platform:
-- **iOS:** PVRTC 4BPP for RGB shimmer and champagne effects
-- **Android:** ETC2 with alpha for bubble particle transparency
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for RGB shimmer and champagne effects with alpha for bubble particle transparency
 - **Fallback:** PNG high quality for graffiti text readability
 
 ### Sprite Atlasing Strategy:
@@ -240,7 +239,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Access System Atlas:** Curtain + bouncers + selfie mirror (384x256)
 - **Status Effects Atlas:** Drunk champagne + hungover kebab + overlays (256x256)
 - **UI Elements Atlas:** Bravado gate + NFT discovery + achievements (384x192)
-- **Max Atlas Size:** 2048x2048 for mobile GPU compatibility
+- **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
 - **High-End Devices:** Full RGB shimmer, all drunk/hungover effects, champagne drip animation
@@ -463,7 +462,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - [ ] Drunk/hungover visual effects enhance comedy
 - [ ] Graffiti readable and satirically effective
 - [ ] Tech bro plaque maximizes comedic impact
-- [ ] Mobile performance optimized for status overlays
+- [ ] Performance optimized for status overlays
 - [ ] All elements support "VIP toilet absurdity" theme
 - [ ] Social media viral potential maximized
 - [ ] Bathroom feels like regret shrine not gross-out
@@ -481,7 +480,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 | Seedy Underbelly Present | ✅ | Manufactured VIP toilet exclusivity, tech bro sponsorship plaque, "Not a Scam, Probably" DAO invite |
 | Gameplay Value Established | ✅ | Bravado gate, NFT #2 discovery, Fistø lore (hungover), NFT Affinity buff, ICQ CryptoMamiXXX integration |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, state-based conditional rendering documented |
-| Mobile Performance Budget | ✅ | 60 FPS target, max 14 draw calls, 35MB memory footprint |
+| Performance Budget | ✅ | 60 FPS target, max 14 draw calls, 35MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (tile crack wave, QR beep, champagne fizz), reduced RGB shimmer and static graffiti options |
 | No Crypto Elements | ✅ | Crypto/NFT satire established in source material (NFT hunt collectible, crypto graffiti, ICQ mockery) |
 | Social Media Integration | ✅ | Tech bro plaque, "ROI = Regret On Investment" graffiti, #CryptoQueen selfie filter identified |

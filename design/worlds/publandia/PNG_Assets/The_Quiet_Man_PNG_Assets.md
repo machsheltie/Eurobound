@@ -304,7 +304,7 @@ assets/sprites/locations/publandia/quiet_man/
 - **Trigger:** Interacting with Donal at the cellar door (post-rumor)
 - **Purpose:** The discretion test — the location's handshake
 - **Audio Sync:** "Who Wants to Be a Millionaire"-style question sting under the prompt; muffled crowd swells when the door opens
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Ciaran Announcement Loop:
 - **Duration:** 5 seconds per announcement
@@ -312,7 +312,7 @@ assets/sprites/locations/publandia/quiet_man/
 - **Trigger:** Fight start, round transitions, knockout
 - **Purpose:** Quiz-show energy pasted over violence — the core joke, delivered constantly
 - **Audio Sync:** Quiz "correct!" chime after every knockout; broadcaster lines on each pose
-- **Mobile Optimization:** Two-pose cycle on Low LOD
+- **Performance Optimization:** Two-pose cycle on Low LOD
 
 ### Crowd Chant:
 - **Duration:** 2-second loop while Crowd Meter ≥70%
@@ -320,7 +320,7 @@ assets/sprites/locations/publandia/quiet_man/
 - **Trigger:** High crowd meter, exciting moves, fight climax
 - **Purpose:** "TRI-VI-A!" over punches — the fiction made audible and visible
 - **Audio Sync:** Chant audio locked to overlay frame swaps
-- **Mobile Optimization:** Text burst only, static crowd on Low LOD
+- **Performance Optimization:** Text burst only, static crowd on Low LOD
 
 ### Knockout Sequence:
 - **Duration:** 3 seconds
@@ -328,7 +328,7 @@ assets/sprites/locations/publandia/quiet_man/
 - **Trigger:** Fight-ending blow (either direction)
 - **Purpose:** Cartoonish, decisive, never graphic
 - **Audio Sync:** Meaty thud → beat of silence → quiz "correct!" chime → crowd roar
-- **Mobile Optimization:** Spiral becomes static icon
+- **Performance Optimization:** Spiral becomes static icon
 
 ### Recovery Wake-Up:
 - **Duration:** 4 seconds
@@ -336,7 +336,7 @@ assets/sprites/locations/publandia/quiet_man/
 - **Trigger:** Player defeat
 - **Purpose:** Consequence with warmth — Brigid's competence softens the loss loop
 - **Audio Sync:** Recovery Room groans ambient; "Hold still" line on patch frame
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Bulb Flicker & Haze:
 - **Duration:** Continuous; flicker at random 20-40s intervals
@@ -344,7 +344,7 @@ assets/sprites/locations/publandia/quiet_man/
 - **Trigger:** Constant in basement
 - **Purpose:** Grandfathered-ventilation atmosphere
 - **Audio Sync:** None
-- **Mobile Optimization:** Haze static, flicker off in reduced-motion mode
+- **Performance Optimization:** Haze static, flicker off in reduced-motion mode
 
 ---
 
@@ -387,11 +387,10 @@ assets/sprites/locations/publandia/quiet_man/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (UI frames and category icons at ASTC 4x4)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import)
 - **Fallback:** PNG high quality for portraits and the Trivia Question Frame
 
 ### Texture Atlases:
@@ -401,7 +400,7 @@ assets/sprites/locations/publandia/quiet_man/
 | quietman_characters | staff, fighters, crowd | 1024x512 |
 | quietman_fx_ui | fight_effects, ui | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -567,7 +566,7 @@ assets/sprites/locations/publandia/quiet_man/
 ### Quality Checkpoints:
 - [ ] Satirical theme (euphemism as institution) is clear throughout all assets
 - [ ] Easter eggs discoverable: the Tell light-leak, the one honored rule, blank 48th tally space, Sinéad's own unshared notebook
-- [ ] Mobile performance optimized (crowd quads, 16-particle cap, on-demand back rooms)
+- [ ] Performance optimized (crowd quads, 16-particle cap, on-demand back rooms)
 - [ ] Touch zone sizing considered (44px minimum — entry prompt, rumor rows, fight card compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (icon-shaped categories, segmented meter)
 - [ ] Social media viral potential maximized (chant burst framing, KO announcement composition)
@@ -584,7 +583,7 @@ assets/sprites/locations/publandia/quiet_man/
 | Seedy Underbelly Present | ✅ | Unlicensed fighting, rumor economy, betting crossover |
 | Gameplay Value Established | ✅ | Full combat venue, Contender/Champion progression, information shop |
 | Technical Feasibility | ✅ | Reuses base combat system; 8 sheets, mobile optimization documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 15 draw calls, 40MB |
+| Performance Budget | ✅ | 60 FPS, 15 draw calls, 40MB |
 | Accessibility Features | ✅ | Visual cues for all audio, calm-crowd/steady-bulb variants, gore reduction |
 | No Crypto Elements | ✅ | Absent from source and spec |
 | Social Media Integration | ✅ | Six viral moments identified, quote bank sourced from profile |

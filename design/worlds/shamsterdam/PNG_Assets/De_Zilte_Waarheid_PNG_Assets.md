@@ -291,7 +291,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - **Trigger:** Player selects Traditional and commits at the First Bite Prompt
 - **Purpose:** The core comedy beat — public vulnerability rendered in full
 - **Audio Sync:** Gull cry fades at 0.0s; bite crunch at 3.0s (Frame 4 start); subtle triumphant note at 4.5s completion
-- **Mobile Optimization:** None needed (single character, one-shot)
+- **Performance Optimization:** None needed (single character, one-shot)
 
 ### Struggle Loop (Sheet 6, Frames 1-3 of Struggle):
 - **Duration:** 2.4 seconds per loop (0.8s per frame), loops for up to 30 seconds
@@ -300,7 +300,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - **Trigger:** Player hesitates after receiving fish
 - **Purpose:** Hesitation Penalty visualization — the visible struggle everyone politely doesn't comment on
 - **Audio Sync:** Tourist-hesitation ambience swells at loop 3; hesitation-penalty sting on retreat frame
-- **Mobile Optimization:** Wobble lines overlay dropped on Low LOD
+- **Performance Optimization:** Wobble lines overlay dropped on Low LOD
 
 ### Maarten Preparing (Sheet 4, Row 1):
 - **Duration:** 1.5 seconds (0.5s per frame)
@@ -309,7 +309,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - **Trigger:** Any menu purchase
 - **Purpose:** Efficiency-of-decades characterization; order feedback
 - **Audio Sync:** Knife-on-block tap at Frame 2 (0.5s); paper-wrap rustle at Frame 3 (1.0s)
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Evi Onion Chopping (Sheet 4, Row 3):
 - **Duration:** 0.8 seconds per cycle, ambient loop
@@ -318,7 +318,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - **Trigger:** Constant (ambient)
 - **Purpose:** Rhythmic background life; onion vapor source point
 - **Audio Sync:** Chop tick locked to down-stroke frame every 0.8s
-- **Mobile Optimization:** Loop rate halved on Low LOD
+- **Performance Optimization:** Loop rate halved on Low LOD
 
 ### Hendrik Swoop (Sheet 5):
 - **Duration:** 1.2 seconds (0.3s per frame + 0.3s ascent)
@@ -327,7 +327,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - **Trigger:** Fish Dropped event only
 - **Purpose:** Consequence for weakness; the circle of life
 - **Audio Sync:** Aggressive gull shriek at 0.0s; wing flap at 0.6s; comedy "gone" whistle at 1.2s
-- **Mobile Optimization:** Low LOD replaces swoop with static Hover frame + fish despawn
+- **Performance Optimization:** Low LOD replaces swoop with static Hover frame + fish despawn
 
 ### Water & Awning Ambient:
 - **Duration:** Water 0.8s two-frame swap; awning 1.2s two-frame swap
@@ -336,7 +336,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - **Trigger:** Constant
 - **Purpose:** Harbor breeze atmosphere without particle cost
 - **Audio Sync:** Harbor wave loop is continuous; no frame lock required
-- **Mobile Optimization:** Both freeze to frame A on Low LOD; static per reduced-motion setting
+- **Performance Optimization:** Both freeze to frame A on Low LOD; static per reduced-motion setting
 
 ### Onion Tears (Sheet 6):
 - **Duration:** 1.0 second (0.5s per frame), plays up to 3 times
@@ -345,7 +345,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - **Trigger:** Player stands adjacent to onion chopping for 3+ seconds
 - **Purpose:** Optional realism gag
 - **Audio Sync:** None
-- **Mobile Optimization:** Disabled on Low LOD
+- **Performance Optimization:** Disabled on Low LOD
 
 ---
 
@@ -382,11 +382,10 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (fallback PVRTC 4BPP); Method Illustration Sign and portraits need ASTC 4x4 (readable text/faces)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Method Illustration Sign and portraits need uncompressed (readable text/faces)
 - **Fallback:** PNG high quality for the Method Illustration Sign (text-critical)
 
 ### Texture Atlases:
@@ -396,7 +395,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | herring_characters | npc_maarten_evi, npc_harbor_customers, eating_method_animations | 2048x2048 |
 | herring_ui | herring_food_items, herring_ui_effects | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -553,7 +552,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (tourist reaction is the joke, never the Dutch tradition)
 - [ ] Hidden areas/interactions have discoverable visual cues (mint tin cure, tail-grip demo placard, Maarten eye-contact achievement)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, static-seagull fallback)
+- [ ] Performance optimized (CPU particles, atlas limits respected, static-seagull fallback)
 - [ ] Touch zone sizing considered (44px minimum for order point, method choice, First Bite Prompt)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (status icon shapes, hatched timer)
 - [ ] Social media viral potential maximized in composition choices (the Tilt framed against open harbor sky)
@@ -570,7 +569,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Seedy Underbelly Present | ✅ | 4 Sovs existential revelations, maximum-visibility stand placement, seagull opportunism economy |
 | Gameplay Value Established | ✅ | Method challenge, Bravado economy, three status effects, seagull hazard, achievement track |
 | Technical Feasibility | ✅ | Static-seagull fallback, 2-frame ambients, pre-composed crowds documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 12 particles per profile budget |
+| Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 12 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all four audio cues, reduced-motion set, 44px touch zones |
 | No Crypto Elements | ✅ | Pure traditional fish stand; all transactions in Sovs |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |

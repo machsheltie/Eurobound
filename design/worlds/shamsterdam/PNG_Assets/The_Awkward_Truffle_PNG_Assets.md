@@ -224,7 +224,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 - **Trigger:** Constant while shop loaded
 - **Purpose:** Watching someone professionally craft chocolate anatomy is... something
 - **Audio Sync:** Soft scrape/tap crafting foley on frames 1 and 3
-- **Mobile Optimization:** Static crafting frame on low LOD (per profile: "static crafting view")
+- **Performance Optimization:** Static crafting frame on low LOD (per profile: "static crafting view")
 
 ### Customer Zone Drift (Sheets 1 & 4):
 - **Duration:** Browse cycle 2 seconds (2 FPS); zone hesitation 3 seconds (0.7 FPS)
@@ -233,7 +233,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 - **Trigger:** Ambient AI; player proximity pauses NPC decisions
 - **Purpose:** The shop layout mirrors the customer's internal journey
 - **Audio Sync:** None
-- **Mobile Optimization:** Max 3 concurrent customers, 2 on low-end
+- **Performance Optimization:** Max 3 concurrent customers, 2 on low-end
 
 ### Wrapping Sequence (Sheet 3):
 - **Duration:** 2.4 seconds (1.25 FPS, 3 frames)
@@ -242,7 +242,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 - **Trigger:** Purchase confirmed with wrap style selected
 - **Purpose:** The classy ritual applied to unclassy items
 - **Audio Sync:** Paper crinkle frame 1, ribbon zip frame 2, register ding frame 3
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Zone 3 Realization Vignette (Sheet 6):
 - **Duration:** 1.5 seconds, played once per save file
@@ -251,7 +251,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 - **Trigger:** First player entry into Zone 3
 - **Purpose:** "The Moment" — when you realize the back section exists
 - **Audio Sync:** Elegant Belgian café music continues, completely inappropriate (the joke is the non-reaction)
-- **Mobile Optimization:** Instant 30% tint, no ramp, for reduced motion
+- **Performance Optimization:** Instant 30% tint, no ramp, for reduced motion
 
 ### Consumption & Complicated Feelings (Sheets 5 & 6):
 - **Duration:** 1s eat + 1.5s extended pause + icon fade-in 0.5s
@@ -260,7 +260,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 - **Trigger:** Consuming any anatomical chocolate
 - **Purpose:** +20-40 HP and thoughts
 - **Audio Sync:** Standard eating sound, extended silence, tiny chime on icon
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Chocolate Dust & Warmth (Sheet 5):
 - **Duration:** 2-second drift loop
@@ -269,7 +269,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 - **Trigger:** Constant near crafting window
 - **Purpose:** Subtle boutique atmosphere per profile particle spec
 - **Audio Sync:** None
-- **Mobile Optimization:** Disabled on low LOD
+- **Performance Optimization:** Disabled on low LOD
 
 ---
 
@@ -305,11 +305,10 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); product sprites need higher quality (abstraction reads depend on clean silhouettes)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); product sprites need higher quality (abstraction reads depend on clean silhouettes)
 - **Fallback:** PNG high quality for truffle_effects_ui.png (text-heavy)
 
 ### Texture Atlases:
@@ -319,7 +318,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | truffle_characters | Sophie/Niels, customers | 1024x512 |
 | truffle_objects | products, effects, UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -471,7 +470,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (professionalism vs. product, denial vs. consumption)
 - [ ] Hidden areas/interactions have discoverable visual cues (Zone 3 glow through doorway, crafting window spotlight)
-- [ ] Mobile performance optimized (single-scene scroll, CPU particles, atlas limits respected)
+- [ ] Performance optimized (single-scene scroll, CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (zone text/pattern coding)
 - [ ] Social media viral potential maximized in composition choices (wrap menu and Zone 2 shapes framed for screenshots)
@@ -488,7 +487,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | Seedy Underbelly Present | ✅ | 15 Sovs of chocolate sold for 35 Sovs because of the shape; shape-based markup economy |
 | Gameplay Value Established | ✅ | Zone progression, consumption/status system, gift ledger, achievement track, Bravado checks |
 | Technical Feasibility | ✅ | Single-scroll scene, static-crafting LOD, abstraction-friendly sprite sizes documented |
-| Mobile Performance Budget | ✅ | 60 FPS, ≤14 draw calls, ≤32 MB per profile budget |
+| Performance Budget | ✅ | 60 FPS, ≤14 draw calls, ≤32 MB per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px touch zones |
 | No Crypto Elements | ✅ | Pure artisan chocolate awkwardness (profile-confirmed) |
 | Social Media Integration | ✅ | 5 screenshot moments identified; wrap-menu UI composed as shareable frame |

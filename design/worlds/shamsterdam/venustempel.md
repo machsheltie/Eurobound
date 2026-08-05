@@ -182,7 +182,7 @@ The rivalry is entirely one-directional. The Museum of Questionable Art has neve
 - **Lighting Setup**: Cold gallery spots on the ground floor (17°C reads visually), red wash on the mechanical wing, flash-heavy second floor, warm plaza daylight with a wet specular highlight on the cascade
 - **Particle Systems**: Chocolate drip and spatter, cocoa steam off the cascade, dust motes, camera flash, mirror maze fog
 - **Animation Elements**: Fountain cascade loop (hero), Giggling Figure mechanism, Marilyn dress timer, peep show flip cards, cart transactions, dip-and-lift cycle
-- **Mobile Optimization**: Cascade is the one animation never degraded; simplified mechanism animations, reduced particle effects, static mannequins on older devices
+- **Performance Optimization**: Cascade is the one animation never degraded; simplified mechanism animations, reduced particle effects, static mannequins on older devices
 
 ---
 

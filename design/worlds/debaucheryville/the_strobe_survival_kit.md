@@ -84,7 +84,7 @@
 - **Lighting Setup**: Practical work lights, glow stick display illumination, no-nonsense
 - **Particle Systems**: Glow stick glow, LED flicker samples
 - **Animation Elements**: Vendor restocking, customer browsing, earplug demonstration
-- **Mobile Optimization**: Simplified glow effects, static display
+- **Performance Optimization**: Simplified glow effects, static display
 
 ## Satirical Design
 ### Theme & Vibe

@@ -104,7 +104,7 @@
 - **Lighting Setup**: Harsh fluorescents (ground floor), red accent bulbs (upper floors), dramatic spot on Fabergé case (third floor)
 - **Particle Systems**: Dust motes (museum authenticity), chocolate display shine, motion-sensor light flicker
 - **Animation Elements**: Spinning merchandise racks, mechanical peep show activation, Daan scrolling phone, motion lights triggering
-- **Mobile Optimization**: Simplified display reflections, reduced rack spinning animation, static lighting on low-end devices
+- **Performance Optimization**: Simplified display reflections, reduced rack spinning animation, static lighting on low-end devices
 
 ## Satirical Design
 ### Theme & Vibe

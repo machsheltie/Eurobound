@@ -146,7 +146,7 @@ Lord Pilsner wants to commemorate his spiritual clock experience with a death sk
   - Tattoo gun vibration
   - Artist's confident-but-wrong drawing motions
   - Lord Pilsner's face during tattooing (range of emotions)
-- **Mobile Optimization**: Single room, limited particles, focus on character animations
+- **Performance Optimization**: Single room, limited particles, focus on character animations
 
 ---
 

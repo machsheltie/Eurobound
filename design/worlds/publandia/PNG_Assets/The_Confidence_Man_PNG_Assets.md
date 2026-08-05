@@ -263,7 +263,7 @@ assets/sprites/locations/publandia/confidence_man/
 - **Trigger:** Player within cart radius
 - **Purpose:** Cormac is never off — the pitch IS the location
 - **Audio Sync:** Pitch bark lines rotate on each Point frame
-- **Mobile Optimization:** Loop drops to Pitch + Presenting only on Low LOD
+- **Performance Optimization:** Loop drops to Pitch + Presenting only on Low LOD
 
 ### Custom Blend Mixing:
 - **Duration:** 3 seconds
@@ -272,7 +272,7 @@ assets/sprites/locations/publandia/confidence_man/
 - **Trigger:** Any purchase confirmation
 - **Purpose:** The theatre is the product; every sale gets the show
 - **Audio Sync:** Glass clinks on pours; cheesy "transformation" sting on the final puff
-- **Mobile Optimization:** Smoke puffs reduced to 1 frame on Low LOD
+- **Performance Optimization:** Smoke puffs reduced to 1 frame on Low LOD
 
 ### Buff Activation:
 - **Duration:** 1.5 seconds
@@ -280,7 +280,7 @@ assets/sprites/locations/publandia/confidence_man/
 - **Trigger:** Consuming any tonic
 - **Purpose:** Feedback that "it's working" — feeding the placebo loop
 - **Audio Sync:** Magical transformation sound (deliberately cheesy) on burst frame
-- **Mobile Optimization:** Aura becomes static outline
+- **Performance Optimization:** Aura becomes static outline
 
 ### The Crash:
 - **Duration:** 2 seconds
@@ -288,7 +288,7 @@ assets/sprites/locations/publandia/confidence_man/
 - **Trigger:** Premium buff timer expiry ("The Transformation," "Emergency Confidence")
 - **Purpose:** Consequence made visible — the Crasher NPC's whole arc in one effect
 - **Audio Sync:** Deflating slide-whistle-adjacent crash sound, ends in silence
-- **Mobile Optimization:** Single-frame gray flash
+- **Performance Optimization:** Single-frame gray flash
 
 ### Cart Reposition:
 - **Duration:** Off-screen between visits
@@ -296,7 +296,7 @@ assets/sprites/locations/publandia/confidence_man/
 - **Trigger:** Area re-entry
 - **Purpose:** "Location changes slightly each visit" — mobile vendor authenticity
 - **Audio Sync:** Distant cart-wheel rattle on area load if position changed
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ---
 
@@ -337,11 +337,10 @@ assets/sprites/locations/publandia/confidence_man/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (bottle labels at ASTC 4x4 — tier text must stay legible)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import)
 - **Fallback:** PNG high quality for Cormac portraits and signage
 
 ### Texture Atlases:
@@ -351,7 +350,7 @@ assets/sprites/locations/publandia/confidence_man/
 | confidence_characters | cormac, crowd_customers | 512x512 |
 | confidence_items_fx | tonic_bottles, effects, ui | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -508,7 +507,7 @@ assets/sprites/locations/publandia/confidence_man/
 ### Quality Checkpoints:
 - [ ] Satirical theme (self-aware con artistry, belief as product) is clear throughout all assets
 - [ ] Easter eggs discoverable: Secret Recipe Box, Ingredient Jars with real studies, Label Sheet, Placebo Glint
-- [ ] Mobile performance optimized (10-particle cap, composite cart node, shared crowd overlays)
+- [ ] Performance optimized (10-particle cap, composite cart node, shared crowd overlays)
 - [ ] Touch zone sizing considered (44px minimum — menu rows, haggle options, cart hotspot compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (cap shapes, ring segmentation, icon-coded haggling)
 - [ ] Social media viral potential maximized (pitch composition, crash moment framing)
@@ -525,7 +524,7 @@ assets/sprites/locations/publandia/confidence_man/
 | Seedy Underbelly Present | ✅ | Belief sold at premium prices, positioned to catch nervous tourists at pub doors |
 | Gameplay Value Established | ✅ | Bravado buff economy, haggle minigame, crash risk/reward, Valued Customer track |
 | Technical Feasibility | ✅ | Single composite cart, 6 sheets, mobile optimization documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 10 draw calls, 25MB |
+| Performance Budget | ✅ | 60 FPS, 10 draw calls, 25MB |
 | Accessibility Features | ✅ | Visual cues for every audio beat, static aura/shimmer variants, shape-coded tiers |
 | No Crypto Elements | ✅ | Absent from source and spec |
 | Social Media Integration | ✅ | Five viral moments identified, quote bank sourced from profile |

@@ -431,7 +431,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
 ## 🖥️ Performance & Assets
 
@@ -633,7 +633,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 ### Quality Checkpoints:
 - [ ] Satirical theme (total cheerful disclosure changing nothing) is clear throughout all assets
 - [ ] Readable-on-approach details intact: delivery receipt, NO DIVING sign, 2003 pallet stamp, broken center latch
-- [ ] Mobile performance optimized (shared bar-TV asset, pre-rendered launches, crowd LOD, atlas limits respected)
+- [ ] Performance optimized (shared bar-TV asset, pre-rendered launches, crowd LOD, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum — answer prompts and GO LIVE button compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (strike icons, timer ring)
 - [ ] Social media viral potential maximized (triple-rig establishing frame, monitor-flex composition)

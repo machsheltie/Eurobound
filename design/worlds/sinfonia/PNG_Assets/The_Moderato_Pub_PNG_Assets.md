@@ -571,7 +571,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Any drink purchase
 - **Purpose:** The pub's heartbeat — every order is served with unhurried craft
 - **Audio Sync:** Pour sound starts frame 1, tapers frame 3; faint foam fizz on hold
-- **Mobile Optimization:** Profile-mandated simplified bar animation — 2 frames, no stream particle on low-end
+- **Performance Optimization:** Profile-mandated simplified bar animation — 2 frames, no stream particle on low-end
 
 ### Herr Takt Mediating:
 - **Duration:** 2.4 seconds loop
@@ -580,7 +580,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Debate volume threshold / scripted debate scenes
 - **Purpose:** The only neutral party in the room, conducting calm
 - **Audio Sync:** Argument snippets duck slightly on frame 3
-- **Mobile Optimization:** Hold frame 3 as static on Low LOD
+- **Performance Optimization:** Hold frame 3 as static on Low LOD
 
 ### Herr Takt Coffee Delivery (Morning):
 - **Duration:** 3.0 seconds, single play
@@ -589,7 +589,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Player wakes after backroom rest
 - **Purpose:** The couchsurfing payoff — someone actually looking after you in Sinfonia
 - **Audio Sync:** Gentle wake-up strings begin on carry; cup-set clink on offer
-- **Mobile Optimization:** None needed (scripted scene, nothing else animating)
+- **Performance Optimization:** None needed (scripted scene, nothing else animating)
 
 ### Metronome Collection (Competing Tempos):
 - **Duration:** Five simultaneous cycles: 2.0s (Largo), 1.5s (Adagio), 1.0s (Moderato), 0.67s (Allegro), 0.4s (Presto)
@@ -598,7 +598,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Constant while bar is on screen
 - **Purpose:** The pub's signature comedy texture — five tempos ticking at once, agreeing on nothing
 - **Audio Sync:** One tick per pendulum extreme, each metronome at its own rate; tick pulse ring (Sheet 7) fires per audible tick
-- **Mobile Optimization:** Low LOD freezes all pendulums at center (static variant); Medium runs Moderato only
+- **Performance Optimization:** Low LOD freezes all pendulums at center (static variant); Medium runs Moderato only
 
 ### Frau Schnell Rapid Gestures:
 - **Duration:** 0.6 second loop
@@ -607,7 +607,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Debate active or player conversation
 - **Purpose:** Her frame rate is her personality: "Life is SHORT! Music should be FAST!"
 - **Audio Sync:** Rapid speech bed, no pauses; blur overlay pulses with syllable peaks
-- **Mobile Optimization:** Drop blur overlay; 2-frame version at Low LOD
+- **Performance Optimization:** Drop blur overlay; 2-frame version at Low LOD
 
 ### Herr Langsam Deliberate Gesture:
 - **Duration:** 4.8 seconds per cycle
@@ -616,7 +616,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Debate active or player conversation
 - **Purpose:** The Adagio argument made flesh; the room waits, and that's the joke
 - **Audio Sync:** "...Why... the... rush?" — one word per frame; slow trail effect on the descent
-- **Mobile Optimization:** None needed (it's already nearly static)
+- **Performance Optimization:** None needed (it's already nearly static)
 
 ### Die Mitte Tears of Joy:
 - **Duration:** 2.0 seconds, single play, hold final frame
@@ -625,7 +625,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Lord Pilsner's accidental Moderato endorsement
 - **Purpose:** "FINALLY! Someone who UNDERSTANDS!" — the pub's biggest heart moment
 - **Audio Sync:** Dramatic gasp (crowd strip swaps) on frame 2; triumphant string swell on frame 3
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Baton Dart Throw:
 - **Duration:** 0.5 seconds flight + thunk hold
@@ -634,7 +634,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Optional dartboard mini-interaction / ambient patron throws
 - **Purpose:** Conductor batons as darts — authority repurposed as pub game
 - **Audio Sync:** Whoosh on release, dartboard thunk exactly on impact frame
-- **Mobile Optimization:** Skip flight frames; baton appears in board with thunk star only
+- **Performance Optimization:** Skip flight frames; baton appears in board with thunk star only
 
 ### Tempo Debate Point Scored:
 - **Duration:** 0.8 seconds
@@ -643,7 +643,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Winning dialogue exchange in Tempo Debate mini-game
 - **Purpose:** Scores social combat like real combat — with orchestration
 - **Audio Sync:** Musical stinger on flash frame; dramatic gasp lines over reacting faction
-- **Mobile Optimization:** Banner only, no flash, at Low LOD
+- **Performance Optimization:** Banner only, no flash, at Low LOD
 
 ### Debate Victory (Polka Burst):
 - **Duration:** 2.5 seconds, single play
@@ -652,7 +652,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Debate won (stamp-eligible moment)
 - **Purpose:** Victory feels communal — even the losers toast you
 - **Audio Sync:** Triumphant polka burst starts with confetti; toast clink on stein contact
-- **Mobile Optimization:** Confetti capped at 12 particles
+- **Performance Optimization:** Confetti capped at 12 particles
 
 ### Brewery Stamp Ceremony:
 - **Duration:** 2.0 seconds (three ticks at Moderato: 0.5s apart, land on third, 0.5s ink settle)
@@ -661,7 +661,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Winning a Tempo Debate with the bottle opener in inventory
 - **Purpose:** "Tempo Settled (Temporarily)" — the stamp lands on the beat, because of course it does
 - **Audio Sync:** Metronome ticks on frames 1–3; stamp lands exactly on the third tick, per profile; Herr Takt's speech follows
-- **Mobile Optimization:** None needed (scripted, exclusive scene)
+- **Performance Optimization:** None needed (scripted, exclusive scene)
 
 ### Musical Dreams (Backroom Rest):
 - **Duration:** 4.0 second loop during sleep fade
@@ -670,7 +670,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Sleeping in backroom (Regular status)
 - **Purpose:** Tempo-themed dream buffs telegraphed visually before the morning reveal
 - **Audio Sync:** Muffled tavern music slows/detunes beneath; gentle wake-up strings end the loop
-- **Mobile Optimization:** Static swirl frame, Zzz only
+- **Performance Optimization:** Static swirl frame, Zzz only
 
 ### Candle & String Light Ambience:
 - **Duration:** Candle 0.9s cycle; string lights 2.0s cycle
@@ -679,7 +679,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - **Trigger:** Evening interior / beer garden at night
 - **Purpose:** The warmth budget — this location sells safety through light
 - **Audio Sync:** None
-- **Mobile Optimization:** Static candle + String Lights Static variant at Low LOD
+- **Performance Optimization:** Static candle + String Lights Static variant at Low LOD
 
 ---
 
@@ -727,11 +727,10 @@ assets/sprites/locations/sinfonia/moderato_pub/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); UI sheet and stamp art need ASTC 4x4 — chalk text and stamp inscription must stay legible
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) UI sheet and stamp art need uncompressed — chalk text and stamp inscription must stay legible
 - **Fallback:** PNG high quality for `moderato_pub_ui.png` (debate text) and the stamp full art
 
 ### Texture Atlases:
@@ -741,7 +740,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | moderato_characters | Herr Takt, faction leaders, NPCs | 2048x1024 |
 | moderato_items_fx_ui | items, effects, UI | 1024x1024 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -931,7 +930,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - [ ] Satirical theme is clear throughout all assets (pedantry treated with total seriousness)
 - [ ] Safe-haven warmth reads instantly — this must FEEL like the one non-exploitative room in Sinfonia
 - [ ] Hidden areas/interactions have discoverable visual cues (backroom door, snug, selfie spot, dartboard)
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected, static crowd honored)
+- [ ] Performance optimized (CPU particles, atlas limits respected, static crowd honored)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (faction shapes, drink silhouettes)
 - [ ] Social media viral potential maximized in composition choices (metronome shelf, debate reactions, stamp beat-sync)
@@ -948,7 +947,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Seedy Underbelly Present | ❌ | Absent BY DESIGN per the profile's Safe Haven section — this is deliberately the one Sinfonia location that doesn't exploit you; the sole mild edge is regulars quietly betting on the bros' opinions (Betting Regulars sprite, Sheet 5) |
 | Gameplay Value Established | ✅ | Base of operations: save point, full rest, party management, quest hub, shop, debate mini-game, brewery stamp, Regular progression |
 | Technical Feasibility | ✅ | Eight sheets, three-atlas plan, LOD tiers, shared-overlay metronome scheduling documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 16 draw calls, 40 MB, 20 particles — per location profile |
+| Performance Budget | ✅ | 60 FPS, 16 draw calls, 40 MB, 20 particles — per location profile |
 | Accessibility Features | ✅ | Visual cues for every audio event (ticks, clinks, thunks, gasps, stingers, polka, strings, stamp ticks); static motion variants; shape-coded factions |
 | No Crypto Elements | ✅ | None present — pure musical comedy |
 | Social Media Integration | ✅ | Metronome shelf, Die Mitte meme frame, stamp beat-sync, faction-president moments identified |

@@ -5,7 +5,7 @@
 **Location ID**: `shamsterdam_voetgangerstunnel_01`  
 **Priority**: MEDIUM (Bike Crossing Shortcut, Navigation Puzzle, Comedy Reveal Location)  
 **Total Sheets Required**: 9  
-**Mobile Optimization**: Standard (60 FPS, simple geometry)
+**Performance Optimization**: Standard (60 FPS, simple geometry)
 
 ---
 
@@ -364,7 +364,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Trigger:** Random, 10% probability in Long Corridor, 15% in Wrong Turn Zone
 - **Purpose:** Liminal-space unease; zone identity
 - **Audio Sync:** Fluorescent hum dips on flicker
-- **Mobile Optimization:** Only dynamic lighting element — all other lighting baked
+- **Performance Optimization:** Only dynamic lighting element — all other lighting baked
 
 ### Willem's Accordion (Sheet 4):
 - **Duration:** 2 seconds per cycle (2 FPS, constant rhythm)
@@ -373,7 +373,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Trigger:** Constant — Willem never stops (except Pauses Playing row on tip/speech)
 - **Purpose:** Audio-visual landmark: if you see/hear the accordion, you're in Zone 3
 - **Audio Sync:** Dutch folk tune loop locked to frame cycle
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Ghost Flicker (Sheets 4 & 7):
 - **Duration:** ~3 seconds (0.3 FPS, very slow, uncertain)
@@ -382,7 +382,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Trigger:** Third 5 Sovs tip revelation ("The Eternal Busker" hidden quest)
 - **Purpose:** Is he a ghost or just old? Uncertainty is the point — keep it subtle
 - **Audio Sync:** Accordion continues uninterrupted (the unsettling detail)
-- **Mobile Optimization:** Simple alpha modulation, no shader required
+- **Performance Optimization:** Simple alpha modulation, no shader required
 
 ### Navigation Feedback (Sheet 7):
 - **Duration:** ~1 second each (Correct Direction Chime 4 frames, Wrong Direction Pulse 3 frames)
@@ -391,7 +391,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Trigger:** Player commits to a corridor choice
 - **Purpose:** Subconscious feedback — must NOT clearly telegraph outcomes
 - **Audio Sync:** Subtle positive chime / slight dissonance, matched to sprite
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Question Mark Debuff (Sheet 7):
 - **Duration:** 1-1.5 second loop (2-3 FPS, visible but not distracting)
@@ -400,7 +400,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Trigger:** "Tunnel Confusion" status (multiple wrong turns in single visit)
 - **Purpose:** Status readability
 - **Audio Sync:** None
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### NPC Idle/Active Loops (Sheets 2-6):
 - **Duration:** 2-4 seconds idle (0.25-0.5 FPS, underground lethargy); 0.5-1 second active states (1-2 FPS)
@@ -409,7 +409,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Trigger:** Idle constant; active on dialogue/service (Henk Pointing Confidently, Marloes Handing Item, tourists Relieved at Help, Mevrouw Jansen Looking Down Judging)
 - **Purpose:** Everyone underground moves slowly — lethargy is characterization
 - **Audio Sync:** Marloes's sigh audio on Disappointed Sigh row
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Emergency Glow (Sheet 7):
 - **Duration:** 2-second gentle pulse
@@ -418,7 +418,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Trigger:** Constant on all "Nooduitgang" signs
 - **Purpose:** The hidden navigation secret — the only reliable signs glow green
 - **Audio Sync:** None
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Animation Frame Rates
 
@@ -465,11 +465,10 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC (fallback PVRTC 4BPP); tileset signage and exit reveals need higher quality (readable text and scene detail)
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); tileset signage and exit reveals need higher quality (readable text and scene detail)
 - **Fallback:** PNG high quality for exit reveal scenes (detail-critical comedy shots)
 
 ### Texture Atlases:
@@ -479,7 +478,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 | tunnel_characters | Henk, Marloes, Willem, lost tourists, Mevrouw Jansen | 1024x1024 |
 | tunnel_effects | effects, UI | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -717,7 +716,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (helpful-looking design that misleads)
 - [ ] Hidden areas/interactions have discoverable visual cues (graffiti under flashlight, FEBO entrance, emergency sign secret)
-- [ ] Mobile performance optimized (baked lighting, CPU particles, atlas limits respected)
+- [ ] Performance optimized (baked lighting, CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (stripe end-caps, emergency sign shape)
 - [ ] Social media viral potential maximized in composition choices (Red Light Emergence POV framing)
@@ -734,7 +733,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 | Seedy Underbelly Present | ✅ | Red Light emergence, coffeeshop storage room, tourist-priced "help" economy |
 | Gameplay Value Established | ✅ | Probability navigation puzzle, 5 zones, hidden quests, shortcut economy |
 | Technical Feasibility | ✅ | Baked lighting, simple corridor geometry, audio-led navigation documented |
-| Mobile Performance Budget | ✅ | 60 FPS, <35 draw calls, <40 MB, 30 particles |
+| Performance Budget | ✅ | 60 FPS, <35 draw calls, <40 MB, 30 particles |
 | Accessibility Features | ✅ | Visual mirrors for all directional audio cues, reduced-motion variants, 44px touch zones |
 | No Crypto Elements | ✅ | All transactions in Sovs (guilder ad is period set-dressing only) |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |

@@ -191,7 +191,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Trigger:** Constant
 - **Purpose:** Living centerpiece; the plaza's heartbeat of aged imperial elegance
 - **Audio Sync:** Continuous fountain water layer (volume 0.5)
-- **Mobile Optimization:** Drop to 4 frames at 4 FPS on low-end devices
+- **Performance Optimization:** Drop to 4 frames at 4 FPS on low-end devices
 
 ### Hans-Jürgen Panic:
 - **Duration:** 1.0 second cycle
@@ -200,7 +200,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Trigger:** Fiaker Fiasco quest trigger (first approach during day hours)
 - **Purpose:** Sells the quest hook — a grown man's professional life collapsing in real time
 - **Audio Sync:** Accelerating violin tremolo stinger on first frame
-- **Mobile Optimization:** None needed (single NPC)
+- **Performance Optimization:** None needed (single NPC)
 
 ### Gustav Judgmental Stare:
 - **Duration:** ~3.5 seconds (frame 1 held 3 seconds, frame 2 blink)
@@ -209,7 +209,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Trigger:** Player proximity / dialogue beats
 - **Purpose:** The single most meme-able expression in Sinfonia; comedic dead air
 - **Audio Sync:** Single low cello note on stare start
-- **Mobile Optimization:** None needed
+- **Performance Optimization:** None needed
 
 ### Gustav Escape Trot:
 - **Duration:** 1.0 second cycle
@@ -218,7 +218,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Trigger:** Chase-begins quest phase
 - **Purpose:** Launches the cross-city Fiaker Fiasco chase route
 - **Audio Sync:** Hoofbeats on cobblestone, 2 per cycle
-- **Mobile Optimization:** Reduce to 6 frames at 6 FPS
+- **Performance Optimization:** Reduce to 6 frames at 6 FPS
 
 ### Café Table Destruction:
 - **Duration:** 0.5 seconds
@@ -227,7 +227,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Trigger:** Gustav collision during chase
 - **Purpose:** First property-damage beat; introduces the running SOVS damage gag
 - **Audio Sync:** Crash plus cash-register ching on frame 4
-- **Mobile Optimization:** Skip intermediate frames 2 and 4 on low-end
+- **Performance Optimization:** Skip intermediate frames 2 and 4 on low-end
 
 ### Pigeon Flock (Pecking / Flying):
 - **Duration:** 1.0s pecking loop; 0.67s flight cycle
@@ -236,7 +236,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Trigger:** Constant ambient / proximity startle
 - **Purpose:** Ambient life; supports Pigeon Lady characterization
 - **Audio Sync:** Intermittent pigeon coo layer (volume 0.2); wing flutter on startle
-- **Mobile Optimization:** Cap flock at 12 birds (from 40) on low-end
+- **Performance Optimization:** Cap flock at 12 birds (from 40) on low-end
 
 ### Gas Lamp Glow:
 - **Duration:** 2.0 second cycle
@@ -245,7 +245,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Trigger:** Evening/night states only
 - **Purpose:** Golden-hour-to-night atmosphere shift
 - **Audio Sync:** None
-- **Mobile Optimization:** Static lit frame on low-end
+- **Performance Optimization:** Static lit frame on low-end
 
 ---
 
@@ -281,11 +281,10 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 
 ---
 
-## 📱 Mobile Optimization
+## 🖥️ Performance & Assets
 
-### Texture Compression by Platform:
-- **iOS:** ASTC 6x6 (PVRTC 4BPP fallback); Neptune statue and opera facade need ASTC 4x4 for gilding detail
-- **Android:** ETC2 with alpha
+### Texture Compression:
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Neptune statue and opera facade need uncompressed for gilding detail
 - **Fallback:** PNG high quality for the opera facade (marketing-visible asset)
 
 ### Texture Atlases:
@@ -295,7 +294,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 | plaza_characters | Hans-Jürgen, Gustav, supporting NPCs | 2048x1024 |
 | plaza_effects | fountain, pigeons, lamp glow, destruction | 512x512 |
 
-*(Max atlas size 2048x2048 for mobile GPU compatibility.)*
+*(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -443,7 +442,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 ### Quality Checkpoints:
 - [ ] Satirical theme (culture-as-commodity) is clear throughout all assets
 - [ ] Fiaker queue and fountain interactions have discoverable visual cues
-- [ ] Mobile performance optimized (CPU particles, atlas limits respected)
+- [ ] Performance optimized (CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (48px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
@@ -460,7 +459,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 | Seedy Underbelly Present | ✅ | Ticket scalping, price gouging, night-time "suspicious dealings" |
 | Gameplay Value Established | ✅ | Fiaker Fiasco hub, vendors, status effects, recovery services |
 | Technical Feasibility | ✅ | Four sheets, atlas plan, LOD tiers documented |
-| Mobile Performance Budget | ✅ | 60 FPS, 40 draw calls, 40 MB, 60 particles |
+| Performance Budget | ✅ | 60 FPS, 40 draw calls, 40 MB, 60 particles |
 | Accessibility Features | ✅ | Visual cues for all four comedy stingers; static motion variants |
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Judgmental stare and cape moments identified |
