@@ -727,3 +727,6 @@ mercilessly tearing into Chadwick:
 Home: Publandia city quest file, Trinity of Pints sequence (post-alley-wake-up scripted
 event). Cross-window dependency: the phone/ICQ system doc is the OTHER window's to draw in;
 this scene only USES the canon above.
+
+**Contradiction 2 RULED (author): Iron Gut Tripel = "-10% Accuracy next turn" (next turn
+only), per the Debaucheryville city file.**
