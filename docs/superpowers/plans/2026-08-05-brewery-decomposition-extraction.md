@@ -686,3 +686,44 @@ names pending next interview answer.
 as full NPC-template profiles, ⚠ AUTHOR-REVIEW flagged, for author approval before they
 enter the files. The brewmaster draft carries Trinity's stamp speech (folds gap #12 into
 the review). Gaps #10/#12 (Trinity stamp animation + speech) route through these drafts.
+
+**Trinity ruling addendum 6 (author-dictated): the Brenda call — secondary event
+immediately after the alley wake-up.** PHONE CANON (partial, being drawn in another
+window — transcribe, do not extend): the bros' cellphones were taken on arrival in
+Euromemeia (parody Europe; author to fill in WHY later). They share ONE phone: contacts
+pre-programmed (caller ID shows names), has ICQ messenger, and it ONLY works on
+speakerphone — there is no privacy on this phone, ever. Brenda = Chadwick's wife; she acts
+as if she doesn't know she's on speaker (SHE KNOWS — reason lands in story work in the
+author's other window; do not explain it anywhere).
+
+SCENE (dialogue verbatim, placement: bros wake Hungover in the alley, nauseous, dizzy;
+Bradley + Pilsner groaning on the curb about their stomachs, sun too bright; phone rings,
+caller ID: Brenda):
+- Chadwick (whispering frantically): "Guys... quiet! It's Brenda!"
+- Brenda: "Chadwick? Are you alone? I've been thinking about you all day..."
+- Chadwick: "Uh- hi honey! Yes! Total signal isolation over here! Just... standing in a
+  very quiet academic square!"
+- Brenda: "Good. Because Headmistress Brenda needs to know if her naughty little student
+  has been misbehaving in class. Did you get sent to the principal's office?"
+- Lord Pilsner: (gagging silently in the background, making a face)
+- Brenda: "Tell me what you're wearing right now, Chadwick. Are you touching yourself? Put
+  your hand down your pants for Headmistress Brenda right now."
+- Chadwick (panicking, eyes darting to Pilsner and Bradley who are shaking with silent
+  laughter): "Uhhh-" (making mouth sounds to fake a bad signal) "Honey you're-" (more mouth
+  sounds) "breaking up! I'm going into a-" (more distorted mouth sounds) "a tunnel!"
+- Brenda: "Don't you dare make static mouth noises at me, Chadwick. I know you're just-"
+- Chadwick: (increasingly annoying loud mouth-static sounds) "Losing connection!" (sounds)
+  (SLAM — hangs up)
+The moment the call ends, the Hungover misery is instantly replaced by Pilsner and Bradley
+mercilessly tearing into Chadwick:
+- Lord Pilsner: "Headmistress Brenda, Chadwick? Really? Is your hand down your cargo shorts
+  right now, 'naughty student'?"
+- Bradley: "I'm hungover as hell, but watching you sweat through your polo shirt just cured
+  my headache. Call her back! I want to hear about your detention. Does she spank you with
+  a ruler?"
+- Chadwick (bright red, adjusting his collar): "She was testing the network stability! It
+  was a line test!"
+
+Home: Publandia city quest file, Trinity of Pints sequence (post-alley-wake-up scripted
+event). Cross-window dependency: the phone/ICQ system doc is the OTHER window's to draw in;
+this scene only USES the canon above.
