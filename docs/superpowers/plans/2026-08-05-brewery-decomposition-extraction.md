@@ -671,3 +671,13 @@ being trolled by oblivious confidence drives the rage that triggers the boss fig
 Traditions" (the hazing gauntlet with real fights per station). Course 4 = "Thesis Defense
 401" (the beer pong tournament — the thesis survives as a name-only joke: you defend your
 thesis across ten cups; no grading anywhere).
+
+**Trinity ruling addendum 4 (author): faculty casting approved as proposed.** Pub 115
+toast-off = Prof. Róisín O'Sullivan (Spirits Dept, bent: intro course teaches toasting as
+foundational etiquette, shot in hand). Song 220 = Prof. Aisling Byrne (bodhrán/rhythm/Irish
+drinking songs). Greek 330 = Prof. Cian MacCarthy (Games & Rec). Thesis Defense 401 = Dean
+Cathal Murphy. The three professors are the Dean's battle allies in SECURE THE QUAD.
+TWO NEW NPCs REQUIRED (author-flagged): the tournament REFEREE (whistle, red card, rule 4B
+call, reluctantly presents the rigged ball) and the Trinity BREWMASTER (stamps the passport,
+obliviously smiling in the graduation selfie holding the opener + special beer). Identity/
+names pending next interview answer.
