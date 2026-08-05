@@ -635,3 +635,13 @@ Trinity of Pints. A secondary event follows immediately after (author has it, to
 dictated). Files affected beyond the item files: the Publandia city quest file AND
 design/worlds/publandia/trinity_of_pints.md (existing structure largely stands, grading
 removed). Gap #11 partially resolved: the BREWMASTER is Trinity's stamper.
+
+**Trinity ruling addendum (author): BATTLE IS IN.** After the referee ruling, the Dean —
+humiliated and exposed as a fraud in front of the "students" (patrons) and professors —
+grows red-faced, RIPS OFF his tweed jacket, grabs his heavy ceremonial brass gavel, and
+screams "NOBODY GRADUATES! SECURE THE QUAD!" → straight into battle vs the Dean + three
+professors (backhanded compliment delivered post-battle). Author note: lets the bros
+succeed without being heroes or great at any of it. CHANGED beat: the post-graduation
+knockout at the door is done by SECURITY (not the faculty) — bros are knocked out, the
+lesson-teaching beatdown happens during the blackout, then wake Hungover in the alley
+behind Trinity of Pints as planned.
