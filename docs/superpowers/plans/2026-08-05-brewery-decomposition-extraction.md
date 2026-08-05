@@ -666,3 +666,8 @@ logic — Pilsner attributes the win to his own toughness/luck, never procedure;
 satire — the scam fails because the bros are too self-absorbed to notice being scammed, so
 the insult never lands; (3) escalation — the Dean gets ZERO satisfaction from his villainy;
 being trolled by oblivious confidence drives the rage that triggers the boss fight.
+
+**Trinity ruling addendum 3 (author):** Course 3 = "Greek 330 — Applied Fraternal
+Traditions" (the hazing gauntlet with real fights per station). Course 4 = "Thesis Defense
+401" (the beer pong tournament — the thesis survives as a name-only joke: you defend your
+thesis across ten cups; no grading anywhere).
