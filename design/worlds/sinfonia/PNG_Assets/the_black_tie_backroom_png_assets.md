@@ -636,7 +636,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Draw Calls**: Under 20 for the full location
 - **Memory**: Under 50MB with all zones loaded
 - **Particles**: Maximum 60 simultaneous
-- **Target FPS**: 45 on min-spec hardware
+- **Target FPS**: 60 on min-spec hardware
 - **Pre-rendered**: Roulette spin cycle, card deal animations, static crowd fills
 
 ### Character Integration Notes:

@@ -419,7 +419,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
 - **Emotional State Tracking**: "Post-Clock Vulnerability" flag for 30 minutes game time
 
 ### Performance Budget
-- **Target FPS**: 45-60
+- **Target FPS**: 60-60
 - **Max Draw Calls**: 20-45 (depending on crowd density)
 - **Memory Budget**: 45-50MB
 - **Particle Limit**: Camera flashes (20 max), incense smoke (1 emitter), pigeon feathers (10 max)
