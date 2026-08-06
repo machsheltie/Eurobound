@@ -1,6 +1,6 @@
 # CLAUDE.md — Eurobound
 
-Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.4**, targeting **Steam/desktop**. Three aging frat bros — Lord Pilsner, Chadwick, and Bradley — take one last bender across a parody Europe soaked in 90s/early-2000s pop culture. Read `Design/Synopsis.md` before writing or editing any game content.
+Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.4**, targeting **Steam/desktop**. Three aging frat bros — Lord Pilsner, Chadwick, and Bradley — take one last bender across a parody Europe soaked in 90s/early-2000s pop culture. Read `design/narrative/Synopsis.md` before writing or editing any game content.
 
 ## Content rules (non-negotiable)
 

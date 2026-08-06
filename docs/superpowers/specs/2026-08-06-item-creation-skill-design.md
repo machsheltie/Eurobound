@@ -39,7 +39,7 @@ which is why it is a separate skill rather than a second phase of the first.
 "Trigger on completion" means the creation skill's last mandatory checklist item is to invoke
 the sync skill. It is not an OS-level or hook-level event. This is a hard step, not a suggestion.
 
-Both skills live in `.claude/skills/`.
+Both skills live in `.claude/Skills/`.
 
 ---
 
@@ -55,7 +55,7 @@ item for Eurobound. Also fires on autonomous runs that determine a new item is n
 Before writing any content, in this order:
 
 1. `CLAUDE.md` — content rules, SOVS-only currency, no real place names, uniqueness requirement
-2. `Design/Synopsis.md` — premise, the three bros, the world
+2. `design/narrative/Synopsis.md` — premise, the three bros, the world
 3. The `eurobound-satire-voice` skill — read **in full**, not just the opening section
 
 This ordering is the anti-sanitization guard. The skill restates the non-negotiables inline so
@@ -231,7 +231,7 @@ Recorded 2026-08-06 during design:
 1. **Template selection:** permanent by default; brewery beer/opener/stamp route to their
    specialized templates and to `design/items/brewery_tour/`.
 2. **Author gate:** the skill interviews the author rather than drafting unratified content.
-   It must load `CLAUDE.md`, `Design/Synopsis.md`, and `eurobound-satire-voice` before writing,
+   It must load `CLAUDE.md`, `design/narrative/Synopsis.md`, and `eurobound-satire-voice` before writing,
    because the model's default instinct is to sanitize.
 3. **Legacy files:** not sorted. New items only.
 4. **Engine JSON:** handled by a second skill chained off the first, not inline.
