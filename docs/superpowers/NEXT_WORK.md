@@ -144,15 +144,23 @@ with SUPERSEDED banners (stray Publandia copy renamed
 drafted fields (Gaps 1–20 flags inside the Publandia item files) + the six keychain parody
 mints; (2) referee + Trinity brewmaster NPC drafts DRAFTED 2026-08-06, awaiting author review
 (Rulings addendum 5): `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_oisin_fitzpatrick.md`
-(Referee Oisín Fitzpatrick) + `npc_fergal_kavanagh.md` (Brewmaster Fergal Kavanagh — carries
-the Gap #10/#12 stamp animation/speech drafts; on approval they backfill
-`stamp_trinity_of_pints_item.md`'s ⚠ PENDING markers); names are drafted mints, checked
-unique; (3) Shamsterdam mini-round blocked on the author minting its
+(Referee Oisín Fitzpatrick) + `npc_malachy_kavanagh.md` (Brewmaster Malachy Kavanagh —
+carries the Gap #10/#12 stamp animation/speech drafts; on approval they backfill
+`stamp_trinity_of_pints_item.md`'s ⚠ PENDING markers); names are drafted mints — the
+review round caught that the brewmaster's original mint "Fergal" collided with Old Fergal
+(Blarney Trap regular) and was re-minted to Malachy; Oisín/Fitzpatrick/Malachy/Kavanagh
+verified unique repo-wide; (3) Shamsterdam mini-round blocked on the author minting its
 4 brewery names (then 12 item files + city quest file from the same templates; Canal Courage
 PNG naming fix on write); (4) undesigned challenges: Publandia ×3 (Blarney Trap, Stoutworks,
 Shenanigans), Sinfonia ×4, marked ⚠ AUTHOR TO DESIGN in the city files; (5) the deb file's
 "Puka Shell Worldliness" bingo square lost its referent with the Mirror Chad kill — needs a
-new home or author kill.
+new home or author kill; (6) three review-round escalations for the author batch: (a) beer
+PNG stem convention — sources use beer-name stems (`absinthe_lager_bottle.png`), Contradiction
+5's wording says stamp/beer stems match item-file slugs; sourced names transcribed for now,
+author to confirm or order the rename; (b) Dr. Vaněk's salvaged greeting keeps "You're
+authorized for my experiments" — borderline residual authorization framing under salvage 27,
+author call; (c) keychain's kept "European bartenders give you better prices or exclusive
+drinks" perk reads adjacent to the dead gating model — author call.
 
 All five design forks resolved by author: (1) keychain = ONE item, openers = one per brewery
 EARNED on challenge completion (vendor sales + ICQ opener sales DEAD); (2) 16 breweries

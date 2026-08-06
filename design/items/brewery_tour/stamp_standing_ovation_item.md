@@ -8,6 +8,7 @@
 ## Design
 - **Stamp Face**: comedy and tragedy theater masks clinking beer steins together [source: design/items/brewery_passport_book_sinfonia.md L138]
 - **Ink Color**: dramatic crimson with gold leaf flecks [source: design/items/brewery_passport_book_sinfonia.md L139]
+- **Stamp Inscription**: "Bravissimo!" [source: design/items/brewery_passport_book_sinfonia.md L140; recovered 2026-08-06 review round — the extraction table had no stamp-inscription field]
 - **Stamp Animation**: curtain rises, spotlight hits page, applause sound effect [source: design/items/brewery_passport_book_sinfonia.md L141]
 
 ## The Stamping

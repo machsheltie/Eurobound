@@ -167,7 +167,7 @@ labeled zip bag on his belt for the rest of the game.
 | NPC | Relationship |
 |-----|--------------|
 | Dean Cathal Murphy | Eleven years of mutual institutional respect, detonated in one whistle blast |
-| Brewmaster Fergal Kavanagh | The other half of Trinity's ceremonial apparatus; Fergal's obliviousness offends Oisín professionally |
+| Brewmaster Malachy Kavanagh | The other half of Trinity's ceremonial apparatus; Malachy's obliviousness offends Oisín professionally |
 | Profs. O'Sullivan / Byrne / MacCarthy | Colleagues; he has carded MacCarthy twice (Greek 330 "incidents") |
 
 ### Territory / Social Dynamics

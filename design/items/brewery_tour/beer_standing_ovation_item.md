@@ -17,5 +17,9 @@
 ## Flavor Text
 > "Aged in barrels from the old opera house. Some say you can taste the ambition. Others say that's just the hops." [source: design/items/brewery_passport_book_sinfonia.md L180]
 
+## PNG Assets
+- `curtain_call_copper_bottle.png` — 32x64 — copper lager, theatrical label [source: design/items/brewery_passport_book_sinfonia.md L322]
+- `curtain_call_copper_icon.png` — 32x32 — menu icon [source: design/items/brewery_passport_book_sinfonia.md L323]
+
 ## Notes
 - Brewed by — The Standing Ovation (on-site, with ceremony) [source: design/items/brewery_passport_book_sinfonia.md L181].

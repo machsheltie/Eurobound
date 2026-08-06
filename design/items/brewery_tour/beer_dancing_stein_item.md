@@ -17,5 +17,9 @@
 ## Flavor Text
 > "Brewed in three stages, fermented in three tanks, served in three-quarter time. The foam always swirls clockwise. We don't know why." [source: design/items/brewery_passport_book_sinfonia.md L202]
 
+## PNG Assets
+- `waltz_weizen_bottle.png` — 32x64 — wheat beer, swirling foam [source: design/items/brewery_passport_book_sinfonia.md L326]
+- `waltz_weizen_icon.png` — 32x32 — menu icon [source: design/items/brewery_passport_book_sinfonia.md L327]
+
 ## Notes
 - Brewed by — The Spinning Brewery (off-site partner, delivers fresh daily) [source: design/items/brewery_passport_book_sinfonia.md L203].

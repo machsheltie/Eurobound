@@ -17,5 +17,9 @@
 ## Flavor Text
 > "300 years of brewing tradition. 0 years of health code compliance. Priorities." [source: design/items/brewery_passport_book_debaucheryville.md L142]
 
+## PNG Assets
+- `iron_gut_tripel_goblet.png` — 32x64 — antique goblet [source: design/items/brewery_passport_book_debaucheryville.md L287]
+- `iron_gut_tripel_icon.png` — 32x32 — menu icon [source: design/items/brewery_passport_book_debaucheryville.md L288]
+
 ## Notes
 - Brewed by — Three-Crown Keg Haus (ancient recipe, questionable equipment) [source: design/items/brewery_passport_book_debaucheryville.md L143].

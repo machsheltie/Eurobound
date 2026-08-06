@@ -127,7 +127,7 @@ Stamps are earned on challenge completion at each brewery, never on ordering (au
 
 ## PNG Assets
 
-### Book Assets (8 PNGs) [source: design/items/brewery_passport_book.md L340-348]
+### Book Assets (8 PNGs) [source: design/items/brewery_passport_book.md L336-344]
 - `passport_book_closed.png` — 128x128 — Cover view
 - `passport_book_open.png` — 512x384 — Full spread
 - `passport_page_publandia.png` — 256x384 — City page
@@ -137,12 +137,12 @@ Stamps are earned on challenge completion at each brewery, never on ordering (au
 - `passport_spine.png` — 32x384 — Book spine detail
 - `bookmark_hop.png` — 32x64 — Hop leaf bookmark
 
-### Shared Stamp-Slot Assets [source: design/items/brewery_passport_book.md L354-356]
+### Shared Stamp-Slot Assets [source: design/items/brewery_passport_book.md L351-352]
 - `stamp_slot_empty.png` — 64x64 — Placeholder
 - `stamp_slot_locked.png` — 64x64 — Undiscovered
 - (Per-brewery stamp, beer, and opener PNGs live in their item files in `design/items/brewery_tour/`)
 
-### Achievement Assets (6 PNGs) [source: design/items/brewery_passport_book.md L368-374]
+### Achievement Assets (6 PNGs) [source: design/items/brewery_passport_book.md L365-371]
 - `legendary_hangover_publandia.png` — 48x48
 - `legendary_hangover_debaucheryville.png` — 48x48
 - `legendary_hangover_sinfonia.png` — 48x48
@@ -150,7 +150,7 @@ Stamps are earned on challenge completion at each brewery, never on ordering (au
 - `continental_beer_master_badge.png` — 96x96
 - `photogenic_drinker_badge.png` — 64x64
 
-### UI Assets (8 PNGs) [source: design/items/brewery_passport_book.md L377-385]
+### UI Assets (8 PNGs) [source: design/items/brewery_passport_book.md L373-381]
 - `passport_tab_icon.png` — 32x32 — Menu icon
 - `passport_notification.png` — 24x24 — New stamp available
 - `progress_bar_city.png` — 128x16 — City completion
@@ -169,7 +169,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable [s
 
 Global stat guideline ranges (the 8–15 Sovs price band is a GUIDELINE, not a rule — author ruling, Contradiction 3) [source: design/items/brewery_passport_book.md L188-195]: +25 to +50 HP, +0 to +20 SP, location-specific buff, 5–15% minor debuff risk.
 
-## Implementation Notes [source: design/items/brewery_passport_book.md L364-374 region]
+## Implementation Notes [source: design/items/brewery_passport_book.md L310-330]
 
 - Menu system integration (new tab); stamp collection tracking (per-location flags); beer unlock system (inventory additions); achievement tracking (city and continental); selfie gallery (image collection)
 - Save data: stamps saved to profile (persist across saves); beer unlocks tied to stamps; selfie collection separate tracking; achievement progress persistent

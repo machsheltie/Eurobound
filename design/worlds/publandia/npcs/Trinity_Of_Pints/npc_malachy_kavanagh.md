@@ -1,4 +1,4 @@
-# NPC Profile: Brewmaster Fergal Kavanagh
+# NPC Profile: Brewmaster Malachy Kavanagh
 
 > ⚠ AUTHOR-REVIEW DRAFT (extraction Rulings addendum 5, 2026-08-05) — Claude-drafted per
 > author order ("Claude drafts BOTH new NPCs"). Nothing here is canon until the author
@@ -9,9 +9,9 @@
 *"By the power vested in the tap since 1854 — hold still, lads."*
 
 ## 📋 NPC Identity
-- **NPC ID**: `publandia_npc_fergal_kavanagh_01`
-- **Display Name**: Brewmaster Fergal
-- **Internal Name**: Brewmaster Emeritus Fergal Kavanagh
+- **NPC ID**: `publandia_npc_malachy_kavanagh_01`
+- **Display Name**: Brewmaster Malachy
+- **Internal Name**: Brewmaster Emeritus Malachy Kavanagh
 - **Role**: Ceremonial brewmaster / stamper NPC / selfie NPC (Trinity of Pints)
 - **Associated Quest**: Brewery Tour — Publandia, Trinity of Pints sequence (`design/quests/publandia/brewerytourpublandia.md`)
 - **Primary Location**: Trinity of Pints, Publandia (the taps; the graduation podium)
@@ -24,21 +24,21 @@
 ### What They're Actually Doing
 Presiding, beaming, over a "brewery" that has not brewed anything in living memory — Trinity's
 Academic Amber arrives quietly by truck from The Stoutworks Brewery as a contract brew
-[source: design/worlds/publandia/trinity_of_pints.md L359]. Fergal's actual job is
+[source: design/worlds/publandia/trinity_of_pints.md L359]. Malachy's actual job is
 ceremony: he keeps the taps polished, wears full academic regalia at bar-side, confers the
 passport stamp at graduation, and poses for the selfie holding the opener and the beer he
 did not make. He may or may not know the truck exists. Nobody has ever asked him. He has
 never wondered.
 
 ### What Bros Believe
-That Fergal is a master craftsman-scholar, the living source of "real European brewing
+That Malachy is a master craftsman-scholar, the living source of "real European brewing
 knowledge," and that his stamp is an academic credential with international standing.
 
 ### The Comedy Gap
 Trinity's entire faculty is fraud with footnotes — the Dean cheats at beer pong, the degrees
 are drinking games — and at the center of it stands the one man with zero deception in him,
-because Fergal isn't hiding that he doesn't brew; he has simply never connected the dots.
-The Dean's rage-fueled meltdown happens meters away and Fergal's read on it is that
+because Malachy isn't hiding that he doesn't brew; he has simply never connected the dots.
+The Dean's rage-fueled meltdown happens meters away and Malachy's read on it is that
 commencement week is always a bit emotional.
 
 ---
@@ -75,7 +75,7 @@ smile at maximum. That selfie frame is the character.
 ## 🧠 Personality
 
 ### Archetype
-**The Oblivious Institution** — Fergal IS Trinity of Pints the way a bell is a church. He
+**The Oblivious Institution** — Malachy IS Trinity of Pints the way a bell is a church. He
 believes completely in the ceremony, the regalia, the sanctity of the stamp, and none of the
 questions. His sincerity is structural: the venue's academic cosplay works because one man
 inside it isn't pretending.
@@ -91,7 +91,7 @@ inside it isn't pretending.
 
 ### Internal Monologue
 > "Lovely bunch, this class. Bit of energy about them. The tall one's crying — happens every
-> year, the emotion of it. Now. Ink. Steady hand, Fergal. This part matters."
+> year, the emotion of it. Now. Ink. Steady hand, Malachy. This part matters."
 
 ### Motivation
 The ceremony. Somebody must confer things, and conferring is the finest work a man can do
@@ -111,11 +111,11 @@ with dry hands.
 > in-house, in the sense that this is a house, and there is beer in it."
 
 ### Key Interaction Dialogue — the Graduation Ceremony (author-dictated beat)
-*Podium. Bros in robes. The Dean seethes beside him; Fergal beams. He stamps the passport —
+*Podium. Bros in robes. The Dean seethes beside him; Malachy beams. He stamps the passport —
 see The Stamping below — then hands over the bottle opener and the Academic Amber, holding
 both up for the selfie, obliviously smiling. Bradley is vomiting on the Dean's shoes.*
 
-**Brewmaster Fergal** (to Bradley, warmly):
+**Brewmaster Malachy** (to Bradley, warmly):
 > "Overcome, is he? It takes some that way. Commencement week — always a bit emotional."
 
 ### The Stamping (⚠ AUTHOR-REVIEW — Gap #12; backfills the stamp item file on approval)
@@ -178,13 +178,13 @@ the fourth frame a scrap of rolled-diploma confetti pops from the seal. (Fits th
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Dean Cathal Murphy | The Dean finds Fergal's obliviousness restful — the only colleague who has never once questioned him |
-| Referee Oisín Fitzpatrick | Oisín is professionally offended by Fergal's disregard for procedure; Fergal thinks Oisín is "a lovely, whistling boy" |
-| The Stoutworks Brewery (Vat Master) | The unexamined truck. Trinity's Academic Amber is their contract brew; whether Fergal knows is a question no one has been cruel enough to ask |
+| Dean Cathal Murphy | The Dean finds Malachy's obliviousness restful — the only colleague who has never once questioned him |
+| Referee Oisín Fitzpatrick | Oisín is professionally offended by Malachy's disregard for procedure; Malachy thinks Oisín is "a lovely, whistling boy" |
+| The Stoutworks Brewery (Vat Master) | The unexamined truck. Trinity's Academic Amber is their contract brew; whether Malachy knows is a question no one has been cruel enough to ask |
 | Profs. O'Sullivan / Byrne / MacCarthy | He confers their course completions too; brings biscuits to faculty meetings |
 
 ### Territory / Social Dynamics
-- Universally protected: even the Dean's rage flows around Fergal like water around a stone
+- Universally protected: even the Dean's rage flows around Malachy like water around a stone
 
 ---
 
@@ -198,7 +198,7 @@ the fourth frame a scrap of rolled-diploma confetti pops from the seal. (Fits th
 None.
 
 ### Evolution Through Game
-None. Fergal at the end of the game is Fergal at the start of the game. Institutions do not
+None. Malachy at the end of the game is Malachy at the start of the game. Institutions do not
 develop; they endure.
 
 ---
@@ -253,8 +253,8 @@ None — nothing gates on anything (author ruling 2026-08-04).
 ## 📸 Social Media / Viral Potential
 
 ### Screenshot Moments
-1. The graduation selfie itself: Fergal beaming with items aloft, Dean seething, Bradley mid-vomit, Chadwick mooning
-2. Fergal polishing a glass in the foreground while the boss battle rages behind him
+1. The graduation selfie itself: Malachy beaming with items aloft, Dean seething, Bradley mid-vomit, Chadwick mooning
+2. Malachy polishing a glass in the foreground while the boss battle rages behind him
 3. "Brewed in-house, in the sense that this is a house, and there is beer in it."
 
 ### Meme Potential
@@ -295,7 +295,7 @@ Publandian (Irish-parody), rounded and slow — every sentence arrives pre-warme
 | Quest integration documented | ✅ |
 | Sprite notes for artists | ✅ |
 | Comedy value preserved | ✅ |
-| Bros never achieve self-awareness | ✅ (and neither does Fergal) |
+| Bros never achieve self-awareness | ✅ (and neither does Malachy) |
 | World consistency (city names) | ✅ (Publandia only) |
 
 ---
@@ -306,10 +306,13 @@ Publandian (Irish-parody), rounded and slow — every sentence arrives pre-warme
   ARE the Gap #12/#10 drafts — on author approval they replace the ⚠ PENDING markers in
   `design/items/brewery_tour/stamp_trinity_of_pints_item.md`; on rejection the author
   dictates replacements
-- Name "Fergal Kavanagh" is a drafted mint — checked unique against the repo (no existing
-  Fergal/Kavanagh)
+- Name "Malachy Kavanagh" is a drafted mint. NAMING NOTE (review round 2026-08-06): the
+  draft was originally "Malachy Kavanagh" — the round-1 review caught that "Old Malachy" is an
+  established Blarney Trap regular (same city) and a second Malachy appears in
+  couchsurfingchroniclespublandia.md, so the first name was re-minted. "Malachy" and
+  "Kavanagh" verified unique repo-wide ("Cormac" and "Donal" were also checked and are taken)
 - The Stoutworks contract-brew fact is existing venue-doc canon (`trinity_of_pints.md` L359)
-  — this profile leans on it for comedy but does not resolve whether Fergal knows; keep that
+  — this profile leans on it for comedy but does not resolve whether Malachy knows; keep that
   unresolved (it's funnier)
 - "1854" in the stamp speech is a drafted founding-year gag (the passport UI's Blarney
   mockup uses "Est. 1847"); author may re-mint
@@ -319,8 +322,8 @@ Publandian (Irish-parody), rounded and slow — every sentence arrives pre-warme
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] No crypto content — Fergal predates money, spiritually
-- [x] Bros are never scam-aware; Fergal is never anything-aware
+- [x] No crypto content — Malachy predates money, spiritually
+- [x] Bros are never scam-aware; Malachy is never anything-aware
 - [x] Nothing winks — his sincerity is the engine, never a nudge
 
 ### Satirical Target Verification
@@ -333,7 +336,7 @@ Publandian (Irish-parody), rounded and slow — every sentence arrives pre-warme
 ## 🔧 Development Status
 
 - **Status**: Drafted — ⚠ AUTHOR-REVIEW (do not implement before author approval)
-- **Profile File Location**: `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_fergal_kavanagh.md`
+- **Profile File Location**: `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_malachy_kavanagh.md`
 - **Registered In**: No — pending author approval
 - **Sprite Sheet**: not yet specced
 

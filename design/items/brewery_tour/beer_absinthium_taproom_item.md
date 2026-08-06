@@ -17,5 +17,9 @@
 ## Flavor Text
 > "It's not a bug, it's a feature. The disorientation means it's working." — Dr. Vaněk [source: design/items/brewery_passport_book_debaucheryville.md L120]
 
+## PNG Assets
+- `absinthe_lager_bottle.png` — 32x64 — green glass, glowing [source: design/items/brewery_passport_book_debaucheryville.md L283]
+- `absinthe_lager_icon.png` — 32x32 — menu icon [source: design/items/brewery_passport_book_debaucheryville.md L284]
+
 ## Notes
 - Brewed by — The Absinthium Taproom (in-house) [source: design/items/brewery_passport_book_debaucheryville.md L121].

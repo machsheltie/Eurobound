@@ -8,6 +8,7 @@
 ## Design
 - **Stamp Face**: metronome pendulum frozen mid-swing, beer stein at rest below [source: design/items/brewery_passport_book_sinfonia.md L131]
 - **Ink Color**: warm amber with copper accents [source: design/items/brewery_passport_book_sinfonia.md L132]
+- **Stamp Inscription**: "Tempo Settled (Temporarily)" [source: design/items/brewery_passport_book_sinfonia.md L133; recovered 2026-08-06 review round — the extraction table had no stamp-inscription field]
 - **Stamp Animation**: metronome ticks three times, stamp lands on final tick [source: design/items/brewery_passport_book_sinfonia.md L134]
 
 ## The Stamping

@@ -8,6 +8,7 @@
 ## Design
 - **Stamp Face**: ornate Habsburg-style crown resting atop an oak beer barrel [source: design/items/brewery_passport_book_sinfonia.md L145]
 - **Ink Color**: royal purple with gold leaf flecks [source: design/items/brewery_passport_book_sinfonia.md L146]
+- **Stamp Inscription**: "Duly Knighted" [source: design/items/brewery_passport_book_sinfonia.md L147; recovered 2026-08-06 review round — the extraction table had no stamp-inscription field]
 - **Stamp Animation**: trumpet fanfare (tiny), crown descends onto page, wax seal effect [source: design/items/brewery_passport_book_sinfonia.md L148]
 
 ## The Stamping

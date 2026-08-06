@@ -17,5 +17,9 @@
 ## Flavor Text
 > "Aged during the incident. Tastes like existential crisis." [source: design/items/brewery_passport_book.md L215]
 
+## PNG Assets
+- `vat_masters_reserve_bottle.png` — 32x64 [source: design/items/brewery_passport_book.md L359]
+- `vat_masters_reserve_icon.png` — 32x32 [source: design/items/brewery_passport_book.md L360]
+
 ## Notes
 - Brewed by — The Stoutworks Brewery itself, in-house flagship release [source: design/worlds/publandia/the_stoutworks_brewery.md L407]. This resolves Gap #9 with existing venue-doc canon rather than drafted content.

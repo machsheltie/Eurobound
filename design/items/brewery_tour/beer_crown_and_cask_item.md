@@ -17,5 +17,9 @@
 ## Flavor Text
 > "Brewed with hops that can trace their lineage back seven generations. The yeast is merely five generations, but we don't discuss that." [source: design/items/brewery_passport_book_sinfonia.md L191]
 
+## PNG Assets
+- `heir_apparent_ale_bottle.png` — 32x64 — golden ale, crown glass [source: design/items/brewery_passport_book_sinfonia.md L324]
+- `heir_apparent_ale_icon.png` — 32x32 — menu icon [source: design/items/brewery_passport_book_sinfonia.md L325]
+
 ## Notes
 - Brewed by — Crown & Cask (family recipe, "royal" process) [source: design/items/brewery_passport_book_sinfonia.md L192].

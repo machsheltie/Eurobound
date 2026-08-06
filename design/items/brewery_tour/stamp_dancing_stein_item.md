@@ -8,6 +8,7 @@
 ## Design
 - **Stamp Face**: traditional beer stein with cartoon legs mid-waltz, foam trailing like a dress [source: design/items/brewery_passport_book_sinfonia.md L152]
 - **Ink Color**: ballroom gold with blue waltz accents [source: design/items/brewery_passport_book_sinfonia.md L153]
+- **Stamp Inscription**: "Danced & Drank" [source: design/items/brewery_passport_book_sinfonia.md L154; recovered 2026-08-06 review round — the extraction table had no stamp-inscription field]
 - **Stamp Animation**: waltz music plays (3 beats), stamp spins onto page in rhythm [source: design/items/brewery_passport_book_sinfonia.md L155]
 
 ## The Stamping

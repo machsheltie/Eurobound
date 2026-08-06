@@ -280,7 +280,7 @@ fields are listed as **GAP** and numbered into the Gap Manifest below.
 
 **beer: Vape Stout**
 - style: vapor-infused experimental stout [source: design/items/brewery_passport_book_debaucheryville.md L125]
-- ABV: 6.9% [source: design/items/brewery_passport_book_debaucheryville.md L126]
+- ABV: 6.9% (nice) [source: design/items/brewery_passport_book_debaucheryville.md L126; parenthetical restored 2026-08-06 review round]
 - HP/SP: +20 SP restoration [source: design/items/brewery_passport_book_debaucheryville.md L127]
 - effect: "Glow-Up Aura" (+1 Charm, +1 Defense for 30 min) [source: design/items/brewery_passport_book_debaucheryville.md L128]
 - risk: applies "Grease Fingers" status (reduced item accuracy) [source: design/items/brewery_passport_book_debaucheryville.md L129]
@@ -367,13 +367,13 @@ fields are listed as **GAP** and numbered into the Gap Manifest below.
 - PNG: `bottle_opener_moderato_pub.png` 48x48; `bottle_opener_moderato_swing.png` 48x48 [source: design/items/brewery_passport_book_sinfonia.md L330-331] — **see Contradiction List #5** (`complete` names these `bottle_opener_moderato.png`/`_moderato_swing.png`)
 
 **beer: Tempo Tantrum**
-- style: medium-bodied amber ale, perfectly balanced [source: design/items/brewery_passport_book_sinfonia.md L163]
+- style: medium-bodied amber ale, perfectly balanced (of course) [source: design/items/brewery_passport_book_sinfonia.md L163; parenthetical restored 2026-08-06 review round]
 - ABV: 5.5% [source: design/items/brewery_passport_book_sinfonia.md L164]
 - HP/SP: +20 HP, +10 SP [source: design/items/brewery_passport_book_sinfonia.md L165]
 - effect: "Moderate Mood" — immune to Rushed/Sluggish for 30 min [source: design/items/brewery_passport_book_sinfonia.md L166]
-- risk: none [source: design/items/brewery_passport_book_sinfonia.md L167]
+- risk: None (the one balanced thing in the pub) [source: design/items/brewery_passport_book_sinfonia.md L167; parenthetical restored 2026-08-06 review round]
 - price: 6 Sovs [source: design/items/brewery_passport_book_sinfonia.md L168] — **see Contradiction List #3** (below the 8-Sov price-band floor)
-- flavor text: "Not too hoppy, not too malty, not too strong, not too weak... It's perfect." — Herr Takt [source: design/items/brewery_passport_book_sinfonia.md L169]
+- flavor text: "Not too hoppy, not too malty, not too strong, not too weak. The Allegro faction calls it boring. The Adagio faction calls it rushed. It's perfect." — Herr Takt [source: design/items/brewery_passport_book_sinfonia.md L169; full text restored 2026-08-06 review round — this table had truncated the tempo-faction lines to an ellipsis]
 - brewed by: The Moderato Pub (in-house, recipe unchanged since 1848) [source: design/items/brewery_passport_book_sinfonia.md L170]
 - special quirk: the only beer all tempo factions grudgingly accept [source: design/items/brewery_passport_book_sinfonia.md L171]
 - PNG: `tempo_tantrum_bottle.png` 32x64; `tempo_tantrum_icon.png` 32x32 [source: design/items/brewery_passport_book_sinfonia.md L320-321]
@@ -861,3 +861,34 @@ content stays readable in `design/legacy/` provenance copies until that round).
 | Unlock rule / hangover versions / slot order / opener sellers | RULED/void per the design spec §2 list (hybrid model; consumable city-file depth; order unimportant; earned only) |
 
 **Result: every row resolves. No unresolved rows — retirement may proceed.**
+
+### Corrections (review round 2026-08-06)
+
+An adversarial review pass over phases 3–5 found the following matrix claims false as
+committed; all are FIXED on disk as of this correction:
+
+1. **Beer bottle/icon PNG specs (22 assets, 11 beers)** — the A.1/A.2/A.3/A.4 PNG rows
+   claimed `#PNG Assets` homes that did not exist for beers (the signature-beer template has
+   no PNG section and none was added). FIXED: every beer item file now carries a sourced
+   `## PNG Assets` section (Shenanigans' drafted `fools_gold_*` pair stays ⚠ AUTHOR-REVIEW
+   in its Notes). Filenames transcribed verbatim from sources (beer-name stems); whether
+   Contradiction 5's "stamp/beer asset stems match item-file slugs" wording requires
+   renaming them to brewery-slug stems is ESCALATED to the author batch (the Task-4 fix
+   commit's `fools_gold_*` precedent kept beer-name stems).
+2. **Sinfonia stamp inscriptions** — four authored inscriptions ("Tempo Settled
+   (Temporarily)" / "Bravissimo!" / "Duly Knighted" / "Danced & Drank", sin_passport
+   L133/140/147/154) were never extracted (this table has no stamp-inscription field) and
+   the "City Pages" row silently omitted them. FIXED: added to the four Sinfonia stamp item
+   files. Debaucheryville stamp inscriptions duplicate the opener inscriptions — no loss.
+3. **Transcription truncations** — Tempo Tantrum's tempo-faction flavor lines, its
+   "(of course)"/"(the one balanced thing in the pub)" parentheticals, and Vape Stout's
+   "6.9% (nice)" gag were dropped by this table and inherited by the item files. FIXED in
+   both (corrected rows above carry dated notes).
+4. **Blockchain Bock "Tourist Trapped" duration** — the "next battle" qualifier existed only
+   in the pre-reconciliation deb quest file and vanished when that file was repointed.
+   FIXED: restored to the beer file's Risk row with provenance.
+5. **Brewmaster NPC name collision** — the draft's "Fergal" collided with Old Fergal (Blarney
+   Trap regular); re-minted to Malachy Kavanagh, uniqueness re-verified honestly.
+6. **Citation drift** — `brewery_passport_book_item.md`'s Book/Achievement/UI/Implementation
+   citations were off by several lines; corrected against the legacy file (pre-banner
+   numbering).

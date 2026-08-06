@@ -31,7 +31,10 @@ holds Sinfonia's quest-layer instances only.
 
 ---
 
-## Legendary Hangover — "The Imperial Concerto"
+## Legendary Hangover — "Imperial Concerto"
+
+(Name per the master spec's Rewards Ladder — "Imperial Concerto"; the legacy source's "The
+Imperial Concerto" article is dropped, master wins.)
 
 [source: design/items/brewery_passport_book_sinfonia.md L210-221]
 - **Unlock**: All 4 Sinfonia stamps collected
