@@ -18,9 +18,9 @@ Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.4**, targetin
 
 ## Templates are mandatory
 
-Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest doc? **Copy the matching template from `/Templates`** — `NPC_Profile_Template.md`, `villain_template.md` (every villain gets one at creation — author mandate), `location_validation_template.md`, `NFT_Template.md`, `permanent_item_template.md`, `PNG_Assets_Template.md`, `sidequest_template.md` (the only quest template — the old `quest.md` short form is retired, its unique sections merged in). Templates are floors, not ceilings. If no template fits, ask the author before inventing a format.
+Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest doc? **Copy the matching template from `design/templates/`** — `NPC_Profile_Template.md`, `villain_template.md` (every villain gets one at creation — author mandate), `location_validation_template.md`, `NFT_Template.md`, `permanent_item_template.md`, `PNG_Assets_Template.md`, `sidequest_template.md` (the only quest template — the old `quest.md` short form is retired, its unique sections merged in). Templates are floors, not ceilings. If no template fits, ask the author before inventing a format.
 
-`/Templates` is the only canonical template folder (it moves to `design/templates/` when the folder restructure completes). Template copies elsewhere (e.g. `Design/Character Profiles/Templates/`) are legacy — do not use them.
+`design/templates/` is the only canonical template folder — the restructure move is complete. Template copies elsewhere (e.g. `Design/Character Profiles/Templates/`, or a root-level `/Templates`) are legacy — do not use them.
 
 ## Ask the author first
 
