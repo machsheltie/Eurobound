@@ -121,6 +121,72 @@ When building or completing a brewery, it is DONE when all of these exist:
   base passport doc), stamp-slot pages, account-level persistence
 - Quest mechanics live HERE and in the per-city quest files — not in item docs
 
+## File Map
+
+The 16-brewery decomposition (item files, city quest files, templates) as of the 2026-08-05
+quest-doc reconciliation pass.
+
+### Item Files — Publandia (12)
+- `design/items/brewery_tour/stamp_blarney_trap_item.md`
+- `design/items/brewery_tour/opener_blarney_trap_item.md`
+- `design/items/brewery_tour/beer_blarney_trap_item.md`
+- `design/items/brewery_tour/stamp_stoutworks_brewery_item.md`
+- `design/items/brewery_tour/opener_stoutworks_brewery_item.md`
+- `design/items/brewery_tour/beer_stoutworks_brewery_item.md`
+- `design/items/brewery_tour/stamp_trinity_of_pints_item.md`
+- `design/items/brewery_tour/opener_trinity_of_pints_item.md`
+- `design/items/brewery_tour/beer_trinity_of_pints_item.md`
+- `design/items/brewery_tour/stamp_shenanigans_item.md`
+- `design/items/brewery_tour/opener_shenanigans_item.md`
+- `design/items/brewery_tour/beer_shenanigans_item.md`
+
+### Item Files — Debaucheryville (12)
+- `design/items/brewery_tour/stamp_absinthium_taproom_item.md`
+- `design/items/brewery_tour/opener_absinthium_taproom_item.md`
+- `design/items/brewery_tour/beer_absinthium_taproom_item.md`
+- `design/items/brewery_tour/stamp_three_crown_keg_haus_item.md`
+- `design/items/brewery_tour/opener_three_crown_keg_haus_item.md`
+- `design/items/brewery_tour/beer_three_crown_keg_haus_item.md`
+- `design/items/brewery_tour/stamp_tap_dat_vault_item.md`
+- `design/items/brewery_tour/opener_tap_dat_vault_item.md`
+- `design/items/brewery_tour/beer_tap_dat_vault_item.md`
+- `design/items/brewery_tour/stamp_ye_olde_brew_lab_item.md`
+- `design/items/brewery_tour/opener_ye_olde_brew_lab_item.md`
+- `design/items/brewery_tour/beer_ye_olde_brew_lab_item.md`
+
+### Item Files — Sinfonia (12)
+- `design/items/brewery_tour/stamp_moderato_pub_item.md`
+- `design/items/brewery_tour/opener_moderato_pub_item.md`
+- `design/items/brewery_tour/beer_moderato_pub_item.md`
+- `design/items/brewery_tour/stamp_standing_ovation_item.md`
+- `design/items/brewery_tour/opener_standing_ovation_item.md`
+- `design/items/brewery_tour/beer_standing_ovation_item.md`
+- `design/items/brewery_tour/stamp_crown_and_cask_item.md`
+- `design/items/brewery_tour/opener_crown_and_cask_item.md`
+- `design/items/brewery_tour/beer_crown_and_cask_item.md`
+- `design/items/brewery_tour/stamp_dancing_stein_item.md`
+- `design/items/brewery_tour/opener_dancing_stein_item.md`
+- `design/items/brewery_tour/beer_dancing_stein_item.md`
+
+### Container Items (2)
+- `design/items/bottle_opener_keychain_item.md`
+- `design/items/brewery_passport_book_item.md`
+
+### City Quest Files (3)
+- `design/quests/publandia/brewerytourpublandia.md`
+- `design/quests/debaucheryville/brewerytourdebaucheryville.md`
+- `design/quests/sinfonia/brewerytoursinfonia.md`
+
+### Templates
+- `design/templates/stamp_item_template.md`
+- `design/templates/opener_item_template.md`
+- `design/templates/signature_beer_item_template.md`
+
+Shamsterdam has no item files or city quest file yet — out of scope this round per the
+extraction plan's Shamsterdam parking lot.
+
+---
+
 ## Source Reconciliation (deferred to content round — see NEXT_WORK ledger)
 
 The six legacy docs (`brewery_passport_book*.md` ×4, `brewery_tour_bottle_opener_system.md`,

@@ -96,7 +96,7 @@
 The bros LOVE it because it makes their drinking feel intellectual. They're not getting drunk; they're "studying." They're not failing at beer pong; they're "struggling with the coursework." The academic framing lets them feel sophisticated while doing the exact same thing they'd do at any bar.
 
 ### The Dean Philosophy
-Dean Cathal Murphy runs Trinity of Pints with absolute commitment to the bit. He's never broken character in 15 years. Is he a failed academic who found a better path? A performance artist? A genuine believer in "alternative education"? No one knows. He grades your drinking with the seriousness of a tenure committee.
+Dean Cathal Murphy runs Trinity of Pints with absolute commitment to the bit. He's never broken character in 15 years. Is he a failed academic who found a better path? A performance artist? A genuine believer in "alternative education"? No one knows. He assesses your drinking with the seriousness of a tenure committee (author ruling, 2026-08-05: Trinity no longer grades — the seriousness stays, the GPA apparatus doesn't).
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Gimmick pubs, "experiential" tourism, drinking dressed up as culture
@@ -149,44 +149,38 @@ Dean Cathal Murphy runs Trinity of Pints with absolute commitment to the bit. He
 - Access to "Advanced Courses"
 - Reserved seating in Great Hall
 
-### Course Catalog (Drinking Challenges)
+### Course Catalog — REDESIGNED (author ruling, 2026-08-05: "We will no longer be grading")
 
-**Freshman Courses (Easy)**
-| Course | Challenge | Passing Grade | Reward |
-|--------|-----------|---------------|--------|
-| BEER 101: Introduction to Pints | Finish a pint in under 2 minutes | Complete | +10 Bravado, "Enrolled" status |
-| SHOT 110: Fundamentals of Spirits | 3 shots, identify the whiskey | 2/3 correct | +15 Bravado, Whiskey discount |
-| PUB 115: Social Drinking Basics | Win a toast-off against NPC | Crowd approval | +10 Bravado, +Craic'd Up |
+**Grading is dead at Trinity.** The catalog below replaces every prior tier (Freshman/
+Sophomore/Junior/Senior Thesis) and every GPA-based pass/fail mechanic. Four courses now run
+as four playable rounds, each opened by chugging a beer — the chugs stack across the
+sequence, so the party is progressively more impaired by the time it reaches course four.
+Full beat-by-beat sequence (referee-reveal, SECURE THE QUAD battle, graduation staging, the
+alley wake-up, the Brenda call) lives in the quest file, not here:
+`design/quests/publandia/brewerytourpublandia.md`. This section covers the venue's course
+roster only.
 
-**Sophomore Courses (Medium)**
-| Course | Challenge | Passing Grade | Reward |
-|--------|-----------|---------------|--------|
-| BEER 201: Comparative Lagers | Blind taste test, 5 beers | 3/5 correct | +20 Bravado, Beer Snob status |
-| GAME 215: Applied Darts Theory | Hit specific targets while drinking | 150 points | +15 Bravado, Darts proficiency |
-| SONG 220: Traditional Music Studies | Rhythm game, Irish drinking songs | 80% accuracy | +20 Bravado, +Craic'd Up extended |
-
-**Junior Courses (Hard)**
-| Course | Challenge | Passing Grade | Reward |
-|--------|-----------|---------------|--------|
-| BEER 301: Advanced Stout Analysis | Guinness pour + drink + essay (toast) | Dean approval | +30 Bravado, Stout Mastery |
-| ENDUR 310: Sustained Consumption | Drinking contest, 5 rounds | Survive Round 4 | +25 Bravado, Iron Liver buff |
-| TRIVIA 315: Pub Quiz Championship | Team trivia, 20 questions | 15 correct | +30 Bravado, +party member buffs |
-
-**Senior Thesis (Final Challenge)**
-| Course | Challenge | Passing Grade | Reward |
-|--------|-----------|---------------|--------|
-| THESIS 401: Comprehensive Examination | Multi-stage gauntlet: drink, game, toast, song | Complete all stages | GRADUATION + Diploma + Stamp |
+| Course | Format | Host | Notes |
+|--------|--------|------|-------|
+| PUB 115: Social Drinking Basics | Toast-off against the host | Prof. Róisín O'Sullivan | Opens the sequence; first chug |
+| SONG 220: Music Studies | Rhythm minigame, Irish drinking songs | Prof. Aisling Byrne | Second chug |
+| GREEK 330: Applied Fraternal Traditions | Hazing gauntlet — real fights at each station | Prof. Cian MacCarthy | Third chug; ⚠ AUTHOR-REVIEW station count/roster, see quest file |
+| THESIS DEFENSE 401 | Beer pong tournament, final round vs. the Dean | Dean Cathal Murphy | Fourth chug; "thesis" survives as a name-only joke — ten cups, no grading; culminates in SECURE THE QUAD |
 
 ### Graduation Ceremony
-**Trigger**: Complete Senior Thesis OR accumulate enough course credits
+**Trigger**: Complete THESIS DEFENSE 401 and the SECURE THE QUAD encounter that follows it
+(see quest file for the referee-reveal beat, the Dean's magnet self-destruct, and the battle)
 **Location**: The Quad (weather permitting) or Great Hall
 **Ceremony**:
 1. Dean Cathal calls your name
 2. Walk to podium (balance check based on intoxication)
 3. Receive diploma (actual printed certificate)
 4. "Commencement toast" (final drink)
-5. Photo opportunity at graduation backdrop
-6. Brewery Passport stamp applied
+5. Photo opportunity at graduation backdrop — staged per the quest file (Pilsner + rabbit
+   ears + rolled certificate, Bradley vomiting on the Dean's shoes, Chadwick mooning, the
+   Trinity Brewmaster obliviously holding the opener + Academic Amber)
+6. Brewery Passport stamp applied by the Trinity Brewmaster (not the Dean — see NPC roster
+   below)
 
 **Diploma Text**:
 ```
@@ -201,31 +195,14 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 [Dean Cathal Murphy signature]
 ```
 
-### Academic Standing System
-| GPA | Status | Effect |
-|-----|--------|--------|
-| 3.5-4.0 | Dean's List | 20% discount, VIP seating, staff respect |
-| 2.5-3.4 | Good Standing | Normal treatment |
-| 1.5-2.4 | Academic Probation | Mocking from staff, "remedial" courses required |
-| Below 1.5 | Expulsion Risk | Must retake courses, public shame |
-
-**GPA Calculation**:
-- A (Pass with honors): 4.0
-- B (Pass): 3.0
-- C (Barely pass): 2.0
-- F (Fail): 0.0
-
 ### Bravado Interactions
 - **Gain Bravado**: Pass courses, graduate, give good toasts, take academic roleplay seriously
 - **Lose Bravado**: Fail courses (especially easy ones), break character, question the premise
-- **Special**: "Valedictorian" (highest GPA of the night) gets bonus Bravado + free drinks
 
 ### Status Effects (Location-Specific)
 - **"Enrolled"**: Access to courses, part of the bit
 - **"Scholar's Focus"**: +INT temporarily after certain courses
-- **"Academic Probation"**: Must pass remedial course to restore standing
 - **"Graduate"**: Permanent discount, respect, Advanced Course access
-- **"Valedictorian"**: Temporary massive Bravado boost, staff fawn over you
 
 ## NPCs & Staff
 ### The Administration
@@ -234,7 +211,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - **Role**: Owner/operator, head "professor," never breaks character
 - **Appearance**: 50s Irish man, full academic regalia (robe, cap, medallion), perpetually serious
 - **Background**: Former actual lecturer (adjunct, let go), found calling in "alternative education"
-- **Demeanor**: Absolute commitment to the bit, grades drinking with scholarly gravitas
+- **Demeanor**: Absolute commitment to the bit, assesses drinking with scholarly gravitas
 - **The Cathal Method**: Treat every pint like a thesis defense
 - **Philosophy**: "Education takes many forms. Who's to say this isn't one of them? The Socratic method involved a lot of wine, you know."
 
@@ -247,8 +224,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 
 *During Courses:*
 - "Your form is acceptable. Your commitment, however, needs work."
-- "A gentleman's C. You've passed, but you haven't excelled. Consider extra credit."
-- "Disappointing. I expected more from someone of your... enthusiasm. Remedial coursework is available."
+- "Disappointing. I expected more from someone of your... enthusiasm."
 - "Outstanding! You've demonstrated mastery of the material. The faculty is impressed."
 
 *Graduation:*
@@ -263,16 +239,20 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 ### Faculty
 
 **Professor Róisín O'Sullivan (Spirits Department)**
-- **Role**: Whiskey courses, shot challenges, drinks history
+- **Role**: Whiskey courses, shot challenges, drinks history. Hosts **PUB 115: Social
+  Drinking Basics** — the toast-off that opens the redesigned four-course sequence (author
+  ruling, addendum 4).
 - **Appearance**: 40s Irish woman, tweed jacket, reading glasses, perpetually holding a glass
 - **Demeanor**: Warm but exacting, disappointed when you can't identify Jameson vs. Powers
 - **Dialogue**:
   - "Whiskey is a language. Today, you learn to speak it. Or at least slur it correctly."
   - "Close your eyes. Smell first. Now taste. What do you detect? ...No, 'burning' is not a tasting note."
-  - "A passing grade. You've learned the basics. The advanced course involves blind identification while reciting Yeats."
+  - "You've learned the basics. The advanced course involves blind identification while reciting Yeats."
 
 **Professor Cian MacCarthy (Games & Recreation)**
-- **Role**: Darts, pool, drinking game challenges
+- **Role**: Darts, pool, drinking game challenges. Hosts **GREEK 330: Applied Fraternal
+  Traditions** — the hazing gauntlet, course three of the redesigned sequence (author ruling,
+  addendum 4).
 - **Appearance**: 30s Irish man, sports casual under academic robe, competitive energy
 - **Demeanor**: Encouraging but will absolutely destroy you at darts
 - **Dialogue**:
@@ -281,13 +261,34 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
   - "Not bad! You've got potential. Of course, I was state champion in '08, so my standards are high."
 
 **Professor Aisling Byrne (Traditional Music)**
-- **Role**: Drinking song challenges, rhythm games, toast poetry
+- **Role**: Drinking song challenges, rhythm games, toast poetry. Hosts **SONG 220: Music
+  Studies** — the rhythm minigame, course two of the redesigned sequence (author ruling,
+  addendum 4).
 - **Appearance**: 20s Irish woman, folk musician aesthetic, always has a bodhrán nearby
 - **Demeanor**: Enthusiastic, forgiving of bad singing, ruthless about rhythm
 - **Dialogue**:
   - "The Irish drinking song is a proud tradition. You will learn it. You will love it. You will remember approximately 40% of the lyrics."
   - "Feel the rhythm! The beat is in your heart! ...or that's the palpitations from the caffeine mixer."
   - "Beautiful! Terrible, but beautiful! That's the Irish way!"
+
+All three professors are also the Dean's battle allies in SECURE THE QUAD, the boss encounter
+that follows THESIS DEFENSE 401. Full combat spec: `design/worlds/publandia/npcs/
+Trinity_Of_Pints/villain_secure_the_quad.md`.
+
+### Tournament Staff — New NPCs (added 2026-08-05)
+
+Two NPCs required by the Trinity redesign, both drafted from `NPC_Profile_Template.md`,
+both ⚠ AUTHOR-REVIEW pending approval:
+
+**The Tournament Referee** — officiates THESIS DEFENSE 401, blows the whistle and calls the
+disqualification that hands the bros their win by default ("Dean Cathal is disqualified! By
+tournament rule 4B, the challengers win by default!" — canon, verbatim, addendum 2). Full
+profile: `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_fintan_brogan.md`.
+
+**The Trinity Brewmaster** — Trinity's actual stamper (Gap #11). Sincere, oblivious craftsman
+in a building full of theater kids; appears in the graduation selfie holding the opener and
+Academic Amber. Full profile: `design/worlds/publandia/npcs/Trinity_Of_Pints/
+npc_brendan_nolan.md`.
 
 ### Student NPCs
 
@@ -321,7 +322,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - "I spent twelve years in academia. Publish or perish, they said. I perished. Then I found THIS. Now I publish diplomas. Who's the failure now?"
 - "Every great university has traditions. Ours is drinking. Oxford has rowing. We have pints. I fail to see the difference."
 - "The students who come here... they want something. Connection. Achievement. An excuse to drink with purpose. I provide all three."
-- "My doctoral thesis was on the semiotics of Irish identity in post-colonial literature. Now I grade pint-finishing technique. I've never been happier."
+- "My doctoral thesis was on the semiotics of Irish identity in post-colonial literature. Now I assess pint-finishing technique. I've never been happier."
 - "The diploma is fake. The education is real. Think about it."
 
 **The Bros' Trinity of Pints Reactions:**
@@ -338,9 +339,13 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 ## Brewery Tour Integration
 
 ### Stamp Acquisition
-**Requirement**: Must have Bottle Opener Keychain from The Blarney Trap
-**Unlock Condition**: GRADUATE from Trinity of Pints (complete Senior Thesis)
-**Stamp Location**: Applied during graduation ceremony by Dean Cathal
+**Requirement**: Must have the Bottle Opener Keychain from The Blarney Trap
+**Unlock Condition**: complete the four-course sequence (PUB 115 → SONG 220 → GREEK 330 →
+THESIS DEFENSE 401) and the SECURE THE QUAD encounter that follows it — see
+`design/quests/publandia/brewerytourpublandia.md` for the full beat-by-beat sequence
+**Stamp Location**: Applied during the graduation ceremony by **the Trinity Brewmaster** —
+NOT Dean Cathal (author ruling: "Gap #11 partially resolved: the BREWMASTER is Trinity's
+stamper"). Profile: `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_brendan_nolan.md`.
 
 **Stamp Design**:
 - Square academic seal shape
@@ -350,10 +355,10 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - Bottom text: "Cum Laude in Lager"
 - Ink color: Deep navy blue
 
-**Dean Cathal's Stamp Dialogue**:
-- "Ah, you carry Seamus's opener. A fellow traveler on the Continental Trail."
-- "Your passport, please. This stamp represents genuine academic achievement. In drinking."
-- "There. You are now officially an alumnus of Trinity of Pints. The beer world recognizes your accomplishment."
+**Stamp Dialogue**: the Trinity Brewmaster's stamp speech is drafted in his own NPC profile
+(`npc_brendan_nolan.md`), not here — this venue file no longer attributes the stamping line
+to Dean Cathal. The Dean's welcome/enrollment/course/graduation dialogue above is unaffected;
+only the stamp beat itself moved to the Brewmaster.
 
 ### Signature Beer: "Academic Amber"
 **Brewed By**: The Stoutworks Brewery (contract brew for Trinity of Pints)
@@ -382,7 +387,11 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 **Location**: Graduation podium in The Quad
 **Backdrop**: Fake academic banners, ivy-covered wall, Trinity of Pints crest
 **Props Available**: Academic robe, mortarboard cap, diploma
-**Special Variant**: "Valedictorian" photo (if achieved highest GPA of session)
+**Special Variant**: the redesigned graduation photo — Pilsner in rabbit ears with the rolled
+certificate, Bradley vomiting on the Dean's shoes, Chadwick mooning the camera, the Trinity
+Brewmaster obliviously holding the opener + Academic Amber. Full staging in
+`design/quests/publandia/brewerytourpublandia.md` (Valedictorian photo variant retired with
+the GPA system it depended on).
 
 **Selfie Requirements**:
 - Must have graduated
@@ -408,7 +417,6 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - **First Course Passed**: "Sophomore" — one credit earned
 - **Three Courses Passed**: "Junior" — halfway there
 - **Graduated**: "Bachelor" — diploma earned, stamp acquired
-- **Valedictorian**: "Summa Cum Laude" — highest GPA achievement
 - **All Courses Completed**: "Scholar" — exhaustive curriculum mastery
 - **Graduate Status Used**: "Alumni" — returned with discount
 
@@ -457,8 +465,8 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 
 ### Development Timeline
 - **Asset Creation**: 10 hours (academic aesthetic, multiple rooms, many NPCs)
-- **Implementation Phase**: 12 hours (course system, GPA tracking, graduation ceremony)
-- **Testing Requirements**: Course difficulty balance, GPA calculation, ceremony triggers
+- **Implementation Phase**: 12 hours (four-course sequence, SECURE THE QUAD battle, graduation ceremony)
+- **Testing Requirements**: Course difficulty balance across the four rounds, impairment-stacking curve, ceremony triggers
 - **Polish Phase**: 5 hours (academic atmosphere, Dean's delivery, ceremony pacing)
 
 ---
@@ -490,11 +498,10 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - overachiever.png - 64x96 - Taking notes
 - study_group.png - 192x96 - Bachelor party coordination
 
-### Item/UI Assets (14 PNGs)
+### Item/UI Assets (13 PNGs)
 - student_id.png - 64x48 - Enrollment card
 - diploma_template.png - 192x128 - Graduation certificate
 - course_catalog_ui.png - 256x384 - Challenge menu
-- gpa_tracker.png - 128x64 - Academic standing
 - stamp_trinity_pints.png - 64x64 - Brewery passport stamp
 - academic_amber_bottle.png - 32x64 - Signature beer
 - academic_amber_icon.png - 32x32 - Inventory icon
