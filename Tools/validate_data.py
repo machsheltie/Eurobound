@@ -16,6 +16,8 @@ REQUIRED = {
         "dialogue_trees.vlad_validator", "dialogue_trees.vlad_validator.default_greeting"],
     "npcs/base_profiles/debaucheryville_core.json": ["npcs"],
     "locations/debaucheryville/debaucheryville_locations.json": [],
+    "items/key_items.json": [],
+    "items/equipment.json": [],
 }
 
 def dig(obj, dotted):

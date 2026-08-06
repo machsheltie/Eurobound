@@ -9,6 +9,8 @@ var _enemies: Dictionary = {}
 var _items: Dictionary = {}
 var _abilities: Dictionary = {}
 var _dialogue_trees: Dictionary = {}
+var _key_items: Dictionary = {}
+var _equipment: Dictionary = {}
 
 func _ready() -> void:
 	var ok := load_all()
@@ -36,6 +38,12 @@ func load_all() -> bool:
 	_dialogue_trees = dialogue_doc.get("dialogue_trees", {})
 	ok = ok and not _dialogue_trees.is_empty()
 
+	var key_item_doc := _load_json(DATA_ROOT + "items/key_items.json")
+	_key_items = key_item_doc.get("key_items", {})
+
+	var equipment_doc := _load_json(DATA_ROOT + "items/equipment.json")
+	_equipment = equipment_doc.get("equipment", {})
+
 	return ok
 
 func get_party_member(id: String) -> Dictionary:
@@ -52,6 +60,12 @@ func get_ability(id: String) -> Dictionary:
 
 func get_dialogue_tree(npc_id: String) -> Dictionary:
 	return _lookup(_dialogue_trees, npc_id, "dialogue tree")
+
+func get_key_item(id: String) -> Dictionary:
+	return _lookup(_key_items, id, "key item")
+
+func get_equipment(id: String) -> Dictionary:
+	return _lookup(_equipment, id, "equipment")
 
 func _lookup(table: Dictionary, id: String, kind: String) -> Dictionary:
 	if not table.has(id):
