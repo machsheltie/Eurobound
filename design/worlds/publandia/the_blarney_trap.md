@@ -644,8 +644,8 @@ This is the bros' base of operations because it appeared first in their search r
 - passport_page_empty.png - 256x384 - Template for other cities
 - stamp_blarney_trap.png - 64x64 - Celtic harp design
 - stamp_slot_empty.png - 64x64 - Faded outline placeholder
-- sweet_surrender_bottle.png - 32x64 - Signature beer
-- sweet_surrender_pint.png - 32x48 - Poured version
+- beer_blarney_trap_bottle.png - 32x64 - Signature beer [renamed per full-brewery-stem ruling 2026-08-05]
+- beer_blarney_trap_pint.png - 32x48 - Poured version
 - legendary_hangover_publandia.png - 48x48 - City completion reward
 - continental_progress.png - 256x64 - Overall achievement tracker
 - selfie_spot_indicator.png - 32x32 - Photo opportunity marker

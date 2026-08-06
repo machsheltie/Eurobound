@@ -22,4 +22,4 @@
 - `beer_trinity_of_pints_icon.png` — 32x32 [source: design/items/brewery_passport_book.md L362; renamed from the source's beer-name stem `academic_amber_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
 
 ## Notes
-- Brewed by — The Stoutworks Brewery, as a contract brew for Trinity of Pints [source: design/worlds/publandia/trinity_of_pints.md L359]. This resolves Gap #13 with existing venue-doc canon rather than drafted content. Gap #14 (special quirk, flagged in the Special row above) still had no source anywhere in the seven extraction sources or the venue docs.
+- Brewed by — The Stoutworks Brewery, as a contract brew for Trinity of Pints [source: design/worlds/publandia/trinity_of_pints.md L364]. This resolves Gap #13 with existing venue-doc canon rather than drafted content. Gap #14 (special quirk, flagged in the Special row above) still had no source anywhere in the seven extraction sources or the venue docs.

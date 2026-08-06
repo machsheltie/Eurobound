@@ -610,9 +610,9 @@ It's also a commentary on brewery tourism — paying 25 Sovs to watch beer being
 - gift_shop_ui.png - 256x192 - Commerce interface
 
 ### Brewery Tour Assets (10 PNGs)
-- stamp_stoutworks.png - 64x64 - Copper still design
-- vat_masters_reserve_bottle.png - 32x64 - Signature beer bottle
-- vat_masters_reserve_pint.png - 32x48 - Poured version
+- stamp_stoutworks_brewery.png - 64x64 - Copper still design [renamed per full-brewery-stem ruling 2026-08-05]
+- beer_stoutworks_brewery_bottle.png - 32x64 - Signature beer bottle
+- beer_stoutworks_brewery_pint.png - 32x48 - Poured version
 - tasting_room.png - 384x256 - Tour stamp location
 - stamp_station.png - 128x128 - Where stamps happen
 - selfie_spot_copper.png - 256x192 - Photo backdrop

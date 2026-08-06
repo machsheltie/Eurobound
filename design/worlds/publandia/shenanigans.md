@@ -557,8 +557,8 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 
 ### Item/Game Assets (12 PNGs)
 - stamp_shenanigans.png - 64x64 - Brewery passport stamp
-- fools_gold_bottle.png - 32x64 - Signature beer
-- fools_gold_icon.png - 32x32 - Inventory icon
+- beer_shenanigans_bottle.png - 32x64 - Signature beer [renamed per full-brewery-stem ruling 2026-08-05]
+- beer_shenanigans_icon.png - 32x32 - Inventory icon
 - rigged_wheel_zones.png - 192x192 - Actual probability display
 - three_cards.png - 96x64 - Queen hidden
 - shell_cups.png - 96x48 - Ball palmed

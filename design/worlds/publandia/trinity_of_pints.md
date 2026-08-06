@@ -122,7 +122,9 @@ Dean Cathal Murphy runs Trinity of Pints with absolute commitment to the bit. He
 **The academic delusion**:
 - "I'm not drunk, I'm STUDYING"
 - "This isn't a drinking game, it's COURSEWORK"
-- "I didn't fail, the GRADING CURVE was harsh"
+- "I didn't fail, the GRADING CURVE was harsh" ⚠ AUTHOR-REVIEW: references the retired grading
+  system — keep as bro-delusion flavor or retire? (grading MECHANICS are dead by ruling;
+  character dialogue may survive as delusion)
 - "My diploma is going on my WALL"
 - "I'm basically an ALUMNI of PUBLANDIA now"
 
@@ -355,6 +357,11 @@ stamper"). Profile: `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_brendan_n
 - Bottom text: "Cum Laude in Lager"
 - Ink color: Deep navy blue
 
+⚠ AUTHOR-REVIEW: stamp-face contradiction — this file specifies the square academic seal/
+open-book design (echoed by `npc_cathal_murphy.md`'s `stamp_passport` animation row); however
+`stamp_trinity_of_pints_item.md` and `brewery_passport_book_item.md`'s Trinity row say
+"Scholarly cap, navy ink" [their source tag]. Author to pick.
+
 **Stamp Dialogue**: the Trinity Brewmaster's stamp speech is drafted in his own NPC profile
 (`npc_brendan_nolan.md`), not here — this venue file no longer attributes the stamping line
 to Dean Cathal. The Dean's welcome/enrollment/course/graduation dialogue above is unaffected;
@@ -502,9 +509,9 @@ the GPA system it depended on).
 - student_id.png - 64x48 - Enrollment card
 - diploma_template.png - 192x128 - Graduation certificate
 - course_catalog_ui.png - 256x384 - Challenge menu
-- stamp_trinity_pints.png - 64x64 - Brewery passport stamp
-- academic_amber_bottle.png - 32x64 - Signature beer
-- academic_amber_icon.png - 32x32 - Inventory icon
+- stamp_trinity_of_pints.png - 64x64 - Brewery passport stamp [renamed per full-brewery-stem ruling 2026-08-05]
+- beer_trinity_of_pints_bottle.png - 32x64 - Signature beer
+- beer_trinity_of_pints_icon.png - 32x32 - Inventory icon
 - course_complete_badge.png - 48x48 - Individual course
 - graduation_cap_icon.png - 32x32 - Graduate status
 - scholars_focus_buff.png - 32x32 - INT boost icon
@@ -515,3 +522,6 @@ the GPA system it depended on).
 ---
 
 *Trinity of Pints: Where drinking becomes "education," failure becomes "academic probation," and your diploma is worth exactly what you paid for it — plus the memory of Dean Cathal calling your name with genuine scholarly pride. Cum Laude in Lager, friends. Cum Laude in Lager.*
+
+⚠ AUTHOR-REVIEW: references the retired grading system — keep as bro-delusion flavor or
+retire? (grading MECHANICS are dead by ruling; character dialogue may survive as delusion)

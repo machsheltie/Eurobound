@@ -7,8 +7,9 @@
 > Every combat number, move, phase, and piece of non-canon dialogue below is a Claude draft
 > and is flagged for author approval before implementation. This is the first villain profile
 > written for the project — no prior stat-block precedent exists to calibrate against, so
-> all numbers are first-pass estimates against the Combat Bible's general framework
-> (`docs/EUROBOUND_PRD.md` §6), not balanced against any other boss.
+> all numbers are first-pass estimates with no prior boss to balance against.
+> ⚠ AUTHOR-REVIEW: combat-system reference removed pending canon authority ruling (the PRD's
+> canon status is contested — see CLAUDE.md); combat numbers below remain first-pass drafts.
 
 <!-- Villain-template mandate: every boss gets a profile at creation (author mandate
 2026-08-03). This is a 4-enemy squad encounter, not a single monster — the template's

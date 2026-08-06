@@ -158,6 +158,10 @@ Each brewery's specific selfie spot, pose, and NPC variant lives in that brewery
 | 3 | Trinity of Pints | Scholarly cap, navy ink | Academic Amber |
 | 4 | Shenanigans | Wilted clover, faded gold ink | The Fool's Gold |
 
+⚠ AUTHOR-REVIEW (Trinity row, Slot 3): stamp-face contradiction — this table says "Scholarly cap"
+[its source tag]; trinity_of_pints.md L350-356 + npc_cathal_murphy.md specify the square academic
+seal/open-book design. Author to pick.
+
 **Page Theme**: Emerald green background, Celtic knot borders [source: design/items/brewery_passport_book.md L113]
 **Legendary Hangover**: "The Full Irish Experience" [source: design/quests/general_quests/brewerytour.md L89]
 **Item docs**: `stamp_blarney_trap`, `stamp_stoutworks_brewery`, `stamp_trinity_of_pints`, `stamp_shenanigans` (full detail in `design/items/brewery_tour/`)

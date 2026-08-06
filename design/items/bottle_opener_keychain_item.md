@@ -15,10 +15,10 @@
 ## 🎭 The Deception
 
 ### What The Item Actually Is
-A single, well-worn keyring the bros have been adding to for years — a jangling mass of cheap dive-bar giveaway bottle openers, half of them already tarnished before they ever left home. It already carried mementos from a lifetime of blackout drinking before Europe ever entered the picture: collected from spring break trips to ⚠ AUTHOR-REVIEW: Blackout Bay and Hangover Shores, and picked up at fake-tropical chain bars like ⚠ AUTHOR-REVIEW: Señor Sloppy's. In Publandia it gets its 16th-country upgrade: one opener earned per brewery, all sixteen, across four cities.
+A single, well-worn keyring the bros have been adding to for years — a jangling mass of cheap dive-bar giveaway bottle openers, half of them already tarnished before they ever left home. It already carried mementos from a lifetime of blackout drinking before Europe ever entered the picture: collected from spring break trips to ⚠ AUTHOR-REVIEW: Blackout Bay and Hangover Shores, and picked up at fake-tropical chain bars like ⚠ AUTHOR-REVIEW: Señor Sloppy's. In Publandia it gets its brewery-tour upgrade: one opener earned per brewery, all sixteen, across four cities.
 
 ### What The Bros Believe It Is
-"This is basically a drinking résumé you can wear. Sixteen breweries, four countries, zero regrets. You see a guy's keychain, you know his whole life story — and ours says LEGEND."
+"This is basically a drinking résumé you can wear. Sixteen breweries, four cities, zero regrets. You see a guy's keychain, you know his whole life story — and ours says LEGEND."
 
 ---
 

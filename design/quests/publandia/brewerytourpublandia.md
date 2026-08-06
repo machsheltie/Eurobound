@@ -354,13 +354,19 @@ Shenanigans row]
 **Mechanics:** find the selfie spot (camera icon marker), interact to take the photo, photo is
 added to the passport's selfie gallery. Special variants require the listed condition.
 
-**Full Publandia Selfie Collection Reward — "Photogenic Drinker":**
+**Full Publandia Selfie Collection Reward — "Brewery Bro Safari":**
+- Publandia's 4/4 selfies feed the per-city **"Brewery Bro Safari"** auto-generated 15-second
+  compilation (Y2K VHS filter, MIDI Hamster Dance audio, grid finale: "European Beer Experts 🍺").
+- This is a city-set payoff, not the game-wide reward — see below.
+
+**"Photogenic Drinker" (game-wide, ALL selfies across all four cities):**
 - Permanent +1 resistance to "Hungover" debuff
 - Reduces Hungover duration by 10%
 - Stacks with Continental Beer Master
 
 [source: `design/items/brewery_passport_book.md` L302-306; `design/quests/general_quests/
-brewerytour.md` L74-75]
+brewerytour.md` L71-75 — master spec is authority for scope: per-city payoff is "Brewery Bro
+Safari", "Photogenic Drinker" is the all-selfies game-wide reward]
 
 ---
 

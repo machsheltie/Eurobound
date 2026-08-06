@@ -768,6 +768,12 @@ remaining creative gaps route through ⚠ AUTHOR-REVIEW draft batches. No DEFERR
 
 ## Coverage Matrix (Task 9, 2026-08-05)
 
+**Provenance note:** source tags across the decomposed files cite the legacy docs' pre-retirement
+paths (`design/items/brewery_passport_book*.md`, `brewery_tour_bottle_opener_system.md`) and
+their line numbers at extraction time; those files now live under `design/legacy/` (moved
+2026-08-05, same basenames; the worlds copy suffixed `_worlds_copy_2026-08-05`). Cited line
+numbers refer to the file state at extraction.
+
 One row per unique fact clustered in design spec Appendix A.1–A.5. Every row resolved to
 **HOME** (verified open in the target file), **KILLED** (ruling reference), **DEFERRED**
 (Shamsterdam out-of-scope ruling), or **BLOCKED** (no home, no kill ruling — genuine gap).

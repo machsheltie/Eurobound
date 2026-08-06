@@ -126,6 +126,12 @@ When building or completing a brewery, it is DONE when all of these exist:
 The 16-brewery decomposition (item files, city quest files, templates) as of the 2026-08-05
 quest-doc reconciliation pass.
 
+**Provenance note:** source tags across the decomposed files cite the legacy docs' pre-retirement
+paths (`design/items/brewery_passport_book*.md`, `brewery_tour_bottle_opener_system.md`) and
+their line numbers at extraction time; those files now live under `design/legacy/` (moved
+2026-08-05, same basenames; the worlds copy suffixed `_worlds_copy_2026-08-05`). Cited line
+numbers refer to the file state at extraction.
+
 ### Item Files — Publandia (12)
 - `design/items/brewery_tour/stamp_blarney_trap_item.md`
 - `design/items/brewery_tour/opener_blarney_trap_item.md`

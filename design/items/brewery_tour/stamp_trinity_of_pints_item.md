@@ -7,6 +7,9 @@
 
 ## Design
 - **Stamp Face**: Scholarly cap [source: design/items/brewery_passport_book.md L110]
+  ⚠ AUTHOR-REVIEW: stamp-face contradiction — this file says "Scholarly cap" [its source tag];
+  trinity_of_pints.md L350-356 + npc_cathal_murphy.md specify the square academic seal/open-book
+  design. Author to pick.
 - **Ink Color**: navy [source: design/items/brewery_passport_book.md L110]
 - **Stamp Animation**: ⚠ PENDING — routes through the brewmaster NPC draft (see extraction Rulings addendum 5)
 
