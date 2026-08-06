@@ -10,24 +10,38 @@ var flags: Dictionary = {}
 var current_scene_path: String = ""
 var player_position: Vector2 = Vector2.ZERO
 
-const BRAVADO_LOW_MAX := 25
-const BRAVADO_MID_MAX := 70
+## Bumped whenever the save schema changes shape in a way older saves can't satisfy.
+## Author ruling, 2026-08-06: an incompatible save is rejected cleanly, never migrated
+## and never crashed on. Bumped here because the SP -> Bravado rename means a
+## pre-rename save holds "sp"/"max_sp" party member keys; loading it would make
+## battle_manager.gd crash indexing a "bravado" key that save never wrote.
+const SAVE_VERSION := 2
 
-## Returns the Bravado band for a value: "zero", "low", "mid", or "high".
+const BRAVADO_LOW_PCT := 0.25
+const BRAVADO_MID_PCT := 0.70
+
+## Returns the Bravado band for a value against a given max: "zero", "low", "mid",
+## or "high". Bands are percent-of-max, not absolute (author ruling, 2026-08-06) —
+## max_bravado varies per party member (Lord Pilsner's is 12, not the 100 an
+## absolute band would assume), so the band has to scale with the character's own
+## max, not a fixed number.
 ## Zero Bravado means Bravado cannot be spent. It does NOT cause collapse or
 ## forced retreat — that belongs to HP reaching zero.
-func bravado_state(value: int) -> String:
+func bravado_state(value: int, max_value: int) -> String:
+	if max_value <= 0:
+		return "zero"
 	if value <= 0:
 		return "zero"
-	if value <= BRAVADO_LOW_MAX:
+	var pct := float(value) / float(max_value)
+	if pct <= BRAVADO_LOW_PCT:
 		return "low"
-	if value <= BRAVADO_MID_MAX:
+	if pct <= BRAVADO_MID_PCT:
 		return "mid"
 	return "high"
 
 ## Ultimates are locked out in the zero and low bands.
-func can_use_ultimate(value: int) -> bool:
-	var state := bravado_state(value)
+func can_use_ultimate(value: int, max_value: int) -> bool:
+	var state := bravado_state(value, max_value)
 	return state == "mid" or state == "high"
 
 func new_game(repo) -> void:
@@ -94,6 +108,7 @@ func grant_rewards(xp: int, gold_amount: int, item_id: String) -> void:
 
 func to_dict() -> Dictionary:
 	return {
+		"save_version": SAVE_VERSION,
 		"party": party.duplicate(true),
 		"inventory": inventory.duplicate(true),
 		"gold": gold,

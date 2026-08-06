@@ -1,6 +1,8 @@
 extends Node
-## Persists GameState to disk as JSON. Corrupt saves are treated as absent —
-## the player sees a disabled Continue button, never a crash.
+## Persists GameState to disk as JSON. Corrupt saves AND saves from an incompatible
+## schema version are treated as absent — the player sees a disabled Continue button,
+## never a crash. Author ruling, 2026-08-06: an incompatible save is rejected
+## cleanly, never migrated. See GameState.SAVE_VERSION.
 
 var save_path := "user://saves/slot1.json"
 
@@ -31,5 +33,9 @@ func _read_save() -> Dictionary:
 	var parsed: Variant = JSON.parse_string(text)
 	if parsed == null or not (parsed is Dictionary):
 		push_error("SaveSystem: save file is corrupt: " + save_path)
+		return {}
+	var found_version := int(parsed.get("save_version", 0))
+	if found_version != GameState.SAVE_VERSION:
+		push_error("SaveSystem: save file '%s' is version %d, expected %d — incompatible save rejected (no migration, per author ruling)" % [save_path, found_version, GameState.SAVE_VERSION])
 		return {}
 	return parsed

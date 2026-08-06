@@ -100,7 +100,7 @@ func _on_bash() -> void:
 func _on_roast() -> void:
 	var ability: Dictionary = DataRepo.get_ability("roast_line")
 	if bool(ability.get("is_ultimate", false)) \
-			and not GameState.can_use_ultimate(int(_member["bravado"])):
+			and not GameState.can_use_ultimate(int(_member["bravado"]), int(_member["max_bravado"])):
 		_log("Not enough Bravado for an Ultimate!")
 		return
 	var cost := int(ability.get("bravado_cost", 0))

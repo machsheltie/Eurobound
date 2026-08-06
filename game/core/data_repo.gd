@@ -38,11 +38,25 @@ func load_all() -> bool:
 	_dialogue_trees = dialogue_doc.get("dialogue_trees", {})
 	ok = ok and not _dialogue_trees.is_empty()
 
-	var key_item_doc := _load_json(DATA_ROOT + "items/key_items.json")
-	_key_items = key_item_doc.get("key_items", {})
+	# key_items and equipment are allowed to be legitimately empty ({}) until items
+	# are authored — that is NOT a failure. An absent file is a different problem
+	# (a deleted/renamed file, not an empty-but-present one) and must fail loudly
+	# rather than degrade to the same silent {} as an empty object.
+	var key_items_path := DATA_ROOT + "items/key_items.json"
+	if FileAccess.file_exists(key_items_path):
+		var key_item_doc := _load_json(key_items_path)
+		_key_items = key_item_doc.get("key_items", {})
+	else:
+		push_error("DataRepo: missing data file: " + key_items_path)
+		ok = false
 
-	var equipment_doc := _load_json(DATA_ROOT + "items/equipment.json")
-	_equipment = equipment_doc.get("equipment", {})
+	var equipment_path := DATA_ROOT + "items/equipment.json"
+	if FileAccess.file_exists(equipment_path):
+		var equipment_doc := _load_json(equipment_path)
+		_equipment = equipment_doc.get("equipment", {})
+	else:
+		push_error("DataRepo: missing data file: " + equipment_path)
+		ok = false
 
 	return ok
 

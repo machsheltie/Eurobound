@@ -49,7 +49,7 @@ These map 1:1 onto the ability's entry in `game/assets/data/skills/party_abiliti
 
 ## 🥊 Bravado Gating
 
-Bravado has four bands, defined in `game/core/game_state.gd`: **zero** = 0, **low** = 1–25, **mid** = 26–70, **high** = 71–100.
+Bravado has four bands, defined in `game/core/game_state.gd` as a **percentage of the character's own `max_bravado`**, not an absolute value (max_bravado varies per bro — Lord Pilsner's is 12): **zero** = 0, **low** = up to 25% of max, **mid** = up to 70% of max, **high** = above 70% of max.
 
 - **Minimum Bravado Band Required**: [zero / low / mid / high]
 - **If this is an Ultimate**: Ultimates are locked out at **zero** and **low** — they require **mid or higher**, enforced in `game/battle/battle_manager.gd`. Do not spec an Ultimate with a lower minimum band; it will not fire.
@@ -80,7 +80,7 @@ Every move that can miss, whiff, or backfire needs its failure state written —
 ---
 
 ## 🗣️ Battle Text Variants
-The `battle_text` field above is the baseline. List any additional lines the ability needs — these live in the same data entry or an adjacent variants block, not as separate JSON fields unless the engine schema supports it.
+The engine has exactly one text field: `battle_text`, and it fires on every use. That is the Success line below — copy it verbatim from the Engine Fields table above. Failure and Regional Variant lines are design material only: they do not exist in `party_abilities.json` today and do not ship until this move goes into battle_manager.gd's failure/regional branches, which do not exist yet either. Write them anyway — the next author to wire up failure rolls or regional flavor needs the joke already written, not invented on the spot.
 
 | Context | Line |
 |---------|------|

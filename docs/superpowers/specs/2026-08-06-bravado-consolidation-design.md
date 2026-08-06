@@ -59,14 +59,26 @@ The user-facing battle label changes from `SP %d/%d` to `Bravado %d/%d`.
 
 ## 3. Ruling: the Bravado state machine
 
-Four states over a 0–100 bar.
+Four states, banded as a **percentage of the character's own `max_bravado`** — not an
+absolute 0–100 value. Author ruling, 2026-08-06 (post-implementation correction): the
+original draft of this section specified absolute cutoffs (1–25 / 26–70 / 71–100)
+assuming a 0–100 scale. `party_members.json` sets Lord Pilsner's `max_bravado` to
+12, so an absolute-value band put his entire possible range inside "low" — his
+`can_use_ultimate()` was `false` at every value he could ever hold, a permanent
+lockout. The band is computed from `value / max_bravado` instead, so it scales
+correctly regardless of what a given character's max happens to be.
 
-| State | Value | Effect |
+| State | Value (as % of max_bravado) | Effect |
 |---|---|---|
-| Zero | 0 | Bravado moves unavailable. Basic attacks still work. |
-| Low | 1–25 | Ultimates locked out. Ordinary specials usable if affordable. |
-| Mid | 26–70 | Normal operation. |
-| High | 71–100 | Flavor state only — no mechanical effect. |
+| Zero | 0, or `max_bravado <= 0` | Bravado moves unavailable. Basic attacks still work. |
+| Low | up to 25% of max | Ultimates locked out. Ordinary specials usable if affordable. |
+| Mid | up to 70% of max | Normal operation. |
+| High | above 70% of max | Flavor state only — no mechanical effect. |
+
+At Lord Pilsner's `max_bravado: 12`, this yields: 0 → zero, 1–3 → low, 4–8 → mid,
+9–12 → high. `bravado_state()` and `can_use_ultimate()` both take `max_value` as a
+second parameter; callers (`battle_manager.gd`) pass the party member's
+`max_bravado` alongside their current `bravado`.
 
 **Zero Bravado does NOT cause collapse or forced retreat.** Author ruling, 2026-08-06. Running out
 of Bravado means only that Bravado cannot be spent. Collapse belongs to HP reaching zero.
@@ -192,3 +204,7 @@ Recorded 2026-08-06:
 5. Composure is struck and folded into Bravado.
 6. Write the `key_items`/`equipment` loader now rather than later.
 7. Add an ability template alongside the existing item and quest templates.
+8. (Post-implementation correction, same date.) Bravado bands are a percentage of the character's
+   own `max_bravado`, not an absolute 0–100 value — the absolute version permanently locked Lord
+   Pilsner (`max_bravado: 12`) out of his own Ultimate gate. `bravado_state()` and
+   `can_use_ultimate()` take `max_value` as a parameter.
