@@ -43,8 +43,9 @@ forever."* [source: `design/items/brewery_passport_book_sinfonia.md` L135]
 
 ### Challenge — "Win a Tempo Debate"
 
-⚠ AUTHOR TO DESIGN — full challenge design pending. Existing one-liner: win a Tempo Debate
-[source: `design/items/brewery_passport_book_sinfonia.md` L118].
+⚠ AUTHOR TO DESIGN — Sinfonia challenges trend performance/social per the master spec;
+nothing is designed yet. Existing one-liner: win a Tempo Debate [source:
+`design/items/brewery_passport_book_sinfonia.md` L118].
 
 ---
 
@@ -59,9 +60,9 @@ BRAVO!"* [source: `design/items/brewery_passport_book_sinfonia.md` L142]
 
 ### Challenge — "Complete the Bravo Challenge (toast performance)"
 
-⚠ AUTHOR TO DESIGN — full challenge design pending. Existing one-liner: complete the Bravo
-Challenge, a toast performance [source: `design/items/brewery_passport_book_sinfonia.md`
-L119].
+⚠ AUTHOR TO DESIGN — Sinfonia challenges trend performance/social per the master spec;
+nothing is designed yet. Existing one-liner: complete the Bravo Challenge, a toast
+performance [source: `design/items/brewery_passport_book_sinfonia.md` L119].
 
 ---
 
@@ -76,9 +77,9 @@ the crown!"* [source: `design/items/brewery_passport_book_sinfonia.md` L149]
 
 ### Challenge — "Complete the Coronation Ceremony (knighting ritual)"
 
-⚠ AUTHOR TO DESIGN — full challenge design pending. Existing one-liner: complete the
-Coronation Ceremony, a knighting ritual [source: `design/items/brewery_passport_book_sinfonia.md`
-L120].
+⚠ AUTHOR TO DESIGN — Sinfonia challenges trend performance/social per the master spec;
+nothing is designed yet. Existing one-liner: complete the Coronation Ceremony, a knighting
+ritual [source: `design/items/brewery_passport_book_sinfonia.md` L120].
 
 ---
 
@@ -93,9 +94,9 @@ friend!"* [source: `design/items/brewery_passport_book_sinfonia.md` L156]
 
 ### Challenge — "Complete the Stein Waltz (dance without spilling)"
 
-⚠ AUTHOR TO DESIGN — full challenge design pending. Existing one-liner: complete the Stein
-Waltz, dancing without spilling [source: `design/items/brewery_passport_book_sinfonia.md`
-L121].
+⚠ AUTHOR TO DESIGN — Sinfonia challenges trend performance/social per the master spec;
+nothing is designed yet. Existing one-liner: complete the Stein Waltz, dancing without
+spilling [source: `design/items/brewery_passport_book_sinfonia.md` L121].
 
 ---
 
@@ -171,10 +172,16 @@ the two do not overlap or stack against each other.
 
 - Available only to Continental Beer Masters
 - Automatically wins any toast speech challenge
-- Grants **"Legendary Craic"** status to the entire party (+5 all stats, 10 minutes)
+- Grants **"Legendary Craic"** status to the entire party — **+5 all stats, 10 minutes**
+  (this is the deepest-sourced figure repo-wide — the Sinfonia passport doc is the only
+  source with a specific number attached, per the design spec's deepest-source rule; the
+  Publandia city file's Master's Toast entry is normalized to match this same value)
 - Single use per game day (resets at midnight)
 
-[source: `design/items/brewery_passport_book_sinfonia.md` L278-282]
+[source: `design/items/brewery_passport_book_sinfonia.md` L278-282; confirmed as the
+authoritative figure by `docs/superpowers/specs/2026-08-05-brewery-tour-decomposition-design.md`
+Appendix A.2 ("The Master's Toast full detail (auto-wins toasts, party-wide 'Legendary
+Craic' +5 all stats 10 min, 1/day reset midnight)")]
 
 ---
 

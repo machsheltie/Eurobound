@@ -22,7 +22,7 @@
 ### Exit Conditions
 - **Normal Exit**: Through the ornate gates, diploma optional
 - **Completion Requirements**: Complete a "course" to graduate
-- **Failure States**: "Academic Probation" status if you fail too many challenges
+- **Failure States**: none — grading, and the "Academic Probation" status tied to it, are dead (author ruling, 2026-08-05)
 - **Progressive Unlocks**: "Graduate" status unlocks advanced courses, Alumni Discount
 
 ## Visual Design
@@ -110,7 +110,7 @@ Dean Cathal Murphy runs Trinity of Pints with absolute commitment to the bit. He
 - **City-Specific Comedy Operations**: Exploiting tourists' desire to feel cultured
 - **Buffoon Exploitation**: Bros who desperately want drinking to be intellectual
 - **Comedy of Errors**: Failing "academically" at drinking, taking it seriously
-- **Consequence System**: "Academic standing" affects treatment, Graduate status unlocks
+- **Consequence System**: Graduate status unlocks Alumni treatment (the old GPA-banded "Academic standing" system is dead, author ruling 2026-08-05)
 
 ### Buffoon Delusion Scenarios
 **What bros THINK is happening**: Engaging with Irish intellectual tradition, becoming cultured
@@ -498,7 +498,7 @@ the GPA system it depended on).
 - overachiever.png - 64x96 - Taking notes
 - study_group.png - 192x96 - Bachelor party coordination
 
-### Item/UI Assets (13 PNGs)
+### Item/UI Assets (12 PNGs)
 - student_id.png - 64x48 - Enrollment card
 - diploma_template.png - 192x128 - Graduation certificate
 - course_catalog_ui.png - 256x384 - Challenge menu
@@ -507,7 +507,6 @@ the GPA system it depended on).
 - academic_amber_icon.png - 32x32 - Inventory icon
 - course_complete_badge.png - 48x48 - Individual course
 - graduation_cap_icon.png - 32x32 - Graduate status
-- valedictorian_medal.png - 48x48 - Top achievement
 - scholars_focus_buff.png - 32x32 - INT boost icon
 - pretentious_debuff.png - 32x32 - Status effect
 - selfie_frame_academic.png - 192x256 - Photo backdrop

@@ -388,11 +388,18 @@ brewerytour.md` L74-75]
 
 - Available only to Continental Beer Masters
 - Automatically wins any toast speech challenge
-- Grants **"Legendary Craic"** status to the entire party (+all stats, 10 minutes)
+- Grants **"Legendary Craic"** status to the entire party — **+5 all stats, 10 minutes**
+  (normalized: the Publandia/`complete` sources say "+all stats" with no number, but the
+  design spec's deepest-source rule resolves to the Sinfonia passport doc's specific figure —
+  "party-wide 'Legendary Craic' +5 all stats 10 min, 1/day reset midnight" — since it is the
+  only source with an actual number attached; both city files now carry the same normalized
+  value [source: `docs/superpowers/specs/2026-08-05-brewery-tour-decomposition-design.md`
+  Appendix A.2])
 - Single use per game day (resets at midnight)
 
 [source: `design/items/brewery_passport_book.md` L275-279; `design/worlds/publandia/
-brewery_passport_book.md` L311-315]
+brewery_passport_book.md` L311-315; normalized per `design/items/brewery_passport_book_sinfonia.md`
+L278-282 and Appendix A.2 above]
 
 ---
 

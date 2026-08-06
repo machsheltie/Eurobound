@@ -6,8 +6,8 @@
 - **NPC ID**: `publandia_npc_cathal_murphy_01`
 - **Display Name**: Dean Murphy
 - **Internal Name**: Cathal Murphy — Dean, Trinity of Pints; owner/operator
-- **Role**: Vendor (Enrollment) / Challenge Host / Quest Giver / Brewery Passport Stamp Giver / Ceremony Officiant
-- **Associated Quest**: `publandia_quest_trinity_graduation_01` ("The Senior Thesis") — Brewery Tour stamp gate
+- **Role**: Vendor (Enrollment) / Challenge Host (THESIS DEFENSE 401) / Quest Giver / Ceremony Officiant / Battle Encounter (SECURE THE QUAD)
+- **Associated Quest**: `publandia_quest_trinity_graduation_01` (the redesigned four-course Trinity of Pints sequence — grading is dead, author ruling 2026-08-05) — culminates in the SECURE THE QUAD boss fight, not a stamp gate; ⚠ AUTHOR-REVIEW **the Trinity of Pints stamp is applied by the Brewmaster, not Cathal** — see `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_brendan_nolan.md` and `villain_secure_the_quad.md`
 - **Primary Location**: Trinity of Pints, the "academic quarter" adjacent to Cobblestone Market Street, Publandia
 - **Secondary Appearances**: The Quad during graduation ceremonies; visible through the gates from Cobblestone Market Street at all hours; a single background appearance at The Blarney Trap on a Tuesday, out of regalia, unrecognised by the player unless they examine him
 - **Family**: A Murphy, one of many. No relation to Deirdre Murphy of Plot Armor Provisions and no relation to Rory Murphy of Murphy's Lawless. He has been asked about the last one and answered, in full regalia, "The Murphys are a broad faculty. We do not all publish."
@@ -20,7 +20,7 @@
 
 Running a themed pub with a 10 Sovs cover charge, a laminator, and a commitment problem. Cathal Murphy spent twelve years as an adjunct lecturer, was let go, bought a failing gimmick pub in the academic quarter in 2011, and turned it into the most profitable bit in Publandia by refusing — for fifteen straight years — to acknowledge that it is a bit.
 
-The ivy is plastic. The portraits are stock photos. The books are hollow props. The Latin is mostly wrong and he knows exactly which parts. The diplomas are printed that morning on a machine in the back office. He charges tuition, awards grades, calculates GPAs, and confers a Bachelor of Beverage Sciences with the exact bearing of a man who used to mark first-year essays, because he is.
+The ivy is plastic. The portraits are stock photos. The books are hollow props. The Latin is mostly wrong and he knows exactly which parts. The diplomas are printed that morning on a machine in the back office. He charges tuition, assesses coursework with real rigour (⚠ AUTHOR-REVIEW: no grading apparatus exists anymore — Trinity stopped grading, author ruling 2026-08-05 — but his standards did not soften; he still tells people flatly when they haven't cleared the bar), and confers a Bachelor of Beverage Sciences with the exact bearing of a man who used to mark first-year essays, because he is.
 
 He is not deluded and he is not a con man. He is a professional, running a service that his customers explicitly want, at an honest price, with better production values than anything else on the street.
 
@@ -35,6 +35,35 @@ All three will put the diploma on a wall. One of them will put it on LinkedIn.
 Cathal never lies. Not once, anywhere in his dialogue. He says "tuition," and it is a cover charge, and the sign says the cover charge is 10 Sovs. He says "our distinguished faculty," and Prof. Cian MacCarthy is standing there in a party-store robe with the tag still on. He says the standards are rigorous and then passes a man who finished a pint in one minute fifty.
 
 The bros supply every single piece of the delusion themselves. He supplies a laminator and a straight face. The satire lands on tourists who want to feel cultured while getting hammered — never on education, and never on the Irish literary heritage he can quote at length and genuinely loves.
+
+### The One Exception — Thesis Defense 401
+
+⚠ AUTHOR-REVIEW: connective section, added to align this profile with the 2026-08-05 Trinity
+of Pints redesign (author-dictated, extraction Rulings addenda 1–6). Everything above holds
+except one thing: THESIS DEFENSE 401, the beer pong round that closes the four-course
+sequence, is rigged. Cathal wins it constantly with a magnetized ball and a matching magnet
+hidden under the table — the one piece of dishonesty in an otherwise scrupulously honest
+operation, and the one time in fifteen years his commitment to the bit has required an
+actual lie rather than just vocabulary the customer over-reads.
+
+It goes wrong the night the bros play him. His trick shot throws too hard, the magnet yanks
+the ball down onto the cup rim, the cheap plastic shell shatters, and the lodestone clatters
+across the table and locks onto his own belt buckle in front of the referee, the faculty, and
+every patron in the room. The tournament referee disqualifies him on the spot and awards the
+bros a default win. Cathal — stripped of the win, denied even the satisfaction of the bros
+noticing they were cheated against, because Pilsner reads the whole thing as his own
+"critical block" — snaps. He rips off his jacket, grabs the ceremonial gavel, and the
+Committed Bit overclocks into a battle: **SECURE THE QUAD**, Cathal plus the three
+professors versus the bros. Full combat spec, dialogue, and staging:
+`design/worlds/publandia/npcs/Trinity_Of_Pints/villain_secure_the_quad.md`. Full sequence
+(the referee-reveal beat, the graduation staging, the alley wake-up):
+`design/quests/publandia/brewerytourpublandia.md`.
+
+He loses the fight, delivers a backhanded compliment, and walks straight back into the
+graduation ceremony with no acknowledgment that any of it happened — he never breaks
+character, not even for his own humiliation. **The stamp itself is applied by the Trinity
+Brewmaster, not Cathal** — see `npc_brendan_nolan.md`; Cathal's role in the ceremony
+(calling the name, conferring the diploma, the commencement toast) is unchanged.
 
 ### The Thing He Does Not Say Out Loud
 
@@ -85,14 +114,14 @@ Six 64x96 Dean states share the faculty sheet: Idle, Lecturing A (finger raised,
 |-------|-------------|
 | Unbreakable commitment | Fifteen years, no crack, no aside, no acknowledgment. Not for a heckler, not for a camera. |
 | Scrupulously honest | Never claims accreditation, never claims the diploma is real, never says a false word — he simply uses the vocabulary and lets you do the rest |
-| Genuinely rigorous | The GPA maths is real. The grades are earned. He has failed people who paid. |
+| Genuinely rigorous | Assessment is real, even without a grade attached — he has told paying customers flatly that they hadn't cleared the bar |
 | Warm underneath the formality | He wants you to graduate. He is delighted when you do. He will not show it until the ceremony. |
 | Quietly literate | Can and will quote Yeats correctly at a man who cannot spell it |
 | Meritocratic to a fault | "Legacy status grants you nothing here. Only the pint matters." |
 
 ### Internal Monologue
 
-> "Freshman intake of three. The loud one will pass BEER one-zero-one on enthusiasm and fail SHOT one-ten inside four minutes, and he will blame the curve. The one with the camera wants a narrative more than a degree, so he will over-commit and injure himself in ENDUR three-ten. The quiet one — the quiet one is reading the course catalogue properly. He'll be my valedictorian and he won't understand why it moved him. It will move him. It always moves that one. Thirty Sovs at the door and a curriculum. God, but I love this job."
+> "Freshman intake of three. The loud one will pass BEER one-zero-one on enthusiasm and fail SHOT one-ten inside four minutes, and he will blame the curve. The one with the camera wants a narrative more than a degree, so he will over-commit and injure himself in ENDUR three-ten. The quiet one — the quiet one is reading the course catalogue properly. He'll graduate top of the room and he won't understand why it moved him. It will move him. It always moves that one. Thirty Sovs at the door and a curriculum. God, but I love this job."
 
 ### Motivation
 
@@ -144,15 +173,11 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 
 > "Your form is acceptable. Your commitment, however, needs work."
 
-> "A gentleman's C. You've passed, but you haven't excelled. Consider extra credit."
-
-> "Disappointing. I expected more from someone of your... enthusiasm. Remedial coursework is available."
+> "Disappointing. I expected more from someone of your... enthusiasm."
 
 > "Outstanding! You've demonstrated mastery of the material. The faculty is impressed."
 
 > "One minute fifty on BEER one-zero-one. That is a pass. It is not a distinction. Do not mistake the two."
-
-> "You have been placed on Academic Probation. This is not a punishment. It is an assessment. Remedial coursework begins on the hour."
 
 > "You attempted ENDUR three-ten at your current standing. Ambition is admirable. Preparation is better."
 
@@ -176,26 +201,46 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 *If the candidate fails the balance check on the walk up:*
 > "Take your time. The podium is not going anywhere and neither, evidently, are you."
 
-*Conferring the valedictorian honour:*
-> "The highest grade point average of this session. Summa cum laude. The faculty notes it. So should you."
-
 *The commencement toast:*
 > "To the graduating class. In Cervisia Felicitas."
 
 ---
 
+### Thesis Defense 401 — The Magnet Cheat & SECURE THE QUAD (canon, verbatim — extraction Rulings addenda 2 and the "BATTLE IS IN" addendum)
+
+*Context: Cathal's trick shot shatters the magnetized ball; the referee disqualifies him and
+awards the bros a default win. See "The One Exception — Thesis Defense 401" above for the
+full beat, and `villain_secure_the_quad.md` for the complete battle dialogue and combat
+spec. Only Cathal's own canon lines are reproduced here.*
+
+> **Dean Cathal**: "I WAS CHEATING, YOU ABSOLUTE MONKEYS! I WAS TRYING TO HUMILIATE YOU!"
+
+*Rips off his tweed jacket, grabs the ceremonial gavel:*
+
+> **Dean Cathal**: "NOBODY GRADUATES! SECURE THE QUAD!"
+
+⚠ AUTHOR-REVIEW: the backhanded compliment he delivers once the fight ends (author-ruled to
+land post-battle, exact wording not dictated) is drafted in `villain_secure_the_quad.md`,
+not duplicated here to avoid drift between the two files.
+
+---
+
 ### Brewery Passport Stamp
 
-*Requires the Bottle Opener Keychain from The Blarney Trap. Applied by Cathal during the graduation ceremony.*
+⚠ AUTHOR-REVIEW: **this section is corrected — the stamp is applied by the Trinity
+Brewmaster, not Cathal** (extraction Rulings, Gap #11: "the BREWMASTER is Trinity's
+stamper"). See `npc_brendan_nolan.md` for the actual stamping beat and stamp speech. Cathal
+is present at the ceremony (calling the name, conferring the diploma) but does not touch the
+passport.
+
+*The line below survives as Cathal's own ambient greeting when a player carries the Bottle
+Opener Keychain — not as a gating check (the old "one keychain gates everything" prerequisite
+model is dead) and not as the stamp beat itself:*
 
 > "Ah, you carry Seamus's opener. A fellow traveler on the Continental Trail."
 
 **If the player asks who Seamus is**:
 > "Seamus O'Brien, of The Blarney Trap. He has been sending me students for years and I have been sending him alumni. It is the oldest exchange programme in the city."
-
-> "Your passport, please. This stamp represents genuine academic achievement. In drinking."
-
-> "There. You are now officially an alumnus of Trinity of Pints. The beer world recognizes your accomplishment."
 
 ---
 
@@ -219,7 +264,7 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 
 > "They learn something here. Camaraderie. Humility. How to lose gracefully. That's more than most universities teach."
 
-> "My doctoral thesis was on the semiotics of Irish identity in post-colonial literature. Now I grade pint-finishing technique. I've never been happier."
+> "My doctoral thesis was on the semiotics of Irish identity in post-colonial literature. Now I assess pint-finishing technique. I've never been happier."
 
 > "The diploma is fake. The education is real. Think about it."
 
@@ -261,8 +306,6 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 
 > "The alumnus returns. 5 Sovs, and there is an Advanced Course list I do not show to freshmen."
 
-> "You are on the Dean's List. That is twenty percent off, seating in the Great Hall, and the staff will stop calling you 'the American one.'"
-
 > "You have completed every course in the catalogue. I am obliged to tell you there is nothing further. I am also obliged to tell you the bar is still open."
 
 > "You came back. They mostly do not. I find that I remember the ones who do."
@@ -276,7 +319,7 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 |------|----------|----------|
 | 11:00-13:00 | The Entrance Hall (enrollment desk) | Registration, student IDs, "class hours" begin; Freshman Courses only |
 | 13:00-16:00 | The Lecture Halls | Freshman and Sophomore courses; BEER 201 blind taste tests run on the hour |
-| 16:00-19:00 | The Great Hall, head table | Grading, GPA calculation, Junior Courses; visible presiding presence |
+| 16:00-19:00 | The Great Hall, head table | Course assessment, Junior Courses; visible presiding presence |
 | 19:00-22:00 | The Lecture Halls / The Quad | Senior Thesis attempts; the gauntlet runs on demand from 19:00 |
 | 22:00-00:00 | The Quad (or Great Hall if raining, which it is) | Graduation ceremonies, stamps, commencement toasts |
 | 00:00-01:00 | The Entrance Hall | Final registrations, Advanced Course sign-ups for alumni |
@@ -284,7 +327,7 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 
 ### Positioning Notes
 - Always at the enrollment desk on first entry, positioned so that the fake portraits are behind him and read as endorsement
-- Moves to the head table for grading, which places him above the Great Hall floor — the sightline is doing the authority work, not the robe
+- Moves to the head table for course assessment, which places him above the Great Hall floor — the sightline is doing the authority work, not the robe
 - Never enters the Library back room during trading hours; that space belongs to the day drinkers and he affords it the same respect a real dean affords a real reading room
 - During ceremonies he stands at the podium and does not move from it, which forces every graduate to walk to him — a balance check disguised as protocol
 
@@ -301,7 +344,16 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 | Diploma (printed) | Included | Costs him about 30 cent | Physical certificate, wall-mountable, LinkedIn-uploadable |
 | Academic regalia hire (selfie spot) | Free | Free | Robe, mortarboard and diploma props for the Quad photo backdrop |
 
-### Course Catalog — Freshman
+⚠ AUTHOR-REVIEW: **this ten-course catalog predates the 2026-08-05 Trinity redesign.** The
+venue's authoritative course roster is now four ruled courses — PUB 115 (toast-off, Prof.
+Róisín O'Sullivan), SONG 220 (rhythm game, Prof. Aisling Byrne), GREEK 330 (hazing gauntlet,
+Prof. Cian MacCarthy), THESIS DEFENSE 401 (beer pong vs. Cathal, culminating in the magnet
+cheat and SECURE THE QUAD) — each opened by a chugged beer, no grading anywhere. See
+`design/worlds/publandia/trinity_of_pints.md` for the current catalog. Replacing the full
+ten-course table below is a larger rewrite than this surgical alignment pass covers; it is
+flagged here rather than silently left stale.
+
+### Course Catalog — Freshman (PRE-REDESIGN, see banner above)
 | Course | Challenge | Passing Grade | Reward |
 |--------|-----------|---------------|--------|
 | BEER 101: Introduction to Pints | Finish a pint in under 2 minutes | Complete | +10 Bravado, "Enrolled" status |
@@ -327,15 +379,10 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 |--------|-----------|---------------|--------|
 | THESIS 401: Comprehensive Examination | Multi-stage gauntlet: drink, game, toast, song | Complete all stages | GRADUATION + Diploma + Brewery Passport stamp |
 
-### Academic Standing
-| GPA | Status | Effect |
-|-----|--------|--------|
-| 3.5-4.0 | Dean's List | 20% discount, VIP seating, staff respect |
-| 2.5-3.4 | Good Standing | Normal treatment |
-| 1.5-2.4 | Academic Probation | Mocking from staff, "remedial" courses required |
-| Below 1.5 | Expulsion Risk | Must retake courses, public shame |
-
-*GPA maths: A (pass with honours) 4.0 · B (pass) 3.0 · C (barely pass) 2.0 · F 0.0. Cathal calculates it on the clipboard, by hand, correctly.*
+⚠ AUTHOR-REVIEW: the Academic Standing / GPA table formerly here is removed in full — grading
+is dead at Trinity of Pints (author ruling, 2026-08-05). Dean's List, Academic Probation, and
+Expulsion Risk no longer exist as statuses; "Graduate" remains the only standing status (see
+the venue file's Status Effects list).
 
 ### Hidden Details / Easter Eggs
 - **Examine any faculty robe** and the party-store tag is still attached. Examine the Dean's robe and it is not — his has been re-lined twice.
@@ -353,10 +400,10 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Seamus O'Brien (The Blarney Trap) | The oldest working arrangement in the city. Seamus's Bottle Opener Keychain is the prerequisite for Cathal's stamp; Cathal's Academic Amber goes on tap at The Blarney Trap once a player graduates. Seamus sends students, Cathal sends alumni. Referred to in-dialogue simply as "Seamus's opener," which is Seamus O'Brien and no one else. |
-| Prof. Róisín O'Sullivan (Spirits Department) | Faculty. Warm but exacting; runs SHOT 110 and the whiskey identification track. Cathal defers to her on spirits entirely and says so publicly, which she finds insufferable. |
-| Prof. Cian MacCarthy (Games & Recreation) | Faculty. Runs GAME 215. State darts champion in '08 and will not let it go. Cathal grades him on his robe-wearing and has never awarded above a C. |
-| Prof. Aisling Byrne (Traditional Music) | Faculty. Runs SONG 220 and the toast-poetry component of THESIS 401. The only member of staff who can make Cathal break stride, which she does about twice a year. |
+| Seamus O'Brien (The Blarney Trap) | The oldest working arrangement in the city. ⚠ AUTHOR-REVIEW: the Bottle Opener Keychain is no longer a stamp gate Cathal enforces (the old prerequisite-chain model is dead, and the stamp itself now belongs to the Brewmaster — see `npc_brendan_nolan.md`); Cathal's Academic Amber goes on tap at The Blarney Trap once a player graduates. Seamus sends students, Cathal sends alumni. Referred to in-dialogue simply as "Seamus's opener," which is Seamus O'Brien and no one else. |
+| Prof. Róisín O'Sullivan (Spirits Department) | Faculty. Warm but exacting; runs SHOT 110 and the whiskey identification track, and hosts PUB 115 in the redesigned sequence. Cathal defers to her on spirits entirely and says so publicly, which she finds insufferable. |
+| Prof. Cian MacCarthy (Games & Recreation) | Faculty. Runs GAME 215, and hosts GREEK 330 in the redesigned sequence. State darts champion in '08 and will not let it go. Cathal rates his robe-wearing unfavorably and has said so, repeatedly. |
+| Prof. Aisling Byrne (Traditional Music) | Faculty. Runs SONG 220, unchanged by the redesign. The only member of staff who can make Cathal break stride, which she does about twice a year. |
 | Tour Guide Fiona (The Stoutworks Brewery) | Contract brewing relationship. Stoutworks brews Academic Amber to Trinity specification; Fiona sends brewery-tour survivors up the road for a stamp. |
 | Deirdre Murphy (Plot Armor Provisions) | Unrelated Murphy. He buys the stew and takes it in a bowl to the head table, which she finds funny and he does not acknowledge. |
 | Rory Murphy (Murphy's Lawless) | Unrelated Murphy. Cathal has been asked whether they are related roughly two thousand times. |
@@ -367,6 +414,7 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 - The Overachiever student NPC is treated with total sincerity: *"I've completed every course. I'm going for a DOUBLE MAJOR. Beer AND Spirits."* Cathal approves the double major on the spot and means it.
 - The Study Group (bachelor/bachelorette parties) get the full ceremony with names read out, and this is where the highest tips in the building come from
 - Nobody who works there calls him Cathal on the floor. He is "Dean" from open to close.
+- ⚠ AUTHOR-REVIEW: all three professors are Cathal's battle allies in SECURE THE QUAD — none of them knew about the magnet, and none of them wanted the fight; see `villain_secure_the_quad.md`.
 
 ---
 
@@ -386,7 +434,7 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 
 ### Evolution Through Game
 - **Enrollment**: Pure formality. He assesses the party and assigns nothing.
-- **Mid-curriculum**: Grades sharpen. He starts using their names and their course codes together, which is when the bros begin to believe.
+- **Mid-curriculum**: His assessments sharpen. He starts using their names and their course codes together, which is when the bros begin to believe.
 - **Graduation**: The only moment his warmth is visible. He means the ceremony. Bradley notices and cannot explain why it affected him: *"I'm... proud? I didn't expect to feel genuine emotion at a fake graduation."*
 - **Alumni returns**: Advanced Courses, the 5 Sovs rate, and the four Private lines become reachable
 - **Post-main-quest**: Unchanged. Same robe, same desk, same 10 Sovs. The permanence is the point.
@@ -422,7 +470,7 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 | dean_cathal_idle | Default presence, enrollment desk and head table |
 | dean_lecturing_a | Course briefing, first half |
 | dean_lecturing_b | Rules and "formulas" |
-| dean_grading | Assessment and GPA delivery |
+| dean_grading | Assessment delivery (no GPA — grading is dead) |
 | dean_conferring | Graduation ceremony, diploma handoff |
 | dean_toasting | Commencement toast |
 | dean_portrait | All standard dialogue |
@@ -433,16 +481,16 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 ## 🎯 Quest Integration
 
 ### Primary Quest
-- **Quest**: The Senior Thesis (`publandia_quest_trinity_graduation_01`)
-- **Role**: Quest giver, challenge host, stamp giver, ceremony officiant
-- **Trigger**: Pay tuition (10 Sovs) and enroll; the Thesis unlocks on sufficient course credits
-- **Outcome**: Complete THESIS 401's four-stage gauntlet (drink, game, toast, song) → graduation ceremony in The Quad → printed diploma → Brewery Passport stamp applied by Cathal → "Graduate" status, Alumni Discount, Advanced Course access, and Academic Amber unlocked at both Trinity of Pints and The Blarney Trap
+- **Quest**: The redesigned Trinity of Pints sequence (`publandia_quest_trinity_graduation_01`)
+- **Role**: Quest giver, challenge host (THESIS DEFENSE 401), ceremony officiant, battle encounter (SECURE THE QUAD)
+- **Trigger**: Pay tuition (10 Sovs) and enroll; the four-course sequence runs in fixed order (PUB 115 → SONG 220 → GREEK 330 → THESIS DEFENSE 401), each round opened by a chugged beer — no course-credit accumulation, no grading
+- **Outcome**: ⚠ AUTHOR-REVIEW: complete the four-course sequence → Cathal's magnet cheat is exposed in THESIS DEFENSE 401 → the referee awards a default win → SECURE THE QUAD (Cathal + three professors) → graduation ceremony in The Quad → printed diploma → Trinity of Pints stamp applied by **the Brewmaster** (not Cathal) → "Graduate" status, Alumni Discount, Advanced Course access, and Academic Amber unlocked at both Trinity of Pints and The Blarney Trap. Full sequence: `design/quests/publandia/brewerytourpublandia.md`.
 
 ### Quest Gate Function
 
-**Yes — Cathal is a hard gate on the Brewery Tour.** The Trinity of Pints stamp cannot be obtained by any other means, and it requires two things simultaneously: the Bottle Opener Keychain from **Seamus O'Brien** at The Blarney Trap, and graduation via THESIS 401. Players who arrive without the keychain can enroll, take every course, and graduate, but Cathal will not stamp a passport they do not have. He does not explain this. He says: *"Your passport, please,"* and waits.
+⚠ AUTHOR-REVIEW: **corrected — Cathal is no longer the stamp gate.** The Trinity of Pints stamp is applied by the Brewmaster (see `npc_brendan_nolan.md`), and the old "Bottle Opener Keychain gates the stamp, enforced by Cathal" model is dead along with the rest of the one-keychain prerequisite chain. Cathal remains the mandatory THESIS DEFENSE 401 opponent and SECURE THE QUAD boss — the fight is not skippable once a player commits to the Trinity of Pints challenge, but it gates progress through the *encounter*, not the stamp specifically.
 
-He also soft-gates the Advanced Course list behind Graduate status, and Dean's List privileges behind a 3.5 GPA.
+He also soft-gates the Advanced Course list behind Graduate status.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -450,19 +498,19 @@ He also soft-gates the Advanced Course list behind Graduate status, and Dean's L
 | Student ID (laminated) | On enrollment, 10 Sovs | Yes | Marks "Enrolled" status; required for all course access |
 | Branded Pint Glass ("textbook") | On enrollment | Yes | Cosmetic inventory item; examine text is the faux-Latin motto, misprinted |
 | Diploma (B.B.S.) | On graduation | Yes | Proof of graduation; grants Alumni Rate on presentation; displayable |
-| Trinity of Pints Stamp | On graduation, requires Bottle Opener Keychain | Yes | Brewery Passport progression — square academic seal, open book with pint glass, laurel border, "Cum Laude in Lager," navy ink |
-| Academic Amber | Post-stamp, 9 Sovs/pint | No (consumable) | +25 HP, +20 SP, "Scholar's Focus" +3 INT 30 min, 10% "Pretentious" risk |
-| Valedictorian Medal | Highest GPA of the session | Yes | Temporary massive Bravado boost; staff fawn; unique selfie variant |
+| Academic Amber | Post-graduation, 9 Sovs/pint | No (consumable) | +25 HP, +20 SP, "Scholar's Focus" +3 INT 30 min, 10% "Pretentious" risk |
+
+⚠ AUTHOR-REVIEW: the Trinity of Pints Stamp and the Valedictorian Medal rows formerly here are
+removed — the stamp is acquired from the Brewmaster, not Cathal (see `npc_brendan_nolan.md`),
+and the Valedictorian Medal was GPA-gated and is dead along with grading.
 
 ### State Flags
 - `cathal_met`: boolean
 - `trinity_enrolled`: boolean
-- `trinity_gpa`: float
 - `trinity_courses_passed[]`: array
 - `trinity_graduated`: boolean
-- `trinity_stamp_acquired`: boolean
-- `academic_probation`: boolean
-- `valedictorian`: boolean
+- `trinity_stamp_acquired`: boolean (set by the Brewmaster's stamp beat, not by Cathal — see `npc_brendan_nolan.md`)
+- `secure_the_quad_defeated`: boolean ⚠ AUTHOR-REVIEW (new flag, not yet cross-referenced against a data file)
 - `cathal_private_lines_unlocked`: boolean (requires graduation + return visit + two prompts)
 
 ---
@@ -483,7 +531,8 @@ He also soft-gates the Advanced Course list behind Graduate status, and Dean's L
 - "You may audit SKEPTIC 101: Questioning Everything."
 - "Legacy status grants you nothing here. Only the pint matters."
 - "Publish or perish, they said. I perished. Then I found THIS."
-- "A gentleman's C."
+- "I WAS CHEATING, YOU ABSOLUTE MONKEYS! I WAS TRYING TO HUMILIATE YOU!"
+- "NOBODY GRADUATES! SECURE THE QUAD!"
 - The B.B.S. diploma as a reaction image / LinkedIn parody format
 - "Cum Laude in Lager" as a caption template
 
@@ -497,7 +546,8 @@ Educated Dublin, precise, unhurried, with the specific cadence of a man who has 
 
 ### Tone
 - **Registration**: Formal, welcoming, institutional. The tone of a real orientation.
-- **Grading**: Flat, exact, faintly disappointed by default. He is not being funny. He never is.
+- **Assessment**: Flat, exact, faintly disappointed by default. He is not being funny. He never is.
+- **SECURE THE QUAD**: ⚠ AUTHOR-REVIEW — the one register break in the whole profile. Same total commitment, one notch hotter; he is not a different character here, he is this character overclocked by getting caught.
 - **Ceremony**: The only warmth. Genuine, restrained, and slightly too moved for the setting.
 - **Private lines**: Quieter. Not confessional — he does not drop the register, he just lowers the volume. Still "Dean."
 - **Handling hecklers**: Unmoved. The absence of a reaction is the reaction.
@@ -523,14 +573,16 @@ Educated Dublin, precise, unhurried, with the specific cadence of a man who has 
 | Connections to other NPCs | ✅ (7 named, all pre-existing characters) |
 | Recurring appearances planned | ✅ |
 | Animation states defined | ✅ |
-| Quest integration documented | ✅ (hard stamp gate, state flags, six acquirable items) |
+| Quest integration documented | ✅ (battle encounter + state flags + four acquirable items; stamp gate corrected to the Brewmaster) |
 | Sprite notes for artists | ✅ (shared faculty sheet noted) |
 | Comedy value preserved | ✅ |
 | Bros never achieve self-awareness | ✅ (Bradley feels something and cannot name it — that is the ceiling) |
 | World consistency (city names) | ✅ (Publandia only) |
 | Prices lifted from source location file | ✅ (10 Sovs tuition, 5 Sovs alumni, 9 Sovs Academic Amber) |
-| Full course catalog and GPA system reproduced | ✅ (10 courses across four years) |
+| Course catalog aligned to 2026-08-05 redesign | ⚠ PARTIAL — GPA/grading removed and flagged; the ten-course table itself is marked stale rather than replaced (see banner in Inventory/Services) |
 | Seamus reference resolved to Seamus O'Brien by full name | ✅ |
+| Magnet-cheat finale + SECURE THE QUAD pointer present | ✅ (2026-08-06 alignment pass) |
+| Dean-as-stamper claims removed | ✅ (2026-08-06 alignment pass) |
 
 ---
 
@@ -539,12 +591,13 @@ Educated Dublin, precise, unhurried, with the specific cadence of a man who has 
 - **The single hardest rule for this character: he never winks, never smirks, never lets the audience in.** Fifteen years without breaking is the entire premise. One knowing aside and Trinity of Pints becomes an ordinary theme bar.
 - He must never state a falsehood. Audit every future line against this — he uses institutional vocabulary honestly and lets the customer over-read it. That distinction is what keeps him a savvy operator rather than a con man.
 - The Private lines are gated deliberately and should be reachable by maybe 15% of players. They are a reward for engagement, not a mid-game reveal.
-- The stamp gate is a genuine progression dependency: The Blarney Trap must be completed first. Ensure the Bottle Opener Keychain check fires *before* the graduation ceremony so a player cannot complete THESIS 401 and then discover they cannot be stamped.
-- GPA must be calculated and displayed honestly — if a player can spot the maths cheating, the character's rigour collapses
-- The faculty (Róisín, Cian, Aisling) share his sheet and his rules; none of them break character in front of a student either
-- Do not write a scene where Cathal admits it's a pub. There is no version of this location that survives that scene.
+- ⚠ AUTHOR-REVIEW: **the stamp is no longer Cathal's to gate.** The Brewmaster applies it (see `npc_brendan_nolan.md`); The Blarney Trap must still be completed first for the Bottle Opener Keychain to exist, but Cathal himself performs no keychain check anymore.
+- The one exception to "he never states a falsehood": the magnetized THESIS DEFENSE 401 ball. This is deliberate and author-ruled (extraction Rulings, Trinity addenda) — it is not a continuity error, it is the single crack in the character that the SECURE THE QUAD fight exists to expose.
+- The faculty (Róisín, Cian, Aisling) share his sheet and his rules; none of them break character in front of a student either — and none of them are willing combatants in SECURE THE QUAD, a fact their battle barks should carry (see `villain_secure_the_quad.md`)
+- Do not write a scene where Cathal admits it's a pub. There is no version of this location that survives that scene. This holds even mid-battle — SECURE THE QUAD is not a mask-slip, it's the bit overclocked.
 - Easter egg to preserve: the real Yeats among the hollow books. No quest, no dialogue, no achievement. It is there for players who look.
-- Voice acting priority: HIGH. The graduation ceremony is the single most emotionally load-bearing recorded sequence in Publandia.
+- Voice acting priority: HIGH. The graduation ceremony is the single most emotionally load-bearing recorded sequence in Publandia. The SECURE THE QUAD lines are the second-highest priority — see `villain_secure_the_quad.md` for full battle dialogue.
+- ⚠ AUTHOR-REVIEW: the ten-course catalog under Inventory/Services is flagged stale rather than rewritten in this pass — a follow-up task should replace it with the four ruled courses to match `trinity_of_pints.md`.
 
 ---
 
@@ -577,6 +630,7 @@ Educated Dublin, precise, unhurried, with the specific cadence of a man who has 
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-08-01 | Initial profile | Claude (NPC authoring pass, Publandia Wave 1) |
+| 2026-08-06 | Surgical alignment to the 2026-08-05 Trinity of Pints redesign: removed all grading/GPA/Valedictorian/Dean's-List/Academic-Probation references and every Dean-as-stamper claim (stamp now correctly attributed to the Brewmaster); added the THESIS DEFENSE 401 role, the magnet-cheat finale, and a SECURE THE QUAD pointer with his verbatim canon lines from the extraction Rulings addenda; flagged the stale ten-course catalog for a future full rewrite rather than replacing it in this surgical pass. All freshly drafted connective prose flagged ⚠ AUTHOR-REVIEW. | Claude (Task 8 fix round, reviewer + controller findings) |
 
 ---
 
