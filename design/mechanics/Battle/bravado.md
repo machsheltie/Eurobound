@@ -26,7 +26,7 @@ Visual States
     • Low Bravado: slouched posture, weak quips, Ultimate locked out.
     • Mid Bravado: standing tall, moderate quips, can use basics.
     • High Bravado: puffed chest, booming one-liners, special visuals (beer glow, crowd cheering).
-    • Zero Bravado: “Dad on a Bender” collapse — dropped animations, forced retreat if not restored.
+    • Zero Bravado: no collapse, no forced retreat — that's HP's job. He just can't spend what he doesn't have: signature moves and Ultimates lock out, and he's back to throwing basic attacks like a civilian.
 
 Regional Bravado Interactions
 Publandia (Dublin parody)

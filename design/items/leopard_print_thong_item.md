@@ -63,9 +63,8 @@ A mass-produced novelty leopard-print male thong, 92% polyester, 8% spandex, of 
 
 ### Direct Stats
 ```
-Bravado:              +2 (entirely unearned, structurally load-bearing)
+Bravado:              +1 (net: +2 entirely unearned and structurally load-bearing, -1 because he brings it up)
 Charm:                +0 (nobody can see it; the few who learn of it are not charmed)
-Composure:            -1 (he brings it up)
 Resolve (Pilsner):    +2 (conditional — applies only while equipped by Lord Pilsner, which is always)
 ```
 

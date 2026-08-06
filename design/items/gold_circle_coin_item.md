@@ -77,7 +77,6 @@ Monsieur Aiguille knows precisely what he is holding. He has known for years. He
 Herp Suppression:  ACTIVE (party-wide — all three bros, while ANY one bro has it equipped)
 Charm:             +0 flat (the Coin does not flatter; `the_herp`'s -2 Charm simply stops applying)
 Bravado:           +4 ("aura of champions" — the bros' word for it, and for once nobody corrects them)
-Composure:         +2 (no Groin Blurts can interrupt dialogue while suppression is active)
 ```
 
 ### Passive Effects
@@ -116,7 +115,7 @@ Once obtained, the Coin is **permanently party-bound**: it cannot be sold, dropp
 | **Name** | The Gold Circle Coin | e.g. Pearl Cufflinks, Silk Pocket Square |
 | **Type** | Quest Item (equippable, party-bound) | Equippable Accessory |
 | **Slot** | Accessory (any one bro) | Accessory |
-| **Stats** | +4 Bravado, +2 Composure, party-wide `the_herp` suppression | +1 to +2 single-stat, wearer only |
+| **Stats** | +4 Bravado, party-wide `the_herp` suppression | +1 to +2 single-stat, wearer only |
 | **Removable** | Unequippable, never disposable | Yes, fully |
 | **Source** | Aiguille's vitrine, *Objets d'Héritage* | Aiguille's shop floor, priced and stocked |
 
