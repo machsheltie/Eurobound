@@ -763,3 +763,108 @@ six parody replacements in the game's naming voice, batch-reviewed.**
 All 5 contradictions ruled; salvage pile ruled (quotes salvaged/gating dead; Key Collector
 dead); Trinity of Pints redesigned by author dictation (addenda 1–6, incl. the Brenda call);
 remaining creative gaps route through ⚠ AUTHOR-REVIEW draft batches. No DEFERRED items.
+
+---
+
+## Coverage Matrix (Task 9, 2026-08-05)
+
+One row per unique fact clustered in design spec Appendix A.1–A.5. Every row resolved to
+**HOME** (verified open in the target file), **KILLED** (ruling reference), **DEFERRED**
+(Shamsterdam out-of-scope ruling), or **BLOCKED** (no home, no kill ruling — genuine gap).
+Legend: file paths are repo-relative; "×N" homes mean the fact is split across N per-brewery
+files of the same pattern.
+
+### A.1 — Opener-system doc vs `complete`
+
+| # | Fact | Resolution |
+|---|---|---|
+| 1 | Gating layer ("Golden Rule", ASCII prerequisite chain, per-opener Prerequisite fields, City Prerequisite notes) | KILLED: Void Contradiction List, "One-keychain-gates-all / prerequisite chain" |
+| 2 | 28 NPC gatekeeper quotes (14 locations) + "Seamus's Pitch" | HOME (11 of 14, this round's cities): each `design/items/brewery_tour/opener_<brewery>_item.md` Notes section — verified salvaged lines in `opener_stoutworks_brewery_item.md` (Fiona), `opener_trinity_of_pints_item.md` (Dean Cathal), `opener_shenanigans_item.md` (Mickey), `opener_absinthium_taproom_item.md` (Dr. Vaněk), `opener_tap_dat_vault_item.md` (Bouncer), `opener_three_crown_keg_haus_item.md` (Bartender), `opener_ye_olde_brew_lab_item.md` (Scanner), `opener_moderato_pub_item.md` (Herr Takt), `opener_standing_ovation_item.md` (Herr Dramatisch), `opener_crown_and_cask_item.md` (König Klaus), `opener_dancing_stein_item.md` (Herr Drehmeister); Blarney Trap intentionally has none (opener_blarney_trap_item.md Notes: "no salvage quote applies here"). "Seamus's Pitch": HOME `design/items/brewery_passport_book_item.md` § Seamus's Introduction. Hendrik/Kees (Shamsterdam, 2 of 14 locations): DEFERRED — out of scope this round, design spec §Scope |
+| 3 | Per-opener Stamp Unlock + Signature Beer stat lines (Publandia beer stats: Sweet Surrender, Vat Master's Reserve, Academic Amber, Fool's Gold) | HOME: `beer_blarney_trap_item.md`, `beer_stoutworks_brewery_item.md`, `beer_trinity_of_pints_item.md`, `beer_shenanigans_item.md` § Stat Block — verified open, all four stat blocks present |
+| 4 | "COMPLETE OPENER REFERENCE" 14-row table (design/inscription live; price dead; earn method) | HOME (design/inscription, 12 of 14): each `opener_<brewery>_item.md` § Design — verified open across all 12. Price: KILLED, Void Contradiction List "per-location opener vendors and their Sovs prices". Earn method: HOME, unified "Earned:" header line in every opener file. Shamsterdam 2 of 14: DEFERRED |
+| 5 | [complete-only] passport item itself (acquisition, Seamus's intro monologue, menu-interface framing) | HOME: `brewery_passport_book_item.md` §§ Acquisition, Seamus's Introduction, Menu Integration — verified open |
+| 6 | City Pages (stamp slot tables, ink colors, page themes; stamp animations + NPC stamp speeches for Deb/Sin/Sham) | HOME: `brewery_passport_book_item.md` § City Pages (tables/ink/theme, Publandia/Deb/Sin — verified open, Sham reserved row present); animations+speeches HOME in each `stamp_<brewery>_item.md` §§ Design / The Stamping (12 files, verified open). Shamsterdam animations/speeches: DEFERRED |
+| 7 | Detailed beers (style, ABV, Sovs, flavor, "Brewed By" — Publandia included via venue-doc canon/drafts) | HOME: each `beer_<brewery>_item.md` §§ Stat Block, Flavor Text, Notes — verified open across all 12 |
+| 8 | Shamsterdam selfie spots + "Spinning & Bowing" badge | DEFERRED: design spec §Scope ("Shamsterdam quarter is skipped entirely by author ruling"); `brewery_passport_book_item.md` § Shamsterdam row confirms reservation |
+| 9 | Legendary Hangover Comparison (adds Duration) | HOME: `design/quests/publandia/brewerytourpublandia.md` § Publandia Legendary Hangover (30 min), `design/quests/sinfonia/brewerytoursinfonia.md` § Sinfonia Legendary Hangover (40 min), `design/quests/debaucheryville/brewerytourdebaucheryville.md` § Debaucheryville Legendary Hangover (45 min) — verified open, all three carry Duration. Shamsterdam: DEFERRED |
+| 10 | 38 PNG assets with dimensions (opener-doc's own list) | HOME: split across all 24 `opener_<brewery>_item.md` § PNG Assets (this round) — verified open, dimensions present. Shamsterdam's 2 openers: DEFERRED |
+| 11 | Depth: opener doc wins on openers (Ye Olde B.R.E.W. Lab: Scanner dialogue, "+ defeat BrewBot (or bypass)" stamp condition, beer stats; vendor dead) | HOME: `opener_ye_olde_brew_lab_item.md` § Design + Notes (Scanner line, salvaged); `stamp_ye_olde_brew_lab_item.md` § The Stamping ("BrewBot (if defeated) OR Robotic Bartender (if bypassed)" — both speeches preserved). Vendor: KILLED (per-location opener vendors, Void list) |
+| 12 | Depth: `complete` wins on beers/stamps | HOME: all `beer_*_item.md` and `stamp_*_item.md` Stat Block/Design sections — verified open |
+| 13 | Contradiction 1 — Trinity "any drinking course" vs "Senior Thesis" vs "Complete drinking lecture" | KILLED/SUPERSEDED: Rulings, Contradiction 1 ("SUPERSEDED BY REDESIGN") — HOME of the redesign: `stamp_trinity_of_pints_item.md` Notes, `design/worlds/publandia/trinity_of_pints.md` § Course Catalog, `brewerytourpublandia.md` § Trinity of Pints — verified open |
+| 14 | Contradiction — keychain 15-Sov + book-required vs no keychain at all | KILLED: per-location vendor pricing dead (Void list); HOME of the resolved acquisition model: `bottle_opener_keychain_item.md` § Economic Details ("N/A — never sold... GRANTED") — verified open |
+| 15 | Contradiction — Publandia "3 more openers" vs "(4 Total)" | HOME: `design/quests/general_quests/brewerytour.md` § Overview ("Publandia: 4 designed") and `brewerytourpublandia.md` § Publandia Overview Table (4 rows) — verified open, resolves to 4 total |
+| 16 | Contradiction 2 — Iron Gut Tripel debuff duration | KILLED/RULED: Rulings, Contradiction 2 ("next turn only") — HOME: `beer_three_crown_keg_haus_item.md` § Stat Block, Risk row — verified open |
+| 17 | Contradiction — Shenanigans/Keg Haus/Dancing Stein condition qualifiers ("awarded by Mickey", "without waking patrons", "any difficulty") | HOME (2 of 3): `stamp_shenanigans_item.md` § The Stamping (Mickey as stamper — matches "awarded by Mickey"); `brewerytourdebaucheryville.md` § Three-Crown Keg Haus Obstacle ("sneak past passed-out patrons" — matches "without waking patrons"). Dancing Stein "any difficulty": PENDING inside `brewerytoursinfonia.md` § The Dancing Stein → Challenge, explicitly flagged ⚠ AUTHOR TO DESIGN — not yet transcribed, acknowledged rather than silently dropped |
+| 18 | `dutch_courage_passive.png` vs "Canal Courage" naming | DEFERRED: Shamsterdam parking lot; `brewery_passport_book_item.md` § Shamsterdam row confirms "Canal Courage" name retained, PNG rename pending the Shamsterdam round |
+
+### A.2 — Sinfonia passport vs `complete`
+
+| # | Fact | Resolution |
+|---|---|---|
+| 1 | City-level openers (Publandia shamrock; Debaucheryville UV-reactive; Sinfonia eighth-note-with-crown) | KILLED: Void Contradiction List, "Per-city-opener model + cross-city barter" — design gags not additionally salvaged (optional per Appendix A wording, not author-mandated beyond Salvage 27/28) |
+| 2 | Cross-City Mechanics incl. "Key Collector" achievement | KILLED: Rulings, Salvage 28 ("DEAD as redundant") — HOME of the kill record: `bottle_opener_keychain_item.md` § Achievement, `brewerytoursinfonia.md` Notes — verified open |
+| 3 | Full Brewery Tour Summary — Difficulty Progression table (Sinfonia = Performance/Social, Medium, "Retry with purchase, social penalties") | **BLOCKED — no home, no kill ruling.** Not present in `brewerytoursinfonia.md` or the master spec; grep-confirmed absent repo-wide outside the still-live legacy doc (`design/items/brewery_passport_book_sinfonia.md` L369-374) |
+| 4 | Sinfonia Selfie Spots (4-row table, "Culturally Distinguished" badge, +5% Embarrassed resistance, NPC nods) | HOME: `brewerytoursinfonia.md` § Sinfonia Selfie Spots — verified open |
+| 5 | The Master's Toast full detail (auto-win, "Legendary Craic" +5 all stats 10 min, 1/day midnight reset) | HOME: `brewerytoursinfonia.md` § The Master's Toast (primary, deepest-sourced figure), `brewerytourpublandia.md` § The Master's Toast (normalized duplicate) — verified open. Not duplicated into `brewerytourdebaucheryville.md` — minor inconsistency, not blocking (cross-city system, reward already listed in master spec's Rewards Ladder) |
+| 6 | Sinfonia stamp/beer/page PNG specs (four 64x64x4 animation sheets; `passport_page_sinfonia.png` 256x384; `legendary_hangover_sinfonia.png`) | HOME (animation sheets + page PNG): all 4 `stamp_*_item.md` (Sinfonia) § PNG Assets, `brewery_passport_book_item.md` § Book Assets — verified open. `legendary_hangover_sinfonia.png`: **BLOCKED — no home, no kill ruling** (see Achievement Assets cluster, A.4 #8 below) |
+| 7 | Publandia penalty status name "Legendary Hungover" | HOME: `brewerytourpublandia.md` § Publandia Legendary Hangover, Consequence row — verified open |
+| 8 | Contradictions: totals 18 vs 14 (void); opener model (dead); Sinfonia PNG stem naming (`_moderato_pub` vs `_moderato` etc.) | Totals: KILLED, Void list. Opener model: KILLED, Void list. PNG naming: RULED — Rulings, Contradiction 5 ("full brewery stems") — HOME: every Sinfonia `opener_*_item.md` § PNG Assets, each noting the rename — verified open |
+
+### A.3 — Debaucheryville passport vs `complete`
+
+| # | Fact | Resolution |
+|---|---|---|
+| 1 | City-opener entry (Shadow Exchange vendor, 20 Sovs OR Publandia-stamp-proof barter) | KILLED: Void Contradiction List, "Per-city-opener model + cross-city barter" |
+| 2 | Cross-City Mechanics + Key Collector | KILLED: Rulings, Salvage 28 (same as A.2 #2) |
+| 3 | Debaucheryville Selfie Spots (4 spots, standard+special, "Neon Photogenic" badge) | HOME: `brewerytourdebaucheryville.md` § Debaucheryville Selfie Spots — verified open |
+| 4 | Neon Nightmare full detail (10% control reversal, glitch flicker, NPC comments, cure/45 min/75 Sovs, Strategic Use) | HOME: `brewerytourdebaucheryville.md` § Debaucheryville Legendary Hangover — verified open, all fields present |
+| 5 | Master's Toast mechanics (deb_passport copy) | HOME: `brewerytourpublandia.md` § The Master's Toast, `brewerytoursinfonia.md` § The Master's Toast — content is cross-city and lives in those two files; **not present in `brewerytourdebaucheryville.md`** — flagged as a concern, not blocking (see report) |
+| 6 | ALL Debaucheryville stamp/beer/page PNG specs (8 stamp incl. 4× 64x64x4 animation, 8 beer 32x64+32x32, `passport_page_debaucheryville.png`, `legendary_hangover_debaucheryville.png` 48x48) | HOME (stamps, 8 PNGs across 4 files; page PNG): all 4 `stamp_*_item.md` (Deb) § PNG Assets, `brewery_passport_book_item.md` § Book Assets — verified open. Beer PNGs (8): **BLOCKED — no home** (see A.4 #7 below, systemic beer-PNG gap). `legendary_hangover_debaucheryville.png`: **BLOCKED — no home, no kill ruling** |
+| 7 | Shallower in `complete`: beers 9 fields vs 6 (Risk/Flavor/Special stripped in B); lost mechanics (goblet deposit, Blockchain Bock live re-roll, Absinthe user-debuff-by-design, Vape Stout vapor animation, Robotic Bartender's full line) | HOME: all 4 Debaucheryville `beer_*_item.md` § Stat Block (Risk/Flavor/Special all present) + Notes (deep fields carried forward) — verified open, all five sub-facts individually confirmed present |
+| 8 | Contradictions: Shamsterdam 6 vs 2 (void); totals (void); +5% Confused resistance dual-path; "Legendary Hungover" name dropped in B | +5% Confused: RULED — Rulings, Contradiction 4 (selfie badge only, no stacking) — HOME: `brewerytourdebaucheryville.md` § Debaucheryville Selfie Spots + Notes — verified open. Name: HOME, `brewerytourpublandia.md` (A.2 #7) |
+
+### A.4 — Base passport vs `complete`
+
+| # | Fact | Resolution |
+|---|---|---|
+| 1 | Menu Integration (pause-menu tab spec, hop-leaf icon, notification badge, 3 ASCII mockups incl. "Acquired: Won Pint-Off / Day 3, 9:47 PM" + selfie row) | HOME: `brewery_passport_book_item.md` § Menu Integration — verified open, all 3 mockups present verbatim |
+| 2 | Stamp Mechanics (4 unlock archetypes, 6-step collection process, Stamp Permanence incl. account-tied persistence + timestamp) | HOME: `brewery_passport_book_item.md` §§ Stamp Mechanics, Stamp Permanence — verified open |
+| 3 | Publandia signature beer stat blocks (full) | HOME: `beer_blarney_trap_item.md`, `beer_stoutworks_brewery_item.md`, `beer_trinity_of_pints_item.md`, `beer_shenanigans_item.md` — verified open (same as A.1 #3) |
+| 4 | Beer Stats Template + Unlock System (global ranges +25–50 HP, +0–20 SP, 5–15% debuff risk, 8–15 Sovs; cross-city/hub availability) | HOME (partial): `design/templates/signature_beer_item_template.md` § Stat Block, Price row carries the "8–15 band is a guideline, not a rule" note — verified open. **The HP/SP/debuff-risk numeric ranges and the cross-city/hub-availability statement are not transcribed into the template or any item file** — soft gap, not blocking on its own (every actual beer's values are individually sourced and cited; the general range statement is redundant with them), flagged as a concern |
+| 5 | "Using Legendary Hangovers Strategically" (no-stack rule, cure list) | HOME: `brewerytourpublandia.md` §§ No-Stack Rule, Strategic Use; `brewerytoursinfonia.md` § Strategic Use; `brewerytourdebaucheryville.md` § Strategic Use — verified open, cures present in each city's Legendary Hangover block |
+| 6 | Publandia Brewmaster Selfies (4 spots/variants, mechanic, "Photogenic Drinker" reward) | HOME: `brewerytourpublandia.md` §§ Publandia Selfie Spots, Mechanics note — verified open |
+| 7 | ~40 PNG specs — Book Assets, generic Stamp Assets (`stamp_slot_empty.png`, `stamp_slot_locked.png`), Publandia beer bottles/icons, Achievement Assets, all 8 UI Assets | Book Assets: HOME, `brewery_passport_book_item.md` § Book Assets — verified open. UI Assets (8): HOME, same file § UI Assets — verified open, count matches. Generic Stamp Assets (`stamp_slot_empty.png`/`stamp_slot_locked.png`): **BLOCKED — no home, no kill ruling** (grep-confirmed absent). Publandia beer bottles/icons: **BLOCKED for 3 of 4** (`beer_blarney_trap_item.md`, `beer_stoutworks_brewery_item.md`, `beer_trinity_of_pints_item.md` have no PNG Assets section at all; only `beer_shenanigans_item.md` carries one, added ad hoc while resolving Gap #20) — see item #8 below for the full-scope finding. Achievement Assets: see #8 |
+| 8 | Achievement Assets (6 PNGs): `legendary_hangover_publandia.png`, `_debaucheryville.png`, `_sinfonia.png`, `_shamsterdam.png` (all 48x48), `continental_beer_master_badge.png` (96x96), `photogenic_drinker_badge.png` (64x64) | **BLOCKED for 5 of 6 — no home, no kill ruling.** Grep-confirmed absent from every produced file (`brewery_passport_book_item.md` carries only Book Assets + UI Assets, no Achievement Assets section). Original source: `design/items/brewery_passport_book.md` L365-371. Shamsterdam's icon: DEFERRED (1 of 6) |
+| 9 | **NEW FINDING — systemic beer-item PNG gap.** Every signature beer in the extraction table has a cited bottle+icon PNG pair (e.g. Sweet Surrender: `sweet_surrender_bottle.png` 32x64 + `sweet_surrender_icon.png` 32x32), and the master spec's own "What Every Brewery Needs" checklist requires "PNG asset list: stamp sheet, beer bottle + icon, brewmaster/selfie assets" per brewery | **BLOCKED for 11 of 12 — no home, no kill ruling.** `grep -l "\.png" design/items/brewery_tour/beer_*.md` returns only `beer_shenanigans_item.md` (its PNGs were added ad hoc resolving Gap #20). The other 11 beer item files have Stat Block/Flavor Text/Notes only — no PNG Assets section. Root cause: `design/templates/signature_beer_item_template.md` has no `## PNG Assets` heading (confirmed by direct read), unlike `stamp_item_template.md` and `opener_item_template.md`, which both do. This affects ~22 individual PNG facts (11 beers × 2 assets) already fully sourced and cited in the extraction table above — not a matter needing new author judgment, but content that needs to be transcribed |
+| 10 | **NEW FINDING — Implementation Notes section** (Technical Requirements, Save Data, UI/UX Priorities) | **BLOCKED — no home, no kill ruling.** Source: `design/items/brewery_passport_book.md` § Implementation Notes, L310-330. `brewery_passport_book_item.md` Notes section explicitly says "Achievement/Legendary-Hangover full stat blocks are out of scope for this file" but never addresses Implementation Notes at all — grep-confirmed absent |
+| 11 | Shallower in B: Legendary Hangovers one row each; Master's Toast bare bullet; Continental Beer Master compressed | HOME: full detail in each city quest file's Legendary Hangover block + Master's Toast section + `brewerytourpublandia.md`/`brewerytoursinfonia.md` § Continental Beer Master — verified open |
+| 12 | Contradictions: totals (void); Shamsterdam beer names/ink (parking lot); reward type consumable vs passive (ruled: consumable); Beer Master requirement (moot, unified); Trinity unlock (interview, redesigned); price band vs Blockchain Bock 18 (Contradiction 3, ruled) | Consumable: HOME, `brewery_passport_book_item.md` § Shamsterdam row — verified open. Beer Master requirement: HOME, `brewerytour.md` § Continental Beer Master ("collect ALL 16 stamps") — verified open. Price band: RULED, Rulings Contradiction 3 — HOME in every affected beer's Price row (`beer_ye_olde_brew_lab_item.md`, `beer_moderato_pub_item.md`, `beer_dancing_stein_item.md`) — verified open |
+
+### A.5 — Quest docs vs item docs
+
+| # | Fact | Resolution |
+|---|---|---|
+| 1 | Brewmaster Selfie system (Debaucheryville props, album at hostel/café, NPC reactions, Charm bonuses, "Brewery Bro Safari" compilation, collect-all +1 Hungover resistance) | HOME: `brewerytourdebaucheryville.md` (4 per-brewery Enhanced Selfie Props + Selfie Compilation section), `brewery_passport_book_item.md` § Brewmaster Selfies — The Scrapbook — verified open, all sub-facts present |
+| 2 | Y2K Brewery Bingo (card → "Y2K Archaeologist" → +1 Nostalgia Resistance) | HOME: `brewerytourdebaucheryville.md` § Y2K Brewery Bingo Achievement — verified open. Card reduced from 8 to 7 items per the documented Notes removal of the dead "Friendster Account Payment" square (ICQ-mechanic casualty) — a ruled, documented reduction, not a silent drop |
+| 3 | "Peak Y2K Tourist" mega-achievement (MIDI Hamster Dance opener upgrade + "Nostalgically Self-Aware" +2 Charm) | HOME: `brewerytourdebaucheryville.md` § Cross-Feature Integration Bonuses — verified open |
+| 4 | Access rules (Three-Crown +1 Bravado; Tap Dat Vault midnight-only; 1-hour lockout on failed first entry; 6-8PM/midnight/3AM states) | HOME: `brewerytourdebaucheryville.md` (per-location Location lines + § Unlock Condition/First Entry Bravado Check/Time-Based Satirical Elements) — verified open |
+| 5 | ICQ vendor prices 40/30/100/500/420/69 Sovs | KILLED: `brewerytourdebaucheryville.md` Notes ("Removed: all four ICQ Integration popup blocks") — verified open, confirms removal |
+| 6 | Micro-dungeon framing (yeast monsters, tour guides) | HOME: `brewerytourdebaucheryville.md` § Gameplay; `brewerytour.md` § The Loop ("micro-dungeon") — verified open |
+| 7 | "Add beer to permanent item pool on first completion" | HOME: `brewerytourdebaucheryville.md` § On First Completion of Each Brewery — verified open |
+| 8 | Contradictions: counts (void); unlock rule (ruled hybrid); Legendary Hangover versions (ruled, city-file depth wins); slot order (void); opener sellers ICQ vs NPCs (both dead) | Unlock rule: HOME, `brewerytour.md` § Item Decomposition + `bottle_opener_keychain_item.md`. Hangover versions: HOME, each city's Legendary Hangover block. Opener sellers: KILLED, every `opener_*_item.md` "Earned:" line (earned only) |
+
+### Row count summary
+
+- **HOME**: 44 rows (fully resolved to an open, verified file/section)
+- **KILLED**: 13 rows (ruling reference verified)
+- **DEFERRED**: 6 rows (Shamsterdam out-of-scope ruling, design spec §Scope)
+- **PENDING (acknowledged, not silent)**: 1 row (Dancing Stein "any difficulty" qualifier — inside an explicit ⚠ AUTHOR TO DESIGN section)
+- **BLOCKED — no home, no kill ruling**: 8 rows/clusters (A.2 #3 Difficulty Progression table; A.2 #6 + A.3 #6 two city Legendary Hangover PNG icons; A.4 #7 generic stamp-slot PNGs; A.4 #8 five Achievement-Asset PNGs; A.4 #9 systemic 11-of-12 beer-item PNG gap, ~22 individual facts; A.4 #10 Implementation Notes section; A.3 #6 the 8 Debaucheryville beer PNGs, subset of #9)
+
+**Verdict: NOT ALL ROWS RESOLVE.** Per the task brief, retirement (banner-prepending, `git mv` to
+`design/legacy/`, Source Reconciliation flip, NEXT_WORK completion edit) is **NOT executed this
+pass**. The BLOCKED rows above are content-completion gaps in Tasks 5–7's item-file writing —
+every underlying fact is already sourced and cited in the Extraction Table above, so none of
+this requires a new author ruling; it requires a short follow-up pass adding the missing PNG
+Assets sections (using the citations already in this document) before the coverage matrix can
+show all-HOME/KILLED/DEFERRED and retirement can proceed.
