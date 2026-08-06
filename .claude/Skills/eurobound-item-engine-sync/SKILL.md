@@ -19,6 +19,14 @@ From the doc's Item Identity block, take:
 - Display Name
 - Item Type
 
+**Brewery items have no Item Identity block.** If the filename starts `beer_`,
+`opener_`, or `stamp_`, the doc uses the brewery templates' flat shape instead:
+
+- Display Name: the part of the H1 after the colon (e.g. `# Signature Beer: The
+  Fool's Gold` → `The Fool's Gold`)
+- Item ID: the `**Item ID**` bullet
+- Item Type: there is no such field. Do not invent one — see Step 2.
+
 If the doc still contains unfilled `[bracketed placeholders]`, stop. Report which
 ones, and send it back to the item author. Do not sync an unfinished doc.
 
@@ -29,9 +37,16 @@ ones, and send it back to the item author. Do not sync an unfinished doc.
 | Consumable — food, drink, drugs, anything used up | `game/assets/data/items/consumables.json` |
 | Equippable, swappable through a slot | `game/assets/data/items/equipment.json` |
 | Permanent, curse, or quest item | `game/assets/data/items/key_items.json` |
+| Hybrid (both cosmetic and mechanical aspects) | **ask the author** which target applies |
 
-If the type does not map cleanly to one of the three, stop and ask the author.
-Do not force a fit.
+If the type does not map cleanly to one of the three fixed rows, stop and ask the
+author. Do not force a fit.
+
+**Brewery items have no Item Type, so the target file cannot be derived from the
+table above.** Ask the author which target file a given beer, opener, or stamp
+belongs in before writing anything. This is a mechanics decision — which JSON an
+item's effects live in — and per `CLAUDE.md` that requires an author ruling. Do
+not decide the mapping yourself, and do not write a mapping into this skill.
 
 ## Step 3 — Check for a collision
 
@@ -70,10 +85,20 @@ simplification. Prices in SOVS only.
 
 ## Step 5 — Validate
 
-Run: `python tools/validate_data.py`
+Run: `python Tools/validate_data.py` (capital `T` — this is the tracked path;
+lowercase `tools/` only resolves on case-insensitive filesystems).
 
 Report the actual output, pass or fail. If it fails, fix the entry and re-run. Never
 report success without the validator's output in hand.
+
+**Known pre-existing bug:** `Tools/validate_data.py` points `ROOT` at
+`Assets/Data`, but the data actually lives at `game/assets/data/`. Because of this,
+the validator currently prints 7 `MISSING` lines every run and never reaches the
+item JSONs at all — this happens regardless of what you wrote. Those 7 lines are
+the pre-existing failure, not something your entry caused. Do not try to "fix the
+entry" in response to them; there is nothing in the entry to fix. Report them as
+the known bug they are and move on. Do not edit `Tools/validate_data.py` — that
+fix is awaiting its own author ruling.
 
 ## Refusal conditions
 

@@ -32,6 +32,9 @@ prevents it.
   Europe seeking exactly this. They may be clueless; they are never scared.
 - NPCs are never boring, corporate, or professional. Every name is funny.
 - No mascots. No pets, puppets, or companion objects. The party is three bros.
+- No real city or place names. Parody names only — Publandia, Debaucheryville,
+  Sinfonia, Shamsterdam.
+- All money is SOVS. Never euros, never the euro glyph, never koruna.
 - Tone reference is EarthBound: sincere delivery of absurd material. Sincerity is
   the joke. Do not resolve the irony.
 
@@ -63,6 +66,12 @@ do not re-ask it back to them.
 
 `permanent_item_template.md` is the default. The three brewery templates apply only
 to those specific classes.
+
+The permanent template's Item Type field is `[Permanent Cosmetic / Hybrid / Curse
+Item / Quest Item]` — it has no Consumable option. If the item being created is a
+consumable, that is a template-fit question, not something to paper over: per
+"Ask the author first," if no template fits, ask the author before inventing a
+format. Do not silently add a value to the enum.
 
 Read the chosen template before filling it in. Then:
 
@@ -113,7 +122,8 @@ Both of these stop the skill and go back to the author:
 - **Uniqueness.** Grep the repo for the display name and the item ID. `CLAUDE.md`
   requires every name to be unique across the whole game. A collision is a stop —
   not a quiet rename-and-continue.
-- **Currency.** Every price is SOVS. No euro glyph, no "euros", no "koruna".
+- **Currency.** Every price is SOVS. No euro glyph, no "euros", no "koruna", and no
+  bare number presented as a price with no unit at all or a wrong-cased one.
 
 ## Step 6 — Write the doc
 
@@ -127,7 +137,8 @@ Run the checks and report actual output. Do not assert success without it.
 
 - File exists at the routed path
 - No `[bracketed placeholder]` text survives
-- No euro glyph, "euro", or "koruna" anywhere in the file
+- No euro glyph, "euro", or "koruna" anywhere in the file; every price carries an
+  explicit `SOVS` unit — flag any bare number presented as a price
 - Display name and item ID are unique across the repo
 - Every template H2 header is present and intact
 - The instructional comment block is gone
