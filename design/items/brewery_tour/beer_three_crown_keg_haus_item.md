@@ -17,6 +17,10 @@
 ## Flavor Text
 > "300 years of brewing tradition. 0 years of health code compliance. Priorities." [source: design/items/brewery_passport_book_debaucheryville.md L142]
 
+## PNG Assets
+- `beer_three_crown_keg_haus_goblet.png` — 32x64 [source: design/items/brewery_passport_book_debaucheryville.md L287; renamed from the source's beer-name stem `iron_gut_tripel_goblet.png` to the full brewery-stem convention per Contradiction 5 ruling — "_goblet" suffix preserved verbatim from the source rather than normalized to "_bottle", since it matches the beer's own antique-goblet special quirk]
+- `beer_three_crown_keg_haus_icon.png` — 32x32 [source: design/items/brewery_passport_book_debaucheryville.md L288; renamed from the source's beer-name stem `iron_gut_tripel_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — Three-Crown Keg Haus (ancient recipe, questionable equipment) [source: design/items/brewery_passport_book_debaucheryville.md L143].
 - Deep field carried forward per Task 5 brief: the 2-Sov goblet deposit is the beer's defining special quirk (per the Special row above) — return the antique goblet for a 2-Sovs refund.

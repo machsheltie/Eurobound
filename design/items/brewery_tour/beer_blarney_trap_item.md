@@ -17,5 +17,9 @@
 ## Flavor Text
 > "You surrendered to Blarney Trap pricing. It's delicious." [source: design/items/brewery_passport_book.md L206]
 
+## PNG Assets
+- `beer_blarney_trap_bottle.png` — 32x64 [source: design/items/brewery_passport_book.md L357; renamed from the source's beer-name stem `sweet_surrender_bottle.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `beer_blarney_trap_icon.png` — 32x32 [source: design/items/brewery_passport_book.md L358; renamed from the source's beer-name stem `sweet_surrender_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — The Stoutworks Brewery, as a contract brew for The Blarney Trap [source: design/worlds/publandia/the_blarney_trap.md L445]. This resolves Gap #4 with existing venue-doc canon rather than drafted content. Gap #5 (special quirk, flagged in the Special row above) still had no source anywhere in the seven extraction sources or the venue docs.

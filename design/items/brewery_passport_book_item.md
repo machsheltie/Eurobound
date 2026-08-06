@@ -214,6 +214,32 @@ The two existing Shamsterdam establishment names in the legacy docs ("Brouwerij 
 
 ---
 
+## Implementation Notes
+
+### Technical Requirements
+- Menu system integration (new tab)
+- Stamp collection tracking (per-location flags)
+- Beer unlock system (inventory additions)
+- Achievement tracking (city and continental)
+- Selfie gallery (image collection)
+
+### Save Data
+- Stamps saved to profile (persist across saves)
+- Beer unlocks tied to stamps
+- Selfie collection separate tracking
+- Achievement progress persistent
+
+### UI/UX Priorities
+1. Satisfying stamp animation
+2. Clear progress indicators
+3. Easy navigation between cities
+4. Quick access to unlocked beers
+5. Celebratory feedback on completions
+
+[source: design/items/brewery_passport_book.md L310-330]
+
+---
+
 ## PNG Asset Requirements
 
 ### Book Assets
@@ -226,6 +252,21 @@ The two existing Shamsterdam establishment names in the legacy docs ("Brouwerij 
 - `bookmark_hop.png` — 32x64 — Hop leaf bookmark
 
 [source: design/items/brewery_passport_book.md L336-344 — `passport_page_shamsterdam.png` omitted here; Shamsterdam page art is pending author minting and out of scope this round]
+
+### Stamp Assets (Generic)
+- `stamp_slot_empty.png` — 64x64 — Placeholder (unearned slot)
+- `stamp_slot_locked.png` — 64x64 — Undiscovered (matches the "[LOCKED]" state in the Book Open View mockup above)
+
+[source: design/items/brewery_passport_book.md L351-352 — per-brewery stamp faces and their animation sheets are specified in each collectible's own item doc under `design/items/brewery_tour/`, not duplicated here; this generic pair is the only Stamp Assets content that belongs at the container level]
+
+### Achievement Assets
+- `legendary_hangover_publandia.png` — 48x48
+- `legendary_hangover_debaucheryville.png` — 48x48
+- `legendary_hangover_sinfonia.png` — 48x48
+- `continental_beer_master_badge.png` — 96x96
+- `photogenic_drinker_badge.png` — 64x64
+
+[source: design/items/brewery_passport_book.md L365-371 — `legendary_hangover_shamsterdam.png` (48x48) omitted here; Shamsterdam's hangover icon is pending author minting and out of scope this round, per the same reservation as the Book Assets section above]
 
 ### UI Assets
 - `passport_tab_icon.png` — 32x32 — Menu icon

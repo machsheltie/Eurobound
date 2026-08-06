@@ -17,5 +17,13 @@
 ## Flavor Text
 > "[flavor text]"
 
+## PNG Assets
+- `beer_[brewery_slug]_bottle.png` — [dimensions]
+- `beer_[brewery_slug]_icon.png` — [dimensions]
+
 ## Notes
 - [strategy, cross-references, consumption animation — omit section if empty]
+
+---
+PNG Assets section added 2026-08-05 during coverage verification (plan-required; omitted from
+the originally approved skeleton — flagged for author awareness).

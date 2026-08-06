@@ -17,6 +17,10 @@
 ## Flavor Text
 > "It's not a bug, it's a feature. The disorientation means it's working." — Dr. Vaněk [source: design/items/brewery_passport_book_debaucheryville.md L120]
 
+## PNG Assets
+- `beer_absinthium_taproom_bottle.png` — 32x64 [source: design/items/brewery_passport_book_debaucheryville.md L283; renamed from the source's beer-name stem `absinthe_lager_bottle.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `beer_absinthium_taproom_icon.png` — 32x32 [source: design/items/brewery_passport_book_debaucheryville.md L284; renamed from the source's beer-name stem `absinthe_lager_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — The Absinthium Taproom (in-house) [source: design/items/brewery_passport_book_debaucheryville.md L121].
 - Deep field carried forward per Task 5 brief: Absinthe Lager is the only Brewery Tour signature beer that debuffs the drinker by design — the 30% "Green Fairy Confusion" effect targets the USER, not an enemy, and the Risk row frames the disorientation as the intended experience, not an accident.

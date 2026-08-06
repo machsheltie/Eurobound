@@ -17,6 +17,10 @@
 ## Flavor Text
 > "Brewed with hops that can trace their lineage back seven generations. The yeast is merely five generations, but we don't discuss that." [source: design/items/brewery_passport_book_sinfonia.md L191]
 
+## PNG Assets
+- `beer_crown_and_cask_bottle.png` — 32x64 [source: design/items/brewery_passport_book_sinfonia.md L324; renamed from the source's beer-name stem `heir_apparent_ale_bottle.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `beer_crown_and_cask_icon.png` — 32x32 [source: design/items/brewery_passport_book_sinfonia.md L325; renamed from the source's beer-name stem `heir_apparent_ale_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — Crown & Cask, family recipe, "royal" process [source: design/items/brewery_passport_book_sinfonia.md L192].
 - Deep field carried forward per Task 6 brief: the crown-shaped glass is a keepsake, not a loan — the drinker keeps the glass and the price reflects it, +3 Sovs over the base pour (Special row above).

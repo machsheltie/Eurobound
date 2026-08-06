@@ -17,6 +17,10 @@
 ## Flavor Text
 > "Aged in barrels from the old opera house. Some say you can taste the ambition. Others say that's just the hops." [source: design/items/brewery_passport_book_sinfonia.md L180]
 
+## PNG Assets
+- `beer_standing_ovation_bottle.png` — 32x64 [source: design/items/brewery_passport_book_sinfonia.md L322; renamed from the source's beer-name stem `curtain_call_copper_bottle.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `beer_standing_ovation_icon.png` — 32x32 [source: design/items/brewery_passport_book_sinfonia.md L323; renamed from the source's beer-name stem `curtain_call_copper_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — The Standing Ovation, on-site, with ceremony [source: design/items/brewery_passport_book_sinfonia.md L181].
 - Deep field carried forward per Task 6 brief: Curtain Call Copper always arrives with a small bow, no exceptions (Special row above) — the presentation ceremony is the point, not a random flourish.

@@ -17,6 +17,10 @@
 ## Flavor Text
 > "Not too hoppy, not too malty, not too strong, not too weak... It's perfect." — Herr Takt [source: design/items/brewery_passport_book_sinfonia.md L169]
 
+## PNG Assets
+- `beer_moderato_pub_bottle.png` — 32x64 [source: design/items/brewery_passport_book_sinfonia.md L320; renamed from the source's beer-name stem `tempo_tantrum_bottle.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `beer_moderato_pub_icon.png` — 32x32 [source: design/items/brewery_passport_book_sinfonia.md L321; renamed from the source's beer-name stem `tempo_tantrum_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — The Moderato Pub, in-house, recipe unchanged since 1848 [source: design/items/brewery_passport_book_sinfonia.md L170].
 - Deep field carried forward per Task 6 brief: the recipe hasn't changed since 1848 — the beer's "perfectly balanced" style and its status as the only beer every Sinfonia tempo faction grudgingly accepts (Special row above) both trace back to that unbroken recipe.

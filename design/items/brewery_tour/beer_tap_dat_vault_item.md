@@ -17,6 +17,10 @@
 ## Flavor Text
 > "We don't serve beer — we inhale it. Your lungs are just another glass." [source: design/items/brewery_passport_book_debaucheryville.md L131]
 
+## PNG Assets
+- `beer_tap_dat_vault_bottle.png` — 32x64 [source: design/items/brewery_passport_book_debaucheryville.md L285; renamed from the source's beer-name stem `vape_stout_bottle.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `beer_tap_dat_vault_icon.png` — 32x32 [source: design/items/brewery_passport_book_debaucheryville.md L286; renamed from the source's beer-name stem `vape_stout_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — The Tap Dat Vault (vapor-extraction process) [source: design/items/brewery_passport_book_debaucheryville.md L132].
 - Deep field carried forward per Task 5 brief: Vape Stout is not poured, it's inhaled — consumption plays the dedicated vapor-cloud animation instead of a standard drink animation, per the Special row above.

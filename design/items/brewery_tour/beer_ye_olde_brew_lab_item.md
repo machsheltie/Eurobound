@@ -17,6 +17,10 @@
 ## Flavor Text
 > "Brewed by algorithms. Verified by blockchain. Tasted by... actually, the AI doesn't taste. That's YOUR job." [source: design/items/brewery_passport_book_debaucheryville.md L153]
 
+## PNG Assets
+- `beer_ye_olde_brew_lab_bottle.png` — 32x64 [source: design/items/brewery_passport_book_debaucheryville.md L289; renamed from the source's beer-name stem `blockchain_bock_bottle.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `beer_ye_olde_brew_lab_icon.png` — 32x32 [source: design/items/brewery_passport_book_debaucheryville.md L290; renamed from the source's beer-name stem `blockchain_bock_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — Ye Olde B.R.E.W. Lab (random number generator) [source: design/items/brewery_passport_book_debaucheryville.md L154].
 - Deep fields carried forward per Task 5 brief: the menu price is a live re-roll — it re-fluctuates ±5 Sovs every time the menu is checked (Special row above), and the +10 Sovs "crypto fluctuation bonus" carried in Effects can itself land negative if the fake market "crashes" (Risk row above). Both the volatility and the crash risk are the joke, not a bug.

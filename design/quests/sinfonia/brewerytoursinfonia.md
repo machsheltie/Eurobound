@@ -31,6 +31,25 @@ Full stat blocks, PNG specs, and Notes live in each item's own file under
 Waltz Weizen 7) are RULED — the band demotes to a soft guideline, no renumbering [source:
 extraction Rulings, Contradiction 3].
 
+### Brewery Tour Difficulty Progression (cross-city)
+
+| City | Challenge Type | Complexity | Failure Consequence |
+|------|---------------|------------|---------------------|
+| Publandia | Social/Physical | Easy-Medium | Retry available, mild penalties |
+| Debaucheryville | Puzzle/Combat | Medium-Hard | Boss fights required |
+| Sinfonia | Performance/Social | Medium | Retry with purchase, social penalties |
+| Shamsterdam | TBD | TBD | TBD |
+
+[source: design/items/brewery_passport_book_sinfonia.md L369-374 — this is a cross-city
+summary table, homed here because the Sinfonia passport doc is its deepest/only source
+(Appendix A.2); transcribed verbatim, all four rows. ⚠ AUTHOR-REVIEW: "Retry with purchase"
+(Sinfonia row) and "Retry available" (Publandia row) predate the earned-not-bought opener
+ruling and were never reconciled against it — this table describes retrying a *challenge*,
+not buying an opener or stamp, so it is transcribed as-is rather than assumed dead; flagging
+for author confirmation that challenge-retry-for-Sovs is still live alongside the
+earned-opener model. Shamsterdam row retained as TBD per its own out-of-scope status this
+round.]
+
 ---
 
 ## The Moderato Pub

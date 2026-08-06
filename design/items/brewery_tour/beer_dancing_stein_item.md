@@ -17,6 +17,10 @@
 ## Flavor Text
 > "Brewed in three stages, fermented in three tanks, served in three-quarter time. The foam always swirls clockwise. We don't know why." [source: design/items/brewery_passport_book_sinfonia.md L202]
 
+## PNG Assets
+- `beer_dancing_stein_bottle.png` — 32x64 [source: design/items/brewery_passport_book_sinfonia.md L326; renamed from the source's beer-name stem `waltz_weizen_bottle.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `beer_dancing_stein_icon.png` — 32x32 [source: design/items/brewery_passport_book_sinfonia.md L327; renamed from the source's beer-name stem `waltz_weizen_icon.png` to the full brewery-stem convention per Contradiction 5 ruling]
+
 ## Notes
 - Brewed by — The Spinning Brewery, an off-site partner that delivers fresh daily [source: design/items/brewery_passport_book_sinfonia.md L203]; this is the only Sinfonia signature beer NOT brewed in-house at its home venue.
 - Deep field carried forward per Task 6 brief: the foam swirls clockwise every time, for reasons nobody at The Spinning Brewery can explain (Flavor Text above) — the mystery is the gag, not a bug.
