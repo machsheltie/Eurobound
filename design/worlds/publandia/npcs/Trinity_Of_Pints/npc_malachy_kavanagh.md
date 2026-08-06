@@ -307,8 +307,8 @@ Publandian (Irish-parody), rounded and slow — every sentence arrives pre-warme
   `design/items/brewery_tour/stamp_trinity_of_pints_item.md`; on rejection the author
   dictates replacements
 - Name "Malachy Kavanagh" is a drafted mint. NAMING NOTE (review round 2026-08-06): the
-  draft was originally "Malachy Kavanagh" — the round-1 review caught that "Old Malachy" is an
-  established Blarney Trap regular (same city) and a second Malachy appears in
+  draft was originally "Fergal Kavanagh" — the round-1 review caught that "Old Fergal" is an
+  established Blarney Trap regular (same city) and a second Fergal appears in
   couchsurfingchroniclespublandia.md, so the first name was re-minted. "Malachy" and
   "Kavanagh" verified unique repo-wide ("Cormac" and "Donal" were also checked and are taken)
 - The Stoutworks contract-brew fact is existing venue-doc canon (`trinity_of_pints.md` L359)
