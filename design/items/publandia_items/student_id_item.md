@@ -71,7 +71,7 @@ continent-wide. You know what this card says to the world? It says we BELONG in 
 | Days Worn | Visual State |
 |-----------|--------------|
 | Days 1-3 | Pristine gloss; the bros angle them at strangers so the light catches |
-| Days 4-7 | Corners peeling; Bradley's has a bite mark he will not explain |
+| Days 4-7 | Corners peeling; Bradley's has a bite mark with a chip of laminate missing — he chews it during stressful conversations, and the missing chip means he has, at some point, swallowed part of his own credentials |
 | Days 8+ | Inkjet ink migrating inside the pouch — the photos are becoming ghosts, and the ghosts are still being presented to bouncers with total confidence |
 
 ---
@@ -126,7 +126,7 @@ that a bro produces it unprompted.
 | Trinity staff | "Ah, a scholar. The bar is that way, professor." | "Faculty respect. They can TELL we're serious academics." |
 | Publandia barkeep | Doesn't look up: "That's a beer mat with a face on it." | "Jealous. Publicly educated." |
 | Sinfonia box office | Holds it to the light. Turns it over. Reads the back, which is blank. "This is a pub receipt." | "She checked the WATERMARK, boys. That's how official this is." |
-| Debaucheryville bouncer | Scans it with the UV wand. The wand finds nothing, because there is nothing. | *doesn't hear the sigh* |
+| Debaucheryville bouncer | Runs the UV wand. Nothing. "Three hundred fakes I've confiscated off tourists, and this is the first one claiming its owner is YOUNGER. Who fakes DOWN?" | "He's never seen credentials this advanced." |
 | Hostel clerk | "Student rate requires a student. From a school." | "Semantics. The Euromemeian system is different." |
 
 ### Callback Dialogue Throughout Game
@@ -169,8 +169,8 @@ that a bro produces it unprompted.
 > ⚠ AUTHOR-REVIEW: all three beats drafted.
 
 ### The Enrollment
-*The Registrar slides three blank forms across the desk. All three bros, independently and without conferring, write "22" in the age field.*
-> **Registrar**: "Three for tuition. Smile for the webcam. Or don't. It captures at two frames a second either way."
+*The Registrar slides three blank forms across the desk. All three bros, independently and without conferring, write "22" in the age field. The enrollment webcam's lens carries a smudge that has appeared, identically, in every enrollee photo since enrollment number one — it has been there so long it has texture, and nobody on staff will touch it because at this point it is biological and possibly load-bearing.*
+> **Registrar**: "Three for tuition. Smile for the webcam. Or don't. It captures at two frames a second either way. The smudge is part of the crest now."
 
 *The laminator hums. Lord Pilsner receives his card the way other men receive knighthoods.*
 > **Lord Pilsner**: "Gentlemen. As of this moment, we are ENROLLED. Do you understand what this means?"

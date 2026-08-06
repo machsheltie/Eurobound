@@ -156,6 +156,17 @@ analyst reports from this session; contradictions list included.
 - **QR ARG pages** (Round 5) are framed as the real internet → exempt from ban-all.
 - **SUPERSEDED 2026-08-01:** the euro display-glyph rule is dead by author ruling. The whole game is Sovs; **neither euros nor koruna exist**. Repo-wide retrofit already executed. Canon: `_sorting/Design/Economy/currency.md`.
 
+## Standing ruling 2026-08-06: key_items.json schema (author)
+
+First entry shape for `game/assets/data/items/key_items.json`, author-approved — the standing
+schema for all permanent/curse/quest items from now on (do not relitigate): bare snake_case
+key (consumables convention), fields `display_name`, `item_class` ("permanent"|"curse"|
+"quest"), optional `stat_modifiers` object, optional `per_bro_variants` bool, `source`,
+`description` (must carry the item's voice, never flattened). First entry: `student_id`
+(Trinity Student ID — design/items/publandia_items/student_id_item.md; its creative fields
+remain ⚠-flagged for the batch review; critic-pass sharpenings applied by author order).
+GUT baseline note: suite grew 27→36 tests (engine window); all 36 pass.
+
 ## Small ledger (mechanical, any future round)
 
 - Shamsterdam untracked city-file pair (byte-identical flat + folder copies): reorg window

@@ -1,4 +1,16 @@
 {
   "schema_version": "1.0",
-  "key_items": {}
+  "key_items": {
+    "student_id": {
+      "display_name": "Trinity Student ID",
+      "item_class": "permanent",
+      "stat_modifiers": {
+        "bravado": 1,
+        "intelligence": -1
+      },
+      "per_bro_variants": true,
+      "source": "trinity_of_pints_enrollment",
+      "description": "A laminated pub receipt cosplaying as academic credentials. Honored as identification exactly nowhere. All three say 22."
+    }
+  }
 }
