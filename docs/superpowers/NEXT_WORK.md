@@ -142,9 +142,12 @@ with SUPERSEDED banners (stray Publandia copy renamed
 
 **Brewery follow-ons open:** (1) ⚠ AUTHOR-REVIEW batches awaiting the author: Publandia
 drafted fields (Gaps 1–20 flags inside the Publandia item files) + the six keychain parody
-mints; (2) referee + Trinity brewmaster NPC drafts (Rulings addendum 5 — Claude to draft as
-NPC-template profiles, ⚠ AUTHOR-REVIEW; Trinity stamp animation/speech Gaps #10/#12 route
-through the brewmaster draft); (3) Shamsterdam mini-round blocked on the author minting its
+mints; (2) referee + Trinity brewmaster NPC drafts DRAFTED 2026-08-06, awaiting author review
+(Rulings addendum 5): `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_oisin_fitzpatrick.md`
+(Referee Oisín Fitzpatrick) + `npc_fergal_kavanagh.md` (Brewmaster Fergal Kavanagh — carries
+the Gap #10/#12 stamp animation/speech drafts; on approval they backfill
+`stamp_trinity_of_pints_item.md`'s ⚠ PENDING markers); names are drafted mints, checked
+unique; (3) Shamsterdam mini-round blocked on the author minting its
 4 brewery names (then 12 item files + city quest file from the same templates; Canal Courage
 PNG naming fix on write); (4) undesigned challenges: Publandia ×3 (Blarney Trap, Stoutworks,
 Shenanigans), Sinfonia ×4, marked ⚠ AUTHOR TO DESIGN in the city files; (5) the deb file's
