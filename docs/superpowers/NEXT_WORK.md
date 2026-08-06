@@ -295,3 +295,59 @@ session archive after its silent ledger-write failure):
 the Mystery Meat Cart menu is superseded; the quest docs' Sovs pricing (5/6/7/9/12) is canon
 and the data record now uses `{"sovs": N}`. Do not relitigate. (Scope: this ruling covered
 the cart menu flag; kebab_coins as the arcade/shadow-exchange alt-currency was not touched.)
+
+---
+
+## DEFERRED 2026-08-06 — quest-doc debt surfaced while designing the quest-creation skill
+
+Found while auditing `design/Quests/` for the `eurobound-quest-creation` skill
+(spec: `docs/superpowers/specs/2026-08-06-quest-creation-skill-design.md`). None of this was
+touched — the skill routes only what it creates. Author to pick these up.
+
+**1. Five stub general quests — latent instanced quests, never written.** Each is 2-4 lines
+and describes per-city content it does not contain:
+
+| File | Lines | The tell |
+|---|---|---|
+| `vinylhunt.md` | 3 | "hidden in each world's seedier corners" |
+| `streetperformertrials.md` | 4 | "Scattered across all cities" |
+| `taxidriverconfessionals.md` | 3 | — |
+| `selfiewithlocallegend.md` | 3 | — |
+| `undergroundkaraokeleague.md` | 3 | — |
+
+Under the skill's classification these are `GENERAL-INSTANCED`: they need a master spec plus
+per-city instances. `wifiroulettegame.md` (2 lines) is the one genuine systemic quest of the
+twelve — "at any free Wi-Fi hotspot" — and needs only a single file.
+
+**2. `greatdonerdebate.md` is undecomposed.** 656 lines with `## BASE GAME LOCATIONS` and
+`## SHAMSTERDAM DONER LOCATIONS` inline in one file. Same shape the Brewery Tour
+decomposition fixed. Wants a master spec plus city instances.
+
+**3. `mobile_optimization` blocks — 28 files, two different problems.** Dead-branch
+mobile-first residue (`claude/eurobound-jrpg-prd-uv5iog`) on a Steam/desktop target.
+
+- **In the two quest JSONs: misnamed, not obsolete.** Contents are `screenshot_moments`,
+  `dialogue_pacing`, `cutscene_skippable`, `comedy_timing: "silence_after_is_the_joke"` —
+  all needed on desktop, and the comedy timing is load-bearing. Rename to `presentation`;
+  drop nothing. The new sync skill already writes `presentation` for new quests.
+- **In ~26 `design/worlds/*/core/` and `*/sprite_mapping/` files: real debris.** Spot-checked
+  three — `cafe_sachertorte_core.json` and `voetgangerstunnel_core.json` carry `lod_level`,
+  `max_particles`, `draw_calls`, `memory_mb`; `cloverleaf_sprite_mapping.json` carries
+  `"compression": "PVRTC_iOS_ETC2_Android"`, an iOS texture format. These are mobile
+  performance budgets and want re-budgeting for desktop, not renaming. Three of ~26 inspected;
+  the rest assumed similar, unverified.
+
+**4. Two quest JSONs sit design-side.** `vip_wristbands.json` and `astronomical_cockup.json`
+are colocated in `design/Quests/debaucheryville/` next to their `.md`. Ruled 2026-08-06: the
+engine read path is `game/assets/data/quests/` (every populated sibling under
+`game/assets/data/` is engine-side; only `economies/` and `quests/` are empty). Migrate them,
+applying the canonical schema in the spec (`items_acquired` sub-keyed `standard`/`path_a`/
+`path_b`; `localization`; `presentation`).
+
+**5. `data/quests/flags.json` does not exist.** `sidequest_template.md` requires every quest
+flag be registered there. Needs an author schema ruling — the sync skill will not invent one.
+Until then quest flags live only in the design docs' flag tables.
+
+**6. `Tools/validate_data.py` has no quest handling.** It will not validate quest JSON at all.
+Open question: should it, and to what depth?
+
