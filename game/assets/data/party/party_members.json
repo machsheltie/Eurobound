@@ -6,7 +6,7 @@
       "level": 1,
       "xp": 0,
       "max_hp": 45,
-      "max_sp": 12,
+      "max_bravado": 12,
       "offense": 8,
       "defense": 6,
       "speed": 5,

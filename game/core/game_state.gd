@@ -30,8 +30,8 @@ func _add_party_member(id: String, repo) -> void:
 		"xp": int(data.get("xp", 0)),
 		"hp": int(data.get("max_hp", 1)),
 		"max_hp": int(data.get("max_hp", 1)),
-		"sp": int(data.get("max_sp", 0)),
-		"max_sp": int(data.get("max_sp", 0)),
+		"bravado": int(data.get("max_bravado", 0)),
+		"max_bravado": int(data.get("max_bravado", 0)),
 		"offense": int(data.get("offense", 1)),
 		"defense": int(data.get("defense", 0)),
 		"speed": int(data.get("speed", 1)),
@@ -53,7 +53,7 @@ func use_item(id: String, repo) -> bool:
 		return false
 	var member: Dictionary = party[0]
 	member["hp"] = mini(int(member["max_hp"]), int(member["hp"]) + int(item.get("heal_hp", 0)))
-	member["sp"] = mini(int(member["max_sp"]), int(member["sp"]) + int(item.get("heal_sp", 0)))
+	member["bravado"] = mini(int(member["max_bravado"]), int(member["bravado"]) + int(item.get("heal_bravado", 0)))
 	inventory[id] = int(inventory[id]) - 1
 	if inventory[id] <= 0:
 		inventory.erase(id)

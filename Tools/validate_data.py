@@ -11,7 +11,7 @@ REQUIRED = {
         "enemies.feral_segway_tourist.max_hp", "enemies.feral_segway_tourist.xp_reward"],
     "items/consumables.json": ["consumables", "consumables.lukewarm_kebab"],
     "skills/party_abilities.json": ["abilities", "abilities.roast_line",
-        "abilities.roast_line.sp_cost"],
+        "abilities.roast_line.bravado_cost"],
     "npcs/dialogue_trees/debaucheryville_dialogue.json": ["dialogue_trees",
         "dialogue_trees.vlad_validator", "dialogue_trees.vlad_validator.default_greeting"],
     "npcs/base_profiles/debaucheryville_core.json": ["npcs"],

@@ -13,7 +13,7 @@ func test_new_game_builds_party_from_data() -> void:
 	assert_eq(state.party.size(), 1)
 	assert_eq(state.party[0]["id"], "lord_pilsner")
 	assert_eq(int(state.party[0]["hp"]), 45)
-	assert_eq(int(state.party[0]["sp"]), 12)
+	assert_eq(int(state.party[0]["bravado"]), 12)
 
 func test_add_and_use_item() -> void:
 	state.add_item("lukewarm_kebab")

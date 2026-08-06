@@ -81,9 +81,9 @@ func _add_action(label: String, handler: Callable) -> void:
 	_menu.add_child(button)
 
 func _refresh_stats() -> void:
-	_stats_label.text = "%s  HP %d/%d  SP %d/%d" % [
+	_stats_label.text = "%s  HP %d/%d  Bravado %d/%d" % [
 		_member["display_name"], _member["hp"], _member["max_hp"],
-		_member["sp"], _member["max_sp"]]
+		_member["bravado"], _member["max_bravado"]]
 
 func _log(text: String) -> void:
 	_log_label.text = text
@@ -99,11 +99,11 @@ func _on_bash() -> void:
 
 func _on_roast() -> void:
 	var ability: Dictionary = DataRepo.get_ability("roast_line")
-	var cost := int(ability.get("sp_cost", 0))
-	if int(_member["sp"]) < cost:
-		_log("Not enough SP!")
+	var cost := int(ability.get("bravado_cost", 0))
+	if int(_member["bravado"]) < cost:
+		_log("Not enough Bravado!")
 		return
-	_member["sp"] = int(_member["sp"]) - cost
+	_member["bravado"] = int(_member["bravado"]) - cost
 	_player_attack(float(ability.get("power_multiplier", 1.0)),
 		String(ability.get("battle_text", "")).format({"user": _member["display_name"]}))
 

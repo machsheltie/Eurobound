@@ -22,7 +22,7 @@ func test_item_lookup() -> void:
 
 func test_ability_lookup() -> void:
 	var a: Dictionary = repo.get_ability("roast_line")
-	assert_eq(int(a.get("sp_cost")), 4)
+	assert_eq(int(a.get("bravado_cost")), 4)
 
 func test_dialogue_tree_vlad() -> void:
 	var t: Dictionary = repo.get_dialogue_tree("vlad_validator")

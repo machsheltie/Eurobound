@@ -4,19 +4,19 @@
     "lukewarm_kebab": {
       "display_name": "Lukewarm Kebab",
       "heal_hp": 20,
-      "heal_sp": 0,
+      "heal_bravado": 0,
       "description": "Street meat of dubious provenance. Restores 20 HP."
     },
     "absinthe_shot": {
       "display_name": "Absinthe Shot",
       "heal_hp": 0,
-      "heal_sp": 8,
+      "heal_bravado": 8,
       "description": "Tastes like licorice and bad decisions. Restores 8 SP."
     },
     "questionable_goulash": {
       "display_name": "Questionable Goulash",
       "heal_hp": 40,
-      "heal_sp": 0,
+      "heal_bravado": 0,
       "description": "Simmering since the Velvet Revolution. Restores 40 HP."
     }
   }
