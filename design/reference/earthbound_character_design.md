@@ -38,7 +38,7 @@ Look at the existing roster: **Miss Morphine · QUEEN Riviéra Renata · Vape Wi
 
 Several have no ordinary name at all. They are **epithets, titles, self-appointed ranks, relationship labels, behaviours-as-names.** One is defined entirely by who she used to date. One is a rank in capitals with an accent on it.
 
-**Invent the persona first, then check the name is unused** — never the reverse. The one-first-name-one-character registry (`Design/design_optionality_principle.md` and the name-dedup canon) must never push authoring toward bland names.
+**Invent the persona first, then check the name is unused** — never the reverse. The one-first-name-one-character registry (`design/style_guides/design_optionality_principle.md` and the name-dedup canon) must never push authoring toward bland names.
 
 ---
 
@@ -65,6 +65,8 @@ If no, rework it. Not polish it — rework the premise.
 
 ## Scope
 
-This governs **every** character in the game — couchsurf hosts, vendors, quest-givers, bosses, and named ambient NPCs — plus locations, items and quests. The satire register and MA rating are defined separately in `Design/Character Profiles/bros_core_principle.md` and `Templates/location_validation_template.md`; this document defines the **weirdness floor**.
+This governs **every** character in the game — couchsurf hosts, vendors, quest-givers, bosses, and named ambient NPCs — plus locations, items and quests. The satire register and MA rating are defined separately in `design/characters/bros_core_principle.md` and `design/templates/location_validation_template.md`; this document defines the **weirdness floor**.
 
-**Cross-references:** `Templates/quest.md` → "What Makes It EarthBound" (previously an empty header; this file is its definition), `Templates/NPC_Profile_Template.md`, `Design/Character Profiles/bros_core_principle.md`.
+**Cross-references:** `design/templates/sidequest_template.md` → "What Makes It EarthBound" (this file is its definition), `design/templates/NPC_Profile_Template.md`, `design/characters/bros_core_principle.md`.
+
+*(Historical note: the definition originally filled an empty `Templates/quest.md` header. That template is retired; `sidequest_template.md` is now the only quest template.)*

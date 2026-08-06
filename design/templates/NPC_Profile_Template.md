@@ -2,6 +2,8 @@
 
 *"[SIGNATURE QUOTE OR CATCHPHRASE]"*
 
+> **⚠️ READ FIRST: `design/reference/earthbound_character_design.md`.** There are no average characters in this game. One weird premise per character, committed absolutely, played straight, never explained. Names are part of the joke — invent the persona first, then check the name is unused. If this NPC reads as "a plausible person with an interesting job," rework the premise before filling anything in.
+
 ## 📋 NPC Identity
 - **NPC ID**: `[city]_npc_[npc_name_snake_case]_01`
 - **Display Name**: [What players see]
@@ -251,6 +253,9 @@
 
 | Requirement | Status |
 |-------------|--------|
+| **Passes the EarthBound test** — could sit in EarthBound's cast; NOT "a plausible person with an interesting job" | ⬜ |
+| **One weird premise, committed absolutely** — premise IS the character, not a quirk on a normal person | ⬜ |
+| **Nothing explains itself** — no origin story, no lore justification, no wink | ⬜ |
 | Full appearance documented | ⬜ |
 | Personality & motivation clear | ⬜ |
 | Complete dialogue trees | ⬜ |
