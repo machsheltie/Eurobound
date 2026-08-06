@@ -91,14 +91,8 @@ lowercase `tools/` only resolves on case-insensitive filesystems).
 Report the actual output, pass or fail. If it fails, fix the entry and re-run. Never
 report success without the validator's output in hand.
 
-**Known pre-existing bug:** `Tools/validate_data.py` points `ROOT` at
-`Assets/Data`, but the data actually lives at `game/assets/data/`. Because of this,
-the validator currently prints 7 `MISSING` lines every run and never reaches the
-item JSONs at all — this happens regardless of what you wrote. Those 7 lines are
-the pre-existing failure, not something your entry caused. Do not try to "fix the
-entry" in response to them; there is nothing in the entry to fix. Report them as
-the known bug they are and move on. Do not edit `Tools/validate_data.py` — that
-fix is awaiting its own author ruling.
+A clean run prints seven `OK` lines and exits 0. Anything else is a real failure and
+is yours to resolve — do not wave it through.
 
 ## Refusal conditions
 
@@ -106,5 +100,6 @@ Stop and report rather than proceeding when:
 
 - The item ID already exists in any of the three JSON files
 - The source doc still has unfilled `[bracketed placeholders]`
-- The Item Type does not map cleanly to one of the three targets
+- The Item Type does not map cleanly to a target, or is a case the tables above
+  send to the author (Hybrid, or any brewery item)
 - Writing the entry would require inventing a schema that has not been ruled on

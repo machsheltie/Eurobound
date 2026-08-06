@@ -2,7 +2,7 @@
 import json, sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent / "Assets" / "Data"
+ROOT = Path(__file__).resolve().parent.parent / "game" / "assets" / "data"
 
 REQUIRED = {
     "party/party_members.json": ["party_members", "party_members.lord_pilsner",
