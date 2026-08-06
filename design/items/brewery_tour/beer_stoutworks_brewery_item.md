@@ -18,4 +18,4 @@
 > "Aged during the incident. Tastes like existential crisis." [source: design/items/brewery_passport_book.md L215]
 
 ## Notes
-- ⚠ AUTHOR-REVIEW: Brewed by — The Stoutworks Brewery itself, in-house flagship release (drafted from `design/worlds/publandia/the_stoutworks_brewery.md`, which names Vat Master's Reserve as "their flagship limited release"). Gap #9 (brewed by) had no source anywhere in the seven extraction sources.
+- Brewed by — The Stoutworks Brewery itself, in-house flagship release [source: design/worlds/publandia/the_stoutworks_brewery.md L407]. This resolves Gap #9 with existing venue-doc canon rather than drafted content.

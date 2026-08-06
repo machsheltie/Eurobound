@@ -13,8 +13,8 @@
 - **Special Feature**: tassel actually moves/dangles [source: design/items/brewery_tour_bottle_opener_system.md L80]
 
 ## PNG Assets
-- `bottle_opener_trinity.png` — 48x48 [source: design/items/brewery_passport_book_complete.md L456]
-- `bottle_opener_trinity_tassel.png` — 24x24 [source: design/items/brewery_passport_book_complete.md L457]
+- `bottle_opener_trinity_of_pints.png` — 48x48 [source: design/items/brewery_passport_book_complete.md L456; renamed from the source's shortened `bottle_opener_trinity.png` to the full brewery-stem convention per Contradiction 5 ruling]
+- `bottle_opener_trinity_of_pints_tassel.png` — 24x24 [source: design/items/brewery_passport_book_complete.md L457; renamed from the source's shortened `bottle_opener_trinity_tassel.png` to the full brewery-stem convention per Contradiction 5 ruling]
 
 ## Notes
 - Salvaged ambient greeting (Ruling: salvage 27) — Dean Cathal's gatekeeper line, stripped of every opener-check framing: "A fellow traveler on the Continental Trail. Welcome to the Academy." [source: design/items/brewery_tour_bottle_opener_system.md L83] The gating ("Ah, you carry Seamus's opener.") is dead; the greeting survives as ambient/arrival flavor only.

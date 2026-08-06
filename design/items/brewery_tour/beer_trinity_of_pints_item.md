@@ -18,4 +18,4 @@
 > "Brewed for minds that think they're smarter when drinking. They're not. But it helps." [source: design/items/brewery_passport_book.md L225]
 
 ## Notes
-- ⚠ AUTHOR-REVIEW: Brewed by — The Stoutworks Brewery, as a contract brew for Trinity of Pints (drafted from the established cross-location relationship in `design/worlds/publandia/trinity_of_pints.md` and `design/worlds/publandia/the_stoutworks_brewery.md`, where each location's page explicitly cross-references the other). Gap #13 (brewed by) and Gap #14 (special quirk) had no source anywhere in the seven extraction sources.
+- Brewed by — The Stoutworks Brewery, as a contract brew for Trinity of Pints [source: design/worlds/publandia/trinity_of_pints.md L359]. This resolves Gap #13 with existing venue-doc canon rather than drafted content. Gap #14 (special quirk, flagged in the Special row above) still had no source anywhere in the seven extraction sources or the venue docs.

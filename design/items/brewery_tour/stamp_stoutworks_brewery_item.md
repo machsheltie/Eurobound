@@ -15,7 +15,7 @@
 - **Stamp Speech**: ⚠ AUTHOR-REVIEW: "There you go — proof you made it past the malt house with all your fingers. Wear that ink like a survivor's badge. Most tourists just get a gift shop receipt."
 
 ## PNG Assets
-- `stamp_stoutworks.png` — 64x64; animation sheet 64x64x4 [source: design/items/brewery_passport_book.md L348]
+- `stamp_stoutworks_brewery.png` — 64x64; animation sheet 64x64x4 [source: design/items/brewery_passport_book.md L348; renamed from the source's shortened `stamp_stoutworks.png` to the full brewery-stem convention per Contradiction 5 ruling]
 
 ## Notes
 - Gaps #6–#8 (animation, stamper, speech) had no source anywhere in the seven extraction sources — drafted from Fiona's established role ("Stamp station (Fiona operates)") and voice in `design/worlds/publandia/the_stoutworks_brewery.md`. Author review required before these enter canon.

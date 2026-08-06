@@ -18,4 +18,4 @@
 > "You surrendered to Blarney Trap pricing. It's delicious." [source: design/items/brewery_passport_book.md L206]
 
 ## Notes
-- ⚠ AUTHOR-REVIEW: Brewed by — The Stoutworks Brewery, as a contract brew for The Blarney Trap (drafted from the established cross-location relationship in `design/worlds/publandia/the_blarney_trap.md` and `design/worlds/publandia/the_stoutworks_brewery.md`, where each location's page explicitly cross-references the other's stamp/beer). Gap #4 (brewed by) and Gap #5 (special quirk) had no source anywhere in the seven extraction sources.
+- Brewed by — The Stoutworks Brewery, as a contract brew for The Blarney Trap [source: design/worlds/publandia/the_blarney_trap.md L445]. This resolves Gap #4 with existing venue-doc canon rather than drafted content. Gap #5 (special quirk, flagged in the Special row above) still had no source anywhere in the seven extraction sources or the venue docs.

@@ -18,5 +18,5 @@
 > "The only honest thing in this entire establishment. Golden, hopeful, with a bitter finish — just like your evening." [source: design/worlds/publandia/brewery_passport_book.md L264]
 
 ## Notes
-- ⚠ AUTHOR-REVIEW: Brewed by — a local microbrewery Mickey won't name ("the one honest supplier I've got"), kept entirely off Shenanigans' own rigged books (drafted from `design/worlds/publandia/shenanigans.md`, which establishes only that it's "Local microbrewery (actually legitimate)" without naming a supplier). Gap #19 (brewed by) had no source anywhere in the seven extraction sources.
+- Brewed by — Local microbrewery (actually legitimate) [source: design/worlds/publandia/shenanigans.md L277]. This resolves Gap #19 with existing venue-doc canon rather than drafted content; the supplier itself is never named in canon, so no name is invented here.
 - ⚠ AUTHOR-REVIEW: PNG Assets — `fools_gold_bottle.png` (32x64) and `fools_gold_icon.png` (32x32), naming drawn from `design/worlds/publandia/shenanigans.md`'s own PNG Asset Requirements Summary, matching the established beer-name-stem convention used by every other Publandia signature beer. Gap #20 (beer PNG) had no source anywhere in the seven extraction sources.
