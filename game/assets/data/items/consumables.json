@@ -11,7 +11,7 @@
       "display_name": "Absinthe Shot",
       "heal_hp": 0,
       "heal_bravado": 8,
-      "description": "Tastes like licorice and bad decisions. Restores 8 SP."
+      "description": "Tastes like licorice and bad decisions. Restores 8 Bravado."
     },
     "questionable_goulash": {
       "display_name": "Questionable Goulash",

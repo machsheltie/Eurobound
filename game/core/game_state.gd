@@ -10,6 +10,26 @@ var flags: Dictionary = {}
 var current_scene_path: String = ""
 var player_position: Vector2 = Vector2.ZERO
 
+const BRAVADO_LOW_MAX := 25
+const BRAVADO_MID_MAX := 70
+
+## Returns the Bravado band for a value: "zero", "low", "mid", or "high".
+## Zero Bravado means Bravado cannot be spent. It does NOT cause collapse or
+## forced retreat — that belongs to HP reaching zero.
+func bravado_state(value: int) -> String:
+	if value <= 0:
+		return "zero"
+	if value <= BRAVADO_LOW_MAX:
+		return "low"
+	if value <= BRAVADO_MID_MAX:
+		return "mid"
+	return "high"
+
+## Ultimates are locked out in the zero and low bands.
+func can_use_ultimate(value: int) -> bool:
+	var state := bravado_state(value)
+	return state == "mid" or state == "high"
+
 func new_game(repo) -> void:
 	party = []
 	inventory = {}
