@@ -19,3 +19,6 @@ marketing/screenshots/originals/
 
 # Local AI-tool workspace state
 .refact/
+
+# Git worktrees (local agent windows)
+.worktrees/
