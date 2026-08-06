@@ -121,6 +121,24 @@ When building or completing a brewery, it is DONE when all of these exist:
   base passport doc), stamp-slot pages, account-level persistence
 - Quest mechanics live HERE and in the per-city quest files — not in item docs
 
+## File Map (decomposition round 2026-08-05)
+
+**Container items:**
+- `design/items/bottle_opener_keychain_item.md` (`bottle_opener_keychain`) — geography rewrite done; parody gag mints ⚠ AUTHOR-REVIEW
+- `design/items/brewery_passport_book_item.md` (`brewery_passport_book`)
+
+**Per-brewery item files** (`design/items/brewery_tour/`, trio per brewery — `stamp_<slug>_item.md`, `opener_<slug>_item.md`, `beer_<slug>_item.md`):
+- Publandia: `blarney_trap`, `stoutworks_brewery`, `trinity_of_pints`, `shenanigans`
+- Debaucheryville: `absinthium_taproom`, `tap_dat_vault`, `three_crown_keg_haus`, `ye_olde_brew_lab`
+- Sinfonia: `moderato_pub`, `standing_ovation`, `crown_and_cask`, `dancing_stein`
+- Shamsterdam: none yet (4 breweries pending author naming round)
+
+**City quest files:**
+- `design/quests/publandia/brewerytourpublandia.md` (hosts the trigger; Trinity of Pints author-dictated sequence)
+- `design/quests/debaucheryville/brewerytourdebaucheryville.md` (aligned to this spec 2026-08-05)
+- `design/quests/sinfonia/brewerytoursinfonia.md`
+- Shamsterdam: none yet
+
 ## Source Reconciliation (deferred to content round — see NEXT_WORK ledger)
 
 The six legacy docs (`brewery_passport_book*.md` ×4, `brewery_tour_bottle_opener_system.md`,

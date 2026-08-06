@@ -1,7 +1,7 @@
 # Enhanced Brewery Tour - Debaucheryville
 
 **Region:** Debaucheryville (Prague Parody)  
-**Prerequisite:** Must have acquired the Bottle Opener Keychain in Publandia to access brewery doors.
+**Authority:** `design/quests/general_quests/brewerytour.md` (master spec) wins every conflict. Quest availability: the tour exists only once the one-time Publandia special-beer-order trigger has fired (master spec, The Trigger). Nothing here gates on possessing the keychain or any opener — that mechanic is dead (author ruling 2026-08-04). Item detail (stamps, openers, signature beers) lives in `design/items/brewery_tour/`.
 
 **Gameplay:** Each brewery is a micro-interior dungeon. Clear an obstacle (yeast monsters, intoxicated tour guides, gimmicky puzzles).
 
@@ -26,11 +26,7 @@
 **Obstacle:** Navigation puzzle in warped-perspective room with mirror portals. Some mirrors teleport; others confuse control inputs (simulating "Green Fairy Confusion").
 
 **Mini-Mob Encounter:**
-- **Name:** Mirror Chad
-- **Type:** Hallucination enemy
-- **Enhanced Dialogue:** *"Remember when you thought puka shells made you worldly? Yeah, I'm still you, bro."*
-- **Effect:** Applies Confused if not defeated in 3 turns (his insults loop)
-- **Design:** Your own sprite, mirrored and distorted
+- ⚠ AUTHOR TO DESIGN — this slot's original enemy (Mirror Chad) was KILLED by standing author ruling (NEXT_WORK ledger, 2026-08-03 round); a replacement mini-mob is the author's to dictate.
 
 **Boss/Encounter:** "Green Fairy Wisp" — status-spamming enemy who splits into illusions.
 
@@ -50,7 +46,7 @@
 ```
 
 **Brew Reward:**
-- **Absinthe Lager** — Restores +15 SP, 30% chance to apply Confused to user
+- **Absinthe Lager** — canonical stat block: `design/items/brewery_tour/beer_absinthium_taproom_item.md`
 
 **Enhanced Selfie Prop:** 
 - **"Mystical Absinthe Selfie"** — Makes them look pretentious in photos, NPCs comment on their "fake deep" poses
@@ -98,7 +94,7 @@ Warning: may cause delusions of sophistication
 ```
 
 **Brew Reward:**
-- **Iron Gut Tripel** — +40 HP, applies Inspired but lowers Accuracy next turn
+- **Iron Gut Tripel** — canonical stat block: `design/items/brewery_tour/beer_three_crown_keg_haus_item.md` (accuracy debuff is next turn ONLY — Contradiction 2 ruling)
 
 **Enhanced Selfie Prop:**
 - **"Authentic Dive Bar Selfie"** — Clearly staged, everyone can tell they're tourists
@@ -148,7 +144,7 @@ Warning: May contain Y2K bugs
 ```
 
 **Brew Reward:**
-- **Vape Stout** — Restores SP and applies Glow-Up Aura (Charm/Defense up), but causes Grease Fingers
+- **Vape Stout** — canonical stat block: `design/items/brewery_tour/beer_tap_dat_vault_item.md`
 
 **Enhanced Selfie Prop:**
 - **"Tech Bro Selfie"** — Glitched effects make them look even more out of touch
@@ -198,8 +194,8 @@ This is definitely financial advice
 ```
 
 **Brew Reward:**
-- **Blockchain Bock** — +20 HP, +10 Sovs, applies Tourist Trapped next battle
-- **Enhanced Effect:** *"You feel smarter but everyone else feels dumber listening to you"*
+- **Blockchain Bock** — canonical stat block: `design/items/brewery_tour/beer_ye_olde_brew_lab_item.md` (18 Sovs ±5 live re-roll stands by author ruling — the volatility IS the satire)
+- **Enhanced Effect (flavor):** *"You feel smarter but everyone else feels dumber listening to you"*
 
 **Enhanced Selfie Prop:**
 - **"Investor Selfie"** — Poses them like they understand technology they clearly don't
@@ -221,10 +217,10 @@ This is definitely financial advice
 - **3 AM:** If they're still brewery hopping, NPCs comment: *"Aren't you guys a little old for this?"*
 
 ### **Unlock Condition:** 
-Bottle Opener Keychain from Publandia.
+The Brewery Tour quest is active (the one-time Publandia special-beer-order trigger has fired — master spec, The Trigger). Keychain/opener possession gates nothing (author ruling 2026-08-04).
 
 ### **First Entry Bravado Check:** 
-Failing one locks you out for 1 in-game hour (real-time = 5 min).
+Failing one locks you out for 1 in-game hour (real-time = 5 min). (Access gates kept per plan: Three-Crown Keg Haus requires +1 Bravado to enter; The Tap Dat Vault opens at midnight only; time-gated states stand.)
 
 ### **On First Completion of Each Brewery:**
 - Add that beer's consumable to your permanent item pool
@@ -232,11 +228,26 @@ Failing one locks you out for 1 in-game hour (real-time = 5 min).
 
 ---
 
-## **💀 Enhanced "Legendary Hangover" Reward**
+## **💀 Legendary Hangover — "The Neon Nightmare"**
 
-**Completing all 4 breweries in Debaucheryville unlocks:**
+**Completing all 4 breweries in Debaucheryville unlocks** [canonical block per master spec naming; stats source: design/items/brewery_passport_book_debaucheryville.md L161-172 — this supersedes this file's older generic +25 HP block]:
 
-**Legendary Hangover (item):** +25 HP, +10 SP, +2 All Stats for 3 turns, then applies Hungover for next 2 battles.
+- **Effect**: +20 to ALL stats for entire battle, +Confusion immunity during battle
+- **Consequence**: "Neon Nightmare Hungover" status after battle
+- **Neon Nightmare Hungover Effects**:
+  - -15 all stats for 45 minutes
+  - Random control reversal (10% chance per input)
+  - Screen occasionally flickers with "glitch" effect
+  - NPCs comment on your appearance
+- **Cure**: Full meal (Plot Armor Provisions equivalent), sleep, or 45 min wait
+- **Price**: 75 Sovs (repurchasable from any stamped Debaucheryville location)
+- **Flavor Text**: "Four stamps. Four different ways to question reality. The night was legendary. The morning is punishment."
+
+**Strategic use** [source: design/items/brewery_passport_book_debaucheryville.md L174-178]:
+- Stronger than Publandia's Legendary Hangover (+20 vs +15)
+- Longer recovery period (45 min vs 30 min)
+- Additional "glitch" effects make post-battle navigation harder
+- Best saved for major boss fights in Debaucheryville
 
 **Enhanced Satirical Tooltip:** *"You don't remember last night, but everyone else does. Also, you posted 47 Instagram stories."*
 
@@ -253,7 +264,7 @@ Failing one locks you out for 1 in-game hour (real-time = 5 min).
 
 **Bingo Card Tracking System:**
 - **Matrix Screensaver Reference** ✅ (Absinthium - Chadwick dialogue)
-- **Puka Shell Worldliness** ✅ (Absinthium - Mirror Chad roast)
+- **Puka Shell Worldliness** ⚠ referent killed with Mirror Chad (standing author ruling) — square needs a new home or author kill
 - **Kazaa Download Reference** ✅ (Loading screen between breweries)
 - **AOL Email Detection** ✅ (B.R.E.W. Lab - BrewBot recognition)
 - **2001 Dance Moves** ✅ (Tap Dat Vault - rhythm puzzle failure)
@@ -357,3 +368,11 @@ The brewery tour becomes a **perfect vehicle** for showing how these aging bros 
 4. **B.R.E.W. Lab:** Investment guru fantasy
 
 **The real satirical payoff:** After completing this entire "cultural experience," they're still the same delusional aging frat bros who think frosted tips and cargo shorts make them European sophisticates.
+
+---
+
+## Dev Notes (reconciliation round 2026-08-05)
+
+- **Selfie completion reward**: full Debaucheryville selfie set grants the **"Neon Photogenic"** badge — +5% resistance to "Confused" status permanently; NPCs in Debaucheryville occasionally recognize you [source: design/items/brewery_passport_book_debaucheryville.md L191-194]. **Contradiction 4 ruling:** the +5% Confused resistance belongs to this selfie badge ONLY; the "Debaucheryville Collector" achievement (own all 4 city openers) stays as a bare achievement with no stat reward. No stacking.
+- **ICQ popups in this file are scam flavor, not a sales channel.** ICQ opener sales are DEAD (master spec dead-mechanic list); none of the popups above sell anything tour-related, and they support the kept share features ("Share This Scam", Peak Y2K Tourist).
+- **Stamps/openers/selfies are earned on challenge completion** at each brewery (never on ordering; never sold) — see the master spec's Loop and the per-item files in `design/items/brewery_tour/`.
