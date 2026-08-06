@@ -110,7 +110,7 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
 
 ## Brewery Tour — RULED 2026-08-04 (canonical spec: design/quests/general_quests/brewerytour.md)
 
-**Decomposition round IN PROGRESS 2026-08-05** (spec: docs/superpowers/specs/2026-08-05-brewery-tour-decomposition-design.md; all phase-2 rulings live in
+**Decomposition round PHASES 1-5 EXECUTED 2026-08-05** (spec: docs/superpowers/specs/2026-08-05-brewery-tour-decomposition-design.md; all phase-2 rulings live in
 docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md §Rulings — binding, do
 not relitigate). Headlines: **Trinity of Pints fully redesigned by author** (four-course
 drinking-game curriculum — Pub 115 / Song 220 / Greek 330 / Thesis Defense 401 — magnet-cheat
@@ -123,6 +123,7 @@ Iron Gut Tripel = next-turn only; beer price band demoted to guideline (Blockcha
 ±5 stays); +5% Confused res = selfie badge only; PNG names = full brewery stems; 28
 gatekeeper quotes salvaged as ambient flavor (gating dead); Key Collector achievement dead.
 Creative gaps + referee/brewmaster NPCs: Claude drafts, ⚠ AUTHOR-REVIEW batches.
+All files written and legacy docs retired; pending: author batch review of ⚠-flagged drafts, then Shamsterdam follow-on when names are minted.
 
 All five design forks resolved by author: (1) keychain = ONE item, openers = one per brewery
 EARNED on challenge completion (vendor sales + ICQ opener sales DEAD); (2) 16 breweries

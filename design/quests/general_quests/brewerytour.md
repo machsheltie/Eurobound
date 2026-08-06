@@ -187,12 +187,22 @@ extraction plan's Shamsterdam parking lot.
 
 ---
 
-## Source Reconciliation (deferred to content round — see NEXT_WORK ledger)
+## Source Reconciliation
 
-The six legacy docs (`brewery_passport_book*.md` ×4, `brewery_tour_bottle_opener_system.md`,
-old quest stubs) each hold unique load-bearing content and contradictions. Full merge into
-the decomposed structure is a queued content round. Until then: **all six files stay**, and
-this spec overrides them wherever they disagree. Known casualties already ruled: per-location
-opener VENDORS (dead), ICQ opener sales (dead), Shamsterdam-hangover-as-passive (dead),
-"one keychain gates everything with no per-brewery openers" (dead — openers are per-brewery,
-earned not bought).
+DONE 2026-08-05 — six legacy docs merged and retired to design/legacy/; coverage matrix in
+docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md.
+
+The six legacy docs (`design/legacy/brewery_passport_book.md`,
+`brewery_passport_book_complete.md`, `brewery_passport_book_debaucheryville.md`,
+`brewery_passport_book_sinfonia.md`, `brewery_tour_bottle_opener_system.md`, and
+`brewery_passport_book_worlds_copy_2026-08-05.md`) held unique load-bearing content and
+contradictions; every fact was walked against Appendix A of
+`docs/superpowers/specs/2026-08-05-brewery-tour-decomposition-design.md` and resolved to a
+new home, an author kill ruling, or an explicit Shamsterdam-out-of-scope deferral — the full
+row-by-row Coverage Matrix lives in
+`docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md`. Known casualties
+already ruled: per-location opener VENDORS (dead), ICQ opener sales (dead),
+Shamsterdam-hangover-as-passive (dead), "one keychain gates everything with no per-brewery
+openers" (dead — openers are per-brewery, earned not bought). The six files are kept for
+provenance in `design/legacy/` with SUPERSEDED banners; do not edit them further — this spec
+and the decomposed item/quest files are the live authority.
