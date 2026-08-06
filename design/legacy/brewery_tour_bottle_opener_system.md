@@ -1,3 +1,5 @@
+> ⚠ SUPERSEDED 2026-08-05 — decomposed into design/items/brewery_tour/, design/items/brewery_passport_book_item.md, bottle_opener_keychain_item.md, and the quests/<city>/brewerytour<city>.md files per docs/superpowers/specs/2026-08-05-brewery-tour-decomposition-design.md. Kept for provenance; do not edit.
+
 # Brewery Tour — Complete Bottle Opener System
 
 *Every location, every opener, every prerequisite*

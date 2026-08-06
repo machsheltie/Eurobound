@@ -142,6 +142,14 @@ Stamps are earned on challenge completion at each brewery, never on ordering (au
 - `stamp_slot_locked.png` — 64x64 — Undiscovered
 - (Per-brewery stamp, beer, and opener PNGs live in their item files in `design/items/brewery_tour/`)
 
+### Achievement Assets (6 PNGs) [source: design/items/brewery_passport_book.md L368-374]
+- `legendary_hangover_publandia.png` — 48x48
+- `legendary_hangover_debaucheryville.png` — 48x48
+- `legendary_hangover_sinfonia.png` — 48x48
+- `legendary_hangover_shamsterdam.png` — 48x48
+- `continental_beer_master_badge.png` — 96x96
+- `photogenic_drinker_badge.png` — 64x64
+
 ### UI Assets (8 PNGs) [source: design/items/brewery_passport_book.md L377-385]
 - `passport_tab_icon.png` — 32x32 — Menu icon
 - `passport_notification.png` — 24x24 — New stamp available
@@ -151,6 +159,21 @@ Stamps are earned on challenge completion at each brewery, never on ordering (au
 - `selfie_gallery_frame.png` — 192x256 — Photo display
 - `stamp_collected_popup.png` — 256x128 — Notification
 - `beer_unlocked_popup.png` — 256x128 — Notification
+
+## Signature Beer Unlock Availability
+
+Each stamp unlocks that location's signature beer as a purchasable consumable [source: design/items/brewery_passport_book.md L182-186]:
+- Available at the originating location
+- Some available at The Blarney Trap (Publandia hub)
+- Cross-city availability for completed stamps
+
+Global stat guideline ranges (the 8–15 Sovs price band is a GUIDELINE, not a rule — author ruling, Contradiction 3) [source: design/items/brewery_passport_book.md L188-195]: +25 to +50 HP, +0 to +20 SP, location-specific buff, 5–15% minor debuff risk.
+
+## Implementation Notes [source: design/items/brewery_passport_book.md L364-374 region]
+
+- Menu system integration (new tab); stamp collection tracking (per-location flags); beer unlock system (inventory additions); achievement tracking (city and continental); selfie gallery (image collection)
+- Save data: stamps saved to profile (persist across saves); beer unlocks tied to stamps; selfie collection separate tracking; achievement progress persistent
+- UI/UX priorities: satisfying stamp animation; clear progress indicators; easy navigation between cities; quick access to unlocked beers; celebratory feedback on completions
 
 ## Notes
 

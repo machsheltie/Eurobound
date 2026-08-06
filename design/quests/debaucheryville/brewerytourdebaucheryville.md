@@ -371,6 +371,19 @@ The brewery tour becomes a **perfect vehicle** for showing how these aging bros 
 
 ---
 
+## Selfie Spots (Brewery Tour)
+
+[source: design/items/brewery_passport_book_debaucheryville.md L184-189]
+
+| Location | Selfie Spot | Standard Photo | Special Variant |
+|---|---|---|---|
+| The Absinthium Taproom | Floating absinthe chalice behind bar | With glowing green mist | With Dr. Vaněk (complete his "research survey") |
+| The Tap Dat Vault | "You Are Brewtiful" hologram wall | Neon glow, vapor clouds | With Strobe Brewmistress silhouette (post-boss) |
+| Three-Crown Keg Haus | Velvet keg throne | "Drunken monarchy" pose | With Keg Sentinel wreckage (post-boss) |
+| Ye Olde B.R.E.W. Lab | Algorithm Archive terminal | Blockchain hash background | With defeated BrewBot (post-boss) |
+
+---
+
 ## Dev Notes (reconciliation round 2026-08-05)
 
 - **Selfie completion reward**: full Debaucheryville selfie set grants the **"Neon Photogenic"** badge — +5% resistance to "Confused" status permanently; NPCs in Debaucheryville occasionally recognize you [source: design/items/brewery_passport_book_debaucheryville.md L191-194]. **Contradiction 4 ruling:** the +5% Confused resistance belongs to this selfie badge ONLY; the "Debaucheryville Collector" achievement (own all 4 city openers) stays as a bare achievement with no stat reward. No stacking.

@@ -124,6 +124,33 @@ Iron Gut Tripel = next-turn only; beer price band demoted to guideline (Blockcha
 gatekeeper quotes salvaged as ambient flavor (gating dead); Key Collector achievement dead.
 Creative gaps + referee/brewmaster NPCs: Claude drafts, ⚠ AUTHOR-REVIEW batches.
 
+**DECOMPOSITION ROUND COMPLETE 2026-08-06 (phases 3–5 executed).** All 36 item files for the
+three named cities live in `design/items/brewery_tour/` (12 per city; Publandia committed
+2026-08-05, Debaucheryville + Sinfonia 2026-08-06); keychain geography rewrite done
+(`bottle_opener_keychain_item.md` — six parody mints ⚠ AUTHOR-REVIEW as one batch: Playa del
+Blackout / Regretona Beach / Señor Toadally Wasted's / Oktsoberfest / The Trippiest
+Monastery / Pilsner Urkel, mapping at Gap Manifest #21–#26); canonical passport book at
+`design/items/brewery_passport_book_item.md`; city quest files created
+(`quests/publandia/brewerytourpublandia.md` — carries the full author-dictated Trinity
+sequence incl. the Brenda call; `quests/sinfonia/brewerytoursinfonia.md`) and the
+Debaucheryville file aligned (keychain gating out, Mirror Chad slot flagged ⚠ per standing
+kill, canonical Neon Nightmare block in, beers repointed to item files). Master spec gained
+a File Map; its Source Reconciliation is flipped DONE. Coverage matrix appended to the
+extraction doc — every Appendix-A fact resolves. Six legacy docs retired to `design/legacy/`
+with SUPERSEDED banners (stray Publandia copy renamed
+`brewery_passport_book_worlds_publandia_copy.md` to avoid collision).
+
+**Brewery follow-ons open:** (1) ⚠ AUTHOR-REVIEW batches awaiting the author: Publandia
+drafted fields (Gaps 1–20 flags inside the Publandia item files) + the six keychain parody
+mints; (2) referee + Trinity brewmaster NPC drafts (Rulings addendum 5 — Claude to draft as
+NPC-template profiles, ⚠ AUTHOR-REVIEW; Trinity stamp animation/speech Gaps #10/#12 route
+through the brewmaster draft); (3) Shamsterdam mini-round blocked on the author minting its
+4 brewery names (then 12 item files + city quest file from the same templates; Canal Courage
+PNG naming fix on write); (4) undesigned challenges: Publandia ×3 (Blarney Trap, Stoutworks,
+Shenanigans), Sinfonia ×4, marked ⚠ AUTHOR TO DESIGN in the city files; (5) the deb file's
+"Puka Shell Worldliness" bingo square lost its referent with the Mirror Chad kill — needs a
+new home or author kill.
+
 All five design forks resolved by author: (1) keychain = ONE item, openers = one per brewery
 EARNED on challenge completion (vendor sales + ICQ opener sales DEAD); (2) 16 breweries
 (4×4); (3) Legendary Hangovers = named CONSUMABLES (Full Irish Experience / Neon Nightmare /

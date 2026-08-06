@@ -139,12 +139,8 @@ When building or completing a brewery, it is DONE when all of these exist:
 - `design/quests/sinfonia/brewerytoursinfonia.md`
 - Shamsterdam: none yet
 
-## Source Reconciliation (deferred to content round — see NEXT_WORK ledger)
+## Source Reconciliation
 
-The six legacy docs (`brewery_passport_book*.md` ×4, `brewery_tour_bottle_opener_system.md`,
-old quest stubs) each hold unique load-bearing content and contradictions. Full merge into
-the decomposed structure is a queued content round. Until then: **all six files stay**, and
-this spec overrides them wherever they disagree. Known casualties already ruled: per-location
-opener VENDORS (dead), ICQ opener sales (dead), Shamsterdam-hangover-as-passive (dead),
-"one keychain gates everything with no per-brewery openers" (dead — openers are per-brewery,
-earned not bought).
+DONE 2026-08-05 — six legacy docs merged and retired to `design/legacy/` (the stray Publandia
+copy retired as `brewery_passport_book_worlds_publandia_copy.md` to avoid a name collision);
+coverage matrix in `docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md`.

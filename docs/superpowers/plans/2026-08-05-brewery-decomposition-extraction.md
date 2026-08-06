@@ -763,3 +763,101 @@ six parody replacements in the game's naming voice, batch-reviewed.**
 All 5 contradictions ruled; salvage pile ruled (quotes salvaged/gating dead; Key Collector
 dead); Trinity of Pints redesigned by author dictation (addenda 1–6, incl. the Brenda call);
 remaining creative gaps route through ⚠ AUTHOR-REVIEW draft batches. No DEFERRED items.
+
+---
+
+## Coverage Matrix (Task 9, 2026-08-05)
+
+One row per unique fact cluster in design-spec Appendix A.1–A.5. HOME = file#section now
+carrying it; KILLED = author ruling; OUT OF SCOPE = Shamsterdam round (author-ruled skip,
+content stays readable in `design/legacy/` provenance copies until that round).
+
+### A.1 — Opener-system doc vs `complete`
+
+| Fact | Disposition |
+|---|---|
+| Gating layer (Golden Rule, ASCII prerequisite chain, per-opener Prerequisite fields, City Prerequisite notes) | KILLED: gating dead (author ruling 2026-08-04) |
+| 28 gatekeeper quotes — Publandia (Fiona, Dean Cathal, Mickey), Debaucheryville (Dr. Vaněk, Glitching Bouncer, Bartender, Scanner), Sinfonia (Herr Takt, Herr Dramatisch, König Klaus, Herr Drehmeister) | HOME: each brewery's `opener_<slug>_item.md#Notes` (salvaged ambient, Ruling salvage 27; gating framing stripped) |
+| Gatekeeper quotes — Shamsterdam (Hendrik, Kees) | OUT OF SCOPE: Shamsterdam round |
+| Seamus's Pitch (opener-as-key framing) | KILLED: pure key-item/gating framing (dead mechanic); noted in `opener_blarney_trap_item.md#Notes` |
+| Per-opener Stamp Unlock condition lines | SUPERSEDED: stamps earned on challenge completion (master spec Loop); challenge designs ⚠ AUTHOR TO DESIGN in city files (Trinity: author-dictated) |
+| Publandia beer stats (only source) | HOME: `beer_blarney_trap/stoutworks_brewery/trinity_of_pints/shenanigans_item.md#Stat Block` |
+| COMPLETE OPENER REFERENCE 14-row table — designs/inscriptions | HOME: the 12 `opener_*_item.md#Design` files (Shamsterdam rows OUT OF SCOPE) |
+| COMPLETE OPENER REFERENCE — prices + earn-or-purchase methods | KILLED: vendor sales dead (author ruling 2026-08-04) |
+| Passport item framing, acquisition, Seamus's intro monologue | HOME: `design/items/brewery_passport_book_item.md` (acquisition superseded by trigger model per master spec) |
+| City Pages: stamp designs/inks/animations/speeches (Deb/Sin) | HOME: the 8 `stamp_*_item.md` files |
+| City Pages: Shamsterdam | OUT OF SCOPE: Shamsterdam round |
+| Detailed beer tables | HOME: the 12 `beer_*_item.md` files |
+| Shamsterdam selfie spots + "Spinning & Bowing" badge | OUT OF SCOPE: Shamsterdam round |
+| Legendary Hangover Comparison (durations) | HOME: city quest files' hangover blocks (durations + cross-city comparison bullets) |
+| 38 PNG assets w/ dimensions (openers/stamps/beers) | HOME: item files' `#PNG Assets` (full-stem renames per Contradiction 5 ruling); Shamsterdam PNGs OUT OF SCOPE |
+| Keychain 15-Sov purchase + book-required | KILLED: trigger-grant model (master spec; keychain item rewritten) |
+| `dutch_courage_passive.png` → Canal Courage naming | OUT OF SCOPE: fix-on-write in Shamsterdam round (parked in Shamsterdam parking lot above; Canal Courage is a CONSUMABLE per ruling) |
+
+### A.2 — Sinfonia passport vs `complete`
+
+| Fact | Disposition |
+|---|---|
+| Per-city opener designs/inscriptions (Publandia shamrock; Debaucheryville UV "Reality Is Optional After Dark"; Sinfonia eighth-note "Drink in Three-Quarter Time") | KILLED: per-city-opener model void (ruling 2026-08-04); gag lines remain in legacy provenance for any future author salvage |
+| Cross-City Mechanics + "Key Collector" achievement | KILLED: Key Collector dead (Ruling salvage 28); rewards ladder stands as master spec |
+| Full Brewery Tour Summary totals + Difficulty Progression | totals KILLED (16-brewery ruling); city challenge trends HOME: master spec Loop + city files' ⚠ AUTHOR TO DESIGN lines |
+| Sinfonia Selfie Spots + "Culturally Distinguished" badge | HOME: `design/quests/sinfonia/brewerytoursinfonia.md#Selfie Spots` |
+| The Master's Toast full detail | HOME: `brewerytourpublandia.md` + `brewerytoursinfonia.md` (Continental Rewards Touchpoint) |
+| Sinfonia stamp/beer PNG specs | HOME: Sinfonia item files' `#PNG Assets` |
+| `passport_page_sinfonia.png`, `legendary_hangover_sinfonia.png` | HOME: `brewery_passport_book_item.md#PNG Assets` (Book + Achievement assets) |
+| "Legendary Hungover" status name | HOME: `brewerytourpublandia.md#Legendary Hangover` |
+| Sinfonia beer Special fields (crown glass +3 Sovs; clockwise foam; served with a bow; 1848 recipe) | HOME: Sinfonia `beer_*_item.md` Stat Block/Flavor/Notes |
+| Sinfonia stamp speeches (full versions) | HOME: Sinfonia `stamp_*_item.md#The Stamping` |
+| Sommelier's "openers combine into decorative keychain display" | SUPERSEDED: the keychain container model (`bottle_opener_keychain_item.md#The Sixteen Slots`) |
+| Opener PNG shortened-stem renames | RULED: full brewery stems (Contradiction 5), applied in every item file |
+
+### A.3 — Debaucheryville passport vs `complete`
+
+| Fact | Disposition |
+|---|---|
+| City-opener Shadow Exchange vendor + cross-city barter | KILLED: per-city-opener model + barter void (ruling 2026-08-04) |
+| Cross-City Mechanics + Key Collector | KILLED: Ruling salvage 28 |
+| Debaucheryville Selfie Spots table + "Neon Photogenic" badge | HOME: `brewerytourdebaucheryville.md#Selfie Spots` + `#Dev Notes` (Contradiction 4 ruling recorded: +5% Confused res = selfie badge ONLY) |
+| Neon Nightmare full detail | HOME: `brewerytourdebaucheryville.md#Legendary Hangover — "The Neon Nightmare"` |
+| Master's Toast mechanics | HOME: Publandia + Sinfonia city files (game-wide reward; deb file needs no copy) |
+| Debaucheryville stamp/beer PNG specs | HOME: Debaucheryville item files' `#PNG Assets` |
+| `passport_page_debaucheryville.png`, `legendary_hangover_debaucheryville.png` | HOME: `brewery_passport_book_item.md#PNG Assets` |
+| Deep beer fields (Iron Gut 2-Sov goblet deposit; Blockchain Bock live re-roll + negative crash; Absinthe Lager debuffs-user-by-design; Vape Stout vapor-cloud animation) | HOME: Debaucheryville `beer_*_item.md` |
+| "Welcome to the Brewvolution™" untruncated | HOME: `stamp_ye_olde_brew_lab_item.md#The Stamping` |
+| +5% Confused resistance dual-path | RULED: Contradiction 4 (selfie badge only; Collector achievement bare) |
+
+### A.4 — Base passport vs `complete`
+
+| Fact | Disposition |
+|---|---|
+| Menu Integration (tab spec, bookmark icon, notification badge, all three ASCII mockups) | HOME: `brewery_passport_book_item.md#Menu Integration` (mockups verbatim) |
+| Stamp Mechanics (4 unlock archetypes, 6-step process, permanence/account-persistence/timestamps) | HOME: `brewery_passport_book_item.md#Stamp Mechanics` (keychain-possession clause stripped — gating dead) |
+| Publandia signature beer stat blocks | HOME: Publandia `beer_*_item.md` |
+| Beer Stats Template global ranges + Unlock System (hub/cross-city availability) | HOME: `brewery_passport_book_item.md#Signature Beer Unlock Availability` (band = guideline per Contradiction 3 ruling) |
+| "Using Legendary Hangovers Strategically" (no-stack rule, cures) | HOME: `brewerytourpublandia.md#Legendary Hangover` strategic-use block |
+| Publandia Brewmaster Selfies (4 spots/variants) + selfie mechanics + "Photogenic Drinker" | HOME: `brewerytourpublandia.md#Selfie Spots` |
+| Implementation Notes (technical requirements, save-data model, UI/UX priorities) | HOME: `brewery_passport_book_item.md#Implementation Notes` |
+| Book/UI/slot/achievement PNG specs | HOME: `brewery_passport_book_item.md#PNG Assets` |
+| Generic `stamp_animation.png` 64x64x4 | SUPERSEDED: per-brewery full-stem animation sheets (Contradiction 5 ruling) |
+| Publandia stamp/beer PNGs | HOME: Publandia item files (Shenanigans stamp/beer PNGs drafted ⚠ AUTHOR-REVIEW — Gaps 18/20) |
+| Shamsterdam beer-name + ink contradictions | OUT OF SCOPE: recorded in Shamsterdam parking lot above for the naming round |
+| Hangover consumable vs passive | RULED: consumable (master spec) |
+| Continental Beer Master requirement variants | MOOT: all 16 breweries, earning unified (master spec) |
+| Trinity of Pints gate variants | RULED: superseded by author-dictated redesign (Rulings above) |
+| Price band 15 cap vs Blockchain Bock 18 | RULED: Contradiction 3 (beers win; band demoted to guideline) |
+
+### A.5 — Quest docs vs item docs
+
+| Fact | Disposition |
+|---|---|
+| Brewmaster Selfie system (Deb props, album at hostel/Wi-Fi café, NPC reactions, Charm bonuses, Brewery Bro Safari, collect-all reward) | HOME: `brewerytourdebaucheryville.md` (kept sections) + master spec Selfie/Scrapbook layer + city files |
+| Y2K Brewery Bingo → "Y2K Archaeologist" → +1 Nostalgia Resistance | HOME: `brewerytourdebaucheryville.md` (kept; Puka Shell square flagged ⚠ — referent died with Mirror Chad kill) |
+| "Peak Y2K Tourist" mega-achievement (MIDI Hamster Dance opener upgrade, "Nostalgically Self-Aware") | HOME: `brewerytourdebaucheryville.md` (kept) |
+| Access rules (Three-Crown +1 Bravado; Tap Dat Vault midnight-only; 1-hour lockout; 6-8 PM/midnight/3 AM states) | HOME: `brewerytourdebaucheryville.md` (kept, restated under First Entry Bravado Check) |
+| ICQ vendor prices 40/30/100/500/420/69 Sovs | KILLED as a sales mechanic (ICQ opener sales dead); the popups survive as pure scam FLAVOR in `brewerytourdebaucheryville.md` (sell nothing tour-related; support the kept share features) — no fake-opener gag written (author did not order one) |
+| Micro-dungeon framing (yeast monsters, tour guides) | HOME: `brewerytourdebaucheryville.md` intro (kept) |
+| "Add beer to permanent item pool on first completion" | HOME: `brewerytourdebaucheryville.md#On First Completion` (kept) |
+| Mirror Chad mini-mob | KILLED: standing author ruling (NEXT_WORK 2026-08-03); slot flagged ⚠ AUTHOR TO DESIGN |
+| Unlock rule / hangover versions / slot order / opener sellers | RULED/void per the design spec §2 list (hybrid model; consumable city-file depth; order unimportant; earned only) |
+
+**Result: every row resolves. No unresolved rows — retirement may proceed.**
