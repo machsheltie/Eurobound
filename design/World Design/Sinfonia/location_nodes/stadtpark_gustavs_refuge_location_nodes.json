@@ -1,0 +1,248 @@
+{
+  "locations": [
+    {
+      "name": "Stadtpark (Gustav's Refuge)",
+      "tag_id": "sinfonia_stadtpark_gustavs_refuge_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A sprawling public park adjacent to the Opera House district. Ancient oaks, manicured gardens, winding gravel paths, and the famous gilded Johann Strauss statue. By day, filled with joggers and tourists. Tonight, moonlit and silent except for one exhausted horse making his final stand.",
+        "entry_condition": "Auto-entry during Fiaker Fiasco from Opera House side door; normal access from Imperial Square, MusikGasse, Kaffeehaus Row"
+      },
+      "interior": {
+        "theme": "Freedom vs. responsibility, emotional resolution, American candy diplomacy",
+        "features": [
+          "entry_point: opera_side_door_path",
+          "entry_point: imperial_square_gate",
+          "entry_point: musikgasse_path",
+          "quest_zone: central_lawn (gustav_confrontation)",
+          "landmark: johann_strauss_statue",
+          "landmark: bandstand_pavilion",
+          "hazard: ornamental_pond (hostile_swans)",
+          "npc_quest: gustav_horse_01",
+          "npc_quest: hans_jurgen_01",
+          "npc_quest: pigeon_lady_01",
+          "npc_conditional: papageno_franz_01",
+          "npc_conditional: regisseur_hoffmann_01",
+          "npc_ambient: homeless_philosopher_01",
+          "npc_ambient: making_out_couple_01",
+          "npc_ambient: sleeping_tourist_01",
+          "item_use: skittles_negotiation",
+          "selfie_prop: strauss_statue",
+          "selfie_prop: skittles_diplomacy",
+          "resolution: path_a_return",
+          "resolution: path_b_retire",
+          "resolution: path_c_escape",
+          "resolution: path_d_bail"
+        ]
+      },
+      "functions": [
+        "Fiaker Fiasco Phase 4 (Final)",
+        "Quest resolution with 4 endings",
+        "Skittles negotiation mechanic",
+        "Debt resolution scene",
+        "Achievement unlocks (Horse Whisperer, Liberation)",
+        "Emotional climax of sidequest",
+        "Normal park exploration (non-quest)"
+      ]
+    },
+    {
+      "name": "Stadtpark - Central Lawn",
+      "tag_id": "sinfonia_stadtpark_central_lawn_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "An open expanse of manicured grass at the heart of the park. Tonight, moonlight illuminates a single white horse standing defiant in the center, steam rising from his breath, tattered cape flowing.",
+        "entry_condition": "Quest entry from paths; triggers confrontation sequence"
+      },
+      "interior": {
+        "theme": "The final confrontation, emotional core",
+        "features": [
+          "quest_trigger: confrontation_zone",
+          "npc_position: gustav",
+          "npc_gathering: resolution_participants",
+          "item_use: skittles_interaction",
+          "dialogue_tree: resolution_choices",
+          "exit_locked: until_resolved"
+        ]
+      },
+      "functions": [
+        "Gustav's refuge point",
+        "Skittles negotiation location",
+        "Resolution dialogue",
+        "Quest completion"
+      ]
+    },
+    {
+      "name": "Stadtpark - Johann Strauss Monument",
+      "tag_id": "sinfonia_stadtpark_strauss_statue_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "The famous gilded statue of the Waltz King, violin raised in eternal performance. The marble base is worn smooth from decades of tourist photos. Tonight, he watches the horse drama with bronze indifference.",
+        "entry_condition": "Open access"
+      },
+      "interior": {
+        "theme": "Cultural landmark, ironic backdrop to chaos",
+        "features": [
+          "landmark: strauss_statue",
+          "interactive: examine (sinfonia_lore)",
+          "selfie_prop: waltz_king_selfie",
+          "atmospheric: contrast_to_drama"
+        ]
+      },
+      "functions": [
+        "Landmark and selfie prop",
+        "Sinfonia cultural lore",
+        "Ironic backdrop during quest"
+      ]
+    },
+    {
+      "name": "Stadtpark - Ornamental Pond",
+      "tag_id": "sinfonia_stadtpark_pond_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A decorative pond with a small fountain. Several swans sleep near the edge. They look peaceful. They are territorial nightmares waiting to happen.",
+        "entry_condition": "Open access; hazard zone"
+      },
+      "interior": {
+        "theme": "Deceptive beauty, hidden hazard",
+        "features": [
+          "hazard: aggressive_swans",
+          "interaction: fall_in (wet_status)",
+          "environmental: fountain_sounds",
+          "gustav_avoids: horses_dont_like_swans"
+        ]
+      },
+      "functions": [
+        "Environmental hazard",
+        "Comedy relief (swan attack)",
+        "Status effect removal (if fall in)"
+      ]
+    },
+    {
+      "name": "Stadtpark - Bandstand Pavilion",
+      "tag_id": "sinfonia_stadtpark_bandstand_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "An elegant white pavilion used for summer concerts. Empty and silent at night, but the acoustics remain excellent.",
+        "entry_condition": "Open access"
+      },
+      "interior": {
+        "theme": "Performance space, alternative resolution",
+        "features": [
+          "landmark: bandstand",
+          "conditional_event: papageno_performance",
+          "acoustic: excellent_for_music"
+        ]
+      },
+      "functions": [
+        "Papageno alternative calming method",
+        "Atmospheric landmark"
+      ]
+    },
+    {
+      "name": "Stadtpark - Bench Area",
+      "tag_id": "sinfonia_stadtpark_benches_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Scattered cast-iron benches along the paths. At night, occupied by a philosopher, a couple, and an unconscious tourist.",
+        "entry_condition": "Open access"
+      },
+      "interior": {
+        "theme": "Rest points, minor NPC encounters",
+        "features": [
+          "npc: homeless_philosopher (wisdom_vendor)",
+          "npc: making_out_couple (oblivious)",
+          "npc: sleeping_tourist (immovable)",
+          "rest_point: empty_bench (removes_tired)"
+        ]
+      },
+      "functions": [
+        "Wisdom purchase point",
+        "Rest/status recovery",
+        "Comedy NPCs"
+      ]
+    },
+    {
+      "name": "Stadtpark - Entry Paths",
+      "tag_id": "sinfonia_stadtpark_paths_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Winding gravel paths connect the park to surrounding districts. Trampled flower beds mark Gustav's earlier passage.",
+        "entry_condition": "Multiple entry points from surrounding areas"
+      },
+      "interior": {
+        "theme": "Transition zones, evidence trail",
+        "features": [
+          "portal: opera_side_door",
+          "portal: imperial_square",
+          "portal: musikgasse",
+          "portal: kaffeehaus_row",
+          "evidence: trampled_gardens (gustav_trail)",
+          "npc_arrival: hans_jurgen_entry",
+          "npc_arrival: papageno_entry (conditional)",
+          "npc_arrival: director_entry (conditional)"
+        ]
+      },
+      "functions": [
+        "Entry/exit points",
+        "NPC arrival staging",
+        "Gustav's trail evidence"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "internal_transitions": [
+      {"from": "entry_paths", "to": "central_lawn", "type": "path", "quest_trigger": true},
+      {"from": "central_lawn", "to": "strauss_statue", "type": "path"},
+      {"from": "central_lawn", "to": "pond", "type": "path", "hazard_warning": true},
+      {"from": "central_lawn", "to": "bandstand", "type": "path"},
+      {"from": "entry_paths", "to": "bench_area", "type": "path"}
+    ],
+    "external_connections": [
+      {"from": "entry_paths", "to": "sinfonia_bassline_opera_house_01", "type": "side_door", "quest_entry": true},
+      {"from": "entry_paths", "to": "sinfonia_imperial_square_01", "type": "gate", "main_exit": true},
+      {"from": "entry_paths", "to": "sinfonia_musikgasse_01", "type": "path"},
+      {"from": "entry_paths", "to": "sinfonia_kaffeehaus_row_01", "type": "path"}
+    ],
+    "quest_path": {
+      "entry": "opera_side_door → entry_paths → central_lawn",
+      "resolution": "central_lawn (any ending)",
+      "exit": "entry_paths → imperial_square (default)"
+    }
+  },
+  
+  "spatial_layout": {
+    "total_area": {
+      "width_meters": 300,
+      "depth_meters": 250
+    },
+    "zones": {
+      "central_lawn": {"diameter_meters": 80, "position": "center"},
+      "strauss_statue": {"footprint_meters": 10, "position": "east"},
+      "pond": {"diameter_meters": 40, "position": "northwest"},
+      "bandstand": {"diameter_meters": 15, "position": "south"},
+      "bench_areas": {"scattered": true, "count": 6}
+    },
+    "path_network": {
+      "style": "winding_gravel",
+      "width_meters": 3,
+      "connections": "all_zones"
+    }
+  },
+  
+  "quest_state_tracking": {
+    "fiaker_fiasco_phase_4": {
+      "entry_state": "confrontation_pending",
+      "resolution_states": ["path_a", "path_b", "path_c", "path_d"],
+      "npcs_required": ["gustav", "hans_jurgen", "pigeon_lady"],
+      "npcs_conditional": ["papageno", "director"],
+      "key_item": "bag_of_skittles"
+    },
+    "post_quest_states": {
+      "path_a": {"gustav_present": false, "fiaker_service_unlocked": true},
+      "path_b": {"gustav_present": true, "type": "park_horse_npc"},
+      "path_c": {"gustav_present": false, "hans_jurgen_at_moderato_pub": true},
+      "path_d": {"quest_failed": true, "hans_jurgen_hostile": true}
+    }
+  }
+}

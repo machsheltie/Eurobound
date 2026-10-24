@@ -1,0 +1,146 @@
+{
+  "location_id": "debaucheryville_oldtown_astronomical_cockup_square_01",
+  
+  "events": [
+    {
+      "event_id": "clock_show_hourly",
+      "display_name": "The Astronomical Cock-Up Show",
+      "event_type": "scheduled_attraction",
+      "trigger": {
+        "type": "time_based",
+        "frequency": "hourly",
+        "during": "day_cycle_only"
+      },
+      "duration_seconds": 38,
+      "sequence": [
+        {
+          "phase": "anticipation",
+          "duration_seconds": 2,
+          "description": "Bell chimes, crowd hushes",
+          "audio": "clock_bell_chime",
+          "animation": "crowd_phones_raise"
+        },
+        {
+          "phase": "windows_open",
+          "duration_seconds": 2,
+          "description": "Two small windows open on tower",
+          "animation": "clock_windows_open"
+        },
+        {
+          "phase": "apostle_parade",
+          "duration_seconds": 24,
+          "description": "12 apostle figures shuffle past like DMV queue",
+          "animation": "apostle_parade_loop"
+        },
+        {
+          "phase": "death_sequence",
+          "duration_seconds": 3,
+          "description": "Skeleton rings small bell, turns hourglass",
+          "animation": "skeleton_bell_ring"
+        },
+        {
+          "phase": "rooster",
+          "duration_seconds": 2,
+          "description": "Golden rooster makes strangled crowing noise",
+          "audio": "strangled_rooster_crow",
+          "animation": "rooster_crow"
+        },
+        {
+          "phase": "windows_close",
+          "duration_seconds": 2,
+          "description": "Windows close anticlimactically",
+          "animation": "clock_windows_close"
+        },
+        {
+          "phase": "crowd_reaction",
+          "duration_seconds": 3,
+          "description": "Crowd silence, single tourist says '...that's it?'",
+          "audio": "crowd_disappointment",
+          "triggers": ["bros_crying_sequence"]
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "set_state",
+          "state": "clock_show_witnessed",
+          "value": true
+        },
+        {
+          "effect": "trigger_sequence",
+          "sequence": "bros_crying_sequence"
+        }
+      ]
+    },
+    {
+      "event_id": "bros_crying_sequence",
+      "display_name": "Emotional Breakdown",
+      "event_type": "character_reaction",
+      "trigger": {
+        "type": "event_completion",
+        "event": "clock_show_hourly"
+      },
+      "duration_seconds": 15,
+      "dialogue_sequence": [
+        {
+          "speaker": "lord_pilsner",
+          "lines": ["Bro. BRO.", "Did you see Death look at me? He looked RIGHT AT ME."],
+          "animation": "lord_pilsner_crying"
+        },
+        {
+          "speaker": "chadwick",
+          "lines": ["I've never felt so connected to mortality.", "This is the most authentic European experience we've had."],
+          "animation": "chadwick_crying_filming"
+        },
+        {
+          "speaker": "bradley",
+          "lines": ["The twelve apostles represent the twelve drinks before you black out.", "It's different for everyone but the CONCEPT is universal."]
+        },
+        {
+          "speaker": "lord_pilsner",
+          "lines": ["That skeleton. He GETS it. The hustle.", "Partying until you're literally DEAD but still showing up every hour.", "That's ME, bro.", "I'm gonna get that skeleton tattooed."]
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "set_state",
+          "state": "crying_triggered",
+          "value": true
+        },
+        {
+          "effect": "set_state",
+          "state": "post_clock_vulnerability",
+          "value": true,
+          "duration_minutes": 30
+        }
+      ]
+    }
+  ],
+  
+  "vendor_interactions": {
+    "approach_order": [
+      "viewing_spot_scammer_01",
+      "party_monk_01",
+      "clock_wine_vendor_01",
+      "merchandise_vendor_01",
+      "shady_wristband_guy_01",
+      "tattoo_barker_01"
+    ],
+    "vulnerability_modifier": {
+      "state_required": "post_clock_vulnerability",
+      "price_increase_percent": 20,
+      "purchase_likelihood_increase_percent": 50
+    },
+    "total_potential_spend": {
+      "minimum": 90,
+      "maximum": 550,
+      "average_expected": 350
+    }
+  },
+  
+  "narrator_commentary": {
+    "on_crying": "Truly, the cultural exchange we all hoped for: three grown men weeping over a mechanical rooster.",
+    "on_wristband_purchase": "Armed with €90 worth of children's party supplies, our heroes prepared to conquer Debaucheryville's nightlife scene.",
+    "on_wine_purchase": "The sommelier's cousin had really outdone himself with this vintage: 2019. A very good year. For boxes.",
+    "on_tattoo_decision": "And so began Lord Pilsner's journey to immortalize this moment on his lower back. What could possibly go wrong?"
+  }
+}

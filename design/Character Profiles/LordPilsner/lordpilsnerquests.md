@@ -1,0 +1,3 @@
+# Quests
+
+Temporary placeholder

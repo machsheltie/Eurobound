@@ -1,0 +1,326 @@
+{
+  "location_id": "debaucheryville_transit_tram_stop_17_01",
+  
+  "ambient_audio": {
+    "background_music": null,
+    "music_style": "no_music_ambient_only",
+    "music_note": "The absence of music emphasizes the meditative quality of waiting",
+    
+    "environmental_sounds": [
+      {
+        "sound_id": "city_traffic_distant",
+        "description": "Muffled traffic sounds from surrounding streets",
+        "volume": 0.3,
+        "loop": true
+      },
+      {
+        "sound_id": "pigeons_cooing",
+        "description": "Constant gentle pigeon sounds",
+        "volume": 0.5,
+        "loop": true
+      },
+      {
+        "sound_id": "pigeon_wing_flutter",
+        "description": "Occasional wing sounds as pigeons resettle",
+        "volume": 0.4,
+        "trigger": "random_interval_30s"
+      },
+      {
+        "sound_id": "jiri_sigh",
+        "description": "Jiří's patient sighs",
+        "volume": 0.6,
+        "trigger": "random_interval_60s"
+      },
+      {
+        "sound_id": "watch_tick",
+        "description": "Jiří's ancient wristwatch, barely audible",
+        "volume": 0.1,
+        "loop": true
+      },
+      {
+        "sound_id": "passing_pedestrians",
+        "description": "Footsteps walking past",
+        "volume": 0.3,
+        "trigger": "random_interval_20s"
+      }
+    ],
+    
+    "audio_transitions": {
+      "enter": "city_sounds_fade_pigeon_sounds_rise",
+      "exit": "pigeon_sounds_fade_city_sounds_rise",
+      "tram_approach": "distant_bell_mechanical_rattle_builds",
+      "tram_pass": "whoosh_rattle_bell_fade"
+    },
+    
+    "time_of_day_audio": {
+      "morning": {
+        "additional": ["birds_chirping", "more_pedestrian_traffic"]
+      },
+      "afternoon": {
+        "additional": ["tourist_chatter_distant"]
+      },
+      "evening": {
+        "additional": ["distant_accordion_music", "cafe_sounds"]
+      },
+      "night": {
+        "additional": ["distant_dogs_barking", "occasional_drunk_singing"],
+        "reduced": ["pedestrian_traffic"]
+      }
+    },
+    
+    "special_audio": {
+      "night_vigil": {
+        "sequence": [
+          "city_quieting",
+          "distant_church_bells",
+          "deep_night_silence",
+          "dawn_birds"
+        ],
+        "emotional_underscore": "subtle_melancholic_piano_only_during_story"
+      },
+      "false_alarm_tram": {
+        "sequence": [
+          "hopeful_music_swell",
+          "tram_approaching",
+          "tram_number_call_22",
+          "deflating_horn",
+          "silence"
+        ]
+      }
+    }
+  },
+  
+  "status_effects": {
+    "environmental_buffs": [],
+    "atmospheric_debuffs": [],
+    
+    "location_specific_states": {
+      "contemplative_waiting": {
+        "trigger": "sit_with_jiri",
+        "duration_minutes": 5,
+        "effects": {
+          "stress_reduction": true,
+          "patience_increase": 1
+        },
+        "description": "The act of waiting with Jiří is oddly calming"
+      }
+    },
+    
+    "granted_buffs": {
+      "jiris_blessing": {
+        "buff_id": "jiris_blessing",
+        "display_name": "Jiří's Blessing",
+        "unlock_condition": "night_vigil_completed",
+        "permanent": true,
+        "effects": {
+          "charm_modifier_with_locals": 1,
+          "reputation_effect": "recognized_as_americans_who_sat_with_jiri"
+        },
+        "description": "Locals recognize you as the Americans who sat with Jiří. You are now 'good tourists.'",
+        "visual": "subtle_halo_glow_in_menu"
+      }
+    },
+    
+    "recovery_options": []
+  },
+  
+  "couchsurf_integration": {
+    "available": false,
+    "reason": "outdoor_public_location"
+  },
+  
+  "time_of_day_changes": {
+    "morning": {
+      "lighting": "soft_golden_light",
+      "crowd": "commuters_passing",
+      "jiri_state": "alert_watching_tracks",
+      "shrine_state": "fresh_flowers_added_by_tender",
+      "special_notes": "Best time to ask for directions - Jiří is most optimistic"
+    },
+    "afternoon": {
+      "lighting": "bright_natural",
+      "crowd": "tourists_occasionally_photographing",
+      "jiri_state": "settled_philosophical",
+      "shrine_state": "candles_unlit",
+      "special_notes": "Tour buses slow down to point at Jiří"
+    },
+    "evening": {
+      "lighting": "golden_hour_then_streetlight",
+      "crowd": "locals_heading_home",
+      "jiri_state": "contemplative_melancholic",
+      "shrine_state": "candles_being_lit_by_tender",
+      "special_notes": "Night Vigil option appears if qualified"
+    },
+    "night": {
+      "lighting": "streetlight_pools_shadows",
+      "crowd": "empty_occasionally_drunk_passerby",
+      "jiri_state": "alone_with_pigeons",
+      "shrine_state": "candles_glowing",
+      "special_notes": "Jiří's most existential dialogue"
+    },
+    "late_night": {
+      "lighting": "dim_streetlight_stars_visible",
+      "crowd": "deserted",
+      "jiri_state": "meditative_still",
+      "shrine_state": "candles_burning_low",
+      "special_notes": "Night Vigil sequence occurs in this period"
+    }
+  },
+  
+  "weather_effects": {
+    "clear": {
+      "modifier": 1.0,
+      "jiri_note": "Good tram weather. The 17 prefers clear skies.",
+      "visual": "normal"
+    },
+    "overcast": {
+      "modifier": 1.0,
+      "jiri_note": "Gray skies. The 17 could come any moment. Trams like gray.",
+      "visual": "diffused_lighting"
+    },
+    "rain": {
+      "modifier": 1.0,
+      "jiri_note": "I do not leave for rain. The 17 would not respect me if I left for rain.",
+      "visual": "rain_particles_shelter_provides_cover",
+      "audio": "rain_on_shelter_roof",
+      "special": "Jiří has umbrella - has been there so long locals gave him one"
+    },
+    "snow": {
+      "modifier": 1.0,
+      "jiri_note": "Snow makes the tracks hum differently. Perhaps today.",
+      "visual": "snow_accumulation_not_on_jiri_pigeons_keep_him_warm"
+    }
+  },
+  
+  "particle_effects": {
+    "pigeon_feathers": {
+      "type": "ambient",
+      "source": "pigeon_colony",
+      "density": "sparse",
+      "color": "#A9A9A9",
+      "movement": "gentle_drift_downward",
+      "constant": true
+    },
+    "candle_sparks": {
+      "type": "burst",
+      "source": "shrine_candles",
+      "trigger": "random_interval_10s",
+      "color": "#FF8C00",
+      "visibility": "visit_count >= 5"
+    },
+    "tram_dust": {
+      "type": "burst",
+      "source": "tracks",
+      "trigger": "passing_tram_event",
+      "color": "#D2B48C",
+      "duration_seconds": 2
+    },
+    "dawn_motes": {
+      "type": "ambient",
+      "source": "air",
+      "trigger": "night_vigil_dawn_phase",
+      "color": "#FFD700",
+      "movement": "slow_rise",
+      "density": "sparse"
+    }
+  },
+  
+  "lighting_system": {
+    "daytime": {
+      "primary": {
+        "color": "#FFFAF0",
+        "intensity": 1.0,
+        "source": "sun"
+      },
+      "shelter_shadow": {
+        "color": "#696969",
+        "intensity": 0.3,
+        "coverage": "under_canopy"
+      }
+    },
+    "evening": {
+      "primary": {
+        "color": "#FF8C00",
+        "intensity": 0.8,
+        "source": "setting_sun"
+      },
+      "streetlight_warmup": {
+        "color": "#FFD700",
+        "intensity": 0.4,
+        "source": "streetlight"
+      }
+    },
+    "night": {
+      "primary": {
+        "color": "#483D8B",
+        "intensity": 0.3,
+        "source": "ambient_night"
+      },
+      "streetlight": {
+        "color": "#FFD700",
+        "intensity": 0.7,
+        "radius": 128,
+        "source": "streetlight_pole"
+      },
+      "candle_glow": {
+        "color": "#FF8C00",
+        "intensity": 0.4,
+        "radius": 32,
+        "source": "shrine",
+        "visibility": "visit_count >= 5"
+      }
+    },
+    "dawn": {
+      "primary": {
+        "color": "#FFC0CB",
+        "intensity": 0.6,
+        "source": "rising_sun"
+      },
+      "special": "night_vigil_emotional_climax_lighting"
+    }
+  },
+  
+  "environmental_storytelling": {
+    "permanent_details": [
+      {
+        "element": "worn_path_to_bench",
+        "description": "The cobblestones directly in front of Jiří's bench are more worn than surrounding ones - from decades of his feet",
+        "location": "ground_in_front_of_bench"
+      },
+      {
+        "element": "17_graffiti",
+        "description": "Someone has scratched '17 FOREVER' into the shelter glass",
+        "location": "shelter_glass"
+      },
+      {
+        "element": "old_newspaper",
+        "description": "A newspaper clipping: 'LOCAL MAN VOWS TO WAIT FOR TRAM' - dated 2002",
+        "location": "pinned_inside_shelter"
+      }
+    ],
+    "progressive_details": [
+      {
+        "element": "shrine_growth",
+        "visit_3": "Small pile of offerings appears",
+        "visit_5": "Candles added, regularly maintained",
+        "visit_7": "Photos and notes from strangers",
+        "visit_10": "Children's drawings, organized shrine",
+        "visit_13": "Bronze plaque installed"
+      },
+      {
+        "element": "jiri_integration",
+        "visit_1": "Jiří sits on bench normally",
+        "visit_5": "Coat seems attached to bench",
+        "visit_10": "Impossible to tell where Jiří ends and bench begins",
+        "visit_13": "He IS the landmark"
+      },
+      {
+        "element": "pigeon_population",
+        "visit_1": "2 pigeons nearby",
+        "visit_5": "4-6 pigeons, some on Jiří",
+        "visit_10": "Full colony, protective perimeter",
+        "visit_13": "Pigeon honor guard formation"
+      }
+    ]
+  }
+}

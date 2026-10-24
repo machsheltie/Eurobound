@@ -1,0 +1,208 @@
+# File: assets/data/npcs/easter_eggs.json
+
+{
+  "schema_version": "1.0",
+  "last_updated": "2025-09-15",
+  "hotfix_compatible": true,
+  "easter_eggs": {
+    "crypto_portfolio_confession": {
+      "id": "crypto_confession_01",
+      "npc_target": "vlad_validator",
+      "trigger_conditions": {
+        "interaction_count": 5,
+        "flags_present": ["vlad_insulted"],
+        "time_conditions": {"after_hour": 23, "before_hour": 2}
+      },
+      "content": {
+        "line_id": "easter_egg_vlad_confession",
+        "text": "Look... between you and me... I bought Bitcoin at $68,000. My mom still thinks I'm a financial advisor.",
+        "emotion": "vulnerable",
+        "animation": "dejected",
+        "audio_clip": "vlad_confession_whisper"
+      },
+      "reward": {
+        "item": "Crypto_Sympathy_Card",
+        "experience": 50,
+        "flag_set": "vlad_humanized"
+      },
+      "repeatable": false,
+      "one_time_reaction": "Thanks for listening, man. Most people just want to hear about my 'gains'.",
+      "fallback_text": "Anyway... back to verifying the VIP list..."
+    },
+    "clown_breakdown": {
+      "id": "clown_breakdown_01", 
+      "npc_target": "crypto_clown",
+      "trigger_conditions": {
+        "status_effects": ["embarrassed"],
+        "items_present": ["Deflated_Balloon_Animal"],
+        "world_state": "performance_failed"
+      },
+      "content": {
+        "line_id": "easter_egg_clown_breakdown",
+        "text": "You know what the worst part is? I actually went to business school. Magna cum laude. Now look at me...",
+        "emotion": "defeated",
+        "animation": "sitting_on_ground",
+        "audio_clip": "sad_circus_music"
+      },
+      "reward": {
+        "item": "Business_Degree_Fragment",
+        "experience": 75,
+        "flag_set": "clown_backstory_revealed"
+      },
+      "repeatable": false,
+      "one_time_reaction": "Maybe I should call my parents... they still think I'm 'following my dreams'.",
+      "fallback_text": "Step right up! Genuine blockchain entertainment!"
+    },
+    "dmitri_police_scare": {
+      "id": "dmitri_police_01",
+      "npc_target": "shadow_exchange_dealer", 
+      "trigger_conditions": {
+        "sound_trigger": "police_sirens_nearby",
+        "flags_absent": ["dmitri_trusts_party"],
+        "random_chance": 0.3
+      },
+      "content": {
+        "line_id": "easter_egg_dmitri_police",
+        "text": "Quick! You didn't see me here! I'm just... selling totally legal... tour guides! Yes, tour guides!",
+        "emotion": "panicked",
+        "animation": "hiding_frantically",
+        "audio_clip": "papers_shuffling_fast"
+      },
+      "reward": {
+        "item": "Suspicious_Business_Card",
+        "experience": 25,
+        "flag_set": "dmitri_paranoia_witnessed"
+      },
+      "repeatable": true,
+      "cooldown_hours": 24,
+      "one_time_reaction": "You didn't see anything! I was never here!",
+      "fallback_text": "Best rates in town, no questions asked!"
+    },
+    "meta_commentary_vlad": {
+      "id": "meta_vlad_01",
+      "npc_target": "vlad_validator",
+      "trigger_conditions": {
+        "player_actions": ["screenshot_taken"],
+        "location": "velvet_curtain_entrance",
+        "flags_present": ["social_media_active"]
+      },
+      "content": {
+        "line_id": "easter_egg_meta_vlad", 
+        "text": "Did you just... screenshot our conversation? Dude, I'm not an NPC in some satirical RPG game!",
+        "emotion": "confused",
+        "animation": "breaking_fourth_wall",
+        "audio_clip": "record_scratch"
+      },
+      "reward": {
+        "item": "Meta_Awareness_Token",
+        "experience": 100,
+        "flag_set": "fourth_wall_broken"
+      },
+      "repeatable": false,
+      "one_time_reaction": "Wait... are we in a game right now? Is someone controlling you?",
+      "fallback_text": "Anyway, the VIP list is still on the blockchain..."
+    },
+    "cross_world_reference": {
+      "id": "cross_world_01",
+      "npc_target": "vlad_validator",
+      "trigger_conditions": {
+        "worlds_visited": ["publandia"],
+        "flags_present": ["pub_crawl_legendary"],
+        "items_present": ["Guinness_Foam_Mustache"]
+      },
+      "content": {
+        "line_id": "easter_egg_cross_world",
+        "text": "Wait, you're the legend from Publandia! I saw the footage of your epic pub crawl. That's some serious social proof!",
+        "emotion": "impressed", 
+        "animation": "star_struck",
+        "audio_clip": "social_media_notification"
+      },
+      "reward": {
+        "area_unlock": "VIP_Backroom",
+        "experience": 150,
+        "flag_set": "cross_world_celebrity"
+      },
+      "repeatable": false,
+      "one_time_reaction": "Celebrity status confirmed! Welcome to the elite tier.",
+      "fallback_text": "Your reputation precedes you..."
+    },
+    "seasonal_crypto_reference": {
+      "id": "seasonal_crypto_01",
+      "npc_target": "vlad_validator",
+      "trigger_conditions": {
+        "real_world_date": {"month": 1, "day_range": [1, 7]},
+        "player_level": {"min": 5}
+      },
+      "content": {
+        "line_id": "easter_egg_seasonal_crypto",
+        "text": "New year, new portfolio! This time I'm diversifying into... *checks phone* ...oh no, not again...",
+        "emotion": "hopeful_turning_to_despair",
+        "animation": "phone_checking_to_dejected",
+        "audio_clip": "crypto_crash_sound"
+      },
+      "reward": {
+        "item": "New_Year_Resolution_List",
+        "experience": 50,
+        "flag_set": "witnessed_crypto_cycles"
+      },
+      "repeatable": true,
+      "cooldown_days": 365,
+      "one_time_reaction": "Maybe this year I'll actually research before investing...",
+      "fallback_text": "Diamond hands, right? ...Right?"
+    }
+  },
+  "behavioral_easter_eggs": {
+    "grease_fingers_magnet": {
+      "id": "behavioral_grease_01",
+      "trigger_pattern": "grease_fingers_status_count >= 5",
+      "affects_all_npcs": true,
+      "content_modifier": {
+        "greeting_prefix": "Ah, our local grease magnet returns!",
+        "status_reaction_intensity": 1.5,
+        "nickname": "Grease Lightning"
+      },
+      "reward": {
+        "title": "Grease Lightning",
+        "experience": 200,
+        "flag_set": "legendary_grease_reputation"
+      },
+      "social_media_trigger": "grease_fingers_hall_of_fame"
+    },
+    "crypto_conversion_success": {
+      "id": "behavioral_crypto_01",
+      "trigger_pattern": "crypto_topics_engaged >= 10",
+      "affects_npcs": ["vlad_validator", "crypto_clown"],
+      "content_modifier": {
+        "expertise_recognition": "Finally, someone who gets it!",
+        "advanced_dialogue_unlock": true,
+        "insider_information_access": true
+      },
+      "reward": {
+        "title": "Crypto Whisperer",
+        "experience": 300,
+        "item": "Honorary_Blockchain_Certificate"
+      }
+    }
+  },
+  "debug_easter_eggs": {
+    "developer_mode": {
+      "id": "debug_mode_01",
+      "trigger_conditions": {
+        "input_sequence": ["up", "up", "down", "down", "left", "right", "left", "right"],
+        "location": "any"
+      },
+      "content": {
+        "line_id": "debug_developer_greeting",
+        "text": "Oh hey, you found the developer console! Want to see behind the curtain?",
+        "opens_interface": "debug_menu"
+      },
+      "enabled_in_production": false
+    }
+  },
+  "analytics_tracking": {
+    "easter_egg_discovery_rate": "percentage of players who find each egg",
+    "most_popular_eggs": "ranking by trigger frequency",
+    "screenshot_correlation": "eggs that generate most social media screenshots",
+    "retention_impact": "player session length after discovering eggs"
+  }
+}

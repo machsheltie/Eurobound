@@ -1,0 +1,282 @@
+{
+  "location_id": "shamsterdam_bike_rental_01",
+  
+  "sprite_sheets": {
+    "shop_tileset": {
+      "file": "bike_rental_shop_tileset.png",
+      "dimensions": {"width": 512, "height": 512},
+      "tile_size": 32,
+      "categories": {
+        "walls": {
+          "start_row": 0,
+          "tiles": [
+            {"id": "shop_wall_white", "col": 0},
+            {"id": "shop_wall_orange_stripe", "col": 1},
+            {"id": "window_frame", "col": 2},
+            {"id": "doorway_frame", "col": 3},
+            {"id": "poster_backing", "col": 4}
+          ]
+        },
+        "floor": {
+          "start_row": 1,
+          "tiles": [
+            {"id": "shop_floor_tile", "col": 0},
+            {"id": "shop_floor_worn", "col": 1},
+            {"id": "repair_floor_concrete", "col": 2},
+            {"id": "floor_mat_entrance", "col": 3}
+          ]
+        },
+        "counter": {
+          "start_row": 2,
+          "tiles": [
+            {"id": "service_counter_front", "col": 0, "width": 3},
+            {"id": "service_counter_top", "col": 3, "width": 2},
+            {"id": "cash_register", "col": 5},
+            {"id": "form_stack", "col": 6},
+            {"id": "credit_card_machine", "col": 7}
+          ]
+        },
+        "displays": {
+          "start_row": 3,
+          "tiles": [
+            {"id": "photo_frame_damage", "col": 0},
+            {"id": "photo_frame_memorial", "col": 1},
+            {"id": "insurance_chart_frame", "col": 2, "width": 2},
+            {"id": "tally_board", "col": 4, "width": 2},
+            {"id": "poster_cycling_rules", "col": 6, "width": 2}
+          ]
+        },
+        "equipment": {
+          "start_row": 4,
+          "tiles": [
+            {"id": "helmet_display", "col": 0, "width": 2},
+            {"id": "accessories_shelf", "col": 2, "width": 2},
+            {"id": "repair_tools", "col": 4},
+            {"id": "bike_parts_shelf", "col": 5, "width": 2},
+            {"id": "workbench_surface", "col": 7}
+          ]
+        }
+      }
+    },
+    
+    "bike_fleet": {
+      "file": "rental_bike_fleet.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "rental_bike_orange": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 48, "height": 48},
+          "variants": 4,
+          "note": "Slight variations in basket position, handlebar angle"
+        },
+        "bike_stand_row": {
+          "position": {"x": 0, "y": 48},
+          "size": {"width": 256, "height": 32},
+          "note": "Row of 8 bikes in stands"
+        },
+        "damaged_bike_variants": {
+          "position": {"x": 0, "y": 80},
+          "size": {"width": 48, "height": 48},
+          "variants": ["bent_wheel", "missing_basket", "twisted_frame", "canal_recovered"]
+        }
+      }
+    },
+    
+    "npc_dirk": {
+      "file": "npc_dirk_rental_owner.png",
+      "dimensions": {"width": 288, "height": 320},
+      "sprite_size": {"width": 48, "height": 64},
+      "character_notes": "Mid-50s, stocky, orange polo stretched, grease in hands, seen-it-all expression",
+      "animations": {
+        "idle_at_counter": {"row": 0, "frames": 2, "fps": 0.5},
+        "checking_paperwork": {"row": 1, "frames": 3, "fps": 1},
+        "pointing_at_crossing": {"row": 2, "frames": 2, "fps": 1},
+        "i_told_you_so": {"row": 3, "frames": 2, "fps": 0.5},
+        "genuine_surprise": {"row": 4, "frames": 3, "fps": 1, "rare": true}
+      }
+    },
+    
+    "npc_anneke": {
+      "file": "npc_anneke_counter.png",
+      "dimensions": {"width": 240, "height": 256},
+      "sprite_size": {"width": 48, "height": 64},
+      "character_notes": "Early 20s, orange polo, clipboard always ready, inherited resignation",
+      "animations": {
+        "idle_with_clipboard": {"row": 0, "frames": 2, "fps": 0.5},
+        "taking_photo": {"row": 1, "frames": 3, "fps": 2},
+        "writing_on_form": {"row": 2, "frames": 3, "fps": 1},
+        "skeptical_expression": {"row": 3, "frames": 2, "fps": 0.5}
+      }
+    },
+    
+    "npc_opa_willem": {
+      "file": "npc_opa_willem_repair.png",
+      "dimensions": {"width": 240, "height": 320},
+      "sprite_size": {"width": 48, "height": 64},
+      "character_notes": "80+, wiry, oil-stained apron older than customers, surrounded by bike debris",
+      "animations": {
+        "repairing_bike": {"row": 0, "frames": 4, "fps": 1},
+        "examining_damage": {"row": 1, "frames": 3, "fps": 0.5},
+        "looking_at_canal_wall": {"row": 2, "frames": 2, "fps": 0.25},
+        "sighing_at_damage": {"row": 3, "frames": 2, "fps": 0.5},
+        "giving_blessing": {"row": 4, "frames": 3, "fps": 1}
+      }
+    },
+    
+    "wall_displays": {
+      "file": "bike_rental_displays.png",
+      "dimensions": {"width": 512, "height": 384},
+      "displays": {
+        "damage_photo_gallery": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 192, "height": 128},
+          "note": "Grid of 6 damage photos with captions"
+        },
+        "insurance_chart": {
+          "position": {"x": 192, "y": 0},
+          "size": {"width": 128, "height": 128},
+          "note": "Four tiers with escalating warning colors"
+        },
+        "canal_memorial_board": {
+          "position": {"x": 320, "y": 0},
+          "size": {"width": 128, "height": 128},
+          "note": "Polaroids of lost bikes with RIP captions"
+        },
+        "nationality_tally": {
+          "position": {"x": 0, "y": 128},
+          "size": {"width": 128, "height": 96},
+          "note": "Chalkboard with country flags and percentages"
+        },
+        "cycling_rules_poster": {
+          "position": {"x": 128, "y": 128},
+          "size": {"width": 96, "height": 128},
+          "note": "5 rules, nobody reads them"
+        },
+        "helmet_wall": {
+          "position": {"x": 224, "y": 128},
+          "size": {"width": 128, "height": 64},
+          "note": "Various helmet sizes on pegs"
+        }
+      }
+    },
+    
+    "repair_station_elements": {
+      "file": "repair_station_sprites.png",
+      "dimensions": {"width": 384, "height": 256},
+      "elements": {
+        "canal_recovery_wall": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 192, "height": 128},
+          "note": "Wall of recovered bikes, some with seaweed"
+        },
+        "workbench": {
+          "position": {"x": 192, "y": 0},
+          "size": {"width": 128, "height": 64},
+          "note": "Tools, parts, oil cans"
+        },
+        "vintage_bikes_corner": {
+          "position": {"x": 0, "y": 128},
+          "size": {"width": 128, "height": 96},
+          "note": "Old blue rental bikes from decades past"
+        },
+        "parts_shelves": {
+          "position": {"x": 128, "y": 128},
+          "size": {"width": 128, "height": 64},
+          "note": "Organized chaos of bike parts"
+        }
+      }
+    },
+    
+    "effects_sheet": {
+      "file": "bike_rental_effects.png",
+      "dimensions": {"width": 256, "height": 128},
+      "effects": {
+        "camera_flash": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 64, "height": 64},
+          "frames": 3,
+          "fps": 8
+        },
+        "form_stamp": {
+          "position": {"x": 64, "y": 0},
+          "size": {"width": 32, "height": 32},
+          "frames": 2,
+          "fps": 4
+        },
+        "cash_register_ching": {
+          "position": {"x": 96, "y": 0},
+          "size": {"width": 48, "height": 32},
+          "frames": 3,
+          "fps": 6
+        },
+        "damage_reveal": {
+          "position": {"x": 0, "y": 64},
+          "size": {"width": 64, "height": 64},
+          "frames": 4,
+          "fps": 4,
+          "note": "Dramatic reveal effect for damage assessment"
+        }
+      }
+    },
+    
+    "ui_elements": {
+      "file": "bike_rental_ui.png",
+      "dimensions": {"width": 256, "height": 256},
+      "elements": {
+        "rental_tier_icons": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 48, "height": 48},
+          "variants": ["basic", "premium", "survivor"]
+        },
+        "insurance_tier_icons": {
+          "position": {"x": 0, "y": 48},
+          "size": {"width": 32, "height": 32},
+          "variants": ["basic", "standard", "premium", "platinum"]
+        },
+        "damage_level_indicators": {
+          "position": {"x": 0, "y": 80},
+          "size": {"width": 24, "height": 24},
+          "variants": ["none", "minor", "major", "canal"]
+        },
+        "deposit_bar": {
+          "position": {"x": 0, "y": 104},
+          "size": {"width": 150, "height": 20}
+        }
+      }
+    }
+  },
+  
+  "lighting": {
+    "main_shop": {
+      "type": "commercial_fluorescent",
+      "color": "#F5F5DC",
+      "intensity": 0.8
+    },
+    "repair_station": {
+      "type": "work_lighting",
+      "color": "#FFF8DC",
+      "intensity": 0.7,
+      "accent_spots": ["workbench"]
+    },
+    "window_daylight": {
+      "type": "natural",
+      "varies_with_time": true,
+      "affects": "main_shop_ambient"
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": 3,
+    "max_atlas_size": 512,
+    "draw_calls_budget": 30,
+    "memory_budget_mb": 35,
+    "particle_budget": 20,
+    "target_fps": 60,
+    "optimization_notes": [
+      "Pre-rendered bike fleet (not individual sprites)",
+      "Dialogue-heavy location (low animation needs)",
+      "Menu-based interactions",
+      "Simple shop interior geometry"
+    ]
+  }
+}

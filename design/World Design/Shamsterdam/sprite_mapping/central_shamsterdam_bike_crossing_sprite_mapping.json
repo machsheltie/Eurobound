@@ -1,0 +1,381 @@
+{
+  "location_id": "shamsterdam_bike_crossing_thunderdome_01",
+  
+  "sprite_sheets": {
+    "crossing_tileset": {
+      "file": "bike_crossing_tileset.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "tile_size": 32,
+      "categories": {
+        "road_surface": {
+          "start_row": 0,
+          "tiles": [
+            {"id": "asphalt_grey", "col": 0},
+            {"id": "bike_lane_red", "col": 1},
+            {"id": "bike_lane_red_worn", "col": 2},
+            {"id": "crosswalk_white", "col": 3},
+            {"id": "tram_track_steel", "col": 4},
+            {"id": "tram_track_embedded", "col": 5},
+            {"id": "pedestrian_island_raised", "col": 6},
+            {"id": "sidewalk_stone", "col": 7}
+          ]
+        },
+        "lane_markings": {
+          "start_row": 1,
+          "tiles": [
+            {"id": "bike_arrow_east", "col": 0},
+            {"id": "bike_arrow_west", "col": 1},
+            {"id": "bike_symbol", "col": 2},
+            {"id": "stop_line", "col": 3},
+            {"id": "lane_divider_dashed", "col": 4},
+            {"id": "tram_warning_stripes", "col": 5}
+          ]
+        },
+        "infrastructure": {
+          "start_row": 2,
+          "tiles": [
+            {"id": "traffic_light_pole", "col": 0, "height": 3},
+            {"id": "pedestrian_signal", "col": 1, "height": 2},
+            {"id": "tram_power_pole", "col": 2, "height": 4},
+            {"id": "tram_overhead_wire", "col": 3, "width": 4},
+            {"id": "bike_rack_section", "col": 7, "width": 2},
+            {"id": "emergency_call_box", "col": 9}
+          ]
+        },
+        "cafe_terrace": {
+          "start_row": 5,
+          "tiles": [
+            {"id": "cafe_table_round", "col": 0},
+            {"id": "cafe_chair", "col": 1},
+            {"id": "cafe_umbrella", "col": 2, "height": 2},
+            {"id": "cafe_railing", "col": 3, "width": 2},
+            {"id": "menu_board", "col": 5}
+          ]
+        },
+        "signage": {
+          "start_row": 6,
+          "tiles": [
+            {"id": "warning_sign_pedestrian", "col": 0},
+            {"id": "warning_sign_tram", "col": 1},
+            {"id": "bike_lane_sign", "col": 2},
+            {"id": "no_standing_sign", "col": 3},
+            {"id": "i_amsterdam_ghost_outline", "col": 4, "width": 2}
+          ]
+        }
+      }
+    },
+    
+    "cyclist_sprites": {
+      "file": "cyclists_spritesheet.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "sprite_size": {"width": 48, "height": 48},
+      "cyclists": {
+        "commuter": {
+          "row": 0,
+          "variants": 4,
+          "animations": {
+            "cycling_east": {"frames": 4, "fps": 8},
+            "cycling_west": {"frames": 4, "fps": 8}
+          },
+          "visual_notes": "Suit, briefcase in basket, phone in hand"
+        },
+        "parent_bakfiets": {
+          "row": 1,
+          "variants": 3,
+          "sprite_width": 96,
+          "animations": {
+            "cycling_east": {"frames": 4, "fps": 6},
+            "cycling_west": {"frames": 4, "fps": 6}
+          },
+          "visual_notes": "Cargo bike with 2-3 children visible, wide sprite"
+        },
+        "tourist_rental": {
+          "row": 2,
+          "variants": 4,
+          "animations": {
+            "cycling_wobbly_east": {"frames": 6, "fps": 6},
+            "cycling_wobbly_west": {"frames": 6, "fps": 6}
+          },
+          "visual_notes": "Orange rental bike, uncertain posture, camera around neck"
+        },
+        "delivery_rider": {
+          "row": 3,
+          "variants": 2,
+          "sprite_width": 64,
+          "animations": {
+            "cycling_fast_east": {"frames": 4, "fps": 10},
+            "cycling_fast_west": {"frames": 4, "fps": 10}
+          },
+          "visual_notes": "Large cargo box, food delivery branding, determined expression"
+        },
+        "student": {
+          "row": 4,
+          "variants": 3,
+          "animations": {
+            "cycling_texting_east": {"frames": 4, "fps": 7},
+            "cycling_texting_west": {"frames": 4, "fps": 7}
+          },
+          "visual_notes": "Coffee in one hand, phone in other, steering with knees"
+        },
+        "elder": {
+          "row": 5,
+          "variants": 2,
+          "animations": {
+            "cycling_silent_east": {"frames": 2, "fps": 4},
+            "cycling_silent_west": {"frames": 2, "fps": 4}
+          },
+          "visual_notes": "Upright posture, classic Dutch bike, eerily quiet and fast"
+        },
+        "tandem_couple": {
+          "row": 6,
+          "variants": 2,
+          "sprite_width": 80,
+          "animations": {
+            "cycling_arguing_east": {"frames": 4, "fps": 5},
+            "cycling_arguing_west": {"frames": 4, "fps": 5}
+          },
+          "visual_notes": "Tandem bike, two riders, animated arguing gestures"
+        },
+        "dog_walker": {
+          "row": 7,
+          "variants": 2,
+          "sprite_width": 72,
+          "animations": {
+            "cycling_chaos_east": {"frames": 6, "fps": 6},
+            "cycling_chaos_west": {"frames": 6, "fps": 6}
+          },
+          "visual_notes": "Bike with leashed dog running alongside, unpredictable path"
+        }
+      }
+    },
+    
+    "tram_sprite": {
+      "file": "shamsterdam_tram.png",
+      "dimensions": {"width": 512, "height": 128},
+      "sprite_size": {"width": 256, "height": 64},
+      "animations": {
+        "moving_east": {"row": 0, "frames": 2, "fps": 4},
+        "moving_west": {"row": 1, "frames": 2, "fps": 4}
+      },
+      "visual_notes": "Yellow/cream Amsterdam-style tram, multiple cars, overhead connector"
+    },
+    
+    "cargo_parade": {
+      "file": "cargo_parade_sprites.png",
+      "dimensions": {"width": 1024, "height": 256},
+      "elements": {
+        "mama_bakfiets": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 128, "height": 64},
+          "animations": {
+            "leading_parade": {"frames": 4, "fps": 4}
+          },
+          "visual_notes": "Powerful woman, massive cargo bike, 3 children, 2 dogs, orange helmet"
+        },
+        "parent_cargo_generic": {
+          "position": {"x": 128, "y": 0},
+          "size": {"width": 96, "height": 64},
+          "variants": 4
+        },
+        "delivery_cargo": {
+          "position": {"x": 0, "y": 64},
+          "size": {"width": 80, "height": 64},
+          "variants": 3
+        },
+        "flower_delivery": {
+          "position": {"x": 0, "y": 128},
+          "size": {"width": 96, "height": 64},
+          "variants": 2,
+          "visual_notes": "Cargo bike overflowing with flowers, petals trailing"
+        }
+      }
+    },
+    
+    "npc_bike_rental_guy": {
+      "file": "npc_bike_rental_guy.png",
+      "dimensions": {"width": 192, "height": 256},
+      "sprite_size": {"width": 48, "height": 64},
+      "animations": {
+        "idle": {"row": 0, "frames": 2, "fps": 0.5},
+        "warning_gesture": {"row": 1, "frames": 3, "fps": 1},
+        "i_told_you_so_shrug": {"row": 2, "frames": 2, "fps": 1},
+        "impressed_nod": {"row": 3, "frames": 2, "fps": 0.5}
+      },
+      "visual_notes": "Orange safety vest, tired eyes, clipboard, rental bikes behind"
+    },
+    
+    "npc_gerrit": {
+      "file": "npc_gerrit_philosopher.png",
+      "dimensions": {"width": 192, "height": 192},
+      "sprite_size": {"width": 48, "height": 64},
+      "animations": {
+        "sitting_watching": {"row": 0, "frames": 2, "fps": 0.25},
+        "sipping_coffee": {"row": 1, "frames": 3, "fps": 1},
+        "schadenfreude_chuckle": {"row": 2, "frames": 2, "fps": 1}
+      },
+      "visual_notes": "Elderly Dutch man, cardigan, permanent coffee cup, newspaper, slight smile"
+    },
+    
+    "npc_fallen_tourist": {
+      "file": "npc_fallen_tourist.png",
+      "dimensions": {"width": 240, "height": 192},
+      "sprite_size": {"width": 48, "height": 64},
+      "states": {
+        "visit_1_traumatized": {"row": 0, "frames": 2},
+        "visit_2_disheveled": {"row": 1, "frames": 2},
+        "visit_3_eating": {"row": 2, "frames": 3},
+        "visit_4_pigeons": {"row": 3, "frames": 2},
+        "visit_5_home_now": {"row": 4, "frames": 2}
+      },
+      "visual_notes": "Cargo shorts, fanny pack, thousand-yard stare, bike tire mark on shirt"
+    },
+    
+    "npc_officer_vandenberg": {
+      "file": "npc_officer_vandenberg.png",
+      "dimensions": {"width": 192, "height": 256},
+      "sprite_size": {"width": 48, "height": 64},
+      "animations": {
+        "walking_patrol": {"row": 0, "frames": 4, "fps": 2},
+        "writing_citation": {"row": 1, "frames": 3, "fps": 1},
+        "impressed_pause": {"row": 2, "frames": 2, "fps": 0.5}
+      },
+      "visual_notes": "Dutch police uniform, patient expression, citation booklet ready"
+    },
+    
+    "effects_sheet": {
+      "file": "crossing_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "effects": {
+        "bicycle_bell_visual": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 32, "height": 32},
+          "frames": 4,
+          "fps": 8,
+          "style": "musical_note_burst"
+        },
+        "collision_impact": {
+          "position": {"x": 32, "y": 0},
+          "size": {"width": 48, "height": 48},
+          "frames": 4,
+          "fps": 10,
+          "variants": ["light", "medium", "heavy"]
+        },
+        "tram_sparks": {
+          "position": {"x": 0, "y": 48},
+          "size": {"width": 32, "height": 32},
+          "frames": 3,
+          "fps": 12,
+          "color": "#FFD700"
+        },
+        "flower_petals": {
+          "position": {"x": 0, "y": 80},
+          "size": {"width": 16, "height": 16},
+          "frames": 6,
+          "fps": 6,
+          "colors": ["pink", "red", "white", "yellow"]
+        },
+        "success_glow": {
+          "position": {"x": 96, "y": 0},
+          "size": {"width": 64, "height": 64},
+          "frames": 4,
+          "fps": 4,
+          "color": "#FFD700"
+        },
+        "near_miss_whoosh": {
+          "position": {"x": 96, "y": 64},
+          "size": {"width": 48, "height": 24},
+          "frames": 3,
+          "fps": 12
+        }
+      }
+    },
+    
+    "ui_elements": {
+      "file": "crossing_ui.png",
+      "dimensions": {"width": 256, "height": 256},
+      "elements": {
+        "lane_indicator": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 200, "height": 24}
+        },
+        "tram_warning_icon": {
+          "position": {"x": 0, "y": 24},
+          "size": {"width": 48, "height": 48}
+        },
+        "cargo_parade_warning": {
+          "position": {"x": 48, "y": 24},
+          "size": {"width": 96, "height": 32}
+        },
+        "crossing_progress_bar": {
+          "position": {"x": 0, "y": 72},
+          "size": {"width": 200, "height": 16}
+        },
+        "hit_counter": {
+          "position": {"x": 0, "y": 88},
+          "size": {"width": 100, "height": 24}
+        },
+        "perfect_crossing_badge": {
+          "position": {"x": 0, "y": 112},
+          "size": {"width": 64, "height": 64}
+        }
+      }
+    }
+  },
+  
+  "lighting": {
+    "daytime": {
+      "ambient": {"color": "#87CEEB", "intensity": 0.9},
+      "sun_direction": "overhead",
+      "shadows": "dynamic"
+    },
+    "evening": {
+      "ambient": {"color": "#FF7F50", "intensity": 0.7},
+      "street_lights": {"color": "#FFE4B5", "intensity": 0.6}
+    },
+    "night": {
+      "ambient": {"color": "#2C3E50", "intensity": 0.3},
+      "street_lights": {"color": "#FFE4B5", "intensity": 0.8, "count": 12},
+      "tram_lights": {"color": "#FFFF00", "intensity": 0.7},
+      "bike_lights": {"color": "#FFFFFF", "intensity": 0.5, "moving": true}
+    }
+  },
+  
+  "collision_zones": {
+    "safe_zones": [
+      {"id": "south_sidewalk", "type": "rect", "y_range": [0, 5]},
+      {"id": "north_sidewalk", "type": "rect", "y_range": [34, 40]},
+      {"id": "cafe_terrace", "type": "rect", "x_range": [0, 10], "y_range": [0, 8]},
+      {"id": "pedestrian_island", "type": "rect", "y_range": [18, 21]}
+    ],
+    "hazard_zones": [
+      {"id": "lane_1", "type": "bike_lane", "y_range": [5, 8], "difficulty": "easy"},
+      {"id": "lane_2", "type": "bike_lane", "y_range": [8, 11], "difficulty": "medium"},
+      {"id": "lane_3", "type": "bike_lane", "y_range": [11, 14], "difficulty": "hard"},
+      {"id": "tram_1", "type": "tram_track", "y_range": [14, 18], "lethal": true},
+      {"id": "tram_2", "type": "tram_track", "y_range": [21, 25], "lethal": true},
+      {"id": "lane_4", "type": "bike_lane", "y_range": [25, 28], "difficulty": "hard"},
+      {"id": "lane_5", "type": "bike_lane", "y_range": [28, 31], "difficulty": "medium"},
+      {"id": "lane_6", "type": "bike_lane", "y_range": [31, 34], "difficulty": "easy"}
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": {
+      "count": 5,
+      "max_size": 1024
+    },
+    "cyclist_pool": {
+      "max_active": 12,
+      "pool_size": 24,
+      "recycle_offscreen": true
+    },
+    "draw_calls_budget": 50,
+    "memory_budget_mb": 50,
+    "particle_budget": 80,
+    "target_fps": 60,
+    "touch_zones": {
+      "min_size": 44,
+      "swipe_threshold": 20
+    }
+  }
+}

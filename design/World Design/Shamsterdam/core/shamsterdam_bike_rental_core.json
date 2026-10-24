@@ -1,0 +1,241 @@
+{
+  "location_id": "shamsterdam_bike_rental_01",
+  "display_name": "Shamsterdam Bike Rental",
+  "dutch_name": "Fiets Verhuur",
+  "satirical_subtitle": "Where Tourist Dreams Get Training Wheels",
+  "world": "shamsterdam",
+  "area_zone": "central_bike_crossing_adjacent",
+  "location_type": "service_shop",
+  
+  "access_requirements": {
+    "time_restrictions": {
+      "open": "08:00",
+      "close": "21:00",
+      "closed_message": "Closed. Tourists shouldn't cycle in the dark."
+    },
+    "stat_requirements": null,
+    "location_relative_to": "shamsterdam_bike_crossing_thunderdome_01",
+    "position": "south_sidewalk_adjacent"
+  },
+  
+  "rental_tiers": [
+    {
+      "tier_id": "basic",
+      "display_name": "Basic Rental",
+      "cost": 15,
+      "currency": "euro",
+      "duration": "1_day",
+      "features": [
+        "Standard orange tourist bike",
+        "Lock included (combination forgotten)",
+        "Basket (for stolen items)",
+        "No helmet",
+        "One free 'I told you so' from Dirk"
+      ],
+      "stats": {
+        "speed_bonus": 0,
+        "damage_resistance": 0
+      }
+    },
+    {
+      "tier_id": "premium",
+      "display_name": "Premium Rental",
+      "cost": 25,
+      "currency": "euro",
+      "duration": "1_day",
+      "features": [
+        "Slightly better brakes",
+        "Working bell",
+        "Upgraded lock",
+        "Map holder (map not included)",
+        "Dirk's reluctant respect"
+      ],
+      "stats": {
+        "speed_bonus": 0.05,
+        "damage_resistance": 0.10
+      }
+    },
+    {
+      "tier_id": "survivor",
+      "display_name": "Survivor Package",
+      "cost": 40,
+      "currency": "euro",
+      "duration": "1_day",
+      "features": [
+        "Sturdiest bike in fleet",
+        "Reinforced frame (12 canal recoveries)",
+        "Reflective tape everywhere",
+        "Emergency whistle",
+        "Anneke's phone number (emergency only)"
+      ],
+      "stats": {
+        "speed_bonus": 0.10,
+        "damage_resistance": 0.25
+      }
+    }
+  ],
+  
+  "insurance_packages": [
+    {
+      "insurance_id": "basic",
+      "display_name": "Basic Insurance",
+      "cost": 0,
+      "included_with_rental": true,
+      "covers": ["theft_with_police_report"],
+      "excludes": ["damage", "canal", "user_error", "dutch_cyclists"]
+    },
+    {
+      "insurance_id": "standard",
+      "display_name": "Standard Insurance",
+      "cost": 10,
+      "currency": "euro",
+      "covers": ["theft", "minor_damage"],
+      "excludes": ["canal", "major_damage", "acts_of_cyclist"],
+      "minor_damage_definition": "at_dirks_discretion"
+    },
+    {
+      "insurance_id": "premium",
+      "display_name": "Premium Insurance",
+      "cost": 20,
+      "currency": "euro",
+      "covers": ["theft", "damage", "incidents"],
+      "includes": ["one_free_canal_recovery"],
+      "excludes": ["total_destruction", "fire", "last_tuesday_incident"]
+    },
+    {
+      "insurance_id": "platinum",
+      "display_name": "Platinum Insurance",
+      "cost": 35,
+      "currency": "euro",
+      "covers": ["everything_except_war_and_nuclear"],
+      "includes": [
+        "unlimited_canal_recoveries",
+        "damage_waiver_up_to_500",
+        "opa_willems_blessing"
+      ],
+      "buff_granted": {
+        "buff_id": "opa_willems_blessing",
+        "effect": {"navigation": 0.05},
+        "duration": "rental_duration"
+      },
+      "note": "Nobody has ever NEEDED this tier. Too cautious to crash."
+    }
+  ],
+  
+  "add_ons": [
+    {"id": "helmet", "cost": 5, "duration": "day", "effect": {"collision_survival": 0.10}, "downside": "marks_as_tourist"},
+    {"id": "phone_mount", "cost": 3, "duration": "day", "effect": "gps_visible", "downside": "distraction_risk"},
+    {"id": "basket_liner", "cost": 2, "duration": "permanent", "effect": "prevents_small_item_loss"},
+    {"id": "high_vis_vest", "cost": 4, "duration": "day", "effect": {"visibility": 0.20}, "downside": {"dignity": -0.30}},
+    {"id": "tourist_escort", "cost": 50, "duration": "hour", "effect": "guided_safe_routes"}
+  ],
+  
+  "deposit_system": {
+    "standard_deposit": 150,
+    "bike_replacement_cost": 350,
+    "canal_recovery_fee_found": 75,
+    "canal_recovery_fee_lost": 350,
+    "creative_damage_assessment": "variable_dirks_discretion"
+  },
+  
+  "damage_events": {
+    "description": "Random encounters while cycling",
+    "events": [
+      {"id": "flat_tire", "probability": 0.20, "cost": 8, "severity": "minor"},
+      {"id": "tram_track_accident", "probability": 0.15, "cost": 25, "severity": "moderate"},
+      {"id": "basket_theft", "probability": 0.12, "cost": 10, "severity": "minor"},
+      {"id": "tourist_collision", "probability": 0.10, "cost": 15, "severity": "moderate"},
+      {"id": "local_lesson", "probability": 0.08, "cost": 30, "severity": "moderate"},
+      {"id": "brake_failure_moment", "probability": 0.05, "cost": 20, "severity": "moderate"},
+      {"id": "canal_proximity", "probability": 0.05, "cost_range": [75, 350], "severity": "major"},
+      {"id": "nothing", "probability": 0.25, "cost": 0, "severity": "none"}
+    ],
+    "insurance_note": "Insurance reduces costs, not probability"
+  },
+  
+  "rental_effects": {
+    "bypass_bike_crossing": true,
+    "faster_district_travel": true,
+    "cyclist_shortcuts_access": true,
+    "other_cyclists_judge_harder": true,
+    "theft_risk_when_parked": true,
+    "must_return_or_forfeit": true
+  },
+  
+  "return_outcomes": {
+    "undamaged": {
+      "deposit": "full_refund",
+      "npc_reaction": "dirk_genuine_surprise",
+      "achievement": "responsible_renter",
+      "future_discount": 0.10
+    },
+    "minor_damage": {
+      "deposit": "partial_refund_after_repairs",
+      "npc_reaction": "anneke_damage_photos",
+      "achievement": "at_least_you_tried"
+    },
+    "major_damage": {
+      "deposit": "no_refund",
+      "additional_costs": "damage_assessment",
+      "npc_reaction": "opa_willem_sigh",
+      "achievement": "insurance_was_good_call"
+    },
+    "no_return": {
+      "deposit": "forfeit",
+      "additional_costs": 350,
+      "requires": "police_report_for_insurance",
+      "achievement": "gone_but_not_forgotten",
+      "memorial_board": true
+    }
+  },
+  
+  "recurring_interaction_system": {
+    "first_visit": [
+      "full_introduction_sequence",
+      "insurance_hard_sell",
+      "crossing_warnings",
+      "photo_taken_for_records"
+    ],
+    "return_visit": [
+      "damage_assessment_scene",
+      "deposit_resolution",
+      "dirk_commentary_based_on_condition",
+      "player_file_updated"
+    ],
+    "subsequent_rentals": [
+      "dirk_remembers_you",
+      "history_based_comments",
+      "possible_loyalty_discount_or_surcharge",
+      "anneke_updated_prediction"
+    ]
+  },
+  
+  "state_tracking": {
+    "total_rentals": 0,
+    "total_damage_cost": 0,
+    "bikes_lost_to_canal": 0,
+    "undamaged_returns": 0,
+    "insurance_claims_filed": 0,
+    "current_rental_active": false,
+    "loyalty_discount_earned": false
+  },
+  
+  "achievements": [
+    {"id": "responsible_renter", "trigger": "undamaged_return", "type": "milestone"},
+    {"id": "at_least_you_tried", "trigger": "minor_damage_return", "type": "participation"},
+    {"id": "insurance_was_good_call", "trigger": "major_damage_return_with_insurance", "type": "wisdom"},
+    {"id": "gone_but_not_forgotten", "trigger": "bike_lost_or_stolen", "type": "memorial"},
+    {"id": "tour_de_shame_champion", "trigger": "complete_tour_de_shame_quest", "type": "skill"},
+    {"id": "canal_fisher", "trigger": "complete_canal_recovery_quest", "type": "helper"},
+    {"id": "frequent_renter", "trigger": "5_rentals_completed", "type": "loyalty"},
+    {"id": "damage_free_streak", "trigger": "3_consecutive_undamaged_returns", "type": "mastery"}
+  ],
+  
+  "mobile_optimization": {
+    "draw_calls_max": 30,
+    "memory_budget_mb": 35,
+    "particle_budget": 20,
+    "target_fps": 60,
+    "interaction_type": "menu_based_dialogue"
+  }
+}

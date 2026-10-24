@@ -1,0 +1,183 @@
+{
+  "locations": [
+    {
+      "name": "Velvet Curtain Club",
+      "tag_id": "velvet_curtain_club",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Graffiti-laced alley entrance behind a ruined opera billboard, guarded by cyber-eyed bouncer and a pulsating velvet curtain.",
+        "entry_condition": "+1 Charisma or concert wristband"
+      },
+      "interior": {
+        "theme": "Retro luxury decay meets glitchy goth-lounge",
+        "features": [
+          "entry_point",
+          "couchsurf_trigger",
+          "quest_npc: vape_witch_vanessa",
+          "event_hook: influencer_blood_ritual",
+          "npc_group: failed_influencers"
+        ]
+      },
+      "functions": [
+        "Couchsurf scene",
+        "Sidequest hub",
+        "Club-based events"
+      ]
+    },
+    {
+      "name": "Absinthe Arcade",
+      "tag_id": "absinthe_arcade",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Flickering green-lit archway with Green Fairy mural, leaking arcade sound and neon mist.",
+        "entry_condition": "Accessible after nightfall"
+      },
+      "interior": {
+        "theme": "Psychedelic corrupted arcade bathed in blacklight and glitch fog",
+        "features": [
+          "entry_point",
+          "dungeon_entrance: absynthium_taproom",
+          "couchsurf_trigger",
+          "quest_npc: backpack_girl",
+          "puzzle_node: arcade_mirror_maze"
+        ]
+      },
+      "functions": [
+        "Brewery dungeon entrance",
+        "Couchsurf NPC event",
+        "Environmental puzzle area"
+      ]
+    },
+    {
+      "name": "The Absynthium Taproom",
+      "tag_id": "absynthium_taproom",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Hidden behind a glowing green curtain in the Absinthe Arcade, faint fog leaks into the street. Neon signage flickers between 'Open' and 'Obey.'",
+        "entry_condition": "Bottle Opener Keychain"
+      },
+      "interior": {
+        "theme": "Surrealist absinthe den where gravity feels inconsistent and mirrors reflect alternate selves",
+        "features": [
+          "entry_point",
+          "dungeon_entrance",
+          "mirror_maze_puzzle",
+          "mini_mob: mirror_chad",
+          "boss: green_fairy_wisp",
+          "selfie_prop: glowing_absinthe_chalice"
+        ]
+      },
+      "functions": [
+        "Brewery dungeon",
+        "Navigation/perspective puzzle",
+        "Selfie unlock",
+        "Status risk: Confused"
+      ]
+    },
+    {
+      "name": "The Tap Dat Vault",
+      "tag_id": "tap_dat_vault",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Clocktower Plaza vault door tagged with neon countdown glyphs; faint bass leaks out; opens via hidden switch at midnight.",
+        "entry_condition": "Arrive at midnight or activate hidden clocktower switch"
+      },
+      "interior": {
+        "theme": "Cyberpunk rave cellar—neon piping, subwoofer vats, rhythm‑reactive haze and lights",
+        "features": [
+          "entry_point",
+          "dungeon_entrance",
+          "rhythm_pressure_puzzle",
+          "mini_mob: glitched_brew_ad_bot",
+          "boss: strobe_brewmistress",
+          "selfie_prop: hologram_wall_you_are_brewtiful"
+        ]
+      },
+      "functions": [
+        "Brewery dungeon",
+        "Rhythm/timing puzzle",
+        "Selfie unlock",
+        "Status drawback: Grease Fingers",
+        "Item theft hazard if mini‑mob not interrupted"
+      ]
+    },
+    {
+      "name": "Three-Crown Keg Haus",
+      "tag_id": "three_crown_keg_haus",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Shadowed alley near the Shadow Exchange; sign with three rusting crowns; sticky stones, boiled‑cabbage beer smell.",
+        "entry_condition": "+1 Bravado or distract the bouncer"
+      },
+      "interior": {
+        "theme": "Royal dive—mini‑keg chandeliers, patched booths, mustard ‘art,’ hazy amber sconces",
+        "features": [
+          "entry_point",
+          "stealth_tile_puzzle",
+          "mini_mob: slurring_bar_flies_x2",
+          "boss: keg_sentinel",
+          "selfie_prop: velvet_keg_throne"
+        ]
+      },
+      "functions": [
+        "Brewery dungeon",
+        "Stealth/route puzzle",
+        "Selfie unlock",
+        "Status risk: Embarrassed"
+      ]
+    },
+    {
+      "name": "Ye Olde B.R.E.W. Lab",
+      "tag_id": "ye_olde_brew_lab",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Basement of the Velvet Curtain Club behind a velvet ‘Staff Only’ rope; tap‑shaped camera tracks you; foam seeps through floor cracks.",
+        "entry_condition": "Access via Velvet Curtain Club"
+      },
+      "interior": {
+        "theme": "Retrofuturistic AI/crypto lab—glowing floor panels, neon vats, dancing brew‑bots, random buzzword PA",
+        "features": [
+          "entry_point",
+          "dungeon_entrance",
+          "taste_profile_logic_minigame",
+          "mini_mob: fermenting_algorithm",
+          "boss: cryptobro_brewbot",
+          "selfie_prop: foam_spewing_beer_printer"
+        ]
+      },
+      "functions": [
+        "Brewery dungeon",
+        "Logic/combo minigame",
+        "Selfie unlock",
+        "Status drawback: Tourist Trapped on reward use"
+      ]
+    },
+    {
+  "name": "Shadow Exchange",
+  "tag_id": "shadow_exchange",
+  "region": "Debaucheryville",
+  "exterior": {
+    "description": "Hidden beneath a collapsing arcade awning, marked only by a flickering neon ¥ sign. Alley reeks of stale kebab grease and counterfeit perfume. Entry through a steel hatch guarded by a man with more tattoos than teeth.",
+    "entry_condition": "Requires 50 gold or barter item to enter"
+  },
+  "interior": {
+    "theme": "Underground currency den meets black-market bazaar. Smoky haze, neon-lit rate boards, and whispering deal-makers pressed into narrow stalls.",
+    "features": [
+      "entry_point",
+      "rate_board",
+      "barter_counter",
+      "ledger_interact",
+      "couchsurf_trigger: cryptobro69_ex",
+      "npc_group: shady_dealers"
+    ]
+  },
+  "functions": [
+    "Currency conversion with shifting rates",
+    "Barter for rare gear",
+    "Black market transactions",
+    "Unlock premium stock after boss victory",
+    "Couchsurf scene (CryptoBro69’s Ex)"
+  ]
+}
+  ]
+}

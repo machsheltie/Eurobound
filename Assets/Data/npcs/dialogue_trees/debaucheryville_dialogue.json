@@ -1,0 +1,345 @@
+# File: assets/data/npcs/dialogue_trees/debaucheryville_dialogue.json
+
+{
+  "schema_version": "1.0",
+  "world_name": "debaucheryville",
+  "last_updated": "2025-09-15",
+  "dialogue_trees": {
+    "vlad_validator": {
+      "default_greeting": {
+        "line_id": "vlad_greeting_01",
+        "text": "Whoa there, tourist. This establishment operates on proof-of-stake entry protocols.",
+        "speaker": "Vlad the Validator",
+        "emotion": "dismissive",
+        "animation": "talking",
+        "audio_clip": "bouncer_voice_01",
+        "party_specific_overrides": {
+          "lord_pilsner_present": {
+            "text": "Fiat mentality detected. Please update to digital native mindset.",
+            "emotion": "condescending"
+          },
+          "chadwick_present": {
+            "text": "Respectable follower count, but what's your engagement rate?",
+            "emotion": "calculating"
+          },
+          "bradley_present": {
+            "text": "Bro, you even lift... smart contracts?",
+            "emotion": "confused_crypto_bro"
+          }
+        },
+        "options": [
+          {
+            "text": "What does that even mean?",
+            "leads_to": "vlad_crypto_explanation",
+            "requires": null,
+            "party_reaction": {"Lord_Pilsner": "confused", "Chadwick": "recording", "Bradley": "bored"}
+          },
+          {
+            "text": "[Show NFT Screenshot]",
+            "leads_to": "vlad_nft_impressed",
+            "requires": {"item": "Rare_NFT_Screenshot"},
+            "consumes_item": false
+          },
+          {
+            "text": "Just let us in, crypto nerd.",
+            "leads_to": "vlad_offended_explanation",
+            "sets_flags": ["vlad_insulted"]
+          }
+        ]
+      },
+      "vlad_crypto_explanation": {
+        "line_id": "vlad_explanation_01",
+        "text": "Oh man, you're totally ngmi. Look, imagine if every drink order was verified by a distributed network of—",
+        "speaker": "Vlad the Validator",
+        "emotion": "excited",
+        "animation": "crypto_explanation",
+        "audio_clip": "bouncer_voice_02",
+        "options": [
+          {
+            "text": "This is taking forever...",
+            "leads_to": "vlad_explanation_continues",
+            "party_reaction": {"Lord_Pilsner": "impatient", "Chadwick": "still_recording", "Bradley": "checking_phone"}
+          },
+          {
+            "text": "[Bribe with Electrolyte Pack]",
+            "leads_to": "vlad_bribe_success",
+            "requires": {"item": "Electrolyte_Pack"},
+            "consumes_item": true
+          }
+        ]
+      },
+      "vlad_nft_impressed": {
+        "line_id": "vlad_impressed_01", 
+        "text": "Whoa! Actual digital scarcity! Welcome to the future, citizen. VIP section is through here.",
+        "speaker": "Vlad the Validator",
+        "emotion": "impressed",
+        "animation": "door_opening",
+        "audio_clip": "door_unlock",
+        "unlocks_area": "VIP_Backroom",
+        "sets_flags": ["vlad_respects_party", "vip_access_granted"],
+        "options": [
+          {
+            "text": "Finally...",
+            "leads_to": "conversation_end",
+            "party_reaction": {"Lord_Pilsner": "smug", "Chadwick": "influencer_pose", "Bradley": "relieved"}
+          }
+        ]
+      },
+      "vlad_offended_explanation": {
+        "line_id": "vlad_offended_01",
+        "text": "Nerd? NGU technology is the foundation of Web3 social infrastructure! Do you even understand market cap fundamentals?",
+        "speaker": "Vlad the Validator",
+        "emotion": "offended",
+        "animation": "aggressive_talking",
+        "audio_clip": "bouncer_voice_angry",
+        "options": [
+          {
+            "text": "Here we go again...",
+            "leads_to": "vlad_longer_explanation",
+            "party_reaction": {"Lord_Pilsner": "eye_roll", "Chadwick": "recording_intensifies", "Bradley": "facepalm"}
+          }
+        ]
+      },
+      "repeat_interaction": {
+        "line_id": "vlad_repeat_01",
+        "text": "Back again? Your wallet address is starting to look familiar...",
+        "speaker": "Vlad the Validator", 
+        "emotion": "recognition",
+        "animation": "phone_checking",
+        "conditions": {
+          "flags_present": ["vlad_respects_party"],
+          "text_override": "VIP access is still active, diamond hands."
+        },
+        "conditions": {
+          "flags_present": ["vlad_insulted"],
+          "text_override": "Still think I'm a nerd? My portfolio says otherwise... well, it used to."
+        }
+      }
+    },
+    "crypto_clown": {
+      "default_greeting": {
+        "line_id": "crypto_clown_greeting_01",
+        "text": "Step right up! Witness the amazing blockchain balloon animals! Each one represents a unique NFT opportunity!",
+        "speaker": "Bobo 'The Blockchain' Bitsworth",
+        "emotion": "manic_enthusiasm",
+        "animation": "juggling_coins",
+        "audio_clip": "circus_pitch",
+        "party_specific_overrides": {
+          "lord_pilsner_present": {
+            "text": "A distinguished investor! Let me show you my business plan for decentralized entertainment!",
+            "emotion": "desperate_hope",
+            "animation": "business_card_wave"
+          },
+          "chadwick_present": {
+            "text": "Social media influencer! We should collaborate! I have so many content ideas!",
+            "emotion": "networking_excitement",
+            "animation": "desperate_pitch"
+          },
+          "bradley_present": {
+            "text": "You look strong! Want to invest in my gym-meets-blockchain startup idea?",
+            "emotion": "misguided_enthusiasm",
+            "animation": "flexing_inappropriately"
+          }
+        },
+        "options": [
+          {
+            "text": "What's your act?",
+            "leads_to": "crypto_clown_performance",
+            "party_reaction": {"Lord_Pilsner": "polite_interest", "Chadwick": "recording_immediately", "Bradley": "confused_but_supportive"}
+          },
+          {
+            "text": "Are those real coins?",
+            "leads_to": "crypto_clown_defensive",
+            "party_reaction": {"Lord_Pilsner": "skeptical", "Chadwick": "fact_checking", "Bradley": "touching_coins"}
+          },
+          {
+            "text": "[Give tip]",
+            "leads_to": "crypto_clown_grateful_breakdown",
+            "requires": {"currency": "KC", "amount": 1},
+            "consumes_currency": true
+          },
+          {
+            "text": "[Walk away]",
+            "leads_to": "crypto_clown_desperate_follow",
+            "party_reaction": {"Lord_Pilsner": "dismissive", "Chadwick": "cringe_content", "Bradley": "feels_bad"}
+          }
+        ]
+      },
+      "crypto_clown_performance": {
+        "line_id": "crypto_clown_performance_01",
+        "text": "Behold! I shall make your fiat currency... DISAPPEAR! And replace it with exciting investment opportunities!",
+        "speaker": "Bobo 'The Blockchain' Bitsworth",
+        "emotion": "showman_desperation",
+        "animation": "magic_trick_fail",
+        "audio_clip": "balloon_pop",
+        "triggers_minigame": "rigged_coin_toss",
+        "options": [
+          {
+            "text": "That's just a sales pitch...",
+            "leads_to": "crypto_clown_exposed_but_persistent",
+            "party_reaction": {"Lord_Pilsner": "unimpressed", "Chadwick": "secondhand_embarrassment", "Bradley": "protective_anger"}
+          },
+          {
+            "text": "Tell me about your background.",
+            "leads_to": "crypto_clown_mba_confession",
+            "unlocks_easter_egg": "harvard_mba_revelation"
+          }
+        ]
+      },
+      "crypto_clown_mba_confession": {
+        "line_id": "crypto_clown_mba_01",
+        "text": "Well... I actually have an MBA from Harvard. Investment banking, startup founder, the whole trajectory. Then 2022 happened and... *gestures at balloon animals*",
+        "speaker": "Bobo 'The Blockchain' Bitsworth", 
+        "emotion": "vulnerable_honesty",
+        "animation": "deflated_confession",
+        "audio_clip": "circus_music_sad",
+        "sets_flags": ["bobo_backstory_revealed", "player_knows_education"],
+        "options": [
+          {
+            "text": "That's actually really tragic.",
+            "leads_to": "crypto_clown_gratitude_spiral",
+            "party_reaction": {"Lord_Pilsner": "genuine_sympathy", "Chadwick": "content_gold", "Bradley": "protective_mode"}
+          },
+          {
+            "text": "So why not get a normal job?",
+            "leads_to": "crypto_clown_pride_defense",
+            "party_reaction": {"Lord_Pilsner": "practical_question", "Chadwick": "awkward_silence", "Bradley": "nodding_agreement"}
+          }
+        ]
+      },
+      "crypto_clown_grateful_breakdown": {
+        "line_id": "crypto_clown_tip_01",
+        "text": "You... you actually gave me money? For my performance? I... thank you. This is the first tip I've gotten all week.",
+        "speaker": "Bobo 'The Blockchain' Bitsworth",
+        "emotion": "genuine_gratitude_with_tears",
+        "animation": "overwhelmed_gratitude",
+        "audio_clip": "emotional_circus_music",
+        "sets_flags": ["bobo_humanized", "player_showed_kindness"],
+        "unlocks_shop_discount": 0.5,
+        "options": [
+          {
+            "text": "Are you okay?",
+            "leads_to": "crypto_clown_honest_moment",
+            "party_reaction": {"Lord_Pilsner": "moved", "Chadwick": "stopping_recording", "Bradley": "offering_protein_bar"}
+          }
+        ]
+      },
+      "crypto_clown_honest_moment": {
+        "line_id": "crypto_clown_honest_01",
+        "text": "Okay? I check my old crypto wallets every morning hoping for a miracle. My Harvard classmates cross the street when they see me. But... this interaction? This gives me hope.",
+        "speaker": "Bobo 'The Blockchain' Bitsworth",
+        "emotion": "raw_honesty",
+        "animation": "sitting_on_ground_vulnerable",
+        "audio_clip": "ambient_debaucheryville_distant",
+        "screenshot_moment": true,
+        "social_sharing_trigger": "crypto_clown_humanity_revealed",
+        "options": [
+          {
+            "text": "Want to grab a coffee and talk?",
+            "leads_to": "crypto_clown_friendship_path",
+            "requires": {"flag": "player_showed_kindness"},
+            "sets_flags": ["bobo_friend_route"]
+          },
+          {
+            "text": "Things will get better.",
+            "leads_to": "crypto_clown_hope_restored",
+            "party_reaction": {"Lord_Pilsner": "wise_nod", "Chadwick": "inspired", "Bradley": "group_hug_offer"}
+          }
+        ]
+      },
+      "repeat_interaction": {
+        "line_id": "crypto_clown_repeat_01",
+        "text": "Back for another show? This time I've got a new crypto-circus fusion concept to pitch!",
+        "speaker": "Bobo 'The Blockchain' Bitsworth",
+        "emotion": "renewed_manic_energy",
+        "animation": "hopeful_juggling",
+        "conditions": {
+          "flags_present": ["bobo_friend_route"],
+          "text_override": "Hey! My friend is back! Want to hear about my latest business plan? This one's definitely going to work!"
+        },
+        "conditions": {
+          "flags_present": ["player_showed_kindness"],
+          "text_override": "You came back! That means my performance was memorable, right? Right?"
+        }
+      }
+    },
+    "shadow_exchange_dealer": {
+      "default_greeting": {
+        "line_id": "dmitri_greeting_01",
+        "text": "Psst. You look like tourists who need... better exchange rates. I can help.",
+        "speaker": "Dmitri the Exchanger",
+        "emotion": "conspiratorial",
+        "animation": "looking_around_nervously",
+        "audio_clip": "whispered_voice",
+        "options": [
+          {
+            "text": "What kind of rates?",
+            "leads_to": "dmitri_rates_explanation"
+          },
+          {
+            "text": "This seems sketchy...",
+            "leads_to": "dmitri_defensive"
+          },
+          {
+            "text": "[Report to authorities]",
+            "leads_to": "dmitri_panicked",
+            "requires": {"flag": "police_contact_unlocked"}
+          }
+        ]
+      },
+      "dmitri_rates_explanation": {
+        "line_id": "dmitri_rates_01",
+        "text": "For you? Special tourist rate. Only 30% commission, very fair for underground market!",
+        "speaker": "Dmitri the Exchanger",
+        "emotion": "salesman",
+        "animation": "money_counting",
+        "audio_clip": "coins_rattling",
+        "opens_shop": "currency_exchange",
+        "options": [
+          {
+            "text": "That's highway robbery!",
+            "leads_to": "dmitri_negotiation",
+            "party_reaction": {"Lord_Pilsner": "outraged", "Chadwick": "calculating", "Bradley": "confused_math"}
+          },
+          {
+            "text": "[Make exchange]",
+            "leads_to": "shop_interface",
+            "opens_interface": "currency_exchange"
+          }
+        ]
+      }
+    }
+  },
+  "status_reactions": {
+    "hungover": {
+      "vlad_validator": "Your cognitive hash rate appears compromised. Try some nootropics.",
+      "crypto_clown": "You look like you need some hair of the blockchain that bit you!",
+      "shadow_exchange_dealer": "Rough night? I have some... recovery supplements. Extra charge."
+    },
+    "grease_fingers": {
+      "vlad_validator": "Hygiene protocol violation detected. Please sanitize hands before touching anything.",
+      "crypto_clown": "Even my fake coins wouldn't want to be handled by those fingers!",
+      "shadow_exchange_dealer": "I don't touch money that's been... wherever yours has been."
+    },
+    "embarrassed": {
+      "vlad_validator": "Social credit score dropping in real-time, my dude.",
+      "crypto_clown": "Hey, at least you're not performing for pocket change like me!",
+      "shadow_exchange_dealer": "Embarrassment is just another currency. I can exchange it for regret."
+    }
+  },
+  "world_state_responses": {
+    "vlad_validator": {
+      "visited_publandia": "Debaucheryville has better crypto infrastructure than Publandia's outdated banking system.",
+      "completed_brewery_tour": "Beer is just proof-of-work for your liver, am I right?",
+      "gained_social_media_fame": "Saw your TikTok blow up. That's some serious engagement metrics."
+    },
+    "crypto_clown": {
+      "lost_money_gambling": "Welcome to the club! I lost everything on DogeCoin derivatives!",
+      "helped_other_npcs": "You're building quite the reputation. Want to invest in my comeback tour?"
+    },
+    "shadow_exchange_dealer": {
+      "police_attention": "Maybe we should... not do business for a while. Too much heat.",
+      "party_wealthy": "Ah, I see you've been successful. Perhaps interested in premium services?"
+    }
+  }
+}

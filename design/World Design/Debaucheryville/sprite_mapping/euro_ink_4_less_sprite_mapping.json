@@ -1,0 +1,351 @@
+{
+  "location_id": "debaucheryville_oldtown_euro_ink_4_less_01",
+  
+  "sprite_sheets": {
+    "main_interior": {
+      "file": "shop_interior_complete.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "sections": {
+        "floor_tiles": {
+          "main": {"x": 0, "y": 0, "width": 256, "height": 128},
+          "worn": {"x": 256, "y": 0, "width": 128, "height": 128}
+        },
+        "walls": {
+          "base_white": {"x": 0, "y": 128, "width": 256, "height": 256},
+          "with_flash_art": {"x": 256, "y": 128, "width": 256, "height": 256}
+        },
+        "ceiling": {"x": 512, "y": 0, "width": 256, "height": 128},
+        "beaded_curtain": {"x": 384, "y": 0, "width": 128, "height": 256},
+        "front_window": {"x": 512, "y": 128, "width": 192, "height": 192},
+        "entry_door": {"x": 704, "y": 128, "width": 128, "height": 192},
+        "back_room_glimpse": {"x": 512, "y": 320, "width": 256, "height": 128}
+      }
+    },
+    
+    "exterior_alley": {
+      "file": "exterior_alley.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "alley_floor": {"x": 0, "y": 0, "width": 256, "height": 128},
+        "alley_walls": {"x": 256, "y": 0, "width": 256, "height": 256},
+        "shop_entrance": {"x": 0, "y": 128, "width": 192, "height": 192},
+        "kebab_shop_adjacent": {"x": 192, "y": 128, "width": 160, "height": 192},
+        "currency_exchange_adjacent": {"x": 352, "y": 128, "width": 160, "height": 192},
+        "dumpster": {"x": 0, "y": 320, "width": 96, "height": 64},
+        "street_light": {"x": 96, "y": 256, "width": 32, "height": 128}
+      }
+    },
+    
+    "neon_signage": {
+      "file": "neon_signage.png",
+      "dimensions": {"width": 384, "height": 256},
+      "sign_states": {
+        "full_on": {"x": 0, "y": 0, "width": 192, "height": 64},
+        "flicker_1": {"x": 0, "y": 64, "width": 192, "height": 64},
+        "flicker_2": {"x": 0, "y": 128, "width": 192, "height": 64},
+        "flicker_3": {"x": 0, "y": 192, "width": 192, "height": 64}
+      },
+      "secondary_signs": {
+        "walk_ins_welcome": {"x": 192, "y": 0, "width": 128, "height": 32},
+        "no_regrets": {"x": 192, "y": 32, "width": 128, "height": 48},
+        "window_stickers": {"x": 192, "y": 80, "width": 128, "height": 64},
+        "beer_sign": {"x": 192, "y": 144, "width": 96, "height": 64},
+        "open_sign": {"x": 288, "y": 144, "width": 64, "height": 32}
+      }
+    },
+    
+    "flash_art_wall": {
+      "file": "flash_art_wall.png",
+      "dimensions": {"width": 512, "height": 512},
+      "categories": {
+        "skulls": {"x": 0, "y": 0, "width": 256, "height": 128},
+        "tribal": {"x": 256, "y": 0, "width": 256, "height": 128},
+        "animals": {"x": 0, "y": 128, "width": 256, "height": 128},
+        "looney_tunes": {"x": 256, "y": 128, "width": 256, "height": 128},
+        "hearts_roses": {"x": 0, "y": 256, "width": 128, "height": 128},
+        "dragons": {"x": 128, "y": 256, "width": 128, "height": 128},
+        "text_designs": {"x": 256, "y": 256, "width": 128, "height": 128},
+        "viktor_specials": {"x": 384, "y": 256, "width": 128, "height": 128}
+      },
+      "key_comparison": {
+        "clock_skeleton_reference": {"x": 0, "y": 384, "width": 96, "height": 96},
+        "viktor_interpretation": {"x": 96, "y": 384, "width": 96, "height": 96}
+      }
+    },
+    
+    "viktor_artist": {
+      "file": "viktor_artist.png",
+      "dimensions": {"width": 512, "height": 384},
+      "character_poses": {
+        "idle_standing": {"x": 0, "y": 0, "width": 64, "height": 96},
+        "greeting_gesture": {"x": 64, "y": 0, "width": 64, "height": 96},
+        "showing_sketch": {"x": 128, "y": 0, "width": 64, "height": 96},
+        "pointing_flash": {"x": 192, "y": 0, "width": 64, "height": 96},
+        "seated_working": {"x": 256, "y": 0, "width": 96, "height": 96},
+        "tattooing_1": {"x": 352, "y": 0, "width": 96, "height": 96},
+        "tattooing_2": {"x": 448, "y": 0, "width": 64, "height": 96},
+        "tattooing_3": {"x": 0, "y": 96, "width": 64, "height": 96},
+        "proud_reveal": {"x": 64, "y": 96, "width": 64, "height": 96},
+        "nodding_agreement": {"x": 128, "y": 96, "width": 64, "height": 96},
+        "money_counting": {"x": 192, "y": 96, "width": 64, "height": 96},
+        "confused": {"x": 256, "y": 96, "width": 64, "height": 96}
+      },
+      "detail_sprites": {
+        "arms_tattoos": {"x": 0, "y": 192, "width": 192, "height": 64},
+        "leather_vest": {"x": 192, "y": 192, "width": 64, "height": 64},
+        "gold_tooth": {"x": 256, "y": 192, "width": 32, "height": 32},
+        "reading_glasses": {"x": 288, "y": 192, "width": 32, "height": 16},
+        "cigarette": {"x": 320, "y": 192, "width": 16, "height": 32},
+        "tattoo_gun": {"x": 336, "y": 192, "width": 48, "height": 32},
+        "sketch_pad": {"x": 384, "y": 192, "width": 64, "height": 48}
+      }
+    },
+    
+    "marta_assistant": {
+      "file": "marta_assistant.png",
+      "dimensions": {"width": 256, "height": 192},
+      "poses": {
+        "counter_idle": {"x": 0, "y": 0, "width": 64, "height": 96},
+        "eye_roll": {"x": 64, "y": 0, "width": 64, "height": 96},
+        "shrug": {"x": 128, "y": 0, "width": 64, "height": 96},
+        "cash_handling": {"x": 192, "y": 0, "width": 64, "height": 96},
+        "arms_crossed": {"x": 0, "y": 96, "width": 64, "height": 96},
+        "on_phone": {"x": 64, "y": 96, "width": 64, "height": 96}
+      },
+      "details": {
+        "bleached_hair": {"x": 128, "y": 96, "width": 48, "height": 32},
+        "jewelry": {"x": 176, "y": 96, "width": 48, "height": 32},
+        "nail_inspection": {"x": 128, "y": 128, "width": 64, "height": 32}
+      }
+    },
+    
+    "lord_pilsner_reactions": {
+      "file": "lord_pilsner_reactions.png",
+      "dimensions": {"width": 384, "height": 256},
+      "expressions": {
+        "excited_entry": {"x": 0, "y": 0, "width": 64, "height": 96},
+        "design_review_happy": {"x": 64, "y": 0, "width": 64, "height": 96},
+        "lying_down": {"x": 128, "y": 0, "width": 96, "height": 64},
+        "pain_flinch_1": {"x": 0, "y": 96, "width": 64, "height": 64},
+        "pain_flinch_2": {"x": 64, "y": 96, "width": 64, "height": 64},
+        "pain_flinch_3": {"x": 128, "y": 96, "width": 64, "height": 64},
+        "mirror_check": {"x": 192, "y": 96, "width": 64, "height": 96},
+        "revelation_joy": {"x": 256, "y": 96, "width": 64, "height": 96},
+        "defensive": {"x": 320, "y": 96, "width": 64, "height": 96},
+        "satisfied_leaving": {"x": 0, "y": 160, "width": 64, "height": 96}
+      },
+      "pain_meter_faces": {
+        "level_1": {"x": 192, "y": 0, "width": 32, "height": 32},
+        "level_2": {"x": 224, "y": 0, "width": 32, "height": 32},
+        "level_3": {"x": 256, "y": 0, "width": 32, "height": 32},
+        "level_4": {"x": 288, "y": 0, "width": 32, "height": 32},
+        "level_5": {"x": 320, "y": 0, "width": 32, "height": 32}
+      }
+    },
+    
+    "tattoo_station": {
+      "file": "tattoo_station.png",
+      "dimensions": {"width": 384, "height": 256},
+      "elements": {
+        "chair_empty": {"x": 0, "y": 0, "width": 128, "height": 128},
+        "chair_occupied": {"x": 128, "y": 0, "width": 128, "height": 128},
+        "rolling_cart": {"x": 256, "y": 0, "width": 64, "height": 96},
+        "ink_bottles": {"x": 320, "y": 0, "width": 64, "height": 32},
+        "adjustable_lamp": {"x": 256, "y": 96, "width": 48, "height": 64},
+        "paper_towels": {"x": 304, "y": 96, "width": 32, "height": 32},
+        "autoclave": {"x": 336, "y": 96, "width": 48, "height": 64},
+        "mirror_stand": {"x": 0, "y": 128, "width": 64, "height": 96},
+        "hand_mirror": {"x": 64, "y": 128, "width": 32, "height": 48},
+        "stencil_paper": {"x": 96, "y": 128, "width": 48, "height": 32}
+      },
+      "chair_states": {
+        "reclined_empty": {"x": 0, "y": 176, "width": 128, "height": 80},
+        "reclined_occupied": {"x": 128, "y": 176, "width": 128, "height": 80},
+        "mid_tattoo": {"x": 256, "y": 176, "width": 128, "height": 80}
+      }
+    },
+    
+    "tattoo_process": {
+      "file": "tattoo_process_sequence.png",
+      "dimensions": {"width": 512, "height": 256},
+      "sketch_sequence": {
+        "reference_photo": {"x": 0, "y": 0, "width": 64, "height": 64},
+        "viktor_drawing_1": {"x": 64, "y": 0, "width": 64, "height": 64},
+        "viktor_drawing_2": {"x": 128, "y": 0, "width": 64, "height": 64},
+        "viktor_drawing_3": {"x": 192, "y": 0, "width": 64, "height": 64},
+        "final_sketch_duck": {"x": 256, "y": 0, "width": 64, "height": 64},
+        "sketch_closeup": {"x": 320, "y": 0, "width": 96, "height": 96}
+      },
+      "tattooing_animation": {
+        "stencil_apply": {"x": 0, "y": 64, "width": 96, "height": 64},
+        "outline_start": {"x": 96, "y": 64, "width": 96, "height": 64},
+        "outline_progress_1": {"x": 192, "y": 64, "width": 96, "height": 64},
+        "outline_progress_2": {"x": 288, "y": 64, "width": 96, "height": 64},
+        "outline_complete": {"x": 384, "y": 64, "width": 96, "height": 64},
+        "shading_start": {"x": 0, "y": 128, "width": 96, "height": 64},
+        "shading_progress": {"x": 96, "y": 128, "width": 96, "height": 64},
+        "final_result": {"x": 192, "y": 128, "width": 96, "height": 64},
+        "bandage_apply": {"x": 288, "y": 128, "width": 96, "height": 64}
+      },
+      "duck_tattoo_views": {
+        "fresh_bandaged": {"x": 384, "y": 128, "width": 64, "height": 64},
+        "healed": {"x": 448, "y": 128, "width": 64, "height": 64},
+        "on_lord_pilsner_back": {"x": 0, "y": 192, "width": 96, "height": 64},
+        "closeup_detail": {"x": 96, "y": 192, "width": 96, "height": 64},
+        "mirror_view_backwards": {"x": 192, "y": 192, "width": 64, "height": 64}
+      }
+    },
+    
+    "reception_counter": {
+      "file": "reception_counter.png",
+      "dimensions": {"width": 256, "height": 192},
+      "elements": {
+        "counter_full": {"x": 0, "y": 0, "width": 192, "height": 96},
+        "jewelry_display": {"x": 0, "y": 96, "width": 96, "height": 64},
+        "guest_book": {"x": 96, "y": 96, "width": 48, "height": 32},
+        "lollipop_jar": {"x": 144, "y": 96, "width": 32, "height": 48},
+        "cash_register": {"x": 176, "y": 96, "width": 48, "height": 48},
+        "business_cards": {"x": 192, "y": 0, "width": 64, "height": 32},
+        "fake_license": {"x": 192, "y": 32, "width": 64, "height": 48}
+      }
+    },
+    
+    "waiting_area": {
+      "file": "waiting_area.png",
+      "dimensions": {"width": 256, "height": 192},
+      "furniture": {
+        "chair_1": {"x": 0, "y": 0, "width": 48, "height": 64},
+        "chair_2": {"x": 48, "y": 0, "width": 48, "height": 64},
+        "beanbag": {"x": 96, "y": 0, "width": 64, "height": 48},
+        "coffee_table": {"x": 0, "y": 64, "width": 96, "height": 48},
+        "magazines": {"x": 96, "y": 64, "width": 48, "height": 32},
+        "floor_lamp": {"x": 144, "y": 0, "width": 32, "height": 96},
+        "wall_clock_420": {"x": 176, "y": 0, "width": 32, "height": 32},
+        "wall_of_fame": {"x": 0, "y": 112, "width": 192, "height": 80}
+      }
+    },
+    
+    "shop_effects": {
+      "file": "shop_effects.png",
+      "dimensions": {"width": 256, "height": 192},
+      "lighting": {
+        "neon_glow_pink": {"x": 0, "y": 0, "width": 64, "height": 64},
+        "neon_glow_green": {"x": 64, "y": 0, "width": 64, "height": 64},
+        "fluorescent_flicker_1": {"x": 128, "y": 0, "width": 64, "height": 32},
+        "fluorescent_flicker_2": {"x": 128, "y": 32, "width": 64, "height": 32},
+        "fluorescent_flicker_3": {"x": 192, "y": 0, "width": 64, "height": 32},
+        "work_lamp_spot": {"x": 192, "y": 32, "width": 64, "height": 64}
+      },
+      "particles": {
+        "dust_mote_1": {"x": 0, "y": 64, "width": 16, "height": 16},
+        "dust_mote_2": {"x": 16, "y": 64, "width": 16, "height": 16},
+        "dust_mote_3": {"x": 32, "y": 64, "width": 16, "height": 16},
+        "cigarette_smoke_1": {"x": 48, "y": 64, "width": 32, "height": 48},
+        "cigarette_smoke_2": {"x": 80, "y": 64, "width": 32, "height": 48},
+        "autoclave_steam": {"x": 112, "y": 64, "width": 48, "height": 48},
+        "tattoo_gun_sparks": {"x": 0, "y": 112, "width": 32, "height": 32},
+        "blood_drop": {"x": 32, "y": 112, "width": 16, "height": 16}
+      }
+    },
+    
+    "ui_elements": {
+      "file": "euro_ink_ui.png",
+      "dimensions": {"width": 256, "height": 192},
+      "mini_game": {
+        "hold_still_meter": {"x": 0, "y": 0, "width": 128, "height": 32},
+        "meter_fill_good": {"x": 0, "y": 32, "width": 128, "height": 16},
+        "meter_fill_bad": {"x": 0, "y": 48, "width": 128, "height": 16},
+        "flinch_warning": {"x": 128, "y": 0, "width": 64, "height": 32},
+        "perfect_bonus": {"x": 128, "y": 32, "width": 64, "height": 32}
+      },
+      "shop_menu": {
+        "menu_background": {"x": 0, "y": 64, "width": 192, "height": 96},
+        "item_highlight": {"x": 0, "y": 160, "width": 192, "height": 32},
+        "price_tag": {"x": 192, "y": 64, "width": 48, "height": 24},
+        "sold_out": {"x": 192, "y": 88, "width": 48, "height": 24}
+      },
+      "dialogue_portraits": {
+        "viktor_happy": {"x": 0, "y": 160, "width": 48, "height": 48},
+        "viktor_proud": {"x": 48, "y": 160, "width": 48, "height": 48},
+        "viktor_confused": {"x": 96, "y": 160, "width": 48, "height": 48},
+        "marta_skeptical": {"x": 144, "y": 160, "width": 48, "height": 48},
+        "marta_shrug": {"x": 192, "y": 160, "width": 48, "height": 48}
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "neon_sign_flicker": {
+      "frames": ["full_on", "flicker_1", "full_on", "flicker_2", "full_on", "flicker_3", "full_on"],
+      "timing": "random_3_to_8_seconds",
+      "character_specific": "4"
+    },
+    "tattoo_gun": {
+      "frames": 4,
+      "duration_per_frame": 0.125,
+      "loop": true
+    },
+    "viktor_drawing": {
+      "frames": 5,
+      "total_duration_seconds": 8,
+      "includes": "periodic_proud_glance_at_customer"
+    },
+    "pain_reaction": {
+      "trigger": "mini_game_fail",
+      "duration_seconds": 0.3,
+      "recovery_seconds": 1.0
+    }
+  },
+  
+  "lighting_effects": {
+    "fluorescent_main": {
+      "color": "#F0F8FF",
+      "intensity": 0.9,
+      "flicker_interval": "15_to_45_seconds"
+    },
+    "neon_pink": {
+      "color": "#FF1493",
+      "intensity_range": [0.7, 1.0],
+      "affected_areas": ["signage", "window_glow"]
+    },
+    "neon_green": {
+      "color": "#7FFF00",
+      "intensity": 0.8,
+      "source": "beer_sign"
+    },
+    "work_spotlight": {
+      "color": "#FFFFFF",
+      "intensity": 1.0,
+      "coverage": "tattoo_chair_only",
+      "active_during": "tattooing_sequence"
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "euro_ink_environment",
+        "files": ["shop_interior_complete.png", "exterior_alley.png", "neon_signage.png", "flash_art_wall.png"],
+        "max_size": "1024x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "euro_ink_characters",
+        "files": ["viktor_artist.png", "marta_assistant.png", "lord_pilsner_reactions.png"],
+        "max_size": "512x512",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "euro_ink_process",
+        "files": ["tattoo_station.png", "tattoo_process_sequence.png", "shop_effects.png", "euro_ink_ui.png"],
+        "max_size": "512x512",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "all_effects_full_animation",
+      "medium": "reduced_particles_essential_animations",
+      "low": "static_lighting_key_animations_only"
+    }
+  }
+}

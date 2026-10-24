@@ -1,0 +1,390 @@
+# File: assets/data/npcs/sprite_mappings/debaucheryville_sprites.json
+
+{
+  "schema_version": "1.0",
+  "world_name": "debaucheryville",
+  "last_updated": "2025-09-15",
+  "sprite_sheets": {
+    "bouncer_variants.png": {
+      "sheet_size": [256, 256],
+      "tile_size": [32, 32],
+      "characters": {
+        "vlad_validator": {
+          "base_coordinates": [0, 64],
+          "states": {
+            "idle": {
+              "frames": [[0, 64, 32, 32], [32, 64, 32, 32]],
+              "frame_duration": 3.0,
+              "loop": true,
+              "animation_notes": "Subtle breathing cycle, occasional stance shift"
+            },
+            "talking": {
+              "frames": [[64, 64, 32, 32], [96, 64, 32, 32], [64, 64, 32, 32]],
+              "frame_duration": 0.3,
+              "loop": true,
+              "animation_notes": "Mouth movement, crypto jargon hand gestures"
+            },
+            "vape_cloud": {
+              "frames": [[128, 64, 32, 32], [160, 64, 32, 32], [192, 64, 32, 32]],
+              "frame_duration": 0.8,
+              "loop": false,
+              "triggers_particle": "vape_smoke_effect",
+              "animation_notes": "Inhale, exhale with smoke particle effect",
+              "interval_timing": 12.0
+            },
+            "phone_checking": {
+              "frames": [[224, 64, 32, 32], [0, 96, 32, 32]],
+              "frame_duration": 1.2,
+              "loop": false,
+              "triggers_audio": "phone_notification",
+              "animation_notes": "Quick crypto price check, slight reaction to portfolio",
+              "interval_timing": 8.0
+            },
+            "dismissive_wave": {
+              "frames": [[32, 96, 32, 32], [64, 96, 32, 32]],
+              "frame_duration": 0.6,
+              "loop": false,
+              "animation_notes": "Condescending hand gesture, crypto superiority complex"
+            },
+            "annoyed": {
+              "frames": [[96, 96, 32, 32], [128, 96, 32, 32]],
+              "frame_duration": 0.5,
+              "loop": true,
+              "animation_notes": "Crossed arms, frustrated crypto educator"
+            },
+            "bribed": {
+              "frames": [[160, 96, 32, 32], [192, 96, 32, 32]],
+              "frame_duration": 0.7,
+              "loop": false,
+              "triggers_audio": "coins_jingling",
+              "animation_notes": "Satisfied nod, NFT verification gesture"
+            }
+          },
+          "color_variants": {
+            "crypto_conference_shirt": {
+              "color_swap": {
+                "shirt": "#FF8C00",
+                "jeans": "#1C1C1C", 
+                "chain": "#C0C0C0",
+                "lanyard": "#FFA500"
+              }
+            },
+            "weekend_casual": {
+              "color_swap": {
+                "shirt": "#4169E1",
+                "jeans": "#2F2F2F",
+                "chain": "#C0C0C0",
+                "lanyard": "#87CEEB"
+              }
+            }
+          },
+          "distinguishing_features": {
+            "hodl_tattoo": {"position": [16, 8], "size": [8, 4]},
+            "usb_pendant": {"position": [12, 18], "size": [4, 6]},
+            "conference_lanyard": {"position": [8, 12], "size": [16, 8]}
+          }
+        }
+      }
+    },
+    "circus_performers.png": {
+      "sheet_size": [256, 128], 
+      "tile_size": [32, 32],
+      "characters": {
+        "crypto_clown": {
+          "base_coordinates": [32, 0],
+          "states": {
+            "idle": {
+              "frames": [[32, 0, 32, 32], [64, 0, 32, 32]],
+              "frame_duration": 0.8,
+              "loop": true,
+              "animation_notes": "Forced smile, subtle nervous bounce, MBA diploma peeking from pocket"
+            },
+            "juggling_coins": {
+              "frames": [[96, 0, 32, 32], [128, 0, 32, 32], [160, 0, 32, 32], [128, 0, 32, 32]],
+              "frame_duration": 0.6,
+              "loop": true,
+              "triggers_particle": "fake_coin_trails",
+              "triggers_audio": "coin_toss_sound",
+              "animation_notes": "Exaggerated juggling motion, occasional coin drops",
+              "cycle_duration": 2.4
+            },
+            "desperate_pitch": {
+              "frames": [[192, 0, 32, 32], [224, 0, 32, 32], [192, 0, 32, 32]],
+              "frame_duration": 0.4,
+              "loop": true,
+              "triggers_audio": "business_pitch",
+              "animation_notes": "Manic gesturing, business card waving",
+              "interval_timing": 5.0
+            },
+            "balloon_deflating": {
+              "frames": [[0, 32, 32, 32], [32, 32, 32, 32], [64, 32, 32, 32]],
+              "frame_duration": 2.0,
+              "loop": false,
+              "triggers_particle": "balloon_deflation_effect",
+              "triggers_audio": "balloon_pop",
+              "animation_notes": "Hopeful balloon creation to deflated disappointment",
+              "interval_timing": 8.0
+            },
+            "business_card_wave": {
+              "frames": [[96, 32, 32, 32], [128, 32, 32, 32]],
+              "frame_duration": 0.5,
+              "loop": true,
+              "triggers_particle": "business_card_scatter",
+              "animation_notes": "Enthusiastic card distribution, some fall to ground"
+            },
+            "collapsed": {
+              "frames": [[160, 32, 32, 32]],
+              "frame_duration": 0.0,
+              "loop": false,
+              "animation_notes": "Defeated pose after performance failure, sitting on ground"
+            },
+            "vulnerable_confession": {
+              "frames": [[192, 32, 32, 32], [224, 32, 32, 32]],
+              "frame_duration": 1.5,
+              "loop": true,
+              "animation_notes": "Honest moment, MBA diploma visible, genuine emotion"
+            }
+          },
+          "color_variants": {
+            "fresh_performer": {
+              "color_swap": {
+                "nose": "#FF0000",
+                "patches": "#FF8C00",
+                "costume": "#8A2BE2",
+                "balloons": "#1E90FF"
+              }
+            },
+            "worn_performer": {
+              "color_swap": {
+                "nose": "#CD5C5C",
+                "patches": "#D2691E",
+                "costume": "#9370DB",
+                "balloons": "#808080"
+              }
+            }
+          },
+          "performance_props": {
+            "mba_diploma": {"position": [20, 16], "size": [8, 10], "visibility": "occasional"},
+            "business_cards": {"position": [8, 28], "size": [16, 4], "scatter_pattern": "random"},
+            "deflated_balloons": {"position": [0, 24], "size": [32, 8], "accumulate": true}
+          }
+        }
+      }
+    },
+    "underground_economy.png": {
+      "sheet_size": [128, 128],
+      "tile_size": [32, 32],
+      "characters": {
+        "shadow_exchange_dealer": {
+          "base_coordinates": [0, 32],
+          "states": {
+            "idle": {
+              "frames": [[0, 32, 32, 32], [32, 32, 32, 32]],
+              "frame_duration": 1.5,
+              "loop": true,
+              "animation_notes": "Shifty eyes, occasional glance around"
+            },
+            "counting_money": {
+              "frames": [[64, 32, 32, 32], [96, 32, 32, 32], [64, 32, 32, 32]],
+              "frame_duration": 0.5,
+              "loop": true,
+              "triggers_audio": "paper_rustling",
+              "animation_notes": "Rapid finger movements, bill shuffling"
+            },
+            "nervous_pacing": {
+              "frames": [[0, 64, 32, 32], [32, 64, 32, 32], [0, 64, 32, 32], [64, 64, 32, 32]],
+              "frame_duration": 0.7,
+              "loop": true,
+              "movement_pattern": "back_and_forth_3_tiles",
+              "animation_notes": "Small steps, head turning"
+            },
+            "suspicious": {
+              "frames": [[96, 64, 32, 32]],
+              "frame_duration": 0.0,
+              "loop": false,
+              "triggers_audio": "whispered_shh",
+              "animation_notes": "Finger to lips, paranoid expression"
+            },
+            "hiding": {
+              "frames": [[0, 96, 32, 32], [32, 96, 32, 32]],
+              "frame_duration": 2.0,
+              "loop": false,
+              "animation_notes": "Ducking behind counter, peeking out"
+            }
+          }
+        }
+      }
+    }
+  },
+  "particle_effects": {
+    "vape_smoke_effect": {
+      "texture": "particles/smoke_puff.png",
+      "emission_count": 8,
+      "lifetime": 2.0,
+      "direction": [0, -1],
+      "spread": 45,
+      "initial_velocity": 20,
+      "gravity": [0, -5],
+      "color_fade": {"start": "#FFFFFF", "end": "#CCCCCC00"},
+      "crypto_themed": true
+    },
+    "fake_coin_trails": {
+      "texture": "particles/coin_glint.png", 
+      "emission_count": 3,
+      "lifetime": 0.8,
+      "follows_juggling": true,
+      "color": "#FFD700",
+      "fake_physics": "intentionally_unrealistic"
+    },
+    "balloon_deflation_effect": {
+      "texture": "particles/balloon_pieces.png",
+      "emission_count": 12,
+      "lifetime": 1.5,
+      "direction": [0, 1],
+      "spread": 180,
+      "initial_velocity": 15,
+      "gravity": [0, 9.8],
+      "color_fade": {"start": "#1E90FF", "end": "#808080"},
+      "deflation_sound_sync": true
+    },
+    "business_card_scatter": {
+      "texture": "particles/business_card.png",
+      "emission_count": 5,
+      "lifetime": 3.0,
+      "direction": [45, -45],
+      "spread": 90,
+      "initial_velocity": 10,
+      "gravity": [0, 5],
+      "accumulate_on_ground": true,
+      "mba_logo_visible": true
+    },
+    "phone_notification_glow": {
+      "texture": "particles/screen_glow.png",
+      "emission_count": 1,
+      "lifetime": 0.3,
+      "color": "#00BFFF",
+      "sync_with_audio": "phone_notification",
+      "crypto_price_color_coding": true
+    }
+  },
+  "audio_mapping": {
+    "bouncer_voice_01": {
+      "file": "audio/sfx/character_voices/vlad_greeting.ogg",
+      "volume": 0.8,
+      "pitch_variance": 0.1,
+      "character": "vlad_validator"
+    },
+    "bouncer_voice_02": {
+      "file": "audio/sfx/character_voices/vlad_explanation.ogg", 
+      "volume": 0.8,
+      "pitch_variance": 0.05,
+      "character": "vlad_validator"
+    },
+    "bouncer_voice_angry": {
+      "file": "audio/sfx/character_voices/vlad_offended.ogg",
+      "volume": 0.9,
+      "pitch_variance": 0.0,
+      "character": "vlad_validator"
+    },
+    "vlad_confession_whisper": {
+      "file": "audio/sfx/character_voices/vlad_vulnerable.ogg",
+      "volume": 0.6,
+      "low_pass_filter": 1200,
+      "character": "vlad_validator"
+    },
+    "vape_inhale": {
+      "file": "audio/sfx/ambient/vape_sound.ogg",
+      "volume": 0.4,
+      "pitch_variance": 0.2,
+      "interval_sync": 12.0
+    },
+    "phone_notification": {
+      "file": "audio/sfx/ui/crypto_notification.ogg",
+      "volume": 0.6,
+      "pitch_variance": 0.0,
+      "interval_sync": 8.0,
+      "crypto_price_variant": true
+    },
+    "coins_jingling": {
+      "file": "audio/sfx/items/coins_exchange.ogg",
+      "volume": 0.7,
+      "pitch_variance": 0.15
+    },
+    "circus_pitch": {
+      "file": "audio/sfx/character_voices/bobo_greeting.ogg",
+      "volume": 0.9,
+      "distortion": "circus_filter",
+      "character": "crypto_clown"
+    },
+    "business_pitch": {
+      "file": "audio/sfx/character_voices/bobo_desperate_pitch.ogg",
+      "volume": 0.8,
+      "speed_increase_over_time": true,
+      "character": "crypto_clown"
+    },
+    "circus_music_sad": {
+      "file": "audio/sfx/ambient/circus_melancholy.ogg",
+      "volume": 0.5,
+      "low_pass_filter": 800,
+      "emotional_weight": "heavy"
+    },
+    "coin_drop": {
+      "file": "audio/sfx/minigames/coin_fail.ogg",
+      "volume": 0.5,
+      "pitch_variance": 0.3,
+      "failure_emphasis": true
+    },
+    "balloon_pop": {
+      "file": "audio/sfx/ambient/balloon_deflate.ogg",
+      "volume": 0.6,
+      "disappointment_timing": true
+    },
+    "nervous_laughter": {
+      "file": "audio/sfx/character_voices/bobo_nervous_laugh.ogg",
+      "volume": 0.7,
+      "pitch_variance": 0.4,
+      "character": "crypto_clown"
+    },
+    "emotional_circus_music": {
+      "file": "audio/sfx/ambient/circus_emotional.ogg",
+      "volume": 0.5,
+      "builds_intensity": true,
+      "screenshot_moment_sync": true
+    },
+    "whispered_voice": {
+      "file": "audio/sfx/character_voices/dmitri_whisper.ogg",
+      "volume": 0.6,
+      "low_pass_filter": 800,
+      "character": "shadow_exchange_dealer"
+    },
+    "paper_rustling": {
+      "file": "audio/sfx/ambient/money_counting.ogg",
+      "volume": 0.4,
+      "pitch_variance": 0.25
+    }
+  },
+  "interaction_zones": {
+    "standard_npc": {
+      "radius": 48,
+      "shape": "circle",
+      "visual_indicator": "interaction_prompt.png"
+    },
+    "performer_npc": {
+      "radius": 64,
+      "shape": "circle", 
+      "visual_indicator": "performance_zone.png"
+    },
+    "merchant_npc": {
+      "radius": 32,
+      "shape": "rectangle",
+      "size": [64, 48],
+      "visual_indicator": "shop_counter.png"
+    }
+  },
+  "mobile_optimization": {
+    "texture_compression": "ETC2_RGBA8",
+    "max_simultaneous_animations": 3,
+    "particle_count_mobile": 0.5,
+    "audio_compression": "OGG_VORBIS_44KHZ"
+  }
+}

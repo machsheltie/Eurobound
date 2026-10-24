@@ -1,0 +1,253 @@
+{
+  "locations": [
+    {
+      "name": "The Cloverleaf",
+      "tag_id": "publandia_outskirts_cloverleaf_roundabout_01",
+      "region": "Publandia",
+      "exterior": {
+        "description": "A country road narrows as you approach, stone walls lining both sides with sheep visible in distant fields. Grey Irish sky overhead, constant light drizzle. The roundabout appears impossibly large - six identical green exit signs, a massive grass center island with an ancient Celtic monument, and dozens of vehicles circling endlessly. A faded 'CLIFFS OF MOHER - NEXT EXIT' sign has been promising that since 1987.",
+        "entry_condition": "Rental car keys from Paddy's Premium Motors; auto-triggered when driving east from Paddy's"
+      },
+      "interior": {
+        "theme": "Eternal circulation, absurdist society, existential driving nightmare",
+        "features": [
+          "entry_point: merge_lane",
+          "puzzle_node: lane_merge_timing",
+          "puzzle_node: exit_timing",
+          "quest_npc: patrick_osullivan_01",
+          "quest_npc: orla_brennan_tour_leader_01",
+          "quest_npc: sean_murphy_exit_01",
+          "quest_npc: chef_maeve_01",
+          "quest_npc: brenda_doyle_instructor_01",
+          "shop_node: food_truck",
+          "couchsurf_trigger: tour_bus_community",
+          "couchsurf_trigger: wedding_van_patrick",
+          "selfie_prop: wedding_van_with_margaret",
+          "selfie_prop: celtic_monument",
+          "selfie_prop: tour_bus_community_group",
+          "selfie_prop: gift_shop_opening_soon",
+          "npc_group: tour_bus_residents",
+          "npc_group: murphy_family",
+          "event_hook: wedding_van_discovery",
+          "event_hook: sean_philosophy_reveal",
+          "event_hook: gps_breakdown",
+          "event_hook: path_choice_trigger",
+          "hidden_area: center_island_grass",
+          "mini_mob: background_traffic"
+        ]
+      },
+      "functions": [
+        "Major set-piece driving puzzle",
+        "Binary path quest (escape vs. adaptation)",
+        "NPC community ecosystem",
+        "Existential horror comedy delivery",
+        "Couchsurf location (vehicles)",
+        "Food vendor access point",
+        "Selfie prop collection",
+        "Philosophical narrative moment"
+      ]
+    },
+    {
+      "name": "The Cloverleaf - Center Island",
+      "tag_id": "publandia_outskirts_cloverleaf_center_island_01",
+      "region": "Publandia",
+      "exterior": {
+        "description": "A massive grass island in the middle of the roundabout, approximately 200 meters in diameter. Perfectly manicured (nobody knows who maintains it). Features an ancient Celtic cross monument of unknown origin and a tiny stone cottage gift shop that has been 'Opening Soon' since 1994.",
+        "entry_condition": "Bravado 5+ and desperate/drunk status (usually results in getting stuck)"
+      },
+      "interior": {
+        "theme": "Mysterious untouchable center of eternal circulation",
+        "features": [
+          "entry_point: grass_approach (risky)",
+          "landmark: celtic_monument",
+          "locked_building: gift_shop",
+          "readable: information_board",
+          "selfie_prop: celtic_monument",
+          "hidden_area: gift_shop_window_peek",
+          "event_hook: tractor_rescue_if_stuck"
+        ]
+      },
+      "functions": [
+        "Landmark and visual centerpiece",
+        "Mystery element (who built the monument?)",
+        "Comedy set piece (eternal gift shop)",
+        "Optional risky exploration",
+        "Information/hint source"
+      ]
+    },
+    {
+      "name": "The Cloverleaf - Inner Lane",
+      "tag_id": "publandia_outskirts_cloverleaf_inner_lane_01",
+      "region": "Publandia",
+      "exterior": {
+        "description": "The fast lane closest to the center island. Aggressive drivers, frequent honking, dangerous merge attempts. The learner car weaves through here badly, causing chaos.",
+        "entry_condition": "Successful lane merge minigame; Bravado 2+ recommended"
+      },
+      "interior": {
+        "theme": "High-speed chaos, best exit angles but highest risk",
+        "features": [
+          "entry_point: merge_from_middle",
+          "puzzle_node: aggressive_merge",
+          "npc_group: aggressive_locals",
+          "quest_npc: brenda_doyle_instructor_01 (passing through)",
+          "quest_npc: kevin_student_01 (driving badly)",
+          "event_hook: near_miss_reactions",
+          "hazard: sudden_braking"
+        ]
+      },
+      "functions": [
+        "High-risk driving challenge",
+        "Best exit access angles",
+        "Comedy chaos zone",
+        "Learner car encounters"
+      ]
+    },
+    {
+      "name": "The Cloverleaf - Middle Lane",
+      "tag_id": "publandia_outskirts_cloverleaf_middle_lane_01",
+      "region": "Publandia",
+      "exterior": {
+        "description": "The default lane where most traffic flows. Home to the 1987 Wedding Van's eternal honeymoon and Seán's philosophical circling. Moderate speed, moderate access to exits.",
+        "entry_condition": "Default lane on entry; standard merge from other lanes"
+      },
+      "interior": {
+        "theme": "The eternal middle ground - not too fast, not too slow, never escaping",
+        "features": [
+          "entry_point: default_merge",
+          "quest_npc: patrick_osullivan_01",
+          "quest_npc: margaret_skeleton_01",
+          "quest_npc: sean_murphy_exit_01",
+          "vehicle_interaction: wedding_van_window",
+          "vehicle_interaction: seans_car_window",
+          "event_hook: wedding_van_discovery",
+          "event_hook: sean_philosophy_reveal",
+          "selfie_prop: wedding_van_with_margaret",
+          "couchsurf_trigger: wedding_van_patrick"
+        ]
+      },
+      "functions": [
+        "Primary narrative lane",
+        "Key NPC encounters",
+        "Emotional core (Patrick/Margaret)",
+        "Philosophical horror (Seán)",
+        "Couchsurf access"
+      ]
+    },
+    {
+      "name": "The Cloverleaf - Outer Lane",
+      "tag_id": "publandia_outskirts_cloverleaf_outer_lane_01",
+      "region": "Publandia",
+      "exterior": {
+        "description": "The slow lane furthest from the center. Home to the Tour Bus Community, the Family Van, and the Food Truck's service route. Safest for new arrivals but exits often blocked by larger vehicles.",
+        "entry_condition": "Easy merge from middle lane; safest entry point"
+      },
+      "interior": {
+        "theme": "The slow lane of acceptance - community, food, adaptation",
+        "features": [
+          "entry_point: easy_merge",
+          "quest_npc: orla_brennan_tour_leader_01",
+          "quest_npc: chef_maeve_01",
+          "quest_npc: murphy_family",
+          "quest_npc: padraig_farmer_01 (passing through)",
+          "shop_node: food_truck_cloverleaf",
+          "vehicle_interaction: tour_bus_entrance",
+          "vehicle_interaction: food_truck_window",
+          "vehicle_interaction: family_van_wave",
+          "event_hook: tour_bus_orientation",
+          "event_hook: food_truck_intercept",
+          "couchsurf_trigger: tour_bus_community",
+          "selfie_prop: tour_bus_community_group",
+          "npc_group: tour_bus_residents"
+        ]
+      },
+      "functions": [
+        "Community hub",
+        "Food access",
+        "Path B adaptation zone",
+        "Safest driving experience",
+        "Social interactions",
+        "Couchsurf access"
+      ]
+    },
+    {
+      "name": "The Cloverleaf - Merge Zone",
+      "tag_id": "publandia_outskirts_cloverleaf_merge_zone_01",
+      "region": "Publandia",
+      "exterior": {
+        "description": "The chaotic entry point where country roads feed into the roundabout. Yield signs everywhere, constant near-misses, and the point of no return once you commit to the merge.",
+        "entry_condition": "Auto-entry when approaching from any country road"
+      },
+      "interior": {
+        "theme": "Chaos, confusion, the point of no return",
+        "features": [
+          "entry_point: country_road_merge",
+          "puzzle_node: merge_timing",
+          "hazard: near_miss_traffic",
+          "event_hook: entry_sequence",
+          "event_hook: gps_first_recalculating"
+        ]
+      },
+      "functions": [
+        "Entry challenge",
+        "Tutorial zone for lane mechanics",
+        "GPS introduction",
+        "Tone-setting chaos"
+      ]
+    },
+    {
+      "name": "The Cloverleaf - Exit 6 (Cliffs of Moher)",
+      "tag_id": "publandia_outskirts_cloverleaf_exit_6_01",
+      "region": "Publandia",
+      "exterior": {
+        "description": "The exit that leads to the Cliffs of Moher - Patrick and Margaret's original honeymoon destination 37 years ago. Seán knows exactly how to take it. He never does.",
+        "entry_condition": "Speed below threshold; successful exit timing"
+      },
+      "interior": {
+        "theme": "The achievable dream that remains untaken",
+        "features": [
+          "exit_point: cliffs_of_moher_road",
+          "event_hook: sean_passes_without_taking",
+          "event_hook: successful_exit_celebration",
+          "narrative_weight: patrick_margaret_destination"
+        ]
+      },
+      "functions": [
+        "Primary escape route",
+        "Seán's philosophical horror",
+        "Patrick/Margaret's untaken journey",
+        "Quest completion trigger"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "lane_transitions": [
+      {"from": "merge_zone", "to": "outer_lane", "difficulty": "easy"},
+      {"from": "merge_zone", "to": "middle_lane", "difficulty": "medium"},
+      {"from": "merge_zone", "to": "inner_lane", "difficulty": "hard"},
+      {"from": "outer_lane", "to": "middle_lane", "difficulty": "easy"},
+      {"from": "middle_lane", "to": "outer_lane", "difficulty": "easy"},
+      {"from": "middle_lane", "to": "inner_lane", "difficulty": "medium"},
+      {"from": "inner_lane", "to": "middle_lane", "difficulty": "medium"},
+      {"from": "inner_lane", "to": "outer_lane", "difficulty": "hard"},
+      {"from": "any_lane", "to": "center_island", "difficulty": "very_hard", "consequence": "stuck"}
+    ],
+    "exit_access": [
+      {"lane": "inner_lane", "exit_difficulty": "best_angles"},
+      {"lane": "middle_lane", "exit_difficulty": "decent"},
+      {"lane": "outer_lane", "exit_difficulty": "often_blocked"}
+    ]
+  },
+  
+  "spatial_layout": {
+    "total_diameter_meters": 400,
+    "center_island_diameter_meters": 200,
+    "lane_widths_meters": {
+      "inner": 4,
+      "middle": 5,
+      "outer": 6
+    },
+    "exit_count": 6,
+    "exit_spacing_degrees": 60
+  }
+}

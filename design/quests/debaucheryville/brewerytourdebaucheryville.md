@@ -1,9 +1,30 @@
 # Enhanced Brewery Tour - Debaucheryville
 
-**Region:** Debaucheryville (Prague Parody)  
-**Prerequisite:** Must have acquired the Bottle Opener Keychain in Publandia to access brewery doors.
+**Authority:** `design/quests/general_quests/brewerytour.md` is the master spec and wins every
+conflict. Aligned to the master spec 2026-08-05: dead opener-vendor and ICQ opener-sale
+mechanics removed (no replacement scam gag invented — none was ordered); Y2K Brewery Bingo,
+Peak Y2K Tourist, the four selfie props, the access gates, and the Neon Nightmare hangover
+block are retained/corrected below. Item-level detail (stamp/opener/beer stat blocks, PNG
+specs) lives in each collectible's own file under `design/items/brewery_tour/`.
+
+**Prerequisite:** Must have acquired the Bottle Opener Keychain (granted at the Publandia
+trigger) to access brewery doors.
 
 **Gameplay:** Each brewery is a micro-interior dungeon. Clear an obstacle (yeast monsters, intoxicated tour guides, gimmicky puzzles).
+
+---
+
+## Overview Table
+
+| Slot | Location | Stamp | Opener | Signature Beer |
+|---|---|---|---|---|
+| 1 | The Absinthium Taproom | Green fairy in cracked glass, shifting emerald ink | Cracked absinthe glass, "I Saw Myself" | Absinthe Lager — 8.5% ABV, 12 Sovs |
+| 2 | Three-Crown Keg Haus | Three rusted crowns over stein, rust-orange ink | Stacked crowns, "Noble by Liver" | Iron Gut Tripel — 11.5% ABV, 10 Sovs |
+| 3 | The Tap Dat Vault | Soundwave in vault door, electric cyan/hot pink ink | Vault door, "Inhaled & Survived" | Vape Stout — 6.9% ABV, 14 Sovs |
+| 4 | Ye Olde B.R.E.W. Lab | Pixelated hop cone with blockchain hash, neon blue ink | Pixelated hop cone, "Algorithm Verified" | Blockchain Bock — 7.2% ABV, 18 Sovs (±5 fluctuation) |
+
+Full stat blocks, PNG specs, and Notes (including salvaged gatekeeper dialogue) live in each
+item's own file under `design/items/brewery_tour/`.
 
 ---
 
@@ -36,21 +57,9 @@
 
 **Satirical Delusion:** Bros think Green Fairy Confusion is them "getting cultured" instead of just drunk.
 
-**ICQ Integration (Miss Morphine):**
-```
-💚 ABSINTHE ENLIGHTENMENT AWAITS 💚
-.-""""""-.
-/          \
-| CULTURED  |
-|   BROS    |
-|  NEEDED  |
-\          /
-'-.......-'
-40 Sovs for "spiritual awakening"
-```
-
 **Brew Reward:**
 - **Absinthe Lager** — Restores +15 SP, 30% chance to apply Confused to user
+- Full stat block: `design/items/brewery_tour/beer_absinthium_taproom_item.md`
 
 **Enhanced Selfie Prop:** 
 - **"Mystical Absinthe Selfie"** — Makes them look pretentious in photos, NPCs comment on their "fake deep" poses
@@ -88,17 +97,10 @@
 
 **Satirical Delusion:** Bros convince themselves this dive bar is "real European culture."
 
-**ICQ Integration (Tony420):**
-```
-🏰 AUTHENTIC EUROPEAN DIVE EXPERIENCE 🏰
-yo heard u want real culture
-got discount nobility upgrade packages
-30 Sovs - includes fake family crest
-Warning: may cause delusions of sophistication
-```
-
 **Brew Reward:**
-- **Iron Gut Tripel** — +40 HP, applies Inspired but lowers Accuracy next turn
+- **Iron Gut Tripel** — +40 HP, applies Inspired but lowers Accuracy next turn (next turn
+  only — ruled, extraction Rulings Contradiction 2)
+- Full stat block: `design/items/brewery_tour/beer_three_crown_keg_haus_item.md`
 
 **Enhanced Selfie Prop:**
 - **"Authentic Dive Bar Selfie"** — Clearly staged, everyone can tell they're tourists
@@ -138,17 +140,9 @@ Warning: may cause delusions of sophistication
 
 **Satirical Delusion:** Bros are confused by vape brewing but pretend it's sophisticated.
 
-**ICQ Integration (RedRoomRandy):**
-```
-⚡ CYBER-BREWERY VIP ACCESS ⚡
-See what happens after midnight
-100 Sovs download link guaranteed exclusive
-Perfect for "tech-savvy" American tourists
-Warning: May contain Y2K bugs
-```
-
 **Brew Reward:**
 - **Vape Stout** — Restores SP and applies Glow-Up Aura (Charm/Defense up), but causes Grease Fingers
+- Full stat block: `design/items/brewery_tour/beer_tap_dat_vault_item.md`
 
 **Enhanced Selfie Prop:**
 - **"Tech Bro Selfie"** — Glitched effects make them look even more out of touch
@@ -188,18 +182,10 @@ Warning: May contain Y2K bugs
 
 **Satirical Delusion:** Bros think they understand blockchain technology and this is an investment opportunity.
 
-**ICQ Integration (CryptoBro69):**
-```
-🤖 BREWBOT INVESTMENT OPPORTUNITY 🤖
-Get rich with AI beer algorithms!
-BREWERYCOIN launching after ur tour!
-500 Sovs minimum (expired Friendster accounts accepted)
-This is definitely financial advice
-```
-
 **Brew Reward:**
 - **Blockchain Bock** — +20 HP, +10 Sovs, applies Tourist Trapped next battle
 - **Enhanced Effect:** *"You feel smarter but everyone else feels dumber listening to you"*
+- Full stat block: `design/items/brewery_tour/beer_ye_olde_brew_lab_item.md`
 
 **Enhanced Selfie Prop:**
 - **"Investor Selfie"** — Poses them like they understand technology they clearly don't
@@ -232,18 +218,55 @@ Failing one locks you out for 1 in-game hour (real-time = 5 min).
 
 ---
 
-## **💀 Enhanced "Legendary Hangover" Reward**
+## **💀 Debaucheryville Legendary Hangover — "The Neon Nightmare"**
 
-**Completing all 4 breweries in Debaucheryville unlocks:**
+**Unlock:** all 4 Debaucheryville stamps collected.
 
-**Legendary Hangover (item):** +25 HP, +10 SP, +2 All Stats for 3 turns, then applies Hungover for next 2 battles.
+- **Effect:** +20 to ALL stats for the entire battle, plus Confusion immunity during the
+  battle
+- **Consequence:** inflicts **"Neon Nightmare Hungover"** status after the battle ends
+- **Neon Nightmare Hungover effects:**
+  - -15 all stats for 45 minutes
+  - Random control reversal (10% chance per input)
+  - Screen occasionally flickers with a "glitch" effect
+  - NPCs comment on your appearance
+- **Cure:** a full meal (Plot Armor Provisions equivalent), sleep, or a 45-minute wait
+- **Price:** 75 Sovs, repurchasable from any stamped Debaucheryville location
+- **Flavor text:** *"Four stamps. Four different ways to question reality. The night was
+  legendary. The morning is punishment."*
 
-**Enhanced Satirical Tooltip:** *"You don't remember last night, but everyone else does. Also, you posted 47 Instagram stories."*
+**Strategic Use:**
+- Stronger than Publandia's Legendary Hangover (+20 vs +15)
+- Longer recovery period (45 min vs 30 min)
+- Additional "glitch" effects make post-battle navigation harder
+- Best saved for major boss fights in Debaucheryville
 
 **Post-Tour Consequences:**
 - **Social media posts** they don't remember making
 - **NPCs reference** their brewery tour as "those American guys who thought vape beer was sophisticated"
 - **Permanent city reputation:** Known as the tourists who took brewery tours way too seriously
+
+---
+
+## **📸 Debaucheryville Selfie Spots — "Neon Photogenic" Badge**
+
+| Location | Selfie Spot | Standard Photo | Special Variant |
+|---|---|---|---|
+| The Absinthium Taproom | Floating absinthe chalice behind bar | With glowing green mist | With Dr. Vaněk (complete his "research survey") |
+| The Tap Dat Vault | "You Are Brewtiful" hologram wall | Neon glow, vapor clouds | With Strobe Brewmistress silhouette (post-boss) |
+| Three-Crown Keg Haus | Velvet keg throne | "Drunken monarchy" pose | With Keg Sentinel wreckage (post-boss) |
+| Ye Olde B.R.E.W. Lab | Algorithm Archive terminal | Blockchain hash background | With defeated BrewBot (post-boss) |
+
+**Full Debaucheryville Selfie Collection Reward:**
+- Badge: **"Neon Photogenic"**
+- +5% resistance to "Confused" status, permanently — belongs to this badge ONLY; the
+  "Debaucheryville Collector" opener-achievement is dead (see Notes) and never granted this
+  buff (extraction Rulings Contradiction 4)
+- NPCs in Debaucheryville occasionally recognize you
+
+These four spots are the mechanical selfie-gallery entries; the "Enhanced Selfie Prop"
+one-liners under each brewery above describe the pose/vibe at each location and are not a
+separate system.
 
 ---
 
@@ -258,42 +281,13 @@ Failing one locks you out for 1 in-game hour (real-time = 5 min).
 - **AOL Email Detection** ✅ (B.R.E.W. Lab - BrewBot recognition)
 - **2001 Dance Moves** ✅ (Tap Dat Vault - rhythm puzzle failure)
 - **Pokemon Card Trading** ✅ (Tap Dat Vault - Glitched Ad Bot)
-- **Friendster Account Payment** ✅ (B.R.E.W. Lab - CryptoBro69 ICQ)
 - **Hemingway Comparison** ✅ (Three-Crown - Pilsner delusion)
 
 **Bingo Completion Reward:**
 - **"Y2K Archaeologist" Achievement** unlocked
-- **Special ICQ popup:** *"CONGRATULATIONS! You've spotted every cringe reference! Tony420 wants to hire you as cultural consultant for 420 Sovs."*
 - **Permanent buff:** "+1 Nostalgia Resistance" (immune to status effects caused by outdated references)
 
-### **📱 High-Impact Feature #2: ICQ Popup Social Media Sharing**
-
-**One-Tap Share Integration:**
-Each ICQ popup includes **"Share This Scam"** button that generates:
-
-**Miss Morphine ASCII Share:**
-```
-Just got this "authentic" European culture spam 😂
-.-""""""-.
-/  CULTURED \
-|    BROS    |
-|   NEEDED  |
-\          /
-'-.......-'
-#EuroboundGame #Y2KNostalgia #ICQScammers
-```
-
-**Tony420 Share Template:**
-```
-This ICQ scammer is still trying to sell me nobility packages in 2025 💀
-"30 Sovs - includes fake family crest"
-Some things never change 😅
-#DebaucheryvilleLife #ICQClassics #EuroboundMoments
-```
-
-**Auto-Generated Hashtags:** #EuroboundGame #Y2KNostalgia #ICQScammers #DebaucheryvilleLife #BreweryTour
-
-### **📸 High-Impact Feature #3: Enhanced Selfie Compilation**
+### **📸 High-Impact Feature #2: Enhanced Selfie Compilation**
 
 **"Brewery Bro Safari" Auto-Generated Compilation:**
 
@@ -321,23 +315,20 @@ After completing all 4 breweries, game automatically generates shareable video c
 
 ### **🎮 Cross-Feature Integration Bonuses**
 
-**Triple Achievement Unlock:**
-Complete Y2K Bingo + Share 3 ICQ popups + Create selfie compilation = **"Peak Y2K Tourist"** mega-achievement
+**Double Achievement Unlock:**
+Complete Y2K Bingo + Create selfie compilation = **"Peak Y2K Tourist"** mega-achievement
 
 **Mega-Achievement Rewards:**
-- **Exclusive ICQ popup from Hamstradamus:** *"Whiskers see: You have mastered the ancient art of cringe documentation. 69 Sovs for prophecy about your next embarrassing moment."*
 - **Special brewery keychain upgrade:** Bottle opener now plays MIDI "Hamster Dance" when used
 - **Unique status effect:** "Nostalgically Self-Aware" (+2 Charm, but random NPCs ask if you're "doing this ironically")
 
 ### **📊 Social Media Amplification System**
 
 **Viral Coefficient Multipliers:**
-- **Each ICQ share** increases game's social media presence by +0.3%
 - **Selfie compilation shares** create +1.2% organic reach boost
 - **Y2K Bingo completion posts** generate +0.7% community engagement
 
 **Community Challenge Integration:**
-- **Weekly leaderboard** for most creative ICQ popup shares
 - **Monthly selfie compilation contest** with community voting
 - **Y2K reference discovery rewards** for finding hidden easter eggs in other cities
 
@@ -357,3 +348,31 @@ The brewery tour becomes a **perfect vehicle** for showing how these aging bros 
 4. **B.R.E.W. Lab:** Investment guru fantasy
 
 **The real satirical payoff:** After completing this entire "cultural experience," they're still the same delusional aging frat bros who think frosted tips and cargo shorts make them European sophisticates.
+
+---
+
+## Notes — Reconciliation to Master Spec (2026-08-05)
+
+- **Removed:** all four "ICQ Integration" popup blocks (Miss Morphine, Tony420, RedRoomRandy,
+  CryptoBro69) — each one sold openers or opener-adjacent packages for Sovs, which is dead
+  per the master spec's earned-not-bought opener model. No replacement scam gag was invented;
+  none was ordered.
+- **Removed:** the "ICQ Popup Social Media Sharing" feature and its share templates — it
+  existed only to promote the now-dead popups above.
+- **Removed:** the "Friendster Account Payment" Y2K Bingo square and the Tony420
+  "hire you for 420 Sovs" bingo reward line — both cited the now-removed CryptoBro69 popup as
+  their source.
+- **Adjusted:** "Peak Y2K Tourist" mega-achievement now requires Y2K Bingo + selfie
+  compilation only (the "Share 3 ICQ popups" leg is gone with the feature it depended on);
+  its rewards (MIDI Hamster Dance opener upgrade, "Nostalgically Self-Aware" +2 Charm) are
+  unchanged.
+- **Kept as-is:** Y2K Brewery Bingo, "Y2K Archaeologist" achievement, the four brewery-level
+  "Enhanced Selfie Prop" one-liners, the access gates (Three-Crown +1 Bravado, Tap Dat Vault
+  midnight-only, 1-hour first-entry lockout, time-gated states under Time-Based Satirical
+  Elements).
+- **Corrected:** the Legendary Hangover block now matches the master spec's named reward
+  ("The Neon Nightmare," +20/-15/45 min/75 Sovs) — the file previously had unnamed,
+  non-canonical numbers (+25 HP/+10 SP/+2 all stats/3 turns) that matched no other source.
+- **Added:** the Overview Table (top) and the "Debaucheryville Selfie Spots" table with the
+  "Neon Photogenic" badge, both pulled from `design/items/brewery_passport_book_debaucheryville.md`
+  — quest-layer content that belongs in this file per the master spec's item/quest split.

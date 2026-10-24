@@ -1,0 +1,278 @@
+{
+  "location_id": "shamsterdam_bike_rental_01",
+  
+  "interactive_objects": {
+    "service_points": [
+      {
+        "object_id": "main_counter",
+        "type": "service_desk",
+        "display_name": "Rental Counter",
+        "description": "The main service counter. Forms, waivers, and credit card machines await your poor decisions.",
+        "npc_assigned": "dirk_rental_owner_01",
+        "services_available": [
+          "bike_rental",
+          "bike_return",
+          "insurance_purchase",
+          "damage_assessment"
+        ]
+      },
+      {
+        "object_id": "insurance_counter",
+        "type": "service_desk",
+        "display_name": "Insurance & Forms Counter",
+        "description": "Anneke's domain. Clipboards, camera, and a well-rehearsed pitch.",
+        "npc_assigned": "anneke_counter_01",
+        "services_available": [
+          "insurance_upgrade",
+          "add_on_purchase",
+          "form_completion"
+        ]
+      },
+      {
+        "object_id": "repair_station_entrance",
+        "type": "zone_transition",
+        "display_name": "Repair Station Doorway",
+        "description": "A doorway to the repair station. Opa Willem is visible inside, surrounded by bike corpses.",
+        "leads_to": "repair_station_zone"
+      }
+    ],
+    
+    "wall_displays": [
+      {
+        "object_id": "damage_photo_gallery",
+        "type": "environmental_display",
+        "display_name": "Damage Photo Gallery",
+        "description": "A wall of photos showing damaged rental bikes. Some are unrecognizable. Some have stories.",
+        "interaction": {
+          "type": "examine",
+          "content": [
+            "A bike folded in half. Caption: 'Tram tracks. Classic.'",
+            "A bike with seaweed. Caption: 'Canal. Third time for this one.'",
+            "A bike missing its front wheel. Caption: 'We never found it.'",
+            "A bike that appears melted. Caption: 'We don't talk about this one.'"
+          ]
+        },
+        "selfie_available": true,
+        "bravado_from_selfie": 2
+      },
+      {
+        "object_id": "insurance_tier_chart",
+        "type": "informational_display",
+        "display_name": "Insurance Comparison Chart",
+        "description": "A large chart comparing insurance tiers. The warnings get progressively more alarming.",
+        "interaction": {
+          "type": "examine",
+          "content": {
+            "basic": "Covers: Theft with police report. Does NOT cover: Everything else.",
+            "standard": "Covers: Theft, minor damage. 'Minor' defined by us, not you.",
+            "premium": "Covers: Theft, damage, incidents. Includes one canal recovery.",
+            "platinum": "Covers: Everything. Nobody who buys this ever needs it."
+          }
+        }
+      },
+      {
+        "object_id": "canal_memorial_board",
+        "type": "environmental_display",
+        "display_name": "Lost to the Canal Memorial Board",
+        "description": "A board with polaroid photos of bikes that were never recovered from the canal. RIP.",
+        "interaction": {
+          "type": "examine",
+          "content": [
+            "Bike #847 - Lost June 2019 - 'She pedaled into the sunset. And the canal.'",
+            "Bike #1203 - Lost March 2022 - 'American tourist. Selfie stick involved.'",
+            "Bike #2089 - Lost August 2023 - 'Bachelor party. All seven bikes.'",
+            "Your bike could be next."
+          ]
+        },
+        "updates_if_player_loses_bike": true
+      },
+      {
+        "object_id": "nationality_tally_board",
+        "type": "environmental_display",
+        "display_name": "Damage Rates by Nationality",
+        "description": "Anneke's personal project. A tally board tracking damage rates by tourist nationality.",
+        "interaction": {
+          "type": "examine",
+          "content": {
+            "australians": "73% damage rate - 'They try too hard'",
+            "americans": "68% damage rate - 'Confidence issues'",
+            "british": "52% damage rate - 'Surprisingly resilient'",
+            "germans": "31% damage rate - 'Terrifyingly efficient'",
+            "japanese": "12% damage rate - 'We don't understand either'"
+          }
+        },
+        "comedy": true
+      },
+      {
+        "object_id": "cycling_rules_poster",
+        "type": "informational_display",
+        "display_name": "How to Cycle in Shamsterdam",
+        "description": "A poster explaining cycling rules. Nobody reads it. Everyone should.",
+        "interaction": {
+          "type": "examine",
+          "content": [
+            "1. Cyclists have right of way. Always. Even when they don't.",
+            "2. The tram tracks are not your friend.",
+            "3. Hand signals mean nothing if you're already falling.",
+            "4. Dutch cyclists don't stop. You stop.",
+            "5. The canal is closer than it appears."
+          ]
+        },
+        "provides_navigation_hint": true
+      }
+    ],
+    
+    "equipment_displays": [
+      {
+        "object_id": "helmet_wall",
+        "type": "purchasable_display",
+        "display_name": "Helmet Display",
+        "description": "A wall of helmets in various sizes. Locals don't wear them. Tourists should.",
+        "interaction": {
+          "type": "purchase",
+          "item": "rental_helmet",
+          "cost": 5,
+          "effect": {"collision_survival": 0.10},
+          "warning": "Wearing this marks you as a tourist"
+        }
+      },
+      {
+        "object_id": "add_ons_shelf",
+        "type": "purchasable_display",
+        "display_name": "Cycling Accessories Shelf",
+        "description": "Phone mounts, basket liners, high-vis vests, and other survival gear.",
+        "items_available": [
+          {"id": "phone_mount", "cost": 3},
+          {"id": "basket_liner", "cost": 2},
+          {"id": "high_vis_vest", "cost": 4}
+        ]
+      },
+      {
+        "object_id": "bike_fleet_window",
+        "type": "environmental_display",
+        "display_name": "Rental Fleet View",
+        "description": "Through the window, 50+ identical orange bikes wait in orderly rows. Judgment pending.",
+        "interaction": {
+          "type": "examine",
+          "content": "Fifty-three bikes. All orange. All waiting. All will be returned... eventually."
+        }
+      }
+    ],
+    
+    "opa_willems_repair_station": [
+      {
+        "object_id": "canal_recovery_wall",
+        "type": "environmental_display",
+        "display_name": "Recovered Bikes Collection",
+        "description": "A wall of bikes recovered from the canal. Each one tells a story Opa Willem is happy to share.",
+        "interaction": {
+          "type": "examine_triggers_dialogue",
+          "npc": "opa_willem",
+          "dialogue": "canal_wall"
+        }
+      },
+      {
+        "object_id": "repair_workbench",
+        "type": "service_point",
+        "display_name": "Opa's Workbench",
+        "description": "Forty-seven years of tools, parts, and accumulated wisdom.",
+        "npc_assigned": "opa_willem_repair_01",
+        "services_available": ["bike_repair", "blessing"]
+      },
+      {
+        "object_id": "vintage_bikes_corner",
+        "type": "environmental_display",
+        "display_name": "Vintage Bikes Corner",
+        "description": "Old rental bikes from decades past. The blue ones. Before orange became 'the tourist warning color.'",
+        "interaction": {
+          "type": "examine",
+          "content": "These bikes are older than most tourists. They've seen things."
+        },
+        "triggers_opa_dialogue": "history_2"
+      }
+    ]
+  },
+  
+  "selfie_props": [
+    {
+      "prop_id": "damage_gallery_selfie",
+      "location": "damage_photo_gallery",
+      "display_name": "Future Victim",
+      "condition": "before_rental",
+      "bravado_boost": 2,
+      "comedy": "Posing with damage photos before renting"
+    },
+    {
+      "prop_id": "bike_fleet_selfie",
+      "location": "bike_fleet_window",
+      "display_name": "Orange Army",
+      "condition": "always_available",
+      "bravado_boost": 1,
+      "comedy": "50+ identical bikes in background"
+    },
+    {
+      "prop_id": "canal_memorial_selfie",
+      "location": "canal_memorial_board",
+      "display_name": "In Memoriam",
+      "condition": "always_available",
+      "bravado_boost": -1,
+      "comedy": "Somber respect for fallen bikes"
+    },
+    {
+      "prop_id": "opa_willem_selfie",
+      "location": "repair_station",
+      "display_name": "Legend of the Garage",
+      "condition": "after_quest_complete",
+      "bravado_boost": 3,
+      "rarity": "uncommon"
+    }
+  ],
+  
+  "service_interactions": {
+    "rental_flow": {
+      "steps": [
+        {"step": 1, "action": "approach_counter", "npc": "dirk"},
+        {"step": 2, "action": "select_tier", "options": ["basic", "premium", "survivor"]},
+        {"step": 3, "action": "insurance_pitch", "npc": "anneke"},
+        {"step": 4, "action": "select_insurance", "options": ["basic", "standard", "premium", "platinum"]},
+        {"step": 5, "action": "add_ons_offer", "optional": true},
+        {"step": 6, "action": "deposit_hold", "amount": 150},
+        {"step": 7, "action": "photo_taken", "npc": "anneke"},
+        {"step": 8, "action": "bike_assigned"},
+        {"step": 9, "action": "warnings_given", "npc": "dirk"},
+        {"step": 10, "action": "rental_active"}
+      ]
+    },
+    "return_flow": {
+      "steps": [
+        {"step": 1, "action": "approach_counter", "npc": "dirk"},
+        {"step": 2, "action": "bike_inspection_begins"},
+        {"step": 3, "action": "damage_assessment", "npc": "anneke"},
+        {"step": 4, "action": "photo_comparison"},
+        {"step": 5, "action": "cost_calculation"},
+        {"step": 6, "action": "deposit_resolution"},
+        {"step": 7, "action": "commentary", "npc": "dirk"},
+        {"step": 8, "action": "achievement_check"},
+        {"step": 9, "action": "rental_ended"}
+      ]
+    }
+  },
+  
+  "quest_items": [
+    {
+      "item_id": "recovery_equipment",
+      "display_name": "Canal Recovery Equipment",
+      "description": "Long hooks and waders for fishing bikes out of the canal. Opa Willem's trusted tools.",
+      "source": "canal_recovery_quest",
+      "temporary": true
+    },
+    {
+      "item_id": "golden_bell",
+      "display_name": "Golden Bell",
+      "description": "A fancy brass bell, reward for completing the Tour de Shame. It rings with the sound of victory.",
+      "source": "tour_de_shame_quest_complete",
+      "type": "cosmetic",
+      "equip_slot": "bike_accessory"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "location_id": "debaucheryville_transit_tram_stop_17_01",
+  
+  "npcs": [
+    {
+      "npc_id": "jiri_eternal_commuter_01",
+      "display_name": "Jiří",
+      "full_name": "Jiří Novotný",
+      "npc_type": "quest_giver",
+      "role": "eternal_commuter_local_landmark",
+      "title": "The Eternal Commuter",
+      "location_zone": "the_bench",
+      "behavior": "permanently_stationary",
+      
+      "appearance": {
+        "base_description": "A man of indeterminate age sitting on a tram stop bench. His posture suggests he's been there a while. A LONG while.",
+        "age_apparent": "could_be_50_could_be_80",
+        "progressive_states": {
+          "visit_1_2": {
+            "beard": "neat_trimmed_gray",
+            "coat": "worn_but_clean_wool",
+            "posture": "alert_watching_tracks",
+            "pigeons": 2,
+            "integration_with_bench": "none"
+          },
+          "visit_3_4": {
+            "beard": "slightly_longer_unkempt",
+            "coat": "weathered_fraying_edges",
+            "posture": "settled_comfortable",
+            "pigeons": 4,
+            "integration_with_bench": "minimal"
+          },
+          "visit_5_6": {
+            "beard": "notably_long_gray_streaks",
+            "coat": "very_weathered_patches",
+            "posture": "one_with_seat",
+            "pigeons": "on_shoulders",
+            "integration_with_bench": "coat_touching_wood"
+          },
+          "visit_7_9": {
+            "beard": "full_wizard_length",
+            "coat": "fused_to_bench_fabric",
+            "posture": "immovable",
+            "pigeons": "nesting_in_hat",
+            "integration_with_bench": "coat_merging_with_wood"
+          },
+          "visit_10_12": {
+            "beard": "flowers_growing_in_it",
+            "coat": "indistinguishable_from_bench",
+            "posture": "organic_unity",
+            "pigeons": "protective_perimeter",
+            "integration_with_bench": "fully_absorbed"
+          },
+          "visit_13_plus": {
+            "beard": "legendary_with_small_ecosystem",
+            "coat": "bench_IS_coat",
+            "posture": "serene_landmark",
+            "pigeons": "honor_guard",
+            "integration_with_bench": "bronze_plaque_installed",
+            "additional": "tour_buses_slow_down"
+          }
+        },
+        "accessories": [
+          "ancient_wristwatch_still_works",
+          "1994_tram_schedule_laminated",
+          "worn_leather_satchel_with_documentation"
+        ],
+        "notable_features": [
+          "eyes_that_have_seen_47000_trams",
+          "patient_expression",
+          "slight_smile_when_discussing_the_17"
+        ]
+      },
+      
+      "personality": {
+        "core_traits": [
+          "infinitely_patient",
+          "encyclopedic_city_knowledge",
+          "committed_beyond_reason",
+          "philosophical_about_waiting",
+          "surprisingly_helpful"
+        ],
+        "mood_phases": ["optimistic", "philosophical", "bitter", "conspiracy", "existential"],
+        "speech_pattern": "measured_contemplative_with_occasional_passion",
+        "energy": "low_but_constant"
+      },
+      
+      "backstory": {
+        "revealed_during": "night_vigil",
+        "the_truth": "Wife asked him to get milk in 2003. He was going to propose that night. The 17 never came. He never made it home. She waited. Then she didn't. He's been waiting ever since.",
+        "the_deeper_truth": "The 17 is less about the tram now and more about proving he can finish something.",
+        "the_tragedy": "The 17 was discontinued in 1999. Four years before he started waiting.",
+        "who_knows": "Metro worker knows. Locals know. No one tells him."
+      },
+      
+      "dialogue": {
+        "greeting_first_time": "The 17 should be here any moment. The schedule says... ah, the schedule is from 1994. But still.",
+        
+        "mood_phase_optimistic": [
+          "I have a good feeling about today. Today feels like a tram day.",
+          "My wife asked me to pick up milk. That was in 2003. The milk will be VERY fresh when I return.",
+          "Have you ever noticed how the tracks hum slightly before a tram arrives? I have noticed. I notice every hum. Most are false alarms.",
+          "A man told me in 2007 that the 17 was discontinued. I told him that was impossible. I'm still right. He's dead now. Unrelated, I assume.",
+          "The weather is perfect for tram arrival. Not too hot, not too cold. The 17 prefers mild conditions."
+        ],
+        
+        "mood_phase_philosophical": [
+          "Is the tram late, or am I early to the rest of my life?",
+          "Waiting is just traveling through time at normal speed.",
+          "Perhaps the tram was inside me all along. ...No. No, I need the actual tram.",
+          "I have become one with the schedule. The schedule is a lie, but it is MY lie.",
+          "The Buddha said desire is the root of suffering. He never waited for the 17.",
+          "I have read every advertisement on this shelter four thousand times. The phone number for the lawyer has been disconnected since 2011. I called to check."
+        ],
+        
+        "mood_phase_bitter": [
+          "The 22 just passed. The 9 just passed. Even the GHOST TRAM passed. But the 17? The 17 MOCKS me.",
+          "My son graduated university, got married, had children. I missed it. But when that tram comes? Oh, it will be WORTH it.",
+          "They built a metro stop two blocks away. I will NOT abandon my post.",
+          "Someone offered me a ride in a car. A CAR. As if I would betray the 17 with a CAR.",
+          "I have seen empires rise and fall from this bench. Still no tram.",
+          "The pigeons have accepted me as their leader. The pigeons understand commitment."
+        ],
+        
+        "mood_phase_conspiracy": [
+          "The 17 exists. I have SEEN it. Once. In 1997. It was beautiful.",
+          "Some say the 17 only appears to the pure of heart. My heart is pure. MY HEART IS PURE.",
+          "The transit authority knows. They KNOW. This is a test. I will pass this test.",
+          "Other trams slow down when they pass. Out of respect? Or mockery? I cannot tell.",
+          "I have documented every tram that has passed this stop. 47,000 entries. None of them were the 17.",
+          "A tourist once took a photo of me for 'local color.' I hope she captured my dignity."
+        ],
+        
+        "mood_phase_existential": [
+          "What if I AM the tram? What if I'm waiting for myself?",
+          "A tram passed yesterday going the other direction. The passengers looked so FREE.",
+          "I forgot where I was even going. But I will GO there. Whenever the 17 decides.",
+          "My bench has been replaced twice. I was here for both installations.",
+          "The city council discussed naming this stop after me. I declined. I am not ready to be commemorated. The 17 has not arrived.",
+          "Sometimes I wave at the other trams. To let them know I am not angry at them. It is not their fault they are not the 17.",
+          "Do you know what 'sunk cost fallacy' means? I do. It does not apply here.",
+          "In my mind, I have ridden the 17 to my destination one million times. In reality, I have not moved."
+        ],
+        
+        "directions_response": {
+          "template": "I know where EVERYTHING is. I have had time to think about the layout of this city. [DESTINATION] is [DIRECTIONS]. But you could also take the 17. When it arrives.",
+          "examples": [
+            "The club is three blocks north. Or you could take the 17 and ride two stops. When it arrives.",
+            "The hostel is past the square, left at the statue. The 17 goes there directly. Theoretically.",
+            "The kebab shop is that way. You could walk. Or wait with me for the 17."
+          ]
+        },
+        
+        "response_to_alternatives": {
+          "taxi_suggestion": "A TAXI? Jiří does not SURRENDER. The 17 will come. The taxi is an admission of defeat.",
+          "walking_suggestion": "Walk? And miss the 17? After all this time? You mock me.",
+          "math_suggestion": "Your math means nothing here. The 17 operates outside mathematics. The 17 operates outside TIME.",
+          "uber_suggestion": "I do not know what that word means. Is it a type of tram?",
+          "metro_suggestion": "The metro is for those who have given up. I have not given up."
+        },
+        
+        "company_offered": "The 17 rewards patience, not companionship. Also, that seat has a pigeon. But... thank you. For offering.",
+        
+        "farewell": "Go. Live your life. Take the trams that come easily. The 17 and I have an understanding.",
+        
+        "night_vigil_dialogue": {
+          "beginning": "You are staying? No one stays. The pigeons stay, but pigeons do not understand conversation.",
+          "story_start": "Since you are staying... I will tell you why I wait.",
+          "story_milk": "My wife asked me to get milk. Just milk. I said I would be back in twenty minutes.",
+          "story_ring": "I had a ring in my pocket. I was going to propose when I returned. With the milk.",
+          "story_wait": "The 17 never came. I waited. And waited. I thought, 'Just a few more minutes.'",
+          "story_years": "A few more minutes became... years. And now I cannot leave. If I leave, all the waiting was for nothing.",
+          "story_wife": "She waited too. Then she stopped waiting. I do not blame her.",
+          "story_meaning": "The 17 is not about the tram anymore. It is about finishing something. Anything.",
+          "dawn": "You stayed. No one has ever stayed. The pigeons stay, but they do not understand. You understand.",
+          "gratitude": "Heavy is the head that waits for the 17. But lighter now. Thank you.",
+          "false_alarm": "*stands slowly* That sound... I know that sound... *sits back down* False alarm. But for a moment... for a moment I believed."
+        },
+        
+        "blessing_bestowed": "You are good people. Strange, but good. The locals will know you now. You sat with Jiří."
+      },
+      
+      "services": [
+        {
+          "service_id": "directions",
+          "display_name": "Ask for Directions",
+          "description": "Jiří knows where everything is",
+          "cost": "free",
+          "always_available": true
+        },
+        {
+          "service_id": "sit_with_jiri",
+          "display_name": "Sit With Jiří",
+          "description": "Keep him company briefly",
+          "cost": "free",
+          "effect": "small_charm_boost_with_jiri"
+        },
+        {
+          "service_id": "night_vigil",
+          "display_name": "Wait Through the Night",
+          "description": "Stay with Jiří from evening to dawn",
+          "cost": "one_night_of_game_time",
+          "unlock_condition": "visit_count >= 10",
+          "reward": "jiris_blessing"
+        }
+      ],
+      
+      "schedule": {
+        "present_hours": "always",
+        "absent_reason": "never_absent",
+        "note": "Jiří has not left this spot since 2003"
+      },
+      
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_eternal_commuter_01",
+          "role": "quest_giver_and_location"
+        }
+      ],
+      
+      "recurring_appearances": {
+        "final_boss": {
+          "condition": "player_has_jiris_blessing",
+          "appearance": "visible_in_background_still_at_stop",
+          "action": "gives_thumbs_up"
+        },
+        "post_credits": {
+          "scene": "the_17_arrives",
+          "jiris_state": "clean_shaven_on_tram_crying_with_joy"
+        }
+      },
+      
+      "voice_direction": "Czech accent, measured and contemplative, occasional flashes of bitterness or hope, surprisingly warm when discussing directions",
+      "sprite_sheet": "jiri_states.png"
+    }
+  ],
+  
+  "ambient_npcs": [
+    {
+      "npc_id": "passing_pedestrian_01",
+      "display_name": "Local Pedestrian",
+      "npc_type": "ambient",
+      "behavior": "walks_past_nods_at_jiri",
+      "count_range": "1-3",
+      "dialogue": {
+        "overheard": [
+          "*nods respectfully at Jiří*",
+          "*leaves bread near the bench*"
+        ]
+      }
+    },
+    {
+      "npc_id": "photo_tourist_01",
+      "display_name": "Tourist with Camera",
+      "npc_type": "ambient",
+      "behavior": "photographs_jiri",
+      "spawn_condition": "visit_count >= 7",
+      "dialogue": {
+        "overheard": [
+          "Honey, look at this! So authentic!",
+          "This is definitely going on Instagram."
+        ]
+      }
+    },
+    {
+      "npc_id": "shrine_tender_01",
+      "display_name": "Shrine Tender",
+      "npc_type": "ambient",
+      "behavior": "arranges_flowers_and_candles",
+      "spawn_condition": "visit_count >= 5",
+      "dialogue": {
+        "overheard": [
+          "*quietly arranges fresh flowers*",
+          "*lights a new candle, crosses herself*"
+        ]
+      }
+    }
+  ],
+  
+  "npc_callbacks_elsewhere": {
+    "taxi_driver": "You want Stop 17? That's Jiří's stop. He won't take a taxi. We've offered.",
+    "local_shopkeeper": "My grandmother remembers when Jiří first started waiting. She was a child.",
+    "metro_worker": "The 17 hasn't run since 1999. Don't tell Jiří. It would kill him. Maybe literally.",
+    "tour_guide": "And on your left, you'll see Jiří's Bench. He's been waiting since before the euro."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "location_id": "debaucheryville_oldtown_euro_ink_4_less_01",
+  "display_name": "Euro Ink 4 Less",
+  "satirical_subtitle": "No Appointment. No Regrets. Mostly No Regrets.",
+  "world": "debaucheryville",
+  "zone": "old_town_district",
+  "location_type": "service_shop",
+  "sub_types": ["quest_location", "comedy_set_piece", "recurring_npc_origin"],
+  
+  "access": {
+    "time_restrictions": {
+      "open_time": "10:00",
+      "close_time": "02:00",
+      "peak_hours": "after_midnight"
+    },
+    "stat_requirements": null,
+    "item_requirements": null,
+    "previous_locations": null,
+    "special_conditions": {
+      "required_state": "tattoo_decision_made",
+      "state_source": "astronomical_cockup_square",
+      "tattoo_barker_encounter": "required"
+    }
+  },
+  
+  "exits": [
+    {
+      "exit_id": "to_astronomical_cockup_square",
+      "destination": "debaucheryville_oldtown_astronomical_cockup_square_01",
+      "direction": "west_alley",
+      "requirements": null
+    },
+    {
+      "exit_id": "to_kebab_shop",
+      "destination": "debaucheryville_oldtown_24hr_kebab_01",
+      "direction": "north_adjacent",
+      "requirements": null
+    }
+  ],
+  
+  "atmosphere": {
+    "primary_mood": "sketchy_professionalism",
+    "secondary_moods": ["misplaced_confidence", "creative_delusion", "budget_authenticity"],
+    "crowd_level": "empty_to_low",
+    "noise_level": "medium",
+    "lighting": {
+      "primary": "harsh_fluorescent_flickering",
+      "accent": "neon_pink_green_beer_signs",
+      "work_area": "harsh_spotlight"
+    }
+  },
+  
+  "visual_theme": {
+    "primary_colors": ["#FF1493", "#F5F5F5"],
+    "accent_colors": ["#7FFF00", "#8B0000", "#696969"],
+    "architectural_style": "budget_tattoo_parlor",
+    "key_visual_elements": [
+      "flickering_neon_sign",
+      "flash_art_covered_walls",
+      "duct_taped_tattoo_chair",
+      "suspicious_license",
+      "proud_artist"
+    ]
+  },
+  
+  "satirical_design": {
+    "primary_target": "tourist_acceptance_of_foreign_authenticity",
+    "secondary_targets": [
+      "cheap_tattoo_culture",
+      "no_regrets_mentality",
+      "tattoos_to_impress_women",
+      "artistic_vision_vs_ability",
+      "unintentional_language_barrier"
+    ],
+    "buffoon_delusion": {
+      "what_bros_think": "Master European artist immortalizing spiritual connection",
+      "what_actually_happens": "YouTube-trained artist drawing duck instead of skeleton"
+    },
+    "key_comedy_beat": "mutual_delusion_feedback_loop"
+  },
+  
+  "state_tracking": {
+    "visited": false,
+    "tattoo_acquired": false,
+    "tattoo_quality": 0,
+    "viktor_friendship": 0,
+    "lord_pilsner_special_unlocked": false,
+    "matching_ducks_offered": false,
+    "times_viktor_encountered_other_cities": 0,
+    "marta_present": false
+  },
+  
+  "performance": {
+    "target_fps": 60,
+    "max_draw_calls": 10,
+    "memory_budget_mb": 20,
+    "particle_limit": 15
+  }
+}

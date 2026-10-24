@@ -1,0 +1,277 @@
+{
+  "location_id": "publandia_outskirts_paddys_premium_motors_01",
+  
+  "sprite_sheets": {
+    "exterior_building": {
+      "file": "exterior_building.png",
+      "dimensions": {"width": 512, "height": 384},
+      "sections": {
+        "farmhouse_main": {"x": 0, "y": 0, "width": 256, "height": 256},
+        "roof_section": {"x": 0, "y": 0, "width": 256, "height": 96},
+        "main_sign": {"x": 256, "y": 0, "width": 192, "height": 64},
+        "shamrock_logo": {"x": 448, "y": 0, "width": 64, "height": 64},
+        "window": {"x": 256, "y": 64, "width": 64, "height": 64},
+        "door_open": {"x": 320, "y": 64, "width": 64, "height": 96},
+        "door_closed": {"x": 384, "y": 64, "width": 64, "height": 96},
+        "warning_signs": {"x": 256, "y": 160, "width": 192, "height": 96},
+        "counter_sign": {"x": 0, "y": 256, "width": 128, "height": 64}
+      }
+    },
+    
+    "parking_lot": {
+      "file": "parking_lot.png",
+      "dimensions": {"width": 512, "height": 256},
+      "ground": {
+        "gravel_base": {"x": 0, "y": 0, "width": 256, "height": 128},
+        "puddles": {"x": 256, "y": 0, "width": 128, "height": 64},
+        "parking_lines": {"x": 384, "y": 0, "width": 64, "height": 64},
+        "road_exit": {"x": 0, "y": 128, "width": 256, "height": 64},
+        "distant_cloverleaf": {"x": 256, "y": 128, "width": 128, "height": 64}
+      },
+      "vehicles": {
+        "shamrock": {"x": 0, "y": 192, "width": 96, "height": 64},
+        "lucky_charm": {"x": 96, "y": 192, "width": 96, "height": 64},
+        "emerald_dream": {"x": 192, "y": 192, "width": 96, "height": 64},
+        "full_irish": {"x": 288, "y": 192, "width": 96, "height": 64},
+        "generic_rentals": {"x": 384, "y": 192, "width": 128, "height": 64}
+      }
+    },
+    
+    "interior_reception": {
+      "file": "interior_reception.png",
+      "dimensions": {"width": 512, "height": 512},
+      "room_structure": {
+        "floor": {"x": 0, "y": 0, "width": 256, "height": 128},
+        "back_wall": {"x": 0, "y": 128, "width": 256, "height": 128},
+        "side_wall_left": {"x": 256, "y": 0, "width": 128, "height": 256},
+        "side_wall_right": {"x": 384, "y": 0, "width": 128, "height": 256},
+        "counter": {"x": 0, "y": 256, "width": 256, "height": 64},
+        "window": {"x": 256, "y": 256, "width": 128, "height": 64},
+        "door_interior": {"x": 384, "y": 256, "width": 64, "height": 96}
+      },
+      "details": {
+        "key_wall": {"x": 0, "y": 320, "width": 128, "height": 64},
+        "tourism_posters": {"x": 128, "y": 320, "width": 128, "height": 64},
+        "computer": {"x": 256, "y": 320, "width": 64, "height": 48},
+        "ashtray": {"x": 320, "y": 320, "width": 32, "height": 32},
+        "photo_frame": {"x": 352, "y": 320, "width": 32, "height": 32},
+        "filing_cabinet": {"x": 384, "y": 320, "width": 64, "height": 64},
+        "incident_counter": {"x": 0, "y": 384, "width": 128, "height": 48},
+        "fluorescent_light": {"x": 128, "y": 384, "width": 128, "height": 32}
+      }
+    },
+    
+    "seamus": {
+      "file": "seamus.png",
+      "dimensions": {"width": 384, "height": 384},
+      "states": {
+        "idle": {"x": 0, "y": 0, "width": 96, "height": 128},
+        "talking": {"x": 96, "y": 0, "width": 96, "height": 128},
+        "sliding_keys": {"x": 192, "y": 0, "width": 96, "height": 128},
+        "warning": {"x": 288, "y": 0, "width": 96, "height": 128},
+        "thousand_yard_stare": {"x": 0, "y": 128, "width": 96, "height": 128},
+        "smoking": {"x": 96, "y": 128, "width": 96, "height": 128},
+        "looking_at_photo": {"x": 192, "y": 128, "width": 96, "height": 128},
+        "post_quest_respect": {"x": 288, "y": 128, "width": 96, "height": 128}
+      },
+      "details": {
+        "aran_sweater": {"x": 0, "y": 256, "width": 64, "height": 64},
+        "face_closeup": {"x": 64, "y": 256, "width": 64, "height": 64},
+        "hands": {"x": 128, "y": 256, "width": 64, "height": 32},
+        "cigarette": {"x": 192, "y": 256, "width": 32, "height": 16},
+        "wedding_ring": {"x": 224, "y": 256, "width": 16, "height": 16}
+      },
+      "expressions": {
+        "resignation": {"x": 0, "y": 288, "width": 48, "height": 48},
+        "warning": {"x": 48, "y": 288, "width": 48, "height": 48},
+        "memory": {"x": 96, "y": 288, "width": 48, "height": 48},
+        "respect": {"x": 144, "y": 288, "width": 48, "height": 48},
+        "here_we_go_again": {"x": 192, "y": 288, "width": 48, "height": 48}
+      },
+      "portraits": {
+        "portrait_default": {"x": 0, "y": 336, "width": 64, "height": 48},
+        "portrait_warning": {"x": 64, "y": 336, "width": 64, "height": 48},
+        "portrait_sad": {"x": 128, "y": 336, "width": 64, "height": 48},
+        "portrait_respect": {"x": 192, "y": 336, "width": 64, "height": 48}
+      }
+    },
+    
+    "board_of_shame": {
+      "file": "board_of_shame.png",
+      "dimensions": {"width": 256, "height": 256},
+      "structure": {
+        "corkboard_base": {"x": 0, "y": 0, "width": 192, "height": 192},
+        "title_card": {"x": 0, "y": 0, "width": 96, "height": 24},
+        "pushpins": {"x": 192, "y": 0, "width": 64, "height": 32}
+      },
+      "polaroids": {
+        "van_1987": {"x": 8, "y": 32, "width": 48, "height": 48},
+        "german_sedan": {"x": 64, "y": 32, "width": 48, "height": 48},
+        "american_rental": {"x": 120, "y": 32, "width": 48, "height": 48},
+        "french_compact": {"x": 8, "y": 88, "width": 48, "height": 48},
+        "italian_sports": {"x": 64, "y": 88, "width": 48, "height": 48},
+        "empty_spot": {"x": 120, "y": 88, "width": 48, "height": 48},
+        "recent_1": {"x": 8, "y": 144, "width": 48, "height": 48},
+        "recent_2": {"x": 64, "y": 144, "width": 48, "height": 48},
+        "recent_3": {"x": 120, "y": 144, "width": 48, "height": 48}
+      },
+      "annotations": {
+        "still_circling": {"x": 176, "y": 32, "width": 48, "height": 16},
+        "found_empty": {"x": 176, "y": 88, "width": 48, "height": 16},
+        "gave_up": {"x": 176, "y": 144, "width": 48, "height": 16}
+      }
+    },
+    
+    "reception_details": {
+      "file": "reception_details.png",
+      "dimensions": {"width": 256, "height": 256},
+      "map": {
+        "ireland_map": {"x": 0, "y": 0, "width": 128, "height": 128},
+        "cloverleaf_circle": {"x": 64, "y": 48, "width": 32, "height": 32},
+        "here_be_dragons": {"x": 48, "y": 80, "width": 48, "height": 16}
+      },
+      "desk_items": {
+        "computer_screen": {"x": 128, "y": 0, "width": 64, "height": 48},
+        "keyboard": {"x": 192, "y": 0, "width": 48, "height": 24},
+        "mouse": {"x": 240, "y": 0, "width": 16, "height": 16},
+        "ashtray_full": {"x": 128, "y": 48, "width": 48, "height": 32},
+        "photo_frame": {"x": 176, "y": 48, "width": 32, "height": 32},
+        "photo_back": {"x": 208, "y": 48, "width": 32, "height": 32},
+        "ring_box": {"x": 128, "y": 80, "width": 24, "height": 24},
+        "coffee_mug": {"x": 152, "y": 80, "width": 24, "height": 24}
+      },
+      "keys_and_hooks": {
+        "key_rack": {"x": 0, "y": 128, "width": 128, "height": 64},
+        "shamrock_keys": {"x": 128, "y": 128, "width": 32, "height": 24},
+        "lucky_charm_keys": {"x": 160, "y": 128, "width": 32, "height": 24},
+        "emerald_keys": {"x": 192, "y": 128, "width": 32, "height": 24},
+        "full_irish_keys": {"x": 224, "y": 128, "width": 32, "height": 24}
+      },
+      "incident_counter": {
+        "counter_frame": {"x": 0, "y": 192, "width": 128, "height": 48},
+        "days_since_text": {"x": 8, "y": 200, "width": 112, "height": 16},
+        "numbers_000": {"x": 8, "y": 216, "width": 112, "height": 24},
+        "dust_overlay": {"x": 0, "y": 192, "width": 128, "height": 48}
+      }
+    },
+    
+    "sheep_ambient": {
+      "file": "sheep_ambient.png",
+      "dimensions": {"width": 192, "height": 128},
+      "states": {
+        "grazing": {"x": 0, "y": 0, "width": 48, "height": 48},
+        "walking": {"x": 48, "y": 0, "width": 48, "height": 48},
+        "staring": {"x": 96, "y": 0, "width": 48, "height": 48},
+        "group": {"x": 144, "y": 0, "width": 48, "height": 48}
+      },
+      "environment": {
+        "stone_wall": {"x": 0, "y": 48, "width": 96, "height": 32},
+        "green_grass": {"x": 96, "y": 48, "width": 48, "height": 32},
+        "mud_patch": {"x": 144, "y": 48, "width": 48, "height": 32},
+        "gate": {"x": 0, "y": 80, "width": 48, "height": 48},
+        "countryside_bg": {"x": 48, "y": 80, "width": 144, "height": 48}
+      }
+    },
+    
+    "effects": {
+      "file": "paddys_effects.png",
+      "dimensions": {"width": 128, "height": 128},
+      "rain": {
+        "drop_1": {"x": 0, "y": 0, "width": 8, "height": 16},
+        "drop_2": {"x": 8, "y": 0, "width": 8, "height": 16},
+        "drop_3": {"x": 16, "y": 0, "width": 8, "height": 16},
+        "puddle_ripple": {"x": 24, "y": 0, "width": 24, "height": 16},
+        "rain_sheet": {"x": 48, "y": 0, "width": 80, "height": 32}
+      },
+      "smoke": {
+        "cigarette_1": {"x": 0, "y": 32, "width": 16, "height": 24},
+        "cigarette_2": {"x": 16, "y": 32, "width": 16, "height": 24},
+        "cigarette_3": {"x": 32, "y": 32, "width": 16, "height": 24},
+        "ashtray_smoke": {"x": 48, "y": 32, "width": 32, "height": 24}
+      },
+      "lighting": {
+        "fluorescent_flicker": {"x": 0, "y": 64, "width": 64, "height": 16},
+        "window_light": {"x": 64, "y": 64, "width": 48, "height": 32},
+        "dust_motes": {"x": 0, "y": 80, "width": 32, "height": 32}
+      }
+    },
+    
+    "ui_elements": {
+      "file": "paddys_ui.png",
+      "dimensions": {"width": 256, "height": 192},
+      "rental_menu": {
+        "menu_frame": {"x": 0, "y": 0, "width": 192, "height": 128},
+        "vehicle_icons": {"x": 192, "y": 0, "width": 64, "height": 128},
+        "price_tags": {"x": 0, "y": 128, "width": 128, "height": 32},
+        "addon_icons": {"x": 128, "y": 128, "width": 64, "height": 32}
+      },
+      "transaction": {
+        "contract_paper": {"x": 0, "y": 160, "width": 96, "height": 32},
+        "keys_handoff": {"x": 96, "y": 160, "width": 64, "height": 32},
+        "warning_popup": {"x": 160, "y": 160, "width": 96, "height": 32}
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "seamus_idle": {
+      "frames": ["idle", "idle", "smoking", "idle", "looking_at_photo", "idle"],
+      "timing": [3000, 2000, 2000, 3000, 2000, 2000],
+      "total_duration_ms": 14000,
+      "loop": true
+    },
+    "key_slide": {
+      "frames": ["hand_pickup", "slide_motion", "release"],
+      "timing": [500, 700, 300],
+      "total_duration_ms": 1500,
+      "loop": false,
+      "audio_sync": "keys_sliding"
+    },
+    "fluorescent_flicker": {
+      "frames": ["on", "flicker", "on"],
+      "timing": [100, 150, 100],
+      "total_duration_ms": 350,
+      "loop": false,
+      "trigger": "random_15_60s"
+    },
+    "sheep_wander": {
+      "pattern": "walk_across_background",
+      "duration_ms": 10000,
+      "frequency": "every_45_seconds"
+    },
+    "rain_continuous": {
+      "pattern": "particle_fall",
+      "density": 20,
+      "speed": "medium",
+      "wind_drift": "slight_left"
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "paddys_environment",
+        "files": ["exterior_building.png", "parking_lot.png", "interior_reception.png"],
+        "max_size": "1024x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "paddys_characters",
+        "files": ["seamus.png", "sheep_ambient.png"],
+        "max_size": "512x512",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "paddys_details",
+        "files": ["board_of_shame.png", "reception_details.png", "paddys_effects.png", "paddys_ui.png"],
+        "max_size": "512x512",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_rain_all_smoke_sheep_wandering",
+      "medium": "reduced_rain_simplified_smoke",
+      "low": "minimal_rain_static_sheep_no_smoke"
+    }
+  }
+}

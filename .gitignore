@@ -22,3 +22,7 @@ marketing/screenshots/originals/
 
 # Git worktrees (local agent windows)
 .worktrees/
+.bmad-loop/runs/
+.bmad-loop/cache/
+.bmad-loop/policy.toml
+_bmad/render/

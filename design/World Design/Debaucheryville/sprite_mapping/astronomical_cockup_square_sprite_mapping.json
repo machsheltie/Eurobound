@@ -1,0 +1,373 @@
+{
+  "location_id": "debaucheryville_oldtown_astronomical_cockup_square_01",
+  
+  "sprite_sheets": {
+    "main_tileset": {
+      "file": "astronomical_cockup_square_tileset.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "tile_size": {"width": 32, "height": 32},
+      "sections": {
+        "cobblestone_tiles": {
+          "x": 0, "y": 0, "width": 256, "height": 128,
+          "variants": [
+            {"name": "cobblestone_main", "x": 0, "y": 0, "width": 64, "height": 64},
+            {"name": "cobblestone_worn", "x": 64, "y": 0, "width": 64, "height": 64},
+            {"name": "cobblestone_light", "x": 128, "y": 0, "width": 64, "height": 64},
+            {"name": "cobblestone_dark", "x": 192, "y": 0, "width": 64, "height": 64}
+          ]
+        },
+        "fountain_tiles": {
+          "x": 0, "y": 128, "width": 192, "height": 192,
+          "elements": [
+            {"name": "fountain_base", "x": 0, "y": 128, "width": 192, "height": 192}
+          ]
+        },
+        "pillar_tiles": {
+          "x": 192, "y": 128, "width": 128, "height": 192,
+          "elements": [
+            {"name": "viewing_pillar", "x": 192, "y": 128, "width": 64, "height": 192},
+            {"name": "pillar_graffiti_overlay", "x": 256, "y": 128, "width": 64, "height": 96}
+          ]
+        },
+        "vendor_zone_markings": {
+          "x": 320, "y": 128, "width": 256, "height": 128,
+          "elements": [
+            {"name": "stall_footprint", "x": 320, "y": 128, "width": 128, "height": 64},
+            {"name": "cart_position", "x": 448, "y": 128, "width": 64, "height": 64}
+          ]
+        },
+        "alley_entrance": {
+          "x": 576, "y": 0, "width": 192, "height": 128,
+          "elements": [
+            {"name": "alley_floor_transition", "x": 576, "y": 0, "width": 192, "height": 64},
+            {"name": "alley_archway_base", "x": 576, "y": 64, "width": 192, "height": 64}
+          ]
+        }
+      },
+      "special_tiles": {
+        "interactive_highlight": {"x": 768, "y": 0, "width": 64, "height": 64},
+        "vendor_approach_zone": {"x": 832, "y": 0, "width": 64, "height": 64},
+        "clock_viewing_area": {"x": 896, "y": 0, "width": 64, "height": 64}
+      }
+    },
+    
+    "clock_tower": {
+      "file": "clock_tower_full.png",
+      "dimensions": {"width": 512, "height": 1024},
+      "elements": {
+        "tower_base": {"x": 0, "y": 768, "width": 512, "height": 256},
+        "astronomical_dial": {"x": 64, "y": 384, "width": 384, "height": 384},
+        "calendar_dial": {"x": 96, "y": 256, "width": 320, "height": 128},
+        "apostle_windows": {
+          "closed": {"x": 128, "y": 192, "width": 256, "height": 64},
+          "open": {"x": 128, "y": 128, "width": 256, "height": 64}
+        },
+        "skeleton_death": {"x": 0, "y": 0, "width": 64, "height": 128},
+        "rooster_window": {"x": 64, "y": 0, "width": 64, "height": 64},
+        "gothic_spires": {"x": 128, "y": 0, "width": 384, "height": 128}
+      }
+    },
+    
+    "clock_animation": {
+      "file": "clock_animation_sequence.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "sequences": {
+        "windows_opening": {
+          "frames": 4,
+          "frame_size": {"width": 64, "height": 64},
+          "start": {"x": 0, "y": 0},
+          "timing": {"fps": 8, "total_duration_seconds": 2}
+        },
+        "apostle_parade": {
+          "frames": 12,
+          "frame_size": {"width": 64, "height": 64},
+          "start": {"x": 0, "y": 64},
+          "timing": {"fps": 0.5, "total_duration_seconds": 24}
+        },
+        "skeleton_bell_ring": {
+          "frames": 6,
+          "frame_size": {"width": 64, "height": 64},
+          "start": {"x": 0, "y": 128},
+          "timing": {"fps": 2, "total_duration_seconds": 3}
+        },
+        "hourglass_turn": {
+          "frames": 4,
+          "frame_size": {"width": 64, "height": 64},
+          "start": {"x": 384, "y": 128},
+          "timing": {"fps": 2, "total_duration_seconds": 2}
+        },
+        "rooster_crow": {
+          "frames": 4,
+          "frame_size": {"width": 64, "height": 64},
+          "start": {"x": 0, "y": 192},
+          "timing": {"fps": 2, "total_duration_seconds": 2}
+        },
+        "windows_closing": {
+          "frames": 4,
+          "frame_size": {"width": 64, "height": 64},
+          "start": {"x": 256, "y": 192},
+          "timing": {"fps": 2, "total_duration_seconds": 2}
+        },
+        "crowd_disappointment": {
+          "frames": 4,
+          "frame_size": {"width": 128, "height": 128},
+          "start": {"x": 0, "y": 256},
+          "timing": {"fps": 1.3, "total_duration_seconds": 3}
+        },
+        "bros_crying": {
+          "frames": 6,
+          "frame_size": {"width": 64, "height": 128},
+          "start": {"x": 512, "y": 256},
+          "timing": {"fps": 0.6, "loop": true}
+        }
+      }
+    },
+    
+    "interactive_npcs": {
+      "file": "astronomical_cockup_npcs_spritesheet.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "characters": {
+        "viewing_spot_scammer": {
+          "idle_scanning": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "approaching": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "sales_pitch": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "leading_to_spot": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "at_pillar": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "money_received": {"x": 320, "y": 0, "width": 64, "height": 96}
+        },
+        "party_monk": {
+          "meditation": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "approaching_blessing": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "blessing_gesture_1": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "blessing_gesture_2": {"x": 192, "y": 96, "width": 64, "height": 96},
+          "blessing_gesture_3": {"x": 256, "y": 96, "width": 64, "height": 96},
+          "incense_waving": {"x": 320, "y": 96, "width": 64, "height": 96},
+          "money_receiving": {"x": 384, "y": 96, "width": 64, "height": 96},
+          "pointing_to_wine": {"x": 448, "y": 96, "width": 64, "height": 96}
+        },
+        "clock_wine_vendor": {
+          "cart_idle": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "approaching": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "presenting_bottle": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "pouring_sample": {"x": 192, "y": 192, "width": 64, "height": 96},
+          "popular_with_ladies": {"x": 256, "y": 192, "width": 64, "height": 96},
+          "money_counting": {"x": 320, "y": 192, "width": 64, "height": 96}
+        },
+        "merchandise_vendor": {
+          "vendor_idle": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "vendor_pitch": {"x": 64, "y": 288, "width": 64, "height": 96},
+          "shirt_display": {"x": 128, "y": 288, "width": 64, "height": 96},
+          "money_take": {"x": 192, "y": 288, "width": 64, "height": 96}
+        },
+        "shady_wristband_guy": {
+          "lurking": {"x": 0, "y": 384, "width": 64, "height": 96},
+          "approaching": {"x": 64, "y": 384, "width": 64, "height": 96},
+          "coat_open": {"x": 128, "y": 384, "width": 64, "height": 96},
+          "sales_whisper": {"x": 192, "y": 384, "width": 64, "height": 96},
+          "wristband_handoff": {"x": 256, "y": 384, "width": 64, "height": 96},
+          "money_grab": {"x": 320, "y": 384, "width": 64, "height": 96},
+          "disappearing": {"x": 384, "y": 384, "width": 64, "height": 96}
+        },
+        "tattoo_barker": {
+          "alley_idle": {"x": 0, "y": 480, "width": 64, "height": 96},
+          "spotting": {"x": 64, "y": 480, "width": 64, "height": 96},
+          "calling_out": {"x": 128, "y": 480, "width": 64, "height": 96},
+          "welcoming": {"x": 192, "y": 480, "width": 64, "height": 96},
+          "pointing_shop": {"x": 256, "y": 480, "width": 64, "height": 96}
+        }
+      },
+      "detail_sprites": {
+        "clipboard_fake_badge": {"x": 512, "y": 0, "width": 64, "height": 48},
+        "lanyard_official": {"x": 576, "y": 0, "width": 32, "height": 48},
+        "bathrobe_logo": {"x": 512, "y": 48, "width": 128, "height": 96},
+        "wine_cart_full": {"x": 640, "y": 0, "width": 192, "height": 128},
+        "wine_bottle_single": {"x": 832, "y": 0, "width": 32, "height": 64},
+        "boxed_wine_hidden": {"x": 864, "y": 0, "width": 64, "height": 64},
+        "wristband_close_up": {"x": 512, "y": 144, "width": 64, "height": 32},
+        "wristband_stack": {"x": 576, "y": 144, "width": 48, "height": 32},
+        "gold_chain": {"x": 624, "y": 144, "width": 32, "height": 32}
+      }
+    },
+    
+    "crowd_tourists": {
+      "file": "crowd_tourists.png",
+      "dimensions": {"width": 512, "height": 384},
+      "tourist_types": {
+        "phone_up": {"x": 0, "y": 0, "width": 32, "height": 48},
+        "camera": {"x": 32, "y": 0, "width": 32, "height": 48},
+        "couple_selfie": {"x": 64, "y": 0, "width": 48, "height": 48},
+        "family": {"x": 112, "y": 0, "width": 64, "height": 48},
+        "backpacker": {"x": 0, "y": 48, "width": 32, "height": 48},
+        "influencer": {"x": 32, "y": 48, "width": 32, "height": 48},
+        "disappointed": {"x": 64, "y": 48, "width": 32, "height": 48},
+        "leaving": {"x": 96, "y": 48, "width": 32, "height": 48},
+        "local_observer_1": {"x": 0, "y": 96, "width": 32, "height": 48},
+        "local_observer_2": {"x": 32, "y": 96, "width": 32, "height": 48}
+      },
+      "crowd_fills": {
+        "dense_silhouettes": {"x": 0, "y": 144, "width": 512, "height": 64},
+        "medium_silhouettes": {"x": 0, "y": 208, "width": 512, "height": 64},
+        "phone_glow_overlay": {"x": 0, "y": 272, "width": 64, "height": 32}
+      }
+    },
+    
+    "merchandise_stall": {
+      "file": "merchandise_stall.png",
+      "dimensions": {"width": 384, "height": 256},
+      "elements": {
+        "folding_table_full": {"x": 0, "y": 0, "width": 256, "height": 96},
+        "commemorative_plate": {"x": 256, "y": 0, "width": 48, "height": 48},
+        "i_survived_tshirt": {"x": 304, "y": 0, "width": 48, "height": 64},
+        "temp_tattoo_sheet": {"x": 256, "y": 48, "width": 48, "height": 32},
+        "snow_globe": {"x": 304, "y": 64, "width": 32, "height": 48},
+        "fanny_pack": {"x": 336, "y": 0, "width": 48, "height": 32}
+      }
+    },
+    
+    "surrounding_buildings": {
+      "file": "surrounding_buildings.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "facades": {
+        "building_row_left": {"x": 0, "y": 0, "width": 512, "height": 256},
+        "building_row_right": {"x": 512, "y": 0, "width": 512, "height": 256},
+        "euro_ink_storefront": {"x": 0, "y": 256, "width": 192, "height": 128},
+        "neon_tattoo_sign": {"x": 0, "y": 384, "width": 128, "height": 64},
+        "clocktower_cafe_entrance": {"x": 192, "y": 256, "width": 192, "height": 128},
+        "public_restroom": {"x": 384, "y": 256, "width": 128, "height": 128},
+        "alley_to_oldtown": {"x": 512, "y": 256, "width": 192, "height": 128},
+        "shop_windows": {"x": 704, "y": 256, "width": 128, "height": 128},
+        "graffiti_cockup": {"x": 832, "y": 256, "width": 128, "height": 64}
+      }
+    },
+    
+    "environmental_effects": {
+      "file": "crowd_particles.png",
+      "dimensions": {"width": 256, "height": 256},
+      "particles": {
+        "camera_flash_1": {"x": 0, "y": 0, "width": 32, "height": 32},
+        "camera_flash_2": {"x": 32, "y": 0, "width": 32, "height": 32},
+        "camera_flash_3": {"x": 64, "y": 0, "width": 32, "height": 32},
+        "incense_smoke_1": {"x": 0, "y": 32, "width": 64, "height": 64},
+        "incense_smoke_2": {"x": 64, "y": 32, "width": 64, "height": 64},
+        "phone_screen_glow": {"x": 128, "y": 32, "width": 32, "height": 48},
+        "confetti_burst": {"x": 0, "y": 96, "width": 128, "height": 64},
+        "tear_drop": {"x": 128, "y": 96, "width": 16, "height": 24},
+        "tear_stream": {"x": 144, "y": 96, "width": 32, "height": 48},
+        "emotional_aura": {"x": 0, "y": 160, "width": 96, "height": 96},
+        "cash_flying": {"x": 96, "y": 160, "width": 64, "height": 48}
+      }
+    },
+    
+    "background_parallax": {
+      "file": "astronomical_cockup_parallax.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "layers": {
+        "far_buildings": {"x": 0, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.1},
+        "mid_buildings": {"x": 256, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.3},
+        "near_buildings": {"x": 512, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.5},
+        "crowd_foreground": {"x": 768, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.7}
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "clock_show_complete": {
+      "total_duration_seconds": 38,
+      "phases": [
+        {"name": "bell_chime", "duration": 2, "sprite_source": "clock_animation"},
+        {"name": "windows_open", "duration": 2, "sprite_source": "clock_animation"},
+        {"name": "apostle_parade", "duration": 24, "sprite_source": "clock_animation"},
+        {"name": "death_sequence", "duration": 3, "sprite_source": "clock_animation"},
+        {"name": "rooster_crow", "duration": 2, "sprite_source": "clock_animation"},
+        {"name": "windows_close", "duration": 2, "sprite_source": "clock_animation"},
+        {"name": "crowd_reaction", "duration": 3, "sprite_source": "clock_animation"}
+      ]
+    },
+    "vendor_approach": {
+      "duration_seconds": 2,
+      "frames": 6,
+      "loop": false
+    },
+    "crying_loop": {
+      "duration_seconds": 10,
+      "frames": 6,
+      "loop": true
+    },
+    "neon_flicker": {
+      "sprite_source": "surrounding_buildings",
+      "element": "neon_tattoo_sign",
+      "pattern": "random_0.5_to_2_second_intervals",
+      "intensity_variation": "0.3_to_1.0"
+    }
+  },
+  
+  "lighting_effects": {
+    "primary_ambient": {
+      "color": "#87CEEB",
+      "intensity": 0.8,
+      "coverage": "entire_location",
+      "reactive_sprites": ["cobblestone_tiles", "building_facades", "crowd"]
+    },
+    "tower_accent": {
+      "affected_sprites": ["clock_tower", "astronomical_dial"],
+      "color": "#CFB53B",
+      "intensity": 1.0,
+      "highlight_on_show": true
+    },
+    "tattoo_neon": {
+      "affected_sprites": ["neon_tattoo_sign", "alley_entrance"],
+      "flicker_pattern": "random_1_to_3_second_intervals",
+      "color": "#FF1493",
+      "intensity_variation": "0.5_to_1.0",
+      "active_at": "night"
+    },
+    "wine_cart_glow": {
+      "source": "wine_cart_full",
+      "color": "#7FFF00",
+      "radius": 32,
+      "intensity": 0.6
+    }
+  },
+  
+  "ui_elements": {
+    "location_specific_ui": {
+      "vulnerability_icon": {"x": 256, "y": 0, "width": 64, "height": 64},
+      "clock_timer": {"x": 320, "y": 64, "width": 64, "height": 32}
+    },
+    "vendor_interaction": {
+      "dialogue_box": {"x": 0, "y": 0, "width": 256, "height": 96},
+      "purchase_prompt": {"x": 0, "y": 96, "width": 192, "height": 64},
+      "scam_warning_player_only": {"x": 192, "y": 96, "width": 128, "height": 64},
+      "item_acquired_banner": {"x": 0, "y": 160, "width": 256, "height": 48},
+      "gold_spent_counter": {"x": 256, "y": 160, "width": 128, "height": 48}
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "cockup_main_atlas",
+        "files": ["astronomical_cockup_square_tileset.png", "clock_tower_full.png", "surrounding_buildings.png"],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "cockup_npcs_atlas",
+        "files": ["astronomical_cockup_npcs_spritesheet.png", "crowd_tourists.png", "merchandise_stall.png"],
+        "max_size": "2048x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "cockup_effects_atlas",
+        "files": ["clock_animation_sequence.png", "crowd_particles.png", "astronomical_cockup_parallax.png"],
+        "max_size": "2048x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_crowd_all_particles_complex_animations",
+      "medium": "simplified_crowd_reduced_particles_essential_animations",
+      "low": "flat_crowd_sprites_minimal_particles_key_npcs_only"
+    }
+  }
+}

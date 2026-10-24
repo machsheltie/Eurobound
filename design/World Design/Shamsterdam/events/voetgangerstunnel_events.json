@@ -1,0 +1,351 @@
+{
+  "location_id": "shamsterdam_voetgangerstunnel_01",
+  
+  "entry_events": {
+    "first_entry": {
+      "event_id": "tunnel_introduction",
+      "trigger": "first_time_descend",
+      "sequence": [
+        {"time": 0, "action": "camera_descend", "target": "stairs_down"},
+        {"time": 1, "action": "ambient_change", "to": "underground_soundscape"},
+        {"time": 2, "action": "visual", "type": "fluorescent_flicker_welcome"},
+        {"time": 3, "action": "npc_visible", "npc": "marloes_in_kiosk"},
+        {"time": 4, "action": "tutorial_text", "text": "The Voetgangerstunnel. It's... a shortcut. Of sorts."},
+        {"time": 6, "action": "highlight", "target": "wall_map"},
+        {"time": 7, "action": "tutorial_text", "text": "Follow the signs. Or the tiles. Or the sounds. Good luck."},
+        {"time": 9, "action": "enable_navigation"}
+      ]
+    },
+    
+    "subsequent_entry": {
+      "event_id": "tunnel_return",
+      "trigger": "not_first_visit",
+      "sequence": [
+        {"time": 0, "action": "quick_transition", "to": "entrance_hall"},
+        {"time": 0.5, "action": "npc_check", "condition": "marloes_remembers"}
+      ]
+    }
+  },
+  
+  "navigation_events": {
+    "intersection_arrival": {
+      "event_id": "intersection_of_doubt_arrival",
+      "trigger": "enter_zone_2",
+      "sequence": [
+        {"time": 0, "action": "camera_wide", "reveals": "five_corridors"},
+        {"time": 1, "action": "audio", "sound": "echoing_confusion"},
+        {"time": 2, "action": "npc_available", "npc": "henk_at_booth"},
+        {"time": 2.5, "action": "henk_dialogue", "text": "Ah! A visitor! You need directions, ja?"}
+      ]
+    },
+    
+    "long_corridor_entry": {
+      "event_id": "endless_corridor",
+      "trigger": "enter_zone_3",
+      "sequence": [
+        {"time": 0, "action": "audio_layer_add", "sound": "willem_accordion"},
+        {"time": 1, "action": "camera_long", "effect": "endless_perspective"},
+        {"time": 3, "action": "npc_visible", "npc": "willem_in_distance"},
+        {"time": 5, "action": "tutorial_text", "text": "The accordion player. He's always there. Always."}
+      ]
+    },
+    
+    "navigation_decision": {
+      "event_id": "choose_direction",
+      "trigger": "player_at_junction",
+      "type": "player_choice",
+      "options": [
+        {"id": "follow_sign", "action": "probability_check"},
+        {"id": "follow_tiles", "action": "probability_check"},
+        {"id": "follow_audio", "action": "bonus_probability_check"},
+        {"id": "follow_emergency_signs", "action": "reliable_check"}
+      ],
+      "outcome_determination": "probability_with_modifiers"
+    }
+  },
+  
+  "wrong_exit_events": {
+    "red_light_emergence": {
+      "event_id": "accidental_red_light",
+      "trigger": "exit_probability_roodelicht",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "record_scratch"},
+        {"time": 0.5, "action": "camera_emerge", "to": "between_red_windows"},
+        {"time": 1, "action": "ambient_change", "to": "red_light_district_audio"},
+        {"time": 1.5, "action": "debuff_apply", "debuff": "red_light_shame"},
+        {"time": 2, "action": "npc_appear", "npc": "mevrouw_jansen_at_window"},
+        {"time": 2.5, "action": "dialogue", "speaker": "mevrouw_jansen", "text": "Ah, another one. The tunnel got you too?"},
+        {"time": 4, "action": "achievement_check", "id": "scenic_route"},
+        {"time": 5, "action": "selfie_available", "prop": "accidental_tourist"}
+      ],
+      "aftermath": {
+        "can_reenter_tunnel": false,
+        "surface_directions_available": true,
+        "comedy_npc_comments": true
+      }
+    },
+    
+    "coffeeshop_emergence": {
+      "event_id": "accidental_coffeeshop",
+      "trigger": "exit_probability_coffeeshop",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "door_burst_open"},
+        {"time": 0.5, "action": "camera_emerge", "to": "storage_room"},
+        {"time": 1, "action": "ambient_change", "to": "coffeeshop_haze"},
+        {"time": 1.5, "action": "npc_reaction", "npc": "unsurprised_staff", "text": "Happens twice a week."},
+        {"time": 3, "action": "debuff_risk_check", "debuff": "contact_high", "chance": 0.3},
+        {"time": 4, "action": "offer", "type": "confusion_cure", "price": "tourist_markup"}
+      ]
+    },
+    
+    "canal_emergence": {
+      "event_id": "accidental_canal",
+      "trigger": "exit_probability_canal",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "outdoor_sounds_sudden"},
+        {"time": 0.5, "action": "camera_emerge", "to": "narrow_walkway_no_railing"},
+        {"time": 1, "action": "hazard_trigger", "type": "bicycle_near_miss"},
+        {"time": 1.5, "action": "debuff_risk_check", "debuff": "bicycle_trauma", "chance": 0.4},
+        {"time": 2, "action": "tutorial_text", "text": "You're back on the surface. Worse off than where you started."}
+      ]
+    },
+    
+    "febo_emergence": {
+      "event_id": "febo_backdoor",
+      "trigger": "exit_through_hidden_passage OR exit_probability_febo",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "heating_unit_clatter"},
+        {"time": 0.5, "action": "camera_emerge", "to": "behind_automat"},
+        {"time": 1, "action": "ambient_change", "to": "3am_vibes"},
+        {"time": 1.5, "action": "tutorial_text", "text": "The FEBO automat. It's always 3 AM here, somehow."},
+        {"time": 2.5, "action": "offer", "type": "consolation_kroket", "price": 0}
+      ],
+      "secret_discovery": {
+        "condition": "used_hidden_passage",
+        "achievement": "back_door_regular",
+        "shortcut_unlocked": true
+      }
+    },
+    
+    "return_to_start": {
+      "event_id": "complete_loop",
+      "trigger": "exit_probability_start",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "familiar_sounds"},
+        {"time": 0.5, "action": "camera_emerge", "to": "entrance_hall_again"},
+        {"time": 1, "action": "npc_react", "npc": "marloes", "text": "Back again? Did you look at the map? ...You didn't look at the map."},
+        {"time": 2.5, "action": "tutorial_text", "text": "You've returned to where you started. Somehow."}
+      ]
+    }
+  },
+  
+  "success_events": {
+    "correct_exit": {
+      "event_id": "navigation_success",
+      "trigger": "reach_intended_destination",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "relief_chime"},
+        {"time": 0.5, "action": "buff_apply", "buff": "crossing_confidence"},
+        {"time": 1, "action": "stat_update", "stat": "successful_navigations"},
+        {"time": 1.5, "action": "tutorial_text", "text": "You made it. The correct exit. First try? Impressive."}
+      ]
+    },
+    
+    "perfect_navigation": {
+      "event_id": "no_wrong_turns",
+      "trigger": "reach_destination_without_errors",
+      "sequence": [
+        {"time": 0, "action": "audio", "sound": "achievement_fanfare"},
+        {"time": 0.5, "action": "buff_apply", "buff": "tunnel_vision"},
+        {"time": 1, "action": "achievement_check", "id": "tunnel_vision"},
+        {"time": 1.5, "action": "tutorial_text", "text": "Perfect navigation. You read the signs. The REAL signs."}
+      ]
+    },
+    
+    "fifth_success": {
+      "event_id": "navigation_mastery",
+      "trigger": "successful_navigations_equals_5",
+      "sequence": [
+        {"time": 0, "action": "achievement", "id": "underground_navigator"},
+        {"time": 0.5, "action": "buff_apply", "buff": "underground_navigator", "permanent": true},
+        {"time": 1, "action": "npc_react", "npc": "marloes", "text": "Five times? You're practically a local. Almost."},
+        {"time": 2, "action": "shortcut_unlock", "type": "reliable_navigation"}
+      ]
+    }
+  },
+  
+  "npc_events": {
+    "henk_interactions": {
+      "free_directions": {
+        "trigger": "ask_henk_directions",
+        "sequence": [
+          {"action": "henk_stands", "slow": true},
+          {"action": "henk_points", "direction": "random"},
+          {"action": "dialogue", "text": "Centraal Station? Ja, ja, go that way."},
+          {"action": "navigation_effect", "accuracy": "very_low"}
+        ]
+      },
+      "paid_directions": {
+        "trigger": "pay_henk_5_euro",
+        "sequence": [
+          {"action": "gold_subtract", "amount": 5},
+          {"action": "henk_considers"},
+          {"action": "dialogue", "text": "Okay, for five euro, I give you the REAL directions. This way. Maybe."},
+          {"action": "navigation_effect", "accuracy_bonus": 0.10}
+        ]
+      },
+      "escort": {
+        "trigger": "pay_henk_10_euro",
+        "sequence": [
+          {"action": "gold_subtract", "amount": 10},
+          {"action": "henk_stands_slowly"},
+          {"action": "dialogue", "text": "For ten euro, I walk you there myself. But I walk slow. Very slow."},
+          {"action": "escort_begin", "speed": "very_slow", "guaranteed": true}
+        ]
+      }
+    },
+    
+    "marloes_interactions": {
+      "buy_map": {
+        "trigger": "purchase_tunnel_map",
+        "sequence": [
+          {"action": "gold_subtract", "amount": 8},
+          {"action": "item_grant", "item": "tunnel_map_accurate"},
+          {"action": "dialogue", "text": "€8 for the map. It's the only accurate one in the city. Yes, really."},
+          {"action": "navigation_effect", "accuracy_bonus": 0.15}
+        ]
+      },
+      "ignore_advice": {
+        "trigger": "buy_map_then_go_wrong_way",
+        "sequence": [
+          {"action": "marloes_sigh"},
+          {"action": "dialogue", "text": "*sighs* See you in twenty minutes."}
+        ]
+      }
+    },
+    
+    "willem_tip_sequence": {
+      "first_tip": {
+        "trigger": "tip_willem_5_euro_visit_1",
+        "sequence": [
+          {"action": "gold_subtract", "amount": 5},
+          {"action": "willem_looks_up"},
+          {"action": "dialogue", "text": "Follow the sound of the tram. It knows the way."},
+          {"action": "quest_progress", "quest": "eternal_busker", "stage": 1}
+        ]
+      },
+      "second_tip": {
+        "trigger": "tip_willem_5_euro_visit_2",
+        "sequence": [
+          {"action": "gold_subtract", "amount": 5},
+          {"action": "willem_pauses_playing"},
+          {"action": "dialogue", "text": "The red signs lie. The emergency signs tell truth."},
+          {"action": "quest_progress", "quest": "eternal_busker", "stage": 2}
+        ]
+      },
+      "third_tip": {
+        "trigger": "tip_willem_5_euro_visit_3",
+        "sequence": [
+          {"action": "gold_subtract", "amount": 5},
+          {"action": "willem_stops_playing"},
+          {"action": "dialogue", "text": "I remember when the tunnel was new. Before the bikes. Before... *trails off*"},
+          {"action": "visual", "type": "willem_flickers"},
+          {"action": "dialogue", "text": "I think I'll stay a while longer."},
+          {"action": "quest_complete", "quest": "eternal_busker"},
+          {"action": "achievement", "id": "willems_friend"},
+          {"action": "item_grant", "item": "willems_accordion_cosmetic"},
+          {"action": "buff_apply", "buff": "willems_wisdom", "permanent": true}
+        ]
+      }
+    },
+    
+    "lost_tourist_escort": {
+      "trigger": "offer_to_help_lost_tourist",
+      "sequence": [
+        {"action": "dialogue", "speaker": "lost_tourist", "text": "You'd... you'd help me? Really? But the tiles..."},
+        {"action": "escort_begin", "npc": "lost_tourist"},
+        {"action": "escort_behavior", "freezes_at_intersections": true},
+        {"action": "escort_behavior", "second_guesses_everything": true}
+      ],
+      "completion": {
+        "trigger": "reach_any_correct_exit",
+        "sequence": [
+          {"action": "dialogue", "speaker": "lost_tourist", "text": "Daylight! I never thought I'd see it again!"},
+          {"action": "gold_grant", "amount": 5},
+          {"action": "achievement", "id": "tour_guide"},
+          {"action": "karma", "type": "positive"}
+        ]
+      },
+      "comedy_followup": {
+        "next_visit": "different_lost_tourist_same_zone"
+      }
+    }
+  },
+  
+  "quest_events": {
+    "red_light_discovery": {
+      "quest_id": "red_light_discovery",
+      "trigger": "first_red_light_emergence",
+      "type": "micro_quest",
+      "auto_complete": true,
+      "reward": {
+        "achievement": "scenic_route",
+        "knowledge": "tunnel_layout_improved_permanently"
+      }
+    },
+    
+    "febo_shortcut": {
+      "quest_id": "febo_shortcut_discovery",
+      "trigger": "find_hidden_entrance",
+      "type": "hidden_quest",
+      "phases": [
+        {"phase": "discover", "method": "flashlight_reveals_OR_febo_regular_OR_hint"},
+        {"phase": "use", "action": "crawl_through_heating_vent"},
+        {"phase": "emerge", "location": "febo_automat"}
+      ],
+      "reward": {
+        "achievement": "back_door_regular",
+        "shortcut": "febo_tunnel_permanent",
+        "item": "free_kroket"
+      }
+    },
+    
+    "eternal_busker": {
+      "quest_id": "eternal_busker_quest",
+      "trigger": "tip_willem_5_euro_three_visits",
+      "type": "hidden_quest",
+      "phases": [
+        {"visit": 1, "action": "navigation_hint"},
+        {"visit": 2, "action": "personal_story"},
+        {"visit": 3, "action": "ghost_revelation_maybe"}
+      ],
+      "reward": {
+        "achievement": "willems_friend",
+        "item": "willems_accordion_cosmetic",
+        "buff": "permanent_navigation_10_all_tunnels"
+      },
+      "mystery": "is_willem_actually_dead"
+    }
+  },
+  
+  "environmental_triggers": {
+    "time_underground_check": {
+      "interval_seconds": 60,
+      "check": "time_since_entry",
+      "threshold_minutes": 10,
+      "effect": {
+        "debuff": "underground_dread",
+        "dialogue_trigger": "character_mutters_daylight"
+      }
+    },
+    
+    "navigation_failure_accumulator": {
+      "trigger": "wrong_turn_count",
+      "threshold": 3,
+      "effect": {
+        "debuff": "tunnel_confusion",
+        "npc_comments": true
+      }
+    }
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "locations": [
+    {
+      "name": "The Bassline Opera House",
+      "tag_id": "sinfonia_bassline_opera_house_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A baroque masterpiece dominating the edge of Opera House Plaza. Massive gilded doors, marble columns, and a grand staircase leading to the entrance. Crystal chandeliers visible through tall windows. A queue of well-dressed patrons waits outside during performance hours. By night, a subtle bass thump hints at the venue's secret identity.",
+        "entry_condition": "Available 10:00-23:00 for lobby; performance tickets required for auditorium; Bassline ticket for nighttime"
+      },
+      "interior": {
+        "theme": "400 years of cultural excellence hiding modern decadence, high art meeting low comedy",
+        "features": [
+          "zone: grand_lobby",
+          "zone: main_auditorium",
+          "zone: backstage",
+          "zone: dressing_rooms",
+          "zone: orchestra_pit_boss_arena",
+          "dual_identity: classical_day_edm_night",
+          "quest_location: fiaker_fiasco_phase_03",
+          "boss_arena: maestro_von_strauss",
+          "encounter: waltz_of_the_bros"
+        ]
+      },
+      "functions": [
+        "Multi-zone story hub",
+        "Fiaker Fiasco Phase 3 (€2,000 damage)",
+        "City boss arena (Maestro Vice von Strauss)",
+        "Rival trio encounter location",
+        "Gift shop vendor",
+        "Ticket sales",
+        "Hidden entrance to Black-Tie Backroom",
+        "Unlocks Baroness' Ballroom via boss keys"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Grand Lobby",
+      "tag_id": "sinfonia_bassline_opera_house_lobby_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A cavernous baroque hall with 60-foot painted dome ceiling, grand marble staircase ascending to the auditorium level, and six crystal chandeliers casting golden light. Marble columns with gold leaf capitals line the walls. Box office windows in ornate brass cages, gift shop alcove, and coat check flank the entrance.",
+        "entry_condition": "Open 10:00-23:00; free access"
+      },
+      "interior": {
+        "theme": "Grand entrance, cultural gatekeeping, gossip hub, secret passage to underworld",
+        "features": [
+          "entry_point: main_doors (from_plaza)",
+          "shop_node: box_office",
+          "shop_node: gift_shop",
+          "service_node: coat_check",
+          "service_node: champagne_bar (evening)",
+          "npc_vendor: box_office_attendant_01",
+          "npc_vendor: gift_shop_clerk_01",
+          "npc_service: coat_check_helga_01",
+          "npc_roaming: opera_usher_01",
+          "npc_enemy: maestros_assistant_01 (random_spawn)",
+          "interactive: performance_board",
+          "interactive: mozart_portrait (secret_switch)",
+          "interactive: beethoven_bust (luck_bonus)",
+          "interactive: maestro_bust",
+          "interactive: donation_box",
+          "interactive: wifi_hotspot",
+          "hidden_door: black_tie_backroom_entrance",
+          "selfie_prop: grand_staircase",
+          "selfie_prop: chandelier_under",
+          "transition: auditorium_doors",
+          "transition: main_exit_to_plaza"
+        ]
+      },
+      "functions": [
+        "Public hub area",
+        "Ticket and merchandise sales",
+        "Wi-Fi hotspot (ICQ access)",
+        "Gossip gathering point",
+        "Enemy encounter (Maestro's Assistant)",
+        "Hidden entrance discovery",
+        "Selfie prop collection"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Main Auditorium",
+      "tag_id": "sinfonia_bassline_opera_house_auditorium_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A magnificent horseshoe-shaped theater seating 1,200 (satirically never full except for free events). Red velvet seating on orchestra level, balcony, and upper gallery. The unused Royal Box from 1918 sits center. A massive baroque proscenium arch frames the deep stage.",
+        "entry_condition": "Performance ticket (€40-80) for evening; Charm 2+ to sneak into rehearsals; Bassline ticket (€25) for nighttime"
+      },
+      "interior": {
+        "theme": "High culture performance space that transforms into EDM arena, dual identity embodied",
+        "features": [
+          "entry_point: auditorium_doors (from_lobby)",
+          "seating: orchestra_level",
+          "seating: balcony",
+          "seating: upper_gallery",
+          "landmark: royal_box (unused_since_1918)",
+          "landmark: chandelier_main (boss_mechanic)",
+          "stage: proscenium_arch",
+          "stage: velvet_curtain",
+          "npc_roaming: opera_usher_01",
+          "npc_ambient: wandering_patrons",
+          "event_hook: waltz_of_the_bros (rival_encounter)",
+          "event_hook: performance_viewing",
+          "event_hook: bassline_transformation",
+          "boss_transition: orchestra_pit_access",
+          "configuration: normal_seating",
+          "configuration: bassline_arena (night)"
+        ]
+      },
+      "functions": [
+        "Performance viewing",
+        "Waltz of the Bros encounter",
+        "Boss arena transformation (nighttime)",
+        "Artistic Appreciation buff source",
+        "Dress code enforcement zone"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Backstage",
+      "tag_id": "sinfonia_bassline_opera_house_backstage_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Controlled chaos of a working theater - prop storage rooms with labeled boxes, costume racks on wheels, makeup tables with lit mirrors, and the ever-present smell of sawdust and coffee. Call sheets cover every surface. The current Magic Flute production's elaborate sets dominate the space.",
+        "entry_condition": "Stage Pass item; Charm 3+ to bluff past security; auto-entry during Fiaker Fiasco from café alley"
+      },
+      "interior": {
+        "theme": "Behind the curtain reality, production chaos, Gustav's path of destruction",
+        "features": [
+          "entry_point: loading_dock (quest_entry)",
+          "entry_point: stage_wings (from_auditorium)",
+          "zone: prop_storage_room",
+          "zone: costume_workshop",
+          "zone: loading_dock",
+          "zone: stage_left_wing",
+          "zone: stage_right_wing",
+          "zone: center_crossover",
+          "quest_npc: regisseur_hoffmann_01",
+          "quest_npc: stagehead_otto_01",
+          "quest_npc: prima_donna_adelheid_01",
+          "quest_npc: papageno_franz_01",
+          "quest_npc: seamstress_01",
+          "quest_npc: backstage_crew",
+          "destructible: prop_rack_papageno (€150)",
+          "destructible: magic_flute_prop (€200)",
+          "destructible: costume_rack_queen (€200)",
+          "destructible: mechanical_snake (€800)",
+          "destructible: paper_trees_x2 (€250)",
+          "destructible: starry_night_backdrop (€400, avoidable)",
+          "interactive: rigging_controls",
+          "interactive: coffee_station",
+          "interactive: call_sheet_board",
+          "searchable: prop_storage",
+          "searchable: costume_workshop",
+          "event_hook: gustav_loading_dock_entry",
+          "event_hook: prop_storage_collision",
+          "event_hook: costume_tangle",
+          "event_hook: stage_incursion",
+          "event_hook: backdrop_catastrophe",
+          "event_hook: papageno_choice_point",
+          "event_hook: damage_confrontation",
+          "exit_point: orchestra_pit_side_door (to_stadtpark)",
+          "exit_point: loading_dock (to_alley)"
+        ]
+      },
+      "functions": [
+        "Fiaker Fiasco Phase 3 primary zone",
+        "€2,000 damage set piece",
+        "Papageno ally recruitment",
+        "Choice path (reduces damage by €400)",
+        "Findable items (props, costumes)",
+        "Director's breakdown comedy"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Prop Storage",
+      "tag_id": "sinfonia_bassline_opera_house_prop_storage_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Metal shelving units crammed with labeled boxes: 'ZAUBERFLÖTE - BIRDS', 'ZAUBERFLÖTE - FLUTES', 'FIDELIO - CHAINS (DO NOT USE)'. Papageno bird heads sit on a rack. The magic flute prop gleams on a stand.",
+        "entry_condition": "Part of backstage access"
+      },
+      "interior": {
+        "theme": "Organized chaos about to become disorganized chaos",
+        "features": [
+          "destructible: prop_rack_papageno",
+          "destructible: magic_flute_prop",
+          "searchable: prop_boxes",
+          "findable: panpipes_prop",
+          "findable: bird_seeds",
+          "findable: prop_scepter",
+          "event_hook: gustav_prop_collision"
+        ]
+      },
+      "functions": [
+        "Destruction zone (€350 damage)",
+        "Findable prop items",
+        "Gustav's first backstage collision"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Costume Workshop",
+      "tag_id": "sinfonia_bassline_opera_house_costume_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "Sewing machines, fabric bolts, rolling costume racks heavy with elaborate gowns. The Queen of the Night's star-studded black gown hangs prominently. Feathers everywhere - some from costumes, soon more from Gustav's cape.",
+        "entry_condition": "Part of backstage access"
+      },
+      "interior": {
+        "theme": "Artisan space about to be violated by horse",
+        "features": [
+          "destructible: costume_rack_queen (€200)",
+          "searchable: fabric_scraps",
+          "findable: masquerade_mask",
+          "findable: formal_gloves",
+          "findable: opera_cape",
+          "findable: spare_tiara",
+          "npc_ambient: seamstress_01",
+          "event_hook: gustav_costume_tangle"
+        ]
+      },
+      "functions": [
+        "Destruction zone (€200 damage)",
+        "Costume item collection",
+        "Gustav tangles and tears"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Stage (Performance Area)",
+      "tag_id": "sinfonia_bassline_opera_house_stage_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "The stage proper - deep, with trap doors, flying system for scenery, and the current Magic Flute production in mid-rehearsal. Paper trees for Papageno's forest. The mechanical snake for the Queen's entrance. Prima Donna Adelheid mid-aria.",
+        "entry_condition": "Via stage wings during quest; normally restricted"
+      },
+      "interior": {
+        "theme": "Sacred performance space violated by horse, art destroyed by chaos",
+        "features": [
+          "entry_point: stage_left_wing",
+          "entry_point: stage_right_wing",
+          "destructible: mechanical_snake (€800)",
+          "destructible: paper_trees_x2 (€250)",
+          "destructible: starry_night_backdrop (€400, avoidable)",
+          "npc_quest: prima_donna_adelheid_01 (singing)",
+          "npc_quest: papageno_franz_01 (performing)",
+          "npc_quest: regisseur_hoffmann_01 (directing)",
+          "event_hook: gustav_stage_incursion",
+          "event_hook: der_holle_rache_interrupted",
+          "event_hook: snake_destruction",
+          "event_hook: backdrop_tear",
+          "event_hook: director_breakdown"
+        ]
+      },
+      "functions": [
+        "Major destruction zone (€800-1,450)",
+        "Prima Donna's aria interruption",
+        "Director's breakdown scene",
+        "Papageno alternate route trigger"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Dressing Rooms",
+      "tag_id": "sinfonia_bassline_opera_house_dressing_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A corridor of individual rooms - star rooms larger with private bathrooms, chorus rooms shared and utilitarian. Lit mirrors, cosmetics, nervous energy. The green room serves as communal waiting area.",
+        "entry_condition": "Stage Pass or Charm 3+; available 14:00-22:00"
+      },
+      "interior": {
+        "theme": "Pre-performance nerves, gossip central, hidden scandals",
+        "features": [
+          "entry_point: backstage_corridor",
+          "room: star_dressing_room_1",
+          "room: star_dressing_room_2",
+          "room: star_dressing_room_3 (maestro)",
+          "room: chorus_rooms",
+          "room: green_room",
+          "service_node: makeup_station",
+          "npc_service: makeup_artist_01",
+          "npc_service: dresser_01",
+          "npc_ambient: chorus_members",
+          "npc_ambient: lead_performers",
+          "searchable: star_dressing_room_3",
+          "findable: love_letters (quest_item)",
+          "findable: expensive_cologne",
+          "interactive: mirrors (status_check)",
+          "gossip_source: overheard_conversations"
+        ]
+      },
+      "functions": [
+        "NPC interaction zone",
+        "Gossip gathering",
+        "Maestro scandal discovery",
+        "Makeup services (status removal)",
+        "Costume borrowing (with risk)"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Orchestra Pit / Boss Arena",
+      "tag_id": "sinfonia_bassline_opera_house_orchestra_pit_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "By day: A sunken pit below stage level with music stands, chairs for 80+ musicians, a grand piano, and the conductor's podium. By night (Bassline): The pit rises to stage level, becomes a dance floor, the podium becomes a DJ booth, and fog machines fill the air.",
+        "entry_condition": "Via auditorium during performance; Bassline access 23:00-04:00 with Bravado 3+, Charm 2+"
+      },
+      "interior": {
+        "theme": "Classical corruption, dual identity made manifest, ultimate confrontation",
+        "features": [
+          "entry_point: auditorium_stairs",
+          "entry_point: backstage_side_door",
+          "configuration: orchestra_pit (daytime)",
+          "configuration: bassline_arena (nighttime)",
+          "boss_encounter: maestro_von_strauss",
+          "boss_phase_1: classical_corruption",
+          "boss_phase_2: the_drop",
+          "boss_phase_3: encore",
+          "landmark: conductor_podium_dj_booth",
+          "landmark: grand_piano",
+          "interactive: music_stands (removed_at_night)",
+          "dynamic_lighting: club_lights",
+          "dynamic_audio: tempo_sync",
+          "event_hook: bassline_transformation",
+          "event_hook: maestro_entrance",
+          "event_hook: boss_phases",
+          "event_hook: boss_defeat",
+          "exit_point: side_door (to_stadtpark, quest)"
+        ]
+      },
+      "functions": [
+        "City boss arena",
+        "Three-phase boss fight",
+        "Conductor's Baton weapon drop",
+        "Baroness' Vault Keys drop",
+        "Bassline VIP status unlock",
+        "Quest exit to Stadtpark"
+      ]
+    },
+    {
+      "name": "The Bassline Opera House - Loading Dock",
+      "tag_id": "sinfonia_bassline_opera_house_loading_dock_01",
+      "region": "Sinfonia",
+      "exterior": {
+        "description": "A large industrial door at the rear of the opera house, usually partially open for deliveries. Freight elevator (non-functional), smoke break area, delivery crates. The alley from Café Sachertorte connects here.",
+        "entry_condition": "Quest entry point (Fiaker Fiasco); staff access normally"
+      },
+      "interior": {
+        "theme": "Behind the scenes service entrance, chaos entry point",
+        "features": [
+          "entry_point: alley_from_cafe",
+          "npc_ambient: stagehead_otto_01 (coffee)",
+          "interactive: delivery_crates",
+          "interactive: freight_elevator (broken)",
+          "event_hook: gustav_dramatic_entry",
+          "event_hook: otto_deadpan_reaction",
+          "transition: to_prop_storage"
+        ]
+      },
+      "functions": [
+        "Fiaker Fiasco entry point",
+        "Otto's deadpan introduction",
+        "Service area atmosphere"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "zone_transitions": [
+      {"from": "lobby", "to": "auditorium", "type": "door", "condition": "ticket_or_charm_2"},
+      {"from": "auditorium", "to": "lobby", "type": "door", "difficulty": "easy"},
+      {"from": "lobby", "to": "black_tie_backroom", "type": "hidden_door", "condition": "secret_discovered"},
+      {"from": "auditorium", "to": "orchestra_pit", "type": "stairs", "condition": "bassline_event_or_main_quest"},
+      {"from": "backstage", "to": "stage", "type": "wings", "difficulty": "easy"},
+      {"from": "backstage", "to": "dressing_rooms", "type": "corridor", "difficulty": "easy"},
+      {"from": "backstage", "to": "prop_storage", "type": "door", "difficulty": "easy"},
+      {"from": "backstage", "to": "costume_workshop", "type": "door", "difficulty": "easy"},
+      {"from": "backstage", "to": "loading_dock", "type": "door", "difficulty": "easy"},
+      {"from": "orchestra_pit", "to": "stadtpark", "type": "side_door", "condition": "fiaker_fiasco_or_boss_defeated"}
+    ],
+    "external_connections": [
+      {"from": "lobby", "to": "opera_house_plaza", "type": "main_entrance"},
+      {"from": "loading_dock", "to": "cafe_sachertorte_alley", "type": "alley", "condition": "fiaker_fiasco"},
+      {"from": "orchestra_pit", "to": "stadtpark", "type": "side_door", "condition": "quest_active"},
+      {"from": "lobby", "to": "black_tie_backroom", "type": "hidden", "condition": "secret_discovered"},
+      {"from": "boss_defeated", "to": "baroness_ballroom", "type": "unlocked", "condition": "keys_obtained"}
+    ],
+    "quest_path": {
+      "fiaker_fiasco_phase_3_entry": "loading_dock (from_cafe_alley)",
+      "fiaker_fiasco_route": "loading_dock → prop_storage → costume_workshop → stage → orchestra_pit_side_door",
+      "fiaker_fiasco_alternate": "loading_dock → prop_storage → papageno_guides → backstage_corridor → orchestra_pit_side_door",
+      "fiaker_fiasco_exit": "orchestra_pit_side_door → stadtpark"
+    }
+  },
+  
+  "spatial_layout": {
+    "total_footprint": {
+      "width_meters": 80,
+      "depth_meters": 100,
+      "floors": 4
+    },
+    "zones": {
+      "lobby": {"width": 40, "depth": 30, "ceiling_height": 18},
+      "auditorium": {"width": 50, "depth": 40, "ceiling_height": 25, "seating": 1200},
+      "backstage": {"width": 45, "depth": 35, "ceiling_height": 15},
+      "dressing_rooms": {"width": 30, "depth": 20, "rooms": 12},
+      "orchestra_pit": {"width": 35, "depth": 25, "depth_below_stage": 3}
+    }
+  },
+  
+  "damage_tracking_nodes": {
+    "phase": "fiaker_fiasco_phase_03",
+    "incoming_total_from_previous": 340,
+    "destruction_sequence": [
+      {"location": "prop_storage", "items": ["papageno_bird_head", "magic_flute_prop"], "total_euro": 350},
+      {"location": "costume_workshop", "items": ["queen_gown"], "total_euro": 200},
+      {"location": "stage", "items": ["mechanical_snake", "paper_trees_x2"], "total_euro": 1050},
+      {"location": "stage", "items": ["starry_backdrop"], "total_euro": 400, "avoidable": true}
+    ],
+    "phase_maximum": 2000,
+    "phase_minimum": 1600,
+    "total_with_previous": {
+      "maximum": 2340,
+      "minimum": 1940
+    },
+    "additional_demand": {
+      "source": "prima_donna_adelheid",
+      "base": 500,
+      "negotiated": 200,
+      "charm_required": 4
+    },
+    "carries_forward_to": "sinfonia_stadtpark_01"
+  },
+  
+  "time_configurations": {
+    "morning": {
+      "hours": "10:00-12:00",
+      "zones_accessible": ["lobby", "backstage"],
+      "activity": "technical_rehearsal"
+    },
+    "afternoon": {
+      "hours": "12:00-17:00",
+      "zones_accessible": ["lobby", "backstage", "dressing_rooms"],
+      "activity": "dress_rehearsal"
+    },
+    "pre_performance": {
+      "hours": "17:00-19:00",
+      "zones_accessible": ["lobby", "auditorium"],
+      "activity": "patrons_arriving",
+      "dress_code": true
+    },
+    "performance": {
+      "hours": "19:00-22:00",
+      "zones_accessible": ["lobby_intermission", "auditorium"],
+      "activity": "show_in_progress"
+    },
+    "bassline": {
+      "hours": "23:00-04:00",
+      "zones_accessible": ["lobby", "orchestra_pit"],
+      "activity": "edm_event",
+      "boss_available": true,
+      "transformation_active": true
+    }
+  },
+  
+  "state_variations": {
+    "normal": {
+      "all_zones_function_normally": true,
+      "npcs_on_schedule": true
+    },
+    "fiaker_fiasco_active": {
+      "backstage_chaos_mode": true,
+      "destruction_enabled": true,
+      "npcs_reactive": true,
+      "performance_interrupted": true
+    },
+    "post_fiaker_fiasco_unpaid": {
+      "auditorium_blocked": true,
+      "backstage_blocked": true,
+      "blocker": "opera_usher",
+      "lobby_accessible": true,
+      "visible_repairs": true
+    },
+    "post_fiaker_fiasco_paid": {
+      "lobby_accessible": true,
+      "auditorium_accessible": true,
+      "backstage_restricted": true,
+      "npc_disposition": "grudging_acceptance",
+      "production_changes_visible": ["puppet_snake", "simpler_backdrop"]
+    },
+    "bassline_mode": {
+      "orchestra_pit_transformed": true,
+      "boss_available": true,
+      "lighting_changed": true,
+      "audio_changed": true,
+      "different_crowd": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="ArcadeTemplate" type="Node2D"]
+
+[node name="EntryPoint" type="Position2D" parent="."]
+position = Vector2(120, 220)
+
+[node name="ArcadeMachine" type="Node2D" parent="."]
+position = Vector2(200, 240)
+
+[node name="DungeonEntrance" type="Area2D" parent="."]
+position = Vector2(400, 260)
+
+[node name="QuestNPC" type="Node2D" parent="."]
+position = Vector2(310, 240)
