@@ -1,6 +1,6 @@
 # CLAUDE.md — Eurobound
 
-Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.4**, targeting **Steam/desktop**. Three aging frat bros — Lord Pilsner, Chadwick, and Bradley — take one last bender across a parody Europe soaked in 90s/early-2000s pop culture. Read `design/narrative/Synopsis.md` before writing or editing any game content.
+Eurobound is a satirical, EarthBound-style JRPG built in **Unity (Universal Render Pipeline)**, targeting **Steam/desktop**. Three aging frat bros — Lord Pilsner, Chadwick, and Bradley — take one last bender across a parody Europe soaked in 90s/early-2000s pop culture. Read `design/narrative/Synopsis.md` before writing or editing any game content.
 
 ## Content rules (non-negotiable)
 
@@ -11,16 +11,20 @@ Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.4**, targetin
 - **NPCs are never boring, corporate, or professional.** Every NPC, location, and item gets a funny name and is written cleverly, with wit, in service of satirizing and parodying everything.
 - **No real city or place names in game content.** Parody names only: Publandia, Debaucheryville, Sinfonia, Shamsterdam. Internal planning docs may reference the real-world inspirations; player-facing text never does. Minted world-name canon and exemptions live in the rulings ledger (below).
 - **All money is SOVS.** Never euros, never the € glyph, never koruna. Write prices as SOVS (e.g. "40 SOVS"). This supersedes the €-as-display-glyph rule in the Round 5 economy spec §1.2.
-- **No mascots, ever.** No pets, puppets, named companion objects, emotional-support entities, or fourth party members. The party is three bros.
+- **No mascots, ever.** No pets, puppets, named companion objects, emotional-support entities, or fourth party members. The party is three bros. (Ambient set-dressing animals the author rules in, like the Absinthe Arcade window cat, are ledger exceptions.)
 - **All names must be unique** across the game — NPCs, locations, items, quests, everything.
 - **All side quests are optional.**
 - NFT artwork is 90s/00s pop culture, never location-derived.
 
 ## Templates are mandatory
 
-Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest doc? **Copy the matching template from `design/templates/`** — `NPC_Profile_Template.md`, `villain_template.md` (every villain gets one at creation — author mandate), `location_validation_template.md`, `NFT_Template.md`, `permanent_item_template.md`, `PNG_Assets_Template.md`, `sidequest_template.md` (the only quest template — the old `quest.md` short form is retired, its unique sections merged in). Templates are floors, not ceilings. If no template fits, ask the author before inventing a format.
+Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest doc? **Copy the matching template from `design/templates/`** — `NPC_Profile_Template.md`, `villain_template.md` (every villain gets one at creation — author mandate), `location_validation_template.md`, `NFT_Template.md`, `permanent_item_template.md`, `PNG_Assets_Template.md`, `3D_Asset_Manifest_Template.md` (one per 3D building kit), `sidequest_template.md` (the only quest template — the old `quest.md` short form is retired, its unique sections merged in). Templates are floors, not ceilings. If no template fits, ask the author before inventing a format.
 
 `design/templates/` is the only canonical template folder — the restructure move is complete. Template copies elsewhere (e.g. `Design/Character Profiles/Templates/`, or a root-level `/Templates`) are legacy — do not use them.
+
+## 3D assets
+
+**3D work** (any building, prop, or decal modeled for Unity; Tripo, Blender, meshes, materials): read `design/style_guides/3d_asset_rules.md` before starting. It is binding: references are canon, architecture passes a gray clay review before ornament, the author hand-paints all distress, and agents drive the tools themselves.
 
 ## Ask the author first
 

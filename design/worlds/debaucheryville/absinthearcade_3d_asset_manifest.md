@@ -58,7 +58,7 @@ Exact instance positions are in `manifest.json → assets[].instances`. `setup_s
 |---|---|---|---:|
 | `aa_shell_facade` | Hull, openings, recesses, roof, bands, cornice, quoins | Blender (scripted from blockout) | 1 |
 | `aa_arch_hero` | Archivolt, Headphone Gentleman sculpt, stepped marquee, tagline bar, neon loop, stained-glass doors | Blender hand + Tripo sculpt | 1 |
-| `aa_window_upper` | Surround, sill, pediment, casement, glass | Blender hand | 6 |
+| `aa_window_upper` | RETIRED Tripo prefab; upper windows are now built into `aa_shell_facade` (openings, storey-specific surrounds, slide-only sash windows) | Blender scripted (`build_shell.py`) | 0 |
 | `aa_window_ground_arched` | Round-headed surround and sash | Blender hand | 1 |
 | `aa_balcony_iron_upper` | Juliet rail and pots, top floor | Blender hand | 2 |
 | `aa_prop_arcade_cabinet` | Sticker-bombed street cabinet | Tripo + cleanup | 1 |
@@ -120,6 +120,11 @@ These are texture or decal work, not polygons:
 - mural (including the painted carved flowers)
 - stickers on the cabinet
 - the pixel/circuit transition
+
+## Graybox review
+
+- **2026-10-27, baseline:** failed (flat wall plane, windows stuck on, thin bands, floating gentleman). Triggered the architectural quality pass.
+- **2026-10-27, after the massing pass:** real openings with recessed sash windows, banded rustication, projecting central bay with lesenes, stepped voussoir arch, keystone-seated gentleman. Still open: arched ground-floor window opening, balconies, gentleman's cartouche surround, retrofit attachment, reseating the mural and props on the new wall faces.
 
 ## Source method
 
