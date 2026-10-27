@@ -54,8 +54,8 @@ UPPER_WINDOWS = [(x, z, s) for z, s in ((6.9, "piano"), (10.5, "middle"), (14.1,
                  for x in (-4.6, 4.6)]
 REPAIRED = (4.6, 10.5)           # later replacement lintel and sill
 # Author ruling 2026-10-27: the black cat sits outside the left first-floor window, which
-# is open. Leaf swing in degrees (left leaf, right leaf), inward.
-OPEN_WINDOWS = {(-4.6, 6.9): (42.0, 35.0)}
+# is open: its lower sash is pushed up (metres raised) so the curtain shows through.
+OPEN_WINDOWS = {(-4.6, 6.9): 0.55}
 WIN_W, WIN_H = 1.16, 1.85
 CASEMENT_SET = 0.24              # how far the frame sits back from the wall face
 
@@ -444,7 +444,7 @@ def window(b_stone, b_frame, x, sill, style):
     b_stone.box(x - hw, x - hw + 0.02, y0, y1, sill, top, bevel=0.0)
     b_stone.box(x + hw - 0.02, x + hw, y0, y1, sill, top, bevel=0.0)
     b_stone.box(x - hw, x + hw, y0, y1, top - 0.02, top, bevel=0.0)
-    casement(b_frame, x, sill, top, hw, OPEN_WINDOWS.get((x, sill), (0.0, 0.0)))
+    casement(b_frame, x, sill, top, hw, OPEN_WINDOWS.get((x, sill), 0.0))
 
 
 def frame(b, x, sill, top, hw, band, y0, y1, bevel):
@@ -496,70 +496,38 @@ def sheer(b, xs0, xs1, cy, z0, z1, mat, pitch=0.06, depth=0.03):
         f.material_index = mat
 
 
-def casement(b, x, sill, top, hw, open_deg=(0.0, 0.0)):
-    """Timber double casement set back in the reveal: fixed frame and transom light, two
-    hinged leaves (opening inward, as Central European casements do), glass, sheer curtain."""
+def casement(b, x, sill, top, hw, raised=0.0):
+    """Timber window set back in the reveal: fixed frame with a glazed upper light (two panes
+    either side of a mullion) and a lower sash that slides up in an inner track, as in the
+    reference. `raised` lifts the lower sash behind the upper light, opening the bottom."""
     y = CASEMENT_SET
     fr = 0.075
     WOOD, GLASS, CURTAIN = 0, 1, 2
-    # Fixed frame and transom.
+    # Fixed frame and meeting rail.
     b.box(x - hw, x + hw, y, y + 0.08, sill, sill + fr, mat=WOOD, bevel=0.004)
     b.box(x - hw, x + hw, y, y + 0.08, top - fr, top, mat=WOOD, bevel=0.004)
-    b.box(x - hw, x - hw + fr, y, y + 0.08, sill, top, mat=WOOD, bevel=0.004)
-    b.box(x + hw - fr, x + hw, y, y + 0.08, sill, top, mat=WOOD, bevel=0.004)
-    tz = sill + (top - sill) * 0.72
-    b.box(x - hw, x + hw, y - 0.01, y + 0.08, tz - 0.035, tz + 0.035, mat=WOOD, bevel=0.004)
-    # Fixed transom light: two glazed panes either side of a centre mullion (per the reference),
-    # with the sheer showing through. It stays glazed even when the leaves below are open.
-    b.box(x - 0.028, x + 0.028, y, y + 0.08, tz + 0.035, top - fr, mat=WOOD, bevel=0.003)
-    b.box(x - hw + fr, x + hw - fr, y + 0.035, y + 0.045, tz + 0.035, top - fr, mat=GLASS, bevel=0.0)
-    sheer(b, x - hw + fr, x + hw - fr, y + 0.13, tz + 0.04, top - fr, CURTAIN)
-    # Two leaves below the transom, each hinged on its outer jamb.
-    lw = hw - fr                       # leaf width
-    z0, z1 = sill + fr, tz - 0.035
-    for side, ang in ((-1, open_deg[0]), (1, open_deg[1])):
-        before = set(b.bm.verts)
-        hinge_x = x + side * lw
-        xa, xb = sorted((hinge_x, x))
-        st = 0.055
-        b.box(xa, xb, y + 0.005, y + 0.065, z0, z0 + st, mat=WOOD, bevel=0.003)
-        b.box(xa, xb, y + 0.005, y + 0.065, z1 - st, z1, mat=WOOD, bevel=0.003)
-        b.box(xa, xa + st, y + 0.005, y + 0.065, z0, z1, mat=WOOD, bevel=0.003)
-        b.box(xb - st, xb, y + 0.005, y + 0.065, z0, z1, mat=WOOD, bevel=0.003)
-        for zb in (z0 + (z1 - z0) / 3, z0 + 2 * (z1 - z0) / 3):
-            b.box(xa, xb, y + 0.015, y + 0.055, zb - 0.012, zb + 0.012, mat=WOOD, bevel=0.0)
-        b.box(xa + st, xb - st, y + 0.03, y + 0.04, z0 + st, z1 - st, mat=GLASS, bevel=0.0)
-        if ang:
-            leaf = [v for v in b.bm.verts if v not in before]
-            # Inward (+Y): the left leaf turns counter-clockwise, the right one clockwise.
-            rot = Matrix.Rotation(math.radians(ang) * -side, 3, "Z")
-            bmesh.ops.rotate(b.bm, verts=leaf, cent=(hinge_x, y + 0.035, 0), matrix=rot)
-    # Sheer curtain behind the glass in soft vertical folds; drawn aside when open.
-    is_open = any(open_deg)
-    zt, zb2 = tz - 0.06, sill + fr + 0.05
-    cy = y + (0.42 if is_open else 0.14)
-    spans = ([(x - hw + fr, x - hw + fr + 0.22), (x + hw - fr - 0.22, x + hw - fr)] if is_open
-             else [(x - hw + fr, x + hw - fr)])
-    for xs0, xs1 in spans:
-        sheer(b, xs0, xs1, cy, zb2, zt, CURTAIN)
-    # The room behind: dark, deeper when the window is open so the gap reads as space.
-    back = WALL_T + (1.2 if is_open else 0.0)
-    b.box(x - hw - 0.2, x + hw + 0.2, back - 0.02, back, sill - 0.2, top + 0.2, mat=3, bevel=0.0)
-    if is_open:
-        # Pale sheer hanging just inside the opening, where daylight reaches it: the cat
-        # reads as a silhouette against it, as in the reference.
-        folds = 18
-        x0c, x1c = x - hw - 0.15, x + hw + 0.15
-        pts = [(x0c + (x1c - x0c) * i / (folds * 2), WALL_T + 0.07 + (0.035 if i % 2 else 0.0))
-               for i in range(folds * 2 + 1)]
-        vb = [b.bm.verts.new((px, py, sill - 0.1)) for px, py in pts]
-        vt = [b.bm.verts.new((px, py, top + 0.1)) for px, py in pts]
-        for i in range(len(pts) - 1):
-            f = b.bm.faces.new((vb[i], vb[i + 1], vt[i + 1], vt[i]))
-            f.material_index = CURTAIN
-        for sx in (-1, 1):
-            xs = sorted((x + sx * (hw + 0.2), x + sx * (hw + 0.22)))
-            b.box(xs[0], xs[1], WALL_T, back, sill - 0.2, top + 0.2, mat=3, bevel=0.0)
+    b.box(x - hw, x - hw + fr, y, y + 0.15, sill, top, mat=WOOD, bevel=0.004)
+    b.box(x + hw - fr, x + hw, y, y + 0.15, sill, top, mat=WOOD, bevel=0.004)
+    tz = sill + (top - sill) * 0.62
+    b.box(x - hw, x + hw, y - 0.01, y + 0.06, tz - 0.035, tz + 0.035, mat=WOOD, bevel=0.004)
+    # Fixed upper light: two glazed panes either side of a centre mullion.
+    b.box(x - 0.028, x + 0.028, y, y + 0.06, tz + 0.035, top - fr, mat=WOOD, bevel=0.003)
+    b.box(x - hw + fr, x + hw - fr, y + 0.025, y + 0.035, tz + 0.035, top - fr, mat=GLASS, bevel=0.0)
+    # Lower sash in the inner track (behind the upper light, so it can slide up past it).
+    sx0, sx1 = x - hw + fr, x + hw - fr
+    z0, z1 = sill + fr + raised, tz + 0.035 + raised
+    st = 0.055
+    yt0, yt1 = y + 0.075, y + 0.13
+    b.box(sx0, sx1, yt0, yt1, z0, z0 + st, mat=WOOD, bevel=0.003)
+    b.box(sx0, sx1, yt0, yt1, z1 - st, z1, mat=WOOD, bevel=0.003)
+    b.box(sx0, sx0 + st, yt0, yt1, z0, z1, mat=WOOD, bevel=0.003)
+    b.box(sx1 - st, sx1, yt0, yt1, z0, z1, mat=WOOD, bevel=0.003)
+    b.box(x - 0.018, x + 0.018, yt0 + 0.01, yt1 - 0.01, z0, z1, mat=WOOD, bevel=0.0)
+    b.box(sx0 + st, sx1 - st, yt0 + 0.025, yt0 + 0.035, z0 + st, z1 - st, mat=GLASS, bevel=0.0)
+    # Sheer hanging close behind the whole window; through the raised opening it is the
+    # bright backdrop the cat sits against.
+    sheer(b, sx0, sx1, y + 0.2, sill + fr + 0.02, top - fr, CURTAIN)
+    b.box(x - hw - 0.2, x + hw + 0.2, WALL_T - 0.02, WALL_T, sill - 0.2, top + 0.2, mat=3, bevel=0.0)
 
 
 # --------------------------------------------------------------------------- roof / void
