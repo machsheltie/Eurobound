@@ -41,5 +41,5 @@ Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest 
 ## Repo notes
 
 - A folder restructure is in flight on `chore/folder-restructure` (target layout: `game/`, `design/`, `marketing/`, `production/`, `tools/`, `docs/`; spec: `docs/superpowers/specs/2026-07-31-folder-restructure-design.md`). `_sorting/` on that branch is the author's staging area — never touch it. After the restructure merges, refresh paths in this file.
-- Tests: GUT (`addons/gut`), unit tests in `tests/unit/`. Data validation: `Tools/validate_data.py`.
+- Tests: Unity Test Framework, Edit Mode and Play Mode tests in the Unity project's `Assets/Tests/`. Data validation: `Tools/validate_data.py`.
 - New files and folders: snake_case, no spaces (per the restructure spec). Match existing conventions when editing.
