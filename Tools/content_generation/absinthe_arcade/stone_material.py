@@ -43,13 +43,51 @@ def build(name, brightness):
     bsdf = N("ShaderNodeBsdfPrincipled")
     L(bsdf.outputs["BSDF"], out.inputs["Surface"])
 
-    # Facade lies on the XZ plane: feed (x, z) to the 2D image lookups.
+    # Project by face direction so reveals, returns and soffits don't smear: front faces
+    # use (x, z), side faces (y, z), top/bottom faces (x, y).
     tc = N("ShaderNodeTexCoord")
     sep = N("ShaderNodeSeparateXYZ")
     L(tc.outputs["Object"], sep.inputs["Vector"])
-    flat = N("ShaderNodeCombineXYZ")
-    L(sep.outputs["X"], flat.inputs["X"])
-    L(sep.outputs["Z"], flat.inputs["Y"])
+
+    def combine(u, v):
+        c = N("ShaderNodeCombineXYZ")
+        L(sep.outputs[u], c.inputs["X"])
+        L(sep.outputs[v], c.inputs["Y"])
+        return c.outputs["Vector"]
+
+    front, side, flat_top = combine("X", "Z"), combine("Y", "Z"), combine("X", "Y")
+    nsep = N("ShaderNodeSeparateXYZ")
+    L(tc.outputs["Normal"], nsep.inputs["Vector"])
+
+    def absval(sock):
+        n = N("ShaderNodeMath")
+        n.operation = "ABSOLUTE"
+        L(sock, n.inputs[0])
+        return n.outputs[0]
+
+    ax, ay, az = absval(nsep.outputs["X"]), absval(nsep.outputs["Y"]), absval(nsep.outputs["Z"])
+
+    def dominant(a, b, c):
+        m = N("ShaderNodeMath")
+        m.operation = "MAXIMUM"
+        L(b, m.inputs[0])
+        L(c, m.inputs[1])
+        g = N("ShaderNodeMath")
+        g.operation = "GREATER_THAN"
+        L(a, g.inputs[0])
+        L(m.outputs[0], g.inputs[1])
+        return g.outputs[0]
+
+    def vmix(fac, va, vb):
+        m = N("ShaderNodeMix")
+        m.data_type = "VECTOR"
+        L(fac, m.inputs["Factor"])
+        L(va, m.inputs[4])
+        L(vb, m.inputs[5])
+        return m.outputs[1]
+
+    proj = vmix(dominant(ax, ay, az), front, side)
+    proj = vmix(dominant(az, ax, ay), proj, flat_top)
 
     img = bpy.data.images.load(str(TEXTURE), check_existing=True)
 
@@ -58,7 +96,7 @@ def build(name, brightness):
         m.inputs["Location"].default_value = (shift, shift * 0.37, 0)
         m.inputs["Rotation"].default_value = (0, 0, math.radians(rot))
         m.inputs["Scale"].default_value = (1 / tile, 1 / tile, 1)
-        L(flat.outputs["Vector"], m.inputs["Vector"])
+        L(proj, m.inputs["Vector"])
         t = N("ShaderNodeTexImage")
         t.image = img
         t.interpolation = "Cubic"
@@ -70,7 +108,7 @@ def build(name, brightness):
     noise = N("ShaderNodeTexNoise")
     noise.inputs["Scale"].default_value = 0.22
     noise.inputs["Detail"].default_value = 2.0
-    L(flat.outputs["Vector"], noise.inputs["Vector"])
+    L(proj, noise.inputs["Vector"])
     fac = N("ShaderNodeMapRange")
     fac.inputs["From Min"].default_value = 0.42
     fac.inputs["From Max"].default_value = 0.58

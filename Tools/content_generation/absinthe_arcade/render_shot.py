@@ -38,6 +38,7 @@ def main():
     sc.render.resolution_x, sc.render.resolution_y = args.res
     sc.render.resolution_percentage = 100
     sc.eevee.taa_render_samples = args.samples
+    sc.eevee.use_raytracing = True     # screen-space reflections: glass needs them to read
     if args.clay:
         mat = bpy.data.materials.new("aa_shot_clay")
         mat.use_nodes = True

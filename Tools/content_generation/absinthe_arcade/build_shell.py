@@ -132,11 +132,12 @@ class Builder:
         bmesh.ops.remove_doubles(self.bm, verts=self.bm.verts, dist=1e-5)
         box_uvs(self.bm)
         me = bpy.data.meshes.get(name) or bpy.data.meshes.new(name)
-        self.bm.to_mesh(me)
-        self.bm.free()
+        # Slots first: clearing slots after writing geometry resets every face to slot 0.
         me.materials.clear()
         for m in mats:
             me.materials.append(m)
+        self.bm.to_mesh(me)
+        self.bm.free()
         me.set_sharp_from_angle(angle=math.radians(35))
         obj = bpy.data.objects.get(name) or bpy.data.objects.new(name, me)
         obj.data = me
@@ -439,9 +440,10 @@ def window(b_stone, b_frame, x, sill, style):
                     top + band + 0.1, bevel=0.006)
     # Reveal linings (opening sides, head, sill top) so the cut reads as dressed stone.
     y0, y1 = face, CASEMENT_SET
-    b_stone.box(x - hw - 0.02, x - hw, y0, y1, sill, top, bevel=0.0)
-    b_stone.box(x + hw, x + hw + 0.02, y0, y1, sill, top, bevel=0.0)
-    b_stone.box(x - hw, x + hw, y0, y1, top, top + 0.02, bevel=0.0)
+    # Linings sit just inside the opening so they, not the boolean-cut faces, are what shows.
+    b_stone.box(x - hw, x - hw + 0.02, y0, y1, sill, top, bevel=0.0)
+    b_stone.box(x + hw - 0.02, x + hw, y0, y1, sill, top, bevel=0.0)
+    b_stone.box(x - hw, x + hw, y0, y1, top - 0.02, top, bevel=0.0)
     casement(b_frame, x, sill, top, hw, OPEN_WINDOWS.get((x, sill), (0.0, 0.0)))
 
 
@@ -482,6 +484,18 @@ def pediment(b, x, z, half, rise, face):
     b.box(x - half, x + half, face - 0.2, face + 0.02, z - 0.06, z + 0.02, bevel=0.008)  # base
 
 
+def sheer(b, xs0, xs1, cy, z0, z1, mat, pitch=0.06, depth=0.03):
+    """Sheer curtain: a single sheet gathered into soft vertical folds."""
+    folds = max(4, int((xs1 - xs0) / pitch))
+    pts = [(xs0 + (xs1 - xs0) * i / (folds * 2), cy + (depth if i % 2 else 0.0))
+           for i in range(folds * 2 + 1)]
+    vb = [b.bm.verts.new((px, py, z0)) for px, py in pts]
+    vt = [b.bm.verts.new((px, py, z1)) for px, py in pts]
+    for i in range(len(pts) - 1):
+        f = b.bm.faces.new((vb[i], vb[i + 1], vt[i + 1], vt[i]))
+        f.material_index = mat
+
+
 def casement(b, x, sill, top, hw, open_deg=(0.0, 0.0)):
     """Timber double casement set back in the reveal: fixed frame and transom light, two
     hinged leaves (opening inward, as Central European casements do), glass, sheer curtain."""
@@ -495,7 +509,11 @@ def casement(b, x, sill, top, hw, open_deg=(0.0, 0.0)):
     b.box(x + hw - fr, x + hw, y, y + 0.08, sill, top, mat=WOOD, bevel=0.004)
     tz = sill + (top - sill) * 0.72
     b.box(x - hw, x + hw, y - 0.01, y + 0.08, tz - 0.035, tz + 0.035, mat=WOOD, bevel=0.004)
+    # Fixed transom light: two glazed panes either side of a centre mullion (per the reference),
+    # with the sheer showing through. It stays glazed even when the leaves below are open.
+    b.box(x - 0.028, x + 0.028, y, y + 0.08, tz + 0.035, top - fr, mat=WOOD, bevel=0.003)
     b.box(x - hw + fr, x + hw - fr, y + 0.035, y + 0.045, tz + 0.035, top - fr, mat=GLASS, bevel=0.0)
+    sheer(b, x - hw + fr, x + hw - fr, y + 0.13, tz + 0.04, top - fr, CURTAIN)
     # Two leaves below the transom, each hinged on its outer jamb.
     lw = hw - fr                       # leaf width
     z0, z1 = sill + fr, tz - 0.035
@@ -523,14 +541,7 @@ def casement(b, x, sill, top, hw, open_deg=(0.0, 0.0)):
     spans = ([(x - hw + fr, x - hw + fr + 0.22), (x + hw - fr - 0.22, x + hw - fr)] if is_open
              else [(x - hw + fr, x + hw - fr)])
     for xs0, xs1 in spans:
-        folds = max(4, int((xs1 - xs0) / 0.06))
-        pts = [(xs0 + (xs1 - xs0) * i / (folds * 2), cy + (0.03 if i % 2 else 0.0))
-               for i in range(folds * 2 + 1)]
-        vb = [b.bm.verts.new((px, py, zb2)) for px, py in pts]
-        vt = [b.bm.verts.new((px, py, zt)) for px, py in pts]
-        for i in range(len(pts) - 1):
-            f = b.bm.faces.new((vb[i], vb[i + 1], vt[i + 1], vt[i]))
-            f.material_index = CURTAIN
+        sheer(b, xs0, xs1, cy, zb2, zt, CURTAIN)
     # The room behind: dark, deeper when the window is open so the gap reads as space.
     back = WALL_T + (1.2 if is_open else 0.0)
     b.box(x - hw - 0.2, x + hw + 0.2, back - 0.02, back, sill - 0.2, top + 0.2, mat=3, bevel=0.0)
@@ -630,7 +641,8 @@ def main():
     stone = bpy.data.materials.get("m_aa_limestone_weathered")
     trim = bpy.data.materials.get("m_aa_trim_weathered")
     wood = material("m_aa_window_timber", (0.10, 0.055, 0.03), rough=0.55)
-    glass = material("m_aa_window_glass", (0.02, 0.025, 0.03), rough=0.05, metallic=0.0, alpha=0.35)
+    # Old float glass: faintly green-grey, glossy, mostly see-through so the sheer reads.
+    glass = material("m_aa_window_glass", (0.10, 0.13, 0.13), rough=0.02, metallic=0.0, alpha=0.42)
     curtain = material("m_aa_window_curtain", (0.82, 0.8, 0.74), rough=0.9, alpha=0.8)
     dark = material("m_aa_interior_void", (0.01, 0.012, 0.012), rough=1.0)
     roof_m = material("m_aa_roof_tile", (0.16, 0.11, 0.10), rough=0.75)
