@@ -59,6 +59,7 @@ def main():
     sun = bpy.data.objects.get("aa_review_sun") or bpy.data.objects.new("aa_review_sun", sun_data)
     if sun.name not in sc.collection.objects:
         sc.collection.objects.link(sun)
+    sun.hide_render = False
     # Low and from the side so every projection throws a long shadow across the wall.
     sun.rotation_euler = (math.radians(62), 0, math.radians(-58))
     others = [o for o in sc.objects if o.type == "LIGHT" and o is not sun and not o.hide_render]

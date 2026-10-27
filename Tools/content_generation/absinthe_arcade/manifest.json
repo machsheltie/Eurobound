@@ -172,51 +172,8 @@
         "m_aa_trim_stone",
         "m_aa_glass_acrylic"
       ],
-      "contents": "Baroque window unit: carved limestone surround (its small Tripo cartouche is cut off; aa_ornament_window_crest sits on the hood instead), projecting sill, dark wood casement with transom, sheer curtains, terracotta geranium box. Replaces the separate trim + glass plan. No animals (reference cat removed).",
-      "instances": [
-        {
-          "pos": [
-            -4.6,
-            6.9,
-            0.0
-          ]
-        },
-        {
-          "pos": [
-            4.6,
-            6.9,
-            0.0
-          ]
-        },
-        {
-          "pos": [
-            -4.6,
-            10.5,
-            0.0
-          ]
-        },
-        {
-          "pos": [
-            4.6,
-            10.5,
-            0.0
-          ]
-        },
-        {
-          "pos": [
-            -4.6,
-            14.1,
-            0.0
-          ]
-        },
-        {
-          "pos": [
-            4.6,
-            14.1,
-            0.0
-          ]
-        }
-      ]
+      "contents": "Baroque window unit: carved limestone surround (its small Tripo cartouche is cut off; aa_ornament_window_crest sits on the hood instead), projecting sill, dark wood casement with transom, sheer curtains, terracotta geranium box. Replaces the separate trim + glass plan. No animals (reference cat removed). RETIRED 2026-10-27 (architectural pass): upper windows are now procedural openings, surrounds and casements in aa_shell_facade (build_shell.py); the Tripo prefab sat in front of the wall and was skewed ~10 degrees.",
+      "instances": []
     },
     {
       "id": "aa_window_ground_arched",
@@ -629,47 +586,19 @@
       "materials": [
         "m_aa_trim_stone"
       ],
-      "contents": "Carved limestone acanthus cartouche with central flower bud, seated on each upper window's hood cornice (reference: daytime window crests).",
+      "contents": "Carved limestone acanthus cartouche, first-floor (piano nobile) windows only, seated on the segmental pediments.",
       "instances": [
         {
           "pos": [
             -4.6,
-            9.25,
+            9.72,
             0.14
           ]
         },
         {
           "pos": [
             4.6,
-            9.25,
-            0.14
-          ]
-        },
-        {
-          "pos": [
-            -4.6,
-            12.85,
-            0.14
-          ]
-        },
-        {
-          "pos": [
-            4.6,
-            12.85,
-            0.14
-          ]
-        },
-        {
-          "pos": [
-            -4.6,
-            16.45,
-            0.14
-          ]
-        },
-        {
-          "pos": [
-            4.6,
-            16.45,
+            9.72,
             0.14
           ]
         }

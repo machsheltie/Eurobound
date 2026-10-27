@@ -195,7 +195,6 @@ def facade_wall(B, cutters):
     b.box(hx - 0.3, hx, WALL_T, D, 0.0, EAVE, bevel=0.0)
     b.box(-hx, hx, D - 0.3, D, 0.0, EAVE, bevel=0.0)
     for sx in (-1, 1):
-        b.prism([(0.0, EAVE), (D, EAVE), (D / 2, RIDGE)], 0, 0, bevel=0.0) if False else None
         g = [b.bm.verts.new((sx * hx, y, z)) for y, z in ((0.0, EAVE), (D, EAVE), (D / 2, RIDGE))]
         b.bm.faces.new(g if sx > 0 else g[::-1])
     stone = bpy.data.materials["m_aa_limestone_weathered"]
@@ -204,6 +203,8 @@ def facade_wall(B, cutters):
         mod = obj.modifiers.new(c.name, "BOOLEAN")
         mod.operation = "DIFFERENCE"
         mod.solver = "EXACT"
+        mod.use_self = True             # the wall is overlapping solids, not one shell
+        mod.use_hole_tolerant = True
         mod.object = c
     dg = bpy.context.evaluated_depsgraph_get()
     me = bpy.data.meshes.new_from_object(obj.evaluated_get(dg))
@@ -229,17 +230,23 @@ def cutter(name, outline_xz, y0, y1):
     return obj
 
 
-def rustication_joints(B):
-    """Banded rustication: deep horizontal channels; the street sees real shadow lines."""
+def rustication_cutter(B):
+    """Banded rustication: horizontal channels cut 35 mm into the ground-floor face."""
     hx = B["facade_width"] / 2
     b = Builder()
     z = PLINTH_TOP + 0.48
     while z < RUST_TOP - 0.2:
-        for x0, x1 in ((-hx - 0.001, -ARCH_HALF - ORDERS[-1][0] - 0.05),
-                       (ARCH_HALF + ORDERS[-1][0] + 0.05, hx + 0.001)):
-            b.box(x0, x1, -RUST_P - 0.001, -RUST_P + 0.035, z - 0.022, z + 0.022, bevel=0.0)
+        for x0, x1 in ((-hx - 0.05, -ARCH_HALF - ORDERS[-1][0] - 0.05),
+                       (ARCH_HALF + ORDERS[-1][0] + 0.05, hx + 0.05)):
+            b.box(x0, x1, -RUST_P - 0.05, -RUST_P + 0.035, z - 0.022, z + 0.022, bevel=0.0)
         z += 0.48
-    return b
+    me = bpy.data.meshes.new("aa_cut_rustication")
+    b.bm.to_mesh(me)
+    b.bm.free()
+    obj = bpy.data.objects.new("aa_cut_rustication", me)
+    bpy.context.scene.collection.objects.link(obj)
+    obj.hide_render = True
+    return obj
 
 
 def mouldings(B):
@@ -289,7 +296,6 @@ def console(b, x, z_top, w, depth, h):
     prof = [(0.0, z_top), (depth, z_top), (depth, z_top - h * 0.35), (depth * 0.82, z_top - h * 0.45),
             (depth * 0.55, z_top - h * 0.5), (depth * 0.4, z_top - h * 0.7), (depth * 0.2, z_top - h * 0.95),
             (0.0, z_top - h)]
-    outline = [(x - w / 2, 0)]  # placeholder to keep the signature readable
     verts_l = [b.bm.verts.new((x - w / 2, -p, z)) for p, z in prof]
     verts_r = [b.bm.verts.new((x + w / 2, -p, z)) for p, z in prof]
     n = len(prof)
@@ -301,7 +307,6 @@ def console(b, x, z_top, w, depth, h):
     vs = verts_l + verts_r
     bmesh.ops.recalc_face_normals(b.bm, faces=list({f for v in vs for f in v.link_faces}))
     b._finish(vs, 0, 0.006)
-    del outline
 
 
 def quoins(B):
@@ -371,16 +376,12 @@ def entrance(B):
     kw, kh, kp = KEYSTONE
     av.prism([(-kw * 0.32, crown - 0.05), (kw * 0.32, crown - 0.05), (kw / 2, crown + kh),
               (-kw / 2, crown + kh)], -RUST_P - kp, 0.02, bevel=0.015)
-    # Reveal: deep soffit and jamb linings back to the doors.
-    for a, c in zip(arch_outline(ARCH_HALF, ARCH_SPRING, ARCH_RISE, n=32, bottom=PLINTH_TOP)[1:-1],
-                    arch_outline(ARCH_HALF, ARCH_SPRING, ARCH_RISE, n=32, bottom=PLINTH_TOP)[2:-1]):
-        pass
     pl = Builder()
     # Pedestal bases under the jambs: the "proper sill/base transitions".
     for sx in (-1, 1):
         xa, xb = sorted((sx * (ARCH_HALF - 0.02), sx * (ARCH_HALF + ORDERS[-1][0] + 0.2)))
         pl.box(xa, xb, -RUST_P - ORDERS[-1][1] - 0.1, 0.02, 0.0, PLINTH_TOP + 0.08, bevel=0.015)
-        pl.box(xa - 0.03 * sx * 0, xb, -RUST_P - ORDERS[-1][1] - 0.13, 0.0, PLINTH_TOP + 0.02,
+        pl.box(xa, xb, -RUST_P - ORDERS[-1][1] - 0.13, 0.0, PLINTH_TOP + 0.02,
                PLINTH_TOP + 0.12, bevel=0.01)
     # Threshold step.
     pl.box(-ARCH_HALF, ARCH_HALF, -0.42, ARCH_DEPTH, 0.0, 0.14, bevel=0.012)
@@ -403,10 +404,8 @@ def window(b_stone, b_frame, x, sill, style):
                     bevel=0.006)
     # Architrave: two-step band round the opening, real projection.
     band, p1, p2 = 0.17, 0.06, 0.1
-    b_stone.prism([(x - hw - band, sill), (x + hw + band, sill), (x + hw + band, top + band),
-                   (x - hw - band, top + band)], face - p1, face + 0.02, bevel=0.01)
-    b_stone.prism([(x - hw - 0.05, sill), (x + hw + 0.05, sill), (x + hw + 0.05, top + 0.05),
-                   (x - hw - 0.05, top + 0.05)], face - p2, face - p1 + 0.005, bevel=0.008)
+    frame(b_stone, x, sill, top, hw, band, face - p1, face + 0.02, 0.01)
+    frame(b_stone, x, sill, top, hw, 0.05, face - p2, face - p1 + 0.005, 0.008)
     if style == "piano":
         # Eared architrave + frieze + segmental pediment on scrolled consoles.
         for sx in (-1, 1):
@@ -441,6 +440,13 @@ def window(b_stone, b_frame, x, sill, style):
     b_stone.box(x + hw, x + hw + 0.02, y0, y1, sill, top, bevel=0.0)
     b_stone.box(x - hw, x + hw, y0, y1, top, top + 0.02, bevel=0.0)
     casement(b_frame, x, sill, top, hw)
+
+
+def frame(b, x, sill, top, hw, band, y0, y1, bevel):
+    """Architrave band round an opening: two jambs and a head (the sill closes the bottom)."""
+    b.box(x - hw - band, x - hw, y0, y1, sill, top + band, bevel=bevel)
+    b.box(x + hw, x + hw + band, y0, y1, sill, top + band, bevel=bevel)
+    b.box(x - hw, x + hw, y0, y1, top, top + band, bevel=bevel)
 
 
 def console_v(b, x, z_top, face):
@@ -516,7 +522,7 @@ def roof(B):
     b = Builder()
     rise = RIDGE - EAVE
     for y0, y1 in ((-ov, D / 2), (D + ov, D / 2)):
-        drop = rise * abs(y0 - (D / 2 if y0 > 0 else 0)) / (D / 2) * 0 + rise * ov / (D / 2)
+        drop = rise * ov / (D / 2)
         z0 = EAVE - drop + 0.12
         a = [(-hx, y0, z0), (hx, y0, z0), (hx, y1, RIDGE + 0.12), (-hx, y1, RIDGE + 0.12)]
         va = [b.bm.verts.new(p) for p in a]
@@ -535,6 +541,25 @@ def void(B):
     b.prism(arch_outline(ARCH_HALF, ARCH_SPRING, ARCH_RISE, bottom=0.0), ARCH_DEPTH, ARCH_DEPTH + 0.02,
             bevel=0.0)
     return b
+
+
+# --------------------------------------------------------------------------- gentleman
+
+GENTLEMAN_PARTS = ("aa_arch_hero_gentleman", "aa_arch_hero_gentleman_hardware", "aa_arch_hero_neon_loop")
+GENTLEMAN_BASE = ARCH_SPRING + ARCH_RISE - 0.08    # chin scrolls overlap the keystone head
+
+
+def seat_gentleman():
+    """The mascaron is the keystone's face: lift him (with his retrofit) onto it. Idempotent."""
+    bust = bpy.data.objects["aa_arch_hero_gentleman"]
+    dz = GENTLEMAN_BASE - min(v.co.z for v in bust.data.vertices)
+    if abs(dz) < 1e-3:
+        return 0.0
+    for name in GENTLEMAN_PARTS:
+        me = bpy.data.objects[name].data
+        me.transform(Matrix.Translation((0, 0, dz)))
+        me.update()
+    return round(dz, 3)
 
 
 # --------------------------------------------------------------------------- main
@@ -579,6 +604,7 @@ def main():
         cutters.append(cutter(f"aa_cut_win_{i}", [(x - WIN_W / 2, z), (x + WIN_W / 2, z),
                                                   (x + WIN_W / 2, z + WIN_H), (x - WIN_W / 2, z + WIN_H)],
                               -1.0, WALL_T + 0.1))
+    cutters.append(rustication_cutter(B))
     if "aa_shell_facade_walls" in bpy.data.objects:
         bpy.data.objects.remove(bpy.data.objects["aa_shell_facade_walls"], do_unlink=True)
     walls = facade_wall(B, cutters)
@@ -590,7 +616,6 @@ def main():
         window(stone_b, frame_b, x, z, s)
     for name, builder, mats in (
             ("aa_shell_facade_mouldings", mouldings(B), [trim]),
-            ("aa_shell_facade_rustication", rustication_joints(B), [stone]),
             ("aa_shell_facade_quoins", quoins(B), [trim]),
             ("aa_shell_facade_window_surrounds", stone_b, [trim]),
             ("aa_shell_facade_casements", frame_b, [wood, glass, curtain, dark]),
@@ -601,6 +626,7 @@ def main():
     av, pl = entrance(B)
     replace_mesh("aa_arch_hero_archivolt", av, [trim])
     replace_mesh("aa_arch_hero_plinths", pl, [trim])
+    made["gentleman_lift"] = seat_gentleman()
     return made
 
 
