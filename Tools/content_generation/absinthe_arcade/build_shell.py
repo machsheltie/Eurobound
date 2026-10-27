@@ -57,6 +57,10 @@ REPAIRED = (4.6, 10.5)           # later replacement lintel and sill
 # is open: its lower sash is pushed up (metres raised) so the curtain shows through.
 OPEN_WINDOWS = {(-4.6, 6.9): 0.55}
 WIN_W, WIN_H = 1.16, 1.85
+# Arched ground-floor window (reference: the author's ground-floor crop): round head,
+# moulded surround, keystone tucked under the ground cornice, sill slab on corbels,
+# tracery fanlight, iron balconette with pots.
+GW_X, GW_HALF, GW_SILL, GW_SPRING = -4.4, 0.55, 3.66, 4.76     # crown = spring + half
 SASH_SET = 0.24              # how far the frame sits back from the wall face
 
 
@@ -531,6 +535,134 @@ def sash_window(b, x, sill, top, hw, raised=0.0):
     b.box(x - hw - 0.2, x + hw + 0.2, WALL_T - 0.02, WALL_T, sill - 0.2, top + 0.2, mat=3, bevel=0.0)
 
 
+def ring(b, cx, cz, r0, r1, y0, y1, mat=0, n=24, bevel=0.006, gap=0.0):
+    """Semicircular band between radii r0 and r1 (an arch moulding), built from n solids."""
+    for i in range(n):
+        t0 = math.pi * i / n + gap
+        t1 = math.pi * (i + 1) / n - gap
+        pts = [(cx + r0 * math.cos(t0), cz + r0 * math.sin(t0)),
+               (cx + r1 * math.cos(t0), cz + r1 * math.sin(t0)),
+               (cx + r1 * math.cos(t1), cz + r1 * math.sin(t1)),
+               (cx + r0 * math.cos(t1), cz + r0 * math.sin(t1))]
+        b.prism(pts, y0, y1, mat=mat, bevel=bevel)
+
+
+def corbel(b, x, top, face, w=0.14, depth=0.3, h=0.33):
+    """Scrolled corbel under a slab: an S profile extruded across x."""
+    prof = [(0.0, top), (depth, top), (depth, top - 0.07), (depth * 0.66, top - 0.13),
+            (depth * 0.46, top - 0.23), (depth * 0.26, top - 0.31), (0.0, top - h)]
+    vl = [b.bm.verts.new((x - w / 2, face - pp, z)) for pp, z in prof]
+    vr = [b.bm.verts.new((x + w / 2, face - pp, z)) for pp, z in prof]
+    n = len(prof)
+    for i in range(n):
+        j = (i + 1) % n
+        b.bm.faces.new((vl[i], vl[j], vr[j], vr[i]))
+    b.bm.faces.new(vl[::-1])
+    b.bm.faces.new(vr)
+    vs = vl + vr
+    bmesh.ops.recalc_face_normals(b.bm, faces=list({f for v in vs for f in v.link_faces}))
+    b._finish(vs, 0, 0.006)
+
+
+def ground_window(b_stone, b_frame, b_iron):
+    """Arched ground-floor window: surround, sill and corbels into b_stone; frame, fanlight
+    tracery, glass and sheer into b_frame; balconette into b_iron."""
+    x, hw, sill, spring = GW_X, GW_HALF, GW_SILL, GW_SPRING
+    face = -RUST_P
+    crown = spring + hw
+    # Moulded surround: outer band and inner fillet, jambs plus a round head.
+    for band, p_out, p_in, bev in ((0.18, 0.09, -0.005, 0.01), (0.06, 0.14, 0.085, 0.006)):
+        y0, y1 = face - p_out, face - p_in
+        for sx in (-1, 1):
+            xa, xb = sorted((x + sx * hw, x + sx * (hw + band)))
+            b_stone.box(xa, xb, y0, y1, sill, spring, bevel=bev)
+        ring(b_stone, x, spring, hw, hw + band, y0, y1, n=40, bevel=0.0)   # one smooth moulding
+    # Impost blocks at the springing.
+    for sx in (-1, 1):
+        xa, xb = sorted((x + sx * (hw - 0.01), x + sx * (hw + 0.22)))
+        b_stone.box(xa, xb, face - 0.12, face + 0.01, spring - 0.08, spring + 0.02, bevel=0.008)
+    # Keystone, tapering up to meet the ground-floor cornice.
+    b_stone.prism([(x - 0.11, crown - 0.04), (x + 0.11, crown - 0.04), (x + 0.16, RUST_TOP),
+                   (x - 0.16, RUST_TOP)], face - 0.19, face + 0.01, bevel=0.01)
+    # Projecting sill slab with a drip, carried on two scrolled corbels.
+    b_stone.box(x - hw - 0.32, x + hw + 0.32, face - 0.36, face + 0.04, sill - 0.13, sill, bevel=0.012)
+    b_stone.box(x - hw - 0.28, x + hw + 0.28, face - 0.33, face - 0.25, sill - 0.17, sill - 0.13,
+                bevel=0.006)
+    for sx in (-1, 1):
+        corbel(b_stone, x + sx * (hw + 0.12), sill - 0.13, face)
+    # Reveal linings: jambs and a soffit ring, inside the opening.
+    for sx in (-1, 1):
+        xa, xb = sorted((x + sx * hw, x + sx * (hw - 0.02)))
+        b_stone.box(xa, xb, face, SASH_SET, sill, spring, bevel=0.0)
+    ring(b_stone, x, spring, hw - 0.02, hw, face, SASH_SET, bevel=0.0)
+
+    # Window: frame following the arch, transom at the springing, tracery fanlight.
+    WOOD, GLASS, CURTAIN = 0, 1, 2
+    y, fr = SASH_SET, 0.07
+    for sx in (-1, 1):
+        xa, xb = sorted((x + sx * (hw - 0.02), x + sx * (hw - 0.02 - fr)))
+        b_frame.box(xa, xb, y, y + 0.08, sill, spring, mat=WOOD, bevel=0.004)
+    b_frame.box(x - hw + 0.02, x + hw - 0.02, y, y + 0.08, sill, sill + fr, mat=WOOD, bevel=0.004)
+    ring(b_frame, x, spring, hw - 0.02 - fr, hw - 0.02, y, y + 0.08, mat=WOOD, n=20, bevel=0.003)
+    b_frame.box(x - hw + 0.02, x + hw - 0.02, y - 0.01, y + 0.08, spring - 0.035, spring + 0.035,
+                mat=WOOD, bevel=0.004)
+    # Fanlight tracery: centre bar, an inner arc and two diagonals.
+    r_in = hw - 0.02 - fr
+    b_frame.box(x - 0.018, x + 0.018, y + 0.01, y + 0.07, spring, spring + r_in, mat=WOOD, bevel=0.0)
+    ring(b_frame, x, spring, r_in * 0.52, r_in * 0.52 + 0.03, y + 0.01, y + 0.07, mat=WOOD, n=14,
+         bevel=0.0)
+    for sx in (-1, 1):
+        t = math.radians(90 - sx * 45)
+        p0 = Vector((x + r_in * 0.53 * math.cos(t), spring + r_in * 0.53 * math.sin(t)))
+        p1 = Vector((x + r_in * math.cos(t), spring + r_in * math.sin(t)))
+        d = (p1 - p0).normalized() * 0.015
+        nrm = Vector((-d.y, d.x))
+        b_frame.prism([tuple(p0 + nrm), tuple(p1 + nrm), tuple(p1 - nrm), tuple(p0 - nrm)],
+                      y + 0.01, y + 0.07, mat=WOOD, bevel=0.0)
+    fan = [(x + r_in * math.cos(math.pi * i / 24),
+            spring + 0.035 + (r_in - 0.035) * math.sin(math.pi * i / 24)) for i in range(25)]
+    b_frame.prism(fan, y + 0.035, y + 0.045, mat=GLASS, bevel=0.0)
+    # Lower lights: centre mullion, one glazing bar, glass, sheer behind.
+    b_frame.box(x - 0.025, x + 0.025, y, y + 0.08, sill, spring, mat=WOOD, bevel=0.003)
+    zb = sill + (spring - sill) * 0.55
+    b_frame.box(x - hw + 0.02, x + hw - 0.02, y + 0.01, y + 0.07, zb - 0.014, zb + 0.014, mat=WOOD,
+                bevel=0.0)
+    b_frame.box(x - hw + 0.02 + fr, x + hw - 0.02 - fr, y + 0.035, y + 0.045, sill + fr,
+                spring - 0.035, mat=GLASS, bevel=0.0)
+    sheer(b_frame, x - hw + 0.09, x + hw - 0.09, y + 0.14, sill + fr + 0.02, spring - 0.04, CURTAIN)
+    b_frame.box(x - hw - 0.2, x + hw + 0.2, WALL_T - 0.02, WALL_T, sill - 0.2, crown + 0.2, mat=3,
+                bevel=0.0)
+
+    # Balconette: wrought-iron rail on the sill slab, returned to the wall, with a cross finial.
+    top_z, front = sill + 0.44, face - 0.31
+    xl, xr = x - hw - 0.24, x + hw + 0.24
+    rail = 0.022
+    for z0 in (sill + 0.03, top_z - 0.03):
+        b_iron.box(xl, xr, front - rail, front + rail, z0 - rail, z0 + rail, bevel=0.004)
+        for xe in (xl, xr):
+            b_iron.box(xe - rail, xe + rail, front, face, z0 - rail, z0 + rail, bevel=0.004)
+    b_iron.box(xl - 0.035, xr + 0.035, front - 0.035, front + 0.03, top_z - 0.02, top_z + 0.012,
+               bevel=0.006)
+    xb_, i = xl, 0
+    while xb_ <= xr + 1e-6:
+        b_iron.box(xb_ - 0.009, xb_ + 0.009, front - 0.009, front + 0.009, sill + 0.03, top_z - 0.02,
+                   bevel=0.0)
+        if i % 2 == 1:      # C-scroll pair in every other bay
+            ring(b_iron, xb_ + 0.065, sill + 0.21, 0.04, 0.052, front - 0.008, front + 0.008, n=10,
+                 bevel=0.0)
+            ring(b_iron, xb_ - 0.065, sill + 0.21, 0.04, 0.052, front - 0.008, front + 0.008, n=10,
+                 bevel=0.0)
+        xb_ += 0.13
+        i += 1
+    b_iron.box(x - 0.012, x + 0.012, front - 0.012, front + 0.012, top_z, top_z + 0.16, bevel=0.003)
+    b_iron.box(x - 0.06, x + 0.06, front - 0.012, front + 0.012, top_z + 0.08, top_z + 0.105,
+               bevel=0.003)
+    # Anchor plates where the rail returns meet the wall.
+    for xe in (xl, xr):
+        b_iron.box(xe - 0.05, xe + 0.05, face - 0.008, face + 0.002, sill + 0.01, top_z + 0.01,
+                   bevel=0.003)
+
+
 # --------------------------------------------------------------------------- roof / void
 
 def roof(B):
@@ -622,6 +754,11 @@ def main():
         cutters.append(cutter(f"aa_cut_win_{i}", [(x - WIN_W / 2, z), (x + WIN_W / 2, z),
                                                   (x + WIN_W / 2, z + WIN_H), (x - WIN_W / 2, z + WIN_H)],
                               -1.0, WALL_T + 0.1))
+    # arch_outline() is centred on x = 0; shift it to the window's bay.
+    cutters.append(cutter("aa_cut_ground_window",
+                          [(px + GW_X, pz) for px, pz in arch_outline(GW_HALF, GW_SPRING, GW_HALF,
+                                                                      bottom=GW_SILL)],
+                          -1.0, WALL_T + 0.1))
     cutters.append(rustication_cutter(B))
     if "aa_shell_facade_walls" in bpy.data.objects:
         bpy.data.objects.remove(bpy.data.objects["aa_shell_facade_walls"], do_unlink=True)
@@ -630,13 +767,17 @@ def main():
     made = {"walls": len(walls.data.polygons)}
     stone_b = Builder()
     frame_b = Builder()
+    iron_b = Builder()
     for x, z, s in UPPER_WINDOWS:
         window(stone_b, frame_b, x, z, s)
+    ground_window(stone_b, frame_b, iron_b)
+    iron = material("m_aa_wrought_iron", (0.025, 0.025, 0.027), rough=0.45, metallic=0.6)
     for name, builder, mats in (
             ("aa_shell_facade_mouldings", mouldings(B), [trim]),
             ("aa_shell_facade_quoins", quoins(B), [trim]),
             ("aa_shell_facade_window_surrounds", stone_b, [trim]),
             ("aa_shell_facade_sash_windows", frame_b, [wood, glass, curtain, dark]),
+            ("aa_shell_facade_ironwork", iron_b, [iron]),
             ("aa_shell_facade_roof", roof(B), [roof_m]),
             ("aa_shell_facade_interior_void", void(B), [dark])):
         o = builder.to_object(name, mats, coll)
