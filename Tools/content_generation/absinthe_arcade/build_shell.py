@@ -11,7 +11,9 @@ Windows are openings cut through 0.55 m of masonry with reveals, sash windows se
 back in them, and surrounds that differ by storey (heavy ground floor, richest
 first floor, plainer above, one later repair). The entrance is a deep arch with
 three stepped orders of individual voussoirs, rusticated jambs and a projecting
-keystone that carries the Headphone Gentleman. String courses are dimensional
+keystone that carries the Headphone Gentleman, who sits in a carved ring (dark
+groove between two mouldings) that the ground cornice breaks around; the marquee
+is sized to the arch and hung proud of it (its steel is in build_fittings.py). String courses are dimensional
 sill courses with drips; the eave cornice has frieze, dentils, modillions and
 a corona with a shadowed soffit. Quoins are quieter, varied, upper floors only.
 
@@ -48,6 +50,20 @@ LESENE_W = 0.32
 ARCH_HALF, ARCH_SPRING, ARCH_RISE, ARCH_DEPTH = 2.2, 3.6, 1.9, 1.6
 ORDERS = [(0.16, 0.10), (0.36, 0.18), (0.58, 0.27)]   # (ring width outward, proud)
 KEYSTONE = (0.78, 1.05, 0.46)    # width at top, height, proud
+# Ring behind the gentleman's head (entrance reference, gentleman panel): a dark groove
+# cut into the bay between two stone mouldings, which his conduit loop rides over. The
+# ground cornice breaks around it, so he reads as carved with the building.
+RING_C = (0.0, 6.24)             # centre: the conduit loop over his crown
+RING_GROOVE = (0.62, 0.86)       # dark groove radii
+RING_OUTER = 1.04                # outer edge of the moulded frame; the cornice stops here
+RING_FOOT = RUST_TOP + 0.07      # the legs come down to the cornice line
+# The marquee is a lightbox hung in front of the arch on steel standoffs (build_fittings):
+# its back sits just proud of the impost blocks, as in the entrance reference.
+MARQUEE_PARTS = ("aa_arch_hero_marquee", "aa_arch_hero_tagline_panel")
+MARQUEE_BACK = -RUST_P - ORDERS[-1][1] - 0.08
+# Overall width: wider than the opening, about 93% of the outer order, so its ends sit
+# across the arch moulding and impost blocks as in the reference.
+MARQUEE_W = 5.15
 
 # Windows: (x, sill z, storey style)
 UPPER_WINDOWS = [(x, z, s) for z, s in ((6.9, "piano"), (10.5, "middle"), (14.1, "upper"))
@@ -274,11 +290,14 @@ def mouldings(B):
             -hx - PLINTH_P, hx + PLINTH_P)
     # Ground-floor cornice: architrave, frieze, cove, corona with drip, cymatium.
     z = RUST_TOP
-    b.sweep([(0, z), (0.12, z), (0.12, z + 0.05), (0.15, z + 0.07), (0.15, z + 0.13), (0.19, z + 0.17),
+    prof_gc = [(0, z), (0.12, z), (0.12, z + 0.05), (0.15, z + 0.07), (0.15, z + 0.13), (0.19, z + 0.17),
              (0.27, z + 0.24), (0.42, z + 0.28), (0.44, z + 0.31), (0.44, z + 0.38), (0.48, z + 0.41),
-             (0.48, z + 0.45), (0, z + 0.45)], -hx - 0.48, hx + 0.48)
-    # Drip groove under the ground cornice corona (reads as a dark line).
-    b.box(-hx - 0.4, hx + 0.4, -0.40, -0.36, z + 0.265, z + 0.285, bevel=0.0)
+             (0.48, z + 0.45), (0, z + 0.45)]
+    # Broken around the gentleman's ring; the capped ends read as the cornice returning.
+    for x0, x1 in ((-hx - 0.48, -RING_OUTER), (RING_OUTER, hx + 0.48)):
+        b.sweep(prof_gc, x0, x1)
+        # Drip groove under the corona (reads as a dark line).
+        b.box(max(x0, -hx - 0.4), min(x1, hx + 0.4), -0.40, -0.36, z + 0.265, z + 0.285, bevel=0.0)
     # Sill courses under each row of upper windows (they double as floor lines).
     for z in (6.9, 10.5, 14.1):
         zc = z - 0.26
@@ -287,7 +306,11 @@ def mouldings(B):
         # Side bays run on the wall; the central bay's run sits on its projection.
         b.sweep(prof, -hx - 0.15, -BAY_HALF, 0.0)
         b.sweep(prof, BAY_HALF, hx + 0.15, 0.0)
-        b.sweep(prof, -BAY_HALF - 0.02, BAY_HALF + 0.02, -BAY_P)
+        if z == 6.9:        # stops either side of the gentleman's ring
+            b.sweep(prof, -BAY_HALF - 0.02, -RING_OUTER, -BAY_P)
+            b.sweep(prof, RING_OUTER, BAY_HALF + 0.02, -BAY_P)
+        else:
+            b.sweep(prof, -BAY_HALF - 0.02, BAY_HALF + 0.02, -BAY_P)
     # Eave cornice: architrave, frieze, bed mould, corona with soffit, cymatium.
     z = EAVE - 0.95
     b.sweep([(0, z), (0.06, z), (0.06, z + 0.04), (0.09, z + 0.08), (0.09, z + 0.14), (0.04, z + 0.16),
@@ -772,6 +795,58 @@ def void(B):
     return b
 
 
+def horseshoe(r0, r1, cx, cz, foot, n=28):
+    """Closed (x, z) outline of a round-headed band between radii r0 and r1, legs to `foot`."""
+    outer = [(cx + r1 * math.cos(math.pi * i / n), cz + r1 * math.sin(math.pi * i / n))
+             for i in range(n + 1)]
+    inner = [(cx + r0 * math.cos(math.pi * i / n), cz + r0 * math.sin(math.pi * i / n))
+             for i in range(n, -1, -1)]
+    return ([(cx + r1, foot)] + outer + [(cx - r1, foot), (cx - r0, foot)] + inner
+            + [(cx + r0, foot)])
+
+
+def ring_cutter():
+    """The dark groove, 0.10 deep into the bay face."""
+    r0, r1 = RING_GROOVE
+    return cutter("aa_cut_gentleman_ring", horseshoe(r0, r1, *RING_C, RING_FOOT), -BAY_P - 0.5,
+                  -BAY_P + 0.10)
+
+
+def cartouche():
+    """Mouldings framing the groove, a dark lining in it, and plinth blocks at the feet."""
+    b = Builder()
+    cx, cz = RING_C
+    r0, r1 = RING_GROOVE
+    face = -BAY_P
+    # Dark lining at the bottom of the groove (sooted, as in the reference).
+    b.prism(horseshoe(r0, r1, cx, cz, RING_FOOT), face + 0.085, face + 0.10, mat=1, bevel=0.0)
+    # Inner bead and a stepped outer architrave.
+    for ra, rb, proud in ((r0 - 0.08, r0, 0.07), (r1, r1 + 0.07, 0.13), (r1 + 0.07, RING_OUTER, 0.08)):
+        b.prism(horseshoe(ra, rb, cx, cz, RING_FOOT), face - proud, face + 0.01, bevel=0.01)
+    # Plinth blocks where the legs land on the cornice line.
+    for sx in (-1, 1):
+        xa, xb = sorted((cx + sx * (r0 - 0.12), cx + sx * (RING_OUTER + 0.03)))
+        b.box(xa, xb, face - 0.16, face + 0.01, RUST_TOP, RING_FOOT + 0.3, bevel=0.012)
+    return b
+
+
+def seat_marquee():
+    """Size the marquee (and its tagline panel) to the arch and hang it clear of the orders.
+    Uniform scale about its bottom edge, so the lettering keeps its proportions. Idempotent."""
+    co = [v.co for v in bpy.data.objects["aa_arch_hero_marquee"].data.vertices]
+    k = MARQUEE_W / (max(c.x for c in co) - min(c.x for c in co))
+    y_back, z_foot = max(c.y for c in co), min(c.z for c in co)
+    if abs(k - 1) < 1e-3 and abs(MARQUEE_BACK - y_back) < 1e-3:
+        return 0.0
+    m = (Matrix.Translation((0, MARQUEE_BACK, z_foot)) @ Matrix.Scale(k, 4)
+         @ Matrix.Translation((0, -y_back, -z_foot)))
+    for name in MARQUEE_PARTS:
+        me = bpy.data.objects[name].data
+        me.transform(m)
+        me.update()
+    return round(k, 3)
+
+
 # --------------------------------------------------------------------------- gentleman
 
 GENTLEMAN_PARTS = ("aa_arch_hero_gentleman", "aa_arch_hero_gentleman_hardware", "aa_arch_hero_neon_loop")
@@ -841,6 +916,7 @@ def main():
                                                                       bottom=GW_SILL)],
                           -1.0, WALL_T + 0.1))
     cutters.append(rustication_cutter(B))
+    cutters.append(ring_cutter())
     if "aa_shell_facade_walls" in bpy.data.objects:
         bpy.data.objects.remove(bpy.data.objects["aa_shell_facade_walls"], do_unlink=True)
     walls = facade_wall(B, cutters)
@@ -868,7 +944,12 @@ def main():
     av, pl = entrance(B)
     replace_mesh("aa_arch_hero_archivolt", av, [trim])
     replace_mesh("aa_arch_hero_plinths", pl, [trim])
+    if "aa_arch_hero_cartouche" not in bpy.data.objects:
+        cartouche().to_object("aa_arch_hero_cartouche", [trim, dark], bpy.data.collections["aa_arch_hero"])
+    else:
+        replace_mesh("aa_arch_hero_cartouche", cartouche(), [trim, dark])
     made["gentleman_lift"] = seat_gentleman()
+    made["marquee_shift"] = seat_marquee()
     return made
 
 

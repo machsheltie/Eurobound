@@ -11,6 +11,10 @@ under a large soft noise mask so the blotches don't visibly repeat across the
   m_aa_limestone_weathered   walls, quoins
   m_aa_trim_weathered        mouldings, archivolt, plinths (a touch lighter)
 
+The Headphone Gentleman is carved from the same stone (entrance reference), but
+Tripo baked him a brown texture. tone_bust() keeps that texture's carved light and
+dark and takes the colour from the facade limestone.
+
 Usage: exec in the live session, or blender aa_exterior.blend --python stone_material.py
 """
 
@@ -19,6 +23,7 @@ import sys
 from pathlib import Path
 
 import bpy
+import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import aa_common as aa  # noqa: E402
@@ -30,7 +35,8 @@ TILE_A = 1.8      # metres covered by one repeat of the painting
 TILE_B = 2.3
 CONTRAST = -0.12  # underpainting: let the hand-painted pass carry the detail
 WALL_OBJECTS = ("aa_shell_facade_walls", "aa_shell_facade_quoins")
-TRIM_OBJECTS = ("aa_shell_facade_mouldings", "aa_arch_hero_archivolt", "aa_arch_hero_plinths")
+TRIM_OBJECTS = ("aa_shell_facade_mouldings", "aa_arch_hero_archivolt", "aa_arch_hero_plinths",
+                "aa_arch_hero_cartouche")
 
 
 def build(name, brightness):
@@ -151,10 +157,58 @@ def assign(names, mat):
     return done
 
 
+BUST_MATERIAL = "m_aa_arch_hero"
+BUST_STONE = (0.64, 0.53, 0.39)   # sRGB; warm sandy limestone, as in the gentleman reference
+BUST_DETAIL = 0.55                # how much of the texture's light/dark survives (exponent)
+
+
+def srgb_to_linear(c):
+    return c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+
+
+def tone_bust():
+    """Base colour = limestone x (texture luminance / its median) ^ BUST_DETAIL. Idempotent."""
+    mat = bpy.data.materials.get(BUST_MATERIAL)
+    if mat is None:
+        return None
+    nt = mat.node_tree
+    N, L = nt.nodes.new, nt.links.new
+    bsdf = nt.nodes["Principled BSDF"]
+    tex = next(n for n in nt.nodes if n.type == "TEX_IMAGE" and "basecolor" in n.image.name)
+    for n in [n for n in nt.nodes if n.name.startswith("aa_tone")]:
+        nt.nodes.remove(n)
+    img = tex.image
+    px = np.empty(img.size[0] * img.size[1] * 4, dtype=np.float32)
+    img.pixels.foreach_get(px)
+    rgb = px.reshape(-1, 4)[:, :3]
+    lin = np.where(rgb <= 0.04045, rgb / 12.92, ((rgb + 0.055) / 1.055) ** 2.4)
+    lum_med = float(np.median(lin @ np.array([0.2126, 0.7152, 0.0722])))
+
+    bw = N("ShaderNodeRGBToBW")
+    div = N("ShaderNodeMath")
+    div.operation, div.inputs[1].default_value = "DIVIDE", lum_med
+    pw = N("ShaderNodeMath")
+    pw.operation, pw.inputs[1].default_value = "POWER", BUST_DETAIL
+    mix = N("ShaderNodeMix")
+    mix.data_type, mix.blend_type = "RGBA", "MULTIPLY"
+    mix.inputs["Factor"].default_value = 1.0
+    mix.inputs[6].default_value = (*[srgb_to_linear(c) for c in BUST_STONE], 1)
+    for i, n in enumerate((bw, div, pw, mix)):
+        n.name = f"aa_tone_{i}"
+        n.location = (tex.location.x + 200 + 180 * i, tex.location.y + 300)
+    L(tex.outputs["Color"], bw.inputs["Color"])
+    L(bw.outputs["Val"], div.inputs[0])
+    L(div.outputs["Value"], pw.inputs[0])
+    L(pw.outputs["Value"], mix.inputs[7])
+    L(mix.outputs[2], bsdf.inputs["Base Color"])
+    return round(lum_med, 4)
+
+
 def main():
     wall = build("m_aa_limestone_weathered", 1.0)
     trim = build("m_aa_trim_weathered", 1.06)
-    return {"walls": assign(WALL_OBJECTS, wall), "trim": assign(TRIM_OBJECTS, trim)}
+    return {"walls": assign(WALL_OBJECTS, wall), "trim": assign(TRIM_OBJECTS, trim),
+            "bust_lum_median": tone_bust()}
 
 
 result = main()

@@ -52,7 +52,8 @@ FLARE_OUTLINE = [(-3.5, 4.0), (4.35, 4.0), (4.35, 6.4), (3.5, 6.6), (3.5, 8.4),
 
 ARCH_PREFIX = "aa_arch_hero"
 AVOID_PREFIXES = (ARCH_PREFIX, "aa_window", "aa_balcony", "aa_prop_doorframe_sign",
-                  "aa_prop_house_number")
+                  "aa_prop_house_number", "aa_shell_facade_window_surrounds",
+                  "aa_shell_facade_sash_windows", "aa_shell_facade_ironwork")
 SURFACES = ("aa_shell_facade_walls", "aa_shell_facade_mouldings", "aa_shell_facade_quoins")
 
 # sRGB 0..1

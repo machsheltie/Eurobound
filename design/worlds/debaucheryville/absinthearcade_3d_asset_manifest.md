@@ -126,6 +126,7 @@ These are texture or decal work, not polygons:
 - **2026-10-27, baseline:** failed (flat wall plane, windows stuck on, thin bands, floating gentleman). Triggered the architectural quality pass.
 - **2026-10-27, after the massing pass:** real openings with recessed sash windows, banded rustication, projecting central bay with lesenes, stepped voussoir arch, keystone-seated gentleman. Still open: gentleman's cartouche surround, retrofit attachment, reseating the mural and props on the new wall faces.
 - **2026-10-27, phase 2:** arched ground-floor window rebuilt as a real opening (moulded surround, keystone into the cornice, sill slab on corbels, tracery fanlight, iron balconette with pots). Top-floor balconies rebuilt with slab thickness, underside, load-bearing corbels, drain spout and anchored railings, two non-identical variants. Top-floor windows shortened to 1.48 m (storey hierarchy; clears the eave cornice). Next: phase 3 entrance and retrofit.
+- **2026-10-27, phase 3 (entrance benchmark):** the gentleman now sits in a carved ring (dark sooted groove cut 0.10 m into the bay between two stone mouldings, as in the gentleman reference); the ground cornice and first-floor sill course break around it. His Tripo texture keeps its carved light and dark but takes its colour from the facade limestone (`stone_material.py` `tone_bust()`). The marquee is scaled to 5.15 m (about 93% of the outer arch, as in the reference) and hung 0.45 m proud on six square-tube standoffs with bolted plates, plus two stay rods with turnbuckles to the outer order (`aa_arch_hero_marquee_mounts`). The green neon now runs on the outer arch order and down both jambs on acrylic standoffs. Conduits, clamps and junction boxes are raycast onto the real stone and jog out over every cornice, sill and lesene they cross. Wall props re-seated on the faces they fix to (`seat_props.py`); the offer board moved beside the arch under the house number (the jambs fill its old spot) and the rosettes moved up beside the ring. Mural decal rebuilt over the new surfaces. Open: whether `aa_arch_hero_neon_loop` (the big arc over the head) stays now that the arch neon carries the line.
 
 ## Source method
 
@@ -220,6 +221,10 @@ setup_scene.py      build collections, import blockout, placeholders, layout
 ingest_tripo.py     Tripo GLB -> scaled, pivoted, decimated, UV'd kit asset
 validate_assets.py  budgets, UVs, transforms, pivots, dims, materials -> report
 pack_neon_mask.py   4 grayscale masks -> <asset>_neonmask.png   (plain Python)
+build_shell.py      masonry shell, entrance, gentleman ring, seats bust and marquee
+build_fittings.py   conduits, boxes, arch neon, marquee mounts (raycast onto the stone)
+seat_props.py       wall props onto the faces they fix to -> manifest.json
+extend_mural.py     mural skirt + decal mesh laid onto the walls
 export_assets.py    per-asset GLB + FBX, aa_layout.json        (runs validate first)
 ```
 
