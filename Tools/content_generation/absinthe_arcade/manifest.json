@@ -207,23 +207,8 @@
       "materials": [
         "m_aa_iron"
       ],
-      "contents": "Juliet balcony: baroque wrought-iron scroll railing with side returns and three terracotta geranium pots; the top-floor window flower boxes sit inside it.",
-      "instances": [
-        {
-          "pos": [
-            -4.6,
-            14.48,
-            0.0
-          ]
-        },
-        {
-          "pos": [
-            4.6,
-            14.48,
-            0.0
-          ]
-        }
-      ]
+      "contents": "Juliet balcony: baroque wrought-iron scroll railing with side returns and three terracotta geranium pots; the top-floor window flower boxes sit inside it. RETIRED 2026-10-27 (architectural pass): top-floor balconies are now built into aa_shell_facade (build_shell.py balcony): stone slab on corbels, drain spout, wrought-iron rail anchored to the wall, two non-identical variants.",
+      "instances": []
     },
     {
       "id": "aa_prop_arcade_cabinet",
@@ -667,7 +652,7 @@
       "materials": [
         "m_aa_props_atlas"
       ],
-      "contents": "Terracotta pot with shrub on the arched ground-floor window's balconette slab, behind the iron rail (reference: author's ground-floor crop).",
+      "contents": "Terracotta pot with shrub: two on the arched ground-floor window's balconette slab, three on the top-floor balconies (reference crops).",
       "instances": [
         {
           "pos": [
@@ -681,6 +666,27 @@
             -4.08,
             3.66,
             0.27
+          ]
+        },
+        {
+          "pos": [
+            -5.1,
+            14.1,
+            0.36
+          ]
+        },
+        {
+          "pos": [
+            -4.18,
+            14.1,
+            0.36
+          ]
+        },
+        {
+          "pos": [
+            5.1,
+            14.1,
+            0.36
           ]
         }
       ]

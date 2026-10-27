@@ -124,7 +124,8 @@ These are texture or decal work, not polygons:
 ## Graybox review
 
 - **2026-10-27, baseline:** failed (flat wall plane, windows stuck on, thin bands, floating gentleman). Triggered the architectural quality pass.
-- **2026-10-27, after the massing pass:** real openings with recessed sash windows, banded rustication, projecting central bay with lesenes, stepped voussoir arch, keystone-seated gentleman. Still open: arched ground-floor window opening, balconies, gentleman's cartouche surround, retrofit attachment, reseating the mural and props on the new wall faces.
+- **2026-10-27, after the massing pass:** real openings with recessed sash windows, banded rustication, projecting central bay with lesenes, stepped voussoir arch, keystone-seated gentleman. Still open: gentleman's cartouche surround, retrofit attachment, reseating the mural and props on the new wall faces.
+- **2026-10-27, phase 2:** arched ground-floor window rebuilt as a real opening (moulded surround, keystone into the cornice, sill slab on corbels, tracery fanlight, iron balconette with pots). Top-floor balconies rebuilt with slab thickness, underside, load-bearing corbels, drain spout and anchored railings, two non-identical variants. Top-floor windows shortened to 1.48 m (storey hierarchy; clears the eave cornice). Next: phase 3 entrance and retrofit.
 
 ## Source method
 

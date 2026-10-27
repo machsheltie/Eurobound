@@ -56,11 +56,18 @@ REPAIRED = (4.6, 10.5)           # later replacement lintel and sill
 # Author ruling 2026-10-27: the black cat sits outside the left first-floor window, which
 # is open: its lower sash is pushed up (metres raised) so the curtain shows through.
 OPEN_WINDOWS = {(-4.6, 6.9): 0.55}
-WIN_W, WIN_H = 1.16, 1.85
+WIN_W = 1.16
+# Opening height by storey: the top floor's windows are shorter, as on real buildings of
+# this type, which also keeps their heads clear of the eave cornice.
+WIN_H = {"piano": 1.85, "middle": 1.85, "upper": 1.48}
 # Arched ground-floor window (reference: the author's ground-floor crop): round head,
 # moulded surround, keystone tucked under the ground cornice, sill slab on corbels,
 # tracery fanlight, iron balconette with pots.
 GW_X, GW_HALF, GW_SILL, GW_SPRING = -4.4, 0.55, 3.66, 4.76     # crown = spring + half
+# Top-floor balconies: (x, window sill z, variant). Variant 1 is the older-looking one
+# with a bent baluster and a mismatched replacement finial.
+BALCONIES = [(-4.6, 14.1, 0), (4.6, 14.1, 1)]
+BAL_DEPTH, BAL_HALF, BAL_SLAB, BAL_RAIL_H = 0.56, 0.98, 0.15, 0.86
 SASH_SET = 0.24              # how far the frame sits back from the wall face
 
 
@@ -400,11 +407,15 @@ def entrance(B):
 
 def window(b_stone, b_frame, x, sill, style):
     """Surround + reveal lining + sill for one upper window; sash window into b_frame."""
-    hw, top = WIN_W / 2, sill + WIN_H
+    hw, top = WIN_W / 2, sill + WIN_H[style]
     face = -BAY_P if abs(x) < BAY_HALF else 0.0
     repaired = (x, sill) == REPAIRED
-    # Sill: projecting slab with a drip; the repaired one is a plain thin replacement.
-    if repaired:
+    on_balcony = any((bx, bz) == (x, sill) for bx, bz, _ in BALCONIES)
+    # Sill: projecting slab with a drip; the repaired one is a plain thin replacement, and
+    # balcony windows step straight out onto the balcony slab instead.
+    if on_balcony:
+        pass
+    elif repaired:
         b_stone.box(x - hw - 0.12, x + hw + 0.12, face - 0.12, face + 0.06, sill - 0.08, sill, bevel=0.004)
     else:
         b_stone.box(x - hw - 0.2, x + hw + 0.2, face - 0.17, face + 0.06, sill - 0.12, sill, bevel=0.012)
@@ -663,6 +674,75 @@ def ground_window(b_stone, b_frame, b_iron):
                    bevel=0.003)
 
 
+def balcony(b_stone, b_iron, x, z_top, variant):
+    """Stone balcony slab on corbels with a wrought-iron rail anchored into the wall."""
+    face = -BAY_P if abs(x) < BAY_HALF else 0.0
+    d, hw, t = BAL_DEPTH, BAL_HALF, BAL_SLAB
+    front = face - d
+    # Slab: the walking surface runs into the wall (it is the floor of the room inside).
+    b_stone.box(x - hw, x + hw, front, face + 0.25, z_top - t, z_top, bevel=0.012)
+    # Moulded nosing round the free edges, and a drip groove line on the soffit.
+    b_stone.box(x - hw - 0.03, x + hw + 0.03, front - 0.03, front + 0.06, z_top - t - 0.04,
+                z_top - t + 0.03, bevel=0.01)
+    for sx in (-1, 1):
+        xa, xb = sorted((x + sx * hw, x + sx * (hw + 0.03)))
+        b_stone.box(xa, xb, front - 0.03, face, z_top - t - 0.04, z_top - t + 0.03, bevel=0.01)
+    b_stone.box(x - hw + 0.06, x + hw - 0.06, front + 0.07, front + 0.09, z_top - t - 0.012,
+                z_top - t, bevel=0.0)
+    # Corbels carrying the slab (deeper than the window corbels: this one is load-bearing).
+    for sx in (-1, 1):
+        corbel(b_stone, x + sx * (hw - 0.2), z_top - t - 0.04, face, w=0.18, depth=d - 0.08, h=0.5)
+    # Drain spout at the front corner, so the slab sheds water clear of the facade.
+    sx = 1 if variant == 0 else -1
+    b_stone.box(x + sx * (hw - 0.12) - 0.025, x + sx * (hw - 0.12) + 0.025, front - 0.14, front + 0.05,
+                z_top - t + 0.01, z_top - t + 0.05, bevel=0.006)
+
+    # Railing: front and two returns, top rail, bottom rail, balusters, scroll band.
+    r_top = z_top + BAL_RAIL_H
+    fy = front + 0.05
+    xl, xr = x - hw + 0.04, x + hw - 0.04
+    for z0 in (z_top + 0.06, r_top - 0.03, z_top + 0.32):
+        b_iron.box(xl, xr, fy - 0.014, fy + 0.014, z0 - 0.014, z0 + 0.014, bevel=0.003)
+        for xe in (xl, xr):
+            b_iron.box(xe - 0.014, xe + 0.014, fy, face, z0 - 0.014, z0 + 0.014, bevel=0.003)
+    b_iron.box(xl - 0.03, xr + 0.03, fy - 0.035, fy + 0.03, r_top - 0.02, r_top + 0.015, bevel=0.006)
+    for xe in (xl, xr):
+        b_iron.box(xe - 0.03, xe + 0.03, fy - 0.035, face, r_top - 0.02, r_top + 0.015, bevel=0.006)
+    i, xb_ = 0, xl
+    while xb_ <= xr + 1e-6:
+        before = set(b_iron.bm.verts)
+        b_iron.box(xb_ - 0.01, xb_ + 0.01, fy - 0.01, fy + 0.01, z_top + 0.06, r_top - 0.02, bevel=0.0)
+        if variant == 1 and i == 5:
+            # An old knock: one baluster bowed outward.
+            bent = [v for v in b_iron.bm.verts if v not in before]
+            for v in bent:
+                k = math.sin(math.pi * (v.co.z - z_top) / BAL_RAIL_H)
+                v.co.y -= 0.035 * max(0.0, k)
+        if i % 2 == 1:
+            ring(b_iron, xb_ + 0.06, z_top + 0.19, 0.04, 0.052, fy - 0.008, fy + 0.008, n=10, bevel=0.0)
+            ring(b_iron, xb_ - 0.06, z_top + 0.19, 0.04, 0.052, fy - 0.008, fy + 0.008, n=10, bevel=0.0)
+        xb_ += 0.12
+        i += 1
+    # Side returns get their own balusters.
+    for xe in (xl, xr):
+        yb = fy
+        while yb < face - 0.06:
+            b_iron.box(xe - 0.01, xe + 0.01, yb - 0.01, yb + 0.01, z_top + 0.06, r_top - 0.02, bevel=0.0)
+            yb += 0.12
+    # Corner finials: the original ball on one, a later mismatched spike on the other balcony.
+    for xe in (xl, xr):
+        if variant == 0:
+            b_iron.box(xe - 0.03, xe + 0.03, fy - 0.03, fy + 0.03, r_top + 0.015, r_top + 0.075, bevel=0.025)
+        else:
+            b_iron.prism([(xe - 0.02, r_top + 0.015), (xe + 0.02, r_top + 0.015), (xe, r_top + 0.12)],
+                         fy - 0.012, fy + 0.012, bevel=0.0)
+    # Anchor plates and bolts where the rail meets the wall.
+    for xe in (xl, xr):
+        for z0 in (z_top + 0.06, r_top - 0.03):
+            b_iron.box(xe - 0.045, xe + 0.045, face - 0.008, face + 0.002, z0 - 0.045, z0 + 0.045,
+                       bevel=0.003)
+
+
 # --------------------------------------------------------------------------- roof / void
 
 def roof(B):
@@ -750,9 +830,10 @@ def main():
 
     cutters = [cutter("aa_cut_entrance", arch_outline(ARCH_HALF, ARCH_SPRING, ARCH_RISE, bottom=-0.1),
                       -1.0, ARCH_DEPTH)]
-    for i, (x, z, _) in enumerate(UPPER_WINDOWS):
+    for i, (x, z, style) in enumerate(UPPER_WINDOWS):
+        h = WIN_H[style]
         cutters.append(cutter(f"aa_cut_win_{i}", [(x - WIN_W / 2, z), (x + WIN_W / 2, z),
-                                                  (x + WIN_W / 2, z + WIN_H), (x - WIN_W / 2, z + WIN_H)],
+                                                  (x + WIN_W / 2, z + h), (x - WIN_W / 2, z + h)],
                               -1.0, WALL_T + 0.1))
     # arch_outline() is centred on x = 0; shift it to the window's bay.
     cutters.append(cutter("aa_cut_ground_window",
@@ -771,6 +852,8 @@ def main():
     for x, z, s in UPPER_WINDOWS:
         window(stone_b, frame_b, x, z, s)
     ground_window(stone_b, frame_b, iron_b)
+    for bx, bz, var in BALCONIES:
+        balcony(stone_b, iron_b, bx, bz, var)
     iron = material("m_aa_wrought_iron", (0.025, 0.025, 0.027), rough=0.45, metallic=0.6)
     for name, builder, mats in (
             ("aa_shell_facade_mouldings", mouldings(B), [trim]),
