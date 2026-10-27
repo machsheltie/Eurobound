@@ -30,3 +30,12 @@ _bmad/render/
 # Blender autosave backups
 *.blend1
 *.blend2
+
+# Large 3D binaries stay out of git (author ruling 2026-10-27: no GitHub storage
+# for them). They live on disk only; back them up separately.
+*.blend
+*.glb
+*.fbx
+Assets/Graphics/worlds/**/*.png
+Assets/Graphics/worlds/**/*.jpg
+Assets/Graphics/worlds/**/*.jpeg
