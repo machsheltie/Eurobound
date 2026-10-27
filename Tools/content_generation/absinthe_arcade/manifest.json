@@ -635,6 +635,31 @@
           ]
         }
       ]
+    },
+    {
+      "id": "aa_prop_window_cat",
+      "category": "prop",
+      "source": "tripo (Asset Extraction from reference board)",
+      "tri_budget": null,
+      "dims": [
+        0.25,
+        0.5,
+        0.38
+      ],
+      "pivot": "ground",
+      "materials": [
+        "m_aa_props_atlas"
+      ],
+      "contents": "Black cat sitting on the OUTSIDE of the open left first-floor window's stone sill, facing the street. Canon by author ruling 2026-10-27 (ambient, not a mascot; see docs/superpowers/NEXT_WORK.md). The window behind it is modeled open (build_shell.py OPEN_WINDOWS).",
+      "instances": [
+        {
+          "pos": [
+            -4.3,
+            6.9,
+            0.05
+          ]
+        }
+      ]
     }
   ]
 }

@@ -53,6 +53,9 @@ KEYSTONE = (0.78, 1.05, 0.46)    # width at top, height, proud
 UPPER_WINDOWS = [(x, z, s) for z, s in ((6.9, "piano"), (10.5, "middle"), (14.1, "upper"))
                  for x in (-4.6, 4.6)]
 REPAIRED = (4.6, 10.5)           # later replacement lintel and sill
+# Author ruling 2026-10-27: the black cat sits outside the left first-floor window, which
+# is open. Leaf swing in degrees (left leaf, right leaf), inward.
+OPEN_WINDOWS = {(-4.6, 6.9): (42.0, 35.0)}
 WIN_W, WIN_H = 1.16, 1.85
 CASEMENT_SET = 0.24              # how far the frame sits back from the wall face
 
@@ -439,7 +442,7 @@ def window(b_stone, b_frame, x, sill, style):
     b_stone.box(x - hw - 0.02, x - hw, y0, y1, sill, top, bevel=0.0)
     b_stone.box(x + hw, x + hw + 0.02, y0, y1, sill, top, bevel=0.0)
     b_stone.box(x - hw, x + hw, y0, y1, top, top + 0.02, bevel=0.0)
-    casement(b_frame, x, sill, top, hw)
+    casement(b_frame, x, sill, top, hw, OPEN_WINDOWS.get((x, sill), (0.0, 0.0)))
 
 
 def frame(b, x, sill, top, hw, band, y0, y1, bevel):
@@ -479,39 +482,73 @@ def pediment(b, x, z, half, rise, face):
     b.box(x - half, x + half, face - 0.2, face + 0.02, z - 0.06, z + 0.02, bevel=0.008)  # base
 
 
-def casement(b, x, sill, top, hw):
-    """Timber casement set back in the reveal: frame, mullion, transom, glazing bars, glass."""
+def casement(b, x, sill, top, hw, open_deg=(0.0, 0.0)):
+    """Timber double casement set back in the reveal: fixed frame and transom light, two
+    hinged leaves (opening inward, as Central European casements do), glass, sheer curtain."""
     y = CASEMENT_SET
     fr = 0.075
     WOOD, GLASS, CURTAIN = 0, 1, 2
+    # Fixed frame and transom.
     b.box(x - hw, x + hw, y, y + 0.08, sill, sill + fr, mat=WOOD, bevel=0.004)
     b.box(x - hw, x + hw, y, y + 0.08, top - fr, top, mat=WOOD, bevel=0.004)
     b.box(x - hw, x - hw + fr, y, y + 0.08, sill, top, mat=WOOD, bevel=0.004)
     b.box(x + hw - fr, x + hw, y, y + 0.08, sill, top, mat=WOOD, bevel=0.004)
     tz = sill + (top - sill) * 0.72
     b.box(x - hw, x + hw, y - 0.01, y + 0.08, tz - 0.035, tz + 0.035, mat=WOOD, bevel=0.004)
-    b.box(x - 0.03, x + 0.03, y - 0.01, y + 0.08, sill, tz, mat=WOOD, bevel=0.004)
-    for sx in (-1, 1):
-        xm = x + sx * hw / 2
-        b.box(xm - 0.012, xm + 0.012, y + 0.01, y + 0.06, sill + fr, tz, mat=WOOD, bevel=0.0)
-    for zb in (sill + (tz - sill) / 3, sill + 2 * (tz - sill) / 3):
-        b.box(x - hw, x + hw, y + 0.01, y + 0.06, zb - 0.012, zb + 0.012, mat=WOOD, bevel=0.0)
-    b.box(x - hw + fr, x + hw - fr, y + 0.035, y + 0.045, sill + fr, top - fr, mat=GLASS, bevel=0.0)
-    # Sheer curtain behind the glass, gathered into soft vertical folds.
-    folds, cw = 14, (hw - fr) * 2
-    cy = y + 0.14
-    pts = []
-    for i in range(folds * 2 + 1):
-        xx = x - hw + fr + cw * i / (folds * 2)
-        pts.append((xx, cy + (0.025 if i % 2 else 0.0)))
+    b.box(x - hw + fr, x + hw - fr, y + 0.035, y + 0.045, tz + 0.035, top - fr, mat=GLASS, bevel=0.0)
+    # Two leaves below the transom, each hinged on its outer jamb.
+    lw = hw - fr                       # leaf width
+    z0, z1 = sill + fr, tz - 0.035
+    for side, ang in ((-1, open_deg[0]), (1, open_deg[1])):
+        before = set(b.bm.verts)
+        hinge_x = x + side * lw
+        xa, xb = sorted((hinge_x, x))
+        st = 0.055
+        b.box(xa, xb, y + 0.005, y + 0.065, z0, z0 + st, mat=WOOD, bevel=0.003)
+        b.box(xa, xb, y + 0.005, y + 0.065, z1 - st, z1, mat=WOOD, bevel=0.003)
+        b.box(xa, xa + st, y + 0.005, y + 0.065, z0, z1, mat=WOOD, bevel=0.003)
+        b.box(xb - st, xb, y + 0.005, y + 0.065, z0, z1, mat=WOOD, bevel=0.003)
+        for zb in (z0 + (z1 - z0) / 3, z0 + 2 * (z1 - z0) / 3):
+            b.box(xa, xb, y + 0.015, y + 0.055, zb - 0.012, zb + 0.012, mat=WOOD, bevel=0.0)
+        b.box(xa + st, xb - st, y + 0.03, y + 0.04, z0 + st, z1 - st, mat=GLASS, bevel=0.0)
+        if ang:
+            leaf = [v for v in b.bm.verts if v not in before]
+            # Inward (+Y): the left leaf turns counter-clockwise, the right one clockwise.
+            rot = Matrix.Rotation(math.radians(ang) * -side, 3, "Z")
+            bmesh.ops.rotate(b.bm, verts=leaf, cent=(hinge_x, y + 0.035, 0), matrix=rot)
+    # Sheer curtain behind the glass in soft vertical folds; drawn aside when open.
+    is_open = any(open_deg)
     zt, zb2 = tz - 0.06, sill + fr + 0.05
-    vb = [b.bm.verts.new((px, py, zb2)) for px, py in pts]
-    vt = [b.bm.verts.new((px, py, zt)) for px, py in pts]
-    for i in range(len(pts) - 1):
-        f = b.bm.faces.new((vb[i], vb[i + 1], vt[i + 1], vt[i]))
-        f.material_index = CURTAIN
-    # Dark room behind.
-    b.box(x - hw - 0.2, x + hw + 0.2, WALL_T - 0.02, WALL_T, sill - 0.2, top + 0.2, mat=3, bevel=0.0)
+    cy = y + (0.42 if is_open else 0.14)
+    spans = ([(x - hw + fr, x - hw + fr + 0.22), (x + hw - fr - 0.22, x + hw - fr)] if is_open
+             else [(x - hw + fr, x + hw - fr)])
+    for xs0, xs1 in spans:
+        folds = max(4, int((xs1 - xs0) / 0.06))
+        pts = [(xs0 + (xs1 - xs0) * i / (folds * 2), cy + (0.03 if i % 2 else 0.0))
+               for i in range(folds * 2 + 1)]
+        vb = [b.bm.verts.new((px, py, zb2)) for px, py in pts]
+        vt = [b.bm.verts.new((px, py, zt)) for px, py in pts]
+        for i in range(len(pts) - 1):
+            f = b.bm.faces.new((vb[i], vb[i + 1], vt[i + 1], vt[i]))
+            f.material_index = CURTAIN
+    # The room behind: dark, deeper when the window is open so the gap reads as space.
+    back = WALL_T + (1.2 if is_open else 0.0)
+    b.box(x - hw - 0.2, x + hw + 0.2, back - 0.02, back, sill - 0.2, top + 0.2, mat=3, bevel=0.0)
+    if is_open:
+        # Pale sheer hanging just inside the opening, where daylight reaches it: the cat
+        # reads as a silhouette against it, as in the reference.
+        folds = 18
+        x0c, x1c = x - hw - 0.15, x + hw + 0.15
+        pts = [(x0c + (x1c - x0c) * i / (folds * 2), WALL_T + 0.07 + (0.035 if i % 2 else 0.0))
+               for i in range(folds * 2 + 1)]
+        vb = [b.bm.verts.new((px, py, sill - 0.1)) for px, py in pts]
+        vt = [b.bm.verts.new((px, py, top + 0.1)) for px, py in pts]
+        for i in range(len(pts) - 1):
+            f = b.bm.faces.new((vb[i], vb[i + 1], vt[i + 1], vt[i]))
+            f.material_index = CURTAIN
+        for sx in (-1, 1):
+            xs = sorted((x + sx * (hw + 0.2), x + sx * (hw + 0.22)))
+            b.box(xs[0], xs[1], WALL_T, back, sill - 0.2, top + 0.2, mat=3, bevel=0.0)
 
 
 # --------------------------------------------------------------------------- roof / void

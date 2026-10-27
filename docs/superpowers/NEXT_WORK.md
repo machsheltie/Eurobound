@@ -183,6 +183,14 @@ analyst reports from this session; contradictions list included.
   (per the standing strip-scaffolding cleanup ruling); RESOLVED 2026-08-05 by
   the game-wide ruling below.
 
+## Standing ruling 2026-10-27: the Absinthe Arcade window cat (author)
+
+**The black cat on the Absinthe Arcade facade stays.** It is ambient set dressing, not a
+mascot, pet or party companion, so the no-mascots rule does not remove it. It is its own 3D
+prop (`aa_prop_window_cat`) sitting on the OUTSIDE of the left first-floor window's stone
+sill, and that window is modeled OPEN. Do not strip it in future mascot/pet sweeps. Do not
+relitigate.
+
 ## Standing ruling 2026-08-05: 60 FPS (author)
 
 **The game-wide performance target is 60 FPS on min-spec hardware — single standard, no
