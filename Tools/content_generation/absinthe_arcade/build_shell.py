@@ -7,7 +7,7 @@ the street inward:
   central entrance bay (risalit, proud 0.16 above the ground cornice) with
   edge lesenes (0.24)
 
-Windows are openings cut through 0.55 m of masonry with reveals, casements set
+Windows are openings cut through 0.55 m of masonry with reveals, sash windows set
 back in them, and surrounds that differ by storey (heavy ground floor, richest
 first floor, plainer above, one later repair). The entrance is a deep arch with
 three stepped orders of individual voussoirs, rusticated jambs and a projecting
@@ -57,7 +57,7 @@ REPAIRED = (4.6, 10.5)           # later replacement lintel and sill
 # is open: its lower sash is pushed up (metres raised) so the curtain shows through.
 OPEN_WINDOWS = {(-4.6, 6.9): 0.55}
 WIN_W, WIN_H = 1.16, 1.85
-CASEMENT_SET = 0.24              # how far the frame sits back from the wall face
+SASH_SET = 0.24              # how far the frame sits back from the wall face
 
 
 # --------------------------------------------------------------------------- mesh helpers
@@ -395,7 +395,7 @@ def entrance(B):
 # --------------------------------------------------------------------------- windows
 
 def window(b_stone, b_frame, x, sill, style):
-    """Surround + reveal lining + sill for one upper window; casement into b_frame."""
+    """Surround + reveal lining + sill for one upper window; sash window into b_frame."""
     hw, top = WIN_W / 2, sill + WIN_H
     face = -BAY_P if abs(x) < BAY_HALF else 0.0
     repaired = (x, sill) == REPAIRED
@@ -439,12 +439,12 @@ def window(b_stone, b_frame, x, sill, style):
         b_stone.box(x - hw - band, x + hw + band, face - 0.075, face + 0.02, top + band - 0.02,
                     top + band + 0.1, bevel=0.006)
     # Reveal linings (opening sides, head, sill top) so the cut reads as dressed stone.
-    y0, y1 = face, CASEMENT_SET
+    y0, y1 = face, SASH_SET
     # Linings sit just inside the opening so they, not the boolean-cut faces, are what shows.
     b_stone.box(x - hw, x - hw + 0.02, y0, y1, sill, top, bevel=0.0)
     b_stone.box(x + hw - 0.02, x + hw, y0, y1, sill, top, bevel=0.0)
     b_stone.box(x - hw, x + hw, y0, y1, top - 0.02, top, bevel=0.0)
-    casement(b_frame, x, sill, top, hw, OPEN_WINDOWS.get((x, sill), 0.0))
+    sash_window(b_frame, x, sill, top, hw, OPEN_WINDOWS.get((x, sill), 0.0))
 
 
 def frame(b, x, sill, top, hw, band, y0, y1, bevel):
@@ -496,11 +496,12 @@ def sheer(b, xs0, xs1, cy, z0, z1, mat, pitch=0.06, depth=0.03):
         f.material_index = mat
 
 
-def casement(b, x, sill, top, hw, raised=0.0):
+def sash_window(b, x, sill, top, hw, raised=0.0):
     """Timber window set back in the reveal: fixed frame with a glazed upper light (two panes
     either side of a mullion) and a lower sash that slides up in an inner track, as in the
-    reference. `raised` lifts the lower sash behind the upper light, opening the bottom."""
-    y = CASEMENT_SET
+    reference. `raised` lifts the lower sash behind the upper light, opening the bottom.
+    Nothing is hinged: the lower sash only ever slides up (author ruling 2026-10-27)."""
+    y = SASH_SET
     fr = 0.075
     WOOD, GLASS, CURTAIN = 0, 1, 2
     # Fixed frame and meeting rail.
@@ -635,7 +636,7 @@ def main():
             ("aa_shell_facade_mouldings", mouldings(B), [trim]),
             ("aa_shell_facade_quoins", quoins(B), [trim]),
             ("aa_shell_facade_window_surrounds", stone_b, [trim]),
-            ("aa_shell_facade_casements", frame_b, [wood, glass, curtain, dark]),
+            ("aa_shell_facade_sash_windows", frame_b, [wood, glass, curtain, dark]),
             ("aa_shell_facade_roof", roof(B), [roof_m]),
             ("aa_shell_facade_interior_void", void(B), [dark])):
         o = builder.to_object(name, mats, coll)
