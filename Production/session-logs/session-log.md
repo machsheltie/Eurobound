@@ -40,3 +40,110 @@ game/assets/data/locations/debaucheryville/debaucheryville_interactions.json
 game/assets/data/locations/debaucheryville/debaucheryville_locations.json
 ---
 
+## Session End: 20261024_073759
+### Commits
+3b23d06 chore: WIP snapshot of local working tree for later review
+---
+
+## Session End: 20261024_073849
+### Commits
+3b23d06 chore: WIP snapshot of local working tree for later review
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261024_073954
+### Commits
+3b23d06 chore: WIP snapshot of local working tree for later review
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261024_074126
+### Commits
+3b23d06 chore: WIP snapshot of local working tree for later review
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_124427
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_124512
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_141046
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_144828
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_150643
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_154411
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_161910
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_163358
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_165901
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_201030
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_203915
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_204007
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+
+## Session End: 20261026_204116
+### Uncommitted Changes
+Production/session-logs/session-log.md
+skills-lock.json
+---
+

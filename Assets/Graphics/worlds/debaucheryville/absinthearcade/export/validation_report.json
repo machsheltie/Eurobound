@@ -1,0 +1,286 @@
+{
+  "assets": [
+    {
+      "id": "aa_shell_facade",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['m_aa_interior_void']"
+      ],
+      "tris": 7772,
+      "size_xyz": [
+        15.44,
+        13.32,
+        20.43
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_arch_hero",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_arch_hero_door_leaf_l_tripo', 'aa_arch_hero_marquee_tripo', 'aa_tmp_clip_steel', 'aa_tmp_conduit_green', 'aa_tmp_conduit_purple', 'aa_tmp_junction_metal', 'm_aa_arch_hero_tagline']"
+      ],
+      "tris": 7341648,
+      "size_xyz": [
+        5.44,
+        1.454,
+        7.136
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_window_upper",
+      "budget": null,
+      "instances": 6,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_window_upper_tripo']"
+      ],
+      "tris": 1877517,
+      "size_xyz": [
+        2.0,
+        0.412,
+        2.989
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_window_ground_arched",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_window_ground_arched_tripo']"
+      ],
+      "tris": 1909925,
+      "size_xyz": [
+        1.515,
+        0.377,
+        2.251
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_balcony_iron_upper",
+      "budget": null,
+      "instances": 2,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_balcony_iron_upper_tripo']"
+      ],
+      "tris": 1848506,
+      "size_xyz": [
+        2.1,
+        0.601,
+        1.057
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_arcade_cabinet",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_prop_arcade_cabinet_tripo']"
+      ],
+      "tris": 1948443,
+      "size_xyz": [
+        1.095,
+        1.201,
+        2.3
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_chalkboard",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_prop_chalkboard_tripo']"
+      ],
+      "tris": 1884660,
+      "size_xyz": [
+        0.903,
+        1.241,
+        1.5
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_bollard",
+      "budget": null,
+      "instances": 2,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_prop_bollard_tripo']"
+      ],
+      "tris": 1944194,
+      "size_xyz": [
+        0.324,
+        0.32,
+        0.9
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_wall_lantern",
+      "budget": null,
+      "instances": 2,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_prop_wall_lantern_tripo']"
+      ],
+      "tris": 1900582,
+      "size_xyz": [
+        0.413,
+        0.792,
+        1.0
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_awning",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_prop_awning_tripo']"
+      ],
+      "tris": 1925555,
+      "size_xyz": [
+        1.629,
+        1.106,
+        0.975
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_hanging_sign",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_prop_hanging_sign_tripo']"
+      ],
+      "tris": 1972105,
+      "size_xyz": [
+        0.169,
+        0.724,
+        1.6
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_doorframe_sign",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_prop_doorframe_sign_tripo', 'm_aa_prop_doorframe_sign_text']"
+      ],
+      "tris": 1947449,
+      "size_xyz": [
+        0.813,
+        0.14,
+        2.4
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_drainpipe",
+      "budget": null,
+      "instances": 2,
+      "fail": [],
+      "warn": [
+        "x extent 0.34 m vs target 0.20 m",
+        "y extent 0.42 m vs target 0.20 m"
+      ],
+      "tris": 1620,
+      "size_xyz": [
+        0.34,
+        0.419,
+        16.67
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_conduit_set",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "z extent 5.64 m vs target 7.00 m",
+        "materials not in manifest (rebake/rename): ['aa_tmp_clip_steel', 'aa_tmp_conduit_green', 'aa_tmp_conduit_purple', 'aa_tmp_junction_metal']"
+      ],
+      "tris": 3356,
+      "size_xyz": [
+        10.77,
+        0.151,
+        5.639
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_planter",
+      "budget": null,
+      "instances": 2,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['aa_prop_planter_tripo']"
+      ],
+      "tris": 1906747,
+      "size_xyz": [
+        0.597,
+        0.67,
+        0.9
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_prop_house_number",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [
+        "materials not in manifest (rebake/rename): ['m_aa_prop_house_number']"
+      ],
+      "tris": 12,
+      "size_xyz": [
+        0.35,
+        0.024,
+        0.35
+      ],
+      "status": "ok"
+    },
+    {
+      "id": "aa_decal_mural",
+      "budget": null,
+      "instances": 1,
+      "fail": [],
+      "warn": [],
+      "tris": 83200,
+      "size_xyz": [
+        6.656,
+        0.38,
+        11.0
+      ],
+      "status": "ok"
+    }
+  ],
+  "building_tris_measured": 45492525,
+  "building_budget": null,
+  "building_over_budget": false,
+  "counts": {
+    "ok": 17,
+    "partial": 0,
+    "fail": 0,
+    "placeholder": 0,
+    "missing": 0
+  }
+}

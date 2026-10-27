@@ -26,3 +26,7 @@ marketing/screenshots/originals/
 .bmad-loop/cache/
 .bmad-loop/policy.toml
 _bmad/render/
+
+# Blender autosave backups
+*.blend1
+*.blend2
