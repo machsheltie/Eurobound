@@ -37,21 +37,40 @@ CLAMP_STEP = 0.42
 BOX = (0.30, 0.12, 0.36)          # junction box w, depth, h
 STANDOFF = 0.012                  # gap between conduit and stone
 
-# Runs read off the daytime reference. (x, z) points run on the wall; (x, y, z) points
-# are free-hanging (flexible conduit into a sign).
+# Runs traced off the hero reference ("Absinthe Arcade at Clocktower Plaza(3)", with the
+# daytime Plaza(4) for detail). The reference facade is narrower than ours, so heights are
+# measured with the bust as the scale and positions are set by the feature each run hugs.
+# (x, z) points run on the wall; (x, y, z) points are free-hanging (flex into a sign).
 PURPLE_RUNS = [
-    # left: over the cornice, down beside the arch, flexible tail into the marquee's underside
-    [(-6.95, 6.3), (-3.45, 6.3), (-3.45, 3.15), (-2.62, -0.66, 3.1), (-2.1, -0.66, 3.3)],
-    [(-3.45, 6.3), (-3.45, 7.55), (-2.35, 7.55), (-2.35, 8.3)],        # left: up into the mural
-    [(2.72, 6.3), (3.9, 6.3), (3.9, 7.45)],                            # right: shoulder to window box
-    [(3.9, 6.3), (3.9, 4.65), (3.22, 4.65), (3.22, 3.1)],              # right: down into the offer board
-    [(-6.95, 5.2), (-6.1, 5.2), (-6.1, 4.1)],                          # left corner feed to the lantern
+    # left: from a coupling beside the downpipe, along the wall just above the side-bay
+    # cornice, under the window apron, into the box at the bay edge
+    [(-5.72, 6.22), (-2.78, 6.22)],
+    # left: down from that box beside the arch, a jog out round the jamb, down to the door
+    [(-2.78, 6.25), (-2.78, 5.3), (-3.08, 5.05), (-3.08, 1.95)],
+    # right: picks up the bust's purple feed where it enters the wall, across, down at the
+    # bay edge, along under the side-bay cornice into the box by the downpipe
+    [(1.16, 6.79), (2.86, 6.79), (2.86, 5.42), (5.95, 5.42)],
+    # right: from that box down and across into the marquee's right end
+    [(5.95, 5.3), (5.95, 4.5), (2.9, 4.5), (2.62, -0.62, 4.45)],
+    # right: from the box beside the first-floor window down to the lower box
+    [(6.18, 7.62), (6.18, 6.45), (6.02, 6.3), (6.02, 5.3)],
 ]
-GREEN_RUNS = [
-    [(4.32, 6.75), (4.32, 1.0)],                                       # right riser to the ground box
-    [(2.72, 6.55), (3.55, 6.55), (3.55, 7.3)],
+# The green on the facade is the arch neon (build_neon_extrados) fed from the earcups.
+GREEN_RUNS = []
+# Black flex cables (power for the lantern, the marquee feed), as in the reference.
+BLACK_RUNS = [
+    [(-5.66, 6.18), (-5.66, 5.42), (-5.66, -0.35, 5.25)],       # coupling down into the big box
+    [(-5.98, 5.12), (-6.3, 5.12), (-6.3, 5.0)],                 # big box to the corner lantern
+    [(-5.62, 4.72), (-5.62, 0.8)],                              # big box down the pipe
+    [(-3.08, 4.4), (-2.6, -0.6, 4.3)],                          # left conduit into the marquee
+    [(6.25, 7.7), (6.55, 7.7)],                                 # window box toward the downpipe
+    [(6.1, 5.22), (6.4, 5.22), (6.4, 5.1)],                     # lower box to the right lantern
 ]
-BOXES = [(-5.55, 6.3), (-3.45, 6.3), (3.9, 6.3), (3.9, 7.45), (4.32, 1.0), (-6.1, 5.2)]
+BLACK_R = 0.011
+BOXES = [(-2.78, 6.25), (5.95, 5.3), (6.18, 7.62)]
+# The big box beside the arched window is bolted to a steel frame in front of the left
+# downpipe, as in the reference (somebody needed the spot and the pipe was in the way).
+BIG_BOX = (-5.73, 5.0, (0.4, 0.14, 0.46))
 
 # Downpipes: cast iron, 110 mm, in 1.8 m socketed lengths.
 PIPE_R = 0.055
@@ -285,6 +304,31 @@ def gland(bm, path, radius, black, end=True):
     add_cyl(bm, b, (b - a).normalized(), radius * 1.25, 0.05, black, 12)
 
 
+def box_over_pipe(bm, face, metal, steel, black):
+    """The big box on a channel frame standing off the wall, clear of the downpipe behind."""
+    x, z, (w, d, h) = BIG_BOX
+    pipe_x = shell.DRAIN_X[0]
+    pipe_front = min(face.surf(pipe_x, z + dz) for dz in (-0.2, 0.0, 0.2)) - PIPE_GAP - 2 * PIPE_R - 0.04
+    back = pipe_front - 0.015
+    add_box(bm, (x, back - d / 2, z), (w, d, h), metal)
+    add_box(bm, (x, back - d - 0.006, z), (w - 0.02, 0.012, h - 0.02), metal)          # lid
+    for sx in (-1, 1):
+        for sz in (-1, 1):
+            add_cyl(bm, (x + sx * (w / 2 - 0.03), back - d - 0.014, z + sz * (h / 2 - 0.03)),
+                    (0, 1, 0), 0.009, 0.008, steel, 8)
+    for sz in (-1, 1):                                                                  # glands
+        add_cyl(bm, (x + 0.07, back - d / 2, z + sz * (h / 2 + 0.02)), (0, 0, 1), 0.024, 0.04, steel, 12)
+        add_cyl(bm, (x + 0.07, back - d / 2, z + sz * (h / 2 + 0.004)), (0, 0, 1), 0.034, 0.012, black, 12)
+    # Two channel rails across the back, each on two legs into the stone either side of the pipe.
+    legs = (pipe_x - PIPE_R - 0.08, x + w / 2 - 0.05)
+    for zr in (z - h / 2 + 0.08, z + h / 2 - 0.08):
+        add_box(bm, ((legs[0] + legs[1]) / 2, back + 0.02, zr), (legs[1] - legs[0] + 0.06, 0.04, 0.04), steel)
+        for lx in legs:
+            wall = face.surf(lx, zr)
+            add_box(bm, (lx, (back + 0.04 + wall) / 2, zr), (0.035, wall - back - 0.04, 0.035), steel)
+            plate(bm, lx, zr, wall, 0.08, 0.08, steel, bolts=2)
+
+
 def build_conduit_set(face):
     coll = aa.kit_collection("aa_prop_conduit_set")
     obj = next(o for o in coll.objects if o.type == "MESH")
@@ -302,7 +346,8 @@ def build_conduit_set(face):
         me.materials.append(mat(n))
     GREEN, PURPLE, METAL, STEEL, BLACK = range(5)
     bm = bmesh.new()
-    for runs, radius, m_idx, seed0 in ((PURPLE_RUNS, PURPLE_R, PURPLE, 0), (GREEN_RUNS, GREEN_R, GREEN, 2)):
+    for runs, radius, m_idx, seed0 in ((PURPLE_RUNS, PURPLE_R, PURPLE, 0), (GREEN_RUNS, GREEN_R, GREEN, 2),
+                                       (BLACK_RUNS, BLACK_R, BLACK, 4)):
         for i, run in enumerate(runs):
             pts = route(face, run, radius)
             tube_mesh(bm, pts, radius, m_idx, corner=0.06)
@@ -317,6 +362,7 @@ def build_conduit_set(face):
     metal.inputs["Roughness"].default_value = 0.42
     for x, z in BOXES:
         junction_box(bm, face, x, z, METAL, STEEL, BLACK)
+    box_over_pipe(bm, face, METAL, STEEL, BLACK)
     bm.to_mesh(me)
     bm.free()
     if "uv_material" not in me.uv_layers:
@@ -336,8 +382,46 @@ def hero_object(name, mats):
     return obj
 
 
+EARCUP_OUTLET = (0.79, -0.775, 6.11)      # side gland on each earcup box (x mirrored)
+
+
+def trim_side_runs():
+    """Drop the gentleman's old green side runs that dived into the wall behind his scrolls;
+    the arch neon now runs from those earcup outlets instead, as in the reference."""
+    obj = bpy.data.objects["aa_arch_hero_gentleman_hardware"]
+    names = [m.name for m in obj.data.materials]
+    if "aa_tmp_conduit_green" not in names:
+        return 0
+    gi = names.index("aa_tmp_conduit_green")
+    bm = bmesh.new()
+    bm.from_mesh(obj.data)
+    green = {f for f in bm.faces if f.material_index == gi}
+    doomed, seen = [], set()
+    for f in green:
+        if f in seen:
+            continue
+        stack, island = [f], []
+        seen.add(f)
+        while stack:
+            g = stack.pop()
+            island.append(g)
+            for e in g.edges:
+                for h in e.link_faces:
+                    if h in green and h not in seen:
+                        seen.add(h)
+                        stack.append(h)
+        if min(abs(v.co.x) for g in island for v in g.verts) > 0.75:
+            doomed += island
+    if doomed:
+        bmesh.ops.delete(bm, geom=doomed, context="FACES")
+        bm.to_mesh(obj.data)
+        obj.data.update()
+    bm.free()
+    return len(doomed)
+
+
 def build_neon_extrados(face):
-    """Green neon on the outer arch order, up both jambs, ending in glands behind the scrolls."""
+    """Green neon from each earcup outlet down onto the outer arch order and down the jambs."""
     obj = hero_object("aa_arch_hero_neon_extrados",
                       ("aa_tmp_conduit_green", "aa_tmp_clip_steel", "m_aa_glass_acrylic"))
     r = 0.026
@@ -351,11 +435,15 @@ def build_neon_extrados(face):
         for i in range(0, 61):
             t = math.pi / 2 * i / 60
             p = shell.arch_point(H, S, R, t, off)
-            if p.x < 1.08:                                 # the bust's scrolls hide the end
+            if p.x < 1.08:                                 # leave the arch under the scrolls
                 break
             pts.append(Vector((sx * p.x, y, p.y)))
-        path = tube_mesh(bm, pts, r, 0, corner=0.0)
-        gland(bm, [Vector(p) for p in pts], r, 1)
+        # Rise off the arch over the scrolls into the earcup's side outlet.
+        ex, ey, ez = EARCUP_OUTLET
+        top = pts[-1]
+        pts += [Vector((sx * 1.0, (y + ey) / 2, top.z + 0.14)), Vector((sx * (ex + 0.06), ey, ez - 0.01)),
+                Vector((sx * ex, ey, ez))]
+        path = tube_mesh(bm, pts, r, 0, corner=0.06)
         gland(bm, [Vector(p) for p in pts], r, 1, end=False)
         acc = 0.0
         for a, b in zip(path, path[1:]):
@@ -570,7 +658,8 @@ def build_drainpipes(face):
 
 def main():
     face = Facade()
-    made = {"conduit_verts": build_conduit_set(face), "extrados_verts": build_neon_extrados(face),
+    made = {"side_runs_removed": trim_side_runs(), "conduit_verts": build_conduit_set(face),
+            "extrados_verts": build_neon_extrados(face),
             "marquee_mounts": build_marquee_mounts(face), "drainpipes": build_drainpipes(face)}
     # Manufactured edges on the boxes, plates and clamps (applied on export).
     for name in ("aa_prop_conduit_set", "aa_arch_hero_neon_extrados", "aa_arch_hero_marquee_mounts",

@@ -12,13 +12,14 @@ back in them, and surrounds that differ by storey (heavy ground floor, richest
 first floor, plainer above, one later repair). The entrance is a deep arch with
 three stepped orders of individual voussoirs, rusticated jambs and a projecting
 keystone that carries the Headphone Gentleman, who sits in a carved ring (dark
-groove between two mouldings) that the ground cornice breaks around; the marquee
-is sized to the arch and hung proud of it (its steel is in build_fittings.py). String courses are dimensional
-sill courses with drips; the eave cornice has frieze, dentils, modillions and
-a corona with a shadowed soffit. Quoins are quieter, varied, upper floors only.
+groove between two mouldings); the marquee is sized to the arch and hung proud of
+it (its steel is in build_fittings.py). As in the reference there are no bands
+between the upper floors: each window has its own sill on the wall, and the ground
+cornice runs in the side bays only, dying into the central bay where the mural
+meets the arch. The eave cornice has frieze, dentils, modillions and a corona
+with a shadowed soffit. Quoins are quieter, varied, upper floors only.
 History, kept restrained: one recast span of ground cornice, one replaced
-rustication block, one replaced lintel and sill, and the sill courses chased out
-where the downpipes pass.
+rustication block, one replaced lintel and sill.
 
 Every piece is a closed solid with small bevels so edges catch light.
 Blender space: side-bay wall face on y=0, street toward -Y, z up.
@@ -54,11 +55,11 @@ ARCH_HALF, ARCH_SPRING, ARCH_RISE, ARCH_DEPTH = 2.2, 3.6, 1.9, 1.6
 ORDERS = [(0.16, 0.10), (0.36, 0.18), (0.58, 0.27)]   # (ring width outward, proud)
 KEYSTONE = (0.78, 1.05, 0.46)    # width at top, height, proud
 # Ring behind the gentleman's head (entrance reference, gentleman panel): a dark groove
-# cut into the bay between two stone mouldings, which his conduit loop rides over. The
-# ground cornice breaks around it, so he reads as carved with the building.
+# cut into the bay between two stone mouldings, which his conduit loop rides over, so he
+# reads as carved with the building.
 RING_C = (0.0, 6.24)             # centre: the conduit loop over his crown
 RING_GROOVE = (0.62, 0.86)       # dark groove radii
-RING_OUTER = 1.04                # outer edge of the moulded frame; the cornice stops here
+RING_OUTER = 1.04                # outer edge of the moulded frame
 RING_FOOT = RUST_TOP + 0.07      # the legs come down to the cornice line
 # The marquee is a lightbox hung in front of the arch on steel standoffs (build_fittings):
 # its back sits just proud of the impost blocks, as in the entrance reference.
@@ -68,15 +69,18 @@ MARQUEE_BACK = -RUST_P - ORDERS[-1][1] - 0.08
 # across the arch moulding and impost blocks as in the reference.
 MARQUEE_W = 5.15
 
-# Windows: (x, sill z, storey style)
-UPPER_WINDOWS = [(x, z, s) for z, s in ((6.9, "piano"), (10.5, "middle"), (14.1, "upper"))
+# Windows: (x, sill z, storey style). Author note 2026-10-28: the first-floor windows sat
+# too low against the bust. Measured off the reference with the bust as the scale, their
+# sills are level with a point half a head above his crown (about 7.4 m); the second
+# floor moves up with them so the first-floor pediment crests clear its sills.
+UPPER_WINDOWS = [(x, z, s) for z, s in ((7.4, "piano"), (10.8, "middle"), (14.1, "upper"))
                  for x in (-4.6, 4.6)]
-REPAIRED = (4.6, 10.5)           # later replacement lintel and sill
+REPAIRED = (4.6, 10.8)           # later replacement lintel and sill
 REPAIRED_CORNICE = (4.85, 5.6)   # span of ground cornice recast in a plainer profile
 STONE_PATCH = (5.05, 5.6, 2.18, 2.62)    # replaced rustication block (x0, x1, z0, z1)
 # Author ruling 2026-10-27: the black cat sits outside the left first-floor window, which
 # is open: its lower sash is pushed up (metres raised) so the curtain shows through.
-OPEN_WINDOWS = {(-4.6, 6.9): 0.55}
+OPEN_WINDOWS = {(-4.6, 7.4): 0.55}
 WIN_W = 1.16
 # Opening height by storey: the top floor's windows are shorter, as on real buildings of
 # this type, which also keeps their heads clear of the eave cornice.
@@ -91,10 +95,8 @@ BALCONIES = [(-4.6, 14.1, 0), (4.6, 14.1, 1)]
 BAL_DEPTH, BAL_HALF, BAL_SLAB, BAL_RAIL_H = 0.56, 0.98, 0.15, 0.86
 SASH_SET = 0.24              # how far the frame sits back from the wall face
 # Downpipes (built in build_fittings.py). Not symmetrical, as in the reference: the left one
-# drops between the corner and the windows, the right one hugs the corner. The sill courses
-# were chased out where they pass, so the pipe stands in a notch in each course.
+# drops between the corner and the windows, the right one hugs the corner.
 DRAIN_X = (-5.9, 6.75)
-DRAIN_CHASE = 0.1           # half-width of the notch cut in each course
 
 
 # --------------------------------------------------------------------------- mesh helpers
@@ -307,8 +309,8 @@ def mouldings(B):
     prof_rep = [(0, z), (0.13, z), (0.13, z + 0.12), (0.43, z + 0.29), (0.46, z + 0.31), (0.46, z + 0.42),
                 (0.44, z + 0.45), (0, z + 0.45)]
     r0, r1 = REPAIRED_CORNICE
-    # Broken around the gentleman's ring; the capped ends read as the cornice returning.
-    for x0, x1 in ((-hx - 0.48, -RING_OUTER), (RING_OUTER, r0), (r1, hx + 0.48)):
+    # Side bays only: the capped ends die into the central bay's projection.
+    for x0, x1 in ((-hx - 0.48, -BAY_HALF), (BAY_HALF, r0), (r1, hx + 0.48)):
         b.sweep(prof_gc, x0, x1)
         # Drip groove under the corona (reads as a dark line).
         b.box(max(x0, -hx - 0.4), min(x1, hx + 0.4), -0.40, -0.36, z + 0.265, z + 0.285, bevel=0.0)
@@ -316,19 +318,6 @@ def mouldings(B):
     # One replaced rustication block, new stone set a few millimetres proud of the old.
     px0, px1, pz0, pz1 = STONE_PATCH
     b.box(px0, px1, -RUST_P - 0.008, -RUST_P + 0.02, pz0, pz1, bevel=0.004)
-    # Sill courses under each row of upper windows (they double as floor lines).
-    for z in (6.9, 10.5, 14.1):
-        zc = z - 0.26
-        prof = [(0, zc - 0.06), (0.05, zc - 0.06), (0.05, zc), (0.12, zc + 0.03), (0.15, zc + 0.08),
-                (0.15, zc + 0.2), (0.12, zc + 0.24), (0.0, zc + 0.26)]
-        # Side bays run on the wall; the central bay's run sits on its projection.
-        for x0, x1 in chased(-hx - 0.15, -BAY_HALF) + chased(BAY_HALF, hx + 0.15):
-            b.sweep(prof, x0, x1, 0.0)
-        if z == 6.9:        # stops either side of the gentleman's ring
-            b.sweep(prof, -BAY_HALF - 0.02, -RING_OUTER, -BAY_P)
-            b.sweep(prof, RING_OUTER, BAY_HALF + 0.02, -BAY_P)
-        else:
-            b.sweep(prof, -BAY_HALF - 0.02, BAY_HALF + 0.02, -BAY_P)
     # Eave cornice: architrave, frieze, bed mould, corona with soffit, cymatium.
     z = EAVE - 0.95
     b.sweep([(0, z), (0.06, z), (0.06, z + 0.04), (0.09, z + 0.08), (0.09, z + 0.14), (0.04, z + 0.16),
@@ -345,20 +334,6 @@ def mouldings(B):
         console(b, x, z + 0.6, 0.16, 0.6, 0.22)
         x += 0.62
     return b
-
-
-def chased(x0, x1):
-    """Split a course's span at the downpipe notches."""
-    spans = [(x0, x1)]
-    for dx in DRAIN_X:
-        nxt = []
-        for a, b in spans:
-            if a < dx - DRAIN_CHASE and dx + DRAIN_CHASE < b:
-                nxt += [(a, dx - DRAIN_CHASE), (dx + DRAIN_CHASE, b)]
-            else:
-                nxt.append((a, b))
-        spans = nxt
-    return spans
 
 
 def soften(obj, width, angle=30.0):
@@ -406,9 +381,6 @@ def quoins(B):
             fw = (0.66 if long_ else 0.42) + rng.uniform(-0.05, 0.05)
             sw = (0.42 if long_ else 0.66) + rng.uniform(-0.05, 0.05)
             p = 0.045 + rng.uniform(-0.01, 0.012)
-            if abs(z - 6.64) < 0.3 or abs(z - 10.24) < 0.3 or abs(z - 13.84) < 0.3:
-                z += 0.3               # let the sill courses run through cleanly
-                continue
             x0, x1 = sorted((sx * hx, sx * (hx - fw)))
             b.box(x0, x1, -p, 0.0, z + 0.012, z + h - 0.012, bevel=0.014)
             y_side = (sx * hx, sx * (hx + p))
@@ -894,7 +866,7 @@ def seat_marquee():
 
 # --------------------------------------------------------------------------- gentleman
 
-GENTLEMAN_PARTS = ("aa_arch_hero_gentleman", "aa_arch_hero_gentleman_hardware", "aa_arch_hero_neon_loop")
+GENTLEMAN_PARTS = ("aa_arch_hero_gentleman", "aa_arch_hero_gentleman_hardware")
 GENTLEMAN_BASE = ARCH_SPRING + ARCH_RISE - 0.08    # chin scrolls overlap the keystone head
 
 
