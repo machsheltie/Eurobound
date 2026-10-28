@@ -68,7 +68,7 @@ Exact instance positions are in `manifest.json → assets[].instances`. `setup_s
 | `aa_prop_awning` | Corrugated acrylic rain awning | Blender hand | 1 |
 | `aa_prop_hanging_sign` | TOKENS / DRINKS / GAMES / REGRETS | Blender hand | 1 |
 | `aa_prop_doorframe_sign` | Offer board right of the door | Blender hand | 1 |
-| `aa_prop_drainpipe` | Downpipe, brackets, hopper | Blender scripted | 2 |
+| `aa_prop_drainpipe` | Both downpipes (one facade-pivot object), brackets, rainwater heads, gullies | Blender scripted (`build_fittings.py`) | 1 |
 | `aa_prop_conduit_set` | Purple/green conduit, clips, junction boxes | Blender scripted (curves) | 1 |
 | `aa_prop_planter` | Terracotta pot and shrub | Tripo + cleanup | 2 |
 | `aa_prop_house_number` | Enamel "13" plaque | Blender hand | 1 |
@@ -103,7 +103,7 @@ No polygon limits apply. Model and keep detail wherever it improves the look; th
 
 - **Fittings**, 2026-10-26:
   - `aa_balcony_iron_upper` (×2): Tripo text-to-3D Juliet balcony (scroll railing, side returns, three geranium pots), 2.1 m wide, sitting on the top-floor sills in front of the window flower boxes.
-  - `aa_prop_drainpipe` (×2): Blender cast-iron downpipe, full eave height, hopper head, kicked shoe, wall brackets every 1.8 m.
+  - `aa_prop_drainpipe`: both cast-iron downpipes in one facade-pivot object (`build_fittings.py`), placed off-symmetry as in the reference (left x −5.9 between corner and windows, right x 6.75 on the corner quoins). Outlet through the eave soffit ahead of the modillions, rainwater head under the architrave, 110 mm pipe in 1.8 m socketed lengths on cast ears with spacer bobbins, a swan neck out over the ground cornice with a strap to the corona, an offset over the plinth and a gully grating at the pavement. The sill courses are chased out where the pipes pass.
   - `aa_prop_conduit_set`: Blender. Green conduit from the gentleman's right tube along under the first-floor band to a junction box, then down to a box at street level; purple feed from his purple tube along a higher run into the same box; purple run on the left from the facade edge past a junction box into the marquee's top corner. Clips every 0.6 m. Conduit uses the neon materials so it glows at night as in the reference.
   - `aa_prop_house_number`: enamel "13" plaque, generated texture `textures/aa_prop_house_number_basecolor.png`.
   - Lanterns raised to 4.7 m and the hanging sign lowered to centre at 3.0 m so they no longer collide.
@@ -126,6 +126,7 @@ These are texture or decal work, not polygons:
 - **2026-10-27, baseline:** failed (flat wall plane, windows stuck on, thin bands, floating gentleman). Triggered the architectural quality pass.
 - **2026-10-27, after the massing pass:** real openings with recessed sash windows, banded rustication, projecting central bay with lesenes, stepped voussoir arch, keystone-seated gentleman. Still open: gentleman's cartouche surround, retrofit attachment, reseating the mural and props on the new wall faces.
 - **2026-10-27, phase 2:** arched ground-floor window rebuilt as a real opening (moulded surround, keystone into the cornice, sill slab on corbels, tracery fanlight, iron balconette with pots). Top-floor balconies rebuilt with slab thickness, underside, load-bearing corbels, drain spout and anchored railings, two non-identical variants. Top-floor windows shortened to 1.48 m (storey hierarchy; clears the eave cornice). Next: phase 3 entrance and retrofit.
+- **2026-10-28, phase 4 (small forms, history):** downpipes rebuilt as real drainage (see `aa_prop_drainpipe`), with three generations of fixing: original cast ears; band clamps re-fixing the left ground floor beside the old ears; a steel replacement length on band clamps on the right ground floor, joined by a rubber coupler, plus a repair coupler on one cracked left length. The left purple conduit passes behind the left swan neck. Restrained history on the stone: one span of ground cornice recast in a plainer chamfered profile with no drip (right of the arch), and one replaced rustication block set a few millimetres proud (both alongside the earlier replaced lintel and sill). Arris bevels: angle-limited bevel modifiers (applied on export) on the boolean-cut walls (10 mm), the swept mouldings (6 mm) and the scripted hardware (3 mm); boxes were already bevelled as built. Gray clay review re-run (three-quarter, front, entrance, corners).
 - **2026-10-27, phase 3 (entrance benchmark):** the gentleman now sits in a carved ring (dark sooted groove cut 0.10 m into the bay between two stone mouldings, as in the gentleman reference); the ground cornice and first-floor sill course break around it. His Tripo texture keeps its carved light and dark but takes its colour from the facade limestone (`stone_material.py` `tone_bust()`). The marquee is scaled to 5.15 m (about 93% of the outer arch, as in the reference) and hung 0.45 m proud on six square-tube standoffs with bolted plates, plus two stay rods with turnbuckles to the outer order (`aa_arch_hero_marquee_mounts`). The green neon now runs on the outer arch order and down both jambs on acrylic standoffs. Conduits, clamps and junction boxes are raycast onto the real stone and jog out over every cornice, sill and lesene they cross. Wall props re-seated on the faces they fix to (`seat_props.py`); the offer board moved beside the arch under the house number (the jambs fill its old spot) and the rosettes moved up beside the ring. Mural decal rebuilt over the new surfaces. Open: whether `aa_arch_hero_neon_loop` (the big arc over the head) stays now that the arch neon carries the line.
 
 ## Source method
@@ -222,7 +223,7 @@ ingest_tripo.py     Tripo GLB -> scaled, pivoted, decimated, UV'd kit asset
 validate_assets.py  budgets, UVs, transforms, pivots, dims, materials -> report
 pack_neon_mask.py   4 grayscale masks -> <asset>_neonmask.png   (plain Python)
 build_shell.py      masonry shell, entrance, gentleman ring, seats bust and marquee
-build_fittings.py   conduits, boxes, arch neon, marquee mounts (raycast onto the stone)
+build_fittings.py   conduits, boxes, arch neon, marquee mounts, downpipes (raycast onto the stone)
 seat_props.py       wall props onto the faces they fix to -> manifest.json
 extend_mural.py     mural skirt + decal mesh laid onto the walls
 export_assets.py    per-asset GLB + FBX, aa_layout.json        (runs validate first)

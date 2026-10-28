@@ -4,7 +4,10 @@ Rebuilds aa_prop_conduit_set (purple and green conduit runs, mismatched clamps
 drilled into the stone, sealed junction boxes with cable glands), and on the arch
 hero aa_arch_hero_neon_extrados (green neon tube on the outer arch order, on
 acrylic standoffs) and aa_arch_hero_marquee_mounts (the steel that hangs the
-marquee lightbox in front of the arch). Reference: "5. Electrical / mounting
+marquee lightbox in front of the arch). Also the two cast-iron downpipes
+(aa_prop_drainpipe): outlet through the eave soffit, rainwater head, socketed
+lengths on eared brackets, a swan neck out over the ground cornice, an offset over
+the plinth and a gully at the pavement, with later repairs in newer steel. Reference: "5. Electrical / mounting
 detail" and "11. Electrical / mounting details" on the daytime sheets.
 
 Everything sits on the real masonry: the facade has depth planes, cornices and
@@ -49,6 +52,11 @@ GREEN_RUNS = [
     [(2.72, 6.55), (3.55, 6.55), (3.55, 7.3)],
 ]
 BOXES = [(-5.55, 6.3), (-3.45, 6.3), (3.9, 6.3), (3.9, 7.45), (4.32, 1.0), (-6.1, 5.2)]
+
+# Downpipes: cast iron, 110 mm, in 1.8 m socketed lengths.
+PIPE_R = 0.055
+PIPE_GAP = 0.06                   # clearance behind the pipe left by the bracket ears
+SOCKET_STEP = 1.8
 
 # The masonry everything is fixed to.
 STONE = ("aa_shell_facade_walls", "aa_shell_facade_mouldings", "aa_shell_facade_quoins",
@@ -428,10 +436,147 @@ def build_marquee_mounts(face):
     return made
 
 
+def frustum(bm, center, bottom, top, h, mat_index):
+    """Box tapering from bottom (w, d) to top (w, d), back face kept flat against the wall."""
+    cx, cy, cz = center
+    yb = cy + bottom[1] / 2                         # shared back plane
+    rings = []
+    for (w, d), z in ((bottom, cz), (top, cz + h)):
+        rings.append([bm.verts.new((cx + sx * w / 2, y, z))
+                      for sx, y in ((-1, yb - d), (1, yb - d), (1, yb), (-1, yb))])
+    lo, hi = rings
+    faces = [bm.faces.new(lo[::-1]), bm.faces.new(hi)]
+    for i in range(4):
+        j = (i + 1) % 4
+        faces.append(bm.faces.new((lo[i], lo[j], hi[j], hi[i])))
+    for f in faces:
+        f.material_index = mat_index
+    bmesh.ops.recalc_face_normals(bm, faces=faces)
+
+
+def ear_bracket(bm, x, z, y, wall, iron, steel):
+    """Original fixing: cast ears either side of the socket, nailed through spacer bobbins."""
+    ty = y + PIPE_R * 0.4
+    for sx in (-1, 1):
+        ex = x + sx * (PIPE_R + 0.04)
+        add_box(bm, (ex, ty, z), (0.06, 0.014, 0.075), iron)
+        add_cyl(bm, (ex, (ty + wall) / 2, z), (0, 1, 0), 0.014, wall - ty, iron, 8)
+        add_cyl(bm, (ex, ty - 0.011, z), (0, 1, 0), 0.01, 0.01, steel, 8)
+
+
+def band_clamp(bm, x, z, y, wall, steel):
+    """Later fixing: galvanised two-part band on a threaded rod into a wall plate."""
+    add_cyl(bm, (x, y, z), (0, 0, 1), PIPE_R + 0.008, 0.03, steel, 16)
+    for sx in (-1, 1):
+        add_box(bm, (x + sx * (PIPE_R + 0.02), y, z), (0.03, 0.02, 0.03), steel)
+        add_cyl(bm, (x + sx * (PIPE_R + 0.02), y, z), (0, 1, 0), 0.006, 0.05, steel, 6)
+    add_cyl(bm, (x, (y + PIPE_R + wall) / 2, z), (0, 1, 0), 0.007, wall - y - PIPE_R, steel, 8)
+    plate(bm, x, z, wall, 0.07, 0.07, steel, bolts=2)
+
+
+def coupler(bm, x, y, z, black, steel, h=0.14):
+    """Rubber repair coupler with two worm-drive bands."""
+    add_cyl(bm, (x, y, z), (0, 0, 1), PIPE_R + 0.012, h, black, 16)
+    for dz in (-h * 0.32, h * 0.32):
+        add_cyl(bm, (x, y, z + dz), (0, 0, 1), PIPE_R + 0.016, 0.018, steel, 16)
+
+
+def build_drainpipes(face):
+    """Both downpipes in facade coordinates. The left one is all cast iron (one cracked length
+    wrapped in a coupler, the ground floor re-fixed with band clamps beside the old ears); on
+    the right the ground-floor length was replaced in steel, joined by a rubber coupler."""
+    coll = aa.kit_collection("aa_prop_drainpipe")
+    obj = next(o for o in coll.objects if o.type == "MESH")
+    me = obj.data
+    me.materials.clear()
+    for n in ("m_aa_iron", "aa_tmp_clip_steel", "aa_tmp_clip_black"):
+        me.materials.append(mat(n))
+    IRON, STEEL, BLACK = range(3)
+    B = aa.load_manifest()["building"]
+    soffit = B["eave_height"] - 0.95 + 0.6
+    corona = 0.48                                   # ground cornice projection
+    head = (15.42, 15.78)                           # rainwater head, under the architrave
+    bm = bmesh.new()
+    made = {}
+    for k, x in enumerate(shell.DRAIN_X):
+        replaced = k == 1
+        upper_wall = min(face.surf(x, z) for z in (7.6, 8.4, 9.2, 11.2, 12.0, 12.8, 14.8))
+        ground_wall = min(face.surf(x, z) for z in (1.4, 2.6, 3.8, 4.9))
+        y_up = upper_wall - PIPE_GAP - PIPE_R
+        y_gf = ground_wall - PIPE_GAP - PIPE_R
+        y_neck = -corona - 0.03 - PIPE_R            # just clear of the corona
+        y_foot = -shell.PLINTH_P - 0.035 - PIPE_R
+        y_out = -0.68                               # through the soffit, ahead of the modillions
+        # Outlet and swan neck down into the rainwater head.
+        tube_mesh(bm, [Vector((x, y_out, soffit + 0.02)), Vector((x, y_out, 16.1)),
+                       Vector((x, y_up - 0.01, 15.9)), Vector((x, y_up, head[1] - 0.06))],
+                  PIPE_R * 0.85, IRON, corner=0.1)
+        frustum(bm, (x, upper_wall - 0.11, head[0]), (0.2, 0.2), (0.36, 0.24), head[1] - head[0], IRON)
+        add_box(bm, (x, upper_wall - 0.125, head[1] + 0.02), (0.4, 0.27, 0.04), IRON)        # rim
+        for sx in (-1, 1):                                                                 # lugs
+            add_box(bm, (x + sx * 0.2, upper_wall - 0.006, head[0] + 0.12), (0.06, 0.012, 0.09), IRON)
+        # The run: upper wall, swan neck out over the ground cornice, back onto the rustication,
+        # offset over the plinth, down into the gully.
+        path = [Vector((x, y_up, head[0])), Vector((x, y_up, 6.52)), Vector((x, y_neck, 6.06)),
+                Vector((x, y_neck, 5.5)), Vector((x, y_gf, 5.02)), Vector((x, y_gf, 0.98)),
+                Vector((x, y_foot, 0.66)), Vector((x, y_foot, 0.12))]
+        if replaced:            # cast iron down to the coupler, steel below it
+            joint = Vector((x, y_gf, 4.6))
+            tube_mesh(bm, path[:5] + [joint], PIPE_R, IRON)
+            tube_mesh(bm, [joint] + path[5:], PIPE_R * 0.93, STEEL)
+            coupler(bm, x, y_gf, joint.z, BLACK, STEEL)
+        else:
+            tube_mesh(bm, path, PIPE_R, IRON)
+            coupler(bm, x, y_up, 11.35, BLACK, STEEL, h=0.16)
+        # Sockets and their fixings on the straight lengths.
+        sockets = 0
+        for (top, bottom), gen in (((head[0], 6.52), "ears"),
+                                   ((5.02, 0.98), "steel" if replaced else "refixed")):
+            y = y_up if gen == "ears" else y_gf
+            z = top - 0.15
+            while z > bottom + 0.2:
+                if not (replaced and z < 4.6):
+                    add_cyl(bm, (x, y, z), (0, 0, 1), PIPE_R * 1.22, 0.1, IRON, 16)
+                    add_cyl(bm, (x, y, z - 0.055), (0, 0, 1), PIPE_R * 1.12, 0.012, IRON, 16)
+                wall = face.surf(x, z)
+                if gen == "steel":
+                    band_clamp(bm, x, z, y, wall, STEEL)
+                else:
+                    ear_bracket(bm, x, z, y, wall, IRON, STEEL)
+                    if gen == "refixed":
+                        band_clamp(bm, x, z - 0.45, y, face.surf(x, z - 0.45), STEEL)
+                z -= SOCKET_STEP
+                sockets += 1
+        # Strap round the neck to the corona face.
+        cz = 5.9
+        cor = face.surf(x, cz)
+        add_cyl(bm, (x, y_neck, cz), (0, 0, 1), PIPE_R + 0.008, 0.03, STEEL, 16)
+        add_box(bm, (x, (y_neck + PIPE_R + cor) / 2, cz), (0.03, cor - y_neck - PIPE_R, 0.025), STEEL)
+        plate(bm, x, cz, cor, 0.06, 0.05, STEEL, bolts=2)
+        # Gully at the pavement: cast trap box with a grating over the street drain.
+        gy = y_foot - 0.02
+        add_box(bm, (x, gy, 0.06), (0.3, 0.26, 0.12), IRON)
+        for i in range(5):
+            add_box(bm, (x - 0.1 + 0.05 * i, gy, 0.125), (0.018, 0.22, 0.012), IRON)
+        made[f"pipe_{k}"] = {"y_up": round(y_up, 3), "y_gf": round(y_gf, 3), "sockets": sockets}
+    bm.to_mesh(me)
+    bm.free()
+    if "uv_material" not in me.uv_layers:
+        me.uv_layers.new(name="uv_material")
+    me.update()
+    made["verts"] = len(me.vertices)
+    return made
+
+
 def main():
     face = Facade()
-    return {"conduit_verts": build_conduit_set(face), "extrados_verts": build_neon_extrados(face),
-            "marquee_mounts": build_marquee_mounts(face)}
+    made = {"conduit_verts": build_conduit_set(face), "extrados_verts": build_neon_extrados(face),
+            "marquee_mounts": build_marquee_mounts(face), "drainpipes": build_drainpipes(face)}
+    # Manufactured edges on the boxes, plates and clamps (applied on export).
+    for name in ("aa_prop_conduit_set", "aa_arch_hero_neon_extrados", "aa_arch_hero_marquee_mounts",
+                 "aa_prop_drainpipe"):
+        shell.soften(bpy.data.objects[name], 0.003, angle=40)
+    return made
 
 
 if __name__ == "__main__" or "AA_RUN" in globals():

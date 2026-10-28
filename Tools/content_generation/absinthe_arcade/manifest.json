@@ -414,28 +414,21 @@
       "source": "blender_scripted",
       "tri_budget": null,
       "dims": [
-        0.2,
-        16.8,
-        0.2
+        12.9,
+        16.6,
+        0.75
       ],
-      "pivot": "ground",
+      "pivot": "facade",
       "materials": [
         "m_aa_iron"
       ],
-      "contents": "Downpipe with brackets, hopper head and shoe.",
+      "contents": "Both cast-iron downpipes in facade coordinates (build_fittings.py): outlet through the eave soffit, rainwater head, 1.8 m socketed lengths on eared brackets, swan neck over the ground cornice, offset over the plinth, gully at the pavement. Left x -5.9, right x 6.75 (asymmetric, per the reference). Later repairs: a coupler on a cracked left length, band clamps re-fixing the left ground floor, a steel replacement length on the right ground floor.",
       "instances": [
         {
           "pos": [
-            -6.65,
             0.0,
-            0.15
-          ]
-        },
-        {
-          "pos": [
-            6.65,
             0.0,
-            0.15
+            0.0
           ]
         }
       ]

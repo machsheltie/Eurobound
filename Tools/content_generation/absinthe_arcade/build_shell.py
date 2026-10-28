@@ -16,6 +16,9 @@ groove between two mouldings) that the ground cornice breaks around; the marquee
 is sized to the arch and hung proud of it (its steel is in build_fittings.py). String courses are dimensional
 sill courses with drips; the eave cornice has frieze, dentils, modillions and
 a corona with a shadowed soffit. Quoins are quieter, varied, upper floors only.
+History, kept restrained: one recast span of ground cornice, one replaced
+rustication block, one replaced lintel and sill, and the sill courses chased out
+where the downpipes pass.
 
 Every piece is a closed solid with small bevels so edges catch light.
 Blender space: side-bay wall face on y=0, street toward -Y, z up.
@@ -69,6 +72,8 @@ MARQUEE_W = 5.15
 UPPER_WINDOWS = [(x, z, s) for z, s in ((6.9, "piano"), (10.5, "middle"), (14.1, "upper"))
                  for x in (-4.6, 4.6)]
 REPAIRED = (4.6, 10.5)           # later replacement lintel and sill
+REPAIRED_CORNICE = (4.85, 5.6)   # span of ground cornice recast in a plainer profile
+STONE_PATCH = (5.05, 5.6, 2.18, 2.62)    # replaced rustication block (x0, x1, z0, z1)
 # Author ruling 2026-10-27: the black cat sits outside the left first-floor window, which
 # is open: its lower sash is pushed up (metres raised) so the curtain shows through.
 OPEN_WINDOWS = {(-4.6, 6.9): 0.55}
@@ -85,6 +90,11 @@ GW_X, GW_HALF, GW_SILL, GW_SPRING = -4.4, 0.55, 3.66, 4.76     # crown = spring 
 BALCONIES = [(-4.6, 14.1, 0), (4.6, 14.1, 1)]
 BAL_DEPTH, BAL_HALF, BAL_SLAB, BAL_RAIL_H = 0.56, 0.98, 0.15, 0.86
 SASH_SET = 0.24              # how far the frame sits back from the wall face
+# Downpipes (built in build_fittings.py). Not symmetrical, as in the reference: the left one
+# drops between the corner and the windows, the right one hugs the corner. The sill courses
+# were chased out where they pass, so the pipe stands in a notch in each course.
+DRAIN_X = (-5.9, 6.75)
+DRAIN_CHASE = 0.1           # half-width of the notch cut in each course
 
 
 # --------------------------------------------------------------------------- mesh helpers
@@ -293,19 +303,27 @@ def mouldings(B):
     prof_gc = [(0, z), (0.12, z), (0.12, z + 0.05), (0.15, z + 0.07), (0.15, z + 0.13), (0.19, z + 0.17),
              (0.27, z + 0.24), (0.42, z + 0.28), (0.44, z + 0.31), (0.44, z + 0.38), (0.48, z + 0.41),
              (0.48, z + 0.45), (0, z + 0.45)]
+    # Later cement repair: a plain chamfer instead of the cove and corona, no drip.
+    prof_rep = [(0, z), (0.13, z), (0.13, z + 0.12), (0.43, z + 0.29), (0.46, z + 0.31), (0.46, z + 0.42),
+                (0.44, z + 0.45), (0, z + 0.45)]
+    r0, r1 = REPAIRED_CORNICE
     # Broken around the gentleman's ring; the capped ends read as the cornice returning.
-    for x0, x1 in ((-hx - 0.48, -RING_OUTER), (RING_OUTER, hx + 0.48)):
+    for x0, x1 in ((-hx - 0.48, -RING_OUTER), (RING_OUTER, r0), (r1, hx + 0.48)):
         b.sweep(prof_gc, x0, x1)
         # Drip groove under the corona (reads as a dark line).
         b.box(max(x0, -hx - 0.4), min(x1, hx + 0.4), -0.40, -0.36, z + 0.265, z + 0.285, bevel=0.0)
+    b.sweep(prof_rep, r0, r1)
+    # One replaced rustication block, new stone set a few millimetres proud of the old.
+    px0, px1, pz0, pz1 = STONE_PATCH
+    b.box(px0, px1, -RUST_P - 0.008, -RUST_P + 0.02, pz0, pz1, bevel=0.004)
     # Sill courses under each row of upper windows (they double as floor lines).
     for z in (6.9, 10.5, 14.1):
         zc = z - 0.26
         prof = [(0, zc - 0.06), (0.05, zc - 0.06), (0.05, zc), (0.12, zc + 0.03), (0.15, zc + 0.08),
                 (0.15, zc + 0.2), (0.12, zc + 0.24), (0.0, zc + 0.26)]
         # Side bays run on the wall; the central bay's run sits on its projection.
-        b.sweep(prof, -hx - 0.15, -BAY_HALF, 0.0)
-        b.sweep(prof, BAY_HALF, hx + 0.15, 0.0)
+        for x0, x1 in chased(-hx - 0.15, -BAY_HALF) + chased(BAY_HALF, hx + 0.15):
+            b.sweep(prof, x0, x1, 0.0)
         if z == 6.9:        # stops either side of the gentleman's ring
             b.sweep(prof, -BAY_HALF - 0.02, -RING_OUTER, -BAY_P)
             b.sweep(prof, RING_OUTER, BAY_HALF + 0.02, -BAY_P)
@@ -327,6 +345,33 @@ def mouldings(B):
         console(b, x, z + 0.6, 0.16, 0.6, 0.22)
         x += 0.62
     return b
+
+
+def chased(x0, x1):
+    """Split a course's span at the downpipe notches."""
+    spans = [(x0, x1)]
+    for dx in DRAIN_X:
+        nxt = []
+        for a, b in spans:
+            if a < dx - DRAIN_CHASE and dx + DRAIN_CHASE < b:
+                nxt += [(a, dx - DRAIN_CHASE), (dx + DRAIN_CHASE, b)]
+            else:
+                nxt.append((a, b))
+        spans = nxt
+    return spans
+
+
+def soften(obj, width, angle=30.0):
+    """Arris bevel on hard edges (applied on export) so raw cuts and sweeps catch light."""
+    mod = obj.modifiers.get("aa_soften") or obj.modifiers.new("aa_soften", "BEVEL")
+    mod.width = width
+    mod.segments = 2
+    mod.profile = 0.6
+    mod.limit_method = "ANGLE"
+    mod.angle_limit = math.radians(angle)
+    mod.use_clamp_overlap = True
+    mod.harden_normals = False
+    return mod
 
 
 def console(b, x, z_top, w, depth, h):
@@ -868,6 +913,9 @@ def seat_gentleman():
 
 # --------------------------------------------------------------------------- main
 
+SOFTEN = {"aa_shell_facade_mouldings": 0.006}
+
+
 def shell_coll():
     return bpy.data.collections["aa_shell_facade"]
 
@@ -941,6 +989,10 @@ def main():
             ("aa_shell_facade_interior_void", void(B), [dark])):
         o = builder.to_object(name, mats, coll)
         made[name] = len(o.data.polygons)
+        # Boxes are bevelled as they are built; the swept profiles are not.
+        if name in SOFTEN:
+            soften(o, SOFTEN[name])
+    soften(walls, 0.01)
     av, pl = entrance(B)
     replace_mesh("aa_arch_hero_archivolt", av, [trim])
     replace_mesh("aa_arch_hero_plinths", pl, [trim])
