@@ -1,0 +1,712 @@
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "painterly_hd2d_painted_box_diorama",
+  "production_label": "Painterly HD-2D painted-box diorama",
+  "hero_facade_is_tile_sheet": false,
+  "camera": {
+    "projection": "perspective",
+    "fixed_hd2d_tilt_degrees": "30_to_40_down",
+    "field_of_view": "narrow",
+    "depth_of_field": "tilt_shift_subtle",
+    "orientation": "south_facing_interior_and_front_elevation_exterior"
+  },
+  "world_scale": {
+    "unit": "meter",
+    "storey_height": 3.3,
+    "ground_floor_height": 4.5,
+    "exterior_width": 15.44,
+    "player_reference_height": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB_for_color_linear_for_masks",
+    "filtering": "linear_with_mipmaps",
+    "alpha": "straight_alpha_clean_edge_color",
+    "padding_pixels_at_source_scale": 8,
+    "day_night_method": "registered_texture_swap",
+    "emission_alignment": "one_to_one_with_matching_color_texture",
+    "default_prop_pivot": "bottom_center"
+  },
+  "asset_groups": {
+    "exterior_building_faces": [
+      {
+        "asset_id": "aa_face_front",
+        "files": {
+          "day": "exterior/faces/aa_face_front_day.png",
+          "night": "exterior/faces/aa_face_front_night.png",
+          "emit": "exterior/faces/aa_face_front_emit.png"
+        },
+        "source_size": [
+          1024,
+          1792
+        ],
+        "mapping": "front_box_face",
+        "anchor": "bottom_center",
+        "canon_status": "generated_needs_qa"
+      },
+      {
+        "asset_id": "aa_face_left",
+        "files": {
+          "day": "exterior/faces/aa_face_left_day.png",
+          "night": "exterior/faces/aa_face_left_night.png",
+          "emit": "exterior/faces/aa_face_left_emit.png"
+        },
+        "mapping": "left_box_face_and_angled_corner_bay",
+        "anchor": "bottom_center"
+      },
+      {
+        "asset_id": "aa_face_right",
+        "files": {
+          "day": "exterior/faces/aa_face_right_day.png",
+          "night": "exterior/faces/aa_face_right_night.png",
+          "emit": "exterior/faces/aa_face_right_emit.png"
+        },
+        "mapping": "right_box_face",
+        "anchor": "bottom_center"
+      },
+      {
+        "asset_id": "aa_face_back",
+        "files": {
+          "day": "exterior/faces/aa_face_back_day.png",
+          "night": "exterior/faces/aa_face_back_night.png",
+          "emit": "exterior/faces/aa_face_back_emit.png"
+        },
+        "mapping": "back_box_face",
+        "anchor": "bottom_center"
+      },
+      {
+        "asset_id": "aa_roof_mansard",
+        "files": {
+          "day": "exterior/faces/aa_roof_mansard_day.png",
+          "night": "exterior/faces/aa_roof_mansard_night.png",
+          "emit": "exterior/faces/aa_roof_mansard_emit.png"
+        },
+        "source_size": [
+          2048,
+          1024
+        ],
+        "mapping": "mansard_wedge_faces",
+        "anchor": "roof_origin"
+      }
+    ],
+    "exterior_depth_layers": [
+      {
+        "asset_id": "aa_layer_marquee",
+        "files": {
+          "day": "exterior/depth_layers/aa_layer_marquee_day.png",
+          "night": "exterior/depth_layers/aa_layer_marquee_night.png",
+          "emit": "exterior/depth_layers/aa_layer_marquee_emit.png"
+        },
+        "placement": "front_face_entrance_arch",
+        "depth_offset_m": 0.18
+      },
+      {
+        "asset_id": "aa_layer_keystone_head",
+        "files": {
+          "day": "exterior/depth_layers/aa_layer_keystone_head_day.png",
+          "night": "exterior/depth_layers/aa_layer_keystone_head_night.png",
+          "emit": "exterior/depth_layers/aa_layer_keystone_head_emit.png"
+        },
+        "placement": "front_face_above_marquee",
+        "depth_offset_m": 0.12
+      },
+      {
+        "asset_id": "aa_layer_entrance_interior",
+        "files": {
+          "day": "exterior/depth_layers/aa_layer_entrance_interior_day.png",
+          "night": "exterior/depth_layers/aa_layer_entrance_interior_night.png"
+        },
+        "placement": "behind_stained_glass_doors",
+        "depth_offset_m": -0.5
+      },
+      {
+        "asset_id": "aa_layer_awning",
+        "files": {
+          "day": "exterior/depth_layers/aa_layer_awning_day.png",
+          "night": "exterior/depth_layers/aa_layer_awning_night.png"
+        },
+        "placement": "left_of_entrance_over_street_cabinet",
+        "depth_offset_m": 0.65
+      }
+    ],
+    "interior_room_faces": [
+      {
+        "asset_id": "aa_int_face_floor",
+        "files": {
+          "day": "interior/faces/aa_int_face_floor_day.png",
+          "night": "interior/faces/aa_int_face_floor_night.png",
+          "emit": "interior/faces/aa_int_face_floor_emit.png"
+        },
+        "source_size": [
+          2048,
+          2048
+        ],
+        "mapping": "main_hall_and_north_wing_floor_mesh"
+      },
+      {
+        "asset_id": "aa_int_face_walls",
+        "files": {
+          "day": "interior/faces/aa_int_face_walls_day.png",
+          "night": "interior/faces/aa_int_face_walls_night.png",
+          "emit": "interior/faces/aa_int_face_walls_emit.png"
+        },
+        "source_size": [
+          2048,
+          2048
+        ],
+        "mapping": "main_hall_wall_atlas"
+      },
+      {
+        "asset_id": "aa_int_face_ceiling",
+        "files": {
+          "day": "interior/faces/aa_int_face_ceiling_day.png",
+          "night": "interior/faces/aa_int_face_ceiling_night.png",
+          "emit": "interior/faces/aa_int_face_ceiling_emit.png"
+        },
+        "source_size": [
+          2048,
+          1024
+        ],
+        "mapping": "arched_ceiling_mesh"
+      },
+      {
+        "asset_id": "aa_int_face_north_wing",
+        "files": {
+          "day": "interior/faces/aa_int_face_north_wing_day.png",
+          "night": "interior/faces/aa_int_face_north_wing_night.png",
+          "emit": "interior/faces/aa_int_face_north_wing_emit.png"
+        },
+        "source_size": [
+          2048,
+          1024
+        ],
+        "mapping": "north_wing_wall_and_recess_atlas"
+      }
+    ],
+    "interior_depth_layers": [
+      {
+        "asset_id": "aa_int_layer_bottle_bar",
+        "files": {
+          "day": "interior/depth_layers/aa_int_layer_bottle_bar_day.png",
+          "night": "interior/depth_layers/aa_int_layer_bottle_bar_night.png",
+          "emit": "interior/depth_layers/aa_int_layer_bottle_bar_emit.png"
+        },
+        "node_id": "aa_node_bottle_bar",
+        "render_role": "central_landmark",
+        "pivot": "floor_center"
+      },
+      {
+        "asset_id": "aa_int_layer_mezzanine",
+        "files": {
+          "day": "interior/depth_layers/aa_int_layer_mezzanine_day.png",
+          "night": "interior/depth_layers/aa_int_layer_mezzanine_night.png"
+        },
+        "node_id": "aa_node_bottle_bar",
+        "render_role": "upper_depth_frame",
+        "navigation": "visual_only"
+      },
+      {
+        "asset_id": "aa_int_layer_entry_doors",
+        "files": {
+          "day": "interior/depth_layers/aa_int_layer_entry_doors_day.png",
+          "night": "interior/depth_layers/aa_int_layer_entry_doors_night.png",
+          "emit": "interior/depth_layers/aa_int_layer_entry_doors_emit.png"
+        },
+        "node_id": "aa_node_entry_vestibule",
+        "render_role": "foreground_threshold_frame"
+      },
+      {
+        "asset_id": "aa_int_layer_claw_alcove",
+        "files": {
+          "day": "interior/depth_layers/aa_int_layer_claw_alcove_day.png",
+          "night": "interior/depth_layers/aa_int_layer_claw_alcove_night.png",
+          "emit": "interior/depth_layers/aa_int_layer_claw_alcove_emit.png"
+        },
+        "node_id": "aa_node_claw_alcove",
+        "render_role": "quest_alcove_frame"
+      },
+      {
+        "asset_id": "aa_int_layer_mirror_corridor",
+        "files": {
+          "day": "interior/depth_layers/aa_int_layer_mirror_corridor_day.png",
+          "night": "interior/depth_layers/aa_int_layer_mirror_corridor_night.png",
+          "emit": "interior/depth_layers/aa_int_layer_mirror_corridor_emit.png"
+        },
+        "node_id": "aa_node_mirror_corridor",
+        "render_role": "puzzle_corridor_shell"
+      },
+      {
+        "asset_id": "aa_int_layer_north_arch",
+        "files": {
+          "day": "interior/depth_layers/aa_int_layer_north_arch_day.png",
+          "night": "interior/depth_layers/aa_int_layer_north_arch_night.png",
+          "emit": "interior/depth_layers/aa_int_layer_north_arch_emit.png"
+        },
+        "node_id": "aa_node_north_wing",
+        "render_role": "foreground_compression_frame"
+      }
+    ],
+    "props": [
+      {
+        "asset_id": "aa_prop_token_exchange",
+        "file": "interior/props/aa_prop_token_exchange.png",
+        "node_id": "aa_node_token_exchange",
+        "interaction_id": "token_exchange_machine",
+        "states": [
+          "idle",
+          "pay",
+          "dispense",
+          "jam"
+        ]
+      },
+      {
+        "asset_id": "aa_cab_frogger_existential",
+        "file": "interior/cabinets/aa_cab_frogger_existential.png",
+        "node_id": "aa_node_main_cabinet_loop",
+        "interaction_id": "frogger_existential_edition"
+      },
+      {
+        "asset_id": "aa_cab_identity_crisis",
+        "file": "interior/cabinets/aa_cab_identity_crisis.png",
+        "node_id": "aa_node_main_cabinet_loop",
+        "interaction_id": "street_fighter_identity_crisis"
+      },
+      {
+        "asset_id": "aa_cab_kebab_kombat",
+        "file": "interior/cabinets/aa_cab_kebab_kombat.png",
+        "node_id": "aa_node_main_cabinet_loop",
+        "interaction_id": "kebab_kombat"
+      },
+      {
+        "asset_id": "aa_cab_claw_rigged",
+        "file": "interior/cabinets/aa_cab_claw_rigged.png",
+        "node_id": "aa_node_claw_alcove",
+        "interaction_id": "rigged_absinthe_claw_machine",
+        "states": [
+          "relic_present",
+          "play",
+          "near_miss",
+          "win",
+          "relic_absent",
+          "shake_warning"
+        ]
+      },
+      {
+        "asset_id": "aa_cab_ddr_broken",
+        "file": "interior/cabinets/aa_cab_ddr_broken.png",
+        "node_id": "aa_node_broken_ddr",
+        "interaction_id": "broken_ddr_restroom_unlock",
+        "states": [
+          "error",
+          "token_0_of_3",
+          "token_1_of_3",
+          "token_2_of_3",
+          "token_3_of_3",
+          "unlock_pulse"
+        ]
+      },
+      {
+        "asset_id": "aa_cab_time_crisis_cracked",
+        "file": "interior/cabinets/aa_cab_time_crisis_cracked.png",
+        "node_id": "aa_node_taproom_curtain",
+        "interaction_id": "absinthium_taproom_curtain",
+        "states": [
+          "curtain_hidden",
+          "displaced_revealed",
+          "night_glow"
+        ]
+      },
+      {
+        "asset_id": "aa_transition_taproom_curtain",
+        "file": "interior/transitions/aa_transition_taproom_curtain.png",
+        "node_id": "aa_node_taproom_curtain",
+        "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
+        "states": [
+          "day_inert",
+          "evening_faint",
+          "night_breathing",
+          "discovered"
+        ],
+        "boundary": "arcade_approach_only_no_destination_interior"
+      },
+      {
+        "asset_id": "aa_transition_maintenance_door",
+        "file": "interior/transitions/aa_transition_maintenance_door.png",
+        "node_id": "aa_node_maintenance_door",
+        "destination_id": "debaucheryville_arcade_maintenance_closet_01",
+        "states": [
+          "locked_red",
+          "unlocked_green",
+          "opening_exterior_only"
+        ],
+        "boundary": "arcade_door_exterior_only_no_destination_interior"
+      },
+      {
+        "asset_id": "aa_prop_bar_seating",
+        "file": "interior/props/aa_prop_bar_seating.png",
+        "node_id": "aa_node_bottle_bar",
+        "includes": [
+          "standard_stools",
+          "highchair",
+          "beanbag",
+          "bidet_stool"
+        ]
+      },
+      {
+        "asset_id": "aa_prop_wayfinding",
+        "file": "interior/props/aa_prop_wayfinding.png",
+        "node_id": "aa_node_bottle_bar",
+        "includes": [
+          "tokens",
+          "bar",
+          "prizes",
+          "restroom",
+          "fake_vip_loop"
+        ]
+      },
+      {
+        "asset_id": "aa_prop_street_cabinet",
+        "file": "exterior/props/aa_prop_street_cabinet_day.png",
+        "node_id": "aa_node_exterior_approach"
+      },
+      {
+        "asset_id": "aa_prop_chalkboard",
+        "file": "exterior/props/aa_prop_chalkboard_day.png",
+        "node_id": "aa_node_exterior_approach"
+      },
+      {
+        "asset_id": "aa_prop_window_cat",
+        "file": "exterior/props/aa_prop_window_cat_day.png",
+        "node_id": "aa_node_exterior_approach",
+        "canon_required": true
+      }
+    ],
+    "characters": [
+      {
+        "asset_id": "aa_char_backpack_girl",
+        "file": "characters/backpack_girl_arcade.png",
+        "npc_id": "debaucheryville_npc_backpack_girl_01",
+        "node_id": "aa_node_token_exchange",
+        "pivot": "seated_floor_contact"
+      },
+      {
+        "asset_id": "aa_char_arcade_employee",
+        "file": "characters/arcade_employee.png",
+        "npc_id": "debaucheryville_npc_arcade_employee_01",
+        "default_node_id": "aa_node_main_cabinet_loop"
+      },
+      {
+        "asset_id": "aa_char_token_attendant",
+        "file": "characters/token_attendant.png",
+        "npc_id": "debaucheryville_npc_arcade_token_attendant_01",
+        "default_node_id": "aa_node_token_exchange"
+      },
+      {
+        "asset_id": "aa_char_hacker_variants",
+        "file": "characters/arcade_hacker_patron_variants.png",
+        "group_id": "absinthe_arcade_twitchy_hackers"
+      },
+      {
+        "asset_id": "aa_char_edm_ghost_variants",
+        "file": "characters/edm_ghost_variants.png",
+        "group_id": "absinthe_arcade_edm_ghosts"
+      },
+      {
+        "asset_id": "aa_char_rogue_backpackers",
+        "file": "characters/rogue_backpacker_variants.png",
+        "group_id": "absinthe_arcade_rogue_backpackers"
+      },
+      {
+        "asset_id": "aa_char_speedrunners",
+        "file": "characters/arcade_speedrunner_variants.png",
+        "group_id": "absinthe_arcade_speedrunners"
+      }
+    ],
+    "effects": [
+      {
+        "asset_id": "aa_fx_cabinet_mist",
+        "file": "interior/fx/aa_fx_cabinet_mist.png",
+        "frames": 8,
+        "low_motion_state": "static_low_haze"
+      },
+      {
+        "asset_id": "aa_fx_electrical_sparks",
+        "file": "interior/fx/aa_fx_electrical_sparks.png",
+        "frames": 4,
+        "preflash_frames": 1
+      },
+      {
+        "asset_id": "aa_fx_mirror_afterimages",
+        "file": "interior/fx/aa_fx_mirror_afterimages.png",
+        "node_id": "aa_node_mirror_corridor",
+        "low_motion_state": "single_static_offset"
+      },
+      {
+        "asset_id": "aa_transition_taproom_vapor",
+        "file": "interior/transitions/aa_transition_taproom_vapor.png",
+        "node_id": "aa_node_taproom_curtain",
+        "frames": 8,
+        "low_motion_state": "still_vapor"
+      },
+      {
+        "asset_id": "aa_transition_maintenance_unlock_fx",
+        "file": "interior/transitions/aa_transition_maintenance_unlock_fx.png",
+        "node_id": "aa_node_maintenance_door",
+        "frames": 6
+      },
+      {
+        "asset_id": "aa_fx_bottle_bar_glow",
+        "file": "interior/fx/aa_fx_bottle_bar_glow.png",
+        "node_id": "aa_node_bottle_bar",
+        "frames": 6,
+        "low_motion_state": "steady_internal_glow"
+      }
+    ],
+    "ui": [
+      {
+        "asset_id": "aa_ui_tokens",
+        "file": "ui/aa_ui_tokens.png",
+        "bindings": [
+          "item_absinthe_arcade_token",
+          "token_exchange_machine",
+          "broken_ddr_restroom_unlock"
+        ]
+      },
+      {
+        "asset_id": "aa_ui_claw",
+        "file": "ui/aa_ui_claw.png",
+        "bindings": [
+          "rigged_absinthe_claw_machine",
+          "item_beer_pong_saint_relic"
+        ]
+      },
+      {
+        "asset_id": "aa_ui_cabinet_games",
+        "file": "ui/aa_ui_cabinet_games.png",
+        "bindings": [
+          "frogger_existential_edition",
+          "street_fighter_identity_crisis",
+          "kebab_kombat"
+        ]
+      },
+      {
+        "asset_id": "aa_ui_hidden_entrances",
+        "file": "ui/aa_ui_hidden_entrances.png",
+        "bindings": [
+          "absinthium_taproom_curtain",
+          "maintenance_restroom_door"
+        ],
+        "non_color_cues": [
+          "taproom_coupe_icon",
+          "maintenance_wrench_icon",
+          "numeric_token_fill"
+        ]
+      },
+      {
+        "asset_id": "aa_ui_item_icons",
+        "file": "ui/aa_ui_item_icons.png",
+        "bindings": [
+          "item_beer_pong_saint_relic",
+          "item_broken_symbol_game_boy",
+          "item_ballad_of_the_bros",
+          "item_questionable_kebab_coupon"
+        ]
+      },
+      {
+        "asset_id": "aa_ui_dialogue_portraits",
+        "file": "ui/aa_ui_dialogue_portraits.png",
+        "bindings": [
+          "debaucheryville_npc_backpack_girl_01",
+          "debaucheryville_npc_arcade_employee_01",
+          "debaucheryville_npc_arcade_token_attendant_01"
+        ]
+      }
+    ]
+  },
+  "animation_sequences": {
+    "marquee_flicker": {
+      "asset_id": "aa_layer_marquee",
+      "frames": 6,
+      "timing": "random_3_to_8_seconds",
+      "low_motion": "steady_on"
+    },
+    "bottle_bar_breathe": {
+      "asset_id": "aa_fx_bottle_bar_glow",
+      "frames": 6,
+      "duration_seconds": 4,
+      "loop": true,
+      "low_motion": "steady_internal_glow"
+    },
+    "taproom_curtain_breathe": {
+      "asset_id": "aa_transition_taproom_curtain",
+      "active_hours": "20:00_to_04:00",
+      "duration_seconds": 5,
+      "loop": true,
+      "low_motion": "steady_rim_light"
+    },
+    "taproom_vapor": {
+      "asset_id": "aa_transition_taproom_vapor",
+      "frames": 8,
+      "duration_seconds": 2,
+      "loop": true,
+      "low_motion": "still_vapor"
+    },
+    "ddr_token_progress": {
+      "asset_id": "aa_cab_ddr_broken",
+      "states": [
+        "token_0_of_3",
+        "token_1_of_3",
+        "token_2_of_3",
+        "token_3_of_3"
+      ],
+      "state_source": "broken_ddr_restroom_unlock"
+    },
+    "maintenance_unlock": {
+      "asset_id": "aa_transition_maintenance_unlock_fx",
+      "frames": 6,
+      "duration_seconds": 0.75,
+      "loop": false
+    },
+    "mirror_lag": {
+      "asset_id": "aa_fx_mirror_afterimages",
+      "delay_seconds": 0.2,
+      "implementation": "delayed_sprite_proxy",
+      "low_motion": "single_static_offset"
+    },
+    "backpack_girl_idle": {
+      "asset_id": "aa_char_backpack_girl",
+      "weighted_loops": {
+        "strum_idle": 45,
+        "notebook_scribble": 25,
+        "tune_peg": 20,
+        "kebab_offer": 10
+      }
+    }
+  },
+  "lighting_effects": {
+    "historic_amber": {
+      "color": "#FFB45A",
+      "priority": "navigation_and_architecture",
+      "flicker": false
+    },
+    "retrofit_green": {
+      "color": "#39FF14",
+      "priority": "brand_and_hidden_path_cues",
+      "sources": [
+        "marquee",
+        "conduit",
+        "bottle_bar",
+        "taproom_curtain",
+        "selected_cabinets"
+      ]
+    },
+    "retrofit_purple": {
+      "color": "#BF00FF",
+      "priority": "secondary_brand_and_interaction_accents",
+      "sources": [
+        "marquee",
+        "wayfinding",
+        "floor_pixels",
+        "mirror_corridor"
+      ]
+    },
+    "quest_cues": {
+      "claw": "gold_halo_edge_after_examine",
+      "ddr": "three_shape_and_numbered_token_pips",
+      "maintenance": "red_to_green_latch_indicator",
+      "taproom": "coupe_icon_brass_plaque_and_breathing_rim_light",
+      "backpack_girl": "warm_floor_pool"
+    }
+  },
+  "external_location_transitions": [
+    {
+      "transition_id": "to_absinthium_taproom",
+      "source_node": "aa_node_taproom_curtain",
+      "transition_node": "aa_node_taproom_transition",
+      "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
+      "destination_design_file": "design/World Design/Debaucheryville/the_absinthium_taproom.md",
+      "visible_assets": [
+        "aa_cab_time_crisis_cracked",
+        "aa_transition_taproom_curtain",
+        "aa_transition_taproom_vapor"
+      ],
+      "visibility_boundary": "fade_behind_curtain_before_destination_interior"
+    },
+    {
+      "transition_id": "to_claw_maintenance_restroom",
+      "source_node": "aa_node_maintenance_door",
+      "transition_node": "aa_node_restroom_transition",
+      "destination_id": "debaucheryville_arcade_maintenance_closet_01",
+      "destination_design_file": "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md",
+      "visible_assets": [
+        "aa_cab_ddr_broken",
+        "aa_transition_maintenance_door",
+        "aa_transition_maintenance_unlock_fx"
+      ],
+      "unlock_cost": {
+        "item_id": "item_absinthe_arcade_token",
+        "quantity": 3
+      },
+      "visibility_boundary": "transition_on_door_open_before_destination_interior"
+    }
+  ],
+  "interaction_bindings": {
+    "token_exchange_machine": "aa_prop_token_exchange",
+    "frogger_existential_edition": "aa_cab_frogger_existential",
+    "street_fighter_identity_crisis": "aa_cab_identity_crisis",
+    "kebab_kombat": "aa_cab_kebab_kombat",
+    "rigged_absinthe_claw_machine": "aa_cab_claw_rigged",
+    "broken_ddr_restroom_unlock": "aa_cab_ddr_broken",
+    "maintenance_restroom_door": "aa_transition_maintenance_door",
+    "absinthium_taproom_curtain": "aa_transition_taproom_curtain",
+    "backpack_girl_couchsurf_hook": "aa_char_backpack_girl"
+  },
+  "technical_masks": {
+    "exterior_collision": "masks/aa_mask_exterior_collision.png",
+    "exterior_occlusion": "masks/aa_mask_exterior_occlusion.png",
+    "interior_collision": "masks/aa_mask_interior_collision.png",
+    "interior_interaction": "masks/aa_mask_interior_interaction.png",
+    "interior_occlusion": "masks/aa_mask_interior_occlusion.png",
+    "node_overlay": "masks/aa_guide_node_overlay.png",
+    "scale_camera_guide": "masks/aa_guide_scale_camera.png"
+  },
+  "mobile_optimization": {
+    "texture_groups": [
+      {
+        "name": "aa_exterior_faces",
+        "contents": "exterior_face_day_night_emit",
+        "max_dimension": 2048
+      },
+      {
+        "name": "aa_interior_shell",
+        "contents": "interior_faces_and_architectural_depth_layers",
+        "max_dimension": 2048
+      },
+      {
+        "name": "aa_interactive_props",
+        "contents": "hero_cabinets_transitions_and_ui",
+        "max_dimension": 2048
+      },
+      {
+        "name": "aa_characters",
+        "contents": "named_and_ambient_character_sheets",
+        "max_dimension": 1024
+      }
+    ],
+    "lod_levels": {
+      "high": "all_emission_particles_ambient_variants_and_screen_animation",
+      "medium": "half_particles_reduced_ambient_variants_essential_screen_animation",
+      "low": "quest_fx_only_named_npcs_static_secondary_screens",
+      "motion_reduction": "static_afterimages_steady_floor_lights_low_haze_and_steady_hidden_entrance_glow"
+    },
+    "preserve_at_all_levels": [
+      "central_bottle_bar_silhouette",
+      "walkable_edge_lighting",
+      "beer_pong_saint_state",
+      "ddr_token_pips",
+      "maintenance_latch_indicator",
+      "taproom_curtain_and_plaque",
+      "quest_bound_npcs"
+    ]
+  }
+}
