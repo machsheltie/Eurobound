@@ -1,0 +1,199 @@
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "display_name": "Absinthe Arcade",
+  "satirical_subtitle": "Lose Your Mind One Token at a Time",
+  "world": "debaucheryville",
+  "zone": "clocktower_plaza_side_street",
+  "location_type": "psychedelic_barcade_quest_hub",
+  "sub_types": [
+    "arcade",
+    "bar",
+    "quest_hub",
+    "mini_game_gallery",
+    "hidden_location_gateway",
+    "couchsurf_host_origin"
+  ],
+  "canon_sources": {
+    "visual_authority": [
+      "Assets/Graphics/worlds/debaucheryville/absinthearcade/absinthearcade_exterior/hd2d_asset_manifest.md",
+      "Assets/Graphics/worlds/debaucheryville/absinthearcade/references/mastercomponentbreakdown.md"
+    ],
+    "gameplay_authority": "design/World Design/Debaucheryville/absinthearcade.md",
+    "quest_authority": "design/Quests/debaucheryville",
+    "linked_location_authority": [
+      "design/World Design/Debaucheryville/the_absinthium_taproom.md",
+      "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md"
+    ]
+  },
+  "access": {
+    "time_restrictions": {
+      "open_time": "00:00",
+      "close_time": "24:00",
+      "always_accessible": true,
+      "night_visual_state_begins": "22:00"
+    },
+    "stat_requirements": null,
+    "item_requirements": null,
+    "previous_locations": null,
+    "special_conditions": {
+      "arcade_games_require": "item_absinthe_arcade_token",
+      "confused_or_drunk_encounter_modifier": "increased_random_encounters",
+      "basic_entry_is_free": true
+    }
+  },
+  "exits": [
+    {
+      "exit_id": "to_clocktower_plaza_side_street",
+      "destination": "debaucheryville_clocktower_plaza_01",
+      "direction": "south_through_main_entrance",
+      "requirements": null,
+      "transition_node": "aa_node_entry_vestibule"
+    },
+    {
+      "exit_id": "to_absinthium_taproom",
+      "destination": "debaucheryville_brewery_absinthium_taproom_01",
+      "direction": "north_behind_green_velvet_curtain",
+      "requirements": {
+        "discovery_flag": "absinthium_taproom_entrance_discovered",
+        "time_window": "20:00_to_04:00",
+        "destination_checks_own_quest_credentials": true
+      },
+      "transition_node": "aa_node_taproom_curtain",
+      "ownership_note": "The Arcade owns the approach, curtain, plaque, vapor cue, and transition only. The Taproom owns its interior and encounters."
+    },
+    {
+      "exit_id": "to_claw_maintenance_restroom",
+      "destination": "debaucheryville_arcade_maintenance_closet_01",
+      "direction": "north_service_recess_beside_broken_ddr",
+      "requirements": {
+        "flag": "arcade_maintenance_restroom_unlocked",
+        "unlock_cost": {
+          "item": "item_absinthe_arcade_token",
+          "quantity": 3
+        },
+        "permanent_after_unlock": true
+      },
+      "transition_node": "aa_node_maintenance_door",
+      "ownership_note": "The Arcade owns the broken DDR token slot, door exterior, unlock state, and transition only. The restroom owns its interior and graffiti systems."
+    }
+  ],
+  "spatial_identity": {
+    "exterior_summary": "A dignified four-storey Prague-inspired limestone and plaster building disrespected by a monumental Green Fairy mural, green and purple conduit, the Headphone Gentleman carving, and a black neon arcade marquee.",
+    "interior_summary": "A grand historic amusement hall with warm stone, iron mezzanines, amber lamps, checkerboard floors, and a monumental cracked absinthe-bottle bar corrupted by toxic neon, cabinet mist, bad signage, and lagging mirrors.",
+    "layout": "central_hall_loop_with_l_shaped_north_wing",
+    "primary_landmark": "aa_node_bottle_bar",
+    "navigation_rule": "The central bottle bar remains visible from most main-floor nodes; the north wing deliberately compresses and obscures sightlines without becoming an unreadable maze."
+  },
+  "atmosphere": {
+    "primary_mood": "beautiful_history_corrupted_by_profitable_bad_decisions",
+    "secondary_moods": [
+      "psychedelic_nostalgia",
+      "tourist_trap_confidence",
+      "haunted_barcade_energy",
+      "earnest_local_amusement"
+    ],
+    "crowd_level": "low_day_high_night",
+    "noise_level": "high_layered_but_directional",
+    "smell": [
+      "burnt_sugar",
+      "citrus_cleaner",
+      "warm_dust",
+      "stale_vape",
+      "sweet_anise"
+    ],
+    "lighting": {
+      "architectural_base": "warm_amber_practical_lamps",
+      "arcade_primary": "toxic_green",
+      "arcade_secondary": "neon_purple",
+      "deep_background": "near_black_with_selective_warm_pools",
+      "night_exterior": "green_purple_emission_over_wet_cobble"
+    }
+  },
+  "visual_theme": {
+    "production_style": "painterly_hd2d_painted_box_diorama",
+    "engine": "Godot 4.4",
+    "camera": "fixed_hd2d_tilt_perspective_narrow_fov",
+    "primary_colors": [
+      "#39FF14",
+      "#BF00FF",
+      "#0A0A0A"
+    ],
+    "supporting_colors": [
+      "#C9A45D",
+      "#E7D7B7",
+      "#0B6B50",
+      "#FFB45A"
+    ],
+    "architectural_style": "historic_prague_inspired_art_nouveau_baroque_adaptive_reuse",
+    "key_visual_elements": [
+      "green_fairy_mural_flower_to_pixel_transition",
+      "headphone_gentleman_keystone",
+      "green_and_purple_retrofit_conduit",
+      "black_pixel_marquee",
+      "stained_glass_entry_doors",
+      "checkerboard_threshold_and_floor",
+      "monumental_cracked_absinthe_bottle_bar",
+      "warm_iron_mezzanine",
+      "sticker_bombed_arcade_cabinets",
+      "canonical_window_cat"
+    ],
+    "straight_man_rule": "Historic architecture must remain sincere, beautiful, plausible, and readable so the arcade retrofit registers as vandalism rather than generic fantasy decoration.",
+    "asset_method": {
+      "building": "simple_3d_massing_with_painted_face_textures",
+      "depth_layers": "alpha_cutouts_for_marquee_keystone_door_interior_and_selected_interior_landmarks",
+      "props_and_characters": "sprite3d_billboards_or_cutouts",
+      "hero_facade_is_tile_sheet": false
+    }
+  },
+  "satirical_design": {
+    "primary_target": "absinthe_mystique_sold_to_tourists_as_underground_authenticity",
+    "secondary_targets": [
+      "nostalgia_monetization",
+      "rigged_arcade_economies",
+      "fake_vip_experiences",
+      "crypto_collectible_delusion",
+      "tourists_mistaking_broken_for_artisanal"
+    ],
+    "sensitivity_rule": "The joke targets entitled tourist behavior and the businesses that exploit it, not Czech people, Prague architecture, or local culture.",
+    "buffoon_delusion": {
+      "what_bros_think": "They discovered a profound underground absinthe ritual disguised as a retro arcade.",
+      "what_actually_happens": "They entered a highly legible tourist trap whose staff and regulars are openly charging them for nostalgia and bad decisions."
+    },
+    "fake_vip_rule": "The VIP wristband quest may claim this location has a VIP section, but the Arcade contains no real VIP area."
+  },
+  "state_tracking": {
+    "visited": false,
+    "tokens_purchased": 0,
+    "tokens_spent": 0,
+    "beer_pong_saint_relic_obtained": false,
+    "claw_machine_attempts": 0,
+    "claw_machine_strategy_discovered": false,
+    "arcade_maintenance_restroom_unlocked": false,
+    "absinthium_taproom_entrance_discovered": false,
+    "backpack_girl_met": false,
+    "backpack_girl_refused_while_infected": false,
+    "backpack_girl_couchsurf_completed": false,
+    "ballad_of_the_bros_obtained": false,
+    "broken_game_boy_found": false,
+    "club_flyer_placed": false,
+    "mirror_shadow_secret_solved": false,
+    "temporarily_banned_until": null
+  },
+  "progressive_states": {
+    "first_visit": "Core floor, token exchange, cabinet games, claw alcove, and Backpack Girl are available.",
+    "restroom_unlocked": "Maintenance door gains a persistent green indicator and becomes a normal transition.",
+    "taproom_discovered": "Green curtain receives interaction highlight after dark; destination performs its own brewery-tour checks.",
+    "relic_obtained": "Claw machine switches to post-win dialogue and lower-value joke prizes.",
+    "couchsurf_completed": "Backpack Girl gains archive and Ballad callbacks without moving her primary Arcade node."
+  },
+  "performance": {
+    "target_fps": 60,
+    "platform_priority": "desktop_and_mobile_scalable",
+    "exterior_texture_strategy": "day_night_swap_plus_emission_masks",
+    "interior_texture_strategy": "painted_room_faces_with_depth_cards_and_billboard_props",
+    "max_simultaneous_particle_emitters_high": 12,
+    "max_simultaneous_particle_emitters_low": 4,
+    "reflection_strategy": "delayed_afterimage_proxy_not_real_time_mirror",
+    "lod_rule": "Preserve silhouette, landmarks, entrance cues, and quest-readable props before decorative particles or tertiary clutter."
+  }
+}
