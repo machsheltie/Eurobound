@@ -1,0 +1,212 @@
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "item_category": "arcade_currency_quest_collectibles_and_local_rewards",
+  "items": [
+    {
+      "item_id": "item_absinthe_arcade_token",
+      "display_name": "Absinthe Arcade Token",
+      "item_type": "location_currency",
+      "description": "A heavy brass-colored token stamped with an angular A/hourglass emblem. Under ultraviolet light the rim glows green, which the machine calls security and everyone else calls paint.",
+      "rarity": "common",
+      "stackable": true,
+      "max_stack": 99,
+      "consumable": true,
+      "exchange": {
+        "input_currency": "kebab_coin",
+        "input_quantity": 1,
+        "output_quantity_per_kebab_coin": 5,
+        "vendor_interaction": "token_exchange_machine"
+      },
+      "uses": [
+        {
+          "interaction": "frogger_existential_edition",
+          "cost": 1
+        },
+        {
+          "interaction": "street_fighter_identity_crisis",
+          "cost": 1
+        },
+        {
+          "interaction": "kebab_kombat",
+          "cost": 1
+        },
+        {
+          "interaction": "rigged_absinthe_claw_machine",
+          "cost": 2
+        },
+        {
+          "interaction": "broken_ddr_restroom_unlock",
+          "total_cost": 3,
+          "persistent_progress": true
+        }
+      ],
+      "visual": {
+        "front": "angular_A_hourglass_emblem_with_stars",
+        "back": "pixel_invader_and_ONE_BAD_DECISION",
+        "material": "worn_brass_plated_zinc",
+        "emission": "green_uv_rim_only",
+        "ui_icon": "aa_ui_token"
+      },
+      "audio": {
+        "pickup": "heavy_token_clink.ogg",
+        "spend": "token_drop_mechanical.ogg"
+      }
+    },
+    {
+      "item_id": "item_beer_pong_saint_relic",
+      "display_name": "Beer Pong Saint Relic",
+      "item_type": "unique_quest_collectible",
+      "description": "An intentionally ugly low-resolution icon of a red party cup wearing an eight-bit halo. Its provenance is elaborate, unverifiable and printed on the back in six-point type.",
+      "rarity": "unique",
+      "stackable": false,
+      "consumable": false,
+      "quest_binding": "debaucheryville_nft_hunt",
+      "acquisition": {
+        "location_node": "aa_node_claw_alcove",
+        "interaction_id": "rigged_absinthe_claw_machine",
+        "method": "counter_swing_then_release_on_second_buzz",
+        "requires_strategy_or_repeated_attempts": true,
+        "sets_state": "beer_pong_saint_relic_obtained"
+      },
+      "visual": {
+        "base": "red_solo_cup",
+        "halo": "eight_bit_gold_green",
+        "aesthetic": "deliberately_bad_ms_paint_religious_icon",
+        "display_state": "suspended_inside_claw_machine_on_gold_thread",
+        "inventory_icon": "aa_ui_beer_pong_saint_relic"
+      },
+      "audio": {
+        "dispense": "fur_elise_crypto_victory_remix.ogg"
+      },
+      "source_authority": "design/Quests/debaucheryville/nfthuntdebaucheryville.md"
+    },
+    {
+      "item_id": "item_broken_symbol_game_boy",
+      "display_name": "Broken Handheld with Weird Symbols",
+      "item_type": "cross_city_quest_item",
+      "description": "A scratched gray handheld console whose dead screen briefly displays unfamiliar musical symbols when held near an arcade mirror.",
+      "rarity": "rare",
+      "stackable": false,
+      "consumable": false,
+      "acquisition": {
+        "location_node": "aa_node_mirror_corridor",
+        "interaction_id": "mirror_shadow_puzzle",
+        "sets_state": "broken_game_boy_found"
+      },
+      "future_use": {
+        "world": "sinfonia",
+        "purpose": "music_symbol_clue",
+        "implementation_owner": "future_sinfonia_quest"
+      },
+      "visual": {
+        "body": "sun_yellowed_gray_plastic",
+        "screen": "cracked_with_single_green_symbol_pulse",
+        "details": "foreign_stickers_tape_battery_cover_missing",
+        "inventory_icon": "aa_ui_broken_symbol_handheld"
+      }
+    },
+    {
+      "item_id": "item_ballad_of_the_bros",
+      "display_name": "Ballad of the Bros",
+      "item_type": "quest_owned_collectible_reference",
+      "description": "A handwritten folk song that documents the party with painful accuracy. The bros understand it as a tribute.",
+      "rarity": "unique",
+      "stackable": false,
+      "consumable": false,
+      "acquisition": {
+        "npc_id": "debaucheryville_npc_backpack_girl_01",
+        "quest": "couchsurfing_chronicles_debaucheryville",
+        "location_trigger_origin": "aa_node_token_exchange",
+        "granted_outside_arcade": true,
+        "owner": "design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md"
+      },
+      "effects": {
+        "couchsurf_result": "minus_10_sp_due_to_no_sleep",
+        "future_use": "alternate_solution_for_sinfonia_music_mini_game"
+      },
+      "arcade_package_rule": "Reference and display only. The Arcade does not grant or rewrite this collectible's quest payload.",
+      "visual": {
+        "format": "creased_notebook_page_with_four_chords_and_margin_notes",
+        "inventory_icon": "aa_ui_ballad_page"
+      }
+    },
+    {
+      "item_id": "item_questionable_kebab_coupon",
+      "display_name": "One Regret-Free Kebab Coupon",
+      "item_type": "comedy_consumable_coupon",
+      "description": "A thermal-paper coupon awarded by Kebab Kombat. The word REGRET-FREE has been added with a different printer.",
+      "rarity": "uncommon",
+      "stackable": true,
+      "max_stack": 5,
+      "consumable": true,
+      "acquisition": {
+        "interaction_id": "kebab_kombat",
+        "condition": "five_perfect_regrets"
+      },
+      "effect": {
+        "merchant_tag": "participating_kebab_vendor",
+        "discount_percent": 20,
+        "side_effect": "vendor_comments_on_coupon_age"
+      },
+      "visual": {
+        "format": "faded_thermal_receipt",
+        "inventory_icon": "aa_ui_kebab_coupon"
+      }
+    }
+  ],
+  "external_item_references": [
+    {
+      "item_id": "beer_absinthium_taproom",
+      "display_name": "Absinthe Lager",
+      "owner": "design/items/brewery_tour/beer_absinthium_taproom_item.md",
+      "linked_location": "debaucheryville_brewery_absinthium_taproom_01",
+      "rule": "Not sold or granted by the Arcade. The Arcade provides only the entrance to the Taproom."
+    },
+    {
+      "item_id": "opener_absinthium_taproom",
+      "display_name": "Absinthium Taproom Bottle Opener",
+      "owner": "design/items/brewery_tour/opener_absinthium_taproom_item.md",
+      "linked_location": "debaucheryville_brewery_absinthium_taproom_01",
+      "rule": "Destination-owned reward; never place it in the Arcade's prize stock."
+    },
+    {
+      "item_id": "stamp_absinthium_taproom",
+      "display_name": "The Absinthium Seal",
+      "owner": "design/items/brewery_tour/stamp_absinthium_taproom_item.md",
+      "linked_location": "debaucheryville_brewery_absinthium_taproom_01",
+      "rule": "Destination-owned brewery-tour progression."
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "arcade_maintenance_restroom_access",
+      "source_interaction": "broken_ddr_restroom_unlock",
+      "cost": {
+        "item_id": "item_absinthe_arcade_token",
+        "quantity": 3
+      },
+      "effect": "permanently_unlock_debaucheryville_arcade_maintenance_closet_01"
+    },
+    {
+      "reward_id": "absinthium_taproom_discovery",
+      "source_interaction": "absinthium_taproom_curtain",
+      "effect": "reveal_transition_only_destination_owns_access_and_rewards"
+    },
+    {
+      "reward_id": "arcade_focus",
+      "source": "win_any_twisted_arcade_game",
+      "effect": "plus_one_timing_window_for_next_arcade_game",
+      "duration_minutes": 10
+    }
+  ],
+  "shop_economics": {
+    "design_intent": "A transparent tourist-trap money sink that remains funny and optional outside explicit quest interactions.",
+    "base_exchange": "1 Kebab Coin equals 5 Absinthe Arcade Tokens",
+    "machine_costs": {
+      "standard_cabinet": 1,
+      "claw_machine": 2,
+      "restroom_unlock_total": 3
+    },
+    "balance_rule": "Do not require random repeated spending for the relic once the service-note strategy has been discovered."
+  }
+}
