@@ -1,0 +1,350 @@
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "events": [
+    {
+      "event_id": "absinthe_arcade_first_entry",
+      "display_name": "Good Games, Bad Decisions",
+      "event_type": "location_intro",
+      "trigger": {
+        "type": "location_entry",
+        "condition": "first_visit"
+      },
+      "sequence": [
+        {
+          "phase": "threshold_reveal",
+          "camera_focus": "aa_node_bottle_bar",
+          "description": "Camera moves from the stained-glass threshold to the monumental bottle bar, then catches the cabinet loop and the darker north wing."
+        },
+        {
+          "phase": "tourist_trap_read",
+          "camera_focus": "aa_node_token_exchange",
+          "description": "The token price board and TOKENS HERE arrow become readable before control returns."
+        },
+        {
+          "phase": "npc_hook",
+          "condition": "backpack_girl_present",
+          "camera_focus": "debaucheryville_npc_backpack_girl_01",
+          "description": "Backpack Girl offers the rest of her kebab from her cabinet-side floor spot. Dialogue remains in her profile and Couchsurfing Chronicles."
+        }
+      ],
+      "post_event_effects": [
+        {
+          "effect": "set_state",
+          "state": "visited",
+          "value": true
+        }
+      ]
+    },
+    {
+      "event_id": "temporary_token_shaker_ban",
+      "display_name": "Aggressive Token Shaking",
+      "event_type": "failure_consequence",
+      "trigger": {
+        "type": "mini_game_failure",
+        "source": "rigged_absinthe_claw_machine",
+        "condition": "shake_meter_maxed"
+      },
+      "effects": [
+        {
+          "effect": "apply_location_state",
+          "state": "temporarily_banned",
+          "duration_minutes": 10
+        },
+        {
+          "effect": "disable_interaction_group",
+          "group": "token_arcade_machines"
+        }
+      ],
+      "note": "The player may remain inside, talk to NPCs and use discovered exits; only paid machines refuse service."
+    }
+  ],
+  "interactive_objects": [
+    {
+      "object_id": "token_exchange_machine",
+      "display_name": "Token Exchange",
+      "node_id": "aa_node_token_exchange",
+      "type": "shop_machine",
+      "interaction_text": "Buy overpriced tokens",
+      "economy": {
+        "input_currency": "kebab_coin",
+        "input_amount": 1,
+        "output_item": "item_absinthe_arcade_token",
+        "output_quantity": 5,
+        "price_comment": "The machine calls this an authentic conversion rate."
+      },
+      "states": [
+        "idle",
+        "accepting_payment",
+        "dispensing_tokens",
+        "temporarily_jammed"
+      ],
+      "effects": [
+        "increment_tokens_purchased",
+        "play_cash_register_too_happy"
+      ]
+    },
+    {
+      "object_id": "frogger_existential_edition",
+      "display_name": "Frogger: Existential Edition",
+      "node_id": "aa_node_main_cabinet_loop",
+      "type": "mini_game_cabinet",
+      "interaction_text": "Cross because you must",
+      "cost": {
+        "item": "item_absinthe_arcade_token",
+        "quantity": 1
+      },
+      "mechanics": {
+        "objective": "Navigate philosophical obstacles that pause to question the player's choices.",
+        "win_condition": "reach_the_other_side_before_existential_meter_fills",
+        "failure_condition": "accept_every_argument_and_stop_moving"
+      },
+      "reward": {
+        "type": "score_and_arcade_focus",
+        "item": null
+      }
+    },
+    {
+      "object_id": "street_fighter_identity_crisis",
+      "display_name": "Street Fighter: Identity Crisis",
+      "node_id": "aa_node_main_cabinet_loop",
+      "type": "mini_game_cabinet",
+      "interaction_text": "Select a fighter who is no longer sure",
+      "cost": {
+        "item": "item_absinthe_arcade_token",
+        "quantity": 1
+      },
+      "mechanics": {
+        "objective": "Land moves while the fighter questions and remaps inputs mid-combo.",
+        "win_condition": "complete_three_adaptive_combos",
+        "failure_condition": "identity_meter_reaches_zero"
+      },
+      "reward": {
+        "type": "score_and_dialogue_unlock",
+        "dialogue_set": "hacker_respects_adaptation"
+      }
+    },
+    {
+      "object_id": "kebab_kombat",
+      "display_name": "Kebab Kombat",
+      "node_id": "aa_node_main_cabinet_loop",
+      "type": "mini_game_cabinet",
+      "interaction_text": "Press REGRET",
+      "cost": {
+        "item": "item_absinthe_arcade_token",
+        "quantity": 1
+      },
+      "mechanics": {
+        "objective": "Time a single REGRET button to assemble and weaponize an increasingly unstable kebab.",
+        "input_count": 1,
+        "win_condition": "five_perfect_regrets",
+        "failure_condition": "sauce_integrity_reaches_zero"
+      },
+      "reward": {
+        "type": "score_and_consumable",
+        "item_id": "item_questionable_kebab_coupon"
+      }
+    },
+    {
+      "object_id": "rigged_absinthe_claw_machine",
+      "display_name": "Rigged Absinthe Arcade Claw Machine",
+      "node_id": "aa_node_claw_alcove",
+      "type": "quest_mini_game",
+      "interaction_text": "Attempt the impossible grab",
+      "cost": {
+        "item": "item_absinthe_arcade_token",
+        "quantity": 2
+      },
+      "mechanics": {
+        "objective": "Use the machine's predictable cabinet sway rather than aiming directly at the relic.",
+        "rigged_behavior": "claw_drops_early_and_drifts_right",
+        "strategy_source": "scratched_claw_service_note",
+        "success_method": "counter_swing_then_release_on_second_buzz",
+        "shake_meter": {
+          "max_value": 100,
+          "failure_state": "temporary_token_shaker_ban"
+        }
+      },
+      "reward": {
+        "item_id": "item_beer_pong_saint_relic",
+        "quantity": 1,
+        "unique": true,
+        "sets_state": "beer_pong_saint_relic_obtained"
+      },
+      "post_win_state": "relic_hook_empty_machine_dispenses_joke_prizes",
+      "quest_reference": "design/Quests/debaucheryville/nfthuntdebaucheryville.md"
+    },
+    {
+      "object_id": "scratched_claw_service_note",
+      "display_name": "Scratched Service Note",
+      "node_id": "aa_node_claw_alcove",
+      "type": "examinable_hint",
+      "interaction_text": "Read the scratched note",
+      "description": "A maintenance timing diagram has been scratched into the prize counter by someone who was banned before they could profit from it.",
+      "effect": {
+        "set_state": "claw_machine_strategy_discovered",
+        "value": true
+      }
+    },
+    {
+      "object_id": "broken_ddr_restroom_unlock",
+      "display_name": "Broken DDR Token Override",
+      "node_id": "aa_node_broken_ddr",
+      "type": "persistent_unlock",
+      "interaction_text": "Feed a token into the hacked dance machine",
+      "mechanics": {
+        "required_item": "item_absinthe_arcade_token",
+        "required_tokens": 3,
+        "tokens_are_inserted_one_at_a_time": true,
+        "visual_progress": "three_token_pips_fill_green",
+        "permanent_unlock": true,
+        "unlock_state": "arcade_maintenance_restroom_unlocked",
+        "unlocks_object": "maintenance_restroom_door"
+      },
+      "completion_effects": [
+        "play_dance_combo_maintenance_unlock",
+        "set_maintenance_indicator_green",
+        "enable_aa_node_restroom_transition"
+      ],
+      "destination_id": "debaucheryville_arcade_maintenance_closet_01",
+      "destination_design_file": "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md",
+      "boundary_note": "This interaction owns only the Arcade-side unlock. Restroom content begins after transition."
+    },
+    {
+      "object_id": "maintenance_restroom_door",
+      "display_name": "Maintenance Only Door",
+      "node_id": "aa_node_maintenance_door",
+      "type": "external_location_door",
+      "interaction_text_locked": "The latch is wired to the broken DDR machine",
+      "interaction_text_unlocked": "Enter the maintenance closet",
+      "requirements": {
+        "flag": "arcade_maintenance_restroom_unlocked"
+      },
+      "destination_id": "debaucheryville_arcade_maintenance_closet_01",
+      "transition_node": "aa_node_restroom_transition"
+    },
+    {
+      "object_id": "absinthium_taproom_curtain",
+      "display_name": "Glowing Green Velvet Curtain",
+      "node_id": "aa_node_taproom_curtain",
+      "type": "discoverable_external_location_door",
+      "interaction_text_hidden": "Inspect the vapor behind the cracked cabinet",
+      "interaction_text_discovered": "Peel back the green curtain",
+      "discovery": {
+        "active_hours": "20:00_to_04:00",
+        "visual_cues": [
+          "breathing_green_glow",
+          "vapor_under_curtain",
+          "brass_introspection_plaque"
+        ],
+        "sets_state": "absinthium_taproom_entrance_discovered"
+      },
+      "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
+      "destination_design_file": "design/World Design/Debaucheryville/the_absinthium_taproom.md",
+      "transition_node": "aa_node_taproom_transition",
+      "destination_owns_access_checks": true,
+      "boundary_note": "The Arcade owns the curtain and discovery. The Taproom owns its interior, opener checks, mirror maze, NPCs, enemies and rewards."
+    },
+    {
+      "object_id": "mirror_shadow_puzzle",
+      "display_name": "The Reflection That Arrives Early",
+      "node_id": "aa_node_mirror_corridor",
+      "type": "exploration_puzzle",
+      "interaction_text": "Follow the reflection that moves first",
+      "mechanics": {
+        "objective": "Activate three shadow switches in the order shown by delayed afterimages.",
+        "switch_count": 3,
+        "motion_reduction_variant": "static_offset_afterimages_with_numbered_floor_pixels",
+        "success_state": "mirror_shadow_secret_solved"
+      },
+      "reward": {
+        "item_id": "item_broken_symbol_game_boy",
+        "quantity": 1,
+        "sets_state": "broken_game_boy_found"
+      }
+    },
+    {
+      "object_id": "club_flyer_panel",
+      "display_name": "Overcrowded Flyer Panel",
+      "node_id": "aa_node_entry_vestibule",
+      "type": "quest_placement",
+      "interaction_text": "Post the Velvet Curtain Club flyer",
+      "requirements": {
+        "quest": "club_flyers",
+        "item": "item_dj_beatdrop_club_flyer",
+        "state_not_set": "club_flyer_placed"
+      },
+      "effects": [
+        "set_club_flyer_placed",
+        "trigger_arcade_employee_publisher_reaction"
+      ],
+      "dialogue_authority": "design/Quests/debaucheryville/club_flyers.md"
+    },
+    {
+      "object_id": "backpack_girl_couchsurf_hook",
+      "display_name": "Backpack Girl Who Never Left",
+      "node_id": "aa_node_token_exchange",
+      "type": "npc_quest_binding",
+      "interaction_text": "Accept the rest of her kebab",
+      "npc_id": "debaucheryville_npc_backpack_girl_01",
+      "schedule": "14:00_to_22:00_default_22:00_to_04:00_arcade_or_hostel",
+      "quest_authorities": [
+        "design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md",
+        "design/Quests/debaucheryville/nothingisgettingthrough.md"
+      ],
+      "profile_authority": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/backpack_girl_who_never_left.md",
+      "state_bindings": [
+        "backpack_girl_met",
+        "backpack_girl_refused_while_infected",
+        "backpack_girl_couchsurf_completed",
+        "ballad_of_the_bros_obtained"
+      ],
+      "dialogue_ownership": "external_reference_only"
+    },
+    {
+      "object_id": "bidet_bar_stool",
+      "display_name": "The Least Desirable Seat",
+      "node_id": "aa_node_bottle_bar",
+      "type": "examinable",
+      "interaction_text": "Inspect the improvised stool",
+      "description": "A porcelain bidet has been bolted to a brass bar-stool base. The menu insists it is reclaimed European seating.",
+      "effect": "play_single_polite_arcade_chime"
+    },
+    {
+      "object_id": "fake_vip_wayfinding",
+      "display_name": "VIP This Way",
+      "node_id": "aa_node_bottle_bar",
+      "type": "examinable",
+      "interaction_text": "Follow the VIP arrows",
+      "description": "Three arrows form a loop and return to the public side of the same bar.",
+      "quest_reference": "design/Quests/debaucheryville/vip_wristbands.md",
+      "design_rule": "There is no real VIP section."
+    }
+  ],
+  "return_visit_changes": {
+    "after_relic_obtained": {
+      "claw_machine_state": "empty_relic_hook_and_joke_prizes",
+      "arcade_employee_dialogue_set": "you_actually_won_that"
+    },
+    "after_restroom_unlock": {
+      "maintenance_indicator": "green",
+      "ddr_token_pips": "three_lit",
+      "door_interaction": "direct_transition"
+    },
+    "after_taproom_discovery": {
+      "curtain_highlight": "subtle_after_20_00",
+      "wayfinding_sign": "bar_arrow_flickers_toward_north_wing"
+    },
+    "after_couchsurf": {
+      "backpack_girl_dialogue_set": "archive_callbacks",
+      "floor_nest_detail": "new_ballad_page_visible"
+    }
+  },
+  "narrator_commentary": {
+    "on_entering": "Absinthe Arcade: where childhood nostalgia came to Europe, found itself, and immediately began charging admission.",
+    "on_token_purchase": "The exchange rate had the confidence of a central bank and the oversight of a vending machine.",
+    "on_claw_near_miss": "The claw had discovered free will at the exact moment it became expensive.",
+    "on_restroom_unlock": "Three tokens later, modern sanitation had technically been achieved.",
+    "on_taproom_discovery": "Behind the curtain waited either enlightenment or another cover charge.",
+    "on_fake_vip_loop": "The VIP section was the friends they overpaid along the way."
+  }
+}
