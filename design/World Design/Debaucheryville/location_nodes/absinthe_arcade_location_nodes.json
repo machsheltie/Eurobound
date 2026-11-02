@@ -3,8 +3,38 @@
     {
       "id": "debaucheryville_clocktower_arcade_01",
       "name": "Absinthe Arcade",
+      "tag_id": "absinthe_arcade",
+      "region": "Debaucheryville",
       "world": "debaucheryville",
       "zone": "clocktower_plaza_side_street",
+      "exterior": {
+        "description": "A dignified four-storey Prague-inspired limestone and plaster building carrying a monumental Green Fairy mural, the Headphone Gentleman keystone, green and purple retrofit conduit, a black pixel-neon marquee, stained-glass doors, a street cabinet and wet-cobble props.",
+        "entry_condition": "Always accessible through the main stained-glass entrance from the Clocktower Plaza side street."
+      },
+      "interior": {
+        "theme": "A grand historic amusement hall made commercially ridiculous by an absinthe-and-arcade retrofit",
+        "features": [
+          "entry_point: aa_node_entry_vestibule",
+          "shop_node: aa_node_token_exchange",
+          "quest_npc: debaucheryville_npc_backpack_girl_01",
+          "central_landmark: aa_node_bottle_bar",
+          "mini_game_gallery: aa_node_main_cabinet_loop",
+          "quest_interaction: aa_node_claw_alcove",
+          "exploration_puzzle: aa_node_mirror_corridor",
+          "hidden_path_hub: aa_node_north_wing",
+          "external_transition: debaucheryville_brewery_absinthium_taproom_01",
+          "external_transition: debaucheryville_arcade_maintenance_closet_01"
+        ]
+      },
+      "functions": [
+        "Token exchange and twisted arcade mini-games",
+        "Beer Pong Saint Relic acquisition through the rigged claw machine",
+        "Backpack Girl couchsurf and Ballad of the Bros quest origin",
+        "Broken handheld cross-city clue acquisition",
+        "Club flyer placement and fake VIP wristband callback",
+        "Arcade-side discovery and transition to The Absinthium Taproom",
+        "Three-token permanent unlock and transition to the Claw Machine Maintenance Closet Restroom"
+      ],
       "layout_type": "central_hall_loop_with_l_shaped_north_wing",
       "orientation": {
         "south": "main_entrance_and_clocktower_plaza_side_street",
@@ -238,7 +268,7 @@
       ]
     }
   ],
-  "node_connections": [
+  "internal_node_connections": [
     {
       "from": "aa_node_exterior_approach",
       "to": "aa_node_entry_vestibule",
@@ -324,6 +354,56 @@
       "connection_type": "external_transition"
     }
   ],
+  "node_connections": {
+    "absinthe_arcade": {
+      "connects_to": [
+        {
+          "destination": "debaucheryville_clocktower_plaza_01",
+          "direction": "south",
+          "distance": "immediate_side_street",
+          "transition_type": "normal",
+          "source_node": "aa_node_entry_vestibule"
+        },
+        {
+          "destination": "debaucheryville_brewery_absinthium_taproom_01",
+          "direction": "northwest_recess",
+          "distance": "inside_north_wing",
+          "transition_type": "hidden_external_location",
+          "source_node": "aa_node_taproom_curtain",
+          "requirements": "discover_after_20_00_destination_checks_own_brewery_credentials"
+        },
+        {
+          "destination": "debaucheryville_arcade_maintenance_closet_01",
+          "direction": "northeast_service_recess",
+          "distance": "inside_north_wing",
+          "transition_type": "unlockable_external_location",
+          "source_node": "aa_node_maintenance_door",
+          "requirements": "insert_3_absinthe_arcade_tokens_once"
+        }
+      ],
+      "quest_connections": [
+        {
+          "quest_id": "couchsurfing_chronicles_debaucheryville",
+          "role": "backpack_girl_origin"
+        },
+        {
+          "quest_id": "debaucheryville_nft_hunt",
+          "role": "beer_pong_saint_relic_location"
+        },
+        {
+          "quest_id": "brewery_tour_debaucheryville",
+          "role": "absinthium_taproom_gateway"
+        },
+        {
+          "quest_id": "club_flyers",
+          "role": "flyer_placement_location"
+        }
+      ],
+      "legacy_location_ids": [
+        "debaucheryville_nightlife_absinthe_arcade_01"
+      ]
+    }
+  },
   "feature_details": {
     "central_landmark_rule": "The bottle bar must remain the strongest interior mass and should be visible from the vestibule, token exchange, cabinet loop and start of the north wing.",
     "hidden_entrance_separation": {

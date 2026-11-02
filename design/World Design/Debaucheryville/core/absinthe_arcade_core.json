@@ -1,5 +1,8 @@
 {
   "location_id": "debaucheryville_clocktower_arcade_01",
+  "legacy_location_ids": [
+    "debaucheryville_nightlife_absinthe_arcade_01"
+  ],
   "display_name": "Absinthe Arcade",
   "satirical_subtitle": "Lose Your Mind One Token at a Time",
   "world": "debaucheryville",
