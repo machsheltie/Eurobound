@@ -448,3 +448,14 @@ Open question: should it, and to what depth?
   (numbering on the decisions-page image). DDR dance-off: 2 tokens per song, 0-30 tickets by
   score, and **the real songs are licensed** (not sound-alikes); budget for master and
   publishing licences per track.
+- **(Review round, 2026-11-09)** Approved: Croc Monsieur's "The Bill Will Find You" and
+  270 Vratislav's "The Other Two-Seventy" finishers; "Still or Sparkling, Monsieur?"
+  (Confused) and "Where Do You See Yourself in Five Lanes?" (Embarrassed); Count Continue's
+  INSUFFICIENT CREDITS rule; the per-villain ticket payouts; the 13-prize Prize Redemption
+  catalogue with its prices and effects.
+- **Real names (author, verbatim): "The only thing that never gets the real name is
+  locations. ALL other things get their real names."** Real brands, products, games, songs
+  and titles keep their real names in game text and art; only locations get parody names.
+  The pizza-arcade plush is the **Chuck E. Cheese Plush**.
+- **Interior depth curve:** characters shrink from full size at the front of the bar to about
+  68% at the hall's back wall.
