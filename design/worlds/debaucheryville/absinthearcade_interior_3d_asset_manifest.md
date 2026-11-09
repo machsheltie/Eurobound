@@ -1,6 +1,8 @@
 # Absinthe Arcade Interior — 3D Asset Manifest
 
-> **Status: DRAFT, 2026-11-09.** The asset list awaits author confirmation on the decisions page. Items marked **PROPOSED** are agent proposals, not rulings.
+> **Status: asset list APPROVED by the author 2026-11-09.** Items still marked **PROPOSED** are agent proposals, not rulings.
+>
+> **Build method ruled 2026-11-09: projection.** The approved paintings are projected onto graybox geometry from a fixed camera per room (built by session eurobound-46: commits 702ba33, 80b49fa). Room faces are not repainted orthographically, so section A below is superseded by the projected plates. **No people are painted into room art**; every person is a movable NPC sprite. Hall source plates: `references/Interior/concepts/aa_interior_hall_v8_clean_{night,day}.png` (v8 with the four painted patrons removed). Bros are sized to the furniture (counter at waist height). North wing v4 approved. The mirror corridor is its own screen; the hall exit toward it is open with the author (A/B/C on the decisions page). The DDR dance-off is a playable rhythm mini-game (the player picks one bro, the other two are AI), so `aa_prop_ddr_danceoff_pads` + screen move from set dressing to an interactive asset. Battle cabinets: two in the back row, one on the right wall.
 
 **Purpose:** production manifest for the Arcade interior kit. Built from `design/templates/3D_Asset_Manifest_Template.md`. That template and `design/style_guides/3d_asset_rules.md` still describe the retired Unity/Tripo kit. This manifest follows the Godot 4.7 painted-box method the exterior uses (`Assets/Graphics/worlds/debaucheryville/absinthearcade/absinthearcade_exterior/hd2d_asset_manifest.md`), and keeps the template's section order.
 
@@ -135,9 +137,8 @@ PNG, lossless, mipmaps on, filter linear. Faces into `game/assets/worlds/debauch
 Generate → `register_to.py` → `night_glow.py` → `finalize_faces.py` / `finalize_props.py` → copy into `game/assets/...` → assemble `absinthe_arcade_interior_hd2d.tscn`.
 
 ## Open items for the author
-1. Confirm this asset list (decisions page).
-2. Where the three battle cabinets stand in v8.
-3. North wing v4: approve or revise.
-4. Mirror corridor: placement and whether it is its own screen.
-5. Whether the three-pad DDR dance-off is playable or set dressing.
-6. Cabinet battle states depend on the villain rulings (CONTINUE, line-ups).
+1. Hall exit toward the mirror corridor (A under the mural / B west door / C east doors).
+2. Which cabinet numbers are Frogger, Street Fighter and Kebab Kombat (proposed 2 / 4 / 6).
+3. DDR dance-off: real songs vs sound-alikes; token cost and ticket payout.
+4. Prize Redemption catalogue and ticket prices (draft in progress).
+5. New assets from rulings: hero-cabinet marquee repaints with the real titles, a Kebab Kombat ladder indicator, `aa_prop_prize_tickets` (ticket strip + counter display), and the mirror-corridor screen's own painting.
