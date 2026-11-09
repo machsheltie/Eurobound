@@ -4,16 +4,19 @@
 
 > ⚠ AUTHOR-REVIEW: the encounter's existence is author-dictated (standing ruling 2026-11-02:
 > each Arcade cabinet releases 2–3 game-inspired villain types that fight through the existing
-> battle system). This villain, its name, moves, dialogue, drops and every number below are a
-> Claude draft for author approval. Every number block is **PROPOSED — needs author ruling**.
+> battle system). Author rulings 2026-11-09: the wallet steal (Buy the Dip), the untargetable
+> dive, stats, XP, drops, items, achievement and the lady-frog background gag are **Approved
+> 2026-11-09**. Existential Crisis is replaced with Embarrassed, the SOVS payout is replaced with
+> arcade tickets, and the soggy-pile refund rule is restated; those three stay **PROPOSED — needs
+> author ruling** where marked.
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_sinking_fund_01`
 - **Display Name**: The Sinking Fund
 - **Tier**: Minor Villain
 - **Primary Location**: Absinthe Arcade, Debaucheryville (`aa_node_main_cabinet_loop`, released by the `frogger_existential_edition` cabinet)
-- **Associated Quest/Arc**: None. Triggered by the cabinet interaction `frogger_existential_edition` (1 token; per-cabinet cost still open with the author).
-- **Encounter Type**: Optional, Repeatable (token-triggered). Role: **the support.** Buffs allies, drains the party's wallet, inflicts Existential Crisis, and dives out of reach.
+- **Associated Quest/Arc**: None. Triggered by the cabinet interaction `frogger_existential_edition` (2 Absinthe Arcade Tokens per play = 2 SOVS; ruled 2026-11-09).
+- **Encounter Type**: Optional, Repeatable (token-triggered). Role: **the support.** Buffs allies, drains the party's wallet, inflicts Embarrassed, and dives out of reach.
 
 ---
 
@@ -97,7 +100,7 @@ question they ask about your choices is an onboarding question, and every answer
 is a yes.
 
 ### Pre-Battle Dialogue
-*Token drops. The cabinet's river band spills over the bezel as green mist. Three turtles paddle out in a perfect row and line up in front of the bros like a panel interview.*
+*Two tokens drop. The cabinet's river band spills over the bezel as green mist. Three turtles paddle out in a perfect row and line up in front of the bros like a panel interview.*
 > **The Sinking Fund** (left): "Gentlemen. Thanks for coming in."
 > **The Sinking Fund** (middle): "Before we carry you across, a few quick questions."
 > **The Sinking Fund** (right): "Where do you see yourselves in five lanes?"
@@ -113,7 +116,7 @@ is a yes.
 | Fight start | "Your capital is at risk. So is your face. Shall we begin?" |
 | Below 50% HP | "We're not *losing*. We're consolidating. Into fewer, smaller turtles." |
 | Big-move telegraph | "No more bets, gentlemen. Please keep your arms and wallets inside the turtle." |
-| Bro gets KO'd / status lands | *(Existential Crisis lands)* "Take your time. Is crossing really your passion? Or is it just what your dad did?" / *(Tourist Trap Victim lands)* "Congratulations, you're now a Platinum Client. Fees go up, obviously." |
+| Bro gets KO'd / status lands | *(Embarrassed lands)* "Wonderful. We'll put 'shirtless' down as your exit strategy." / *(Tourist Trap Victim lands)* "Congratulations, you're now a Platinum Client. Fees go up, obviously." |
 | Chadwick buys in again | "Love the conviction." / "This is why we call you a long-term holder. You can't get off." |
 | Lord Pilsner uses any social move | *(On a log scrolling across the background, a pixel lady frog drifts by. Pilsner winks at her. She hops onto the next log with a younger frog in a backward cap.)* **Lord Pilsner**: "She's playing it cool. That's how you know." |
 
@@ -129,7 +132,7 @@ never acknowledges previous clients. Chadwick treats every relaunch as "getting 
 
 ## ⚔️ Combat Specification
 
-### Core Stats — **PROPOSED — needs author ruling**
+### Core Stats — **Approved 2026-11-09**
 Calibrated against Feral Segway Tourist (28 HP / Off 6 / Def 3 / Spd 6 / Luck 2 / 12 XP / 8 gold).
 The Fund is a support unit: tougher and luckier than a grunt, weak offense.
 
@@ -144,25 +147,25 @@ The Fund is a support unit: tougher and luckier than a grunt, weak offense.
 | **Luck** | 6 | The house's luck. |
 | **Grit** | 3 | Not in engine schema. |
 
-**Engine-shape proposal** (matches the fields in `game/assets/data/enemies/debaucheryville_enemies.json`; not written to that file):
+**Engine-shape proposal** (matches the fields in `game/assets/data/enemies/debaucheryville_enemies.json`; not written to that file). `gold_reward` is 0 because arcade fights pay tickets, not SOVS (ruling 2026-11-09); the ticket payout needs its own field (**PROPOSED**):
 ```json
 "sinking_fund": {
   "display_name": "The Sinking Fund",
   "battle_intro": "The Sinking Fund surfaces with an exciting opportunity!",
   "max_hp": 30, "offense": 4, "defense": 6, "speed": 5, "luck": 6,
-  "xp_reward": 12, "gold_reward": 2,
+  "xp_reward": 12, "gold_reward": 0,
   "item_drop": "shell_company_business_card", "drop_chance": 1.0
 }
 ```
 
-### Move List (data-driven weighted-random AI) — **weights and SOVS values PROPOSED — needs author ruling**
+### Move List (data-driven weighted-random AI) — **weights and SOVS values Approved 2026-11-09** (changed move marked PROPOSED)
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
 |------|------|--------|------------------|--------------------|--------------|
 | Hedge the Shells | Buff, AoE ally | All enemies +2 Defense for 2 turns. The turtles fan out around their co-investors. | — | 30% / at least one ally alive; otherwise reweights to Buy the Dip | No |
-| Buy the Dip | Gimmick, Social | Targets one bro with a pitch. Takes 5 SOVS from the party wallet; 25% chance of Tourist Trap Victim on that bro. Battle log: "Chadwick buys the dip. The dip is the river." Against Chadwick this always lands. He insists. | Tourist Trap Victim | 30% / always | No |
-| Where Do You See Yourself in Five Lanes? | Social | Existential Crisis on one bro (2 turns; cured by Snap Out of It). Battle log: "Bradley questions his life choices. He reviews every one of them. They all check out. Turn over." | Existential Crisis | 25% / round > 1, never on a bro already in crisis | No |
+| Buy the Dip | Gimmick, Social | Targets one bro with a pitch. Takes 5 SOVS from the party wallet; 25% chance of Tourist Trap Victim on that bro. Battle log: "Chadwick buys the dip. The dip is the river." Against Chadwick this always lands. He insists. (Wallet steal **Approved 2026-11-09**; the only wallet-stealing villain in the Arcade.) | Tourist Trap Victim | 30% / always | No |
+| Where Do You See Yourself in Five Lanes? | Social | **PROPOSED — author approved replacing it; wording/numbers need author ruling.** Embarrassed on one bro (−20% ATK, −2 BP/turn, Ultimates & Taunt locked; 2 turns). The panel asks the intake question; the bro answers it standing up, at full volume, flexing. Battle log: "Bradley answers 'Swole. On the other side. Shirtless.' He flexes for the panel. The panel writes it down slowly. Bradley reads the silence as a standing ovation and flexes harder. Bradley is Embarrassed." | Embarrassed | 25% / round > 1, never on a bro already Embarrassed | No |
 | Quarterly Dividend | Physical | A flipper slap delivered with a printed statement. Light damage. | — | 15% / always | No |
-| **Past Performance Is No Guarantee** | Gimmick, AoE | Telegraph turn: the red flash and ticker. Next turn all three dive. The Fund can't be targeted for 1 round, every other enemy gets +2 Speed, and on surfacing it runs Buy the Dip on all three bros at once, plus light water damage as the shells drop out from under them. | Tourist Trap Victim (25% each) | Once per fight / HP < 60% | **Yes — shells flash red three times in order; ticker reads "PERFORMANCE MAY GO DOWN AS WELL AS UNDER."** |
+| **Past Performance Is No Guarantee** | Gimmick, AoE | Telegraph turn: the red flash and ticker. Next turn all three dive. The Fund can't be targeted for 1 round (untargetable dive **Approved 2026-11-09**), every other enemy gets +2 Speed, and on surfacing it runs Buy the Dip on all three bros at once, plus light water damage as the shells drop out from under them. | Tourist Trap Victim (25% each) | Once per fight / HP < 60% | **Yes — shells flash red three times in order; ticker reads "PERFORMANCE MAY GO DOWN AS WELL AS UNDER."** |
 
 ### Phases (Minor Villain: 1)
 | Phase | Trigger | Behavior Change |
@@ -173,7 +176,7 @@ The Fund is a support unit: tougher and luckier than a grunt, weak offense.
 
 ### Buffs & Debuffs They Use
 - **Self/ally buffs**: +Defense via Hedge the Shells; +Speed to allies during the dive.
-- **Debuffs on the party**: Existential Crisis, Tourist Trap Victim (both master list). Tourist
+- **Debuffs on the party**: Embarrassed, Tourist Trap Victim (both master list). Tourist
   Trap Victim persisting after battle (2× shop prices until a hotel rest or three new areas) is
   intended: the Fund's clients overpay for the rest of the night.
 
@@ -197,7 +200,7 @@ no frog. The Fund fights from the river band. Ambient background gag (no mechani
 recurring character): a pixel lady frog rides a passing log during the fight, and when Lord
 Pilsner uses a social move she hops onto the next log with a younger frog in a backward cap.
 
-**Cabinet roster (PROPOSED — needs author ruling):**
+**Cabinet roster (weighted random table, structure ruled 2026-11-09; weights Approved 2026-11-09):**
 | Release | Composition | Weight |
 |---------|-------------|--------|
 | Traffic | 2× Hit-and-Ponder Hatchback | 40% |
@@ -205,21 +208,24 @@ Pilsner uses a social move she hops onto the next log with a younger frog in a b
 | River and Home Bay | The Sinking Fund + Croc Monsieur | 15% |
 | Full Crossing | 1× Hit-and-Ponder Hatchback + The Sinking Fund + Croc Monsieur (after first cabinet win) | 10% |
 
-**Proposed gimmick (NEEDS AUTHOR RULING):** SOVS taken by Buy the Dip come back on victory in a
-"soggy pile," minus a 20% management fee. If the bros lose, the money stays in the fund.
+**Soggy-pile refund (PROPOSED, needs author ruling):** SOVS taken by Buy the Dip come back on
+victory in a "soggy pile," minus a 20% management fee. If the bros lose or flee, the money stays
+in the fund. This is stolen wallet money partly coming back, not a fight payout: the fight
+itself pays tickets (see Rewards).
 
 ---
 
-## 💰 Rewards — **PROPOSED — needs author ruling**
+## 💰 Rewards — **Approved 2026-11-09** (ticket amount and refund rule PROPOSED)
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **SOVS** | 2 SOVS, plus 80% of anything Buy the Dip took | Net SOVS from this fight can come out negative. That's the point. |
+| **Tickets** | 8 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
+| **Soggy pile** | 80% of the SOVS Buy the Dip took, returned on victory | **PROPOSED, needs author ruling.** Stolen money partly coming back, not a payout. Net SOVS from this fight can come out negative. That's the point. |
 | **Clout (XP)** | 12 | |
-| **Guaranteed drop** | **Shell Company Business Card** (PROPOSED new item) | Junk/sell item, vendor value 4 SOVS. "Registered at an address that turns out to be a fax machine in a turtle." |
-| **Rare drop** | **Diamond Flippers** (PROPOSED new item), 5% | Accessory: +2 Defense, −1 Speed. "You can't sell if you can't let go. You can't let go." (Nods to the canon "DIAMOND HANDS FOREVER!" epilogue line without reusing it.) |
+| **Guaranteed drop** | **Shell Company Business Card** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 4 SOVS. "Registered at an address that turns out to be a fax machine in a turtle." |
+| **Rare drop** | **Diamond Flippers** (new item, Approved 2026-11-09), 5% | Accessory: +2 Defense, −1 Speed. "You can't sell if you can't let go. You can't let go." (Nods to the canon "DIAMOND HANDS FOREVER!" epilogue line without reusing it.) |
 | **Unlocks** | Bros' initials on the cabinet's high-score table (flavor only) | Same BRO / CHA / ASS entries as the rest of the roster. |
-| **Achievement** | **Fully Diluted** | Public: "Defeated The Sinking Fund." Hidden: "Chadwick bought in eleven times during the fight. He calls it dollar-cost averaging." |
+| **Achievement** | **Fully Diluted** (Approved 2026-11-09) | Public: "Defeated The Sinking Fund." Hidden: "Chadwick bought in eleven times during the fight. He calls it dollar-cost averaging." |
 
 ---
 
@@ -229,7 +235,7 @@ Pilsner uses a social move she hops onto the next log with a younger frog in a b
 | Hit-and-Ponder Hatchback | Shares the cabinet. Delivers the Fund its clients, pre-softened. |
 | Croc Monsieur | Shares the cabinet. The Fund manages his tips. He has never seen a statement. |
 | Arcade Employee (`debaucheryville_npc_arcade_employee_01`) | Fishes the soggy SOVS out of the cabinet's drip tray after every fight. Keeps the management fee. |
-| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the token that releases it. 1 SOV = 1 token. |
+| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release it. 1 SOVS = 1 token; Frogger: Existential Edition takes 2. |
 
 ---
 
@@ -238,19 +244,19 @@ Pilsner uses a social move she hops onto the next log with a younger frog in a b
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ (repo grep 2026-11-02: no hits for name, moves or drops; avoided existing "Find the Lady," "Long Con," "RugPullInu," "Three Card Monty") |
 | Racket grounded in the city's satirized culture/underbelly | ✅ |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (PROPOSED numbers) |
-| Statuses from master list only (or author-approved new ones) | ✅ Existential Crisis, Tourist Trap Victim |
-| All prices/drops in SOVS | ✅ |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; Embarrassed move, tickets and refund rule PROPOSED) |
+| Statuses from master list only (or author-approved new ones) | ✅ Embarrassed, Tourist Trap Victim |
+| All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ Every question becomes a yes |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ Never scam-aware either |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ⬜ Pending |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (wallet steal, untargetable dive, stats, drops, items, achievement, lady-frog gag), except PROPOSED: Where Do You See Yourself in Five Lanes? (Embarrassed), ticket amount, soggy-pile refund |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Drafted (awaiting author ruling)
+- **Status**: Approved 2026-11-09 (PROPOSED items above awaiting author ruling)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md`
 - **Registered In**: not yet registered. Proposed key `sinking_fund` in `game/assets/data/enemies/debaucheryville_enemies.json` after author approval.
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_sinking_fund.png`, four states)
@@ -259,6 +265,7 @@ Pilsner uses a social move she hops onto the next log with a younger frog in a b
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-02 | Initial profile (draft, per cabinet-battle ruling 2026-11-02) | Claude (agent draft for author review) |
+| 2026-11-09 | Applied author rulings: Existential Crisis replaced with Embarrassed (PROPOSED); SOVS payout replaced with tickets (PROPOSED); soggy-pile refund kept as PROPOSED; cabinet cost 2 tokens; roster structure ruled; wallet steal, dive, stats, drops, items, lady-frog gag Approved | Claude (per author rulings 2026-11-09) |
 
 ---
 

@@ -3,9 +3,10 @@
 *"Garlic or chili. That was not a question."*
 
 > ⚠ AUTHOR-REVIEW: The cabinets-release-villains ruling (2026-11-02) is canon. This villain's
-> name, moves, dialogue, stats, drops and encounter placement are a Claude draft. Every number
-> block is **PROPOSED — needs author ruling**. Every mechanic outside the master status list is
-> flagged **NEEDS AUTHOR RULING**.
+> name, moves, dialogue, stats, drops and encounter placement were a Claude draft. Author
+> rulings 2026-11-09: stats, XP, drops, the new item, the achievement, the fixed resetting
+> ladder and the MYSTERY BROWN palette-spawn roll are **Approved 2026-11-09**. The SOVS payout is
+> replaced with arcade tickets; the ticket amount is **PROPOSED — needs author ruling**.
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_condiment_clan_ninja_01`
@@ -13,7 +14,7 @@
 - **Tier**: Minor Villain (cabinet grunt)
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), node `aa_node_main_cabinet_loop`, released by the Kebab Kombat cabinet (`kebab_kombat`), Debaucheryville
 - **Associated Quest/Arc**: None. Optional, token-triggered cabinet content.
-- **Encounter Type**: Repeatable (token-triggered), Optional
+- **Encounter Type**: Repeatable (token-triggered; Kebab Kombat costs 4 Absinthe Arcade Tokens per play = 4 SOVS, ruled 2026-11-09), Optional
 
 ---
 
@@ -65,7 +66,7 @@ Three bros who think they're fighting an elite ninja order are actually fighting
 **The Upsell in a Hood**: The Clan has one belief: every customer wants both sauces and does not know it yet. They are not cruel. They are thorough. They talk in clipped, deadpan counter-speak, like a night-shift kebab worker running on four hours of sleep and a vendetta, and they treat combat as a slightly longer version of taking an order. They know they are palette swaps and they are proud of it. Consistency is a brand.
 
 ### Pre-Battle Dialogue
-*Trigger: a bro inserts a token and presses REGRET. The screen flashes CHOOSE YOUR SAUCE, then two ninjas climb out.*
+*Trigger: a bro feeds the cabinet four tokens and presses REGRET. The screen flashes CHOOSE YOUR SAUCE, then two ninjas climb out.*
 > **GARLIC**: "Garlic or chili."
 > **CHILI**: "That was not a question."
 > **Lord Pilsner**: "Both. I was born ordering both."
@@ -104,7 +105,7 @@ They dissolve back into the screen, which immediately shows them bouncing on the
 
 ## ⚔️ Combat Specification
 
-> **PROPOSED — needs author ruling.** All values below are first-pass, calibrated against the only shipped Debaucheryville enemy (Feral Segway Tourist: HP 28 / Off 6 / Def 3 / Spd 6 / Luck 2 / XP 12 / 8 SOVS). The Clan is a grunt and sits in that band, faster and more fragile.
+> **Approved 2026-11-09.** All values below are calibrated against the only shipped Debaucheryville enemy (Feral Segway Tourist: HP 28 / Off 6 / Def 3 / Spd 6 / Luck 2 / XP 12 / 8 SOVS). The Clan is a grunt and sits in that band, faster and more fragile.
 
 ### Core Stats (Garlic and Chili share one block; Mystery Brown noted)
 | Stat | Value | Notes |
@@ -156,31 +157,31 @@ None of its own. The Clan *are* the adds for Count Continue and Shish Kahn encou
 ### Arena & Gimmick
 **Arena: The Grease Pit.** This is the cabinet's stage background, rendered as the battle backdrop: a sunken pit lined with upright rotating skewers, a foil-sheet horizon, one buzzing sodium parking-lot lamp (the actual 1994 digitization site), and a heat-lamp orange sky. Background only, no hazard proposed.
 
-**Encounter placement (shared Kebab Kombat proposal, NEEDS AUTHOR RULING):** The token-triggered fight works like the cabinet's fighting-game ladder. Each token plays the next rung:
+**Encounter placement (shared Kebab Kombat ladder; fixed resetting ladder ruled 2026-11-09):** The token-triggered fight works like the cabinet's fighting-game ladder. Each play (4 tokens) runs the next rung:
 | Rung | Name | Roster |
 |------|------|--------|
 | KK-1 | Sauce Rung | 2 × Condiment Clan Ninja (GARLIC + CHILI) |
 | KK-2 | Continue Rung | 2 × Condiment Clan Ninja + Count Continue |
 | KK-3 | Spit Rung | Shish Kahn + Count Continue |
-The ladder resets after KK-3 is won. On a party wipe the bros are spat out of the cabinet onto the arcade carpet, the token is gone, and the rung resets to KK-1. Ladder persistence, the wipe result and the rung order all need an author ruling. A flat "every token = random roster" alternative is equally valid.
+The ladder resets after KK-3 is won. On a party wipe the bros are spat out of the cabinet onto the arcade carpet, the tokens are gone, and the rung resets to KK-1.
 
-**Secret palette (NEEDS AUTHOR RULING):** In any rung, each Clan ninja slot has a **PROPOSED 5%** chance to spawn as MYSTERY BROWN instead. This parodies the secret hidden ninja of 90s gore fighters. Existing spawn tech may not support per-slot variant rolls; flag for engine.
+**Secret palette (palette-spawn roll Approved 2026-11-09):** In any rung, each Clan ninja slot has a 5% chance to spawn as MYSTERY BROWN instead. This parodies the secret hidden ninja of 90s gore fighters. Existing spawn tech may not support per-slot variant rolls; flag for engine.
 
 ---
 
 ## 💰 Rewards
 
-> **PROPOSED — needs author ruling.** Note the token economics: a cabinet play costs 1 token = 1 SOV (the per-cabinet cost is still open). Any SOVS drop above 1 per encounter makes the cabinet a farm. Drops here are deliberately tiny, and Count Continue's wallet drain pulls the net below zero on KK-2/KK-3.
+> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**). Token economics: a Kebab Kombat play costs 4 tokens = 4 SOVS (ruled 2026-11-09). Fights pay arcade tickets, not SOVS, and Count Continue's paid continues pull the bros' SOVS further down on KK-2/KK-3.
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **SOVS** | 1 SOV per ninja (Mystery Brown: 2) | PROPOSED |
-| **Clout (XP)** | 10 per ninja (Mystery Brown: 18) | PROPOSED; just under Feral Segway Tourist's 12 |
+| **Tickets** | 5 arcade tickets per ninja (Mystery Brown: 10) | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar |
+| **Clout (XP)** | 10 per ninja (Mystery Brown: 18) | Just under Feral Segway Tourist's 12 |
 | **Guaranteed drop** | None | The squeeze bottles go back in the cabinet. They are inventory |
-| **Common drop** | `lukewarm_kebab` (existing engine item), 25% | PROPOSED rate; reuses the existing Debaucheryville drop, no new item |
-| **Rare drop** | **Squeeze-Bottle Kunai**, 10% (Mystery Brown: 35%) | **PROPOSED NEW ITEM.** Battle consumable: thrown at one enemy for light damage plus a 50% chance of Grease Fingers. Description: *"A ninja's squeeze bottle, sharpened at the nozzle. Contains garlic, chili, or a third thing. The label was the first casualty."* |
-| **Unlocks** | Nothing on its own. Clears ladder rung KK-1 (if the ladder proposal is approved) | |
-| **Achievement** | **Same Guy, Different Sauce**. Public: *"Defeat a Condiment Clan Ninja in all three palettes."* Hidden truth: *"It was the same man all three times. He was paid once, in 1994, in sauce."* | PROPOSED |
+| **Common drop** | `lukewarm_kebab` (existing engine item), 25% | Reuses the existing Debaucheryville drop, no new item |
+| **Rare drop** | **Squeeze-Bottle Kunai**, 10% (Mystery Brown: 35%) | **New item, Approved 2026-11-09.** Battle consumable: thrown at one enemy for light damage plus a 50% chance of Grease Fingers. Description: *"A ninja's squeeze bottle, sharpened at the nozzle. Contains garlic, chili, or a third thing. The label was the first casualty."* |
+| **Unlocks** | Nothing on its own. Clears ladder rung KK-1 | |
+| **Achievement** | **Same Guy, Different Sauce**. Public: *"Defeat a Condiment Clan Ninja in all three palettes."* Hidden truth: *"It was the same man all three times. He was paid once, in 1994, in sauce."* | Approved 2026-11-09 |
 
 ---
 
@@ -199,20 +200,20 @@ The ladder resets after KK-3 is won. On a party wipe the bros are spat out of th
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Grepped `design/`, `game/assets/data/`, `docs/` for every villain, move, item and achievement name: zero collisions |
 | Racket grounded in the city's satirized culture/underbelly | ✅ 3 a.m. kebab sauce upsell plus tourist-trap cabinet cost-cutting |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (numbers PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
 | Statuses from master list only (or author-approved new ones) | ✅ Embarrassed, Sloppy, Grease Fingers, Food Poisoning, Hardcore Gamer; Stun as used in the Combat Bible |
-| All prices/drops in SOVS | ✅ |
+| All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ⬜ Pending: stats, drops, new item, ladder, secret-palette spawn roll |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, drops, new item, achievement, ladder, secret-palette spawn roll), except PROPOSED: ticket amount |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Drafted
-- **Canon Level**: Provisional (the existence of cabinet villains is Established, per the author ruling of 2026-11-02; this roster is Provisional)
+- **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
+- **Canon Level**: Approved (the existence of cabinet villains is Established, per the author ruling of 2026-11-02; this roster was approved 2026-11-09, ticket amount PROPOSED)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/condiment_clan_ninja.md`
 - **Registered In**: Not yet. Target `game/assets/data/enemies/debaucheryville_enemies.json` after author approval
 - **Sprite Sheet**: Not yet specced (proposed `kk_condiment_clan_ninja.png`, 1 sheet + 3 palettes)
@@ -221,3 +222,4 @@ The ladder resets after KK-3 is won. On a party wipe the bros are spat out of th
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-02 | Initial profile (Kebab Kombat cabinet villain roster, per author ruling 2026-11-02) | Claude draft for machsheltie |
+| 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 4 tokens; fixed resetting ladder ruled; palette-spawn roll, stats, drops, item, achievement Approved | Claude (per author rulings 2026-11-09) |

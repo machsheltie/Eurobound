@@ -3,9 +3,10 @@
 *"Every night ends with me. You have simply arrived early."*
 
 > ⚠ AUTHOR-REVIEW: The cabinets-release-villains ruling (2026-11-02) is canon. This villain's
-> name, moves, dialogue, stats, drops and encounter placement are a Claude draft. Every number
-> block is **PROPOSED — needs author ruling**. Moving the cabinet's existing coupon reward onto
-> this villain is flagged **NEEDS AUTHOR RULING**.
+> name, moves, dialogue, stats, drops and encounter placement were a Claude draft. Author
+> rulings 2026-11-09: stats, XP, drops (including moving the coupon onto his defeat), the new
+> item, the achievement and the fixed resetting ladder are **Approved 2026-11-09**. The SOVS
+> payout is replaced with arcade tickets; the ticket amount is **PROPOSED — needs author ruling**.
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_shish_kahn_01`
@@ -13,7 +14,7 @@
 - **Tier**: Minor Villain (cabinet heavy; the Kebab Kombat sub-boss)
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), node `aa_node_main_cabinet_loop`, released by the Kebab Kombat cabinet (`kebab_kombat`), Debaucheryville
 - **Associated Quest/Arc**: None. Optional, token-triggered cabinet content.
-- **Encounter Type**: Repeatable (token-triggered), Optional
+- **Encounter Type**: Repeatable (token-triggered; Kebab Kombat costs 4 Absinthe Arcade Tokens per play = 4 SOVS, ruled 2026-11-09), Optional
 
 ---
 
@@ -24,7 +25,7 @@ Shish Kahn is the kebab Kebab Kombat has been building. Every press of the REGRE
 
 He was digitized, like the rest of the roster, from a man in a foil-and-flatbread costume, photographed under a single sodium lamp in a parking lot. Two of the arms are real. The other two are held on with skewers. Nobody has ever been told which.
 
-The racket is the loop. Beat him and the cabinet prints the **One Regret-Free Kebab Coupon**: 20% off at a participating kebab vendor. That sends the bros out to buy another kebab, which builds another cone, which is why they come back with another token. The cabinet is a kebab-shop affiliate deal with fists.
+The racket is the loop. Beat him and the cabinet prints the **One Regret-Free Kebab Coupon**: 20% off at a participating kebab vendor. That sends the bros out to buy another kebab, which builds another cone, which is why they come back with another four tokens. The cabinet is a kebab-shop affiliate deal with fists.
 
 ### What Bros Believe
 - **Lord Pilsner** has found a worthy opponent and announces they will eat him afterward, "as is the warrior's way." He always orders the local specialty. Tonight the local specialty has four arms and is punching him.
@@ -113,7 +114,7 @@ Back on the attract screen as a silhouette the moment the fight ends. He returns
 
 ## ⚔️ Combat Specification
 
-> **PROPOSED — needs author ruling.** First-pass values. Shish Kahn is the heavy: roughly 2.5× Feral Segway Tourist HP, the strongest single hits on the Kombat stage, the slowest Speed. Kept inside Minor Villain range. It's a token fight, not a city boss.
+> **Approved 2026-11-09.** Shish Kahn is the heavy: roughly 2.5× Feral Segway Tourist HP, the strongest single hits on the Kombat stage, the slowest Speed. Kept inside Minor Villain range. It's a token fight, not a city boss.
 
 ### Core Stats
 | Stat | Value | Notes |
@@ -160,25 +161,25 @@ Back on the attract screen as a silhouette the moment the fight ends. He returns
 ### Adds / Minions (If Any)
 | Minion | Count | Role | Notes |
 |--------|-------|------|-------|
-| Count Continue | 1 (KK-3) | Support | Cues Kebality with "FINISH HIM!"; can CONTINUE? Kahn back at 50% HP with one arm missing if the Count outlives him (PROPOSED; see `count_continue.md`) |
+| Count Continue | 1 (KK-3) | Support | Cues Kebality with "FINISH HIM!"; can CONTINUE? Kahn back at 50% HP with one arm missing if the Count outlives him (Approved 2026-11-09; see `count_continue.md`) |
 
 ### Arena & Gimmick
-The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the description and the shared ladder proposal). In this fight the heat lamp and the stage floor are the main readable elements; the dropped foil arm stays on the floor as a prop from Phase 2. No arena hazard proposed.
+The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the description and the fixed resetting ladder, ruled 2026-11-09). In this fight the heat lamp and the stage floor are the main readable elements; the dropped foil arm stays on the floor as a prop from Phase 2. No arena hazard proposed.
 
 ---
 
 ## 💰 Rewards
 
-> **PROPOSED — needs author ruling.**
+> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**).
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **SOVS** | 3 | PROPOSED. With Count Continue in the fight, the encounter usually nets the bros nothing or a loss |
-| **Clout (XP)** | 30 | PROPOSED |
-| **Guaranteed drop** | `item_questionable_kebab_coupon` (**One Regret-Free Kebab Coupon**, existing Arcade item) | **NEEDS AUTHOR RULING.** The item currently drops from the retired mini-game's `five_perfect_regrets` win condition (`absinthe_arcade_items.json`, `absinthe_arcade_interactions.json`). This proposes moving it onto Shish Kahn's defeat. Item itself unchanged: 20% off at a participating kebab vendor, max stack 5. Package JSONs not edited |
-| **Rare drop** | **Fourth Arm (Foil-Wrapped)**, 5% | **PROPOSED NEW ITEM.** Battle consumable: thrown at all enemies for light damage, 25% Grease Fingers on each. Description: *"One of Shish Kahn's arms. Nobody knows if it's one of the real ones. Lord Pilsner has named it and will not be taking questions."* |
-| **Unlocks** | Clears ladder rung KK-3 and resets the ladder (if the ladder proposal is approved) | |
-| **Achievement** | **Flawless Digestion**. Public: *"Defeat Shish Kahn without any bro getting Food Poisoning."* Hidden truth: *"The bros spent the coupon within the hour. Food Poisoning arrived at 4:12 a.m., in one hostel bathroom, all three at once. The achievement does not check."* | PROPOSED |
+| **Tickets** | 20 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. With Count Continue charging continues in the same fight, the bros' SOVS still usually come out down |
+| **Clout (XP)** | 30 | |
+| **Guaranteed drop** | `item_questionable_kebab_coupon` (**One Regret-Free Kebab Coupon**, existing Arcade item) | **Approved 2026-11-09.** Moved off the retired mini-game's `five_perfect_regrets` win condition (`absinthe_arcade_items.json`, `absinthe_arcade_interactions.json`) onto Shish Kahn's defeat. Item itself unchanged: 20% off at a participating kebab vendor, max stack 5. Package JSONs not edited yet |
+| **Rare drop** | **Fourth Arm (Foil-Wrapped)**, 5% | **New item, Approved 2026-11-09.** Battle consumable: thrown at all enemies for light damage, 25% Grease Fingers on each. Description: *"One of Shish Kahn's arms. Nobody knows if it's one of the real ones. Lord Pilsner has named it and will not be taking questions."* |
+| **Unlocks** | Clears ladder rung KK-3 and resets the ladder | |
+| **Achievement** | **Flawless Digestion**. Public: *"Defeat Shish Kahn without any bro getting Food Poisoning."* Hidden truth: *"The bros spent the coupon within the hour. Food Poisoning arrived at 4:12 a.m., in one hostel bathroom, all three at once. The achievement does not check."* | Approved 2026-11-09 |
 
 ---
 
@@ -196,20 +197,20 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Grepped `design/`, `game/assets/data/`, `docs/`: zero collisions for villain, move, item and achievement names |
 | Racket grounded in the city's satirized culture/underbelly | ✅ 3 a.m. kebab as every night's last stop; coupon-affiliate loop |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (numbers PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
 | Statuses from master list only (or author-approved new ones) | ✅ Grease Fingers, Sloppy, Food Poisoning, Hardcore Gamer; Stun as used in the Combat Bible |
-| All prices/drops in SOVS | ✅ |
+| All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ They want to eat him |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ⬜ Pending: stats, drops, new item, coupon relocation, ladder |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, drops, new item, coupon relocation, achievement, ladder), except PROPOSED: ticket amount |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Drafted
-- **Canon Level**: Provisional
+- **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
+- **Canon Level**: Approved, with PROPOSED exceptions
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/shish_kahn.md`
 - **Registered In**: Not yet. Target `game/assets/data/enemies/debaucheryville_enemies.json` after author approval
 - **Sprite Sheet**: Not yet specced (proposed `kk_shish_kahn.png`)
@@ -218,3 +219,4 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-02 | Initial profile (Kebab Kombat cabinet villain roster, per author ruling 2026-11-02) | Claude draft for machsheltie |
+| 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 4 tokens; fixed resetting ladder ruled; stats, drops, coupon relocation, item, achievement Approved | Claude (per author rulings 2026-11-09) |

@@ -4,16 +4,19 @@
 
 > ⚠ AUTHOR-REVIEW: the encounter's existence is author-dictated (standing ruling 2026-11-02:
 > each Arcade cabinet releases 2–3 game-inspired villain types that fight through the existing
-> battle system). This villain, its name, moves, dialogue, drops and every number below are a
-> Claude draft for author approval. Every number block is **PROPOSED — needs author ruling**.
+> battle system). Author rulings 2026-11-09: the swallow, stats, XP, drops, items and achievement
+> are **Approved 2026-11-09**. The CONTINUE revive is struck from this villain (it lives only on
+> Count Continue). Its replacement, **The Bill Will Find You**, and the Confused move that
+> replaced Existential Crisis are **PROPOSED — author approved replacing it; wording/numbers need
+> author ruling**. The ticket payout amount is **PROPOSED — needs author ruling**.
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_croc_monsieur_01`
 - **Display Name**: Croc Monsieur
 - **Tier**: Minor Villain (the cabinet's heavy; the toughest thing in Frogger: Existential Edition)
 - **Primary Location**: Absinthe Arcade, Debaucheryville (`aa_node_main_cabinet_loop`, released by the `frogger_existential_edition` cabinet)
-- **Associated Quest/Arc**: None. Triggered by the cabinet interaction `frogger_existential_edition` (1 token; per-cabinet cost still open with the author).
-- **Encounter Type**: Optional, Repeatable (token-triggered). Role: **the heavy.** Slow, high HP, hits hard, removes a bro from the fight, and pays for its own continue out of the party's wallet.
+- **Associated Quest/Arc**: None. Triggered by the cabinet interaction `frogger_existential_edition` (2 Absinthe Arcade Tokens per play = 2 SOVS; ruled 2026-11-09).
+- **Encounter Type**: Optional, Repeatable (token-triggered). Role: **the heavy.** Slow, high HP, hits hard, removes a bro from the fight, and refuses to go down until the bill has been presented.
 
 ---
 
@@ -28,8 +31,9 @@ absinthe pairing, adds the service charge, adds the cover, adds the corkage on t
 poured himself, and asks every diner one last question before the jaws close: *is monsieur
 certain this is where he wanted to end up?* It is destination dining in the purest Debaucheryville
 sense: you came all this way, you're already seated, and the menu has no prices on it because
-the menu is the inside of a crocodile. When the bros knock him out, the cabinet flashes
-CONTINUE? and he puts the continue on their tab.
+the menu is the inside of a crocodile. When the bros finally knock him down, he does not fall.
+No guest leaves Croc Monsieur's table before the bill, and the bill is delivered by hand. His
+hand is a jaw.
 
 ### What Bros Believe
 - **Lord Pilsner** believes that, at long last, someone in this city has recognised him as
@@ -44,8 +48,9 @@ The bros spent the whole cabinet crossing toward "the other side." The other sid
 with a wine list, and they're delighted with it. He asks the destination question ("is this
 where you wanted to end up?") at the exact moment they've arrived somewhere that is eating them,
 and all three say yes and order the pairing. Targets: tourist-trap destination dining,
-service-charge and cover-fee upselling, the absinthe-ritual mark-up, the arcade "continue"
-economy, and men who confuse being flattered by a professional with being recognised.
+service-charge and cover-fee upselling, the absinthe-ritual mark-up, the bill that arrives
+after a meal nobody priced, and men who confuse being flattered by a professional with being
+recognised.
 
 ---
 
@@ -64,7 +69,7 @@ economy, and men who confuse being flattered by a professional with being recogn
   come through. White linen napkin draped over one claw at all times.
 - **Accessories**: Half-moon reading glasses on the end of his snout; a reservation book the
   size of a door; a pencil mustache drawn on in green marker; an absinthe fountain carried on
-  his back like a tray.
+  his back like a tray; a leather bill folder tucked under one arm, never opened until the end.
 - **The tell**: when he's about to seat someone, he licks one claw and turns a page in the
   reservation book.
 - His teeth are labelled like a wine rack. One tooth just says CORKAGE.
@@ -76,7 +81,8 @@ economy, and men who confuse being flattered by a professional with being recogn
   of the glass. One bay's green glow turns into an eye, the head slides out across the control
   deck, and the log-back follows for an uncomfortably long time.
 - **States**: idle / page-turn (telegraph for Your Table Is Ready) / jaws-wide (telegraph for
-  Table for Three) / digesting / CONTINUE countdown overlay.
+  Table for Three) / digesting / bill-presentation (The Bill Will Find You: he rises on the
+  log at 1 HP, napkin over the claw, bill folder held out in his jaws).
 - **Palette-swap budget**: none.
 - **Telegraph for Table for Three**: jaws open across the whole top of the playfield for a
   full turn. The reservation book flips to a page reading 3 — BROS — NO DIETARY REQUIREMENTS,
@@ -95,7 +101,7 @@ all of them with the same small bow. He doesn't want the bros dead. He wants the
 the table.
 
 ### Pre-Battle Dialogue
-*Token drops. The cabinet's five home bays glow at the top of the cracked screen. One of them blinks. It's an eye. A crocodile head in half-moon glasses slides out over the control deck, followed by a lot of log.*
+*Two tokens drop. The cabinet's five home bays glow at the top of the cracked screen. One of them blinks. It's an eye. A crocodile head in half-moon glasses slides out over the control deck, followed by a lot of log.*
 > **Croc Monsieur**: "Gentlemen. You made it across. Hardly anyone makes it across. Table for three?"
 > **Lord Pilsner**: "Finally. A man who knows how to address a Lord."
 > **Croc Monsieur**: "Of course, monsieur. And is monsieur certain this is where he wanted to end up?"
@@ -111,15 +117,19 @@ the table.
 | Fight start | "Please, don't stand. I'll come to you. I always come to you." |
 | Below 50% HP | "The kitchen is closing, gentlemen. I'm afraid that means you're the kitchen." |
 | Big-move telegraph | "Your table is ready. All three of you. Mind the step, it's a tongue." |
-| Bro gets KO'd / status lands | *(Sloppy lands)* "Excellent pairing. Monsieur has the palate of a much younger liver." / *(a bro comes back out after Your Table Is Ready)* "Monsieur has been returned to the kitchen. Twice. He'll be fine. I don't chew. Ask the bachelorettes." |
+| Bro gets KO'd / status lands | *(Sloppy lands)* "Excellent pairing. Monsieur has the palate of a much younger liver." / *(Confused lands)* "Monsieur will have both. Monsieur always has both." / *(a bro comes back out after Your Table Is Ready)* "Monsieur has been returned to the kitchen. Twice. He'll be fine. I don't chew. Ask the bachelorettes." |
 | Bradley asks for a protein option | "Monsieur *is* the protein option." |
 
 ### Defeat Dialogue
-*First knockdown: the cabinet freezes. CONTINUE? 9... 8... flashes over him. The party's wallet chimes.*
-> "Monsieur is very kind. I'll put the continue on your table."
+*First time his HP hits 0 (The Bill Will Find You, **PROPOSED**): he does not fall. He rises up on the log at 1 HP, drapes the napkin over his claw, and presents the leather bill folder in his jaws.*
+> **Croc Monsieur**: "Before monsieur goes. The bill."
+> *(the folder snaps shut on the bro who landed the blow)*
+> **Lord Pilsner** *(if it's him; reading it through the teeth)*: "Service charge, cover, corkage, swallowing. Very reasonable. Add thirty percent for the swallowing. And sign it *Lord*."
+> **Chadwick** *(if it's him)*: "Bro, he hand-delivered it. That's a white-glove experience. Ten out of ten."
+> **Bradley** *(if it's him)*: "He bit me with a receipt. That's the strongest receipt in the city."
 
 *Final defeat:*
-> "A wonderful evening. A wonderful table. The bill will find you. It always finds you." *(small bow; he slides back into the home bay, log first)*
+> "A wonderful evening. A wonderful table. The bill has found you. It always finds you." *(small bow; he slides back into the home bay, log first)*
 
 ### Post-Defeat Presence (If Any)
 Back in his home bay with every token. Between fights he can be seen in the cabinet's attract
@@ -131,62 +141,63 @@ strangers, as "my guy at the croc place."
 
 ## ⚔️ Combat Specification
 
-### Core Stats — **PROPOSED — needs author ruling**
+### Core Stats — **Approved 2026-11-09**
 Calibrated against Feral Segway Tourist (28 HP / Off 6 / Def 3 / Spd 6 / Luck 2 / 12 XP / 8 gold).
 The heavy sits about 1.8× that HP with a much lower Speed, so the bros get two or three actions
 for each of his.
 
 | Stat | Value | Notes |
 |------|-------|-------|
-| **HP** | 52 | Rolling meter applies. The CONTINUE gimmick (if ruled in) restores 30% once. |
+| **HP** | 52 | Rolling meter applies. The Bill Will Find You holds him at 1 HP for one extra action, once (**PROPOSED**). No revive. |
 | **SP** | N/A | Moves are weight-driven. |
 | **Offense** | 9 | |
 | **Defense** | 6 | Log-hide. |
 | **Speed** | 3 | Moves on the river's schedule. Even Lord Pilsner beats him. |
-| **Charm** | 5 | Not in engine schema. Drives The Pairing and Still or Sparkling Regret?. |
+| **Charm** | 5 | Not in engine schema. Drives The Pairing and Still or Sparkling, Monsieur?. |
 | **Luck** | 3 | |
 | **Grit** | 6 | Not in engine schema. High crit resist, except in his open mouth (see Weaknesses). |
 
-**Engine-shape proposal** (matches the fields in `game/assets/data/enemies/debaucheryville_enemies.json`; not written to that file):
+**Engine-shape proposal** (matches the fields in `game/assets/data/enemies/debaucheryville_enemies.json`; not written to that file). `gold_reward` is 0 because arcade fights pay tickets, not SOVS (ruling 2026-11-09); the ticket payout needs its own field (**PROPOSED**):
 ```json
 "croc_monsieur": {
   "display_name": "Croc Monsieur",
   "battle_intro": "Croc Monsieur has a table for you!",
   "max_hp": 52, "offense": 9, "defense": 6, "speed": 3, "luck": 3,
-  "xp_reward": 22, "gold_reward": 6,
+  "xp_reward": 22, "gold_reward": 0,
   "item_drop": "auto_gratuity_receipt", "drop_chance": 1.0
 }
 ```
 
-### Move List (data-driven weighted-random AI) — **weights PROPOSED — needs author ruling**
+### Move List (data-driven weighted-random AI) — **weights Approved 2026-11-09** (new/changed moves marked PROPOSED)
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
 |------|------|--------|------------------|--------------------|--------------|
 | Right This Way | Physical | One heavy bite, damage ×1.5. Battle log: "Croc Monsieur shows Bradley to his seat. The seat is teeth." | — | 35% / always | No |
-| Your Table Is Ready | Gimmick | Swallows one bro whole. That bro is out of the fight for 1 turn (can't act, can't be targeted), then gets spat back out with Grease Fingers for 3 turns: covered in croc, can't use tech items. Chadwick's phone does not work for the duration. He keeps trying. | Grease Fingers | 20% / never the same bro twice in a row | **Soft tell: licks a claw and turns a page in the reservation book the turn before.** |
+| Your Table Is Ready | Gimmick | Swallows one bro whole. That bro is out of the fight for 1 turn (can't act, can't be targeted), then gets spat back out with Grease Fingers for 3 turns: covered in croc, can't use tech items. Chadwick's phone does not work for the duration. He keeps trying. (Swallow/removal mechanic **Approved 2026-11-09**.) | Grease Fingers | 20% / never the same bro twice in a row | **Soft tell: licks a claw and turns a page in the reservation book the turn before.** |
 | The Pairing | Social | Pours from the absinthe fountain on his back into one bro. Sloppy for 2 turns (−3 Accuracy, 15% chance to hit allies). The bro thanks him every time. | Sloppy | 25% / always | No |
-| Still or Sparkling Regret? | Social | Existential Crisis on one bro (2 turns; cured by Snap Out of It). Battle log: "Lord Pilsner considers his regrets. He orders sparkling. He has none." | Existential Crisis | 20% / phase 2 only, never on a bro already in crisis | No |
+| Still or Sparkling, Monsieur? | Social | **PROPOSED — author approved replacing it; wording/numbers need author ruling.** Confused on one bro (random targeting, 2 turns). Battle log: "Croc Monsieur asks Lord Pilsner, still or sparkling? Lord Pilsner says 'Yes.' Both arrive. Lord Pilsner attacks whichever one is fizzing. It's Chadwick, who has been carbonated since the pregame." | Confused | 20% / phase 2 only, never on a bro already Confused | No |
 | **Table for Three** | AoE Physical | Telegraph turn: jaws wide across the top of the playfield. Next turn the jaws close on the whole party, heavy damage to all three (×1.4 each). Afterwards he is Digesting: skips his next action. | — | Every 4 rounds (every 3 in phase 2) | **Yes — jaws open for a full turn, book flips to "3 — BROS," candle lights on the tongue, "Your table is ready. All three of you."** |
+| **The Bill Will Find You** | Finisher (first-KO gimmick) | **PROPOSED — author approved replacing it; wording/numbers need author ruling.** The first time his HP hits 0, he stays up at 1 HP and takes one immediate extra action: the bill folder snaps shut on the bro who landed the knockdown for ×1.2 damage. That bro reads the bill out loud and signs it. No revive, no wallet change, no SOVS move: the total is battle-log flavor ("Service charge, cover, corkage, swallowing: 4 SOVS of service, 40 SOVS of charge"). Any hit after that ends him. If the knockdown comes from a party-wide move, the bill goes to Lord Pilsner, as head of the table. | — | Once per fight / first time HP hits 0 | **No windup; the bill-presentation pose plays as it resolves.** |
 
-### Phases (Minor Villain; 2 phases proposed because he's the cabinet's heavy)
+### Phases (Minor Villain; 2 phases because he's the cabinet's heavy)
 | Phase | Trigger | Behavior Change |
 |-------|---------|-----------------|
 | 1 | Fight start | Right This Way, The Pairing and Your Table Is Ready on weights; Table for Three on a 4-round clock. |
-| 2 | HP < 50% ("The kitchen is closing") | Adds Still or Sparkling Regret?; Table for Three clock drops to 3 rounds. |
-| CONTINUE | First time HP hits 0 | **NEEDS AUTHOR RULING.** The cabinet freezes on CONTINUE? 9... 8...; he revives at 30% HP (16) and the party wallet is charged 1 SOVS, logged as "CONTINUE (CROC MONSIEUR) — 1 SOVS." Once per fight. The bros never question it. Lord Pilsner: "Let the man continue. A gentleman always lets a rival continue." |
+| 2 | HP < 50% ("The kitchen is closing") | Adds Still or Sparkling, Monsieur?; Table for Three clock drops to 3 rounds. |
+| The Bill | First time HP hits 0 | **PROPOSED.** The Bill Will Find You fires (see move list). He stays at 1 HP until the next hit. The bros never question it. Lord Pilsner: "Let the man present the bill. A gentleman always lets a rival present the bill." |
 
 ### Buffs & Debuffs They Use
 - **Self/ally buffs**: none. He's front of house; he doesn't need help.
-- **Debuffs on the party**: Grease Fingers, Sloppy, Existential Crisis (all master list).
-  "Out of the fight for 1 turn" on Your Table Is Ready is a removal effect, not a status, and
-  needs a ruling (see flags).
+- **Debuffs on the party**: Grease Fingers, Sloppy, Confused (all master list).
+  "Out of the fight for 1 turn" on Your Table Is Ready is a removal effect, not a status
+  (**Approved 2026-11-09**).
 
 ### Immunities / Resistances / Weaknesses
 | Category | Detail |
 |----------|--------|
-| **Immune to** | Sloppy (he's been drinking his own pairing since the cabinet was installed); Existential Crisis ("Monsieur, I live in a home bay. I *am* the destination.") |
+| **Immune to** | Sloppy (he's been drinking his own pairing since the cabinet was installed); Confused ("Monsieur, I have never once lost track of a table. Or a tab.") |
 | **Resistant to** | Physical −25% while the jaws are shut. The back half is a log. |
 | **Weak against** | Anything that hits him while the jaws are open on the Table for Three telegraph turn: Defense halved and +50% crit chance, so SMAAAASH crits land on the tongue. Bradley especially: his Keg Smash into an open mouth is the only time the croc has ever been surprised by a guest. |
-| **Vulnerability window** | The Table for Three telegraph turn (jaws open), and his Digesting turn right after it. |
+| **Vulnerability window** | The Table for Three telegraph turn (jaws open), his Digesting turn right after it, and the 1 HP he spends standing at the table with the bill. |
 
 ### Adds / Minions (If Any)
 | Minion | Count | Role | Notes |
@@ -197,10 +208,9 @@ for each of his.
 The cabinet's psychedelic Frogger playfield (highway below, river above, home bays across the
 top, TIME bar along the bottom, three pixel bro-heads in the "lives" corner, no frog). Croc
 Monsieur fights from the home-bay row at the top of the screen, which on his telegraph turn
-becomes the inside of his mouth. The CONTINUE gimmick is the only fight gimmick proposed and
-needs author approval.
+becomes the inside of his mouth. The Bill Will Find You is his only fight gimmick (**PROPOSED**).
 
-**Cabinet roster (PROPOSED — needs author ruling):**
+**Cabinet roster (weighted random table, structure ruled 2026-11-09; weights Approved 2026-11-09):**
 | Release | Composition | Weight |
 |---------|-------------|--------|
 | Traffic | 2× Hit-and-Ponder Hatchback | 40% |
@@ -210,16 +220,16 @@ needs author approval.
 
 ---
 
-## 💰 Rewards — **PROPOSED — needs author ruling**
+## 💰 Rewards — **Approved 2026-11-09** (ticket amount and achievement text PROPOSED)
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **SOVS** | 6 SOVS (5 net, if he charged his continue) | |
+| **Tickets** | 15 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
 | **Clout (XP)** | 22 | |
-| **Guaranteed drop** | **Auto-Gratuity Receipt** (PROPOSED new item) | Junk/sell item, vendor value 1 SOVS. "18% service charge, added for your convenience. The service was you." |
-| **Rare drop** | **Pre-Chewed 1-Up** (PROPOSED new item), 8% | Consumable: revives one KO'd bro at 25% HP. "Gently used. Monsieur did not chew. Monsieur never chews." |
+| **Guaranteed drop** | **Auto-Gratuity Receipt** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 1 SOVS. "18% service charge, added for your convenience. The service was you." |
+| **Rare drop** | **Pre-Chewed 1-Up** (new item, Approved 2026-11-09), 8% | Consumable: revives one KO'd bro at 25% HP. "Gently used. Monsieur did not chew. Monsieur never chews." |
 | **Unlocks** | Bros' initials on the cabinet's high-score table (flavor only) | Same BRO / CHA / ASS entries as the rest of the roster. |
-| **Achievement** | **Dined and Dashed** | Public: "Left Croc Monsieur's table alive." Hidden: "You paid for his continue. He tipped himself out of it." |
+| **Achievement** | **Dined and Dashed** (name Approved 2026-11-09; hidden text **PROPOSED**) | Public: "Left Croc Monsieur's table alive." Hidden: "You didn't dash. Lord Pilsner signed the bill, added thirty percent for the swallowing, and asked to be seated by the window next time." |
 
 ---
 
@@ -229,36 +239,37 @@ needs author approval.
 | Hit-and-Ponder Hatchback | Shares the cabinet. Calls itself "front of house." He calls it "the car." |
 | The Sinking Fund | Shares the cabinet. Manages his tips. He has never received a statement and considers asking for one vulgar. |
 | Arcade Employee (`debaucheryville_npc_arcade_employee_01`) | Resets the cabinet after every fight. Has to wait for the log half to finish sliding back into the screen, which takes a while. |
-| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the token that releases him. 1 SOV = 1 token. The continue is billed separately. |
+| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release him. 1 SOVS = 1 token; Frogger: Existential Edition takes 2. Has never seen one of the croc's bills and has never asked to. |
 
 ---
 
 ## ✅ Validation Checklist
 | Requirement | Status |
 |-------------|--------|
-| Funny, unique name (checked against all existing names) | ✅ (repo grep 2026-11-02: no hits for name, moves or drops) |
+| Funny, unique name (checked against all existing names) | ✅ (repo grep 2026-11-02: no hits for name, moves or drops; new names "The Bill Will Find You" and "Still or Sparkling, Monsieur?" need a fresh grep before registration) |
 | Racket grounded in the city's satirized culture/underbelly | ✅ |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (PROPOSED numbers) |
-| Statuses from master list only (or author-approved new ones) | ✅ Grease Fingers, Sloppy, Existential Crisis; the 1-turn swallow is a removal effect flagged for ruling |
-| All prices/drops in SOVS | ✅ |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; new finisher, Confused move and tickets PROPOSED) |
+| Statuses from master list only (or author-approved new ones) | ✅ Grease Fingers, Sloppy, Confused; the 1-turn swallow is a removal effect (Approved 2026-11-09) |
+| All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
-| No moralizing, no reality-check function, no redemption arc | ✅ The destination question gets three yeses and an order |
+| No moralizing, no reality-check function, no redemption arc | ✅ The destination question gets three yeses and an order; the bill gets signed |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ⬜ Pending (CONTINUE gimmick, swallow removal, all numbers) |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09, except PROPOSED: The Bill Will Find You, Still or Sparkling, Monsieur?, ticket amount, achievement hidden text |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Drafted (awaiting author ruling)
+- **Status**: Approved 2026-11-09 (PROPOSED items above awaiting author ruling)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/croc_monsieur.md`
-- **Registered In**: not yet registered. Proposed key `croc_monsieur` in `game/assets/data/enemies/debaucheryville_enemies.json` after author approval.
+- **Registered In**: not yet registered. Proposed key `croc_monsieur` in `game/assets/data/enemies/debaucheryville_enemies.json`.
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_croc_monsieur.png`, five states)
 
 ## 📜 Revision History
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-02 | Initial profile (draft, per cabinet-battle ruling 2026-11-02) | Claude (agent draft for author review) |
+| 2026-11-09 | Applied author rulings: CONTINUE revive struck and replaced with The Bill Will Find You (PROPOSED); Existential Crisis replaced with Confused (Still or Sparkling, Monsieur?, PROPOSED); SOVS payout replaced with tickets (PROPOSED); cabinet cost 2 tokens; roster structure ruled; mechanics, stats, drops, items Approved | Claude (per author rulings 2026-11-09) |
 
 ---
 

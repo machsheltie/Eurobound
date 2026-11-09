@@ -4,15 +4,16 @@
 
 > ⚠ AUTHOR-REVIEW: the encounter's existence is author-dictated (standing ruling 2026-11-02:
 > each Arcade cabinet releases 2–3 game-inspired villain types that fight through the existing
-> battle system). This villain, its name, moves, dialogue, drops and every number below are a
-> Claude draft for author approval. Every number block is **PROPOSED — needs author ruling**.
+> battle system). Author rulings 2026-11-09: stats, XP, moves, the Hit and Ponder passive,
+> drops, items and achievement are **Approved 2026-11-09**. The SOVS payout is replaced with
+> arcade tickets; the ticket amount is **PROPOSED — needs author ruling**.
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_hit_and_ponder_hatchback_01`
 - **Display Name**: Hit-and-Ponder Hatchback
 - **Tier**: Minor Villain
 - **Primary Location**: Absinthe Arcade, Debaucheryville (`aa_node_main_cabinet_loop`, released by the `frogger_existential_edition` cabinet)
-- **Associated Quest/Arc**: None. Triggered by the cabinet interaction `frogger_existential_edition` (1 token; per-cabinet cost still open with the author).
+- **Associated Quest/Arc**: None. Triggered by the cabinet interaction `frogger_existential_edition` (2 Absinthe Arcade Tokens per play = 2 SOVS; ruled 2026-11-09).
 - **Encounter Type**: Optional, Repeatable (token-triggered). Role: **the grunt.** Lane traffic, usually released in pairs.
 
 ---
@@ -27,8 +28,8 @@ The Arcade sells Frogger: Existential Edition as "Frogger, but deep," and the Ha
 "deep." Its questions come off a laminated card of fridge-magnet profundities glued to the
 inside of its sun visor, and it reads them in the voice of a man who has just discovered
 podcasts. Every stag party in Debaucheryville plays this cabinet at 3 AM because a car asking
-you about your life choices is, to a man six absinthes deep, a spiritual experience worth one
-token. The Arcade has sold that spiritual experience four hundred times tonight.
+you about your life choices is, to a man six absinthes deep, a spiritual experience worth two
+tokens. The Arcade has sold that spiritual experience four hundred times tonight.
 
 ### What Bros Believe
 - **Bradley** thinks it is calling him out to a street race, and that he is winning it on foot.
@@ -89,7 +90,7 @@ wants to hit you at 60 km/h while you answer. It never apologises for a hit. It 
 aloud and at length, whether you deserved it, and always concludes that you did.
 
 ### Pre-Battle Dialogue
-*Token drops. The cabinet screen cracks down the middle. Green mist pours over the control deck. Headlights come on inside the glass, and a purple hatchback reverses out of the screen with its beeper going. It stops. It flashes its lights. A pixel hand waves from the driver's window.*
+*Two tokens drop. The cabinet screen cracks down the middle. Green mist pours over the control deck. Headlights come on inside the glass, and a purple hatchback reverses out of the screen with its beeper going. It stops. It flashes its lights. A pixel hand waves from the driver's window.*
 > **Hit-and-Ponder Hatchback**: "After you. No, really. After you."
 > **Lord Pilsner**: "Finally. Some respect for the crosswalk." *(holds out a 2-SOVS tip toward the window)*
 > **Hit-and-Ponder Hatchback**: "Quick question before you go. Is this the road you wanted to be on? At your age?"
@@ -120,7 +121,7 @@ redemption arc.
 
 ## ⚔️ Combat Specification
 
-### Core Stats — **PROPOSED — needs author ruling**
+### Core Stats — **Approved 2026-11-09**
 Calibrated against the only shipped Debaucheryville enemy, Feral Segway Tourist (28 HP / Off 6 /
 Def 3 / Spd 6 / Luck 2 / 12 XP / 8 gold). The Hatchback is a grunt released in pairs, so each car
 sits slightly under that line.
@@ -136,18 +137,18 @@ sits slightly under that line.
 | **Luck** | 3 | |
 | **Grit** | 2 | Not in engine schema. Low crit resist, so SMAAAASH crits wreck it. |
 
-**Engine-shape proposal** (matches the fields in `game/assets/data/enemies/debaucheryville_enemies.json`; not written to that file):
+**Engine-shape proposal** (matches the fields in `game/assets/data/enemies/debaucheryville_enemies.json`; not written to that file). `gold_reward` is 0 because arcade fights pay tickets, not SOVS (ruling 2026-11-09); the ticket payout needs its own field (**PROPOSED**):
 ```json
 "hit_and_ponder_hatchback": {
   "display_name": "Hit-and-Ponder Hatchback",
   "battle_intro": "A Hit-and-Ponder Hatchback waves you across. How thoughtful!",
   "max_hp": 22, "offense": 7, "defense": 3, "speed": 8, "luck": 3,
-  "xp_reward": 9, "gold_reward": 3,
+  "xp_reward": 9, "gold_reward": 0,
   "item_drop": "fuzzy_dice_of_doubt", "drop_chance": 1.0
 }
 ```
 
-### Move List (data-driven weighted-random AI) — **weights PROPOSED — needs author ruling**
+### Move List (data-driven weighted-random AI) — **weights Approved 2026-11-09**
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
 |------|------|--------|------------------|--------------------|--------------|
 | Courtesy Wave | Physical | Waves a bro across, then floors it. Damage ×1.3 against the bro it waved at. Battle log: "The Hatchback waves Chadwick across. Chadwick thanks it. The Hatchback does not brake." | — | 35% / always | No |
@@ -192,7 +193,7 @@ above, five home bays across the top, a TIME bar draining along the bottom, and 
 Livestrong-wristed fist). No frog appears anywhere on the screen. The cabinet's 1UP marker
 points at the party. Green mist rolls across the lanes.
 
-**Cabinet roster (PROPOSED — needs author ruling; encounter composition is a mechanic/economy call):**
+**Cabinet roster (weighted random table, structure ruled 2026-11-09; weights Approved 2026-11-09):**
 | Release | Composition | Weight |
 |---------|-------------|--------|
 | Traffic | 2× Hit-and-Ponder Hatchback | 40% |
@@ -205,16 +206,16 @@ background art only (see flags for the cabinet's old "existential meter").
 
 ---
 
-## 💰 Rewards — **PROPOSED — needs author ruling**
+## 💰 Rewards — **Approved 2026-11-09** (ticket amount PROPOSED)
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **SOVS** | 3 SOVS per car | The token costs 1 SOV, so every fight turns a profit. Kept low on purpose (see flags). |
+| **Tickets** | 5 arcade tickets per car | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
 | **Clout (XP)** | 9 per car | |
-| **Guaranteed drop** | **Fuzzy Dice of Doubt** (PROPOSED new item) | Junk/sell item, vendor value 2 SOVS. "Unloaded. They roll whatever you were already going to do." |
-| **Rare drop** | **Upside-Down Student Driver Magnet** (PROPOSED new item), 5% | Accessory: +1 Speed. "Warns other road users that you are learning. You are not learning." |
+| **Guaranteed drop** | **Fuzzy Dice of Doubt** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 2 SOVS. "Unloaded. They roll whatever you were already going to do." |
+| **Rare drop** | **Upside-Down Student Driver Magnet** (new item, Approved 2026-11-09), 5% | Accessory: +1 Speed. "Warns other road users that you are learning. You are not learning." |
 | **Unlocks** | Bros' initials on the cabinet's high-score table (flavor only) | Bradley enters BRO. Chadwick tries to enter his full handle, gets three letters and enters CHA, furious. Lord Pilsner enters ASS and believes it reads as a family crest. |
-| **Achievement** | **Jaywalker Emeritus** | Public: "Defeated a Hit-and-Ponder Hatchback on foot." Hidden: "The cabinet's difficulty dial is set to SENIOR." |
+| **Achievement** | **Jaywalker Emeritus** (Approved 2026-11-09) | Public: "Defeated a Hit-and-Ponder Hatchback on foot." Hidden: "The cabinet's difficulty dial is set to SENIOR." |
 
 ---
 
@@ -224,7 +225,7 @@ background art only (see flags for the cabinet's old "existential meter").
 | The Sinking Fund | Shares the cabinet. The Hatchback delivers pedestrians to the riverbank; the Fund handles them from there. |
 | Croc Monsieur | Shares the cabinet. The Hatchback calls itself "front of house." Croc Monsieur calls it "the car." |
 | Arcade Employee (`debaucheryville_npc_arcade_employee_01`) | Resets the cabinet after every fight, shoving the Hatchback back into the screen glass with a broom while it asks him if he's happy. He doesn't answer. |
-| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the token that releases it. 1 SOV = 1 token. |
+| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release it. 1 SOVS = 1 token; Frogger: Existential Edition takes 2. |
 
 ---
 
@@ -233,19 +234,19 @@ background art only (see flags for the cabinet's old "existential meter").
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ (repo grep 2026-11-02: no hits for name, moves or drops) |
 | Racket grounded in the city's satirized culture/underbelly | ✅ |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (PROPOSED numbers) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
 | Statuses from master list only (or author-approved new ones) | ✅ Embarrassed only |
-| All prices/drops in SOVS | ✅ |
+| All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ The questions never land |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ⬜ Pending |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09, except PROPOSED: ticket amount |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Drafted (awaiting author ruling)
+- **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/hit_and_ponder_hatchback.md`
 - **Registered In**: not yet registered. Proposed key `hit_and_ponder_hatchback` in `game/assets/data/enemies/debaucheryville_enemies.json` after author approval.
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_hit_and_ponder_hatchback.png`, with palette swap)
@@ -254,6 +255,7 @@ background art only (see flags for the cabinet's old "existential meter").
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-02 | Initial profile (draft, per cabinet-battle ruling 2026-11-02) | Claude (agent draft for author review) |
+| 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 2 tokens; roster structure ruled; stats, drops, items, achievement Approved | Claude (per author rulings 2026-11-09) |
 
 ---
 

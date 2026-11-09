@@ -8,7 +8,7 @@
 - **Tier**: Minor Villain
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), node `aa_node_main_cabinet_loop`, released by the Street Fighter: Identity Crisis cabinet (`street_fighter_identity_crisis`)
 - **Associated Quest/Arc**: None
-- **Encounter Type**: Optional, Repeatable (token-triggered, 1 Absinthe Arcade Token per release under the current spec; per-cabinet cost is still open with the author)
+- **Encounter Type**: Optional, Repeatable (token-triggered; Street Fighter: Identity Crisis costs 3 Absinthe Arcade Tokens per release = 3 SOVS, ruled 2026-11-09)
 - **Fight role**: **Swarmer.** Cheap, fast, multiple units. They're the fodder that the other two Identity Crisis villains bring along.
 
 ---
@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### The Racket
-The Identity Crisis cabinet runs a bootleg board. Somewhere inside it, a counterfeit circuit board has been rolling out the same karate man in a new colorway every few seconds since 1994. Each copy is fully convinced he's the original. That makes them Debaucheryville's counterfeit trade in fighter form, the same town that sells fake VIP wristbands and food-colored "authentic" absinthe. The Arcade charges a token to let them out. They work for nothing because they think the fighting *is* the pay. The house keeps the token, every time.
+The Identity Crisis cabinet runs a bootleg board. Somewhere inside it, a counterfeit circuit board has been rolling out the same karate man in a new colorway every few seconds since 1994. Each copy is fully convinced he's the original. That makes them Debaucheryville's counterfeit trade in fighter form, the same town that sells fake VIP wristbands and food-colored "authentic" absinthe. The Arcade charges three tokens to let them out. They work for nothing because they think the fighting *is* the pay. The house keeps the token, every time.
 
 ### What Bros Believe
 That the cabinet took one look at them, recognized three returning champions, and sent its best fighters out to defend its honor. Each Swap calls whoever it's fighting "Player One," and to the bros that settles it. The cabinet remembers them, and they're Player One.
@@ -57,7 +57,7 @@ The Swaps are interchangeable men, cut from the same template and dressed in dif
 **The Insistent Copy.** A counterfeit who's certain he's real. He wants to be acknowledged as the original, the one in the attract-mode demo, the face on the side art. He'll fight anyone to prove it, though he mostly argues with the other Swaps about it in the middle of a punch. He's funny because he's wrong in exactly the way the bros are wrong, and he defends it just as hard.
 
 ### Pre-Battle Dialogue
-*A token drops. The cabinet screen reads **2P HAS JOINED**. Two Swaps (three after a second release in the same visit) climb out of the glass:*
+*Three tokens drop. The cabinet screen reads **2P HAS JOINED**. Two Swaps (three after a second release in the same visit) climb out of the glass:*
 > TEAL SWAP: "Player One. Finally. I have been the original for nine years."
 > MUSTARD SWAP: "He is the copy. Look at his trousers. Now look at MY trousers."
 > CHADWICK: "Bro. They know us. The machine KNOWS us. We're Player One."
@@ -93,7 +93,7 @@ They go back into the cabinet and come out of the next token in new colors. They
 
 ## ⚔️ Combat Specification
 
-> **PROPOSED — needs author ruling.** Every number in this section (stats, multipliers, weights, durations) is a proposal. They're benchmarked against the only shipped Debaucheryville enemy, Feral Segway Tourist (HP 28 / OFF 6 / DEF 3 / SPD 6 / LCK 2 / 12 XP / 8 gold), and sized for a 2–3 unit swarm.
+> **Approved 2026-11-09.** Every number in this section (stats, multipliers, weights, durations) is approved. They're benchmarked against the only shipped Debaucheryville enemy, Feral Segway Tourist (HP 28 / OFF 6 / DEF 3 / SPD 6 / LCK 2 / 12 XP / 8 gold), and sized for a 2–3 unit swarm.
 
 ### Core Stats
 | Stat | Value | Notes |
@@ -115,9 +115,9 @@ Damage multipliers follow the PRD damage model (`ATK × SkillMult − DEF`).
 | **Same Punch, Different Trousers** | Physical | 1.0× single target. Battle log: "It is the same punch. It is in a different color." | — | 50% / always | No |
 | **Is This My Taunt or His?** | Social (Bravado attack) | Performs the "original's" taunt slightly wrong. Target bro −3 BP. | — | 25% / always | No |
 | **Hold Back to Block, Spiritually** | Gimmick (self-guard) | Halves damage taken by this Swap until its next turn | — | 25% / always (→ 10% when it is the last Swap alive) | No |
-| **Mirror Match Custody Dispute** | Physical (two-unit) | Two Swaps hit the same bro back to back, 1.25× each | — | Once every 3 rounds / **requires ≥2 Swaps alive** (**NEEDS AUTHOR RULING**: ally-count AI gate) | **Yes**: one round of the 1P-marker finger-pointing argument (see Sprite Notes) |
+| **Mirror Match Custody Dispute** | Physical (two-unit) | Two Swaps hit the same bro back to back, 1.25× each | — | Once every 3 rounds / **requires ≥2 Swaps alive** (ally-count AI gate **Approved 2026-11-09**) | **Yes**: one round of the 1P-marker finger-pointing argument (see Sprite Notes) |
 
-**Passive: I'm the Original Now.** When a Swap is KO'd, one surviving Swap gains **Gains Bro** (+20% ATK, 2 turns). Doesn't stack, and reapplying it refreshes the duration (master-list rule). **NEEDS AUTHOR RULING**: this uses an "ally KO'd" AI trigger. The documented gates are `hp<50%`, `target_has_status` and `round>2`.
+**Passive: I'm the Original Now.** When a Swap is KO'd, one surviving Swap gains **Gains Bro** (+20% ATK, 2 turns). Doesn't stack, and reapplying it refreshes the duration (master-list rule). It uses an "ally KO'd" AI trigger alongside the documented gates (`hp<50%`, `target_has_status`, `round>2`); the trigger is **Approved 2026-11-09**.
 
 ### Phases (Minor Villain: 1 phase)
 | Phase | Trigger | Behavior Change |
@@ -144,9 +144,9 @@ Damage multipliers follow the PRD damage model (`ATK × SkillMult − DEF`).
 ### Arena & Gimmick
 The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition swipes out of the cabinet screen into the standard psychedelic background, which here gets a CRT scanline overlay and a palette that cycles through the Swaps' colorways.
 
-**Cabinet-wide gimmick proposal: Second Thoughts (NEEDS AUTHOR RULING, it's a mechanic).** Each Identity Crisis villain's chosen move has a 20% chance to be re-rolled after it's announced. The log prints the first move name, then a correction ("Mustard Swap uses Same Punch, Different Trousers! ...No. He has decided it is his taunt."). This is the cabinet's "questions and remaps his own moves mid-combo" identity expressed in the battle system. **Fallback if ruled out**: the correction line is pure battle-log flavor, printed after the move that was actually rolled, with no re-roll mechanic.
+**Cabinet-wide gimmick: Second Thoughts (Approved 2026-11-09).** Each Identity Crisis villain's chosen move has a 20% chance to be re-rolled after it's announced. The log prints the first move name, then a correction ("Mustard Swap uses Same Punch, Different Trousers! ...No. He has decided it is his taunt."). This is the cabinet's "questions and remaps his own moves mid-combo" identity expressed in the battle system.
 
-**Encounter table proposal (NEEDS AUTHOR RULING: encounter/quest structure)**. One token releases one of these groups:
+**Encounter table (weighted random table; structure ruled 2026-11-09, weights Approved 2026-11-09)**. One play (3 tokens) releases one of these groups:
 | Roll | Group |
 |------|-------|
 | 50% | 2 Player Two Palette Swaps (3 if the party is above the Arcade's level band) |
@@ -159,17 +159,17 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 
 ## 💰 Rewards
 
-> **PROPOSED — needs author ruling.** All values and every new item below.
+> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**).
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **SOVS** | 0 SOVS | **Farming flag**: a token costs 1 SOV and the fight is repeatable. Any SOVS drop above 1 turns the cabinet into a money printer and contradicts the Arcade's money-sink role. Alternative if the author wants a payout: 1 SOV per Swap. The house always gets the token back |
-| **Clout (XP)** | 6 per Swap | A 2-Swap pull pays 12, matching one Feral Segway Tourist. **Farming flag**: Clout is also farmable at 1 SOV per fight, so the author may want a cap or taper (none is proposed here) |
+| **Tickets** | 4 arcade tickets per Swap | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09), so the cabinet can't print money. Redeemable at the Prize Redemption counter built into the bar |
+| **Clout (XP)** | 6 per Swap | A 2-Swap pull pays 12, matching one Feral Segway Tourist. Clout is farmable at 3 SOVS per play; no cap or taper is proposed |
 | **Guaranteed drop** | None | |
-| **Rare drop** | **Absinthe Arcade Token** (existing item `item_absinthe_arcade_token`), 15% | Your token back, occasionally. Lets an occasional fight run for free without making the cabinet profitable |
-| **Rare drop** | **Spare Player-Two Headband** (PROPOSED new item), 5% | Accessory. Proposed +1 Speed. Item card: "Fits anyone. That's the problem." Tails flutter in no wind at all. Needs a `permanent_item_template.md` / item doc if approved |
+| **Rare drop** | **Absinthe Arcade Token** (existing item `item_absinthe_arcade_token`), 15% | One of your three tokens back, occasionally. The house keeps the other two |
+| **Rare drop** | **Spare Player-Two Headband** (new item, Approved 2026-11-09), 5% | Accessory: +1 Speed. Item card: "Fits anyone. That's the problem." Tails flutter in no wind at all. Needs a `permanent_item_template.md` / item doc |
 | **Unlocks** | First win against any Identity Crisis villain fires the existing cabinet reward dialogue set `hacker_respects_adaptation` (Twitchy Hacker Types), reusing the package's current reward hook | |
-| **Achievement** | **Accept No Substitutes** (PROPOSED). *Public*: "Defeat three Player Two Palette Swaps in a single fight." *Hidden truth*: "All three were Dennis." | Callback to Pilsner's running name gag. It doesn't comment on the bros |
+| **Achievement** | **Accept No Substitutes** (Approved 2026-11-09). *Public*: "Defeat three Player Two Palette Swaps in a single fight." *Hidden truth*: "All three were Dennis." | Callback to Pilsner's running name gag. It doesn't comment on the bros |
 
 ---
 
@@ -179,7 +179,7 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 | Super Turbo Hyper Jarmila | She "rebalances" them between revisions and they take it as a promotion. She can't tell them apart either |
 | Two-Seventy Vratislav | They warm up on him in attract mode. He holds them. They tolerate it |
 | Arcade Employee (`debaucheryville_npc_arcade_employee_01`) | Uses the `cabinet_reset` remote to send them back in after a fight. They call him the Producer |
-| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the token that releases them and treats the beating as hospitality |
+| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the three tokens that release them and treats the beating as hospitality |
 | Twitchy Hacker Types | Know the board is a bootleg. Say nothing. Tip-funded |
 
 ---
@@ -189,20 +189,20 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Repo-grepped `design/`, `game/assets/data/`, `docs/`: villain, move, passive, item and achievement names have zero hits. ("Palette swap" appears only as an art-pipeline term.) Cross-check against the parallel Frogger / Kebab Kombat profiles is pending with the lead |
 | Racket grounded in the city's satirized culture/underbelly | ✅ Counterfeit / knockoff tourist trade, token money sink |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (PROPOSED numbers) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
 | Statuses from master list only (or author-approved new ones) | ✅ Gains Bro, Confused, Embarrassed; Distracted-style skip per PRD §6.8 |
-| All prices/drops in SOVS | ✅ |
+| All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ⬜ Pending: stats/rewards, ally-count AI gate, ally-KO trigger, Second Thoughts, encounter table, new item + achievement |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, ally-count AI gate, ally-KO trigger, Second Thoughts, encounter table, new item + achievement), except PROPOSED: ticket amount |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Drafted
-- **Canon level**: Provisional (pending author ruling)
+- **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
+- **Canon level**: Approved, with PROPOSED exceptions
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/player_two_palette_swap.md`
 - **Registered In**: Not yet. Target: `game/assets/data/enemies/debaucheryville_enemies.json` (as `player_two_palette_swap`) after author approval
 - **Sprite Sheet**: not yet specced
@@ -211,3 +211,4 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-02 | Initial profile (agent draft for author review, per the 2026-11-02 cabinets-are-battles ruling) | Claude (agent) |
+| 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 3 tokens; weighted encounter table ruled; AI triggers, Second Thoughts, stats, drops, item, achievement Approved | Claude (per author rulings 2026-11-09) |
