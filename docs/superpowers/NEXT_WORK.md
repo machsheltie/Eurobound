@@ -463,3 +463,8 @@ Open question: should it, and to what depth?
   The pizza-arcade plush is the **Chuck E. Cheese Plush**.
 - **Interior depth curve:** characters shrink from full size at the front of the bar to about
   68% at the hall's back wall.
+- **(Round v18, 2026-11-09)** Key-items format gains `ticket_price` and `effect`. The three
+  wearable prizes (Fangs for Nothing, Sixty-Minute Emerald, Two-Grand Tie-Dye Tee) live in
+  key items as cosmetic wearables until an equipment format exists. Brand sweep approved:
+  find every parody stand-in for a real brand/product/title, list it for the author, then
+  rename the approved ones to the real names (locations excluded).
