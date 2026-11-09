@@ -31,6 +31,7 @@ func _ready() -> void:
 		bro.feet_row_px = used.end.y - 1
 		bro.position = (spec[1] as Vector3) * WORLD_SCALE
 		bro.facing = spec[2]
+		bro.add_to_group("hall_actors")  # the hall's depth curve scales them
 		hall.add_child(bro)
 		bros.append(bro)
 	for with_bros in [false, true]:

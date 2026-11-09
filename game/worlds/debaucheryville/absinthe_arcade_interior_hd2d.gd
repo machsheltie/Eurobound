@@ -50,6 +50,14 @@ const NORTH_ARCH := {"x0": -0.35, "x1": 0.83, "height": 2.3, "depth": 4.5}
 const NORTH_EXIT_Z := -5.32
 const NORTH_EXIT_TARGET := "absinthe_arcade_mirror_corridor"
 
+## Depth curve (author ruling int_depth_scale): v8 paints its back row smaller than its floor
+## perspective explains, so sprites shrink toward the back wall. Full size at and in front of
+## DEPTH_FULL_Z, DEPTH_BACK_SCALE at the back wall, linear in between (painting units).
+## Every node in the "hall_actors" group (bros, NPCs) is scaled each frame.
+const DEPTH_FULL_Z := 2.0
+const DEPTH_BACK_SCALE := 0.68
+const ACTOR_GROUP := "hall_actors"
+
 ## Interaction anchors, painting units on the floor, from paint_px_to_floor.py on v8b's pixel boxes.
 ## They mark WHERE things are; the interaction system that uses them doesn't exist yet.
 ## id: [position (x, z), facing yaw in degrees (0 = the anchor faces +Z, toward the camera)]
@@ -104,6 +112,22 @@ func _ready() -> void:
 	_build_markers()
 	_build_lighting()
 	_apply_time_of_day()
+
+
+func _process(_delta: float) -> void:
+	if Engine.is_editor_hint():
+		return
+	for node in get_tree().get_nodes_in_group(ACTOR_GROUP):
+		var actor := node as Node3D
+		if actor != null and is_ancestor_of(actor):
+			var z_paint := to_local(actor.global_position).z / WORLD_SCALE
+			actor.scale = Vector3.ONE * depth_scale_at(z_paint)
+
+
+## Sprite scale for an actor standing at depth `z_paint` (painting units, -Z toward the back wall).
+static func depth_scale_at(z_paint: float) -> float:
+	var t := clampf((DEPTH_FULL_Z - z_paint) / (DEPTH_FULL_Z - BACK_WALL_Z), 0.0, 1.0)
+	return lerpf(1.0, DEPTH_BACK_SCALE, t)
 
 
 func _unhandled_input(event: InputEvent) -> void:
