@@ -1,0 +1,221 @@
+{
+  "location_id": "debaucheryville_shop_neon_chrome_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_shop_neon_chrome_01",
+      "name": "Neon & Chrome Boutique",
+      "tag_id": "neon_and_chrome_boutique",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Chrome glass frontage with fully styled mannequins.",
+        "entry_condition": "Store open; Money for purchases"
+      },
+      "interior": {
+        "theme": "A glass-and-chrome nightclub simulation that sells the idea of entry before the club does.",
+        "features": [
+          "shop: ncb_eyewear",
+          "shop: ncb_footwear",
+          "shop: ncb_premium",
+          "interaction: ncb_fitting",
+          "interaction: ncb_simulation",
+          "service: ncb_counter",
+          "exit: ncb_exit"
+        ]
+      },
+      "functions": [
+        "Browse Standard Stock",
+        "Browse Premium Stock",
+        "Try On Equipment",
+        "Run Club Simulation",
+        "VIP Potential Assessment"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "ncb_storefront",
+      "to": "ncb_eyewear",
+      "bidirectional": true
+    },
+    {
+      "from": "ncb_eyewear",
+      "to": "ncb_footwear",
+      "bidirectional": true
+    },
+    {
+      "from": "ncb_footwear",
+      "to": "ncb_premium",
+      "bidirectional": true
+    },
+    {
+      "from": "ncb_premium",
+      "to": "ncb_fitting",
+      "bidirectional": true
+    },
+    {
+      "from": "ncb_fitting",
+      "to": "ncb_simulation",
+      "bidirectional": true
+    },
+    {
+      "from": "ncb_simulation",
+      "to": "ncb_counter",
+      "bidirectional": true
+    },
+    {
+      "from": "ncb_counter",
+      "to": "ncb_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "ncb_storefront": {
+      "connects_to": [
+        "ncb_eyewear"
+      ],
+      "type": "exterior",
+      "description": "Chrome glass frontage with fully styled mannequins."
+    },
+    "ncb_eyewear": {
+      "connects_to": [
+        "ncb_storefront",
+        "ncb_footwear"
+      ],
+      "type": "shop",
+      "description": "Strobe shades and programmable LED glasses."
+    },
+    "ncb_footwear": {
+      "connects_to": [
+        "ncb_eyewear",
+        "ncb_premium"
+      ],
+      "type": "shop",
+      "description": "Club shoes and status footwear."
+    },
+    "ncb_premium": {
+      "connects_to": [
+        "ncb_footwear",
+        "ncb_fitting"
+      ],
+      "type": "shop",
+      "description": "Locked stock opened by Velvet stage-7 completion."
+    },
+    "ncb_fitting": {
+      "connects_to": [
+        "ncb_premium",
+        "ncb_simulation"
+      ],
+      "type": "interaction",
+      "description": "Mirror and equipment preview."
+    },
+    "ncb_simulation": {
+      "connects_to": [
+        "ncb_fitting",
+        "ncb_counter"
+      ],
+      "type": "interaction",
+      "description": "Safe preview of club gear effects."
+    },
+    "ncb_counter": {
+      "connects_to": [
+        "ncb_simulation",
+        "ncb_exit"
+      ],
+      "type": "service",
+      "description": "Checkout and VIP Potential assessment."
+    },
+    "ncb_exit": {
+      "connects_to": [
+        "ncb_counter"
+      ],
+      "type": "exit",
+      "description": "Returns to the neon street."
+    }
+  },
+  "feature_details": {
+    "ncb_storefront": {
+      "display_name": "Glass Storefront",
+      "image_generation_description": "Chrome glass frontage with fully styled mannequins.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ncb_eyewear": {
+      "display_name": "Eyewear Station",
+      "image_generation_description": "Strobe shades and programmable LED glasses.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ncb_footwear": {
+      "display_name": "Footwear Station",
+      "image_generation_description": "Club shoes and status footwear.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ncb_premium": {
+      "display_name": "Premium Stock",
+      "image_generation_description": "Locked stock opened by Velvet stage-7 completion.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ncb_fitting": {
+      "display_name": "Fitting Area",
+      "image_generation_description": "Mirror and equipment preview.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ncb_simulation": {
+      "display_name": "Club Simulation",
+      "image_generation_description": "Safe preview of club gear effects.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ncb_counter": {
+      "display_name": "Katarina Counter",
+      "image_generation_description": "Checkout and VIP Potential assessment.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ncb_exit": {
+      "display_name": "Quarter Exit",
+      "image_generation_description": "Returns to the neon street.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    }
+  },
+  "ambient_npcs": [
+    "aspiring VIP customers",
+    "premium mannequins"
+  ]
+}

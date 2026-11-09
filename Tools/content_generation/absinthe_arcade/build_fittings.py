@@ -37,40 +37,32 @@ CLAMP_STEP = 0.42
 BOX = (0.30, 0.12, 0.36)          # junction box w, depth, h
 STANDOFF = 0.012                  # gap between conduit and stone
 
-# Runs traced off the hero reference ("Absinthe Arcade at Clocktower Plaza(3)", with the
-# daytime Plaza(4) for detail). The reference facade is narrower than ours, so heights are
-# measured with the bust as the scale and positions are set by the feature each run hugs.
+# Runs traced off the daytime bible on its rectified facade plane (E1 re-seat, 2026-10-28;
+# temporary until E4 rebuilds the retrofit). Arch-axis coordinates, metres.
 # (x, z) points run on the wall; (x, y, z) points are free-hanging (flex into a sign).
 PURPLE_RUNS = [
-    # left: from a coupling beside the downpipe, along the wall just above the side-bay
-    # cornice, under the window apron, into the box at the bay edge
-    [(-5.72, 6.22), (-2.78, 6.22)],
-    # left: down from that box beside the arch, a jog out round the jamb, down to the door
-    [(-2.78, 6.25), (-2.78, 5.3), (-3.08, 5.05), (-3.08, 1.95)],
-    # right: picks up the bust's purple feed where it enters the wall, across, down at the
-    # bay edge, along under the side-bay cornice into the box by the downpipe
-    [(1.16, 6.79), (2.86, 6.79), (2.86, 5.42), (5.95, 5.42)],
-    # right: from that box down and across into the marquee's right end
-    [(5.95, 5.3), (5.95, 4.5), (2.9, 4.5), (2.62, -0.62, 4.45)],
-    # right: from the box beside the first-floor window down to the lower box
-    [(6.18, 7.62), (6.18, 6.45), (6.02, 6.3), (6.02, 5.3)],
+    # left: from the coupling under the cat window's apron, along the ledge, into the box
+    [(-4.07, 6.14), (-2.48, 6.14)],
+    # left: down from that box beside the arch, a jog round the arch ring, down the jamb
+    [(-2.48, 6.14), (-2.48, 4.62), (-2.72, 4.50), (-2.72, 3.95), (-2.47, 3.72), (-2.47, 2.0)],
+    # right: from the small box beside the mural, across and down into the big box
+    [(1.84, 6.02), (2.20, 6.02), (2.27, 5.50), (2.55, 5.22), (2.58, 4.97)],
+    # right: big box down to the lower box, and a second feed beside it
+    [(2.58, 4.97), (2.58, 3.95)],
+    [(2.76, 4.85), (2.76, 4.05)],
 ]
 # The green on the facade is the arch neon (build_neon_extrados) fed from the earcups.
 GREEN_RUNS = []
-# Black flex cables (power for the lantern, the marquee feed), as in the reference.
+# Black flex cables (power for the corner lantern, along the ledge), as in the bible.
 BLACK_RUNS = [
-    [(-5.66, 6.18), (-5.66, 5.42), (-5.66, -0.35, 5.25)],       # coupling down into the big box
-    [(-5.98, 5.12), (-6.3, 5.12), (-6.3, 5.0)],                 # big box to the corner lantern
-    [(-5.62, 4.72), (-5.62, 0.8)],                              # big box down the pipe
-    [(-3.08, 4.4), (-2.6, -0.6, 4.3)],                          # left conduit into the marquee
-    [(6.25, 7.7), (6.55, 7.7)],                                 # window box toward the downpipe
-    [(6.1, 5.22), (6.4, 5.22), (6.4, 5.1)],                     # lower box to the right lantern
+    [(-5.30, 4.95), (-4.75, 4.62)],                             # corner lantern into the big box
+    [(-4.30, 5.98), (-2.62, 5.98)],                             # along the ground-floor cornice
 ]
 BLACK_R = 0.011
-BOXES = [(-2.78, 6.25), (5.95, 5.3), (6.18, 7.62)]
+BOXES = [(-2.48, 6.14), (2.58, 4.97), (2.58, 3.95)]
 # The big box beside the arched window is bolted to a steel frame in front of the left
-# downpipe, as in the reference (somebody needed the spot and the pipe was in the way).
-BIG_BOX = (-5.73, 5.0, (0.4, 0.14, 0.46))
+# downpipe, as in the bible (somebody needed the spot and the pipe was in the way).
+BIG_BOX = (-4.48, 4.50, (0.42, 0.14, 0.48))
 
 # Downpipes: cast iron, 110 mm, in 1.8 m socketed lengths.
 PIPE_R = 0.055
@@ -78,7 +70,7 @@ PIPE_GAP = 0.06                   # clearance behind the pipe left by the bracke
 SOCKET_STEP = 1.8
 
 # The masonry everything is fixed to.
-STONE = ("aa_shell_facade_walls", "aa_shell_facade_mouldings", "aa_shell_facade_quoins",
+STONE = ("aa_shell_facade_walls", "aa_shell_facade_mouldings", "aa_shell_facade_corner_bay",
          "aa_shell_facade_window_surrounds", "aa_arch_hero_archivolt", "aa_arch_hero_plinths",
          "aa_arch_hero_cartouche")
 
@@ -90,7 +82,9 @@ class Facade:
         dg = bpy.context.evaluated_depsgraph_get()
         self.trees = []
         for n in names:
-            o = bpy.data.objects[n]
+            o = bpy.data.objects.get(n)
+            if o is None:                 # e.g. aa_arch_hero_cartouche, removed in interfaces v2
+                continue
             bm = bmesh.new()
             bm.from_object(o, dg)
             bm.transform(o.matrix_world)
@@ -307,7 +301,7 @@ def gland(bm, path, radius, black, end=True):
 def box_over_pipe(bm, face, metal, steel, black):
     """The big box on a channel frame standing off the wall, clear of the downpipe behind."""
     x, z, (w, d, h) = BIG_BOX
-    pipe_x = shell.DRAIN_X[0]
+    pipe_x = shell.DRAIN["left"]["x_lower"]
     pipe_front = min(face.surf(pipe_x, z + dz) for dz in (-0.2, 0.0, 0.2)) - PIPE_GAP - 2 * PIPE_R - 0.04
     back = pipe_front - 0.015
     add_box(bm, (x, back - d / 2, z), (w, d, h), metal)
@@ -382,7 +376,9 @@ def hero_object(name, mats):
     return obj
 
 
-EARCUP_OUTLET = (0.79, -0.775, 6.11)      # side gland on each earcup box (x mirrored)
+# Side gland on each earcup box (x mirrored); measured with the bust's base at 5.42, so it
+# follows the bust when build_shell re-seats it.
+EARCUP_OUTLET = (0.79, -0.775, 6.11 + shell.GENTLEMAN_BASE - 5.42)
 
 
 def trim_side_runs():
@@ -479,13 +475,13 @@ def build_marquee_mounts(face):
     bm = bmesh.new()
     made = {"standoffs": 0, "plates": 0}
     for sx in (-1, 1):
-        for z in (3.72, 4.25, 4.75):
-            for x in (2.4, 2.3, 2.2, 2.08, 1.95, 1.8):
+        for z in (3.1, 3.75, 4.35):
+            for x in (2.4, 2.3, 2.2, 2.1, 2.0, 1.9, 1.8, 1.6, 1.4):
                 hit, _, _, _ = mq_tree.ray_cast(Vector((sx * x, -4.0, z)), Vector((0, 1, 0)), 8.0)
                 if hit is None:
                     continue
                 loc, name = face.ray((sx * x, back + 0.005, z))
-                if loc is None or name != "aa_arch_hero_archivolt" or loc.y - back > 0.6:
+                if loc is None or name not in ("aa_arch_hero_archivolt", "aa_shell_facade_walls")                         or loc.y - back > 0.6:
                     continue
                 L = loc.y - back
                 if L > 0.04:
@@ -570,9 +566,11 @@ def coupler(bm, x, y, z, black, steel, h=0.14):
 
 
 def build_drainpipes(face):
-    """Both downpipes in facade coordinates. The left one is all cast iron (one cracked length
-    wrapped in a coupler, the ground floor re-fixed with band clamps beside the old ears); on
-    the right the ground-floor length was replaced in steel, joined by a rubber coupler."""
+    """Both downpipes, as the bible has them. Left: cast iron down the main wall beside the
+    corner, a swan neck out over the ground-floor cornice that also steps right, then down
+    through the big junction box's frame to the pavement (one cracked length wrapped in a
+    coupler, the ground floor re-fixed with band clamps beside the old ears). Right: down the
+    seam with the neighbour, over the right cornice; its ground-floor length replaced in steel."""
     coll = aa.kit_collection("aa_prop_drainpipe")
     obj = next(o for o in coll.objects if o.type == "MESH")
     me = obj.data
@@ -580,50 +578,53 @@ def build_drainpipes(face):
     for n in ("m_aa_iron", "aa_tmp_clip_steel", "aa_tmp_clip_black"):
         me.materials.append(mat(n))
     IRON, STEEL, BLACK = range(3)
-    B = aa.load_manifest()["building"]
-    soffit = B["eave_height"] - 0.95 + 0.6
-    corona = 0.48                                   # ground cornice projection
-    head = (15.42, 15.78)                           # rainwater head, under the architrave
+    FA = shell.FA
+    e0 = shell.EAVE0
+    corona = FA["eave_cornice_z"]
+    head = (e0 - 0.52, e0 - 0.14)                   # rainwater head, under the eave cornice
+    y_out = -0.5                                    # outlet through the cornice soffit
+    g = FA["gf_cornice"]
+    dp = FA["drainpipes"]
+    pipes = [(dp["left"]["x_upper"], dp["left"]["x_lower"], g["left"], False),
+             (dp["right"]["x"], dp["right"]["x"], g["right"], True)]
     bm = bmesh.new()
     made = {}
-    for k, x in enumerate(shell.DRAIN_X):
-        replaced = k == 1
-        upper_wall = min(face.surf(x, z) for z in (7.6, 8.4, 9.2, 11.2, 12.0, 12.8, 14.8))
-        ground_wall = min(face.surf(x, z) for z in (1.4, 2.6, 3.8, 4.9))
+    for k, (xu, xl, cor_spec, replaced) in enumerate(pipes):
+        cz0, cz1 = cor_spec["z"]
+        cproud = cor_spec["proud"]
+        upper_wall = min(face.surf(xu, z) for z in (cz1 + 0.6, cz1 + 1.5, cz1 + 3.0, e0 - 1.0))
+        ground_wall = min(face.surf(xl, z) for z in (1.4, 2.6, cz0 - 0.6))
         y_up = upper_wall - PIPE_GAP - PIPE_R
         y_gf = ground_wall - PIPE_GAP - PIPE_R
-        y_neck = -corona - 0.03 - PIPE_R            # just clear of the corona
-        y_foot = -shell.PLINTH_P - 0.035 - PIPE_R
-        y_out = -0.68                               # through the soffit, ahead of the modillions
-        # Outlet and swan neck down into the rainwater head.
-        tube_mesh(bm, [Vector((x, y_out, soffit + 0.02)), Vector((x, y_out, 16.1)),
-                       Vector((x, y_up - 0.01, 15.9)), Vector((x, y_up, head[1] - 0.06))],
-                  PIPE_R * 0.85, IRON, corner=0.1)
-        frustum(bm, (x, upper_wall - 0.11, head[0]), (0.2, 0.2), (0.36, 0.24), head[1] - head[0], IRON)
-        add_box(bm, (x, upper_wall - 0.125, head[1] + 0.02), (0.4, 0.27, 0.04), IRON)        # rim
-        for sx in (-1, 1):                                                                 # lugs
-            add_box(bm, (x + sx * 0.2, upper_wall - 0.006, head[0] + 0.12), (0.06, 0.012, 0.09), IRON)
-        # The run: upper wall, swan neck out over the ground cornice, back onto the rustication,
-        # offset over the plinth, down into the gully.
-        path = [Vector((x, y_up, head[0])), Vector((x, y_up, 6.52)), Vector((x, y_neck, 6.06)),
-                Vector((x, y_neck, 5.5)), Vector((x, y_gf, 5.02)), Vector((x, y_gf, 0.98)),
-                Vector((x, y_foot, 0.66)), Vector((x, y_foot, 0.12))]
-        if replaced:            # cast iron down to the coupler, steel below it
-            joint = Vector((x, y_gf, 4.6))
+        y_neck = -cproud - 0.03 - PIPE_R            # just clear of the cornice
+        y_foot = -shell.PLINTH_P - 0.03 - PIPE_R
+        tube_mesh(bm, [Vector((xu, y_out, corona[0] - 0.02)), Vector((xu, y_out, e0 - 0.02)),
+                       Vector((xu, y_up - 0.01, head[1] + 0.05)), Vector((xu, y_up, head[1] - 0.06))],
+                  PIPE_R * 0.85, IRON, corner=0.08)
+        frustum(bm, (xu, upper_wall - 0.11, head[0]), (0.2, 0.2), (0.36, 0.24), head[1] - head[0], IRON)
+        add_box(bm, (xu, upper_wall - 0.125, head[1] + 0.02), (0.4, 0.27, 0.04), IRON)
+        for sx in (-1, 1):
+            add_box(bm, (xu + sx * 0.2, upper_wall - 0.006, head[0] + 0.12), (0.06, 0.012, 0.09), IRON)
+        n_top, n_bot = cz1 + 0.45, cz0 - 0.4
+        path = [Vector((xu, y_up, head[0])), Vector((xu, y_up, n_top)),
+                Vector(((xu + xl) / 2, y_neck, cz1 + 0.05)), Vector((xl, y_neck, cz0 - 0.05)),
+                Vector((xl, y_gf, n_bot)), Vector((xl, y_gf, 0.55)),
+                Vector((xl, y_foot, 0.38)), Vector((xl, y_foot, 0.12))]
+        if replaced:
+            joint = Vector((xl, y_gf, n_bot - 0.4))
             tube_mesh(bm, path[:5] + [joint], PIPE_R, IRON)
             tube_mesh(bm, [joint] + path[5:], PIPE_R * 0.93, STEEL)
-            coupler(bm, x, y_gf, joint.z, BLACK, STEEL)
+            coupler(bm, xl, y_gf, joint.z, BLACK, STEEL)
         else:
             tube_mesh(bm, path, PIPE_R, IRON)
-            coupler(bm, x, y_up, 11.35, BLACK, STEEL, h=0.16)
-        # Sockets and their fixings on the straight lengths.
+            coupler(bm, xu, y_up, (head[0] + n_top) / 2, BLACK, STEEL, h=0.16)
         sockets = 0
-        for (top, bottom), gen in (((head[0], 6.52), "ears"),
-                                   ((5.02, 0.98), "steel" if replaced else "refixed")):
+        for (top, bottom), x, gen in (((head[0], n_top), xu, "ears"),
+                                      ((n_bot, 0.55), xl, "steel" if replaced else "refixed")):
             y = y_up if gen == "ears" else y_gf
             z = top - 0.15
             while z > bottom + 0.2:
-                if not (replaced and z < 4.6):
+                if not (replaced and z < n_bot - 0.4):
                     add_cyl(bm, (x, y, z), (0, 0, 1), PIPE_R * 1.22, 0.1, IRON, 16)
                     add_cyl(bm, (x, y, z - 0.055), (0, 0, 1), PIPE_R * 1.12, 0.012, IRON, 16)
                 wall = face.surf(x, z)
@@ -635,18 +636,37 @@ def build_drainpipes(face):
                         band_clamp(bm, x, z - 0.45, y, face.surf(x, z - 0.45), STEEL)
                 z -= SOCKET_STEP
                 sockets += 1
-        # Strap round the neck to the corona face.
-        cz = 5.9
-        cor = face.surf(x, cz)
-        add_cyl(bm, (x, y_neck, cz), (0, 0, 1), PIPE_R + 0.008, 0.03, STEEL, 16)
-        add_box(bm, (x, (y_neck + PIPE_R + cor) / 2, cz), (0.03, cor - y_neck - PIPE_R, 0.025), STEEL)
-        plate(bm, x, cz, cor, 0.06, 0.05, STEEL, bolts=2)
-        # Gully at the pavement: cast trap box with a grating over the street drain.
+        cz = (cz0 + cz1) / 2
+        cor = face.surf(xl, cz)
+        add_cyl(bm, (xl, y_neck, cz), (0, 0, 1), PIPE_R + 0.008, 0.03, STEEL, 16)
+        if cor - y_neck - PIPE_R > 0.01:
+            add_box(bm, (xl, (y_neck + PIPE_R + cor) / 2, cz), (0.03, cor - y_neck - PIPE_R, 0.025), STEEL)
+        plate(bm, xl, cz, cor, 0.06, 0.05, STEEL, bolts=2)
         gy = y_foot - 0.02
-        add_box(bm, (x, gy, 0.06), (0.3, 0.26, 0.12), IRON)
+        add_box(bm, (xl, gy, 0.06), (0.3, 0.26, 0.12), IRON)
         for i in range(5):
-            add_box(bm, (x - 0.1 + 0.05 * i, gy, 0.125), (0.018, 0.22, 0.012), IRON)
+            add_box(bm, (xl - 0.1 + 0.05 * i, gy, 0.125), (0.018, 0.22, 0.012), IRON)
         made[f"pipe_{k}"] = {"y_up": round(y_up, 3), "y_gf": round(y_gf, 3), "sockets": sockets}
+    # Back-corner downpipe on the right side elevation (asset sheet), straight down the side
+    # wall from a rainwater head under the eave cornice to a gully. Temporary until E4.
+    sr = FA["side_right"]
+    yb = sr["back_downpipe"]["u"]
+    xs = shell.X_RIGHT + PIPE_GAP + PIPE_R
+    tube_mesh(bm, [Vector((xs + 0.45, yb, corona[0] - 0.02)), Vector((xs + 0.45, yb, e0 - 0.02)),
+                   Vector((xs + 0.01, yb, head[1] + 0.05)), Vector((xs, yb, head[1] - 0.06))],
+              PIPE_R * 0.85, IRON, corner=0.08)
+    add_box(bm, (shell.X_RIGHT + 0.13, yb, (head[0] + head[1]) / 2), (0.24, 0.32, head[1] - head[0]), IRON)
+    tube_mesh(bm, [Vector((xs, yb, head[0])), Vector((xs, yb, 0.55)),
+                   Vector((xs + shell.PLINTH_P, yb, 0.38)), Vector((xs + shell.PLINTH_P, yb, 0.12))], PIPE_R, IRON)
+    z = head[0] - 0.15
+    while z > 0.75:
+        add_cyl(bm, (xs, yb, z), (0, 0, 1), PIPE_R * 1.22, 0.1, IRON, 16)
+        for sy in (-1, 1):
+            ey = yb + sy * (PIPE_R + 0.04)
+            add_box(bm, (xs - PIPE_R * 0.4, ey, z), (0.014, 0.06, 0.075), IRON)
+            add_cyl(bm, ((xs + shell.X_RIGHT) / 2, ey, z), (1, 0, 0), 0.014, xs - shell.X_RIGHT, IRON, 8)
+        z -= SOCKET_STEP
+    add_box(bm, (xs + shell.PLINTH_P + 0.02, yb, 0.06), (0.26, 0.3, 0.12), IRON)
     bm.to_mesh(me)
     bm.free()
     if "uv_material" not in me.uv_layers:

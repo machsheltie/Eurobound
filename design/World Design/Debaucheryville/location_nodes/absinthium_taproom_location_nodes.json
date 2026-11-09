@@ -1,0 +1,230 @@
+{
+  "location_id": "debaucheryville_brewery_absinthium_taproom_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_brewery_absinthium_taproom_01",
+      "name": "The Absinthium Taproom",
+      "tag_id": "absinthium_taproom",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Vapor transition from the Arcade curtain.",
+        "entry_condition": "absinthium_taproom_entrance_discovered; Location hours; no opener physically gates entry"
+      },
+      "interior": {
+        "theme": "A green-vapor Distortion Den where objective topology hides beneath impossible reflections.",
+        "features": [
+          "interior: at_den",
+          "puzzle: at_mirror_maze",
+          "encounter: at_mirror_chad",
+          "boss: at_wisp_arena",
+          "service: at_service",
+          "selfie: at_selfie",
+          "exit: at_exit"
+        ]
+      },
+      "functions": [
+        "Navigate Mirror Maze",
+        "Confront Green Fairy Wisp",
+        "Claim Tour Rewards",
+        "Record Pre-Tour Completion",
+        "Buy Absinthe Lager",
+        "Take Floating Chalice Selfie"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "at_veil",
+      "to": "at_den",
+      "bidirectional": true
+    },
+    {
+      "from": "at_den",
+      "to": "at_mirror_maze",
+      "bidirectional": true
+    },
+    {
+      "from": "at_mirror_maze",
+      "to": "at_mirror_chad",
+      "bidirectional": true
+    },
+    {
+      "from": "at_mirror_chad",
+      "to": "at_wisp_arena",
+      "bidirectional": true
+    },
+    {
+      "from": "at_wisp_arena",
+      "to": "at_service",
+      "bidirectional": true
+    },
+    {
+      "from": "at_service",
+      "to": "at_selfie",
+      "bidirectional": true
+    },
+    {
+      "from": "at_selfie",
+      "to": "at_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "at_veil": {
+      "connects_to": [
+        "at_den"
+      ],
+      "type": "transition",
+      "description": "Vapor transition from the Arcade curtain."
+    },
+    "at_den": {
+      "connects_to": [
+        "at_veil",
+        "at_mirror_maze"
+      ],
+      "type": "interior",
+      "description": "Cracked-bottle bar and service landmark."
+    },
+    "at_mirror_maze": {
+      "connects_to": [
+        "at_den",
+        "at_mirror_chad"
+      ],
+      "type": "puzzle",
+      "description": "Stable node topology presented through deceptive infinite reflections."
+    },
+    "at_mirror_chad": {
+      "connects_to": [
+        "at_mirror_maze",
+        "at_wisp_arena"
+      ],
+      "type": "encounter",
+      "description": "Reflection roast and puzzle checkpoint."
+    },
+    "at_wisp_arena": {
+      "connects_to": [
+        "at_mirror_chad",
+        "at_service"
+      ],
+      "type": "boss",
+      "description": "Final challenge space in controlled green vapor."
+    },
+    "at_service": {
+      "connects_to": [
+        "at_wisp_arena",
+        "at_selfie"
+      ],
+      "type": "service",
+      "description": "Tour reward and 12-Sov Absinthe Lager service."
+    },
+    "at_selfie": {
+      "connects_to": [
+        "at_service",
+        "at_exit"
+      ],
+      "type": "selfie",
+      "description": "Brewmaster selfie landmark."
+    },
+    "at_exit": {
+      "connects_to": [
+        "at_selfie"
+      ],
+      "type": "exit",
+      "description": "Returns through the green curtain."
+    }
+  },
+  "feature_details": {
+    "at_veil": {
+      "display_name": "Inside Green Veil",
+      "image_generation_description": "Vapor transition from the Arcade curtain.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "at_den": {
+      "display_name": "Distortion Den",
+      "image_generation_description": "Cracked-bottle bar and service landmark.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "at_mirror_maze": {
+      "display_name": "Mirror Maze",
+      "image_generation_description": "Stable node topology presented through deceptive infinite reflections.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "at_mirror_chad": {
+      "display_name": "Mirror Chad Encounter",
+      "image_generation_description": "Reflection roast and puzzle checkpoint.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "at_wisp_arena": {
+      "display_name": "Green Fairy Wisp Arena",
+      "image_generation_description": "Final challenge space in controlled green vapor.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "at_service": {
+      "display_name": "Dr. Vanek Service Point",
+      "image_generation_description": "Tour reward and 12-Sov Absinthe Lager service.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "at_selfie": {
+      "display_name": "Floating Chalice Selfie",
+      "image_generation_description": "Brewmaster selfie landmark.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "at_exit": {
+      "display_name": "Arcade Return Veil",
+      "image_generation_description": "Returns through the green curtain.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    }
+  },
+  "ambient_npcs": [
+    "mirror echoes",
+    "green vapor wisps"
+  ]
+}

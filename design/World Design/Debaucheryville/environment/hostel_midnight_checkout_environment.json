@@ -1,0 +1,116 @@
+{
+  "location_id": "debaucheryville_hostel_midnight_checkout_01",
+  "ambient_audio": {
+    "base_layers": [
+      "rotating backpackers ambience",
+      "snoring roommates ambience",
+      "kitchen foragers ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "hmc_exterior",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "hmc_reception",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "hmc_dorm",
+        "cue": "interior_loop"
+      },
+      {
+        "node_id": "hmc_bunk_confession",
+        "cue": "quest_loop"
+      },
+      {
+        "node_id": "hmc_kitchen",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "hmc_lounge_wifi",
+        "cue": "social_loop"
+      },
+      {
+        "node_id": "hmc_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "hmc_mystery_fridge_food_effect",
+      "source_item": "hmc_mystery_fridge_food",
+      "description": "Random small recovery or stomach penalty."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "services and named NPCs active"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "use documented denial/off-peak state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street response",
+      "seasonal ambient overlay"
+    ],
+    "interior": [
+      "clean plate at threshold"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "hostel_midnight_checkout_ambient_fx",
+      "nodes": [
+        "hmc_exterior",
+        "hmc_reception",
+        "hmc_dorm",
+        "hmc_bunk_confession",
+        "hmc_kitchen",
+        "hmc_lounge_wifi"
+      ],
+      "fallback": "static or disabled clean plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "budget beige",
+      "hostel blue",
+      "institutional green",
+      "warning red"
+    ],
+    "key_strategy": "landmarks remain brighter than traversal clutter",
+    "emission_masks": [
+      "hostel_midnight_checkout_masks"
+    ]
+  },
+  "environmental_storytelling": [
+    "Four-story peeling façade with ornate doorway, random AC units and flickering neon.",
+    "Cheap counter, key hooks and inconsistent staff presence.",
+    "Narrow bunk aisles staged as the playable dorm subset.",
+    "Lower bunk and curtain framing 3 AM stranger confessions.",
+    "One burner, mystery fridge and dense note gallery.",
+    "Rotating travelers, worn sofas and ICQ access.",
+    "Return to Hostel Row with routes to Midnight Munchies and Cyberspace."
+  ],
+  "accessibility": {
+    "variants": [
+      "Bunk occlusion cutaway",
+      "Subtitled snoring and kitchen alarms",
+      "High-contrast bed assignment",
+      "Reduced crowd density"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast_interactions": true
+  }
+}

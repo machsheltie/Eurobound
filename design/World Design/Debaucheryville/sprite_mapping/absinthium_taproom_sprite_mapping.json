@@ -1,0 +1,254 @@
+{
+  "location_id": "debaucheryville_brewery_absinthium_taproom_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter dungeon traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "absinthium_taproom_environment",
+      "atlas": "absinthium_taproom_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "absinthium_taproom_exterior",
+          "filename": "absinthium_taproom_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "at_veil"
+        },
+        {
+          "asset_id": "absinthium_taproom_interior",
+          "filename": "absinthium_taproom_interior.png",
+          "role": "interior painted faces",
+          "node_id": "at_den"
+        },
+        {
+          "asset_id": "absinthium_taproom_node_at_den",
+          "filename": "absinthium_taproom_at_den.png",
+          "role": "interior landmark",
+          "node_id": "at_den"
+        },
+        {
+          "asset_id": "absinthium_taproom_node_at_mirror_maze",
+          "filename": "absinthium_taproom_at_mirror_maze.png",
+          "role": "puzzle landmark",
+          "node_id": "at_mirror_maze"
+        },
+        {
+          "asset_id": "absinthium_taproom_node_at_mirror_chad",
+          "filename": "absinthium_taproom_at_mirror_chad.png",
+          "role": "encounter landmark",
+          "node_id": "at_mirror_chad"
+        },
+        {
+          "asset_id": "absinthium_taproom_node_at_wisp_arena",
+          "filename": "absinthium_taproom_at_wisp_arena.png",
+          "role": "boss landmark",
+          "node_id": "at_wisp_arena"
+        },
+        {
+          "asset_id": "absinthium_taproom_node_at_service",
+          "filename": "absinthium_taproom_at_service.png",
+          "role": "service landmark",
+          "node_id": "at_service"
+        },
+        {
+          "asset_id": "absinthium_taproom_node_at_selfie",
+          "filename": "absinthium_taproom_at_selfie.png",
+          "role": "selfie landmark",
+          "node_id": "at_selfie"
+        },
+        {
+          "asset_id": "absinthium_taproom_node_at_exit",
+          "filename": "absinthium_taproom_at_exit.png",
+          "role": "exit landmark",
+          "node_id": "at_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "absinthium_taproom_characters",
+      "atlas": "absinthium_taproom_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "absinthium_taproom_npc_at_npc_vanek",
+          "filename": "absinthium_taproom_at_npc_vanek.png",
+          "role": "character sprite",
+          "node_id": "at_service"
+        },
+        {
+          "asset_id": "absinthium_taproom_npc_at_npc_mirror_chad",
+          "filename": "absinthium_taproom_at_npc_mirror_chad.png",
+          "role": "character sprite",
+          "node_id": "at_mirror_chad"
+        },
+        {
+          "asset_id": "absinthium_taproom_npc_at_npc_wisp",
+          "filename": "absinthium_taproom_at_npc_wisp.png",
+          "role": "character sprite",
+          "node_id": "at_wisp_arena"
+        }
+      ]
+    },
+    {
+      "group_id": "absinthium_taproom_ui_fx",
+      "atlas": "absinthium_taproom_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "absinthium_taproom_item_opener_absinthium_taproom",
+          "filename": "absinthium_taproom_opener_absinthium_taproom.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "absinthium_taproom_item_stamp_absinthium_taproom",
+          "filename": "absinthium_taproom_stamp_absinthium_taproom.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "absinthium_taproom_item_beer_absinthium_taproom",
+          "filename": "absinthium_taproom_beer_absinthium_taproom.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "absinthium_taproom_ui",
+          "filename": "absinthium_taproom_ui.png",
+          "role": "puzzle/tour UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "absinthium_taproom_fx",
+          "filename": "absinthium_taproom_fx.png",
+          "role": "environmental and combat FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "absinthium_taproom_masks",
+          "filename": "absinthium_taproom_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "at_npc_vanek_standard",
+      "asset_id": "absinthium_taproom_npc_at_npc_vanek",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "at_npc_mirror_chad_standard",
+      "asset_id": "absinthium_taproom_npc_at_npc_mirror_chad",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "at_npc_wisp_standard",
+      "asset_id": "absinthium_taproom_npc_at_npc_wisp",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "absinthium_taproom_lighting",
+      "mask_asset": "absinthium_taproom_masks",
+      "nodes": [
+        "at_veil",
+        "at_den",
+        "at_mirror_maze",
+        "at_mirror_chad",
+        "at_wisp_arena",
+        "at_service",
+        "at_selfie",
+        "at_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "at_exit_arcade",
+      "destination_id": "debaucheryville_clocktower_arcade_01",
+      "from_node": "at_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "at_maze",
+      "node_id": "at_mirror_maze",
+      "highlight_asset": "absinthium_taproom_node_at_mirror_maze"
+    },
+    {
+      "interaction_id": "at_boss",
+      "node_id": "at_wisp_arena",
+      "highlight_asset": "absinthium_taproom_node_at_wisp_arena"
+    },
+    {
+      "interaction_id": "at_rewards",
+      "node_id": "at_service",
+      "highlight_asset": "absinthium_taproom_node_at_service"
+    },
+    {
+      "interaction_id": "at_defer",
+      "node_id": "at_service",
+      "highlight_asset": "absinthium_taproom_node_at_service"
+    },
+    {
+      "interaction_id": "at_buy_beer",
+      "node_id": "at_service",
+      "highlight_asset": "absinthium_taproom_node_at_service"
+    },
+    {
+      "interaction_id": "at_selfie",
+      "node_id": "at_selfie",
+      "highlight_asset": "absinthium_taproom_node_at_selfie"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "absinthium_taproom_masks",
+      "channels": {
+        "r": "signs",
+        "g": "puzzle cues",
+        "b": "boss cues",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 8,
+    "reduced_fx_asset": "absinthium_taproom_fx"
+  }
+}

@@ -39,3 +39,8 @@ _bmad/render/
 Assets/Graphics/worlds/**/*.png
 Assets/Graphics/worlds/**/*.jpg
 Assets/Graphics/worlds/**/*.jpeg
+
+tools/art_cleanup/.venv/
+# Godot MCP Pro (paid, proprietary licence: keep out of git)
+tools/godot_mcp_pro_server/
+game/addons/godot_mcp/

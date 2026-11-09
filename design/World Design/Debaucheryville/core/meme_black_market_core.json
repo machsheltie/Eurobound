@@ -1,0 +1,76 @@
+{
+  "location_id": "debaucheryville_museum_meme_black_market_01",
+  "display_name": "Meme Black Market",
+  "satirical_subtitle": "Weaponized Nostalgia, Fair Market Value",
+  "world": "Debaucheryville",
+  "zone": "Hidden room behind Internet History Museum",
+  "location_type": "Hidden Vendor / Meme Economy / Sidequest Hub",
+  "sub_types": [
+    "quest location",
+    "service hub"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/memeblackmarket.md",
+    "docs/superpowers/specs/2026-11-02-meme-black-market-location-package-design.md"
+  ],
+  "access": {
+    "hours": "Accessible through the 03:33 museum unlock",
+    "entry_requirements": [
+      "meme_black_market_entrance_unlocked"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "mbm_exit_museum",
+      "destination_id": "debaucheryville_blockbuster_internet_museum_01",
+      "from_node": "mbm_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "VHS Shelf Threshold -> MemeLord.exe Counter -> Meme Summon Circle -> Meme Trinket Wall -> MemeMastery Terminal -> AIM Away-Message Altar -> Return Shelf",
+    "landmarks": [
+      "VHS Shelf Threshold",
+      "MemeLord.exe Counter",
+      "Meme Summon Circle",
+      "Meme Trinket Wall",
+      "MemeMastery Terminal",
+      "AIM Away-Message Altar",
+      "Return Shelf"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_blockbuster_internet_museum_01 owns space beyond mbm_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "An RGB-lit contraband den where corrupted GIFs and obsolete jokes are treated as sacred inventory."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D painted faces, depth cards and billboard/cutout props",
+    "palette": [
+      "RGB magenta",
+      "CRT cyan",
+      "Windows grey",
+      "corrupted green"
+    ]
+  },
+  "satirical_design": {
+    "core_target": "Weaponized Nostalgia, Fair Market Value",
+    "contrast": "An RGB-lit contraband den where corrupted GIFs and obsolete jokes are treated as sacred inventory."
+  },
+  "state_tracking": {
+    "meme_black_market_entrance_unlocked": false,
+    "meme_summon_complete": false,
+    "meme_mastery_tier": false,
+    "meme_black_market_vendor_met": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "meme_black_market_exterior",
+      "meme_black_market_interior",
+      "meme_black_market_ui"
+    ]
+  }
+}

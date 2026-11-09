@@ -1,0 +1,247 @@
+{
+  "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+  "events": [
+    {
+      "event_id": "tck_bravado",
+      "display_name": "Cross Bravado Threshold",
+      "trigger": {
+        "verb": "check",
+        "node_id": "tck_entry"
+      },
+      "requirements": [
+        "bravado_1"
+      ],
+      "results": [
+        "enter_keg_haus"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tck_stealth",
+      "display_name": "Navigate Creaky Floor",
+      "trigger": {
+        "verb": "stealth",
+        "node_id": "tck_floor"
+      },
+      "requirements": [],
+      "results": [
+        "three_crown_stealth_complete"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tck_boss",
+      "display_name": "Defeat Keg Sentinel",
+      "trigger": {
+        "verb": "battle",
+        "node_id": "tck_sentinel"
+      },
+      "requirements": [
+        "three_crown_stealth_complete"
+      ],
+      "results": [
+        "three_crown_challenge_complete"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tck_rewards",
+      "display_name": "Claim Tour Rewards",
+      "trigger": {
+        "verb": "claim",
+        "node_id": "tck_service"
+      },
+      "requirements": [
+        "three_crown_challenge_complete",
+        "brewery_tour_active",
+        "bottle_opener_keychain"
+      ],
+      "results": [
+        "grant_opener_three_crown_keg_haus",
+        "grant_stamp_three_crown_keg_haus",
+        "three_crown_tour_rewards_granted",
+        "three_crown_selfie_unlocked"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tck_defer",
+      "display_name": "Record Pre-Tour Completion",
+      "trigger": {
+        "verb": "state",
+        "node_id": "tck_service"
+      },
+      "requirements": [
+        "three_crown_challenge_complete",
+        "not_brewery_tour_active"
+      ],
+      "results": [
+        "three_crown_tour_rewards_deferred"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tck_buy",
+      "display_name": "Buy Iron Gut Tripel",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "tck_service"
+      },
+      "requirements": [
+        "three_crown_tour_rewards_granted"
+      ],
+      "results": [
+        "purchase_beer_three_crown_keg_haus"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tck_selfie",
+      "display_name": "Use Velvet Keg Throne",
+      "trigger": {
+        "verb": "selfie",
+        "node_id": "tck_throne"
+      },
+      "requirements": [
+        "three_crown_selfie_unlocked"
+      ],
+      "results": [
+        "save_three_crown_selfie"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "tck_bravado",
+      "node_id": "tck_entry",
+      "verb": "check",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tck_stealth",
+      "node_id": "tck_floor",
+      "verb": "stealth",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tck_boss",
+      "node_id": "tck_sentinel",
+      "verb": "battle",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tck_rewards",
+      "node_id": "tck_service",
+      "verb": "claim",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tck_defer",
+      "node_id": "tck_service",
+      "verb": "state",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tck_buy",
+      "node_id": "tck_service",
+      "verb": "purchase",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tck_selfie",
+      "node_id": "tck_throne",
+      "verb": "selfie",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "three_crown_route_discovered",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "three_crown_challenge_complete",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "three_crown_tour_rewards_deferred",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "three_crown_tour_rewards_granted",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "three_crown_selfie_unlocked",
+      "change": "Persist and present authored tour/challenge state."
+    }
+  ],
+  "narrator_commentary": [
+    "Noble by Liver",
+    "A sticky royal dive bar whose patrons, creaky tiles and keg throne form a stealth dungeon."
+  ]
+}

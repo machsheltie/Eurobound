@@ -1,0 +1,49 @@
+{
+  "ppm": 66.49350649350649,
+  "faces": {
+    "aa_face_front": {
+      "texture_px": [
+        1065,
+        1712
+      ],
+      "wall_width_m": 15.4,
+      "height_m": 25.747,
+      "wall_left_px": 20,
+      "wall_right_px": 1044,
+      "height_range_m": 1.0
+    },
+    "aa_face_left": {
+      "texture_px": [
+        1405,
+        1712
+      ],
+      "wall_width_m": 18.0,
+      "height_m": 25.747,
+      "wall_left_px": 3,
+      "wall_right_px": 1200,
+      "height_range_m": 1.0
+    },
+    "aa_face_right": {
+      "texture_px": [
+        1294,
+        1712
+      ],
+      "wall_width_m": 18.0,
+      "height_m": 25.747,
+      "wall_left_px": 62,
+      "wall_right_px": 1259,
+      "height_range_m": 1.0
+    },
+    "aa_face_back": {
+      "texture_px": [
+        1066,
+        1722
+      ],
+      "wall_width_m": 15.4,
+      "height_m": 25.897,
+      "wall_left_px": 21,
+      "wall_right_px": 1045,
+      "height_range_m": 1.0
+    }
+  }
+}

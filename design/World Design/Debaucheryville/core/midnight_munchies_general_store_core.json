@@ -1,0 +1,82 @@
+{
+  "location_id": "debaucheryville_shop_midnight_munchies_01",
+  "display_name": "Midnight Munchies General Store",
+  "satirical_subtitle": "Open When You Need Us. We Know Why.",
+  "world": "Debaucheryville",
+  "zone": "Hostel Row",
+  "location_type": "Night Convenience Store / Recovery Vendor",
+  "sub_types": [
+    "quest location",
+    "service hub"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/midnight_munchies_general_store.md",
+    "docs/superpowers/specs/2026-11-02-midnight-munchies-general-store-location-package-design.md"
+  ],
+  "access": {
+    "hours": "22:00-08:00",
+    "entry_requirements": [
+      "Store open between 22:00 and 08:00"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "mm_exit_row",
+      "destination_id": "debaucheryville_hostel_row",
+      "from_node": "mm_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "mm_ref_hostel",
+      "destination_id": "debaucheryville_hostel_midnight_checkout_01",
+      "from_node": "mm_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Night Storefront -> Recovery Aisle -> Hygiene and Supplies -> Heat Lamp Lottery -> Věra's Counter -> Hostel Row Exit",
+    "landmarks": [
+      "Night Storefront",
+      "Recovery Aisle",
+      "Hygiene and Supplies",
+      "Heat Lamp Lottery",
+      "Věra's Counter",
+      "Hostel Row Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_hostel_row owns space beyond mm_exit.",
+      "Destination debaucheryville_hostel_midnight_checkout_01 owns space beyond mm_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A fluorescent survival beacon whose markup measures how badly the player failed to plan."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D painted faces, depth cards and billboard/cutout props",
+    "palette": [
+      "fluorescent white",
+      "convenience red",
+      "energy-drink blue",
+      "heat-lamp orange"
+    ]
+  },
+  "satirical_design": {
+    "core_target": "Open When You Need Us. We Know Why.",
+    "contrast": "A fluorescent survival beacon whose markup measures how badly the player failed to plan."
+  },
+  "state_tracking": {
+    "midnight_munchies_open": false,
+    "midnight_munchies_desperation_tax": false,
+    "midnight_munchies_regular": false,
+    "heat_lamp_lottery_used": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "midnight_munchies_general_store_exterior",
+      "midnight_munchies_general_store_interior",
+      "midnight_munchies_general_store_ui"
+    ]
+  }
+}

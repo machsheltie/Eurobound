@@ -1,0 +1,69 @@
+{
+  "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+  "item_category": "Brewery Tour local rewards and signature beer",
+  "items": [
+    {
+      "item_id": "opener_three_crown_keg_haus",
+      "display_name": "Three-Crown Keg Haus Bottle Opener",
+      "item_type": "brewery_opener",
+      "price": 0,
+      "effect": "Rusted stacked crowns; Noble by Liver. Never sold.",
+      "acquisition": "Granted with stamp after eligible challenge completion."
+    },
+    {
+      "item_id": "stamp_three_crown_keg_haus",
+      "display_name": "Three-Crown Keg Haus Stamp",
+      "item_type": "brewery_stamp",
+      "price": 0,
+      "effect": "Three crowns over stein; tour stop 2.",
+      "acquisition": "Granted after eligible challenge completion."
+    },
+    {
+      "item_id": "beer_three_crown_keg_haus",
+      "display_name": "Iron Gut Tripel",
+      "item_type": "signature_beer",
+      "price": 10,
+      "effect": "High-strength signature brew.",
+      "acquisition": "Purchasable after rewards granted."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "bottle_opener_keychain (external permanent quest container)",
+      "ownership": "external authoritative item/quest source"
+    },
+    {
+      "reference": "Brewery Passport Book",
+      "ownership": "external authoritative item/quest source"
+    },
+    {
+      "reference": "Publandia brewery_tour_active trigger",
+      "ownership": "external authoritative item/quest source"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "three_crown_challenge_complete",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "three_crown_tour_rewards_deferred",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "three_crown_tour_rewards_granted",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "three_crown_selfie_unlocked",
+      "type": "tour state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs",
+    "openers_are_never_sold": true,
+    "stamp_is_never_sold": true,
+    "signature_beer_requires_tour_rewards": true,
+    "price_confirmation_required": true
+  }
+}

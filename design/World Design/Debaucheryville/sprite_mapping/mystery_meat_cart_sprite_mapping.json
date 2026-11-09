@@ -1,0 +1,220 @@
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter or micro-room cutaway"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "mystery_meat_cart_environment",
+      "atlas": "mystery_meat_cart_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "mystery_meat_cart_exterior",
+          "filename": "mystery_meat_cart_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "mmc_cart"
+        },
+        {
+          "asset_id": "mystery_meat_cart_interior",
+          "filename": "mystery_meat_cart_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "mmc_menu"
+        },
+        {
+          "asset_id": "mystery_meat_cart_node_mmc_menu",
+          "filename": "mystery_meat_cart_mmc_menu.png",
+          "role": "shop landmark",
+          "node_id": "mmc_menu"
+        },
+        {
+          "asset_id": "mystery_meat_cart_node_mmc_rotisserie",
+          "filename": "mystery_meat_cart_mmc_rotisserie.png",
+          "role": "interaction landmark",
+          "node_id": "mmc_rotisserie"
+        },
+        {
+          "asset_id": "mystery_meat_cart_node_mmc_chef",
+          "filename": "mystery_meat_cart_mmc_chef.png",
+          "role": "service landmark",
+          "node_id": "mmc_chef"
+        },
+        {
+          "asset_id": "mystery_meat_cart_node_mmc_storage",
+          "filename": "mystery_meat_cart_mmc_storage.png",
+          "role": "examine landmark",
+          "node_id": "mmc_storage"
+        },
+        {
+          "asset_id": "mystery_meat_cart_node_mmc_consume",
+          "filename": "mystery_meat_cart_mmc_consume.png",
+          "role": "interaction landmark",
+          "node_id": "mmc_consume"
+        },
+        {
+          "asset_id": "mystery_meat_cart_node_mmc_exit",
+          "filename": "mystery_meat_cart_mmc_exit.png",
+          "role": "exit landmark",
+          "node_id": "mmc_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "mystery_meat_cart_characters",
+      "atlas": "mystery_meat_cart_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "mystery_meat_cart_npc_mmc_npc_chef_chuckles",
+          "filename": "mystery_meat_cart_mmc_npc_chef_chuckles.png",
+          "role": "character sprite",
+          "node_id": "mmc_chef"
+        }
+      ]
+    },
+    {
+      "group_id": "mystery_meat_cart_ui_fx",
+      "atlas": "mystery_meat_cart_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "mystery_meat_cart_item_mmc_doner_illusions",
+          "filename": "mystery_meat_cart_mmc_doner_illusions.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "mystery_meat_cart_item_mmc_sausage_suspicion",
+          "filename": "mystery_meat_cart_mmc_sausage_suspicion.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "mystery_meat_cart_item_mmc_clown_dog",
+          "filename": "mystery_meat_cart_mmc_clown_dog.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "mystery_meat_cart_item_mmc_meatball_lollipop",
+          "filename": "mystery_meat_cart_mmc_meatball_lollipop.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "mystery_meat_cart_item_mmc_brain_brat",
+          "filename": "mystery_meat_cart_mmc_brain_brat.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "mystery_meat_cart_ui",
+          "filename": "mystery_meat_cart_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "mystery_meat_cart_fx",
+          "filename": "mystery_meat_cart_fx.png",
+          "role": "particles and overlays",
+          "node_id": null
+        },
+        {
+          "asset_id": "mystery_meat_cart_masks",
+          "filename": "mystery_meat_cart_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "mmc_npc_chef_chuckles_standard",
+      "asset_id": "mystery_meat_cart_npc_mmc_npc_chef_chuckles",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "mystery_meat_cart_lighting",
+      "mask_asset": "mystery_meat_cart_masks",
+      "nodes": [
+        "mmc_cart",
+        "mmc_menu",
+        "mmc_rotisserie",
+        "mmc_chef",
+        "mmc_storage",
+        "mmc_consume",
+        "mmc_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "mmc_exit_circus",
+      "destination_id": "debaucheryville_cirque_du_shady",
+      "from_node": "mmc_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "mmc_browse",
+      "node_id": "mmc_menu",
+      "highlight_asset": "mystery_meat_cart_node_mmc_menu"
+    },
+    {
+      "interaction_id": "mmc_purchase",
+      "node_id": "mmc_chef",
+      "highlight_asset": "mystery_meat_cart_node_mmc_chef"
+    },
+    {
+      "interaction_id": "mmc_consume",
+      "node_id": "mmc_consume",
+      "highlight_asset": "mystery_meat_cart_node_mmc_consume"
+    },
+    {
+      "interaction_id": "mmc_clown_check",
+      "node_id": "mmc_chef",
+      "highlight_asset": "mystery_meat_cart_node_mmc_chef"
+    },
+    {
+      "interaction_id": "mmc_inspect",
+      "node_id": "mmc_storage",
+      "highlight_asset": "mystery_meat_cart_node_mmc_storage"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "mystery_meat_cart_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 8,
+    "reduced_fx_asset": "mystery_meat_cart_fx"
+  }
+}

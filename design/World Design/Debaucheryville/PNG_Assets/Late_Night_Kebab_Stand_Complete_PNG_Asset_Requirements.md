@@ -1,5 +1,43 @@
 # Late-Night Kebab Stand - Complete PNG Asset Requirements
 
+## 2026 Authoritative Godot 4.4 HD-2D Reconciliation
+
+- **Location ID:** `debaucheryville_velvet_alley_kebab_01`
+- **Pipeline:** Painterly HD-2D cart/street faces, cutout props, food icons, character sprites, emission masks, steam/smoke overlays and clean plates.
+- **Mapping:** `sprite_mapping/late_night_kebab_stand_sprite_mapping.json`
+- **Required asset families:** cart and sign; eight menu icons; Mr. Chadz service frames; rotisserie, steam and alley dressing; crawlspace hidden/discovered/03:00-03:59 open states; ordering and status UI.
+
+### Accessibility Assets
+
+- Low-glare fluorescent cart state.
+- Reduced steam and smoke overlays.
+- Text food-risk warnings and high-contrast crawlspace timer.
+- Clean plates without particles or gutter reflection motion.
+
+### Canonical Sprite-Mapping Asset IDs
+
+- `late_night_kebab_stand_exterior`
+- `late_night_kebab_stand_interior`
+- `late_night_kebab_stand_node_lks_menu`
+- `late_night_kebab_stand_node_lks_counter`
+- `late_night_kebab_stand_node_lks_consume`
+- `late_night_kebab_stand_node_lks_crawlspace`
+- `late_night_kebab_stand_node_lks_exit`
+- `late_night_kebab_stand_npc_lks_npc_mr_chadz`
+- `late_night_kebab_stand_item_lks_gutbuster_wrap`
+- `late_night_kebab_stand_item_lks_vampire_fries`
+- `late_night_kebab_stand_item_lks_euromeat_pocket`
+- `late_night_kebab_stand_item_lks_megamix_box`
+- `late_night_kebab_stand_item_lks_sauce_shot`
+- `late_night_kebab_stand_item_lks_lambsomnia`
+- `late_night_kebab_stand_item_lks_yogurt_reboot`
+- `late_night_kebab_stand_item_lks_belly_of_chadz`
+- `late_night_kebab_stand_ui`
+- `late_night_kebab_stand_fx`
+- `late_night_kebab_stand_masks`
+
+Existing detailed requirements below remain valid where they do not conflict with this reconciliation.
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Late-Night Kebab Stand - the spiritual equivalent of an edible walk of shame, a symphony of salt, shame, and mystery meat.
 

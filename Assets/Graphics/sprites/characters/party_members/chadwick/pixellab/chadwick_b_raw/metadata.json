@@ -1,0 +1,36 @@
+{
+  "group_id": "180a2511-f02c-4c31-95d3-b4dce77767b8",
+  "states": [
+    {
+      "character": {
+        "id": "79f9bc67-ce4d-4521-87a0-65900e78247a",
+        "name": "Idle",
+        "prompt": "Chadwick, an aging frat bro around 38, semi-realistic adult proportions about 4.5 heads tall (not chibi). Shaggy bleach-blond hair under a backwards trucker hat (white foam front with a red oval patch, navy mesh back and navy bill), dark sunglasses perched on the hat, tanned skin, thin dark chin-strap goatee, cocky smirk with one raised eyebrow. White bead necklace. Coral pink polo shirt with the collar popped, layered over a mint green polo whose collar and sleeve cuffs show. Studded leather wrist cuff on the right wrist, chunky silver watch on the left wrist. Grey handheld game phone clipped to a white belt, navy lanyard key chain hanging from the belt loop. Light-wash bootcut jeans, white shell-toe sneakers with black stripes. Hands in his pockets, leaning back, swagger.",
+        "size": {
+          "width": 128,
+          "height": 128
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-11-04T13:51:44.268070+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-11-04T13:53:53.420368"
+}

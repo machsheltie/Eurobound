@@ -1,0 +1,74 @@
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "item_category": "Circus Food Vendor / Great Döner Debate",
+  "items": [
+    {
+      "item_id": "mmc_doner_illusions",
+      "display_name": "Doner of Illusions",
+      "item_type": "consumable",
+      "price": 7,
+      "effect": "Recovery with visual illusion chance.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "mmc_sausage_suspicion",
+      "display_name": "Sausage of Suspicion",
+      "item_type": "consumable",
+      "price": 6,
+      "effect": "Moderate recovery and Suspicious status.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "mmc_clown_dog",
+      "display_name": "Clown Dog Deluxe",
+      "item_type": "consumable",
+      "price": 9,
+      "effect": "Large recovery with carnival debuff risk.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "mmc_meatball_lollipop",
+      "display_name": "Meatball on a Lollipop Stick",
+      "item_type": "consumable",
+      "price": 5,
+      "effect": "Small recovery and embarrassment.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "mmc_brain_brat",
+      "display_name": "Glizzénstein's Brain Brat",
+      "item_type": "consumable",
+      "price": 12,
+      "effect": "High reward and severe random status.",
+      "acquisition": "Secret menu."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "Kebab Coins",
+      "ownership": "external"
+    },
+    {
+      "reference": "full clown gear equipment IDs",
+      "ownership": "external"
+    },
+    {
+      "reference": "Great Döner Debate",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "chef_chuckles_sidequest_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "great_doner_debate_mystery_sampled",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Circus Tickets, gold, or Kebab Coins as documented",
+    "price_confirmation_required": true
+  }
+}

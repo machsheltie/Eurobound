@@ -1,0 +1,79 @@
+{
+  "location_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+  "display_name": "Public Restroom - Grease Trap Shrine",
+  "satirical_subtitle": "Not a Toilet, Unless Desperate",
+  "world": "Debaucheryville",
+  "zone": "Kebab Alley crawlspace",
+  "location_type": "Secret Restroom / Buff and Lore Shrine",
+  "sub_types": [
+    "vendor or micro-location",
+    "quest integration"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/publicrestroomkebaballey.md (restroom portion only)"
+  ],
+  "access": {
+    "hours": "03:00-03:59 after discovery",
+    "entry_requirements": [
+      "grease_trap_shrine_crawlspace_discovered",
+      "time 03:00-03:59"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "gts_exit_kebab",
+      "destination_id": "debaucheryville_velvet_alley_kebab_01",
+      "from_node": "gts_exit",
+      "condition": "always_inside"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Inside Crawlspace -> Grease-Coated Fixture -> Cursed Sink Collection -> Meat-Glyph Mirror -> Fistø Pilgrimage Tag -> Hungover Kebab Icon -> Grease Haiku Wall -> Return Crawlspace",
+    "landmarks": [
+      "Inside Crawlspace",
+      "Grease-Coated Fixture",
+      "Cursed Sink Collection",
+      "Meat-Glyph Mirror",
+      "Fistø Pilgrimage Tag",
+      "Hungover Kebab Icon",
+      "Grease Haiku Wall",
+      "Return Crawlspace"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_velvet_alley_kebab_01 owns space beyond gts_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A grease-glazed biohazard shrine lit like a sacred fryer exhaust."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "sick orange",
+      "grease rainbow",
+      "fluorescent green",
+      "kebab red"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Not a Toilet, Unless Desperate",
+    "contrast": "A grease-glazed biohazard shrine lit like a sacred fryer exhaust."
+  },
+  "state_tracking": {
+    "grease_trap_shrine_crawlspace_discovered": false,
+    "grease_trap_shrine_access_window_open": false,
+    "stomach_of_steel_unlocked": false,
+    "greasy_prophet_unlocked": false,
+    "grease_shrine_fisto_lore_read": false,
+    "grease_shrine_icq_combo_sent": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "public_restroom_grease_trap_shrine_scene",
+      "public_restroom_grease_trap_shrine_characters",
+      "public_restroom_grease_trap_shrine_ui"
+    ]
+  }
+}

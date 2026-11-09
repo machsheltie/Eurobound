@@ -1,0 +1,231 @@
+{
+  "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+  "locations": [
+    {
+      "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+      "name": "Three-Crown Keg Haus",
+      "tag_id": "three_crown_keg_haus",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Sticky alley beneath three rusting crowns.",
+        "entry_condition": "three_crown_route_discovered; Bravado +1; no opener physically gates entry"
+      },
+      "interior": {
+        "theme": "A sticky royal dive bar whose patrons, creaky tiles and keg throne form a stealth dungeon.",
+        "features": [
+          "gate: tck_entry",
+          "puzzle: tck_floor",
+          "encounter: tck_barflies",
+          "boss: tck_sentinel",
+          "service: tck_service",
+          "selfie: tck_throne",
+          "exit: tck_exit"
+        ]
+      },
+      "functions": [
+        "Cross Bravado Threshold",
+        "Navigate Creaky Floor",
+        "Defeat Keg Sentinel",
+        "Claim Tour Rewards",
+        "Record Pre-Tour Completion",
+        "Buy Iron Gut Tripel",
+        "Use Velvet Keg Throne"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "tck_alley",
+      "to": "tck_entry",
+      "bidirectional": true
+    },
+    {
+      "from": "tck_entry",
+      "to": "tck_floor",
+      "bidirectional": true
+    },
+    {
+      "from": "tck_floor",
+      "to": "tck_barflies",
+      "bidirectional": true
+    },
+    {
+      "from": "tck_barflies",
+      "to": "tck_sentinel",
+      "bidirectional": true
+    },
+    {
+      "from": "tck_sentinel",
+      "to": "tck_service",
+      "bidirectional": true
+    },
+    {
+      "from": "tck_service",
+      "to": "tck_throne",
+      "bidirectional": true
+    },
+    {
+      "from": "tck_throne",
+      "to": "tck_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "tck_alley": {
+      "connects_to": [
+        "tck_entry"
+      ],
+      "type": "exterior",
+      "description": "Sticky alley beneath three rusting crowns."
+    },
+    "tck_entry": {
+      "connects_to": [
+        "tck_alley",
+        "tck_floor"
+      ],
+      "type": "gate",
+      "description": "Dive-bar door and confidence check."
+    },
+    "tck_floor": {
+      "connects_to": [
+        "tck_entry",
+        "tck_barflies"
+      ],
+      "type": "puzzle",
+      "description": "Safe and unsafe tiles among passed-out patrons."
+    },
+    "tck_barflies": {
+      "connects_to": [
+        "tck_floor",
+        "tck_sentinel"
+      ],
+      "type": "encounter",
+      "description": "Mini-mob patrol around booths."
+    },
+    "tck_sentinel": {
+      "connects_to": [
+        "tck_barflies",
+        "tck_service"
+      ],
+      "type": "boss",
+      "description": "Final challenge near the keg stacks."
+    },
+    "tck_service": {
+      "connects_to": [
+        "tck_sentinel",
+        "tck_throne"
+      ],
+      "type": "service",
+      "description": "Tour rewards and 10-Sov Iron Gut Tripel."
+    },
+    "tck_throne": {
+      "connects_to": [
+        "tck_service",
+        "tck_exit"
+      ],
+      "type": "selfie",
+      "description": "Drunken monarchy selfie landmark."
+    },
+    "tck_exit": {
+      "connects_to": [
+        "tck_throne"
+      ],
+      "type": "exit",
+      "description": "Returns toward Shadow Exchange."
+    }
+  },
+  "feature_details": {
+    "tck_alley": {
+      "display_name": "Three-Crown Alley",
+      "image_generation_description": "Sticky alley beneath three rusting crowns.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tck_entry": {
+      "display_name": "Bravado Threshold",
+      "image_generation_description": "Dive-bar door and confidence check.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tck_floor": {
+      "display_name": "Creaky Floor Route",
+      "image_generation_description": "Safe and unsafe tiles among passed-out patrons.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tck_barflies": {
+      "display_name": "Slurring Bar Flies",
+      "image_generation_description": "Mini-mob patrol around booths.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tck_sentinel": {
+      "display_name": "Keg Sentinel Arena",
+      "image_generation_description": "Final challenge near the keg stacks.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tck_service": {
+      "display_name": "Bartender Service",
+      "image_generation_description": "Tour rewards and 10-Sov Iron Gut Tripel.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tck_throne": {
+      "display_name": "Velvet Keg Throne",
+      "image_generation_description": "Drunken monarchy selfie landmark.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tck_exit": {
+      "display_name": "Alley Exit",
+      "image_generation_description": "Returns toward Shadow Exchange.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    }
+  },
+  "ambient_npcs": [
+    "passed-out patrons",
+    "sleeping bar crowd"
+  ]
+}

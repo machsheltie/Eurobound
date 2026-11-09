@@ -1,0 +1,114 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+  "ambient_audio": {
+    "base_layers": [
+      "muffled club crowd ambience",
+      "RGB bass pulse ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "vcs_inside_curtain",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "vcs_fixture",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "vcs_selfie_mirror",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "vcs_qr_tile",
+        "cue": "quest_loop"
+      },
+      {
+        "node_id": "vcs_graffiti",
+        "cue": "lore_loop"
+      },
+      {
+        "node_id": "vcs_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "item_pixelated_kebab_monkey_effect",
+      "description": "Sets pixelated_kebab_monkey_obtained; NFT #2."
+    },
+    {
+      "effect_id": "vcs_spite_reserve_effect",
+      "description": "Lore-only bottle; not awarded."
+    },
+    {
+      "effect_id": "vcs_nft_affinity_effect",
+      "description": "Documented protection buff."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "full service and named NPCs"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "documented denial or alternate crowd"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet neon reflections"
+    ],
+    "interior": [
+      "threshold-only weather read-through"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "velvet_curtain_club_vip_stall_fx",
+      "nodes": [
+        "vcs_inside_curtain",
+        "vcs_fixture",
+        "vcs_selfie_mirror",
+        "vcs_qr_tile",
+        "vcs_graffiti",
+        "vcs_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "black velvet",
+      "champagne gold",
+      "RGB shimmer",
+      "cracked tile grey"
+    ],
+    "emission_mask": "velvet_curtain_club_vip_stall_masks",
+    "readability": "interaction landmarks brighter than clutter"
+  },
+  "environmental_storytelling": [
+    "Interior side of the STAFF ONLY curtain.",
+    "Stained black-velvet toilet seat and chipped champagne holder.",
+    "Overhead mirror with CryptoQueen filter.",
+    "Peeling tile hides NFT #2 QR code.",
+    "ROI jokes, Fistø lore and DO NOT LOOK AT THE BABY clue.",
+    "Returns to Velvet Curtain Club."
+  ],
+  "accessibility": {
+    "variants": [
+      "Static RGB alternative",
+      "Base QR remains visible through status overlays",
+      "Text selfie-filter description",
+      "Reduced champagne drip"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

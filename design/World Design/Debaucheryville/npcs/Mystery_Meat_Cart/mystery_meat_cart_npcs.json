@@ -1,0 +1,69 @@
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "location_name": "Cirque du Shady - Mystery Meat Cart",
+  "npcs": [
+    {
+      "npc_id": "mmc_npc_chef_chuckles",
+      "display_name": "Chef Chuckles",
+      "role": "vendor and clown-gear sidequest giver",
+      "node": "mmc_chef",
+      "schedule": "circus hours",
+      "visual": "Cracked porcelain mask, stained chef whites and butterfly knife.",
+      "quest_bindings": [
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "mystery_meat_cart_ambient_1",
+      "display_name": "crying children",
+      "spawn_nodes": [
+        "mmc_chef",
+        "mmc_storage",
+        "mmc_consume"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "mystery_meat_cart_ambient_2",
+      "display_name": "circus customers",
+      "spawn_nodes": [
+        "mmc_chef",
+        "mmc_storage",
+        "mmc_consume"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "mystery_meat_cart_ambient_3",
+      "display_name": "steam silhouettes",
+      "spawn_nodes": [
+        "mmc_chef",
+        "mmc_storage",
+        "mmc_consume"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "mmc_npc_chef_chuckles",
+      "node_id": "mmc_chef",
+      "role": "vendor and clown-gear sidequest giver"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient density during events",
+    "Do not add NPCs to empty shrine/restroom specs"
+  ]
+}

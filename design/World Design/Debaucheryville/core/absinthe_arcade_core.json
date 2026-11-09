@@ -114,7 +114,7 @@
   },
   "visual_theme": {
     "production_style": "painterly_hd2d_painted_box_diorama",
-    "engine": "Godot 4.4",
+    "engine": "Godot 4.7",
     "camera": "fixed_hd2d_tilt_perspective_narrow_fov",
     "primary_colors": [
       "#39FF14",

@@ -1,0 +1,33 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+  "location_name": "Velvet Curtain Club VIP Stall",
+  "npcs": [],
+  "ambient_npcs": [
+    {
+      "group_id": "velvet_curtain_club_vip_stall_ambient_1",
+      "display_name": "muffled club crowd",
+      "spawn_nodes": [
+        "vcs_selfie_mirror",
+        "vcs_qr_tile",
+        "vcs_graffiti"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "velvet_curtain_club_vip_stall_ambient_2",
+      "display_name": "RGB bass pulse",
+      "spawn_nodes": [
+        "vcs_selfie_mirror",
+        "vcs_qr_tile",
+        "vcs_graffiti"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient count during quest scenes",
+    "Contrast named NPC silhouettes"
+  ]
+}

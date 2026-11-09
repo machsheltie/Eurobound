@@ -1,0 +1,75 @@
+{
+  "location_id": "debaucheryville_shop_threads_treads_01",
+  "display_name": "Threads & Treads",
+  "satirical_subtitle": "Leave Your Old Self at the Door",
+  "world": "Debaucheryville",
+  "zone": "Neon Entertainment Quarter",
+  "location_type": "24-Hour Equipment / Identity Shop",
+  "sub_types": [
+    "quest location",
+    "service or micro-location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/threads_and_treads.md",
+    "docs/superpowers/specs/2026-11-02-threads-and-treads-location-package-design.md"
+  ],
+  "access": {
+    "hours": "24/7; transformation crowd 02:00-05:00",
+    "entry_requirements": [
+      "Always open"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "tt_exit_quarter",
+      "destination_id": "debaucheryville_neon_entertainment_quarter",
+      "from_node": "tt_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Chrome Storefront -> Jacket Gauntlet -> Footwear Wall -> Chains and Accessories -> Mirror Assessment -> Zdeněk Counter -> Quarter Exit",
+    "landmarks": [
+      "Chrome Storefront",
+      "Jacket Gauntlet",
+      "Footwear Wall",
+      "Chains and Accessories",
+      "Mirror Assessment",
+      "Zdeněk Counter",
+      "Quarter Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_neon_entertainment_quarter owns space beyond tt_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A dark leather-and-chrome shop selling defense, style and late-night reinvention."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "black leather",
+      "chrome",
+      "dark wood",
+      "industrial amber"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Leave Your Old Self at the Door",
+    "contrast": "A dark leather-and-chrome shop selling defense, style and late-night reinvention."
+  },
+  "state_tracking": {
+    "threads_treads_2am_crowd": false,
+    "threads_treads_transformation_chosen": false,
+    "cool_factor_assessed": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "threads_and_treads_exterior",
+      "threads_and_treads_interior",
+      "threads_and_treads_ui"
+    ]
+  }
+}

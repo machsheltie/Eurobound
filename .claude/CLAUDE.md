@@ -1,6 +1,6 @@
 # CLAUDE.md — Eurobound
 
-Eurobound is a satirical, EarthBound-style JRPG built in **Unity (Universal Render Pipeline)**, targeting **Steam/desktop**. Three aging frat bros — Lord Pilsner, Chadwick, and Bradley — take one last bender across a parody Europe soaked in 90s/early-2000s pop culture. Read `design/narrative/Synopsis.md` before writing or editing any game content.
+Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.7 (Forward+ renderer)**, targeting **Steam/desktop**. Visual style is a 2.5D HD-2D hybrid (2D sprites in painterly 3D dioramas) in the vein of Star Ocean: The Second Story and Bravely Default 1 and 2. Three aging frat bros — Lord Pilsner, Chadwick, and Bradley — take one last bender across a parody Europe soaked in 90s/early-2000s pop culture. Read `design/narrative/Synopsis.md` before writing or editing any game content.
 
 ## Content rules (non-negotiable)
 
@@ -24,7 +24,7 @@ Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest 
 
 ## 3D assets
 
-**3D work** (any building, prop, or decal modeled for Unity; Tripo, Blender, meshes, materials): read `design/style_guides/3d_asset_rules.md` before starting. It is binding: references are canon, architecture passes a gray clay review before ornament, the author hand-paints all distress, and agents drive the tools themselves.
+**3D work** (any building, prop, or decal modeled for the game; Tripo, Blender, meshes, materials): read `design/style_guides/3d_asset_rules.md` before starting. It is binding: references are canon, architecture passes a gray clay review before ornament, the author hand-paints all distress, and agents drive the tools themselves.
 
 ## Ask the author first
 
@@ -41,5 +41,8 @@ Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest 
 ## Repo notes
 
 - A folder restructure is in flight on `chore/folder-restructure` (target layout: `game/`, `design/`, `marketing/`, `production/`, `tools/`, `docs/`; spec: `docs/superpowers/specs/2026-07-31-folder-restructure-design.md`). `_sorting/` on that branch is the author's staging area — never touch it. After the restructure merges, refresh paths in this file.
-- Tests: Unity Test Framework, Edit Mode and Play Mode tests in the Unity project's `Assets/Tests/`. Data validation: `Tools/validate_data.py`.
+- Godot project lives in `game/`. Tests: GUT (`game/addons/gut`), tests in `game/tests/`. Data validation: `tools/validate_data.py`.
+- Installed addons: Dialogue Manager, Phantom Camera, LimboAI, NoClipBillboardSprite3D, Aseprite Wizard, GUT, Godot MCP Pro (`.mcp.json` → `tools/godot_mcp_pro_server`, port 6505; open the editor to connect; paid licence, both its folders are gitignored, reinstall from the purchase zip). Runtime tools (screenshots, input) need `play_scene` first. Tilt-shift post shader: `game/shaders/post/tilt_shift_layer.tscn`.
+- Image cleanup for generated art: `tools/art_cleanup/` (see its README).
+- **Character sprites** follow `design/style_guides/character_sprite_pipeline.md` (binding: 128x128, semi-realistic, detailed faces, Firefly -> PixelLab -> Aseprite -> Aseprite Wizard).
 - New files and folders: snake_case, no spaces (per the restructure spec). Match existing conventions when editing.

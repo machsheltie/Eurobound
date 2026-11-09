@@ -1,0 +1,32 @@
+{
+ "F": 5599.5003285668245,
+ "pitch": 16.394099851154987,
+ "yaw": 25.1612060969549,
+ "roll": 1.294980877660044,
+ "C": [
+  3.5695939086294417,
+  -11.16751269035533,
+  0.6477157360406091
+ ],
+ "note": "principal point at image centre; horizon pinned y=4000 at x=600",
+ "scale_note": "s=1.1168 m per provisional unit; doorway assembly 4.4 m wide; X=0 arch axis (gentleman/keystone), doorway assembly spans X -2.07..2.33; Z=0 street; facade plane Y=0",
+ "blender": {
+  "location": [
+   3.5695939086294417,
+   -11.16751269035533,
+   0.6477157360406091
+  ],
+  "rotation_euler_xyz_deg": [
+   106.39806312692248,
+   -1.2423224698727813,
+   24.795649949843522
+  ],
+  "lens_mm": 38.41120652218096,
+  "sensor_width_mm": 36.0,
+  "sensor_fit": "HORIZONTAL",
+  "shift": [
+   0,
+   0
+  ]
+ }
+}

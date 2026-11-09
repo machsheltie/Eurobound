@@ -1,5 +1,45 @@
 # Midnight Munchies General Store - Complete PNG Asset Requirements
 
+## 2026 Authoritative HD-2D Reconciliation
+
+- **Location ID:** `debaucheryville_shop_midnight_munchies_01`
+- **Engine:** Godot 4.4
+- **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, selective in-world pixel screens, emission and occlusion masks.
+- **Authoritative mapping:** `sprite_mapping/midnight_munchies_general_store_sprite_mapping.json`
+
+### Canonical Asset IDs
+
+- `midnight_munchies_general_store_exterior` → `midnight_munchies_general_store_exterior.png` — exterior/threshold painted layer; node `mm_storefront`.
+- `midnight_munchies_general_store_interior` → `midnight_munchies_general_store_interior.png` — interior/service-footprint painted layer; node `mm_recovery_aisle`.
+- `midnight_munchies_general_store_node_mm_recovery_aisle` → `midnight_munchies_general_store_mm_recovery_aisle.png` — shop landmark; node `mm_recovery_aisle`.
+- `midnight_munchies_general_store_node_mm_hygiene_aisle` → `midnight_munchies_general_store_mm_hygiene_aisle.png` — shop landmark; node `mm_hygiene_aisle`.
+- `midnight_munchies_general_store_node_mm_heat_lamp` → `midnight_munchies_general_store_mm_heat_lamp.png` — interaction landmark; node `mm_heat_lamp`.
+- `midnight_munchies_general_store_node_mm_counter` → `midnight_munchies_general_store_mm_counter.png` — service landmark; node `mm_counter`.
+- `midnight_munchies_general_store_node_mm_exit` → `midnight_munchies_general_store_mm_exit.png` — exit landmark; node `mm_exit`.
+- `midnight_munchies_general_store_npc_mm_npc_vera` → `midnight_munchies_general_store_mm_npc_vera.png` — character sprite; node `mm_counter`.
+- `midnight_munchies_general_store_item_mm_energy_drink` → `midnight_munchies_general_store_mm_energy_drink.png` — item/service icon.
+- `midnight_munchies_general_store_item_mm_instant_noodles` → `midnight_munchies_general_store_mm_instant_noodles.png` — item/service icon.
+- `midnight_munchies_general_store_item_mm_heat_lamp_kebab` → `midnight_munchies_general_store_mm_heat_lamp_kebab.png` — item/service icon.
+- `midnight_munchies_general_store_item_mm_hygiene_kit` → `midnight_munchies_general_store_mm_hygiene_kit.png` — item/service icon.
+- `midnight_munchies_general_store_item_mm_earplugs` → `midnight_munchies_general_store_mm_earplugs.png` — item/service icon.
+- `midnight_munchies_general_store_ui` → `midnight_munchies_general_store_ui.png` — interaction and status UI.
+- `midnight_munchies_general_store_fx` → `midnight_munchies_general_store_fx.png` — environmental FX.
+- `midnight_munchies_general_store_masks` → `midnight_munchies_general_store_masks.png` — emission/occlusion masks.
+
+### Accessibility Assets
+
+- Low-glare store mode.
+- Text countdown to closing.
+- Price-change confirmation.
+- Heat-lamp result icon.
+- Provide clean plates with smoke, static, flicker, crowds and particles removed.
+- Provide text/icon equivalents for audio, color and timing-only cues.
+
+### Delivery Reconciliation
+
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Midnight Munchies General Store - late-night survival essentials for those who should have planned ahead, open when everything else is closed, priced accordingly.
 

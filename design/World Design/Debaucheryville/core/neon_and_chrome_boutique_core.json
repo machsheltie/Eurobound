@@ -1,0 +1,78 @@
+{
+  "location_id": "debaucheryville_shop_neon_chrome_01",
+  "display_name": "Neon & Chrome Boutique",
+  "satirical_subtitle": "Equip Your Night",
+  "world": "Debaucheryville",
+  "zone": "Premium end of Neon Quarter",
+  "location_type": "Club Gear Boutique / Status Merchant",
+  "sub_types": [
+    "quest location",
+    "service or micro-location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/neon_and_chrome_boutique.md",
+    "docs/superpowers/specs/2026-11-02-neon-and-chrome-boutique-location-package-design.md"
+  ],
+  "access": {
+    "hours": "16:00-04:00",
+    "entry_requirements": [
+      "Store open",
+      "Money for purchases"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "ncb_exit_quarter",
+      "destination_id": "debaucheryville_neon_entertainment_quarter",
+      "from_node": "ncb_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Glass Storefront -> Eyewear Station -> Footwear Station -> Premium Stock -> Fitting Area -> Club Simulation -> Katarina Counter -> Quarter Exit",
+    "landmarks": [
+      "Glass Storefront",
+      "Eyewear Station",
+      "Footwear Station",
+      "Premium Stock",
+      "Fitting Area",
+      "Club Simulation",
+      "Katarina Counter",
+      "Quarter Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_neon_entertainment_quarter owns space beyond ncb_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A glass-and-chrome nightclub simulation that sells the idea of entry before the club does."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "chrome",
+      "purple neon",
+      "hot pink",
+      "showroom black"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Equip Your Night",
+    "contrast": "A glass-and-chrome nightclub simulation that sells the idea of entry before the club does."
+  },
+  "state_tracking": {
+    "neon_chrome_open": false,
+    "neon_chrome_premium_unlocked": false,
+    "vip_potential_assessed": false,
+    "club_simulation_complete": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "neon_and_chrome_boutique_exterior",
+      "neon_and_chrome_boutique_interior",
+      "neon_and_chrome_boutique_ui"
+    ]
+  }
+}

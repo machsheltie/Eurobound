@@ -713,7 +713,7 @@
           "description": "Overpriced token conversion station",
           "interaction_type": "shop_interface",
           "exchange_rates": {
-            "kebab_coins_to_tokens": "1:5",
+            "sovs_to_tokens": "1:1",
             "special_tokens": "limited_availability"
           },
           "special_purchases": {

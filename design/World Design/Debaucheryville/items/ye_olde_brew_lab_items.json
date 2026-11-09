@@ -1,0 +1,73 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+  "item_category": "Brewery Tour local rewards and signature beer",
+  "items": [
+    {
+      "item_id": "opener_ye_olde_brew_lab",
+      "display_name": "Ye Olde B.R.E.W. Lab Bottle Opener",
+      "item_type": "brewery_opener",
+      "price": 0,
+      "effect": "Pixel hop cone; Algorithm Verified. Never sold.",
+      "acquisition": "Granted with stamp after eligible challenge completion."
+    },
+    {
+      "item_id": "stamp_ye_olde_brew_lab",
+      "display_name": "Ye Olde B.R.E.W. Lab Stamp",
+      "item_type": "brewery_stamp",
+      "price": 0,
+      "effect": "Pixel hop with hash; tour stop 4.",
+      "acquisition": "Granted after eligible challenge completion."
+    },
+    {
+      "item_id": "beer_ye_olde_brew_lab",
+      "display_name": "Blockchain Bock",
+      "item_type": "signature_beer",
+      "price": "18 ±5",
+      "effect": "Volatile live price from 13 to 23 Sovs.",
+      "acquisition": "Purchasable after rewards granted."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "bottle_opener_keychain (external permanent quest container)",
+      "ownership": "external authoritative item/quest source"
+    },
+    {
+      "reference": "Brewery Passport Book",
+      "ownership": "external authoritative item/quest source"
+    },
+    {
+      "reference": "Publandia brewery_tour_active trigger",
+      "ownership": "external authoritative item/quest source"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "brew_lab_challenge_complete",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "brew_lab_tour_rewards_deferred",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "brew_lab_tour_rewards_granted",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "brew_lab_selfie_unlocked",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "debaucheryville_brewery_tour_complete",
+      "type": "tour state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs",
+    "openers_are_never_sold": true,
+    "stamp_is_never_sold": true,
+    "signature_beer_requires_tour_rewards": true,
+    "price_confirmation_required": true
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "location_id": "debaucheryville_shop_threads_treads_01",
+  "location_name": "Threads & Treads",
+  "npcs": [
+    {
+      "npc_id": "tt_npc_zdenek",
+      "display_name": "Zdeněk",
+      "role": "proprietor and identity assessor",
+      "node": "tt_counter",
+      "schedule": "always",
+      "visual": "Dark work shirt, tape measure and chrome rings.",
+      "quest_bindings": [],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "threads_and_treads_ambient_1",
+      "display_name": "daytime shoppers",
+      "spawn_nodes": [
+        "tt_accessories",
+        "tt_fitting_mirror",
+        "tt_counter"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "threads_and_treads_ambient_2",
+      "display_name": "02:00 transformation crowd",
+      "spawn_nodes": [
+        "tt_accessories",
+        "tt_fitting_mirror",
+        "tt_counter"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "tt_npc_zdenek",
+      "node_id": "tt_counter",
+      "role": "proprietor and identity assessor"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient count during quest scenes",
+    "Contrast named NPC silhouettes"
+  ]
+}

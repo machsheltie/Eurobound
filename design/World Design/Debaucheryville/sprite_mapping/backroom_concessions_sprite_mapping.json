@@ -1,0 +1,200 @@
+{
+  "location_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "backroom_concessions_environment",
+      "atlas": "backroom_concessions_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "backroom_concessions_exterior",
+          "filename": "backroom_concessions_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "bc_inside_door"
+        },
+        {
+          "asset_id": "backroom_concessions_interior",
+          "filename": "backroom_concessions_interior.png",
+          "role": "interior/service-footprint painted layer",
+          "node_id": "bc_counter"
+        },
+        {
+          "asset_id": "backroom_concessions_node_bc_counter",
+          "filename": "backroom_concessions_bc_counter.png",
+          "role": "service landmark",
+          "node_id": "bc_counter"
+        },
+        {
+          "asset_id": "backroom_concessions_node_bc_vending_pair",
+          "filename": "backroom_concessions_bc_vending_pair.png",
+          "role": "interaction landmark",
+          "node_id": "bc_vending_pair"
+        },
+        {
+          "asset_id": "backroom_concessions_node_bc_seating",
+          "filename": "backroom_concessions_bc_seating.png",
+          "role": "social landmark",
+          "node_id": "bc_seating"
+        },
+        {
+          "asset_id": "backroom_concessions_node_bc_exit",
+          "filename": "backroom_concessions_bc_exit.png",
+          "role": "exit landmark",
+          "node_id": "bc_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "backroom_concessions_characters",
+      "atlas": "backroom_concessions_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "backroom_concessions_npc_bc_npc_donny_exe",
+          "filename": "backroom_concessions_bc_npc_donny_exe.png",
+          "role": "character sprite",
+          "node_id": "bc_counter"
+        }
+      ]
+    },
+    {
+      "group_id": "backroom_concessions_ui_fx",
+      "atlas": "backroom_concessions_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "backroom_concessions_item_bc_crypto_doner",
+          "filename": "backroom_concessions_bc_crypto_doner.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "backroom_concessions_item_bc_thermal_paste_sundae",
+          "filename": "backroom_concessions_bc_thermal_paste_sundae.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "backroom_concessions_item_bc_ram_chips_dip",
+          "filename": "backroom_concessions_bc_ram_chips_dip.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "backroom_concessions_item_bc_protocol_pocket",
+          "filename": "backroom_concessions_bc_protocol_pocket.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "backroom_concessions_ui",
+          "filename": "backroom_concessions_ui.png",
+          "role": "interaction and status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "backroom_concessions_fx",
+          "filename": "backroom_concessions_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "backroom_concessions_masks",
+          "filename": "backroom_concessions_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "bc_npc_donny_exe_standard",
+      "asset_id": "backroom_concessions_npc_bc_npc_donny_exe",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "backroom_concessions_emission",
+      "mask_asset": "backroom_concessions_masks",
+      "nodes": [
+        "bc_inside_door",
+        "bc_counter",
+        "bc_vending_pair",
+        "bc_seating",
+        "bc_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "bc_exit_cyberspace",
+      "destination_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+      "from_node": "bc_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "bc_order_food",
+      "node_id": "bc_counter",
+      "highlight_asset": "backroom_concessions_node_bc_counter"
+    },
+    {
+      "interaction_id": "bc_consume_food",
+      "node_id": "bc_seating",
+      "highlight_asset": "backroom_concessions_node_bc_seating"
+    },
+    {
+      "interaction_id": "bc_inspect_vending",
+      "node_id": "bc_vending_pair",
+      "highlight_asset": "backroom_concessions_node_bc_vending_pair"
+    },
+    {
+      "interaction_id": "bc_request_referral",
+      "node_id": "bc_counter",
+      "highlight_asset": "backroom_concessions_node_bc_counter"
+    },
+    {
+      "interaction_id": "bc_return",
+      "node_id": "bc_exit",
+      "highlight_asset": "backroom_concessions_node_bc_exit"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "backroom_concessions_masks",
+      "channels": {
+        "r": "signs",
+        "g": "screens/practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 10,
+    "reduced_fx_asset": "backroom_concessions_fx"
+  }
+}

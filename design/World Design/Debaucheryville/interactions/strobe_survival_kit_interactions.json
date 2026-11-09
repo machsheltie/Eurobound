@@ -1,0 +1,150 @@
+{
+  "location_id": "debaucheryville_vendor_strobe_survival_01",
+  "events": [
+    {
+      "event_id": "ssk_shop_audio",
+      "display_name": "Browse Audio Defense",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "ssk_audio_defense"
+      },
+      "requirements": [],
+      "results": [
+        "open_audio_defense_stock"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "ssk_shop_visual",
+      "display_name": "Browse Visual Gear",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "ssk_visual_gear"
+      },
+      "requirements": [],
+      "results": [
+        "open_visual_stock"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "ssk_read_decibels",
+      "display_name": "Read Decibel Display",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "ssk_decibel_display"
+      },
+      "requirements": [],
+      "results": [
+        "show_club_hazard_preview"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "ssk_briefing",
+      "display_name": "Request Tactical Briefing",
+      "trigger": {
+        "verb": "talk",
+        "node_id": "ssk_operator"
+      },
+      "requirements": [],
+      "results": [
+        "strobe_tactical_briefing_seen"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "ssk_checkout",
+      "display_name": "Purchase Equipment",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "ssk_operator"
+      },
+      "requirements": [],
+      "results": [
+        "apply_midnight_markup_if_active"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "ssk_shop_audio",
+      "node_id": "ssk_audio_defense",
+      "verb": "shop",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ssk_shop_visual",
+      "node_id": "ssk_visual_gear",
+      "verb": "shop",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ssk_read_decibels",
+      "node_id": "ssk_decibel_display",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ssk_briefing",
+      "node_id": "ssk_operator",
+      "verb": "talk",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ssk_checkout",
+      "node_id": "ssk_operator",
+      "verb": "purchase",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "strobe_survival_open",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "strobe_survival_midnight_markup",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "strobe_tactical_briefing_seen",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Equip Yourself. The Night Is Hostile.",
+    "Military-surplus efficiency applied to rave survival."
+  ]
+}

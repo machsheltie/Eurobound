@@ -1,0 +1,74 @@
+{
+  "location_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+  "display_name": "Backroom Concessions",
+  "satirical_subtitle": "404: Calories Not Found",
+  "world": "Debaucheryville",
+  "zone": "Hidden room behind Cyberspace Kavarna",
+  "location_type": "Hidden Food Vendor / Digital Underground Concessions",
+  "sub_types": [
+    "quest location",
+    "service hub"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/backroomconcessions.md",
+    "docs/superpowers/specs/2026-11-02-backroom-concessions-location-package-design.md"
+  ],
+  "access": {
+    "hours": "24/7 after discovery",
+    "entry_requirements": [
+      "cyberspace_backroom_concessions_entrance_discovered"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "bc_exit_cyberspace",
+      "destination_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+      "from_node": "bc_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Inside Hidden Door -> Donny.exe Counter -> Gutted Vending Pair -> Improvised Seating -> Return Door",
+    "landmarks": [
+      "Inside Hidden Door",
+      "Donny.exe Counter",
+      "Gutted Vending Pair",
+      "Improvised Seating",
+      "Return Door"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_hostelrow_cyberspace_kavarna_01 owns space beyond bc_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A concession booth wedged between gutted vending machines and hacked server light."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D painted faces, depth cards and billboard/cutout props",
+    "palette": [
+      "sick fluorescent",
+      "server blue",
+      "thermal-paste silver",
+      "error red"
+    ]
+  },
+  "satirical_design": {
+    "core_target": "404: Calories Not Found",
+    "contrast": "A concession booth wedged between gutted vending machines and hacked server light."
+  },
+  "state_tracking": {
+    "backroom_concessions_discovered": false,
+    "backroom_respect_earned": false,
+    "digidysentery_active": false,
+    "backroom_black_market_referral": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "backroom_concessions_exterior",
+      "backroom_concessions_interior",
+      "backroom_concessions_ui"
+    ]
+  }
+}

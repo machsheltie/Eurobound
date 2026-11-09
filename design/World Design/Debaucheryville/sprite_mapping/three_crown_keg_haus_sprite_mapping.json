@@ -1,0 +1,259 @@
+{
+  "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter dungeon traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "three_crown_keg_haus_environment",
+      "atlas": "three_crown_keg_haus_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "three_crown_keg_haus_exterior",
+          "filename": "three_crown_keg_haus_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "tck_alley"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_interior",
+          "filename": "three_crown_keg_haus_interior.png",
+          "role": "interior painted faces",
+          "node_id": "tck_entry"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_node_tck_entry",
+          "filename": "three_crown_keg_haus_tck_entry.png",
+          "role": "gate landmark",
+          "node_id": "tck_entry"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_node_tck_floor",
+          "filename": "three_crown_keg_haus_tck_floor.png",
+          "role": "puzzle landmark",
+          "node_id": "tck_floor"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_node_tck_barflies",
+          "filename": "three_crown_keg_haus_tck_barflies.png",
+          "role": "encounter landmark",
+          "node_id": "tck_barflies"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_node_tck_sentinel",
+          "filename": "three_crown_keg_haus_tck_sentinel.png",
+          "role": "boss landmark",
+          "node_id": "tck_sentinel"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_node_tck_service",
+          "filename": "three_crown_keg_haus_tck_service.png",
+          "role": "service landmark",
+          "node_id": "tck_service"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_node_tck_throne",
+          "filename": "three_crown_keg_haus_tck_throne.png",
+          "role": "selfie landmark",
+          "node_id": "tck_throne"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_node_tck_exit",
+          "filename": "three_crown_keg_haus_tck_exit.png",
+          "role": "exit landmark",
+          "node_id": "tck_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "three_crown_keg_haus_characters",
+      "atlas": "three_crown_keg_haus_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "three_crown_keg_haus_npc_tck_npc_bartender",
+          "filename": "three_crown_keg_haus_tck_npc_bartender.png",
+          "role": "character sprite",
+          "node_id": "tck_service"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_npc_tck_npc_barflies",
+          "filename": "three_crown_keg_haus_tck_npc_barflies.png",
+          "role": "character sprite",
+          "node_id": "tck_barflies"
+        },
+        {
+          "asset_id": "three_crown_keg_haus_npc_tck_npc_sentinel",
+          "filename": "three_crown_keg_haus_tck_npc_sentinel.png",
+          "role": "character sprite",
+          "node_id": "tck_sentinel"
+        }
+      ]
+    },
+    {
+      "group_id": "three_crown_keg_haus_ui_fx",
+      "atlas": "three_crown_keg_haus_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "three_crown_keg_haus_item_opener_three_crown_keg_haus",
+          "filename": "three_crown_keg_haus_opener_three_crown_keg_haus.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "three_crown_keg_haus_item_stamp_three_crown_keg_haus",
+          "filename": "three_crown_keg_haus_stamp_three_crown_keg_haus.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "three_crown_keg_haus_item_beer_three_crown_keg_haus",
+          "filename": "three_crown_keg_haus_beer_three_crown_keg_haus.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "three_crown_keg_haus_ui",
+          "filename": "three_crown_keg_haus_ui.png",
+          "role": "puzzle/tour UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "three_crown_keg_haus_fx",
+          "filename": "three_crown_keg_haus_fx.png",
+          "role": "environmental and combat FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "three_crown_keg_haus_masks",
+          "filename": "three_crown_keg_haus_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "tck_npc_bartender_standard",
+      "asset_id": "three_crown_keg_haus_npc_tck_npc_bartender",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "tck_npc_barflies_standard",
+      "asset_id": "three_crown_keg_haus_npc_tck_npc_barflies",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "tck_npc_sentinel_standard",
+      "asset_id": "three_crown_keg_haus_npc_tck_npc_sentinel",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "three_crown_keg_haus_lighting",
+      "mask_asset": "three_crown_keg_haus_masks",
+      "nodes": [
+        "tck_alley",
+        "tck_entry",
+        "tck_floor",
+        "tck_barflies",
+        "tck_sentinel",
+        "tck_service",
+        "tck_throne",
+        "tck_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "tck_exit_shadow_alley",
+      "destination_id": "debaucheryville_oldtown_shadow_exchange_01",
+      "from_node": "tck_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "tck_bravado",
+      "node_id": "tck_entry",
+      "highlight_asset": "three_crown_keg_haus_node_tck_entry"
+    },
+    {
+      "interaction_id": "tck_stealth",
+      "node_id": "tck_floor",
+      "highlight_asset": "three_crown_keg_haus_node_tck_floor"
+    },
+    {
+      "interaction_id": "tck_boss",
+      "node_id": "tck_sentinel",
+      "highlight_asset": "three_crown_keg_haus_node_tck_sentinel"
+    },
+    {
+      "interaction_id": "tck_rewards",
+      "node_id": "tck_service",
+      "highlight_asset": "three_crown_keg_haus_node_tck_service"
+    },
+    {
+      "interaction_id": "tck_defer",
+      "node_id": "tck_service",
+      "highlight_asset": "three_crown_keg_haus_node_tck_service"
+    },
+    {
+      "interaction_id": "tck_buy",
+      "node_id": "tck_service",
+      "highlight_asset": "three_crown_keg_haus_node_tck_service"
+    },
+    {
+      "interaction_id": "tck_selfie",
+      "node_id": "tck_throne",
+      "highlight_asset": "three_crown_keg_haus_node_tck_throne"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "three_crown_keg_haus_masks",
+      "channels": {
+        "r": "signs",
+        "g": "puzzle cues",
+        "b": "boss cues",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 8,
+    "reduced_fx_asset": "three_crown_keg_haus_fx"
+  }
+}

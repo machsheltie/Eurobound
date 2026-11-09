@@ -1,0 +1,244 @@
+{
+  "location_id": "debaucheryville_shop_neon_chrome_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "neon_and_chrome_boutique_environment",
+      "atlas": "neon_and_chrome_boutique_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "neon_and_chrome_boutique_exterior",
+          "filename": "neon_and_chrome_boutique_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "ncb_storefront"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_interior",
+          "filename": "neon_and_chrome_boutique_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "ncb_eyewear"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_node_ncb_eyewear",
+          "filename": "neon_and_chrome_boutique_ncb_eyewear.png",
+          "role": "shop landmark",
+          "node_id": "ncb_eyewear"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_node_ncb_footwear",
+          "filename": "neon_and_chrome_boutique_ncb_footwear.png",
+          "role": "shop landmark",
+          "node_id": "ncb_footwear"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_node_ncb_premium",
+          "filename": "neon_and_chrome_boutique_ncb_premium.png",
+          "role": "shop landmark",
+          "node_id": "ncb_premium"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_node_ncb_fitting",
+          "filename": "neon_and_chrome_boutique_ncb_fitting.png",
+          "role": "interaction landmark",
+          "node_id": "ncb_fitting"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_node_ncb_simulation",
+          "filename": "neon_and_chrome_boutique_ncb_simulation.png",
+          "role": "interaction landmark",
+          "node_id": "ncb_simulation"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_node_ncb_counter",
+          "filename": "neon_and_chrome_boutique_ncb_counter.png",
+          "role": "service landmark",
+          "node_id": "ncb_counter"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_node_ncb_exit",
+          "filename": "neon_and_chrome_boutique_ncb_exit.png",
+          "role": "exit landmark",
+          "node_id": "ncb_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "neon_and_chrome_boutique_characters",
+      "atlas": "neon_and_chrome_boutique_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "neon_and_chrome_boutique_npc_ncb_npc_katarina",
+          "filename": "neon_and_chrome_boutique_ncb_npc_katarina.png",
+          "role": "character sprite",
+          "node_id": "ncb_counter"
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_npc_ncb_npc_host",
+          "filename": "neon_and_chrome_boutique_ncb_npc_host.png",
+          "role": "character sprite",
+          "node_id": "ncb_fitting"
+        }
+      ]
+    },
+    {
+      "group_id": "neon_and_chrome_boutique_ui_fx",
+      "atlas": "neon_and_chrome_boutique_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "neon_and_chrome_boutique_item_ncb_led_glasses",
+          "filename": "neon_and_chrome_boutique_ncb_led_glasses.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_item_ncb_strobe_shades",
+          "filename": "neon_and_chrome_boutique_ncb_strobe_shades.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_item_ncb_chrome_shoes",
+          "filename": "neon_and_chrome_boutique_ncb_chrome_shoes.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_item_ncb_premium_wrist_cuff",
+          "filename": "neon_and_chrome_boutique_ncb_premium_wrist_cuff.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_item_ncb_glow_harness",
+          "filename": "neon_and_chrome_boutique_ncb_glow_harness.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_ui",
+          "filename": "neon_and_chrome_boutique_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_fx",
+          "filename": "neon_and_chrome_boutique_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "neon_and_chrome_boutique_masks",
+          "filename": "neon_and_chrome_boutique_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "ncb_npc_katarina_standard",
+      "asset_id": "neon_and_chrome_boutique_npc_ncb_npc_katarina",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "ncb_npc_host_standard",
+      "asset_id": "neon_and_chrome_boutique_npc_ncb_npc_host",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "neon_and_chrome_boutique_lighting",
+      "mask_asset": "neon_and_chrome_boutique_masks",
+      "nodes": [
+        "ncb_storefront",
+        "ncb_eyewear",
+        "ncb_footwear",
+        "ncb_premium",
+        "ncb_fitting",
+        "ncb_simulation",
+        "ncb_counter",
+        "ncb_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "ncb_exit_quarter",
+      "destination_id": "debaucheryville_neon_entertainment_quarter",
+      "from_node": "ncb_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "ncb_browse",
+      "node_id": "ncb_eyewear",
+      "highlight_asset": "neon_and_chrome_boutique_node_ncb_eyewear"
+    },
+    {
+      "interaction_id": "ncb_premium",
+      "node_id": "ncb_premium",
+      "highlight_asset": "neon_and_chrome_boutique_node_ncb_premium"
+    },
+    {
+      "interaction_id": "ncb_fit",
+      "node_id": "ncb_fitting",
+      "highlight_asset": "neon_and_chrome_boutique_node_ncb_fitting"
+    },
+    {
+      "interaction_id": "ncb_sim",
+      "node_id": "ncb_simulation",
+      "highlight_asset": "neon_and_chrome_boutique_node_ncb_simulation"
+    },
+    {
+      "interaction_id": "ncb_vip",
+      "node_id": "ncb_counter",
+      "highlight_asset": "neon_and_chrome_boutique_node_ncb_counter"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "neon_and_chrome_boutique_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 12,
+    "reduced_fx_asset": "neon_and_chrome_boutique_fx"
+  }
+}

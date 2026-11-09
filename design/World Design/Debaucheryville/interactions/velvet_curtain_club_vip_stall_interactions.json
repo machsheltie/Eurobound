@@ -1,0 +1,177 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+  "events": [
+    {
+      "event_id": "vcs_scan_nft",
+      "display_name": "Scan Hidden QR",
+      "trigger": {
+        "verb": "scan",
+        "node_id": "vcs_qr_tile"
+      },
+      "requirements": [],
+      "results": [
+        "pixelated_kebab_monkey_obtained"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcs_read_clue",
+      "display_name": "Read DO NOT LOOK AT THE BABY",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "vcs_graffiti"
+      },
+      "requirements": [],
+      "results": [
+        "meme_black_market_graffiti_clue_read"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcs_fisto",
+      "display_name": "Read Hungover Fistø Lore",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "vcs_graffiti"
+      },
+      "requirements": [
+        "status_hungover"
+      ],
+      "results": [
+        "vip_stall_fisto_lore_read"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcs_selfie",
+      "display_name": "Use CryptoQueen Mirror",
+      "trigger": {
+        "verb": "selfie",
+        "node_id": "vcs_selfie_mirror"
+      },
+      "requirements": [],
+      "results": [
+        "save_vip_stall_selfie"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcs_affinity",
+      "display_name": "Apply NFT Affinity Protection",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "vcs_qr_tile"
+      },
+      "requirements": [
+        "pixelated_kebab_monkey_obtained"
+      ],
+      "results": [
+        "nft_affinity_protection_active"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "vcs_scan_nft",
+      "node_id": "vcs_qr_tile",
+      "verb": "scan",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcs_read_clue",
+      "node_id": "vcs_graffiti",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcs_fisto",
+      "node_id": "vcs_graffiti",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcs_selfie",
+      "node_id": "vcs_selfie_mirror",
+      "verb": "selfie",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcs_affinity",
+      "node_id": "vcs_qr_tile",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "velvet_vip_stall_access_unlocked",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "pixelated_kebab_monkey_obtained",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "meme_black_market_graffiti_clue_read",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "vip_stall_fisto_lore_read",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "nft_affinity_protection_active",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Sponsored by Tech Bros Who Can't Hold Their Liquor",
+    "A tiny velvet-lined toilet trying to perform luxury through stains, RGB shimmer and crypto graffiti."
+  ]
+}

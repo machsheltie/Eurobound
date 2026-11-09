@@ -1,0 +1,84 @@
+{
+  "location_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+  "display_name": "Cyberspace Kavarna",
+  "satirical_subtitle": "Your Data Is Not Safe. Cash Only.",
+  "world": "Debaucheryville",
+  "zone": "Basement beneath Hostel Row",
+  "location_type": "24-Hour Internet Den / ICQ Quest Hub",
+  "sub_types": [
+    "quest location",
+    "service hub"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/cyberspacekarvana.md",
+    "docs/superpowers/specs/2026-11-02-cyberspace-kavarna-location-package-design.md"
+  ],
+  "access": {
+    "hours": "24/7; peak scammer hours 03:00-06:00",
+    "entry_requirements": [
+      "Descend the Hostel Row stair",
+      "Pay only when renting a terminal"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "ck_exit_row",
+      "destination_id": "debaucheryville_hostel_row",
+      "from_node": "ck_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "ck_exit_backroom",
+      "destination_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+      "from_node": "ck_backroom_door",
+      "condition": "cyberspace_backroom_concessions_entrance_discovered"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Neon Basement Stair -> Rental Desk -> CRT Terminal Maze -> Katka's Station -> Restroom Graffiti Clue -> Backroom Concessions Door -> Hostel Row Stair Exit",
+    "landmarks": [
+      "Neon Basement Stair",
+      "Rental Desk",
+      "CRT Terminal Maze",
+      "Katka's Station",
+      "Restroom Graffiti Clue",
+      "Backroom Concessions Door",
+      "Hostel Row Stair Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_hostel_row owns space beyond ck_exit.",
+      "Destination debaucheryville_internet_cafe_backroom_concessions_01 owns space beyond ck_backroom_door."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A smoke-stained Y2K internet bunker built from CRTs, Soviet furniture and duct-taped Ethernet."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D painted faces, depth cards and billboard/cutout props",
+    "palette": [
+      "monitor green",
+      "nicotine beige",
+      "fluorescent white",
+      "error blue"
+    ]
+  },
+  "satirical_design": {
+    "core_target": "Your Data Is Not Safe. Cash Only.",
+    "contrast": "A smoke-stained Y2K internet bunker built from CRTs, Soviet furniture and duct-taped Ethernet."
+  },
+  "state_tracking": {
+    "cyberspace_terminal_rented": false,
+    "cyberspace_icq_accessed": false,
+    "cyberspace_backroom_concessions_entrance_discovered": false,
+    "cyberspace_peak_scammer_hours": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "cyberspace_kavarna_exterior",
+      "cyberspace_kavarna_interior",
+      "cyberspace_kavarna_ui"
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+  "location_name": "Ye Olde B.R.E.W. Lab",
+  "npcs": [
+    {
+      "npc_id": "ybl_npc_robot_bartender",
+      "display_name": "Robotic Bartender",
+      "role": "service and tour rewards",
+      "node": "ybl_service",
+      "schedule": "22:00-04:00",
+      "visual": "Rail-mounted bartender with tap arms and scrolling display.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    },
+    {
+      "npc_id": "ybl_npc_algorithm",
+      "display_name": "Fermenting Algorithm",
+      "role": "mini-mob",
+      "node": "ybl_algorithm",
+      "schedule": "until cleared",
+      "visual": "Geometric yeast/data swarm.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    },
+    {
+      "npc_id": "ybl_npc_brewbot",
+      "display_name": "CryptoBro69's BrewBot",
+      "role": "boss",
+      "node": "ybl_brewbot",
+      "schedule": "until defeated",
+      "visual": "White-chrome brewer with beer-printer arms.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "ye_olde_brew_lab_ambient_1",
+      "display_name": "lab technicians",
+      "spawn_nodes": [
+        "ybl_brewbot",
+        "ybl_service",
+        "ybl_selfie"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "ye_olde_brew_lab_ambient_2",
+      "display_name": "screen avatars",
+      "spawn_nodes": [
+        "ybl_brewbot",
+        "ybl_service",
+        "ybl_selfie"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "ybl_npc_robot_bartender",
+      "node_id": "ybl_service",
+      "role": "service and tour rewards"
+    },
+    {
+      "npc_id": "ybl_npc_algorithm",
+      "node_id": "ybl_algorithm",
+      "role": "mini-mob"
+    },
+    {
+      "npc_id": "ybl_npc_brewbot",
+      "node_id": "ybl_brewbot",
+      "role": "boss"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep puzzle lanes and exits clear",
+    "Boss cores readable in accessibility mode",
+    "No deprecated opener-gate dialogue"
+  ]
+}

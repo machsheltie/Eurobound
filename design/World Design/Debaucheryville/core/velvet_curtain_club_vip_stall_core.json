@@ -1,0 +1,77 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+  "display_name": "Velvet Curtain Club VIP Stall",
+  "satirical_subtitle": "Sponsored by Tech Bros Who Can't Hold Their Liquor",
+  "world": "Debaucheryville",
+  "zone": "Behind STAFF ONLY curtain in Velvet Curtain Club",
+  "location_type": "VIP Bathroom / NFT and Lore Micro-Location",
+  "sub_types": [
+    "quest location",
+    "service or micro-location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/velvetcurtainclubvipstall.md",
+    "docs/superpowers/specs/2026-11-02-velvet-curtain-club-vip-stall-location-package-design.md"
+  ],
+  "access": {
+    "hours": "20:00-04:00 while club is open",
+    "entry_requirements": [
+      "velvet_vip_stall_entrance_discovered",
+      "velvet_vip_stall_access_unlocked"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "vcs_exit_club",
+      "destination_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+      "from_node": "vcs_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Inside VIP Curtain -> Velvet Fixture -> Selfie-Cam Mirror -> Cracked QR Tile -> Crypto Graffiti Wall -> Club Return Curtain",
+    "landmarks": [
+      "Inside VIP Curtain",
+      "Velvet Fixture",
+      "Selfie-Cam Mirror",
+      "Cracked QR Tile",
+      "Crypto Graffiti Wall",
+      "Club Return Curtain"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_operaruins_velvetcurtainclub_nightclub_01 owns space beyond vcs_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A tiny velvet-lined toilet trying to perform luxury through stains, RGB shimmer and crypto graffiti."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "black velvet",
+      "champagne gold",
+      "RGB shimmer",
+      "cracked tile grey"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Sponsored by Tech Bros Who Can't Hold Their Liquor",
+    "contrast": "A tiny velvet-lined toilet trying to perform luxury through stains, RGB shimmer and crypto graffiti."
+  },
+  "state_tracking": {
+    "velvet_vip_stall_access_unlocked": false,
+    "pixelated_kebab_monkey_obtained": false,
+    "meme_black_market_graffiti_clue_read": false,
+    "vip_stall_fisto_lore_read": false,
+    "nft_affinity_protection_active": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "velvet_curtain_club_vip_stall_exterior",
+      "velvet_curtain_club_vip_stall_interior",
+      "velvet_curtain_club_vip_stall_ui"
+    ]
+  }
+}

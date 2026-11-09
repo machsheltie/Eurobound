@@ -1,0 +1,231 @@
+{
+  "location_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "cyberspace_kavarna_environment",
+      "atlas": "cyberspace_kavarna_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "cyberspace_kavarna_exterior",
+          "filename": "cyberspace_kavarna_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "ck_stair"
+        },
+        {
+          "asset_id": "cyberspace_kavarna_interior",
+          "filename": "cyberspace_kavarna_interior.png",
+          "role": "interior/service-footprint painted layer",
+          "node_id": "ck_rental_desk"
+        },
+        {
+          "asset_id": "cyberspace_kavarna_node_ck_rental_desk",
+          "filename": "cyberspace_kavarna_ck_rental_desk.png",
+          "role": "service landmark",
+          "node_id": "ck_rental_desk"
+        },
+        {
+          "asset_id": "cyberspace_kavarna_node_ck_terminal_rows",
+          "filename": "cyberspace_kavarna_ck_terminal_rows.png",
+          "role": "interaction landmark",
+          "node_id": "ck_terminal_rows"
+        },
+        {
+          "asset_id": "cyberspace_kavarna_node_ck_katka_station",
+          "filename": "cyberspace_kavarna_ck_katka_station.png",
+          "role": "quest landmark",
+          "node_id": "ck_katka_station"
+        },
+        {
+          "asset_id": "cyberspace_kavarna_node_ck_restroom_clue",
+          "filename": "cyberspace_kavarna_ck_restroom_clue.png",
+          "role": "discovery landmark",
+          "node_id": "ck_restroom_clue"
+        },
+        {
+          "asset_id": "cyberspace_kavarna_node_ck_backroom_door",
+          "filename": "cyberspace_kavarna_ck_backroom_door.png",
+          "role": "transition landmark",
+          "node_id": "ck_backroom_door"
+        },
+        {
+          "asset_id": "cyberspace_kavarna_node_ck_exit",
+          "filename": "cyberspace_kavarna_ck_exit.png",
+          "role": "exit landmark",
+          "node_id": "ck_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "cyberspace_kavarna_characters",
+      "atlas": "cyberspace_kavarna_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "cyberspace_kavarna_npc_ck_npc_dmitri_router",
+          "filename": "cyberspace_kavarna_ck_npc_dmitri_router.png",
+          "role": "character sprite",
+          "node_id": "ck_rental_desk"
+        },
+        {
+          "asset_id": "cyberspace_kavarna_npc_ck_npc_cybergoth_katka",
+          "filename": "cyberspace_kavarna_ck_npc_cybergoth_katka.png",
+          "role": "character sprite",
+          "node_id": "ck_katka_station"
+        }
+      ]
+    },
+    {
+      "group_id": "cyberspace_kavarna_ui_fx",
+      "atlas": "cyberspace_kavarna_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "cyberspace_kavarna_item_ck_terminal_hour",
+          "filename": "cyberspace_kavarna_ck_terminal_hour.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "cyberspace_kavarna_item_ck_terminal_all_night",
+          "filename": "cyberspace_kavarna_ck_terminal_all_night.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "cyberspace_kavarna_item_ck_burner_login",
+          "filename": "cyberspace_kavarna_ck_burner_login.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "cyberspace_kavarna_ui",
+          "filename": "cyberspace_kavarna_ui.png",
+          "role": "interaction and status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "cyberspace_kavarna_fx",
+          "filename": "cyberspace_kavarna_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "cyberspace_kavarna_masks",
+          "filename": "cyberspace_kavarna_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "ck_npc_dmitri_router_standard",
+      "asset_id": "cyberspace_kavarna_npc_ck_npc_dmitri_router",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "ck_npc_cybergoth_katka_standard",
+      "asset_id": "cyberspace_kavarna_npc_ck_npc_cybergoth_katka",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "cyberspace_kavarna_emission",
+      "mask_asset": "cyberspace_kavarna_masks",
+      "nodes": [
+        "ck_stair",
+        "ck_rental_desk",
+        "ck_terminal_rows",
+        "ck_katka_station",
+        "ck_restroom_clue",
+        "ck_backroom_door",
+        "ck_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "ck_exit_row",
+      "destination_id": "debaucheryville_hostel_row",
+      "from_node": "ck_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "ck_exit_backroom",
+      "destination_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+      "from_node": "ck_backroom_door",
+      "condition": "cyberspace_backroom_concessions_entrance_discovered"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "ck_rent_terminal",
+      "node_id": "ck_rental_desk",
+      "highlight_asset": "cyberspace_kavarna_node_ck_rental_desk"
+    },
+    {
+      "interaction_id": "ck_icq_login",
+      "node_id": "ck_terminal_rows",
+      "highlight_asset": "cyberspace_kavarna_node_ck_terminal_rows"
+    },
+    {
+      "interaction_id": "ck_sting_binding",
+      "node_id": "ck_katka_station",
+      "highlight_asset": "cyberspace_kavarna_node_ck_katka_station"
+    },
+    {
+      "interaction_id": "ck_read_backroom_clue",
+      "node_id": "ck_restroom_clue",
+      "highlight_asset": "cyberspace_kavarna_node_ck_restroom_clue"
+    },
+    {
+      "interaction_id": "ck_enter_backroom",
+      "node_id": "ck_backroom_door",
+      "highlight_asset": "cyberspace_kavarna_node_ck_backroom_door"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "cyberspace_kavarna_masks",
+      "channels": {
+        "r": "signs",
+        "g": "screens/practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 10,
+    "reduced_fx_asset": "cyberspace_kavarna_fx"
+  }
+}

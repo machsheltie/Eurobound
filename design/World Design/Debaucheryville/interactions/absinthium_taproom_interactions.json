@@ -1,0 +1,223 @@
+{
+  "location_id": "debaucheryville_brewery_absinthium_taproom_01",
+  "events": [
+    {
+      "event_id": "at_maze",
+      "display_name": "Navigate Mirror Maze",
+      "trigger": {
+        "verb": "puzzle",
+        "node_id": "at_mirror_maze"
+      },
+      "requirements": [],
+      "results": [
+        "advance_mirror_route"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "at_boss",
+      "display_name": "Confront Green Fairy Wisp",
+      "trigger": {
+        "verb": "battle",
+        "node_id": "at_wisp_arena"
+      },
+      "requirements": [
+        "mirror_maze_complete"
+      ],
+      "results": [
+        "absinthium_challenge_complete"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "at_rewards",
+      "display_name": "Claim Tour Rewards",
+      "trigger": {
+        "verb": "claim",
+        "node_id": "at_service"
+      },
+      "requirements": [
+        "absinthium_challenge_complete",
+        "brewery_tour_active",
+        "bottle_opener_keychain"
+      ],
+      "results": [
+        "grant_opener_absinthium_taproom",
+        "grant_stamp_absinthium_taproom",
+        "absinthium_tour_rewards_granted",
+        "absinthium_selfie_unlocked"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "at_defer",
+      "display_name": "Record Pre-Tour Completion",
+      "trigger": {
+        "verb": "state",
+        "node_id": "at_service"
+      },
+      "requirements": [
+        "absinthium_challenge_complete",
+        "not_brewery_tour_active"
+      ],
+      "results": [
+        "absinthium_tour_rewards_deferred"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "at_buy_beer",
+      "display_name": "Buy Absinthe Lager",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "at_service"
+      },
+      "requirements": [
+        "absinthium_tour_rewards_granted"
+      ],
+      "results": [
+        "purchase_beer_absinthium_taproom"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "at_selfie",
+      "display_name": "Take Floating Chalice Selfie",
+      "trigger": {
+        "verb": "selfie",
+        "node_id": "at_selfie"
+      },
+      "requirements": [
+        "absinthium_selfie_unlocked"
+      ],
+      "results": [
+        "save_absinthium_selfie"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "at_maze",
+      "node_id": "at_mirror_maze",
+      "verb": "puzzle",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "at_boss",
+      "node_id": "at_wisp_arena",
+      "verb": "battle",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "at_rewards",
+      "node_id": "at_service",
+      "verb": "claim",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "at_defer",
+      "node_id": "at_service",
+      "verb": "state",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "at_buy_beer",
+      "node_id": "at_service",
+      "verb": "purchase",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "at_selfie",
+      "node_id": "at_selfie",
+      "verb": "selfie",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "absinthium_taproom_entrance_discovered",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "absinthium_challenge_complete",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "absinthium_tour_rewards_deferred",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "absinthium_tour_rewards_granted",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "absinthium_selfie_unlocked",
+      "change": "Persist and present authored tour/challenge state."
+    }
+  ],
+  "narrator_commentary": [
+    "Not Recommended for Those Prone to Introspection",
+    "A green-vapor Distortion Den where objective topology hides beneath impossible reflections."
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+  "ambient_audio": {
+    "base_layers": [
+      "passed-out patrons ambience",
+      "sleeping bar crowd ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "tck_alley",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "tck_entry",
+        "cue": "gate_loop"
+      },
+      {
+        "node_id": "tck_floor",
+        "cue": "puzzle_loop"
+      },
+      {
+        "node_id": "tck_barflies",
+        "cue": "encounter_loop"
+      },
+      {
+        "node_id": "tck_sentinel",
+        "cue": "boss_loop"
+      },
+      {
+        "node_id": "tck_service",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "tck_throne",
+        "cue": "selfie_loop"
+      },
+      {
+        "node_id": "tck_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "opener_three_crown_keg_haus_effect",
+      "description": "Rusted stacked crowns; Noble by Liver. Never sold."
+    },
+    {
+      "effect_id": "stamp_three_crown_keg_haus_effect",
+      "description": "Three crowns over stein; tour stop 2."
+    },
+    {
+      "effect_id": "beer_three_crown_keg_haus_effect",
+      "description": "High-strength signature brew."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "operating",
+      "changes": [
+        "full challenge and service state"
+      ]
+    },
+    {
+      "state": "closed",
+      "changes": [
+        "parent transition denies entry"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "parent-side read-through only"
+    ],
+    "interior": [
+      "no precipitation"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "three_crown_keg_haus_fx",
+      "nodes": [
+        "tck_alley",
+        "tck_entry",
+        "tck_floor",
+        "tck_barflies",
+        "tck_sentinel",
+        "tck_service",
+        "tck_throne",
+        "tck_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "rust orange",
+      "beer amber",
+      "mold green",
+      "tarnished brass"
+    ],
+    "emission_mask": "three_crown_keg_haus_masks",
+    "readability": "puzzle and boss cues override ambience"
+  },
+  "environmental_storytelling": [
+    "Sticky alley beneath three rusting crowns.",
+    "Dive-bar door and confidence check.",
+    "Safe and unsafe tiles among passed-out patrons.",
+    "Mini-mob patrol around booths.",
+    "Final challenge near the keg stacks.",
+    "Tour rewards and 10-Sov Iron Gut Tripel.",
+    "Drunken monarchy selfie landmark.",
+    "Returns toward Shadow Exchange."
+  ],
+  "accessibility": {
+    "variants": [
+      "High-contrast safe tiles",
+      "Detection-cone alternative",
+      "Reduced haze",
+      "Subtitled floor and patron cues"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "audio_substitutes": true
+  }
+}

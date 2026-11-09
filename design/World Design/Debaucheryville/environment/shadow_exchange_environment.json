@@ -1,0 +1,127 @@
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "ambient_audio": {
+    "base_layers": [
+      "distant Old Town street",
+      "ticker clacks",
+      "whispered bargaining",
+      "CRT fan hum"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "se_alley_marker",
+        "cue": "exterior_ambience"
+      },
+      {
+        "node_id": "se_hidden_stair",
+        "cue": "transition_ambience"
+      },
+      {
+        "node_id": "se_exchange_counter",
+        "cue": "service_ambience"
+      },
+      {
+        "node_id": "se_barter_window",
+        "cue": "service_ambience"
+      },
+      {
+        "node_id": "se_contract_desk",
+        "cue": "quest_ambience"
+      },
+      {
+        "node_id": "se_premium_cage",
+        "cue": "shop_ambience"
+      },
+      {
+        "node_id": "se_cellar_exit",
+        "cue": "exit_ambience"
+      }
+    ],
+    "ducking_rules": [
+      "Lower ticker during dialogue",
+      "Subtitle all rate announcements"
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "shadow_exchange_notoriety",
+      "source": "contracts and risky barter",
+      "presentation": "subtle cold vignette",
+      "accessibility_fallback": "status icon plus text"
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "day",
+      "changes": [
+        "alley clue harder to see",
+        "cellar services unchanged"
+      ]
+    },
+    {
+      "state": "night",
+      "changes": [
+        "candle marker brighter",
+        "contract fixer present"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet cobblestone reflection",
+      "rain drip at stair lip"
+    ],
+    "interior": [
+      "no precipitation",
+      "cold vapor at entrance"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "se_smoke_haze",
+      "nodes": [
+        "se_exchange_counter",
+        "se_barter_window"
+      ],
+      "fallback": "static translucent card"
+    },
+    {
+      "id": "se_uv_dust",
+      "nodes": [
+        "se_contract_desk"
+      ],
+      "fallback": "disabled"
+    }
+  ],
+  "lighting_system": {
+    "key": "single desk-lamp amber",
+    "fill": "CRT green and UV violet",
+    "exterior": "cold moon/street spill",
+    "emission_masks": [
+      "rate board",
+      "CRT screens",
+      "UV checker"
+    ]
+  },
+  "environmental_storytelling": [
+    "Photocopied currencies pinned behind glass",
+    "Rates change faster than the player can read",
+    "Contract corrections accumulate in red pencil",
+    "Premium cage padlocks outnumber valuable objects"
+  ],
+  "accessibility": {
+    "reduced_motion": [
+      "freeze split-flap animation"
+    ],
+    "reduced_particles": [
+      "remove smoke and UV dust"
+    ],
+    "high_contrast": [
+      "outline exchange values and exits"
+    ],
+    "audio_substitutes": [
+      "visual ticker beat",
+      "captioned whispers"
+    ]
+  }
+}

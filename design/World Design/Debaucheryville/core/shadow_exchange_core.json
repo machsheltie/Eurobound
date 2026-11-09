@@ -1,0 +1,101 @@
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "display_name": "Shadow Exchange",
+  "satirical_subtitle": "Best Rates If You Don't Ask",
+  "world": "Debaucheryville",
+  "zone": "Old Town backstreets, concealed sub-basement",
+  "location_type": "Underground Money Changer / Black-Market Bazaar",
+  "sub_types": [
+    "quest hub",
+    "vendor",
+    "hidden location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/shadowexchange.md",
+    "docs/superpowers/specs/2026-11-02-shadow-exchange-location-package-design.md"
+  ],
+  "access": {
+    "hours": "Always accessible after discovery",
+    "entry_requirements": [
+      "Find the cash-only candle marker",
+      "Trigger the hinged cobblestone stair"
+    ],
+    "discovery_state": "shadow_exchange_discovered",
+    "permanent_after_discovery": true
+  },
+  "exits": [
+    {
+      "exit_id": "se_exit_old_town",
+      "destination_id": "debaucheryville_old_town_backstreets",
+      "from_node": "se_cellar_exit",
+      "condition": "always_after_discovery"
+    },
+    {
+      "exit_id": "se_referral_three_crown",
+      "destination_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+      "from_node": "se_cellar_exit",
+      "condition": "three_crown_route_discovered"
+    }
+  ],
+  "spatial_identity": {
+    "layout": "Alley clue to descending stair, vaulted service loop and return stair.",
+    "landmarks": [
+      "Candle-Marked Alley",
+      "Hidden Stair",
+      "Exchange Counter",
+      "Barter Window",
+      "Contract Desk",
+      "Premium Stock Cage",
+      "Cellar Exit"
+    ],
+    "ownership_boundaries": [
+      "Three-Crown Keg Haus is an outbound referral, not part of this cellar."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A damp wine cellar converted into a counterfeit Bloomberg terminal and barter bazaar.",
+    "sensory": [
+      "copper and old wine",
+      "ticker clicks",
+      "cold stair air",
+      "CRT hum"
+    ]
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D painted faces, depth cards and cutout props",
+    "palette": [
+      "cold blue-grey stone",
+      "UV violet",
+      "desk-lamp amber",
+      "CRT green",
+      "copper"
+    ],
+    "motifs": [
+      "wine-cellar arches",
+      "iron lattice",
+      "split-flap finance",
+      "improvised black market"
+    ]
+  },
+  "satirical_design": {
+    "target": "tourist exploitation disguised as financial sophistication",
+    "player_misreading": "The bros believe opaque exchange rates prove authenticity."
+  },
+  "state_tracking": {
+    "shadow_exchange_discovered": false,
+    "shadow_exchange_premium_stock_unlocked": false,
+    "shadow_exchange_notoriety_active": false,
+    "vip_wristband_png_obtained": false,
+    "three_crown_route_discovered": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "draw_call_budget": 45,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "shadow_exchange_exterior",
+      "shadow_exchange_cellar",
+      "shadow_exchange_ui"
+    ]
+  }
+}

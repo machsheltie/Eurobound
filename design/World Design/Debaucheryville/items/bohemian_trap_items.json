@@ -1,0 +1,63 @@
+{
+  "location_id": "debaucheryville_vendor_bohemian_trap_01",
+  "item_category": "Absinthe Street Cart / Ritual Vendor",
+  "items": [
+    {
+      "item_id": "bt_house_absinthe",
+      "display_name": "House Absinthe",
+      "item_type": "consumable",
+      "price": 5,
+      "effect": "Mild intoxication and Green Fairy flavor.",
+      "acquisition": "Bottle display."
+    },
+    {
+      "item_id": "bt_authentic_absinthe",
+      "display_name": "Authentic-ish Absinthe",
+      "item_type": "consumable",
+      "price": 12,
+      "effect": "Stronger intoxication and Confusion chance.",
+      "acquisition": "Bottle display."
+    },
+    {
+      "item_id": "bt_hemingway_tier",
+      "display_name": "Hemingway Intended Reserve",
+      "item_type": "consumable",
+      "price": 25,
+      "effect": "High Confusion and possible control reversal.",
+      "acquisition": "Bottle display."
+    },
+    {
+      "item_id": "bt_absinthe_ritual",
+      "display_name": "Traditional Ritual Experience",
+      "item_type": "service",
+      "price": 10,
+      "effect": "Performs spoon, sugar and drip sequence.",
+      "acquisition": "Ritual station."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "global Drunk/Confused statuses",
+      "ownership": "external"
+    },
+    {
+      "reference": "Absinthe Arcade thematic network",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "bohemian_trap_ritual_complete",
+      "type": "state"
+    },
+    {
+      "reward_id": "bohemian_trap_control_reversal_active",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies otherwise",
+    "price_confirmation_required": true,
+    "time_modifiers": "documented only"
+  }
+}

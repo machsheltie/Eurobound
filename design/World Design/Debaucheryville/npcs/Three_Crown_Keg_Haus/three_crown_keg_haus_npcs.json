@@ -1,0 +1,104 @@
+{
+  "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+  "location_name": "Three-Crown Keg Haus",
+  "npcs": [
+    {
+      "npc_id": "tck_npc_bartender",
+      "display_name": "Keg Haus Bartender",
+      "role": "service and tour rewards",
+      "node": "tck_service",
+      "schedule": "always",
+      "visual": "Tarnished apron and miniature crown pins.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    },
+    {
+      "npc_id": "tck_npc_barflies",
+      "display_name": "Slurring Bar Flies",
+      "role": "mini-mob group",
+      "node": "tck_barflies",
+      "schedule": "until cleared",
+      "visual": "Unsteady patron silhouettes with readable detection cones.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    },
+    {
+      "npc_id": "tck_npc_sentinel",
+      "display_name": "Keg Sentinel",
+      "role": "boss entity",
+      "node": "tck_sentinel",
+      "schedule": "until defeated",
+      "visual": "Armored keg construct with rust-orange core.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "three_crown_keg_haus_ambient_1",
+      "display_name": "passed-out patrons",
+      "spawn_nodes": [
+        "tck_sentinel",
+        "tck_service",
+        "tck_throne"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "three_crown_keg_haus_ambient_2",
+      "display_name": "sleeping bar crowd",
+      "spawn_nodes": [
+        "tck_sentinel",
+        "tck_service",
+        "tck_throne"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "tck_npc_bartender",
+      "node_id": "tck_service",
+      "role": "service and tour rewards"
+    },
+    {
+      "npc_id": "tck_npc_barflies",
+      "node_id": "tck_barflies",
+      "role": "mini-mob group"
+    },
+    {
+      "npc_id": "tck_npc_sentinel",
+      "node_id": "tck_sentinel",
+      "role": "boss entity"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep puzzle lanes and exits clear",
+    "Boss cores readable in accessibility mode",
+    "No deprecated opener-gate dialogue"
+  ]
+}

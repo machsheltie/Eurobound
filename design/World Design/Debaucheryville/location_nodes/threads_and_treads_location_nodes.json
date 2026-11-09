@@ -1,0 +1,197 @@
+{
+  "location_id": "debaucheryville_shop_threads_treads_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_shop_threads_treads_01",
+      "name": "Threads & Treads",
+      "tag_id": "threads_and_treads",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Narrow black façade with leather mannequins and chrome sign.",
+        "entry_condition": "Always open"
+      },
+      "interior": {
+        "theme": "A dark leather-and-chrome shop selling defense, style and late-night reinvention.",
+        "features": [
+          "shop: tt_jacket_gauntlet",
+          "shop: tt_footwear",
+          "shop: tt_accessories",
+          "interaction: tt_fitting_mirror",
+          "service: tt_counter",
+          "exit: tt_exit"
+        ]
+      },
+      "functions": [
+        "Browse Jackets",
+        "Browse Boots",
+        "Mirror Assessment",
+        "Who Do You Want To Be?",
+        "Purchase and Equip"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "tt_storefront",
+      "to": "tt_jacket_gauntlet",
+      "bidirectional": true
+    },
+    {
+      "from": "tt_jacket_gauntlet",
+      "to": "tt_footwear",
+      "bidirectional": true
+    },
+    {
+      "from": "tt_footwear",
+      "to": "tt_accessories",
+      "bidirectional": true
+    },
+    {
+      "from": "tt_accessories",
+      "to": "tt_fitting_mirror",
+      "bidirectional": true
+    },
+    {
+      "from": "tt_fitting_mirror",
+      "to": "tt_counter",
+      "bidirectional": true
+    },
+    {
+      "from": "tt_counter",
+      "to": "tt_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "tt_storefront": {
+      "connects_to": [
+        "tt_jacket_gauntlet"
+      ],
+      "type": "exterior",
+      "description": "Narrow black façade with leather mannequins and chrome sign."
+    },
+    "tt_jacket_gauntlet": {
+      "connects_to": [
+        "tt_storefront",
+        "tt_footwear"
+      ],
+      "type": "shop",
+      "description": "Immediate wall of leather and denim."
+    },
+    "tt_footwear": {
+      "connects_to": [
+        "tt_jacket_gauntlet",
+        "tt_accessories"
+      ],
+      "type": "shop",
+      "description": "Combat boots and defensive shoes."
+    },
+    "tt_accessories": {
+      "connects_to": [
+        "tt_footwear",
+        "tt_fitting_mirror"
+      ],
+      "type": "shop",
+      "description": "Style and equipment-slot accessories."
+    },
+    "tt_fitting_mirror": {
+      "connects_to": [
+        "tt_accessories",
+        "tt_counter"
+      ],
+      "type": "interaction",
+      "description": "Identity preview and Cool Factor assessment."
+    },
+    "tt_counter": {
+      "connects_to": [
+        "tt_fitting_mirror",
+        "tt_exit"
+      ],
+      "type": "service",
+      "description": "Checkout and transformation choice."
+    },
+    "tt_exit": {
+      "connects_to": [
+        "tt_counter"
+      ],
+      "type": "exit",
+      "description": "Returns to the neon street."
+    }
+  },
+  "feature_details": {
+    "tt_storefront": {
+      "display_name": "Chrome Storefront",
+      "image_generation_description": "Narrow black façade with leather mannequins and chrome sign.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "tt_jacket_gauntlet": {
+      "display_name": "Jacket Gauntlet",
+      "image_generation_description": "Immediate wall of leather and denim.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "tt_footwear": {
+      "display_name": "Footwear Wall",
+      "image_generation_description": "Combat boots and defensive shoes.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "tt_accessories": {
+      "display_name": "Chains and Accessories",
+      "image_generation_description": "Style and equipment-slot accessories.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "tt_fitting_mirror": {
+      "display_name": "Mirror Assessment",
+      "image_generation_description": "Identity preview and Cool Factor assessment.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "tt_counter": {
+      "display_name": "Zdeněk Counter",
+      "image_generation_description": "Checkout and transformation choice.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "tt_exit": {
+      "display_name": "Quarter Exit",
+      "image_generation_description": "Returns to the neon street.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    }
+  },
+  "ambient_npcs": [
+    "daytime shoppers",
+    "02:00 transformation crowd"
+  ]
+}

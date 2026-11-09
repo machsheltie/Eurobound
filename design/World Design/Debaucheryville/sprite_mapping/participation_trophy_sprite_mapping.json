@@ -1,0 +1,220 @@
+{
+  "location_id": "debaucheryville_circus_participation_trophy_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter or micro-room cutaway"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "participation_trophy_environment",
+      "atlas": "participation_trophy_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "participation_trophy_exterior",
+          "filename": "participation_trophy_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "pt_booth"
+        },
+        {
+          "asset_id": "participation_trophy_interior",
+          "filename": "participation_trophy_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "pt_grand_shelf"
+        },
+        {
+          "asset_id": "participation_trophy_node_pt_grand_shelf",
+          "filename": "participation_trophy_pt_grand_shelf.png",
+          "role": "display landmark",
+          "node_id": "pt_grand_shelf"
+        },
+        {
+          "asset_id": "participation_trophy_node_pt_good_shelf",
+          "filename": "participation_trophy_pt_good_shelf.png",
+          "role": "shop landmark",
+          "node_id": "pt_good_shelf"
+        },
+        {
+          "asset_id": "participation_trophy_node_pt_consolation",
+          "filename": "participation_trophy_pt_consolation.png",
+          "role": "shop landmark",
+          "node_id": "pt_consolation"
+        },
+        {
+          "asset_id": "participation_trophy_node_pt_floor_junk",
+          "filename": "participation_trophy_pt_floor_junk.png",
+          "role": "shop landmark",
+          "node_id": "pt_floor_junk"
+        },
+        {
+          "asset_id": "participation_trophy_node_pt_counter",
+          "filename": "participation_trophy_pt_counter.png",
+          "role": "service landmark",
+          "node_id": "pt_counter"
+        },
+        {
+          "asset_id": "participation_trophy_node_pt_exit",
+          "filename": "participation_trophy_pt_exit.png",
+          "role": "exit landmark",
+          "node_id": "pt_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "participation_trophy_characters",
+      "atlas": "participation_trophy_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "participation_trophy_npc_pt_npc_yolanda",
+          "filename": "participation_trophy_pt_npc_yolanda.png",
+          "role": "character sprite",
+          "node_id": "pt_counter"
+        }
+      ]
+    },
+    {
+      "group_id": "participation_trophy_ui_fx",
+      "atlas": "participation_trophy_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "participation_trophy_item_pt_sad_plush",
+          "filename": "participation_trophy_pt_sad_plush.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "participation_trophy_item_pt_plastic_medal",
+          "filename": "participation_trophy_pt_plastic_medal.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "participation_trophy_item_pt_mystery_trinket",
+          "filename": "participation_trophy_pt_mystery_trinket.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "participation_trophy_item_pt_grand_display",
+          "filename": "participation_trophy_pt_grand_display.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "participation_trophy_item_pt_direct_junk",
+          "filename": "participation_trophy_pt_direct_junk.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "participation_trophy_ui",
+          "filename": "participation_trophy_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "participation_trophy_fx",
+          "filename": "participation_trophy_fx.png",
+          "role": "particles and overlays",
+          "node_id": null
+        },
+        {
+          "asset_id": "participation_trophy_masks",
+          "filename": "participation_trophy_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "pt_npc_yolanda_standard",
+      "asset_id": "participation_trophy_npc_pt_npc_yolanda",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "participation_trophy_lighting",
+      "mask_asset": "participation_trophy_masks",
+      "nodes": [
+        "pt_booth",
+        "pt_grand_shelf",
+        "pt_good_shelf",
+        "pt_consolation",
+        "pt_floor_junk",
+        "pt_counter",
+        "pt_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "pt_exit_circus",
+      "destination_id": "debaucheryville_cirque_du_shady",
+      "from_node": "pt_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "pt_redeem",
+      "node_id": "pt_counter",
+      "highlight_asset": "participation_trophy_node_pt_counter"
+    },
+    {
+      "interaction_id": "pt_buy",
+      "node_id": "pt_counter",
+      "highlight_asset": "participation_trophy_node_pt_counter"
+    },
+    {
+      "interaction_id": "pt_frequent",
+      "node_id": "pt_counter",
+      "highlight_asset": "participation_trophy_node_pt_counter"
+    },
+    {
+      "interaction_id": "pt_inspect_grand",
+      "node_id": "pt_grand_shelf",
+      "highlight_asset": "participation_trophy_node_pt_grand_shelf"
+    },
+    {
+      "interaction_id": "pt_browse_junk",
+      "node_id": "pt_floor_junk",
+      "highlight_asset": "participation_trophy_node_pt_floor_junk"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "participation_trophy_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 8,
+    "reduced_fx_asset": "participation_trophy_fx"
+  }
+}

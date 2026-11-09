@@ -1,0 +1,187 @@
+{
+  "location_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+  "events": [
+    {
+      "event_id": "gts_read_tag",
+      "display_name": "Read Fistø Tag",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "gts_fisto_tag"
+      },
+      "requirements": [],
+      "results": [
+        "register_graffiti_read"
+      ],
+      "quest_bindings": [
+        "Fistø lore",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "gts_stomach",
+      "display_name": "Eat Kebab While Reading",
+      "trigger": {
+        "verb": "consume_read",
+        "node_id": "gts_fisto_tag"
+      },
+      "requirements": [
+        "qualifying_grease_kebab_active"
+      ],
+      "results": [
+        "stomach_of_steel_unlocked"
+      ],
+      "quest_bindings": [
+        "Fistø lore",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "gts_hungover_icon",
+      "display_name": "Read Hungover Kebab Icon",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "gts_kebab_icon"
+      },
+      "requirements": [
+        "status_hungover"
+      ],
+      "results": [
+        "grease_shrine_fisto_lore_read"
+      ],
+      "quest_bindings": [
+        "Fistø lore",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "gts_complete_graffiti",
+      "display_name": "Complete Graffiti While Hungover",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "gts_haiku"
+      },
+      "requirements": [
+        "status_hungover",
+        "all_grease_shrine_graffiti_read"
+      ],
+      "results": [
+        "greasy_prophet_unlocked"
+      ],
+      "quest_bindings": [
+        "Fistø lore",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "gts_icq_combo",
+      "display_name": "Absinthe + Grease Kebab + Graffiti",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "gts_mirror"
+      },
+      "requirements": [
+        "absinthe_status",
+        "qualifying_grease_kebab_active"
+      ],
+      "results": [
+        "grease_shrine_icq_combo_sent"
+      ],
+      "quest_bindings": [
+        "Fistø lore",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "gts_read_tag",
+      "node_id": "gts_fisto_tag",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "gts_stomach",
+      "node_id": "gts_fisto_tag",
+      "verb": "consume_read",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "gts_hungover_icon",
+      "node_id": "gts_kebab_icon",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "gts_complete_graffiti",
+      "node_id": "gts_haiku",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "gts_icq_combo",
+      "node_id": "gts_mirror",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "grease_trap_shrine_crawlspace_discovered",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "grease_trap_shrine_access_window_open",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "stomach_of_steel_unlocked",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "greasy_prophet_unlocked",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "grease_shrine_fisto_lore_read",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "grease_shrine_icq_combo_sent",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Not a Toilet, Unless Desperate",
+    "A grease-glazed biohazard shrine lit like a sacred fryer exhaust."
+  ]
+}

@@ -1,5 +1,10 @@
 # Absinthe Arcade — 3D Exterior Asset Manifest
 
+> **SUPERSEDED (2026-11-02).** This Unity/URP modular-kit manifest is dead. The engine is Godot 4.7, the building is a
+> painted-box HD-2D diorama, and the footprint is 15.4 x 18 m in painting units (not 14 x 12 m). The live exterior
+> manifest is `Assets/Graphics/worlds/debaucheryville/absinthearcade/absinthearcade_exterior/hd2d_asset_manifest.md`.
+> Kept for history only; do not build from it.
+
 Production manifest for the first hero building's modular exterior kit. The numbers here mirror `tools/content_generation/absinthe_arcade/manifest.json`, which is the source of truth the Blender scripts validate against. **If you change a number, change it in the JSON first.**
 
 - **Location doc:** `design/worlds/debaucheryville/absinthearcade.md`

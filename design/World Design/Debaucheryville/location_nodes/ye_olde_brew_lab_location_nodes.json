@@ -1,0 +1,256 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+      "name": "Ye Olde B.R.E.W. Lab",
+      "tag_id": "ye_olde_brew_lab",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Interior side of the Velvet service route.",
+        "entry_condition": "brew_lab_entrance_discovered; brew_lab_access_unlocked; Location hours; no opener physically gates entry"
+      },
+      "interior": {
+        "theme": "An L-shaped blue-lit brewery lab where taste profiles, blockchain screens and BrewBot automate bad judgment.",
+        "features": [
+          "interior: ybl_vats",
+          "interaction: ybl_consoles",
+          "puzzle: ybl_taste",
+          "encounter: ybl_algorithm",
+          "boss: ybl_brewbot",
+          "service: ybl_service",
+          "selfie: ybl_selfie",
+          "exit: ybl_exit"
+        ]
+      },
+      "functions": [
+        "Complete Taste Profile",
+        "Defeat Fermenting Algorithm",
+        "Defeat CryptoBro69 BrewBot",
+        "Claim Tour Rewards",
+        "Record Pre-Tour Completion",
+        "Buy Blockchain Bock",
+        "Use Algorithm Archive"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "ybl_stair",
+      "to": "ybl_vats",
+      "bidirectional": true
+    },
+    {
+      "from": "ybl_vats",
+      "to": "ybl_consoles",
+      "bidirectional": true
+    },
+    {
+      "from": "ybl_consoles",
+      "to": "ybl_taste",
+      "bidirectional": true
+    },
+    {
+      "from": "ybl_taste",
+      "to": "ybl_algorithm",
+      "bidirectional": true
+    },
+    {
+      "from": "ybl_algorithm",
+      "to": "ybl_brewbot",
+      "bidirectional": true
+    },
+    {
+      "from": "ybl_brewbot",
+      "to": "ybl_service",
+      "bidirectional": true
+    },
+    {
+      "from": "ybl_service",
+      "to": "ybl_selfie",
+      "bidirectional": true
+    },
+    {
+      "from": "ybl_selfie",
+      "to": "ybl_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "ybl_stair": {
+      "connects_to": [
+        "ybl_vats"
+      ],
+      "type": "transition",
+      "description": "Interior side of the Velvet service route."
+    },
+    "ybl_vats": {
+      "connects_to": [
+        "ybl_stair",
+        "ybl_consoles"
+      ],
+      "type": "interior",
+      "description": "Bioluminescent vats and wired fermentation tanks."
+    },
+    "ybl_consoles": {
+      "connects_to": [
+        "ybl_vats",
+        "ybl_taste"
+      ],
+      "type": "interaction",
+      "description": "NFT flavor screens and taste controls."
+    },
+    "ybl_taste": {
+      "connects_to": [
+        "ybl_consoles",
+        "ybl_algorithm"
+      ],
+      "type": "puzzle",
+      "description": "Logic minigame and opener challenge."
+    },
+    "ybl_algorithm": {
+      "connects_to": [
+        "ybl_taste",
+        "ybl_brewbot"
+      ],
+      "type": "encounter",
+      "description": "Mini-mob across LED floor paths."
+    },
+    "ybl_brewbot": {
+      "connects_to": [
+        "ybl_algorithm",
+        "ybl_service"
+      ],
+      "type": "boss",
+      "description": "Final brewery-tour challenge."
+    },
+    "ybl_service": {
+      "connects_to": [
+        "ybl_brewbot",
+        "ybl_selfie"
+      ],
+      "type": "service",
+      "description": "Tour rewards and volatile Blockchain Bock price."
+    },
+    "ybl_selfie": {
+      "connects_to": [
+        "ybl_service",
+        "ybl_exit"
+      ],
+      "type": "selfie",
+      "description": "Blockchain-hash selfie terminal."
+    },
+    "ybl_exit": {
+      "connects_to": [
+        "ybl_selfie"
+      ],
+      "type": "exit",
+      "description": "Returns to Velvet Curtain Club."
+    }
+  },
+  "feature_details": {
+    "ybl_stair": {
+      "display_name": "Inside Lab Stair",
+      "image_generation_description": "Interior side of the Velvet service route.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "ybl_vats": {
+      "display_name": "Brewing Vat Leg",
+      "image_generation_description": "Bioluminescent vats and wired fermentation tanks.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "ybl_consoles": {
+      "display_name": "AI Console Leg",
+      "image_generation_description": "NFT flavor screens and taste controls.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "ybl_taste": {
+      "display_name": "Taste Profile Station",
+      "image_generation_description": "Logic minigame and opener challenge.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "ybl_algorithm": {
+      "display_name": "Fermenting Algorithm",
+      "image_generation_description": "Mini-mob across LED floor paths.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "ybl_brewbot": {
+      "display_name": "BrewBot Arena",
+      "image_generation_description": "Final brewery-tour challenge.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "ybl_service": {
+      "display_name": "Robotic Bartender",
+      "image_generation_description": "Tour rewards and volatile Blockchain Bock price.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "ybl_selfie": {
+      "display_name": "Algorithm Archive",
+      "image_generation_description": "Blockchain-hash selfie terminal.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "ybl_exit": {
+      "display_name": "Club Return Stair",
+      "image_generation_description": "Returns to Velvet Curtain Club.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    }
+  },
+  "ambient_npcs": [
+    "lab technicians",
+    "screen avatars"
+  ]
+}

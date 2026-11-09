@@ -1,5 +1,43 @@
 # Backroom Concessions - Complete PNG Asset Requirements
 
+## 2026 Authoritative HD-2D Reconciliation
+
+- **Location ID:** `debaucheryville_internet_cafe_backroom_concessions_01`
+- **Engine:** Godot 4.4
+- **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, selective in-world pixel screens, emission and occlusion masks.
+- **Authoritative mapping:** `sprite_mapping/backroom_concessions_sprite_mapping.json`
+
+### Canonical Asset IDs
+
+- `backroom_concessions_exterior` → `backroom_concessions_exterior.png` — exterior/threshold painted layer; node `bc_inside_door`.
+- `backroom_concessions_interior` → `backroom_concessions_interior.png` — interior/service-footprint painted layer; node `bc_counter`.
+- `backroom_concessions_node_bc_counter` → `backroom_concessions_bc_counter.png` — service landmark; node `bc_counter`.
+- `backroom_concessions_node_bc_vending_pair` → `backroom_concessions_bc_vending_pair.png` — interaction landmark; node `bc_vending_pair`.
+- `backroom_concessions_node_bc_seating` → `backroom_concessions_bc_seating.png` — social landmark; node `bc_seating`.
+- `backroom_concessions_node_bc_exit` → `backroom_concessions_bc_exit.png` — exit landmark; node `bc_exit`.
+- `backroom_concessions_npc_bc_npc_donny_exe` → `backroom_concessions_bc_npc_donny_exe.png` — character sprite; node `bc_counter`.
+- `backroom_concessions_item_bc_crypto_doner` → `backroom_concessions_bc_crypto_doner.png` — item/service icon.
+- `backroom_concessions_item_bc_thermal_paste_sundae` → `backroom_concessions_bc_thermal_paste_sundae.png` — item/service icon.
+- `backroom_concessions_item_bc_ram_chips_dip` → `backroom_concessions_bc_ram_chips_dip.png` — item/service icon.
+- `backroom_concessions_item_bc_protocol_pocket` → `backroom_concessions_bc_protocol_pocket.png` — item/service icon.
+- `backroom_concessions_ui` → `backroom_concessions_ui.png` — interaction and status UI.
+- `backroom_concessions_fx` → `backroom_concessions_fx.png` — environmental FX.
+- `backroom_concessions_masks` → `backroom_concessions_masks.png` — emission/occlusion masks.
+
+### Accessibility Assets
+
+- Reduced fluorescent flicker.
+- Text status warnings before purchase.
+- Smoke-free plate.
+- High-contrast menu.
+- Provide clean plates with smoke, static, flicker, crowds and particles removed.
+- Provide text/icon equivalents for audio, color and timing-only cues.
+
+### Delivery Reconciliation
+
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Backroom Concessions location. Each sprite sheet includes pixel-perfect coordinates, color specifications, and animation requirements for this hidden digital underground food court where gamer fuel meets health code violations.
 

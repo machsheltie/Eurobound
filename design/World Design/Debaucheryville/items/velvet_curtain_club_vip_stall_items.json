@@ -1,0 +1,67 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+  "item_category": "VIP Bathroom / NFT and Lore Micro-Location",
+  "items": [
+    {
+      "item_id": "item_pixelated_kebab_monkey",
+      "display_name": "Pixelated Kebab Monkey",
+      "item_type": "unique_quest_collectible",
+      "price": null,
+      "effect": "Sets pixelated_kebab_monkey_obtained; NFT #2.",
+      "acquisition": "Cracked QR tile."
+    },
+    {
+      "item_id": "vcs_spite_reserve",
+      "display_name": "Moët 2003: Spite Reserve",
+      "item_type": "examinable_prop",
+      "price": null,
+      "effect": "Lore-only bottle; not awarded.",
+      "acquisition": "Champagne holder."
+    },
+    {
+      "item_id": "vcs_nft_affinity",
+      "display_name": "NFT Affinity Protection",
+      "item_type": "non_item_buff",
+      "price": 0,
+      "effect": "Documented protection buff.",
+      "acquisition": "QR interaction."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "global NFT collection",
+      "ownership": "external"
+    },
+    {
+      "reference": "CryptoMamiXXX ICQ messages",
+      "ownership": "external"
+    },
+    {
+      "reference": "Hungover status",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "velvet_vip_stall_access_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "meme_black_market_graffiti_clue_read",
+      "type": "state"
+    },
+    {
+      "reward_id": "vip_stall_fisto_lore_read",
+      "type": "state"
+    },
+    {
+      "reward_id": "nft_affinity_protection_active",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies otherwise",
+    "price_confirmation_required": true,
+    "time_modifiers": "documented only"
+  }
+}

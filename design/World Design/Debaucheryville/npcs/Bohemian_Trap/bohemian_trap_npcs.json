@@ -1,0 +1,56 @@
+{
+  "location_id": "debaucheryville_vendor_bohemian_trap_01",
+  "location_name": "The Bohemian Trap",
+  "npcs": [
+    {
+      "npc_id": "bt_npc_performer",
+      "display_name": "The Absinthe Performer",
+      "role": "vendor and ritual showman",
+      "node": "bt_performer",
+      "schedule": "18:00-04:00",
+      "visual": "Belle Époque costume with suspiciously modern shoes.",
+      "quest_bindings": [],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "bohemian_trap_ambient_1",
+      "display_name": "tourist believers",
+      "spawn_nodes": [
+        "bt_ritual_station",
+        "bt_performer",
+        "bt_customer_space"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "bohemian_trap_ambient_2",
+      "display_name": "skeptical locals",
+      "spawn_nodes": [
+        "bt_ritual_station",
+        "bt_performer",
+        "bt_customer_space"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "bt_npc_performer",
+      "node_id": "bt_performer",
+      "role": "vendor and ritual showman"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient count during quest scenes",
+    "Contrast named NPC silhouettes"
+  ]
+}

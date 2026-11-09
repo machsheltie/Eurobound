@@ -1,0 +1,55 @@
+{
+  "location_id": "debaucheryville_blockbuster_internet_museum_01",
+  "item_category": "Faux Museum / Cursed Exhibit Hub / Hidden Access Parent",
+  "items": [
+    {
+      "item_id": "ihm_exhibit_brochure",
+      "display_name": "Internet History Museum Brochure",
+      "item_type": "lore_item",
+      "price": 0,
+      "effect": "Lists exhibit order and safety warnings.",
+      "acquisition": "Lobby."
+    },
+    {
+      "item_id": "ihm_midi_archive_token",
+      "display_name": "MIDI Archive Token",
+      "item_type": "quest_reference",
+      "price": 0,
+      "effect": "Records completion of the MIDI exhibit.",
+      "acquisition": "MIDI/archive interaction."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "meme_black_market_graffiti_clue_read from VIP Stall",
+      "ownership": "external"
+    },
+    {
+      "reference": "ICQ quest data",
+      "ownership": "external"
+    },
+    {
+      "reference": "global NFT collection",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "meme_black_market_entrance_discovered",
+      "type": "state"
+    },
+    {
+      "reward_id": "meme_black_market_entrance_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "curator_of_cursed_web_unlocked",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies another currency",
+    "price_confirmation_required": true,
+    "time_modifiers": "Apply only documented time-based changes"
+  }
+}

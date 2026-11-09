@@ -1,0 +1,125 @@
+{
+  "location_id": "debaucheryville_museum_meme_black_market_01",
+  "ambient_audio": {
+    "base_layers": [
+      "ASCII cat projections ambience",
+      "summoned meme silhouettes ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "mbm_shelf_threshold",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "mbm_vendor_counter",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "mbm_summon_point",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "mbm_trinket_wall",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "mbm_mastery_terminal",
+        "cue": "progression_loop"
+      },
+      {
+        "node_id": "mbm_altar",
+        "cue": "lore_loop"
+      },
+      {
+        "node_id": "mbm_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "mbm_dancing_baby_charm_effect",
+      "source_item": "mbm_dancing_baby_charm",
+      "description": "Small Charm boost; occasional cringe reaction."
+    },
+    {
+      "effect_id": "mbm_badger_loop_effect",
+      "source_item": "mbm_badger_loop",
+      "description": "Distracts one minor enemy; may annoy allies."
+    },
+    {
+      "effect_id": "mbm_corrupted_gif_effect",
+      "source_item": "mbm_corrupted_gif",
+      "description": "Random social status effect."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "services and named NPCs active"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "use documented denial/off-peak state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street response",
+      "seasonal ambient overlay"
+    ],
+    "interior": [
+      "clean plate at threshold"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "meme_black_market_ambient_fx",
+      "nodes": [
+        "mbm_shelf_threshold",
+        "mbm_vendor_counter",
+        "mbm_summon_point",
+        "mbm_trinket_wall",
+        "mbm_mastery_terminal",
+        "mbm_altar"
+      ],
+      "fallback": "static or disabled clean plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "RGB magenta",
+      "CRT cyan",
+      "Windows grey",
+      "corrupted green"
+    ],
+    "key_strategy": "landmarks remain brighter than traversal clutter",
+    "emission_masks": [
+      "meme_black_market_masks"
+    ]
+  },
+  "environmental_storytelling": [
+    "Inside face of the museum's secret shelf.",
+    "Retro-computer altar used as a contraband counter.",
+    "Projected GIF ring for risky summons.",
+    "Funcoland bags, icons and corrupted artifacts.",
+    "Crashing desktop that tracks mastery.",
+    "ASCII cats and devotional away messages.",
+    "Secret shelf returns to the museum."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced GIF flicker",
+      "Static summon symbols",
+      "Text mastery meter",
+      "No-autoplay audio mode"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast_interactions": true
+  }
+}

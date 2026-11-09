@@ -1,0 +1,64 @@
+{
+  "location_id": "debaucheryville_oldtown_euro_ink_4_less_01",
+  "item_category": "tattoo services, aftercare and cosmetic outcomes",
+  "items": [
+    {
+      "item_id": "service_tattoo_duck_reveal",
+      "display_name": "The Lord Pilsner Special",
+      "item_type": "permanent_cosmetic_service",
+      "price": "quest-defined",
+      "effect": "Applies the canonical duck tattoo appearance and tattoo_regret state.",
+      "acquisition": "Complete consultation, payment and Hold Still sequence."
+    },
+    {
+      "item_id": "service_flash_tattoo",
+      "display_name": "Budget Flash Tattoo",
+      "item_type": "repeatable_cosmetic_service",
+      "price": "menu-defined",
+      "effect": "Applies selected approved flash-art cosmetic.",
+      "acquisition": "Purchase from Viktor after the first quest visit."
+    },
+    {
+      "item_id": "item_tattoo_aftercare_packet",
+      "display_name": "Questionable Aftercare Packet",
+      "item_type": "consumable",
+      "price": "included",
+      "effect": "Reduces fresh_tattoo irritation; flavor warns against actual medical reliance.",
+      "acquisition": "Provided after a completed tattoo."
+    },
+    {
+      "item_id": "item_euro_ink_lollipop",
+      "display_name": "Bravery Lollipop",
+      "item_type": "consumable_prop",
+      "price": 0,
+      "effect": "Minor morale flavor reward.",
+      "acquisition": "Reception counter after tattoo completion."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "tattoo_decision_made",
+      "ownership": "astronomical_cockup quest state"
+    },
+    {
+      "reference": "gold/Sovs",
+      "ownership": "global economy"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "lord_pilsner_duck_tattoo_cosmetic",
+      "type": "permanent appearance"
+    },
+    {
+      "reward_id": "euro_ink_repeat_customer",
+      "type": "shop state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs",
+    "services_are_inventory_objects": false,
+    "price_confirmation_required": true,
+    "refunds": false
+  }
+}

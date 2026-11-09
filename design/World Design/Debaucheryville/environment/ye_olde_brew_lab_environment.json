@@ -1,0 +1,132 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+  "ambient_audio": {
+    "base_layers": [
+      "lab technicians ambience",
+      "screen avatars ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "ybl_stair",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "ybl_vats",
+        "cue": "interior_loop"
+      },
+      {
+        "node_id": "ybl_consoles",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "ybl_taste",
+        "cue": "puzzle_loop"
+      },
+      {
+        "node_id": "ybl_algorithm",
+        "cue": "encounter_loop"
+      },
+      {
+        "node_id": "ybl_brewbot",
+        "cue": "boss_loop"
+      },
+      {
+        "node_id": "ybl_service",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "ybl_selfie",
+        "cue": "selfie_loop"
+      },
+      {
+        "node_id": "ybl_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "opener_ye_olde_brew_lab_effect",
+      "description": "Pixel hop cone; Algorithm Verified. Never sold."
+    },
+    {
+      "effect_id": "stamp_ye_olde_brew_lab_effect",
+      "description": "Pixel hop with hash; tour stop 4."
+    },
+    {
+      "effect_id": "beer_ye_olde_brew_lab_effect",
+      "description": "Volatile live price from 13 to 23 Sovs."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "operating",
+      "changes": [
+        "full challenge and service state"
+      ]
+    },
+    {
+      "state": "closed",
+      "changes": [
+        "parent transition denies entry"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "parent-side read-through only"
+    ],
+    "interior": [
+      "no precipitation"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "ye_olde_brew_lab_fx",
+      "nodes": [
+        "ybl_stair",
+        "ybl_vats",
+        "ybl_consoles",
+        "ybl_taste",
+        "ybl_algorithm",
+        "ybl_brewbot",
+        "ybl_service",
+        "ybl_selfie",
+        "ybl_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "harsh blue",
+      "bioluminescent green",
+      "lab white",
+      "screen cyan"
+    ],
+    "emission_mask": "ye_olde_brew_lab_masks",
+    "readability": "puzzle and boss cues override ambience"
+  },
+  "environmental_storytelling": [
+    "Interior side of the Velvet service route.",
+    "Bioluminescent vats and wired fermentation tanks.",
+    "NFT flavor screens and taste controls.",
+    "Logic minigame and opener challenge.",
+    "Mini-mob across LED floor paths.",
+    "Final brewery-tour challenge.",
+    "Tour rewards and volatile Blockchain Bock price.",
+    "Blockchain-hash selfie terminal.",
+    "Returns to Velvet Curtain Club."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced screen scroll",
+      "High-contrast LED paths",
+      "Reduced liquid glow",
+      "Text taste-logic cues"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "audio_substitutes": true
+  }
+}

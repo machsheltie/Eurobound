@@ -1,0 +1,198 @@
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+      "name": "Shadow Exchange",
+      "tag_id": "shadow_exchange",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Damp Old Town alley with crooked sign, cash-only candle marker and hinged cobblestone.",
+        "entry_condition": "Find the cash-only candle marker; Trigger the hinged cobblestone stair"
+      },
+      "interior": {
+        "theme": "A damp wine cellar converted into a counterfeit Bloomberg terminal and barter bazaar.",
+        "features": [
+          "transition: se_hidden_stair",
+          "service: se_exchange_counter",
+          "service: se_barter_window",
+          "quest: se_contract_desk",
+          "shop: se_premium_cage",
+          "exit: se_cellar_exit"
+        ]
+      },
+      "functions": [
+        "currency conversion",
+        "barter",
+        "contracts",
+        "NFT artifact",
+        "brewery referral"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "se_alley_marker",
+      "to": "se_hidden_stair",
+      "bidirectional": true
+    },
+    {
+      "from": "se_hidden_stair",
+      "to": "se_exchange_counter",
+      "bidirectional": true
+    },
+    {
+      "from": "se_exchange_counter",
+      "to": "se_barter_window",
+      "bidirectional": true
+    },
+    {
+      "from": "se_barter_window",
+      "to": "se_contract_desk",
+      "bidirectional": true
+    },
+    {
+      "from": "se_contract_desk",
+      "to": "se_premium_cage",
+      "bidirectional": true
+    },
+    {
+      "from": "se_premium_cage",
+      "to": "se_cellar_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "se_alley_marker": {
+      "connects_to": [
+        "se_hidden_stair"
+      ],
+      "description": "Damp Old Town alley with crooked sign, cash-only candle marker and hinged cobblestone.",
+      "type": "exterior"
+    },
+    "se_hidden_stair": {
+      "connects_to": [
+        "se_alley_marker",
+        "se_exchange_counter"
+      ],
+      "description": "Cold stairwell revealed by the moving cobblestone, lit by cigarette-burned tealights.",
+      "type": "transition"
+    },
+    "se_exchange_counter": {
+      "connects_to": [
+        "se_hidden_stair",
+        "se_barter_window"
+      ],
+      "description": "Scratched glass currency counter beneath the clacking split-flap rate board.",
+      "type": "service"
+    },
+    "se_barter_window": {
+      "connects_to": [
+        "se_exchange_counter",
+        "se_contract_desk"
+      ],
+      "description": "Iron-lattice stall trading goods, favors and questionable documents.",
+      "type": "service"
+    },
+    "se_contract_desk": {
+      "connects_to": [
+        "se_barter_window",
+        "se_premium_cage"
+      ],
+      "description": "Single lamp illuminates the duct-taped Shadow Ledger and contract forms.",
+      "type": "quest"
+    },
+    "se_premium_cage": {
+      "connects_to": [
+        "se_contract_desk",
+        "se_cellar_exit"
+      ],
+      "description": "Locked market cage opened by the documented post-boss state.",
+      "type": "shop"
+    },
+    "se_cellar_exit": {
+      "connects_to": [
+        "se_premium_cage"
+      ],
+      "description": "Return stair to Old Town and referral route toward Three-Crown Keg Haus.",
+      "type": "exit"
+    }
+  },
+  "feature_details": {
+    "se_alley_marker": {
+      "display_name": "Candle-Marked Alley",
+      "image_generation_description": "Damp Old Town alley with crooked sign, cash-only candle marker and hinged cobblestone.",
+      "occlusion": "Keep interaction silhouette readable.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ]
+    },
+    "se_hidden_stair": {
+      "display_name": "Hidden Stair",
+      "image_generation_description": "Cold stairwell revealed by the moving cobblestone, lit by cigarette-burned tealights.",
+      "occlusion": "Keep interaction silhouette readable.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ]
+    },
+    "se_exchange_counter": {
+      "display_name": "Exchange Counter",
+      "image_generation_description": "Scratched glass currency counter beneath the clacking split-flap rate board.",
+      "occlusion": "Keep interaction silhouette readable.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ]
+    },
+    "se_barter_window": {
+      "display_name": "Barter Window",
+      "image_generation_description": "Iron-lattice stall trading goods, favors and questionable documents.",
+      "occlusion": "Keep interaction silhouette readable.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ]
+    },
+    "se_contract_desk": {
+      "display_name": "Contract Desk",
+      "image_generation_description": "Single lamp illuminates the duct-taped Shadow Ledger and contract forms.",
+      "occlusion": "Keep interaction silhouette readable.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ]
+    },
+    "se_premium_cage": {
+      "display_name": "Premium Stock Cage",
+      "image_generation_description": "Locked market cage opened by the documented post-boss state.",
+      "occlusion": "Keep interaction silhouette readable.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ]
+    },
+    "se_cellar_exit": {
+      "display_name": "Cellar Exit",
+      "image_generation_description": "Return stair to Old Town and referral route toward Three-Crown Keg Haus.",
+      "occlusion": "Keep interaction silhouette readable.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ]
+    }
+  },
+  "ambient_npcs": [
+    "whispering brokers",
+    "waiting tourists",
+    "smoke silhouettes"
+  ]
+}

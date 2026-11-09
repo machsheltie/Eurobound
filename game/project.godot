@@ -11,18 +11,19 @@ config_version=5
 [application]
 
 config/name="Eurobound"
-run/main_scene="res://ui/title_screen.tscn"
-config/features=PackedStringArray("4.4", "Mobile")
+run/main_scene="res://worlds/debaucheryville/absinthe_arcade_exterior_hd2d.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[aseprite]
+
+import/import_plugin/enable_automatic_importer=true
 
 [autoload]
 
-DataRepo="*res://core/data_repo.gd"
-GameState="*res://core/game_state.gd"
-SaveSystem="*res://core/save_system.gd"
-InputSetup="*res://core/input_manager.gd"
-SceneRouter="*res://core/scene_router.gd"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
 
-[rendering]
+[editor_plugins]
 
-renderer/rendering_method="mobile"
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_mcp/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/no_clip_billboard_sprite3d/plugin.cfg", "res://addons/phantom_camera/plugin.cfg")

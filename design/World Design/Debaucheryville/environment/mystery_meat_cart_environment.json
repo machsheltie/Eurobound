@@ -1,0 +1,129 @@
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "ambient_audio": {
+    "base_layers": [
+      "crying children ambience",
+      "circus customers ambience",
+      "steam silhouettes ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "mmc_cart",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "mmc_menu",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "mmc_rotisserie",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "mmc_chef",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "mmc_storage",
+        "cue": "examine_loop"
+      },
+      {
+        "node_id": "mmc_consume",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "mmc_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "mmc_doner_illusions_effect",
+      "description": "Recovery with visual illusion chance."
+    },
+    {
+      "effect_id": "mmc_sausage_suspicion_effect",
+      "description": "Moderate recovery and Suspicious status."
+    },
+    {
+      "effect_id": "mmc_clown_dog_effect",
+      "description": "Large recovery with carnival debuff risk."
+    },
+    {
+      "effect_id": "mmc_meatball_lollipop_effect",
+      "description": "Small recovery and embarrassment."
+    },
+    {
+      "effect_id": "mmc_brain_brat_effect",
+      "description": "High reward and severe random status."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open_or_window",
+      "changes": [
+        "activate documented services and cues"
+      ]
+    },
+    {
+      "state": "closed",
+      "changes": [
+        "deny entry or fold vendor state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street/circus response"
+    ],
+    "interior": [
+      "threshold read-through only"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "mystery_meat_cart_fx",
+      "nodes": [
+        "mmc_cart",
+        "mmc_menu",
+        "mmc_rotisserie",
+        "mmc_chef",
+        "mmc_storage",
+        "mmc_consume",
+        "mmc_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "carnival red",
+      "neon yellow",
+      "steam grey",
+      "porcelain white"
+    ],
+    "emission_mask": "mystery_meat_cart_masks",
+    "readability": "interaction silhouettes remain clear"
+  },
+  "environmental_storytelling": [
+    "Pushcart beside ringmaster tent under violent carnival light.",
+    "Sign cycles Shady Dogs, Meat Roulette and disclaimers.",
+    "Neon carousel of suspicious spinning meat.",
+    "Knife-flip counter and cracked mask display.",
+    "Closed containers and source-appropriate mystery.",
+    "Reaction zone near the cart.",
+    "Returns to circus grounds."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced carnival flash",
+      "Static rotisserie option",
+      "Text risk labels",
+      "Knife animation substitute"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

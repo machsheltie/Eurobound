@@ -5,7 +5,7 @@
 | Field | Value |
 |---|---|
 | Location ID | `debaucheryville_clocktower_arcade_01` |
-| Engine | Godot 4.4 |
+| Engine | Godot 4.7 (Forward+) |
 | Production style | Painterly HD-2D painted-box diorama |
 | Exterior | Historic Prague-inspired facade vandalized by a green-and-purple arcade retrofit |
 | Interior | Grand adaptive-reuse amusement hall organized around a monumental cracked-bottle bar |
@@ -376,7 +376,7 @@ Never remove quest NPCs, the bottle-bar silhouette, token pips, door indicators,
 - [ ] Every interaction has a visible non-color-only state cue.
 - [ ] Collision, interaction and occlusion masks match approved compositions.
 - [ ] High, low and motion-reduction contact sheets are reviewed at game scale.
-- [ ] Godot 4.4 import uses linear filtering and mipmaps appropriate to painterly HD-2D.
+- [ ] Godot 4.7 import uses linear filtering and mipmaps appropriate to painterly HD-2D.
 
 ## Final Art Rule
 

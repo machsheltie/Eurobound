@@ -1,0 +1,56 @@
+{
+  "location_id": "debaucheryville_vendor_strobe_survival_01",
+  "location_name": "The Strobe Survival Kit",
+  "npcs": [
+    {
+      "npc_id": "ssk_npc_miroslav",
+      "display_name": "Miroslav",
+      "role": "operator and tactical briefer",
+      "node": "ssk_operator",
+      "schedule": "20:00-05:00",
+      "visual": "Military-surplus vest, hearing protection and clipboard.",
+      "quest_bindings": [],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "strobe_survival_kit_ambient_1",
+      "display_name": "pre-club shoppers",
+      "spawn_nodes": [
+        "ssk_support_shelf",
+        "ssk_decibel_display",
+        "ssk_operator"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "strobe_survival_kit_ambient_2",
+      "display_name": "post-club casualties",
+      "spawn_nodes": [
+        "ssk_support_shelf",
+        "ssk_decibel_display",
+        "ssk_operator"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "ssk_npc_miroslav",
+      "node_id": "ssk_operator",
+      "role": "operator and tactical briefer"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient count during quest scenes",
+    "Contrast named NPC silhouettes"
+  ]
+}

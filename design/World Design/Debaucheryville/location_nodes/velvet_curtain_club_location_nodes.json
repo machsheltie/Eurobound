@@ -1,0 +1,249 @@
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+      "name": "Velvet Curtain Club",
+      "tag_id": "velvet_curtain_club",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Graffiti lane, dumpster mural and rope checkpoint.",
+        "entry_condition": "Alley always approachable; vip_wristbands_all_bros starts return sequence; stage 7 exports vip_wristband_quest_complete and velvet_curtain_club_access_was_always_free"
+      },
+      "interior": {
+        "theme": "Fraudulent exclusivity staged in burgundy fog, crushed velvet and vape-crystal chandeliers.",
+        "features": [
+          "gate: vcc_bouncer_gate",
+          "social: vcc_dance_floor",
+          "interaction: vcc_dj_dais",
+          "social: vcc_booths",
+          "service: vcc_bar",
+          "transition: vcc_vip_path",
+          "transition: vcc_lab_path",
+          "exit: vcc_exit"
+        ]
+      },
+      "functions": [
+        "Resolve First Entry",
+        "Enter Club",
+        "Work the Room",
+        "Place Club Flyer",
+        "Follow Glitter Trail",
+        "Pass VIP Stall Bravado Gate",
+        "Inspect Service Route",
+        "Bypass or Charm Lab Gate"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "vcc_alley",
+      "to": "vcc_bouncer_gate",
+      "bidirectional": true
+    },
+    {
+      "from": "vcc_bouncer_gate",
+      "to": "vcc_dance_floor",
+      "bidirectional": true
+    },
+    {
+      "from": "vcc_dance_floor",
+      "to": "vcc_dj_dais",
+      "bidirectional": true
+    },
+    {
+      "from": "vcc_dj_dais",
+      "to": "vcc_booths",
+      "bidirectional": true
+    },
+    {
+      "from": "vcc_booths",
+      "to": "vcc_bar",
+      "bidirectional": true
+    },
+    {
+      "from": "vcc_bar",
+      "to": "vcc_vip_path",
+      "bidirectional": true
+    },
+    {
+      "from": "vcc_vip_path",
+      "to": "vcc_lab_path",
+      "bidirectional": true
+    },
+    {
+      "from": "vcc_lab_path",
+      "to": "vcc_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "vcc_alley": {
+      "connects_to": [
+        "vcc_bouncer_gate"
+      ],
+      "type": "exterior",
+      "description": "Graffiti lane, dumpster mural and rope checkpoint."
+    },
+    "vcc_bouncer_gate": {
+      "connects_to": [
+        "vcc_alley",
+        "vcc_dance_floor"
+      ],
+      "type": "gate",
+      "description": "Tomáš and Marek guard the bass-pulsing curtain."
+    },
+    "vcc_dance_floor": {
+      "connects_to": [
+        "vcc_bouncer_gate",
+        "vcc_dj_dais"
+      ],
+      "type": "social",
+      "description": "Burgundy fog beneath vape-pen chandeliers."
+    },
+    "vcc_dj_dais": {
+      "connects_to": [
+        "vcc_dance_floor",
+        "vcc_booths"
+      ],
+      "type": "interaction",
+      "description": "DJ platform and club audio landmark."
+    },
+    "vcc_booths": {
+      "connects_to": [
+        "vcc_dj_dais",
+        "vcc_bar"
+      ],
+      "type": "social",
+      "description": "Semicircular social and quest seating."
+    },
+    "vcc_bar": {
+      "connects_to": [
+        "vcc_booths",
+        "vcc_vip_path"
+      ],
+      "type": "service",
+      "description": "Drink service and patron reactions."
+    },
+    "vcc_vip_path": {
+      "connects_to": [
+        "vcc_bar",
+        "vcc_lab_path"
+      ],
+      "type": "transition",
+      "description": "Glitter trail to STAFF ONLY curtain and Bravado gate."
+    },
+    "vcc_lab_path": {
+      "connects_to": [
+        "vcc_vip_path",
+        "vcc_exit"
+      ],
+      "type": "transition",
+      "description": "Service route to QR pad and basement transition."
+    },
+    "vcc_exit": {
+      "connects_to": [
+        "vcc_lab_path"
+      ],
+      "type": "exit",
+      "description": "Returns through the velvet curtain."
+    }
+  },
+  "feature_details": {
+    "vcc_alley": {
+      "display_name": "Opera-Ruins Alley",
+      "image_generation_description": "Graffiti lane, dumpster mural and rope checkpoint.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcc_bouncer_gate": {
+      "display_name": "Velvet Rope Gate",
+      "image_generation_description": "Tomáš and Marek guard the bass-pulsing curtain.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcc_dance_floor": {
+      "display_name": "Dance Floor",
+      "image_generation_description": "Burgundy fog beneath vape-pen chandeliers.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcc_dj_dais": {
+      "display_name": "Broken-Throne DJ Dais",
+      "image_generation_description": "DJ platform and club audio landmark.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcc_booths": {
+      "display_name": "Crushed-Velvet Booths",
+      "image_generation_description": "Semicircular social and quest seating.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcc_bar": {
+      "display_name": "Club Bar",
+      "image_generation_description": "Drink service and patron reactions.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcc_vip_path": {
+      "display_name": "VIP Stall Path",
+      "image_generation_description": "Glitter trail to STAFF ONLY curtain and Bravado gate.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcc_lab_path": {
+      "display_name": "B.R.E.W. Lab Service Route",
+      "image_generation_description": "Service route to QR pad and basement transition.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcc_exit": {
+      "display_name": "Alley Exit",
+      "image_generation_description": "Returns through the velvet curtain.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    }
+  },
+  "ambient_npcs": [
+    "club patrons",
+    "booth influencers",
+    "dance-floor crowd"
+  ]
+}

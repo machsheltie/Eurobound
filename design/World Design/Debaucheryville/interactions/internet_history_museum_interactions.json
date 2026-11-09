@@ -1,0 +1,188 @@
+{
+  "location_id": "debaucheryville_blockbuster_internet_museum_01",
+  "events": [
+    {
+      "event_id": "ihm_enter_after_hours",
+      "display_name": "Use Quest-Unlatched Door",
+      "trigger": {
+        "verb": "enter",
+        "node_id": "ihm_exterior"
+      },
+      "requirements": [
+        "meme_black_market_graffiti_clue_read",
+        "time_0325_0340"
+      ],
+      "results": [
+        "internet_museum_after_hours_access_enabled"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "ICQ events"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "ihm_modem_exhibit",
+      "display_name": "Listen to Modem Shrine",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "ihm_modem_hall"
+      },
+      "requirements": [],
+      "results": [
+        "apply_modem_lore"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "ICQ events"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "ihm_geocities_0333",
+      "display_name": "Activate GeoCities Kiosk",
+      "trigger": {
+        "verb": "puzzle",
+        "node_id": "ihm_geocities",
+        "exact_time": "03:33"
+      },
+      "requirements": [
+        "time_0333",
+        "internet_museum_after_hours_access_enabled"
+      ],
+      "results": [
+        "meme_black_market_entrance_discovered"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "ICQ events"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "ihm_msn_password",
+      "display_name": "Enter AllYourBase69",
+      "trigger": {
+        "verb": "input",
+        "node_id": "ihm_msn"
+      },
+      "requirements": [
+        "meme_black_market_entrance_discovered"
+      ],
+      "results": [
+        "meme_black_market_entrance_unlocked"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "ICQ events"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "ihm_open_shelf",
+      "display_name": "Open Secret VHS Shelf",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "ihm_vhs_shelf"
+      },
+      "requirements": [
+        "meme_black_market_entrance_unlocked"
+      ],
+      "results": [
+        "transition_meme_black_market"
+      ],
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "ICQ events"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "ihm_enter_after_hours",
+      "node_id": "ihm_exterior",
+      "verb": "enter",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "ihm_modem_exhibit",
+      "node_id": "ihm_modem_hall",
+      "verb": "inspect",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "ihm_geocities_0333",
+      "node_id": "ihm_geocities",
+      "verb": "puzzle",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "ihm_msn_password",
+      "node_id": "ihm_msn",
+      "verb": "input",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "ihm_open_shelf",
+      "node_id": "ihm_vhs_shelf",
+      "verb": "travel",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "internet_museum_open",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "internet_museum_after_hours_access_enabled",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "meme_black_market_graffiti_clue_read",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "meme_black_market_entrance_discovered",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "meme_black_market_entrance_unlocked",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "curator_of_cursed_web_unlocked",
+      "change": "Persist and present the corresponding authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Preserving Our Digital Past in Comic Sans",
+    "A failed video store curated as a dead-serious museum of cursed early-internet trauma."
+  ]
+}

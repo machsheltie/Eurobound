@@ -1,0 +1,176 @@
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "claw_machine_maintenance_closet_restroom_environment",
+      "atlas": "claw_machine_maintenance_closet_restroom_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_exterior",
+          "filename": "claw_machine_maintenance_closet_restroom_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "cmr_inside_door"
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_interior",
+          "filename": "claw_machine_maintenance_closet_restroom_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "cmr_ddr_toilet"
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_node_cmr_ddr_toilet",
+          "filename": "claw_machine_maintenance_closet_restroom_cmr_ddr_toilet.png",
+          "role": "interaction landmark",
+          "node_id": "cmr_ddr_toilet"
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_node_cmr_crt_mirror",
+          "filename": "claw_machine_maintenance_closet_restroom_cmr_crt_mirror.png",
+          "role": "interaction landmark",
+          "node_id": "cmr_crt_mirror"
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_node_cmr_graffiti_wall",
+          "filename": "claw_machine_maintenance_closet_restroom_cmr_graffiti_wall.png",
+          "role": "lore landmark",
+          "node_id": "cmr_graffiti_wall"
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_node_cmr_claw_bucket",
+          "filename": "claw_machine_maintenance_closet_restroom_cmr_claw_bucket.png",
+          "role": "examine landmark",
+          "node_id": "cmr_claw_bucket"
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_node_cmr_exit",
+          "filename": "claw_machine_maintenance_closet_restroom_cmr_exit.png",
+          "role": "exit landmark",
+          "node_id": "cmr_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "claw_machine_maintenance_closet_restroom_characters",
+      "atlas": "claw_machine_maintenance_closet_restroom_characters_atlas.png",
+      "assets": []
+    },
+    {
+      "group_id": "claw_machine_maintenance_closet_restroom_ui_fx",
+      "atlas": "claw_machine_maintenance_closet_restroom_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_item_cmr_broken_prize_tag",
+          "filename": "claw_machine_maintenance_closet_restroom_cmr_broken_prize_tag.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_item_cmr_rival_icq_snapshot",
+          "filename": "claw_machine_maintenance_closet_restroom_cmr_rival_icq_snapshot.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_ui",
+          "filename": "claw_machine_maintenance_closet_restroom_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_fx",
+          "filename": "claw_machine_maintenance_closet_restroom_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "claw_machine_maintenance_closet_restroom_masks",
+          "filename": "claw_machine_maintenance_closet_restroom_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [],
+  "lighting_effects": [
+    {
+      "effect_id": "claw_machine_maintenance_closet_restroom_lighting",
+      "mask_asset": "claw_machine_maintenance_closet_restroom_masks",
+      "nodes": [
+        "cmr_inside_door",
+        "cmr_ddr_toilet",
+        "cmr_crt_mirror",
+        "cmr_graffiti_wall",
+        "cmr_claw_bucket",
+        "cmr_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "cmr_exit_arcade",
+      "destination_id": "debaucheryville_clocktower_arcade_01",
+      "from_node": "cmr_exit",
+      "condition": "arcade_maintenance_restroom_unlocked"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "cmr_use_fixture",
+      "node_id": "cmr_ddr_toilet",
+      "highlight_asset": "claw_machine_maintenance_closet_restroom_node_cmr_ddr_toilet"
+    },
+    {
+      "interaction_id": "cmr_scan_mirror",
+      "node_id": "cmr_crt_mirror",
+      "highlight_asset": "claw_machine_maintenance_closet_restroom_node_cmr_crt_mirror"
+    },
+    {
+      "interaction_id": "cmr_read_graffiti",
+      "node_id": "cmr_graffiti_wall",
+      "highlight_asset": "claw_machine_maintenance_closet_restroom_node_cmr_graffiti_wall"
+    },
+    {
+      "interaction_id": "cmr_examine_claw",
+      "node_id": "cmr_claw_bucket",
+      "highlight_asset": "claw_machine_maintenance_closet_restroom_node_cmr_claw_bucket"
+    },
+    {
+      "interaction_id": "cmr_return",
+      "node_id": "cmr_exit",
+      "highlight_asset": "claw_machine_maintenance_closet_restroom_node_cmr_exit"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "claw_machine_maintenance_closet_restroom_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 12,
+    "reduced_fx_asset": "claw_machine_maintenance_closet_restroom_fx"
+  }
+}

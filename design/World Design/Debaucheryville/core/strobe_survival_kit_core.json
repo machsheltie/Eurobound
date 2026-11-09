@@ -1,0 +1,75 @@
+{
+  "location_id": "debaucheryville_vendor_strobe_survival_01",
+  "display_name": "The Strobe Survival Kit",
+  "satirical_subtitle": "Equip Yourself. The Night Is Hostile.",
+  "world": "Debaucheryville",
+  "zone": "Neon Quarter club approach",
+  "location_type": "Sensory Protection / Rave Equipment Stall",
+  "sub_types": [
+    "quest location",
+    "service or micro-location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/the_strobe_survival_kit.md",
+    "docs/superpowers/specs/2026-11-02-strobe-survival-kit-location-package-design.md"
+  ],
+  "access": {
+    "hours": "20:00-05:00",
+    "entry_requirements": [
+      "Vendor operating hours"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "ssk_exit_quarter",
+      "destination_id": "debaucheryville_neon_entertainment_quarter",
+      "from_node": "ssk_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Fold-Out Stall -> Audio Defense -> Visual Enhancement -> Chemical Support -> Decibel Warning Display -> Miroslav Counter -> Quarter Exit",
+    "landmarks": [
+      "Fold-Out Stall",
+      "Audio Defense",
+      "Visual Enhancement",
+      "Chemical Support",
+      "Decibel Warning Display",
+      "Miroslav Counter",
+      "Quarter Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_neon_entertainment_quarter owns space beyond ssk_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "Military-surplus efficiency applied to rave survival."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "tactical olive",
+      "warning amber",
+      "LED cyan",
+      "stencil white"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Equip Yourself. The Night Is Hostile.",
+    "contrast": "Military-surplus efficiency applied to rave survival."
+  },
+  "state_tracking": {
+    "strobe_survival_open": false,
+    "strobe_survival_midnight_markup": false,
+    "strobe_tactical_briefing_seen": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "strobe_survival_kit_exterior",
+      "strobe_survival_kit_interior",
+      "strobe_survival_kit_ui"
+    ]
+  }
+}

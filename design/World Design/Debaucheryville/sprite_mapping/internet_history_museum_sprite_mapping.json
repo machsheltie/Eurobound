@@ -1,0 +1,246 @@
+{
+  "location_id": "debaucheryville_blockbuster_internet_museum_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "internet_history_museum_environment",
+      "atlas": "internet_history_museum_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "internet_history_museum_exterior",
+          "filename": "internet_history_museum_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "ihm_exterior"
+        },
+        {
+          "asset_id": "internet_history_museum_interior",
+          "filename": "internet_history_museum_interior.png",
+          "role": "interior/service-footprint painted layer",
+          "node_id": "ihm_lobby"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_lobby",
+          "filename": "internet_history_museum_ihm_lobby.png",
+          "role": "service landmark",
+          "node_id": "ihm_lobby"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_modem_hall",
+          "filename": "internet_history_museum_ihm_modem_hall.png",
+          "role": "exhibit landmark",
+          "node_id": "ihm_modem_hall"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_geocities",
+          "filename": "internet_history_museum_ihm_geocities.png",
+          "role": "puzzle landmark",
+          "node_id": "ihm_geocities"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_angelfire",
+          "filename": "internet_history_museum_ihm_angelfire.png",
+          "role": "exhibit landmark",
+          "node_id": "ihm_angelfire"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_habbo",
+          "filename": "internet_history_museum_ihm_habbo.png",
+          "role": "exhibit landmark",
+          "node_id": "ihm_habbo"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_msn",
+          "filename": "internet_history_museum_ihm_msn.png",
+          "role": "puzzle landmark",
+          "node_id": "ihm_msn"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_imac_altar",
+          "filename": "internet_history_museum_ihm_imac_altar.png",
+          "role": "exhibit landmark",
+          "node_id": "ihm_imac_altar"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_vhs_shelf",
+          "filename": "internet_history_museum_ihm_vhs_shelf.png",
+          "role": "transition landmark",
+          "node_id": "ihm_vhs_shelf"
+        },
+        {
+          "asset_id": "internet_history_museum_node_ihm_exit",
+          "filename": "internet_history_museum_ihm_exit.png",
+          "role": "exit landmark",
+          "node_id": "ihm_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "internet_history_museum_characters",
+      "atlas": "internet_history_museum_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "internet_history_museum_npc_ihm_npc_curator",
+          "filename": "internet_history_museum_ihm_npc_curator.png",
+          "role": "character sprite",
+          "node_id": "ihm_lobby"
+        },
+        {
+          "asset_id": "internet_history_museum_npc_ihm_npc_night_security",
+          "filename": "internet_history_museum_ihm_npc_night_security.png",
+          "role": "character sprite",
+          "node_id": "ihm_exterior"
+        }
+      ]
+    },
+    {
+      "group_id": "internet_history_museum_ui_fx",
+      "atlas": "internet_history_museum_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "internet_history_museum_item_ihm_exhibit_brochure",
+          "filename": "internet_history_museum_ihm_exhibit_brochure.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "internet_history_museum_item_ihm_midi_archive_token",
+          "filename": "internet_history_museum_ihm_midi_archive_token.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "internet_history_museum_ui",
+          "filename": "internet_history_museum_ui.png",
+          "role": "interaction and status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "internet_history_museum_fx",
+          "filename": "internet_history_museum_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "internet_history_museum_masks",
+          "filename": "internet_history_museum_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "ihm_npc_curator_standard",
+      "asset_id": "internet_history_museum_npc_ihm_npc_curator",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "ihm_npc_night_security_standard",
+      "asset_id": "internet_history_museum_npc_ihm_npc_night_security",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "internet_history_museum_emission",
+      "mask_asset": "internet_history_museum_masks",
+      "nodes": [
+        "ihm_exterior",
+        "ihm_lobby",
+        "ihm_modem_hall",
+        "ihm_geocities",
+        "ihm_angelfire",
+        "ihm_habbo",
+        "ihm_msn",
+        "ihm_imac_altar",
+        "ihm_vhs_shelf",
+        "ihm_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "ihm_exit_downtown",
+      "destination_id": "debaucheryville_downtown",
+      "from_node": "ihm_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "ihm_exit_meme_market",
+      "destination_id": "debaucheryville_museum_meme_black_market_01",
+      "from_node": "ihm_vhs_shelf",
+      "condition": "meme_black_market_entrance_unlocked"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "ihm_enter_after_hours",
+      "node_id": "ihm_exterior",
+      "highlight_asset": "internet_history_museum_exterior"
+    },
+    {
+      "interaction_id": "ihm_modem_exhibit",
+      "node_id": "ihm_modem_hall",
+      "highlight_asset": "internet_history_museum_node_ihm_modem_hall"
+    },
+    {
+      "interaction_id": "ihm_geocities_0333",
+      "node_id": "ihm_geocities",
+      "highlight_asset": "internet_history_museum_node_ihm_geocities"
+    },
+    {
+      "interaction_id": "ihm_msn_password",
+      "node_id": "ihm_msn",
+      "highlight_asset": "internet_history_museum_node_ihm_msn"
+    },
+    {
+      "interaction_id": "ihm_open_shelf",
+      "node_id": "ihm_vhs_shelf",
+      "highlight_asset": "internet_history_museum_node_ihm_vhs_shelf"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "internet_history_museum_masks",
+      "channels": {
+        "r": "signs",
+        "g": "screens/practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 10,
+    "reduced_fx_asset": "internet_history_museum_fx"
+  }
+}

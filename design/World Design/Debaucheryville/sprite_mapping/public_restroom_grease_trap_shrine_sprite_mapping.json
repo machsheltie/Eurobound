@@ -1,0 +1,196 @@
+{
+  "location_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter or micro-room cutaway"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "public_restroom_grease_trap_shrine_environment",
+      "atlas": "public_restroom_grease_trap_shrine_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_exterior",
+          "filename": "public_restroom_grease_trap_shrine_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "gts_crawlspace"
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_interior",
+          "filename": "public_restroom_grease_trap_shrine_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "gts_fixture"
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_node_gts_fixture",
+          "filename": "public_restroom_grease_trap_shrine_gts_fixture.png",
+          "role": "interaction landmark",
+          "node_id": "gts_fixture"
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_node_gts_sink",
+          "filename": "public_restroom_grease_trap_shrine_gts_sink.png",
+          "role": "examine landmark",
+          "node_id": "gts_sink"
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_node_gts_mirror",
+          "filename": "public_restroom_grease_trap_shrine_gts_mirror.png",
+          "role": "lore landmark",
+          "node_id": "gts_mirror"
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_node_gts_fisto_tag",
+          "filename": "public_restroom_grease_trap_shrine_gts_fisto_tag.png",
+          "role": "lore landmark",
+          "node_id": "gts_fisto_tag"
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_node_gts_kebab_icon",
+          "filename": "public_restroom_grease_trap_shrine_gts_kebab_icon.png",
+          "role": "quest landmark",
+          "node_id": "gts_kebab_icon"
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_node_gts_haiku",
+          "filename": "public_restroom_grease_trap_shrine_gts_haiku.png",
+          "role": "quest landmark",
+          "node_id": "gts_haiku"
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_node_gts_exit",
+          "filename": "public_restroom_grease_trap_shrine_gts_exit.png",
+          "role": "exit landmark",
+          "node_id": "gts_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "public_restroom_grease_trap_shrine_characters",
+      "atlas": "public_restroom_grease_trap_shrine_characters_atlas.png",
+      "assets": []
+    },
+    {
+      "group_id": "public_restroom_grease_trap_shrine_ui_fx",
+      "atlas": "public_restroom_grease_trap_shrine_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_item_gts_cursed_coin",
+          "filename": "public_restroom_grease_trap_shrine_gts_cursed_coin.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_item_gts_half_antacid",
+          "filename": "public_restroom_grease_trap_shrine_gts_half_antacid.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_item_gts_warm_receipt",
+          "filename": "public_restroom_grease_trap_shrine_gts_warm_receipt.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_ui",
+          "filename": "public_restroom_grease_trap_shrine_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_fx",
+          "filename": "public_restroom_grease_trap_shrine_fx.png",
+          "role": "particles and overlays",
+          "node_id": null
+        },
+        {
+          "asset_id": "public_restroom_grease_trap_shrine_masks",
+          "filename": "public_restroom_grease_trap_shrine_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [],
+  "lighting_effects": [
+    {
+      "effect_id": "public_restroom_grease_trap_shrine_lighting",
+      "mask_asset": "public_restroom_grease_trap_shrine_masks",
+      "nodes": [
+        "gts_crawlspace",
+        "gts_fixture",
+        "gts_sink",
+        "gts_mirror",
+        "gts_fisto_tag",
+        "gts_kebab_icon",
+        "gts_haiku",
+        "gts_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "gts_exit_kebab",
+      "destination_id": "debaucheryville_velvet_alley_kebab_01",
+      "from_node": "gts_exit",
+      "condition": "always_inside"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "gts_read_tag",
+      "node_id": "gts_fisto_tag",
+      "highlight_asset": "public_restroom_grease_trap_shrine_node_gts_fisto_tag"
+    },
+    {
+      "interaction_id": "gts_stomach",
+      "node_id": "gts_fisto_tag",
+      "highlight_asset": "public_restroom_grease_trap_shrine_node_gts_fisto_tag"
+    },
+    {
+      "interaction_id": "gts_hungover_icon",
+      "node_id": "gts_kebab_icon",
+      "highlight_asset": "public_restroom_grease_trap_shrine_node_gts_kebab_icon"
+    },
+    {
+      "interaction_id": "gts_complete_graffiti",
+      "node_id": "gts_haiku",
+      "highlight_asset": "public_restroom_grease_trap_shrine_node_gts_haiku"
+    },
+    {
+      "interaction_id": "gts_icq_combo",
+      "node_id": "gts_mirror",
+      "highlight_asset": "public_restroom_grease_trap_shrine_node_gts_mirror"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "public_restroom_grease_trap_shrine_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 8,
+    "reduced_fx_asset": "public_restroom_grease_trap_shrine_fx"
+  }
+}

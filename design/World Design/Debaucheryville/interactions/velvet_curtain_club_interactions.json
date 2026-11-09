@@ -1,0 +1,301 @@
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  "events": [
+    {
+      "event_id": "vcc_bouncer",
+      "display_name": "Resolve First Entry",
+      "trigger": {
+        "verb": "quest",
+        "node_id": "vcc_bouncer_gate"
+      },
+      "requirements": [
+        "vip_wristbands_all_bros"
+      ],
+      "results": [
+        "advance_vip_wristband_stages_4_7"
+      ],
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcc_enter",
+      "display_name": "Enter Club",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "vcc_bouncer_gate"
+      },
+      "requirements": [
+        "velvet_curtain_club_access_was_always_free"
+      ],
+      "results": [
+        "enter_club"
+      ],
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcc_social",
+      "display_name": "Work the Room",
+      "trigger": {
+        "verb": "socialize",
+        "node_id": "vcc_booths"
+      },
+      "requirements": [],
+      "results": [
+        "bind_social_events"
+      ],
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcc_flyer",
+      "display_name": "Place Club Flyer",
+      "trigger": {
+        "verb": "place",
+        "node_id": "vcc_bar"
+      },
+      "requirements": [],
+      "results": [
+        "club_flyer_triggered"
+      ],
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcc_discover_vip",
+      "display_name": "Follow Glitter Trail",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "vcc_vip_path"
+      },
+      "requirements": [],
+      "results": [
+        "velvet_vip_stall_entrance_discovered"
+      ],
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcc_unlock_vip",
+      "display_name": "Pass VIP Stall Bravado Gate",
+      "trigger": {
+        "verb": "check",
+        "node_id": "vcc_vip_path"
+      },
+      "requirements": [
+        "velvet_vip_stall_entrance_discovered"
+      ],
+      "results": [
+        "velvet_vip_stall_access_unlocked"
+      ],
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcc_discover_lab",
+      "display_name": "Inspect Service Route",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "vcc_lab_path"
+      },
+      "requirements": [],
+      "results": [
+        "brew_lab_entrance_discovered"
+      ],
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "vcc_unlock_lab",
+      "display_name": "Bypass or Charm Lab Gate",
+      "trigger": {
+        "verb": "check",
+        "node_id": "vcc_lab_path"
+      },
+      "requirements": [
+        "brew_lab_entrance_discovered"
+      ],
+      "results": [
+        "brew_lab_access_unlocked"
+      ],
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "vcc_bouncer",
+      "node_id": "vcc_bouncer_gate",
+      "verb": "quest",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcc_enter",
+      "node_id": "vcc_bouncer_gate",
+      "verb": "travel",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcc_social",
+      "node_id": "vcc_booths",
+      "verb": "socialize",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcc_flyer",
+      "node_id": "vcc_bar",
+      "verb": "place",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcc_discover_vip",
+      "node_id": "vcc_vip_path",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcc_unlock_vip",
+      "node_id": "vcc_vip_path",
+      "verb": "check",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcc_discover_lab",
+      "node_id": "vcc_lab_path",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "vcc_unlock_lab",
+      "node_id": "vcc_lab_path",
+      "verb": "check",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "vip_wristbands_all_bros",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "vip_wristband_quest_complete",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "velvet_curtain_club_access_was_always_free",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "velvet_vip_stall_entrance_discovered",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "velvet_vip_stall_access_unlocked",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "brew_lab_entrance_discovered",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "brew_lab_access_unlocked",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "club_flyer_triggered",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Vibes Only. No Shoes? No Dignity? You're In.",
+    "Fraudulent exclusivity staged in burgundy fog, crushed velvet and vape-crystal chandeliers."
+  ]
+}

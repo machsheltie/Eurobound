@@ -302,3 +302,40 @@ session archive after its silent ledger-write failure):
 the Mystery Meat Cart menu is superseded; the quest docs' Sovs pricing (5/6/7/9/12) is canon
 and the data record now uses `{"sovs": N}`. Do not relitigate. (Scope: this ruling covered
 the cart menu flag; kebab_coins as the arcade/shadow-exchange alt-currency was not touched.)
+
+## Standing rulings 2026-11-02: Absinthe Arcade (author)
+
+- **All Arcade money is SOVS.** The token exchange takes SOVS at **1 SOV = 1 token**. The old
+  kebab-coin 1:5 rate is struck in the design package and in the engine data
+  (`debaucheryville_locations.json`, `debaucheryville_interactions.json`). This settles the
+  arcade half of the open kebab_coins question; the shadow exchange's kebab_coins are still
+  unruled.
+- **DDR restroom unlock: 3 tokens** (confirmed). **Claw machine: 5 tokens per attempt.**
+- **Interiors are Bravely Default style**, with the same **fixed HD-2D tilt camera** as the
+  exterior.
+- **The mezzanine is visual only.** It is not a walkable floor.
+- **Backpack Girl's cabinet-side spot stays on the primary route.**
+- Do not relitigate.
+- **Arcade cabinets are battle encounters, not mini-games.** Frogger: Existential Edition,
+  Street Fighter: Identity Crisis and Kebab Kombat each release 2-3 game-inspired villain
+  types that fight the bros through the existing battle system. The rigged claw machine stays
+  the Arcade's one real mini-game. **Interior size: 15.4 x 18 real metres** (main hall about
+  15 x 12 m, north L-wing about 8 x 6 m), framed for one fixed-tilt screen.
+
+## Standing rulings 2026-11-08: Arcade interior and party sprites (author)
+
+- **Real brand and game names stay as drawn** (HORNETS jersey, cap and polo logos, and real
+  arcade titles such as Frogger, Street Fighter, DDR, Time Crisis, PAC-MAN). Do not swap them
+  for parodies or strip them.
+- **The Green Fairy mural appears inside the Arcade too**, not only on the facade.
+- **Backpack Girl's hours are 14:00 to 22:00.** (The environment file's 14:00 to 04:00 was
+  the stray value and is corrected.)
+- **Party sprites:** Chadwick is the "38yearoldchadwick" sheet (B) and Bradley is the
+  "16-Bit Hornets Sprite Sheet" (#1, B). All three bros are the same height (1.8 m).
+  Pilsner walks with his arms swinging, not hands in pockets.
+- **Interior main hall:** the game-camera framing (concept C) is the base. It must also hold
+  the token/prize redemption counter built into the bar, and a three-pad DDR dance-off with
+  one big wall screen everyone can watch (see the author's ChatGPT brief "Revise Arcade
+  Layout" and `references/Interior/concepts/README.md`).
+- Do not relitigate.
+

@@ -1,0 +1,67 @@
+{
+  "location_id": "debaucheryville_vendor_strobe_survival_01",
+  "item_category": "Sensory Protection / Rave Equipment Stall",
+  "items": [
+    {
+      "item_id": "ssk_foam_earplugs",
+      "display_name": "Foam Earplugs",
+      "item_type": "equipment",
+      "price": 3,
+      "effect": "Minor audio-hazard resistance.",
+      "acquisition": "Audio Defense."
+    },
+    {
+      "item_id": "ssk_musician_earplugs",
+      "display_name": "Musician Earplugs",
+      "item_type": "equipment",
+      "price": 15,
+      "effect": "Strong audio-hazard resistance.",
+      "acquisition": "Audio Defense."
+    },
+    {
+      "item_id": "ssk_strobe_shades",
+      "display_name": "Strobe-Resistant Shades",
+      "item_type": "equipment",
+      "price": 20,
+      "effect": "Reduces flash and visual Confusion hazards.",
+      "acquisition": "Visual Gear."
+    },
+    {
+      "item_id": "ssk_glow_bundle",
+      "display_name": "Glow Stick Bundle",
+      "item_type": "consumable",
+      "price": 5,
+      "effect": "Improves party visibility.",
+      "acquisition": "Visual Gear."
+    },
+    {
+      "item_id": "ssk_tactical_pouch",
+      "display_name": "Night Survival Pouch",
+      "item_type": "equipment",
+      "price": 25,
+      "effect": "Carries support consumables and minor defense.",
+      "acquisition": "Operator stock."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "club hazard IDs",
+      "ownership": "external"
+    },
+    {
+      "reference": "global equipment slots",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "strobe_tactical_briefing_seen",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies otherwise",
+    "price_confirmation_required": true,
+    "time_modifiers": "documented only"
+  }
+}

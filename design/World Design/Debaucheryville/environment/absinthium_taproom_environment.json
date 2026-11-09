@@ -1,0 +1,126 @@
+{
+  "location_id": "debaucheryville_brewery_absinthium_taproom_01",
+  "ambient_audio": {
+    "base_layers": [
+      "mirror echoes ambience",
+      "green vapor wisps ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "at_veil",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "at_den",
+        "cue": "interior_loop"
+      },
+      {
+        "node_id": "at_mirror_maze",
+        "cue": "puzzle_loop"
+      },
+      {
+        "node_id": "at_mirror_chad",
+        "cue": "encounter_loop"
+      },
+      {
+        "node_id": "at_wisp_arena",
+        "cue": "boss_loop"
+      },
+      {
+        "node_id": "at_service",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "at_selfie",
+        "cue": "selfie_loop"
+      },
+      {
+        "node_id": "at_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "opener_absinthium_taproom_effect",
+      "description": "Cracked glass opener; I Saw Myself. Never sold."
+    },
+    {
+      "effect_id": "stamp_absinthium_taproom_effect",
+      "description": "Green fairy in cracked glass; tour stop 1."
+    },
+    {
+      "effect_id": "beer_absinthium_taproom_effect",
+      "description": "Restores SP with Confused chance."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "operating",
+      "changes": [
+        "full challenge and service state"
+      ]
+    },
+    {
+      "state": "closed",
+      "changes": [
+        "parent transition denies entry"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "parent-side read-through only"
+    ],
+    "interior": [
+      "no precipitation"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "absinthium_taproom_fx",
+      "nodes": [
+        "at_veil",
+        "at_den",
+        "at_mirror_maze",
+        "at_mirror_chad",
+        "at_wisp_arena",
+        "at_service",
+        "at_selfie",
+        "at_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "absinthe green",
+      "mirror silver",
+      "deep black",
+      "bar amber"
+    ],
+    "emission_mask": "absinthium_taproom_masks",
+    "readability": "puzzle and boss cues override ambience"
+  },
+  "environmental_storytelling": [
+    "Vapor transition from the Arcade curtain.",
+    "Cracked-bottle bar and service landmark.",
+    "Stable node topology presented through deceptive infinite reflections.",
+    "Reflection roast and puzzle checkpoint.",
+    "Final challenge space in controlled green vapor.",
+    "Tour reward and 12-Sov Absinthe Lager service.",
+    "Brewmaster selfie landmark.",
+    "Returns through the green curtain."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced mirror distortion",
+      "Static route markers",
+      "Reduced vapor",
+      "Text/audio-substitute puzzle cues"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "audio_substitutes": true
+  }
+}

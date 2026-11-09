@@ -1,0 +1,68 @@
+{
+  "location_id": "debaucheryville_shop_midnight_munchies_01",
+  "location_name": "Midnight Munchies General Store",
+  "npcs": [
+    {
+      "npc_id": "mm_npc_vera",
+      "display_name": "Věra",
+      "role": "proprietor and desperation-tax enforcer",
+      "node": "mm_counter",
+      "schedule": "22:00-08:00",
+      "visual": "Practical cardigan, scanner and perfect memory for repeat customers.",
+      "quest_bindings": [
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "midnight_munchies_general_store_ambient_1",
+      "display_name": "hostel kitchen foragers",
+      "spawn_nodes": [
+        "mm_hygiene_aisle",
+        "mm_heat_lamp",
+        "mm_counter"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "midnight_munchies_general_store_ambient_2",
+      "display_name": "post-club customers",
+      "spawn_nodes": [
+        "mm_hygiene_aisle",
+        "mm_heat_lamp",
+        "mm_counter"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "midnight_munchies_general_store_ambient_3",
+      "display_name": "delivery worker",
+      "spawn_nodes": [
+        "mm_hygiene_aisle",
+        "mm_heat_lamp",
+        "mm_counter"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "mm_npc_vera",
+      "node_id": "mm_counter",
+      "role": "proprietor and desperation-tax enforcer"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Do not overlap named NPC silhouettes",
+    "Reduce ambient count during quest scenes"
+  ]
+}

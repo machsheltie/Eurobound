@@ -1,0 +1,198 @@
+{
+  "location_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+      "name": "Cyberspace Kavarna",
+      "tag_id": "cyberspace_kavarna",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Narrow stair with flickering INTERNET/KAVARNA sign and warning placards.",
+        "entry_condition": "Descend the Hostel Row stair; Pay only when renting a terminal"
+      },
+      "interior": {
+        "theme": "A smoke-stained Y2K internet bunker built from CRTs, Soviet furniture and duct-taped Ethernet.",
+        "features": [
+          "service: ck_rental_desk",
+          "interaction: ck_terminal_rows",
+          "quest: ck_katka_station",
+          "discovery: ck_restroom_clue",
+          "transition: ck_backroom_door",
+          "exit: ck_exit"
+        ]
+      },
+      "functions": [
+        "Rent Terminal",
+        "Access ICQ Network",
+        "Coordinate Sting Operation",
+        "Read Restroom Graffiti",
+        "Open Hidden Door"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "ck_stair",
+      "to": "ck_rental_desk",
+      "bidirectional": true
+    },
+    {
+      "from": "ck_rental_desk",
+      "to": "ck_terminal_rows",
+      "bidirectional": true
+    },
+    {
+      "from": "ck_terminal_rows",
+      "to": "ck_katka_station",
+      "bidirectional": true
+    },
+    {
+      "from": "ck_katka_station",
+      "to": "ck_restroom_clue",
+      "bidirectional": true
+    },
+    {
+      "from": "ck_restroom_clue",
+      "to": "ck_backroom_door",
+      "bidirectional": true
+    },
+    {
+      "from": "ck_backroom_door",
+      "to": "ck_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "ck_stair": {
+      "connects_to": [
+        "ck_rental_desk"
+      ],
+      "type": "exterior",
+      "description": "Narrow stair with flickering INTERNET/KAVARNA sign and warning placards."
+    },
+    "ck_rental_desk": {
+      "connects_to": [
+        "ck_stair",
+        "ck_terminal_rows"
+      ],
+      "type": "service",
+      "description": "Dmitri's counter controls terminal time and dubious services."
+    },
+    "ck_terminal_rows": {
+      "connects_to": [
+        "ck_rental_desk",
+        "ck_katka_station"
+      ],
+      "type": "interaction",
+      "description": "Navigable rows of mismatched desks, cables and failing Windows screens."
+    },
+    "ck_katka_station": {
+      "connects_to": [
+        "ck_terminal_rows",
+        "ck_restroom_clue"
+      ],
+      "type": "quest",
+      "description": "CyberGoth terminal node for ICQ coordination."
+    },
+    "ck_restroom_clue": {
+      "connects_to": [
+        "ck_katka_station",
+        "ck_backroom_door"
+      ],
+      "type": "discovery",
+      "description": "Graffiti points toward the concealed food backroom."
+    },
+    "ck_backroom_door": {
+      "connects_to": [
+        "ck_restroom_clue",
+        "ck_exit"
+      ],
+      "type": "transition",
+      "description": "Hidden door beneath a flickering 404 Calories Not Found sign."
+    },
+    "ck_exit": {
+      "connects_to": [
+        "ck_backroom_door"
+      ],
+      "type": "exit",
+      "description": "Return up the narrow stair to Hostel Row."
+    }
+  },
+  "feature_details": {
+    "ck_stair": {
+      "display_name": "Neon Basement Stair",
+      "image_generation_description": "Narrow stair with flickering INTERNET/KAVARNA sign and warning placards.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ck_rental_desk": {
+      "display_name": "Rental Desk",
+      "image_generation_description": "Dmitri's counter controls terminal time and dubious services.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ck_terminal_rows": {
+      "display_name": "CRT Terminal Maze",
+      "image_generation_description": "Navigable rows of mismatched desks, cables and failing Windows screens.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ck_katka_station": {
+      "display_name": "Katka's Station",
+      "image_generation_description": "CyberGoth terminal node for ICQ coordination.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ck_restroom_clue": {
+      "display_name": "Restroom Graffiti Clue",
+      "image_generation_description": "Graffiti points toward the concealed food backroom.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ck_backroom_door": {
+      "display_name": "Backroom Concessions Door",
+      "image_generation_description": "Hidden door beneath a flickering 404 Calories Not Found sign.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ck_exit": {
+      "display_name": "Hostel Row Stair Exit",
+      "image_generation_description": "Return up the narrow stair to Hostel Row.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    }
+  },
+  "ambient_npcs": [
+    "sleep-deprived patrons",
+    "rotating scammers",
+    "blue-screen spectators"
+  ]
+}

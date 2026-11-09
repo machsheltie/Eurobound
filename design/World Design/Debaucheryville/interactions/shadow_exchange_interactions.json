@@ -1,0 +1,207 @@
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "events": [
+    {
+      "event_id": "se_find_candle_marker",
+      "display_name": "Inspect Cash-Only Candle",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "se_alley_marker"
+      },
+      "requirements": [],
+      "results": [
+        "shadow_exchange_discovered"
+      ],
+      "dialogue_ownership": "External quest/NPC source where applicable"
+    },
+    {
+      "event_id": "se_convert_currency",
+      "display_name": "Convert Currency",
+      "trigger": {
+        "verb": "trade",
+        "node_id": "se_exchange_counter"
+      },
+      "requirements": [
+        "shadow_exchange_discovered"
+      ],
+      "results": [
+        "apply_current_rate",
+        "confirm_before_exchange"
+      ],
+      "dialogue_ownership": "External quest/NPC source where applicable"
+    },
+    {
+      "event_id": "se_barter_goods",
+      "display_name": "Open Barter Window",
+      "trigger": {
+        "verb": "barter",
+        "node_id": "se_barter_window"
+      },
+      "requirements": [
+        "shadow_exchange_discovered"
+      ],
+      "results": [
+        "evaluate_barter_value",
+        "adjust_notoriety"
+      ],
+      "dialogue_ownership": "External quest/NPC source where applicable"
+    },
+    {
+      "event_id": "se_accept_contract",
+      "display_name": "Review Shady Contract",
+      "trigger": {
+        "verb": "review",
+        "node_id": "se_contract_desk"
+      },
+      "requirements": [
+        "shadow_exchange_discovered"
+      ],
+      "results": [
+        "bind_external_contract_state"
+      ],
+      "dialogue_ownership": "External quest/NPC source where applicable"
+    },
+    {
+      "event_id": "se_inspect_ledger_nft",
+      "display_name": "Inspect Shadow Ledger",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "se_contract_desk"
+      },
+      "requirements": [
+        "debaucheryville_nft_hunt_started"
+      ],
+      "results": [
+        "vip_wristband_png_obtained"
+      ],
+      "dialogue_ownership": "External quest/NPC source where applicable"
+    },
+    {
+      "event_id": "se_open_premium_stock",
+      "display_name": "Browse Premium Stock",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "se_premium_cage"
+      },
+      "requirements": [
+        "shadow_exchange_premium_stock_unlocked"
+      ],
+      "results": [
+        "open_premium_inventory"
+      ],
+      "dialogue_ownership": "External quest/NPC source where applicable"
+    },
+    {
+      "event_id": "se_follow_three_crown_referral",
+      "display_name": "Follow Keg Haus Referral",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "se_cellar_exit"
+      },
+      "requirements": [
+        "three_crown_route_discovered"
+      ],
+      "results": [
+        "transition_three_crown"
+      ],
+      "dialogue_ownership": "External quest/NPC source where applicable"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "se_find_candle_marker",
+      "node_id": "se_alley_marker",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "se_convert_currency",
+      "node_id": "se_exchange_counter",
+      "verb": "trade",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "se_barter_goods",
+      "node_id": "se_barter_window",
+      "verb": "barter",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "se_accept_contract",
+      "node_id": "se_contract_desk",
+      "verb": "review",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "se_inspect_ledger_nft",
+      "node_id": "se_contract_desk",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "se_open_premium_stock",
+      "node_id": "se_premium_cage",
+      "verb": "shop",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "se_follow_three_crown_referral",
+      "node_id": "se_cellar_exit",
+      "verb": "travel",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "shadow_exchange_notoriety_active",
+      "change": "Broker reactions and contract options change."
+    },
+    {
+      "state": "shadow_exchange_premium_stock_unlocked",
+      "change": "Premium cage opens."
+    },
+    {
+      "state": "vip_wristband_png_obtained",
+      "change": "Ledger remains examinable but cannot grant a duplicate NFT."
+    }
+  ],
+  "narrator_commentary": [
+    "Nothing says trust like a rate board that changes mid-transaction.",
+    "The cellar has three exits if you count financial insolvency."
+  ]
+}

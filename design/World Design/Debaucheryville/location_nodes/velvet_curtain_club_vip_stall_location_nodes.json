@@ -1,0 +1,173 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+      "name": "Velvet Curtain Club VIP Stall",
+      "tag_id": "velvet_curtain_club_vip_stall",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Interior side of the STAFF ONLY curtain.",
+        "entry_condition": "velvet_vip_stall_entrance_discovered; velvet_vip_stall_access_unlocked"
+      },
+      "interior": {
+        "theme": "A tiny velvet-lined toilet trying to perform luxury through stains, RGB shimmer and crypto graffiti.",
+        "features": [
+          "interaction: vcs_fixture",
+          "interaction: vcs_selfie_mirror",
+          "quest: vcs_qr_tile",
+          "lore: vcs_graffiti",
+          "exit: vcs_exit"
+        ]
+      },
+      "functions": [
+        "Scan Hidden QR",
+        "Read DO NOT LOOK AT THE BABY",
+        "Read Hungover Fistø Lore",
+        "Use CryptoQueen Mirror",
+        "Apply NFT Affinity Protection"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "vcs_inside_curtain",
+      "to": "vcs_fixture",
+      "bidirectional": true
+    },
+    {
+      "from": "vcs_fixture",
+      "to": "vcs_selfie_mirror",
+      "bidirectional": true
+    },
+    {
+      "from": "vcs_selfie_mirror",
+      "to": "vcs_qr_tile",
+      "bidirectional": true
+    },
+    {
+      "from": "vcs_qr_tile",
+      "to": "vcs_graffiti",
+      "bidirectional": true
+    },
+    {
+      "from": "vcs_graffiti",
+      "to": "vcs_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "vcs_inside_curtain": {
+      "connects_to": [
+        "vcs_fixture"
+      ],
+      "type": "transition",
+      "description": "Interior side of the STAFF ONLY curtain."
+    },
+    "vcs_fixture": {
+      "connects_to": [
+        "vcs_inside_curtain",
+        "vcs_selfie_mirror"
+      ],
+      "type": "interaction",
+      "description": "Stained black-velvet toilet seat and chipped champagne holder."
+    },
+    "vcs_selfie_mirror": {
+      "connects_to": [
+        "vcs_fixture",
+        "vcs_qr_tile"
+      ],
+      "type": "interaction",
+      "description": "Overhead mirror with CryptoQueen filter."
+    },
+    "vcs_qr_tile": {
+      "connects_to": [
+        "vcs_selfie_mirror",
+        "vcs_graffiti"
+      ],
+      "type": "quest",
+      "description": "Peeling tile hides NFT #2 QR code."
+    },
+    "vcs_graffiti": {
+      "connects_to": [
+        "vcs_qr_tile",
+        "vcs_exit"
+      ],
+      "type": "lore",
+      "description": "ROI jokes, Fistø lore and DO NOT LOOK AT THE BABY clue."
+    },
+    "vcs_exit": {
+      "connects_to": [
+        "vcs_graffiti"
+      ],
+      "type": "exit",
+      "description": "Returns to Velvet Curtain Club."
+    }
+  },
+  "feature_details": {
+    "vcs_inside_curtain": {
+      "display_name": "Inside VIP Curtain",
+      "image_generation_description": "Interior side of the STAFF ONLY curtain.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcs_fixture": {
+      "display_name": "Velvet Fixture",
+      "image_generation_description": "Stained black-velvet toilet seat and chipped champagne holder.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcs_selfie_mirror": {
+      "display_name": "Selfie-Cam Mirror",
+      "image_generation_description": "Overhead mirror with CryptoQueen filter.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcs_qr_tile": {
+      "display_name": "Cracked QR Tile",
+      "image_generation_description": "Peeling tile hides NFT #2 QR code.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcs_graffiti": {
+      "display_name": "Crypto Graffiti Wall",
+      "image_generation_description": "ROI jokes, Fistø lore and DO NOT LOOK AT THE BABY clue.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "vcs_exit": {
+      "display_name": "Club Return Curtain",
+      "image_generation_description": "Returns to Velvet Curtain Club.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    }
+  },
+  "ambient_npcs": [
+    "muffled club crowd",
+    "RGB bass pulse"
+  ]
+}

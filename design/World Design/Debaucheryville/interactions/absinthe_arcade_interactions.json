@@ -66,10 +66,10 @@
       "type": "shop_machine",
       "interaction_text": "Buy overpriced tokens",
       "economy": {
-        "input_currency": "kebab_coin",
+        "input_currency": "sovs",
         "input_amount": 1,
         "output_item": "item_absinthe_arcade_token",
-        "output_quantity": 5,
+        "output_quantity": 1,
         "price_comment": "The machine calls this an authentic conversion rate."
       },
       "states": [
@@ -152,7 +152,7 @@
       "interaction_text": "Attempt the impossible grab",
       "cost": {
         "item": "item_absinthe_arcade_token",
-        "quantity": 2
+        "quantity": 5
       },
       "mechanics": {
         "objective": "Use the machine's predictable cabinet sway rather than aiming directly at the relic.",

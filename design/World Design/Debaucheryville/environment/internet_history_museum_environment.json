@@ -1,0 +1,129 @@
+{
+  "location_id": "debaucheryville_blockbuster_internet_museum_01",
+  "ambient_audio": {
+    "base_layers": [
+      "nostalgic visitors ambience",
+      "school group ambience",
+      "static silhouettes ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "ihm_exterior",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "ihm_lobby",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "ihm_modem_hall",
+        "cue": "exhibit_loop"
+      },
+      {
+        "node_id": "ihm_geocities",
+        "cue": "puzzle_loop"
+      },
+      {
+        "node_id": "ihm_angelfire",
+        "cue": "exhibit_loop"
+      },
+      {
+        "node_id": "ihm_habbo",
+        "cue": "exhibit_loop"
+      },
+      {
+        "node_id": "ihm_msn",
+        "cue": "puzzle_loop"
+      },
+      {
+        "node_id": "ihm_imac_altar",
+        "cue": "exhibit_loop"
+      },
+      {
+        "node_id": "ihm_vhs_shelf",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "ihm_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "services and named NPCs active"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "use documented denial/off-peak state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street response",
+      "seasonal ambient overlay"
+    ],
+    "interior": [
+      "clean plate at threshold"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "internet_history_museum_ambient_fx",
+      "nodes": [
+        "ihm_exterior",
+        "ihm_lobby",
+        "ihm_modem_hall",
+        "ihm_geocities",
+        "ihm_angelfire",
+        "ihm_habbo",
+        "ihm_msn",
+        "ihm_imac_altar",
+        "ihm_vhs_shelf"
+      ],
+      "fallback": "static or disabled clean plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "Blockbuster blue",
+      "CRT green",
+      "static grey",
+      "Comic Sans yellow",
+      "darkroom cyan"
+    ],
+    "key_strategy": "landmarks remain brighter than traversal clutter",
+    "emission_masks": [
+      "internet_history_museum_masks"
+    ]
+  },
+  "environmental_storytelling": [
+    "Floppy-boarded storefront, broken jewel cases and sagging 404 sign.",
+    "Free entry desk and academically serious garbage labels.",
+    "Dial-up relic shrine with captioned screeching.",
+    "Twinkling GIF stars and 03:33 activation kiosk.",
+    "A wall of flames still loading since 2002.",
+    "Velvet-rope reconstruction and evidence markers.",
+    "Broken messenger terminal that accepts the market password.",
+    "Darkroom shrine and cursed monitor glow.",
+    "Shelf mechanism opens after the completed 03:33 sequence.",
+    "Return to the downtown street."
+  ],
+  "accessibility": {
+    "variants": [
+      "Static-free exhibit mode",
+      "Captioned modem/MIDI audio",
+      "Reduced CRT flicker",
+      "High-contrast puzzle prompts"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast_interactions": true
+  }
+}

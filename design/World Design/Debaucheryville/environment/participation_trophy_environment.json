@@ -1,0 +1,129 @@
+{
+  "location_id": "debaucheryville_circus_participation_trophy_01",
+  "ambient_audio": {
+    "base_layers": [
+      "recent losers ambience",
+      "circling children ambience",
+      "circus workers ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "pt_booth",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "pt_grand_shelf",
+        "cue": "display_loop"
+      },
+      {
+        "node_id": "pt_good_shelf",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "pt_consolation",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "pt_floor_junk",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "pt_counter",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "pt_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "pt_sad_plush_effect",
+      "description": "Minor morale flavor; visibly disappointing."
+    },
+    {
+      "effect_id": "pt_plastic_medal_effect",
+      "description": "Cosmetic proof of attendance."
+    },
+    {
+      "effect_id": "pt_mystery_trinket_effect",
+      "description": "Random minor effect."
+    },
+    {
+      "effect_id": "pt_grand_display_effect",
+      "description": "Cannot be granted; display prop only."
+    },
+    {
+      "effect_id": "pt_direct_junk_effect",
+      "description": "Bundle of low-tier junk."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open_or_window",
+      "changes": [
+        "activate documented services and cues"
+      ]
+    },
+    {
+      "state": "closed",
+      "changes": [
+        "deny entry or fold vendor state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street/circus response"
+    ],
+    "interior": [
+      "threshold read-through only"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "participation_trophy_fx",
+      "nodes": [
+        "pt_booth",
+        "pt_grand_shelf",
+        "pt_good_shelf",
+        "pt_consolation",
+        "pt_floor_junk",
+        "pt_counter",
+        "pt_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "faded carnival red",
+      "sad plush brown",
+      "ticket blue",
+      "peeling cream"
+    ],
+    "emission_mask": "participation_trophy_masks",
+    "readability": "interaction silhouettes remain clear"
+  },
+  "environmental_storytelling": [
+    "Peeling carnival booth beneath a faded Everyone's a Winner banner.",
+    "Unreachable prizes staged above the real inventory.",
+    "Technically obtainable high-tier stock.",
+    "Ordinary redemption inventory.",
+    "The real low-ticket prize supply.",
+    "Ticket count, direct purchase and Frequent Loser reactions.",
+    "Returns to circus grounds."
+  ],
+  "accessibility": {
+    "variants": [
+      "High-contrast ticket costs",
+      "Display-only labels",
+      "Reduced carnival flicker",
+      "Text prize-tier hierarchy"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

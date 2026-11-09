@@ -1,0 +1,315 @@
+{
+  "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+  "events": [
+    {
+      "event_id": "tdv_switch",
+      "display_name": "Find Concealed Switch",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "tdv_plaza"
+      },
+      "requirements": [],
+      "results": [
+        "tap_dat_switch_discovered"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tdv_enter",
+      "display_name": "Open Vault at Midnight",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "tdv_vault"
+      },
+      "requirements": [
+        "tap_dat_switch_discovered",
+        "time_0000_0059"
+      ],
+      "results": [
+        "tap_dat_midnight_window_open",
+        "enter_vault"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tdv_rhythm",
+      "display_name": "Maintain Vapor Pressure",
+      "trigger": {
+        "verb": "rhythm",
+        "node_id": "tdv_rhythm"
+      },
+      "requirements": [],
+      "results": [
+        "increment_or_clear_tap_dat_rhythm_strikes"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tdv_eject",
+      "display_name": "Three-Strike Ejection",
+      "trigger": {
+        "verb": "state",
+        "node_id": "tdv_rhythm"
+      },
+      "requirements": [
+        "tap_dat_rhythm_strikes_3"
+      ],
+      "results": [
+        "eject_until_next_midnight"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tdv_boss",
+      "display_name": "Defeat Strobe Brewmistress",
+      "trigger": {
+        "verb": "battle",
+        "node_id": "tdv_brewmistress"
+      },
+      "requirements": [
+        "tap_dat_rhythm_complete"
+      ],
+      "results": [
+        "tap_dat_challenge_complete"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tdv_rewards",
+      "display_name": "Claim Tour Rewards",
+      "trigger": {
+        "verb": "claim",
+        "node_id": "tdv_service"
+      },
+      "requirements": [
+        "tap_dat_challenge_complete",
+        "brewery_tour_active",
+        "bottle_opener_keychain"
+      ],
+      "results": [
+        "grant_opener_tap_dat_vault",
+        "grant_stamp_tap_dat_vault",
+        "tap_dat_tour_rewards_granted",
+        "tap_dat_selfie_unlocked"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tdv_defer",
+      "display_name": "Record Pre-Tour Completion",
+      "trigger": {
+        "verb": "state",
+        "node_id": "tdv_service"
+      },
+      "requirements": [
+        "tap_dat_challenge_complete",
+        "not_brewery_tour_active"
+      ],
+      "results": [
+        "tap_dat_tour_rewards_deferred"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tdv_buy",
+      "display_name": "Buy Vape Stout",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "tdv_service"
+      },
+      "requirements": [
+        "tap_dat_tour_rewards_granted"
+      ],
+      "results": [
+        "purchase_beer_tap_dat_vault"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "tdv_selfie",
+      "display_name": "Use Hologram Wall",
+      "trigger": {
+        "verb": "selfie",
+        "node_id": "tdv_selfie"
+      },
+      "requirements": [
+        "tap_dat_selfie_unlocked"
+      ],
+      "results": [
+        "save_tap_dat_selfie"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "tdv_switch",
+      "node_id": "tdv_plaza",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tdv_enter",
+      "node_id": "tdv_vault",
+      "verb": "travel",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tdv_rhythm",
+      "node_id": "tdv_rhythm",
+      "verb": "rhythm",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tdv_eject",
+      "node_id": "tdv_rhythm",
+      "verb": "state",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tdv_boss",
+      "node_id": "tdv_brewmistress",
+      "verb": "battle",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tdv_rewards",
+      "node_id": "tdv_service",
+      "verb": "claim",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tdv_defer",
+      "node_id": "tdv_service",
+      "verb": "state",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tdv_buy",
+      "node_id": "tdv_service",
+      "verb": "purchase",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "tdv_selfie",
+      "node_id": "tdv_selfie",
+      "verb": "selfie",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "tap_dat_switch_discovered",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "tap_dat_midnight_window_open",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "tap_dat_rhythm_strikes",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "tap_dat_challenge_complete",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "tap_dat_tour_rewards_deferred",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "tap_dat_tour_rewards_granted",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "tap_dat_selfie_unlocked",
+      "change": "Persist and present authored tour/challenge state."
+    }
+  ],
+  "narrator_commentary": [
+    "Inhaled & Survived",
+    "A cyberpunk brew basement where vats are subwoofers and pressure control is a rhythm game."
+  ]
+}

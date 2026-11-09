@@ -94,9 +94,9 @@
   },
   
   "economic_integration": {
-    "currency_accepted": ["kebab_coins", "special_tokens"],
+    "currency_accepted": ["sovs", "special_tokens"],
     "token_exchange_rate": {
-      "kebab_coins_to_tokens": "1:5",
+      "sovs_to_tokens": "1:1",
       "special_tokens": "limited_rare_purchases"
     },
     "price_structure": "inflated_tourist_trap_pricing",

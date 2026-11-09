@@ -12,9 +12,9 @@
       "max_stack": 99,
       "consumable": true,
       "exchange": {
-        "input_currency": "kebab_coin",
+        "input_currency": "sovs",
         "input_quantity": 1,
-        "output_quantity_per_kebab_coin": 5,
+        "output_quantity_per_sov": 1,
         "vendor_interaction": "token_exchange_machine"
       },
       "uses": [
@@ -32,7 +32,7 @@
         },
         {
           "interaction": "rigged_absinthe_claw_machine",
-          "cost": 2
+          "cost": 5
         },
         {
           "interaction": "broken_ddr_restroom_unlock",
@@ -201,10 +201,10 @@
   ],
   "shop_economics": {
     "design_intent": "A transparent tourist-trap money sink that remains funny and optional outside explicit quest interactions.",
-    "base_exchange": "1 Kebab Coin equals 5 Absinthe Arcade Tokens",
+    "base_exchange": "1 SOV equals 1 Absinthe Arcade Token",
     "machine_costs": {
       "standard_cabinet": 1,
-      "claw_machine": 2,
+      "claw_machine": 5,
       "restroom_unlock_total": 3
     },
     "balance_rule": "Do not require random repeated spending for the relic once the service-note strategy has been discovered."

@@ -1,0 +1,58 @@
+{
+  "asset_set": "absinthe_arcade_exterior_hd2d",
+  "engine": "Godot 4.4",
+  "rights": "Generated for the author with GPT Image in ChatGPT (author's Plus account), from the author's own reference images (Nano Banana 2 / GPT Image 2.5). Post-processing is deterministic (tools/content_generation/absinthe_arcade/hd2d/normalize_face.py).",
+  "files": [
+    {
+      "file": "02_facade/_gen/aa_face_front_day_v1.png",
+      "tool": "ChatGPT GPT Image",
+      "date": "2026-11-02",
+      "inputs": [
+        "absinthearcadeassetsheet",
+        "absinthearcadedaytime",
+        "absinthearcade.png"
+      ],
+      "note": "first hero; rejected: extra arched window at street level left"
+    },
+    {
+      "file": "02_facade/_gen/aa_face_front_day_v2.png",
+      "tool": "ChatGPT GPT Image (edit of v1)",
+      "date": "2026-11-02",
+      "note": "street-level left window replaced with plain stone + vine"
+    },
+    {
+      "file": "02_facade/_gen/aa_face_front_night_v1.png",
+      "tool": "ChatGPT GPT Image (edit of day v2)",
+      "date": "2026-11-02",
+      "note": "drifted geometry; used as swap texture, not cross-fade"
+    },
+    {
+      "file": "02_facade/aa_face_front_day.png",
+      "derived_from": "02_facade/_gen/aa_face_front_day_v2.png",
+      "process": "normalize_face.py --ground-y 1512"
+    },
+    {
+      "file": "02_facade/aa_face_front_night.png",
+      "derived_from": "02_facade/_gen/aa_face_front_night_v1.png",
+      "process": "normalize_face.py --ground-y 1479"
+    },
+    {
+      "file": "02_facade/aa_face_front_emit.png",
+      "derived_from": "02_facade/aa_face_front_night.png",
+      "process": "normalize_face.py --emit (v>=0.55, s>=0.35)"
+    },
+    {
+      "note": "2026-11-02 Firefly (author's Adobe account, Nano Banana Pro) pass",
+      "files": [
+        "02_facade/_gen/aa_face_front_night_nbp_v1.png (relight of day v2; replaces GPT night_v1)",
+        "02_facade/_gen/aa_face_left_day_nbp_v1.png (narrow 9:16 attempt rejected: aa_face_left_day_narrow_rejected.png)",
+        "02_facade/_gen/aa_face_left_day_nbp_v1_nosign.png (misplaced sign painted out)",
+        "02_facade/_gen/aa_face_left_day_fixed.png / aa_face_left_night_fixed.png (CLOCKTOWER PLAZA sign cut from aa_face_left_day_sign_edit.png, mounted on the front corner; night copy colour-graded)",
+        "02_facade/_gen/aa_face_right_day_nbp_v1.png -> aa_face_right_day_fixed.png (ghost-sign lettering 'BOUCHARD & FILS' replaced with plain weathered patch from nbp_v3 edit)",
+        "02_facade/_gen/aa_face_back_day_nbp_v1.png (rejected: copy of right side) -> nbp_v2 -> aa_face_back_day_fixed.png (NO PARKING words removed, pictogram kept)",
+        "02_facade/_gen/aa_roof_day_nbp_v1.png / aa_roof_night_nbp_v1.png",
+        "all *_night*_reg.png: register_to.py; *_glow.png: night_glow.py"
+      ]
+    }
+  ]
+}

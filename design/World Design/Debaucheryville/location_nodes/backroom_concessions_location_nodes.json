@@ -1,0 +1,149 @@
+{
+  "location_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+      "name": "Backroom Concessions",
+      "tag_id": "backroom_concessions",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Interior face of the concealed Cyberspace door and 404 sign glow.",
+        "entry_condition": "cyberspace_backroom_concessions_entrance_discovered"
+      },
+      "interior": {
+        "theme": "A concession booth wedged between gutted vending machines and hacked server light.",
+        "features": [
+          "service: bc_counter",
+          "interaction: bc_vending_pair",
+          "social: bc_seating",
+          "exit: bc_exit"
+        ]
+      },
+      "functions": [
+        "Order Hacker Food",
+        "Consume Purchase",
+        "Inspect Gutted Machines",
+        "Ask for Referral",
+        "Return to Café"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "bc_inside_door",
+      "to": "bc_counter",
+      "bidirectional": true
+    },
+    {
+      "from": "bc_counter",
+      "to": "bc_vending_pair",
+      "bidirectional": true
+    },
+    {
+      "from": "bc_vending_pair",
+      "to": "bc_seating",
+      "bidirectional": true
+    },
+    {
+      "from": "bc_seating",
+      "to": "bc_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "bc_inside_door": {
+      "connects_to": [
+        "bc_counter"
+      ],
+      "type": "transition",
+      "description": "Interior face of the concealed Cyberspace door and 404 sign glow."
+    },
+    "bc_counter": {
+      "connects_to": [
+        "bc_inside_door",
+        "bc_vending_pair"
+      ],
+      "type": "service",
+      "description": "Cramped counter and peeling Hot Pockets + Protocols menu."
+    },
+    "bc_vending_pair": {
+      "connects_to": [
+        "bc_counter",
+        "bc_seating"
+      ],
+      "type": "interaction",
+      "description": "One machine holds thermal paste; the other flickers with suspicious knowledge."
+    },
+    "bc_seating": {
+      "connects_to": [
+        "bc_vending_pair",
+        "bc_exit"
+      ],
+      "type": "social",
+      "description": "Mismatched office chairs beneath pop-up-filled CRTs."
+    },
+    "bc_exit": {
+      "connects_to": [
+        "bc_seating"
+      ],
+      "type": "exit",
+      "description": "Returns to Cyberspace Kavarna."
+    }
+  },
+  "feature_details": {
+    "bc_inside_door": {
+      "display_name": "Inside Hidden Door",
+      "image_generation_description": "Interior face of the concealed Cyberspace door and 404 sign glow.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "bc_counter": {
+      "display_name": "Donny.exe Counter",
+      "image_generation_description": "Cramped counter and peeling Hot Pockets + Protocols menu.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "bc_vending_pair": {
+      "display_name": "Gutted Vending Pair",
+      "image_generation_description": "One machine holds thermal paste; the other flickers with suspicious knowledge.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "bc_seating": {
+      "display_name": "Improvised Seating",
+      "image_generation_description": "Mismatched office chairs beneath pop-up-filled CRTs.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "bc_exit": {
+      "display_name": "Return Door",
+      "image_generation_description": "Returns to Cyberspace Kavarna.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    }
+  },
+  "ambient_npcs": [
+    "hacker diners",
+    "office-chair lurkers"
+  ]
+}

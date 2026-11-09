@@ -1,0 +1,110 @@
+{
+  "location_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+  "ambient_audio": {
+    "base_layers": [
+      "sleep-deprived patrons ambience",
+      "rotating scammers ambience",
+      "blue-screen spectators ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "ck_stair",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "ck_rental_desk",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "ck_terminal_rows",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "ck_katka_station",
+        "cue": "quest_loop"
+      },
+      {
+        "node_id": "ck_restroom_clue",
+        "cue": "discovery_loop"
+      },
+      {
+        "node_id": "ck_backroom_door",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "ck_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "services and named NPCs active"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "use documented denial/off-peak state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street response",
+      "seasonal ambient overlay"
+    ],
+    "interior": [
+      "clean plate at threshold"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "cyberspace_kavarna_ambient_fx",
+      "nodes": [
+        "ck_stair",
+        "ck_rental_desk",
+        "ck_terminal_rows",
+        "ck_katka_station",
+        "ck_restroom_clue",
+        "ck_backroom_door"
+      ],
+      "fallback": "static or disabled clean plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "monitor green",
+      "nicotine beige",
+      "fluorescent white",
+      "error blue"
+    ],
+    "key_strategy": "landmarks remain brighter than traversal clutter",
+    "emission_masks": [
+      "cyberspace_kavarna_masks"
+    ]
+  },
+  "environmental_storytelling": [
+    "Narrow stair with flickering INTERNET/KAVARNA sign and warning placards.",
+    "Dmitri's counter controls terminal time and dubious services.",
+    "Navigable rows of mismatched desks, cables and failing Windows screens.",
+    "CyberGoth terminal node for ICQ coordination.",
+    "Graffiti points toward the concealed food backroom.",
+    "Hidden door beneath a flickering 404 Calories Not Found sign.",
+    "Return up the narrow stair to Hostel Row."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced CRT flicker",
+      "Smoke-free clean plate",
+      "Cable-path outlines",
+      "Text equivalents for modem audio"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast_interactions": true
+  }
+}

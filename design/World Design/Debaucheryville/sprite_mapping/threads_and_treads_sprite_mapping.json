@@ -1,0 +1,220 @@
+{
+  "location_id": "debaucheryville_shop_threads_treads_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "threads_and_treads_environment",
+      "atlas": "threads_and_treads_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "threads_and_treads_exterior",
+          "filename": "threads_and_treads_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "tt_storefront"
+        },
+        {
+          "asset_id": "threads_and_treads_interior",
+          "filename": "threads_and_treads_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "tt_jacket_gauntlet"
+        },
+        {
+          "asset_id": "threads_and_treads_node_tt_jacket_gauntlet",
+          "filename": "threads_and_treads_tt_jacket_gauntlet.png",
+          "role": "shop landmark",
+          "node_id": "tt_jacket_gauntlet"
+        },
+        {
+          "asset_id": "threads_and_treads_node_tt_footwear",
+          "filename": "threads_and_treads_tt_footwear.png",
+          "role": "shop landmark",
+          "node_id": "tt_footwear"
+        },
+        {
+          "asset_id": "threads_and_treads_node_tt_accessories",
+          "filename": "threads_and_treads_tt_accessories.png",
+          "role": "shop landmark",
+          "node_id": "tt_accessories"
+        },
+        {
+          "asset_id": "threads_and_treads_node_tt_fitting_mirror",
+          "filename": "threads_and_treads_tt_fitting_mirror.png",
+          "role": "interaction landmark",
+          "node_id": "tt_fitting_mirror"
+        },
+        {
+          "asset_id": "threads_and_treads_node_tt_counter",
+          "filename": "threads_and_treads_tt_counter.png",
+          "role": "service landmark",
+          "node_id": "tt_counter"
+        },
+        {
+          "asset_id": "threads_and_treads_node_tt_exit",
+          "filename": "threads_and_treads_tt_exit.png",
+          "role": "exit landmark",
+          "node_id": "tt_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "threads_and_treads_characters",
+      "atlas": "threads_and_treads_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "threads_and_treads_npc_tt_npc_zdenek",
+          "filename": "threads_and_treads_tt_npc_zdenek.png",
+          "role": "character sprite",
+          "node_id": "tt_counter"
+        }
+      ]
+    },
+    {
+      "group_id": "threads_and_treads_ui_fx",
+      "atlas": "threads_and_treads_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "threads_and_treads_item_tt_leather_jacket",
+          "filename": "threads_and_treads_tt_leather_jacket.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "threads_and_treads_item_tt_denim_vest",
+          "filename": "threads_and_treads_tt_denim_vest.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "threads_and_treads_item_tt_combat_boots",
+          "filename": "threads_and_treads_tt_combat_boots.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "threads_and_treads_item_tt_chain_wallet",
+          "filename": "threads_and_treads_tt_chain_wallet.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "threads_and_treads_item_tt_identity_overhaul",
+          "filename": "threads_and_treads_tt_identity_overhaul.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "threads_and_treads_ui",
+          "filename": "threads_and_treads_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "threads_and_treads_fx",
+          "filename": "threads_and_treads_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "threads_and_treads_masks",
+          "filename": "threads_and_treads_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "tt_npc_zdenek_standard",
+      "asset_id": "threads_and_treads_npc_tt_npc_zdenek",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "threads_and_treads_lighting",
+      "mask_asset": "threads_and_treads_masks",
+      "nodes": [
+        "tt_storefront",
+        "tt_jacket_gauntlet",
+        "tt_footwear",
+        "tt_accessories",
+        "tt_fitting_mirror",
+        "tt_counter",
+        "tt_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "tt_exit_quarter",
+      "destination_id": "debaucheryville_neon_entertainment_quarter",
+      "from_node": "tt_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "tt_browse_jackets",
+      "node_id": "tt_jacket_gauntlet",
+      "highlight_asset": "threads_and_treads_node_tt_jacket_gauntlet"
+    },
+    {
+      "interaction_id": "tt_browse_boots",
+      "node_id": "tt_footwear",
+      "highlight_asset": "threads_and_treads_node_tt_footwear"
+    },
+    {
+      "interaction_id": "tt_mirror",
+      "node_id": "tt_fitting_mirror",
+      "highlight_asset": "threads_and_treads_node_tt_fitting_mirror"
+    },
+    {
+      "interaction_id": "tt_transform",
+      "node_id": "tt_counter",
+      "highlight_asset": "threads_and_treads_node_tt_counter"
+    },
+    {
+      "interaction_id": "tt_checkout",
+      "node_id": "tt_counter",
+      "highlight_asset": "threads_and_treads_node_tt_counter"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "threads_and_treads_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 12,
+    "reduced_fx_asset": "threads_and_treads_fx"
+  }
+}

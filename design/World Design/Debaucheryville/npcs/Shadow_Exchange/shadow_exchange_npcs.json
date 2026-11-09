@@ -1,0 +1,149 @@
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "location_name": "Shadow Exchange",
+  "npcs": [
+    {
+      "npc_id": "se_npc_exchange_broker",
+      "display_name": "The Exchange Broker",
+      "role": "currency conversion and rate commentary",
+      "node": "se_exchange_counter",
+      "schedule": "always after discovery",
+      "visual": "Severe coat, UV loupe, fingerless accounting gloves.",
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville",
+        "brewerytourdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "External quest/profile when available",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "se_npc_barter_clerk",
+      "display_name": "Barter Clerk",
+      "role": "goods valuation and black-market referrals",
+      "node": "se_barter_window",
+      "schedule": "always after discovery",
+      "visual": "Layered scarves, ledger pencil, key ring.",
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville",
+        "brewerytourdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "External quest/profile when available",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "se_npc_contract_fixer",
+      "display_name": "Contract Fixer",
+      "role": "shady contracts and Shadow Ledger custody",
+      "node": "se_contract_desk",
+      "schedule": "late evening through dawn",
+      "visual": "Blue-grey suit lit by a single amber lamp.",
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville",
+        "brewerytourdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "External quest/profile when available",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "se_npc_cryptobro_ex",
+      "display_name": "CryptoBro69's Ex",
+      "role": "couchsurf lead and aftermath binding",
+      "node": "se_premium_cage",
+      "schedule": "quest-controlled",
+      "visual": "Chrome coat, exhausted glamour, cracked phone.",
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville",
+        "brewerytourdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "External quest/profile when available",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "shadow_exchange_ambient_1",
+      "display_name": "whispering brokers",
+      "spawn_nodes": [
+        "se_contract_desk",
+        "se_premium_cage"
+      ],
+      "max_count": 3,
+      "behavior": "looping ambient activity"
+    },
+    {
+      "group_id": "shadow_exchange_ambient_2",
+      "display_name": "waiting tourists",
+      "spawn_nodes": [
+        "se_contract_desk",
+        "se_premium_cage"
+      ],
+      "max_count": 3,
+      "behavior": "looping ambient activity"
+    },
+    {
+      "group_id": "shadow_exchange_ambient_3",
+      "display_name": "smoke silhouettes",
+      "spawn_nodes": [
+        "se_contract_desk",
+        "se_premium_cage"
+      ],
+      "max_count": 3,
+      "behavior": "looping ambient activity"
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "se_npc_exchange_broker",
+      "primary_node": "se_exchange_counter",
+      "service_or_role": "currency conversion and rate commentary"
+    },
+    {
+      "npc_id": "se_npc_barter_clerk",
+      "primary_node": "se_barter_window",
+      "service_or_role": "goods valuation and black-market referrals"
+    },
+    {
+      "npc_id": "se_npc_contract_fixer",
+      "primary_node": "se_contract_desk",
+      "service_or_role": "shady contracts and Shadow Ledger custody"
+    },
+    {
+      "npc_id": "se_npc_cryptobro_ex",
+      "primary_node": "se_premium_cage",
+      "service_or_role": "couchsurf lead and aftermath binding"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Do not block the stair or exit",
+    "Silhouette named NPCs against contrasting light",
+    "Despawn ambient patrons during cutscenes"
+  ]
+}

@@ -1,0 +1,820 @@
+{
+ "_doc": "E1 (mason-2) building interface. Blender space, metres: X right along the facade, Y into the building (street is -Y), Z up. X=0 the arch axis (keystone head / marquee centre), Z=0 street level at the facade, Y=0 the main facade wall plane. Front numbers measured off the bible through aa_bible_cam (scale anchored on the 4.4 m doorway); roof, right corner and right side from the asset sheet (crops 12/14). 'opening' = the hole in the stone = the inner edge of the bible's stone surround. 'frame_bible' = the dark frame's outer edge as the bible draws it, traced on the face plane y=0. 'frame_at_reveal' = the same outline moved back along aa_bible_cam's rays to the frame's front plane (y = reveal_depth): build the frame to frame_at_reveal and the bible camera sees frame_bible exactly. Source of truth: tools/content_generation/absinthe_arcade/manifest.json -> facade; this file is written by publish_interfaces.py.",
+ "version": 2.1,
+ "status": "v2 (2026-10-28): building depth 4.0 (Q-011), side elevation, interior volume, jambs, keystone recess, window linings and reveals bible-checked. Stable.",
+ "changes_v2": [
+  "building: depth 4.0 m; side elevation, roof footprint, side openings and side dormer published (Q-011).",
+  "interior: interior_depth / set_depth 3.40 from the door line y=0.34 to y=3.74; back wall inner face y=3.76 (back wall 0.24).",
+  "arch: right jamb 2.20 -> 2.37 (bible pier arris 2.375, neon's doorway edge 2.365); left jamb -2.30; ring intrados half 2.30 about X=0 (axis unchanged); right pier 2.37..2.80.",
+  "keystone: aa_arch_hero_cartouche removed; no crown voussoir (|x|<0.27); E4's head and volutes sit in front of the archivolt.",
+  "windows: openings unchanged from v1.1 except L1 (elliptical head, crown 4.876); frames per glazier (L1 1.06, L3 0.98, frame_bible.x_right added for L3); reveal 0.20 -> 0.08 for every front and side window (bible check); frame_at_reveal added.",
+  "dormers: frame, lining and reveal added (glazier); side dormer added.",
+  "v2.1: L1 frame re-traced in the bible: 1.005 wide (-3.845..-2.84), not glazier's 1.06 (11 px wide on each side), so its 0.08 reveal fits without clamping; corner bay cornices refitted to the bible (ground 0.18 proud, band 7.65-7.9, mid 9.45-9.7 at 0.25) and cant windows moved between them (8.0-9.25, 9.95-11.2). The wall face, arch and openings are unchanged from v2.0."
+ ],
+ "facade": {
+  "plane_y": 0.0,
+  "x_left_corner": -5.4,
+  "x_right_seam": 3.04,
+  "width": 8.44,
+  "note": "x_left_corner = main wall's left arris where it turns into the angled corner bay; x_right_seam = the right corner (outer edge of the right downpipe)."
+ },
+ "building": {
+  "depth": 4.0,
+  "front_wall_t": 0.55,
+  "side_wall_t": 0.55,
+  "back_wall_t": 0.24,
+  "back_face_y": 4.0,
+  "back_wall_inner_y": 3.76,
+  "footprint_xy": [
+   [
+    -5.4,
+    0.0
+   ],
+   [
+    3.04,
+    0.0
+   ],
+   [
+    3.04,
+    4.0
+   ],
+   [
+    -6.814,
+    4.0
+   ],
+   [
+    -6.814,
+    1.414
+   ]
+  ],
+  "interior_set_depth": 3.4,
+  "note": "Q-011 (author): about 4.0 m deep, the asset sheet's one-bay right side. Footprint CCW from the front-left arris; the corner bay's cant runs from (x_left, 0) to its far end."
+ },
+ "interior": {
+  "interior_depth": 3.4,
+  "set_depth": 3.4,
+  "door_line_y": 0.34,
+  "y_back_limit": 3.74,
+  "back_wall_inner_y": 3.76,
+  "clear_x": [
+   -6.264,
+   2.49
+  ],
+  "passage_x": [
+   -2.3,
+   2.37
+  ],
+  "passage_y": [
+   0.0,
+   0.55
+  ],
+  "floor_z": 0.15,
+  "placeholder_backstop": {
+   "name": "aa_shell_facade_interior_void",
+   "y": [
+    3.745,
+    3.75
+   ],
+   "note": "E1's dark backstop; hide or delete it when E3's interior set is integrated"
+  },
+  "note": "Q-011: the interior behind the doors fits within about 3.4 m. Measured from E3's door line (y 0.34) to y 3.74, 0.02 short of the back wall."
+ },
+ "storeys": {
+  "ground": {
+   "z0": 0.0,
+   "z1": 5.9
+  },
+  "first_cat_window": {
+   "z0": 5.9,
+   "z1": 10.0
+  },
+  "second_balcony_window": {
+   "z0": 10.0,
+   "z1": 13.2
+  },
+  "eave_z": 13.2,
+  "eave_z_provisional": 13.2,
+  "eave_cornice_z": [
+   13.2,
+   13.55
+  ],
+  "right_column_ledges": [
+   5.48,
+   9.55
+  ],
+  "note": "Stone ledge lines in the bible's left column (5.9 under the cat-window apron, 10.0 under the balcony slab); the right column sits 0.36-0.47 m lower. Above the eave cornice: the slate mansard (Q-001)."
+ },
+ "windows": {
+  "left_w1_arched": {
+   "center_x": -3.35,
+   "width": 1.12,
+   "sill_z": 3.2,
+   "x_left": -3.91,
+   "x_right": -2.79,
+   "reveal_depth": 0.08,
+   "head_shape": "elliptical",
+   "springing_z": 4.4,
+   "crown_z": 4.876,
+   "head_z": 4.876,
+   "head_rise": 0.476,
+   "height": 1.676,
+   "frame_bible": {
+    "x_left": -3.845,
+    "x_right": -2.84,
+    "width": 1.005,
+    "springing_z": 4.4,
+    "crown_z": 4.846,
+    "top_z": 4.846,
+    "height": 1.646
+   },
+   "lining": {
+    "sides": 0.058,
+    "head": 0.03
+   },
+   "frame_at_reveal": {
+    "y": 0.08,
+    "x_left": -3.898,
+    "x_right": -2.886,
+    "width": 1.012,
+    "center_x": -3.392,
+    "top_z": 4.866,
+    "bottom_z": 3.2,
+    "clamped_into_opening": {
+     "shift_x": 0.0,
+     "drop_z": 0.01,
+     "bible_cam_residual_px_at_5248": 4.1
+    }
+   }
+  },
+  "left_w2_cat": {
+   "center_x": -3.39,
+   "width": 1.16,
+   "sill_z": 6.85,
+   "x_left": -3.97,
+   "x_right": -2.81,
+   "reveal_depth": 0.08,
+   "head_shape": "flat",
+   "head_z": 8.99,
+   "height": 2.14,
+   "frame_bible": {
+    "x_left": -3.85,
+    "x_right": -2.93,
+    "width": 0.92,
+    "top_z": 8.83,
+    "height": 1.98,
+    "transom_z": 8.18
+   },
+   "lining": {
+    "sides": 0.12,
+    "head": 0.16
+   },
+   "frame_at_reveal": {
+    "y": 0.08,
+    "x_left": -3.903,
+    "x_right": -2.977,
+    "width": 0.927,
+    "center_x": -3.44,
+    "top_z": 8.889,
+    "bottom_z": 6.85,
+    "transom_z": 8.234
+   },
+   "lower_sash_raised": 0.55
+  },
+  "left_w3_balcony": {
+   "center_x": -3.38,
+   "width": 1.16,
+   "sill_z": 10.17,
+   "x_left": -3.96,
+   "x_right": -2.8,
+   "reveal_depth": 0.08,
+   "head_shape": "flat",
+   "head_z": 12.27,
+   "height": 2.1,
+   "frame_bible": {
+    "x_left": -3.87,
+    "x_right": -2.89,
+    "width": 0.98,
+    "top_z": 12.11,
+    "height": 1.94
+   },
+   "lining": {
+    "sides": 0.09,
+    "head": 0.16
+   },
+   "frame_at_reveal": {
+    "y": 0.08,
+    "x_left": -3.923,
+    "x_right": -2.936,
+    "width": 0.987,
+    "center_x": -3.43,
+    "top_z": 12.192,
+    "bottom_z": 10.17
+   }
+  },
+  "right_w1": {
+   "center_x": 2.11,
+   "width": 0.94,
+   "sill_z": 6.49,
+   "x_left": 1.64,
+   "x_right": 2.58,
+   "reveal_depth": 0.08,
+   "head_shape": "flat",
+   "head_z": 8.56,
+   "height": 2.07,
+   "frame_bible": {
+    "x_left": 1.72,
+    "x_right": 2.48,
+    "width": 0.76,
+    "top_z": 8.41,
+    "height": 1.92
+   },
+   "lining": {
+    "sides": 0.09,
+    "head": 0.15
+   },
+   "frame_at_reveal": {
+    "y": 0.08,
+    "x_left": 1.707,
+    "x_right": 2.472,
+    "width": 0.765,
+    "center_x": 2.089,
+    "top_z": 8.466,
+    "bottom_z": 6.49
+   }
+  },
+  "right_w2": {
+   "center_x": 2.11,
+   "width": 0.94,
+   "sill_z": 9.7,
+   "x_left": 1.64,
+   "x_right": 2.58,
+   "reveal_depth": 0.08,
+   "head_shape": "flat",
+   "head_z": 11.77,
+   "height": 2.07,
+   "frame_bible": {
+    "x_left": 1.72,
+    "x_right": 2.48,
+    "width": 0.76,
+    "top_z": 11.62,
+    "height": 1.92
+   },
+   "lining": {
+    "sides": 0.09,
+    "head": 0.15
+   },
+   "frame_at_reveal": {
+    "y": 0.08,
+    "x_left": 1.707,
+    "x_right": 2.472,
+    "width": 0.765,
+    "center_x": 2.089,
+    "top_z": 11.699,
+    "bottom_z": 9.7
+   }
+  }
+ },
+ "windows_note": "Bible check (v2, through aa_bible_cam): the openings match the inner edge of the stone surround on L1, L2, L3 and R1 (traced); the frames match glazier's widths. The light band between frame and surround is the lining (lining.sides), not a narrower opening, so the openings stay. Reveal 0.08: at 0.20 the frames of the left column would sit 37-44 px right and 23-47 px lower in the bible camera than the bible draws them (R column up to 62 px lower).",
+ "arch": {
+  "axis_x": 0.0,
+  "half_width": 2.3,
+  "jamb_x": [
+   -2.3,
+   2.37
+  ],
+  "springing_z": 3.65,
+  "intrados": "semi-ellipse about X=0, half 2.3, rise 1.1",
+  "rise": 1.1,
+  "crown_z": 4.75,
+  "extrados_half_width": 2.55,
+  "extrados_rise": 1.52,
+  "extrados_crown_z": 5.17,
+  "ring_proud": 0.14,
+  "right_springing_shelf": {
+   "x": [
+    2.3,
+    2.37
+   ],
+   "z": 3.65,
+   "note": "the right impost/capital covers it"
+  },
+  "piers": {
+   "left": {
+    "x": [
+     -2.73,
+     -2.3
+    ],
+    "proud": 0.15,
+    "base_z_top": 1.03,
+    "capital_z": [
+     3.04,
+     3.65
+    ]
+   },
+   "right": {
+    "x": [
+     2.37,
+     2.8
+    ],
+    "proud": 0.15,
+    "base_z_top": 1.03,
+    "capital_z": [
+     3.04,
+     3.65
+    ]
+   }
+  },
+  "bible_doorway_assembly_x": [
+   -2.02,
+   2.37
+  ],
+  "doorway_top_z": 2.77,
+  "marquee_bible": {
+   "x": [
+    -2.28,
+    2.36
+   ],
+   "bottom_z": 2.77,
+   "top_z": 4.65,
+   "tagline_banner_z": [
+    2.77,
+    3.09
+   ]
+  },
+  "keystone_head_bible": {
+   "center_x": 0.0,
+   "bottom_z": 4.6,
+   "top_z": 6.17,
+   "proud": 0.5
+  },
+  "keystone": {
+   "cartouche": "removed",
+   "crown_voussoir": "none",
+   "crown_gap_x": [
+    -0.27,
+    0.27
+   ],
+   "note": "The bible shows no cartouche: the carved head (E4, keystone_head_bible) and its volutes sit IN FRONT of the archivolt. E1 removed aa_arch_hero_cartouche and builds no voussoir at the crown; the wall face (with the mural) shows behind the head. E4 no longer needs its recess_keystone_context()."
+  },
+  "step": {
+   "x": [
+    -2.3,
+    2.8
+   ],
+   "y_front": -0.35,
+   "z_top": 0.15
+  },
+  "note": "v2: the bible's right pier inner arris traces at X=2.375 (rows z 1.2-2.5, plane y=-0.15, std 0.002) and neon's doorway right edge at 2.365, so the right jamb moves to 2.37. The archivolt still springs at +-2.30 about X=0 (its intrados lands at 2.25-2.30 on both sides in the bible): the arch axis does NOT move; the right impost covers the 0.07 shelf. Left jamb stays -2.30 (conduits cover it; the doorway's left frame edge is -2.02)."
+ },
+ "camera": {
+  "name": "aa_bible_cam",
+  "location": [
+   3.5696,
+   -11.1675,
+   0.6477
+  ],
+  "rotation_euler_xyz_deg": [
+   106.3981,
+   -1.2423,
+   24.7956
+  ],
+  "lens_mm": 38.4112,
+  "sensor_width_mm": 36.0,
+  "sensor_fit": "HORIZONTAL",
+  "shift": [
+   0,
+   0
+  ],
+  "resolution": [
+   5248,
+   4796
+  ],
+  "render_resolution": [
+   1600,
+   1462
+  ],
+  "f_px_at_5248": 5599.499,
+  "pitch_deg": 16.394,
+  "yaw_deg": 25.161,
+  "roll_deg": 1.295,
+  "eye_height_m": 0.6477,
+  "solve": "tools/content_generation/absinthe_arcade/camera_match/"
+ },
+ "right_corner": {
+  "facade_end_x": 3.04,
+  "right_downpipe_x": 2.93,
+  "pilaster_x": [
+   2.72,
+   3.04
+  ],
+  "pilaster_proud": 0.07,
+  "plinth_z_top": 1.03,
+  "capital_z": [
+   4.72,
+   5.24
+  ],
+  "gf_cornice": {
+   "x": [
+    2.37,
+    3.04
+   ],
+   "z": [
+    5.24,
+    5.48
+   ],
+   "proud": 0.28
+  },
+  "quoins": {
+   "z": [
+    5.48,
+    13.2
+   ],
+   "course": 0.42,
+   "front_long_short": [
+    0.32,
+    0.22
+   ],
+   "proud": 0.04
+  },
+  "wraps_onto_side": 0.32,
+  "note": "Asset sheet crops 12/14: the facade ends against the right downpipe; pilaster+capital and quoins wrap the corner onto the side elevation."
+ },
+ "side_right": {
+  "frame": {
+   "face_x": 3.04,
+   "u_axis": "world +Y (u=0 the front face, u=4.0 the back corner)",
+   "outward_normal": [
+    1,
+    0,
+    0
+   ],
+   "u_range": [
+    0.0,
+    4.0
+   ]
+  },
+  "windows": {
+   "side_w0_ground": {
+    "u_center": 1.9,
+    "width": 0.94,
+    "u_left": 1.43,
+    "u_right": 2.37,
+    "sill_z": 3.73,
+    "head_z": 4.7,
+    "height": 0.97,
+    "head_shape": "flat",
+    "reveal_depth": 0.08,
+    "frame": {
+     "u_left": 1.52,
+     "u_right": 2.28,
+     "width": 0.76,
+     "top_z": 4.61,
+     "height": 0.88
+    },
+    "lining": {
+     "sides": 0.09,
+     "head": 0.09
+    },
+    "world": {
+     "face_x": 3.04,
+     "center_y": 1.9,
+     "outward_normal": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "side_w1": {
+    "u_center": 1.9,
+    "width": 0.94,
+    "u_left": 1.43,
+    "u_right": 2.37,
+    "sill_z": 6.49,
+    "head_z": 8.56,
+    "height": 2.07,
+    "head_shape": "flat",
+    "reveal_depth": 0.08,
+    "frame": {
+     "u_left": 1.52,
+     "u_right": 2.28,
+     "width": 0.76,
+     "top_z": 8.47,
+     "height": 1.98
+    },
+    "lining": {
+     "sides": 0.09,
+     "head": 0.09
+    },
+    "world": {
+     "face_x": 3.04,
+     "center_y": 1.9,
+     "outward_normal": [
+      1,
+      0,
+      0
+     ]
+    }
+   },
+   "side_w2": {
+    "u_center": 1.9,
+    "width": 0.94,
+    "u_left": 1.43,
+    "u_right": 2.37,
+    "sill_z": 9.7,
+    "head_z": 11.77,
+    "height": 2.07,
+    "head_shape": "flat",
+    "reveal_depth": 0.08,
+    "frame": {
+     "u_left": 1.52,
+     "u_right": 2.28,
+     "width": 0.76,
+     "top_z": 11.68,
+     "height": 1.98
+    },
+    "lining": {
+     "sides": 0.09,
+     "head": 0.09
+    },
+    "world": {
+     "face_x": 3.04,
+     "center_y": 1.9,
+     "outward_normal": [
+      1,
+      0,
+      0
+     ]
+    }
+   }
+  },
+  "framed_panel": {
+   "cx": 1.9,
+   "w": 0.95,
+   "z": [
+    2.41,
+    3.49
+   ],
+   "note": "the sheet's framed dark board below the ground-floor window (E6 dresses it)"
+  },
+  "awning_zone": {
+   "cx": 1.9,
+   "w": 1.15,
+   "z": [
+    4.75,
+    5.06
+   ],
+   "note": "small striped awning over side_w0_ground (E6)"
+  },
+  "back_pilaster_u": [
+   3.68,
+   4.0
+  ],
+  "front_corner_quoins_u": [
+   0.0,
+   0.32
+  ],
+  "downpipes": {
+   "front_corner": {
+    "x": 2.93,
+    "y": -0.08,
+    "note": "the right downpipe on the corner (E4/E6)"
+   },
+   "back_corner": {
+    "u": 3.8
+   }
+  },
+  "front_corner_lantern": {
+   "note": "the sheet's side shows the facade's right lantern (aa_prop_wall_lantern, x 2.93, z 3.7) on the front corner: same lantern, no second one (E6)"
+  },
+  "flower_boxes": "one per window, on the sill slab (E2)",
+  "note": "Right side elevation (Q-011 answer A: exactly the asset sheet's one-bay side, crops 14/11; depth 4.0 m). Local frame of the side face: u = world Y (0 at the front face, 4.0 at the back), v into the building (world -X), face at world X = x_right (3.04). Windows share R1/R2's floors; positions along u are the sheet's proportions; the ground-floor composition is the sheet's, scaled into the right ground storey (0..5.48). v2: side windows use R1/R2's bible opening and frame (0.94 hole, 0.76 frame): the sheet draws every window squatter than the bible (its R1 frame is 0.65 w/h, the bible's 0.40), so the bible's R1 proportions carry round the corner."
+ },
+ "dormers": {
+  "dormer_left": {
+   "center_x": -3.38,
+   "opening_width": 0.56,
+   "sill_z": 13.8,
+   "head_z": 14.68,
+   "face_y": -0.05,
+   "body_width": 1.06,
+   "ridge_z": 15.3,
+   "reveal_depth": 0.06,
+   "body_depth": 1.1,
+   "frame": {
+    "width": 0.46,
+    "height": 0.83
+   },
+   "lining": {
+    "sides": 0.05,
+    "head": 0.05
+   }
+  },
+  "dormer_right": {
+   "center_x": 2.11,
+   "opening_width": 0.56,
+   "sill_z": 13.8,
+   "head_z": 14.68,
+   "face_y": -0.05,
+   "body_width": 1.06,
+   "ridge_z": 15.3,
+   "reveal_depth": 0.06,
+   "body_depth": 1.1,
+   "frame": {
+    "width": 0.46,
+    "height": 0.83
+   },
+   "lining": {
+    "sides": 0.05,
+    "head": 0.05
+   }
+  },
+  "dormer_side_right": {
+   "face": "side_right",
+   "u_center": 1.6,
+   "world_center_y": 1.6,
+   "face_x": 3.09,
+   "opening_width": 0.56,
+   "sill_z": 13.8,
+   "head_z": 14.68,
+   "body_width": 1.06,
+   "ridge_z": 15.3,
+   "reveal_depth": 0.06,
+   "frame": {
+    "width": 0.46,
+    "height": 0.83
+   },
+   "lining": {
+    "sides": 0.05,
+    "head": 0.05
+   },
+   "outward_normal": [
+    1,
+    0,
+    0
+   ]
+  },
+  "note": "Mansard dormers from the asset sheet (crops 09/14): front pair over the window columns, one on the right side. Openings cut through the dormer fronts; frame/lining/reveal per glazier (E2)."
+ },
+ "roof": {
+  "eave_cornice_z": [
+   13.2,
+   13.55
+  ],
+  "mansard_top_z": 15.52,
+  "mansard_setback": 0.55,
+  "top_setback": 1.6,
+  "footprint_xy": "building.footprint_xy",
+  "gable": {
+   "half_width": 1.3,
+   "top_z": 16.4,
+   "carved_head_z": [
+    15.2,
+    16.1
+   ]
+  },
+  "chimneys": [
+   {
+    "x": -3.38,
+    "y": 1.55,
+    "w": 0.48,
+    "d": 0.6,
+    "top": 16.45,
+    "pots": 1,
+    "pot_h": 0.42,
+    "where": "behind the left dormer"
+   },
+   {
+    "x": -1.5,
+    "y": 1.2,
+    "w": 0.55,
+    "d": 0.42,
+    "top": 16.45,
+    "pots": 2,
+    "pot_h": 0.42,
+    "where": "left of the gable"
+   },
+   {
+    "x": 1.5,
+    "y": 1.2,
+    "w": 0.55,
+    "d": 0.42,
+    "top": 16.45,
+    "pots": 2,
+    "pot_h": 0.42,
+    "where": "right of the gable"
+   },
+   {
+    "x": 2.35,
+    "y": 1.75,
+    "w": 0.48,
+    "d": 0.6,
+    "top": 16.45,
+    "pots": 1,
+    "pot_h": 0.42,
+    "where": "behind and right of the right dormer (the bible's asymmetric bays leave no room between the gable and the dormer)"
+   }
+  ],
+  "cresting": {
+   "h": 0.32,
+   "bay": 0.36
+  },
+  "mansard": {
+   "rings": 9,
+   "bell": 0.45,
+   "eave_kick": 0.1,
+   "upper_rise": 0.32
+  },
+  "note": "Asset sheet roof (crops 09, 10, 12, 13), rework 2026-10-29: bell-cast slate mansard (lower slope 13.55-15.35, upper slope to 15.70), the tall stone gable with C-scroll shoulders and an arched crown, four stone stacks with clay pots (crop 09 front: one behind each dormer, one either side of the gable; crop 10 is a close-up showing two of them, crop 13 shows three with the fourth behind the gable), dormer bodies after E2's stand-in, iron cresting round the ridge, gapped behind the gable."
+ },
+ "corner_bay": {
+  "arris_x": -5.4,
+  "cant_angle_deg": 45.0,
+  "cant_width": 2.0,
+  "cant_far_end_xy": [
+   -6.814,
+   1.414
+  ],
+  "window_w": 0.7,
+  "cornice_z": [
+   [
+    5.6,
+    5.95
+   ],
+   [
+    7.65,
+    7.9
+   ],
+   [
+    9.45,
+    9.7
+   ],
+   [
+    13.2,
+    13.55
+   ]
+  ],
+  "cornices_z_proud": [
+   [
+    5.6,
+    5.95,
+    0.18
+   ],
+   [
+    7.65,
+    7.9,
+    0.2
+   ],
+   [
+    9.45,
+    9.7,
+    0.25
+   ],
+   [
+    13.2,
+    13.55,
+    0.42
+   ]
+  ],
+  "windows_z": [
+   [
+    8.0,
+    9.25
+   ],
+   [
+    9.95,
+    11.2
+   ]
+  ],
+  "note": "v2 (bible-fitted through aa_bible_cam): the 45-degree cant holds (the bay's cornice edges run at the cant's image slope, -2.5..-3.7). Cornices refitted to the bible's corner points: ground-floor 5.6-5.95 proud 0.18 (mitre corner at bible px 1310,1910), a band at 7.65-7.9 proud 0.2, the mid cornice 9.45-9.7 proud 0.25 (corner at 1385,680), eave 13.2-13.55. The cant windows sit between them.",
+  "corner_pilaster": {
+   "x": [
+    -5.4,
+    -5.02
+   ],
+   "capital_z": [
+    5.07,
+    5.6
+   ]
+  },
+  "clocktower_plaza_sign_mount_zone": {
+   "at_arris_x": -5.4,
+   "at_arris_z": [
+    3.9,
+    5.0
+   ],
+   "note": "E6 hangs the CLOCKTOWER PLAZA bracket sign here (Q-006: ruled IN), on the Arcade's left corner"
+  },
+  "wall_sign_zone": {
+   "x": [
+    -5.4,
+    -4.65
+   ],
+   "z": [
+    1.4,
+    3.9
+   ],
+   "note": "TOKENS/REGRETS wall signs (E6)"
+  }
+ }
+}

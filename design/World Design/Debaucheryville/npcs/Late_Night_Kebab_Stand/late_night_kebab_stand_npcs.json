@@ -1,0 +1,69 @@
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "location_name": "Late-Night Kebab Stand",
+  "npcs": [
+    {
+      "npc_id": "lks_npc_mr_chadz",
+      "display_name": "Mr. Chadz",
+      "role": "kebab vendor and crypto-alert commentator",
+      "node": "lks_counter",
+      "schedule": "always",
+      "visual": "Apron, hookah-hose LED rig and burner phone.",
+      "quest_bindings": [
+        "Great Döner Debate",
+        "club_flyers"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "late_night_kebab_stand_ambient_1",
+      "display_name": "post-club customers",
+      "spawn_nodes": [
+        "lks_counter",
+        "lks_consume",
+        "lks_crawlspace"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "late_night_kebab_stand_ambient_2",
+      "display_name": "alley rat",
+      "spawn_nodes": [
+        "lks_counter",
+        "lks_consume",
+        "lks_crawlspace"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "late_night_kebab_stand_ambient_3",
+      "display_name": "steam silhouettes",
+      "spawn_nodes": [
+        "lks_counter",
+        "lks_consume",
+        "lks_crawlspace"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "lks_npc_mr_chadz",
+      "node_id": "lks_counter",
+      "role": "kebab vendor and crypto-alert commentator"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient density during events",
+    "Do not add NPCs to empty shrine/restroom specs"
+  ]
+}
