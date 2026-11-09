@@ -63,10 +63,9 @@
 
 ## Engine registration (2026-11-09)
 
-- Registered in `game/assets/data/items/key_items.json` (`item_class: "permanent"`, `source: "absinthe_arcade_prize_redemption"`, with an added `ticket_price` field): prizes 1, 4, 5, 6, 7, 8, 9, 10, 11 and 13. Keys drop the `item_` prefix, per the key_items convention (`student_id` for `item_student_id`).
-- `ticket_price` is a new optional key_items field added for these prizes. It needs an author nod to join the standing key_items schema (ruling 2026-08-06).
-- **Not registered yet:** prizes 2 (Fangs for Nothing), 3 (Sixty-Minute Emerald) and 12 (Two-Grand Tie-Dye Tee) are worn/equipped, so they route to `equipment.json`, which has no ruled schema. They wait for an equipment-schema ruling.
-- Prize 9's battle effect (35% Embarrassed, once per battle) and prize 8's Drunk/Confused failure have no field in the key_items schema; they live in this catalogue until the battle/interaction code reads them.
+- Registered in `game/assets/data/items/key_items.json` (`item_class: "permanent"`, `source: "absinthe_arcade_prize_redemption"`): all 13 prizes. Keys drop the `item_` prefix, per the key_items convention (`student_id` for `item_student_id`).
+- `ticket_price` and `effect` joined the standing key_items schema by author ruling 2026-11-09 (`prize_fields = "both"`, recorded in `docs/superpowers/NEXT_WORK.md`). Every prize carries `effect`: the approved effect text above, or `null` for prizes with none (1, 4, 5, 6, 7, 13). Prize 8's Drunk/Confused failure and prize 9's 35% Embarrassed battle effect live in `effect` until the battle/interaction code reads them.
+- **Worn prizes (move-later rule):** prizes 2 (Fangs for Nothing), 3 (Sixty-Minute Emerald) and 12 (Two-Grand Tie-Dye Tee) sit in key_items.json flagged `"wearable": "cosmetic"`, per author ruling 2026-11-09 (`worn_prizes = "key_cosmetic"`). **When an equipment format is ruled, move these three entries to `equipment.json`** and drop the flag.
 - The ticket itself is `item_absinthe_arcade_ticket` in `absinthe_arcade_items.json` (design data, alongside the token).
 
 ## Change history
@@ -75,3 +74,4 @@
 |---|---|---|
 | 2026-11-09 | Catalogue drafted (all PROPOSED) | Claude (agent draft for author review) |
 | 2026-11-09 | Author review round: all 13 prizes, names, prices, effects and the ticket scale Approved; DDR cost ruled at 2 tokens per song; plush renamed to the real brand, Chuck E. Cheese Plush (`item_aa_prize_chuck_e_cheese_plush`), per the real-names ruling; engine registration noted | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Author rulings `prize_fields = "both"` and `worn_prizes = "key_cosmetic"`: `ticket_price` + `effect` joined the key_items schema; all 13 prizes registered, the three worn prizes flagged `wearable: cosmetic` until an equipment format exists | Claude (per author rulings 2026-11-09) |

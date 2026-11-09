@@ -171,6 +171,16 @@ key (consumables convention), fields `display_name`, `item_class` ("permanent"|"
 remain ⚠-flagged for the batch review; critic-pass sharpenings applied by author order).
 GUT baseline note: suite grew 27→36 tests (engine window); all 36 pass.
 
+**Amendment 2026-11-09 (author ruling `prize_fields = "both"`):** the key_items schema gains two
+fields. `ticket_price` (int): price in tickets at the Absinthe Arcade Prize Redemption counter;
+present only on ticket-bought prizes. `effect` (string or null): the item's gameplay effect in
+plain words, `null` when it has none; required on every Absinthe Arcade prize (`aa_prize_*`).
+Neither field is required on other key items (`student_id` carries its mechanics in
+`stat_modifiers` and was left untouched).
+**Amendment 2026-11-09 (author ruling `worn_prizes = "key_cosmetic"`):** worn prizes live in
+key_items.json for now with `"wearable": "cosmetic"` (Fangs for Nothing, Sixty-Minute Emerald,
+Two-Grand Tie-Dye Tee). They move to equipment.json once an equipment schema is ruled.
+
 ## Small ledger (mechanical, any future round)
 
 - Shamsterdam untracked city-file pair (byte-identical flat + folder copies): reorg window

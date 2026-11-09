@@ -17,13 +17,33 @@
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 15,
+      "effect": null,
       "description": "Red wax lips that taste like a birthday candle somebody else blew out. Lord Pilsner wore them for a full lap of the bar and logged every turned cheek as \"a near miss.\""
+    },
+    "aa_prize_fangs_for_nothing": {
+      "display_name": "Fangs for Nothing",
+      "item_class": "permanent",
+      "wearable": "cosmetic",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 20,
+      "effect": "Cosmetic: while equipped, the wearer's battle shouts are lisped (\"Thmaaaash!\"). No stats.",
+      "description": "Glow-in-the-dark vampire teeth one size too large for any human jaw. Bradley has worn them through two drinks and a pickup line and describes the night as \"dangerous.\""
+    },
+    "aa_prize_sixty_minute_emerald": {
+      "display_name": "Sixty-Minute Emerald",
+      "item_class": "permanent",
+      "wearable": "cosmetic",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 25,
+      "effect": "Cosmetic status Jade Knuckle after 60 in-game minutes worn. No stat change. Chadwick cites it as proof of authenticity in dialogue.",
+      "description": "A gold-tone ring with a green glass stone the size of a cocktail olive. After an hour the finger underneath matches the stone, which Chadwick says is how you know it's real."
     },
     "aa_prize_five_finger_lint_discount": {
       "display_name": "Five-Finger Lint Discount",
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 35,
+      "effect": null,
       "description": "A sticky rubber hand on a three-foot leash, already furred with bar-floor hair, a ticket stub and one curly hair nobody will claim. Bradley slaps it on the bar whenever he wants another round and calls this \"ordering.\""
     },
     "aa_prize_pinky_promise_prison": {
@@ -31,6 +51,7 @@
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 40,
+      "effect": null,
       "description": "A woven paper tube that tightens the harder you pull. Chadwick and Bradley got their fingers stuck in opposite ends and have been asking the bartender for the couples' discount."
     },
     "aa_prize_neon_wrist_guillotine": {
@@ -38,6 +59,7 @@
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 60,
+      "effect": null,
       "description": "A strip of spring steel in a hot-pink fabric sleeve that snaps around the wrist on impact and through the sleeve by Thursday. Bradley stacks it under his other bracelets and calls the set his \"armor.\""
     },
     "aa_prize_fuchsia_foot_of_fortune": {
@@ -45,6 +67,7 @@
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 90,
+      "effect": null,
       "description": "A rabbit's foot dyed a pink no living rabbit ever reached, on a keychain that clearly did nothing for the rabbit. Chadwick clipped it to his chain wallet and rubs it before every claw-machine attempt."
     },
     "aa_prize_sobriety_test_deluxe": {
@@ -52,6 +75,7 @@
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 120,
+      "effect": "Usable from inventory. Always fails while the user is Drunk or Confused (tilt rattle, no result). Solvable sober, for no reward.",
       "description": "A palm-sized plastic maze with three silver balls and one hole, unsolvable after the second absinthe. Lord Pilsner has been working on it since eleven and says he is \"one tilt away.\""
     },
     "aa_prize_sit_down_comedy_special": {
@@ -59,6 +83,7 @@
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 800,
+      "effect": "Battle item, once per battle, never consumed: 35% chance to inflict Embarrassed on one enemy. On a miss, the bros claim it hit.",
       "description": "A pink rubber whoopee cushion priced like a used scooter. Bradley calls it \"the strongest weapon in the building\" and has deployed it on every bar stool, including the bidet."
     },
     "aa_prize_flamingo_hydro_bro_2000": {
@@ -66,6 +91,7 @@
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 1200,
+      "effect": "Field interaction: squirt an NPC for a one-line reaction. No battle use.",
       "description": "A flamingo-pink pump-action squirt gun that holds one shot glass of liquid and leaks a second. Chadwick filled it with absinthe and calls it his \"concealed carry.\""
     },
     "aa_prize_highlighter_hydro_bro_2000": {
@@ -73,13 +99,24 @@
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 1200,
+      "effect": "Field interaction: squirt an NPC for a one-line reaction. No battle use.",
       "description": "The same squirt gun in highlighter yellow, won separately because Lord Pilsner refused to share a weapons platform with Chadwick. It holds beer. It does not hold it well."
+    },
+    "aa_prize_two_grand_tie_dye_tee": {
+      "display_name": "Two-Grand Tie-Dye Tee",
+      "item_class": "permanent",
+      "wearable": "cosmetic",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 2000,
+      "effect": "Equippable cosmetic, 0 stats.",
+      "description": "A one-size-fits-nobody tie-dye shirt printed slightly crooked with I ♥ ABSINTHE ARCADE. Bradley wears it over his jersey and calls it his \"championship belt.\""
     },
     "aa_prize_chuck_e_cheese_plush": {
       "display_name": "Chuck E. Cheese Plush",
       "item_class": "permanent",
       "source": "absinthe_arcade_prize_redemption",
       "ticket_price": 2500,
+      "effect": null,
       "description": "A cross-eyed plush pizza rat in a chef's hat, stuffed with what feels like aquarium gravel and smelling like a ball pit. Lord Pilsner handed over two and a half thousand tickets for it and calls it \"the crown jewels.\""
     }
   }
