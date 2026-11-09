@@ -568,44 +568,50 @@
       "arcade_machines": [
         {
           "machine_id": "frogger_existential_edition",
-          "game_type": "philosophical_obstacle_course",
           "location": "main_floor_left",
           "description": "Navigate philosophical obstacles instead of traffic",
-          "interaction_type": "mini_game",
-          "rewards": [
-            "existential_crisis_buff",
-            "small_sp_boost"
+          "interaction_type": "battle_cabinet",
+          "token_cost": 2,
+          "encounter_structure": "weighted_random_table",
+          "villain_ids": [
+            "debaucheryville_villain_hit_and_ponder_hatchback_01",
+            "debaucheryville_villain_sinking_fund_01",
+            "debaucheryville_villain_croc_monsieur_01"
           ],
-          "failure_effects": [
-            "confused_status"
+          "rewards": [
+            "arcade_tickets"
           ]
         },
         {
           "machine_id": "street_fighter_identity_crisis",
-          "game_type": "fighting_game_parody",
           "location": "main_floor_center",
           "description": "Characters question their moves mid-combo",
-          "interaction_type": "mini_game",
-          "special_mechanics": [
-            "characters_stop_mid_combo_for_self_reflection"
+          "interaction_type": "battle_cabinet",
+          "token_cost": 3,
+          "encounter_structure": "weighted_random_table",
+          "villain_ids": [
+            "debaucheryville_villain_player_two_palette_swap_01",
+            "debaucheryville_villain_super_turbo_hyper_jarmila_01",
+            "debaucheryville_villain_two_seventy_vratislav_01"
           ],
           "rewards": [
-            "identity_crisis_achievement",
-            "combat_experience"
+            "arcade_tickets"
           ]
         },
         {
           "machine_id": "kebab_kombat",
-          "game_type": "one_button_fighter",
           "location": "main_floor_right",
           "description": "Fighting game where the only button is regret",
-          "interaction_type": "mini_game",
-          "special_mechanics": [
-            "only_regret_button_available"
+          "interaction_type": "battle_cabinet",
+          "token_cost": 4,
+          "encounter_structure": "fixed_resetting_ladder",
+          "villain_ids": [
+            "debaucheryville_villain_condiment_clan_ninja_01",
+            "debaucheryville_villain_count_continue_01",
+            "debaucheryville_villain_shish_kahn_01"
           ],
           "rewards": [
-            "regret_achievement",
-            "comedy_moment"
+            "arcade_tickets"
           ]
         },
         {
@@ -632,6 +638,17 @@
           "destination": "absynthium_taproom_dungeon",
           "rewards": [
             "absynthium_taproom_access"
+          ]
+        },
+        {
+          "machine_id": "ddr_dance_off",
+          "game_type": "rhythm_mini_game",
+          "location": "main_floor_west_wall_screen",
+          "description": "Three pads, one big screen. The player picks one bro; the other two dance under game control.",
+          "interaction_type": "mini_game",
+          "token_cost": null,
+          "rewards": [
+            "arcade_tickets"
           ]
         }
       ],
@@ -667,7 +684,8 @@
           "audio_cue": {
             "claw_machine_sounds": "authentic_prize_dispensing_audio_effects"
           },
-          "visual_effects": "flickering_pink_led_above_claw_machine_when_unlocked"
+          "visual_effects": "flickering_pink_led_above_claw_machine_when_unlocked",
+          "token_cost": 5
         },
         {
           "object_id": "absinthe_bottle_bar",

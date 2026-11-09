@@ -87,62 +87,150 @@
       "object_id": "frogger_existential_edition",
       "display_name": "Frogger: Existential Edition",
       "node_id": "aa_node_main_cabinet_loop",
-      "type": "mini_game_cabinet",
+      "type": "battle_cabinet",
       "interaction_text": "Cross because you must",
       "cost": {
         "item": "item_absinthe_arcade_token",
-        "quantity": 1
-      },
-      "mechanics": {
-        "objective": "Navigate philosophical obstacles that pause to question the player's choices.",
-        "win_condition": "reach_the_other_side_before_existential_meter_fills",
-        "failure_condition": "accept_every_argument_and_stop_moving"
+        "quantity": 2
       },
       "reward": {
-        "type": "score_and_arcade_focus",
-        "item": null
-      }
+        "type": "arcade_tickets",
+        "amount": "per villain profile (PROPOSED, needs author ruling)",
+        "redeem_at": "prize_redemption_counter",
+        "sovs_payout": 0
+      },
+      "encounter": {
+        "structure": "weighted_random_table",
+        "villain_ids": [
+          "debaucheryville_villain_hit_and_ponder_hatchback_01",
+          "debaucheryville_villain_sinking_fund_01",
+          "debaucheryville_villain_croc_monsieur_01"
+        ],
+        "roster_source": "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/",
+        "battle_system": "existing party battle system (author ruling 2026-11-02)"
+      },
+      "states": [
+        "idle",
+        "attract",
+        "insert_token",
+        "villain_emerging",
+        "defeated_reset"
+      ]
     },
     {
       "object_id": "street_fighter_identity_crisis",
       "display_name": "Street Fighter: Identity Crisis",
       "node_id": "aa_node_main_cabinet_loop",
-      "type": "mini_game_cabinet",
+      "type": "battle_cabinet",
       "interaction_text": "Select a fighter who is no longer sure",
       "cost": {
         "item": "item_absinthe_arcade_token",
-        "quantity": 1
-      },
-      "mechanics": {
-        "objective": "Land moves while the fighter questions and remaps inputs mid-combo.",
-        "win_condition": "complete_three_adaptive_combos",
-        "failure_condition": "identity_meter_reaches_zero"
+        "quantity": 3
       },
       "reward": {
-        "type": "score_and_dialogue_unlock",
-        "dialogue_set": "hacker_respects_adaptation"
-      }
+        "type": "arcade_tickets",
+        "amount": "per villain profile (PROPOSED, needs author ruling)",
+        "redeem_at": "prize_redemption_counter",
+        "sovs_payout": 0
+      },
+      "encounter": {
+        "structure": "weighted_random_table",
+        "villain_ids": [
+          "debaucheryville_villain_player_two_palette_swap_01",
+          "debaucheryville_villain_super_turbo_hyper_jarmila_01",
+          "debaucheryville_villain_two_seventy_vratislav_01"
+        ],
+        "roster_source": "design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/",
+        "battle_system": "existing party battle system (author ruling 2026-11-02)"
+      },
+      "states": [
+        "idle",
+        "attract",
+        "insert_token",
+        "villain_emerging",
+        "defeated_reset"
+      ]
     },
     {
       "object_id": "kebab_kombat",
       "display_name": "Kebab Kombat",
       "node_id": "aa_node_main_cabinet_loop",
-      "type": "mini_game_cabinet",
+      "type": "battle_cabinet",
       "interaction_text": "Press REGRET",
       "cost": {
         "item": "item_absinthe_arcade_token",
-        "quantity": 1
-      },
-      "mechanics": {
-        "objective": "Time a single REGRET button to assemble and weaponize an increasingly unstable kebab.",
-        "input_count": 1,
-        "win_condition": "five_perfect_regrets",
-        "failure_condition": "sauce_integrity_reaches_zero"
+        "quantity": 4
       },
       "reward": {
-        "type": "score_and_consumable",
-        "item_id": "item_questionable_kebab_coupon"
-      }
+        "type": "arcade_tickets",
+        "amount": "per villain profile (PROPOSED, needs author ruling)",
+        "redeem_at": "prize_redemption_counter",
+        "sovs_payout": 0
+      },
+      "encounter": {
+        "structure": "fixed_resetting_ladder",
+        "villain_ids": [
+          "debaucheryville_villain_condiment_clan_ninja_01",
+          "debaucheryville_villain_count_continue_01",
+          "debaucheryville_villain_shish_kahn_01"
+        ],
+        "roster_source": "design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/",
+        "battle_system": "existing party battle system (author ruling 2026-11-02)",
+        "ladder_order": [
+          "debaucheryville_villain_condiment_clan_ninja_01",
+          "debaucheryville_villain_count_continue_01",
+          "debaucheryville_villain_shish_kahn_01"
+        ],
+        "ladder_rule": "Each token fights the next rung; after the last rung the ladder resets to the first."
+      },
+      "states": [
+        "idle",
+        "attract",
+        "insert_token",
+        "villain_emerging",
+        "defeated_reset"
+      ]
+    },
+    {
+      "object_id": "ddr_dance_off",
+      "display_name": "DDR Dance-Off (three pads, one big screen)",
+      "node_id": "aa_node_main_cabinet_loop",
+      "type": "rhythm_mini_game",
+      "interaction_text": "Pick a bro. The other two dance anyway.",
+      "cost": {
+        "item": "item_absinthe_arcade_token",
+        "quantity": "NEEDS AUTHOR RULING"
+      },
+      "mechanics": {
+        "player_control": "one bro chosen by the player",
+        "other_bros": "game-controlled on the other two pads",
+        "outcome_presentation": "All three dance cringily either way; a bad score makes them look even more ridiculous.",
+        "track_list": "90s/00s hits named by the author 2026-11-09; licensing vs. sound-alikes NEEDS AUTHOR RULING"
+      },
+      "reward": {
+        "type": "arcade_tickets",
+        "amount": "NEEDS AUTHOR RULING",
+        "redeem_at": "prize_redemption_counter"
+      },
+      "states": [
+        "attract",
+        "song_select",
+        "playing",
+        "results_good",
+        "results_bad"
+      ]
+    },
+    {
+      "object_id": "prize_redemption_counter",
+      "display_name": "Prize Redemption",
+      "node_id": "aa_node_bottle_bar",
+      "type": "ticket_shop",
+      "interaction_text": "Trade tickets for regret",
+      "economy": {
+        "input_currency": "arcade_tickets",
+        "catalog": "NEEDS AUTHOR RULING (prize list and ticket prices; see NEXT_WORK 2026-11-09)"
+      },
+      "note": "Built into the broken end of the shattered-glass bar (hall v8, author ruling 2026-11-08)."
     },
     {
       "object_id": "rigged_absinthe_claw_machine",
@@ -338,13 +426,5 @@
       "backpack_girl_dialogue_set": "archive_callbacks",
       "floor_nest_detail": "new_ballad_page_visible"
     }
-  },
-  "narrator_commentary": {
-    "on_entering": "Absinthe Arcade: where childhood nostalgia came to Europe, found itself, and immediately began charging admission.",
-    "on_token_purchase": "The exchange rate had the confidence of a central bank and the oversight of a vending machine.",
-    "on_claw_near_miss": "The claw had discovered free will at the exact moment it became expensive.",
-    "on_restroom_unlock": "Three tokens later, modern sanitation had technically been achieved.",
-    "on_taproom_discovery": "Behind the curtain waited either enlightenment or another cover charge.",
-    "on_fake_vip_loop": "The VIP section was the friends they overpaid along the way."
   }
 }

@@ -39,14 +39,7 @@
     }
   },
   "status_effects": {
-    "environmental_buffs": [
-      {
-        "id": "arcade_focus",
-        "trigger": "win_any_twisted_arcade_game",
-        "duration_minutes": 10,
-        "effect": "plus_one_timing_window_for_next_arcade_game"
-      }
-    ],
+    "environmental_buffs": [],
     "atmospheric_debuffs": [
       {
         "id": "green_fairy_disorientation",

@@ -408,3 +408,37 @@ Open question: should it, and to what depth?
   Layout" and `references/Interior/concepts/README.md`).
 - Do not relitigate.
 
+
+## Standing rulings 2026-11-09: Arcade villains, payouts and interior (author)
+
+- **CONTINUE? paid revive belongs to Count Continue only.** 270 Vratislav and Croc Monsieur
+  get new finishers of their own.
+- **Wallet theft belongs to Sinking Fund only** (Buy the Dip). Count Continue keeps only his
+  paid continue.
+- **Existential Crisis is out of the Arcade villains.** Swap it for Confused or Embarrassed,
+  "game-appropriate and slightly ridiculous". Bros react instantly and confidently.
+- **Arcade fights pay TICKETS, not SOVS.** Tickets are redeemed at the Prize Redemption
+  counter in the bar for 90s pizza-arcade junk: wax lips, plastic vampire teeth, fake rings
+  that turn your finger green, sticky hands, finger traps, slap bracelets, dyed rabbit-foot
+  keychains, ball-in-maze puzzles. "Better" prizes, absurdly bad value: a pizza-mascot
+  plushie, pink and yellow pump water guns, whoopee cushions, a tie-dye "I love Absinthe
+  Arcade" t-shirt. Ticket amounts and prize prices still need numbers.
+- **Cabinet token costs: Frogger 2, Street Fighter 3, Kebab Kombat 4** (1 token = 1 SOVS).
+- **Line-ups per cabinet:** Kebab Kombat uses a fixed resetting ladder; Frogger and Street
+  Fighter use weighted random tables.
+- **All proposed villain mechanics are approved** (wallet steal, enemy revive, untargetable
+  dive, swallow, ally-KO and allies-alive AI triggers, Second Thoughts re-roll, mid-fight
+  nameplate change, palette-spawn roll), as are the villain stats, XP, drops, 12 items and
+  9 achievements. The Frogger lady-frog background gag stays.
+- **Interior is built by projecting the approved paintings** onto graybox geometry, with a
+  fixed camera per room. **No people are painted into room art:** every person is a movable
+  NPC sprite. Hall v8 clean plates (people removed) are the hall's source.
+- **Bros are sized to the furniture** (counter at waist height), not to the painted patrons.
+- **North wing v4 is approved.** The interior asset list is approved.
+- **The mirror corridor is its own screen** between the hall and the north wing.
+- **Battle cabinet placement:** two in the back row, one on the right wall.
+- **The three-pad DDR dance-off is playable:** a mini rhythm game. The player picks one bro
+  to play, and the other two are game-controlled. Doing well, they still look dumb dancing
+  cringily to the hits; doing badly, they look even more ridiculous. Songs named by the
+  author: 90s/00s hits (Khia, Madonna, Christina Aguilera, Beyonce).
+- Do not relitigate.

@@ -191,22 +191,20 @@
       "reward_id": "absinthium_taproom_discovery",
       "source_interaction": "absinthium_taproom_curtain",
       "effect": "reveal_transition_only_destination_owns_access_and_rewards"
-    },
-    {
-      "reward_id": "arcade_focus",
-      "source": "win_any_twisted_arcade_game",
-      "effect": "plus_one_timing_window_for_next_arcade_game",
-      "duration_minutes": 10
     }
   ],
   "shop_economics": {
     "design_intent": "A transparent tourist-trap money sink that remains funny and optional outside explicit quest interactions.",
     "base_exchange": "1 SOV equals 1 Absinthe Arcade Token",
     "machine_costs": {
-      "standard_cabinet": 1,
+      "frogger_existential_edition": 2,
+      "street_fighter_identity_crisis": 3,
+      "kebab_kombat": 4,
       "claw_machine": 5,
-      "restroom_unlock_total": 3
+      "restroom_unlock_total": 3,
+      "ddr_dance_off": "NEEDS AUTHOR RULING"
     },
-    "balance_rule": "Do not require random repeated spending for the relic once the service-note strategy has been discovered."
+    "balance_rule": "Do not require random repeated spending for the relic once the service-note strategy has been discovered.",
+    "payout_rule": "Arcade fights and the dance-off pay arcade tickets, never SOVS. Tickets are spent only at the Prize Redemption counter on junk prizes (author ruling 2026-11-09)."
   }
 }
