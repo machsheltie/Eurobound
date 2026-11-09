@@ -1,4 +1,4 @@
-"""Redraw Bradley's HORNETS chest lettering on the diagonal frames.
+"""Clear (--blank, the author ruling) or redraw Bradley's HORNETS chest lettering on the diagonal frames.
 SE shows the start of the word (HORN...), SW the end (...NETS): the word wraps round the torso.
 Anchored on the jersey number '1' (median per animation, so breathing doesn't jitter the letters)."""
 import sys, glob, os, re, numpy as np
@@ -8,6 +8,7 @@ F={'H':["1.1","1.1","111","1.1","1.1"],'O':["111","1.1","1.1","1.1","111"],'R':[
    'N':["1..1","11.1","1.11","1..1","1..1"],'E':["111","1..","11.","1..","111"],'T':["111",".1.",".1.",".1.",".1."],'S':["111","1..","111","..1","111"]}
 WHITE=(249,241,238,255); OUT=(19,67,146,255)
 src,dst=sys.argv[1],sys.argv[2]
+BLANK="--blank" in sys.argv  # author 2026-11-09: diagonals show no chest text at all
 def word_mask(word):
     w=sum(len(F[c][0]) for c in word)+len(word)+1
     m=np.zeros((7,w),bool); x=1
@@ -43,7 +44,7 @@ for g,fs in groups.items():
     for f,t in zip(fs,tops):
         nt=med if t is None else int(np.clip(t,med-1,med+1))
         a=imgs[f]; ai=a.astype(int); r,gc,b,al=[ai[...,i] for i in range(4)]
-        teal=(al>0)&(r<60)&(gc>100)&(b>120)
+        teal=(al>0)&(r<45)&(gc>100)&(b>120)&(gc>=0.70*b)  # excludes the blue letter outline shades
         y0=nt-8
         los=[];his=[]
         for y in range(nt,nt+5):
@@ -55,6 +56,8 @@ for g,fs in groups.items():
             if len(tx)==0: continue
             for x in range(LO+1,HI):
                 if not teal[y,x]: a[y,x]=a[y,tx[np.argmin(np.abs(tx-x))]]
+        if BLANK:
+            Image.fromarray(a).save(os.path.join(dst,os.path.basename(f))); print(os.path.basename(f),'cleared'); continue
         x0 = LO if key=="se" else max(LO, (LO+HI)//2 - WM.shape[1]//2)
         for yy in range(7):
             for xx in range(WM.shape[1]):
