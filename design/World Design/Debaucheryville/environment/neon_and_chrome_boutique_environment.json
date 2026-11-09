@@ -1,0 +1,134 @@
+{
+  "location_id": "debaucheryville_shop_neon_chrome_01",
+  "ambient_audio": {
+    "base_layers": [
+      "aspiring VIP customers ambience",
+      "premium mannequins ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "ncb_storefront",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "ncb_eyewear",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "ncb_footwear",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "ncb_premium",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "ncb_fitting",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "ncb_simulation",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "ncb_counter",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "ncb_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "ncb_led_glasses_effect",
+      "description": "Cool Factor and club-light interaction."
+    },
+    {
+      "effect_id": "ncb_strobe_shades_effect",
+      "description": "Strong visual-hazard resistance and status."
+    },
+    {
+      "effect_id": "ncb_chrome_shoes_effect",
+      "description": "Dance and Cool Factor bonus."
+    },
+    {
+      "effect_id": "ncb_premium_wrist_cuff_effect",
+      "description": "Status reactions only; never bypasses club gate."
+    },
+    {
+      "effect_id": "ncb_glow_harness_effect",
+      "description": "Visibility and crowd-presence bonus."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "full service and named NPCs"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "documented denial or alternate crowd"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet neon reflections"
+    ],
+    "interior": [
+      "threshold-only weather read-through"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "neon_and_chrome_boutique_fx",
+      "nodes": [
+        "ncb_storefront",
+        "ncb_eyewear",
+        "ncb_footwear",
+        "ncb_premium",
+        "ncb_fitting",
+        "ncb_simulation",
+        "ncb_counter",
+        "ncb_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "chrome",
+      "purple neon",
+      "hot pink",
+      "showroom black"
+    ],
+    "emission_mask": "neon_and_chrome_boutique_masks",
+    "readability": "interaction landmarks brighter than clutter"
+  },
+  "environmental_storytelling": [
+    "Chrome glass frontage with fully styled mannequins.",
+    "Strobe shades and programmable LED glasses.",
+    "Club shoes and status footwear.",
+    "Locked stock opened by Velvet stage-7 completion.",
+    "Mirror and equipment preview.",
+    "Safe preview of club gear effects.",
+    "Checkout and VIP Potential assessment.",
+    "Returns to the neon street."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced-flash simulation",
+      "Low-reflection chrome",
+      "Text equipment comparisons",
+      "No-color-only stock tiers"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

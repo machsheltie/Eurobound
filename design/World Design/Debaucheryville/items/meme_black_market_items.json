@@ -1,0 +1,71 @@
+{
+  "location_id": "debaucheryville_museum_meme_black_market_01",
+  "item_category": "Hidden Vendor / Meme Economy / Sidequest Hub",
+  "items": [
+    {
+      "item_id": "mbm_dancing_baby_charm",
+      "display_name": "Dancing Baby Charm",
+      "item_type": "meme_trinket",
+      "price": 12,
+      "effect": "Small Charm boost; occasional cringe reaction.",
+      "acquisition": "MemeLord.exe inventory."
+    },
+    {
+      "item_id": "mbm_badger_loop",
+      "display_name": "Infinite Badger Loop",
+      "item_type": "meme_trinket",
+      "price": 10,
+      "effect": "Distracts one minor enemy; may annoy allies.",
+      "acquisition": "MemeLord.exe inventory."
+    },
+    {
+      "item_id": "mbm_corrupted_gif",
+      "display_name": "Corrupted Reaction GIF",
+      "item_type": "consumable",
+      "price": 8,
+      "effect": "Random social status effect.",
+      "acquisition": "MemeLord.exe inventory."
+    },
+    {
+      "item_id": "mbm_away_message_icon",
+      "display_name": "AIM Away-Message Icon",
+      "item_type": "lore_collectible",
+      "price": 0,
+      "effect": "Adds cursed-web lore and mastery.",
+      "acquisition": "Away-message altar."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "Internet Museum entrance flags",
+      "ownership": "external"
+    },
+    {
+      "reference": "ICQ darkweb quest state",
+      "ownership": "external"
+    },
+    {
+      "reference": "Fistø/Lord Pilsner lore",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "meme_black_market_entrance_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "meme_summon_complete",
+      "type": "state"
+    },
+    {
+      "reward_id": "meme_mastery_tier",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies another currency",
+    "price_confirmation_required": true,
+    "time_modifiers": "Apply only documented time-based changes"
+  }
+}

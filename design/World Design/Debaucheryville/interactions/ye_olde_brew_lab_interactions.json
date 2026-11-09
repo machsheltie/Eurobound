@@ -1,0 +1,271 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+  "events": [
+    {
+      "event_id": "ybl_taste",
+      "display_name": "Complete Taste Profile",
+      "trigger": {
+        "verb": "puzzle",
+        "node_id": "ybl_taste"
+      },
+      "requirements": [],
+      "results": [
+        "taste_profile_complete"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "ybl_algorithm",
+      "display_name": "Defeat Fermenting Algorithm",
+      "trigger": {
+        "verb": "battle",
+        "node_id": "ybl_algorithm"
+      },
+      "requirements": [
+        "taste_profile_complete"
+      ],
+      "results": [
+        "fermenting_algorithm_defeated"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "ybl_boss",
+      "display_name": "Defeat CryptoBro69 BrewBot",
+      "trigger": {
+        "verb": "battle",
+        "node_id": "ybl_brewbot"
+      },
+      "requirements": [
+        "fermenting_algorithm_defeated"
+      ],
+      "results": [
+        "brew_lab_challenge_complete"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "ybl_rewards",
+      "display_name": "Claim Tour Rewards",
+      "trigger": {
+        "verb": "claim",
+        "node_id": "ybl_service"
+      },
+      "requirements": [
+        "brew_lab_challenge_complete",
+        "brewery_tour_active",
+        "bottle_opener_keychain"
+      ],
+      "results": [
+        "grant_opener_ye_olde_brew_lab",
+        "grant_stamp_ye_olde_brew_lab",
+        "brew_lab_tour_rewards_granted",
+        "brew_lab_selfie_unlocked",
+        "check_four_stamp_completion"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "ybl_defer",
+      "display_name": "Record Pre-Tour Completion",
+      "trigger": {
+        "verb": "state",
+        "node_id": "ybl_service"
+      },
+      "requirements": [
+        "brew_lab_challenge_complete",
+        "not_brewery_tour_active"
+      ],
+      "results": [
+        "brew_lab_tour_rewards_deferred"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "ybl_buy",
+      "display_name": "Buy Blockchain Bock",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "ybl_service"
+      },
+      "requirements": [
+        "brew_lab_tour_rewards_granted"
+      ],
+      "results": [
+        "roll_price_13_to_23",
+        "purchase_beer_ye_olde_brew_lab"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    },
+    {
+      "event_id": "ybl_selfie",
+      "display_name": "Use Algorithm Archive",
+      "trigger": {
+        "verb": "selfie",
+        "node_id": "ybl_selfie"
+      },
+      "requirements": [
+        "brew_lab_selfie_unlocked"
+      ],
+      "results": [
+        "save_brew_lab_selfie"
+      ],
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "nfthuntdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "authoritative quest/item docs"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "ybl_taste",
+      "node_id": "ybl_taste",
+      "verb": "puzzle",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ybl_algorithm",
+      "node_id": "ybl_algorithm",
+      "verb": "battle",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ybl_boss",
+      "node_id": "ybl_brewbot",
+      "verb": "battle",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ybl_rewards",
+      "node_id": "ybl_service",
+      "verb": "claim",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ybl_defer",
+      "node_id": "ybl_service",
+      "verb": "state",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ybl_buy",
+      "node_id": "ybl_service",
+      "verb": "purchase",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ybl_selfie",
+      "node_id": "ybl_selfie",
+      "verb": "selfie",
+      "states": [
+        "available",
+        "unavailable",
+        "completed",
+        "deferred_reward"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "brew_lab_entrance_discovered",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "brew_lab_access_unlocked",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "brew_lab_challenge_complete",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "brew_lab_tour_rewards_deferred",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "brew_lab_tour_rewards_granted",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "brew_lab_selfie_unlocked",
+      "change": "Persist and present authored tour/challenge state."
+    },
+    {
+      "state": "debaucheryville_brewery_tour_complete",
+      "change": "Persist and present authored tour/challenge state."
+    }
+  ],
+  "narrator_commentary": [
+    "Algorithm Verified",
+    "An L-shaped blue-lit brewery lab where taste profiles, blockchain screens and BrewBot automate bad judgment."
+  ]
+}

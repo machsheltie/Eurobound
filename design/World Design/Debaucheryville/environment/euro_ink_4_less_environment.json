@@ -1,0 +1,221 @@
+{
+  "location_id": "debaucheryville_oldtown_euro_ink_4_less_01",
+  
+  "ambient_audio": {
+    "background_music": "eastern_european_pop_radio_tinny.ogg",
+    "music_style": "licensed_free_euro_pop_slightly_too_loud",
+    "environmental_sounds": [
+      "tattoo_gun_buzzing_intermittent",
+      "fluorescent_light_hum",
+      "neon_sign_buzz",
+      "occasional_traffic_from_alley",
+      "muffled_bass_nearby_club",
+      "radio_static_occasional"
+    ],
+    "audio_transitions": {
+      "enter": "radio_swell_buzzing_stops_greeting",
+      "during_tattoo": "gun_buzzing_loop_viktor_humming",
+      "exit": "radio_fades_neon_buzz_prominent"
+    },
+    "tattoo_process_audio": {
+      "gun_start": "tattoo_gun_start.ogg",
+      "gun_loop": "tattoo_gun_loop.ogg",
+      "gun_stop": "tattoo_gun_stop.ogg",
+      "viktor_humming": "humming_euro_pop.ogg",
+      "pain_reaction": "muffled_grunt.ogg",
+      "flinch_sound": "sudden_movement.ogg"
+    },
+    "comedy_stingers": {
+      "duck_reveal": "record_scratch_internal.ogg",
+      "viktor_pride": "triumphant_horn_ironic.ogg",
+      "its_a_duck_line": "sad_trombone_subtle.ogg",
+      "lord_pilsner_denial": "heroic_swell_his_perspective.ogg",
+      "payment": "cash_register_satisfied_grunt.ogg"
+    }
+  },
+  
+  "status_effects": {
+    "environmental_buffs": [],
+    "atmospheric_debuffs": [],
+    "location_specific_states": {
+      "tattoo_in_progress": {
+        "trigger": "mini_game_start",
+        "effects": {
+          "cannot_exit": true,
+          "dialogue_limited": true
+        }
+      },
+      "post_tattoo_pride": {
+        "trigger": "tattoo_acquired",
+        "duration_hours": 24,
+        "effects": {
+          "bravado_modifier": 2,
+          "shows_tattoo_to_everyone": true
+        }
+      }
+    },
+    "recovery_options": []
+  },
+  
+  "couchsurf_integration": {
+    "available": false,
+    "reason": "commercial_establishment_not_residential"
+  },
+  
+  "time_of_day_changes": {
+    "morning": {
+      "open": false,
+      "lighting": "natural_through_window",
+      "viktor_status": "sleeping_in_back_room"
+    },
+    "afternoon": {
+      "open": true,
+      "lighting": "fluorescent_harsh",
+      "activity_level": "slow",
+      "viktor_status": "available_eager"
+    },
+    "evening": {
+      "open": true,
+      "lighting": "fluorescent_plus_neon",
+      "activity_level": "moderate",
+      "viktor_status": "warmed_up"
+    },
+    "night": {
+      "open": true,
+      "lighting": "neon_dominant_fluorescent_flickering",
+      "activity_level": "peak",
+      "viktor_status": "in_his_element",
+      "special_notes": "Post-club tourists make impulsive decisions"
+    },
+    "late_night": {
+      "open": true,
+      "lighting": "neon_only_fluorescent_off",
+      "activity_level": "drunk_tourists",
+      "viktor_status": "still_enthusiastic",
+      "closes_at": "02:00"
+    }
+  },
+  
+  "weather_effects": {
+    "rain": {
+      "effect": "more_walk_ins_seeking_shelter",
+      "audio": "rain_on_window"
+    },
+    "clear": {
+      "effect": "normal_traffic"
+    }
+  },
+  
+  "particle_effects": {
+    "dust_motes": {
+      "type": "ambient",
+      "location": "in_fluorescent_light_beams",
+      "density": "sparse",
+      "color": "#F5DEB3",
+      "movement": "slow_drift"
+    },
+    "cigarette_smoke": {
+      "type": "periodic",
+      "source": "back_room_or_viktor",
+      "trigger": "random_interval",
+      "color": "#C0C0C0",
+      "drift_direction": "toward_vent"
+    },
+    "autoclave_steam": {
+      "type": "periodic",
+      "source": "autoclave_machine",
+      "trigger": "for_show_rarely_used",
+      "color": "#FFFFFF",
+      "duration_seconds": 3
+    }
+  },
+  
+  "lighting_system": {
+    "primary_fluorescent": {
+      "color": "#F0F8FF",
+      "intensity": 0.9,
+      "flicker_pattern": {
+        "type": "random",
+        "interval_seconds": "15_to_45",
+        "duration": "0.1_to_0.5_seconds"
+      },
+      "coverage": "main_room"
+    },
+    "neon_signage": {
+      "main_sign": {
+        "color": "#FF1493",
+        "intensity_range": "0.7_to_1.0",
+        "flicker_pattern": {
+          "type": "character_specific",
+          "character": "4",
+          "frequency": "random_3_to_8_seconds"
+        }
+      },
+      "beer_sign": {
+        "colors": ["#FF1493", "#7FFF00"],
+        "intensity": 0.8,
+        "flicker": "subtle_constant"
+      }
+    },
+    "work_lamp": {
+      "type": "spotlight",
+      "color": "#FFFFFF",
+      "intensity": 1.0,
+      "coverage": "tattoo_chair_area",
+      "active_during": "tattooing"
+    },
+    "night_mode": {
+      "fluorescent": "off_or_minimal",
+      "neon": "dominant",
+      "atmosphere": "seedy_authentic"
+    }
+  },
+  
+  "environmental_storytelling": {
+    "permanent_details": [
+      {
+        "element": "misspelled_hygenic_sign",
+        "description": "Window sticker says 'HYGENIC' - misspelled but confident",
+        "location": "front_window"
+      },
+      {
+        "element": "expired_license",
+        "description": "License on wall clearly printed at home, expired 2019",
+        "location": "reception_area"
+      },
+      {
+        "element": "wall_of_uncertain_fame",
+        "description": "Customer photos with forced smiles and hidden tattoos",
+        "location": "waiting_area"
+      },
+      {
+        "element": "duct_taped_chair",
+        "description": "Tattoo chair held together with duct tape, still functional",
+        "location": "tattoo_station"
+      },
+      {
+        "element": "clock_stuck_420",
+        "description": "Wall clock frozen at 4:20, unintentionally",
+        "location": "waiting_area"
+      }
+    ],
+    "dynamic_details": [
+      {
+        "element": "fresh_duck_on_flash_wall",
+        "description": "After LP's tattoo, Viktor adds 'Lord Pilsner Special' to flash art",
+        "visibility": "after_tattoo_acquired"
+      },
+      {
+        "element": "lp_photo_on_wall",
+        "description": "Lord Pilsner's photo added to 'Wall of Fame'",
+        "visibility": "after_tattoo_acquired"
+      }
+    ]
+  },
+  
+  "smell_descriptions": {
+    "primary": "disinfectant_over_something_else",
+    "secondary": ["cheap_cologne", "cigarette_smoke", "ink", "anxiety"],
+    "narrative_use": "Adds to sketchy-but-trying atmosphere"
+  }
+}

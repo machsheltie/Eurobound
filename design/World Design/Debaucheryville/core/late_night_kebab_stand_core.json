@@ -1,0 +1,81 @@
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "display_name": "Late-Night Kebab Stand",
+  "satirical_subtitle": "Mr. Chadz Kebabs: Open After Better Judgment Closes",
+  "world": "Debaucheryville",
+  "zone": "Velvet Alley",
+  "location_type": "Food Vendor / Status Recovery / Secret-Entrance Parent",
+  "sub_types": [
+    "vendor or micro-location",
+    "quest integration"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/Late-Night Kebab Stand.md"
+  ],
+  "access": {
+    "hours": "24/7; peak 22:00-06:00",
+    "entry_requirements": [
+      "Always accessible"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "lks_exit_alley",
+      "destination_id": "debaucheryville_velvet_alley",
+      "from_node": "lks_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "lks_exit_grease_shrine",
+      "destination_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+      "from_node": "lks_crawlspace",
+      "condition": "grease_trap_shrine_access_window_open"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Mr. Chadz Cart -> Kebab Menu -> Chadz Counter -> Consumption Spot -> Grease Shrine Crawlspace -> Velvet Alley Exit",
+    "landmarks": [
+      "Mr. Chadz Cart",
+      "Kebab Menu",
+      "Chadz Counter",
+      "Consumption Spot",
+      "Grease Shrine Crawlspace",
+      "Velvet Alley Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_velvet_alley owns space beyond lks_exit.",
+      "Destination debaucheryville_kebab_alley_grease_trap_shrine_01 owns space beyond lks_crawlspace."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A fluorescent grease beacon wedged between nightclub fallout and a chain-link fence."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "fluorescent white",
+      "grease amber",
+      "chili red",
+      "alley cyan"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Mr. Chadz Kebabs: Open After Better Judgment Closes",
+    "contrast": "A fluorescent grease beacon wedged between nightclub fallout and a chain-link fence."
+  },
+  "state_tracking": {
+    "grease_trap_shrine_crawlspace_discovered": false,
+    "grease_trap_shrine_access_window_open": false,
+    "late_kebab_status_menu_active": false,
+    "great_doner_debate_kebab_sampled": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "late_night_kebab_stand_scene",
+      "late_night_kebab_stand_characters",
+      "late_night_kebab_stand_ui"
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  "ambient_audio": {
+    "base_layers": [
+      "club patrons ambience",
+      "booth influencers ambience",
+      "dance-floor crowd ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "vcc_alley",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "vcc_bouncer_gate",
+        "cue": "gate_loop"
+      },
+      {
+        "node_id": "vcc_dance_floor",
+        "cue": "social_loop"
+      },
+      {
+        "node_id": "vcc_dj_dais",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "vcc_booths",
+        "cue": "social_loop"
+      },
+      {
+        "node_id": "vcc_bar",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "vcc_vip_path",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "vcc_lab_path",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "vcc_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "vcc_house_drink_effect",
+      "description": "Drunk status and club reaction."
+    },
+    {
+      "effect_id": "vcc_flyer_stack_effect",
+      "description": "External flyer quest object."
+    },
+    {
+      "effect_id": "vcc_vip_wristbands_effect",
+      "description": "Visible quest prop; does not itself complete entry."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "full service and named NPCs"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "documented denial or alternate crowd"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet neon reflections"
+    ],
+    "interior": [
+      "threshold-only weather read-through"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "velvet_curtain_club_fx",
+      "nodes": [
+        "vcc_alley",
+        "vcc_bouncer_gate",
+        "vcc_dance_floor",
+        "vcc_dj_dais",
+        "vcc_booths",
+        "vcc_bar",
+        "vcc_vip_path",
+        "vcc_lab_path",
+        "vcc_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "deep burgundy",
+      "velvet black",
+      "cheap gold",
+      "LED magenta"
+    ],
+    "emission_mask": "velvet_curtain_club_masks",
+    "readability": "interaction landmarks brighter than clutter"
+  },
+  "environmental_storytelling": [
+    "Graffiti lane, dumpster mural and rope checkpoint.",
+    "Tomáš and Marek guard the bass-pulsing curtain.",
+    "Burgundy fog beneath vape-pen chandeliers.",
+    "DJ platform and club audio landmark.",
+    "Semicircular social and quest seating.",
+    "Drink service and patron reactions.",
+    "Glitter trail to STAFF ONLY curtain and Bravado gate.",
+    "Service route to QR pad and basement transition.",
+    "Returns through the velvet curtain."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced fog",
+      "Reduced flash",
+      "Captioned bass/event cues",
+      "High-contrast exits and child doors"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

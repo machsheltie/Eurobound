@@ -1,0 +1,72 @@
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "item_category": "currency, barter, contracts and quest artifacts",
+  "items": [
+    {
+      "item_id": "item_vip_wristband_png",
+      "display_name": "VIP Wristband PNG",
+      "item_type": "unique_quest_collectible",
+      "price": null,
+      "effect": "Sets vip_wristband_png_obtained; third Debaucheryville NFT artifact.",
+      "acquisition": "Inspect the Shadow Ledger after starting the NFT hunt."
+    },
+    {
+      "item_id": "se_currency_bundle",
+      "display_name": "Mixed Currency Bundle",
+      "item_type": "exchange_input",
+      "price": null,
+      "effect": "Converted using the current split-flap rate.",
+      "acquisition": "External inventory reference."
+    },
+    {
+      "item_id": "se_shadow_contract",
+      "display_name": "Shadow Contract",
+      "item_type": "quest_document",
+      "price": null,
+      "effect": "Binds a delayed external consequence and notoriety change.",
+      "acquisition": "Accepted at the contract desk."
+    },
+    {
+      "item_id": "se_counterfeit_charm",
+      "display_name": "Counterfeit Lucky Charm",
+      "item_type": "barter_stock",
+      "price": "variable",
+      "effect": "Minor luck with an equal chance of notoriety.",
+      "acquisition": "Barter window stock."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "item_pixelated_kebab_monkey (flavor image only; never awarded here)",
+      "ownership": "external authoritative item/quest source"
+    },
+    {
+      "reference": "bottle_opener_keychain",
+      "ownership": "external authoritative item/quest source"
+    },
+    {
+      "reference": "external currencies and barter goods",
+      "ownership": "external authoritative item/quest source"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "three_crown_route_discovered",
+      "type": "location_referral"
+    },
+    {
+      "reward_id": "shadow_exchange_notoriety_change",
+      "type": "reputation_state"
+    }
+  ],
+  "shop_economics": {
+    "currencies": [
+      "Sovs",
+      "external city currencies",
+      "barter value"
+    ],
+    "pricing_model": "live exchange rates plus negotiated barter",
+    "confirmation_required": true,
+    "premium_stock_flag": "shadow_exchange_premium_stock_unlocked"
+  }
+}

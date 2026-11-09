@@ -1,0 +1,167 @@
+{
+  "location_id": "sinfonia_imperial_opera_house_plaza_01",
+  
+  "sprite_sheets": {
+    "main_tileset": {
+      "file": "opera_house_plaza_tileset.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "sections": {
+        "floor_tiles": {
+          "cobblestone_base": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "cobblestone_worn": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "cobblestone_wet": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "performance_circle": {"x": 192, "y": 0, "width": 32, "height": 32}
+        },
+        "building_facades": {
+          "opera_column_base": {"x": 0, "y": 32, "width": 64, "height": 64},
+          "baroque_wall": {"x": 192, "y": 32, "width": 64, "height": 64},
+          "cafe_facade": {"x": 384, "y": 32, "width": 64, "height": 64}
+        },
+        "decorations": {
+          "gas_lamp": {"x": 0, "y": 96, "width": 32, "height": 64},
+          "bench": {"x": 64, "y": 96, "width": 96, "height": 32}
+        }
+      }
+    },
+    
+    "hans_jurgen": {
+      "file": "hans_jurgen_fiaker.png",
+      "dimensions": {"width": 512, "height": 512},
+      "states": {
+        "idle_drunk": {"x": 128, "y": 0, "width": 64, "height": 96},
+        "panic": {
+          "frames": 8,
+          "start": {"x": 0, "y": 96},
+          "size": {"width": 64, "height": 96},
+          "timing": {"fps": 8, "loop": true}
+        },
+        "relieved": {"x": 128, "y": 192, "width": 64, "height": 96}
+      }
+    },
+    
+    "gustav": {
+      "file": "gustav_horse.png",
+      "dimensions": {"width": 512, "height": 384},
+      "states": {
+        "standing": {"x": 0, "y": 0, "width": 128, "height": 96},
+        "judgmental_stare": {
+          "frames": 4,
+          "start": {"x": 0, "y": 96},
+          "size": {"width": 128, "height": 96},
+          "timing": {"total_seconds": 4, "hold_frame_2": 1.0}
+        },
+        "trot": {
+          "frames": 6,
+          "start": {"x": 0, "y": 192},
+          "size": {"width": 128, "height": 96},
+          "timing": {"fps": 8, "loop": true}
+        }
+      }
+    },
+    
+    "gustav_cape": {
+      "file": "gustav_horse_opera_cape.png",
+      "dimensions": {"width": 512, "height": 384},
+      "states": {
+        "standing_with_cape": {"x": 0, "y": 0, "width": 128, "height": 96},
+        "iconic_pose": {"x": 0, "y": 160, "width": 192, "height": 128}
+      }
+    },
+    
+    "landmarks": {
+      "file": "opera_house_plaza_landmarks.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "elements": {
+        "neptune_fountain": {"x": 0, "y": 0, "width": 256, "height": 192},
+        "opera_facade": {"x": 0, "y": 352, "width": 512, "height": 160}
+      }
+    },
+    
+    "effects": {
+      "file": "opera_house_plaza_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "gas_lamp_glow": {"x": 0, "y": 0, "width": 64, "height": 64},
+        "pigeon_standing": {"x": 0, "y": 64, "width": 24, "height": 24},
+        "pigeon_flying": {
+          "frames": 4,
+          "start": {"x": 72, "y": 64},
+          "size": {"width": 32, "height": 24}
+        }
+      }
+    },
+    
+    "npcs": {
+      "file": "opera_house_plaza_npcs.png",
+      "dimensions": {"width": 512, "height": 384},
+      "characters": {
+        "opera_usher": {"x": 0, "y": 0, "width": 48, "height": 96},
+        "cafe_maitre_d": {"x": 192, "y": 0, "width": 48, "height": 96},
+        "street_performer": {"x": 384, "y": 0, "width": 48, "height": 96},
+        "pigeon_lady": {"x": 432, "y": 96, "width": 48, "height": 96}
+      }
+    },
+    
+    "quest": {
+      "file": "opera_house_plaza_quest.png",
+      "dimensions": {"width": 256, "height": 256},
+      "elements": {
+        "table_intact": {"x": 0, "y": 0, "width": 64, "height": 48},
+        "table_destroyed": {"x": 128, "y": 0, "width": 64, "height": 48},
+        "damage_counter_bg": {"x": 64, "y": 48, "width": 96, "height": 24}
+      }
+    }
+  },
+  
+  "lighting": {
+    "ambient": {
+      "day": {"color": "#FFFFFF", "intensity": 0.9},
+      "evening": {"color": "#FFD700", "intensity": 0.7},
+      "night": {"color": "#4169E1", "intensity": 0.4}
+    },
+    "point_lights": [
+      {"id": "gas_lamp_1", "position": {"x": 120, "y": 200}, "color": "#FFD700", "radius": 48, "flicker": true},
+      {"id": "gas_lamp_2", "position": {"x": 280, "y": 200}, "color": "#FFD700", "radius": 48, "flicker": true},
+      {"id": "opera_spotlights", "position": {"x": 200, "y": 64}, "color": "#FFFAFA", "radius": 96, "time": "evening"}
+    ]
+  },
+  
+  "animations": {
+    "fountain_water": {"duration": 4, "frames": 8, "loop": true},
+    "hans_panic": {"duration": 1, "frames": 8, "loop": true, "audio": "panic_violin_tremolo.ogg"},
+    "gustav_stare": {"duration": 4, "frames": 4, "audio": "single_low_cello_note.ogg"},
+    "pigeon_scatter": {"duration": 0.5, "frames": 4, "audio": "pigeon_wings_mass_takeoff.ogg"}
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {"id": "plaza_main", "includes": ["tileset", "landmarks"], "max_size": 2048},
+      {"id": "plaza_characters", "includes": ["hans_jurgen", "gustav", "npcs"], "max_size": 2048},
+      {"id": "plaza_effects", "includes": ["effects", "quest"], "max_size": 1024}
+    ],
+    "performance": {
+      "max_draw_calls": 40,
+      "max_memory_mb": 64,
+      "max_particles": 60,
+      "target_fps": 60
+    }
+  },
+  
+  "collision": {
+    "walkable": ["cobblestone_base", "cobblestone_worn", "performance_circle"],
+    "blocked": ["opera_column_base", "baroque_wall", "fountain"],
+    "interactive_zones": [
+      {"id": "fountain", "bounds": {"x": 160, "y": 96, "width": 80, "height": 64}},
+      {"id": "fiaker_queue", "bounds": {"x": 280, "y": 160, "width": 64, "height": 128}},
+      {"id": "cafe_terrace", "bounds": {"x": 32, "y": 224, "width": 96, "height": 64}},
+      {"id": "performer", "bounds": {"x": 160, "y": 288, "width": 48, "height": 48}}
+    ],
+    "spawn_points": [
+      {"npc": "hans_jurgen", "position": {"x": 296, "y": 192}},
+      {"npc": "opera_usher", "position": {"x": 200, "y": 80}},
+      {"npc": "cafe_maitre_d", "position": {"x": 64, "y": 240}},
+      {"npc": "performer", "position": {"x": 176, "y": 304}},
+      {"npc": "pigeon_lady", "position": {"x": 144, "y": 160}}
+    ]
+  }
+}

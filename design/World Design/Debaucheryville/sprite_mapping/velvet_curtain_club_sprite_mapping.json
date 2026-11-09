@@ -1,0 +1,300 @@
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "velvet_curtain_club_environment",
+      "atlas": "velvet_curtain_club_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "velvet_curtain_club_exterior",
+          "filename": "velvet_curtain_club_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "vcc_alley"
+        },
+        {
+          "asset_id": "velvet_curtain_club_interior",
+          "filename": "velvet_curtain_club_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "vcc_bouncer_gate"
+        },
+        {
+          "asset_id": "velvet_curtain_club_node_vcc_bouncer_gate",
+          "filename": "velvet_curtain_club_vcc_bouncer_gate.png",
+          "role": "gate landmark",
+          "node_id": "vcc_bouncer_gate"
+        },
+        {
+          "asset_id": "velvet_curtain_club_node_vcc_dance_floor",
+          "filename": "velvet_curtain_club_vcc_dance_floor.png",
+          "role": "social landmark",
+          "node_id": "vcc_dance_floor"
+        },
+        {
+          "asset_id": "velvet_curtain_club_node_vcc_dj_dais",
+          "filename": "velvet_curtain_club_vcc_dj_dais.png",
+          "role": "interaction landmark",
+          "node_id": "vcc_dj_dais"
+        },
+        {
+          "asset_id": "velvet_curtain_club_node_vcc_booths",
+          "filename": "velvet_curtain_club_vcc_booths.png",
+          "role": "social landmark",
+          "node_id": "vcc_booths"
+        },
+        {
+          "asset_id": "velvet_curtain_club_node_vcc_bar",
+          "filename": "velvet_curtain_club_vcc_bar.png",
+          "role": "service landmark",
+          "node_id": "vcc_bar"
+        },
+        {
+          "asset_id": "velvet_curtain_club_node_vcc_vip_path",
+          "filename": "velvet_curtain_club_vcc_vip_path.png",
+          "role": "transition landmark",
+          "node_id": "vcc_vip_path"
+        },
+        {
+          "asset_id": "velvet_curtain_club_node_vcc_lab_path",
+          "filename": "velvet_curtain_club_vcc_lab_path.png",
+          "role": "transition landmark",
+          "node_id": "vcc_lab_path"
+        },
+        {
+          "asset_id": "velvet_curtain_club_node_vcc_exit",
+          "filename": "velvet_curtain_club_vcc_exit.png",
+          "role": "exit landmark",
+          "node_id": "vcc_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "velvet_curtain_club_characters",
+      "atlas": "velvet_curtain_club_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "velvet_curtain_club_npc_vcc_npc_tomas",
+          "filename": "velvet_curtain_club_vcc_npc_tomas.png",
+          "role": "character sprite",
+          "node_id": "vcc_bouncer_gate"
+        },
+        {
+          "asset_id": "velvet_curtain_club_npc_vcc_npc_marek",
+          "filename": "velvet_curtain_club_vcc_npc_marek.png",
+          "role": "character sprite",
+          "node_id": "vcc_bouncer_gate"
+        },
+        {
+          "asset_id": "velvet_curtain_club_npc_vcc_npc_vanessa",
+          "filename": "velvet_curtain_club_vcc_npc_vanessa.png",
+          "role": "character sprite",
+          "node_id": "vcc_booths"
+        },
+        {
+          "asset_id": "velvet_curtain_club_npc_vcc_npc_dj",
+          "filename": "velvet_curtain_club_vcc_npc_dj.png",
+          "role": "character sprite",
+          "node_id": "vcc_dj_dais"
+        }
+      ]
+    },
+    {
+      "group_id": "velvet_curtain_club_ui_fx",
+      "atlas": "velvet_curtain_club_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "velvet_curtain_club_item_vcc_house_drink",
+          "filename": "velvet_curtain_club_vcc_house_drink.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_item_vcc_flyer_stack",
+          "filename": "velvet_curtain_club_vcc_flyer_stack.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_item_vcc_vip_wristbands",
+          "filename": "velvet_curtain_club_vcc_vip_wristbands.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_ui",
+          "filename": "velvet_curtain_club_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_fx",
+          "filename": "velvet_curtain_club_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_masks",
+          "filename": "velvet_curtain_club_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "vcc_npc_tomas_standard",
+      "asset_id": "velvet_curtain_club_npc_vcc_npc_tomas",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "vcc_npc_marek_standard",
+      "asset_id": "velvet_curtain_club_npc_vcc_npc_marek",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "vcc_npc_vanessa_standard",
+      "asset_id": "velvet_curtain_club_npc_vcc_npc_vanessa",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "vcc_npc_dj_standard",
+      "asset_id": "velvet_curtain_club_npc_vcc_npc_dj",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "velvet_curtain_club_lighting",
+      "mask_asset": "velvet_curtain_club_masks",
+      "nodes": [
+        "vcc_alley",
+        "vcc_bouncer_gate",
+        "vcc_dance_floor",
+        "vcc_dj_dais",
+        "vcc_booths",
+        "vcc_bar",
+        "vcc_vip_path",
+        "vcc_lab_path",
+        "vcc_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "vcc_exit_alley",
+      "destination_id": "debaucheryville_opera_ruins_alley",
+      "from_node": "vcc_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "vcc_exit_vip_stall",
+      "destination_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+      "from_node": "vcc_vip_path",
+      "condition": "velvet_vip_stall_access_unlocked"
+    },
+    {
+      "exit_id": "vcc_exit_brew_lab",
+      "destination_id": "debaucheryville_velvetcurtain_brew_lab_01",
+      "from_node": "vcc_lab_path",
+      "condition": "brew_lab_access_unlocked"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "vcc_bouncer",
+      "node_id": "vcc_bouncer_gate",
+      "highlight_asset": "velvet_curtain_club_node_vcc_bouncer_gate"
+    },
+    {
+      "interaction_id": "vcc_enter",
+      "node_id": "vcc_bouncer_gate",
+      "highlight_asset": "velvet_curtain_club_node_vcc_bouncer_gate"
+    },
+    {
+      "interaction_id": "vcc_social",
+      "node_id": "vcc_booths",
+      "highlight_asset": "velvet_curtain_club_node_vcc_booths"
+    },
+    {
+      "interaction_id": "vcc_flyer",
+      "node_id": "vcc_bar",
+      "highlight_asset": "velvet_curtain_club_node_vcc_bar"
+    },
+    {
+      "interaction_id": "vcc_discover_vip",
+      "node_id": "vcc_vip_path",
+      "highlight_asset": "velvet_curtain_club_node_vcc_vip_path"
+    },
+    {
+      "interaction_id": "vcc_unlock_vip",
+      "node_id": "vcc_vip_path",
+      "highlight_asset": "velvet_curtain_club_node_vcc_vip_path"
+    },
+    {
+      "interaction_id": "vcc_discover_lab",
+      "node_id": "vcc_lab_path",
+      "highlight_asset": "velvet_curtain_club_node_vcc_lab_path"
+    },
+    {
+      "interaction_id": "vcc_unlock_lab",
+      "node_id": "vcc_lab_path",
+      "highlight_asset": "velvet_curtain_club_node_vcc_lab_path"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "velvet_curtain_club_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 12,
+    "reduced_fx_asset": "velvet_curtain_club_fx"
+  }
+}

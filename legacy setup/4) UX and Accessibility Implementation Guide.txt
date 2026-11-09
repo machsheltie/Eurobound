@@ -1,0 +1,26 @@
+UX & Accessibility Implementation Guide (NEW)
+Concrete VoiceOver strings, focus order, and rotor behaviors
+Dynamic text scaling tokens and max line-length rules
+High-contrast palette swatches + pass criteria
+Haptic event map (what vibrates, when, and how to disable)
+---
+IMPROVED VERSION (25% Enhancement)
+
+Baseline:
+- VoiceOver strings, rotor behaviors, and focus order locked before alpha.
+- Dynamic text scaling with font token system; enforce max line length rules.
+- High-contrast palettes tested in Sim Daltonism, Coblis, and manual greyscale mode.
+- Haptic event map with global toggle and OS-respect.
+
+Enhancements:
+- Accessibility onboarding screen at first launch (text size, high-contrast, haptics, reduced motion).
+- Automatic safe area and reach-zone adjustments for small vs. Max iPhones.
+- Reduced Motion mode disables shakes, rapid animations, and particle clutter.
+- Asset export pipeline step: automated colorblind simulation screenshot check before commit.
+---
+
+
+[CONTENT FROM PLAN ABOVE]
+
+
+[UPDATED with new risk mitigation, audio strategy, QA process, and App Store compliance fixes]

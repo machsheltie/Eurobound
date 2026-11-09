@@ -1,0 +1,288 @@
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-box/depth-card/billboard",
+  "production_label": "authoritative location sprite mapping",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal view",
+    "safe_area": "keep service prompts inside 90% frame"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "alpha": "straight",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "shadow_exchange_environment",
+      "atlas": "shadow_exchange_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "shadow_exchange_ext_alley",
+          "filename": "shadow_exchange_exterior_alley.png",
+          "role": "exterior hero layer",
+          "node_id": "se_alley_marker"
+        },
+        {
+          "asset_id": "shadow_exchange_int_cellar",
+          "filename": "shadow_exchange_interior_cellar.png",
+          "role": "interior painted faces",
+          "node_id": "se_exchange_counter"
+        },
+        {
+          "asset_id": "shadow_exchange_node_se_hidden_stair",
+          "filename": "shadow_exchange_se_hidden_stair.png",
+          "role": "transition landmark",
+          "node_id": "se_hidden_stair"
+        },
+        {
+          "asset_id": "shadow_exchange_node_se_exchange_counter",
+          "filename": "shadow_exchange_se_exchange_counter.png",
+          "role": "service landmark",
+          "node_id": "se_exchange_counter"
+        },
+        {
+          "asset_id": "shadow_exchange_node_se_barter_window",
+          "filename": "shadow_exchange_se_barter_window.png",
+          "role": "service landmark",
+          "node_id": "se_barter_window"
+        },
+        {
+          "asset_id": "shadow_exchange_node_se_contract_desk",
+          "filename": "shadow_exchange_se_contract_desk.png",
+          "role": "quest landmark",
+          "node_id": "se_contract_desk"
+        },
+        {
+          "asset_id": "shadow_exchange_node_se_premium_cage",
+          "filename": "shadow_exchange_se_premium_cage.png",
+          "role": "shop landmark",
+          "node_id": "se_premium_cage"
+        },
+        {
+          "asset_id": "shadow_exchange_node_se_cellar_exit",
+          "filename": "shadow_exchange_se_cellar_exit.png",
+          "role": "exit landmark",
+          "node_id": "se_cellar_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "shadow_exchange_characters",
+      "atlas": "shadow_exchange_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "shadow_exchange_npc_se_npc_exchange_broker",
+          "filename": "shadow_exchange_se_npc_exchange_broker.png",
+          "role": "character sprite",
+          "node_id": "se_exchange_counter"
+        },
+        {
+          "asset_id": "shadow_exchange_npc_se_npc_barter_clerk",
+          "filename": "shadow_exchange_se_npc_barter_clerk.png",
+          "role": "character sprite",
+          "node_id": "se_barter_window"
+        },
+        {
+          "asset_id": "shadow_exchange_npc_se_npc_contract_fixer",
+          "filename": "shadow_exchange_se_npc_contract_fixer.png",
+          "role": "character sprite",
+          "node_id": "se_contract_desk"
+        },
+        {
+          "asset_id": "shadow_exchange_npc_se_npc_cryptobro_ex",
+          "filename": "shadow_exchange_se_npc_cryptobro_ex.png",
+          "role": "character sprite",
+          "node_id": "se_premium_cage"
+        }
+      ]
+    },
+    {
+      "group_id": "shadow_exchange_ui_fx",
+      "atlas": "shadow_exchange_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "shadow_exchange_item_item_vip_wristband_png",
+          "filename": "shadow_exchange_item_vip_wristband_png_icon.png",
+          "role": "item/UI icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "shadow_exchange_item_se_currency_bundle",
+          "filename": "shadow_exchange_se_currency_bundle_icon.png",
+          "role": "item/UI icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "shadow_exchange_item_se_shadow_contract",
+          "filename": "shadow_exchange_se_shadow_contract_icon.png",
+          "role": "item/UI icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "shadow_exchange_item_se_counterfeit_charm",
+          "filename": "shadow_exchange_se_counterfeit_charm_icon.png",
+          "role": "item/UI icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "shadow_exchange_ui_service",
+          "filename": "shadow_exchange_service_ui.png",
+          "role": "exchange/barter UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "shadow_exchange_fx_atmosphere",
+          "filename": "shadow_exchange_atmosphere_fx.png",
+          "role": "smoke, UV and CRT overlays",
+          "node_id": null
+        },
+        {
+          "asset_id": "shadow_exchange_mask_emission",
+          "filename": "shadow_exchange_emission_masks.png",
+          "role": "lighting masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "se_npc_exchange_broker_service",
+      "asset_id": "shadow_exchange_npc_se_npc_exchange_broker",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    {
+      "sequence_id": "se_npc_barter_clerk_service",
+      "asset_id": "shadow_exchange_npc_se_npc_barter_clerk",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    {
+      "sequence_id": "se_npc_contract_fixer_service",
+      "asset_id": "shadow_exchange_npc_se_npc_contract_fixer",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8,
+      "loop": true
+    },
+    {
+      "sequence_id": "se_npc_cryptobro_ex_service",
+      "asset_id": "shadow_exchange_npc_se_npc_cryptobro_ex",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8,
+      "loop": true
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "se_uv_check",
+      "mask_asset": "shadow_exchange_mask_emission",
+      "nodes": [
+        "se_exchange_counter"
+      ]
+    },
+    {
+      "effect_id": "se_crt_glow",
+      "mask_asset": "shadow_exchange_mask_emission",
+      "nodes": [
+        "se_contract_desk"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "se_exit_old_town",
+      "destination_id": "debaucheryville_old_town_backstreets",
+      "from_node": "se_cellar_exit",
+      "condition": "always_after_discovery"
+    },
+    {
+      "exit_id": "se_referral_three_crown",
+      "destination_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+      "from_node": "se_cellar_exit",
+      "condition": "three_crown_route_discovered"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "se_find_candle_marker",
+      "node_id": "se_alley_marker",
+      "highlight_asset": "shadow_exchange_ext_alley"
+    },
+    {
+      "interaction_id": "se_convert_currency",
+      "node_id": "se_exchange_counter",
+      "highlight_asset": "shadow_exchange_node_se_exchange_counter"
+    },
+    {
+      "interaction_id": "se_barter_goods",
+      "node_id": "se_barter_window",
+      "highlight_asset": "shadow_exchange_node_se_barter_window"
+    },
+    {
+      "interaction_id": "se_accept_contract",
+      "node_id": "se_contract_desk",
+      "highlight_asset": "shadow_exchange_node_se_contract_desk"
+    },
+    {
+      "interaction_id": "se_inspect_ledger_nft",
+      "node_id": "se_contract_desk",
+      "highlight_asset": "shadow_exchange_node_se_contract_desk"
+    },
+    {
+      "interaction_id": "se_open_premium_stock",
+      "node_id": "se_premium_cage",
+      "highlight_asset": "shadow_exchange_node_se_premium_cage"
+    },
+    {
+      "interaction_id": "se_follow_three_crown_referral",
+      "node_id": "se_cellar_exit",
+      "highlight_asset": "shadow_exchange_node_se_cellar_exit"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "shadow_exchange_mask_emission",
+      "channels": {
+        "r": "signs",
+        "g": "screens",
+        "b": "UV accents",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "reduced_particles_asset": "shadow_exchange_fx_atmosphere",
+    "max_visible_characters": 8
+  }
+}

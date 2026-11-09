@@ -1,0 +1,93 @@
+{
+  "location_id": "debaucheryville_blockbuster_internet_museum_01",
+  "location_name": "Internet History Museum",
+  "npcs": [
+    {
+      "npc_id": "ihm_npc_curator",
+      "display_name": "Curator of the Cursed Web",
+      "role": "curator and exhibit guide",
+      "node": "ihm_lobby",
+      "schedule": "08:00-20:00",
+      "visual": "Museum blazer, lanyard and absolute seriousness about malware.",
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "ICQ events"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "ihm_npc_night_security",
+      "display_name": "Night Security Volunteer",
+      "role": "after-hours environmental role",
+      "node": "ihm_exterior",
+      "schedule": "quest-only",
+      "visual": "Old security vest and PalmPilot flashlight.",
+      "quest_bindings": [
+        "nfthuntdebaucheryville",
+        "ICQ events"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "internet_history_museum_ambient_1",
+      "display_name": "nostalgic visitors",
+      "spawn_nodes": [
+        "ihm_msn",
+        "ihm_imac_altar",
+        "ihm_vhs_shelf"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "internet_history_museum_ambient_2",
+      "display_name": "school group",
+      "spawn_nodes": [
+        "ihm_msn",
+        "ihm_imac_altar",
+        "ihm_vhs_shelf"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "internet_history_museum_ambient_3",
+      "display_name": "static silhouettes",
+      "spawn_nodes": [
+        "ihm_msn",
+        "ihm_imac_altar",
+        "ihm_vhs_shelf"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "ihm_npc_curator",
+      "node_id": "ihm_lobby",
+      "role": "curator and exhibit guide"
+    },
+    {
+      "npc_id": "ihm_npc_night_security",
+      "node_id": "ihm_exterior",
+      "role": "after-hours environmental role"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Do not overlap named NPC silhouettes",
+    "Reduce ambient count during quest scenes"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "location_id": "debaucheryville_hostel_midnight_checkout_01",
+  "events": [
+    {
+      "event_id": "hmc_check_in",
+      "display_name": "Choose Accommodation",
+      "trigger": {
+        "verb": "book",
+        "node_id": "hmc_reception"
+      },
+      "requirements": [],
+      "results": [
+        "hostel_checked_in"
+      ],
+      "quest_bindings": [
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "hmc_sleep",
+      "display_name": "Attempt to Sleep",
+      "trigger": {
+        "verb": "rest",
+        "node_id": "hmc_dorm"
+      },
+      "requirements": [
+        "hostel_checked_in"
+      ],
+      "results": [
+        "apply_room_quality",
+        "roll_roommate_event"
+      ],
+      "quest_bindings": [
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "hmc_confession",
+      "display_name": "Bunk Bed Confession",
+      "trigger": {
+        "verb": "talk",
+        "node_id": "hmc_bunk_confession"
+      },
+      "requirements": [
+        "nighttime"
+      ],
+      "results": [
+        "hostel_bond_active"
+      ],
+      "quest_bindings": [
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "hmc_kitchen_event",
+      "display_name": "Use Shared Kitchen",
+      "trigger": {
+        "verb": "use",
+        "node_id": "hmc_kitchen"
+      },
+      "requirements": [],
+      "results": [
+        "hostel_kitchen_event_complete"
+      ],
+      "quest_bindings": [
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "hmc_wifi",
+      "display_name": "Use Hostel Wi-Fi",
+      "trigger": {
+        "verb": "terminal",
+        "node_id": "hmc_lounge_wifi"
+      },
+      "requirements": [],
+      "results": [
+        "open_icq_bindings"
+      ],
+      "quest_bindings": [
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "hmc_check_in",
+      "node_id": "hmc_reception",
+      "verb": "book",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "hmc_sleep",
+      "node_id": "hmc_dorm",
+      "verb": "rest",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "hmc_confession",
+      "node_id": "hmc_bunk_confession",
+      "verb": "talk",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "hmc_kitchen_event",
+      "node_id": "hmc_kitchen",
+      "verb": "use",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "hmc_wifi",
+      "node_id": "hmc_lounge_wifi",
+      "verb": "terminal",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "hostel_checked_in",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "hostel_survived_one_night",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "hostel_bond_active",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "hostel_kitchen_event_complete",
+      "change": "Persist and present the corresponding authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Check In Anytime. Checkout Never Feels Final.",
+    "Faded nineteenth-century grandeur compressed into budget-hostel chaos."
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "location_id": "debaucheryville_hostel_midnight_checkout_01",
+  "display_name": "Hostel \"Midnight Checkout\"",
+  "satirical_subtitle": "Check In Anytime. Checkout Never Feels Final.",
+  "world": "Debaucheryville",
+  "zone": "Hostel Row",
+  "location_type": "Accommodation / Rest Hub / Confession Hub",
+  "sub_types": [
+    "quest location",
+    "service hub"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/hostel_midnight_checkout.md",
+    "docs/superpowers/specs/2026-11-02-hostel-midnight-checkout-location-package-design.md"
+  ],
+  "access": {
+    "hours": "24/7 reception; staff presence varies",
+    "entry_requirements": [
+      "Pay for selected room tier",
+      "Present ID when the receptionist bothers to check"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "hmc_exit_row",
+      "destination_id": "debaucheryville_hostel_row",
+      "from_node": "hmc_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "hmc_ref_midnight_munchies",
+      "destination_id": "debaucheryville_shop_midnight_munchies_01",
+      "from_node": "hmc_exit",
+      "condition": "shop_open"
+    },
+    {
+      "exit_id": "hmc_ref_cyberspace",
+      "destination_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+      "from_node": "hmc_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Hostel Row Façade -> Reception -> Representative Dorm -> Confession Bunk -> Passive-Aggressive Kitchen -> Lounge and Wi-Fi Point -> Hostel Row Exit",
+    "landmarks": [
+      "Hostel Row Façade",
+      "Reception",
+      "Representative Dorm",
+      "Confession Bunk",
+      "Passive-Aggressive Kitchen",
+      "Lounge and Wi-Fi Point",
+      "Hostel Row Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_hostel_row owns space beyond hmc_exit.",
+      "Destination debaucheryville_shop_midnight_munchies_01 owns space beyond hmc_exit.",
+      "Destination debaucheryville_hostelrow_cyberspace_kavarna_01 owns space beyond hmc_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "Faded nineteenth-century grandeur compressed into budget-hostel chaos."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D painted faces, depth cards and billboard/cutout props",
+    "palette": [
+      "budget beige",
+      "hostel blue",
+      "institutional green",
+      "warning red"
+    ]
+  },
+  "satirical_design": {
+    "core_target": "Check In Anytime. Checkout Never Feels Final.",
+    "contrast": "Faded nineteenth-century grandeur compressed into budget-hostel chaos."
+  },
+  "state_tracking": {
+    "hostel_checked_in": false,
+    "hostel_survived_one_night": false,
+    "hostel_bond_active": false,
+    "hostel_kitchen_event_complete": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "hostel_midnight_checkout_exterior",
+      "hostel_midnight_checkout_interior",
+      "hostel_midnight_checkout_ui"
+    ]
+  }
+}

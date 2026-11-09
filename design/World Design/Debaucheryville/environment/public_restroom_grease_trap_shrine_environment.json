@@ -1,0 +1,127 @@
+{
+  "location_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+  "ambient_audio": {
+    "base_layers": [
+      "flies ambience",
+      "fryer vent steam ambience",
+      "distant distorted kebab jingle ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "gts_crawlspace",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "gts_fixture",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "gts_sink",
+        "cue": "examine_loop"
+      },
+      {
+        "node_id": "gts_mirror",
+        "cue": "lore_loop"
+      },
+      {
+        "node_id": "gts_fisto_tag",
+        "cue": "lore_loop"
+      },
+      {
+        "node_id": "gts_kebab_icon",
+        "cue": "quest_loop"
+      },
+      {
+        "node_id": "gts_haiku",
+        "cue": "quest_loop"
+      },
+      {
+        "node_id": "gts_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "gts_cursed_coin_effect",
+      "description": "Lore curio; optional pickup."
+    },
+    {
+      "effect_id": "gts_half_antacid_effect",
+      "description": "Not safely consumable; comedy examination."
+    },
+    {
+      "effect_id": "gts_warm_receipt_effect",
+      "description": "Documents impossible freshness."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open_or_window",
+      "changes": [
+        "activate documented services and cues"
+      ]
+    },
+    {
+      "state": "closed",
+      "changes": [
+        "deny entry or fold vendor state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street/circus response"
+    ],
+    "interior": [
+      "threshold read-through only"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "public_restroom_grease_trap_shrine_fx",
+      "nodes": [
+        "gts_crawlspace",
+        "gts_fixture",
+        "gts_sink",
+        "gts_mirror",
+        "gts_fisto_tag",
+        "gts_kebab_icon",
+        "gts_haiku",
+        "gts_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "sick orange",
+      "grease rainbow",
+      "fluorescent green",
+      "kebab red"
+    ],
+    "emission_mask": "public_restroom_grease_trap_shrine_masks",
+    "readability": "interaction silhouettes remain clear"
+  },
+  "environmental_storytelling": [
+    "Interior tunnel from the kebab stand's tent flap.",
+    "Tiny toilet with warm 2004 receipt paper.",
+    "Cursed coin, half-chewed antacid and napkin swan.",
+    "Cracked mirror with QR codes and Sheltie crown glyph.",
+    "Puked here in '99 pilgrimage graffiti.",
+    "Googly-eyed pixel kebab glows only while Hungover.",
+    "Three-line shrine haiku and completion tracker.",
+    "Returns to Kebab Alley."
+  ],
+  "accessibility": {
+    "variants": [
+      "Static grease reflections",
+      "Reduced steam and flies",
+      "Text glyph descriptions",
+      "High-contrast graffiti completion"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

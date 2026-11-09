@@ -1,0 +1,436 @@
+{
+  "locations": [
+    {
+      "id": "debaucheryville_clocktower_arcade_01",
+      "name": "Absinthe Arcade",
+      "tag_id": "absinthe_arcade",
+      "region": "Debaucheryville",
+      "world": "debaucheryville",
+      "zone": "clocktower_plaza_side_street",
+      "exterior": {
+        "description": "A dignified four-storey Prague-inspired limestone and plaster building carrying a monumental Green Fairy mural, the Headphone Gentleman keystone, green and purple retrofit conduit, a black pixel-neon marquee, stained-glass doors, a street cabinet and wet-cobble props.",
+        "entry_condition": "Always accessible through the main stained-glass entrance from the Clocktower Plaza side street."
+      },
+      "interior": {
+        "theme": "A grand historic amusement hall made commercially ridiculous by an absinthe-and-arcade retrofit",
+        "features": [
+          "entry_point: aa_node_entry_vestibule",
+          "shop_node: aa_node_token_exchange",
+          "quest_npc: debaucheryville_npc_backpack_girl_01",
+          "central_landmark: aa_node_bottle_bar",
+          "mini_game_gallery: aa_node_main_cabinet_loop",
+          "quest_interaction: aa_node_claw_alcove",
+          "exploration_puzzle: aa_node_mirror_corridor",
+          "hidden_path_hub: aa_node_north_wing",
+          "external_transition: debaucheryville_brewery_absinthium_taproom_01",
+          "external_transition: debaucheryville_arcade_maintenance_closet_01"
+        ]
+      },
+      "functions": [
+        "Token exchange and twisted arcade mini-games",
+        "Beer Pong Saint Relic acquisition through the rigged claw machine",
+        "Backpack Girl couchsurf and Ballad of the Bros quest origin",
+        "Broken handheld cross-city clue acquisition",
+        "Club flyer placement and fake VIP wristband callback",
+        "Arcade-side discovery and transition to The Absinthium Taproom",
+        "Three-token permanent unlock and transition to the Claw Machine Maintenance Closet Restroom"
+      ],
+      "layout_type": "central_hall_loop_with_l_shaped_north_wing",
+      "orientation": {
+        "south": "main_entrance_and_clocktower_plaza_side_street",
+        "north": "dense_arcade_wing_with_two_hidden_sublocation_approaches",
+        "west": "cabinet_gallery_mirror_corridor_and_claw_alcove",
+        "east": "bottle_bar_seating_token_exchange_and_mezzanine_stair"
+      },
+      "image_generation_master_brief": "A grand historic Prague-inspired amusement hall seen in fixed HD-2D perspective. Cream stone arches, carved plaster, iron mezzanine rails, stained glass, warm amber pendant lamps and a glossy black-and-white checkerboard floor remain sincere and beautiful. A catastrophically tacky green-and-purple arcade retrofit cuts through them: sticker-bombed cabinets, exposed conduit, pixel signs, localized spectral mist, and bad tourist microcopy. A monumental cracked absinthe-bottle bar is the navigational anchor. The main floor loops clearly around it; an L-shaped north wing becomes denser and darker without losing readable paths.",
+      "nodes": [
+        {
+          "id": "aa_node_exterior_approach",
+          "display_name": "Clocktower Plaza Side-Street Approach",
+          "node_type": "exterior_arrival",
+          "position_role": "south_of_facade",
+          "visual_description": "Wet cobblestones lead toward the four-storey historic facade. The Green Fairy mural, Headphone Gentleman, black neon marquee, stained-glass doors, exterior cabinet, awning, chalkboard and window cat establish the location before entry.",
+          "primary_landmarks": [
+            "green_fairy_mural",
+            "headphone_gentleman",
+            "absinthe_arcade_marquee",
+            "exterior_arcade_cabinet",
+            "real_arcade_chalkboard"
+          ],
+          "camera_note": "Frame enough upper facade to read the mural and marquee while keeping the door and sidewalk interactions reachable.",
+          "walkable": true
+        },
+        {
+          "id": "aa_node_entry_vestibule",
+          "display_name": "Stained-Glass Vestibule",
+          "node_type": "interior_entry",
+          "position_role": "south_center",
+          "visual_description": "Open green-and-purple stained-glass doors cross a shallow stone threshold into glossy diagonal checkerboard tile. Warm pendant lamps establish depth; cabinet rows and the bottle bar are visible beyond.",
+          "primary_landmarks": [
+            "stained_glass_doors",
+            "checkerboard_threshold",
+            "operational_signage",
+            "club_flyer_panel"
+          ],
+          "sightlines": [
+            "aa_node_bottle_bar",
+            "aa_node_token_exchange",
+            "aa_node_main_cabinet_loop"
+          ],
+          "walkable": true
+        },
+        {
+          "id": "aa_node_token_exchange",
+          "display_name": "Token Exchange and Backpack Girl Floor Spot",
+          "node_type": "service_and_npc",
+          "position_role": "southeast_of_entry",
+          "visual_description": "A brass-and-black token machine sits between two cabinet ends under a hand-painted TOKENS HERE arrow. Backpack Girl occupies a warm floor pool beside it with her enormous pack, ukulele, notebook and half a kebab. Her area looks inhabited rather than pitiable.",
+          "primary_landmarks": [
+            "token_exchange_machine",
+            "backpack_girl_floor_nest",
+            "warm_floor_lamp",
+            "token_price_board"
+          ],
+          "npc_slots": [
+            "debaucheryville_npc_backpack_girl_01",
+            "debaucheryville_npc_arcade_token_attendant_01"
+          ],
+          "sightlines": [
+            "aa_node_entry_vestibule",
+            "aa_node_bottle_bar"
+          ],
+          "walkable": true
+        },
+        {
+          "id": "aa_node_bottle_bar",
+          "display_name": "The Cracked Bottle Bar",
+          "node_type": "central_landmark_and_service",
+          "position_role": "center_of_main_hall",
+          "visual_description": "A circular bar wraps the base of a monumental green glass absinthe bottle/reservoir rising toward the decorated ceiling. One controlled crack glows within the glass without making the structure unsafe. Brass rails, bottle shelves and amber task lights keep it plausible; green liquid light and bad branded coasters make it ridiculous.",
+          "primary_landmarks": [
+            "cracked_absinthe_bottle_tower",
+            "circular_bar_counter",
+            "mismatched_seating_ring",
+            "bidet_bar_stool",
+            "overhead_bottle_cage"
+          ],
+          "navigation_function": "central_compass_landmark",
+          "sightlines": [
+            "aa_node_entry_vestibule",
+            "aa_node_main_cabinet_loop",
+            "aa_node_claw_alcove",
+            "aa_node_north_wing"
+          ],
+          "walkable": true
+        },
+        {
+          "id": "aa_node_main_cabinet_loop",
+          "display_name": "Twisted Cabinet Gallery",
+          "node_type": "mini_game_gallery",
+          "position_role": "loop_around_central_bar",
+          "visual_description": "Readable cabinet aisles orbit the bar with generous circulation. Hero cabinets for Frogger: Existential Edition, Street Fighter: Identity Crisis and Kebab Kombat are separated by generic machines, standing tables and localized mist so their silhouettes remain distinct.",
+          "primary_landmarks": [
+            "frogger_existential_cabinet",
+            "street_fighter_identity_cabinet",
+            "kebab_kombat_cabinet",
+            "generic_cabinet_rows",
+            "pixel_floor_inlays"
+          ],
+          "occlusion_note": "Cabinet tops may overlap character heads slightly in the fixed camera; control decks and floor edges must remain unobscured.",
+          "walkable": true
+        },
+        {
+          "id": "aa_node_claw_alcove",
+          "display_name": "Rigged Claw and Prize Alcove",
+          "node_type": "quest_interaction",
+          "position_role": "west_of_central_bar",
+          "visual_description": "A gold-trimmed claw machine occupies a shallow arch beneath a painfully sincere PRIZES sign. The Beer Pong Saint Relic hangs among worthless plush prizes, visibly reachable but mechanically rigged. A scratched service note and prize chute provide strategy clues.",
+          "primary_landmarks": [
+            "rigged_absinthe_claw_machine",
+            "beer_pong_saint_relic_display",
+            "prize_redemption_counter",
+            "scratched_service_note"
+          ],
+          "quest_bindings": [
+            "debaucheryville_nft_hunt",
+            "beer_pong_saint_relic_acquisition"
+          ],
+          "walkable": true
+        },
+        {
+          "id": "aa_node_mirror_corridor",
+          "display_name": "Delayed Reflection Corridor",
+          "node_type": "exploration_puzzle",
+          "position_role": "northwest_connector",
+          "visual_description": "Narrow mirror panels alternate with carved stone pilasters. Reflections are represented by desynchronized character afterimage cards rather than real-time mirrors. Purple floor pixels and warm sconces keep the path readable while false reflections imply extra passages.",
+          "primary_landmarks": [
+            "lagging_mirror_panels",
+            "purple_pixel_path",
+            "shadow_puzzle_switches",
+            "broken_game_boy_hide"
+          ],
+          "accessibility_note": "Motion reduction replaces moving lag with one static offset afterimage and steady floor lights.",
+          "walkable": true
+        },
+        {
+          "id": "aa_node_north_wing",
+          "display_name": "North Arcade Wing",
+          "node_type": "hidden_path_hub",
+          "position_role": "north_end_after_mirror_corridor",
+          "visual_description": "The grand hall compresses into an L-shaped wing of denser cabinets, lower warm lamps and stronger green haze. Two visually different recesses prevent the hidden destinations from being confused: the Taproom cue is velvet, vapor and brass; the restroom cue is broken dance hardware, warning labels and a steel service door.",
+          "primary_landmarks": [
+            "cracked_time_crisis_row",
+            "green_velvet_curtain_glow",
+            "broken_ddr_machine",
+            "maintenance_only_door"
+          ],
+          "boundary_rule": "This node shows approaches only. Neither destination interior is visible beyond its transition threshold.",
+          "walkable": true
+        },
+        {
+          "id": "aa_node_taproom_curtain",
+          "display_name": "Breathing Green Curtain",
+          "node_type": "hidden_exit_approach",
+          "position_role": "north_wing_west_recess_behind_cracked_time_crisis",
+          "visual_description": "A cracked Time Crisis cabinet is pulled slightly off the wall, revealing a glowing green velvet curtain. Vapor seeps underneath in impossible curls. A small brass plaque reads NOT RECOMMENDED FOR THOSE PRONE TO INTROSPECTION. After 20:00 the glow slowly breathes.",
+          "primary_landmarks": [
+            "cracked_time_crisis_cabinet",
+            "green_velvet_curtain",
+            "introspection_warning_plaque",
+            "under_curtain_vapor"
+          ],
+          "linked_location_id": "debaucheryville_brewery_absinthium_taproom_01",
+          "ownership": "arcade_side_approach_only",
+          "walkable": true
+        },
+        {
+          "id": "aa_node_taproom_transition",
+          "display_name": "Transition to The Absinthium Taproom",
+          "node_type": "external_location_transition",
+          "position_role": "immediately_behind_green_curtain",
+          "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
+          "destination_design_file": "design/World Design/Debaucheryville/the_absinthium_taproom.md",
+          "visual_description": "A non-rendered boundary directly behind the curtain. Fade or scene transition before any Taproom interior is shown.",
+          "requirements": {
+            "discovered": "absinthium_taproom_entrance_discovered",
+            "active_hours": "20:00_to_04:00",
+            "destination_evaluates_brewery_credentials": true
+          },
+          "walkable": false
+        },
+        {
+          "id": "aa_node_broken_ddr",
+          "display_name": "Broken DDR Maintenance Recess",
+          "node_type": "unlock_interaction",
+          "position_role": "north_wing_east_service_recess",
+          "visual_description": "A broken dance machine blocks part of a steel service recess without obstructing the main route. Three dark circular token pips sit beside a hacked coin slot. Each inserted token lights one pip green. The adjacent door bears a smudged MAINTENANCE ONLY label under an XXX PAC-MAN promo sticker.",
+          "primary_landmarks": [
+            "broken_ddr_machine",
+            "three_token_pips",
+            "hacked_coin_slot",
+            "maintenance_only_door"
+          ],
+          "linked_location_id": "debaucheryville_arcade_maintenance_closet_01",
+          "walkable": true
+        },
+        {
+          "id": "aa_node_maintenance_door",
+          "display_name": "Maintenance Door",
+          "node_type": "hidden_exit_approach",
+          "position_role": "beside_broken_ddr",
+          "visual_description": "A narrow dented steel door with layered stickers, a broken latch wired to the DDR coin board, and a small indicator that changes from red to green after three tokens. No restroom interior is visible from the Arcade.",
+          "primary_landmarks": [
+            "maintenance_only_label",
+            "xxx_pac_man_sticker",
+            "red_green_unlock_indicator",
+            "ddr_wiring_bridge"
+          ],
+          "linked_location_id": "debaucheryville_arcade_maintenance_closet_01",
+          "ownership": "arcade_side_door_and_unlock_only",
+          "walkable": true
+        },
+        {
+          "id": "aa_node_restroom_transition",
+          "display_name": "Transition to Claw Machine Maintenance Closet Restroom",
+          "node_type": "external_location_transition",
+          "position_role": "immediately_behind_maintenance_door",
+          "destination_id": "debaucheryville_arcade_maintenance_closet_01",
+          "destination_design_file": "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md",
+          "visual_description": "A non-rendered boundary behind the service door. Transition before revealing any restroom fixtures, graffiti or interior layout.",
+          "requirements": {
+            "flag": "arcade_maintenance_restroom_unlocked",
+            "unlock_item": "item_absinthe_arcade_token",
+            "unlock_quantity": 3,
+            "permanent_after_unlock": true
+          },
+          "walkable": false
+        }
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "aa_node_exterior_approach",
+      "to": "aa_node_entry_vestibule",
+      "direction": "north",
+      "connection_type": "main_entrance"
+    },
+    {
+      "from": "aa_node_entry_vestibule",
+      "to": "aa_node_token_exchange",
+      "direction": "east",
+      "connection_type": "open_floor"
+    },
+    {
+      "from": "aa_node_entry_vestibule",
+      "to": "aa_node_main_cabinet_loop",
+      "direction": "north",
+      "connection_type": "open_floor"
+    },
+    {
+      "from": "aa_node_token_exchange",
+      "to": "aa_node_bottle_bar",
+      "direction": "northwest",
+      "connection_type": "open_floor"
+    },
+    {
+      "from": "aa_node_bottle_bar",
+      "to": "aa_node_main_cabinet_loop",
+      "direction": "west_and_north_loop",
+      "connection_type": "circulation_ring"
+    },
+    {
+      "from": "aa_node_main_cabinet_loop",
+      "to": "aa_node_claw_alcove",
+      "direction": "west",
+      "connection_type": "prize_aisle"
+    },
+    {
+      "from": "aa_node_main_cabinet_loop",
+      "to": "aa_node_mirror_corridor",
+      "direction": "northwest",
+      "connection_type": "narrow_connector"
+    },
+    {
+      "from": "aa_node_mirror_corridor",
+      "to": "aa_node_north_wing",
+      "direction": "north_then_east",
+      "connection_type": "l_shaped_connector"
+    },
+    {
+      "from": "aa_node_bottle_bar",
+      "to": "aa_node_north_wing",
+      "direction": "north",
+      "connection_type": "staff_sightline_not_direct_walk"
+    },
+    {
+      "from": "aa_node_north_wing",
+      "to": "aa_node_taproom_curtain",
+      "direction": "west_recess",
+      "connection_type": "hidden_approach"
+    },
+    {
+      "from": "aa_node_taproom_curtain",
+      "to": "aa_node_taproom_transition",
+      "direction": "through_curtain",
+      "connection_type": "external_transition"
+    },
+    {
+      "from": "aa_node_north_wing",
+      "to": "aa_node_broken_ddr",
+      "direction": "east_recess",
+      "connection_type": "service_approach"
+    },
+    {
+      "from": "aa_node_broken_ddr",
+      "to": "aa_node_maintenance_door",
+      "direction": "adjacent",
+      "connection_type": "unlock_link"
+    },
+    {
+      "from": "aa_node_maintenance_door",
+      "to": "aa_node_restroom_transition",
+      "direction": "through_door",
+      "connection_type": "external_transition"
+    }
+  ],
+  "node_connections": {
+    "absinthe_arcade": {
+      "connects_to": [
+        {
+          "destination": "debaucheryville_clocktower_plaza_01",
+          "direction": "south",
+          "distance": "immediate_side_street",
+          "transition_type": "normal",
+          "source_node": "aa_node_entry_vestibule"
+        },
+        {
+          "destination": "debaucheryville_brewery_absinthium_taproom_01",
+          "direction": "northwest_recess",
+          "distance": "inside_north_wing",
+          "transition_type": "hidden_external_location",
+          "source_node": "aa_node_taproom_curtain",
+          "requirements": "discover_after_20_00_destination_checks_own_brewery_credentials"
+        },
+        {
+          "destination": "debaucheryville_arcade_maintenance_closet_01",
+          "direction": "northeast_service_recess",
+          "distance": "inside_north_wing",
+          "transition_type": "unlockable_external_location",
+          "source_node": "aa_node_maintenance_door",
+          "requirements": "insert_3_absinthe_arcade_tokens_once"
+        }
+      ],
+      "quest_connections": [
+        {
+          "quest_id": "couchsurfing_chronicles_debaucheryville",
+          "role": "backpack_girl_origin"
+        },
+        {
+          "quest_id": "debaucheryville_nft_hunt",
+          "role": "beer_pong_saint_relic_location"
+        },
+        {
+          "quest_id": "brewery_tour_debaucheryville",
+          "role": "absinthium_taproom_gateway"
+        },
+        {
+          "quest_id": "club_flyers",
+          "role": "flyer_placement_location"
+        }
+      ],
+      "legacy_location_ids": [
+        "debaucheryville_nightlife_absinthe_arcade_01"
+      ]
+    }
+  },
+  "feature_details": {
+    "central_landmark_rule": "The bottle bar must remain the strongest interior mass and should be visible from the vestibule, token exchange, cabinet loop and start of the north wing.",
+    "hidden_entrance_separation": {
+      "taproom": "soft velvet, green vapor, brass plaque, cracked gun cabinet, slow breathing light",
+      "restroom": "hard steel, broken dance machine, warning labels, exposed wiring, three token pips"
+    },
+    "sublocation_boundary_rule": "Generate only the Arcade-facing approaches. Never show the Taproom Distortion Den or the restroom's fixtures and graffiti in an Absinthe Arcade interior image.",
+    "circulation_clearance": "Keep a continuous player-width loop around the bottle bar and a clear path to both northern recesses; furniture and comedy props stay out of the primary route.",
+    "vertical_read": "Use the mezzanine as visual depth and ambient NPC space, not as a required gameplay floor unless a later implementation explicitly adds navigation."
+  },
+  "ambient_npcs": {
+    "main_hall": [
+      "twitchy_hacker_patron",
+      "local_regular",
+      "tourist_bro_group",
+      "arcade_employee"
+    ],
+    "mezzanine": [
+      "edm_ghost_silhouette",
+      "rogue_backpacker",
+      "spectator"
+    ],
+    "north_wing": [
+      "speedrunner",
+      "lost_tourist",
+      "hacker_hint_giver"
+    ],
+    "density_rule": "Do not crowd Backpack Girl's silhouette, the claw controls, the DDR token pips, or either hidden entrance handle."
+  }
+}

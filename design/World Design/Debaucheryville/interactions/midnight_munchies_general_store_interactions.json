@@ -1,0 +1,146 @@
+{
+  "location_id": "debaucheryville_shop_midnight_munchies_01",
+  "events": [
+    {
+      "event_id": "mm_browse",
+      "display_name": "Browse Survival Stock",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "mm_recovery_aisle"
+      },
+      "requirements": [
+        "midnight_munchies_open"
+      ],
+      "results": [
+        "open_standard_inventory"
+      ],
+      "quest_bindings": [
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "mm_heat_lamp_roll",
+      "display_name": "Try Heat Lamp Lottery",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "mm_heat_lamp"
+      },
+      "requirements": [
+        "midnight_munchies_open"
+      ],
+      "results": [
+        "heat_lamp_lottery_used",
+        "apply_random_food_quality"
+      ],
+      "quest_bindings": [
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "mm_checkout",
+      "display_name": "Checkout with Věra",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "mm_counter"
+      },
+      "requirements": [
+        "midnight_munchies_open"
+      ],
+      "results": [
+        "apply_20_percent_markup_after_0200"
+      ],
+      "quest_bindings": [
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "mm_regular_check",
+      "display_name": "Ask for Regular Price",
+      "trigger": {
+        "verb": "talk",
+        "node_id": "mm_counter"
+      },
+      "requirements": [
+        "midnight_munchies_regular"
+      ],
+      "results": [
+        "apply_regular_reaction"
+      ],
+      "quest_bindings": [
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "mm_browse",
+      "node_id": "mm_recovery_aisle",
+      "verb": "shop",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "mm_heat_lamp_roll",
+      "node_id": "mm_heat_lamp",
+      "verb": "purchase",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "mm_checkout",
+      "node_id": "mm_counter",
+      "verb": "purchase",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "mm_regular_check",
+      "node_id": "mm_counter",
+      "verb": "talk",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "midnight_munchies_open",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "midnight_munchies_desperation_tax",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "midnight_munchies_regular",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "heat_lamp_lottery_used",
+      "change": "Persist and present the corresponding authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Open When You Need Us. We Know Why.",
+    "A fluorescent survival beacon whose markup measures how badly the player failed to plan."
+  ]
+}

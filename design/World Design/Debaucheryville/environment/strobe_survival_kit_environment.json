@@ -1,0 +1,128 @@
+{
+  "location_id": "debaucheryville_vendor_strobe_survival_01",
+  "ambient_audio": {
+    "base_layers": [
+      "pre-club shoppers ambience",
+      "post-club casualties ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "ssk_stall",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "ssk_audio_defense",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "ssk_visual_gear",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "ssk_support_shelf",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "ssk_decibel_display",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "ssk_operator",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "ssk_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "ssk_foam_earplugs_effect",
+      "description": "Minor audio-hazard resistance."
+    },
+    {
+      "effect_id": "ssk_musician_earplugs_effect",
+      "description": "Strong audio-hazard resistance."
+    },
+    {
+      "effect_id": "ssk_strobe_shades_effect",
+      "description": "Reduces flash and visual Confusion hazards."
+    },
+    {
+      "effect_id": "ssk_glow_bundle_effect",
+      "description": "Improves party visibility."
+    },
+    {
+      "effect_id": "ssk_tactical_pouch_effect",
+      "description": "Carries support consumables and minor defense."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "full service and named NPCs"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "documented denial or alternate crowd"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet neon reflections"
+    ],
+    "interior": [
+      "threshold-only weather read-through"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "strobe_survival_kit_fx",
+      "nodes": [
+        "ssk_stall",
+        "ssk_audio_defense",
+        "ssk_visual_gear",
+        "ssk_support_shelf",
+        "ssk_decibel_display",
+        "ssk_operator",
+        "ssk_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "tactical olive",
+      "warning amber",
+      "LED cyan",
+      "stencil white"
+    ],
+    "emission_mask": "strobe_survival_kit_masks",
+    "readability": "interaction landmarks brighter than clutter"
+  },
+  "environmental_storytelling": [
+    "Pegboard military-rave stall near club approaches.",
+    "Earplug grades and hearing warning display.",
+    "Glow sticks, LED glasses and visibility gear.",
+    "Documented club-support consumables.",
+    "Live nearby-club hazard readout.",
+    "Checkout and tactical briefing point.",
+    "Returns to the neon street."
+  ],
+  "accessibility": {
+    "variants": [
+      "No unavoidable strobe preview",
+      "Reduced-emission merchandise",
+      "Text decibel readout",
+      "Color-independent stock categories"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

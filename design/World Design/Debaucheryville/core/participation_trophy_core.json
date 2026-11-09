@@ -1,0 +1,75 @@
+{
+  "location_id": "debaucheryville_circus_participation_trophy_01",
+  "display_name": "The Participation Trophy",
+  "satirical_subtitle": "Everyone's a Winner, Spiritually False",
+  "world": "Debaucheryville",
+  "zone": "Cirque du Shady",
+  "location_type": "Prize Redemption Booth / Circus Economy",
+  "sub_types": [
+    "vendor or micro-location",
+    "quest integration"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/the_participation_trophy.md"
+  ],
+  "access": {
+    "hours": "Circus hours",
+    "entry_requirements": [
+      "Circus open"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "pt_exit_circus",
+      "destination_id": "debaucheryville_cirque_du_shady",
+      "from_node": "pt_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Weathered Prize Booth -> Display-Only Grand Shelf -> Good Prize Shelf -> Consolation Shelves -> Participation Floor Bin -> Yolanda Counter -> Circus Exit",
+    "landmarks": [
+      "Weathered Prize Booth",
+      "Display-Only Grand Shelf",
+      "Good Prize Shelf",
+      "Consolation Shelves",
+      "Participation Floor Bin",
+      "Yolanda Counter",
+      "Circus Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_cirque_du_shady owns space beyond pt_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A deliberately underwhelming booth where ticket economics convert effort into garbage."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "faded carnival red",
+      "sad plush brown",
+      "ticket blue",
+      "peeling cream"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Everyone's a Winner, Spiritually False",
+    "contrast": "A deliberately underwhelming booth where ticket economics convert effort into garbage."
+  },
+  "state_tracking": {
+    "participation_booth_open": false,
+    "frequent_loser_status": false,
+    "participation_direct_purchase_seen": false,
+    "participation_prize_redeemed": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "participation_trophy_scene",
+      "participation_trophy_characters",
+      "participation_trophy_ui"
+    ]
+  }
+}

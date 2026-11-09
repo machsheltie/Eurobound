@@ -22,3 +22,25 @@ marketing/screenshots/originals/
 
 # Git worktrees (local agent windows)
 .worktrees/
+.bmad-loop/runs/
+.bmad-loop/cache/
+.bmad-loop/policy.toml
+_bmad/render/
+
+# Blender autosave backups
+*.blend1
+*.blend2
+
+# Large 3D binaries stay out of git (author ruling 2026-10-27: no GitHub storage
+# for them). They live on disk only; back them up separately.
+*.blend
+*.glb
+*.fbx
+Assets/Graphics/worlds/**/*.png
+Assets/Graphics/worlds/**/*.jpg
+Assets/Graphics/worlds/**/*.jpeg
+
+tools/art_cleanup/.venv/
+# Godot MCP Pro (paid, proprietary licence: keep out of git)
+tools/godot_mcp_pro_server/
+game/addons/godot_mcp/

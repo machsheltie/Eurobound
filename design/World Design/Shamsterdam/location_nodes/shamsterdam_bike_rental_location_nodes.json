@@ -1,0 +1,217 @@
+{
+  "locations": [
+    {
+      "name": "Shamsterdam Bike Rental",
+      "tag_id": "shamsterdam_bike_rental_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "A converted canal house ground floor with a giant orange 'BIKE RENTAL' sign in four languages. Fleet of 50+ identical orange bikes lined up outside. Adjacent to the Central Bike Crossing, this is ground zero for tourist cycling disasters.",
+        "entry_condition": "Open 08:00-21:00. Adjacent to Bike Crossing south sidewalk."
+      },
+      "interior": {
+        "theme": "Service shop, insurance comedy, recurring interactions, tourist cycling reality check",
+        "features": [
+          "npc_primary: dirk_rental_owner (main_counter)",
+          "npc_secondary: anneke_counter (insurance_desk)",
+          "npc_background: opa_willem (repair_station)",
+          "display: damage_photo_gallery",
+          "display: insurance_tier_chart",
+          "display: canal_memorial_board",
+          "display: nationality_tally_board",
+          "display: helmet_wall",
+          "display: bike_fleet_window",
+          "zone: repair_station (opa_willem)",
+          "service: bike_rental_tiers",
+          "service: insurance_packages",
+          "service: add_ons",
+          "service: damage_assessment",
+          "quest_origin: tour_de_shame",
+          "quest_origin: canal_recovery"
+        ]
+      },
+      "functions": [
+        "Bike rental bypasses Crossing mini-game",
+        "Insurance comedy service interactions",
+        "Recurring visit content (history-based dialogue)",
+        "Damage assessment scenes",
+        "Quest hub for cycling-related quests",
+        "Alternative to Voetgangerstunnel"
+      ]
+    },
+    {
+      "name": "Shamsterdam Bike Rental - Main Shop Floor",
+      "tag_id": "shamsterdam_bike_rental_main_01",
+      "region": "Shamsterdam",
+      "sub_location": true,
+      "exterior": {
+        "description": "The main service area. Dirk behind the counter, Anneke at the insurance desk, forms everywhere, damage photos on the wall as a warning.",
+        "entry_condition": "Default entry zone"
+      },
+      "interior": {
+        "theme": "Service counter, insurance upsell, documentation",
+        "features": [
+          "npc: dirk_at_counter",
+          "npc: anneke_at_insurance_desk",
+          "interactive: main_service_counter",
+          "interactive: insurance_comparison_chart",
+          "interactive: damage_photo_gallery",
+          "interactive: nationality_tally_board",
+          "interactive: cycling_rules_poster"
+        ]
+      },
+      "functions": [
+        "Primary service interactions",
+        "Rental process",
+        "Insurance selection",
+        "Return processing"
+      ]
+    },
+    {
+      "name": "Shamsterdam Bike Rental - Repair Station",
+      "tag_id": "shamsterdam_bike_rental_repair_01",
+      "region": "Shamsterdam",
+      "sub_location": true,
+      "exterior": {
+        "description": "Opa Willem's domain. Visible through a doorway from the main shop. Walls lined with bikes recovered from the canal. Decades of accumulated tools and wisdom.",
+        "entry_condition": "Approach doorway from main shop"
+      },
+      "interior": {
+        "theme": "Repair workshop, canal recovery history, lore repository",
+        "features": [
+          "npc: opa_willem_at_workbench",
+          "interactive: canal_recovery_wall",
+          "interactive: repair_workbench",
+          "interactive: vintage_bikes_corner",
+          "quest_giver: canal_recovery_assistant"
+        ]
+      },
+      "functions": [
+        "Repair services",
+        "Lore and history",
+        "Canal Recovery quest origin",
+        "Opa's Blessing buff source"
+      ]
+    },
+    {
+      "name": "Shamsterdam Bike Rental - Bike Fleet (Exterior)",
+      "tag_id": "shamsterdam_bike_rental_fleet_01",
+      "region": "Shamsterdam",
+      "sub_location": true,
+      "exterior": {
+        "description": "Fifty-three orange rental bikes lined up in orderly rows outside the shop. All identical. All waiting. All will be returned... eventually.",
+        "entry_condition": "Visible from street and shop window"
+      },
+      "interior": {
+        "theme": "Visual display, brand identity, foreboding",
+        "features": [
+          "visual: 50_plus_orange_bikes",
+          "selfie_prop: orange_army",
+          "bike_selection_happens_here"
+        ]
+      },
+      "functions": [
+        "Visual establishment of scale",
+        "Selfie opportunity",
+        "Bike assignment zone"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "internal_connections": [
+      {"from": "main_shop", "to": "repair_station", "type": "doorway"},
+      {"from": "main_shop", "to": "bike_fleet", "type": "window_view"},
+      {"from": "repair_station", "to": "main_shop", "type": "doorway"}
+    ],
+    "external_connections": [
+      {
+        "from": "shamsterdam_bike_rental_01",
+        "to": "shamsterdam_bike_crossing_thunderdome_01",
+        "type": "adjacent",
+        "position": "south_sidewalk"
+      },
+      {
+        "from": "rental_active",
+        "enables_access_to": [
+          "shamsterdam_coffeeshop_quarter_01",
+          "shamsterdam_museum_mile_01",
+          "shamsterdam_roodelicht_row_01",
+          "shamsterdam_canal_ring_promenade_01",
+          "shamsterdam_cheese_clog_corner_01"
+        ],
+        "type": "bike_access"
+      }
+    ]
+  },
+  
+  "spatial_layout": {
+    "shop_dimensions": {
+      "width_meters": 8,
+      "depth_meters": 12
+    },
+    "zones": {
+      "main_shop": {
+        "area": "front_8x8",
+        "purpose": "service",
+        "contains": ["main_counter", "insurance_desk", "wall_displays"]
+      },
+      "repair_station": {
+        "area": "back_8x4",
+        "purpose": "repair_and_storage",
+        "contains": ["workbench", "canal_wall", "vintage_corner"]
+      },
+      "exterior_fleet": {
+        "area": "outside_front",
+        "purpose": "bike_storage_display",
+        "contains": ["53_orange_bikes", "bike_stands"]
+      }
+    }
+  },
+  
+  "rental_effect_on_world": {
+    "bike_crossing_bypass": {
+      "description": "Active rental converts player to traffic participant",
+      "effect": "No Frogger mini-game required",
+      "trade_off": "Random damage events while cycling"
+    },
+    "district_access": {
+      "faster_travel": true,
+      "cyclist_shortcuts": true,
+      "theft_risk_when_parked": true
+    },
+    "npc_reactions": {
+      "dutch_cyclists": "Judge harder for rental bike",
+      "local_npcs": "Recognize tourist status instantly",
+      "other_tourists": "Potential collision partners"
+    }
+  },
+  
+  "recurring_visit_system": {
+    "visit_tracking": {
+      "total_visits": 0,
+      "rentals_completed": 0,
+      "damage_history": [],
+      "insurance_claims": 0
+    },
+    "dialogue_evolution": {
+      "first_visit": "Full introduction, warnings",
+      "second_visit": "Recognition, shortened intro",
+      "third_plus_visit": "History-based commentary",
+      "post_damage": "Specific damage references",
+      "loyal_customer": "Discount eligibility, quest offers"
+    },
+    "relationship_building": {
+      "dirk_respect": {
+        "starts_at": 0,
+        "increases_on": ["undamaged_return", "insurance_purchase", "quest_complete"],
+        "decreases_on": ["canal_incident", "claim_denied"],
+        "max_level_unlocks": "permanent_discount"
+      },
+      "opa_trust": {
+        "starts_at": 0,
+        "increases_on": ["repair_station_visits", "canal_recovery_quest"],
+        "max_level_unlocks": "permanent_blessing"
+      }
+    }
+  }
+}

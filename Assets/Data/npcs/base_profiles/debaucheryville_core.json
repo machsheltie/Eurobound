@@ -1,0 +1,288 @@
+# File: as# File: assets/data/npcs/base_profiles/debaucheryville_core.json
+
+{
+  "schema_version": "1.0",
+  "world_name": "debaucheryville", 
+  "last_updated": "2025-09-15",
+  "npcs": {
+    "vlad_validator": {
+      "npc_id": "debaucheryville_velvet_curtain_bouncer_01",
+      "display_name": "Vlad the Validator",
+      "full_name": "Vladimir Kryptovich",
+      "world_location": "Debaucheryville",
+      "area_zone": "Velvet Curtain Club",
+      "sprite_sheet": "bouncer_variants.png",
+      "sprite_coordinates": [0, 64, 32, 32],
+      "personality": {
+        "archetype": "Crypto Bro Bouncer",
+        "satirical_target": "Door policy gatekeeping + blockchain obsession",
+        "humor_style": "Deadpan contradictions",
+        "catchphrase": "Sorry bro, VIP list is on the blockchain",
+        "roast_vulnerability": "Mentions his 'diversified portfolio' of rejected altcoins",
+        "primary_motivation": "Protecting the 'decentralized' VIP list while being completely centralized",
+        "fatal_flaw": "Will abandon his post to explain cryptocurrency to literally anyone",
+        "running_gag": "Every crypto explanation gets longer and more incomprehensible"
+      },
+      "visual_behavior": {
+        "sprite_states": ["idle", "talking", "annoyed", "bribed", "vape_cloud", "phone_checking", "dismissive_wave"],
+        "facing_direction": "down",
+        "movement_pattern": "static",
+        "interaction_radius": 48,
+        "signature_animations": ["vape_cloud_periodic", "phone_check"],
+        "animation_schedule": {
+          "vape_cloud_interval": 12.0,
+          "phone_check_interval": 8.0,
+          "idle_breathing_cycle": 3.0
+        },
+        "visual_details": {
+          "physique": "Oversized bouncer in too-tight crypto conference t-shirt",
+          "color_palette": {
+            "shirt": "#FF8C00",
+            "jeans": "#1C1C1C", 
+            "chain": "#C0C0C0"
+          },
+          "distinguishing_features": ["HODL neck tattoo", "Bitcoin conference lanyard", "USB drive pendant"]
+        }
+      },
+      "character_backstory": {
+        "origin_story": "Former IT support guy who bought Bitcoin at $60,000 and now works doors to pay rent",
+        "career_progression": ["Computer Science Degree", "Corporate IT", "Crypto Influencer", "Club Security"],
+        "current_financial_state": "Portfolio down 95%, rent due in fiat currency",
+        "secret_shame": "Still using mom's Netflix password despite preaching decentralization",
+        "personality_drivers": ["crypto_losses", "technical_knowledge", "validation_seeking"],
+        "daily_routine": "Checks crypto prices, guards door, evangelizes blockchain to anyone who'll listen",
+        "current_goals": "Recoup crypto losses while maintaining 'diamond hands' image",
+        "personal_relationships": "Owes money to half the other bouncers from failed investment opportunities",
+        "hidden_depths": "Actually quite knowledgeable about cybersecurity, just terrible at financial decisions"
+      },
+      "dialogue_characteristics": {
+        "speech_pattern": "Crypto buzzwords mixed with bouncer terminology",
+        "voice_direction": "Slightly nasal voice with forced 'cool' inflection",
+        "party_recognition": {
+          "lord_pilsner": {
+            "nickname": "old money fiat user",
+            "greeting_modifier": "Fiat mentality detected. Please update to digital native mindset.",
+            "respect_level": 0.3
+          },
+          "chadwick": {
+            "nickname": "social media influencer", 
+            "greeting_modifier": "Respectable follower count, but what's your engagement rate?",
+            "respect_level": 0.7
+          },
+          "bradley": {
+            "nickname": "confused gym bro",
+            "greeting_modifier": "Bro, you even lift... smart contracts?",
+            "respect_level": 0.4
+          }
+        },
+        "status_effect_responses": {
+          "hungover": "Your cognitive hash rate appears compromised. Try some nootropics.",
+          "grease_fingers": "Hygiene protocol violation detected. Please wash hands before touching anything.",
+          "embarrassed": "Social credit score dropping in real-time, my dude."
+        }
+      },
+      "cultural_context": {
+        "local_scene": "Debaucheryville's tech startup scene meets traditional club culture",
+        "stereotype_subversion": "Intimidating bouncer who's actually a tech nerd desperate for validation",
+        "cross_world_references": "Debaucheryville has superior crypto infrastructure to Publandia's banking",
+        "regional_events": ["Debaucheryville Blockchain Conference", "Local crypto meetups"]
+      },
+      "game_mechanics": {
+        "shop_keeper": false,
+        "battle_trigger": false,
+        "quest_giver": true,
+        "info_source": "VIP_access_hints",
+        "special_abilities": ["Crypto_Verification", "Door_Policy_Override"],
+        "bribeable": true,
+        "bribe_currency": ["Rare_NFT_Screenshot", "Electrolyte_Pack", "Crypto_Conference_Swag"],
+        "unlocks_areas": ["VIP_Backroom", "Crypto_Mining_Basement"],
+        "services_offered": ["VIP_access", "crypto_investment_advice", "black_market_exchange_tips"],
+        "behavioral_memory": "Remembers if party showed interest in crypto, becomes more aggressive in educating them"
+      },
+      "optimization": {
+        "shared_sprite_pool": "bouncer_base",
+        "audio_clips": ["bouncer_voice_01", "vape_inhale", "phone_notification"],
+        "behavioral_flags": {
+          "crypto_obsessed": true,
+          "tech_savvy": true,
+          "insecure_about_losses": true,
+          "attention_seeking": true,
+          "validation_seeking": true,
+          "financially_desperate": true
+        }
+      },
+      "analytics_tracking": {
+        "interaction_events": ["approached", "bribed", "rejected", "crypto_explanation_triggered", "portfolio_confession"],
+        "screenshot_moments": ["crypto_explanation", "bribe_success", "door_rejection", "portfolio_breakdown"],
+        "social_sharing_triggers": ["crypto_contradiction", "portfolio_confession", "netflix_password_admission"]
+      }
+    },
+    "crypto_clown": {
+      "npc_id": "debaucheryville_cirque_crypto_clown_01", 
+      "display_name": "Bobo 'The Blockchain' Bitsworth",
+      "full_name": "Robert Bitsworth III",
+      "world_location": "Debaucheryville",
+      "area_zone": "Cirque du Shady",
+      "sprite_sheet": "circus_performers.png",
+      "sprite_coordinates": [32, 0, 32, 32],
+      "personality": {
+        "archetype": "Failed Crypto Influencer Performer",
+        "satirical_target": "Crypto influencer desperation + gig economy exploitation of educated workers",
+        "humor_style": "Manic overcompensation with bursts of genuine vulnerability",
+        "catchphrase": "Step right up for genuine blockchain entertainment!",
+        "roast_vulnerability": "His MBA from prestigious school vs. current juggling-for-tips situation",
+        "primary_motivation": "Recoup crypto losses through 'creative monetization strategies'",
+        "fatal_flaw": "Turns every conversation into a poorly disguised sales pitch",
+        "running_gag": "Every 'performance' is actually just a different crypto scheme with circus dressing"
+      },
+      "visual_behavior": {
+        "sprite_states": ["idle", "juggling_coins", "desperate_pitch", "balloon_deflating", "business_card_wave", "collapsed"],
+        "facing_direction": "down",
+        "movement_pattern": "performance_circle",
+        "interaction_radius": 64,
+        "signature_animations": ["juggling_fake_coins", "balloon_deflation", "business_card_scatter"],
+        "animation_schedule": {
+          "coin_juggling_cycle": 2.4,
+          "balloon_deflation_interval": 8.0,
+          "desperate_pitch_gestures": 5.0,
+          "business_card_drop": 15.0
+        },
+        "visual_details": {
+          "costume": "Tattered clown outfit with crypto-themed patches",
+          "color_palette": {
+            "nose": "#FF0000",
+            "patches": "#FF8C00",
+            "balloons": "#1E90FF",
+            "deflated_balloons": "#808080"
+          },
+          "distinguishing_features": ["MBA diploma in pocket", "HODL juggling balls", "scattered business cards"]
+        }
+      },
+      "character_backstory": {
+        "origin_story": "Harvard MBA who lost everything in 2022 crypto crash and now performs on streets",
+        "career_progression": ["Investment Banking", "Crypto Startup Founder", "Crypto Influencer", "Street Performer"],
+        "current_financial_state": "Lost everything in crypto crash, performing for tips to pay rent",
+        "secret_shame": "Still checks old crypto wallets daily hoping for miracle recovery",
+        "personality_drivers": ["financial_trauma", "education_vs_reality_gap", "desperate_optimism"],
+        "daily_routine": "Morning crypto price checks, afternoon performances, evening business plan revisions",
+        "current_goals": "One viral performance that launches comeback and validates his choices",
+        "personal_relationships": "Estranged from business school friends, ignored by former crypto community",
+        "hidden_depths": "Actually brilliant at financial analysis, but trauma has made him manic and unfocused"
+      },
+      "dialogue_characteristics": {
+        "speech_pattern": "Business jargon mixed with circus terminology and increasing desperation",
+        "voice_direction": "Forced enthusiasm masking deep insecurity, occasional voice cracks during vulnerable moments",
+        "party_recognition": {
+          "lord_pilsner": {
+            "nickname": "distinguished investor",
+            "greeting_modifier": "A distinguished investor! Let me show you my business plan for decentralized entertainment!",
+            "pitch_focus": "traditional_finance_crossover"
+          },
+          "chadwick": {
+            "nickname": "social media collaborator",
+            "greeting_modifier": "Social media influencer! We should collaborate! I have so many content ideas!",
+            "pitch_focus": "viral_content_creation"
+          },
+          "bradley": {
+            "nickname": "potential_gym_investor",
+            "greeting_modifier": "You look strong! Want to invest in my gym-meets-blockchain startup idea?",
+            "pitch_focus": "fitness_crypto_fusion"
+          }
+        },
+        "status_effect_responses": {
+          "hungover": "Ah, the classic hangover! I've got a blockchain-based hydration solution I'm developing!",
+          "grease_fingers": "Messy hands? That's perfect for my tactile crypto experience workshop!",
+          "embarrassed": "Embarrassed? Join the club! But hey, failure is just success deferred!"
+        }
+      },
+      "cultural_context": {
+        "local_scene": "Debaucheryville's gig economy meets traditional European circus culture",
+        "stereotype_subversion": "Educated professional reduced to street performance, but maintaining dignity through delusion",
+        "cross_world_references": "Tried act in Publandia, but they said circus arts weren't 'authentic' enough",
+        "regional_events": ["Debaucheryville Startup Graveyard Tours", "Failed Entrepreneur Support Groups"]
+      },
+      "game_mechanics": {
+        "shop_keeper": true,
+        "battle_trigger": false,
+        "quest_giver": false,
+        "info_source": "crypto_scam_warnings",
+        "special_abilities": ["Coin_Toss_Minigame_Rigged", "NFT_Fortune_Telling", "Balloon_Animal_Crypto_Explanations"],
+        "bribeable": false,
+        "shop_inventory": {
+          "Deflated_Balloon_Animal": 1,
+          "Fake_Crypto_Coin": 5,
+          "Business_Plan_Fragment": 10,
+          "MBA_Diploma_Copy": 25
+        },
+        "services_offered": ["investment_advice_terrible", "performance_entertainment", "cautionary_tales"],
+        "performance_tips": "accepts_any_amount_increasingly_grateful",
+        "behavioral_memory": "Remembers if player showed interest in business or crypto topics"
+      },
+      "optimization": {
+        "shared_sprite_pool": "circus_base",
+        "audio_clips": ["circus_music_distorted", "coin_drop", "balloon_pop", "nervous_laughter", "business_pitch"],
+        "behavioral_flags": {
+          "desperately_upbeat": true,
+          "financially_ruined": true,
+          "educationally_overqualified": true,
+          "performance_anxiety": true,
+          "manic_optimism": true,
+          "crypto_trauma": true
+        }
+      },
+      "analytics_tracking": {
+        "interaction_events": ["performance_watched", "tip_given", "business_pitch_heard", "balloon_deflation_witnessed"],
+        "screenshot_moments": ["juggling_fail", "MBA_revelation", "balloon_pop", "desperate_sales_pitch"],
+        "social_sharing_triggers": ["crypto_crash_confession", "harvard_mba_vs_reality", "balloon_animal_blockchain_explanation"]
+      }
+    },
+    "shadow_exchange_dealer": {
+      "npc_id": "debaucheryville_underground_money_changer_01",
+      "display_name": "Dmitri the Exchanger",
+      "world_location": "Debaucheryville", 
+      "area_zone": "Shadow Exchange",
+      "sprite_sheet": "underground_economy.png",
+      "sprite_coordinates": [0, 32, 32, 32],
+      "personality": {
+        "archetype": "Sketchy Currency Trader",
+        "satirical_target": "Tourist money exchange scams + underground economy",
+        "humor_style": "Overly casual about illegal activities",
+        "catchphrase": "Best rates in town, no questions asked!",
+        "roast_vulnerability": "His 'best rates' somehow always favor him"
+      },
+      "visual_behavior": {
+        "sprite_states": ["idle", "talking", "counting_money", "suspicious", "hiding"],
+        "facing_direction": "left",
+        "movement_pattern": "nervous_pacing",
+        "interaction_radius": 32,
+        "signature_animations": ["money_counting", "looking_around_nervously"]
+      },
+      "game_mechanics": {
+        "shop_keeper": true,
+        "battle_trigger": false,
+        "quest_giver": true,
+        "info_source": "black_market_intel",
+        "special_abilities": ["Currency_Exchange", "Black_Market_Access"],
+        "bribeable": true,
+        "bribe_currency": ["Euro_Bills", "Suspicious_Package"],
+        "shop_type": "currency_exchange",
+        "exchange_rates": {"EUR_to_KC": 0.8, "KC_to_EUR": 1.3}
+      },
+      "optimization": {
+        "shared_sprite_pool": "underground_base",
+        "audio_clips": ["coins_rattling", "whispered_voice", "paper_rustling"],
+        "behavioral_flags": {
+          "paranoid": true,
+          "greedy": true,
+          "well_connected": true,
+          "morally_flexible": true
+        }
+      },
+      "analytics_tracking": {
+        "interaction_events": ["exchange_made", "quest_given", "black_market_info_shared"],
+        "screenshot_moments": ["sketchy_deal", "rate_explanation", "nervous_reaction"],
+        "social_sharing_triggers": ["bad_exchange_rate", "underground_revelation"]
+      }
+    }
+  }
+}

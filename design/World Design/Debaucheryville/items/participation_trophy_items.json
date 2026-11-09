@@ -1,0 +1,66 @@
+{
+  "location_id": "debaucheryville_circus_participation_trophy_01",
+  "item_category": "Prize Redemption Booth / Circus Economy",
+  "items": [
+    {
+      "item_id": "pt_sad_plush",
+      "display_name": "Slightly Damp Consolation Plush",
+      "item_type": "prize",
+      "price": 10,
+      "effect": "Minor morale flavor; visibly disappointing.",
+      "acquisition": "Consolation shelf."
+    },
+    {
+      "item_id": "pt_plastic_medal",
+      "display_name": "Plastic Participation Medal",
+      "item_type": "prize",
+      "price": 3,
+      "effect": "Cosmetic proof of attendance.",
+      "acquisition": "Floor bin."
+    },
+    {
+      "item_id": "pt_mystery_trinket",
+      "display_name": "Mysterious Carnival Trinket",
+      "item_type": "prize",
+      "price": 20,
+      "effect": "Random minor effect.",
+      "acquisition": "Good shelf."
+    },
+    {
+      "item_id": "pt_grand_display",
+      "display_name": "Impossible Grand Prize",
+      "item_type": "display_only",
+      "price": 9999,
+      "effect": "Cannot be granted; display prop only.",
+      "acquisition": "Grand shelf."
+    },
+    {
+      "item_id": "pt_direct_junk",
+      "display_name": "Direct-Purchase Participation Bag",
+      "item_type": "prize",
+      "price": 8,
+      "effect": "Bundle of low-tier junk.",
+      "acquisition": "Yolanda counter."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "Circus Tickets",
+      "ownership": "external"
+    },
+    {
+      "reference": "shared circus game outcomes",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "frequent_loser_status",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Circus Tickets, gold, or Kebab Coins as documented",
+    "price_confirmation_required": true
+  }
+}

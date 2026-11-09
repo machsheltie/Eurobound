@@ -1,0 +1,97 @@
+{
+  "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+  "display_name": "Three-Crown Keg Haus",
+  "satirical_subtitle": "Noble by Liver",
+  "world": "Debaucheryville",
+  "zone": "Alley near Shadow Exchange",
+  "location_type": "Brewery Tour Stop 2 / Stealth Dive Dungeon",
+  "sub_types": [
+    "brewery tour dungeon",
+    "puzzle/encounter",
+    "selfie location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/three_crown_keghaus.md",
+    "design/items/brewery_tour/",
+    "docs/superpowers/specs/2026-11-02-three-crown-keg-haus-location-package-design.md"
+  ],
+  "access": {
+    "hours": "Always after discovery",
+    "entry_requirements": [
+      "three_crown_route_discovered",
+      "Bravado +1; no opener physically gates entry"
+    ],
+    "physical_entry_uses_opener": false,
+    "tour_reward_requires": [
+      "brewery_tour_active",
+      "bottle_opener_keychain"
+    ],
+    "pre_tour_completion_policy": "store challenge completion and grant rewards on first eligible return without replay"
+  },
+  "exits": [
+    {
+      "exit_id": "tck_exit_shadow_alley",
+      "destination_id": "debaucheryville_oldtown_shadow_exchange_01",
+      "from_node": "tck_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Three-Crown Alley -> Bravado Threshold -> Creaky Floor Route -> Slurring Bar Flies -> Keg Sentinel Arena -> Bartender Service -> Velvet Keg Throne -> Alley Exit",
+    "landmarks": [
+      "Three-Crown Alley",
+      "Bravado Threshold",
+      "Creaky Floor Route",
+      "Slurring Bar Flies",
+      "Keg Sentinel Arena",
+      "Bartender Service",
+      "Velvet Keg Throne",
+      "Alley Exit"
+    ],
+    "ownership_boundaries": [
+      "Parent owns approach; this package owns destination side through tck_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A sticky royal dive bar whose patrons, creaky tiles and keg throne form a stealth dungeon."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "rust orange",
+      "beer amber",
+      "mold green",
+      "tarnished brass"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Noble by Liver",
+    "contrast": "A sticky royal dive bar whose patrons, creaky tiles and keg throne form a stealth dungeon."
+  },
+  "state_tracking": {
+    "three_crown_route_discovered": false,
+    "three_crown_challenge_complete": false,
+    "three_crown_tour_rewards_deferred": false,
+    "three_crown_tour_rewards_granted": false,
+    "three_crown_selfie_unlocked": false
+  },
+  "progressive_states": [
+    {
+      "state": "pre_tour_complete",
+      "behavior": "Challenge remains complete; rewards deferred."
+    },
+    {
+      "state": "tour_eligible_return",
+      "behavior": "Grant opener, stamp, selfie and beer purchase access without replay."
+    }
+  ],
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 128,
+    "streaming_groups": [
+      "three_crown_keg_haus_entry",
+      "three_crown_keg_haus_dungeon",
+      "three_crown_keg_haus_boss_ui"
+    ]
+  }
+}

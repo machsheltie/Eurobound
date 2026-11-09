@@ -1,0 +1,95 @@
+{
+  "ppm": 400.0,
+  "props": {
+    "aa_prop_cabinet_front": {
+      "texture_px": [
+        290,
+        740
+      ],
+      "height_m": 1.85,
+      "width_m": 0.725,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_cabinet_side": {
+      "texture_px": [
+        383,
+        740
+      ],
+      "height_m": 1.85,
+      "width_m": 0.958,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_chalkboard": {
+      "texture_px": [
+        312,
+        460
+      ],
+      "height_m": 1.15,
+      "width_m": 0.78,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_wall_sign_tokens": {
+      "texture_px": [
+        240,
+        640
+      ],
+      "height_m": 1.6,
+      "width_m": 0.6,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_awning_bracket": {
+      "texture_px": [
+        274,
+        420
+      ],
+      "height_m": 1.05,
+      "width_m": 0.685,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_wall_lantern_front": {
+      "texture_px": [
+        116,
+        320
+      ],
+      "height_m": 0.8,
+      "width_m": 0.29,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_wall_lantern_side": {
+      "texture_px": [
+        287,
+        380
+      ],
+      "height_m": 0.95,
+      "width_m": 0.718,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_bollard": {
+      "texture_px": [
+        110,
+        360
+      ],
+      "height_m": 0.9,
+      "width_m": 0.275,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_potted_shrub": {
+      "texture_px": [
+        251,
+        520
+      ],
+      "height_m": 1.3,
+      "width_m": 0.627,
+      "pivot": "bottom_center"
+    },
+    "aa_prop_metal_bucket": {
+      "texture_px": [
+        106,
+        152
+      ],
+      "height_m": 0.38,
+      "width_m": 0.265,
+      "pivot": "bottom_center"
+    }
+  }
+}

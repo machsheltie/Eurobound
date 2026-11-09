@@ -1,0 +1,62 @@
+{
+  "location_id": "debaucheryville_shop_midnight_munchies_01",
+  "item_category": "Night Convenience Store / Recovery Vendor",
+  "items": [
+    {
+      "item_id": "mm_energy_drink",
+      "display_name": "Emergency Energy Drink",
+      "item_type": "consumable",
+      "price": 4,
+      "effect": "Restores SP; may delay sleep.",
+      "acquisition": "Recovery aisle."
+    },
+    {
+      "item_id": "mm_instant_noodles",
+      "display_name": "Instant Noodles",
+      "item_type": "consumable",
+      "price": 3,
+      "effect": "Restores HP when prepared in hostel kitchen.",
+      "acquisition": "Recovery aisle."
+    },
+    {
+      "item_id": "mm_heat_lamp_kebab",
+      "display_name": "Heat-Lamp Kebab",
+      "item_type": "consumable",
+      "price": 6,
+      "effect": "Recovery quality determined by lottery.",
+      "acquisition": "Heat lamp."
+    },
+    {
+      "item_id": "mm_hygiene_kit",
+      "display_name": "Emergency Hygiene Kit",
+      "item_type": "utility",
+      "price": 12,
+      "effect": "Clears selected social penalties.",
+      "acquisition": "Hygiene aisle."
+    },
+    {
+      "item_id": "mm_earplugs",
+      "display_name": "Budget Earplugs",
+      "item_type": "equipment",
+      "price": 5,
+      "effect": "Minor club audio-hazard resistance.",
+      "acquisition": "Supplies aisle."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "nothingisgettingthrough requested goods",
+      "ownership": "external"
+    },
+    {
+      "reference": "Hostel kitchen preparation",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies another currency",
+    "price_confirmation_required": true,
+    "time_modifiers": "Apply only documented time-based changes"
+  }
+}

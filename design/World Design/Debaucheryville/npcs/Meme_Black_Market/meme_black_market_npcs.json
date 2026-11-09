@@ -1,0 +1,60 @@
+{
+  "location_id": "debaucheryville_museum_meme_black_market_01",
+  "location_name": "Meme Black Market",
+  "npcs": [
+    {
+      "npc_id": "mbm_npc_memelord_exe",
+      "display_name": "MemeLord.exe",
+      "role": "vendor, summoner and mastery keeper",
+      "node": "mbm_vendor_counter",
+      "schedule": "while market unlocked",
+      "visual": "Layered retro merch, CRT visor and sacred floppy wallet.",
+      "quest_bindings": [
+        "ICQ darkweb",
+        "graffiti quest",
+        "Lord Pilsner lore"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "meme_black_market_ambient_1",
+      "display_name": "ASCII cat projections",
+      "spawn_nodes": [
+        "mbm_trinket_wall",
+        "mbm_mastery_terminal",
+        "mbm_altar"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "meme_black_market_ambient_2",
+      "display_name": "summoned meme silhouettes",
+      "spawn_nodes": [
+        "mbm_trinket_wall",
+        "mbm_mastery_terminal",
+        "mbm_altar"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "mbm_npc_memelord_exe",
+      "node_id": "mbm_vendor_counter",
+      "role": "vendor, summoner and mastery keeper"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Do not overlap named NPC silhouettes",
+    "Reduce ambient count during quest scenes"
+  ]
+}

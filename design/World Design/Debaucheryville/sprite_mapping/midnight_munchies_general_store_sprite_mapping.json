@@ -1,0 +1,214 @@
+{
+  "location_id": "debaucheryville_shop_midnight_munchies_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "midnight_munchies_general_store_environment",
+      "atlas": "midnight_munchies_general_store_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "midnight_munchies_general_store_exterior",
+          "filename": "midnight_munchies_general_store_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "mm_storefront"
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_interior",
+          "filename": "midnight_munchies_general_store_interior.png",
+          "role": "interior/service-footprint painted layer",
+          "node_id": "mm_recovery_aisle"
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_node_mm_recovery_aisle",
+          "filename": "midnight_munchies_general_store_mm_recovery_aisle.png",
+          "role": "shop landmark",
+          "node_id": "mm_recovery_aisle"
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_node_mm_hygiene_aisle",
+          "filename": "midnight_munchies_general_store_mm_hygiene_aisle.png",
+          "role": "shop landmark",
+          "node_id": "mm_hygiene_aisle"
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_node_mm_heat_lamp",
+          "filename": "midnight_munchies_general_store_mm_heat_lamp.png",
+          "role": "interaction landmark",
+          "node_id": "mm_heat_lamp"
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_node_mm_counter",
+          "filename": "midnight_munchies_general_store_mm_counter.png",
+          "role": "service landmark",
+          "node_id": "mm_counter"
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_node_mm_exit",
+          "filename": "midnight_munchies_general_store_mm_exit.png",
+          "role": "exit landmark",
+          "node_id": "mm_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "midnight_munchies_general_store_characters",
+      "atlas": "midnight_munchies_general_store_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "midnight_munchies_general_store_npc_mm_npc_vera",
+          "filename": "midnight_munchies_general_store_mm_npc_vera.png",
+          "role": "character sprite",
+          "node_id": "mm_counter"
+        }
+      ]
+    },
+    {
+      "group_id": "midnight_munchies_general_store_ui_fx",
+      "atlas": "midnight_munchies_general_store_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "midnight_munchies_general_store_item_mm_energy_drink",
+          "filename": "midnight_munchies_general_store_mm_energy_drink.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_item_mm_instant_noodles",
+          "filename": "midnight_munchies_general_store_mm_instant_noodles.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_item_mm_heat_lamp_kebab",
+          "filename": "midnight_munchies_general_store_mm_heat_lamp_kebab.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_item_mm_hygiene_kit",
+          "filename": "midnight_munchies_general_store_mm_hygiene_kit.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_item_mm_earplugs",
+          "filename": "midnight_munchies_general_store_mm_earplugs.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_ui",
+          "filename": "midnight_munchies_general_store_ui.png",
+          "role": "interaction and status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_fx",
+          "filename": "midnight_munchies_general_store_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "midnight_munchies_general_store_masks",
+          "filename": "midnight_munchies_general_store_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "mm_npc_vera_standard",
+      "asset_id": "midnight_munchies_general_store_npc_mm_npc_vera",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "midnight_munchies_general_store_emission",
+      "mask_asset": "midnight_munchies_general_store_masks",
+      "nodes": [
+        "mm_storefront",
+        "mm_recovery_aisle",
+        "mm_hygiene_aisle",
+        "mm_heat_lamp",
+        "mm_counter",
+        "mm_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "mm_exit_row",
+      "destination_id": "debaucheryville_hostel_row",
+      "from_node": "mm_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "mm_ref_hostel",
+      "destination_id": "debaucheryville_hostel_midnight_checkout_01",
+      "from_node": "mm_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "mm_browse",
+      "node_id": "mm_recovery_aisle",
+      "highlight_asset": "midnight_munchies_general_store_node_mm_recovery_aisle"
+    },
+    {
+      "interaction_id": "mm_heat_lamp_roll",
+      "node_id": "mm_heat_lamp",
+      "highlight_asset": "midnight_munchies_general_store_node_mm_heat_lamp"
+    },
+    {
+      "interaction_id": "mm_checkout",
+      "node_id": "mm_counter",
+      "highlight_asset": "midnight_munchies_general_store_node_mm_counter"
+    },
+    {
+      "interaction_id": "mm_regular_check",
+      "node_id": "mm_counter",
+      "highlight_asset": "midnight_munchies_general_store_node_mm_counter"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "midnight_munchies_general_store_masks",
+      "channels": {
+        "r": "signs",
+        "g": "screens/practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 10,
+    "reduced_fx_asset": "midnight_munchies_general_store_fx"
+  }
+}

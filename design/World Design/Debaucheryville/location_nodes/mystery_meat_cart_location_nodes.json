@@ -1,0 +1,198 @@
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_cirque_mystery_cart_01",
+      "name": "Cirque du Shady - Mystery Meat Cart",
+      "tag_id": "mystery_meat_cart",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Pushcart beside ringmaster tent under violent carnival light.",
+        "entry_condition": "Cirque du Shady accessible; Vendor open during circus hours"
+      },
+      "interior": {
+        "theme": "A steam-belching carnival pushcart whose rotisserie spins like a cursed carousel.",
+        "features": [
+          "shop: mmc_menu",
+          "interaction: mmc_rotisserie",
+          "service: mmc_chef",
+          "examine: mmc_storage",
+          "interaction: mmc_consume",
+          "exit: mmc_exit"
+        ]
+      },
+      "functions": [
+        "Browse Meat Roulette",
+        "Order from Chuckles",
+        "Eat Mystery Meat",
+        "Show Full Clown Gear",
+        "Inspect Ingredient Storage"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "mmc_cart",
+      "to": "mmc_menu",
+      "bidirectional": true
+    },
+    {
+      "from": "mmc_menu",
+      "to": "mmc_rotisserie",
+      "bidirectional": true
+    },
+    {
+      "from": "mmc_rotisserie",
+      "to": "mmc_chef",
+      "bidirectional": true
+    },
+    {
+      "from": "mmc_chef",
+      "to": "mmc_storage",
+      "bidirectional": true
+    },
+    {
+      "from": "mmc_storage",
+      "to": "mmc_consume",
+      "bidirectional": true
+    },
+    {
+      "from": "mmc_consume",
+      "to": "mmc_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "mmc_cart": {
+      "connects_to": [
+        "mmc_menu"
+      ],
+      "type": "exterior",
+      "description": "Pushcart beside ringmaster tent under violent carnival light."
+    },
+    "mmc_menu": {
+      "connects_to": [
+        "mmc_cart",
+        "mmc_rotisserie"
+      ],
+      "type": "shop",
+      "description": "Sign cycles Shady Dogs, Meat Roulette and disclaimers."
+    },
+    "mmc_rotisserie": {
+      "connects_to": [
+        "mmc_menu",
+        "mmc_chef"
+      ],
+      "type": "interaction",
+      "description": "Neon carousel of suspicious spinning meat."
+    },
+    "mmc_chef": {
+      "connects_to": [
+        "mmc_rotisserie",
+        "mmc_storage"
+      ],
+      "type": "service",
+      "description": "Knife-flip counter and cracked mask display."
+    },
+    "mmc_storage": {
+      "connects_to": [
+        "mmc_chef",
+        "mmc_consume"
+      ],
+      "type": "examine",
+      "description": "Closed containers and source-appropriate mystery."
+    },
+    "mmc_consume": {
+      "connects_to": [
+        "mmc_storage",
+        "mmc_exit"
+      ],
+      "type": "interaction",
+      "description": "Reaction zone near the cart."
+    },
+    "mmc_exit": {
+      "connects_to": [
+        "mmc_consume"
+      ],
+      "type": "exit",
+      "description": "Returns to circus grounds."
+    }
+  },
+  "feature_details": {
+    "mmc_cart": {
+      "display_name": "Mystery Meat Cart",
+      "image_generation_description": "Pushcart beside ringmaster tent under violent carnival light.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "mmc_menu": {
+      "display_name": "Glitching Menu Sign",
+      "image_generation_description": "Sign cycles Shady Dogs, Meat Roulette and disclaimers.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "mmc_rotisserie": {
+      "display_name": "Carousel Rotisserie",
+      "image_generation_description": "Neon carousel of suspicious spinning meat.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "mmc_chef": {
+      "display_name": "Chef Chuckles Station",
+      "image_generation_description": "Knife-flip counter and cracked mask display.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "mmc_storage": {
+      "display_name": "Ingredient Storage",
+      "image_generation_description": "Closed containers and source-appropriate mystery.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "mmc_consume": {
+      "display_name": "Circus Eating Spot",
+      "image_generation_description": "Reaction zone near the cart.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "mmc_exit": {
+      "display_name": "Circus Exit",
+      "image_generation_description": "Returns to circus grounds.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    }
+  },
+  "ambient_npcs": [
+    "crying children",
+    "circus customers",
+    "steam silhouettes"
+  ]
+}

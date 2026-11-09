@@ -1,0 +1,36 @@
+{
+  "group_id": "d9a913ce-4d7d-4215-8214-6a86cf619739",
+  "states": [
+    {
+      "character": {
+        "id": "987f1945-25e6-4877-af3e-452384e15d50",
+        "name": "Idle",
+        "prompt": "Bradley, an aging frat bro around 38, semi-realistic adult proportions about 4.5 heads tall (not chibi), stocky muscular build. Short spiky light-brown hair with two shaved lines on the side, stubble beard, small silver hoop earring, lazy confident half-smile. Teal basketball jersey with purple and white trim, white lettering and a white number on the chest, worn over a white t-shirt. Yellow rubber wristband on the left wrist. Black pager clipped to the waistband. Very baggy medium-wash denim jeans pooling over chunky white high-top sneakers. Hands in his pockets, relaxed wide stance.",
+        "size": {
+          "width": 128,
+          "height": 128
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-11-04T13:51:44.298355+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-11-04T13:54:47.304545"
+}

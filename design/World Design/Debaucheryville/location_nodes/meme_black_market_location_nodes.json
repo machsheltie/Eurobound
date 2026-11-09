@@ -1,0 +1,197 @@
+{
+  "location_id": "debaucheryville_museum_meme_black_market_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_museum_meme_black_market_01",
+      "name": "Meme Black Market",
+      "tag_id": "meme_black_market",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Inside face of the museum's secret shelf.",
+        "entry_condition": "meme_black_market_entrance_unlocked"
+      },
+      "interior": {
+        "theme": "An RGB-lit contraband den where corrupted GIFs and obsolete jokes are treated as sacred inventory.",
+        "features": [
+          "service: mbm_vendor_counter",
+          "interaction: mbm_summon_point",
+          "shop: mbm_trinket_wall",
+          "progression: mbm_mastery_terminal",
+          "lore: mbm_altar",
+          "exit: mbm_exit"
+        ]
+      },
+      "functions": [
+        "Meet MemeLord.exe",
+        "Summon Meme",
+        "Browse Meme Trinkets",
+        "Inspect MemeMastery",
+        "Return Through Shelf"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "mbm_shelf_threshold",
+      "to": "mbm_vendor_counter",
+      "bidirectional": true
+    },
+    {
+      "from": "mbm_vendor_counter",
+      "to": "mbm_summon_point",
+      "bidirectional": true
+    },
+    {
+      "from": "mbm_summon_point",
+      "to": "mbm_trinket_wall",
+      "bidirectional": true
+    },
+    {
+      "from": "mbm_trinket_wall",
+      "to": "mbm_mastery_terminal",
+      "bidirectional": true
+    },
+    {
+      "from": "mbm_mastery_terminal",
+      "to": "mbm_altar",
+      "bidirectional": true
+    },
+    {
+      "from": "mbm_altar",
+      "to": "mbm_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "mbm_shelf_threshold": {
+      "connects_to": [
+        "mbm_vendor_counter"
+      ],
+      "type": "transition",
+      "description": "Inside face of the museum's secret shelf."
+    },
+    "mbm_vendor_counter": {
+      "connects_to": [
+        "mbm_shelf_threshold",
+        "mbm_summon_point"
+      ],
+      "type": "service",
+      "description": "Retro-computer altar used as a contraband counter."
+    },
+    "mbm_summon_point": {
+      "connects_to": [
+        "mbm_vendor_counter",
+        "mbm_trinket_wall"
+      ],
+      "type": "interaction",
+      "description": "Projected GIF ring for risky summons."
+    },
+    "mbm_trinket_wall": {
+      "connects_to": [
+        "mbm_summon_point",
+        "mbm_mastery_terminal"
+      ],
+      "type": "shop",
+      "description": "Funcoland bags, icons and corrupted artifacts."
+    },
+    "mbm_mastery_terminal": {
+      "connects_to": [
+        "mbm_trinket_wall",
+        "mbm_altar"
+      ],
+      "type": "progression",
+      "description": "Crashing desktop that tracks mastery."
+    },
+    "mbm_altar": {
+      "connects_to": [
+        "mbm_mastery_terminal",
+        "mbm_exit"
+      ],
+      "type": "lore",
+      "description": "ASCII cats and devotional away messages."
+    },
+    "mbm_exit": {
+      "connects_to": [
+        "mbm_altar"
+      ],
+      "type": "exit",
+      "description": "Secret shelf returns to the museum."
+    }
+  },
+  "feature_details": {
+    "mbm_shelf_threshold": {
+      "display_name": "VHS Shelf Threshold",
+      "image_generation_description": "Inside face of the museum's secret shelf.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mbm_vendor_counter": {
+      "display_name": "MemeLord.exe Counter",
+      "image_generation_description": "Retro-computer altar used as a contraband counter.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mbm_summon_point": {
+      "display_name": "Meme Summon Circle",
+      "image_generation_description": "Projected GIF ring for risky summons.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mbm_trinket_wall": {
+      "display_name": "Meme Trinket Wall",
+      "image_generation_description": "Funcoland bags, icons and corrupted artifacts.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mbm_mastery_terminal": {
+      "display_name": "MemeMastery Terminal",
+      "image_generation_description": "Crashing desktop that tracks mastery.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mbm_altar": {
+      "display_name": "AIM Away-Message Altar",
+      "image_generation_description": "ASCII cats and devotional away messages.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mbm_exit": {
+      "display_name": "Return Shelf",
+      "image_generation_description": "Secret shelf returns to the museum.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    }
+  },
+  "ambient_npcs": [
+    "ASCII cat projections",
+    "summoned meme silhouettes"
+  ]
+}

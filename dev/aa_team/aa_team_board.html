@@ -1,0 +1,183 @@
+<title>Absinthe Arcade Build Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style id="css">
+/* Layout: one reading column — crew status strip, open questions (the work), answered log, render gallery at the foot. */
+:root{
+  --bg:#eceee7; --surface:#f8f9f4; --line:#cfd3c6; --fg:#1c2018; --muted:#5d6555;
+  --green:#3d7a19; --violet:#6a3db0; --warn:#9a5b00; --ok:#2f6f2a;
+  --display:"Big Shoulders Display","Arial Narrow",sans-serif;
+  --body:"Atkinson Hyperlegible",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11140f; --surface:#191d16; --line:#2e3529; --fg:#e3e8da; --muted:#9aa38f;
+  --green:#9ad65a; --violet:#b48ef2; --warn:#e3a54a; --ok:#86c96f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11140f; --surface:#191d16; --line:#2e3529; --fg:#e3e8da; --muted:#9aa38f;
+  --green:#9ad65a; --violet:#b48ef2; --warn:#e3a54a; --ok:#86c96f; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px;display:grid;gap:36px}
+header{display:grid;gap:6px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,6vw,54px);line-height:.95;letter-spacing:.01em;margin:0;text-wrap:balance}
+h1 .g{color:var(--green)} h1 .v{color:var(--violet)}
+.sub{color:var(--muted);margin:0;max-width:62ch}
+h2{font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:.02em;margin:0 0 12px;text-transform:uppercase}
+.label{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.crew{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px}
+.el{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;display:grid;gap:6px;min-width:0}
+.el .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.el .name{font-weight:700}
+.el .meta{font-family:var(--mono);font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;border:1px solid currentColor;white-space:nowrap}
+.s-queued{color:var(--muted)} .s-working{color:var(--violet)} .s-holding{color:var(--warn)}
+.s-review,.s-rework{color:var(--warn)} .s-complete{color:var(--ok)}
+.q{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--warn);border-radius:6px;padding:16px;display:grid;gap:10px;min-width:0}
+.q .who{display:flex;flex-wrap:wrap;gap:8px 14px}
+.q .text{font-size:16.5px;font-weight:700;margin:0;max-width:70ch}
+.q .ctx{margin:0;color:var(--muted);max-width:70ch;white-space:pre-line}
+.q ul{margin:0;padding-left:20px;color:var(--fg)}
+.q label{font-family:var(--mono);font-size:12px;color:var(--muted)}
+textarea{width:100%;box-sizing:border-box;min-height:84px;font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:10px;resize:vertical}
+textarea:focus-visible,button:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+.qs{display:grid;gap:14px}
+.bar{position:sticky;bottom:0;padding-block:12px;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+button{font:inherit;font-weight:700;cursor:pointer;border-radius:4px;border:1px solid var(--green);background:var(--green);color:var(--bg);padding:10px 18px}
+button:disabled{opacity:.45;cursor:not-allowed}
+.note{color:var(--muted);font-size:13.5px}
+.empty{color:var(--muted);border:1px dashed var(--line);border-radius:6px;padding:18px}
+details.log{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 14px}
+details.log summary{cursor:pointer;font-weight:700}
+.ans{border-top:1px solid var(--line);padding-block:10px;display:grid;gap:4px}
+.ans .a{color:var(--green);white-space:pre-line}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.shot{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:grid;min-width:0}
+.shot button{all:unset;cursor:zoom-in;display:block}
+.shot button:focus-visible{outline:2px solid var(--violet)}
+.shot img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--bg)}
+.shot .cap{padding:8px 10px;display:grid;gap:2px}
+.shot .cap b{font-size:14px}
+.lb{position:fixed;inset:0;background:rgba(8,10,6,.92);display:grid;place-items:center;z-index:20;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-width:100%;max-height:86vh;object-fit:contain}
+.lb p{color:#e3e8da;margin:8px 0 0;text-align:center}
+@media (prefers-reduced-motion:no-preference){.q{transition:border-color .2s}}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Big+Shoulders+Display:wght@700;800&family=JetBrains+Mono:wght@400&display=swap">
+<div class="wrap" id="app"><p class="empty">Loading the build desk…</p></div>
+<script type="application/json" id="state">{"updated": "2026-10-30 02:20", "elements": [{"id": "E1", "name": "Facade massing, storeys, corner bay, roof + camera match", "agent": "mason-2", "model": "Opus 5.5", "effort": "xhigh", "state": "rework", "skills": "blender-core, scene-setup, hardsurface-modeling, lighting-lookdev, asset-qa", "note": "Facade passes. Roof round 2 in (ogee gable, slate courses, trims). Street kit and warm lighting integrated. Waiting on: the E4 curls, the mural re-fit, the arched-window rebuild and the gable head."}, {"id": "E2", "name": "Window set: 5 windows, Baroque surrounds and pediments, ironwork, pots, cat, vine", "agent": "glazier", "model": "Opus 5.5", "effort": "high", "state": "complete", "skills": "blender-core, hardsurface-modeling, sculpting, pbr-materials, asset-qa (+ Tripo)", "note": "Complete 2026-10-29. 11 window kits including 3 side windows and 3 dormers. Final in-scene check comes with mason-2's integration render."}, {"id": "E3", "name": "Entrance: marquee, 3D lettering, slogan banner, four-part doorway, interior set", "agent": "neon", "model": "Opus 5.5", "effort": "high", "state": "complete", "skills": "blender-core, hardsurface-modeling, pbr-materials, lighting-lookdev, asset-qa", "note": "Complete 2026-10-29, fitted to mason-2's final dimensions. Glow needs URP bloom in Unity."}, {"id": "E4", "name": "Keystone head, headphones, hoses, purple conduits, junction boxes, pipes, plaque", "agent": "neon", "model": "Opus 5.5", "effort": "high", "state": "rework", "skills": "blender-core, hardsurface-modeling, geometry-nodes, asset-qa", "note": "Your 3 fixes: marquee tube done, right cup done. Curls rebuilt three ways without success; now going via Tripo, one carving per side. Left cup being pushed in."}, {"id": "E5", "name": "Mural, painted vines, pixel grid, stone and plaster surface", "agent": "neon", "model": "Opus 5.5", "effort": "high", "state": "complete", "skills": "blender-core, pbr-materials, retopology-uv, texture-baking", "note": "Complete 2026-10-30. Peeling layer is a tunable starting layer (node group E5_PeelingPlaster, mask e5_peel_zones.png) for you to correct by hand. Known: halo lighter than the image's gold, faint purple haze by the token hand, lower-left pixel field sparser."}, {"id": "E6", "name": "Street kit: cabinet, awning, A-frame, wall signs, lamps, bollards, bucket, shrub, cobbles", "agent": "glazier (final list; built by neon)", "model": "Opus 5.5", "effort": "high", "state": "complete", "skills": "blender-core, hardsurface-modeling, pbr-materials, workflow-recipes, asset-qa", "note": "Complete 2026-10-30. Cleared for assembly. Known: the bucket reads small, the goblet bowl is shallower, and the dusk light and puddle reflections get set in the final scene lighting."}], "questions": [{"id": "Q-001", "agent": "mason", "element": "E1 roof", "asked": "2026-10-28", "status": "relayed", "question": "How many storeys sit above the balcony window, and is the roof the slate mansard from the asset sheet?", "context": "The daytime image cuts off just above the top-left balcony window. The asset sheet shows: ground floor with the arched window, a floor with the cat window, a floor with the balcony window, then a slate mansard with two dormers, a carved head in a central stone gable, iron cresting and chimney stacks. Mason holds on the roof until you answer.", "options": ["A: Exactly the asset sheet (three masonry storeys, then the mansard with two dormers, central carved gable, cresting, chimneys)", "B: Add another masonry storey before the mansard", "C: Something else (describe)"], "answer": "A", "answered": "2026-10-28 20:36"}, {"id": "Q-002", "agent": "glazier", "element": "E2 windows", "asked": "2026-10-28", "status": "relayed", "question": "Your new breakdown calls the upper windows casements; the 10/27 ruling says they are sash windows whose lower sash only slides up. Which stands?", "context": "Both look the same closed: two tall lower panes over a two-pane transom. The difference is how the cat's window opens and how the frames are split into moving parts. Glazier holds on the opening mechanism and the cat window until you answer.", "options": ["A: Keep the sash ruling and give it the T-bar glazing from the breakdown", "B: Switch to casements; the cat's window swings open", "C: Other"], "answer": "A", "answered": "2026-10-28 20:36"}, {"id": "Q-003", "agent": "orchestrator, for E5", "element": "E5 surface", "asked": "2026-10-28", "status": "relayed", "question": "The breakdown asks for a procedural Voronoi peeling-plaster shader. The 3D rules say you hand-paint all distress. Should an agent build the procedural peeling shader?", "context": "The peeling-plaster pattern is a big part of how the bible reads. If you'd rather paint it, the agent builds a clean stone base and leaves the cracks to you.", "options": ["A: Build the procedural shader as the breakdown says (it replaces the hand-paint rule for this building)", "B: Build it as a starting layer you will paint over", "C: Clean base only; you paint all of it"], "answer": "B I will make corrections where necessary by hand.", "answered": "2026-10-28 20:36"}, {"id": "Q-004", "agent": "orchestrator, for E5", "element": "E5 mural", "asked": "2026-10-28", "status": "relayed", "question": "Where should the mural texture come from?", "context": "The breakdown says to generate it as a high-res 2D texture. The closest match to the bible is to lift it straight off the daytime image: undo the perspective, paint out the keystone head, pipes and window frames, then upscale.", "options": ["A: Lift it from the daytime image (rectify, clean, upscale)", "B: You supply a flat mural painting", "C: Generate a new one with an image model, matched to the bible"], "answer": "I've added the muralreference.PNG is the best to choose from", "answered": "2026-10-28 20:36"}, {"id": "Q-005", "agent": "orchestrator, for E6", "element": "E6 signs", "asked": "2026-10-28", "status": "relayed", "question": "What does the small upper corner sign say? The image shows a garbled 'KOGENS / GEGRET' and the breakdown says 'TOKENS / GEGRETS'.", "context": "The tall sign below it already reads TOKENS / DRINKS / GAMES / REGRETS.", "options": ["A: TOKENS / GEGRETS, typo intended", "B: TOKENS / REGRETS", "C: Something else"], "answer": "B", "answered": "2026-10-28 20:36"}, {"id": "Q-006", "agent": "orchestrator, for E6", "element": "E6 signs", "asked": "2026-10-28", "status": "relayed", "question": "Is the CLOCKTOWER PLAZA hanging sign part of the Arcade build?", "context": "Your breakdown files it under 'Adjacent elements'. The asset sheet mounts it on the Arcade's left corner. The VINA / PIVA / KAVA cafe stays out either way, since neighbouring buildings are scaffolding.", "options": ["A: Yes, mount it on the Arcade's left corner as the asset sheet shows", "B: No, leave it out"], "answer": "A", "answered": "2026-10-28 20:36"}, {"id": "Q-007", "agent": "glazier", "element": "E2 windows", "asked": "2026-10-28", "status": "relayed", "answered": "2026-10-28 17:05", "question": "Where the breakdown and the daytime image disagree on window details (W1 panes and pots, W2 pot count, lower-pane split, curtain style, R1 pots and the dome lamp, a copper pot on W3), which wins?", "answer": "Answered by the orchestrator from your instruction that the daytime image is the bible: the image wins on every point. Glazier lists each difference in its report. Overrule here if the breakdown should win on any item."}, {"id": "Q-008", "agent": "neon", "element": "E3 entrance", "asked": "2026-10-28", "status": "relayed", "answered": "2026-10-28 17:10", "question": "The breakdown and the daytime image disagree at the doors: the cocktail's liquid (green vs amber), and the purple panes (two on the right door vs a 2x2 grid of four on both doors). Which wins?", "answer": "Answered by the orchestrator from your instruction that the daytime image is the bible: amber liquid with a white-lavender glass outline, and four purple panes on both doors. The slogan letters match the image's pale lavender. Overrule here if you want the breakdown's version."}, {"id": "Q-009", "agent": "glazier", "element": "E2 windows", "asked": "2026-10-28", "status": "relayed", "question": "The lower sash of the cat window and R1: one undivided pane, as the daytime image shows, or split into two panes (the T-bar in your Q-002 answer)?", "context": "Your Q-002 answer kept the sash ruling 'with the T-bar glazing from the breakdown'. After that, glazier cut full-res crops and found the image shows a single lower pane under a two-pane transom, with no centre bar across the curtain. Glazier is building everything else and holds on this one bar.", "options": ["A: One undivided lower pane, as the image shows", "B: Two lower panes (T-bar), as the breakdown says"], "answer": "A", "answered": "2026-10-28 20:39"}, {"id": "Q-010", "agent": "orchestrator, for E5", "element": "E5 mural", "asked": "2026-10-28", "status": "relayed", "question": "For the mural, should the agent use panel 1 of muralreference.png (the clean isolated artwork) and fit it to the wall?", "context": "Panel 1 is about 1,500 px wide, so a 4K wall texture needs upscaling. Fitting it means scaling and placing it so the fairy, the pixel field and the circuit traces land where the daytime image has them, and removing the painted keystone head at its base (the real head is a 3D sculpture). Where panel 1 is cut off at its edges, the agent extends it from the daytime image. Panels 4 to 8 serve as close-up detail references.", "options": ["A: Yes, exactly that", "B: Use it as-is, with no upscaling or extending", "C: Something else (describe)"], "answer": "A", "answered": "2026-10-28 20:39"}, {"id": "Q-011", "agent": "mason", "element": "E1 massing", "asked": "2026-10-28", "status": "relayed", "question": "How deep is the building from front to back?", "context": "You asked for the right side to match the asset sheet. The sheet's right side elevation is one window bay wide: a downpipe and lantern at the front corner, one window per storey with flower boxes, a ground-floor window with a small striped awning and a framed panel, a downpipe at the back corner, and the mansard with one dormer and chimneys. At our storey heights that is about 4 m deep. The earlier blockout ruling made the building 12 m deep. A 12 m side wall would need content the sheet doesn't show. A 4 m building leaves the entrance hall seen through the doors only about 3.4 m deep.", "options": ["A: About 4 m deep, exactly the sheet's one-bay side. The interior behind the doors fits or is faked inside about 3.4 m.", "B: Keep 12 m. The sheet's one-bay elevation fills the front 4 m of the right side, and the 8 m behind it is plain party wall where an unbuilt neighbour abuts.", "C: Another depth (give it)"], "answer": "A", "answered": "2026-10-28 21:23"}], "gallery": [{"element": "E4", "title": "Keystone head vs bible", "url": "/_blob/def51abb03254c8533eeb58af0e74002", "date": "2026-10-29", "caption": "Left: your daytime image. Right: Tripo head, ear cups, crown tube and lower carving through the matched camera."}, {"element": "E4", "title": "Keystone, conduits and boxes", "url": "/_blob/3c433c86456b12fe449568b4a6662379", "date": "2026-10-29", "caption": "Crop 05 framing. Wall, mural and windows are stand-in context from other elements."}, {"element": "E4", "title": "Right junction box", "url": "/_blob/c87d87499972042b6566b3e397305524", "date": "2026-10-29", "caption": "Warning triangle, keyhole lock, conduit entries."}, {"element": "E4", "title": "House number 13", "url": "/_blob/9d6921219cbfd62b7501265989b989bb", "date": "2026-10-29", "caption": ""}, {"element": "E3", "title": "Entrance vs bible", "url": "/_blob/db953bd4b19139e07b3654d86ab994ed", "date": "2026-10-29", "caption": "Marquee, slogan banner, four-part doorway and interior hall through the matched camera."}, {"element": "E3", "title": "Marquee lettering", "url": "/_blob/6c40c8e0c2ba236068be6d21d0f8ec2d", "date": "2026-10-29", "caption": "ABSINTHE square LED cells, ARCADE beaded gradient, Space Invader, token emblem."}, {"element": "E3", "title": "Doorway and interior", "url": "/_blob/e21dfadf7835a786b634f0522d5a83c7", "date": "2026-10-29", "caption": "Stained-glass leaves, eight-line sign, flyers, and the 3.4 m forced-perspective hall."}, {"element": "E2", "title": "Arched window (above the awning)", "url": "/_blob/abe9c6e85877198701ac6ffb284792fb", "date": "2026-10-29", "caption": "Scroll-web balconette, traced fanlight, carved rosette keystone."}, {"element": "E2", "title": "Cat window", "url": "/_blob/52068af510adc7c86b9b468add465877", "date": "2026-10-29", "caption": "Sash raised, sheer curtain to the sill behind the cat, its own pediment and apron."}, {"element": "E2", "title": "Top balcony window", "url": "/_blob/6b2901c3803ecc42e6115a3ef42b4381", "date": "2026-10-29", "caption": "Belly rail, copper pot, flowering vine draping down the wall."}, {"element": "E2", "title": "Window right of the coin hand", "url": "/_blob/79a243387763ab448d28636594d867ba", "date": "2026-10-29", "caption": "Two pots and the glass-dome filament lamp."}, {"element": "E2", "title": "Top-right window (asset sheet)", "url": "/_blob/5b88189da1e5018c9449cc800468cb1e", "date": "2026-10-29", "caption": "Built from the asset sheet: 2+2 panes, straight curtains, orange and yellow flowers."}, {"element": "E2", "title": "Dormer (asset sheet)", "url": "/_blob/73e167604e370d0c2ebce2b91b277150", "date": "2026-10-29", "caption": "Triangular pediment with medallion, pots and vine."}, {"element": "E5", "title": "Mural vs bible", "url": "/_blob/95dc51d995790502ecafcecb94afbfac", "date": "2026-10-30", "caption": "Panel 1 fitted through the matched camera; colour matched to the image."}, {"element": "E5", "title": "Facade with mural", "url": "/_blob/ba51f2744df2f3e074a6139f97d44d5a", "date": "2026-10-30", "caption": "Mural, vines and stone on mason-2's v2 shell. Street props are not in this view."}, {"element": "E5", "title": "Stone and peeling plaster", "url": "/_blob/c6667ebaa3d33aebce483f690ecc673f", "date": "2026-10-30", "caption": "Your texture.jpg as the base, the procedural peeling layer on top."}, {"element": "Assembly", "title": "First assembled view (in progress)", "url": "/_blob/4037519eab18e5aba8de1a1e9ec26b25", "date": "2026-10-30", "caption": "Main file through the matched camera: shell, roof, windows, entrance and mural. Still to come: the reworked keystone, the new street kit, the mural re-fit, the arched-window rebuild and scene lighting."}, {"element": "E6", "title": "Street kit vs bible", "url": "/_blob/c82f51e258eb1152a77b6f25d5d77880", "date": "2026-10-30", "caption": "Cabinet, awning, chalkboard, corner signs, bollards, wet cobbles and leaf litter."}, {"element": "E6", "title": "Corner wall signs", "url": "/_blob/23862e991edcea6b098b78da6f600043", "date": "2026-10-30", "caption": "TOKENS / REGRETS plaque (your Q-005 ruling) and the TOKENS / DRINKS / GAMES / REGRETS board."}, {"element": "E6", "title": "Arcade cabinet", "url": "/_blob/70f9aff95bffeb75e83616894fe9c200", "date": "2026-10-30", "caption": "Sticker-bombed cabinet with the ABSINTHE ARCADE marquee."}], "lastSubmit": "2026-10-28 21:23"}</script>
+<script id="appjs">
+(function(){
+  var STATE = JSON.parse(document.getElementById('state').textContent);
+  var app = document.getElementById('app');
+  var DKEY = 'aa_desk_draft_';
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function getDraft(id){try{return localStorage.getItem(DKEY+id)||'';}catch(e){return '';}}
+  function setDraft(id,v){try{localStorage.setItem(DKEY+id,v);}catch(e){}}
+  function dropDraft(id){try{localStorage.removeItem(DKEY+id);}catch(e){}}
+  var STATE_LABEL={queued:'Queued',working:'Working',holding:'Holding for you',review:'In review',rework:'Rework',complete:'Complete'};
+  var artifactNs=null, commentsNs=null, readOnly=false;
+
+  function render(){
+    var open=STATE.questions.filter(function(q){return q.status==='open';});
+    var done=STATE.questions.filter(function(q){return q.status!=='open';}).slice().reverse();
+    var h='';
+    h+='<header><span class="label">Debaucheryville · Absinthe Arcade exterior · updated '+esc(STATE.updated)+'</span>';
+    h+='<h1><span class="g">Absinthe</span> <span class="v">Arcade</span> build desk</h1>';
+    h+='<p class="sub">Questions from the modelling crew land here. Answer what you can, then press Submit answers. Each agent that asked is holding until its answer arrives.</p></header>';
+
+    h+='<section><h2>Crew and elements</h2>';
+    if(!STATE.elements.length){h+='<p class="empty">No elements assigned yet.</p>';}
+    else{h+='<div class="crew">';STATE.elements.forEach(function(e){
+      h+='<div class="el"><div class="top"><span class="name">'+esc(e.id)+' · '+esc(e.name)+'</span><span class="chip s-'+esc(e.state)+'">'+esc(STATE_LABEL[e.state]||e.state)+'</span></div>';
+      h+='<span class="meta">'+esc(e.agent)+' · '+esc(e.model)+' / '+esc(e.effort)+'</span>';
+      if(e.skills)h+='<span class="meta">'+esc(e.skills)+'</span>';
+      if(e.note)h+='<span class="note">'+esc(e.note)+'</span>';
+      h+='</div>';});h+='</div>';}
+    h+='</section>';
+
+    h+='<section><h2>Open questions <span class="label">('+open.length+')</span></h2>';
+    if(!open.length){h+='<p class="empty">Nothing waiting on you. New questions show up here as the crew raises them.</p>';}
+    else{h+='<div class="qs">';open.forEach(function(q){
+      h+='<article class="q"><div class="who"><span class="label">'+esc(q.id)+'</span><span class="label">from '+esc(q.agent)+'</span><span class="label">'+esc(q.element)+'</span><span class="label">asked '+esc(q.asked)+'</span></div>';
+      h+='<p class="text">'+esc(q.question)+'</p>';
+      if(q.context)h+='<p class="ctx">'+esc(q.context)+'</p>';
+      if(q.options&&q.options.length){h+='<ul>';q.options.forEach(function(o){h+='<li>'+esc(o)+'</li>';});h+='</ul>';}
+      h+='<label for="ans-'+esc(q.id)+'">Your answer</label><textarea id="ans-'+esc(q.id)+'" data-q="'+esc(q.id)+'" placeholder="Type your ruling. Leave blank to keep it open.">'+esc(getDraft(q.id))+'</textarea></article>';});
+      h+='</div>';}
+    h+='</section>';
+
+    if(open.length){h+='<div class="bar"><span class="note" id="barnote">'+(readOnly?'This view is read-only.':'Drafts are kept on this device until you submit.')+'</span><button id="submit" '+(readOnly?'disabled':'')+'>Submit answers</button></div>';}
+
+    h+='<section><details class="log"><summary>Answered ('+done.length+')</summary>';
+    if(!done.length)h+='<p class="note">No answers yet.</p>';
+    done.forEach(function(q){h+='<div class="ans"><span class="label">'+esc(q.id)+' · '+esc(q.agent)+' · '+esc(q.status==='relayed'?'relayed to agent':'awaiting relay')+'</span><span>'+esc(q.question)+'</span><span class="a">'+esc(q.answer)+'</span></div>';});
+    h+='</details></section>';
+
+    h+='<section><h2>Completed work</h2>';
+    if(!STATE.gallery.length){h+='<p class="empty">Renders of finished elements appear here, newest first, each next to the reference crop it was judged against.</p>';}
+    else{h+='<div class="gallery">';STATE.gallery.slice().reverse().forEach(function(g,i){
+      h+='<figure class="shot" style="margin:0"><button data-img="'+esc(g.url)+'" data-cap="'+esc(g.title)+'"><img loading="lazy" src="'+esc(g.url)+'" alt="'+esc(g.title)+'"></button><figcaption class="cap"><b>'+esc(g.title)+'</b><span class="label">'+esc(g.element)+' · '+esc(g.date)+'</span>'+(g.caption?'<span class="note">'+esc(g.caption)+'</span>':'')+'</figcaption></figure>';});
+      h+='</div>';}
+    h+='</section>';
+    app.innerHTML=h;
+
+    app.querySelectorAll('textarea[data-q]').forEach(function(t){t.addEventListener('input',function(){setDraft(t.dataset.q,t.value);});});
+    var sb=document.getElementById('submit'); if(sb)sb.addEventListener('click',submit);
+    app.querySelectorAll('.shot button').forEach(function(b){b.addEventListener('click',function(){openLb(b.dataset.img,b.dataset.cap);});});
+  }
+
+  function openLb(src,cap){
+    var d=document.createElement('div');d.className='lb';d.tabIndex=-1;
+    d.innerHTML='<div><img src="'+esc(src)+'" alt="'+esc(cap)+'"><p>'+esc(cap)+' · click or press Esc to close</p></div>';
+    function close(){d.remove();document.removeEventListener('keydown',k);}
+    function k(e){if(e.key==='Escape')close();}
+    d.addEventListener('click',close);document.addEventListener('keydown',k);
+    document.body.appendChild(d);d.focus();
+  }
+
+  function buildDoc(state){
+    var css=document.getElementById('css').textContent;
+    var js=document.getElementById('appjs').textContent;
+    var json=JSON.stringify(state).replace(/</g,'\\u003c');
+    var reset=':root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}';
+    return '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>'+reset+'</style></head><body>'+
+      '<title>Absinthe Arcade Build Desk</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<style id="css">'+css+'</style>\n'+
+      '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Big+Shoulders+Display:wght@700;800&family=JetBrains+Mono:wght@400&display=swap">\n'+
+      '<div class="wrap" id="app"><p class="empty">Loading the build desk…</p></div>\n'+
+      '<script type="application/json" id="state">'+json+'</scr'+'ipt>\n<script id="appjs">'+js+'</scr'+'ipt>'+
+      '</body></html>';
+  }
+
+  function submit(){
+    var sb=document.getElementById('submit'), note=document.getElementById('barnote');
+    var now=new Date().toISOString().slice(0,16).replace('T',' ');
+    var next=JSON.parse(JSON.stringify(STATE)), n=0;
+    next.questions.forEach(function(q){
+      if(q.status!=='open')return;
+      var el=document.getElementById('ans-'+q.id), v=el?el.value.trim():'';
+      if(v){q.answer=v;q.status='answered';q.answered=now;n++;}
+    });
+    if(!n){note.textContent='Type at least one answer first.';return;}
+    if(!artifactNs){note.textContent='Saving is not available in this view. Your drafts are kept on this device.';return;}
+    next.updated=now; next.lastSubmit=now;
+    sb.disabled=true; note.textContent='Sending '+n+' answer'+(n>1?'s':'')+' to the crew…';
+    var lines=next.questions.filter(function(q){return q.status==='answered'&&q.answered===now;}).map(function(q){return q.id+' ('+q.agent+'): '+q.answer;});
+    var msg=('AUTHOR SUBMITTED ANSWERS '+now+'\n'+lines.join('\n')).slice(0,3800);
+    var ping=commentsNs?commentsNs.anchorFor(sb).then(function(an){return commentsNs.sendToClaude({anchor:an,text:msg});}).catch(function(){}):Promise.resolve();
+    ping.then(function(){return artifactNs.publish(buildDoc(next));}).then(function(){
+      next.questions.forEach(function(q){if(q.status==='answered')dropDraft(q.id);});
+    },function(err){
+      var c=err&&err.code;
+      if(c==='conflict'){note.textContent='The desk changed while you were typing. It is reloading; your drafts are kept on this device.';return;}
+      if(c==='not_writer'||c==='not_granted'||c==='consent_required'||c==='capability_disabled'){readOnly=true;note.textContent='This view is read-only, so answers cannot be saved here.';return;}
+      sb.disabled=false; note.textContent='Saving failed ('+(c||'unknown')+'). Try again in a moment; drafts are kept.';
+    });
+  }
+
+  STATE.questions.forEach(function(q){if(q.status!=='open')dropDraft(q.id);});
+  render();
+  if(window.claude&&window.claude.use){
+    window.claude.use('artifact').then(function(a){artifactNs=a;},function(){});
+    window.claude.use('comments').then(function(c){commentsNs=c;},function(){});
+  }
+})();
+</script>

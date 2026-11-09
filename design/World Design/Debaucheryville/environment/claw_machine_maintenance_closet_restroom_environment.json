@@ -1,0 +1,110 @@
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "ambient_audio": {
+    "base_layers": [
+      "speedrunner foot-soak callback ambience",
+      "electrical hum ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "cmr_inside_door",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "cmr_ddr_toilet",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "cmr_crt_mirror",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "cmr_graffiti_wall",
+        "cue": "lore_loop"
+      },
+      {
+        "node_id": "cmr_claw_bucket",
+        "cue": "examine_loop"
+      },
+      {
+        "node_id": "cmr_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "cmr_broken_prize_tag_effect",
+      "description": "Records a claw-machine maintenance joke."
+    },
+    {
+      "effect_id": "cmr_rival_icq_snapshot_effect",
+      "description": "Registers the documented ICQ callback."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "full service and named NPCs"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "documented denial or alternate crowd"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet neon reflections"
+    ],
+    "interior": [
+      "threshold-only weather read-through"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "claw_machine_maintenance_closet_restroom_fx",
+      "nodes": [
+        "cmr_inside_door",
+        "cmr_ddr_toilet",
+        "cmr_crt_mirror",
+        "cmr_graffiti_wall",
+        "cmr_claw_bucket",
+        "cmr_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "marquee green",
+      "CRT blue",
+      "gum pink",
+      "maintenance grey"
+    ],
+    "emission_mask": "claw_machine_maintenance_closet_restroom_masks",
+    "readability": "interaction landmarks brighter than clutter"
+  },
+  "environmental_storytelling": [
+    "Interior face of the permanently unlocked Arcade maintenance door.",
+    "Sticky dance-pad toilet seat in impossible clearance.",
+    "Repurposed CRT mirror looping an INSERT COIN prompt.",
+    "Layered bathroom-network and Rival Trio tags.",
+    "Claw-arm chandelier, janitor bucket foot soak and cleaning clutter.",
+    "Returns to Absinthe Arcade's DDR maintenance recess."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced fluorescent flicker",
+      "Static CRT mirror frame",
+      "Text cue for audio gags",
+      "Tight-room camera cutaway"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

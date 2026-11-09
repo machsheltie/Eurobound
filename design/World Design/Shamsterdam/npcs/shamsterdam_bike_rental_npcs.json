@@ -1,0 +1,297 @@
+{
+  "location_id": "shamsterdam_bike_rental_01",
+  
+  "npcs": [
+    {
+      "npc_id": "shamsterdam_npc_dirk_rental_owner_01",
+      "display_name": "Dirk van der Berg",
+      "role": "owner_manager_primary_service",
+      "importance": "primary",
+      
+      "appearance": {
+        "age": "mid_50s",
+        "build": "stocky_bike_mechanic_muscles",
+        "clothing": "orange_polo_stretched",
+        "distinguishing_features": [
+          "grease_permanently_embedded_in_hands",
+          "seen_every_tourist_disaster_expression"
+        ],
+        "name_tag": "Dirk - 22 Years - 847 Canal Recoveries"
+      },
+      
+      "location": {
+        "zone": "main_counter",
+        "position": "behind_service_desk",
+        "always_present": true
+      },
+      
+      "personality": {
+        "traits": [
+          "deadpan_terrifying_statistics",
+          "genuinely_wants_tourist_survival",
+          "perfected_i_told_you_so_expression",
+          "secretly_impressed_by_undamaged_returns"
+        ],
+        "speech_pattern": "matter_of_fact_dutch_directness",
+        "humor_style": "dark_statistical"
+      },
+      
+      "dialogue": {
+        "greeting_first": "Welcome to Shamsterdam Bike Rental. You've already decided to rent one, haven't you. Let me tell you why you shouldn't.",
+        "greeting_return": "You're back. The bike is not. This is why we take deposits.",
+        "greeting_undamaged_return": "No damage? No damage at all? ...I don't believe you, but I respect the lie.",
+        "greeting_loyal_customer": "Ah, you again. Still alive. The statistics were not in your favor.",
+        
+        "insurance_pitch": "The basic covers theft. The premium covers damage. The platinum covers your dignity. None of them cover your decision-making.",
+        "insurance_premium": "Twenty euros sounds like a lot until you're fishing your vacation out of a canal.",
+        "insurance_platinum": "The platinum tier. Nobody who buys this has ever used it. They're too cautious to need it. Funny how that works.",
+        
+        "crossing_warning": "You want to bike across THAT? I've watched seventeen years of tourists try. The bikes come back. Sometimes.",
+        "cycling_advice": "Dutch cyclists don't stop. They don't swerve. They assume you will. Don't prove them wrong.",
+        
+        "damage_assessment_minor": "This? This is nothing. I've seen worse before breakfast.",
+        "damage_assessment_major": "How did you even— No. I don't want to know. Let me get the form.",
+        "damage_assessment_canal": "The canal. Again. Do you know how cold that water is? The bike knows.",
+        
+        "farewell": "Good luck. You'll need it. Everyone does.",
+        "farewell_rental_active": "Remember: the deposit is €150. Your dignity is worth more. Allegedly."
+      },
+      
+      "services": [
+        {
+          "id": "rental_service",
+          "type": "bike_rental",
+          "dialogue_trigger": "I need to rent a bike."
+        },
+        {
+          "id": "insurance_service",
+          "type": "insurance_packages",
+          "dialogue_trigger": "Tell me about insurance."
+        },
+        {
+          "id": "return_service",
+          "type": "bike_return",
+          "dialogue_trigger": "I'm returning a bike."
+        },
+        {
+          "id": "repair_referral",
+          "type": "redirect_to_opa",
+          "dialogue_trigger": "I need repairs."
+        },
+        {
+          "id": "crossing_tips",
+          "type": "free_advice",
+          "dialogue_trigger": "Any tips for the crossing?",
+          "cost": 0
+        }
+      ],
+      
+      "dynamic_dialogue": {
+        "based_on_player_history": {
+          "first_rental": "greeting_first",
+          "damaged_return_history": "greeting_return",
+          "clean_return_history": "greeting_undamaged_return",
+          "multiple_rentals": "greeting_loyal_customer"
+        },
+        "based_on_damage_level": {
+          "none": "damage_assessment_undamaged",
+          "minor": "damage_assessment_minor",
+          "major": "damage_assessment_major",
+          "canal": "damage_assessment_canal"
+        }
+      },
+      
+      "animation_states": {
+        "idle_at_counter": {"frames": 2, "fps": 0.5, "loop": true},
+        "checking_paperwork": {"frames": 3, "fps": 1, "loop": true},
+        "pointing_at_crossing": {"frames": 2, "fps": 1, "loop": false},
+        "i_told_you_so_expression": {"frames": 2, "fps": 0.5, "loop": false},
+        "genuine_surprise": {"frames": 3, "fps": 1, "loop": false, "rare": true},
+        "damage_assessment": {"frames": 4, "fps": 1, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_anneke_counter_01",
+      "display_name": "Anneke van der Berg",
+      "role": "counter_staff_insurance_upseller",
+      "importance": "secondary",
+      
+      "appearance": {
+        "age": "early_20s",
+        "build": "average",
+        "clothing": "orange_polo_clipboard",
+        "distinguishing_features": [
+          "inherited_family_resignation",
+          "pen_always_ready_for_damage_forms",
+          "sixth_sense_for_crash_prediction"
+        ],
+        "name_tag": "Anneke - 3 Years - Learning the Business"
+      },
+      
+      "location": {
+        "zone": "secondary_counter",
+        "position": "near_insurance_display",
+        "always_present": true
+      },
+      
+      "personality": {
+        "traits": [
+          "rehearsed_insurance_efficiency",
+          "editorial_comments_father_disapproves",
+          "takes_photos_for_family_betting_pool",
+          "nationality_damage_tally_keeper"
+        ],
+        "speech_pattern": "quick_efficient_slightly_amused"
+      },
+      
+      "dialogue": {
+        "greeting_american": "American? Let me get the standard form. And the backup form.",
+        "greeting_british": "British? You'll want insurance. Trust me on this.",
+        "greeting_australian": "Australian. Okay, let me get the reinforced form.",
+        "greeting_generic": "Welcome! First time renting in Shamsterdam?",
+        
+        "insurance_pitch": "Extra insurance is €20. Yes, €20 seems like a lot until you see how much the bike costs.",
+        "insurance_detail": "Standard covers 'minor' damage. Dad defines minor. It's usually not what you think.",
+        
+        "cycling_question": "Have you ever ridden a bike before? Like, in traffic? Where people want you dead?",
+        
+        "photo_request": "Just a quick photo for our records. Smile! ...That's the face they all make.",
+        "photo_return": "Let me just get a photo of the bike. For comparison purposes.",
+        
+        "damage_prediction": "I'm going to guess... tram tracks? It's usually tram tracks.",
+        "damage_revealed": "Called it. Tram tracks. Dad owes me five euros.",
+        
+        "farewell": "Good luck! I mean it. Really."
+      },
+      
+      "special_mechanics": {
+        "nationality_tracking": {
+          "description": "Anneke keeps a tally of damage rates by nationality",
+          "visible_board": true,
+          "updates_on_return": true
+        },
+        "photo_mechanic": {
+          "takes_photo_on_rental": true,
+          "takes_photo_on_return": true,
+          "comedy": "comparison_photos_on_wall"
+        },
+        "prediction_game": {
+          "predicts_damage_type": true,
+          "accuracy": "surprisingly_high",
+          "reward_if_wrong": "minor_discount"
+        }
+      },
+      
+      "animation_states": {
+        "idle_with_clipboard": {"frames": 2, "fps": 0.5, "loop": true},
+        "taking_photo": {"frames": 3, "fps": 2, "loop": false},
+        "writing_on_form": {"frames": 3, "fps": 1, "loop": true},
+        "skeptical_expression": {"frames": 2, "fps": 0.5, "loop": false},
+        "called_it_reaction": {"frames": 2, "fps": 1, "loop": false}
+      }
+    },
+    
+    {
+      "npc_id": "shamsterdam_npc_opa_willem_repair_01",
+      "display_name": "Opa Willem",
+      "role": "grandfather_repair_station_lore",
+      "importance": "secondary",
+      
+      "appearance": {
+        "age": "80_plus",
+        "build": "wiry_still_active",
+        "clothing": "oil_stained_apron_older_than_customers",
+        "distinguishing_features": [
+          "surrounded_by_decades_of_cycling_debris",
+          "mumbles_about_old_days"
+        ]
+      },
+      
+      "location": {
+        "zone": "repair_station",
+        "position": "visible_through_doorway",
+        "approachable": true,
+        "requires_interaction_to_speak": true
+      },
+      
+      "personality": {
+        "traits": [
+          "living_history_of_tourist_disasters",
+          "philosophical_about_bike_mortality",
+          "can_fix_anything",
+          "judges_silently"
+        ],
+        "speech_pattern": "slow_deliberate_trail_off"
+      },
+      
+      "dialogue": {
+        "greeting": "*looks up from bike* Hmm? Tourist. Looking for repairs, or just looking?",
+        
+        "history_1": "Forty-seven years. I've fixed forty-seven years of tourist mistakes.",
+        "history_2": "The rental bikes used to be blue. Then orange became the 'tourist warning color.'",
+        "history_3": "Your group? I give you... three hours before the first one comes back bent.",
+        
+        "canal_wall": "This bike came out of the canal. This one too. And this one. And— *gestures at entire wall*",
+        "canal_philosophy": "The canal takes. The canal gives back. Eventually. Usually bent.",
+        
+        "repair_offer": "I can fix this. €25. Come back in an hour.",
+        "repair_impossible": "This... this I cannot fix. This is art now. Tragic art.",
+        
+        "blessing": "You want my blessing? *squints* Fine. May your wheels stay round and your chain stay oiled.",
+        
+        "quest_intro": "The canal has many bikes. Many, many bikes. You want to help an old man recover some?"
+      },
+      
+      "services": [
+        {
+          "id": "repair_service",
+          "type": "bike_repair",
+          "requires": "damaged_rental",
+          "pricing": "variable"
+        },
+        {
+          "id": "blessing",
+          "type": "buff",
+          "requires": "platinum_insurance_OR_quest_complete",
+          "effect": {"navigation": 0.05}
+        }
+      ],
+      
+      "quest_giver": {
+        "quest_id": "canal_recovery_assistant",
+        "trigger": "interact_3_times",
+        "dialogue_sequence": ["history_1", "canal_wall", "quest_intro"]
+      },
+      
+      "animation_states": {
+        "repairing_bike": {"frames": 4, "fps": 1, "loop": true},
+        "examining_damage": {"frames": 3, "fps": 0.5, "loop": false},
+        "looking_at_canal_wall": {"frames": 2, "fps": 0.25, "loop": true},
+        "sighing_at_damage": {"frames": 2, "fps": 0.5, "loop": false},
+        "giving_blessing": {"frames": 3, "fps": 1, "loop": false}
+      }
+    }
+  ],
+  
+  "npc_relationships": {
+    "dirk_anneke": {
+      "type": "father_daughter",
+      "dynamic": "anneke_learning_business_adding_commentary"
+    },
+    "dirk_opa": {
+      "type": "son_father",
+      "dynamic": "dirk_runs_front_opa_runs_repairs"
+    },
+    "anneke_opa": {
+      "type": "granddaughter_grandfather",
+      "dynamic": "anneke_brings_opa_coffee_sometimes"
+    }
+  },
+  
+  "spawn_points": {
+    "dirk": {"zone": "main_counter", "position": "behind_desk"},
+    "anneke": {"zone": "secondary_counter", "position": "near_insurance_board"},
+    "opa_willem": {"zone": "repair_station", "position": "at_workbench"}
+  }
+}

@@ -195,6 +195,14 @@ GUT baseline note: suite grew 27→36 tests (engine window); all 36 pass.
   (per the standing strip-scaffolding cleanup ruling); RESOLVED 2026-08-05 by
   the game-wide ruling below.
 
+## Standing ruling 2026-10-27: the Absinthe Arcade window cat (author)
+
+**The black cat on the Absinthe Arcade facade stays.** It is ambient set dressing, not a
+mascot, pet or party companion, so the no-mascots rule does not remove it. It is its own 3D
+prop (`aa_prop_window_cat`) sitting on the OUTSIDE of the left first-floor window's stone
+sill, and that window is modeled OPEN. Do not strip it in future mascot/pet sweeps. Do not
+relitigate.
+
 ## Standing ruling 2026-08-05: 60 FPS (author)
 
 **The game-wide performance target is 60 FPS on min-spec hardware — single standard, no
@@ -361,4 +369,42 @@ Until then quest flags live only in the design docs' flag tables.
 
 **6. `Tools/validate_data.py` has no quest handling.** It will not validate quest JSON at all.
 Open question: should it, and to what depth?
+
+---
+
+## Standing rulings 2026-11-02: Absinthe Arcade (author)
+
+- **All Arcade money is SOVS.** The token exchange takes SOVS at **1 SOV = 1 token**. The old
+  kebab-coin 1:5 rate is struck in the design package and in the engine data
+  (`debaucheryville_locations.json`, `debaucheryville_interactions.json`). This settles the
+  arcade half of the open kebab_coins question; the shadow exchange's kebab_coins are still
+  unruled.
+- **DDR restroom unlock: 3 tokens** (confirmed). **Claw machine: 5 tokens per attempt.**
+- **Interiors are Bravely Default style**, with the same **fixed HD-2D tilt camera** as the
+  exterior.
+- **The mezzanine is visual only.** It is not a walkable floor.
+- **Backpack Girl's cabinet-side spot stays on the primary route.**
+- Do not relitigate.
+- **Arcade cabinets are battle encounters, not mini-games.** Frogger: Existential Edition,
+  Street Fighter: Identity Crisis and Kebab Kombat each release 2-3 game-inspired villain
+  types that fight the bros through the existing battle system. The rigged claw machine stays
+  the Arcade's one real mini-game. **Interior size: 15.4 x 18 real metres** (main hall about
+  15 x 12 m, north L-wing about 8 x 6 m), framed for one fixed-tilt screen.
+
+## Standing rulings 2026-11-08: Arcade interior and party sprites (author)
+
+- **Real brand and game names stay as drawn** (HORNETS jersey, cap and polo logos, and real
+  arcade titles such as Frogger, Street Fighter, DDR, Time Crisis, PAC-MAN). Do not swap them
+  for parodies or strip them.
+- **The Green Fairy mural appears inside the Arcade too**, not only on the facade.
+- **Backpack Girl's hours are 14:00 to 22:00.** (The environment file's 14:00 to 04:00 was
+  the stray value and is corrected.)
+- **Party sprites:** Chadwick is the "38yearoldchadwick" sheet (B) and Bradley is the
+  "16-Bit Hornets Sprite Sheet" (#1, B). All three bros are the same height (1.8 m).
+  Pilsner walks with his arms swinging, not hands in pockets.
+- **Interior main hall:** the game-camera framing (concept C) is the base. It must also hold
+  the token/prize redemption counter built into the bar, and a three-pad DDR dance-off with
+  one big wall screen everyone can watch (see the author's ChatGPT brief "Revise Arcade
+  Layout" and `references/Interior/concepts/README.md`).
+- Do not relitigate.
 

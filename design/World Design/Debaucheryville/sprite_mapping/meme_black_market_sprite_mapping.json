@@ -1,0 +1,214 @@
+{
+  "location_id": "debaucheryville_museum_meme_black_market_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "meme_black_market_environment",
+      "atlas": "meme_black_market_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "meme_black_market_exterior",
+          "filename": "meme_black_market_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "mbm_shelf_threshold"
+        },
+        {
+          "asset_id": "meme_black_market_interior",
+          "filename": "meme_black_market_interior.png",
+          "role": "interior/service-footprint painted layer",
+          "node_id": "mbm_vendor_counter"
+        },
+        {
+          "asset_id": "meme_black_market_node_mbm_vendor_counter",
+          "filename": "meme_black_market_mbm_vendor_counter.png",
+          "role": "service landmark",
+          "node_id": "mbm_vendor_counter"
+        },
+        {
+          "asset_id": "meme_black_market_node_mbm_summon_point",
+          "filename": "meme_black_market_mbm_summon_point.png",
+          "role": "interaction landmark",
+          "node_id": "mbm_summon_point"
+        },
+        {
+          "asset_id": "meme_black_market_node_mbm_trinket_wall",
+          "filename": "meme_black_market_mbm_trinket_wall.png",
+          "role": "shop landmark",
+          "node_id": "mbm_trinket_wall"
+        },
+        {
+          "asset_id": "meme_black_market_node_mbm_mastery_terminal",
+          "filename": "meme_black_market_mbm_mastery_terminal.png",
+          "role": "progression landmark",
+          "node_id": "mbm_mastery_terminal"
+        },
+        {
+          "asset_id": "meme_black_market_node_mbm_altar",
+          "filename": "meme_black_market_mbm_altar.png",
+          "role": "lore landmark",
+          "node_id": "mbm_altar"
+        },
+        {
+          "asset_id": "meme_black_market_node_mbm_exit",
+          "filename": "meme_black_market_mbm_exit.png",
+          "role": "exit landmark",
+          "node_id": "mbm_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "meme_black_market_characters",
+      "atlas": "meme_black_market_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "meme_black_market_npc_mbm_npc_memelord_exe",
+          "filename": "meme_black_market_mbm_npc_memelord_exe.png",
+          "role": "character sprite",
+          "node_id": "mbm_vendor_counter"
+        }
+      ]
+    },
+    {
+      "group_id": "meme_black_market_ui_fx",
+      "atlas": "meme_black_market_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "meme_black_market_item_mbm_dancing_baby_charm",
+          "filename": "meme_black_market_mbm_dancing_baby_charm.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "meme_black_market_item_mbm_badger_loop",
+          "filename": "meme_black_market_mbm_badger_loop.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "meme_black_market_item_mbm_corrupted_gif",
+          "filename": "meme_black_market_mbm_corrupted_gif.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "meme_black_market_item_mbm_away_message_icon",
+          "filename": "meme_black_market_mbm_away_message_icon.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "meme_black_market_ui",
+          "filename": "meme_black_market_ui.png",
+          "role": "interaction and status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "meme_black_market_fx",
+          "filename": "meme_black_market_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "meme_black_market_masks",
+          "filename": "meme_black_market_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "mbm_npc_memelord_exe_standard",
+      "asset_id": "meme_black_market_npc_mbm_npc_memelord_exe",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "meme_black_market_emission",
+      "mask_asset": "meme_black_market_masks",
+      "nodes": [
+        "mbm_shelf_threshold",
+        "mbm_vendor_counter",
+        "mbm_summon_point",
+        "mbm_trinket_wall",
+        "mbm_mastery_terminal",
+        "mbm_altar",
+        "mbm_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "mbm_exit_museum",
+      "destination_id": "debaucheryville_blockbuster_internet_museum_01",
+      "from_node": "mbm_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "mbm_meet_vendor",
+      "node_id": "mbm_vendor_counter",
+      "highlight_asset": "meme_black_market_node_mbm_vendor_counter"
+    },
+    {
+      "interaction_id": "mbm_summon",
+      "node_id": "mbm_summon_point",
+      "highlight_asset": "meme_black_market_node_mbm_summon_point"
+    },
+    {
+      "interaction_id": "mbm_shop",
+      "node_id": "mbm_trinket_wall",
+      "highlight_asset": "meme_black_market_node_mbm_trinket_wall"
+    },
+    {
+      "interaction_id": "mbm_mastery",
+      "node_id": "mbm_mastery_terminal",
+      "highlight_asset": "meme_black_market_node_mbm_mastery_terminal"
+    },
+    {
+      "interaction_id": "mbm_return",
+      "node_id": "mbm_exit",
+      "highlight_asset": "meme_black_market_node_mbm_exit"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "meme_black_market_masks",
+      "channels": {
+        "r": "signs",
+        "g": "screens/practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 10,
+    "reduced_fx_asset": "meme_black_market_fx"
+  }
+}

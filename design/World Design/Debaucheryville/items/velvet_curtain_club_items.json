@@ -1,0 +1,67 @@
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  "item_category": "Gated Nightclub / Social Hub / Quest Venue",
+  "items": [
+    {
+      "item_id": "vcc_house_drink",
+      "display_name": "Velvet House Drink",
+      "item_type": "consumable",
+      "price": 12,
+      "effect": "Drunk status and club reaction.",
+      "acquisition": "Club bar."
+    },
+    {
+      "item_id": "vcc_flyer_stack",
+      "display_name": "Club Flyer Stack",
+      "item_type": "quest_reference",
+      "price": 0,
+      "effect": "External flyer quest object.",
+      "acquisition": "Quest-owned."
+    },
+    {
+      "item_id": "vcc_vip_wristbands",
+      "display_name": "Level Seven Wristbands",
+      "item_type": "quest_reference",
+      "price": 90,
+      "effect": "Visible quest prop; does not itself complete entry.",
+      "acquisition": "VIP wristband quest."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "vip wristband quest stages",
+      "ownership": "external"
+    },
+    {
+      "reference": "NFT hunt",
+      "ownership": "external"
+    },
+    {
+      "reference": "couchsurfing quest",
+      "ownership": "external"
+    },
+    {
+      "reference": "brewery tour",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "vip_wristband_quest_complete",
+      "type": "state"
+    },
+    {
+      "reward_id": "velvet_vip_stall_access_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "brew_lab_access_unlocked",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies otherwise",
+    "price_confirmation_required": true,
+    "time_modifiers": "documented only"
+  }
+}

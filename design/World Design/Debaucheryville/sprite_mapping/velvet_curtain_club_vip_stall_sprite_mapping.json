@@ -1,0 +1,182 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "velvet_curtain_club_vip_stall_environment",
+      "atlas": "velvet_curtain_club_vip_stall_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_exterior",
+          "filename": "velvet_curtain_club_vip_stall_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "vcs_inside_curtain"
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_interior",
+          "filename": "velvet_curtain_club_vip_stall_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "vcs_fixture"
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_node_vcs_fixture",
+          "filename": "velvet_curtain_club_vip_stall_vcs_fixture.png",
+          "role": "interaction landmark",
+          "node_id": "vcs_fixture"
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_node_vcs_selfie_mirror",
+          "filename": "velvet_curtain_club_vip_stall_vcs_selfie_mirror.png",
+          "role": "interaction landmark",
+          "node_id": "vcs_selfie_mirror"
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_node_vcs_qr_tile",
+          "filename": "velvet_curtain_club_vip_stall_vcs_qr_tile.png",
+          "role": "quest landmark",
+          "node_id": "vcs_qr_tile"
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_node_vcs_graffiti",
+          "filename": "velvet_curtain_club_vip_stall_vcs_graffiti.png",
+          "role": "lore landmark",
+          "node_id": "vcs_graffiti"
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_node_vcs_exit",
+          "filename": "velvet_curtain_club_vip_stall_vcs_exit.png",
+          "role": "exit landmark",
+          "node_id": "vcs_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "velvet_curtain_club_vip_stall_characters",
+      "atlas": "velvet_curtain_club_vip_stall_characters_atlas.png",
+      "assets": []
+    },
+    {
+      "group_id": "velvet_curtain_club_vip_stall_ui_fx",
+      "atlas": "velvet_curtain_club_vip_stall_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_item_item_pixelated_kebab_monkey",
+          "filename": "velvet_curtain_club_vip_stall_item_pixelated_kebab_monkey.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_item_vcs_spite_reserve",
+          "filename": "velvet_curtain_club_vip_stall_vcs_spite_reserve.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_item_vcs_nft_affinity",
+          "filename": "velvet_curtain_club_vip_stall_vcs_nft_affinity.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_ui",
+          "filename": "velvet_curtain_club_vip_stall_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_fx",
+          "filename": "velvet_curtain_club_vip_stall_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "velvet_curtain_club_vip_stall_masks",
+          "filename": "velvet_curtain_club_vip_stall_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [],
+  "lighting_effects": [
+    {
+      "effect_id": "velvet_curtain_club_vip_stall_lighting",
+      "mask_asset": "velvet_curtain_club_vip_stall_masks",
+      "nodes": [
+        "vcs_inside_curtain",
+        "vcs_fixture",
+        "vcs_selfie_mirror",
+        "vcs_qr_tile",
+        "vcs_graffiti",
+        "vcs_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "vcs_exit_club",
+      "destination_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+      "from_node": "vcs_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "vcs_scan_nft",
+      "node_id": "vcs_qr_tile",
+      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_qr_tile"
+    },
+    {
+      "interaction_id": "vcs_read_clue",
+      "node_id": "vcs_graffiti",
+      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_graffiti"
+    },
+    {
+      "interaction_id": "vcs_fisto",
+      "node_id": "vcs_graffiti",
+      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_graffiti"
+    },
+    {
+      "interaction_id": "vcs_selfie",
+      "node_id": "vcs_selfie_mirror",
+      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_selfie_mirror"
+    },
+    {
+      "interaction_id": "vcs_affinity",
+      "node_id": "vcs_qr_tile",
+      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_qr_tile"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "velvet_curtain_club_vip_stall_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 12,
+    "reduced_fx_asset": "velvet_curtain_club_vip_stall_fx"
+  }
+}

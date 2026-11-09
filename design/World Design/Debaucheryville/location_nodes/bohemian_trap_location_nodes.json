@@ -1,0 +1,172 @@
+{
+  "location_id": "debaucheryville_vendor_bohemian_trap_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_vendor_bohemian_trap_01",
+      "name": "The Bohemian Trap",
+      "tag_id": "bohemian_trap",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Nightly neon-quarter anchor with ornate green-and-gold cart.",
+        "entry_condition": "Vendor operating hours"
+      },
+      "interior": {
+        "theme": "A 2015 cart artificially aged into Belle Époque tourist mythology.",
+        "features": [
+          "shop: bt_bottle_display",
+          "interaction: bt_ritual_station",
+          "service: bt_performer",
+          "social: bt_customer_space",
+          "exit: bt_exit"
+        ]
+      },
+      "functions": [
+        "Browse Absinthe Tiers",
+        "Purchase The Ritual",
+        "Drink Absinthe",
+        "Was That Worth It?"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "bt_cart_approach",
+      "to": "bt_bottle_display",
+      "bidirectional": true
+    },
+    {
+      "from": "bt_bottle_display",
+      "to": "bt_ritual_station",
+      "bidirectional": true
+    },
+    {
+      "from": "bt_ritual_station",
+      "to": "bt_performer",
+      "bidirectional": true
+    },
+    {
+      "from": "bt_performer",
+      "to": "bt_customer_space",
+      "bidirectional": true
+    },
+    {
+      "from": "bt_customer_space",
+      "to": "bt_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "bt_cart_approach": {
+      "connects_to": [
+        "bt_bottle_display"
+      ],
+      "type": "exterior",
+      "description": "Nightly neon-quarter anchor with ornate green-and-gold cart."
+    },
+    "bt_bottle_display": {
+      "connects_to": [
+        "bt_cart_approach",
+        "bt_ritual_station"
+      ],
+      "type": "shop",
+      "description": "Backlit bottles ranked by invented authenticity."
+    },
+    "bt_ritual_station": {
+      "connects_to": [
+        "bt_bottle_display",
+        "bt_performer"
+      ],
+      "type": "interaction",
+      "description": "Spoons, cubes, drips and controlled flame theater."
+    },
+    "bt_performer": {
+      "connects_to": [
+        "bt_ritual_station",
+        "bt_customer_space"
+      ],
+      "type": "service",
+      "description": "Vendor delivers mythology and Bravado reactions."
+    },
+    "bt_customer_space": {
+      "connects_to": [
+        "bt_performer",
+        "bt_exit"
+      ],
+      "type": "social",
+      "description": "Standing zone for consumption and control-reversal aftermath."
+    },
+    "bt_exit": {
+      "connects_to": [
+        "bt_customer_space"
+      ],
+      "type": "exit",
+      "description": "Returns to the neon entertainment street."
+    }
+  },
+  "feature_details": {
+    "bt_cart_approach": {
+      "display_name": "Cart Approach",
+      "image_generation_description": "Nightly neon-quarter anchor with ornate green-and-gold cart.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "bt_bottle_display": {
+      "display_name": "Absinthe Array",
+      "image_generation_description": "Backlit bottles ranked by invented authenticity.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "bt_ritual_station": {
+      "display_name": "Ritual Station",
+      "image_generation_description": "Spoons, cubes, drips and controlled flame theater.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "bt_performer": {
+      "display_name": "Performer Counter",
+      "image_generation_description": "Vendor delivers mythology and Bravado reactions.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "bt_customer_space": {
+      "display_name": "Customer Reaction Space",
+      "image_generation_description": "Standing zone for consumption and control-reversal aftermath.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "bt_exit": {
+      "display_name": "Quarter Exit",
+      "image_generation_description": "Returns to the neon entertainment street.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    }
+  },
+  "ambient_npcs": [
+    "tourist believers",
+    "skeptical locals"
+  ]
+}

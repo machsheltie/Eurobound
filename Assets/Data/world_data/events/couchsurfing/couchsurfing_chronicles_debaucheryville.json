@@ -1,0 +1,61 @@
+[
+  {
+    "npc_id": "vape_witch_vanessa",
+    "location": "Velvet Curtain Club",
+    "trigger_condition": "Meet her during night club exploration",
+    "morning_scene": "She exhales peach-mango vape into your mouth, calling it 'a cleansing.'",
+    "choice_outcome": {
+      "question": "Answer her crystal NFT quiz?",
+      "success": {
+        "effect": "+10 SP",
+        "flag": "vanessa_quiz_passed"
+      },
+      "fail": {
+        "effect": "Confused status",
+        "flag": "vanessa_quiz_failed"
+      }
+    },
+    "gag_item": "Charged Quartz Vape Tip",
+    "status_flag": "couchsurf_vanessa_done"
+  },
+  {
+    "npc_id": "backpack_girl",
+    "location": "Absinthe Arcade",
+    "trigger_condition": "Accept her kebab and crash invite",
+    "morning_scene": "She's playing ukulele at 6am, singing about your tourist aura.",
+    "outcome": {
+      "effect": "-10 SP, gain collectible Ballad of the Bros",
+      "flag": "couchsurf_backpack_girl_done"
+    }
+  },
+  {
+    "npc_id": "cryptobro_ex",
+    "location": "Shadow Exchange",
+    "trigger_condition": "Interact during her vendor argument",
+    "morning_scene": "She insults you, steals your cab voucher, leaves an NFT.",
+    "outcome": {
+      "effect": "Gain NFT #2, Hungover status, lose 25 gold",
+      "flag": "couchsurf_cryptobro_ex_done"
+    }
+  },
+  {
+    "npc_id": "suspicious_twins",
+    "location": "Cirque du Shady",
+    "trigger_condition": "After Knife-Throwing Assistant battle",
+    "morning_scene": "They argue over who 'won' you in a bet.",
+    "outcome": {
+      "effect": "Embarrassed status, gain Twin Token (+1 Grit, -2 Charm)",
+      "flag": "couchsurf_twins_done"
+    }
+  },
+  {
+    "npc_id": "miss_morphine",
+    "location": "ICQ popup (random)",
+    "trigger_condition": "Accept ICQ invite: \ud83d\udc8a Wanna vibe IRL?",
+    "morning_scene": "You wake up in a neon Y2K tech room. She's gone.",
+    "outcome": {
+      "effect": "Inspired buff, gain Miss Morphine\u2019s Discarded USB (???), unlock Sinfonia sidequest",
+      "flag": "couchsurf_miss_morphine_done"
+    }
+  }
+]

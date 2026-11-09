@@ -1,0 +1,276 @@
+{
+  "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter dungeon traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "tap_dat_vault_environment",
+      "atlas": "tap_dat_vault_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "tap_dat_vault_exterior",
+          "filename": "tap_dat_vault_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "tdv_plaza"
+        },
+        {
+          "asset_id": "tap_dat_vault_interior",
+          "filename": "tap_dat_vault_interior.png",
+          "role": "interior painted faces",
+          "node_id": "tdv_vault"
+        },
+        {
+          "asset_id": "tap_dat_vault_node_tdv_vault",
+          "filename": "tap_dat_vault_tdv_vault.png",
+          "role": "gate landmark",
+          "node_id": "tdv_vault"
+        },
+        {
+          "asset_id": "tap_dat_vault_node_tdv_vats",
+          "filename": "tap_dat_vault_tdv_vats.png",
+          "role": "interior landmark",
+          "node_id": "tdv_vats"
+        },
+        {
+          "asset_id": "tap_dat_vault_node_tdv_rhythm",
+          "filename": "tap_dat_vault_tdv_rhythm.png",
+          "role": "puzzle landmark",
+          "node_id": "tdv_rhythm"
+        },
+        {
+          "asset_id": "tap_dat_vault_node_tdv_adbot",
+          "filename": "tap_dat_vault_tdv_adbot.png",
+          "role": "encounter landmark",
+          "node_id": "tdv_adbot"
+        },
+        {
+          "asset_id": "tap_dat_vault_node_tdv_brewmistress",
+          "filename": "tap_dat_vault_tdv_brewmistress.png",
+          "role": "boss landmark",
+          "node_id": "tdv_brewmistress"
+        },
+        {
+          "asset_id": "tap_dat_vault_node_tdv_service",
+          "filename": "tap_dat_vault_tdv_service.png",
+          "role": "service landmark",
+          "node_id": "tdv_service"
+        },
+        {
+          "asset_id": "tap_dat_vault_node_tdv_selfie",
+          "filename": "tap_dat_vault_tdv_selfie.png",
+          "role": "selfie landmark",
+          "node_id": "tdv_selfie"
+        },
+        {
+          "asset_id": "tap_dat_vault_node_tdv_exit",
+          "filename": "tap_dat_vault_tdv_exit.png",
+          "role": "exit landmark",
+          "node_id": "tdv_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "tap_dat_vault_characters",
+      "atlas": "tap_dat_vault_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "tap_dat_vault_npc_tdv_npc_glitch_bouncer",
+          "filename": "tap_dat_vault_tdv_npc_glitch_bouncer.png",
+          "role": "character sprite",
+          "node_id": "tdv_vault"
+        },
+        {
+          "asset_id": "tap_dat_vault_npc_tdv_npc_adbot",
+          "filename": "tap_dat_vault_tdv_npc_adbot.png",
+          "role": "character sprite",
+          "node_id": "tdv_adbot"
+        },
+        {
+          "asset_id": "tap_dat_vault_npc_tdv_npc_brewmistress",
+          "filename": "tap_dat_vault_tdv_npc_brewmistress.png",
+          "role": "character sprite",
+          "node_id": "tdv_brewmistress"
+        }
+      ]
+    },
+    {
+      "group_id": "tap_dat_vault_ui_fx",
+      "atlas": "tap_dat_vault_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "tap_dat_vault_item_opener_tap_dat_vault",
+          "filename": "tap_dat_vault_opener_tap_dat_vault.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "tap_dat_vault_item_stamp_tap_dat_vault",
+          "filename": "tap_dat_vault_stamp_tap_dat_vault.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "tap_dat_vault_item_beer_tap_dat_vault",
+          "filename": "tap_dat_vault_beer_tap_dat_vault.png",
+          "role": "tour item/icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "tap_dat_vault_ui",
+          "filename": "tap_dat_vault_ui.png",
+          "role": "puzzle/tour UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "tap_dat_vault_fx",
+          "filename": "tap_dat_vault_fx.png",
+          "role": "environmental and combat FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "tap_dat_vault_masks",
+          "filename": "tap_dat_vault_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "tdv_npc_glitch_bouncer_standard",
+      "asset_id": "tap_dat_vault_npc_tdv_npc_glitch_bouncer",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "tdv_npc_adbot_standard",
+      "asset_id": "tap_dat_vault_npc_tdv_npc_adbot",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "tdv_npc_brewmistress_standard",
+      "asset_id": "tap_dat_vault_npc_tdv_npc_brewmistress",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "tap_dat_vault_lighting",
+      "mask_asset": "tap_dat_vault_masks",
+      "nodes": [
+        "tdv_plaza",
+        "tdv_vault",
+        "tdv_vats",
+        "tdv_rhythm",
+        "tdv_adbot",
+        "tdv_brewmistress",
+        "tdv_service",
+        "tdv_selfie",
+        "tdv_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "tdv_exit_plaza",
+      "destination_id": "debaucheryville_clocktower_plaza",
+      "from_node": "tdv_exit",
+      "condition": "always_inside"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "tdv_switch",
+      "node_id": "tdv_plaza",
+      "highlight_asset": "tap_dat_vault_exterior"
+    },
+    {
+      "interaction_id": "tdv_enter",
+      "node_id": "tdv_vault",
+      "highlight_asset": "tap_dat_vault_node_tdv_vault"
+    },
+    {
+      "interaction_id": "tdv_rhythm",
+      "node_id": "tdv_rhythm",
+      "highlight_asset": "tap_dat_vault_node_tdv_rhythm"
+    },
+    {
+      "interaction_id": "tdv_eject",
+      "node_id": "tdv_rhythm",
+      "highlight_asset": "tap_dat_vault_node_tdv_rhythm"
+    },
+    {
+      "interaction_id": "tdv_boss",
+      "node_id": "tdv_brewmistress",
+      "highlight_asset": "tap_dat_vault_node_tdv_brewmistress"
+    },
+    {
+      "interaction_id": "tdv_rewards",
+      "node_id": "tdv_service",
+      "highlight_asset": "tap_dat_vault_node_tdv_service"
+    },
+    {
+      "interaction_id": "tdv_defer",
+      "node_id": "tdv_service",
+      "highlight_asset": "tap_dat_vault_node_tdv_service"
+    },
+    {
+      "interaction_id": "tdv_buy",
+      "node_id": "tdv_service",
+      "highlight_asset": "tap_dat_vault_node_tdv_service"
+    },
+    {
+      "interaction_id": "tdv_selfie",
+      "node_id": "tdv_selfie",
+      "highlight_asset": "tap_dat_vault_node_tdv_selfie"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "tap_dat_vault_masks",
+      "channels": {
+        "r": "signs",
+        "g": "puzzle cues",
+        "b": "boss cues",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 8,
+    "reduced_fx_asset": "tap_dat_vault_fx"
+  }
+}

@@ -1,0 +1,11 @@
+
+{
+  "title_id": "worlds_pickiest_drunk",
+  "name": "World’s Pickiest Drunk",
+  "description": "Survived the Great Döner Debate with your stomach and sarcasm intact.",
+  "effects": {
+    "passive": true,
+    "hungover_bravado_boost": 1,
+    "vendor_price_variance": -0.05
+  }
+}

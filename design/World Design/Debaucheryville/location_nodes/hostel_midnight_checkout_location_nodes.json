@@ -1,0 +1,198 @@
+{
+  "location_id": "debaucheryville_hostel_midnight_checkout_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_hostel_midnight_checkout_01",
+      "name": "Hostel \"Midnight Checkout\"",
+      "tag_id": "hostel_midnight_checkout",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Four-story peeling façade with ornate doorway, random AC units and flickering neon.",
+        "entry_condition": "Pay for selected room tier; Present ID when the receptionist bothers to check"
+      },
+      "interior": {
+        "theme": "Faded nineteenth-century grandeur compressed into budget-hostel chaos.",
+        "features": [
+          "service: hmc_reception",
+          "interior: hmc_dorm",
+          "quest: hmc_bunk_confession",
+          "interaction: hmc_kitchen",
+          "social: hmc_lounge_wifi",
+          "exit: hmc_exit"
+        ]
+      },
+      "functions": [
+        "Choose Accommodation",
+        "Attempt to Sleep",
+        "Bunk Bed Confession",
+        "Use Shared Kitchen",
+        "Use Hostel Wi-Fi"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "hmc_exterior",
+      "to": "hmc_reception",
+      "bidirectional": true
+    },
+    {
+      "from": "hmc_reception",
+      "to": "hmc_dorm",
+      "bidirectional": true
+    },
+    {
+      "from": "hmc_dorm",
+      "to": "hmc_bunk_confession",
+      "bidirectional": true
+    },
+    {
+      "from": "hmc_bunk_confession",
+      "to": "hmc_kitchen",
+      "bidirectional": true
+    },
+    {
+      "from": "hmc_kitchen",
+      "to": "hmc_lounge_wifi",
+      "bidirectional": true
+    },
+    {
+      "from": "hmc_lounge_wifi",
+      "to": "hmc_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "hmc_exterior": {
+      "connects_to": [
+        "hmc_reception"
+      ],
+      "type": "exterior",
+      "description": "Four-story peeling façade with ornate doorway, random AC units and flickering neon."
+    },
+    "hmc_reception": {
+      "connects_to": [
+        "hmc_exterior",
+        "hmc_dorm"
+      ],
+      "type": "service",
+      "description": "Cheap counter, key hooks and inconsistent staff presence."
+    },
+    "hmc_dorm": {
+      "connects_to": [
+        "hmc_reception",
+        "hmc_bunk_confession"
+      ],
+      "type": "interior",
+      "description": "Narrow bunk aisles staged as the playable dorm subset."
+    },
+    "hmc_bunk_confession": {
+      "connects_to": [
+        "hmc_dorm",
+        "hmc_kitchen"
+      ],
+      "type": "quest",
+      "description": "Lower bunk and curtain framing 3 AM stranger confessions."
+    },
+    "hmc_kitchen": {
+      "connects_to": [
+        "hmc_bunk_confession",
+        "hmc_lounge_wifi"
+      ],
+      "type": "interaction",
+      "description": "One burner, mystery fridge and dense note gallery."
+    },
+    "hmc_lounge_wifi": {
+      "connects_to": [
+        "hmc_kitchen",
+        "hmc_exit"
+      ],
+      "type": "social",
+      "description": "Rotating travelers, worn sofas and ICQ access."
+    },
+    "hmc_exit": {
+      "connects_to": [
+        "hmc_lounge_wifi"
+      ],
+      "type": "exit",
+      "description": "Return to Hostel Row with routes to Midnight Munchies and Cyberspace."
+    }
+  },
+  "feature_details": {
+    "hmc_exterior": {
+      "display_name": "Hostel Row Façade",
+      "image_generation_description": "Four-story peeling façade with ornate doorway, random AC units and flickering neon.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "hmc_reception": {
+      "display_name": "Reception",
+      "image_generation_description": "Cheap counter, key hooks and inconsistent staff presence.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "hmc_dorm": {
+      "display_name": "Representative Dorm",
+      "image_generation_description": "Narrow bunk aisles staged as the playable dorm subset.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "hmc_bunk_confession": {
+      "display_name": "Confession Bunk",
+      "image_generation_description": "Lower bunk and curtain framing 3 AM stranger confessions.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "hmc_kitchen": {
+      "display_name": "Passive-Aggressive Kitchen",
+      "image_generation_description": "One burner, mystery fridge and dense note gallery.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "hmc_lounge_wifi": {
+      "display_name": "Lounge and Wi-Fi Point",
+      "image_generation_description": "Rotating travelers, worn sofas and ICQ access.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "hmc_exit": {
+      "display_name": "Hostel Row Exit",
+      "image_generation_description": "Return to Hostel Row with routes to Midnight Munchies and Cyberspace.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    }
+  },
+  "ambient_npcs": [
+    "rotating backpackers",
+    "snoring roommates",
+    "kitchen foragers"
+  ]
+}

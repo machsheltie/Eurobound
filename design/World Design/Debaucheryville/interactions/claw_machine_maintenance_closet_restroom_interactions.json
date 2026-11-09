@@ -1,0 +1,170 @@
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "events": [
+    {
+      "event_id": "cmr_use_fixture",
+      "display_name": "Use DDR Toilet",
+      "trigger": {
+        "verb": "use",
+        "node_id": "cmr_ddr_toilet"
+      },
+      "requirements": [],
+      "results": [
+        "apply_documented_embarrassed_result"
+      ],
+      "quest_bindings": [
+        "Rival Trio ICQ",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "cmr_scan_mirror",
+      "display_name": "Scan INSERT COIN Mirror",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "cmr_crt_mirror"
+      },
+      "requirements": [],
+      "results": [
+        "claw_restroom_icq_callback_sent"
+      ],
+      "quest_bindings": [
+        "Rival Trio ICQ",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "cmr_read_graffiti",
+      "display_name": "Read Graffiti Set",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "cmr_graffiti_wall"
+      },
+      "requirements": [],
+      "results": [
+        "claw_restroom_graffiti_read",
+        "claw_restroom_bathroom_network_registered"
+      ],
+      "quest_bindings": [
+        "Rival Trio ICQ",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "cmr_examine_claw",
+      "display_name": "Examine Claw Chandelier",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "cmr_claw_bucket"
+      },
+      "requirements": [],
+      "results": [
+        "add_claw_restroom_lore"
+      ],
+      "quest_bindings": [
+        "Rival Trio ICQ",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "cmr_return",
+      "display_name": "Return to Arcade",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "cmr_exit"
+      },
+      "requirements": [],
+      "results": [
+        "transition_absinthe_arcade"
+      ],
+      "quest_bindings": [
+        "Rival Trio ICQ",
+        "cross-city bathroom network"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "cmr_use_fixture",
+      "node_id": "cmr_ddr_toilet",
+      "verb": "use",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "cmr_scan_mirror",
+      "node_id": "cmr_crt_mirror",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "cmr_read_graffiti",
+      "node_id": "cmr_graffiti_wall",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "cmr_examine_claw",
+      "node_id": "cmr_claw_bucket",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "cmr_return",
+      "node_id": "cmr_exit",
+      "verb": "travel",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "arcade_maintenance_restroom_unlocked",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "claw_restroom_graffiti_read",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "claw_restroom_icq_callback_sent",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "claw_restroom_bathroom_network_registered",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Maintenance Only, Dignity Optional",
+    "A mop closet mutated by broken arcade hardware into a sticky secret restroom."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "location_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+  "item_category": "Hidden Food Vendor / Digital Underground Concessions",
+  "items": [
+    {
+      "item_id": "bc_crypto_doner",
+      "display_name": "CryptoDöner Box",
+      "item_type": "consumable",
+      "price": 5,
+      "effect": "Recovery with small DigiDysentery risk.",
+      "acquisition": "Donny.exe menu."
+    },
+    {
+      "item_id": "bc_thermal_paste_sundae",
+      "display_name": "Thermal Paste Sundae",
+      "item_type": "consumable",
+      "price": 3,
+      "effect": "Temporary heat resistance; accuracy penalty.",
+      "acquisition": "Donny.exe menu."
+    },
+    {
+      "item_id": "bc_ram_chips_dip",
+      "display_name": "RAM Chips & Dip",
+      "item_type": "consumable",
+      "price": 4,
+      "effect": "Short SP boost followed by lag.",
+      "acquisition": "Donny.exe menu."
+    },
+    {
+      "item_id": "bc_protocol_pocket",
+      "display_name": "Protocol Pocket",
+      "item_type": "consumable",
+      "price": 6,
+      "effect": "Moderate recovery and backroom respect.",
+      "acquisition": "Donny.exe menu."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "Cyberspace respect reactions",
+      "ownership": "external"
+    },
+    {
+      "reference": "SnackHack/ICQ quest state",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "backroom_concessions_discovered",
+      "type": "state"
+    },
+    {
+      "reward_id": "backroom_respect_earned",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies another currency",
+    "price_confirmation_required": true,
+    "time_modifiers": "Apply only documented time-based changes"
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "location_name": "Absinthe Arcade",
+  "npcs": [
+    {
+      "npc_id": "debaucheryville_npc_backpack_girl_01",
+      "display_name": "Backpack Girl Who Never Left",
+      "role": "couchsurf_host_ambient_performer_collectible_source",
+      "node_id": "aa_node_token_exchange",
+      "profile": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/backpack_girl_who_never_left.md",
+      "quest_bindings": [
+        {
+          "quest": "couchsurfing_chronicles_debaucheryville",
+          "authority": "design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md"
+        },
+        {
+          "quest": "debaucheryville_sidequest_nothing_is_getting_through_01",
+          "authority": "design/Quests/debaucheryville/nothingisgettingthrough.md"
+        }
+      ],
+      "dialogue_ownership": "external_reference_only",
+      "routing": {
+        "state_authority": "four_state_couchsurf_routing_in_quest_file",
+        "flags": [
+          "backpack_girl_met",
+          "backpack_girl_refused_while_infected",
+          "backpack_girl_couchsurf_completed",
+          "ballad_of_the_bros_obtained"
+        ],
+        "location_responsibility": "Spawn, schedule, interaction availability and quest handoff only."
+      },
+      "schedule": {
+        "04:00_to_08:00": "current_hostel_common_room",
+        "08:00_to_14:00": "offscreen_free_breakfast_route",
+        "arcade_default": "14:00_to_22:00",
+        "22:00_to_04:00": "arcade_back_area_or_hostel_migration"
+      },
+      "visual_design": {
+        "silhouette": "small_seated_person_with_enormous_sun_bleached_backpack",
+        "default_pose": "cross_legged_ukulele_across_knees_notebook_open_kebab_in_hand",
+        "lighting": "warm_floor_pool_without_neon_outline",
+        "must_not_read_as": "pitiable_or_homeless",
+        "sprite_sheet": "backpack_girl_arcade.png"
+      },
+      "animations": [
+        "strum_idle",
+        "notebook_scribble",
+        "tune_peg",
+        "kebab_offer",
+        "head_tilt_compose",
+        "stand_and_go"
+      ],
+      "items_services": [
+        "half_kebab_offer",
+        "couchsurf_floor_space",
+        "item_ballad_of_the_bros"
+      ]
+    },
+    {
+      "npc_id": "debaucheryville_npc_arcade_employee_01",
+      "display_name": "Arcade Employee",
+      "role": "floor_staff_quest_reactor_machine_reset",
+      "node_id": "aa_node_main_cabinet_loop",
+      "schedule": {
+        "10:00_to_18:00": "main_hall_and_entry",
+        "18:00_to_02:00": "cabinet_loop_claw_alcove_and_north_wing",
+        "02:00_to_10:00": "offscreen_or_cleanup"
+      },
+      "personality": {
+        "core": "deadpan_worker_who_has_seen_every_tourist_delusion",
+        "comedy_function": "states_the_obvious_without_trying_to_win_the_argument"
+      },
+      "quest_bindings": [
+        {
+          "quest": "club_flyers",
+          "trigger": "club_flyer_placed",
+          "dialogue_authority": "design/Quests/debaucheryville/club_flyers.md"
+        },
+        {
+          "quest": "debaucheryville_nft_hunt",
+          "trigger": "beer_pong_saint_relic_obtained",
+          "dialogue_set": "you_actually_won_that"
+        }
+      ],
+      "visual_design": {
+        "clothing": "black_staff_tee_with_purple_pixel_logo_and_overloaded_key_ring",
+        "prop": "machine_reset_remote_held_like_tv_remote",
+        "sprite_sheet": "arcade_employee.png"
+      },
+      "animations": [
+        "idle_remote_click",
+        "cabinet_reset",
+        "flyer_squint",
+        "claw_win_double_take"
+      ]
+    },
+    {
+      "npc_id": "debaucheryville_npc_arcade_token_attendant_01",
+      "display_name": "Token Attendant",
+      "role": "token_machine_helper_and_bottle_bar_attendant",
+      "node_id": "aa_node_token_exchange",
+      "secondary_node": "aa_node_bottle_bar",
+      "schedule": {
+        "06:00_to_14:00": "token_exchange_cleanup_shift",
+        "14:00_to_22:00": "token_exchange_and_bar",
+        "22:00_to_04:00": "bottle_bar",
+        "04:00_to_06:00": "offscreen"
+      },
+      "personality": {
+        "core": "efficient_and_cheerfully_unashamed_of_the_exchange_rate",
+        "comedy_function": "treats every obvious ripoff as hospitality"
+      },
+      "services": [
+        "explain_token_exchange",
+        "restore_jammed_machine",
+        "point_toward_public_bar",
+        "deny_existence_of_real_vip_section"
+      ],
+      "visual_design": {
+        "clothing": "waistcoat_over_arcade_staff_shirt_with_brass_token_apron",
+        "props": "token_tube_bar_towel_receipt_roll",
+        "sprite_sheet": "token_attendant.png"
+      },
+      "animations": [
+        "count_tokens",
+        "tap_price_board",
+        "polish_glass",
+        "point_in_vip_circle"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "absinthe_arcade_twitchy_hackers",
+      "display_name": "Twitchy Hacker Types",
+      "role": "ambient_patron_and_tech_hint_pool",
+      "spawn_nodes": [
+        "aa_node_main_cabinet_loop",
+        "aa_node_mirror_corridor",
+        "aa_node_north_wing"
+      ],
+      "population": {
+        "day": "0_to_2",
+        "evening": "1_to_3",
+        "night": "2_to_4"
+      },
+      "visual_design": {
+        "silhouette_variants": 3,
+        "shared_traits": "layered_hoodies_cable_bags_old_laptops_reflective_glasses",
+        "avoid": "generic_malicious_hacker_caricature",
+        "sprite_sheet": "arcade_hacker_patron_variants.png"
+      },
+      "interaction_roles": [
+        "claw_service_note_hint",
+        "mirror_shadow_puzzle_hint",
+        "sinfonia_symbol_foreshadowing"
+      ],
+      "cross_location_callbacks": [
+        "cyberspace_kavarna"
+      ]
+    },
+    {
+      "group_id": "absinthe_arcade_edm_ghosts",
+      "display_name": "EDM Ghosts",
+      "role": "spectral_ambient_ravers_and_cryptic_half_joke_pool",
+      "spawn_nodes": [
+        "aa_node_bottle_bar",
+        "aa_node_main_cabinet_loop",
+        "mezzanine_visual_layer"
+      ],
+      "population": {
+        "day": "0",
+        "evening": "0_to_1",
+        "night": "1_to_3"
+      },
+      "visual_design": {
+        "silhouette_variants": 2,
+        "shared_traits": "translucent_raver_clothing_trailing_scanlines_no_horror_gore",
+        "emission": "subtle_green_or_purple_edge_not_full_body_glow",
+        "sprite_sheet": "edm_ghost_variants.png"
+      },
+      "interaction_roles": [
+        "ambient_dance_loop",
+        "meaningless_achievement_comment",
+        "taproom_curtain_foreshadowing"
+      ]
+    },
+    {
+      "group_id": "absinthe_arcade_rogue_backpackers",
+      "display_name": "Rogue Backpackers Who Never Left",
+      "role": "ambient_regulars_and_ballad_archive_network",
+      "spawn_nodes": [
+        "aa_node_bottle_bar",
+        "aa_node_token_exchange",
+        "aa_node_north_wing"
+      ],
+      "population": {
+        "day": "1_to_2",
+        "evening": "2_to_3",
+        "night": "2_to_4"
+      },
+      "visual_design": {
+        "silhouette_variants": 4,
+        "shared_traits": "travel_worn_layers_hostel_wristbands_repaired_bags",
+        "avoid": "making_them_destitute_or_interchangeable",
+        "sprite_sheet": "rogue_backpacker_variants.png"
+      },
+      "interaction_roles": [
+        "ballad_variant_callback",
+        "fake_authenticity_commentary",
+        "hostel_network_hint"
+      ]
+    },
+    {
+      "group_id": "absinthe_arcade_speedrunners",
+      "display_name": "Bathroom Route Speedrunners",
+      "role": "north_wing_ambient_hint_and_restroom_callback",
+      "spawn_nodes": [
+        "aa_node_broken_ddr",
+        "aa_node_maintenance_door",
+        "aa_node_main_cabinet_loop"
+      ],
+      "population": {
+        "before_restroom_unlock": "0_to_1",
+        "after_restroom_unlock": "1_to_2"
+      },
+      "visual_design": {
+        "silhouette_variants": 2,
+        "shared_traits": "timer_watch_lightweight_bag_arcade_wrist_sweatbands",
+        "sprite_sheet": "arcade_speedrunner_variants.png"
+      },
+      "interaction_roles": [
+        "three_token_ddr_hint",
+        "maintenance_door_route_comment",
+        "restroom_foot_soak_callback"
+      ],
+      "boundary_rule": "Restroom-specific actions occur only after transition and are owned by its location file."
+    }
+  ],
+  "npc_interactions": {
+    "backpack_girl_and_hackers": "She has written songs about all of them; they have asked her not to.",
+    "backpack_girl_and_rogue_backpackers": "They spread variants of her ballads between hostels and cities.",
+    "employee_and_speedrunners": "The employee knows the restroom route record and refuses to recognize it as a sport.",
+    "attendant_and_fake_vip_claims": "The attendant points every VIP claimant back toward the public bar without breaking eye contact.",
+    "edm_ghosts_and_regulars": "Regulars treat the ghosts as another lighting fault and make space for them at the rail."
+  },
+  "spawn_and_readability_rules": {
+    "backpack_girl_clearance": "Keep a full silhouette-width clear around her backpack, ukulele and kebab-offer hand.",
+    "quest_prop_clearance": "Ambient NPCs cannot block the claw controls, three DDR token pips, Taproom plaque or maintenance door handle.",
+    "crowd_lod": "On low settings reduce unnamed variants before removing quest-bound NPCs or hidden-entrance hint NPCs.",
+    "mezzanine_rule": "Mezzanine NPCs are visual depth cards unless later navigation design explicitly makes the upper level playable."
+  }
+}

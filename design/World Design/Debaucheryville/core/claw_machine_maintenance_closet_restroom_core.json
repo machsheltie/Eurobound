@@ -1,0 +1,75 @@
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "display_name": "Claw Machine Maintenance Closet Restroom",
+  "satirical_subtitle": "Maintenance Only, Dignity Optional",
+  "world": "Debaucheryville",
+  "zone": "Hidden behind Absinthe Arcade DDR bay",
+  "location_type": "Secret Restroom / Graffiti Micro-Location",
+  "sub_types": [
+    "quest location",
+    "service or micro-location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md",
+    "docs/superpowers/specs/2026-11-02-claw-machine-maintenance-closet-restroom-location-package-design.md"
+  ],
+  "access": {
+    "hours": "Always after permanent unlock",
+    "entry_requirements": [
+      "arcade_maintenance_restroom_unlocked"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "cmr_exit_arcade",
+      "destination_id": "debaucheryville_clocktower_arcade_01",
+      "from_node": "cmr_exit",
+      "condition": "arcade_maintenance_restroom_unlocked"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Inside Maintenance Door -> DDR Toilet Fixture -> INSERT COIN Mirror -> Graffiti Wall -> Claw Arm and Bucket Zone -> Arcade Return Door",
+    "landmarks": [
+      "Inside Maintenance Door",
+      "DDR Toilet Fixture",
+      "INSERT COIN Mirror",
+      "Graffiti Wall",
+      "Claw Arm and Bucket Zone",
+      "Arcade Return Door"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_clocktower_arcade_01 owns space beyond cmr_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A mop closet mutated by broken arcade hardware into a sticky secret restroom."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "marquee green",
+      "CRT blue",
+      "gum pink",
+      "maintenance grey"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Maintenance Only, Dignity Optional",
+    "contrast": "A mop closet mutated by broken arcade hardware into a sticky secret restroom."
+  },
+  "state_tracking": {
+    "arcade_maintenance_restroom_unlocked": false,
+    "claw_restroom_graffiti_read": false,
+    "claw_restroom_icq_callback_sent": false,
+    "claw_restroom_bathroom_network_registered": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "claw_machine_maintenance_closet_restroom_exterior",
+      "claw_machine_maintenance_closet_restroom_interior",
+      "claw_machine_maintenance_closet_restroom_ui"
+    ]
+  }
+}

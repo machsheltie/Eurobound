@@ -1,0 +1,136 @@
+{
+  "location_id": "debaucheryville_vendor_bohemian_trap_01",
+  "events": [
+    {
+      "event_id": "bt_browse",
+      "display_name": "Browse Absinthe Tiers",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "bt_bottle_display"
+      },
+      "requirements": [
+        "bohemian_trap_open"
+      ],
+      "results": [
+        "open_absinthe_inventory"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "bt_buy_ritual",
+      "display_name": "Purchase The Ritual",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "bt_ritual_station"
+      },
+      "requirements": [
+        "bohemian_trap_open"
+      ],
+      "results": [
+        "bohemian_trap_ritual_complete"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "bt_consume",
+      "display_name": "Drink Absinthe",
+      "trigger": {
+        "verb": "consume",
+        "node_id": "bt_customer_space"
+      },
+      "requirements": [],
+      "results": [
+        "apply_absinthe_status",
+        "possibly_apply_control_reversal"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "bt_worth_it",
+      "display_name": "Was That Worth It?",
+      "trigger": {
+        "verb": "reflect",
+        "node_id": "bt_customer_space"
+      },
+      "requirements": [
+        "bohemian_trap_ritual_complete"
+      ],
+      "results": [
+        "bohemian_trap_worth_it_checked"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "bt_browse",
+      "node_id": "bt_bottle_display",
+      "verb": "shop",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "bt_buy_ritual",
+      "node_id": "bt_ritual_station",
+      "verb": "purchase",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "bt_consume",
+      "node_id": "bt_customer_space",
+      "verb": "consume",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "bt_worth_it",
+      "node_id": "bt_customer_space",
+      "verb": "reflect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "bohemian_trap_open",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "bohemian_trap_ritual_complete",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "bohemian_trap_control_reversal_active",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "bohemian_trap_worth_it_checked",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Authentic Absinthe, Recently Antiqued",
+    "A 2015 cart artificially aged into Belle Époque tourist mythology."
+  ]
+}

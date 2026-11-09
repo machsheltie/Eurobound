@@ -1,0 +1,270 @@
+{
+  "location_id": "debaucheryville_blockbuster_internet_museum_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_blockbuster_internet_museum_01",
+      "name": "Internet History Museum",
+      "tag_id": "internet_history_museum",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Floppy-boarded storefront, broken jewel cases and sagging 404 sign.",
+        "entry_condition": "Public door during 08:00-20:00; 03:25-03:40 quest-unlatched route after meme_black_market_graffiti_clue_read"
+      },
+      "interior": {
+        "theme": "A failed video store curated as a dead-serious museum of cursed early-internet trauma.",
+        "features": [
+          "service: ihm_lobby",
+          "exhibit: ihm_modem_hall",
+          "puzzle: ihm_geocities",
+          "exhibit: ihm_angelfire",
+          "exhibit: ihm_habbo",
+          "puzzle: ihm_msn",
+          "exhibit: ihm_imac_altar",
+          "transition: ihm_vhs_shelf",
+          "exit: ihm_exit"
+        ]
+      },
+      "functions": [
+        "Use Quest-Unlatched Door",
+        "Listen to Modem Shrine",
+        "Activate GeoCities Kiosk",
+        "Enter AllYourBase69",
+        "Open Secret VHS Shelf"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "ihm_exterior",
+      "to": "ihm_lobby",
+      "bidirectional": true
+    },
+    {
+      "from": "ihm_lobby",
+      "to": "ihm_modem_hall",
+      "bidirectional": true
+    },
+    {
+      "from": "ihm_modem_hall",
+      "to": "ihm_geocities",
+      "bidirectional": true
+    },
+    {
+      "from": "ihm_geocities",
+      "to": "ihm_angelfire",
+      "bidirectional": true
+    },
+    {
+      "from": "ihm_angelfire",
+      "to": "ihm_habbo",
+      "bidirectional": true
+    },
+    {
+      "from": "ihm_habbo",
+      "to": "ihm_msn",
+      "bidirectional": true
+    },
+    {
+      "from": "ihm_msn",
+      "to": "ihm_imac_altar",
+      "bidirectional": true
+    },
+    {
+      "from": "ihm_imac_altar",
+      "to": "ihm_vhs_shelf",
+      "bidirectional": true
+    },
+    {
+      "from": "ihm_vhs_shelf",
+      "to": "ihm_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "ihm_exterior": {
+      "connects_to": [
+        "ihm_lobby"
+      ],
+      "type": "exterior",
+      "description": "Floppy-boarded storefront, broken jewel cases and sagging 404 sign."
+    },
+    "ihm_lobby": {
+      "connects_to": [
+        "ihm_exterior",
+        "ihm_modem_hall"
+      ],
+      "type": "service",
+      "description": "Free entry desk and academically serious garbage labels."
+    },
+    "ihm_modem_hall": {
+      "connects_to": [
+        "ihm_lobby",
+        "ihm_geocities"
+      ],
+      "type": "exhibit",
+      "description": "Dial-up relic shrine with captioned screeching."
+    },
+    "ihm_geocities": {
+      "connects_to": [
+        "ihm_modem_hall",
+        "ihm_angelfire"
+      ],
+      "type": "puzzle",
+      "description": "Twinkling GIF stars and 03:33 activation kiosk."
+    },
+    "ihm_angelfire": {
+      "connects_to": [
+        "ihm_geocities",
+        "ihm_habbo"
+      ],
+      "type": "exhibit",
+      "description": "A wall of flames still loading since 2002."
+    },
+    "ihm_habbo": {
+      "connects_to": [
+        "ihm_angelfire",
+        "ihm_msn"
+      ],
+      "type": "exhibit",
+      "description": "Velvet-rope reconstruction and evidence markers."
+    },
+    "ihm_msn": {
+      "connects_to": [
+        "ihm_habbo",
+        "ihm_imac_altar"
+      ],
+      "type": "puzzle",
+      "description": "Broken messenger terminal that accepts the market password."
+    },
+    "ihm_imac_altar": {
+      "connects_to": [
+        "ihm_msn",
+        "ihm_vhs_shelf"
+      ],
+      "type": "exhibit",
+      "description": "Darkroom shrine and cursed monitor glow."
+    },
+    "ihm_vhs_shelf": {
+      "connects_to": [
+        "ihm_imac_altar",
+        "ihm_exit"
+      ],
+      "type": "transition",
+      "description": "Shelf mechanism opens after the completed 03:33 sequence."
+    },
+    "ihm_exit": {
+      "connects_to": [
+        "ihm_vhs_shelf"
+      ],
+      "type": "exit",
+      "description": "Return to the downtown street."
+    }
+  },
+  "feature_details": {
+    "ihm_exterior": {
+      "display_name": "Former Blockbuster Façade",
+      "image_generation_description": "Floppy-boarded storefront, broken jewel cases and sagging 404 sign.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_lobby": {
+      "display_name": "Museum Lobby",
+      "image_generation_description": "Free entry desk and academically serious garbage labels.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_modem_hall": {
+      "display_name": "Hall of Modems",
+      "image_generation_description": "Dial-up relic shrine with captioned screeching.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_geocities": {
+      "display_name": "GeoCities Diorama",
+      "image_generation_description": "Twinkling GIF stars and 03:33 activation kiosk.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_angelfire": {
+      "display_name": "Angelfire Wall",
+      "image_generation_description": "A wall of flames still loading since 2002.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_habbo": {
+      "display_name": "Habbo Crime Scene",
+      "image_generation_description": "Velvet-rope reconstruction and evidence markers.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_msn": {
+      "display_name": "MSN Graveyard Terminal",
+      "image_generation_description": "Broken messenger terminal that accepts the market password.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_imac_altar": {
+      "display_name": "iMac G3 Altar",
+      "image_generation_description": "Darkroom shrine and cursed monitor glow.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_vhs_shelf": {
+      "display_name": "Secret VHS Shelf",
+      "image_generation_description": "Shelf mechanism opens after the completed 03:33 sequence.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "ihm_exit": {
+      "display_name": "Downtown Exit",
+      "image_generation_description": "Return to the downtown street.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    }
+  },
+  "ambient_npcs": [
+    "nostalgic visitors",
+    "school group",
+    "static silhouettes"
+  ]
+}

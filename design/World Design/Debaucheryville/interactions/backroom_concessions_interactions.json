@@ -1,0 +1,171 @@
+{
+  "location_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+  "events": [
+    {
+      "event_id": "bc_order_food",
+      "display_name": "Order Hacker Food",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "bc_counter"
+      },
+      "requirements": [],
+      "results": [
+        "open_backroom_menu"
+      ],
+      "quest_bindings": [
+        "SnackHackRevenge",
+        "icq darkweb referrals"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "bc_consume_food",
+      "display_name": "Consume Purchase",
+      "trigger": {
+        "verb": "consume",
+        "node_id": "bc_seating"
+      },
+      "requirements": [],
+      "results": [
+        "apply_item_effect"
+      ],
+      "quest_bindings": [
+        "SnackHackRevenge",
+        "icq darkweb referrals"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "bc_inspect_vending",
+      "display_name": "Inspect Gutted Machines",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "bc_vending_pair"
+      },
+      "requirements": [],
+      "results": [
+        "reveal_environmental_lore"
+      ],
+      "quest_bindings": [
+        "SnackHackRevenge",
+        "icq darkweb referrals"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "bc_request_referral",
+      "display_name": "Ask for Referral",
+      "trigger": {
+        "verb": "talk",
+        "node_id": "bc_counter"
+      },
+      "requirements": [
+        "backroom_respect_earned"
+      ],
+      "results": [
+        "backroom_black_market_referral"
+      ],
+      "quest_bindings": [
+        "SnackHackRevenge",
+        "icq darkweb referrals"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "bc_return",
+      "display_name": "Return to Café",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "bc_exit"
+      },
+      "requirements": [],
+      "results": [
+        "transition_cyberspace"
+      ],
+      "quest_bindings": [
+        "SnackHackRevenge",
+        "icq darkweb referrals"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "bc_order_food",
+      "node_id": "bc_counter",
+      "verb": "shop",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "bc_consume_food",
+      "node_id": "bc_seating",
+      "verb": "consume",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "bc_inspect_vending",
+      "node_id": "bc_vending_pair",
+      "verb": "inspect",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "bc_request_referral",
+      "node_id": "bc_counter",
+      "verb": "talk",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "bc_return",
+      "node_id": "bc_exit",
+      "verb": "travel",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "backroom_concessions_discovered",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "backroom_respect_earned",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "digidysentery_active",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "backroom_black_market_referral",
+      "change": "Persist and present the corresponding authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "404: Calories Not Found",
+    "A concession booth wedged between gutted vending machines and hacked server light."
+  ]
+}

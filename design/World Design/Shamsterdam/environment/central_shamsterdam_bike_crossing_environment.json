@@ -1,0 +1,268 @@
+{
+  "location_id": "shamsterdam_bike_crossing_thunderdome_01",
+  
+  "ambient_audio": {
+    "constant_layers": [
+      {"sound": "bicycle_bells_overlapping", "volume": 0.4, "note": "Angry, not friendly"},
+      {"sound": "traffic_flow_hum", "volume": 0.2},
+      {"sound": "dutch_conversations_ambient", "volume": 0.15},
+      {"sound": "cafe_terrace_clatter", "volume": 0.1}
+    ],
+    "periodic_events": [
+      {"sound": "tram_bell_approaching", "trigger": "tram_warning", "volume": 0.7},
+      {"sound": "near_miss_whoosh", "trigger": "close_call", "volume": 0.5},
+      {"sound": "dutch_swearing", "trigger": "collision", "volume": 0.4}
+    ],
+    "time_based": {
+      "rush_hour": {
+        "intensity_multiplier": 1.5,
+        "additional_sounds": ["stressed_commuter_bells", "horn_honks"]
+      },
+      "night": {
+        "intensity_multiplier": 0.7,
+        "additional_sounds": ["party_bike_music", "drunk_singing"]
+      }
+    }
+  },
+  
+  "minigame_audio": {
+    "crossing_start": {"sound": "tension_buildup", "volume": 0.3},
+    "lane_clear": {"sound": "small_chime_relief", "volume": 0.4},
+    "section_clear": {"sound": "victory_flourish_small", "volume": 0.5},
+    "full_crossing_success": {"sound": "triumphant_fanfare", "volume": 0.6},
+    "perfect_crossing": {"sound": "full_orchestral_moment", "volume": 0.7},
+    "collision_slow": {"sound": "ding_impact_sorry", "volume": 0.5},
+    "collision_fast": {"sound": "crash_dutch_swear", "volume": 0.6},
+    "tram_warning": {"sound": "tram_bell_loud", "volume": 0.8},
+    "tram_hit": {"sound": "wilhelm_scream_optional_comedy", "volume": 0.7},
+    "cargo_parade_warning": {"sound": "children_singing_dogs_barking_bells", "volume": 0.6},
+    "cargo_parade_during": {"sound": "rolling_wheel_thunder_flower_petals", "volume": 0.5}
+  },
+  
+  "stress_audio": {
+    "enabled": true,
+    "trigger": "during_crossing_attempt",
+    "layers": [
+      {"type": "heartbeat", "intensity_scales_with_danger": true},
+      {"type": "breathing", "increases_with_close_calls": true}
+    ]
+  },
+  
+  "status_effects": {
+    "inflicted_at_location": [
+      {
+        "effect_id": "bicycle_trauma",
+        "trigger": "multiple_collisions_or_tram_hit",
+        "stats": {"speed_in_traffic": -0.2},
+        "duration_hours": 2,
+        "cure": "tolerance_hostel_rest",
+        "visual": "flinching_animation_near_bikes"
+      },
+      {
+        "effect_id": "cargo_parade_casualty",
+        "trigger": "cargo_parade_hit",
+        "stats": {"dignity": -0.1},
+        "visual": "covered_in_flower_petals",
+        "duration": "until_bath_or_change",
+        "npc_comments": true
+      }
+    ],
+    "buffs_earned": [
+      {
+        "effect_id": "crossing_confidence",
+        "trigger": "successful_crossing",
+        "stats": {"reflexes": 0.1},
+        "duration_minutes": 30,
+        "stacks": 3
+      },
+      {
+        "effect_id": "dodge_master",
+        "trigger": "perfect_crossing",
+        "stats": {"reflexes": 0.15, "speed": 0.05},
+        "duration_minutes": 60
+      },
+      {
+        "effect_id": "rush_hour_survivor",
+        "trigger": "rush_hour_crossing_no_hit",
+        "stats": {"reflexes": 0.05},
+        "duration": "permanent"
+      },
+      {
+        "effect_id": "bicycle_empathy",
+        "trigger": "cargo_cult_quest_complete",
+        "stats": {"crossing_difficulty_reduction": 0.15},
+        "duration": "permanent"
+      },
+      {
+        "effect_id": "traffic_pattern_insight",
+        "trigger": "observe_from_terrace_30_seconds",
+        "stats": {"crossing_difficulty_reduction": 0.1},
+        "duration_minutes": 10
+      }
+    ]
+  },
+  
+  "time_of_day_variations": {
+    "morning_rush": {
+      "hours": "08:00-09:00",
+      "traffic_density": 2.0,
+      "cyclist_types": ["commuter_heavy", "parent_bakfiets_heavy", "delivery_heavy"],
+      "difficulty_multiplier": 2.0,
+      "atmosphere": "stressed_efficient",
+      "special_challenge": "rush_hour_achievement_available"
+    },
+    "midday": {
+      "hours": "09:00-17:00",
+      "traffic_density": 1.0,
+      "cyclist_types": ["balanced_mix"],
+      "difficulty_multiplier": 1.0,
+      "atmosphere": "standard_chaos"
+    },
+    "evening_rush": {
+      "hours": "17:00-19:00",
+      "traffic_density": 2.0,
+      "cyclist_types": ["commuter_heavy", "student_heavy"],
+      "difficulty_multiplier": 2.0,
+      "atmosphere": "everyone_wants_to_go_home"
+    },
+    "evening": {
+      "hours": "19:00-22:00",
+      "traffic_density": 0.8,
+      "cyclist_types": ["leisure_riders", "dinner_goers"],
+      "difficulty_multiplier": 0.9,
+      "atmosphere": "slightly_calmer"
+    },
+    "night": {
+      "hours": "22:00-06:00",
+      "traffic_density": 0.6,
+      "cyclist_types": ["party_bikes", "bar_crawlers", "wobbly_tourists"],
+      "difficulty_multiplier": 0.8,
+      "unpredictability": "high",
+      "atmosphere": "different_kind_of_dangerous",
+      "special": "party_bike_groups_with_music"
+    },
+    "dawn": {
+      "hours": "06:00-08:00",
+      "traffic_density": 0.4,
+      "cyclist_types": ["jogger_cyclists", "early_commuters"],
+      "difficulty_multiplier": 0.6,
+      "atmosphere": "quiet_judgment_from_morning_people"
+    }
+  },
+  
+  "cargo_parade_schedule": {
+    "interval_seconds": 90,
+    "duration_seconds": 10,
+    "warning_time_seconds": 5,
+    "composition": [
+      {"type": "mama_bakfiets_leader", "count": 1},
+      {"type": "parent_cargo_bikes", "count": 8},
+      {"type": "delivery_cargo", "count": 4},
+      {"type": "flower_delivery", "count": 3}
+    ],
+    "visual": "wall_of_bakfiets_impenetrable",
+    "audio": "cacophony_of_bells_children_dogs",
+    "aftermath": "flower_petals_on_road"
+  },
+  
+  "visual_atmosphere": {
+    "lighting": {
+      "daytime": {
+        "ambient": "#87CEEB",
+        "intensity": 0.9,
+        "shadows": "dynamic_from_sun"
+      },
+      "golden_hour": {
+        "ambient": "#FFD700",
+        "intensity": 0.8,
+        "atmosphere": "instagram_worthy_death_trap"
+      },
+      "evening": {
+        "ambient": "#FF7F50",
+        "intensity": 0.6,
+        "street_lights_active": true
+      },
+      "night": {
+        "ambient": "#2C3E50",
+        "intensity": 0.3,
+        "street_lights": {
+          "color": "#FFE4B5",
+          "count": 12,
+          "creates_pools_of_light": true
+        },
+        "bike_lights": "fast_moving_dots"
+      }
+    },
+    "weather_effects": {
+      "rain": {
+        "probability": 0.3,
+        "effect_on_crossing": "slightly_fewer_bikes",
+        "visual": "wet_reflections_on_road",
+        "audio": "rain_on_pavement"
+      },
+      "wind": {
+        "probability": 0.2,
+        "effect_on_crossing": "cyclists_more_wobbly",
+        "visual": "leaves_blowing"
+      }
+    },
+    "particle_effects": [
+      {"type": "bicycle_bells_visual", "trigger": "near_miss", "style": "musical_note_burst"},
+      {"type": "flower_petals", "trigger": "cargo_parade", "density": "heavy"},
+      {"type": "tram_sparks", "trigger": "tram_passing", "color": "#FFD700"},
+      {"type": "steam_from_coffee", "location": "cafe_terrace", "ambient": true}
+    ]
+  },
+  
+  "cross_location_dependencies": {
+    "connects_to": [
+      {"direction": "north", "location": "shamsterdam_canal_ring_promenade_01"},
+      {"direction": "south", "location": "shamsterdam_roodelicht_row_01"},
+      {"direction": "east", "location": "shamsterdam_museum_mile_01"},
+      {"direction": "west", "location": "shamsterdam_coffeeshop_quarter_01"},
+      {"direction": "northeast", "location": "shamsterdam_cafe_de_schaamte_01"}
+    ],
+    "required_crossing_for": [
+      "faberge_egg_hunt_quest",
+      "stay_away_campaign_quest",
+      "canal_bike_recovery_quest",
+      "museum_mile_access",
+      "coffeeshop_quarter_access"
+    ],
+    "shortcuts_available_after": {
+      "underground_passage": {"condition": "10_successful_crossings"},
+      "rooftop_route": {"condition": "cargo_cult_quest_complete"},
+      "bike_rental": {"condition": "15_euro_payment"}
+    }
+  },
+  
+  "state_tracking": {
+    "player_stats": {
+      "total_crossings_attempted": 0,
+      "successful_crossings": 0,
+      "perfect_crossings": 0,
+      "total_collisions": 0,
+      "tram_hits": 0,
+      "cargo_parade_hits": 0,
+      "rush_hour_completions": 0,
+      "fines_paid": 0
+    },
+    "achievements_unlocked": [],
+    "shortcuts_unlocked": [],
+    "fallen_tourist_state": "visit_1"
+  },
+  
+  "mobile_performance": {
+    "cyclist_pool_size": 24,
+    "max_active_cyclists": 12,
+    "particle_budget": 80,
+    "draw_calls_max": 50,
+    "memory_budget_mb": 50,
+    "target_fps": 60,
+    "lod_distances": {
+      "full_detail": 0,
+      "reduced_animation": 150,
+      "static_sprites": 300
+    }
+  }
+}

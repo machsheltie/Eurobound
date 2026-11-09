@@ -1,0 +1,153 @@
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  "location_name": "Velvet Curtain Club",
+  "npcs": [
+    {
+      "npc_id": "vcc_npc_tomas",
+      "display_name": "Tomáš",
+      "role": "primary bouncer and gate controller",
+      "node": "vcc_bouncer_gate",
+      "schedule": "20:00-04:00",
+      "visual": "Cybernetic eye, black coat and unimpressed posture.",
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "vcc_npc_marek",
+      "display_name": "Marek",
+      "role": "second bouncer",
+      "node": "vcc_bouncer_gate",
+      "schedule": "20:00-04:00",
+      "visual": "Buff silhouette and velvet rope gloves.",
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "vcc_npc_vanessa",
+      "display_name": "Vape Witch Vanessa",
+      "role": "social/quest NPC",
+      "node": "vcc_booths",
+      "schedule": "club hours",
+      "visual": "Burgundy clubwear, crystal vape and occult glow.",
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "vcc_npc_dj",
+      "display_name": "DJ Sound Alchemist",
+      "role": "music and event controller",
+      "node": "vcc_dj_dais",
+      "schedule": "club hours",
+      "visual": "Broken-throne silhouette and LED headphones.",
+      "quest_bindings": [
+        "vip_wristbands",
+        "club_flyers",
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough",
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "velvet_curtain_club_ambient_1",
+      "display_name": "club patrons",
+      "spawn_nodes": [
+        "vcc_bar",
+        "vcc_vip_path",
+        "vcc_lab_path"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "velvet_curtain_club_ambient_2",
+      "display_name": "booth influencers",
+      "spawn_nodes": [
+        "vcc_bar",
+        "vcc_vip_path",
+        "vcc_lab_path"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "velvet_curtain_club_ambient_3",
+      "display_name": "dance-floor crowd",
+      "spawn_nodes": [
+        "vcc_bar",
+        "vcc_vip_path",
+        "vcc_lab_path"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "vcc_npc_tomas",
+      "node_id": "vcc_bouncer_gate",
+      "role": "primary bouncer and gate controller"
+    },
+    {
+      "npc_id": "vcc_npc_marek",
+      "node_id": "vcc_bouncer_gate",
+      "role": "second bouncer"
+    },
+    {
+      "npc_id": "vcc_npc_vanessa",
+      "node_id": "vcc_booths",
+      "role": "social/quest NPC"
+    },
+    {
+      "npc_id": "vcc_npc_dj",
+      "node_id": "vcc_dj_dais",
+      "role": "music and event controller"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient count during quest scenes",
+    "Contrast named NPC silhouettes"
+  ]
+}

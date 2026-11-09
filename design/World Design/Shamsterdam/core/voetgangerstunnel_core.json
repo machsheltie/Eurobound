@@ -1,0 +1,227 @@
+{
+  "location_id": "shamsterdam_voetgangerstunnel_01",
+  "display_name": "Voetgangerstunnel",
+  "english_translation": "Pedestrian Tunnel",
+  "satirical_subtitle": "The Underground Labyrinth of Wrong Turns",
+  "world": "shamsterdam",
+  "area_zone": "central_underground_network",
+  "location_type": "navigation_hazard_transition_zone",
+  
+  "access_requirements": {
+    "entry_points": [
+      {
+        "id": "bike_crossing_entrance",
+        "location": "shamsterdam_bike_crossing_thunderdome_01",
+        "unlock_condition": "10_successful_crossings OR escort_knowledge_purchased",
+        "primary": true
+      },
+      {
+        "id": "museum_mile_parking",
+        "location": "shamsterdam_museum_mile_01",
+        "unlock_condition": "discovered",
+        "primary": false
+      },
+      {
+        "id": "central_station_basement",
+        "location": "shamsterdam_central_station_01",
+        "unlock_condition": "always_available",
+        "primary": false
+      },
+      {
+        "id": "febo_hidden",
+        "location": "shamsterdam_febo_automat_01",
+        "unlock_condition": "febo_shortcut_quest_complete",
+        "hidden": true
+      }
+    ],
+    "time_restrictions": "24_hours",
+    "stat_requirements": null,
+    "special_conditions": [
+      "canal_confusion_debuff_increases_wrong_turn_probability"
+    ]
+  },
+  
+  "navigation_system": {
+    "type": "probability_based",
+    "description": "Each intersection requires navigation decision with probability-based outcomes",
+    
+    "exit_probabilities": {
+      "centraal_station_sign": {
+        "actual_central_station": 0.40,
+        "roodelicht_row": 0.35,
+        "coffeeshop_quarter": 0.15,
+        "return_to_start": 0.10
+      },
+      "museum_plein_sign": {
+        "actual_museum_mile": 0.50,
+        "febo_automat": 0.30,
+        "canal_surface": 0.20
+      }
+    },
+    
+    "modifiers": {
+      "sober": {"navigation_bonus": 0.20},
+      "contact_high": {"navigation_penalty": -0.15},
+      "space_cake_gamble": {"navigation_penalty": -0.30, "random_teleport": true},
+      "canal_confusion": {"navigation_penalty": -0.25},
+      "map_equipped": {"navigation_bonus": 0.15},
+      "local_guide_npc": {"navigation_bonus": 0.40, "cost": 10},
+      "previous_success": {"cumulative_bonus": 0.05, "max_stacks": 5}
+    },
+    
+    "wrong_exit_consequences": {
+      "roodelicht_row": {
+        "debuff": "red_light_shame",
+        "effect": {"charm": -0.15},
+        "duration_minutes": 30,
+        "selfie_available": "accidental_tourist",
+        "reentry_blocked": true
+      },
+      "coffeeshop_quarter": {
+        "location": "storage_room",
+        "npc_reaction": "unsurprised_staff",
+        "debuff_risk": "contact_high",
+        "offer": "confusion_cure_tourist_prices"
+      },
+      "canal_surface": {
+        "hazard": "immediate_bicycle_near_miss",
+        "debuff_risk": "bicycle_trauma",
+        "position": "worse_than_start"
+      },
+      "febo_automat": {
+        "atmosphere": "3am_vibes_always",
+        "consolation": "free_kroket_offer",
+        "shortcut_value": "actually_useful_once_known"
+      }
+    }
+  },
+  
+  "visual_design": {
+    "architecture_style": "1970s_dutch_infrastructure_brutalism",
+    "condition": "clean_but_worn",
+    "scale": {
+      "corridor_width_meters": 3.5,
+      "ceiling_height_meters": 2.5,
+      "total_network_length_meters": 500
+    },
+    "color_palette": {
+      "tunnel_white": "#F0F0F0",
+      "stripe_blue": "#003DA5",
+      "stripe_orange": "#FF6600",
+      "floor_speckle": "#8B8B8B",
+      "fluorescent_yellow": "#FFFACD",
+      "emergency_green": "#00FF00",
+      "warning_red": "#FF0000"
+    },
+    "lighting": {
+      "type": "harsh_fluorescent",
+      "flicker_probability": 0.1,
+      "emergency_strips": true
+    },
+    "mobile_optimization": {
+      "lod_level": 1,
+      "draw_calls": 35,
+      "memory_mb": 40,
+      "max_particles": 30,
+      "target_fps": 60
+    }
+  },
+  
+  "zones": [
+    {
+      "zone_id": "entrance_hall",
+      "zone_number": 1,
+      "description": "Stairs descending from Bike Crossing",
+      "features": [
+        "wall_map_wrong_layout",
+        "you_are_here_dot_wrong_location",
+        "bicycle_parking_underground",
+        "npc_marloes_mapvendor"
+      ]
+    },
+    {
+      "zone_id": "intersection_of_doubt",
+      "zone_number": 2,
+      "description": "Five corridors meeting at one point",
+      "features": [
+        "five_corridor_junction",
+        "vague_signage_all_same_direction",
+        "color_coded_tiles_no_key",
+        "ambient_sounds_each_direction",
+        "npc_henk_security"
+      ]
+    },
+    {
+      "zone_id": "long_corridor",
+      "zone_number": 3,
+      "description": "Seemingly endless straight passage",
+      "features": [
+        "endless_corridor_visual",
+        "ads_from_2003",
+        "npc_willem_busker",
+        "unidentifiable_smell"
+      ]
+    },
+    {
+      "zone_id": "wrong_turn_zone",
+      "zone_number": 4,
+      "description": "Where navigation decisions happen",
+      "features": [
+        "dynamic_signage",
+        "exit_probability_calculations",
+        "red_light_emergence_point",
+        "graffiti_hints"
+      ]
+    },
+    {
+      "zone_id": "actual_exit",
+      "zone_number": 5,
+      "description": "Correct exit appears when you've given up",
+      "features": [
+        "sudden_correct_exit",
+        "hollow_triumph",
+        "navigation_success_buffs"
+      ]
+    }
+  ],
+  
+  "cross_location_connections": {
+    "primary_entrance": "shamsterdam_bike_crossing_thunderdome_01",
+    "intended_exits": [
+      "shamsterdam_central_station_01",
+      "shamsterdam_museum_mile_01"
+    ],
+    "unintended_exits": [
+      "shamsterdam_roodelicht_row_01",
+      "shamsterdam_coffeeshop_quarter_01",
+      "shamsterdam_canal_ring_promenade_01"
+    ],
+    "hidden_exits": [
+      "shamsterdam_febo_automat_01"
+    ]
+  },
+  
+  "state_tracking": {
+    "navigation_attempts": 0,
+    "successful_navigations": 0,
+    "wrong_exits_taken": {
+      "roodelicht_row": 0,
+      "coffeeshop_quarter": 0,
+      "canal_surface": 0,
+      "return_to_start": 0
+    },
+    "willem_tips_given": 0,
+    "febo_shortcut_discovered": false,
+    "map_purchased": false
+  },
+  
+  "achievements": [
+    {"id": "underground_navigator", "trigger": "first_successful_navigation", "type": "milestone"},
+    {"id": "scenic_route", "trigger": "first_red_light_emergence", "type": "discovery"},
+    {"id": "tunnel_vision", "trigger": "perfect_navigation_no_wrong_turns", "type": "skill"},
+    {"id": "willems_friend", "trigger": "tip_willem_5_euro_three_times", "type": "hidden"},
+    {"id": "back_door_regular", "trigger": "discover_febo_shortcut", "type": "hidden"},
+    {"id": "tour_guide", "trigger": "escort_lost_tourist_to_exit", "type": "social"},
+    {"id": "five_time_navigator", "trigger": "5_successful_navigations", "type": "mastery"}
+  ]
+}

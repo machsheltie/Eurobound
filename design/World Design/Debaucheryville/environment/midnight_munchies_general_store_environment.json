@@ -1,0 +1,120 @@
+{
+  "location_id": "debaucheryville_shop_midnight_munchies_01",
+  "ambient_audio": {
+    "base_layers": [
+      "hostel kitchen foragers ambience",
+      "post-club customers ambience",
+      "delivery worker ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "mm_storefront",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "mm_recovery_aisle",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "mm_hygiene_aisle",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "mm_heat_lamp",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "mm_counter",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "mm_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "mm_energy_drink_effect",
+      "source_item": "mm_energy_drink",
+      "description": "Restores SP; may delay sleep."
+    },
+    {
+      "effect_id": "mm_instant_noodles_effect",
+      "source_item": "mm_instant_noodles",
+      "description": "Restores HP when prepared in hostel kitchen."
+    },
+    {
+      "effect_id": "mm_heat_lamp_kebab_effect",
+      "source_item": "mm_heat_lamp_kebab",
+      "description": "Recovery quality determined by lottery."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "services and named NPCs active"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "use documented denial/off-peak state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street response",
+      "seasonal ambient overlay"
+    ],
+    "interior": [
+      "clean plate at threshold"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "midnight_munchies_general_store_ambient_fx",
+      "nodes": [
+        "mm_storefront",
+        "mm_recovery_aisle",
+        "mm_hygiene_aisle",
+        "mm_heat_lamp",
+        "mm_counter"
+      ],
+      "fallback": "static or disabled clean plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "fluorescent white",
+      "convenience red",
+      "energy-drink blue",
+      "heat-lamp orange"
+    ],
+    "key_strategy": "landmarks remain brighter than traversal clutter",
+    "emission_masks": [
+      "midnight_munchies_general_store_masks"
+    ]
+  },
+  "environmental_storytelling": [
+    "Small corner shop blazing fluorescent light into dark Hostel Row.",
+    "Energy drinks, food and emergency recovery stock.",
+    "Travel necessities and preventable emergencies.",
+    "Questionable hot food under an unforgiving orange lamp.",
+    "Checkout, desperation tax and regular-customer judgment.",
+    "Return to nearby hostels and bars."
+  ],
+  "accessibility": {
+    "variants": [
+      "Low-glare store mode",
+      "Text countdown to closing",
+      "Price-change confirmation",
+      "Heat-lamp result icon"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast_interactions": true
+  }
+}

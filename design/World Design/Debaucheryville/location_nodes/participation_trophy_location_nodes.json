@@ -1,0 +1,198 @@
+{
+  "location_id": "debaucheryville_circus_participation_trophy_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_circus_participation_trophy_01",
+      "name": "The Participation Trophy",
+      "tag_id": "participation_trophy",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Peeling carnival booth beneath a faded Everyone's a Winner banner.",
+        "entry_condition": "Circus open"
+      },
+      "interior": {
+        "theme": "A deliberately underwhelming booth where ticket economics convert effort into garbage.",
+        "features": [
+          "display: pt_grand_shelf",
+          "shop: pt_good_shelf",
+          "shop: pt_consolation",
+          "shop: pt_floor_junk",
+          "service: pt_counter",
+          "exit: pt_exit"
+        ]
+      },
+      "functions": [
+        "Redeem Circus Tickets",
+        "Ask to Buy Prize Directly",
+        "Frequent Loser Recognition",
+        "Inspect Grand Prizes",
+        "Browse Participation Bin"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "pt_booth",
+      "to": "pt_grand_shelf",
+      "bidirectional": true
+    },
+    {
+      "from": "pt_grand_shelf",
+      "to": "pt_good_shelf",
+      "bidirectional": true
+    },
+    {
+      "from": "pt_good_shelf",
+      "to": "pt_consolation",
+      "bidirectional": true
+    },
+    {
+      "from": "pt_consolation",
+      "to": "pt_floor_junk",
+      "bidirectional": true
+    },
+    {
+      "from": "pt_floor_junk",
+      "to": "pt_counter",
+      "bidirectional": true
+    },
+    {
+      "from": "pt_counter",
+      "to": "pt_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "pt_booth": {
+      "connects_to": [
+        "pt_grand_shelf"
+      ],
+      "type": "exterior",
+      "description": "Peeling carnival booth beneath a faded Everyone's a Winner banner."
+    },
+    "pt_grand_shelf": {
+      "connects_to": [
+        "pt_booth",
+        "pt_good_shelf"
+      ],
+      "type": "display",
+      "description": "Unreachable prizes staged above the real inventory."
+    },
+    "pt_good_shelf": {
+      "connects_to": [
+        "pt_grand_shelf",
+        "pt_consolation"
+      ],
+      "type": "shop",
+      "description": "Technically obtainable high-tier stock."
+    },
+    "pt_consolation": {
+      "connects_to": [
+        "pt_good_shelf",
+        "pt_floor_junk"
+      ],
+      "type": "shop",
+      "description": "Ordinary redemption inventory."
+    },
+    "pt_floor_junk": {
+      "connects_to": [
+        "pt_consolation",
+        "pt_counter"
+      ],
+      "type": "shop",
+      "description": "The real low-ticket prize supply."
+    },
+    "pt_counter": {
+      "connects_to": [
+        "pt_floor_junk",
+        "pt_exit"
+      ],
+      "type": "service",
+      "description": "Ticket count, direct purchase and Frequent Loser reactions."
+    },
+    "pt_exit": {
+      "connects_to": [
+        "pt_counter"
+      ],
+      "type": "exit",
+      "description": "Returns to circus grounds."
+    }
+  },
+  "feature_details": {
+    "pt_booth": {
+      "display_name": "Weathered Prize Booth",
+      "image_generation_description": "Peeling carnival booth beneath a faded Everyone's a Winner banner.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "pt_grand_shelf": {
+      "display_name": "Display-Only Grand Shelf",
+      "image_generation_description": "Unreachable prizes staged above the real inventory.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "pt_good_shelf": {
+      "display_name": "Good Prize Shelf",
+      "image_generation_description": "Technically obtainable high-tier stock.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "pt_consolation": {
+      "display_name": "Consolation Shelves",
+      "image_generation_description": "Ordinary redemption inventory.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "pt_floor_junk": {
+      "display_name": "Participation Floor Bin",
+      "image_generation_description": "The real low-ticket prize supply.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "pt_counter": {
+      "display_name": "Yolanda Counter",
+      "image_generation_description": "Ticket count, direct purchase and Frequent Loser reactions.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "pt_exit": {
+      "display_name": "Circus Exit",
+      "image_generation_description": "Returns to circus grounds.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    }
+  },
+  "ambient_npcs": [
+    "recent losers",
+    "circling children",
+    "circus workers"
+  ]
+}

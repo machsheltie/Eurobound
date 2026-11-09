@@ -1,0 +1,132 @@
+{
+  "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+  "ambient_audio": {
+    "base_layers": [
+      "vapor club patrons ambience",
+      "livestream drones ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "tdv_plaza",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "tdv_vault",
+        "cue": "gate_loop"
+      },
+      {
+        "node_id": "tdv_vats",
+        "cue": "interior_loop"
+      },
+      {
+        "node_id": "tdv_rhythm",
+        "cue": "puzzle_loop"
+      },
+      {
+        "node_id": "tdv_adbot",
+        "cue": "encounter_loop"
+      },
+      {
+        "node_id": "tdv_brewmistress",
+        "cue": "boss_loop"
+      },
+      {
+        "node_id": "tdv_service",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "tdv_selfie",
+        "cue": "selfie_loop"
+      },
+      {
+        "node_id": "tdv_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "opener_tap_dat_vault_effect",
+      "description": "Glowing vault door; Inhaled & Survived. Never sold."
+    },
+    {
+      "effect_id": "stamp_tap_dat_vault_effect",
+      "description": "Soundwave vault door; tour stop 3."
+    },
+    {
+      "effect_id": "beer_tap_dat_vault_effect",
+      "description": "Vapor-brewed signature stout."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "operating",
+      "changes": [
+        "full challenge and service state"
+      ]
+    },
+    {
+      "state": "closed",
+      "changes": [
+        "parent transition denies entry"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "parent-side read-through only"
+    ],
+    "interior": [
+      "no precipitation"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "tap_dat_vault_fx",
+      "nodes": [
+        "tdv_plaza",
+        "tdv_vault",
+        "tdv_vats",
+        "tdv_rhythm",
+        "tdv_adbot",
+        "tdv_brewmistress",
+        "tdv_service",
+        "tdv_selfie",
+        "tdv_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "electric cyan",
+      "hot pink",
+      "vault steel",
+      "vapor white"
+    ],
+    "emission_mask": "tap_dat_vault_masks",
+    "readability": "puzzle and boss cues override ambience"
+  },
+  "environmental_storytelling": [
+    "Tap Dat-owned plaza node with hidden switch and countdown glyphs.",
+    "Neon graffiti door active only during the midnight window.",
+    "Central brewing vats pulse rhythm cues.",
+    "Audio-visual timing puzzle with three-strike ejection.",
+    "Spam mini-mob before the boss.",
+    "Final challenge with safe visual cue mode.",
+    "Tour rewards and 14-Sov Vape Stout.",
+    "Hologram selfie landmark.",
+    "Returns to Clocktower Plaza."
+  ],
+  "accessibility": {
+    "variants": [
+      "Visual rhythm substitute",
+      "Reduced strobe",
+      "Reduced vapor",
+      "Three-strike count in text/icons"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "audio_substitutes": true
+  }
+}

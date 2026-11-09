@@ -1,0 +1,174 @@
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_velvet_alley_kebab_01",
+      "name": "Late-Night Kebab Stand",
+      "tag_id": "late_night_kebab_stand",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Rusty open-air rotisserie beneath crooked sign and zip-tied LEDs.",
+        "entry_condition": "Always accessible"
+      },
+      "interior": {
+        "theme": "A fluorescent grease beacon wedged between nightclub fallout and a chain-link fence.",
+        "features": [
+          "shop: lks_menu",
+          "service: lks_counter",
+          "interaction: lks_consume",
+          "transition: lks_crawlspace",
+          "exit: lks_exit"
+        ]
+      },
+      "functions": [
+        "Order Kebab",
+        "Eat Purchase",
+        "Request Status Menu",
+        "Follow Chili Sauce",
+        "Enter 3 AM Crawlspace"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "lks_cart",
+      "to": "lks_menu",
+      "bidirectional": true
+    },
+    {
+      "from": "lks_menu",
+      "to": "lks_counter",
+      "bidirectional": true
+    },
+    {
+      "from": "lks_counter",
+      "to": "lks_consume",
+      "bidirectional": true
+    },
+    {
+      "from": "lks_consume",
+      "to": "lks_crawlspace",
+      "bidirectional": true
+    },
+    {
+      "from": "lks_crawlspace",
+      "to": "lks_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "lks_cart": {
+      "connects_to": [
+        "lks_menu"
+      ],
+      "type": "exterior",
+      "description": "Rusty open-air rotisserie beneath crooked sign and zip-tied LEDs."
+    },
+    "lks_menu": {
+      "connects_to": [
+        "lks_cart",
+        "lks_counter"
+      ],
+      "type": "shop",
+      "description": "Eight-item menu and status-aware options."
+    },
+    "lks_counter": {
+      "connects_to": [
+        "lks_menu",
+        "lks_consume"
+      ],
+      "type": "service",
+      "description": "Order point beside the burner phone."
+    },
+    "lks_consume": {
+      "connects_to": [
+        "lks_counter",
+        "lks_crawlspace"
+      ],
+      "type": "interaction",
+      "description": "Standing zone among steam, wrappers and gutter reflections."
+    },
+    "lks_crawlspace": {
+      "connects_to": [
+        "lks_consume",
+        "lks_exit"
+      ],
+      "type": "transition",
+      "description": "Tent flap, NOT A TOILET sign and chili-sauce trail."
+    },
+    "lks_exit": {
+      "connects_to": [
+        "lks_crawlspace"
+      ],
+      "type": "exit",
+      "description": "Returns toward the club and alley network."
+    }
+  },
+  "feature_details": {
+    "lks_cart": {
+      "display_name": "Mr. Chadz Cart",
+      "image_generation_description": "Rusty open-air rotisserie beneath crooked sign and zip-tied LEDs.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "lks_menu": {
+      "display_name": "Kebab Menu",
+      "image_generation_description": "Eight-item menu and status-aware options.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "lks_counter": {
+      "display_name": "Chadz Counter",
+      "image_generation_description": "Order point beside the burner phone.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "lks_consume": {
+      "display_name": "Consumption Spot",
+      "image_generation_description": "Standing zone among steam, wrappers and gutter reflections.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "lks_crawlspace": {
+      "display_name": "Grease Shrine Crawlspace",
+      "image_generation_description": "Tent flap, NOT A TOILET sign and chili-sauce trail.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "lks_exit": {
+      "display_name": "Velvet Alley Exit",
+      "image_generation_description": "Returns toward the club and alley network.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    }
+  },
+  "ambient_npcs": [
+    "post-club customers",
+    "alley rat",
+    "steam silhouettes"
+  ]
+}

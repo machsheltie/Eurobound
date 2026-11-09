@@ -1,0 +1,1344 @@
+{
+ "_doc": "Source of truth for the Absinthe Arcade 3D exterior kit. Human-readable companion: design/worlds/debaucheryville/absinthearcade_3d_asset_manifest.md. Coordinates are engine space: meters, Y-up, facade front plane at z=0 facing +Z, building centered on x=0, sidewalk top at y=0 (same as blockout/arcade_building_base.gltf). dims = [width_x, height_y, depth_z].",
+ "building": {
+  "id": "absinthe_arcade_exterior",
+  "facade_width": 8.44,
+  "depth": 4.0,
+  "ground_floor_height": 5.9,
+  "upper_floor_height": 3.65,
+  "upper_floors": 2,
+  "eave_height": 13.55,
+  "ridge_height": 15.35,
+  "snap_grid": 0.1,
+  "character_height_ref": 1.8,
+  "blockout": "Assets/Graphics/worlds/debaucheryville/absinthearcade/blockout/arcade_building_base.gltf",
+  "tri_budget_total": null,
+  "tri_budget_policy": "Unlimited (author ruling 2026-10-26): no polygon caps on any asset or on the building. tri_budget fields stay null; set a number on an asset only to opt it back into a cap."
+ },
+ "uv_layers": [
+  "uv_material",
+  "uv_bake"
+ ],
+ "pivots": {
+  "facade": "Building origin: x=0, y=0, z=0 on the facade front plane.",
+  "ground": "Bottom center of the asset's footprint, resting on y=0.",
+  "wall": "Center of the asset's back face, which sits flush on the wall plane.",
+  "sill": "Bottom center of the window opening, on the facade front plane."
+ },
+ "neon_mask": {
+  "channels": {
+   "R": "Green neon group weight (#3FF014)",
+   "G": "Purple neon group weight (#BF00FF)",
+   "B": "Flicker phase offset 0..1 (per letter / per tube segment)",
+   "A": "Flicker enable: 0 = steady when lit, 1 = participates in blink/stutter"
+  },
+  "colors": {
+   "green": "#3FF014",
+   "purple": "#BF00FF"
+  },
+  "formula": "emission = emissive_map * night + (R * green * anim(B, A) + G * purple * anim(B, A)) * night"
+ },
+ "texture_sets": {
+  "target": "Unity URP Lit (custom Shader Graph for neon assets)",
+  "suffixes": [
+   "_basecolor",
+   "_normal",
+   "_mask",
+   "_emissive",
+   "_neonmask"
+  ],
+  "normal_convention": "OpenGL (+Y), Unity's native convention",
+  "mask": "R = metallic, G = ambient occlusion, B = unused (0), A = smoothness. Assign the same texture to URP Lit's Metallic Map and Occlusion Map slots (URP reads metallic from R, smoothness from A, occlusion from G)."
+ },
+ "materials": {
+  "m_aa_limestone_tile": {
+   "kind": "tiling",
+   "res": 2048,
+   "repeat_m": 2.0
+  },
+  "m_aa_plaster_tile": {
+   "kind": "tiling",
+   "res": 2048,
+   "repeat_m": 2.0
+  },
+  "m_aa_trim_stone": {
+   "kind": "trim_sheet",
+   "res": 2048
+  },
+  "m_aa_roof_tile": {
+   "kind": "tiling",
+   "res": 1024,
+   "repeat_m": 2.0
+  },
+  "m_aa_arch_hero": {
+   "kind": "unique",
+   "res": 4096,
+   "emissive": true
+  },
+  "m_aa_iron": {
+   "kind": "shared_atlas",
+   "res": 1024
+  },
+  "m_aa_glass_acrylic": {
+   "kind": "shared_atlas",
+   "res": 512,
+   "transparent": true
+  },
+  "m_aa_cabinet": {
+   "kind": "unique",
+   "res": 2048,
+   "emissive": true
+  },
+  "m_aa_props_atlas": {
+   "kind": "shared_atlas",
+   "res": 2048,
+   "emissive": true
+  },
+  "m_aa_mural_decal": {
+   "kind": "unique",
+   "res": 4096,
+   "emissive": true,
+   "transparent": true
+  }
+ },
+ "assets": [
+  {
+   "id": "aa_shell_facade",
+   "category": "structure",
+   "source": "blender_scripted (build_shell.py)",
+   "tri_budget": null,
+   "dims": [
+    8.44,
+    16.9,
+    12.0
+   ],
+   "pivot": "facade",
+   "materials": [
+    "m_aa_limestone_tile",
+    "m_aa_plaster_tile",
+    "m_aa_trim_stone",
+    "m_aa_roof_tile"
+   ],
+   "contents": "E1 massing (2026-10-28, build_shell.py): narrow three-bay front measured off the bible, 45 deg corner bay with stacked cornices, masonry openings with reveals, clay window trim and placeholder sash windows, slate mansard with two dormers, carved gable and chimneys.",
+   "instances": [
+    {
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aa_arch_hero",
+   "category": "structure",
+   "source": "blender_hand + tripo_sculpt",
+   "tri_budget": null,
+   "dims": [
+    5.44,
+    7.14,
+    1.45
+   ],
+   "pivot": "facade",
+   "materials": [
+    "m_aa_arch_hero",
+    "m_aa_glass_acrylic"
+   ],
+   "neon": true,
+   "contents": "Molded stone archivolt + jamb plinths (Blender), Headphone Gentleman sculpt + rebuilt junction-box earcups and conduit (Tripo + Blender), stepped pixel ABSINTHE ARCADE marquee (Tripo), crisp tagline text panel over the marquee bar (generated texture), two stained-glass door leaves flanking the walkway (Tripo, mirrored), green neon loop over the head on standoff clips (Blender).",
+   "instances": [
+    {
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aa_window_upper",
+   "category": "structure",
+   "source": "tripo multi-view (Asset Extraction)",
+   "tri_budget": null,
+   "dims": [
+    2.0,
+    2.52,
+    0.41
+   ],
+   "pivot": "sill",
+   "materials": [
+    "m_aa_trim_stone",
+    "m_aa_glass_acrylic"
+   ],
+   "contents": "Baroque window unit: carved limestone surround (its small Tripo cartouche is cut off; aa_ornament_window_crest sits on the hood instead), projecting sill, dark wood casement with transom, sheer curtains, terracotta geranium box. Replaces the separate trim + glass plan. No animals (reference cat removed). RETIRED 2026-10-27 (architectural pass): upper windows are now procedural openings, surrounds and casements in aa_shell_facade (build_shell.py); the Tripo prefab sat in front of the wall and was skewed ~10 degrees.",
+   "instances": []
+  },
+  {
+   "id": "aa_window_ground_arched",
+   "category": "structure",
+   "source": "tripo multi-view (Asset Extraction)",
+   "tri_budget": null,
+   "dims": [
+    1.51,
+    2.25,
+    0.38
+   ],
+   "pivot": "sill",
+   "materials": [
+    "m_aa_trim_stone",
+    "m_aa_glass_acrylic"
+   ],
+   "contents": "Round-headed window in carved limestone arch, fanlight tracery, sheer curtains, plus its projecting stone balcony with wrought-iron scroll railing and potted plants (absorbs the former aa_balcony_iron_ground). RETIRED 2026-10-27 (architectural pass): the arched ground-floor window, surround, sill, corbels and balconette are now built into aa_shell_facade (build_shell.py ground_window); the Tripo mesh fused stone, plants and rail into one skewed piece.",
+   "instances": []
+  },
+  {
+   "id": "aa_balcony_iron_upper",
+   "category": "structure",
+   "source": "tripo (text-to-3D)",
+   "tri_budget": null,
+   "dims": [
+    2.1,
+    1.06,
+    0.6
+   ],
+   "pivot": "wall",
+   "materials": [
+    "m_aa_iron"
+   ],
+   "contents": "Juliet balcony: baroque wrought-iron scroll railing with side returns and three terracotta geranium pots; the top-floor window flower boxes sit inside it. RETIRED 2026-10-27 (architectural pass): top-floor balconies are now built into aa_shell_facade (build_shell.py balcony): stone slab on corbels, drain spout, wrought-iron rail anchored to the wall, two non-identical variants.",
+   "instances": []
+  },
+  {
+   "id": "aa_prop_arcade_cabinet",
+   "category": "prop",
+   "source": "tripo + cleanup",
+   "tri_budget": null,
+   "dims": [
+    1.1,
+    2.3,
+    1.2
+   ],
+   "pivot": "ground",
+   "materials": [
+    "m_aa_cabinet"
+   ],
+   "neon": true,
+   "contents": "Sticker-bombed street cabinet: marquee, CRT screen, control panel, coin door. Screen and marquee driven by emissive + neon mask. Scaled to the reference composition (2.3 m, marquee just under the awning), author note 2026-10-26.",
+   "instances": [
+    {
+     "pos": [
+      -3.14,
+      0.0,
+      0.6
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_chalkboard",
+   "category": "prop",
+   "source": "tripo + cleanup",
+   "tri_budget": null,
+   "dims": [
+    0.9,
+    1.5,
+    1.24
+   ],
+   "pivot": "ground",
+   "materials": [
+    "m_aa_props_atlas"
+   ],
+   "contents": "A-frame pavement sign. Board text is texture.",
+   "instances": [
+    {
+     "pos": [
+      -1.74,
+      0.0,
+      0.75
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_bollard",
+   "category": "prop",
+   "source": "tripo + cleanup",
+   "tri_budget": null,
+   "dims": [
+    0.3,
+    0.9,
+    0.3
+   ],
+   "pivot": "ground",
+   "materials": [
+    "m_aa_iron"
+   ],
+   "contents": "Black cast-iron street post with ball cap. Fills the spec's 'pillars' slot.",
+   "instances": [
+    {
+     "pos": [
+      -4.6,
+      0.0,
+      0.5
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      -0.98,
+      0.0,
+      5.6
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_wall_lantern",
+   "category": "prop",
+   "source": "tripo + cleanup",
+   "tri_budget": null,
+   "dims": [
+    0.45,
+    1.0,
+    0.7
+   ],
+   "pivot": "wall",
+   "materials": [
+    "m_aa_iron",
+    "m_aa_glass_acrylic"
+   ],
+   "contents": "Wrought-iron bracket lantern. Warm glow lives in the emissive map only (no neon mask).",
+   "instances": [
+    {
+     "pos": [
+      -5.22,
+      3.25,
+      0.123
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      2.93,
+      3.7,
+      0.073
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_awning",
+   "category": "prop",
+   "source": "tripo multi-view (Asset Extraction)",
+   "tri_budget": null,
+   "dims": [
+    1.63,
+    0.97,
+    1.1
+   ],
+   "pivot": "wall",
+   "materials": [
+    "m_aa_iron",
+    "m_aa_glass_acrylic"
+   ],
+   "contents": "Corrugated clear acrylic rain awning on scroll brackets over the street cabinet.",
+   "instances": [
+    {
+     "pos": [
+      -3.64,
+      2.46,
+      0.266
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_hanging_sign",
+   "category": "prop",
+   "source": "tripo multi-view (Asset Extraction)",
+   "tri_budget": null,
+   "dims": [
+    0.17,
+    1.6,
+    0.72
+   ],
+   "pivot": "wall",
+   "materials": [
+    "m_aa_props_atlas",
+    "m_aa_iron"
+   ],
+   "neon": true,
+   "contents": "Vertical TOKENS / DRINKS / GAMES / REGRETS sign on bracket, cocktail glass icon lit at night.",
+   "instances": [
+    {
+     "pos": [
+      -5.02,
+      2.23,
+      0.123
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_doorframe_sign",
+   "category": "prop",
+   "source": "tripo (Asset Extraction) + text panel",
+   "tri_budget": null,
+   "dims": [
+    0.81,
+    2.4,
+    0.14
+   ],
+   "pivot": "wall",
+   "materials": [
+    "m_aa_props_atlas"
+   ],
+   "neon": true,
+   "contents": "Black board right of the door listing the offer, neon cocktail at the base.",
+   "instances": [
+    {
+     "pos": [
+      1.85,
+      1.55,
+      0.223
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it; sits in the doorway's right fixed frame (E3)"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_drainpipe",
+   "category": "prop",
+   "source": "blender_scripted",
+   "tri_budget": null,
+   "dims": [
+    12.9,
+    16.6,
+    0.75
+   ],
+   "pivot": "facade",
+   "materials": [
+    "m_aa_iron"
+   ],
+   "contents": "Both cast-iron downpipes in facade coordinates (build_fittings.py): outlet through the eave soffit, rainwater head, 1.8 m socketed lengths on eared brackets, swan neck over the ground cornice, offset over the plinth, gully at the pavement. Left x -5.9, right x 6.75 (asymmetric, per the reference). Later repairs: a coupler on a cracked left length, band clamps re-fixing the left ground floor, a steel replacement length on the right ground floor.",
+   "instances": [
+    {
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_conduit_set",
+   "category": "prop",
+   "source": "blender_scripted",
+   "tri_budget": null,
+   "dims": [
+    10.0,
+    7.0,
+    0.15
+   ],
+   "pivot": "facade",
+   "materials": [
+    "m_aa_props_atlas"
+   ],
+   "neon": true,
+   "contents": "Purple and green conduit runs drilled across the stone, clips, four junction boxes. Conduit glows at night via the neon mask. The two earcup boxes belong to aa_arch_hero.",
+   "instances": [
+    {
+     "pos": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_planter",
+   "category": "prop",
+   "source": "tripo + cleanup",
+   "tri_budget": null,
+   "dims": [
+    0.6,
+    0.9,
+    0.67
+   ],
+   "pivot": "ground",
+   "materials": [
+    "m_aa_props_atlas"
+   ],
+   "contents": "Terracotta pot with a leafy shrub (alpha cards).",
+   "instances": [
+    {
+     "pos": [
+      2.19,
+      0.0,
+      0.4
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it; the bible has one sidewalk shrub, right of the door (left instance dropped)"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_house_number",
+   "category": "prop",
+   "source": "blender_hand",
+   "tri_budget": null,
+   "dims": [
+    0.35,
+    0.35,
+    0.03
+   ],
+   "pivot": "wall",
+   "materials": [
+    "m_aa_props_atlas"
+   ],
+   "contents": "Enamel '13' plaque.",
+   "instances": [
+    {
+     "pos": [
+      2.52,
+      2.4,
+      0.153
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_decal_mural",
+   "category": "decal",
+   "source": "tripo image (recreated from the Mural Board, 4K upscale) + Blender shrinkwrap",
+   "tri_budget": null,
+   "dims": [
+    6.66,
+    11.0,
+    0.39
+   ],
+   "pivot": "facade",
+   "materials": [
+    "m_aa_mural_decal"
+   ],
+   "neon": true,
+   "contents": "Green Fairy mural as a conforming decal: 160x260 grid shrink-wrapped onto the facade walls and mouldings, so the paint runs over the cornice and floor bands. Bottom notch frames the Headphone Gentleman. Token and pixel field glow at night (emissive + neon mask).",
+   "instances": [],
+   "note_e1": "Instance removed by E1 2026-10-28: the decal was shrink-wrapped to the old palazzo (old cornices, x +-4.6) and floats on the new wall. E5 re-projects the mural onto the new facade."
+  },
+  {
+   "id": "aa_ornament_window_crest",
+   "category": "structure",
+   "source": "tripo (Asset Extraction from reference crop)",
+   "tri_budget": null,
+   "dims": [
+    1.14,
+    0.59,
+    0.16
+   ],
+   "pivot": "wall",
+   "materials": [
+    "m_aa_trim_stone"
+   ],
+   "contents": "Carved limestone acanthus cartouche, first-floor (piano nobile) windows only, seated on the segmental pediments.",
+   "instances": [
+    {
+     "pos": [
+      -3.39,
+      9.59,
+      0.05
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it; on the cat window and right_w1 pediments"
+    },
+    {
+     "pos": [
+      2.11,
+      9.2,
+      0.05
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it; on the cat window and right_w1 pediments"
+    }
+   ]
+  },
+  {
+   "id": "aa_ornament_rosette_painted",
+   "category": "structure",
+   "source": "tripo (Asset Extraction from reference board)",
+   "tri_budget": null,
+   "dims": [
+    0.48,
+    0.4,
+    0.12
+   ],
+   "pivot": "wall",
+   "materials": [
+    "m_aa_mural_decal"
+   ],
+   "contents": "Original carved limestone rosette, painted green as part of the Green Fairy mural (reference: 'Painted stone flower detail'). Flanks the Headphone Gentleman inside the pixel mosaic.",
+   "instances": [
+    {
+     "pos": [
+      -1.98,
+      6.5,
+      0.003
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      1.97,
+      4.83,
+      0.003
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_window_cat",
+   "category": "prop",
+   "source": "tripo (Asset Extraction from reference board)",
+   "tri_budget": null,
+   "dims": [
+    0.25,
+    0.5,
+    0.38
+   ],
+   "pivot": "ground",
+   "materials": [
+    "m_aa_props_atlas"
+   ],
+   "contents": "Black cat sitting on the OUTSIDE of the open left first-floor window's stone sill, facing the street. Canon by author ruling 2026-10-27 (ambient, not a mascot; see docs/superpowers/NEXT_WORK.md). The window behind it is modeled open (build_shell.py OPEN_WINDOWS).",
+   "instances": [
+    {
+     "pos": [
+      -3.06,
+      6.85,
+      0.12
+     ],
+     "note": "Canon (author ruling 2026-10-27): outside the cat window on its stone sill, right end. E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  },
+  {
+   "id": "aa_prop_window_pot",
+   "category": "prop",
+   "source": "tripo (planter_tripo_raw.glb, re-ingested at window-box size)",
+   "tri_budget": null,
+   "dims": [
+    0.3,
+    0.4,
+    0.3
+   ],
+   "pivot": "ground",
+   "materials": [
+    "m_aa_props_atlas"
+   ],
+   "contents": "Terracotta pot with shrub: two on the arched ground-floor window's balconette slab, three on the top-floor balconies (reference crops).",
+   "instances": [
+    {
+     "pos": [
+      -3.52,
+      6.85,
+      0.12
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      1.85,
+      6.49,
+      0.12
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      2.27,
+      6.49,
+      0.12
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      -3.61,
+      3.2,
+      0.18
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      -2.99,
+      3.2,
+      0.18
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      -3.39,
+      10.17,
+      0.2
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    },
+    {
+     "pos": [
+      -3.03,
+      10.17,
+      0.2
+     ],
+     "note": "E1 re-seat 2026-10-28 (bible via aa_bible_cam); temporary until its element replaces it"
+    }
+   ]
+  }
+ ],
+ "bible_camera": {
+  "_doc": "aa_bible_cam: reproduces the daytime bible (absinthearcadedaytime.png, 5248x4796). Solved from the bible's facade verticals and horizontals (camera_match/solve_camera.py): principal point at image centre, focal 5599.5 px at 5248 wide, pitch 16.39 deg up, yaw 25.16 deg (facade recedes to the left), roll 1.29 deg. Horizon pinned at y=4000 (x=600) between the facade-only fit (4214), the distant pedestrians' head line (~3850) and the visible top of the cabinet deck. Blender space; X=0 arch axis, Z=0 street, Y=0 facade plane.",
+  "name": "aa_bible_cam",
+  "location": [
+   3.5696,
+   -11.1675,
+   0.6477
+  ],
+  "rotation_euler_xyz_deg": [
+   106.3981,
+   -1.2423,
+   24.7956
+  ],
+  "lens_mm": 38.4112,
+  "sensor_width_mm": 36.0,
+  "sensor_fit": "HORIZONTAL",
+  "resolution": [
+   5248,
+   4796
+  ],
+  "preview_resolution": [
+   1600,
+   1462
+  ]
+ },
+ "facade": {
+  "_doc": "E1 massing, measured off the daytime bible through aa_bible_cam (rectified facade plane) and, above the bible's crop, the asset sheet (Q-001 answer A: three masonry storeys then the slate mansard). Blender space, metres: X=0 arch axis, Z=0 street, Y=0 main wall face, street toward -Y. build_shell.py reads this block; interfaces.json publishes the result.",
+  "x_left": -5.4,
+  "x_right": 3.04,
+  "wall_t": 0.55,
+  "eave_cornice_z": [
+   13.2,
+   13.55
+  ],
+  "storey_lines": {
+   "left": [
+    5.9,
+    10.0
+   ],
+   "right": [
+    5.48,
+    9.55
+   ]
+  },
+  "corner_bay": {
+   "angle_deg": 45.0,
+   "width": 2.0,
+   "window_w": 0.7,
+   "cornice_z": [
+    [
+     5.6,
+     5.95
+    ],
+    [
+     7.65,
+     7.9
+    ],
+    [
+     9.45,
+     9.7
+    ],
+    [
+     13.2,
+     13.55
+    ]
+   ],
+   "cornice_proud": 0.42,
+   "pilaster_w": 0.32,
+   "pilaster_proud": 0.1,
+   "corner_pilaster": {
+    "x": [
+     -5.4,
+     -5.02
+    ],
+    "capital_z": [
+     5.07,
+     5.6
+    ],
+    "proud": 0.12
+   },
+   "plinth": {
+    "x": [
+     -5.4,
+     -4.58
+    ],
+    "z_top": 1.33,
+    "proud": 0.2,
+    "wrap": 0.8
+   },
+   "sign_zone": {
+    "x": [
+     -5.4,
+     -4.65
+    ],
+    "z": [
+     1.4,
+     3.9
+    ],
+    "note": "TOKENS/REGRETS wall signs (E6)"
+   },
+   "hanging_sign_zone": {
+    "at_arris_z": [
+     3.9,
+     5.0
+    ],
+    "note": "CLOCKTOWER PLAZA bracket sign on the corner (E6), above the wall signs, below the capital"
+   },
+   "cornices": [
+    [
+     5.6,
+     5.95,
+     0.18
+    ],
+    [
+     7.65,
+     7.9,
+     0.2
+    ],
+    [
+     9.45,
+     9.7,
+     0.25
+    ],
+    [
+     13.2,
+     13.55,
+     0.42
+    ]
+   ],
+   "windows_z": [
+    [
+     8.0,
+     9.25
+    ],
+    [
+     9.95,
+     11.2
+    ]
+   ],
+   "hood_proud": 0.18,
+   "sill_proud": 0.14,
+   "v2_note": "v2 (bible-fitted through aa_bible_cam): the 45-degree cant holds (the bay's cornice edges run at the cant's image slope, -2.5..-3.7). Cornices refitted to the bible's corner points: ground-floor 5.6-5.95 proud 0.18 (mitre corner at bible px 1310,1910), a band at 7.65-7.9 proud 0.2, the mid cornice 9.45-9.7 proud 0.25 (corner at 1385,680), eave 13.2-13.55. The cant windows sit between them."
+  },
+  "plinth_course": {
+   "z_top": 0.3,
+   "proud": 0.05
+  },
+  "right_pier": {
+   "x": [
+    2.37,
+    2.8
+   ],
+   "proud": 0.15,
+   "base_z_top": 1.03,
+   "capital_z": [
+    3.04,
+    3.65
+   ]
+  },
+  "gf_cornice": {
+   "left": {
+    "x": [
+     -5.4,
+     -2.55
+    ],
+    "z": [
+     5.6,
+     5.9
+    ],
+    "proud": 0.3
+   },
+   "right": {
+    "x": [
+     2.37,
+     3.04
+    ],
+    "z": [
+     5.24,
+     5.48
+    ],
+    "proud": 0.28
+   }
+  },
+  "arch": {
+   "half": 2.3,
+   "springing": 3.65,
+   "rise": 1.1,
+   "ext_half": 2.55,
+   "ext_rise": 1.52,
+   "ring_proud": 0.14,
+   "keystone": {
+    "head_base_z": 4.6,
+    "cartouche": "removed (v2)",
+    "crown_gap": "the archivolt has no crown voussoir between t=84-96 deg (|x|<0.27): the wall face and mural show there; E4's head and volutes sit in front"
+   },
+   "step": {
+    "x": [
+     -2.3,
+     2.8
+    ],
+    "y_front": -0.35,
+    "z_top": 0.15
+   },
+   "interior_void_y": 3.75,
+   "marquee": {
+    "width": 4.64,
+    "bottom_z": 2.77,
+    "note": "bible: x -2.28..2.36, slogan banner bottom 2.77, top 4.65 (temporary seat of the Tripo marquee, E3 replaces)"
+   },
+   "doors": {
+    "centers_x": [
+     -1.0,
+     1.17
+    ],
+    "height": 2.62,
+    "z0": 0.12,
+    "note": "bible inner leaves x -1.34..-0.65 and 0.89..1.45 (temporary, E3 replaces)"
+   },
+   "jamb_note": "v2: the bible's right pier inner arris traces at X=2.375 (rows z 1.2-2.5, plane y=-0.15, std 0.002) and neon's doorway right edge at 2.365, so the right jamb moves to 2.37. The archivolt still springs at +-2.30 about X=0 (its intrados lands at 2.25-2.30 on both sides in the bible): the arch axis does NOT move; the right impost covers the 0.07 shelf. Left jamb stays -2.30 (conduits cover it; the doorway's left frame edge is -2.02).",
+   "jamb_r": 2.37
+  },
+  "windows": {
+   "left_w1_arched": {
+    "cx": -3.35,
+    "w": 1.12,
+    "sill": 3.2,
+    "springing": 4.4,
+    "crown": 4.876,
+    "kind": "arched",
+    "slab": {
+     "x": [
+      -4.37,
+      -2.67
+     ],
+     "proud": 0.36
+    },
+    "frame": {
+     "x": [
+      -3.845,
+      -2.84
+     ],
+     "springing": 4.4,
+     "crown": 4.846
+    },
+    "head_note": "elliptical head: rise 0.85 x half-width (glazier E2 fit, bible-checked)",
+    "frame_note": "v2.1: frame traced in the bible at -3.845..-2.84 on the face plane (1.005 wide; mason v1.1 had -3.84..-2.84). Glazier's 1.06 sat 11 px wide on each side through aa_bible_cam. With 1.005 the 0.08 reveal fits the 1.12 hole without clamping."
+   },
+   "left_w2_cat": {
+    "cx": -3.39,
+    "w": 1.16,
+    "sill": 6.85,
+    "head": 8.99,
+    "kind": "sill",
+    "slab": {
+     "x": [
+      -4.35,
+      -2.51
+     ],
+     "proud": 0.28
+    },
+    "apron_z": [
+     6.4,
+     6.72
+    ],
+    "pediment_z": [
+     9.36,
+     9.92
+    ],
+    "pediment_w": 1.2,
+    "open": 0.55,
+    "frame": {
+     "x": [
+      -3.85,
+      -2.93
+     ],
+     "top": 8.83,
+     "transom": 8.18
+    }
+   },
+   "left_w3_balcony": {
+    "cx": -3.38,
+    "w": 1.16,
+    "sill": 10.17,
+    "head": 12.27,
+    "kind": "balcony",
+    "slab": {
+     "x": [
+      -4.47,
+      -2.71
+     ],
+     "proud": 0.45
+    },
+    "rail_top": 10.76,
+    "frame": {
+     "x": [
+      -3.87,
+      -2.89
+     ],
+     "top": 12.11
+    }
+   },
+   "right_w1": {
+    "cx": 2.11,
+    "w": 0.94,
+    "sill": 6.49,
+    "head": 8.56,
+    "kind": "sill",
+    "slab": {
+     "x": [
+      0.97,
+      2.75
+     ],
+     "proud": 0.28
+    },
+    "apron_z": [
+     6.15,
+     6.36
+    ],
+    "pediment_z": [
+     8.92,
+     9.6
+    ],
+    "pediment_w": 0.92,
+    "frame": {
+     "x": [
+      1.72,
+      2.48
+     ],
+     "top": 8.41
+    }
+   },
+   "right_w2": {
+    "cx": 2.11,
+    "w": 0.94,
+    "sill": 9.7,
+    "head": 11.77,
+    "kind": "sill",
+    "slab": {
+     "x": [
+      0.97,
+      2.75
+     ],
+     "proud": 0.28
+    },
+    "apron_z": [
+     9.36,
+     9.57
+    ],
+    "frame": {
+     "x": [
+      1.72,
+      2.48
+     ],
+     "top": 11.62
+    }
+   }
+  },
+  "surround": {
+   "fascia": 0.06,
+   "fascia_proud": 0.03,
+   "band": 0.14,
+   "proud": 0.07,
+   "reveal_depth": 0.08,
+   "lining_board_t": 0.04,
+   "_doc": "v2 (interfaces v2): w/head = the HOLE in the stone = the inner edge of the bible's stone surround. The light band the bible shows between the dark frame and the surround is the lining (glazier's E2 kit fills it at the frame plane; E1's placeholder adds a stone lining board). Frame front face 0.08 behind the wall face (bible-checked through aa_bible_cam: 0.20 would push the left column's frames 37-44 px right and up to 62 px down of where the bible draws them). Outside the hole: a 0.06 flat fascia then the 0.14 moulded architrave (0.20 total, as the bible's R1/L2 surrounds)."
+  },
+  "drainpipes": {
+   "left": {
+    "x_upper": -5.0,
+    "x_lower": -4.48,
+    "jog_z": [
+     6.25,
+     5.75
+    ]
+   },
+   "right": {
+    "x": 2.93
+   }
+  },
+  "roof": {
+   "_doc": "Asset sheet roof (crops 09, 10, 12, 13), rework 2026-10-29: bell-cast slate mansard (lower slope 13.55-15.35, upper slope to 15.70), the tall stone gable with C-scroll shoulders and an arched crown, four stone stacks with clay pots (crop 09 front: one behind each dormer, one either side of the gable; crop 10 is a close-up showing two of them, crop 13 shows three with the fourth behind the gable), dormer bodies after E2's stand-in, iron cresting round the ridge, gapped behind the gable.",
+   "mansard_setback": 0.55,
+   "mansard_top_z": 15.52,
+   "top_setback": 1.6,
+   "dormers": [
+    {
+     "id": "dormer_left",
+     "cx": -3.38
+    },
+    {
+     "id": "dormer_right",
+     "cx": 2.11
+    }
+   ],
+   "dormer": {
+    "body_w": 1.06,
+    "frame_w": 0.46,
+    "frame_h": 0.83,
+    "band": 0.05,
+    "mold": 0.06,
+    "opening_w": 0.56,
+    "sill": 13.8,
+    "head": 14.68,
+    "ridge": 15.3,
+    "proud_of_wall": -0.05,
+    "body_depth": 1.1
+   },
+   "gable": {
+    "half": 1.3,
+    "top_z": 16.4,
+    "head_z": [
+     15.2,
+     16.1
+    ],
+    "post_w": 0.24,
+    "post_top": 14.5,
+    "scroll_r": 0.2,
+    "band": 0.22,
+    "band_proud": 0.13,
+    "coping": 0.035,
+    "spandrel_x": 0.78,
+    "spandrel_z": 14.92
+   },
+   "chimneys": [
+    {
+     "x": -3.38,
+     "y": 1.55,
+     "w": 0.48,
+     "d": 0.6,
+     "top": 16.45,
+     "pots": 1,
+     "pot_h": 0.42,
+     "where": "behind the left dormer"
+    },
+    {
+     "x": -1.5,
+     "y": 1.2,
+     "w": 0.55,
+     "d": 0.42,
+     "top": 16.45,
+     "pots": 2,
+     "pot_h": 0.42,
+     "where": "left of the gable"
+    },
+    {
+     "x": 1.5,
+     "y": 1.2,
+     "w": 0.55,
+     "d": 0.42,
+     "top": 16.45,
+     "pots": 2,
+     "pot_h": 0.42,
+     "where": "right of the gable"
+    },
+    {
+     "x": 2.35,
+     "y": 1.75,
+     "w": 0.48,
+     "d": 0.6,
+     "top": 16.45,
+     "pots": 1,
+     "pot_h": 0.42,
+     "where": "behind and right of the right dormer (the bible's asymmetric bays leave no room between the gable and the dormer)"
+    }
+   ],
+   "side_dormer": {
+    "id": "dormer_side_right",
+    "u": 1.6
+   },
+   "mansard": {
+    "rings": 9,
+    "bell": 0.45,
+    "eave_kick": 0.1,
+    "upper_rise": 0.32
+   },
+   "cresting": {
+    "h": 0.32,
+    "bay": 0.36
+   },
+   "round2_note": "Round 2 (crop 09 proportions, lower-slope height H): curb at H=1.97 above the eave (dormer apex 0.89H, so the dormer roofs come up near the curb), ridge 1.16H, gable apex 1.43H (16.40, above the ridge and cresting), carved head 15.2-16.1 high in the arch, stacks 1.48H (16.45)."
+  },
+  "right_corner": {
+   "_doc": "Right corner per the asset sheet (crops 12, 14) where the bible is cropped: the facade ends against the right downpipe (x 3.04); a corner pilaster with a capital under the right ground-floor cornice, quoins above to the eave; both wrap onto the right side elevation. The downpipe covers x 2.85-3.04, so the bible camera sees only the 0.13 m strip beside right_w1, as the bible shows.",
+   "x": [
+    2.72,
+    3.04
+   ],
+   "wrap": 0.32,
+   "plinth": {
+    "z_top": 1.03,
+    "proud": 0.12
+   },
+   "pilaster": {
+    "proud": 0.07,
+    "capital_z": [
+     4.72,
+     5.24
+    ]
+   },
+   "quoins": {
+    "z": [
+     5.48,
+     13.2
+    ],
+    "course": 0.42,
+    "long": 0.32,
+    "short": 0.22,
+    "proud": 0.04
+   }
+  },
+  "side_right": {
+   "_doc": "Right side elevation (Q-011 answer A: exactly the asset sheet's one-bay side, crops 14/11; depth 4.0 m). Local frame of the side face: u = world Y (0 at the front face, 4.0 at the back), v into the building (world -X), face at world X = x_right (3.04). Windows share R1/R2's floors; positions along u are the sheet's proportions; the ground-floor composition is the sheet's, scaled into the right ground storey (0..5.48).",
+   "windows": {
+    "side_w0_ground": {
+     "cx": 1.9,
+     "w": 0.94,
+     "sill": 3.73,
+     "head": 4.7,
+     "kind": "sill",
+     "slab": {
+      "x": [
+       1.26,
+       2.54
+      ],
+      "proud": 0.18
+     },
+     "note": "under the small striped awning (E6), flower box on the ledge (E2)",
+     "frame": {
+      "x": [
+       1.52,
+       2.28
+      ],
+      "top": 4.61
+     }
+    },
+    "side_w1": {
+     "cx": 1.9,
+     "w": 0.94,
+     "sill": 6.49,
+     "head": 8.56,
+     "kind": "sill",
+     "slab": {
+      "x": [
+       1.12,
+       2.68
+      ],
+      "proud": 0.24
+     },
+     "apron_z": [
+      6.15,
+      6.36
+     ],
+     "frame": {
+      "x": [
+       1.52,
+       2.28
+      ],
+      "top": 8.47
+     }
+    },
+    "side_w2": {
+     "cx": 1.9,
+     "w": 0.94,
+     "sill": 9.7,
+     "head": 11.77,
+     "kind": "sill",
+     "slab": {
+      "x": [
+       1.12,
+       2.68
+      ],
+      "proud": 0.24
+     },
+     "apron_z": [
+      9.36,
+      9.57
+     ],
+     "frame": {
+      "x": [
+       1.52,
+       2.28
+      ],
+      "top": 11.68
+     }
+    }
+   },
+   "framed_panel": {
+    "cx": 1.9,
+    "w": 0.95,
+    "z": [
+     2.41,
+     3.49
+    ],
+    "note": "the sheet's framed dark board below the ground-floor window (E6 dresses it)"
+   },
+   "awning": {
+    "cx": 1.9,
+    "w": 1.15,
+    "z": [
+     4.75,
+     5.06
+    ],
+    "note": "small striped awning over side_w0_ground (E6)"
+   },
+   "back_pilaster": {
+    "u": [
+     3.68,
+     4.0
+    ],
+    "proud": 0.07
+   },
+   "back_downpipe": {
+    "u": 3.8
+   },
+   "pipe_runs_note": "The sheet also shows a horizontal pipe across the side at about z 1.8 and a branch down to the back pipe (E4).",
+   "windows_note": "v2: side windows use R1/R2's bible opening and frame (0.94 hole, 0.76 frame): the sheet draws every window squatter than the bible (its R1 frame is 0.65 w/h, the bible's 0.40), so the bible's R1 proportions carry round the corner."
+  },
+  "walls": {
+   "front_t": 0.55,
+   "side_t": 0.55,
+   "back_t": 0.24,
+   "_doc": "v2: back wall 0.24 so the interior set fits Q-011 (about 3.4 m behind the door line): back wall inner face y=3.76."
+  },
+  "left_pier": {
+   "x": [
+    -2.73,
+    -2.3
+   ],
+   "proud": 0.15,
+   "base_z_top": 1.03,
+   "capital_z": [
+    3.04,
+    3.65
+   ]
+  }
+ }
+}

@@ -1,0 +1,76 @@
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "display_name": "Cirque du Shady - Mystery Meat Cart",
+  "satirical_subtitle": "Free Sample, Not Legally Binding",
+  "world": "Debaucheryville",
+  "zone": "Cirque du Shady",
+  "location_type": "Circus Food Vendor / Great Döner Debate",
+  "sub_types": [
+    "vendor or micro-location",
+    "quest integration"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/mysterymeatcart.md"
+  ],
+  "access": {
+    "hours": "Circus hours; enhanced at night",
+    "entry_requirements": [
+      "Cirque du Shady accessible",
+      "Vendor open during circus hours"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "mmc_exit_circus",
+      "destination_id": "debaucheryville_cirque_du_shady",
+      "from_node": "mmc_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Mystery Meat Cart -> Glitching Menu Sign -> Carousel Rotisserie -> Chef Chuckles Station -> Ingredient Storage -> Circus Eating Spot -> Circus Exit",
+    "landmarks": [
+      "Mystery Meat Cart",
+      "Glitching Menu Sign",
+      "Carousel Rotisserie",
+      "Chef Chuckles Station",
+      "Ingredient Storage",
+      "Circus Eating Spot",
+      "Circus Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_cirque_du_shady owns space beyond mmc_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A steam-belching carnival pushcart whose rotisserie spins like a cursed carousel."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "carnival red",
+      "neon yellow",
+      "steam grey",
+      "porcelain white"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Free Sample, Not Legally Binding",
+    "contrast": "A steam-belching carnival pushcart whose rotisserie spins like a cursed carousel."
+  },
+  "state_tracking": {
+    "mystery_cart_open": false,
+    "mystery_cart_night_enhanced": false,
+    "chef_chuckles_sidequest_unlocked": false,
+    "great_doner_debate_mystery_sampled": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "mystery_meat_cart_scene",
+      "mystery_meat_cart_characters",
+      "mystery_meat_cart_ui"
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "item_category": "Food Vendor / Status Recovery / Secret-Entrance Parent",
+  "items": [
+    {
+      "item_id": "lks_gutbuster_wrap",
+      "display_name": "Gutbuster Wrap",
+      "item_type": "consumable",
+      "price": 6,
+      "effect": "Strong recovery with grease status.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "lks_vampire_fries",
+      "display_name": "Vampire Slayer Garlic Fries",
+      "item_type": "consumable",
+      "price": 4,
+      "effect": "Minor recovery and garlic aura.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "lks_euromeat_pocket",
+      "display_name": "EuroMeat Pocket",
+      "item_type": "consumable",
+      "price": 5,
+      "effect": "Portable recovery; mild risk.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "lks_megamix_box",
+      "display_name": "MegaMix Box (Regret Platter)",
+      "item_type": "consumable",
+      "price": 9,
+      "effect": "Large recovery and likely food penalty.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "lks_sauce_shot",
+      "display_name": "Drunken Sauce Shot",
+      "item_type": "consumable",
+      "price": 2,
+      "effect": "Small SP boost and spice status.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "lks_lambsomnia",
+      "display_name": "Lambsomnia Special",
+      "item_type": "consumable",
+      "price": 7,
+      "effect": "Recovery plus drowsy state.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "lks_yogurt_reboot",
+      "display_name": "Yogurt Reboot",
+      "item_type": "consumable",
+      "price": 3,
+      "effect": "Reduces spice/grease penalties.",
+      "acquisition": "Menu."
+    },
+    {
+      "item_id": "lks_belly_of_chadz",
+      "display_name": "Belly Of Chadz",
+      "item_type": "consumable",
+      "price": 6,
+      "effect": "Qualifying Grease Kebab for shrine combinations.",
+      "acquisition": "Status menu."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "Kebab Coins",
+      "ownership": "external"
+    },
+    {
+      "reference": "global Drunk/Hungover/Embarrassed statuses",
+      "ownership": "external"
+    },
+    {
+      "reference": "Stomach of Steel unlock owned by shrine",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "late_kebab_status_menu_active",
+      "type": "state"
+    },
+    {
+      "reward_id": "great_doner_debate_kebab_sampled",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Kebab Coins or source-defined currency",
+    "price_confirmation_required": true
+  }
+}

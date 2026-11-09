@@ -1,0 +1,36 @@
+{
+  "group_id": "ee07331d-3646-4c13-9009-16f34858f534",
+  "states": [
+    {
+      "character": {
+        "id": "fb7d55d7-f6be-4002-8e4d-e407359f5a90",
+        "name": "Idle",
+        "prompt": "Lord Pilsner, an aging frat bro around 40, semi-realistic adult proportions about 4.5 heads tall (not chibi). Spiky frosted-tip dirty-blond hair, wraparound sunglasses pushed up on his head, tan skin, short goatee, smug confident half-smile. Puka shell necklace. Navy blue t-shirt with an orange sunset and palm tree beach print, riding up over a round beer belly so the navel shows. Khaki cargo shorts with big side pockets, black digital sports watch on the left wrist, brown beaded bracelet on the right wrist, black pager clipped to the waistband. White crew socks with a small blue wave logo, worn with black flip-flops. Hands in his pockets, relaxed slouch.",
+        "size": {
+          "width": 96,
+          "height": 96
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-11-02T20:15:17.866642+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {}
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-11-02T20:18:21.509099"
+}

@@ -1,0 +1,204 @@
+{
+  "locations": [
+    {
+      "name": "Astronomical Cock-Up Square",
+      "tag_id": "astronomical_cockup_square",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Narrow cobblestone streets suddenly open into a packed square dominated by a massive Gothic clock tower. The ornate blue and gold astronomical dial catches the light, drawing hundreds of tourists who crane their necks upward, phones raised. The perimeter is lined with vendor carts, folding tables of merchandise, and suspicious figures in long coats. A graffiti tag reading 'COCK-UP' has been spray-painted over the UNESCO Heritage sign. The smell of incense, cheap wine, and tourist desperation fills the air. Camera flashes pop constantly. Every fifteen minutes, the crowd density surges as another hourly show approaches.",
+        "entry_condition": "Accessible anytime. Crowd density increases 15 minutes before hourly clock show."
+      },
+      "interior": {
+        "theme": "600 years of engineering meets 38 seconds of disappointment and €300 of regrettable purchases",
+        "features": [
+          "entry_point",
+          "clock_tower: astronomical_clock_attraction",
+          "vendor_cluster: scam_economy_hub",
+          "quest_npc: viewing_spot_scammer",
+          "quest_npc: party_monk",
+          "quest_npc: clock_wine_vendor",
+          "quest_npc: merchandise_vendor",
+          "quest_npc: shady_wristband_guy",
+          "quest_npc: tattoo_barker",
+          "event_hook: clock_show_hourly",
+          "event_hook: bros_crying_sequence",
+          "event_hook: post_clock_vulnerability",
+          "selfie_prop: crying_in_front_of_clock",
+          "selfie_prop: level_seven_wristband_flash",
+          "npc_group: tourist_crowd_ambient",
+          "npc_group: local_observers_jakub",
+          "dungeon_entrance: euro_ink_4_less",
+          "shop_node: scam_merchandise_stall",
+          "shop_node: clock_wine_cart",
+          "hidden_area: childrens_birthday_party_easter_egg"
+        ]
+      },
+      "functions": [
+        "Major quest hub for multiple Debaucheryville sidequests",
+        "Scam vendor cluster - coordinated exploitation economy",
+        "Tourist attraction - hourly clock show event",
+        "Emotional trigger point for Lord Pilsner's tattoo decision",
+        "VIP wristband acquisition location (enables Velvet Curtain Club)",
+        "Clock wine source (running inventory gag)",
+        "Entry point to Euro Ink 4 Less tattoo shop"
+      ]
+    }
+  ],
+  
+  "node_connections": {
+    "astronomical_cockup_square": {
+      "connects_to": [
+        {
+          "destination": "old_town_streets",
+          "direction": "any",
+          "requirements": null,
+          "transition_type": "normal"
+        },
+        {
+          "destination": "euro_ink_4_less",
+          "direction": "east_alley",
+          "requirements": {
+            "state": "tattoo_decision_made",
+            "value": true
+          },
+          "transition_type": "quest_unlock"
+        },
+        {
+          "destination": "clocktower_cafe",
+          "direction": "north",
+          "requirements": null,
+          "transition_type": "normal"
+        },
+        {
+          "destination": "public_restroom_oldtown",
+          "direction": "west",
+          "requirements": {
+            "gold": 2
+          },
+          "transition_type": "paid"
+        }
+      ],
+      "quest_connections": [
+        {
+          "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+          "role": "quest_origin",
+          "npc_trigger": "shady_wristband_guy"
+        },
+        {
+          "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+          "role": "quest_location",
+          "event_trigger": "clock_show_hourly"
+        }
+      ],
+      "unlocks_at": [
+        {
+          "destination": "velvet_curtain_club",
+          "condition": "wristband_acquired",
+          "state_change": "velvet_curtain_access_wristband_acquired"
+        }
+      ]
+    }
+  },
+  
+  "feature_details": {
+    "clock_tower_astronomical_clock_attraction": {
+      "type": "timed_event",
+      "frequency": "hourly",
+      "duration_seconds": 38,
+      "triggers": ["bros_crying_sequence", "post_clock_vulnerability"],
+      "description": "The famous astronomical clock performs a 38-second show every hour. Skeleton (Death) rings a bell, apostles shuffle past, rooster makes a sad noise. Tourists are universally disappointed. Bros cry."
+    },
+    
+    "vendor_cluster_scam_economy_hub": {
+      "type": "economic_zone",
+      "vendors": 6,
+      "total_potential_spending": "€380-755",
+      "actual_value_of_goods": "~€40",
+      "markup_percentage": "875%+",
+      "description": "A coordinated ecosystem of scam artists who've perfected tourist exploitation. The Party Monk blesses you toward his cousin's wine cart. The merchandise vendor points toward the tattoo shop. The wristband guy appears after you've been rejected from clubs. Everyone wins except the bros."
+    },
+    
+    "event_hook_clock_show_hourly": {
+      "type": "scheduled_event",
+      "timing": "every_hour_day_cycle",
+      "phases": [
+        "bell_chime_2s",
+        "windows_open_2s", 
+        "apostle_parade_24s",
+        "death_bell_3s",
+        "rooster_crow_2s",
+        "windows_close_2s",
+        "crowd_reaction_3s"
+      ],
+      "post_event": "triggers_bros_crying_sequence"
+    },
+    
+    "event_hook_bros_crying_sequence": {
+      "type": "character_reaction",
+      "trigger": "clock_show_completion",
+      "duration_seconds": 15,
+      "effects": [
+        "lord_pilsner_tears",
+        "chadwick_films_crying",
+        "bradley_misinterprets_apostles",
+        "tattoo_decision_initiated"
+      ],
+      "sets_state": "post_clock_vulnerability"
+    },
+    
+    "event_hook_post_clock_vulnerability": {
+      "type": "status_effect",
+      "duration_minutes": 30,
+      "effects": {
+        "vendor_prices": "+20%",
+        "purchase_likelihood": "+50%",
+        "emotional_state": "spiritually_overwhelmed"
+      },
+      "description": "The bros are emotionally compromised and will buy anything."
+    },
+    
+    "selfie_prop_crying_in_front_of_clock": {
+      "type": "photo_opportunity",
+      "trigger": "during_crying_sequence",
+      "screenshot_moment": "Lord Pilsner with tears streaming, clock tower in background",
+      "social_potential": "high"
+    },
+    
+    "selfie_prop_level_seven_wristband_flash": {
+      "type": "photo_opportunity",
+      "trigger": "after_wristband_purchase",
+      "screenshot_moment": "Bros proudly displaying 'I'm 7!' wristbands",
+      "social_potential": "very_high"
+    },
+    
+    "hidden_area_childrens_birthday_party_easter_egg": {
+      "type": "easter_egg",
+      "unlock_condition": "random_10%_after_wristband_purchase",
+      "description": "An actual children's birthday party is visible in the background, with kids wearing the same wristbands the bros just paid €90 for.",
+      "player_reaction": "realization_horror"
+    }
+  },
+  
+  "ambient_npcs": {
+    "tourist_crowd_ambient": {
+      "count_range": "30-50",
+      "types": [
+        "phone_up_filming",
+        "camera_dslr",
+        "couple_selfie",
+        "family_group",
+        "backpacker",
+        "influencer_ring_light",
+        "disappointed_tourist",
+        "leaving_tourist"
+      ],
+      "behavior": "crowd_dynamics_hourly_surge"
+    },
+    "local_observers_jakub": {
+      "count": 2,
+      "behavior": "stationary_smoking_observing",
+      "dialogue_trigger": "bros_crying_visible",
+      "dialogue_czech_subtitled": true
+    }
+  }
+}

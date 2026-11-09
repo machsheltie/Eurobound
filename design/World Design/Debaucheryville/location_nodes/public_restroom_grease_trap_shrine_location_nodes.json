@@ -1,0 +1,222 @@
+{
+  "location_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+      "name": "Public Restroom - Grease Trap Shrine",
+      "tag_id": "public_restroom_grease_trap_shrine",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Interior tunnel from the kebab stand's tent flap.",
+        "entry_condition": "grease_trap_shrine_crawlspace_discovered; time 03:00-03:59"
+      },
+      "interior": {
+        "theme": "A grease-glazed biohazard shrine lit like a sacred fryer exhaust.",
+        "features": [
+          "interaction: gts_fixture",
+          "examine: gts_sink",
+          "lore: gts_mirror",
+          "lore: gts_fisto_tag",
+          "quest: gts_kebab_icon",
+          "quest: gts_haiku",
+          "exit: gts_exit"
+        ]
+      },
+      "functions": [
+        "Read Fistø Tag",
+        "Eat Kebab While Reading",
+        "Read Hungover Kebab Icon",
+        "Complete Graffiti While Hungover",
+        "Absinthe + Grease Kebab + Graffiti"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "gts_crawlspace",
+      "to": "gts_fixture",
+      "bidirectional": true
+    },
+    {
+      "from": "gts_fixture",
+      "to": "gts_sink",
+      "bidirectional": true
+    },
+    {
+      "from": "gts_sink",
+      "to": "gts_mirror",
+      "bidirectional": true
+    },
+    {
+      "from": "gts_mirror",
+      "to": "gts_fisto_tag",
+      "bidirectional": true
+    },
+    {
+      "from": "gts_fisto_tag",
+      "to": "gts_kebab_icon",
+      "bidirectional": true
+    },
+    {
+      "from": "gts_kebab_icon",
+      "to": "gts_haiku",
+      "bidirectional": true
+    },
+    {
+      "from": "gts_haiku",
+      "to": "gts_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "gts_crawlspace": {
+      "connects_to": [
+        "gts_fixture"
+      ],
+      "type": "transition",
+      "description": "Interior tunnel from the kebab stand's tent flap."
+    },
+    "gts_fixture": {
+      "connects_to": [
+        "gts_crawlspace",
+        "gts_sink"
+      ],
+      "type": "interaction",
+      "description": "Tiny toilet with warm 2004 receipt paper."
+    },
+    "gts_sink": {
+      "connects_to": [
+        "gts_fixture",
+        "gts_mirror"
+      ],
+      "type": "examine",
+      "description": "Cursed coin, half-chewed antacid and napkin swan."
+    },
+    "gts_mirror": {
+      "connects_to": [
+        "gts_sink",
+        "gts_fisto_tag"
+      ],
+      "type": "lore",
+      "description": "Cracked mirror with QR codes and Sheltie crown glyph."
+    },
+    "gts_fisto_tag": {
+      "connects_to": [
+        "gts_mirror",
+        "gts_kebab_icon"
+      ],
+      "type": "lore",
+      "description": "Puked here in '99 pilgrimage graffiti."
+    },
+    "gts_kebab_icon": {
+      "connects_to": [
+        "gts_fisto_tag",
+        "gts_haiku"
+      ],
+      "type": "quest",
+      "description": "Googly-eyed pixel kebab glows only while Hungover."
+    },
+    "gts_haiku": {
+      "connects_to": [
+        "gts_kebab_icon",
+        "gts_exit"
+      ],
+      "type": "quest",
+      "description": "Three-line shrine haiku and completion tracker."
+    },
+    "gts_exit": {
+      "connects_to": [
+        "gts_haiku"
+      ],
+      "type": "exit",
+      "description": "Returns to Kebab Alley."
+    }
+  },
+  "feature_details": {
+    "gts_crawlspace": {
+      "display_name": "Inside Crawlspace",
+      "image_generation_description": "Interior tunnel from the kebab stand's tent flap.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "gts_fixture": {
+      "display_name": "Grease-Coated Fixture",
+      "image_generation_description": "Tiny toilet with warm 2004 receipt paper.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "gts_sink": {
+      "display_name": "Cursed Sink Collection",
+      "image_generation_description": "Cursed coin, half-chewed antacid and napkin swan.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "gts_mirror": {
+      "display_name": "Meat-Glyph Mirror",
+      "image_generation_description": "Cracked mirror with QR codes and Sheltie crown glyph.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "gts_fisto_tag": {
+      "display_name": "Fistø Pilgrimage Tag",
+      "image_generation_description": "Puked here in '99 pilgrimage graffiti.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "gts_kebab_icon": {
+      "display_name": "Hungover Kebab Icon",
+      "image_generation_description": "Googly-eyed pixel kebab glows only while Hungover.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "gts_haiku": {
+      "display_name": "Grease Haiku Wall",
+      "image_generation_description": "Three-line shrine haiku and completion tracker.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    },
+    "gts_exit": {
+      "display_name": "Return Crawlspace",
+      "image_generation_description": "Returns to Kebab Alley.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve traversal and interaction readability."
+    }
+  },
+  "ambient_npcs": [
+    "flies",
+    "fryer vent steam",
+    "distant distorted kebab jingle"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+  "display_name": "The Tap Dat Vault",
+  "satirical_subtitle": "Inhaled & Survived",
+  "world": "Debaucheryville",
+  "zone": "Clocktower Plaza cellar",
+  "location_type": "Brewery Tour Stop 3 / Rhythm Dungeon",
+  "sub_types": [
+    "brewery tour dungeon",
+    "puzzle/encounter",
+    "selfie location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/the_tap_dat_vault.md",
+    "design/items/brewery_tour/",
+    "docs/superpowers/specs/2026-11-02-tap-dat-vault-location-package-design.md"
+  ],
+  "access": {
+    "hours": "Entry window 00:00-00:59",
+    "entry_requirements": [
+      "Find the concealed plaza switch",
+      "Enter between 00:00 and 00:59; no opener physically gates entry"
+    ],
+    "physical_entry_uses_opener": false,
+    "tour_reward_requires": [
+      "brewery_tour_active",
+      "bottle_opener_keychain"
+    ],
+    "pre_tour_completion_policy": "store challenge completion and grant rewards on first eligible return without replay"
+  },
+  "exits": [
+    {
+      "exit_id": "tdv_exit_plaza",
+      "destination_id": "debaucheryville_clocktower_plaza",
+      "from_node": "tdv_exit",
+      "condition": "always_inside"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Clocktower Plaza Approach -> Vault Door -> Subwoofer Vats -> Vapor Pressure Console -> Glitched Brew Ad Bot -> Strobe Brewmistress Arena -> Vault Service -> You Are Brewtiful Wall -> Plaza Return",
+    "landmarks": [
+      "Clocktower Plaza Approach",
+      "Vault Door",
+      "Subwoofer Vats",
+      "Vapor Pressure Console",
+      "Glitched Brew Ad Bot",
+      "Strobe Brewmistress Arena",
+      "Vault Service",
+      "You Are Brewtiful Wall",
+      "Plaza Return"
+    ],
+    "ownership_boundaries": [
+      "Parent owns approach; this package owns destination side through tdv_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A cyberpunk brew basement where vats are subwoofers and pressure control is a rhythm game."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "electric cyan",
+      "hot pink",
+      "vault steel",
+      "vapor white"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Inhaled & Survived",
+    "contrast": "A cyberpunk brew basement where vats are subwoofers and pressure control is a rhythm game."
+  },
+  "state_tracking": {
+    "tap_dat_switch_discovered": false,
+    "tap_dat_midnight_window_open": false,
+    "tap_dat_rhythm_strikes": false,
+    "tap_dat_challenge_complete": false,
+    "tap_dat_tour_rewards_deferred": false,
+    "tap_dat_tour_rewards_granted": false,
+    "tap_dat_selfie_unlocked": false
+  },
+  "progressive_states": [
+    {
+      "state": "pre_tour_complete",
+      "behavior": "Challenge remains complete; rewards deferred."
+    },
+    {
+      "state": "tour_eligible_return",
+      "behavior": "Grant opener, stamp, selfie and beer purchase access without replay."
+    }
+  ],
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 128,
+    "streaming_groups": [
+      "tap_dat_vault_entry",
+      "tap_dat_vault_dungeon",
+      "tap_dat_vault_boss_ui"
+    ]
+  }
+}

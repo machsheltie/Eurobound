@@ -1,0 +1,202 @@
+{
+  "location_id": "debaucheryville_vendor_bohemian_trap_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "bohemian_trap_environment",
+      "atlas": "bohemian_trap_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "bohemian_trap_exterior",
+          "filename": "bohemian_trap_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "bt_cart_approach"
+        },
+        {
+          "asset_id": "bohemian_trap_interior",
+          "filename": "bohemian_trap_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "bt_bottle_display"
+        },
+        {
+          "asset_id": "bohemian_trap_node_bt_bottle_display",
+          "filename": "bohemian_trap_bt_bottle_display.png",
+          "role": "shop landmark",
+          "node_id": "bt_bottle_display"
+        },
+        {
+          "asset_id": "bohemian_trap_node_bt_ritual_station",
+          "filename": "bohemian_trap_bt_ritual_station.png",
+          "role": "interaction landmark",
+          "node_id": "bt_ritual_station"
+        },
+        {
+          "asset_id": "bohemian_trap_node_bt_performer",
+          "filename": "bohemian_trap_bt_performer.png",
+          "role": "service landmark",
+          "node_id": "bt_performer"
+        },
+        {
+          "asset_id": "bohemian_trap_node_bt_customer_space",
+          "filename": "bohemian_trap_bt_customer_space.png",
+          "role": "social landmark",
+          "node_id": "bt_customer_space"
+        },
+        {
+          "asset_id": "bohemian_trap_node_bt_exit",
+          "filename": "bohemian_trap_bt_exit.png",
+          "role": "exit landmark",
+          "node_id": "bt_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "bohemian_trap_characters",
+      "atlas": "bohemian_trap_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "bohemian_trap_npc_bt_npc_performer",
+          "filename": "bohemian_trap_bt_npc_performer.png",
+          "role": "character sprite",
+          "node_id": "bt_performer"
+        }
+      ]
+    },
+    {
+      "group_id": "bohemian_trap_ui_fx",
+      "atlas": "bohemian_trap_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "bohemian_trap_item_bt_house_absinthe",
+          "filename": "bohemian_trap_bt_house_absinthe.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "bohemian_trap_item_bt_authentic_absinthe",
+          "filename": "bohemian_trap_bt_authentic_absinthe.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "bohemian_trap_item_bt_hemingway_tier",
+          "filename": "bohemian_trap_bt_hemingway_tier.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "bohemian_trap_item_bt_absinthe_ritual",
+          "filename": "bohemian_trap_bt_absinthe_ritual.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "bohemian_trap_ui",
+          "filename": "bohemian_trap_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "bohemian_trap_fx",
+          "filename": "bohemian_trap_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "bohemian_trap_masks",
+          "filename": "bohemian_trap_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "bt_npc_performer_standard",
+      "asset_id": "bohemian_trap_npc_bt_npc_performer",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "bohemian_trap_lighting",
+      "mask_asset": "bohemian_trap_masks",
+      "nodes": [
+        "bt_cart_approach",
+        "bt_bottle_display",
+        "bt_ritual_station",
+        "bt_performer",
+        "bt_customer_space",
+        "bt_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "bt_exit_quarter",
+      "destination_id": "debaucheryville_neon_entertainment_quarter",
+      "from_node": "bt_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "bt_browse",
+      "node_id": "bt_bottle_display",
+      "highlight_asset": "bohemian_trap_node_bt_bottle_display"
+    },
+    {
+      "interaction_id": "bt_buy_ritual",
+      "node_id": "bt_ritual_station",
+      "highlight_asset": "bohemian_trap_node_bt_ritual_station"
+    },
+    {
+      "interaction_id": "bt_consume",
+      "node_id": "bt_customer_space",
+      "highlight_asset": "bohemian_trap_node_bt_customer_space"
+    },
+    {
+      "interaction_id": "bt_worth_it",
+      "node_id": "bt_customer_space",
+      "highlight_asset": "bohemian_trap_node_bt_customer_space"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "bohemian_trap_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 12,
+    "reduced_fx_asset": "bohemian_trap_fx"
+  }
+}

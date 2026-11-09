@@ -1,0 +1,107 @@
+{
+  "location_id": "debaucheryville_brewery_absinthium_taproom_01",
+  "location_name": "The Absinthium Taproom",
+  "npcs": [
+    {
+      "npc_id": "at_npc_vanek",
+      "display_name": "Dr. Milos Vanek",
+      "role": "proprietor and tour reward service",
+      "node": "at_service",
+      "schedule": "20:00-04:00",
+      "visual": "Research coat, green lenses and cracked-glass opener display.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    },
+    {
+      "npc_id": "at_npc_mirror_chad",
+      "display_name": "Mirror Chad",
+      "role": "reflection encounter",
+      "node": "at_mirror_chad",
+      "schedule": "challenge active",
+      "visual": "Idealized bro reflection with delayed motion.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    },
+    {
+      "npc_id": "at_npc_wisp",
+      "display_name": "Green Fairy Wisp",
+      "role": "boss entity",
+      "node": "at_wisp_arena",
+      "schedule": "until defeated",
+      "visual": "Emerald vapor silhouette with readable attack core.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville",
+        "couchsurfingchroniclesdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "absinthium_taproom_ambient_1",
+      "display_name": "mirror echoes",
+      "spawn_nodes": [
+        "at_wisp_arena",
+        "at_service",
+        "at_selfie"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "absinthium_taproom_ambient_2",
+      "display_name": "green vapor wisps",
+      "spawn_nodes": [
+        "at_wisp_arena",
+        "at_service",
+        "at_selfie"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "at_npc_vanek",
+      "node_id": "at_service",
+      "role": "proprietor and tour reward service"
+    },
+    {
+      "npc_id": "at_npc_mirror_chad",
+      "node_id": "at_mirror_chad",
+      "role": "reflection encounter"
+    },
+    {
+      "npc_id": "at_npc_wisp",
+      "node_id": "at_wisp_arena",
+      "role": "boss entity"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep puzzle lanes and exits clear",
+    "Boss cores readable in accessibility mode",
+    "No deprecated opener-gate dialogue"
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "location_id": "debaucheryville_shop_midnight_munchies_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_shop_midnight_munchies_01",
+      "name": "Midnight Munchies General Store",
+      "tag_id": "midnight_munchies_general_store",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Small corner shop blazing fluorescent light into dark Hostel Row.",
+        "entry_condition": "Store open between 22:00 and 08:00"
+      },
+      "interior": {
+        "theme": "A fluorescent survival beacon whose markup measures how badly the player failed to plan.",
+        "features": [
+          "shop: mm_recovery_aisle",
+          "shop: mm_hygiene_aisle",
+          "interaction: mm_heat_lamp",
+          "service: mm_counter",
+          "exit: mm_exit"
+        ]
+      },
+      "functions": [
+        "Browse Survival Stock",
+        "Try Heat Lamp Lottery",
+        "Checkout with Věra",
+        "Ask for Regular Price"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "mm_storefront",
+      "to": "mm_recovery_aisle",
+      "bidirectional": true
+    },
+    {
+      "from": "mm_recovery_aisle",
+      "to": "mm_hygiene_aisle",
+      "bidirectional": true
+    },
+    {
+      "from": "mm_hygiene_aisle",
+      "to": "mm_heat_lamp",
+      "bidirectional": true
+    },
+    {
+      "from": "mm_heat_lamp",
+      "to": "mm_counter",
+      "bidirectional": true
+    },
+    {
+      "from": "mm_counter",
+      "to": "mm_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "mm_storefront": {
+      "connects_to": [
+        "mm_recovery_aisle"
+      ],
+      "type": "exterior",
+      "description": "Small corner shop blazing fluorescent light into dark Hostel Row."
+    },
+    "mm_recovery_aisle": {
+      "connects_to": [
+        "mm_storefront",
+        "mm_hygiene_aisle"
+      ],
+      "type": "shop",
+      "description": "Energy drinks, food and emergency recovery stock."
+    },
+    "mm_hygiene_aisle": {
+      "connects_to": [
+        "mm_recovery_aisle",
+        "mm_heat_lamp"
+      ],
+      "type": "shop",
+      "description": "Travel necessities and preventable emergencies."
+    },
+    "mm_heat_lamp": {
+      "connects_to": [
+        "mm_hygiene_aisle",
+        "mm_counter"
+      ],
+      "type": "interaction",
+      "description": "Questionable hot food under an unforgiving orange lamp."
+    },
+    "mm_counter": {
+      "connects_to": [
+        "mm_heat_lamp",
+        "mm_exit"
+      ],
+      "type": "service",
+      "description": "Checkout, desperation tax and regular-customer judgment."
+    },
+    "mm_exit": {
+      "connects_to": [
+        "mm_counter"
+      ],
+      "type": "exit",
+      "description": "Return to nearby hostels and bars."
+    }
+  },
+  "feature_details": {
+    "mm_storefront": {
+      "display_name": "Night Storefront",
+      "image_generation_description": "Small corner shop blazing fluorescent light into dark Hostel Row.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mm_recovery_aisle": {
+      "display_name": "Recovery Aisle",
+      "image_generation_description": "Energy drinks, food and emergency recovery stock.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mm_hygiene_aisle": {
+      "display_name": "Hygiene and Supplies",
+      "image_generation_description": "Travel necessities and preventable emergencies.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mm_heat_lamp": {
+      "display_name": "Heat Lamp Lottery",
+      "image_generation_description": "Questionable hot food under an unforgiving orange lamp.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mm_counter": {
+      "display_name": "Věra's Counter",
+      "image_generation_description": "Checkout, desperation tax and regular-customer judgment.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    },
+    "mm_exit": {
+      "display_name": "Hostel Row Exit",
+      "image_generation_description": "Return to nearby hostels and bars.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Preserve readable approach and interaction silhouette."
+    }
+  },
+  "ambient_npcs": [
+    "hostel kitchen foragers",
+    "post-club customers",
+    "delivery worker"
+  ]
+}

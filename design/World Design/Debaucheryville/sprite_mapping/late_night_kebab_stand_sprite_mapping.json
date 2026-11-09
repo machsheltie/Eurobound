@@ -1,0 +1,237 @@
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter or micro-room cutaway"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "late_night_kebab_stand_environment",
+      "atlas": "late_night_kebab_stand_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "late_night_kebab_stand_exterior",
+          "filename": "late_night_kebab_stand_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "lks_cart"
+        },
+        {
+          "asset_id": "late_night_kebab_stand_interior",
+          "filename": "late_night_kebab_stand_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "lks_menu"
+        },
+        {
+          "asset_id": "late_night_kebab_stand_node_lks_menu",
+          "filename": "late_night_kebab_stand_lks_menu.png",
+          "role": "shop landmark",
+          "node_id": "lks_menu"
+        },
+        {
+          "asset_id": "late_night_kebab_stand_node_lks_counter",
+          "filename": "late_night_kebab_stand_lks_counter.png",
+          "role": "service landmark",
+          "node_id": "lks_counter"
+        },
+        {
+          "asset_id": "late_night_kebab_stand_node_lks_consume",
+          "filename": "late_night_kebab_stand_lks_consume.png",
+          "role": "interaction landmark",
+          "node_id": "lks_consume"
+        },
+        {
+          "asset_id": "late_night_kebab_stand_node_lks_crawlspace",
+          "filename": "late_night_kebab_stand_lks_crawlspace.png",
+          "role": "transition landmark",
+          "node_id": "lks_crawlspace"
+        },
+        {
+          "asset_id": "late_night_kebab_stand_node_lks_exit",
+          "filename": "late_night_kebab_stand_lks_exit.png",
+          "role": "exit landmark",
+          "node_id": "lks_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "late_night_kebab_stand_characters",
+      "atlas": "late_night_kebab_stand_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "late_night_kebab_stand_npc_lks_npc_mr_chadz",
+          "filename": "late_night_kebab_stand_lks_npc_mr_chadz.png",
+          "role": "character sprite",
+          "node_id": "lks_counter"
+        }
+      ]
+    },
+    {
+      "group_id": "late_night_kebab_stand_ui_fx",
+      "atlas": "late_night_kebab_stand_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "late_night_kebab_stand_item_lks_gutbuster_wrap",
+          "filename": "late_night_kebab_stand_lks_gutbuster_wrap.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_item_lks_vampire_fries",
+          "filename": "late_night_kebab_stand_lks_vampire_fries.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_item_lks_euromeat_pocket",
+          "filename": "late_night_kebab_stand_lks_euromeat_pocket.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_item_lks_megamix_box",
+          "filename": "late_night_kebab_stand_lks_megamix_box.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_item_lks_sauce_shot",
+          "filename": "late_night_kebab_stand_lks_sauce_shot.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_item_lks_lambsomnia",
+          "filename": "late_night_kebab_stand_lks_lambsomnia.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_item_lks_yogurt_reboot",
+          "filename": "late_night_kebab_stand_lks_yogurt_reboot.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_item_lks_belly_of_chadz",
+          "filename": "late_night_kebab_stand_lks_belly_of_chadz.png",
+          "role": "item icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_ui",
+          "filename": "late_night_kebab_stand_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_fx",
+          "filename": "late_night_kebab_stand_fx.png",
+          "role": "particles and overlays",
+          "node_id": null
+        },
+        {
+          "asset_id": "late_night_kebab_stand_masks",
+          "filename": "late_night_kebab_stand_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "lks_npc_mr_chadz_standard",
+      "asset_id": "late_night_kebab_stand_npc_lks_npc_mr_chadz",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "late_night_kebab_stand_lighting",
+      "mask_asset": "late_night_kebab_stand_masks",
+      "nodes": [
+        "lks_cart",
+        "lks_menu",
+        "lks_counter",
+        "lks_consume",
+        "lks_crawlspace",
+        "lks_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "lks_exit_alley",
+      "destination_id": "debaucheryville_velvet_alley",
+      "from_node": "lks_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "lks_exit_grease_shrine",
+      "destination_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+      "from_node": "lks_crawlspace",
+      "condition": "grease_trap_shrine_access_window_open"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "lks_order",
+      "node_id": "lks_counter",
+      "highlight_asset": "late_night_kebab_stand_node_lks_counter"
+    },
+    {
+      "interaction_id": "lks_consume",
+      "node_id": "lks_consume",
+      "highlight_asset": "late_night_kebab_stand_node_lks_consume"
+    },
+    {
+      "interaction_id": "lks_status_menu",
+      "node_id": "lks_menu",
+      "highlight_asset": "late_night_kebab_stand_node_lks_menu"
+    },
+    {
+      "interaction_id": "lks_find_crawlspace",
+      "node_id": "lks_crawlspace",
+      "highlight_asset": "late_night_kebab_stand_node_lks_crawlspace"
+    },
+    {
+      "interaction_id": "lks_enter_shrine",
+      "node_id": "lks_crawlspace",
+      "highlight_asset": "late_night_kebab_stand_node_lks_crawlspace"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "late_night_kebab_stand_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 8,
+    "reduced_fx_asset": "late_night_kebab_stand_fx"
+  }
+}

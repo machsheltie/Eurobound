@@ -1,0 +1,43 @@
+{
+  "location_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+  "location_name": "Public Restroom - Grease Trap Shrine",
+  "npcs": [],
+  "ambient_npcs": [
+    {
+      "group_id": "public_restroom_grease_trap_shrine_ambient_1",
+      "display_name": "flies",
+      "spawn_nodes": [
+        "gts_fisto_tag",
+        "gts_kebab_icon",
+        "gts_haiku"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "public_restroom_grease_trap_shrine_ambient_2",
+      "display_name": "fryer vent steam",
+      "spawn_nodes": [
+        "gts_fisto_tag",
+        "gts_kebab_icon",
+        "gts_haiku"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "public_restroom_grease_trap_shrine_ambient_3",
+      "display_name": "distant distorted kebab jingle",
+      "spawn_nodes": [
+        "gts_fisto_tag",
+        "gts_kebab_icon",
+        "gts_haiku"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient density during events",
+    "Do not add NPCs to empty shrine/restroom specs"
+  ]
+}

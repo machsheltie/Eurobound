@@ -1,0 +1,63 @@
+{
+  "location_id": "debaucheryville_hostel_midnight_checkout_01",
+  "item_category": "Accommodation / Rest Hub / Confession Hub",
+  "items": [
+    {
+      "item_id": "hmc_dorm_bed",
+      "display_name": "Dorm Bed Booking",
+      "item_type": "service",
+      "price": 12,
+      "effect": "Low privacy; variable recovery.",
+      "acquisition": "Reception."
+    },
+    {
+      "item_id": "hmc_quiet_bed",
+      "display_name": "Quiet-ish Bed Booking",
+      "item_type": "service",
+      "price": 35,
+      "effect": "Improved recovery and fewer roommate events.",
+      "acquisition": "Reception."
+    },
+    {
+      "item_id": "hmc_private_room",
+      "display_name": "Private Room Booking",
+      "item_type": "service",
+      "price": 45,
+      "effect": "Best recovery and privacy.",
+      "acquisition": "Reception."
+    },
+    {
+      "item_id": "hmc_mystery_fridge_food",
+      "display_name": "Mystery Fridge Food",
+      "item_type": "consumable",
+      "price": 0,
+      "effect": "Random small recovery or stomach penalty.",
+      "acquisition": "Kitchen examination."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "Midnight Munchies inventory",
+      "ownership": "external"
+    },
+    {
+      "reference": "quest-owned traveler belongings",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "hostel_bond_active",
+      "type": "state"
+    },
+    {
+      "reward_id": "hostel_kitchen_event_complete",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies another currency",
+    "price_confirmation_required": true,
+    "time_modifiers": "Apply only documented time-based changes"
+  }
+}

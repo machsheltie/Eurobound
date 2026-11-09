@@ -1,0 +1,69 @@
+{
+  "location_id": "debaucheryville_brewery_absinthium_taproom_01",
+  "item_category": "Brewery Tour local rewards and signature beer",
+  "items": [
+    {
+      "item_id": "opener_absinthium_taproom",
+      "display_name": "The Absinthium Taproom Bottle Opener",
+      "item_type": "brewery_opener",
+      "price": 0,
+      "effect": "Cracked glass opener; I Saw Myself. Never sold.",
+      "acquisition": "Granted with stamp after eligible challenge completion."
+    },
+    {
+      "item_id": "stamp_absinthium_taproom",
+      "display_name": "Absinthium Taproom Stamp",
+      "item_type": "brewery_stamp",
+      "price": 0,
+      "effect": "Green fairy in cracked glass; tour stop 1.",
+      "acquisition": "Granted after eligible challenge completion."
+    },
+    {
+      "item_id": "beer_absinthium_taproom",
+      "display_name": "Absinthe Lager",
+      "item_type": "signature_beer",
+      "price": 12,
+      "effect": "Restores SP with Confused chance.",
+      "acquisition": "Purchasable after rewards granted."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "bottle_opener_keychain (external permanent quest container)",
+      "ownership": "external authoritative item/quest source"
+    },
+    {
+      "reference": "Brewery Passport Book",
+      "ownership": "external authoritative item/quest source"
+    },
+    {
+      "reference": "Publandia brewery_tour_active trigger",
+      "ownership": "external authoritative item/quest source"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "absinthium_challenge_complete",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "absinthium_tour_rewards_deferred",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "absinthium_tour_rewards_granted",
+      "type": "tour state"
+    },
+    {
+      "reward_id": "absinthium_selfie_unlocked",
+      "type": "tour state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs",
+    "openers_are_never_sold": true,
+    "stamp_is_never_sold": true,
+    "signature_beer_requires_tour_rewards": true,
+    "price_confirmation_required": true
+  }
+}

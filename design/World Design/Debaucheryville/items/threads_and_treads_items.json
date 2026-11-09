@@ -1,0 +1,75 @@
+{
+  "location_id": "debaucheryville_shop_threads_treads_01",
+  "item_category": "24-Hour Equipment / Identity Shop",
+  "items": [
+    {
+      "item_id": "tt_leather_jacket",
+      "display_name": "Genuine-ish Leather Jacket",
+      "item_type": "equipment",
+      "price": 80,
+      "effect": "Defense plus Cool Factor.",
+      "acquisition": "Jacket wall."
+    },
+    {
+      "item_id": "tt_denim_vest",
+      "display_name": "Patch-Ready Denim Vest",
+      "item_type": "equipment",
+      "price": 45,
+      "effect": "Moderate defense and customizable style.",
+      "acquisition": "Jacket wall."
+    },
+    {
+      "item_id": "tt_combat_boots",
+      "display_name": "Night Combat Boots",
+      "item_type": "equipment",
+      "price": 65,
+      "effect": "Defense and slip resistance.",
+      "acquisition": "Footwear wall."
+    },
+    {
+      "item_id": "tt_chain_wallet",
+      "display_name": "Chain Wallet",
+      "item_type": "equipment",
+      "price": 20,
+      "effect": "Minor theft resistance and Cool Factor.",
+      "acquisition": "Accessories."
+    },
+    {
+      "item_id": "tt_identity_overhaul",
+      "display_name": "2 AM Identity Overhaul",
+      "item_type": "service",
+      "price": 150,
+      "effect": "Cosmetic transformation and Cool Factor reset.",
+      "acquisition": "Counter during 02:00-05:00."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "global equipment slots",
+      "ownership": "external"
+    },
+    {
+      "reference": "Cool Factor system",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "threads_treads_2am_crowd",
+      "type": "state"
+    },
+    {
+      "reward_id": "threads_treads_transformation_chosen",
+      "type": "state"
+    },
+    {
+      "reward_id": "cool_factor_assessed",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies otherwise",
+    "price_confirmation_required": true,
+    "time_modifiers": "documented only"
+  }
+}

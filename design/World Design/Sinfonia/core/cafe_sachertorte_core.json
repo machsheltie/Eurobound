@@ -1,0 +1,160 @@
+{
+  "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
+  "display_name": "Café Sachertorte",
+  "satirical_subtitle": "€18 Per Slice, €340 Per Horse Rampage",
+  "world": "sinfonia",
+  "area_zone": "kaffeehaus_row",
+  "location_type": "cafe_shop_quest_location",
+  
+  "access_requirements": {
+    "time_restrictions": {
+      "open_hours": "08:00-22:00",
+      "peak_pretension": "14:00-17:00",
+      "special_events": "evening_pre_opera"
+    },
+    "stat_requirements": {
+      "entry": null,
+      "best_seating": {"charm": 3},
+      "avoid_restroom_seating": {"charm": 1}
+    },
+    "item_requirements": null,
+    "previous_locations": ["sinfonia_arrival"],
+    "special_conditions": {
+      "fiaker_fiasco_active": "auto_trigger_on_gustav_pursuit",
+      "post_fiasco_debt": "staff_hostile_until_paid"
+    }
+  },
+  
+  "visual_design": {
+    "layout": {
+      "type": "indoor_cafe",
+      "dimensions": {"width": 320, "height": 240},
+      "zones": [
+        {"id": "main_floor", "bounds": {"x": 0, "y": 0, "width": 240, "height": 200}},
+        {"id": "service_counter", "bounds": {"x": 200, "y": 20, "width": 40, "height": 60}},
+        {"id": "cake_display", "bounds": {"x": 100, "y": 40, "width": 60, "height": 40}},
+        {"id": "patio_area", "bounds": {"x": 240, "y": 100, "width": 80, "height": 140}}
+      ]
+    },
+    "color_palette": {
+      "sachertorte_brown": "#3D2314",
+      "apricot_glaze": "#FBCEB1",
+      "cream_marble": "#FFFDD0",
+      "cafe_imperial_gold": "#CFB53B",
+      "mahogany_dark": "#4A0000",
+      "coffee_black": "#1C1C1C",
+      "whipped_cream": "#FFFAFA"
+    },
+    "lighting_setup": {
+      "ambient": "#FFE4B5",
+      "chandelier_points": "#FFF8DC",
+      "window_light": "#FFFACD",
+      "intensity": 0.85
+    },
+    "particle_systems": [
+      {"type": "coffee_steam", "sources": ["cups", "counter"], "density": 8},
+      {"type": "dust_motes", "sources": ["windows"], "density": 15},
+      {"type": "cake_crumbs", "trigger": "gustav_rampage", "density": 30},
+      {"type": "shattered_porcelain", "trigger": "damage_event", "density": 20}
+    ],
+    "mobile_optimization": {
+      "lod_level": 2,
+      "max_particles": 30,
+      "draw_calls": 40,
+      "memory_mb": 38,
+      "texture_compression": true
+    }
+  },
+  
+  "atmosphere": {
+    "primary_theme": "commodification_of_tradition",
+    "secondary_theme": "tyranny_of_refinement",
+    "cultural_target": "cafe_pretension_tourist_exploitation",
+    "ambiance": "refined_intimidating_expensive",
+    "sensory_details": {
+      "smell": "coffee_chocolate_superiority",
+      "sound": "quiet_murmur_silver_porcelain",
+      "temperature": "comfortable_controlled"
+    }
+  },
+  
+  "quest_integration": {
+    "primary_quest": "sinfonia_sidequest_fiaker_fiasco_01",
+    "phase": "cafe_phase_02",
+    "trigger_type": "gustav_pursuit_arrival",
+    "location_role": "gustav_cake_heist_scene",
+    "connections": {
+      "incoming": "sinfonia_imperial_opera_house_plaza_01",
+      "outgoing": "sinfonia_opera_backstage_01"
+    },
+    "damage_tracking": {
+      "enabled": true,
+      "running_total_key": "fiaker_fiasco_damage_euro",
+      "cafe_contribution": 340
+    }
+  },
+  
+  "economic_data": {
+    "currency": "euro",
+    "price_modifier": {
+      "tourist_detection": 1.1,
+      "german_order_discount": 0.9,
+      "charm_high_discount": 0.95
+    },
+    "hidden_charges": {
+      "historic_table_supplement": 3,
+      "service_surcharge_percent": 15,
+      "american_adjustment_percent": 10
+    },
+    "debt_system": {
+      "fiaker_fiasco_debt": 340,
+      "minimum_payment": 50,
+      "full_payment_reward": "valued_patron_status",
+      "unpaid_consequence": "service_refused"
+    }
+  },
+  
+  "cross_location_references": [
+    {
+      "location": "sinfonia_imperial_opera_house_plaza_01",
+      "relationship": "incoming_quest_path"
+    },
+    {
+      "location": "sinfonia_opera_backstage_01",
+      "relationship": "outgoing_quest_path"
+    },
+    {
+      "location": "sinfonia_moderato_pub_01",
+      "relationship": "retreat_point"
+    },
+    {
+      "location": "sinfonia_cafe_existenz_01",
+      "relationship": "same_district"
+    }
+  ],
+  
+  "state_tracking": {
+    "states": ["pre_quest", "during_quest", "post_quest_unpaid", "post_quest_paid"],
+    "default_state": "pre_quest",
+    "state_changes": {
+      "during_quest": {
+        "trigger": "gustav_entry",
+        "features": ["chaos_mode", "npc_evacuation", "damage_tracking"]
+      },
+      "post_quest_unpaid": {
+        "trigger": "quest_phase_complete",
+        "features": ["visible_damage", "staff_hostile", "debt_active", "temporarily_closed_24h"]
+      },
+      "post_quest_paid": {
+        "trigger": "debt_cleared",
+        "features": ["valued_patron", "commemorative_menu", "staff_friendly"]
+      }
+    }
+  },
+  
+  "achievements": [
+    {"id": "cafe_chaos", "trigger": "complete_cafe_phase"},
+    {"id": "patron_of_arts", "trigger": "pay_full_debt"},
+    {"id": "the_gustav", "trigger": "order_commemorative_cookie"}
+  ]
+}

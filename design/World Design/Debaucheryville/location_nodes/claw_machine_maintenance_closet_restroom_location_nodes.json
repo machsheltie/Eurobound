@@ -1,0 +1,173 @@
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_arcade_maintenance_closet_01",
+      "name": "Claw Machine Maintenance Closet Restroom",
+      "tag_id": "claw_machine_maintenance_closet_restroom",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Interior face of the permanently unlocked Arcade maintenance door.",
+        "entry_condition": "arcade_maintenance_restroom_unlocked"
+      },
+      "interior": {
+        "theme": "A mop closet mutated by broken arcade hardware into a sticky secret restroom.",
+        "features": [
+          "interaction: cmr_ddr_toilet",
+          "interaction: cmr_crt_mirror",
+          "lore: cmr_graffiti_wall",
+          "examine: cmr_claw_bucket",
+          "exit: cmr_exit"
+        ]
+      },
+      "functions": [
+        "Use DDR Toilet",
+        "Scan INSERT COIN Mirror",
+        "Read Graffiti Set",
+        "Examine Claw Chandelier",
+        "Return to Arcade"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "cmr_inside_door",
+      "to": "cmr_ddr_toilet",
+      "bidirectional": true
+    },
+    {
+      "from": "cmr_ddr_toilet",
+      "to": "cmr_crt_mirror",
+      "bidirectional": true
+    },
+    {
+      "from": "cmr_crt_mirror",
+      "to": "cmr_graffiti_wall",
+      "bidirectional": true
+    },
+    {
+      "from": "cmr_graffiti_wall",
+      "to": "cmr_claw_bucket",
+      "bidirectional": true
+    },
+    {
+      "from": "cmr_claw_bucket",
+      "to": "cmr_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "cmr_inside_door": {
+      "connects_to": [
+        "cmr_ddr_toilet"
+      ],
+      "type": "transition",
+      "description": "Interior face of the permanently unlocked Arcade maintenance door."
+    },
+    "cmr_ddr_toilet": {
+      "connects_to": [
+        "cmr_inside_door",
+        "cmr_crt_mirror"
+      ],
+      "type": "interaction",
+      "description": "Sticky dance-pad toilet seat in impossible clearance."
+    },
+    "cmr_crt_mirror": {
+      "connects_to": [
+        "cmr_ddr_toilet",
+        "cmr_graffiti_wall"
+      ],
+      "type": "interaction",
+      "description": "Repurposed CRT mirror looping an INSERT COIN prompt."
+    },
+    "cmr_graffiti_wall": {
+      "connects_to": [
+        "cmr_crt_mirror",
+        "cmr_claw_bucket"
+      ],
+      "type": "lore",
+      "description": "Layered bathroom-network and Rival Trio tags."
+    },
+    "cmr_claw_bucket": {
+      "connects_to": [
+        "cmr_graffiti_wall",
+        "cmr_exit"
+      ],
+      "type": "examine",
+      "description": "Claw-arm chandelier, janitor bucket foot soak and cleaning clutter."
+    },
+    "cmr_exit": {
+      "connects_to": [
+        "cmr_claw_bucket"
+      ],
+      "type": "exit",
+      "description": "Returns to Absinthe Arcade's DDR maintenance recess."
+    }
+  },
+  "feature_details": {
+    "cmr_inside_door": {
+      "display_name": "Inside Maintenance Door",
+      "image_generation_description": "Interior face of the permanently unlocked Arcade maintenance door.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "cmr_ddr_toilet": {
+      "display_name": "DDR Toilet Fixture",
+      "image_generation_description": "Sticky dance-pad toilet seat in impossible clearance.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "cmr_crt_mirror": {
+      "display_name": "INSERT COIN Mirror",
+      "image_generation_description": "Repurposed CRT mirror looping an INSERT COIN prompt.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "cmr_graffiti_wall": {
+      "display_name": "Graffiti Wall",
+      "image_generation_description": "Layered bathroom-network and Rival Trio tags.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "cmr_claw_bucket": {
+      "display_name": "Claw Arm and Bucket Zone",
+      "image_generation_description": "Claw-arm chandelier, janitor bucket foot soak and cleaning clutter.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "cmr_exit": {
+      "display_name": "Arcade Return Door",
+      "image_generation_description": "Returns to Absinthe Arcade's DDR maintenance recess.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    }
+  },
+  "ambient_npcs": [
+    "speedrunner foot-soak callback",
+    "electrical hum"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "ambient_audio": {
+    "base_layers": [
+      "post-club customers ambience",
+      "alley rat ambience",
+      "steam silhouettes ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "lks_cart",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "lks_menu",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "lks_counter",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "lks_consume",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "lks_crawlspace",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "lks_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "lks_gutbuster_wrap_effect",
+      "description": "Strong recovery with grease status."
+    },
+    {
+      "effect_id": "lks_vampire_fries_effect",
+      "description": "Minor recovery and garlic aura."
+    },
+    {
+      "effect_id": "lks_euromeat_pocket_effect",
+      "description": "Portable recovery; mild risk."
+    },
+    {
+      "effect_id": "lks_megamix_box_effect",
+      "description": "Large recovery and likely food penalty."
+    },
+    {
+      "effect_id": "lks_sauce_shot_effect",
+      "description": "Small SP boost and spice status."
+    },
+    {
+      "effect_id": "lks_lambsomnia_effect",
+      "description": "Recovery plus drowsy state."
+    },
+    {
+      "effect_id": "lks_yogurt_reboot_effect",
+      "description": "Reduces spice/grease penalties."
+    },
+    {
+      "effect_id": "lks_belly_of_chadz_effect",
+      "description": "Qualifying Grease Kebab for shrine combinations."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open_or_window",
+      "changes": [
+        "activate documented services and cues"
+      ]
+    },
+    {
+      "state": "closed",
+      "changes": [
+        "deny entry or fold vendor state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street/circus response"
+    ],
+    "interior": [
+      "threshold read-through only"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "late_night_kebab_stand_fx",
+      "nodes": [
+        "lks_cart",
+        "lks_menu",
+        "lks_counter",
+        "lks_consume",
+        "lks_crawlspace",
+        "lks_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "fluorescent white",
+      "grease amber",
+      "chili red",
+      "alley cyan"
+    ],
+    "emission_mask": "late_night_kebab_stand_masks",
+    "readability": "interaction silhouettes remain clear"
+  },
+  "environmental_storytelling": [
+    "Rusty open-air rotisserie beneath crooked sign and zip-tied LEDs.",
+    "Eight-item menu and status-aware options.",
+    "Order point beside the burner phone.",
+    "Standing zone among steam, wrappers and gutter reflections.",
+    "Tent flap, NOT A TOILET sign and chili-sauce trail.",
+    "Returns toward the club and alley network."
+  ],
+  "accessibility": {
+    "variants": [
+      "Low-glare cart mode",
+      "Reduced steam/smoke",
+      "Text food-risk warnings",
+      "High-contrast crawlspace timer"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

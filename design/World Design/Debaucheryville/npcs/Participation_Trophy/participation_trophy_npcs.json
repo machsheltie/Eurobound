@@ -1,0 +1,66 @@
+{
+  "location_id": "debaucheryville_circus_participation_trophy_01",
+  "location_name": "The Participation Trophy",
+  "npcs": [
+    {
+      "npc_id": "pt_npc_yolanda",
+      "display_name": "Yolanda",
+      "role": "attendant and disappointment manager",
+      "node": "pt_counter",
+      "schedule": "circus hours",
+      "visual": "Faded booth uniform and perfect ticket-counting stare.",
+      "quest_bindings": [],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "participation_trophy_ambient_1",
+      "display_name": "recent losers",
+      "spawn_nodes": [
+        "pt_consolation",
+        "pt_floor_junk",
+        "pt_counter"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "participation_trophy_ambient_2",
+      "display_name": "circling children",
+      "spawn_nodes": [
+        "pt_consolation",
+        "pt_floor_junk",
+        "pt_counter"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "participation_trophy_ambient_3",
+      "display_name": "circus workers",
+      "spawn_nodes": [
+        "pt_consolation",
+        "pt_floor_junk",
+        "pt_counter"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "pt_npc_yolanda",
+      "node_id": "pt_counter",
+      "role": "attendant and disappointment manager"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient density during events",
+    "Do not add NPCs to empty shrine/restroom specs"
+  ]
+}

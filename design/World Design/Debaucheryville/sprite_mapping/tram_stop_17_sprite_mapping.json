@@ -1,0 +1,333 @@
+{
+  "location_id": "debaucheryville_transit_tram_stop_17_01",
+  
+  "sprite_sheets": {
+    "tram_shelter": {
+      "file": "tram_shelter.png",
+      "dimensions": {"width": 512, "height": 384},
+      "sections": {
+        "shelter_structure": {"x": 0, "y": 0, "width": 256, "height": 256},
+        "pole_left": {"x": 256, "y": 0, "width": 32, "height": 128},
+        "pole_right": {"x": 288, "y": 0, "width": 32, "height": 128},
+        "timetable_display": {"x": 320, "y": 0, "width": 64, "height": 96},
+        "schedule_1994": {"x": 320, "y": 96, "width": 48, "height": 64},
+        "jiris_notes": {"x": 368, "y": 96, "width": 48, "height": 64},
+        "route_17_sign": {"x": 384, "y": 0, "width": 64, "height": 48},
+        "route_map_faded": {"x": 384, "y": 48, "width": 64, "height": 64},
+        "shelter_roof_day": {"x": 0, "y": 256, "width": 256, "height": 128},
+        "shelter_roof_night": {"x": 256, "y": 256, "width": 256, "height": 128}
+      }
+    },
+    
+    "bench_states": {
+      "file": "bench_states.png",
+      "dimensions": {"width": 512, "height": 256},
+      "progressive_states": {
+        "bench_visit_1_2": {"x": 0, "y": 0, "width": 128, "height": 64},
+        "bench_visit_3_4": {"x": 128, "y": 0, "width": 128, "height": 64},
+        "bench_visit_5_6": {"x": 256, "y": 0, "width": 128, "height": 64},
+        "bench_visit_7_9": {"x": 384, "y": 0, "width": 128, "height": 64},
+        "bench_visit_10_12": {"x": 0, "y": 64, "width": 128, "height": 64},
+        "bench_visit_13_plus": {"x": 128, "y": 64, "width": 128, "height": 64}
+      },
+      "details": {
+        "plaque_closeup": {"x": 256, "y": 64, "width": 96, "height": 48},
+        "plaque_subtext": {"x": 352, "y": 64, "width": 96, "height": 32},
+        "pigeon_poop_stains": {"x": 0, "y": 128, "width": 64, "height": 32},
+        "coat_merging_detail": {"x": 64, "y": 128, "width": 64, "height": 32},
+        "offerings_pile": {"x": 128, "y": 128, "width": 96, "height": 64},
+        "childrens_drawings": {"x": 224, "y": 128, "width": 96, "height": 64}
+      }
+    },
+    
+    "jiri_states": {
+      "file": "jiri_states.png",
+      "dimensions": {"width": 512, "height": 512},
+      "progressive_appearance": {
+        "jiri_visit_1_2": {"x": 0, "y": 0, "width": 96, "height": 128},
+        "jiri_visit_3_4": {"x": 96, "y": 0, "width": 96, "height": 128},
+        "jiri_visit_5_6": {"x": 192, "y": 0, "width": 96, "height": 128},
+        "jiri_visit_7_9": {"x": 288, "y": 0, "width": 96, "height": 128},
+        "jiri_visit_10_12": {"x": 384, "y": 0, "width": 96, "height": 128},
+        "jiri_visit_13_plus": {"x": 0, "y": 128, "width": 96, "height": 128}
+      },
+      "actions": {
+        "looking_at_tracks": {"x": 96, "y": 128, "width": 96, "height": 128},
+        "checking_watch": {"x": 192, "y": 128, "width": 96, "height": 128},
+        "sighing": {"x": 288, "y": 128, "width": 96, "height": 128},
+        "looking_at_bros": {"x": 384, "y": 128, "width": 96, "height": 128},
+        "pointing_directions": {"x": 0, "y": 256, "width": 96, "height": 128},
+        "storytelling": {"x": 96, "y": 256, "width": 96, "height": 128},
+        "standing_hopeful": {"x": 192, "y": 256, "width": 96, "height": 128},
+        "sitting_disappointed": {"x": 288, "y": 256, "width": 96, "height": 128}
+      },
+      "post_credits": {
+        "clean_shaven_on_tram": {"x": 384, "y": 256, "width": 96, "height": 128},
+        "holding_milk": {"x": 0, "y": 384, "width": 96, "height": 128},
+        "reunion_embrace": {"x": 96, "y": 384, "width": 128, "height": 128}
+      }
+    },
+    
+    "jiri_expressions": {
+      "file": "jiri_expressions.png",
+      "dimensions": {"width": 256, "height": 256},
+      "mood_faces": {
+        "optimistic": {"x": 0, "y": 0, "width": 48, "height": 48},
+        "philosophical": {"x": 48, "y": 0, "width": 48, "height": 48},
+        "bitter": {"x": 96, "y": 0, "width": 48, "height": 48},
+        "conspiracy": {"x": 144, "y": 0, "width": 48, "height": 48},
+        "existential": {"x": 192, "y": 0, "width": 48, "height": 48},
+        "hopeful": {"x": 0, "y": 48, "width": 48, "height": 48},
+        "disappointed": {"x": 48, "y": 48, "width": 48, "height": 48},
+        "grateful": {"x": 96, "y": 48, "width": 48, "height": 48},
+        "storytelling": {"x": 144, "y": 48, "width": 48, "height": 48},
+        "reunion_joy": {"x": 192, "y": 48, "width": 48, "height": 48}
+      },
+      "dialogue_portraits": {
+        "portrait_optimistic": {"x": 0, "y": 96, "width": 64, "height": 96},
+        "portrait_philosophical": {"x": 64, "y": 96, "width": 64, "height": 96},
+        "portrait_bitter": {"x": 128, "y": 96, "width": 64, "height": 96},
+        "portrait_existential": {"x": 192, "y": 96, "width": 64, "height": 96}
+      }
+    },
+    
+    "pigeons": {
+      "file": "pigeons.png",
+      "dimensions": {"width": 256, "height": 192},
+      "individual": {
+        "idle_1": {"x": 0, "y": 0, "width": 32, "height": 32},
+        "idle_2": {"x": 32, "y": 0, "width": 32, "height": 32},
+        "idle_3": {"x": 64, "y": 0, "width": 32, "height": 32},
+        "flying_1": {"x": 96, "y": 0, "width": 48, "height": 32},
+        "flying_2": {"x": 144, "y": 0, "width": 48, "height": 32},
+        "on_shoulder": {"x": 0, "y": 32, "width": 32, "height": 32},
+        "nesting": {"x": 32, "y": 32, "width": 48, "height": 48},
+        "protective": {"x": 80, "y": 32, "width": 32, "height": 32}
+      },
+      "groups": {
+        "two_on_bench": {"x": 0, "y": 80, "width": 64, "height": 32},
+        "four_on_bench": {"x": 64, "y": 80, "width": 96, "height": 32},
+        "protective_perimeter": {"x": 0, "y": 112, "width": 128, "height": 48},
+        "nest_in_hat": {"x": 128, "y": 112, "width": 64, "height": 48}
+      },
+      "particles": {
+        "feather_1": {"x": 192, "y": 0, "width": 16, "height": 16},
+        "feather_2": {"x": 208, "y": 0, "width": 16, "height": 16},
+        "feather_3": {"x": 224, "y": 0, "width": 16, "height": 16},
+        "coo_indicator": {"x": 192, "y": 16, "width": 32, "height": 16}
+      }
+    },
+    
+    "passing_trams": {
+      "file": "passing_trams.png",
+      "dimensions": {"width": 512, "height": 256},
+      "tram_9": {
+        "full": {"x": 0, "y": 0, "width": 256, "height": 96},
+        "front": {"x": 0, "y": 96, "width": 96, "height": 64},
+        "passing_blur": {"x": 96, "y": 96, "width": 160, "height": 64}
+      },
+      "tram_22": {
+        "full": {"x": 256, "y": 0, "width": 256, "height": 96},
+        "front": {"x": 256, "y": 96, "width": 96, "height": 64},
+        "approaching": {"x": 352, "y": 96, "width": 96, "height": 64}
+      },
+      "tram_17_heritage": {
+        "full": {"x": 0, "y": 160, "width": 256, "height": 96},
+        "interior_with_jiri": {"x": 256, "y": 160, "width": 192, "height": 96},
+        "heritage_sign": {"x": 448, "y": 160, "width": 64, "height": 48}
+      },
+      "effects": {
+        "track_sparks": {"x": 416, "y": 96, "width": 48, "height": 32},
+        "dust_cloud": {"x": 464, "y": 96, "width": 48, "height": 32}
+      }
+    },
+    
+    "shrine_elements": {
+      "file": "shrine_elements.png",
+      "dimensions": {"width": 256, "height": 256},
+      "candles": {
+        "lit_tall": {"x": 0, "y": 0, "width": 16, "height": 32},
+        "lit_short": {"x": 16, "y": 0, "width": 16, "height": 32},
+        "dripping": {"x": 32, "y": 0, "width": 16, "height": 32},
+        "melted": {"x": 48, "y": 0, "width": 16, "height": 24},
+        "flame_frame_1": {"x": 64, "y": 0, "width": 8, "height": 16},
+        "flame_frame_2": {"x": 72, "y": 0, "width": 8, "height": 16},
+        "flame_frame_3": {"x": 80, "y": 0, "width": 8, "height": 16}
+      },
+      "offerings": {
+        "bread_loaf": {"x": 0, "y": 32, "width": 24, "height": 16},
+        "apple": {"x": 24, "y": 32, "width": 16, "height": 16},
+        "orange": {"x": 40, "y": 32, "width": 16, "height": 16},
+        "flower_bouquet": {"x": 56, "y": 32, "width": 32, "height": 32},
+        "handwritten_note": {"x": 88, "y": 32, "width": 24, "height": 16},
+        "photo_frame": {"x": 112, "y": 32, "width": 24, "height": 32},
+        "child_drawing": {"x": 0, "y": 64, "width": 48, "height": 32}
+      },
+      "shrine_stages": {
+        "stage_1": {"x": 0, "y": 96, "width": 64, "height": 48},
+        "stage_2": {"x": 64, "y": 96, "width": 64, "height": 48},
+        "stage_3": {"x": 128, "y": 96, "width": 64, "height": 48},
+        "stage_4": {"x": 192, "y": 96, "width": 64, "height": 48}
+      },
+      "plaque": {
+        "bronze_plaque": {"x": 0, "y": 144, "width": 96, "height": 48},
+        "plaque_with_flowers": {"x": 96, "y": 144, "width": 48, "height": 48}
+      }
+    },
+    
+    "background_city": {
+      "file": "background_city.png",
+      "dimensions": {"width": 512, "height": 256},
+      "layers": {
+        "far_buildings_day": {"x": 0, "y": 0, "width": 256, "height": 128},
+        "far_buildings_night": {"x": 256, "y": 0, "width": 256, "height": 128},
+        "mid_buildings_day": {"x": 0, "y": 128, "width": 256, "height": 128},
+        "mid_buildings_night": {"x": 256, "y": 128, "width": 256, "height": 128}
+      },
+      "ground": {
+        "tram_tracks": {"x": 0, "y": 240, "width": 256, "height": 16},
+        "cobblestone": {"x": 256, "y": 240, "width": 128, "height": 16},
+        "streetlight": {"x": 384, "y": 192, "width": 32, "height": 64},
+        "streetlight_glow": {"x": 416, "y": 192, "width": 48, "height": 48}
+      }
+    },
+    
+    "ambient_pedestrians": {
+      "file": "ambient_pedestrians.png",
+      "dimensions": {"width": 256, "height": 192},
+      "types": {
+        "local_walking": {"x": 0, "y": 0, "width": 48, "height": 64},
+        "local_nodding": {"x": 48, "y": 0, "width": 48, "height": 64},
+        "tourist_photo": {"x": 96, "y": 0, "width": 48, "height": 64},
+        "shrine_tender": {"x": 144, "y": 0, "width": 48, "height": 64},
+        "tour_bus_passenger": {"x": 192, "y": 0, "width": 48, "height": 64}
+      },
+      "bros": {
+        "bros_standing": {"x": 0, "y": 64, "width": 96, "height": 64},
+        "bros_sitting": {"x": 96, "y": 64, "width": 96, "height": 64},
+        "bros_confused": {"x": 192, "y": 64, "width": 48, "height": 64}
+      },
+      "marie": {
+        "door_open": {"x": 0, "y": 128, "width": 48, "height": 64},
+        "laughing_crying": {"x": 48, "y": 128, "width": 48, "height": 64},
+        "hugging": {"x": 96, "y": 128, "width": 64, "height": 64}
+      }
+    },
+    
+    "effects": {
+      "file": "tram_stop_effects.png",
+      "dimensions": {"width": 128, "height": 128},
+      "particles": {
+        "feather_drift_1": {"x": 0, "y": 0, "width": 16, "height": 16},
+        "feather_drift_2": {"x": 16, "y": 0, "width": 16, "height": 16},
+        "candle_spark": {"x": 32, "y": 0, "width": 8, "height": 8},
+        "tram_dust_1": {"x": 40, "y": 0, "width": 24, "height": 16},
+        "tram_dust_2": {"x": 64, "y": 0, "width": 24, "height": 16},
+        "tear_drop": {"x": 88, "y": 0, "width": 8, "height": 8}
+      },
+      "lighting": {
+        "streetlight_pool": {"x": 0, "y": 32, "width": 64, "height": 32},
+        "candle_glow": {"x": 64, "y": 32, "width": 32, "height": 32},
+        "dawn_light": {"x": 0, "y": 64, "width": 64, "height": 32},
+        "hope_glow": {"x": 64, "y": 64, "width": 32, "height": 32}
+      }
+    },
+    
+    "ui_elements": {
+      "file": "tram_stop_ui.png",
+      "dimensions": {"width": 192, "height": 128},
+      "dialogue": {
+        "box_frame": {"x": 0, "y": 0, "width": 160, "height": 48}
+      },
+      "mood_icons": {
+        "optimistic": {"x": 0, "y": 48, "width": 24, "height": 24},
+        "philosophical": {"x": 24, "y": 48, "width": 24, "height": 24},
+        "bitter": {"x": 48, "y": 48, "width": 24, "height": 24},
+        "conspiracy": {"x": 72, "y": 48, "width": 24, "height": 24},
+        "existential": {"x": 96, "y": 48, "width": 24, "height": 24}
+      },
+      "blessing": {
+        "icon": {"x": 0, "y": 72, "width": 32, "height": 32},
+        "icon_active": {"x": 32, "y": 72, "width": 32, "height": 32},
+        "tooltip": {"x": 64, "y": 72, "width": 96, "height": 32}
+      },
+      "visit_counter": {
+        "tally_frame": {"x": 0, "y": 104, "width": 64, "height": 24},
+        "night_vigil_available": {"x": 64, "y": 104, "width": 96, "height": 24}
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "jiri_idle_cycle": {
+      "frames": ["looking_at_tracks", "looking_at_tracks", "checking_watch", "sighing", "looking_at_tracks"],
+      "timing": [4000, 2000, 1000, 1000, 2000],
+      "total_duration_ms": 10000,
+      "loop": true
+    },
+    "pigeon_ambient": {
+      "frames": ["idle_1", "idle_1", "idle_2", "idle_3", "idle_1"],
+      "timing": [1000, 500, 500, 500, 500],
+      "total_duration_ms": 3000,
+      "loop": true,
+      "randomize_offset": true
+    },
+    "candle_flicker": {
+      "frames": ["flame_frame_1", "flame_frame_2", "flame_frame_3", "flame_frame_2"],
+      "timing": [150, 100, 150, 100],
+      "total_duration_ms": 500,
+      "loop": true
+    },
+    "passing_tram": {
+      "duration_ms": 3000,
+      "stages": [
+        {"stage": "approach", "duration": 1000, "audio": "tram_distant"},
+        {"stage": "passing", "duration": 1500, "audio": "tram_rattling"},
+        {"stage": "fade", "duration": 500, "audio": "tram_fading"}
+      ]
+    },
+    "hope_disappointment": {
+      "duration_ms": 4000,
+      "stages": [
+        {"stage": "stands", "duration": 1000, "sprite": "standing_hopeful"},
+        {"stage": "hope", "duration": 1000, "expression": "hopeful"},
+        {"stage": "wrong_tram", "duration": 500, "visual": "tram_22_passes"},
+        {"stage": "sits", "duration": 1500, "sprite": "sitting_disappointed"}
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "tram_stop_environment",
+        "files": ["tram_shelter.png", "bench_states.png", "background_city.png", "shrine_elements.png"],
+        "max_size": "1024x1024",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "tram_stop_characters",
+        "files": ["jiri_states.png", "jiri_expressions.png", "ambient_pedestrians.png", "pigeons.png"],
+        "max_size": "512x512",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "tram_stop_effects",
+        "files": ["tram_stop_effects.png", "tram_stop_ui.png", "passing_trams.png"],
+        "max_size": "512x512",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "all_animations_full_pigeons_all_particles",
+      "medium": "reduced_pigeons_4_simplified_particles",
+      "low": "static_pigeons_2_minimal_particles"
+    },
+    "progressive_loading": {
+      "load_visit_1_2_assets": "always",
+      "load_visit_5_plus_assets": "on_visit_4",
+      "load_visit_10_plus_assets": "on_visit_9",
+      "load_post_credits_assets": "on_night_vigil_completion"
+    }
+  }
+}

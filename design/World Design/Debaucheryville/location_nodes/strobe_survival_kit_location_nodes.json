@@ -1,0 +1,197 @@
+{
+  "location_id": "debaucheryville_vendor_strobe_survival_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_vendor_strobe_survival_01",
+      "name": "The Strobe Survival Kit",
+      "tag_id": "strobe_survival_kit",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Pegboard military-rave stall near club approaches.",
+        "entry_condition": "Vendor operating hours"
+      },
+      "interior": {
+        "theme": "Military-surplus efficiency applied to rave survival.",
+        "features": [
+          "shop: ssk_audio_defense",
+          "shop: ssk_visual_gear",
+          "shop: ssk_support_shelf",
+          "interaction: ssk_decibel_display",
+          "service: ssk_operator",
+          "exit: ssk_exit"
+        ]
+      },
+      "functions": [
+        "Browse Audio Defense",
+        "Browse Visual Gear",
+        "Read Decibel Display",
+        "Request Tactical Briefing",
+        "Purchase Equipment"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "ssk_stall",
+      "to": "ssk_audio_defense",
+      "bidirectional": true
+    },
+    {
+      "from": "ssk_audio_defense",
+      "to": "ssk_visual_gear",
+      "bidirectional": true
+    },
+    {
+      "from": "ssk_visual_gear",
+      "to": "ssk_support_shelf",
+      "bidirectional": true
+    },
+    {
+      "from": "ssk_support_shelf",
+      "to": "ssk_decibel_display",
+      "bidirectional": true
+    },
+    {
+      "from": "ssk_decibel_display",
+      "to": "ssk_operator",
+      "bidirectional": true
+    },
+    {
+      "from": "ssk_operator",
+      "to": "ssk_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "ssk_stall": {
+      "connects_to": [
+        "ssk_audio_defense"
+      ],
+      "type": "exterior",
+      "description": "Pegboard military-rave stall near club approaches."
+    },
+    "ssk_audio_defense": {
+      "connects_to": [
+        "ssk_stall",
+        "ssk_visual_gear"
+      ],
+      "type": "shop",
+      "description": "Earplug grades and hearing warning display."
+    },
+    "ssk_visual_gear": {
+      "connects_to": [
+        "ssk_audio_defense",
+        "ssk_support_shelf"
+      ],
+      "type": "shop",
+      "description": "Glow sticks, LED glasses and visibility gear."
+    },
+    "ssk_support_shelf": {
+      "connects_to": [
+        "ssk_visual_gear",
+        "ssk_decibel_display"
+      ],
+      "type": "shop",
+      "description": "Documented club-support consumables."
+    },
+    "ssk_decibel_display": {
+      "connects_to": [
+        "ssk_support_shelf",
+        "ssk_operator"
+      ],
+      "type": "interaction",
+      "description": "Live nearby-club hazard readout."
+    },
+    "ssk_operator": {
+      "connects_to": [
+        "ssk_decibel_display",
+        "ssk_exit"
+      ],
+      "type": "service",
+      "description": "Checkout and tactical briefing point."
+    },
+    "ssk_exit": {
+      "connects_to": [
+        "ssk_operator"
+      ],
+      "type": "exit",
+      "description": "Returns to the neon street."
+    }
+  },
+  "feature_details": {
+    "ssk_stall": {
+      "display_name": "Fold-Out Stall",
+      "image_generation_description": "Pegboard military-rave stall near club approaches.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ssk_audio_defense": {
+      "display_name": "Audio Defense",
+      "image_generation_description": "Earplug grades and hearing warning display.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ssk_visual_gear": {
+      "display_name": "Visual Enhancement",
+      "image_generation_description": "Glow sticks, LED glasses and visibility gear.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ssk_support_shelf": {
+      "display_name": "Chemical Support",
+      "image_generation_description": "Documented club-support consumables.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ssk_decibel_display": {
+      "display_name": "Decibel Warning Display",
+      "image_generation_description": "Live nearby-club hazard readout.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ssk_operator": {
+      "display_name": "Miroslav Counter",
+      "image_generation_description": "Checkout and tactical briefing point.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    },
+    "ssk_exit": {
+      "display_name": "Quarter Exit",
+      "image_generation_description": "Returns to the neon street.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable."
+    }
+  },
+  "ambient_npcs": [
+    "pre-club shoppers",
+    "post-club casualties"
+  ]
+}

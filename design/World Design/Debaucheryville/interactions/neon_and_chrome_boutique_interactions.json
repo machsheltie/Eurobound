@@ -1,0 +1,167 @@
+{
+  "location_id": "debaucheryville_shop_neon_chrome_01",
+  "events": [
+    {
+      "event_id": "ncb_browse",
+      "display_name": "Browse Standard Stock",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "ncb_eyewear"
+      },
+      "requirements": [],
+      "results": [
+        "open_standard_stock"
+      ],
+      "quest_bindings": [
+        "vip_wristbands"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "ncb_premium",
+      "display_name": "Browse Premium Stock",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "ncb_premium"
+      },
+      "requirements": [
+        "vip_wristband_quest_complete",
+        "velvet_curtain_club_access_was_always_free"
+      ],
+      "results": [
+        "neon_chrome_premium_unlocked"
+      ],
+      "quest_bindings": [
+        "vip_wristbands"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "ncb_fit",
+      "display_name": "Try On Equipment",
+      "trigger": {
+        "verb": "equip_preview",
+        "node_id": "ncb_fitting"
+      },
+      "requirements": [],
+      "results": [
+        "preview_equipment_overlay"
+      ],
+      "quest_bindings": [
+        "vip_wristbands"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "ncb_sim",
+      "display_name": "Run Club Simulation",
+      "trigger": {
+        "verb": "simulate",
+        "node_id": "ncb_simulation"
+      },
+      "requirements": [],
+      "results": [
+        "club_simulation_complete"
+      ],
+      "quest_bindings": [
+        "vip_wristbands"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "ncb_vip",
+      "display_name": "VIP Potential Assessment",
+      "trigger": {
+        "verb": "talk",
+        "node_id": "ncb_counter"
+      },
+      "requirements": [],
+      "results": [
+        "vip_potential_assessed"
+      ],
+      "quest_bindings": [
+        "vip_wristbands"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "ncb_browse",
+      "node_id": "ncb_eyewear",
+      "verb": "shop",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ncb_premium",
+      "node_id": "ncb_premium",
+      "verb": "shop",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ncb_fit",
+      "node_id": "ncb_fitting",
+      "verb": "equip_preview",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ncb_sim",
+      "node_id": "ncb_simulation",
+      "verb": "simulate",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "ncb_vip",
+      "node_id": "ncb_counter",
+      "verb": "talk",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "neon_chrome_open",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "neon_chrome_premium_unlocked",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "vip_potential_assessed",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "club_simulation_complete",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Equip Your Night",
+    "A glass-and-chrome nightclub simulation that sells the idea of entry before the club does."
+  ]
+}

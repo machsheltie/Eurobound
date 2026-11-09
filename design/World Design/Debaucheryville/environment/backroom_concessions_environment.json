@@ -1,0 +1,118 @@
+{
+  "location_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+  "ambient_audio": {
+    "base_layers": [
+      "hacker diners ambience",
+      "office-chair lurkers ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "bc_inside_door",
+        "cue": "transition_loop"
+      },
+      {
+        "node_id": "bc_counter",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "bc_vending_pair",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "bc_seating",
+        "cue": "social_loop"
+      },
+      {
+        "node_id": "bc_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "bc_crypto_doner_effect",
+      "source_item": "bc_crypto_doner",
+      "description": "Recovery with small DigiDysentery risk."
+    },
+    {
+      "effect_id": "bc_thermal_paste_sundae_effect",
+      "source_item": "bc_thermal_paste_sundae",
+      "description": "Temporary heat resistance; accuracy penalty."
+    },
+    {
+      "effect_id": "bc_ram_chips_dip_effect",
+      "source_item": "bc_ram_chips_dip",
+      "description": "Short SP boost followed by lag."
+    },
+    {
+      "effect_id": "bc_protocol_pocket_effect",
+      "source_item": "bc_protocol_pocket",
+      "description": "Moderate recovery and backroom respect."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "services and named NPCs active"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "use documented denial/off-peak state"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet street response",
+      "seasonal ambient overlay"
+    ],
+    "interior": [
+      "clean plate at threshold"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "backroom_concessions_ambient_fx",
+      "nodes": [
+        "bc_inside_door",
+        "bc_counter",
+        "bc_vending_pair",
+        "bc_seating"
+      ],
+      "fallback": "static or disabled clean plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "sick fluorescent",
+      "server blue",
+      "thermal-paste silver",
+      "error red"
+    ],
+    "key_strategy": "landmarks remain brighter than traversal clutter",
+    "emission_masks": [
+      "backroom_concessions_masks"
+    ]
+  },
+  "environmental_storytelling": [
+    "Interior face of the concealed Cyberspace door and 404 sign glow.",
+    "Cramped counter and peeling Hot Pockets + Protocols menu.",
+    "One machine holds thermal paste; the other flickers with suspicious knowledge.",
+    "Mismatched office chairs beneath pop-up-filled CRTs.",
+    "Returns to Cyberspace Kavarna."
+  ],
+  "accessibility": {
+    "variants": [
+      "Reduced fluorescent flicker",
+      "Text status warnings before purchase",
+      "Smoke-free plate",
+      "High-contrast menu"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast_interactions": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "location_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+  "item_category": "24-Hour Internet Den / ICQ Quest Hub",
+  "items": [
+    {
+      "item_id": "ck_terminal_hour",
+      "display_name": "Terminal Rental - One Hour",
+      "item_type": "service",
+      "price": 3,
+      "effect": "Enables one hour of terminal interactions.",
+      "acquisition": "Rental desk."
+    },
+    {
+      "item_id": "ck_terminal_all_night",
+      "display_name": "Terminal Rental - All Night",
+      "item_type": "service",
+      "price": 15,
+      "effect": "Enables terminals until 06:00.",
+      "acquisition": "Rental desk."
+    },
+    {
+      "item_id": "ck_burner_login",
+      "display_name": "Disposable ICQ Login",
+      "item_type": "service",
+      "price": "variable",
+      "effect": "Quest-linked anonymous session.",
+      "acquisition": "Dmitri service menu."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "ICQ quest data",
+      "ownership": "external"
+    },
+    {
+      "reference": "Backroom Concessions food inventory",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "cyberspace_backroom_concessions_entrance_discovered",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies another currency",
+    "price_confirmation_required": true,
+    "time_modifiers": "Apply only documented time-based changes"
+  }
+}

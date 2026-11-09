@@ -1,0 +1,66 @@
+{
+  "location_id": "debaucheryville_kebab_alley_grease_trap_shrine_01",
+  "item_category": "Secret Restroom / Buff and Lore Shrine",
+  "items": [
+    {
+      "item_id": "gts_cursed_coin",
+      "display_name": "Cursed Sink Coin",
+      "item_type": "quest_curio",
+      "price": 0,
+      "effect": "Lore curio; optional pickup.",
+      "acquisition": "Sink."
+    },
+    {
+      "item_id": "gts_half_antacid",
+      "display_name": "Half-Chewed Antacid",
+      "item_type": "examinable_prop",
+      "price": 0,
+      "effect": "Not safely consumable; comedy examination.",
+      "acquisition": "Sink."
+    },
+    {
+      "item_id": "gts_warm_receipt",
+      "display_name": "Warm 2004 Kebab Receipt",
+      "item_type": "lore_item",
+      "price": 0,
+      "effect": "Documents impossible freshness.",
+      "acquisition": "Fixture."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "qualifying Grease Kebab item",
+      "ownership": "external"
+    },
+    {
+      "reference": "Absinthe status",
+      "ownership": "external"
+    },
+    {
+      "reference": "Hungover status",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "stomach_of_steel_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "greasy_prophet_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "grease_shrine_fisto_lore_read",
+      "type": "state"
+    },
+    {
+      "reward_id": "grease_shrine_icq_combo_sent",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Kebab Coins or source-defined currency",
+    "price_confirmation_required": true
+  }
+}

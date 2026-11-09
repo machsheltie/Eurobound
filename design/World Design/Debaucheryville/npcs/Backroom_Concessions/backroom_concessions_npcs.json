@@ -1,0 +1,59 @@
+{
+  "location_id": "debaucheryville_internet_cafe_backroom_concessions_01",
+  "location_name": "Backroom Concessions",
+  "npcs": [
+    {
+      "npc_id": "bc_npc_donny_exe",
+      "display_name": "Donny.exe",
+      "role": "ex-hacker meat vendor and referral broker",
+      "node": "bc_counter",
+      "schedule": "always after discovery",
+      "visual": "Apron over obsolete hacker merch, grease-stained keyboard holster.",
+      "quest_bindings": [
+        "SnackHackRevenge",
+        "icq darkweb referrals"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "backroom_concessions_ambient_1",
+      "display_name": "hacker diners",
+      "spawn_nodes": [
+        "bc_counter",
+        "bc_vending_pair",
+        "bc_seating"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "backroom_concessions_ambient_2",
+      "display_name": "office-chair lurkers",
+      "spawn_nodes": [
+        "bc_counter",
+        "bc_vending_pair",
+        "bc_seating"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "bc_npc_donny_exe",
+      "node_id": "bc_counter",
+      "role": "ex-hacker meat vendor and referral broker"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Do not overlap named NPC silhouettes",
+    "Reduce ambient count during quest scenes"
+  ]
+}

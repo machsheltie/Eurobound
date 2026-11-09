@@ -1,0 +1,104 @@
+{
+  "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+  "location_name": "The Tap Dat Vault",
+  "npcs": [
+    {
+      "npc_id": "tdv_npc_glitch_bouncer",
+      "display_name": "Glitching Bouncer",
+      "role": "arrival and service flavor",
+      "node": "tdv_vault",
+      "schedule": "midnight window",
+      "visual": "Chrome silhouette and scan beam; no opener gate dialogue.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    },
+    {
+      "npc_id": "tdv_npc_adbot",
+      "display_name": "Glitched Brew Ad Bot",
+      "role": "mini-mob",
+      "node": "tdv_adbot",
+      "schedule": "until cleared",
+      "visual": "Holographic spam panels with attack core.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    },
+    {
+      "npc_id": "tdv_npc_brewmistress",
+      "display_name": "Strobe Brewmistress",
+      "role": "boss",
+      "node": "tdv_brewmistress",
+      "schedule": "until defeated",
+      "visual": "Cyan/pink silhouette with safe cue markers.",
+      "quest_bindings": [
+        "brewerytourdebaucheryville"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service_or_combat"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "tap_dat_vault_ambient_1",
+      "display_name": "vapor club patrons",
+      "spawn_nodes": [
+        "tdv_brewmistress",
+        "tdv_service",
+        "tdv_selfie"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "tap_dat_vault_ambient_2",
+      "display_name": "livestream drones",
+      "spawn_nodes": [
+        "tdv_brewmistress",
+        "tdv_service",
+        "tdv_selfie"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "tdv_npc_glitch_bouncer",
+      "node_id": "tdv_vault",
+      "role": "arrival and service flavor"
+    },
+    {
+      "npc_id": "tdv_npc_adbot",
+      "node_id": "tdv_adbot",
+      "role": "mini-mob"
+    },
+    {
+      "npc_id": "tdv_npc_brewmistress",
+      "node_id": "tdv_brewmistress",
+      "role": "boss"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep puzzle lanes and exits clear",
+    "Boss cores readable in accessibility mode",
+    "No deprecated opener-gate dialogue"
+  ]
+}

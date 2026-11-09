@@ -1,0 +1,79 @@
+{
+  "location_id": "debaucheryville_shop_neon_chrome_01",
+  "item_category": "Club Gear Boutique / Status Merchant",
+  "items": [
+    {
+      "item_id": "ncb_led_glasses",
+      "display_name": "Programmable LED Glasses",
+      "item_type": "equipment",
+      "price": 35,
+      "effect": "Cool Factor and club-light interaction.",
+      "acquisition": "Eyewear."
+    },
+    {
+      "item_id": "ncb_strobe_shades",
+      "display_name": "Designer Strobe Shades",
+      "item_type": "equipment",
+      "price": 60,
+      "effect": "Strong visual-hazard resistance and status.",
+      "acquisition": "Eyewear."
+    },
+    {
+      "item_id": "ncb_chrome_shoes",
+      "display_name": "Chrome Club Shoes",
+      "item_type": "equipment",
+      "price": 75,
+      "effect": "Dance and Cool Factor bonus.",
+      "acquisition": "Footwear."
+    },
+    {
+      "item_id": "ncb_premium_wrist_cuff",
+      "display_name": "Premium Wrist Cuff",
+      "item_type": "equipment",
+      "price": 120,
+      "effect": "Status reactions only; never bypasses club gate.",
+      "acquisition": "Premium Stock."
+    },
+    {
+      "item_id": "ncb_glow_harness",
+      "display_name": "Glow Harness",
+      "item_type": "equipment",
+      "price": 95,
+      "effect": "Visibility and crowd-presence bonus.",
+      "acquisition": "Premium Stock."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "vip_wristband_quest_complete",
+      "ownership": "external"
+    },
+    {
+      "reference": "velvet_curtain_club_access_was_always_free",
+      "ownership": "external"
+    },
+    {
+      "reference": "global equipment slots",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "neon_chrome_premium_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "vip_potential_assessed",
+      "type": "state"
+    },
+    {
+      "reward_id": "club_simulation_complete",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies otherwise",
+    "price_confirmation_required": true,
+    "time_modifiers": "documented only"
+  }
+}

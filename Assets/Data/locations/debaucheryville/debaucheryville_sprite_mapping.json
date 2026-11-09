@@ -1,0 +1,4381 @@
+[
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "sprite_sheets": {
+    "main_tileset": {
+      "file": "absinthe_arcade_tileset.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "tile_size": {"width": 32, "height": 32},
+      "sections": {
+        "floor_tiles": {"x": 0, "y": 0, "width": 256, "height": 256},
+        "wall_tiles": {"x": 256, "y": 0, "width": 256, "height": 256},
+        "ceiling_tiles": {"x": 512, "y": 0, "width": 256, "height": 256},
+        "mirror_tiles": {"x": 768, "y": 0, "width": 256, "height": 256}
+      },
+      "special_tiles": {
+        "light_up_floor": {"x": 0, "y": 256, "width": 128, "height": 128},
+        "cracked_walls": {"x": 128, "y": 256, "width": 128, "height": 128},
+        "green_glow_overlay": {"x": 256, "y": 256, "width": 128, "height": 128}
+      }
+    },
+    "arcade_machines": {
+      "file": "arcade_machines_spritesheet.png", 
+      "dimensions": {"width": 2048, "height": 1024},
+      "machine_size": {"width": 64, "height": 96},
+      "machines": {
+        "frogger_existential": {
+          "idle": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "active": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "broken": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "screen_glow": {"x": 192, "y": 0, "width": 64, "height": 96}
+        },
+        "street_fighter_identity": {
+          "idle": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "active": {"x": 320, "y": 0, "width": 64, "height": 96},
+          "identity_crisis": {"x": 384, "y": 0, "width": 64, "height": 96},
+          "screen_glitch": {"x": 448, "y": 0, "width": 64, "height": 96}
+        },
+        "kebab_kombat": {
+          "idle": {"x": 512, "y": 0, "width": 64, "height": 96},
+          "regret_mode": {"x": 576, "y": 0, "width": 64, "height": 96},
+          "broken": {"x": 640, "y": 0, "width": 64, "height": 96},
+          "regret_button_glow": {"x": 704, "y": 0, "width": 64, "height": 96}
+        },
+        "claw_machine": {
+          "idle": {"x": 768, "y": 0, "width": 96, "height": 128},
+          "operating": {"x": 864, "y": 0, "width": 96, "height": 128},
+          "rigged_failure": {"x": 960, "y": 0, "width": 96, "height": 128},
+          "nft_dispense": {"x": 1056, "y": 0, "width": 96, "height": 128}
+        },
+        "broken_ddr": {
+          "idle": {"x": 0, "y": 128, "width": 128, "height": 96},
+          "token_insert": {"x": 128, "y": 128, "width": 128, "height": 96},
+          "unlock_sequence": {"x": 256, "y": 128, "width": 128, "height": 96}
+        },
+        "cracked_time_crisis": {
+          "hidden_entrance": {"x": 384, "y": 128, "width": 96, "height": 96},
+          "entrance_revealed": {"x": 480, "y": 128, "width": 96, "height": 96},
+          "passage_open": {"x": 576, "y": 128, "width": 96, "height": 96}
+        }
+      }
+    },
+    "environmental_elements": {
+      "file": "environmental_effects.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "elements": {
+        "absinthe_bottle_bar": {
+          "base": {"x": 0, "y": 0, "width": 192, "height": 96},
+          "glow_animation": [
+            {"x": 192, "y": 0, "width": 192, "height": 96, "frame": 1},
+            {"x": 384, "y": 0, "width": 192, "height": 96, "frame": 2},
+            {"x": 576, "y": 0, "width": 192, "height": 96, "frame": 3},
+            {"x": 768, "y": 0, "width": 192, "height": 96, "frame": 4}
+          ],
+          "animation_timing": {"fps": 8, "loop": true}
+        },
+        "mismatched_seating": {
+          "highchair": {"x": 0, "y": 96, "width": 32, "height": 48},
+          "beanbag": {"x": 32, "y": 96, "width": 32, "height": 48},
+          "bidet": {"x": 64, "y": 96, "width": 32, "height": 48}
+        },
+        "token_exchange_machine": {
+          "idle": {"x": 96, "y": 96, "width": 64, "height": 96},
+          "dispensing": {"x": 160, "y": 96, "width": 64, "height": 96},
+          "out_of_order": {"x": 224, "y": 96, "width": 64, "height": 96}
+        }
+      }
+    },
+    "green_fairy_mural": {
+      "file": "green_fairy_mural_parallax.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "type": "parallax_background",
+      "layers": {
+        "background_circuits": {"x": 0, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.1},
+        "fairy_silhouette": {"x": 256, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.3},
+        "melting_effect": {"x": 512, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.5},
+        "circuit_overlay": {"x": 768, "y": 0, "width": 256, "height": 512, "scroll_speed": 0.7}
+      },
+      "animation_effects": {
+        "melting_animation": {
+          "frames": 8,
+          "fps": 6,
+          "loop": true
+        },
+        "circuit_pulse": {
+          "frames": 4,
+          "fps": 4,
+          "loop": true
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "floor_tile_random_light": {
+      "sprite_source": "main_tileset",
+      "base_tile": {"x": 0, "y": 256, "width": 32, "height": 32},
+      "glow_states": [
+        {"x": 32, "y": 256, "width": 32, "height": 32, "intensity": 0.3},
+        {"x": 64, "y": 256, "width": 32, "height": 32, "intensity": 0.7},
+        {"x": 96, "y": 256, "width": 32, "height": 32, "intensity": 1.0}
+      ],
+      "timing": {
+        "random_activation": "0.5_to_3_second_intervals",
+        "glow_duration": "1.5_seconds",
+        "fade_duration": "0.5_seconds"
+      }
+    },
+    "arcade_cabinet_breathing_mist": {
+      "particle_sprites": {"x": 0, "y": 384, "width": 128, "height": 128},
+      "emission_points": "arcade_machine_tops",
+      "animation_frames": 6,
+      "particle_lifetime": "3.5_seconds",
+      "emission_rate": "every_0.8_seconds"
+    },
+    "mirror_reflection_lag": {
+      "effect_type": "shader_based",
+      "delay_timing": "0.2_seconds",
+      "distortion_overlay": {"x": 128, "y": 384, "width": 64, "height": 64},
+      "trigger": "player_movement_near_mirrors"
+    }
+  },
+  
+  "lighting_effects": {
+    "blacklight_wash": {
+      "color": "#39FF14",
+      "intensity": 0.8,
+      "coverage": "entire_location",
+      "uv_reactive_sprites": [
+        "green_fairy_mural",
+        "arcade_machine_screens", 
+        "absinthe_bottle_bar_glow"
+      ]
+    },
+    "stuttering_neon": {
+      "affected_sprites": [
+        "signage_elements",
+        "arcade_cabinet_trim",
+        "bar_accent_lighting"
+      ],
+      "flicker_pattern": "random_0.5_to_2_second_intervals",
+      "color": "#BF00FF",
+      "intensity_variation": "0.3_to_1.0"
+    },
+    "green_spectral_glow": {
+      "source_sprites": [
+        "absinthe_bottle_bar",
+        "cracked_arcade_cabinets",
+        "hidden_area_entrances"
+      ],
+      "glow_radius": "48_pixels",
+      "color": "#39FF14",
+      "pulse_timing": "2_second_intervals"
+    }
+  },
+  
+  "particle_effect_sprites": {
+    "green_mist_particles": {
+      "sprite_sheet": "environmental_effects.png",
+      "coordinates": {"x": 256, "y": 384, "width": 32, "height": 32},
+      "frames": 4,
+      "animation_speed": "0.3_seconds_per_frame",
+      "blend_mode": "additive"
+    },
+    "electrical_spark_particles": {
+      "sprite_sheet": "environmental_effects.png", 
+      "coordinates": {"x": 288, "y": 384, "width": 16, "height": 16},
+      "frames": 3,
+      "animation_speed": "0.1_seconds_per_frame",
+      "color_tint": "#FFFF00"
+    },
+    "digital_artifact_particles": {
+      "sprite_sheet": "environmental_effects.png",
+      "coordinates": {"x": 320, "y": 384, "width": 24, "height": 24},
+      "frames": 6,
+      "animation_speed": "0.4_seconds_per_frame",
+      "colors": ["#00FFFF", "#FF00FF", "#FFFF00"]
+    }
+  },
+  
+  "ui_elements": {
+    "token_counter": {
+      "background": {"x": 0, "y": 448, "width": 128, "height": 32},
+      "token_icon": {"x": 128, "y": 448, "width": 16, "height": 16},
+      "font_color": "#39FF14",
+      "position": "top_left_corner"
+    },
+    "arcade_game_ui": {
+      "score_display": {"x": 0, "y": 480, "width": 96, "height": 24},
+      "game_over_overlay": {"x": 96, "y": 480, "width": 128, "height": 32},
+      "font_style": "pixelated_arcade_font"
+    },
+    "interaction_prompts": {
+      "press_to_interact": {"x": 224, "y": 480, "width": 64, "height": 16},
+      "insert_tokens": {"x": 288, "y": 480, "width": 64, "height": 16},
+      "hidden_entrance": {"x": 352, "y": 480, "width": 64, "height": 16}
+    }
+  },
+  
+  "audio_sprite_mappings": {
+    "arcade_ambient": "warped_8bit_arcade_ambience.ogg",
+    "token_sounds": [
+      "token_insert_chime.wav",
+      "token_dispense_clink.wav", 
+      "token_rejection_buzz.wav"
+    ],
+    "arcade_game_sfx": [
+      "frogger_existential_bleeps.wav",
+      "street_fighter_identity_voices.wav",
+      "kebab_kombat_regret_button.wav"
+    ],
+    "claw_machine_audio": [
+      "claw_machine_normal.wav",
+      "fur_elise_nft_victory.wav",
+      "rigged_failure_disappointment.wav"
+    ],
+    "environmental_sfx": [
+      "electrical_crackle.wav",
+      "green_mist_whisper.wav",
+      "mirror_lag_distortion.wav"
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC",
+      "android": "ETC2",
+      "fallback": "PNG_with_alpha"
+    },
+    "sprite_atlasing": {
+      "max_atlas_size": "2048x2048",
+      "padding": "2_pixels",
+      "extrude": "1_pixel"
+    },
+    "lod_variants": {
+      "high_quality": "full_resolution_all_effects",
+      "medium_quality": "reduced_particle_density_simplified_shaders",
+      "low_quality": "static_sprites_minimal_effects",
+      "potato_mode": "essential_sprites_only_no_effects"
+    }
+  },
+  
+  "accessibility_sprites": {
+    "colorblind_variants": {
+      "green_elements_alternative": {"color_shift": "blue_tint_for_deuteranopia"},
+      "red_green_confusion": {"alternative_patterns": "diagonal_lines_for_distinction"}
+    },
+    "high_contrast_mode": {
+      "background_darkening": "increased_contrast_ratio_4_5_to_1",
+      "text_enhancement": "outlined_fonts_with_drop_shadow"
+    },
+    "visual_audio_cues": {
+      "screen_flash_important_audio": {"x": 416, "y": 480, "width": 32, "height": 16},
+      "subtitle_background": {"x": 448, "y": 480, "width": 128, "height": 24}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "sprite_sheets": {
+    "maintenance_closet_tileset": {
+      "file": "maintenance_closet_cramped_space.png",
+      "dimensions": {"width": 512, "height": 512},
+      "tile_size": {"width": 16, "height": 16},
+      "sections": {
+        "floor_tiles": {"x": 0, "y": 0, "width": 128, "height": 128},
+        "wall_tiles": {"x": 128, "y": 0, "width": 128, "height": 128},
+        "ceiling_tiles": {"x": 256, "y": 0, "width": 128, "height": 128},
+        "door_tiles": {"x": 384, "y": 0, "width": 128, "height": 128}
+      },
+      "special_tiles": {
+        "exposed_wiring": {"x": 0, "y": 128, "width": 64, "height": 64},
+        "electrical_junction": {"x": 64, "y": 128, "width": 32, "height": 32},
+        "grime_stains": {"x": 96, "y": 128, "width": 96, "height": 64}
+      }
+    },
+    "bathroom_fixtures": {
+      "file": "ddr_toilet_and_fixtures.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "fixture_size": {"width": 64, "height": 64},
+      "fixtures": {
+        "ddr_toilet_seat": {
+          "idle": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "up_arrow_pressed": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "down_arrow_pressed": {"x": 128, "y": 0, "width": 64, "height": 64},
+          "left_arrow_pressed": {"x": 192, "y": 0, "width": 64, "height": 64},
+          "right_arrow_pressed": {"x": 256, "y": 0, "width": 64, "height": 64},
+          "all_arrows_lit": {"x": 320, "y": 0, "width": 64, "height": 64},
+          "sticky_struggle": {"x": 384, "y": 0, "width": 64, "height": 64}
+        },
+        "crt_mirror_screen": {
+          "insert_coin_frame_1": {"x": 0, "y": 64, "width": 96, "height": 72},
+          "insert_coin_frame_2": {"x": 96, "y": 64, "width": 96, "height": 72},
+          "insert_coin_frame_3": {"x": 192, "y": 64, "width": 96, "height": 72},
+          "insert_coin_frame_4": {"x": 288, "y": 64, "width": 96, "height": 72},
+          "game_over_dignity": {"x": 384, "y": 64, "width": 96, "height": 72},
+          "reflection_overlay": {"x": 480, "y": 64, "width": 96, "height": 72}
+        },
+        "janitor_bucket_foot_soak": {
+          "empty": {"x": 0, "y": 136, "width": 48, "height": 32},
+          "questionable_water": {"x": 48, "y": 136, "width": 48, "height": 32},
+          "in_use_single": {"x": 96, "y": 136, "width": 48, "height": 32},
+          "in_use_shared": {"x": 144, "y": 136, "width": 48, "height": 32},
+          "hygiene_question_marks": {"x": 192, "y": 136, "width": 48, "height": 32}
+        },
+        "used_socks_dispenser": {
+          "closed": {"x": 240, "y": 136, "width": 32, "height": 48},
+          "dispensing_sock_1": {"x": 272, "y": 136, "width": 32, "height": 48},
+          "dispensing_sock_2": {"x": 304, "y": 136, "width": 32, "height": 48},
+          "dispensing_sock_3": {"x": 336, "y": 136, "width": 32, "height": 48},
+          "jammed": {"x": 368, "y": 136, "width": 32, "height": 48}
+        }
+      }
+    },
+    "claw_machine_chandelier": {
+      "file": "cursed_chandelier_arm.png",
+      "dimensions": {"width": 256, "height": 256},
+      "chandelier_elements": {
+        "claw_arm_base": {"x": 0, "y": 0, "width": 64, "height": 96},
+        "claw_arm_swaying_left": {"x": 64, "y": 0, "width": 64, "height": 96},
+        "claw_arm_swaying_right": {"x": 128, "y": 0, "width": 64, "height": 96},
+        "claw_fingers_closed": {"x": 192, "y": 0, "width": 32, "height": 32},
+        "claw_fingers_open": {"x": 224, "y": 0, "width": 32, "height": 32},
+        "claw_fingers_grabbing": {"x": 192, "y": 32, "width": 32, "height": 32},
+        "ceiling_mount": {"x": 0, "y": 96, "width": 48, "height": 24},
+        "chain_link_segment": {"x": 48, "y": 96, "width": 8, "height": 16},
+        "shadow_projection": {"x": 0, "y": 120, "width": 128, "height": 64}
+      },
+      "animation_sequences": {
+        "idle_sway": {
+          "frames": ["claw_arm_base", "claw_arm_swaying_left", "claw_arm_base", "claw_arm_swaying_right"],
+          "frame_duration": 2.0,
+          "loop": true
+        },
+        "player_triggered_swing": {
+          "frames": ["claw_arm_swaying_left", "claw_arm_swaying_right", "claw_arm_swaying_left", "claw_arm_base"],
+          "frame_duration": 0.5,
+          "trigger": "player_rapid_movement"
+        }
+      }
+    },
+    "blacklight_graffiti_layers": {
+      "file": "blacklight_graffiti_revelations.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "visibility_system": "blacklight_only",
+      "graffiti_sections": {
+        "smaaaash_quote_primary": {
+          "normal_invisible": {"x": 0, "y": 0, "width": 256, "height": 64},
+          "blacklight_visible": {"x": 256, "y": 0, "width": 256, "height": 64},
+          "highlighted_reading": {"x": 512, "y": 0, "width": 256, "height": 64}
+        },
+        "fake_cheat_codes_wall": {
+          "layer_one": {"x": 0, "y": 64, "width": 128, "height": 128},
+          "layer_two": {"x": 128, "y": 64, "width": 128, "height": 128},
+          "layer_three": {"x": 256, "y": 64, "width": 128, "height": 128},
+          "layer_four": {"x": 384, "y": 64, "width": 128, "height": 128}
+        },
+        "pixelated_adult_art": {
+          "crude_pixel_art_1": {"x": 0, "y": 192, "width": 64, "height": 64},
+          "crude_pixel_art_2": {"x": 64, "y": 192, "width": 64, "height": 64},
+          "crude_pixel_art_3": {"x": 128, "y": 192, "width": 64, "height": 64},
+          "so_bad_its_endearing": {"x": 192, "y": 192, "width": 64, "height": 64}
+        },
+        "tekken_virginity_haiku": {
+          "hidden_corner_angle_1": {"x": 256, "y": 192, "width": 96, "height": 48},
+          "hidden_corner_angle_2": {"x": 352, "y": 192, "width": 96, "height": 48},
+          "full_visibility": {"x": 448, "y": 192, "width": 96, "height": 48}
+        },
+        "joystick_lips_sticker": {
+          "invisible_normal": {"x": 0, "y": 256, "width": 32, "height": 32},
+          "glowing_when_embarrassed": {"x": 32, "y": 256, "width": 32, "height": 32},
+          "pixel_art_joystick": {"x": 64, "y": 256, "width": 16, "height": 16},
+          "pixel_art_lips": {"x": 80, "y": 256, "width": 16, "height": 16}
+        },
+        "ddr_arrow_glyphs": {
+          "up_arrow": {"x": 96, "y": 256, "width": 16, "height": 16},
+          "down_arrow": {"x": 112, "y": 256, "width": 16, "height": 16},
+          "left_arrow": {"x": 96, "y": 272, "width": 16, "height": 16},
+          "right_arrow": {"x": 112, "y": 272, "width": 16, "height": 16},
+          "combo_d_by_love_text": {"x": 128, "y": 256, "width": 128, "height": 32}
+        }
+      }
+    },
+    "electrical_effects": {
+      "file": "electrical_hazards_and_sparks.png",
+      "dimensions": {"width": 512, "height": 256},
+      "electrical_elements": {
+        "exposed_wire_segments": {
+          "wire_normal": {"x": 0, "y": 0, "width": 32, "height": 8},
+          "wire_sparking": {"x": 32, "y": 0, "width": 32, "height": 8},
+          "wire_dangerous": {"x": 64, "y": 0, "width": 32, "height": 8}
+        },
+        "electrical_sparks": {
+          "small_spark": {"x": 0, "y": 8, "width": 8, "height": 8},
+          "medium_spark": {"x": 8, "y": 8, "width": 12, "height": 12},
+          "large_spark": {"x": 20, "y": 8, "width": 16, "height": 16},
+          "arc_discharge": {"x": 36, "y": 8, "width": 24, "height": 16}
+        },
+        "junction_boxes": {
+          "closed_safe": {"x": 0, "y": 24, "width": 24, "height": 32},
+          "open_exposed": {"x": 24, "y": 24, "width": 24, "height": 32},
+          "sparking_hazard": {"x": 48, "y": 24, "width": 24, "height": 32}
+        }
+      }
+    }
+  },
+
+  "lighting_effects": {
+    "fluorescent_marquee_light": {
+      "color": "#00FF41",
+      "intensity_states": [0.3, 0.7, 1.0, 0.5],
+      "flicker_timing": "1_to_3_second_random_intervals",
+      "power_source_visual": "jury_rigged_connection_visible_in_sprites"
+    },
+    "blacklight_system": {
+      "activation_color": "#8A2BE2",
+      "graffiti_reveal_shader": "uv_reactive_material_shader",
+      "transition_timing": "0.5_second_fade_in_when_fluorescent_dims",
+      "coverage_area": "entire_cramped_room_space"
+    },
+    "crt_screen_glow": {
+      "base_color": "#00FF00",
+      "intensity": 0.4,
+      "refresh_flicker": "60hz_authentic_crt_refresh_simulation",
+      "text_shadow_casting": "insert_coin_text_creates_moving_shadows"
+    },
+    "electrical_spark_illumination": {
+      "spark_color": "#FFFF00",
+      "flash_duration": "0.1_second_bursts",
+      "proximity_scaling": "brighter_when_player_approaches_wiring",
+      "safety_hazard_indication": "warning_visual_cue_system"
+    }
+  },
+
+  "particle_effect_sprites": {
+    "electrical_sparks": {
+      "sprite_sheet": "electrical_hazards_and_sparks.png",
+      "small_spark_coords": {"x": 0, "y": 8, "width": 8, "height": 8},
+      "medium_spark_coords": {"x": 8, "y": 8, "width": 12, "height": 12},
+      "large_spark_coords": {"x": 20, "y": 8, "width": 16, "height": 16},
+      "animation_frames": 3,
+      "animation_speed": "0.1_seconds_per_frame"
+    },
+    "citrus_cleaner_vapor": {
+      "sprite_sheet": "maintenance_closet_cramped_space.png",
+      "vapor_particle": {"x": 400, "y": 400, "width": 16, "height": 16},
+      "color_variations": ["#FFFFE0", "#F0E68C", "#DDA0DD"],
+      "animation_frames": 4,
+      "movement_pattern": "slow_upward_drift_with_swirl"
+    },
+    "stale_vape_particles": {
+      "sprite_sheet": "maintenance_closet_cramped_space.png",
+      "vape_cloud": {"x": 416, "y": 400, "width": 24, "height": 16},
+      "color": "#C0C0C0",
+      "animation_frames": 6,
+      "movement_pattern": "lazy_swirling_confined_space"
+    },
+    "crt_scan_lines": {
+      "sprite_sheet": "ddr_toilet_and_fixtures.png",
+      "scan_line": {"x": 576, "y": 64, "width": 96, "height": 1},
+      "movement": "vertical_scroll_authentic_crt_behavior",
+      "frequency": "60hz_refresh_simulation"
+    }
+  },
+
+  "animation_sequences": {
+    "ddr_toilet_usage_sequence": {
+      "sprite_source": "ddr_toilet_and_fixtures.png",
+      "sequence": [
+        {"frame": "idle", "duration": 1.0},
+        {"frame": "up_arrow_pressed", "duration": 0.3, "audio": "ddr_up_arrow_press.wav"},
+        {"frame": "down_arrow_pressed", "duration": 0.3, "audio": "ddr_down_arrow_press.wav"},
+        {"frame": "left_arrow_pressed", "duration": 0.3, "audio": "ddr_left_arrow_press.wav"},
+        {"frame": "right_arrow_pressed", "duration": 0.3, "audio": "ddr_right_arrow_press.wav"},
+        {"frame": "all_arrows_lit", "duration": 0.5, "audio": "ddr_perfect_combo.wav"},
+        {"frame": "sticky_struggle", "duration": 2.0, "audio": "velcro_separation_struggle.wav"}
+      ]
+    },
+    "crt_mirror_insert_coin_loop": {
+      "sprite_source": "ddr_toilet_and_fixtures.png",
+      "sequence": [
+        {"frame": "insert_coin_frame_1", "duration": 0.5},
+        {"frame": "insert_coin_frame_2", "duration": 0.5},
+        {"frame": "insert_coin_frame_3", "duration": 0.5},
+        {"frame": "insert_coin_frame_4", "duration": 0.5}
+      ],
+      "loop": true,
+      "audio": "classic_arcade_insert_coin_voice.wav"
+    },
+    "blacklight_graffiti_reveal": {
+      "sprite_source": "blacklight_graffiti_revelations.png",
+      "transition_type": "fade_in_shader_effect",
+      "reveal_timing": "0.5_seconds_when_blacklight_activates",
+      "layered_discovery": "multiple_reads_reveal_additional_layers"
+    },
+    "electrical_spark_random": {
+      "sprite_source": "electrical_hazards_and_sparks.png",
+      "sequence": [
+        {"frame": "small_spark", "duration": 0.1, "probability": 0.6},
+        {"frame": "medium_spark", "duration": 0.1, "probability": 0.3},
+        {"frame": "large_spark", "duration": 0.1, "probability": 0.1}
+      ],
+      "trigger": "random_2_to_5_second_intervals",
+      "proximity_modifier": "increased_frequency_when_player_nearby"
+    }
+  },
+
+  "ui_elements": {
+    "cramped_space_indicators": {
+      "awkward_rotation_prompt": {"x": 0, "y": 480, "width": 64, "height": 16},
+      "door_closing_instruction": {"x": 64, "y": 480, "width": 64, "height": 16},
+      "interaction_zone_highlight": {"x": 128, "y": 480, "width": 32, "height": 16}
+    },
+    "graffiti_reading_ui": {
+      "blacklight_activation_prompt": {"x": 192, "y": 480, "width": 48, "height": 16},
+      "graffiti_discovered_notification": {"x": 240, "y": 480, "width": 64, "height": 16},
+      "embarrassed_status_indicator": {"x": 304, "y": 480, "width": 24, "height": 16}
+    },
+    "icq_integration_ui": {
+      "send_message_prompt": {"x": 328, "y": 480, "width": 48, "height": 16},
+      "rival_trio_targeting": {"x": 376, "y": 480, "width": 48, "height": 16},
+      "message_sent_confirmation": {"x": 424, "y": 480, "width": 48, "height": 16}
+    }
+  },
+
+  "audio_sprite_mappings": {
+    "environmental_audio": [
+      "muffled_techno_through_drywall.ogg",
+      "fluorescent_electrical_hum.ogg",
+      "cleaning_supply_vapor_whistle.ogg"
+    ],
+    "interactive_fixture_audio": [
+      "ddr_up_arrow_press.wav",
+      "ddr_down_arrow_press.wav",
+      "ddr_left_arrow_press.wav",
+      "ddr_right_arrow_press.wav",
+      "ddr_perfect_combo.wav",
+      "velcro_separation_struggle.wav"
+    ],
+    "crt_screen_audio": [
+      "classic_arcade_insert_coin_voice.wav",
+      "crt_refresh_static.wav",
+      "game_over_dignity_expired.wav"
+    ],
+    "electrical_hazard_audio": [
+      "electrical_arc_discharge.wav",
+      "brief_electrical_zap_stun_sound.wav"
+    ],
+    "comedy_timer_audio": [
+      "youve_achieved_nothing_but_shame_player_one.wav",
+      "joystick_squeak_loop.wav",
+      "sad_trombone_for_third_sock_dispense.wav"
+    ]
+  },
+
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC_for_small_detailed_textures",
+      "android": "ETC2_with_alpha_channel_support",
+      "fallback": "PNG_with_alpha_high_quality_for_graffiti_detail"
+    },
+    "cramped_space_advantages": {
+      "reduced_draw_calls": "smaller_area_requires_fewer_render_operations",
+      "higher_detail_textures": "confined_space_allows_more_texture_memory_per_square_unit",
+      "simplified_culling": "everything_always_visible_eliminates_culling_calculations"
+    },
+    "performance_scaling": {
+      "high_end": "full_blacklight_effects_with_graffiti_transitions",
+      "medium": "simplified_blacklight_static_graffiti_visibility",
+      "low_end": "basic_lighting_visible_graffiti_no_blacklight_transitions",
+      "potato_mode": "static_sprites_essential_interactions_only"
+    }
+  },
+
+  "accessibility_sprites": {
+    "high_contrast_graffiti": {
+      "smaaaash_quote_high_contrast": {"x": 0, "y": 288, "width": 256, "height": 64},
+      "fake_cheat_codes_high_contrast": {"x": 256, "y": 288, "width": 128, "height": 64},
+      "joystick_lips_high_contrast": {"x": 384, "y": 288, "width": 32, "height": 32}
+    },
+    "colorblind_alternatives": {
+      "electrical_hazard_patterns": {"x": 0, "y": 352, "width": 64, "height": 32},
+      "graffiti_outline_emphasis": {"x": 64, "y": 352, "width": 128, "height": 32},
+      "status_indicator_shapes": {"x": 192, "y": 352, "width": 48, "height": 32}
+    },
+    "flicker_sensitivity_options": {
+      "static_fluorescent_alternative": {"x": 240, "y": 352, "width": 32, "height": 32},
+      "reduced_electrical_sparks": {"x": 272, "y": 352, "width": 32, "height": 16},
+      "gentle_blacklight_transition": {"x": 304, "y": 352, "width": 32, "height": 16}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
+  "sprite_sheets": {
+    "food_cart_main": {
+      "file": "mr_chadz_kebab_cart_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "cart_size": {"width": 256, "height": 192},
+      "elements": {
+        "base_cart_structure": {
+          "idle": {"x": 0, "y": 0, "width": 256, "height": 192},
+          "active_cooking": {"x": 256, "y": 0, "width": 256, "height": 192},
+          "cleaning_mode": {"x": 512, "y": 0, "width": 256, "height": 192}
+        }
+      }
+    }
+  },
+  "lighting_effects": {
+    "kebab_cart_glow": {
+      "color": "#FF6B35",
+      "intensity": 0.7,
+      "coverage": "food_cart_area"
+    }
+  },
+  "particle_effect_sprites": {
+    "cooking_steam": {
+      "sprite_sheet": "mr_chadz_kebab_cart_complete.png",
+      "coordinates": {"x": 768, "y": 0, "width": 32, "height": 32},
+      "frames": 4,
+      "animation_speed": "0.5_seconds_per_frame"
+    }
+  },
+  "animation_sequences": {
+    "kebab_cooking": {
+      "sprite_source": "mr_chadz_kebab_cart_complete.png",
+      "sequence": [
+        {"frame": "idle", "duration": 2.0},
+        {"frame": "active_cooking", "duration": 3.0}
+      ],
+      "loop": true
+    }
+  },
+  "ui_elements": {
+    "order_interface": {
+      "menu_background": {"x": 0, "y": 480, "width": 128, "height": 64},
+      "order_button": {"x": 128, "y": 480, "width": 32, "height": 16}
+    }
+  },
+  "audio_sprite_mappings": {
+    "environmental_audio": ["kebab_sizzling.ogg", "street_ambience.ogg"],
+    "interaction_audio": ["order_placed.wav", "cash_register.wav"]
+  },
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC",
+      "android": "ETC2",
+      "fallback": "PNG_with_alpha"
+    }
+  },
+  "accessibility_sprites": {
+    "high_contrast_mode": {
+      "cart_outline": {"x": 0, "y": 544, "width": 256, "height": 192}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_velvet_alley_kebab_01_character_animations",
+  "sprite_sheets": {
+    "character_animations": {
+      "file": "character_animation_sprites.png",
+      "dimensions": {"width": 512, "height": 512},
+      "character_size": {"width": 64, "height": 96},
+      "animations": {
+        "mr_chadz_idle": {"x": 0, "y": 0, "width": 64, "height": 96},
+        "mr_chadz_cooking": {"x": 64, "y": 0, "width": 64, "height": 96},
+        "mr_chadz_serving": {"x": 128, "y": 0, "width": 64, "height": 96}
+      }
+    }
+  },
+  "lighting_effects": {
+    "character_lighting": {
+      "color": "#FFFFFF",
+      "intensity": 0.8,
+      "coverage": "character_area"
+    }
+  },
+  "particle_effect_sprites": {
+    "character_effects": {
+      "sprite_sheet": "character_animation_sprites.png",
+      "coordinates": {"x": 192, "y": 0, "width": 16, "height": 16},
+      "frames": 2
+    }
+  },
+  "animation_sequences": {
+    "character_idle_loop": {
+      "sprite_source": "character_animation_sprites.png",
+      "sequence": [
+        {"frame": "mr_chadz_idle", "duration": 2.0},
+        {"frame": "mr_chadz_cooking", "duration": 1.0}
+      ],
+      "loop": true
+    }
+  },
+  "ui_elements": {
+    "character_ui": {
+      "dialogue_box": {"x": 0, "y": 480, "width": 128, "height": 32}
+    }
+  },
+  "audio_sprite_mappings": {
+    "character_audio": ["character_voice.ogg"],
+    "interaction_audio": ["dialogue_beep.wav"]
+  },
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC",
+      "android": "ETC2",
+      "fallback": "PNG_with_alpha"
+    }
+  },
+  "accessibility_sprites": {
+    "high_contrast_mode": {
+      "character_outline": {"x": 0, "y": 512, "width": 64, "height": 96}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "sprite_sheets": {
+    "mystery_cart": {
+      "file": "mystery_cart_sprites.png",
+      "dimensions": {"width": 512, "height": 512},
+      "cart_size": {"width": 128, "height": 96},
+      "elements": {
+        "cart_base": {"x": 0, "y": 0, "width": 128, "height": 96},
+        "cart_mysterious": {"x": 128, "y": 0, "width": 128, "height": 96}
+      }
+    }
+  },
+  "lighting_effects": {
+    "mysterious_glow": {
+      "color": "#8A2BE2",
+      "intensity": 0.6,
+      "coverage": "cart_area"
+    }
+  },
+  "particle_effect_sprites": {
+    "mystery_particles": {
+      "sprite_sheet": "mystery_cart_sprites.png",
+      "coordinates": {"x": 256, "y": 0, "width": 16, "height": 16},
+      "frames": 3
+    }
+  },
+  "animation_sequences": {
+    "mystery_animation": {
+      "sprite_source": "mystery_cart_sprites.png",
+      "sequence": [
+        {"frame": "cart_base", "duration": 1.5},
+        {"frame": "cart_mysterious", "duration": 1.5}
+      ],
+      "loop": true
+    }
+  },
+  "ui_elements": {
+    "mystery_ui": {
+      "interaction_prompt": {"x": 0, "y": 480, "width": 64, "height": 16}
+    }
+  },
+  "audio_sprite_mappings": {
+    "environmental_audio": ["mystery_ambience.ogg"],
+    "interaction_audio": ["mystery_sound.wav"]
+  },
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC",
+      "android": "ETC2",
+      "fallback": "PNG_with_alpha"
+    }
+  },
+  "accessibility_sprites": {
+    "high_contrast_mode": {
+      "cart_outline": {"x": 0, "y": 512, "width": 128, "height": 96}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_kebab_alley_restroom_01",
+  "sprite_sheets": {
+    "restroom_fixtures": {
+      "file": "restroom_sprites.png",
+      "dimensions": {"width": 512, "height": 512},
+      "fixture_size": {"width": 64, "height": 64},
+      "fixtures": {
+        "toilet": {"x": 0, "y": 0, "width": 64, "height": 64},
+        "sink": {"x": 64, "y": 0, "width": 64, "height": 64},
+        "mirror": {"x": 128, "y": 0, "width": 64, "height": 64}
+      }
+    }
+  },
+  "lighting_effects": {
+    "restroom_lighting": {
+      "color": "#FFFFFF",
+      "intensity": 0.9,
+      "coverage": "entire_restroom"
+    }
+  },
+  "particle_effect_sprites": {
+    "water_droplets": {
+      "sprite_sheet": "restroom_sprites.png",
+      "coordinates": {"x": 192, "y": 0, "width": 8, "height": 8},
+      "frames": 2
+    }
+  },
+  "animation_sequences": {
+    "water_drip": {
+      "sprite_source": "restroom_sprites.png",
+      "sequence": [
+        {"frame": "water_droplets", "duration": 2.0}
+      ],
+      "loop": true
+    }
+  },
+  "ui_elements": {
+    "restroom_ui": {
+      "privacy_indicator": {"x": 0, "y": 480, "width": 32, "height": 16}
+    }
+  },
+  "audio_sprite_mappings": {
+    "environmental_audio": ["restroom_ambience.ogg"],
+    "interaction_audio": ["flush_sound.wav", "water_running.wav"]
+  },
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC",
+      "android": "ETC2",
+      "fallback": "PNG_with_alpha"
+    }
+  },
+  "accessibility_sprites": {
+    "high_contrast_mode": {
+      "fixture_outlines": {"x": 0, "y": 512, "width": 192, "height": 64}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "sprite_sheets": {
+    "shadow_exchange": {
+      "file": "shadow_exchange_sprites.png",
+      "dimensions": {"width": 1024, "height": 512},
+      "exchange_size": {"width": 256, "height": 128},
+      "elements": {
+        "exchange_counter": {"x": 0, "y": 0, "width": 256, "height": 128},
+        "shadow_effects": {"x": 256, "y": 0, "width": 256, "height": 128}
+      }
+    }
+  },
+  "lighting_effects": {
+    "shadow_lighting": {
+      "color": "#2F2F2F",
+      "intensity": 0.4,
+      "coverage": "exchange_area"
+    }
+  },
+  "particle_effect_sprites": {
+    "shadow_particles": {
+      "sprite_sheet": "shadow_exchange_sprites.png",
+      "coordinates": {"x": 512, "y": 0, "width": 24, "height": 24},
+      "frames": 4
+    }
+  },
+  "animation_sequences": {
+    "shadow_movement": {
+      "sprite_source": "shadow_exchange_sprites.png",
+      "sequence": [
+        {"frame": "exchange_counter", "duration": 1.0},
+        {"frame": "shadow_effects", "duration": 2.0}
+      ],
+      "loop": true
+    }
+  },
+  "ui_elements": {
+    "exchange_ui": {
+      "transaction_interface": {"x": 0, "y": 480, "width": 128, "height": 32}
+    }
+  },
+  "audio_sprite_mappings": {
+    "environmental_audio": ["shadow_whispers.ogg"],
+    "interaction_audio": ["exchange_complete.wav"]
+  },
+  "mobile_optimization": {
+    "texture_compression": {
+      "ios": "PVRTC",
+      "android": "ETC2",
+      "fallback": "PNG_with_alpha"
+    }
+  },
+  "accessibility_sprites": {
+    "high_contrast_mode": {
+      "exchange_outline": {"x": 0, "y": 512, "width": 256, "height": 128}
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_arcade_absynthium_brewery_01",
+  
+  "sprite_sheets": {
+    "absynthium_taproom_environment_complete": {
+      "file": "absynthium_taproom_environment_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "cracked_bottle_bar": {
+          "bar_base": {"x": 0, "y": 0, "width": 128, "height": 64},
+          "bottle_crack_detail": {"x": 128, "y": 0, "width": 64, "height": 64},
+          "dripping_liquid_glow": {"x": 192, "y": 0, "width": 32, "height": 48}
+        },
+        "mirror_portals": {
+          "portal_frame_north": {"x": 0, "y": 64, "width": 64, "height": 96},
+          "portal_frame_east": {"x": 64, "y": 64, "width": 64, "height": 96},
+          "portal_shimmer_effect": {"x": 128, "y": 64, "width": 64, "height": 96},
+          "confusion_portal_distortion": {"x": 192, "y": 64, "width": 64, "height": 96}
+        },
+        "furniture_warped": {
+          "misaligned_chair_1": {"x": 256, "y": 0, "width": 32, "height": 48},
+          "misaligned_chair_2": {"x": 288, "y": 0, "width": 32, "height": 48},
+          "impossible_table": {"x": 256, "y": 48, "width": 64, "height": 32}
+        },
+        "floating_candles": {
+          "candle_base_glow": {"x": 0, "y": 160, "width": 16, "height": 32},
+          "candle_flicker_frame_1": {"x": 16, "y": 160, "width": 16, "height": 32},
+          "candle_flicker_frame_2": {"x": 32, "y": 160, "width": 16, "height": 32},
+          "candle_flicker_frame_3": {"x": 48, "y": 160, "width": 16, "height": 32}
+        },
+        "blinking_portraits": {
+          "portrait_stern_aristocrat_open": {"x": 320, "y": 0, "width": 48, "height": 64},
+          "portrait_stern_aristocrat_blink": {"x": 368, "y": 0, "width": 48, "height": 64},
+          "portrait_frame_ornate": {"x": 416, "y": 0, "width": 48, "height": 64}
+        },
+        "fog_floor_effects": {
+          "fog_layer_1": {"x": 0, "y": 192, "width": 320, "height": 48},
+          "fog_layer_2": {"x": 320, "y": 192, "width": 320, "height": 48},
+          "depth_illusion_overlay": {"x": 640, "y": 192, "width": 320, "height": 48}
+        }
+      }
+    },
+    
+    "absynthium_interactive_objects": {
+      "file": "absynthium_interactive_objects.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "floating_absinthe_chalice": {
+          "chalice_base": {"x": 0, "y": 0, "width": 32, "height": 48},
+          "chalice_glow_effect": {"x": 32, "y": 0, "width": 32, "height": 48},
+          "float_animation_frame_1": {"x": 64, "y": 0, "width": 32, "height": 48},
+          "float_animation_frame_2": {"x": 96, "y": 0, "width": 32, "height": 48},
+          "float_animation_frame_3": {"x": 128, "y": 0, "width": 32, "height": 48}
+        },
+        "gravity_defying_liquids": {
+          "upward_drip_frame_1": {"x": 0, "y": 48, "width": 16, "height": 32},
+          "upward_drip_frame_2": {"x": 16, "y": 48, "width": 16, "height": 32},
+          "upward_drip_frame_3": {"x": 32, "y": 48, "width": 16, "height": 32},
+          "upward_drip_frame_4": {"x": 48, "y": 48, "width": 16, "height": 32}
+        },
+        "green_velvet_curtain": {
+          "curtain_closed": {"x": 160, "y": 0, "width": 64, "height": 96},
+          "curtain_opening_frame_1": {"x": 224, "y": 0, "width": 64, "height": 96},
+          "curtain_opening_frame_2": {"x": 288, "y": 0, "width": 64, "height": 96},
+          "curtain_fully_open": {"x": 352, "y": 0, "width": 64, "height": 96},
+          "vapor_seep_effect": {"x": 416, "y": 0, "width": 64, "height": 32}
+        },
+        "reality_distortion_effects": {
+          "perspective_warp_overlay_1": {"x": 0, "y": 96, "width": 128, "height": 96},
+          "perspective_warp_overlay_2": {"x": 128, "y": 96, "width": 128, "height": 96},
+          "mirror_lag_effect": {"x": 256, "y": 96, "width": 64, "height": 64}
+        }
+      }
+    },
+    
+    "absynthium_npcs": {
+      "file": "absynthium_npcs.png",
+      "dimensions": {"width": 512, "height": 384},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "monocle_bartender": {
+          "idle_professional": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "dispensing_brew": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "adjusting_monocle": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "ominous_stare": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "lab_coat_detail": {"x": 256, "y": 0, "width": 64, "height": 96}
+        },
+        "whispering_patron_01": {
+          "half_visible_idle": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "leaning_forward_whisper": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "mirrored_sunglasses_glint": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "fading_into_fog": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "whispering_patron_02": {
+          "half_visible_idle": {"x": 256, "y": 96, "width": 64, "height": 96},
+          "cryptic_gesture": {"x": 320, "y": 96, "width": 64, "height": 96},
+          "sunglasses_reflection_green": {"x": 384, "y": 96, "width": 64, "height": 96}
+        },
+        "mirror_chad": {
+          "player_sprite_mirrored_base": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "distorted_smug_expression": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "existential_taunt_pose": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "mirror_distortion_effect": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "green_fairy_wisp_boss": {
+          "base_form": {"x": 256, "y": 192, "width": 64, "height": 96},
+          "split_animation_frame_1": {"x": 320, "y": 192, "width": 64, "height": 96},
+          "split_animation_frame_2": {"x": 384, "y": 192, "width": 64, "height": 96},
+          "illusion_copy_dimmer": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "confused_status_cast": {"x": 64, "y": 288, "width": 64, "height": 96},
+          "victory_dissipate": {"x": 128, "y": 288, "width": 64, "height": 96}
+        }
+      }
+    },
+    
+    "absynthium_particle_effects": {
+      "file": "absynthium_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "impossible_vapor_swirls": {
+          "swirl_pattern_1": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "swirl_pattern_2": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "swirl_pattern_3": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "swirl_pattern_4": {"x": 96, "y": 0, "width": 32, "height": 32}
+        },
+        "green_spectral_fog": {
+          "fog_particle_1": {"x": 0, "y": 32, "width": 24, "height": 24},
+          "fog_particle_2": {"x": 24, "y": 32, "width": 24, "height": 24},
+          "fog_particle_3": {"x": 48, "y": 32, "width": 24, "height": 24},
+          "fog_particle_4": {"x": 72, "y": 32, "width": 24, "height": 24}
+        },
+        "reality_distortion_particles": {
+          "distortion_wave_1": {"x": 128, "y": 0, "width": 48, "height": 48},
+          "distortion_wave_2": {"x": 176, "y": 0, "width": 48, "height": 48},
+          "distortion_wave_3": {"x": 224, "y": 0, "width": 48, "height": 48}
+        },
+        "mirror_portal_shimmer": {
+          "shimmer_frame_1": {"x": 0, "y": 64, "width": 64, "height": 64},
+          "shimmer_frame_2": {"x": 64, "y": 64, "width": 64, "height": 64},
+          "shimmer_frame_3": {"x": 128, "y": 64, "width": 64, "height": 64},
+          "shimmer_frame_4": {"x": 192, "y": 64, "width": 64, "height": 64}
+        },
+        "confused_status_indicator": {
+          "confusion_spiral_1": {"x": 256, "y": 0, "width": 32, "height": 32},
+          "confusion_spiral_2": {"x": 288, "y": 0, "width": 32, "height": 32},
+          "confusion_spiral_3": {"x": 320, "y": 0, "width": 32, "height": 32},
+          "confusion_spiral_4": {"x": 352, "y": 0, "width": 32, "height": 32}
+        },
+        "green_fairy_split_effect": {
+          "split_burst_1": {"x": 256, "y": 64, "width": 64, "height": 64},
+          "split_burst_2": {"x": 320, "y": 64, "width": 64, "height": 64},
+          "split_burst_3": {"x": 384, "y": 64, "width": 64, "height": 64},
+          "illusion_shimmer": {"x": 448, "y": 64, "width": 32, "height": 32}
+        }
+      }
+    },
+    
+    "absynthium_ui_elements": {
+      "file": "absynthium_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "confused_status_icon": {
+          "icon_active": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "icon_stacked": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "icon_expiring": {"x": 64, "y": 0, "width": 32, "height": 32}
+        },
+        "brewery_tour_progress": {
+          "checkpoint_1_complete": {"x": 0, "y": 32, "width": 64, "height": 32},
+          "checkpoint_1_incomplete": {"x": 64, "y": 32, "width": 64, "height": 32},
+          "absynthium_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
+        },
+        "mirror_portal_indicators": {
+          "real_portal_hint": {"x": 0, "y": 64, "width": 24, "height": 24},
+          "confusion_portal_hint": {"x": 24, "y": 64, "width": 24, "height": 24},
+          "portal_cooldown": {"x": 48, "y": 64, "width": 24, "height": 24}
+        },
+        "boss_battle_ui": {
+          "illusion_marker_fake": {"x": 0, "y": 96, "width": 32, "height": 32},
+          "illusion_marker_real": {"x": 32, "y": 96, "width": 32, "height": 32},
+          "turn_counter": {"x": 64, "y": 96, "width": 64, "height": 32}
+        },
+        "achievement_popups": {
+          "existential_crisis_unlocked": {"x": 128, "y": 0, "width": 128, "height": 48},
+          "green_fairy_defeated": {"x": 128, "y": 48, "width": 128, "height": 48},
+          "brewery_1_of_4_complete": {"x": 128, "y": 96, "width": 128, "height": 48}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "floating_candles": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "candle_base_glow",
+        "candle_flicker_frame_1",
+        "candle_flicker_frame_2",
+        "candle_flicker_frame_3",
+        "candle_flicker_frame_2",
+        "candle_flicker_frame_1"
+      ]
+    },
+    "upward_liquid_drip": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        "upward_drip_frame_1",
+        "upward_drip_frame_2",
+        "upward_drip_frame_3",
+        "upward_drip_frame_4"
+      ]
+    },
+    "portrait_blink": {
+      "fps": 2,
+      "loop": false,
+      "trigger": "random_5_10_seconds",
+      "frames": [
+        "portrait_stern_aristocrat_open",
+        "portrait_stern_aristocrat_blink",
+        "portrait_stern_aristocrat_blink",
+        "portrait_stern_aristocrat_open"
+      ]
+    },
+    "mirror_portal_shimmer": {
+      "fps": 10,
+      "loop": true,
+      "frames": [
+        "shimmer_frame_1",
+        "shimmer_frame_2",
+        "shimmer_frame_3",
+        "shimmer_frame_4",
+        "shimmer_frame_3",
+        "shimmer_frame_2"
+      ]
+    },
+    "green_curtain_opening": {
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        "curtain_closed",
+        "curtain_opening_frame_1",
+        "curtain_opening_frame_2",
+        "curtain_fully_open"
+      ]
+    },
+    "green_fairy_split": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        "base_form",
+        "split_animation_frame_1",
+        "split_animation_frame_2",
+        "split_burst_1",
+        "split_burst_2",
+        "split_burst_3"
+      ]
+    },
+    "confused_spiral_indicator": {
+      "fps": 15,
+      "loop": true,
+      "frames": [
+        "confusion_spiral_1",
+        "confusion_spiral_2",
+        "confusion_spiral_3",
+        "confusion_spiral_4"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "absynthium_main_atlas",
+        "files": [
+          "absynthium_taproom_environment_complete.png",
+          "absynthium_interactive_objects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "absynthium_characters_atlas",
+        "files": [
+          "absynthium_npcs.png",
+          "absynthium_particle_effects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_resolution_all_effects",
+      "medium": "reduced_particle_count_simplified_mirror_reflections",
+      "low": "minimal_particles_no_perspective_warping_static_portals"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+  "display_name": "The Tap Dat Vault",
+  "satirical_subtitle": "We Don't Serve Beer — We Inhale It",
+  "world": "debaucheryville",
+  "area_zone": "clocktower_plaza_hidden_cellar",
+  "location_type": "cyberpunk_brew_basement_rhythm_dungeon",
+  
+  "access_requirements": {
+    "time_restrictions": "midnight_only_00_00_game_time",
+    "stat_requirements": {},
+    "item_requirements": ["bottle_opener_keychain"],
+    "previous_locations": ["debaucheryville_clocktower_plaza"],
+    "special_conditions": ["discover_hidden_switch_at_clocktower_plaza", "vault_door_opens_only_at_midnight", "countdown_glyphs_indicate_timing"]
+  },
+  
+  "visual_design": {
+    "exterior_description": "Hidden beneath Clocktower Plaza accessible via concealed switch. Large metal vault door marked with neon graffiti and countdown glyphs showing midnight activation. Faint thumping bass pulses from within. Neon glow seeps around door edges.",
+    "interior_description": "Cyberpunk basement with central brewing vats doubling as massive subwoofers. Neon piping floor-to-ceiling creating grid patterns. Fermentation chambers with circuit boards and LED displays. RGB lights flickering like software crash. Vapor clouds suspended creating atmospheric depth. Everything rhythm-reactive: lights pulse, steam bursts, NPC movement syncs to beat.",
+    "color_palette": {
+      "primary": "#00FFFF",
+      "accent": "#FF1493",
+      "background": "#4B0082"
+    },
+    "lighting_setup": {
+      "ambient": "#00FFFF",
+      "intensity": 0.8,
+      "special_effects": ["neon_tube_network", "backlit_brew_chambers", "rgb_wall_effects", "strobe_lighting", "vapor_glow"]
+    },
+    "particle_systems": [
+      "vapor_clouds_heavy_density",
+      "neon_glow_particles",
+      "hologram_glitches",
+      "steam_bursts_synced_to_music"
+    ],
+    "animation_elements": [
+      "rhythm_reactive_lighting_continuous",
+      "pulsing_subwoofer_vats_bass_visualization",
+      "glitching_hologram_text_random_intervals",
+      "npc_movement_synced_to_beat",
+      "steam_pressure_gauge_fluctuations"
+    ],
+    "mobile_optimization": {
+      "lod_level": 2,
+      "texture_compression": true,
+      "reduced_particle_density": true,
+      "simplified_rhythm_reactive_effects": true,
+      "static_lighting_option": true
+    }
+  },
+  
+  "satirical_design": {
+    "theme_description": "Experimental vapor-brewed lagers served as vape clouds in a nightclub rendered by a GPU having a breakdown - where pretentious craft brewery culture meets cyberpunk tech-bro vapor culture",
+    "primary_satirical_focus": "vape_culture_commercialization_and_pretentious_craft_brewery_experimentation_taken_to_absurd_extremes",
+    "secondary_targets": [
+      "cyberpunk_aesthetic_commodification",
+      "tech_bro_nightclub_culture",
+      "inhaled_beverages_trend",
+      "experimental_brewing_pretension"
+    ],
+    "humor_approach": "gta_style_tech_satire_with_eurotrip_party_tourism_absurdity",
+    "buffoon_delusion": {
+      "what_bros_think": "experiencing_cutting_edge_experimental_brewing_in_underground_cyberpunk_venue",
+      "what_actually_happening": "vaping_flavored_liquid_in_nightclub_basement_with_brewing_equipment_as_props",
+      "impairment_level": "drunk_enough_to_believe_inhaling_vapor_equals_drinking_craft_beer",
+      "obvious_signs_ignored": [
+        "bartender_wears_vape_rig_on_lanyard",
+        "brewing_vats_are_subwoofers",
+        "beer_is_vapor_clouds",
+        "fermentation_chambers_have_DJ_equipment"
+      ]
+    },
+    "seedy_underbelly": {
+      "primary_vice": "selling_experimental_brewing_that_is_actually_vape_culture_with_beer_branding",
+      "exploitation_method": "nightclub_disguised_as_brewery_with_chemistry_lab_equipment",
+      "buffoon_exploitation": "bros_inhale_vapor_thinking_its_innovative_craft_beer_when_its_flavored_vape_juice",
+      "consequence_system": "grease_fingers_status_as_gameplay_mechanic_and_satirical_commentary_on_vape_residue"
+    }
+  },
+  
+  "gameplay_mechanics": {
+    "primary_function": "brewery_dungeon_2_of_4_with_rhythm_puzzle_and_boss_encounter",
+    "core_mechanics": [
+      {
+        "mechanic_id": "rhythm_based_vapor_pressure_puzzle",
+        "type": "rhythm_game_challenge",
+        "description": "Press buttons synced to glitchy techno track to maintain beer vapor pressure. Match button presses to rhythm indicators scrolling across fermentation chambers.",
+        "timing_challenge": "sync_to_music_beat_with_visual_timing_markers",
+        "failure_consequences": "3_failed_attempts_ejects_player_from_brewery_can_return_next_midnight",
+        "success_rewards": "access_to_brewing_area_and_boss_encounter",
+        "skill_scaling": "difficulty_adjusts_based_on_player_previous_rhythm_game_performance"
+      },
+      {
+        "mechanic_id": "glitched_brew_ad_bot_mini_mob",
+        "type": "sentient_spam_enemy",
+        "description": "CRT monitor head with floating ad banner drones. Random item removed from inventory if not stunned quickly.",
+        "dialogue": "✨UNBOX A LIMITED-EDITION FOAM BOOSTER✨",
+        "combat_timer": "3_turns_to_stun_or_lose_random_inventory_item",
+        "visual_design": "crt_monitor_head_with_orbiting_ad_banners",
+        "satirical_beat": "enemy_is_literal_advertising_becoming_hostile_obstacle"
+      },
+      {
+        "mechanic_id": "strobe_brewmistress_boss",
+        "type": "sound_wave_attack_boss",
+        "description": "Boss using rhythm and audio as weapons. Dodge sound-wave attacks timed to music beat, counter during vulnerable phases.",
+        "sound_wave_patterns": "bass_drops_create_aoe_damage_high_frequency_attacks_target_individuals",
+        "status_effects": "applies_embarrassed_status_with_spotlight_attacks_that_freeze_players",
+        "victory_reward": ["vape_stout_brew", "hologram_selfie_prop_access", "quest_progression"]
+      }
+    ],
+    "brewery_tour_integration": {
+      "quest_role": "second_of_4_debaucheryville_brewery_dungeons",
+      "completion_tracking": "tapdatvault_2_of_4_for_continental_beer_master",
+      "bottle_opener_requirement": "publandia_keychain_required_for_all_brewery_access"
+    }
+  },
+  
+  "rewards": {
+    "consumable_items": [
+      {
+        "item_id": "vape_stout",
+        "display_name": "Vape Stout",
+        "effects": {
+          "sp_restore": "restores_sp",
+          "glow_up_aura": "charm_defense_plus_1",
+          "grease_fingers_chance": 0.30
+        },
+        "strategic_use": "powerful_buff_with_trade_off_debuff_requiring_tactical_timing"
+      }
+    ],
+    "selfie_props": [
+      {
+        "prop_id": "hologram_you_are_brewtiful",
+        "location": "behind_dj_booth_vip_area_post_boss",
+        "visual_effect": "party_poses_with_glitching_hologram_text_neon_cyberpunk_background"
+      }
+    ],
+    "quest_progression": {
+      "brewery_tour_complete": "2_of_4",
+      "achievement": "continental_beer_master_progress"
+    }
+  },
+  
+  "exit_conditions": {
+    "normal_exit": "back_through_vault_door_to_clocktower_plaza",
+    "completion_requirements": "defeat_strobe_brewmistress_boss_obtain_vape_stout",
+    "failure_states": "ejected_for_failed_rhythm_puzzle_attempts_3_strikes",
+    "progressive_unlocks": ["hologram_selfie_prop_access", "brewery_tour_quest_2_of_4_complete", "vip_vapor_lounge_access"]
+  },
+  
+  "cross_location_integration": {
+    "entry_from": "debaucheryville_clocktower_plaza",
+    "exit_to": "debaucheryville_clocktower_plaza",
+    "brewery_network": [
+      "debaucheryville_arcade_absynthium_brewery_01",
+      "debaucheryville_clocktower_tapdatvault_brewery_02",
+      "brewery_location_03_tbd",
+      "brewery_location_04_tbd"
+    ],
+    "bottle_opener_source": "publandia_vendor_or_quest",
+    "midnight_timing_system": "countdown_glyphs_show_next_access_time"
+  },
+  
+  "performance_specifications": {
+    "target_fps": 45,
+    "max_draw_calls": 20,
+    "memory_budget_mb": 48,
+    "platform_considerations": "simplified_rhythm_reactive_effects_on_older_devices_reduced_particle_density"
+  },
+  
+  "development_timeline": {
+    "asset_creation_hours": 11,
+    "implementation_hours": 15,
+    "testing_requirements": [
+      "rhythm_timing_calibration",
+      "boss_difficulty_tuning",
+      "grease_fingers_balance",
+      "audio_visual_synchronization"
+    ],
+    "polish_hours": 7
+  },
+  
+  "intro_cutscene": {
+    "text": "A bass drop echoes as the vault creaks open. You step into what feels like a nightclub inside a GPU.",
+    "tone": "establishes_cyberpunk_nightclub_brewery_atmosphere_immediately",
+    "tutorial_integration": "first_encounter_with_rhythm_reactive_mechanics"
+  },
+  
+  "couchsurf_integration": {
+    "host_details": {
+      "npc_id": "not_applicable_brewery_dungeon",
+      "accommodation_type": "none_combat_focused_location"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_arcade_absynthium_brewery_01",
+  
+  "sprite_sheets": {
+    "absynthium_taproom_environment_complete": {
+      "file": "absynthium_taproom_environment_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "cracked_bottle_bar": {
+          "bar_base": {"x": 0, "y": 0, "width": 128, "height": 64},
+          "bottle_crack_detail": {"x": 128, "y": 0, "width": 64, "height": 64},
+          "dripping_liquid_glow": {"x": 192, "y": 0, "width": 32, "height": 48}
+        },
+        "mirror_portals": {
+          "portal_frame_north": {"x": 0, "y": 64, "width": 64, "height": 96},
+          "portal_frame_east": {"x": 64, "y": 64, "width": 64, "height": 96},
+          "portal_shimmer_effect": {"x": 128, "y": 64, "width": 64, "height": 96},
+          "confusion_portal_distortion": {"x": 192, "y": 64, "width": 64, "height": 96}
+        },
+        "furniture_warped": {
+          "misaligned_chair_1": {"x": 256, "y": 0, "width": 32, "height": 48},
+          "misaligned_chair_2": {"x": 288, "y": 0, "width": 32, "height": 48},
+          "impossible_table": {"x": 256, "y": 48, "width": 64, "height": 32}
+        },
+        "floating_candles": {
+          "candle_base_glow": {"x": 0, "y": 160, "width": 16, "height": 32},
+          "candle_flicker_frame_1": {"x": 16, "y": 160, "width": 16, "height": 32},
+          "candle_flicker_frame_2": {"x": 32, "y": 160, "width": 16, "height": 32},
+          "candle_flicker_frame_3": {"x": 48, "y": 160, "width": 16, "height": 32}
+        },
+        "blinking_portraits": {
+          "portrait_stern_aristocrat_open": {"x": 320, "y": 0, "width": 48, "height": 64},
+          "portrait_stern_aristocrat_blink": {"x": 368, "y": 0, "width": 48, "height": 64},
+          "portrait_frame_ornate": {"x": 416, "y": 0, "width": 48, "height": 64}
+        },
+        "fog_floor_effects": {
+          "fog_layer_1": {"x": 0, "y": 192, "width": 320, "height": 48},
+          "fog_layer_2": {"x": 320, "y": 192, "width": 320, "height": 48},
+          "depth_illusion_overlay": {"x": 640, "y": 192, "width": 320, "height": 48}
+        }
+      }
+    },
+    
+    "absynthium_interactive_objects": {
+      "file": "absynthium_interactive_objects.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "floating_absinthe_chalice": {
+          "chalice_base": {"x": 0, "y": 0, "width": 32, "height": 48},
+          "chalice_glow_effect": {"x": 32, "y": 0, "width": 32, "height": 48},
+          "float_animation_frame_1": {"x": 64, "y": 0, "width": 32, "height": 48},
+          "float_animation_frame_2": {"x": 96, "y": 0, "width": 32, "height": 48},
+          "float_animation_frame_3": {"x": 128, "y": 0, "width": 32, "height": 48}
+        },
+        "gravity_defying_liquids": {
+          "upward_drip_frame_1": {"x": 0, "y": 48, "width": 16, "height": 32},
+          "upward_drip_frame_2": {"x": 16, "y": 48, "width": 16, "height": 32},
+          "upward_drip_frame_3": {"x": 32, "y": 48, "width": 16, "height": 32},
+          "upward_drip_frame_4": {"x": 48, "y": 48, "width": 16, "height": 32}
+        },
+        "green_velvet_curtain": {
+          "curtain_closed": {"x": 160, "y": 0, "width": 64, "height": 96},
+          "curtain_opening_frame_1": {"x": 224, "y": 0, "width": 64, "height": 96},
+          "curtain_opening_frame_2": {"x": 288, "y": 0, "width": 64, "height": 96},
+          "curtain_fully_open": {"x": 352, "y": 0, "width": 64, "height": 96},
+          "vapor_seep_effect": {"x": 416, "y": 0, "width": 64, "height": 32}
+        },
+        "reality_distortion_effects": {
+          "perspective_warp_overlay_1": {"x": 0, "y": 96, "width": 128, "height": 96},
+          "perspective_warp_overlay_2": {"x": 128, "y": 96, "width": 128, "height": 96},
+          "mirror_lag_effect": {"x": 256, "y": 96, "width": 64, "height": 64}
+        }
+      }
+    },
+    
+    "absynthium_npcs": {
+      "file": "absynthium_npcs.png",
+      "dimensions": {"width": 512, "height": 384},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "monocle_bartender": {
+          "idle_professional": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "dispensing_brew": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "adjusting_monocle": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "ominous_stare": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "lab_coat_detail": {"x": 256, "y": 0, "width": 64, "height": 96}
+        },
+        "whispering_patron_01": {
+          "half_visible_idle": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "leaning_forward_whisper": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "mirrored_sunglasses_glint": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "fading_into_fog": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "whispering_patron_02": {
+          "half_visible_idle": {"x": 256, "y": 96, "width": 64, "height": 96},
+          "cryptic_gesture": {"x": 320, "y": 96, "width": 64, "height": 96},
+          "sunglasses_reflection_green": {"x": 384, "y": 96, "width": 64, "height": 96}
+        },
+        "mirror_chad": {
+          "player_sprite_mirrored_base": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "distorted_smug_expression": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "existential_taunt_pose": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "mirror_distortion_effect": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "green_fairy_wisp_boss": {
+          "base_form": {"x": 256, "y": 192, "width": 64, "height": 96},
+          "split_animation_frame_1": {"x": 320, "y": 192, "width": 64, "height": 96},
+          "split_animation_frame_2": {"x": 384, "y": 192, "width": 64, "height": 96},
+          "illusion_copy_dimmer": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "confused_status_cast": {"x": 64, "y": 288, "width": 64, "height": 96},
+          "victory_dissipate": {"x": 128, "y": 288, "width": 64, "height": 96}
+        }
+      }
+    },
+    
+    "absynthium_particle_effects": {
+      "file": "absynthium_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "impossible_vapor_swirls": {
+          "swirl_pattern_1": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "swirl_pattern_2": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "swirl_pattern_3": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "swirl_pattern_4": {"x": 96, "y": 0, "width": 32, "height": 32}
+        },
+        "green_spectral_fog": {
+          "fog_particle_1": {"x": 0, "y": 32, "width": 24, "height": 24},
+          "fog_particle_2": {"x": 24, "y": 32, "width": 24, "height": 24},
+          "fog_particle_3": {"x": 48, "y": 32, "width": 24, "height": 24},
+          "fog_particle_4": {"x": 72, "y": 32, "width": 24, "height": 24}
+        },
+        "reality_distortion_particles": {
+          "distortion_wave_1": {"x": 128, "y": 0, "width": 48, "height": 48},
+          "distortion_wave_2": {"x": 176, "y": 0, "width": 48, "height": 48},
+          "distortion_wave_3": {"x": 224, "y": 0, "width": 48, "height": 48}
+        },
+        "mirror_portal_shimmer": {
+          "shimmer_frame_1": {"x": 0, "y": 64, "width": 64, "height": 64},
+          "shimmer_frame_2": {"x": 64, "y": 64, "width": 64, "height": 64},
+          "shimmer_frame_3": {"x": 128, "y": 64, "width": 64, "height": 64},
+          "shimmer_frame_4": {"x": 192, "y": 64, "width": 64, "height": 64}
+        },
+        "confused_status_indicator": {
+          "confusion_spiral_1": {"x": 256, "y": 0, "width": 32, "height": 32},
+          "confusion_spiral_2": {"x": 288, "y": 0, "width": 32, "height": 32},
+          "confusion_spiral_3": {"x": 320, "y": 0, "width": 32, "height": 32},
+          "confusion_spiral_4": {"x": 352, "y": 0, "width": 32, "height": 32}
+        },
+        "green_fairy_split_effect": {
+          "split_burst_1": {"x": 256, "y": 64, "width": 64, "height": 64},
+          "split_burst_2": {"x": 320, "y": 64, "width": 64, "height": 64},
+          "split_burst_3": {"x": 384, "y": 64, "width": 64, "height": 64},
+          "illusion_shimmer": {"x": 448, "y": 64, "width": 32, "height": 32}
+        }
+      }
+    },
+    
+    "absynthium_ui_elements": {
+      "file": "absynthium_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "confused_status_icon": {
+          "icon_active": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "icon_stacked": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "icon_expiring": {"x": 64, "y": 0, "width": 32, "height": 32}
+        },
+        "brewery_tour_progress": {
+          "checkpoint_1_complete": {"x": 0, "y": 32, "width": 64, "height": 32},
+          "checkpoint_1_incomplete": {"x": 64, "y": 32, "width": 64, "height": 32},
+          "absynthium_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
+        },
+        "mirror_portal_indicators": {
+          "real_portal_hint": {"x": 0, "y": 64, "width": 24, "height": 24},
+          "confusion_portal_hint": {"x": 24, "y": 64, "width": 24, "height": 24},
+          "portal_cooldown": {"x": 48, "y": 64, "width": 24, "height": 24}
+        },
+        "boss_battle_ui": {
+          "illusion_marker_fake": {"x": 0, "y": 96, "width": 32, "height": 32},
+          "illusion_marker_real": {"x": 32, "y": 96, "width": 32, "height": 32},
+          "turn_counter": {"x": 64, "y": 96, "width": 64, "height": 32}
+        },
+        "achievement_popups": {
+          "existential_crisis_unlocked": {"x": 128, "y": 0, "width": 128, "height": 48},
+          "green_fairy_defeated": {"x": 128, "y": 48, "width": 128, "height": 48},
+          "brewery_1_of_4_complete": {"x": 128, "y": 96, "width": 128, "height": 48}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "floating_candles": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "candle_base_glow",
+        "candle_flicker_frame_1",
+        "candle_flicker_frame_2",
+        "candle_flicker_frame_3",
+        "candle_flicker_frame_2",
+        "candle_flicker_frame_1"
+      ]
+    },
+    "upward_liquid_drip": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        "upward_drip_frame_1",
+        "upward_drip_frame_2",
+        "upward_drip_frame_3",
+        "upward_drip_frame_4"
+      ]
+    },
+    "portrait_blink": {
+      "fps": 2,
+      "loop": false,
+      "trigger": "random_5_10_seconds",
+      "frames": [
+        "portrait_stern_aristocrat_open",
+        "portrait_stern_aristocrat_blink",
+        "portrait_stern_aristocrat_blink",
+        "portrait_stern_aristocrat_open"
+      ]
+    },
+    "mirror_portal_shimmer": {
+      "fps": 10,
+      "loop": true,
+      "frames": [
+        "shimmer_frame_1",
+        "shimmer_frame_2",
+        "shimmer_frame_3",
+        "shimmer_frame_4",
+        "shimmer_frame_3",
+        "shimmer_frame_2"
+      ]
+    },
+    "green_curtain_opening": {
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        "curtain_closed",
+        "curtain_opening_frame_1",
+        "curtain_opening_frame_2",
+        "curtain_fully_open"
+      ]
+    },
+    "green_fairy_split": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        "base_form",
+        "split_animation_frame_1",
+        "split_animation_frame_2",
+        "split_burst_1",
+        "split_burst_2",
+        "split_burst_3"
+      ]
+    },
+    "confused_spiral_indicator": {
+      "fps": 15,
+      "loop": true,
+      "frames": [
+        "confusion_spiral_1",
+        "confusion_spiral_2",
+        "confusion_spiral_3",
+        "confusion_spiral_4"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "absynthium_main_atlas",
+        "files": [
+          "absynthium_taproom_environment_complete.png",
+          "absynthium_interactive_objects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "absynthium_characters_atlas",
+        "files": [
+          "absynthium_npcs.png",
+          "absynthium_particle_effects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_resolution_all_effects",
+      "medium": "reduced_particle_count_simplified_mirror_reflections",
+      "low": "minimal_particles_no_perspective_warping_static_portals"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+  
+  "sprite_sheets": {
+    "tapdatvault_environment_complete": {
+      "file": "tapdatvault_environment_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "vault_door_entrance": {
+          "door_closed": {"x": 0, "y": 0, "width": 128, "height": 160},
+          "door_opening_frame_1": {"x": 128, "y": 0, "width": 128, "height": 160},
+          "door_opening_frame_2": {"x": 256, "y": 0, "width": 128, "height": 160},
+          "door_fully_open": {"x": 384, "y": 0, "width": 128, "height": 160},
+          "countdown_glyphs_idle": {"x": 512, "y": 0, "width": 64, "height": 32},
+          "countdown_glyphs_active": {"x": 576, "y": 0, "width": 64, "height": 32},
+          "neon_graffiti_tags": {"x": 640, "y": 0, "width": 128, "height": 64}
+        },
+        "brewing_vat_subwoofers": {
+          "vat_base_idle": {"x": 0, "y": 160, "width": 96, "height": 128},
+          "vat_bass_pulse_frame_1": {"x": 96, "y": 160, "width": 96, "height": 128},
+          "vat_bass_pulse_frame_2": {"x": 192, "y": 160, "width": 96, "height": 128},
+          "vat_bass_pulse_frame_3": {"x": 288, "y": 160, "width": 96, "height": 128},
+          "led_display_panel": {"x": 384, "y": 160, "width": 64, "height": 32},
+          "pressure_gauge": {"x": 448, "y": 160, "width": 32, "height": 48}
+        },
+        "fermentation_chambers": {
+          "chamber_base": {"x": 0, "y": 288, "width": 80, "height": 120},
+          "circuit_board_detail": {"x": 80, "y": 288, "width": 80, "height": 120},
+          "backlit_panel_off": {"x": 160, "y": 288, "width": 80, "height": 120},
+          "backlit_panel_on": {"x": 240, "y": 288, "width": 80, "height": 120},
+          "rhythm_indicator_scrolling": {"x": 320, "y": 288, "width": 80, "height": 120}
+        },
+        "neon_piping_grid": {
+          "horizontal_pipe_section": {"x": 0, "y": 408, "width": 64, "height": 16},
+          "vertical_pipe_section": {"x": 64, "y": 408, "width": 16, "height": 64},
+          "corner_pipe_joint": {"x": 80, "y": 408, "width": 32, "height": 32},
+          "glow_pulse_frame_1": {"x": 112, "y": 408, "width": 64, "height": 16},
+          "glow_pulse_frame_2": {"x": 176, "y": 408, "width": 64, "height": 16},
+          "glow_pulse_frame_3": {"x": 240, "y": 408, "width": 64, "height": 16}
+        },
+        "dj_booth_setup": {
+          "booth_base": {"x": 400, "y": 288, "width": 96, "height": 96},
+          "livestream_equipment": {"x": 496, "y": 288, "width": 64, "height": 64},
+          "turntable_spinning": {"x": 560, "y": 288, "width": 48, "height": 48}
+        },
+        "bar_vape_dispenser": {
+          "bar_counter": {"x": 512, "y": 160, "width": 128, "height": 64},
+          "vape_rig_system": {"x": 640, "y": 160, "width": 64, "height": 64},
+          "vapor_cloud_dispenser": {"x": 704, "y": 160, "width": 48, "height": 48}
+        },
+        "rgb_wall_effects": {
+          "wall_panel_base": {"x": 304, "y": 408, "width": 64, "height": 64},
+          "rgb_flicker_frame_1": {"x": 368, "y": 408, "width": 64, "height": 64},
+          "rgb_flicker_frame_2": {"x": 432, "y": 408, "width": 64, "height": 64},
+          "rgb_flicker_frame_3": {"x": 496, "y": 408, "width": 64, "height": 64},
+          "software_crash_effect": {"x": 560, "y": 408, "width": 64, "height": 64}
+        }
+      }
+    },
+    
+    "tapdatvault_interactive_objects": {
+      "file": "tapdatvault_interactive_objects.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "hologram_you_are_brewtiful": {
+          "hologram_base": {"x": 0, "y": 0, "width": 128, "height": 96},
+          "glitch_effect_frame_1": {"x": 128, "y": 0, "width": 128, "height": 96},
+          "glitch_effect_frame_2": {"x": 256, "y": 0, "width": 128, "height": 96},
+          "glitch_effect_frame_3": {"x": 384, "y": 0, "width": 128, "height": 96},
+          "photo_backdrop_effect": {"x": 0, "y": 96, "width": 128, "height": 96}
+        },
+        "rhythm_puzzle_interface": {
+          "button_prompt_up": {"x": 128, "y": 96, "width": 32, "height": 32},
+          "button_prompt_down": {"x": 160, "y": 96, "width": 32, "height": 32},
+          "button_prompt_left": {"x": 192, "y": 96, "width": 32, "height": 32},
+          "button_prompt_right": {"x": 224, "y": 96, "width": 32, "height": 32},
+          "perfect_timing_indicator": {"x": 256, "y": 96, "width": 48, "height": 16},
+          "failed_timing_indicator": {"x": 304, "y": 96, "width": 48, "height": 16},
+          "pressure_gauge_success": {"x": 128, "y": 128, "width": 64, "height": 64},
+          "pressure_gauge_failure": {"x": 192, "y": 128, "width": 64, "height": 64}
+        },
+        "vapor_cloud_effects": {
+          "heavy_vapor_cloud_1": {"x": 0, "y": 192, "width": 64, "height": 48},
+          "heavy_vapor_cloud_2": {"x": 64, "y": 192, "width": 64, "height": 48},
+          "heavy_vapor_cloud_3": {"x": 128, "y": 192, "width": 64, "height": 48},
+          "heavy_vapor_cloud_4": {"x": 192, "y": 192, "width": 64, "height": 48},
+          "vapor_burst_sync": {"x": 256, "y": 192, "width": 48, "height": 48}
+        },
+        "vip_vapor_lounge_entrance": {
+          "lounge_door_locked": {"x": 0, "y": 240, "width": 64, "height": 96},
+          "lounge_door_unlocked": {"x": 64, "y": 240, "width": 64, "height": 96},
+          "vip_access_granted": {"x": 128, "y": 240, "width": 64, "height": 96},
+          "neon_vip_sign": {"x": 192, "y": 240, "width": 48, "height": 24}
+        },
+        "cyberpunk_atmospheric_props": {
+          "circuit_breaker_panel": {"x": 304, "y": 192, "width": 48, "height": 64},
+          "neon_advertisement": {"x": 352, "y": 192, "width": 64, "height": 48},
+          "data_terminal": {"x": 416, "y": 192, "width": 48, "height": 64},
+          "security_camera": {"x": 464, "y": 192, "width": 32, "height": 32}
+        }
+      }
+    },
+    
+    "tapdatvault_npcs": {
+      "file": "tapdatvault_npcs.png",
+      "dimensions": {"width": 512, "height": 384},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "bartender_vape_rig": {
+          "idle_professional": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "dispensing_vapor_brew": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "adjusting_vape_rig": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "explaining_inhaling": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "vape_rig_lanyard_detail": {"x": 256, "y": 0, "width": 64, "height": 96}
+        },
+        "dj_zombie_01": {
+          "idle_glitching": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "beat_synced_movement_1": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "beat_synced_movement_2": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "glitch_visual_effect": {"x": 192, "y": 96, "width": 64, "height": 96}
+        },
+        "dj_zombie_02": {
+          "idle_glitching": {"x": 256, "y": 96, "width": 64, "height": 96},
+          "beat_synced_movement_1": {"x": 320, "y": 96, "width": 64, "height": 96},
+          "beat_synced_movement_2": {"x": 384, "y": 96, "width": 64, "height": 96}
+        },
+        "techno_monk_01": {
+          "half_visible_idle": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "fragmentary_speech": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "glitching_form": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "vapor_merged": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "techno_monk_02": {
+          "half_visible_idle": {"x": 256, "y": 192, "width": 64, "height": 96},
+          "cryptic_gesture": {"x": 320, "y": 192, "width": 64, "height": 96},
+          "rhythm_reactive_pose": {"x": 384, "y": 192, "width": 64, "height": 96}
+        },
+        "fridge_livestreamer": {
+          "streaming_idle": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "chat_interaction": {"x": 64, "y": 288, "width": 64, "height": 96},
+          "emote_reaction": {"x": 128, "y": 288, "width": 64, "height": 96},
+          "donation_alert": {"x": 192, "y": 288, "width": 64, "height": 96}
+        },
+        "glitched_brew_ad_bot": {
+          "crt_head_idle": {"x": 256, "y": 288, "width": 64, "height": 96},
+          "ad_banner_orbiting": {"x": 320, "y": 288, "width": 64, "height": 96},
+          "spam_attack_pose": {"x": 384, "y": 288, "width": 64, "height": 96},
+          "item_theft_animation": {"x": 448, "y": 288, "width": 64, "height": 96}
+        },
+        "strobe_brewmistress_boss": {
+          "base_form": {"x": 0, "y": 384, "width": 96, "height": 128},
+          "sound_wave_attack_1": {"x": 96, "y": 384, "width": 96, "height": 128},
+          "sound_wave_attack_2": {"x": 192, "y": 384, "width": 96, "height": 128},
+          "bass_drop_aoe": {"x": 288, "y": 384, "width": 96, "height": 128},
+          "spotlight_embarrass": {"x": 384, "y": 384, "width": 96, "height": 128},
+          "vulnerable_phase": {"x": 480, "y": 384, "width": 96, "height": 128}
+        }
+      }
+    },
+    
+    "tapdatvault_particle_effects": {
+      "file": "tapdatvault_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "vapor_clouds_heavy": {
+          "cloud_particle_1": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "cloud_particle_2": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "cloud_particle_3": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "cloud_particle_4": {"x": 96, "y": 0, "width": 32, "height": 32}
+        },
+        "neon_glow_particles": {
+          "cyan_glow": {"x": 0, "y": 32, "width": 16, "height": 16},
+          "pink_glow": {"x": 16, "y": 32, "width": 16, "height": 16},
+          "purple_glow": {"x": 32, "y": 32, "width": 16, "height": 16},
+          "multi_color_trail": {"x": 48, "y": 32, "width": 32, "height": 16}
+        },
+        "hologram_glitch_effects": {
+          "glitch_pattern_1": {"x": 128, "y": 0, "width": 48, "height": 48},
+          "glitch_pattern_2": {"x": 176, "y": 0, "width": 48, "height": 48},
+          "glitch_pattern_3": {"x": 224, "y": 0, "width": 48, "height": 48},
+          "scanline_distortion": {"x": 272, "y": 0, "width": 48, "height": 48}
+        },
+        "steam_burst_synced": {
+          "burst_frame_1": {"x": 0, "y": 64, "width": 32, "height": 32},
+          "burst_frame_2": {"x": 32, "y": 64, "width": 32, "height": 32},
+          "burst_frame_3": {"x": 64, "y": 64, "width": 32, "height": 32},
+          "burst_frame_4": {"x": 96, "y": 64, "width": 32, "height": 32}
+        },
+        "rhythm_reactive_lighting": {
+          "beat_pulse_cyan": {"x": 128, "y": 64, "width": 64, "height": 16},
+          "beat_pulse_pink": {"x": 192, "y": 64, "width": 64, "height": 16},
+          "beat_pulse_purple": {"x": 256, "y": 64, "width": 64, "height": 16},
+          "bass_drop_flash": {"x": 320, "y": 64, "width": 64, "height": 32}
+        },
+        "sound_wave_attack_effects": {
+          "wave_ripple_1": {"x": 0, "y": 96, "width": 64, "height": 64},
+          "wave_ripple_2": {"x": 64, "y": 96, "width": 64, "height": 64},
+          "wave_ripple_3": {"x": 128, "y": 96, "width": 64, "height": 64},
+          "bass_impact": {"x": 192, "y": 96, "width": 64, "height": 64}
+        },
+        "embarrassed_status_spotlight": {
+          "spotlight_cone": {"x": 256, "y": 96, "width": 48, "height": 64},
+          "spotlight_freeze": {"x": 304, "y": 96, "width": 48, "height": 64},
+          "embarrassed_spiral": {"x": 352, "y": 96, "width": 32, "height": 32}
+        }
+      }
+    },
+    
+    "tapdatvault_ui_elements": {
+      "file": "tapdatvault_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "grease_fingers_status_icon": {
+          "icon_active": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "icon_accuracy_penalty": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "icon_item_slip": {"x": 64, "y": 0, "width": 32, "height": 32}
+        },
+        "glow_up_aura_icon": {
+          "icon_active": {"x": 96, "y": 0, "width": 32, "height": 32},
+          "icon_charm_boost": {"x": 128, "y": 0, "width": 32, "height": 32},
+          "icon_defense_boost": {"x": 160, "y": 0, "width": 32, "height": 32}
+        },
+        "brewery_tour_progress": {
+          "checkpoint_2_complete": {"x": 0, "y": 32, "width": 64, "height": 32},
+          "checkpoint_2_incomplete": {"x": 64, "y": 32, "width": 64, "height": 32},
+          "tapdatvault_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
+        },
+        "rhythm_puzzle_ui": {
+          "combo_counter": {"x": 0, "y": 64, "width": 64, "height": 32},
+          "perfect_streak_indicator": {"x": 64, "y": 64, "width": 64, "height": 32},
+          "failure_strike_marker": {"x": 128, "y": 64, "width": 32, "height": 32},
+          "ejection_warning": {"x": 160, "y": 64, "width": 96, "height": 32}
+        },
+        "boss_battle_ui": {
+          "sound_wave_dodge_indicator": {"x": 0, "y": 96, "width": 48, "height": 32},
+          "bass_drop_warning": {"x": 48, "y": 96, "width": 48, "height": 32},
+          "vulnerable_phase_timer": {"x": 96, "y": 96, "width": 64, "height": 32},
+          "embarrassed_status_active": {"x": 160, "y": 96, "width": 32, "height": 32}
+        },
+        "achievement_popups": {
+          "vapor_enthusiast_unlocked": {"x": 192, "y": 0, "width": 128, "height": 48},
+          "strobe_brewmistress_defeated": {"x": 192, "y": 48, "width": 128, "height": 48},
+          "brewery_2_of_4_complete": {"x": 192, "y": 96, "width": 128, "height": 48}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "vault_door_opening": {
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        "door_closed",
+        "door_opening_frame_1",
+        "door_opening_frame_2",
+        "door_fully_open"
+      ]
+    },
+    "brewing_vat_bass_pulse": {
+      "fps": 120,
+      "loop": true,
+      "sync_to": "music_beat",
+      "frames": [
+        "vat_base_idle",
+        "vat_bass_pulse_frame_1",
+        "vat_bass_pulse_frame_2",
+        "vat_bass_pulse_frame_3",
+        "vat_bass_pulse_frame_2",
+        "vat_bass_pulse_frame_1"
+      ]
+    },
+    "hologram_glitch_cycle": {
+      "fps": 12,
+      "loop": true,
+      "trigger": "random_intervals",
+      "frames": [
+        "hologram_base",
+        "glitch_effect_frame_1",
+        "glitch_effect_frame_2",
+        "glitch_effect_frame_3",
+        "hologram_base"
+      ]
+    },
+    "neon_piping_pulse": {
+      "fps": 60,
+      "loop": true,
+      "sync_to": "music_beat",
+      "frames": [
+        "horizontal_pipe_section",
+        "glow_pulse_frame_1",
+        "glow_pulse_frame_2",
+        "glow_pulse_frame_3",
+        "glow_pulse_frame_2",
+        "glow_pulse_frame_1"
+      ]
+    },
+    "rgb_wall_flicker": {
+      "fps": 15,
+      "loop": true,
+      "frames": [
+        "wall_panel_base",
+        "rgb_flicker_frame_1",
+        "rgb_flicker_frame_2",
+        "rgb_flicker_frame_3",
+        "software_crash_effect",
+        "wall_panel_base"
+      ]
+    },
+    "dj_zombie_beat_sync": {
+      "fps": 120,
+      "loop": true,
+      "sync_to": "music_beat",
+      "frames": [
+        "idle_glitching",
+        "beat_synced_movement_1",
+        "idle_glitching",
+        "beat_synced_movement_2"
+      ]
+    },
+    "vapor_cloud_heavy_animation": {
+      "fps": 10,
+      "loop": true,
+      "frames": [
+        "cloud_particle_1",
+        "cloud_particle_2",
+        "cloud_particle_3",
+        "cloud_particle_4",
+        "cloud_particle_3",
+        "cloud_particle_2"
+      ]
+    },
+    "steam_burst_music_sync": {
+      "fps": 120,
+      "loop": false,
+      "trigger": "beat_downbeat",
+      "frames": [
+        "burst_frame_1",
+        "burst_frame_2",
+        "burst_frame_3",
+        "burst_frame_4"
+      ]
+    },
+    "strobe_brewmistress_attack": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        "base_form",
+        "sound_wave_attack_1",
+        "sound_wave_attack_2",
+        "bass_drop_aoe"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "tapdatvault_main_atlas",
+        "files": [
+          "tapdatvault_environment_complete.png",
+          "tapdatvault_interactive_objects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "tapdatvault_characters_atlas",
+        "files": [
+          "tapdatvault_npcs.png",
+          "tapdatvault_particle_effects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_resolution_all_rhythm_reactive_effects",
+      "medium": "reduced_particle_count_simplified_neon_glow",
+      "low": "minimal_particles_static_lighting_basic_rhythm_effects",
+      "potato": "essential_sprites_only_no_rhythm_reactive_elements"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_shadowexchange_threecrownkeghaus_brewery_03",
+  
+  "sprite_sheets": {
+    "threecrown_environment_complete": {
+      "file": "threecrown_environment_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "exterior_entrance": {
+          "alley_entrance": {"x": 0, "y": 0, "width": 128, "height": 160},
+          "backlit_sign_base": {"x": 128, "y": 0, "width": 96, "height": 64},
+          "three_crowns_rusted": {"x": 224, "y": 0, "width": 64, "height": 48},
+          "beer_stein_icon": {"x": 288, "y": 0, "width": 32, "height": 48},
+          "sticky_floor_texture": {"x": 320, "y": 0, "width": 96, "height": 32}
+        },
+        "mini_keg_chandelier": {
+          "chandelier_base": {"x": 0, "y": 160, "width": 128, "height": 96},
+          "flickering_frame_1": {"x": 128, "y": 160, "width": 128, "height": 96},
+          "flickering_frame_2": {"x": 256, "y": 160, "width": 128, "height": 96},
+          "flickering_frame_3": {"x": 384, "y": 160, "width": 128, "height": 96},
+          "keg_detail": {"x": 512, "y": 160, "width": 32, "height": 48}
+        },
+        "moldy_booths": {
+          "booth_base": {"x": 0, "y": 256, "width": 96, "height": 80},
+          "gaffer_tape_patches": {"x": 96, "y": 256, "width": 96, "height": 80},
+          "leather_deterioration": {"x": 192, "y": 256, "width": 96, "height": 80},
+          "booth_table_mismatched": {"x": 288, "y": 256, "width": 64, "height": 48}
+        },
+        "floor_tiles_stealth": {
+          "safe_tile": {"x": 0, "y": 336, "width": 32, "height": 32},
+          "creaky_tile": {"x": 32, "y": 336, "width": 32, "height": 32},
+          "creak_warning_indicator": {"x": 64, "y": 336, "width": 32, "height": 32},
+          "patron_occupied_tile": {"x": 96, "y": 336, "width": 32, "height": 32}
+        },
+        "beer_foam_sconces": {
+          "sconce_base": {"x": 0, "y": 368, "width": 48, "height": 64},
+          "orange_glow_frame_1": {"x": 48, "y": 368, "width": 48, "height": 64},
+          "orange_glow_frame_2": {"x": 96, "y": 368, "width": 48, "height": 64},
+          "orange_glow_frame_3": {"x": 144, "y": 368, "width": 48, "height": 64}
+        },
+        "velvet_keg_throne": {
+          "throne_base": {"x": 192, "y": 368, "width": 96, "height": 128},
+          "velvet_shimmer_frame_1": {"x": 288, "y": 368, "width": 96, "height": 128},
+          "velvet_shimmer_frame_2": {"x": 384, "y": 368, "width": 96, "height": 128},
+          "surrounding_kegs": {"x": 480, "y": 368, "width": 128, "height": 96}
+        },
+        "mismatched_furniture": {
+          "chair_too_tall": {"x": 0, "y": 496, "width": 32, "height": 64},
+          "chair_too_short": {"x": 32, "y": 496, "width": 32, "height": 40},
+          "wobbly_table": {"x": 64, "y": 496, "width": 64, "height": 48},
+          "stool_wrong_height": {"x": 128, "y": 496, "width": 24, "height": 56}
+        },
+        "wall_decay": {
+          "peeling_wallpaper": {"x": 152, "y": 496, "width": 128, "height": 96},
+          "exposed_brick": {"x": 280, "y": 496, "width": 96, "height": 96},
+          "mustard_art_base": {"x": 376, "y": 496, "width": 64, "height": 64},
+          "three_crown_heraldry_rusted": {"x": 440, "y": 496, "width": 48, "height": 64}
+        },
+        "bar_area": {
+          "bar_counter_gritty": {"x": 0, "y": 592, "width": 160, "height": 64},
+          "antique_goblets_display": {"x": 160, "y": 592, "width": 96, "height": 48},
+          "tap_handles_misaligned": {"x": 256, "y": 592, "width": 64, "height": 64}
+        }
+      }
+    },
+    
+    "threecrown_interactive_objects": {
+      "file": "threecrown_interactive_objects.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "passed_out_patrons": {
+          "patron_obstacle_1": {"x": 0, "y": 0, "width": 64, "height": 48},
+          "patron_obstacle_2": {"x": 64, "y": 0, "width": 64, "height": 48},
+          "patron_obstacle_3": {"x": 128, "y": 0, "width": 64, "height": 48},
+          "snoring_animation_1": {"x": 192, "y": 0, "width": 64, "height": 48},
+          "snoring_animation_2": {"x": 256, "y": 0, "width": 64, "height": 48}
+        },
+        "floor_creak_indicators": {
+          "visual_warning_pulse_1": {"x": 0, "y": 48, "width": 32, "height": 32},
+          "visual_warning_pulse_2": {"x": 32, "y": 48, "width": 32, "height": 32},
+          "visual_warning_pulse_3": {"x": 64, "y": 48, "width": 32, "height": 32},
+          "creak_ripple_effect": {"x": 96, "y": 48, "width": 48, "height": 32}
+        },
+        "antique_goblets": {
+          "goblet_slavic_design": {"x": 0, "y": 80, "width": 32, "height": 48},
+          "goblet_filled_tripel": {"x": 32, "y": 80, "width": 32, "height": 48},
+          "goblet_glow_effect": {"x": 64, "y": 80, "width": 32, "height": 48}
+        },
+        "keg_sentinel_arena_props": {
+          "arm_wrestling_table": {"x": 96, "y": 80, "width": 96, "height": 64},
+          "keg_throne_backdrop": {"x": 192, "y": 80, "width": 128, "height": 96},
+          "velvet_rope_barrier": {"x": 320, "y": 80, "width": 64, "height": 48}
+        },
+        "tracksuit_noble_props": {
+          "tracksuit_jacket_hanging": {"x": 0, "y": 176, "width": 48, "height": 64},
+          "empty_beer_bottles": {"x": 48, "y": 176, "width": 64, "height": 32},
+          "drinking_song_sheet": {"x": 112, "y": 176, "width": 32, "height": 48}
+        },
+        "health_code_violations": {
+          "grease_stain_large": {"x": 144, "y": 176, "width": 64, "height": 48},
+          "suspicious_puddle": {"x": 208, "y": 176, "width": 48, "height": 32},
+          "expired_food_debris": {"x": 256, "y": 176, "width": 32, "height": 24}
+        },
+        "signage_props": {
+          "noble_by_name_sign": {"x": 0, "y": 240, "width": 128, "height": 48},
+          "invented_beer_before_hygiene": {"x": 128, "y": 240, "width": 160, "height": 32},
+          "bravado_entrance_warning": {"x": 288, "y": 240, "width": 96, "height": 32}
+        }
+      }
+    },
+    
+    "threecrown_npcs": {
+      "file": "threecrown_npcs.png",
+      "dimensions": {"width": 512, "height": 384},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "bartender_tracksuit": {
+          "idle_professional": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "dispensing_tripel": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "heritage_pride_pose": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "health_code_dismissive": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "tracksuit_detail": {"x": 256, "y": 0, "width": 64, "height": 96}
+        },
+        "tanked_noble_01": {
+          "passed_out_idle": {"x": 0, "y": 96, "width": 64, "height": 48},
+          "snoring_animation": {"x": 64, "y": 96, "width": 64, "height": 48},
+          "tracksuit_slumped": {"x": 128, "y": 96, "width": 64, "height": 48}
+        },
+        "tanked_noble_02": {
+          "shouting_song_frame_1": {"x": 192, "y": 96, "width": 64, "height": 96},
+          "shouting_song_frame_2": {"x": 256, "y": 96, "width": 64, "height": 96},
+          "zero_rhythm_gesture": {"x": 320, "y": 96, "width": 64, "height": 96}
+        },
+        "slurring_bar_fly_01": {
+          "leaning_idle": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "gossip_whisper": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "vomiting_frame_1": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "vomiting_frame_2": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "slurring_bar_fly_02": {
+          "leaning_idle": {"x": 256, "y": 192, "width": 64, "height": 96},
+          "paulina_accusation_pose": {"x": 320, "y": 192, "width": 64, "height": 96},
+          "synchronized_vomit": {"x": 384, "y": 192, "width": 64, "height": 96}
+        },
+        "bouncer_miniboss": {
+          "idle_aggressive": {"x": 0, "y": 288, "width": 80, "height": 112},
+          "stumble_accusation": {"x": 80, "y": 288, "width": 80, "height": 112},
+          "combat_stance": {"x": 160, "y": 288, "width": 80, "height": 112},
+          "defeat_slump": {"x": 240, "y": 288, "width": 80, "height": 112}
+        },
+        "keg_sentinel_boss": {
+          "base_form": {"x": 320, "y": 0, "width": 96, "height": 128},
+          "arm_wrestling_phase_1": {"x": 416, "y": 0, "width": 96, "height": 128},
+          "arm_wrestling_phase_2": {"x": 320, "y": 128, "width": 96, "height": 128},
+          "strength_challenge_pose": {"x": 416, "y": 128, "width": 96, "height": 128},
+          "inspired_buff_cast": {"x": 320, "y": 256, "width": 96, "height": 128},
+          "defeat_shutdown": {"x": 416, "y": 256, "width": 96, "height": 128}
+        }
+      }
+    },
+    
+    "threecrown_particle_effects": {
+      "file": "threecrown_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "dust_motes_orange": {
+          "mote_particle_1": {"x": 0, "y": 0, "width": 16, "height": 16},
+          "mote_particle_2": {"x": 16, "y": 0, "width": 16, "height": 16},
+          "mote_particle_3": {"x": 32, "y": 0, "width": 16, "height": 16},
+          "mote_particle_4": {"x": 48, "y": 0, "width": 16, "height": 16}
+        },
+        "beer_foam_drips": {
+          "drip_frame_1": {"x": 0, "y": 16, "width": 16, "height": 24},
+          "drip_frame_2": {"x": 16, "y": 16, "width": 16, "height": 24},
+          "drip_frame_3": {"x": 32, "y": 16, "width": 16, "height": 24},
+          "drip_splash": {"x": 48, "y": 16, "width": 24, "height": 16}
+        },
+        "mustard_stain_particles": {
+          "stain_splatter_1": {"x": 64, "y": 0, "width": 24, "height": 24},
+          "stain_splatter_2": {"x": 88, "y": 0, "width": 24, "height": 24},
+          "stain_drip": {"x": 112, "y": 0, "width": 16, "height": 32}
+        },
+        "floor_creak_visual": {
+          "creak_wave_1": {"x": 0, "y": 40, "width": 32, "height": 32},
+          "creak_wave_2": {"x": 32, "y": 40, "width": 32, "height": 32},
+          "creak_wave_3": {"x": 64, "y": 40, "width": 32, "height": 32},
+          "danger_indicator": {"x": 96, "y": 40, "width": 32, "height": 32}
+        },
+        "embarrassed_status_indicator": {
+          "embarrassed_spiral_1": {"x": 128, "y": 0, "width": 32, "height": 32},
+          "embarrassed_spiral_2": {"x": 160, "y": 0, "width": 32, "height": 32},
+          "embarrassed_spiral_3": {"x": 192, "y": 0, "width": 32, "height": 32},
+          "gossip_bubble": {"x": 224, "y": 0, "width": 24, "height": 24}
+        },
+        "inspired_status_effect": {
+          "confidence_aura_1": {"x": 128, "y": 32, "width": 48, "height": 48},
+          "confidence_aura_2": {"x": 176, "y": 32, "width": 48, "height": 48},
+          "confidence_aura_3": {"x": 224, "y": 32, "width": 48, "height": 48},
+          "bravado_boost_shimmer": {"x": 272, "y": 32, "width": 32, "height": 32}
+        },
+        "vomit_particles": {
+          "synchronized_vomit_1": {"x": 0, "y": 72, "width": 32, "height": 32},
+          "synchronized_vomit_2": {"x": 32, "y": 72, "width": 32, "height": 32},
+          "splash_effect": {"x": 64, "y": 72, "width": 32, "height": 24}
+        },
+        "arm_wrestling_effects": {
+          "strength_clash_1": {"x": 96, "y": 72, "width": 48, "height": 48},
+          "strength_clash_2": {"x": 144, "y": 72, "width": 48, "height": 48},
+          "victory_burst": {"x": 192, "y": 72, "width": 64, "height": 64}
+        }
+      }
+    },
+    
+    "threecrown_ui_elements": {
+      "file": "threecrown_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "embarrassed_status_icon": {
+          "icon_active": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "icon_social_penalty": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "icon_expiring": {"x": 64, "y": 0, "width": 32, "height": 32}
+        },
+        "inspired_status_icon": {
+          "icon_active": {"x": 96, "y": 0, "width": 32, "height": 32},
+          "icon_bravado_boost": {"x": 128, "y": 0, "width": 32, "height": 32},
+          "icon_charm_boost": {"x": 160, "y": 0, "width": 32, "height": 32}
+        },
+        "brewery_tour_progress": {
+          "checkpoint_3_complete": {"x": 0, "y": 32, "width": 64, "height": 32},
+          "checkpoint_3_incomplete": {"x": 64, "y": 32, "width": 64, "height": 32},
+          "threecrown_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
+        },
+        "stealth_puzzle_ui": {
+          "safe_tile_indicator": {"x": 0, "y": 64, "width": 32, "height": 32},
+          "creaky_tile_warning": {"x": 32, "y": 64, "width": 32, "height": 32},
+          "patron_proximity_alert": {"x": 64, "y": 64, "width": 32, "height": 32},
+          "bouncer_spawn_warning": {"x": 96, "y": 64, "width": 48, "height": 32}
+        },
+        "boss_battle_ui": {
+          "arm_wrestling_meter": {"x": 0, "y": 96, "width": 96, "height": 32},
+          "strength_challenge_bar": {"x": 96, "y": 96, "width": 96, "height": 32},
+          "timing_window_indicator": {"x": 192, "y": 96, "width": 64, "height": 32}
+        },
+        "achievement_popups": {
+          "noble_heritage_unlocked": {"x": 0, "y": 128, "width": 128, "height": 48},
+          "keg_sentinel_defeated": {"x": 128, "y": 128, "width": 128, "height": 48},
+          "brewery_3_of_4_complete": {"x": 256, "y": 128, "width": 128, "height": 48}
+        },
+        "bravado_check_ui": {
+          "stat_requirement_display": {"x": 0, "y": 176, "width": 96, "height": 32},
+          "confidence_gate_passed": {"x": 96, "y": 176, "width": 96, "height": 32},
+          "confidence_gate_failed": {"x": 192, "y": 176, "width": 96, "height": 32}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "mini_keg_chandelier_flicker": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "chandelier_base",
+        "flickering_frame_1",
+        "flickering_frame_2",
+        "flickering_frame_3",
+        "flickering_frame_2",
+        "flickering_frame_1"
+      ]
+    },
+    "beer_foam_sconce_glow": {
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        "sconce_base",
+        "orange_glow_frame_1",
+        "orange_glow_frame_2",
+        "orange_glow_frame_3",
+        "orange_glow_frame_2",
+        "orange_glow_frame_1"
+      ]
+    },
+    "velvet_throne_shimmer": {
+      "fps": 4,
+      "loop": true,
+      "frames": [
+        "throne_base",
+        "velvet_shimmer_frame_1",
+        "velvet_shimmer_frame_2",
+        "velvet_shimmer_frame_1"
+      ]
+    },
+    "patron_snoring_cycle": {
+      "fps": 2,
+      "loop": true,
+      "trigger": "random_intervals",
+      "frames": [
+        "passed_out_idle",
+        "snoring_animation_1",
+        "snoring_animation_2",
+        "snoring_animation_1"
+      ]
+    },
+    "synchronized_vomiting": {
+      "fps": 4,
+      "loop": false,
+      "trigger": "random_5_10_seconds",
+      "frames": [
+        "leaning_idle",
+        "vomiting_frame_1",
+        "vomiting_frame_2",
+        "synchronized_vomit"
+      ]
+    },
+    "floor_creak_warning": {
+      "fps": 12,
+      "loop": false,
+      "trigger": "player_near_creaky_tile",
+      "frames": [
+        "visual_warning_pulse_1",
+        "visual_warning_pulse_2",
+        "visual_warning_pulse_3",
+        "creak_ripple_effect"
+      ]
+    },
+    "keg_sentinel_arm_wrestling": {
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        "base_form",
+        "arm_wrestling_phase_1",
+        "arm_wrestling_phase_2",
+        "strength_challenge_pose"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "threecrown_main_atlas",
+        "files": [
+          "threecrown_environment_complete.png",
+          "threecrown_interactive_objects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "threecrown_characters_atlas",
+        "files": [
+          "threecrown_npcs.png",
+          "threecrown_particle_effects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_resolution_all_stealth_effects",
+      "medium": "reduced_particle_count_simplified_patron_animations",
+      "low": "minimal_particles_static_lighting_basic_stealth_indicators",
+      "potato": "essential_sprites_only_no_atmospheric_effects"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  
+  "sprite_sheets": {
+    "velvetcurtain_environment_complete": {
+      "file": "velvetcurtain_environment_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "exterior_alley_entrance": {
+          "graffiti_alley_walls": {"x": 0, "y": 0, "width": 128, "height": 160},
+          "opera_ruins_billboard": {"x": 128, "y": 0, "width": 96, "height": 64},
+          "graffiti_dumpster_mural": {"x": 224, "y": 0, "width": 64, "height": 96},
+          "velvet_rope_checkpoint": {"x": 288, "y": 0, "width": 48, "height": 64}
+        },
+        "bass_pulsating_curtain": {
+          "curtain_idle": {"x": 0, "y": 160, "width": 96, "height": 128},
+          "curtain_pulse_frame_1": {"x": 96, "y": 160, "width": 96, "height": 128},
+          "curtain_pulse_frame_2": {"x": 192, "y": 160, "width": 96, "height": 128},
+          "curtain_pulse_frame_3": {"x": 288, "y": 160, "width": 96, "height": 128},
+          "curtain_opening": {"x": 384, "y": 160, "width": 96, "height": 128}
+        },
+        "vape_pen_crystal_chandelier": {
+          "chandelier_base": {"x": 0, "y": 288, "width": 128, "height": 112},
+          "crushed_vape_pens": {"x": 128, "y": 288, "width": 128, "height": 112},
+          "crystal_teardrops": {"x": 256, "y": 288, "width": 128, "height": 112},
+          "glow_effect": {"x": 384, "y": 288, "width": 64, "height": 64}
+        },
+        "gold_stripper_pole_coat_racks": {
+          "pole_base": {"x": 0, "y": 400, "width": 32, "height": 96},
+          "gold_plating_detail": {"x": 32, "y": 400, "width": 32, "height": 96},
+          "coats_hanging": {"x": 64, "y": 400, "width": 48, "height": 96},
+          "pole_cluster": {"x": 112, "y": 400, "width": 96, "height": 96}
+        },
+        "semicircular_velvet_booths": {
+          "booth_base": {"x": 208, "y": 400, "width": 96, "height": 80},
+          "crushed_velvet_texture": {"x": 304, "y": 400, "width": 96, "height": 80},
+          "led_underglow_off": {"x": 400, "y": 400, "width": 96, "height": 80},
+          "led_underglow_pulse_1": {"x": 496, "y": 400, "width": 96, "height": 80},
+          "led_underglow_pulse_2": {"x": 592, "y": 400, "width": 96, "height": 80}
+        },
+        "broken_throne_dj_dais": {
+          "throne_base": {"x": 0, "y": 496, "width": 128, "height": 128},
+          "broken_elements": {"x": 128, "y": 496, "width": 128, "height": 128},
+          "dj_equipment": {"x": 256, "y": 496, "width": 96, "height": 96},
+          "turntable_spinning_1": {"x": 352, "y": 496, "width": 48, "height": 48},
+          "turntable_spinning_2": {"x": 400, "y": 496, "width": 48, "height": 48}
+        },
+        "neon_aphorism_signs": {
+          "real_party_sign_base": {"x": 0, "y": 624, "width": 160, "height": 48},
+          "real_party_flicker_1": {"x": 160, "y": 624, "width": 160, "height": 48},
+          "real_party_flicker_2": {"x": 320, "y": 624, "width": 160, "height": 48},
+          "vibes_only_sign": {"x": 480, "y": 624, "width": 128, "height": 32}
+        },
+        "burgundy_fog_effects": {
+          "fog_layer_1": {"x": 0, "y": 672, "width": 256, "height": 64},
+          "fog_layer_2": {"x": 256, "y": 672, "width": 256, "height": 64},
+          "fog_dense": {"x": 512, "y": 672, "width": 128, "height": 64}
+        },
+        "vip_bathroom_entrance": {
+          "staff_only_curtain_closed": {"x": 640, "y": 496, "width": 64, "height": 96},
+          "staff_only_curtain_open": {"x": 704, "y": 496, "width": 64, "height": 96},
+          "bouncer_guard_left": {"x": 768, "y": 496, "width": 48, "height": 96},
+          "bouncer_guard_right": {"x": 816, "y": 496, "width": 48, "height": 96}
+        }
+      }
+    },
+    
+    "velvetcurtain_interactive_objects": {
+      "file": "velvetcurtain_interactive_objects.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "vip_bathroom_interior": {
+          "velvet_lined_seat": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "champagne_holder_chipped": {"x": 64, "y": 0, "width": 32, "height": 48},
+          "moet_spite_reserve": {"x": 96, "y": 0, "width": 24, "height": 48},
+          "selfie_cam_mirror": {"x": 120, "y": 0, "width": 64, "height": 64},
+          "cryptoqueen_filter": {"x": 184, "y": 0, "width": 64, "height": 64}
+        },
+        "bathroom_graffiti_system": {
+          "roi_regret_text": {"x": 0, "y": 64, "width": 96, "height": 32},
+          "blew_it_text": {"x": 96, "y": 64, "width": 64, "height": 24},
+          "buy_low_cry_high": {"x": 160, "y": 64, "width": 96, "height": 24},
+          "qr_code_nft_reveal": {"x": 256, "y": 64, "width": 48, "height": 48},
+          "velvet_dao_qr": {"x": 304, "y": 64, "width": 48, "height": 48},
+          "cracked_tile_peeling": {"x": 352, "y": 64, "width": 64, "height": 64}
+        },
+        "drunk_champagne_drip_effect": {
+          "text_drip_frame_1": {"x": 0, "y": 128, "width": 96, "height": 48},
+          "text_drip_frame_2": {"x": 96, "y": 128, "width": 96, "height": 48},
+          "bubble_particle_overlay": {"x": 192, "y": 128, "width": 64, "height": 64}
+        },
+        "hungover_pixel_kebab_icon": {
+          "kebab_glow_inactive": {"x": 256, "y": 128, "width": 32, "height": 32},
+          "kebab_glow_active": {"x": 288, "y": 128, "width": 32, "height": 32},
+          "fisto_lore_unlock": {"x": 320, "y": 128, "width": 96, "height": 48}
+        },
+        "influencer_ritual_props": {
+          "phone_livestream_setup": {"x": 0, "y": 192, "width": 48, "height": 64},
+          "absinthe_bottles": {"x": 48, "y": 192, "width": 64, "height": 48},
+          "fake_occult_symbols": {"x": 112, "y": 192, "width": 64, "height": 64},
+          "follower_count_display": {"x": 176, "y": 192, "width": 64, "height": 32}
+        },
+        "club_patron_props": {
+          "ravewear_accessories": {"x": 0, "y": 256, "width": 64, "height": 48},
+          "opera_cloak_thrifted": {"x": 64, "y": 256, "width": 48, "height": 64},
+          "nft_logo_crop_top": {"x": 112, "y": 256, "width": 32, "height": 48},
+          "expired_wristband_bribe": {"x": 144, "y": 256, "width": 32, "height": 16}
+        },
+        "bouncer_signage": {
+          "vibes_only_sign": {"x": 176, "y": 256, "width": 128, "height": 48},
+          "no_shoes_no_dignity": {"x": 304, "y": 256, "width": 128, "height": 48},
+          "tech_bro_sponsorship_plaque": {"x": 0, "y": 304, "width": 160, "height": 32}
+        }
+      }
+    },
+    
+    "velvetcurtain_npcs": {
+      "file": "velvetcurtain_npcs.png",
+      "dimensions": {"width": 512, "height": 384},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "cybernetic_eyed_bouncer": {
+          "idle_guard": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "eye_glow_frame_1": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "eye_glow_frame_2": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "charisma_check_stance": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "wristband_acceptance": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "rejection_gesture": {"x": 320, "y": 0, "width": 64, "height": 96}
+        },
+        "vape_witch_vanessa": {
+          "idle_vaping": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "crystal_nft_display": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "exhaling_vape_cloud": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "quiz_questioning": {"x": 192, "y": 96, "width": 64, "height": 96},
+          "cleansing_gesture": {"x": 256, "y": 96, "width": 64, "height": 96},
+          "charged_quartz_offering": {"x": 320, "y": 96, "width": 64, "height": 96}
+        },
+        "influencer_performing_ritual": {
+          "livestream_pose": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "fake_occult_gesture": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "follower_summoning": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "phone_check_nervous": {"x": 192, "y": 192, "width": 64, "height": 96},
+          "embarrassed_exposed": {"x": 256, "y": 192, "width": 64, "height": 96}
+        },
+        "club_patron_01_sound_alchemist": {
+          "idle_pretentious": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "explaining_dj_title": {"x": 64, "y": 288, "width": 64, "height": 96},
+          "ravewear_detail": {"x": 128, "y": 288, "width": 64, "height": 96}
+        },
+        "club_patron_02_emotional_damage": {
+          "idle_cocktail": {"x": 192, "y": 288, "width": 64, "height": 96},
+          "explaining_drink": {"x": 256, "y": 288, "width": 64, "height": 96},
+          "thrifted_opera_cloak": {"x": 320, "y": 288, "width": 64, "height": 96}
+        },
+        "club_patron_03_age_denial": {
+          "idle_insisting_22": {"x": 384, "y": 0, "width": 64, "height": 96},
+          "definitely_not_40": {"x": 448, "y": 0, "width": 64, "height": 96},
+          "nft_crop_top_detail": {"x": 384, "y": 96, "width": 64, "height": 96}
+        },
+        "dj_sound_alchemist": {
+          "mixing_glitchy_lounge": {"x": 384, "y": 192, "width": 64, "height": 96},
+          "pretentious_announcement": {"x": 448, "y": 192, "width": 64, "height": 96},
+          "turntable_gesture": {"x": 384, "y": 288, "width": 64, "height": 96}
+        },
+        "vip_bathroom_bouncers": {
+          "buffed_guard_01": {"x": 448, "y": 288, "width": 48, "height": 96},
+          "buffed_guard_02": {"x": 0, "y": 384, "width": 48, "height": 96},
+          "bravado_check_stance": {"x": 48, "y": 384, "width": 48, "height": 96}
+        }
+      }
+    },
+    
+    "velvetcurtain_particle_effects": {
+      "file": "velvetcurtain_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "burgundy_fog_particles": {
+          "fog_particle_1": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "fog_particle_2": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "fog_particle_3": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "fog_dense_cloud": {"x": 96, "y": 0, "width": 48, "height": 48}
+        },
+        "vape_cloud_effects": {
+          "vape_cloud_small": {"x": 0, "y": 48, "width": 24, "height": 24},
+          "vape_cloud_medium": {"x": 24, "y": 48, "width": 32, "height": 32},
+          "vape_cloud_large": {"x": 56, "y": 48, "width": 48, "height": 48},
+          "peach_mango_tint": {"x": 104, "y": 48, "width": 32, "height": 32}
+        },
+        "led_underglow_particles": {
+          "underglow_pulse_cyan": {"x": 136, "y": 0, "width": 64, "height": 16},
+          "underglow_pulse_purple": {"x": 200, "y": 0, "width": 64, "height": 16},
+          "underglow_pulse_gold": {"x": 264, "y": 0, "width": 64, "height": 16},
+          "underglow_shimmer": {"x": 328, "y": 0, "width": 48, "height": 16}
+        },
+        "neon_sign_glow": {
+          "neon_flicker_1": {"x": 0, "y": 80, "width": 64, "height": 32},
+          "neon_flicker_2": {"x": 64, "y": 80, "width": 64, "height": 32},
+          "neon_pulse_bass": {"x": 128, "y": 80, "width": 64, "height": 32}
+        },
+        "bass_ripple_effects": {
+          "bass_wave_1": {"x": 0, "y": 112, "width": 48, "height": 48},
+          "bass_wave_2": {"x": 48, "y": 112, "width": 48, "height": 48},
+          "bass_wave_3": {"x": 96, "y": 112, "width": 48, "height": 48},
+          "curtain_pulse_visual": {"x": 144, "y": 112, "width": 64, "height": 48}
+        },
+        "champagne_bubble_particles": {
+          "bubble_small": {"x": 208, "y": 112, "width": 8, "height": 8},
+          "bubble_medium": {"x": 216, "y": 112, "width": 12, "height": 12},
+          "bubble_large": {"x": 228, "y": 112, "width": 16, "height": 16},
+          "bubble_pop": {"x": 244, "y": 112, "width": 16, "height": 16}
+        },
+        "confused_status_vape": {
+          "confused_spiral_1": {"x": 0, "y": 160, "width": 32, "height": 32},
+          "confused_spiral_2": {"x": 32, "y": 160, "width": 32, "height": 32},
+          "confused_spiral_3": {"x": 64, "y": 160, "width": 32, "height": 32}
+        },
+        "embarrassed_status_ritual": {
+          "embarrassed_aura_1": {"x": 96, "y": 160, "width": 48, "height": 48},
+          "embarrassed_aura_2": {"x": 144, "y": 160, "width": 48, "height": 48},
+          "social_failure_shimmer": {"x": 192, "y": 160, "width": 32, "height": 32}
+        }
+      }
+    },
+    
+    "velvetcurtain_ui_elements": {
+      "file": "velvetcurtain_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "charisma_check_ui": {
+          "charisma_requirement": {"x": 0, "y": 0, "width": 96, "height": 32},
+          "check_passed": {"x": 96, "y": 0, "width": 96, "height": 32},
+          "check_failed": {"x": 192, "y": 0, "width": 96, "height": 32},
+          "wristband_alternative": {"x": 0, "y": 32, "width": 96, "height": 32}
+        },
+        "bravado_check_bathroom": {
+          "bravado_requirement": {"x": 96, "y": 32, "width": 96, "height": 32},
+          "bathroom_access_granted": {"x": 192, "y": 32, "width": 96, "height": 32},
+          "bathroom_access_denied": {"x": 0, "y": 64, "width": 96, "height": 32}
+        },
+        "vanessa_quiz_ui": {
+          "crystal_nft_question": {"x": 96, "y": 64, "width": 128, "height": 48},
+          "quiz_success_10sp": {"x": 224, "y": 64, "width": 96, "height": 32},
+          "quiz_failure_confused": {"x": 320, "y": 64, "width": 96, "height": 32}
+        },
+        "nft_discovery_ui": {
+          "qr_scan_prompt": {"x": 0, "y": 112, "width": 96, "height": 48},
+          "nft_02_acquired": {"x": 96, "y": 112, "width": 128, "height": 48},
+          "pixelated_kebab_monkey": {"x": 224, "y": 112, "width": 64, "height": 64}
+        },
+        "achievement_popups": {
+          "vibes_only_unlocked": {"x": 0, "y": 176, "width": 128, "height": 48},
+          "vape_witch_encounter": {"x": 128, "y": 176, "width": 128, "height": 48},
+          "nft_hunter_progress": {"x": 256, "y": 176, "width": 128, "height": 48}
+        },
+        "couchsurf_status": {
+          "vanessa_quiz_passed_flag": {"x": 0, "y": 224, "width": 96, "height": 32},
+          "vanessa_quiz_failed_flag": {"x": 96, "y": 224, "width": 96, "height": 32},
+          "couchsurf_vanessa_done": {"x": 192, "y": 224, "width": 96, "height": 32}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "bass_pulsating_curtain": {
+      "fps": 120,
+      "loop": true,
+      "sync_to": "music_bass",
+      "frames": [
+        "curtain_idle",
+        "curtain_pulse_frame_1",
+        "curtain_pulse_frame_2",
+        "curtain_pulse_frame_3",
+        "curtain_pulse_frame_2",
+        "curtain_pulse_frame_1"
+      ]
+    },
+    "neon_sign_flicker_bass": {
+      "fps": 60,
+      "loop": true,
+      "sync_to": "music_bass",
+      "frames": [
+        "real_party_sign_base",
+        "real_party_flicker_1",
+        "real_party_flicker_2",
+        "real_party_flicker_1"
+      ]
+    },
+    "led_booth_underglow_pulse": {
+      "fps": 30,
+      "loop": true,
+      "frames": [
+        "led_underglow_off",
+        "led_underglow_pulse_1",
+        "led_underglow_pulse_2",
+        "led_underglow_pulse_1"
+      ]
+    },
+    "bouncer_eye_glow": {
+      "fps": 4,
+      "loop": true,
+      "frames": [
+        "idle_guard",
+        "eye_glow_frame_1",
+        "eye_glow_frame_2",
+        "eye_glow_frame_1"
+      ]
+    },
+    "vanessa_vaping_cycle": {
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        "idle_vaping",
+        "exhaling_vape_cloud",
+        "idle_vaping"
+      ]
+    },
+    "dj_turntable_spin": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        "turntable_spinning_1",
+        "turntable_spinning_2"
+      ]
+    },
+    "champagne_drip_drunk_effect": {
+      "fps": 8,
+      "loop": true,
+      "trigger": "drunk_status_active",
+      "frames": [
+        "text_drip_frame_1",
+        "text_drip_frame_2",
+        "bubble_particle_overlay"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "velvetcurtain_main_atlas",
+        "files": [
+          "velvetcurtain_environment_complete.png",
+          "velvetcurtain_interactive_objects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "velvetcurtain_characters_atlas",
+        "files": [
+          "velvetcurtain_npcs.png",
+          "velvetcurtain_particle_effects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_resolution_all_fog_and_lighting_effects",
+      "medium": "reduced_particle_count_simplified_neon_glow",
+      "low": "minimal_fog_static_lighting_basic_neon",
+      "potato": "essential_sprites_only_no_atmospheric_effects"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  
+  "sprite_sheets": {
+    "velvet_club_environment_complete": {
+      "file": "velvet_club_environment_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "vape_pen_crystal_chandeliers": {
+          "chandelier_base_structure": {"x": 0, "y": 0, "width": 128, "height": 96},
+          "crystal_teardrop_details": {"x": 128, "y": 0, "width": 64, "height": 48},
+          "chandelier_glow_frame_1": {"x": 192, "y": 0, "width": 128, "height": 96},
+          "chandelier_glow_frame_2": {"x": 320, "y": 0, "width": 128, "height": 96},
+          "chandelier_glow_frame_3": {"x": 448, "y": 0, "width": 128, "height": 96},
+          "vape_pen_detail_closeup": {"x": 576, "y": 0, "width": 32, "height": 32}
+        },
+        "gold_plated_stripper_poles": {
+          "pole_base_structure": {"x": 0, "y": 96, "width": 48, "height": 128},
+          "pole_top_mount": {"x": 48, "y": 96, "width": 32, "height": 32},
+          "pole_base_mount": {"x": 80, "y": 96, "width": 32, "height": 32},
+          "coat_hanging_position_1": {"x": 112, "y": 96, "width": 64, "height": 96},
+          "coat_hanging_position_2": {"x": 176, "y": 96, "width": 64, "height": 96},
+          "gold_gleam_effect": {"x": 240, "y": 96, "width": 24, "height": 24}
+        },
+        "semicircular_crushed_velvet_booths": {
+          "booth_structure_left": {"x": 0, "y": 224, "width": 96, "height": 64},
+          "booth_structure_center": {"x": 96, "y": 224, "width": 64, "height": 64},
+          "booth_structure_right": {"x": 160, "y": 224, "width": 96, "height": 64},
+          "booth_table": {"x": 256, "y": 224, "width": 64, "height": 32},
+          "led_underglow_base": {"x": 320, "y": 224, "width": 96, "height": 16},
+          "led_underglow_pulse_1": {"x": 416, "y": 224, "width": 96, "height": 16},
+          "led_underglow_pulse_2": {"x": 512, "y": 224, "width": 96, "height": 16},
+          "led_underglow_pulse_3": {"x": 608, "y": 224, "width": 96, "height": 16}
+        },
+        "dj_broken_throne_dais": {
+          "throne_base": {"x": 0, "y": 288, "width": 128, "height": 96},
+          "dj_equipment_setup": {"x": 128, "y": 288, "width": 96, "height": 64},
+          "throne_crack_detail": {"x": 224, "y": 288, "width": 64, "height": 64},
+          "dj_spotlight": {"x": 288, "y": 288, "width": 48, "height": 48},
+          "turntable_spinning_frame_1": {"x": 336, "y": 288, "width": 48, "height": 48},
+          "turntable_spinning_frame_2": {"x": 384, "y": 288, "width": 48, "height": 48},
+          "turntable_spinning_frame_3": {"x": 432, "y": 288, "width": 48, "height": 48},
+          "turntable_spinning_frame_4": {"x": 480, "y": 288, "width": 48, "height": 48}
+        },
+        "neon_aphorism_signs": {
+          "real_party_in_head_frame_1": {"x": 0, "y": 384, "width": 256, "height": 48},
+          "real_party_in_head_frame_2": {"x": 256, "y": 384, "width": 256, "height": 48},
+          "real_party_in_head_frame_3": {"x": 512, "y": 384, "width": 256, "height": 48},
+          "neon_letter_flicker_detail": {"x": 768, "y": 384, "width": 32, "height": 48},
+          "neon_tube_glow": {"x": 800, "y": 384, "width": 16, "height": 48}
+        },
+        "heavy_velvet_curtain_entrance": {
+          "curtain_closed": {"x": 0, "y": 432, "width": 96, "height": 128},
+          "curtain_bass_pulse_1": {"x": 96, "y": 432, "width": 96, "height": 128},
+          "curtain_bass_pulse_2": {"x": 192, "y": 432, "width": 96, "height": 128},
+          "curtain_bass_pulse_3": {"x": 288, "y": 432, "width": 96, "height": 128},
+          "curtain_opening_frame_1": {"x": 384, "y": 432, "width": 96, "height": 128},
+          "curtain_opening_frame_2": {"x": 480, "y": 432, "width": 96, "height": 128},
+          "curtain_fully_open": {"x": 576, "y": 432, "width": 96, "height": 128}
+        },
+        "burgundy_fog_effects": {
+          "fog_layer_1_base": {"x": 0, "y": 560, "width": 320, "height": 48},
+          "fog_layer_2_mid": {"x": 320, "y": 560, "width": 320, "height": 48},
+          "fog_layer_3_high": {"x": 640, "y": 560, "width": 320, "height": 48},
+          "fog_swirl_pattern": {"x": 0, "y": 608, "width": 128, "height": 64}
+        },
+        "wall_floor_textures": {
+          "opera_ruins_wall": {"x": 0, "y": 672, "width": 128, "height": 96},
+          "graffiti_dumpster_mural": {"x": 128, "y": 672, "width": 96, "height": 64},
+          "velvet_rope_checkpoint": {"x": 224, "y": 672, "width": 64, "height": 48},
+          "floor_tiles_club": {"x": 288, "y": 672, "width": 128, "height": 64}
+        }
+      }
+    },
+    
+    "velvet_club_interactive_objects": {
+      "file": "velvet_club_interactive_objects.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "vip_bathroom_staff_only_curtain": {
+          "red_velvet_curtain_closed": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "curtain_with_embroidery": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "bouncer_guard_left": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "bouncer_guard_right": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "curtain_opening": {"x": 256, "y": 0, "width": 64, "height": 96}
+        },
+        "vip_bathroom_interior": {
+          "black_velvet_toilet_seat": {"x": 0, "y": 96, "width": 48, "height": 64},
+          "champagne_holder_mount": {"x": 48, "y": 96, "width": 32, "height": 48},
+          "moet_2003_bottle": {"x": 80, "y": 96, "width": 16, "height": 48},
+          "selfie_cam_mirror": {"x": 96, "y": 96, "width": 64, "height": 96},
+          "cryptoqueen_filter_overlay": {"x": 160, "y": 96, "width": 64, "height": 64},
+          "cracked_tile_peeling": {"x": 224, "y": 96, "width": 32, "height": 32},
+          "qr_code_nft_2": {"x": 256, "y": 96, "width": 32, "height": 32}
+        },
+        "bathroom_graffiti_elements": {
+          "roi_regret_on_investment": {"x": 0, "y": 192, "width": 128, "height": 24},
+          "i_blew_it_literally": {"x": 128, "y": 192, "width": 96, "height": 24},
+          "buy_low_cry_high": {"x": 224, "y": 192, "width": 80, "height": 24},
+          "velvet_dao_qr_code": {"x": 304, "y": 192, "width": 32, "height": 32},
+          "startup_ideas_scribbled": {"x": 336, "y": 192, "width": 64, "height": 32},
+          "handles_altcoin_schemes": {"x": 400, "y": 192, "width": 96, "height": 32}
+        },
+        "tech_bro_sponsorship_plaque": {
+          "faux_brass_plaque": {"x": 0, "y": 240, "width": 128, "height": 48},
+          "plaque_text_detail": {"x": 128, "y": 240, "width": 128, "height": 48}
+        },
+        "drunk_state_visual_effects": {
+          "champagne_drip_overlay_frame_1": {"x": 0, "y": 288, "width": 128, "height": 96},
+          "champagne_drip_overlay_frame_2": {"x": 128, "y": 288, "width": 128, "height": 96},
+          "champagne_drip_overlay_frame_3": {"x": 256, "y": 288, "width": 128, "height": 96},
+          "bubble_particle": {"x": 384, "y": 288, "width": 16, "height": 16},
+          "pixel_kebab_icon": {"x": 400, "y": 288, "width": 24, "height": 24}
+        },
+        "dance_floor_elements": {
+          "rgb_led_floor_panel": {"x": 0, "y": 384, "width": 64, "height": 64},
+          "spilled_drink_puddle": {"x": 64, "y": 384, "width": 48, "height": 32},
+          "glitter_trail": {"x": 112, "y": 384, "width": 64, "height": 24}
+        },
+        "environmental_details": {
+          "expired_concert_wristband": {"x": 176, "y": 384, "width": 32, "height": 16},
+          "vape_cloud_dense": {"x": 208, "y": 384, "width": 48, "height": 48},
+          "lip_gloss_wristband_trail": {"x": 256, "y": 384, "width": 96, "height": 24}
+        }
+      }
+    },
+    
+    "velvet_club_npcs": {
+      "file": "velvet_club_npcs.png",
+      "dimensions": {"width": 512, "height": 512},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "cybernetic_eyed_bouncer": {
+          "idle_guard_stance": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "eye_glow_animation_frame_1": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "eye_glow_animation_frame_2": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "eye_glow_animation_frame_3": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "charisma_check_pass_gesture": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "charisma_check_fail_gesture": {"x": 320, "y": 0, "width": 64, "height": 96},
+          "bribe_acceptance": {"x": 384, "y": 0, "width": 64, "height": 96}
+        },
+        "vape_witch_vanessa": {
+          "idle_with_vape": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "exhaling_vape_cloud": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "crystal_nft_display": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "quiz_asking_pose": {"x": 192, "y": 96, "width": 64, "height": 96},
+          "morning_cleansing_scene": {"x": 256, "y": 96, "width": 64, "height": 96},
+          "disappointed_quiz_fail": {"x": 320, "y": 96, "width": 64, "height": 96},
+          "happy_quiz_success": {"x": 384, "y": 96, "width": 64, "height": 96}
+        },
+        "club_patron_archetypes": {
+          "ravewear_patron_idle": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "opera_cloak_patron": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "nft_crop_top_patron": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "age_denial_patron": {"x": 192, "y": 192, "width": 64, "height": 96},
+          "sound_alchemist_comment": {"x": 256, "y": 192, "width": 64, "height": 96},
+          "emotional_damage_cocktail": {"x": 320, "y": 192, "width": 64, "height": 96}
+        },
+        "influencer_performing_ritual": {
+          "livestream_setup": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "fake_mystical_pose_1": {"x": 64, "y": 288, "width": 64, "height": 96},
+          "fake_mystical_pose_2": {"x": 128, "y": 288, "width": 64, "height": 96},
+          "exposed_embarrassed": {"x": 192, "y": 288, "width": 64, "height": 96},
+          "follower_count_display": {"x": 256, "y": 288, "width": 32, "height": 16},
+          "ritual_props": {"x": 288, "y": 288, "width": 48, "height": 48}
+        },
+        "dj_sound_alchemist": {
+          "dj_mixing_idle": {"x": 0, "y": 384, "width": 64, "height": 96},
+          "scratching_animation": {"x": 64, "y": 384, "width": 64, "height": 96},
+          "headphones_detail": {"x": 128, "y": 384, "width": 64, "height": 96},
+          "pretentious_gesture": {"x": 192, "y": 384, "width": 64, "height": 96}
+        },
+        "vip_bathroom_bouncers": {
+          "buffed_bouncer_1_stance": {"x": 256, "y": 384, "width": 64, "height": 96},
+          "buffed_bouncer_2_stance": {"x": 320, "y": 384, "width": 64, "height": 96},
+          "bravado_check_animation": {"x": 384, "y": 384, "width": 64, "height": 96}
+        },
+        "signature_props_accessories": {
+          "cybernetic_eye_closeup": {"x": 448, "y": 0, "width": 24, "height": 24},
+          "vape_pen_accessory": {"x": 448, "y": 24, "width": 16, "height": 32},
+          "crystal_nft_hologram": {"x": 464, "y": 24, "width": 32, "height": 32},
+          "mirrored_sunglasses": {"x": 448, "y": 56, "width": 32, "height": 16},
+          "expired_wristband": {"x": 448, "y": 72, "width": 32, "height": 16}
+        }
+      }
+    },
+    
+    "velvet_club_particle_effects": {
+      "file": "velvet_club_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "burgundy_fog_machines": {
+          "fog_particle_1": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "fog_particle_2": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "fog_particle_3": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "fog_particle_4": {"x": 96, "y": 0, "width": 32, "height": 32},
+          "fog_floor_coverage": {"x": 128, "y": 0, "width": 96, "height": 32}
+        },
+        "vape_cloud_drift": {
+          "vape_cloud_1": {"x": 0, "y": 32, "width": 48, "height": 48},
+          "vape_cloud_2": {"x": 48, "y": 32, "width": 48, "height": 48},
+          "vape_cloud_3": {"x": 96, "y": 32, "width": 48, "height": 48},
+          "vape_cloud_4": {"x": 144, "y": 32, "width": 48, "height": 48},
+          "peach_mango_tint": {"x": 192, "y": 32, "width": 48, "height": 48}
+        },
+        "led_shimmer_effects": {
+          "rgb_shimmer_1": {"x": 0, "y": 80, "width": 32, "height": 32},
+          "rgb_shimmer_2": {"x": 32, "y": 80, "width": 32, "height": 32},
+          "rgb_shimmer_3": {"x": 64, "y": 80, "width": 32, "height": 32},
+          "rgb_shimmer_4": {"x": 96, "y": 80, "width": 32, "height": 32},
+          "led_sparkle": {"x": 128, "y": 80, "width": 16, "height": 16}
+        },
+        "bass_ripple_particles": {
+          "bass_ripple_1": {"x": 0, "y": 112, "width": 64, "height": 32},
+          "bass_ripple_2": {"x": 64, "y": 112, "width": 64, "height": 32},
+          "bass_ripple_3": {"x": 128, "y": 112, "width": 64, "height": 32},
+          "bass_ripple_4": {"x": 192, "y": 112, "width": 64, "height": 32},
+          "curtain_pulse_effect": {"x": 256, "y": 112, "width": 48, "height": 48}
+        },
+        "champagne_bubbles_drunk_state": {
+          "bubble_1_small": {"x": 0, "y": 144, "width": 12, "height": 12},
+          "bubble_2_medium": {"x": 12, "y": 144, "width": 16, "height": 16},
+          "bubble_3_large": {"x": 28, "y": 144, "width": 20, "height": 20},
+          "bubble_pop": {"x": 48, "y": 144, "width": 24, "height": 24},
+          "champagne_fizz": {"x": 72, "y": 144, "width": 32, "height": 32}
+        },
+        "neon_glow_pulse": {
+          "neon_pulse_1": {"x": 0, "y": 176, "width": 48, "height": 48},
+          "neon_pulse_2": {"x": 48, "y": 176, "width": 48, "height": 48},
+          "neon_pulse_3": {"x": 96, "y": 176, "width": 48, "height": 48},
+          "neon_pulse_4": {"x": 144, "y": 176, "width": 48, "height": 48},
+          "neon_flicker": {"x": 192, "y": 176, "width": 32, "height": 32}
+        },
+        "gold_gleam_effects": {
+          "pole_gleam_1": {"x": 0, "y": 224, "width": 24, "height": 24},
+          "pole_gleam_2": {"x": 24, "y": 224, "width": 24, "height": 24},
+          "pole_gleam_3": {"x": 48, "y": 224, "width": 24, "height": 24},
+          "chandelier_sparkle": {"x": 72, "y": 224, "width": 16, "height": 16}
+        },
+        "confused_status_indicator": {
+          "confusion_vape_spiral_1": {"x": 96, "y": 224, "width": 32, "height": 32},
+          "confusion_vape_spiral_2": {"x": 128, "y": 224, "width": 32, "height": 32},
+          "confusion_vape_spiral_3": {"x": 160, "y": 224, "width": 32, "height": 32},
+          "confusion_vape_spiral_4": {"x": 192, "y": 224, "width": 32, "height": 32}
+        },
+        "embarrassed_status_indicator": {
+          "embarrassed_blush_1": {"x": 224, "y": 224, "width": 32, "height": 32},
+          "embarrassed_blush_2": {"x": 256, "y": 224, "width": 32, "height": 32},
+          "embarrassed_blush_3": {"x": 288, "y": 224, "width": 32, "height": 32},
+          "sweat_drop": {"x": 320, "y": 224, "width": 16, "height": 16}
+        }
+      }
+    },
+    
+    "velvet_club_ui_elements": {
+      "file": "velvet_club_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "status_effect_icons": {
+          "embarrassed_icon_active": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "embarrassed_icon_stacked": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "confused_icon_active": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "confused_icon_stacked": {"x": 96, "y": 0, "width": 32, "height": 32},
+          "nft_affinity_protection": {"x": 128, "y": 0, "width": 32, "height": 32}
+        },
+        "charisma_gate_ui": {
+          "charisma_check_display": {"x": 0, "y": 32, "width": 96, "height": 32},
+          "charisma_pass_checkmark": {"x": 96, "y": 32, "width": 32, "height": 32},
+          "charisma_fail_x": {"x": 128, "y": 32, "width": 32, "height": 32},
+          "wristband_bribe_option": {"x": 160, "y": 32, "width": 64, "height": 32}
+        },
+        "couchsurf_quest_ui": {
+          "vanessa_couchsurf_available": {"x": 0, "y": 64, "width": 96, "height": 32},
+          "quiz_question_display": {"x": 96, "y": 64, "width": 128, "height": 48},
+          "quiz_success": {"x": 224, "y": 64, "width": 48, "height": 32},
+          "quiz_failure": {"x": 272, "y": 64, "width": 48, "height": 32}
+        },
+        "vip_bathroom_access_ui": {
+          "bravado_check_display": {"x": 0, "y": 112, "width": 96, "height": 32},
+          "bouncer_sizing_up": {"x": 96, "y": 112, "width": 64, "height": 48},
+          "access_granted": {"x": 160, "y": 112, "width": 48, "height": 32},
+          "access_denied": {"x": 208, "y": 112, "width": 48, "height": 32}
+        },
+        "nft_hunt_progress": {
+          "nft_2_location_hint": {"x": 0, "y": 160, "width": 64, "height": 32},
+          "qr_code_scan_prompt": {"x": 64, "y": 160, "width": 96, "height": 32},
+          "nft_2_acquired": {"x": 160, "y": 160, "width": 128, "height": 48},
+          "3_nft_progress_bar": {"x": 288, "y": 160, "width": 96, "height": 16}
+        },
+        "achievement_popups": {
+          "vibes_only_unlocked": {"x": 0, "y": 208, "width": 128, "height": 48},
+          "nft_2_discovered": {"x": 128, "y": 208, "width": 128, "height": 48},
+          "vanessa_couchsurf_complete": {"x": 256, "y": 208, "width": 128, "height": 48},
+          "influencer_ritual_exposed": {"x": 384, "y": 208, "width": 128, "height": 48}
+        },
+        "interaction_prompts": {
+          "push_through_curtain": {"x": 0, "y": 256, "width": 64, "height": 24},
+          "examine_coat_rack_poles": {"x": 64, "y": 256, "width": 80, "height": 24},
+          "read_neon_sign": {"x": 144, "y": 256, "width": 64, "height": 24},
+          "enter_vip_bathroom": {"x": 208, "y": 256, "width": 80, "height": 24}
+        },
+        "social_hub_indicators": {
+          "npc_available": {"x": 288, "y": 256, "width": 32, "height": 32},
+          "side_event_active": {"x": 320, "y": 256, "width": 32, "height": 32},
+          "quest_trigger": {"x": 352, "y": 256, "width": 32, "height": 32}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "bass_pulsating_curtain": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "curtain_closed",
+        "curtain_bass_pulse_1",
+        "curtain_bass_pulse_2",
+        "curtain_bass_pulse_3",
+        "curtain_bass_pulse_2",
+        "curtain_bass_pulse_1"
+      ]
+    },
+    "led_underglow_booth_pulse": {
+      "fps": 10,
+      "loop": true,
+      "frames": [
+        "led_underglow_base",
+        "led_underglow_pulse_1",
+        "led_underglow_pulse_2",
+        "led_underglow_pulse_3",
+        "led_underglow_pulse_2",
+        "led_underglow_pulse_1"
+      ]
+    },
+    "neon_sign_flicker": {
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        "real_party_in_head_frame_1",
+        "real_party_in_head_frame_2",
+        "real_party_in_head_frame_3",
+        "real_party_in_head_frame_2"
+      ]
+    },
+    "vape_pen_chandelier_glow": {
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        "chandelier_glow_frame_1",
+        "chandelier_glow_frame_2",
+        "chandelier_glow_frame_3",
+        "chandelier_glow_frame_2"
+      ]
+    },
+    "dj_turntable_spinning": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        "turntable_spinning_frame_1",
+        "turntable_spinning_frame_2",
+        "turntable_spinning_frame_3",
+        "turntable_spinning_frame_4"
+      ]
+    },
+    "cybernetic_eye_glow": {
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        "eye_glow_animation_frame_1",
+        "eye_glow_animation_frame_2",
+        "eye_glow_animation_frame_3",
+        "eye_glow_animation_frame_2"
+      ]
+    },
+    "vanessa_vape_exhale": {
+      "fps": 8,
+      "loop": false,
+      "trigger": "dialogue_interaction_morning_scene",
+      "frames": [
+        "idle_with_vape",
+        "exhaling_vape_cloud",
+        "exhaling_vape_cloud",
+        "idle_with_vape"
+      ]
+    },
+    "champagne_drip_overlay": {
+      "fps": 10,
+      "loop": true,
+      "trigger": "drunk_status_viewing_graffiti",
+      "frames": [
+        "champagne_drip_overlay_frame_1",
+        "champagne_drip_overlay_frame_2",
+        "champagne_drip_overlay_frame_3",
+        "champagne_drip_overlay_frame_2"
+      ]
+    },
+    "coat_rack_pole_gleam": {
+      "fps": 12,
+      "loop": false,
+      "trigger": "random_5_8_seconds",
+      "frames": [
+        "pole_gleam_1",
+        "pole_gleam_2",
+        "pole_gleam_3",
+        "pole_gleam_2"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "velvet_club_main_atlas",
+        "files": [
+          "velvet_club_environment_complete.png",
+          "velvet_club_interactive_objects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "velvet_club_characters_atlas",
+        "files": [
+          "velvet_club_npcs.png",
+          "velvet_club_particle_effects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_fog_density_all_led_underglow_pulse_vape_cloud_particles_bass_ripples",
+      "medium": "reduced_fog_particle_count_simplified_led_effects_basic_vape_clouds",
+      "low": "static_fog_layer_minimal_vape_particles_no_bass_ripples",
+      "potato": "single_ambient_light_basic_booth_layout_essential_npcs_only"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+  
+  "sprite_sheets": {
+    "brew_lab_basement_complete": {
+      "file": "brew_lab_basement_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "l_shaped_lab_layout": {
+          "left_brewing_area": {"x": 0, "y": 0, "width": 160, "height": 240},
+          "right_console_area": {"x": 160, "y": 0, "width": 160, "height": 240},
+          "sleek_white_floor": {"x": 320, "y": 0, "width": 320, "height": 96}
+        },
+        "brewing_vats": {
+          "vat_base_glass": {"x": 0, "y": 240, "width": 64, "height": 96},
+          "vat_bubbling_green_1": {"x": 64, "y": 240, "width": 64, "height": 96},
+          "vat_bubbling_green_2": {"x": 128, "y": 240, "width": 64, "height": 96},
+          "vat_bubbling_green_3": {"x": 192, "y": 240, "width": 64, "height": 96},
+          "blockchain_address_label": {"x": 256, "y": 240, "width": 64, "height": 16}
+        },
+        "ai_control_consoles": {
+          "flavor_console_base": {"x": 320, "y": 96, "width": 96, "height": 64},
+          "holographic_display": {"x": 416, "y": 96, "width": 96, "height": 64},
+          "brewbot_main_console": {"x": 512, "y": 96, "width": 96, "height": 64}
+        },
+        "ceiling_rail_system": {
+          "rail_track_horizontal": {"x": 0, "y": 336, "width": 128, "height": 16},
+          "rail_track_corner": {"x": 128, "y": 336, "width": 32, "height": 32},
+          "charging_station": {"x": 160, "y": 336, "width": 32, "height": 32}
+        },
+        "led_floor_pathways": {
+          "pathway_straight": {"x": 0, "y": 368, "width": 64, "height": 16},
+          "pathway_corner": {"x": 64, "y": 368, "width": 32, "height": 32},
+          "pathway_pulse_frame_1": {"x": 96, "y": 368, "width": 64, "height": 16},
+          "pathway_pulse_frame_2": {"x": 160, "y": 368, "width": 64, "height": 16},
+          "pathway_pulse_frame_3": {"x": 224, "y": 368, "width": 64, "height": 16}
+        },
+        "failed_startup_decorations": {
+          "motivational_poster_1": {"x": 640, "y": 0, "width": 64, "height": 96},
+          "motivational_poster_2": {"x": 704, "y": 0, "width": 64, "height": 96},
+          "motivational_poster_3": {"x": 768, "y": 0, "width": 64, "height": 96},
+          "mining_rig_bottle_warmer": {"x": 640, "y": 96, "width": 64, "height": 64},
+          "3d_printed_foam_sculpture": {"x": 704, "y": 96, "width": 48, "height": 64}
+        }
+      }
+    },
+    
+    "robotic_bartender_rail_system": {
+      "file": "robotic_bartender_rail_system.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "robotic_bartender_sprite": {
+          "idle_dancing_frame_1": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "idle_dancing_frame_2": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "idle_dancing_frame_3": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "idle_dancing_frame_4": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "idle_dancing_frame_5": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "idle_dancing_frame_6": {"x": 320, "y": 0, "width": 64, "height": 96},
+          "idle_dancing_frame_7": {"x": 384, "y": 0, "width": 64, "height": 96},
+          "idle_dancing_frame_8": {"x": 448, "y": 0, "width": 64, "height": 96}
+        },
+        "serving_animation": {
+          "rail_movement_1": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "rail_movement_2": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "rail_movement_3": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "dispensing_beer": {"x": 192, "y": 96, "width": 64, "height": 96},
+          "transaction_complete": {"x": 256, "y": 96, "width": 64, "height": 96}
+        },
+        "glitch_malfunction": {
+          "glitch_frame_1": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "glitch_frame_2": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "glitch_frame_3": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "error_404_display": {"x": 192, "y": 192, "width": 64, "height": 96}
+        },
+        "flavor_console_stations": {
+          "station_1_ingredients": {"x": 320, "y": 96, "width": 96, "height": 64},
+          "station_2_blockchain": {"x": 320, "y": 160, "width": 96, "height": 64},
+          "station_3_dispensing": {"x": 320, "y": 224, "width": 96, "height": 64}
+        }
+      }
+    },
+    
+    "flavor_console_interface": {
+      "file": "flavor_console_interface.png",
+      "dimensions": {"width": 768, "height": 512},
+      "elements": {
+        "ingredient_selection_screen": {
+          "slot_1_activated_charcoal": {"x": 0, "y": 0, "width": 96, "height": 64},
+          "slot_2_pine_resin": {"x": 96, "y": 0, "width": 96, "height": 64},
+          "slot_3_blockchain_extract": {"x": 192, "y": 0, "width": 96, "height": 64},
+          "slot_4_synergy_crystals": {"x": 288, "y": 0, "width": 96, "height": 64},
+          "slot_5_algorithm_foam": {"x": 384, "y": 0, "width": 96, "height": 64},
+          "slot_6_quantum_hops": {"x": 480, "y": 0, "width": 96, "height": 64},
+          "slot_7_disruption_yeast": {"x": 576, "y": 0, "width": 96, "height": 64},
+          "slot_8_optimization_malt": {"x": 672, "y": 0, "width": 96, "height": 64},
+          "slot_9_pivot_barley": {"x": 0, "y": 64, "width": 96, "height": 64}
+        },
+        "pressure_gauge_display": {
+          "gauge_empty": {"x": 0, "y": 128, "width": 96, "height": 256},
+          "gauge_20_percent": {"x": 96, "y": 128, "width": 96, "height": 256},
+          "gauge_40_percent": {"x": 192, "y": 128, "width": 96, "height": 256},
+          "gauge_60_percent_warning": {"x": 288, "y": 128, "width": 96, "height": 256},
+          "gauge_80_percent_danger": {"x": 384, "y": 128, "width": 96, "height": 256},
+          "gauge_100_percent_explosion": {"x": 480, "y": 128, "width": 96, "height": 256}
+        },
+        "selection_highlighting": {
+          "selected_green_checkmark": {"x": 576, "y": 128, "width": 96, "height": 64},
+          "incompatible_red_x": {"x": 576, "y": 192, "width": 96, "height": 64},
+          "neutral_state": {"x": 576, "y": 256, "width": 96, "height": 64}
+        },
+        "results_display": {
+          "success_synergy_achieved": {"x": 0, "y": 384, "width": 256, "height": 128},
+          "failure_explosion_warning": {"x": 256, "y": 384, "width": 256, "height": 128},
+          "countdown_timer": {"x": 512, "y": 384, "width": 128, "height": 128}
+        }
+      }
+    },
+    
+    "brewing_vats_bioluminescent": {
+      "file": "brewing_vats_bioluminescent.png",
+      "dimensions": {"width": 512, "height": 512},
+      "elements": {
+        "vat_states": {
+          "bubbling_green_normal": {"x": 0, "y": 0, "width": 128, "height": 192},
+          "foam_overflow": {"x": 128, "y": 0, "width": 128, "height": 192},
+          "empty_cleaning": {"x": 256, "y": 0, "width": 128, "height": 192},
+          "explosion_aftermath": {"x": 384, "y": 0, "width": 128, "height": 192}
+        },
+        "technical_details": {
+          "usb_cables_taped": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "ethernet_cord_router": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "blockchain_address_label": {"x": 128, "y": 192, "width": 128, "height": 32},
+          "temperature_sensor_error": {"x": 128, "y": 224, "width": 64, "height": 64},
+          "pressure_valve_warning": {"x": 192, "y": 224, "width": 64, "height": 64}
+        },
+        "particle_effects": {
+          "green_bubble_1": {"x": 0, "y": 288, "width": 32, "height": 32},
+          "green_bubble_2": {"x": 32, "y": 288, "width": 32, "height": 32},
+          "green_bubble_3": {"x": 64, "y": 288, "width": 32, "height": 32},
+          "foam_cascade_1": {"x": 96, "y": 288, "width": 64, "height": 96},
+          "foam_cascade_2": {"x": 160, "y": 288, "width": 64, "height": 96},
+          "bioluminescent_glow": {"x": 224, "y": 288, "width": 96, "height": 96},
+          "vapor_wisp": {"x": 320, "y": 288, "width": 48, "height": 64}
+        }
+      }
+    },
+    
+    "cryptobro_brewbot_boss": {
+      "file": "cryptobro_brewbot_boss.png",
+      "dimensions": {"width": 512, "height": 512},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "phase_1_flavor_bombardment": {
+          "idle_hover_1": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "idle_hover_2": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "idle_hover_3": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "foam_projectile_launch_1": {"x": 192, "y": 0, "width": 64, "height": 96},
+          "foam_projectile_launch_2": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "foam_projectile_launch_3": {"x": 320, "y": 0, "width": 64, "height": 96},
+          "dodge_telegraph": {"x": 384, "y": 0, "width": 64, "height": 96},
+          "damage_recoil": {"x": 448, "y": 0, "width": 64, "height": 96}
+        },
+        "phase_2_buzzword_barrage": {
+          "algorithm_summoning_1": {"x": 0, "y": 96, "width": 64, "height": 96},
+          "algorithm_summoning_2": {"x": 64, "y": 96, "width": 64, "height": 96},
+          "algorithm_summoning_3": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "buzzword_shout": {"x": 192, "y": 96, "width": 64, "height": 96},
+          "multi_attack_coordination": {"x": 256, "y": 96, "width": 64, "height": 96},
+          "phase_transition_warning": {"x": 320, "y": 96, "width": 64, "height": 96}
+        },
+        "phase_3_self_destruct": {
+          "overheating_glow_1": {"x": 0, "y": 192, "width": 64, "height": 96},
+          "overheating_glow_2": {"x": 64, "y": 192, "width": 64, "height": 96},
+          "overheating_glow_3": {"x": 128, "y": 192, "width": 64, "height": 96},
+          "console_vulnerability": {"x": 192, "y": 192, "width": 64, "height": 96},
+          "explosion_buildup_1": {"x": 256, "y": 192, "width": 64, "height": 96},
+          "explosion_buildup_2": {"x": 320, "y": 192, "width": 64, "height": 96},
+          "defeat_foam_cascade": {"x": 384, "y": 192, "width": 64, "height": 96}
+        },
+        "brewbot_design_details": {
+          "robotic_torso": {"x": 0, "y": 288, "width": 64, "height": 96},
+          "beer_tap_appendages": {"x": 64, "y": 288, "width": 64, "height": 48},
+          "led_facial_display": {"x": 128, "y": 288, "width": 64, "height": 64},
+          "exposed_circuitry": {"x": 192, "y": 288, "width": 64, "height": 64},
+          "foam_dispensing_nozzles": {"x": 256, "y": 288, "width": 64, "height": 48}
+        }
+      }
+    },
+    
+    "fermenting_algorithm_enemy": {
+      "file": "fermenting_algorithm_enemy.png",
+      "dimensions": {"width": 256, "height": 256},
+      "elements": {
+        "cube_design": {
+          "floating_idle_1": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "floating_idle_2": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "floating_idle_3": {"x": 128, "y": 0, "width": 64, "height": 64},
+          "floating_idle_4": {"x": 192, "y": 0, "width": 64, "height": 64}
+        },
+        "attack_animations": {
+          "cube_rotation_1": {"x": 0, "y": 64, "width": 64, "height": 64},
+          "cube_rotation_2": {"x": 64, "y": 64, "width": 64, "height": 64},
+          "cube_rotation_3": {"x": 128, "y": 64, "width": 64, "height": 64},
+          "status_particle_burst": {"x": 192, "y": 64, "width": 64, "height": 64}
+        },
+        "defeat_dissolution": {
+          "hologram_fade_1": {"x": 0, "y": 128, "width": 64, "height": 64},
+          "hologram_fade_2": {"x": 64, "y": 128, "width": 64, "height": 64},
+          "hologram_fade_3": {"x": 128, "y": 128, "width": 64, "height": 64},
+          "hologram_fade_4": {"x": 192, "y": 128, "width": 64, "height": 64}
+        },
+        "buzzword_display_states": {
+          "synergy_vulnerable_gold": {"x": 0, "y": 192, "width": 64, "height": 64},
+          "optimize_green_inspired": {"x": 64, "y": 192, "width": 64, "height": 64},
+          "disrupt_red_grease": {"x": 128, "y": 192, "width": 64, "height": 64},
+          "pivot_blue_thirsty": {"x": 192, "y": 192, "width": 64, "height": 64}
+        }
+      }
+    },
+    
+    "tech_startup_environmental_effects": {
+      "file": "tech_startup_environmental_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "hologram_glitches": {
+          "screen_tear_1": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "screen_tear_2": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "pixel_corruption": {"x": 128, "y": 0, "width": 64, "height": 64},
+          "refresh_line_scan": {"x": 192, "y": 0, "width": 64, "height": 64}
+        },
+        "led_pathway_effects": {
+          "pulse_wave_1": {"x": 0, "y": 64, "width": 96, "height": 32},
+          "pulse_wave_2": {"x": 96, "y": 64, "width": 96, "height": 32},
+          "pulse_wave_3": {"x": 192, "y": 64, "width": 96, "height": 32},
+          "color_shift_mini_game": {"x": 288, "y": 64, "width": 96, "height": 32}
+        },
+        "foam_explosion_particles": {
+          "initial_burst": {"x": 0, "y": 96, "width": 128, "height": 128},
+          "foam_splatter_1": {"x": 128, "y": 96, "width": 64, "height": 64},
+          "foam_splatter_2": {"x": 192, "y": 96, "width": 64, "height": 64},
+          "foam_splatter_3": {"x": 256, "y": 96, "width": 64, "height": 64},
+          "grease_fingers_overlay": {"x": 320, "y": 96, "width": 64, "height": 64},
+          "cleanup_animation": {"x": 384, "y": 96, "width": 64, "height": 64}
+        },
+        "algorithm_processing_visuals": {
+          "data_stream_particle_1": {"x": 0, "y": 224, "width": 32, "height": 32},
+          "data_stream_particle_2": {"x": 32, "y": 224, "width": 32, "height": 32},
+          "blockchain_shimmer": {"x": 64, "y": 224, "width": 48, "height": 48},
+          "error_message_popup": {"x": 112, "y": 224, "width": 96, "height": 32}
+        }
+      }
+    },
+    
+    "brewlab_ui_elements": {
+      "file": "brewlab_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "status_effect_icons": {
+          "grease_fingers_active": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "tourist_trapped_active": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "thirsty_active": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "inspired_active": {"x": 96, "y": 0, "width": 32, "height": 32}
+        },
+        "brewery_tour_progress": {
+          "checkpoint_4_complete": {"x": 0, "y": 32, "width": 64, "height": 32},
+          "checkpoint_4_incomplete": {"x": 64, "y": 32, "width": 64, "height": 32},
+          "brewlab_icon": {"x": 128, "y": 32, "width": 32, "height": 32}
+        },
+        "mini_game_indicators": {
+          "pressure_gauge_warning": {"x": 0, "y": 64, "width": 48, "height": 48},
+          "algorithm_spawn_alert": {"x": 48, "y": 64, "width": 48, "height": 48},
+          "console_hack_prompt": {"x": 96, "y": 64, "width": 48, "height": 48}
+        },
+        "boss_battle_ui": {
+          "phase_1_indicator": {"x": 0, "y": 112, "width": 64, "height": 32},
+          "phase_2_indicator": {"x": 64, "y": 112, "width": 64, "height": 32},
+          "phase_3_indicator": {"x": 128, "y": 112, "width": 64, "height": 32},
+          "self_destruct_available": {"x": 192, "y": 112, "width": 64, "height": 32}
+        },
+        "achievement_popups": {
+          "brewvolution_survived": {"x": 256, "y": 0, "width": 128, "height": 48},
+          "brewbot_defeated": {"x": 256, "y": 48, "width": 128, "height": 48},
+          "brewery_tour_complete": {"x": 256, "y": 96, "width": 128, "height": 48},
+          "algorithm_archive_unlocked": {"x": 256, "y": 144, "width": 128, "height": 48}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "robotic_bartender_tap_dance": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        "idle_dancing_frame_1",
+        "idle_dancing_frame_2",
+        "idle_dancing_frame_3",
+        "idle_dancing_frame_4",
+        "idle_dancing_frame_5",
+        "idle_dancing_frame_6",
+        "idle_dancing_frame_7",
+        "idle_dancing_frame_8"
+      ]
+    },
+    "robotic_bartender_serving": {
+      "fps": 10,
+      "loop": false,
+      "frames": [
+        "rail_movement_1",
+        "rail_movement_2",
+        "rail_movement_3",
+        "dispensing_beer",
+        "transaction_complete"
+      ]
+    },
+    "robotic_bartender_glitch": {
+      "fps": 15,
+      "loop": false,
+      "trigger": "every_3rd_purchase",
+      "frames": [
+        "glitch_frame_1",
+        "glitch_frame_2",
+        "glitch_frame_3",
+        "error_404_display"
+      ]
+    },
+    "vat_bubbling_animation": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "vat_bubbling_green_1",
+        "vat_bubbling_green_2",
+        "vat_bubbling_green_3",
+        "vat_bubbling_green_2"
+      ]
+    },
+    "led_pathway_pulse": {
+      "fps": 10,
+      "loop": true,
+      "frames": [
+        "pathway_pulse_frame_1",
+        "pathway_pulse_frame_2",
+        "pathway_pulse_frame_3",
+        "pathway_pulse_frame_2"
+      ]
+    },
+    "brewbot_phase_1_attack": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        "foam_projectile_launch_1",
+        "foam_projectile_launch_2",
+        "foam_projectile_launch_3"
+      ]
+    },
+    "brewbot_phase_2_summon": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        "algorithm_summoning_1",
+        "algorithm_summoning_2",
+        "algorithm_summoning_3",
+        "buzzword_shout"
+      ]
+    },
+    "brewbot_self_destruct": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        "overheating_glow_1",
+        "overheating_glow_2",
+        "overheating_glow_3",
+        "explosion_buildup_1",
+        "explosion_buildup_2",
+        "defeat_foam_cascade"
+      ]
+    },
+    "fermenting_algorithm_float": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "floating_idle_1",
+        "floating_idle_2",
+        "floating_idle_3",
+        "floating_idle_4"
+      ]
+    },
+    "fermenting_algorithm_attack": {
+      "fps": 10,
+      "loop": false,
+      "frames": [
+        "cube_rotation_1",
+        "cube_rotation_2",
+        "cube_rotation_3",
+        "status_particle_burst"
+      ]
+    },
+    "foam_explosion_sequence": {
+      "fps": 15,
+      "loop": false,
+      "frames": [
+        "initial_burst",
+        "foam_splatter_1",
+        "foam_splatter_2",
+        "foam_splatter_3",
+        "grease_fingers_overlay"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "brewlab_main_atlas",
+        "files": [
+          "brew_lab_basement_complete.png",
+          "robotic_bartender_rail_system.png",
+          "flavor_console_interface.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "brewlab_combat_atlas",
+        "files": [
+          "cryptobro_brewbot_boss.png",
+          "fermenting_algorithm_enemy.png",
+          "tech_startup_environmental_effects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_resolution_all_effects_vat_reflections",
+      "medium": "reduced_hologram_particles_simplified_led_pathways",
+      "low": "minimal_particles_static_led_pathways_no_vat_reflections",
+      "potato": "basic_sprites_no_particles_no_environmental_effects"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_museum_meme_black_market_01",
+  
+  "sprite_sheets": {
+    "meme_market_den_complete": {
+      "file": "meme_market_den_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "rgb_lit_den_layout": {
+          "main_floor": {"x": 0, "y": 0, "width": 320, "height": 240},
+          "vendor_station": {"x": 160, "y": 100, "width": 96, "height": 64},
+          "vhs_shelf_door": {"x": 0, "y": 240, "width": 128, "height": 96}
+        },
+        "vintage_computer_altar": {
+          "desktop_pc_base": {"x": 320, "y": 0, "width": 64, "height": 96},
+          "crt_monitors_stacked": {"x": 384, "y": 0, "width": 96, "height": 128},
+          "keyboard_mouse_setup": {"x": 480, "y": 0, "width": 64, "height": 32}
+        },
+        "funcoland_shrine_elements": {
+          "funcoland_bags_pile": {"x": 320, "y": 128, "width": 96, "height": 64},
+          "trade_in_receipts": {"x": 416, "y": 128, "width": 64, "height": 64},
+          "cartridge_offerings": {"x": 480, "y": 128, "width": 48, "height": 64}
+        },
+        "aim_away_message_wall": {
+          "message_panel_1": {"x": 544, "y": 0, "width": 128, "height": 64},
+          "message_panel_2": {"x": 544, "y": 64, "width": 128, "height": 64},
+          "message_panel_3": {"x": 544, "y": 128, "width": 128, "height": 64},
+          "backlight_glow": {"x": 672, "y": 0, "width": 128, "height": 192}
+        },
+        "corrupted_gif_displays": {
+          "dancing_baby_glitch": {"x": 0, "y": 336, "width": 64, "height": 64},
+          "hamster_dance_frozen": {"x": 64, "y": 336, "width": 64, "height": 64},
+          "construction_workers": {"x": 128, "y": 336, "width": 64, "height": 64},
+          "under_construction_gif": {"x": 192, "y": 336, "width": 64, "height": 64}
+        },
+        "ascii_cat_guardians": {
+          "ascii_cat_eyes_open": {"x": 256, "y": 336, "width": 32, "height": 32},
+          "ascii_cat_eyes_tracking": {"x": 288, "y": 336, "width": 32, "height": 32},
+          "ascii_cat_ductwork_mount": {"x": 320, "y": 336, "width": 48, "height": 48}
+        }
+      }
+    },
+    
+    "memelord_exe_character": {
+      "file": "memelord_exe_character.png",
+      "dimensions": {"width": 512, "height": 384},
+      "character_size": {"width": 64, "height": 96},
+      "elements": {
+        "memelord_base_sprite": {
+          "idle_vaping_1": {"x": 0, "y": 0, "width": 64, "height": 96},
+          "idle_vaping_2": {"x": 64, "y": 0, "width": 64, "height": 96},
+          "idle_vaping_3": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "idle_vaping_4": {"x": 192, "y": 0, "width": 64, "height": 96}
+        },
+        "vendor_interactions": {
+          "selling_gesture": {"x": 256, "y": 0, "width": 64, "height": 96},
+          "prophetic_pronouncement": {"x": 320, "y": 0, "width": 64, "height": 96},
+          "dramatic_revelation": {"x": 384, "y": 0, "width": 64, "height": 96},
+          "continuous_vaping": {"x": 448, "y": 0, "width": 64, "height": 96}
+        },
+        "character_details": {
+          "bleached_tips_hair": {"x": 0, "y": 96, "width": 32, "height": 32},
+          "guy_fieri_visor": {"x": 32, "y": 96, "width": 48, "height": 24},
+          "fingerless_gloves": {"x": 80, "y": 96, "width": 32, "height": 32},
+          "flash_runtime_glitch": {"x": 112, "y": 96, "width": 64, "height": 96}
+        },
+        "baja_blast_vape_effects": {
+          "vape_cloud_1": {"x": 176, "y": 96, "width": 48, "height": 48},
+          "vape_cloud_2": {"x": 224, "y": 96, "width": 48, "height": 48},
+          "vape_cloud_3": {"x": 272, "y": 96, "width": 48, "height": 48},
+          "mist_particle": {"x": 320, "y": 96, "width": 24, "height": 24}
+        }
+      }
+    },
+    
+    "meme_summon_sprites": {
+      "file": "meme_summon_sprites.png",
+      "dimensions": {"width": 512, "height": 512},
+      "elements": {
+        "shiba_hype_summon": {
+          "shiba_appear_1": {"x": 0, "y": 0, "width": 64, "height": 64},
+          "shiba_appear_2": {"x": 64, "y": 0, "width": 64, "height": 64},
+          "shiba_barking_1": {"x": 128, "y": 0, "width": 64, "height": 64},
+          "shiba_barking_2": {"x": 192, "y": 0, "width": 64, "height": 64},
+          "shiba_exit": {"x": 256, "y": 0, "width": 64, "height": 64},
+          "motivational_text_bubble": {"x": 320, "y": 0, "width": 96, "height": 48}
+        },
+        "dat_boi_unicycle": {
+          "dat_boi_enter_left": {"x": 0, "y": 64, "width": 64, "height": 64},
+          "dat_boi_center": {"x": 64, "y": 64, "width": 64, "height": 64},
+          "dat_boi_exit_right": {"x": 128, "y": 64, "width": 64, "height": 64},
+          "o_shit_waddup_bubble": {"x": 192, "y": 64, "width": 128, "height": 48}
+        },
+        "dancing_baby_exe": {
+          "baby_appear": {"x": 0, "y": 128, "width": 48, "height": 64},
+          "baby_dance_1": {"x": 48, "y": 128, "width": 48, "height": 64},
+          "baby_dance_2": {"x": 96, "y": 128, "width": 48, "height": 64},
+          "baby_dance_3": {"x": 144, "y": 128, "width": 48, "height": 64},
+          "confusion_waves": {"x": 192, "y": 128, "width": 64, "height": 64},
+          "cringe_backfire_effect": {"x": 256, "y": 128, "width": 64, "height": 64}
+        },
+        "rage_comic_panel": {
+          "rage_face_appear": {"x": 0, "y": 192, "width": 64, "height": 64},
+          "rage_face_intimidate": {"x": 64, "y": 192, "width": 64, "height": 64},
+          "enemy_weakened_effect": {"x": 128, "y": 192, "width": 64, "height": 64},
+          "no_effect_shrug": {"x": 192, "y": 192, "width": 64, "height": 64}
+        },
+        "trollface_bomb": {
+          "trollface_small": {"x": 0, "y": 256, "width": 32, "height": 32},
+          "trollface_expanding_1": {"x": 32, "y": 256, "width": 64, "height": 64},
+          "trollface_expanding_2": {"x": 96, "y": 256, "width": 96, "height": 96},
+          "screen_filling_explosion": {"x": 192, "y": 256, "width": 128, "height": 128},
+          "lul_particles": {"x": 320, "y": 256, "width": 96, "height": 96},
+          "party_argument_effect": {"x": 416, "y": 256, "width": 96, "height": 96}
+        }
+      }
+    },
+    
+    "password_puzzle_elements": {
+      "file": "password_puzzle_elements.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "geocities_kiosk": {
+          "kiosk_inactive": {"x": 0, "y": 0, "width": 96, "height": 128},
+          "kiosk_active_3_33_am": {"x": 96, "y": 0, "width": 96, "height": 128},
+          "under_construction_gif": {"x": 192, "y": 0, "width": 64, "height": 64},
+          "pixelated_wizard": {"x": 256, "y": 0, "width": 64, "height": 96}
+        },
+        "msn_messenger_terminal": {
+          "terminal_waiting": {"x": 0, "y": 128, "width": 128, "height": 96},
+          "password_field_active": {"x": 128, "y": 128, "width": 128, "height": 96},
+          "success_aim_door": {"x": 256, "y": 128, "width": 128, "height": 96},
+          "error_screen": {"x": 384, "y": 128, "width": 128, "height": 96}
+        },
+        "vhs_shelf_mechanism": {
+          "shelf_closed": {"x": 0, "y": 224, "width": 128, "height": 128},
+          "shelf_opening_1": {"x": 128, "y": 224, "width": 128, "height": 128},
+          "shelf_opening_2": {"x": 256, "y": 224, "width": 128, "height": 128},
+          "shelf_fully_open": {"x": 384, "y": 224, "width": 128, "height": 128}
+        },
+        "vhs_tapes_detail": {
+          "tapes_labeled_stuff": {"x": 0, "y": 352, "width": 64, "height": 32},
+          "tape_stack_variety": {"x": 64, "y": 352, "width": 64, "height": 32}
+        }
+      }
+    },
+    
+    "windows_98_crash_loop": {
+      "file": "windows_98_crash_loop.png",
+      "dimensions": {"width": 384, "height": 256},
+      "elements": {
+        "crash_sequence": {
+          "startup_chime_screen": {"x": 0, "y": 0, "width": 128, "height": 96},
+          "loading_windows": {"x": 128, "y": 0, "width": 128, "height": 96},
+          "blue_screen_of_death": {"x": 256, "y": 0, "width": 128, "height": 96},
+          "restart_loop": {"x": 0, "y": 96, "width": 128, "height": 96}
+        },
+        "desktop_pc_details": {
+          "beige_case": {"x": 128, "y": 96, "width": 64, "height": 96},
+          "dust_layer_thick": {"x": 192, "y": 96, "width": 64, "height": 96},
+          "power_led_blinking": {"x": 256, "y": 96, "width": 32, "height": 32}
+        },
+        "error_messages": {
+          "fatal_error_existence": {"x": 0, "y": 192, "width": 128, "height": 64},
+          "digital_samsara_text": {"x": 128, "y": 192, "width": 128, "height": 64},
+          "system_halt_message": {"x": 256, "y": 192, "width": 128, "height": 64}
+        }
+      }
+    },
+    
+    "meme_market_ui_elements": {
+      "file": "meme_market_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "mememastery_meter": {
+          "meter_empty": {"x": 0, "y": 0, "width": 128, "height": 32},
+          "meter_33_percent": {"x": 0, "y": 32, "width": 128, "height": 32},
+          "meter_66_percent": {"x": 0, "y": 64, "width": 128, "height": 32},
+          "meter_100_percent_full": {"x": 0, "y": 96, "width": 128, "height": 32},
+          "shitposter_supreme_icon": {"x": 128, "y": 0, "width": 48, "height": 48}
+        },
+        "status_effect_icons": {
+          "mentally_unwell_icon": {"x": 176, "y": 0, "width": 32, "height": 32},
+          "cringe_status_icon": {"x": 208, "y": 0, "width": 32, "height": 32},
+          "nostalgic_confusion_icon": {"x": 240, "y": 0, "width": 32, "height": 32},
+          "meatspin_curse_indicator": {"x": 272, "y": 0, "width": 32, "height": 32}
+        },
+        "vendor_inventory_ui": {
+          "meme_summon_category": {"x": 0, "y": 128, "width": 96, "height": 32},
+          "meme_trinket_category": {"x": 96, "y": 128, "width": 96, "height": 32},
+          "purchase_button": {"x": 192, "y": 128, "width": 64, "height": 32},
+          "currency_display": {"x": 256, "y": 128, "width": 64, "height": 32}
+        },
+        "achievement_popups": {
+          "shitposter_supreme_unlocked": {"x": 320, "y": 0, "width": 128, "height": 48},
+          "weaponized_nostalgia_survivor": {"x": 320, "y": 48, "width": 128, "height": 48},
+          "swf_vault_access_granted": {"x": 320, "y": 96, "width": 128, "height": 48},
+          "pilsner_embarrassed_achievement": {"x": 320, "y": 144, "width": 128, "height": 48}
+        },
+        "nft_display_frames": {
+          "meatspin_spinning": {"x": 0, "y": 160, "width": 64, "height": 64},
+          "funcoland_futures_1999": {"x": 64, "y": 160, "width": 64, "height": 64},
+          "nft_frame_border": {"x": 128, "y": 160, "width": 80, "height": 80}
+        }
+      }
+    },
+    
+    "environmental_particles": {
+      "file": "environmental_particles.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "baja_blast_vape_mist": {
+          "mist_particle_1": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "mist_particle_2": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "mist_particle_3": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "mist_cloud_large": {"x": 96, "y": 0, "width": 64, "height": 64}
+        },
+        "corrupted_gif_artifacts": {
+          "pixel_glitch_1": {"x": 160, "y": 0, "width": 24, "height": 24},
+          "pixel_glitch_2": {"x": 184, "y": 0, "width": 24, "height": 24},
+          "scan_line_artifact": {"x": 208, "y": 0, "width": 48, "height": 8},
+          "digital_tear": {"x": 256, "y": 0, "width": 32, "height": 32}
+        },
+        "rgb_led_effects": {
+          "rgb_glow_pulse_1": {"x": 0, "y": 64, "width": 64, "height": 64},
+          "rgb_glow_pulse_2": {"x": 64, "y": 64, "width": 64, "height": 64},
+          "rgb_glow_pulse_3": {"x": 128, "y": 64, "width": 64, "height": 64},
+          "led_strip_segment": {"x": 192, "y": 64, "width": 96, "height": 16}
+        },
+        "crt_screen_effects": {
+          "crt_flicker_1": {"x": 0, "y": 128, "width": 96, "height": 96},
+          "crt_flicker_2": {"x": 96, "y": 128, "width": 96, "height": 96},
+          "crt_glow_ambient": {"x": 192, "y": 128, "width": 96, "height": 96},
+          "screen_refresh_line": {"x": 288, "y": 128, "width": 96, "height": 4}
+        },
+        "meatspin_curse_particles": {
+          "spinning_overlay_1": {"x": 288, "y": 0, "width": 64, "height": 64},
+          "spinning_overlay_2": {"x": 352, "y": 0, "width": 64, "height": 64},
+          "curse_shimmer": {"x": 416, "y": 0, "width": 48, "height": 48}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "memelord_vaping_idle": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "idle_vaping_1",
+        "idle_vaping_2",
+        "idle_vaping_3",
+        "idle_vaping_4",
+        "idle_vaping_3",
+        "idle_vaping_2"
+      ]
+    },
+    "shiba_hype_summon_sequence": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        "shiba_appear_1",
+        "shiba_appear_2",
+        "shiba_barking_1",
+        "shiba_barking_2",
+        "shiba_barking_1",
+        "shiba_barking_2",
+        "shiba_exit"
+      ]
+    },
+    "dat_boi_unicycle_sequence": {
+      "fps": 10,
+      "loop": false,
+      "frames": [
+        "dat_boi_enter_left",
+        "dat_boi_center",
+        "dat_boi_exit_right"
+      ]
+    },
+    "dancing_baby_exe_sequence": {
+      "fps": 15,
+      "loop": false,
+      "frames": [
+        "baby_appear",
+        "baby_dance_1",
+        "baby_dance_2",
+        "baby_dance_3",
+        "baby_dance_2",
+        "baby_dance_1",
+        "confusion_waves"
+      ]
+    },
+    "trollface_bomb_explosion": {
+      "fps": 12,
+      "loop": false,
+      "frames": [
+        "trollface_small",
+        "trollface_expanding_1",
+        "trollface_expanding_2",
+        "screen_filling_explosion",
+        "lul_particles"
+      ]
+    },
+    "vhs_shelf_opening": {
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        "shelf_closed",
+        "shelf_opening_1",
+        "shelf_opening_2",
+        "shelf_fully_open"
+      ]
+    },
+    "windows_98_crash_loop": {
+      "fps": 4,
+      "loop": true,
+      "frames": [
+        "startup_chime_screen",
+        "loading_windows",
+        "blue_screen_of_death",
+        "restart_loop"
+      ]
+    },
+    "ascii_cat_eye_tracking": {
+      "fps": 6,
+      "loop": true,
+      "trigger": "follows_player_position",
+      "frames": [
+        "ascii_cat_eyes_open",
+        "ascii_cat_eyes_tracking"
+      ]
+    },
+    "meatspin_curse_spinning": {
+      "fps": 20,
+      "loop": true,
+      "frames": [
+        "spinning_overlay_1",
+        "spinning_overlay_2"
+      ]
+    },
+    "rgb_led_pulsing": {
+      "fps": 10,
+      "loop": true,
+      "frames": [
+        "rgb_glow_pulse_1",
+        "rgb_glow_pulse_2",
+        "rgb_glow_pulse_3",
+        "rgb_glow_pulse_2"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "meme_market_main_atlas",
+        "files": [
+          "meme_market_den_complete.png",
+          "memelord_exe_character.png",
+          "password_puzzle_elements.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "meme_market_effects_atlas",
+        "files": [
+          "meme_summon_sprites.png",
+          "environmental_particles.png",
+          "windows_98_crash_loop.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_resolution_all_particles_crt_effects",
+      "medium": "reduced_vape_particles_simplified_crt_flicker",
+      "low": "minimal_particles_static_rgb_lighting_no_crt_effects",
+      "potato": "basic_sprites_no_particles_no_environmental_effects"
+    }
+  }
+},
+{
+  "location_id": "debaucheryville_blockbuster_internet_museum_01",
+  
+  "sprite_sheets": {
+    "museum_environment_complete": {
+      "file": "museum_environment_complete.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "room_size": {"width": 320, "height": 240},
+      "elements": {
+        "exterior_facade": {
+          "blockbuster_shell": {"x": 0, "y": 0, "width": 128, "height": 96},
+          "floppy_disk_boards": {"x": 128, "y": 0, "width": 64, "height": 96},
+          "aol_caution_tape": {"x": 192, "y": 0, "width": 128, "height": 32},
+          "comic_sans_banner_glitch": {"x": 320, "y": 0, "width": 256, "height": 48},
+          "dead_palmPilot_camera": {"x": 576, "y": 0, "width": 32, "height": 32},
+          "graffiti_zomg_lol": {"x": 608, "y": 0, "width": 96, "height": 24}
+        },
+        "main_museum_floor": {
+          "dusty_floor_tiles": {"x": 0, "y": 96, "width": 320, "height": 240},
+          "exhibit_spacing_markers": {"x": 320, "y": 96, "width": 160, "height": 240},
+          "crt_glow_overlay": {"x": 480, "y": 96, "width": 320, "height": 240}
+        },
+        "hall_of_modems_shrine": {
+          "modem_pile_base": {"x": 0, "y": 336, "width": 96, "height": 64},
+          "dial_up_relic_arrangement": {"x": 96, "y": 336, "width": 64, "height": 64},
+          "screech_effect_visual": {"x": 160, "y": 336, "width": 48, "height": 64},
+          "archaeological_plaques": {"x": 208, "y": 336, "width": 80, "height": 32}
+        },
+        "geocities_diorama": {
+          "under_construction_gifs": {"x": 288, "y": 336, "width": 64, "height": 48},
+          "pixelated_wizard": {"x": 352, "y": 336, "width": 32, "height": 48},
+          "twinkling_gif_stars": {"x": 384, "y": 336, "width": 96, "height": 48},
+          "kiosk_terminal_3am": {"x": 480, "y": 336, "width": 48, "height": 64},
+          "midi_sparkle_effects": {"x": 528, "y": 336, "width": 64, "height": 48}
+        }
+      }
+    },
+    
+    "museum_interactive_objects": {
+      "file": "museum_interactive_objects.png",
+      "dimensions": {"width": 512, "height": 384},
+      "elements": {
+        "angelfire_wall_of_flames": {
+          "flame_pattern_static": {"x": 0, "y": 0, "width": 128, "height": 96},
+          "endless_loading_bar": {"x": 128, "y": 0, "width": 128, "height": 16},
+          "loading_bar_frame_1": {"x": 128, "y": 16, "width": 128, "height": 16},
+          "loading_bar_frame_2": {"x": 128, "y": 32, "width": 128, "height": 16},
+          "loading_bar_frame_3": {"x": 128, "y": 48, "width": 128, "height": 16},
+          "loading_stuck_indicator": {"x": 128, "y": 64, "width": 128, "height": 16}
+        },
+        "habbo_crime_scene": {
+          "yellow_smiley_knife": {"x": 256, "y": 0, "width": 48, "height": 48},
+          "velvet_rope_barrier": {"x": 304, "y": 0, "width": 96, "height": 32},
+          "evidence_markers": {"x": 400, "y": 0, "width": 64, "height": 48},
+          "crime_scene_tape": {"x": 464, "y": 0, "width": 48, "height": 48}
+        },
+        "msn_messenger_graveyard": {
+          "green_status_lights": {"x": 0, "y": 96, "width": 32, "height": 32},
+          "broken_webcam_pile": {"x": 32, "y": 96, "width": 64, "height": 48},
+          "aim_door_visual": {"x": 96, "y": 96, "width": 32, "height": 32},
+          "memorial_candles": {"x": 128, "y": 96, "width": 48, "height": 48}
+        },
+        "imac_g3_altar": {
+          "cracked_imac_base": {"x": 176, "y": 96, "width": 64, "height": 64},
+          "incense_smoke_effect": {"x": 240, "y": 96, "width": 32, "height": 64},
+          "burned_cd_pile": {"x": 272, "y": 96, "width": 48, "height": 32},
+          "do_not_open_labels": {"x": 320, "y": 96, "width": 64, "height": 24},
+          "altar_cloth_draped": {"x": 384, "y": 96, "width": 64, "height": 48}
+        },
+        "chuck_e_cheese_animatronic": {
+          "blank_stare_base": {"x": 0, "y": 160, "width": 64, "height": 96},
+          "eye_tracking_frame_1": {"x": 64, "y": 160, "width": 64, "height": 96},
+          "eye_tracking_frame_2": {"x": 128, "y": 160, "width": 64, "height": 96},
+          "eye_tracking_frame_3": {"x": 192, "y": 160, "width": 64, "height": 96},
+          "furby_exhibit_background": {"x": 256, "y": 160, "width": 128, "height": 96}
+        }
+      }
+    },
+    
+    "museum_crt_displays": {
+      "file": "museum_crt_displays.png",
+      "dimensions": {"width": 512, "height": 512},
+      "elements": {
+        "vaporwave_screensavers": {
+          "screensaver_1_grid": {"x": 0, "y": 0, "width": 128, "height": 96},
+          "screensaver_2_pipes": {"x": 128, "y": 0, "width": 128, "height": 96},
+          "screensaver_3_maze": {"x": 256, "y": 0, "width": 128, "height": 96},
+          "screensaver_4_starfield": {"x": 384, "y": 0, "width": 128, "height": 96}
+        },
+        "crt_monitor_frames": {
+          "beige_crt_frame": {"x": 0, "y": 96, "width": 96, "height": 80},
+          "black_crt_frame": {"x": 96, "y": 96, "width": 96, "height": 80},
+          "cracked_screen_overlay": {"x": 192, "y": 96, "width": 96, "height": 80},
+          "static_interference": {"x": 288, "y": 96, "width": 96, "height": 80}
+        },
+        "terminal_interfaces": {
+          "dos_prompt_green": {"x": 0, "y": 176, "width": 128, "height": 96},
+          "windows_95_desktop": {"x": 128, "y": 176, "width": 128, "height": 96},
+          "pilsner_embarrassing_files": {"x": 256, "y": 176, "width": 128, "height": 96},
+          "error_message_cascade": {"x": 384, "y": 176, "width": 128, "height": 96}
+        },
+        "screen_effects": {
+          "flicker_frame_1": {"x": 0, "y": 272, "width": 128, "height": 96},
+          "flicker_frame_2": {"x": 128, "y": 272, "width": 128, "height": 96},
+          "flicker_frame_3": {"x": 256, "y": 272, "width": 128, "height": 96},
+          "static_lines": {"x": 384, "y": 272, "width": 128, "height": 96}
+        }
+      }
+    },
+    
+    "museum_particle_effects": {
+      "file": "museum_particle_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "dust_mote_particles": {
+          "dust_particle_1": {"x": 0, "y": 0, "width": 8, "height": 8},
+          "dust_particle_2": {"x": 8, "y": 0, "width": 8, "height": 8},
+          "dust_particle_3": {"x": 16, "y": 0, "width": 8, "height": 8},
+          "dust_particle_4": {"x": 24, "y": 0, "width": 8, "height": 8}
+        },
+        "crt_static_effects": {
+          "static_burst_1": {"x": 32, "y": 0, "width": 24, "height": 24},
+          "static_burst_2": {"x": 56, "y": 0, "width": 24, "height": 24},
+          "static_burst_3": {"x": 80, "y": 0, "width": 24, "height": 24},
+          "scan_line_sweep": {"x": 104, "y": 0, "width": 48, "height": 8}
+        },
+        "midi_visual_sparkles": {
+          "sparkle_note_1": {"x": 0, "y": 32, "width": 16, "height": 16},
+          "sparkle_note_2": {"x": 16, "y": 32, "width": 16, "height": 16},
+          "sparkle_note_3": {"x": 32, "y": 32, "width": 16, "height": 16},
+          "sparkle_trail": {"x": 48, "y": 32, "width": 32, "height": 16}
+        },
+        "dial_up_screech_visual": {
+          "screech_wave_1": {"x": 80, "y": 32, "width": 48, "height": 24},
+          "screech_wave_2": {"x": 128, "y": 32, "width": 48, "height": 24},
+          "screech_wave_3": {"x": 176, "y": 32, "width": 48, "height": 24},
+          "screech_wave_4": {"x": 224, "y": 32, "width": 48, "height": 24}
+        },
+        "status_effect_indicators": {
+          "cringe_spiral": {"x": 0, "y": 64, "width": 32, "height": 32},
+          "inspired_glow": {"x": 32, "y": 64, "width": 32, "height": 32},
+          "pixel_ptsd_shake": {"x": 64, "y": 64, "width": 32, "height": 32},
+          "mentally_unwell_overlay": {"x": 96, "y": 64, "width": 32, "height": 32}
+        }
+      }
+    },
+    
+    "museum_ui_elements": {
+      "file": "museum_ui_elements.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "status_effect_icons": {
+          "cringe_icon": {"x": 0, "y": 0, "width": 32, "height": 32},
+          "inspired_icon": {"x": 32, "y": 0, "width": 32, "height": 32},
+          "pixel_ptsd_icon": {"x": 64, "y": 0, "width": 32, "height": 32},
+          "mentally_unwell_icon": {"x": 96, "y": 0, "width": 32, "height": 32}
+        },
+        "achievement_notifications": {
+          "curator_of_cursed_web": {"x": 0, "y": 32, "width": 128, "height": 48},
+          "digital_trauma_tourist": {"x": 128, "y": 32, "width": 128, "height": 48},
+          "patience_of_saint": {"x": 256, "y": 32, "width": 128, "height": 48}
+        },
+        "time_display": {
+          "digital_clock_333am": {"x": 0, "y": 80, "width": 64, "height": 32},
+          "countdown_timer": {"x": 64, "y": 80, "width": 64, "height": 32}
+        },
+        "password_puzzle_ui": {
+          "geocities_prompt": {"x": 128, "y": 80, "width": 96, "height": 48},
+          "password_field": {"x": 224, "y": 80, "width": 128, "height": 24},
+          "access_denied": {"x": 352, "y": 80, "width": 96, "height": 24},
+          "access_granted": {"x": 448, "y": 80, "width": 64, "height": 24}
+        },
+        "exhibit_plaques": {
+          "hall_of_modems_text": {"x": 0, "y": 128, "width": 128, "height": 64},
+          "geocities_description": {"x": 128, "y": 128, "width": 128, "height": 64},
+          "angelfire_plaque": {"x": 256, "y": 128, "width": 128, "height": 64},
+          "habbo_incident_report": {"x": 384, "y": 128, "width": 128, "height": 64}
+        }
+      }
+    }
+  },
+  
+  "animation_sequences": {
+    "comic_sans_banner_glitch": {
+      "fps": 4,
+      "loop": true,
+      "frames": [
+        "comic_sans_banner_glitch",
+        "comic_sans_banner_glitch",
+        "comic_sans_banner_glitch",
+        "comic_sans_banner_glitch"
+      ]
+    },
+    "crt_screen_flicker": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        "screensaver_1_grid",
+        "flicker_frame_1",
+        "screensaver_1_grid",
+        "flicker_frame_2",
+        "screensaver_1_grid",
+        "flicker_frame_3",
+        "screensaver_1_grid"
+      ]
+    },
+    "angelfire_loading_endless": {
+      "fps": 2,
+      "loop": true,
+      "frames": [
+        "loading_bar_frame_1",
+        "loading_bar_frame_2",
+        "loading_bar_frame_3",
+        "loading_stuck_indicator",
+        "loading_bar_frame_1"
+      ]
+    },
+    "chuck_e_eye_tracking": {
+      "fps": 3,
+      "loop": false,
+      "trigger": "random_10_20_seconds",
+      "frames": [
+        "blank_stare_base",
+        "eye_tracking_frame_1",
+        "eye_tracking_frame_2",
+        "eye_tracking_frame_3",
+        "blank_stare_base"
+      ]
+    },
+    "geocities_twinkling_stars": {
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        "twinkling_gif_stars",
+        "midi_sparkle_effects",
+        "twinkling_gif_stars",
+        "midi_sparkle_effects"
+      ]
+    },
+    "dial_up_screech_visual": {
+      "fps": 15,
+      "loop": false,
+      "trigger": "hall_of_modems_approach",
+      "frames": [
+        "screech_wave_1",
+        "screech_wave_2",
+        "screech_wave_3",
+        "screech_wave_4"
+      ]
+    },
+    "status_effect_particles": {
+      "fps": 10,
+      "loop": true,
+      "frames": [
+        "cringe_spiral",
+        "inspired_glow",
+        "pixel_ptsd_shake"
+      ]
+    }
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": [
+      {
+        "name": "museum_main_atlas",
+        "files": [
+          "museum_environment_complete.png",
+          "museum_interactive_objects.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      },
+      {
+        "name": "museum_effects_atlas",
+        "files": [
+          "museum_crt_displays.png",
+          "museum_particle_effects.png",
+          "museum_ui_elements.png"
+        ],
+        "max_size": "2048x2048",
+        "compression": "PVRTC_iOS_ETC2_Android"
+      }
+    ],
+    "lod_levels": {
+      "high": "full_crt_flicker_all_particle_effects_complex_animations",
+      "medium": "reduced_flicker_rate_simplified_particles_basic_animations",
+      "low": "minimal_effects_static_displays_essential_animations_only"
+    }
+  }
+}
+]

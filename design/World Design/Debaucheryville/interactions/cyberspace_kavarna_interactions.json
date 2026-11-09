@@ -1,0 +1,170 @@
+{
+  "location_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+  "events": [
+    {
+      "event_id": "ck_rent_terminal",
+      "display_name": "Rent Terminal",
+      "trigger": {
+        "verb": "rent",
+        "node_id": "ck_rental_desk"
+      },
+      "requirements": [],
+      "results": [
+        "cyberspace_terminal_rented"
+      ],
+      "quest_bindings": [
+        "icqscammersting"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "ck_icq_login",
+      "display_name": "Access ICQ Network",
+      "trigger": {
+        "verb": "terminal",
+        "node_id": "ck_terminal_rows"
+      },
+      "requirements": [
+        "cyberspace_terminal_rented"
+      ],
+      "results": [
+        "cyberspace_icq_accessed"
+      ],
+      "quest_bindings": [
+        "icqscammersting"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "ck_sting_binding",
+      "display_name": "Coordinate Sting Operation",
+      "trigger": {
+        "verb": "quest",
+        "node_id": "ck_katka_station"
+      },
+      "requirements": [
+        "icq_scammer_sting_active"
+      ],
+      "results": [
+        "bind_external_quest_stage"
+      ],
+      "quest_bindings": [
+        "icqscammersting"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "ck_read_backroom_clue",
+      "display_name": "Read Restroom Graffiti",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "ck_restroom_clue"
+      },
+      "requirements": [],
+      "results": [
+        "cyberspace_backroom_concessions_entrance_discovered"
+      ],
+      "quest_bindings": [
+        "icqscammersting"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "ck_enter_backroom",
+      "display_name": "Open Hidden Door",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "ck_backroom_door"
+      },
+      "requirements": [
+        "cyberspace_backroom_concessions_entrance_discovered"
+      ],
+      "results": [
+        "transition_backroom_concessions"
+      ],
+      "quest_bindings": [
+        "icqscammersting"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "ck_rent_terminal",
+      "node_id": "ck_rental_desk",
+      "verb": "rent",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "ck_icq_login",
+      "node_id": "ck_terminal_rows",
+      "verb": "terminal",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "ck_sting_binding",
+      "node_id": "ck_katka_station",
+      "verb": "quest",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "ck_read_backroom_clue",
+      "node_id": "ck_restroom_clue",
+      "verb": "inspect",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "ck_enter_backroom",
+      "node_id": "ck_backroom_door",
+      "verb": "travel",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "cyberspace_terminal_rented",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "cyberspace_icq_accessed",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "cyberspace_backroom_concessions_entrance_discovered",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "cyberspace_peak_scammer_hours",
+      "change": "Persist and present the corresponding authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Your Data Is Not Safe. Cash Only.",
+    "A smoke-stained Y2K internet bunker built from CRTs, Soviet furniture and duct-taped Ethernet."
+  ]
+}

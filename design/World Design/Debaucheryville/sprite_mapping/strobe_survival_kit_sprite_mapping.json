@@ -1,0 +1,220 @@
+{
+  "location_id": "debaucheryville_vendor_strobe_survival_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "strobe_survival_kit_environment",
+      "atlas": "strobe_survival_kit_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "strobe_survival_kit_exterior",
+          "filename": "strobe_survival_kit_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "ssk_stall"
+        },
+        {
+          "asset_id": "strobe_survival_kit_interior",
+          "filename": "strobe_survival_kit_interior.png",
+          "role": "interior/service footprint",
+          "node_id": "ssk_audio_defense"
+        },
+        {
+          "asset_id": "strobe_survival_kit_node_ssk_audio_defense",
+          "filename": "strobe_survival_kit_ssk_audio_defense.png",
+          "role": "shop landmark",
+          "node_id": "ssk_audio_defense"
+        },
+        {
+          "asset_id": "strobe_survival_kit_node_ssk_visual_gear",
+          "filename": "strobe_survival_kit_ssk_visual_gear.png",
+          "role": "shop landmark",
+          "node_id": "ssk_visual_gear"
+        },
+        {
+          "asset_id": "strobe_survival_kit_node_ssk_support_shelf",
+          "filename": "strobe_survival_kit_ssk_support_shelf.png",
+          "role": "shop landmark",
+          "node_id": "ssk_support_shelf"
+        },
+        {
+          "asset_id": "strobe_survival_kit_node_ssk_decibel_display",
+          "filename": "strobe_survival_kit_ssk_decibel_display.png",
+          "role": "interaction landmark",
+          "node_id": "ssk_decibel_display"
+        },
+        {
+          "asset_id": "strobe_survival_kit_node_ssk_operator",
+          "filename": "strobe_survival_kit_ssk_operator.png",
+          "role": "service landmark",
+          "node_id": "ssk_operator"
+        },
+        {
+          "asset_id": "strobe_survival_kit_node_ssk_exit",
+          "filename": "strobe_survival_kit_ssk_exit.png",
+          "role": "exit landmark",
+          "node_id": "ssk_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "strobe_survival_kit_characters",
+      "atlas": "strobe_survival_kit_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "strobe_survival_kit_npc_ssk_npc_miroslav",
+          "filename": "strobe_survival_kit_ssk_npc_miroslav.png",
+          "role": "character sprite",
+          "node_id": "ssk_operator"
+        }
+      ]
+    },
+    {
+      "group_id": "strobe_survival_kit_ui_fx",
+      "atlas": "strobe_survival_kit_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "strobe_survival_kit_item_ssk_foam_earplugs",
+          "filename": "strobe_survival_kit_ssk_foam_earplugs.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "strobe_survival_kit_item_ssk_musician_earplugs",
+          "filename": "strobe_survival_kit_ssk_musician_earplugs.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "strobe_survival_kit_item_ssk_strobe_shades",
+          "filename": "strobe_survival_kit_ssk_strobe_shades.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "strobe_survival_kit_item_ssk_glow_bundle",
+          "filename": "strobe_survival_kit_ssk_glow_bundle.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "strobe_survival_kit_item_ssk_tactical_pouch",
+          "filename": "strobe_survival_kit_ssk_tactical_pouch.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "strobe_survival_kit_ui",
+          "filename": "strobe_survival_kit_ui.png",
+          "role": "interaction/status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "strobe_survival_kit_fx",
+          "filename": "strobe_survival_kit_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "strobe_survival_kit_masks",
+          "filename": "strobe_survival_kit_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "ssk_npc_miroslav_standard",
+      "asset_id": "strobe_survival_kit_npc_ssk_npc_miroslav",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "strobe_survival_kit_lighting",
+      "mask_asset": "strobe_survival_kit_masks",
+      "nodes": [
+        "ssk_stall",
+        "ssk_audio_defense",
+        "ssk_visual_gear",
+        "ssk_support_shelf",
+        "ssk_decibel_display",
+        "ssk_operator",
+        "ssk_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "ssk_exit_quarter",
+      "destination_id": "debaucheryville_neon_entertainment_quarter",
+      "from_node": "ssk_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "ssk_shop_audio",
+      "node_id": "ssk_audio_defense",
+      "highlight_asset": "strobe_survival_kit_node_ssk_audio_defense"
+    },
+    {
+      "interaction_id": "ssk_shop_visual",
+      "node_id": "ssk_visual_gear",
+      "highlight_asset": "strobe_survival_kit_node_ssk_visual_gear"
+    },
+    {
+      "interaction_id": "ssk_read_decibels",
+      "node_id": "ssk_decibel_display",
+      "highlight_asset": "strobe_survival_kit_node_ssk_decibel_display"
+    },
+    {
+      "interaction_id": "ssk_briefing",
+      "node_id": "ssk_operator",
+      "highlight_asset": "strobe_survival_kit_node_ssk_operator"
+    },
+    {
+      "interaction_id": "ssk_checkout",
+      "node_id": "ssk_operator",
+      "highlight_asset": "strobe_survival_kit_node_ssk_operator"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "strobe_survival_kit_masks",
+      "channels": {
+        "r": "signs",
+        "g": "practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 12,
+    "reduced_fx_asset": "strobe_survival_kit_fx"
+  }
+}

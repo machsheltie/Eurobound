@@ -1,0 +1,128 @@
+{
+  "location_id": "debaucheryville_shop_threads_treads_01",
+  "ambient_audio": {
+    "base_layers": [
+      "daytime shoppers ambience",
+      "02:00 transformation crowd ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "tt_storefront",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "tt_jacket_gauntlet",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "tt_footwear",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "tt_accessories",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "tt_fitting_mirror",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "tt_counter",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "tt_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "tt_leather_jacket_effect",
+      "description": "Defense plus Cool Factor."
+    },
+    {
+      "effect_id": "tt_denim_vest_effect",
+      "description": "Moderate defense and customizable style."
+    },
+    {
+      "effect_id": "tt_combat_boots_effect",
+      "description": "Defense and slip resistance."
+    },
+    {
+      "effect_id": "tt_chain_wallet_effect",
+      "description": "Minor theft resistance and Cool Factor."
+    },
+    {
+      "effect_id": "tt_identity_overhaul_effect",
+      "description": "Cosmetic transformation and Cool Factor reset."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "full service and named NPCs"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "documented denial or alternate crowd"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet neon reflections"
+    ],
+    "interior": [
+      "threshold-only weather read-through"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "threads_and_treads_fx",
+      "nodes": [
+        "tt_storefront",
+        "tt_jacket_gauntlet",
+        "tt_footwear",
+        "tt_accessories",
+        "tt_fitting_mirror",
+        "tt_counter",
+        "tt_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "black leather",
+      "chrome",
+      "dark wood",
+      "industrial amber"
+    ],
+    "emission_mask": "threads_and_treads_masks",
+    "readability": "interaction landmarks brighter than clutter"
+  },
+  "environmental_storytelling": [
+    "Narrow black façade with leather mannequins and chrome sign.",
+    "Immediate wall of leather and denim.",
+    "Combat boots and defensive shoes.",
+    "Style and equipment-slot accessories.",
+    "Identity preview and Cool Factor assessment.",
+    "Checkout and transformation choice.",
+    "Returns to the neon street."
+  ],
+  "accessibility": {
+    "variants": [
+      "Mirror preview without distortion",
+      "High-contrast equipment stats",
+      "Text Cool Factor assessment",
+      "Reduced chrome glare"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

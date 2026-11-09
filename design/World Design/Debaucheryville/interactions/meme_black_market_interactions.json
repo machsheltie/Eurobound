@@ -1,0 +1,177 @@
+{
+  "location_id": "debaucheryville_museum_meme_black_market_01",
+  "events": [
+    {
+      "event_id": "mbm_meet_vendor",
+      "display_name": "Meet MemeLord.exe",
+      "trigger": {
+        "verb": "talk",
+        "node_id": "mbm_vendor_counter"
+      },
+      "requirements": [],
+      "results": [
+        "meme_black_market_vendor_met"
+      ],
+      "quest_bindings": [
+        "ICQ darkweb",
+        "graffiti quest",
+        "Lord Pilsner lore"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "mbm_summon",
+      "display_name": "Summon Meme",
+      "trigger": {
+        "verb": "summon",
+        "node_id": "mbm_summon_point"
+      },
+      "requirements": [],
+      "results": [
+        "roll_meme_summon",
+        "meme_summon_complete"
+      ],
+      "quest_bindings": [
+        "ICQ darkweb",
+        "graffiti quest",
+        "Lord Pilsner lore"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "mbm_shop",
+      "display_name": "Browse Meme Trinkets",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "mbm_trinket_wall"
+      },
+      "requirements": [
+        "meme_black_market_vendor_met"
+      ],
+      "results": [
+        "open_meme_inventory"
+      ],
+      "quest_bindings": [
+        "ICQ darkweb",
+        "graffiti quest",
+        "Lord Pilsner lore"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "mbm_mastery",
+      "display_name": "Inspect MemeMastery",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "mbm_mastery_terminal"
+      },
+      "requirements": [],
+      "results": [
+        "display_meme_mastery_tier"
+      ],
+      "quest_bindings": [
+        "ICQ darkweb",
+        "graffiti quest",
+        "Lord Pilsner lore"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    },
+    {
+      "event_id": "mbm_return",
+      "display_name": "Return Through Shelf",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "mbm_exit"
+      },
+      "requirements": [],
+      "results": [
+        "transition_internet_museum"
+      ],
+      "quest_bindings": [
+        "ICQ darkweb",
+        "graffiti quest",
+        "Lord Pilsner lore"
+      ],
+      "dialogue_ownership": "authoritative quest/NPC source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "mbm_meet_vendor",
+      "node_id": "mbm_vendor_counter",
+      "verb": "talk",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "mbm_summon",
+      "node_id": "mbm_summon_point",
+      "verb": "summon",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "mbm_shop",
+      "node_id": "mbm_trinket_wall",
+      "verb": "shop",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "mbm_mastery",
+      "node_id": "mbm_mastery_terminal",
+      "verb": "inspect",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    },
+    {
+      "interaction_id": "mbm_return",
+      "node_id": "mbm_exit",
+      "verb": "travel",
+      "visual_states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "prompt_fallback": "text_and_icon"
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "meme_black_market_entrance_unlocked",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "meme_summon_complete",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "meme_mastery_tier",
+      "change": "Persist and present the corresponding authored state."
+    },
+    {
+      "state": "meme_black_market_vendor_met",
+      "change": "Persist and present the corresponding authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Weaponized Nostalgia, Fair Market Value",
+    "An RGB-lit contraband den where corrupted GIFs and obsolete jokes are treated as sacred inventory."
+  ]
+}

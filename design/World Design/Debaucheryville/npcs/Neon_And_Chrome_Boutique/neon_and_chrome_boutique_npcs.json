@@ -1,0 +1,81 @@
+{
+  "location_id": "debaucheryville_shop_neon_chrome_01",
+  "location_name": "Neon & Chrome Boutique",
+  "npcs": [
+    {
+      "npc_id": "ncb_npc_katarina",
+      "display_name": "Katarina",
+      "role": "proprietor and VIP-potential assessor",
+      "node": "ncb_counter",
+      "schedule": "16:00-04:00",
+      "visual": "Chrome tailoring, neon headset and immaculate posture.",
+      "quest_bindings": [
+        "vip_wristbands"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "ncb_npc_host",
+      "display_name": "Showroom Host",
+      "role": "fitting and simulation guide",
+      "node": "ncb_fitting",
+      "schedule": "16:00-04:00",
+      "visual": "Club-host black with light piping.",
+      "quest_bindings": [
+        "vip_wristbands"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "neon_and_chrome_boutique_ambient_1",
+      "display_name": "aspiring VIP customers",
+      "spawn_nodes": [
+        "ncb_fitting",
+        "ncb_simulation",
+        "ncb_counter"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "neon_and_chrome_boutique_ambient_2",
+      "display_name": "premium mannequins",
+      "spawn_nodes": [
+        "ncb_fitting",
+        "ncb_simulation",
+        "ncb_counter"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "ncb_npc_katarina",
+      "node_id": "ncb_counter",
+      "role": "proprietor and VIP-potential assessor"
+    },
+    {
+      "npc_id": "ncb_npc_host",
+      "node_id": "ncb_fitting",
+      "role": "fitting and simulation guide"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient count during quest scenes",
+    "Contrast named NPC silhouettes"
+  ]
+}

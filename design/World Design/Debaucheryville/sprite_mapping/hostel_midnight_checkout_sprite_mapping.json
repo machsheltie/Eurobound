@@ -1,0 +1,260 @@
+{
+  "location_id": "debaucheryville_hostel_midnight_checkout_01",
+  "engine": "Godot 4.4",
+  "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
+  "production_label": "authoritative",
+  "camera": {
+    "projection": "perspective HD-2D",
+    "framing": "three-quarter traversal"
+  },
+  "world_scale": {
+    "pixels_per_meter_reference": 128,
+    "character_height_m": 1.8
+  },
+  "texture_rules": {
+    "color_space": "sRGB",
+    "padding_px": 8,
+    "max_atlas": 4096
+  },
+  "asset_groups": [
+    {
+      "group_id": "hostel_midnight_checkout_environment",
+      "atlas": "hostel_midnight_checkout_environment_atlas.png",
+      "assets": [
+        {
+          "asset_id": "hostel_midnight_checkout_exterior",
+          "filename": "hostel_midnight_checkout_exterior.png",
+          "role": "exterior/threshold painted layer",
+          "node_id": "hmc_exterior"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_interior",
+          "filename": "hostel_midnight_checkout_interior.png",
+          "role": "interior/service-footprint painted layer",
+          "node_id": "hmc_reception"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_node_hmc_reception",
+          "filename": "hostel_midnight_checkout_hmc_reception.png",
+          "role": "service landmark",
+          "node_id": "hmc_reception"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_node_hmc_dorm",
+          "filename": "hostel_midnight_checkout_hmc_dorm.png",
+          "role": "interior landmark",
+          "node_id": "hmc_dorm"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_node_hmc_bunk_confession",
+          "filename": "hostel_midnight_checkout_hmc_bunk_confession.png",
+          "role": "quest landmark",
+          "node_id": "hmc_bunk_confession"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_node_hmc_kitchen",
+          "filename": "hostel_midnight_checkout_hmc_kitchen.png",
+          "role": "interaction landmark",
+          "node_id": "hmc_kitchen"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_node_hmc_lounge_wifi",
+          "filename": "hostel_midnight_checkout_hmc_lounge_wifi.png",
+          "role": "social landmark",
+          "node_id": "hmc_lounge_wifi"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_node_hmc_exit",
+          "filename": "hostel_midnight_checkout_hmc_exit.png",
+          "role": "exit landmark",
+          "node_id": "hmc_exit"
+        }
+      ]
+    },
+    {
+      "group_id": "hostel_midnight_checkout_characters",
+      "atlas": "hostel_midnight_checkout_characters_atlas.png",
+      "assets": [
+        {
+          "asset_id": "hostel_midnight_checkout_npc_hmc_npc_jakub",
+          "filename": "hostel_midnight_checkout_hmc_npc_jakub.png",
+          "role": "character sprite",
+          "node_id": "hmc_reception"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_npc_hmc_npc_day_receptionist",
+          "filename": "hostel_midnight_checkout_hmc_npc_day_receptionist.png",
+          "role": "character sprite",
+          "node_id": "hmc_reception"
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_npc_hmc_npc_long_term_guest",
+          "filename": "hostel_midnight_checkout_hmc_npc_long_term_guest.png",
+          "role": "character sprite",
+          "node_id": "hmc_bunk_confession"
+        }
+      ]
+    },
+    {
+      "group_id": "hostel_midnight_checkout_ui_fx",
+      "atlas": "hostel_midnight_checkout_ui_fx_atlas.png",
+      "assets": [
+        {
+          "asset_id": "hostel_midnight_checkout_item_hmc_dorm_bed",
+          "filename": "hostel_midnight_checkout_hmc_dorm_bed.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_item_hmc_quiet_bed",
+          "filename": "hostel_midnight_checkout_hmc_quiet_bed.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_item_hmc_private_room",
+          "filename": "hostel_midnight_checkout_hmc_private_room.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_item_hmc_mystery_fridge_food",
+          "filename": "hostel_midnight_checkout_hmc_mystery_fridge_food.png",
+          "role": "item/service icon",
+          "node_id": null
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_ui",
+          "filename": "hostel_midnight_checkout_ui.png",
+          "role": "interaction and status UI",
+          "node_id": null
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_fx",
+          "filename": "hostel_midnight_checkout_fx.png",
+          "role": "environmental FX",
+          "node_id": null
+        },
+        {
+          "asset_id": "hostel_midnight_checkout_masks",
+          "filename": "hostel_midnight_checkout_masks.png",
+          "role": "emission/occlusion masks",
+          "node_id": null
+        }
+      ]
+    }
+  ],
+  "animation_sequences": [
+    {
+      "sequence_id": "hmc_npc_jakub_standard",
+      "asset_id": "hostel_midnight_checkout_npc_hmc_npc_jakub",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "hmc_npc_day_receptionist_standard",
+      "asset_id": "hostel_midnight_checkout_npc_hmc_npc_day_receptionist",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    },
+    {
+      "sequence_id": "hmc_npc_long_term_guest_standard",
+      "asset_id": "hostel_midnight_checkout_npc_hmc_npc_long_term_guest",
+      "frames": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ],
+      "fps": 8
+    }
+  ],
+  "lighting_effects": [
+    {
+      "effect_id": "hostel_midnight_checkout_emission",
+      "mask_asset": "hostel_midnight_checkout_masks",
+      "nodes": [
+        "hmc_exterior",
+        "hmc_reception",
+        "hmc_dorm",
+        "hmc_bunk_confession",
+        "hmc_kitchen",
+        "hmc_lounge_wifi",
+        "hmc_exit"
+      ]
+    }
+  ],
+  "external_location_transitions": [
+    {
+      "exit_id": "hmc_exit_row",
+      "destination_id": "debaucheryville_hostel_row",
+      "from_node": "hmc_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "hmc_ref_midnight_munchies",
+      "destination_id": "debaucheryville_shop_midnight_munchies_01",
+      "from_node": "hmc_exit",
+      "condition": "shop_open"
+    },
+    {
+      "exit_id": "hmc_ref_cyberspace",
+      "destination_id": "debaucheryville_hostelrow_cyberspace_kavarna_01",
+      "from_node": "hmc_exit",
+      "condition": "always"
+    }
+  ],
+  "interaction_bindings": [
+    {
+      "interaction_id": "hmc_check_in",
+      "node_id": "hmc_reception",
+      "highlight_asset": "hostel_midnight_checkout_node_hmc_reception"
+    },
+    {
+      "interaction_id": "hmc_sleep",
+      "node_id": "hmc_dorm",
+      "highlight_asset": "hostel_midnight_checkout_node_hmc_dorm"
+    },
+    {
+      "interaction_id": "hmc_confession",
+      "node_id": "hmc_bunk_confession",
+      "highlight_asset": "hostel_midnight_checkout_node_hmc_bunk_confession"
+    },
+    {
+      "interaction_id": "hmc_kitchen_event",
+      "node_id": "hmc_kitchen",
+      "highlight_asset": "hostel_midnight_checkout_node_hmc_kitchen"
+    },
+    {
+      "interaction_id": "hmc_wifi",
+      "node_id": "hmc_lounge_wifi",
+      "highlight_asset": "hostel_midnight_checkout_node_hmc_lounge_wifi"
+    }
+  ],
+  "technical_masks": [
+    {
+      "asset_id": "hostel_midnight_checkout_masks",
+      "channels": {
+        "r": "signs",
+        "g": "screens/practicals",
+        "b": "interaction",
+        "a": "occlusion"
+      }
+    }
+  ],
+  "mobile_optimization": {
+    "atlas_streaming": true,
+    "max_visible_characters": 10,
+    "reduced_fx_asset": "hostel_midnight_checkout_fx"
+  }
+}

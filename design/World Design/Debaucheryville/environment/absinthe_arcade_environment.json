@@ -1,0 +1,298 @@
+{
+  "location_id": "debaucheryville_clocktower_arcade_01",
+  "ambient_audio": {
+    "background_music": "absinthe_arcade_corrupted_chiptune.ogg",
+    "music_style": "late_90s_arcade_chiptune_through_tape_decay_and_glitch_hop",
+    "spatial_zones": {
+      "entry": "muffled_cabinet_chorus_with_street_bleed",
+      "main_hall": "full_chiptune_with_bar_glass_and_coin_layers",
+      "claw_alcove": "detuned_music_box_and_remixed_fur_elise",
+      "mirror_corridor": "phase_inverted_music_with_delayed_footsteps",
+      "north_wing": "more_distorted_music_and_lower_crowd_bed",
+      "taproom_curtain": "distant_breathing_pulse_owned_by_transition_cue",
+      "maintenance_recess": "ddr_error_loop_and_faint_squeaky_joystick"
+    },
+    "environmental_sounds": [
+      "coin_clatter",
+      "crt_hum",
+      "cabinet_button_impacts",
+      "stained_glass_door_rattle",
+      "bar_glass_clink",
+      "electric_conduit_buzz",
+      "spectral_crowd_murmur",
+      "ukulele_wrong_chord_when_backpack_girl_present"
+    ],
+    "audio_transitions": {
+      "enter": "street_audio_ducks_as_cabinet_chorus_opens",
+      "north_wing": "high_frequencies_roll_off_and_hidden_location_cues_separate",
+      "taproom_transition": "arcade_mix_reverses_into_destination_audio",
+      "restroom_transition": "ddr_error_tone_resolves_into_squeaky_joystick_loop",
+      "exit": "neon_buzz_and_warped_music_remain_audible_on_side_street"
+    },
+    "comedy_stingers": {
+      "meaningless_achievement": "achievement_unlocked_hollow.ogg",
+      "token_overpay": "cash_register_too_happy.ogg",
+      "claw_near_miss": "fur_elise_wrong_note.ogg",
+      "relic_dispensed": "fur_elise_crypto_victory_remix.ogg",
+      "ddr_third_token": "dance_combo_maintenance_unlock.ogg",
+      "bidet_stool_examine": "single_polite_arcade_chime.ogg"
+    }
+  },
+  "status_effects": {
+    "environmental_buffs": [
+      {
+        "id": "arcade_focus",
+        "trigger": "win_any_twisted_arcade_game",
+        "duration_minutes": 10,
+        "effect": "plus_one_timing_window_for_next_arcade_game"
+      }
+    ],
+    "atmospheric_debuffs": [
+      {
+        "id": "green_fairy_disorientation",
+        "trigger": "enter_mirror_corridor_while_drunk_or_confused",
+        "effect": "minor_directional_ui_delay",
+        "accessibility_override": "visual_afterimage_only"
+      }
+    ],
+    "location_specific_states": {
+      "temporarily_banned": {
+        "trigger": "aggressive_token_shaking_failure",
+        "duration_minutes": 10,
+        "effects": {
+          "cabinet_interactions_disabled": true,
+          "entry_allowed": true,
+          "staff_dialogue_set": "token_shaker_walk_of_shame"
+        }
+      },
+      "claw_strategy_read": {
+        "trigger": "examine_scratched_claw_service_note",
+        "effect": "reveal_rigged_swing_timing"
+      }
+    },
+    "recovery_options": [
+      "sit_at_bottle_bar",
+      "step_into_warm_entry_lighting",
+      "disable_motion_effects_in_accessibility_menu"
+    ]
+  },
+  "couchsurf_integration": {
+    "available": true,
+    "host_npc": "debaucheryville_npc_backpack_girl_01",
+    "host_node": "aa_node_token_exchange",
+    "availability": "14:00_to_22:00_with_schedule_variation",
+    "quest_authority": "design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md",
+    "profile_authority": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/backpack_girl_who_never_left.md",
+    "dialogue_ownership": "external_reference_only"
+  },
+  "time_of_day_changes": {
+    "morning": {
+      "hours": "06:00_to_12:00",
+      "open": true,
+      "lighting": "cool_daylight_at_entry_warm_practicals_inside",
+      "activity_level": "low_cleanup_shift",
+      "green_fairy_mural": "painted_surface_only",
+      "backpack_girl_present": false
+    },
+    "afternoon": {
+      "hours": "12:00_to_18:00",
+      "open": true,
+      "lighting": "daylight_entry_warm_amber_hall_low_neon",
+      "activity_level": "moderate",
+      "backpack_girl_present_from": "14:00",
+      "taproom_curtain_state": "present_but_non_emissive"
+    },
+    "evening": {
+      "hours": "18:00_to_22:00",
+      "open": true,
+      "lighting": "amber_and_neon_balanced",
+      "activity_level": "rising",
+      "cabinet_mist_density": "medium",
+      "taproom_curtain_state": "begins_breathing_at_20:00"
+    },
+    "night": {
+      "hours": "22:00_to_04:00",
+      "open": true,
+      "lighting": "toxic_green_and_purple_dominant_with_amber_navigation_pools",
+      "activity_level": "peak",
+      "cabinet_mist_density": "high",
+      "taproom_curtain_state": "fully_emissive_and_interactable",
+      "backpack_girl_schedule": "arcade_back_area_or_hostel_migration"
+    },
+    "late_night": {
+      "hours": "04:00_to_06:00",
+      "open": true,
+      "lighting": "reduced_neon_cleanup_state",
+      "activity_level": "stragglers_and_staff",
+      "taproom_curtain_state": "light_fades_at_04:00",
+      "backpack_girl_present": false
+    }
+  },
+  "weather_effects": {
+    "clear_day": {
+      "exterior": "limestone_and_mural_read_clearly_with_low_emission",
+      "interior_threshold": "warm_dark_contrast"
+    },
+    "rain": {
+      "exterior": "wet_cobble_reflections_green_purple_and_amber",
+      "audio": "rain_on_corrugated_arcade_awning",
+      "crowd_effect": "temporary_shelter_patron_increase"
+    },
+    "fog": {
+      "exterior": "neon_bloom_and_shallow_street_haze",
+      "interior": "do_not_increase_indoor_particle_density"
+    },
+    "snow": {
+      "exterior": "snow_collects_on_mansard_awning_and_bollards_not_on_emissive_tubes",
+      "entry": "wet_footprints_on_checkerboard_threshold"
+    }
+  },
+  "particle_effects": {
+    "cabinet_green_mist": {
+      "type": "localized_loop",
+      "sources": [
+        "broken_cabinets",
+        "claw_machine_base",
+        "north_wing_cracked_time_crisis"
+      ],
+      "color": "#39FF14",
+      "density_high": 1.0,
+      "density_low": 0.25,
+      "navigation_rule": "never_obscure_floor_edges_or_hidden_door_handles"
+    },
+    "electrical_sparks": {
+      "type": "rare_burst",
+      "sources": [
+        "damaged_junction_box",
+        "broken_ddr_service_panel"
+      ],
+      "telegraph": "purple_indicator_blinks_before_burst"
+    },
+    "digital_artifacts": {
+      "type": "screen_space_local_cards",
+      "sources": [
+        "mirror_corridor",
+        "relic_claw_machine"
+      ],
+      "accessibility_fallback": "static_pixel_motes"
+    },
+    "taproom_curtain_vapor": {
+      "type": "transition_cue",
+      "source": "aa_node_taproom_curtain",
+      "active_hours": "20:00_to_04:00",
+      "ownership": "arcade_side_only"
+    }
+  },
+  "lighting_system": {
+    "historic_practicals": {
+      "color": "#FFB45A",
+      "purpose": "navigation_and_architectural_dignity",
+      "sources": [
+        "pendant_lamps",
+        "wall_lanterns",
+        "bar_task_lights"
+      ],
+      "flicker": false
+    },
+    "green_retrofit": {
+      "color": "#39FF14",
+      "purpose": "brand_and_hidden_path_cues",
+      "flicker_pattern": "slow_breath_with_short_faults",
+      "sources": [
+        "conduit",
+        "marquee",
+        "bottle_bar",
+        "taproom_curtain",
+        "selected_cabinets"
+      ]
+    },
+    "purple_retrofit": {
+      "color": "#BF00FF",
+      "purpose": "secondary_brand_and_interaction_accents",
+      "sources": [
+        "marquee",
+        "wayfinding",
+        "floor_pixels",
+        "mirror_corridor"
+      ]
+    },
+    "quest_readability": {
+      "claw_machine": "gold_halo_edge_light_after_first_examine",
+      "broken_ddr": "three_unlit_token_pips_fill_green",
+      "maintenance_door": "green_indicator_after_unlock",
+      "taproom_curtain": "breathing_green_rim_light_after_20_00",
+      "backpack_girl": "warm_floor_pool_not_neon_outline"
+    },
+    "exterior_state_method": "day_night_texture_swap_plus_emission_mask",
+    "interior_state_method": "baked_room_faces_plus_local_dynamic_quest_lights"
+  },
+  "environmental_storytelling": {
+    "permanent_details": [
+      {
+        "element": "historic_architecture_under_retrofit",
+        "description": "Conduit clamps drill directly into carved limestone while the original arches and ironwork remain carefully maintained.",
+        "location": "exterior_and_main_hall"
+      },
+      {
+        "element": "honest_tourist_trap_signage",
+        "description": "Signs openly advertise TOKENS, DRINKS, GAMES, REGRETS and POOR LIFE CHOICES.",
+        "location": "entry_and_bar"
+      },
+      {
+        "element": "cabinet_resident_nest",
+        "description": "Notebook pages, charger cables, a kebab wrapper, and backpack wear mark Backpack Girl's long-term floor spot.",
+        "location": "aa_node_token_exchange"
+      },
+      {
+        "element": "fake_vip_arrow",
+        "description": "A VIP arrow loops back to the same public bar, confirming no VIP section exists.",
+        "location": "mezzanine_stair_landing"
+      },
+      {
+        "element": "bidet_bar_stool",
+        "description": "One functional-looking bidet has been bolted to a stool base at the least desirable edge table.",
+        "location": "aa_node_bottle_bar"
+      }
+    ],
+    "dynamic_details": [
+      {
+        "element": "ddr_token_pips",
+        "visibility": "one_pip_per_inserted_token_until_three",
+        "location": "aa_node_broken_ddr"
+      },
+      {
+        "element": "maintenance_unlocked_light",
+        "visibility": "arcade_maintenance_restroom_unlocked",
+        "location": "aa_node_maintenance_door"
+      },
+      {
+        "element": "empty_relic_hook",
+        "visibility": "beer_pong_saint_relic_obtained",
+        "location": "aa_node_claw_alcove"
+      },
+      {
+        "element": "club_flyer",
+        "visibility": "club_flyer_placed",
+        "location": "exterior_flyer_panel"
+      }
+    ]
+  },
+  "accessibility": {
+    "color": {
+      "green_purple_never_sole_signal": true,
+      "interaction_shapes": "token_circle_restroom_wrench_taproom_coupe_claw_halo",
+      "high_contrast_wayfinding_available": true
+    },
+    "motion_reduction": {
+      "mirror_lag_fallback": "static_desynchronized_afterimage",
+      "floor_pulse_fallback": "steady_lit_tiles",
+      "fog_fallback": "low_static_haze",
+      "screen_glitch_fallback": "single_frame_scanline"
+    },
+    "audio": {
+      "cabinet_cacophony_ducking": true,
+      "hidden_entrance_cues_have_visual_equivalents": true,
+      "subtitles_for_environmental_comedy": true
+    }
+  }
+}

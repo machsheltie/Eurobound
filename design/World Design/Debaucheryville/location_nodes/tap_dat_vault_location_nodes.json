@@ -1,0 +1,258 @@
+{
+  "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+  "locations": [
+    {
+      "location_id": "debaucheryville_clocktower_tapdatvault_brewery_02",
+      "name": "The Tap Dat Vault",
+      "tag_id": "tap_dat_vault",
+      "region": "Debaucheryville",
+      "exterior": {
+        "description": "Tap Dat-owned plaza node with hidden switch and countdown glyphs.",
+        "entry_condition": "Find the concealed plaza switch; Enter between 00:00 and 00:59; no opener physically gates entry"
+      },
+      "interior": {
+        "theme": "A cyberpunk brew basement where vats are subwoofers and pressure control is a rhythm game.",
+        "features": [
+          "gate: tdv_vault",
+          "interior: tdv_vats",
+          "puzzle: tdv_rhythm",
+          "encounter: tdv_adbot",
+          "boss: tdv_brewmistress",
+          "service: tdv_service",
+          "selfie: tdv_selfie",
+          "exit: tdv_exit"
+        ]
+      },
+      "functions": [
+        "Find Concealed Switch",
+        "Open Vault at Midnight",
+        "Maintain Vapor Pressure",
+        "Three-Strike Ejection",
+        "Defeat Strobe Brewmistress",
+        "Claim Tour Rewards",
+        "Record Pre-Tour Completion",
+        "Buy Vape Stout",
+        "Use Hologram Wall"
+      ]
+    }
+  ],
+  "internal_node_connections": [
+    {
+      "from": "tdv_plaza",
+      "to": "tdv_vault",
+      "bidirectional": true
+    },
+    {
+      "from": "tdv_vault",
+      "to": "tdv_vats",
+      "bidirectional": true
+    },
+    {
+      "from": "tdv_vats",
+      "to": "tdv_rhythm",
+      "bidirectional": true
+    },
+    {
+      "from": "tdv_rhythm",
+      "to": "tdv_adbot",
+      "bidirectional": true
+    },
+    {
+      "from": "tdv_adbot",
+      "to": "tdv_brewmistress",
+      "bidirectional": true
+    },
+    {
+      "from": "tdv_brewmistress",
+      "to": "tdv_service",
+      "bidirectional": true
+    },
+    {
+      "from": "tdv_service",
+      "to": "tdv_selfie",
+      "bidirectional": true
+    },
+    {
+      "from": "tdv_selfie",
+      "to": "tdv_exit",
+      "bidirectional": true
+    }
+  ],
+  "node_connections": {
+    "tdv_plaza": {
+      "connects_to": [
+        "tdv_vault"
+      ],
+      "type": "exterior",
+      "description": "Tap Dat-owned plaza node with hidden switch and countdown glyphs."
+    },
+    "tdv_vault": {
+      "connects_to": [
+        "tdv_plaza",
+        "tdv_vats"
+      ],
+      "type": "gate",
+      "description": "Neon graffiti door active only during the midnight window."
+    },
+    "tdv_vats": {
+      "connects_to": [
+        "tdv_vault",
+        "tdv_rhythm"
+      ],
+      "type": "interior",
+      "description": "Central brewing vats pulse rhythm cues."
+    },
+    "tdv_rhythm": {
+      "connects_to": [
+        "tdv_vats",
+        "tdv_adbot"
+      ],
+      "type": "puzzle",
+      "description": "Audio-visual timing puzzle with three-strike ejection."
+    },
+    "tdv_adbot": {
+      "connects_to": [
+        "tdv_rhythm",
+        "tdv_brewmistress"
+      ],
+      "type": "encounter",
+      "description": "Spam mini-mob before the boss."
+    },
+    "tdv_brewmistress": {
+      "connects_to": [
+        "tdv_adbot",
+        "tdv_service"
+      ],
+      "type": "boss",
+      "description": "Final challenge with safe visual cue mode."
+    },
+    "tdv_service": {
+      "connects_to": [
+        "tdv_brewmistress",
+        "tdv_selfie"
+      ],
+      "type": "service",
+      "description": "Tour rewards and 14-Sov Vape Stout."
+    },
+    "tdv_selfie": {
+      "connects_to": [
+        "tdv_service",
+        "tdv_exit"
+      ],
+      "type": "selfie",
+      "description": "Hologram selfie landmark."
+    },
+    "tdv_exit": {
+      "connects_to": [
+        "tdv_selfie"
+      ],
+      "type": "exit",
+      "description": "Returns to Clocktower Plaza."
+    }
+  },
+  "feature_details": {
+    "tdv_plaza": {
+      "display_name": "Clocktower Plaza Approach",
+      "image_generation_description": "Tap Dat-owned plaza node with hidden switch and countdown glyphs.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tdv_vault": {
+      "display_name": "Vault Door",
+      "image_generation_description": "Neon graffiti door active only during the midnight window.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tdv_vats": {
+      "display_name": "Subwoofer Vats",
+      "image_generation_description": "Central brewing vats pulse rhythm cues.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tdv_rhythm": {
+      "display_name": "Vapor Pressure Console",
+      "image_generation_description": "Audio-visual timing puzzle with three-strike ejection.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tdv_adbot": {
+      "display_name": "Glitched Brew Ad Bot",
+      "image_generation_description": "Spam mini-mob before the boss.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tdv_brewmistress": {
+      "display_name": "Strobe Brewmistress Arena",
+      "image_generation_description": "Final challenge with safe visual cue mode.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tdv_service": {
+      "display_name": "Vault Service",
+      "image_generation_description": "Tour rewards and 14-Sov Vape Stout.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tdv_selfie": {
+      "display_name": "You Are Brewtiful Wall",
+      "image_generation_description": "Hologram selfie landmark.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    },
+    "tdv_exit": {
+      "display_name": "Plaza Return",
+      "image_generation_description": "Returns to Clocktower Plaza.",
+      "states": [
+        "base",
+        "active",
+        "completed",
+        "accessible"
+      ],
+      "occlusion": "Puzzle and boss cues remain readable."
+    }
+  },
+  "ambient_npcs": [
+    "vapor club patrons",
+    "livestream drones"
+  ]
+}

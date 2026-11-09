@@ -1,0 +1,157 @@
+{
+  "location_id": "debaucheryville_circus_participation_trophy_01",
+  "events": [
+    {
+      "event_id": "pt_redeem",
+      "display_name": "Redeem Circus Tickets",
+      "trigger": {
+        "verb": "redeem",
+        "node_id": "pt_counter"
+      },
+      "requirements": [],
+      "results": [
+        "validate_ticket_cost",
+        "participation_prize_redeemed"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "pt_buy",
+      "display_name": "Ask to Buy Prize Directly",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "pt_counter"
+      },
+      "requirements": [],
+      "results": [
+        "participation_direct_purchase_seen"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "pt_frequent",
+      "display_name": "Frequent Loser Recognition",
+      "trigger": {
+        "verb": "talk",
+        "node_id": "pt_counter"
+      },
+      "requirements": [
+        "documented_game_loss_threshold"
+      ],
+      "results": [
+        "frequent_loser_status"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "pt_inspect_grand",
+      "display_name": "Inspect Grand Prizes",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "pt_grand_shelf"
+      },
+      "requirements": [],
+      "results": [
+        "mark_display_only"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "pt_browse_junk",
+      "display_name": "Browse Participation Bin",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "pt_floor_junk"
+      },
+      "requirements": [],
+      "results": [
+        "open_low_tier_stock"
+      ],
+      "quest_bindings": [],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "pt_redeem",
+      "node_id": "pt_counter",
+      "verb": "redeem",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "pt_buy",
+      "node_id": "pt_counter",
+      "verb": "purchase",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "pt_frequent",
+      "node_id": "pt_counter",
+      "verb": "talk",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "pt_inspect_grand",
+      "node_id": "pt_grand_shelf",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "pt_browse_junk",
+      "node_id": "pt_floor_junk",
+      "verb": "shop",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "participation_booth_open",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "frequent_loser_status",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "participation_direct_purchase_seen",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "participation_prize_redeemed",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Everyone's a Winner, Spiritually False",
+    "A deliberately underwhelming booth where ticket economics convert effort into garbage."
+  ]
+}

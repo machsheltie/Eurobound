@@ -1,0 +1,98 @@
+{
+  "location_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+  "display_name": "Velvet Curtain Club",
+  "satirical_subtitle": "Vibes Only. No Shoes? No Dignity? You're In.",
+  "world": "Debaucheryville",
+  "zone": "Service lane behind opera ruins",
+  "location_type": "Gated Nightclub / Social Hub / Quest Venue",
+  "sub_types": [
+    "quest location",
+    "service or micro-location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/velvet_curtain_club.md",
+    "docs/superpowers/specs/2026-11-02-velvet-curtain-club-location-package-design.md"
+  ],
+  "access": {
+    "hours": "20:00-04:00",
+    "entry_requirements": [
+      "Alley always approachable",
+      "vip_wristbands_all_bros starts return sequence",
+      "stage 7 exports vip_wristband_quest_complete and velvet_curtain_club_access_was_always_free"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "vcc_exit_alley",
+      "destination_id": "debaucheryville_opera_ruins_alley",
+      "from_node": "vcc_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "vcc_exit_vip_stall",
+      "destination_id": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+      "from_node": "vcc_vip_path",
+      "condition": "velvet_vip_stall_access_unlocked"
+    },
+    {
+      "exit_id": "vcc_exit_brew_lab",
+      "destination_id": "debaucheryville_velvetcurtain_brew_lab_01",
+      "from_node": "vcc_lab_path",
+      "condition": "brew_lab_access_unlocked"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Opera-Ruins Alley -> Velvet Rope Gate -> Dance Floor -> Broken-Throne DJ Dais -> Crushed-Velvet Booths -> Club Bar -> VIP Stall Path -> B.R.E.W. Lab Service Route -> Alley Exit",
+    "landmarks": [
+      "Opera-Ruins Alley",
+      "Velvet Rope Gate",
+      "Dance Floor",
+      "Broken-Throne DJ Dais",
+      "Crushed-Velvet Booths",
+      "Club Bar",
+      "VIP Stall Path",
+      "B.R.E.W. Lab Service Route",
+      "Alley Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_opera_ruins_alley owns space beyond vcc_exit.",
+      "Destination debaucheryville_velvetcurtain_vipstall_bathroom_01 owns space beyond vcc_vip_path.",
+      "Destination debaucheryville_velvetcurtain_brew_lab_01 owns space beyond vcc_lab_path."
+    ]
+  },
+  "atmosphere": {
+    "summary": "Fraudulent exclusivity staged in burgundy fog, crushed velvet and vape-crystal chandeliers."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "deep burgundy",
+      "velvet black",
+      "cheap gold",
+      "LED magenta"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Vibes Only. No Shoes? No Dignity? You're In.",
+    "contrast": "Fraudulent exclusivity staged in burgundy fog, crushed velvet and vape-crystal chandeliers."
+  },
+  "state_tracking": {
+    "vip_wristbands_all_bros": false,
+    "vip_wristband_quest_complete": false,
+    "velvet_curtain_club_access_was_always_free": false,
+    "velvet_vip_stall_entrance_discovered": false,
+    "velvet_vip_stall_access_unlocked": false,
+    "brew_lab_entrance_discovered": false,
+    "brew_lab_access_unlocked": false,
+    "club_flyer_triggered": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "velvet_curtain_club_exterior",
+      "velvet_curtain_club_interior",
+      "velvet_curtain_club_ui"
+    ]
+  }
+}

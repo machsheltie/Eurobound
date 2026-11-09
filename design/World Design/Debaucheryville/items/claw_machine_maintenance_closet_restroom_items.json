@@ -1,0 +1,47 @@
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "item_category": "Secret Restroom / Graffiti Micro-Location",
+  "items": [
+    {
+      "item_id": "cmr_broken_prize_tag",
+      "display_name": "Broken Prize Tag",
+      "item_type": "lore_item",
+      "price": 0,
+      "effect": "Records a claw-machine maintenance joke.",
+      "acquisition": "Claw-arm examination."
+    },
+    {
+      "item_id": "cmr_rival_icq_snapshot",
+      "display_name": "Rival Trio ICQ Snapshot",
+      "item_type": "quest_reference",
+      "price": 0,
+      "effect": "Registers the documented ICQ callback.",
+      "acquisition": "CRT mirror interaction."
+    }
+  ],
+  "external_item_references": [
+    {
+      "reference": "item_arcade_token (unlock already paid in parent)",
+      "ownership": "external"
+    },
+    {
+      "reference": "Absinthe Arcade quest states",
+      "ownership": "external"
+    }
+  ],
+  "non_item_rewards": [
+    {
+      "reward_id": "arcade_maintenance_restroom_unlocked",
+      "type": "state"
+    },
+    {
+      "reward_id": "claw_restroom_graffiti_read",
+      "type": "state"
+    }
+  ],
+  "shop_economics": {
+    "currency": "Sovs unless source specifies otherwise",
+    "price_confirmation_required": true,
+    "time_modifiers": "documented only"
+  }
+}

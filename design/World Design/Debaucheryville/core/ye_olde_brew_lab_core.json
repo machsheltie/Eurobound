@@ -1,0 +1,101 @@
+{
+  "location_id": "debaucheryville_velvetcurtain_brew_lab_01",
+  "display_name": "Ye Olde B.R.E.W. Lab",
+  "satirical_subtitle": "Algorithm Verified",
+  "world": "Debaucheryville",
+  "zone": "Basement beneath Velvet Curtain Club",
+  "location_type": "Brewery Tour Stop 4 / Tech-Satire Boss Lab",
+  "sub_types": [
+    "brewery tour dungeon",
+    "puzzle/encounter",
+    "selfie location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/ye_olde_brew_lab.md",
+    "design/items/brewery_tour/",
+    "docs/superpowers/specs/2026-11-02-ye-olde-brew-lab-location-package-design.md"
+  ],
+  "access": {
+    "hours": "22:00-04:00",
+    "entry_requirements": [
+      "brew_lab_entrance_discovered",
+      "brew_lab_access_unlocked",
+      "Location hours; no opener physically gates entry"
+    ],
+    "physical_entry_uses_opener": false,
+    "tour_reward_requires": [
+      "brewery_tour_active",
+      "bottle_opener_keychain"
+    ],
+    "pre_tour_completion_policy": "store challenge completion and grant rewards on first eligible return without replay"
+  },
+  "exits": [
+    {
+      "exit_id": "ybl_exit_club",
+      "destination_id": "debaucheryville_operaruins_velvetcurtainclub_nightclub_01",
+      "from_node": "ybl_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Inside Lab Stair -> Brewing Vat Leg -> AI Console Leg -> Taste Profile Station -> Fermenting Algorithm -> BrewBot Arena -> Robotic Bartender -> Algorithm Archive -> Club Return Stair",
+    "landmarks": [
+      "Inside Lab Stair",
+      "Brewing Vat Leg",
+      "AI Console Leg",
+      "Taste Profile Station",
+      "Fermenting Algorithm",
+      "BrewBot Arena",
+      "Robotic Bartender",
+      "Algorithm Archive",
+      "Club Return Stair"
+    ],
+    "ownership_boundaries": [
+      "Parent owns approach; this package owns destination side through ybl_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "An L-shaped blue-lit brewery lab where taste profiles, blockchain screens and BrewBot automate bad judgment."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "harsh blue",
+      "bioluminescent green",
+      "lab white",
+      "screen cyan"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Algorithm Verified",
+    "contrast": "An L-shaped blue-lit brewery lab where taste profiles, blockchain screens and BrewBot automate bad judgment."
+  },
+  "state_tracking": {
+    "brew_lab_entrance_discovered": false,
+    "brew_lab_access_unlocked": false,
+    "brew_lab_challenge_complete": false,
+    "brew_lab_tour_rewards_deferred": false,
+    "brew_lab_tour_rewards_granted": false,
+    "brew_lab_selfie_unlocked": false,
+    "debaucheryville_brewery_tour_complete": false
+  },
+  "progressive_states": [
+    {
+      "state": "pre_tour_complete",
+      "behavior": "Challenge remains complete; rewards deferred."
+    },
+    {
+      "state": "tour_eligible_return",
+      "behavior": "Grant opener, stamp, selfie and beer purchase access without replay."
+    }
+  ],
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 128,
+    "streaming_groups": [
+      "ye_olde_brew_lab_entry",
+      "ye_olde_brew_lab_dungeon",
+      "ye_olde_brew_lab_boss_ui"
+    ]
+  }
+}

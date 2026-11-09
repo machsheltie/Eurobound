@@ -1,0 +1,33 @@
+{
+  "location_id": "debaucheryville_arcade_maintenance_closet_01",
+  "location_name": "Claw Machine Maintenance Closet Restroom",
+  "npcs": [],
+  "ambient_npcs": [
+    {
+      "group_id": "claw_machine_maintenance_closet_restroom_ambient_1",
+      "display_name": "speedrunner foot-soak callback",
+      "spawn_nodes": [
+        "cmr_crt_mirror",
+        "cmr_graffiti_wall",
+        "cmr_claw_bucket"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "claw_machine_maintenance_closet_restroom_ambient_2",
+      "display_name": "electrical hum",
+      "spawn_nodes": [
+        "cmr_crt_mirror",
+        "cmr_graffiti_wall",
+        "cmr_claw_bucket"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Reduce ambient count during quest scenes",
+    "Contrast named NPC silhouettes"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "location_id": "debaucheryville_vendor_bohemian_trap_01",
+  "display_name": "The Bohemian Trap",
+  "satirical_subtitle": "Authentic Absinthe, Recently Antiqued",
+  "world": "Debaucheryville",
+  "zone": "Neon Entertainment Quarter",
+  "location_type": "Absinthe Street Cart / Ritual Vendor",
+  "sub_types": [
+    "quest location",
+    "service or micro-location"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/the_bohemian_trap.md",
+    "docs/superpowers/specs/2026-11-02-bohemian-trap-location-package-design.md"
+  ],
+  "access": {
+    "hours": "18:00-04:00",
+    "entry_requirements": [
+      "Vendor operating hours"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "bt_exit_quarter",
+      "destination_id": "debaucheryville_neon_entertainment_quarter",
+      "from_node": "bt_exit",
+      "condition": "always"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Cart Approach -> Absinthe Array -> Ritual Station -> Performer Counter -> Customer Reaction Space -> Quarter Exit",
+    "landmarks": [
+      "Cart Approach",
+      "Absinthe Array",
+      "Ritual Station",
+      "Performer Counter",
+      "Customer Reaction Space",
+      "Quarter Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_neon_entertainment_quarter owns space beyond bt_exit."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A 2015 cart artificially aged into Belle Époque tourist mythology."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D",
+    "palette": [
+      "absinthe green",
+      "fake antique gold",
+      "black iron",
+      "sugar white"
+    ]
+  },
+  "satirical_design": {
+    "tagline": "Authentic Absinthe, Recently Antiqued",
+    "contrast": "A 2015 cart artificially aged into Belle Époque tourist mythology."
+  },
+  "state_tracking": {
+    "bohemian_trap_open": false,
+    "bohemian_trap_ritual_complete": false,
+    "bohemian_trap_control_reversal_active": false,
+    "bohemian_trap_worth_it_checked": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "bohemian_trap_exterior",
+      "bohemian_trap_interior",
+      "bohemian_trap_ui"
+    ]
+  }
+}

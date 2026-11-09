@@ -1,0 +1,104 @@
+{
+  "location_id": "debaucheryville_oldtown_astronomical_cockup_square_01",
+  "display_name": "Astronomical Cock-Up Square",
+  "satirical_subtitle": "600 Years of Disappointment, 38 Seconds at a Time",
+  "world": "debaucheryville",
+  "zone": "old_town_district",
+  "location_type": "quest_hub",
+  "sub_types": ["tourist_attraction", "vendor_cluster", "landmark"],
+  
+  "access": {
+    "time_restrictions": {
+      "always_accessible": true,
+      "clock_show_hours": "hourly_day_cycle"
+    },
+    "stat_requirements": null,
+    "item_requirements": null,
+    "previous_locations": null,
+    "special_conditions": {
+      "crowd_density_increase": "15_minutes_before_hourly_show"
+    }
+  },
+  
+  "exits": [
+    {
+      "exit_id": "to_old_town_streets",
+      "destination": "debaucheryville_oldtown_streets_01",
+      "direction": "any",
+      "requirements": null
+    },
+    {
+      "exit_id": "to_euro_ink_4_less",
+      "destination": "debaucheryville_oldtown_euro_ink_01",
+      "direction": "east_alley",
+      "requirements": {
+        "triggered_by": "tattoo_decision_made"
+      }
+    },
+    {
+      "exit_id": "to_clocktower_cafe",
+      "destination": "debaucheryville_oldtown_clocktower_cafe_01",
+      "direction": "north",
+      "requirements": null
+    }
+  ],
+  
+  "atmosphere": {
+    "primary_mood": "tourist_chaos",
+    "secondary_moods": ["anticipation", "disappointment", "exploitation"],
+    "crowd_level": "very_high",
+    "noise_level": "high",
+    "lighting": {
+      "day": "bright_natural_harsh_shadows",
+      "golden_hour": "dramatic_silhouette_warm_glow",
+      "night": "streetlamp_pools_neon_phone_glow"
+    }
+  },
+  
+  "visual_theme": {
+    "primary_colors": ["#708090", "#CFB53B"],
+    "accent_colors": ["#7FFF00", "#4B0082", "#FF1493"],
+    "architectural_style": "gothic_baroque_tourist_trap",
+    "key_visual_elements": [
+      "massive_clock_tower",
+      "cobblestone_square",
+      "vendor_stalls",
+      "tourist_crowd",
+      "graffiti_on_unesco_sign"
+    ]
+  },
+  
+  "satirical_design": {
+    "primary_target": "tourist_trap_economies",
+    "secondary_targets": [
+      "manufactured_authenticity",
+      "spiritual_exploitation", 
+      "vip_culture_desperation",
+      "commemorative_merchandise_coping",
+      "men_getting_tattoos_to_impress_waitresses"
+    ],
+    "buffoon_delusion": {
+      "what_bros_think": "Profound spiritual connection with 600 years of European history",
+      "what_actually_happens": "Crying over 38-second animatronic show, buying garbage"
+    }
+  },
+  
+  "state_tracking": {
+    "clock_show_witnessed": false,
+    "post_clock_vulnerability": false,
+    "vulnerability_expires_after_minutes": 30,
+    "vendors_encountered": [],
+    "items_purchased": [],
+    "total_gold_spent": 0,
+    "crying_triggered": false,
+    "tattoo_decision_made": false,
+    "return_visit_count": 0
+  },
+  
+  "performance": {
+    "target_fps": 45,
+    "max_draw_calls": 20,
+    "memory_budget_mb": 45,
+    "max_crowd_sprites": 50
+  }
+}

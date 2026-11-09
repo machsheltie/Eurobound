@@ -1,0 +1,90 @@
+{
+  "location_id": "debaucheryville_blockbuster_internet_museum_01",
+  "display_name": "Internet History Museum",
+  "satirical_subtitle": "Preserving Our Digital Past in Comic Sans",
+  "world": "Debaucheryville",
+  "zone": "Former downtown Blockbuster",
+  "location_type": "Faux Museum / Cursed Exhibit Hub / Hidden Access Parent",
+  "sub_types": [
+    "quest location",
+    "service hub"
+  ],
+  "canon_sources": [
+    "design/World Design/Debaucheryville/internethistorymuseum.md",
+    "docs/superpowers/specs/2026-11-02-internet-history-museum-location-package-design.md"
+  ],
+  "access": {
+    "hours": "Public 08:00-20:00; quest access 03:25-03:40",
+    "entry_requirements": [
+      "Public door during 08:00-20:00",
+      "03:25-03:40 quest-unlatched route after meme_black_market_graffiti_clue_read"
+    ]
+  },
+  "exits": [
+    {
+      "exit_id": "ihm_exit_downtown",
+      "destination_id": "debaucheryville_downtown",
+      "from_node": "ihm_exit",
+      "condition": "always"
+    },
+    {
+      "exit_id": "ihm_exit_meme_market",
+      "destination_id": "debaucheryville_museum_meme_black_market_01",
+      "from_node": "ihm_vhs_shelf",
+      "condition": "meme_black_market_entrance_unlocked"
+    }
+  ],
+  "spatial_identity": {
+    "layout_summary": "Former Blockbuster Façade -> Museum Lobby -> Hall of Modems -> GeoCities Diorama -> Angelfire Wall -> Habbo Crime Scene -> MSN Graveyard Terminal -> iMac G3 Altar -> Secret VHS Shelf -> Downtown Exit",
+    "landmarks": [
+      "Former Blockbuster Façade",
+      "Museum Lobby",
+      "Hall of Modems",
+      "GeoCities Diorama",
+      "Angelfire Wall",
+      "Habbo Crime Scene",
+      "MSN Graveyard Terminal",
+      "iMac G3 Altar",
+      "Secret VHS Shelf",
+      "Downtown Exit"
+    ],
+    "ownership_boundaries": [
+      "Destination debaucheryville_downtown owns space beyond ihm_exit.",
+      "Destination debaucheryville_museum_meme_black_market_01 owns space beyond ihm_vhs_shelf."
+    ]
+  },
+  "atmosphere": {
+    "summary": "A failed video store curated as a dead-serious museum of cursed early-internet trauma."
+  },
+  "visual_theme": {
+    "render_pipeline": "Godot 4.4 painterly HD-2D painted faces, depth cards and billboard/cutout props",
+    "palette": [
+      "Blockbuster blue",
+      "CRT green",
+      "static grey",
+      "Comic Sans yellow",
+      "darkroom cyan"
+    ]
+  },
+  "satirical_design": {
+    "core_target": "Preserving Our Digital Past in Comic Sans",
+    "contrast": "A failed video store curated as a dead-serious museum of cursed early-internet trauma."
+  },
+  "state_tracking": {
+    "internet_museum_open": false,
+    "internet_museum_after_hours_access_enabled": false,
+    "meme_black_market_graffiti_clue_read": false,
+    "meme_black_market_entrance_discovered": false,
+    "meme_black_market_entrance_unlocked": false,
+    "curator_of_cursed_web_unlocked": false
+  },
+  "performance": {
+    "target_fps": 60,
+    "texture_budget_mb": 96,
+    "streaming_groups": [
+      "internet_history_museum_exterior",
+      "internet_history_museum_interior",
+      "internet_history_museum_ui"
+    ]
+  }
+}

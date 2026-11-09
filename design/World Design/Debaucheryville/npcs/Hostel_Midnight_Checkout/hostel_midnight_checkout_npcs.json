@@ -1,0 +1,117 @@
+{
+  "location_id": "debaucheryville_hostel_midnight_checkout_01",
+  "location_name": "Hostel \"Midnight Checkout\"",
+  "npcs": [
+    {
+      "npc_id": "hmc_npc_jakub",
+      "display_name": "Jakub",
+      "role": "night receptionist and hostel philosopher",
+      "node": "hmc_reception",
+      "schedule": "night shift",
+      "visual": "Hostel shirt, stubble and thousand-yard calm.",
+      "quest_bindings": [
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "hmc_npc_day_receptionist",
+      "display_name": "Day Receptionist",
+      "role": "check-in service",
+      "node": "hmc_reception",
+      "schedule": "day shift",
+      "visual": "Practical layers, key ring and paperwork.",
+      "quest_bindings": [
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    },
+    {
+      "npc_id": "hmc_npc_long_term_guest",
+      "display_name": "Long-Term Guest",
+      "role": "confession and hostel lore",
+      "node": "hmc_bunk_confession",
+      "schedule": "rotating night schedule",
+      "visual": "Travel-worn clothes and too many tote bags.",
+      "quest_bindings": [
+        "couchsurfingchroniclesdebaucheryville",
+        "nothingisgettingthrough"
+      ],
+      "dialogue_ownership": "reference only",
+      "sprite_requirements": [
+        "idle",
+        "talk",
+        "react",
+        "service"
+      ]
+    }
+  ],
+  "ambient_npcs": [
+    {
+      "group_id": "hostel_midnight_checkout_ambient_1",
+      "display_name": "rotating backpackers",
+      "spawn_nodes": [
+        "hmc_bunk_confession",
+        "hmc_kitchen",
+        "hmc_lounge_wifi"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "hostel_midnight_checkout_ambient_2",
+      "display_name": "snoring roommates",
+      "spawn_nodes": [
+        "hmc_bunk_confession",
+        "hmc_kitchen",
+        "hmc_lounge_wifi"
+      ],
+      "max_count": 4
+    },
+    {
+      "group_id": "hostel_midnight_checkout_ambient_3",
+      "display_name": "kitchen foragers",
+      "spawn_nodes": [
+        "hmc_bunk_confession",
+        "hmc_kitchen",
+        "hmc_lounge_wifi"
+      ],
+      "max_count": 4
+    }
+  ],
+  "npc_interactions": [
+    {
+      "npc_id": "hmc_npc_jakub",
+      "node_id": "hmc_reception",
+      "role": "night receptionist and hostel philosopher"
+    },
+    {
+      "npc_id": "hmc_npc_day_receptionist",
+      "node_id": "hmc_reception",
+      "role": "check-in service"
+    },
+    {
+      "npc_id": "hmc_npc_long_term_guest",
+      "node_id": "hmc_bunk_confession",
+      "role": "confession and hostel lore"
+    }
+  ],
+  "spawn_and_readability_rules": [
+    "Keep exits clear",
+    "Do not overlap named NPC silhouettes",
+    "Reduce ambient count during quest scenes"
+  ]
+}

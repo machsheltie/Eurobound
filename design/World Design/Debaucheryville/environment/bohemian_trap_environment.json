@@ -1,0 +1,118 @@
+{
+  "location_id": "debaucheryville_vendor_bohemian_trap_01",
+  "ambient_audio": {
+    "base_layers": [
+      "tourist believers ambience",
+      "skeptical locals ambience"
+    ],
+    "spatial_emitters": [
+      {
+        "node_id": "bt_cart_approach",
+        "cue": "exterior_loop"
+      },
+      {
+        "node_id": "bt_bottle_display",
+        "cue": "shop_loop"
+      },
+      {
+        "node_id": "bt_ritual_station",
+        "cue": "interaction_loop"
+      },
+      {
+        "node_id": "bt_performer",
+        "cue": "service_loop"
+      },
+      {
+        "node_id": "bt_customer_space",
+        "cue": "social_loop"
+      },
+      {
+        "node_id": "bt_exit",
+        "cue": "exit_loop"
+      }
+    ]
+  },
+  "status_effects": [
+    {
+      "effect_id": "bt_house_absinthe_effect",
+      "description": "Mild intoxication and Green Fairy flavor."
+    },
+    {
+      "effect_id": "bt_authentic_absinthe_effect",
+      "description": "Stronger intoxication and Confusion chance."
+    },
+    {
+      "effect_id": "bt_hemingway_tier_effect",
+      "description": "High Confusion and possible control reversal."
+    },
+    {
+      "effect_id": "bt_absinthe_ritual_effect",
+      "description": "Performs spoon, sugar and drip sequence."
+    }
+  ],
+  "time_of_day_changes": [
+    {
+      "state": "open",
+      "changes": [
+        "full service and named NPCs"
+      ]
+    },
+    {
+      "state": "closed_or_off_peak",
+      "changes": [
+        "documented denial or alternate crowd"
+      ]
+    }
+  ],
+  "weather_effects": {
+    "exterior": [
+      "wet neon reflections"
+    ],
+    "interior": [
+      "threshold-only weather read-through"
+    ]
+  },
+  "particle_effects": [
+    {
+      "id": "bohemian_trap_fx",
+      "nodes": [
+        "bt_cart_approach",
+        "bt_bottle_display",
+        "bt_ritual_station",
+        "bt_performer",
+        "bt_customer_space",
+        "bt_exit"
+      ],
+      "fallback": "clean static plate"
+    }
+  ],
+  "lighting_system": {
+    "palette": [
+      "absinthe green",
+      "fake antique gold",
+      "black iron",
+      "sugar white"
+    ],
+    "emission_mask": "bohemian_trap_masks",
+    "readability": "interaction landmarks brighter than clutter"
+  },
+  "environmental_storytelling": [
+    "Nightly neon-quarter anchor with ornate green-and-gold cart.",
+    "Backlit bottles ranked by invented authenticity.",
+    "Spoons, cubes, drips and controlled flame theater.",
+    "Vendor delivers mythology and Bravado reactions.",
+    "Standing zone for consumption and control-reversal aftermath.",
+    "Returns to the neon entertainment street."
+  ],
+  "accessibility": {
+    "variants": [
+      "Flame-free ritual alternative",
+      "Control-reversal warning and opt-out",
+      "Reduced green pulse",
+      "Text product effects"
+    ],
+    "reduced_motion": true,
+    "reduced_flash": true,
+    "high_contrast": true
+  }
+}

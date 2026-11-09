@@ -1,0 +1,172 @@
+{
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "events": [
+    {
+      "event_id": "mmc_browse",
+      "display_name": "Browse Meat Roulette",
+      "trigger": {
+        "verb": "shop",
+        "node_id": "mmc_menu"
+      },
+      "requirements": [],
+      "results": [
+        "open_mystery_menu"
+      ],
+      "quest_bindings": [
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "mmc_purchase",
+      "display_name": "Order from Chuckles",
+      "trigger": {
+        "verb": "purchase",
+        "node_id": "mmc_chef"
+      },
+      "requirements": [],
+      "results": [
+        "charge_kebab_coins"
+      ],
+      "quest_bindings": [
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "mmc_consume",
+      "display_name": "Eat Mystery Meat",
+      "trigger": {
+        "verb": "consume",
+        "node_id": "mmc_consume"
+      },
+      "requirements": [],
+      "results": [
+        "apply_item_effect",
+        "great_doner_debate_mystery_sampled"
+      ],
+      "quest_bindings": [
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "mmc_clown_check",
+      "display_name": "Show Full Clown Gear",
+      "trigger": {
+        "verb": "check",
+        "node_id": "mmc_chef"
+      },
+      "requirements": [
+        "full_clown_gear_equipped"
+      ],
+      "results": [
+        "chef_chuckles_sidequest_unlocked"
+      ],
+      "quest_bindings": [
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "mmc_inspect",
+      "display_name": "Inspect Ingredient Storage",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "mmc_storage"
+      },
+      "requirements": [],
+      "results": [
+        "add_mystery_cart_lore"
+      ],
+      "quest_bindings": [
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "interaction_id": "mmc_browse",
+      "node_id": "mmc_menu",
+      "verb": "shop",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "mmc_purchase",
+      "node_id": "mmc_chef",
+      "verb": "purchase",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "mmc_consume",
+      "node_id": "mmc_consume",
+      "verb": "consume",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "mmc_clown_check",
+      "node_id": "mmc_chef",
+      "verb": "check",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "mmc_inspect",
+      "node_id": "mmc_storage",
+      "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    }
+  ],
+  "return_visit_changes": [
+    {
+      "state": "mystery_cart_open",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "mystery_cart_night_enhanced",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "chef_chuckles_sidequest_unlocked",
+      "change": "Persist and present authored state."
+    },
+    {
+      "state": "great_doner_debate_mystery_sampled",
+      "change": "Persist and present authored state."
+    }
+  ],
+  "narrator_commentary": [
+    "Free Sample, Not Legally Binding",
+    "A steam-belching carnival pushcart whose rotisserie spins like a cursed carousel."
+  ]
+}

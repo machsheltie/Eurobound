@@ -1,0 +1,437 @@
+{
+  "location_id": "sinfonia_stadtpark_gustavs_refuge_01",
+  
+  "sprite_sheets": {
+    "park_tileset": {
+      "file": "stadtpark_tileset.png",
+      "dimensions": {"width": 1024, "height": 768},
+      "tile_size": 32,
+      "categories": {
+        "ground_tiles": {
+          "start_row": 0,
+          "tiles": [
+            {"id": "grass_dark", "col": 0},
+            {"id": "grass_light", "col": 1},
+            {"id": "grass_moonlit", "col": 2},
+            {"id": "gravel_path", "col": 3},
+            {"id": "gravel_path_edge", "col": 4},
+            {"id": "flower_bed", "col": 5},
+            {"id": "flower_bed_trampled", "col": 6},
+            {"id": "water_pond", "col": 7}
+          ]
+        },
+        "vegetation": {
+          "start_row": 1,
+          "tiles": [
+            {"id": "tree_oak_base", "col": 0, "width": 2, "height": 3},
+            {"id": "tree_oak_canopy", "col": 2, "width": 3, "height": 3},
+            {"id": "hedge_section", "col": 5, "width": 2},
+            {"id": "hedge_corner", "col": 7},
+            {"id": "rose_bush", "col": 8},
+            {"id": "autumn_leaves_ground", "col": 9}
+          ]
+        },
+        "furniture": {
+          "start_row": 4,
+          "tiles": [
+            {"id": "bench_cast_iron", "col": 0, "width": 2},
+            {"id": "lamppost", "col": 2, "height": 3},
+            {"id": "drinking_fountain", "col": 3},
+            {"id": "trash_bin", "col": 4},
+            {"id": "park_sign", "col": 5}
+          ]
+        },
+        "buildings": {
+          "start_row": 7,
+          "tiles": [
+            {"id": "restroom_building", "col": 0, "width": 3, "height": 2},
+            {"id": "ranger_station", "col": 3, "width": 3, "height": 2},
+            {"id": "bandstand_base", "col": 6, "width": 4, "height": 2},
+            {"id": "bandstand_roof", "col": 10, "width": 4, "height": 2}
+          ]
+        }
+      }
+    },
+    
+    "strauss_statue": {
+      "file": "johann_strauss_statue.png",
+      "dimensions": {"width": 128, "height": 192},
+      "sprite_size": {"width": 128, "height": 192},
+      "states": {
+        "normal": {"row": 0, "frames": 1},
+        "moonlit_glow": {"row": 0, "frames": 2, "fps": 0.5}
+      },
+      "details": {
+        "gold_gilding": "animated_shimmer",
+        "marble_base": "worn_texture",
+        "violin_pose": "raised_triumphant"
+      }
+    },
+    
+    "pond_tileset": {
+      "file": "ornamental_pond.png",
+      "dimensions": {"width": 256, "height": 256},
+      "tiles": [
+        {"id": "pond_center", "position": {"x": 0, "y": 0}, "size": 64},
+        {"id": "pond_edge_n", "position": {"x": 64, "y": 0}, "size": 32},
+        {"id": "pond_edge_s", "position": {"x": 64, "y": 32}, "size": 32},
+        {"id": "pond_edge_e", "position": {"x": 96, "y": 0}, "size": 32},
+        {"id": "pond_edge_w", "position": {"x": 96, "y": 32}, "size": 32},
+        {"id": "pond_corner_ne", "position": {"x": 128, "y": 0}, "size": 32},
+        {"id": "pond_corner_nw", "position": {"x": 128, "y": 32}, "size": 32},
+        {"id": "pond_corner_se", "position": {"x": 160, "y": 0}, "size": 32},
+        {"id": "pond_corner_sw", "position": {"x": 160, "y": 32}, "size": 32},
+        {"id": "fountain_center", "position": {"x": 0, "y": 64}, "size": 64, "animated": true, "frames": 4},
+        {"id": "lily_pad", "position": {"x": 64, "y": 64}, "size": 16}
+      ]
+    },
+    
+    "npc_gustav": {
+      "file": "npc_gustav_horse.png",
+      "dimensions": {"width": 512, "height": 384},
+      "sprite_size": {"width": 64, "height": 64},
+      "animations": {
+        "defiant_stand": {
+          "row": 0,
+          "frames": 2,
+          "fps": 0.5,
+          "loop": true
+        },
+        "heavy_breathing": {
+          "row": 1,
+          "frames": 4,
+          "fps": 2,
+          "loop": true,
+          "includes": "steam_breath_particle"
+        },
+        "ears_perk": {
+          "row": 2,
+          "frames": 2,
+          "fps": 4,
+          "loop": false
+        },
+        "backing_away": {
+          "row": 3,
+          "frames": 4,
+          "fps": 3,
+          "loop": false
+        },
+        "cautious_approach": {
+          "row": 4,
+          "frames": 4,
+          "fps": 2,
+          "loop": false
+        },
+        "eating_skittles": {
+          "row": 5,
+          "frames": 4,
+          "fps": 3,
+          "loop": true
+        },
+        "nuzzle": {
+          "row": 6,
+          "frames": 3,
+          "fps": 2,
+          "loop": false
+        },
+        "bolting": {
+          "row": 7,
+          "frames": 6,
+          "fps": 8,
+          "loop": false
+        },
+        "trot_into_moonlight": {
+          "row": 8,
+          "frames": 6,
+          "fps": 4,
+          "loop": false
+        }
+      },
+      "costume_elements": {
+        "opera_cape": "always_visible_tattered",
+        "cafe_feathers": "stuck_in_mane",
+        "breath_steam": "particle_overlay"
+      }
+    },
+    
+    "npc_hans_jurgen_stadtpark": {
+      "file": "npc_hans_jurgen_stadtpark.png",
+      "dimensions": {"width": 288, "height": 384},
+      "sprite_size": {"width": 48, "height": 64},
+      "animations": {
+        "running_desperate": {
+          "row": 0,
+          "frames": 6,
+          "fps": 6,
+          "loop": true
+        },
+        "out_of_breath": {
+          "row": 1,
+          "frames": 2,
+          "fps": 1,
+          "loop": true
+        },
+        "pleading": {
+          "row": 2,
+          "frames": 4,
+          "fps": 2,
+          "loop": true
+        },
+        "crying": {
+          "row": 3,
+          "frames": 2,
+          "fps": 1,
+          "loop": true
+        },
+        "relief_reunion": {
+          "row": 4,
+          "frames": 4,
+          "fps": 2,
+          "loop": false
+        },
+        "accepting_goodbye": {
+          "row": 5,
+          "frames": 3,
+          "fps": 2,
+          "loop": false
+        }
+      },
+      "state_variants": {
+        "disheveled": "default_stadtpark",
+        "holding_halter": "has_prop"
+      }
+    },
+    
+    "npc_pigeon_lady_stadtpark": {
+      "file": "npc_pigeon_lady.png",
+      "dimensions": {"width": 192, "height": 192},
+      "sprite_size": {"width": 48, "height": 64},
+      "animations": {
+        "standing_with_pigeons": {
+          "row": 0,
+          "frames": 2,
+          "fps": 0.5,
+          "loop": true
+        },
+        "cryptic_gesture": {
+          "row": 1,
+          "frames": 3,
+          "fps": 1,
+          "loop": false
+        },
+        "listening_to_gustav": {
+          "row": 2,
+          "frames": 2,
+          "fps": 0.5,
+          "loop": true
+        }
+      },
+      "companions": {
+        "pigeons": {
+          "count": 5,
+          "behavior": "surrounding_ambient"
+        }
+      }
+    },
+    
+    "npc_swans": {
+      "file": "aggressive_swans.png",
+      "dimensions": {"width": 192, "height": 128},
+      "sprite_size": {"width": 48, "height": 32},
+      "animations": {
+        "sleeping": {
+          "row": 0,
+          "frames": 2,
+          "fps": 0.25,
+          "loop": true
+        },
+        "alert": {
+          "row": 1,
+          "frames": 2,
+          "fps": 2,
+          "loop": false
+        },
+        "attacking": {
+          "row": 2,
+          "frames": 4,
+          "fps": 6,
+          "loop": true
+        },
+        "swimming": {
+          "row": 3,
+          "frames": 4,
+          "fps": 2,
+          "loop": true
+        }
+      }
+    },
+    
+    "npc_ambient_stadtpark": {
+      "file": "stadtpark_ambient_npcs.png",
+      "dimensions": {"width": 288, "height": 256},
+      "sprite_size": {"width": 48, "height": 64},
+      "characters": {
+        "homeless_philosopher": {
+          "row": 0,
+          "animations": {
+            "sitting": {"frames": 2, "fps": 0.5},
+            "gesturing_wisdom": {"frames": 3, "fps": 1},
+            "drinking": {"frames": 2, "fps": 1}
+          }
+        },
+        "making_out_couple": {
+          "row": 2,
+          "size": {"width": 64, "height": 48},
+          "animations": {
+            "oblivious": {"frames": 2, "fps": 0.5}
+          }
+        },
+        "sleeping_tourist": {
+          "row": 3,
+          "animations": {
+            "sleeping": {"frames": 2, "fps": 0.25}
+          }
+        }
+      }
+    },
+    
+    "item_skittles": {
+      "file": "item_skittles.png",
+      "dimensions": {"width": 128, "height": 64},
+      "states": {
+        "bag_closed": {"position": {"x": 0, "y": 0}, "size": 32},
+        "bag_open": {"position": {"x": 32, "y": 0}, "size": 32},
+        "handful": {"position": {"x": 64, "y": 0}, "size": 32},
+        "single_skittle": {"position": {"x": 96, "y": 0}, "size": 16},
+        "colors": ["red", "orange", "yellow", "green", "purple"]
+      }
+    },
+    
+    "effects_sheet": {
+      "file": "stadtpark_effects.png",
+      "dimensions": {"width": 256, "height": 256},
+      "effects": {
+        "breath_steam": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 32, "height": 32},
+          "frames": 4,
+          "fps": 4
+        },
+        "autumn_leaf_fall": {
+          "position": {"x": 32, "y": 0},
+          "size": {"width": 16, "height": 16},
+          "frames": 6,
+          "fps": 3
+        },
+        "lamplight_glow": {
+          "position": {"x": 0, "y": 32},
+          "size": {"width": 64, "height": 64},
+          "frames": 2,
+          "fps": 0.5
+        },
+        "moonbeam": {
+          "position": {"x": 64, "y": 32},
+          "size": {"width": 96, "height": 128},
+          "frames": 2,
+          "fps": 0.25
+        },
+        "fountain_spray": {
+          "position": {"x": 0, "y": 160},
+          "size": {"width": 64, "height": 48},
+          "frames": 4,
+          "fps": 6
+        },
+        "pigeon_feathers": {
+          "position": {"x": 64, "y": 160},
+          "size": {"width": 16, "height": 16},
+          "frames": 4,
+          "fps": 4
+        }
+      }
+    },
+    
+    "ui_elements": {
+      "file": "stadtpark_ui.png",
+      "dimensions": {"width": 256, "height": 192},
+      "elements": {
+        "resolution_choice_frame": {
+          "position": {"x": 0, "y": 0},
+          "size": {"width": 200, "height": 120}
+        },
+        "skittles_meter": {
+          "position": {"x": 0, "y": 120},
+          "size": {"width": 150, "height": 24}
+        },
+        "trust_indicator": {
+          "position": {"x": 150, "y": 120},
+          "size": {"width": 100, "height": 24}
+        },
+        "gustav_emotion_icon": {
+          "position": {"x": 200, "y": 0},
+          "size": {"width": 48, "height": 48}
+        },
+        "path_icons": {
+          "position": {"x": 200, "y": 48},
+          "size": {"width": 24, "height": 24},
+          "variants": ["return", "retire", "escape", "bail"]
+        }
+      }
+    }
+  },
+  
+  "lighting": {
+    "nighttime": {
+      "ambient": {"color": "#2C3E50", "intensity": 0.3},
+      "moonlight": {"color": "#C0C0FF", "intensity": 0.4, "global": true},
+      "lamppost_lights": {
+        "color": "#F4D03F",
+        "intensity": 0.7,
+        "radius": 60,
+        "count": 8
+      },
+      "gustav_spotlight": {
+        "color": "#FFFFFF",
+        "intensity": 0.5,
+        "type": "moonbeam",
+        "target": "gustav_position"
+      }
+    },
+    "daytime": {
+      "ambient": {"color": "#87CEEB", "intensity": 0.8},
+      "sunlight": {"color": "#FFFACD", "intensity": 0.9}
+    }
+  },
+  
+  "collision_zones": {
+    "walkable": [
+      {"type": "polygon", "points": "entire_park_paths_and_lawn"}
+    ],
+    "blocked": [
+      {"type": "rect", "label": "pond", "x": 80, "y": 100, "width": 100, "height": 80},
+      {"type": "rect", "label": "strauss_base", "x": 300, "y": 80, "width": 40, "height": 60},
+      {"type": "circle", "label": "tree", "x": 150, "y": 200, "radius": 16, "count": "multiple"}
+    ],
+    "hazard": [
+      {"type": "rect", "label": "pond_edge", "x": 75, "y": 95, "width": 110, "height": 90, "effect": "swan_attack_trigger"}
+    ],
+    "interactive": [
+      {"type": "rect", "label": "gustav_zone", "x": 150, "y": 100, "width": 100, "height": 100, "quest_trigger": true}
+    ]
+  },
+  
+  "mobile_optimization": {
+    "texture_atlases": {
+      "count": 4,
+      "max_size": 1024
+    },
+    "draw_calls_budget": 45,
+    "memory_budget_mb": 45,
+    "particle_budget": 60,
+    "target_fps": 60,
+    "lod_levels": {
+      "full": {"distance": 0},
+      "medium": {"distance": 150, "reduced_particles": true},
+      "low": {"distance": 300, "static_npcs": true}
+    }
+  }
+}
