@@ -211,7 +211,7 @@ Generic machines support the room rhythm; they must not compete with quest cabin
 | Asset ID | Filename | Notes |
 |---|---|---|
 | `aa_prop_token_exchange` | `aa_prop_token_exchange.png` | Idle, pay, dispense and jam screen states |
-| `aa_prop_token_price_board` | `aa_prop_token_price_board.png` | Legible `1 KC = 5 TOKENS` |
+| `aa_prop_token_price_board` | `aa_prop_token_price_board.png` | Legible `1 SOVS = 1 TOKEN` (author ruling 2026-11-02) |
 | `aa_prop_prize_counter` | `aa_prop_prize_counter.png` | Sincere PRIZES sign, cheap stock, clear claw sightline |
 | `aa_prop_bar_seating` | `aa_prop_bar_seating.png` | Normal stools plus highchair, beanbag and one discoverable bidet stool |
 | `aa_prop_standing_tables` | `aa_prop_standing_tables.png` | Brass/wood tables, branded coasters, clear walkable footprint |
