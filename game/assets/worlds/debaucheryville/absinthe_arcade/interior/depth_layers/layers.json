@@ -1,0 +1,44 @@
+{
+  "source_size": [
+    2752,
+    1536
+  ],
+  "layers": {
+    "aa_int_layer_bottle_bar": {
+      "rect_px": [
+        1240,
+        318,
+        963,
+        992
+      ],
+      "emit": true
+    },
+    "aa_int_layer_mezzanine": {
+      "rect_px": [
+        0,
+        0,
+        2752,
+        666
+      ],
+      "emit": false
+    },
+    "aa_int_layer_entry_doors": {
+      "rect_px": [
+        1047,
+        1216,
+        659,
+        320
+      ],
+      "emit": true
+    },
+    "aa_int_layer_claw_alcove": {
+      "rect_px": [
+        2425,
+        589,
+        311,
+        782
+      ],
+      "emit": true
+    }
+  }
+}
