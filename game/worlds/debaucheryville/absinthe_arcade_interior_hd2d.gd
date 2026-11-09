@@ -41,6 +41,25 @@ const RIGHT_WALL := [Vector2(5.55, -1.76), Vector2(6.58, 1.7)]
 const FRONT_Z := 6.5
 const WALL_HEIGHT := 30.0
 
+## North archway (v8b, pixels 1330-1485 x 340-590): the exit to the mirror-corridor screen. The back
+## wall gets an opening here, with a short corridor box behind it that wears the painted corridor.
+const NORTH_ARCH := {"x0": -0.35, "x1": 0.83, "height": 2.3, "depth": 4.5}
+## Stepping onto the arch threshold hands over to the mirror-corridor screen. It fires at the
+## threshold on purpose: the painted arch is ~1.7 m tall at the ruled scale, shorter than the bros,
+## so they must never be seen walking under the lintel.
+const NORTH_EXIT_Z := -5.32
+const NORTH_EXIT_TARGET := "absinthe_arcade_mirror_corridor"
+
+## Interaction anchors, painting units on the floor, from paint_px_to_floor.py on v8b's pixel boxes.
+## They mark WHERE things are; the interaction system that uses them doesn't exist yet.
+## id: [position (x, z), facing yaw in degrees (0 = the anchor faces +Z, toward the camera)]
+const INTERACT_POINTS := {
+	"cabinet_frogger": [Vector2(-0.95, -5.0), 0.0],        # back row #2, px 1202-1288
+	"cabinet_street_fighter": [Vector2(1.13, -5.0), 0.0],  # back row #4, px 1489-1578
+	"cabinet_kebab_kombat": [Vector2(5.14, 0.42), -90.0],  # right wall #6, px 2195-2300, faces west
+	"ddr_dance_off": [Vector2(-4.86, -0.12), 90.0],        # middle of the three west-wall pads
+}
+
 ## Occluder prisms (footprint in painting units, height) carrying the depth-layer cutouts.
 const OCCLUDERS := {
 	"aa_int_layer_bottle_bar": {"height": 14.0, "footprint": [
@@ -82,6 +101,7 @@ func _ready() -> void:
 	_build_camera()
 	_build_room()
 	_build_occluders()
+	_build_markers()
 	_build_lighting()
 	_apply_time_of_day()
 
@@ -152,7 +172,26 @@ func _build_room() -> void:
 	var rb := Vector2(_x_at(RIGHT_WALL, BACK_WALL_Z), BACK_WALL_Z)
 	var lf := Vector2(_x_at(LEFT_WALL, FRONT_Z), FRONT_Z)
 	var rf := Vector2(_x_at(RIGHT_WALL, FRONT_Z), FRONT_Z)
-	_wall("back_wall", lb, rb, WALL_HEIGHT, mat)
+	# Back wall with the north archway cut out of it, and the corridor box behind the opening.
+	var ax0 := Vector2(NORTH_ARCH["x0"], BACK_WALL_Z)
+	var ax1 := Vector2(NORTH_ARCH["x1"], BACK_WALL_Z)
+	var arch_h: float = NORTH_ARCH["height"]
+	var deep: float = BACK_WALL_Z - float(NORTH_ARCH["depth"])
+	_wall("back_wall_left", lb, ax0, WALL_HEIGHT, mat)
+	_wall("back_wall_right", ax1, rb, WALL_HEIGHT, mat)
+	var lintel := _wall("back_wall_lintel", ax0, ax1, WALL_HEIGHT - arch_h, mat)
+	lintel.position.y = arch_h
+	_wall("arch_corridor_left", ax0, Vector2(ax0.x, deep), arch_h, mat)
+	_wall("arch_corridor_right", Vector2(ax1.x, deep), ax1, arch_h, mat)
+	_wall("arch_corridor_end", Vector2(ax0.x, deep), Vector2(ax1.x, deep), arch_h, mat)
+	var cfloor := PlaneMesh.new()
+	cfloor.size = Vector2(ax1.x - ax0.x, BACK_WALL_Z - deep)
+	var cfloor_mi := MeshInstance3D.new()
+	cfloor_mi.name = "arch_corridor_floor"
+	cfloor_mi.mesh = cfloor
+	cfloor_mi.position = Vector3((ax0.x + ax1.x) * 0.5, 0, (BACK_WALL_Z + deep) * 0.5)
+	cfloor_mi.material_override = mat
+	_diorama.add_child(cfloor_mi)
 	_wall("left_wall", lf, lb, WALL_HEIGHT, mat)
 	_wall("right_wall", rb, rf, WALL_HEIGHT, mat)
 	var floor_mesh := PlaneMesh.new()
@@ -174,8 +213,41 @@ func _build_room() -> void:
 	fs.shape = box
 	fs.position = Vector3(0, -0.1, (FRONT_Z + BACK_WALL_Z) * 0.5)
 	body.add_child(fs)
-	for seg: Array in [[lb, rb], [lf, lb], [rb, rf]]:
+	var cfs := CollisionShape3D.new()
+	var cbox := BoxShape3D.new()
+	cbox.size = Vector3(ax1.x - ax0.x + 0.6, 0.2, BACK_WALL_Z - deep)
+	cfs.shape = cbox
+	cfs.position = Vector3((ax0.x + ax1.x) * 0.5, -0.1, (BACK_WALL_Z + deep) * 0.5)
+	body.add_child(cfs)
+	for seg: Array in [[lb, ax0], [ax1, rb], [lf, lb], [rb, rf],
+			[ax0, Vector2(ax0.x, deep)], [Vector2(ax1.x, deep), ax1], [Vector2(ax0.x, deep), Vector2(ax1.x, deep)]]:
 		_wall_collider(body, seg[0], seg[1])
+
+
+## The exit trigger in the archway and the interaction anchors. Both are plain markers that carry
+## their ids as metadata, ready for the scene-transition and interaction systems to pick up.
+func _build_markers() -> void:
+	var exit := Area3D.new()
+	exit.name = "exit_north_arch"
+	exit.add_to_group("scene_exits")
+	exit.set_meta("target_scene", NORTH_EXIT_TARGET)
+	var cs := CollisionShape3D.new()
+	var box := BoxShape3D.new()
+	box.size = Vector3(float(NORTH_ARCH["x1"]) - float(NORTH_ARCH["x0"]), 2.0, 0.6)
+	cs.shape = box
+	cs.position = Vector3((float(NORTH_ARCH["x0"]) + float(NORTH_ARCH["x1"])) * 0.5, 1.0, NORTH_EXIT_Z - 0.3)
+	exit.add_child(cs)
+	_diorama.add_child(exit)
+	for id: String in INTERACT_POINTS.keys():
+		var spec: Array = INTERACT_POINTS[id]
+		var p: Vector2 = spec[0]
+		var m := Marker3D.new()
+		m.name = id
+		m.position = Vector3(p.x, 0, p.y)
+		m.rotation_degrees.y = spec[1]
+		m.add_to_group("interact_points")
+		m.set_meta("interact_id", id)
+		_diorama.add_child(m)
 
 
 func _wall_collider(body: StaticBody3D, a: Vector2, b: Vector2) -> void:

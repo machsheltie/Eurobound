@@ -31,6 +31,15 @@
       ],
       "emit": true
     },
+    "aa_int_layer_north_arch": {
+      "rect_px": [
+        1295,
+        320,
+        226,
+        319
+      ],
+      "emit": true
+    },
     "aa_int_layer_claw_alcove": {
       "rect_px": [
         2425,

@@ -12,6 +12,8 @@ const BROS := [
 	["res://assets/characters/party/bradley/bradley.aseprite", Vector3(-2.4, 0, 1.8), "east"],
 	["res://assets/characters/party/lord_pilsner/lord_pilsner.aseprite", Vector3(1.15, 0, -3.1), "south_east"],
 ]
+## On the north-arch threshold, where the exit trigger fires (painting units).
+const ARCH_POSITION := Vector3(0.24, 0, -5.4)
 
 
 func _ready() -> void:
@@ -42,4 +44,14 @@ func _ready() -> void:
 			var path := out_dir.path_join("aa_interior_hd2d_%s_%s.png" % ["bros" if with_bros else "empty", mode])
 			get_viewport().get_texture().get_image().save_png(path)
 			print("saved ", path)
+	# Chadwick on the north-arch threshold, the last frame before the exit trigger changes screens.
+	bros[0].position = ARCH_POSITION * WORLD_SCALE
+	bros[0].facing = "north"
+	hall.night = true
+	for i in 12:
+		await get_tree().process_frame
+	await RenderingServer.frame_post_draw
+	var arch_path := out_dir.path_join("aa_interior_hd2d_arch_night.png")
+	get_viewport().get_texture().get_image().save_png(arch_path)
+	print("saved ", arch_path)
 	get_tree().quit()
