@@ -442,3 +442,9 @@ Open question: should it, and to what depth?
   cringily to the hits; doing badly, they look even more ridiculous. Songs named by the
   author: 90s/00s hits (Khia, Madonna, Christina Aguilera, Beyonce).
 - Do not relitigate.
+- **(Later on 2026-11-09)** Hall exit to the mirror corridor: an open archway in the back
+  wall under the mural, between back-row cabinets 3 and 4 (option A). Battle cabinets: Frogger =
+  back-row cabinet 2, Street Fighter = back-row cabinet 4, Kebab Kombat = right-wall cabinet 6
+  (numbering on the decisions-page image). DDR dance-off: 2 tokens per song, 0-30 tickets by
+  score, and **the real songs are licensed** (not sound-alikes); budget for master and
+  publishing licences per track.
