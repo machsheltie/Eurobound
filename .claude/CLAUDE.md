@@ -10,6 +10,7 @@ Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.7 (Forward+ r
 - **The bros are never afraid or disgusted.** They came to Europe seeking all of this. They may be clueless; they are never scared. They are also never self-aware or scam-aware.
 - **NPCs are never boring, corporate, or professional.** Every NPC, location, and item gets a funny name and is written cleverly, with wit, in service of satirizing and parodying everything.
 - **No real city or place names in game content.** Parody names only: Publandia, Debaucheryville, Sinfonia, Shamsterdam. Internal planning docs may reference the real-world inspirations; player-facing text never does. Minted world-name canon and exemptions live in the rulings ledger (below).
+- **Real brands, products, games, songs and titles keep their real names** (author, 2026-11-09: "The only thing that never gets the real name is locations. ALL other things get their real names."). Invented NPCs, items and quests still get funny names.
 - **All money is SOVS.** Never euros, never the € glyph, never koruna. Write prices as SOVS (e.g. "40 SOVS"). This supersedes the €-as-display-glyph rule in the Round 5 economy spec §1.2.
 - **No mascots, ever.** No pets, puppets, named companion objects, emotional-support entities, or fourth party members. The party is three bros. (Ambient set-dressing animals the author rules in, like the Absinthe Arcade window cat, are ledger exceptions.)
 - **All names must be unique** across the game — NPCs, locations, items, quests, everything.
