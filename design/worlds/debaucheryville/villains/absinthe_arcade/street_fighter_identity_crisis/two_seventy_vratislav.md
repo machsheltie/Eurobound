@@ -5,8 +5,7 @@
 > ⚠ AUTHOR-REVIEW: Author rulings 2026-11-09. The CONTINUE? revive and the wallet steal are
 > struck from this villain (the paid continue lives only on Count Continue; wallet theft lives
 > only on The Sinking Fund). His replacement desperation finisher, **The Other Two-Seventy**, and
-> the ticket payout are **PROPOSED — author approved replacing it; wording/numbers need author
-> ruling**. Everything else (stats, XP, moves, Second Thoughts, drops, item, achievement) is
+> the ticket payout are **Approved 2026-11-09** (review round). Everything else (stats, XP, moves, Second Thoughts, drops, item, achievement) is
 > **Approved 2026-11-09**.
 
 ## 📋 Villain Identity
@@ -54,7 +53,7 @@ He's a man who can't commit to the move that defines him, fighting three men who
 - **Release animation**: the shared Identity Crisis cabinet exit, with one exception. He doesn't fit through the screen, so the whole cabinet tilts forward and he unfolds out of it in segments.
 - **Overworld**: none. He only exists inside the encounter.
 - **Big-move telegraph (The Full Three-Sixty)**: the 270° arc over his head fills in segment by segment through the telegraph round and stops at three-quarters. He turns slowly in place, and the battle log ticks the motion one direction at a time. On resolve the arc snaps shut for one frame (the only time it closes), and then he's dizzy.
-- **Desperation telegraph (The Other Two-Seventy, PROPOSED)**: the 270° arc flips to a mirror image and fills counterclockwise, segment by segment. He licks a finger and holds it up, like he's checking the wind for which way to spin. On resolve he spins the wrong way, stops at three-quarters, and ends facing the back wall.
+- **Desperation telegraph (The Other Two-Seventy, Approved 2026-11-09)**: the 270° arc flips to a mirror image and fills counterclockwise, segment by segment. He licks a finger and holds it up, like he's checking the wind for which way to spin. On resolve he spins the wrong way, stops at three-quarters, and ends facing the back wall.
 
 ---
 
@@ -101,7 +100,7 @@ He folds himself back into the cabinet, which tilts upright again. On later toke
 
 ## ⚔️ Combat Specification
 
-> **Approved 2026-11-09.** Stats, multipliers, weights and durations are approved, except The Other Two-Seventy (new, **PROPOSED**). Benchmarked against Feral Segway Tourist (HP 28 / OFF 6 / DEF 3 / SPD 6 / LCK 2 / 12 XP / 8 gold). He's the cabinet's heavy draw, with about twice the Tourist's HP.
+> **Approved 2026-11-09.** Stats, multipliers, weights and durations are approved, including The Other Two-Seventy (new, approved in the review round). Benchmarked against Feral Segway Tourist (HP 28 / OFF 6 / DEF 3 / SPD 6 / LCK 2 / 12 XP / 8 gold). He's the cabinet's heavy draw, with about twice the Tourist's HP.
 
 ### Core Stats
 | Stat | Value | Notes |
@@ -121,7 +120,7 @@ He folds himself back into the cabinet, which tilts upright again. On later toke
 | **Hug of Undeclared Intent** | Physical (grab) | 1.2× single target. He holds the bro "until he knows what this is" | **Grease Fingers** (−2 accuracy steps, tech items locked; 4 turns or washed) | 45% / phase 1 | No |
 | **Lariat, Probably** | AoE Physical | 0.6× to all three bros. He spins with arms out and doesn't finish the spin either | — | 35% / phase 1 (→ 30% phase 2) | No |
 | **A Fireball He Has Never Practiced** | Special (projectile) | 1.6× single target at a −3 accuracy-step penalty (about 68% to hit before evasion). It's big when it lands, and it usually doesn't | — | 0% phase 1 / 50% phase 2 (replaces Hug) | No |
-| **The Other Two-Seventy** | Finisher (desperation, AoE) | **PROPOSED — author approved replacing it; wording/numbers need author ruling.** He tries his super counterclockwise. 1.4× to all three bros as the reversed spin sweeps the row. It also stops at 270°, so he finishes facing the back wall: for his next turn he skips his action, Defense is halved, and the party gets +50% crit chance against him. No heal, no revive, no wallet effect | — | **Once per fight** / HP < 25% (replaces his next action) | **Yes**: one telegraph round, the mirrored 270° arc fills counterclockwise and he checks the wind with a licked finger |
+| **The Other Two-Seventy** | Finisher (desperation, AoE) | **Approved 2026-11-09.** He tries his super counterclockwise. 1.4× to all three bros as the reversed spin sweeps the row. It also stops at 270°, so he finishes facing the back wall: for his next turn he skips his action, Defense is halved, and the party gets +50% crit chance against him. No heal, no revive, no wallet effect | — | **Once per fight** / HP < 25% (replaces his next action) | **Yes**: one telegraph round, the mirrored 270° arc fills counterclockwise and he checks the wind with a licked finger |
 | **The Full Three-Sixty** | Physical (big move) | 2.0× single target (the highest-HP bro), and the target is spun into **Sloppy** | **Sloppy** (−3 accuracy steps, 15% friendly fire; 2 turns) | Every 4th round (round 4, 8…), both phases | **Yes**: a full telegraph round. The 270° arc fills, the log ticks the motion, and he reconsiders "up" |
 
 **Counterplay already in the system:** a bro who **Braces** during either telegraph round halves The Full Three-Sixty or The Other Two-Seventy (standard Brace). If Vratislav is **Embarrassed** when The Full Three-Sixty would resolve, he abandons it at ninety degrees and the move fizzles. Bark: "No. Not in front of people." That uses the existing `target_has_status` gate on himself.
@@ -131,7 +130,7 @@ He folds himself back into the cabinet, which tilts upright again. On later toke
 |-------|---------|-----------------|
 | 1 | Fight start | Grappler: Hug / Lariat / Full Three-Sixty table |
 | 2 | HP < 50% | **Style change (identity crisis):** announces he's a fireball character now. A Fireball He Has Never Practiced replaces Hug of Undeclared Intent. Lariat stays. This swap is the cabinet's "remaps his own moves mid-combo" twist, done entirely through the existing phase-script system |
-| 3 | HP < 25% | Desperation: The Other Two-Seventy telegraphs, then fires once (**PROPOSED**); afterwards he goes back to the phase 2 table |
+| 3 | HP < 25% | Desperation: The Other Two-Seventy telegraphs, then fires once (**Approved 2026-11-09**); afterwards he goes back to the phase 2 table |
 
 ### Buffs & Debuffs They Use
 - **Self/ally buffs**: none of his own. He receives Gains Bro from Super Turbo Hyper Jarmila when she's in the group.
@@ -159,11 +158,11 @@ He participates in the cabinet-wide **Second Thoughts** re-roll (see `player_two
 
 ## 💰 Rewards
 
-> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**).
+> **Approved 2026-11-09**, including the ticket amount (review round).
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 15 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. He's the rarest draw (20% of releases), so he pays the most on this cabinet |
+| **Tickets** | 15 arcade tickets | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. He's the rarest draw (20% of releases), so he pays the most on this cabinet |
 | **Clout (XP)** | 28 | A bit over twice Feral Segway Tourist, matching his HP |
 | **Guaranteed drop** | **Absinthe Arcade Token** ×1 (existing `item_absinthe_arcade_token`) | Beating the heavy refunds one of the three tokens. The house keeps the other two |
 | **Rare drop** | **Two-Seventy Wrist Brace** (new item, Approved 2026-11-09), 8% | Accessory: +1 Grit, and the wearer resists Grease Fingers. Item card: "Gets you three-quarters of the way around anything." Needs a `permanent_item_template.md` / item doc |
@@ -187,20 +186,20 @@ He participates in the cabinet-wide **Second Thoughts** re-roll (see `player_two
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Repo-grepped: "Vratislav", "Two-Seventy", every move name, "Wrist Brace" and "Most of the Way Around" have zero hits. (I avoided "Insert Coin" because it's already the Maintenance Closet's CRT mirror gag.) New name "The Other Two-Seventy" needs a fresh grep before registration |
 | Racket grounded in the city's satirized culture/underbelly | ✅ Token-priced "legendary" attraction that never delivers; "underground" fight sold by the token |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; The Other Two-Seventy and tickets PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09, including The Other Two-Seventy and tickets) |
 | Statuses from master list only (or author-approved new ones) | ✅ Grease Fingers, Sloppy, Embarrassed (as counterplay), Gains Bro (received); dizzy / facing-the-wall skips per PRD §6.8 |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ Their bodies break and they file it under gym things and war wounds |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09, except PROPOSED: The Other Two-Seventy, ticket amount |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09, including The Other Two-Seventy and the ticket amount (review round) |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Approved 2026-11-09 (PROPOSED items above awaiting author ruling)
-- **Canon level**: Approved, with PROPOSED exceptions
+- **Status**: Approved 2026-11-09
+- **Canon level**: Approved
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/two_seventy_vratislav.md`
 - **Registered In**: Not yet. Target: `game/assets/data/enemies/debaucheryville_enemies.json` (as `two_seventy_vratislav`)
 - **Sprite Sheet**: not yet specced
@@ -210,3 +209,4 @@ He participates in the cabinet-wide **Second Thoughts** re-roll (see `player_two
 |------|--------|--------|
 | 2026-11-02 | Initial profile (agent draft for author review, per the 2026-11-02 cabinets-are-battles ruling) | Claude (agent) |
 | 2026-11-09 | Applied author rulings: CONTINUE? revive and wallet steal struck; replaced with The Other Two-Seventy (PROPOSED); SOVS payout replaced with tickets (PROPOSED); cabinet cost 3 tokens; Second Thoughts, stats, drops, item, achievement Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: The Other Two-Seventy and the 15-ticket payout Approved (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |

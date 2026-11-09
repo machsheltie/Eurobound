@@ -6,9 +6,9 @@
 > each Arcade cabinet releases 2–3 game-inspired villain types that fight through the existing
 > battle system). Author rulings 2026-11-09: the wallet steal (Buy the Dip), the untargetable
 > dive, stats, XP, drops, items, achievement and the lady-frog background gag are **Approved
-> 2026-11-09**. Existential Crisis is replaced with Embarrassed, the SOVS payout is replaced with
-> arcade tickets, and the soggy-pile refund rule is restated; those three stay **PROPOSED — needs
-> author ruling** where marked.
+> 2026-11-09**. Existential Crisis is replaced with Embarrassed (**Where Do You See Yourself in Five Lanes?**)
+> and the SOVS payout with arcade tickets; both are **Approved 2026-11-09** (review round). The
+> soggy-pile refund rule stays **PROPOSED — needs author ruling**.
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_sinking_fund_01`
@@ -158,12 +158,12 @@ The Fund is a support unit: tougher and luckier than a grunt, weak offense.
 }
 ```
 
-### Move List (data-driven weighted-random AI) — **weights and SOVS values Approved 2026-11-09** (changed move marked PROPOSED)
+### Move List (data-driven weighted-random AI) — **weights and SOVS values Approved 2026-11-09** (changed move Approved 2026-11-09 in the review round)
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
 |------|------|--------|------------------|--------------------|--------------|
 | Hedge the Shells | Buff, AoE ally | All enemies +2 Defense for 2 turns. The turtles fan out around their co-investors. | — | 30% / at least one ally alive; otherwise reweights to Buy the Dip | No |
 | Buy the Dip | Gimmick, Social | Targets one bro with a pitch. Takes 5 SOVS from the party wallet; 25% chance of Tourist Trap Victim on that bro. Battle log: "Chadwick buys the dip. The dip is the river." Against Chadwick this always lands. He insists. (Wallet steal **Approved 2026-11-09**; the only wallet-stealing villain in the Arcade.) | Tourist Trap Victim | 30% / always | No |
-| Where Do You See Yourself in Five Lanes? | Social | **PROPOSED — author approved replacing it; wording/numbers need author ruling.** Embarrassed on one bro (−20% ATK, −2 BP/turn, Ultimates & Taunt locked; 2 turns). The panel asks the intake question; the bro answers it standing up, at full volume, flexing. Battle log: "Bradley answers 'Swole. On the other side. Shirtless.' He flexes for the panel. The panel writes it down slowly. Bradley reads the silence as a standing ovation and flexes harder. Bradley is Embarrassed." | Embarrassed | 25% / round > 1, never on a bro already Embarrassed | No |
+| Where Do You See Yourself in Five Lanes? | Social | **Approved 2026-11-09.** Embarrassed on one bro (−20% ATK, −2 BP/turn, Ultimates & Taunt locked; 2 turns). The panel asks the intake question; the bro answers it standing up, at full volume, flexing. Battle log: "Bradley answers 'Swole. On the other side. Shirtless.' He flexes for the panel. The panel writes it down slowly. Bradley reads the silence as a standing ovation and flexes harder. Bradley is Embarrassed." | Embarrassed | 25% / round > 1, never on a bro already Embarrassed | No |
 | Quarterly Dividend | Physical | A flipper slap delivered with a printed statement. Light damage. | — | 15% / always | No |
 | **Past Performance Is No Guarantee** | Gimmick, AoE | Telegraph turn: the red flash and ticker. Next turn all three dive. The Fund can't be targeted for 1 round (untargetable dive **Approved 2026-11-09**), every other enemy gets +2 Speed, and on surfacing it runs Buy the Dip on all three bros at once, plus light water damage as the shells drop out from under them. | Tourist Trap Victim (25% each) | Once per fight / HP < 60% | **Yes — shells flash red three times in order; ticker reads "PERFORMANCE MAY GO DOWN AS WELL AS UNDER."** |
 
@@ -215,11 +215,11 @@ itself pays tickets (see Rewards).
 
 ---
 
-## 💰 Rewards — **Approved 2026-11-09** (ticket amount and refund rule PROPOSED)
+## 💰 Rewards — **Approved 2026-11-09** (ticket amount approved in the review round; refund rule PROPOSED)
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 8 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
+| **Tickets** | 8 arcade tickets | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
 | **Soggy pile** | 80% of the SOVS Buy the Dip took, returned on victory | **PROPOSED, needs author ruling.** Stolen money partly coming back, not a payout. Net SOVS from this fight can come out negative. That's the point. |
 | **Clout (XP)** | 12 | |
 | **Guaranteed drop** | **Shell Company Business Card** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 4 SOVS. "Registered at an address that turns out to be a fax machine in a turtle." |
@@ -244,19 +244,19 @@ itself pays tickets (see Rewards).
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ (repo grep 2026-11-02: no hits for name, moves or drops; avoided existing "Find the Lady," "Long Con," "RugPullInu," "Three Card Monty") |
 | Racket grounded in the city's satirized culture/underbelly | ✅ |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; Embarrassed move, tickets and refund rule PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09, including the Embarrassed move and tickets; refund rule PROPOSED) |
 | Statuses from master list only (or author-approved new ones) | ✅ Embarrassed, Tourist Trap Victim |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ Every question becomes a yes |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ Never scam-aware either |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (wallet steal, untargetable dive, stats, drops, items, achievement, lady-frog gag), except PROPOSED: Where Do You See Yourself in Five Lanes? (Embarrassed), ticket amount, soggy-pile refund |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (wallet steal, untargetable dive, stats, drops, items, achievement, lady-frog gag; review round: Where Do You See Yourself in Five Lanes? (Embarrassed), ticket amount), except PROPOSED: soggy-pile refund |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Approved 2026-11-09 (PROPOSED items above awaiting author ruling)
+- **Status**: Approved 2026-11-09 (soggy-pile refund still PROPOSED)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md`
 - **Registered In**: not yet registered. Proposed key `sinking_fund` in `game/assets/data/enemies/debaucheryville_enemies.json` after author approval.
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_sinking_fund.png`, four states)
@@ -266,6 +266,7 @@ itself pays tickets (see Rewards).
 |------|--------|--------|
 | 2026-11-02 | Initial profile (draft, per cabinet-battle ruling 2026-11-02) | Claude (agent draft for author review) |
 | 2026-11-09 | Applied author rulings: Existential Crisis replaced with Embarrassed (PROPOSED); SOVS payout replaced with tickets (PROPOSED); soggy-pile refund kept as PROPOSED; cabinet cost 2 tokens; roster structure ruled; wallet steal, dive, stats, drops, items, lady-frog gag Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: Where Do You See Yourself in Five Lanes? (Embarrassed) and the 8-ticket payout Approved; soggy-pile refund stays PROPOSED (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |
 
 ---
 

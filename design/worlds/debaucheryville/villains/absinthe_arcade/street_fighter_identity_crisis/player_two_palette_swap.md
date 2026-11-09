@@ -159,11 +159,11 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 
 ## 💰 Rewards
 
-> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**).
+> **Approved 2026-11-09**, including the ticket amount (review round).
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 4 arcade tickets per Swap | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09), so the cabinet can't print money. Redeemable at the Prize Redemption counter built into the bar |
+| **Tickets** | 4 arcade tickets per Swap | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09), so the cabinet can't print money. Redeemable at the Prize Redemption counter built into the bar |
 | **Clout (XP)** | 6 per Swap | A 2-Swap pull pays 12, matching one Feral Segway Tourist. Clout is farmable at 3 SOVS per play; no cap or taper is proposed |
 | **Guaranteed drop** | None | |
 | **Rare drop** | **Absinthe Arcade Token** (existing item `item_absinthe_arcade_token`), 15% | One of your three tokens back, occasionally. The house keeps the other two |
@@ -189,20 +189,20 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Repo-grepped `design/`, `game/assets/data/`, `docs/`: villain, move, passive, item and achievement names have zero hits. ("Palette swap" appears only as an art-pipeline term.) Cross-check against the parallel Frogger / Kebab Kombat profiles is pending with the lead |
 | Racket grounded in the city's satirized culture/underbelly | ✅ Counterfeit / knockoff tourist trade, token money sink |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount approved in the review round) |
 | Statuses from master list only (or author-approved new ones) | ✅ Gains Bro, Confused, Embarrassed; Distracted-style skip per PRD §6.8 |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, ally-count AI gate, ally-KO trigger, Second Thoughts, encounter table, new item + achievement), except PROPOSED: ticket amount |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, ally-count AI gate, ally-KO trigger, Second Thoughts, encounter table, new item + achievement); ticket amount approved in the review round |
 
 ---
 
 ## 🔧 Development Status
 - **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
-- **Canon level**: Approved, with PROPOSED exceptions
+- **Canon level**: Approved
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/player_two_palette_swap.md`
 - **Registered In**: Not yet. Target: `game/assets/data/enemies/debaucheryville_enemies.json` (as `player_two_palette_swap`) after author approval
 - **Sprite Sheet**: not yet specced
@@ -212,3 +212,4 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 |------|--------|--------|
 | 2026-11-02 | Initial profile (agent draft for author review, per the 2026-11-02 cabinets-are-battles ruling) | Claude (agent) |
 | 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 3 tokens; weighted encounter table ruled; AI triggers, Second Thoughts, stats, drops, item, achievement Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: 4-ticket-per-Swap payout Approved (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |

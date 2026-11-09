@@ -152,11 +152,11 @@ She participates in the cabinet-wide **Second Thoughts** re-roll (see `player_tw
 
 ## 💰 Rewards
 
-> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**).
+> **Approved 2026-11-09**, including the ticket amount (review round).
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 8 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar |
+| **Tickets** | 8 arcade tickets | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar |
 | **Clout (XP)** | 14 | Slightly above Feral Segway Tourist because she's the priority target |
 | **Guaranteed drop** | None | |
 | **Rare drop** | **Revision Sticker** (new item, Approved 2026-11-09), 30% | Consumable: cures Confused on one bro. Item card: "Slap it on anything. Now it's the new version." Needs an item doc from the item template |
@@ -182,20 +182,20 @@ She participates in the cabinet-wide **Second Thoughts** re-roll (see `player_tw
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Repo-grepped: "Jarmila", every move name, "Revision Sticker" and "Early Adopter" have zero hits. ("Re-Release" has one unrelated substring hit in a Shamsterdam doc, "pressure-release".) Cross-check against parallel cabinet profiles pending with the lead |
 | Racket grounded in the city's satirized culture/underbelly | ✅ Re-release nostalgia upsell, tourist-trap token pricing |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount approved in the review round) |
 | Statuses from master list only (or author-approved new ones) | ✅ Gains Bro, Embarrassed, Confused |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ Rejection is rationalized, never attributed to age |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, mid-battle nameplate change, Second Thoughts, new item + achievement), except PROPOSED: ticket amount. Still **NEEDS AUTHOR RULING**: the optional cross-visit defeat counter (not covered by the 2026-11-09 rulings) |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, mid-battle nameplate change, Second Thoughts, new item + achievement); ticket amount approved in the review round. Still **NEEDS AUTHOR RULING**: the optional cross-visit defeat counter (not covered by the 2026-11-09 rulings) |
 
 ---
 
 ## 🔧 Development Status
 - **Status**: Approved 2026-11-09 (ticket amount and defeat counter awaiting author ruling)
-- **Canon level**: Approved, with PROPOSED exceptions
+- **Canon level**: Approved (the optional save-file defeat counter still NEEDS AUTHOR RULING)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/super_turbo_hyper_jarmila.md`
 - **Registered In**: Not yet. Target: `game/assets/data/enemies/debaucheryville_enemies.json` (as `super_turbo_hyper_jarmila`) after author approval
 - **Sprite Sheet**: not yet specced
@@ -205,3 +205,4 @@ She participates in the cabinet-wide **Second Thoughts** re-roll (see `player_tw
 |------|--------|--------|
 | 2026-11-02 | Initial profile (agent draft for author review, per the 2026-11-02 cabinets-are-battles ruling) | Claude (agent) |
 | 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 3 tokens; Existential Crisis reference removed; nameplate change, Second Thoughts, stats, drops, item, achievement Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: 8-ticket payout Approved; save-file defeat counter still NEEDS AUTHOR RULING (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |

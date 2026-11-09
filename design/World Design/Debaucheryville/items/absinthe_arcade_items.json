@@ -20,15 +20,15 @@
       "uses": [
         {
           "interaction": "frogger_existential_edition",
-          "cost": 1
+          "cost": 2
         },
         {
           "interaction": "street_fighter_identity_crisis",
-          "cost": 1
+          "cost": 3
         },
         {
           "interaction": "kebab_kombat",
-          "cost": 1
+          "cost": 4
         },
         {
           "interaction": "rigged_absinthe_claw_machine",
@@ -50,6 +50,39 @@
       "audio": {
         "pickup": "heavy_token_clink.ogg",
         "spend": "token_drop_mechanical.ogg"
+      }
+    },
+    {
+      "item_id": "item_absinthe_arcade_ticket",
+      "display_name": "Absinthe Arcade Ticket",
+      "item_type": "location_currency",
+      "description": "A strip of thin orange paper the cabinets spit out like a receipt for losing. Worth zero SOVS anywhere on earth and exactly one fifteenth of a pair of wax lips at the Prize Redemption counter. Bradley keeps his in his sock, next to the emergency condom he has carried since 2004.",
+      "rarity": "common",
+      "stackable": true,
+      "max_stack": 9999,
+      "consumable": true,
+      "convertible_to_sovs": false,
+      "earned_from": [
+        {
+          "interaction": "frogger_existential_edition",
+          "payout": "per villain (see villain profiles)"
+        },
+        {
+          "interaction": "street_fighter_identity_crisis",
+          "payout": "per villain (see villain profiles)"
+        },
+        {
+          "interaction": "kebab_kombat",
+          "payout": "per villain (see villain profiles)"
+        },
+        {
+          "interaction": "ddr_dance_off",
+          "payout": "0-30 by score"
+        }
+      ],
+      "redemption": {
+        "vendor_interaction": "prize_redemption_counter",
+        "catalogue": "design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md"
       }
     },
     {

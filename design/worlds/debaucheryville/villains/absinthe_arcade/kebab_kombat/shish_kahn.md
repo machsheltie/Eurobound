@@ -6,7 +6,8 @@
 > name, moves, dialogue, stats, drops and encounter placement were a Claude draft. Author
 > rulings 2026-11-09: stats, XP, drops (including moving the coupon onto his defeat), the new
 > item, the achievement and the fixed resetting ladder are **Approved 2026-11-09**. The SOVS
-> payout is replaced with arcade tickets; the ticket amount is **PROPOSED — needs author ruling**.
+> payout is replaced with arcade tickets; the ticket amount is **Approved 2026-11-09**
+> (review round).
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_shish_kahn_01`
@@ -170,11 +171,11 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 
 ## 💰 Rewards
 
-> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**).
+> **Approved 2026-11-09**, including the ticket amount (review round).
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 20 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. With Count Continue charging continues in the same fight, the bros' SOVS still usually come out down |
+| **Tickets** | 20 arcade tickets | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. With Count Continue charging continues in the same fight, the bros' SOVS still usually come out down |
 | **Clout (XP)** | 30 | |
 | **Guaranteed drop** | `item_questionable_kebab_coupon` (**One Regret-Free Kebab Coupon**, existing Arcade item) | **Approved 2026-11-09.** Moved off the retired mini-game's `five_perfect_regrets` win condition (`absinthe_arcade_items.json`, `absinthe_arcade_interactions.json`) onto Shish Kahn's defeat. Item itself unchanged: 20% off at a participating kebab vendor, max stack 5. Package JSONs not edited yet |
 | **Rare drop** | **Fourth Arm (Foil-Wrapped)**, 5% | **New item, Approved 2026-11-09.** Battle consumable: thrown at all enemies for light damage, 25% Grease Fingers on each. Description: *"One of Shish Kahn's arms. Nobody knows if it's one of the real ones. Lord Pilsner has named it and will not be taking questions."* |
@@ -197,20 +198,20 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Grepped `design/`, `game/assets/data/`, `docs/`: zero collisions for villain, move, item and achievement names |
 | Racket grounded in the city's satirized culture/underbelly | ✅ 3 a.m. kebab as every night's last stop; coupon-affiliate loop |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount approved in the review round) |
 | Statuses from master list only (or author-approved new ones) | ✅ Grease Fingers, Sloppy, Food Poisoning, Hardcore Gamer; Stun as used in the Combat Bible |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ They want to eat him |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, drops, new item, coupon relocation, achievement, ladder), except PROPOSED: ticket amount |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, drops, new item, coupon relocation, achievement, ladder); ticket amount approved in the review round |
 
 ---
 
 ## 🔧 Development Status
 - **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
-- **Canon Level**: Approved, with PROPOSED exceptions
+- **Canon Level**: Approved
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/shish_kahn.md`
 - **Registered In**: Not yet. Target `game/assets/data/enemies/debaucheryville_enemies.json` after author approval
 - **Sprite Sheet**: Not yet specced (proposed `kk_shish_kahn.png`)
@@ -220,3 +221,4 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 |------|--------|--------|
 | 2026-11-02 | Initial profile (Kebab Kombat cabinet villain roster, per author ruling 2026-11-02) | Claude draft for machsheltie |
 | 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 4 tokens; fixed resetting ladder ruled; stats, drops, coupon relocation, item, achievement Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: 20-ticket payout Approved (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |

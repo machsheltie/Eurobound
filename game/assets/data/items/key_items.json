@@ -11,6 +11,76 @@
       "per_bro_variants": true,
       "source": "trinity_of_pints_enrollment",
       "description": "A laminated pub receipt cosplaying as academic credentials. Honored as identification exactly nowhere. All three say 22."
+    },
+    "aa_prize_paraffin_pucker": {
+      "display_name": "Paraffin Pucker",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 15,
+      "description": "Red wax lips that taste like a birthday candle somebody else blew out. Lord Pilsner wore them for a full lap of the bar and logged every turned cheek as \"a near miss.\""
+    },
+    "aa_prize_five_finger_lint_discount": {
+      "display_name": "Five-Finger Lint Discount",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 35,
+      "description": "A sticky rubber hand on a three-foot leash, already furred with bar-floor hair, a ticket stub and one curly hair nobody will claim. Bradley slaps it on the bar whenever he wants another round and calls this \"ordering.\""
+    },
+    "aa_prize_pinky_promise_prison": {
+      "display_name": "Pinky Promise Prison",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 40,
+      "description": "A woven paper tube that tightens the harder you pull. Chadwick and Bradley got their fingers stuck in opposite ends and have been asking the bartender for the couples' discount."
+    },
+    "aa_prize_neon_wrist_guillotine": {
+      "display_name": "Neon Wrist Guillotine",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 60,
+      "description": "A strip of spring steel in a hot-pink fabric sleeve that snaps around the wrist on impact and through the sleeve by Thursday. Bradley stacks it under his other bracelets and calls the set his \"armor.\""
+    },
+    "aa_prize_fuchsia_foot_of_fortune": {
+      "display_name": "Fuchsia Foot of Fortune",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 90,
+      "description": "A rabbit's foot dyed a pink no living rabbit ever reached, on a keychain that clearly did nothing for the rabbit. Chadwick clipped it to his chain wallet and rubs it before every claw-machine attempt."
+    },
+    "aa_prize_sobriety_test_deluxe": {
+      "display_name": "Sobriety Test Deluxe",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 120,
+      "description": "A palm-sized plastic maze with three silver balls and one hole, unsolvable after the second absinthe. Lord Pilsner has been working on it since eleven and says he is \"one tilt away.\""
+    },
+    "aa_prize_sit_down_comedy_special": {
+      "display_name": "Sit-Down Comedy Special",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 800,
+      "description": "A pink rubber whoopee cushion priced like a used scooter. Bradley calls it \"the strongest weapon in the building\" and has deployed it on every bar stool, including the bidet."
+    },
+    "aa_prize_flamingo_hydro_bro_2000": {
+      "display_name": "Flamingo Hydro Bro 2000",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 1200,
+      "description": "A flamingo-pink pump-action squirt gun that holds one shot glass of liquid and leaks a second. Chadwick filled it with absinthe and calls it his \"concealed carry.\""
+    },
+    "aa_prize_highlighter_hydro_bro_2000": {
+      "display_name": "Highlighter Hydro Bro 2000",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 1200,
+      "description": "The same squirt gun in highlighter yellow, won separately because Lord Pilsner refused to share a weapons platform with Chadwick. It holds beer. It does not hold it well."
+    },
+    "aa_prize_chuck_e_cheese_plush": {
+      "display_name": "Chuck E. Cheese Plush",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption",
+      "ticket_price": 2500,
+      "description": "A cross-eyed plush pizza rat in a chef's hat, stuffed with what feels like aquarium gravel and smelling like a ball pit. Lord Pilsner handed over two and a half thousand tickets for it and calls it \"the crown jewels.\""
     }
   }
 }

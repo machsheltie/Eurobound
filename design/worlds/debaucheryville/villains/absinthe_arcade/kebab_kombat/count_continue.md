@@ -7,7 +7,7 @@
 > **Approved 2026-11-09** (enemy revive charged to the party wallet). Wallet theft is struck from
 > him: he charges for continues and takes nothing else. Stats, XP, drops, the new item, the
 > achievement and the Kebab Kombat ladder are **Approved 2026-11-09**. The "wallet can't cover
-> it" rule and the ticket payout are **PROPOSED — needs author ruling**.
+> it" rule (INSUFFICIENT CREDITS) and the ticket payout are **Approved 2026-11-09** (review round).
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_count_continue_01`
@@ -123,7 +123,7 @@ He reappears on the Kebab Kombat attract screen seconds later, mid-spin, announc
 | "FINISH HIM!" | Gimmick (ally buff) | One ally gains **Hardcore Gamer** (+2 Speed, +1 Crit chance, −1 HP/turn, 2 turns). If Shish Kahn is on the field and Kebality is off cooldown, this call starts the Kebality wind-up instead (see `shish_kahn.md`). Costs 4 SP | Hardcore Gamer (ally) | 35% / always | No (but it *is* the Kebality telegraph when Kahn is present) |
 | "EXTRA CRISPY!" | Social | Corner pop-up. Light Social damage to one bro | Embarrassed (40%) | 30% / always | No |
 | Initials Entered | Social | Writes the target's initials onto the high-score table as a three-letter insult of the Count's choosing (DAD, ASS, MOM, TAB, FEE). No HP damage | Tourist Trap Victim (20%); Embarrassed (25%) | 20% / always | No |
-| **CONTINUE?** | Gimmick (paid revive) | Resolves at the end of the telegraph turn: revives one KO'd ally at 50% HP and charges 3 SOVS per continue to the party wallet. Max 2 continues per fight. Costs 8 SP. (Paid revive **Approved 2026-11-09**.) **If the wallet can't cover the 3 SOVS (PROPOSED, needs author ruling):** he takes nothing. The counter hits 0, the screen flashes INSUFFICIENT CREDITS, no revive happens, and the bro with the lowest HP gets **Broke AF**. Battle log: "Count Continue declines your card. Chadwick offers to pay in exposure." | Broke AF (only on INSUFFICIENT CREDITS, PROPOSED) | Always, when an ally is KO'd and a continue remains; overrides the weighted pool | **Yes. Countdown 9 → 8 → 7 beside his head for one full turn; coin-slot glows gold.** KO Count Continue during the telegraph turn and the continue never happens |
+| **CONTINUE?** | Gimmick (paid revive) | Resolves at the end of the telegraph turn: revives one KO'd ally at 50% HP and charges 3 SOVS per continue to the party wallet. Max 2 continues per fight. Costs 8 SP. (Paid revive **Approved 2026-11-09**.) **If the wallet can't cover the 3 SOVS (Approved 2026-11-09):** he takes nothing. The counter hits 0, the screen flashes INSUFFICIENT CREDITS, no revive happens, and the bro with the lowest HP gets **Broke AF**. Battle log: "Count Continue declines your card. Chadwick offers to pay in exposure." | Broke AF (only on INSUFFICIENT CREDITS) | Always, when an ally is KO'd and a continue remains; overrides the weighted pool | **Yes. Countdown 9 → 8 → 7 beside his head for one full turn; coin-slot glows gold.** KO Count Continue during the telegraph turn and the continue never happens |
 
 **Mechanic (Approved 2026-11-09):** CONTINUE? needs two things the battle system may not have yet: (1) an enemy-side revive of a KO'd ally, and (2) an enemy action that charges the continue fee to the party wallet mid-battle. Both are approved. The paid CONTINUE revive exists on Count Continue and nowhere else in the Arcade.
 
@@ -135,7 +135,7 @@ He reappears on the Kebab Kombat attract screen seconds later, mid-spin, announc
 
 ### Buffs & Debuffs They Use
 - **Self/ally buffs**: Hardcore Gamer on allies (master list); ally revive via CONTINUE?
-- **Debuffs on the party**: Embarrassed, Tourist Trap Victim, Broke AF (master list; Broke AF only on INSUFFICIENT CREDITS, PROPOSED). Tourist Trap Victim and Broke AF persist after the battle per their master-list durations. That's the joke: the cabinet follows you to the shop counter.
+- **Debuffs on the party**: Embarrassed, Tourist Trap Victim, Broke AF (master list; Broke AF only on INSUFFICIENT CREDITS). Tourist Trap Victim and Broke AF persist after the battle per their master-list durations. That's the joke: the cabinet follows you to the shop counter.
 
 ### Immunities / Resistances / Weaknesses
 | Category | Detail |
@@ -158,11 +158,11 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 
 ## 💰 Rewards
 
-> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**).
+> **Approved 2026-11-09**, including the ticket amount (review round).
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 8 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. Continue fees are never refunded |
+| **Tickets** | 8 arcade tickets | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. Continue fees are never refunded |
 | **Clout (XP)** | 14 | |
 | **Guaranteed drop** | None | The house does not drop things. The house keeps things |
 | **Rare drop** | **Already-Spent Credit**, 8% | **New item, Approved 2026-11-09.** Battle consumable: revives one KO'd bro at 10% HP. Description: *"An arcade token stamped CREDIT 00. It has already been spent. It will be spent again. Lord Pilsner calls it a family heirloom."* |
@@ -185,20 +185,20 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Grepped `design/`, `game/assets/data/`, `docs/`: zero collisions for villain, move, item and achievement names |
 | Racket grounded in the city's satirized culture/underbelly | ✅ Tourist-trap arcade coin economics; continue-screen extraction |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; INSUFFICIENT CREDITS rule and ticket amount PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09, including the INSUFFICIENT CREDITS rule and ticket amount) |
 | Statuses from master list only (or author-approved new ones) | ✅ Hardcore Gamer, Embarrassed, Tourist Trap Victim, Broke AF |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ The insults are announcer trash talk; the bros reframe every one as respect |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (paid CONTINUE? revive, stats, drops, new item, achievement), except PROPOSED: INSUFFICIENT CREDITS rule, ticket amount |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (paid CONTINUE? revive, stats, drops, new item, achievement; review round: INSUFFICIENT CREDITS rule, ticket amount) |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Approved 2026-11-09 (PROPOSED items above awaiting author ruling)
-- **Canon Level**: Approved, with PROPOSED exceptions
+- **Status**: Approved 2026-11-09
+- **Canon Level**: Approved
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/count_continue.md`
 - **Registered In**: Not yet. Target `game/assets/data/enemies/debaucheryville_enemies.json` after author approval
 - **Sprite Sheet**: Not yet specced (proposed `kk_count_continue.png`)
@@ -208,3 +208,4 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 |------|--------|--------|
 | 2026-11-02 | Initial profile (Kebab Kombat cabinet villain roster, per author ruling 2026-11-02) | Claude draft for machsheltie |
 | 2026-11-09 | Applied author rulings: paid CONTINUE? kept and Approved (only villain with it); wallet theft struck (INSUFFICIENT CREDITS rule, PROPOSED); SOVS payout replaced with tickets (PROPOSED); cabinet cost 4 tokens; ladder ruled; stats, drops, item, achievement Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: INSUFFICIENT CREDITS rule and the 8-ticket payout Approved (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |

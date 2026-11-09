@@ -2,34 +2,34 @@
 
 *"Thirteen prizes. Every one of them a legend. Some of them cost more than the flight." - Lord Pilsner, at the counter*
 
-**Status:** DRAFT. Every ticket price, payout and effect below is **PROPOSED — needs author ruling**.
+**Status:** **Approved 2026-11-09** (author review round): all 13 prizes, their names, ticket prices and effects, and the ticket scale. Only the stacking/selling/dropping rules below stay **PROPOSED — needs author ruling**.
 **Binding source:** author ruling 2026-11-09 (`docs/superpowers/NEXT_WORK.md`, "Arcade fights pay TICKETS, not SOVS").
 **Where:** the Prize Redemption counter built into the Absinthe Arcade bar (the cracked absinthe bottle).
 **Currency:** prizes are bought with **tickets only**. Tickets are never bought, sold or converted to SOVS. Cabinet tokens cost 1 SOVS each (Frogger 2 tokens, Street Fighter 3, Kebab Kombat 4, per the same ruling).
 
 ---
 
-## Ticket scale — PROPOSED — needs author ruling
+## Ticket scale — Approved 2026-11-09
 
 | Source | Entry cost | Ticket payout per win | Notes |
 |---|---|---|---|
 | Frogger: Existential Edition | 2 tokens (2 SOVS) | 5-15 | Per villain: Hatchback 5 per car, Sinking Fund 8, Croc Monsieur 15 (villain profiles) |
 | Street Fighter: Identity Crisis | 3 tokens (3 SOVS) | 4-15 | Per villain: Palette Swap 4 per Swap, Jarmila 8, Vratislav 15 |
 | Kebab Kombat | 4 tokens (4 SOVS) | 5-20 | Ladder: Condiment Clan Ninja 5 per ninja (Mystery Brown 10), Count Continue 8, Shish Kahn 20. One full climb is roughly 40 tickets for 12 tokens |
-| DDR dance-off (three-pad) | PROPOSED — needs author ruling | 0-30 by score | Proposed on the decisions page: 2 tokens per song |
+| DDR dance-off (three-pad) | 2 tokens (2 SOVS) per song | 0-30 by score | Ruled 2026-11-09 (licensed real songs) |
 
 | Prize tier | Price range |
 |---|---|
 | Junk | 15-120 tickets |
 | "Better" | 800-2500 tickets |
 
-**The math the counter does not post:** the Chug E. Cheese Plush at 2500 tickets is about 60 full Kebab Kombat ladder climbs, roughly 720 SOVS in tokens, for a toy worth 3 SOVS. That is the design.
+**The math the counter does not post:** the Chuck E. Cheese Plush at 2500 tickets is about 60 full Kebab Kombat ladder climbs, roughly 720 SOVS in tokens, for a toy worth 3 SOVS. That is the design.
 
 ---
 
 ## Prize list
 
-| # | Name | Item ID | Tier | Price (tickets) | In-game description | Proposed effect | Actual value |
+| # | Name | Item ID | Tier | Price (tickets) | In-game description | Effect | Actual value |
 |---|---|---|---|---|---|---|---|
 | 1 | Paraffin Pucker | `item_aa_prize_paraffin_pucker` | Junk | 15 | Red wax lips that taste like a birthday candle somebody else blew out. Lord Pilsner wore them for a full lap of the bar and logged every turned cheek as "a near miss." | None (key trinket) | 0 SOVS |
 | 2 | Fangs for Nothing | `item_aa_prize_fangs_for_nothing` | Junk | 20 | Glow-in-the-dark vampire teeth one size too large for any human jaw. Bradley has worn them through two drinks and a pickup line and describes the night as "dangerous." | Cosmetic: while equipped, the wearer's battle shouts are lisped ("Thmaaaash!"). No stats. | 0 SOVS |
@@ -43,18 +43,35 @@
 | 10 | Flamingo Hydro Bro 2000 | `item_aa_prize_flamingo_hydro_bro_2000` | "Better" | 1200 | A flamingo-pink pump-action squirt gun that holds one shot glass of liquid and leaks a second. Chadwick filled it with absinthe and calls it his "concealed carry." | Field interaction: squirt an NPC for a one-line reaction. No battle use. | 2 SOVS |
 | 11 | Highlighter Hydro Bro 2000 | `item_aa_prize_highlighter_hydro_bro_2000` | "Better" | 1200 | The same squirt gun in highlighter yellow, won separately because Lord Pilsner refused to share a weapons platform with Chadwick. It holds beer. It does not hold it well. | Same as Flamingo Hydro Bro 2000. | 2 SOVS |
 | 12 | Two-Grand Tie-Dye Tee | `item_aa_prize_two_grand_tie_dye_tee` | "Better" | 2000 | A one-size-fits-nobody tie-dye shirt printed slightly crooked with I ♥ ABSINTHE ARCADE. Bradley wears it over his jersey and calls it his "championship belt." | Equippable cosmetic, 0 stats. | 3 SOVS |
-| 13 | Chug E. Cheese Plush | `item_aa_prize_chug_e_cheese_plush` | "Better" | 2500 | A cross-eyed plush pizza rat in a chef's hat, stuffed with what feels like aquarium gravel and smelling like a ball pit. Lord Pilsner handed over two and a half thousand tickets for it and calls it "the crown jewels." | None. Inventory key item only. | 3 SOVS |
+| 13 | Chuck E. Cheese Plush | `item_aa_prize_chuck_e_cheese_plush` | "Better" | 2500 | A cross-eyed plush pizza rat in a chef's hat, stuffed with what feels like aquarium gravel and smelling like a ball pit. Lord Pilsner handed over two and a half thousand tickets for it and calls it "the crown jewels." | None. Inventory key item only. | 3 SOVS |
 
 **Rules for every prize (PROPOSED — needs author ruling):** non-stackable except junk tier (stack 9); cannot be sold to any vendor; can be dropped; no resale value in SOVS.
 
-**Chug E. Cheese Plush constraint (CLAUDE.md: no mascots):** it is an inventory item. It never speaks, never joins battles, never has a sprite following the party and never gets reaction dialogue of its own. "Chug E. Cheese" is the in-world pizza-arcade brand on its tag, not a companion.
+**Chuck E. Cheese Plush constraint (CLAUDE.md: no mascots):** it is an inventory item. It never speaks, never joins battles, never has a sprite following the party and never gets reaction dialogue of its own. It is a prize, not a companion.
 
 ---
 
 ## Open questions for the author
 
-1. Ticket payouts per cabinet and the DDR dance-off entry cost and payout (all PROPOSED above).
-2. Every prize price and every proposed effect.
+1. ~~Ticket payouts per cabinet and the DDR dance-off entry cost and payout.~~ Answered 2026-11-09: approved as listed above.
+2. ~~Every prize price and every proposed effect.~~ Answered 2026-11-09: all approved.
 3. Do junk prizes stack, and can prizes be dropped?
 4. Is the existing equipment entry "Slap Bracelet (Leopard Print)" (`design/Inventory/equipment.md`) meant to be the same object as the Neon Wrist Guillotine? Kept separate here.
 5. Does the Two-Grand Tie-Dye Tee keep its name if its price moves off 2000 tickets?
+
+---
+
+## Engine registration (2026-11-09)
+
+- Registered in `game/assets/data/items/key_items.json` (`item_class: "permanent"`, `source: "absinthe_arcade_prize_redemption"`, with an added `ticket_price` field): prizes 1, 4, 5, 6, 7, 8, 9, 10, 11 and 13. Keys drop the `item_` prefix, per the key_items convention (`student_id` for `item_student_id`).
+- `ticket_price` is a new optional key_items field added for these prizes. It needs an author nod to join the standing key_items schema (ruling 2026-08-06).
+- **Not registered yet:** prizes 2 (Fangs for Nothing), 3 (Sixty-Minute Emerald) and 12 (Two-Grand Tie-Dye Tee) are worn/equipped, so they route to `equipment.json`, which has no ruled schema. They wait for an equipment-schema ruling.
+- Prize 9's battle effect (35% Embarrassed, once per battle) and prize 8's Drunk/Confused failure have no field in the key_items schema; they live in this catalogue until the battle/interaction code reads them.
+- The ticket itself is `item_absinthe_arcade_ticket` in `absinthe_arcade_items.json` (design data, alongside the token).
+
+## Change history
+
+| Date | Change | Author |
+|---|---|---|
+| 2026-11-09 | Catalogue drafted (all PROPOSED) | Claude (agent draft for author review) |
+| 2026-11-09 | Author review round: all 13 prizes, names, prices, effects and the ticket scale Approved; DDR cost ruled at 2 tokens per song; plush renamed to the real brand, Chuck E. Cheese Plush (`item_aa_prize_chuck_e_cheese_plush`), per the real-names ruling; engine registration noted | Claude (per author rulings 2026-11-09) |

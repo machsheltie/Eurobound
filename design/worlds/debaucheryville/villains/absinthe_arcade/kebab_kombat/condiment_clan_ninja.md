@@ -6,7 +6,8 @@
 > name, moves, dialogue, stats, drops and encounter placement were a Claude draft. Author
 > rulings 2026-11-09: stats, XP, drops, the new item, the achievement, the fixed resetting
 > ladder and the MYSTERY BROWN palette-spawn roll are **Approved 2026-11-09**. The SOVS payout is
-> replaced with arcade tickets; the ticket amount is **PROPOSED — needs author ruling**.
+> replaced with arcade tickets; the ticket amount is **Approved 2026-11-09**
+> (review round).
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_condiment_clan_ninja_01`
@@ -171,11 +172,11 @@ The ladder resets after KK-3 is won. On a party wipe the bros are spat out of th
 
 ## 💰 Rewards
 
-> **Approved 2026-11-09**, except the ticket amount (**PROPOSED**). Token economics: a Kebab Kombat play costs 4 tokens = 4 SOVS (ruled 2026-11-09). Fights pay arcade tickets, not SOVS, and Count Continue's paid continues pull the bros' SOVS further down on KK-2/KK-3.
+> **Approved 2026-11-09**, including the ticket amount (review round). Token economics: a Kebab Kombat play costs 4 tokens = 4 SOVS (ruled 2026-11-09). Fights pay arcade tickets, not SOVS, and Count Continue's paid continues pull the bros' SOVS further down on KK-2/KK-3.
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 5 arcade tickets per ninja (Mystery Brown: 10) | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar |
+| **Tickets** | 5 arcade tickets per ninja (Mystery Brown: 10) | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar |
 | **Clout (XP)** | 10 per ninja (Mystery Brown: 18) | Just under Feral Segway Tourist's 12 |
 | **Guaranteed drop** | None | The squeeze bottles go back in the cabinet. They are inventory |
 | **Common drop** | `lukewarm_kebab` (existing engine item), 25% | Reuses the existing Debaucheryville drop, no new item |
@@ -200,20 +201,20 @@ The ladder resets after KK-3 is won. On a party wipe the bros are spat out of th
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ Grepped `design/`, `game/assets/data/`, `docs/` for every villain, move, item and achievement name: zero collisions |
 | Racket grounded in the city's satirized culture/underbelly | ✅ 3 a.m. kebab sauce upsell plus tourist-trap cabinet cost-cutting |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount approved in the review round) |
 | Statuses from master list only (or author-approved new ones) | ✅ Embarrassed, Sloppy, Grease Fingers, Food Poisoning, Hardcore Gamer; Stun as used in the Combat Bible |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, drops, new item, achievement, ladder, secret-palette spawn roll), except PROPOSED: ticket amount |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, drops, new item, achievement, ladder, secret-palette spawn roll); ticket amount approved in the review round |
 
 ---
 
 ## 🔧 Development Status
 - **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
-- **Canon Level**: Approved (the existence of cabinet villains is Established, per the author ruling of 2026-11-02; this roster was approved 2026-11-09, ticket amount PROPOSED)
+- **Canon Level**: Approved (the existence of cabinet villains is Established, per the author ruling of 2026-11-02; this roster was approved 2026-11-09, ticket amount approved in the review round)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/condiment_clan_ninja.md`
 - **Registered In**: Not yet. Target `game/assets/data/enemies/debaucheryville_enemies.json` after author approval
 - **Sprite Sheet**: Not yet specced (proposed `kk_condiment_clan_ninja.png`, 1 sheet + 3 palettes)
@@ -223,3 +224,4 @@ The ladder resets after KK-3 is won. On a party wipe the bros are spat out of th
 |------|--------|--------|
 | 2026-11-02 | Initial profile (Kebab Kombat cabinet villain roster, per author ruling 2026-11-02) | Claude draft for machsheltie |
 | 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 4 tokens; fixed resetting ladder ruled; palette-spawn roll, stats, drops, item, achievement Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: 5-ticket payout (Mystery Brown 10) Approved (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |

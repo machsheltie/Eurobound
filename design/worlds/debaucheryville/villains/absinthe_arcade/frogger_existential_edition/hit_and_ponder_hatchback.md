@@ -6,7 +6,8 @@
 > each Arcade cabinet releases 2–3 game-inspired villain types that fight through the existing
 > battle system). Author rulings 2026-11-09: stats, XP, moves, the Hit and Ponder passive,
 > drops, items and achievement are **Approved 2026-11-09**. The SOVS payout is replaced with
-> arcade tickets; the ticket amount is **PROPOSED — needs author ruling**.
+> arcade tickets; the ticket amount is **Approved 2026-11-09**
+> (review round).
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_hit_and_ponder_hatchback_01`
@@ -206,11 +207,11 @@ background art only (see flags for the cabinet's old "existential meter").
 
 ---
 
-## 💰 Rewards — **Approved 2026-11-09** (ticket amount PROPOSED)
+## 💰 Rewards — **Approved 2026-11-09**
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 5 arcade tickets per car | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
+| **Tickets** | 5 arcade tickets per car | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
 | **Clout (XP)** | 9 per car | |
 | **Guaranteed drop** | **Fuzzy Dice of Doubt** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 2 SOVS. "Unloaded. They roll whatever you were already going to do." |
 | **Rare drop** | **Upside-Down Student Driver Magnet** (new item, Approved 2026-11-09), 5% | Accessory: +1 Speed. "Warns other road users that you are learning. You are not learning." |
@@ -234,14 +235,14 @@ background art only (see flags for the cabinet's old "existential meter").
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ (repo grep 2026-11-02: no hits for name, moves or drops) |
 | Racket grounded in the city's satirized culture/underbelly | ✅ |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount approved in the review round) |
 | Statuses from master list only (or author-approved new ones) | ✅ Embarrassed only |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ The questions never land |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09, except PROPOSED: ticket amount |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09; ticket amount approved in the review round |
 
 ---
 
@@ -256,6 +257,7 @@ background art only (see flags for the cabinet's old "existential meter").
 |------|--------|--------|
 | 2026-11-02 | Initial profile (draft, per cabinet-battle ruling 2026-11-02) | Claude (agent draft for author review) |
 | 2026-11-09 | Applied author rulings: SOVS payout replaced with tickets (PROPOSED); cabinet cost 2 tokens; roster structure ruled; stats, drops, items, achievement Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: 5-ticket-per-car payout Approved (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |
 
 ---
 

@@ -6,9 +6,9 @@
 > each Arcade cabinet releases 2–3 game-inspired villain types that fight through the existing
 > battle system). Author rulings 2026-11-09: the swallow, stats, XP, drops, items and achievement
 > are **Approved 2026-11-09**. The CONTINUE revive is struck from this villain (it lives only on
-> Count Continue). Its replacement, **The Bill Will Find You**, and the Confused move that
-> replaced Existential Crisis are **PROPOSED — author approved replacing it; wording/numbers need
-> author ruling**. The ticket payout amount is **PROPOSED — needs author ruling**.
+> Count Continue). Its replacement, **The Bill Will Find You**, the Confused move that
+> replaced Existential Crisis (**Still or Sparkling, Monsieur?**) and the ticket payout are
+> **Approved 2026-11-09** (review round). The achievement's hidden text is still **PROPOSED**.
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_croc_monsieur_01`
@@ -121,7 +121,7 @@ the table.
 | Bradley asks for a protein option | "Monsieur *is* the protein option." |
 
 ### Defeat Dialogue
-*First time his HP hits 0 (The Bill Will Find You, **PROPOSED**): he does not fall. He rises up on the log at 1 HP, drapes the napkin over his claw, and presents the leather bill folder in his jaws.*
+*First time his HP hits 0 (The Bill Will Find You, **Approved 2026-11-09**): he does not fall. He rises up on the log at 1 HP, drapes the napkin over his claw, and presents the leather bill folder in his jaws.*
 > **Croc Monsieur**: "Before monsieur goes. The bill."
 > *(the folder snaps shut on the bro who landed the blow)*
 > **Lord Pilsner** *(if it's him; reading it through the teeth)*: "Service charge, cover, corkage, swallowing. Very reasonable. Add thirty percent for the swallowing. And sign it *Lord*."
@@ -148,7 +148,7 @@ for each of his.
 
 | Stat | Value | Notes |
 |------|-------|-------|
-| **HP** | 52 | Rolling meter applies. The Bill Will Find You holds him at 1 HP for one extra action, once (**PROPOSED**). No revive. |
+| **HP** | 52 | Rolling meter applies. The Bill Will Find You holds him at 1 HP for one extra action, once (**Approved 2026-11-09**). No revive. |
 | **SP** | N/A | Moves are weight-driven. |
 | **Offense** | 9 | |
 | **Defense** | 6 | Log-hide. |
@@ -168,22 +168,22 @@ for each of his.
 }
 ```
 
-### Move List (data-driven weighted-random AI) — **weights Approved 2026-11-09** (new/changed moves marked PROPOSED)
+### Move List (data-driven weighted-random AI) — **weights Approved 2026-11-09** (new/changed moves Approved 2026-11-09 in the review round)
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
 |------|------|--------|------------------|--------------------|--------------|
 | Right This Way | Physical | One heavy bite, damage ×1.5. Battle log: "Croc Monsieur shows Bradley to his seat. The seat is teeth." | — | 35% / always | No |
 | Your Table Is Ready | Gimmick | Swallows one bro whole. That bro is out of the fight for 1 turn (can't act, can't be targeted), then gets spat back out with Grease Fingers for 3 turns: covered in croc, can't use tech items. Chadwick's phone does not work for the duration. He keeps trying. (Swallow/removal mechanic **Approved 2026-11-09**.) | Grease Fingers | 20% / never the same bro twice in a row | **Soft tell: licks a claw and turns a page in the reservation book the turn before.** |
 | The Pairing | Social | Pours from the absinthe fountain on his back into one bro. Sloppy for 2 turns (−3 Accuracy, 15% chance to hit allies). The bro thanks him every time. | Sloppy | 25% / always | No |
-| Still or Sparkling, Monsieur? | Social | **PROPOSED — author approved replacing it; wording/numbers need author ruling.** Confused on one bro (random targeting, 2 turns). Battle log: "Croc Monsieur asks Lord Pilsner, still or sparkling? Lord Pilsner says 'Yes.' Both arrive. Lord Pilsner attacks whichever one is fizzing. It's Chadwick, who has been carbonated since the pregame." | Confused | 20% / phase 2 only, never on a bro already Confused | No |
+| Still or Sparkling, Monsieur? | Social | **Approved 2026-11-09.** Confused on one bro (random targeting, 2 turns). Battle log: "Croc Monsieur asks Lord Pilsner, still or sparkling? Lord Pilsner says 'Yes.' Both arrive. Lord Pilsner attacks whichever one is fizzing. It's Chadwick, who has been carbonated since the pregame." | Confused | 20% / phase 2 only, never on a bro already Confused | No |
 | **Table for Three** | AoE Physical | Telegraph turn: jaws wide across the top of the playfield. Next turn the jaws close on the whole party, heavy damage to all three (×1.4 each). Afterwards he is Digesting: skips his next action. | — | Every 4 rounds (every 3 in phase 2) | **Yes — jaws open for a full turn, book flips to "3 — BROS," candle lights on the tongue, "Your table is ready. All three of you."** |
-| **The Bill Will Find You** | Finisher (first-KO gimmick) | **PROPOSED — author approved replacing it; wording/numbers need author ruling.** The first time his HP hits 0, he stays up at 1 HP and takes one immediate extra action: the bill folder snaps shut on the bro who landed the knockdown for ×1.2 damage. That bro reads the bill out loud and signs it. No revive, no wallet change, no SOVS move: the total is battle-log flavor ("Service charge, cover, corkage, swallowing: 4 SOVS of service, 40 SOVS of charge"). Any hit after that ends him. If the knockdown comes from a party-wide move, the bill goes to Lord Pilsner, as head of the table. | — | Once per fight / first time HP hits 0 | **No windup; the bill-presentation pose plays as it resolves.** |
+| **The Bill Will Find You** | Finisher (first-KO gimmick) | **Approved 2026-11-09.** The first time his HP hits 0, he stays up at 1 HP and takes one immediate extra action: the bill folder snaps shut on the bro who landed the knockdown for ×1.2 damage. That bro reads the bill out loud and signs it. No revive, no wallet change, no SOVS move: the total is battle-log flavor ("Service charge, cover, corkage, swallowing: 4 SOVS of service, 40 SOVS of charge"). Any hit after that ends him. If the knockdown comes from a party-wide move, the bill goes to Lord Pilsner, as head of the table. | — | Once per fight / first time HP hits 0 | **No windup; the bill-presentation pose plays as it resolves.** |
 
 ### Phases (Minor Villain; 2 phases because he's the cabinet's heavy)
 | Phase | Trigger | Behavior Change |
 |-------|---------|-----------------|
 | 1 | Fight start | Right This Way, The Pairing and Your Table Is Ready on weights; Table for Three on a 4-round clock. |
 | 2 | HP < 50% ("The kitchen is closing") | Adds Still or Sparkling, Monsieur?; Table for Three clock drops to 3 rounds. |
-| The Bill | First time HP hits 0 | **PROPOSED.** The Bill Will Find You fires (see move list). He stays at 1 HP until the next hit. The bros never question it. Lord Pilsner: "Let the man present the bill. A gentleman always lets a rival present the bill." |
+| The Bill | First time HP hits 0 | **Approved 2026-11-09.** The Bill Will Find You fires (see move list). He stays at 1 HP until the next hit. The bros never question it. Lord Pilsner: "Let the man present the bill. A gentleman always lets a rival present the bill." |
 
 ### Buffs & Debuffs They Use
 - **Self/ally buffs**: none. He's front of house; he doesn't need help.
@@ -208,7 +208,7 @@ for each of his.
 The cabinet's psychedelic Frogger playfield (highway below, river above, home bays across the
 top, TIME bar along the bottom, three pixel bro-heads in the "lives" corner, no frog). Croc
 Monsieur fights from the home-bay row at the top of the screen, which on his telegraph turn
-becomes the inside of his mouth. The Bill Will Find You is his only fight gimmick (**PROPOSED**).
+becomes the inside of his mouth. The Bill Will Find You is his only fight gimmick (**Approved 2026-11-09**).
 
 **Cabinet roster (weighted random table, structure ruled 2026-11-09; weights Approved 2026-11-09):**
 | Release | Composition | Weight |
@@ -220,11 +220,11 @@ becomes the inside of his mouth. The Bill Will Find You is his only fight gimmic
 
 ---
 
-## 💰 Rewards — **Approved 2026-11-09** (ticket amount and achievement text PROPOSED)
+## 💰 Rewards — **Approved 2026-11-09** (ticket amount approved in the review round; achievement hidden text PROPOSED)
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
-| **Tickets** | 15 arcade tickets | **PROPOSED, needs author ruling.** Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
+| **Tickets** | 15 arcade tickets | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
 | **Clout (XP)** | 22 | |
 | **Guaranteed drop** | **Auto-Gratuity Receipt** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 1 SOVS. "18% service charge, added for your convenience. The service was you." |
 | **Rare drop** | **Pre-Chewed 1-Up** (new item, Approved 2026-11-09), 8% | Consumable: revives one KO'd bro at 25% HP. "Gently used. Monsieur did not chew. Monsieur never chews." |
@@ -248,19 +248,19 @@ becomes the inside of his mouth. The Bill Will Find You is his only fight gimmic
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ (repo grep 2026-11-02: no hits for name, moves or drops; new names "The Bill Will Find You" and "Still or Sparkling, Monsieur?" need a fresh grep before registration) |
 | Racket grounded in the city's satirized culture/underbelly | ✅ |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; new finisher, Confused move and tickets PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09, including the new finisher, Confused move and tickets; achievement hidden text PROPOSED) |
 | Statuses from master list only (or author-approved new ones) | ✅ Grease Fingers, Sloppy, Confused; the 1-turn swallow is a removal effect (Approved 2026-11-09) |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ The destination question gets three yeses and an order; the bill gets signed |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09, except PROPOSED: The Bill Will Find You, Still or Sparkling, Monsieur?, ticket amount, achievement hidden text |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09, including (review round) The Bill Will Find You, Still or Sparkling, Monsieur? and the ticket amount; except PROPOSED: achievement hidden text |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Approved 2026-11-09 (PROPOSED items above awaiting author ruling)
+- **Status**: Approved 2026-11-09 (achievement hidden text still PROPOSED)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/croc_monsieur.md`
 - **Registered In**: not yet registered. Proposed key `croc_monsieur` in `game/assets/data/enemies/debaucheryville_enemies.json`.
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_croc_monsieur.png`, five states)
@@ -270,6 +270,7 @@ becomes the inside of his mouth. The Bill Will Find You is his only fight gimmic
 |------|--------|--------|
 | 2026-11-02 | Initial profile (draft, per cabinet-battle ruling 2026-11-02) | Claude (agent draft for author review) |
 | 2026-11-09 | Applied author rulings: CONTINUE revive struck and replaced with The Bill Will Find You (PROPOSED); Existential Crisis replaced with Confused (Still or Sparkling, Monsieur?, PROPOSED); SOVS payout replaced with tickets (PROPOSED); cabinet cost 2 tokens; roster structure ruled; mechanics, stats, drops, items Approved | Claude (per author rulings 2026-11-09) |
+| 2026-11-09 | Review-round author rulings applied: The Bill Will Find You, Still or Sparkling, Monsieur? (Confused) and the 15-ticket payout Approved; achievement hidden text stays PROPOSED (labels flipped from PROPOSED to Approved 2026-11-09) | Claude (per author rulings 2026-11-09) |
 
 ---
 
