@@ -99,6 +99,10 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
   SUPPOSITORIES", Four Loko, Winamp, Hot Topic, Habbo, Oakleys, Kinko's, Advil, Uber, Muscle
   Milk) stay (Y2K authenticity, trademark exposure), get parody-renamed (safe + new jokes), or
   mixed (keep neutral mentions, parody vice-context uses). Author to rule; then one sweep round.
+  **RESOLVED 2026-11-09 (author): real names stay.** "The only thing that never gets the real
+  name is locations. ALL other things get their real names." No sweep needed for the brands
+  listed; any existing parody-renamed brand should go back to its real name. Breweries,
+  bars and other venues are locations and keep parody names.
   **Pre-ruled 2026-08-04:** Party Monk's HOLIDAY INN EXPRESS bathrobe easter egg — KEEP (author
   ruling; do not relitigate in the brands sweep).
 - **Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
