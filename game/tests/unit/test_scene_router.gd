@@ -4,6 +4,8 @@ extends GutTest
 
 const EXTERIOR := preload("res://worlds/debaucheryville/absinthe_arcade_exterior_hd2d.tscn")
 const INTERIOR := preload("res://worlds/debaucheryville/absinthe_arcade_interior_hd2d.tscn")
+const CORRIDOR := preload("res://worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.tscn")
+const NORTH_WING := preload("res://worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.tscn")
 
 
 func after_each() -> void:
@@ -117,7 +119,7 @@ func test_hall_front_doors_lead_back_to_the_street() -> void:
 
 func test_spawn_points_sit_outside_every_exit() -> void:
 	# Arrange: a spawn inside an exit would bounce the player straight back out
-	for scene in [EXTERIOR, INTERIOR]:
+	for scene in [EXTERIOR, INTERIOR, CORRIDOR, NORTH_WING]:
 		var world = scene.instantiate()
 		world.spawn_player = false
 		add_child_autofree(world)
@@ -154,7 +156,7 @@ func test_scene_router_spawning_on_the_street_does_not_trip_the_door() -> void:
 
 
 func test_spawned_player_walks_on_solid_ground_in_both_screens() -> void:
-	for scene in [EXTERIOR, INTERIOR]:
+	for scene in [EXTERIOR, INTERIOR, CORRIDOR, NORTH_WING]:
 		# Arrange
 		var world = scene.instantiate()
 		add_child_autofree(world)
@@ -167,3 +169,66 @@ func test_spawned_player_walks_on_solid_ground_in_both_screens() -> void:
 		assert_eq(players.size(), 1, scene.resource_path.get_file())
 		assert_almost_eq((players[0] as Node3D).global_position.y, 0.0, 0.1)
 		world.free()
+
+
+func test_hall_north_arch_leads_into_the_mirror_corridor() -> void:
+	# Arrange
+	var hall := INTERIOR.instantiate()
+	hall.spawn_player = false
+	add_child_autofree(hall)
+
+	# Act
+	var arch := _exit_to(hall, "absinthe_arcade_mirror_corridor")
+
+	# Assert: the corridor exists now, so the arch is open
+	assert_eq(SceneRouter.scene_path("absinthe_arcade_mirror_corridor"), CORRIDOR.resource_path)
+	assert_not_null(arch)
+	assert_eq(arch.get_meta("target_spawn"), "from_hall")
+	assert_null(hall.find_child("arch_unbuilt_stop", true, false))
+
+
+func test_mirror_corridor_leads_back_to_the_hall() -> void:
+	# Arrange
+	var corridor := CORRIDOR.instantiate()
+	corridor.spawn_player = false
+	add_child_autofree(corridor)
+
+	# Act
+	var door := _exit_to(corridor, "absinthe_arcade_interior")
+
+	# Assert: arriving back in the hall under the arch
+	assert_not_null(door)
+	assert_eq(door.get_meta("target_spawn"), "from_mirror_corridor")
+	assert_has(_spawn_ids(corridor), "from_hall")
+
+
+func test_mirror_corridor_far_arch_leads_into_the_north_wing() -> void:
+	# Arrange
+	var corridor := CORRIDOR.instantiate()
+	corridor.spawn_player = false
+	add_child_autofree(corridor)
+
+	# Act
+	var arch := _exit_to(corridor, "absinthe_arcade_north_wing")
+
+	# Assert
+	assert_eq(SceneRouter.scene_path("absinthe_arcade_north_wing"), NORTH_WING.resource_path)
+	assert_not_null(arch)
+	assert_eq(arch.get_meta("target_spawn"), "from_mirror_corridor")
+	assert_null(corridor.find_child("arch_unbuilt_stop", true, false))
+	assert_has(_spawn_ids(corridor), "from_north_wing")
+
+
+func test_north_wing_leads_back_to_the_corridor() -> void:
+	# Arrange
+	var wing := NORTH_WING.instantiate()
+	wing.spawn_player = false
+	add_child_autofree(wing)
+
+	# Act
+	var door := _exit_to(wing, "absinthe_arcade_mirror_corridor")
+
+	# Assert
+	assert_not_null(door)
+	assert_eq(door.get_meta("target_spawn"), "from_north_wing")
+	assert_has(_spawn_ids(wing), "from_mirror_corridor")
