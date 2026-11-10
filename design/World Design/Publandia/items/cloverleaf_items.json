@@ -78,7 +78,7 @@
           "price_euro": 3,
           "effects": {
             "focus_boost": 5,
-            "existential_dread": +5
+            "existential_dread": 5
           },
           "flavor_text": "Bitter. Like accepting that you could leave but choosing not to.",
           "unlock_requirement": "met_sean_murphy_exit_01"
