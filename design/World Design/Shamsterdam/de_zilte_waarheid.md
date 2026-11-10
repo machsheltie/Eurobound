@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 6 PM (fresh fish hours, tradition demands)
 - **Stat Requirements**: Constitution check recommended, Pride check mandatory
-- **Item Requirements**: Gold for purchase (4-6 SOVS), willingness to be photographed mid-swallow
+- **Item Requirements**: SOVS for purchase (4-6 SOVS), willingness to be photographed mid-swallow
 - **Previous Location Requirements**: None (the herring finds the curious)
 - **Special Conditions**: Line moves fast, decisions must be made quickly, no time for doubt
 
@@ -179,7 +179,7 @@
 **Fish Breath**
 - **Duration**: 2 hours (in-game)
 - **Effect**: NPCs maintain slightly larger conversation distance
-- **Cure**: Strong mints (available at stand, 1 SOVS), time, or not caring
+- **Cure**: Strong mints (available at stand, 1 SOV), time, or not caring
 - **Social Impact**: Other herring survivors recognize you as one of their own
 
 **Onion Aura** (if ordered "met uitjes")

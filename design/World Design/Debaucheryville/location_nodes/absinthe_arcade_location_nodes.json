@@ -8,7 +8,7 @@
       "world": "debaucheryville",
       "zone": "clocktower_plaza_side_street",
       "exterior": {
-        "description": "A dignified four-storey Prague-inspired limestone and plaster building carrying a monumental Green Fairy mural, the Headphone Gentleman keystone, green and purple retrofit conduit, a black pixel-neon marquee, stained-glass doors, a street cabinet and wet-cobble props.",
+        "description": "A dignified four-storey Debaucheryville Old Town limestone and plaster building carrying a monumental Green Fairy mural, the Headphone Gentleman keystone, green and purple retrofit conduit, a black pixel-neon marquee, stained-glass doors, a street cabinet and wet-cobble props.",
         "entry_condition": "Always accessible through the main stained-glass entrance from the Clocktower Plaza side street."
       },
       "interior": {
@@ -42,7 +42,7 @@
         "west": "cabinet_gallery_mirror_corridor_and_claw_alcove",
         "east": "bottle_bar_seating_token_exchange_and_mezzanine_stair"
       },
-      "image_generation_master_brief": "A grand historic Prague-inspired amusement hall seen in fixed HD-2D perspective. Cream stone arches, carved plaster, iron mezzanine rails, stained glass, warm amber pendant lamps and a glossy black-and-white checkerboard floor remain sincere and beautiful. A catastrophically tacky green-and-purple arcade retrofit cuts through them: sticker-bombed cabinets, exposed conduit, pixel signs, localized spectral mist, and bad tourist microcopy. A monumental cracked absinthe-bottle bar is the navigational anchor. The main floor loops clearly around it; an L-shaped north wing becomes denser and darker without losing readable paths.",
+      "image_generation_master_brief": "A grand historic Debaucheryville Old Town amusement hall seen in fixed HD-2D perspective. Cream stone arches, carved plaster, iron mezzanine rails, stained glass, warm amber pendant lamps and a glossy black-and-white checkerboard floor remain sincere and beautiful. A catastrophically tacky green-and-purple arcade retrofit cuts through them: sticker-bombed cabinets, exposed conduit, pixel signs, localized spectral mist, and bad tourist microcopy. A monumental cracked absinthe-bottle bar is the navigational anchor. The main floor loops clearly around it; an L-shaped north wing becomes denser and darker without losing readable paths.",
       "nodes": [
         {
           "id": "aa_node_exterior_approach",

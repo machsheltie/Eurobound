@@ -159,7 +159,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 ### Shamsterdam — Expansion (2 Stamps) — COMPLETE
 | Slot | Location | Stamp Design | Signature Beer | Unlock Condition |
 |------|----------|--------------|----------------|------------------|
-| 1 | The Wobbly Windmill Brewery | Windmill with grain sheaf, gold ink | Windmill Wit | Defeat Yeast Golem |
+| 1 | The Wobbly Windmill Brewery | Windmill with grain sheaf, gold ink | Windmill Grist | Defeat Yeast Golem |
 | 2 | Bottoms Down | Overfilled tulip glass, amber ink | Oude Genever | Complete Jenever Taste Test gauntlet |
 
 **Page Theme**: Orange background, tulip and windmill borders
@@ -185,8 +185,8 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 ### Shamsterdam Signature Beers (Detailed)
 
-**Windmill Wit (The Wobbly Windmill Brewery)**
-- **Style**: Belgian-style witbier with Dutch grain
+**Windmill Grist (The Wobbly Windmill Brewery)**
+- **Style**: Amber ale with Dutch grain
 - **ABV**: 6.2%
 - **Stats**: +25 HP, +10 Speed
 - **Effect**: "Spinning" — -15% Navigation accuracy for 20 minutes
@@ -310,7 +310,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 **Blockchain Bock (Ye Olde B.R.E.W. Lab)**
 - **Style**: "AI-optimized" dark bock
 - **ABV**: 7.2%
-- **Stats**: +20 HP, +10 Gold (fluctuates)
+- **Stats**: +20 HP, +10 SOVS (fluctuates)
 - **Effect**: "Tourist Trapped" status
 - **Price**: 18 SOVS (±5 SOVS based on fake crypto ticker)
 - **Brewed By**: Ye Olde B.R.E.W. Lab (algorithm)
@@ -491,8 +491,8 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - stamp_bottoms_down_animation.png - 64x64x4 - Fill and thud sequence
 
 ### Shamsterdam Beer Assets (4 PNGs)
-- windmill_wit_bottle.png - 32x64 - Witbier with windmill stirrer
-- windmill_wit_icon.png - 32x32 - Menu icon with spin indicator
+- windmill_grist_bottle.png - 32x64 - Amber ale with windmill stirrer
+- windmill_grist_icon.png - 32x32 - Menu icon with spin indicator
 - oude_genever_glass.png - 32x64 - Traditional tulip, overfilled
 - oude_genever_icon.png - 32x32 - Menu icon with surface tension
 

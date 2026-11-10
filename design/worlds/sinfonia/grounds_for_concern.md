@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 6 AM - 10 PM (caffeine has limits, apparently)
 - **Stat Requirements**: None
-- **Item Requirements**: Gold
+- **Item Requirements**: SOVS
 - **Previous Location Requirements**: None
 - **Special Conditions**: Ordering "regular coffee" triggers existential crisis in barista
 

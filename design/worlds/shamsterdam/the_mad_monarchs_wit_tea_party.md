@@ -4,11 +4,11 @@
 
 > **Doc status (2026-11-10).** Built from `design/templates/location_validation_template.md`.
 > **APPROVED (author, Round v23, `docs/superpowers/NEXT_WORK.md`):** the name (author-minted) and the
-> concept in "Approved Concept" below, including the witbier specialty. **Everything else in this
-> doc is `PROPOSED — NEEDS AUTHOR RULING`**: the location ID, the tour challenge, the beer, the
-> opener, the stamp, the selfie, the brewmaster, every price and every line of dialogue not
-> quoted in the approved concept. The "Author Rulings Needed" table at the bottom lists each one
-> for a one-pass approval.
+> concept in "Approved Concept" below, including the witbier specialty. **APPROVED (author, Round
+> v24, 2026-11-10):** everything else in this doc as written: the location ID, the tour challenge,
+> the beer, the opener, the stamp, the selfie, the brewmaster, every price and every line of
+> dialogue. The Mad Monarch owns wheat beer in Shamsterdam (the Wobbly Windmill's beer is an amber
+> ale, Windmill Grist). The "Author Rulings — Approved" table at the bottom is the record.
 
 ## Approved Concept (author canon — do not alter)
 
@@ -27,17 +27,17 @@ a witbier + Mad Hatter tea-party pun: witbier is served in teacups.
 ---
 
 ## Location Identity
-- **Location ID**: `shamsterdam_cheeseclog_mad_monarchs_wit_tea_party_01` — PROPOSED — NEEDS AUTHOR RULING
+- **Location ID**: `shamsterdam_cheeseclog_mad_monarchs_wit_tea_party_01`
 - **Display Name**: The Mad Monarch's Wit-tea Party
-- **Satirical Subtitle**: "Happy Birthday. Still." — PROPOSED — NEEDS AUTHOR RULING
+- **Satirical Subtitle**: "Happy Birthday. Still."
 - **World Location**: Shamsterdam
 - **Area Zone**: Cheese & Clog Corner (the national-stereotype district; orange is the house
-  colour of the stereotype) — PROPOSED — NEEDS AUTHOR RULING
+  colour of the stereotype)
 - **Location Type**: Brewery Tour Location #4 / Witbier Brewpub / Party That Will Not End
 
 ---
 
-## Access & Requirements — PROPOSED — NEEDS AUTHOR RULING
+## Access & Requirements
 
 ### Entry Conditions
 - **Time Restrictions**: None. It has not closed since 1998. Every clock in the building is stopped
@@ -47,7 +47,7 @@ a witbier + Mad Hatter tea-party pun: witbier is served in teacups.
   location (standing tour rule, `design/quests/general_quests/brewerytour.md`)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Every non-orange guest is sprayed at the door (approved). Applies the
-  cosmetic overlay "Freshly Painted" (proposed: persists until the next sleep, like Bottoms Down's
+  cosmetic overlay "Freshly Painted" (persists until the next sleep, like Bottoms Down's
   sawdust overlay; NPCs across Shamsterdam treat the bros as party guests while it lasts).
 
 ### Exit Conditions
@@ -60,7 +60,7 @@ a witbier + Mad Hatter tea-party pun: witbier is served in teacups.
 
 ---
 
-## Visual Design — PROPOSED — NEEDS AUTHOR RULING
+## Visual Design
 
 ### Exterior Description
 - **Approach**: A side street off Cheese & Clog Corner that has been orange for 28 years. The
@@ -108,7 +108,7 @@ a witbier + Mad Hatter tea-party pun: witbier is served in teacups.
 
 ---
 
-## Satirical Design — PROPOSED — NEEDS AUTHOR RULING (the concept itself is approved)
+## Satirical Design
 
 ### Theme & Vibe
 **Core Concept**: The national monarch's-birthday street party, turned into a business that never
@@ -164,7 +164,7 @@ a table with men who arrived for one afternoon in 2003.
 
 ---
 
-## Gameplay Mechanics — PROPOSED — NEEDS AUTHOR RULING
+## Gameplay Mechanics
 
 ### Brewery Tour Flow
 1. **Get sprayed at the door** (approved beat). The bros say thank you.
@@ -205,7 +205,7 @@ interest: a grey, sweating mass in a deflated party hat and the original cardboa
   can only win by drinking more.
 - **Defeat**: The brewmaster pours a full pot over it. It shrinks back into the cellar to wait for a
   tomorrow that isn't coming. The door is re-labelled.
-- **Bros' combat lines (proposed)**:
+- **Bros' combat lines**:
   - **Lord Pilsner**: "Stand aside, peasant. I've been knighted."
   - **Chadwick**: "Orange filter, no filter needed. This is the best-lit fight of my life."
   - **Bradley**: "I've woken up next to worse." *(drinks a teacup, pinkie up)*
@@ -238,7 +238,7 @@ interest: a grey, sweating mass in a deflated party hat and the original cardboa
 8. **Status interactions**: Counts toward the alcohol tiers; does not stack with "Canal Courage"
    Bravado protection; Bottoms Down's The Shakes still applies
 9. **Technical dependencies**: Status that suppresses another status and banks a counter; expiry hook
-10. **Further author approval**: Yes — both statuses are proposed
+10. **Further author approval**: Approved as written (2026-11-10, round v24)
 
 ### Bottle Opener: The Mad Monarch's Wit-tea Party Bottle Opener
 - **Design**: An orange-enamelled brass teacup. The handle is the opener. A cardboard crown, folded
@@ -287,7 +287,7 @@ interest: a grey, sweating mass in a deflated party hat and the original cardboa
 
 ---
 
-## NPCs — PROPOSED — NEEDS AUTHOR RULING (sketches only; no profile files yet)
+## NPCs (sketches only; no profile files yet)
 
 ### Brewmaster Sjors Hoedemaker
 - **Role**: Owner, brewmaster, host of the party since 1998
@@ -298,7 +298,7 @@ interest: a grey, sweating mass in a deflated party hat and the original cardboa
   not had a hangover in 28 years. He keeps it in the cellar.
 - **Personality**: Delighted, hospitable, unstoppable. Treats every guest as if they've just arrived
   for the first birthday ever, including the ones who've been here since 2003.
-- **Key Dialogue (proposed)**:
+- **Key Dialogue**:
   - "Happy birthday! Clean cup? Clean cup!"
   - "Tea? This IS tea. It's wheat tea. Drink it."
   - "The morning after is for cowards. We don't do mornings. We do six o'clock."
@@ -307,7 +307,7 @@ interest: a grey, sweating mass in a deflated party hat and the original cardboa
 
 ### The Bouncer (unnamed)
 - **Role**: Door, paint sprayer, orange enforcement
-- **Key Dialogue (proposed)**: "Not orange." *(sprays)* "Orange. Happy birthday."
+- **Key Dialogue**: "Not orange." *(sprays)* "Orange. Happy birthday."
 
 ### Atmospheric NPCs
 - **The Lifers**: the 2003 stag party, the 2009 backpacker, the 2011 bunting woman (mini-mob, above)
@@ -315,7 +315,7 @@ interest: a grey, sweating mass in a deflated party hat and the original cardboa
 
 ---
 
-## Audio Design — PROPOSED — NEEDS AUTHOR RULING
+## Audio Design
 - **Ambient Soundscape**: Brass band, teacups on saucers, paint-sprayer hiss at the door, forty metres
   of chairs scraping on "Move down!"
 - **Music Style**: Oompah birthday march that loops seamlessly and has never stopped
@@ -332,12 +332,12 @@ interest: a grey, sweating mass in a deflated party hat and the original cardboa
 
 ---
 
-## Implementation Specifications — PROPOSED — NEEDS AUTHOR RULING
+## Implementation Specifications
 
 ### Technical Requirements
 - **Asset List**: Orange street exterior; long hall with the forty-metre table; head-table dais;
   cellar; Hoedemaker; the bouncer; the Lifers; the Hangover of '98; teacup, teapot, cake, crowns;
-  stamp, opener and beer icons. PNG asset doc to follow on approval
+  stamp, opener and beer icons. PNG asset doc to follow
   (`PNG_Assets/the_mad_monarchs_wit_tea_party_png_assets.md`).
 - **Animation Requirements**: Spray loop and per-character orange tint; table-wide seat shift;
   stopped clocks; boss growth over turns
@@ -367,17 +367,21 @@ mad_monarchs_state:
 - [x] Names grepped for uniqueness on 2026-11-10: Six O'Clock Wit, Clean Cup Move Down, The Lifers,
       The Hangover of '98, Sjors Hoedemaker, Party's Still On, Postponed Hangover, Freshly Painted
 - [x] No crypto elements
-- [ ] Author rulings on every PROPOSED item (table below)
+- [x] Author rulings on every item: approved as written, 2026-11-10, round v24 (table below)
 
-## Author Rulings Needed
-| # | Item | Proposal |
-|---|------|----------|
-| 1 | Location ID / zone | `shamsterdam_cheeseclog_mad_monarchs_wit_tea_party_01`, Cheese & Clog Corner |
-| 2 | Tour challenge | "Clean Cup, Move Down": teacup musical-chairs rhythm table → The Lifers → boss The Hangover of '98 from the cellar |
-| 3 | Signature beer | Six O'Clock Wit, 5.5% witbier in a teacup, 6 SOVS cup / 30 SOVS pot; blocks Hungover, then it all lands at once doubled |
-| 4 | Opener | Orange teacup, handle is the opener, tiny crown; inscription "The Morning After Is For Cowards.", earned only |
-| 5 | Stamp | Crowned teacup in orange ink that never dries and smudges every later page |
-| 6 | Selfie | "The Birthday Portrait": Pilsner enthroned in his cardboard crown, Hoedemaker pouring from on high; no actual knighting (Crown & Cask owns that) |
-| 7 | Brewmaster | Sjors Hoedemaker, orange top hat tagged "1998", host since the morning after |
-| 8 | Prices | Entry free, cup 6, pot 30, cake slice 4, re-spray 2 (SOVS) |
-| 9 | Door overlay | "Freshly Painted" cosmetic overlay until next sleep |
+## Author Rulings — Approved
+
+The author approved every proposal below as written (2026-11-10, round v24,
+`docs/superpowers/NEXT_WORK.md`). This table is the approved record.
+
+| # | Item | Approved as written | Status |
+|---|------|---------------------|--------|
+| 1 | Location ID / zone | `shamsterdam_cheeseclog_mad_monarchs_wit_tea_party_01`, Cheese & Clog Corner | Approved 2026-11-10, round v24 |
+| 2 | Tour challenge | "Clean Cup, Move Down": teacup musical-chairs rhythm table → The Lifers → boss The Hangover of '98 from the cellar | Approved 2026-11-10, round v24 |
+| 3 | Signature beer | Six O'Clock Wit, 5.5% witbier in a teacup, 6 SOVS cup / 30 SOVS pot; blocks Hungover, then it all lands at once doubled | Approved 2026-11-10, round v24 |
+| 4 | Opener | Orange teacup, handle is the opener, tiny crown; inscription "The Morning After Is For Cowards.", earned only | Approved 2026-11-10, round v24 |
+| 5 | Stamp | Crowned teacup in orange ink that never dries and smudges every later page | Approved 2026-11-10, round v24 |
+| 6 | Selfie | "The Birthday Portrait": Pilsner enthroned in his cardboard crown, Hoedemaker pouring from on high; no actual knighting (Crown & Cask owns that) | Approved 2026-11-10, round v24 |
+| 7 | Brewmaster | Sjors Hoedemaker, orange top hat tagged "1998", host since the morning after | Approved 2026-11-10, round v24 |
+| 8 | Prices | Entry free, cup 6, pot 30, cake slice 4, re-spray 2 (SOVS) | Approved 2026-11-10, round v24 |
+| 9 | Door overlay | "Freshly Painted" cosmetic overlay until next sleep | Approved 2026-11-10, round v24 |

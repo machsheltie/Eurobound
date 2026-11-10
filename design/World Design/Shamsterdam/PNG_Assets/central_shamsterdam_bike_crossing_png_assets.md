@@ -440,7 +440,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 5. **Gerrit's Rare Approval** - Actually impressed expression
 
 ### TikTok Potential
-- "POV: You tried to cross the street in Amsterdam"
+- "POV: You tried to cross the street in Shamsterdam"
 - Speed runs of perfect crossing
 - Compilation of collision fails
 - Cargo parade reactions

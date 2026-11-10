@@ -289,7 +289,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Math Realization Popup | (0, 176) | 128x80 | "You spent 25 Sovs. Your tickets are worth 4 Sovs." |
-| Prize Comparison Panel | (128, 160) | 128x96 | Tickets vs. direct gold price, side by side |
+| Prize Comparison Panel | (128, 160) | 128x96 | Tickets vs. direct SOVS price, side by side |
 
 ---
 

@@ -334,18 +334,18 @@
 ## System Integration
 ### Brewery Tour Quest Line
 - **Quest**: "Shamsterdam Brewery Tour"
-- **Progress**: 2 of 2 Shamsterdam breweries
+- **Progress**: 1 of 4 Shamsterdam breweries (The Wobbly Windmill Brewery, Bottoms Down, The Hoisted Pint and The Mad Monarch's Wit-tea Party); visit order is free
 - **Stamp**: "Oude Genever" stamp added to Bottle Opener Keychain
-- **Completion**: Both Shamsterdam breweries = "Canal Courage" passive unlock
+- **Completion**: All four Shamsterdam breweries = "Canal Courage" passive unlock
 
 ### "Canal Courage" Passive (Full Unlock)
-- **Requirement**: Complete BOTH Shamsterdam breweries (The Wobbly Windmill Brewery + Bottoms Down)
+- **Requirement**: Complete ALL FOUR Shamsterdam breweries (The Wobbly Windmill Brewery, Bottoms Down, The Hoisted Pint and The Mad Monarch's Wit-tea Party), in any order
 - **Effect**: All Bravado loss reduced by 25% while intoxicated
 - **Narrative**: "You've learned to drink like a Shamsterdammer. This is either an achievement or a concern."
 - **Visual**: Small Shamsterdam flag icon appears when passive is active
 
 ### Cross-Location Dependencies
-- **The Wobbly Windmill Brewery**: Partner brewery, beer-focused counterpart to jenever
+- **The Wobbly Windmill Brewery, The Hoisted Pint, The Mad Monarch's Wit-tea Party**: The other three Shamsterdam tour breweries, all beer-focused counterparts to jenever
 - **De Groene Gids**: Staff may reference "trying the hard stuff"
 - **The Tolerance Hostel**: Kitchen discussions of "the place with the sawdust"
 - **Frietomat**: Post-jenever food absorption, recovery meal

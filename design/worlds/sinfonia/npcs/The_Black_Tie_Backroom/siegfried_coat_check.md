@@ -129,7 +129,7 @@ He wants to be near it. That is the whole of it, stated plainly by him at the fi
 > "Come back tonight. Or do not. Both are correct."
 
 ### Post-Interaction
-*If the party checks their gold and finds the 50 Sovs missing, and returns to the counter about it:*
+*If the party checks their SOVS and finds the 50 Sovs missing, and returns to the counter about it:*
 > *(He does not deny it and does not explain it. He takes fifty Sovs out of his own pocket, sets it on the counter, and slides it across.)* "Yes." *(a beat)* "It will happen again. I would put it somewhere else next time."
 
 *He does not say sorry. He has said sorry about this before and found it did not survive contact with what he does next.*

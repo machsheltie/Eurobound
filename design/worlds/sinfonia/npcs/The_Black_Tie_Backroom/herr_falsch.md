@@ -173,7 +173,7 @@ Craft. He wants the evening to have a shape — a middle, a turn, a last twenty 
 |--------------|-------|--------------|---------------|
 | A seat at his table | Table minimum | Negative, on average, in a way no player can measure from the inside | Hard-difficulty poker opponent; bankroll 1000 Sovs+; major wins genuinely possible |
 | `item_shark_fin` | Defeat him | Considerable — it is recognised at every table in the room | Victory accessory; full spec at `Design/Inventory/items/shark_fin_item.md` |
-| His chip stash (2000 Sovs) | Defeat him | Exactly 2000 Sovs, counted out honestly | Gold |
+| His chip stash (2000 Sovs) | Defeat him | Exactly 2000 Sovs, counted out honestly | SOVS |
 | Conversation | Free, constant | Enjoyable, and expensive | Table talk; never contains a false statement about a fact |
 
 ### Hidden Details / Easter Eggs
@@ -266,7 +266,7 @@ He gates nothing required for progression. He is optional content in both forms 
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | `item_shark_fin` | On boss victory | Yes | Victory accessory; recognised at every table in the room; full spec in `Design/Inventory/items/shark_fin_item.md` |
-| 2000 Sovs chip stash | On boss victory | — | Gold, counted out honestly by him, never short |
+| 2000 Sovs chip stash | On boss victory | — | SOVS, counted out honestly by him, never short |
 
 ---
 

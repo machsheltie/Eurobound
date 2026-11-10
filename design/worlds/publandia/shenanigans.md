@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 4 PM - 3 AM (prime scamming hours)
 - **Stat Requirements**: None (marks don't need qualifications)
-- **Item Requirements**: Gold (you'll need it), optimism (you'll lose it)
+- **Item Requirements**: SOVS (you'll need it), optimism (you'll lose it)
 - **Previous Location Requirements**: None (fresh marks always welcome)
 - **Special Conditions**: "Frequent Victim" status after 3+ scams
 

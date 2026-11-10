@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 2 AM (extended tourist hours, "because culture never sleeps")
 - **Stat Requirements**: None (15 SOVS "suggested donation" that is very much mandatory)
-- **Item Requirements**: None for entry (gold for gift shop purchases, Fabergé quest for heist access)
+- **Item Requirements**: None for entry (SOVS for gift shop purchases, Fabergé quest for heist access)
 - **Previous Location Requirements**: None (accessible immediately, aggressively advertised)
 - **Special Conditions**: Night access (after 10 PM) for Fabergé Egg Hunt requires quest activation at Café de Schaamte
 
@@ -275,7 +275,7 @@
 - **Meeting Location**: Near QR terminal after examining NFT
 - **Invitation**: "You appreciate my art? You should see my studio. It's also my apartment. It's mostly my apartment."
 - **Morning Scene**: Wake on beanbag surrounded by failed art projects, Dennis explaining blockchain over cold coffee
-- **Consequences**: Gain "Distressed APE Adjacent" NFT (bonus), Hungover status, -5 gold (he "invested" it in "the collective")
+- **Consequences**: Gain "Distressed APE Adjacent" NFT (bonus), Hungover status, -5 SOVS (he "invested" it in "the collective")
 - **Satirical Beat**: His "studio" is a closet with a laptop, strong opinions, and no heat
 
 ### Cross-Location Dependencies

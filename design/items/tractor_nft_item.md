@@ -70,7 +70,7 @@ Aaron gave it away because he thought it would help. He believed that entirely. 
 Bravado:              +1  (asset ownership)
 Charm (Bros):         +2  (among themselves, exclusively, at all times)
 Charm (Everyone Else): 0  (the token is not visible to anyone who is not shown it, and it is shown to everyone)
-Gold Value:            0  (displayed as "0 Sovs" in the inventory value column, in the same font as real values)
+SOVS Value:            0  (displayed as "0 Sovs" in the inventory value column, in the same font as real values)
 ```
 
 ### Passive Effects

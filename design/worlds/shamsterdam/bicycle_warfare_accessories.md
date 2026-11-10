@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 AM - 8 PM (tourist cycling hours, carnage window)
 - **Stat Requirements**: None (the bike path accepts all sacrifices)
-- **Item Requirements**: Gold for purchases (5-25 Sovs), belief that accessories help
+- **Item Requirements**: SOVS for purchases (5-25 Sovs), belief that accessories help
 - **Previous Location Requirements**: None (the bell finds those who seek it)
 - **Special Conditions**: Adjacent to bike rental shops, captures tourists in transition
 
@@ -94,7 +94,7 @@
 ### Theme & Vibe
 **Core Concept**: Amsterdam bicycle culture is simultaneously beautiful (50% of trips by bike!) and TERRIFYING for tourists. The Dutch have been cycling since birth; they ride in heels, carrying groceries, while texting, in the rain, three-wide on narrow paths. Tourists rent bikes thinking "how hard can it be" and enter a combat zone where the rules are unspoken, the locals are merciless, and your 8 Sovs bell is the ONLY thing between you and becoming a cautionary tale.
 
-Bicycle Warfare Accessories leans into this reality with military precision. It's a shop that treats bells not as cute accessories but as survival equipment. The satire is the gap between the cheerful tourist cycling fantasy ("bikes in Amsterdam! So European!") and the brutal reality of Amsterdam bike infrastructure politics.
+Bicycle Warfare Accessories leans into this reality with military precision. It's a shop that treats bells not as cute accessories but as survival equipment. The satire is the gap between the cheerful tourist cycling fantasy ("bikes in Shamsterdam! So European!") and the brutal reality of Shamsterdam bike infrastructure politics.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist cycling overconfidence vs. Amsterdam reality

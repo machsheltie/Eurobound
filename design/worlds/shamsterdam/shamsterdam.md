@@ -141,7 +141,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Brewmaster who lectures about "respect for the grain"
 - The windmill turns, the room spins, coincidence unclear
 - **Tour Obstacle**: Yeast Golem encounter on the grinding floor
-- **Unlockable Consumable**: "Windmill Wit" — Restores HP, +Speed, -Navigation (the spinning doesn't help)
+- **Unlockable Consumable**: "Windmill Grist" — Restores HP, +Speed, -Navigation (the spinning doesn't help)
 - **Brewmaster Selfie Spot**: In front of the giant rotating blades (timing matters)
 
 ### Bottoms Down
@@ -161,9 +161,9 @@ The city that promises total freedom but delivers total accountability. A labyri
 - The stairs are too narrow for a keg or a grown man, so both go up the front in a cargo net on the old gable hoist hook, while canal-boat tours below take pictures
 - Lord Pilsner calls the net "VIP bottle service", Chadwick films the ascent as his "Jackass tribute", Bradley rides it four more times because nobody asked him to pay for the first one
 - The building next door is narrower, and the owner has a lawyer
-- **Tour Obstacle** (PROPOSED — NEEDS AUTHOR RULING): "The Front Way Up" — net balance lift, Canal Boat Paparazzi, boss Meester Overhang (the neighbour's lawyer)
-- **Unlockable Consumable** (PROPOSED — NEEDS AUTHOR RULING): "Load-Bearing Tripel" — +HP, +Defense, "Listing" drawback
-- **Brewmaster Selfie Spot** (PROPOSED — NEEDS AUTHOR RULING): The Gable Shot — bros in the net at the sixth-floor window, Brewmaster Thijs on the winch, a tour boat full of phones below
+- **Tour Obstacle** (approved 2026-11-10, round v24): "The Front Way Up" — net balance lift, Canal Boat Paparazzi, boss Meester Overhang (the neighbour's lawyer)
+- **Unlockable Consumable** (approved 2026-11-10, round v24): "Load-Bearing Tripel" — +HP, +Defense, "Listing" drawback
+- **Brewmaster Selfie Spot** (approved 2026-11-10, round v24): The Gable Shot — bros in the net at the sixth-floor window, Brewmaster Thijs on the winch, a tour boat full of phones below
 
 ### The Mad Monarch's Wit-tea Party
 **Brewery Tour Location #4** — full doc: `the_mad_monarchs_wit_tea_party.md`
@@ -171,9 +171,9 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Witbier brewed, served and sold here, poured into teacups
 - Everything is orange: the beer, the walls, the urinal cakes, and anyone who arrives in another colour, because the bouncer has a paint sprayer. The bros get sprayed at the door and say thank you
 - Lord Pilsner thinks the cardboard crown means he has been knighted
-- **Tour Obstacle** (PROPOSED — NEEDS AUTHOR RULING): "Clean Cup, Move Down" — teacup musical chairs at a forty-metre table, The Lifers, boss The Hangover of '98
-- **Unlockable Consumable** (PROPOSED — NEEDS AUTHOR RULING): "Six O'Clock Wit" — blocks Hungover, then every blocked Hungover lands at once
-- **Brewmaster Selfie Spot** (PROPOSED — NEEDS AUTHOR RULING): The Birthday Portrait — Lord Pilsner enthroned in his cardboard crown, Brewmaster Sjors Hoedemaker pouring from on high
+- **Tour Obstacle** (approved 2026-11-10, round v24): "Clean Cup, Move Down" — teacup musical chairs at a forty-metre table, The Lifers, boss The Hangover of '98
+- **Unlockable Consumable** (approved 2026-11-10, round v24): "Six O'Clock Wit" — blocks Hungover, then every blocked Hungover lands at once
+- **Brewmaster Selfie Spot** (approved 2026-11-10, round v24): The Birthday Portrait — Lord Pilsner enthroned in his cardboard crown, Brewmaster Sjors Hoedemaker pouring from on high
 
 **Shamsterdam Brewery Tour Completion Reward**: "Canal Courage" passive — All Bravado loss reduced by 25% while intoxicated
 

@@ -15,7 +15,7 @@
 
 ### **Enhanced Payoff Types:**
 - **Positive:** +Charm, +Street Rep, or minor items
-- **Negative:** Status effects (Hungover, Embarrassed), minor gold loss, or gag items  
+- **Negative:** Status effects (Hungover, Embarrassed), minor SOVS loss, or gag items  
 - **Mixed:** Flavor collectibles, achievement progress, or FlagMan reference items
 
 ---
@@ -36,7 +36,7 @@
 **Result:**
 - **+SP restored** (if you answer her crystal quiz correctly)
 - **or Confused status** if you roll your eyes mid-scene
-- **Gag Item:** Charged Quartz Vape Tip — unusable in battle, sells for 1 gold
+- **Gag Item:** Charged Quartz Vape Tip — unusable in battle, sells for 1 SOV
 
 **Location-Specific Roasting:** NPCs clearly targeting tourists with more money than sense, but bros think they're accessing "authentic underground culture"
 
@@ -79,7 +79,7 @@
 **Result:**
 - **Gain NFT #2** (alternate acquisition route)
 - **Hungover status**
-- **Lose 25 gold** — she took your last cab voucher
+- **Lose 25 SOVS** — she took your last cab voucher
 
 **Enhanced ICQ Integration:**
 ```

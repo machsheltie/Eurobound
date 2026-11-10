@@ -266,7 +266,7 @@ Layer Order (bottom to top):
 5. **Post-credits callback** - Amber confirms it's a duck
 
 ### TikTok Potential
-- "POV: You got a tattoo in Prague"
+- "POV: You got a tattoo in Debaucheryville"
 - "When you're LEVEL SEVEN VIP" (shows crusty wristband)
 - "The tattoo artist knew exactly what he was doing"
 

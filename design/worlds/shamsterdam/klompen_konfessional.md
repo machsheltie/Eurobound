@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 8 PM (tourist shopping hours)
 - **Stat Requirements**: None (the clogs welcome all feet, briefly)
-- **Item Requirements**: Gold for purchases (15-80 Sovs), willingness to accept truth
+- **Item Requirements**: SOVS for purchases (15-80 Sovs), willingness to accept truth
 - **Previous Location Requirements**: None (the clogs call to all tourists)
 - **Special Conditions**: "Try them on" station available, medical waiver not technically required
 
@@ -104,7 +104,7 @@
 The staff know. The tourists know. The transaction happens anyway. This is the confession.
 
 ### The Mathematics of Clog Commerce
-- **Annual tourist clog purchases in Amsterdam**: ~2 million pairs
+- **Annual tourist clog purchases in Shamsterdam**: ~2 million pairs
 - **Clogs actually worn after purchase**: ~0.5%
 - **Clogs that become planters**: ~15%
 - **Clogs that become doorstops**: ~10%

@@ -275,7 +275,7 @@ Sleep quality depends on random roommate generation:
 
 **Derek (The Permanent Resident)**
 - **Composition**: Been "finding himself" for 3 months
-- **Behavior**: Snores legendarily, gives unsolicited advice, knows everything about Dublin
+- **Behavior**: Snores legendarily, gives unsolicited advice, knows everything about Publandia
 - **Bunk**: 4B (always)
 - **Function**: Information source if befriended, noise source if not
 - **Dialogue**: "The secret to hostel life? Earplugs and low expectations. Here, take my spare pair."

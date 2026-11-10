@@ -153,9 +153,9 @@ Pure business. No pretense of service or spirituality. She saw an opportunity 25
 | "I Survived The Cock-Up" T-Shirt | 30 SOVS | 3 SOVS | +1 Bravado, -2 Charm with locals |
 | Temporary Clock Tattoo | 15 SOVS | 0.50 SOVS | Cosmetic until shower, preview of regret |
 | Clock Snow Globe | 25 SOVS | 4 SOVS | Plays tiny, sad chime when shaken |
-| Clock Keychain | 12 SOVS | 1 SOVS | No effect, jingles annoyingly |
+| Clock Keychain | 12 SOVS | 1 SOV | No effect, jingles annoyingly |
 | Clock Magnet | 8 SOVS | 0.50 SOVS | Sticks to hostel fridge |
-| Clock Shot Glass | 10 SOVS | 1 SOVS | "For the clock wine" |
+| Clock Shot Glass | 10 SOVS | 1 SOV | "For the clock wine" |
 | Complete Memory Package | 120 SOVS | 12 SOVS | All of the above, slight "discount" |
 
 ### Stall Details

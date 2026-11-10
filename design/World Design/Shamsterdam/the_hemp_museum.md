@@ -199,7 +199,7 @@
 ### The "Free" Hemp Tea
 - **Trigger**: Entry ticket includes "complimentary hemp tea sample"
 - **Location**: Small station near gift shop (funneling traffic)
-- **Effect**: +Calm status (minimal), -Gold from gift shop proximity
+- **Effect**: +Calm status (minimal), -SOVS from gift shop proximity
 - **Taste**: "Earthy" (translation: disappointing)
 - **Function**: Loss leader, makes you feel you "got something" from the 10 SOVS, puts you in buying mood
 - **Dialogue**: "The tea is complimentary. Gift shop is right there. Take your time."

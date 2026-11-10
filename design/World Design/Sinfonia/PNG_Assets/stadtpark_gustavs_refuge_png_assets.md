@@ -342,7 +342,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 ### Quote-Worthy Visual Moments
 - "Taste the Rainbow" bag held toward horse
 - Pigeon Lady surrounded by birds at night
-- Philosopher offering wisdom for 1 SOVS
+- Philosopher offering wisdom for 1 SOV
 - Sleeping tourist undisturbed by everything
 
 ---

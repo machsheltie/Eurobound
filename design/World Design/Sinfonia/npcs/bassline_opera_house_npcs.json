@@ -27,11 +27,11 @@
         "core_traits": ["perfectionist", "passionate", "fragile_ego"],
         "speech_pattern": {
           "accent": "educated_german",
-          "quirks": ["measure_references", "salzburg_name_drops", "escalating_despair"],
+          "quirks": ["measure_references", "conservatory_name_drops", "escalating_despair"],
           "volume": "varies_dramatically"
         },
         "background": {
-          "training": "salzburg_festival",
+          "training": "conservatory_festival",
           "current_project": "die_zauberfloete",
           "project_duration": "8_months",
           "opening_night": "tomorrow"

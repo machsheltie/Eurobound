@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 6 PM (fresh fish hours, tradition demands)
 - **Stat Requirements**: Constitution check recommended, Pride check mandatory
-- **Item Requirements**: Gold for purchase (4-6 Sovs), willingness to be photographed mid-swallow
+- **Item Requirements**: SOVS for purchase (4-6 Sovs), willingness to be photographed mid-swallow
 - **Previous Location Requirements**: None (the herring finds the curious)
 - **Special Conditions**: Line moves fast, decisions must be made quickly, no time for doubt
 

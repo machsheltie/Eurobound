@@ -7,7 +7,7 @@
 | Location ID | `debaucheryville_clocktower_arcade_01` |
 | Engine | Godot 4.7 (Forward+) |
 | Production style | Painterly HD-2D painted-box diorama |
-| Exterior | Historic Prague-inspired facade vandalized by a green-and-purple arcade retrofit |
+| Exterior | Historic Debaucheryville Old Town facade vandalized by a green-and-purple arcade retrofit |
 | Interior | Grand adaptive-reuse amusement hall organized around a monumental cracked-bottle bar |
 | Camera | Fixed HD-2D tilt, approximately 30–40° down, narrow perspective FOV |
 | Target | 60 FPS with scalable particles, emission and crowd layers |
@@ -211,7 +211,7 @@ Generic machines support the room rhythm; they must not compete with quest cabin
 | Asset ID | Filename | Notes |
 |---|---|---|
 | `aa_prop_token_exchange` | `aa_prop_token_exchange.png` | Idle, pay, dispense and jam screen states |
-| `aa_prop_token_price_board` | `aa_prop_token_price_board.png` | Legible `1 SOVS = 1 TOKEN` (author ruling 2026-11-02) |
+| `aa_prop_token_price_board` | `aa_prop_token_price_board.png` | Legible `1 SOV = 1 TOKEN` (author ruling 2026-11-02) |
 | `aa_prop_prize_counter` | `aa_prop_prize_counter.png` | Sincere PRIZES sign, cheap stock, clear claw sightline |
 | `aa_prop_bar_seating` | `aa_prop_bar_seating.png` | Normal stools plus highchair, beanbag and one discoverable bidet stool |
 | `aa_prop_standing_tables` | `aa_prop_standing_tables.png` | Brass/wood tables, branded coasters, clear walkable footprint |

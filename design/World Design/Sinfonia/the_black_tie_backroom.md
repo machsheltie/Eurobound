@@ -23,7 +23,7 @@
   - Backstage labyrinth exit (The Bassline Opera House)
   - OR hint from Café Existenz regulars
   - OR overheard gossip from Kaffeehaus Row
-- **Special Conditions**: Gold minimum of 500 SOVS to enter (they "hold" it as collateral)
+- **Special Conditions**: SOVS minimum of 500 SOVS to enter (they "hold" it as collateral)
 
 ### The Hidden Entrance
 The Backroom's entrance is a layered secret:
@@ -56,7 +56,7 @@ The Backroom's entrance is a layered secret:
   - "Gentlemen settle debts. Ladies collect them."
   - "The House always wins. The House is very polite about it."
   - "Cheating is punished. Being caught cheating is punished more."
-- Gold deposit window (your "collateral")
+- SOVS deposit window (your "collateral")
 
 **The Main Floor (Common Games)**
 - Open floor with multiple gaming tables
@@ -128,7 +128,7 @@ Everyone knows. No one admits it. That's the game within the game.
 - **City-Specific Comedy Operations**: Opera money laundering, "donations" that are debts, reputation as currency
 - **Buffoon Exploitation**: Bros who think their luck/skill can beat the house (it cannot)
 - **Comedy of Errors**: Dramatic losses, accidental wins that encourage bigger losses, tells
-- **Consequence System**: Gold loss is REAL; Embarrassed status from public losses; Cleaned Out ejection
+- **Consequence System**: SOVS loss is REAL; Embarrassed status from public losses; Cleaned Out ejection
 
 ### Buffoon Delusion Scenarios
 
@@ -159,7 +159,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 
 ### The House Edge System
 
-**Gold Economy**:
+**SOVS Economy**:
 - Minimum 500 SOVS to enter (held as collateral)
 - All games use house chips (no gold directly)
 - Chips convert back to gold at exit (minus "handling fee")

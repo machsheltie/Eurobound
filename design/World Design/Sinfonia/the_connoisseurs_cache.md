@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 8 PM (refined hours)
 - **Stat Requirements**: None
-- **Item Requirements**: Gold
+- **Item Requirements**: SOVS
 - **Previous Location Requirements**: None
 - **Special Conditions**: The shopkeeper will explain the provenance of EVERYTHING
 
@@ -193,7 +193,7 @@ Every purchase includes a certificate:
 - Accumulate enough and inventory fills with paper
 - Some NPCs impressed by certificates
 - Others confused: "You have a certificate... for pain medicine?"
-- Can be sold back for 1 SOVS each (insulting but possible)
+- Can be sold back for 1 SOV each (insulting but possible)
 
 ### Selfie Spot Integration
 

@@ -212,7 +212,7 @@
 - **Bathroom Graffiti Intel**: Metro passwords and FlagMan wisdom documentation
 
 ### Viral Content Potential
-- **TikTok Opportunities**: "POV: You're getting scammed in a Prague internet cafe"
+- **TikTok Opportunities**: "POV: You're getting scammed in a Debaucheryville internet cafe"
 - **Twitter Hooks**: Dmitri's philosophical quotes about technology and payment
 - **Instagram Aesthetic**: Authentic Y2K internet cafe atmosphere with neon lighting
 - **Streaming Content**: ICQ sting operation attempts and tourist targeting documentation

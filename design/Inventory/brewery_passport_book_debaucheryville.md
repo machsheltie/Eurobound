@@ -146,9 +146,9 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 **Blockchain Bock (Ye Olde B.R.E.W. Lab)**
 - **Style**: "AI-optimized" dark bock
 - **ABV**: 7.2%
-- **Stats**: +20 HP, +10 Gold (crypto fluctuation bonus)
+- **Stats**: +20 HP, +10 SOVS (crypto fluctuation bonus)
 - **Effect**: Applies "Tourist Trapped" status (increased vulnerability to scams)
-- **Risk**: The gold bonus may be negative if "market crashes"
+- **Risk**: The SOVS bonus may be negative if "market crashes"
 - **Price**: 18 SOVS (fluctuates ±5 SOVS based on fake crypto ticker)
 - **Flavor Text**: "Brewed by algorithms. Verified by blockchain. Tasted by... actually, the AI doesn't taste. That's YOUR job."
 - **Brewed By**: Ye Olde B.R.E.W. Lab (random number generator)

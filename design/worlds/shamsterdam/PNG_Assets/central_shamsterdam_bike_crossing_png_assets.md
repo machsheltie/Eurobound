@@ -666,7 +666,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 - "This is a bicycle city. Please adjust expectations."
 
 ### TikTok Potential
-- "POV: You tried to cross the street in Amsterdam"
+- "POV: You tried to cross the street in Shamsterdam"
 - Speed runs of perfect crossing
 - Compilation of collision fails
 - Cargo parade reactions

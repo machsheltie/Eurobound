@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24 hours (coolness never sleeps)
 - **Stat Requirements**: None (the insecure are welcome, especially them)
-- **Item Requirements**: Gold for purchases (20-150 SOVS), willingness to reinvent yourself at 2 AM
+- **Item Requirements**: SOVS for purchases (20-150 SOVS), willingness to reinvent yourself at 2 AM
 - **Previous Location Requirements**: None (the urge to look cool finds everyone)
 - **Special Conditions**: 2 AM - 5 AM sees different clientele (more desperate, more honest)
 

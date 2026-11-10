@@ -147,8 +147,8 @@
 | The Giggling Figure | Surprise reaction shot | +Embarrassed status if shared | 0% will post |
 | Marilyn Monroe Statue | Dress-blow recreation | +Bravado if pulled off | 15% might post (cropped) |
 | The Throne | Group seating | +Unexplainable Photo item | 5% deeply regret posting |
-| Costume Corner | Accessorized portraits | -Gold (5 SOVS rental), +Regret | 0% will post (but keep) |
-| Green Screen | "Classic scene" composite | -Gold (10 SOVS print), +Artifact | Never (but can't throw away) |
+| Costume Corner | Accessorized portraits | -SOVS (5 SOVS rental), +Regret | 0% will post (but keep) |
+| Green Screen | "Classic scene" composite | -SOVS (10 SOVS print), +Artifact | Never (but can't throw away) |
 
 ### The Photo Consequences System
 - **Photos Taken**: Automatically collected in "Venus Temple Album"

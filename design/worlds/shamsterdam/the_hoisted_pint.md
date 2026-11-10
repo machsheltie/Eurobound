@@ -4,10 +4,10 @@
 
 > **Doc status (2026-11-10).** Built from `design/templates/location_validation_template.md`.
 > **APPROVED (author, Round v23, `docs/superpowers/NEXT_WORK.md`):** the name and the concept in
-> "Approved Concept" below. **Everything else in this doc is `PROPOSED — NEEDS AUTHOR RULING`**:
-> the location ID, the tour challenge, the beer, the opener, the stamp, the selfie, the brewmaster,
-> the lawyer, every price and every line of dialogue not quoted in the approved concept. The
-> "Author Rulings Needed" table at the bottom lists each one for a one-pass approval.
+> "Approved Concept" below. **APPROVED (author, Round v24, 2026-11-10):** everything else in this
+> doc as written: the location ID, the tour challenge, the beer, the opener, the stamp, the selfie,
+> the brewmaster, the lawyer, every price and every line of dialogue. The "Author Rulings — Approved"
+> table at the bottom is the record.
 
 ## Approved Concept (author canon — do not alter)
 
@@ -23,16 +23,16 @@ one. The building next door is narrower, and the owner has a lawyer.
 ---
 
 ## Location Identity
-- **Location ID**: `shamsterdam_canalring_hoisted_pint_01` — PROPOSED — NEEDS AUTHOR RULING
+- **Location ID**: `shamsterdam_canalring_hoisted_pint_01`
 - **Display Name**: The Hoisted Pint
-- **Satirical Subtitle**: "Leaning Since 1689. Load-Bearing Since Never." — PROPOSED — NEEDS AUTHOR RULING
+- **Satirical Subtitle**: "Leaning Since 1689. Load-Bearing Since Never."
 - **World Location**: Shamsterdam
-- **Area Zone**: Canal Ring Promenade (the leaning-canal-house district) — PROPOSED — NEEDS AUTHOR RULING
+- **Area Zone**: Canal Ring Promenade (the leaning-canal-house district)
 - **Location Type**: Brewery Tour Location #3 / Vertical Micro-Dungeon / Structural Concern
 
 ---
 
-## Access & Requirements — PROPOSED — NEEDS AUTHOR RULING
+## Access & Requirements
 
 ### Entry Conditions
 - **Time Restrictions**: 14:00 - 02:00. The hoist stops at 02:00 because the brewmaster's arms do.
@@ -53,7 +53,7 @@ one. The building next door is narrower, and the owner has a lawyer.
 
 ---
 
-## Visual Design — PROPOSED — NEEDS AUTHOR RULING
+## Visual Design
 
 ### Exterior Description
 - **Approach**: Canal-side pavement between two bike racks. Look up. Keep looking up.
@@ -107,7 +107,7 @@ one. The building next door is narrower, and the owner has a lawyer.
 
 ---
 
-## Satirical Design — PROPOSED — NEEDS AUTHOR RULING (the target itself is approved)
+## Satirical Design
 
 ### Theme & Vibe
 **Core Concept**: A building that breaks every fire code ever written and charges admission for
@@ -167,7 +167,7 @@ from the top like a ship's captain.
 
 ---
 
-## Gameplay Mechanics — PROPOSED — NEEDS AUTHOR RULING
+## Gameplay Mechanics
 
 ### Brewery Tour Flow
 1. **Order the special beer** at the Hoist Desk (Load-Bearing Tripel). It cannot be served on the
@@ -207,7 +207,7 @@ leans 11 cm into his client's airspace. The bros are now inside those 11 cm.
 - **Weakness**: Swinging the net INTO his window. Each full swing is a hit; the bros enjoy every one.
 - **Defeat**: The 11 cm becomes 1.5 m with three bros and a keg in it. He closes his shutters and
   files an appeal. The appeal is lowered past them on his own small hook.
-- **Bros' combat lines (approved-concept lines in quotes are canon; the rest proposed)**:
+- **Bros' combat lines**:
   - **Lord Pilsner**: "VIP bottle service." / "Sir, we are the bottle."
   - **Chadwick**: his "Jackass tribute," narrated: "Jackass tribute, take one. No stunt double. No stairs. No permit."
   - **Bradley**: "Is he billing us? I haven't paid for anything yet."
@@ -247,7 +247,7 @@ stays empty. The floor-4 tally gains five marks.
    escalation once the alcohol tiers have numbers
 9. **Technical dependencies**: Sprite rotation per character; overworld drift vector toward a
    tagged edge; a turn-skip hook in battle
-10. **Further author approval**: Yes — the whole status is proposed
+10. **Further author approval**: Approved as written (2026-11-10, round v24)
 
 ### Bottle Opener: The Hoisted Pint Bottle Opener
 - **Design**: A brass gable hoist hook. The throat of the hook is the opener. A twist of tarred
@@ -300,7 +300,7 @@ stays empty. The floor-4 tally gains five marks.
 
 ---
 
-## NPCs — PROPOSED — NEEDS AUTHOR RULING (sketches only; no profile files yet)
+## NPCs (sketches only; no profile files yet)
 
 ### Brewmaster Thijs
 - **Role**: Brewmaster, winch operator, the only person on the sixth floor
@@ -310,7 +310,7 @@ stays empty. The floor-4 tally gains five marks.
   well. He has not fitted back down it since 1996 and has not been to street level since. Everything
   he needs comes up on the hook. He considers this the best decision he has ever made.
 - **Personality**: Calls every defect charm. Speaks entirely in shouts down the facade.
-- **Key Dialogue (proposed)**:
+- **Key Dialogue**:
   - "WELCOME TO THE HOISTED PINT! STAIRS ARE DECORATIVE! GET IN THE NET!"
   - "FIRE CODE? The fire code is for buildings that stand up straight."
   - "IF IT FITS, IT LIFTS! You fit! Lovely!"
@@ -322,7 +322,7 @@ stays empty. The floor-4 tally gains five marks.
 - **Appearance**: Grey three-piece suit, desk lamp, fountain pen, a ruler marked to the millimetre
 - **Personality**: He has billed the same eleven centimetres for thirty years and intends to bill
   them for thirty more
-- **Key Dialogue (proposed)**: "You are trespassing in my client's air." / "Every swing is a separate
+- **Key Dialogue**: "You are trespassing in my client's air." / "Every swing is a separate
   incident." / "I will see you in court. I will see you in court from here, at this desk."
 
 ### Atmospheric NPCs
@@ -331,7 +331,7 @@ stays empty. The floor-4 tally gains five marks.
 
 ---
 
-## Audio Design — PROPOSED — NEEDS AUTHOR RULING
+## Audio Design
 - **Ambient Soundscape**: Rope creak, winch ratchet, canal water, boat PA, bike bells on the pavement
 - **Music Style**: Accordion waltz that slows as the net climbs and speeds up on the way down
 - **Interactive Audio**: Brick thud on facade hits, the bucket hook's squeak, the stamp's thud
@@ -347,12 +347,12 @@ stays empty. The floor-4 tally gains five marks.
 
 ---
 
-## Implementation Specifications — PROPOSED — NEEDS AUTHOR RULING
+## Implementation Specifications
 
 ### Technical Requirements
 - **Asset List**: Tall facade scene with six window cut-outs; sixth-floor room; cargo net (three
   bros + keg); tour boat loop; the narrower house and its fifth-floor window; Thijs; Meester
-  Overhang; Canal Boat Paparazzi; stamp, opener and beer icons. PNG asset doc to follow on approval
+  Overhang; Canal Boat Paparazzi; stamp, opener and beer icons. PNG asset doc to follow
   (`PNG_Assets/the_hoisted_pint_png_assets.md`).
 - **Animation Requirements**: Net pendulum, winch, boat loop, sprite lean for Listing
 - **Performance Budget**: 60 FPS, max 16 draw calls
@@ -381,16 +381,20 @@ hoisted_pint_state:
 - [x] Names grepped for uniqueness on 2026-11-10: Load-Bearing Tripel, If It Fits It Lifts,
       Meester Overhang, Canal Boat Paparazzi, Thijs, The Front Way Up, Listing
 - [x] No crypto elements
-- [ ] Author rulings on every PROPOSED item (table below)
+- [x] Author rulings on every item: approved as written, 2026-11-10, round v24 (table below)
 
-## Author Rulings Needed
-| # | Item | Proposal |
-|---|------|----------|
-| 1 | Location ID / zone | `shamsterdam_canalring_hoisted_pint_01`, Canal Ring Promenade |
-| 2 | Tour challenge | "The Front Way Up": net balance lift → Canal Boat Paparazzi → boss Meester Overhang (the neighbour's lawyer) |
-| 3 | Signature beer | Load-Bearing Tripel, 9.5%, 9 SOVS, +45 HP, +Defense, "Listing" drawback |
-| 4 | Opener | Brass gable hoist hook, inscription "If It Fits, It Lifts.", earned only |
-| 5 | Stamp | Leaning canal house struck 7° off the guide box, Canal Green ink, lowered on a string |
-| 6 | Selfie | "The Gable Shot": bros in the net with a sparkler, Thijs at the window, tour boat below |
-| 7 | Brewmaster | Thijs, who walked up as an apprentice in 1991 and hasn't fitted back down since 1996 |
-| 8 | Prices | Hoist Fee 5, House Lager 4, Tripel 9, Net-Burn Balm 3 (SOVS) |
+## Author Rulings — Approved
+
+The author approved every proposal below as written (2026-11-10, round v24,
+`docs/superpowers/NEXT_WORK.md`). This table is the approved record.
+
+| # | Item | Approved as written | Status |
+|---|------|---------------------|--------|
+| 1 | Location ID / zone | `shamsterdam_canalring_hoisted_pint_01`, Canal Ring Promenade | Approved 2026-11-10, round v24 |
+| 2 | Tour challenge | "The Front Way Up": net balance lift → Canal Boat Paparazzi → boss Meester Overhang (the neighbour's lawyer) | Approved 2026-11-10, round v24 |
+| 3 | Signature beer | Load-Bearing Tripel, 9.5%, 9 SOVS, +45 HP, +Defense, "Listing" drawback | Approved 2026-11-10, round v24 |
+| 4 | Opener | Brass gable hoist hook, inscription "If It Fits, It Lifts.", earned only | Approved 2026-11-10, round v24 |
+| 5 | Stamp | Leaning canal house struck 7° off the guide box, Canal Green ink, lowered on a string | Approved 2026-11-10, round v24 |
+| 6 | Selfie | "The Gable Shot": bros in the net with a sparkler, Thijs at the window, tour boat below | Approved 2026-11-10, round v24 |
+| 7 | Brewmaster | Thijs, who walked up as an apprentice in 1991 and hasn't fitted back down since 1996 | Approved 2026-11-10, round v24 |
+| 8 | Prices | Hoist Fee 5, House Lager 4, Tripel 9, Net-Burn Balm 3 (SOVS) | Approved 2026-11-10, round v24 |

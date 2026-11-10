@@ -226,7 +226,7 @@ becomes the inside of his mouth. The Bill Will Find You is his only fight gimmic
 |--------|--------------|-------|
 | **Tickets** | 15 arcade tickets | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
 | **Clout (XP)** | 22 | |
-| **Guaranteed drop** | **Auto-Gratuity Receipt** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 1 SOVS. "18% service charge, added for your convenience. The service was you." |
+| **Guaranteed drop** | **Auto-Gratuity Receipt** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 1 SOV. "18% service charge, added for your convenience. The service was you." |
 | **Rare drop** | **Pre-Chewed 1-Up** (new item, Approved 2026-11-09), 8% | Consumable: revives one KO'd bro at 25% HP. "Gently used. Monsieur did not chew. Monsieur never chews." |
 | **Unlocks** | Bros' initials on the cabinet's high-score table (flavor only) | Same BRO / CHA / ASS entries as the rest of the roster. |
 | **Achievement** | **Dined and Dashed** (name Approved 2026-11-09; hidden text **PROPOSED**) | Public: "Left Croc Monsieur's table alive." Hidden: "You didn't dash. Lord Pilsner signed the bill, added thirty percent for the swallowing, and asked to be seated by the window next time." |
@@ -239,7 +239,7 @@ becomes the inside of his mouth. The Bill Will Find You is his only fight gimmic
 | Hit-and-Ponder Hatchback | Shares the cabinet. Calls itself "front of house." He calls it "the car." |
 | The Sinking Fund | Shares the cabinet. Manages his tips. He has never received a statement and considers asking for one vulgar. |
 | Arcade Employee (`debaucheryville_npc_arcade_employee_01`) | Resets the cabinet after every fight. Has to wait for the log half to finish sliding back into the screen, which takes a while. |
-| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release him. 1 SOVS = 1 token; Frogger: Existential Edition takes 2. Has never seen one of the croc's bills and has never asked to. |
+| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release him. 1 SOV = 1 token; Frogger: Existential Edition takes 2. Has never seen one of the croc's bills and has never asked to. |
 
 ---
 
@@ -262,7 +262,7 @@ becomes the inside of his mouth. The Bill Will Find You is his only fight gimmic
 ## 🔧 Development Status
 - **Status**: Approved 2026-11-09 (achievement hidden text still PROPOSED)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/croc_monsieur.md`
-- **Registered In**: not yet registered. Proposed key `croc_monsieur` in `game/assets/data/enemies/debaucheryville_enemies.json`.
+- **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`croc_monsieur`), 2026-11-10
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_croc_monsieur.png`, five states)
 
 ## 📜 Revision History

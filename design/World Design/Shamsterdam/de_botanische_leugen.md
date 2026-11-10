@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 5:30 PM (market hours, optimism hours)
 - **Stat Requirements**: None (gullibility is not checked at the door)
-- **Item Requirements**: Gold for purchases (5-50 SOVS), willingness to believe
+- **Item Requirements**: SOVS for purchases (5-50 SOVS), willingness to believe
 - **Previous Location Requirements**: None (the tulips call to all tourists)
 - **Special Conditions**: Located on floating market stall, slight swaying, adds to dreamlike purchasing haze
 

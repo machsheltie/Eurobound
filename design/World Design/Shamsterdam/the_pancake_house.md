@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 AM - 10 PM (breakfast through dinner, because pancakes are a meal here)
 - **Stat Requirements**: None (hunger helps, expectations hurt)
-- **Item Requirements**: Gold for purchases (card accepted, cash preferred)
+- **Item Requirements**: SOVS for purchases (card accepted, cash preferred)
 - **Previous Location Requirements**: None (often found while wandering hungry)
 - **Special Conditions**: Reservations "recommended" during peak hours, walk-ins "tolerated"
 

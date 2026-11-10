@@ -242,7 +242,7 @@ Anton's script does not warm, harden, or shorten. High Roller status changes one
 - **Outcome**: Entry with collateral posted, or refusal. No third outcome exists.
 
 ### Quest Gate Function (If Applicable)
-Yes, and it is the hardest gate in the location. A party holding less than 500 Sovs in gold is refused entry, which means the corner-table encounter cannot fire underfunded — the fixed-stake scene is guaranteed to have exactly its stake available for every player who ever sees it. Attire or stat shortfalls are also refused, but those have two documented alternatives (Black-Tie Attire from the Haberdashery, or `item_members_card`). The collateral has no alternative at all.
+Yes, and it is the hardest gate in the location. A party holding less than 500 Sovs is refused entry, which means the corner-table encounter cannot fire underfunded — the fixed-stake scene is guaranteed to have exactly its stake available for every player who ever sees it. Attire or stat shortfalls are also refused, but those have two documented alternatives (Black-Tie Attire from the Haberdashery, or `item_members_card`). The collateral has no alternative at all.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |

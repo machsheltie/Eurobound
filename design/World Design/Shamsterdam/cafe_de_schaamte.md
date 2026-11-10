@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: Always accessible (outdoor seating, 24-hour Amsterdam energy)
 - **Stat Requirements**: None for basic entry
-- **Item Requirements**: None (gold for purchases)
+- **Item Requirements**: None (SOVS for purchases)
 - **Previous Location Requirements**: None (accessible immediately upon Shamsterdam arrival)
 - **Special Conditions**: Agent Havok appears at outdoor table after visiting 2+ Shamsterdam locations
 
@@ -109,7 +109,7 @@
 | Espresso | 5 SOVS | +15 SP, removes Drowsy status | Low (acceptable order) |
 | "American Coffee" | 5 SOVS | +10 SP, +Shame buff (locals notice) | Medium (tourist detected) |
 | Stroopwafel | 4 SOVS | +20 HP, +Comfort status | None (everyone loves stroopwafel) |
-| "Croissant" (day-old) | 8 SOVS | +10 HP, -Gold significantly | High (you paid 8 SOVS for THIS?) |
+| "Croissant" (day-old) | 8 SOVS | +10 HP, -SOVS significantly | High (you paid 8 SOVS for THIS?) |
 | Heineken (bottle) | 6 SOVS | +Tipsy status, -Bravado (locals judge) | Maximum (tourists drink Heineken) |
 | "The Giselle Special" | ??? SOVS | Item doesn't exist, barista confusion | Extreme (Havok-exclusive order) |
 
@@ -182,7 +182,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - **Potential Contact**: "The Backpacker Who's 'Basically a Local Now'"
 - **Invitation Trigger**: Order Heineken (marks you as fellow tourist), complain about prices (solidarity moment)
 - **Morning Scene**: Wake up in cramped hostel bunk they "definitely paid for," surrounded by passive-aggressive sticky notes
-- **Consequences**: Hungover status, +1 "Local" Knowledge (inaccurate), -10 gold ("borrowing" for "visa extension")
+- **Consequences**: Hungover status, +1 "Local" Knowledge (inaccurate), -10 SOVS ("borrowing" for "visa extension")
 
 ### Time-Based Elements
 - **Morning (6 AM - 11 AM)**: Locals grabbing espresso before work, maximum judgment energy, shortest service times

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 6 PM - 4 AM (peak drunk hours only)
 - **Stat Requirements**: None (hunger and desperation welcome)
-- **Item Requirements**: Gold (3-8 SOVS per item, exact change appreciated)
+- **Item Requirements**: SOVS (3-8 SOVS per item, exact change appreciated)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Eoin does not want to hear about your night
 

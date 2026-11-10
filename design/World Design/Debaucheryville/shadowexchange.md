@@ -130,7 +130,7 @@
 - **Meeting Location**: Front of main counter, mid-scream about "slippage fees"
 - **Invitation**: "You're better looking than him, but dumber" pickup line
 - **Morning Scene**: Wake on futon under buzzing CRTs and LED strips, she's gone
-- **Consequences**: Gain NFT #2: Pixelated Kebab Monkey (scratched), Hungover status, -25 gold
+- **Consequences**: Gain NFT #2: Pixelated Kebab Monkey (scratched), Hungover status, -25 SOVS
 - **Satirical Beat**: NFT metadata reads "MINTED: 03:17 AM — GAS FEE: 'Don't Worry About It.'"
 
 ### Risk/Reward Notoriety System (Original)

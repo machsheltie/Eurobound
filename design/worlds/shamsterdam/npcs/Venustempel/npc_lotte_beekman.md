@@ -290,7 +290,7 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 | Hollow chocolate piece | 8 Sovs | 7 Sovs — same chocolate, less of it | Consumable, cheaper, lighter. **Structurally regrettable in heat**: if carried past 22°C in-game for more than two hours it degrades to "Formerly A Hollow Piece," which still restores HP and is no longer presentable as a gift. |
 | **De Collectie** — boxed set of six graduated sizes | 45 Sovs | 38 Sovs — a real boxed set, ribbon included | **Best margin in the shop.** Gift item. Bradley buys this "as a gag" and refuses to let anyone else carry it. Occupies two inventory slots and is visible to other NPCs. |
 | Fountain-shaped keyring | 5 Sovs | 3 Sovs | Cosmetic. Sells constantly. Lotte reorders it more often than anything else on the floor. |
-| Fountain fridge magnet | 4 Sovs | 2 Sovs | Cosmetic. The cheapest thing in the shop and the second-fastest mover. |
+| Fountain fridge magnet | 3 SOVS | 2 SOVS | Cosmetic. The cheapest thing in the shop and the second-fastest mover. |
 
 ### The Hygiene Line
 | Item/Service | Price | Actual Value | Effect/Result |
@@ -352,7 +352,7 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 ### In Other Cities
 | City | Location | Role/Context | Callback Dialogue |
 |------|----------|--------------|-------------------|
-| **None** | **None** | **Lotte has no appearances outside Shamsterdam and never will.** She is a permanent staff member of a fixed building on Museum Mile, she has just been given twice the floor space she used to have, and she has no reason on earth to be anywhere else. The character is defined by being pleased with exactly where she is; putting her in Prague or Publandia would break the only thing she is about. | — |
+| **None** | **None** | **Lotte has no appearances outside Shamsterdam and never will.** She is a permanent staff member of a fixed building on Museum Mile, she has just been given twice the floor space she used to have, and she has no reason on earth to be anywhere else. The character is defined by being pleased with exactly where she is; putting her in Debaucheryville or Publandia would break the only thing she is about. | — |
 
 ### Evolution Through Game
 Lotte does not change. The Handreiniger stays on the counter, faced forward, at 4 Sovs, and she recommends it in identical words on the first visit and the fifteenth. What changes is the player: the recommendation is background noise on visit one, a running gag by visit four, and — once Sharing the Love has stacked to four and Shamsterdam Stomach is one dip away — the single most useful sentence anybody in Shamsterdam has said to them. She was saying it the whole time. She was never warning anyone. She just likes the bottle.

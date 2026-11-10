@@ -226,7 +226,7 @@ background art only (see flags for the cabinet's old "existential meter").
 | The Sinking Fund | Shares the cabinet. The Hatchback delivers pedestrians to the riverbank; the Fund handles them from there. |
 | Croc Monsieur | Shares the cabinet. The Hatchback calls itself "front of house." Croc Monsieur calls it "the car." |
 | Arcade Employee (`debaucheryville_npc_arcade_employee_01`) | Resets the cabinet after every fight, shoving the Hatchback back into the screen glass with a broom while it asks him if he's happy. He doesn't answer. |
-| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release it. 1 SOVS = 1 token; Frogger: Existential Edition takes 2. |
+| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release it. 1 SOV = 1 token; Frogger: Existential Edition takes 2. |
 
 ---
 
@@ -249,7 +249,7 @@ background art only (see flags for the cabinet's old "existential meter").
 ## 🔧 Development Status
 - **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/hit_and_ponder_hatchback.md`
-- **Registered In**: not yet registered. Proposed key `hit_and_ponder_hatchback` in `game/assets/data/enemies/debaucheryville_enemies.json` after author approval.
+- **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`hit_and_ponder_hatchback`), 2026-11-10
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_hit_and_ponder_hatchback.png`, with palette swap)
 
 ## 📜 Revision History

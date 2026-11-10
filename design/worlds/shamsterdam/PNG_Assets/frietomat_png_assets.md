@@ -419,7 +419,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| De Groene Gids | Munchies shimmer pipeline | Food HP +50%; "best thing I've ever eaten" (2 Sovs kroket) |
+| De Groene Gids | Munchies shimmer pipeline | Food HP +50%; "best thing I've ever eaten" (3 SOVS kroket) |
 | Casa Rosé | Standing ledge as processing space | Post-show neutral-zone dialogue triggers |
 | The Tolerance Hostel | Food acquired popup referenced in kitchen talk | Late-night discovery conversations |
 | Bottoms Down | Grease-absorption food effects | Reduces The Shakes debuff duration |

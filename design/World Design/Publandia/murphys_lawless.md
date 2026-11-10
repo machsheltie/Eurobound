@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 5 AM (closes for exactly 5 hours, no one knows why)
 - **Stat Requirements**: None (desperation welcomes all)
-- **Item Requirements**: Gold (cash preferred, "the card machine is broken")
+- **Item Requirements**: SOVS (cash preferred, "the card machine is broken")
 - **Previous Location Requirements**: None (you find it when you need it)
 - **Special Conditions**: Best stock appears after midnight
 

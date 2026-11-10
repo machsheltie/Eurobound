@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 8 PM (cake has standards)
 - **Stat Requirements**: None (but Charm affects pricing)
-- **Item Requirements**: Gold (significant amounts)
+- **Item Requirements**: SOVS (significant amounts)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Cart changes location daily — must find it
 

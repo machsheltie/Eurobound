@@ -369,7 +369,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 | QTE Approach Meter | (160, 0) | 96x24 | Don't-trip timing bar |
 | Drink Timing Ring | (160, 24) | 48x48 | No-spill mini-game dial |
 | Answer Chip Best | (160, 72) | 96x24 | "With my liver and heart" tier |
-| Answer Chip Acceptable | (0, 96) | 96x24 | "Yes" / "Gold (tip)" tier |
+| Answer Chip Acceptable | (0, 96) | 96x24 | "Yes" / "SOVS (tip)" tier |
 | Answer Chip Failure | (96, 96) | 96x24 | "It's just beer" tier (jagged border) |
 
 ### Status & Progression:

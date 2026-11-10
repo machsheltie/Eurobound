@@ -82,7 +82,7 @@ Effect: Random status applied to party (Grease Fingers, Thirsty, or Inspired)
 Design: Floating cube covered in scrolling stock ticker buzzwords
 Boss/Encounter: “CryptoBro69's BrewBot” – AI that self-destructs in a foam explosion if you input incompatible flavors
 Brew Reward:
-Blockchain Bock – +20 HP, +10 Gold, applies Tourist Trapped next battle
+Blockchain Bock – +20 HP, +10 SOVS, applies Tourist Trapped next battle
 Selfie Prop: Beer-print 3D printer spewing foam
 Satire Beat: “Brew flavor dictated by today’s trending NFT hash… it’s decentralizzzzzted.”
 

@@ -251,7 +251,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Appearance**:
 - Ancient accordion
-- Hat with exactly 2 SOVS in it (never changes)
+- Hat with exactly 247 SOVS in it (never changes)
 - Clothing from indeterminate decade
 - May or may not be a ghost
 
@@ -263,7 +263,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Dialogue**:
 - *Unprompted*: (Plays accordion, ignores you)
-- *If tipped 1 SOVS*: "Follow the sound of the tram. It knows the way."
+- *If tipped 1 SOV*: "Follow the sound of the tram. It knows the way."
 - *If tipped 5 SOVS*: "The red signs lie. The emergency signs tell truth."
 - *About himself*: "I've been here since... hmm. What year is it?"
 
@@ -362,7 +362,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Busker Tip Jar**
 - **Type**: Service / Hint System
-- **1 SOVS Tip**: Basic hint
+- **1 SOV Tip**: Basic hint
 - **5 SOVS Tip**: Reliable navigation advice
 - **0 SOVS (theft attempt)**: Willem stops playing, stares at you
 

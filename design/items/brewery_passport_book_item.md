@@ -190,18 +190,18 @@ seal/open-book design. Author to pick.
 **Legendary Hangover**: "Imperial Concerto" (inflicts "Imperial Hangover") [source: design/quests/general_quests/brewerytour.md L91]
 **Item docs**: `stamp_moderato_pub`, `stamp_standing_ovation`, `stamp_crown_and_cask`, `stamp_dancing_stein`
 
-### Shamsterdam (4 slots — reserved)
+### Shamsterdam (4 slots, any visit order)
 | Slot | Location | Stamp Design | Signature Beer |
 |---|---|---|---|
-| 1 | slots reserved — names pending author minting | — | — |
-| 2 | slots reserved — names pending author minting | — | — |
-| 3 | slots reserved — names pending author minting | — | — |
-| 4 | slots reserved — names pending author minting | — | — |
+| 1 | The Wobbly Windmill Brewery | Windmill with grain sheaf, gold ink | Windmill Grist |
+| 2 | Bottoms Down | Overfilled tulip glass, amber ink | Oude Genever |
+| 3 | The Hoisted Pint | Leaning canal house with a hook, struck 7° off the guide box, Canal Green ink | Load-Bearing Tripel |
+| 4 | The Mad Monarch's Wit-tea Party | Teacup wearing a crown, Party Orange ink that never dries | Six O'Clock Wit |
 
 **Page Theme**: pending author minting — Shamsterdam is out of scope for this decomposition round [source: docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md, Shamsterdam parking lot]
 **Legendary Hangover**: "Canal Courage" (name retained; a CONSUMABLE like the other three cities' hangovers, not a permanent passive — author ruling) [source: design/quests/general_quests/brewerytour.md L92-93]
 
-All four Shamsterdam establishments are now named (author rulings 2026-11-10, Rounds v21 and v23): The Wobbly Windmill Brewery, Bottoms Down (renamed from the placeholder "Proeflokaal 't Kansen"), The Hoisted Pint and The Mad Monarch's Wit-tea Party. The two new breweries' stamps, openers and beers are PROPOSED — NEEDS AUTHOR RULING in their location docs, so the slot table above stays reserved until those rulings land. [source: design/quests/general_quests/brewerytour.md, Overview]
+All four Shamsterdam establishments are now named (author rulings 2026-11-10, Rounds v21 and v23): The Wobbly Windmill Brewery, Bottoms Down (renamed from the placeholder "Proeflokaal 't Kansen"), The Hoisted Pint and The Mad Monarch's Wit-tea Party. The two new breweries' stamps, openers and beers were approved as written on 2026-11-10 (Round v24). Visit order is free. Slots 1-2 stamp designs come from the legacy `design/Inventory/brewery_passport_book_complete.md`; slots 3-4 from `the_hoisted_pint.md` and `the_mad_monarchs_wit_tea_party.md`. [source: design/quests/general_quests/brewerytour.md, Overview]
 
 ---
 

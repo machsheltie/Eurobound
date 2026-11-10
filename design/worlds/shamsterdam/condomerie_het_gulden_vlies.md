@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 11 AM - 10 PM (civilized hours for uncivilized purchases)
 - **Stat Requirements**: Bravado check to enter solo, no check with group (safety in numbers)
-- **Item Requirements**: Gold for purchases (3-50 Sovs), willingness to make eye contact with staff
+- **Item Requirements**: SOVS for purchases (3-50 Sovs), willingness to make eye contact with staff
 - **Previous Location Requirements**: None (the shop draws the curious)
 - **Special Conditions**: Bachelor parties receive automatic "group discount" (and group judgment)
 

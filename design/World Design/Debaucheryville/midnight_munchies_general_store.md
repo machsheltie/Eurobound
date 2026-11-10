@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 PM - 8 AM (the hours of need)
 - **Stat Requirements**: None (desperation is the only currency that matters)
-- **Item Requirements**: Gold for purchases (2-35 SOVS), acceptance of markup
+- **Item Requirements**: SOVS for purchases (2-35 SOVS), acceptance of markup
 - **Previous Location Requirements**: None (Midnight Munchies finds the lost)
 - **Special Conditions**: Prices increase by 20% after 2 AM ("Desperation Tax")
 

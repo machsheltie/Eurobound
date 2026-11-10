@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 6 PM (market hours), cart may relocate during tourist peaks
 - **Stat Requirements**: None (sugar is universal)
-- **Item Requirements**: Gold for purchases (cash preferred, card with sigh)
+- **Item Requirements**: SOVS for purchases (cash preferred, card with sigh)
 - **Previous Location Requirements**: None (cart finds the tourists)
 - **Special Conditions**: Cart moves between preset locations based on time of day
 

@@ -42,7 +42,7 @@
 
 **Location:** `aarons_corner_table`, a named zone of the Backroom main floor. Felt-covered corner table, its own low pendant lamp, no house chip rail, no dealer plaque, no bet-placement markings, set off the traffic flow. The player has to choose to walk over. The bros make that choice for the party.
 
-**Prerequisite state:** the 500 Sovs is on deposit as house chips. It is not the player's gold; the gold above 500 Sovs never enters this scene in any form.
+**Prerequisite state:** the 500 Sovs is on deposit as house chips. It is not the player's SOVS; the SOVS above 500 Sovs never enters this scene in any form.
 
 ---
 
@@ -196,7 +196,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 *The dealer sweeps. The room does not react, because the room has seen this, and because the room stopped reacting some time last year. Madame Karten glances over from the floor, the way a floor manager glances at a table, and goes back to what she was doing.*
 
-*[COLLATERAL FORFEIT: −500 Sovs house chips — the party's entire door deposit. Gold above 500 Sovs: untouched.]*
+*[COLLATERAL FORFEIT: −500 Sovs house chips — the party's entire door deposit. SOVS above 500 Sovs: untouched.]*
 
 **Bradley:** *flat* "That was all of it."
 
@@ -272,12 +272,12 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 
 ### Stakes & Resolution
 
-**The stake is exactly the 500 Sovs door collateral. Never more, never scaled, never a percentage of held gold.**
+**The stake is exactly the 500 Sovs door collateral. Never more, never scaled, never a percentage of held SOVS.**
 
 | Element | Rule |
 |---------|------|
 | **What is at risk** | The 500 Sovs posted at the deposit window as house chips, in full |
-| **What is not at risk** | Every coin of gold above 500 Sovs. It is not in the room. It cannot be reached by this scene, at any beat, by any pick |
+| **What is not at risk** | Every SOV above 500 Sovs. It is not in the room. It cannot be reached by this scene, at any beat, by any pick |
 | **Can the party post more?** | No. The collateral is a fixed door amount and the encounter reads that amount, not the party's wallet |
 | **Underfunded parties** | Bounced by Anton upstream (see pre-beat). The encounter cannot fire |
 | **Partial loss** | Does not exist. There is no path on which any portion of the collateral survives |
@@ -291,7 +291,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 
 - **Item:** `item_candy_smokes` — Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes. Permanent party item; bite one for a small, short comedy Bravado buff plus a chalk ring around the mouth. Carton never empties. *(`Design/Inventory/items/candy_smokes_item.md`)*
 - **Item:** `item_tractor_nft` — "She Thinks My Tractor's Sexy" (Mint #42). Quest item; Sinfonia's fourth Frat Bro NFT target; worth 0 Sovs to every bank, exchange, and legitimate vendor in the game. *(`Design/Inventory/items/tractor_nft_item.md`)*
-- **Gold:** −500 Sovs (the collateral, in full)
+- **SOVS:** −500 Sovs (the collateral, in full)
 - **Stat Change:** **+1 Bravado** — party-wide, applied at the reframe. They came out of that room with two assets they did not walk in with, and one of them is on the chain.
 - **Status:** None. No Embarrassed, no Cleaned Out, no debuff of any kind. Nothing in the game's status system registers that this happened to them, and nothing may be added that does.
 - **Unlocks:** Aaron's permanent ambient state; the Sinfonia NFT hunt's fourth entry; Post-Credits Scene "The Home Game"; achievement **"Digital Land"**.

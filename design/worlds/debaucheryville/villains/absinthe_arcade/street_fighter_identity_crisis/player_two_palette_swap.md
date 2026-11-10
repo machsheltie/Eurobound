@@ -204,7 +204,7 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 - **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
 - **Canon level**: Approved
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/player_two_palette_swap.md`
-- **Registered In**: Not yet. Target: `game/assets/data/enemies/debaucheryville_enemies.json` (as `player_two_palette_swap`) after author approval
+- **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`player_two_palette_swap`), 2026-11-10
 - **Sprite Sheet**: not yet specced
 
 ## 📜 Revision History

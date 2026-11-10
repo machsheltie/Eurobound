@@ -130,7 +130,7 @@ Enemies (examples)
 
 City Boss — Count Velvet Absinthe
 • Theme: Smooth nightlife kingpin who sells illusions.
-• Attacks: Green Fairy Confusion (status), Tourist Trap (gold siphon), Currency Scam (randomize prices), Strobe Mirage (evasiveness up).
+• Attacks: Green Fairy Confusion (status), Tourist Trap (SOVS siphon), Currency Scam (randomize prices), Strobe Mirage (evasiveness up).
 • Reward: Trinket “Velvet Rope Clip” (+Charm, discounts in certain shops), access to Shadow Exchange premium stock.
 
 Shops/Items

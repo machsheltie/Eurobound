@@ -161,7 +161,7 @@ func _win() -> void:
 	if _rng.randf() < float(_enemy.get("drop_chance", 0.0)):
 		drop = String(_enemy.get("item_drop", ""))
 	GameState.grant_rewards(xp, gold, drop)
-	var summary := "You won! +%d XP, +%d gold." % [xp, gold]
+	var summary := "You won! +%d XP, +%d %s." % [xp, gold, "SOV" if gold == 1 else "SOVS"]
 	if drop != "":
 		summary += " Found: %s!" % String(DataRepo.get_item(drop).get("display_name", drop))
 	_log(summary)

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 10 PM (extended tourist confusion hours)
 - **Stat Requirements**: None (understanding of international drug law not required, also not provided)
-- **Item Requirements**: Gold for purchases (10-75 SOVS), destination country's customs regulations (not consulted)
+- **Item Requirements**: SOVS for purchases (10-75 SOVS), destination country's customs regulations (not consulted)
 - **Previous Location Requirements**: None (the confusion is accessible to all)
 - **Special Conditions**: Shop is NOT a coffeeshop, this distinction matters, tourists don't understand why
 

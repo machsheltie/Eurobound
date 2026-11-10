@@ -99,7 +99,7 @@
     {
       "service_id": "willem_tip_1",
       "provider_npc": "willem_busker_01",
-      "display_name": "Tip Willem (1 SOVS)",
+      "display_name": "Tip Willem (1 SOV)",
       "description": "A small tip for the eternal busker. He'll offer a navigation hint.",
       "cost": 1,
       "currency": "sovs",

@@ -174,7 +174,7 @@
 ### The Munchies Pipeline
 - **Trigger**: Visiting Frietomat after De Groene Gids within 2 hours
 - **Effect**: All food HP restoration +50%
-- **Dialogue**: "This is the best thing I've ever eaten" (it's a 2 SOVS kroket)
+- **Dialogue**: "This is the best thing I've ever eaten" (it's a 3 SOVS kroket)
 - **Explanation**: The Space Cake Effect makes everything taste better
 - **Mechanical Reality**: Bros gain more HP from Frietomat when properly... prepared
 

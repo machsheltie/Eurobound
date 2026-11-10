@@ -197,7 +197,7 @@ She participates in the cabinet-wide **Second Thoughts** re-roll (see `player_tw
 - **Status**: Approved 2026-11-09 (ticket amount and defeat counter awaiting author ruling)
 - **Canon level**: Approved (the optional save-file defeat counter still NEEDS AUTHOR RULING)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/super_turbo_hyper_jarmila.md`
-- **Registered In**: Not yet. Target: `game/assets/data/enemies/debaucheryville_enemies.json` (as `super_turbo_hyper_jarmila`) after author approval
+- **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`super_turbo_hyper_jarmila`), 2026-11-10
 - **Sprite Sheet**: not yet specced
 
 ## 📜 Revision History

@@ -164,7 +164,7 @@ Underneath that, quieter: he is the one cousin who never left. The others come a
 | Tier | Answer | Response |
 |------|--------|----------|
 | Best | "My sobriety" | "YOUR SOBRIETY. The oldest coin in the realm. It is ACCEPTED." |
-| Acceptable | "Gold" (a tip) | *(pockets it with total dignity)* "Tribute. Recorded." |
+| Acceptable | "SOVS" (a tip) | *(pockets it with total dignity)* "Tribute. Recorded." |
 | Failure | "Nothing" | "Nothing." *(the tap handle lowers)* "Then you offer the one thing I cannot accept." |
 
 **Bradley's variant, canon, ships verbatim:**

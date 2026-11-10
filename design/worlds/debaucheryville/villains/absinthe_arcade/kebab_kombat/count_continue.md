@@ -200,7 +200,7 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 - **Status**: Approved 2026-11-09
 - **Canon Level**: Approved
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/count_continue.md`
-- **Registered In**: Not yet. Target `game/assets/data/enemies/debaucheryville_enemies.json` after author approval
+- **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`count_continue`), 2026-11-10
 - **Sprite Sheet**: Not yet specced (proposed `kk_count_continue.png`)
 
 ## 📜 Revision History

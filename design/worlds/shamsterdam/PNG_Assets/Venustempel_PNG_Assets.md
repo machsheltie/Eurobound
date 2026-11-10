@@ -281,7 +281,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Wrapping Counter | (1952, 704) | 96x160 | Proper counter, tape dispenser, ribbon spools, plain discreet stock underneath |
 | Chocolate Line Display | (1952, 864) | 96x160 | Solid and hollow, white/milk/dark, "De Collectie" boxed sets |
 | "Handreiniger" Bottle | (1888, 864) | 64x96 | 4 Sovs. Moulded in the shape of the fountain. Faced forward on the counter. Sells poorly. |
-| Fountain Keyring & Magnet | (1824, 864) | 64x96 | 5 Sovs and 4 Sovs. These sell fine. |
+| Fountain Keyring & Magnet | (1824, 864) | 64x96 | 5 SOVS and 3 SOVS. These sell fine. |
 | Bench | (1728, 864) | 96x96 | Carried over from Roodelicht Row. Same bench. Visibly well-used. |
 | Ticket Desk + Cross-Stitch | (1632, 864) | 96x96 | 9 Sovs, cash or card, coins for the machines, Anke's project |
 | 1985 Opening Photograph (Framed) | (1536, 864) | 96x96 | On the lobby wall |
@@ -584,7 +584,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | **The Attribution Table** | (704, 0) | 320x96 | Eight ranked blame entries: döner, tap water, "European milk", pancakes, Bradley's protein powder, jet lag, "something in the air here", each other. The fountain is not on the list and cannot be added to it. |
 | Shamsterdam Stomach Banner | (0, 96) | 256x64 | Tier 5. Max HP −40% for the in-game day, Bravado gains halved. |
 | Facilities Urgency Marker | (256, 96) | 128x64 | Tier 4. Flashing on Frietomat and Voetgangerstunnel only. |
-| Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 Sov, −1) / Handreiniger (4 Sovs, −2) / hostel rest (−2) / Frietomat croquette (2 Sovs, −1) |
+| Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 Sov, −1) / Handreiniger (4 Sovs, −2) / hostel rest (−2) / Frietomat croquette (3 SOVS, −1) |
 | Stack Decay Indicator | (640, 96) | 128x64 | −1 per in-game day, shown as a plain countdown |
 | Sharing the Love Status Icon | (768, 96) | 64x64 | Party-wide HUD pip, shape-coded not colour-coded |
 | Shared-Stick Transfer Prompt | (832, 96) | 192x64 | "+2 to recipient." Bradley's entire arc, delivered as a neutral UI string. |

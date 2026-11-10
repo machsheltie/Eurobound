@@ -223,7 +223,7 @@
 
 ### Prerequisites
 - Arrive at Astronomical Clock-Up Square
-- Have 90 SOVS total gold
+- Have 90 SOVS total
 
 ### Unlocks
 - Access to Velvet Curtain Club (was always free)

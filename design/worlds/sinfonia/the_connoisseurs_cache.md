@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 8 PM (refined hours)
 - **Stat Requirements**: None
-- **Item Requirements**: Gold
+- **Item Requirements**: SOVS
 - **Previous Location Requirements**: None
 - **Special Conditions**: The shopkeeper will explain the provenance of EVERYTHING
 

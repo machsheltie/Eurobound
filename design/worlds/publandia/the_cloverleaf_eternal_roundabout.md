@@ -774,7 +774,7 @@
 
 ### Prerequisites
 - Arrive in Publandia (main story)
-- Have enough gold for car rental (200 Sovs+)
+- Have enough SOVS for car rental (200 Sovs+)
 - Complete Paddy's Premium Motors rental sequence
 
 ### Unlocks

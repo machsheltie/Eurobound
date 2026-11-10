@@ -17,7 +17,7 @@
 ### Entry Conditions
 - **Time Restrictions**: Accessible 24/7, but clock show only triggers on the hour during day cycle
 - **Stat Requirements**: None (tourist trap, welcomes all)
-- **Item Requirements**: None to enter; 90 SOVS+ gold recommended for full "experience"
+- **Item Requirements**: None to enter; 90 SOVS+ recommended for full "experience"
 - **Previous Location Requirements**: None (early game hub)
 - **Special Conditions**: Crowd density increases 15 minutes before each hourly show
 
@@ -231,7 +231,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
 | The Tramp Stamp | Lord Pilsner's emotional breakdown post-show | Lord Pilsner decision → Euro Ink 4 Less |
 
 ### Economic Integration
-- **Currency**: Standard gold (SOVS)
+- **Currency**: Standard SOVS
 - **Price Points**: Deliberately inflated 300-500% above actual value
 - **Scam Transparency**: Players can see "(Scam)" in item descriptions; bros cannot
 - **Post-Visit Vendor Memory**: Returning triggers personalized greetings and new scam attempts

@@ -11,7 +11,7 @@ First class lounge privileges: bottomless well whiskey + “vague trauma dump”
 
 Notes to self: “Don’t text her too much. Be emotionally ambiguous.”
 
-Day 3–6: Publandia, EU (Formerly Known as Sober)
+Day 3–6: Publandia, Euromemeia (Formerly Known as Sober)
 
 Daily meals: Guinness, Guinness, “oh look, Guinness,” and sausage roll soaked in regret
 
@@ -25,7 +25,7 @@ Send her a blurry photo of a pint glass and call it art
 
 Bloat Level: 🟡 Festive Puff
 
-Day 7–9: Breadgasmia (Paris + Prague Fusion)
+Day 7–9: Breadgasmia (Debaucheryville + a Croissant)
 
 Brag about croissants as a personality trait
 

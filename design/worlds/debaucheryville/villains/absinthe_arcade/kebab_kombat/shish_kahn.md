@@ -213,7 +213,7 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 - **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
 - **Canon Level**: Approved
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/shish_kahn.md`
-- **Registered In**: Not yet. Target `game/assets/data/enemies/debaucheryville_enemies.json` after author approval
+- **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`shish_kahn`), 2026-11-10
 - **Sprite Sheet**: Not yet specced (proposed `kk_shish_kahn.png`)
 
 ## 📜 Revision History

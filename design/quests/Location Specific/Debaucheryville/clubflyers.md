@@ -4,7 +4,7 @@ Premise: Paid gig to poster Velvet Curtain + Absinthe Arcade with rival DJ flyer
 
 Branching:
 
-Honest Promo → Bravado +1, gold reward, minor VIP access.
+Honest Promo → Bravado +1, SOVS reward, minor VIP access.
 
 Slander Campaign → Deface flyers with meme edits; NPCs laugh, rival furious.
 

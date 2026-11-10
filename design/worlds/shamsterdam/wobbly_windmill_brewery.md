@@ -29,16 +29,16 @@
 - **Special Feature**: Blade arms actually rotate when you spin the opener
 - **Check Point**: Hendrik checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
-- **Without Windmill Opener**: Can explore and tour, but cannot receive stamp or purchase Windmill Wit
+- **Without Windmill Opener**: Can explore and tour, but cannot receive stamp or purchase Windmill Grist
 
 **Hendrik's Opener Check**:
 - *With Blarney Trap Opener, No Windmill Opener*: "The shamrock opener. Seamus's network. You have access to the tour. But the windmill opener — you must EARN it. Defeat my golem. Or 22 Sovs. The grain demands respect."
-- *With Both Openers*: "You carry the windmill. This means you understand — or you paid. Either way, you've committed to the spin. The Windmill Wit awaits. May the grain guide your steps."
+- *With Both Openers*: "You carry the windmill. This means you understand — or you paid. Either way, you've committed to the spin. The Windmill Grist awaits. May the grain guide your steps."
 - *Without Blarney Trap Opener*: "The Continental Trail has rules. Even windmills bow to tradition. No Publandia opener, no brewery tour access. Return when properly credentialed."
 
 ### Exit Conditions
 - **Normal Exit**: Back through gift shop, return train to Shamsterdam central
-- **Completion Requirements**: Complete tour, defeat Yeast Golem, acquire Windmill Wit
+- **Completion Requirements**: Complete tour, defeat Yeast Golem, acquire Windmill Grist
 - **Failure States**: Yeast Golem defeat = 30-minute brewery lockout, "fermentation recovery"
 - **Progressive Unlocks**: Boss defeat unlocks premium tasting room access, brewmaster selfie opportunity
 
@@ -126,7 +126,7 @@
 - **City-Specific Comedy Operations**: The windmill genuinely works, the dizziness genuinely accumulates, the liability waivers are comprehensive
 - **Buffoon Exploitation**: Bros think they're having artisanal experience, they're being spun while drinking
 - **Comedy of Errors**: Each beer makes the spinning more noticeable, each floor makes it worse
-- **Consequence System**: "Windmill Wit" consumable has navigation penalty — the spinning follows you
+- **Consequence System**: "Windmill Grist" consumable has navigation penalty — the spinning follows you
 
 ### Buffoon Delusion Scenarios
 **What bros THINK is happening**: Exclusive craft brewery experience in historic Dutch windmill
@@ -186,10 +186,10 @@
 - Attack: "Dough Hook" — Pulls party member into melee range
 - Attack: "Final Rise" — Charges for 2 turns, massive AoE
 - Vulnerability: If hit with fire OR alcohol item during charge, instant vulnerability phase
-- Defeat: Collapses into harmless bread (drops Windmill Wit recipe)
+- Defeat: Collapses into harmless bread (drops Windmill Grist recipe)
 
 **Victory Rewards**:
-- Windmill Wit x3 (consumable)
+- Windmill Grist x3 (consumable)
 - "Yeast Slayer" title
 - Access to Tasting Room (second floor)
 - Brewmaster Selfie Spot unlocked (blade level)
@@ -208,13 +208,13 @@
 | "Wind Wheat" | 6.5% | +20 HP | Slight room spin | "Note the grain character." |
 | "Blade Dubbel" | 8% | +25 HP | Tipsy begins | "Now we're getting serious." |
 | "Mill Master's Reserve" | 9.5% | +30 HP | Room DEFINITELY spinning | "A meditation on tradition." |
-| "Windmill Wit" (finale) | 11% | +40 HP, +Speed | -Navigation, +Bravado | "This is what we've been building to." |
+| "Windmill Grist" (finale) | 11% | +40 HP, +Speed | -Navigation, +Bravado | "This is what we've been building to." |
 
 **Tasting Room Mechanics**:
 - Each beer consumed adds to "Spin Meter"
 - Higher Spin Meter = more disorienting visual effects
 - Can stop at any point (Bravado penalty for quitting early)
-- Completing flight: +Bravado, Windmill Wit unlocked for purchase, "Canal Courage" quest progress
+- Completing flight: +Bravado, Windmill Grist unlocked for purchase, "Canal Courage" quest progress
 
 ### The Brewmaster's Speech (Endurance Challenge)
 - **Speaker**: Brewmaster Hendrik, deadly serious, passionate, LONG
@@ -238,8 +238,9 @@
 - **Lord Pilsner**: "Just take it, I'm getting cold, the wind is— TAKE IT."
 - **Bradley**: "I'm not looking at the camera. I'm looking at the ground."
 
-### Consumable: Windmill Wit
+### Consumable: Windmill Grist
 **Type**: Alcoholic Beverage / Brewery Tour Reward
+- **Style**: Amber ale, brewed from grain the windmill grinds upstairs
 
 | Effect | Value |
 |--------|-------|
@@ -268,7 +269,7 @@
   - "You feel the floor moving? That is HISTORY. That is the grain becoming BEER. Respect it."
   - "The tasting flight is not a race. It is a JOURNEY. Each beer builds on the last. Do not disrespect the order."
   - "The windmill turns, the grain grinds, the beer brews. This is the cycle. You are now PART of the cycle."
-  - "The final beer, the Windmill Wit... this is 15 years of my LIFE in a glass. I hope you are worthy."
+  - "The final beer, the Windmill Grist... this is 15 years of my LIFE in a glass. I hope you are worthy."
   - *after combat* "You have defeated the Golem. It is made of our grain, our yeast, our SOUL. You have earned your place."
 
 **Tour Guide Tessa**
@@ -336,17 +337,17 @@
 ## System Integration
 ### Brewery Tour Quest Line
 - **Quest**: "Shamsterdam Brewery Tour"
-- **Progress**: 1 of 2 Shamsterdam breweries
-- **Stamp**: "Windmill Wit" stamp added to Bottle Opener Keychain
-- **Completion Check**: Both Shamsterdam breweries required for "Canal Courage" passive unlock
+- **Progress**: 1 of 4 Shamsterdam breweries (The Wobbly Windmill Brewery, Bottoms Down, The Hoisted Pint and The Mad Monarch's Wit-tea Party); visit order is free
+- **Stamp**: "Windmill Grist" stamp added to Bottle Opener Keychain
+- **Completion Check**: All four Shamsterdam breweries required for "Canal Courage" passive unlock
 
 ### "Canal Courage" Passive (Partial Progress)
-- **Requirement**: Complete BOTH Shamsterdam breweries
+- **Requirement**: Complete ALL FOUR Shamsterdam breweries (The Wobbly Windmill Brewery, Bottoms Down, The Hoisted Pint and The Mad Monarch's Wit-tea Party), in any order
 - **Effect**: All Bravado loss reduced by 25% while intoxicated
 - **Narrative**: "You've earned your place in Dutch drinking culture"
 
 ### Cross-Location Dependencies
-- **Bottoms Down**: Other Shamsterdam brewery, connected by tour achievement
+- **Bottoms Down, The Hoisted Pint, The Mad Monarch's Wit-tea Party**: The other three Shamsterdam tour breweries, connected by tour achievement
 - **The Tolerance Hostel**: Can discuss "the windmill" with other guests
 - **De Groene Gids**: Staff may comment on "trying the local breweries"
 - **Train Station**: Return transport, other tourists sharing experiences
@@ -355,7 +356,7 @@
 - **Potential Host**: The Beer Blogger (German)
 - **Invitation Trigger**: Engage seriously with tasting notes, show genuine interest
 - **Morning Scene**: Wake in extremely organized German apartment, breakfast is bread and beer
-- **Consequence**: +2 Windmill Wit (he had extras), +Beer Knowledge status, - Spontaneity
+- **Consequence**: +2 Windmill Grist (he had extras), +Beer Knowledge status, - Spontaneity
 
 ## Audio Design
 ### Environmental Audio (Original Atmosphere)
@@ -412,7 +413,7 @@
 - **Streaming Content**: Full dungeon run, boss fight strategies, selfie timing attempts
 
 ### Community Engagement
-- **Fan Art Potential**: Yeast Golem designs, Windmill Wit label, Hendrik portrait
+- **Fan Art Potential**: Yeast Golem designs, Windmill Grist label, Hendrik portrait
 - **Meme-ability**: "Respect the grain" format, spinning room effect, fought bread references
 - **Cultural Discussion**: Dutch windmill tourism, craft beer culture, authentic experience commodification
 
@@ -423,7 +424,7 @@
 - [x] **Satirical targets appropriate** (Brewery pretension, authentic experience tourism)
 - [x] **Gameplay value established** (Boss battle, tasting system, selfie mini-game)
 - [x] **No crypto elements** (Pure traditional brewing, no tech gimmicks)
-- [x] **Original content preserved** (Yeast Golem, Windmill Wit, Hendrik characterization)
+- [x] **Original content preserved** (Yeast Golem, Windmill Grist, Hendrik characterization)
 
 ---
 
@@ -474,7 +475,7 @@
 - tour_progress_stamp.png - 64x64 - Stamp design
 - bottle_opener_wobbly_windmill_brewery.png - 48x48 - Windmill with rotating blades
 - bottle_opener_wobbly_windmill_spin.png - 48x48x4 - Blade rotation animation
-- windmill_wit_item.png - 48x64 - Consumable icon
+- windmill_grist_item.png - 48x64 - Consumable icon
 - yeast_slayer_title.png - 128x32 - Boss defeat badge
 - room_spin_overlay.png - 1920x1080 - Tasting room effect
 - navigation_debuff_icon.png - 32x32 - Post-drinking penalty

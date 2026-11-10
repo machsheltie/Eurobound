@@ -235,7 +235,7 @@ itself pays tickets (see Rewards).
 | Hit-and-Ponder Hatchback | Shares the cabinet. Delivers the Fund its clients, pre-softened. |
 | Croc Monsieur | Shares the cabinet. The Fund manages his tips. He has never seen a statement. |
 | Arcade Employee (`debaucheryville_npc_arcade_employee_01`) | Fishes the soggy SOVS out of the cabinet's drip tray after every fight. Keeps the management fee. |
-| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release it. 1 SOVS = 1 token; Frogger: Existential Edition takes 2. |
+| Token Attendant (`debaucheryville_npc_arcade_token_attendant_01`) | Sells the tokens that release it. 1 SOV = 1 token; Frogger: Existential Edition takes 2. |
 
 ---
 
@@ -258,7 +258,7 @@ itself pays tickets (see Rewards).
 ## 🔧 Development Status
 - **Status**: Approved 2026-11-09 (soggy-pile refund still PROPOSED)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md`
-- **Registered In**: not yet registered. Proposed key `sinking_fund` in `game/assets/data/enemies/debaucheryville_enemies.json` after author approval.
+- **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`sinking_fund`), 2026-11-10
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_sinking_fund.png`, four states)
 
 ## 📜 Revision History

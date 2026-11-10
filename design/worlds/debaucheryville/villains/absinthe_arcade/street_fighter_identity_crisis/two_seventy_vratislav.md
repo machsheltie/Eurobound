@@ -201,7 +201,7 @@ He participates in the cabinet-wide **Second Thoughts** re-roll (see `player_two
 - **Status**: Approved 2026-11-09
 - **Canon level**: Approved
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/two_seventy_vratislav.md`
-- **Registered In**: Not yet. Target: `game/assets/data/enemies/debaucheryville_enemies.json` (as `two_seventy_vratislav`)
+- **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`two_seventy_vratislav`), 2026-11-10
 - **Sprite Sheet**: not yet specced
 
 ## 📜 Revision History

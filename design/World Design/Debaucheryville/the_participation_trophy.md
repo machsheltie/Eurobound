@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: Whenever the circus is open (varies, check Cirque du Shady hours)
 - **Stat Requirements**: None (losers especially welcome)
-- **Item Requirements**: Circus Tickets OR Gold (for direct "prize" purchase)
+- **Item Requirements**: Circus Tickets OR SOVS (for direct "prize" purchase)
 - **Previous Location Requirements**: None, but rigged games are nearby
 - **Special Conditions**: The booth attendant has seen your "performance" at the games
 
@@ -144,7 +144,7 @@ She's not cruel. She's just... there. Witnessing. Distributing. Waiting for her 
 - Play rigged games around Cirque du Shady
 - Average yield: 5-15 tickets per 3 SOVS game
 - Maximum possible (perfect play): Still not enough for good prizes
-- Tickets can also be purchased directly (1 SOVS = 20 tickets, still bad math)
+- Tickets can also be purchased directly (1 SOV = 20 tickets, still bad math)
 
 **Direct Purchase Option**:
 - Some prizes available for straight gold (no tickets needed)
@@ -154,7 +154,7 @@ She's not cruel. She's just... there. Witnessing. Distributing. Waiting for her 
 ### Prize Catalog
 
 **Participation Tier (10-50 Tickets)**
-| Prize | Tickets | Gold Price | Stats/Effects | Description |
+| Prize | Tickets | SOVS Price | Stats/Effects | Description |
 |-------|---------|------------|---------------|-------------|
 | Half-Smoked Cigar | 10 | 2 SOVS | Useless (literally no effect) | "Previous owner had somewhere to be. Their loss, your... also loss." |
 | Plastic Kazoo | 15 | 3 SOVS | Annoy nearby NPCs | "Makes noise. That's it. That's the prize." |
@@ -164,7 +164,7 @@ She's not cruel. She's just... there. Witnessing. Distributing. Waiting for her 
 | Mystery Sticker | 10 | 2 SOVS | Random +1 to one stat (once) | "Might be lucky. Probably isn't. Apply and find out." |
 
 **Consolation Tier (100-250 Tickets)**
-| Prize | Tickets | Gold Price | Stats/Effects | Description |
+| Prize | Tickets | SOVS Price | Stats/Effects | Description |
 |-------|---------|------------|---------------|-------------|
 | Used Glitter Hat | 100 | 15 SOVS | +5 Style, -10 Dignity | "Previous owner sweated in this. Glitter hides the stains. Mostly." |
 | Mystery Meat Corndog | 150 | 8 SOVS | +25 HP, 30% Nausea chance | "The mystery isn't what meat. The mystery is IF meat." |
@@ -174,7 +174,7 @@ She's not cruel. She's just... there. Witnessing. Distributing. Waiting for her 
 | Circus Souvenir Mug | 150 | 15 SOVS | +10% beverage effects | "Drink from where the clowns drink. Adds flavor. Don't think about it." |
 
 **"Good" Tier (500-1000 Tickets)**
-| Prize | Tickets | Gold Price | Stats/Effects | Description |
+| Prize | Tickets | SOVS Price | Stats/Effects | Description |
 |-------|---------|------------|---------------|-------------|
 | The Big Stuffed Bear | 750 | 75 SOVS | +15 Comfort, +10 Dignity | "Actually decent. How did you get this many tickets? Concerning." |
 | Cirque du Shady T-Shirt | 500 | 50 SOVS | +10 Style, "Circus Survivor" status | "Proves you were here. Is that a brag? Unclear." |
@@ -207,7 +207,7 @@ If player tries to buy prizes directly:
 - Yolanda's rare commentary on your dedication
 
 **Premium Garbage (Frequent Loser Only)**:
-| Prize | Tickets | Gold Price | Stats/Effects | Description |
+| Prize | Tickets | SOVS Price | Stats/Effects | Description |
 |-------|---------|------------|---------------|-------------|
 | Yolanda's Personal Recommendation | 200 | 25 SOVS | Random but actually decent item | "I wouldn't recommend this to just anyone. I'm recommending it to YOU. Make of that what you will." |
 | The "Good" Mystery Meat | 300 | 20 SOVS | +40 HP, only 10% Nausea | "From a better batch. Don't ask what batch. Or what 'better' means." |

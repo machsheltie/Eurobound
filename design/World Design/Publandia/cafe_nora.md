@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 AM - 2 AM (extended hours for "digital nomads")
 - **Stat Requirements**: None
-- **Item Requirements**: Gold for computer time (3 SOVS/30 min) or just coffee
+- **Item Requirements**: SOVS for computer time (3 SOVS/30 min) or just coffee
 - **Previous Location Requirements**: None
 - **Special Conditions**: Free Wi-Fi with coffee purchase (password changes hourly)
 
@@ -71,7 +71,7 @@
 - Where "work" happens (definition varies)
 
 ### The Nora Barnacle Connection
-The café is named after Nora Barnacle, James Joyce's wife and muse. She was a Galway woman who famously eloped with Joyce, inspired much of his work, and was known for her earthy wit and directness. The café owner (also named Nora) claims distant relation. This is unverified.
+The café is named after Nora Barnacle, James Joyce's wife and muse. She was a west-coast Publandian woman who famously eloped with Joyce, inspired much of his work, and was known for her earthy wit and directness. The café owner (also named Nora) claims distant relation. This is unverified.
 
 **Literary Decorations**:
 | Item | Authenticity | Tourist Reaction |

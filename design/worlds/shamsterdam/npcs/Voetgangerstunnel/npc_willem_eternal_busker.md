@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Playing one Dutch folk tune on an ancient accordion, in the same spot in the Long Corridor, at all hours, on every visit. His hat contains exactly 2 Sovs and has contained exactly 2 Sovs since the player first saw it — coins go in, the total does not change. He gives navigation hints that are always correct, because he has had an unquantifiable amount of time to learn which corridor goes where. He is the only reliable information source in a tunnel built to be unreliable.
+Playing one Dutch folk tune on an ancient accordion, in the same spot in the Long Corridor, at all hours, on every visit. His hat contains exactly 247 SOVS and has contained exactly 247 SOVS since the player first saw it — coins go in, the total does not change. He gives navigation hints that are always correct, because he has had an unquantifiable amount of time to learn which corridor goes where. He is the only reliable information source in a tunnel built to be unreliable.
 
 ### What Bros Believe
 A charming local street musician adding authentic atmosphere to their underground adventure. Chadwick considers him "free B-roll." Lord Pilsner has decided tipping him is "supporting the arts." Bradley is the only one who has noticed that the coin total in the hat never goes up, and has decided not to mention it.
@@ -46,7 +46,7 @@ Is Willem a ghost? The tunnel opened in 1973. Willem says he's been here since i
 - **Footwear**: Scuffed leather shoes with no visible wear pattern on the soles
 
 ### Distinguishing Features
-- The hat on the ground with exactly 2 Sovs in it. Always 2 Sovs. Examine text confirms the count every single time.
+- The hat on the ground with exactly 247 SOVS in it. Always 247 SOVS. Examine text confirms the count every single time.
 - Never stops playing except to speak, and resumes mid-phrase
 - Eyes that focus on the player a half-second after his head turns
 - Slight transparency pulse during fluorescent flicker (subtle enough to be a rendering artifact — that's the joke)
@@ -187,7 +187,7 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 | Willem's Accordion | Quest reward | Cosmetic | Awarded on quest completion; cannot be played |
 
 ### Hidden Details / Easter Eggs
-- **The 2 Sovs**: Examine the hat at any point in the game. It reads 2 Sovs. Tip him 5 Sovs and examine again: 2 Sovs. This is never acknowledged in dialogue by anyone.
+- **The 247 SOVS**: Examine the hat at any point in the game. It reads 247 SOVS. Tip him 5 Sovs and examine again: 247 SOVS. This is never acknowledged in dialogue by anyone.
 - **Graffiti cross-reference**: The flashlight-revealed graffiti "Willem knows" (Row 6 of the tunnel tileset) is the only in-world hint that his advice is reliable. Buying Marloes's 6 Sovs flashlight is therefore the cheapest path to trusting him.
 - **The tune**: Same Dutch folk melody, every visit, no variation. Audio team: the loop must be seamless enough that players in the forums argue about whether it's a loop.
 - **Accordion cosmetic**: Equipping "Willem's Accordion" causes NPCs in other Shamsterdam locations to occasionally glance at it. No dialogue. Just the glance.
@@ -285,7 +285,7 @@ Willem gates nothing and blocks nothing. He is the anti-gate: the tunnel's diffi
 ## 📸 Social Media / Viral Potential
 
 ### Screenshot Moments
-1. The hat, examined, reading 2 Sovs — posted side by side with a screenshot from forty hours later reading 2 Sovs
+1. The hat, examined, reading 247 SOVS — posted side by side with a screenshot from forty hours later reading 247 SOVS
 2. The one-second disappearance, caught mid-frame
 3. Willem at constant scale down the forced-perspective corridor while the tiles shrink to a vanishing point
 4. The flashlight revealing "Willem knows" scratched into the tile three metres from him
@@ -295,7 +295,7 @@ Willem gates nothing and blocks nothing. He is the anti-gate: the tunnel's diffi
 - "I've been here since... hmm. What year is it?"
 - "The red signs lie. The emergency signs tell truth."
 - "The hat's there."
-- The 2 Sovs as a running community count
+- The 247 SOVS as a running community count
 - "Is Willem a ghost?" as a permanent unresolvable forum thread — the intended long-tail engagement
 
 ---
@@ -344,7 +344,7 @@ Dutch, older generation, unhurried. Not the clipped urban directness of Marloes 
 - The 5 Sovs-tip-across-three-visits counter must key on distinct tunnel entries, not a session timer. A player who tips 15 Sovs in one visit gets one hint three times and no quest.
 - Ghost Flicker must never fire during dialogue. It fires only during idle, only on a fluorescent flicker burst, and only when the player is not looking directly at him (camera-facing check). Denial is the mechanic.
 - Accordion audio is the Zone 3 navigation landmark. It must be mixed to remain audible over the fluorescent hum at all LOD levels, including Low. If the audio is culled, the location's most reliable navigation cue is culled with it.
-- The hat's 2 Sovs is authored as a hard-coded display string, not a running total. Do not wire it to the tip system.
+- The hat's 247 SOVS is authored as a hard-coded display string, not a running total. Do not wire it to the tip system.
 - Willem's hints must remain 100% accurate for the life of the project. He is the control variable against which the tunnel's chaos is measured.
 
 ---

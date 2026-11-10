@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 2 AM (extended tourist hours, "because culture never sleeps")
 - **Stat Requirements**: None (15 Sovs "suggested donation" that is very much mandatory)
-- **Item Requirements**: None for entry (gold for gift shop purchases, Fabergé quest for heist access)
+- **Item Requirements**: None for entry (SOVS for gift shop purchases, Fabergé quest for heist access)
 - **Previous Location Requirements**: None (accessible immediately, aggressively advertised)
 - **Special Conditions**: Night access (after 10 PM) for Fabergé Egg Hunt requires quest activation at Café de Schaamte
 

@@ -6,8 +6,8 @@
 - **NPC ID**: `shamsterdam_npc_brewmaster_hendrik_01`
 - **Display Name**: Brewmaster Hendrik
 - **Internal Name**: Hendrik — third-generation windmill operator, The Wobbly Windmill Brewery, converted to brewing 2008
-- **Role**: Quest Gate / Vendor (bottle opener + Windmill Wit) / Tour Guide / Lecture Endurance Challenge / Stamp Giver
-- **Associated Quest**: "Shamsterdam Brewery Tour" (1 of 2 — Windmill Wit stamp); gates "Canal Courage" passive progression
+- **Role**: Quest Gate / Vendor (bottle opener + Windmill Grist) / Tour Guide / Lecture Endurance Challenge / Stamp Giver
+- **Associated Quest**: "Shamsterdam Brewery Tour" (1 of 4, any order — Windmill Grist stamp); gates "Canal Courage" passive progression
 - **Primary Location**: The Wobbly Windmill Brewery — all four floors, Shamsterdam Countryside (short train ride from central)
 - **Secondary Appearances**: Referenced at De Zilte Waarheid (the seagull is named after him); referenced at Bottoms Down and The Tolerance Hostel as the other half of the brewery tour
 
@@ -25,7 +25,7 @@ That they are having an exclusive artisanal craft experience in a historic Dutch
 Hendrik is not selling disorientation. He is selling grain, heritage, and beer, and the disorientation is a physical property of a working windmill that he considers self-evident and has stopped explaining. The gift shop sells motion sickness pills at 3 Sovs and Tessa does not find that funny any more. Hendrik has never connected the two facts. The satire is on paying premium prices for discomfort marketed as authenticity — and the authenticity is entirely real, which is what makes it work.
 
 ### The Thing He Is Quietly Proud Of
-There is a seagull at De Zilte Waarheid, on the other side of the city, named Hendrik. It was named after him because he once threw a herring at it and the bird caught it clean out of the air. Maarten at the herring stand has never corrected anyone. Hendrik is aware. Hendrik considers it an honour. He will not raise it, but if a player mentions the bird, it is the single warmest reaction available from him in the entire location — warmer than the post-boss respect, warmer than the Windmill Wit.
+There is a seagull at De Zilte Waarheid, on the other side of the city, named Hendrik. It was named after him because he once threw a herring at it and the bird caught it clean out of the air. Maarten at the herring stand has never corrected anyone. Hendrik is aware. Hendrik considers it an honour. He will not raise it, but if a player mentions the bird, it is the single warmest reaction available from him in the entire location — warmer than the post-boss respect, warmer than the Windmill Grist.
 
 ---
 
@@ -92,7 +92,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 
 ### The Opener Check (Quest Gate)
 
-*Hendrik checks two openers. The Blarney Trap opener from Publandia gates tour access entirely. The windmill opener gates the stamp and the Windmill Wit purchase.*
+*Hendrik checks two openers. The Blarney Trap opener from Publandia gates tour access entirely. The windmill opener gates the stamp and the Windmill Grist purchase.*
 
 **With Blarney Trap opener, no windmill opener**:
 > "The shamrock opener. Seamus's network. You have access to the tour."
@@ -102,7 +102,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 **With both openers**:
 > "You carry the windmill. This means you understand — or you paid."
 > *(A nod, small.)*
-> "Either way, you've committed to the spin. The Windmill Wit awaits. May the grain guide your steps."
+> "Either way, you've committed to the spin. The Windmill Grist awaits. May the grain guide your steps."
 
 **Without the Blarney Trap opener**:
 > "The Continental Trail has rules. Even windmills bow to tradition."
@@ -138,14 +138,14 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 
 > "If you do not finish the flight, the grain dies in vain. This is not pressure. This is FACT."
 
-> "The final beer, the Windmill Wit... this is 15 years of my LIFE in a glass. I hope you are worthy."
+> "The final beer, the Windmill Grist... this is 15 years of my LIFE in a glass. I hope you are worthy."
 
 **Per-beer tasting notes** (delivered as each glass is poured):
 - Polder Pilsner (5%): "Starter. Respect the foundation."
 - Wind Wheat (6.5%): "Note the grain character."
 - Blade Dubbel (8%): "Now we're getting serious."
 - Mill Master's Reserve (9.5%): "A meditation on tradition."
-- Windmill Wit (11%): "This is what we've been building to."
+- Windmill Grist (11%): "This is what we've been building to."
 
 **If the player attempts to leave the lecture early (Bravado check)**:
 > "You are leaving." *(He does not stop them. He simply notes it, out loud, in front of the room.)* "The grain will note it also."
@@ -177,7 +177,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 > "The Wobbly Windmill Brewery opener. Brushed copper, grain-gold. The blades turn when you spin it — this is not a gimmick, this is the same ratio as the real ones."
 > "Twenty-two Sovs. Or defeat the golem. The golem is free."
 
-**Windmill Wit purchase (requires windmill opener)**:
+**Windmill Grist purchase (requires windmill opener)**:
 > "Eleven percent. Forty HP, twenty SP, and your navigation will not be your own for a while."
 > "The brewmaster calls it 'liquid heritage.' You will call it something else. Both are correct."
 
@@ -195,7 +195,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 **Second visit**:
 > "You came back. On the train. Eight Sovs, both ways, to look at fields." *(A nod.)* "This is the correct instinct."
 
-**After completing Bottoms Down (both breweries)**:
+**After all four Shamsterdam breweries are stamped (Bottoms Down included)**:
 > "Kees has stamped you." *(Beat.)* "He does not stamp. If Kees has stamped you, you have done something. Canal Courage — you have it now. Do not waste it on the Roodelicht."
 
 **Late game**:
@@ -229,12 +229,12 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Brewery Tour | 25 Sovs | 25 Sovs | Full tour, tasting token, five-beer flight, 40-minute lecture, access to boss arena |
-| The Wobbly Windmill Brewery Bottle Opener | 22 Sovs | 22 Sovs | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp and Windmill Wit. Free via Yeast Golem defeat. |
-| Windmill Wit (consumable) | Post-tour purchase | Genuinely 11% | +40 HP, +20 SP, +15% Speed 3 turns, −20% Navigation 5 turns. The room keeps spinning after you leave. |
+| The Wobbly Windmill Brewery Bottle Opener | 22 Sovs | 22 Sovs | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp and Windmill Grist. Free via Yeast Golem defeat. |
+| Windmill Grist (consumable) | Post-tour purchase | Genuinely 11% | +40 HP, +20 SP, +15% Speed 3 turns, −20% Navigation 5 turns. The room keeps spinning after you leave. |
 | Tasting Flight | Included in tour | Included | Five beers, 5% → 11% ABV. Feeds the Spin Meter. |
 | "Respect The Grain" (book) | 35 Sovs | 0 Sovs | Self-published, unreadable, comprehensive. He will sign it. Bram has read it because he had to. |
 | Gift shop discount | 5%, earned | Small but real | Awarded for listening to the entire Speech |
-| Windmill Wit stamp | Free on completion | Quest-critical | 1 of 2 Shamsterdam brewery stamps on the Bottle Opener Keychain |
+| Windmill Grist stamp | Free on completion | Quest-critical | 1 of 4 Shamsterdam brewery stamps on the Bottle Opener Keychain |
 
 ### Hidden Details / Easter Eggs
 - **The seagull beat**: Cross-location. Requires having met the seagull at De Zilte Waarheid first. It is the only genuine emotional disclosure Hendrik makes and it is entirely optional.
@@ -315,25 +315,25 @@ He never becomes casual and never lets the reverence drop. What changes is compr
 
 ## 🎯 Quest Integration
 
-### Primary Quest: Shamsterdam Brewery Tour (1 of 2)
+### Primary Quest: Shamsterdam Brewery Tour (1 of 4, any order)
 - **Quest**: Shamsterdam Brewery Tour
 - **Role**: Quest Gate, Vendor, Stamp Giver
 - **Trigger**: Arrival at The Wobbly Windmill Brewery carrying the Blarney Trap Bottle Opener
-- **Outcome**: "Windmill Wit" stamp added to the Bottle Opener Keychain. With Bottoms Down's Oude Genever stamp, unlocks the "Canal Courage" passive (all Bravado loss reduced by 25% while intoxicated).
+- **Outcome**: "Windmill Grist" stamp added to the Bottle Opener Keychain. With the other three Shamsterdam stamps (Bottoms Down, The Hoisted Pint, The Mad Monarch's Wit-tea Party), unlocks the "Canal Courage" passive (all Bravado loss reduced by 25% while intoxicated).
 
 ### Quest Gate Function
 **Hard gate, two layers:**
 1. **The Blarney Trap Bottle Opener (Publandia)** is required to participate in the brewery tour AT ALL. Without it, Hendrik blocks the stairs. This is a cross-city dependency and it is not negotiable, purchasable, or skippable.
-2. **The Wobbly Windmill Brewery opener** (Yeast Golem defeat OR 22 Sovs) is required for the stamp and for Windmill Wit purchase. Without it the player can tour and drink but takes no progression.
+2. **The Wobbly Windmill Brewery opener** (Yeast Golem defeat OR 22 Sovs) is required for the stamp and for Windmill Grist purchase. Without it the player can tour and drink but takes no progression.
 
 He also gates the Yeast Golem boss arena, the second-floor tasting room, and the blade-level selfie spot — all three unlock behind him in sequence.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| The Wobbly Windmill Brewery Bottle Opener | Golem defeat or 22 Sovs | Yes | Gates stamp + Windmill Wit; blades rotate |
-| Windmill Wit ×3 | Golem victory | Consumable | +40 HP, +20 SP, +15% Speed, −20% Navigation |
-| "Windmill Wit" stamp | Tour completion with opener | Yes | 1 of 2 toward Canal Courage |
+| The Wobbly Windmill Brewery Bottle Opener | Golem defeat or 22 Sovs | Yes | Gates stamp + Windmill Grist; blades rotate |
+| Windmill Grist ×3 | Golem victory | Consumable | +40 HP, +20 SP, +15% Speed, −20% Navigation |
+| "Windmill Grist" stamp | Tour completion with opener | Yes | 1 of 4 toward Canal Courage |
 | "Yeast Slayer" title | Golem defeat | Yes | Title badge |
 | Gift shop 5% discount | Full Speech listened to | Yes | Still overpriced |
 | Signed copy of "Respect The Grain" | 35 Sovs + request | Yes | Unreadable. Examinable inscription. |
@@ -443,7 +443,7 @@ Dutch, rural, deep register. A reverent baritone with real weight behind it. Slo
 - **Status**: Drafted
 - **Profile File Location**: `Design/World Design/Shamsterdam/npcs/wobbly_windmill_brewery/npc_brewmaster_hendrik.md`
 - **Registered In**: No `wobbly_windmill_brewery_npcs.json` exists. **A location JSON roster should be created for this location** (Tessa, Bram, Beer Blogger, Repeat Visitor, Instagram Couple, Bachelor Party still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_wobbly_windmill_cast.png` (1024×384, 64×96 sprites) — Row 0: Hendrik Idle 1-2 (0,0)/(64,0), Hendrik Lecturing 1-4 (128,0)–(320,0), Hendrik Approval 1-2 (384,0)/(448,0). Specced in `PNG_Assets/wobbly_windmill_brewery_png_assets.md`, Sprite Sheet 7. Supporting: `wobbly_windmill_items_ui.png` (bottle opener static + blade spin ×4, Windmill Wit bottle, Windmill Wit stamp, tasting flight tracker).
+- **Sprite Sheet**: `npc_wobbly_windmill_cast.png` (1024×384, 64×96 sprites) — Row 0: Hendrik Idle 1-2 (0,0)/(64,0), Hendrik Lecturing 1-4 (128,0)–(320,0), Hendrik Approval 1-2 (384,0)/(448,0). Specced in `PNG_Assets/wobbly_windmill_brewery_png_assets.md`, Sprite Sheet 7. Supporting: `wobbly_windmill_items_ui.png` (bottle opener static + blade spin ×4, Windmill Grist bottle, Windmill Grist stamp, tasting flight tracker).
 
 ## 📜 Revision History
 

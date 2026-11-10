@@ -224,7 +224,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 |---------|----------|------|-------------|
 | Sourdough Sprite Idle 1-2 | (768, 0) / (864, 0) | 96x96 each | Weak summoned adds (Wild Fermentation) |
 | Sourdough Sprite Attack 1-2 | (768, 96) / (864, 96) | 96x96 each | Tiny tangy lunge |
-| Harmless Bread Loaf | (768, 192) | 96x64 | Post-defeat arena prop; drops Windmill Wit recipe |
+| Harmless Bread Loaf | (768, 192) | 96x64 | Post-defeat arena prop; drops Windmill Grist recipe |
 
 ### Technical Notes:
 - Expansion frames anchor bottom-center so golem grows upward from arena floor
@@ -278,11 +278,11 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Tasting & Rewards:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Flight Glasses 1-5 | (0, 0) to (128, 0), 32px steps | 32x48 each | Polder Pilsner → Windmill Wit, deepening color |
-| Windmill Wit Bottle | (160, 0) | 48x64 | Consumable icon: +40 HP, -20% Navigation |
+| Flight Glasses 1-5 | (0, 0) to (128, 0), 32px steps | 32x48 each | Polder Pilsner → Windmill Grist, deepening color |
+| Windmill Grist Bottle | (160, 0) | 48x64 | Consumable icon: +40 HP, -20% Navigation |
 | Bottle Opener (Static) | (208, 0) | 48x48 | Miniature windmill, brushed copper, "Respect The Grain" |
 | Opener Blade Spin 1-4 | (256, 0) / (304, 0) / (352, 0) / (400, 0) | 48x48 each | Blade arms actually rotate |
-| Tour Stamp "Windmill Wit" | (448, 0) | 64x64 | Keychain stamp — 1 of 2 Shamsterdam breweries |
+| Tour Stamp "Windmill Grist" | (448, 0) | 64x64 | Keychain stamp — 1 of 4 Shamsterdam breweries |
 | Tasting Token | (384, 256) | 32x32 | Included with 25 Sovs tour |
 
 ### UI Panels:
@@ -369,7 +369,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Tasting Room Spin (Sheets 4, 8):
 - **Duration:** Continuous; intensity ramps with Spin Meter (0-5 beers) over the flight
 - **Frames:** Shader-driven, vignette corner texture
-- **Pattern:** Subtle wobble at beer 2 → definite rotation at beer 4 → full "why is the floor moving" at Windmill Wit
+- **Pattern:** Subtle wobble at beer 2 → definite rotation at beer 4 → full "why is the floor moving" at Windmill Grist
 - **Trigger:** Each flight beer consumed
 - **Purpose:** Each beer makes the spinning more noticeable; the building doesn't help
 - **Audio Sync:** Room-spin audio effect layers in per beer (profile audio design)
@@ -474,8 +474,8 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Shamsterdam Brewery Tour (1 of 2) | Tour stamp, opener sprites, flight tracker | Stamp awarded with both openers held |
-| "Canal Courage" Passive | Flight tracker completion state | Both Shamsterdam breweries → 25% Bravado-loss reduction while intoxicated |
+| Shamsterdam Brewery Tour (1 of 4, any order) | Tour stamp, opener sprites, flight tracker | Stamp awarded with both openers held |
+| "Canal Courage" Passive | Flight tracker completion state | All four Shamsterdam breweries → 25% Bravado-loss reduction while intoxicated |
 | Yeast Golem Boss | Both boss sheets, arena tiles, Yeast Slayer badge | Grinding floor encounter; unlocks tasting room + blade level |
 | Couchsurf — Beer Blogger | Beer Blogger sprites | Serious tasting-note engagement triggers invitation |
 | Selfie Spot Challenge | Blade sweep frames, shutter flash, hair chaos | Post-boss blade level |
@@ -484,7 +484,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Bottoms Down | Shared stamp/keychain UI style | Brewery tour achievement pairing |
-| The Tolerance Hostel | Windmill Wit bottle (conversation prop) | "The windmill" guest discussions |
+| The Tolerance Hostel | Windmill Grist bottle (conversation prop) | "The windmill" guest discussions |
 | De Groene Gids | None shared; dialogue reference only | Staff comment on "trying the local breweries" |
 | Train Station (central Shamsterdam) | Train station exterior, countryside strip | 8 Sovs round-trip transition scene |
 

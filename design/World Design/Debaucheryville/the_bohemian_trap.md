@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 6 PM - 4 AM (twilight to desperation hours)
 - **Stat Requirements**: None (the absinthe accepts all who pay)
-- **Item Requirements**: Gold for purchases (5-25 SOVS), willingness to believe marketing
+- **Item Requirements**: SOVS for purchases (5-25 SOVS), willingness to believe marketing
 - **Previous Location Requirements**: None (the cart finds those who seek "experiences")
 - **Special Conditions**: Cart location shifts slightly each night (part of the mystique/confusion)
 
@@ -28,7 +28,7 @@
 ## Visual Design
 ### Exterior Description (Cart Structure)
 - **Structure**: Ornate wooden cart, deliberately "antique" (built 2015, aged artificially)
-- **Design**: Belle Époque Parisian aesthetic, completely anachronistic for Prague
+- **Design**: Belle Époque Parisian aesthetic, completely anachronistic for Debaucheryville
 - **Color Scheme**: Deep green (obviously), gold trim, black wrought iron details
 - **Display**: Absinthe bottles backlit green, spoons and sugar cubes arranged artistically
 - **Signage**:
@@ -77,7 +77,7 @@
 **Core Concept**: The Bohemian Trap exploits the romanticized mythology of absinthe — the "Green Fairy," the banned drink of artists, the supposed hallucinogenic properties (mostly debunked), the elaborate ritual. Tourists pay 15 SOVS for a thimble of strong alcohol and a story, leaving with "Green Fairy Confusion" that's just regular alcohol confusion with better marketing.
 
 The cart is named "The Bohemian Trap" because:
-1. Prague is in the Bohemia region (geography)
+1. Every Debaucheryville tourist brochure calls the Old Town "bohemian" (geography, allegedly)
 2. "Bohemian" evokes artists and free spirits (mythology)
 3. It's literally a trap (honesty)
 

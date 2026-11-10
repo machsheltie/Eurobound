@@ -127,7 +127,7 @@
 
 ### Robotic Bartender Vendor (Original)
 - **Interaction**: Tap-dances on rails between sales, never stops moving
-- **Inventory**: Blockchain Bock (+20 HP, +10 Gold, Tourist Trapped status), experimental brews
+- **Inventory**: Blockchain Bock (+20 HP, +10 SOVS, Tourist Trapped status), experimental brews
 - **Dialogue Style**: Overly cheerful corporate speak, ignores obvious malfunctions
 - **Special Behavior**: Every 3rd purchase, glitches and gives random item from Algorithm Archive instead
 
@@ -182,8 +182,8 @@
 | ABV | 7.2% |
 | HP Restoration | +20 |
 | SP Restoration | — |
-| Buff | +10 Gold (crypto fluctuation bonus) |
-| Debuff Risk | 50% "Tourist Trapped" status; Gold bonus may be NEGATIVE |
+| Buff | +10 SOVS (crypto fluctuation bonus) |
+| Debuff Risk | 50% "Tourist Trapped" status; SOVS bonus may be NEGATIVE |
 | Price | 18 SOVS (±5 SOVS based on fake crypto ticker) |
 | Brewed By | Ye Olde B.R.E.W. Lab (algorithmic process) |
 
@@ -191,7 +191,7 @@
 
 **Unique Properties**:
 - Only beer with fluctuating price (13-23 SOVS range)
-- Gold bonus can be negative if "market crashes" (shows -10 Gold instead of +10)
+- SOVS bonus can be negative if "market crashes" (shows -10 SOVS instead of +10)
 - "Tourist Trapped" increases vulnerability to scams in Debaucheryville
 - Recipe literally changes each batch (random ingredient selection)
 - Perfect satirical capstone to the tech-bro brewery tour
@@ -200,7 +200,7 @@
 1. Robotic arm dispenses bottle with QR code label
 2. "BLOCKCHAIN VERIFIED" hologram appears briefly
 3. Player drinks, cryptocurrency icons float around head
-4. Gold bonus displays (+ or - based on RNG)
+4. SOVS bonus displays (+ or - based on RNG)
 5. Possible "Tourist Trapped" status flash
 6. "Thank you for participating in the Brewvolution™" text
 
@@ -252,7 +252,7 @@ Upon receiving the 4th Debaucheryville stamp:
 - **Meeting Location**: Passed out near BrewBot wreckage after boss defeat
 - **Invitation**: "Bro... you just saved my algorithm... crash at my place while I rebuild..."
 - **Morning Scene**: Wake on RGB gaming chair surrounded by dead monitors, he's debugging BrewBot 7.0
-- **Consequences**: Gain Blockchain Bock x2, Hungover status, -15 gold (he "borrowed" it for "server costs")
+- **Consequences**: Gain Blockchain Bock x2, Hungover status, -15 SOVS (he "borrowed" it for "server costs")
 - **Satirical Beat**: His apartment is just another failed startup office with sleeping bag in corner
 
 ### Cross-Location Dependencies
@@ -345,7 +345,7 @@ Upon receiving the 4th Debaucheryville stamp:
 - [ ] **Robotic bartender vendor works** (rail movement, inventory, glitch behavior)
 - [ ] **Cross-quest functionality verified** (NFT hunt, couchsurf system, brewery tour)
 - [ ] **Stamp system functional** (opener check, stamp animation, tour completion)
-- [ ] **Blockchain Bock price fluctuation** (13-23 SOVS range, gold bonus variance)
+- [ ] **Blockchain Bock price fluctuation** (13-23 SOVS range, SOVS bonus variance)
 
 ---
 

@@ -101,7 +101,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **You Are Here Dot**: Red dot (wrong location)
 - **Kiosk Window**: Marloes's service window (2 tiles)
 - **Security Booth**: Henk's station (2 tiles)
-- **Tip Jar**: Willem's hat with 2 Sovs
+- **Tip Jar**: Willem's hat with 247 SOVS
 
 ### Graffiti (Row 6) - Flashlight-revealed
 - **"STATION →"**: With scratched-over reversed arrow
@@ -177,7 +177,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Instrument**: Ancient accordion, well-worn
 - **Clothing**: Indeterminate decade (could be 1970s, could be 1990s)
 - **Props**:
-  - Hat on ground with exactly 2 Sovs
+  - Hat on ground with exactly 247 SOVS
   - Maybe a small stool
 - **Expression**: Serene, timeless, possibly not alive
 - **Aura**: Slight transparency effect available for ghost moments
@@ -708,7 +708,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 ### Before Submitting Assets:
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly
-- [ ] Key gags read clearly: wrong "You Are Here" dot, lying signage, Red Light Emergence framing, Willem's unchanging 2 Sovs
+- [ ] Key gags read clearly: wrong "You Are Here" dot, lying signage, Red Light Emergence framing, Willem's unchanging 247 SOVS
 - [ ] Accessibility visual alternatives included for all audio cues (directional corridor audio, accordion landmark, navigation chimes)
 - [ ] File naming follows snake_case convention
 - [ ] Master files preserve layer structure for future edits

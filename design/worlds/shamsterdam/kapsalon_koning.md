@@ -16,7 +16,7 @@
 - **Time Restrictions**: 4 PM - 6 AM (dinner through desperate hours)
 - **Peak Hours**: Midnight - 4 AM (when kapsalon calls loudest)
 - **Stat Requirements**: None (hunger and questionable decisions welcome)
-- **Item Requirements**: Gold for purchases (8-15 Sovs), cardiovascular optimism
+- **Item Requirements**: SOVS for purchases (8-15 Sovs), cardiovascular optimism
 - **Previous Location Requirements**: None (the kapsalon welcomes all)
 - **Special Conditions**: Seating available here (unlike Leeman's), but barely
 

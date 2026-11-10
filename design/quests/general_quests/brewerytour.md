@@ -20,11 +20,12 @@ file wins.
   1. The Wobbly Windmill Brewery (`wobbly_windmill_brewery.md`; replaced a real Dutch brewery's name)
   2. Bottoms Down (`bottoms_down.md`; renamed from the placeholder "Proeflokaal 't Kansen" —
      name only, Kees and the jenever distillery stay)
-  3. The Hoisted Pint (`the_hoisted_pint.md`; concept approved — challenge, beer, opener,
-     stamp, selfie, brewmaster and prices are PROPOSED — NEEDS AUTHOR RULING)
+  3. The Hoisted Pint (`the_hoisted_pint.md`; concept approved in Round v23; challenge, beer,
+     opener, stamp, selfie, brewmaster and prices approved as written 2026-11-10, Round v24)
   4. The Mad Monarch's Wit-tea Party (`the_mad_monarchs_wit_tea_party.md`; author-minted name,
-     witbier specialty; concept approved — challenge, beer, opener, stamp, selfie, brewmaster
-     and prices are PROPOSED — NEEDS AUTHOR RULING)
+     witbier specialty, the city's only wheat beer; concept approved in Round v23; challenge, beer,
+     opener, stamp, selfie, brewmaster and prices approved as written 2026-11-10, Round v24)
+  - Visit order is free: the four Shamsterdam breweries can be done in any order (Round v24).
 
 ---
 

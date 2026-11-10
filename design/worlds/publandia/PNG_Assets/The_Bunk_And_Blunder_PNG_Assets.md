@@ -342,7 +342,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 ### Resident NPCs (Standing):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Derek, Awake | (0, 0) | 64x96 | Three months of "finding himself," knows everything about Dublin |
+| Derek, Awake | (0, 0) | 64x96 | Three months of "finding himself," knows everything about Publandia |
 | Derek, Advice-Giving | (64, 0) | 64x96 | Unsolicited wisdom mid-delivery |
 | Brigitte, With System | (128, 0) | 64x96 | German efficiency, clipboard, color-coded doom |
 | Brigitte, Unraveling | (192, 0) | 64x96 | Three days in — the schedule is dead |

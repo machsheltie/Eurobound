@@ -128,7 +128,7 @@ Drinking Contest Mechanics
 Pub Culture Integration
     • Round System: NPCs expect you to buy rounds; refusing damages relationships 
     • Storytelling Challenges: Exaggerate stories to impress locals (risk/reward mechanic) 
-    • Local Slang Responses: Correct Dublin slang choices boost Bravado 
+    • Local Slang Responses: Correct Publandian slang choices boost Bravado 
     • Closing Time Mechanics: Certain areas/NPCs only available after hours 
 Environmental Interactions
     • Weather Effects: Rain makes cobblestones slippery (-Speed), but gives authentic atmosphere (+Mood) 

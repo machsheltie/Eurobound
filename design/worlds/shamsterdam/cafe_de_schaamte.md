@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: Always accessible (outdoor seating, 24-hour Amsterdam energy)
 - **Stat Requirements**: None for basic entry
-- **Item Requirements**: None (gold for purchases)
+- **Item Requirements**: None (SOVS for purchases)
 - **Previous Location Requirements**: None (accessible immediately upon Shamsterdam arrival)
 - **Special Conditions**: Agent Havok appears at outdoor table after visiting 2+ Shamsterdam locations
 

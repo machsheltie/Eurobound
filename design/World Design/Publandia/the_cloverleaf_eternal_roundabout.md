@@ -256,7 +256,7 @@
 | Exit Anxiety Easer (whiskey) | 12 SOVS | -Stress, +Confused |
 | Cloverleaf Curry | 15 SOVS | Restores 40 HP, +Speed |
 | Margaret's Memorial Sandwich | 10 SOVS | +HP, Patrick appears misty-eyed |
-| Tourist Trap Platter | 25 SOVS | Full heal, -Gold |
+| Tourist Trap Platter | 25 SOVS | Full heal, -SOVS |
 
 **Key Dialogue**:
 > "The trick is never running out of petrol. I've got a deal with the lorry that circles Wednesdays."
@@ -774,7 +774,7 @@
 
 ### Prerequisites
 - Arrive in Publandia (main story)
-- Have enough gold for car rental (200 SOVS+)
+- Have enough SOVS for car rental (200 SOVS+)
 - Complete Paddy's Premium Motors rental sequence
 
 ### Unlocks

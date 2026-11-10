@@ -406,7 +406,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 - **Description**: Ornate cast-iron benches scattered throughout
 - **Night Occupants**: 
   - Couple making out (oblivious to chase)
-  - Homeless philosopher (offers wisdom for 1 SOVS)
+  - Homeless philosopher (offers wisdom for 1 SOV)
   - Sleeping tourist (doesn't wake)
 
 ### Ornamental Pond

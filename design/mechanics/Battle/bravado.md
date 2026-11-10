@@ -2,7 +2,7 @@
 What is Bravado?
 Bravado is the magic system of EuroBound.
 It isn’t mystical — it’s fueled by beer muscles, misplaced confidence, and the desperate delusion of men clinging to their past glory.
-    • Satirical Core: Bravado explains how our trio can livestream mid-battle, blind enemies with Solo cups, or intimidate bouncers in Prague despite being middle-aged dads.
+    • Satirical Core: Bravado explains how our trio can livestream mid-battle, blind enemies with Solo cups, or intimidate bouncers in Debaucheryville despite being middle-aged dads.
     • Dynamic Resource: Spent to trigger “signature” moves; lost through failure, embarrassment, or sobriety.
     • Comedic State Machine: Low Bravado visibly changes animations, dialogue, and NPC reactions — they slump, stammer, and lose access to their most ridiculous moves.
 

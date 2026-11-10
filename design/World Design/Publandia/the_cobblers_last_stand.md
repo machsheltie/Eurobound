@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 9 PM (Finbar needs his rest for tomorrow's battles)
 - **Stat Requirements**: None (all feet welcome)
-- **Item Requirements**: Gold (20-80 SOVS per item)
+- **Item Requirements**: SOVS (20-80 SOVS per item)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Finbar will assess your feet's "combat readiness"
 

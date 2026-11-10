@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 7 AM - 11 PM (Nuala sees it all, from morning shame to evening setup)
 - **Stat Requirements**: None (all states of "ya" welcome)
-- **Item Requirements**: Gold (2-50 Sovs per item)
+- **Item Requirements**: SOVS (2-50 Sovs per item)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Nuala will comment on your current state
 

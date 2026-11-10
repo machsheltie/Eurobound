@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 11 AM - 3 AM (always there when you need it, suspiciously)
 - **Stat Requirements**: None (protagonists welcome regardless of condition)
-- **Item Requirements**: Gold (8-20 Sovs per meal)
+- **Item Requirements**: SOVS (8-20 Sovs per meal)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Deirdre seems to know when you're about to do something dangerous
 

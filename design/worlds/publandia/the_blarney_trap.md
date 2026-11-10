@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10:30 AM - 2:30 AM (Irish licensing laws, stretched)
 - **Stat Requirements**: None (the Trap welcomes all paying customers)
-- **Item Requirements**: Gold for drinks/rooms (7-9 Sovs pints, 55-120 Sovs rooms)
+- **Item Requirements**: SOVS for drinks/rooms (7-9 Sovs pints, 55-120 Sovs rooms)
 - **Previous Location Requirements**: None (likely first Publandia location visited)
 - **Special Conditions**: Automatically discovered upon arriving in Publandia
 

@@ -7,7 +7,7 @@ Bottoms Down is a 400-year-old jenever distillery that has not changed because i
 **Theme:** Tourist overconfidence meeting weaponized tradition — 400 years of Dutch drinking culture in a room designed to absorb the consequences
 **Zone:** Old Town, historic distillery district, down a narrow unmarked alley
 **Hours:** 12 PM - 11 PM (civilized hours, uncivilized drinking)
-**Primary Function:** Brewery Tour location #2 of 2 / skill-challenge hub — Traditional Method tutorial, Jenever Taste Test gauntlet (4 rounds + Kopstootje), The Shakes debuff, back room unlock, Oude Genever consumable, Canal Courage passive completion
+**Primary Function:** Brewery Tour location #2 of 4 / skill-challenge hub — Traditional Method tutorial, Jenever Taste Test gauntlet (4 rounds + Kopstootje), The Shakes debuff, back room unlock, Oude Genever consumable, Canal Courage passive completion
 
 ---
 
@@ -410,7 +410,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### Quest & Rewards:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Brewery Tour Progress (2 of 2) | (0, 320) | 128x96 | Shamsterdam brewery tour completion tracker |
+| Brewery Tour Progress (1 of 4, any order) | (0, 320) | 128x96 | Shamsterdam brewery tour completion tracker |
 | Canal Courage Passive Chip | (128, 320) | 128x96 | Small Shamsterdam flag icon, appears when the passive is active |
 | Brewery Stamp — Oude Genever | (0, 416) | 64x64 | Overfilled tulip glass stamp, applied to the keychain |
 | Blarney Trap Opener Icon | (64, 416) | 48x48 | Publandia prerequisite, shamrock |
@@ -614,8 +614,8 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Shamsterdam Brewery Tour (2 of 2) | Brewery Tour Progress panel, Oude Genever stamp, keychain panel, both opener icons | Completing here closes out the Shamsterdam brewery pair |
-| Canal Courage (Passive Unlock) | Canal Courage chip, small Shamsterdam flag icon | Awarded on completing both Shamsterdam breweries; 25% reduced Bravado loss while intoxicated |
+| Shamsterdam Brewery Tour (1 of 4, any order) | Brewery Tour Progress panel, Oude Genever stamp, keychain panel, both opener icons | Completing here adds one of the four Shamsterdam stamps |
+| Canal Courage (Passive Unlock) | Canal Courage chip, small Shamsterdam flag icon | Awarded on completing all four Shamsterdam breweries; 25% reduced Bravado loss while intoxicated |
 | The Jenever Taste Test Gauntlet | Five-glass row, correct/wrong markers, Kees reaction frames, round indicators, Kopstootje timing UI | Four rounds; success grants Oude Genever x5, back room access, and the Jenever Master title |
 | Traditional Method (Cultural Tutorial) | Tutorial panel, Kees Demonstrating the Bow, Bow Poses Strip, Lift-Attempt Fail | First drink; the choice between lifting and bowing is permanent characterisation |
 | Couchsurf: The Regular | Regular portrait, Kees Nod frames, Kees Pointing gestures | Rare nod after gauntlet success → the Regular mutters, Kees translates: "He says you can stay." |

@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 9 PM (the vendor keeps musician hours)
 - **Stat Requirements**: None to browse, +1 INT to understand what you're buying
-- **Item Requirements**: Gold
+- **Item Requirements**: SOVS
 - **Previous Location Requirements**: None
 - **Special Conditions**: Humming, whistling, or singing near the cart triggers vendor judgment
 

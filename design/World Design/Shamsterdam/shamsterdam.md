@@ -127,7 +127,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Brewmaster who lectures about "respect for the grain"
 - The windmill turns, the room spins, coincidence unclear
 - **Tour Obstacle**: Yeast Golem encounter on the grinding floor
-- **Unlockable Consumable**: "Windmill Wit" — Restores HP, +Speed, -Navigation (the spinning doesn't help)
+- **Unlockable Consumable**: "Windmill Grist" — Restores HP, +Speed, -Navigation (the spinning doesn't help)
 - **Brewmaster Selfie Spot**: In front of the giant rotating blades (timing matters)
 
 ### Bottoms Down
@@ -156,7 +156,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 ## SHOPS & VENDORS
 
 ### Street Vendors
-- **Stroopwafel Cart**: Warm caramel waffles (+HP, +Comfort, -Gold significantly)
+- **Stroopwafel Cart**: Warm caramel waffles (+HP, +Comfort, -SOVS significantly)
 - **De Zilte Waarheid**: Raw fish the bros will absolutely not try (local challenge: +Bravado if consumed)
 - **De Botanische Leugen**: Decorative bulbs that won't survive the trip home (useless but photogenic)
 - **Bicycle Warfare Accessories**: Because you WILL need one if you're stupid enough to rent a bike
@@ -260,7 +260,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 
 ### Fine & Penalty Mechanics
 - **Public Consumption Fine**: 100 SOVS, triggered by outdoor smoking
-- **Photography Violation**: -50 gold + "Marked Tourist" debuff
+- **Photography Violation**: -50 SOVS + "Marked Tourist" debuff
 - **Noise Complaint**: Random police encounter, -Bravado
 - **Bicycle Lane Walking**: Getting yelled at by EVERYONE
 - **Canal Littering**: Instant NPC mob judgment
@@ -474,17 +474,17 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 ## LOCATION CONNECTIONS TO OTHER CITIES
 
 ### From Publandia
-- The bros arrive expecting "Dublin but with weed"
+- The bros arrive expecting "Publandia but with weed"
 - Discover it's "Dublin but with MORE judgment"
 - The drinking culture exists but smoking culture has stricter rules
 
 ### From Debaucheryville
-- Prague party training didn't prepare them for Dutch directness
+- Debaucheryville party training didn't prepare them for Shamsterdammer directness
 - Absinthe culture replaced by coffeeshop culture
 - Scams are different: less sleight-of-hand, more "tourist pricing"
 
 ### To Sinfonia
-- The "cultural alibi" of museum visits prepares them for Vienna pretension
+- The "cultural alibi" of museum visits prepares them for Sinfonian pretension
 - They've learned nothing about refined behavior
 
 ---

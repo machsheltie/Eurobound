@@ -180,7 +180,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "AUTHORIZATION... INSUFFICIENT. Publandia opener... REQUIRED. Return when... OPTIMIZED."
 
 **Stamp Unlock**: Complete taste profile puzzle + defeat BrewBot (or bypass)
-**Signature Beer**: Blockchain Bock (+20 HP, +10 Gold [fluctuates], "Tourist Trapped" status)
+**Signature Beer**: Blockchain Bock (+20 HP, +10 SOVS [fluctuates], "Tourist Trapped" status)
 
 ---
 
@@ -287,7 +287,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "The Continental Trail has rules. Even windmills bow to tradition. Return with the Publandia key."
 
 **Stamp Unlock**: Defeat Yeast Golem on the grinding floor
-**Signature Beer**: Windmill Wit (+25 HP, +10 Speed, -15% Navigation 20 min)
+**Signature Beer**: Windmill Grist (+25 HP, +10 Speed, -15% Navigation 20 min)
 
 ---
 

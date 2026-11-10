@@ -292,7 +292,7 @@ A stacking status effect. It is the location's core system and it follows the pa
 | Gunter's hand wipe | 1 | 1 SOV |
 | Lotte's "Handreiniger" (gift shop) | 2 | 4 Sovs |
 | Full night's sleep at The Tolerance Hostel | 2 | Standard rest |
-| Frietomat croquette | 1 | 2 Sovs — mechanically real, medically nonsense, the bros swear by it |
+| Frietomat croquette | 1 | 3 SOVS — mechanically real, medically nonsense, the bros swear by it |
 | Natural decay | 1 per in-game day | Free |
 
 **The Attribution Table** — what the bros blame, in order, every single time:

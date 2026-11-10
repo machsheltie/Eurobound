@@ -7,7 +7,7 @@
 - **Display Name**: Kees
 - **Internal Name**: Kees — third-generation bartender, Bottoms Down (est. 1624), Old Town distillery district
 - **Role**: Gatekeeper / Cross-City Quest Gate / Vendor (bottle opener + Oude Genever) / Gauntlet Administrator / Stamp Giver
-- **Associated Quest**: "Shamsterdam Brewery Tour" (2 of 2 — Oude Genever stamp); gates the "Canal Courage" passive completion; administers the Jenever Taste Test gauntlet
+- **Associated Quest**: "Shamsterdam Brewery Tour" (1 of 4, any order — Oude Genever stamp); gates the "Canal Courage" passive completion; administers the Jenever Taste Test gauntlet
 - **Primary Location**: Bottoms Down — behind the eight-metre oak bar, Shamsterdam Old Town
 - **Secondary Appearances**: None. Kees has been behind this bar since he inherited it and there is no reason to move him.
 
@@ -209,7 +209,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 **After the gauntlet is completed**:
 > *(He nods when the player enters. Nobody else gets this. It is not in the twelve words and it does not need to be.)*
 
-**After The Wobbly Windmill Brewery (both breweries complete)**:
+**After all four Shamsterdam breweries are stamped (The Wobbly Windmill Brewery included)**:
 > "Hendrik stamped you." *(Beat.)* "Windmill." *(He pours without being asked.)* "Canal Courage. You have it."
 
 **After the Roodelicht tunnel emergence (Red Light Shame debuff active)**:
@@ -349,11 +349,11 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 
 ## 🎯 Quest Integration
 
-### Primary Quest: Shamsterdam Brewery Tour (2 of 2)
+### Primary Quest: Shamsterdam Brewery Tour (1 of 4, any order)
 - **Quest**: Shamsterdam Brewery Tour
 - **Role**: Quest Gate, Gauntlet Administrator, Vendor, Stamp Giver
 - **Trigger**: Arrival at Bottoms Down carrying the Blarney Trap Bottle Opener
-- **Outcome**: "Oude Genever" stamp added to the Bottle Opener Keychain. With The Wobbly Windmill Brewery's Windmill Wit stamp, **completes the "Canal Courage" passive** — all Bravado loss reduced by 25% while intoxicated, with a small Shamsterdam flag icon when active.
+- **Outcome**: "Oude Genever" stamp added to the Bottle Opener Keychain. With the other three Shamsterdam stamps (The Wobbly Windmill Brewery's Windmill Grist stamp, The Hoisted Pint and The Mad Monarch's Wit-tea Party), **completes the "Canal Courage" passive** — all Bravado loss reduced by 25% while intoxicated, with a small Shamsterdam flag icon when active.
 
 ### Quest Gate Function — CROSS-CITY, HARD REQUIREMENT
 
@@ -379,7 +379,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 |------|-------------|------------|--------|
 | Bottoms Down Bottle Opener | Gauntlet or 20 Sovs | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
 | Oude Genever ×5 (or ×2) | Gauntlet resolution | Consumable | +40 SP, The Shakes, cannot be used in combat |
-| "Oude Genever" stamp | Tour completion with opener | Yes | 2 of 2 → **Canal Courage passive unlocked** |
+| "Oude Genever" stamp | Tour completion with opener | Yes | 1 of 4 → **Canal Courage passive unlocked** when all four are stamped |
 | Back Room access | Full gauntlet | Yes | The 100-Year Barrel, the private stock, the one chair |
 | "Jenever Master" / "Jenever Survivor" title | Gauntlet outcome | Yes | Accuracy varies |
 
@@ -394,7 +394,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 - `kopstootje_survived`: boolean
 - `back_room_unlocked`: boolean
 - `bottoms_down_stamp_acquired`: boolean
-- `canal_courage_unlocked`: boolean (requires both brewery stamps)
+- `canal_courage_unlocked`: boolean (requires all four Shamsterdam brewery stamps)
 
 ---
 

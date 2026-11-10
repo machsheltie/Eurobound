@@ -25,7 +25,7 @@
 | Main hall layout | Hall v8 approved (2026-11-09). Cabinets stand in straight wall rows, the centre floor stays open, and nothing blocks another machine (v7 rule, 2026-11-08) |
 | Hall contents | Three-pad DDR dance-off facing one big wall screen; token/prize redemption counter built into the bar; Green Fairy mural inside; Skee-Ball, foosball, Beanie Baby claw, Bubble Bobble; one bidet/toilet stool (2026-11-08) |
 | Cabinets | Frogger: Existential Edition, Street Fighter: Identity Crisis and Kebab Kombat are battle encounters. The rigged claw is the one real mini-game. Real game names stay as drawn (2026-11-08) |
-| Economy on signage | 1 SOVS = 1 token. DDR unlock 3 tokens. Claw 5 tokens per attempt |
+| Economy on signage | 1 SOV = 1 token. DDR unlock 3 tokens. Claw 5 tokens per attempt |
 | NPC placement | Backpack Girl sits on the primary route beside the token machine (v8 position) |
 
 ## Conventions
@@ -104,7 +104,7 @@ Status: ☐ todo · ◐ generated, needs QA · ☑ approved
 | `aa_cab_generic_upright_a/b/c`, `aa_cab_generic_broken` | Wall-row filler, marquee/screen atlases separate |
 
 ### E. Service, furniture and clutter
-`aa_prop_token_exchange` (TOKENS HERE machine; idle/pay/dispense/jam), `aa_prop_token_price_board` (**1 SOVS = 1 TOKEN**; the PNG spec's "1 KC = 5 TOKENS" is retired), `aa_prop_bar_stool` set + `aa_prop_bidet_stool`, `aa_prop_cabinet_stool` set, `aa_prop_standing_tables`, `aa_prop_wayfinding`, `aa_prop_floor_clutter`, `aa_prop_wall_sconce`, `aa_prop_pendant_lamp` (north wing), `aa_prop_potted_plant`, `aa_prop_hanging_ivy`.
+`aa_prop_token_exchange` (TOKENS HERE machine; idle/pay/dispense/jam), `aa_prop_token_price_board` (**1 SOV = 1 TOKEN**; the PNG spec's "1 KC = 5 TOKENS" is retired), `aa_prop_bar_stool` set + `aa_prop_bidet_stool`, `aa_prop_cabinet_stool` set, `aa_prop_standing_tables`, `aa_prop_wayfinding`, `aa_prop_floor_clutter`, `aa_prop_wall_sconce`, `aa_prop_pendant_lamp` (north wing), `aa_prop_potted_plant`, `aa_prop_hanging_ivy`.
 
 ### F. Hidden-entrance sets (unchanged from the PNG spec)
 Taproom: `aa_transition_taproom_curtain`, `_plaque`, `_vapor`, `_glow`. Maintenance: `aa_transition_maintenance_door`, `aa_transition_ddr_token_pips`, `_ddr_wire_bridge`, `_maintenance_labels`, `_maintenance_unlock_fx`. Neither shows a destination interior.

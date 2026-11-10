@@ -116,7 +116,7 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 |----------|-------------|------------|---------|
 | "Do you swear to honor the brew?" | "With my liver and heart" | "Yes" | "It's just beer" |
 | "Will you spread word of our excellence?" | "To all corners of the realm" | "Sure" | "I have a blog" |
-| "What sacrifice do you offer?" | "My sobriety" | "Gold" (tip) | "Nothing" |
+| "What sacrifice do you offer?" | "My sobriety" | "SOVS" (tip) | "Nothing" |
 
 **Ceremonial Drink**: Must complete without spilling (timing mini-game, easy)
 

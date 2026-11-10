@@ -95,7 +95,7 @@
 ### Interactive Elements
 - **Rigged Absinthe Arcade Claw Machine** - Primary NFT Hunt location for "Beer Pong Saint Relic"
 - **Cracked arcade cabinets** - Mini-games with twisted mechanics
-- **Token exchange machine** - Overpriced conversion (1 SOVS = 1 token)
+- **Token exchange machine** - Overpriced conversion (1 SOV = 1 token)
 - **Hidden brewery entrance** - Behind Time Crisis machine, leads to Absynthium Taproom
 - **Dynamic lighting/shadow puzzle** - Exploration mechanic for discovering secrets
 

@@ -232,7 +232,7 @@
 
 ### Economic Integration
 - **Shop Functionality**: [Items sold, services offered]
-- **Currency Accepted**: [Gold, barter, special tokens]
+- **Currency Accepted**: [SOVS, barter, special tokens]
 - **Price Structure**: [Cost ranges and satirical pricing]
 - **Economic Role**: [How location fits broader economy]
 
@@ -787,7 +787,7 @@ location_state:
     "price_range": {"min": 10, "max": 200},
     "actual_value_total": 50,
     "markup_percentage": 400,
-    "currency_accepted": "gold"
+    "currency_accepted": "SOVS"
   },
   
   "hidden_items": [

@@ -514,7 +514,7 @@ This document provides exact specifications for all PNG files needed for The Abs
 5. **Warped Perspective Room** - Reality-bending architecture
 
 ### TikTok Potential:
-- "POV: You're questioning reality in Prague"
+- "POV: You're questioning reality in Debaucheryville"
 - "When the arcade cabinet leads to existential crisis"
 - "Mirror portal confusion compilation"
 - "Trying to identify the real boss among illusions"

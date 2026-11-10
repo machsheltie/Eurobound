@@ -14,7 +14,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 7 PM (fashion keeps civilized hours)
 - **Stat Requirements**: None to enter, but staff treatment scales with current outfit quality
-- **Item Requirements**: Gold (significant amounts)
+- **Item Requirements**: SOVS (significant amounts)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Entering in "casual" attire triggers assessment protocol
 

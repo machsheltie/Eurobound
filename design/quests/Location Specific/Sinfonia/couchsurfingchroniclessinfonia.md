@@ -15,7 +15,7 @@
 
 ### **Enhanced Payoff Types:**
 - **Positive:** +Charm, +Street Rep, or minor items
-- **Negative:** Status effects (Hungover, Embarrassed), minor gold loss, or gag items  
+- **Negative:** Status effects (Hungover, Embarrassed), minor SOVS loss, or gag items  
 - **Mixed:** Flavor collectibles, achievement progress, or FlagMan reference items
 
 ---

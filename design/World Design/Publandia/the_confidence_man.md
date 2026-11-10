@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 2 PM - 12 AM (prime confidence-needing hours)
 - **Stat Requirements**: None (low confidence especially welcome)
-- **Item Requirements**: Gold (5-20 SOVS per item)
+- **Item Requirements**: SOVS (5-20 SOVS per item)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Location changes slightly each visit (mobile cart)
 

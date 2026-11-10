@@ -739,7 +739,7 @@ And that's what matters."
 
 | Item | Type | Effect | Description |
 |------|------|--------|-------------|
-| **"Fabergé" Egg Shell** | Trinket | +5% Gold from all sources | "The bros show it to everyone. EVERYONE. They will never shut up about this heist." |
+| **"Fabergé" Egg Shell** | Trinket | +5% SOVS from all sources | "The bros show it to everyone. EVERYONE. They will never shut up about this heist." |
 | **Kinder Chocolate** | Consumable (x3) | Full HP restore, "Sugar Rush" buff (+15 Speed for 2 turns, then -10 Speed for 1 turn) | "Chadwick ate one before anyone could stop him. These are what's left." |
 | **"The Shamsterdam Three"** | Title | Visible in party menu | "The bros now introduce themselves this way. To everyone. Including customs agents." |
 | **Street Rep** | +15 | N/A | Word spreads about your "legendary museum job." No one corrects them. |
