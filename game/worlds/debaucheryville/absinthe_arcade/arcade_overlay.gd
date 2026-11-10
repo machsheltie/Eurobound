@@ -108,7 +108,13 @@ func _close_picker() -> void:
 
 
 func _refresh() -> void:
-	_picker_label.text = "TOKENS   <  %d  >\n%d SOVS" % [count, count * ArcadeRules.SOVS_PER_TOKEN]
+	var price := count * ArcadeRules.SOVS_PER_TOKEN
+	_picker_label.text = "TOKENS   <  %d  >\n%s" % [count, sovs_text(price)]
+
+
+## Money as the game writes it: "1 SOV", "3 SOVS" (currency.md canon).
+static func sovs_text(amount: int) -> String:
+	return "%d %s" % [amount, "SOV" if amount == 1 else "SOVS"]
 
 
 func _process(delta: float) -> void:

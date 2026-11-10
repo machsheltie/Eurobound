@@ -95,3 +95,8 @@ func test_arcade_rules_tickets_add_up() -> void:
 
 	# Assert
 	assert_eq(ArcadeRules.tickets(s), 23)
+
+
+func test_arcade_money_reads_1_sov_and_2_sovs() -> void:
+	assert_eq(ArcadeOverlay.sovs_text(1), "1 SOV")
+	assert_eq(ArcadeOverlay.sovs_text(2), "2 SOVS")
