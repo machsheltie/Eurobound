@@ -329,10 +329,8 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 - **Chadwick** (photographing): "Hold this book. Look thoughtful. No, MORE thoughtful. Like you're DISCOVERING something."
 - **Nora**: "You could actually discover something. By reading it."
 - **Chadwick**: "That's PHASE TWO."
-- **Bradley**: "Gregory appreciates the literary ambiance. Gregory notes that James Joyce revolutionized modernist prose."
-- **Nora**: "The puppet's read Joyce?"
-- **Bradley**: "Gregory has read ABOUT Joyce. Gregory finds the actual texts... challenging."
-- **Nora**: "Honest puppet. I respect that. Coffee's on the house."
+- **Bradley**: "I've read about Joyce. The actual texts are... challenging."
+- **Nora**: "Honest. I respect that. Coffee's on the house."
 
 ## System Integration
 ### Digital Hub Network

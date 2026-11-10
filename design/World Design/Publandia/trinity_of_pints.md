@@ -331,9 +331,9 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 - **Chadwick**: "Academic content is TRENDING. This is EDUCATIONAL ENTERTAINMENT."
 - **Chadwick** (filming): "And here we see the RIGOROUS STANDARDS of Irish higher education..."
 - **Chadwick** (graduating): "I have a DEGREE in CONTENT now. That's basically what this is."
-- **Bradley**: "Gregory appreciates the institutional framework. Gregory notes the accreditation is questionable."
-- **Dean Declan**: "The puppet raises valid concerns. The puppet may audit SKEPTIC 101: Questioning Everything."
-- **Bradley** (graduating): "Gregory is... proud? Gregory didn't expect to feel genuine emotion at a fake graduation."
+- **Bradley**: "Is the accreditation... current?"
+- **Dean Declan**: "You may audit SKEPTIC 101: Questioning Everything."
+- **Bradley** (graduating): "I'm... proud? I didn't expect to feel genuine emotion at a fake graduation."
 
 ## Brewery Tour Integration
 

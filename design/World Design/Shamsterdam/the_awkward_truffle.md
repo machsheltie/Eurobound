@@ -287,10 +287,10 @@ The shop's layout — respectable front, transitional middle, committed back —
 - **Chadwick**: "The lighting in here is INCREDIBLE. The way the chocolate catches— wait, is that a—"
 - **Chadwick** (filming): "I can't post this. I DEFINITELY can't post this. But I'm filming it anyway."
 - **Chadwick** (later, eating): "This is REALLY good chocolate. Like, genuinely. The shape is— forget the shape. Good chocolate."
-- **Bradley**: "Gregory is... Gregory doesn't know where to look. Gregory is focusing on the truffles."
-- **Bradley** (Zone 3): "Gregory was NOT prepared for this section. Gregory needs a moment."
-- **Bradley** (purchasing): "The Classic Truffle Box. Gregory says we're keeping this DIGNIFIED."
-- **Bradley** (later): "Gregory found the other chocolate. Gregory has questions. Gregory is eating it anyway."
+- **Bradley**: "I don't know where to look. I'm focusing on the truffles."
+- **Bradley** (Zone 3): "I was NOT prepared for this section. I need a moment."
+- **Bradley** (purchasing): "The Classic Truffle Box. We're keeping this DIGNIFIED."
+- **Bradley** (later): "I found the other chocolate. I have questions. I'm eating it anyway."
 
 ## System Integration
 ### Tourist Experience Network

@@ -305,9 +305,9 @@ The boutique exists in the space between practical club gear and aspirational ni
 - **Chadwick**: "The programmable LED glasses. Can they sync with MUSIC? Can I film MYSELF?"
 - **Dominik**: "Fully programmable. Sound-reactive mode. You'll be your own light show."
 - **Chadwick**: "SOLD. This is CONTENT and FASHION."
-- **Bradley**: "Gregory wonders if the VIP wristband holder works if you don't have a VIP wristband."
+- **Bradley**: "Does the VIP wristband holder work if you don't have a VIP wristband?"
 - **Katarina**: "It shows you're READY for a wristband. Preparation is its own signal."
-- **Bradley**: "Gregory finds this logic circular but compelling. Gregory will take the holder."
+- **Bradley**: "...I'll take the holder."
 
 ## System Integration
 ### Club Preparation Network

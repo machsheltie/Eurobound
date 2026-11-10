@@ -219,7 +219,7 @@ The crowd is supportive but has STANDARDS.
 - **Lord Pilsner**: "Why is there a RED CARPET to a bar?"
 - **Chadwick**: "Is that... a SPOTLIGHT?"
 - **Herr Dramatisch**: "WELCOME! You arrive at the PERFECT moment! The stage is SET!"
-- **Bradley**: "Gregory is concerned about the 'stage' reference."
+- **Bradley**: "I'm concerned about the 'stage' reference."
 
 **The Bravo Challenge**:
 - **Lord Pilsner**: *spotlight hits* "Uh... here's to... beer?"
@@ -227,7 +227,7 @@ The crowd is supportive but has STANDARDS.
 - **Herr Dramatisch**: "Adequate! NEXT time, MORE passion!"
 - **Chadwick**: *spotlight hits* "TO THE GREATEST BROS IN ALL OF EUROPE!"
 - **Crowd**: *genuine applause*
-- **Bradley**: *spotlight hits* "Gregory proposes a toast to statistical probability and fermentation science."
+- **Bradley**: *spotlight hits* "A toast to statistical probability and fermentation science."
 - **Crowd**: *confused silence, then slow respectful applause*
 - **Herr Dramatisch**: "UNCONVENTIONAL! I LOVE IT!"
 

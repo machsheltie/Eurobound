@@ -127,7 +127,7 @@
 - **Dialogue**: 
   - Lord Pilsner: "Wait. WAIT. This is what they were SUPPOSED to taste like?"
   - Chadwick: "All those packaged ones were LIES. BEAUTIFUL LIES."
-  - Bradley: "Gregory is experiencing new emotions. Gregory didn't know he could feel this way."
+  - Bradley: "I'm experiencing new emotions. I didn't know I could feel this way."
 - **Effect**: "Enlightened" status — future packaged stroopwafels provide half comfort
 
 ### The Wait Mini-Experience
@@ -237,8 +237,8 @@ During the 90-second wait, random observations:
 - **Lord Pilsner** (finished): "I understand now. I understand the line. I understand EVERYTHING."
 - **Chadwick**: "The B-roll of this being made is PREMIUM. The eating B-roll is... messier."
 - **Chadwick** (caramel situation): "There's stroop on my shirt. I don't care. Worth it."
-- **Bradley**: "Gregory has never had a stroopwafel. Gregory has been missing out. Gregory is emotional."
-- **Bradley** (second one): "Gregory says we need another. Gregory is wise."
+- **Bradley**: "I've never had a stroopwafel. I've been missing out."
+- **Bradley** (second one): "We need another."
 
 ## System Integration
 ### Comfort Food Network

@@ -358,7 +358,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 **First Visit**:
 - **Lord Pilsner**: "Dude, this place is PERFECT. Beer, music, people yelling about nothing important."
 - **Chadwick**: "It's like home but with CULTURE!"
-- **Bradley**: "Gregory finds the debate format... familiar. Gregory notes similarities to certain internet forums."
+- **Bradley**: "This debate format is... familiar."
 
 **Joining the Tempo Debate**:
 - **Lord Pilsner**: "I think music should be... medium? Like, not too fast, not too slow?"
@@ -370,7 +370,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 
 **Becoming Regulars**:
 - **Chadwick**: "Herr Takt KNOWS MY NAME! I'm basically SINFONIAN now!"
-- **Bradley**: "Gregory notes we have achieved 'Regular' status. Gregory is... pleased."
+- **Bradley**: "We have achieved 'Regular' status. I am... pleased."
 - **Lord Pilsner**: "Do we get a secret handshake? There should be a secret handshake."
 - **Herr Takt**: "The secret handshake is buying a round."
 - **Lord Pilsner**: "...I can do that."
@@ -378,7 +378,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 **Morning After**:
 - **Lord Pilsner**: *groaning* "The tempo debate went until 3 AM..."
 - **Chadwick**: "I don't remember picking a side but apparently I'm PRESIDENT of the Presto Extremists now?"
-- **Bradley**: "Gregory abstained. Gregory always abstains. Gregory is having coffee."
+- **Bradley**: "I abstained. I always abstain. I'm having coffee."
 
 ## System Integration
 

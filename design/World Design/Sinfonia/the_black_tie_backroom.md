@@ -148,9 +148,8 @@ The house is systematically extracting their gold while they feel sophisticated.
 
 **The Inevitable**:
 - **Lord Pilsner**: "Okay, ONE more hand. I can feel the luck turning."
-- **Bradley**: "Gregory calculates a 94.7% probability of continued loss."
-- **Lord Pilsner**: "Gregory doesn't understand VIBES."
-- **Narrator**: *Gregory understood exactly.*
+- **Bradley**: "We have forty SOVS."
+- **Lord Pilsner**: "That IS one more hand."
 
 **The Cleanup**:
 - **Chadwick**: "How did we... we had 500 SOVS... where did..."
@@ -358,25 +357,25 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 
 **First Game**:
 - **Lord Pilsner**: "Okay, I KNOW poker. I've seen Casino Royale like THREE TIMES."
-- **Bradley**: "Gregory notes that Casino Royale features baccarat, not Texas Hold 'Em."
+- **Chadwick**: "So you're basically Bond."
 - **Lord Pilsner**: "Same energy!"
 - **Narrator**: *It was not the same energy.*
 
 **Winning Early**:
 - **Chadwick**: "WE'RE UP! WE'RE ACTUALLY UP!"
 - **Madame Karten**: "How wonderful! Perhaps a larger table? The cards seem to favor you tonight..."
-- **Bradley**: "Gregory recognizes this as a classic exploitation pattern."
-- **Lord Pilsner**: "Gregory needs to CHILL."
+- **Bradley**: "Or we could leave."
+- **Lord Pilsner**: "And go WHERE, Bradley? We're WINNING."
 
 **Losing Later**:
 - **Lord Pilsner**: "I don't understand. I was WINNING."
 - **Chadwick**: "My CONTENT... it's becoming a TRAGEDY..."
-- **Bradley**: "Gregory calculated this. Gregory was ignored. Gregory does not feel vindicated. Gregory feels poor."
+- **Bradley**: "I'm poor now."
 
 **Discovering Herr Falsch's Cheating**:
 - **Chadwick**: "WAIT. He's been CHEATING?! I KNEW something was off!"
 - **Lord Pilsner**: "That means... we didn't lose because we're BAD... we lost because he's a CRIMINAL!"
-- **Bradley**: "Gregory finds this distinction comforting."
+- **Bradley**: "Comforting."
 - **Lord Pilsner**: "Let's FIGHT him."
 
 ## System Integration

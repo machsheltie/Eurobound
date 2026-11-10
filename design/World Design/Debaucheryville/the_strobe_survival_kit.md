@@ -319,10 +319,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - **Miroslav**: "The glow sticks don't protect anything. Buy the earplugs too."
 - **Chadwick**: "Fine, fine. But the CONTENT—"
 - **Miroslav**: "You can't create content if you can't hear the feedback. Earplugs."
-- **Bradley**: "Gregory appreciates the harm reduction approach. Gregory says this is responsible commerce."
-- **Miroslav**: "Your puppet has sense. Listen to the puppet."
-- **Bradley**: "Gregory is not a— Gregory recommends the full survival kit."
-- **Miroslav**: "Gregory is smart. Be like Gregory."
+- **Bradley**: "I'll take the full survival kit."
 
 ## System Integration
 ### Pre-Club Equipment Hub

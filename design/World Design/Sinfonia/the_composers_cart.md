@@ -203,7 +203,7 @@ The cart exists to test musical knowledge:
 **Approaching**:
 - **Chadwick**: "Sheet music? Do people still READ music?"
 - **Herr Notenschreiber**: *already disappointed*
-- **Bradley**: "Gregory can read music. Gregory took lessons until age 12."
+- **Bradley**: "I can read music. I took lessons until age 12."
 - **Herr Notenschreiber**: *flicker of hope*
 
 **Browsing**:
@@ -227,8 +227,8 @@ The cart exists to test musical knowledge:
 - **Herr Notenschreiber**: *stops mid-criticism* "...Continue."
 - **Bradley**: *continues*
 - **Herr Notenschreiber**: "Your friends are... unfortunate. But YOU. You may have 15% off."
-- **Lord Pilsner**: "Gregory!"
-- **Bradley**: "Gregory paid attention during lessons."
+- **Lord Pilsner**: "BRADLEY!"
+- **Bradley**: "I paid attention during lessons."
 
 ## System Integration
 

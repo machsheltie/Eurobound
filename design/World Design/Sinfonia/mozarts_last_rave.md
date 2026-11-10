@@ -140,7 +140,7 @@ The club has existed for 15 years, has a health inspection certificate, and pays
 
 **The Experience**:
 - **Chadwick**: "The UNDEAD DJ! This is either amazing special effects or we're in ACTUAL DANGER!"
-- **Bradley**: "Gregory calculates a 0% probability of actual reanimation. Gregory is... 12% uncertain."
+- **Bradley**: "There is a 0% probability of actual reanimation. I am... 12% uncertain."
 
 **The Morning After**:
 - **Lord Pilsner**: "We danced with GHOSTS. I think one of them hit on me."
@@ -335,7 +335,7 @@ Instead of defeating Bassmeister, players can:
 **Finding the Entrance**:
 - **Lord Pilsner**: "Dude, we're going INTO A GRAVE. This is the most metal thing we've ever done."
 - **Chadwick**: "Content WARNING: We're about to do something that is DEFINITELY against several laws."
-- **Bradley**: "Gregory has concerns about structural integrity. And also about desecrating burial sites."
+- **Bradley**: "I have concerns about structural integrity. And also about desecrating burial sites."
 
 **At the Bone Bar**:
 - **Lord Pilsner**: "Yo, this drink is served in a SKULL! Do you think it's... you know... REAL?"
@@ -344,13 +344,13 @@ Instead of defeating Bassmeister, players can:
 
 **On the Dancefloor**:
 - **Chadwick**: "I'm dancing with a SKELETON! This is either the coolest or the most cursed moment of my life!"
-- **Bradley**: "Gregory refuses to dance. Gregory notes that the 'skeleton' is clearly an animatronic."
-- **Lord Pilsner**: "Bro, let Gregory LIVE! Or... un-live? What's the appropriate term here?"
+- **Bradley**: "I refuse to dance."
+- **Lord Pilsner**: "Bro, let yourself LIVE! Or... un-live? What's the appropriate term here?"
 
 **Facing Bassmeister**:
 - **Lord Pilsner**: "Wait, so this guy INVENTED bass drops and Mozart stole his thunder? That's... actually really sad."
 - **Chadwick**: "We could defeat him OR we could VALIDATE him? The second one seems more wholesome."
-- **Bradley**: "Gregory recommends the peaceful resolution. Gregory is surprisingly moved by this ghost's struggle for recognition."
+- **Bradley**: "I recommend the peaceful resolution."
 
 ## System Integration
 

@@ -162,7 +162,7 @@
 **Bros' Mirror Chad Dialogue**:
 - **Lord Pilsner's Mirror**: "You peaked in college. Everything since has been a long, sad encore."
 - **Chadwick's Mirror**: "Nobody watches your content. The algorithm hates you. It's personal."
-- **Bradley's Mirror**: "Gregory isn't a personality. Gregory is a defense mechanism. And everyone knows."
+- **Bradley's Mirror**: "You're not the smart one. You're the one who talks like he is."
 
 ### Green Fairy Wisp Boss
 **Boss Phases**:
@@ -269,8 +269,8 @@
 - **Chadwick**: "There's not three of me. There's three of YOU."
 - **Lord Pilsner**: "...that's worse. That's definitely worse."
 
-- **Bradley** (navigating): "Gregory is maintaining a mental map of mirror positions. Gregory is... Gregory is unsure which Gregory is mapping."
-- **Dr. Vanek**: "The puppet is confused. Fascinating. I didn't think puppets COULD be confused. May I take notes?"
+- **Bradley** (navigating): "I'm keeping a mental map of the mirror positions. I'm... unsure which of me is mapping."
+- **Dr. Vanek**: "Fascinating. May I take notes?"
 
 ### Couchsurfing Integration
 **Host**: "The Philosopher" — a regular who's been here so long they might be part of the furniture

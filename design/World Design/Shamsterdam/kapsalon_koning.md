@@ -313,11 +313,10 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Chadwick** (receiving): "Is this photogenic? This isn't photogenic. It's BEAUTIFUL anyway."
 - **Chadwick** (mid-eat): "I'm experiencing something. I'm experiencing a LOT of something."
 - **Chadwick** (post-eat): "Food coma. CONTENT coma. Same thing. Different. Same."
-- **Bradley**: "Gregory is concerned about the caloric density. Gregory is mathematically distressed."
 - **Bradley** (to Willem): "Is there... less? A smaller version?"
 - **Willem**: "No small. Only 'not ready' and 'regular.'"
-- **Bradley** (mid-eat): "Gregory has stopped counting. Gregory has surrendered to the cheese."
-- **Bradley** (post-eat): "Gregory understands now. Gregory was wrong to question."
+- **Bradley** (mid-eat): "I've stopped counting. I've surrendered to the cheese."
+- **Bradley** (post-eat): "I understand now. I was wrong to question."
 
 ## System Integration
 ### Late-Night Food Network

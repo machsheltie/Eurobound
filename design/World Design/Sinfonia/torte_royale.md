@@ -113,7 +113,7 @@ They're paying triple price because they pointed at the menu instead of pronounc
 - **Frau Tortenmeister**: "They are ALL chocolate. Be specific."
 - **Chadwick**: "The... brown one?"
 - **Frau Tortenmeister**: *adds 5 SOVS* "...The BROWN one. Yes."
-- **Bradley**: "Gregory will have the Linzer Torte, please."
+- **Bradley**: "The Linzer Torte, please."
 - **Frau Tortenmeister**: *perfect pronunciation, slight nod* "...Acceptable."
 
 ## Gameplay Mechanics
@@ -158,7 +158,7 @@ They're paying triple price because they pointed at the menu instead of pronounc
 **Learning System**:
 - Each successful pronunciation = that item permanently easier
 - After 3 perfect orders = "Cake Connoisseur" status (flat 10% discount)
-- Gregory has +20% bonus to all pronunciation checks
+- Bradley has +20% bonus to all pronunciation checks
 
 ### Charm Pricing System
 
@@ -252,7 +252,7 @@ High Charm reduces tourist markup:
 **Finding the Cart**:
 - **Chadwick**: "Is that... a CAKE CART? With a VELVET ROPE?!"
 - **Lord Pilsner**: "Dude, Sinfonia takes dessert SERIOUSLY. This is CULTURE."
-- **Bradley**: "Gregory notes the prices visible from here appear... aggressive."
+- **Bradley**: "The prices visible from here appear... aggressive."
 
 **In the Queue**:
 - **Chadwick**: "Why is everyone whispering? It's just cake."
@@ -275,8 +275,8 @@ High Charm reduces tourist markup:
 **Post-Purchase**:
 - **Chadwick**: *eating* "Oh my god. This is INCREDIBLE. Worth every Sov."
 - **Lord Pilsner**: *eating* "Even the judgment tax?"
-- **Bradley**: *eating, satisfied* "Gregory pronounced everything correctly. Gregory paid 22 SOVS."
-- **Lord Pilsner**: "GREGORY."
+- **Bradley**: *eating, satisfied* "I pronounced everything correctly. I paid 22 SOVS."
+- **Lord Pilsner**: "BRADLEY."
 
 ## System Integration
 

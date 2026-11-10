@@ -354,11 +354,11 @@ If player is lost, Maeve helps:
 - **Chadwick**: "But the AESTHETIC—"
 - **Maeve**: "The aesthetic is a woman who'll break your phone. How's THAT for content?"
 - **Chadwick**: *puts phone away*
-- **Bradley**: "Gregory is here to purchase practical supplies for the party's continued functioning."
-- **Maeve**: *looks at Gregory* *looks at Lord Pilsner* *back to Gregory*
-- **Maeve**: "...the puppet's the sensible one? Right. That checks out actually. What do you need, love?"
+- **Bradley**: "I'm here for practical supplies."
+- **Maeve**: *looks at Bradley* *looks at Lord Pilsner* *back to Bradley*
+- **Maeve**: "...right. That checks out actually. What do you need, love?"
 - **Bradley**: "Full Recovery Kit, Energy Drinks, and Emergency Taxi Voucher."
-- **Maeve**: "Smart puppet. Discount for the only one with sense. 28 SOVS."
+- **Maeve**: "Discount for the only one with sense. 28 SOVS."
 
 ## System Integration
 ### Supply Hub Network

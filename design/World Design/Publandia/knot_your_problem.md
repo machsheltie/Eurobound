@@ -281,12 +281,9 @@ Eoin's pretzels are positioned near pubs deliberately:
 - **Chadwick**: "The VIBE of this guy! The AESTHETIC of not caring! This is CONTENT!"
 - **Eoin**: "Camera costs 10 SOVS."
 - **Chadwick**: "What? There's no— oh. OH. You're charging me to film. Respect."
-- **Bradley**: "Gregory appreciates the transactional clarity. Gregory finds emotional boundaries refreshing."
-- **Eoin**: *looks at puppet, looks at Lord Pilsner, decides not to ask*
 - **Eoin**: "...classic?"
-- **Bradley**: "Two please. Gregory and Lord Pilsner both require carbohydrates."
-- **Eoin**: "6 SOVS. Puppet doesn't need to eat. Charging you anyway. He's annoying."
-- **Bradley**: "Gregory accepts this assessment."
+- **Bradley**: "Two, please."
+- **Eoin**: "6 SOVS."
 
 ## System Integration
 ### Vendor Network

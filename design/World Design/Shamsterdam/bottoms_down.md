@@ -190,8 +190,8 @@
 - **Lord Pilsner** (Round 1): "This is basically vodka. I've trained for this."
 - **Lord Pilsner** (Round 3): "They all taste like... history? Is 'history' an answer?"
 - **Chadwick**: "I'm documenting everything. For posterity. The footage is... wow."
-- **Bradley**: "Gregory believes in me. Gregory's support is all I need."
-- **Bradley** (Final): "Gregory is concerned. I told Gregory I'm fine."
+- **Bradley**: "I'm fine. I'm doing fine."
+- **Bradley** (Final): "I said I'm fine."
 
 ### Traditional Drinking Method (The No-Hands Technique)
 **Cultural Tutorial**
@@ -327,9 +327,9 @@
 - **Lord Pilsner** (learning): "So I just... bow? To the DRINK? This is the most Dutch thing I've ever— okay actually that's smooth."
 - **Chadwick**: "The footage in here is going to be GOLDEN. The lighting is ATROCIOUS but the CONTENT—"
 - **Chadwick** (post-gauntlet): "I have... everything. On camera. I need to process what I've witnessed."
-- **Bradley** (entering): "Gregory is concerned about the sawdust. I told Gregory it's fine."
-- **Bradley** (gauntlet): "Gregory says the third one is older. Gregory has never been wrong."
-- **Bradley** (post): "Gregory and I are going to rest now. Here. On the floor. The sawdust is soft."
+- **Bradley** (entering): "The sawdust is fine. It's fine."
+- **Bradley** (gauntlet): "The third one is older."
+- **Bradley** (post): "I'm going to rest now. Here. On the floor. The sawdust is soft."
 
 ## System Integration
 ### Brewery Tour Quest Line

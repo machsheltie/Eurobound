@@ -259,9 +259,9 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 - **Chadwick**: "I'm getting footage of the storefront. The STOREFRONT only. Obviously."
 - **Chadwick** (inside): "The product design here is actually incredible. From an AESTHETIC standpoint."
 - **Chadwick** (purchasing): "Mystery Box. For CONTENT. The unboxing will be... something."
-- **Bradley**: "Gregory is uncomfortable. Gregory is waiting outside."
-- **Bradley** (dragged in): "Gregory says the educational poster is acceptable. Gregory respects public health."
-- **Bradley** (purchasing): "For SAFETY. These are for SAFETY. Gregory approves of safety."
+- **Bradley**: "I'm waiting outside."
+- **Bradley** (dragged in): "The educational poster is acceptable."
+- **Bradley** (purchasing): "For SAFETY. These are for SAFETY."
 
 ## System Integration
 ### Red Light District Network

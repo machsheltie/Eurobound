@@ -247,7 +247,7 @@ The stand's unique mechanic:
 - **Franz**: "It is a 'I will need a moment.'"
 
 **The Request**:
-- **Bradley**: "Gregory would like a ristretto, single origin if available, no sugar."
+- **Bradley**: "A ristretto, single origin if available, no sugar."
 - **Franz**: *stops* *turns* "...You. You are welcome here."
 - **Lord Pilsner**: "Why does HE get that reaction?!"
 - **Franz**: "Because HE understands."
@@ -255,7 +255,7 @@ The stand's unique mechanic:
 **Post-Quadruple**:
 - **Chadwick**: *vibrating* "I can SEE sounds now."
 - **Lord Pilsner**: *also vibrating* "Is the ground moving or is that me?"
-- **Bradley**: *calmly sipping ristretto* "Gregory warned you."
+- **Bradley**: *calmly sipping ristretto*
 - **Franz**: *watching with scientific interest* "Fascinating. The heart rate must be extraordinary."
 
 ## System Integration

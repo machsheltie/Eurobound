@@ -313,12 +313,13 @@ If player tries to buy prizes directly:
 - **Yolanda**: "The irony costs the same as the sincerity. What do you want?"
 - **Chadwick**: "The Used Glitter Hat. For the VISUAL."
 - **Yolanda**: "A classic choice. Someone's sweat is your style now. 100 tickets or 15 SOVS."
-- **Bradley**: "Gregory calculates that direct purchase is 40% more cost-effective than ticket redemption."
-- **Yolanda**: *stares at puppet* "...the puppet's right. Smart puppet."
-- **Bradley**: "Gregory recommends the Mystery Meat Corndog for HP restoration despite statistical nausea risk."
-- **Yolanda**: "The puppet understands value. The puppet can have the good batch. 8 SOVS."
-- **Lord Pilsner**: "WHY DOES THE PUPPET GET THE GOOD BATCH?"
-- **Yolanda**: "The puppet did the math. The puppet respects the system by understanding it. You threw rings at bottles for an hour."
+- **Bradley**: *counting the tickets again* "Eighty-five."
+- **Yolanda**: *sets a corndog from the fresh tray on the counter* "150 tickets. Or 8 SOVS, and it's this one, out of the good batch."
+- **Bradley**: "Why's the money one cheaper? What's wrong with it?"
+- **Yolanda**: *puts it back under the counter* "Nothing."
+- **Lord Pilsner**: "Bradley. BRADLEY. She's clearing stock. We take the ticket one. The one they don't want to let go of."
+- **Yolanda**: "You have 85 tickets. The mystery stickers are 5."
+- **Lord Pilsner**: *pocketing seventeen stickers* "That's a bulk deal. We just got a BULK DEAL."
 
 ## System Integration
 ### Circus Economy Network

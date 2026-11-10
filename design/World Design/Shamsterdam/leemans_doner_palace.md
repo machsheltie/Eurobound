@@ -294,7 +294,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 - **Chadwick** (eating): *unintelligible but enthusiastic*
 - **Bradley**: "The veal, please."
 - **Bradley** (to Mehmet): "Sir, your craft is remarkable."
-- **Mehmet** (to Bradley): "...your puppet is impressed? ...okay. Enjoy döner."
+- **Mehmet** (to Bradley): "...okay. Enjoy döner."
 - **Bradley** (eating): "This rivals the Debaucheryville döner. I'm conflicted."
 
 ## System Integration

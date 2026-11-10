@@ -246,8 +246,8 @@
 - **Lord Pilsner** (Giggling Figure): "JESUS—I mean, I knew it was going to— I'm fine."
 - **Chadwick** (everywhere): "Content. This is CONTENT. I can't post ANY of this but it's CONTENT."
 - **Chadwick** (John Lennon): "Wait, actually? THE John Lennon? This is actually interesting."
-- **Bradley** (Throne): "Gregory will NOT be sitting on that. I have STANDARDS for him."
-- **Bradley** (exit): "I don't know how to feel. Gregory doesn't know how to feel either."
+- **Bradley** (Throne): "I will NOT be sitting on that. I have STANDARDS."
+- **Bradley** (exit): "I don't know how to feel."
 
 ## System Integration
 ### Photo Album: "Venus Temple Collection"

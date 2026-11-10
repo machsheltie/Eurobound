@@ -318,10 +318,9 @@ If player tries to ask about the convenient placement:
 - **Siobhan**: "Of course I knew. You're the main characters. Now eat."
 - **Chadwick**: "The main... wait, what does THAT mean?"
 - **Siobhan**: "It means you need the Protagonist's Portion. 25 SOVS. No more questions."
-- **Bradley**: "Gregory finds Siobhan's precognition statistically improbable."
-- **Siobhan**: "The puppet's right. It IS improbable. Yet here we are. Sausage roll?"
-- **Bradley**: "...Gregory will take two. Gregory has learned not to question convenient assistance."
-- **Siobhan**: "Smart puppet. You'll go far. All three of you will. I've seen it."
+- **Siobhan**: "Sausage roll?"
+- **Bradley**: "...I'll take two."
+- **Siobhan**: "Smart. You'll go far. All three of you will. I've seen it."
 - **Bradley**: "Seen it WHERE?"
 - **Siobhan**: "Eat your sausage roll, dear."
 

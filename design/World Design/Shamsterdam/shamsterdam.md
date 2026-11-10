@@ -310,7 +310,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - Agent Havok at Café de Schaamte
 - "Heist" of the Museum of Questionable Art
 - Kinder egg mistaken for priceless artifact
-- Gregory the Hippo acquisition
+- Plastic hippo acquisition
 - **Reward**: "The Shamsterdam Three" title, "Egg-filtration Specialist," NFT acquisition
 
 #### The Stay Away Campaign
@@ -486,7 +486,6 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 ### To Sinfonia
 - The "cultural alibi" of museum visits prepares them for Vienna pretension
 - They've learned nothing about refined behavior
-- Gregory the Hippo comes along for classical music exposure
 
 ---
 
@@ -516,7 +515,6 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - Delayed messages from NPCs you met
 - Dennis checking if you've sold your NFT yet (you can't)
 - Agent Havok's mission report filing confirmations
-- Gregory the Hippo doesn't text (he's a plastic hippo)
 
 ---
 

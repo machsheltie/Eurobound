@@ -310,9 +310,9 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
 - **Chadwick**: "The craftsmanship! The TRADITION! This is amazing B-roll."
 - **Chadwick** (trying on): "I'm walking. This is FINE. This is— are my feet supposed to— is that BLOOD?"
 - **Chadwick** (purchasing): "The painted ones. For my wall. It's CONTENT. Wall content."
-- **Bradley**: "Gregory is concerned about the material. Gregory thinks leather was invented for reasons."
-- **Bradley** (trying on): "Gregory was RIGHT. Gregory is ALWAYS right about shoes."
-- **Bradley** (purchasing): "Miniatures. Gregory approves of miniatures. Miniatures don't cause blisters."
+- **Bradley**: "Leather was invented for reasons."
+- **Bradley** (trying on): "...I was right about the leather."
+- **Bradley** (purchasing): "Miniatures. Miniatures don't cause blisters."
 
 ## System Integration
 ### Souvenir Psychology Network

@@ -327,9 +327,9 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 - **Chadwick** (trying things): "Does this look good on camera? I need to know if this translates."
 - **Eva**: "Everything in here looks good on camera. That's the point."
 - **Chadwick** (satisfied): "Then I need EVERYTHING."
-- **Bradley**: "Gregory is concerned about the material sourcing. Gregory has ethical questions about leather."
+- **Bradley**: "Do you have anything that isn't leather?"
 - **Zdeněk**: "The faux leather is there. No animals. Same transformation potential."
-- **Bradley**: "Gregory appreciates the alternative. Gregory will try the pleather jacket."
+- **Bradley**: "I'll try the pleather jacket."
 - **Zdeněk**: "Pleather is a valid choice. The statement is what matters, not the cow."
 
 ## System Integration

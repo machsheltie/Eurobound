@@ -164,9 +164,9 @@ They were identified within 30 seconds by their American accents, posture, and c
 - **Narrator**: *It was not a recognized style.*
 
 **The Rumor Trading**:
-- **Bradley**: "Gregory shall acquire intelligence through this 'Whisper Gallery.'"
+- **Bradley**: "I shall acquire intelligence through this 'Whisper Gallery.'"
 - **Masked Stranger**: "I hear the Americans are attempting to infiltrate. Poorly."
-- **Bradley**: "...Gregory hears this as well."
+- **Bradley**: "...I hear this as well."
 
 ## Gameplay Mechanics
 
@@ -400,11 +400,11 @@ The Baroness encounter is pure social combat:
 - **Chadwick**: "Then why did it hurt ME?!"
 
 **The Whisper Gallery**:
-- **Bradley**: "Gregory has acquired valuable intelligence."
+- **Bradley**: "I have acquired valuable intelligence."
 - **Lord Pilsner**: "What'd you learn?"
 - **Bradley**: "That we are being discussed. Unfavorably."
 - **Lord Pilsner**: "...That's the intelligence?"
-- **Bradley**: "Gregory considers this valuable."
+- **Bradley**: "I consider it valuable."
 
 **Meeting the Baroness**:
 - **Lord Pilsner**: "Your Baroness-ness, I am the Count of—"

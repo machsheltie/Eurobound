@@ -326,10 +326,8 @@ If player is DRUNK, Murphy says nothing. Business is business.
 - **Chadwick**: "Discount products are SMART shopping. This is FINANCIAL RESPONSIBILITY."
 - **Chadwick** (morning): "I think the budget lager was... not... optimal..."
 - **Murphy**: "You get what you pay for. Sometimes less."
-- **Bradley**: "Gregory advises against unlabeled consumables. Gregory also recognizes we have no alternatives at this hour."
-- **Murphy**: "The puppet understands economics. The puppet is wise."
-- **Bradley** (purchasing): "Gregory will take the sealed products only. Gregory learns from observation."
-- **Murphy**: "Smart puppet. First time someone's done that first visit."
+- **Bradley** (purchasing): "I'll take the sealed products only."
+- **Murphy**: "Smart. First time someone's done that first visit."
 
 ## System Integration
 ### Late-Night Economy Network

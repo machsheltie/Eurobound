@@ -258,9 +258,9 @@ If game includes airport/customs checkpoint:
 - **Chadwick**: "The color palette here is INSANE. This is B-roll GOLD."
 - **Chadwick** (purchasing): "I'm getting the Rainbow Mix. My apartment is going to be BOTANICAL."
 - **Chadwick** (later): "When do we plant these? Is there a deadline? Is it urgent?"
-- **Bradley**: "Gregory thinks we should get the wooden ones. Gregory is concerned about survival rates."
-- **Bradley** (overruled): "Fine, real bulbs. But Gregory WARNED us."
-- **Bradley** (epilogue): "The tulips didn't grow. Gregory knew. Gregory ALWAYS knew."
+- **Bradley**: "We should get the wooden ones."
+- **Bradley** (overruled): "Fine. Real bulbs."
+- **Bradley** (epilogue): "The tulips didn't grow."
 
 ## System Integration
 ### Souvenir Psychology Network

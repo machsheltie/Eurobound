@@ -375,11 +375,7 @@ Paddy invokes "house rules" whenever the house is losing too much:
 - **Chadwick**: "Underground gambling content is TRENDING. This is DOCUMENTARY MATERIAL."
 - **Chadwick** (losing): "I'm not LOSING, I'm INVESTING in the NARRATIVE."
 - **Chadwick** (debt): "The debt storyline is actually COMPELLING. This is CHARACTER DEVELOPMENT."
-- **Bradley**: "Gregory calculates the true odds at approximately 45% player advantage at best. Gregory advises leaving."
-- **Lord Pilsner**: "Gregory doesn't understand GAMBLING."
-- **Bradley** (watching losses): "Gregory was correct. Gregory always was."
-- **Bradley** (to Paddy): "Gregory notes your business model is mathematically predatory."
-- **Paddy**: "The puppet understands business. I respect the puppet."
+- **Bradley**: "I'll wait outside."
 
 ## System Integration
 ### Underground Economy Network

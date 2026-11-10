@@ -245,7 +245,7 @@
 - **Lord Pilsner** (post-show): "That was... that was definitely... something."
 - **Chadwick** (pre-show): "I need to document this. For the group. For POSTERITY."
 - **Chadwick** (post-show): "My phone got taken. Probably for the best. I didn't see anything anyway."
-- **Bradley** (pre-show): "Gregory doesn't need to see this. I'll cover his eyes. He's plastic but still."
+- **Bradley** (pre-show): "I'll wait in the lobby. ...fine. I'll come in."
 - **Bradley** (post-show): "I don't know how to describe what I saw. I don't know if I want to."
 
 ## System Integration
@@ -261,7 +261,7 @@
 After visiting Casa Rosé, bros will randomly reference the experience:
 - **Lord Pilsner's Version**: Sophisticated, worldly, "really quite artistic"
 - **Chadwick's Version**: "Unfortunately I didn't get footage but trust me it was CONTENT"
-- **Bradley's Version**: Somehow involves Gregory having an opinion, description is metaphors only
+- **Bradley's Version**: Description is metaphors only
 - **Player Note**: All three versions contradict each other
 
 ### Cross-Location Dependencies

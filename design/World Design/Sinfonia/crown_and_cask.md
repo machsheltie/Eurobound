@@ -218,7 +218,7 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 - **Chadwick**: "Is that guy wearing a CROWN?"
 - **König Klaus**: "SUBJECTS! APPROACH!"
 - **Lord Pilsner**: "Did he just call us subjects?"
-- **Bradley**: "Gregory believes we have entered a themed establishment."
+- **Bradley**: "I believe we have entered a themed establishment."
 - **König Klaus**: "IT IS NOT A THEME! It is a BIRTHRIGHT!"
 
 **The Ceremony**:
@@ -227,12 +227,12 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 - **König Klaus**: *disappointed pause* "...'Sure.' Very well. NEXT question."
 - **Chadwick**: *kneeling dramatically* "I SWEAR UPON MY HONOR!"
 - **König Klaus**: *delighted* "NOW THIS is a proper subject!"
-- **Bradley**: "Gregory swears to honor the biochemical fermentation process."
+- **Bradley**: "I swear to honor the biochemical fermentation process."
 - **König Klaus**: "...I'll allow it."
 
 **Post-Ceremony**:
-- **König Klaus**: *knighting with tap handle* "Rise, Sir Pilsner, Sir Chadwick, Sir... Gregory?"
-- **Bradley**: "Gregory accepts this designation."
+- **König Klaus**: *knighting with tap handle* "Rise, Sir Pilsner, Sir Chadwick, Sir... Bradley?"
+- **Bradley**: "I accept this designation."
 - **Lord Pilsner**: "We're KNIGHTS now!"
 - **Chadwick**: "This is going on the resume!"
 - **König Klaus**: "Your knighthood is ETERNAL! Return for the anniversary ceremony! There is a SASH!"

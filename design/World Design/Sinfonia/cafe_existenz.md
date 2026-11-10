@@ -131,10 +131,10 @@ They're sitting in the tourist section, their order is "forgotten," and three ta
 - **Actual Result**: Becomes target of three-hour lecture on why his understanding is "reductive"
 
 **The Bradley Exception**:
-- **Bradley**: "Gregory has studied Wittgenstein. Gregory believes language games are—"
+- **Bradley**: "I've studied Wittgenstein. I believe language games are—"
 - **Philosopher**: "Ah, a STUDENT! How... adorable. Have you read him in the original German?"
-- **Bradley**: "Gregory... has not."
-- **Philosopher**: "Then Gregory has not read him at all."
+- **Bradley**: "I... have not."
+- **Philosopher**: "Then you have not read him at all."
 
 ## Gameplay Mechanics
 
@@ -312,7 +312,7 @@ Extended time in Café Existenz costs Bravado:
 **Entering**:
 - **Lord Pilsner**: "Dude, this place is FANCY. Very... Euro. Very intellectual. I'm gonna order something SOPHISTICATED."
 - **Chadwick**: "The AESTHETIC! The VIBE! This is PEAK content! 'Chadwick does PHILOSOPHY'!"
-- **Bradley**: "Gregory is familiar with this environment. Gregory... does not enjoy being familiar with this environment."
+- **Bradley**: "I'm familiar with this environment. I... do not enjoy being familiar with this environment."
 
 **Ordering**:
 - **Lord Pilsner**: "I'll have a... *stares at menu* ...large coffee?"
@@ -329,7 +329,7 @@ Extended time in Café Existenz costs Bravado:
 
 **After Losing Debate**:
 - **Lord Pilsner**: "I don't even know what I said wrong. I just agreed with him!"
-- **Bradley**: "Gregory warned that 'agreeing' with a philosopher is often the worst response."
+- **Bradley**: "You agreed with him."
 - **Chadwick**: "My Bravado is TANKING. I feel... small. Intellectually."
 
 ## System Integration

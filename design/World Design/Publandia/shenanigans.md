@@ -430,11 +430,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 - **Chadwick** (losing): "The CONTENT of me losing is actually COMPELLING. This is REAL. This is STRUGGLE."
 - **Chadwick** (Wise Fool): "I've been PLAYED. And I'm going to MONETIZE that experience. Mickey, can I interview you?"
 - **Mickey**: "For a cut of the ad revenue."
-- **Bradley**: "Gregory calculates the wheel's actual probability at 5% for prizes. Gregory advises against participation."
-- **Lord Pilsner**: "Gregory doesn't understand LUCK."
-- **Bradley** (after losses): "Gregory was correct. Gregory takes no pleasure in this."
-- **Bradley** (Wise Fool): "Gregory appreciates the transparency of acknowledged deception. Gregory prefers honest dishonesty."
-- **Mickey**: "The puppet gets it. The puppet is wise."
+- **Bradley**: "I'll hold the coats."
 
 ## Brewery Tour Integration
 

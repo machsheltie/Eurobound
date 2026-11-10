@@ -238,7 +238,7 @@ The Dancing Stein doesn't brew on-site — their beer is supplied by **The Spinn
 - **Lord Pilsner**: "Why is the door SPINNING?"
 - **Chadwick**: *stumbles through in wrong tempo*
 - **Herr Drehmeister**: "Ah! New dancers! One-two-three your way to the bar!"
-- **Bradley**: *analyzing floor* "Gregory calculates optimal waltz pattern to minimize travel time."
+- **Bradley**: *analyzing floor* "There is an optimal waltz pattern to minimize travel time."
 - **Herr Drehmeister**: "There is no OPTIMAL! There is only the DANCE!"
 
 **Attempting to Order**:
@@ -262,8 +262,8 @@ The Dancing Stein doesn't brew on-site — their beer is supplied by **The Spinn
 **Post-Stamp**:
 - **Chadwick**: "That was EXHAUSTING. Can we sit now?"
 - **Herr Drehmeister**: "You EARNED sitting! For now! But then — MORE DANCING!"
-- **Bradley**: "Gregory's calculations were correct. Waltz efficiency is 78% of optimal walking speed."
-- **Lord Pilsner**: "I don't think efficiency was the point, Gregory."
+- **Bradley**: "Waltz efficiency is 78% of optimal walking speed."
+- **Lord Pilsner**: "I don't think efficiency was the point, Bradley."
 
 ## System Integration
 

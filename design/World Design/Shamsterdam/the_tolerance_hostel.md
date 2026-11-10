@@ -284,8 +284,8 @@ Each night's rest affects next-day performance:
 - **Lord Pilsner** (morning): "I didn't sleep but I EXPERIENCED something."
 - **Chadwick**: "The content potential here is INSANE. Real backpacker lifestyle stuff."
 - **Chadwick** (morning): "Someone took my phone charger. Not to accuse anyone but *stares at Bed 12*"
-- **Bradley**: "Gregory gets his own locker. Non-negotiable. His safety is paramount."
-- **Bradley** (morning): "Gregory and I survived. We're bonded now. War buddies."
+- **Bradley**: "I'm getting my own locker. Non-negotiable."
+- **Bradley** (morning): "We survived. We're bonded now. War buddies."
 
 ## System Integration
 ### Save Point Functionality

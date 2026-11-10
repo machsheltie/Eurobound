@@ -246,8 +246,8 @@
 - **Lord Pilsner** (receiving): "Okay, so... this is one? The bacon is... those cubes? This is what we ordered?"
 - **Chadwick** (ordering): "I want the American style. If they have AMERICAN I want AMERICAN."
 - **Chadwick** (receiving): "It's three tiny ones. Why are they thin. Why are they all thin."
-- **Bradley** (ordering): "Gregory wants to try Dutch authentic. Apple. With stroop."
-- **Bradley** (receiving): "Actually this is pretty good. Gregory approves. You guys ordered wrong."
+- **Bradley** (ordering): "I'll try the authentic one. Apple. With stroop."
+- **Bradley** (receiving): "Actually this is pretty good. You guys ordered wrong."
 
 ## System Integration
 ### "Expectation Adjustment" Status Effect

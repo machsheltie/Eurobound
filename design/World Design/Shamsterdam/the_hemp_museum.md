@@ -302,8 +302,8 @@
 - **Lord Pilsner** (industrial section): "So hemp is like... ropes? Cool. Cool. What's upstairs?"
 - **Chadwick** (growing room): "THE PLANTS. I need to document the plants. This is EDUCATIONAL CONTENT."
 - **Chadwick** (gift shop): "I need the shirt. Ironically. For the irony."
-- **Bradley** (smell jars): "Gregory, smell this one. He can't smell, he's plastic, but still."
-- **Bradley** (gift shop): "Do they have anything in Gregory's size?"
+- **Bradley** (smell jars): "Smell this one. No, actually don't."
+- **Bradley** (gift shop): "Do they have anything in my size?"
 
 ## System Integration
 ### Cultural Alibi System

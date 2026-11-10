@@ -294,10 +294,9 @@ The cart is named "The Bohemian Trap" because:
 - **Chadwick**: "Viktor's whole aesthetic is INCREDIBLE. This is CONTENT. This is AUTHENTIC EUROPE."
 - **Chadwick** (recording ritual): "The water dripping. The cloud forming. This is ASMR. This is POETRY."
 - **Chadwick** (after): "My controls are... why am I walking backward? This is the FAIRY. She's MESSING with me."
-- **Bradley**: "Gregory has concerns about the thujone content. Gregory has researched this."
 - **Bradley** (to Viktor): "Is the hallucinogenic effect scientifically documented, or largely apocryphal?"
 - **Viktor**: "The fairy does not answer to science. She answers to belief."
-- **Bradley** (after): "Gregory is... Gregory is fine. Gregory sees nothing. Gregory is perhaps slightly to the left of where he intended."
+- **Bradley** (after): "I'm... I'm fine. I see nothing. I am perhaps slightly to the left of where I intended."
 
 ## System Integration
 ### Absinthe Arcade Network

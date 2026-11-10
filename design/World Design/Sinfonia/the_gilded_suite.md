@@ -149,13 +149,13 @@ They've signed a 27-clause agreement they didn't read and are being monitored by
 - **Lord Pilsner**: "This place is INCREDIBLE. And only 150 SOVS?! That's like... nothing for a PALACE!"
 - **Herr Gastfreund**: "We pride ourselves on... accessibility. *smile intensifies* Sign here, please."
 - **Lord Pilsner**: *signs without reading*
-- **Bradley**: "Gregory suggests we review the terms—"
+- **Bradley**: "We should review the terms—"
 - **Lord Pilsner**: "ALREADY SIGNED, Bradley. Commitment!"
 
 **The First Night**:
 - **Chadwick**: "Is that portrait... looking at me?"
 - **Lord Pilsner**: "It's HISTORIC ART, Chadwick. It's SUPPOSED to look alive."
-- **Bradley**: "Gregory notes the eyes have mechanical components."
+- **Bradley**: "The eyes have mechanical components."
 - **Lord Pilsner**: "...Period-accurate mechanical components?"
 
 **The Morning**:
@@ -351,12 +351,12 @@ Players can compare experiences (couchsurfing at Moderato vs. staying here).
 - **Lord Pilsner**: "This is INCREDIBLE service! He already knows our names!"
 - **Chadwick**: "How DOES he know our names?"
 - **Herr Gastfreund**: "I know ALL my guests. *eternal smile* Intimately."
-- **Bradley**: "Gregory is concerned."
+- **Bradley**: "I'm concerned."
 
 **First Night**:
 - **Chadwick**: "Did anyone else hear footsteps... INSIDE the wall?"
 - **Lord Pilsner**: "Old buildings settle, Chadwick. That's like, palace noises."
-- **Bradley**: "Gregory notes the footsteps match our walking patterns."
+- **Bradley**: "The footsteps match our walking patterns."
 - **Lord Pilsner**: "...Coincidence."
 
 **The Breakfast**:
@@ -364,12 +364,12 @@ Players can compare experiences (couchsurfing at Moderato vs. staying here).
 - **Other Guest**: "The breakfast buffet is exceptional. Five stars. Never leaving."
 - **Other Guest 2**: "The breakfast buffet is exceptional. Five stars. Never leaving."
 - **Lord Pilsner**: "They're just... really impressed by the buffet?"
-- **Bradley**: "Gregory suggests we check out. Immediately."
+- **Bradley**: "We should check out. Immediately."
 
 **Discovering the Basement**:
 - **Lord Pilsner**: "Okay, so the nice host might be... hundreds of years old?"
 - **Chadwick**: "And the other guests might be... trapped forever?"
-- **Bradley**: "Gregory SUGGESTED we check out. Gregory was IGNORED."
+- **Bradley**: "I SUGGESTED we check out. I was IGNORED."
 - **Lord Pilsner**: "Look, the continental breakfast is REALLY good—"
 - **Bradley**: "GREGORY RESTS HIS CASE."
 

@@ -372,12 +372,9 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **Chadwick** (filming): "I'm documenting, not fighting. I'm the OBSERVER."
 - **Ciaran**: "Observers pay double. Or you can 'participate' for standard fee."
 - **Chadwick** (fighting): "I'm doing this for the CONTENT— why is he punching me while I'm TALKING?"
-- **Bradley**: "Gregory advises against physical confrontation. Gregory lacks combat training."
-- **Lord Pilsner**: "Gregory can hold my drink."
-- **Bradley** (watching): "Gregory notes that Lord Pilsner's technique is... nonexistent."
-- **Bradley** (after Lord Pilsner loses): "Gregory was correct. Gregory takes no pleasure in correctness."
-- **Gregory** (if forced to fight): "Gregory is a PUPPET. Gregory has no MUSCLES. This is BULLYING."
-- **Ciaran**: "...the puppet has a point. Puppet fights are a different category."
+- **Lord Pilsner**: "Bradley can hold my drink."
+- **Bradley** (holding the drink): "I'd rather not fight anyone."
+- **Bradley** (if forced to fight): "I have no MUSCLES. This is BULLYING."
 
 ## System Integration
 ### Underground Violence Network

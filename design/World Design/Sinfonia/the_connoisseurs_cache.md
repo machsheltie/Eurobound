@@ -260,11 +260,11 @@ Every purchase includes a certificate:
 - **Herr Kurator**: "But you'll eat them KNOWINGLY."
 
 **Bradley's Appreciation**:
-- **Bradley**: "Gregory would like to hear about the Opera Glasses."
+- **Bradley**: "I'd like to hear about the Opera Glasses."
 - **Herr Kurator**: *eyes light up* "A TRUE connoisseur! These glasses were owned by Countess Maria von—"
 - *Twenty minutes later*
-- **Bradley**: *taking notes* "Fascinating. Gregory appreciates the context."
-- **Lord Pilsner**: "GREGORY."
+- **Bradley**: *taking notes* "Fascinating."
+- **Lord Pilsner**: "BRADLEY."
 - **Bradley**: "Knowledge has value."
 - **Herr Kurator**: "THIS one understands."
 

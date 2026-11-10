@@ -197,7 +197,7 @@
 **Bros' Combat Dialogue**:
 - **Lord Pilsner**: "It's made of BREAD. How is BREAD this AGGRESSIVE?"
 - **Chadwick**: "I'm getting this. This is CONTENT. The golem is CONTENT."
-- **Bradley**: "Gregory says we should use fire. Gregory has never been wrong."
+- **Bradley**: "We should use fire."
 
 ### Tasting Flight System
 **Post-Boss, Second Floor**
@@ -236,7 +236,7 @@
 **Bros' Selfie Reactions**:
 - **Chadwick**: "One more. ONE MORE. The blade was in the wrong— ONE MORE."
 - **Lord Pilsner**: "Just take it, I'm getting cold, the wind is— TAKE IT."
-- **Bradley**: "Gregory won't look at the camera. Gregory is afraid of heights."
+- **Bradley**: "I'm not looking at the camera. I'm looking at the ground."
 
 ### Consumable: Windmill Wit
 **Type**: Alcoholic Beverage / Brewery Tour Reward
@@ -331,7 +331,6 @@
 - **Lord Pilsner** (tasting): "I respect the grain. I RESPECT it. I just also need to sit down."
 - **Chadwick** (first floor): "The grinder is GRINDING. Real grain. Real CONTENT."
 - **Chadwick** (post-golem): "I fought bread. I have footage of fighting BREAD. This trip is INSANE."
-- **Bradley**: "Gregory thinks the brewing process is fascinating. Gregory is not affected by the spinning."
 - **Bradley** (tasting): "Actually, this is really good. The spinning adds... something."
 
 ## System Integration

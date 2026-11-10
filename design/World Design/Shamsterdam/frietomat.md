@@ -148,7 +148,7 @@
 - **Reveal**: Only visible after purchase
 - **Possible Contents**: Seasonal specials, test items, chef's experiments
 - **Effect Range**: Could be great, could be "interesting"
-- **Bros' Reaction**: "Gregory dared me to try the mystery one. Gregory believes in me."
+- **Bros' Reaction**: "They dared me to try the mystery one."
 
 ### Time-Based Crowd Density
 | Time | Crowd Level | Crowd Type | Vibe |
@@ -253,8 +253,8 @@
 - **Lord Pilsner** (3 AM): "The kroket understands me. The kroket GETS it."
 - **Chadwick**: "I'm filming the wall. The WALL itself is content. The wall is ART."
 - **Chadwick** (eating): "This is better than 18 SOVS pancakes. I need to DOCUMENT this realization."
-- **Bradley**: "Gregory approves of Frietomat. Frietomat doesn't judge. Gregory respects that."
-- **Bradley** (mystery item): "Gregory chose the mystery. Gregory regrets nothing."
+- **Bradley**: "Frietomat doesn't judge."
+- **Bradley** (mystery item): "I chose the mystery. I regret nothing."
 
 ## System Integration
 ### Post-Activity Recovery Point

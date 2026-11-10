@@ -264,7 +264,7 @@ When trying on equipment:
 - **Monsieur Aiguille**: *circling Lord Pilsner* "The shoulders... the posture... the fabric choices..."
 - **Lord Pilsner**: "What about them?"
 - **Monsieur Aiguille**: "Nothing that can't be fixed. With time. And investment."
-- **Bradley**: "Gregory would like to see the monocles."
+- **Bradley**: "I'd like to see the monocles."
 - **Monsieur Aiguille**: *slight approval* "A man of focus. This way."
 
 **Trying On**:
@@ -285,7 +285,7 @@ When trying on equipment:
 - **Lord Pilsner**: *wearing cape* "I feel like a DIFFERENT PERSON."
 - **Monsieur Aiguille**: "You look like one. My work here is done."
 - **Chadwick**: "Did we just get manipulated into spending 800 SOVS?"
-- **Bradley**: "Gregory believes the correct term is 'elevated.'"
+- **Bradley**: "Elevated."
 
 ## System Integration
 

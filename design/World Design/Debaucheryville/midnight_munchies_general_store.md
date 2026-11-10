@@ -315,10 +315,7 @@ The satire is the universal experience of the late-night convenience store trip:
 - **Chadwick**: "Content opportunity: '3 AM Shopping Challenge.' What can I buy with 20 SOVS?"
 - **Věra**: "At this hour? Energy drink, aspirin, kebab, and 2 SOVS change."
 - **Chadwick**: "Perfect. PERFECT. This is REAL. This is AUTHENTIC DESPERATION."
-- **Bradley**: "Gregory notes the markup is approximately 30% above daytime prices."
-- **Věra**: "Gregory can calculate. Good for Gregory."
-- **Bradley**: "Gregory respects the business model. Gregory will still purchase, despite objections."
-- **Věra**: "Gregory is a realist. I like Gregory."
+- **Bradley**: "I'll take the aspirin as well."
 
 ## System Integration
 ### Late-Night Survival Network

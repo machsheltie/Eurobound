@@ -316,9 +316,9 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - **Chadwick**: "I'm documenting this for... research. The CBD market is FASCINATING. Legally."
 - **Chadwick** (purchasing): "The grinder is for TOBACCO. The papers are for... ROLLING things. LEGAL things."
 - **Chadwick** (seeds): "COLLECTOR'S items. I'm a COLLECTOR now. Of seeds. That I will NOT plant."
-- **Bradley**: "Gregory is confused about the legality matrix. Gregory recommends the hemp bag. Hemp bags are safe."
-- **Bradley** (to Daan): "Can you explain the CBD situation to Gregory? Gregory needs to understand before purchasing."
-- **Bradley** (customs): "Gregory says to put everything in checked luggage. Gregory is risk-averse."
+- **Bradley**: "I'll take the hemp bag. Hemp bags are safe."
+- **Bradley** (to Daan): "Could you explain the CBD situation again? Slowly."
+- **Bradley** (customs): "Everything goes in checked luggage."
 
 ## System Integration
 ### Drug Tourism Adjacent Network

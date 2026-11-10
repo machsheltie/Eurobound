@@ -316,11 +316,9 @@ Cormac's prices are "negotiable" within limits:
 - **Chadwick**: "This is PERFECT for content! Before and after confidence! The TRANSFORMATION!"
 - **Cormac**: "The Transformation is 40 SOVS. Or are we talking METAPHORICAL transformation?"
 - **Chadwick**: "...both? Give me both."
-- **Bradley**: "Gregory is skeptical of claims unsupported by peer-reviewed evidence."
-- **Cormac**: "The puppet speaks! A SKEPTIC! My favorite customers! Skeptics become BELIEVERS!"
-- **Bradley**: "Gregory will observe from a distance and evaluate results empirically."
+- **Bradley**: "I'll observe from a distance."
 - **Cormac**: "Fair! FAIR! But when your friends succeed and you wonder WHY... I'll be HERE."
-- **Gregory** (if others succeed): "...Gregory may have underestimated the placebo effect. Gregory will try the Basic Boldness. For SCIENCE."
+- **Bradley** (if others succeed): "...I'll try the Basic Boldness. For SCIENCE."
 
 ## System Integration
 ### Vendor Network

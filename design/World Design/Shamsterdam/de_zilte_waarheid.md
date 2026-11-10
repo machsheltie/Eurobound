@@ -170,10 +170,10 @@
 - *After (failure)*: "I was filming vertically. Doesn't count. We go again."
 
 **Bradley's Arc:**
-- *Before*: "Gregory has concerns about raw fish. Gregory is usually right."
-- *During*: "Gregory... Gregory I can't hear you right now... I'm busy..."
-- *After (success)*: "Gregory is proud. Gregory didn't think I had it in me."
-- *After (failure)*: "Gregory warned me. Gregory is always warning me."
+- *Before*: "I have concerns about raw fish."
+- *During*: "...I'm busy..."
+- *After (success)*: "I didn't think I had it in me."
+- *After (failure)*: "I had concerns."
 
 ### Status Effects
 **Fish Breath**
@@ -280,8 +280,8 @@
 - **Lord Pilsner** (receiving): "It's... it's looking at me. Do they always look at you?"
 - **Chadwick** (filming): "Everyone face the camera. This is the SHOT. The HERO shot."
 - **Chadwick** (eating): *incoherent but still trying to provide commentary*
-- **Bradley** (holding fish): "Gregory says I should trust the fish. Gregory has never steered me wrong."
-- **Bradley** (post): "Gregory is emotional. Gregory didn't know fish could mean so much."
+- **Bradley** (holding fish): "I'm going to trust the fish."
+- **Bradley** (post): "I didn't know fish could mean so much."
 
 ## System Integration
 ### Cultural Courage Network

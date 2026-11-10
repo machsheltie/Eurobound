@@ -327,10 +327,8 @@ Finbar doesn't just sell shoes. He FITS them:
 - **Chadwick**: "This is CONTENT. The INTENSITY! The DRAMA! Over SHOES!"
 - **Finbar**: "Young man, I've seen your generation's shoe choices. You think this is drama? This is INTERVENTION."
 - **Chadwick**: "...fair point, actually."
-- **Bradley**: "Gregory notes that proper footwear is statistically correlated with reduced injury rates during extended ambulatory activities."
-- **Finbar**: *pauses* "...the puppet understands. The puppet gets fitted for free."
-- **Bradley**: "Gregory appreciates the recognition of Gregory's wisdom."
-- **Finbar**: "Don't let it go to your head. You don't HAVE feet. But you understand. That's enough."
+- **Bradley**: "I brought arch supports. My own. From home."
+- **Finbar**: *pauses* "...this one gets fitted for free."
 
 ## System Integration
 ### Equipment Network

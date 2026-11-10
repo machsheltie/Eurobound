@@ -252,7 +252,6 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
   - "Night shift is the real hostel. Day shift is tourism. This is anthropology."
   - "Someone locked out? Third time tonight. Here's the spare. Don't lose it."
   - "The basement Wi-Fi is actually better. Don't tell anyone. It's my secret spot."
-  - "I've seen your group before. The puppet guy is my favorite. Don't tell him."
 
 **Cleaning Staff (Invisible Until Needed)**
 - **Role**: Maintains the illusion of cleanliness
@@ -310,9 +309,9 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 - **Chadwick**: "12-bed dorm content is GOLD. Real travelers. Real stories. Real... smell."
 - **Chadwick** (night): "Recording the ambient noise. For ATMOSPHERE. Also because I can't sleep."
 - **Chadwick** (reviewing footage): "I got six hours of snoring and one guy's existential crisis. CONTENT."
-- **Bradley**: "Gregory is concerned about the hygiene protocol. Gregory wants his own bed."
-- **Bradley** (night): "Gregory can't sleep. Gregory says the bunk is 'structurally dubious.'"
-- **Bradley** (morning): "Gregory had a 3 AM conversation with the Australian. Gregory learned things. Gregory has questions."
+- **Bradley**: "I'd like my own bed. I'll pay the difference."
+- **Bradley** (night): "I can't sleep. This bunk is structurally dubious."
+- **Bradley** (morning): "I had a 3 AM conversation with the Australian. I learned things. I have questions."
 
 ## System Integration
 ### Rest & Recovery Hub

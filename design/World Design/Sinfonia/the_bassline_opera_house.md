@@ -142,14 +142,14 @@ The real joke is that both crowds think they're the "real" audience and the othe
 - **What is ACTUALLY happening**: They're falling asleep, mispronouncing everything, and being quietly mocked
 - **Lord Pilsner**: Falls asleep during Act 1, snores audibly, claims he "felt the emotion"
 - **Chadwick**: Tries to livestream the opera, gets phone confiscated, causes scene
-- **Bradley**: "Gregory has researched the libretto extensively." *gets composer wrong*
+- **Bradley**: "I read the libretto." *gets composer wrong*
 
 **Night Mode Delusions**:
 - **What bros THINK is happening**: "We're VIPs at the hottest spot in Sinfonia."
 - **What is ACTUALLY happening**: They barely got in, they're near the speakers, their ears are bleeding
 - **Lord Pilsner**: "This DJ is playing MY request!" *DJ is playing pre-programmed set*
 - **Chadwick**: "I know the promoter!" *promoter doesn't know him*
-- **Bradley**: "Gregory does not understand why classical music requires such volume."
+- **Bradley**: "I do not understand why classical music requires such volume."
 
 ## Gameplay Mechanics
 
@@ -332,17 +332,17 @@ The real joke is that both crowds think they're the "real" audience and the othe
 **Day Mode Entry**:
 - **Lord Pilsner**: "Dude, this is FANCY. I feel like a ROYAL. Is that how you say it? Royal?"
 - **Chadwick**: "Content GOLD! The AESTHETIC! The VIBES! The... uh, what's the German word for 'lit'?"
-- **Bradley**: "Gregory has prepared cultural notes. Gregory is... concerned about our preparedness."
+- **Bradley**: "I have prepared cultural notes. I am... concerned about our preparedness."
 
 **During Opera**:
 - **Lord Pilsner**: *snoring* "...huh? The fat lady sang? Is it over?"
 - **Chadwick**: "I can't even live-tweet this, my phone's CONFISCATED. This is OPPRESSION."
-- **Bradley**: "Gregory notes the soprano's vibrato exceeds optimal frequency ranges for human comfort."
+- **Bradley**: "The soprano's vibrato exceeds optimal frequency ranges for human comfort."
 
 **Night Mode Entry**:
 - **Lord Pilsner**: "NOW we're talking! Same building, COMPLETELY different vibe!"
 - **Chadwick**: "The TRANSFORMATION! This is CONTENT! Day vs night COMPARISON video!"
-- **Bradley**: "Gregory calculates hearing damage will occur in approximately 47 minutes."
+- **Bradley**: "Hearing damage will occur in approximately 47 minutes."
 
 ## System Integration
 

@@ -266,9 +266,8 @@ Based on conversation, Werner assigns internal ratings:
 - **Chadwick**: "I'm getting footage of the whole ride. The bell is for... ambiance."
 - **Chadwick** (purchasing): "What's the most CINEMATIC bell? For the audio?"
 - **Chadwick** (later): "The bell didn't help. Nothing helps. I have footage of nothing helping."
-- **Bradley**: "Gregory recommends the mirror. Gregory says we need to see what's coming."
-- **Bradley** (purchasing): "Bell, mirror, lights, and... Gregory says the helmet. Gregory is cautious."
-- **Bradley** (post-ride): "Gregory's helmet saved him. Gregory recommends helmets for all future tourists."
+- **Bradley** (purchasing): "Bell, mirror, lights, and... the helmet."
+- **Bradley** (post-ride): "The helmet saved me. I'm keeping the helmet."
 
 ## System Integration
 ### Tourist Survival Network

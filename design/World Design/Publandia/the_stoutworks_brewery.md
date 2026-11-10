@@ -347,10 +347,10 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 - **Chadwick**: "The copper stills are BEAUTIFUL. The foam is AESTHETIC. This is— this is ATTACKING me."
 - **Chadwick** (dungeon): "I'm filming this. No one will BELIEVE this. SENTIENT BEER TOUR."
 - **Chadwick** (boss): "This is going to get SO many views. If I survive. Content REQUIRES survival."
-- **Bradley**: "Gregory finds the fermentation process scientifically fascinating. Gregory did NOT expect combat."
-- **Bradley** (dungeon): "Gregory suggests we employ scientific reasoning. The yeast is simply misunderstood."
-- **Bradley** (negotiate route): "Gregory believes in diplomacy. Gregory will speak to the yeast."
-- **Vat Master**: "...THE PUPPET SPEAKS? THE PUPPET UNDERSTANDS? ...PERHAPS THE PUPPET KNOWS WHAT IT IS TO BE USED."
+- **Bradley**: "I did NOT expect combat."
+- **Bradley** (dungeon): "The yeast is simply misunderstood."
+- **Bradley** (negotiate route): "I'll speak to the yeast."
+- **Vat Master**: "...IT SPEAKS TO ME? ...PERHAPS IT KNOWS WHAT IT IS TO BE USED."
 
 ## System Integration
 ### Dungeon Network

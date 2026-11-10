@@ -319,9 +319,7 @@ Sleep quality depends on random roommate generation:
 - **Colm**: "You don't remember? Impressive. You'll hear about it. Everyone heard about it."
 - **Chadwick**: "Budget accommodation is AUTHENTIC. The real travelers stay in hostels. This is CONTENT."
 - **Chadwick** (morning): "Who took a VIDEO? That's MY job! I'm supposed to document ME, not— wait, can I have that video?"
-- **Bradley**: "Gregory calculated that hotel costs would be offset by productivity loss from poor sleep. Gregory was correct."
-- **Lord Pilsner**: "Gregory doesn't understand VIBES."
-- **Bradley** (morning): "Gregory heard everything. Gregory will never speak of it. Gregory suggests we all agree it didn't happen."
+- **Bradley** (morning): "I heard everything. I will never speak of it. I suggest we all agree it didn't happen."
 
 ## System Integration
 ### Lodging Network

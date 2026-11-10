@@ -334,10 +334,8 @@ This is the bros' base of operations because it appeared first in their search r
 - **Chadwick**: "The lighting in here is PERFECT for content. The authenticity is PALPABLE. It's like a MOVIE."
 - **Chadwick** (drinking): "I'm going to win this pint-off. I'm going to win it for CONTENT. For the GRAM."
 - **Chadwick** (losing): "I didn't LOSE. The rhythm was... different. Cultural DIFFERENCE."
-- **Bradley**: "Gregory notes the price differential between Temple Bar and other districts. Gregory is economically aware."
-- **Seamus**: "Gregory's right. But Gregory's HERE, isn't he? That's the trap."
-- **Bradley**: "Gregory concedes the point. Gregory will have a Smithwick's."
-- **Gregory** (after several): "Gregory believes he understands Irish literature now. Gregory would like to discuss Beckett."
+- **Bradley**: "I'll have a Smithwick's."
+- **Bradley** (after several): "I believe I understand Irish literature now. I would like to discuss Beckett."
 
 ## System Integration
 ### Central Hub Network
