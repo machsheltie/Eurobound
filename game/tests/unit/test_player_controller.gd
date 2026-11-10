@@ -148,8 +148,9 @@ func test_player_default_bro_is_lord_pilsner() -> void:
 func test_player_nearest_interactable_within_range() -> void:
 	# Arrange
 	var p := _player()
+	p.face("north")
 	_interact_point("far_cabinet", Vector3(0, 0, -3.0))
-	var near := _interact_point("near_cabinet", Vector3(0.6, 0, -0.3))
+	var near := _interact_point("near_cabinet", Vector3(0.3, 0, -0.5))
 
 	# Act
 	var found := p.nearest_interactable()
@@ -170,6 +171,7 @@ func test_player_nothing_to_interact_with_out_of_range() -> void:
 func test_player_interact_emits_the_point_id() -> void:
 	# Arrange
 	var p := _player()
+	p.face("north")
 	_interact_point("cabinet_frogger", Vector3(0, 0, -0.5))
 	watch_signals(p)
 
@@ -199,3 +201,125 @@ func test_player_sprite_takes_the_hall_depth_curve() -> void:
 	# Assert: the sprite, not the physics body, is scaled by the hall's depth curve
 	assert_true(p.sprite.is_in_group("hall_actors"))
 	assert_false(p.is_in_group("hall_actors"))
+
+
+# --- Party follow (author ruling ef_party_walk = leader_follow, 2026-11-10) ---
+
+func test_player_leads_chadwick_and_bradley() -> void:
+	# Arrange / Act
+	var p := _player()
+
+	# Assert
+	assert_eq(p.followers.size(), 2)
+	assert_eq(p.followers[0].name, "follower_chadwick")
+	assert_eq(p.followers[1].name, "follower_bradley")
+	for f in p.followers:
+		assert_true(f.is_in_group("hall_actors"), "followers take the depth curve")
+
+
+func test_player_followers_line_up_behind_the_spawn_facing() -> void:
+	# Arrange: facing north (away from the camera), so "behind" is +Z
+	var p: PlayerController = PlayerScript.new()
+	p.position = Vector3(2, 0, 1)
+	p.sprite.facing = "north"
+
+	# Act
+	add_child_autofree(p)
+
+	# Assert
+	for i in p.followers.size():
+		var f: Node3D = p.followers[i]
+		assert_almost_eq(f.global_position.x, 2.0, 0.01)
+		assert_almost_eq(f.global_position.z, 1.0 + PlayerController.FOLLOW_GAP * (i + 1), 0.01)
+
+
+func test_player_followers_walk_the_leaders_path() -> void:
+	# Arrange: leader faces east, followers start west of it
+	_floor()
+	_camera_looking_north().make_current()
+	var p: PlayerController = PlayerScript.new()
+	p.sprite.facing = "east"
+	add_child_autofree(p)
+	await wait_physics_frames(2)
+
+	# Act: walk north for one second
+	for i in 60:
+		p.step(Vector2(0, -1), 1.0 / 60.0)
+
+	# Assert: the first follower is one gap behind on the path (directly south), walking north
+	var f: PartySprite3D = p.followers[0]
+	assert_almost_eq(f.global_position.x, p.global_position.x, 0.05)
+	assert_almost_eq(f.global_position.z, p.global_position.z + PlayerController.FOLLOW_GAP, 0.05)
+	assert_eq(f.action, "walk")
+	assert_eq(f.facing, "north")
+
+
+func test_player_followers_idle_when_the_leader_stops() -> void:
+	# Arrange
+	_floor()
+	_camera_looking_north().make_current()
+	var p := _player()
+	await wait_physics_frames(2)
+	for i in 30:
+		p.step(Vector2(1, 0), 1.0 / 60.0)
+
+	# Act
+	p.step(Vector2.ZERO, 1.0 / 60.0)
+
+	# Assert
+	for f in p.followers:
+		assert_eq(f.action, "idle")
+
+
+# --- Interact cue (author ruling ef_interact_cue = none, 2026-11-10): face it and press ---
+
+func test_player_must_face_a_thing_to_use_it() -> void:
+	# Arrange: the cabinet is in reach but behind the bro
+	var p := _player()
+	p.face("south")
+	_interact_point("cabinet_frogger", Vector3(0, 0, -0.5))
+	watch_signals(p)
+
+	# Act
+	p.try_interact()
+
+	# Assert
+	assert_signal_not_emitted(p, "interacted")
+
+
+func test_player_walking_turns_toward_what_it_uses() -> void:
+	# Arrange
+	_floor()
+	_camera_looking_north().make_current()
+	var p := _player()
+	p.face("south")
+	_interact_point("cabinet_frogger", Vector3(0, 0, -0.6))
+	await wait_physics_frames(2)
+
+	# Act: one tap north turns the bro around
+	p.step(Vector2(0, -1), 1.0 / 60.0)
+
+	# Assert
+	assert_not_null(p.nearest_interactable())
+
+
+func test_player_input_lock_stops_walking_and_using() -> void:
+	# Arrange: a menu is open
+	_floor()
+	_camera_looking_north().make_current()
+	var p := _player()
+	p.face("north")
+	_interact_point("cabinet_frogger", Vector3(0, 0, -0.5))
+	await wait_physics_frames(2)
+	var start := p.global_position
+	p.input_locked = true
+	watch_signals(p)
+
+	# Act
+	for i in 30:
+		p.step(Vector2(1, 0), 1.0 / 60.0)
+	p.try_interact()
+
+	# Assert
+	assert_almost_eq(p.global_position.x, start.x, 0.001)
+	assert_signal_not_emitted(p, "interacted")

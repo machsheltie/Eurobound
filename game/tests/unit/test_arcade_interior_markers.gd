@@ -3,7 +3,9 @@ extends GutTest
 ## battle cabinets and the DDR dance-off, so the scene-transition and interaction systems can find them.
 
 const SCENE := preload("res://worlds/debaucheryville/absinthe_arcade_interior_hd2d.tscn")
-const EXPECTED_IDS := ["cabinet_frogger", "cabinet_street_fighter", "cabinet_kebab_kombat", "ddr_dance_off"]
+const EXPECTED_IDS := [
+	"cabinet_frogger", "cabinet_street_fighter", "cabinet_kebab_kombat", "ddr_dance_off", "token_machine",
+]
 
 var _hall: Node3D
 

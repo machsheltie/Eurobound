@@ -76,9 +76,16 @@ const ACTOR_GROUP := "hall_actors"
 const INTERACT_POINTS := {
 	"cabinet_frogger": [Vector2(-0.95, -5.0), 0.0],        # back row #2, px 1202-1288
 	"cabinet_street_fighter": [Vector2(1.13, -5.0), 0.0],  # back row #4, px 1489-1578
-	"cabinet_kebab_kombat": [Vector2(5.14, 0.42), -90.0],  # right wall #6, px 2195-2300, faces west
+	# right wall #6, px 2195-2300, faces west. The bar and its stools close the aisle in front of it,
+	# so the bros stand at its south-east corner (third value: where the bro stands).
+	"cabinet_kebab_kombat": [Vector2(5.14, 0.42), -90.0, Vector2(4.75, 1.45)],
 	"ddr_dance_off": [Vector2(-4.86, -0.12), 90.0],        # middle of the three west-wall pads
+	"token_machine": [Vector2(-6.0, 3.0), 90.0],          # TOKENS HERE, its face clear of the DDR pads
 }
+## A bro using a machine stands this far in front of it (painting units). The "at_<id>" spawn
+## points sit there: an arcade fight lost puts the bros back in front of that cabinet (author
+## ruling ef_arcade_loss = at_cabinet, 2026-11-10).
+const STAND_OFF := 1.0
 
 ## Painted furniture the bros walk around but never behind: invisible blockers on the floor,
 ## [centre (x, z), size (x, z)] in painting units, measured from v8f with paint_px_to_floor.py.
@@ -111,6 +118,10 @@ const OCCLUDERS := {
 	"aa_int_layer_claw_alcove": {"height": 9.0, "footprint": [
 		Vector2(6.0, 1.9), Vector2(6.8, 2.2), Vector2(7.4, 4.4), Vector2(6.5, 4.2)]},
 }
+
+## The token picker and the INSUFFICIENT CREDITS flash (runtime only).
+var overlay: ArcadeOverlay
+var _player: PlayerController
 
 ## Runtime only: put the player on a spawn point (off for QA captures that place their own bros).
 @export var spawn_player := true
@@ -148,8 +159,48 @@ func _ready() -> void:
 	_build_lighting()
 	_apply_time_of_day()
 	if not Engine.is_editor_hint() and spawn_player:
-		SceneRouter.spawn_player(self, "from_street")
+		SceneRouter.ensure_game_started(get_tree())
+		overlay = ArcadeOverlay.new()
+		overlay.name = "overlay"
+		add_child(overlay)
+		overlay.tokens_chosen.connect(_on_tokens_chosen)
+		overlay.picker_closed.connect(_release_player)
+		overlay.flash_finished.connect(_release_player)
+		_player = SceneRouter.spawn_player(self, "from_street")
+		_player.interacted.connect(_on_interacted)
 		SceneRouter.wire_exits(self)
+
+
+## The leader pressed the button facing a machine.
+func _on_interacted(id: String) -> void:
+	if id == "token_machine":
+		var most := ArcadeRules.max_buyable(GameState)
+		if most <= 0:
+			_insufficient_credits()
+			return
+		_player.input_locked = true
+		overlay.open_picker(most)
+	elif ArcadeRules.PLAY_COST.has(id):
+		if not ArcadeRules.can_play(GameState, id):
+			_insufficient_credits()
+			return
+		# The battle and DDR screens are not built yet: nothing is spent until they are.
+		push_warning("Absinthe Arcade: %s has no game screen yet" % id)
+
+
+func _insufficient_credits() -> void:
+	_player.input_locked = true
+	overlay.flash("INSUFFICIENT CREDITS")
+
+
+func _on_tokens_chosen(count: int) -> void:
+	ArcadeRules.buy_tokens(GameState, count)
+	_release_player()
+
+
+func _release_player() -> void:
+	if _player != null:
+		_player.input_locked = false
 
 
 func _process(_delta: float) -> void:
@@ -343,6 +394,11 @@ func _build_markers() -> void:
 	for id: String in INTERACT_POINTS.keys():
 		var spec: Array = INTERACT_POINTS[id]
 		var p: Vector2 = spec[0]
+		var out := Vector2(0, 1).rotated(-deg_to_rad(float(spec[1])))  # the way the machine faces
+		var stand: Vector2 = spec[2] if spec.size() > 2 else p + out * STAND_OFF
+		var toward := (p - stand).normalized()
+		SceneRouter.add_spawn_point(_diorama, "at_" + id, Vector3(stand.x, 0, stand.y),
+			_facing_name(Vector3(toward.x, 0, toward.y)))
 		var m := Marker3D.new()
 		m.name = id
 		m.position = Vector3(p.x, 0, p.y)
@@ -350,6 +406,18 @@ func _build_markers() -> void:
 		m.add_to_group("interact_points")
 		m.set_meta("interact_id", id)
 		_diorama.add_child(m)
+
+
+## The 8-way facing name closest to a ground-plane direction (camera looking north).
+static func _facing_name(dir: Vector3) -> String:
+	var best := "south"
+	var best_dot := -2.0
+	for d: String in PartySprite3D.DIRECTIONS:
+		var dot := PlayerController.facing_vector(d).dot(dir.normalized())
+		if dot > best_dot:
+			best_dot = dot
+			best = d
+	return best
 
 
 func _wall_collider(body: StaticBody3D, a: Vector2, b: Vector2) -> void:

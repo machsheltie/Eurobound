@@ -33,6 +33,15 @@ static func travel(tree: SceneTree, screen_id: String, spawn_id: String) -> bool
 
 
 ## Creates the player in `world` on the pending spawn point, or on `default_spawn`.
+## Launched straight into a screen (no title screen exists yet), start a new game so the
+## wallet and party exist.
+static func ensure_game_started(tree: SceneTree) -> void:
+	var state := tree.root.get_node_or_null("GameState")
+	var repo := tree.root.get_node_or_null("DataRepo")
+	if state != null and repo != null and (state.party as Array).is_empty():
+		state.new_game(repo)
+
+
 static func spawn_player(world: Node3D, default_spawn: String) -> PlayerController:
 	var wanted := pending_spawn if not pending_spawn.is_empty() else default_spawn
 	pending_spawn = ""
