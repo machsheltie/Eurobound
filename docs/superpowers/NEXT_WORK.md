@@ -507,3 +507,25 @@ Open question: should it, and to what depth?
   text moves to the parody names; internal planning notes stay. Price cleanup approved: round
   to whole SOVS (0.50 -> 1, 3.50 -> 4, 8.99 -> 9) and fix odd wording ("Two SOVS fifty",
   "SOVS gold").
+- **(Round v24, 2026-11-10)** The Hoisted Pint and The Mad Monarch's Wit-tea Party: every
+  proposed detail approved as written (challenges, beers, openers, stamps, selfies, brewmasters
+  Thijs and Sjors Hoedemaker, prices). The Wobbly Windmill's beer stops being a witbier so the
+  Mad Monarch owns wheat beer. Shamsterdam brewery docs say four breweries, visit order free.
+  City sweep's two rewritten jokes approved ("Formerly Known as Sober"; the catalogue "two
+  cities east"). Sweep ALL remaining real place names to parody names (incl. Breadgasmia's
+  Paris+Prague note, Nora's Galway history, "Dublin slang", marketing POV lines, the Arcade's
+  "Prague-inspired" briefs). **Singular is "1 SOV"** (currency.md canon); plural SOVS.
+  Price jokes: Willem's hat "exactly 247 SOVS"; the Frietomat croquette is 3 SOVS everywhere;
+  Lotte's fridge magnet 3 SOVS (cheapest in her shop). "Gold" as a money word -> SOVS.
+- **(Round v24, Arcade build, 2026-11-10)** Battles: HD-2D side view, bros and enemies both on
+  screen in a 3D arena. Overworld: a leader with the other two following in a line. Tokens:
+  the TOKENS HERE machine sells any number at 1 SOVS each; tokens live in the inventory.
+  Can't afford a cabinet: the INSUFFICIENT CREDITS screen gag. Lose an arcade fight: back in
+  front of that cabinet at 1 HP, tokens spent. No interaction cue (face it, press the button).
+  Cabinet fight backdrop: that cabinet's own game art. Hall NPCs: the bartender, bouncers and a
+  birthday party from the author's ChatGPT chat "create hero image prompt", plus the
+  absinthearcade.md regulars. DDR: **songs are licensed and in hand; build with the real
+  songs**; four arrow lanes; a difficulty screen permanently stuck on Hard/Expert, to the bros'
+  frustration. Load the 9 Arcade villains into engine enemy data as their docs propose, plus a
+  `ticket_reward` field. Mirror corridor painted with ChatGPT; north wing upscaled to
+  2752x1536 with a registered day version.
