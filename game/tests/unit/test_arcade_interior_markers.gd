@@ -10,7 +10,13 @@ var _hall: Node3D
 
 func before_each() -> void:
 	_hall = SCENE.instantiate()
+	_hall.spawn_player = false
 	add_child_autofree(_hall)
+
+
+func _north_exits() -> Array:
+	return get_tree().get_nodes_in_group("scene_exits").filter(
+		func(n): return _hall.is_ancestor_of(n) and n.name == "exit_north_arch")
 
 
 func test_arcade_interior_interact_points_all_ids_present() -> void:
@@ -32,7 +38,7 @@ func test_arcade_interior_interact_points_all_ids_present() -> void:
 
 func test_arcade_interior_north_exit_targets_mirror_corridor() -> void:
 	# Arrange / Act
-	var exits := get_tree().get_nodes_in_group("scene_exits").filter(func(n): return _hall.is_ancestor_of(n))
+	var exits := _north_exits()
 
 	# Assert
 	assert_eq(exits.size(), 1)
@@ -73,7 +79,7 @@ func test_arcade_interior_depth_scale_applies_to_hall_actors() -> void:
 
 func test_arcade_interior_north_exit_sits_inside_the_arch_opening() -> void:
 	# Arrange
-	var exits := get_tree().get_nodes_in_group("scene_exits").filter(func(n): return _hall.is_ancestor_of(n))
+	var exits := _north_exits()
 	var shape: CollisionShape3D = exits[0].get_child(0)
 
 	# Act

@@ -20,6 +20,7 @@ func _ready() -> void:
 	var args := OS.get_cmdline_user_args()
 	var out_dir: String = args[0] if args.size() > 0 else OS.get_user_data_dir()
 	var hall = SCENE.instantiate()
+	hall.spawn_player = false
 	add_child(hall)
 	var bros: Array[Node3D] = []
 	for spec: Array in BROS:

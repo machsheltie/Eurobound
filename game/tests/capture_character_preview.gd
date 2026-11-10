@@ -22,6 +22,7 @@ func _ready() -> void:
 	for mode in ["day", "night"]:
 		# Fresh scene per time of day, so the gameplay camera rig is intact for each gameplay shot.
 		var diorama = SCENE.instantiate()
+		diorama.spawn_player = false
 		add_child(diorama)
 		for i in paths.size():
 			var offset := Vector3((i - (paths.size() - 1) * 0.5) * SPACING, 0, 0)

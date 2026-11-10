@@ -58,6 +58,9 @@ const DEPTH_M := 18.0
 ## cresting and chimneys still read as silhouettes above the box.
 const ROOF_DECK_M := 23.6
 
+## Runtime only: put the player on a spawn point (off for QA captures that place their own bros).
+@export var spawn_player := true
+
 @export var night: bool = false:
 	set(value):
 		night = value
@@ -93,7 +96,18 @@ func _ready() -> void:
 	_build_ground()
 	_build_lighting()
 	_build_camera()
+	_build_walkable()
 	_apply_time_of_day()
+	if not Engine.is_editor_hint() and spawn_player:
+		_player = SceneRouter.spawn_player(self, "start")
+		SceneRouter.wire_exits(self)
+		_camera_focus.global_position = _player.global_position + CAM_FOCUS_HEIGHT
+		_pcam.global_position = _camera_focus.global_position + (_pcam.get("follow_offset") as Vector3)
+
+
+func _process(_delta: float) -> void:
+	if is_instance_valid(_player) and is_instance_valid(_camera_focus):
+		_camera_focus.global_position = _player.global_position + CAM_FOCUS_HEIGHT
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -589,6 +603,8 @@ const CAM_FOCUS_START := Vector3(0.0, 1.9, 1.8)
 var _camera: Camera3D
 var _pcam: Node3D
 var _camera_focus: Node3D
+var _player: PlayerController
+const CAM_FOCUS_HEIGHT := Vector3(0, 1.9, 0)
 
 
 func _build_camera() -> void:
@@ -709,3 +725,66 @@ func _apply_time_of_day() -> void:
 		env.fog_sky_affect = 0.0
 		env.adjustment_saturation = 1.06
 		env.adjustment_contrast = 1.04
+
+
+## Walkable street, in REAL metres: ground, the building, solid props, the street's edges, the
+## front-door exit into the hall and the spawn points.
+const STREET_HALF_EXTENT := 12.0
+## Solid props [real-metre centre on the ground (x, z), size (x, z)]; positions are PROP_LAYOUT's
+## painting units / PAINT_SCALE.
+const SOLID_PROPS := [
+	[Vector2(-2.06, 0.5), Vector2(0.8, 0.8)],    # arcade cabinet under the awning
+	[Vector2(-1.54, 1.08), Vector2(0.4, 0.4)],   # metal bucket
+	[Vector2(-0.96, 0.83), Vector2(0.7, 0.45)],  # chalkboard
+	[Vector2(2.25, 0.38), Vector2(0.6, 0.6)],    # potted shrub
+	[Vector2(-2.92, 3.33), Vector2(0.25, 0.25)], # bollards
+	[Vector2(-1.92, 3.33), Vector2(0.25, 0.25)],
+	[Vector2(1.92, 3.33), Vector2(0.25, 0.25)],
+	[Vector2(2.92, 3.33), Vector2(0.25, 0.25)],
+]
+## The double doorway is 7.25 painting units wide, centred on the front wall.
+const DOOR_HALF_WIDTH_M := 7.25 / PAINT_SCALE * 0.5
+
+
+func _box_collider(body: StaticBody3D, centre: Vector3, size: Vector3) -> void:
+	var cs := CollisionShape3D.new()
+	var box := BoxShape3D.new()
+	box.size = size
+	cs.shape = box
+	cs.position = centre
+	body.add_child(cs)
+
+
+func _build_walkable() -> void:
+	var body := StaticBody3D.new()
+	body.name = "street_collision"
+	add_child(body)
+	var e := STREET_HALF_EXTENT
+	_box_collider(body, Vector3(0, -0.1, 0), Vector3(e * 2.0, 0.2, e * 2.0))
+	var w := float(_faces["aa_face_front"]["wall_width_m"]) / PAINT_SCALE
+	var d := DEPTH_M / PAINT_SCALE
+	_box_collider(body, Vector3(0, 2.0, -d * 0.5), Vector3(w, 4.0, d))
+	for spec: Array in SOLID_PROPS:
+		var c: Vector2 = spec[0]
+		var sz: Vector2 = spec[1]
+		_box_collider(body, Vector3(c.x, 1.0, c.y), Vector3(sz.x, 2.0, sz.y))
+	for side: Vector3 in [Vector3(e, 2, 0), Vector3(-e, 2, 0)]:
+		_box_collider(body, side, Vector3(0.4, 4.0, e * 2.0))
+	for side: Vector3 in [Vector3(0, 2, e), Vector3(0, 2, -e)]:
+		_box_collider(body, side, Vector3(e * 2.0, 4.0, 0.4))
+
+	var door := Area3D.new()
+	door.name = "exit_front_door"
+	door.add_to_group("scene_exits")
+	door.set_meta("target_scene", "absinthe_arcade_interior")
+	door.set_meta("target_spawn", "from_street")
+	var cs := CollisionShape3D.new()
+	var box := BoxShape3D.new()
+	box.size = Vector3(DOOR_HALF_WIDTH_M * 2.0 - 0.4, 2.0, 0.5)
+	cs.shape = box
+	cs.position = Vector3(0, 1.0, 0.2)
+	door.add_child(cs)
+	add_child(door)
+
+	SceneRouter.add_spawn_point(self, "start", Vector3(0.5, 0, 5.0), "north")
+	SceneRouter.add_spawn_point(self, "from_arcade", Vector3(0, 0, 1.4), "south")

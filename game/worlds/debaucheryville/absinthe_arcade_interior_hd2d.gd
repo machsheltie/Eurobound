@@ -49,6 +49,18 @@ const NORTH_ARCH := {"x0": -0.35, "x1": 0.83, "height": 2.3, "depth": 4.5}
 ## so they must never be seen walking under the lintel.
 const NORTH_EXIT_Z := -5.32
 const NORTH_EXIT_TARGET := "absinthe_arcade_mirror_corridor"
+## Front of the hall: the painting's bottom edge shows the floor to z ~5.3, so the room's front
+## edge is a wall there, with the gap between the stained-glass door leaves (x -0.8..0.8) leading
+## out to the street.
+const FRONT_EDGE_Z := 5.4
+const FRONT_DOOR_X := 0.8
+const FRONT_EXIT_TARGET := "absinthe_arcade_exterior"
+## Spawn points [painting units (x, z), facing]: through the front doors from the street, and back
+## out of the north arch from the mirror corridor.
+const SPAWNS := {
+	"from_street": [Vector2(0.0, 3.4), "north"],
+	"from_mirror_corridor": [Vector2(0.24, -4.3), "south"],
+}
 
 ## Depth curve (author ruling int_depth_scale): v8 paints its back row smaller than its floor
 ## perspective explains, so sprites shrink toward the back wall. Full size at and in front of
@@ -68,6 +80,26 @@ const INTERACT_POINTS := {
 	"ddr_dance_off": [Vector2(-4.86, -0.12), 90.0],        # middle of the three west-wall pads
 }
 
+## Painted furniture the bros walk around but never behind: invisible blockers on the floor,
+## [centre (x, z), size (x, z)] in painting units, measured from v8f with paint_px_to_floor.py.
+## (Furniture they can pass behind is an occluder prism below instead.)
+const FLOOR_BLOCKERS := [
+	[Vector2(-6.6, 2.05), Vector2(1.2, 3.5)],     # TOKENS HERE machine
+	[Vector2(-5.28, 0.1), Vector2(2.05, 4.1)],    # the three DDR pads
+	[Vector2(-4.9, -3.85), Vector2(1.2, 2.3)],    # plush claw machine
+	[Vector2(-3.4, -2.5), Vector2(2.0, 1.95)],    # foosball table
+	[Vector2(-2.8, -4.45), Vector2(2.4, 1.7)],    # skee-ball lanes
+	[Vector2(-0.82, -5.1), Vector2(0.75, 0.5)],   # stools in front of the Frogger row
+	[Vector2(1.15, -5.1), Vector2(0.5, 0.5)],     # stool in front of the Street Fighter row
+	[Vector2(-1.33, -1.13), Vector2(0.6, 0.6)],   # chair behind the bar's west end
+	[Vector2(-1.26, 0.56), Vector2(0.6, 0.6)],    # bar stools, west side
+	[Vector2(-0.25, 1.51), Vector2(0.6, 0.6)],
+	[Vector2(0.73, 2.4), Vector2(0.6, 0.6)],      # chair at the bar's front
+	[Vector2(2.1, 2.9), Vector2(0.6, 0.6)],       # stool at the bar's front
+	[Vector2(3.2, 2.1), Vector2(0.7, 1.4)],       # the toilet
+	[Vector2(5.1, 0.2), Vector2(0.6, 1.4)],       # stools at Kebab Kombat and Bubble Bobble
+]
+
 ## Occluder prisms (footprint in painting units, height) carrying the depth-layer cutouts.
 const OCCLUDERS := {
 	"aa_int_layer_bottle_bar": {"height": 14.0, "footprint": [
@@ -79,6 +111,9 @@ const OCCLUDERS := {
 	"aa_int_layer_claw_alcove": {"height": 9.0, "footprint": [
 		Vector2(6.0, 1.9), Vector2(6.8, 2.2), Vector2(7.4, 4.4), Vector2(6.5, 4.2)]},
 }
+
+## Runtime only: put the player on a spawn point (off for QA captures that place their own bros).
+@export var spawn_player := true
 
 @export var night: bool = true:
 	set(value):
@@ -112,6 +147,9 @@ func _ready() -> void:
 	_build_markers()
 	_build_lighting()
 	_apply_time_of_day()
+	if not Engine.is_editor_hint() and spawn_player:
+		SceneRouter.spawn_player(self, "from_street")
+		SceneRouter.wire_exits(self)
 
 
 func _process(_delta: float) -> void:
@@ -246,6 +284,22 @@ func _build_room() -> void:
 	for seg: Array in [[lb, ax0], [ax1, rb], [lf, lb], [rb, rf],
 			[ax0, Vector2(ax0.x, deep)], [Vector2(ax1.x, deep), ax1], [Vector2(ax0.x, deep), Vector2(ax1.x, deep)]]:
 		_wall_collider(body, seg[0], seg[1])
+	for spec: Array in FLOOR_BLOCKERS:
+		var c: Vector2 = spec[0]
+		var sz: Vector2 = spec[1]
+		var bcs := CollisionShape3D.new()
+		var bbox := BoxShape3D.new()
+		bbox.size = Vector3(sz.x, 2.0, sz.y)
+		bcs.shape = bbox
+		bcs.position = Vector3(c.x, 1.0, c.y)
+		body.add_child(bcs)
+	# Front edge, open between the door leaves; the leaves' own prisms close the sides of the gap.
+	var fl := Vector2(_x_at(LEFT_WALL, FRONT_EDGE_Z), FRONT_EDGE_Z + 0.15)
+	var fr := Vector2(_x_at(RIGHT_WALL, FRONT_EDGE_Z), FRONT_EDGE_Z + 0.15)
+	_wall_collider(body, fl, Vector2(-FRONT_DOOR_X, FRONT_EDGE_Z + 0.15))
+	_wall_collider(body, Vector2(FRONT_DOOR_X, FRONT_EDGE_Z + 0.15), fr)
+	# Behind the front exit, so a player walking through it never falls off the floor.
+	_wall_collider(body, Vector2(-FRONT_DOOR_X, FRONT_EDGE_Z + 0.6), Vector2(FRONT_DOOR_X, FRONT_EDGE_Z + 0.6))
 
 
 ## The exit trigger in the archway and the interaction anchors. Both are plain markers that carry
@@ -255,6 +309,7 @@ func _build_markers() -> void:
 	exit.name = "exit_north_arch"
 	exit.add_to_group("scene_exits")
 	exit.set_meta("target_scene", NORTH_EXIT_TARGET)
+	exit.set_meta("target_spawn", "from_hall")
 	var cs := CollisionShape3D.new()
 	var box := BoxShape3D.new()
 	box.size = Vector3(float(NORTH_ARCH["x1"]) - float(NORTH_ARCH["x0"]), 2.0, 0.6)
@@ -262,6 +317,29 @@ func _build_markers() -> void:
 	cs.position = Vector3((float(NORTH_ARCH["x0"]) + float(NORTH_ARCH["x1"])) * 0.5, 1.0, NORTH_EXIT_Z - 0.3)
 	exit.add_child(cs)
 	_diorama.add_child(exit)
+	if SceneRouter.scene_path(NORTH_EXIT_TARGET).is_empty():
+		# Until the mirror-corridor screen exists, a stop just behind the trigger keeps the bros
+		# out from under the arch's short lintel.
+		var stop := StaticBody3D.new()
+		stop.name = "arch_unbuilt_stop"
+		_diorama.add_child(stop)
+		var z := NORTH_EXIT_Z - 0.75
+		_wall_collider(stop, Vector2(float(NORTH_ARCH["x0"]), z), Vector2(float(NORTH_ARCH["x1"]), z))
+	var front := Area3D.new()
+	front.name = "exit_front_doors"
+	front.add_to_group("scene_exits")
+	front.set_meta("target_scene", FRONT_EXIT_TARGET)
+	front.set_meta("target_spawn", "from_arcade")
+	var fcs := CollisionShape3D.new()
+	var fbox := BoxShape3D.new()
+	fbox.size = Vector3(FRONT_DOOR_X * 2.0, 2.0, 0.8)
+	fcs.shape = fbox
+	fcs.position = Vector3(0, 1.0, FRONT_EDGE_Z - 0.4)
+	front.add_child(fcs)
+	_diorama.add_child(front)
+	for sid: String in SPAWNS.keys():
+		var sp: Vector2 = SPAWNS[sid][0]
+		SceneRouter.add_spawn_point(_diorama, sid, Vector3(sp.x, 0, sp.y), SPAWNS[sid][1])
 	for id: String in INTERACT_POINTS.keys():
 		var spec: Array = INTERACT_POINTS[id]
 		var p: Vector2 = spec[0]

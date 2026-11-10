@@ -18,6 +18,7 @@ func _ready() -> void:
 	var args := OS.get_cmdline_user_args()
 	var prefix: String = args[0]
 	var diorama = SCENE.instantiate()
+	diorama.spawn_player = false
 	add_child(diorama)
 	diorama.night = args[1] == "night"
 	var i := 2

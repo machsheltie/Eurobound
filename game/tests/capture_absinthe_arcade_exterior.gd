@@ -17,6 +17,7 @@ func _ready() -> void:
 	var args := OS.get_cmdline_user_args()
 	var out_dir: String = args[0] if args.size() > 0 else OS.get_user_data_dir()
 	var diorama = SCENE.instantiate()
+	diorama.spawn_player = false
 	add_child(diorama)
 	# Scale check: a 1.8 m stand-in person beside the doorway (world is in real metres).
 	var person := MeshInstance3D.new()
