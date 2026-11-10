@@ -24,14 +24,14 @@
 - **Design**: Pixelated hop cone shape with scrolling LED display showing fake "blockchain hash," bottle opener as the stem
 - **Material**: Matte black plastic with neon blue circuit trace inlays
 - **Inscription**: "Algorithm Verified" (scrolls on LED)
-- **Acquired**: Complete the taste profile puzzle OR defeat BrewBot OR purchase from Robotic Bartender for €25
+- **Acquired**: Complete the taste profile puzzle OR defeat BrewBot OR purchase from Robotic Bartender for 25 SOVS
 - **Special Feature**: Tiny LED screen scrolls random hexadecimal "verification codes" (purely decorative, means nothing)
 - **Check Point**: QR scanner verifies Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without B.R.E.W. Lab Opener**: Can enter and explore, but cannot receive stamp or purchase Blockchain Bock
 
 **Scanner's Opener Check**:
-- *With Blarney Trap Opener, No Lab Opener*: "PUBLANDIA AUTHORIZATION... VERIFIED. Lab opener... NOT DETECTED. Complete taste profile analysis, defeat BREWBOT, or purchase for €25. Transaction... PENDING."
+- *With Blarney Trap Opener, No Lab Opener*: "PUBLANDIA AUTHORIZATION... VERIFIED. Lab opener... NOT DETECTED. Complete taste profile analysis, defeat BREWBOT, or purchase for 25 SOVS. Transaction... PENDING."
 - *With Both Openers*: "HOP CONE PROTOCOL... VERIFIED. Blockchain hash... AUTHENTICATED. Taste profile... SYNERGIZED. Welcome to the BREWVOLUTION™. Your Blockchain Bock awaits... OPTIMIZATION."
 - *Without Blarney Trap Opener*: "PUBLANDIA AUTHORIZATION... NOT DETECTED. Access... DENIED. Continental Trail requires origin credentials. Return when... OPTIMIZED."
 
@@ -184,13 +184,13 @@
 | SP Restoration | — |
 | Buff | +10 Gold (crypto fluctuation bonus) |
 | Debuff Risk | 50% "Tourist Trapped" status; Gold bonus may be NEGATIVE |
-| Price | €18 (±€5 based on fake crypto ticker) |
+| Price | 18 SOVS (±5 SOVS based on fake crypto ticker) |
 | Brewed By | Ye Olde B.R.E.W. Lab (algorithmic process) |
 
 **Flavor Text**: "Brewed by algorithms. Verified by blockchain. Tasted by... actually, the AI doesn't taste. That's YOUR job."
 
 **Unique Properties**:
-- Only beer with fluctuating price (€13-€23 range)
+- Only beer with fluctuating price (13-23 SOVS range)
 - Gold bonus can be negative if "market crashes" (shows -10 Gold instead of +10)
 - "Tourist Trapped" increases vulnerability to scams in Debaucheryville
 - Recipe literally changes each batch (random ingredient selection)
@@ -206,7 +206,7 @@
 
 **Robotic Bartender's Serving Dialogue**:
 - "Today's Blockchain Bock is batch #[random hash]. The algorithm has OPTIMIZED this brew for... *checks display* ...your demographic! Whatever that means!"
-- "Current price: €[fluctuating number]. The market MOVES, friend! Buy NOW before it... changes again in 30 seconds!"
+- "Current price: [fluctuating number] SOVS. The market MOVES, friend! Buy NOW before it... changes again in 30 seconds!"
 - "Side effects may include: financial optimism, scam vulnerability, and a deep urge to explain blockchain to strangers. ENJOY!"
 
 ### Selfie Spot — Algorithm Archive Terminal
@@ -239,7 +239,7 @@ Upon receiving the 4th Debaucheryville stamp:
 
 **Rewards**:
 - "Digital Detox" achievement unlocked
-- "Neon Nightmare" Legendary Hangover now available (€75 at any stamped location)
+- "Neon Nightmare" Legendary Hangover now available (75 SOVS at any stamped location)
 - Continental Beer Master progress updated
 
 ## System Integration
@@ -345,7 +345,7 @@ Upon receiving the 4th Debaucheryville stamp:
 - [ ] **Robotic bartender vendor works** (rail movement, inventory, glitch behavior)
 - [ ] **Cross-quest functionality verified** (NFT hunt, couchsurf system, brewery tour)
 - [ ] **Stamp system functional** (opener check, stamp animation, tour completion)
-- [ ] **Blockchain Bock price fluctuation** (€13-€23 range, gold bonus variance)
+- [ ] **Blockchain Bock price fluctuation** (13-23 SOVS range, gold bonus variance)
 
 ---
 

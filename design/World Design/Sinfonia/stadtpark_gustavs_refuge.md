@@ -1,6 +1,6 @@
 # Stadtpark (Gustav's Refuge)
 
-*Where a horse's midlife crisis meets a trio of Americans with €2,340 in property damage and a bag of Skittles*
+*Where a horse's midlife crisis meets a trio of Americans with 2,340 SOVS in property damage and a bag of Skittles*
 
 ## Location Identity
 - **Location ID**: `sinfonia_stadtpark_gustavs_refuge_01`
@@ -18,7 +18,7 @@ The Stadtpark is Sinfonia's grand public park—a sprawling green oasis amid bar
 
 ### Fiaker Fiasco Context
 - **Phase 4 (Final)**: The resolution of the chase
-- **Running Damage Total**: €2,340 (or €1,940 via Papageno path)
+- **Running Damage Total**: 2,340 SOVS (or 1,940 SOVS via Papageno path)
 - **Stakes**: Hans-Jürgen's livelihood, Gustav's freedom, bros' conscience (if they have one)
 - **Resolution Options**: Multiple endings based on player choices
 
@@ -240,9 +240,9 @@ Gustav isn't just running—he's *escaping*. After years of tourist service, he'
 
 **Key Quotes**:
 - "THERE you are! You think you can run from Salzburg-trained lawyers?!"
-- "€2,000! Plus emotional damages! Plus—" *sees Gustav* "...why is that horse wearing a cape?"
+- "2,000 SOVS! Plus emotional damages! Plus—" *sees Gustav* "...why is that horse wearing a cape?"
 - *If paid*: "Hmph. Very well. The arts... accept your contribution."
-- *If negotiated*: "Hans-Jürgen's insurance covers... some. You owe... €1,000. Final."
+- *If negotiated*: "Hans-Jürgen's insurance covers... some. You owe... 1,000 SOVS. Final."
 
 ---
 
@@ -288,7 +288,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 **Outcome**:
 - Gustav returns to fiaker service
 - Hans-Jürgen promises: No more bachelor parties, shorter hours, more Skittles
-- Bros' damage debt is reduced by €500 (gratitude discount)
+- Bros' damage debt is reduced by 500 SOVS (gratitude discount)
 - Unlock: "Horse Whisperer" achievement
 - Unlock: Fiaker fast-travel in Sinfonia
 
@@ -330,7 +330,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 **Outcome**:
 - Gustav runs off into the night, never seen again
 - Hans-Jürgen devastated, quits fiaker business
-- Bros' damage debt increases by €1,000 (horse value added)
+- Bros' damage debt increases by 1,000 SOVS (horse value added)
 - No achievement
 - Permanent guilt marker in Bros' journal
 
@@ -349,7 +349,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 
 **Outcome**:
 - Quest "fails," but technically completes
-- Damage debt remains plus €500 abandonment fee
+- Damage debt remains plus 500 SOVS abandonment fee
 - Hans-Jürgen becomes hostile NPC
 - Gustav fate unknown
 - "Coward" status effect (temporary)
@@ -362,12 +362,12 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 
 | Debt Component | Amount | Notes |
 |----------------|--------|-------|
-| Opera House Plaza | €0 | No damage |
-| Café Sachertorte | €340 | Fixed amount |
-| Opera Backstage | €2,000 (€1,600 optimal) | Papageno path saves €400 |
-| Prima Donna | €500 (€200 negotiated) | Charm 4 reduces |
-| **Total Maximum** | **€2,840** | Everything goes wrong |
-| **Total Optimal** | **€1,940** | Perfect path |
+| Opera House Plaza | 0 SOVS | No damage |
+| Café Sachertorte | 340 SOVS | Fixed amount |
+| Opera Backstage | 2,000 SOVS (1,600 SOVS optimal) | Papageno path saves 400 SOVS |
+| Prima Donna | 500 SOVS (200 SOVS negotiated) | Charm 4 reduces |
+| **Total Maximum** | **2,840 SOVS** | Everything goes wrong |
+| **Total Optimal** | **1,940 SOVS** | Perfect path |
 
 ### Payment Options at Stadtpark
 
@@ -376,17 +376,17 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 - Bros can afford (barely) from quest rewards
 
 **Hans-Jürgen Insurance**:
-- Path A: Insurance covers €500 (Gustav recovered)
-- Path B: Insurance covers €0 (Gustav gone, no claim)
+- Path A: Insurance covers 500 SOVS (Gustav recovered)
+- Path B: Insurance covers 0 SOVS (Gustav gone, no claim)
 - Path C: Insurance owes Hans-Jürgen (no help)
 
 **Negotiation with Director** (if present):
-- Charm 4: Reduce opera debt by €500
-- Bravado 4: Intimidate reduction by €300
-- Pay €500 minimum: Rest on "installment"
+- Charm 4: Reduce opera debt by 500 SOVS
+- Bravado 4: Intimidate reduction by 300 SOVS
+- Pay 500 SOVS minimum: Rest on "installment"
 
 **Installment Plan**:
-- Pay €500 minimum
+- Pay 500 SOVS minimum
 - Rest tracked as ongoing debt
 - Vendors in Sinfonia know about debt
 - Can affect shop prices until cleared
@@ -406,7 +406,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 - **Description**: Ornate cast-iron benches scattered throughout
 - **Night Occupants**: 
   - Couple making out (oblivious to chase)
-  - Homeless philosopher (offers wisdom for €1)
+  - Homeless philosopher (offers wisdom for 1 SOVS)
   - Sleeping tourist (doesn't wake)
 
 ### Ornamental Pond
@@ -614,8 +614,8 @@ Stadtpark/
 ### Crypto Warning
 - [x] NO crypto elements
 - [x] Focus on emotional/comedic resolution
-- [x] All payments in Euros
+- [x] All payments in SOVS
 
 ---
 
-**Stadtpark: Where a runaway horse, a bag of Skittles, and €2,340 in property damage somehow add up to the most emotionally resonant moment in Eurobound.**
+**Stadtpark: Where a runaway horse, a bag of Skittles, and 2,340 SOVS in property damage somehow add up to the most emotionally resonant moment in Eurobound.**

@@ -68,7 +68,7 @@
         {
           "action": "dialogue",
           "speaker": "hans_jurgen",
-          "text": "Perfect! You help me catch Gustav, I give you discount Fiaker ride! Half price! Forty euros!"
+          "text": "Perfect! You help me catch Gustav, I give you discount Fiaker ride! Half price! Forty SOVS!"
         },
         {
           "action": "dialogue",
@@ -78,7 +78,7 @@
         {
           "action": "dialogue",
           "speaker": "hans_jurgen",
-          "text": "Eighty euros! So you see, very good deal!"
+          "text": "Eighty SOVS! So you see, very good deal!"
         },
         {
           "action": "dialogue_choice",
@@ -237,7 +237,7 @@
         {
           "type": "npc_dialogue_change",
           "npc": "cafe_maitre_d_01",
-          "new_dialogue": "You! €340! PAY NOW or you are BANNED!"
+          "new_dialogue": "You! 340 SOVS! PAY NOW or you are BANNED!"
         },
         {
           "type": "npc_dialogue_change",

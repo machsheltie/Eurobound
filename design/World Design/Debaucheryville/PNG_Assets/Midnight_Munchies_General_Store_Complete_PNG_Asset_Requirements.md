@@ -329,7 +329,7 @@ This document provides exact specifications for all PNG files needed for the Mid
 6. **Regular Status Badge** - Věra knows your face
 
 ### Quote Potential:
-- "That's €12. ...€16 after 2 AM. You knew this."
+- "That's 12 SOVS. ...16 SOVS after 2 AM. You knew this."
 - "You could have bought this cheaper earlier. But here we are."
 - "The price includes the lesson: plan ahead next time."
 - "Prices went up at 2. You know this. Everyone knows this."

@@ -7,7 +7,7 @@
       "vendor_name": "Café Sachertorte Service",
       "vendor_type": "cafe_restaurant",
       "operator_npc": "herr_ober_01",
-      "currency_accepted": ["euro"],
+      "currency_accepted": ["sovs"],
       "availability": {
         "hours": "08:00-22:00",
         "conditions": {
@@ -105,7 +105,7 @@
       {
         "item_id": "apfelstrudel",
         "display_name": "Apfelstrudel",
-        "description": "Apple strudel, warm upon request (€2 extra)",
+        "description": "Apple strudel, warm upon request (2 SOVS extra)",
         "price_euro": 14,
         "optional_charge": {"warm": 2},
         "effects": {
@@ -123,7 +123,7 @@
           "hp_restore": 80,
           "grants_status": {"cultured_palate": {"charm": 2, "duration_minutes": 30}}
         },
-        "flavor_text": "Coffee, chocolate, and almond in architectural precision. For when €18 cake isn't enough."
+        "flavor_text": "Coffee, chocolate, and almond in architectural precision. For when 18 SOVS cake isn't enough."
       },
       {
         "item_id": "gugelhupf",
@@ -148,7 +148,7 @@
           "hp_restore": 25,
           "bravado": 1
         },
-        "flavor_text": "A chocolate horse-shaped cookie. 'In memory of €340.' - the menu",
+        "flavor_text": "A chocolate horse-shaped cookie. 'In memory of 340 SOVS.' - the menu",
         "achievement_trigger": "the_gustav"
       }
     ]
@@ -323,7 +323,7 @@
     {
       "item_id": "patron_of_arts_badge",
       "display_name": "Patron of the Arts",
-      "description": "For paying €340 in café damages.",
+      "description": "For paying 340 SOVS in café damages.",
       "unlock_condition": "debt_paid_full",
       "effects": {
         "reputation_sinfonia": 1

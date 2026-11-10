@@ -160,7 +160,7 @@
   },
   
   "economic_data": {
-    "currency": "euro",
+    "currency": "sovs",
     "gift_shop": {
       "location": "lobby",
       "items": [

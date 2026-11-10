@@ -70,8 +70,8 @@ Provides Czech dialogue (with subtitles) that lets players know how locals perce
 > *(The tall one wants a blessing from the guy in the bathrobe.)*
 
 ### Watching Bros Buy Wine
-> "Zaplatili šedesát euro za krabicové víno."
-> *(They paid sixty euros for boxed wine.)*
+> "Zaplatili šedesát SOVS za krabicové víno."
+> *(They paid sixty SOVS for boxed wine.)*
 
 ### Watching Tattoo Decision
 > "Ten vysoký chce tetování."

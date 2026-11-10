@@ -129,7 +129,7 @@ The crowd is supportive but has STANDARDS.
 - **Color**: Deep copper with ruby highlights
 - **Stats**: +25 HP, +10 SP
 - **Effect**: "Stage Presence" (+3 Charm for 30 minutes)
-- **Price**: €8
+- **Price**: 8 SOVS
 - **Flavor Text**: "Aged in barrels from the old opera house. Some say you can taste the ambition. Others say that's just the hops."
 - **Brewed By**: The Standing Ovation (on-site, with ceremony)
 - **Special**: Served with a small bow, always
@@ -137,18 +137,18 @@ The crowd is supportive but has STANDARDS.
 **Menu Drinks** (Non-Signature):
 | Beer | Price | Effect | Served With |
 |------|-------|--------|-------------|
-| Opening Night Ale | €5 | +15 HP | Dramatic pause |
-| The Understudy | €4 | +10 HP | Apologetic shrug |
-| Critics' Choice | €7 | +20 HP, +5 SP | Knowing nod |
-| The Encore | €10 | +30 HP | Standing ovation (from staff) |
-| Intermission IPA | €6 | +15 SP | Bell warning |
+| Opening Night Ale | 5 SOVS | +15 HP | Dramatic pause |
+| The Understudy | 4 SOVS | +10 HP | Apologetic shrug |
+| Critics' Choice | 7 SOVS | +20 HP, +5 SP | Knowing nod |
+| The Encore | 10 SOVS | +30 HP | Standing ovation (from staff) |
+| Intermission IPA | 6 SOVS | +15 SP | Bell warning |
 
 ### Bottle Opener — The Standing Ovation
 
 - **Design**: Comedy/tragedy theater masks with bottle opener integrated into the ribbon connecting them
 - **Material**: Polished brass with crimson enamel accents
 - **Inscription**: "Bravo!"
-- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for €25
+- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for 25 SOVS
 - **Special Feature**: Makes a tiny "applause" click sound when used
 
 **Standing Ovation Challenge** (for free opener):

@@ -22,7 +22,7 @@
 - **Normal Exit**: Front door (with or without purchase, with or without dignity)
 - **Completion Requirements**: N/A (shop location)
 - **Failure States**: None (they'll take anyone's money)
-- **Progressive Unlocks**: "Valued Client" after €500 spent (private fitting room, advance notice of new stock)
+- **Progressive Unlocks**: "Valued Client" after 500 SOVS spent (private fitting room, advance notice of new stock)
 
 ## Visual Design
 ### Exterior Description
@@ -118,30 +118,30 @@ The shop sees the bros coming:
 **Core Equipment**:
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Formal Gloves | €75 | +2 Charm | Reduces Embarrassed duration by 50% |
-| Conductor's Tuxedo | €300 | +5 Charm, +3 Performance | +15% damage on rhythm-timed attacks |
-| Opera Cape | €200 | +4 Style, +2 Dramatic Flair | Dramatic entrance bonus (+10 Bravado when entering locations) |
-| Ballroom Shoes | €150 | +3 Dance, +2 Speed | +20% Speed during formal events and dance duels |
-| Cultural Critic's Monocle | €175 | +3 INT, +2 Art Authentication | Reveals hidden item values, forgery detection |
-| Maestro's Cufflinks | €125 | +2 Conductor Skills, +2 Musical Timing | +10% rhythm game timing window |
+| Formal Gloves | 75 SOVS | +2 Charm | Reduces Embarrassed duration by 50% |
+| Conductor's Tuxedo | 300 SOVS | +5 Charm, +3 Performance | +15% damage on rhythm-timed attacks |
+| Opera Cape | 200 SOVS | +4 Style, +2 Dramatic Flair | Dramatic entrance bonus (+10 Bravado when entering locations) |
+| Ballroom Shoes | 150 SOVS | +3 Dance, +2 Speed | +20% Speed during formal events and dance duels |
+| Cultural Critic's Monocle | 175 SOVS | +3 INT, +2 Art Authentication | Reveals hidden item values, forgery detection |
+| Maestro's Cufflinks | 125 SOVS | +2 Conductor Skills, +2 Musical Timing | +10% rhythm game timing window |
 
 **Premium Collection** (Valued Client access):
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| The Emperor's Ensemble | €750 | +8 Charm, +5 Style | Automatic respect from all Sinfonia NPCs |
-| Prima Donna Gown | €600 | +6 Charm, +4 Performance | +25% Bravado gains in social encounters |
-| The Phantom's Mask | €400 | +4 Mystery, +3 Charm | Identity hidden in masquerade (+1 social combat round) |
-| Virtuoso's Vest | €350 | +4 Performance, +3 Charm | Musical attacks gain +15% critical chance |
-| Aristocrat's Walking Stick | €250 | +3 Style, +2 Charm | Weapon: 1.2x damage, chance to Embarrass |
+| The Emperor's Ensemble | 750 SOVS | +8 Charm, +5 Style | Automatic respect from all Sinfonia NPCs |
+| Prima Donna Gown | 600 SOVS | +6 Charm, +4 Performance | +25% Bravado gains in social encounters |
+| The Phantom's Mask | 400 SOVS | +4 Mystery, +3 Charm | Identity hidden in masquerade (+1 social combat round) |
+| Virtuoso's Vest | 350 SOVS | +4 Performance, +3 Charm | Musical attacks gain +15% critical chance |
+| Aristocrat's Walking Stick | 250 SOVS | +3 Style, +2 Charm | Weapon: 1.2x damage, chance to Embarrass |
 
 **Accessories**:
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Silk Pocket Square | €50 | +1 Charm | Prevents "Disheveled" status |
-| Pearl Cufflinks | €80 | +1 Style | +5% shop discounts when worn |
-| Velvet Bow Tie | €60 | +1 Charm, +1 Performance | Required for some formal venues |
-| Opera Glasses | €100 | +2 Perception | Ranged advantage in combat, see NPC details |
-| Ivory Fan | €90 | +2 Style | Can fan away status effects (one use per battle) |
+| Silk Pocket Square | 50 SOVS | +1 Charm | Prevents "Disheveled" status |
+| Pearl Cufflinks | 80 SOVS | +1 Style | +5% shop discounts when worn |
+| Velvet Bow Tie | 60 SOVS | +1 Charm, +1 Performance | Required for some formal venues |
+| Opera Glasses | 100 SOVS | +2 Perception | Ranged advantage in combat, see NPC details |
+| Ivory Fan | 90 SOVS | +2 Style | Can fan away status effects (one use per battle) |
 
 ### The Fitting Experience
 
@@ -164,7 +164,7 @@ When trying on equipment:
 
 ### Valued Client System
 
-**Unlocked After**: €500 total spent
+**Unlocked After**: 500 SOVS total spent
 
 **Benefits**:
 - Private fitting room (less public judgment)
@@ -177,20 +177,20 @@ When trying on equipment:
 **Valued Client Tiers**:
 | Tier | Spent | Benefits |
 |------|-------|----------|
-| Client | €0 | Standard treatment |
-| Valued Client | €500 | Private room, 10% off |
-| Distinguished Client | €1000 | 15% off, reserved items |
-| Patron of Fashion | €2000 | 20% off, custom orders available |
+| Client | 0 SOVS | Standard treatment |
+| Valued Client | 500 SOVS | Private room, 10% off |
+| Distinguished Client | 1000 SOVS | 15% off, reserved items |
+| Patron of Fashion | 2000 SOVS | 20% off, custom orders available |
 
 ### Special Services
 
 **Alterations**:
 - Any purchased item can be altered
-- +€50 for "perfect fit" bonus (+1 to primary stat)
+- +50 SOVS for "perfect fit" bonus (+1 to primary stat)
 - Takes in-game time (return later)
 
 **Outfit Consultation**:
-- €100 for full wardrobe advice
+- 100 SOVS for full wardrobe advice
 - Tailor suggests items for your build/class
 - Reveals hidden synergies between equipment
 - Includes backhanded compliments (free)
@@ -213,7 +213,7 @@ When trying on equipment:
 - Before/after comparison
 - Old clothes visible in corner
 - Caption: "The Old Me Is Dead"
-- Requires: Spend €300+ in one visit
+- Requires: Spend 300 SOVS+ in one visit
 
 **"Distinguished Client"** Variant:
 - Private fitting room
@@ -275,7 +275,7 @@ When trying on equipment:
 
 **The Price Reveal**:
 - **Lord Pilsner**: "I'll take the cape! What's the damage?"
-- **Monsieur Aiguille**: "The Opera Cape is €200."
+- **Monsieur Aiguille**: "The Opera Cape is 200 SOVS."
 - **Lord Pilsner**: "For a CAPE?!"
 - **Monsieur Aiguille**: "For a transformation. But if value isn't important to you..."
 - **Lord Pilsner**: "I— no, I GET it. It's an INVESTMENT."
@@ -284,7 +284,7 @@ When trying on equipment:
 **Post-Purchase**:
 - **Lord Pilsner**: *wearing cape* "I feel like a DIFFERENT PERSON."
 - **Monsieur Aiguille**: "You look like one. My work here is done."
-- **Chadwick**: "Did we just get manipulated into spending €800?"
+- **Chadwick**: "Did we just get manipulated into spending 800 SOVS?"
 - **Bradley**: "Gregory believes the correct term is 'elevated.'"
 
 ## System Integration
@@ -306,7 +306,7 @@ When trying on equipment:
 - **"Well Dressed"**: Purchase first equipment piece
 - **"Valued Client"**: Reach first status tier
 - **"Patron of Fashion"**: Reach maximum status
-- **"The Transformation"**: Buy complete outfit (€500+)
+- **"The Transformation"**: Buy complete outfit (500 SOVS+)
 - **"Accessorized"**: Own 5+ accessories
 - **"Cape Confidant"**: Buy the Opera Cape
 

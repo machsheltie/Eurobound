@@ -147,7 +147,7 @@
       "object_id": "willem_tip_jar",
       "type": "service_hint_system",
       "display_name": "Willem's Hat",
-      "description": "A worn hat with exactly €2.47 in it. The amount never changes.",
+      "description": "A worn hat with exactly 2.47 SOVS in it. The amount never changes.",
       "interaction": {
         "tip_1_euro": {
           "result": "basic_hint",
@@ -213,7 +213,7 @@
       "display_name": "Vintage Advertisements",
       "description": "Faded advertisements for businesses that closed decades ago.",
       "examples": [
-        "Guilder exchange rates (pre-Euro)",
+        "Guilder exchange rates (pre-Sovs)",
         "Nokia phone advertisement",
         "Travel agency offering 'exotic destinations' like... Spain",
         "Film development 'Same day service!'"

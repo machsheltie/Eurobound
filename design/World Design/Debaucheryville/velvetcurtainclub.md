@@ -69,7 +69,7 @@ After being turned away from Velvet Curtain Club, the bros will encounter the **
 
 **LORD PILSNER:** "Level Seven? That sounds... high."
 
-**SHADY WRISTBAND GUY:** "Highest tier. Only €30 each. Very reasonable for VIP."
+**SHADY WRISTBAND GUY:** "Highest tier. Only 30 SOVS each. Very reasonable for VIP."
 
 ---
 
@@ -225,7 +225,7 @@ UNLOCKED (Permanent):
 - **Primary Vice**: Selling exclusivity and VIP status to tourists desperate to feel special
 - **City-Specific Comedy Operations**: Opera house ruins converted to decaying glamor nightclub
 - **Buffoon Exploitation**: Bros believe their children's birthday wristbands grant elite access
-- **Comedy of Errors**: The club is FREE but bros paid €90 for "VIP" entry that doesn't exist
+- **Comedy of Errors**: The club is FREE but bros paid 90 SOVS for "VIP" entry that doesn't exist
 - **Consequence System**: Embarrassed status from social failures, Confused from vape/absinthe combinations
 
 ### Buffoon Delusion Scenarios
@@ -342,7 +342,7 @@ UNLOCKED (Permanent):
          ↓
 [Meet Shady Wristband Guy]
          ↓
-[Purchase "VIP Wristbands" - €90 total]
+[Purchase "VIP Wristbands" - 90 SOVS total]
          ↓
 [Acquire: "VIP All-Access Wristband" x3]
 (Player sees: "Children's birthday wristband - I'm 7!")
@@ -430,4 +430,4 @@ UNLOCKED (Permanent):
 - **ADDED**: Wristband visibility on character sprites
 - **ADDED**: NPC reactions to wristbands
 
-**The Velvet Curtain Club now serves as the PAYOFF location for the VIP Wristband sidequest. The bouncer confrontation where bros discover their "Level Seven VIP" wristbands say "I'm 7!" in Czech is the comedic climax of that quest - and it only works if this is their first entry attempt. The club being FREE makes their €90 "investment" even more absurd.**
+**The Velvet Curtain Club now serves as the PAYOFF location for the VIP Wristband sidequest. The bouncer confrontation where bros discover their "Level Seven VIP" wristbands say "I'm 7!" in Czech is the comedic climax of that quest - and it only works if this is their first entry attempt. The club being FREE makes their 90 SOVS "investment" even more absurd.**

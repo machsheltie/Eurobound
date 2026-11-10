@@ -327,7 +327,7 @@ Ultimate proof that Jiří has become a landmark. The city hasn't helped him—i
 ## 💬 Dialogue
 
 ### Tour Guide (Overheard Through Window)
-> "And on your left, you'll see Jiří's Bench. He's been waiting since before the euro."
+> "And on your left, you'll see Jiří's Bench. He's been waiting since before Sovs."
 
 > "Local legend says he's waiting for a tram that no longer runs."
 

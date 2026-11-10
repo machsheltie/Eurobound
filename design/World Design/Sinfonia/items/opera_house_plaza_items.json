@@ -7,7 +7,7 @@
       "vendor_name": "Ticket Scalper",
       "vendor_type": "scam_vendor",
       "operator_npc": "ticket_scalper_01",
-      "currency_accepted": ["euro", "cash_only"],
+      "currency_accepted": ["sovs", "cash_only"],
       "availability": {
         "location": "shadows_near_opera",
         "time": "all_day_more_aggressive_night"
@@ -43,7 +43,7 @@
       "vendor_name": "Café Terrace",
       "vendor_type": "food_beverage",
       "operator_npc": "cafe_maitre_d_01",
-      "currency_accepted": ["euro"],
+      "currency_accepted": ["sovs"],
       "availability": {
         "location": "west_cafe_terraces",
         "time": "10:00-22:00",
@@ -90,7 +90,7 @@
       "vendor_name": "Street Performer",
       "vendor_type": "donation_interaction",
       "operator_npc": "street_performer_violin_01",
-      "currency_accepted": ["euro"],
+      "currency_accepted": ["sovs"],
       "availability": {
         "location": "street_performer_circle",
         "time": "11:00-18:00"
@@ -120,7 +120,7 @@
       "vendor_name": "Fiaker Photo Opportunity",
       "vendor_type": "service",
       "operator_npc": "fiaker_driver_collective",
-      "currency_accepted": ["euro", "tip"],
+      "currency_accepted": ["sovs", "tip"],
       "availability": {
         "location": "fiaker_queue",
         "time": "10:00-17:00"
@@ -151,7 +151,7 @@
       "effects": null,
       "value_euro": 2,
       "probability": 0.8,
-      "flavor_text": "Someone wished for love. You got €2. Fair trade."
+      "flavor_text": "Someone wished for love. You got 2 SOVS. Fair trade."
     },
     {
       "item_id": "lucky_fountain_coin",

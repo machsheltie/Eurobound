@@ -1,6 +1,6 @@
 # De Stroopwafel Kar (The Stroopwafel Cart)
 
-*Where fresh-pressed caramel meets tourist markup — €8 for what locals pay €1.50, but the warmth is real*
+*Where fresh-pressed caramel meets tourist markup — 8 SOVS for what locals pay 1.50 SOVS, but the warmth is real*
 
 ## Location Identity
 - **Location ID**: shamsterdam_market_stroopwafel_cart_01
@@ -32,7 +32,7 @@
 - **Equipment**: Large circular waffle irons, caramel pot, fresh batter containers, warming station
 - **Signage**: 
   - Main banner: "VERSE STROOPWAFELS" (Fresh Stroopwafels)
-  - Price board: "Klein €4 / Groot €8" with small text "Local price: €1.50" (crossed out)
+  - Price board: "Klein 4 SOVS / Groot 8 SOVS" with small text "Local price: 1.50 SOVS" (crossed out)
   - Decorative: Windmill illustration, tulip borders, maximum Dutch-ness
   - Honest addition: "Yes, They're Worth It"
 - **Atmosphere**: Steam rising, caramel smell in a 50-meter radius, line forming
@@ -73,7 +73,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The stroopwafel cart is simultaneously a tourist trap (€8 for what costs €1.50 at a supermarket) and a genuinely excellent experience (fresh stroopwafels are legitimately life-changing). The satire isn't that the cart is bad — it's that tourists happily pay 5x the local price for something they could get cheaper, and THEY'RE STILL MAKING THE RIGHT CHOICE because a fresh, warm stroopwafel from a cart is genuinely incomparable to a packaged one.
+**Core Concept**: The stroopwafel cart is simultaneously a tourist trap (8 SOVS for what costs 1.50 SOVS at a supermarket) and a genuinely excellent experience (fresh stroopwafels are legitimately life-changing). The satire isn't that the cart is bad — it's that tourists happily pay 5x the local price for something they could get cheaper, and THEY'RE STILL MAKING THE RIGHT CHOICE because a fresh, warm stroopwafel from a cart is genuinely incomparable to a packaged one.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist pricing acceptance, the value of "authentic experience" vs actual value
@@ -85,7 +85,7 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Charging tourist prices with a smile
 - **City-Specific Comedy Operations**: Cart strategically positions at tourist peaks
-- **Buffoon Exploitation**: Bros pay €8 for what locals get for €1.50
+- **Buffoon Exploitation**: Bros pay 8 SOVS for what locals get for 1.50 SOVS
 - **Comedy of Errors**: No errors — this is the one thing that goes completely right
 - **Consequence System**: None negative — stroopwafels are pure good in this world
 
@@ -97,10 +97,10 @@
 **How impaired are they**: Usually sober (this is daytime, market hours)
 
 **Obvious signs they ignore**:
-- "Local price: €1.50" crossed out on the sign
+- "Local price: 1.50 SOVS" crossed out on the sign
 - Locals walking past to the market interior
 - Supermarket visible across the street
-- Same product in grocery for €2/pack of 8
+- Same product in grocery for 2 SOVS/pack of 8
 
 **The twist**: Bros are STILL right to buy it because fresh stroopwafels are THAT much better
 
@@ -110,7 +110,7 @@
 ### Cart Interaction System
 - **Approach**: Walk to cart, join line if present
 - **Queue System**: 1-3 customers ahead at tourist hours, 0 off-peak
-- **Ordering**: Simple choice — small (€4) or large (€8)
+- **Ordering**: Simple choice — small (4 SOVS) or large (8 SOVS)
 - **Wait**: Watch the making process (90 seconds)
 - **Receive**: Stroopwafel handed over on wax paper
 - **Consume**: Immediate gratification
@@ -118,9 +118,9 @@
 ### Menu & Consumables
 | Item | Price | HP Effect | SP Effect | Status Effect | Notes |
 |------|-------|-----------|-----------|---------------|-------|
-| Stroopwafel (Small) | €4 | +25 HP | +15 SP | Comfort (3 turns) | Still delicious |
-| Stroopwafel (Large) | €8 | +50 HP | +30 SP | Comfort (5 turns), Sugar Rush | The correct choice |
-| Stroopwafel (Supermarket) | €1.50/8 | +5 HP | +5 SP | None | Available elsewhere, not here |
+| Stroopwafel (Small) | 4 SOVS | +25 HP | +15 SP | Comfort (3 turns) | Still delicious |
+| Stroopwafel (Large) | 8 SOVS | +50 HP | +30 SP | Comfort (5 turns), Sugar Rush | The correct choice |
+| Stroopwafel (Supermarket) | 1.50 SOVS/8 | +5 HP | +5 SP | None | Available elsewhere, not here |
 
 ### The "Fresh vs Packaged" Revelation
 - **Trigger**: First purchase from cart after having supermarket stroopwafel
@@ -161,7 +161,7 @@ During the 90-second wait, random observations:
 - **Midday**: Guaranteed at Dam Square adjacent
 - **Afternoon**: Guaranteed at Vondelpark entrance
 - **Random**: Small chance of cart appearing at other tourist locations
-- **Quest**: "Track the Cart" — visit all three locations, receive discount token (one-time €2 off)
+- **Quest**: "Track the Cart" — visit all three locations, receive discount token (one-time 2 SOVS off)
 
 ## NPCs & Vendors
 ### Cart Staff
@@ -175,7 +175,7 @@ During the 90-second wait, random observations:
 - **Dialogue**:
   - "Klein of groot? Small or large?"
   - "Groot is better. Fresh, more caramel. Same love, bigger joy."
-  - "Yes, it's eight euros. Yes, I know the supermarket. No, it's not the same."
+  - "Yes, it's eight SOVS. Yes, I know the supermarket. No, it's not the same."
   - "Watch. See how I split it? That's sixty years of family practice."
   - "The stroop is my grandmother's recipe. The price is my landlord's recipe."
   - *on pronunciation attempt* "Close enough. Here's your stroopwafel."
@@ -229,8 +229,8 @@ During the 90-second wait, random observations:
 **Tante Bep's Philosophy:**
 - "My grandmother made these during the war. Different prices, same recipe. The stroop is love."
 - "The tourists pay for the location, the show, the experience. The stroopwafel is the same I'd make for family."
-- "Eight euros? I pay rent in Amsterdam. You want cheap, go to Albert Heijn. You want FRESH, you come to Bep."
-- "Every stroopwafel is ninety seconds of my life. That's worth eight euros. My life, your snack."
+- "Eight SOVS? I pay rent in Amsterdam. You want cheap, go to Albert Heijn. You want FRESH, you come to Bep."
+- "Every stroopwafel is ninety seconds of my life. That's worth eight SOVS. My life, your snack."
 
 **The Bros' Stroopwafel Reactions:**
 - **Lord Pilsner** (first bite): "Oh. OH. This is... this is DIFFERENT. This is WARM. This is BETTER."
@@ -244,7 +244,7 @@ During the 90-second wait, random observations:
 ### Comfort Food Network
 - **Function**: Stroopwafel cart is part of Shamsterdam's "things that actually go well" network
 - **Connection to Frietomat**: Different ends of the food spectrum (3 AM desperation vs. daytime delight)
-- **Connection to Pancake House**: Comparison point (€8 stroopwafel > €18 pancake disappointment)
+- **Connection to Pancake House**: Comparison point (8 SOVS stroopwafel > 18 SOVS pancake disappointment)
 - **Connection to Döner Stands**: Fellow street food that delivers on promises
 
 ### Status Effect Interactions
@@ -257,7 +257,7 @@ During the 90-second wait, random observations:
 | Normal | Standard comfort | Pure joy |
 
 ### Cross-Location Dependencies
-- **The Pancake House**: Stroopwafel used as comparison ("€8 well-spent vs €18 regret")
+- **The Pancake House**: Stroopwafel used as comparison ("8 SOVS well-spent vs 18 SOVS regret")
 - **De Groene Gids**: Enhanced by munchies state
 - **Albert Cuyp Market**: Cart located at entrance, gateway food
 - **Supermarket (any)**: Packaged stroopwafels available for sad comparison
@@ -323,7 +323,7 @@ During the 90-second wait, random observations:
 ### Social Media Strategy
 - **Instagram Moments**: Fresh stroopwafel pull-apart shot, cart aesthetic, process close-up
 - **TikTok Potential**: Making process satisfaction, first bite reaction, price comparison reveal
-- **Twitter Hooks**: Tante Bep quotes, "€8 well spent" discourse, fresh vs packaged wars
+- **Twitter Hooks**: Tante Bep quotes, "8 SOVS well spent" discourse, fresh vs packaged wars
 - **Streaming Content**: Cart tracking quest, first taste reactions, Tante Bep interactions
 
 ### Community Engagement
@@ -384,4 +384,4 @@ During the 90-second wait, random observations:
 
 ---
 
-*De Stroopwafel Kar: €8 for what costs €1.50 elsewhere, and worth every cent because fresh, warm, and made by Tante Bep with sixty years of family practice in every fold.*
+*De Stroopwafel Kar: 8 SOVS for what costs 1.50 SOVS elsewhere, and worth every cent because fresh, warm, and made by Tante Bep with sixty years of family practice in every fold.*

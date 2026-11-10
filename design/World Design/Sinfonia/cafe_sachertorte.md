@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: `sinfonia_kaffeehaus_cafe_sachertorte_01`
 - **Display Name**: Café Sachertorte
-- **Satirical Subtitle**: "€18 Per Slice, €340 Per Horse Rampage"
+- **Satirical Subtitle**: "18 SOVS Per Slice, 340 SOVS Per Horse Rampage"
 - **World Location**: Sinfonia
 - **Area Zone**: Kaffeehaus Row
 - **Location Type**: High-End Café / Quest Location / Economic Satire Hub
@@ -27,7 +27,7 @@
 - **Previous Location Requirements**: Sinfonia arrival
 - **Special Conditions**: 
   - During Fiaker Fiasco: Auto-trigger when pursuing Gustav
-  - Post-Fiasco: Staff remember the bros, demand €340 before service
+  - Post-Fiasco: Staff remember the bros, demand 340 SOVS before service
 
 ### Exit Conditions
 - **Normal Exit**: Front door, patio to street
@@ -77,8 +77,8 @@
   - 12 different cakes on silver pedestals
   - Sachertorte in center, crown jewel position
   - Price cards in elegant calligraphy
-  - Single slice visible = €18
-  - Whole cake = €85 (post-Gustav, one is missing)
+  - Single slice visible = 18 SOVS
+  - Whole cake = 85 SOVS (post-Gustav, one is missing)
 - **Atmospheric Effects**:
   - Aroma of coffee, chocolate, and faint superiority
   - Quiet murmur of intellectual conversation
@@ -125,7 +125,7 @@
 ### Thematic Focus
 - **Primary Theme**: "Commodification of Tradition" - Vienna's café culture reduced to tourist extraction
 - **Secondary Theme**: "The Tyranny of Refinement" - atmosphere so pretentious it's fragile
-- **Cultural Target**: European café culture that trades on heritage while charging €8 for espresso
+- **Cultural Target**: European café culture that trades on heritage while charging 8 SOVS for espresso
 - **Vice Element**: Food snobbery, cultural gatekeeping, exploiting tourists' desire for "authentic" experiences
 
 ### Satirical Elements
@@ -152,10 +152,10 @@
 - **Instagram Opportunity**: "Perfect" table setup - cake slice, coffee, newspaper, golden afternoon light
 - **TikTok Potential**: 
   - Head Waiter's withering assessment of orders
-  - Gustav eating €18 cake slices in seconds
+  - Gustav eating 18 SOVS cake slices in seconds
   - Property damage counter ticking up in real-time
 - **Quotable Content**:
-  - "THAT HORSE JUST ATE THREE SACHERTORTES! THAT IS €54!" - Head Waiter
+  - "THAT HORSE JUST ATE THREE SACHERTORTES! THAT IS 54 SOVS!" - Head Waiter
   - "I mean, he has good taste?" - Bradley, unhelpfully
   - "We'll pay you back! Eventually! We're Americans!" - Lord Pilsner, not reassuring anyone
 
@@ -225,8 +225,8 @@
 **Sequence**:
 
 1. **Entry Chaos**
-   - Gustav crashes through patio furniture (€85 damage - one table)
-   - Umbrella stand topples (€15 damage)
+   - Gustav crashes through patio furniture (85 SOVS damage - one table)
+   - Umbrella stand topples (15 SOVS damage)
    - A patron's coffee spills (no charge, just screaming)
 
 2. **The Cake Heist**
@@ -234,13 +234,13 @@
    - Contemplates offerings with disturbing intelligence
    - Selects the Sachertorte (of course)
    - Head Waiter: "NEIN! NEIN! DAS PFERD!"
-   - Gustav eats entire €85 cake in three bites
+   - Gustav eats entire 85 SOVS cake in three bites
 
 3. **Secondary Chaos**
    - Bros attempt to corner Gustav
-   - Gustav knocks over two more tables (€80 damage)
-   - Chandelier narrowly avoided (€2,000 saved)
-   - Gustav grabs opera cake slice on way out (€22 damage)
+   - Gustav knocks over two more tables (80 SOVS damage)
+   - Chandelier narrowly avoided (2,000 SOVS saved)
+   - Gustav grabs opera cake slice on way out (22 SOVS damage)
 
 4. **Exit Strategy**
    - Gustav breaks through service door to kitchen
@@ -251,13 +251,13 @@
 **Damage Tally**:
 | Item | Cost |
 |------|------|
-| Patio table | €85 |
-| Umbrella stand | €15 |
-| Full Sachertorte | €85 |
-| Two marble tables | €80 |
-| Opera cake slice | €22 |
-| "Emotional damages" | €53 |
-| **Total** | **€340** |
+| Patio table | 85 SOVS |
+| Umbrella stand | 15 SOVS |
+| Full Sachertorte | 85 SOVS |
+| Two marble tables | 80 SOVS |
+| Opera cake slice | 22 SOVS |
+| "Emotional damages" | 53 SOVS |
+| **Total** | **340 SOVS** |
 
 **NPC Reactions**:
 - Head Waiter: Full meltdown, demands immediate payment
@@ -267,7 +267,7 @@
 
 **Dialogue Options**:
 1. "We'll catch the horse and pay you back!" → Quest continues, debt logged
-2. "Here's €340 right now." → Quest continues, no café debt (requires funds)
+2. "Here's 340 SOVS right now." → Quest continues, no café debt (requires funds)
 3. "That horse doesn't belong to us!" → Hans-Jürgen arrives, takes responsibility (delays but reduces debt by half)
 
 ---
@@ -310,7 +310,7 @@
 - *Order judgment*: "Ah. You would like... 'a coffee.' How... specific."
 - *Superior*: "The Sachertorte recipe is unchanged since 1832. Unlike the clientele."
 - *During rampage*: "MEIN GOTT! DAS PFERD FRISST DIE TORTE!"
-- *Post-rampage*: "€340. You will pay this. Now. Or I call the Polizei."
+- *Post-rampage*: "340 SOVS. You will pay this. Now. Or I call the Polizei."
 - *Resigned*: "In thirty years of service, I have never... a HORSE. A HORSE ate the Sachertorte."
 
 **Animation States**:
@@ -335,7 +335,7 @@
 
 2. **The Tourist Couple**
    - American, clearly uncomfortable
-   - Debating if €36 for two slices is "too much"
+   - Debating if 36 SOVS for two slices is "too much"
    - One filming everything for TikTok
    - First to evacuate during rampage
 
@@ -358,33 +358,33 @@
 **Beverages**:
 | Item | Price | Effect |
 |------|-------|--------|
-| Kleiner Brauner (small coffee) | €5 | Removes Tired |
-| Großer Brauner (large coffee) | €7 | Removes Tired, +1 Speed (1 hour) |
-| Melange (Viennese latte) | €8 | Removes Tired, +1 Charm (30 min) |
-| Einspänner (whipped cream) | €9 | Removes Tired, Removes Thirsty |
+| Kleiner Brauner (small coffee) | 5 SOVS | Removes Tired |
+| Großer Brauner (large coffee) | 7 SOVS | Removes Tired, +1 Speed (1 hour) |
+| Melange (Viennese latte) | 8 SOVS | Removes Tired, +1 Charm (30 min) |
+| Einspänner (whipped cream) | 9 SOVS | Removes Tired, Removes Thirsty |
 
 **Cakes & Pastries**:
 | Item | Price | Effect |
 |------|-------|--------|
-| Sachertorte Slice | €18 | +60 HP, Removes Thirsty |
-| Apfelstrudel | €14 | +40 HP, Removes Hungry |
-| Opera Cake | €22 | +80 HP, +2 Charm (30 min) |
-| Gugelhupf | €12 | +30 HP, restores small SP |
+| Sachertorte Slice | 18 SOVS | +60 HP, Removes Thirsty |
+| Apfelstrudel | 14 SOVS | +40 HP, Removes Hungry |
+| Opera Cake | 22 SOVS | +80 HP, +2 Charm (30 min) |
+| Gugelhupf | 12 SOVS | +30 HP, restores small SP |
 
 **Hidden Charges**:
-- "Historic Table Supplement": €3 (window seating)
+- "Historic Table Supplement": 3 SOVS (window seating)
 - "Service Surcharge": 15% (added without explanation)
 - "American Tourist Adjustment": 10% (based on accent detection)
 
 ### Post-Quest Economics
 
-**Café Debt**: €340
+**Café Debt**: 340 SOVS
 - Must be paid before normal service resumes
-- Can pay in installments (€50 minimum)
+- Can pay in installments (50 SOVS minimum)
 - Unpaid debt: Staff hostility, refused service
 - Full payment: Unlocks "Valued Patron" status (+10% discount)
 
-**Insurance Note**: Hans-Jürgen's Fiaker insurance covers €170 (Path A only)
+**Insurance Note**: Hans-Jürgen's Fiaker insurance covers 170 SOVS (Path A only)
 
 ---
 
@@ -491,13 +491,13 @@
 - New sign: "NO HORSES PERMITTED"
 - Staff recognize bros on sight
 - Debt must be cleared for normal service
-- New menu item: "The Gustav" (chocolate horse cookie, €8)
+- New menu item: "The Gustav" (chocolate horse cookie, 8 SOVS)
 - Photo of Gustav eating cake on "Wall of Shame"
 - Regulars tell tourists the story (inaccurately)
 
 ### Achievement Integration
 - **"Café Chaos"**: Complete Café Sachertorte phase of Fiaker Fiasco
-- **"Patron of the Arts"**: Pay €340 debt in full
+- **"Patron of the Arts"**: Pay 340 SOVS debt in full
 - **"The Gustav"**: Order the commemorative cookie
 
 ---
@@ -506,7 +506,7 @@
 
 ### Screenshot Moments
 1. **Gustav mid-bite** on whole Sachertorte
-2. **Damage counter** ticking past €300
+2. **Damage counter** ticking past 300 SOVS
 3. **Head Waiter's horror face**
 4. **Bros' selfie** with destroyed café in background
 
@@ -596,8 +596,8 @@ CafeSachertorte/
 ### Crypto Warning
 - [x] NO crypto elements (not relevant to location)
 - [x] Focus on traditional café culture satire
-- [x] Financial elements are Euro-based, not tech-based
+- [x] Financial elements are SOVS-based, not tech-based
 
 ---
 
-**Café Sachertorte: Where Vienna's €18 cake slices meet their match in a horse with expensive taste and zero respect for historic institutions.**
+**Café Sachertorte: Where Vienna's 18 SOVS cake slices meet their match in a horse with expensive taste and zero respect for historic institutions.**

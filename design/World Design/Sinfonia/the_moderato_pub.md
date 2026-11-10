@@ -185,7 +185,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 - **Design**: Metronome shape with bottle opener as the pendulum arm
 - **Material**: Aged bronze with copper accents
 - **Inscription**: "Tempo Is Everything"
-- **Acquired**: Win a Tempo Debate OR purchase for €15
+- **Acquired**: Win a Tempo Debate OR purchase for 15 SOVS
 - **Special Feature**: Pendulum actually swings slightly when hanging
 
 **Stamp Details**:
@@ -203,7 +203,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 - **ABV**: 5.5%
 - **Stats**: +20 HP, +10 SP
 - **Effect**: "Moderate Mood" — immune to Rushed and Sluggish status for 30 minutes
-- **Price**: €6
+- **Price**: 6 SOVS
 - **Flavor Text**: "Not too hoppy, not too malty, not too strong, not too weak. The Allegro faction calls it boring. The Adagio faction calls it rushed. It's perfect."
 - **Unlocked**: After earning brewery stamp
 - **Brewed By**: The Moderato Pub (in-house, recipe unchanged since 1848)
@@ -229,21 +229,21 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 **Drinks Menu**:
 | Item | Price | Effect | Comedy Note |
 |------|-------|--------|-------------|
-| Moderato Märzen | €4 | +10 HP, +5 SP | "The compromise beer" |
-| Allegro Ale | €5 | +5 HP, +15 SP, +Speed | "For those in a hurry" |
-| Adagio Stout | €6 | +20 HP, -Speed | "Take your time" |
-| Presto Pilsner | €7 | +10 SP, +Speed, Jittery | "Dangerously fast" |
-| Lento Lager | €3 | +5 HP | "Is it... fermented yet?" |
-| The Fermata | €10 | Pause all debuffs for 30 min | "Hold that thought" |
+| Moderato Märzen | 4 SOVS | +10 HP, +5 SP | "The compromise beer" |
+| Allegro Ale | 5 SOVS | +5 HP, +15 SP, +Speed | "For those in a hurry" |
+| Adagio Stout | 6 SOVS | +20 HP, -Speed | "Take your time" |
+| Presto Pilsner | 7 SOVS | +10 SP, +Speed, Jittery | "Dangerously fast" |
+| Lento Lager | 3 SOVS | +5 HP | "Is it... fermented yet?" |
+| The Fermata | 10 SOVS | Pause all debuffs for 30 min | "Hold that thought" |
 
 **Food Menu**:
 | Item | Price | Effect | Comedy Note |
 |------|-------|--------|-------------|
-| Tempo Schnitzel | €12 | +30 HP, removes Hungry | "Served at YOUR pace" |
-| Allegro Wurst | €8 | +20 HP, +Speed | "Speed sausage" |
-| Adagio Apfelstrudel | €6 | +15 HP, +10 SP | "Savor every bite" |
-| Metronome Pretzels | €3 | +5 HP | "Perfectly timed salt" |
-| The Fermata Feast | €25 | Full HP/SP restore | "When you really need to hold" |
+| Tempo Schnitzel | 12 SOVS | +30 HP, removes Hungry | "Served at YOUR pace" |
+| Allegro Wurst | 8 SOVS | +20 HP, +Speed | "Speed sausage" |
+| Adagio Apfelstrudel | 6 SOVS | +15 HP, +10 SP | "Savor every bite" |
+| Metronome Pretzels | 3 SOVS | +5 HP | "Perfectly timed salt" |
+| The Fermata Feast | 25 SOVS | Full HP/SP restore | "When you really need to hold" |
 
 ### Quest Integration (Base of Operations)
 

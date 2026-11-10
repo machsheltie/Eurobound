@@ -14,7 +14,7 @@
 - Purchase any signature beers
 
 ### How It Works
-1. **FIRST**: Buy The Blarney Trap Bottle Opener (€15) OR win a Pint-Off at The Blarney Trap
+1. **FIRST**: Buy The Blarney Trap Bottle Opener (15 SOVS) OR win a Pint-Off at The Blarney Trap
 2. This unlocks the Brewery Tour quest AND gets you The Blarney Trap's stamp + signature beer
 3. **THEN**: At each subsequent location, you must acquire THAT location's specific bottle opener
 4. Each location's opener = access to that location's stamp + signature beer
@@ -23,7 +23,7 @@
 
 ### The Prerequisite Chain
 ```
-THE BLARNEY TRAP OPENER (€15 or Pint-Off)
+THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
          ↓
     [UNLOCKS BREWERY TOUR QUEST]
          ↓
@@ -41,7 +41,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Design**: Celtic knot shamrock with bottle opener integrated into stem
 - **Material**: Brass (spray-painted zinc, "authentic")
 - **Inscription**: "May Your Glass Never Be Empty"
-- **Acquired**: Win a Pint-Off challenge OR purchase for €15
+- **Acquired**: Win a Pint-Off challenge OR purchase for 15 SOVS
 - **Special Feature**: Shamrock spins freely on the ring
 - **CRITICAL**: This is THE KEY ITEM that unlocks the entire Brewery Tour quest
 
@@ -59,7 +59,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Copper-plated steel with verde patina accents
 - **Inscription**: "Forged in Flavor"
 - **Prerequisite**: Must have The Blarney Trap Bottle Opener to access
-- **Acquired**: Complete the brewery tour (Tasting Room) OR clear the dungeon OR purchase for €18
+- **Acquired**: Complete the brewery tour (Tasting Room) OR clear the dungeon OR purchase for 18 SOVS
 - **Special Feature**: Hollow center creates whistle sound when swung
 
 **Tour Guide Fiona's Check**:
@@ -76,7 +76,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Navy enamel over brass with gold trim
 - **Inscription**: "Summa Cum Lager"
 - **Prerequisite**: Must have The Blarney Trap Bottle Opener to access
-- **Acquired**: Graduate (complete any drinking course) OR purchase for €20
+- **Acquired**: Graduate (complete any drinking course) OR purchase for 20 SOVS
 - **Special Feature**: Tassel actually moves/dangles
 
 **Dean Declan's Check**:
@@ -93,7 +93,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Faded gold-tone metal, intentionally tarnished
 - **Inscription**: "Lucky Eventually"
 - **Prerequisite**: Must have The Blarney Trap Bottle Opener to access
-- **Acquired**: Lose 3 scams AND return (awarded by Mickey) OR purchase for €12 (cheapest, fitting)
+- **Acquired**: Lose 3 scams AND return (awarded by Mickey) OR purchase for 12 SOVS (cheapest, fitting)
 - **Special Feature**: Fourth leaf is detachable (falls off occasionally)
 
 **Mickey's Check**:
@@ -121,7 +121,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Emerald-tinted metal with iridescent "oil slick" finish
 - **Inscription**: "I Saw Myself"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vanek for €22
+- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vanek for 22 SOVS
 - **Special Feature**: Surface appears to shift colors in different lighting (lenticular effect)
 
 **Dr. Vanek's Check**:
@@ -138,11 +138,11 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Brushed chrome with cyan and hot pink neon accents (actually glows)
 - **Inscription**: "Inhaled & Survived"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Complete the rhythm puzzle sequence OR purchase from Glitching Bouncer for €20
+- **Acquired**: Complete the rhythm puzzle sequence OR purchase from Glitching Bouncer for 20 SOVS
 - **Special Feature**: Contains tiny LED that pulses in rhythm when squeezed
 
 **Bouncer's Check**:
-- *With Blarney Trap Opener*: *scans* "Publandia... *glitch* ...authorization detected. Rhythm... challenge... available. Or... *static* ...€20."
+- *With Blarney Trap Opener*: *scans* "Publandia... *glitch* ...authorization detected. Rhythm... challenge... available. Or... *static* ...20 SOVS."
 - *Without*: "Authorization... *glitch* ...not found. Publandia... opener... required. Return... *static* ...when equipped."
 
 **Stamp Unlock**: Complete rhythm puzzle + defeat Strobe Brewmistress
@@ -155,7 +155,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Intentionally tarnished brass with rust-orange patina
 - **Inscription**: "Noble by Liver"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Complete the stealth puzzle (navigate without waking patrons) OR purchase from Bartender for €15
+- **Acquired**: Complete the stealth puzzle (navigate without waking patrons) OR purchase from Bartender for 15 SOVS
 - **Special Feature**: Stein charm actually holds 1ml of liquid (decorative)
 
 **Bartender's Check**:
@@ -172,7 +172,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Matte black plastic with neon blue circuit trace inlays
 - **Inscription**: "Algorithm Verified"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Complete taste profile puzzle OR defeat BrewBot OR purchase from Robotic Bartender for €25
+- **Acquired**: Complete taste profile puzzle OR defeat BrewBot OR purchase from Robotic Bartender for 25 SOVS
 - **Special Feature**: Tiny LED screen scrolls random hexadecimal codes
 
 **Scanner's Check**:
@@ -200,7 +200,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Aged bronze with copper accents
 - **Inscription**: "Tempo Is Everything"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Win a Tempo Debate OR purchase for €15
+- **Acquired**: Win a Tempo Debate OR purchase for 15 SOVS
 - **Special Feature**: Pendulum actually swings slightly when hanging
 
 **Herr Takt's Check**:
@@ -217,7 +217,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Polished brass with crimson enamel accents
 - **Inscription**: "Bravo!"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for €25
+- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for 25 SOVS
 - **Special Feature**: Makes a tiny "applause" click sound when used
 
 **Herr Dramatisch's Check**:
@@ -234,7 +234,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Gold-tone metal with purple velvet pouch
 - **Inscription**: "By Royal Appointment"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Complete the Coronation Ceremony OR purchase for €20
+- **Acquired**: Complete the Coronation Ceremony OR purchase for 20 SOVS
 - **Special Feature**: Comes with "Certificate of Nobility" (tiny scroll)
 
 **König Klaus's Check**:
@@ -251,7 +251,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Brushed silver with ballroom gold accents
 - **Inscription**: "One-Two-Three"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Complete the Stein Waltz on any difficulty OR purchase for €18
+- **Acquired**: Complete the Stein Waltz on any difficulty OR purchase for 18 SOVS
 - **Special Feature**: Weighted to spin when flicked (like a dancer)
 
 **Herr Drehmeister's Check**:
@@ -279,7 +279,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Brushed copper with grain-gold accents
 - **Inscription**: "Respect The Grain"
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for €22
+- **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for 22 SOVS
 - **Special Feature**: Blade arms actually rotate when you spin the opener
 
 **Hendrik's Check**:
@@ -296,11 +296,11 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 - **Material**: Amber-tinted brass with sawdust-colored leather loop
 - **Inscription**: "No Hands. No Fear."
 - **Prerequisite**: The Blarney Trap Bottle Opener (to access brewery tour)
-- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for €20
+- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for 20 SOVS
 - **Special Feature**: Glass portion is slightly convex to mimic the surface tension meniscus
 
 **Kees's Check**:
-- *With Blarney Trap Opener*: *nods* "Seamus." *points to gauntlet* "Gauntlet. Or €20."
+- *With Blarney Trap Opener*: *nods* "Seamus." *points to gauntlet* "Gauntlet. Or 20 SOVS."
 - *Without*: "No shamrock. No gauntlet." *waits* "Return. With opener."
 
 **Stamp Unlock**: Complete Jenever Taste Test gauntlet (distinguish jong from oud)
@@ -320,9 +320,9 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 ### Per-City Legendary Hangovers
 | City | Reward | Effect | Penalty | Price |
 |------|--------|--------|---------|-------|
-| Publandia | The Full Irish Experience | +15 all stats (battle) | -10 all stats 30 min | €50 |
-| Debaucheryville | The Neon Nightmare | +20 all stats + Confusion immunity | -15 all + glitch effects 45 min | €75 |
-| Sinfonia | The Imperial Concerto | +18 all stats + Embarrassment immunity | -12 all + formal behavior 40 min | €60 |
+| Publandia | The Full Irish Experience | +15 all stats (battle) | -10 all stats 30 min | 50 SOVS |
+| Debaucheryville | The Neon Nightmare | +20 all stats + Confusion immunity | -15 all + glitch effects 45 min | 75 SOVS |
+| Sinfonia | The Imperial Concerto | +18 all stats + Embarrassment immunity | -12 all + formal behavior 40 min | 60 SOVS |
 | Shamsterdam | Dutch Courage | 25% Bravado loss reduction (PERMANENT) | None | N/A |
 
 ### Continental Beer Master
@@ -341,23 +341,23 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 | City | Location | Design | Inscription | Price | How to Earn |
 |------|----------|--------|-------------|-------|-------------|
 | **PUBLANDIA** | | | | | |
-| | The Blarney Trap | Celtic shamrock | "May Your Glass Never Be Empty" | €15 | Pint-Off **[QUEST TRIGGER]** |
-| | The Stoutworks | Copper still | "Forged in Flavor" | €18 | Tour or Dungeon |
-| | Trinity of Pints | Graduation cap | "Summa Cum Lager" | €20 | Graduate |
-| | Shenanigans | Wilted clover | "Lucky Eventually" | €12 | Lose 3 scams + return |
+| | The Blarney Trap | Celtic shamrock | "May Your Glass Never Be Empty" | 15 SOVS | Pint-Off **[QUEST TRIGGER]** |
+| | The Stoutworks | Copper still | "Forged in Flavor" | 18 SOVS | Tour or Dungeon |
+| | Trinity of Pints | Graduation cap | "Summa Cum Lager" | 20 SOVS | Graduate |
+| | Shenanigans | Wilted clover | "Lucky Eventually" | 12 SOVS | Lose 3 scams + return |
 | **DEBAUCHERYVILLE** | | | | | |
-| | Absinthium Taproom | Cracked glass + fairy | "I Saw Myself" | €22 | Mirror maze |
-| | Tap Dat Vault | Vault door soundwave | "Inhaled & Survived" | €20 | Rhythm puzzle |
-| | Three-Crown Keg Haus | 3 rusted crowns | "Noble by Liver" | €15 | Stealth puzzle |
-| | Ye Olde B.R.E.W. Lab | Pixelated hop LED | "Algorithm Verified" | €25 | Taste puzzle or BrewBot |
+| | Absinthium Taproom | Cracked glass + fairy | "I Saw Myself" | 22 SOVS | Mirror maze |
+| | Tap Dat Vault | Vault door soundwave | "Inhaled & Survived" | 20 SOVS | Rhythm puzzle |
+| | Three-Crown Keg Haus | 3 rusted crowns | "Noble by Liver" | 15 SOVS | Stealth puzzle |
+| | Ye Olde B.R.E.W. Lab | Pixelated hop LED | "Algorithm Verified" | 25 SOVS | Taste puzzle or BrewBot |
 | **SINFONIA** | | | | | |
-| | The Moderato Pub | Metronome pendulum | "Tempo Is Everything" | €15 | Win debate |
-| | The Standing Ovation | Theater masks | "Bravo!" | €25 | Full performance |
-| | Crown & Cask | Habsburg crown | "By Royal Appointment" | €20 | Coronation |
-| | The Dancing Stein | Dancing stein | "One-Two-Three" | €18 | Stein Waltz |
+| | The Moderato Pub | Metronome pendulum | "Tempo Is Everything" | 15 SOVS | Win debate |
+| | The Standing Ovation | Theater masks | "Bravo!" | 25 SOVS | Full performance |
+| | Crown & Cask | Habsburg crown | "By Royal Appointment" | 20 SOVS | Coronation |
+| | The Dancing Stein | Dancing stein | "One-Two-Three" | 18 SOVS | Stein Waltz |
 | **SHAMSTERDAM** | | | | | |
-| | The Wobbly Windmill Brewery | Rotating windmill | "Respect The Grain" | €22 | Defeat Yeast Golem |
-| | Proeflokaal 't Kansen | Tulip jenever glass | "No Hands. No Fear." | €20 | Jenever gauntlet |
+| | The Wobbly Windmill Brewery | Rotating windmill | "Respect The Grain" | 22 SOVS | Defeat Yeast Golem |
+| | Proeflokaal 't Kansen | Tulip jenever glass | "No Hands. No Fear." | 20 SOVS | Jenever gauntlet |
 
 **TOTAL**: 14 unique bottle openers across 4 cities
 

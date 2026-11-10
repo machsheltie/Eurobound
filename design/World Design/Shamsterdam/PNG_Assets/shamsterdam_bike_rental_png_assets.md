@@ -305,7 +305,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 - Canal: Blue water drop
 
 **Deposit Bar** (150×20)
-- €150 deposit tracker
+- 150 SOVS deposit tracker
 - Depletes with damage
 - Green → Yellow → Red
 

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 11 PM (extended tourist hours)
 - **Stat Requirements**: None (maturity stat would help, not required)
-- **Item Requirements**: €5 entry fee (suspiciously cheap, explained by what's inside)
+- **Item Requirements**: 5 SOVS entry fee (suspiciously cheap, explained by what's inside)
 - **Previous Location Requirements**: None (often stumbled into by accident)
 - **Special Conditions**: "18+" sign at door is more suggestion than enforcement
 
@@ -66,10 +66,10 @@
 - **Exhibits**:
   - **The Throne**: Oversized chair shaped like... something... mandatory group photo spot
   - **Mirror Maze**: Short but disorienting, reflects things you'd rather not see reflected
-  - **Costume Corner**: Rental accessories for "artistic" photos (additional €5)
+  - **Costume Corner**: Rental accessories for "artistic" photos (additional 5 SOVS)
   - **The Swing**: Exactly what it sounds like, "for display only" (sign ignored)
   - **Wax Figures**: Celebrities in "compromising" poses (legally distinct, allegedly)
-  - **Green Screen Station**: Photoshop yourself into "classic" scenes (€10 printed)
+  - **Green Screen Station**: Photoshop yourself into "classic" scenes (10 SOVS printed)
 - **Atmosphere**: Flash photography constant, groups rotating through photo ops, gift shop visible (drawing you forward)
 
 ### The Giggling Figure (Signature Attraction)
@@ -99,7 +99,7 @@
 - **Sensitivity Considerations**: Targets tourist behavior and museum kitsch, not human sexuality or legitimate sex education
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Charging €5 for an experience people can't adequately describe later
+- **Primary Vice**: Charging 5 SOVS for an experience people can't adequately describe later
 - **City-Specific Comedy Operations**: Exploiting Amsterdam's reputation for content that's mostly Victorian machinery
 - **Buffoon Exploitation**: Bros expect shocking, receive "is that John Lennon's signature on that?"
 - **Comedy of Errors**: Group photos that will never be posted, reactions that can't be controlled
@@ -110,10 +110,10 @@
 
 **What is ACTUALLY happening**: Looking at 150-year-old flip-card machines and a mannequin that lifts its skirt on a timer
 
-**How impaired are they**: Usually sober (it's daytime, it's €5, it's "cultural")
+**How impaired are they**: Usually sober (it's daytime, it's 5 SOVS, it's "cultural")
 
 **Obvious signs they ignore**:
-- €5 entry fee (that's suspiciously cheap for Amsterdam)
+- 5 SOVS entry fee (that's suspiciously cheap for Amsterdam)
 - The giggling mannequin is from 1985
 - John Lennon sketches are the most interesting thing here
 - Every photo op is designed for Instagram, none will be posted
@@ -136,7 +136,7 @@
 - **Staff Reaction**: Completely deadpan, seen it 10,000 times
 
 ### Peep Show Devices (Interactive)
-- **Cost**: €0.50 per viewing (coins at reception)
+- **Cost**: 0.50 SOVS per viewing (coins at reception)
 - **Content**: Victorian flip-card animations, surprisingly tame by modern standards
 - **Effect**: +Vintage Knowledge status, +slight confusion about past generations
 - **Bros' Reaction**: "People paid money for THIS? ...Put in another coin."
@@ -147,8 +147,8 @@
 | The Giggling Figure | Surprise reaction shot | +Embarrassed status if shared | 0% will post |
 | Marilyn Monroe Statue | Dress-blow recreation | +Bravado if pulled off | 15% might post (cropped) |
 | The Throne | Group seating | +Unexplainable Photo item | 5% deeply regret posting |
-| Costume Corner | Accessorized portraits | -Gold (€5 rental), +Regret | 0% will post (but keep) |
-| Green Screen | "Classic scene" composite | -Gold (€10 print), +Artifact | Never (but can't throw away) |
+| Costume Corner | Accessorized portraits | -Gold (5 SOVS rental), +Regret | 0% will post (but keep) |
+| Green Screen | "Classic scene" composite | -Gold (10 SOVS print), +Artifact | Never (but can't throw away) |
 
 ### The Photo Consequences System
 - **Photos Taken**: Automatically collected in "Venus Temple Album"
@@ -176,7 +176,7 @@
 - **Demeanor**: Completely unfazed by everything, treats job like any other receptionist
 - **Background**: Worked here 15 years, has heard every possible reaction, immune to all
 - **Dialogue**:
-  - "Five euros. Cash or card. Coins for the machines are there. Yes, the machines work. Yes, they're original."
+  - "Five SOVS. Cash or card. Coins for the machines are there. Yes, the machines work. Yes, they're original."
   - "The giggling figure is on your right. Yes, it moves. Everyone jumps. You will also jump."
   - "John Lennon sketches are upstairs. Yes, the John Lennon. Yes, really. I get that question a lot."
   - "Photos are allowed. What you do with them is your business."
@@ -238,7 +238,7 @@
 
 ### Original NPC Dialogue
 **Anke's Observations** (when bros purchase coins):
-- "Three euros? That's six viewings. The devices take maybe thirty seconds each. You're sure?"
+- "Three SOVS? That's six viewings. The devices take maybe thirty seconds each. You're sure?"
 - "First time? The figure is right there. No, you can't avoid it. Good luck."
 
 **The Bros' Venus Temple Reactions:**
@@ -363,7 +363,7 @@
 - the_throne.png - 256x256 - Mandatory photo spot
 - mirror_maze.png - 512x512 - Short, disorienting
 - gift_shop_cramped.png - 1024x768 - Exit strategy
-- costume_corner.png - 256x192 - €5 regret station
+- costume_corner.png - 256x192 - 5 SOVS regret station
 
 ### Character Sprites (12 PNGs)
 - anke_ticket_seller.png - 64x96 - Cross-stitch between customers
@@ -378,14 +378,14 @@
 - school_group_clipboards.png - 256x96 - Art history notes
 
 ### Interactive Objects (8 PNGs)
-- peep_show_coin_slot.png - 64x64 - €0.50 per viewing
+- peep_show_coin_slot.png - 64x64 - 0.50 SOVS per viewing
 - photo_op_frame.png - 256x192 - Generic station interface
 - throne_seating_prompt.png - 128x96 - "Sit Here" indicator
-- costume_rental_rack.png - 192x128 - €5 extra
-- green_screen_station.png - 192x192 - €10 composite
+- costume_rental_rack.png - 192x128 - 5 SOVS extra
+- green_screen_station.png - 192x192 - 10 SOVS composite
 - flip_card_animation.png - 128x64x8 - Peep show content (tasteful)
 - coin_collection.png - 64x32 - Machine currency
-- museum_ticket_venus.png - 64x32 - €5 entry
+- museum_ticket_venus.png - 64x32 - 5 SOVS entry
 
 ### Animated Objects (6 PNGs)
 - giggling_figure_mechanism.png - 256x384x4 - Skirt lift cycle
@@ -405,4 +405,4 @@
 
 ---
 
-*Venustempel: €5 to jump at a Victorian mannequin, learn about John Lennon's side hobby, and take photos you'll never post.*
+*Venustempel: 5 SOVS to jump at a Victorian mannequin, learn about John Lennon's side hobby, and take photos you'll never post.*

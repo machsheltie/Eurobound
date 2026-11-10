@@ -16,7 +16,7 @@
 - **Time Restrictions**: 11 AM - 5 AM (extended hours for the lost and hungry)
 - **Peak Hours**: 1 AM - 4 AM (when the real customers arrive)
 - **Stat Requirements**: None (hunger is the only requirement)
-- **Item Requirements**: Gold for purchases (€2.50-8), willingness to be judged
+- **Item Requirements**: Gold for purchases (2.50-8 SOVS), willingness to be judged
 - **Previous Location Requirements**: None (döner finds all who need it)
 - **Special Conditions**: Standing counter only — no seats, no weakness
 
@@ -143,14 +143,14 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Mehmet's Take |
 |------|-------|-----------|---------------|---------------|
-| Döner (Veal) | €5.50 | +30 HP | None | "Good choice." |
-| Döner (Chicken) | €4.50 | +25 HP | None | "...okay." |
-| Döner (Mixed) | €5 | +28 HP | None | "Indecisive. But okay." |
-| The Triple Tower | €8 | +40 HP, +15 SP | Garlic Aura, Meat Sweats | "You are hungry. I respect this." |
-| Extra Garlic Sauce | +€0.50 | +5 HP | Garlic Aura Extended | "You want to be alone tonight?" |
-| Extra Hot Sauce | +€0.50 | +5 HP, -5 HP delayed | Fire Breath | "Turkish hot. Not tourist hot." |
-| Just Bread | €1.50 | +10 HP | Disappointment | "You came here for... bread?" |
-| Drink (Ayran) | €2 | +10 HP | Cooling | "Good with döner. Traditional." |
+| Döner (Veal) | 5.50 SOVS | +30 HP | None | "Good choice." |
+| Döner (Chicken) | 4.50 SOVS | +25 HP | None | "...okay." |
+| Döner (Mixed) | 5 SOVS | +28 HP | None | "Indecisive. But okay." |
+| The Triple Tower | 8 SOVS | +40 HP, +15 SP | Garlic Aura, Meat Sweats | "You are hungry. I respect this." |
+| Extra Garlic Sauce | +0.50 SOVS | +5 HP | Garlic Aura Extended | "You want to be alone tonight?" |
+| Extra Hot Sauce | +0.50 SOVS | +5 HP, -5 HP delayed | Fire Breath | "Turkish hot. Not tourist hot." |
+| Just Bread | 1.50 SOVS | +10 HP | Disappointment | "You came here for... bread?" |
+| Drink (Ayran) | 2 SOVS | +10 HP | Cooling | "Good with döner. Traditional." |
 
 ### The "Triple Tower" Experience
 **Leeman's Signature Item**

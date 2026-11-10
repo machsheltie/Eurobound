@@ -7,7 +7,7 @@
       "shop_name": "The Cloverleaf Kitchen",
       "shop_type": "food_vendor",
       "operator_npc": "chef_maeve_01",
-      "currency_accepted": ["euro", "barter"],
+      "currency_accepted": ["sovs", "barter"],
       "availability": {
         "schedule": "08:00-09:00",
         "location_requirement": "outer_lane_south_bend",

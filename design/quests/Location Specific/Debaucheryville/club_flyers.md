@@ -41,7 +41,7 @@
 
 **Vape Witch Vanessa:** 
 *exhaling peach-mango cloud*
-> "You three. You look like you know how to... hustle. DJ Beatdrop needs promotion. Rival DJ Hardstyle Hendrik is trying to steal his Thursday night slot. I need someone to poster the city. €100, plus free drinks tonight."
+> "You three. You look like you know how to... hustle. DJ Beatdrop needs promotion. Rival DJ Hardstyle Hendrik is trying to steal his Thursday night slot. I need someone to poster the city. 100 SOVS, plus free drinks tonight."
 
 **Lord Pilsner:** *cracking knuckles* "Lady, you just hired the right team. I was a MARKETING MAJOR."
 
@@ -189,12 +189,12 @@
 > "What the f--- ...actually, you know what? People are talking about it. That's... something."
 
 **Hipster Collecting Them:**
-> "These are authentic Y2K memorabilia. I'll pay €5 each."
+> "These are authentic Y2K memorabilia. I'll pay 5 SOVS each."
 
 ---
 
 **Rewards - Path A:**
-- **€100 payment** from Vanessa
+- **100 SOVS payment** from Vanessa
 - **"GeoCities Business Card" item** - Locals treat you like a living museum exhibit
 - **+2 Bravado** - Bros think they've "disrupted the paradigm"
 - **"Web 1.0 Pioneer" Title**
@@ -281,7 +281,7 @@
 ---
 
 **Rewards - Path B:**
-- **€100 payment** from Vanessa (she finds it hilarious)
+- **100 SOVS payment** from Vanessa (she finds it hilarious)
 - **"Frosted Tips Vandal" trinket** - +2 Bravado, -2 Charm
 - **"Y2K Villain" Title** - Bouncers remember you as "those Limp Bizkit guys"
 - **Defaced flyers become art installation** - Local gallery wants to display them

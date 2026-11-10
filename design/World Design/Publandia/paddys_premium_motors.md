@@ -16,7 +16,7 @@
 
 ### Entry Conditions
 - **Time Restrictions**: 08:00-20:00 (Seamus takes his breaks seriously)
-- **Stat Requirements**: None (they'll rent to anyone with €50)
+- **Stat Requirements**: None (they'll rent to anyone with 50 SOVS)
 - **Item Requirements**: None
 - **Previous Location Requirements**: None (available after reaching Publandia)
 - **Special Conditions**: None
@@ -39,7 +39,7 @@
 - **Lot**: 12-15 compact cars in various states of "character" - dents, scratches, questionable paint jobs
 - **Signage**: 
   - Main: Hand-painted wooden sign, shamrock logo
-  - Sub-signs: "INSURANCE RECOMMENDED," "WE ARE NOT LIABLE FOR THE CLOVERLEAF," "GPS AVAILABLE (€20/DAY)"
+  - Sub-signs: "INSURANCE RECOMMENDED," "WE ARE NOT LIABLE FOR THE CLOVERLEAF," "GPS AVAILABLE (20 SOVS/DAY)"
 - **Atmosphere**: Rural Irish outskirts, sheep occasionally wander through lot, distant roundabout visible on horizon
 - **Environmental Context**: Last stop before the countryside; The Cloverleaf is visible about 1km down the road
 
@@ -156,22 +156,22 @@
 
 | Vehicle | Price/Day | Description | Hidden Issue |
 |---------|-----------|-------------|--------------|
-| The Shamrock | €45 | "Economy" compact | Wipers stuck on |
-| The Lucky Charm | €60 | "Standard" sedan | GPS glitches near roundabouts |
-| The Emerald Dream | €80 | "Premium" SUV | Too wide for country lanes |
-| The Full Irish | €120 | "Luxury" convertible | Attracts sheep attention |
+| The Shamrock | 45 SOVS | "Economy" compact | Wipers stuck on |
+| The Lucky Charm | 60 SOVS | "Standard" sedan | GPS glitches near roundabouts |
+| The Emerald Dream | 80 SOVS | "Premium" SUV | Too wide for country lanes |
+| The Full Irish | 120 SOVS | "Luxury" convertible | Attracts sheep attention |
 
 ### Add-Ons
 
 | Add-On | Price | What They Say | What It Does |
 |--------|-------|---------------|--------------|
-| GPS Rental | €20/day | "Navigation assistance" | Says "recalculating" in Cloverleaf |
-| Premium Insurance | €35/day | "Complete coverage" | Doesn't cover "circular traffic incidents" |
-| Map Book | €10 | "Traditional navigation" | Map has Cloverleaf labeled "?" |
-| Rosary Beads | €5 | "For the dashboard" | Seamus insists |
+| GPS Rental | 20 SOVS/day | "Navigation assistance" | Says "recalculating" in Cloverleaf |
+| Premium Insurance | 35 SOVS/day | "Complete coverage" | Doesn't cover "circular traffic incidents" |
+| Map Book | 10 SOVS | "Traditional navigation" | Map has Cloverleaf labeled "?" |
+| Rosary Beads | 5 SOVS | "For the dashboard" | Seamus insists |
 
 ### Economic Integration
-- **Currency**: Euros
+- **Currency**: SOVS
 - **Price Structure**: Reasonable base, hidden fees in fine print
 - **Post-Quest Discount**: "Seamus's Respect" = 10% off (still overpriced)
 - **Insurance Gotcha**: Premium insurance explicitly excludes "incidents occurring within circular traffic patterns"

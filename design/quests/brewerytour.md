@@ -23,7 +23,7 @@ Expansion Pack cities will contribute 2 local breweries and each will offer a sp
 BREWERY TOUR
 Sinfonia Bottle Opener
     • Design: Musical eighth note with bottle opener flag, tiny crown on note head
-    • Acquired: The Standing Ovation (€25 or "Standing Ovation Challenge")
+    • Acquired: The Standing Ovation (25 SOVS or "Standing Ovation Challenge")
     • Inscription: "Drink in Three-Quarter Time"
     • Special: Makes faint chime when used (tiny bell inside)
 
@@ -37,4 +37,4 @@ Legendary Hangover: "The Imperial Concerto"
     • Unlock: All 4 Sinfonia stamps collected
     • Effect: +18 all stats for battle, Embarrassment immunity
     • Consequence: -12 all stats for 40 min, overly formal dialogue, random bowing
-    • Price: €60 (repurchasable from any stamped location)
+    • Price: 60 SOVS (repurchasable from any stamped location)

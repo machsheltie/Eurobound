@@ -520,7 +520,7 @@
         {
           "time": 12,
           "action": "transition",
-          "note": "Backdrop remains intact, damage reduced by €400"
+          "note": "Backdrop remains intact, damage reduced by 400 SOVS"
         }
       ]
     },
@@ -571,7 +571,7 @@
           "time": 9,
           "action": "dialogue",
           "speaker": "prima_donna_adelheid",
-          "text": "I require €500 for therapeutic vocal rest. The TRAUMA.",
+          "text": "I require 500 SOVS for therapeutic vocal rest. The TRAUMA.",
           "emotion": "dramatic_injury"
         },
         {
@@ -585,7 +585,7 @@
             "backdrop": 400,
             "note": "Backdrop 0 if Papageno path"
           },
-          "total_display": "€2,000",
+          "total_display": "2,000 SOVS",
           "sfx": "register_ching_final"
         },
         {
@@ -600,7 +600,7 @@
             },
             {
               "id": "negotiate_prima_donna",
-              "text": "That €500 seems excessive... (Charm 4)",
+              "text": "That 500 SOVS seems excessive... (Charm 4)",
               "stat_check": {"charm": 4},
               "result": "prima_donna_reduced"
             },
@@ -680,7 +680,7 @@
           "time": 5,
           "action": "quest_update",
           "phase": "stadtpark_phase_04",
-          "damage_running_total": "€2,340_or_€1,940_papageno"
+          "damage_running_total": "2,340 SOVS_or_1,940 SOVS_papageno"
         }
       ]
     }

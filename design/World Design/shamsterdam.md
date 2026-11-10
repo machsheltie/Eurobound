@@ -38,7 +38,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Giant wheels of Gouda in every window
 - Wooden shoe shops targeting photo-op tourism
 - "Authentic Dutch Experience" tours that are anything but
-- Stroopwafel stands charging €8 for what locals pay €1.50
+- Stroopwafel stands charging 8 SOVS for what locals pay 1.50 SOVS
 - Tulip bulb vendors selling bulbs that won't survive US customs
 
 ### Museum Mile
@@ -76,13 +76,13 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Where the Fabergé Egg Hunt takes place
 - Chocolate anatomy displays in white, milk, and dark varieties
 - Decorated specimens with sprinkles and fondant bow ties
-- "FABERGÉ-STYLE COLLECTOR'S EGGS" for €3.50
+- "FABERGÉ-STYLE COLLECTOR'S EGGS" for 3.50 SOVS
 - The teenager behind the counter who cannot be bothered
 
 ### Casa Rosé Erotic Theatre
 **Live Entertainment Venue**
 - The famous "banana show" the bros will NOT shut up about
-- €65 entry for something you can't unsee
+- 65 SOVS entry for something you can't unsee
 - Aggressive bartenders and mandatory drink purchases
 - Bachelor party groups taking up all the good seats
 - The pink elephant statue out front: everyone's profile pic
@@ -113,7 +113,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 ### The Pancake House
 **Dutch Comfort Food Trap**
-- €18 for pancakes that should cost €6
+- 18 SOVS for pancakes that should cost 6 SOVS
 - Toppings that make no sense (bacon AND Nutella?)
 - Bros who discover Dutch pancakes are more like crepes
 - Disappointed Americans expecting IHOP thickness
@@ -190,7 +190,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 **Late-Night Döner Stand #1**
 - THREE rotating meat towers of glory (veal, chicken, mixed)
 - Homemade bread baked fresh, warm, perfect
-- The döner that locals swear by (€2.50 and worth every cent)
+- The döner that locals swear by (2.50 SOVS and worth every cent)
 - Standing counter only — you eat like a warrior or not at all
 - Grease-stained menus in four languages, none spelled correctly
 - **Vendor**: Mehmet "The Meat Architect" — Turkish immigrant who's been slinging döner since 1992, judges your pronunciation, respects your appetite
@@ -221,10 +221,10 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 
 ### Coffeeshop Menus (Sample Pricing)
-- **Tourist Trap Tier**: €20/gram (the Bulldog experience)
-- **Local Secret Tier**: €12/gram (if you know where to look)
+- **Tourist Trap Tier**: 20 SOVS/gram (the Bulldog experience)
+- **Local Secret Tier**: 12 SOVS/gram (if you know where to look)
 - **"My Buddy Said" Tier**: Variable (probably oregano)
-- **Space Cake Roulette**: €8-15 (effects: extremely variable)
+- **Space Cake Roulette**: 8-15 SOVS (effects: extremely variable)
 
 ---
 
@@ -252,14 +252,14 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 ### Permission Paradox System
 The central irony of Shamsterdam: everything is "legal" but nothing is without consequences
-- **Coffeeshop Entry**: Legal, but public smoking = €100 fine
+- **Coffeeshop Entry**: Legal, but public smoking = 100 SOVS fine
 - **Window Shopping**: Legal, but photography = phone confiscation + shame
 - **Bachelor Parties**: Legal, but matching costumes = targeted enforcement
 - **Being Loud**: Legal, but neighbors WILL call the police
 - **Existing as Tourist**: Legal, but the city literally paid for ads telling you not to come
 
 ### Fine & Penalty Mechanics
-- **Public Consumption Fine**: €100 gold, triggered by outdoor smoking
+- **Public Consumption Fine**: 100 SOVS gold, triggered by outdoor smoking
 - **Photography Violation**: -50 gold + "Marked Tourist" debuff
 - **Noise Complaint**: Random police encounter, -Bravado
 - **Bicycle Lane Walking**: Getting yelled at by EVERYONE

@@ -110,7 +110,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **"Willem knows"**: Cryptic hint
 
 ### Vintage Advertisements (Row 7)
-- **Guilder Exchange**: Pre-Euro currency ad
+- **Guilder Exchange**: Pre-Sovs currency ad
 - **Nokia Phone**: "The future of communication"
 - **Travel to Publandia**: "Exotic destination!"
 - **Film Development**: "Same day service!"
@@ -559,7 +559,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 ### Key Visual Themes
 - **Functional Confusion**: Everything looks helpful but isn't
 - **Dutch Efficiency (Ironic)**: Clean design that somehow leads you astray
-- **Time Capsule**: Ads from 2003, pre-Euro references, vintage infrastructure
+- **Time Capsule**: Ads from 2003, pre-Sovs references, vintage infrastructure
 - **Liminal Space Energy**: Endless corridors, flickering lights, eternal busker
 
 ### Lighting Requirements
@@ -619,7 +619,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 
 ### Environmental Storytelling:
 - Worn terrazzo paths reveal the routes people actually take — contradicting every sign
-- Vintage ads (guilder exchange, Nokia, film development) date the tunnel to a pre-Euro time capsule
+- Vintage ads (guilder exchange, Nokia, film development) date the tunnel to a pre-Sovs time capsule
 - Flashlight-revealed graffiti is the tunnel's true folk knowledge: "DON'T FOLLOW HENK", "Willem knows"
 - The wall map's wrong "You Are Here" dot tells the whole satirical premise in one prop
 
@@ -728,7 +728,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Shamsterdam only; Dutch signage ("Nooduitgang", "Centraal") in-world |
-| Cultural Specificity | ✅ | Dutch underground infrastructure, pre-Euro time capsule, "helpful" signage culture |
+| Cultural Specificity | ✅ | Dutch underground infrastructure, pre-Sovs time capsule, "helpful" signage culture |
 | Satirical Targets Appropriate | ✅ | Tourist navigation struggles — Red Light integration is embarrassment, not exploitation |
 | Seedy Underbelly Present | ✅ | Red Light emergence, coffeeshop storage room, tourist-priced "help" economy |
 | Gameplay Value Established | ✅ | Probability navigation puzzle, 5 zones, hidden quests, shortcut economy |

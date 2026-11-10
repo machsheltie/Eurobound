@@ -86,7 +86,7 @@ A flickering vending machine hidden behind a glitching privacy curtain. You can 
 **Location**: Publandia — Kebab Alley (Seedy Underbelly)
 
 **Visuals**:
-A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists roaming the street. The wrap comes from a stand that's been here "since before the euro."
+A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists roaming the street. The wrap comes from a stand that's been here "since before Sovs."
 
 **Vendor**: "Da" — Irish-Turkish fusion of cultures, been serving wraps to staggering patrons for 20+ years
 

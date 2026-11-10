@@ -301,7 +301,7 @@ This document provides exact specifications for all PNG files needed for the Bac
 |---------|----------|------|-------------|
 | Menu Interface BG | (0, 200) | 128x56 | Food ordering backdrop |
 | Item Slot | (128, 200) | 48x48 | Individual menu item frame |
-| Price Tag | (176, 200) | 32x16 | Euro price display |
+| Price Tag | (176, 200) | 32x16 | SOVS price display |
 
 ---
 

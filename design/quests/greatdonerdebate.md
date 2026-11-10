@@ -42,7 +42,7 @@ A bouncer-turned-kebabist. 6'4", wears a glittery crop top over a bulletproof ve
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| Belly Of Chadz | 6€ | A dense kebab box soaked in three sauces and ego. 🩸 +HP regen while Hungover (10% over 3 turns) 😵‍💫 50% chance of immediate "Greasy Coma" debuff: skip next turn, but clear all ailments 🥩 Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample) |
+| Belly Of Chadz | 6 SOVS | A dense kebab box soaked in three sauces and ego. 🩸 +HP regen while Hungover (10% over 3 turns) 😵‍💫 50% chance of immediate "Greasy Coma" debuff: skip next turn, but clear all ailments 🥩 Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample) |
 
 ---
 
@@ -61,7 +61,7 @@ Talks in a mix of food puns and veiled threats. Smells like lighter fluid.
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| Doner of Illusions™ | 7€ | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 SP, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
+| Doner of Illusions™ | 7 SOVS | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 SP, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
 
 ---
 
@@ -77,7 +77,7 @@ A flickering vending machine hidden behind a glitching privacy curtain. You can 
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| CryptoDoner Box | 5€ | Text reads: "Meat. Data. Destiny." 🧬 +2 random stats but gives "DigiDysentery" (inverts your menu buttons for 2 mins) 🌐 ICQ prompt: "Want to share your results with CoinDaddy69?" |
+| CryptoDoner Box | 5 SOVS | Text reads: "Meat. Data. Destiny." 🧬 +2 random stats but gives "DigiDysentery" (inverts your menu buttons for 2 mins) 🌐 ICQ prompt: "Want to share your results with CoinDaddy69?" |
 
 ---
 
@@ -86,14 +86,14 @@ A flickering vending machine hidden behind a glitching privacy curtain. You can 
 **Location**: Publandia — Kebab Alley (Seedy Underbelly)
 
 **Visuals**:
-A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists roaming the street. The wrap comes from a stand that's been here "since before the euro."
+A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists roaming the street. The wrap comes from a stand that's been here "since before Sovs."
 
 **Vendor**: "Da" — Irish-Turkish fusion of cultures, been serving wraps to staggering patrons for 20+ years
 
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The OG Lamb Wrap | 8€ | Classic lamb döner with garlic sauce, wrapped in warm pita. 🥙 +20 HP, "Grease Finger" debuff (-Dexterity for item use) 🍀 Counts toward "The Great Döner Debate" sidequest (Publandia sample) |
+| The OG Lamb Wrap | 8 SOVS | Classic lamb döner with garlic sauce, wrapped in warm pita. 🥙 +20 HP, "Grease Finger" debuff (-Dexterity for item use) 🍀 Counts toward "The Great Döner Debate" sidequest (Publandia sample) |
 
 ---
 
@@ -222,9 +222,9 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 **Menu Items**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The Triple Tower | 8€ | All three meats (veal, chicken, lamb), extra garlic sauce, fresh-baked bread. 🥙 +25 HP, +10 SP, "Garlic Aura" buff (NPCs keep slight distance for 1 hour) 🇳🇱 Counts toward expansion sidequest |
-| Mehmet's Choice | 6€ | "I choose. You eat. This is how it works." Random meat selection, always perfect. 🎲 +20 HP, +5 to random stat, "Blessed by the Architect" buff |
-| The Interrogation | 4€ | Mehmet asks where else you've eaten döner before serving you. Answer wrong and he lectures you for 3 minutes. 📚 +15 HP, +2 Wisdom (you learn things) |
+| The Triple Tower | 8 SOVS | All three meats (veal, chicken, lamb), extra garlic sauce, fresh-baked bread. 🥙 +25 HP, +10 SP, "Garlic Aura" buff (NPCs keep slight distance for 1 hour) 🇳🇱 Counts toward expansion sidequest |
+| Mehmet's Choice | 6 SOVS | "I choose. You eat. This is how it works." Random meat selection, always perfect. 🎲 +20 HP, +5 to random stat, "Blessed by the Architect" buff |
+| The Interrogation | 4 SOVS | Mehmet asks where else you've eaten döner before serving you. Answer wrong and he lectures you for 3 minutes. 📚 +15 HP, +2 Wisdom (you learn things) |
 
 ---
 
@@ -248,9 +248,9 @@ A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum 
 **Menu Items**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The Full Kapsalon Experience | 12€ | Large aluminum tray: fries, döner meat, melted cheese, salad, garlic sauce, sambal. 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), 20% "Food Coma" risk (skip next turn) 🍟 Aluminum tray becomes inventory item |
-| Rotterdam Rules | 9€ | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Dutch Courage" buff (+5 Bravado for 1 hour) |
-| The Willem | 15€ | Large kapsalon with extra cheese, extra meat, extra sauce, extra EVERYTHING. ⚠️ Must pass Constitution check or immediate "Food Coma" 💪 If survived: +50 HP, "Kapsalon Conqueror" achievement |
+| The Full Kapsalon Experience | 12 SOVS | Large aluminum tray: fries, döner meat, melted cheese, salad, garlic sauce, sambal. 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), 20% "Food Coma" risk (skip next turn) 🍟 Aluminum tray becomes inventory item |
+| Rotterdam Rules | 9 SOVS | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Dutch Courage" buff (+5 Bravado for 1 hour) |
+| The Willem | 15 SOVS | Large kapsalon with extra cheese, extra meat, extra sauce, extra EVERYTHING. ⚠️ Must pass Constitution check or immediate "Food Coma" 💪 If survived: +50 HP, "Kapsalon Conqueror" achievement |
 
 **Special Item — Kapsalon Battle Tray**:
 After eating any kapsalon, the aluminum tray is added to inventory:

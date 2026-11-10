@@ -50,8 +50,8 @@
           "full_breakdown": "I studied at Salzburg. I trained with legends. And a HORSE destroys my Zauberflöte."
         },
         "post_chaos": {
-          "to_bros": "You. This is YOUR horse? You will pay. You will ALL pay. €2,000. MINIMUM.",
-          "negotiation": "€2,000 is the minimum. The emotional damage? Incalculable.",
+          "to_bros": "You. This is YOUR horse? You will pay. You will ALL pay. 2,000 SOVS. MINIMUM.",
+          "negotiation": "2,000 SOVS is the minimum. The emotional damage? Incalculable.",
           "payment_received": "...fine. But you are banned from opening night. BANNED.",
           "unpaid": "I will find you. I have lawyers. Opera house lawyers."
         }
@@ -182,8 +182,8 @@
         "interrupted": "*holds high F* —WHAT IS THAT?!",
         "outrage": "I have sung at La Scala! At the Met! I was NOT interrupted by HORSES!",
         "to_bros": "This horse has RUINED my concentration. Do you know what concentration COSTS?",
-        "demand": "I require €500 for... therapeutic vocal rest. The trauma.",
-        "negotiated": "...€200. Final. And you will write an apology letter.",
+        "demand": "I require 500 SOVS for... therapeutic vocal rest. The trauma.",
+        "negotiated": "...200 SOVS. Final. And you will write an apology letter.",
         "payment_received": "Hmph. See that it does not happen again. Not that it COULD."
       },
       
@@ -271,7 +271,7 @@
       
       "dialogue": {
         "greeting": "Guten Tag. Tonight's performance is... *checks tourists*... sold out.",
-        "actually_available": "...for €80. Each. Balcony only.",
+        "actually_available": "...for 80 SOVS. Each. Balcony only.",
         "scalper_mention": "I know nothing of... alternative ticket sources. *glances toward door*",
         "post_chaos": "YOU. The horse people. Tickets are... unavailable. Permanently."
       }
@@ -314,7 +314,7 @@
       },
       
       "dialogue": {
-        "service": "Your coat, sir? €2 for the evening. Very secure.",
+        "service": "Your coat, sir? 2 SOVS for the evening. Very secure.",
         "gossip": "*leans in* You want to know about the Maestro? Check dressing room three. Love letters everywhere.",
         "hint": "*whispers* Behind the Mozart portrait in the lobby. If you need to... disappear. I've said nothing."
       },
@@ -342,8 +342,8 @@
       
       "dialogue": {
         "greeting": "Welcome to the gift shop. Everything is... authentically overpriced.",
-        "sale": "The Mozart bust is our bestseller. Only €45. Worth every cent, probably.",
-        "honest": "Between us? The €12 program has the same content as Wikipedia. But in fancier font."
+        "sale": "The Mozart bust is our bestseller. Only 45 SOVS. Worth every cent, probably.",
+        "honest": "Between us? The 12 SOVS program has the same content as Wikipedia. But in fancier font."
       }
     },
     

@@ -23,7 +23,7 @@
       "tier_id": "basic",
       "display_name": "Basic Rental",
       "cost": 15,
-      "currency": "euro",
+      "currency": "sovs",
       "duration": "1_day",
       "features": [
         "Standard orange tourist bike",
@@ -41,7 +41,7 @@
       "tier_id": "premium",
       "display_name": "Premium Rental",
       "cost": 25,
-      "currency": "euro",
+      "currency": "sovs",
       "duration": "1_day",
       "features": [
         "Slightly better brakes",
@@ -59,7 +59,7 @@
       "tier_id": "survivor",
       "display_name": "Survivor Package",
       "cost": 40,
-      "currency": "euro",
+      "currency": "sovs",
       "duration": "1_day",
       "features": [
         "Sturdiest bike in fleet",
@@ -88,7 +88,7 @@
       "insurance_id": "standard",
       "display_name": "Standard Insurance",
       "cost": 10,
-      "currency": "euro",
+      "currency": "sovs",
       "covers": ["theft", "minor_damage"],
       "excludes": ["canal", "major_damage", "acts_of_cyclist"],
       "minor_damage_definition": "at_dirks_discretion"
@@ -97,7 +97,7 @@
       "insurance_id": "premium",
       "display_name": "Premium Insurance",
       "cost": 20,
-      "currency": "euro",
+      "currency": "sovs",
       "covers": ["theft", "damage", "incidents"],
       "includes": ["one_free_canal_recovery"],
       "excludes": ["total_destruction", "fire", "last_tuesday_incident"]
@@ -106,7 +106,7 @@
       "insurance_id": "platinum",
       "display_name": "Platinum Insurance",
       "cost": 35,
-      "currency": "euro",
+      "currency": "sovs",
       "covers": ["everything_except_war_and_nuclear"],
       "includes": [
         "unlimited_canal_recoveries",

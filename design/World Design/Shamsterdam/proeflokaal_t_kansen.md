@@ -25,14 +25,14 @@
 - **Design**: Traditional tulip jenever glass shape (overfilled, surface tension visible), bottle opener as the stem
 - **Material**: Amber-tinted brass with sawdust-colored leather loop
 - **Inscription**: "No Hands. No Fear."
-- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for €20
+- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for 20 SOVS
 - **Special Feature**: Glass portion is slightly convex to mimic the surface tension meniscus
 - **Check Point**: Kees checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Proeflokaal Opener**: Can enter and drink, but cannot receive stamp or purchase Oude Genever
 
 **Kees's Opener Check**:
-- *With Blarney Trap Opener, No Proeflokaal Opener*: *nods* "Seamus." *points to gauntlet setup* "Gauntlet. Or €20. Your glass. Your choice."
+- *With Blarney Trap Opener, No Proeflokaal Opener*: *nods* "Seamus." *points to gauntlet setup* "Gauntlet. Or 20 SOVS. Your glass. Your choice."
 - *With Both Openers*: *nods once* "You have the glass. You earned it. Or bought it." *pours with precision* "Same result. Oude Genever."
 - *Without Blarney Trap Opener*: "No shamrock." *waits* "No tour." *waits* "Return. With opener." *waits*
 
@@ -215,14 +215,14 @@
 ### Menu & Consumables
 | Item | Price | ABV | Effects | Bartender Note |
 |------|-------|-----|---------|----------------|
-| Jonge Jenever | €4 | 35% | +15 SP, Mild warmth | "Young. Starter." |
-| Oude Jenever | €6 | 35% | +25 SP, The Shakes (-Accuracy) | "Old. Respect required." |
-| Zeer Oude Jenever | €12 | 38% | +40 SP, The Shakes x2 | "Very old. Very serious." |
-| Korenwijn | €15 | 38% | +50 SP, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
-| Beer (Pilsner) | €4 | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
-| The Kopstootje Combo | €8 | — | Combined effect, +Dutch Cred | "Traditional. Brave." |
-| "The Flight" (5 samples) | €20 | Escalating | See Gauntlet | "For tasting. Or testing." |
-| Back Room Special | €25 | 40% | +60 SP, Everything status | "If you qualify." |
+| Jonge Jenever | 4 SOVS | 35% | +15 SP, Mild warmth | "Young. Starter." |
+| Oude Jenever | 6 SOVS | 35% | +25 SP, The Shakes (-Accuracy) | "Old. Respect required." |
+| Zeer Oude Jenever | 12 SOVS | 38% | +40 SP, The Shakes x2 | "Very old. Very serious." |
+| Korenwijn | 15 SOVS | 38% | +50 SP, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
+| Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
+| The Kopstootje Combo | 8 SOVS | — | Combined effect, +Dutch Cred | "Traditional. Brave." |
+| "The Flight" (5 samples) | 20 SOVS | Escalating | See Gauntlet | "For tasting. Or testing." |
+| Back Room Special | 25 SOVS | 40% | +60 SP, Everything status | "If you qualify." |
 
 ### Consumable: Oude Genever
 **Type**: Alcoholic Beverage / Brewery Tour Reward

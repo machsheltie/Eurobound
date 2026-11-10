@@ -17,7 +17,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 ### Key Visual Themes
 - **Functional Confusion**: Everything looks helpful but isn't
 - **Dutch Efficiency (Ironic)**: Clean design that somehow leads you astray
-- **Time Capsule**: Ads from 2003, pre-Euro references, vintage infrastructure
+- **Time Capsule**: Ads from 2003, pre-Sovs references, vintage infrastructure
 - **Liminal Space Energy**: Endless corridors, flickering lights, eternal busker
 
 ### Color Palette
@@ -81,7 +81,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - **You Are Here Dot**: Red dot (wrong location)
 - **Kiosk Window**: Marloes's service window (2 tiles)
 - **Security Booth**: Henk's station (2 tiles)
-- **Tip Jar**: Willem's hat with €2.47
+- **Tip Jar**: Willem's hat with 2.47 SOVS
 
 ### Graffiti (Row 6) - Flashlight-revealed
 - **"STATION →"**: With scratched-over reversed arrow
@@ -90,7 +90,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - **"Willem knows"**: Cryptic hint
 
 ### Vintage Advertisements (Row 7)
-- **Guilder Exchange**: Pre-Euro currency ad
+- **Guilder Exchange**: Pre-Sovs currency ad
 - **Nokia Phone**: "The future of communication"
 - **Travel to Spain**: "Exotic destination!"
 - **Film Development**: "Same day service!"
@@ -157,7 +157,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - **Instrument**: Ancient accordion, well-worn
 - **Clothing**: Indeterminate decade (could be 1970s, could be 1990s)
 - **Props**:
-  - Hat on ground with exactly €2.47
+  - Hat on ground with exactly 2.47 SOVS
   - Maybe a small stool
 - **Expression**: Serene, timeless, possibly not alive
 - **Aura**: Slight transparency effect available for ghost moments

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 5:30 PM (market hours, optimism hours)
 - **Stat Requirements**: None (gullibility is not checked at the door)
-- **Item Requirements**: Gold for purchases (€5-50), willingness to believe
+- **Item Requirements**: Gold for purchases (5-50 SOVS), willingness to believe
 - **Previous Location Requirements**: None (the tulips call to all tourists)
 - **Special Conditions**: Located on floating market stall, slight swaying, adds to dreamlike purchasing haze
 
@@ -42,7 +42,7 @@
 ### The Bulb Display
 - **Bins**: Dozens of varieties, labeled with romantic Dutch names and colors
 - **Arrangement**: Organized by promised color, promised height, promised dreams
-- **Pricing**: By the bulb (€2-5) or "Value Bags" (€15-30 for 10-20 bulbs)
+- **Pricing**: By the bulb (2-5 SOVS) or "Value Bags" (15-30 SOVS for 10-20 bulbs)
 - **The Tulip Promise**: Each bin shows a photo of the flower "these bulbs will become"
 - **The Fine Print**: Growing instructions in Dutch, French, German, and Very Small English
 
@@ -124,12 +124,12 @@ The stall's name, "The Botanical Lie," refers not to fraud but to the polite fic
 ### Menu & Items
 | Item | Price | Type | Actual Fate | Notes |
 |------|-------|------|-------------|-------|
-| Single Tulip Bulb | €3 | Souvenir | 2% grow success | Individual hope |
-| "Rainbow Mix" (10) | €15 | Value Bag | 1% grow success | Variety pack of dreams |
-| "Garden Starter" (20) | €25 | Bulk Purchase | 0.5% grow success | Ambition exceeded capacity |
-| "Dutch Master Collection" | €50 | Premium | 0.1% grow success | You're not a Dutch Master |
-| Wooden Tulip (Painted) | €8 | Safe Alternative | 100% success | Cannot die, cannot grow |
-| Tulip Seeds | €12 | Trap | 0.01% grow success | Takes 7 years to flower |
+| Single Tulip Bulb | 3 SOVS | Souvenir | 2% grow success | Individual hope |
+| "Rainbow Mix" (10) | 15 SOVS | Value Bag | 1% grow success | Variety pack of dreams |
+| "Garden Starter" (20) | 25 SOVS | Bulk Purchase | 0.5% grow success | Ambition exceeded capacity |
+| "Dutch Master Collection" | 50 SOVS | Premium | 0.1% grow success | You're not a Dutch Master |
+| Wooden Tulip (Painted) | 8 SOVS | Safe Alternative | 100% success | Cannot die, cannot grow |
+| Tulip Seeds | 12 SOVS | Trap | 0.01% grow success | Takes 7 years to flower |
 
 ### The "Bulb Burden" Inventory Item
 - **Type**: Quest Item / Souvenir / Guilt
@@ -196,7 +196,7 @@ If game includes airport/customs checkpoint:
   - "These are Queen of Night. Very dramatic. Very Dutch. You have a garden?"
   - *if they say no* "A pot works too! A windowsill! A dream!"
   - "The growing instructions are in the bag. Very clear. Mostly clear."
-  - *customs question* "They travel very well! Would you like the protective bag? Two euros extra."
+  - *customs question* "They travel very well! Would you like the protective bag? Two SOVS extra."
   - "My grandmother started this stall. Different bulbs, same joy. Same hope."
   - *large purchase* "You're going to have a BEAUTIFUL garden. I can see it already."
   - "The Rainbow Mix is our most popular. Everyone wants a rainbow."
@@ -246,7 +246,7 @@ If game includes airport/customs checkpoint:
 ### Original NPC Dialogue
 **Margriet's Philosophy (Unprompted):**
 - "Tulips are Holland's gift to the world. The world's ACCEPTANCE of that gift is... variable."
-- "1637, people traded houses for tulip bulbs. Now, five euros. Progress? Maybe. Romance? Less."
+- "1637, people traded houses for tulip bulbs. Now, five SOVS. Progress? Maybe. Romance? Less."
 - "Every bulb is potential. What you DO with potential is your business."
 - "I sell dreams. Dreams are legal in every country. Dreams need no customs form."
 - "My grandmother sold to your grandmothers. The bulbs change. The hope is the same."
@@ -254,7 +254,7 @@ If game includes airport/customs checkpoint:
 **The Bros' Tulip Market Reactions:**
 - **Lord Pilsner** (entering): "We're getting tulips. AUTHENTIC Dutch tulips. For my GARDEN."
 - **Lord Pilsner** (when asked about garden): "I have a... it's more of a balcony... it gets sun SOMETIMES..."
-- **Lord Pilsner** (purchasing): "The Dutch Master Collection. For fifty euros I'm basically a Dutch Master."
+- **Lord Pilsner** (purchasing): "The Dutch Master Collection. For fifty SOVS I'm basically a Dutch Master."
 - **Chadwick**: "The color palette here is INSANE. This is B-roll GOLD."
 - **Chadwick** (purchasing): "I'm getting the Rainbow Mix. My apartment is going to be BOTANICAL."
 - **Chadwick** (later): "When do we plant these? Is there a deadline? Is it urgent?"

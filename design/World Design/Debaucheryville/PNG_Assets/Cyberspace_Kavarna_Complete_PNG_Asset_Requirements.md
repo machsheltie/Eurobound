@@ -223,8 +223,8 @@ This document provides exact specifications for all PNG files needed for Cybersp
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Background | (0, 0) | 160x96 | Menu panel |
-| Standard €3 | (0, 96) | 128x24 | 1 hour option |
-| All Night €15 | (0, 120) | 128x24 | Special deal |
+| Standard 3 SOVS | (0, 96) | 128x24 | 1 hour option |
+| All Night 15 SOVS | (0, 120) | 128x24 | Special deal |
 
 ### ICQ Interface:
 | Element | Position | Size | Description |

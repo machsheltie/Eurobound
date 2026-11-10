@@ -388,7 +388,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 ### Structure
 - Small rental booth/kiosk
 - "BIKE RENTAL" sign (in Dutch: "FIETS VERHUUR")
-- Price board: "€15/DAG"
+- Price board: "15 SOVS/DAG"
 - Orange rental bikes lined up behind
 - Liability waiver stack visible
 

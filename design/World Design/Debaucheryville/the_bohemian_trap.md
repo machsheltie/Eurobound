@@ -1,6 +1,6 @@
 # The Bohemian Trap
 
-*Where €8 buys you a thimble of "authentic" absinthe and a lecture about Van Gogh — the Green Fairy takes payment in dignity*
+*Where 8 SOVS buys you a thimble of "authentic" absinthe and a lecture about Van Gogh — the Green Fairy takes payment in dignity*
 
 ## Location Identity
 - **Location ID**: debaucheryville_vendor_bohemian_trap_01
@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 6 PM - 4 AM (twilight to desperation hours)
 - **Stat Requirements**: None (the absinthe accepts all who pay)
-- **Item Requirements**: Gold for purchases (€5-25), willingness to believe marketing
+- **Item Requirements**: Gold for purchases (5-25 SOVS), willingness to believe marketing
 - **Previous Location Requirements**: None (the cart finds those who seek "experiences")
 - **Special Conditions**: Cart location shifts slightly each night (part of the mystique/confusion)
 
@@ -74,7 +74,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The Bohemian Trap exploits the romanticized mythology of absinthe — the "Green Fairy," the banned drink of artists, the supposed hallucinogenic properties (mostly debunked), the elaborate ritual. Tourists pay €15 for a thimble of strong alcohol and a story, leaving with "Green Fairy Confusion" that's just regular alcohol confusion with better marketing.
+**Core Concept**: The Bohemian Trap exploits the romanticized mythology of absinthe — the "Green Fairy," the banned drink of artists, the supposed hallucinogenic properties (mostly debunked), the elaborate ritual. Tourists pay 15 SOVS for a thimble of strong alcohol and a story, leaving with "Green Fairy Confusion" that's just regular alcohol confusion with better marketing.
 
 The cart is named "The Bohemian Trap" because:
 1. Prague is in the Bohemia region (geography)
@@ -89,7 +89,7 @@ The cart is named "The Bohemian Trap" because:
 - **The Claim**: "Real" absinthe was banned because it was too powerful
 - **The Reality**: Wine industry lobbying + moral panic
 - **The Tourist Conclusion**: "I should try this banned artistic drink"
-- **The Vendor's Response**: "€15, please"
+- **The Vendor's Response**: "15 SOVS, please"
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist experience commodification, mythology-based pricing
@@ -99,7 +99,7 @@ The cart is named "The Bohemian Trap" because:
 - **Sensitivity Considerations**: Targets tourism industry, not Czech culture or responsible drinking
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Selling €3 worth of alcohol for €15 with a story attached
+- **Primary Vice**: Selling 3 SOVS worth of alcohol for 15 SOVS with a story attached
 - **City-Specific Comedy Operations**: Positioned in Absinthe Arcade, concentration of similar grifts
 - **Buffoon Exploitation**: Bros who genuinely believe they'll hallucinate
 - **Comedy of Errors**: The elaborate ritual, the tiny portion, the "is this it?" moment
@@ -138,13 +138,13 @@ The cart is named "The Bohemian Trap" because:
 ### Product Inventory (The Absinthe Tiers)
 | Item | Price | Strength | SP Effect | Status Effect | Viktor's Pitch |
 |------|-------|----------|-----------|---------------|----------------|
-| Tourist Green | €8 | 55% | -10 SP | Absinthe Buzzed (light) | "A gentle introduction" |
-| Bohemian Standard | €12 | 65% | -20 SP | Absinthe Buzzed | "The traditional experience" |
-| Artist's Choice | €18 | 70% | -30 SP | Absinthe Buzzed (strong) | "As Hemingway preferred" |
-| The Green Fairy Special | €25 | 70% + ritual | -40 SP | Green Fairy Confusion | "The complete experience" |
-| Absinthe Shot Flight | €30 | Mixed | -50 SP | Guaranteed Confusion | "For the committed" |
-| "Vintage" Reserve | €40 | 70% | -35 SP | Confusion + story | "Very limited. Very special." |
-| Sugar Cube Only | €2 | 0% | None | Disappointment | "...just the sugar?" |
+| Tourist Green | 8 SOVS | 55% | -10 SP | Absinthe Buzzed (light) | "A gentle introduction" |
+| Bohemian Standard | 12 SOVS | 65% | -20 SP | Absinthe Buzzed | "The traditional experience" |
+| Artist's Choice | 18 SOVS | 70% | -30 SP | Absinthe Buzzed (strong) | "As Hemingway preferred" |
+| The Green Fairy Special | 25 SOVS | 70% + ritual | -40 SP | Green Fairy Confusion | "The complete experience" |
+| Absinthe Shot Flight | 30 SOVS | Mixed | -50 SP | Guaranteed Confusion | "For the committed" |
+| "Vintage" Reserve | 40 SOVS | 70% | -35 SP | Confusion + story | "Very limited. Very special." |
+| Sugar Cube Only | 2 SOVS | 0% | None | Disappointment | "...just the sugar?" |
 
 ### The Ritual (Purchasable Experience)
 **The Green Fairy Special includes:**
@@ -220,7 +220,7 @@ The cart is named "The Bohemian Trap" because:
 - "Welcome, welcome to The Bohemian Trap! I am Viktor, and tonight, I introduce you to the Green Fairy herself."
 - "Absinthe — the drink of artists, poets, madmen. Van Gogh, Hemingway, Toulouse-Lautrec — they all knew the fairy."
 - "In Prague, we understand the old ways. The ritual. The sugar, the water, the transformation. This is not just drinking — this is EXPERIENCE."
-- "You want to see what the artists saw? Feel what the poets felt? The fairy can show you... for €25."
+- "You want to see what the artists saw? Feel what the poets felt? The fairy can show you... for 25 SOVS."
 
 *The History (Embellished):*
 - "1797, the recipe was created. Swiss, originally, but the Bohemians — WE understood it. We welcomed it. We perfected it."
@@ -244,7 +244,7 @@ The cart is named "The Bohemian Trap" because:
 - "Will you hallucinate? ...the fairy works in mysterious ways. The science is... debated."
 - "Is this exactly as Hemingway drank it? ...Hemingway drank many things. He wrote about many things. This is INSPIRED by."
 - "Why the costume? ...I am giving an experience. The experience includes... presentation."
-- "Is this worth €25? ...you will remember this. You will tell people about this. Is THAT worth €25?"
+- "Is this worth 25 SOVS? ...you will remember this. You will tell people about this. Is THAT worth 25 SOVS?"
 
 ### Atmospheric NPCs
 
@@ -269,7 +269,7 @@ The cart is named "The Bohemian Trap" because:
 **The Absinthe Veteran (Local)**
 - **Composition**: Actual Czech person who drinks absinthe normally, watching the theater
 - **Behavior**: Has their own bottle at home, finds tourist ritual amusing
-- **Dialogue**: *to friend, in Czech* "Forty euros for what we buy for twelve at the shop. Amazing, yes? AMAZING."
+- **Dialogue**: *to friend, in Czech* "Forty SOVS for what we buy for twelve at the shop. Amazing, yes? AMAZING."
 - **Function**: Perspective on the markup
 
 **The First-Timer (Nervous)**
@@ -281,7 +281,7 @@ The cart is named "The Bohemian Trap" because:
 ### Original NPC Dialogue
 **Viktor's Philosophy (Post-Cart Hours, If Found):**
 - "Am I a con artist? I prefer 'experience architect.' The experience is real. The claims are... historical."
-- "They want the fairy to be real. I want them to believe the fairy is real. We meet in the middle, at €25."
+- "They want the fairy to be real. I want them to believe the fairy is real. We meet in the middle, at 25 SOVS."
 - "My degree is in theater. Czech theater pays nothing. Czech tourism pays rent. The fairy pays very well."
 - "Hemingway DID drink absinthe. Did it make him write better? Who knows. Did believing it help? Probably."
 - "The costume is important. Without costume, I'm just a man selling strong alcohol. With costume, I'm selling story. Story is worth more."
@@ -378,7 +378,7 @@ The cart is named "The Bohemian Trap" because:
 ### Social Media Strategy
 - **Instagram Moments**: Ritual photography, green aesthetic, Viktor portrait
 - **TikTok Potential**: Full ritual ASMR, "is this a fairy or a lamp" content, control reversal fails
-- **Twitter Hooks**: Viktor's philosophy, absinthe mythology debunking, €25 for what
+- **Twitter Hooks**: Viktor's philosophy, absinthe mythology debunking, 25 SOVS for what
 - **Streaming Content**: Full ritual experience, status effect navigation, Viktor's rare honesty
 
 ### Community Engagement
@@ -444,4 +444,4 @@ The cart is named "The Bohemian Trap" because:
 
 ---
 
-*The Bohemian Trap: Drink like Hemingway, pay like a tourist, regret like everyone. Viktor knows exactly what he's selling. You know exactly what you're buying. The fairy is in on it too. €25 for the experience. €3 for the alcohol. €22 for the story you'll tell forever.*
+*The Bohemian Trap: Drink like Hemingway, pay like a tourist, regret like everyone. Viktor knows exactly what he's selling. You know exactly what you're buying. The fairy is in on it too. 25 SOVS for the experience. 3 SOVS for the alcohol. 22 SOVS for the story you'll tell forever.*

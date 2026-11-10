@@ -140,7 +140,7 @@
   },
   
   "economic_data": {
-    "currency": "euro",
+    "currency": "sovs",
     "damage_resolution": {
       "total_maximum": 2840,
       "total_optimal": 1940,

@@ -135,13 +135,13 @@ Now: Bear witness. Warn those he can. Maintain the Board of Shame. Wait for Mary
 > "We've got The Shamrock—economy. The Lucky Charm—standard. The Emerald Dream—for those who think size matters. They're all the same in The Cloverleaf."
 
 **Offering GPS:**
-> "GPS? *dark laugh* Aye, we've got GPS. €20 a day. It'll say 'recalculating' until ye lose the will to live. But sure, take it. Everyone takes it."
+> "GPS? *dark laugh* Aye, we've got GPS. 20 SOVS a day. It'll say 'recalculating' until ye lose the will to live. But sure, take it. Everyone takes it."
 
 **Offering Insurance:**
-> "Premium insurance. €35 a day. Covers everything. *pause* Except incidents in circular traffic patterns. That's in the fine print. Page 47."
+> "Premium insurance. 35 SOVS a day. Covers everything. *pause* Except incidents in circular traffic patterns. That's in the fine print. Page 47."
 
 **Offering Rosary Beads:**
-> "*places beads on counter* €5. For the dashboard. Ye'll want them. Trust me on this one."
+> "*places beads on counter* 5 SOVS. For the dashboard. Ye'll want them. Trust me on this one."
 
 **Finalizing Rental:**
 > "Sign here. And here. And... here. That one's the liability waiver. Don't read it. Nobody reads it. Just sign."
@@ -200,18 +200,18 @@ Now: Bear witness. Warn those he can. Maintain the Board of Shame. Wait for Mary
 ### Rental Options
 | Vehicle | Price/Day | Description | Hidden Issue |
 |---------|-----------|-------------|--------------|
-| The Shamrock | €45 | "Economy" compact | Wipers stuck on |
-| The Lucky Charm | €60 | "Standard" sedan | GPS glitches near roundabouts |
-| The Emerald Dream | €80 | "Premium" SUV | Too wide for country lanes |
-| The Full Irish | €120 | "Luxury" convertible | Attracts sheep attention |
+| The Shamrock | 45 SOVS | "Economy" compact | Wipers stuck on |
+| The Lucky Charm | 60 SOVS | "Standard" sedan | GPS glitches near roundabouts |
+| The Emerald Dream | 80 SOVS | "Premium" SUV | Too wide for country lanes |
+| The Full Irish | 120 SOVS | "Luxury" convertible | Attracts sheep attention |
 
 ### Add-Ons
 | Item | Price | What They Say | What It Does |
 |------|-------|---------------|--------------|
-| GPS Rental | €20/day | "Navigation assistance" | Says "recalculating" forever |
-| Premium Insurance | €35/day | "Complete coverage" | Excludes circular traffic |
-| Map Book | €10 | "Traditional navigation" | Cloverleaf labeled "?" |
-| Rosary Beads | €5 | "For the dashboard" | Seamus insists |
+| GPS Rental | 20 SOVS/day | "Navigation assistance" | Says "recalculating" forever |
+| Premium Insurance | 35 SOVS/day | "Complete coverage" | Excludes circular traffic |
+| Map Book | 10 SOVS | "Traditional navigation" | Cloverleaf labeled "?" |
+| Rosary Beads | 5 SOVS | "For the dashboard" | Seamus insists |
 
 ---
 

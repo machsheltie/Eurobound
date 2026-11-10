@@ -278,11 +278,11 @@ This document provides exact specifications for all PNG files needed for Hostel 
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Panel | (0, 0) | 256x192 | Booking interface |
-| 12-Bed Option | (0, 192) | 64x32 | €12 - Maximum chaos |
-| 8-Bed Option | (64, 192) | 64x32 | €16 - Still chaos |
-| 6-Bed Option | (128, 192) | 64x32 | €20 - Compromise |
-| 4-Bed Option | (192, 192) | 64x32 | €28 - Given up |
-| Private Option | (256, 192) | 64x32 | €45 - Why hostel? |
+| 12-Bed Option | (0, 192) | 64x32 | 12 SOVS - Maximum chaos |
+| 8-Bed Option | (64, 192) | 64x32 | 16 SOVS - Still chaos |
+| 6-Bed Option | (128, 192) | 64x32 | 20 SOVS - Compromise |
+| 4-Bed Option | (192, 192) | 64x32 | 28 SOVS - Given up |
+| Private Option | (256, 192) | 64x32 | 45 SOVS - Why hostel? |
 
 ### Sleep Quality System:
 | Element | Position | Size | Description |
@@ -404,7 +404,7 @@ This document provides exact specifications for all PNG files needed for Hostel 
 6. **Snore Visualization** - Sleep quality enemy
 
 ### Quote Potential:
-- "€12/Night. Your Dignity Costs Extra."
+- "12 SOVS/Night. Your Dignity Costs Extra."
 - "Quiet hours are 11 to 7. This is theoretical."
 - "Someone is always snoring. This is hostel law."
 - "The hostel is democracy. Everyone gets equal chaos."
@@ -426,4 +426,4 @@ This document provides exact specifications for all PNG files needed for Hostel 
 | Accessibility | ✅ PASS |
 | Social Media | ✅ PASS |
 
-**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Jakub has seen everything and judges nothing. €12 buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**
+**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Jakub has seen everything and judges nothing. 12 SOVS buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**

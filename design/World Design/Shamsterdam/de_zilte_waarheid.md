@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 6 PM (fresh fish hours, tradition demands)
 - **Stat Requirements**: Constitution check recommended, Pride check mandatory
-- **Item Requirements**: Gold for purchase (€4-6), willingness to be photographed mid-swallow
+- **Item Requirements**: Gold for purchase (4-6 SOVS), willingness to be photographed mid-swallow
 - **Previous Location Requirements**: None (the herring finds the curious)
 - **Special Conditions**: Line moves fast, decisions must be made quickly, no time for doubt
 
@@ -35,7 +35,7 @@
   - Subtitle: "The Salty Truth — Raw. Real. Ready."
   - Method guide: "THE DUTCH WAY" with illustrated instructions (head back, fish up, lower into mouth)
   - Warning: "The fish is raw. Your reaction will be witnessed."
-  - Price board: "Haring €4 / Met Uitjes €4.50 / De Waarheid Platter €8"
+  - Price board: "Haring 4 SOVS / Met Uitjes 4.50 SOVS / De Waarheid Platter 8 SOVS"
 - **Atmosphere**: Salt air, seagull supervision, the faint sound of tourist hesitation
 - **Environmental Context**: Working harbor backdrop, fishing boats, locals grabbing lunch efficiently
 
@@ -78,7 +78,7 @@
 - **Sensitivity Considerations**: Respects Dutch tradition, satirizes tourist hesitation and bravado
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Charging €4 for a moment of existential revelation
+- **Primary Vice**: Charging 4 SOVS for a moment of existential revelation
 - **City-Specific Comedy Operations**: The stand is positioned for maximum visibility of tourist attempts
 - **Buffoon Exploitation**: Bros talk big about eating anything, then meet the herring
 - **Comedy of Errors**: The technique is simple, the execution is always photographed
@@ -113,12 +113,12 @@
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Respect Earned | Notes |
 |------|-------|-----------|---------------|----------------|-------|
-| Haring (Traditional) | €4 | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
-| Haring met Uitjes | €4.50 | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
-| De Waarheid Platter | €8 | +50 HP, +20 SP | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
-| Broodje Haring | €5 | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
-| "Just the Bread" | €2 | +5 HP | Coward's Comfort | None | Available, not recommended |
-| Kibbeling (Fried Fish) | €6 | +30 HP | None | None | For those who aren't ready |
+| Haring (Traditional) | 4 SOVS | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
+| Haring met Uitjes | 4.50 SOVS | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
+| De Waarheid Platter | 8 SOVS | +50 HP, +20 SP | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
+| Broodje Haring | 5 SOVS | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
+| "Just the Bread" | 2 SOVS | +5 HP | Coward's Comfort | None | Available, not recommended |
+| Kibbeling (Fried Fish) | 6 SOVS | +30 HP | None | None | For those who aren't ready |
 
 ### The Traditional Method Tutorial
 **The Dutch Way — Illustrated and Inescapable**
@@ -179,7 +179,7 @@
 **Fish Breath**
 - **Duration**: 2 hours (in-game)
 - **Effect**: NPCs maintain slightly larger conversation distance
-- **Cure**: Strong mints (available at stand, €1), time, or not caring
+- **Cure**: Strong mints (available at stand, 1 SOVS), time, or not caring
 - **Social Impact**: Other herring survivors recognize you as one of their own
 
 **Onion Aura** (if ordered "met uitjes")

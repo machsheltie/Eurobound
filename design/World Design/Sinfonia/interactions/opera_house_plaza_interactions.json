@@ -26,7 +26,7 @@
       ],
       "dialogue_trigger": {
         "speaker": "chadwick",
-        "text": "Bro, are we really stealing from a fountain? ...Is that a euro?"
+        "text": "Bro, are we really stealing from a fountain? ...Is that a Sov?"
       },
       "animation": "reaching_into_water"
     },
@@ -40,7 +40,7 @@
         "1. Drivers must maintain sobriety during operating hours",
         "2. Horses must be properly secured at all times", 
         "3. Licensed operators only - see photos below",
-        "4. Maximum fare: €80 for 20-minute tour",
+        "4. Maximum fare: 80 SOVS for 20-minute tour",
         "5. NO RACING OTHER FIAKERS"
       ],
       "note": "Hans-Jurgen violates rules 1, 2, and 5 regularly",

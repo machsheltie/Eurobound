@@ -104,8 +104,8 @@ This document provides exact specifications for all PNG files needed for the Cyb
 
 ### Payment & Service Station:
 - **Dmitri Cash Register** (0, 192, 64x48) - Soviet-era manual register
-- **Hourly Rate Sign** (64, 192, 48x32) - "€3/hour" hand-written
-- **All Night Special Sign** (112, 192, 48x32) - "€15 8PM-8AM" 
+- **Hourly Rate Sign** (64, 192, 48x32) - "3 SOVS/hour" hand-written
+- **All Night Special Sign** (112, 192, 48x32) - "15 SOVS 8PM-8AM" 
 - **Cash Only Warning** (160, 192, 48x24) - "CREDIT CARDS = AMERICAN CONSPIRACY"
 - **Payment Receipt Pad** (208, 192, 32x16) - For tax man avoidance
 - **Calculator Collection** (240, 192, 32x32) - Multiple calculators for unknown reasons

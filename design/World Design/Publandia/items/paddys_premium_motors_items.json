@@ -233,7 +233,7 @@
     "vehicle_count": 4,
     "addon_count": 4,
     "price_range": {"min": 5, "max": 120},
-    "currency_accepted": "euros",
+    "currency_accepted": "sovs",
     "hidden_fees": {
       "circular_traffic_exclusion": "Insurance doesn't cover roundabouts",
       "sheep_damage_clause": "Not liable for livestock interactions"

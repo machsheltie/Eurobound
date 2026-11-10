@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 11 AM - 1 AM ("class hours")
 - **Stat Requirements**: None (open enrollment)
-- **Item Requirements**: "Tuition" (€10 cover charge) OR proof of previous "graduation"
+- **Item Requirements**: "Tuition" (10 SOVS cover charge) OR proof of previous "graduation"
 - **Previous Location Requirements**: None
 - **Special Conditions**: Different "courses" available at different times
 
@@ -138,13 +138,13 @@ Dean Declan Murphy runs Trinity of Pints with absolute commitment to the bit. He
 
 ## Gameplay Mechanics
 ### Enrollment System
-**Cover Charge ("Tuition")**: €10
+**Cover Charge ("Tuition")**: 10 SOVS
 - Includes "Student ID" (laminated card with your name)
 - Access to all "courses" for the evening
 - One free "textbook" (branded pint glass)
 - Graduation eligibility
 
-**Graduate Discount**: €5 (show previous diploma)
+**Graduate Discount**: 5 SOVS (show previous diploma)
 - "Alumni" pricing
 - Access to "Advanced Courses"
 - Reserved seating in Great Hall
@@ -242,7 +242,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 
 *The Welcome:*
 - "Welcome to Trinity of Pints. I am Dean Murphy. Your education begins now."
-- "Enrollment is €10. This covers tuition, materials, and access to our distinguished faculty."
+- "Enrollment is 10 SOVS. This covers tuition, materials, and access to our distinguished faculty."
 - "I see potential in you. Let's see if you can live up to it. Academically speaking."
 
 *During Courses:*
@@ -369,7 +369,7 @@ BACHELOR OF BEVERAGE SCIENCES (B.B.S.)
 | SP Restoration | +20 SP |
 | Special Effect | "Scholar's Focus" — +3 INT for 30 minutes |
 | Status Risk | 10% chance of "Pretentious" (dialogue becomes insufferable) |
-| Purchase Price | €9 |
+| Purchase Price | 9 SOVS |
 
 **Flavor Text**: "Brewed for minds that think they're smarter when drinking. They're not. But the confidence helps. Tastes like unearned intellectual superiority."
 

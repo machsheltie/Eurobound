@@ -142,56 +142,56 @@ This document provides exact specifications for all PNG files needed for the Lat
 **File:** `kebab_menu_items_detailed.png`  
 **Dimensions:** 1024x512 pixels  
 
-### Gutbuster Wrap - 6€:
+### Gutbuster Wrap - 6 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Wrapped | (0, 0) | 128x96 | Foil presentation |
 | Unwrapped Dripping | (128, 0) | 128x96 | Mystery lamb visible |
 | Cross Section | (256, 0) | 96x96 | Interior horror |
 
-### Vampire Slayer Garlic Fries - 4€:
+### Vampire Slayer Garlic Fries - 4 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Container | (352, 0) | 96x96 | Week-old oil sheen |
 | Sauce Dripping | (448, 0) | 96x96 | Pepper spray levels |
 | Oil Shimmer | (544, 0) | 64x64 | Rainbow grease |
 
-### EuroMeat Pocket™ - 5€:
+### EuroMeat Pocket™ - 5 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Full View | (0, 96) | 128x96 | Soggy pita exterior |
 | Grey Filling | (128, 96) | 96x96 | Suspiciously grey |
 | Microwaved Steam | (224, 96) | 64x64 | Reheated evidence |
 
-### MegaMix Box - 9€:
+### MegaMix Box - 9 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Closed | (288, 96) | 128x96 | Cardboard coffin |
 | Horrifying Contents | (416, 96) | 128x96 | Everything visible |
 | Regret Visualization | (544, 96) | 96x96 | Immediate consequences |
 
-### Drunken Sauce Shot - 2€:
+### Drunken Sauce Shot - 2 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Thimble | (0, 192) | 48x64 | Plastic container |
 | Sauce Swirl | (48, 192) | 48x64 | Hot sauce/mayo mix |
 | Dysentery Warning | (96, 192) | 64x32 | Side effect hint |
 
-### Lambsomnia Special - 7€:
+### Lambsomnia Special - 7 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Full Plate | (160, 192) | 128x96 | Spiced lamb beauty |
 | Sleepless Tzatziki | (288, 192) | 64x64 | Insomniac sauce |
 | Insomniac Glow | (352, 192) | 64x64 | Buff visual |
 
-### Yogurt Reboot - 3€:
+### Yogurt Reboot - 3 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Tiny Cup | (416, 192) | 64x64 | Questionable container |
 | Expired Yogurt | (480, 192) | 64x64 | Warm and concerning |
 | Expiration Date | (544, 192) | 48x24 | Clearly past |
 
-### Belly Of Chadz - 6€:
+### Belly Of Chadz - 6 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Dense Box | (0, 288) | 128x96 | Three-sauce soaked |

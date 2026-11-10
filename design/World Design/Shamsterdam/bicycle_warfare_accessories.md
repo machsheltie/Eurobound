@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 AM - 8 PM (tourist cycling hours, carnage window)
 - **Stat Requirements**: None (the bike path accepts all sacrifices)
-- **Item Requirements**: Gold for purchases (€5-25), belief that accessories help
+- **Item Requirements**: Gold for purchases (5-25 SOVS), belief that accessories help
 - **Previous Location Requirements**: None (the bell finds those who seek it)
 - **Special Conditions**: Adjacent to bike rental shops, captures tourists in transition
 
@@ -48,27 +48,27 @@
 - **Maps Section**: Bike route maps marked with danger zones ("tourist collision hotspots")
 
 ### The Bell Wall (The Arsenal)
-**Tier 1 — The Pacifists (€5-8)**
+**Tier 1 — The Pacifists (5-8 SOVS)**
 - Classic "ding" bells, polite, ignored by everyone
 - Best for: Cycling in parks, giving up, background noise
 - Reality check: "These are for people who don't want to survive"
 
-**Tier 2 — The Compromisers (€10-15)**
+**Tier 2 — The Compromisers (10-15 SOVS)**
 - Louder "DING-DING" bells, noticeable, sometimes effective
 - Best for: Mixed paths, moderate traffic, hopeful beginners
 - Reality check: "Some people will hear. Some people will care. Not most."
 
-**Tier 3 — The Asserters (€15-20)**
+**Tier 3 — The Asserters (15-20 SOVS)**
 - Dual-tone bells, attention-grabbing, tourists jump
 - Best for: Busy routes, canal bridges, genuine communication
 - Reality check: "Now we're talking. The Dutch might nod."
 
-**Tier 4 — The Dominators (€20-25)**
+**Tier 4 — The Dominators (20-25 SOVS)**
 - Air horns, electronic sirens, psychological warfare
 - Best for: Apocalypse scenarios, traumatized tourists, establishing dominance
 - Reality check: "You'll be heard. You might also be targeted for retaliation."
 
-**Tier 5 — The Delusional (€30+)**
+**Tier 5 — The Delusional (30 SOVS+)**
 - "Smart bells," GPS integration, app-connected, excessive
 - Best for: People who solve problems with technology
 - Reality check: "The bike path doesn't care about your app"
@@ -92,7 +92,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Amsterdam bicycle culture is simultaneously beautiful (50% of trips by bike!) and TERRIFYING for tourists. The Dutch have been cycling since birth; they ride in heels, carrying groceries, while texting, in the rain, three-wide on narrow paths. Tourists rent bikes thinking "how hard can it be" and enter a combat zone where the rules are unspoken, the locals are merciless, and your €8 bell is the ONLY thing between you and becoming a cautionary tale.
+**Core Concept**: Amsterdam bicycle culture is simultaneously beautiful (50% of trips by bike!) and TERRIFYING for tourists. The Dutch have been cycling since birth; they ride in heels, carrying groceries, while texting, in the rain, three-wide on narrow paths. Tourists rent bikes thinking "how hard can it be" and enter a combat zone where the rules are unspoken, the locals are merciless, and your 8 SOVS bell is the ONLY thing between you and becoming a cautionary tale.
 
 Bicycle Warfare Accessories leans into this reality with military precision. It's a shop that treats bells not as cute accessories but as survival equipment. The satire is the gap between the cheerful tourist cycling fantasy ("bikes in Amsterdam! So European!") and the brutal reality of Amsterdam bike infrastructure politics.
 
@@ -143,17 +143,17 @@ Bicycle Warfare Accessories leans into this reality with military precision. It'
 ### Product Inventory
 | Item | Price | Effect | Reality | Notes |
 |------|-------|--------|---------|-------|
-| Classic Ding Bell | €5 | +5 Confidence | Ignored by all | "Better than nothing. Slightly." |
-| Assertive Bell | €12 | +15 Confidence | Noticed by some | "Recommended minimum" |
-| Tactical Air Horn | €22 | +30 Confidence, -Stealth | Heard by all, hated by all | "Effective. Aggressive." |
-| Smart Bell App | €35 | +10 Confidence, +confusion | Does something, unclear what | "For the tech-dependent" |
-| Bike Mirror | €8 | +Awareness (if used) | Requires looking | "You have to LOOK into it" |
-| Front Light | €10 | +Visibility (night) | Required by law | "Legally mandatory. Practically useful." |
-| Rear Light | €10 | +Visibility (rear) | Blinky = seen | "Red. Always red. Not negotiable." |
-| Helmet | €25 | +Protection, -Dutch Cred | No locals wear them | "Your choice. Make it wisely." |
-| Survival Map | €5 | +Navigation, +Fear | Danger zones marked | "Knowledge is power. Also terror." |
-| Rain Poncho | €8 | +Weather Survival | It WILL rain | "Not if. When." |
-| Combination Package | €40 | All of above minus horn | Starter kit | "The tourist survival bundle" |
+| Classic Ding Bell | 5 SOVS | +5 Confidence | Ignored by all | "Better than nothing. Slightly." |
+| Assertive Bell | 12 SOVS | +15 Confidence | Noticed by some | "Recommended minimum" |
+| Tactical Air Horn | 22 SOVS | +30 Confidence, -Stealth | Heard by all, hated by all | "Effective. Aggressive." |
+| Smart Bell App | 35 SOVS | +10 Confidence, +confusion | Does something, unclear what | "For the tech-dependent" |
+| Bike Mirror | 8 SOVS | +Awareness (if used) | Requires looking | "You have to LOOK into it" |
+| Front Light | 10 SOVS | +Visibility (night) | Required by law | "Legally mandatory. Practically useful." |
+| Rear Light | 10 SOVS | +Visibility (rear) | Blinky = seen | "Red. Always red. Not negotiable." |
+| Helmet | 25 SOVS | +Protection, -Dutch Cred | No locals wear them | "Your choice. Make it wisely." |
+| Survival Map | 5 SOVS | +Navigation, +Fear | Danger zones marked | "Knowledge is power. Also terror." |
+| Rain Poncho | 8 SOVS | +Weather Survival | It WILL rain | "Not if. When." |
+| Combination Package | 40 SOVS | All of above minus horn | Starter kit | "The tourist survival bundle" |
 
 ### The Bell Test Mechanic
 - **Action**: Test any bell before purchase

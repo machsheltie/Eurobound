@@ -5,7 +5,7 @@
     "vendor_id": "gift_shop_clerk_01",
     "zone": "lobby",
     "shop_name": "Opera House Boutique",
-    "currency": "euro",
+    "currency": "sovs",
     
     "items": [
       {
@@ -93,7 +93,7 @@
   "box_office_tickets": {
     "vendor_id": "box_office_attendant_01",
     "zone": "lobby",
-    "currency": "euro",
+    "currency": "sovs",
     
     "tickets": [
       {

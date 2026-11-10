@@ -30,7 +30,7 @@ Der Zuckerschock doesn't stay put:
 - **Normal Exit**: Walk away (after purchase or shame)
 - **Completion Requirements**: N/A (vendor location)
 - **Failure States**: "Uncultured" status if you mispronounce badly enough (5 min debuff)
-- **Progressive Unlocks**: "Cake Connoisseur" status after €200 spent (slight discount, less judgment)
+- **Progressive Unlocks**: "Cake Connoisseur" status after 200 SOVS spent (slight discount, less judgment)
 
 ## Visual Design
 ### Cart Description
@@ -38,7 +38,7 @@ Der Zuckerschock doesn't stay put:
 - **Display**: Glass case showing perfect cake slices, temperature controlled
 - **Signage**: 
   - Main: "Der Zuckerschock — Konditormeister seit 1847"
-  - Secondary: "Pronunciation Guide Available (€5)"
+  - Secondary: "Pronunciation Guide Available (5 SOVS)"
 - **Décor**: Imperial eagle motifs, gold leaf details, tiny chandelier on cart
 - **Atmosphere**: Queue of tourists attempting to look sophisticated
 
@@ -106,13 +106,13 @@ They're paying triple price because they pointed at the menu instead of pronounc
 - **Lord Pilsner**: "I'll have the... *squints* ...SAK-er... torty?"
 - **Frau Tortenmeister**: *long pause* "...The Sachertorte."
 - **Lord Pilsner**: "Yes! That! The Sacker-tort!"
-- **Frau Tortenmeister**: *adds €3 to price* "Of course."
+- **Frau Tortenmeister**: *adds 3 SOVS to price* "Of course."
 
 **The Follow-Up**:
 - **Chadwick**: "How much is the chocolate one?"
 - **Frau Tortenmeister**: "They are ALL chocolate. Be specific."
 - **Chadwick**: "The... brown one?"
-- **Frau Tortenmeister**: *adds €5* "...The BROWN one. Yes."
+- **Frau Tortenmeister**: *adds 5 SOVS* "...The BROWN one. Yes."
 - **Bradley**: "Gregory will have the Linzer Torte, please."
 - **Frau Tortenmeister**: *perfect pronunciation, slight nod* "...Acceptable."
 
@@ -124,13 +124,13 @@ They're paying triple price because they pointed at the menu instead of pronounc
 
 | Item | Base Price | Effect | Pronunciation Bonus/Penalty |
 |------|-----------|--------|---------------------------|
-| Sachertorte Slice | €12 | +35 HP, cures Hungry, cures Thirsty | Perfect: €10 / Butchered: €18 |
-| Linzer Torte | €10 | +25 HP, +10 SP | Perfect: €8 / Butchered: €14 |
-| Apfelstrudel | €8 | +20 HP, cures Thirsty | Perfect: €7 / Butchered: €12 |
-| Kaiserschmarrn | €14 | +40 HP, removes Embarrassed | Perfect: €12 / Butchered: €20 |
-| Topfenstrudel | €9 | +15 HP, +15 SP | Perfect: €7 / Butchered: €15 |
-| Punschkrapfen | €6 | +10 HP, Tipsy status (mild) | Perfect: €5 / Butchered: €10 |
-| Der Zuckerschock Special | €25 | Full HP restore, +20 SP, "Sugar High" buff | Perfect: €20 / Butchered: €35 |
+| Sachertorte Slice | 12 SOVS | +35 HP, cures Hungry, cures Thirsty | Perfect: 10 SOVS / Butchered: 18 SOVS |
+| Linzer Torte | 10 SOVS | +25 HP, +10 SP | Perfect: 8 SOVS / Butchered: 14 SOVS |
+| Apfelstrudel | 8 SOVS | +20 HP, cures Thirsty | Perfect: 7 SOVS / Butchered: 12 SOVS |
+| Kaiserschmarrn | 14 SOVS | +40 HP, removes Embarrassed | Perfect: 12 SOVS / Butchered: 20 SOVS |
+| Topfenstrudel | 9 SOVS | +15 HP, +15 SP | Perfect: 7 SOVS / Butchered: 15 SOVS |
+| Punschkrapfen | 6 SOVS | +10 HP, Tipsy status (mild) | Perfect: 5 SOVS / Butchered: 10 SOVS |
+| Der Zuckerschock Special | 25 SOVS | Full HP restore, +20 SP, "Sugar High" buff | Perfect: 20 SOVS / Butchered: 35 SOVS |
 
 **"Sugar High" Buff**:
 - +15% Speed for 30 minutes
@@ -171,12 +171,12 @@ High Charm reduces tourist markup:
 ### Special Interactions
 
 **The Photography Fee**:
-- Taking photo of cart or food: €3 charge
-- Taking photo with Frau Tortenmeister: €10 (she hates it)
-- Taking photo WITHOUT asking: +€5 on next purchase (she remembers)
+- Taking photo of cart or food: 3 SOVS charge
+- Taking photo with Frau Tortenmeister: 10 SOVS (she hates it)
+- Taking photo WITHOUT asking: +5 SOVS on next purchase (she remembers)
 
 **The Recommendation Trap**:
-- Asking "what's good?" = steered to €25 Special
+- Asking "what's good?" = steered to 25 SOVS Special
 - Asking "what's popular?" = slight respect, honest recommendation
 - Asking "what's cheap?" = visible contempt, shown the door (briefly)
 
@@ -268,14 +268,14 @@ High Charm reduces tourist markup:
 - **Lord Pilsner**: "Kaiser-smarren."
 - **Frau Tortenmeister**: "...No."
 - **Lord Pilsner**: "Kaiser-schmarrn?"
-- **Frau Tortenmeister**: "...Close enough. €34."
-- **Lord Pilsner**: "The menu said €26!"
+- **Frau Tortenmeister**: "...Close enough. 34 SOVS."
+- **Lord Pilsner**: "The menu said 26 SOVS!"
 - **Frau Tortenmeister**: "The menu assumed competence."
 
 **Post-Purchase**:
-- **Chadwick**: *eating* "Oh my god. This is INCREDIBLE. Worth every euro."
+- **Chadwick**: *eating* "Oh my god. This is INCREDIBLE. Worth every Sov."
 - **Lord Pilsner**: *eating* "Even the judgment tax?"
-- **Bradley**: *eating, satisfied* "Gregory pronounced everything correctly. Gregory paid €22."
+- **Bradley**: *eating, satisfied* "Gregory pronounced everything correctly. Gregory paid 22 SOVS."
 - **Lord Pilsner**: "GREGORY."
 
 ## System Integration
@@ -288,7 +288,7 @@ High Charm reduces tourist markup:
 
 ### Quest Integration
 - **"The Perfect Pronunciation"**: Master all menu items (achievement)
-- **"Cake Connoisseur"**: Spend €200, earn permanent discount
+- **"Cake Connoisseur"**: Spend 200 SOVS, earn permanent discount
 - **"The Comparison Crime"**: Accidentally offend Frau Tortenmeister
 - **"Cart Hunter"**: Find the cart at all four locations in one day
 

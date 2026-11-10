@@ -9,7 +9,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 ### Acquisition
 - **Location**: The Blarney Trap, Publandia
-- **Method**: Given FREE with purchase of the Bottle Opener Keychain (€15) OR as reward for winning a Pint-Off challenge
+- **Method**: Given FREE with purchase of the Bottle Opener Keychain (15 SOVS) OR as reward for winning a Pint-Off challenge
 - **Requirement**: Cannot participate in Brewery Tour without both items
 - **Timing**: Available from first visit to The Blarney Trap
 
@@ -24,13 +24,13 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 
 ### Publandia Bottle Opener
 - **Design**: Celtic knot shamrock with bottle opener integrated into stem
-- **Acquired**: The Blarney Trap (€15 or Pint-Off reward)
+- **Acquired**: The Blarney Trap (15 SOVS or Pint-Off reward)
 - **Material**: "Authentic" brass (spray-painted zinc)
 - **Inscription**: "May Your Glass Never Be Empty"
 
 ### Debaucheryville Bottle Opener
 - **Design**: Neon green absinthe fairy silhouette with bottle opener wings
-- **Acquired**: Shadow Exchange (€20 or trade for Publandia stamp proof)
+- **Acquired**: Shadow Exchange (20 SOVS or trade for Publandia stamp proof)
 - **Material**: Chrome with glow-in-dark green accents
 - **Inscription**: "Reality Is Optional After Dark"
 - **Special Feature**: Glows faintly in darkness (UV reactive paint)
@@ -116,7 +116,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 - **Stats**: +15 SP restoration
 - **Effect**: 30% chance to apply "Green Fairy Confusion" to USER
 - **Risk**: The confusion is part of the experience
-- **Price**: €12
+- **Price**: 12 SOVS
 - **Flavor Text**: "It's not a bug, it's a feature. The disorientation means it's working." — Dr. Vanek
 - **Brewed By**: The Absinthium Taproom (in-house)
 - **Special**: Only beer that can debuff the user by design
@@ -127,7 +127,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 - **Stats**: +20 SP restoration
 - **Effect**: "Glow-Up Aura" (+1 Charm, +1 Defense for 30 min)
 - **Risk**: Applies "Grease Fingers" status (reduced item accuracy)
-- **Price**: €14
+- **Price**: 14 SOVS
 - **Flavor Text**: "We don't serve beer — we inhale it. Your lungs are just another glass."
 - **Brewed By**: The Tap Dat Vault (vapor-extraction process)
 - **Special**: Consumed as vapor cloud animation
@@ -138,10 +138,10 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 - **Stats**: +40 HP restoration
 - **Effect**: "Inspired" status (+10 Bravado for 30 min)
 - **Risk**: -10% Accuracy next turn (the strength hits hard)
-- **Price**: €10
+- **Price**: 10 SOVS
 - **Flavor Text**: "300 years of brewing tradition. 0 years of health code compliance. Priorities."
 - **Brewed By**: Three-Crown Keg Haus (ancient recipe, questionable equipment)
-- **Special**: Served in antique goblet (return for €2 deposit)
+- **Special**: Served in antique goblet (return for 2 SOVS deposit)
 
 **Blockchain Bock (Ye Olde B.R.E.W. Lab)**
 - **Style**: "AI-optimized" dark bock
@@ -149,7 +149,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 - **Stats**: +20 HP, +10 Gold (crypto fluctuation bonus)
 - **Effect**: Applies "Tourist Trapped" status (increased vulnerability to scams)
 - **Risk**: The gold bonus may be negative if "market crashes"
-- **Price**: €18 (fluctuates ±€5 based on fake crypto ticker)
+- **Price**: 18 SOVS (fluctuates ±5 SOVS based on fake crypto ticker)
 - **Flavor Text**: "Brewed by algorithms. Verified by blockchain. Tasted by... actually, the AI doesn't taste. That's YOUR job."
 - **Brewed By**: Ye Olde B.R.E.W. Lab (random number generator)
 - **Special**: Price literally changes each time you check the menu
@@ -168,7 +168,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
   - Screen occasionally flickers with "glitch" effect
   - NPCs comment on your appearance
 - **Cure**: Full meal (Plot Armor Provisions equivalent), sleep, or 45 min wait
-- **Price**: €75 (repurchasable from any stamped Debaucheryville location)
+- **Price**: 75 SOVS (repurchasable from any stamped Debaucheryville location)
 - **Flavor Text**: "Four stamps. Four different ways to question reality. The night was legendary. The morning is punishment."
 
 **Strategic Use**:
@@ -260,8 +260,8 @@ Each city's Bottle Opener Keychain is a separate collectible:
 ### Legendary Hangover Comparison
 | City | Buff | Duration | Penalty | Penalty Duration | Price |
 |------|------|----------|---------|------------------|-------|
-| Publandia | +15 all stats | Battle | -10 all stats | 30 min | €50 |
-| Debaucheryville | +20 all stats, Confusion immunity | Battle | -15 all, glitch effects | 45 min | €75 |
+| Publandia | +15 all stats | Battle | -10 all stats | 30 min | 50 SOVS |
+| Debaucheryville | +20 all stats, Confusion immunity | Battle | -15 all, glitch effects | 45 min | 75 SOVS |
 | Sinfonia | TBD | TBD | TBD | TBD | TBD |
 | Shamsterdam | TBD | TBD | TBD | TBD | TBD |
 

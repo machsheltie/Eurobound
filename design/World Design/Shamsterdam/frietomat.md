@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24 hours (the wall never sleeps)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: Coins (€2-4 per item) — the machines don't take card, the counter does
+- **Item Requirements**: Coins (2-4 SOVS per item) — the machines don't take card, the counter does
 - **Previous Location Requirements**: None (Frietomat finds you when you need it)
 - **Special Conditions**: Peak hours 2-4 AM, line forms, judgment suspended
 
@@ -100,7 +100,7 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Enabling poor decisions by making them available 24 hours, coin-operated
 - **City-Specific Comedy Operations**: The munchies pipeline from De Groene Gids to Frietomat is REAL
-- **Buffoon Exploitation**: Bros discover that €3 Frietomat is better value than €18 pancakes
+- **Buffoon Exploitation**: Bros discover that 3 SOVS Frietomat is better value than 18 SOVS pancakes
 - **Comedy of Errors**: First-timer confusion at the wall, wrong item selection, kroket temperature surprise
 - **Consequence System**: Frietomat doesn't judge, but your stomach might (food effects vary)
 
@@ -124,24 +124,24 @@
 ### The Wall Interaction System
 - **Approach**: Walk up to the wall, examine options
 - **Selection**: Choose compartment (each shows contents through glass)
-- **Payment**: Insert coins (€2-4 depending on item)
+- **Payment**: Insert coins (2-4 SOVS depending on item)
 - **Acquisition**: Turn handle, door opens, item is yours
 - **No Returns**: What you take is what you get, the wall has spoken
 
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Description |
 |------|-------|-----------|---------------|-------------|
-| Kroket | €2.50 | +20 HP | Warm Inside status | Deep-fried ragout in crispy coating, the classic |
-| Frikandel | €2.00 | +15 HP | None | Mystery meat tube, don't ask, just eat |
-| Kaassouflé | €3.00 | +25 HP | Cheese Contentment | Deep-fried cheese in pastry, happiness |
-| Bamischijf | €2.50 | +20 HP | Exotic Confusion | Fried noodle disc, cross-cultural comfort |
-| Berehap | €3.50 | +30 HP | Protein Boost | Satay meat on a stick, substantial |
-| Mexicano | €2.50 | +20 HP, slight -HP delayed | Spicy Surprise | "Spicy" by Dutch standards |
-| Hamburger | €3.50 | +25 HP | Familiarity | When you need something recognizable |
-| Cheeseburger | €4.00 | +30 HP | Cheese Contentment | The above, but better |
-| Satéschotel | €5.00 | +40 HP, +SP | Full Meal status | The commitment option |
-| Frikandel Speciaal | €3.00 | +25 HP | The Works | Frikandel with onions and sauce |
-| Mystery Item | €2.50 | ??? HP | ??? status | Changes daily, fate decides |
+| Kroket | 2.50 SOVS | +20 HP | Warm Inside status | Deep-fried ragout in crispy coating, the classic |
+| Frikandel | 2.00 SOVS | +15 HP | None | Mystery meat tube, don't ask, just eat |
+| Kaassouflé | 3.00 SOVS | +25 HP | Cheese Contentment | Deep-fried cheese in pastry, happiness |
+| Bamischijf | 2.50 SOVS | +20 HP | Exotic Confusion | Fried noodle disc, cross-cultural comfort |
+| Berehap | 3.50 SOVS | +30 HP | Protein Boost | Satay meat on a stick, substantial |
+| Mexicano | 2.50 SOVS | +20 HP, slight -HP delayed | Spicy Surprise | "Spicy" by Dutch standards |
+| Hamburger | 3.50 SOVS | +25 HP | Familiarity | When you need something recognizable |
+| Cheeseburger | 4.00 SOVS | +30 HP | Cheese Contentment | The above, but better |
+| Satéschotel | 5.00 SOVS | +40 HP, +SP | Full Meal status | The commitment option |
+| Frikandel Speciaal | 3.00 SOVS | +25 HP | The Works | Frikandel with onions and sauce |
+| Mystery Item | 2.50 SOVS | ??? HP | ??? status | Changes daily, fate decides |
 
 ### The "Mystery Item" System
 - **Rotation**: Different item each in-game day
@@ -174,7 +174,7 @@
 ### The Munchies Pipeline
 - **Trigger**: Visiting Frietomat after De Groene Gids within 2 hours
 - **Effect**: All food HP restoration +50%
-- **Dialogue**: "This is the best thing I've ever eaten" (it's a €2 kroket)
+- **Dialogue**: "This is the best thing I've ever eaten" (it's a 2 SOVS kroket)
 - **Explanation**: The Space Cake Effect makes everything taste better
 - **Mechanical Reality**: Bros gain more HP from Frietomat when properly... prepared
 
@@ -197,7 +197,7 @@
 - **Background**: Second job, prefers the late shift, has seen everything
 - **Demeanor**: Not unfriendly, just efficient beyond the need for conversation
 - **Dialogue**:
-  - "Coins? Two euros fifty. There."
+  - "Coins? Two SOVS fifty. There."
   - "The wall works. Insert coins. Turn handle. Easy."
   - *3 AM rush* "Kroket is that one. Frikandel is that one. Yes, that's meat. Probably."
   - "Mystery item today is... *checks* ...experimental. Your choice."
@@ -252,7 +252,7 @@
 - **Lord Pilsner** (first visit): "It's a VENDING MACHINE. For HOT FOOD. This is INNOVATION."
 - **Lord Pilsner** (3 AM): "The kroket understands me. The kroket GETS it."
 - **Chadwick**: "I'm filming the wall. The WALL itself is content. The wall is ART."
-- **Chadwick** (eating): "This is better than €18 pancakes. I need to DOCUMENT this realization."
+- **Chadwick** (eating): "This is better than 18 SOVS pancakes. I need to DOCUMENT this realization."
 - **Bradley**: "Gregory approves of Frietomat. Frietomat doesn't judge. Gregory respects that."
 - **Bradley** (mystery item): "Gregory chose the mystery. Gregory regrets nothing."
 

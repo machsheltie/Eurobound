@@ -92,7 +92,7 @@ Sprite sheet `seamus_and_staff.png` (1024x1024) carries eleven Seamus body state
 
 ### Motivation
 
-His grandfather asked his father, and his father asked him: *are we selling beer or selling Publandia?* The answer was "both," and the answer was correct. Seamus's motivation is to keep a building his family has held since before the euro, to employ four people properly, and to run the arrangement his grandfather started without letting it rot into a loyalty-card scheme. He wants the pint poured right. He wants the tourists to leave happy. He wants the regulars to still have somewhere to go at midnight when the tourists have gone up to bed. He has structured an entire business so that all three can be true at once, and it works.
+His grandfather asked his father, and his father asked him: *are we selling beer or selling Publandia?* The answer was "both," and the answer was correct. Seamus's motivation is to keep a building his family has held since before Sovs, to employ four people properly, and to run the arrangement his grandfather started without letting it rot into a loyalty-card scheme. He wants the pint poured right. He wants the tourists to leave happy. He wants the regulars to still have somewhere to go at midnight when the tourists have gone up to bed. He has structured an entire business so that all three can be true at once, and it works.
 
 ---
 

@@ -24,7 +24,7 @@
       },
       "functions": [
         "Multi-zone story hub",
-        "Fiaker Fiasco Phase 3 (€2,000 damage)",
+        "Fiaker Fiasco Phase 3 (2,000 SOVS damage)",
         "City boss arena (Maestro Vice von Strauss)",
         "Rival trio encounter location",
         "Gift shop vendor",
@@ -83,7 +83,7 @@
       "region": "Sinfonia",
       "exterior": {
         "description": "A magnificent horseshoe-shaped theater seating 1,200 (satirically never full except for free events). Red velvet seating on orchestra level, balcony, and upper gallery. The unused Royal Box from 1918 sits center. A massive baroque proscenium arch frames the deep stage.",
-        "entry_condition": "Performance ticket (€40-80) for evening; Charm 2+ to sneak into rehearsals; Bassline ticket (€25) for nighttime"
+        "entry_condition": "Performance ticket (40-80 SOVS) for evening; Charm 2+ to sneak into rehearsals; Bassline ticket (25 SOVS) for nighttime"
       },
       "interior": {
         "theme": "High culture performance space that transforms into EDM arena, dual identity embodied",
@@ -139,12 +139,12 @@
           "quest_npc: papageno_franz_01",
           "quest_npc: seamstress_01",
           "quest_npc: backstage_crew",
-          "destructible: prop_rack_papageno (€150)",
-          "destructible: magic_flute_prop (€200)",
-          "destructible: costume_rack_queen (€200)",
-          "destructible: mechanical_snake (€800)",
-          "destructible: paper_trees_x2 (€250)",
-          "destructible: starry_night_backdrop (€400, avoidable)",
+          "destructible: prop_rack_papageno (150 SOVS)",
+          "destructible: magic_flute_prop (200 SOVS)",
+          "destructible: costume_rack_queen (200 SOVS)",
+          "destructible: mechanical_snake (800 SOVS)",
+          "destructible: paper_trees_x2 (250 SOVS)",
+          "destructible: starry_night_backdrop (400 SOVS, avoidable)",
           "interactive: rigging_controls",
           "interactive: coffee_station",
           "interactive: call_sheet_board",
@@ -163,9 +163,9 @@
       },
       "functions": [
         "Fiaker Fiasco Phase 3 primary zone",
-        "€2,000 damage set piece",
+        "2,000 SOVS damage set piece",
         "Papageno ally recruitment",
-        "Choice path (reduces damage by €400)",
+        "Choice path (reduces damage by 400 SOVS)",
         "Findable items (props, costumes)",
         "Director's breakdown comedy"
       ]
@@ -191,7 +191,7 @@
         ]
       },
       "functions": [
-        "Destruction zone (€350 damage)",
+        "Destruction zone (350 SOVS damage)",
         "Findable prop items",
         "Gustav's first backstage collision"
       ]
@@ -207,7 +207,7 @@
       "interior": {
         "theme": "Artisan space about to be violated by horse",
         "features": [
-          "destructible: costume_rack_queen (€200)",
+          "destructible: costume_rack_queen (200 SOVS)",
           "searchable: fabric_scraps",
           "findable: masquerade_mask",
           "findable: formal_gloves",
@@ -218,7 +218,7 @@
         ]
       },
       "functions": [
-        "Destruction zone (€200 damage)",
+        "Destruction zone (200 SOVS damage)",
         "Costume item collection",
         "Gustav tangles and tears"
       ]
@@ -236,9 +236,9 @@
         "features": [
           "entry_point: stage_left_wing",
           "entry_point: stage_right_wing",
-          "destructible: mechanical_snake (€800)",
-          "destructible: paper_trees_x2 (€250)",
-          "destructible: starry_night_backdrop (€400, avoidable)",
+          "destructible: mechanical_snake (800 SOVS)",
+          "destructible: paper_trees_x2 (250 SOVS)",
+          "destructible: starry_night_backdrop (400 SOVS, avoidable)",
           "npc_quest: prima_donna_adelheid_01 (singing)",
           "npc_quest: papageno_franz_01 (performing)",
           "npc_quest: regisseur_hoffmann_01 (directing)",
@@ -250,7 +250,7 @@
         ]
       },
       "functions": [
-        "Major destruction zone (€800-1,450)",
+        "Major destruction zone (800-1,450 SOVS)",
         "Prima Donna's aria interruption",
         "Director's breakdown scene",
         "Papageno alternate route trigger"

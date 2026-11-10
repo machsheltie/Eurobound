@@ -1,7 +1,7 @@
 # Café Sachertorte - Complete PNG Asset Requirements
 
 ## 📋 Overview
-This document provides exact specifications for all PNG files needed for the Café Sachertorte location - a high-end Viennese café that becomes ground zero for Gustav's €340 rampage during the Fiaker Fiasco sidequest.
+This document provides exact specifications for all PNG files needed for the Café Sachertorte location - a high-end Viennese café that becomes ground zero for Gustav's 340 SOVS rampage during the Fiaker Fiasco sidequest.
 
 ---
 
@@ -87,7 +87,7 @@ This document provides exact specifications for all PNG files needed for the Caf
 ### Detail Elements:
 - **Pocket Watch** (144, 192, 12x16) - On chain, for close-up
 - **Service Tray** (156, 192, 32x24) - Silver, with items
-- **Debt Receipt** (188, 192, 24x32) - Paper with €340
+- **Debt Receipt** (188, 192, 24x32) - Paper with 340 SOVS
 
 ### Animation Timing:
 - Service: 4fps, single play
@@ -207,7 +207,7 @@ This document provides exact specifications for all PNG files needed for the Caf
 
 ### Sachertorte Consumption (3 states):
 - **Intact Cake** (0, 120, 32x24) - Whole, gleaming
-- **Bitten** (32, 120, 32x24) - Gustav's first bite, €28 gone
+- **Bitten** (32, 120, 32x24) - Gustav's first bite, 28 SOVS gone
 - **Devoured** (64, 120, 32x24) - Empty pedestal, crumbs
 
 ### Opera Cake Grab:
@@ -250,8 +250,8 @@ This document provides exact specifications for all PNG files needed for the Caf
 - **Candle Flicker** (80, 64, 16x24) - Evening table candles
 
 ### UI Particles:
-- **Euro Symbol Float** (0, 96, 16x16) - For damage counter
-- **Price Popup** (16, 96, 48x24) - "+€85" style text bubble
+- **SOVS Label Float** (0, 96, 16x16) - For damage counter
+- **Price Popup** (16, 96, 48x24) - "+85 SOVS" style text bubble
 - **Damage Counter BG** (64, 96, 120x32) - Running total display
 
 ---
@@ -268,12 +268,12 @@ This document provides exact specifications for all PNG files needed for the Caf
 - **Price Tag** (160, 48, 32x16) - Gold-trimmed
 
 ### Damage Tracking:
-- **Damage Counter Background** (0, 128, 120x32) - "Damages: €"
-- **Euro Symbol Large** (120, 128, 24x24) - For totals
+- **Damage Counter Background** (0, 128, 120x32) - "Damages: SOVS"
+- **SOVS Label Large** (120, 128, 24x24) - For totals
 - **Damage Item Entry** (0, 160, 200x24) - Itemized line
 
 ### Debt System:
-- **Debt Indicator** (144, 128, 64x24) - "Debt: €340"
+- **Debt Indicator** (144, 128, 64x24) - "Debt: 340 SOVS"
 - **Payment Slider** (144, 152, 80x20) - For partial payments
 - **Valued Patron Badge** (208, 128, 48x48) - Unlock reward
 
@@ -357,20 +357,20 @@ This document provides exact specifications for all PNG files needed for the Caf
 
 ### Screenshot-Worthy Moments:
 1. **Gustav examining cakes** with connoisseur expression
-2. **Damage counter hitting €340** with Herr Ober's fury
+2. **Damage counter hitting 340 SOVS** with Herr Ober's fury
 3. **The Intellectual unfazed** while chaos surrounds
 4. **The Gustav cookie** on post-quest menu
 
 ### TikTok Potential:
 - "POV: A horse just ate your entire Sachertorte inventory"
-- "When the €18 cake slice hits different"
+- "When the 18 SOVS cake slice hits different"
 - "The damage counter going crazy"
-- "One man. One horse. €340 in damages."
+- "One man. One horse. 340 SOVS in damages."
 
 ### Quotable Content:
 - "That horse has better taste than most tourists." - Sous Chef Anna
 - "In thirty years of service... a HORSE." - Herr Ober
-- "€340. You will pay this. Now." - Herr Ober
+- "340 SOVS. You will pay this. Now." - Herr Ober
 - "I've been coming here for 40 years. This is the most exciting thing that's ever happened." - The Intellectual
 
 ---
@@ -394,4 +394,4 @@ This document provides exact specifications for all PNG files needed for the Caf
 - [ ] Post-quest changes tell complete story
 - [ ] Mobile performance optimized
 
-**Café Sachertorte: Where Vienna's famous €18 cake slice meets a horse with expensive taste and zero impulse control.**
+**Café Sachertorte: Where Vienna's famous 18 SOVS cake slice meets a horse with expensive taste and zero impulse control.**

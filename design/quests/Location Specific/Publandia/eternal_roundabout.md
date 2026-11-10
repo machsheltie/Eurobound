@@ -429,7 +429,7 @@
 
 ### Prerequisites
 - Arrive in Publandia
-- Have enough gold for car rental (€200)
+- Have enough gold for car rental (200 SOVS)
 
 ### Unlocks
 - **"Road Warrior" achievement** - Used car for something successfully

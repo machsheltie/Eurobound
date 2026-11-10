@@ -251,7 +251,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 - **Gold Paint Flakes**: 4 frames, glittering particles
 - **Fabric Tear**: 3 frames, ripping motion
 - **Canvas Rip**: 4 frames, backdrop tearing effect
-- **Damage Popup**: 3 frames, €euro amount rising
+- **Damage Popup**: 3 frames, SOVS amount rising
 - **Chandelier Sparkle**: 4 frames, crystal glints
 - **Dust Cloud**: 4 frames, prop destruction aftermath
 - **Stage Light Beam**: 2 frames, spotlight effect
@@ -264,7 +264,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ### UI Components
 - **Damage Counter Frame**: Ornate gold frame (128×48)
-- **Euro Symbol**: Stylized € (32×32)
+- **SOVS Label**: Stylized "SOVS" wordmark (32×32)
 - **Debt Indicator**: "OUTSTANDING" bar (100×32)
 - **Choice Panel**: Dialogue choice frame, baroque style (200×80)
 - **Papageno Icon**: For ally indicator (48×48)
@@ -296,7 +296,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 ### Key Screenshot Opportunities
 1. **Gustav on stage** during "Der Hölle Rache"—horse interrupting opera
-2. **Damage counter hitting €2,000**—with destruction visible
+2. **Damage counter hitting 2,000 SOVS**—with destruction visible
 3. **Director's breakdown**—sitting on floor, thousand-yard stare
 4. **Papageno befriending Gustav**—bird-man and horse bonding
 5. **Otto sipping coffee**—completely unfazed during chaos
@@ -349,4 +349,4 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 
 **END OF ASSET REQUIREMENTS**
 
-*The Bassline Opera House: Where 400 years of cultural excellence meets one horse in a cape, one method-acting bird-man, and €2,000 in Magic Flute production costs.*
+*The Bassline Opera House: Where 400 years of cultural excellence meets one horse in a cape, one method-acting bird-man, and 2,000 SOVS in Magic Flute production costs.*

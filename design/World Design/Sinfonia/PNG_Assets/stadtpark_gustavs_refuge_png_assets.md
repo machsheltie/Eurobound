@@ -342,7 +342,7 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 ### Quote-Worthy Visual Moments
 - "Taste the Rainbow" bag held toward horse
 - Pigeon Lady surrounded by birds at night
-- Philosopher offering wisdom for €1
+- Philosopher offering wisdom for 1 SOVS
 - Sleeping tourist undisturbed by everything
 
 ---
@@ -389,4 +389,4 @@ The Stadtpark at night is a **moonlit sanctuary turned dramatic stage**—ancien
 
 **END OF ASSET REQUIREMENTS**
 
-*Stadtpark: Where a bag of American candy, a runaway Austrian horse, and €2,340 in property damage somehow become the most emotionally resonant moment in the entire game.*
+*Stadtpark: Where a bag of American candy, a runaway Austrian horse, and 2,340 SOVS in property damage somehow become the most emotionally resonant moment in the entire game.*

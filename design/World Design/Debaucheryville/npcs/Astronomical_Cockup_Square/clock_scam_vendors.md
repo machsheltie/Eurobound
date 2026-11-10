@@ -6,7 +6,7 @@
 
 The Astronomical Clock-Up Square features a coordinated network of scam vendors who have perfected their craft over years. They operate as a professional ecosystem with territory respect, referral systems, and shared end-of-day drinks.
 
-**Total Potential Tourist Damage**: €380-550 for the "complete experience"
+**Total Potential Tourist Damage**: 380-550 SOVS for the "complete experience"
 
 ---
 
@@ -24,20 +24,20 @@ The Astronomical Clock-Up Square features a coordinated network of scam vendors 
 │  ┌─────────┐                              ┌─────────┐    │
 │  │ PAVEL   │                              │ VÁCLAV  │    │
 │  │ Viewing │     ┌─────────────┐          │ Clock   │    │
-│  │ Spot €30│     │  MIROSLAV   │          │ Wine €60│    │
+│  │ Spot 30 SOVS│     │  MIROSLAV   │          │ Wine 60 SOVS│    │
 │  └─────────┘     │  Party Monk │          └─────────┘    │
-│                  │   €60       │                          │
+│                  │   60 SOVS       │                          │
 │                  └─────────────┘                          │
 │                                                           │
 │  ┌─────────────┐                    ┌─────────────┐      │
 │  │  MARTIN     │                    │  HELENA     │      │
 │  │  Wristband  │                    │  Merch      │      │
-│  │  €90 total  │                    │  €90+       │      │
+│  │  90 SOVS total  │                    │  90 SOVS+       │      │
 │  └─────────────┘                    └─────────────┘      │
 │                                                           │
 │              ═══════════════════════════                  │
 │                    To VIKTOR → JAKUB                      │
-│                    Euro Ink 4 Less €75                    │
+│                    Euro Ink 4 Less 75 SOVS                    │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -45,21 +45,21 @@ The Astronomical Clock-Up Square features a coordinated network of scam vendors 
 ```
 [Bros Enter Square]
         ↓
-[1. PAVEL approaches] → €30 → Stand behind pillar
+[1. PAVEL approaches] → 30 SOVS → Stand behind pillar
         ↓
-[2. MIROSLAV approaches] → €60 → Fake blessing
+[2. MIROSLAV approaches] → 60 SOVS → Fake blessing
         ↓
 [Clock Show - 38 seconds] → Bros cry → "Post-Clock Vulnerability"
         ↓
-[3. VÁCLAV approaches] → €60-180 → Clock wine
+[3. VÁCLAV approaches] → 60-180 SOVS → Clock wine
         ↓
-[4. HELENA approaches] → €90+ → Merchandise
+[4. HELENA approaches] → 90 SOVS+ → Merchandise
         ↓
-[5. MARTIN approaches] → €90 → Wristbands
+[5. MARTIN approaches] → 90 SOVS → Wristbands
         ↓
 [6. VIKTOR calls out] → Referral → Euro Ink 4 Less
         ↓
-[7. JAKUB tattoos] → €75 → Duck tattoo
+[7. JAKUB tattoos] → 75 SOVS → Duck tattoo
 ```
 
 ---
@@ -72,7 +72,7 @@ The Astronomical Clock-Up Square features a coordinated network of scam vendors 
 | **File** | `npc_viewing_spot_scammer.md` |
 | **Position** | Square perimeter, roaming |
 | **Product** | "Prime viewing spots" |
-| **Price** | €10/person (€30 total) |
+| **Price** | 10 SOVS/person (30 SOVS total) |
 | **Result** | Blocked view behind pillar |
 | **Role** | First contact, softens marks |
 
@@ -86,7 +86,7 @@ The Astronomical Clock-Up Square features a coordinated network of scam vendors 
 | **File** | `npc_party_monk.md` |
 | **Position** | Fountain area, fixed station |
 | **Product** | Fake blessings |
-| **Price** | €20/person (€60 total) |
+| **Price** | 20 SOVS/person (60 SOVS total) |
 | **Result** | Lorem ipsum gibberish |
 | **Role** | Spiritual exploitation |
 
@@ -104,7 +104,7 @@ The Astronomical Clock-Up Square features a coordinated network of scam vendors 
 | **File** | `npc_clock_wine_vendor.md` |
 | **Position** | Wine cart, fixed |
 | **Product** | "Clock Energy Wine" |
-| **Price** | €60/bottle |
+| **Price** | 60 SOVS/bottle |
 | **Result** | Boxed wine in fancy bottles |
 | **Role** | Post-show interception |
 
@@ -122,17 +122,17 @@ The Astronomical Clock-Up Square features a coordinated network of scam vendors 
 | **File** | `npc_merchandise_vendor.md` |
 | **Position** | Merchandise stall, fixed |
 | **Product** | Commemorative garbage |
-| **Price** | €90+ total |
+| **Price** | 90 SOVS+ total |
 | **Result** | Plates, shirts, temp tattoos |
 | **Role** | Efficient emotional predator |
 
 **Signature Line**: "You cry at clock! Very moving. You need plate to remember."
 
 **Inventory**:
-- Commemorative Plate: €45
-- "I Survived" T-Shirt: €30
-- Temporary Tattoo: €15
-- Snow Globe: €25
+- Commemorative Plate: 45 SOVS
+- "I Survived" T-Shirt: 30 SOVS
+- Temporary Tattoo: 15 SOVS
+- Snow Globe: 25 SOVS
 
 ---
 
@@ -142,7 +142,7 @@ The Astronomical Clock-Up Square features a coordinated network of scam vendors 
 | **File** | `shady_wristband_guy.md` |
 | **Position** | Roaming, evening hours |
 | **Product** | "VIP All-Access Wristbands" |
-| **Price** | €30/wristband (€90 total) |
+| **Price** | 30 SOVS/wristband (90 SOVS total) |
 | **Result** | Children's birthday wristbands |
 | **Role** | VIP culture exploitation |
 
@@ -174,7 +174,7 @@ The Astronomical Clock-Up Square features a coordinated network of scam vendors 
 | **File** | `npc_euro_ink_tattoo_artist.md` |
 | **Position** | Euro Ink 4 Less interior |
 | **Product** | Tattoos |
-| **Price** | €50-100 |
+| **Price** | 50-100 SOVS |
 | **Result** | Duck instead of skeleton |
 | **Role** | Permanent mistake creator |
 
@@ -218,21 +218,21 @@ Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
 ### Total Potential Spending
 | Vendor | Min | Max | Typical |
 |--------|-----|-----|---------|
-| Pavel (Viewing) | €30 | €30 | €30 |
-| Miroslav (Monk) | €60 | €120 | €60 |
-| Václav (Wine) | €60 | €300 | €180 |
-| Helena (Merch) | €45 | €200 | €90 |
-| Martin (Wristbands) | €90 | €90 | €90 |
-| Jakub (Tattoo) | €50 | €100 | €75 |
-| **TOTAL** | **€335** | **€840** | **€525** |
+| Pavel (Viewing) | 30 SOVS | 30 SOVS | 30 SOVS |
+| Miroslav (Monk) | 60 SOVS | 120 SOVS | 60 SOVS |
+| Václav (Wine) | 60 SOVS | 300 SOVS | 180 SOVS |
+| Helena (Merch) | 45 SOVS | 200 SOVS | 90 SOVS |
+| Martin (Wristbands) | 90 SOVS | 90 SOVS | 90 SOVS |
+| Jakub (Tattoo) | 50 SOVS | 100 SOVS | 75 SOVS |
+| **TOTAL** | **335 SOVS** | **840 SOVS** | **525 SOVS** |
 
-### Bros' Typical Spend: €525
-- Viewing spots: €30
-- Blessings: €60
-- Wine (3 bottles): €180
-- Merch (basics): €90
-- Wristbands: €90
-- Tattoo: €75
+### Bros' Typical Spend: 525 SOVS
+- Viewing spots: 30 SOVS
+- Blessings: 60 SOVS
+- Wine (3 bottles): 180 SOVS
+- Merch (basics): 90 SOVS
+- Wristbands: 90 SOVS
+- Tattoo: 75 SOVS
 
 ---
 

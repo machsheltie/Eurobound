@@ -274,8 +274,8 @@ All user interface and progression systems:
 **Vendor Inventory UI Elements:**
 - **Meme Summon Category Tab**: "SUMMONS" in early internet font
 - **Meme Trinket Category Tab**: "TRINKETS" in complementary font
-- **Purchase Button**: "BUY" button with euro symbol
-- **Currency Display**: Euro counter with total funds
+- **Purchase Button**: "BUY" button with SOVS label
+- **Currency Display**: SOVS counter with total funds
 - **Item Description Box**: Container for item details and effects
 
 **Achievement Popup Banners (128x48 each):**

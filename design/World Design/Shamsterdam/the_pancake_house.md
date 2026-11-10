@@ -1,6 +1,6 @@
 # The Pancake House
 
-*Where American expectations meet Dutch reality — €18 for something that's basically a crepe, and no, we don't have IHOP syrup*
+*Where American expectations meet Dutch reality — 18 SOVS for something that's basically a crepe, and no, we don't have IHOP syrup*
 
 ## Location Identity
 - **Location ID**: shamsterdam_canalring_pancake_house_01
@@ -22,7 +22,7 @@
 ### Exit Conditions
 - **Normal Exit**: Through front door, past the menu you now understand too late
 - **Completion Requirements**: No completion (survive the portion size revelation)
-- **Failure States**: Cannot be banned (they need your €18)
+- **Failure States**: Cannot be banned (they need your 18 SOVS)
 - **Progressive Unlocks**: None (experience is consistent: hope, confusion, acceptance)
 
 ## Visual Design
@@ -32,10 +32,10 @@
 - **Signage**: 
   - Main: "THE PANCAKE HOUSE" in folksy font, windmill logo
   - Window: "AUTHENTIC DUTCH PANCAKES — Since 1967"
-  - Chalkboard: "TODAY'S SPECIAL: Bacon & Stroop €17" (stroop = syrup, sort of)
+  - Chalkboard: "TODAY'S SPECIAL: Bacon & Stroop 17 SOVS" (stroop = syrup, sort of)
   - Door: "FAMILIES WELCOME" (and charged accordingly)
 - **Atmosphere**: Butter and batter smell wafting out, clinking of cutlery, tourist confusion audible
-- **Environmental Context**: Prime canal view, outdoor seating with heaters (€2 per hour, not advertised)
+- **Environmental Context**: Prime canal view, outdoor seating with heaters (2 SOVS per hour, not advertised)
 
 ### Interior Visuals — Main Dining Room
 - **Layout**: Two-floor canal house converted to restaurant, wooden beams, steep Dutch stairs
@@ -44,9 +44,9 @@
   - Wooden tables with blue-checkered tablecloths (very Dutch, very Instagram)
   - Delft tile displays on walls (some authentic, most reproductions)
   - Copper pans hanging from ceiling (decorative, never used)
-  - Windmill miniatures on every table (don't touch, €15 if broken)
+  - Windmill miniatures on every table (don't touch, 15 SOVS if broken)
   - Antique pancake griddles (on display, modern ones in kitchen)
-  - Menu that requires translation guide (provided, €2, also on menu)
+  - Menu that requires translation guide (provided, 2 SOVS, also on menu)
 - **Decorative Elements**:
   - Vintage Dutch cheese advertisements
   - Wooden shoes on shelf (obviously)
@@ -60,10 +60,10 @@
 - **Categories**:
   - **Savory Pancakes**: Cheese, bacon, ham, mushrooms (not what Americans expect)
   - **Sweet Pancakes**: Apple, stroop, powdered sugar (closer to expectations, still thin)
-  - **"American Style" Section**: €22 for stack of three, "with maple-flavored syrup"
+  - **"American Style" Section**: 22 SOVS for stack of three, "with maple-flavored syrup"
   - **Combination Chaos**: Bacon AND Nutella options exist (Dutch palate is different)
-  - **Kids Menu**: Same pancakes, smaller, still €12
-- **Price Range**: €14-24 for what is fundamentally one thin pancake
+  - **Kids Menu**: Same pancakes, smaller, still 12 SOVS
+- **Price Range**: 14-24 SOVS for what is fundamentally one thin pancake
 - **The Trap**: Toppings listed, each topping is extra, final bill surprise
 
 ### The Kitchen (Visible Through Pass)
@@ -78,7 +78,7 @@
 
 ### The Terrace (Premium Seating)
 - **Location**: Canal-side, view of boats, maximum photo opportunity
-- **Catch**: Heaters are €2/hour, not mentioned until bill
+- **Catch**: Heaters are 2 SOVS/hour, not mentioned until bill
 - **Atmosphere**: Other tourists taking same photos, boats passing, ducks begging
 - **Weather Dependency**: Rain = inside (no discount), heaters = extra charge, sun = line forms
 
@@ -101,16 +101,16 @@
 - **Sensitivity Considerations**: Targets expectation mismatch and tourist behavior, not Dutch cuisine (which is legitimately delicious)
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Charging €18 for what costs €3 to make because it's on a canal
+- **Primary Vice**: Charging 18 SOVS for what costs 3 SOVS to make because it's on a canal
 - **City-Specific Comedy Operations**: "Authentic Dutch Experience" at "Authentic Tourist Prices"
 - **Buffoon Exploitation**: Bros order "with bacon" expecting American bacon strips, receive Dutch bacon
-- **Comedy of Errors**: Every modification attempt creates new confusion ("more syrup" = €3 extra)
+- **Comedy of Errors**: Every modification attempt creates new confusion ("more syrup" = 3 SOVS extra)
 - **Consequence System**: Ordering wrong results in food that's technically correct but disappointing
 
 ### Buffoon Delusion Scenarios
 **What bros THINK is happening**: Having classic pancake breakfast, carb-loading for the day
 
-**What is ACTUALLY happening**: Paying €18 for a thin pancake with toppings they didn't understand
+**What is ACTUALLY happening**: Paying 18 SOVS for a thin pancake with toppings they didn't understand
 
 **How impaired are they**: Usually hungover (this is breakfast after Shamsterdam night), craving comfort food
 
@@ -127,27 +127,27 @@
 ## Gameplay Mechanics
 ### Ordering System
 - **Menu Navigation**: Multi-page menu, each choice reveals hidden costs
-- **Base Price Trap**: Pancake is €14, but toppings are extra
+- **Base Price Trap**: Pancake is 14 SOVS, but toppings are extra
 - **Final Bill Calculation**: Base + toppings + terrace fee + service = ???
 - **Ordering Dialogue Options**: Each choice has consequence
 
 ### Menu & Consumables
 | Item | Base Price | With "Standard" Toppings | Actual Effects | Staff Response |
 |------|-----------|-------------------------|----------------|----------------|
-| Kaaspannenkoek (Cheese) | €14 | €16 | +20 HP, Cheese Sweats status | "Classic choice." |
-| Spekpannenkoek (Bacon) | €15 | €18 | +25 HP, not the bacon you expected | "Dutch bacon. Very good." |
-| Appelpannenkoek (Apple) | €15 | €18 | +20 HP, +Comfort, actually delicious | "Traditional. Excellent choice." |
-| Stroop Pannenkoek (Syrup) | €14 | €17 | +15 HP, +SP, syrup is... different | "With stroop. Yes." |
-| Bacon AND Nutella | €18 | €22 | +30 HP, +Confused, -Understanding | "...yes, people order this." |
-| "American Style" Stack | €22 | €28 | +40 HP, closest to expectations | "Three small ones. More syrup is extra." |
-| Kid's Pancake | €12 | €14 | +15 HP, same pancake but smaller plate | "For the children. Same pancake." |
-| Extra Syrup | +€3 | — | Small pitcher of maple-adjacent product | "Maple-FLAVORED. Yes." |
-| Whipped Cream | +€4 | — | From a can, portion controlled | "Fresh. From the can." |
+| Kaaspannenkoek (Cheese) | 14 SOVS | 16 SOVS | +20 HP, Cheese Sweats status | "Classic choice." |
+| Spekpannenkoek (Bacon) | 15 SOVS | 18 SOVS | +25 HP, not the bacon you expected | "Dutch bacon. Very good." |
+| Appelpannenkoek (Apple) | 15 SOVS | 18 SOVS | +20 HP, +Comfort, actually delicious | "Traditional. Excellent choice." |
+| Stroop Pannenkoek (Syrup) | 14 SOVS | 17 SOVS | +15 HP, +SP, syrup is... different | "With stroop. Yes." |
+| Bacon AND Nutella | 18 SOVS | 22 SOVS | +30 HP, +Confused, -Understanding | "...yes, people order this." |
+| "American Style" Stack | 22 SOVS | 28 SOVS | +40 HP, closest to expectations | "Three small ones. More syrup is extra." |
+| Kid's Pancake | 12 SOVS | 14 SOVS | +15 HP, same pancake but smaller plate | "For the children. Same pancake." |
+| Extra Syrup | +3 SOVS | — | Small pitcher of maple-adjacent product | "Maple-FLAVORED. Yes." |
+| Whipped Cream | +4 SOVS | — | From a can, portion controlled | "Fresh. From the can." |
 
 ### The Syrup Situation (Mini-System)
 - **Expectation**: Bottle of maple syrup, unlimited
 - **Reality**: Small pitcher of "stroop" (Dutch syrup, thicker, less maple)
-- **More Syrup Request**: €3 extra, same small pitcher
+- **More Syrup Request**: 3 SOVS extra, same small pitcher
 - **American Syrup Request**: "We have maple-FLAVORED syrup" (corn syrup adjacent)
 - **Bros' Reaction**: Escalating disbelief, eventual acceptance
 - **Cultural Learning Moment**: Dutch stroop is actually excellent, just different
@@ -162,8 +162,8 @@
 
 ### The Bill Breakdown
 - **Base Order**: Pancake + toppings shown
-- **Hidden Additions**: Terrace heater fee (if applicable), bread basket (automatic, €4), service charge
-- **The Bread Basket Trap**: Arrives automatically, charged automatically, €4
+- **Hidden Additions**: Terrace heater fee (if applicable), bread basket (automatic, 4 SOVS), service charge
+- **The Bread Basket Trap**: Arrives automatically, charged automatically, 4 SOVS
 - **Revelation Moment**: Bill arrives, math happens, regret follows
 - **Bravado Check**: Can contest charges (success = small discount, failure = awkward)
 
@@ -199,9 +199,9 @@
 - **Dialogue**:
   - "Ready to order? I can explain the menu. Dutch pancakes are... different from American."
   - "The bacon is spek. Cubes. Traditional. Not strips. Is that okay? ...I'll bring the spek."
-  - "More syrup is three euros. Yes, for the small one. It's... concentrated."
-  - "The bread basket was complimentary to receive. Not complimentary to keep. Four euros."
-  - "Your total is... *brief pause for reaction preparation* ...sixty-four euros. For three."
+  - "More syrup is three SOVS. Yes, for the small one. It's... concentrated."
+  - "The bread basket was complimentary to receive. Not complimentary to keep. Four SOVS."
+  - "Your total is... *brief pause for reaction preparation* ...sixty-four SOVS. For three."
 
 **Chef Visible Through Pass (Jan)**
 - **Role**: Pancake production, background activity, authenticity display
@@ -263,7 +263,7 @@
 
 ### Cross-Location Dependencies
 - **The Tolerance Hostel**: Kitchen discussion "Did you go to the pancake place? Did they explain before you ordered?"
-- **Frietomat**: Bros may compare value "At Frietomat you KNOW what you're getting for €3"
+- **Frietomat**: Bros may compare value "At Frietomat you KNOW what you're getting for 3 SOVS"
 - **Café de Schaamte**: Espresso after pancakes, processing what happened
 - **De Groene Gids**: Pre-pancake visit may affect appetite appreciation (munchies help)
 
@@ -364,14 +364,14 @@ Pancake House contributes to larger system:
 - canal_view_background.png - 1920x256 - Terrace backdrop
 - wooden_beams_ceiling.png - 512x128 - Rustic aesthetic
 - vintage_cheese_posters.png - 192x256 - Dutch advertising
-- heater_terrace.png - 64x128 - €2/hour surprise
+- heater_terrace.png - 64x128 - 2 SOVS/hour surprise
 
 ### Food Sprites (10 PNGs)
 - dutch_pancake_cheese.png - 256x256 - Plate-sized, thin, one piece
 - dutch_pancake_bacon.png - 256x256 - With spek cubes
 - dutch_pancake_apple.png - 256x256 - The actual good one
 - american_style_stack.png - 256x256 - Three small ones, closer
-- syrup_pitcher_small.png - 48x64 - €3 for this
+- syrup_pitcher_small.png - 48x64 - 3 SOVS for this
 - bread_basket_trap.png - 96x96 - Complimentary to receive
 - stroop_container.png - 48x48 - Not maple
 - toppings_array.png - 192x64 - Extra cost visualization
@@ -391,12 +391,12 @@ Pancake House contributes to larger system:
 
 ### UI Elements (6 PNGs)
 - menu_navigation_ui.png - 256x384 - Multi-page selection
-- bill_breakdown_popup.png - 192x256 - Where did €64 come from
+- bill_breakdown_popup.png - 192x256 - Where did 64 SOVS come from
 - expectation_adjustment_status.png - 64x64 - Learning buff icon
-- topping_extra_cost_indicator.png - 128x32 - "+€3" warning
+- topping_extra_cost_indicator.png - 128x32 - "+3 SOVS" warning
 - terrace_heater_fee.png - 96x32 - Hidden charge reveal
 - food_photo_frame.png - 256x192 - Instagram opportunity
 
 ---
 
-*The Pancake House: €18 for a pancake that's basically a crepe, €3 for extra syrup that's basically not maple, and priceless cultural confusion that's basically the point.*
+*The Pancake House: 18 SOVS for a pancake that's basically a crepe, 3 SOVS for extra syrup that's basically not maple, and priceless cultural confusion that's basically the point.*

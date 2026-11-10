@@ -1,7 +1,7 @@
 {
   "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
   "display_name": "Café Sachertorte",
-  "satirical_subtitle": "€18 Per Slice, €340 Per Horse Rampage",
+  "satirical_subtitle": "18 SOVS Per Slice, 340 SOVS Per Horse Rampage",
   "world": "sinfonia",
   "area_zone": "kaffeehaus_row",
   "location_type": "cafe_shop_quest_location",
@@ -95,7 +95,7 @@
   },
   
   "economic_data": {
-    "currency": "euro",
+    "currency": "sovs",
     "price_modifier": {
       "tourist_detection": 1.1,
       "german_order_discount": 0.9,

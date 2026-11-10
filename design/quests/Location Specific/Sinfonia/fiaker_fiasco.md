@@ -84,7 +84,7 @@
 
 *They arrive to find Gustav INSIDE the café, eating from patrons' tables*
 
-**MAÎTRE D':** "This horse is eating the Sachertorte! The €18 Sachertorte!"
+**MAÎTRE D':** "This horse is eating the Sachertorte! The 18 SOVS Sachertorte!"
 
 **Gustav:** *continues eating, makes eye contact, does not care*
 
@@ -105,7 +105,7 @@
 ---
 
 **Chaos Results:**
-- €340 in damages
+- 340 SOVS in damages
 - Café bans all "American horse catchers"
 - Gustav escapes with three Sachertortes
 
@@ -147,7 +147,7 @@
 
 **Chaos Results:**
 - Bros banned from opera house
-- €2,000 in set damages
+- 2,000 SOVS in set damages
 - Gustav now has a cape (stole it from costume department)
 
 ---
@@ -238,7 +238,7 @@
 **Rewards - Path A:**
 - **"Horse Whisperer" Title** - Ability to calm hostile animals
 - **Free Fiaker Ride** - Gustav clearly judging the bros the entire time
-- **€50 reward** from Hans-Jürgen (Hans-Jürgen only had €50)
+- **50 SOVS reward** from Hans-Jürgen (Hans-Jürgen only had 50 SOVS)
 - **"Gustav's Respect" hidden buff** - Gustav appears in final boss, kicks enemy
 - **Café/Opera still banned**
 

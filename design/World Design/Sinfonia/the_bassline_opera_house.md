@@ -20,7 +20,7 @@
   - Day: None (tourists welcome)
   - Night: +2 Bravado OR +2 Charm to bypass bouncer
 - **Item Requirements**: 
-  - Day: Opera Ticket (€45) OR Cultural Pass
+  - Day: Opera Ticket (45 SOVS) OR Cultural Pass
   - Night: VIP Invitation OR Black-Tie Attire equipped
 - **Previous Location Requirements**: None (central hub)
 - **Special Conditions**: Dress code enforced — no flip-flops, cargo shorts, or "ironic" t-shirts

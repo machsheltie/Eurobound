@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 PM - 4 AM (when "trivia" happens)
 - **Stat Requirements**: None to watch; Bravado 30+ to participate
-- **Item Requirements**: €10 "participation fee" OR answer the entry "trivia question"
+- **Item Requirements**: 10 SOVS "participation fee" OR answer the entry "trivia question"
 - **Previous Location Requirements**: Hear about it from NPC at The Blarney Trap or Paddy's Book
 - **Special Conditions**: Must give correct answer to "trivia question" (actually a test of discretion)
 
@@ -162,7 +162,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 ## Gameplay Mechanics
 ### The "Trivia" System
 
-**Entry Fee**: €10 to watch, €20 to participate
+**Entry Fee**: 10 SOVS to watch, 20 SOVS to participate
 **Fight Sign-Up**: Tell Ciaran you want to "answer a question"
 **Matching**: Ciaran matches you based on size and "experience" (how beat up you look)
 
@@ -193,7 +193,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 ### Fight Outcomes
 
 **Victory**:
-- €50 prize (winner's purse)
+- 50 SOVS prize (winner's purse)
 - +30 Bravado
 - "Contender" progress (3 wins = status)
 - Crowd respect, free drinks
@@ -230,25 +230,25 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **The Champion**: "Big" Seamus O'Malley
 - **Title**: "Quiz Champion" (undefeated in 47 "questions")
 - **Stats**: Significantly higher than regular opponents
-- **Reward**: Title, permanent respect, €200 purse, The Champion's Belt (equipment)
+- **Reward**: Title, permanent respect, 200 SOVS purse, The Champion's Belt (equipment)
 
 ### Rumor Trading Post
 
-**Access**: After first fight (win or lose) OR €50 payment
+**Access**: After first fight (win or lose) OR 50 SOVS payment
 **Function**: Buy and sell information
 
 **Available Rumors** (Rotating):
 | Rumor | Price | Content |
 |-------|-------|---------|
-| "Temple Bar Tip" | €20 | Location of rare item in Temple Bar |
-| "Paddy's Fix" | €30 | Which fight is fixed tonight at Paddy's |
-| "Stoutworks Secret" | €25 | Hidden room in brewery dungeon |
-| "Craic Baron's Weakness" | €50 | Hint for city boss fight |
-| "Rival Trio Location" | €15 | Where rivals will be tomorrow |
+| "Temple Bar Tip" | 20 SOVS | Location of rare item in Temple Bar |
+| "Paddy's Fix" | 30 SOVS | Which fight is fixed tonight at Paddy's |
+| "Stoutworks Secret" | 25 SOVS | Hidden room in brewery dungeon |
+| "Craic Baron's Weakness" | 50 SOVS | Hint for city boss fight |
+| "Rival Trio Location" | 15 SOVS | Where rivals will be tomorrow |
 
 **Selling Rumors**:
 - Share information you've learned
-- Payment based on value (€10-40)
+- Payment based on value (10-40 SOVS)
 - Creates economy of secrets
 
 ### Bravado Interactions
@@ -325,7 +325,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **Demeanor**: Businesslike, values information, never shares her own
 - **Dialogue**:
   - "Rumors. Everyone's got them, everyone wants them. What do you need?"
-  - "That information will cost you €30. Or something equally valuable."
+  - "That information will cost you 30 SOVS. Or something equally valuable."
   - "I don't ask where you heard things. Don't ask where I heard them."
 
 ### Fighters (Regular Opponents)

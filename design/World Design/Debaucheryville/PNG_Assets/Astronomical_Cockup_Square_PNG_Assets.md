@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 **Location ID:** `debaucheryville_oldtown_astronomical_cockup_square_01`  
-**Theme:** Tourist trap ecosystem surrounding 600-year-old clock - 38 seconds of show, €300 of scams  
+**Theme:** Tourist trap ecosystem surrounding 600-year-old clock - 38 seconds of show, 300 SOVS of scams  
 **Zone:** Old Town District, Central Tourist Hub  
 **Hours:** 24/7 (clock show hourly during day cycle)
 
@@ -208,7 +208,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Vendor Shirt | (128, 0) | 64x96 | Showing shirt |
 | Vendor Money | (192, 0) | 64x96 | Taking cash |
 | Table Full | (0, 96) | 256x96 | Merchandise |
-| Plate | (256, 96) | 48x48 | €45 clock |
+| Plate | (256, 96) | 48x48 | 45 SOVS clock |
 | T-Shirt | (304, 96) | 48x64 | "I Survived" |
 | Temp Tattoo | (256, 144) | 48x32 | Skeleton |
 | Snow Globe | (304, 144) | 32x48 | Clock inside |
@@ -266,7 +266,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Euro Ink 4 Less | (0, 256) | 192x128 | Tattoo shop |
 | Neon Sign | (0, 384) | 128x64 | Pink flicker |
 | Café Entrance | (192, 256) | 192x128 | Overpriced |
-| Restroom | (384, 256) | 128x128 | €2 entry |
+| Restroom | (384, 256) | 128x128 | 2 SOVS entry |
 | Alley Exit | (512, 256) | 192x128 | To Old Town |
 | Shop Windows | (704, 256) | 128x128 | Generic |
 | Graffiti Tag | (832, 256) | 128x64 | "COCK-UP" |
@@ -352,4 +352,4 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | No Crypto Elements | ✅ PASS |
 | Mobile Optimization | ✅ PASS |
 
-**Astronomical Cock-Up Square delivers the complete tourist trap ecosystem - 38 seconds of show, €300+ of scams, and one life-changing decision to get a skeleton tattoo that turns out to be a duck.**
+**Astronomical Cock-Up Square delivers the complete tourist trap ecosystem - 38 seconds of show, 300 SOVS+ of scams, and one life-changing decision to get a skeleton tattoo that turns out to be a duck.**

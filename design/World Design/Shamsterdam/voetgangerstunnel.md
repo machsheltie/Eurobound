@@ -33,7 +33,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ## Access & Requirements
 
 ### Entry Points
-- **Primary**: Central Shamsterdam Bike Crossing (south sidewalk, after 10 successful crossings OR €15 from Bike Rental Guy)
+- **Primary**: Central Shamsterdam Bike Crossing (south sidewalk, after 10 successful crossings OR 15 SOVS from Bike Rental Guy)
 - **Secondary**: Museum Mile underground parking
 - **Tertiary**: Central Station basement level
 - **Hidden**: Behind Frietomat (requires interaction)
@@ -133,7 +133,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 | "Space Cake Gamble" status | -30% accuracy, random teleportation |
 | "Canal Confusion" debuff | -25% accuracy |
 | Map item equipped | +15% accuracy |
-| Local Guide NPC | +40% accuracy (but costs €10) |
+| Local Guide NPC | +40% accuracy (but costs 10 SOVS) |
 | Previous successful navigation | +5% cumulative (memory) |
 
 ### Wrong Turn Consequences
@@ -200,8 +200,8 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Services**:
 - Directions: Free (unhelpful)
-- "Correct" Directions: €5 (slightly less unhelpful)
-- Escort: €10 (actually works, but he walks very slowly)
+- "Correct" Directions: 5 SOVS (slightly less unhelpful)
+- Escort: 10 SOVS (actually works, but he walks very slowly)
 
 ---
 
@@ -227,17 +227,17 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Dialogue**:
 - *Greeting*: "Lost already? You just got down here."
-- *Selling map*: "€8 for the map. It's the only accurate one in the city. Yes, really."
+- *Selling map*: "8 SOVS for the map. It's the only accurate one in the city. Yes, really."
 - *Warning*: "The blue tiles go to the station. The orange go to... places."
 - *About Red Light exit*: "Exit 7? That's the quick one. Very... scenic."
 
 **Services**:
 | Item | Cost | Effect |
 |------|------|--------|
-| Tunnel Map | €8 | +15% navigation accuracy, shows actual layout |
-| Tourist Map (Surface) | €5 | Useless underground |
-| "I Survived the Tunnel" Badge | €3 | Cosmetic only |
-| Flashlight | €6 | Reveals hidden graffiti hints |
+| Tunnel Map | 8 SOVS | +15% navigation accuracy, shows actual layout |
+| Tourist Map (Surface) | 5 SOVS | Useless underground |
+| "I Survived the Tunnel" Badge | 3 SOVS | Cosmetic only |
+| Flashlight | 6 SOVS | Reveals hidden graffiti hints |
 
 ---
 
@@ -251,7 +251,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Appearance**:
 - Ancient accordion
-- Hat with exactly €2.47 in it (never changes)
+- Hat with exactly 2.47 SOVS in it (never changes)
 - Clothing from indeterminate decade
 - May or may not be a ghost
 
@@ -263,8 +263,8 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Dialogue**:
 - *Unprompted*: (Plays accordion, ignores you)
-- *If tipped €1*: "Follow the sound of the tram. It knows the way."
-- *If tipped €5*: "The red signs lie. The emergency signs tell truth."
+- *If tipped 1 SOVS*: "Follow the sound of the tram. It knows the way."
+- *If tipped 5 SOVS*: "The red signs lie. The emergency signs tell truth."
 - *About himself*: "I've been here since... hmm. What year is it?"
 
 **Function**:
@@ -362,9 +362,9 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Busker Tip Jar**
 - **Type**: Service / Hint System
-- **€1 Tip**: Basic hint
-- **€5 Tip**: Reliable navigation advice
-- **€0 (theft attempt)**: Willem stops playing, stares at you
+- **1 SOVS Tip**: Basic hint
+- **5 SOVS Tip**: Reliable navigation advice
+- **0 SOVS (theft attempt)**: Willem stops playing, stares at you
 
 **Frietomat Hidden Entrance**
 - **Type**: Secret Shortcut
@@ -476,7 +476,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Quest ID**: `shamsterdam_quest_eternal_busker`
 
-**Trigger**: Tip Willem €5 three separate visits
+**Trigger**: Tip Willem 5 SOVS three separate visits
 
 **Sequence**:
 1. First tip: Navigation hint
@@ -537,11 +537,11 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ### Services
 | Service | Provider | Cost | Effect |
 |---------|----------|------|--------|
-| Tunnel Map | Marloes | €8 | +15% navigation |
-| Guided Walk | Henk | €10 | Guaranteed correct (slow) |
-| Flashlight | Marloes | €6 | Reveals graffiti hints |
-| "Correct" Directions | Henk | €5 | Slightly better odds |
-| Willem Tip | Willem | €1-5 | Navigation hints |
+| Tunnel Map | Marloes | 8 SOVS | +15% navigation |
+| Guided Walk | Henk | 10 SOVS | Guaranteed correct (slow) |
+| Flashlight | Marloes | 6 SOVS | Reveals graffiti hints |
+| "Correct" Directions | Henk | 5 SOVS | Slightly better odds |
+| Willem Tip | Willem | 1-5 SOVS | Navigation hints |
 
 ### Found Items
 - **Lost Tourist Belongings**: Random items dropped by confused tourists
@@ -624,7 +624,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ### Crypto Warning
 - [x] NO crypto elements at this location
 - [x] Focus on navigation/confusion satire
-- [x] All transactions in Euros
+- [x] All transactions in SOVS
 
 ---
 

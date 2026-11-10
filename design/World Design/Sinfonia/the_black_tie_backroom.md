@@ -23,7 +23,7 @@
   - Backstage labyrinth exit (The Bassline Opera House)
   - OR hint from Café Existenz regulars
   - OR overheard gossip from Kaffeehaus Row
-- **Special Conditions**: Gold minimum of €500 to enter (they "hold" it as collateral)
+- **Special Conditions**: Gold minimum of 500 SOVS to enter (they "hold" it as collateral)
 
 ### The Hidden Entrance
 The Backroom's entrance is a layered secret:
@@ -38,7 +38,7 @@ The Backroom's entrance is a layered secret:
 - **Failure States**: 
   - "Cleaned Out" — lose all gold, ejected with Embarrassed status
   - "Banned" — cheat and get caught, 24-hour lockout
-- **Progressive Unlocks**: "High Roller" status after winning €1000+ total (better tables)
+- **Progressive Unlocks**: "High Roller" status after winning 1000 SOVS+ total (better tables)
 
 ## Visual Design
 ### The Hidden Entrance
@@ -153,7 +153,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 - **Narrator**: *Gregory understood exactly.*
 
 **The Cleanup**:
-- **Chadwick**: "How did we... we had €500... where did..."
+- **Chadwick**: "How did we... we had 500 SOVS... where did..."
 - **Doorman**: "Thank you for visiting. Please return when you've... recovered."
 
 ## Gameplay Mechanics
@@ -161,7 +161,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 ### The House Edge System
 
 **Gold Economy**:
-- Minimum €500 gold to enter (held as collateral)
+- Minimum 500 SOVS gold to enter (held as collateral)
 - All games use house chips (no gold directly)
 - Chips convert back to gold at exit (minus "handling fee")
 - House edge varies by game and table
@@ -187,18 +187,18 @@ The house is systematically extracting their gold while they feel sophisticated.
 **The Nervous Noble** (Easy)
 - **Tell**: Adjusts cufflinks when bluffing
 - **Pattern**: Folds to aggression, overplays strong hands
-- **Bankroll**: €200 (small wins)
+- **Bankroll**: 200 SOVS (small wins)
 
 **The Silent Countess** (Medium)
 - **Tell**: Sips champagne more frequently when strong
 - **Pattern**: Calculated, occasional bluffs, exploits weakness
-- **Bankroll**: €500 (moderate wins)
+- **Bankroll**: 500 SOVS (moderate wins)
 
 **The Card Shark** (Hard)
 - **Name**: Herr Falsch ("Mr. False")
 - **Tell**: None apparent (actually has one: breathes slower when bluffing)
 - **Pattern**: Adapts to player style, varies play
-- **Bankroll**: €1000+ (major wins possible)
+- **Bankroll**: 1000 SOVS+ (major wins possible)
 - **Special**: Defeating him unlocks "Shark Fin" accessory
 
 **The House Dealer** (Unbeatable Long-Term)
@@ -240,7 +240,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 **Cheat Options** (require items or skills):
 - **Marked Cards**: +15% win rate, caught on nat 1 (5% chance per hand)
 - **Sleeve Ace**: Auto-win one hand, caught if used twice in session
-- **Chip Palming**: Steal €50/attempt, caught on visible tells
+- **Chip Palming**: Steal 50 SOVS/attempt, caught on visible tells
 - **Partner Signals**: With party member at same table, share information
 
 **Getting Caught**:
@@ -251,7 +251,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 ### The Card Shark Boss Fight
 
 **Alternative to Gambling**:
-If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating, they can challenge him directly.
+If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheating, they can challenge him directly.
 
 **Boss Profile — Herr Falsch**:
 - **Title**: The House's Secret Weapon
@@ -267,7 +267,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
   - "The River": Changing arena hazard (cards flip tiles)
   - "Ace Up His Sleeve": Interrupt attack when below 25% HP
 - **Weakness**: Exposing his cheating during fight reduces his stats
-- **Victory**: His entire chip stash (€2000), "Shark Fin" accessory, "Card Counter" achievement
+- **Victory**: His entire chip stash (2000 SOVS), "Shark Fin" accessory, "Card Counter" achievement
 
 ### Couchsurfing Integration
 **Host**: "The Reformed Gambler" — Siegfried, runs the coat check
@@ -275,7 +275,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 **Meeting Requirements**:
 - Win at least once
 - Lose at least once (he relates to the struggle)
-- Tip him personally (€20)
+- Tip him personally (20 SOVS)
 
 **Stay Details**:
 - Sleep in his tiny apartment above the club
@@ -283,13 +283,13 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - Wake to him preaching the dangers of gambling (while ironing your tuxedo)
 
 **Morning Scene**:
-- He lost €50,000 over 10 years
+- He lost 50,000 SOVS over 10 years
 - Now works coat check to "stay close to what he can't have"
 - Offers genuine advice: "The only winning move is not to play. But we both know you'll play anyway."
 
 **Stay Effects**:
 - "Gambler's Insight": See one hidden card per game for next session
-- -€50 (he "borrowed" it — can't help himself)
+- -50 SOVS (he "borrowed" it — can't help himself)
 - Permanent 5% reduction in house edge (knows their tricks)
 
 ### Selfie Spot Integration
@@ -302,7 +302,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - Caption: "High Roller Status"
 
 **"The Winner"** Variant:
-- After significant win (€500+)
+- After significant win (500 SOVS+)
 - Actual chips visible
 - Defeated opponent in background (if applicable)
 - Caption: "The House Doesn't ALWAYS Win"
@@ -347,12 +347,12 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - **Appearance**: Perfect poker face, speaks only in bets
 - **Personality**: Communicates through play, unsettling composure
 - **Function**: Skill check opponent, challenging but fair
-- **Dialogue**: *Sips champagne. Raises €100. No other communication necessary.*
+- **Dialogue**: *Sips champagne. Raises 100 SOVS. No other communication necessary.*
 
 ### Bros' Black-Tie Backroom Reactions
 
 **At the Door**:
-- **Lord Pilsner**: "€500 COLLATERAL?! That's... that's a lot of döner."
+- **Lord Pilsner**: "500 SOVS COLLATERAL?! That's... that's a lot of döner."
 - **Viktor**: "It's also the minimum. Döner is not accepted."
 - **Chadwick**: "We're COMMITTED now! This is CONTENT! 'Chadwick Gambles with the ELITE'!"
 
@@ -383,7 +383,7 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 
 ### Quest Integration
 - **"The Black-Tie Backroom"**: Discovery quest (from city description)
-- **"High Stakes"**: Win €1000+ total for High Roller status
+- **"High Stakes"**: Win 1000 SOVS+ total for High Roller status
 - **"The Card Shark"**: Discover and defeat Herr Falsch
 - **"The Reformed Gambler"**: Siegfried's backstory questline
 - **"Baroness' Vault"**: Access after defeating Maestro Vice von Strauss (late-game)
@@ -502,11 +502,11 @@ If players lose repeatedly (€1000+ total) OR discover Herr Falsch is cheating,
 - high_roller_badge.png - 48x48 - Status indicator
 - shark_fin.png - 32x48 - Boss reward accessory
 - marked_cards.png - 48x64 - Cheat item
-- collateral_receipt.png - 48x32 - €500 deposit
+- collateral_receipt.png - 48x32 - 500 SOVS deposit
 - members_card.png - 48x32 - Access item
 - tell_indicator.png - 32x32 - NPC weakness hint
 - cleaned_out_stamp.png - 64x64 - Failure badge
 
 ---
 
-*The Black-Tie Backroom: Where the elite lose fortunes with dignity, the drinks are "complimentary" (they're not), and the house always wins (unless you literally fight the card shark). Dress code: Black tie. Minimum buy-in: €500. Minimum wisdom required: More than you probably have. The cards are waiting. The odds are not in your favor. Welcome.*
+*The Black-Tie Backroom: Where the elite lose fortunes with dignity, the drinks are "complimentary" (they're not), and the house always wins (unless you literally fight the card shark). Dress code: Black tie. Minimum buy-in: 500 SOVS. Minimum wisdom required: More than you probably have. The cards are waiting. The odds are not in your favor. Welcome.*

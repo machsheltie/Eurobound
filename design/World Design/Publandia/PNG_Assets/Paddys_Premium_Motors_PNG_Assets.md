@@ -68,7 +68,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 |------|----------|------|-------------|
 | Insurance Sign | (256, 160) | 64x32 | "INSURANCE RECOMMENDED" |
 | Cloverleaf Sign | (320, 160) | 64x32 | "NOT LIABLE FOR CLOVERLEAF" |
-| GPS Sign | (384, 160) | 64x32 | "GPS AVAILABLE €20" |
+| GPS Sign | (384, 160) | 64x32 | "GPS AVAILABLE 20 SOVS" |
 | Fine Print | (256, 192) | 128x32 | Illegibly small warnings |
 
 ---
@@ -309,7 +309,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 |---------|----------|------|-------------|
 | Menu Frame | (0, 0) | 192x128 | Rental selection box |
 | Vehicle Icons | (192, 0) | 64x128 | 4 car silhouettes |
-| Price Tags | (0, 128) | 128x32 | €45, €60, €80, €120 |
+| Price Tags | (0, 128) | 128x32 | 45 SOVS, 60 SOVS, 80 SOVS, 120 SOVS |
 | Add-On Icons | (128, 128) | 64x32 | GPS, Insurance, Map, Rosary |
 
 ### Transaction UI:

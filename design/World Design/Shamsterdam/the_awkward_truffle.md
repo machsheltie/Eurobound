@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 9 PM (extended tourist hours)
 - **Stat Requirements**: None (chocolate is universal, embarrassment is optional)
-- **Item Requirements**: Gold for purchases (€5-40), ability to say "it's for a friend" with straight face
+- **Item Requirements**: Gold for purchases (5-40 SOVS), ability to say "it's for a friend" with straight face
 - **Previous Location Requirements**: None (the chocolate draws all)
 - **Special Conditions**: Shop is small; bachelor/bachelorette parties may cause congestion
 
@@ -116,7 +116,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 - **Sensitivity Considerations**: Body-positive framing, equal representation, chocolate > shame
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Selling €15 worth of chocolate for €35 because of the shape
+- **Primary Vice**: Selling 15 SOVS worth of chocolate for 35 SOVS because of the shape
 - **City-Specific Comedy Operations**: Amsterdam's openness enables the market, tourist awkwardness funds it
 - **Buffoon Exploitation**: Bros buying "for the bachelor party" (someone always eats theirs privately)
 - **Comedy of Errors**: The transition from "I'm just looking" to "I'll take two of the detailed ones"
@@ -150,17 +150,17 @@ The shop's layout — respectable front, transitional middle, committed back —
 ### Product Inventory
 | Item | Price | Category | Chocolate Type | Notes |
 |------|-------|----------|----------------|-------|
-| Classic Truffle Box (6) | €12 | Normal | Assorted | "For when you're with family" |
-| Abstract "Art" Piece | €8 | Suggestive | Dark | "It's open to interpretation" |
-| The Male Classic | €15 | Anatomical | Milk | "Our bestseller. Obviously." |
-| The Male Detailed | €25 | Anatomical | Belgian Dark | "For the discerning customer" |
-| The Female Classic | €15 | Anatomical | White | "Equal opportunity awkwardness" |
-| The Female Detailed | €25 | Anatomical | Belgian Dark | "Craftsmanship respects no gender" |
-| The Couples' Set | €35 | Paired | Assorted | "For someone special. Somehow." |
-| Bachelor Party Platter | €50 | Bulk | Mixed | "Make it weird for 8-12 people" |
-| Bachelorette Party Platter | €50 | Bulk | Mixed | "Matching energy, different shapes" |
-| The Full Collection | €120 | Complete | All Types | "You're committed. We respect that." |
-| Custom Commission | €75+ | Bespoke | Your Choice | "We've made stranger. We don't judge." |
+| Classic Truffle Box (6) | 12 SOVS | Normal | Assorted | "For when you're with family" |
+| Abstract "Art" Piece | 8 SOVS | Suggestive | Dark | "It's open to interpretation" |
+| The Male Classic | 15 SOVS | Anatomical | Milk | "Our bestseller. Obviously." |
+| The Male Detailed | 25 SOVS | Anatomical | Belgian Dark | "For the discerning customer" |
+| The Female Classic | 15 SOVS | Anatomical | White | "Equal opportunity awkwardness" |
+| The Female Detailed | 25 SOVS | Anatomical | Belgian Dark | "Craftsmanship respects no gender" |
+| The Couples' Set | 35 SOVS | Paired | Assorted | "For someone special. Somehow." |
+| Bachelor Party Platter | 50 SOVS | Bulk | Mixed | "Make it weird for 8-12 people" |
+| Bachelorette Party Platter | 50 SOVS | Bulk | Mixed | "Matching energy, different shapes" |
+| The Full Collection | 120 SOVS | Complete | All Types | "You're committed. We respect that." |
+| Custom Commission | 75 SOVS+ | Bespoke | Your Choice | "We've made stranger. We don't judge." |
 
 ### The "Eating It Later" Mechanic
 - **Anatomical Chocolate Consumable**: Can be eaten for HP restoration
@@ -185,10 +185,10 @@ The shop's layout — respectable front, transitional middle, committed back —
 | Style | Price | Description | Implications |
 |-------|-------|-------------|--------------|
 | Standard | Free | Brown paper bag | Efficiency, shame-adjacent |
-| Discreet | €3 | Plain box, no indication | Secret-keeping |
-| Festive | €5 | Ribbon, tasteful | "It's a present! A legitimate present!" |
-| Bold | €5 | Transparent, proud | "I know what I bought. What of it." |
-| Bachelor/ette Special | €8 | Full party regalia | "Everyone will know immediately" |
+| Discreet | 3 SOVS | Plain box, no indication | Secret-keeping |
+| Festive | 5 SOVS | Ribbon, tasteful | "It's a present! A legitimate present!" |
+| Bold | 5 SOVS | Transparent, proud | "I know what I bought. What of it." |
+| Bachelor/ette Special | 8 SOVS | Full party regalia | "Everyone will know immediately" |
 
 ### Bravado Interactions
 - **Gain Bravado**: Purchase from Zone 3 without visible hesitation, request gift wrapping with eye contact, ask for "recommendations"
@@ -196,7 +196,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 - **Group Dynamics**: Bachelor parties gain collective Bravado immunity (safety in numbers)
 
 ### The "Full Collection" Achievement
-- **Requirement**: Purchase complete set (€120)
+- **Requirement**: Purchase complete set (120 SOVS)
 - **Reward**: "Truffle Collector" title, staff recognize you as "committed"
 - **Inventory Impact**: Significant chocolate inventory, conversation starters
 - **The Question**: "Are you going to... eat all of those?"
@@ -275,7 +275,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 **Sophie's Chocolate Philosophy (Extended):**
 - "In Brussels, they said anatomical chocolate was beneath the craft. I said: chocolate is craft. Shape is market."
 - "I make traditional pralines for Christmas. I make anatomical for tourists. Both require the same skill."
-- "The detailed versions sell for €25 because they take three hours. The shape is irrelevant to the labor."
+- "The detailed versions sell for 25 SOVS because they take three hours. The shape is irrelevant to the labor."
 - "Every chocolatier has their specialty. Mine found me. I've made peace with it. And money."
 - "My grandmother would be... surprised. But also proud of the technique. Possibly."
 

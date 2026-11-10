@@ -130,7 +130,7 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 
 **During the escort**:
 > *(Twenty seconds of walking.)* "Nice down here in the winter. Same temperature all year."
-> *(Forty seconds.)* "That advert has been there since before the euro. I have read it perhaps nine thousand times. It is for a lawyer."
+> *(Forty seconds.)* "That advert has been there since before Sovs. I have read it perhaps nine thousand times. It is for a lawyer."
 > *(At the correct exit.)* "There. Centraal Station." *(He is entirely right. He has been entirely right the whole way.)* "You want to go back? Another ten Sovs."
 
 **Player asks why the escort works when the directions don't**:
@@ -188,7 +188,7 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 | Directions | Free | Approximately zero | Random corridor pointed at with total conviction. No accuracy bonus. |
 | "Correct" Directions | 5 Sovs | Approximately 0.50 Sovs | +10% navigation accuracy this decision. Still likely wrong. |
 | Guided Walk (Escort) | 10 Sovs | 10 Sovs, honestly | **Guaranteed correct exit.** Bypasses the probability resolver entirely. Costs 5 minutes real time. |
-| Conversation | Free | Genuinely pleasant | Three lore lines about the tunnel's construction and the pre-euro adverts |
+| Conversation | Free | Genuinely pleasant | Three lore lines about the tunnel's construction and the pre-Sovs adverts |
 
 ### Hidden Details / Easter Eggs
 - **The crossword**: Examine it across multiple visits. Four answers filled in on visit one; four answers filled in on visit forty. Two of the four are wrong. The newspaper is dated but the date is illegible.

@@ -190,7 +190,7 @@
         "sequence": [
           {"action": "gold_subtract", "amount": 5},
           {"action": "henk_considers"},
-          {"action": "dialogue", "text": "Okay, for five euro, I give you the REAL directions. This way. Maybe."},
+          {"action": "dialogue", "text": "Okay, for five SOVS, I give you the REAL directions. This way. Maybe."},
           {"action": "navigation_effect", "accuracy_bonus": 0.10}
         ]
       },
@@ -199,7 +199,7 @@
         "sequence": [
           {"action": "gold_subtract", "amount": 10},
           {"action": "henk_stands_slowly"},
-          {"action": "dialogue", "text": "For ten euro, I walk you there myself. But I walk slow. Very slow."},
+          {"action": "dialogue", "text": "For ten SOVS, I walk you there myself. But I walk slow. Very slow."},
           {"action": "escort_begin", "speed": "very_slow", "guaranteed": true}
         ]
       }
@@ -211,7 +211,7 @@
         "sequence": [
           {"action": "gold_subtract", "amount": 8},
           {"action": "item_grant", "item": "tunnel_map_accurate"},
-          {"action": "dialogue", "text": "€8 for the map. It's the only accurate one in the city. Yes, really."},
+          {"action": "dialogue", "text": "8 SOVS for the map. It's the only accurate one in the city. Yes, really."},
           {"action": "navigation_effect", "accuracy_bonus": 0.15}
         ]
       },

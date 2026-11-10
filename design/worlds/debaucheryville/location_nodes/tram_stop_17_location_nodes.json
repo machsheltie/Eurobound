@@ -206,7 +206,7 @@
     },
     "tour_guide": {
       "location": "astronomical_cockup_square",
-      "dialogue": "And on your left, you'll see Jiří's Bench. He's been waiting since before the euro.",
+      "dialogue": "And on your left, you'll see Jiří's Bench. He's been waiting since before Sovs.",
       "trigger": "visit_count >= 13"
     }
   },

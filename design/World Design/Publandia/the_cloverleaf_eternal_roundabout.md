@@ -252,11 +252,11 @@
 **Menu**:
 | Item | Price | Effect |
 |------|-------|--------|
-| Roundabout Roll | €8 | Restores 20 HP |
-| Exit Anxiety Easer (whiskey) | €12 | -Stress, +Confused |
-| Cloverleaf Curry | €15 | Restores 40 HP, +Speed |
-| Margaret's Memorial Sandwich | €10 | +HP, Patrick appears misty-eyed |
-| Tourist Trap Platter | €25 | Full heal, -Gold |
+| Roundabout Roll | 8 SOVS | Restores 20 HP |
+| Exit Anxiety Easer (whiskey) | 12 SOVS | -Stress, +Confused |
+| Cloverleaf Curry | 15 SOVS | Restores 40 HP, +Speed |
+| Margaret's Memorial Sandwich | 10 SOVS | +HP, Patrick appears misty-eyed |
+| Tourist Trap Platter | 25 SOVS | Full heal, -Gold |
 
 **Key Dialogue**:
 > "The trick is never running out of petrol. I've got a deal with the lorry that circles Wednesdays."
@@ -774,7 +774,7 @@
 
 ### Prerequisites
 - Arrive in Publandia (main story)
-- Have enough gold for car rental (€200+)
+- Have enough gold for car rental (200 SOVS+)
 - Complete Paddy's Premium Motors rental sequence
 
 ### Unlocks

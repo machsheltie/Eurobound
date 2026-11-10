@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 10 PM (extended tourist confusion hours)
 - **Stat Requirements**: None (understanding of international drug law not required, also not provided)
-- **Item Requirements**: Gold for purchases (€10-75), destination country's customs regulations (not consulted)
+- **Item Requirements**: Gold for purchases (10-75 SOVS), destination country's customs regulations (not consulted)
 - **Previous Location Requirements**: None (the confusion is accessible to all)
 - **Special Conditions**: Shop is NOT a coffeeshop, this distinction matters, tourists don't understand why
 
@@ -156,19 +156,19 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 ### Product Inventory
 | Item | Price | Category | NL Legal | Export Risk | Description |
 |------|-------|----------|----------|-------------|-------------|
-| Hemp Tote Bag | €15 | Clothing | 100% | None | Actually just a bag |
-| Hemp Rope Bracelet | €12 | Accessory | 100% | None | Cannabis-free cannabis plant |
-| CBD Oil 5% | €30 | Wellness | 100% | Low-Medium | "Check your local laws" |
-| CBD Oil 15% | €55 | Wellness | 100% | Medium | "Seriously, check them" |
-| CBD Gummies | €25 | Edible | 100% | Medium | "Some countries are weird about gummies" |
-| Hemp Protein Powder | €35 | Food | 100% | Low | Actual nutrition product |
-| "Tobacco" Grinder | €20 | Accessory | 100% | Low | For tobacco. Obviously. |
-| "Tobacco" Pipe | €25 | Accessory | 100% | Low-Medium | Design-dependent risk |
-| Rolling Papers (Branded) | €8 | Accessory | 100% | Very Low | Paper is legal everywhere |
-| Souvenir Seed Pack | €40 | Seeds | 100%* | HIGH | *Not for germination |
-| Premium Strain Seeds | €65 | Seeds | 100%* | VERY HIGH | *Definitely not for germination |
-| Space Cake Mix | €20 | "Food" | 100% | High | "Just add... nothing illegal" |
-| Leaf-Shaped Everything | €10-30 | Novelty | 100% | Embarrassment | Declaring your tourist status |
+| Hemp Tote Bag | 15 SOVS | Clothing | 100% | None | Actually just a bag |
+| Hemp Rope Bracelet | 12 SOVS | Accessory | 100% | None | Cannabis-free cannabis plant |
+| CBD Oil 5% | 30 SOVS | Wellness | 100% | Low-Medium | "Check your local laws" |
+| CBD Oil 15% | 55 SOVS | Wellness | 100% | Medium | "Seriously, check them" |
+| CBD Gummies | 25 SOVS | Edible | 100% | Medium | "Some countries are weird about gummies" |
+| Hemp Protein Powder | 35 SOVS | Food | 100% | Low | Actual nutrition product |
+| "Tobacco" Grinder | 20 SOVS | Accessory | 100% | Low | For tobacco. Obviously. |
+| "Tobacco" Pipe | 25 SOVS | Accessory | 100% | Low-Medium | Design-dependent risk |
+| Rolling Papers (Branded) | 8 SOVS | Accessory | 100% | Very Low | Paper is legal everywhere |
+| Souvenir Seed Pack | 40 SOVS | Seeds | 100%* | HIGH | *Not for germination |
+| Premium Strain Seeds | 65 SOVS | Seeds | 100%* | VERY HIGH | *Definitely not for germination |
+| Space Cake Mix | 20 SOVS | "Food" | 100% | High | "Just add... nothing illegal" |
+| Leaf-Shaped Everything | 10-30 SOVS | Novelty | 100% | Embarrassment | Declaring your tourist status |
 
 ### The "Is This Legal?" Interaction
 **Trigger**: Ask staff about any product's legality
