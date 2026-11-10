@@ -487,3 +487,7 @@ Open question: should it, and to what depth?
 - **Image-tool allowance (author, 2026-11-10):** to fix the hall's last see-through spots, use
   ChatGPT's image generator; failing that, **one** Seedream 5.5 layer decomposition on
   AtlasCloud. AtlasCloud charges per image: use it for nothing else.
+- **(Round v21, 2026-11-10)** Venue renames: FEBO Automat -> **Frietomat** (author: Dutch
+  "friet" plus Frito); Brouwerij de Molen -> **The Wobbly Windmill Brewery**. Standing
+  permission to use ChatGPT's image generator, including downloading its results, for any art
+  task.
