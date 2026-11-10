@@ -32,7 +32,7 @@
           "claimed_destination": "museum_mile",
           "actual_probability": {
             "museum_mile": 0.50,
-            "febo_automat": 0.30,
+            "frietomat": 0.30,
             "canal_surface": 0.20
           }
         }
@@ -171,21 +171,21 @@
     
     "hidden_passages": [
       {
-        "object_id": "febo_hidden_entrance",
+        "object_id": "frietomat_hidden_entrance",
         "type": "secret_shortcut",
         "display_name": "Suspicious Heating Vent",
-        "description": "A large heating vent behind the FEBO automat. It seems... accessible.",
+        "description": "A large heating vent behind the Frietomat. It seems... accessible.",
         "discovery_conditions": [
-          "febo_regular_status",
+          "frietomat_regular_status",
           "overheard_hint_from_npc",
           "flashlight_reveals_scratches"
         ],
         "interaction": {
           "type": "crawl_through",
-          "leads_to": "shamsterdam_febo_automat_01",
+          "leads_to": "shamsterdam_frietomat_01",
           "atmosphere": "3am_vibes_regardless_of_time"
         },
-        "quest": "febo_shortcut_discovery"
+        "quest": "frietomat_shortcut_discovery"
       }
     ],
     

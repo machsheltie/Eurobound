@@ -1,10 +1,10 @@
-# Brouwerij de Molen (The Windmill Brewery)
+# The Wobbly Windmill Brewery
 
 *Where Dutch tradition meets tourist disorientation — craft beer in a spinning building that may or may not be causing your dizziness*
 
 ## Location Identity
-- **Location ID**: shamsterdam_countryside_brouwerij_molen_01
-- **Display Name**: Brouwerij de Molen
+- **Location ID**: shamsterdam_countryside_wobbly_windmill_brewery_01
+- **Display Name**: The Wobbly Windmill Brewery
 - **English Translation**: "The Windmill Brewery"
 - **Satirical Subtitle**: "Respect The Grain. Fear The Spin."
 - **World Location**: Shamsterdam
@@ -21,7 +21,7 @@
 
 ### Bottle Opener Requirement
 - **Prerequisite**: The Blarney Trap Bottle Opener (Publandia) — required for brewery tour access
-- **Location-Specific Opener**: Brouwerij de Molen Bottle Opener
+- **Location-Specific Opener**: The Wobbly Windmill Brewery Bottle Opener
 - **Design**: Miniature windmill with rotating blade arms, bottle opener integrated into the windmill base
 - **Material**: Brushed copper with grain-gold accents
 - **Inscription**: "Respect The Grain"
@@ -48,7 +48,7 @@
 - **Structure**: Actual working windmill (circa 1680), converted to brewery (circa 2008), Instagram magnet (circa always)
 - **Entrance**: Heavy wooden door at windmill base, "BROUWERIJ" carved above, modern accessibility ramp (EU requirement)
 - **Signage**: 
-  - Traditional painted: "BROUWERIJ DE MOLEN — Est. 1680 / 2008"
+  - Traditional painted: "THE WOBBLY WINDMILL BREWERY — Est. 1680 / 2008"
   - Modern addition: "CRAFT BEER TOURS — TASTING FLIGHTS — GIFT SHOP"
   - Warning sign: "WINDMILL OPERATIONAL — BLADES ROTATE — WATCH HEAD"
   - Smaller sign: "The spinning is intentional. The dizziness is not our fault."
@@ -65,7 +65,7 @@
   - Coat hooks (for the tasting flight aftermath)
   - Branded merchandise: EVERYTHING
 - **The Gift Shop Section**:
-  - "Molen" branded glasses, 18 Sovs (the beer is 6 Sovs)
+  - "Wobbly Windmill" branded glasses, 18 Sovs (the beer is 6 Sovs)
   - Miniature windmill souvenirs, 25 Sovs (made overseas, painted here)
   - Brewmaster's book: "Respect The Grain" 35 Sovs (self-published, unreadable)
   - T-shirts: "I SURVIVED THE SPIN" 30 Sovs (they know)
@@ -264,7 +264,7 @@
 - **Background**: Third-generation windmill operator, converted to brewing in 2008, takes this VERY seriously
 - **Demeanor**: Passionate beyond reason, treats grain like family, disappointed in everyone who doesn't get it
 - **Dialogue**:
-  - "Welcome to Brouwerij de Molen. For 350 years, this windmill has served the people. For 15 years, it has served the GRAIN."
+  - "Welcome to The Wobbly Windmill Brewery. For 350 years, this windmill has served the people. For 15 years, it has served the GRAIN."
   - "You feel the floor moving? That is HISTORY. That is the grain becoming BEER. Respect it."
   - "The tasting flight is not a race. It is a JOURNEY. Each beer builds on the last. Do not disrespect the order."
   - "The windmill turns, the grain grinds, the beer brews. This is the cycle. You are now PART of the cycle."
@@ -472,8 +472,8 @@
 - spin_meter.png - 96x128 - Disorientation accumulation
 - selfie_timing_game.png - 256x192 - Blade position mini-game
 - tour_progress_stamp.png - 64x64 - Stamp design
-- bottle_opener_brouwerij_molen.png - 48x48 - Windmill with rotating blades
-- bottle_opener_molen_spin.png - 48x48x4 - Blade rotation animation
+- bottle_opener_wobbly_windmill_brewery.png - 48x48 - Windmill with rotating blades
+- bottle_opener_wobbly_windmill_spin.png - 48x48x4 - Blade rotation animation
 - windmill_wit_item.png - 48x64 - Consumable icon
 - yeast_slayer_title.png - 128x32 - Boss defeat badge
 - room_spin_overlay.png - 1920x1080 - Tasting room effect
@@ -481,4 +481,4 @@
 
 ---
 
-*Brouwerij de Molen: 25 Sovs to get dizzy in a spinning building while someone lectures you about grain, fight bread, and take a photo you'll describe as "worth it" for unclear reasons.*
+*The Wobbly Windmill Brewery: 25 Sovs to get dizzy in a spinning building while someone lectures you about grain, fight bread, and take a photo you'll describe as "worth it" for unclear reasons.*

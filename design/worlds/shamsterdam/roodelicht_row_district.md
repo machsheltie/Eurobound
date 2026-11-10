@@ -555,7 +555,7 @@ A hatch in a wall with a heat lamp and a queue at every hour after midnight. Dir
 
 **Cascade stage 10 [BODY] — 03:20**: all three order the Dubbele Vinger. **All three sit down.** Bradley reads the notice aloud, in full, as a joke, then says "I've got a stomach of iron." He is the fifteenth. The tray folds. Applies **Fried At Three**, a two-hour delayed effect that has been carefully timed to land at the same moment as The Fuse.
 
-*Cross-ref the city's other greasy-food fixtures — `leemans_doner_palace.md`, `kapsalon_koning.md`, `febo_automat.md`. **Stacking rule: eating at more than one of these in a single night compounds Fried At Three.** The bros will eat at three of them.*
+*Cross-ref the city's other greasy-food fixtures — `leemans_doner_palace.md`, `kapsalon_koning.md`, `frietomat.md`. **Stacking rule: eating at more than one of these in a single night compounds Fried At Three.** The bros will eat at three of them.*
 
 ### 10. Het Warme Bad ("The Warm Bath")
 **Zone 1, far end | Members venue | Cascade stage 11 | The last column of the list**
@@ -650,7 +650,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 | **Venustempel** | `venustempel.md` — **DO NOT EDIT** | **Relocated to Museum Mile (2011)** | Referenced only as departed: a papered-over Zone 1 frontage, sun-bleached `WIJ ZIJN VERHUISD →`, arrow pointing the wrong way. Do not edit `venustempel.md`, `PNG_Assets/Venustempel_PNG_Assets.md`, or anything under `npcs/Venustempel/`. |
 | **Voetgangerstunnel, Exit 7** | `voetgangerstunnel.md` | Zone 1, mid-corridor | 35% wrong-exit emergence directly into the corridor. **Mevrouw Jansen** already authored above it. |
 | **Veilig-o-Maat machines (11)** | `shamsterdam_condom_machines.md` | All zones | Highest density in the city. Ilse restocks at 21:40 mid-corridor without deviating from her route by a metre. |
-| **Leemans Döner Palace / Kapsalon Koning / Febo Automat** | respective files | Elsewhere in Shamsterdam | **Fried At Three stacking partners.** The bros hit three greasy-food fixtures in one night. Compounding is cumulative and none of them ever links cause to effect. |
+| **Leemans Döner Palace / Kapsalon Koning / Frietomat** | respective files | Elsewhere in Shamsterdam | **Fried At Three stacking partners.** The bros hit three greasy-food fixtures in one night. Compounding is cumulative and none of them ever links cause to effect. |
 
 ---
 
@@ -1001,7 +1001,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 | **Rebuffed** | Any rung of De Afwijzing | **+Bravado, +Volume.** Rejection makes him *more* confident, because he rationalises it in under four seconds. Stacks. At five stacks the rationalisations become mutually contradictory and he never notices. |
 | **Poncho'd** | Ninth stamp | Cosmetic, permanent, **worn for the rest of the game in every subsequent city.** No removal option. They like it. |
 | **Down A Shirt** | Fenna's dress code | Cosmetic, persists Cascade stages 9–15. The shirts are never recovered and nobody ever asks about them again. |
-| **Fried At Three** | Greasy food after 03:00 | **Engine 1 — the stomach.** Two-hour delayed effect, deliberately timed to co-fire with The Fuse at stage 12. **Stacks with `leemans_doner_palace.md`, `kapsalon_koning.md` and `febo_automat.md`** — the bros hit three in one night. Cartoonish, physical, escalating, fade to black. |
+| **Fried At Three** | Greasy food after 03:00 | **Engine 1 — the stomach.** Two-hour delayed effect, deliberately timed to co-fire with The Fuse at stage 12. **Stacks with `leemans_doner_palace.md`, `kapsalon_koning.md` and `frietomat.md`** — the bros hit three in one night. Cartoonish, physical, escalating, fade to black. |
 | **Not Twenty-Two Any More** | The nine steps, upward, at 04:10 | **Engine 1 — the stamina.** -Speed, -Stamina, forced rest beats, a stair-climb that takes four times as long as the descent. **Player-facing name only. No character ever says it, sees it, or reads it aloud.** |
 | *(no new STD)* | — | **AUTHOR RULING: this district introduces no sexually transmitted status effect.** `the_herp` is the game's one and only STD — caught mandatorily at the Bacchanus Beach outbreak in Debaucheryville, immediate and unmissable, permanent, never cured, and suppressed by the optional Gold Circle Coin in Sinfonia. **Never assume the party has caught it or cured it** — both steps are player choices. A second infection would make STDs ambient background instead of THE event and would undercut the Coin's payoff. **All rejection in this district is driven by the age engine, never by the Herp.** |
 | **Got Exactly What He Asked For** | Complete any Cascade stage | Signature status. +Bravado, +Sov loss, one permanent entry on the retelling ladder. |
@@ -1110,7 +1110,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 | `casa_rose_erotic_theater.md` | Cascade stage 9; Zilver/Goud inclusion; Bogdan vs. the desk |
 | `condomerie_het_gulden_vlies.md` | Femke declines the Goud package; **the bros walk past four times and never go in** |
 | `shamsterdam_condom_machines.md` | 11 machines; the 1-Sov-toilet unit; Ilse's route; The Guilder Problem |
-| `leemans_doner_palace.md`, `kapsalon_koning.md`, `febo_automat.md` | **Fried At Three stacking partners.** Three greasy fixtures in one night, cumulative, never connected by anyone |
+| `leemans_doner_palace.md`, `kapsalon_koning.md`, `frietomat.md` | **Fried At Three stacking partners.** Three greasy fixtures in one night, cumulative, never connected by anyone |
 | `voetgangerstunnel.md` | Exit 7 emergence; Mevrouw Jansen promoted to district ambient and given the scoring bit |
 | `de_groene_gids.md` | Delayed-effect system — The Fuse and Fried At Three both use the two-hour mechanic and are timed to co-fire |
 | `the_tolerance_hostel.md` | Retelling trigger 1 |

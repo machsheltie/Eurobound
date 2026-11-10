@@ -243,7 +243,7 @@ During the 90-second wait, random observations:
 ## System Integration
 ### Comfort Food Network
 - **Function**: Stroopwafel cart is part of Shamsterdam's "things that actually go well" network
-- **Connection to FEBO**: Different ends of the food spectrum (3 AM desperation vs. daytime delight)
+- **Connection to Frietomat**: Different ends of the food spectrum (3 AM desperation vs. daytime delight)
 - **Connection to Pancake House**: Comparison point (€8 stroopwafel > €18 pancake disappointment)
 - **Connection to Döner Stands**: Fellow street food that delivers on promises
 

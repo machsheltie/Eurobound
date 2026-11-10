@@ -595,7 +595,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: Sprite2D (both room backgrounds, fixtures), AnimatedSprite2D (Kees, Pim, candles, pour, Shakes overlays), CPUParticles2D (dust motes, sawdust kick-up, candle smoke — not GPU), CanvasLayer (gauntlet UI, tutorial, opener check), Area2D (bar, gauntlet rail, back room door, barrel tables, the one chair)
-- Special systems: two-key inventory gate (Blarney Trap opener required for tour access, Proeflokaal opener required for stamp and Oude Genever purchase), four-round gauntlet state machine with accumulating Shakes stacks, Traditional Method learned-flag, back room unlock flag with on-demand scene load, spill decal pool, Couchsurf offer trigger keyed to the rare Kees nod, Brewery Tour completion handshake with Brouwerij de Molen
+- Special systems: two-key inventory gate (Blarney Trap opener required for tour access, Proeflokaal opener required for stamp and Oude Genever purchase), four-round gauntlet state machine with accumulating Shakes stacks, Traditional Method learned-flag, back room unlock flag with on-demand scene load, spill decal pool, Couchsurf offer trigger keyed to the rare Kees nod, Brewery Tour completion handshake with The Wobbly Windmill Brewery
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -625,10 +625,10 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | **Publandia (The Blarney Trap)** | **Blarney Trap Bottle Opener icon (Sheet 4 and Sheet 8); Kees's "Seamus." recognition frame (Sheet 5)** | **Hard prerequisite: without the shamrock opener in inventory, Kees's No-Shamrock frame plays and the entire brewery tour branch is locked. With it, he nods and says one word — "Seamus." — the cross-world handshake between Publandia and Shamsterdam.** |
-| Brouwerij de Molen | Shared Bottle Opener Keychain panel and stamp ring | Partner brewery; completing both fires the Canal Courage passive with the shared flag icon |
+| The Wobbly Windmill Brewery | Shared Bottle Opener Keychain panel and stamp ring | Partner brewery; completing both fires the Canal Courage passive with the shared flag icon |
 | De Groene Gids | Staff dialogue hook referencing "trying the hard stuff" | Arriving here already affected raises the gauntlet difficulty modifier |
 | The Tolerance Hostel | Kitchen gossip references "the place with the sawdust" | Sawdust-Dusted Clothing overlay persists into the hostel scene until the next sleep |
-| FEBO Automat | Post-jenever recovery hook | Recommended absorption stop; The Shakes duration ticks faster after eating |
+| Frietomat | Post-jenever recovery hook | Recommended absorption stop; The Shakes duration ticks faster after eating |
 
 ---
 

@@ -340,16 +340,16 @@
 - **Completion**: Both Shamsterdam breweries = "Canal Courage" passive unlock
 
 ### "Canal Courage" Passive (Full Unlock)
-- **Requirement**: Complete BOTH Shamsterdam breweries (Brouwerij de Molen + Proeflokaal 't Kansen)
+- **Requirement**: Complete BOTH Shamsterdam breweries (The Wobbly Windmill Brewery + Proeflokaal 't Kansen)
 - **Effect**: All Bravado loss reduced by 25% while intoxicated
 - **Narrative**: "You've learned to drink like a Shamsterdammer. This is either an achievement or a concern."
 - **Visual**: Small Shamsterdam flag icon appears when passive is active
 
 ### Cross-Location Dependencies
-- **Brouwerij de Molen**: Partner brewery, beer-focused counterpart to jenever
+- **The Wobbly Windmill Brewery**: Partner brewery, beer-focused counterpart to jenever
 - **De Groene Gids**: Staff may reference "trying the hard stuff"
 - **The Tolerance Hostel**: Kitchen discussions of "the place with the sawdust"
-- **FEBO Automat**: Post-jenever food absorption, recovery meal
+- **Frietomat**: Post-jenever food absorption, recovery meal
 
 ### The Footage (Chadwick's Documentation)
 - **Content**: Full gauntlet attempt, success or failure

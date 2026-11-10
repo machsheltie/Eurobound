@@ -600,7 +600,7 @@ Gunter is the delivery point for the cheapest cure in the **Sharing the Love** s
 | Hand wipe, 1 SOV | **Gunter's Deep Dips** | 1 stack |
 | "Handreiniger" sanitiser, 4 Sovs | Venustempel gift shop (Lotte) | 2 stacks |
 | A night's sleep | The Tolerance Hostel | 2 stacks |
-| Febo Automat croquette | Febo Automat | 1 stack |
+| Frietomat croquette | Frietomat | 1 stack |
 
 **His role in it, precisely:** he offers the wipe once, flatly, at the point of sale, in exactly the same tone he states the price. Nobody takes it. He restocks them anyway. He does **not** explain the mechanic, warn the player, connect symptoms to causes, escalate the offer as stacks accumulate, or react to a player carrying tier 5. If he ever appears to know what the wipe is for, the mechanic becomes a tutorial and the joke dies.
 
@@ -705,7 +705,7 @@ Dutch, native, working Amsterdam register, fluent functional English. **Dutch-in
 
 ## 📝 Development Notes
 
-- **CURRENCY — RESOLVED (author ruling, 2026-08-01).** **The entire game runs on Sovs.** Every country, every city, every price. There are no euros anywhere in Eurobound and there is no currency exchange between regions — that is not a mechanic. Gunter's cart, the museum admission, Lotte's gift shop and the Febo Automat are all Sov-priced and always were. The author's board copy uses the form **"5 SOVS"** and is reproduced verbatim. Gunter never mentions converting money, because there is nothing to convert.
+- **CURRENCY — RESOLVED (author ruling, 2026-08-01).** **The entire game runs on Sovs.** Every country, every city, every price. There are no euros anywhere in Eurobound and there is no currency exchange between regions — that is not a mechanic. Gunter's cart, the museum admission, Lotte's gift shop and the Frietomat are all Sov-priced and always were. The author's board copy uses the form **"5 SOVS"** and is reproduced verbatim. Gunter never mentions converting money, because there is nothing to convert.
 - **The board and the sign are authored copy and are reproduced verbatim.** They must not be paraphrased, softened, trimmed, reordered, or "punched up" by a later pass. They are the crudest text in the location and that is deliberate and load-bearing.
 - **Gunter never acknowledges the signage.** Not a look, not a beat, not a delivery choice. He wrote it because it sells and has not thought about it since. **The customer does the joke; Gunter does the price.** Every single line in the Board section of the dialogue is built on that gap and none of them survives a knowing take.
 - **Never explain "We've had incidents."** No NPC, no codex, no examine text, no epilogue reveal, no DLC. The line's entire value is the history it implies and does not have. Two non-answers are written in and both narrow nothing; any third must do the same. `gunter_incidents_asked_count` exists to be counted, not to unlock.
@@ -755,7 +755,7 @@ Dutch, native, working Amsterdam register, fluent functional English. **Dutch-in
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile (supersedes the withdrawn Marijke Doornbos draft; vendor renamed and re-conceived per author ruling). Cart trades as **Gunter's Deep Dips**; the prior brand is withdrawn. Author-supplied menu board and warning sign added verbatim and made the centre of the character. Board pricing set to 5 SOVS per author copy. Wipe priced at 1 Sov. All prices converted to Sovs per the game-wide currency ruling of 2026-08-01. Germ mechanic reference expanded to the full authored table (collection bowl +3, shared skewer +2, Febo croquette cure). All three previously-flagged canon conflicts (Roodelicht Row / Museum Mile placement, the Petra / Lotte attendant name in `npc_manager_femke.md`, and the stale cart asset name) were resolved elsewhere in the same pass. Currency ruling since received and applied: the entire game runs on Sovs; no euros anywhere. Nothing outstanding. | Design |
+| 2026-08-01 | Initial profile (supersedes the withdrawn Marijke Doornbos draft; vendor renamed and re-conceived per author ruling). Cart trades as **Gunter's Deep Dips**; the prior brand is withdrawn. Author-supplied menu board and warning sign added verbatim and made the centre of the character. Board pricing set to 5 SOVS per author copy. Wipe priced at 1 Sov. All prices converted to Sovs per the game-wide currency ruling of 2026-08-01. Germ mechanic reference expanded to the full authored table (collection bowl +3, shared skewer +2, Frietomat croquette cure). All three previously-flagged canon conflicts (Roodelicht Row / Museum Mile placement, the Petra / Lotte attendant name in `npc_manager_femke.md`, and the stale cart asset name) were resolved elsewhere in the same pass. Currency ruling since received and applied: the entire game runs on Sovs; no euros anywhere. Nothing outstanding. | Design |
 
 ---
 

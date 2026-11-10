@@ -19,7 +19,7 @@
           "probability_navigation_system",
           "audio_based_direction_hints",
           "wrong_exit_consequences",
-          "hidden_febo_shortcut"
+          "hidden_frietomat_shortcut"
         ]
       },
       "functions": [
@@ -27,7 +27,7 @@
         "Navigation puzzle with probability outcomes",
         "Comedy reveal: accidental Red Light District discovery",
         "NPC services: map vendor, security guard, busker hints",
-        "Hidden quests: Eternal Busker, FEBO Shortcut",
+        "Hidden quests: Eternal Busker, Frietomat Shortcut",
         "Stay Away Campaign pamphlet #4"
       ]
     },
@@ -136,14 +136,14 @@
           "exit_c: coffeeshop_quarter (15%)",
           "exit_d: canal_surface (20%)",
           "exit_e: return_to_start (10%)",
-          "exit_hidden: febo_automat (quest_unlock)"
+          "exit_hidden: frietomat (quest_unlock)"
         ]
       },
       "functions": [
         "Navigation probability calculations",
         "Wrong exit triggers",
         "Graffiti hint system",
-        "Hidden FEBO shortcut"
+        "Hidden Frietomat shortcut"
       ]
     },
     {
@@ -244,10 +244,10 @@
       {"from": "redlight_exit", "to": "shamsterdam_roodelicht_row_01", "type": "wrong_destination"},
       {"from": "wrong_turn_zone", "to": "shamsterdam_coffeeshop_quarter_01", "type": "wrong_destination"},
       {"from": "wrong_turn_zone", "to": "shamsterdam_canal_ring_promenade_01", "type": "wrong_destination"},
-      {"from": "wrong_turn_zone", "to": "shamsterdam_febo_automat_01", "type": "hidden_shortcut"}
+      {"from": "wrong_turn_zone", "to": "shamsterdam_frietomat_01", "type": "hidden_shortcut"}
     ],
     "hidden_connections": [
-      {"id": "febo_backdoor", "from": "wrong_turn_zone", "to": "febo_automat", "unlock": "febo_shortcut_quest"}
+      {"id": "frietomat_backdoor", "from": "wrong_turn_zone", "to": "frietomat", "unlock": "frietomat_shortcut_quest"}
     ]
   },
   
@@ -279,7 +279,7 @@
         "sign_says": "Museum Plein",
         "probabilities": {
           "museum_mile": 0.50,
-          "febo_automat": 0.30,
+          "frietomat": 0.30,
           "canal_surface": 0.20
         }
       },

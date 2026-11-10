@@ -283,7 +283,7 @@ The craft, the legacy, and the shop. His father made döner. His father's father
 | Big Wim (Kapsalon Koning) | Down the street. Explicit, warm, mutual rivalry. Leeman's board reads "NO KAPSALON. Go to Wim for that." Wim's line: "Mehmet down the street? Good man. Different style. No cheese. His loss." |
 | "Wolf" / Kevin (The Tolerance Hostel) | Eleven-year customer who tells hostel guests to say "Wolf sent you." His name is Kevin. Mehmet would like this corrected. |
 | Budtender Bas (De Groene Gids) | Munchies pipeline. Mehmet identifies Bas's customers on sight and has a phrase for it: "tourist eyes." |
-| Counter Worker Anouk (FEBO Automat) | The other late-night option. Döner versus kroket. No hostility; a category difference. |
+| Counter Worker Anouk (Frietomat) | The other late-night option. Döner versus kroket. No hostility; a category difference. |
 | Rival döner vendors (Debaucheryville, Publandia) | The Great Döner Debate. He takes this VERY seriously and has a policy about it. |
 
 ### Territory / Social Dynamics

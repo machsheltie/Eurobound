@@ -243,13 +243,13 @@
         {"id": "shamsterdam_canal_ring_promenade_01", "probability": 0.20}
       ],
       "hidden": [
-        {"id": "shamsterdam_febo_automat_01", "unlock": "febo_shortcut_quest"}
+        {"id": "shamsterdam_frietomat_01", "unlock": "frietomat_shortcut_quest"}
       ]
     },
     "quest_integration": [
       {"quest": "stay_away_campaign", "pamphlet": 4},
       {"quest": "eternal_busker", "hidden": true},
-      {"quest": "febo_shortcut_discovery", "hidden": true},
+      {"quest": "frietomat_shortcut_discovery", "hidden": true},
       {"quest": "red_light_discovery", "trigger": "wrong_exit"}
     ]
   },

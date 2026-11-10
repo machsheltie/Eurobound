@@ -176,7 +176,7 @@ Feeding people at the hour they most need feeding, in a way that honours a dish 
 > *(Beat.)*
 > "His loss."
 
-> "FEBO is snack. Kapsalon is MEAL. Both have their place. Their place is smaller."
+> "Frietomat is snack. Kapsalon is MEAL. Both have their place. Their place is smaller."
 
 **On the Great Döner Debate**:
 > "Kapsalon is BEYOND döner. It INCLUDES döner. And transcends it. Write that down. Someone should write that down."
@@ -278,14 +278,14 @@ Feeding people at the hour they most need feeding, in a way that honours a dish 
 |-----|--------------|
 | Kemal | Nephew. Cheese station, second shift, business student. Trained by Wim. Will probably open his own someday and Wim knows it. |
 | Mehmet "The Meat Architect" Leeman | Down the street. Friendly rivalry, genuine mutual respect, opposite philosophies. Leeman's board reads "NO KAPSALON. Go to Wim for that." |
-| Counter Worker Anouk / Kitchen Worker Henk (FEBO Automat) | The other late-night tier. "FEBO is snack. Kapsalon is MEAL." No hostility; a hierarchy. |
+| Counter Worker Anouk / Kitchen Worker Henk (Frietomat) | The other late-night tier. "Frietomat is snack. Kapsalon is MEAL." No hostility; a hierarchy. |
 | Budtender Bas (De Groene Gids) | Munchies pipeline endpoint. Wim receives Bas's customers roughly ninety minutes after Bas is finished with them. |
 | The rival döner vendor (Great Döner Debate) | Same WhatsApp group: "European Döner Alliance." Knows Wim's actual first name. This surprises Wim enormously. |
-| Brewmaster Hendrik (Brouwerij de Molen) | Never met. Wim has heard about a man who lectures about grain for forty minutes and has expressed a desire to meet him. |
+| Brewmaster Hendrik (The Wobbly Windmill Brewery) | Never met. Wim has heard about a man who lectures about grain for forty minutes and has expressed a desire to meet him. |
 
 ### Territory / Social Dynamics
 - Wim and Mehmet are the two poles of Shamsterdam's late-night food ecosystem and both are explicitly, warmly aware of it. Neither poaches. Each sends customers to the other for what the other does better.
-- The 3 AM decision tree: FEBO (snack, no commitment) → Leeman's (fuel, standing, judged) → Kapsalon Koning (maximum commitment, seating, cheese). Wim is the terminus.
+- The 3 AM decision tree: Frietomat (snack, no commitment) → Leeman's (fuel, standing, judged) → Kapsalon Koning (maximum commitment, seating, cheese). Wim is the terminus.
 - Kemal is being trained deliberately and generously. Wim has never once implied the shop is his to keep.
 
 ---

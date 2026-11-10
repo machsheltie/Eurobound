@@ -108,8 +108,9 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
 - **Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
   idea.
 - **Shamsterdam's 4 brewery names** (author to mint; ruled 2026-08-04 that every city has 4
-  breweries): rename "Brouwerij de Molen" (REAL Dutch brewery — brand liability, zero joke)
-  and "Proeflokaal 't Kansen" (generic Dutch, no satire; keep Kees + jenever-distillery
+  breweries): ~~rename "Brouwerij de Molen" (REAL Dutch brewery — brand liability, zero joke)~~
+  **RESOLVED 2026-11-10: renamed The Wobbly Windmill Brewery; references swept.** Still open:
+  rename "Proeflokaal 't Kansen" (generic Dutch, no satire; keep Kees + jenever-distillery
   character, name only), plus invent 2 new establishments. Sweep references after minting.
 
 ## Brewery Tour — RULED 2026-08-04 (canonical spec: design/quests/general_quests/brewerytour.md)

@@ -28,9 +28,9 @@
         "primary": false
       },
       {
-        "id": "febo_hidden",
-        "location": "shamsterdam_febo_automat_01",
-        "unlock_condition": "febo_shortcut_quest_complete",
+        "id": "frietomat_hidden",
+        "location": "shamsterdam_frietomat_01",
+        "unlock_condition": "frietomat_shortcut_quest_complete",
         "hidden": true
       }
     ],
@@ -54,7 +54,7 @@
       },
       "museum_plein_sign": {
         "actual_museum_mile": 0.50,
-        "febo_automat": 0.30,
+        "frietomat": 0.30,
         "canal_surface": 0.20
       }
     },
@@ -88,7 +88,7 @@
         "debuff_risk": "bicycle_trauma",
         "position": "worse_than_start"
       },
-      "febo_automat": {
+      "frietomat": {
         "atmosphere": "3am_vibes_always",
         "consolation": "free_kroket_offer",
         "shortcut_value": "actually_useful_once_known"
@@ -197,7 +197,7 @@
       "shamsterdam_canal_ring_promenade_01"
     ],
     "hidden_exits": [
-      "shamsterdam_febo_automat_01"
+      "shamsterdam_frietomat_01"
     ]
   },
   
@@ -211,7 +211,7 @@
       "return_to_start": 0
     },
     "willem_tips_given": 0,
-    "febo_shortcut_discovered": false,
+    "frietomat_shortcut_discovered": false,
     "map_purchased": false
   },
   
@@ -220,7 +220,7 @@
     {"id": "scenic_route", "trigger": "first_red_light_emergence", "type": "discovery"},
     {"id": "tunnel_vision", "trigger": "perfect_navigation_no_wrong_turns", "type": "skill"},
     {"id": "willems_friend", "trigger": "tip_willem_5_sov_three_times", "type": "hidden"},
-    {"id": "back_door_regular", "trigger": "discover_febo_shortcut", "type": "hidden"},
+    {"id": "back_door_regular", "trigger": "discover_frietomat_shortcut", "type": "hidden"},
     {"id": "tour_guide", "trigger": "escort_lost_tourist_to_exit", "type": "social"},
     {"id": "five_time_navigator", "trigger": "5_successful_navigations", "type": "mastery"}
   ]

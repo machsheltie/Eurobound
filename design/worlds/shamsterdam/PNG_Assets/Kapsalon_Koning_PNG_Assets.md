@@ -435,7 +435,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Leeman's Döner Palace | Menu board rivalry note; Wim's "Mehmet down the street? Good man. No cheese. His loss." | Friendly-rivalry dialogue crosslinks; Leeman's sign reads "NO KAPSALON. Go to Wim for that." |
 | De Groene Gids | Munchies pipeline endpoint marker | WARNING: may overcorrect — enhanced HP food effects |
 | The Tolerance Hostel | Battle Tray display prop reference | Kitchen conversations + tray shown on shelf |
-| FEBO Automat | Comparison dialogue hook | "FEBO is snack. Kapsalon is MEAL." |
+| Frietomat | Comparison dialogue hook | "Frietomat is snack. Kapsalon is MEAL." |
 
 ---
 

@@ -258,7 +258,7 @@ Keep the shop going, keep the family in it, keep the fleet turning over, and —
 | The Bike Rental Guy (Bike Crossing kiosk) | Sells the same fleet at the crossing kiosk. Same warnings, same non-compliance, different counter. Professional parity. |
 | Officer van den Berg (Bike Crossing) | Same surname. No confirmed relation. Dirk has been asked and answers, "It is a common name." He does not elaborate. |
 | Henk (Voetgangerstunnel) | Sells the underground alternative. Dirk considers the tunnel "free and only confusing," which is the most he will say about a competitor. |
-| Brewmaster Hendrik (Brouwerij de Molen) | Brewery-tour cyclists rent from here. Dirk has opinions about arriving at a tasting flight on a bicycle and keeps them to himself. |
+| Brewmaster Hendrik (The Wobbly Windmill Brewery) | Brewery-tour cyclists rent from here. Dirk has opinions about arriving at a tasting flight on a bicycle and keeps them to himself. |
 
 ### Territory / Social Dynamics
 - Three generations, staged in depth: Anneke front, Dirk middle, Cees back. The player moves through the family in order of increasing honesty and decreasing commercial interest.

@@ -300,7 +300,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 ## System Integration
 ### Late-Night Food Network
 - **Function**: Connects to Shamsterdam's 3 AM food ecosystem
-- **Connection to FEBO**: Alternative late-night choice (döner vs. kroket)
+- **Connection to Frietomat**: Alternative late-night choice (döner vs. kroket)
 - **Connection to Kapsalon Koning**: Sibling rivalry ("no kapsalon here")
 - **Theme**: The 3 AM food decision tree
 

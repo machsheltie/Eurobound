@@ -151,7 +151,7 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 **After the player has emerged at the Roodelicht exit (Red Light Discovery triggered)**:
 > "Ah. Exit 7." *(A very small pause.)* "Mevrouw Jansen will have said something. She always says something."
 
-**Late game, after the bros have been to Brouwerij de Molen**:
+**Late game, after the bros have been to The Wobbly Windmill Brewery**:
 > "You smell of grain. The windmill, then. Hendrik still talks about the barley?" *(Beat.)* "Of course he does."
 
 ---
@@ -202,7 +202,7 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 | Marloes (Map Vendor, Zone 1) | Professional respect at a distance. She sells the truth; he gives it away for 5 Sovs. Neither has ever mentioned the other. |
 | Henk (Security, Zone 2) | Henk has never acknowledged Willem exists. Willem has never acknowledged Henk exists. They have shared a tunnel for decades. |
 | Mevrouw Jansen (Red Light exit) | He knows her name and her habits. She has never been underground. |
-| Brewmaster Hendrik (Brouwerij de Molen) | Referenced only. Willem knows the man talks about barley. How he knows this is not explained. |
+| Brewmaster Hendrik (The Wobbly Windmill Brewery) | Referenced only. Willem knows the man talks about barley. How he knows this is not explained. |
 | The Lost Tourists | Willem gives them directions too. They also don't listen. |
 
 ### Territory / Social Dynamics

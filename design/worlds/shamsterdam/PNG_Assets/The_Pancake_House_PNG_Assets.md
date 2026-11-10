@@ -598,7 +598,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Tolerance Hostel | Expectation Adjustment status carried into kitchen dialogue | "Did you go to the pancake place? Did they explain before you ordered?" — the answer changes the exchange |
-| FEBO Automat | Shared Dutch Food Learning Curve counter | "At FEBO you KNOW what you're getting for 3 Sovs" — value comparison dialogue unlocks after the bill reveal |
+| Frietomat | Shared Dutch Food Learning Curve counter | "At Frietomat you KNOW what you're getting for 3 Sovs" — value comparison dialogue unlocks after the bill reveal |
 | Café de Schaamte | Expectation Adjustment status, food photo album entry | Post-pancake espresso; processing what happened |
 | De Groene Gids | Munchies modifier on appetite appreciation | Pre-pancake visit shifts the Portion Revelation from disappointment to delight |
 | Leeman's Döner Palace | Shared Dutch Food Learning Curve counter | Later stages of the curve change the player's default ordering confidence |

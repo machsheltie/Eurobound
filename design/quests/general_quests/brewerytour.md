@@ -16,11 +16,11 @@ file wins.
   city file)
 - Sinfonia: 4 designed (The Standing Ovation, Crown & Cask, The Dancing Stein, The Moderato
   Pub)
-- Shamsterdam: **4 required, 0 named.** The two existing establishments carry placeholder
-  names that fail the satire bar — one is a real brewery ("Brouwerij de Molen" — real Dutch
-  brand, must be renamed) and "Proeflokaal 't Kansen" is generic Dutch with no joke. Both get
-  author-minted renames (the jenever-distillery character and Kees stay; only names change),
-  plus **2 entirely new establishments to be created**. All 4 names: OPEN AUTHOR DECISION.
+- Shamsterdam: **4 required, 1 named.** The Wobbly Windmill Brewery (author-minted 2026-11-10,
+  replacing a real Dutch brewery's name). "Proeflokaal 't Kansen" is generic Dutch with no joke
+  and still gets an author-minted rename (the jenever-distillery character and Kees stay; only
+  the name changes), plus **2 entirely new establishments to be created**. The remaining 3
+  names: OPEN AUTHOR DECISION.
 
 ---
 

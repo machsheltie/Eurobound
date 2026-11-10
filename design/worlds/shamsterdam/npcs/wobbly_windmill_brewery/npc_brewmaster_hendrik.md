@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_brewmaster_hendrik_01`
 - **Display Name**: Brewmaster Hendrik
-- **Internal Name**: Hendrik — third-generation windmill operator, Brouwerij de Molen, converted to brewing 2008
+- **Internal Name**: Hendrik — third-generation windmill operator, The Wobbly Windmill Brewery, converted to brewing 2008
 - **Role**: Quest Gate / Vendor (bottle opener + Windmill Wit) / Tour Guide / Lecture Endurance Challenge / Stamp Giver
 - **Associated Quest**: "Shamsterdam Brewery Tour" (1 of 2 — Windmill Wit stamp); gates "Canal Courage" passive progression
-- **Primary Location**: Brouwerij de Molen — all four floors, Shamsterdam Countryside (short train ride from central)
+- **Primary Location**: The Wobbly Windmill Brewery — all four floors, Shamsterdam Countryside (short train ride from central)
 - **Secondary Appearances**: Referenced at De Zilte Waarheid (the seagull is named after him); referenced at Proeflokaal 't Kansen and The Tolerance Hostel as the other half of the brewery tour
 
 ---
@@ -52,7 +52,7 @@ There is a seagull at De Zilte Waarheid, on the other side of the city, named He
 - Points at the millstone rather than at people
 
 ### Sprite Notes
-Sheet `npc_molen_cast.png` (1024×384, 64×96 sprites), Row 0. Hendrik Idle 1-2 at (0,0)/(64,0); Hendrik Lecturing 1-4 at (128,0)–(320,0) — arms conducting the grain, and the lecture loop runs the entire endurance challenge with frames 2–4 shuffled randomly to avoid robotic looping; Hendrik Approval 1-2 at (384,0)/(448,0) — post-golem respect nod. Critical staging note: in any frame Hendrik shares with the Tourist Grabbing Rail or Dizzy Tourist sprites, he must be drawn dead vertical. His stability against everyone else's wobble is the whole visual gag and it costs nothing to preserve.
+Sheet `npc_wobbly_windmill_cast.png` (1024×384, 64×96 sprites), Row 0. Hendrik Idle 1-2 at (0,0)/(64,0); Hendrik Lecturing 1-4 at (128,0)–(320,0) — arms conducting the grain, and the lecture loop runs the entire endurance challenge with frames 2–4 shuffled randomly to avoid robotic looping; Hendrik Approval 1-2 at (384,0)/(448,0) — post-golem respect nod. Critical staging note: in any frame Hendrik shares with the Tourist Grabbing Rail or Dizzy Tourist sprites, he must be drawn dead vertical. His stability against everyone else's wobble is the whole visual gag and it costs nothing to preserve.
 
 ---
 
@@ -83,7 +83,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 ### Approach/Greeting
 
 **Arrival, ground floor**:
-> "Welcome to Brouwerij de Molen. For 350 years, this windmill has served the people."
+> "Welcome to The Wobbly Windmill Brewery. For 350 years, this windmill has served the people."
 > *(He lets that land. It does not land.)*
 > "For 15 years, it has served the GRAIN."
 
@@ -174,7 +174,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 ### Sales — Post-Tour
 
 **Bottle opener (22 Sovs)**:
-> "The Brouwerij de Molen opener. Brushed copper, grain-gold. The blades turn when you spin it — this is not a gimmick, this is the same ratio as the real ones."
+> "The Wobbly Windmill Brewery opener. Brushed copper, grain-gold. The blades turn when you spin it — this is not a gimmick, this is the same ratio as the real ones."
 > "Twenty-two Sovs. Or defeat the golem. The golem is free."
 
 **Windmill Wit purchase (requires windmill opener)**:
@@ -229,7 +229,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Brewery Tour | 25 Sovs | 25 Sovs | Full tour, tasting token, five-beer flight, 40-minute lecture, access to boss arena |
-| Brouwerij de Molen Bottle Opener | 22 Sovs | 22 Sovs | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp and Windmill Wit. Free via Yeast Golem defeat. |
+| The Wobbly Windmill Brewery Bottle Opener | 22 Sovs | 22 Sovs | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp and Windmill Wit. Free via Yeast Golem defeat. |
 | Windmill Wit (consumable) | Post-tour purchase | Genuinely 11% | +40 HP, +20 SP, +15% Speed 3 turns, −20% Navigation 5 turns. The room keeps spinning after you leave. |
 | Tasting Flight | Included in tour | Included | Five beers, 5% → 11% ABV. Feeds the Spin Meter. |
 | "Respect The Grain" (book) | 35 Sovs | 0 Sovs | Self-published, unreadable, comprehensive. He will sign it. Bram has read it because he had to. |
@@ -318,20 +318,20 @@ He never becomes casual and never lets the reverence drop. What changes is compr
 ### Primary Quest: Shamsterdam Brewery Tour (1 of 2)
 - **Quest**: Shamsterdam Brewery Tour
 - **Role**: Quest Gate, Vendor, Stamp Giver
-- **Trigger**: Arrival at Brouwerij de Molen carrying the Blarney Trap Bottle Opener
+- **Trigger**: Arrival at The Wobbly Windmill Brewery carrying the Blarney Trap Bottle Opener
 - **Outcome**: "Windmill Wit" stamp added to the Bottle Opener Keychain. With Proeflokaal 't Kansen's Oude Genever stamp, unlocks the "Canal Courage" passive (all Bravado loss reduced by 25% while intoxicated).
 
 ### Quest Gate Function
 **Hard gate, two layers:**
 1. **The Blarney Trap Bottle Opener (Publandia)** is required to participate in the brewery tour AT ALL. Without it, Hendrik blocks the stairs. This is a cross-city dependency and it is not negotiable, purchasable, or skippable.
-2. **The Brouwerij de Molen opener** (Yeast Golem defeat OR 22 Sovs) is required for the stamp and for Windmill Wit purchase. Without it the player can tour and drink but takes no progression.
+2. **The Wobbly Windmill Brewery opener** (Yeast Golem defeat OR 22 Sovs) is required for the stamp and for Windmill Wit purchase. Without it the player can tour and drink but takes no progression.
 
 He also gates the Yeast Golem boss arena, the second-floor tasting room, and the blade-level selfie spot — all three unlock behind him in sequence.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Brouwerij de Molen Bottle Opener | Golem defeat or 22 Sovs | Yes | Gates stamp + Windmill Wit; blades rotate |
+| The Wobbly Windmill Brewery Bottle Opener | Golem defeat or 22 Sovs | Yes | Gates stamp + Windmill Wit; blades rotate |
 | Windmill Wit ×3 | Golem victory | Consumable | +40 HP, +20 SP, +15% Speed, −20% Navigation |
 | "Windmill Wit" stamp | Tour completion with opener | Yes | 1 of 2 toward Canal Courage |
 | "Yeast Slayer" title | Golem defeat | Yes | Title badge |
@@ -341,11 +341,11 @@ He also gates the Yeast Golem boss arena, the second-floor tasting room, and the
 ### State Flags Set
 - `hendrik_met`: boolean
 - `blarney_opener_verified`: boolean
-- `molen_opener_acquired`: boolean
-- `molen_opener_source`: enum (golem / purchased)
+- `wobbly_windmill_opener_acquired`: boolean
+- `wobbly_windmill_opener_source`: enum (golem / purchased)
 - `hendrik_speech_completed`: boolean
 - `hendrik_gift_discount`: boolean
-- `molen_stamp_acquired`: boolean
+- `wobbly_windmill_stamp_acquired`: boolean
 - `hendrik_seagull_beat_played`: boolean
 - `yeast_golem_defeated`: boolean
 
@@ -441,15 +441,15 @@ Dutch, rural, deep register. A reverent baritone with real weight behind it. Slo
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Brouwerij_De_Molen/npc_brewmaster_hendrik.md`
-- **Registered In**: No `brouwerij_de_molen_npcs.json` exists. **A location JSON roster should be created for this location** (Tessa, Bram, Beer Blogger, Repeat Visitor, Instagram Couple, Bachelor Party still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_molen_cast.png` (1024×384, 64×96 sprites) — Row 0: Hendrik Idle 1-2 (0,0)/(64,0), Hendrik Lecturing 1-4 (128,0)–(320,0), Hendrik Approval 1-2 (384,0)/(448,0). Specced in `PNG_Assets/Brouwerij_De_Molen_PNG_Assets.md`, Sprite Sheet 7. Supporting: `molen_items_ui.png` (bottle opener static + blade spin ×4, Windmill Wit bottle, Windmill Wit stamp, tasting flight tracker).
+- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/wobbly_windmill_brewery/npc_brewmaster_hendrik.md`
+- **Registered In**: No `wobbly_windmill_brewery_npcs.json` exists. **A location JSON roster should be created for this location** (Tessa, Bram, Beer Blogger, Repeat Visitor, Instagram Couple, Bachelor Party still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
+- **Sprite Sheet**: `npc_wobbly_windmill_cast.png` (1024×384, 64×96 sprites) — Row 0: Hendrik Idle 1-2 (0,0)/(64,0), Hendrik Lecturing 1-4 (128,0)–(320,0), Hendrik Approval 1-2 (384,0)/(448,0). Specced in `PNG_Assets/wobbly_windmill_brewery_png_assets.md`, Sprite Sheet 7. Supporting: `wobbly_windmill_items_ui.png` (bottle opener static + blade spin ×4, Windmill Wit bottle, Windmill Wit stamp, tasting flight tracker).
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `brouwerij_de_molen.md` + `PNG_Assets/Brouwerij_De_Molen_PNG_Assets.md` + `de_zilte_waarheid.md` (seagull canon) + `the_blarney_trap.md` (opener gate). | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `wobbly_windmill_brewery.md` + `PNG_Assets/wobbly_windmill_brewery_png_assets.md` + `de_zilte_waarheid.md` (seagull canon) + `the_blarney_trap.md` (opener gate). | Shamsterdam NPC authoring pass |
 
 ---
 

@@ -279,7 +279,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 ### Cross-Location Dependencies
 - **The Tolerance Hostel**: Kitchen discussions of "what we bought"
 - **Casa Rosé**: Same Red Light District area
-- **FEBO**: Post-purchase snack run common
+- **Frietomat**: Post-purchase snack run common
 - **Airport**: Customs doesn't care, but you'll feel watched
 
 ### The Bachelor Party Achievement Track

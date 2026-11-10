@@ -322,7 +322,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 ## System Integration
 ### Late-Night Food Network
 - **Function**: Connects to Shamsterdam's 3 AM food ecosystem
-- **Connection to FEBO**: Different tier of late-night food (kapsalon is commitment)
+- **Connection to Frietomat**: Different tier of late-night food (kapsalon is commitment)
 - **Connection to Leeman's**: Friendly rivalry, different specialties, same district
 - **Theme**: The 3 AM food decision tree (branch: maximum commitment)
 
@@ -335,7 +335,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - **Leeman's Döner Palace**: Sibling rivalry, different philosophies
 - **De Groene Gids**: Munchies pipeline endpoint (WARNING: may overcorrect)
 - **The Tolerance Hostel**: Kitchen conversations, tray display
-- **FEBO**: Comparison point ("FEBO is snack. Kapsalon is MEAL.")
+- **Frietomat**: Comparison point ("Frietomat is snack. Kapsalon is MEAL.")
 
 ### The Kapsalon Achievement Track
 - **First Kapsalon**: "Initiated" — entered the cheese dimension

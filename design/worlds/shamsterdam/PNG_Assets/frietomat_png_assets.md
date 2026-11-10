@@ -1,20 +1,20 @@
-# FEBO Automat - Complete PNG Asset Requirements
+# Frietomat - Complete PNG Asset Requirements
 
 ## 📋 Overview
-FEBO is Shamsterdam's 24-hour wall of tiny glowing doors, where coins go in, hot mystery meat comes out, and no one — club refugee, shift worker, philosopher, or bro — is judged. This document specifies every PNG asset for the flagship automat: the yellow beacon exterior, the interior with THE WALL dominant, the full compartment grid and food sprites, staff and 3 AM crowd NPCs, steam and mechanism effects, and the wall-navigation UI. Its satirical essence in a sentence: the great equalizer of 3 AM decisions has been open since 1941 and it will outlive us all.
+Frietomat is Shamsterdam's 24-hour wall of tiny glowing doors, where coins go in, hot mystery meat comes out, and no one — club refugee, shift worker, philosopher, or bro — is judged. This document specifies every PNG asset for the flagship automat: the yellow beacon exterior, the interior with THE WALL dominant, the full compartment grid and food sprites, staff and 3 AM crowd NPCs, steam and mechanism effects, and the wall-navigation UI. Its satirical essence in a sentence: the great equalizer of 3 AM decisions has been open since 1941 and it will outlive us all.
 
-**Location ID:** `shamsterdam_central_febo_automat_01`
+**Location ID:** `shamsterdam_central_frietomat_01`
 **Theme:** Late-night food desperation democratized; an affectionate portrait of a real Dutch institution
 **Zone:** Central Shamsterdam (flagship 24-hour location)
 **Hours:** 24 hours (the wall never sleeps; peak 2-4 AM)
-**Primary Function:** Automat fast food / 3 AM salvation / regret dispensary — coin-operated wall interaction system, time-based crowd density, Mystery Item gamble, Munchies Pipeline bonus, FEBO Regular status
+**Primary Function:** Automat fast food / 3 AM salvation / regret dispensary — coin-operated wall interaction system, time-based crowd density, Mystery Item gamble, Munchies Pipeline bonus, Frietomat Regular status
 
 ---
 
 ## 🎨 Color Palette
 | Color | Hex | Usage |
 |-------|-----|-------|
-| FEBO Yellow | #FFD700 | Facade, signage, uniforms |
+| Frietomat Yellow | #FFD700 | Facade, signage, uniforms |
 | Chrome Silver | #C0C0C0 | Compartment frames, counter, coin machine |
 | Fluorescent White | #F5F5F5 | Interior light wash, wall tiles |
 | Meat Brown | #8B4513 | Food sprites, fryer tones |
@@ -25,36 +25,36 @@ FEBO is Shamsterdam's 24-hour wall of tiny glowing doors, where coins go in, hot
 
 ## 📁 File Structure
 ```
-assets/sprites/locations/shamsterdam/febo_automat/
+assets/sprites/locations/shamsterdam/frietomat/
 ├── environment/
-│   ├── febo_exterior.png
-│   ├── febo_interior_main.png
-│   └── febo_wall_grid.png
+│   ├── frietomat_exterior.png
+│   ├── frietomat_interior_main.png
+│   └── frietomat_wall_grid.png
 ├── objects/
-│   └── febo_food_items.png
+│   └── frietomat_food_items.png
 ├── npcs/
-│   └── npc_febo_staff_customers.png
+│   └── npc_frietomat_staff_customers.png
 ├── effects/
-│   └── febo_effects.png
+│   └── frietomat_effects.png
 └── ui/
-    └── febo_ui.png
+    └── frietomat_ui.png
 ```
 
 ---
 
 ## 🏪 Sprite Sheet 1: Exterior — The Yellow Beacon
-**File:** `febo_exterior.png`
+**File:** `frietomat_exterior.png`
 **Dimensions:** 1024x512 pixels
 **Color Palette:** #FFD700, #1A1A1A, #F5F5F5
 
 ### Facade Elements:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| FEBO Facade (Night) | (0, 0) | 512x384 | Yellow beacon in darkness, glass doors, steam escaping |
-| FEBO Facade (Day) | (512, 0) | 512x384 | Same structure, daylight grading, quieter energy |
-| "FEBO" Letter Sign | (0, 384) | 256x96 | Iconic yellow letters, lit 24/7 |
+| Frietomat Facade (Night) | (0, 0) | 512x384 | Yellow beacon in darkness, glass doors, steam escaping |
+| Frietomat Facade (Day) | (512, 0) | 512x384 | Same structure, daylight grading, quieter energy |
+| "FRIETOMAT" Letter Sign | (0, 384) | 256x96 | Iconic yellow letters, lit 24/7 |
 | "AUTOMATIEK / SINCE 1941" Door Text | (256, 384) | 128x64 | Smaller lettering, true claim |
-| "24 UUR" Hours Sign | (384, 384) | 96x64 | Unnecessary; FEBO is eternal |
+| "24 UUR" Hours Sign | (384, 384) | 96x64 | Unnecessary; Frietomat is eternal |
 | Window Food Photos | (480, 384) | 192x96 | Photos that look better than reality (standard practice) |
 | Sidewalk Light Spill | (672, 384) | 256x128 | Fluorescent glow wedge cast onto pavement, alpha gradient |
 | Escaping Steam Wisp | (928, 384) | 96x128 | Doorway steam, 2 stacked 96x64 frames |
@@ -67,7 +67,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ---
 
 ## 🧱 Sprite Sheet 2: Interior Main Background
-**File:** `febo_interior_main.png`
+**File:** `frietomat_interior_main.png`
 **Dimensions:** 1920x1080 pixels (standalone full-scene background — not atlased)
 **Color Palette:** #F5F5F5, #C0C0C0, #FFD700
 
@@ -84,7 +84,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ---
 
 ## 🚪 Sprite Sheet 3: THE WALL — Grid & Fixtures
-**File:** `febo_wall_grid.png`
+**File:** `frietomat_wall_grid.png`
 **Dimensions:** 1024x1024 pixels
 **Color Palette:** #C0C0C0, #FFB347, #F5F5F5
 
@@ -122,7 +122,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ---
 
 ## 🍟 Sprite Sheet 4: Food Compartment Items
-**File:** `febo_food_items.png`
+**File:** `frietomat_food_items.png`
 **Dimensions:** 256x256 pixels
 **Color Palette:** #8B4513, #FFD700, #F5F5F5
 
@@ -153,7 +153,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ---
 
 ## 👥 Sprite Sheet 5: Staff & The 3 AM Congregation
-**File:** `npc_febo_staff_customers.png`
+**File:** `npc_frietomat_staff_customers.png`
 **Dimensions:** 1024x512 pixels
 **Sprite Size:** 64x96 per single NPC frame
 **Color Palette:** #FFD700 uniforms, mixed night-crowd palette
@@ -161,11 +161,11 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ### Staff:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Anouk Counter Idle | (0, 0) | 64x96 | FEBO yellow uniform, efficiency incarnate |
+| Anouk Counter Idle | (0, 0) | 64x96 | Frietomat yellow uniform, efficiency incarnate |
 | Anouk Handing Change | (64, 0) | 64x96 | "Coins? Two Sovs fifty. There." |
 | Anouk Restocking Frame 1 | (128, 0) | 64x96 | Loading a slot from the rear |
 | Anouk Restocking Frame 2 | (192, 0) | 64x96 | Slot closed, next item |
-| Anouk Recognition Nod | (256, 0) | 64x96 | FEBO Regular status acknowledgment |
+| Anouk Recognition Nod | (256, 0) | 64x96 | Frietomat Regular status acknowledgment |
 | Theo Kitchen Glimpse Frame 1 | (320, 0) | 64x96 | Perpetual motion, fry basket up |
 | Theo Kitchen Glimpse Frame 2 | (384, 0) | 64x96 | Fry basket down, restock pivot |
 
@@ -196,7 +196,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ---
 
 ## ✨ Sprite Sheet 6: Effects & Mechanisms
-**File:** `febo_effects.png`
+**File:** `frietomat_effects.png`
 **Dimensions:** 512x256 pixels
 **Color Palette:** #FFB347, #F5F5F5, #1A1A1A
 
@@ -224,7 +224,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ---
 
 ## 🧭 Sprite Sheet 7: UI Elements
-**File:** `febo_ui.png`
+**File:** `frietomat_ui.png`
 **Dimensions:** 512x512 pixels
 **Color Palette:** #FFD700 chrome UI, #1A1A1A panels
 
@@ -237,7 +237,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | Food Acquired Popup | (256, 128) | 128x96 | Item obtained card with food icon slot |
 | Mystery Reveal Panel | (384, 0) | 128x128 | "What did you get?" reveal frame |
 | Munchies Bonus Indicator | (384, 128) | 64x64 | +50% HP restoration marker |
-| FEBO Regular Status Badge | (448, 128) | 64x64 | Staff recognition achieved |
+| Frietomat Regular Status Badge | (448, 128) | 64x64 | Staff recognition achieved |
 | Warm Inside Status Icon | (0, 256) | 32x32 | Kroket comfort status |
 | Cheese Contentment Icon | (32, 256) | 32x32 | Kaassouflé/cheeseburger status |
 | Exotic Confusion Icon | (64, 256) | 32x32 | Bamischijf status |
@@ -262,7 +262,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Frames:** 3 (latch pop → swing → open glow) + steam burst
 - **Pattern:** Play once on successful purchase; door stays open until item taken
 - **Trigger:** Coins inserted + handle turned
-- **Purpose:** The core FEBO ritual — the wall provides
+- **Purpose:** The core Frietomat ritual — the wall provides
 - **Audio Sync:** Coin clunk at 0.0s, handle ratchet at 0.3s, door pop at 0.6s, steam hiss at 0.7s
 - **Performance Optimization:** Steam burst dropped on Low LOD; door frames retained (core feedback)
 
@@ -316,7 +316,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - **Frames:** 1 (gradient texture, alpha animated)
 - **Pattern:** Slow loop, 2-4 AM only
 - **Trigger:** In-game clock
-- **Purpose:** Peak FEBO; dreamlike warmth; slight reverb pairing
+- **Purpose:** Peak Frietomat; dreamlike warmth; slight reverb pairing
 - **Audio Sync:** Audio bus gains slight reverb while overlay active
 - **Performance Optimization:** Fixed 25% alpha (no breathe) on Low LOD
 
@@ -359,16 +359,16 @@ assets/sprites/locations/shamsterdam/febo_automat/
 
 ### Texture Compression:
 - **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) interior background and menu board kept uncompressed (readable text)
-- **Fallback:** PNG high quality for febo_interior_main.png (scene-detail critical)
+- **Fallback:** PNG high quality for frietomat_interior_main.png (scene-detail critical)
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
-| febo_environment | febo_exterior, febo_wall_grid | 2048x2048 |
-| febo_characters | npc_febo_staff_customers | 1024x1024 |
-| febo_fx_ui | febo_food_items, febo_effects, febo_ui | 1024x1024 |
+| frietomat_environment | frietomat_exterior, frietomat_wall_grid | 2048x2048 |
+| frietomat_characters | npc_frietomat_staff_customers | 1024x1024 |
+| frietomat_fx_ui | frietomat_food_items, frietomat_effects, frietomat_ui | 1024x1024 |
 
-*(febo_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for broad GPU compatibility.)*
+*(frietomat_interior_main.png loads standalone as a scene background; max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -395,7 +395,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: Sprite2D (interior background), TileMap NOT required (grid handled via slot Area2D array), AnimatedSprite2D (doors, NPCs, steam), CPUParticles2D (steam motes — not GPU), CanvasLayer (wall UI), CanvasModulate (3 AM warmth)
-- Special systems: per-slot state machine (stocked/empty/open), daily Mystery Item seed, time-of-day crowd table (6 periods), Munchies Pipeline timer (2-hour window from De Groene Gids), visit counter for FEBO Regular status, 3 AM event flag (2-4 AM)
+- Special systems: per-slot state machine (stocked/empty/open), daily Mystery Item seed, time-of-day crowd table (6 periods), Munchies Pipeline timer (2-hour window from De Groene Gids), visit counter for Frietomat Regular status, 3 AM event flag (2-4 AM)
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -411,10 +411,10 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| FEBO Achievement Track ("Wall Beginner" → "Wall Completionist") | Achievement badges strip, all food sprites | First visit, 5 visits, Mystery Item, 3 AM visit, all items tried |
+| Frietomat Achievement Track ("Wall Beginner" → "Wall Completionist") | Achievement badges strip, all food sprites | First visit, 5 visits, Mystery Item, 3 AM visit, all items tried |
 | The Munchies Pipeline | Munchies shimmer + bonus indicator | Arrival within 2 hours of De Groene Gids; +50% HP food |
-| FEBO Regular Status | Anouk Recognition Nod, Regular badge | 3+ visits; occasional extra napkin (the rarest of gifts) |
-| 3 AM FEBO Experience | 3 AM crowd block, Philosopher, Community Glow Ring | Visit 2-4 AM; +Community, -Judgment |
+| Frietomat Regular Status | Anouk Recognition Nod, Regular badge | 3+ visits; occasional extra napkin (the rarest of gifts) |
+| 3 AM Frietomat Experience | 3 AM crowd block, Philosopher, Community Glow Ring | Visit 2-4 AM; +Community, -Judgment |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
@@ -423,7 +423,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | Casa Rosé | Standing ledge as processing space | Post-show neutral-zone dialogue triggers |
 | The Tolerance Hostel | Food acquired popup referenced in kitchen talk | Late-night discovery conversations |
 | Proeflokaal 't Kansen | Grease-absorption food effects | Reduces The Shakes debuff duration |
-| Voetgangerstunnel | Rear heating-unit wall section (restock door area) | Hidden FEBO Emergence exit from the tunnel; 3 AM vibes always |
+| Voetgangerstunnel | Rear heating-unit wall section (restock door area) | Hidden Frietomat Emergence exit from the tunnel; 3 AM vibes always |
 
 ---
 
@@ -431,7 +431,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 
 ### Visual Aesthetic:
 - **Primary Theme:** "A warm yellow machine that loves you at your worst"
-- **Color Mood:** FEBO yellow and compartment amber against night black — institutional light rendered as comfort, not menace
+- **Color Mood:** Frietomat yellow and compartment amber against night black — institutional light rendered as comfort, not menace
 - **Lighting:** Harsh overhead fluorescent softened by dozens of tiny warm compartment glows; 3 AM overlay warms everything further
 - **Texture:** Chrome polished by a million hands, glass fogged by eternal steam, wrappers and worn ledges — clean enough, loved completely
 
@@ -439,7 +439,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - The always-full trash bin and always-empty napkin dispenser tell you everything about throughput
 - Window food photos that outshine reality — standard practice, honestly deployed
 - The "SINCE 1941" door text is true, and the wall's chrome wear proves it
-- The clock face is always visible: FEBO wants you to know what hour your choices are happening at
+- The clock face is always visible: Frietomat wants you to know what hour your choices are happening at
 
 ### Character Integration Notes:
 - Anouk stays behind the counter; her Recognition Nod is the location's emotional payoff
@@ -471,13 +471,13 @@ assets/sprites/locations/shamsterdam/febo_automat/
 
 | # | Filename | Dimensions |
 |---|----------|------------|
-| 1 | febo_exterior.png | 1024x512 |
-| 2 | febo_interior_main.png | 1920x1080 |
-| 3 | febo_wall_grid.png | 1024x1024 |
-| 4 | febo_food_items.png | 256x256 |
-| 5 | npc_febo_staff_customers.png | 1024x512 |
-| 6 | febo_effects.png | 512x256 |
-| 7 | febo_ui.png | 512x512 |
+| 1 | frietomat_exterior.png | 1024x512 |
+| 2 | frietomat_interior_main.png | 1920x1080 |
+| 3 | frietomat_wall_grid.png | 1024x1024 |
+| 4 | frietomat_food_items.png | 256x256 |
+| 5 | npc_frietomat_staff_customers.png | 1024x512 |
+| 6 | frietomat_effects.png | 512x256 |
+| 7 | frietomat_ui.png | 512x512 |
 
 **Total Estimated Memory:** ~22 MB in-memory (uncompressed RGBA worst case), within the 34 MB location budget
 
@@ -486,13 +486,13 @@ assets/sprites/locations/shamsterdam/febo_automat/
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files:
-- [ ] `febo_exterior.png` (1024x512)
-- [ ] `febo_interior_main.png` (1920x1080)
-- [ ] `febo_wall_grid.png` (1024x1024)
-- [ ] `febo_food_items.png` (256x256)
-- [ ] `npc_febo_staff_customers.png` (1024x512)
-- [ ] `febo_effects.png` (512x256)
-- [ ] `febo_ui.png` (512x512)
+- [ ] `frietomat_exterior.png` (1024x512)
+- [ ] `frietomat_interior_main.png` (1920x1080)
+- [ ] `frietomat_wall_grid.png` (1024x1024)
+- [ ] `frietomat_food_items.png` (256x256)
+- [ ] `npc_frietomat_staff_customers.png` (1024x512)
+- [ ] `frietomat_effects.png` (512x256)
+- [ ] `frietomat_ui.png` (512x512)
 
 ### Quality Requirements:
 | Requirement | Specification |
@@ -522,7 +522,7 @@ assets/sprites/locations/shamsterdam/febo_automat/
 - [ ] Master files preserve layer structure for future edits
 
 ### Quality Checkpoints:
-- [ ] Satirical theme is clear throughout all assets (affectionate portrait — the tourist experience is the joke, never FEBO)
+- [ ] Satirical theme is clear throughout all assets (affectionate portrait — the tourist experience is the joke, never Frietomat)
 - [ ] Hidden areas/interactions have discoverable visual cues (Mystery Row, restock door / tunnel emergence wall, Regular's efficiency)
 - [ ] Performance optimized (CPU particles, atlas limits respected, one crowd block per period)
 - [ ] Touch zone sizing considered (44px minimum for wall slots, coin plate, counter)
@@ -546,4 +546,4 @@ assets/sprites/locations/shamsterdam/febo_automat/
 | No Crypto Elements | ✅ | Pure coin-operated tradition; the machines don't even take card |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 
-**Once these assets ship, FEBO becomes the game's warmest room: a wall of light where every player, at their lowest hour, pulls a handle and is fed without a single question asked.**
+**Once these assets ship, Frietomat becomes the game's warmest room: a wall of light where every player, at their lowest hour, pulls a handle and is fed without a single question asked.**

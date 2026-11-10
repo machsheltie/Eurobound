@@ -263,7 +263,7 @@
 
 ### Cross-Location Dependencies
 - **The Tolerance Hostel**: Kitchen discussion "Did you go to the pancake place? Did they explain before you ordered?"
-- **FEBO Automat**: Bros may compare value "At FEBO you KNOW what you're getting for €3"
+- **Frietomat**: Bros may compare value "At Frietomat you KNOW what you're getting for €3"
 - **Café de Schaamte**: Espresso after pancakes, processing what happened
 - **De Groene Gids**: Pre-pancake visit may affect appetite appreciation (munchies help)
 

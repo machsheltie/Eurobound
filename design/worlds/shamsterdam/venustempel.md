@@ -283,7 +283,7 @@ A stacking status effect. It is the location's core system and it follows the pa
 | 1 | **Warm Inside** | +2 Bravado, +HP, +Charisma for one hour. Feels fantastic. **Genuinely is fantastic.** Lord Pilsner declares himself "at my absolute peak." He is. This is the peak. |
 | 2 | **Communal** | Still no penalty. Still a buff. A single ambient stomach gurgle enters the party audio bed and never leaves. Nobody comments on it. Not once. Not ever. |
 | 3 | **Well-Travelled Chocolate** | −2 Constitution. HP tick on every fast travel. The gurgle is now audible in dialogue scenes and the volume slider does not affect it. Bros begin blaming things (see Attribution Table). Bravado is unaffected — they still feel amazing. |
-| 4 | **De Fontein Voorziet** ("The Fountain Provides") | Full urgent-navigation state. Febo Automat and Voetgangerstunnel gain a flashing FACILITIES marker; party speed +15% toward them and −15% toward anything else. Dialogue is interrupted mid-word, mid-boast, at the worst possible line, in front of whoever the player most wanted to impress. The bros do not stop bragging; they brag *faster*. |
+| 4 | **De Fontein Voorziet** ("The Fountain Provides") | Full urgent-navigation state. Frietomat and Voetgangerstunnel gain a flashing FACILITIES marker; party speed +15% toward them and −15% toward anything else. Dialogue is interrupted mid-word, mid-boast, at the worst possible line, in front of whoever the player most wanted to impress. The bros do not stop bragging; they brag *faster*. |
 | 5+ | **Everyone's Chocolate** | **Shamsterdam Stomach.** Max HP −40% for the in-game day. All Bravado gains halved. Encounter dialogue gains a percussive involuntary interjection on a 20-second timer. The Tolerance Hostel bathroom-queue event fires on the next rest and Ingrid does not comment, which is worse. Any NPC conversation begun at Tier 5 has a 30% chance of the other party quietly ending it. **None of this dents them for one second.** They still describe the day as the best of the trip, and they are still, on the evidence, correct. |
 
 **Losing Stacks**
@@ -292,7 +292,7 @@ A stacking status effect. It is the location's core system and it follows the pa
 | Gunter's hand wipe | 1 | 1 SOV |
 | Lotte's "Handreiniger" (gift shop) | 2 | 4 Sovs |
 | Full night's sleep at The Tolerance Hostel | 2 | Standard rest |
-| Febo Automat croquette | 1 | 2.20 Sovs — mechanically real, medically nonsense, the bros swear by it |
+| Frietomat croquette | 1 | 2.20 Sovs — mechanically real, medically nonsense, the bros swear by it |
 | Natural decay | 1 per in-game day | Free |
 
 **The Attribution Table** — what the bros blame, in order, every single time:
@@ -573,7 +573,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 - **Condomerie Het Gulden Vlies**: Adjacent trade, different district. Femke and Lotte have professional awareness and no relationship.
 - **The Hemp Museum**: "We've been to TWO museums" — with decreasing conviction
 - **The Tolerance Hostel**: Bathroom-queue event at Tier 5; Ingrid on the interior-photo exclusion list; Ingrid has an opinion about the fountain and will not share it
-- **Febo Automat**: Tier 4 urgent-facilities node; the croquette that removes a stack for reasons that are mechanically real and medically nonsense
+- **Frietomat**: Tier 4 urgent-facilities node; the croquette that removes a stack for reasons that are mechanically real and medically nonsense
 - **Voetgangerstunnel**: Tier 4 urgent-facilities node; Henk will give unhelpfully accurate directions to a toilet
 - **Casa Rosé**: No longer on the same street since the move. Staff line updated: "The Temple? They moved. They do chocolate now. Yes. I don't know either."
 - **Café de Schaamte**: Bros attempt to describe the museum to Agent Havok, fail, describe the fountain instead, succeed too well

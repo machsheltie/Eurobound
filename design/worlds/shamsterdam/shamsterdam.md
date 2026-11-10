@@ -133,7 +133,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Disappointed Americans expecting IHOP thickness
 - Maple syrup served in portions smaller than their dreams
 
-### Brouwerij de Molen (The Windmill Brewery)
+### The Wobbly Windmill Brewery
 **Brewery Tour Location #1**
 - Craft brewery housed in an actual working windmill
 - "Artisanal" pricing for "industrial" portions
@@ -157,7 +157,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 **Shamsterdam Brewery Tour Completion Reward**: "Canal Courage" passive — All Bravado loss reduced by 25% while intoxicated
 
-### FEBO Automat
+### Frietomat
 **Wall of Questionable Snacks**
 - Push a coin, get a mystery meat kroket from the wall
 - 3 AM regret dispensary
@@ -282,7 +282,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 ### Time-Based Elements
 - **Pre-10pm**: Museums, cheese shops, cultural alibi opportunities
 - **10pm-2am**: Peak chaos in Roodelicht Row, coffeeshop crowds
-- **2am-4am**: FEBO automat pilgrimage, canal-side regret
+- **2am-4am**: Frietomat pilgrimage, canal-side regret
 - **Post-4am**: The "where are we and how did we get here" phase
 - **Dawn**: Walk of shame past jogging locals, maximum judgment
 
@@ -418,7 +418,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **Café de Schaamte**: Primary quest hub connection, Agent Havok mission briefings
 - **The Tolerance Hostel**: Communal network, gossip threads, roommate drama
 - **Hemp Museum Courtyard**: Surprisingly good signal, chill atmosphere
-- **FEBO Corner**: 3 AM connections, regret-based chat threads
+- **Frietomat Corner**: 3 AM connections, regret-based chat threads
 - **Canal Bench Network**: Public Wi-Fi with "questionable security" warnings
 - **ICQ Special**: "Mom" check-in with increasing concern about your "European vacation"
 

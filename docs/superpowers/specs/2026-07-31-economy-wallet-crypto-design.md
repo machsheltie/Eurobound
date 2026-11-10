@@ -177,7 +177,7 @@ may reference real places (Brazzaville) since they are framed as the real intern
      Ye Olde B.R.E.W. Lab
    - **Publandia:** The Blarney Trap · The Stoutworks Brewery · Trinity of Pints · Shenanigans
    - **Sinfonia:** The Moderato Pub · The Standing Ovation · Crown & Cask · The Dancing Stein
-   - **Shamsterdam (expansion, not in base tracker):** Brouwerij de Molen · Proeflokaal 't Kansen
+   - **Shamsterdam (expansion, not in base tracker):** The Wobbly Windmill Brewery · Proeflokaal 't Kansen
      (+2 slots and 2 bonus slots remain author-TBD; expansion scope, no action this round)
    Also fix the `deboucheryville` city-key typo and the `absynthium`→`absinthium` spelling.
 4. **Round 5 runs in full, retrofits included**, concurrent with the paused folder reorg.

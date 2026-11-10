@@ -319,7 +319,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - Bicycle zooming past (blur)
 - Surface chaos immediate
 
-**FEBO Emergence** (128×128)
+**Frietomat Emergence** (128×128)
 - Behind automat heating unit
 - Warm glow
 - 3 AM atmosphere regardless of time
@@ -447,7 +447,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - Bike Crossing assets (entry point)
 - Red Light District assets (wrong exit)
 - Coffeeshop Quarter assets (wrong exit)
-- FEBO Automat assets (hidden exit)
+- Frietomat assets (hidden exit)
 
 ### Unique to This Location
 - All tunnel-specific tiles

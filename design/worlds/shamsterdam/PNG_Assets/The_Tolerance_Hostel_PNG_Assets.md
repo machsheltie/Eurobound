@@ -644,7 +644,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Café de Schaamte | Exhausted status carried into the espresso scene | Hostel war stories over coffee; sleep quality visibly affects the player sprite |
 | De Groene Gids | Common room disruption state; "supplies" prop in the dorm | Returning with supplies raises the noise-violation counter |
 | Casa Rosé | Kitchen Morning Block gossip payload | Morning-after processing happens at the kitchen table |
-| FEBO Automat | Oversized hostel key prop visible on 3 AM returns | Late-night snack acquisition on the walk back |
+| Frietomat | Oversized hostel key prop visible on 3 AM returns | Late-night snack acquisition on the walk back |
 | Leeman's Döner Palace | Wolf's "tell him Mehmet Wolf sent you" gossip line | Mehmet's Silent Judgment Hold frame plays on that exact line |
 | Proeflokaal 't Kansen | Sawdust-Dusted Clothing overlay persists until the next sleep | Kitchen gossip references "the place with the sawdust" |
 | The Hemp Museum | Gift Shop Bag prop visible in dorm and kitchen | The Cultural Alibi can be challenged at the kitchen table |

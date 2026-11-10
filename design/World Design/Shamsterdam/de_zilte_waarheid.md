@@ -300,7 +300,7 @@
 | Normal | Standard nutrition + growth | Character development |
 
 ### Cross-Location Dependencies
-- **FEBO**: Late-night contrast (processed vs. raw, desperation vs. intention)
+- **Frietomat**: Late-night contrast (processed vs. raw, desperation vs. intention)
 - **The Pancake House**: Comparison (herring = authentic, pancakes = trap)
 - **Stroopwafel Cart**: Recovery comfort after herring challenge
 - **Harbor District**: Geographic connection, working waterfront atmosphere

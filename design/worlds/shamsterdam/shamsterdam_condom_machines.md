@@ -52,7 +52,7 @@ The gag is entirely one-directional: the city is not doing anything. The machine
 - Voetgangerstunnel Zone 4, in a corridor with no other features, no lighting fixture of its own, and no signage
 - Two metres from the Condomerie's front door, which Femke has never once commented on
 - On the Klompen Konfessional's exterior wall, under a hand-painted sign reading "AUTHENTIC DUTCH EXPERIENCE" that predates the machine and refers to the clogs
-- Behind the FEBO Automat's heating unit, permanently warm to the touch
+- Behind the Frietomat's heating unit, permanently warm to the touch
 - In the Café de Schaamte courtyard, where Agent Havok has used it as a dead drop exactly once
 
 ---
@@ -182,7 +182,7 @@ Randomised on purchase from the entire table above, plus:
 
 ### Touch & Mobile Notes
 - Interaction hitbox 44px minimum; machines are wall-mounted so the hitbox is a vertical rectangle
-- Slot grid UI reuses the FEBO Automat panel layout with a different skin — deliberate visual rhyme between "wall of hot croquettes" and "wall of prophylactics," both presented by the city with identical bureaucratic neutrality
+- Slot grid UI reuses the Frietomat panel layout with a different skin — deliberate visual rhyme between "wall of hot croquettes" and "wall of prophylactics," both presented by the city with identical bureaucratic neutrality
 
 ### The Sticker Layer (Micro-Collectible)
 Every fourth machine has a sticker slapped over part of the branding. Nine stickers city-wide, each a single line of readable micro-text. Examples for the writing pass:
@@ -237,7 +237,7 @@ Ride along on Ilse's restocking route.
 ### 2. The Guilder Problem
 De Guldenvreter needs a coin from a dead currency. Three sources:
 - **Canal Bike Recovery** dive: one guilder in the silt (free, requires the dive)
-- **FEBO Automat** coin return: one guilder, discoverable by examining the coin slot after any purchase (free, requires one examine)
+- **Frietomat** coin return: one guilder, discoverable by examining the coin slot after any purchase (free, requires one examine)
 - **Het Rode Winkeltje** (Roodelicht Row gift shop): Trijntje sells one for **12 Sovs**. It is not money and cannot be spent anywhere; she tells you so, unprompted, before selling it. She is not scamming anyone — she is pricing a novelty coin, and the bros buy it anyway, having been informed.
 
 ### 3. The Question Mark
@@ -320,7 +320,7 @@ Agent Havok uses the Café de Schaamte courtyard machine as a dead drop exactly 
 | Location | Link |
 |----------|------|
 | `condomerie_het_gulden_vlies.md` | Non-competition matrix above; Femke and Joost dialogue additions |
-| `febo_automat.md` | Shared slot-grid UI skin; guilder in the coin return; the warm machine behind the heating unit |
+| `frietomat.md` | Shared slot-grid UI skin; guilder in the coin return; the warm machine behind the heating unit |
 | `the_hemp_museum.md` | Variant 6; "Actually Learned Something" achievement |
 | `voetgangerstunnel.md` | Zone 2 and Zone 4 machines; the `WILLEM WEET` sticker; Henk denies Zone 4 exists |
 | `klompen_konfessional.md` | Exterior wall machine; Overprepared -Charm interaction |
@@ -341,7 +341,7 @@ Agent Havok uses the Café de Schaamte courtyard machine as a dead drop exactly 
 - `veiligomaat_bakfiets.png` — 64x96 — Mk. IV housing, bike-shop stock visible
 - `veiligomaat_sunken.png` — 64x96 — silt, algae, still lit
 - `veiligomaat_stickers.png` — 64x32 x9 — sticker overlay strip
-- `veiligomaat_slot_ui.png` — 256x192 — slot grid (FEBO panel reskin)
+- `veiligomaat_slot_ui.png` — 256x192 — slot grid (Frietomat panel reskin)
 - `ilse_route_tech.png` — 64x96 — hi-vis, keyring
 - `ilse_servicing.png` — 64x96x3 — panel open, restock, close
 - `veiligomaat_keyfob.png` — 32x32 — cosmetic, opens nothing

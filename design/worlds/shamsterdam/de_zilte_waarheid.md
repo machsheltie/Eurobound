@@ -266,7 +266,7 @@
 - **Behavior**: Waits at optimal distance, times tourist hesitation
 - **Dialogue**: *aggressive seagull noises*
 - **Function**: Environmental hazard, consequence for weakness
-- **Why "Hendrik"**: Named after Brewmaster Hendrik at Brouwerij de Molen, who once threw a herring at this exact bird. The bird caught it. The name stuck. Maarten has never corrected anyone. The brewmaster is aware and considers it an honour.
+- **Why "Hendrik"**: Named after Brewmaster Hendrik at The Wobbly Windmill Brewery, who once threw a herring at this exact bird. The bird caught it. The name stuck. Maarten has never corrected anyone. The brewmaster is aware and considers it an honour.
 
 ### Original NPC Dialogue
 **Maarten's Philosophy (Earned Through Persistence):**
@@ -301,7 +301,7 @@
 | Normal | Standard nutrition + growth | Character development |
 
 ### Cross-Location Dependencies
-- **FEBO**: Late-night contrast (processed vs. raw, desperation vs. intention)
+- **Frietomat**: Late-night contrast (processed vs. raw, desperation vs. intention)
 - **The Pancake House**: Comparison (herring = authentic, pancakes = trap)
 - **Stroopwafel Cart**: Recovery comfort after herring challenge
 - **Harbor District**: Geographic connection, working waterfront atmosphere

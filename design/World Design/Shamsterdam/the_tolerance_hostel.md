@@ -304,7 +304,7 @@ Overhear conversations that provide:
 - **Café de Schaamte**: Bros discuss hostel war stories over espresso
 - **De Groene Gids**: Returns to hostel with "supplies," disrupts common room
 - **Casa Rosé**: Morning-after processing happens in kitchen
-- **FEBO Automat**: 3 AM returns pass FEBO, late-night snack acquisition
+- **Frietomat**: 3 AM returns pass Frietomat, late-night snack acquisition
 
 ### Wi-Fi Network: "TolerantNetwork_Guest"
 - **Password**: "everything" (on-the-nose, yes)

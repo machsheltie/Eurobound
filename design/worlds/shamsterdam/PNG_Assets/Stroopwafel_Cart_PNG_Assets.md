@@ -368,7 +368,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | The Pancake House | Comparison dialogue callbacks (8 Sovs well-spent vs 18 Sovs regret) | Post-Pancake Disappointment status interacts with Comfort |
 | De Groene Gids | Enhanced-appreciation state ("This is like CLOUDS") | Space Cake Effect modifies first-bite reaction text |
 | De Kuipmarkt | Market backdrop strip shared with market zone | Cart anchored at market entrance mornings |
-| FEBO Automat | Comfort-food network contrast (3 AM vs daytime) | Dialogue references only, no shared sprites |
+| Frietomat | Comfort-food network contrast (3 AM vs daytime) | Dialogue references only, no shared sprites |
 | Supermarket (any) | Packaged stroopwafel sprite | The sad comparison item sold elsewhere |
 
 ---

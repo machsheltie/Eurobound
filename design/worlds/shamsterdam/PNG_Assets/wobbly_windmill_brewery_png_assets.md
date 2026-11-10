@@ -1,9 +1,9 @@
-# Brouwerij de Molen - Complete PNG Asset Requirements
+# The Wobbly Windmill Brewery - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Brouwerij de Molen ("The Windmill Brewery") is a 350-year-old working windmill in the Shamsterdam countryside converted into a craft brewery mini-dungeon — a spinning building where tourists pay 25 Sovs to get dizzy while Brewmaster Hendrik lectures about respecting the grain and a Yeast Golem rises from the grinding floor. This document specifies every PNG asset across the four floors (ground/gift shop, grinding floor boss arena, tasting room, blade level), the exterior and countryside approach, the Yeast Golem boss with all three phases, staff and visitor NPCs, and the tasting/selfie/opener systems. Its satirical essence in a sentence: authentic Dutch heritage weaponized into Instagram bait that charges you to be disoriented.
+The Wobbly Windmill Brewery is a 350-year-old working windmill in the Shamsterdam countryside converted into a craft brewery mini-dungeon — a spinning building where tourists pay 25 Sovs to get dizzy while Brewmaster Hendrik lectures about respecting the grain and a Yeast Golem rises from the grinding floor. This document specifies every PNG asset across the four floors (ground/gift shop, grinding floor boss arena, tasting room, blade level), the exterior and countryside approach, the Yeast Golem boss with all three phases, staff and visitor NPCs, and the tasting/selfie/opener systems. Its satirical essence in a sentence: authentic Dutch heritage weaponized into Instagram bait that charges you to be disoriented.
 
-**Location ID:** `shamsterdam_countryside_brouwerij_molen_01`
+**Location ID:** `shamsterdam_countryside_wobbly_windmill_brewery_01`
 **Theme:** "Authentic" experience tourism — paying premium for discomfort disguised as tradition; craft beer pretension; windmill fetishization
 **Zone:** Shamsterdam Countryside (short train ride from central, 8 Sovs round trip, views are fields)
 **Hours:** 11 AM - 8 PM (brewery tour hours, last tour at 6 PM)
@@ -25,25 +25,25 @@ Brouwerij de Molen ("The Windmill Brewery") is a 350-year-old working windmill i
 
 ## 📁 File Structure
 ```
-assets/sprites/locations/shamsterdam/brouwerij_de_molen/
+assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ├── environment/
-│   ├── brouwerij_molen_exterior.png
-│   ├── molen_ground_floor.png
-│   ├── molen_grinding_floor.png
-│   └── molen_tasting_blade_level.png
+│   ├── wobbly_windmill_brewery_exterior.png
+│   ├── wobbly_windmill_ground_floor.png
+│   ├── wobbly_windmill_grinding_floor.png
+│   └── wobbly_windmill_tasting_blade_level.png
 ├── npcs/
-│   └── npc_molen_cast.png
+│   └── npc_wobbly_windmill_cast.png
 ├── boss/
 │   ├── yeast_golem_battle.png
 │   └── yeast_golem_phases.png
 └── ui/
-    └── molen_items_ui.png
+    └── wobbly_windmill_items_ui.png
 ```
 
 ---
 
 ## 🌾 Sprite Sheet 1: Exterior & Countryside
-**File:** `brouwerij_molen_exterior.png`
+**File:** `wobbly_windmill_brewery_exterior.png`
 **Dimensions:** 1024x768 pixels
 
 ### The Windmill:
@@ -57,7 +57,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ### Signage:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Painted Sign | (896, 0) | 128x64 | "BROUWERIJ DE MOLEN — Est. 1680 / 2008" |
+| Painted Sign | (896, 0) | 128x64 | "THE WOBBLY WINDMILL BREWERY — Est. 1680 / 2008" |
 | Modern Sign | (896, 64) | 128x32 | "CRAFT BEER TOURS — TASTING FLIGHTS — GIFT SHOP" |
 | Warning Sign | (896, 96) | 128x64 | "WINDMILL OPERATIONAL — BLADES ROTATE — WATCH HEAD" |
 | Liability Sign | (896, 160) | 128x32 | "The spinning is intentional. The dizziness is not our fault." |
@@ -77,7 +77,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ---
 
 ## 🛍️ Sprite Sheet 2: Ground Floor & Gift Shop
-**File:** `molen_ground_floor.png`
+**File:** `wobbly_windmill_ground_floor.png`
 **Dimensions:** 1024x512 pixels
 
 ### Reception & Fixtures:
@@ -92,7 +92,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ### Gift Shop Merchandise:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Branded Glasses Display | (0, 128) | 128x96 | "Molen" glasses 18 Sovs (the beer is 6 Sovs) |
+| Branded Glasses Display | (0, 128) | 128x96 | "Wobbly Windmill" glasses 18 Sovs (the beer is 6 Sovs) |
 | Mini Windmill Souvenirs | (128, 128) | 128x96 | 25 Sovs, made overseas, painted here |
 | Brewmaster's Book Stack | (256, 128) | 96x96 | "Respect The Grain" 35 Sovs, self-published, unreadable |
 | T-Shirt Rack | (352, 128) | 128x96 | "I SURVIVED THE SPIN" 30 Sovs (they know) |
@@ -115,7 +115,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ---
 
 ## ⚙️ Sprite Sheet 3: Grinding Floor (Boss Arena)
-**File:** `molen_grinding_floor.png`
+**File:** `wobbly_windmill_grinding_floor.png`
 **Dimensions:** 1024x1024 pixels
 
 ### The Grinding Mechanism:
@@ -156,7 +156,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ---
 
 ## 🍺 Sprite Sheet 4: Tasting Room & Blade Level
-**File:** `molen_tasting_blade_level.png`
+**File:** `wobbly_windmill_tasting_blade_level.png`
 **Dimensions:** 1024x512 pixels
 
 ### Tasting Room (Second Floor):
@@ -233,7 +233,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ---
 
 ## 👥 Sprite Sheet 7: Staff & Visitor NPCs
-**File:** `npc_molen_cast.png`
+**File:** `npc_wobbly_windmill_cast.png`
 **Dimensions:** 1024x384 pixels
 **Sprite Size:** 64x96 pixels (groups noted)
 
@@ -272,7 +272,7 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ---
 
 ## 🏅 Sprite Sheet 8: Items, Effects & UI
-**File:** `molen_items_ui.png`
+**File:** `wobbly_windmill_items_ui.png`
 **Dimensions:** 512x512 pixels
 
 ### Tasting & Rewards:
@@ -427,9 +427,9 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
-| molen_environment | exterior, ground floor, grinding floor, tasting/blade | 2048x2048 |
-| molen_boss | golem battle + phases | 2048x1024 |
-| molen_characters_ui | NPC cast, items/effects/UI | 1024x1024 |
+| wobbly_windmill_environment | exterior, ground floor, grinding floor, tasting/blade | 2048x2048 |
+| wobbly_windmill_boss | golem battle + phases | 2048x1024 |
+| wobbly_windmill_characters_ui | NPC cast, items/effects/UI | 1024x1024 |
 
 *(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
@@ -534,14 +534,14 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 
 | # | Filename | Dimensions |
 |---|----------|------------|
-| 1 | brouwerij_molen_exterior.png | 1024x768 |
-| 2 | molen_ground_floor.png | 1024x512 |
-| 3 | molen_grinding_floor.png | 1024x1024 |
-| 4 | molen_tasting_blade_level.png | 1024x512 |
+| 1 | wobbly_windmill_brewery_exterior.png | 1024x768 |
+| 2 | wobbly_windmill_ground_floor.png | 1024x512 |
+| 3 | wobbly_windmill_grinding_floor.png | 1024x1024 |
+| 4 | wobbly_windmill_tasting_blade_level.png | 1024x512 |
 | 5 | yeast_golem_battle.png | 1024x1024 |
 | 6 | yeast_golem_phases.png | 1024x1024 |
-| 7 | npc_molen_cast.png | 1024x384 |
-| 8 | molen_items_ui.png | 512x512 |
+| 7 | npc_wobbly_windmill_cast.png | 1024x384 |
+| 8 | wobbly_windmill_items_ui.png | 512x512 |
 
 **Total Estimated Memory:** ~22 MB raw RGBA texture data; ~42 MB maximum total footprint (location performance budget)
 
@@ -550,14 +550,14 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files:
-- [ ] `brouwerij_molen_exterior.png` (1024x768)
-- [ ] `molen_ground_floor.png` (1024x512)
-- [ ] `molen_grinding_floor.png` (1024x1024)
-- [ ] `molen_tasting_blade_level.png` (1024x512)
+- [ ] `wobbly_windmill_brewery_exterior.png` (1024x768)
+- [ ] `wobbly_windmill_ground_floor.png` (1024x512)
+- [ ] `wobbly_windmill_grinding_floor.png` (1024x1024)
+- [ ] `wobbly_windmill_tasting_blade_level.png` (1024x512)
 - [ ] `yeast_golem_battle.png` (1024x1024)
 - [ ] `yeast_golem_phases.png` (1024x1024)
-- [ ] `npc_molen_cast.png` (1024x384)
-- [ ] `molen_items_ui.png` (512x512)
+- [ ] `npc_wobbly_windmill_cast.png` (1024x384)
+- [ ] `wobbly_windmill_items_ui.png` (512x512)
 
 ### Quality Requirements:
 | Requirement | Specification |
@@ -611,4 +611,4 @@ assets/sprites/locations/shamsterdam/brouwerij_de_molen/
 | No Crypto Elements | ✅ | Pure traditional brewing; Tier of tech gimmicks absent per profile |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |
 
-**Once these assets are delivered, Brouwerij de Molen becomes Eurobound's first spinning dungeon: a heritage site that fights back with bread, beer, and centrifugal force — and every player leaves with a photo, a stamp, and a navigation debuff they paid 25 Sovs for.**
+**Once these assets are delivered, The Wobbly Windmill Brewery becomes Eurobound's first spinning dungeon: a heritage site that fights back with bread, beer, and centrifugal force — and every player leaves with a photo, a stamp, and a navigation debuff they paid 25 Sovs for.**

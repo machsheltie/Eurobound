@@ -274,7 +274,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 
 **City Prerequisite**: Must have The Blarney Trap Bottle Opener from Publandia to access ANY Shamsterdam brewery tour location.
 
-### 1. Brouwerij de Molen Bottle Opener
+### 1. The Wobbly Windmill Brewery Bottle Opener
 - **Design**: Miniature windmill with rotating blade arms, bottle opener integrated into the windmill base
 - **Material**: Brushed copper with grain-gold accents
 - **Inscription**: "Respect The Grain"
@@ -356,7 +356,7 @@ THE BLARNEY TRAP OPENER (€15 or Pint-Off)
 | | Crown & Cask | Habsburg crown | "By Royal Appointment" | €20 | Coronation |
 | | The Dancing Stein | Dancing stein | "One-Two-Three" | €18 | Stein Waltz |
 | **SHAMSTERDAM** | | | | | |
-| | Brouwerij de Molen | Rotating windmill | "Respect The Grain" | €22 | Defeat Yeast Golem |
+| | The Wobbly Windmill Brewery | Rotating windmill | "Respect The Grain" | €22 | Defeat Yeast Golem |
 | | Proeflokaal 't Kansen | Tulip jenever glass | "No Hands. No Fear." | €20 | Jenever gauntlet |
 
 **TOTAL**: 14 unique bottle openers across 4 cities

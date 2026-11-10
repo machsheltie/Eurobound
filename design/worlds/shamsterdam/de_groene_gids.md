@@ -249,7 +249,7 @@ Chadwick: *drops phone* "WHY IS THE FLOOR MOVING."
 
 ### Cross-Location Dependencies
 - **Café de Schaamte**: Bros may wander here after, need coffee, will complain about experience
-- **FEBO Automat**: Munchies system drives traffic here post-high
+- **Frietomat**: Munchies system drives traffic here post-high
 - **The Tolerance Hostel**: Fellow guests will have been here, war stories exchanged
 - **Leeman's Döner Palace**: Munchies destination, Mehmet comments on their "tourist eyes"
 

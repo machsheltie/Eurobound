@@ -307,7 +307,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 
 ### Cross-Location Dependencies
 - **The Tolerance Hostel**: Kitchen scene with visible chocolate bag
-- **FEBO**: Post-chocolate late-night comparison
+- **Frietomat**: Post-chocolate late-night comparison
 - **Condomerie**: Same district energy
 - **Stroopwafel Cart**: Comfort food contrast
 

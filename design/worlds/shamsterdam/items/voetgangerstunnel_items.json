@@ -304,12 +304,12 @@
       }
     },
     {
-      "shortcut_id": "febo_backdoor",
-      "display_name": "FEBO Backdoor",
-      "description": "A hidden passage behind the FEBO automat's heating unit. Smells like kroket.",
-      "unlock_condition": "febo_shortcut_quest_complete",
+      "shortcut_id": "frietomat_backdoor",
+      "display_name": "Frietomat Backdoor",
+      "description": "A hidden passage behind the Frietomat's heating unit. Smells like kroket.",
+      "unlock_condition": "frietomat_shortcut_quest_complete",
       "effect": {
-        "direct_access": "shamsterdam_febo_automat_01",
+        "direct_access": "shamsterdam_frietomat_01",
         "bypasses": "navigation_probability"
       }
     }
@@ -348,8 +348,8 @@
     {
       "achievement_id": "back_door_regular",
       "display_name": "Back Door Regular",
-      "description": "Discovered the secret passage to FEBO. It's always 3 AM there.",
-      "trigger": "febo_shortcut_discovered",
+      "description": "Discovered the secret passage to Frietomat. It's always 3 AM there.",
+      "trigger": "frietomat_shortcut_discovered",
       "type": "hidden"
     },
     {

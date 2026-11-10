@@ -518,7 +518,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 |--------------------|-------------------|-------------------|
 | The Tolerance Hostel | Distinctive shopping bag and bag-visibility silhouette reused in kitchen scenes | Bag prop carries into hostel dialogue; guests comment |
 | Casa Rosé Erotic Theatre | Shared Roodelicht-adjacent street backdrop tile and red neon bleed | Same-district walk; neon bleed intensity increases toward Casa Rosé |
-| FEBO Automat | None shared; post-purchase snack-run dialogue hook | Standard street transition |
+| Frietomat | None shared; post-purchase snack-run dialogue hook | Standard street transition |
 | Café de Schaamte | Shopping bag visible on the terrace; overheard-conversation hook | Bros process the purchase over espresso |
 | Airport / Customs (if implemented) | Shopping bag and receipt sprites | Awkward-moment scene uses the same bag art |
 

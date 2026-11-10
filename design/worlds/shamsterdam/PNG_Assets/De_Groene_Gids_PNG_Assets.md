@@ -629,13 +629,13 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | The Photography Prohibition | Photography sign, warning toast, Chadwick filming sprite | Ring light auto-detected; second offence means leaving |
 | Regular Status & Secret Menu | Regular progress UI, Secret Menu card, unlock toast | Three visits; same items, different names |
 | Merchandise Gauntlet | T-shirt wall, group discount sign and calculator, Marieke pitch frames | Exit corridor; unavoidable by layout |
-| The Munchies | Munchies status icon, contact high indicator | Drives traffic to FEBO and Leeman's Döner Palace after the SP boost fades |
+| The Munchies | Munchies status icon, contact high indicator | Drives traffic to Frietomat and Leeman's Döner Palace after the SP boost fades |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Café de Schaamte | Smoke Drift wisps are the source of the terrace's ambient haze; Tourist Trapped icon persists in the HUD | Bros arrive needing coffee and complaining; espresso prices show the +15% modifier |
-| FEBO Automat | Munchies status icon drives the traffic; shared status-effect HUD art | Munchies prompt fires on SP drop-off |
+| Frietomat | Munchies status icon drives the traffic; shared status-effect HUD art | Munchies prompt fires on SP drop-off |
 | Leeman's Döner Palace | Munchies icon and Contact High indicator; Mehmet's "tourist eyes" dialogue hook | Post-high transition; the Tourist Trapped modifier is visible on his prices |
 | The Tolerance Hostel | Branded T-shirt and poster items appear in bunk-room scenes; war stories exchanged | Merch worn or displayed carries into hostel dialogue |
 | Casa Rosé Erotic Theatre | Prior impairment level affects the show experience; shared Roodelicht evening audio bed | Impairment state carried between locations |

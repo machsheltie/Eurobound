@@ -348,7 +348,7 @@ Dutch, urban, flat. Not warm, not cold. The vocal equivalent of a laminated noti
 - The 5 Sovs tier's +10% is deliberately close to worthless. Do not buff it. The joke is that the premium tier is premium in name only, while the 10 Sovs tier is the real product.
 - "DON'T FOLLOW HENK" graffiti is flashlight-gated (Marloes, 6 Sovs). The full comedy chain is: buy the flashlight from the honest vendor → read the wall → realise you have been paying the wrong man for three visits.
 - Henk and Willem must never share a line of dialogue or a reference. Their mutual non-acknowledgement is a background gag with no punchline, which is what makes it work.
-- Do NOT name him Willem, Wim, or any variant. Canon: one first name, one character. Henk here; the FEBO Automat kitchen worker is the other Henk and is a separate, already-registered character — if they are ever placed in a scene together, that collision needs resolving before shipping.
+- Do NOT name him Willem, Wim, or any variant. Canon: one first name, one character. Henk here; the Frietomat kitchen worker is the other Henk and is a separate, already-registered character — if they are ever placed in a scene together, that collision needs resolving before shipping.
 
 ---
 

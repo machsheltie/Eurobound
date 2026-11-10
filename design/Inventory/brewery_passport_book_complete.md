@@ -137,7 +137,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 ## Shamsterdam Bottle Openers (2) — EXPANSION
 
-**Brouwerij de Molen Bottle Opener**
+**The Wobbly Windmill Brewery Bottle Opener**
 - **Design**: Miniature windmill with rotating blade arms, bottle opener integrated into the windmill base
 - **Material**: Brushed copper with grain-gold accents
 - **Inscription**: "Respect The Grain"
@@ -159,7 +159,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 ### Shamsterdam — Expansion (2 Stamps) — COMPLETE
 | Slot | Location | Stamp Design | Signature Beer | Unlock Condition |
 |------|----------|--------------|----------------|------------------|
-| 1 | Brouwerij de Molen | Windmill with grain sheaf, gold ink | Windmill Wit | Defeat Yeast Golem |
+| 1 | The Wobbly Windmill Brewery | Windmill with grain sheaf, gold ink | Windmill Wit | Defeat Yeast Golem |
 | 2 | Proeflokaal 't Kansen | Overfilled tulip glass, amber ink | Oude Genever | Complete Jenever Taste Test gauntlet |
 
 **Page Theme**: Orange background, tulip and windmill borders
@@ -167,7 +167,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 #### Shamsterdam Stamp Details
 
-**Stamp 1: Brouwerij de Molen**
+**Stamp 1: The Wobbly Windmill Brewery**
 - **Stamp Visual**: Traditional Dutch windmill with rotating blades, grain sheaf below
 - **Ink Color**: Grain gold with copper metallic accents
 - **Inscription**: "Survived The Spin"
@@ -185,7 +185,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 ### Shamsterdam Signature Beers (Detailed)
 
-**Windmill Wit (Brouwerij de Molen)**
+**Windmill Wit (The Wobbly Windmill Brewery)**
 - **Style**: Belgian-style witbier with Dutch grain
 - **ABV**: 6.2%
 - **Stats**: +25 HP, +10 Speed
@@ -193,7 +193,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Risk**: Navigation penalty stacks with other disorientation effects
 - **Price**: €8
 - **Flavor Text**: "Brewed with grain ground by the very windmill that's making you dizzy. The circular notes are intentional."
-- **Brewed By**: Brouwerij de Molen (windmill-ground grain)
+- **Brewed By**: The Wobbly Windmill Brewery (windmill-ground grain)
 
 **Oude Genever (Proeflokaal 't Kansen)**
 - **Style**: Aged Dutch jenever (zeer oud classification)
@@ -400,7 +400,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 
 | Location | Selfie Spot | Standard Photo | Special Variant |
 |----------|-------------|----------------|-----------------|
-| Brouwerij de Molen | Blade level platform | With spinning blades (timing matters) | With Hendrik post-Golem |
+| The Wobbly Windmill Brewery | Blade level platform | With spinning blades (timing matters) | With Hendrik post-Golem |
 | Proeflokaal 't Kansen | At the bar | Bowing to overfilled glass | With Kees's rare nod |
 
 **Full Shamsterdam Brewery Selfie Collection Reward**:
@@ -479,14 +479,14 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - bottle_opener_dancing_spin.png - 48x48 - Spin animation
 
 ### Shamsterdam Bottle Openers (4 PNGs)
-- bottle_opener_brouwerij_molen.png - 48x48 - Windmill with rotating blades
-- bottle_opener_molen_spin.png - 48x48x4 - Blade rotation animation
+- bottle_opener_wobbly_windmill_brewery.png - 48x48 - Windmill with rotating blades
+- bottle_opener_wobbly_windmill_spin.png - 48x48x4 - Blade rotation animation
 - bottle_opener_proeflokaal.png - 48x48 - Tulip glass with surface tension
 - bottle_opener_proeflokaal_leather.png - 24x24 - Sawdust-colored loop
 
 ### Shamsterdam Stamp Assets (4 PNGs)
-- stamp_brouwerij_molen.png - 64x64 - Windmill with grain sheaf
-- stamp_molen_animation.png - 64x64x4 - Blade rotation sequence
+- stamp_wobbly_windmill_brewery.png - 64x64 - Windmill with grain sheaf
+- stamp_wobbly_windmill_animation.png - 64x64x4 - Blade rotation sequence
 - stamp_proeflokaal.png - 64x64 - Overfilled tulip glass
 - stamp_proeflokaal_animation.png - 64x64x4 - Fill and thud sequence
 

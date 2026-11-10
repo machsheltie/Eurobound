@@ -110,14 +110,14 @@
       ]
     },
     
-    "febo_emergence": {
-      "event_id": "febo_backdoor",
-      "trigger": "exit_through_hidden_passage OR exit_probability_febo",
+    "frietomat_emergence": {
+      "event_id": "frietomat_backdoor",
+      "trigger": "exit_through_hidden_passage OR exit_probability_frietomat",
       "sequence": [
         {"time": 0, "action": "audio", "sound": "heating_unit_clatter"},
         {"time": 0.5, "action": "camera_emerge", "to": "behind_automat"},
         {"time": 1, "action": "ambient_change", "to": "3am_vibes"},
-        {"time": 1.5, "action": "tutorial_text", "text": "The FEBO automat. It's always 3 AM here, somehow."},
+        {"time": 1.5, "action": "tutorial_text", "text": "The Frietomat. It's always 3 AM here, somehow."},
         {"time": 2.5, "action": "offer", "type": "consolation_kroket", "price": 0}
       ],
       "secret_discovery": {
@@ -294,18 +294,18 @@
       }
     },
     
-    "febo_shortcut": {
-      "quest_id": "febo_shortcut_discovery",
+    "frietomat_shortcut": {
+      "quest_id": "frietomat_shortcut_discovery",
       "trigger": "find_hidden_entrance",
       "type": "hidden_quest",
       "phases": [
-        {"phase": "discover", "method": "flashlight_reveals_OR_febo_regular_OR_hint"},
+        {"phase": "discover", "method": "flashlight_reveals_OR_frietomat_regular_OR_hint"},
         {"phase": "use", "action": "crawl_through_heating_vent"},
-        {"phase": "emerge", "location": "febo_automat"}
+        {"phase": "emerge", "location": "frietomat"}
       ],
       "reward": {
         "achievement": "back_door_regular",
-        "shortcut": "febo_tunnel_permanent",
+        "shortcut": "frietomat_tunnel_permanent",
         "item": "free_kroket"
       }
     },

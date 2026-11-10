@@ -16,7 +16,7 @@ The Voetgangerstunnel ("Pedestrian Tunnel") is the underground passage network b
 **Theme:** Amsterdam's genuinely confusing underground tunnel systems; "helpful" signage as tourist filter
 **Zone:** Central / Underground Network
 **Hours:** Always accessible (24 hours; busier during rush hours, eerier at night)
-**Primary Function:** Navigation hazard / transition zone / ironic shortcut — probability-based navigation puzzle with five zones, wrong-exit comedy reveals, item vendor, hint NPCs, and hidden quests ("The Eternal Busker", "Red Light Discovery", "FEBO Shortcut")
+**Primary Function:** Navigation hazard / transition zone / ironic shortcut — probability-based navigation puzzle with five zones, wrong-exit comedy reveals, item vendor, hint NPCs, and hidden quests ("The Eternal Busker", "Red Light Discovery", "Frietomat Shortcut")
 
 ---
 
@@ -339,7 +339,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - Bicycle zooming past (blur)
 - Surface chaos immediate
 
-**FEBO Emergence** (128×128)
+**Frietomat Emergence** (128×128)
 - Behind automat heating unit
 - Warm glow
 - 3 AM atmosphere regardless of time
@@ -524,7 +524,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 |-------|---------------------|-------------------|
 | Red Light Discovery | Red Light Emergence scene, Mevrouw Jansen sheet | First accidental Roodelicht emergence; "Scenic Route" achievement |
 | The Eternal Busker | Willem sheet, Ghost Flicker, tip jar tile | Tip 5 Sovs three visits; "Willem's Friend" + accordion cosmetic |
-| FEBO Shortcut Discovery | FEBO Emergence scene | Hidden entrance behind heating unit; "Back Door Regular" |
+| Frietomat Shortcut Discovery | Frietomat Emergence scene | Hidden entrance behind heating unit; "Back Door Regular" |
 | Stay Away Campaign | Tileset (corridor props) | Pamphlet #4 found in tunnel |
 | Tour Guide (achievement) | Lost Tourist variants (Relieved at Help row) | Escort a lost tourist to correct exit |
 
@@ -537,10 +537,10 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 | Roodelicht Row | Red Light Emergence scene | Infamous wrong exit (35%); no tunnel re-entry |
 | Coffeeshop Quarter | Coffeeshop Emergence scene | Wrong exit into storage room (15%) |
 | Canal Ring Promenade | Canal Emergence scene | Surface wrong exit with bicycle near-miss |
-| FEBO Automat | FEBO Emergence scene | Hidden shortcut, 3 AM vibes always |
+| Frietomat | Frietomat Emergence scene | Hidden shortcut, 3 AM vibes always |
 
 ### Cross-Reference: Related Assets
-- **Connects to**: Bike Crossing assets (entry point), Red Light District assets (wrong exit), Coffeeshop Quarter assets (wrong exit), FEBO Automat assets (hidden exit)
+- **Connects to**: Bike Crossing assets (entry point), Red Light District assets (wrong exit), Coffeeshop Quarter assets (wrong exit), Frietomat assets (hidden exit)
 - **Unique to this location**: All tunnel-specific tiles, navigation signage, Henk/Marloes/Willem NPCs, Lost Tourist variants, wrong exit reveal scenes
 
 ---
@@ -715,7 +715,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (helpful-looking design that misleads)
-- [ ] Hidden areas/interactions have discoverable visual cues (graffiti under flashlight, FEBO entrance, emergency sign secret)
+- [ ] Hidden areas/interactions have discoverable visual cues (graffiti under flashlight, Frietomat entrance, emergency sign secret)
 - [ ] Performance optimized (baked lighting, CPU particles, atlas limits respected)
 - [ ] Touch zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (stripe end-caps, emergency sign shape)

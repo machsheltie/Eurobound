@@ -36,7 +36,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 - **Primary**: Central Shamsterdam Bike Crossing (south sidewalk, after 10 successful crossings OR €15 from Bike Rental Guy)
 - **Secondary**: Museum Mile underground parking
 - **Tertiary**: Central Station basement level
-- **Hidden**: Behind FEBO Automat (requires interaction)
+- **Hidden**: Behind Frietomat (requires interaction)
 
 ### Entry Conditions
 - **From Bike Crossing**: Must unlock underground passage (10 crossings) OR pay for escort knowledge
@@ -52,7 +52,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 | "Centraal Station" | Coffeeshop Quarter | 15% |
 | "Centraal Station" | Where you started | 10% |
 | "Museum Plein" | Museum Mile | 50% |
-| "Museum Plein" | FEBO Automat | 30% |
+| "Museum Plein" | Frietomat | 30% |
 | "Museum Plein" | Canal (surface) | 20% |
 
 ---
@@ -157,7 +157,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 - Back to surface, worse than where you started
 - "Bicycle Trauma" risk from surprise exposure
 
-**FEBO Automat Emergence**
+**Frietomat Emergence**
 - Exit behind the automat's heating unit
 - 3 AM vibes regardless of actual time
 - Kroket offered as consolation
@@ -366,11 +366,11 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 - **€5 Tip**: Reliable navigation advice
 - **€0 (theft attempt)**: Willem stops playing, stares at you
 
-**FEBO Hidden Entrance**
+**Frietomat Hidden Entrance**
 - **Type**: Secret Shortcut
 - **Location**: Behind automat heating unit
-- **Discovery**: Requires "FEBO Regular" status OR overheard hint
-- **Leads To**: Directly to FEBO Automat (3 AM vibes, any time)
+- **Discovery**: Requires "Frietomat Regular" status OR overheard hint
+- **Leads To**: Directly to Frietomat (3 AM vibes, any time)
 
 **Graffiti Hints**
 - **Type**: Environmental Storytelling / Navigation Aid
@@ -490,21 +490,21 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 - Willem's Accordion (cosmetic item)
 - Permanent +10% navigation in all tunnels
 
-### FEBO Shortcut Discovery
+### Frietomat Shortcut Discovery
 
-**Quest ID**: `shamsterdam_quest_febo_shortcut`
+**Quest ID**: `shamsterdam_quest_frietomat_shortcut`
 
 **Trigger**: Overhear hint OR discover accidentally
 
 **Sequence**:
-1. Find hidden entrance behind FEBO heating unit
+1. Find hidden entrance behind Frietomat heating unit
 2. Crawl through maintenance passage
-3. Emerge in FEBO Automat at any time (3 AM vibes always)
+3. Emerge in Frietomat at any time (3 AM vibes always)
 4. Quest complete
 
 **Reward**:
 - "Back Door Regular" achievement
-- Permanent FEBO shortcut unlocked
+- Permanent Frietomat shortcut unlocked
 - Free kroket (once)
 
 ---
@@ -517,12 +517,12 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 - **Museum Mile**: Secondary intended exit
 - **Roodelicht Row**: Unintended exit (35% probability)
 - **Coffeeshop Quarter**: Unintended exit (15% probability)
-- **FEBO Automat**: Hidden shortcut exit
+- **Frietomat**: Hidden shortcut exit
 - **Canal Ring Promenade**: Surface emergence option
 
 ### Shortcut Status
 - **Underground Passage** from Bike Crossing: Unlocked after 10 crossings
-- **FEBO Backdoor**: Hidden, requires discovery
+- **Frietomat Backdoor**: Hidden, requires discovery
 - **Station Direct**: Reliable after 5 successful navigations
 
 ### Quest Dependencies

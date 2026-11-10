@@ -383,7 +383,7 @@ Seamus does not leave The Blarney Trap. He does not have to — **the Seamus net
 |------|----------|--------------|-------------------|
 | Debaucheryville | The Absinthium Taproom | Opener grants passage past the standard tasting and into the mirror-puzzle route. Seamus is spoken of with slightly baffled respect. | "This opener is Irish. You know the man? Then you are not a tourist tonight. You are a guest of a colleague. Sit. Do not look directly at the mirrors yet." |
 | Debaucheryville | Three Crown Keg Haus | Opener is the difference between the public bar and the cellar. | "Seamus. The green one, with the shamrock till. He sends us people who can drink. Prove him right." |
-| Shamsterdam | Brouwerij de Molen | Opener holders are walked to the blade-level platform rather than being turned back at the grain floor. | "Ah — the Publandia opener. Your publican and my father corresponded for eleven years. Mind the blades." |
+| Shamsterdam | The Wobbly Windmill Brewery | Opener holders are walked to the blade-level platform rather than being turned back at the grain floor. | "Ah — the Publandia opener. Your publican and my father corresponded for eleven years. Mind the blades." |
 | Shamsterdam | Proeflokaal 't Kansen | The overfilled tulip glass is poured for opener holders without them having to ask, which is the only way to get the gauntlet started. | "Seamus's people. No hands. No fear. You know the rule already, or he did not send you." |
 | Publandia | The Stoutworks Brewery | Seamus appears **in person** in the tasting room during the post-tour cutscene, having driven out to collect a Sweet Surrender delivery. Only in-game appearance outside his pub. | "Don't look so surprised. It's my beer. Somebody has to check on it." |
 

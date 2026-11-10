@@ -447,7 +447,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| FEBO Automat | Fish Breath icon persists into FEBO scenes | Late-night contrast: raw intention vs. processed desperation |
+| Frietomat | Fish Breath icon persists into Frietomat scenes | Late-night contrast: raw intention vs. processed desperation |
 | Proeflokaal 't Kansen | Courage Buff carries into gauntlet attempts | Shared public-vulnerability courage system |
 | The Pancake House | Price board comparison gag | "Herring = authentic, pancakes = trap" dialogue callbacks |
 | Stroopwafel Cart | Success Pose B hand-off | Recovery comfort route after herring challenge |

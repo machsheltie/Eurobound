@@ -209,7 +209,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 **After the gauntlet is completed**:
 > *(He nods when the player enters. Nobody else gets this. It is not in the twelve words and it does not need to be.)*
 
-**After Brouwerij de Molen (both breweries complete)**:
+**After The Wobbly Windmill Brewery (both breweries complete)**:
 > "Hendrik stamped you." *(Beat.)* "Windmill." *(He pours without being asked.)* "Canal Courage. You have it."
 
 **After the Roodelicht tunnel emergence (Red Light Shame debuff active)**:
@@ -280,7 +280,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 |-----|--------------|
 | Assistant Barkeep Pim | Nephew, "volunteered" into the family business. Restocking, sawdust, physical support. **Answers every question requiring more than four words.** |
 | Seamus O'Brien (The Blarney Trap, Publandia) | The cross-city gate. Kees's recognition of the shamrock opener is one word: "Seamus." They have an arrangement neither has ever described. |
-| Brewmaster Hendrik (Brouwerij de Molen) | The other half of the Shamsterdam brewery tour. Mutual respect expressed entirely through stamps. Hendrik on Kees: "He does not stamp. If Kees has stamped you, you have done something." |
+| Brewmaster Hendrik (The Wobbly Windmill Brewery) | The other half of the Shamsterdam brewery tour. Mutual respect expressed entirely through stamps. Hendrik on Kees: "He does not stamp. If Kees has stamped you, you have done something." |
 | The Regular (Ancient) | Fifty years, same spot, one jenever per hour, exactly. Potential couchsurf host — Kees translates his mutter into "He says you can stay." |
 | Opa Cees (Shamsterdam Bike Rental) | **Same first name, different character.** Both are named Cees; one goes by Kees, the family diminutive, and is a bartender in Old Town; the other is Opa Cees, a mechanic on the south side. They have never met and must never be staged together. |
 | Maarten (De Zilte Waarheid) | Same district generation. They nod. That is sufficient. |
@@ -353,7 +353,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 - **Quest**: Shamsterdam Brewery Tour
 - **Role**: Quest Gate, Gauntlet Administrator, Vendor, Stamp Giver
 - **Trigger**: Arrival at Proeflokaal 't Kansen carrying the Blarney Trap Bottle Opener
-- **Outcome**: "Oude Genever" stamp added to the Bottle Opener Keychain. With Brouwerij de Molen's Windmill Wit stamp, **completes the "Canal Courage" passive** — all Bravado loss reduced by 25% while intoxicated, with a small Shamsterdam flag icon when active.
+- **Outcome**: "Oude Genever" stamp added to the Bottle Opener Keychain. With The Wobbly Windmill Brewery's Windmill Wit stamp, **completes the "Canal Courage" passive** — all Bravado loss reduced by 25% while intoxicated, with a small Shamsterdam flag icon when active.
 
 ### Quest Gate Function — CROSS-CITY, HARD REQUIREMENT
 
