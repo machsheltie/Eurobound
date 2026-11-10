@@ -478,3 +478,12 @@ Open question: should it, and to what depth?
   key items as cosmetic wearables until an equipment format exists. Brand sweep approved:
   find every parody stand-in for a real brand/product/title, list it for the author, then
   rename the approved ones to the real names (locations excluded).
+- **Brand sweep rulings (author, 2026-11-10).** Rename: Napstur -> Napster, "Guiness
+  Suppositories" -> "Guinness Suppositories", Guooi -> Gucci, Rayban -> Ray-Ban, The Matricks ->
+  The Matrix, Johnny Nemonic -> Johnny Mnemonic. **Keep, intentional:** EMTV (the European
+  version of the network), The One True Pils ("it's funny"), Hamagotchi, iPawd, Kebab Kombat.
+  Venues with real names (Brouwerij de Molen, FEBO Automat) get parody names; names to be
+  proposed to the author.
+- **Image-tool allowance (author, 2026-11-10):** to fix the hall's last see-through spots, use
+  ChatGPT's image generator; failing that, **one** Seedream 5.5 layer decomposition on
+  AtlasCloud. AtlasCloud charges per image: use it for nothing else.
