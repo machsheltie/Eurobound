@@ -235,7 +235,7 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 **Visuals**:
 A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum trays stack to the ceiling. The smell of melting cheese and frying potatoes is AGGRESSIVE. A massive hand-painted sign shows a cross-section of the kapsalon with labels: "FRIES (foundation), MEAT (structure), CHEESE (soul), SALAD (lies we tell ourselves), SAUCE (truth)." Drunk tourists and locals alike crowd the counter. Plastic forks scattered on the floor — casualties of structural failure.
 
-**Vendor**: "Big Willem"  
+**Vendor**: "Big Wim"  
 6'5" Dutch-Turkish man, shaved head, gold chain, football jersey stretched over an impressive frame. Third-generation Shamsterdammer whose grandfather was one of the first Turkish immigrants. Speaks in a thunderous mix of Dutch slang, Turkish endearments, and food philosophy. Has strong opinions about EVERYTHING, especially the city where kapsalon was invented (he respects this grudgingly).
 
 **Catchphrases**:
@@ -275,8 +275,8 @@ The bros are mid-bite, aluminum tray between them, cheese strings dangling from 
 ```
 Lord Pilsner: *mouth full* "This... this changes everything."
 
-Bradley: *holding up a cheese-covered fry* "Gregory has never seen 
-cheese like this. Gregory is MOVED."
+Bradley: *holding up a cheese-covered fry* "I have never seen 
+cheese like this. I am MOVED."
 
 Chadwick: *filming* "Content. CONTENT. This is the content 
 the people NEED."
@@ -318,11 +318,11 @@ Da: "Twenty years I served you. TWENTY YEARS of lamb,
 garlic, and love. And you come HERE? To the DUTCH? 
 For CHEESE ON CHIPS?!"
 
-Big Willem: "Excuse me, this is KAPSALON, not 'cheese on chips'—"
+Big Wim: "Excuse me, this is KAPSALON, not 'cheese on chips'—"
 
 Da: "I KNOW WHAT IT IS, WILLEM."
 
-Big Willem: "...you know my name?"
+Big Wim: "...you know my name?"
 
 Da: "We're in the same WhatsApp group. 'European Döner Alliance.' 
 But that's NOT THE POINT."
@@ -349,12 +349,12 @@ Mr. Chadz: "Crypto conference in Shamsterdam. We Ubered."
 
 Chef Chuckles: *honks tiny horn* "The circus TRAVELS, my friend."
 
-Big Willem: "Is that a man in clown shoes?"
+Big Wim: "Is that a man in clown shoes?"
 
 Mr. Chadz: "Don't change the subject, Willem. 
 You think cheese makes you SPECIAL?"
 
-Big Willem: "...yes?"
+Big Wim: "...yes?"
 
 Chef Chuckles: "They chose US. They chose the CHAOS. 
 They chose meat of MYSTERIOUS ORIGIN. 
@@ -382,7 +382,7 @@ well
 mostly flesh
 haven't been outside in a while"
 
-Big Willem: "Who is this child in my establishment?"
+Big Wim: "Who is this child in my establishment?"
 
 Tony420: "i'm the one who asked the question
 and u said they ALL taste like shame
@@ -408,7 +408,7 @@ just... truth"
 **Setup**: Regardless of which confrontation occurred, the scene converges on the same challenge.
 
 ```
-Big Willem: "ENOUGH. There is only one way to settle this. 
+Big Wim: "ENOUGH. There is only one way to settle this. 
 The way the Dutch have settled disputes for centuries."
 
 Mehmet: *appears from nowhere, arms crossed* 
@@ -416,7 +416,7 @@ Mehmet: *appears from nowhere, arms crossed*
 
 Lord Pilsner: "A... taste-off?"
 
-Big Willem: "Three bites. Three döners. 
+Big Wim: "Three bites. Three döners. 
 Your previous champion versus Shamsterdam's finest."
 
 Mehmet: "No talking. No thinking. Just EATING. 
@@ -455,7 +455,7 @@ Chadwick: *already filming* "This is the SUPER BOWL of MEAT."
 ```
 *The Shamsterdam vendors nod slowly*
 
-Big Willem: "...respectable. Loyalty has value."
+Big Wim: "...respectable. Loyalty has value."
 
 Mehmet: "The Meat Architect acknowledges your... conviction. 
 Even if it is WRONG."
@@ -487,7 +487,7 @@ after ALL the meat we shared..."
 Lord Pilsner: "I'm sorry. The heart wants what the heart wants. 
 And my heart wants CHEESE."
 
-Big Willem: "WELCOME TO THE BROTHERHOOD OF THE TRAY."
+Big Wim: "WELCOME TO THE BROTHERHOOD OF THE TRAY."
 
 Mehmet: "The Meat Architect accepts your pilgrimage. 
 You have grown."
@@ -516,7 +516,7 @@ Lord Pilsner: "I... I can't choose. They're BOTH—"
 
 *Every vendor in the room turns to stare*
 
-Big Willem: "You cannot choose?"
+Big Wim: "You cannot choose?"
 
 Mehmet: "The Meat Architect does not understand."
 
@@ -532,7 +532,7 @@ Chadwick: "What if... what if ALL döner is beautiful?"
 
 *The vendors look at each other*
 
-Big Willem: "...this is either very wise or very stupid."
+Big Wim: "...this is either very wise or very stupid."
 
 Mehmet: "The Architect requires time to process this."
 
@@ -558,7 +558,7 @@ their rivals (you can play them against each other for discounts)
 
 ### The Aluminum Throne
 **Type**: Trophy Item (Display in Hostel Room)
-**Description**: "A throne constructed entirely from kapsalon aluminum trays. It's uncomfortable, greasy, and magnificent. Big Willem helped you build it."
+**Description**: "A throne constructed entirely from kapsalon aluminum trays. It's uncomfortable, greasy, and magnificent. Big Wim helped you build it."
 **Effect**: +1 HP regen while resting at any hostel
 **Hidden Feature**: Sitting in it triggers random döner vendor dialogue
 
@@ -570,7 +570,7 @@ their rivals (you can play them against each other for discounts)
 
 ### Kapsalon Battle Tray (Upgraded)
 **Type**: Weapon
-**Description**: "Big Willem signed this one. It's basically a collector's item that you can also throw at people."
+**Description**: "Big Wim signed this one. It's basically a collector's item that you can also throw at people."
 **Effect**: +3 Defense when thrown, can be retrieved after battle
 **Special**: If thrown at an enemy who has eaten döner in the same battle, bonus damage
 
@@ -653,4 +653,4 @@ is kapsalon a döner or a war crime?
 ---
 
 *"In the end, it was never about the döner. It was about the friends we made along the way. And also the döner. It was definitely also about the döner."*
-— Big Willem, probably
+— Big Wim, probably

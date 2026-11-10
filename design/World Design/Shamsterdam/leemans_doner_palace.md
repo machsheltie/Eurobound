@@ -292,10 +292,10 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 - **Chadwick**: "I'm filming the meat rotation. This is CONTENT. This is ART."
 - **Chadwick** (ordering): "What's most PHOTOGENIC? The... okay, Triple Tower."
 - **Chadwick** (eating): *unintelligible but enthusiastic*
-- **Bradley**: "Gregory recommends the veal. Gregory has researched döner culture."
-- **Bradley** (to Mehmet): "Sir, your craft is remarkable. Gregory is impressed."
+- **Bradley**: "The veal, please."
+- **Bradley** (to Mehmet): "Sir, your craft is remarkable."
 - **Mehmet** (to Bradley): "...your puppet is impressed? ...okay. Enjoy döner."
-- **Bradley** (eating): "Gregory says this rivals the Debaucheryville döner. Gregory is conflicted."
+- **Bradley** (eating): "This rivals the Debaucheryville döner. I'm conflicted."
 
 ## System Integration
 ### Late-Night Food Network

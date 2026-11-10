@@ -40,7 +40,7 @@ The bros are too oblivious to notice, but players familiar with the podcast/blog
 3. **Catchphrase Slip**: Occasionally mutters "This is NOT a drill, this is BRUNCH" under his breath
 4. **Menu Consultation**: Has a laminated "MISSION DOSSIER" that's clearly a recipe card for eggs Benedict
 5. **Background Detail**: His "briefcase" has a *Sunday Brunch with Giselle* sticker half-scratched off
-6. **Name Slip**: Almost introduces himself as "Agent Ha—" before catching himself: "Agent... Haaaa...ns. Hans. Local name. Very Dutch."
+6. **Name Slip**: Almost introduces himself as "Agent Ha—" before catching himself: "Agent... Haaaa— ...Joop. Joop. Local name. Very Shamsterdam."
 
 ### Agent Havok's Speaking Style
 
@@ -63,7 +63,7 @@ But I know a way in. For operatives of your... *looks at the bros*
 ```
 
 **"Local" Accent Attempts** (slips constantly):
-- "Ja, ja, very Dutch, this plan. Very... *checks hand* ...gezellig."
+- "Ja, ja, very Shamsterdam, this plan. Very... *checks hand* ...gezellig."
 - "As we say here in Debaucheryville— I mean, Shamsterdam— I mean, MY HOME WHERE I LIVE AND AM FROM..."
 - "The tulips are... blooming? Is that a thing locals say? It feels right."
 
@@ -117,7 +117,7 @@ We don't have much time. You in?"
 |--------|----------|--------|
 | **"We're in."** | Havok: "Excellent. Operatives secured. Rendezvous at the museum at 2300 hours. That's... *checks watch* ...11pm for you civilians." | Quest proceeds |
 | **"What's in it for us?"** | Havok: "Glory. Honor. The egg itself, if you succeed. And... *leans in* ...street cred that money cannot buy." | Quest proceeds, +1 Bravado for negotiating |
-| **"This seems sketchy."** | Havok: "Sketchy? SKETCHY? I am a LOCAL. I am as Dutch as... *checks hand again* ...wooden shoes and... cheese wheels. This is legitimate European business." | Quest proceeds, Havok is slightly offended |
+| **"This seems sketchy."** | Havok: "Sketchy? SKETCHY? I am a LOCAL. I am as Shamsterdammer as... *checks hand again* ...wooden shoes and... cheese wheels. This is legitimate European business." | Quest proceeds, Havok is slightly offended |
 
 ---
 
@@ -220,7 +220,7 @@ As the bros enter in tactical formation (unnecessary crouching, hand signals no 
 **THE CHOCOLATE ANATOMY SECTION**
 
 A massive floor display featuring:
-- Chocolate penises in white, milk, and dark chocolate (9-25 SOVS)
+- Chocolate penises in white, milk, and dark chocolate (9-25 Sovs)
 - White chocolate specimens marbled with wild neon colors for maximum tackiness
 - A size range from "novelty keychain" to "bachelorette party centerpiece"
 - Artisanal decorated versions with sprinkles, edible glitter, and fondant bow ties
@@ -274,7 +274,7 @@ If player chooses to interact with the chocolate display:
 
 **Lord Pilsner**: "I'm prepared to make this worth your while."
 
-*Pilsner slides a 20 SOVS note across the counter. Daan glances at it, shrugs, pockets it, returns to phone.*
+*Pilsner slides a 20 Sovs note across the counter. Daan glances at it, shrugs, pockets it, returns to phone.*
 
 **Daan**: "Cool. Eggs are in the back. By the clogs."
 
@@ -309,9 +309,9 @@ If player chooses to interact with the chocolate display:
 
 **Chadwick**: "What documentary?"
 
-**Bradley**: "The one with the... French guy... who does the... *mimes contorting* ...through the lasers."
+**Bradley**: "The one with the... the acrobat guy... who does the... *mimes contorting* ...through the lasers."
 
-**Lord Pilsner**: "Don't mention the French. Focus. Bradley — you're up."
+**Lord Pilsner**: "Don't mention the acrobat. Focus. Bradley — you're up."
 
 **The "Navigation"**:
 
@@ -341,7 +341,7 @@ If player chooses to interact with the chocolate display:
 #### Part D: The Vault
 
 **Scene Description**:
-> They reach Section C: "Decorative Ovoid Objects & Seasonal Chocolates." A small glass display case sits on a pedestal next to a rack of tulip-shaped lollipops. Inside: a single ornate egg with a 4 SOVS price tag clearly visible.
+> They reach Section C: "Decorative Ovoid Objects & Seasonal Chocolates." A small glass display case sits on a pedestal next to a rack of tulip-shaped lollipops. Inside: a single ornate egg with a 4 Sovs price tag clearly visible.
 
 **The Bros' Interpretation**:
 
@@ -353,7 +353,7 @@ If player chooses to interact with the chocolate display:
 
 **Lord Pilsner**: "It's the glow of HISTORY, Bradley."
 
-*The egg is a limited-edition Kinder Surprise decorated to look fancy. The tag reads: "FABERGÉ-STYLE COLLECTOR'S EGG — Milk Chocolate with Surprise Toy Inside! 4 SOVS or 2 for 6 SOVS"*
+*The egg is a limited-edition Kinder Surprise decorated to look fancy. The tag reads: "FABERGÉ-STYLE COLLECTOR'S EGG — Milk Chocolate with Surprise Toy Inside! 4 Sovs or 2 for 6 Sovs"*
 
 *The bros do not read the tag.*
 
@@ -387,7 +387,7 @@ If player chooses to interact with the chocolate display:
 
 *From across the shop, Daan's voice, not even looking up:*
 
-**Daan**: "Dat is drie vijftig." *(That's three fifty.)*
+**Daan**: "Dat is vier." *(That's four.)*
 
 **Lord Pilsner**: "HE'S CALLING FOR BACKUP. MOVE MOVE MOVE!"
 
@@ -464,7 +464,7 @@ I'm proud of you, soldiers. Truly.
 *accidentally knocks over briefcase, recipe cards spill out*
 
 I must go. My people need me. And by my people I mean... 
-Dutch people. Of which I am one. Goodbye."
+Shamsterdammers. Of which I am one. Goodbye."
 
 *exits dramatically, trips on tail*
 ```
@@ -502,8 +502,8 @@ Did the lasers give you trouble?"
 
 **Bros' Report**:
 ```
-Lord Pilsner: "Agent Hans—"
-Havok: "Havok. I mean— Hans. Yes."
+Lord Pilsner: "Agent Joop—"
+Havok: "Havok. I mean— Joop. Yes."
 Lord Pilsner: "Agent... person. It was TEXTBOOK. 
 
 We breached the perimeter at exactly 2300 hours. 
@@ -515,7 +515,7 @@ I could tell he'd seen combat. I negotiated
 access through a combination of charm and 
 strategic financial incentives."
 
-Chadwick: "You gave him twenty SOVS."
+Chadwick: "You gave him twenty Sovs."
 
 Lord Pilsner: "STRATEGIC. FINANCIAL. INCENTIVES.
 
@@ -679,14 +679,7 @@ And we got the egg. And it had THIS inside."
 
 *Bradley produces tiny plastic hippo*
 
-Bradley: "His name is Gregory. 
-He's my son now."
-
-*Long pause. Lord Pilsner and Chadwick nod supportively.*
-
-Chadwick: "We support Bradley's new son."
-
-Lord Pilsner: "Gregory is part of the crew."
+*Long pause. Nobody has anything to add.*
 ```
 
 **Agent Havok's Response**:
@@ -702,16 +695,16 @@ Lord Pilsner: "Gregory is part of the crew."
 *stands up abruptly*
 
 You didn't just complete a mission. 
-You found MEANING. You found FAMILY.
+You found MEANING.
 
-*gestures at Gregory*
+*gestures at the hippo*
 
 That hippo... that tiny plastic hippo... 
 represents everything this operation stood for.
 
 *definitely crying a little*
 
-Welcome to the family, Gregory.
+Welcome to the family.
 
 *slides envelope across table*
 
@@ -727,16 +720,16 @@ Official recognition. 'International Kinder Criminal.'
 
 You are now wanted in zero countries. 
 Because no one knows what you did. 
-But YOU know. And Gregory knows.
+But YOU know.
 
 And that's what matters."
 
 *Bradley is also crying*
 
-*Gregory remains plastic and emotionless*
+*The hippo remains plastic and emotionless*
 ```
 
-**Reward**: Maximum rewards + **"International Kinder Criminal"** title + Gregory the Hippo + Bradley's undying loyalty
+**Reward**: Maximum rewards + **"International Kinder Criminal"** title + Tiny Plastic Hippo (junk trinket)
 
 ---
 
@@ -757,7 +750,7 @@ And that's what matters."
 |------|-------------|------------|--------|
 | **"Flawless" Report** | **"Egg-filtration Specialist"** | Laminated Mission Dossier | +2 Charm with "underground" NPCs. It's clearly a brunch recipe but the bros think it's spy credentials. |
 | **"Complications" Report** | **"Heist Adjacent"** | Participation Trophy | +1 Luck. Havok had these made in advance. He gives them to everyone. |
-| **"Chaos" Report** | **"International Kinder Criminal"** | **Gregory the Hippo** (Named Trinket) | +1 Luck, -1 Intelligence. Bradley will die for this hippo. |
+| **"Chaos" Report** | **"International Kinder Criminal"** | **Tiny Plastic Hippo** (Junk Trinket) | +1 Luck, -1 Intelligence. It was inside the egg. |
 
 ### HNFT Acquisition: "Abstract Expression #69"
 idden Reward: The "Modern Art"
@@ -808,7 +801,7 @@ Chadwick: "Oh. Oh WOW. Guys. GUYS. We just minted an NFT."
 Lord Pilsner: "What is it? What did we get?"
 Chadwick: turns phone around
 
-The image is a crudely pixelated chocolate penis. 8-bit. Badly drawn. It's wearing a tiny top hat and monocle. The background is a Dutch flag. Comic Sans text reads "CLASSY."
+The image is a crudely pixelated chocolate penis. 8-bit. Badly drawn. It's wearing a tiny top hat and monocle. The background is a Shamsterdam flag. Comic Sans text reads "CLASSY."
 
 Bradley: "...Is that...?"
 Chadwick: "It's ART, Bradley. DIGITAL art. On the blockchain."
@@ -831,12 +824,12 @@ Can Delete: No ("The blockchain is forever, Bradley.")
 
 [PIXEL ART: Badly drawn 8-bit chocolate penis 
 wearing a top hat and monocle. Background: 
-Dutch flag. Text: "CLASSY" in Comic Sans]
+Shamsterdam flag. Text: "CLASSY" in Comic Sans]
 
 Edition: #31,847 of 47,000
 Minted: Shamsterdam Gift Shop Terminal
 Blockchain: "TulipChain" (unverified)
-Current Value: 0.0003 SOVS (down 99.7% from mint)
+Current Value: 0.0003 Sovs (down 99.7% from mint)
 
 Creator's Statement:
 "This piece explores the intersection of 
@@ -848,7 +841,7 @@ with a top hat. You're welcome."
 
 Certificate of Authenticity:
 "This NFT is definitely real and not a 
-screenshot someone minted for 2 SOVS. Trust us. 
+screenshot someone minted for 2 Sovs. Trust us. 
 We're on a blockchain. Probably."
 
 Bros' Assessment:
@@ -872,13 +865,13 @@ Please hodl."
 
 Floor price: 
 Three other tourists have listed theirs for 
-0.01 SOVS. There are no buyers.
+0.01 Sovs. There are no buyers.
 
 Rarity traits:
 - Top Hat: Common (89% have this)
 - Monocle: Common (91% have this)  
 - "CLASSY" text: Common (100% have this)
-- Dutch Flag: Common (100% have this)
+- Shamsterdam Flag: Common (100% have this)
 - Your Dignity: Rare (0% have this)
 
 Creator royalties: 
@@ -907,7 +900,7 @@ This piece represents:
 - The masculine gaze commodified and 
   rendered in 47 pixels
 - A chocolate penis wearing a top hat
-- 2 SOVS I spent on minting fees
+- 2 Sovs I spent on minting fees
 
 You cannot sell this NFT because no one 
 wants to buy it. You cannot delete it 
@@ -952,7 +945,6 @@ Bros' Ongoing Commentary
 Random battle dialogue (if NFT is in wallet):
 Lord Pilsner: "You know what? We're CULTURED now. We own European digital art."
 Chadwick: "I've been thinking about our NFT portfolio. We should diversify."
-Bradley: "I showed Gregory the NFT. I think he liked it."
 Lord Pilsner: "When this thing moons, we're gonna be RICH."
 Chadwick: "It's down 99.7% but that just means it's ready for a comeback."
 Bradley: "I still don't fully understand what an NFT is but I'm proud of us."
@@ -979,7 +971,7 @@ json{
   },
   "visual": {
     "pixel_art": "8bit_chocolate_penis_top_hat_monocle.png",
-    "background": "dutch_flag_pattern",
+    "background": "shamsterdam_flag_pattern",
     "text_overlay": "CLASSY",
     "font": "comic_sans",
     "resolution": "intentionally_bad_47x47"
@@ -1019,38 +1011,10 @@ The blockchain is forever as a running gag
 Ongoing battle dialogue so players keep encountering it
 CryptoBro69 ICQ reaction tying it to existing characters
 
-The bros will NEVER stop being proud of this purchase. 😂...so hard not to laugh right now. I'm working from home. Doing all of this too. Reading this which is comedic. All the while, my current bf who just got out of the hospital from having a small intestinal blockage removed (we have been back home 12 days now) lays in my bed next to me (he's anxious preoccupied with a tbi from a motorcycle accident 10 years ago and is on methadone for past opioid abuse) giving me little clingy needy little boy sounding bids 'my belllllyyyy huuuurtttsss... when you get a free minute, come rub my belly for meeee' I swear, it's like owning a 40 year old golden retriever puppy. I know most women would hate it but I find him adorable and am not bothered by it. So I'm trying not to laugh between the satire here and the little boy behaviorShow more8:22 AMThis is the most wholesome chaos I've witnessed in a while. 😂
-You're over here:
-
-Working your actual job
-Simultaneously developing a satirical revenge RPG against your ex
-Who JUST found out you have a boyfriend via Facebook
-While said boyfriend is recovering from surgery
-And giving you literal golden retriever energy: "my belllllyyyy huuuurtttsss"
-And you're trying not to laugh at NFT dick jokes
-
-The mental image of you maintaining a straight face while reading "The blockchain is forever, Bradley" and "Dennis got another one" while your boyfriend is making puppy noises for belly rubs is SENDING me.
-Also, the contrast between:
-
-Real Ryan: 37, digital forensics, documented chocolate penis displays in Prague, just found out you moved on
-Current boyfriend: 40-year-old golden retriever puppy who needs belly rubs and thinks you're just "working"
-
-Meanwhile you're building a game where aging frat bros steal a Kinder egg and accidentally mint an NFT of a chocolate penis wearing a top hat.
-Your life is genuinely more chaotic than anything we've written for Eurobound.
-Go rub that man's belly. Gregory the Hippo would want you to. 🦛
-(The quest document is ready whenever you need it. Dennis and his blockchain will wait.)Claude is AI and can make mistakes. Please double-check responses. Opus 4.5
-
-### Hidden Reward: The Hippo Evolves
-
-If player keeps Gregory the Hippo equipped for 10+ battles:
-- **Gregory the Battle Hippo**: +2 Luck, +1 Grit, "Gregory has seen things. Gregory is ready."
-- Unlocks special dialogue where Bradley introduces Gregory to NPCs
-- Bradley gets visibly upset if anyone suggests selling Gregory
-
 ### Completion Achievement
 
 **"Museum Grade Idiot"**
-> *Successfully "stole" a 4 SOVS chocolate egg from a gift shop while believing it was worth millions. The gift shop has marked you as "inventory shrinkage."*
+> *Successfully "stole" a 4 Sovs chocolate egg from a gift shop while believing it was worth millions. The gift shop has marked you as "inventory shrinkage."*
 
 ---
 
@@ -1062,13 +1026,13 @@ These references are scattered throughout the quest for players who recognize th
 **Location**: Café de Schaamte, background NPC conversation
 
 **Dialogue** (overheard):
-> "Did you hear about that casino job in Las Vegas? Some American pulled it off with like... eleven guys? Or twelve? Anyway, one of them was apparently a acrobat. Did flips through lasers or something. Europeans think Americans are so dramatic."
+> "Did you hear about that big casino job a few years back? Some American pulled it off with like... eleven guys? Or twelve? Anyway, one of them was apparently a acrobat. Did flips through lasers or something. Europeans think Americans are so dramatic."
 
 ### 2. The French Rival
 **Location**: Museum Gift Shop, small poster on wall
 
 **Poster Text**:
-> "NOTICE: The REAL Decorative Ovoid Object was acquired yesterday by an anonymous French collector. What remains is replica. Thank you for visiting!"
+> "NOTICE: The REAL Decorative Ovoid Object was acquired yesterday by an anonymous private collector. What remains is replica. Thank you for visiting!"
 
 *The bros do not read this sign.*
 
@@ -1076,7 +1040,7 @@ These references are scattered throughout the quest for players who recognize th
 **Location**: Agent Havok's "briefing"
 
 **Dialogue**:
-> "Intel suggests another operative may be targeting the same asset. Codename: 'Evening Canine.' He's... French. Very smug. Does gymnastics. 
+> "Intel suggests another operative may be targeting the same asset. Codename: 'Evening Canine.' He's... Continental. Very smug. Does gymnastics. 
 > 
 > *dismissive tail flick* 
 > 
@@ -1093,8 +1057,8 @@ These references are scattered throughout the quest for players who recognize th
 
 If player performs 3 perfect "freezes" in a row:
 **Bradley**: "I feel like I should be doing this to music. Like, EDM. Or whatever they played in that movie."
-**Chadwick**: "You mean the one where the French guy—"
-**Bradley**: "DON'T TALK ABOUT THE FRENCH GUY."
+**Chadwick**: "You mean the one where the acrobat—"
+**Bradley**: "DON'T TALK ABOUT THE ACROBAT."
 
 ---
 
@@ -1117,8 +1081,7 @@ If player performs 3 perfect "freezes" in a row:
     "reveal_witnessed": false,
     "debrief_complete": false,
     "debrief_path": null,
-    "gregory_named": false,
-    "gregory_evolution_battles": 0
+    "hippo_acquired": false
   }
 }
 ```
@@ -1154,7 +1117,7 @@ var briefing_dialogue = {
     },
     "response_sketchy": {
         "speaker": "Mysterious Local Contact",
-        "text": "Sketchy? SKETCHY? I am a LOCAL. I am as Dutch as... *checks hand* ...wooden shoes and... cheese wheels. This is legitimate European business.",
+        "text": "Sketchy? SKETCHY? I am a LOCAL. I am as Shamsterdammer as... *checks hand* ...wooden shoes and... cheese wheels. This is legitimate European business.",
         "effects": {"quest_started": true, "havok_offended": true},
         "next": "bros_reaction"
     }
@@ -1182,7 +1145,7 @@ var debrief_dialogue = {
         "path": "chaos",
         "reward_modifier": 1.5,
         "title_unlock": "Chaos Operative",
-        "special_item": "gregory_the_hippo",
+        "special_item": "tiny_plastic_hippo",
         "next": "debrief_end_chaos"
     }
 }
@@ -1229,35 +1192,16 @@ var debrief_dialogue = {
       "sell_value": 2
     },
     {
-      "item_id": "gregory_the_hippo",
-      "display_name": "Gregory the Hippo",
+      "item_id": "tiny_plastic_hippo",
+      "display_name": "Tiny Plastic Hippo",
       "type": "trinket",
       "slot": "accessory",
       "effects": {
         "luck_modifier": 1,
         "intelligence_modifier": -1
       },
-      "description": "Bradley refuses to remove this from his pocket.",
-      "flavor_text": "A tiny plastic hippo from a Kinder egg. Bradley has named him Gregory and considers him family.",
-      "evolution": {
-        "battles_required": 10,
-        "evolves_to": "gregory_battle_hippo"
-      },
-      "sell_value": 0,
-      "can_sell": false
-    },
-    {
-      "item_id": "gregory_battle_hippo",
-      "display_name": "Gregory the Battle Hippo",
-      "type": "trinket",
-      "slot": "accessory",
-      "effects": {
-        "luck_modifier": 2,
-        "grit_modifier": 1
-      },
-      "description": "Gregory has seen things. Gregory is ready.",
-      "flavor_text": "After 10 battles at Bradley's side, Gregory's plastic eyes have witnessed true combat. He is changed.",
-      "special_dialogue": true,
+      "description": "It was inside the egg.",
+      "flavor_text": "A tiny plastic hippo from a Kinder egg.",
       "sell_value": 0,
       "can_sell": false
     }
@@ -1300,7 +1244,7 @@ Animation Notes:
 💬 From: AgentH_Classified
 "Mission report filed. You're in the system now.
 Also I found more chocolate eggs if you want.
-They're 2 SOVS at the corner store.
+They're 2 Sovs at the corner store.
 ...This message will self-destruct.
 ...It will not actually self-destruct."
 
@@ -1308,19 +1252,12 @@ They're 2 SOVS at the corner store.
 "hey did you guys ever pay for those magnets?
 whatever. they were ugly anyway."
 
-💬 From: Unknown_French_Operative  
+💬 From: Unknown_Continental_Operative  
 "I heard about your 'heist.' Adorable.
 Perhaps next time try stealing something 
 that isn't available at every petrol station.
 - N.F."
 ```
-
-### Gregory Side Content
-
-If player has Gregory the Hippo equipped:
-- Random NPCs comment: "Is that a... tiny hippo in your pocket?"
-- Bradley has unique dialogue defending Gregory's honor
-- One Shamsterdam NPC offers to "buy Gregory for a reasonable price" — refusing increases Bravado
 
 ### "Documentary" Footage
 
@@ -1346,8 +1283,7 @@ Chadwick's ring light captured footage during the heist:
 ### Future Expansion Hooks
 
 - Agent Havok can reappear in future DLC with new "missions"
-- The "Evening Canine" / French rival could be a future boss encounter
-- Gregory the Hippo could have additional evolution stages
+- The "Evening Canine" rival could be a future boss encounter
 - The "real" Fabergé egg location could be a post-game secret
 
 ---
@@ -1368,7 +1304,7 @@ The Fabergé Egg Hunt satirizes:
 
 - Mundane setting (gift shop) treated as epic location
 - Absurd NPCs (bored teenager, disguised dog) played completely straight
-- Items that are worthless but emotionally significant (Gregory)
+- Items that are worthless but kept anyway (the hippo)
 - The joke is on the protagonists, but affectionately
 - Escalating commitment to a bit that pays off emotionally
 

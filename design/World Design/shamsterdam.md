@@ -209,12 +209,12 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Invented by a port-city barber in 2003, perfected here nightly
 - Plastic forks that will 100% break mid-bite
 - The smell alone adds 500 calories
-- **Vendor**: "Big Willem" — 6'5" Dutch-Turkish fusion of cultures, speaks in a mix of Dutch slang and Turkish endearments, has strong opinions about EVERYTHING
+- **Vendor**: "Big Wim" — 6'5" Dutch-Turkish fusion of cultures, speaks in a mix of Dutch slang and Turkish endearments, has strong opinions about EVERYTHING
 - **Signature Item**: "The Full Kapsalon Experience" — large tray, extra cheese, extra shame
     - 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), "Food Coma" risk (20% chance skip next turn)
     - 🍟 The aluminum tray becomes a collectible item: "Kapsalon Battle Tray" (+2 Defense when thrown)
     - 🇳🇱 Counts toward "The Great Döner Debate: International Expansion" sidequest
-- **Big Willem's Catchphrases**:
+- **Big Wim's Catchphrases**:
     - "Kapsalon means 'hair salon.' You know why? Because the barber who invented it had VISION."
     - "In the port city, we put cheese on everything. This is the Shamsterdam way. Accept it."
     - "You want small? There is no small. There is only 'you are not ready' and 'regular.'"

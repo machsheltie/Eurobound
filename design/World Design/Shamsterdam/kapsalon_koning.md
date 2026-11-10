@@ -24,7 +24,7 @@
 - **Normal Exit**: Into the night, heavier, slower, satisfied
 - **Completion Requirements**: No completion (surviving is its own reward)
 - **Failure States**: Cannot fail (though "Food Coma" is technically a state)
-- **Progressive Unlocks**: "Kapsalon Survivor" status after finishing large, Big Willem remembers
+- **Progressive Unlocks**: "Kapsalon Survivor" status after finishing large, Big Wim remembers
 
 ## Visual Design
 ### Exterior Description
@@ -35,7 +35,7 @@
   - Main: "KAPSALON KONING" with crown logo
   - Subtitle: "Since 2008 — Port City Style, Shamsterdam Execution"
   - Explanation: "KAPSALON = Fries + Döner + Cheese + Salad + Sauce + Glory"
-  - Big Willem's Quote: "In the port city, we put cheese on everything."
+  - Big Wim's Quote: "In the port city, we put cheese on everything."
   - Size warning: "No Small Available. This Is Intentional."
 - **Atmosphere**: Brighter than Leeman's, slightly more chaos energy, cheese smell dominant
 - **Environmental Context**: Near Leeman's (they acknowledge each other), different customer base
@@ -217,7 +217,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 ## NPCs & Vendors
 ### The King Himself
 
-**Big Willem**
+**Big Wim**
 - **Role**: Owner, kapsalon evangelist, sauce philosopher
 - **Appearance**: 6'5" Dutch-Turkish man, aproned, commanding presence, warm despite size
 - **Background**: Second-generation Dutch-Turkish, opened Kapsalon Koning 2008, Rotterdam roots
