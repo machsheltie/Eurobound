@@ -492,3 +492,6 @@ Open question: should it, and to what depth?
   "friet" plus Frito); Brouwerij de Molen -> **The Wobbly Windmill Brewery**. Standing
   permission to use ChatGPT's image generator, including downloading its results, for any art
   task.
+- **(Round v22, 2026-11-10)** Hall v8f approved (final hall art for now). Leftover euro prices
+  in design docs convert **1 euro = 1 SOVS**, numbers unchanged. Every Shamsterdam brewery
+  except The Wobbly Windmill Brewery gets a new name (proposals to the author).
