@@ -20,7 +20,7 @@ ACCESSORIES 💼
     • Flavor: "Chain long enough to trip over while walking" 
     • Era Cringe: Makes jingling sounds that announce your arrival 
 "'iPawd' MP3 Player (Knockoff iPod)"
-    • Access "Napstur" at hotspots for random stat-boosting tracks 
+    • Access "Napster" at hotspots for random stat-boosting tracks 
     • Flavor: "Totally legal music sharing platform, 128MB storage" 
     • Era Cringe: Holds exactly 23 songs, buttons stick when sweaty 
 "Fanny Pack (Worn Frontally)"

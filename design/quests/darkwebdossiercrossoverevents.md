@@ -89,7 +89,7 @@ Tony420: yo
 8) Xanax and Flintstone Fentanyl
 Tony420: “$30 Xanax & Flintstone fentanyl. message me for my crypto wallet deetz.”
 
-9) Guiness Suppositories
+9) Guinness Suppositories
 Tony420:
 “bro got a pallet of Guinness suppositories, limited run. absorb faster than drinking
 

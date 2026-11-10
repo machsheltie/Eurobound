@@ -129,7 +129,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 | Deflated Balloon Animal | (128, 0) | 32x24 | Was a dog. Or a giraffe. Hard to tell now |
 | Mystery Sticker | (160, 0) | 16x16 | Might be lucky. Probably isn't |
 | Used Glitter Hat | (192, 0) | 32x32 | Someone had a good time in this once. The glitter remembers |
-| Knockoff Sunglasses | (224, 0) | 32x16 | They say "Rayban" if you don't look closely |
+| Knockoff Sunglasses | (224, 0) | 32x16 | The "Ray-Ban" logo is flawless. It's also a sticker, peeling at one corner |
 
 ### Consolation & "Good" Tier:
 | Element | Position | Size | Description |

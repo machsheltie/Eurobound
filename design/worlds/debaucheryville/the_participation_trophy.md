@@ -168,7 +168,7 @@ She's not cruel. She's just... there. Witnessing. Distributing. Waiting for her 
 |-------|---------|------------|---------------|-------------|
 | Used Glitter Hat | 100 | 15 Sovs | +5 Style, -10 Dignity | "Previous owner sweated in this. Glitter hides the stains. Mostly." |
 | Mystery Meat Corndog | 150 | 8 Sovs | +25 HP, 30% Nausea chance | "The mystery isn't what meat. The mystery is IF meat." |
-| Knockoff Sunglasses | 100 | 12 Sovs | +3 Cool, break after 3 uses | "They say 'Rayban' if you don't look closely. Don't look closely." |
+| Knockoff Sunglasses | 100 | 12 Sovs | +3 Cool, break after 3 uses | "The 'Ray-Ban' logo is flawless. It's also a sticker. Don't look past the sticker." |
 | Plastic Trophy (Participation) | 200 | 20 Sovs | +10 Bravado (ironic), -5 Dignity | "First Place in Showing Up. Your name isn't on it." |
 | Questionable Stuffed Animal | 250 | 25 Sovs | Companion item, +5 Comfort, unsettling | "The eyes follow you. That's just how it was made. Probably." |
 | Circus Souvenir Mug | 150 | 15 Sovs | +10% beverage effects | "Drink from where the clowns drink. Adds flavor. Don't think about it." |
@@ -429,7 +429,7 @@ If player tries to buy prizes directly:
 - mystery_sticker.png - 16x16 - Random stat
 - used_glitter_hat.png - 32x32 - Sweaty sparkle
 - mystery_meat_corndog.png - 24x32 - HP if brave
-- knockoff_sunglasses.png - 32x16 - "Rayban"
+- knockoff_sunglasses.png - 32x16 - "Ray-Ban" (peeling sticker logo)
 - plastic_trophy.png - 32x48 - Ironic pride
 - questionable_stuffed_animal.png - 32x32 - Watching you
 - circus_mug.png - 24x24 - Clown residue

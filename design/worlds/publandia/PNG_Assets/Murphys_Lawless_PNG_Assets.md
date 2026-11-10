@@ -314,11 +314,11 @@ assets/sprites/locations/publandia/murphys_lawless/
 ### Counterfeit Merchandise:
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| "Guooi" Sunglasses | (0, 80) | 32x24 | Designer, if the designer was drunk. -Durability |
+| "Gucci" Sunglasses | (0, 80) | 32x24 | Designer, if the designer was drunk. -Durability |
 | Misspelled Band Shirt | (32, 80) | 48x48 | "Vintage." The band name is confidently wrong |
 | Plastic Lucky Charm | (80, 80) | 32x32 | +Luck (it's plastic, it does nothing) |
 | Fraying Phone Charger | (112, 80) | 32x32 | 50% chance of working, 100% chance of fraying |
-| Guooi Logo Close-Up | (144, 80) | 48x24 | Two O's too many, kerning criminal |
+| Gucci Logo Close-Up | (144, 80) | 48x24 | Spelled perfectly, hot-glued on crooked, glue strings still hanging off the G |
 | Band Shirt Typo Close-Up | (192, 80) | 64x48 | Examine payoff for +Embarrassment when noticed |
 
 ### Back Room Stock (Unlockable):
@@ -608,7 +608,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - TileMap for floor/cobble tiles; single-scene interior (no parallax — the shop is too cramped for depth, which is correct)
 - CPUParticles2D (not GPU) for rain (20 cap), dust motes, and cold-air wisps
 - Neon, fluorescent, and fridge-light flicker driven by alpha-toggle timers — all flicker timers disabled in reduced-motion mode, swapping to the accessibility sheet's steady frames
-- Area2D examine points: Mystery Wine ('08 dust wipe), back-of-fridge silhouette, weird nut, Guooi logo, band shirt typo, card machine (dusty, functional — sets `card_machine_examined` for "The Card Machine")
+- Area2D examine points: Mystery Wine ('08 dust wipe), back-of-fridge silhouette, weird nut, Gucci logo, band shirt typo, card machine (dusty, functional — sets `card_machine_examined` for "The Card Machine")
 - Shop state per `murphys_lawless_state`: side_effects_suffered (0-5+), frequent_sufferer, back_room_unlocked, iron_stomach_progress, card_machine_examined, purchases_total, player_sober (drives risk display + Murphy's warning pose)
 
 ### Audio Sync Points:
@@ -740,7 +740,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - [ ] The questionable apostrophe reads as deliberately, comedically wrong at sprite scale — not as an art error
 - [ ] "Card machine broken (always)" sign and the dusty-but-functional card machine both read clearly; the contradiction is quest evidence and must survive compression
 - [ ] Mystery Wine's '08 dust layer wipes cleanly on examine; the bottle underneath stays illegible
-- [ ] "Guooi" logo close-up is legibly misspelled — the extra O's must be unmistakable
+- [ ] "Gucci" logo close-up is spelled correctly and unmistakably fake — the crooked hot-glue job and hanging glue strings must read at game resolution
 - [ ] Accessibility visual alternatives included for all audio cues (door bell + stick, fridge hum, fluorescent buzz, neon pop, purchase beep, ominous sting, Murphy's "hmm", sigh)
 - [ ] File naming follows snake_case convention
 - [ ] Master files preserve layer structure for future edits

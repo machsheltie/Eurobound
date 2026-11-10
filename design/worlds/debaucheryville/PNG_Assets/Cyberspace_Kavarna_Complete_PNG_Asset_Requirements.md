@@ -207,9 +207,9 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 ### Bootleg Posters (48x64 each):
 | Poster | Position | Description |
 |--------|----------|-------------|
-| The Matricks | (0, 144) | Keanu spelled wrong |
+| The Matrix | (0, 144) | Title spelled perfectly; Keanu photocopied so many times he's a green toner smudge |
 | Hackers Wrong | (48, 144) | Nicolas Cage somehow |
-| Johnny Nemonic | (96, 144) | Every word wrong |
+| Johnny Mnemonic | (96, 144) | Correct title, wrong aspect ratio: printed sideways and stretched until Keanu is mostly forehead |
 | Swordfish | (144, 144) | Actually accurate |
 
 ### Other Decorations:
@@ -409,7 +409,7 @@ The six delivered sheet files (see File Delivery Checklist) are the packaging co
 
 ### Environmental Storytelling:
 - Ethernet cables snake across the floor like digital ivy — infrastructure as pure improvisation
-- Bootleg posters spelled wrong ("The Matricks") sell the knockoff-culture economy at a glance
+- Bootleg posters with flawless titles on garbage prints ("The Matrix" in photocopier green) sell the knockoff-culture economy at a glance
 - Warning signs ("NO TORRENTING," "YOUR DATA IS NOT SAFE") state the scam out loud; nobody reads them
 - Crypto mining rigs humming beside a mechanical cash register — two eras of get-rich-quick in one basement
 - ICQ contact board with circled names telegraphs the scammer network to observant players
@@ -427,7 +427,7 @@ The six delivered sheet files (see File Delivery Checklist) are the packaging co
 1. **INTERNET Neon Sign** - Flickering Y2K aesthetic
 2. **CRT Monitor Maze** - Half blue-screened
 3. **Dmitri Smoking** - Philosophical tech wisdom
-4. **Bootleg Posters** - "The Matricks" visible
+4. **Bootleg Posters** - "The Matrix" visible
 5. **ICQ Contact Board** - Scammer names circled
 
 ### Quote Potential:
@@ -487,7 +487,7 @@ The six delivered sheet files (see File Delivery Checklist) are the packaging co
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly (#00FF41, #DC143C, #696969, #E8E8D0, #0000FF)
 - [ ] INTERNET neon flicker reads clearly from Hostel Row street level
-- [ ] Bootleg poster misspellings ("The Matricks," "Johnny Nemonic") legible at game resolution
+- [ ] Bootleg poster titles ("The Matrix," "Johnny Mnemonic") legible at game resolution, with the bootleg print damage (toner smear, sideways stretch) unmistakable
 - [ ] Metro door locked/open states clearly distinguishable at 48x80
 - [ ] NPC poses all conform to the 48x64 sheet grid (no legacy 64x96 stragglers)
 - [ ] Accessibility visual alternatives included for all audio cues

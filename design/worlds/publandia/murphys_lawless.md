@@ -197,7 +197,7 @@ Rory Murphy has run this shop for 23 years. He's seen the neighborhood gentrify 
 **Counterfeit Merchandise**
 | Item | Price | Claimed Effect | Actual Effect | Notes |
 |------|-------|----------------|---------------|-------|
-| "Designer" Sunglasses | 8 Sovs | +Style | -Durability (break easily) | "Guooi" brand |
+| "Designer" Sunglasses | 8 Sovs | +Style | -Durability (break easily) | "Gucci" brand |
 | "Vintage" Band Shirt | 12 Sovs | +Cool | +Embarrassment when noticed | Band spelled wrong |
 | "Lucky" Charm | 5 Sovs | +Luck | No effect | It's plastic |
 | "Phone Charger" | 6 Sovs | Charges phone | 50% chance of working | Cable frays |
@@ -439,7 +439,7 @@ If player is DRUNK, Murphy says nothing. Business is business.
 - mystery_wine.png - 32x64 - Since '08
 - mystery_meat_roll.png - 32x32 - Questionable
 - medicinal_tonic.png - 32x48 - Miracle or disaster
-- counterfeit_sunglasses.png - 32x24 - "Guooi"
+- counterfeit_sunglasses.png - 32x24 - "Gucci" (hot-glued logo)
 - fake_band_shirt.png - 48x48 - Spelled wrong
 - stale_crisps.png - 32x32 - Open section
 - day_old_sandwich.png - 32x32 - Earlier

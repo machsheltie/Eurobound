@@ -168,9 +168,9 @@ This document provides exact specifications for all PNG files needed for Cybersp
 ### Bootleg Posters (48x64 each):
 | Poster | Position | Description |
 |--------|----------|-------------|
-| The Matricks | (0, 144) | Keanu spelled wrong |
+| The Matrix | (0, 144) | Title spelled perfectly; Keanu photocopied so many times he's a green toner smudge |
 | Hackers Wrong | (48, 144) | Nicolas Cage somehow |
-| Johnny Nemonic | (96, 144) | Every word wrong |
+| Johnny Mnemonic | (96, 144) | Correct title, wrong aspect ratio: printed sideways and stretched until Keanu is mostly forehead |
 | Swordfish | (144, 144) | Actually accurate |
 
 ### Other Decorations:
@@ -291,7 +291,7 @@ This document provides exact specifications for all PNG files needed for Cybersp
 1. **INTERNET Neon Sign** - Flickering Y2K aesthetic
 2. **CRT Monitor Maze** - Half blue-screened
 3. **Dmitri Smoking** - Philosophical tech wisdom
-4. **Bootleg Posters** - "The Matricks" visible
+4. **Bootleg Posters** - "The Matrix" visible
 5. **ICQ Contact Board** - Scammer names circled
 
 ### Quote Potential:

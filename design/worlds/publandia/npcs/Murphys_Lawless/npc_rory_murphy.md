@@ -343,7 +343,7 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 ### Counterfeit Merchandise
 | Item | Price | Claimed Effect | Actual Effect | Notes |
 |------|-------|----------------|---------------|-------|
-| "Designer" Sunglasses | 8 Sovs | +Style | -Durability (break easily) | "Guooi" brand |
+| "Designer" Sunglasses | 8 Sovs | +Style | -Durability (break easily) | "Gucci" brand |
 | "Vintage" Band Shirt | 12 Sovs | +Cool | +Embarrassment when noticed | Band spelled wrong |
 | "Lucky" Charm | 5 Sovs | +Luck | No effect | It's plastic |
 | "Phone Charger" | 6 Sovs | Charges phone | 50% chance of working | Cable frays |
