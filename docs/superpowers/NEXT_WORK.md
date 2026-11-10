@@ -495,3 +495,15 @@ Open question: should it, and to what depth?
 - **(Round v22, 2026-11-10)** Hall v8f approved (final hall art for now). Leftover euro prices
   in design docs convert **1 euro = 1 SOVS**, numbers unchanged. Every Shamsterdam brewery
   except The Wobbly Windmill Brewery gets a new name (proposals to the author).
+- **(Round v23, 2026-11-10) Shamsterdam breweries.** Proeflokaal 't Kansen -> **Bottoms Down**
+  (name only; Kees, the jenever bar and the no-hands bow all stay). New brewery #3 -> **The
+  Hoisted Pint** (the canal house 1.5 m wide and six storeys tall that leans like its
+  customers; kegs and bros go up the front in a cargo net on the gable hoist hook). New brewery
+  #4 -> **The Mad Monarch's Wit-tea Party** (author-minted; the Monarch's Birthday party
+  thrown every day since 1998, everything orange, the bouncer paints anyone in another colour
+  orange; **specialises in brewing, serving and selling wheat beer / witbier**). Concepts
+  approved. Each new brewery's tour challenge, consumable beer, opener, stamp, selfie spot,
+  brewmaster NPC and prices still need author rulings. Real-city sweep approved: player-facing
+  text moves to the parody names; internal planning notes stay. Price cleanup approved: round
+  to whole SOVS (0.50 -> 1, 3.50 -> 4, 8.99 -> 9) and fix odd wording ("Two SOVS fifty",
+  "SOVS gold").
