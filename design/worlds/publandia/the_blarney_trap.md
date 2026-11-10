@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10:30 AM - 2:30 AM (Irish licensing laws, stretched)
 - **Stat Requirements**: None (the Trap welcomes all paying customers)
-- **Item Requirements**: Gold for drinks/rooms (7 Sovs-9 pints, 55 Sovs-120 rooms)
+- **Item Requirements**: Gold for drinks/rooms (7-9 Sovs pints, 55-120 Sovs rooms)
 - **Previous Location Requirements**: None (likely first Publandia location visited)
 - **Special Conditions**: Automatically discovered upon arriving in Publandia
 
@@ -191,7 +191,7 @@ This is the bros' base of operations because it appeared first in their search r
 | Guinness (Pint) | 8 Sovs | +15 HP | Progresses toward "Scuttered" | The 119.5-second ritual |
 | Smithwick's (Pint) | 7 Sovs | +12 HP | Progresses toward "Scuttered" | Locals' alternative |
 | Whiskey (Jameson) | 8 Sovs | +10 HP, +5 SP | +Bravado temporarily | Standard pour |
-| Whiskey (Premium) | 12 Sovs-20 | +15 HP, +10 SP | +Bravado, +Charm | Impress the staff |
+| Whiskey (Premium) | 12-20 Sovs | +15 HP, +10 SP | +Bravado, +Charm | Impress the staff |
 | Irish Coffee | 10 Sovs | +20 HP, +15 SP | Caffeine + Alcohol balance | Tourist favorite |
 | Tayto Crisps | 3 Sovs | +5 HP | Absorbs some alcohol | Cheese & Onion or nothing |
 | Toastie | 8 Sovs | +25 HP | Absorbs significant alcohol | Pub food perfection |

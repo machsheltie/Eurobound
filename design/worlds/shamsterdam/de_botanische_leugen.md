@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 5:30 PM (market hours, optimism hours)
 - **Stat Requirements**: None (gullibility is not checked at the door)
-- **Item Requirements**: Gold for purchases (5 Sovs-50), willingness to believe
+- **Item Requirements**: Gold for purchases (5-50 Sovs), willingness to believe
 - **Previous Location Requirements**: None (the tulips call to all tourists)
 - **Special Conditions**: Located on floating market stall, slight swaying, adds to dreamlike purchasing haze
 
@@ -42,7 +42,7 @@
 ### The Bulb Display
 - **Bins**: Dozens of varieties, labeled with romantic Dutch names and colors
 - **Arrangement**: Organized by promised color, promised height, promised dreams
-- **Pricing**: By the bulb (2 Sovs-5) or "Value Bags" (15 Sovs-30 for 10-20 bulbs)
+- **Pricing**: By the bulb (2-5 Sovs) or "Value Bags" (15-30 Sovs for 10-20 bulbs)
 - **The Tulip Promise**: Each bin shows a photo of the flower "these bulbs will become"
 - **The Fine Print**: Growing instructions in Dutch, French, German, and Very Small English
 

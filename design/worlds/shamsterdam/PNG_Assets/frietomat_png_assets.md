@@ -162,7 +162,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Anouk Counter Idle | (0, 0) | 64x96 | Frietomat yellow uniform, efficiency incarnate |
-| Anouk Handing Change | (64, 0) | 64x96 | "Coins? Two Sovs fifty. There." |
+| Anouk Handing Change | (64, 0) | 64x96 | "Coins? Three Sovs. There." |
 | Anouk Restocking Frame 1 | (128, 0) | 64x96 | Loading a slot from the rear |
 | Anouk Restocking Frame 2 | (192, 0) | 64x96 | Slot closed, next item |
 | Anouk Recognition Nod | (256, 0) | 64x96 | Frietomat Regular status acknowledgment |
@@ -422,7 +422,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 | De Groene Gids | Munchies shimmer pipeline | Food HP +50%; "best thing I've ever eaten" (2 Sovs kroket) |
 | Casa Rosé | Standing ledge as processing space | Post-show neutral-zone dialogue triggers |
 | The Tolerance Hostel | Food acquired popup referenced in kitchen talk | Late-night discovery conversations |
-| Proeflokaal 't Kansen | Grease-absorption food effects | Reduces The Shakes debuff duration |
+| Bottoms Down | Grease-absorption food effects | Reduces The Shakes debuff duration |
 | Voetgangerstunnel | Rear heating-unit wall section (restock door area) | Hidden Frietomat Emergence exit from the tunnel; 3 AM vibes always |
 
 ---

@@ -285,7 +285,7 @@
 - **"Frosted Tips Vandal" trinket** - +2 Bravado, -2 Charm
 - **"Y2K Villain" Title** - Bouncers remember you as "those Limp Bizkit guys"
 - **Defaced flyers become art installation** - Local gallery wants to display them
-- **Security footage** becomes viral TikTok: "Boomers Gone Wild in Prague"
+- **Security footage** becomes viral TikTok: "Boomers Gone Wild in Debaucheryville"
 - **Hendrik's night ALSO successful** - Because people came to see "the PWNED flyers"
 
 ---

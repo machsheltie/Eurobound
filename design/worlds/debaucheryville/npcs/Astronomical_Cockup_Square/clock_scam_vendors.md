@@ -6,7 +6,7 @@
 
 The Astronomical Cock-Up Square features a coordinated network of scam vendors who have perfected their craft over years. They operate as a professional ecosystem with territory respect, referral systems, and shared end-of-day drinks.
 
-**Total Potential Tourist Damage**: 380 Sovs-550 for the "complete experience"
+**Total Potential Tourist Damage**: 380-550 Sovs for the "complete experience"
 
 ---
 
@@ -51,7 +51,7 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
         ↓
 [Clock Show - 38 seconds] → Bros cry → "Post-Clock Vulnerability"
         ↓
-[3. VÁCLAV approaches] → 60 Sovs-180 → Clock wine
+[3. VÁCLAV approaches] → 60-180 Sovs → Clock wine
         ↓
 [4. HELENA approaches] → 90 Sovs+ → Merchandise
         ↓
@@ -174,7 +174,7 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 | **File** | `npc_euro_ink_tattoo_artist.md` |
 | **Position** | Euro Ink 4 Less interior |
 | **Product** | Tattoos |
-| **Price** | 50 Sovs-100 |
+| **Price** | 50-100 Sovs |
 | **Result** | Duck instead of skeleton |
 | **Role** | Permanent mistake creator |
 

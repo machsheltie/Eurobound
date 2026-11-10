@@ -269,7 +269,7 @@ Running a legal shop legally. Ruben came out of the coffeeshop trade into a busi
 | Souvenir Seed Pack | 40 Sovs | Seeds | 100%* | **HIGH** | *Not for germination |
 | Premium Strain Seeds | 65 Sovs | Seeds | 100%* | **VERY HIGH** | *Definitely not for germination |
 | Space Cake Mix | 20 Sovs | "Food" | 100% | High | "Just add... nothing illegal" |
-| Leaf-Shaped Everything | 10 Sovs–30 | Novelty | 100% | Embarrassment | Declaring your tourist status |
+| Leaf-Shaped Everything | 10–30 Sovs | Novelty | 100% | Embarrassment | Declaring your tourist status |
 
 ### The Customs Checkpoint (Resolution)
 | Item Class | Pass Rate | Outcome |

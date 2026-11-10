@@ -128,8 +128,8 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | Protective Bag (+2 Sovs) | (928, 192) | 96x96 | The upsell that closes the customs question |
 | Growing Instructions Leaflet | (512, 320) | 192x32 | Dutch, French, German, and Very Small English |
 | Fine-Print Card | (704, 320) | 96x32 | Zoom prop: the English section is four lines long |
-| Price Sign — Per Bulb (2 Sovs–5) | (928, 288) | 96x32 | Chalk on slate |
-| Price Sign — Value Bags (15 Sovs–30) | (928, 320) | 96x32 | Better value, worse odds |
+| Price Sign — Per Bulb (2–5 Sovs) | (928, 288) | 96x32 | Chalk on slate |
+| Price Sign — Value Bags (15–30 Sovs) | (928, 320) | 96x32 | Better value, worse odds |
 
 ### Product Racks:
 | Element | Position | Size | Description |

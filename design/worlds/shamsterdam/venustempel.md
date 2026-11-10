@@ -54,7 +54,7 @@ The fountain was installed the same year, outside, as a "temporary promotional f
 
 ### De Grote Fontein (The Great Fountain) — Signature Landmark
 - **What It Is**: A four-metre working chocolate fountain, sculpted as a giant phallus, cast in food-grade stainless with a bronze-effect finish, pumping 340 litres of tempered dark couverture in a continuous cascade from the tip down over four tiers of collection bowls.
-- **It Is Real**: This is not a decorative sculpture. It is a functioning commercial chocolate fountain of a type you would rent for a wedding, scaled up by a Rotterdam engineering firm that had never been asked to do this before and has not been asked since. The chocolate is hot. The chocolate is edible. People eat it. All day.
+- **It Is Real**: This is not a decorative sculpture. It is a functioning commercial chocolate fountain of a type you would rent for a wedding, scaled up by a port-city engineering firm that had never been asked to do this before and has not been asked since. The chocolate is hot. The chocolate is edible. People eat it. All day.
 - **It Is Free**: Dipping costs nothing. This is the whole business model. The fountain is free, the sticks cost money, the museum sells neither the sticks nor the fountain — it sells the tickets that the queue generates. Free chocolate makes a crowd; a crowd makes a landmark; a landmark makes ticket sales. The museum understands this completely and says so in its own annual report.
 - **Continuous Public Use**: Between forty and four hundred people are dipping at any given hour. It is a shared communal food surface in a public square with no supervision, no queue barrier, and no rule beyond a sign.
 - **The Sign**: A stainless plate at chest height reading **"EEN KEER DOPEN A.U.B. / ONE DIP PLEASE."** It has been replaced four times, each time larger. It is currently the size of a road sign. It has never worked once.
@@ -114,7 +114,7 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
  - **The Tempering Room**: A glass-walled working kitchen where two chocolatiers produce the gift shop stock in front of you. Marble slabs, seeding, a thermometer, absolute concentration. It is the most technically impressive thing on Museum Mile and it draws a smaller crowd than the mannequin downstairs.
  - **Hollow vs. Solid**: A cutaway display explaining structural failure modes. In summer this display is dated and updated weekly with actual casualties.
  - **The Failures Case**: Bloomed, seized, split and collapsed pieces, labelled with what went wrong. The curator's favourite case. Nobody stops at it.
- - **De Fontein: Een Technisch Verhaal**: A small display about building the fountain, including the original Rotterdam engineering drawings and a laminated letter from the firm politely declining to build a second one.
+ - **De Fontein: Een Technisch Verhaal**: A small display about building the fountain, including the original port-city engineering drawings and a laminated letter from the firm politely declining to build a second one.
 - **Atmospheric Effects**: Cocoa smell (pumped, deliberately, from the tempering room extraction), 17°C chill, low murmur, the specific quiet of people reading placards about something they cannot photograph without consequences
 
 ### Interior — First Floor: De Mechanische Vleugel (The Mechanical Wing)
@@ -150,7 +150,7 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
 - **The Toilet**: Lotte lets anyone use it, ticket or not. It is the most-used facility on Museum Mile. She has never analysed why.
 
 ### The Other Chocolate Museum
-The Shamsterdam Museum of Questionable Art, across town on Roodelicht Row, also sells chocolate anatomy: white, milk and dark, sprinkles, fondant bow ties, 3.50 Sovs "Fabergé-style collector's eggs," and a teenager on the till who cannot be bothered. Venustempel is aware of this.
+The Shamsterdam Museum of Questionable Art, across town on Roodelicht Row, also sells chocolate anatomy: white, milk and dark, sprinkles, fondant bow ties, 4 Sovs "Fabergé-style collector's eggs," and a teenager on the till who cannot be bothered. Venustempel is aware of this.
 
 Venustempel's position, delivered unprompted, once, in one dry institutional sentence and never repeated:
 
@@ -162,7 +162,7 @@ Venustempel's position, delivered unprompted, once, in one dry institutional sen
 **The distinction must be legible to a player who visits both**, on four axes:
 | Axis | Museum of Questionable Art | Venustempel |
 |------|---------------------------|-------------|
-| Price point | 3.50 Sovs eggs, novelty pricing, pile-it-high | 12 Sovs single pieces, 45 Sovs boxed set, cocoa percentage on the label |
+| Price point | 4 Sovs eggs, novelty pricing, pile-it-high | 12 Sovs single pieces, 45 Sovs boxed set, cocoa percentage on the label |
 | Signage | Neon "MUSEUM" in letters unsure of themselves, TripAdvisor stickers | Salvaged art deco, three-language gallery placards, municipal hygiene card |
 | Staff | One bored teenager | Five trained staff on rotation, one of whom is doing nothing but saying "one dip" |
 | Queue | None | Down the Mile, all day, and it is not even for the museum |
@@ -292,7 +292,7 @@ A stacking status effect. It is the location's core system and it follows the pa
 | Gunter's hand wipe | 1 | 1 SOV |
 | Lotte's "Handreiniger" (gift shop) | 2 | 4 Sovs |
 | Full night's sleep at The Tolerance Hostel | 2 | Standard rest |
-| Frietomat croquette | 1 | 2.20 Sovs — mechanically real, medically nonsense, the bros swear by it |
+| Frietomat croquette | 1 | 2 Sovs — mechanically real, medically nonsense, the bros swear by it |
 | Natural decay | 1 per in-game day | Free |
 
 **The Attribution Table** — what the bros blame, in order, every single time:
@@ -569,7 +569,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 ### Cross-Location Dependencies
 - **The Awkward Truffle**: Direct commercial rival. Chocolatier **Sophie** is the only NPC in the game who criticises the fountain — on *tempering* grounds, not hygiene. "That is not chocolate. That is chocolate-flavoured weather." She has never mentioned the germs and it has never occurred to her to. Buying from both in one in-game day unlocks a comparison dialogue.
-- **Shamsterdam Museum of Questionable Art**: The other end of the same industry — see "The Other Chocolate Museum" above. They are the cheap gift shop (3.50 Sovs eggs, sprinkles, fondant bow ties, one bored teenager, no queue); Venustempel is the curated institution (provenance, gallery plinths, three-language placards, climate control, a restrained expensive shop, and a queue down the Mile). The rivalry is one-directional and Venustempel expresses it in exactly one dry sentence. Their gift shop now carries unlicensed fountain merch. Their chocolate material is load-bearing for the Fabergé Egg Hunt and stays exactly as it is.
+- **Shamsterdam Museum of Questionable Art**: The other end of the same industry — see "The Other Chocolate Museum" above. They are the cheap gift shop (4 Sovs eggs, sprinkles, fondant bow ties, one bored teenager, no queue); Venustempel is the curated institution (provenance, gallery plinths, three-language placards, climate control, a restrained expensive shop, and a queue down the Mile). The rivalry is one-directional and Venustempel expresses it in exactly one dry sentence. Their gift shop now carries unlicensed fountain merch. Their chocolate material is load-bearing for the Fabergé Egg Hunt and stays exactly as it is.
 - **Condomerie Het Gulden Vlies**: Adjacent trade, different district. Femke and Lotte have professional awareness and no relationship.
 - **The Hemp Museum**: "We've been to TWO museums" — with decreasing conviction
 - **The Tolerance Hostel**: Bathroom-queue event at Tier 5; Ingrid on the interior-photo exclusion list; Ingrid has an opinion about the fountain and will not share it

@@ -179,7 +179,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Bachelor Party Bundle | (0, 64) | 96x96 | 45 Sovs — "The Full Experience" |
 | Educational Poster (rolled) | (96, 64) | 48x96 | Inventory form |
 | Educational Poster (unrolled) | (144, 64) | 96x96 | Tasteful diagram, hostel-wall ready |
-| Gift Card (blank) | (240, 64) | 64x48 | 20 Sovs-100 |
+| Gift Card (blank) | (240, 64) | 64x48 | 20-100 Sovs |
 | Gift Card (presented, awkward) | (240, 112) | 64x48 | Held out at arm's length |
 | Sizing Guide Booklet | (304, 64) | 64x96 | "Information is power" |
 | Shopping Bag — Distinctive | (368, 64) | 64x96 | Gold fleece print; visible from across a hostel kitchen |

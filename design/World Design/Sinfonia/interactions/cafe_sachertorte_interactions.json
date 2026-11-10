@@ -44,7 +44,7 @@
         "beverages": [
           {"item": "Kleiner Brauner", "price": 5, "description": "Small coffee, served with judgment"},
           {"item": "Großer Brauner", "price": 7, "description": "Large coffee, slightly less judgment"},
-          {"item": "Melange", "price": 8, "description": "Viennese latte, foam artistically peaked"},
+          {"item": "Melange", "price": 8, "description": "Sinfonian latte, foam artistically peaked"},
           {"item": "Einspänner", "price": 9, "description": "Coffee with excessive whipped cream"}
         ],
         "cakes": [

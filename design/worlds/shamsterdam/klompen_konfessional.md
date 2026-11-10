@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 9 AM - 8 PM (tourist shopping hours)
 - **Stat Requirements**: None (the clogs welcome all feet, briefly)
-- **Item Requirements**: Gold for purchases (15 Sovs-80), willingness to accept truth
+- **Item Requirements**: Gold for purchases (15-80 Sovs), willingness to accept truth
 - **Previous Location Requirements**: None (the clogs call to all tourists)
 - **Special Conditions**: "Try them on" station available, medical waiver not technically required
 
@@ -50,19 +50,19 @@
 - Natural wood, classic designs
 - "As worn by Dutch farmers" (in the 1800s)
 - Historical accuracy, modern uselessness
-- 25 Sovs-40 range
+- 25-40 Sovs range
 
 **The "Artistic" Section**
 - Hand-painted windmills, tulips, Delft blue
 - Instagram-ready, foot-ready: debatable
 - These are clearly decorations
-- 35 Sovs-60 range
+- 35-60 Sovs range
 
 **The "Wearable" Section (Allegedly)**
 - Modern comfort modifications
 - Rubber soles added, padding inserted
 - "You could technically walk in these"
-- 50 Sovs-80 range
+- 50-80 Sovs range
 - Staff maintain straight faces
 
 **The Try-On Station**
@@ -74,7 +74,7 @@
 **The Miniatures Section**
 - Tiny decorative clogs, keychains, magnets
 - The honest purchase: no pretense of wearing
-- 5 Sovs-15 range
+- 5-15 Sovs range
 - Best-seller by volume
 
 ### The Clog-Making "Demonstration"

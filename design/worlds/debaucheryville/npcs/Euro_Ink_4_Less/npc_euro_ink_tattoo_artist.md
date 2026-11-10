@@ -145,7 +145,7 @@ Started with genuine passion for tattoo art. Never got good but got fast and che
 | Service | Price | Quality | Result |
 |---------|-------|---------|--------|
 | Clock Skeleton Tattoo | 75 Sovs | Duck | Lord Pilsner's signature piece |
-| Any Custom Design | 50 Sovs-100 | Questionable | Usually comes out duck-ish |
+| Any Custom Design | 50-100 Sovs | Questionable | Usually comes out duck-ish |
 | The Lord Pilsner Special | 50 Sovs | Duck intentional | Any duck-related design |
 | Touch-ups | Free | Same quality | Doesn't help |
 

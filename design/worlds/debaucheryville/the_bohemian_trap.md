@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 6 PM - 4 AM (twilight to desperation hours)
 - **Stat Requirements**: None (the absinthe accepts all who pay)
-- **Item Requirements**: Gold for purchases (5 Sovs-25), willingness to believe marketing
+- **Item Requirements**: Gold for purchases (5-25 Sovs), willingness to believe marketing
 - **Previous Location Requirements**: None (the cart finds those who seek "experiences")
 - **Special Conditions**: Cart location shifts slightly each night (part of the mystique/confusion)
 

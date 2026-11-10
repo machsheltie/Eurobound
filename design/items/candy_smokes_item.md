@@ -110,7 +110,7 @@ Once granted, the carton is a **permanent party item** — key-item slot, no equ
 |----------|----------|------------------------|
 | Sinfonia café barista (Grounds For Concern) | "That's a sweet. For children. There is a bowl of them by the till, they are free." | "Free samples. They're seeding the market here." |
 | Backroom server | *sets down the tray, waits, does not react at all, moves on* | "That's respect. That's a nod from the house." |
-| Corner-shop owner, any city | "Forty cents. The blue ones are the same but mint." | "He's got a *mint* line. That's a whole other tier." |
+| Corner-shop owner, any city | "Not even a Sov. The blue ones are the same but mint." | "He's got a *mint* line. That's a whole other tier." |
 | A seven-year-old outside a supermarket | "I have those." | *(Lord Pilsner, warmly)* "Yeah you do, buddy. Yeah you do." |
 | Publandia bartender | *slides an actual ashtray down the bar without breaking eye contact* | "Ashtray. So they're allowed in here. Noted." |
 
@@ -144,7 +144,7 @@ Once granted, the carton is a **permanent party item** — key-item slot, no equ
 ### Achievement
 - **Achievement Name**: "Perceived Confidence"
 - **Description**: "Bite the end off."
-- **Hidden Description**: "Use a forty-cent carton of children's candy one hundred times."
+- **Hidden Description**: "Use a carton of children's candy worth less than one Sov one hundred times."
 
 ---
 

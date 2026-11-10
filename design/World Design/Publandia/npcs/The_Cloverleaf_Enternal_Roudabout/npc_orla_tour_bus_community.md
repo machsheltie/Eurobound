@@ -91,7 +91,7 @@ Now: Ensure the community she's built thrives. Keep everyone safe, fed, and orga
 ### About the Community
 > "We've got about thirty regular residents on the bus. We hold elections every six months. I'm the current coordinator. Fourth term. Unopposed, but that's just because I'm efficient."
 
-> "We started as a tour group. Cork, Galway, the Cliffs. Then we entered The Cloverleaf and, well... here we are. Twelve years now."
+> "We started as a tour group. The coast, the cliffs, the whole circuit. Then we entered The Cloverleaf and, well... here we are. Twelve years now."
 
 > "At first it was chaos. People crying, trying to leave. Then I thought: why fight it? Let's organize. And look at us now!"
 

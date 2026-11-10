@@ -35,7 +35,7 @@
   - Subtitle: "The Salty Truth — Raw. Real. Ready."
   - Method guide: "THE DUTCH WAY" with illustrated instructions (head back, fish up, lower into mouth)
   - Warning: "The fish is raw. Your reaction will be witnessed."
-  - Price board: "Haring 4 SOVS / Met Uitjes 4.50 SOVS / De Waarheid Platter 8 SOVS"
+  - Price board: "Haring 4 SOVS / Met Uitjes 5 SOVS / De Waarheid Platter 8 SOVS"
 - **Atmosphere**: Salt air, seagull supervision, the faint sound of tourist hesitation
 - **Environmental Context**: Working harbor backdrop, fishing boats, locals grabbing lunch efficiently
 
@@ -114,7 +114,7 @@
 | Item | Price | HP Effect | Status Effect | Respect Earned | Notes |
 |------|-------|-----------|---------------|----------------|-------|
 | Haring (Traditional) | 4 SOVS | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
-| Haring met Uitjes | 4.50 SOVS | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
+| Haring met Uitjes | 5 SOVS | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
 | De Waarheid Platter | 8 SOVS | +50 HP, +20 SP | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
 | Broodje Haring | 5 SOVS | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
 | "Just the Bread" | 2 SOVS | +5 HP | Coward's Comfort | None | Available, not recommended |
@@ -256,7 +256,7 @@
 - **Function**: Shows bros aren't the only ones facing the test
 
 **The Repeat Tourist**
-- **Composition**: American, clearly not first Amsterdam trip, confident
+- **Composition**: American, clearly not first Shamsterdam trip, confident
 - **Behavior**: Orders met uitjes, traditional method, efficient
 - **Dialogue**: "Every trip. First day. The fish resets me."
 - **Function**: Proof that tourists CAN master this
@@ -286,7 +286,7 @@
 ## System Integration
 ### Cultural Courage Network
 - **Function**: Herring stand connects to other "authentic experience" challenges
-- **Connection to Proeflokaal**: Both require public vulnerability
+- **Connection to Bottoms Down**: Both require public vulnerability
 - **Connection to Brouwerij**: Courage-building progression
 - **Connection to Stroopwafel Cart**: Comfort food after herring success
 

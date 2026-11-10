@@ -128,7 +128,7 @@
 
 **For the Fiaker Encounter:**
 - [x] **What do the bros THINK is happening?** 
-  - A noble quest to reunite a traditional Viennese horseman with his noble steed. Like knights of old.
+  - A noble quest to reunite a traditional Sinfonian horseman with his noble steed. Like knights of old.
 - [x] **What is ACTUALLY happening?** 
   - A drunk driver lost his horse because he was drinking schnapps. The horse escaped because it hates its job.
 - [x] **How impaired are they?** 

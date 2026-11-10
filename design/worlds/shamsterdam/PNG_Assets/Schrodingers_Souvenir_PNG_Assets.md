@@ -141,7 +141,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Souvenir Seed Pack | (240, 0) | 48x48 | 40 Sovs — HIGH export risk, *not for germination |
 | Premium Strain Seeds | (288, 0) | 48x48 | 65 Sovs — VERY HIGH export risk, *definitely not for germination |
 | Hemp Rope Coil | (336, 0) | 48x48 | Cannabis-free cannabis plant, sold by the metre |
-| Leaf Novelty Set | (384, 0) | 48x48 | 10 Sovs-30 — declaring your tourist status in advance |
+| Leaf Novelty Set | (384, 0) | 48x48 | 10-30 Sovs — declaring your tourist status in advance |
 | Hemp Clothing (Folded) | (432, 0) | 48x48 | Zone 1, fibre only, no cannabinoids, genuinely fine |
 | Reserve | (480, 0) | 32x48 | Reserved cell, do not paint |
 

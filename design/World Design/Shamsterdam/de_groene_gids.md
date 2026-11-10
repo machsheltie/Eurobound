@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 1 AM (legal operating hours, strictly enforced)
 - **Stat Requirements**: None for entry (18+ age check is a formality)
-- **Item Requirements**: Cash only (50 SOVS minimum ATM withdrawal at their branded machine, 4.50 SOVS fee)
+- **Item Requirements**: Cash only (50 SOVS minimum ATM withdrawal at their branded machine, 5 SOVS fee)
 - **Previous Location Requirements**: None (this is usually where tourists go FIRST)
 - **Special Conditions**: Must show ID at door, bros fumble with passports for comedic effect
 
@@ -101,13 +101,13 @@
 ### Coffeeshop Service System
 - **Menu Interaction**: Approach counter, receive laminated menu, experience decision paralysis
 - **Strain Selection**: Choose from "Tourist Recommended" (overpriced), "House Blend" (mystery), or "Premium Collection" (VERY overpriced)
-- **Cash Only Enforcement**: Credit card attempt triggers ATM redirect (4.50 SOVS fee, machine is branded)
+- **Cash Only Enforcement**: Credit card attempt triggers ATM redirect (5 SOVS fee, machine is branded)
 - **ID Check**: Passport fumbling mini-game (time-based, failure = embarrassment only)
 
 ### Menu & Consumables
 | Item | Price | Effects | Staff Comment |
 |------|-------|---------|---------------|
-| "Amsterdam Dream" (Tourist Rec) | 18 SOVS/g | +20 SP, -Speed, Delayed "Space Cake Effect" | "Very popular. Very smooth." (scripted) |
+| "Shamsterdam Dream" (Tourist Rec) | 18 SOVS/g | +20 SP, -Speed, Delayed "Space Cake Effect" | "Very popular. Very smooth." (scripted) |
 | "Green Guide Special" (House) | 15 SOVS/g | +15 SP, +Confused status | "House blend. Good choice." (automatic) |
 | "Premium Heritage" | 25 SOVS/g | +30 SP, -Intelligence, +Bravado temporarily | "Excellent selection, sir." (upsell confirmed) |
 | Space Cake (1 piece) | 8 SOVS | Delayed effect: +40 SP after 2 hours game time, "It's Not Working" dialogue available | "Wait two hours. Americans never wait." |
@@ -148,7 +148,7 @@
 - **Demeanor**: Professional exhaustion, scripts memorized, passion extinct
 - **Dialogue**:
   - "Welcome to De Groene Gids. Famous since 1985. How can I help you."
-  - "Tourist recommendation? Amsterdam Dream. Very smooth. Very popular."
+  - "Tourist recommendation? Shamsterdam Dream. Very smooth. Very popular."
   - "No tobacco. Yes, I know you have your own. No. We do not mix here."
   - "Cash only. ATM is there. Yes, the fee is normal. No, we do not control the fee."
   - "Space cake takes two hours. Yes, I know you feel nothing. Two. Hours."
@@ -198,7 +198,7 @@
 
 ### Original NPC Dialogue
 **Budtender Bas:**
-- "You want recommendation? Amsterdam Dream. Everyone wants Amsterdam Dream. I will get Amsterdam Dream."
+- "You want recommendation? Shamsterdam Dream. Everyone wants Shamsterdam Dream. I will get Shamsterdam Dream."
 - "Yes, it's expensive. We are famous. Famous things cost money. This is how famous works."
 - "The menu has descriptions. The descriptions are accurate. Please read the descriptions."
 - "Your friend is asking if he can 'try a sample.' We do not do samples. This is not Costco."
@@ -339,7 +339,7 @@ Chadwick: *drops phone* "WHY IS THE FLOOR MOVING."
 - display_case_product.png - 256x192 - Glass case with stylized product
 - digital_menu_board.png - 384x512 - Scrolling strain names and prices
 - merchandise_tshirt_wall.png - 384x256 - Branded clothing array
-- branded_atm_machine.png - 128x256 - 4.50 SOVS fee, branded
+- branded_atm_machine.png - 128x256 - 5 SOVS fee, branded
 - bob_marley_poster.png - 96x128 - Legally required coffeeshop decor
 - smoke_haze_overlay.png - 1920x1080 - Atmospheric particle layer
 - green_neon_lighting.png - 1920x128 - Ambient lighting effect

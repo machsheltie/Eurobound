@@ -83,7 +83,7 @@
       "region": "Sinfonia",
       "exterior": {
         "description": "A magnificent horseshoe-shaped theater seating 1,200 (satirically never full except for free events). Red velvet seating on orchestra level, balcony, and upper gallery. The unused Royal Box from 1918 sits center. A massive baroque proscenium arch frames the deep stage.",
-        "entry_condition": "Performance ticket (40 Sovs-80) for evening; Charm 2+ to sneak into rehearsals; Bassline ticket (25 Sovs) for nighttime"
+        "entry_condition": "Performance ticket (40-80 Sovs) for evening; Charm 2+ to sneak into rehearsals; Bassline ticket (25 Sovs) for nighttime"
       },
       "interior": {
         "theme": "High culture performance space that transforms into EDM arena, dual identity embodied",
@@ -250,7 +250,7 @@
         ]
       },
       "functions": [
-        "Major destruction zone (800 Sovs-1,450)",
+        "Major destruction zone (800-1,450 Sovs)",
         "Prima Donna's aria interruption",
         "Director's breakdown scene",
         "Papageno alternate route trigger"

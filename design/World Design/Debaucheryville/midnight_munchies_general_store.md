@@ -127,7 +127,7 @@ The satire is the universal experience of the late-night convenience store trip:
 **How impaired are they**: Usually very (it's 3 AM, they've been out)
 
 **The transaction reality**:
-- Energy drink that's 1.50 SOVS in daytime: 4 SOVS at 3 AM
+- Energy drink that's 2 SOVS in daytime: 4 SOVS at 3 AM
 - Aspirin that's 3 SOVS at pharmacy: 8 SOVS here
 - "Worth it" because what's the alternative?
 - Alternative: should have planned ahead (too late now)
@@ -246,7 +246,7 @@ The satire is the universal experience of the late-night convenience store trip:
 - "That's 12 SOVS. ...16 SOVS after 2 AM. You knew this."
 - "Energy drink, aspirin, kebab. The classic combination. 15 SOVS."
 - "Cash or card. Either works. I've seen worse purchases."
-- "Need a bag? ...0.50 SOVS. Everything costs something."
+- "Need a bag? ...1 SOV. Everything costs something."
 
 *The Observations (Not Judgment):*
 - "Third night this week. You're becoming a regular. This is neither good nor bad. It just is."
@@ -276,7 +276,7 @@ The satire is the universal experience of the late-night convenience store trip:
 **The Pre-Dawn Philosopher**
 - **Composition**: Someone at 5 AM, past desperate, now contemplative
 - **Behavior**: Buying coffee supplies, thinking about life choices
-- **Dialogue**: "How did I get here? Not to Prague. To THIS. To the 5 AM convenience store. Věra, what does it mean?"
+- **Dialogue**: "How did I get here? Not to Debaucheryville. To THIS. To the 5 AM convenience store. Věra, what does it mean?"
 - **Věra**: "It means you need coffee. 4 SOVS."
 - **Function**: Shows the contemplative late-hour customer
 

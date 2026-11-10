@@ -161,7 +161,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 ### The House Edge System
 
 **Gold Economy**:
-- Minimum 500 SOVS gold to enter (held as collateral)
+- Minimum 500 SOVS to enter (held as collateral)
 - All games use house chips (no gold directly)
 - Chips convert back to gold at exit (minus "handling fee")
 - House edge varies by game and table
@@ -210,7 +210,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 
 ### Roulette (Secondary Mini-Game)
 
-**Viennese Wheel**:
+**Sinfonian Wheel**:
 - Single-zero European style (better than American)
 - Can bet numbers, colors, odd/even
 - Special bets: "Composer's Dozen" (Mozart's favorite numbers, fake)
@@ -225,7 +225,7 @@ The house is systematically extracting their gold while they feel sophisticated.
 
 ### Blackjack (Tertiary Mini-Game)
 
-**Twenty-One Viennese**:
+**Twenty-One Sinfonian**:
 - Standard rules with period terminology
 - Dealer stands on 17
 - Can double, split, surrender

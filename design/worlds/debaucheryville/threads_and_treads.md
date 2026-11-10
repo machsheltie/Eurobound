@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24 hours (coolness never sleeps)
 - **Stat Requirements**: None (the insecure are welcome, especially them)
-- **Item Requirements**: Gold for purchases (20 Sovs-150), willingness to reinvent yourself at 2 AM
+- **Item Requirements**: Gold for purchases (20-150 Sovs), willingness to reinvent yourself at 2 AM
 - **Previous Location Requirements**: None (the urge to look cool finds everyone)
 - **Special Conditions**: 2 AM - 5 AM sees different clientele (more desperate, more honest)
 
@@ -154,7 +154,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 | Studded Leather Jacket | 150 Sovs | +7 Defense | +20 Cool Factor, +5 Intimidation | "Maximum statement" |
 | Vintage Biker Jacket | 100 Sovs | +4 Defense | +10 Cool Factor, +5 Charm (specific NPCs) | "Has history (or looks like it)" |
 | Denim Vest (Patchless) | 30 Sovs | +1 Defense | +5 Cool Factor, patch slots | "Canvas for your identity" |
-| Band Patch Collection | 5 Sovs-15 each | +1 per patch | +Cool Factor per patch | "Declare your allegiances" |
+| Band Patch Collection | 5-15 Sovs each | +1 per patch | +Cool Factor per patch | "Declare your allegiances" |
 
 **Combat Boots & Footwear (Foot Armor)**
 | Item | Price | Defense | Other Stats | Notes |
@@ -173,7 +173,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 | Fingerless Gloves | 20 Sovs | +5 Dexterity, +5 Edginess | "For things that require grip" |
 | Spiked Bracelet | 30 Sovs | +3 Attack, +5 Intimidation | "Handshake deterrent" |
 | Leather Cuff | 15 Sovs | +5 Cool Factor | "Subtle statement" |
-| Choker (Various) | 10 Sovs-25 | +Charm (specific contexts) | "Neck declaration" |
+| Choker (Various) | 10-25 Sovs | +Charm (specific contexts) | "Neck declaration" |
 | Bandana | 8 Sovs | +5 Cool Factor, face concealment option | "Multiple functions" |
 | Aviator Sunglasses | 35 Sovs | +Confusion resistance (day), +10 Cool Factor | "Classic for a reason" |
 

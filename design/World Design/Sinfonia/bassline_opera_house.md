@@ -331,7 +331,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - *Before Gustav*: "The Queen enters on measure 47. MEASURE 47! Why is this difficult?!"
 - *Gustav appears*: "What is— no. No. This is not happening. I am hallucinating."
 - *During chaos*: "THE BACKDROP! THE SNAKE! EIGHT MONTHS OF WORK!"
-- *Breakdown*: "I studied at Salzburg. I trained with legends. And a HORSE destroys my Zauberflöte."
+- *Breakdown*: "I studied at the Conservatory. I trained with legends. And a HORSE destroys my Zauberflöte."
 - *To Bros*: "You. This is YOUR horse? You will pay. You will ALL pay. 2,000 SOVS. MINIMUM."
 
 **Animation States**:
@@ -699,7 +699,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 5. **Bros' selfie** in destroyed backstage
 
 ### Quote-Worthy Lines
-- "I studied at Salzburg. I trained with legends. And a HORSE destroys my Zauberflöte." - Director
+- "I studied at the Conservatory. I trained with legends. And a HORSE destroys my Zauberflöte." - Director
 - "The bird-man knows these halls! Follow Papageno!" - Papageno
 - "I have sung at La Scala! At the Met! I was NOT interrupted by HORSES!" - Prima Donna
 - "...Ja, that's a horse. *sips coffee*" - Otto

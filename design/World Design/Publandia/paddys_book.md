@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 6 PM - 5 AM (when legitimate businesses close)
 - **Stat Requirements**: Bravado 25+ OR vouched for by NPC
-- **Item Requirements**: Minimum 50 SOVS gold (they check), discretion
+- **Item Requirements**: Minimum 50 SOVS (they check), discretion
 - **Previous Location Requirements**: Hear rumor at The Blarney Trap or from Craic Broker
 - **Special Conditions**: Hidden entrance, password changes nightly
 
@@ -35,7 +35,7 @@
 - "The ponies are thirsty" (Monday)
 - "Seamus sent me" (works sometimes, risky)
 - "I'm here for the book club" (Tuesday/Thursday)
-- "What odds on rain?" (meta, always works in Dublin)
+- "What odds on rain?" (meta, always works in Publandia)
 
 ## Visual Design
 ### Exterior Description
@@ -90,8 +90,8 @@
 ║         PADDY'S BOOK — TONIGHT'S ACTION      ║
 ╠══════════════════════════════════════════════╣
 ║ BRAWLS                                       ║
-║ Big Mick vs. Cork Jimmy........... 2:1 / 3:2 ║
-║ The Galway Gorilla vs. ???........ 5:1 / 1:8 ║
+║ Big Mick vs. Quarry Jimmy......... 2:1 / 3:2 ║
+║ The Brewery Gorilla vs. ???....... 5:1 / 1:8 ║
 ║ Tourist Battle Royale............. Various   ║
 ╠══════════════════════════════════════════════╣
 ║ DICE FIGHTS                                  ║
@@ -191,7 +191,7 @@ Paddy Malone has run books since he was 14. His father ran books. His grandfathe
 - **Mechanic**: Bet on random events (weather, tourist behavior, etc.)
 - **House Edge**: Paddy sets odds, Paddy observes outcomes, Paddy decides disputes
 - **Examples**:
-  - "Rain before midnight" — 1:3 (It's Dublin. Always bet rain.)
+  - "Rain before midnight" — 1:3 (It's Publandia. Always bet rain.)
   - "Hen party vomit in Temple Bar" — 1:2 (Saturday night special)
   - "American orders 'Irish Car Bomb'" — 1:1 (Daily occurrence, Paddy scouts bars)
 - **The Scam**: Information asymmetry (Paddy has scouts everywhere)
@@ -223,7 +223,7 @@ Paddy Malone has run books since he was 14. His father ran books. His grandfathe
 
 ### "House Rules" System
 Paddy invokes "house rules" whenever the house is losing too much:
-- **Sudden Rule Change**: "Oh, we're playing DUBLIN rules tonight. Different payouts."
+- **Sudden Rule Change**: "Oh, we're playing PUBLANDIA rules tonight. Different payouts."
 - **Disputed Outcome**: "That roll was invalid. Floor was tilted."
 - **Technical Difficulties**: "Dice need to be recalibrated. Take a break."
 - **Personal Discretion**: "I don't like how that landed. Re-roll."
@@ -285,7 +285,7 @@ Paddy invokes "house rules" whenever the house is losing too much:
 - "Ah, that's a tough break. But you know what they say — unlucky in dice, lucky in love. Or vice versa."
 
 *The House Rules:*
-- "Now, we play Dublin rules here. Slight variation on what you might know."
+- "Now, we play Publandia rules here. Slight variation on what you might know."
 - "That's a disputed roll. House decides in disputes. House says... re-roll. Fair, right?"
 - "I'm going to invoke the Malone Clause here. For your protection, really."
 
@@ -319,7 +319,7 @@ Paddy invokes "house rules" whenever the house is losing too much:
 - **Dialogue**:
   - "Step right up! Dice don't lie! ...much."
   - "Watch the roll, watch the roll, watch the— OH! So close! Again?"
-  - "These are regulation dice. Dublin regulation. Different from international."
+  - "These are regulation dice. Publandia regulation. Different from international."
 
 **Maureen (The Consoler)**
 - **Role**: Recovery corner, sympathy drinks, loan shark assistant
@@ -367,7 +367,7 @@ Paddy invokes "house rules" whenever the house is losing too much:
 - "I've been cleaned out exactly once in my life. I was twelve. I learned. Most people never learn. That's my business model."
 
 **The Bros' Paddy's Book Reactions:**
-- **Lord Pilsner** (entering): "A SECRET gambling den! This is SO authentic! This is REAL Dublin!"
+- **Lord Pilsner** (entering): "A SECRET gambling den! This is SO authentic! This is REAL PUBLANDIA!"
 - **Lord Pilsner** (winning early): "I TOLD you I had a system! The dice LISTEN to me!"
 - **Lord Pilsner** (losing later): "The odds have to turn. Statistics. LAW OF AVERAGES."
 - **Lord Pilsner** (cleaned out): "...Paddy, about that loan you mentioned..."

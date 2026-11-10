@@ -1,11 +1,10 @@
-# Proeflokaal 't Kansen (The Chance Tasting Room)
+# Bottoms Down
 
 *Where 400 years of Dutch drinking tradition meets the moment you realize you're in over your head*
 
 ## Location Identity
-- **Location ID**: shamsterdam_oldtown_proeflokaal_kansen_01
-- **Display Name**: Proeflokaal 't Kansen
-- **English Translation**: "The Chance Tasting Room"
+- **Location ID**: shamsterdam_oldtown_bottoms_down_01
+- **Display Name**: Bottoms Down
 - **Satirical Subtitle**: "No Hands. No Fear. No Memory."
 - **World Location**: Shamsterdam
 - **Area Zone**: Old Town, historic distillery district
@@ -21,18 +20,18 @@
 
 ### Bottle Opener Requirement
 - **Prerequisite**: The Blarney Trap Bottle Opener (Publandia) — required for brewery tour access
-- **Location-Specific Opener**: Proeflokaal 't Kansen Bottle Opener
+- **Location-Specific Opener**: Bottoms Down Bottle Opener
 - **Design**: Traditional tulip jenever glass shape (overfilled, surface tension visible), bottle opener as the stem
 - **Material**: Amber-tinted brass with sawdust-colored leather loop
 - **Inscription**: "No Hands. No Fear."
-- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for 20 Sovs
+- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for 20 SOVS
 - **Special Feature**: Glass portion is slightly convex to mimic the surface tension meniscus
 - **Check Point**: Kees checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
-- **Without Proeflokaal Opener**: Can enter and drink, but cannot receive stamp or purchase Oude Genever
+- **Without Bottoms Down Opener**: Can enter and drink, but cannot receive stamp or purchase Oude Genever
 
 **Kees's Opener Check**:
-- *With Blarney Trap Opener, No Proeflokaal Opener*: *nods* "Seamus." *points to gauntlet setup* "Gauntlet. Or 20 Sovs. Your glass. Your choice."
+- *With Blarney Trap Opener, No Bottoms Down Opener*: *nods* "Seamus." *points to gauntlet setup* "Gauntlet. Or 20 SOVS. Your glass. Your choice."
 - *With Both Openers*: *nods once* "You have the glass. You earned it. Or bought it." *pours with precision* "Same result. Oude Genever."
 - *Without Blarney Trap Opener*: "No shamrock." *waits* "No tour." *waits* "Return. With opener." *waits*
 
@@ -45,10 +44,10 @@
 ## Visual Design
 ### Exterior Description
 - **Approach**: Narrow alley off main Old Town square, easy to miss, easier to find if you know
-- **Structure**: 400-year-old building (1624), Shamsterdam's oldest surviving distillery, looks it
+- **Structure**: 400-year-old building (1624), Amsterdam's oldest surviving distillery, looks it
 - **Entrance**: Low wooden door (everyone hits their head), no obvious signage
 - **Signage**: 
-  - Above door (barely visible): "Proeflokaal" in faded gold lettering
+  - Above door (barely visible): "Bottoms Down" in faded gold lettering
   - No other signage (they've been here 400 years, they don't need signs)
   - Small brass plaque: "Est. 1624 — Jenever — Proudly Confusing Tourists Since Then"
 - **Atmosphere**: Smells like juniper berries and history, sounds like thick glasses hitting wood
@@ -65,7 +64,7 @@
   - Traditional jenever dispensing system (ceramic jugs, filled to the absolute brim)
   - Wall of jenever bottles arranged by age (jong, oud, zeer oud, "don't ask")
   - No stools at bar (standing is traditional; falling is also traditional)
-  - Brass foot rail (the most touched object in Shamsterdam)
+  - Brass foot rail (the most touched object in the Netherlands)
 - **Decorative Elements**:
   - Original distillery equipment (non-functional, displayed)
   - Historical photos of the building (it looks the same)
@@ -104,7 +103,7 @@
 - **Lighting Setup**: Real candlelight flicker, minimal electric supplementation, window glow
 - **Particle Systems**: Sawdust dust motes, candle smoke, jenever vapor
 - **Animation Elements**: Candlelight flicker, liquid surface tension physics, bartender pour
-- **Performance Optimization**: Simplified candlelight, static sawdust, reduced particle count
+- **Mobile Optimization**: Simplified candlelight, static sawdust, reduced particle count
 
 ## Satirical Design
 ### Theme & Vibe
@@ -142,7 +141,7 @@
 **How locals play along**: Bartender has served ten thousand tourists, has seen everything, expression never changes
 
 ## Gameplay Mechanics
-### Proeflokaal Service System
+### Bottoms Down Service System
 - **Ordering Process**: Approach bar, receive options, receive judgment
 - **Glass Filling**: Visual shows surface tension, glass literally cannot be lifted without spill
 - **Traditional Method Tutorial**: First drink comes with (optional) explanation of no-hands technique
@@ -170,7 +169,7 @@
 
 4. **Final Boss — The Kopstootje**: Complete the "headbutt" — jenever shot followed immediately by beer chaser
    - Dutch tradition, two drinks, one moment
-   - Success: "Canal Courage" quest progress confirmed, maximum reward
+   - Success: "Dutch Courage" quest progress confirmed, maximum reward
    - Failure: The sawdust does its job
 
 **Success Rewards**:
@@ -191,8 +190,8 @@
 - **Lord Pilsner** (Round 1): "This is basically vodka. I've trained for this."
 - **Lord Pilsner** (Round 3): "They all taste like... history? Is 'history' an answer?"
 - **Chadwick**: "I'm documenting everything. For posterity. The footage is... wow."
-- **Bradley**: "I'm fine. I'm doing fine."
-- **Bradley** (Final): "I said I'm fine."
+- **Bradley**: "Gregory believes in me. Gregory's support is all I need."
+- **Bradley** (Final): "Gregory is concerned. I told Gregory I'm fine."
 
 ### Traditional Drinking Method (The No-Hands Technique)
 **Cultural Tutorial**
@@ -210,19 +209,19 @@
 - **Definition**: Jenever immediately followed by beer
 - **Translation**: "Little headbutt"
 - **Execution**: Bow for jenever, shoot, grab beer chaser, survive
-- **Effect**: Combines jenever and beer effects, -Intelligence +Bravado +Shamsterdam Cred
+- **Effect**: Combines jenever and beer effects, -Intelligence +Bravado +Dutch Cred
 
 ### Menu & Consumables
 | Item | Price | ABV | Effects | Bartender Note |
 |------|-------|-----|---------|----------------|
-| Jonge Jenever | 4 Sovs | 35% | +15 SP, Mild warmth | "Young. Starter." |
-| Oude Jenever | 6 Sovs | 35% | +25 SP, The Shakes (-Accuracy) | "Old. Respect required." |
-| Zeer Oude Jenever | 12 Sovs | 38% | +40 SP, The Shakes x2 | "Very old. Very serious." |
-| Korenwijn | 15 Sovs | 38% | +50 SP, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
-| Beer (Pilsner) | 4 Sovs | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
-| The Kopstootje Combo | 8 Sovs | — | Combined effect, +Shamsterdam Cred | "Traditional. Brave." |
-| "The Flight" (5 samples) | 20 Sovs | Escalating | See Gauntlet | "For tasting. Or testing." |
-| Back Room Special | 25 Sovs | 40% | +60 SP, Everything status | "If you qualify." |
+| Jonge Jenever | 4 SOVS | 35% | +15 SP, Mild warmth | "Young. Starter." |
+| Oude Jenever | 6 SOVS | 35% | +25 SP, The Shakes (-Accuracy) | "Old. Respect required." |
+| Zeer Oude Jenever | 12 SOVS | 38% | +40 SP, The Shakes x2 | "Very old. Very serious." |
+| Korenwijn | 15 SOVS | 38% | +50 SP, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
+| Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
+| The Kopstootje Combo | 8 SOVS | — | Combined effect, +Dutch Cred | "Traditional. Brave." |
+| "The Flight" (5 samples) | 20 SOVS | Escalating | See Gauntlet | "For tasting. Or testing." |
+| Back Room Special | 25 SOVS | 40% | +60 SP, Everything status | "If you qualify." |
 
 ### Consumable: Oude Genever
 **Type**: Alcoholic Beverage / Brewery Tour Reward
@@ -306,7 +305,7 @@
 **The Jenever Purist (Belgian)**
 - **Composition**: Solo, taking notes, treating this like research
 - **Behavior**: Methodical tasting, proper technique, slight superiority
-- **Dialogue**: "Shamsterdam makes fine jenever. They invented it downriver, of course. But fine. Fine."
+- **Dialogue**: "The Dutch make fine jenever. The Belgians invented it. But fine. Fine."
 - **Function**: Shows another approach, makes bros feel less cultured
 
 **The First Date (Mistake)**
@@ -322,28 +321,28 @@
 
 (That's it. That's all of it. 400 years of tradition distilled into 12 words.)
 
-**The Bros' Proeflokaal Reactions:**
+**The Bros' Bottoms Down Reactions:**
 - **Lord Pilsner** (entering): "This is AUTHENTIC. Look at that floor. That's SAWDUST. That's HISTORY."
 - **Lord Pilsner** (first glass): "Wait, I can't— it's going to— okay it spilled. That was a TEST."
 - **Lord Pilsner** (learning): "So I just... bow? To the DRINK? This is the most Dutch thing I've ever— okay actually that's smooth."
 - **Chadwick**: "The footage in here is going to be GOLDEN. The lighting is ATROCIOUS but the CONTENT—"
 - **Chadwick** (post-gauntlet): "I have... everything. On camera. I need to process what I've witnessed."
-- **Bradley** (entering): "The sawdust is fine. It's fine."
-- **Bradley** (gauntlet): "The third one is older."
-- **Bradley** (post): "I'm going to rest now. Here. On the floor. The sawdust is soft."
+- **Bradley** (entering): "Gregory is concerned about the sawdust. I told Gregory it's fine."
+- **Bradley** (gauntlet): "Gregory says the third one is older. Gregory has never been wrong."
+- **Bradley** (post): "Gregory and I are going to rest now. Here. On the floor. The sawdust is soft."
 
 ## System Integration
 ### Brewery Tour Quest Line
 - **Quest**: "Shamsterdam Brewery Tour"
 - **Progress**: 2 of 2 Shamsterdam breweries
 - **Stamp**: "Oude Genever" stamp added to Bottle Opener Keychain
-- **Completion**: Both Shamsterdam breweries = "Canal Courage" passive unlock
+- **Completion**: Both Shamsterdam breweries = "Dutch Courage" passive unlock
 
-### "Canal Courage" Passive (Full Unlock)
-- **Requirement**: Complete BOTH Shamsterdam breweries (The Wobbly Windmill Brewery + Proeflokaal 't Kansen)
+### "Dutch Courage" Passive (Full Unlock)
+- **Requirement**: Complete BOTH Shamsterdam breweries (The Wobbly Windmill Brewery + Bottoms Down)
 - **Effect**: All Bravado loss reduced by 25% while intoxicated
-- **Narrative**: "You've learned to drink like a Shamsterdammer. This is either an achievement or a concern."
-- **Visual**: Small Shamsterdam flag icon appears when passive is active
+- **Narrative**: "You've learned to drink like the Dutch. This is either an achievement or a concern."
+- **Visual**: Small Dutch flag icon appears when passive is active
 
 ### Cross-Location Dependencies
 - **The Wobbly Windmill Brewery**: Partner brewery, beer-focused counterpart to jenever
@@ -405,7 +404,7 @@
   - The Shakes effect (character vibration)
   - Kees's nod (rare, meaningful)
   - Sawdust particle interaction
-- **Performance Budget**: 60 FPS target, max 14 draw calls, 36MB memory
+- **Performance Budget**: 45 FPS target, max 14 draw calls, 36MB memory
 - **Platform Considerations**: Simplified sawdust particles, static candlelight option
 
 ### Development Timeline
@@ -440,7 +439,7 @@
 ## PNG Asset Requirements Summary
 
 ### Environment Art (12 PNGs)
-- proeflokaal_exterior_alley.png - 384x512 - Hidden entrance, no signage needed
+- bottoms_down_exterior_alley.png - 384x512 - Hidden entrance, no signage needed
 - main_room_tasting.png - 1920x1080 - Long narrow room, bar dominant
 - the_bar_oak.png - 512x256 - 8 meters of history
 - sawdust_floor_texture.png - 256x256 - Tileable, functional
@@ -481,10 +480,10 @@
 - kopstootje_timing.png - 128x96 - Two-drink sequence UI
 - back_room_unlock.png - 96x64 - Access notification
 - dutch_courage_progress.png - 128x32 - Quest completion tracker
-- brewery_stamp_proeflokaal.png - 64x64 - Overfilled tulip glass stamp
-- bottle_opener_proeflokaal.png - 48x48 - Tulip glass with surface tension
-- bottle_opener_proeflokaal_leather.png - 24x24 - Sawdust-colored loop detail
+- brewery_stamp_bottoms_down.png - 64x64 - Overfilled tulip glass stamp
+- bottle_opener_bottoms_down.png - 48x48 - Tulip glass with surface tension
+- bottle_opener_bottoms_down_leather.png - 24x24 - Sawdust-colored loop detail
 
 ---
 
-*Proeflokaal 't Kansen: 400 years of tradition teaching you to bow to your drink, question your choices, and understand exactly why there's sawdust on the floor.*
+*Bottoms Down: 400 years of tradition teaching you to bow to your drink, question your choices, and understand exactly why there's sawdust on the floor.*

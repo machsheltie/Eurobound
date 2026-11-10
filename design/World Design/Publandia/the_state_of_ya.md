@@ -299,7 +299,7 @@ If player is lost, Maeve helps:
 ### Customer NPCs
 
 **The Morning Shame Brigade**
-- **Composition**: Group of tourists in matching "DUBLIN" shirts, looking destroyed
+- **Composition**: Group of tourists in matching "PUBLANDIA" shirts, looking destroyed
 - **Behavior**: Whispering, avoiding eye contact, bulk-buying hangover supplies
 - **Function**: Shows the morning crowd
 - **Dialogue**: "We don't want to talk about it. Please just... aspirin. All of it."
@@ -325,7 +325,7 @@ If player is lost, Maeve helps:
 - **Maeve**: "Your hands are shaking. 12 SOVS total."
 
 **The Regular (Local)**
-- **Composition**: Dublin local who's made peace with Maeve's ways
+- **Composition**: Publandia local who's made peace with Maeve's ways
 - **Behavior**: Accepts commentary, gets supplies, leaves unbothered
 - **Function**: Shows the adjusted customer
 - **Dialogue**: "Morning, Maeve."

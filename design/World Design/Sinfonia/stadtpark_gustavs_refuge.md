@@ -239,7 +239,7 @@ Gustav isn't just running—he's *escaping*. After years of tourist service, he'
 - Optional additional antagonist
 
 **Key Quotes**:
-- "THERE you are! You think you can run from Salzburg-trained lawyers?!"
+- "THERE you are! You think you can run from Sinfonia-trained lawyers?!"
 - "2,000 SOVS! Plus emotional damages! Plus—" *sees Gustav* "...why is that horse wearing a cape?"
 - *If paid*: "Hmph. Very well. The arts... accept your contribution."
 - *If negotiated*: "Hans-Jürgen's insurance covers... some. You owe... 1,000 SOVS. Final."

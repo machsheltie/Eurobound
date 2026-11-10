@@ -626,4 +626,4 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Cake heist and damage-counter moments identified |
 
-**Café Sachertorte: Where Vienna's famous 18 Sovs cake slice meets a horse with expensive taste and zero impulse control.**
+**Café Sachertorte: Where Sinfonia's famous 18 Sovs cake slice meets a horse with expensive taste and zero impulse control.**

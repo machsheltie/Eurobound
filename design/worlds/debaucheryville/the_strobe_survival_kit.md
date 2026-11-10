@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 PM - 5 AM (pre-club through post-club hours)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: Gold for purchases (3 Sovs-25), acceptance of impending sensory assault
+- **Item Requirements**: Gold for purchases (3-25 Sovs), acceptance of impending sensory assault
 - **Previous Location Requirements**: None (the stall finds those heading clubward)
 - **Special Conditions**: Prices increase after midnight (desperation pricing)
 

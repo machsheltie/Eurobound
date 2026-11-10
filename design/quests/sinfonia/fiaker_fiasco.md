@@ -15,7 +15,7 @@
 
 ### The Setup
 **What the bros THINK is happening:**
-> A noble quest to reunite a traditional Viennese horseman with his noble steed. Like knights of old. Very cultured, very sophisticated. This is the REAL Sinfonia experience.
+> A noble quest to reunite a traditional Sinfonian horseman with his noble steed. Like knights of old. Very cultured, very sophisticated. This is the REAL Sinfonia experience.
 
 **What is ACTUALLY happening:**
 > A tourist-trap carriage driver lost his horse because he was drunk. The horse escaped because it was fed up with pulling tourists around. The bros are completely unqualified to catch a horse.

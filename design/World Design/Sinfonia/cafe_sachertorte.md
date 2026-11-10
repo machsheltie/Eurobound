@@ -1,6 +1,6 @@
 # Café Sachertorte
 
-*Where Vienna's famous chocolate cake meets an escaped horse with expensive taste*
+*Where Sinfonia's famous chocolate cake meets an escaped horse with expensive taste*
 
 ## Location Identity
 - **Location ID**: `sinfonia_kaffeehaus_cafe_sachertorte_01`
@@ -360,7 +360,7 @@
 |------|-------|--------|
 | Kleiner Brauner (small coffee) | 5 SOVS | Removes Tired |
 | Großer Brauner (large coffee) | 7 SOVS | Removes Tired, +1 Speed (1 hour) |
-| Melange (Viennese latte) | 8 SOVS | Removes Tired, +1 Charm (30 min) |
+| Melange (Sinfonian latte) | 8 SOVS | Removes Tired, +1 Charm (30 min) |
 | Einspänner (whipped cream) | 9 SOVS | Removes Tired, Removes Thirsty |
 
 **Cakes & Pastries**:
@@ -600,4 +600,4 @@ CafeSachertorte/
 
 ---
 
-**Café Sachertorte: Where Vienna's 18 SOVS cake slices meet their match in a horse with expensive taste and zero respect for historic institutions.**
+**Café Sachertorte: Where Sinfonia's 18 SOVS cake slices meet their match in a horse with expensive taste and zero respect for historic institutions.**

@@ -74,7 +74,7 @@
         {
           "item_id": "sachertorte_slice",
           "display_name": "Sachertorte Slice",
-          "description": "Vienna's famous chocolate cake. Gustav loved it.",
+          "description": "Sinfonia's famous chocolate cake. Gustav loved it.",
           "price_euro": 18,
           "effects": {
             "hp_restore": 40,

@@ -78,7 +78,7 @@ But I know a way in. For operatives of your... *looks at the bros*
 **Trigger**: Bros walk past the café after visiting 2+ Shamsterdam locations
 
 **Cutscene Text**:
-> A figure at an outdoor café table gestures urgently. He's wearing an "SHAMSTERDAM" hoodie with the tags still on and sunglasses that are clearly from a tourist shop. His newspaper is upside down.
+> A figure at an outdoor café table gestures urgently. He's wearing a "SHAMSTERDAM" hoodie with the tags still on and sunglasses that are clearly from a tourist shop. His newspaper is upside down.
 
 **Agent Havok (Initial Contact)**:
 ```
@@ -387,7 +387,7 @@ If player chooses to interact with the chocolate display:
 
 *From across the shop, Daan's voice, not even looking up:*
 
-**Daan**: "Dat is drie vijftig." *(That's three fifty.)*
+**Daan**: "Dat is vier." *(That's four.)*
 
 **Lord Pilsner**: "HE'S CALLING FOR BACKUP. MOVE MOVE MOVE!"
 

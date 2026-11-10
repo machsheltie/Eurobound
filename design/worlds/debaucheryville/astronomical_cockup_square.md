@@ -210,16 +210,16 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
     ↓
 [Clock Show triggers] → Bros cry → "Post-Clock Vulnerability" state
     ↓
-[Clock Wine Vendor approaches] → Pay 60 Sovs-180 → Acquire useless wine
+[Clock Wine Vendor approaches] → Pay 60-180 Sovs → Acquire useless wine
     ↓
 [Merchandise Vendor approaches] → Pay 90 Sovs+ → Plates, shirts, temp tattoos
     ↓
 [Wristband Guy approaches] → Pay 90 Sovs → Acquire "I'm 7!" wristbands
     ↓
-[Bros notice tattoo shop] → Pay 50 Sovs-100 → Acquire duck tattoo
+[Bros notice tattoo shop] → Pay 50-100 Sovs → Acquire duck tattoo
 ```
 
-**Total Potential Spending**: 380 Sovs-550 for complete "experience"
+**Total Potential Spending**: 380-550 Sovs for complete "experience"
 
 ### Quest Triggers
 
@@ -343,7 +343,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
   - "Skeleton from clock? Very popular. Very meaningful. Very fast."
   - "We do walk-ins. No appointment. No regrets. Mostly no regrets."
 - **Function**: Funnels emotionally compromised tourists to Euro Ink 4 Less
-- **Price**: Free (tattoo costs 50 Sovs-100 inside)
+- **Price**: Free (tattoo costs 50-100 Sovs inside)
 
 ### NPC Ecosystem Behavior
 - Scammers **never overlap** - professional territory respect

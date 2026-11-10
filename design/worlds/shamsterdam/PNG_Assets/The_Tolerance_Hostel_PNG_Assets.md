@@ -646,7 +646,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Casa Rosé | Kitchen Morning Block gossip payload | Morning-after processing happens at the kitchen table |
 | Frietomat | Oversized hostel key prop visible on 3 AM returns | Late-night snack acquisition on the walk back |
 | Leeman's Döner Palace | Wolf's "tell him Mehmet Wolf sent you" gossip line | Mehmet's Silent Judgment Hold frame plays on that exact line |
-| Proeflokaal 't Kansen | Sawdust-Dusted Clothing overlay persists until the next sleep | Kitchen gossip references "the place with the sawdust" |
+| Bottoms Down | Sawdust-Dusted Clothing overlay persists until the next sleep | Kitchen gossip references "the place with the sawdust" |
 | The Hemp Museum | Gift Shop Bag prop visible in dorm and kitchen | The Cultural Alibi can be challenged at the kitchen table |
 | Venustempel (Museum Mile) | Photo album privacy flag; Sharing the Love stack decay on rest; Tier 5 bathroom-queue event | Venus Temple *interior* photos cannot be shown to Ingrid; fountain exterior photos are unflagged and freely shared. A full night's sleep removes 2 Sharing the Love stacks. At Tier 5 (Shamsterdam Stomach) the dorm bathroom-queue event fires on the next rest — needs a queue-outside-the-bathroom-door ambient composition. |
 | The Pancake House | Expectation Adjustment status | "Did they explain before you ordered?" changes the exchange |

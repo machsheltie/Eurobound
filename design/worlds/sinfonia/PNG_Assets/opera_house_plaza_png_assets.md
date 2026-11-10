@@ -366,7 +366,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - Neptune's green patina vs. freshly regilded opera statues: the city polishes what tourists photograph
 - Numbered Fiaker queue posts formalize even the horse-carriage hustle; Hans-Jürgen's is #3
 - "The Magic Flute" poster foreshadows the backstage disaster two locations later
-- Scalper lurking at 200 Sovs–500 for 40 Sovs tickets — the seedy underbelly wears a nice coat
+- Scalper lurking at 200–500 Sovs for 40 Sovs tickets — the seedy underbelly wears a nice coat
 
 ### Character Integration Notes:
 - Hans-Jürgen and Gustav are the emotional axis; both need readable silhouettes at plaza-wide zoom

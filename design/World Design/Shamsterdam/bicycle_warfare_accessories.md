@@ -111,7 +111,7 @@ Bicycle Warfare Accessories leans into this reality with military precision. It'
 - **Consequence System**: Bells provide +Confidence, not +Survival
 
 ### Buffoon Delusion Scenarios
-**What bros THINK is happening**: Equipping for a pleasant bike ride through Amsterdam
+**What bros THINK is happening**: Equipping for a pleasant bike ride through Shamsterdam
 
 **What is ACTUALLY happening**: Arming for a war they can't win with weapons that won't help
 
@@ -205,7 +205,7 @@ Based on conversation, Werner assigns internal ratings:
   - "Air horn? You sure? People will know you're a tourist. They already know. But they'll REALLY know."
   - "The mirror is the most important item. You can't defend against what you can't see."
   - *to bro buying minimal equipment*: "Good luck. I mean it. Genuinely. Good luck."
-  - "Thirty years I've lived in Amsterdam. Twenty years on bikes. I've never stopped being afraid. Fear is wisdom."
+  - "Thirty years I've lived in Shamsterdam. Twenty years on bikes. I've never stopped being afraid. Fear is wisdom."
 
 **Assistant Koen**
 - **Role**: Secondary sales, bike fitting, damage assessment
@@ -411,4 +411,4 @@ If game includes bike navigation:
 
 ---
 
-*Bicycle Warfare Accessories: The bell is your voice. The mirror is your eyes. The helmet is your admission that you're not Dutch. The bike path is the enemy. Welcome to Amsterdam.*
+*Bicycle Warfare Accessories: The bell is your voice. The mirror is your eyes. The helmet is your admission that you're not Dutch. The bike path is the enemy. Welcome to Shamsterdam.*

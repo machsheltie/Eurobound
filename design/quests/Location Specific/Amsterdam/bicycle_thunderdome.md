@@ -18,7 +18,7 @@
 > Casually exploring a charming European city with lovely canals and friendly locals on bicycles. How quaint! How picturesque!
 
 **What is ACTUALLY happening:**
-> Amsterdam cyclists are apex predators who have zero fear, zero mercy, and absolute right-of-way in their own minds. The bros are prey in a concrete jungle ruled by two-wheeled death machines.
+> Shamsterdam cyclists are apex predators who have zero fear, zero mercy, and absolute right-of-way in their own minds. The bros are prey in a concrete jungle ruled by two-wheeled death machines.
 
 **Why it's funny:**
 > Americans who think they own the road encountering Dutch cyclists who ACTUALLY own the road. The complete inversion of their expectations, combined with increasingly absurd cargo being transported at high speeds.
@@ -133,9 +133,9 @@
 
 ---
 
-**ATTEMPT 3: The "Roman Traffic" Method**
+**ATTEMPT 3: The "Debaucheryville Traffic" Method**
 
-**BRADLEY:** "I read that in Rome, you just walk steadily and traffic flows around you."
+**BRADLEY:** "I read that in Debaucheryville, you just walk steadily and traffic flows around you."
 
 **LORD PILSNER:** "Let's try that."
 
@@ -485,7 +485,7 @@
 
 *Cut to: A Dutch grandmother who won the race*
 
-**GRANDMOTHER:** "The American? He tried. That is something. In Amsterdam, we respect those who try. Then we mock them. But respectfully."
+**GRANDMOTHER:** "The American? He tried. That is something. In Shamsterdam, we respect those who try. Then we mock them. But respectfully."
 
 *She cycles away carrying her trophy, her groceries, and somehow a small motorcycle*
 

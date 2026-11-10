@@ -175,7 +175,7 @@
   - "Bachelor party? Special night? I have special deal for you, my friend."
   - "World famous banana show. You hear about this? Tonight, special price."
   - "Group of five? I make discount. Better than inside price. Trust me."
-  - "You want culture? This is culture. Amsterdam culture. Very famous."
+  - "You want culture? This is culture. Shamsterdam culture. Very famous."
   - *if rejected* "Okay, okay. You come back later. I am here. Always here."
 
 **Bartender Katya**

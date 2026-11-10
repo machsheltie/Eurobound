@@ -68,7 +68,7 @@
 - Glow-in-the-dark, flavored, themed collections
 - Shapes that prompt questions
 - Bachelor party bulk purchasing zone
-- "Amsterdam souvenir" category (yes, really)
+- "Shamsterdam souvenir" category (yes, really)
 
 **Section 5 — The Art Pieces**
 - Limited editions, designer collaborations, display-worthy
@@ -141,7 +141,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 | Premium Selection | 25 SOVS | Sensation | Low | "For the discerning" |
 | Glow-in-Dark Pack | 12 SOVS | Novelty | Medium | "Party favorite" |
 | Flavored Variety | 10 SOVS | Novelty | Low | "Why not" |
-| Amsterdam Souvenir Pack | 18 SOVS | Tourist | Medium | Windmill-themed, tulip-shaped |
+| Shamsterdam Souvenir Pack | 18 SOVS | Tourist | Medium | Windmill-themed, tulip-shaped |
 | Bachelor Party Bundle | 45 SOVS | Group | High (alone), None (group) | "The Full Experience" |
 | Designer Limited Edition | 35 SOVS | Art | Very High | "Is this a gallery?" |
 | The Mystery Box | 30 SOVS | Unknown | Maximum | "For the adventurous" |
@@ -255,7 +255,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 **The Bros' Condomerie Reactions:**
 - **Lord Pilsner** (entering): "Lads. LADS. We're doing this. For BRAD. Bachelor party TRADITION."
 - **Lord Pilsner** (browsing): "There's so MANY. This is... this is overwhelming. In a good way?"
-- **Lord Pilsner** (purchasing): "The Amsterdam Souvenir Pack. Because it's CULTURAL."
+- **Lord Pilsner** (purchasing): "The Shamsterdam Souvenir Pack. Because it's CULTURAL."
 - **Chadwick**: "I'm getting footage of the storefront. The STOREFRONT only. Obviously."
 - **Chadwick** (inside): "The product design here is actually incredible. From an AESTHETIC standpoint."
 - **Chadwick** (purchasing): "Mystery Box. For CONTENT. The unboxing will be... something."

@@ -155,7 +155,7 @@ Started as pure scam 20 years ago. Now it's part performance art, part genuine b
 
 ### Hidden Details / Easter Eggs
 - If player examines bathrobe closely: "HOLIDAY INN EXPRESS" logo visible
-- Incense burner is labeled "VANILLA DREAMS - 2.99 SOVS" on bottom
+- Incense burner is labeled "VANILLA DREAMS - 3 SOVS" on bottom
 - During cigarette break, he can be seen in alley still in robe, checking phone
 - Regular clothes visible underneath robe if wind animation triggers
 

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 9 PM (extended tourist hours)
 - **Stat Requirements**: None (chocolate is universal, embarrassment is optional)
-- **Item Requirements**: Gold for purchases (5 Sovs-40), ability to say "it's for a friend" with straight face
+- **Item Requirements**: Gold for purchases (5-40 Sovs), ability to say "it's for a friend" with straight face
 - **Previous Location Requirements**: None (the chocolate draws all)
 - **Special Conditions**: Shop is small; bachelor/bachelorette parties may cause congestion
 

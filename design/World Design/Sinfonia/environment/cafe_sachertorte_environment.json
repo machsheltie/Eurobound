@@ -136,7 +136,7 @@
         "stats": {"bravado": 2},
         "duration_minutes": 30,
         "followed_by": {"effect": "sugar_crash", "bravado": -1, "duration_minutes": 15},
-        "description": "Viennese pastry euphoria. Temporary."
+        "description": "Sinfonian pastry euphoria. Temporary."
       },
       {
         "effect_id": "cultured_palate",

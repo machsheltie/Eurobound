@@ -204,7 +204,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - **Special Feature**: Pendulum actually swings slightly when hanging
 
 **Herr Takt's Check**:
-- *With Blarney Trap Opener*: "Seamus's network extends to Vienna! Excellent. Join the debate, win your local opener, earn your stamp."
+- *With Blarney Trap Opener*: "Seamus's network extends to Sinfonia! Excellent. Join the debate, win your local opener, earn your stamp."
 - *Without*: "The Continental Trail requires the Publandia key. Return with the proper opener, then we can discuss tempo."
 
 **Stamp Unlock**: Win a Tempo Debate (convince at least one faction member)
@@ -291,7 +291,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 
 ---
 
-### 2. Proeflokaal 't Kansen Bottle Opener
+### 2. Bottoms Down Bottle Opener
 - **Design**: Traditional tulip jenever glass shape (overfilled, surface tension visible), bottle opener as the stem
 - **Material**: Amber-tinted brass with sawdust-colored leather loop
 - **Inscription**: "No Hands. No Fear."
@@ -357,7 +357,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 | | The Dancing Stein | Dancing stein | "One-Two-Three" | 18 SOVS | Stein Waltz |
 | **SHAMSTERDAM** | | | | | |
 | | The Wobbly Windmill Brewery | Rotating windmill | "Respect The Grain" | 22 SOVS | Defeat Yeast Golem |
-| | Proeflokaal 't Kansen | Tulip jenever glass | "No Hands. No Fear." | 20 SOVS | Jenever gauntlet |
+| | Bottoms Down | Tulip jenever glass | "No Hands. No Fear." | 20 SOVS | Jenever gauntlet |
 
 **TOTAL**: 14 unique bottle openers across 4 cities
 

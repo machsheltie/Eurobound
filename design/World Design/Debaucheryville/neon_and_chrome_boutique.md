@@ -284,7 +284,7 @@ The boutique exists in the space between practical club gear and aspirational ni
 - **Function**: Shows the gear doesn't guarantee results
 
 **The Scene Expert (Local)**
-- **Composition**: Actual Prague nightlife regular, shopping for specific items
+- **Composition**: Actual Debaucheryville nightlife regular, shopping for specific items
 - **Behavior**: Knows exactly what they want, no fantasy needed
 - **Dialogue**: "I need the strobe shades, the real ones. Not for looks. For function. Headaches are real."
 - **Function**: Shows practical use vs. status use
@@ -295,7 +295,7 @@ The boutique exists in the space between practical club gear and aspirational ni
 - "The VIP section isn't about money. It's about energy. But the right gear puts you in the right energy. So in a way, it IS about money."
 - "Some customers leave here and get into VIP first try. Some never do. The gear is the same. The difference is inside them."
 - "I've seen the transformation. Someone puts on the platforms, looks in the mirror, stands differently. THAT'S what I'm selling. The standing differently."
-- "Prague nightlife is a game. I sell game pieces. How you play? That's on you."
+- "Debaucheryville nightlife is a game. I sell game pieces. How you play? That's on you."
 
 **The Bros' Neon & Chrome Reactions:**
 - **Lord Pilsner** (entering): "This is it. This is where champions EQUIP."

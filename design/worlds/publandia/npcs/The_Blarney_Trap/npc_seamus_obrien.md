@@ -140,7 +140,7 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 
 > "Craic Tax prices? Aye, guilty. But you're paying for location, atmosphere, and my sparkling personality. Fair trade."
 
-> "Eight Sovs. It's five-fifty across the river. I'm not going to pretend otherwise — you'd find out and then you'd feel foolish, and I don't sell that."
+> "Eight Sovs. It's six across the river. I'm not going to pretend otherwise — you'd find out and then you'd feel foolish, and I don't sell that."
 
 > "The tourists keep the lights on. The regulars keep me sane. You could be both if you stick around."
 
@@ -254,7 +254,7 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 > "Yes. *nods pleasantly, keeps polishing* Was there a second part to that?"
 
 **If the player asks for the cheap pub across the river**:
-> "Left at the bridge, then keep going till the shamrocks stop. Five-fifty a pint and not a scrap of atmosphere. I mean that as a recommendation. Come back for the music."
+> "Left at the bridge, then keep going till the shamrocks stop. Six a pint and not a scrap of atmosphere. I mean that as a recommendation. Come back for the music."
 
 ---
 
@@ -304,7 +304,7 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 | Guinness (Pint) | 8 Sovs | 6 Sovs across the river | +15 HP, progresses toward "Absolutely Scuttered", triggers the 119.5-second ritual |
 | Smithwick's (Pint) | 7 Sovs | 5 Sovs across the river | +12 HP, progresses toward "Absolutely Scuttered", flagged by Seamus as a local's order |
 | Whiskey (Jameson) | 8 Sovs | 4 Sovs measure | +10 HP, +5 SP, temporary +Bravado |
-| Whiskey (Premium — Powers, Redbreast, Midleton) | 12 Sovs–20 | 7 Sovs–14 | +15 HP, +10 SP, +Bravado, +Charm; ordering Midleton unlocks a staff-respect beat |
+| Whiskey (Premium — Powers, Redbreast, Midleton) | 12–20 Sovs | 7–14 Sovs | +15 HP, +10 SP, +Bravado, +Charm; ordering Midleton unlocks a staff-respect beat |
 | Irish Coffee | 10 Sovs | 4 Sovs in materials | +20 HP, +15 SP, caffeine/alcohol balance, tourist favourite and Seamus knows it |
 | Tayto Crisps (Cheese & Onion) | 3 Sovs | 1 Sov | +5 HP, absorbs some alcohol. There is no second flavour. Do not ask. |
 | Toastie | 8 Sovs | 3 Sovs | +25 HP, absorbs significant alcohol |
@@ -384,7 +384,7 @@ Seamus does not leave The Blarney Trap. He does not have to — **the Seamus net
 | Debaucheryville | The Absinthium Taproom | Opener grants passage past the standard tasting and into the mirror-puzzle route. Seamus is spoken of with slightly baffled respect. | "This opener is Irish. You know the man? Then you are not a tourist tonight. You are a guest of a colleague. Sit. Do not look directly at the mirrors yet." |
 | Debaucheryville | Three Crown Keg Haus | Opener is the difference between the public bar and the cellar. | "Seamus. The green one, with the shamrock till. He sends us people who can drink. Prove him right." |
 | Shamsterdam | The Wobbly Windmill Brewery | Opener holders are walked to the blade-level platform rather than being turned back at the grain floor. | "Ah — the Publandia opener. Your publican and my father corresponded for eleven years. Mind the blades." |
-| Shamsterdam | Proeflokaal 't Kansen | The overfilled tulip glass is poured for opener holders without them having to ask, which is the only way to get the gauntlet started. | "Seamus's people. No hands. No fear. You know the rule already, or he did not send you." |
+| Shamsterdam | Bottoms Down | The overfilled tulip glass is poured for opener holders without them having to ask, which is the only way to get the gauntlet started. | "Seamus's people. No hands. No fear. You know the rule already, or he did not send you." |
 | Publandia | The Stoutworks Brewery | Seamus appears **in person** in the tasting room during the post-tour cutscene, having driven out to collect a Sweet Surrender delivery. Only in-game appearance outside his pub. | "Don't look so surprised. It's my beer. Somebody has to check on it." |
 
 ### Evolution Through Game

@@ -33,7 +33,7 @@
 - **Scale**: Dominates the Brewery District skyline
 - **Signage**:
   - Main: "THE STOUTWORKS" in copper lettering
-  - Subtitle: "Est. 1869 — Dublin's Finest Since Before Your Grandfather's Grandfather"
+  - Subtitle: "Est. 1869 — Publandia's Finest Since Before Your Grandfather's Grandfather"
   - Tour Office: "BREWERY EXPERIENCE — Book Your Journey"
   - Warning (ignored): "Staff Only Beyond This Point"
   - New addition: "Temporary Closure Due to 'Maintenance Issues'" (yeast situation)
@@ -119,7 +119,7 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 ### The Yeast Situation (Lore)
 - The Stoutworks has been brewing since 1869
 - Their "heritage yeast strain" is 150+ years old
-- Something in the water (or the Dublin magic) made it sentient
+- Something in the water (or the Publandia magic) made it sentient
 - The Yeast Golems are not evil — just confused about their purpose
 - The Vat Master is a yeast colony that achieved consciousness and now believes it IS the brewery
 - The solution isn't destruction but negotiation (or destruction, player's choice)
@@ -335,7 +335,7 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 
 ### Original NPC Dialogue
 **Fiona's Tour Script (Pre-Disaster):**
-- "Welcome to Stoutworks, Dublin's second-most-famous brewery! We've been brewing since 1869, using the EXACT same yeast strain for over 150 years!"
+- "Welcome to Stoutworks, Publandia's second-most-famous brewery! We've been brewing since 1869, using the EXACT same yeast strain for over 150 years!"
 - "This yeast colony is older than most countries. It's seen wars, famines, and the invention of light beer. It's survived everything. It's practically... alive."
 - "...oh no. Oh no no no. I was using 'alive' as a METAPHOR."
 
@@ -396,7 +396,7 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 - Copper still silhouette in center
 - Steam wisps rising from still
 - Banner text: "The Stoutworks Brewery"
-- Bottom text: "Est. 1869 — Dublin's Finest"
+- Bottom text: "Est. 1869 — Publandia's Finest"
 - Ink color: Copper bronze
 
 **Tour Guide Fiona on the Stamp**:

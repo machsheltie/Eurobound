@@ -342,11 +342,11 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **Style**: Precise, calculated, exploits openings
 - **Dialogue**: "I've calculated your odds. They're not good. For you."
 
-**"Cork" Jimmy**
+**"Quarry" Jimmy**
 - **Difficulty**: Medium-Hard
-- **Background**: From Cork, fighting is cultural expression
+- **Background**: From the quarry towns, fighting is cultural expression
 - **Style**: Brawler, takes hits to give hits, high stamina
-- **Dialogue**: "Cork versus Dublin, is it? This is PERSONAL now."
+- **Dialogue**: "Country versus city, is it? This is PERSONAL now."
 
 **"Big" Seamus O'Malley (Champion)**
 - **Difficulty**: Boss-level
@@ -397,7 +397,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - **"Quiz Champion"**: Beat Big Seamus, become the champion
 - **"Information Economy"**: Use Rumor Trading Post for main quest hints
 - **"The Undercard"**: Help arrange fights for Ciaran (scheduling quest)
-- **"Cork vs. Dublin"**: Factional rivalry quest, choose sides
+- **"Country vs. City"**: Factional rivalry quest, choose sides
 
 ### Achievement Track
 - **First Descent**: "Participant" — you found it
@@ -484,7 +484,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 - orla_broker.png - 64x96 - Rumor dealer
 - terry_tourist.png - 64x96 - Easy opponent
 - aoife_accountant.png - 64x96 - Medium opponent
-- cork_jimmy.png - 64x96 - Hard opponent
+- quarry_jimmy.png - 64x96 - Hard opponent
 - big_seamus.png - 80x112 - Champion
 - crowd_cheering.png - 256x96 - Audience reaction
 - crowd_booing.png - 256x96 - Disappointed crowd

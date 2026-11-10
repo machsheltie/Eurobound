@@ -127,7 +127,7 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 
 > "The mixed nuts are two Sovs and one of the nuts is always weird. I don't know which one. I've never found the pattern. Twenty-three years."
 
-> "Open section crisps, Sov fifty. Sealed, three. The Sov fifty is the difference between crisps and a story."
+> "Open section crisps, two Sovs. Sealed, three. The one Sov is the difference between crisps and a story."
 
 > "The 'Miracle Tonic' cures nearly everything. It also causes something. I've never been able to work out which something. It changes."
 

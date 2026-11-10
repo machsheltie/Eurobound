@@ -54,7 +54,7 @@
           "removes_status": ["tired"],
           "grants_status": null
         },
-        "flavor_text": "A tiny cup of concentrated Vienna. The caffeine-to-pretension ratio is impressive."
+        "flavor_text": "A tiny cup of concentrated Sinfonia. The caffeine-to-pretension ratio is impressive."
       },
       {
         "item_id": "grosser_brauner",
@@ -70,7 +70,7 @@
       {
         "item_id": "melange",
         "display_name": "Melange",
-        "description": "Viennese latte, foam artistically peaked",
+        "description": "Sinfonian latte, foam artistically peaked",
         "price_euro": 8,
         "effects": {
           "removes_status": ["tired"],

@@ -394,4 +394,4 @@ This document provides exact specifications for all PNG files needed for the Caf
 - [ ] Post-quest changes tell complete story
 - [ ] Mobile performance optimized
 
-**Café Sachertorte: Where Vienna's famous 18 SOVS cake slice meets a horse with expensive taste and zero impulse control.**
+**Café Sachertorte: Where Sinfonia's famous 18 SOVS cake slice meets a horse with expensive taste and zero impulse control.**

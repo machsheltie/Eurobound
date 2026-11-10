@@ -136,7 +136,7 @@
 - **Staff Reaction**: Completely deadpan, seen it 10,000 times
 
 ### Peep Show Devices (Interactive)
-- **Cost**: 0.50 SOVS per viewing (coins at reception)
+- **Cost**: 1 SOV per viewing (coins at reception)
 - **Content**: Victorian flip-card animations, surprisingly tame by modern standards
 - **Effect**: +Vintage Knowledge status, +slight confusion about past generations
 - **Bros' Reaction**: "People paid money for THIS? ...Put in another coin."
@@ -214,7 +214,7 @@
 - **Dialogue**: "GARY. GARY. Sit on the throne. For the LADS. GARY."
 
 **The Couple on Holiday**
-- **Composition**: Middle-aged pair, guidebook visible, "experiencing everything Amsterdam offers"
+- **Composition**: Middle-aged pair, guidebook visible, "experiencing everything Shamsterdam offers"
 - **Behavior**: Treating it academically, reading every plaque, taking it seriously
 - **Dialogue** (her): "It says this is from 1847. That's actually fascinating when you think about—"
 - **Dialogue** (him): *nodding, not reading, waiting for exit*
@@ -378,7 +378,7 @@
 - school_group_clipboards.png - 256x96 - Art history notes
 
 ### Interactive Objects (8 PNGs)
-- peep_show_coin_slot.png - 64x64 - 0.50 SOVS per viewing
+- peep_show_coin_slot.png - 64x64 - 1 SOV per viewing
 - photo_op_frame.png - 256x192 - Generic station interface
 - throne_seating_prompt.png - 128x96 - "Sit Here" indicator
 - costume_rental_rack.png - 192x128 - 5 SOVS extra

@@ -161,7 +161,7 @@ The stand's unique mechanic:
 | Ristretto | Approving nod | None |
 | "Strongest thing you have" | Respect | None |
 | Cappuccino | Small sigh | None |
-| "With sugar" | Closes eyes briefly | +0.50 SOVS "processing fee" |
+| "With sugar" | Closes eyes briefly | +1 SOV "processing fee" |
 | "Iced" | Long pause | "It will be done. It should not be done." |
 | "Decaf" | Genuine confusion | "Why are you HERE?" |
 | "Regular coffee" | Existential crisis | 5-minute lecture, then directed elsewhere |

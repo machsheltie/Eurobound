@@ -289,13 +289,13 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 | Solid chocolate piece — white / milk / dark | 12 Sovs | 12 Sovs — real artisan chocolate, tempered properly, 34% milk / 70% dark | Consumable. Restores a moderate amount of HP. Survives a warm day in a bag. |
 | Hollow chocolate piece | 8 Sovs | 7 Sovs — same chocolate, less of it | Consumable, cheaper, lighter. **Structurally regrettable in heat**: if carried past 22°C in-game for more than two hours it degrades to "Formerly A Hollow Piece," which still restores HP and is no longer presentable as a gift. |
 | **De Collectie** — boxed set of six graduated sizes | 45 Sovs | 38 Sovs — a real boxed set, ribbon included | **Best margin in the shop.** Gift item. Bradley buys this "as a gag" and refuses to let anyone else carry it. Occupies two inventory slots and is visible to other NPCs. |
-| Fountain-shaped keyring | 5 Sovs | 2.50 Sovs | Cosmetic. Sells constantly. Lotte reorders it more often than anything else on the floor. |
-| Fountain fridge magnet | 3.50 Sovs | 1.50 Sovs | Cosmetic. The cheapest thing in the shop and the second-fastest mover. |
+| Fountain-shaped keyring | 5 Sovs | 3 Sovs | Cosmetic. Sells constantly. Lotte reorders it more often than anything else on the floor. |
+| Fountain fridge magnet | 4 Sovs | 2 Sovs | Cosmetic. The cheapest thing in the shop and the second-fastest mover. |
 
 ### The Hygiene Line
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| **"Handreiniger"** hand sanitiser, in a small bottle moulded as De Grote Fontein | 4 Sovs | 1.80 Sovs — it is hand gel in a novelty bottle, and it is a good hand gel | **Removes 2 stacks of the Sharing the Love status.** Recommended by Lotte to every customer on the way out, cheerfully, sincerely, every time. Almost nobody buys one. |
+| **"Handreiniger"** hand sanitiser, in a small bottle moulded as De Grote Fontein | 4 Sovs | 2 Sovs — it is hand gel in a novelty bottle, and it is a good hand gel | **Removes 2 stacks of the Sharing the Love status.** Recommended by Lotte to every customer on the way out, cheerfully, sincerely, every time. Almost nobody buys one. |
 
 ### Services
 | Item/Service | Price | Actual Value | Effect/Result |
@@ -526,7 +526,7 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — **Lotte has no crypto.** None. Sovs and card only, 3.50 Sovs–45 Sovs. A museum gift shop takes a card.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — **Lotte has no crypto.** None. Sovs and card only, 4 Sovs–45 Sovs. A museum gift shop takes a card.
 - [x] **NO automatic crypto assumptions** — this NPC does not earn crypto, has never earned crypto, and none is to be added. There is no kiosk, no QR code, no SOVS signage, and no shitcoin anywhere in the Venustempel gift shop.
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A. No crypto at this location.
 - [x] **The bros are never scam-aware** — there is no scam. Every price in the shop is fair, every product is what it says it is, and Bradley paid 45 Sovs for a real boxed set of real chocolate and called it a gag.

@@ -252,7 +252,7 @@ The vendor, Miroslav, is a former sound engineer who saw too many young people d
 - "Energy shots work. The crash is real. The electrolytes help. Buy the combo."
 
 *The Warning:*
-- "You see this?" *points to hearing aids* "Twenty years. Sound engineer. Best clubs in Prague. No earplugs. Now I wear these."
+- "You see this?" *points to hearing aids* "Twenty years. Sound engineer. Best clubs in Debaucheryville. No earplugs. Now I wear these."
 - "Tinnitus is forever. FOREVER. That ringing you have tomorrow? What if it never stopped?"
 - "The DJ is wearing earplugs. The bartenders are wearing earplugs. Why aren't you?"
 - "I'm not trying to scare you. I'm trying to help you. The fear is just the truth."

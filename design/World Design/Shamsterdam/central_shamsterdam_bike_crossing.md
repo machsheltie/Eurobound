@@ -348,7 +348,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - **Description**: Blue emergency phone for injured pedestrians
 - **Comedy**: Recording says "This is a bicycle city. Please adjust expectations."
 
-### "I Amsterdam" Ghost Sign
+### "I Shamsterdam" Ghost Sign
 - **Type**: Easter Egg
 - **Description**: Faded outline where the famous sign USED to be (removed 2018)
 - **Interaction**: Examine for lore: "Removed because tourists wouldn't stop blocking traffic for photos. Coincidentally, you're blocking traffic right now."

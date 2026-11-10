@@ -1,6 +1,6 @@
 # De Stroopwafel Kar (The Stroopwafel Cart)
 
-*Where fresh-pressed caramel meets tourist markup — 8 SOVS for what locals pay 1.50 SOVS, but the warmth is real*
+*Where fresh-pressed caramel meets tourist markup — 8 SOVS for what locals pay 2 SOVS, but the warmth is real*
 
 ## Location Identity
 - **Location ID**: shamsterdam_market_stroopwafel_cart_01
@@ -32,7 +32,7 @@
 - **Equipment**: Large circular waffle irons, caramel pot, fresh batter containers, warming station
 - **Signage**: 
   - Main banner: "VERSE STROOPWAFELS" (Fresh Stroopwafels)
-  - Price board: "Klein 4 SOVS / Groot 8 SOVS" with small text "Local price: 1.50 SOVS" (crossed out)
+  - Price board: "Klein 4 SOVS / Groot 8 SOVS" with small text "Local price: 2 SOVS" (crossed out)
   - Decorative: Windmill illustration, tulip borders, maximum Dutch-ness
   - Honest addition: "Yes, They're Worth It"
 - **Atmosphere**: Steam rising, caramel smell in a 50-meter radius, line forming
@@ -73,7 +73,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The stroopwafel cart is simultaneously a tourist trap (8 SOVS for what costs 1.50 SOVS at a supermarket) and a genuinely excellent experience (fresh stroopwafels are legitimately life-changing). The satire isn't that the cart is bad — it's that tourists happily pay 5x the local price for something they could get cheaper, and THEY'RE STILL MAKING THE RIGHT CHOICE because a fresh, warm stroopwafel from a cart is genuinely incomparable to a packaged one.
+**Core Concept**: The stroopwafel cart is simultaneously a tourist trap (8 SOVS for what costs 2 SOVS at a supermarket) and a genuinely excellent experience (fresh stroopwafels are legitimately life-changing). The satire isn't that the cart is bad — it's that tourists happily pay 5x the local price for something they could get cheaper, and THEY'RE STILL MAKING THE RIGHT CHOICE because a fresh, warm stroopwafel from a cart is genuinely incomparable to a packaged one.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist pricing acceptance, the value of "authentic experience" vs actual value
@@ -85,7 +85,7 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Charging tourist prices with a smile
 - **City-Specific Comedy Operations**: Cart strategically positions at tourist peaks
-- **Buffoon Exploitation**: Bros pay 8 SOVS for what locals get for 1.50 SOVS
+- **Buffoon Exploitation**: Bros pay 8 SOVS for what locals get for 2 SOVS
 - **Comedy of Errors**: No errors — this is the one thing that goes completely right
 - **Consequence System**: None negative — stroopwafels are pure good in this world
 
@@ -97,7 +97,7 @@
 **How impaired are they**: Usually sober (this is daytime, market hours)
 
 **Obvious signs they ignore**:
-- "Local price: 1.50 SOVS" crossed out on the sign
+- "Local price: 2 SOVS" crossed out on the sign
 - Locals walking past to the market interior
 - Supermarket visible across the street
 - Same product in grocery for 2 SOVS/pack of 8
@@ -120,7 +120,7 @@
 |------|-------|-----------|-----------|---------------|-------|
 | Stroopwafel (Small) | 4 SOVS | +25 HP | +15 SP | Comfort (3 turns) | Still delicious |
 | Stroopwafel (Large) | 8 SOVS | +50 HP | +30 SP | Comfort (5 turns), Sugar Rush | The correct choice |
-| Stroopwafel (Supermarket) | 1.50 SOVS/8 | +5 HP | +5 SP | None | Available elsewhere, not here |
+| Stroopwafel (Supermarket) | 2 SOVS/8 | +5 HP | +5 SP | None | Available elsewhere, not here |
 
 ### The "Fresh vs Packaged" Revelation
 - **Trigger**: First purchase from cart after having supermarket stroopwafel
@@ -196,9 +196,9 @@ During the 90-second wait, random observations:
 ### Customer NPCs (Atmospheric)
 
 **The Repeat Tourist**
-- **Composition**: Clearly not first visit to Amsterdam, knows exactly what to order
+- **Composition**: Clearly not first visit to Shamsterdam, knows exactly what to order
 - **Behavior**: Orders groot immediately, no price discussion, waits patiently
-- **Dialogue**: "I came back to Amsterdam specifically for this. I'm not joking."
+- **Dialogue**: "I came back to Shamsterdam specifically for this. I'm not joking."
 - **Function**: Validates the bros' purchase decision
 
 **The Food Blogger**
@@ -229,7 +229,7 @@ During the 90-second wait, random observations:
 **Tante Bep's Philosophy:**
 - "My grandmother made these during the war. Different prices, same recipe. The stroop is love."
 - "The tourists pay for the location, the show, the experience. The stroopwafel is the same I'd make for family."
-- "Eight SOVS? I pay rent in Amsterdam. You want cheap, go to Albert Heijn. You want FRESH, you come to Bep."
+- "Eight SOVS? I pay rent in Shamsterdam. You want cheap, go to Albert Heijn. You want FRESH, you come to Bep."
 - "Every stroopwafel is ninety seconds of my life. That's worth eight SOVS. My life, your snack."
 
 **The Bros' Stroopwafel Reactions:**
@@ -384,4 +384,4 @@ During the 90-second wait, random observations:
 
 ---
 
-*De Stroopwafel Kar: 8 SOVS for what costs 1.50 SOVS elsewhere, and worth every cent because fresh, warm, and made by Tante Bep with sixty years of family practice in every fold.*
+*De Stroopwafel Kar: 8 SOVS for what costs 2 SOVS elsewhere, and worth every cent because fresh, warm, and made by Tante Bep with sixty years of family practice in every fold.*

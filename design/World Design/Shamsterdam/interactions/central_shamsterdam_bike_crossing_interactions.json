@@ -105,7 +105,7 @@
         "description": "A faded outline where a famous sign used to be.",
         "interaction": {
           "type": "examine",
-          "lore": "The 'I Amsterdam' sign was removed in 2018. Tourists wouldn't stop blocking traffic for photos. Coincidentally, you're blocking traffic right now."
+          "lore": "The 'I Shamsterdam' sign was removed in 2018. Tourists wouldn't stop blocking traffic for photos. Coincidentally, you're blocking traffic right now."
         },
         "touch_zone": {"x": 150, "y": 20, "width": 48, "height": 32}
       },

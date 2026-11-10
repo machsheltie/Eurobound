@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 4 PM - 4 AM (pre-club through post-club, closed during "amateur hours")
 - **Stat Requirements**: None (money is the only gate)
-- **Item Requirements**: Gold for purchases (15 Sovs-120), aspirations of VIP treatment
+- **Item Requirements**: Gold for purchases (15-120 Sovs), aspirations of VIP treatment
 - **Previous Location Requirements**: None (the boutique accepts all who can afford it)
 - **Special Conditions**: Bouncer defeat at Velvet Curtain unlocks "Premium Stock" section
 

@@ -21,7 +21,7 @@ Hans-Jürgen is a fourth-generation licensed Fiakermeister who has been drinking
 His panic is real. His grief is real. The 80 Sovs discount ride he offers as payment is real and he will honour it. What he is actually asking three American strangers to do is retrieve the only functioning half of his business before the licensing board finds out.
 
 ### What Bros Believe
-A noble quest. A traditional Viennese horseman, separated from his noble steed by cruel fate, calling upon three passing knights. Lord Pilsner has already decided this is "the REAL Sinfonia experience" and that they are being trusted with something sacred. Chadwick is filming it as cultural immersion content. Bradley has correctly identified the smell of schnapps and has decided not to make it an issue.
+A noble quest. A traditional Sinfonian horseman, separated from his noble steed by cruel fate, calling upon three passing knights. Lord Pilsner has already decided this is "the REAL Sinfonia experience" and that they are being trusted with something sacred. Chadwick is filming it as cultural immersion content. Bradley has correctly identified the smell of schnapps and has decided not to make it an issue.
 
 ### The Comedy Gap
 The bros treat a man's alcoholic collapse as a knightly summons. Every escalating disaster — 340 Sovs of cake, 2,000 Sovs of Magic Flute — they log as "quest progress." Hans-Jürgen, meanwhile, is transparently, catastrophically obvious: he has a flask in his hand while explaining that he only had a very small drink, in August, for the cold. He is not hiding anything. Nobody has to see through him. The bros simply do not look.

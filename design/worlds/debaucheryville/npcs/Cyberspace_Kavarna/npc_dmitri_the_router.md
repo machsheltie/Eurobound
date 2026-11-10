@@ -83,7 +83,7 @@ The room. He opened it into a country that was still figuring out what it was, a
 > "Terminal is three Sovs, one hour. Fifteen for all night. Cash only. Credit cards are American conspiracy."
 
 **Entry during dead hours (03:00-06:00)**:
-> "One-fifty per hour now. Cheap hours. Also busy hours. You understand what I am telling you? ...no. Fine. One-fifty."
+> "Two per hour now. Cheap hours. Also busy hours. You understand what I am telling you? ...no. Fine. Two."
 
 **Entry during peak tourist hours (14:00-16:00)**:
 > "Six Sovs. Yes, six. Price is different in afternoon. Everything is different in afternoon."

@@ -78,7 +78,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 - **Warning Sign Tram**: "Trams Cannot Stop"
 - **Bike Lane Sign**: Red circle with bike
 - **No Standing Sign**: Prohibition symbol
-- **I Amsterdam Ghost Outline**: Faded letters where sign was removed
+- **I Shamsterdam Ghost Outline**: Faded letters where sign was removed
 
 ---
 

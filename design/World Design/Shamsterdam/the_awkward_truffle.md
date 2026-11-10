@@ -214,7 +214,7 @@ The shop's layout — respectable front, transitional middle, committed back —
   - "Welcome to The Awkward Truffle. Belgian chocolate, creative interpretations, no judgment."
   - "The back section? Yes, that's our specialty. The front is traditional. We serve both markets."
   - "This piece? 73% Ecuadorian cacao. The shape is... anatomical. The CHOCOLATE is excellent."
-  - "I trained for eight years in Brussels. Traditional pralines, ganaches, tempering. Then I found my niche."
+  - "I trained for eight years abroad. Traditional pralines, ganaches, tempering. Then I found my niche."
   - "Every piece is made here. By hand. With respect. Regardless of what the hand is making."
   - "The detailed versions? Those take three hours each. The craftsmanship is the same as any fine chocolate."
   - *on commission requests* "We've made stranger. We've made MUCH stranger. We don't judge."
@@ -229,7 +229,7 @@ The shop's layout — respectable front, transitional middle, committed back —
   - "Can I help you find something? Don't be shy. I've worked here two years. Nothing fazes me."
   - "The milk chocolate or the dark? The dark is more intense. In flavor. Obviously flavor."
   - "For a bachelor party? Excellent. The platters are there. Mix and match is available."
-  - "You're buying it as a joke? Great. It's still delicious. Best joke chocolate in Amsterdam."
+  - "You're buying it as a joke? Great. It's still delicious. Best joke chocolate in Shamsterdam."
   - "The crafting window? Yes, Sophie's working now. She's making... let me check... the detailed male in dark."
   - *wrapping* "Discreet? No problem. Bold? Also no problem. It's YOUR chocolate."
 
@@ -273,7 +273,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 
 ### Original NPC Dialogue
 **Sophie's Chocolate Philosophy (Extended):**
-- "In Brussels, they said anatomical chocolate was beneath the craft. I said: chocolate is craft. Shape is market."
+- "Where I trained, they said anatomical chocolate was beneath the craft. I said: chocolate is craft. Shape is market."
 - "I make traditional pralines for Christmas. I make anatomical for tourists. Both require the same skill."
 - "The detailed versions sell for 25 SOVS because they take three hours. The shape is irrelevant to the labor."
 - "Every chocolatier has their specialty. Mine found me. I've made peace with it. And money."

@@ -189,10 +189,10 @@
 |------|-------|---------|---------------|
 | "Hemp History" Book | 25 Sovs | +Intelligence display, will not be read | "Very comprehensive." |
 | Hemp Tote Bag | 18 Sovs | Inventory expansion (cosmetic), marks you as tourist | "Good for shopping." |
-| "Educational" Grinder | 15 Sovs-45 | Tool item, functions as expected | "For herbs. Any herbs." |
+| "Educational" Grinder | 15-45 Sovs | Tool item, functions as expected | "For herbs. Any herbs." |
 | Rolling Papers (branded) | 5 Sovs | Consumable supplies, identifies your museum visit | "Museum quality." |
-| "Legal" Seeds | 20 Sovs-50 | Inventory item, cannot be used (geo-locked) | "Souvenir only. Very important." |
-| CBD Oil (various) | 30 Sovs-80 | Consumable, +Calm status, -Bravado slightly | "Wellness product." |
+| "Legal" Seeds | 20-50 Sovs | Inventory item, cannot be used (geo-locked) | "Souvenir only. Very important." |
+| CBD Oil (various) | 30-80 Sovs | Consumable, +Calm status, -Bravado slightly | "Wellness product." |
 | "I Got High on Knowledge" Shirt | 28 Sovs | +Embarrassed status when worn | "Popular choice." |
 | Hemp Soap | 8 Sovs | No effect, exists for plausible deniability | "Nice gift. For anyone." |
 

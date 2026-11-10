@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24/7 reception (theoretically — receptionist presence varies)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: Gold for booking (12 Sovs-35/night), valid ID (checked inconsistently)
+- **Item Requirements**: Gold for booking (12-35 Sovs/night), valid ID (checked inconsistently)
 - **Previous Location Requirements**: None (the hostel accepts all who can pay)
 - **Special Conditions**: Room assignment is "random" (actually based on chaos algorithms)
 

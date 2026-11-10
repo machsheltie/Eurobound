@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 11 AM - 10 PM (civilized hours for uncivilized purchases)
 - **Stat Requirements**: Bravado check to enter solo, no check with group (safety in numbers)
-- **Item Requirements**: Gold for purchases (3 Sovs-50), willingness to make eye contact with staff
+- **Item Requirements**: Gold for purchases (3-50 Sovs), willingness to make eye contact with staff
 - **Previous Location Requirements**: None (the shop draws the curious)
 - **Special Conditions**: Bachelor parties receive automatic "group discount" (and group judgment)
 
@@ -146,7 +146,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 | Designer Limited Edition | 35 Sovs | Art | Very High | "Is this a gallery?" |
 | The Mystery Box | 30 Sovs | Unknown | Maximum | "For the adventurous" |
 | Educational Poster | 15 Sovs | Decor | Medium | "Conversation starter" |
-| Gift Card | 20 Sovs-100 | Giving | Extreme | "I was thinking of you" |
+| Gift Card | 20-100 Sovs | Giving | Extreme | "I was thinking of you" |
 
 ### The "Gag Gift" Purchase System
 - **Declaration**: Player can declare purchase as "gag gift" or "personal"

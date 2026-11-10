@@ -117,7 +117,7 @@ This is the bros' base of operations because it appeared first in their search r
 - **Sensitivity Considerations**: Celebrates Irish hospitality while satirizing its packaging
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Temple Bar pricing (8 SOVS pints that cost 5.50 SOVS across the river)
+- **Primary Vice**: Temple Bar pricing (8 SOVS pints that cost 6 SOVS across the river)
 - **City-Specific Comedy Operations**: The Backroom's unlicensed activities
 - **Buffoon Exploitation**: Bros who think they've found "the real Ireland" at the most obviously tourist pub
 - **Comedy of Errors**: Infinite refills meeting finite tolerance
@@ -246,7 +246,7 @@ This is the bros' base of operations because it appeared first in their search r
 *The Welcome:*
 - "Céad míle fáilte! A hundred thousand welcomes! Take a seat, what'll ye have?"
 - "Americans? Brilliant. You'll love it here. Everyone does. That's the trap. *winks*"
-- "First time in Dublin? You've come to the right place. Or the wrong place, depending on your budget. Same thing, really."
+- "First time in Publandia? You've come to the right place. Or the wrong place, depending on your budget. Same thing, really."
 
 *The Pint Ritual:*
 - "Guinness? Good choice. Now, I'm going to pour this properly. Takes two minutes. Worth every second. Trust the process."
@@ -259,7 +259,7 @@ This is the bros' base of operations because it appeared first in their search r
 - "My grandfather charged what he charged. I charge what the market bears. He'd understand. He was a businessman too."
 
 *The Genuine:*
-- "You want REAL Dublin? Come back at 11 PM. After the early crowd leaves. That's when the city actually drinks."
+- "You want REAL Publandia? Come back at 11 PM. After the early crowd leaves. That's when the city actually drinks."
 - "Pub Regular status? Earn it. Keep coming back. Remember staff names. Buy rounds. Don't be a tourist, be a guest."
 - "The trap is comfortable, isn't it? That's the trick. You're welcome to stay as long as you like. Most do."
 

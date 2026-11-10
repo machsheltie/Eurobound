@@ -139,7 +139,7 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 
 > "It's frightened of being poured. That's the thing nobody wants to sit with. It's frightened of the tap."
 
-> "If you go up to Six with a mallet, you'll win. I'm not going to pretend otherwise. You'll win, and then we'll re-pitch a lab strain from Cork, and the tour will say 'Est. 1869' and it'll be a lie."
+> "If you go up to Six with a mallet, you'll win. I'm not going to pretend otherwise. You'll win, and then we'll re-pitch a lab strain from a catalogue, and the tour will say 'Est. 1869' and it'll be a lie."
 
 ---
 

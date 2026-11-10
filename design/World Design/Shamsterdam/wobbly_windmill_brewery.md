@@ -347,7 +347,7 @@
 - **Narrative**: "You've earned your place in Dutch drinking culture"
 
 ### Cross-Location Dependencies
-- **Proeflokaal 't Kansen**: Other Shamsterdam brewery, connected by tour achievement
+- **Bottoms Down**: Other Shamsterdam brewery, connected by tour achievement
 - **The Tolerance Hostel**: Can discuss "the windmill" with other guests
 - **De Groene Gids**: Staff may comment on "trying the local breweries"
 - **Train Station**: Return transport, other tourists sharing experiences

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24/7 reception (someone's always awake, unfortunately)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: 15 Sovs-25 per night (payment upfront, no refunds)
+- **Item Requirements**: 15-25 Sovs per night (payment upfront, no refunds)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Room assignment is random (part of the horror)
 

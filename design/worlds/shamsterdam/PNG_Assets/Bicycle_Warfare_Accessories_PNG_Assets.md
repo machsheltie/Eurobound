@@ -96,10 +96,10 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### The Bell Wall Arsenal (Tier Displays):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Tier 1 Display — The Pacifists | (0, 64) | 192x128 | Polite classic ding bells, 5 Sovs-8 tags, gentle presentation |
-| Tier 2 Display — The Compromisers | (192, 64) | 192x128 | DING-DING bells, 10 Sovs-15, hopeful arrangement |
-| Tier 3 Display — The Asserters | (384, 64) | 192x128 | Dual-tone bells, 15 Sovs-20, serious mounting brackets |
-| Tier 4 Display — The Dominators | (576, 64) | 192x128 | Air horns and sirens, 20 Sovs-25, caged like ordnance |
+| Tier 1 Display — The Pacifists | (0, 64) | 192x128 | Polite classic ding bells, 5-8 Sovs tags, gentle presentation |
+| Tier 2 Display — The Compromisers | (192, 64) | 192x128 | DING-DING bells, 10-15 Sovs, hopeful arrangement |
+| Tier 3 Display — The Asserters | (384, 64) | 192x128 | Dual-tone bells, 15-20 Sovs, serious mounting brackets |
+| Tier 4 Display — The Dominators | (576, 64) | 192x128 | Air horns and sirens, 20-25 Sovs, caged like ordnance |
 | Tier 5 Display — The Delusional | (768, 64) | 192x128 | "Smart bells," GPS units, 30 Sovs+, glowing app icons |
 
 ### Fixtures:
@@ -189,7 +189,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 |---------|----------|------|-------------|
 | Classic Ding Bell (Tier 1) | (0, 0) | 32x32 | 5 Sovs — polite, ignored by all |
 | Assertive Bell (Tier 2) | (32, 0) | 32x32 | 12 Sovs — noticed by some |
-| Serious Dual-Tone (Tier 3) | (64, 0) | 32x32 | 15 Sovs-20 — actual communication |
+| Serious Dual-Tone (Tier 3) | (64, 0) | 32x32 | 15-20 Sovs — actual communication |
 | Tactical Air Horn (Tier 4) | (96, 0) | 48x32 | 22 Sovs — psychological warfare |
 | Smart Bell App (Tier 5) | (144, 0) | 32x32 | 35 Sovs — tech delusion, tiny glowing screen |
 | Bike Mirror | (176, 0) | 32x32 | 8 Sovs — see death coming |

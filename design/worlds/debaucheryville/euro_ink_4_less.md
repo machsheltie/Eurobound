@@ -256,7 +256,7 @@ Lord Pilsner: "It's ARTISTIC INTERPRETATION."
 | Clock Skeleton (Orloj Death) | 75 Sovs | Duck with scythe | 45 min |
 | Clock Rooster | 60 Sovs | Chicken | 30 min |
 | Apostle Figure | 50 Sovs | Blob person | 25 min |
-| Custom Design | 50 Sovs-150 | Duck variant | Varies |
+| Custom Design | 50-150 Sovs | Duck variant | Varies |
 | The Lord Pilsner Special | 50 Sovs | Any duck design | 30 min |
 | Matching Duck for Friends | 40 Sovs | More ducks | 25 min |
 

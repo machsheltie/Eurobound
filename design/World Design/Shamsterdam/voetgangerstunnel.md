@@ -251,7 +251,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 
 **Appearance**:
 - Ancient accordion
-- Hat with exactly 2.47 SOVS in it (never changes)
+- Hat with exactly 2 SOVS in it (never changes)
 - Clothing from indeterminate decade
 - May or may not be a ghost
 

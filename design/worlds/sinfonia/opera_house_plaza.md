@@ -128,7 +128,7 @@
 
 **For the Fiaker Encounter:**
 - [x] **What do the bros THINK is happening?** 
-  - A noble quest to reunite a traditional Viennese horseman with his noble steed. Like knights of old.
+  - A noble quest to reunite a traditional Sinfonian horseman with his noble steed. Like knights of old.
 - [x] **What is ACTUALLY happening?** 
   - A drunk driver lost his horse because he was drinking schnapps. The horse escaped because it hates its job.
 - [x] **How impaired are they?** 
@@ -204,11 +204,11 @@
 - **Shop Functionality**: No formal shops, but vendor interactions present
 - **Currency Accepted**: Sov (with "cultural district premium")
 - **Price Structure**:
-  - Fiaker ride (20 minutes): 80 Sovs-120 (depending on driver's perception of tourist gullibility)
+  - Fiaker ride (20 minutes): 80-120 Sovs (depending on driver's perception of tourist gullibility)
   - Terrace Espresso: 8 Sovs (15 Sovs with "historic view supplement")
   - Selfie with Fiaker horse: 5 Sovs (tip to driver)
-  - Opera scalper tickets: 200 Sovs-500 (face value 40 Sovs-80)
-  - Street performer tip: 1 Sov-5 (affects subsequent interaction quality)
+  - Opera scalper tickets: 200-500 Sovs (face value 40-80 Sovs)
+  - Street performer tip: 1-5 Sovs (affects subsequent interaction quality)
 - **Economic Role**: Demonstrates Sinfonia's tourist-extraction economy; sets up financial stakes for Fiaker Fiasco damages
 
 ### Quest Integration

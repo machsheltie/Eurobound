@@ -72,7 +72,7 @@ Should look almost-but-not-quite official. Think theme park employee who lost hi
 > "Americans are the best. They don't want value - they want to FEEL like insiders. I'm not selling a view. I'm selling exclusivity. The pillar is part of the experience. It's... curated."
 
 ### Motivation
-Pure economics. He makes 300 Sovs-500 per day during peak season with zero overhead costs. He's been doing this for 15 years. The pillar spot is "his" - other scammers respect the territory. This isn't a scam to him; it's a legitimate service industry job.
+Pure economics. He makes 300-500 Sovs per day during peak season with zero overhead costs. He's been doing this for 15 years. The pillar spot is "his" - other scammers respect the territory. This isn't a scam to him; it's a legitimate service industry job.
 
 ---
 

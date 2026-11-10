@@ -9,7 +9,7 @@
 
 ## 0. How This File Is Used
 
-The **Master Pool** is 28 shitcoins. At any moment the back-alley kiosks (**Broke-ATM**, **QuickRug24**)
+The **Master Pool** is 29 shitcoins. At any moment the back-alley kiosks (**Broke-ATM**, **QuickRug24**)
 render an **active roster of 7–8** drawn from this pool. The roster reshuffles on major zone
 transition, hostel/hotel rest, and major story/side-quest beat completion. Which coin pays and which
 coin rugs is decided by the per-save seed plus the 35/65 roll at the moment of payment — **nothing in
@@ -100,6 +100,7 @@ Every rug pull ejects one certificate, still warm, from a slot that was designed
 | 26 | EuroTrash Reserve | $TRASH | waste-backed commodity |
 | 27 | AlphaMaleSupplyChain | $ALFA | supplement supply-chain |
 | 28 | HangoverHedge | $HAIR | volatility insurance |
+| 29 | MoonCum696969 | $MCUM | 3-AM-ICQ momentum asset |
 
 ---
 
@@ -835,6 +836,27 @@ opens a chat with a number that no longer exists.
 
 ---
 
+### 29. MoonCum696969 — $MCUM
+
+**Pitch:** "BACKED BY BEANIE BABIES AND KETAMINE. SUPPLY IS CAPPED BECAUSE THE GUY WHO COULD MINT MORE IS IN PRISON. WE ARE NOT GOING BACK TO EARTH."
+
+**Vault Certificate:** A full moon photograph blown up well past the resolution it was ever meant to hold, so the JPEG craters are individually visible and one of them has been mistaken for a landmass and labeled. The wordmark is set in the chrome-bevel font from a 1999 adult-paysite tour page, which the kiosk has apparently had on its print server this whole time. `PROVENANCE VERIFIED` is stamped directly over the moon's Sea of Tranquility, implying certification of the moon. Serial format `MCUM-696969-######`. **Defect:** the gloss varnish on this coin's stock never fully cures. Every certificate is permanently tacky, and each one arrives with the ghost of someone else's serial number pressed into the varnish from the certificate that was stacked behind it at the kiosk.
+
+**QR page:** Opens **Lunar Homestead International**, a 1999 lunar-real-estate venture — starfield background, a rotating moon GIF that rotates at the wrong speed, and a deed "PDF" that is actually a 40 MB uncompressed BMP. The company was sued out of existence two decades ago, and the settlement notice is hosted on the company's own page, directly beneath the BUY buttons, which still work. Nobody at any point has connected these two facts.
+
+> **LUNAR HOMESTEAD INTERNATIONAL — OWN A PIECE OF THE SKY**
+> *"They stopped making land in 1969."*
+> **FULL MOON PARCELS NOW SELLING — TRANQUILITY RIDGE, SEA OF SERENITY SUBDIVISION**
+> *Deed delivered via email within 6-8 weeks. All sales final. Lunar zoning administered by our office.*
+> **[ BUY AN ACRE — $29.99 ]  [ BUY TEN — THE INVESTOR'S PARCEL ]**
+> *(below, unaddressed by anyone)* **NOTICE: PURSUANT TO SETTLEMENT AGREEMENT, THIS ENTERPRISE HAS DISSOLVED. NO PARCELS WERE EVER DELIVERED. THE MOON BELONGS TO EVERYONE AND TO NOBODY. DO NOT SEND MONEY.**
+> *Visitor counter: `004203` · Last deed issued: never*
+
+**Spendability note (binding, q10: A):** this coin's pool membership carries one author-ruled exception to `icq_airdrops.md` §1.4 — MoonCum696969 **is spendable with Tony420 only** (50 MoonCum for the Flintstone Xanax). No back-alley vendor, kiosk, or exchange accepts it. The matching exception is recorded in `icq_airdrops.md` §1.4.
+
+_Added 2026-11-10 by author approval (The Standing Ovation desk: "Yes, apply it as written"). Written by Aion in the Writing Room._
+---
+
 ## 4. Kiosk Terminals — Broke-ATM & QuickRug24
 
 The kiosks are the only way to acquire back-alley purchasing power. They stand adjacent to the
@@ -1069,17 +1091,17 @@ in this pool may be referenced there as senders' payloads.*
 
 ## 7. Engine Requirements (coin-pool scope)
 
-- **Pool data:** 28 coin records — `id`, `ticker`, `display_name`, `pitch`, `cert_art_id`,
+- **Pool data:** 29 coin records — `id`, `ticker`, `display_name`, `pitch`, `cert_art_id`,
   `qr_page_id`, `city_affinity[]` (flavour tag; must not gate availability).
 - **`$SPANK` is a special row:** always rendered, never purchasable, excluded from the rotating 7–8.
 - **Roster selection** is seeded per save and reshuffled on the three triggers in
-  `economy_system.md`. Selection draws from the 27 rotating coins; affinity tags may weight but must
+  `economy_system.md`. Selection draws from the 28 rotating coins; affinity tags may weight but must
   never exclude.
 - **Certificate item generation:** one item instance per rug pull, stamped with `coin_id`,
   `serial` (generated in that coin's format), `quantity`, and `bearer_name`. Serial formats are
   per-coin strings and belong in the coin record.
 - **QR assets:** each certificate item art carries a real, scannable code resolving to that coin's
-  page. **Building and hosting the 28 pages is production work and is out of scope this round
+  page. **Building and hosting the 29 pages is production work and is out of scope this round
   (ledgered).** Item art must reserve a 30 mm-equivalent quiet zone at the certificate's specified
   position so codes can be dropped in later without re-authoring the art.
 - Certificates land in **Bagholder Assets** (hidden tab). The first `Inspect` on a certificate sets
@@ -1092,7 +1114,7 @@ in this pool may be referenced there as senders' payloads.*
 1. **$TRASH — "EuroTrash Reserve."** Retained under the premise-cluster exemption (the Europe frame is
    exempt; the game is *Eurobound*). Flagged for veto if the author reads the
    ticker as a world-name breach. Fallback name on request.
-2. **QR page hosting** — 28 pages, out of scope this round, ledgered to production. Recommend one
+2. **QR page hosting** — 29 pages, out of scope this round, ledgered to production. Recommend one
    shared static host and one shared 2003 CSS baseline so the collection reads as a set.
 3. **Certificate stock** — if the pool ever ships as physical merchandise, the lamination defects are
    the funniest part of the design and would need to be deliberately manufactured, which costs money.

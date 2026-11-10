@@ -69,7 +69,7 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Digital surveillance and scammer coordination disguised as authentic internet cafe experience
 - **City-Specific Comedy Operations**: ICQ-based scammer networks targeting tourists while providing "underground" atmosphere
-- **Buffoon Exploitation**: Bros think they're accessing darkweb underground while broadcasting location to every scammer in Prague
+- **Buffoon Exploitation**: Bros think they're accessing darkweb underground while broadcasting location to every scammer in Debaucheryville
 - **Comedy of Errors**: "Secure" connections obviously monitored by multiple governments and criminal networks
 - **Consequence System**: Extended use increases scammer contact frequency and digital paranoia status effects
 
@@ -118,7 +118,7 @@
 - **Network Lag**: Random 5-second delays during peak scammer coordination hours
 
 ### Time-Based Events & Pricing
-- **3-6 AM "Dead Hours"**: Cheapest rates (1.50 SOVS/hour), highest scammer activity, enhanced sting operation opportunities
+- **3-6 AM "Dead Hours"**: Cheapest rates (2 SOVS/hour), highest scammer activity, enhanced sting operation opportunities
 - **Peak Tourist Hours (2-4 PM)**: Prices double, bros get immediately targeted by coordinated scammer teams
 - **Midnight Password Changes**: Daily metro access passwords posted in bathroom graffiti
 - **Equipment Rotation**: Terminal #7 always displays same error message but contains hidden crypto wallet access
@@ -186,7 +186,7 @@
 ### Enhanced ICQ Network Features
 - **Darkweb Dossier Central**: Primary hub for all character interaction coordination
 - **Scammer Database**: Track known scammer patterns and develop countermeasures
-- **Digital Underground**: Connect to broader Prague underground economy through encrypted channels
+- **Digital Underground**: Connect to broader Debaucheryville underground economy through encrypted channels
 - **Tourist Targeting**: Coordinate with other locations to maximize exploitation efficiency
 
 ## Audio Design

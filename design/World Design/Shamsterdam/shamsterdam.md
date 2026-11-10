@@ -38,7 +38,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Giant wheels of Gouda in every window
 - Wooden shoe shops targeting photo-op tourism
 - "Authentic Dutch Experience" tours that are anything but
-- Stroopwafel stands charging 8 SOVS for what locals pay 1.50 SOVS
+- Stroopwafel stands charging 8 SOVS for what locals pay 2 SOVS
 - Tulip bulb vendors selling bulbs that won't survive US customs
 
 ### Museum Mile
@@ -47,7 +47,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Van Gogh Museum selfie opportunities (no actual art appreciation)
 - Anne Frank House line they'll absolutely skip
 - Rijksmuseum photo spot they can't spell for Instagram
-- The mandatory "I Amsterdam" sign photo (the sign was removed years ago but tourists still look for it)
+- The mandatory "I SHAMSTERDAM" sign photo (the sign was removed years ago but tourists still look for it)
 
 ---
 
@@ -76,7 +76,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Where the Fabergé Egg Hunt takes place
 - Chocolate anatomy displays in white, milk, and dark varieties
 - Decorated specimens with sprinkles and fondant bow ties
-- "FABERGÉ-STYLE COLLECTOR'S EGGS" for 3.50 SOVS
+- "FABERGÉ-STYLE COLLECTOR'S EGGS" for 4 SOVS
 - The teenager behind the counter who cannot be bothered
 
 ### Casa Rosé Erotic Theatre
@@ -130,7 +130,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - **Unlockable Consumable**: "Windmill Wit" — Restores HP, +Speed, -Navigation (the spinning doesn't help)
 - **Brewmaster Selfie Spot**: In front of the giant rotating blades (timing matters)
 
-### Proeflokaal 't Kansen (The Chance Tasting Room)
+### Bottoms Down
 **Brewery Tour Location #2**
 - Historic jenever distillery that "also does beer now"
 - 400-year-old building, 4-hour-old commitment to quality
@@ -190,7 +190,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 **Late-Night Döner Stand #1**
 - THREE rotating meat towers of glory (veal, chicken, mixed)
 - Homemade bread baked fresh, warm, perfect
-- The döner that locals swear by (2.50 SOVS and worth every cent)
+- The döner that locals swear by (3 SOVS and worth every cent)
 - Standing counter only — you eat like a warrior or not at all
 - Grease-stained menus in four languages, none spelled correctly
 - **Vendor**: Mehmet "The Meat Architect" — Turkish immigrant who's been slinging döner since 1992, judges your pronunciation, respects your appetite
@@ -199,14 +199,14 @@ The city that promises total freedom but delivers total accountability. A labyri
     - 🇳🇱 Counts toward "The Great Döner Debate: International Expansion" sidequest
 - **Mehmet's Catchphrases**:
     - "You want chicken? Chicken is for children. You have the lamb."
-    - "Thirty-two years I make döner. You think Prague knows döner? Prague knows NOTHING."
+    - "Thirty-two years I make döner. You think Debaucheryville knows döner? Debaucheryville knows NOTHING."
     - "The secret is the bread. Always the bread. Also the meat. And the sauce. Okay, everything is secret."
 
 ### Kapsalon Koning (The Kapsalon King)
 **Late-Night Döner Stand #2**
 - Home of the KAPSALON: Dutch-Turkish masterpiece of excess
 - Fries + döner meat + melted cheese + salad + garlic sauce + sambal in an aluminum tray
-- Invented by a Rotterdam barber in 2003, perfected here nightly
+- Invented by a port-city barber in 2003, perfected here nightly
 - Plastic forks that will 100% break mid-bite
 - The smell alone adds 500 calories
 - **Vendor**: "Big Willem" — 6'5" Dutch-Turkish fusion of cultures, speaks in a mix of Dutch slang and Turkish endearments, has strong opinions about EVERYTHING
@@ -216,7 +216,7 @@ The city that promises total freedom but delivers total accountability. A labyri
     - 🇳🇱 Counts toward "The Great Döner Debate: International Expansion" sidequest
 - **Big Willem's Catchphrases**:
     - "Kapsalon means 'hair salon.' You know why? Because the barber who invented it had VISION."
-    - "In Rotterdam, we put cheese on everything. This is the Dutch way. Accept it."
+    - "In the port city, we put cheese on everything. This is the Shamsterdam way. Accept it."
     - "You want small? There is no small. There is only 'you are not ready' and 'regular.'"
 
 
@@ -259,7 +259,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **Existing as Tourist**: Legal, but the city literally paid for ads telling you not to come
 
 ### Fine & Penalty Mechanics
-- **Public Consumption Fine**: 100 SOVS gold, triggered by outdoor smoking
+- **Public Consumption Fine**: 100 SOVS, triggered by outdoor smoking
 - **Photography Violation**: -50 gold + "Marked Tourist" debuff
 - **Noise Complaint**: Random police encounter, -Bravado
 - **Bicycle Lane Walking**: Getting yelled at by EVERYONE
@@ -383,7 +383,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **Agent Havok**: Undercover chaos operative (Sheltie in disguise), mission briefings delivered in military movie style
 - **Dennis (CryptoBroArtCollective)**: One-man "art collective," gift shop employee, NFT minter
 - **The Burgemeester's Assistant**: Exhausted bureaucrat who might actually help you
-- **The Expat Who Stayed**: American who moved here 20 years ago, insufferable about how you're "doing Amsterdam wrong"
+- **The Expat Who Stayed**: American who moved here 20 years ago, insufferable about how you're "doing Shamsterdam wrong"
 
 ### ICQ Integration Characters
 - **Tony420**: Returns with Amsterdam-specific "offerings"

@@ -48,7 +48,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - **Time Restrictions**: Performances 19:00-22:00, rehearsals 10:00-17:00
 - **Stat Requirements**: Charm 2+ to sneak into rehearsal
 - **Item Requirements**: 
-  - Evening: Performance ticket (40 Sovs-80, or 200 Sovs-500 from scalper)
+  - Evening: Performance ticket (40-80 Sovs, or 200-500 Sovs from scalper)
   - Nighttime "Bassline": Bassline Ticket (25 Sovs) or Charm 4+
 - **Special Conditions**: Formal attire required for evening performances
 
@@ -589,10 +589,10 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 
 | Ticket Type | Price | Access |
 |-------------|-------|--------|
-| Evening Performance | 40 Sovs-80 | Main Auditorium (one show) |
+| Evening Performance | 40-80 Sovs | Main Auditorium (one show) |
 | Bassline Event | 25 Sovs | Nighttime arena |
 | Season Pass | 300 Sovs | All performances + backstage tour |
-| "Scalper Special" | 200 Sovs-500 | Overpriced but available |
+| "Scalper Special" | 200-500 Sovs | Overpriced but available |
 
 ### Damage Liability (Backstage)
 
@@ -610,7 +610,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - Immediate: Clears debt, +1 reputation
 - Installments: 200 Sovs minimum, tracked
 - Hans-Jürgen Path A contribution: −500 Sovs if Path A (`hans_jurgen_path_a_contribution`). This is **not** the 170 Sovs café insurance payout — separate pot, and the two stack
-- Prima Donna: Additional 200 Sovs-500 demand (negotiable)
+- Prima Donna: Additional 200-500 Sovs demand (negotiable)
 
 > **Authoritative arithmetic**: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it for all Fiaker Fiasco totals and relief rules.
 

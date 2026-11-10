@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 10 PM (extended tourist confusion hours)
 - **Stat Requirements**: None (understanding of international drug law not required, also not provided)
-- **Item Requirements**: Gold for purchases (10 Sovs-75), destination country's customs regulations (not consulted)
+- **Item Requirements**: Gold for purchases (10-75 Sovs), destination country's customs regulations (not consulted)
 - **Previous Location Requirements**: None (the confusion is accessible to all)
 - **Special Conditions**: Shop is NOT a coffeeshop, this distinction matters, tourists don't understand why
 
@@ -168,7 +168,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 | Souvenir Seed Pack | 40 Sovs | Seeds | 100%* | HIGH | *Not for germination |
 | Premium Strain Seeds | 65 Sovs | Seeds | 100%* | VERY HIGH | *Definitely not for germination |
 | Space Cake Mix | 20 Sovs | "Food" | 100% | High | "Just add... nothing illegal" |
-| Leaf-Shaped Everything | 10 Sovs-30 | Novelty | 100% | Embarrassment | Declaring your tourist status |
+| Leaf-Shaped Everything | 10-30 Sovs | Novelty | 100% | Embarrassment | Declaring your tourist status |
 
 ### The "Is This Legal?" Interaction
 **Trigger**: Ask staff about any product's legality

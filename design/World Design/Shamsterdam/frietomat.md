@@ -131,17 +131,17 @@
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Description |
 |------|-------|-----------|---------------|-------------|
-| Kroket | 2.50 SOVS | +20 HP | Warm Inside status | Deep-fried ragout in crispy coating, the classic |
-| Frikandel | 2.00 SOVS | +15 HP | None | Mystery meat tube, don't ask, just eat |
-| Kaassouflé | 3.00 SOVS | +25 HP | Cheese Contentment | Deep-fried cheese in pastry, happiness |
-| Bamischijf | 2.50 SOVS | +20 HP | Exotic Confusion | Fried noodle disc, cross-cultural comfort |
-| Berehap | 3.50 SOVS | +30 HP | Protein Boost | Satay meat on a stick, substantial |
-| Mexicano | 2.50 SOVS | +20 HP, slight -HP delayed | Spicy Surprise | "Spicy" by Dutch standards |
-| Hamburger | 3.50 SOVS | +25 HP | Familiarity | When you need something recognizable |
-| Cheeseburger | 4.00 SOVS | +30 HP | Cheese Contentment | The above, but better |
-| Satéschotel | 5.00 SOVS | +40 HP, +SP | Full Meal status | The commitment option |
-| Frikandel Speciaal | 3.00 SOVS | +25 HP | The Works | Frikandel with onions and sauce |
-| Mystery Item | 2.50 SOVS | ??? HP | ??? status | Changes daily, fate decides |
+| Kroket | 3 SOVS | +20 HP | Warm Inside status | Deep-fried ragout in crispy coating, the classic |
+| Frikandel | 2 SOVS | +15 HP | None | Mystery meat tube, don't ask, just eat |
+| Kaassouflé | 3 SOVS | +25 HP | Cheese Contentment | Deep-fried cheese in pastry, happiness |
+| Bamischijf | 3 SOVS | +20 HP | Exotic Confusion | Fried noodle disc, cross-cultural comfort |
+| Berehap | 4 SOVS | +30 HP | Protein Boost | Satay meat on a stick, substantial |
+| Mexicano | 3 SOVS | +20 HP, slight -HP delayed | Spicy Surprise | "Spicy" by Dutch standards |
+| Hamburger | 4 SOVS | +25 HP | Familiarity | When you need something recognizable |
+| Cheeseburger | 4 SOVS | +30 HP | Cheese Contentment | The above, but better |
+| Satéschotel | 5 SOVS | +40 HP, +SP | Full Meal status | The commitment option |
+| Frikandel Speciaal | 3 SOVS | +25 HP | The Works | Frikandel with onions and sauce |
+| Mystery Item | 3 SOVS | ??? HP | ??? status | Changes daily, fate decides |
 
 ### The "Mystery Item" System
 - **Rotation**: Different item each in-game day
@@ -197,7 +197,7 @@
 - **Background**: Second job, prefers the late shift, has seen everything
 - **Demeanor**: Not unfriendly, just efficient beyond the need for conversation
 - **Dialogue**:
-  - "Coins? Two SOVS fifty. There."
+  - "Coins? Three SOVS. There."
   - "The wall works. Insert coins. Turn handle. Easy."
   - *3 AM rush* "Kroket is that one. Frikandel is that one. Yes, that's meat. Probably."
   - "Mystery item today is... *checks* ...experimental. Your choice."
@@ -261,7 +261,7 @@
 - **Function**: Frietomat serves as recovery location after various Shamsterdam activities
 - **De Groene Gids Connection**: Munchies bonus applies
 - **Casa Rosé Connection**: Post-show processing location
-- **Proeflokaal Connection**: Absorption function for The Shakes
+- **Bottoms Down Connection**: Absorption function for The Shakes
 - **Club Exit Connection**: Standard 3 AM destination
 
 ### Status Effect Interactions
@@ -277,7 +277,7 @@
 - **De Groene Gids**: Munchies pipeline, food tastes better
 - **Casa Rosé**: Processing location, neutral space
 - **The Tolerance Hostel**: Kitchen discussions of late-night discoveries
-- **Proeflokaal 't Kansen**: Grease absorption, helps with The Shakes
+- **Bottoms Down**: Grease absorption, helps with The Shakes
 
 ### The Frietomat Achievement Track
 - **First Visit**: "Wall Beginner" — discovered the automat system

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 6 PM (fresh fish hours, tradition demands)
 - **Stat Requirements**: Constitution check recommended, Pride check mandatory
-- **Item Requirements**: Gold for purchase (4 Sovs-6), willingness to be photographed mid-swallow
+- **Item Requirements**: Gold for purchase (4-6 Sovs), willingness to be photographed mid-swallow
 - **Previous Location Requirements**: None (the herring finds the curious)
 - **Special Conditions**: Line moves fast, decisions must be made quickly, no time for doubt
 
@@ -287,7 +287,7 @@
 ## System Integration
 ### Cultural Courage Network
 - **Function**: Herring stand connects to other "authentic experience" challenges
-- **Connection to Proeflokaal**: Both require public vulnerability
+- **Connection to Bottoms Down**: Both require public vulnerability
 - **Connection to Brouwerij**: Courage-building progression
 - **Connection to Stroopwafel Cart**: Comfort food after herring success
 

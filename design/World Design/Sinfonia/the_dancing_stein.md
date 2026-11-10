@@ -154,7 +154,7 @@ Staff enforces this with friendly insistence, not hostility.
 | Foxtrot Ale | 5 SOVS | +15 HP | Different tempo (rebellion) |
 | The Wallflower | 3 SOVS | +5 HP | No dancing required (shameful) |
 | Tango IPA | 6 SOVS | +15 HP, +5 SP | Dramatic pause |
-| Viennese Whirl | 8 SOVS | +25 HP | Full spin delivery |
+| Sinfonian Whirl | 8 SOVS | +25 HP | Full spin delivery |
 
 ### Partner Brewery Note
 

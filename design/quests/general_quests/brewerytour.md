@@ -16,11 +16,15 @@ file wins.
   city file)
 - Sinfonia: 4 designed (The Standing Ovation, Crown & Cask, The Dancing Stein, The Moderato
   Pub)
-- Shamsterdam: **4 required, 1 named.** The Wobbly Windmill Brewery (author-minted 2026-11-10,
-  replacing a real Dutch brewery's name). "Proeflokaal 't Kansen" is generic Dutch with no joke
-  and still gets an author-minted rename (the jenever-distillery character and Kees stay; only
-  the name changes), plus **2 entirely new establishments to be created**. The remaining 3
-  names: OPEN AUTHOR DECISION.
+- Shamsterdam: **4 required, 4 named** (author rulings 2026-11-10, Round v21 and v23):
+  1. The Wobbly Windmill Brewery (`wobbly_windmill_brewery.md`; replaced a real Dutch brewery's name)
+  2. Bottoms Down (`bottoms_down.md`; renamed from the placeholder "Proeflokaal 't Kansen" —
+     name only, Kees and the jenever distillery stay)
+  3. The Hoisted Pint (`the_hoisted_pint.md`; concept approved — challenge, beer, opener,
+     stamp, selfie, brewmaster and prices are PROPOSED — NEEDS AUTHOR RULING)
+  4. The Mad Monarch's Wit-tea Party (`the_mad_monarchs_wit_tea_party.md`; author-minted name,
+     witbier specialty; concept approved — challenge, beer, opener, stamp, selfie, brewmaster
+     and prices are PROPOSED — NEEDS AUTHOR RULING)
 
 ---
 

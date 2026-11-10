@@ -144,7 +144,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for 22 SOVS
 - **Special Feature**: Blade arms actually rotate when you spin the opener
 
-**Proeflokaal 't Kansen Bottle Opener**
+**Bottoms Down Bottle Opener**
 - **Design**: Traditional tulip jenever glass shape (overfilled, surface tension visible), bottle opener as the stem
 - **Material**: Amber-tinted brass with sawdust-colored leather loop
 - **Inscription**: "No Hands. No Fear."
@@ -160,7 +160,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 | Slot | Location | Stamp Design | Signature Beer | Unlock Condition |
 |------|----------|--------------|----------------|------------------|
 | 1 | The Wobbly Windmill Brewery | Windmill with grain sheaf, gold ink | Windmill Wit | Defeat Yeast Golem |
-| 2 | Proeflokaal 't Kansen | Overfilled tulip glass, amber ink | Oude Genever | Complete Jenever Taste Test gauntlet |
+| 2 | Bottoms Down | Overfilled tulip glass, amber ink | Oude Genever | Complete Jenever Taste Test gauntlet |
 
 **Page Theme**: Orange background, tulip and windmill borders
 **Legendary Hangover**: "Dutch Courage" — PERMANENT PASSIVE (see below)
@@ -174,7 +174,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Stamp Animation**: Windmill blades rotate twice, stamp lands with grinding sound
 - **Hendrik's Stamp Speech**: "You defeated the Golem. You respected the grain. The windmill accepts you. *stamps with ceremonial gravity* Now drink. You've earned the spin."
 
-**Stamp 2: Proeflokaal 't Kansen**
+**Stamp 2: Bottoms Down**
 - **Stamp Visual**: Overfilled tulip glass with visible surface tension meniscus
 - **Ink Color**: Jenever amber with cream foam accent
 - **Inscription**: "Bowed & Survived"
@@ -195,7 +195,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Flavor Text**: "Brewed with grain ground by the very windmill that's making you dizzy. The circular notes are intentional."
 - **Brewed By**: The Wobbly Windmill Brewery (windmill-ground grain)
 
-**Oude Genever (Proeflokaal 't Kansen)**
+**Oude Genever (Bottoms Down)**
 - **Style**: Aged Dutch jenever (zeer oud classification)
 - **ABV**: 38%
 - **Stats**: +50 SP restoration (massive)
@@ -203,7 +203,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Risk**: Significant accuracy penalty, enormous SP restore
 - **Price**: 12 SOVS
 - **Flavor Text**: "Aged for years. Served for centuries. The sawdust exists for a reason."
-- **Brewed By**: Proeflokaal 't Kansen (400-year-old recipe)
+- **Brewed By**: Bottoms Down (400-year-old recipe)
 
 ---
 
@@ -401,7 +401,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 | Location | Selfie Spot | Standard Photo | Special Variant |
 |----------|-------------|----------------|-----------------|
 | The Wobbly Windmill Brewery | Blade level platform | With spinning blades (timing matters) | With Hendrik post-Golem |
-| Proeflokaal 't Kansen | At the bar | Bowing to overfilled glass | With Kees's rare nod |
+| Bottoms Down | At the bar | Bowing to overfilled glass | With Kees's rare nod |
 
 **Full Shamsterdam Brewery Selfie Collection Reward**:
 - **"Spinning & Bowing"** badge
@@ -481,14 +481,14 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 ### Shamsterdam Bottle Openers (4 PNGs)
 - bottle_opener_wobbly_windmill_brewery.png - 48x48 - Windmill with rotating blades
 - bottle_opener_wobbly_windmill_spin.png - 48x48x4 - Blade rotation animation
-- bottle_opener_proeflokaal.png - 48x48 - Tulip glass with surface tension
-- bottle_opener_proeflokaal_leather.png - 24x24 - Sawdust-colored loop
+- bottle_opener_bottoms_down.png - 48x48 - Tulip glass with surface tension
+- bottle_opener_bottoms_down_leather.png - 24x24 - Sawdust-colored loop
 
 ### Shamsterdam Stamp Assets (4 PNGs)
 - stamp_wobbly_windmill_brewery.png - 64x64 - Windmill with grain sheaf
 - stamp_wobbly_windmill_animation.png - 64x64x4 - Blade rotation sequence
-- stamp_proeflokaal.png - 64x64 - Overfilled tulip glass
-- stamp_proeflokaal_animation.png - 64x64x4 - Fill and thud sequence
+- stamp_bottoms_down.png - 64x64 - Overfilled tulip glass
+- stamp_bottoms_down_animation.png - 64x64x4 - Fill and thud sequence
 
 ### Shamsterdam Beer Assets (4 PNGs)
 - windmill_wit_bottle.png - 32x64 - Witbier with windmill stirrer

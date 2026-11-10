@@ -16,7 +16,7 @@
 - **Time Restrictions**: 11 AM - 5 AM (extended hours for the lost and hungry)
 - **Peak Hours**: 1 AM - 4 AM (when the real customers arrive)
 - **Stat Requirements**: None (hunger is the only requirement)
-- **Item Requirements**: Gold for purchases (2.50-8 SOVS), willingness to be judged
+- **Item Requirements**: Gold for purchases (3-8 SOVS), willingness to be judged
 - **Previous Location Requirements**: None (döner finds all who need it)
 - **Special Conditions**: Standing counter only — no seats, no weakness
 
@@ -95,7 +95,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 - **On Meat**: "Thirty-two years I make döner. The meat knows when you respect it."
 - **On Speed**: "Fast food means food that is fast. Not food that is slow. You eat. You go. Life continues."
 - **On Tourists**: "They try. Sometimes they succeed. Always they eat. This is enough."
-- **On Competition**: "Prague? Prague knows NOTHING. Rotterdam knows döner. Amsterdam knows döner. Prague knows... beer."
+- **On Competition**: "Debaucheryville? Debaucheryville knows NOTHING. The port city knows döner. Shamsterdam knows döner. Debaucheryville knows... beer."
 
 ### Cultural Targets
 - **Primary Satirical Focus**: The late-night döner ritual, tourist mispronunciation, meat hierarchy gatekeeping
@@ -143,13 +143,13 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Mehmet's Take |
 |------|-------|-----------|---------------|---------------|
-| Döner (Veal) | 5.50 SOVS | +30 HP | None | "Good choice." |
-| Döner (Chicken) | 4.50 SOVS | +25 HP | None | "...okay." |
+| Döner (Veal) | 6 SOVS | +30 HP | None | "Good choice." |
+| Döner (Chicken) | 5 SOVS | +25 HP | None | "...okay." |
 | Döner (Mixed) | 5 SOVS | +28 HP | None | "Indecisive. But okay." |
 | The Triple Tower | 8 SOVS | +40 HP, +15 SP | Garlic Aura, Meat Sweats | "You are hungry. I respect this." |
-| Extra Garlic Sauce | +0.50 SOVS | +5 HP | Garlic Aura Extended | "You want to be alone tonight?" |
-| Extra Hot Sauce | +0.50 SOVS | +5 HP, -5 HP delayed | Fire Breath | "Turkish hot. Not tourist hot." |
-| Just Bread | 1.50 SOVS | +10 HP | Disappointment | "You came here for... bread?" |
+| Extra Garlic Sauce | +1 SOV | +5 HP | Garlic Aura Extended | "You want to be alone tonight?" |
+| Extra Hot Sauce | +1 SOV | +5 HP, -5 HP delayed | Fire Breath | "Turkish hot. Not tourist hot." |
+| Just Bread | 2 SOVS | +10 HP | Disappointment | "You came here for... bread?" |
 | Drink (Ayran) | 2 SOVS | +10 HP | Cooling | "Good with döner. Traditional." |
 
 ### The "Triple Tower" Experience
@@ -187,7 +187,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 - **Quest**: "The Great Döner Debate: International Expansion"
 - **Progress**: Eating here counts as Shamsterdam sample
 - **Requirement**: Try specific item, remember opinion
-- **Mehmet's Stake**: "You tell them Prague is better? You don't come back. I remember faces."
+- **Mehmet's Stake**: "You tell them Debaucheryville is better? You don't come back. I remember faces."
 
 ### Bravado Interactions
 - **Gain Bravado**: Order veal confidently, get extra hot sauce and survive, pronounce "döner" correctly
@@ -219,8 +219,8 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 - "No sauce? ...no sauce. This is unusual. But okay."
 
 *On Tourists:*
-- "Thirty-two years I make döner. You think Prague knows döner? Prague knows NOTHING."
-- "Amsterdam, Rotterdam, these know döner. Because we are here. We bring the knowledge."
+- "Thirty-two years I make döner. You think Debaucheryville knows döner? Debaucheryville knows NOTHING."
+- "Shamsterdam, the port city, these know döner. Because we are here. We bring the knowledge."
 - "You try to pronounce 'döner.' I hear you try. The effort is... okay."
 
 *On The Craft:*
@@ -279,7 +279,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 
 ### Original NPC Dialogue
 **Mehmet's Philosophy (Extended, Rare Moments):**
-- "1992 I open. Rotterdam man say 'nobody wants Turkish food here.' Now? Three meat towers. Twenty döners an hour. Rotterdam man is wrong."
+- "1992 I open. Port-city man say 'nobody wants Turkish food here.' Now? Three meat towers. Twenty döners an hour. Port-city man is wrong."
 - "My father made döner in Istanbul. His father made döner. My daughter will make döner. This is legacy."
 - "You eat standing because döner is fuel. You don't sit with fuel. You use it and go."
 - "The garlic? The garlic is love. If you can't handle garlic, you can't handle love."
@@ -295,7 +295,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 - **Bradley**: "Gregory recommends the veal. Gregory has researched döner culture."
 - **Bradley** (to Mehmet): "Sir, your craft is remarkable. Gregory is impressed."
 - **Mehmet** (to Bradley): "...your puppet is impressed? ...okay. Enjoy döner."
-- **Bradley** (eating): "Gregory says this rivals the Prague döner. Gregory is conflicted."
+- **Bradley** (eating): "Gregory says this rivals the Debaucheryville döner. Gregory is conflicted."
 
 ## System Integration
 ### Late-Night Food Network
@@ -307,7 +307,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 ### The Great Döner Debate: International Expansion
 - **Quest Progress**: Eating here counts as Shamsterdam entry #1
 - **Requirement**: Consume any döner, remember for verdict
-- **Competition**: Against Prague döner spots, other cities
+- **Competition**: Against Debaucheryville döner spots, other cities
 - **Mehmet's Investment**: Takes this VERY seriously
 
 ### Cross-Location Dependencies
@@ -436,4 +436,4 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 
 ---
 
-*Leeman's Döner Palace: Thirty-two years of Turkish mastery, served standing, judged silently, remembered forever. Chicken is for children. The garlic is love. Prague knows NOTHING.*
+*Leeman's Döner Palace: Thirty-two years of Turkish mastery, served standing, judged silently, remembered forever. Chicken is for children. The garlic is love. Debaucheryville knows NOTHING.*

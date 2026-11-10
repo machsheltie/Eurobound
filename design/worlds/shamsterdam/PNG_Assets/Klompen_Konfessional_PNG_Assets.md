@@ -96,9 +96,9 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 ### Retail Sections:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Traditional Section | (0, 0) | 384x256 | Natural wood classics, "as worn by Dutch farmers (in the 1800s)", 25 Sovs-40 shelf tags |
-| Artistic Section | (384, 0) | 384x256 | Hand-painted windmills, tulips, Delft blue — clearly decorations, 35 Sovs-60 |
-| "Wearable" Section (Allegedly) | (768, 0) | 256x256 | Rubber soles, padding inserts, suspiciously small shelf, 50 Sovs-80; staff maintain straight faces |
+| Traditional Section | (0, 0) | 384x256 | Natural wood classics, "as worn by Dutch farmers (in the 1800s)", 25-40 Sovs shelf tags |
+| Artistic Section | (384, 0) | 384x256 | Hand-painted windmills, tulips, Delft blue — clearly decorations, 35-60 Sovs |
+| "Wearable" Section (Allegedly) | (768, 0) | 256x256 | Rubber soles, padding inserts, suspiciously small shelf, 50-80 Sovs; staff maintain straight faces |
 | Miniatures Section | (0, 256) | 256x192 | Keychains, magnets, tiny clogs — the honest purchase, best-seller by volume |
 | Try-On Station | (256, 256) | 256x256 | Bench, sizing guide, mirror, discreetly positioned first aid kit |
 | Demonstration Area | (512, 256) | 384x256 | Pieter's workspace: shaving horse, blades, half-carved blanks, 400 years of technique |

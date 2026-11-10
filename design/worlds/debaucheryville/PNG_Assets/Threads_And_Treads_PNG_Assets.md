@@ -118,7 +118,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 | Band T-Shirt (Classic) | (48, 48) | 48x48 | Conversation starter |
 | Band T-Shirt (Obscure) | (96, 48) | 48x48 | Test who's real — gatekeepers exist |
 | Comfortable Black Jeans | (144, 48) | 48x48 | Looking cool without suffering |
-| Band Patch Set | (192, 48) | 64x32 | Allegiance collection, 5 Sovs-15 each |
+| Band Patch Set | (192, 48) | 64x32 | Allegiance collection, 5-15 Sovs each |
 
 ### Footwear:
 | Element | Position | Size | Description |

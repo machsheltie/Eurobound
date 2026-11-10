@@ -124,7 +124,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 **What is ACTUALLY happening**: Immersive chaos experience with occasional sleep opportunities
 
-**How impaired are they**: Usually arriving drunk (it's Prague), waking up hungover
+**How impaired are they**: Usually arriving drunk (it's Debaucheryville), waking up hungover
 
 **Obvious signs they embrace or ignore**:
 - 12 beds means 11 strangers
@@ -245,7 +245,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 **Night Receptionist Petra**
 - **Role**: Night shift (when present), emergency handler, 3 AM philosopher
 - **Appearance**: Early 30s Czech woman, nocturnal energy, coffee-dependent
-- **Background**: Former traveler who got stuck in Prague, "temporarily" working nights
+- **Background**: Former traveler who got stuck in Debaucheryville, "temporarily" working nights
 - **Demeanor**: More alert than she should be, curious about guests, protective of regulars
 - **Dialogue**:
   - "You're still awake? Good. Neither am I. Neither is anyone, really."
@@ -284,9 +284,9 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 **Bunk 11 — "Local Lukas" (Czech, Pretending)**
 - **Status**: Actually local, pretending to be traveler, observing tourists for unclear reasons
-- **Behavior**: Too knowledgeable about Prague, asks suspicious questions
+- **Behavior**: Too knowledgeable about Debaucheryville, asks suspicious questions
 - **Confession**: "I live here. I just... like watching travelers. It reminds me that wonder is possible."
-- **Quest Hook**: Help him actually leave Prague for the first time
+- **Quest Hook**: Help him actually leave Debaucheryville for the first time
 - **Dialogue**: "You should try this place I know. Very authentic. Not tourist. I read about it... online."
 
 **The 3-Week Resident (Unnamed)**

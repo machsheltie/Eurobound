@@ -1,6 +1,6 @@
 # Kapsalon Koning (The Kapsalon King)
 
-*Where a Rotterdam barber's 2003 vision becomes your 3 AM cardiovascular event — fries, döner, cheese, chaos*
+*Where a port-city barber's 2003 vision becomes your 3 AM cardiovascular event — fries, döner, cheese, chaos*
 
 ## Location Identity
 - **Location ID**: shamsterdam_latenight_kapsalon_koning_01
@@ -33,9 +33,9 @@
 - **Window Display**: Photos of kapsalon that somehow look appetizing (photography magic)
 - **Signage**:
   - Main: "KAPSALON KONING" with crown logo
-  - Subtitle: "Since 2008 — Rotterdam Style, Amsterdam Execution"
+  - Subtitle: "Since 2008 — Port City Style, Shamsterdam Execution"
   - Explanation: "KAPSALON = Fries + Döner + Cheese + Salad + Sauce + Glory"
-  - Big Willem's Quote: "In Rotterdam, we put cheese on everything."
+  - Big Willem's Quote: "In the port city, we put cheese on everything."
   - Size warning: "No Small Available. This Is Intentional."
 - **Atmosphere**: Brighter than Leeman's, slightly more chaos energy, cheese smell dominant
 - **Environmental Context**: Near Leeman's (they acknowledge each other), different customer base
@@ -62,7 +62,7 @@
 **Layer 3 — The Transformation: Melted Cheese**
 - Gouda, because Dutch
 - Melted under industrial salamander until bubbling
-- "This is where Rotterdam happens"
+- "This is where the port city happens"
 
 **Layer 4 — The Lies We Tell Ourselves: Salad**
 - Iceberg lettuce, tomatoes, onion
@@ -101,7 +101,7 @@
 The satire is the beautiful absurdity of a dish that exists purely because someone asked "what if ALL the things, together, with cheese?" and an entire country said "yes."
 
 ### The Origin Story (Willem Tells This Constantly)
-"2003. Rotterdam. A barber — KAPSALON means hair salon, you understand? — this barber, he goes to his kebab shop every day. One day he says 'put the meat on the fries. Then put cheese.' The shop owner says '...okay?' The kapsalon is born. This man is a VISIONARY. I am his disciple."
+"2003. The port city. A barber — KAPSALON means hair salon, you understand? — this barber, he goes to his kebab shop every day. One day he says 'put the meat on the fries. Then put cheese.' The shop owner says '...okay?' The kapsalon is born. This man is a VISIONARY. I am his disciple."
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Dutch-Turkish fusion excess, the "more is more" food philosophy
@@ -158,9 +158,9 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 | Kapsalon (Large) | 14 SOVS | +50 HP | Cheese Sweats, Food Coma Risk | "For the committed" |
 | Kapsalon "King Size" | 18 SOVS | +70 HP | Cheese Sweats, Food Coma Guaranteed | "Wall of Fame eligible" |
 | Extra Cheese | +2 SOVS | +10 HP | Extended Cheese Sweats | "More blanket" |
-| Extra Sambal | +1 SOVS | +5 HP, -5 HP delayed | Fire Addition | "Rotterdam hot" |
+| Extra Sambal | +1 SOVS | +5 HP, -5 HP delayed | Fire Addition | "Port City hot" |
 | Both Sauces | +1 SOVS | +5 HP | Willem Respect | "You understand" |
-| Drink (Cola) | 2.50 SOVS | +5 HP | None | "For the cheese" |
+| Drink (Cola) | 3 SOVS | +5 HP | None | "For the cheese" |
 | Replacement Fork | Free | None | None | "You'll need it" |
 
 ### The "Full Kapsalon Experience" (Large with Both Sauces)
@@ -229,14 +229,14 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 
 *On Kapsalon Philosophy:*
 - "Kapsalon means 'hair salon.' You know why? Because the barber who invented it had VISION."
-- "In Rotterdam, we put cheese on everything. This is the Dutch way. Accept it."
+- "In the port city, we put cheese on everything. This is the Shamsterdam way. Accept it."
 - "You want small? There is no small. There is only 'you are not ready' and 'regular.'"
 - "The barber in 2003, he didn't know he was changing the world. But he was."
 
 *On Assembly:*
 - "First the fries. Foundation. Without foundation, chaos."
 - "Then the meat. Soul. The meat gives meaning."
-- "Then the cheese. This is where Rotterdam happens. Where we become one."
+- "Then the cheese. This is where the port city happens. Where we become one."
 - "Salad on top. For health. ...okay, for texture. The health is bonus."
 - "Both sauces? You understand. You have achieved understanding."
 
@@ -247,7 +247,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - "You finish King Size? You go on the wall. The wall remembers."
 
 *On Life:*
-- "Rotterdam gave me the kapsalon. Amsterdam gave me the customers. I am blessed."
+- "The port city gave me the kapsalon. Shamsterdam gave me the customers. I am blessed."
 - "Mehmet down the street? Good man. Different style. No cheese. His loss."
 - "Every night at 3 AM, I see the same thing. Hungry people. I fix them. This is my purpose."
 
@@ -299,10 +299,10 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 
 ### Original NPC Dialogue
 **Willem's Kapsalon History Lesson (Full Version):**
-- "2003. Rotterdam. El Aviva snack bar. A barber named Nataniël Gomes. Every day he comes, every day he orders. One day he says 'everything together. With cheese.' The owner says 'you want fries and meat and cheese?' He says 'YES.' The kapsalon is born."
+- "2003. The port city. El Aviva snack bar. A barber named Nataniël Gomes. Every day he comes, every day he orders. One day he says 'everything together. With cheese.' The owner says 'you want fries and meat and cheese?' He says 'YES.' The kapsalon is born."
 - "They named it after him. His profession. KAPSALON. Hair salon. Because the barber created it. This is how legends are made."
 - "Now every snack bar in Netherlands has kapsalon. EVERY ONE. Because of one barber. One vision. One tray."
-- "I met Nataniël once. Rotterdam festival. I shook his hand. I said 'you changed my life.' He said 'I just wanted my food together.' This is genius. Accidental genius."
+- "I met Nataniël once. Port city festival. I shook his hand. I said 'you changed my life.' He said 'I just wanted my food together.' This is genius. Accidental genius."
 
 **The Bros' Kapsalon Koning Reactions:**
 - **Lord Pilsner** (entering): "What IS that? Is that... all one thing? That's not one dish."

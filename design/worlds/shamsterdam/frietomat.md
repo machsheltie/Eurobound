@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24 hours (the wall never sleeps)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: Coins (2 Sovs-4 per item) — the machines don't take card, the counter does
+- **Item Requirements**: Coins (2-4 Sovs per item) — the machines don't take card, the counter does
 - **Previous Location Requirements**: None (Frietomat finds you when you need it)
 - **Special Conditions**: Peak hours 2-4 AM, line forms, judgment suspended
 
@@ -124,7 +124,7 @@
 ### The Wall Interaction System
 - **Approach**: Walk up to the wall, examine options
 - **Selection**: Choose compartment (each shows contents through glass)
-- **Payment**: Insert coins (2 Sovs-4 depending on item)
+- **Payment**: Insert coins (2-4 Sovs depending on item)
 - **Acquisition**: Turn handle, door opens, item is yours
 - **No Returns**: What you take is what you get, the wall has spoken
 
@@ -197,7 +197,7 @@
 - **Background**: Second job, prefers the late shift, has seen everything
 - **Demeanor**: Not unfriendly, just efficient beyond the need for conversation
 - **Dialogue**:
-  - "Coins? Two Sovs fifty. There."
+  - "Coins? Three Sovs. There."
   - "The wall works. Insert coins. Turn handle. Easy."
   - *3 AM rush* "Kroket is that one. Frikandel is that one. Yes, that's meat. Probably."
   - "Mystery item today is... *checks* ...experimental. Your choice."
@@ -261,7 +261,7 @@
 - **Function**: Frietomat serves as recovery location after various Shamsterdam activities
 - **De Groene Gids Connection**: Munchies bonus applies
 - **Casa Rosé Connection**: Post-show processing location
-- **Proeflokaal Connection**: Absorption function for The Shakes
+- **Bottoms Down Connection**: Absorption function for The Shakes
 - **Club Exit Connection**: Standard 3 AM destination
 
 ### Status Effect Interactions
@@ -277,7 +277,7 @@
 - **De Groene Gids**: Munchies pipeline, food tastes better
 - **Casa Rosé**: Processing location, neutral space
 - **The Tolerance Hostel**: Kitchen discussions of late-night discoveries
-- **Proeflokaal 't Kansen**: Grease absorption, helps with The Shakes
+- **Bottoms Down**: Grease absorption, helps with The Shakes
 
 ### The Frietomat Achievement Track
 - **First Visit**: "Wall Beginner" — discovered the automat system

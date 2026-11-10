@@ -63,7 +63,7 @@
 - **Design**: Steampunk-adjacent, Belle Époque fantasy
 - **Elements**: Waistcoat, top hat, pocket watch, theatrical energy
 - **Effect**: Screams "authentic experience" to tourists
-- **Reality**: Purchased from theatrical supply in Krakow
+- **Reality**: Mail-ordered from a theatrical supply catalogue two cities east
 
 ### Technical Specifications
 - **Color Palette**: Primary: Absinthe Green (#7FFF00), Accent: Antique Gold (#CFB53B), Background: Night Black (#1A1A1A), Fog Gray (#A9A9A9)
@@ -219,7 +219,7 @@ The cart is named "The Bohemian Trap" because:
 *The Pitch:*
 - "Welcome, welcome to The Bohemian Trap! I am Viktor, and tonight, I introduce you to the Green Fairy herself."
 - "Absinthe — the drink of artists, poets, madmen. Van Gogh, Hemingway, Toulouse-Lautrec — they all knew the fairy."
-- "In Prague, we understand the old ways. The ritual. The sugar, the water, the transformation. This is not just drinking — this is EXPERIENCE."
+- "In Debaucheryville, we understand the old ways. The ritual. The sugar, the water, the transformation. This is not just drinking — this is EXPERIENCE."
 - "You want to see what the artists saw? Feel what the poets felt? The fairy can show you... for 25 SOVS."
 
 *The History (Embellished):*

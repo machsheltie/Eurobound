@@ -137,7 +137,7 @@ The staff know. The tourists know. The transaction happens anyway. This is the c
 - Wood is not a comfortable footwear material
 - Their regular shoes exist for reasons
 - The "wearable" section is suspiciously small
-- Nobody in Amsterdam is actually wearing clogs
+- Nobody in Shamsterdam is actually wearing clogs
 - The shop sells more miniatures than full-size (telling)
 
 **The test**: Try walking 10 steps. Just 10 steps.
@@ -299,7 +299,7 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
 - "1972, my parents opened this shop. Tourists wanted clogs. Tourists still want clogs. The want is the same."
 - "My grandmother would be confused. Not that we sell clogs. That people buy them for walls."
 - "Every clog is made correctly. The feet are made incorrectly for clogs. Evolution went the wrong way."
-- "The confession is the purchase. When you buy, you're saying 'I was in Amsterdam.' The clog proves it."
+- "The confession is the purchase. When you buy, you're saying 'I was in Shamsterdam.' The clog proves it."
 - "Miniatures are honest. Keychains admit they're keychains. Full-size clogs pretend to be shoes. Which is more truthful?"
 
 **The Bros' Klompen Konfessional Reactions:**

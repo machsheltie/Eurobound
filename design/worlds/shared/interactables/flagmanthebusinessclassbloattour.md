@@ -11,7 +11,7 @@ First class lounge privileges: bottomless well whiskey + “vague trauma dump”
 
 Notes to self: “Don’t text her too much. Be emotionally ambiguous.”
 
-Day 3–6: Publandia, EU (Formerly Known as Dublin)
+Day 3–6: Publandia, EU (Formerly Known as Sober)
 
 Daily meals: Guinness, Guinness, “oh look, Guinness,” and sausage roll soaked in regret
 
@@ -39,7 +39,7 @@ Thinks this is charming. It is not.
 
 Bloat Level: 🔴 Man-tiddies Achieved
 
-Day 10–12: Absinthe & Avoidance (Vienna Adjacent)
+Day 10–12: Absinthe & Avoidance (Sinfonia Adjacent)
 
 Pivots from craft cocktails to cheap hotel tequila
 

@@ -248,7 +248,7 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 
 **Selling Rumors**:
 - Share information you've learned
-- Payment based on value (10 Sovs-40)
+- Payment based on value (10-40 Sovs)
 - Creates economy of secrets
 
 ### Bravado Interactions

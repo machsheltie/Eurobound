@@ -1,6 +1,6 @@
 # Kapsalon Koning (The Kapsalon King)
 
-*Where a Rotterdam barber's 2003 vision becomes your 3 AM cardiovascular event — fries, döner, cheese, chaos*
+*Where a port-city barber's 2003 vision becomes your 3 AM cardiovascular event — fries, döner, cheese, chaos*
 
 ## Location Identity
 - **Location ID**: shamsterdam_latenight_kapsalon_koning_01
@@ -16,7 +16,7 @@
 - **Time Restrictions**: 4 PM - 6 AM (dinner through desperate hours)
 - **Peak Hours**: Midnight - 4 AM (when kapsalon calls loudest)
 - **Stat Requirements**: None (hunger and questionable decisions welcome)
-- **Item Requirements**: Gold for purchases (8 Sovs-15), cardiovascular optimism
+- **Item Requirements**: Gold for purchases (8-15 Sovs), cardiovascular optimism
 - **Previous Location Requirements**: None (the kapsalon welcomes all)
 - **Special Conditions**: Seating available here (unlike Leeman's), but barely
 
@@ -101,7 +101,7 @@
 The satire is the beautiful absurdity of a dish that exists purely because someone asked "what if ALL the things, together, with cheese?" and an entire country said "yes."
 
 ### The Origin Story (Wim Tells This Constantly)
-"2003. Rotterdam. A barber — KAPSALON means hair salon, you understand? — this barber, he goes to his kebab shop every day. One day he says 'put the meat on the fries. Then put cheese.' The shop owner says '...okay?' The kapsalon is born. This man is a VISIONARY. I am his disciple."
+"2003. The port city. A barber — KAPSALON means hair salon, you understand? — this barber, he goes to his kebab shop every day. One day he says 'put the meat on the fries. Then put cheese.' The shop owner says '...okay?' The kapsalon is born. This man is a VISIONARY. I am his disciple."
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Dutch-Turkish fusion excess, the "more is more" food philosophy

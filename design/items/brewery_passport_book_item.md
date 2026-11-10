@@ -201,7 +201,7 @@ seal/open-book design. Author to pick.
 **Page Theme**: pending author minting — Shamsterdam is out of scope for this decomposition round [source: docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md, Shamsterdam parking lot]
 **Legendary Hangover**: "Canal Courage" (name retained; a CONSUMABLE like the other three cities' hangovers, not a permanent passive — author ruling) [source: design/quests/general_quests/brewerytour.md L92-93]
 
-One Shamsterdam establishment is now named The Wobbly Windmill Brewery (author ruling 2026-11-10; the old placeholder was a real Dutch brewery). "Proeflokaal 't Kansen" still fails the satire bar and is queued for author rename, alongside two entirely new establishments; three of the four Shamsterdam brewery names are not canon yet. [source: design/quests/general_quests/brewerytour.md L19-23]
+All four Shamsterdam establishments are now named (author rulings 2026-11-10, Rounds v21 and v23): The Wobbly Windmill Brewery, Bottoms Down (renamed from the placeholder "Proeflokaal 't Kansen"), The Hoisted Pint and The Mad Monarch's Wit-tea Party. The two new breweries' stamps, openers and beers are PROPOSED — NEEDS AUTHOR RULING in their location docs, so the slot table above stays reserved until those rulings land. [source: design/quests/general_quests/brewerytour.md, Overview]
 
 ---
 

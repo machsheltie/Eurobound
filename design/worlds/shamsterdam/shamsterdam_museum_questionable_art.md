@@ -178,7 +178,7 @@
 
 #### The Guard Encounter
 - **NPC**: Daan (19, art student, zero investment in his job)
-- **Reality**: Doesn't look up from phone, mumbles "three fifty"
+- **Reality**: Doesn't look up from phone, mumbles "four"
 - **Bros' Interpretation**: "Cold-eyed professional neutralized through strategic financial incentives"
 - **Gameplay**: Lord Pilsner pays 20 Sovs, believes he's executed a bribe
 
@@ -215,7 +215,7 @@
 - **Dialogue**:
   - "Hmm? Oh. Gift shop's whatever. Museum's upstairs. I guess."
   - "Those are 4 Sovs. Or 2 Sovs if you buy a keychain. Whatever."
-  - *in Dutch* "Dat is drie vijftig." (That's three fifty.) — Bros interpret as "calling for backup"
+  - *in Dutch* "Dat is vier." (That's four.) — Bros interpret as "calling for backup"
   - "Did you guys pay for those magnets? ...Whatever. They were ugly anyway."
 - **Post-Quest ICQ**: "hey did you guys ever pay for those magnets"
 

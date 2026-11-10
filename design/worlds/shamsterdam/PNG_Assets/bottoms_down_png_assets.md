@@ -1,9 +1,9 @@
-# Proeflokaal 't Kansen - Complete PNG Asset Requirements
+# Bottoms Down - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Proeflokaal 't Kansen is a 400-year-old jenever distillery that has not changed because it has never needed to, and a floor covered in sawdust because it has always needed that. This document specifies every PNG asset for the proeflokaal: the unmarked alley entrance and head-height door, the long low tasting room, the eight metres of oak bar, the glass filled past the brim that you physically cannot lift, the Jenever Taste Test gauntlet, Kees and his twelve-word vocabulary, the back room you have to earn, and The Shakes. Its satirical essence in a sentence: they will pour you a drink you must bow to, and the sawdust was already there before you arrived.
+Bottoms Down is a 400-year-old jenever distillery that has not changed because it has never needed to, and a floor covered in sawdust because it has always needed that. This document specifies every PNG asset for the proeflokaal: the unmarked alley entrance and head-height door, the long low tasting room, the eight metres of oak bar, the glass filled past the brim that you physically cannot lift, the Jenever Taste Test gauntlet, Kees and his twelve-word vocabulary, the back room you have to earn, and The Shakes. Its satirical essence in a sentence: they will pour you a drink you must bow to, and the sawdust was already there before you arrived.
 
-**Location ID:** `shamsterdam_oldtown_proeflokaal_kansen_01`
+**Location ID:** `shamsterdam_oldtown_bottoms_down_01`
 **Theme:** Tourist overconfidence meeting weaponized tradition — 400 years of Dutch drinking culture in a room designed to absorb the consequences
 **Zone:** Old Town, historic distillery district, down a narrow unmarked alley
 **Hours:** 12 PM - 11 PM (civilized hours, uncivilized drinking)
@@ -25,26 +25,26 @@ Proeflokaal 't Kansen is a 400-year-old jenever distillery that has not changed 
 
 ## 📁 File Structure
 ```
-assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
+assets/sprites/locations/shamsterdam/bottoms_down/
 ├── environment/
-│   ├── proeflokaal_main_room.png
-│   ├── proeflokaal_back_room.png
-│   └── proeflokaal_exterior_fixtures.png
+│   ├── bottoms_down_main_room.png
+│   ├── bottoms_down_back_room.png
+│   └── bottoms_down_exterior_fixtures.png
 ├── objects/
-│   └── proeflokaal_glassware_objects.png
+│   └── bottoms_down_glassware_objects.png
 ├── npcs/
 │   ├── npc_kees_pim.png
-│   └── npc_proeflokaal_patrons.png
+│   └── npc_bottoms_down_patrons.png
 ├── effects/
-│   └── proeflokaal_effects.png
+│   └── bottoms_down_effects.png
 └── ui/
-    └── proeflokaal_ui.png
+    └── bottoms_down_ui.png
 ```
 
 ---
 
 ## 🕯️ Sprite Sheet 1: Main Tasting Room Background
-**File:** `proeflokaal_main_room.png`
+**File:** `bottoms_down_main_room.png`
 **Dimensions:** 1920x1080 pixels (standalone full-scene background — not atlased)
 **Color Palette:** #806517, #FFF8DC, #D2B48C, #2B2116
 
@@ -63,7 +63,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ---
 
 ## 🥃 Sprite Sheet 2: The Back Room Background
-**File:** `proeflokaal_back_room.png`
+**File:** `bottoms_down_back_room.png`
 **Dimensions:** 1024x768 pixels (standalone scene background — not atlased)
 **Color Palette:** #2B2116, #806517, #FFBF00
 
@@ -81,7 +81,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ---
 
 ## 🚪 Sprite Sheet 3: Exterior & Fixtures
-**File:** `proeflokaal_exterior_fixtures.png`
+**File:** `bottoms_down_exterior_fixtures.png`
 **Dimensions:** 1024x1024 pixels
 **Color Palette:** #806517, #B5892E, #D2B48C, #FFBF00
 
@@ -111,7 +111,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 |---------|----------|------|-------------|
 | "Traditional Drinking Method" Illustration | (0, 576) | 192x128 | Head back, no hands, glass overfilled — the historical instruction panel |
 | Brass Plaque "Est. 1624" | (192, 576) | 192x64 | "Est. 1624 — Jenever — Proudly Confusing Tourists Since Then" |
-| Faded Gold "Proeflokaal" Sign | (192, 640) | 192x64 | Barely visible above the door; they have not needed signs in four centuries |
+| Faded Gold "Bottoms Down" Sign | (192, 640) | 192x64 | Barely visible above the door; they have not needed signs in four centuries |
 
 ### Floor, Light & Bottles:
 | Element | Position | Size | Description |
@@ -150,7 +150,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ---
 
 ## 🍸 Sprite Sheet 4: Glassware, Gauntlet & Openers
-**File:** `proeflokaal_glassware_objects.png`
+**File:** `bottoms_down_glassware_objects.png`
 **Dimensions:** 512x256 pixels
 **Color Palette:** #FFBF00, #B5892E, #D2B48C
 
@@ -192,8 +192,8 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | The Shakes Icon | (256, 160) | 32x32 | Trembling-hand silhouette with motion hatching |
 | "Jenever Master" Title Ribbon | (288, 160) | 96x32 | Questionable accuracy |
 | "Jenever Survivor" Title Ribbon | (288, 192) | 96x32 | More accurate |
-| Proeflokaal Bottle Opener | (384, 160) | 48x48 | Overfilled tulip glass shape, convex meniscus, brass, "No Hands. No Fear." |
-| Proeflokaal Opener Leather Loop | (432, 160) | 24x24 | Sawdust-coloured loop detail |
+| Bottoms Down Bottle Opener | (384, 160) | 48x48 | Overfilled tulip glass shape, convex meniscus, brass, "No Hands. No Fear." |
+| Bottoms Down Opener Leather Loop | (432, 160) | 24x24 | Sawdust-coloured loop detail |
 | Blarney Trap Bottle Opener (Publandia) | (456, 160) | 48x48 | The shamrock prerequisite — Kees checks for this first |
 | Bottle Opener Keychain Ring | (192, 208) | 32x32 | The ring the stamps hang from |
 | Brewery Stamp — Oude Genever | (224, 208) | 64x48 | Overfilled tulip glass stamp for the keychain |
@@ -280,7 +280,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ---
 
 ## 👥 Sprite Sheet 6: The Patrons
-**File:** `npc_proeflokaal_patrons.png`
+**File:** `npc_bottoms_down_patrons.png`
 **Dimensions:** 1024x256 pixels
 **Sprite Size:** 64x96 per single NPC frame; 128x128 per portrait
 **Color Palette:** Muted Old Town palette, candlelit-cream ambient grade
@@ -326,7 +326,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ---
 
 ## ✨ Sprite Sheet 7: Effects — Candlelight, Sawdust & The Shakes
-**File:** `proeflokaal_effects.png`
+**File:** `bottoms_down_effects.png`
 **Dimensions:** 512x256 pixels
 **Color Palette:** #FFF8DC, #FFBF00, #D2B48C, #2B2116
 
@@ -384,7 +384,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ---
 
 ## 🧭 Sprite Sheet 8: UI Elements
-**File:** `proeflokaal_ui.png`
+**File:** `bottoms_down_ui.png`
 **Dimensions:** 512x512 pixels
 **Color Palette:** #806517 UI chrome, #FFBF00 highlights, #2B2116 panel fill
 
@@ -403,7 +403,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | Kopstootje Timing UI | (256, 128) | 128x96 | Two-drink sequence bar: shot window then chaser window |
 | The Shakes Status Bar | (384, 128) | 128x32 | 3-turn duration with stack indicator |
 | Accuracy Penalty Readout | (384, 160) | 128x32 | Explicit "-15% Accuracy" text, not a colour bar |
-| Opener Check Panel | (384, 192) | 128x128 | Kees's gate: Blarney Trap present? Proeflokaal opener present? |
+| Opener Check Panel | (384, 192) | 128x128 | Kees's gate: Blarney Trap present? Bottoms Down opener present? |
 | Menu / Price Board | (256, 224) | 128x96 | Eight-item list with Kees's one-line notes |
 | First Drink Choice Panel | (256, 320) | 256x96 | "I'll lift it" / "Show me the traditional way" / "I know what I'm doing" |
 
@@ -414,7 +414,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | Canal Courage Passive Chip | (128, 320) | 128x96 | Small Shamsterdam flag icon, appears when the passive is active |
 | Brewery Stamp — Oude Genever | (0, 416) | 64x64 | Overfilled tulip glass stamp, applied to the keychain |
 | Blarney Trap Opener Icon | (64, 416) | 48x48 | Publandia prerequisite, shamrock |
-| Proeflokaal Opener Icon | (112, 416) | 48x48 | Tulip glass with visible meniscus, brass, leather loop |
+| Bottoms Down Opener Icon | (112, 416) | 48x48 | Tulip glass with visible meniscus, brass, leather loop |
 | Bottle Opener Keychain Panel | (160, 416) | 96x96 | The keychain with all earned stamps hanging |
 | Title Plates (Master / Survivor) | (256, 416) | 128x64 | Two 128x32 plates: "Jenever Master" / "Jenever Survivor" |
 
@@ -558,16 +558,16 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 
 ### Texture Compression:
 - **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Traditional Method Tutorial, price board, brass plaque, and all portraits kept uncompressed (readable text and faces)
-- **Fallback:** PNG high quality for `proeflokaal_main_room.png` and `proeflokaal_back_room.png` (candlelight gradient banding is visible under lossy compression)
+- **Fallback:** PNG high quality for `bottoms_down_main_room.png` and `bottoms_down_back_room.png` (candlelight gradient banding is visible under lossy compression)
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
-| proeflokaal_environment | proeflokaal_exterior_fixtures | 1024x1024 |
-| proeflokaal_characters | npc_kees_pim, npc_proeflokaal_patrons | 1024x1024 |
-| proeflokaal_fx_ui | proeflokaal_glassware_objects, proeflokaal_effects, proeflokaal_ui | 1024x1024 |
+| bottoms_down_environment | bottoms_down_exterior_fixtures | 1024x1024 |
+| bottoms_down_characters | npc_kees_pim, npc_bottoms_down_patrons | 1024x1024 |
+| bottoms_down_fx_ui | bottoms_down_glassware_objects, bottoms_down_effects, bottoms_down_ui | 1024x1024 |
 
-*(proeflokaal_main_room.png loads standalone; proeflokaal_back_room.png loads on demand after the unlock flag. Max atlas size 2048x2048 for broad GPU compatibility.)*
+*(bottoms_down_main_room.png loads standalone; bottoms_down_back_room.png loads on demand after the unlock flag. Max atlas size 2048x2048 for broad GPU compatibility.)*
 
 ### LOD Levels:
 | Level | Description |
@@ -595,7 +595,7 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: Sprite2D (both room backgrounds, fixtures), AnimatedSprite2D (Kees, Pim, candles, pour, Shakes overlays), CPUParticles2D (dust motes, sawdust kick-up, candle smoke — not GPU), CanvasLayer (gauntlet UI, tutorial, opener check), Area2D (bar, gauntlet rail, back room door, barrel tables, the one chair)
-- Special systems: two-key inventory gate (Blarney Trap opener required for tour access, Proeflokaal opener required for stamp and Oude Genever purchase), four-round gauntlet state machine with accumulating Shakes stacks, Traditional Method learned-flag, back room unlock flag with on-demand scene load, spill decal pool, Couchsurf offer trigger keyed to the rare Kees nod, Brewery Tour completion handshake with The Wobbly Windmill Brewery
+- Special systems: two-key inventory gate (Blarney Trap opener required for tour access, Bottoms Down opener required for stamp and Oude Genever purchase), four-round gauntlet state machine with accumulating Shakes stacks, Traditional Method learned-flag, back room unlock flag with on-demand scene load, spill decal pool, Couchsurf offer trigger keyed to the rare Kees nod, Brewery Tour completion handshake with The Wobbly Windmill Brewery
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -681,14 +681,14 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 
 | # | Filename | Dimensions |
 |---|----------|------------|
-| 1 | proeflokaal_main_room.png | 1920x1080 |
-| 2 | proeflokaal_back_room.png | 1024x768 |
-| 3 | proeflokaal_exterior_fixtures.png | 1024x1024 |
-| 4 | proeflokaal_glassware_objects.png | 512x256 |
+| 1 | bottoms_down_main_room.png | 1920x1080 |
+| 2 | bottoms_down_back_room.png | 1024x768 |
+| 3 | bottoms_down_exterior_fixtures.png | 1024x1024 |
+| 4 | bottoms_down_glassware_objects.png | 512x256 |
 | 5 | npc_kees_pim.png | 512x512 |
-| 6 | npc_proeflokaal_patrons.png | 1024x256 |
-| 7 | proeflokaal_effects.png | 512x256 |
-| 8 | proeflokaal_ui.png | 512x512 |
+| 6 | npc_bottoms_down_patrons.png | 1024x256 |
+| 7 | bottoms_down_effects.png | 512x256 |
+| 8 | bottoms_down_ui.png | 512x512 |
 
 **Total Estimated Memory:** ~19.8 MB in-memory (uncompressed RGBA worst case) with both rooms resident; ~16.7 MB in normal play since the back room loads on demand. Within the 36 MB location budget.
 
@@ -697,14 +697,14 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files:
-- [ ] `proeflokaal_main_room.png` (1920x1080)
-- [ ] `proeflokaal_back_room.png` (1024x768)
-- [ ] `proeflokaal_exterior_fixtures.png` (1024x1024)
-- [ ] `proeflokaal_glassware_objects.png` (512x256)
+- [ ] `bottoms_down_main_room.png` (1920x1080)
+- [ ] `bottoms_down_back_room.png` (1024x768)
+- [ ] `bottoms_down_exterior_fixtures.png` (1024x1024)
+- [ ] `bottoms_down_glassware_objects.png` (512x256)
 - [ ] `npc_kees_pim.png` (512x512)
-- [ ] `npc_proeflokaal_patrons.png` (1024x256)
-- [ ] `proeflokaal_effects.png` (512x256)
-- [ ] `proeflokaal_ui.png` (512x512)
+- [ ] `npc_bottoms_down_patrons.png` (1024x256)
+- [ ] `bottoms_down_effects.png` (512x256)
+- [ ] `bottoms_down_ui.png` (512x512)
 
 ### Quality Requirements:
 | Requirement | Specification |
@@ -758,4 +758,4 @@ assets/sprites/locations/shamsterdam/proeflokaal_t_kansen/
 | No Crypto Elements | ✅ | Pure 400-year tradition; the only ledger is the sawdust |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |
 
-**Once these assets ship, Proeflokaal 't Kansen becomes the game's quietest humiliation: a low room, a glass you cannot lift, a floor that was already prepared for you, and a man who will say exactly one word if you get it right — and it will feel like a standing ovation.**
+**Once these assets ship, Bottoms Down becomes the game's quietest humiliation: a low room, a glass you cannot lift, a floor that was already prepared for you, and a man who will say exactly one word if you get it right — and it will feel like a standing ovation.**

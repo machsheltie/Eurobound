@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 AM - 8 PM (tourist cycling hours, carnage window)
 - **Stat Requirements**: None (the bike path accepts all sacrifices)
-- **Item Requirements**: Gold for purchases (5 Sovs-25), belief that accessories help
+- **Item Requirements**: Gold for purchases (5-25 Sovs), belief that accessories help
 - **Previous Location Requirements**: None (the bell finds those who seek it)
 - **Special Conditions**: Adjacent to bike rental shops, captures tourists in transition
 
@@ -48,22 +48,22 @@
 - **Maps Section**: Bike route maps marked with danger zones ("tourist collision hotspots")
 
 ### The Bell Wall (The Arsenal)
-**Tier 1 — The Pacifists (5 Sovs-8)**
+**Tier 1 — The Pacifists (5-8 Sovs)**
 - Classic "ding" bells, polite, ignored by everyone
 - Best for: Cycling in parks, giving up, background noise
 - Reality check: "These are for people who don't want to survive"
 
-**Tier 2 — The Compromisers (10 Sovs-15)**
+**Tier 2 — The Compromisers (10-15 Sovs)**
 - Louder "DING-DING" bells, noticeable, sometimes effective
 - Best for: Mixed paths, moderate traffic, hopeful beginners
 - Reality check: "Some people will hear. Some people will care. Not most."
 
-**Tier 3 — The Asserters (15 Sovs-20)**
+**Tier 3 — The Asserters (15-20 Sovs)**
 - Dual-tone bells, attention-grabbing, tourists jump
 - Best for: Busy routes, canal bridges, genuine communication
 - Reality check: "Now we're talking. Shamsterdammers might nod."
 
-**Tier 4 — The Dominators (20 Sovs-25)**
+**Tier 4 — The Dominators (20-25 Sovs)**
 - Air horns, electronic sirens, psychological warfare
 - Best for: Apocalypse scenarios, traumatized tourists, establishing dominance
 - Reality check: "You'll be heard. You might also be targeted for retaliation."

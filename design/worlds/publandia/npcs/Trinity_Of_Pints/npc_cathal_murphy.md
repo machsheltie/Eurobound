@@ -84,7 +84,7 @@ Twelve years of adjunct contracts taught Romantic poetry to rooms that could not
 ### Clothing
 - **Full academic regalia, worn every trading hour without exception**: Black robe, velvet facings in Academic Green, hood in Scholarly Gold. It is party-store quality and he has had it professionally re-lined twice, which is the single most revealing fact about him.
 - **Mortarboard**: Never removed indoors. Removed for exactly one beat during each graduation, held over the heart.
-- **Medallion / chain of office**: Bought at a car-boot sale in Cork. It is a swimming club medal from 1974. He has never been challenged on it.
+- **Medallion / chain of office**: Bought at a car-boot sale. It is a swimming club medal from 1974. He has never been challenged on it.
 - **Accessories**: A clipboard he actually writes on; a fountain pen; a small brass bell for calling courses to order; reading glasses used only for reading grades aloud.
 - **Footwear**: Good shoes. Polished daily. Visible under the robe when he walks and the only part of the outfit that is genuinely expensive.
 
@@ -341,7 +341,7 @@ model is dead) and not as the stamp beat itself:*
 | Tuition (Cover Charge) | 10 Sovs | A 10 Sovs cover for a themed pub, plus a laminated card and a glass — roughly fair | "Enrolled" status, Student ID, one branded pint glass ("textbook"), access to all courses for the evening, graduation eligibility |
 | Alumni Rate | 5 Sovs | Fair | Reduced tuition on presentation of a previous diploma; Advanced Course access; reserved Great Hall seating |
 | Academic Amber (pint) | 9 Sovs | Above market for a 4.8% Irish red; he says so himself | +25 HP, +20 SP, "Scholar's Focus" (+3 INT, 30 min), 10% chance of "Pretentious" |
-| Diploma (printed) | Included | Costs him about 30 cent | Physical certificate, wall-mountable, LinkedIn-uploadable |
+| Diploma (printed) | Included | Costs him less than a Sov | Physical certificate, wall-mountable, LinkedIn-uploadable |
 | Academic regalia hire (selfie spot) | Free | Free | Robe, mortarboard and diploma props for the Quad photo backdrop |
 
 ⚠ AUTHOR-REVIEW: **this ten-course catalog predates the 2026-08-05 Trinity redesign.** The
@@ -386,7 +386,7 @@ the venue file's Status Effects list).
 
 ### Hidden Details / Easter Eggs
 - **Examine any faculty robe** and the party-store tag is still attached. Examine the Dean's robe and it is not — his has been re-lined twice.
-- **Examine the medallion**: a swimming club medal, Cork, 1974. No dialogue fires. He does not react to being looked at.
+- **Examine the medallion**: a swimming club medal, 1974. No dialogue fires. He does not react to being looked at.
 - **Examine the "distinguished alumni" portraits**: the same stock model appears four times in four different wigs.
 - **Examine the Library bookshelves**: hollow facades with flask compartments. One of them contains an actual book — a battered copy of Yeats with margin notes in fountain pen. It is not commented on, not collectible, and not mentioned by any NPC.
 - **Take the same Freshman course five times** and the Repeat Student NPC nods at you in solidarity: *"I keep failing the thesis. The Dean says I have 'commitment issues.' He's not wrong."*
@@ -523,7 +523,7 @@ and the Valedictorian Medal was GPA-gated and is dead along with grading.
 3. Bradley being told he may audit SKEPTIC 101, mid-blink
 4. The graduation walk with the balance check failing in real time
 5. The party-store tag examine detail, at maximum zoom, on a faculty robe
-6. The medallion: a 1974 Cork swimming medal, worn as a chain of office
+6. The medallion: a 1974 swimming club medal, worn as a chain of office
 7. Bradley at the ceremony: "I'm... proud? I didn't expect to feel genuine emotion at a fake graduation."
 
 ### Meme Potential

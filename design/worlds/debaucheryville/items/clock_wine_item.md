@@ -122,7 +122,7 @@ A mystical European wine vintage infused with clock energy that makes the drinke
 - **Stage**: Scam Gauntlet (Stage 2)
 - **Trigger**: Post-clock vulnerability active
 - **Minimum Purchase**: 1 bottle (bros typically buy 3-6)
-- **Total Spending**: 60 Sovs-300
+- **Total Spending**: 60-300 Sovs
 
 ### State Flags
 ```

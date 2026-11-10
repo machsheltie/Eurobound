@@ -81,7 +81,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - **You Are Here Dot**: Red dot (wrong location)
 - **Kiosk Window**: Marloes's service window (2 tiles)
 - **Security Booth**: Henk's station (2 tiles)
-- **Tip Jar**: Willem's hat with 2.47 SOVS
+- **Tip Jar**: Willem's hat with 2 SOVS
 
 ### Graffiti (Row 6) - Flashlight-revealed
 - **"STATION →"**: With scratched-over reversed arrow
@@ -157,7 +157,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - **Instrument**: Ancient accordion, well-worn
 - **Clothing**: Indeterminate decade (could be 1970s, could be 1990s)
 - **Props**:
-  - Hat on ground with exactly 2.47 SOVS
+  - Hat on ground with exactly 2 SOVS
   - Maybe a small stool
 - **Expression**: Serene, timeless, possibly not alive
 - **Aura**: Slight transparency effect available for ghost moments

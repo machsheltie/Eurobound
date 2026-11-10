@@ -45,7 +45,7 @@ He is not warning anyone. He is not a victim of anything. He is not the punchlin
 
 ### The Bare Skewer
 
-One SOV. Nothing on it. It exists because people bring their own food, or bring nothing, and either way they need a skewer. It costs him about four cents. He sells eighty of them on a good day. He has never once explained why the empty item is on the board, and no bro has ever asked, because the bare skewer is the funniest thing on the menu and it is also the most profitable, and both of those are true at the same time, and he is the only person on the plaza who knows it.
+One SOV. Nothing on it. It exists because people bring their own food, or bring nothing, and either way they need a skewer. It costs him a fraction of a Sov. He sells eighty of them on a good day. He has never once explained why the empty item is on the board, and no bro has ever asked, because the bare skewer is the funniest thing on the menu and it is also the most profitable, and both of those are true at the same time, and he is the only person on the plaza who knows it.
 
 ---
 

@@ -302,7 +302,7 @@ The Bassline Opera House embodies **faded grandeur meeting modern decadence**—
 5. **Otto sipping coffee**—completely unfazed during chaos
 
 ### Quotable Visual Moments
-- Director: "I studied at Salzburg..." (breakdown pose)
+- Director: "I studied at the Conservatory..." (breakdown pose)
 - Otto: "*sips coffee*" (deadpan during destruction)
 - Prima Donna: "I sang at La Scala!" (outrage pose)
 - Papageno: "Follow the bird-man!" (guiding pose)

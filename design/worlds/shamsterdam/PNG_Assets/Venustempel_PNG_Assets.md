@@ -8,7 +8,7 @@ Venustempel is the world's first sex museum, groundbreaking in 1985 and dated si
 **Theme:** Total transparency changes nothing. The satire targets the bros treating a working city as a theme park, and the tourism machine that sells them exactly what they want, competently, while finding them tedious.
 **Register (author ruling, 2026-08-01 — binding):** **Not safe, not boring, not corporate. Subversive.** This is an MA-rated adult comedy set piece. The bros came to Europe for exactly this, they get it in full, and the consequences are ridiculous and physical. Nothing here is an anticlimax and nothing here is administrative. Permits, hygiene cards and municipal paperwork are **garnish on genuine mayhem** and must never be composed as the main event. See `Design/Character Profiles/bros_core_principle.md`.
 **Currency (author ruling, 2026-08-01):** **The entire game runs on Sovs.** Every price on every asset in this document is in Sovs. There are no euro symbols anywhere and no exchange mechanic exists.
-**Positioning (author ruling):** Venustempel is the **curated institution** end of Shamsterdam's chocolate-anatomy industry — artisan, historical, provenanced, gallery-grade, expensive, queued. The Shamsterdam Museum of Questionable Art is the **cheap gift shop** end — mass-produced novelty, sprinkles, fondant bow ties, 3.50 Sovs eggs, no queue. Both exist; they are opposite ends of the same trade and every asset in this document must hold that line.
+**Positioning (author ruling):** Venustempel is the **curated institution** end of Shamsterdam's chocolate-anatomy industry — artisan, historical, provenanced, gallery-grade, expensive, queued. The Shamsterdam Museum of Questionable Art is the **cheap gift shop** end — mass-produced novelty, sprinkles, fondant bow ties, 4 Sovs eggs, no queue. Both exist; they are opposite ends of the same trade and every asset in this document must hold that line.
 **Zone:** Museum Mile (the Cultural Alibi District), plaza frontage, between Het Rijke Museum and a bureau de change, directly opposite the empty "I SHAMSTERDAM" plinth
 **Hours:** 10 AM - 11 PM interior (school groups 10 AM-1 PM, peak 1-5 PM, bachelor parties 5-8 PM, quiet 8-11 PM). The fountain plaza is public space and never closes; the fountain is drained and hosed 11 PM-6 AM.
 **Primary Function:** Fountain / germ-mechanic system — **Sharing the Love** five-tier stacking status, the Gunter's Deep Dips cart economy, the quarterly health-inspection world state with a downgrading score card, the Cultural Alibi flag, plus the retained Giggling Figure encounter, mutoscope coin economy, eight photo-op stations, and the John Lennon knowledge unlock
@@ -100,7 +100,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - The cascade animation loop is authored against the Flowing plate only; the other three states carry their own reduced or broken loops sourced from the same frame set
 - Flowing is the one animation in the location that is **never** degraded on any LOD or reduced-motion setting. It is the landmark. If it is not moving, the location does not exist.
 - Wet specular is the single most important surface property in this document. Warm, mobile, slightly uneven. Chocolate that reads as cold or matte kills the asset.
-- The bronze-effect stainless must read as *food-service equipment scaled up*, not as a bronze monument — visible seams, sanitary welds, a service hatch, and a manufacturer's plate at ankle height reading "ROTTERDAM" and a serial number
+- The bronze-effect stainless must read as *food-service equipment scaled up*, not as a bronze monument — visible seams, sanitary welds, a service hatch, and a manufacturer's plate at ankle height reading a firm's name and a serial number
 - The Clogged and Seized states are world-state art driven by cumulative player dipping, not random; both revert on the next service cycle
 - All four states must silhouette identically at 64px so the landmark reads at map scale regardless of condition
 
@@ -163,7 +163,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Fountain Service Hatch (Open) | (640, 0) | 128x128 | Plinth access panel, pump housing visible, top-up drum coupling |
 | Top-Up Drum & Trolley | (768, 0) | 128x128 | 25kg couverture drum on a service trolley |
 | Collection Bowl (Tier Detail) | (896, 0) | 128x128 | Single bowl close detail, chocolate depth, a lost marshmallow at the rim |
-| Manufacturer's Plate | (1024, 0) | 96x64 | Ankle height. "ROTTERDAM" and a serial number. Nobody has ever read it. |
+| Manufacturer's Plate | (1024, 0) | 96x64 | Ankle height. A firm's name and a serial number. Nobody has ever read it. |
 | **HYGIËNESCORE Card — A** | (1120, 0) | 128x160 | Municipal green, laminated, bolted to the plinth. Visit 1 state. |
 | **HYGIËNESCORE Card — B** | (1248, 0) | 128x160 | Visit 2 state. Identical card, different letter. |
 | **HYGIËNESCORE Card — C** | (1376, 0) | 128x160 | Visit 3 state. |
@@ -239,7 +239,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Tempering Room Glass & Interior | (896, 448) | 256x256 | Marble slabs, seeding, thermometer, two chocolatiers in absolute concentration, condensation gradient at the base of the glass, a handwritten "17°C" card taped inside |
 | Hollow vs. Solid Cutaway | (1152, 448) | 192x160 | Structural failure modes, dated and updated weekly in summer with actual casualties |
 | **The Failures Case** | (1344, 448) | 192x160 | Bloomed, seized, split and collapsed pieces with honest labels. The curator's favourite case. Nobody stops at it. Its placard is genuinely sad and it is worth reading. |
-| "De Fontein: Een Technisch Verhaal" | (1536, 448) | 192x160 | Original Rotterdam engineering drawings and a framed letter from the firm politely declining to build a second one |
+| "De Fontein: Een Technisch Verhaal" | (1536, 448) | 192x160 | Original port-city engineering drawings and a framed letter from the firm politely declining to build a second one |
 | Gallery Vitrine (Tileable) | (1728, 448) | 128x160 | Seamless cold-lit case run |
 | Three-Language Placard (Tileable) | (1856, 448) | 128x96 | NL / EN / DE, gallery typography, played completely straight |
 | Humidity Readout | (1856, 544) | 96x64 | Live display on De Oervorm's case |
@@ -281,7 +281,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Wrapping Counter | (1952, 704) | 96x160 | Proper counter, tape dispenser, ribbon spools, plain discreet stock underneath |
 | Chocolate Line Display | (1952, 864) | 96x160 | Solid and hollow, white/milk/dark, "De Collectie" boxed sets |
 | "Handreiniger" Bottle | (1888, 864) | 64x96 | 4 Sovs. Moulded in the shape of the fountain. Faced forward on the counter. Sells poorly. |
-| Fountain Keyring & Magnet | (1824, 864) | 64x96 | 5 Sovs and 3.50 Sovs. These sell fine. |
+| Fountain Keyring & Magnet | (1824, 864) | 64x96 | 5 Sovs and 4 Sovs. These sell fine. |
 | Bench | (1728, 864) | 96x96 | Carried over from Roodelicht Row. Same bench. Visibly well-used. |
 | Ticket Desk + Cross-Stitch | (1632, 864) | 96x96 | 9 Sovs, cash or card, coins for the machines, Anke's project |
 | 1985 Opening Photograph (Framed) | (1536, 864) | 96x96 | On the lobby wall |
@@ -584,7 +584,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | **The Attribution Table** | (704, 0) | 320x96 | Eight ranked blame entries: döner, tap water, "European milk", pancakes, Bradley's protein powder, jet lag, "something in the air here", each other. The fountain is not on the list and cannot be added to it. |
 | Shamsterdam Stomach Banner | (0, 96) | 256x64 | Tier 5. Max HP −40% for the in-game day, Bravado gains halved. |
 | Facilities Urgency Marker | (256, 96) | 128x64 | Tier 4. Flashing on Frietomat and Voetgangerstunnel only. |
-| Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 Sov, −1) / Handreiniger (4 Sovs, −2) / hostel rest (−2) / Frietomat croquette (2.20 Sovs, −1) |
+| Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 Sov, −1) / Handreiniger (4 Sovs, −2) / hostel rest (−2) / Frietomat croquette (2 Sovs, −1) |
 | Stack Decay Indicator | (640, 96) | 128x64 | −1 per in-game day, shown as a plain countdown |
 | Sharing the Love Status Icon | (768, 96) | 64x64 | Party-wide HUD pip, shape-coded not colour-coded |
 | Shared-Stick Transfer Prompt | (832, 96) | 192x64 | "+2 to recipient." Bradley's entire arc, delivered as a neutral UI string. |
@@ -902,7 +902,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Awkward Truffle | No shared sprites; Sophie's tempering critique is dialogue only | Direct commercial rival. Sophie is the only NPC who criticises the fountain, and does it on tempering grounds, never hygiene. Same-day purchase from both unlocks a comparison dialogue. |
-| **Shamsterdam Museum of Questionable Art** | **No shared sprites — the rivalry is tonal and dialogue-only.** Unlicensed fountain merch on their shelves is authored as a distinct low-quality knock-off prop, never a reuse of Venustempel art. | **The two locations are opposite ends of the same industry and must read that way to a player who visits both.** Questionable Art is the cheap gift shop: mass-produced novelty, sprinkles, fondant bow ties, 3.50 Sovs collector's eggs, a bored teenager on the till, no queue. Venustempel is the curated institution: artisan pieces with provenance, gallery-grade plinths and lighting, three-language placards, climate control, trained staff, a restrained and expensive shop, and a queue that runs down the Mile. **Every visual axis must separate them** — price point, signage quality, plinth and case construction, lighting discipline, staff bearing, crowd density. Venustempel's disdain is one-directional and is expressed in a single dry line, never a rant. Do not edit the Questionable Art sheets; their chocolate material is load-bearing for the Fabergé Egg Hunt. |
+| **Shamsterdam Museum of Questionable Art** | **No shared sprites — the rivalry is tonal and dialogue-only.** Unlicensed fountain merch on their shelves is authored as a distinct low-quality knock-off prop, never a reuse of Venustempel art. | **The two locations are opposite ends of the same industry and must read that way to a player who visits both.** Questionable Art is the cheap gift shop: mass-produced novelty, sprinkles, fondant bow ties, 4 Sovs collector's eggs, a bored teenager on the till, no queue. Venustempel is the curated institution: artisan pieces with provenance, gallery-grade plinths and lighting, three-language placards, climate control, trained staff, a restrained and expensive shop, and a queue that runs down the Mile. **Every visual axis must separate them** — price point, signage quality, plinth and case construction, lighting discipline, staff bearing, crowd density. Venustempel's disdain is one-directional and is expressed in a single dry line, never a rant. Do not edit the Questionable Art sheets; their chocolate material is load-bearing for the Fabergé Egg Hunt. |
 | Condomerie Het Gulden Vlies | Shared hygiene-product UI language; no shared sprites | Adjacent trade, different district since the 2011 move. Femke and Lotte have professional awareness and no relationship. |
 | The Hemp Museum | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. Venustempel grants the flag; the Hemp Museum is the second stamp. |
 | The Tolerance Hostel | Album privacy flag; Sharing the Love decay on rest; Tier 5 bathroom-queue event | Interior photos cannot be shown to Ingrid; fountain exteriors can. A full night removes 2 stacks. Tier 5 fires the dorm bathroom queue. |
@@ -921,7 +921,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Primary Theme:** "A genuinely good museum with a genuinely absurd collection, fronted by a landmark that four hundred strangers a day put their hands in, run by people who have disclosed all of it and been ignored"
 - **Color Mood:** Couverture brown and tempered gloss under civic stone and municipal green outside; cold gallery grey-white on the ground floor; Venus red and velvet purple under salvaged pink neon upstairs. The plaza is warm, wet and public; the Cacaogalerij is cold, dry and serious; the Mechanische Vleugel is red, cramped and forty years old.
 - **Lighting:** Open daylight and wet specular on the plaza; correct gallery spots at 17°C below; red and pink wash with deliberately dim corners above; constant tourist flash on the second floor; the HYGIËNESCORE card lit from below at all hours because it is a municipal fitting
-- **Texture:** Food-grade stainless with sanitary welds and a Rotterdam manufacturer's plate, warm couverture with real weight, gallery glass and nitrogen seals, municipal lamination, green-and-white cart paint kept spotless, brass mutoscope bodies worn smooth, red velvet, Victorian paper, 1985 moulded plastic, marble lobby, chocolate-spattered civic paving
+- **Texture:** Food-grade stainless with sanitary welds and a port-city manufacturer's plate, warm couverture with real weight, gallery glass and nitrogen seals, municipal lamination, green-and-white cart paint kept spotless, brass mutoscope bodies worn smooth, red velvet, Victorian paper, 1985 moulded plastic, marble lobby, chocolate-spattered civic paving
 
 ### Environmental Storytelling:
 - The fountain is free and the sticks are not, and the composition of the plaza — cart queue feeding fountain queue feeding ticket queue — says so without a word of dialogue

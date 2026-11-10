@@ -483,7 +483,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Proeflokaal 't Kansen | Shared stamp/keychain UI style | Brewery tour achievement pairing |
+| Bottoms Down | Shared stamp/keychain UI style | Brewery tour achievement pairing |
 | The Tolerance Hostel | Windmill Wit bottle (conversation prop) | "The windmill" guest discussions |
 | De Groene Gids | None shared; dialogue reference only | Staff comment on "trying the local breweries" |
 | Train Station (central Shamsterdam) | Train station exterior, countryside strip | 8 Sovs round-trip transition scene |

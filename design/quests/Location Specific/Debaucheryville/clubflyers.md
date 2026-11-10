@@ -42,7 +42,7 @@ Improvement Layer: Flyers you post appear physically around the city. Later, NPC
 - **Pilsner** adds his Hotmail address: "brewmaster69@hotmail.com"
 
 **NPC Reactions:**
-- **Young Prague Local:** *"Is this performance art? Are you mocking the early internet?"*
+- **Young Debaucheryville Local:** *"Is this performance art? Are you mocking the early internet?"*
 - **Club DJ:** *"Dude, did you make this on Microsoft Publisher? My mom used this font in 2002."*
 - **Art Student:** *"This is brilliant commentary on Y2K aesthetic nostalgia... wait, you're serious?"*
 
@@ -104,7 +104,7 @@ Improvement Layer: Flyers you post appear physically around the city. Later, NPC
 ### Honest Path Cringe:
 - Their flyers get posted next to modern minimalist design, looking like ancient artifacts
 - Local hipsters ironically collect their flyers as "authentic Y2K memorabilia"
-- **Prague art gallery** wants to display them as "Accidental Americana Installation"
+- **Debaucheryville art gallery** wants to display them as "Accidental Americana Installation"
 
 ### Slander Path Cringe:
 - Their "tagging" gets covered by actual street artists who add "CIRCA 2001" labels

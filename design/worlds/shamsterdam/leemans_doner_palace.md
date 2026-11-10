@@ -16,7 +16,7 @@
 - **Time Restrictions**: 11 AM - 5 AM (extended hours for the lost and hungry)
 - **Peak Hours**: 1 AM - 4 AM (when the real customers arrive)
 - **Stat Requirements**: None (hunger is the only requirement)
-- **Item Requirements**: Gold for purchases (3 Sovs-8), willingness to be judged
+- **Item Requirements**: Gold for purchases (3-8 Sovs), willingness to be judged
 - **Previous Location Requirements**: None (döner finds all who need it)
 - **Special Conditions**: Standing counter only — no seats, no weakness
 

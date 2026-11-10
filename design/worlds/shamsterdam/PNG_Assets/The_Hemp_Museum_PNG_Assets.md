@@ -177,11 +177,11 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Audio Guide Device | (0, 0) | 32x48 | 3 Sovs, genuinely informative, ~5% selection rate |
 | Smell Jar (Individual) | (32, 0) | 32x48 | Terpene challenge unit |
 | Hemp Tea Cup | (64, 0) | 32x48 | "Complimentary." Earthy. Disappointing. |
-| CBD Oil Bottle (Gift Shop) | (96, 0) | 32x48 | 30 Sovs-80, "Wellness product." |
+| CBD Oil Bottle (Gift Shop) | (96, 0) | 32x48 | 30-80 Sovs, "Wellness product." |
 | Museum Ticket (10 Sovs) | (128, 0) | 64x48 | The cultural alibi, purchased |
 | Combo Ticket (15 Sovs) | (192, 0) | 64x48 | Neighbouring attraction, separate gift shops |
 | Rolling Papers (Branded) | (256, 0) | 64x48 | 5 Sovs, "Museum quality." |
-| "Educational" Grinder | (320, 0) | 64x48 | 15 Sovs-45, "For herbs. Any herbs." |
+| "Educational" Grinder | (320, 0) | 64x48 | 15-45 Sovs, "For herbs. Any herbs." |
 | Hemp Tote Bag (Museum) | (384, 0) | 64x48 | 18 Sovs, cosmetic inventory expansion |
 | Gift Shop Bag (Tourist Marker) | (448, 0) | 64x48 | The consequence; budtenders recognise it |
 
@@ -193,7 +193,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Hemp Soap + Box | (224, 48) | 64x48 | 8 Sovs, exists purely for plausible deniability |
 | "I Got High on Knowledge" Shirt | (288, 48) | 64x48 | 28 Sovs, +Embarrassed when worn, "Popular choice." |
 | "Hemp History" Book | (352, 48) | 64x48 | 25 Sovs, +Intelligence display, will not be read |
-| Seed Packet ("Souvenir only") | (416, 48) | 96x48 | 20 Sovs-50, very important, very fine print |
+| Seed Packet ("Souvenir only") | (416, 48) | 96x48 | 20-50 Sovs, very important, very fine print |
 
 ### Readable Props:
 | Element | Position | Size | Description |

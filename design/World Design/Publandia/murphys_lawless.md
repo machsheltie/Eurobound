@@ -181,7 +181,7 @@ Seamus Murphy has run this shop for 23 years. He's seen the neighborhood gentrif
 | Item | Price | HP Effect | Side Effect | Risk |
 |------|-------|-----------|-------------|------|
 | Sealed Crisps | 3 SOVS | +10 HP | None | 0% |
-| Open Section Crisps | 1.50 SOVS | +8 HP | "Stale" (reduced effect) | 20% |
+| Open Section Crisps | 2 SOVS | +8 HP | "Stale" (reduced effect) | 20% |
 | Mystery Meat Roll | 4 SOVS | +25 HP | "Questionable" status | 35% |
 | Day-Old Sandwich | 2 SOVS | +15 HP | "Regret" status | 40% |
 | Murphy's Mixed Nuts | 2 SOVS | +8 HP | One nut is always weird | 15% |

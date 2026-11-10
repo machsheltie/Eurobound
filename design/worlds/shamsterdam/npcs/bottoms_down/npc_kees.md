@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_kees_01`
 - **Display Name**: Kees
-- **Internal Name**: Kees — third-generation bartender, Proeflokaal 't Kansen (est. 1624), Old Town distillery district
+- **Internal Name**: Kees — third-generation bartender, Bottoms Down (est. 1624), Old Town distillery district
 - **Role**: Gatekeeper / Cross-City Quest Gate / Vendor (bottle opener + Oude Genever) / Gauntlet Administrator / Stamp Giver
 - **Associated Quest**: "Shamsterdam Brewery Tour" (2 of 2 — Oude Genever stamp); gates the "Canal Courage" passive completion; administers the Jenever Taste Test gauntlet
-- **Primary Location**: Proeflokaal 't Kansen — behind the eight-metre oak bar, Shamsterdam Old Town
+- **Primary Location**: Bottoms Down — behind the eight-metre oak bar, Shamsterdam Old Town
 - **Secondary Appearances**: None. Kees has been behind this bar since he inherited it and there is no reason to move him.
 
 ---
@@ -100,7 +100,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 
 ### The Opener Check (Cross-City Gate — Runs FIRST, Before Anything Else)
 
-**With the Blarney Trap opener, no Proeflokaal opener**:
+**With the Blarney Trap opener, no Bottoms Down opener**:
 > *(He nods.)*
 > "Seamus."
 > *(He points to the gauntlet setup. Five glasses, already there.)*
@@ -184,7 +184,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 
 ### Sales
 
-**Proeflokaal 't Kansen Bottle Opener (20 Sovs)**:
+**Bottoms Down Bottle Opener (20 Sovs)**:
 > "Twenty Sovs." *(He sets it on the bar.)* "Or gauntlet." *(Beat.)* "Gauntlet is cheaper. Gauntlet is not easier."
 
 **Oude Genever (requires the opener)**:
@@ -253,7 +253,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 | The Kopstootje Combo | 8 Sovs | — | Combined effect, +Shamsterdam Cred, −Intelligence, +Bravado. "Traditional. Brave." |
 | "The Flight" (5 samples) | 20 Sovs | Escalating | The gauntlet. "For tasting. Or testing." |
 | Back Room Special | 25 Sovs | 40% | +60 SP, everything status. "If you qualify." |
-| Proeflokaal 't Kansen Bottle Opener | 20 Sovs | — | Tulip glass with visible surface tension, amber brass, sawdust-coloured leather loop, "No Hands. No Fear." Free via gauntlet completion. |
+| Bottoms Down Bottle Opener | 20 Sovs | — | Tulip glass with visible surface tension, amber brass, sawdust-coloured leather loop, "No Hands. No Fear." Free via gauntlet completion. |
 
 ### Consumable: Oude Genever
 | Effect | Value |
@@ -352,14 +352,14 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 ### Primary Quest: Shamsterdam Brewery Tour (2 of 2)
 - **Quest**: Shamsterdam Brewery Tour
 - **Role**: Quest Gate, Gauntlet Administrator, Vendor, Stamp Giver
-- **Trigger**: Arrival at Proeflokaal 't Kansen carrying the Blarney Trap Bottle Opener
+- **Trigger**: Arrival at Bottoms Down carrying the Blarney Trap Bottle Opener
 - **Outcome**: "Oude Genever" stamp added to the Bottle Opener Keychain. With The Wobbly Windmill Brewery's Windmill Wit stamp, **completes the "Canal Courage" passive** — all Bravado loss reduced by 25% while intoxicated, with a small Shamsterdam flag icon when active.
 
 ### Quest Gate Function — CROSS-CITY, HARD REQUIREMENT
 
 **Layer 1 — The Blarney Trap Bottle Opener (Publandia).** Required to access the brewery tour AT ALL. This is a cross-city dependency on `the_blarney_trap.md` and Seamus O'Brien's shamrock-shaped brass opener. Without it Kees says "No shamrock. No tour. Return. With opener." and the conversation ends. **There is no bribe, no skill check, no alternate route, and no exception.** The opener check runs before any other dialogue state.
 
-**Layer 2 — The Proeflokaal 't Kansen opener.** Required for the stamp and Oude Genever purchase. Obtained by completing the Jenever Taste Test gauntlet OR paying 20 Sovs. Without it the player can enter and drink but takes no progression.
+**Layer 2 — The Bottoms Down opener.** Required for the stamp and Oude Genever purchase. Obtained by completing the Jenever Taste Test gauntlet OR paying 20 Sovs. Without it the player can enter and drink but takes no progression.
 
 **Layer 3 — The back room.** Full gauntlet completion (all three rounds correct) unlocks it. "Close enough" does not.
 
@@ -377,7 +377,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Proeflokaal 't Kansen Bottle Opener | Gauntlet or 20 Sovs | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
+| Bottoms Down Bottle Opener | Gauntlet or 20 Sovs | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
 | Oude Genever ×5 (or ×2) | Gauntlet resolution | Consumable | +40 SP, The Shakes, cannot be used in combat |
 | "Oude Genever" stamp | Tour completion with opener | Yes | 2 of 2 → **Canal Courage passive unlocked** |
 | Back Room access | Full gauntlet | Yes | The 100-Year Barrel, the private stock, the one chair |
@@ -386,14 +386,14 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 ### State Flags Set
 - `kees_met`: boolean
 - `blarney_opener_verified`: boolean
-- `proeflokaal_opener_acquired`: boolean
-- `proeflokaal_opener_source`: enum (gauntlet / purchased)
+- `bottoms_down_opener_acquired`: boolean
+- `bottoms_down_opener_source`: enum (gauntlet / purchased)
 - `traditional_method_learned`: boolean
 - `first_glass_spilled`: boolean
 - `gauntlet_rounds_correct`: integer (0–3)
 - `kopstootje_survived`: boolean
 - `back_room_unlocked`: boolean
-- `proeflokaal_stamp_acquired`: boolean
+- `bottoms_down_stamp_acquired`: boolean
 - `canal_courage_unlocked`: boolean (requires both brewery stamps)
 
 ---
@@ -490,15 +490,15 @@ Dutch, Old Town, low register, minimal. He does not inflect. Words arrive at eve
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Proeflokaal_T_Kansen/npc_kees.md`
-- **Registered In**: No `proeflokaal_t_kansen_npcs.json` exists. **A location JSON roster should be created** (Pim and the four atmospheric patron NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_kees_pim.png` (512×512; 64×96 character frames, 128×128 portraits) — Kees occupies rows y=0 (service), y=96 (instruction + the three opener-check frames), portraits at y=192, high-contrast silhouette at (0,416). Specced in `PNG_Assets/Proeflokaal_T_Kansen_PNG_Assets.md`, Sprite Sheet 5. Supporting: `npc_proeflokaal_patrons.png`, `surface_tension_glass.png`, `gauntlet_setup.png`, `bottle_opener_proeflokaal.png`.
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/bottoms_down/npc_kees.md`
+- **Registered In**: No `bottoms_down_npcs.json` exists. **A location JSON roster should be created** (Pim and the four atmospheric patron NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
+- **Sprite Sheet**: `npc_kees_pim.png` (512×512; 64×96 character frames, 128×128 portraits) — Kees occupies rows y=0 (service), y=96 (instruction + the three opener-check frames), portraits at y=192, high-contrast silhouette at (0,416). Specced in `PNG_Assets/bottoms_down_png_assets.md`, Sprite Sheet 5. Supporting: `npc_bottoms_down_patrons.png`, `surface_tension_glass.png`, `gauntlet_setup.png`, `bottle_opener_bottoms_down.png`.
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `proeflokaal_t_kansen.md` + `PNG_Assets/Proeflokaal_T_Kansen_PNG_Assets.md` + `Publandia/the_blarney_trap.md` (Seamus O'Brien cross-city opener gate). Kees / Opa Cees name-root collision documented and flagged for the naming registry. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `bottoms_down.md` + `PNG_Assets/bottoms_down_png_assets.md` + `Publandia/the_blarney_trap.md` (Seamus O'Brien cross-city opener gate). Kees / Opa Cees name-root collision documented and flagged for the naming registry. | Shamsterdam NPC authoring pass |
 
 ---
 

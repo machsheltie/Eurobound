@@ -273,7 +273,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 **The "It's All Legal" Tourist**
 - **Composition**: Confident purchaser, didn't read anything, will be fine (probably)
 - **Behavior**: Loading up on everything, no questions, complete confidence
-- **Dialogue**: "It's Amsterdam! It's all legal here! It's FINE!"
+- **Dialogue**: "It's Shamsterdam! It's all legal here! It's FINE!"
 - **Function**: Shows common approach, potential consequences
 
 **The Seed Collector (Wink)**
@@ -312,7 +312,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - **Lord Pilsner** (entering): "Hemp SOUVENIRS? This is CLASSY. This is DIFFERENT. This isn't a coffeeshop."
 - **Lord Pilsner** (browsing): "What's the difference between CBD and... the other one? The one that... you know."
 - **Lord Pilsner** (purchasing): "The oil and the seeds. As SOUVENIRS. For my COLLECTION. Of... things."
-- **Lord Pilsner** (customs): "I have SOUVENIRS. LEGAL souvenirs. From a LEGAL shop. In AMSTERDAM."
+- **Lord Pilsner** (customs): "I have SOUVENIRS. LEGAL souvenirs. From a LEGAL shop. In SHAMSTERDAM."
 - **Chadwick**: "I'm documenting this for... research. The CBD market is FASCINATING. Legally."
 - **Chadwick** (purchasing): "The grinder is for TOBACCO. The papers are for... ROLLING things. LEGAL things."
 - **Chadwick** (seeds): "COLLECTOR'S items. I'm a COLLECTOR now. Of seeds. That I will NOT plant."

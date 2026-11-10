@@ -1,6 +1,6 @@
 # Café NORA
 
-*Dublin's most literary internet café — where James Joyce's legacy meets ICQ chat rooms and selfie uploads*
+*Publandia's most literary internet café — where James Joyce's legacy meets ICQ chat rooms and selfie uploads*
 
 ## Location Identity
 - **Location ID**: publandia_services_cafe_nora_01
@@ -80,7 +80,7 @@ The café is named after Nora Barnacle, James Joyce's wife and muse. She was a G
 | Nora Barnacle photo | Real | "Who's that?" |
 | First edition Ulysses | Reproduction | Impressed anyway |
 | Handwritten "Joyce letter" | Definitely fake | Completely fooled |
-| Literary map of Dublin | Accurate | Never consulted |
+| Literary map of Publandia | Accurate | Never consulted |
 
 ### Technical Specifications
 - **Color Palette**: Primary: Coffee Brown (#6F4E37), Accent: Literary Green (#2E5A1C), Background: Cream Paper (#FFFDD0), Tech Blue (#4169E1)
@@ -120,7 +120,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 **How impaired are they**: Usually sober (it's a café), but hungover often
 
 **The café journey**:
-1. "A LITERARY café! This is SO Dublin!"
+1. "A LITERARY café! This is SO PUBLANDIA!"
 2. "I should take a photo with the Joyce quotes. For CULTURE."
 3. "Let me just upload this real quick..."
 4. "Oh, ICQ notification from the Sauce Apostates!"
@@ -162,7 +162,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 | Dubliners Drip (Filter) | 3 SOVS | +5 SP, +Stamina |
 | Portrait of the Artist (Latte) | 5 SOVS | +10 SP, +Creativity |
 | Finnegans Wake (Triple Shot) | 6 SOVS | +20 SP, ++Speed, -Sleep later |
-| Nora's House Blend | 3.50 SOVS | +8 SP, staff approval |
+| Nora's House Blend | 4 SOVS | +8 SP, staff approval |
 | Literary Tea Selection | 3 SOVS | +5 SP, +Calm |
 
 **Pastries**
@@ -220,7 +220,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 | Rival Watch | Sauce Apostates | Rival trio movements |
 | Hot Tips | Craic Broker network | Time-sensitive opportunities |
 | Scam Alerts | Experienced travelers | Warnings about locations |
-| Literary Secrets | Nora (rare) | Hidden Dublin content |
+| Literary Secrets | Nora (rare) | Hidden Publandia content |
 
 ### "Regular" Status
 **Unlock**: Visit 5 times with purchases
@@ -267,7 +267,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 
 *Literary Moments:*
 - "Someone actually read a book today. First time this week. I marked it on my calendar."
-- "You want to know what Ulysses is about? It's about one day in Dublin. June 16, 1904. Everything and nothing happens. It's very long. Start with Dubliners."
+- "You want to know what Ulysses is about? It's about one day in the city. June 16, 1904. Everything and nothing happens. It's very long. Start with Dubliners."
 - "Joyce and Nora's first date was June 16th. That's why Bloomsday. Now you know more than most tourists."
 
 *On the Digital Reality:*
@@ -314,7 +314,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 ### Original NPC Dialogue
 **Nora's Philosophy (Extended):**
 - "My mother wanted me to be a teacher. My father wanted me to be practical. I got a literature degree and opened a café. Everyone was disappointed. Including me, eventually."
-- "Joyce wrote in exile. Longing for Dublin while avoiding Dublin. These tourists photograph Dublin without seeing it. Same energy, different direction."
+- "Joyce wrote in exile. Longing for the city while avoiding the city. These tourists photograph it without seeing it. Same energy, different direction."
 - "Nora Barnacle was brilliant. Not educated, but brilliant. She kept Joyce grounded. Someone has to keep dreamers grounded. That's my job now. With Wi-Fi passwords."
 - "The best conversations happen at 1 AM when only the real ones are left. The writers, the insomniacs, the lonely. That's when this café matters."
 - "Yes, I've read Ulysses. All of it. Twice. Don't ask me to explain it. No one can explain it. That's rather the point."
@@ -352,7 +352,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 - **"The Ulysses Challenge"**: Actually read something Joyce wrote (harder than it sounds)
 - **"Scammer Showdown"**: Navigate ICQ scam for comedy/profit
 - **"Viral Moment"**: Achieve viral selfie status
-- **"Literary Dublin"**: Visit all Joyce-related spots (triggered from here)
+- **"Literary Publandia"**: Visit all Joyce-related spots (triggered from here)
 
 ### Achievement Track
 - **First Visit**: "Connected" — found the Wi-Fi

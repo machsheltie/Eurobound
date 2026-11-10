@@ -362,7 +362,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 |------|----------|--------------|-------------------|
 | Debaucheryville | Three Crown Keg Haus | Mickey does not appear, but the Shenanigans stamp in the passport is recognised by the cellar staff as a mark of a specific kind of durability. | "You have the wilted clover. So you have been robbed and you came back. Good. The cellar is not for people who leave." |
 | Debaucheryville | The Absinthium Taproom | The stamp is noted with clinical interest rather than warmth. | "The Irish trickery stamp. Fascinating. You paid to be deceived and you rated the experience positively. Sit down, I have a survey." |
-| Shamsterdam | Proeflokaal 't Kansen | The wilted-clover stamp is treated as a credential for the jenever gauntlet — proof the holder can lose without complaint. | "This stamp means you lost money and did not shout. Then you will do fine here. No hands. No fear." |
+| Shamsterdam | Bottoms Down | The wilted-clover stamp is treated as a credential for the jenever gauntlet — proof the holder can lose without complaint. | "This stamp means you lost money and did not shout. Then you will do fine here. No hands. No fear." |
 
 ### Evolution Through Game
 - **Pre-stamp**: Every Mickey line is patter. Warm, generous-sounding, and entirely transactional. The player is a revenue stream and the writing should never quite let them forget it while never quite letting them notice.

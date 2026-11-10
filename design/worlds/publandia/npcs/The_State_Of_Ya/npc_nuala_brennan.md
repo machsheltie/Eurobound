@@ -259,7 +259,7 @@ The card from the roundabout goes in the drawer every December and she says noth
 
 > "Right. Out. There's a queue and you're swaying in it."
 
-> "Bag's 20 cent. I don't make the law."
+> "Bag's one Sov. I don't make the law."
 
 ---
 
@@ -339,7 +339,7 @@ The card from the roundabout goes in the drawer every December and she says noth
 | Energy Drink (Brand) | 4 Sovs | Fair | +20 SP, +10 Speed (1 hour) |
 | Discount Energy Drink | 2 Sovs | Exactly what it costs and exactly as bad | +15 SP, +5 Speed, 20% "Jitters" risk |
 | Lucky Rabbit's Foot | 8 Sovs | Worth about 2 Sovs; sold to people who want to buy luck | +5% Critical Hit Chance |
-| Four-Leaf Clover (Plastic) | 3 Sovs | Worth 40 cent. She tells you it's fake before you pay. | +3% Luck |
+| Four-Leaf Clover (Plastic) | 3 Sovs | Worth less than a Sov. She tells you it's fake before you pay. | +3% Luck |
 | "Confidence" Mints | 4 Sovs | They are mints. She says so. They still work. | +10 Bravado (30 min) |
 | Eye Drops | 5 Sovs | Fair | Removes "Bloodshot," +5 Charisma |
 

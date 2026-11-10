@@ -15,7 +15,7 @@
 
 ### The Setup
 **What the bros THINK is happening:**
-> A noble quest to reunite a traditional Viennese horseman with his noble steed. Like knights of old. Very cultured, very sophisticated. This is the REAL Vienna experience.
+> A noble quest to reunite a traditional Sinfonian horseman with his noble steed. Like knights of old. Very cultured, very sophisticated. This is the REAL Sinfonia experience.
 
 **What is ACTUALLY happening:**
 > A tourist-trap carriage driver lost his horse because he was drunk. The horse escaped because it was fed up with pulling tourists around. The bros are completely unqualified to catch a horse.
@@ -72,7 +72,7 @@
 
 **Lord Pilsner:** "...I was gonna say City Slickers, but sure."
 
-**Chadwick:** *already filming* "Chat, we're about to do a horse rescue in Vienna. This is CULTURAL IMMERSION."
+**Chadwick:** *already filming* "Chat, we're about to do a horse rescue in Sinfonia. This is CULTURAL IMMERSION."
 
 ---
 
@@ -259,7 +259,7 @@
 
 **Lord Pilsner:** "Okay, Plan B. We find a replacement horse."
 
-**Bradley:** "Where do you find a horse in Vienna at 3 PM?"
+**Bradley:** "Where do you find a horse in Sinfonia at 3 PM?"
 
 **Chadwick:** "There's a zoo?"
 
@@ -398,7 +398,7 @@
 ### Cross-References
 - Horse costume can be used in other quests (always fails)
 - Bradley's harness becomes equipment option
-- Hans-Jürgen referenced in Publandia: "I met a carriage driver in Vienna. He said Americans are helpful but cause property damage."
+- Hans-Jürgen referenced in Publandia: "I met a carriage driver in Sinfonia. He said Americans are helpful but cause property damage."
 
 ---
 
@@ -409,7 +409,7 @@
 ### Duration: 90 seconds
 
 **SETTING:**
-> A countryside estate outside Vienna. Two years later. Beautiful pastures, other horses, gentle sunlight.
+> A countryside estate outside Sinfonia. Two years later. Beautiful pastures, other horses, gentle sunlight.
 
 **SCENE:**
 
@@ -417,7 +417,7 @@
 
 *A TOUR BUS pulls up. American tourists pile out.*
 
-**TOUR GUIDE:** "And here we have the famous Gustav, the horse who escaped Vienna's Fiaker tourist carriages. He now lives in retirement, paid for by an anonymous American donor."
+**TOUR GUIDE:** "And here we have the famous Gustav, the horse who escaped Sinfonia's Fiaker tourist carriages. He now lives in retirement, paid for by an anonymous American donor."
 
 *Camera reveals: A small plaque on the fence*
 
@@ -445,7 +445,7 @@
 
 ---
 
-*Cut to: Hans-Jürgen, still in Vienna, driving a Fiaker*
+*Cut to: Hans-Jürgen, still in Sinfonia, driving a Fiaker*
 
 *He has a new horse. The horse is clearly nervous.*
 

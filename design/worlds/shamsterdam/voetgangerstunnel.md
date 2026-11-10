@@ -541,7 +541,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 | Guided Walk | Henk | 10 Sovs | Guaranteed correct (slow) |
 | Flashlight | Marloes | 6 Sovs | Reveals graffiti hints |
 | "Correct" Directions | Henk | 5 Sovs | Slightly better odds |
-| Willem Tip | Willem | 1 Sov-5 | Navigation hints |
+| Willem Tip | Willem | 1-5 Sovs | Navigation hints |
 
 ### Found Items
 - **Lost Tourist Belongings**: Random items dropped by confused tourists

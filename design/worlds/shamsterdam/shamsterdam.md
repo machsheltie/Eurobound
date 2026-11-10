@@ -144,7 +144,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - **Unlockable Consumable**: "Windmill Wit" — Restores HP, +Speed, -Navigation (the spinning doesn't help)
 - **Brewmaster Selfie Spot**: In front of the giant rotating blades (timing matters)
 
-### Proeflokaal 't Kansen (The Chance Tasting Room)
+### Bottoms Down
 **Brewery Tour Location #2**
 - Historic jenever distillery that "also does beer now"
 - 400-year-old building, 4-hour-old commitment to quality
@@ -154,6 +154,26 @@ The city that promises total freedom but delivers total accountability. A labyri
 - **Tour Obstacle**: Jenever Taste Test gauntlet — distinguish young from old without dying
 - **Unlockable Consumable**: "Oude Genever" — Massive SP restore, but "The Shakes" debuff (-Accuracy for 3 turns)
 - **Brewmaster Selfie Spot**: Attempting the no-hands jenever shot (Chadwick's footage is ROUGH)
+
+### The Hoisted Pint
+**Brewery Tour Location #3** — full doc: `the_hoisted_pint.md`
+- A brewery packed into a canal house one and a half metres wide and six storeys tall, leaning at the same angle as its customers
+- The stairs are too narrow for a keg or a grown man, so both go up the front in a cargo net on the old gable hoist hook, while canal-boat tours below take pictures
+- Lord Pilsner calls the net "VIP bottle service", Chadwick films the ascent as his "Jackass tribute", Bradley rides it four more times because nobody asked him to pay for the first one
+- The building next door is narrower, and the owner has a lawyer
+- **Tour Obstacle** (PROPOSED — NEEDS AUTHOR RULING): "The Front Way Up" — net balance lift, Canal Boat Paparazzi, boss Meester Overhang (the neighbour's lawyer)
+- **Unlockable Consumable** (PROPOSED — NEEDS AUTHOR RULING): "Load-Bearing Tripel" — +HP, +Defense, "Listing" drawback
+- **Brewmaster Selfie Spot** (PROPOSED — NEEDS AUTHOR RULING): The Gable Shot — bros in the net at the sixth-floor window, Brewmaster Thijs on the winch, a tour boat full of phones below
+
+### The Mad Monarch's Wit-tea Party
+**Brewery Tour Location #4** — full doc: `the_mad_monarchs_wit_tea_party.md`
+- A witbier brewery that has thrown the Monarch's Birthday party every day since 1998, because the owner woke up on the morning after and decided the morning after was for cowards
+- Witbier brewed, served and sold here, poured into teacups
+- Everything is orange: the beer, the walls, the urinal cakes, and anyone who arrives in another colour, because the bouncer has a paint sprayer. The bros get sprayed at the door and say thank you
+- Lord Pilsner thinks the cardboard crown means he has been knighted
+- **Tour Obstacle** (PROPOSED — NEEDS AUTHOR RULING): "Clean Cup, Move Down" — teacup musical chairs at a forty-metre table, The Lifers, boss The Hangover of '98
+- **Unlockable Consumable** (PROPOSED — NEEDS AUTHOR RULING): "Six O'Clock Wit" — blocks Hungover, then every blocked Hungover lands at once
+- **Brewmaster Selfie Spot** (PROPOSED — NEEDS AUTHOR RULING): The Birthday Portrait — Lord Pilsner enthroned in his cardboard crown, Brewmaster Sjors Hoedemaker pouring from on high
 
 **Shamsterdam Brewery Tour Completion Reward**: "Canal Courage" passive — All Bravado loss reduced by 25% while intoxicated
 
@@ -238,7 +258,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - **Tourist Trap Tier**: 20 Sovs/gram (the Bulldog experience)
 - **Local Secret Tier**: 12 Sovs/gram (if you know where to look)
 - **"My Buddy Said" Tier**: Variable (probably oregano)
-- **Space Cake Roulette**: 8 Sovs-15 (effects: extremely variable)
+- **Space Cake Roulette**: 8-15 Sovs (effects: extremely variable)
 
 ---
 

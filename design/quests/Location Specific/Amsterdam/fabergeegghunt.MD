@@ -27,7 +27,7 @@
 | **NPC ID** | `shamsterdam_npc_agent_havok` |
 | **Display Name** | "Mysterious Local Contact" (revealed as Agent Havok post-quest) |
 | **True Identity** | Havok the Sheltie — Chaos Agent from *Sunday Brunch with Giselle* podcast/recipe blog |
-| **Cover Identity** | A "local" sitting at an outdoor café, wearing an obviously tourist-purchased "AMSTERDAM" hoodie, knock-off Wayfarer sunglasses, and trying WAY too hard to look casual |
+| **Cover Identity** | A "local" sitting at an outdoor café, wearing an obviously tourist-purchased "SHAMSTERDAM" hoodie, knock-off Wayfarer sunglasses, and trying WAY too hard to look casual |
 | **Voice Style** | Military movie briefing delivery — think Tommy Lee Jones in *Small Soldiers* meets Sgt. Bilko giving recon reports, but slightly altered/disguised for the "undercover local" role |
 | **Sprite Design** | Anthropomorphized Sheltie in human clothes, fur visible around collar, tail occasionally wagging when excited about the "mission" |
 
@@ -64,7 +64,7 @@ But I know a way in. For operatives of your... *looks at the bros*
 
 **"Local" Accent Attempts** (slips constantly):
 - "Ja, ja, very Dutch, this plan. Very... *checks hand* ...gezellig."
-- "As we say here in Amsterdam— I mean, Shamsterdam— I mean, MY HOME WHERE I LIVE AND AM FROM..."
+- "As we say here in Debaucheryville— I mean, Shamsterdam— I mean, MY HOME WHERE I LIVE AND AM FROM..."
 - "The tulips are... blooming? Is that a thing locals say? It feels right."
 
 ---
@@ -78,7 +78,7 @@ But I know a way in. For operatives of your... *looks at the bros*
 **Trigger**: Bros walk past the café after visiting 2+ Shamsterdam locations
 
 **Cutscene Text**:
-> A figure at an outdoor café table gestures urgently. He's wearing an "AMSTERDAM" hoodie with the tags still on and sunglasses that are clearly from a tourist shop. His newspaper is upside down.
+> A figure at an outdoor café table gestures urgently. He's wearing a "SHAMSTERDAM" hoodie with the tags still on and sunglasses that are clearly from a tourist shop. His newspaper is upside down.
 
 **Agent Havok (Initial Contact)**:
 ```
@@ -220,7 +220,7 @@ As the bros enter in tactical formation (unnecessary crouching, hand signals no 
 **THE CHOCOLATE ANATOMY SECTION**
 
 A massive floor display featuring:
-- Chocolate penises in white, milk, and dark chocolate (8.99-24.99 SOVS)
+- Chocolate penises in white, milk, and dark chocolate (9-25 SOVS)
 - White chocolate specimens marbled with wild neon colors for maximum tackiness
 - A size range from "novelty keychain" to "bachelorette party centerpiece"
 - Artisanal decorated versions with sprinkles, edible glitter, and fondant bow ties
@@ -238,7 +238,7 @@ They notice NOTHING. They are in Mission Mode.
 
 **Lord Pilsner**: "European art installations. Probably priceless. DON'T TOUCH ANYTHING."
 
-*They continue past walls of tulip magnets, wooden shoe keychains, and a rotating rack of "I AMSTERDAM" t-shirts, seeing none of it.*
+*They continue past walls of tulip magnets, wooden shoe keychains, and a rotating rack of "I SHAMSTERDAM" t-shirts, seeing none of it.*
 
 **Optional Player Interaction — Examine Display**:
 
@@ -341,7 +341,7 @@ If player chooses to interact with the chocolate display:
 #### Part D: The Vault
 
 **Scene Description**:
-> They reach Section C: "Decorative Ovoid Objects & Seasonal Chocolates." A small glass display case sits on a pedestal next to a rack of tulip-shaped lollipops. Inside: a single ornate egg with a 3.50 SOVS price tag clearly visible.
+> They reach Section C: "Decorative Ovoid Objects & Seasonal Chocolates." A small glass display case sits on a pedestal next to a rack of tulip-shaped lollipops. Inside: a single ornate egg with a 4 SOVS price tag clearly visible.
 
 **The Bros' Interpretation**:
 
@@ -353,7 +353,7 @@ If player chooses to interact with the chocolate display:
 
 **Lord Pilsner**: "It's the glow of HISTORY, Bradley."
 
-*The egg is a limited-edition Kinder Surprise decorated to look fancy. The tag reads: "FABERGÉ-STYLE COLLECTOR'S EGG — Milk Chocolate with Surprise Toy Inside! 3.50 SOVS or 2 for 6 SOVS"*
+*The egg is a limited-edition Kinder Surprise decorated to look fancy. The tag reads: "FABERGÉ-STYLE COLLECTOR'S EGG — Milk Chocolate with Surprise Toy Inside! 4 SOVS or 2 for 6 SOVS"*
 
 *The bros do not read the tag.*
 
@@ -772,7 +772,7 @@ If player examined the chocolate anatomy display:
 ```
 💬 From: BradleysBestBro
 "dude did you actually bring back that chocolate thing 
-from amsterdam for my bachelor party"
+from shamsterdam for my bachelor party"
 
 💬 From: Bradley_Bro_Barbarian  
 "ITS MODERN ART CHAD SAID SO"
@@ -1050,7 +1050,7 @@ If player keeps Gregory the Hippo equipped for 10+ battles:
 ### Completion Achievement
 
 **"Museum Grade Idiot"**
-> *Successfully "stole" a 3.50 SOVS chocolate egg from a gift shop while believing it was worth millions. The gift shop has marked you as "inventory shrinkage."*
+> *Successfully "stole" a 4 SOVS chocolate egg from a gift shop while believing it was worth millions. The gift shop has marked you as "inventory shrinkage."*
 
 ---
 

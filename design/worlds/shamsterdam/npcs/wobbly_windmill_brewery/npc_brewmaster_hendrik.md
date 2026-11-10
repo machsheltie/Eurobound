@@ -9,7 +9,7 @@
 - **Role**: Quest Gate / Vendor (bottle opener + Windmill Wit) / Tour Guide / Lecture Endurance Challenge / Stamp Giver
 - **Associated Quest**: "Shamsterdam Brewery Tour" (1 of 2 — Windmill Wit stamp); gates "Canal Courage" passive progression
 - **Primary Location**: The Wobbly Windmill Brewery — all four floors, Shamsterdam Countryside (short train ride from central)
-- **Secondary Appearances**: Referenced at De Zilte Waarheid (the seagull is named after him); referenced at Proeflokaal 't Kansen and The Tolerance Hostel as the other half of the brewery tour
+- **Secondary Appearances**: Referenced at De Zilte Waarheid (the seagull is named after him); referenced at Bottoms Down and The Tolerance Hostel as the other half of the brewery tour
 
 ---
 
@@ -195,7 +195,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 **Second visit**:
 > "You came back. On the train. Eight Sovs, both ways, to look at fields." *(A nod.)* "This is the correct instinct."
 
-**After completing Proeflokaal 't Kansen (both breweries)**:
+**After completing Bottoms Down (both breweries)**:
 > "Kees has stamped you." *(Beat.)* "He does not stamp. If Kees has stamped you, you have done something. Canal Courage — you have it now. Do not waste it on the Roodelicht."
 
 **Late game**:
@@ -253,7 +253,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 | Gift Shop Attendant Bram | Ground floor, unavoidable on entry and exit. Has read Hendrik's book. Had to. |
 | Hendrik the Seagull (De Zilte Waarheid) | The bird was named after him after the herring catch of 2019. He considers it an honour and will say so, once, if asked. |
 | Maarten (De Zilte Waarheid) | Named the bird. Has never told Hendrik directly. Neither man has raised it in seven years. |
-| Kees (Proeflokaal 't Kansen) | The other half of the Shamsterdam brewery tour. Mutual professional respect expressed entirely through stamps. |
+| Kees (Bottoms Down) | The other half of the Shamsterdam brewery tour. Mutual professional respect expressed entirely through stamps. |
 | Seamus O'Brien (The Blarney Trap, Publandia) | Continental Trail counterpart. The Blarney Trap opener gates this location. They have met once and it went well. |
 | The Beer Blogger (German) | The one visitor who responds correctly. Hendrik has noticed. Potential couchsurf host. |
 
@@ -319,7 +319,7 @@ He never becomes casual and never lets the reverence drop. What changes is compr
 - **Quest**: Shamsterdam Brewery Tour
 - **Role**: Quest Gate, Vendor, Stamp Giver
 - **Trigger**: Arrival at The Wobbly Windmill Brewery carrying the Blarney Trap Bottle Opener
-- **Outcome**: "Windmill Wit" stamp added to the Bottle Opener Keychain. With Proeflokaal 't Kansen's Oude Genever stamp, unlocks the "Canal Courage" passive (all Bravado loss reduced by 25% while intoxicated).
+- **Outcome**: "Windmill Wit" stamp added to the Bottle Opener Keychain. With Bottoms Down's Oude Genever stamp, unlocks the "Canal Courage" passive (all Bravado loss reduced by 25% while intoxicated).
 
 ### Quest Gate Function
 **Hard gate, two layers:**

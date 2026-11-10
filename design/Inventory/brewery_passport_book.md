@@ -139,7 +139,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 | Slot | Location | Stamp Design | Signature Beer | Unlock Condition |
 |------|----------|--------------|----------------|------------------|
 | 1 | The Wobbly Windmill Brewery | Windmill, orange ink | Wobbly's Midnight | Complete brewery challenge |
-| 2 | Proeflokaal 't Kansen | Tilted glass, amber ink | Liquid Courage | Drinking game victory |
+| 2 | Bottoms Down | Tilted glass, amber ink | Liquid Courage | Drinking game victory |
 | 3 | [TBD] | [TBD] | [TBD] | [TBD] |
 | 4 | [TBD] | [TBD] | [TBD] | [TBD] |
 | 5 (Bonus) | [TBD] | [TBD] | [TBD] | [TBD] |

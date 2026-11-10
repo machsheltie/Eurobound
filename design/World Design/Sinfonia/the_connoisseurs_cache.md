@@ -172,7 +172,7 @@ The shop sees opportunity in confusion:
 
 **Provenance Speech Example**:
 *Selecting "Heritage Herbal Tea"*
-> "Ah, excellent choice. This blend dates to 1847, when the Müller family of Salzburg began cultivating these specific herbs. The lavender is from their original garden — the same plants, maintained for generations. The chamomile is wild-harvested by trained herbalists who understand the proper lunar cycle for maximum potency. The blend ratio has never been altered, except once in 1923 when a flood required temporary substitution, which the family considers 'the lost year.' You're not just buying tea. You're buying continuity."
+> "Ah, excellent choice. This blend dates to 1847, when the Müller family of the high valleys began cultivating these specific herbs. The lavender is from their original garden — the same plants, maintained for generations. The chamomile is wild-harvested by trained herbalists who understand the proper lunar cycle for maximum potency. The blend ratio has never been altered, except once in 1923 when a flood required temporary substitution, which the family considers 'the lost year.' You're not just buying tea. You're buying continuity."
 
 **Discerning Customer** (200 SOVS spent):
 - Can politely skip speeches: "The usual, please."

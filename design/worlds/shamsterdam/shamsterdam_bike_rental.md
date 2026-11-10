@@ -248,7 +248,7 @@ When you rent a bike, you **become part of the traffic** instead of trying to cr
 - Feel like a local (briefly)
 
 **Disadvantages**:
-- 15 Sovs-40/day cost
+- 15-40 Sovs/day cost
 - Damage risk (random encounter checks)
 - Theft risk when parked
 - Must return bike or forfeit deposit
@@ -265,7 +265,7 @@ Every cycling session has a % chance of damage event:
 | Local "Lesson" | 8% | 30 Sovs | "Taught" traffic rules physically |
 | Brake Failure Moment | 5% | 20 Sovs | Near miss, brake damage |
 | Basket Theft | 12% | 10 Sovs | Items stolen from basket |
-| Canal Proximity | 5% | 75 Sovs-350 | Varying degrees of wet |
+| Canal Proximity | 5% | 75-350 Sovs | Varying degrees of wet |
 | Flat Tire | 20% | 8 Sovs | Most common, least dramatic |
 | Nothing | 25% | 0 Sovs | Miraculous survival |
 

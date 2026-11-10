@@ -72,7 +72,7 @@
 - Finbar's personal commendations
 
 ### The Dramatic Energy
-Finbar treats every transaction like he's outfitting soldiers for war. Because to him, a Dublin pub crawl IS war. Against cobblestones. Against rain. Against your own poor decisions. And your feet are the infantry.
+Finbar treats every transaction like he's outfitting soldiers for war. Because to him, a Publandia pub crawl IS war. Against cobblestones. Against rain. Against your own poor decisions. And your feet are the infantry.
 
 **Finbar's Intensity Scale**:
 | Customer Need | Finbar's Response Level |
@@ -99,7 +99,7 @@ The satire targets the dramatic intensity some shopkeepers bring to their specia
 ### The Finbar Philosophy
 Finbar O'Sullivan has been a cobbler for 30 years. He's seen the rise and fall of shoe trends. He's witnessed the carnage of hen parties in high heels on cobblestones. He's treated the blistered feet of backpackers who thought flip-flops were "fine for Europe." 
 
-He doesn't sell shoes. He provides armor for life's battles. Every customer is a soldier who needs to be equipped for the mission ahead. The mission? Surviving Dublin. The enemy? Cobblestones, rain, and poor planning. The weapon? Proper footwear.
+He doesn't sell shoes. He provides armor for life's battles. Every customer is a soldier who needs to be equipped for the mission ahead. The mission? Surviving Publandia. The enemy? Cobblestones, rain, and poor planning. The weapon? Proper footwear.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Overly intense specialty shopkeepers, Dublin's cobblestone carnage
@@ -261,7 +261,7 @@ Finbar doesn't just sell shoes. He FITS them:
 - "When did you last think about your feet? Really THINK about them?"
 
 *The Education:*
-- "Dublin's cobblestones have ended more nights than the Gardaí. I've seen the casualties."
+- "Publandia's cobblestones have ended more nights than the Gardaí. I've seen the casualties."
 - "Rain, cobblestones, and poor planning. The trinity of foot destruction. I fight all three."
 - "You're going on a pub crawl? That's 8-12 kilometers of urban warfare. Are you EQUIPPED for that?"
 
@@ -458,4 +458,4 @@ Finbar doesn't just sell shoes. He FITS them:
 
 ---
 
-*The Cobbler's Last Stand: Where shoe shopping becomes a tactical briefing, footwear is treated as essential armor, and Finbar O'Sullivan wages his eternal war against Dublin's cobblestones. Your feet deserve a champion. Finbar is that champion. He's not dramatic. He's PREPARED. There's a difference.*
+*The Cobbler's Last Stand: Where shoe shopping becomes a tactical briefing, footwear is treated as essential armor, and Finbar O'Sullivan wages his eternal war against Publandia's cobblestones. Your feet deserve a champion. Finbar is that champion. He's not dramatic. He's PREPARED. There's a difference.*

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 2 PM - 12 AM (prime confidence-needing hours)
 - **Stat Requirements**: None (low confidence especially welcome)
-- **Item Requirements**: Gold (5 Sovs-20 per item)
+- **Item Requirements**: Gold (5-20 Sovs per item)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Location changes slightly each visit (mobile cart)
 
@@ -64,9 +64,9 @@ Cormac's products exist in a gray zone between "functional herbal supplement," "
 **Display Categories**:
 | Tier | Label Color | Price Range | Actual Effect | Placebo Factor |
 |------|-------------|-------------|---------------|----------------|
-| Bronze | Brown | 5 Sovs-8 | Minor buffs | High |
-| Silver | Blue | 10 Sovs-15 | Moderate buffs | Medium |
-| Gold | Gold | 18 Sovs-25 | Significant buffs | Low |
+| Bronze | Brown | 5-8 Sovs | Minor buffs | High |
+| Silver | Blue | 10-15 Sovs | Moderate buffs | Medium |
+| Gold | Gold | 18-25 Sovs | Significant buffs | Low |
 | "Special Reserve" | Black | 30 Sovs+ | Premium effects | Minimal |
 
 ### Technical Specifications

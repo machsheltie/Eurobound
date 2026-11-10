@@ -242,7 +242,7 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 | Designer Limited Edition | 35 Sovs | Art | Very High | "Is this a gallery?" |
 | The Mystery Box | 30 Sovs | Unknown | Maximum | "For the adventurous" |
 | Educational Poster | 15 Sovs | Decor | Medium | "Conversation starter" |
-| Gift Card | 20 Sovs–100 | Giving | Extreme | "I was thinking of you" |
+| Gift Card | 20–100 Sovs | Giving | Extreme | "I was thinking of you" |
 
 ### Services
 | Service | Price | Effect |

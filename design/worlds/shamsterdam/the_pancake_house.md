@@ -63,7 +63,7 @@
   - **"American Style" Section**: 22 Sovs for stack of three, "with maple-flavored syrup"
   - **Combination Chaos**: Bacon AND Nutella options exist (Dutch palate is different)
   - **Kids Menu**: Same pancakes, smaller, still 12 Sovs
-- **Price Range**: 14 Sovs-24 for what is fundamentally one thin pancake
+- **Price Range**: 14-24 Sovs for what is fundamentally one thin pancake
 - **The Trap**: Toppings listed, each topping is extra, final bill surprise
 
 ### The Kitchen (Visible Through Pass)

@@ -250,7 +250,7 @@ After initial encounter:
 - **Quest**: The Astronomical Cock-Up
 - **Role**: Third scammer encounter (Stage 2), triggered by Post-Clock Vulnerability
 - **Trigger**: 30 seconds after clock show ends + blessing received
-- **Outcome**: Bros buy 3-6 bottles of boxed wine for 180 Sovs-300
+- **Outcome**: Bros buy 3-6 bottles of boxed wine for 180-300 Sovs
 
 ### Quest Gate Function
 Not a gate, but wine purchase contributes to "Total Scam Spending" counter and sets up "Blessed Drunk" status for rest of evening.
