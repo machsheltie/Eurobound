@@ -10,11 +10,18 @@ const BROS := {
 	"bradley": "res://assets/characters/party/bradley/bradley.aseprite",
 	"lord_pilsner": "res://assets/characters/party/lord_pilsner/lord_pilsner.aseprite",
 }
+## Reach for using things (cabinets, machines, NPCs), real metres on the ground plane.
+const INTERACT_RANGE := 1.0
 ## Walking pace in real metres per second (feel tuning, not a game stat).
 const WALK_SPEED := 3.2
 const GRAVITY := 20.0
 
-@export var bro := "chadwick"
+## Which bro walks (vertical-slice spec: Lord Pilsner).
+@export var bro := "lord_pilsner"
+
+## The player pressed interact next to an interaction point (group "interact_points", meta
+## interact_id). What it does is up to the screen that listens.
+signal interacted(interact_id: String)
 
 var sprite: PartySprite3D
 
@@ -38,7 +45,7 @@ func _init() -> void:
 func _ready() -> void:
 	ensure_input_actions()
 	floor_snap_length = 0.3
-	var frames: SpriteFrames = load(BROS.get(bro, BROS["chadwick"]))
+	var frames: SpriteFrames = load(BROS.get(bro, BROS["lord_pilsner"]))
 	if frames == null:
 		return
 	sprite.sprite_frames = frames
@@ -46,6 +53,33 @@ func _ready() -> void:
 	sprite.content_height_px = used.size.y
 	sprite.feet_row_px = used.end.y - 1
 	sprite.action = sprite.action  # replay now that frames exist
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("interact"):
+		try_interact()
+
+
+## The closest interaction point within reach, or null.
+func nearest_interactable() -> Node3D:
+	var best: Node3D = null
+	var best_d := INTERACT_RANGE
+	for n in get_tree().get_nodes_in_group("interact_points"):
+		var p := n as Node3D
+		if p == null:
+			continue
+		var d := Vector2(p.global_position.x - global_position.x, p.global_position.z - global_position.z).length()
+		if d <= best_d:
+			best_d = d
+			best = p
+	return best
+
+
+## Uses the closest interaction point in reach, if any.
+func try_interact() -> void:
+	var p := nearest_interactable()
+	if p != null:
+		interacted.emit(String(p.get_meta("interact_id")))
 
 
 func _physics_process(delta: float) -> void:

@@ -23,6 +23,9 @@ import/import_plugin/enable_automatic_importer=true
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
+DataRepo="*res://core/data_repo.gd"
+GameState="*res://core/game_state.gd"
+SaveSystem="*res://core/save_system.gd"
 
 [editor_plugins]
 

@@ -128,6 +128,70 @@ func test_player_registers_move_and_interact_actions() -> void:
 		assert_true(InputMap.has_action(action), action)
 
 
+func _interact_point(id: String, pos: Vector3) -> Marker3D:
+	var m := Marker3D.new()
+	m.add_to_group("interact_points")
+	m.set_meta("interact_id", id)
+	m.position = pos
+	add_child_autofree(m)
+	return m
+
+
+func test_player_default_bro_is_lord_pilsner() -> void:
+	# Arrange / Act: the approved vertical-slice spec walks the world as Lord Pilsner
+	var p := _player()
+
+	# Assert
+	assert_eq(p.bro, "lord_pilsner")
+
+
+func test_player_nearest_interactable_within_range() -> void:
+	# Arrange
+	var p := _player()
+	_interact_point("far_cabinet", Vector3(0, 0, -3.0))
+	var near := _interact_point("near_cabinet", Vector3(0.6, 0, -0.3))
+
+	# Act
+	var found := p.nearest_interactable()
+
+	# Assert
+	assert_eq(found, near)
+
+
+func test_player_nothing_to_interact_with_out_of_range() -> void:
+	# Arrange
+	var p := _player()
+	_interact_point("far_cabinet", Vector3(0, 0, -3.0))
+
+	# Act / Assert
+	assert_null(p.nearest_interactable())
+
+
+func test_player_interact_emits_the_point_id() -> void:
+	# Arrange
+	var p := _player()
+	_interact_point("cabinet_frogger", Vector3(0, 0, -0.5))
+	watch_signals(p)
+
+	# Act
+	p.try_interact()
+
+	# Assert
+	assert_signal_emitted_with_parameters(p, "interacted", ["cabinet_frogger"])
+
+
+func test_player_interact_with_nothing_near_emits_nothing() -> void:
+	# Arrange
+	var p := _player()
+	watch_signals(p)
+
+	# Act
+	p.try_interact()
+
+	# Assert
+	assert_signal_not_emitted(p, "interacted")
+
+
 func test_player_sprite_takes_the_hall_depth_curve() -> void:
 	# Arrange / Act
 	var p := _player()
