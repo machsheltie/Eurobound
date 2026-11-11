@@ -611,3 +611,12 @@ Open question: should it, and to what depth?
     - Final text with tag poems and inspect lines: WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md.
   - The Beanie claw's price per play is still unruled.
   - Game-wide rule (now in CLAUDE.md): every junk item gets a short, really funny inspect line.
+- **(Round v29, 2026-11-11)**
+  - Restroom entry: the bros press the button facing the wall just south of the TOKENS HERE machine. No repaint.
+  - After the top prize is won, the rigged claw stays rigged: junk grabs hold only on a blinking PAYOUT play.
+  - The nine villain battle sprites are approved, and Count Continue keeps his size.
+  - **Arcade NPC sprites approved:** Jakub (plus his asleep-in-the-statue pose), Tomáš, Cara, Woo Woo Whitney, Brynleigh, Ashleigh, Kenleigh, and both Accounts Receivable enforcers, all through the sprite pipeline.
+  - **Name clashes:** the author's new names stay. The older NPCs that share them get new names (VCC bouncer Tomáš; Jakub "Euro Ink" Novák, Receptionist Jakub, and the Astronomical Cock-Up quest's Jakub; Miroslav "Father Miro" Dvořák and Václav "Vintage" Dvořák).
+  - **Grandpa Provides scene:** "Ask chatgpt in its chat window to review and find the interaction between the bartender and the bros as there are lines and we are missing them. The entire interaction here between them is off."
+  - **fratbronft.md conflict:** "Show me all and I will decide case by case."
+  - Unanswered: the Beanie claw's price; 5 tokens stays as a placeholder.
