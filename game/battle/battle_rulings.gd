@@ -32,3 +32,11 @@ const FOOD_POISONING_BATTLES := Vector2i(5, 8)
 ## villain_leftovers = all: the Sinking Fund's soggy pile pays back what Buy the Dip took, less a
 ## 20% management fee, on a win only.
 const SOGGY_PILE_FEE := 0.2
+
+## Round v28 (author 2026-11-11).
+## cabinet_difficulty = hp: every Arcade cabinet villain fights with +50% HP (rounded).
+const CABINET_HP_MULT := 1.5
+## status_durations = approve: where a villain doc names no length, Embarrassed lasts 2 turns and
+## Grease Fingers 4. A length written in a villain doc (Croc Monsieur's 3) stands.
+const EMBARRASSED_TURNS := 2
+const GREASE_FINGERS_TURNS := 4

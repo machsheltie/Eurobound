@@ -207,3 +207,16 @@ func test_arcade_battle_jarmila_comes_back_one_word_longer_per_defeat() -> void:
 	# Assert
 	assert_eq(name_before, "Super Turbo Hyper Jarmila EX Plus")
 	assert_eq(int(state.flags[ArcadeBattle.defeats_flag(BattleCore.JARMILA)]), 3)
+
+
+func test_arcade_battle_cabinet_villains_get_half_again_hp() -> void:
+	# Arrange
+	var state := FakeState.new()
+	var engine: Dictionary = ArcadeBattle._json(ArcadeBattle.ENEMY_DATA)["enemies"]
+	# Act
+	var core := ArcadeBattle.build("cabinet_frogger", state, _rng(7))
+	# Assert
+	for e in core.enemies:
+		var base := int(engine[e.id]["max_hp"])
+		assert_eq(e.max_hp, roundi(base * 1.5), e.id)
+		assert_eq(e.hp, e.max_hp, e.id)

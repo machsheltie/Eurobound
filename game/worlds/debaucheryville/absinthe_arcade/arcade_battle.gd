@@ -108,11 +108,19 @@ static func build(machine_id: String, state, rng: RandomNumberGenerator) -> Batt
 			u.uses["defeats"] = defeats
 			u.uses["revisions"] = defeats
 			u.display_name = BattleCore.jarmila_name(u.display_name, defeats)
+		_toughen(u)
 		if battle.has("second_thoughts"):
 			core.second_thoughts = float(battle["second_thoughts"])
 		core.add_enemy(u)
 	core.start()
 	return core
+
+
+## cabinet_difficulty (round v28): cabinet villains get +50% HP.
+static func _toughen(u: BattleUnit) -> void:
+	u.max_hp = roundi(u.max_hp * BattleRulings.CABINET_HP_MULT)
+	u.hp = u.max_hp
+	u.meter = float(u.hp)
 
 
 static func _set_palette(u: BattleUnit, battle: Dictionary, palette: String, rng: RandomNumberGenerator) -> void:
