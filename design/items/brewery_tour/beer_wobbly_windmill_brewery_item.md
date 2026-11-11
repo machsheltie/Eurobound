@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | Amber ale, brewed from grain the windmill grinds upstairs. Not a witbier: the Mad Monarch owns wheat beer (author round v24) [source: design/worlds/shamsterdam/wobbly_windmill_brewery.md L242-243; docs/superpowers/NEXT_WORK.md L510-513] |
 | **ABV** | 11%, the tasting-flight finale [author round v34, e3_grist Set A; source: wobbly_windmill_brewery.md L211] |
-| **Effects** | +40 HP, +20 SP, +15% Speed for 3 turns [author round v34, Set A; source: wobbly_windmill_brewery.md L245-249] |
+| **Effects** | +40 HP, +20 Bravado, +15% Speed for 3 turns [author round v34, Set A; source: wobbly_windmill_brewery.md L245-249] |
 | **Risk** | Navigation penalty: -20% Navigation for 5 turns [author round v34, Set A; source: wobbly_windmill_brewery.md L250]. ⚠ AUTHOR-REVIEW: no intoxication-law 10-point review yet; required before engine sync (design/mechanics/intoxication_law.md). |
 | **Price** | Not sold [author round v34, Set A] |
 | **Special** | The room keeps spinning even after you leave. [source: design/worlds/shamsterdam/wobbly_windmill_brewery.md L251] |

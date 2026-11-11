@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | Aged Dutch jenever, zeer oud classification; the beer-style vocabulary exemption applies to the tour's signature drink [source: design/Inventory/brewery_passport_book_complete.md L199] |
 | **ABV** | 35%, the menu's Oude Jenever [author round v34, e3_genever "same_menu": one item, menu numbers; source: bottoms_down.md L217-219] |
-| **Effects** | +25 SP [author round v34, menu numbers; source: bottoms_down.md L217-219] |
+| **Effects** | +25 Bravado [author round v34, menu numbers; source: bottoms_down.md L217-219] |
 | **Risk** | "The Shakes" (accuracy penalty, sprite vibrates, reticle unstable; cure: time, food or sleep; stacks in duration); ⚠ AUTHOR-REVIEW: — magnitude conflicts: -15% Accuracy for 3 turns [source: bottoms_down.md L233, L239-243] vs -20% for 3 turns [source: Inventory passport L202]. No intoxication-law 10-point review found. |
 | **Price** | 6 SOVS [author round v34, menu numbers; source: bottoms_down.md L217-219] |
 | **Special** | Cannot be consumed during combat (hands shaking). The glass is filled to surface tension and must be sipped from the bar, bowing; lifting it spills. [source: design/worlds/shamsterdam/bottoms_down.md L234, L77-80, L196-201] |
@@ -24,6 +24,6 @@
 ## Notes
 - Brewed by — Bottoms Down, 400-year-old recipe [source: design/Inventory/brewery_passport_book_complete.md L206]. Bartender Kees serves it.
 - Passport row: slot 2, signature beer Oude Genever [source: design/items/brewery_passport_book_item.md L197].
-- One item (author round v34, e3_genever "same_menu"): the signature "Oude Genever" and the menu's "Oude Jenever" are the same drink, priced and statted from the menu. The menu's separate "Zeer Oude Jenever" (12 SOVS, +40 SP) is untouched.
+- One item (author round v34, e3_genever "same_menu"): the signature "Oude Genever" and the menu's "Oude Jenever" are the same drink, priced and statted from the menu. The menu's separate "Zeer Oude Jenever" (12 SOVS, +40 Bravado) is untouched.
 - Alternate in the legacy passport doc, not used: "Aged for years. Served for centuries. The sawdust exists for a reason." [source: design/Inventory/brewery_passport_book_complete.md L205]
 - Author, round v34 (2026-11-11), on the name: "the name needs work. This is too high brow and official.... Remember, this is *satire* and *parody*. It isn't supposed to read as serious". ⚠ AUTHOR-REVIEW: rename pending (Writers' Room punch-up).
