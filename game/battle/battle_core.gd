@@ -202,7 +202,7 @@ func run_away() -> void:
 		_say("The bros run for it!")
 		outcome = "ran"
 		return
-	_say("The bros try to run. The cabinet won't let them.")
+	_say("The bros can't get away!")
 	_finish_turn(u)
 
 
@@ -268,7 +268,7 @@ func _turn_lost(u: BattleUnit) -> bool:
 	if u.has_status("food_poisoning"):
 		_dot(u, 2, "Food Poisoning")
 		if _rng.randf() < 0.5:
-			_say("%s's stomach takes this turn." % u.display_name)
+			_say("%s loses the turn to Food Poisoning." % u.display_name)
 			return true
 	if u.has_status("hardcore_gamer"):
 		_dot(u, 1, "Hardcore Gamer")
@@ -881,7 +881,7 @@ func _sauce_swap(e: BattleUnit) -> void:
 		partner = x
 		break
 	if partner == null:
-		_say("%s swaps sauces with himself. Nothing happens." % e.display_name)
+		_say("%s swaps with itself. Nothing happens." % e.display_name)
 		return
 	var log_line := ""
 	for m in e.moves:
