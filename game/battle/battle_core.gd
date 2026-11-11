@@ -190,6 +190,8 @@ func use_item(item_id: String, target: BattleUnit) -> bool:
 	if int(wallet.inventory[item_id]) <= 0:
 		wallet.inventory.erase(item_id)
 	_say("%s uses %s on %s." % [u.display_name, item.get("display_name", item_id), target.display_name])
+	if GameClock.is_drink(item) and "flags" in wallet:
+		GameClock.act(wallet, "drink")  # round v35/v37: a drink costs 10 minutes
 	if revives(item):
 		# e.g. the Already-Spent Credit (count_continue.md): back up at a share of max HP.
 		var hp := maxi(ceili(target.max_hp * float(item["revive_pct"])), 1)

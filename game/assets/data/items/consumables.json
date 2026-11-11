@@ -8,6 +8,7 @@
       "description": "Street meat of dubious provenance. Restores 20 HP."
     },
     "absinthe_shot": {
+      "alcohol": true,
       "display_name": "Absinthe Shot",
       "heal_hp": 0,
       "heal_bravado": 8,

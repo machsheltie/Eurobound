@@ -79,3 +79,18 @@ func test_field_menu_currency_stays_out_of_the_bag() -> void:
 	var ids := _menu(s).bag().map(func(r): return r["id"])
 	# Assert
 	assert_eq(ids, ["lukewarm_kebab"])
+
+
+func test_field_menu_drinking_absinthe_costs_ten_minutes_and_food_doesnt() -> void:
+	# Arrange: an Absinthe Shot (alcohol) and a Lukewarm Kebab (food).
+	var s := FakeState.new()
+	s.inventory = {"absinthe_shot": 1, "lukewarm_kebab": 1}
+	s.party[0]["bravado"] = 2
+	var m := _menu(s)
+	# Act
+	m.use_on("lukewarm_kebab", 0)
+	var after_food := GameClock.watch_text(s)
+	m.use_on("absinthe_shot", 0)
+	# Assert
+	assert_eq(after_food, "10:00")
+	assert_eq(GameClock.watch_text(s), "10:10")

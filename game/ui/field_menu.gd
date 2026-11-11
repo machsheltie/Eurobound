@@ -202,6 +202,8 @@ func use_on(item_id: String, member_index: int) -> bool:
 	state.inventory[item_id] = int(state.inventory[item_id]) - 1
 	if int(state.inventory[item_id]) <= 0:
 		state.inventory.erase(item_id)
+	if GameClock.is_drink(d):
+		GameClock.act(state, "drink")
 	return true
 
 

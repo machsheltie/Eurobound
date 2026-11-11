@@ -17,6 +17,12 @@ const START_HOUR := 10
 const NIGHT_FROM := 20
 const NIGHT_UNTIL := 6
 const DAY := 1440
+## Round v37 drink_tag = alcohol: every alcoholic drink and beer (signature beers, shots, absinthe...)
+## is a drink; food, drugs and vapes are not. Items carry "alcohol": true.
+static func is_drink(item: Dictionary) -> bool:
+	return bool(item.get("alcohol", false))
+
+
 ## Minutes each action costs (round v35).
 const TICK_MINUTES := {"screen": 10, "fight": 20, "minigame": 20, "drink": 10, "talk": 0}
 
