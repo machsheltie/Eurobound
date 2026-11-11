@@ -213,7 +213,7 @@ The ladder resets after KK-3 is won. On a party wipe the bros are spat out of th
 ---
 
 ## 🔧 Development Status
-- **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
+- **Status**: Approved 2026-11-09 (ticket amount approved in the review round, 2026-11-09)
 - **Canon Level**: Approved (the existence of cabinet villains is Established, per the author ruling of 2026-11-02; this roster was approved 2026-11-09, ticket amount approved in the review round)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/condiment_clan_ninja.md`
 - **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`condiment_clan_ninja`), 2026-11-10

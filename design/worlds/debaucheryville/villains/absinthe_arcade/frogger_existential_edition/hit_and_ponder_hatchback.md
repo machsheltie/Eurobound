@@ -247,7 +247,7 @@ background art only (see flags for the cabinet's old "existential meter").
 ---
 
 ## 🔧 Development Status
-- **Status**: Approved 2026-11-09 (ticket amount awaiting author ruling)
+- **Status**: Approved 2026-11-09 (ticket amount approved in the review round, 2026-11-09)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/hit_and_ponder_hatchback.md`
 - **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`hit_and_ponder_hatchback`), 2026-11-10
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_hit_and_ponder_hatchback.png`, with palette swap)
