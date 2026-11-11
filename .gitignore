@@ -44,3 +44,10 @@ tools/art_cleanup/.venv/
 # Godot MCP Pro (paid, proprietary licence: keep out of git)
 tools/godot_mcp_pro_server/
 game/addons/godot_mcp/
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/
+*.gate.lock*
