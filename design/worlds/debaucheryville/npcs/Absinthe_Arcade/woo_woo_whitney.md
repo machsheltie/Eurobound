@@ -21,7 +21,7 @@
 - **Internal Name**: Whitney, the blonde girl with pigtails
 - **Role**: Quest participant (the misread)
 - **Associated Quest**: Grandpa Provides, `debaucheryville_sidequest_grandpa_provides_01` (`design/quests/debaucheryville/grandpa_provides.md`)
-- **Primary Location**: Absinthe Arcade, at the bar with Cara's group
+- **Primary Location**: Absinthe Arcade, with Cara's group on the open floor just west of the prize/bar counter, toward the skee-ball lanes **[RULED — author, round v31]**
 - **Secondary Appearances**: skee-ball row and ticket counter with the group
 
 ---
@@ -133,7 +133,7 @@ the quest is the Promise-ish Ring the bros tip to Tomáš at the prize counter.
 ---
 
 ## 📅 Schedule & Location
-Same as Cara's group (see `cara_birthday_girl.md`, PROPOSED). She is always with the group.
+Same as Cara's group (see `cara_birthday_girl.md`; schedule PROPOSED). She is always with the group. Placement **[RULED — author, round v31]**: the open floor just west of the prize/bar counter, toward the skee-ball lanes.
 
 ---
 

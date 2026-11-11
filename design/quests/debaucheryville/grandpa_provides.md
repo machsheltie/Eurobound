@@ -329,7 +329,7 @@ This is Tomáš's order to Jakub "Tokens" Dvořák to go service the bathroom. I
   | **The Noise Violation** | the whistle the bartender regrets | 15 | "Neon-orange molded plastic without a pea. It produces a shrill, piercing squeal calibrated to trigger immediate bar-staff homicide." | `aa_junk_noise_violation` |
 
 ### Trigger — APPROVED (round v25): trigger A
-With Cara's group at the bar, the first time the bros finish a cabinet fight or DDR song, the pre-approach banter plays automatically. The approach runs when the player walks Pilsner to the bar while the group is there. Walking away skips it. Location: the bros' current game, then the bar (`aa_node_bottle_bar`).
+With Cara's group at the bar, the first time the bros finish a cabinet fight or DDR song, the pre-approach banter plays automatically. The approach runs when the player walks Pilsner to the bar while the group is there. Walking away skips it. Location: the bros' current game, then the bar (`aa_node_bottle_bar`). **Group placement [RULED — author, round v31]:** Cara's group stands on the open floor just west of the prize/bar counter, toward the skee-ball lanes.
 
 ### The Tab — APPROVED (round v25)
 - **40 SOVS** for the five neon test tubes. **The tab does not grow**; it is one round, however many games the bros play before settling.

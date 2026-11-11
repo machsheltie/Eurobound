@@ -301,19 +301,19 @@
   
   "localization_notes": {
     "czech_dialogue": {
-      "local_watching_bros_cry": {
-        "czech": "Milan, podívej. Ti Američané brečí.",
-        "english_subtitle": "Milan, look. The Americans are crying."
+      "milan_watching_bros_cry": {
+        "czech": "Podívej. Ti Američané brečí.",
+        "english_subtitle": "Look. The Americans are crying."
       },
-      "milan_response": {
+      "local_response": {
         "czech": "Kvůli hodinám?",
         "english_subtitle": "Over the clock?"
       },
-      "local_about_tattoo": {
+      "milan_about_tattoo": {
         "czech": "Ten vysoký chce tetování.",
         "english_subtitle": "The tall one wants a tattoo."
       },
-      "milan_final": {
+      "local_final": {
         "czech": "Američané.",
         "english_subtitle": "Americans."
       }

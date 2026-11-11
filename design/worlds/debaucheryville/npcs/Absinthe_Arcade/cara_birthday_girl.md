@@ -26,7 +26,7 @@
 - **Internal Name**: Cara, the birthday girl
 - **Role**: Ambient group NPC / quest participant
 - **Associated Quest**: Grandpa Provides, `debaucheryville_sidequest_grandpa_provides_01` (`design/quests/debaucheryville/grandpa_provides.md`)
-- **Primary Location**: Absinthe Arcade, near the bar (`aa_node_bottle_bar`) **[CANON — approved draft: "five young women near the bar"]**
+- **Primary Location**: Absinthe Arcade, near the bar (`aa_node_bottle_bar`) **[CANON — approved draft: "five young women near the bar"]**. The group stands on the open floor just west of the prize/bar counter, toward the skee-ball lanes **[RULED — author, round v31]**
 - **Secondary Appearances**: the skee-ball machines and the ticket counter after the round **[CANON — approved draft]**
 
 ---
@@ -135,7 +135,7 @@ Have the best 21st anyone has ever had. Mission accomplished, subsidised by Lord
 ## 📅 Schedule & Location (PROPOSED)
 | Time | Location | Activity |
 |------|----------|----------|
-| 20:00–23:00 | Near the bar | Test tubes, sash adjustments, birthday photos |
+| 20:00–23:00 | Open floor just west of the prize/bar counter, toward the skee-ball lanes (placement ruled round v31) | Test tubes, sash adjustments, birthday photos |
 | 23:00–02:00 | Skee-ball row, ticket counter | Playing, cheering, redeeming tickets |
 | 02:00 | Exit | Leave in a shrieking clump |
 
