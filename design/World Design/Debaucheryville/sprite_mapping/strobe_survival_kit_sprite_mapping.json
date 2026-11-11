@@ -76,8 +76,8 @@
       "atlas": "strobe_survival_kit_characters_atlas.png",
       "assets": [
         {
-          "asset_id": "strobe_survival_kit_npc_ssk_npc_miroslav",
-          "filename": "strobe_survival_kit_ssk_npc_miroslav.png",
+          "asset_id": "strobe_survival_kit_npc_ssk_npc_antonin",
+          "filename": "strobe_survival_kit_ssk_npc_antonin.png",
           "role": "character sprite",
           "node_id": "ssk_operator"
         }
@@ -140,8 +140,8 @@
   ],
   "animation_sequences": [
     {
-      "sequence_id": "ssk_npc_miroslav_standard",
-      "asset_id": "strobe_survival_kit_npc_ssk_npc_miroslav",
+      "sequence_id": "ssk_npc_antonin_standard",
+      "asset_id": "strobe_survival_kit_npc_ssk_npc_antonin",
       "frames": [
         "idle",
         "talk",

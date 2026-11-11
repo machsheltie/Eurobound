@@ -13,7 +13,7 @@
 **Area Zone:** Velvet Curtain Club — VIP Backroom / Crypto Mining Basement (interior door)  
 **Character Type:** Crypto Bro Bouncer
 
-> **Not the main-entrance bouncer.** The street door belongs to Tomáš "Stone Face" Černý (`debaucheryville_npc_velvet_curtain_bouncer_01`, see `npc_velvet_curtain_bouncer.md`), whose beat is deliberately crypto-free. Vlad works the interior door one floor in — anyone talking to Vlad is already inside the club.
+> **Not the main-entrance bouncer.** The street door belongs to Kamil "Stone Face" Černý (`debaucheryville_npc_velvet_curtain_bouncer_01`, see `npc_velvet_curtain_bouncer.md`), whose beat is deliberately crypto-free. Vlad works the interior door one floor in — anyone talking to Vlad is already inside the club.
 
 ---
 
@@ -147,7 +147,7 @@
 
 *Player crosses the main floor and approaches the VIP Backroom door*
 
-**Vlad:** "Hold up, tourist. Tomáš waved you in off the street — that's the easy door. This one runs on proof-of-stake entry protocols."
+**Vlad:** "Hold up, tourist. Kamil waved you in off the street — that's the easy door. This one runs on proof-of-stake entry protocols."
 
 **Player Option 1:** "What does that even mean?"
 **Vlad:** "Oh man, you're totally ngmi. Look, imagine if every drink order was verified by a distributed network of—"

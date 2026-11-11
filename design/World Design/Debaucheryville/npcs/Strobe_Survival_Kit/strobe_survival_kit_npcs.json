@@ -3,8 +3,8 @@
   "location_name": "The Strobe Survival Kit",
   "npcs": [
     {
-      "npc_id": "ssk_npc_miroslav",
-      "display_name": "Miroslav",
+      "npc_id": "ssk_npc_antonin",
+      "display_name": "Antonín",
       "role": "operator and tactical briefer",
       "node": "ssk_operator",
       "schedule": "20:00-05:00",
@@ -43,7 +43,7 @@
   ],
   "npc_interactions": [
     {
-      "npc_id": "ssk_npc_miroslav",
+      "npc_id": "ssk_npc_antonin",
       "node_id": "ssk_operator",
       "role": "operator and tactical briefer"
     }

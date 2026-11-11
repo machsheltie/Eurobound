@@ -173,7 +173,7 @@ She is very good at something with no career attached to it. There is no agency 
 ### Positioning Notes
 - Occupies a terminal with sightlines across the whole CRT maze — she chose it and nobody else uses it
 - Sits angled away from her own screen and toward the room, which is why she sees everything and why her posture looks wrong for someone typing
-- Tony420's terminal is immediately to her left. This is not coincidence; it is a stakeout that has lasted three years
+- Tony420's rented terminal is immediately to her left. This is not coincidence; it is a stakeout that has lasted three years. Tony himself is never seen in person (author, 2026-11-11). [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal]
 - Empties accumulate on her side of the desk in a formation that has clearly not been cleared in weeks
 
 ---
@@ -207,7 +207,7 @@ She is very good at something with no career attached to it. There is no agency 
 | NPC | Relationship |
 |-----|--------------|
 | Dmitri "The Router" | Landlord and the room's other permanent fixture. He rents to her, tolerates her, and has never corrected a single claim she's made about herself |
-| Tony420 | Surveillance target of three years. He has no idea. She sits to his right on purpose |
+| Tony420 | Surveillance target of three years. He has no idea. She sits to the right of his rented terminal on purpose. He is never seen in person (author, 2026-11-11). [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal] |
 | Miss Morphine | Her white whale. She has established that the handle has been operated by at least three different physical people and will not say more without payment |
 | NarcGreg | Accidental protégé. His undercover work is so bad she has started quietly protecting it |
 | The ICQ Veterans | Her actual social peer group; 30+ locals with handles older than she is. They respect the six-digit number |
@@ -298,7 +298,7 @@ She is very good at something with no career attached to it. There is no agency 
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Scammer Network Dossier | Any | Yes | Reveals active scam patterns; permanent reduction in scammer targeting frequency |
-| The Tony420 File | Operation Script Kiddie start | Yes | Quest item; identifies the reused wallet across four handles |
+| The Tony420 File | Operation Script Kiddie start | Yes | Quest item; identifies the reused wallet across his four sockpuppet handles, all run by Tony420 himself (author, 2026-11-11) |
 | Forged Social Presence | Any | Yes | Fake references and social media buzz for Couchsurfing Chronicles applications |
 | Meme Page Promotion | Any | No | Temporary buzz; genuinely 47 followers |
 
@@ -310,7 +310,7 @@ She is very good at something with no career attached to it. There is no agency 
 1. Katka mid-conspiratorial-lean, mask on the desk beside her, delivering something completely public
 2. The eleven-brand energy drink empty collection in frame
 3. Her 47-follower meme page open on a CRT
-4. Katka and Tony420 at adjacent terminals, him oblivious, her angled toward the room
+4. Katka beside Tony420's rented terminal, her angled toward the room. [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal]
 5. Candy laid out on the desk during the persona-drop moment
 
 ### Meme Potential

@@ -69,7 +69,7 @@ Should look intimidating at first glance but friendly on approach. His own tatto
 | Philosophical | Has theories about ink and memory |
 
 ### Internal Monologue
-> "Crying man! Perfect. The crying ones always get the biggest pieces. He wants a skeleton? Jakub will... do his best. What matters is the FEELING. The memory. The permanence. Whether it looks like a skeleton or a duck is... details."
+> "Crying man! Perfect. The crying ones always get the biggest pieces. He wants a skeleton? Donát will... do his best. What matters is the FEELING. The memory. The permanence. Whether it looks like a skeleton or a duck is... details."
 
 ### Motivation
 Gets commission for every customer he brings in. Genuinely believes tattoos help people process emotions. Doesn't see himself as part of any scam - he's providing a SERVICE. The quality of the actual tattoos is "artistic interpretation."
@@ -101,8 +101,8 @@ Gets commission for every customer he brings in. Genuinely believes tattoos help
 > "This one understands! Ink is memory. Memory is identity. You want to remember who you were in this moment? Tattoo."
 
 ### The Pitch
-> "We do walk-ins. No appointment. No waiting. No regrets. Mostly no regrets. My colleague Jakub inside - artist. Real artist. European trained."
-*Jakub learned from YouTube*
+> "We do walk-ins. No appointment. No waiting. No regrets. Mostly no regrets. My colleague Donát inside - artist. Real artist. European trained."
+*Donát learned from YouTube*
 
 **On the skeleton design:**
 > "Skeleton from clock? Very popular. Very meaningful. Very fast. Lord Pilsner... you look like lower back guy. Very classic placement. The ladies, they see it when you dance."
@@ -160,7 +160,7 @@ Viktor doesn't sell anything directly. He's the funnel. The shop inside handles 
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Euro Ink Tattoo Artist (Jakub) | Boss/colleague, referral commission |
+| Euro Ink Tattoo Artist (Donát) | Boss/colleague, referral commission |
 | Merchandise Vendor | Referral partnership (temporary tattoos → real tattoos) |
 | Party Monk | Aware of each other, different services |
 | Clock Wine Vendor | Occasional customer sharing |
@@ -183,7 +183,7 @@ After initial encounter:
 - If bros got tattoo, he's extra friendly: "The duck man! My best customer!"
 
 ### In Other Cities
-**Does NOT appear elsewhere** - Viktor is loyal to Euro Ink 4 Less. Mentions "the boss has other shops" (Jakub's expanding empire) but he prefers Debaucheryville. "More crying tourists here."
+**Does NOT appear elsewhere** - Viktor is loyal to Euro Ink 4 Less. Mentions "the boss has other shops" (Donát's expanding empire) but he prefers Debaucheryville. "More crying tourists here."
 
 ### Evolution Through Game
 - First encounter: Full pitch, targets Lord Pilsner specifically

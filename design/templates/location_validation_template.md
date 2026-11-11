@@ -192,7 +192,7 @@
 - **Secondary Targets**: [Additional satirical elements]
 - **Cultural Specificity**: [How it reflects the specific city]
 - **Humor Approach**: [Comedy style and tone]
-- **Sensitivity Considerations**: [How to punch up, not down]
+- **Satire Strength**: [How the satire stays sharp and specific — the bros' delusion AND the city's culture are both fair game; no punch-direction rules (author ruling 2026-08-03)]
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: [Main exploitation/corruption theme]
@@ -308,14 +308,14 @@ location_state:
 - [ ] Satirical targets appropriate
 - [ ] Gameplay value established
 - [ ] Technical feasibility confirmed
-- [ ] No crypto elements (unless explicitly required)
+- [ ] Crypto content (if any) conforms to `design/economy/economy_system.md` and the master pool
 - [ ] Seedy underbelly present
 
 ### Post-Implementation Testing
 - [ ] Navigation tested
 - [ ] Interactive elements functional
 - [ ] Performance optimized
-- [ ] Cultural sensitivity verified
+- [ ] Satire ships at full strength (no sanitizing, softening, or winking)
 - [ ] Cross-location integration confirmed
 ```
 
@@ -1171,7 +1171,7 @@ assets/sprites/locations/[world]/[location_name]/
 | Cultural Specificity | ✅/❌ |
 | Satirical Targets | ✅/❌ |
 | Gameplay Value | ✅/❌ |
-| No Crypto Elements | ✅/❌ |
+| Crypto Conforms to Canon | ✅/❌ |
 | Performance Optimization | ✅/❌ |
 ```
 
@@ -1198,12 +1198,12 @@ assets/sprites/locations/[world]/[location_name]/
 
 ---
 
-## **⚠️ CRYPTO WARNING - CRITICAL**
-- [ ] **Crypto elements ONLY if already established** in existing location description or specifically requested by user
-- [ ] **NO automatic crypto assumptions** - crypto is minor gag used sparingly (2% of game maximum)  
-- [ ] **Focus on city-specific vices instead** (absinthe, pub culture, opera pretension, mystery meat, health violations)
-- [ ] **Target aging frat bro psychology and tourist exploitation** - NOT tech culture unless location specifically calls for it
-- [ ] **DEFAULT: Assume NO crypto involvement** unless explicitly stated in source material
+## **⚠️ CRYPTO CHECK**
+- [ ] **Crypto content conforms to `design/economy/economy_system.md`** — the old "no new crypto content / 2% max" cap is superseded; crypto is a full authored system (SOVS for ~90% of trade, darknet shitcoins for the 10% back-alley economy)
+- [ ] **NO automatic crypto assumptions** - most locations still have none; give a location crypto only where it already earns it
+- [ ] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — do not invent one-off coins in a location file
+- [ ] **The bros are never scam-aware** - even mid-rug-pull, every loss is a market correction; sellers and scammers always know exactly what they have
+- [ ] **Focus on city-specific vices** (absinthe, pub culture, opera pretension, mystery meat, health violations)
 
 ---
 
@@ -1269,7 +1269,7 @@ assets/sprites/locations/[world]/[location_name]/
 ### **Quality Standards**
 - **Complete world consistency** across all locations
 - **Performance optimization** for all environmental effects and interactions
-- **Cultural authenticity** balanced with respectful satirical humor
+- **Cultural specificity** at full satirical strength (no punch-direction rules, author ruling 2026-08-03)
 - **Social media potential** integrated into every location design
 - **Cross-location continuity** maintained throughout narrative progression
 - **All 8-9 required files generated** for every location

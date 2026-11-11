@@ -12,7 +12,7 @@
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_local_observer_milan_01`
 - **Display Name**: Milan
-- **Internal Name**: Milan Novotný (no relation to Jakub "Euro Ink" Novák, the tattoo artist)
+- **Internal Name**: Milan Novotný (no relation to Donát "Euro Ink" Novák, the tattoo artist)
 - **Role**: Ambient NPC / Local Color / Czech Commentary
 - **Associated Quest**: None (background atmosphere)
 - **Primary Location**: Astronomical Cock-Up Square, Debaucheryville

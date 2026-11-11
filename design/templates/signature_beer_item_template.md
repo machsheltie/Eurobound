@@ -11,7 +11,7 @@
 | **ABV** | [X.X%] |
 | **Effects** | [+X HP / +X SP / buffs] |
 | **Risk** | [debuff chance, status, duration] |
-| **Price** | [X Sovs — 8–15 band is a guideline, not a rule (author ruling)] |
+| **Price** | [X SOVS — 8–15 band is a guideline, not a rule (author ruling)] |
 | **Special** | [the beer's unique quirk] |
 
 ## Flavor Text

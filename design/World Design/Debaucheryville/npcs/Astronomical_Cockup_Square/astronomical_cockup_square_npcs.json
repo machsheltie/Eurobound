@@ -266,7 +266,7 @@
   "ambient_npcs": [
     {
       "npc_id": "local_observer_01",
-      "display_name": "Jakub",
+      "display_name": "Milan",
       "npc_type": "ambient",
       "behavior": "stationary_smoking",
       "dialogue": {

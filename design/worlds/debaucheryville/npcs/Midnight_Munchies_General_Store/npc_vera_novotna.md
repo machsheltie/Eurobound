@@ -288,7 +288,7 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 | **Milan Novotný** (Astronomical Cock-Up Square) | Her nephew. Watches the clock all day. She asks whether he moved. He didn't |
 | Mr. Chadz (Late-Night Kebab Stand) | The city's other permanent overnight operator. Mutual professional respect at 4 AM. She stocks pre-wrapped kebabs; neither has ever raised it |
 | Dmitri "The Router" (Cyberspace Kavarna) | Hostel Row's basement counterpart. Neither has been inside the other's business in fifteen years |
-| Miroslav "Miro" Dvořák (The Strobe Survival Kit) | Product overlap — she stocks Club Earplugs marked up from his specialist pricing, and says so on the label |
+| Antonín "Tonda" Pískal (The Strobe Survival Kit) | Product overlap — she stocks Club Earplugs marked up from his specialist pricing, and says so on the label |
 | Token Goblin (Shadow Exchange) | Adjacent near-currency trade at the opposite end of the city. Her Fake VIP Wristbands and Emergency Cab Vouchers are his business conducted above board |
 | Emil "The Green Fairy" Novák (The Bohemian Trap) | His customers arrive at her counter with reversed controls, buying coffee supplies. She has learned to put the change directly in the hand |
 
@@ -440,7 +440,7 @@ Czech, older generation, unhurried. Complete sentences, minimal contractions, no
 
 ## 📝 Development Notes
 
-- **Novotný family canon is confirmed across three files** and is consistent: `npc_jiri_eternal_commuter.md` (sister Věra, nephew Milan), `npc_ambient_clock_square.md` (uncle Jiří, aunt Věra), and `midnight_munchies_general_store.md` (brother Jiří, nephew Milan). The clock-square observer is **Milan Novotný**, explicitly "no relation to Jakub 'Euro Ink' Novák." Any external inventory listing him as Jakub is stale.
+- **Novotný family canon is confirmed across three files** and is consistent: `npc_jiri_eternal_commuter.md` (sister Věra, nephew Milan), `npc_ambient_clock_square.md` (uncle Jiří, aunt Věra), and `midnight_munchies_general_store.md` (brother Jiří, nephew Milan). The clock-square observer is **Milan Novotný**, explicitly "no relation to Donát 'Euro Ink' Novák." Any external inventory listing him under the old name Jakub is stale (renamed round v30).
 - **The Jiří Night Vigil reaction is a proposed cross-location hook.** It is not currently scripted in `tram_stop_17.md` or `midnight_munchies_general_store.md`. It is the strongest available payoff for the Novotný thread and it costs one dialogue branch and a 2 Sovs discount. **Recommend adoption; flag as proposed, not established.**
 - **Source-file world-consistency defect flagged**: `midnight_munchies_general_store.md` uses "Prague" twice (Cultural Targets, QA checklist). This profile uses **Debaucheryville** exclusively. Source needs a find-and-replace pass.
 - **Sprite filename collision resolved**: the location file's inline PNG summary lists `vera_counter.png` at both 256x192 (environment) and 64x96 (character). The authoritative `PNG_Assets/Midnight_Munchies_General_Store_Complete_PNG_Asset_Requirements.md` resolves this — `vera_counter.png` is the **object/counter** asset and `vera_novotna.png` is the **character sheet**. The location file's inline list is stale.

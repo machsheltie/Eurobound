@@ -26,7 +26,7 @@
           "selfie_prop: crying_in_front_of_clock",
           "selfie_prop: level_seven_wristband_flash",
           "npc_group: tourist_crowd_ambient",
-          "npc_group: local_observers_jakub",
+          "npc_group: local_observers_milan",
           "dungeon_entrance: euro_ink_4_less",
           "shop_node: scam_merchandise_stall",
           "shop_node: clock_wine_cart",
@@ -194,7 +194,7 @@
       ],
       "behavior": "crowd_dynamics_hourly_surge"
     },
-    "local_observers_jakub": {
+    "local_observers_milan": {
       "count": 2,
       "behavior": "stationary_smoking_observing",
       "dialogue_trigger": "bros_crying_visible",

@@ -211,7 +211,7 @@ Cash only. There is no card reader in the building and there never has been.
 |-----|--------------|
 | CyberGoth Katka | Longest-running patron in the room. He tolerates her, charges her, and has never once corrected anything she has said about herself |
 | Miss Morphine | An ICQ handle he has watched operate from this room for years across at least three physical people. He has opinions and does not share them |
-| Tony420 | Known quantity. Rents terminals. Runs a fake crypto wallet scheme out of a machine Dmitri rents him at full price |
+| Tony420 | Known quantity. Rents terminals. Runs a fake crypto wallet scheme out of a machine Dmitri rents him at full price. Tony is never seen in person (author, 2026-11-11). [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal] |
 | NarcGreg | Attempting undercover infiltration of the scammer network, extremely badly. Dmitri identified him inside four minutes and has said nothing to anyone |
 | Věra Novotná (Midnight Munchies) | Hostel Row's other permanent overnight operator. Professional nod. Neither has ever been inside the other's business |
 | The ICQ Veterans | 30+ locals using the same handles since 2001. His actual regulars. They pay, they sit, they do not ask questions about the WiFi |

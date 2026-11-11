@@ -13,8 +13,11 @@
 > Both bartender scenes are now ChatGPT's approved scenes from that chat, line for line: **"The Tip"** (Scene 1)
 > and **"The Unsettled Tab"** (Scene 3, which folds in the author's opener). The first-draft tab beat at the bros'
 > next game and the first-draft door scene are superseded and removed (list at the end).
+> **Round v30 (2026-11-11): APPROVED as written** (author): Scene 1 The Tip, Scene 2 The Approach and Scene 3 The
+> Unsettled Tab. The same round ruled the tip trigger, paying early, the title and the Promise-ish Ring's inspect
+> line (Open Questions 1 and 7-10).
 
-## The interaction as written (for author review)
+## The interaction as written (APPROVED, round v30)
 
 ```text
 Grandpa Provides: the full scene, in the order the player sees it. Every line and beat carries a source tag:
@@ -32,7 +35,7 @@ From Scene 1 on, Tomáš wears the ring for the rest of the game, every time the
 
 SCENE 1. THE TIP (at Tomáš's prize counter)
 
-[OTHER: trigger] Plays the first time the bros redeem prizes at the counter with the Promise-ish Ring (5 tickets, junk shelf) among them.
+[RULED v30: trigger] Unmissable. Plays the first time the bros use the prize counter. (So the Promise-ish Ring is among the prizes he counts out that first time. [OTHER: implementation note that follows from the ruling])
 
 The bartender counts out the Bros' prizes with the enthusiasm of a man processing a warranty claim. [DRAFT]
 He slides a handful of cheap plastic garbage across the counter. [DRAFT]
@@ -121,6 +124,10 @@ GIRLS (behind them): "WOOOOOOOOOO!" [DRAFT]
 Pilsner flinches. [DRAFT]
 
 The round is on Pilsner's tab: 40 SOVS for the five test tubes. It does not grow. [RULED v25]
+
+PAYING EARLY [RULED v30]: any time before the exit, the bros can settle the tab by talking to Tomáš at the bar. (40 SOVS [RULED v25])
+TOMÁŠ: "Pleasure doing business with you, Grandpa." [RULED v30]
+Scene 3 then does not play.
 
 
 SCENE 3. THE UNSETTLED TAB (at the exit)
@@ -251,7 +258,7 @@ CHOICE: [PAY] / [REFUSE] [DRAFT; PAY is 40 SOVS, RULED v25]
   END.
 
   LOSE: [RULED v25]
-  The bros wake on the street outside at 1 HP. The tab and the service charge (50 SOVS) are taken from the wallet. If the wallet is short, it is emptied and the rest is waived, with Tomáš's "Grandpa provides." delivered over them.
+  The bros wake on the street outside at 1 HP. The tab and the service charge (50 SOVS) are taken from the wallet. If the wallet is short, it is emptied and the rest is waived. ("Grandpa Provides" is the quest title only; no one says it. [RULED v30])
   END.
 
 
@@ -269,7 +276,7 @@ This is Tomáš's order to Jakub "Tokens" Dvořák to go service the bathroom. I
 
 ## 📋 Quest Identity
 - **Quest ID:** `debaucheryville_sidequest_grandpa_provides_01`
-- **Display Name:** **Grandpa Provides** **[CANON — author, ruled 2026-11-11 round v28]** (the bartender's line from the first draft's door ending; in the current scene it survives only in the ruled LOSE outcome, see Open Questions 10)
+- **Display Name:** **Grandpa Provides** **[CANON — author, ruled 2026-11-11 round v28]** (title only, round v30: no character says it in the scene)
 - **Quest Giver:** None. The quest gives itself: Lord Pilsner walks up to the bar.
   - Trigger NPC: **Woo Woo Whitney** (`debaucheryville_npc_woo_woo_whitney_01`, `design/worlds/debaucheryville/npcs/Absinthe_Arcade/woo_woo_whitney.md`).
   - Group: **Cara** (`debaucheryville_npc_cara_01`, `design/worlds/debaucheryville/npcs/Absinthe_Arcade/cara_birthday_girl.md`) with **Brynleigh, Ashleigh and Kenleigh** **[CANON — author, round v28]**.
@@ -310,13 +317,13 @@ This is Tomáš's order to Jakub "Tokens" Dvořák to go service the bathroom. I
 - The **Promise-ish Ring** **[CANON — author, ruled 2026-11-11 round v28]** is the cheap plastic ring on the prize **junk shelf** (5 tickets), separate from the 13-prize catalogue **[APPROVED round v25]**. It is a junk-shelf prize like any other: no effects, 0 SOVS value.
 - The ring exists **only** in the tip at Tomáš's prize counter (Scene 1 above). **The girls never give Pilsner a ring.** **[CANON — author, round v28]**
 - **Tomáš wears the ring for the rest of the game**, every time the bros encounter him. He never acknowledges it; the bros don't notice. **[CANON — approved draft]** (ChatGPT: "The plastic ring absolutely needs to remain on his finger for the rest of the game whenever we encounter him.")
-- The tip changes nothing mechanically. Scene 3 is written for a Tomáš who has the ring (he wears it, holds the tab with it, thanks them "for the tip", raises his ring hand), so the tip should land before the exit; see Open Questions 8.
-- The tip trigger (the first prize redemption with the Promise-ish Ring among the prizes) is PROPOSED.
+- The tip changes nothing mechanically. Scene 3 is written for a Tomáš who has the ring (he wears it, holds the tab with it, thanks them "for the tip", raises his ring hand), and the tip always lands first, because Scene 1 is unmissable **[RULED round v30]**.
+- **Tip trigger [RULED round v30]:** unmissable; Scene 1 plays the first time the bros use the prize counter.
 - **Junk shelf (APPROVED round v25):** 5-15 tickets, no effects, no catalogue duplicates (sticky hand, vampire teeth and maze are off it). Names, prices and inspect lines **APPROVED** (author, Writers' Room desk 2026-11-11 15:21; text verbatim from `WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md`):
 
   | Prize | What it is | Tickets | Inspect line | Engine key |
   |---|---|---|---|---|
-  | **Promise-ish Ring** | the cheap plastic ring (tip beat, Scene 1) | 5 | **PROPOSED, not yet approved** (ChatGPT's line from the dialogue archive §2, where the item is "CHEAP PLASTIC RING"): "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier." | not registered yet |
+  | **Promise-ish Ring** | the cheap plastic ring (tip beat, Scene 1) | 5 | "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier." **[APPROVED — author, round v30]** | not registered yet |
   | **Terminal Velocity Terry** | parachute men | 10 | "A tangled tangle of green plastic that promises high-altitude heroism and delivers a direct face-plant into bar slop." | `aa_junk_terminal_velocity_terry` |
   | **Forty-Eight-Hour Tramp Stamp** | temporary tattoos | 10 | "A sheet of barbed-wire tribal designs applied with warm beer and removed by twenty minutes of aggressive sweating." | `aa_junk_forty_eight_hour_tramp_stamp` |
   | **The Noise Violation** | the whistle the bartender regrets | 15 | "Neon-orange molded plastic without a pea. It produces a shrill, piercing squeal calibrated to trigger immediate bar-staff homicide." | `aa_junk_noise_violation` |
@@ -329,6 +336,7 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 
 ### The Unsettled Tab (at the exit) **[CANON — approved draft, Scene 3]**
 - If the bros keep playing without settling, nothing happens. Tomáš lets them enjoy themselves.
+- **Paying early [RULED round v30]:** any time before the exit, the bros can settle the tab by talking to Tomáš at the bar (40 SOVS). He says: "Pleasure doing business with you, Grandpa." Scene 3 then does not play.
 - When they approach the exit, he is already waiting beside the door, ring on, holding up the tab, and opens with the author's lines: "Hey, Grandpa." / "You forgot to settle your tab." / "Maybe it's just the dementia." **[CANON — author]**
 - **Choice: [PAY THE TAB] / [REFUSE AGAIN].** PAY THE TAB (40 SOVS) → "Pleasure doing business with you, Grandpa." / "Thanks again for the tip." REFUSE AGAIN → "You can absolutely leave without paying." → Accounts Receivable fill the doorway → "Cash, card, or traumatic brain injury?"
 - **Choice: [PAY] / [REFUSE].** PAY (40 SOVS) → "Smart." / "Runs in the family." REFUSE → "Gentlemen, our guests are experiencing a billing dispute." → the fight.
@@ -337,7 +345,7 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 ### The Fight — Accounts Receivable (APPROVED round v25)
 - Two enforcers, battle nameplates **ACCOUNTS** and **RECEIVABLE**. Profile: `design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md`. The hall "bouncers" **are** Accounts Receivable (round v26); they only appear when summoned.
 - **Win:** the bros scramble out the door; Tomáš's "HEY!" goes unheeded; he looks at the destruction, adds a line to the tab: "Service charge." **Service charge: flat 10 SOVS.** The open tab is then **50 SOVS**.
-- **Lose:** the bros wake on the street outside at 1 HP; the tab and service charge (50 SOVS) are taken from the wallet. If the wallet is short, it is emptied and the rest is waived ("Grandpa provides." delivered over them).
+- **Lose:** the bros wake on the street outside at 1 HP; the tab and service charge (50 SOVS) are taken from the wallet. If the wallet is short, it is emptied and the rest is waived. ("Grandpa Provides" is the quest title only, round v30.)
 - **After fleeing:** the bros can come back. Tomáš greets them with "Tab's open" every visit. Paying is optional forever. **No second fight.**
 
 ### Rewards
@@ -353,7 +361,7 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 |------|------|----------|---------|
 | `debaucheryville.absinthe_arcade.ring_tip_given` | bool | Scene 1 resolves | Scene 3 staging; Tomáš's ring-on sprite for the rest of the game |
 | `debaucheryville.absinthe_arcade.cara_round_bought` | bool | The GRANDPA announcement | Group cheers; Scene 3 exit trigger |
-| `debaucheryville.absinthe_arcade.cara_tab_paid` | bool | PAY THE TAB or PAY in Scene 3 | Exit trigger off |
+| `debaucheryville.absinthe_arcade.cara_tab_paid` | bool | Paying early at the bar, or PAY THE TAB / PAY in Scene 3 | Exit trigger off |
 | `debaucheryville.absinthe_arcade.accounts_receivable_defeated` | bool | Fight won | "Service charge."; return-visit state |
 | `debaucheryville.absinthe_arcade.cara_tab_open` | bool | Fight won (tab + service charge still owed) | "Tab's open" greeting; cleared on payment |
 
@@ -375,22 +383,22 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 | All prices in SOVS | ✅ (tickets only for prizes) |
 | Quest is optional | ✅ |
 | Quest flags registered in `data/quests/flags.json` | ⬜ file doesn't exist (NEXT_WORK deferred item 5) |
-| All names unique across the game | ◐ full names unique; first names and a surname are shared (see Open Questions 1) |
+| All names unique across the game | ✅ round v30: the older NPCs who shared Tomáš, Jakub and Dvořák were renamed (see Open Questions 1) |
 | Follows the author's ChatGPT story | ✅ round v29 rebuild: both bartender scenes line for line from the approved ChatGPT scenes; every non-canon beat marked [OTHER] in the scene above |
 
 ---
 
 ## ❓ Open Questions for the Author
-1. **Name overlaps (grep, round v28):** the full names are unique, but **Tomáš** is also a Velvet Curtain Club bouncer ("Tomáš and Marek", `velvet_curtain_club_environment.json`, `velvet_curtain_club_location_nodes.json`); **Jakub** is also the tattoo artist Jakub "Euro Ink" Novák (`clock_scam_vendors.md`, `duck_tattoo_cosmetic.md`), Receptionist Jakub (`hostel_midnight_checkout.md`) and a Jakub in `astronomical_cockup.md` / `astronomical_cockup_square_npcs.json`; **Dvořák** is also the surname of Miroslav "Father Miro" Dvořák and Václav "Vintage" Dvořák (`clock_scam_vendors.md`). Keep, or rename the others?
-2. Every **[OTHER]** item in the scene above: confirm or strike.
+1. ~~**Name overlaps (grep, round v28):**~~ **RESOLVED (author, round v30): the older NPCs are renamed.** The VCC bouncer is now Kamil "Stone Face" Černý; the tattoo artist Donát "Euro Ink" Novák; the hostel receptionist Radek; the Astronomical Cockup local Milan; the scam vendors Miroslav "Father Miro" Kalich and Václav "Vintage" Ročník.
+2. Every **[OTHER]** item in the scene above: confirm or strike. *(Round v30: the three scenes are approved as written, which covers the Brynleigh line assignment, and the Scene 1 trigger is ruled. Still open: the trigger's implementation note, the "Tokens. Toilet." placement and the villain doc's mid-battle barks; the last two sit outside the scenes.)*
 3. **PAY THE TAB battle command:** add one? Draft default: no.
 4. **Group schedule and persistence:** 20:00–02:00 (PROPOSED), gone after 02:00, or present until the bros leave Debaucheryville?
 5. **Arcade bar menu:** no Arcade bar price list exists. Does the bar need one (and does it sell the test tubes to the bros)? If so, the drinks need the intoxication-law review.
 6. **Ordering against other romance content** (e.g. Nothing Is Getting Through, `design/Quests/debaucheryville/nothingisgettingthrough.md`): does "newly single" constrain it?
-7. **Junk shelf:** the other three items are approved (2026-11-11 desk). Still open: the **Promise-ish Ring's inspect line** (every junk item gets one, CLAUDE.md rule 2026-11-11; none was approved for the ring). PROPOSED: ChatGPT's "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier." Approve or replace? (The archive's "+1 Swagger, −1 Dignity" modifiers are not carried over: junk-shelf prizes have no effects, round v25.)
-8. **No tip, then the exit:** Scene 3 assumes Tomáš has the ring ("thanks again for the tip", the ring hand). If the bros never redeem the Promise-ish Ring, should Scene 1 be unmissable (e.g. it plays on their first prize redemption), or does Scene 3 need a ring-less version? None is written.
-9. **Settling early:** the draft only says nothing happens if the bros keep playing without settling. Can they pay the tab at the bar before the exit?
-10. **"Grandpa provides."** (the quest name) was the first draft's door line; the approved Scene 3 doesn't use it. It now appears only in the ruled LOSE outcome. Keep it there, or move it?
+7. ~~**Junk shelf:**~~ **RESOLVED (author, round v30): the ring's inspect line is "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier."** Original question: the other three items are approved (2026-11-11 desk). Still open: the **Promise-ish Ring's inspect line** (every junk item gets one, CLAUDE.md rule 2026-11-11; none was approved for the ring). PROPOSED: ChatGPT's "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier." Approve or replace? (The archive's "+1 Swagger, −1 Dignity" modifiers are not carried over: junk-shelf prizes have no effects, round v25.)
+8. ~~**No tip, then the exit:**~~ **RESOLVED (author, round v30): Scene 1 is unmissable; it plays the first time the bros use the prize counter.** Original question: Scene 3 assumes Tomáš has the ring ("thanks again for the tip", the ring hand). If the bros never redeem the Promise-ish Ring, should Scene 1 be unmissable (e.g. it plays on their first prize redemption), or does Scene 3 need a ring-less version? None is written.
+9. ~~**Settling early:**~~ **RESOLVED (author, round v30): yes, by talking to Tomáš at the bar; he says "Pleasure doing business with you, Grandpa."** Original question: the draft only says nothing happens if the bros keep playing without settling. Can they pay the tab at the bar before the exit?
+10. ~~**"Grandpa provides."**~~ **RESOLVED (author, round v30): "Grandpa Provides" is the title only; the line is cut from the LOSE outcome.** Original question: (the quest name) was the first draft's door line; the approved Scene 3 doesn't use it. It now appears only in the ruled LOSE outcome. Keep it there, or move it?
 
 ### Superseded in the round v29 rebuild (ChatGPT's first draft, replaced by its approved "The Tip" and "The Unsettled Tab")
 - **The old tip beat:** "The bros redeem the Promise-ish Ring. Tomáš hands it over.", "What... no tip?" (now the draft's "What, no tip?"), the action-only favour, and the open question asking for bro lines. Scene 1 now has the full exchange ("We got you, bro." / "Wow." / "Don't spend it all in one place." / "That's five tickets, dude." / "I'll alert my financial adviser.").
@@ -428,3 +436,4 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 | 2026-11-11 | Round v26: "newly single" is game-wide canon; hall bouncers are Accounts Receivable; both claws work | Claude for machsheltie |
 | 2026-11-11 | Round v28: renamed from `caras_twenty_first.md` to `grandpa_provides.md`; names ruled (Grandpa Provides, Tomáš "Two-Fifty", Jakub "Tokens" Dvořák, Woo Woo Whitney, Brynleigh, Ashleigh, Kenleigh, Promise-ish Ring); the girls' ring beat removed; scene rebuilt from the author's words and the approved draft; non-canon content stripped | Claude for machsheltie |
 | 2026-11-11 | Round v29 rebuild: bartender <-> bros interaction rebuilt line for line from ChatGPT's approved "The Tip" (Scene 1) and "The Unsettled Tab" (Scene 3, with the author's opener); the first draft's tab beat at the next game and its door scene superseded and removed; Tomáš wears the Promise-ish Ring for the rest of the game (restored); enforcers named Accounts Receivable; open questions 8-10 added; ChatGPT's proposed ring inspect line ("Makes your finger look 4% wealthier.") added as PROPOSED; ChatGPT's dialogue archive cross-checked | Claude for machsheltie |
+| 2026-11-11 | Round v30: scene APPROVED as written; tip trigger ruled (unmissable, first use of the prize counter); paying early at the bar ruled; "Grandpa Provides" is the title only (line cut from the LOSE outcome); Promise-ish Ring inspect line approved; name overlaps resolved by renaming the older NPCs | Claude for machsheltie |

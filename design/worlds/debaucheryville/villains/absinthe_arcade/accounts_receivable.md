@@ -10,6 +10,8 @@
 > loss rule and the flee rule are **APPROVED**. Still **PROPOSED — NEEDS AUTHOR RULING:** every unmarked line of
 > dialogue, the appearance details marked PROPOSED, the arena staging and the PAY THE TAB command. **Round v26
 > (2026-11-11), author:** the hall "bouncers" **are** Accounts Receivable (bouncer question resolved below).
+> **Round v30 (2026-11-11), author:** a SOV-steal move is ruled in principle; its numbers are PROPOSED (Shake Down
+> Payment, under the Move List).
 >
 > This is not a cabinet villain. It is the Arcade's only fight with real-world staff, and it only happens if
 > the bros refuse to pay Cara's tab at the front door (Grandpa Provides, `design/quests/debaucheryville/grandpa_provides.md`).
@@ -135,6 +137,27 @@ They go back to wherever they came from; they are the hall bouncers (ruled round
 | Matching Polo Pincer | Physical | Both enforcers hit the same bro in one action, one from each side | — | 20% / only while both are alive (allies-alive trigger, an approved mechanic class) | No |
 | **Past Due** (big move) | Physical | Heavy single hit. **Always targets Lord Pilsner while he is standing** (the tab is in his name); otherwise the lowest-HP bro | Embarrassed (50%) | 15% / max once every 3 rounds per enforcer | **Yes. One full turn of both men cracking their knuckles in unison** |
 
+### New move: Shake Down Payment — RULED IN PRINCIPLE (author, round v30); numbers PROPOSED — NEEDS AUTHOR RULING
+The author, round v30: *"I think Accounts Receivable should be able to steal SOVs from them to help... recover the funds."* **[CANON — author]** A SOV-steal move is ruled in. Its name, text, weight and numbers below are **PROPOSED — NEEDS AUTHOR RULING**.
+
+It is built to sit next to the Sinking Fund's approved **Buy the Dip** (`frogger_existential_edition/sinking_fund.md`: 5 SOVS per hit, money back on victory as a "soggy pile" minus a 20% management fee) without copying it. The Fund is a scam, so its money comes back if you beat it. Accounts Receivable are **collecting a real bill**, so what they take is a payment on the tab, with a receipt.
+
+| Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
+|------|------|--------|------------------|--------------------|--------------|
+| **Shake Down Payment** (PROPOSED) | Gimmick, Physical | One enforcer turns one bro upside down by the ankles and shakes. Light damage, and SOVS fall out of the party wallet (amount: see options). Battle log: *"ACCOUNTS holds Lord Pilsner upside down and shakes. 5 SOVS, a Razr and a burned Linkin Park CD hit the carpet. ACCOUNTS keeps the SOVS. He hands back the CD after reading the tracklist. Balance due: 35 SOVS."* Pilsner, inverted: *"Bro. Dinner first."* | — | 15% / only while the tab has a balance; the weight comes out of Itemized Beating (40% → 25%) | No |
+
+**Numeric options (pick one):**
+
+| Option | Per hit | Where the SOVS go | Win | Lose | Worst case for the bros |
+|---|---|---|---|---|---|
+| **A. Payment on account** *(recommended)* | Flat **5 SOVS** | Credited to the tab. Total taken is capped at the 40 SOVS balance | Taken SOVS stay paid. The open tab after the fight is 50 minus what they collected | Taken SOVS count toward the 50 SOVS loss charge | Never more than the 50 SOVS the bros already owe on a loss |
+| **B. Percentage of the balance** | **15% of the outstanding tab**, rounded up (6, then 5, then 5, then 4...) | Credited to the tab, capped at the balance | As A | As A | As A; each hit takes less as the tab shrinks |
+| **C. Collection fee** | Flat **8 SOVS** | **Not** credited to the tab. A fee, kept | Nothing comes back, the full 50 SOVS stays open | The 50 SOVS loss charge, on top of whatever was shaken loose | Unbounded until the wallet runs dry; harshest |
+
+**Recommendation: A.** It does what the author asked (they recover the funds) and stays clearly different from Buy the Dip: the Fund's money comes back as a soggy refund, while these two keep it and write it down. Every hit makes the tab smaller, so the gag runs the right way (the bros are paying the bill they refused to pay, one shake at a time). The cap keeps the fight inside the approved 40/50 SOVS numbers, and 5 SOVS per hit matches the one approved wallet steal in the Arcade.
+
+**Knock-on edits if approved (not made yet):** the Sinking Fund doc calls Buy the Dip "the only wallet-stealing villain in the Arcade"; that line would need updating. The approved move weights (40/25/20/15) change: Itemized Beating drops to 25%. In Phase 2 Pincer's 20% still moves to Itemized Beating.
+
 ### Phases
 | Phase | Trigger | Behavior Change |
 |-------|---------|-----------------|
@@ -175,7 +198,7 @@ None. The bartender does not fight. He watches from the bar, wiping the same spo
 | **Achievement** | **Billing Dispute**. Public: *"Refuse to pay the tab and win the argument."* Hidden truth: *"You won the fight and lost the war. The tab now has a service charge, and it's in your name."* | Name grep clean |
 
 ### Loss — APPROVED (round v25)
-The arcade rule (lose a cabinet fight: back at the cabinet at 1 HP, tokens spent) doesn't cover this fight. Instead: the bros wake on the street outside at 1 HP. The tab (40 SOVS) and the service charge (10 SOVS) have been taken from their SOVS. If they don't have enough, the wallet is emptied and the rest is waived ("Grandpa provides." **[CANON line]**, delivered over them).
+The arcade rule (lose a cabinet fight: back at the cabinet at 1 HP, tokens spent) doesn't cover this fight. Instead: the bros wake on the street outside at 1 HP. The tab (40 SOVS) and the service charge (10 SOVS) have been taken from their SOVS. If they don't have enough, the wallet is emptied and the rest is waived. ("Grandpa Provides" is the quest title only; no one says it. Author, round v30.)
 
 ### Flee — APPROVED (round v25)
 Winning ends with the bros fleeing and "Service charge." from the doorway. The tab (now 50 SOVS) stays open on every return visit; paying is optional forever; there is **no second fight**.
@@ -202,7 +225,7 @@ Winning ends with the bros fleeing and "Service charge." from the doorway. The t
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ they flee a bill, not a fight |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ◐ name, stats, moves, resistances, rewards, loss and flee rules approved (round v25); bouncer identity resolved (round v26: they are the hall bouncers); PAY THE TAB command and dialogue still pending |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ◐ name, stats, moves, resistances, rewards, loss and flee rules approved (round v25); bouncer identity resolved (round v26: they are the hall bouncers); SOV steal ruled in principle (round v30), Shake Down Payment numbers pending; PAY THE TAB command and dialogue still pending |
 
 ---
 
@@ -219,3 +242,4 @@ Winning ends with the bros fleeing and "Service charge." from the doorway. The t
 | 2026-11-11 | Round v25: name ruled Accounts Receivable (losing options dropped); stats, moves, resistances, rewards, loss and flee rules approved; file renamed from `tab_enforcers.md` | Claude for machsheltie |
 | 2026-11-11 | Round v26: the hall "bouncers" are Accounts Receivable (bouncer question resolved) | Claude for machsheltie |
 | 2026-11-11 | Round v28: quest renamed Grandpa Provides; the bartender is Tomáš "Two-Fifty"; proposed pre-battle bro lines, defeat lines and the girls' cheer during the fight stripped | Claude for machsheltie |
+| 2026-11-11 | Round v30: SOV steal ruled in principle; Shake Down Payment proposed with three numeric options (recommended: 5 SOVS per hit, credited to the tab); "Grandpa provides." cut from the loss rule (title only) | Claude for machsheltie |

@@ -368,7 +368,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Quiz**: Crystal identification quiz for couchsurf
 - **Reward**: Charged Quartz trinket, morning-after "cleansing" exhale
 
-### The Bouncer (Tomáš)
+### The Bouncer (Kamil)
 - **Role**: Entry gate / Comedy straight man / Running gag participant
 - **NPC File**: See `npc_velvet_curtain_bouncer.md`
 - **Personality**: Tired of tourists, finds the bros specifically amusing
@@ -380,10 +380,10 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Role**: Interior door gate / Crypto satire / Bribeable quest giver
 - **NPC File**: See `npcs/Velvet_Curtain_Club/vlad_the_validator.md`
 - **NPC ID**: `debaucheryville_npc_vip_backroom_bouncer_01`
-- **Location**: Interior door to the VIP Backroom / Crypto Mining Basement (main floor, rear) — NOT the street entrance, which is Tomáš's post
+- **Location**: Interior door to the VIP Backroom / Crypto Mining Basement (main floor, rear) — NOT the street entrance, which is Kamil's post
 - **Personality**: Vladimir "Vlad" Kryptovich — former IT support, bought Bitcoin at the top, evangelises blockchain at anyone who slows down
 - **Key Dialogue**: "Sorry bro, VIP list is on the blockchain."
-- **Note**: Tomáš's entrance beat stays deliberately crypto-free; all crypto material lives with Vlad, one door further in
+- **Note**: Kamil's entrance beat stays deliberately crypto-free; all crypto material lives with Vlad, one door further in
 
 ### Second Bouncer (Marek)
 - **Role**: Comedy witness, dialogue partner

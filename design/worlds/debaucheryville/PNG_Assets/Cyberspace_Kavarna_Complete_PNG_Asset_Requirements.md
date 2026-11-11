@@ -165,7 +165,7 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 - **Bootleg Software Dealer** (192, 128, 48x64) - CD collection and furtive transactions
 
 ### Scammer Network Representatives (ported from legacy spec, remapped to 48x64):
-- **Tony420 Fake Crypto** (48, 192, 48x64) - Crypto scammer with obvious fake wallet
+- **Tony420 Fake Crypto** (48, 192, 48x64) - Tony's unnamed goon, big and silent, holding a tablet at face height like a hostage photo; the screen shows Tony420 blurred (Tony is never seen in person; author, 2026-11-11). [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal]
 - **Miss Morphine Mysterious** (96, 192, 48x64) - Identity mystery with multiple personas
 - **NarcGreg Infiltration Attempt** (144, 192, 48x64) - Terrible undercover work
 - **Coordinated Team Leader** (192, 192, 48x64) - Professional tourist targeting

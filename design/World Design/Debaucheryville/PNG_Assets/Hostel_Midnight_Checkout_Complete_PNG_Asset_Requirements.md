@@ -17,7 +17,7 @@
 - `hostel_midnight_checkout_node_hmc_kitchen` → `hostel_midnight_checkout_hmc_kitchen.png` — interaction landmark; node `hmc_kitchen`.
 - `hostel_midnight_checkout_node_hmc_lounge_wifi` → `hostel_midnight_checkout_hmc_lounge_wifi.png` — social landmark; node `hmc_lounge_wifi`.
 - `hostel_midnight_checkout_node_hmc_exit` → `hostel_midnight_checkout_hmc_exit.png` — exit landmark; node `hmc_exit`.
-- `hostel_midnight_checkout_npc_hmc_npc_jakub` → `hostel_midnight_checkout_hmc_npc_jakub.png` — character sprite; node `hmc_reception`.
+- `hostel_midnight_checkout_npc_hmc_npc_radek` → `hostel_midnight_checkout_hmc_npc_radek.png` — character sprite; node `hmc_reception`.
 - `hostel_midnight_checkout_npc_hmc_npc_day_receptionist` → `hostel_midnight_checkout_hmc_npc_day_receptionist.png` — character sprite; node `hmc_reception`.
 - `hostel_midnight_checkout_npc_hmc_npc_long_term_guest` → `hostel_midnight_checkout_hmc_npc_long_term_guest.png` — character sprite; node `hmc_bunk_confession`.
 - `hostel_midnight_checkout_item_hmc_dorm_bed` → `hostel_midnight_checkout_hmc_dorm_bed.png` — item/service icon.
@@ -204,7 +204,7 @@ This document provides exact specifications for all PNG files needed for Hostel 
 **File:** `hostel_staff_sprites.png`  
 **Dimensions:** 256x192 pixels  
 
-### Jakub (64x96 each):
+### Radek (64x96 each):
 | State | Position | Description |
 |-------|----------|-------------|
 | Idle | (0, 0) | Perpetual stubble, thousand-yard stare |
@@ -212,7 +212,7 @@ This document provides exact specifications for all PNG files needed for Hostel 
 | Thousand-Yard Stare | (128, 0) | Seen 10,000 travelers |
 | Handing Key | (192, 0) | Service mode |
 
-**Jakub Visual Notes:** Late 20s Czech, hostel t-shirt, film student who stayed 4 years, helpful but exhausted
+**Radek Visual Notes:** Late 20s Czech, hostel t-shirt, film student who stayed 4 years, helpful but exhausted
 
 ### Petra (64x96 each):
 | State | Position | Description |
@@ -398,7 +398,7 @@ This document provides exact specifications for all PNG files needed for Hostel 
 ### Screenshot-Worthy Moments:
 1. **Passive-Aggressive Note Wall** - Kitchen warfare gallery
 2. **12-Bed Dorm Chaos** - Maximum hostel experience
-3. **Jakub's Thousand-Yard Stare** - Seen everything
+3. **Radek's Thousand-Yard Stare** - Seen everything
 4. **3 AM Confession Scene** - Deep bunk bed conversations
 5. **Single Working Outlet** - THE contested resource
 6. **Snore Visualization** - Sleep quality enemy
@@ -426,4 +426,4 @@ This document provides exact specifications for all PNG files needed for Hostel 
 | Accessibility | ✅ PASS |
 | Social Media | ✅ PASS |
 
-**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Jakub has seen everything and judges nothing. 12 SOVS buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**
+**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Radek has seen everything and judges nothing. 12 SOVS buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**

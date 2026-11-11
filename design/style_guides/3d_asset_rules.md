@@ -1,11 +1,11 @@
 # 3D Asset Rules
 
-Binding rules for every 3D asset (buildings, props, decals) headed for the Unity build. Author rulings, 2026-10-26 to 2026-10-27, unless marked otherwise. Building-specific rulings (e.g. the Absinthe Arcade window cat, its slide-only sash windows) live in that building's manifest and the rulings ledger, not here.
+Binding rules for every 3D asset (buildings, props, decals) headed for the Godot build (project in `game/`). Author rulings, 2026-10-26 to 2026-10-27, unless marked otherwise. Building-specific rulings (e.g. the Absinthe Arcade window cat, its slide-only sash windows) live in that building's manifest and the rulings ledger, not here.
 
 ## Target and pipeline
 
-- **Engine: Unity, Universal Render Pipeline (URP).** FBX is the import format; GLB is exported alongside for previews. Textures follow URP Lit slots: `_basecolor`, `_normal`, `_mask` (R metallic, G AO, A smoothness), `_emissive`.
-- **Pipeline:** author reference images → Tripo Studio → Blender → FBX/GLB plus a layout JSON for Unity assembly.
+- **Engine: Godot 4.7, Forward+ renderer.** GLB (glTF 2.0) is the import format, placed under `game/` and imported by Godot's scene importer. Materials are `StandardMaterial3D` (a `ShaderMaterial` where a custom `.gdshader` is needed). Textures follow the StandardMaterial3D slots: `_basecolor` (Albedo), `_normal` (Normal Map), `_orm` (ORM texture: R ambient occlusion, G roughness, B metallic), `_emissive` (Emission).
+- **Pipeline:** author reference images → Tripo Studio → Blender → GLB plus a layout JSON for Godot scene assembly.
   - Tripo: run the reference crop through Image → **Asset Extraction** first (Tripo fuses anything touching the object into the mesh), then Generate 3D, then Export → GLB into the building's `tripo_raw/`.
   - Blender: every step is a re-runnable script in `tools/content_generation/<building>/`, driven by that folder's `manifest.json` (the source of truth for ids, dimensions, pivots and instances). Change numbers in the JSON first.
 - **Every building gets a manifest doc** copied from `design/templates/3D_Asset_Manifest_Template.md`.

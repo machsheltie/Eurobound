@@ -5,7 +5,7 @@
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_euro_ink_tattoo_artist_01`
 - **Display Name**: Tattoo Artist
-- **Internal Name**: Jakub "Euro Ink" Novák
+- **Internal Name**: Donát "Euro Ink" Novák
 - **Role**: Service Provider (Questionable Quality) / Recurring NPC
 - **Associated Quest**: `debaucheryville_sidequest_astronomical_cockup_01`
 - **Primary Location**: Euro Ink 4 Less, Debaucheryville (Side Alley off Clock Square)
@@ -22,7 +22,7 @@ Running a chain of cheap tattoo shops across EuroMemeia, producing questionable-
 A skilled European tattoo artist is creating an authentic piece of body art commemorating their clock experience. Lord Pilsner specifically believes he's getting a death skeleton from the ancient clock.
 
 ### The Comedy Gap
-Jakub can't draw skeletons. He's never been able to draw skeletons. Every attempt comes out round, with what looks like a bill and wings. He thinks this is "artistic interpretation." Lord Pilsner gets a tramp stamp of a duck holding a scythe and believes it's a majestic European death figure.
+Donát can't draw skeletons. He's never been able to draw skeletons. Every attempt comes out round, with what looks like a bill and wings. He thinks this is "artistic interpretation." Lord Pilsner gets a tramp stamp of a duck holding a scythe and believes it's a majestic European death figure.
 
 ---
 
@@ -56,7 +56,7 @@ Should look like someone who learned tattooing from a YouTube video and thought 
 ## 🧠 Personality
 
 ### Archetype
-**The Confident Incompetent** - Jakub genuinely believes he's a great artist. When customers point out that their skeleton looks like a duck, he explains it's "artistic interpretation" or "European style." He's not malicious; he's just bad at his job and doesn't know it.
+**The Confident Incompetent** - Donát genuinely believes he's a great artist. When customers point out that their skeleton looks like a duck, he explains it's "artistic interpretation" or "European style." He's not malicious; he's just bad at his job and doesn't know it.
 
 ### Personality Traits
 | Trait | Description |
@@ -99,12 +99,12 @@ Started with genuine passion for tattoo art. Never got good but got fast and che
 
 **Chadwick** (examining): "Bro, that looks like a duck."
 
-**Jakub** (immediately defensive):
+**Donát** (immediately defensive):
 > "Is artistic interpretation. European style very different. You Americans don't understand."
 
 **Lord Pilsner**: "It's ARTISTIC INTERPRETATION. Europeans do things different."
 
-**Jakub** (nodding gratefully): "This one understands. Very cultured."
+**Donát** (nodding gratefully): "This one understands. Very cultured."
 
 ### Price Discussion
 > "The Lord Pilsner Special - 75 SOVS. Very fair for custom European work. Cash preferred. Card machine is... broken. Always broken."
@@ -165,7 +165,7 @@ All flash art samples have the same "duck quality":
 | NPC | Relationship |
 |-----|--------------|
 | Tattoo Barker (Viktor) | Employee/partner, handles customer acquisition |
-| Other Branch Jakubs | Himself (or trained disciples), same quality everywhere |
+| Other Branch Donáts | Himself (or trained disciples), same quality everywhere |
 | Party Monk | Occasional "blessed ink" referrals |
 | Local Hospital | On first-name basis with infection ward |
 
@@ -331,6 +331,6 @@ Heavy Czech accent, speaks slowly and deliberately. Sounds confident even when s
 
 ### Satirical Target Verification
 - [x] Targets tourist impulse tattoos, NOT tattoo artists broadly
-- [x] Jakub is confident incompetent, not malicious scammer
+- [x] Donát is confident incompetent, not malicious scammer
 - [x] Humor is in his genuine belief in his work
 - [x] Does NOT mock actual tattoo culture or artists

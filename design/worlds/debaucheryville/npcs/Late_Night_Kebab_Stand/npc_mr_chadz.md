@@ -199,7 +199,7 @@ Currency: Kebab Coins accepted. Prices do not shift by hour — unusually for De
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Tomáš "Stone Face" Černý (Velvet Curtain Club bouncer) | Former colleague. They nod. Neither has spoken to the other in three years and both consider the relationship excellent |
+| Kamil "Stone Face" Černý (Velvet Curtain Club bouncer) | Former colleague. They nod. Neither has spoken to the other in three years and both consider the relationship excellent |
 | Marek "The Witness" Svoboda (second bouncer) | Sends ejected patrons toward the cart with a jerk of the chin; there is no arrangement and no cut, it's just downhill |
 | Chef Chuckles (Mystery Meat Cart) | Professional rival across the meat question. Mr. Chadz has never once badmouthed him, which Chef Chuckles finds unnerving |
 | Věra Novotná (Midnight Munchies) | Mutual respect between the only two operators awake at 4 AM. She stocks pre-wrapped kebabs; he has never mentioned it |

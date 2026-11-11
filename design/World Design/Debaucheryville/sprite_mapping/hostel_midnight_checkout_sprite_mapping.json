@@ -76,8 +76,8 @@
       "atlas": "hostel_midnight_checkout_characters_atlas.png",
       "assets": [
         {
-          "asset_id": "hostel_midnight_checkout_npc_hmc_npc_jakub",
-          "filename": "hostel_midnight_checkout_hmc_npc_jakub.png",
+          "asset_id": "hostel_midnight_checkout_npc_hmc_npc_radek",
+          "filename": "hostel_midnight_checkout_hmc_npc_radek.png",
           "role": "character sprite",
           "node_id": "hmc_reception"
         },
@@ -146,8 +146,8 @@
   ],
   "animation_sequences": [
     {
-      "sequence_id": "hmc_npc_jakub_standard",
-      "asset_id": "hostel_midnight_checkout_npc_hmc_npc_jakub",
+      "sequence_id": "hmc_npc_radek_standard",
+      "asset_id": "hostel_midnight_checkout_npc_hmc_npc_radek",
       "frames": [
         "idle",
         "talk",

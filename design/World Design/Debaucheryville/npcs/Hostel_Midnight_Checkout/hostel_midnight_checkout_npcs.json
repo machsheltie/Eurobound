@@ -3,8 +3,8 @@
   "location_name": "Hostel \"Midnight Checkout\"",
   "npcs": [
     {
-      "npc_id": "hmc_npc_jakub",
-      "display_name": "Jakub",
+      "npc_id": "hmc_npc_radek",
+      "display_name": "Radek",
       "role": "night receptionist and hostel philosopher",
       "node": "hmc_reception",
       "schedule": "night shift",
@@ -94,7 +94,7 @@
   ],
   "npc_interactions": [
     {
-      "npc_id": "hmc_npc_jakub",
+      "npc_id": "hmc_npc_radek",
       "node_id": "hmc_reception",
       "role": "night receptionist and hostel philosopher"
     },

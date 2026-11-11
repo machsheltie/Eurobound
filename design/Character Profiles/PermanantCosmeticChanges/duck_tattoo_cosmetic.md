@@ -15,7 +15,7 @@
 ## 🎭 Core Concept
 
 ### What It Actually Is
-A poorly-executed tattoo of what is clearly a duck holding a scythe, located on Lord Pilsner's lower back (tramp stamp position). The tattoo artist, Jakub, cannot draw skeletons - every attempt comes out round with a bill.
+A poorly-executed tattoo of what is clearly a duck holding a scythe, located on Lord Pilsner's lower back (tramp stamp position). The tattoo artist, Donát, cannot draw skeletons - every attempt comes out round with a bill.
 
 ### What Lord Pilsner Believes
 An authentic European death skeleton from the ancient astronomical clock, commemorating his life-changing spiritual experience in Debaucheryville. A meaningful piece of body art that symbolizes mortality and the passage of time.
@@ -124,7 +124,7 @@ This is purely cosmetic - no gameplay bonuses or penalties:
 | Club Patrons | Pool party scene | *stifled laughter* |
 | Other Tourists | Comparing tattoos | "Mine's a dragon." / "Mine's mortality itself." |
 | Tattoo Artists | Examining | "Who... who did this to you?" |
-| Jakub (other cities) | Recognition | "Ah! My masterpiece! You want matching duck for friend?" |
+| Donát (other cities) | Recognition | "Ah! My masterpiece! You want matching duck for friend?" |
 | Brittany (Post-credits) | Final reveal | "That's definitely a duck." |
 
 ### Chadwick & Bradley
@@ -144,7 +144,7 @@ Throughout game, periodic callbacks:
 - **Quest**: The Astronomical Cock-Up
 - **Stage**: 7a (The Tattoo)
 - **Location**: Euro Ink 4 Less, Debaucheryville
-- **Artist**: Jakub "Euro Ink" Novák
+- **Artist**: Donát "Euro Ink" Novák
 - **Cost**: 75 SOVS
 - **Placement**: "Lower back. Very classic. Very popular with ladies."
 
@@ -157,7 +157,7 @@ permanent_cosmetic_active: true
 ```
 
 ### Permanent World Effects
-- Jakub recognizes Lord Pilsner in ALL cities
+- Donát recognizes Lord Pilsner in ALL cities
 - "The Lord Pilsner Special" (50 SOVS duck designs) offered everywhere
 - Photo of the duck-skeleton displayed in all Euro Ink shops
 - NPCs occasionally reference "the duck tattoo Americans"
@@ -167,14 +167,14 @@ permanent_cosmetic_active: true
 ## 🎬 Key Story Moments
 
 ### The Reveal Scene
-*Jakub holds up mirror:*
+*Donát holds up mirror:*
 > "Is done. Very beautiful."
 
 **Lord Pilsner**: "It's PERFECT. I can feel the history already."
 
 **Chadwick**: "Bro, that looks like a duck."
 
-**Jakub**: "Is artistic interpretation. European style very different."
+**Donát**: "Is artistic interpretation. European style very different."
 
 **Lord Pilsner**: "It's ARTISTIC INTERPRETATION. Europeans do things different."
 
@@ -278,7 +278,7 @@ permanent_cosmetic_active: true
 
 - The duck must be CLEARLY a duck to players but not to Pilsner
 - "Artistic interpretation" must become running defensive line
-- Jakub's recognition in other cities is key callback
+- Donát's recognition in other cities is key callback
 - Beach/pool scenes should make tattoo prominent
 - Consider: Achievement for showing tattoo to 10+ NPCs
 - Post-credits reveal with Brittany is the ultimate payoff
@@ -294,5 +294,5 @@ permanent_cosmetic_active: true
 ### Satirical Target Verification
 - [x] Targets impulse tattoo regret/denial, NOT body art
 - [x] The joke is Pilsner's defense, not the tattoo itself
-- [x] Jakub's inability is endearing, not malicious
+- [x] Donát's inability is endearing, not malicious
 - [x] Does NOT mock actual tattoo culture or recipients

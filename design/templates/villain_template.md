@@ -178,7 +178,7 @@ Canon rules that bind every villain:
 
 ## 🔧 Development Status
 - **Status**: [Concept / Drafted / Author-Approved / Sprites Commissioned / Implemented]
-- **Profile File Location**: `Design/World Design/[City]/villains/villain_[name].md`
+- **Profile File Location**: `design/worlds/[city]/villains/[location_or_group]/[villain_name].md`
 - **Registered In**: [enemy/encounter data file]
 - **Sprite Sheet**: [filename.png or "not yet specced"]
 

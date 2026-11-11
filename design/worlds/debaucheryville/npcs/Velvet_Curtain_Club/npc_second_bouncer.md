@@ -17,13 +17,13 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Standing as backup bouncer, occasionally checking IDs, but primarily serving as Tomáš's dialogue partner for Czech commentary on ridiculous tourists.
+Standing as backup bouncer, occasionally checking IDs, but primarily serving as Kamil's dialogue partner for Czech commentary on ridiculous tourists.
 
 ### What Bros Believe
 A second elite gatekeeper is acknowledging their VIP status through some kind of professional European security protocol.
 
 ### The Comedy Gap
-Marek's only dialogue contribution is suggesting the bros should get the children's menu. His "Američané" response is pure solidarity with Tomáš's exhaustion.
+Marek's only dialogue contribution is suggesting the bros should get the children's menu. His "Američané" response is pure solidarity with Kamil's exhaustion.
 
 ---
 
@@ -33,51 +33,51 @@ Marek's only dialogue contribution is suggesting the bros should get the childre
 | Attribute | Description |
 |-----------|-------------|
 | Age | 25-35 |
-| Build | Large, slightly less imposing than Tomáš |
+| Build | Large, slightly less imposing than Kamil |
 | Height | Tall |
 | Energy | Younger, more easily amused |
 
 ### Clothing
-- **Top**: Black t-shirt (matching Tomáš)
+- **Top**: Black t-shirt (matching Kamil)
 - **Pants**: Black pants
 - **Accessories**: Similar earpiece
 
 ### Distinguishing Features
 - Younger face, more expressive
 - Actually laughs at the wristband situation (doesn't suppress it)
-- Looks to Tomáš for cues
+- Looks to Kamil for cues
 - Slightly less world-weary, still finds tourists funny
 
 ### Sprite Notes
-Should look like younger version of Tomáš - same uniform, less tired. His laugh during the wristband scene should be visible.
+Should look like younger version of Kamil - same uniform, less tired. His laugh during the wristband scene should be visible.
 
 ---
 
 ## 🧠 Personality
 
 ### Archetype
-**The Amused Witness** - Marek hasn't been doing this as long as Tomáš. He still finds American tourists genuinely funny rather than exhausting. He's here for the comedy.
+**The Amused Witness** - Marek hasn't been doing this as long as Kamil. He still finds American tourists genuinely funny rather than exhausting. He's here for the comedy.
 
 ### Personality Traits
 | Trait | Description |
 |-------|-------------|
 | Amused | Still entertained by tourist absurdity |
-| Supportive | Backs up Tomáš's deadpan with laughter |
+| Supportive | Backs up Kamil's deadpan with laughter |
 | Quick-witted | Children's menu line is improvised |
-| Junior | Defers to Tomáš's seniority |
+| Junior | Defers to Kamil's seniority |
 
 ### Internal Monologue
-> "Did he just show us a children's birthday wristband? And he's proud of it? This job is amazing. Tomáš looks so tired. I should say something funny."
+> "Did he just show us a children's birthday wristband? And he's proud of it? This job is amazing. Kamil looks so tired. I should say something funny."
 
 ### Motivation
-Enjoys the job. Gets to people-watch, hang out with Tomáš, and witness incredible tourist behavior nightly. The children's menu joke is his contribution to the moment.
+Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredible tourist behavior nightly. The children's menu joke is his contribution to the moment.
 
 ---
 
 ## 💬 Dialogue
 
 ### Main Scene Contribution
-**After Tomáš shows him the wristband:**
+**After Kamil shows him the wristband:**
 
 > *(in Czech, subtitled)*
 > "Měl by dostat dětské menu."
@@ -88,13 +88,13 @@ Enjoys the job. Gets to people-watch, hang out with Tomáš, and witness incredi
 ### Aftermath Exchange
 **After bros enter:**
 
-*Tomáš:* "Američané."
+*Kamil:* "Američané."
 
 > *nodding sagely*
 > "Američané."
 
 ### Callback (If Bros Return)
-> *(to Tomáš, in Czech, subtitled)*
+> *(to Kamil, in Czech, subtitled)*
 > "The seven-year-olds are back."
 
 ---
@@ -107,7 +107,7 @@ Enjoys the job. Gets to people-watch, hang out with Tomáš, and witness incredi
 | 20:00-04:00 | Club entrance (secondary position) | Backup bouncing |
 
 ### Positioning Notes
-- Stands slightly behind and to the side of Tomáš
+- Stands slightly behind and to the side of Kamil
 - Close enough for dialogue exchanges
 - Available for Czech commentary
 
@@ -118,7 +118,7 @@ Enjoys the job. Gets to people-watch, hang out with Tomáš, and witness incredi
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Velvet Curtain Bouncer (Tomáš) | Senior colleague, mentor |
+| Velvet Curtain Bouncer (Kamil) | Senior colleague, mentor |
 | Club Staff | Coworkers |
 
 ---
@@ -129,13 +129,13 @@ Enjoys the job. Gets to people-watch, hang out with Tomáš, and witness incredi
 | Animation | Description | Frequency |
 |-----------|-------------|-----------|
 | standing_ready | Default stance | 50% |
-| glancing_at_tomas | Looking to senior bouncer | 30% |
+| glancing_at_kamil | Looking to senior bouncer | 30% |
 | suppressing_laugh | Watching tourists | 20% |
 
 ### Interaction Animations
 | Animation | Trigger |
 |-----------|---------|
-| lean_in_look | Tomáš shows wristband |
+| lean_in_look | Kamil shows wristband |
 | genuine_laugh | Children's menu line |
 | nodding | "Američané" exchange |
 
@@ -168,6 +168,6 @@ Enjoys the job. Gets to people-watch, hang out with Tomáš, and witness incredi
 ## 📝 Development Notes
 
 - Children's menu line is KEY comedy beat
-- His laughter should contrast with Tomáš's deadpan
+- His laughter should contrast with Kamil's deadpan
 - "Američané" exchange needs perfect timing
-- Younger energy provides counterpoint to Tomáš's exhaustion
+- Younger energy provides counterpoint to Kamil's exhaustion

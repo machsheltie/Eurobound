@@ -88,8 +88,8 @@
       "atlas": "velvet_curtain_club_characters_atlas.png",
       "assets": [
         {
-          "asset_id": "velvet_curtain_club_npc_vcc_npc_tomas",
-          "filename": "velvet_curtain_club_vcc_npc_tomas.png",
+          "asset_id": "velvet_curtain_club_npc_vcc_npc_kamil",
+          "filename": "velvet_curtain_club_vcc_npc_kamil.png",
           "role": "character sprite",
           "node_id": "vcc_bouncer_gate"
         },
@@ -158,8 +158,8 @@
   ],
   "animation_sequences": [
     {
-      "sequence_id": "vcc_npc_tomas_standard",
-      "asset_id": "velvet_curtain_club_npc_vcc_npc_tomas",
+      "sequence_id": "vcc_npc_kamil_standard",
+      "asset_id": "velvet_curtain_club_npc_vcc_npc_kamil",
       "frames": [
         "idle",
         "talk",

@@ -25,7 +25,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 ## Spatial Composition
 
 1. **Opera-Ruins Alley** — Graffiti lane, dumpster mural and rope checkpoint.
-2. **Velvet Rope Gate** — Tomáš and Marek guard the bass-pulsing curtain.
+2. **Velvet Rope Gate** — Kamil and Marek guard the bass-pulsing curtain.
 3. **Dance Floor** — Burgundy fog beneath vape-pen chandeliers.
 4. **Broken-Throne DJ Dais** — DJ platform and club audio landmark.
 5. **Crushed-Velvet Booths** — Semicircular social and quest seating.
@@ -48,7 +48,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 | `velvet_curtain_club_node_vcc_vip_path` | `velvet_curtain_club_vcc_vip_path.png` | transition landmark | `vcc_vip_path` |
 | `velvet_curtain_club_node_vcc_lab_path` | `velvet_curtain_club_vcc_lab_path.png` | transition landmark | `vcc_lab_path` |
 | `velvet_curtain_club_node_vcc_exit` | `velvet_curtain_club_vcc_exit.png` | exit landmark | `vcc_exit` |
-| `velvet_curtain_club_npc_vcc_npc_tomas` | `velvet_curtain_club_vcc_npc_tomas.png` | character sprite | `vcc_bouncer_gate` |
+| `velvet_curtain_club_npc_vcc_npc_kamil` | `velvet_curtain_club_vcc_npc_kamil.png` | character sprite | `vcc_bouncer_gate` |
 | `velvet_curtain_club_npc_vcc_npc_marek` | `velvet_curtain_club_vcc_npc_marek.png` | character sprite | `vcc_bouncer_gate` |
 | `velvet_curtain_club_npc_vcc_npc_vanessa` | `velvet_curtain_club_vcc_npc_vanessa.png` | character sprite | `vcc_booths` |
 | `velvet_curtain_club_npc_vcc_npc_dj` | `velvet_curtain_club_vcc_npc_dj.png` | character sprite | `vcc_dj_dais` |
@@ -61,7 +61,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## State and Character Coverage
 
-- **Tomáš:** idle, talk, react and service frames; Cybernetic eye, black coat and unimpressed posture.
+- **Kamil:** idle, talk, react and service frames; Cybernetic eye, black coat and unimpressed posture.
 - **Marek:** idle, talk, react and service frames; Buff silhouette and velvet rope gloves.
 - **Vape Witch Vanessa:** idle, talk, react and service frames; Burgundy clubwear, crystal vape and occult glow.
 - **DJ Sound Alchemist:** idle, talk, react and service frames; Broken-throne silhouette and LED headphones.

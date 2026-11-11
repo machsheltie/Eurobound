@@ -297,7 +297,7 @@
 ## 🔧 Development Status
 
 - **Status**: [Concept / Drafted / Reviewed / Sprites Commissioned / Implemented]
-- **Profile File Location**: `Design/World Design/[City]/npcs/[Location_Name]/npc_[name].md`
+- **Profile File Location**: `design/worlds/[city]/npcs/[Location_Name]/npc_[name].md`
 - **Registered In**: `[location_name]_npcs.json` [Yes/No — every profiled NPC must appear in its location's JSON roster]
 - **Sprite Sheet**: [filename.png or "not yet specced"]
 
@@ -309,4 +309,4 @@
 
 ---
 
-*Template Version 1.1 — Based on Shady Wristband Guy profile structure. This is the canonical NPC template; the legacy `Character Profiles/Templates/npc_template.md` is retired.*
+*Template Version 1.1 — Based on Shady Wristband Guy profile structure. This is the canonical NPC template; the legacy `Character Profiles/Templates/npc_template.md` is retired (now at `design/legacy/retired_templates/npc_template.md`).*

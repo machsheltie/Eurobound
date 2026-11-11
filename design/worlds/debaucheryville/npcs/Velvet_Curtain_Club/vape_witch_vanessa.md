@@ -180,7 +180,7 @@ All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALL
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|----------------|
-| Tomáš (Velvet Curtain bouncer) | Working relationship; he waves her regulars through and she does not send him problems |
+| Kamil (Velvet Curtain bouncer) | Working relationship; he waves her regulars through and she does not send him problems |
 | Marek (second bouncer) | Cordial; they have a running bet about which tourist group is going to try the VIP stall next |
 | DJ "Sound Alchemist" | Professional tolerance in both directions; she books the promo, he refuses to be called a DJ, neither budges |
 | Backpack Girl Who Never Left | Nodding acquaintance across the couchsurf circuit; each considers the other's hosting standards insane |

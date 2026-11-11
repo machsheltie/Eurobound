@@ -5,7 +5,7 @@
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_velvet_curtain_bouncer_01`
 - **Display Name**: Bouncer
-- **Internal Name**: Tomáš "Stone Face" Černý
+- **Internal Name**: Kamil "Stone Face" Černý
 - **Role**: Club Security / Comedy Straight Man
 - **Associated Quest**: `debaucheryville_sidequest_vip_wristbands_01`
 - **Primary Location**: Velvet Curtain Club Entrance, Debaucheryville
@@ -22,7 +22,7 @@ Working as a bouncer at a club that has free entry. His job is checking IDs for 
 An elite gatekeeper of Debaucheryville's most exclusive nightclub is being intimidated by their VIP wristbands. Their Level Seven status has earned them instant respect and access that lesser tourists could never achieve.
 
 ### The Comedy Gap
-Tomáš knows the wristbands say "I'm 7!" (as in seven years old). He reads Czech fluently. He barely contains his laughter while checking their IDs. He lets them in because it's FREE - the wristbands mean nothing. His exhausted acceptance of American tourist delusions is the entire joke.
+Kamil knows the wristbands say "I'm 7!" (as in seven years old). He reads Czech fluently. He barely contains his laughter while checking their IDs. He lets them in because it's FREE - the wristbands mean nothing. His exhausted acceptance of American tourist delusions is the entire joke.
 
 ---
 
@@ -57,7 +57,7 @@ Should look like someone who was intimidating 10 years ago and now just wants to
 ## 🧠 Personality
 
 ### Archetype
-**The Exhausted Professional** - Tomáš has been bouncing for 15 years. He's seen drunk tourists, celebrity wannabes, fake VIPs, and every scam imaginable. Nothing surprises him anymore. He's fluent in six languages but chooses to respond in the universal dialect of "exhausted service worker dealing with confident idiots."
+**The Exhausted Professional** - Kamil has been bouncing for 15 years. He's seen drunk tourists, celebrity wannabes, fake VIPs, and every scam imaginable. Nothing surprises him anymore. He's fluent in six languages but chooses to respond in the universal dialect of "exhausted service worker dealing with confident idiots."
 
 ### Personality Traits
 | Trait | Description |
@@ -103,7 +103,7 @@ He gets paid by the hour. The club is free to enter. His job is age verification
 
 **Lord Pilsner** (shoving wristband in face): "VIP. Three of us. We're on the list."
 
-*Tomáš looks at wristband, long pause, slight smirk*
+*Kamil looks at wristband, long pause, slight smirk*
 
 > *(in Czech, subtitled for player)*
 > "Sedm let. Jsi sedmiletý VIP?"
@@ -189,7 +189,7 @@ He gets paid by the hour. The club is free to enter. His job is age verification
 | Crushing Reality | Free | They won't accept it anyway |
 
 ### Not a Vendor
-Tomáš provides no items, sells nothing. His only function is the gate encounter and subsequent deadpan commentary.
+Kamil provides no items, sells nothing. His only function is the gate encounter and subsequent deadpan commentary.
 
 ---
 
@@ -221,7 +221,7 @@ After initial encounter:
 - Visible checking other tourists' actual VIP passes
 
 ### In Other Cities
-**Does NOT appear elsewhere** - Tomáš is Velvet Curtain Club for life. The job is stable, the pay is decent, and he's too tired to change careers.
+**Does NOT appear elsewhere** - Kamil is Velvet Curtain Club for life. The job is stable, the pay is decent, and he's too tired to change careers.
 
 ### Evolution Through Game
 - Pre-wristband: "At capacity" brush-off
@@ -289,7 +289,7 @@ After initial encounter:
 ## 📸 Social Media / Viral Potential
 
 ### Screenshot Moments
-1. Tomáš examining wristband with slight smirk
+1. Kamil examining wristband with slight smirk
 2. Czech subtitles: "Seven years old. You're a seven-year-old VIP?"
 3. The long pause after "Your bracelet says... 'I am seven.'"
 4. "Američané." exchange between bouncers
@@ -362,6 +362,6 @@ Czech accent, deliberately speaking slowly in English for "stupid tourists." His
 
 ### Satirical Target Verification
 - [x] Targets tourist VIP obsession, NOT Czech service workers
-- [x] Tomáš is exhausted professional, completely sympathetic
+- [x] Kamil is exhausted professional, completely sympathetic
 - [x] Humor is in his reasonable reaction to unreasonable people
 - [x] Does NOT mock actual nightlife workers or Czech people

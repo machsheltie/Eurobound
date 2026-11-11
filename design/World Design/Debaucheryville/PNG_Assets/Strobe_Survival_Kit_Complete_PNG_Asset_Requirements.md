@@ -29,7 +29,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 3. **Visual Enhancement** — Glow sticks, LED glasses and visibility gear.
 4. **Chemical Support** — Documented club-support consumables.
 5. **Decibel Warning Display** — Live nearby-club hazard readout.
-6. **Miroslav Counter** — Checkout and tactical briefing point.
+6. **Antonín Counter** — Checkout and tactical briefing point.
 7. **Quarter Exit** — Returns to the neon street.
 
 ## Required PNG Assets
@@ -44,7 +44,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 | `strobe_survival_kit_node_ssk_decibel_display` | `strobe_survival_kit_ssk_decibel_display.png` | interaction landmark | `ssk_decibel_display` |
 | `strobe_survival_kit_node_ssk_operator` | `strobe_survival_kit_ssk_operator.png` | service landmark | `ssk_operator` |
 | `strobe_survival_kit_node_ssk_exit` | `strobe_survival_kit_ssk_exit.png` | exit landmark | `ssk_exit` |
-| `strobe_survival_kit_npc_ssk_npc_miroslav` | `strobe_survival_kit_ssk_npc_miroslav.png` | character sprite | `ssk_operator` |
+| `strobe_survival_kit_npc_ssk_npc_antonin` | `strobe_survival_kit_ssk_npc_antonin.png` | character sprite | `ssk_operator` |
 | `strobe_survival_kit_item_ssk_foam_earplugs` | `strobe_survival_kit_ssk_foam_earplugs.png` | item/service icon | global |
 | `strobe_survival_kit_item_ssk_musician_earplugs` | `strobe_survival_kit_ssk_musician_earplugs.png` | item/service icon | global |
 | `strobe_survival_kit_item_ssk_strobe_shades` | `strobe_survival_kit_ssk_strobe_shades.png` | item/service icon | global |
@@ -56,7 +56,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## State and Character Coverage
 
-- **Miroslav:** idle, talk, react and service frames; Military-surplus vest, hearing protection and clipboard.
+- **Antonín:** idle, talk, react and service frames; Military-surplus vest, hearing protection and clipboard.
 - `strobe_survival_open`: provide a readable base/change indicator where visually applicable.
 - `strobe_survival_midnight_markup`: provide a readable base/change indicator where visually applicable.
 - `strobe_tactical_briefing_seen`: provide a readable base/change indicator where visually applicable.

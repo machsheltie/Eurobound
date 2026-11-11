@@ -8,8 +8,9 @@ This template is for PERMANENT ITEMS: items that become permanently affixed to a
 once acquired (cosmetic-permanent, hybrid cosmetic+mechanical, or curse items). They
 are never equipped/unequipped through a normal item slot - once on, they're on for
 the rest of the game (see vip_wristband_item.md for the exemplar this was generalized
-from). If the item CAN be removed/swapped through an equipment slot, use an equipment
-item template instead, not this one.
+from). If the item CAN be removed/swapped through an equipment slot, use
+equipment_template.md instead, not this one. Depleting items (food, drinks, drugs)
+use consumable_item_template.md.
 
 Replace every [bracketed placeholder] with real content. Delete this comment block
 before publishing the finished item doc. Keep all H2 section headers (with emoji) and
@@ -41,9 +42,9 @@ matching exactly.
 
 | Attribute | Value |
 |-----------|-------|
-| **Purchase Price** | [X Sovs each / X Sovs for all 3 bros] |
-| **Actual Value** | [X Sovs] |
-| **Resale Value** | [X Sovs or "0 Sovs (worthless)"] |
+| **Purchase Price** | [X SOVS each / X SOVS for all 3 bros] |
+| **Actual Value** | [X SOVS] |
+| **Resale Value** | [X SOVS or "0 SOVS (worthless)"] |
 | **Can Be Sold** | [Yes/No + why] |
 | **Can Be Dropped** | [Yes/No + why, e.g. "No (permanent cosmetic)"] |
 | **Can Be Traded** | [Yes/No + why] |

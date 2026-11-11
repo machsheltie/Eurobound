@@ -170,7 +170,7 @@
       "occlusion": "Keep traversal and interaction silhouette readable."
     },
     "ssk_operator": {
-      "display_name": "Miroslav Counter",
+      "display_name": "Antonín Counter",
       "image_generation_description": "Checkout and tactical briefing point.",
       "states": [
         "base",

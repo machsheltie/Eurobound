@@ -164,7 +164,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 
 ---
 
-## 🪖 Sprite Sheet 4: Antonín "Tonda" Dvořák
+## 🪖 Sprite Sheet 4: Antonín "Tonda" Pískal
 **File:** `antonin.png`
 **Dimensions:** 256x384 pixels
 

@@ -5,7 +5,7 @@
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_clock_wine_vendor_01`
 - **Display Name**: Clock Wine Vendor
-- **Internal Name**: Václav "Vintage" Dvořák
+- **Internal Name**: Václav "Vintage" Ročník
 - **Role**: Scam Vendor / Consumables Dealer
 - **Associated Quest**: `debaucheryville_sidequest_astronomical_cockup_01`
 - **Primary Location**: Astronomical Cock-Up Square, Debaucheryville (Wine Cart Position)

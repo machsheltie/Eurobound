@@ -294,4 +294,4 @@ Namespaced `city.venue.event` strings (PRD §11). Flags are write-once booleans 
 
 ---
 
-*Template Version 2.0 — 2026-08-04: absorbed the retired `quest.md` short form (quest type/tier, repeatable, difficulty, quest-giver cover vs true identity, linear stages, standard rewards, completion achievement, quest flags & technical implementation). Narrator section struck per author ruling; crypto and currency checks aligned to canon. This is the only sidequest template.*
+*Template Version 2.0 — 2026-08-04: absorbed the retired `quest.md` short form (now at `design/legacy/retired_templates/quest.md`) (quest type/tier, repeatable, difficulty, quest-giver cover vs true identity, linear stages, standard rewards, completion achievement, quest flags & technical implementation). Narrator section struck per author ruling; crypto and currency checks aligned to canon. This is the only sidequest template.*

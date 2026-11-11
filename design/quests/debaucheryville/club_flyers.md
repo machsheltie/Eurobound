@@ -362,7 +362,7 @@
 - DJ Beatdrop becomes minor recurring NPC
 
 ### ICQ Integration Hooks
-- **Tony420** recognizes their outdated slang: *"wassup bros! u sound like my target demographic. got this sick investment opportunity - nigerian prince needs help moving 10 Sovs million. totally legit bro"*
+- **Tony420** recognizes their outdated slang: *"wassup bros! u sound like my target demographic. got this sick investment opportunity - nigerian prince needs help moving 10 million ponz. totally legit bro"*
 - **CryptoBro69** when they mention Beanie Babies: *"yooo beanie babies = OG collectibles market! APES TOGETHER STRONG! launching BEANIEMOON coin - diamond hands only! 🚀🚀🚀 to the moon! this is not financial advice (but totally YOLO ur student loans)"*
 - Random popup ads: *"🎉 CONGRATULATIONS! You are visitor #47! Click here to claim your FREE TRIBAL FLAME WALLPAPER! 🎉"*
 

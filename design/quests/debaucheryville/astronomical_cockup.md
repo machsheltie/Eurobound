@@ -275,10 +275,10 @@
 ### Local Commentary (In Czech, Subtitled)
 
 **Local watching bros cry:**
-> "Jakub, podÃ­vej. Ti AmeriÄanÃ© breÄÃ­."
-> *(Jakub, look. The Americans are crying.)*
+> "Milan, podÃ­vej. Ti AmeriÄanÃ© breÄÃ­."
+> *(Milan, look. The Americans are crying.)*
 
-**Jakub:**
+**Milan:**
 > "KvÅ¯li hodinÃ¡m?"
 > *(Over the clock?)*
 
@@ -286,7 +286,7 @@
 > "Ten vysokÃ½ chce tetovÃ¡nÃ­."
 > *(The tall one wants a tattoo.)*
 
-**Jakub:**
+**Milan:**
 > *lights cigarette, nods*
 > "AmeriÄanÃ©."
 > *(Americans.)*

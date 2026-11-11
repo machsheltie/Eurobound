@@ -5,7 +5,7 @@
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_party_monk_01`
 - **Display Name**: The Party Monk
-- **Internal Name**: Miroslav "Father Miro" Dvořák
+- **Internal Name**: Miroslav "Father Miro" Kalich
 - **Role**: Scam Vendor / Fake Spiritual Guide
 - **Associated Quest**: `debaucheryville_sidequest_astronomical_cockup_01`
 - **Primary Location**: Astronomical Clock-Up Square, Debaucheryville (Fountain Area)

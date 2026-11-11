@@ -1,6 +1,6 @@
 # [Building Name] — 3D Asset Manifest
 
-**Purpose:** production manifest for one building's 3D kit (exterior or interior) headed for Unity URP. Rules that apply to every kit live in `design/style_guides/3d_asset_rules.md`; this file records what is specific to this building. Every section below is required. Worked example: `design/worlds/debaucheryville/absinthearcade_3d_asset_manifest.md`.
+**Purpose:** production manifest for one building's 3D kit (exterior or interior) headed for Godot 4.7 (Forward+ renderer; the Godot project is `game/`). Rules that apply to every kit live in `design/style_guides/3d_asset_rules.md`; this file records what is specific to this building. Every section below is required. Worked example: `design/worlds/debaucheryville/absinthearcade_3d_asset_manifest.md` (its engine sections are from the superseded Unity plan; the current Godot manifest for that building is `Assets/Graphics/worlds/debaucheryville/absinthearcade/absinthearcade_exterior/hd2d_asset_manifest.md`).
 
 **File naming:** `[location]_3d_asset_manifest.md`, snake_case, saved beside the location doc in `design/worlds/[world]/`.
 
@@ -55,15 +55,15 @@ The numbers here mirror `tools/content_generation/[building]/manifest.json`, the
 
 ## UV and texture rules
 
-[Texture sets per material (URP Lit slots), texel density, scene texture caps, which surfaces the author hand-paints.]
+[Texture sets per material (StandardMaterial3D slots: `_basecolor` Albedo, `_normal` Normal Map, `_orm` ORM, `_emissive` Emission), texel density, scene texture caps, which surfaces the author hand-paints.]
 
 ## Emissive / neon
 
-[If the kit has lit elements: mask channel layout and the Shader Graph contract. Otherwise "None".]
+[If the kit has lit elements: mask channel layout and the `ShaderMaterial` / `.gdshader` contract (or the StandardMaterial3D Emission setup). Otherwise "None".]
 
-## Unity import settings
+## Godot import settings
 
-[FBX import options, material mapping, layout JSON assembly.]
+[GLB (glTF 2.0) import options and destination folder under `game/`, StandardMaterial3D / ShaderMaterial mapping, layout JSON assembly into a Godot scene.]
 
 ## Pipeline
 

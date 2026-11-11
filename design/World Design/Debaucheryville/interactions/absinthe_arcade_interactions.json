@@ -424,7 +424,7 @@
           ],
           "effects": "none",
           "no_catalog_duplicates": true,
-          "authority": "author ruling 2026-11-11 (round v25); names, prices and inspect lines approved 2026-11-11 (Writers' Room desk 15:21, final.md); Promise-ish Ring name ruled round v28",
+          "authority": "author ruling 2026-11-11 (round v25); names, prices and inspect lines approved 2026-11-11 (Writers' Room desk 15:21, final.md); Promise-ish Ring name ruled round v28; its inspect line ruled round v30 (author, 2026-11-11)",
           "items": [
             {
               "engine_key": "aa_junk_terminal_velocity_terry",
@@ -452,7 +452,7 @@
               "name": "Promise-ish Ring",
               "what_it_is": "cheap plastic ring; tipped to Tomáš in Grandpa Provides",
               "ticket_price": 5,
-              "inspect_line": "NEEDS AUTHOR RULING (final.md has no inspect line for the ring)"
+              "inspect_line": "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier."
             }
           ]
         }

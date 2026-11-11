@@ -229,7 +229,7 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 ## NPCs & Vendors
 ### The Operator
 
-**Antonín "Tonda" Dvořák**
+**Antonín "Tonda" Pískal**
 - **Role**: Stall operator, former sound engineer, harm reduction advocate in vendor's clothing
 - **Appearance**: 50s Czech man, practical clothing, hearing aids (visible, intentional), military surplus vest
 - **Background**: 20 years as club sound engineer, tinnitus at 45, now on a mission to prevent others' hearing loss

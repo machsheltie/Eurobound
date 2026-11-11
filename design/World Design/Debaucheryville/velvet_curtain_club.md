@@ -327,7 +327,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Quiz**: Crystal identification quiz for couchsurf
 - **Reward**: Charged Quartz trinket, morning-after "cleansing" exhale
 
-### The Bouncer (Tomáš)
+### The Bouncer (Kamil)
 - **Role**: Entry gate / Comedy straight man / Running gag participant
 - **NPC File**: See `npc_velvet_curtain_bouncer.md`
 - **Personality**: Tired of tourists, finds the bros specifically amusing

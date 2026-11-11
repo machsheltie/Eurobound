@@ -3,8 +3,8 @@
   "location_name": "Velvet Curtain Club",
   "npcs": [
     {
-      "npc_id": "vcc_npc_tomas",
-      "display_name": "Tomáš",
+      "npc_id": "vcc_npc_kamil",
+      "display_name": "Kamil",
       "role": "primary bouncer and gate controller",
       "node": "vcc_bouncer_gate",
       "schedule": "20:00-04:00",
@@ -125,7 +125,7 @@
   ],
   "npc_interactions": [
     {
-      "npc_id": "vcc_npc_tomas",
+      "npc_id": "vcc_npc_kamil",
       "node_id": "vcc_bouncer_gate",
       "role": "primary bouncer and gate controller"
     },

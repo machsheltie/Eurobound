@@ -3,7 +3,7 @@
 **Purpose:** Standardized art specification for every location. One of these files is MANDATORY per location (see `location_validation_template.md`). Every section below is REQUIRED — a PNG Assets file is not complete until all 14 sections are filled in.
 
 **File naming:** `[Location_Name]_PNG_Assets.md` (e.g. `Euro_Ink_4_Less_PNG_Assets.md`)
-**Save location:** `Design/World Design/[World]/PNG_Assets/`
+**Save location:** `design/worlds/[city]/PNG_Assets/`
 
 **Conventions:**
 - **PNG_Assets specs are authoritative over location profiles for sprite filenames, dimensions, and sheet membership.** This file is the artist's delivery contract; where a location profile or NPC profile disagrees with it, the spec wins and the profile is stale and must be corrected.
@@ -271,13 +271,13 @@ assets/sprites/locations/[world]/[location_name]/
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅/❌ | [World name only] |
 | Cultural Specificity | ✅/❌ | [Which culture/stereotype satirized] |
-| Satirical Targets Appropriate | ✅/❌ | [Tourists/bros, not locals — punch up] |
+| Satire Sharp and Specific | ✅/❌ | [The bros' delusion AND the city's culture are both fair game — no punch-direction rules (author ruling 2026-08-03)] |
 | Seedy Underbelly Present | ✅/❌ | [Vice/exploitation element] |
 | Gameplay Value Established | ✅/❌ | [Mechanics served] |
 | Technical Feasibility | ✅/❌ | [Optimization documented] |
 | Performance Budget | ✅/❌ | [FPS, draw calls, memory] |
 | Accessibility Features | ✅/❌ | [Visual audio cues included] |
-| No Crypto Elements | ✅/❌ | [Unless established in source material] |
+| Crypto Conforms to Canon | ✅/❌ | [Any crypto art conforms to `design/economy/economy_system.md`; coins only from `design/economy/shitcoin_master_pool.md`] |
 | Social Media Integration | ✅/❌ | [Viral moments identified] |
 
 **[Closing paragraph: one bold statement summarizing what this location becomes for the player once assets are delivered.]**

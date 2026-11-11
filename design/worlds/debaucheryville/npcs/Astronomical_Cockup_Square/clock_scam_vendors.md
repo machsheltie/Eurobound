@@ -36,7 +36,7 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 │  └─────────────┘                    └─────────────┘      │
 │                                                           │
 │              ═══════════════════════════                  │
-│                    To VIKTOR → JAKUB                      │
+│                    To VIKTOR → DONÁT                      │
 │                    Euro Ink 4 Less 75 Sovs                    │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -59,7 +59,7 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
         ↓
 [6. VIKTOR calls out] → Referral → Euro Ink 4 Less
         ↓
-[7. JAKUB tattoos] → 75 Sovs → Duck tattoo
+[7. DONÁT tattoos] → 75 Sovs → Duck tattoo
 ```
 
 ---
@@ -80,7 +80,7 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-### 2. Miroslav "Father Miro" Dvořák - Party Monk
+### 2. Miroslav "Father Miro" Kalich - Party Monk
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_party_monk.md` |
@@ -98,7 +98,7 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-### 3. Václav "Vintage" Dvořák - Clock Wine Vendor
+### 3. Václav "Vintage" Ročník - Clock Wine Vendor
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_clock_wine_vendor.md` |
@@ -168,7 +168,7 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-### 7. Jakub "Euro Ink" Novák - Tattoo Artist
+### 7. Donát "Euro Ink" Novák - Tattoo Artist
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_euro_ink_tattoo_artist.md` |
@@ -201,8 +201,8 @@ Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
 | Václav | - | Miroslav's referrals |
 | Helena | Viktor (temp tattoo upsell) | Post-wine emotional wrecks |
 | Martin | - | Evening crowd |
-| Viktor | Jakub | Helena's temp tattoo buyers |
-| Jakub | - | Viktor's referrals |
+| Viktor | Donát | Helena's temp tattoo buyers |
+| Donát | - | Viktor's referrals |
 
 ### Territory Rules
 - No poaching marks mid-scam
@@ -223,7 +223,7 @@ Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
 | Václav (Wine) | 60 Sovs | 300 Sovs | 180 Sovs |
 | Helena (Merch) | 45 Sovs | 200 Sovs | 90 Sovs |
 | Martin (Wristbands) | 90 Sovs | 90 Sovs | 90 Sovs |
-| Jakub (Tattoo) | 50 Sovs | 100 Sovs | 75 Sovs |
+| Donát (Tattoo) | 50 Sovs | 100 Sovs | 75 Sovs |
 | **TOTAL** | **335 SOVS** | **840 SOVS** | **525 SOVS** |
 
 ### Bros' Typical Spend: 525 Sovs
@@ -247,7 +247,7 @@ Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
 | 4 | Helena | Post-clock vulnerability | 35 sec |
 | 5 | Martin | Evening + desperation | 0 sec |
 | 6 | Viktor | Crying triggered | 60 sec |
-| 7 | Jakub | Viktor referral | - |
+| 7 | Donát | Viktor referral | - |
 
 ### Time-of-Day Availability
 | Vendor | Morning | Peak | Evening | Night |
@@ -258,7 +258,7 @@ Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
 | Helena | Setup | ✅ | ✅ | ❌ |
 | Martin | ❌ | ❌ | ✅ | ✅ |
 | Viktor | ❌ | ✅ | ✅ | ✅ |
-| Jakub | ❌ | ✅ | ✅ | ✅ |
+| Donát | ❌ | ✅ | ✅ | ✅ |
 
 ---
 
@@ -289,7 +289,7 @@ After watching the 38-second clock show and crying:
 | Helena | Bros holding commemorative plates |
 | Martin | "Je mi 7!" clearly visible |
 | Viktor | Arm around crying Lord Pilsner |
-| Jakub | Duck tattoo reveal |
+| Donát | Duck tattoo reveal |
 
 ---
 
@@ -303,7 +303,7 @@ After watching the 38-second clock show and crying:
 | Helena | ✅ | In square doc | In items.md | ✅ |
 | Martin | ✅ | In square doc | vip_wristband_item.md | ✅ |
 | Viktor | ✅ | euro_ink_4_less.md | N/A | ✅ |
-| Jakub | ✅ | euro_ink_4_less.md | duck_tattoo_cosmetic.md | ✅ |
+| Donát | ✅ | euro_ink_4_less.md | duck_tattoo_cosmetic.md | ✅ |
 
 ---
 

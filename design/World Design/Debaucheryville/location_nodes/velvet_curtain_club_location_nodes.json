@@ -91,7 +91,7 @@
         "vcc_dance_floor"
       ],
       "type": "gate",
-      "description": "Tomáš and Marek guard the bass-pulsing curtain."
+      "description": "Kamil and Marek guard the bass-pulsing curtain."
     },
     "vcc_dance_floor": {
       "connects_to": [
@@ -162,7 +162,7 @@
     },
     "vcc_bouncer_gate": {
       "display_name": "Velvet Rope Gate",
-      "image_generation_description": "Tomáš and Marek guard the bass-pulsing curtain.",
+      "image_generation_description": "Kamil and Marek guard the bass-pulsing curtain.",
       "states": [
         "base",
         "active",

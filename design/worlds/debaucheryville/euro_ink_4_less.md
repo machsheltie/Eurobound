@@ -285,8 +285,8 @@ After the bros' visit, this becomes the shop's signature offering:
 
 ## 👥 NPCs
 
-### Jakub (The Tattoo Artist)
-- **Full Name**: Jakub "Euro Ink" Novák
+### Donát (The Tattoo Artist)
+- **Full Name**: Donát "Euro Ink" Novák
 - **NPC File**: See `npc_euro_ink_tattoo_artist.md`
 - **Role**: Owner/Sole Artist
 - **Age**: 45
@@ -318,20 +318,20 @@ After the bros' visit, this becomes the shop's signature offering:
 - **Gets commission per referral**
 
 ### Marta (Sometimes Present)
-- **Role**: Jakub's wife/assistant
+- **Role**: Donát's wife/assistant
 - **Appearance**: Bleached blonde, excessive jewelry, skeptical expression
-- **Function**: Works the counter; translates when Jakub gets too excited
+- **Function**: Works the counter; translates when Donát gets too excited
 - **Key Dialogue**:
   - "You want receipt? No? Good. Is better."
-  - *to Jakub, in Czech, subtitled* "Another American. The crying one from the clock."
+  - *to Donát, in Czech, subtitled* "Another American. The crying one from the clock."
   - *shrugging* "He does good work. Usually."
-- **Presence**: 50% chance she's there; otherwise Jakub handles everything
+- **Presence**: 50% chance she's there; otherwise Donát handles everything
 
 ---
 
 ## 🔄 Cross-City Appearances
 
-### Jakub's Expanding Empire
+### Donát's Expanding Empire
 | City | Location | Shop Name | Specialty |
 |------|----------|-----------|-----------|
 | Debaucheryville | Clock Square Alley | Euro Ink 4 Less (Original) | Clock skeleton → duck |
@@ -340,7 +340,7 @@ After the bros' visit, this becomes the shop's signature offering:
 | Shamsterdam | Canal District | Euro Ink 4 Less - Shamsterdam | Windmills → propellers |
 
 ### Recognition Across Cities
-- Jakub recognizes the bros as celebrities
+- Donát recognizes the bros as celebrities
 - "The Lord Pilsner Special" advertised everywhere
 - Framed photo of the duck-skeleton on display
 - Offers discounts to his "famous customers"
@@ -366,14 +366,14 @@ After the bros' visit, this becomes the shop's signature offering:
 ### Interactive Audio
 - **Tattoo gun sounds**: Authentic buzzing, intensity varies
 - **Lord Pilsner reactions**: Flinching, grunting, "this is fine" affirmations
-- **Jakub commentary**: Humming, "is good, is good," occasional Czech muttering
+- **Donát commentary**: Humming, "is good, is good," occasional Czech muttering
 - **Mirror reveal**: Dramatic pause, then triumphant music (ironic)
 
 ### Comedy Audio Stingers
-- **Duck reveal**: Record scratch (internal), triumphant horn (Jakub's POV)
+- **Duck reveal**: Record scratch (internal), triumphant horn (Donát's POV)
 - **"It's a duck" line**: Subtle sad trombone
 - **Lord Pilsner's denial**: Heroic music swell (his perspective)
-- **Payment**: Cash register, satisfied Jakub grunt
+- **Payment**: Cash register, satisfied Donát grunt
 
 ---
 
@@ -394,8 +394,8 @@ After the bros' visit, this becomes the shop's signature offering:
 ## 🔧 Implementation Specifications
 
 ### Technical Requirements
-- **Asset List**: Interior sprites, Jakub animations, tattoo process sequence, flash art wall
-- **Animation Requirements**: Tattoo gun motion, Jakub's confident drawing, Lord Pilsner's facial journey
+- **Asset List**: Interior sprites, Donát animations, tattoo process sequence, flash art wall
+- **Animation Requirements**: Tattoo gun motion, Donát's confident drawing, Lord Pilsner's facial journey
 - **Performance Budget**: Simple single-room location; focus on character animation quality
 - **Platform Considerations**: Tattoo mini-game needs responsive touch controls
 
@@ -405,10 +405,10 @@ euro_ink_4_less_state:
   - visited: boolean
   - tattoo_acquired: boolean
   - tattoo_quality: integer (based on mini-game performance)
-  - jakub_friendship: integer (increases with purchases)
+  - donat_friendship: integer (increases with purchases)
   - lord_pilsner_special_unlocked: boolean
   - matching_ducks_offered: boolean
-  - times_jakub_encountered_in_other_cities: integer
+  - times_donat_encountered_in_other_cities: integer
 ```
 
 ### Performance Budget
@@ -432,7 +432,7 @@ euro_ink_4_less_state:
 
 ### Post-Implementation Testing
 - [ ] Tattoo mini-game responsive
-- [ ] Jakub dialogue triggers correctly
+- [ ] Donát dialogue triggers correctly
 - [ ] Duck tattoo visible on Lord Pilsner's sprite
 - [ ] State tracking persistent across cities
 - [ ] Post-credits scene references correct
@@ -445,11 +445,11 @@ euro_ink_4_less_state:
 
 ### Screenshot Moments
 1. **The Shop Sign** - "EURO INK 4 LESS" with flickering neon
-2. **The Design "Review"** - Jakub proudly showing duck sketch as "skeleton"
+2. **The Design "Review"** - Donát proudly showing duck sketch as "skeleton"
 3. **Mid-Tattoo Terror** - Lord Pilsner's face during the process
 4. **The Reveal** - First glimpse of the duck
 5. **Chadwick's Line** - "Bro, that looks like a duck"
-6. **Jakub's Pride** - Artist beaming at his "masterpiece"
+6. **Donát's Pride** - Artist beaming at his "masterpiece"
 7. **The Mirror Shot** - Lord Pilsner seeing it backwards, loving it
 8. **The Certificate** - "Online Tattoo Academy - 3 Week Course"
 9. **Flash Art Wall** - All designs slightly duck-like
@@ -475,7 +475,7 @@ euro_ink_4_less_state:
 - Certificate easter egg should reward examination
 - Flash art should ALL have subtle duck qualities
 - The tattoo reveal needs precise comedic timing
-- Jakub's defense ("European style") must feel genuine
+- Donát's defense ("European style") must feel genuine
 - Payment scene can be abbreviated
 - "The Lord Pilsner Special" should appear in all branches
 - Consider: Achievement for getting tattoos in all cities
@@ -486,4 +486,4 @@ euro_ink_4_less_state:
 
 ## Final Validation
 
-**Euro Ink 4 Less is where Lord Pilsner's profound spiritual clock experience becomes a permanent duck on his lower back. Jakub the tattoo artist isn't a villain - he's a true believer in his own artistic vision, which happens to consistently produce birds instead of skeletons. The mutual validation between artist and customer creates a perfect feedback loop of confident incorrectness. The duck tattoo becomes a running gag visible throughout the rest of the game, culminating in the post-credits reveal at Twin Peaks where Amber (who is actually Brittany, who is actually seven different waitresses) politely calls it "very death-y" for a 40% tip.**
+**Euro Ink 4 Less is where Lord Pilsner's profound spiritual clock experience becomes a permanent duck on his lower back. Donát the tattoo artist isn't a villain - he's a true believer in his own artistic vision, which happens to consistently produce birds instead of skeletons. The mutual validation between artist and customer creates a perfect feedback loop of confident incorrectness. The duck tattoo becomes a running gag visible throughout the rest of the game, culminating in the post-credits reveal at Twin Peaks where Amber (who is actually Brittany, who is actually seven different waitresses) politely calls it "very death-y" for a 40% tip.**

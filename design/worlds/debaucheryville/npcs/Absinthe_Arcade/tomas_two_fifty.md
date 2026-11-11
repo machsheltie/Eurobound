@@ -8,6 +8,7 @@
 > the bros is perfection."). Everything else in this file is a Claude draft and is
 > **PROPOSED — NEEDS AUTHOR RULING**, including every unmarked line, the name tag, the schedule,
 > the animations and the sprite notes. **Name ruled 2026-11-11 (round v28):** Tomáš "Two-Fifty" **[CANON — author]**.
+> **Round v30 (2026-11-11):** the Grandpa Provides scene (The Tip and The Unsettled Tab below) is **APPROVED** (author).
 
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_tomas_two_fifty_01` (was the working ID `debaucheryville_npc_prize_bartender_01`; renamed round v28)
@@ -117,7 +118,7 @@ Tips. The prize counter pays none. The bros are the first customers all week to 
 > "Tickets. Great. My favourite currency. Worth nothing, and sticky."
 
 ### Key Interaction Dialogue — The Tip **[CANON — approved draft, ChatGPT "The Tip"; the author's beat]**
-Full scene, line for line: `design/quests/debaucheryville/grandpa_provides.md`, Scene 1. Trigger (PROPOSED): the first prize redemption with the Promise-ish Ring (5 tickets, junk shelf) among the prizes.
+Full scene, line for line: `design/quests/debaucheryville/grandpa_provides.md`, Scene 1. Trigger **[RULED round v30]**: unmissable; it plays the first time the bros use the prize counter.
 
 *He counts out the bros' prizes with the enthusiasm of a man processing a warranty claim and slides the cheap plastic garbage across the counter.*
 
@@ -181,7 +182,8 @@ Full scene, line for line: `grandpa_provides.md`, Scene 3. The tab is **40 SOVS*
 - **REFUSE AGAIN** → *(Pilsner: "I'm not paying for drinks I didn't order.")* **Tomáš**: "Okay." / "Yeah." *(steps aside)* "You can absolutely leave without paying." → **Accounts Receivable** step into the doorway → "You just can't leave through there." → *(Bradley: "Great pickup, dude.")* → "So." / "Cash, card, or traumatic brain injury?"
   - **PAY** (40 SOVS) → "Smart." *(raises his plastic-ring hand)* "Runs in the family."
   - **REFUSE** → *(steps safely behind the bar)* "Gentlemen, our guests are experiencing a billing dispute." → battle. After the bros win and scramble out: **"HEY!"** Then, to the destruction and the unpaid tab, adding a line with a pen: **"Service charge."** The service charge is a flat **10 SOVS**; the open tab is then 50 SOVS, greeted with "Tab's open" on every visit, no second fight (APPROVED round v25).
-- **Lose the fight** (RULED round v25): the tab and service charge come out of the wallet; if it's short, the rest is waived, with Tomáš's "Grandpa provides." delivered over them.
+- **Lose the fight** (RULED round v25): the tab and service charge come out of the wallet; if it's short, the rest is waived. ("Grandpa Provides" is the quest title only; no one says it, round v30.)
+- **Paying early** (RULED round v30): any time before the exit, the bros can settle the tab by talking to him at the bar (40 SOVS) → **Tomáš**: "Pleasure doing business with you, Grandpa." The exit scene then does not play.
 
 *(Round v29: the first-draft tab beat at the bros' next game — "And yet you inspired so much joy.", "You've built a legacy.", "Okay." / "See? You just gotta stand your ground." — and the first-draft door scene — "Forgot something.", "Gentlemen?" — are superseded by this scene and removed.)*
 
@@ -210,7 +212,7 @@ Full scene, line for line: `grandpa_provides.md`, Scene 3. The tab is **40 SOVS*
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Prize Redemption (13-prize catalogue) | 15–2500 tickets | 0–3 SOVS | See `design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md` |
-| Junk shelf (separate from the catalogue; **APPROVED round v25**) | 5–15 tickets | 0 SOVS | No effects. The **Promise-ish Ring** (5 tickets; name ruled round v28), **Terminal Velocity Terry** (parachute men, 10 tickets), **Forty-Eight-Hour Tramp Stamp** (temporary tattoos, 10 tickets), **The Noise Violation** (the whistle he regrets, 15 tickets); names and prices approved 2026-11-11 (Writers' Room desk). Catalogue duplicates (sticky hand, vampire teeth, maze puzzle) are off the shelf. Inspect lines: `design/quests/debaucheryville/grandpa_provides.md`; the ring's is PROPOSED (ChatGPT's "Makes your finger look 4% wealthier." line, not yet approved) |
+| Junk shelf (separate from the catalogue; **APPROVED round v25**) | 5–15 tickets | 0 SOVS | No effects. The **Promise-ish Ring** (5 tickets; name ruled round v28), **Terminal Velocity Terry** (parachute men, 10 tickets), **Forty-Eight-Hour Tramp Stamp** (temporary tattoos, 10 tickets), **The Noise Violation** (the whistle he regrets, 15 tickets); names and prices approved 2026-11-11 (Writers' Room desk). Catalogue duplicates (sticky hand, vampire teeth, maze puzzle) are off the shelf. Inspect lines: `design/quests/debaucheryville/grandpa_provides.md`; the ring's is "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier." **[APPROVED — author, round v30]** |
 | Neon test-tube shots | **PROPOSED** (see quest doc) | — | Bar drink; how it plays for the bros, if at all, is an intoxication mechanic and needs the 10-point review first |
 | Bar drinks generally | **NEEDS AUTHOR RULING** | — | No Arcade bar price list exists in the design files yet |
 
@@ -278,7 +280,7 @@ Full scene, line for line: `grandpa_provides.md`, Scene 3. The tab is **40 SOVS*
 | Comedy value preserved | ✅ |
 | Bros never achieve self-awareness | ✅ |
 | World consistency (city names) | ✅ no real places; real brands (TGI Fridays, *Office Space*) keep real names |
-| Name unique (see note below) | ◐ ruled round v28; the full name is unique, but the first name Tomáš is shared with a Velvet Curtain Club bouncer ("Tomáš and Marek"). Flagged to the author |
+| Name unique (see note below) | ✅ ruled round v28; the Velvet Curtain Club bouncer who shared the first name was renamed Kamil "Stone Face" Černý (round v30) |
 
 ---
 
@@ -301,3 +303,4 @@ Full scene, line for line: `grandpa_provides.md`, Scene 3. The tab is **40 SOVS*
 | 2026-11-11 | Round v25: separate from the Token Attendant; tab 40 SOVS, timing, door lines, 10 SOVS service charge, Accounts Receivable, junk shelf approved. Name still open | Claude for machsheltie |
 | 2026-11-11 | Round v28: name ruled Tomáš "Two-Fifty" (losing options dropped); file renamed from `prize_counter_bartender.md`; the ring is the Promise-ish Ring, tip beat only (no pinky ring); "Tokens. Toilet." added; proposed tip lines and return-visit lines stripped | Claude for machsheltie |
 | 2026-11-11 | Round v29: the tip and the tab rebuilt from ChatGPT's approved "The Tip" and "The Unsettled Tab" (with the author's opener); first-draft tab-at-the-next-game and door lines superseded and removed; wearing the Promise-ish Ring for the rest of the game restored (wrongly removed in round v28); Bored → Smug progression added as a presentation note; animations updated. From ChatGPT's dialogue archive: uniform-vs-face characterization ([DRAFT]), prize-counter signage and Bradley's drink-order barks (PROPOSED), the ring's proposed inspect line; the unapproved Marek "Ticket" Tichý material noted, not used | Claude for machsheltie |
+| 2026-11-11 | Round v30: Grandpa Provides scene APPROVED; tip trigger ruled (unmissable, first use of the prize counter); paying early at the bar ruled ("Pleasure doing business with you, Grandpa."); "Grandpa provides." cut from the LOSE outcome (title only); Promise-ish Ring inspect line approved; name clash resolved (VCC bouncer renamed) | Claude for machsheltie |

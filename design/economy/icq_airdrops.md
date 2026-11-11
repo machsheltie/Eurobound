@@ -77,7 +77,7 @@ Rules for all other reaction lines:
 
 | Handle | Register |
 |---|---|
-| **Tony420** | Established cyber-dealer. All-lowercase, no punctuation, no capitals, chronically online at 3 AM. Sells absolutely anything. Treats an airdrop as a free sample that obligates you. |
+| **Tony420** | Established cyber-dealer. Lowercase by default; shouted words and full stops are allowed (author, 2026-11-11). Chronically online at 3 AM. Sells absolutely anything. Treats an airdrop as a free sample that obligates you. |
 | **CryptoBro69** | NFT evangelist, already canon as the "Pixelated Kebab Monkey" shill. Speaks in thesis. Capitalizes Concepts. Believes his own pitch harder than the bros do, which is why he is the most dangerous man in the game. |
 | **SpamBot99** | Automated. Corporate template language with the seams showing — unresolved merge fields, mismatched pluralization, a footer that does not belong. Never answers, never varies its tone, never stops. |
 
