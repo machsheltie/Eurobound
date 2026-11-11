@@ -603,3 +603,11 @@ Open question: should it, and to what depth?
     - The Blonde Girl is **Woo Woo Whitney**. The other girls are **Brynleigh, Ashleigh, Kenleigh**.
     - The quest is **Grandpa Provides**, and the ring is the **Promise-ish Ring**.
   - **Cara's 21st (author):** "The ring happens at the bartenders table. There is no ring having anything to do with Cara." The girls never give Pilsner a ring; the ring is only the prize-counter tip beat. The scene must follow the author's ChatGPT story. Fix the doc and show the author the full interaction.
+- **(Writers' Room desk, 2026-11-11 15:21, via eurobound-48)**
+  - **The rigged claw pays out Sea-Monkeys (Mint #73), not the Beer Pong Saint Relic.** Author, verbatim: "replace the beer pong saint relic with Sea-Monkey". The relic stays struck as of 2026-08-01, which settles round v29 relic_nft.
+  - Prize names approved ("Approve Gemini's favourites"):
+    - Beanie claw plush: Pre-Emptive Perry, Pets.con the Sock Hound, Snorty the Bouncer Badger, Mugshot Mandy, Minty the Rare Mint Bunny (Minty's tag poem reworded to SOVS).
+    - Junk shelf: Terminal Velocity Terry (parachute men, 10 tickets), Forty-Eight-Hour Tramp Stamp (temporary tattoos, 10 tickets), The Noise Violation (the whistle, 15 tickets), and the Promise-ish Ring (5 tickets).
+    - Final text with tag poems and inspect lines: WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md.
+  - The Beanie claw's price per play is still unruled.
+  - Game-wide rule (now in CLAUDE.md): every junk item gets a short, really funny inspect line.
