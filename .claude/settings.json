@@ -5,7 +5,7 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/notify.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/notify.sh",
             "timeout": 10,
             "type": "command"
           }
@@ -17,7 +17,7 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/post-compact.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/post-compact.sh",
             "timeout": 10,
             "type": "command"
           }
@@ -29,12 +29,12 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/validate-assets.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/validate-assets.sh",
             "timeout": 10,
             "type": "command"
           },
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/validate-skill-change.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/validate-skill-change.sh",
             "timeout": 5,
             "type": "command"
           }
@@ -46,7 +46,7 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/pre-compact.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/pre-compact.sh",
             "timeout": 10,
             "type": "command"
           }
@@ -66,12 +66,12 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/validate-commit.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/validate-commit.sh",
             "timeout": 15,
             "type": "command"
           },
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/validate-push.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/validate-push.sh",
             "timeout": 10,
             "type": "command"
           }
@@ -80,6 +80,16 @@
       }
     ],
     "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/session-end.sh",
+            "timeout": 10
+          }
+        ]
+      },
       {
         "hooks": [
           {
@@ -93,12 +103,12 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/session-start.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/session-start.sh",
             "timeout": 10,
             "type": "command"
           },
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/detect-gaps.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/detect-gaps.sh",
             "timeout": 10,
             "type": "command"
           }
@@ -127,16 +137,6 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/session-stop.sh",
-            "timeout": 10,
-            "type": "command"
-          }
-        ],
-        "matcher": ""
-      },
-      {
-        "hooks": [
-          {
             "command": "uv run --no-project python \"$CLAUDE_PROJECT_DIR\"/.bmad-loop/bmad_loop_hook.py Stop",
             "type": "command"
           }
@@ -147,7 +147,7 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/log-agent.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/log-agent.sh",
             "timeout": 5,
             "type": "command"
           }
@@ -159,7 +159,7 @@
       {
         "hooks": [
           {
-            "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/hooks/log-agent-stop.sh",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/log-agent-stop.sh",
             "timeout": 5,
             "type": "command"
           }
@@ -189,14 +189,14 @@
       "Bash(git clean -f*)",
       "Bash(sudo *)",
       "Bash(chmod 777*)",
-      "Bash(*\u003e.env*)",
+      "Bash(*>.env*)",
       "Bash(cat *.env*)",
       "Bash(type *.env*)",
       "Read(**/.env*)"
     ]
   },
   "statusLine": {
-    "command": "cd \"$CLAUDE_PROJECT_DIR\" \u0026\u0026 bash .claude/statusline.sh",
+    "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/statusline.sh",
     "type": "command"
   }
 }
