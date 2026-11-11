@@ -667,11 +667,11 @@
               "strategy_required": "timing_and_positioning_over_luck"
             },
             "acquisition_method": "rigged_claw_machine_strategy_game",
-            "target_nft": "beer_pong_saint_relic"
+            "target_nft": "sea_monkeys"
           },
           "prizes": [
             {
-              "item": "beer_pong_saint_relic",
+              "item": "sea_monkeys",
               "rarity": "quest_essential",
               "acquisition_method": "strategic_claw_manipulation"
             },

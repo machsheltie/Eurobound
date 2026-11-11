@@ -131,7 +131,7 @@ static func item_name(id: String) -> String:
 			for group in data.values():
 				if group is Dictionary and group.has(id):
 					return String(group[id].get("display_name", id)).to_upper()
-	return id.to_upper()
+	return id.replace("_", " ").to_upper()
 
 
 func _draw_machine() -> void:
@@ -156,7 +156,7 @@ func _draw_machine() -> void:
 		if grabbed and lift >= 0.5:
 			y = cy + 34 + w * 0.8
 		var col := Color(0.55, 0.55, 0.6) if String(p["id"]).is_empty() else Color(0.95, 0.75, 0.3)
-		if String(p["id"]) == ArcadeClaw.RELIC_ID:
+		if String(p["id"]) == ArcadeClaw.TOP_PRIZE_ID:
 			col = Color(0.9, 0.2, 0.25)
 		_canvas.draw_rect(Rect2(px - w * 0.5, y - w * 0.8, w, w * 0.8), col)
 	# The claw on its cable.

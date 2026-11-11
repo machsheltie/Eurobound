@@ -125,6 +125,110 @@
       "source": "rigged_absinthe_claw_machine",
       "effect": null,
       "description": "An intentionally ugly low-resolution icon of a red party cup wearing an eight-bit halo. Its provenance is elaborate, unverifiable and printed on the back in six-point type."
+    },
+    "aa_claw_pre_emptive_perry": {
+      "display_name": "Pre-Emptive Perry",
+      "item_class": "permanent",
+      "source": "beanie_baby_claw",
+      "effect": null,
+      "description": "A camo bear whose plastic pellets feel suspiciously like depleted uranium.",
+      "heart_tag": {
+        "birthday": "March 19, 2003",
+        "poem": [
+          "Perry searches near and far,",
+          "For hidden weapons in the jar.",
+          "He found no yellowcake today,",
+          "So now in Europe he will stay!"
+        ]
+      }
+    },
+    "aa_claw_pets_con_sock_hound": {
+      "display_name": "Pets.con the Sock Hound",
+      "item_class": "permanent",
+      "source": "beanie_baby_claw",
+      "effect": null,
+      "description": "A plush sock puppet whose IPO valuation dropped ninety-eight percent before the stuffing settled.",
+      "heart_tag": {
+        "birthday": "February 14, 2000",
+        "poem": [
+          "Super Bowl ads cost a lot,",
+          "Now an empty parking lot.",
+          "Hug this dog with all your might,",
+          "His burn rate peaked on Tuesday night!"
+        ]
+      }
+    },
+    "aa_claw_snorty_bouncer_badger": {
+      "display_name": "Snorty the Bouncer Badger",
+      "item_class": "permanent",
+      "source": "beanie_baby_claw",
+      "effect": null,
+      "description": "His snout has a permanent crust of baby laxative and unresolved nightclub hostility.",
+      "heart_tag": {
+        "birthday": "August 4, 1999",
+        "poem": [
+          "Snorty grinds his plushy jaws,",
+          "White residue on velvet paws.",
+          "Keep him away from bathroom stalls,",
+          "He’s pacing up and down the walls!"
+        ]
+      }
+    },
+    "aa_claw_mugshot_mandy": {
+      "display_name": "Mugshot Mandy",
+      "item_class": "permanent",
+      "source": "beanie_baby_claw",
+      "effect": null,
+      "description": "A Chihuahua whose rhinestone collar carries two active bench warrants and a sticky smear of lip gloss.",
+      "heart_tag": {
+        "birthday": "May 27, 2007",
+        "poem": [
+          "Low-rise velour, no underwear,",
+          "Flashbulbs blinding in the air.",
+          "Lost her license, kept the fame,",
+          "Nobody can pronounce her name!"
+        ]
+      }
+    },
+    "aa_claw_minty_rare_mint_bunny": {
+      "display_name": "Minty the Rare Mint Bunny",
+      "item_class": "permanent",
+      "source": "beanie_baby_claw",
+      "effect": null,
+      "description": "Still trapped in a yellowed acrylic display cube with a sun-bleached Certificate of Authenticity.",
+      "heart_tag": {
+        "birthday": "April 1, 1998",
+        "poem": [
+          "Keep my plastic tag attached,",
+          "A fortune waiting to be hatched.",
+          "Divorce courts had to split my fleece,",
+          "Three thousand SOVS for one piece!"
+        ]
+      }
+    },
+    "aa_junk_terminal_velocity_terry": {
+      "display_name": "Terminal Velocity Terry",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption_junk_shelf",
+      "ticket_price": 10,
+      "effect": null,
+      "description": "A tangled tangle of green plastic that promises high-altitude heroism and delivers a direct face-plant into bar slop."
+    },
+    "aa_junk_forty_eight_hour_tramp_stamp": {
+      "display_name": "Forty-Eight-Hour Tramp Stamp",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption_junk_shelf",
+      "ticket_price": 10,
+      "effect": null,
+      "description": "A sheet of barbed-wire tribal designs applied with warm beer and removed by twenty minutes of aggressive sweating."
+    },
+    "aa_junk_noise_violation": {
+      "display_name": "The Noise Violation",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_prize_redemption_junk_shelf",
+      "ticket_price": 15,
+      "effect": null,
+      "description": "Neon-orange molded plastic without a pea. It produces a shrill, piercing squeal calibrated to trigger immediate bar-staff homicide."
     }
   }
 }

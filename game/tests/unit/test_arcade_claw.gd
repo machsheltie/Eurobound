@@ -39,13 +39,13 @@ func test_arcade_claw_rigged_grab_slips_unless_blinking() -> void:
 	var state := FakeState.new()
 	var pit := ArcadeClaw.layout(ArcadeClaw.RIGGED, state, _rng(1))
 	# Act
-	var dark := ArcadeClaw.grab(ArcadeClaw.RIGGED, pit, ArcadeClaw.RELIC_SLOT, false, state, _rng(2))
-	var lit := ArcadeClaw.grab(ArcadeClaw.RIGGED, pit, ArcadeClaw.RELIC_SLOT, true, state, _rng(3))
+	var dark := ArcadeClaw.grab(ArcadeClaw.RIGGED, pit, ArcadeClaw.TOP_PRIZE_SLOT, false, state, _rng(2))
+	var lit := ArcadeClaw.grab(ArcadeClaw.RIGGED, pit, ArcadeClaw.TOP_PRIZE_SLOT, true, state, _rng(3))
 	# Assert
 	assert_false(dark["held"])
 	assert_true(lit["held"])
-	assert_eq(int(state.inventory.get(ArcadeClaw.RELIC_ID, 0)), 1)
-	assert_true(ArcadeClaw.relic_won(state))
+	assert_eq(int(state.inventory.get(ArcadeClaw.TOP_PRIZE_ID, 0)), 1)
+	assert_true(ArcadeClaw.top_prize_won(state))
 
 
 func test_arcade_claw_blinking_grab_over_nothing_still_misses() -> void:
@@ -60,14 +60,14 @@ func test_arcade_claw_blinking_grab_over_nothing_still_misses() -> void:
 	assert_eq(ArcadeClaw.plays_since_payout(state), 0)
 
 
-func test_arcade_claw_relic_leaves_the_pit_once_won() -> void:
+func test_arcade_claw_top_prize_leaves_the_pit_once_won() -> void:
 	# Arrange
 	var state := FakeState.new()
-	state.flags[ArcadeClaw.RELIC_FLAG] = true
+	state.flags[ArcadeClaw.TOP_PRIZE_FLAG] = true
 	# Act
 	var pit := ArcadeClaw.layout(ArcadeClaw.RIGGED, state, _rng(1))
 	# Assert
-	assert_false(pit.any(func(p: Dictionary) -> bool: return p["id"] == ArcadeClaw.RELIC_ID))
+	assert_false(pit.any(func(p: Dictionary) -> bool: return p["id"] == ArcadeClaw.TOP_PRIZE_ID))
 
 
 func test_arcade_claw_beanie_grip_holds_about_one_in_three() -> void:
@@ -93,3 +93,22 @@ func test_arcade_claw_beanie_over_nothing_is_wasted() -> void:
 	# Assert
 	assert_false(r["over"])
 	assert_false(r["held"])
+
+
+func test_arcade_claw_every_prize_is_a_registered_item() -> void:
+	# Arrange
+	var items: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/data/items/key_items.json"))["key_items"]
+	# Act
+	var missing := (ArcadeClaw.BEANIE_PRIZES + ArcadeClaw.JUNK_PRIZES).filter(func(id: String) -> bool: return not items.has(id))
+	# Assert
+	assert_eq(missing, [])
+	assert_eq(ArcadeClaw.BEANIE_PRIZES.size(), 5)
+
+
+func test_arcade_claw_beanie_pit_holds_real_plush() -> void:
+	# Arrange
+	var state := FakeState.new()
+	# Act
+	var pit := ArcadeClaw.layout(ArcadeClaw.BEANIE, state, _rng(4))
+	# Assert
+	assert_false(pit.any(func(p: Dictionary) -> bool: return String(p["id"]).is_empty()))

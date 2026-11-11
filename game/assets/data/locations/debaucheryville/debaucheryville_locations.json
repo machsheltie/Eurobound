@@ -22,7 +22,7 @@
   
   "exit_conditions": {
     "normal_exits": ["main_entrance", "absinthium_taproom_passage"],
-    "completion_requirements": ["obtain_beer_pong_saint_relic"],
+    "completion_requirements": ["obtain_sea_monkeys"],
     "failure_states": ["temporary_ban_aggressive_token_shaking"],
     "progressive_unlocks": [
       "backpack_girl_couchsurf_option",

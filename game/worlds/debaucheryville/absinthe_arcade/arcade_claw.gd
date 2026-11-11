@@ -8,11 +8,13 @@ extends RefCounted
 ##  - Beanie Baby Claw: a grab over a plush holds 1 time in 3. Prizes can repeat.
 ##  - Rigged claw: every grab slips unless the PAYOUT light is blinking. The machine counts every
 ##    play (saved); once PAYOUT_EVERY - 1 plays have gone by since the last blinking play, the light
-##    blinks in the hall before the bros pay. That play's grab holds if the claw is over the relic.
-##    The count restarts after any blinking play, hit or miss.
-##  - Before the relic is won the rigged pit holds only the relic; after, the junk-shelf prizes.
-## Prize names for the Beanie claw and the junk shelf come from the Writers' Room (round v28); until
-## they arrive the pools are empty, the pits show stand-ins and a held grab pays nothing.
+##    blinks in the hall before the bros pay. That play's grab holds if the claw is over the top
+##    prize. The count restarts after any blinking play, hit or miss.
+##  - The rigged claw's top prize is Sea-Monkeys (author 2026-11-11: "replace the beer pong saint
+##    relic with Sea-Monkey"). Until it is won the pit holds only Sea-Monkeys; after, the junk-shelf
+##    prizes (whether those also need the light: ef6_junk_claw_rule, open).
+## Prize names: Writers' Room, approved by the author 2026-11-11 (desk, "Approve Gemini's
+## favourites"); registered in key_items.json.
 ## `state` is GameState (inventory, flags, add_item).
 
 const BEANIE := "beanie_baby_claw"
@@ -21,16 +23,19 @@ const CONTROL_S := 10.0
 const BEANIE_HOLD := 1.0 / 3.0
 const PAYOUT_EVERY := 7
 const PLAYS_FLAG := "rigged_claw_plays_since_payout"
-const RELIC_ID := "beer_pong_saint_relic"
-const RELIC_FLAG := "beer_pong_saint_relic_obtained"
-## Item ids, filled in once the Writers' Room names are approved.
-const BEANIE_PRIZES: Array[String] = []
-const JUNK_PRIZES: Array[String] = []
+## Sea-Monkeys has no item entry yet (the NFT doc is ad's); the id is the one the claw grants.
+const TOP_PRIZE_ID := "sea_monkeys"
+const TOP_PRIZE_FLAG := "sea_monkeys_obtained"
+const BEANIE_PRIZES: Array[String] = [
+	"aa_claw_pre_emptive_perry", "aa_claw_pets_con_sock_hound", "aa_claw_snorty_bouncer_badger",
+	"aa_claw_mugshot_mandy", "aa_claw_minty_rare_mint_bunny"]
+const JUNK_PRIZES: Array[String] = [
+	"aa_junk_terminal_velocity_terry", "aa_junk_forty_eight_hour_tramp_stamp", "aa_junk_noise_violation"]
 
 ## Pit layout, as fractions of the pit width: slot centres and the half-width a grab must land in.
 const BEANIE_SLOTS := [0.12, 0.3, 0.5, 0.7, 0.88]
 const RIGGED_JUNK_SLOTS := [0.15, 0.4, 0.62, 0.86]
-const RELIC_SLOT := 0.62
+const TOP_PRIZE_SLOT := 0.62
 const SLOT_HALF := 0.06
 
 
@@ -47,8 +52,8 @@ static func payout_blinking(state) -> bool:
 	return plays_since_payout(state) >= PAYOUT_EVERY - 1
 
 
-static func relic_won(state) -> bool:
-	return bool(state.flags.get(RELIC_FLAG, false))
+static func top_prize_won(state) -> bool:
+	return bool(state.flags.get(TOP_PRIZE_FLAG, false))
 
 
 ## The pit for one play: [{"x": centre, "id": item id or ""}]. An empty id is a stand-in prize.
@@ -57,8 +62,8 @@ static func layout(machine_id: String, state, rng: RandomNumberGenerator) -> Arr
 	if machine_id == BEANIE:
 		for x: float in BEANIE_SLOTS:
 			pit.append({"x": x, "id": _pick(BEANIE_PRIZES, rng)})
-	elif not relic_won(state):
-		pit.append({"x": RELIC_SLOT, "id": RELIC_ID})
+	elif not top_prize_won(state):
+		pit.append({"x": TOP_PRIZE_SLOT, "id": TOP_PRIZE_ID})
 	else:
 		for x: float in RIGGED_JUNK_SLOTS:
 			pit.append({"x": x, "id": _pick(JUNK_PRIZES, rng)})
@@ -92,6 +97,6 @@ static func grab(machine_id: String, pit: Array, x: float, blinking: bool, state
 		result["id"] = String(prize["id"])
 		if not String(result["id"]).is_empty():
 			state.add_item(result["id"])
-			if result["id"] == RELIC_ID:
-				state.flags[RELIC_FLAG] = true
+			if result["id"] == TOP_PRIZE_ID:
+				state.flags[TOP_PRIZE_FLAG] = true
 	return result

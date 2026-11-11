@@ -302,13 +302,13 @@ func test_arcade_hall_rigged_claw_reads_the_light_before_paying() -> void:
 	GameState.flags[ArcadeClaw.PLAYS_FLAG] = ArcadeClaw.PAYOUT_EVERY - 1
 	_stand_at("rigged_absinthe_claw_machine")
 
-	# Act: steer over the relic and drop.
+	# Act: steer over the Sea-Monkeys and drop.
 	_player().try_interact()
 	var screen: ClawScreen = _hall.claw_screen
-	screen.claw_x = ArcadeClaw.RELIC_SLOT
+	screen.claw_x = ArcadeClaw.TOP_PRIZE_SLOT
 	screen.confirm()
 
 	# Assert
 	assert_true(screen.blinking)
-	assert_eq(int(GameState.inventory.get(ArcadeClaw.RELIC_ID, 0)), 1)
+	assert_eq(int(GameState.inventory.get(ArcadeClaw.TOP_PRIZE_ID, 0)), 1)
 	assert_eq(ArcadeClaw.plays_since_payout(GameState), 0)
