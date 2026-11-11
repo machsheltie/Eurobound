@@ -638,3 +638,14 @@ Open question: should it, and to what depth?
     - Antonín "Tonda" Dvořák becomes **Antonín "Tonda" Pískal**
     - Tram Stop Tomáš Procházka becomes **Hubert Procházka**
   - fratbronft.md conflict (author): "We don't need to keep side a or side b. They're all generic crap." The block is removed.
+- **(Round v31, 2026-11-11)**
+  - Accounts Receivable's **Shake Down Payment** is approved as option A:
+    - 5 SOVS per shake, paid toward the 40 SOVS tab.
+    - It fires 15% of the time while a balance is due; Itemized Beating drops from 40% to 25%.
+    - The bros never lose more than the 50 SOVS a loss costs.
+  - Cara's group stands on the open floor just west of the prize/bar counter, toward the skee-ball lanes.
+  - In the Astronomical Cock-Up scene, Milan is the one who says "Look. The Americans are crying."
+  - A successful Run from the dispute fight counts as winning.
+  - Choosing PAY with less than 40 SOVS shows "NOT ENOUGH SOVS" and the choice comes back.
+  - Catalogue prizes are one of each; junk-shelf prizes can be bought repeatedly.
+  - NPC sprite queue resumed.
