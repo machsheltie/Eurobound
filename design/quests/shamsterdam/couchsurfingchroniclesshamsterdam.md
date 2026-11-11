@@ -718,7 +718,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 ```
 💬 Group Chat Leak: "POINT FIVE IS LAMINATED. she LAMINATED it 😭😭"
 💬 Venmo Request: "one (1) life jacket. returned. postage."
-💬 Tony420: "last stop bro. got everything. 50 trash. 40. bro. 40 trash"
+💬 Tony420: "last stop bro. got everything. 50 Sovs. 40. bro. 40 Sovs"
 💬 CryptoBro69: "whole continent and u ended up in a SHIPPING CONTAINER. worse ROI than my NFTs lol"
 💬 Unknown Number: "the I SHAMSTERDAM sign was removed years ago. you photographed the plinth. all three of you."
 💬 Officer van den Berg: "95 Sovs. Bike lane. Again. This is the fourth."

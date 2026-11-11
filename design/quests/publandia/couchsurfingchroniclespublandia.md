@@ -301,7 +301,7 @@ She makes tea and delivers the flat sentence of the scene, holding the spoon up 
 💬 Fidelma: "Chapter is Wednesday. Chapter is always Wednesday. You are sworn."
 💬 Fidelma: "Apologies are accepted but they are minuted."
 💬 Missed Call: "did one of you take a spoon. there are nine. there should be nine"
-💬 Tony420: "heard u joined a cult. got something 4 cults. its just the normal stuff. 50 ponz"
+💬 Tony420: "heard u joined a cult. got something 4 cults. its just the normal stuff. 50 Sovs"
 💬 CryptoBro69: "SECRET SOCIETY?? bro get me in. i'll bring a DAO. bro. bro the DAO IS the society"
 ```
 
@@ -662,7 +662,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "Sworn in. Can't say more. Honestly can't."
 ```
 💬 Group Chat Leak: "the americans are on the SEATING PLAN 😭 in PEN"
 💬 Venmo Request: "one (1) spoon. damp. postage."
-💬 Tony420: "heard u been busy in publandia. got something 4 the cobbles. 50 stag"
+💬 Tony420: "heard u been busy in publandia. got something 4 the cobbles. 50 Sovs"
 💬 CryptoBro69: "ur hookup rate in a city with FOUR PUBS PER PERSON = worse ROI than my NFTs lol"
 💬 Unknown Number: "you're minuted. you'll always be minuted. that's what minutes are"
 ```
