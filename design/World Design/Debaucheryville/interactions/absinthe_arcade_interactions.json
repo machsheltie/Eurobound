@@ -261,9 +261,9 @@
         "idle",
         "insert_token",
         "playing",
-        "results",
-        "ticket_jam (NOT BUILT; machine jams need an author ruling)"
-      ]
+        "results"
+      ],
+      "ticket_jam": "none (author ruling round v26, 2026-11-11: ticket machines do not jam mechanically; jams are background flavour only)"
     },
     {
       "object_id": "foosball_table",
@@ -318,7 +318,7 @@
       },
       "mechanics": {
         "outcome": "prize_or_nothing",
-        "note": "The claw machine must exist and work (author ruling 2026-11-11). Separate from the rigged relic claw in the claw alcove; which claw the ruling meant is flagged for the author."
+        "note": "The claw machine must exist and work (author ruling 2026-11-11). Separate from the rigged relic claw in the claw alcove. Which claw: RESOLVED (author, round v26, 2026-11-11): both claws work, the rigged absinthe claw and this Beanie claw."
       },
       "reward": {
         "type": "item",
@@ -374,6 +374,14 @@
         "shake_meter": {
           "max_value": 100,
           "failure_state": "temporary_token_shaker_ban"
+        },
+        "approved_rig": {
+          "authority": "author ruling round v26, 2026-11-11 (both claws work)",
+          "grab_rule": "The claw slips on every grab unless the machine's PAYOUT light is blinking.",
+          "payout_light": "Blinks on a hidden every-N-plays cycle; the Token Attendant hints at it.",
+          "payout_cycle_n": "NOT YET SET",
+          "prize_before_relic_won": "item_beer_pong_saint_relic or nothing",
+          "prize_after_relic_won": "junk-shelf prizes (prize_redemption_counter.economy.junk_shelf)"
         }
       },
       "reward": {
@@ -382,7 +390,7 @@
         "unique": true,
         "sets_state": "beer_pong_saint_relic_obtained"
       },
-      "post_win_state": "relic_hook_empty_machine_dispenses_joke_prizes",
+      "post_win_state": "relic_hook_empty_machine_dispenses_junk_shelf_prizes",
       "quest_reference": "design/Quests/debaucheryville/nfthuntdebaucheryville.md"
     },
     {

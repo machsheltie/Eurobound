@@ -57,7 +57,7 @@
 - Hall height to vault crown about 9 m, mezzanine deck about 4.5 m (PROPOSED: ground + first floor of the 4-storey exterior).
 - North-wing vault about 5 m (PROPOSED: "lower" per the spec and v4).
 - Not yet placed: **mirror corridor** (`aa_node_mirror_corridor`, between the cabinet loop and the north wing). Open question.
-- Not yet placed: **the Arcade bathroom with the toilet-paper statue** (author, round v25: the bros find the Token Attendant asleep in the arms of a statue repurposed as a toilet-paper holder). No hall art, manifest entry or screen has a public restroom or a statue; the only Arcade restroom is the hidden Claw Machine Maintenance Closet Restroom. Open question (see `design/worlds/debaucheryville/npcs/Absinthe_Arcade/token_attendant.md`).
+- Not yet placed: **the Arcade bathroom with the toilet-paper statue** (author, round v25: the bros find the Token Attendant asleep in the arms of a statue repurposed as a toilet-paper holder). **RESOLVED (author, round v26, 2026-11-11): public restroom screen approved, to be painted (night/day, same camera conventions).** It is a new screen, not yet in the hall art; the statue is a bronze Green Fairy repurposed as a toilet-paper holder, and the scene triggers on the first bathroom visit after 01:00 (see `design/worlds/debaucheryville/npcs/Absinthe_Arcade/token_attendant.md`). The hall exit to it is not yet placed.
 
 ## Asset list
 
@@ -90,7 +90,7 @@ Status: ☐ todo · ◐ generated, needs QA · ☑ approved
 | `aa_cab_frogger_existential` | idle, attract, insert-token, villain-emerging, defeated/reset (battle states; replaces the mini-game states) |
 | `aa_cab_identity_crisis` | same battle state set |
 | `aa_cab_kebab_kombat` | same battle state set (+ ladder-rung indicator if the ladder is ruled in) |
-| `aa_cab_claw_rigged` | idle, relic-present, play, near-miss, win, relic-absent, shake-warning |
+| `aa_cab_claw_rigged` | idle, relic-present, play, near-miss, win, relic-absent, shake-warning, PAYOUT light blinking. Rig approved round v26: the claw slips on every grab unless the PAYOUT light blinks (hidden every-N-plays cycle the Token Attendant hints at); relic or nothing until the Beer Pong Saint Relic is won, then junk-shelf prizes. Both claws work (ruled round v26) |
 | `aa_cab_ddr_broken` (north wing) | idle error, 0/3-3/3 token pips, unlock pulse |
 | `aa_cab_time_crisis_cracked` (north wing) | curtain-hidden, displaced, green-glow night |
 
@@ -98,9 +98,9 @@ Status: ☐ todo · ◐ generated, needs QA · ☑ approved
 | id | notes |
 |---|---|
 | `aa_prop_ddr_danceoff_pads` (x3) + `aa_int_layer_ddr_wall_screen` | **Interactive** rhythm mini-game, 2 tokens a song. Screen gets an animated arrow loop |
-| `aa_prop_skeeball_lane` (x3) | **Interactive** (round v25): ticket mini-game, states idle / insert-token / playing / results / ticket-jam |
+| `aa_prop_skeeball_lane` (x3) | **Interactive** (round v25): ticket mini-game, states idle / insert-token / playing / results (no ticket-jam state: ticket machines do not jam mechanically, flavour only, ruled round v26) |
 | `aa_prop_foosball_table` | **Interactive** (round v25): ticket mini-game vs an NPC, states idle / insert-token / playing / results win / loss |
-| `aa_cab_claw_beanie` | Beanie Baby claw (not the rigged claw). **Interactive** (round v25: "the claw machine must exist and work"): 5 tokens, prize or nothing; prize pool NEEDS AUTHOR RULING. States idle / insert-token / playing / grab-miss / grab-win |
+| `aa_cab_claw_beanie` | Beanie Baby claw (not the rigged claw). **Interactive** (round v25: "the claw machine must exist and work"; which claw RESOLVED round v26: both claws work): 5 tokens, prize or nothing; prize pool NEEDS AUTHOR RULING. States idle / insert-token / playing / grab-miss / grab-win |
 | `aa_cab_bubble_bobble` | Real title as drawn. Set dressing (whether it pays tickets is still open) |
 | `aa_cab_generic_upright_a/b/c`, `aa_cab_generic_broken` | Set dressing. Wall-row filler, marquee/screen atlases separate |
 
@@ -142,4 +142,4 @@ Generate → `register_to.py` → `night_glow.py` → `finalize_faces.py` / `fin
 2. Which cabinet numbers are Frogger, Street Fighter and Kebab Kombat (proposed 2 / 4 / 6).
 3. DDR dance-off: real songs vs sound-alikes; token cost and ticket payout.
 4. Prize Redemption catalogue and ticket prices (draft in progress).
-5. New assets from rulings: hero-cabinet marquee repaints with the real titles, a Kebab Kombat ladder indicator, `aa_prop_prize_tickets` (ticket strip + counter display), and the mirror-corridor screen's own painting.
+5. New assets from rulings: hero-cabinet marquee repaints with the real titles, a Kebab Kombat ladder indicator, `aa_prop_prize_tickets` (ticket strip + counter display), and the mirror-corridor screen's own painting; the new public restroom screen (night/day, same camera conventions) with a bronze Green Fairy toilet-paper-holder statue prop (round v26).

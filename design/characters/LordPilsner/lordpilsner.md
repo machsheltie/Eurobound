@@ -13,6 +13,7 @@ Lord Pilsner – The Legend in His Own Mind
     • Bravado Style: Keg-Fu — drunk boxing with unpredictable swings.
     • Look: Frosted tips, puka shell necklace, cargo shorts. Sidekick phone clipped to his belt.
     • Signature Flaw: Believes every barmaid is seconds away from falling in love with him. She isn’t.
+    • Relationship Status: Newly single. Game-wide canon (author, round v26, 2026-11-11): “It's part of why they went to Euromemeia.”
 
 Skill Tree (3 branches)
     1. Toastmaster (party buffs, crowd hype)

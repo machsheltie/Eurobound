@@ -59,7 +59,8 @@
     {
       "npc_id": "debaucheryville_npc_arcade_employee_01",
       "display_name": "Arcade Employee",
-      "role": "floor_staff_quest_reactor_machine_reset",
+      "role": "floor_staff_quest_reactor",
+      "role_status": "Machine-reset job merged into the Token Attendant (debaucheryville_npc_arcade_token_attendant_01), author ruling round v26 2026-11-11. Keeps the club-flyer and claw-win reactions.",
       "node_id": "aa_node_main_cabinet_loop",
       "schedule": {
         "10:00_to_18:00": "main_hall_and_entry",
@@ -84,12 +85,10 @@
       ],
       "visual_design": {
         "clothing": "black_staff_tee_with_purple_pixel_logo_and_overloaded_key_ring",
-        "prop": "machine_reset_remote_held_like_tv_remote",
         "sprite_sheet": "arcade_employee.png"
       },
       "animations": [
-        "idle_remote_click",
-        "cabinet_reset",
+        "idle",
         "flyer_squint",
         "claw_win_double_take"
       ]
@@ -98,18 +97,20 @@
       "npc_id": "debaucheryville_npc_arcade_token_attendant_01",
       "display_name": "Token Attendant",
       "display_name_status": "PROPOSED name options in profile (Out of Order Ota / Jammin' Jarda / Thirty-Seven Pieces); NEEDS AUTHOR RULING",
-      "role": "token_machine_and_ticket_machine_fixer_and_bathroom_attendant",
+      "role": "token_machine_fixer_machine_reset_and_bathroom_attendant",
       "node_id": "aa_node_token_exchange",
       "secondary_node": "roaming_jammed_ticket_machines",
       "profile": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/token_attendant.md",
       "author_design": "Employee in TGI Fridays-esque clothes and flair who fixes stuck ticket machines and token exchange machine problems and services the bathrooms; the bros catch him asleep in the arms of a statue repurposed as a toilet-paper holder, passed out on absinthe (author, round v25 2026-11-11). Separate person from the prize-counter bartender (ruled).",
+      "author_design_v26": "Round v26 2026-11-11 (author): 'absinthe drunken', 'pimple faced'. Scene approved: new public restroom screen (to be painted), a bronze Green Fairy statue repurposed as a toilet-paper holder, triggered on the first bathroom visit after 01:00. The Arcade Employee's machine-reset job merges into him. Ticket machines do not jam mechanically (flavour only). He hints at the rigged absinthe claw's PAYOUT-light cycle.",
+      "ambient_mutters": "WritingRoom/tasks/20261110_2241_absinthe_arcade_microcopy/",
       "schedule": {
         "10:00_to_18:00": "token_exchange",
         "18:00_to_01:00": "roaming_ticket_jams_and_bathroom_rounds",
-        "01:00_to_04:00": "bathroom_asleep_in_statue_arms",
+        "01:00_to_04:00": "public_restroom_asleep_in_green_fairy_statue_arms",
         "04:00_to_10:00": "offscreen"
       },
-      "schedule_status": "PROPOSED; bathroom screen not yet built (open question in profile)",
+      "schedule_status": "Hours PROPOSED; 01:00 trigger and public restroom screen APPROVED round v26 (screen to be painted, not yet in the hall art)",
       "personality": {
         "core": "efficient_and_cheerfully_unashamed_of_the_exchange_rate",
         "comedy_function": "treats every obvious ripoff as hospitality, then drinks absinthe until a bathroom statue has to hold him"
@@ -117,13 +118,15 @@
       "services": [
         "explain_token_exchange",
         "restore_jammed_token_machine",
-        "clear_jammed_ticket_machine",
+        "machine_reset",
+        "clear_jammed_ticket_machine_flavour_only",
+        "hint_claw_payout_light_cycle",
         "service_bathrooms",
         "deny_existence_of_real_vip_section"
       ],
       "visual_design": {
         "clothing": "tgi_fridays_style_striped_shirt_apron_and_flair_buttons",
-        "props": "machine_key_lanyard_ticket_jam_hook_mallet_plunger_token_pouch",
+        "props": "machine_key_lanyard_ticket_jam_hook_mallet_plunger_mop_token_pouch",
         "sprite_sheet": "token_attendant.png"
       },
       "animations": [
@@ -131,6 +134,8 @@
         "tap_price_board",
         "jog_to_machine",
         "left_side_smack",
+        "machine_reset",
+        "mop_floor",
         "sleep_in_statue_arms"
       ]
     }

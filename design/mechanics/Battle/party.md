@@ -56,7 +56,7 @@ Chadwick – The Influencer Nobody Asked For
 Bradley – The Muscle with a Dad Bod
     • Likeable Trait: Genuinely protective of his crew — will charge anyone who threatens them… after catching his breath.
     • Dislikeable Trait: Will pick a fight with anyone over trivial slights. 
-    • Battle Role: "Tank/Crowd Controller” Absorbs damage for the party and controls enemy positioning with his pool cue staff's reach advantage. Protective of his friends but gets increasingly reckless as his health drops, triggering berserker-style abilities.
+    • Battle Role: "Glass Cannon" (author ruling, round v26, 2026-11-11: roles follow battle_system.md; Lord Pilsner is the tank, Bradley the glass cannon). Protective of his friends but gets increasingly reckless as his health drops, triggering berserker-style abilities.
     • Initial Weapon:  Broken Pool Cue Staff
     • Special: Protein Slam — downs a protein shake mid-battle, regaining HP but burping a stun cloud at nearby enemies.
     • Ultimate Move: Bouncer Breaker — rushes enemies like a drunk bull, stunning all for one turn and dealing heavy damage to one. 
@@ -85,13 +85,13 @@ Bravado — Why It Works
         ◦ Regained via small wins, compliments, or pulling off ridiculous stunts.
         ◦ Certain items/skills boost Bravado temporarily for “one last hurrah” moments.
 Party Combat Trinity
-Lord Pilsner: Leader/All-Rounder (Keg-Fu club attacks + party buffs) Chadwick: Support Buffer (Bro-Mancy lighting effects + ally enhancement)
-Bradley: Tank/Crowd Control (Frat-Sorcery staff mastery + enemy positioning)
+Lord Pilsner: Tank/Leader (Keg-Fu club attacks + party buffs; tank per the round v26 ruling) Chadwick: Support Buffer (Bro-Mancy lighting effects + ally enhancement)
+Bradley: Glass Cannon (Frat-Sorcery staff mastery; glass cannon per the round v26 ruling)
 Perfect Balance:
     • Pilsner coordinates and motivates 
     • Chadwick enhances and distracts 
     • Bradley protects and punishes 
-Each character covers the others' weaknesses while their flaws create interesting tactical decisions - do you let Bradley go berserk for massive damage but lose your tank? Do you risk Chadwick's unreliable buffs for the potential huge payoff?
+Each character covers the others' weaknesses while their flaws create interesting tactical decisions - do you let Bradley go berserk for massive damage but leave him completely exhausted and vulnerable? Do you risk Chadwick's unreliable buffs for the potential huge payoff?
 “Playable Idiot Logic” (explicit in-doc section)
     • Player Superiority: You’re smarter than your avatars; the pleasure is orchestrating their disaster—then salvaging victory.
     • Self-Aware Writing: UI/narrator roasts every delusion (“Bradley flexes. Crowd yawns. −2 Dignity”).

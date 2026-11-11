@@ -8,8 +8,8 @@
 > summoning beat (**[CANON — approved draft]**). **Round v25 (2026-11-11), author:** the name is **Accounts
 > Receivable** (nameplates **ACCOUNTS** and **RECEIVABLE**), and every proposed stat, move, resistance, reward, the
 > loss rule and the flee rule are **APPROVED**. Still **PROPOSED — NEEDS AUTHOR RULING:** every unmarked line of
-> dialogue, the appearance details marked PROPOSED, the arena staging, the PAY THE TAB command and the
-> bouncer question below.
+> dialogue, the appearance details marked PROPOSED, the arena staging and the PAY THE TAB command. **Round v26
+> (2026-11-11), author:** the hall "bouncers" **are** Accounts Receivable (bouncer question resolved below).
 >
 > This is not a cabinet villain. It is the Arcade's only fight with real-world staff, and it only happens if
 > the bros refuse to pay Cara's tab at the front door (`design/Quests/debaucheryville/caras_twenty_first.md`).
@@ -18,7 +18,7 @@
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_accounts_receivable_01`
 - **Display Name**: **Accounts Receivable** **[CANON — author, round v25 2026-11-11]**. One word per man: the battle nameplates read **ACCOUNTS** and **RECEIVABLE** **[CANON — author]**. Knock out one and the other's plate still reads half a department.
-- **Open question (NEEDS AUTHOR RULING):** the Round v24 ruling lists **"bouncers"** among the hall NPCs (from the author's chat "create hero image prompt"). Are these two the Arcade's bouncers, standing in the hall all night until summoned, or a separate pair who only exist for this fight? This file assumes they are not visible until "Gentlemen?" (they step in from offscreen), which keeps the reveal. If they are the hall bouncers, the reveal becomes "the two men by the door were for you".
+- **RESOLVED (author, round v26, 2026-11-11): the hall "bouncers" ARE Accounts Receivable.** They only appear when summoned ("Gentlemen?"), so the reveal stands. Original question: the Round v24 ruling lists **"bouncers"** among the hall NPCs (from the author's chat "create hero image prompt"). Are these two the Arcade's bouncers, standing in the hall all night until summoned, or a separate pair who only exist for this fight? This file assumes they are not visible until "Gentlemen?" (they step in from offscreen), which keeps the reveal. If they are the hall bouncers, the reveal becomes "the two men by the door were for you".
 - **Tier**: Minor Villain (optional pair fight)
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), the front door / entry
 - **Associated Quest/Arc**: `debaucheryville_sidequest_caras_twenty_first_01` (PROPOSED ID)
@@ -103,7 +103,7 @@ HD-2D side-view battle (ruling 2026-11-10): both enforcers on screen as large bi
 *The bros flee.* **[CANON — approved draft]** *From the doorway, the Prize Bartender, still bored, adds to the tab:* **"Service charge."** **[CANON — approved draft]**
 
 ### Post-Defeat Presence (PROPOSED)
-They go back to wherever they came from. If the author rules them to be the hall bouncers, they stand by the door afterwards and nod at the bros on every visit, like regulars. No grudge; the grudge is on the tab, and the tab is the bartender's. No redemption arc.
+They go back to wherever they came from; they are the hall bouncers (ruled round v26) and only appear when summoned. No grudge; the grudge is on the tab, and the tab is the bartender's. No redemption arc.
 
 ---
 
@@ -201,7 +201,7 @@ Winning ends with the bros fleeing and "Service charge." from the doorway. The t
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ they flee a bill, not a fight |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ◐ name, stats, moves, resistances, rewards, loss and flee rules approved (round v25); PAY THE TAB command, bouncer identity and dialogue still pending |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ◐ name, stats, moves, resistances, rewards, loss and flee rules approved (round v25); bouncer identity resolved (round v26: they are the hall bouncers); PAY THE TAB command and dialogue still pending |
 
 ---
 
@@ -216,3 +216,4 @@ Winning ends with the bros fleeing and "Service charge." from the doorway. The t
 |------|--------|--------|
 | 2026-11-10 | Initial profile from the author's ChatGPT chat "Absinthe Arcade Exterior Design" | Claude draft for machsheltie |
 | 2026-11-11 | Round v25: name ruled Accounts Receivable (losing options dropped); stats, moves, resistances, rewards, loss and flee rules approved; file renamed from `tab_enforcers.md` | Claude for machsheltie |
+| 2026-11-11 | Round v26: the hall "bouncers" are Accounts Receivable (bouncer question resolved) | Claude for machsheltie |

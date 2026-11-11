@@ -12,6 +12,14 @@
 > ripoff as hospitality" (`absinthe_arcade_npcs.json`, 2026-11-02 package) is kept. Everything else in this file
 > (name, dialogue, scene staging, the statue's design, schedule, which bathroom) is a Claude draft:
 > **PROPOSED — NEEDS AUTHOR RULING.**
+>
+> **Round v26 rulings (author, 2026-11-11)** **[CANON — author]**: he is **"absinthe drunken"** and **"pimple
+> faced"**. The bathroom scene is **APPROVED**: it happens in a **new public restroom screen** (to be painted; not yet
+> in the hall art), the statue is a **bronze Green Fairy repurposed as a toilet-paper holder**, and the trigger is the
+> **first bathroom visit after 01:00**. The roster's **Arcade Employee machine-reset job merges into him**. **Ticket
+> machines do NOT jam mechanically**; jams are background flavour only. His ambient mutters are being written by the
+> Writers' Room (`WritingRoom/tasks/20261110_2241_absinthe_arcade_microcopy/`). He hints at the rigged absinthe
+> claw's PAYOUT-light cycle (claw rig ruled round v26; both claws work). His name is still unruled.
 
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_arcade_token_attendant_01` (existing roster ID, kept)
@@ -20,10 +28,10 @@
   2. **Jammin' Jarda**: he clears ticket jams. His flair includes a button that says JAMMIN'. He thinks it is about the machines.
   3. **Thirty-Seven Pieces**: he wears thirty-seven pieces of flair, Brian's number from *Office Space*, the overachiever the bartender's fifteen is a protest against. The bros call him by the count. He corrects them when he adds one.
 - **Internal Name**: the Token Attendant
-- **Role**: Machine fixer (stuck ticket machines, the TOKENS HERE exchange) **[CANON — author]** / bathroom attendant **[CANON — author]** / discovery scene
+- **Role**: Machine fixer (stuck ticket machines, the TOKENS HERE exchange) **[CANON — author]**; ticket-machine jams are flavour only **[ruled round v26]** / machine resets, merged in from the Arcade Employee **[ruled round v26]** / bathroom attendant **[CANON — author]** / discovery scene
 - **Associated Quest**: None. The bathroom discovery is a one-off scene (PROPOSED)
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), the token exchange (`aa_node_token_exchange`) and wherever a ticket machine has jammed
-- **Secondary Appearances**: the Arcade bathroom **[CANON — author]**. Which bathroom, and whether it is a screen, is an open question (see the end of this file)
+- **Secondary Appearances**: the Arcade bathroom **[CANON — author]**: a **new public restroom screen** **[APPROVED — author, round v26]**, to be painted (night/day, same camera conventions); not yet in the hall art
 
 ---
 
@@ -50,7 +58,8 @@ The bros see a legend living the dream. The player sees a man whose job is fixin
 | Age | Mid-20s to early 30s (PROPOSED) |
 | Build | Wiry; moves at a jog between jammed machines (PROPOSED) |
 | Height | Average |
-| Energy | Chipper, sweaty, quietly drunk by midnight |
+| Energy | Chipper, sweaty, quietly drunk by midnight; **"absinthe drunken"** **[CANON — author, round v26]** |
+| Skin | **"Pimple faced"** **[CANON — author, round v26]** |
 
 ### Clothing
 - **Uniform**: TGI Fridays-esque **[CANON — author]**: PROPOSED red-and-white striped work shirt, black apron with a coin pouch full of tokens, black pants, a lanyard heavy with machine keys.
@@ -100,7 +109,12 @@ Keep the machines running so the tokens keep flowing, keep the bathroom usable s
 **Bros complain about the rate**:
 > "Outside it's one SOV for nothing. In here it's one SOV for a token. That's infinity percent better."
 
+### Ambient Mutters
+Being written by the Writers' Room (Gemini; author approves): `WritingRoom/tasks/20261110_2241_absinthe_arcade_microcopy/` **[ruled round v26]**. He mutters them when the bros walk near him.
+
 ### Key Interaction Dialogue — Machine Trouble
+*Ruled round v26: ticket machines do not jam mechanically; jams are background flavour only. No tickets are ever withheld from the player. The ticket-jam exchange below is ambient staging.*
+
 *A ticket dispenser jams mid-payout. He jogs over, already smiling.*
 
 **Bradley**: "It ate my tickets, bro. I won those."
@@ -116,10 +130,10 @@ Keep the machines running so the tokens keep flowing, keep the bathroom usable s
 > "It's holding your tokens somewhere safe. Inside it. You can visit them." *(smacks the left side; 20 tokens clatter out)* "See? It missed you."
 
 ### The Bathroom Discovery — scene beats
-*Author's beat **[CANON — author]**: the bros catch him in the bathroom, asleep in the arms of one of the statues that's been repurposed as a toilet-paper holder, passed out from drinking too much absinthe. Staging, trigger, statue design and lines below are PROPOSED.*
+*Author's beat **[CANON — author]**: the bros catch him in the bathroom, asleep in the arms of one of the statues that's been repurposed as a toilet-paper holder, passed out from drinking too much absinthe. **Approved round v26 (author, 2026-11-11):** the scene is in the new public restroom screen (to be painted), the statue is a bronze Green Fairy repurposed as a toilet-paper holder, and the trigger is the first bathroom visit after 01:00. The remaining staging details and every line below are still PROPOSED.*
 
-1. **Trigger (PROPOSED):** the first time the bros go into the Arcade bathroom after 01:00. He is not at the token machine; the OUT OF ORDER sign is hanging on the token machine instead.
-2. **Reveal (PROPOSED):** the bathroom door swings open on a bronze Art Nouveau statue, a Green Fairy with spread wings, holding her arms out in front of her like she's offering something. She was once offering something. Now a toilet roll is threaded on one forearm and the Token Attendant is lying across both, cradled like a bride carried over a threshold, snoring. One shoe is off. An empty absinthe glass with a slotted spoon balanced on it sits on the cistern. His flair catches the light. He has hung an OUT OF ORDER sign on his own lanyard.
+1. **Trigger [APPROVED — author, round v26]:** the first time the bros go into the Arcade's public restroom after 01:00. He is not at the token machine; the OUT OF ORDER sign is hanging on the token machine instead (PROPOSED).
+2. **Reveal (statue APPROVED round v26; staging PROPOSED):** the bathroom door swings open on a bronze Art Nouveau statue, a Green Fairy with spread wings, holding her arms out in front of her like she's offering something. She was once offering something. Now a toilet roll is threaded on one forearm and the Token Attendant is lying across both, cradled like a bride carried over a threshold, snoring. One shoe is off. An empty absinthe glass with a slotted spoon balanced on it sits on the cistern. His flair catches the light. He has hung an OUT OF ORDER sign on his own lanyard.
 3. **The bros react (PROPOSED).** Nobody is disgusted, nobody is worried:
    > **Lord Pilsner:** "Gentlemen. That man found love in Europe. Last time a woman held me like that, she charged by the hour. He's getting it for free. Respect the hustle."
    > **Bradley:** "She's holding him AND the paper. That's a load-bearing woman. Respect."
@@ -160,7 +174,7 @@ If the bros never go into the bathroom after 01:00, the scene never plays. He is
 |------|----------|----------|
 | 10:00–18:00 | TOKENS HERE machine (`aa_node_token_exchange`) | Selling tokens, clearing jams |
 | 18:00–01:00 | Hall, roaming between machines | Clearing ticket jams; bathroom rounds on the hour |
-| 01:00–04:00 | The Arcade bathroom | Asleep in the statue's arms **[CANON beat]** |
+| 01:00–04:00 | The Arcade's public restroom screen **[APPROVED round v26]** | Asleep in the bronze Green Fairy's arms **[CANON beat]** |
 | 04:00–10:00 | Offscreen | — |
 
 ### Positioning Notes
@@ -175,7 +189,9 @@ If the bros never go into the bathroom after 01:00, the scene never plays. He is
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Tokens (TOKENS HERE machine) | 1 SOV each **[ruled 2026-11-10]** | 1 token | Arcade currency |
-| Unjam a ticket machine | Free | — | Releases stuck tickets (PROPOSED flavour) |
+| Unjam a ticket machine | — | — | Background flavour only; ticket machines do not jam mechanically **[ruled round v26]** |
+| Machine resets | — | — | Merged in from the Arcade Employee **[ruled round v26]** |
+| Claw hint | Free | — | Hints at the rigged absinthe claw's hidden PAYOUT-light cycle **[ruled round v26]**; hint lines not yet written |
 | Toilet paper | "Two tokens" (asleep, PROPOSED gag, not a real charge) | — | No mechanic |
 
 ### Hidden Details / Easter Eggs (PROPOSED)
@@ -190,7 +206,7 @@ If the bros never go into the bathroom after 01:00, the scene never plays. He is
 | NPC | Relationship |
 |-----|--------------|
 | Prize Bartender (`prize_counter_bartender.md`) | Separate employee **[CANON — author]**. Same flair rules. The bartender got the bar; he got the toilets. He doesn't seem to mind. The bartender minds for him |
-| Arcade Employee (`absinthe_arcade_npcs.json`) | Also listed as floor staff who resets machines. See open question 3 |
+| Arcade Employee (`absinthe_arcade_npcs.json`) | His machine-reset job merged into the Token Attendant **[ruled round v26]**. The Arcade Employee keeps his club-flyer and claw-win reactions |
 | Backpack Girl Who Never Left | Sits beside his token machine every night. He gives her the tokens the machine spits out by accident (PROPOSED) |
 | The Green Fairy statue | It's complicated (PROPOSED) |
 
@@ -228,16 +244,18 @@ After the discovery he never mentions it and denies it if asked. The statue's to
 ### Interaction Animations
 | Animation | Trigger |
 |-----------|---------|
-| jog_to_machine | A ticket machine jams |
-| left_side_smack | Clears the jam |
-| sleep_in_statue_arms | The bathroom scene **[CANON beat]** |
+| jog_to_machine | A ticket machine jams (background flavour) |
+| left_side_smack | Clears the jam (machine fixing) |
+| machine_reset | Resets a cabinet (job merged from the Arcade Employee, round v26) |
+| mop_floor | Mopping, hall or restroom |
+| sleep_in_statue_arms | The restroom scene, asleep on the Green Fairy statue **[CANON beat]** |
 | sleep_service_voice | Waking line, eyes still closed |
 
 ### Sprite States
 | State | When Used |
 |-------|-----------|
 | on_shift | Token machine / roaming |
-| asleep_statue | Bathroom, 01:00–04:00 |
+| asleep_statue | Public restroom, 01:00–04:00 |
 
 ---
 
@@ -269,7 +287,7 @@ After the discovery he never mentions it and denies it if asked. The statue's to
 | Full appearance documented | ✅ (uniform canon; details PROPOSED) |
 | Personality & motivation clear | ✅ |
 | Complete dialogue trees | ✅ PROPOSED |
-| Schedule & location specified | ✅ PROPOSED; bathroom location open |
+| Schedule & location specified | ✅ PROPOSED; restroom screen approved round v26 (to be painted) |
 | Connections to other NPCs | ✅ |
 | Recurring appearances planned | ✅ |
 | Animation states defined | ✅ PROPOSED |
@@ -284,16 +302,17 @@ After the discovery he never mentions it and denies it if asked. The statue's to
 
 ## ❓ Open Questions for the Author
 1. **Name:** Out of Order Ota / Jammin' Jarda / Thirty-Seven Pieces.
-2. **Which bathroom?** The Arcade has no public-restroom screen. The hall art (v8f) and the interior manifest show no restroom door and no statue; the only Arcade bathroom in the design files is the hidden **Claw Machine Maintenance Closet Restroom** (`design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md`), a mop-closet-sized room behind the broken DDR's 3-token unlock, with no statue. Options: (a) put the statue and the scene in that closet restroom; (b) a new public Arcade restroom screen (needs art and a hall exit); (c) another existing screen.
-3. **Overlap with the Arcade Employee:** the roster's Arcade Employee (`debaucheryville_npc_arcade_employee_01`) is floor staff who resets machines. Does the Token Attendant now own machine fixing, with the Arcade Employee kept for the club-flyer and claw-win reactions, or are they merged?
-4. **The statue:** a bronze Green Fairy (draft) or something else? One statue, or several ("one of the statues")?
-5. **Scene trigger:** first bathroom visit after 01:00 (draft), or tied to something else?
-6. **Every line of dialogue** in this file is a draft for approval.
+2. ~~**Which bathroom?**~~ **RESOLVED (author, round v26, 2026-11-11): option (b), a new public Arcade restroom screen, to be painted (night/day, same camera conventions).** Original question: The Arcade has no public-restroom screen. The hall art (v8f) and the interior manifest show no restroom door and no statue; the only Arcade bathroom in the design files is the hidden **Claw Machine Maintenance Closet Restroom** (`design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md`), a mop-closet-sized room behind the broken DDR's 3-token unlock, with no statue. Options: (a) put the statue and the scene in that closet restroom; (b) a new public Arcade restroom screen (needs art and a hall exit); (c) another existing screen.
+3. ~~**Overlap with the Arcade Employee:**~~ **RESOLVED (author, round v26): the Arcade Employee's machine-reset job merges into the Token Attendant.** Original question: the roster's Arcade Employee (`debaucheryville_npc_arcade_employee_01`) is floor staff who resets machines. Does the Token Attendant now own machine fixing, with the Arcade Employee kept for the club-flyer and claw-win reactions, or are they merged?
+4. ~~**The statue:**~~ **RESOLVED (author, round v26): a bronze Green Fairy repurposed as a toilet-paper holder.**
+5. ~~**Scene trigger:**~~ **RESOLVED (author, round v26): first bathroom visit after 01:00.**
+6. **Every line of dialogue** in this file is a draft for approval. (Ambient mutters: Writers' Room, `WritingRoom/tasks/20261110_2241_absinthe_arcade_microcopy/`.)
+7. ~~**Which claw?**~~ **RESOLVED (author, round v26): both claws work** (the rigged absinthe claw and the Beanie claw). He hints at the rigged claw's PAYOUT-light cycle; the hint lines are unwritten.
 
 ---
 
 ## 📝 Development Notes
-- The bathroom scene needs a bathroom screen (see open question 2) and a statue prop with the toilet roll.
+- The bathroom scene needs the new public restroom screen painted (night/day, same camera conventions; approved round v26) and a bronze Green Fairy statue prop with the toilet roll.
 - He is an NPC drinking, not the bros, so the intoxication-law review is not triggered.
 - The INSUFFICIENT CREDITS screen on the token machine at 0 SOVS is ruled (round v25).
 
@@ -323,3 +342,4 @@ After the discovery he never mentions it and denies it if asked. The statue's to
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-11 | Initial profile from the author's round v25 design | Claude draft for machsheltie |
+| 2026-11-11 | Round v26 rulings applied: restroom screen, Green Fairy statue, trigger, machine-reset merge, "absinthe drunken" / "pimple faced", no mechanical ticket jams, Writers' Room mutters, claw rig hint | Claude for machsheltie |

@@ -248,8 +248,8 @@ Every maintenance entrance contact sheet must show the broken DDR machine immedi
 | Asset ID | Filename | Required poses/loops |
 |---|---|---|
 | `aa_char_backpack_girl` | `backpack_girl_arcade.png` | Strum (4), scribble (2), tune (2), kebab offer (2), head tilt (2), stand-and-go (3) |
-| `aa_char_arcade_employee` | `arcade_employee.png` | Idle, remote click, reset, flyer squint, claw-win double take |
-| `aa_char_token_attendant` | `token_attendant.png` | Count, price-board tap, glass polish, fake-VIP circle point |
+| `aa_char_arcade_employee` | `arcade_employee.png` | Idle, flyer squint, claw-win double take (machine-reset job moved to the Token Attendant, round v26) |
+| `aa_char_token_attendant` | `token_attendant.png` | Count, price-board tap, machine fixing (jog-to-machine, left-side smack, machine reset), mopping, sleeping on the Green Fairy statue (public restroom), fake-VIP circle point |
 | `aa_char_hacker_variants` | `arcade_hacker_patron_variants.png` | Three silhouettes with idle, type and hint gesture |
 | `aa_char_edm_ghost_variants` | `edm_ghost_variants.png` | Two translucent silhouettes with restrained dance loops |
 | `aa_char_rogue_backpackers` | `rogue_backpacker_variants.png` | Four distinct travelers, seated/standing/chat variants |
