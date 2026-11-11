@@ -465,6 +465,7 @@ func fight() -> String:
 	var rng := RandomNumberGenerator.new()
 	rng.randomize()
 	battle_core = ArcadeBattle.build_fight([ArcadeBattle.ACCOUNTS_RECEIVABLE, ArcadeBattle.ACCOUNTS_RECEIVABLE], state, rng)
+	battle_core.balance_due = GrandpaProvides.tab_amount(state)
 	battle_screen = BattleScreen.new()
 	battle_screen.name = "battle_screen"
 	battle_screen.setup(battle_core, load(HALL_DIR + ("aa_int_hall_night.png" if night else "aa_int_hall_day.png")),
@@ -472,6 +473,7 @@ func fight() -> String:
 	add_child(battle_screen)
 	var outcome: String = await battle_screen.finished
 	ArcadeBattle.settle_party(battle_core, state)
+	GrandpaProvides.add_credit(state, battle_core.sovs_collected)
 	battle_core = null
 	battle_screen = null
 	return outcome

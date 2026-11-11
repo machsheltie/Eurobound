@@ -722,8 +722,8 @@
      "word": "light",
      "hits": 3,
      "weight": {
-      "1": 40,
-      "2": 60
+      "1": 25,
+      "2": 45
      },
      "log": "Left shoulder: 4 SOVS. Left shoulder again: 4 SOVS. Gratuity: 18%."
     },
@@ -748,6 +748,17 @@
       1
      ],
      "requires_ally": true
+    },
+    {
+     "id": "shake_down_payment",
+     "name": "Shake Down Payment",
+     "type": "physical",
+     "target": "one",
+     "word": "light",
+     "special": "shake_down",
+     "collect_sovs": 5,
+     "weight": 15,
+     "requires_balance": true
     },
     {
      "id": "past_due",
@@ -788,7 +799,7 @@
      "bark": "My colleague has clocked out"
     }
    ],
-   "_hook_steal_sovs": "author round v30: Accounts Receivable should be able to steal SOVS; numbers pending (ad)"
+   "_shake_down": "round v31 ar_steal = a: 5 SOVS per shake toward the tab, 15% while a balance is due"
   }
  },
  "cabinets": {

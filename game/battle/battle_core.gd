@@ -31,6 +31,10 @@ var items: Dictionary = {}
 var second_thoughts := 0.0
 ## SOVS the Sinking Fund's Buy the Dip took this fight (its soggy pile pays them back on a win).
 var sovs_taken := 0
+## A bill being collected in this fight (Accounts Receivable): what's still owed, and what Shake Down
+## Payment has collected toward it (round v31 ar_steal = a).
+var balance_due := 0
+var sovs_collected := 0
 
 const JARMILA := "super_turbo_hyper_jarmila"
 ## Her marquee grows one word per revision (doc: "…EX", "…EX Plus Alpha Final Revision").
@@ -661,6 +665,8 @@ func _pick_move(e: BattleUnit) -> Dictionary:
 			continue
 		if m.get("requires_ally", false) and _allies(e).is_empty():
 			continue
+		if m.get("requires_balance", false) and (balance_due <= 0 or wallet == null or int(wallet.gold) <= 0):
+			continue
 		if m.get("requires_self_negative", false) and not NEGATIVE.any(func(s: String) -> bool: return e.has_status(s)):
 			continue
 		if m.has("target_lacks") and _bros_without(String(m["target_lacks"])).is_empty():
@@ -820,6 +826,13 @@ func _resolve(e: BattleUnit, m: Dictionary) -> void:
 	if special == "mirror_match":
 		_mirror_match(e, m, targets[0])
 		return
+	if special == "shake_down":
+		var t := targets[0]
+		e.last_target = t.id
+		var r := _hit(e, t, _move_mult(m, e), false, int(m.get("accuracy_steps", 0)))
+		if r["hit"]:
+			_shake_down(e, t, int(m.get("collect_sovs", 5)))
+		return
 	if special == "pincer":
 		# Every standing enemy of this kind hits the same bro in one action.
 		var t := targets[0]
@@ -889,6 +902,25 @@ func _steal(t: BattleUnit, amount: int) -> void:
 	wallet.gold -= taken
 	sovs_taken += taken
 	_say("%s pays %d SOVS." % [t.display_name, taken] if taken != 1 else "%s pays 1 SOV." % t.display_name)
+
+
+## Shake Down Payment (round v31): up to `amount` SOVS fall out of the wallet and go on the tab,
+## never more than the balance due.
+func _shake_down(e: BattleUnit, t: BattleUnit, amount: int) -> void:
+	var taken := mini(mini(amount, balance_due), maxi(int(wallet.gold), 0)) if wallet != null else 0
+	if taken <= 0:
+		return
+	wallet.gold -= taken
+	balance_due -= taken
+	sovs_collected += taken
+	_say("%s holds %s upside down and shakes. %s, a Razr and a burned Linkin Park CD hit the carpet. %s keeps the SOVS. He hands back the CD after reading the tracklist. Balance due: %s." % [
+		e.display_name, t.display_name, sovs(taken), e.display_name, sovs(balance_due)])
+	if t.id == "lord_pilsner":
+		_say("%s: \"Bro. Dinner first.\"" % t.display_name)
+
+
+static func sovs(n: int) -> String:
+	return "1 SOV" if n == 1 else "%d SOVS" % n
 
 
 func _palette_spray(e: BattleUnit, m: Dictionary) -> void:

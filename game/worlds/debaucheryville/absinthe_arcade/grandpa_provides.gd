@@ -14,6 +14,8 @@ const ROUND_BOUGHT := "debaucheryville.absinthe_arcade.cara_round_bought"
 const TAB_PAID := "debaucheryville.absinthe_arcade.cara_tab_paid"
 const AR_DEFEATED := "debaucheryville.absinthe_arcade.accounts_receivable_defeated"
 const TAB_OPEN := "debaucheryville.absinthe_arcade.cara_tab_open"
+## SOVS Accounts Receivable shook loose and put on the tab (round v31 ar_steal = a).
+const TAB_CREDIT := "debaucheryville.absinthe_arcade.cara_tab_credit"
 const TAB_SOVS := 40
 const SERVICE_CHARGE_SOVS := 10
 
@@ -38,7 +40,16 @@ static func exit_confrontation_due(state) -> bool:
 
 
 static func tab_amount(state) -> int:
-	return TAB_SOVS + (SERVICE_CHARGE_SOVS if _flag(state, TAB_OPEN) else 0)
+	return TAB_SOVS + (SERVICE_CHARGE_SOVS if _flag(state, TAB_OPEN) else 0) - credit(state)
+
+
+static func credit(state) -> int:
+	return int(state.flags.get(TAB_CREDIT, 0))
+
+
+## Shake Down Payment money goes on the tab.
+static func add_credit(state, sovs: int) -> void:
+	state.flags[TAB_CREDIT] = credit(state) + maxi(sovs, 0)
 
 
 ## Pays the whole tab. False (nothing taken) when the wallet is short.
@@ -61,7 +72,7 @@ static func fled(state) -> void:
 ## Fight lost: the tab and the service charge come out of the wallet; a short wallet is emptied and
 ## the rest waived. Returns true when it was waived.
 static func lost(state) -> bool:
-	var owed := TAB_SOVS + SERVICE_CHARGE_SOVS
+	var owed := maxi(TAB_SOVS + SERVICE_CHARGE_SOVS - credit(state), 0)  # never more than 50 in all
 	var waived := int(state.gold) < owed
 	state.gold = maxi(int(state.gold) - owed, 0)
 	state.flags[TAB_PAID] = true

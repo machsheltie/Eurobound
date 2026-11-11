@@ -137,3 +137,47 @@ func test_grandpa_provides_refusing_twice_starts_the_billing_dispute() -> void:
 	assert_eq(said, ["HEY!", "Service charge."])
 	assert_eq(GrandpaProvides.tab_amount(GameState), 50)
 	assert_eq(GameState.gold, 100)
+
+
+func test_grandpa_provides_shaken_sovs_go_on_the_tab_and_cap_the_loss() -> void:
+	# Arrange: Accounts Receivable shook 15 SOVS loose during the fight, then the bros lost.
+	var s := FakeState.new()
+	s.gold = 100
+	s.flags[GrandpaProvides.ROUND_BOUGHT] = true
+	GrandpaProvides.add_credit(s, 15)
+	# Act
+	GrandpaProvides.lost(s)
+	# Assert: 35 more, so 50 in all.
+	assert_eq(s.gold, 65)
+
+
+func test_grandpa_provides_shaken_sovs_shrink_the_open_tab_after_a_win() -> void:
+	# Arrange
+	var s := FakeState.new()
+	s.flags[GrandpaProvides.ROUND_BOUGHT] = true
+	GrandpaProvides.add_credit(s, 10)
+	# Act
+	GrandpaProvides.fled(s)
+	# Assert
+	assert_eq(GrandpaProvides.tab_amount(s), 40)
+
+
+func test_grandpa_provides_shake_down_takes_five_toward_the_balance() -> void:
+	# Arrange
+	var wallet := FakeState.new()
+	wallet.gold = 100
+	var core := BattleCore.new()
+	core.wallet = wallet
+	core.balance_due = 40
+	var e := BattleUnit.new()
+	e.display_name = "ACCOUNTS"
+	var t := BattleUnit.new()
+	t.id = "lord_pilsner"
+	t.display_name = "Lord Pilsner"
+	# Act
+	core._shake_down(e, t, 5)
+	# Assert
+	assert_eq([wallet.gold, core.balance_due, core.sovs_collected], [95, 35, 5])
+	assert_eq(core.events.map(func(ev): return ev["text"]), [
+		"ACCOUNTS holds Lord Pilsner upside down and shakes. 5 SOVS, a Razr and a burned Linkin Park CD hit the carpet. ACCOUNTS keeps the SOVS. He hands back the CD after reading the tracklist. Balance due: 35 SOVS.",
+		"Lord Pilsner: \"Bro. Dinner first.\""])
