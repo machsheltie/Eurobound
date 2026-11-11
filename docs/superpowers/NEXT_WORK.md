@@ -554,3 +554,21 @@ Open question: should it, and to what depth?
   a game (9 balls), 0-20 tickets by score; foosball 2 tokens a game vs an NPC, 15 tickets for a
   win, 3 for a loss; claw 5 tokens (ruled), prize or nothing; DDR 2 tokens a song, 0-30 tickets
   (ruled).
+- **(Round v26, 2026-11-11)** Battle numbers approved as proposed in
+  `design/mechanics/Battle/battle_numbers_proposal.md`:
+  - Bravado tiers are Low below 1/3 and High at 2/3 or more. The damage modifier is +half max Bravado at High, +quarter at Mid and -2 at Low.
+  - Damage spreads ±2, with a minimum of 1.
+  - SMAAAASH crit chance is Luck%, +10 at High, minus half the target's Grit, minimum 1%. A crit doubles damage.
+  - Speed is ±2 at High/Low Bravado. Flex restores 3 Bravado. The rolling HP meter drains 10 HP/s.
+  - Run chance is 50% ±5% per point of average-Speed edge, clamped 10-90%. Running from a cabinet fight spends the tokens, keeps HP, and returns the bros to the cabinet.
+  - Bradley: HP 30, Bravado 14, Off 12, Def 2, Spd 8, Charm 4, Luck 5, Grit 3. Chadwick: HP 35, Bravado 20, Off 6, Def 3, Spd 7, Charm 10, Luck 6, Grit 2.
+  - Everyone starts with Attack, Item, Flex and Run; Pilsner also has Roast Line.
+  - **Roles follow battle_system.md: Pilsner is the tank, Bradley the glass cannon.** party.md is wrong on this point.
+  - Claw rig approved: the claw slips unless the PAYOUT light blinks, on a hidden every-N-plays cycle the Token Attendant hints at. It pays the Beer Pong Saint Relic or nothing until the relic is won, then junk-shelf prizes. **Both claws work** (the rigged absinthe claw and the Beanie claw).
+  - Cabinet battle backdrops approved, but Kebab Kombat's top is to be repainted to match the neon cabinet bezel of the other two.
+  - Ticket machines do not jam; it's background flavour. Gemini, via the Writers' Room, writes the ambient lines that the "absinthe drunken pimple faced" Token Attendant mutters when the bros walk near him.
+  - Token Attendant scene approved: a new public restroom screen (to be painted), a bronze Green Fairy statue used as a toilet-paper holder, triggered on the first bathroom visit after 01:00. The Arcade Employee's machine-reset job merges into him.
+  - The hall "bouncers" ARE Accounts Receivable.
+  - **Lord Pilsner is newly single, game-wide canon (author): "It's part of why they went to Euromemeia."**
+  - Torte Royale: Bradley's bonus is **Quark Is Protein**. He decides Topfenstrudel is a protein bar, so it heals him double (+30 HP / +30 SP), and he orders it every visit.
+  - Unresolved (the notes said only "notes"): the hall names and the Cara's 21st leftovers.
