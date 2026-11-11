@@ -322,7 +322,7 @@ All atmospheric particle systems and environmental storytelling:
 - Pressure gauge uses patterns AND colors (per Technical Integration notes) - fill texture density increases with pressure
 - Fermenting Algorithm buzzword states pair color with the word itself (SYNERGY/OPTIMIZE/DISRUPT/PIVOT always readable as text)
 - Ingredient compatibility feedback uses checkmark/X shapes, not color alone
-- Touch zones minimum 44px for all 9 ingredient slots and console interactions
+- Click zones minimum 44px for all 9 ingredient slots and console interactions
 
 ---
 
@@ -479,7 +479,7 @@ All atmospheric particle systems and environmental storytelling:
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Animation system: Frame-based with JSON timing data from sprites.json
-- Particle systems: CPUParticles2D for mobile performance optimization
+- Particle systems: CPUParticles2D for performance optimization
 
 ### Performance Strategy:
 - **High-end devices**: Full particle effects, complex animations, vat reflections
@@ -555,7 +555,7 @@ All atmospheric particle systems and environmental storytelling:
 - [ ] Tech startup satire is clear throughout ("failed ICO pivots to brewing" narrative)
 - [ ] Hidden Algorithm Archive entrance has discoverable visual cues post-boss
 - [ ] Performance optimized (CPUParticles2D, atlas limits, potato mode)
-- [ ] Touch zone sizing considered (44px minimum for ingredient slots and console)
+- [ ] Click zone sizing considered (44px minimum for ingredient slots and console)
 - [ ] Colorblind-friendly alternatives for gauge and buzzword states
 - [ ] Social media viral potential maximized (poster wall, BrewBot meltdown compositions)
 
@@ -570,7 +570,7 @@ All atmospheric particle systems and environmental storytelling:
 | Satirical Targets Appropriate | ✅ PASS | Tech bro / crypto culture, not legitimate programming or brewing |
 | Seedy Underbelly Present | ✅ PASS | Random number generator sold as revolutionary AI brewing |
 | Gameplay Value Established | ✅ PASS | Boss battle, taste profile mini-game, vendor, brewery tour finale |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented (LOD, atlases, potato mode) |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented (LOD, atlases, potato mode) |
 | Performance Budget | ✅ PASS | 60 FPS, 18 draw calls, 45MB |
 | Accessibility Features | ✅ PASS | Pattern-based gauge, text-based buzzwords, visual audio cues |
 | No Crypto Elements | ✅ PASS | Crypto content is the established satirical target of this location's source material |

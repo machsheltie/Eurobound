@@ -442,7 +442,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 - Hold Still meter fill must not rely on green-vs-red alone: Good fill is solid with a check icon, Bad fill is hatched with a warning icon
 - Pain Meter faces (Levels 1–5) already carry expression changes, not color-only states — preserve that
 - Price tags and Sold Out stamp use text + shape, never color coding alone
-- Mini-game tap zone is full-screen width (well beyond the 44px minimum); shop menu rows and dialogue portraits sized 48px+ for touch
+- Mini-game click zone is full-screen width (well beyond the 44px minimum); shop menu rows and dialogue portraits sized 48px+ for mouse and controller focus
 
 ---
 
@@ -469,7 +469,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Single-room scene; AnimatedSprite2D for the tattoo process sequence and Donát's drawing loop; CPUParticles2D (not GPU) for dust motes, cigarette smoke, autoclave steam
 - Neon and fluorescent flicker via simple alpha toggle timers (no shaders); flicker timers disabled when reduced-motion mode is active
-- "Hold Still" mini-game: full-screen InputEventScreenTouch tap zone at a locked 60fps; flinch count writes `tattoo_quality` (wobblier duck = funnier, per design)
+- "Hold Still" mini-game: full-screen InputEventMouseButton click zone at a locked 60fps; flinch count writes `tattoo_quality` (wobblier duck = funnier, per design)
 - The finished duck composites permanently onto Lord Pilsner's base sprite — the tattoo layer must export as a separate alpha-masked overlay for global reuse across the rest of the game
 - State tracking per `euro_ink_4_less_state` (tattoo_acquired, tattoo_quality, donat_friendship, lord_pilsner_special_unlocked, matching_ducks_offered, times_donat_encountered_in_other_cities)
 
@@ -617,7 +617,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 - [ ] Satirical theme (mutual confident delusion, not malice) is clear throughout all assets — Donát must read warm, never sinister
 - [ ] Every flash art design carries subtle duck qualities (foreshadowing requirement from design notes)
 - [ ] Performance optimized (single room, alpha-toggle flickers, dust/smoke particle caps)
-- [ ] Touch zone sizing considered (44px minimum — full-screen mini-game tap zone, 48px menu rows)
+- [ ] Click zone sizing considered (44px minimum — full-screen mini-game click zone, 48px menu rows)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (hatched/iconed meter fills, never green-vs-red alone)
 - [ ] Social media viral potential maximized (reveal composition, certificate close-up framing)
 

@@ -346,7 +346,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Morning Breakfast Patrons | (288, 288) | 96x64 | Bleary survivors, coffee, debate already resumed |
 
 ### Technical Notes:
-- Faction patrons ship with idle + debate gesture frames; background crowd uses the pre-rendered Gasping Crowd strips per profile mobile spec
+- Faction patrons ship with idle + debate gesture frames; background crowd uses the pre-rendered Gasping Crowd strips per profile performance 
 - Betting Regulars sprite is the pub's single sly edge — keep it warm, not sinister; the coins are small change
 - Die Stimme is always rendered one shade darker than ambient lighting, never fully lit
 
@@ -493,7 +493,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Debate Frame | (0, 0) | 256x160 | Main interface: topic banner ("Should Für Elise be Andante or Moderato?"), response area, staff-line borders |
-| Allegro Position Button | (256, 0) | 96x48 | Choice button with Allegro wing emblem (≥44px touch zone) |
+| Allegro Position Button | (256, 0) | 96x48 | Choice button with Allegro wing emblem (≥44px click zone) |
 | Adagio Position Button | (256, 48) | 96x48 | Choice button with whole-note-bar emblem |
 | Moderato Position Button | (256, 96) | 96x48 | Choice button with balanced-note emblem |
 | Abstain Button | (352, 0) | 96x48 | Rest-symbol emblem — abstaining is respected |
@@ -556,7 +556,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Debate Topic Ticker | (240, 432) | 192x24 | Scrolling strip of tonight's contested topics |
 
 ### Technical Notes:
-- Every interactive UI element ≥44x44px effective touch zone (48x48 buttons and notes exceed it; flags and pips are display-only)
+- Every interactive UI element ≥44x44px effective click zone (48x48 buttons and notes exceed it; flags and pips are display-only)
 - Faction identity is triple-coded: emblem shape + flag silhouette + label text — color is decoration, never information
 - Stamp animation frames align 1:1 with three audible metronome ticks; the landing frame and ink splash (Sheet 7) share the third tick
 
@@ -723,7 +723,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - Drinks differ by silhouette and foam behavior (overfizz, flat, fermata etch), not hue alone
 - Buff icons use distinct pictograms (boot / shield / scale), not tint swaps
 - Debate reaction portraits pair expression with border pattern (dots = approval, zigzag = outrage, waves = laughter)
-- Touch zones minimum 44px for bar, bulletin board, debate buttons, backroom door, and shop rows
+- Click zones minimum 44px for bar, bulletin board, debate buttons, backroom door, and shop rows
 
 ---
 
@@ -917,7 +917,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - [ ] Color palette matches hex codes exactly
 - [ ] All five metronomes read as different tempos at a glance (pendulum angles + tick rings)
 - [ ] Bass-clef table legs and note-duration tap handles legible at game resolution
-- [ ] "Tonight's Tempo: CONTESTED" and "No Allegro After Midnight" chalk/brass text readable on mobile screens
+- [ ] "Tonight's Tempo: CONTESTED" and "No Allegro After Midnight" chalk/brass text readable on min-spec hardware screens
 - [ ] Frau Schnell and Herr Langsam frame counts support their contrasting animation rates
 - [ ] Die Mitte's tears-of-joy frame lands emotionally at 48x96
 - [ ] Stamp full art shows frozen pendulum + resting stein with legible arc inscription
@@ -931,7 +931,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 - [ ] Safe-haven warmth reads instantly — this must FEEL like the one non-exploitative room in Sinfonia
 - [ ] Hidden areas/interactions have discoverable visual cues (backroom door, snug, selfie spot, dartboard)
 - [ ] Performance optimized (CPU particles, atlas limits respected, static crowd honored)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (faction shapes, drink silhouettes)
 - [ ] Social media viral potential maximized in composition choices (metronome shelf, debate reactions, stamp beat-sync)
 

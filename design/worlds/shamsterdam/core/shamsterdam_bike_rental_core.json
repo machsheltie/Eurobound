@@ -231,10 +231,11 @@
     {"id": "damage_free_streak", "trigger": "3_consecutive_undamaged_returns", "type": "mastery"}
   ],
   
-  "mobile_optimization": {
-    "draw_calls_max": 30,
-    "memory_budget_mb": 35,
-    "particle_budget": 20,
+  "performance_budget": {
+    "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
+    "draw_calls_max": "TBD (desktop budget: author ruling)",
+    "memory_budget_mb": "TBD (desktop budget: author ruling)",
+    "particle_budget": "TBD (desktop budget: author ruling)",
     "target_fps": 60,
     "interaction_type": "menu_based_dialogue"
   }

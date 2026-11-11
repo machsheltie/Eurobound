@@ -297,25 +297,26 @@
     }
   },
   
-  "mobile_optimization": {
+  "performance_budget": {
+    "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
     "texture_atlases": [
       {
         "name": "tram_stop_environment",
         "files": ["tram_shelter.png", "bench_states.png", "background_city.png", "shrine_elements.png"],
         "max_size": "1024x1024",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_VRAM"
       },
       {
         "name": "tram_stop_characters",
         "files": ["jiri_states.png", "jiri_expressions.png", "ambient_pedestrians.png", "pigeons.png"],
         "max_size": "512x512",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_VRAM"
       },
       {
         "name": "tram_stop_effects",
         "files": ["tram_stop_effects.png", "tram_stop_ui.png", "passing_trams.png"],
         "max_size": "512x512",
-        "compression": "PVRTC_iOS_ETC2_Android"
+        "compression": "S3TC_BPTC_VRAM"
       }
     ],
     "lod_levels": {

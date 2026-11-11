@@ -488,7 +488,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - Response tier chips differ by border shape (rounded/square/hatched/double-line), never color alone
 - Bravado gain vs. drain popups use +/- glyphs with distinct silhouettes
 - Hot vs. cold coffee readable by steam presence and cup tone, not hue shift alone
-- Touch zones minimum 44px for debate chips, menu, and Wi-Fi interactions
+- Click zones minimum 44px for debate chips, menu, and Wi-Fi interactions
 
 ---
 
@@ -522,7 +522,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 
 ### Performance Notes:
 - Back room and smoking lounge load on-demand (door-gated sub-scenes)
-- Debate NPC conversations pre-rendered per profile mobile spec — no live crowd dialogue simulation
+- Debate NPC conversations pre-rendered per profile performance  — no live crowd dialogue simulation
 - Debate UI is a persistent CanvasLayer instanced only during encounters
 
 ---
@@ -665,7 +665,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 - [ ] Satirical theme (intellectual pretension, not learning) is clear throughout
 - [ ] Back room and secret bookcase door have discoverable visual cues
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 

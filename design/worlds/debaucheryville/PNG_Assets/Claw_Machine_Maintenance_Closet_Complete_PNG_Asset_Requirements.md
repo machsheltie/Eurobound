@@ -519,7 +519,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 ### High Contrast Graffiti Alternatives:
 - **Enhanced Text Visibility** (0, 176, 256x64) - All graffiti with increased contrast
 - **Status Effect Clear Indicators** (256, 176, 128x32) - Embarrassed status visualization
-- **Interactive Element Highlights** (384, 176, 96x32) - Touch targets emphasized
+- **Interactive Element Highlights** (384, 176, 96x32) - Click targets emphasized
 
 ### Motion Sensitivity Options:
 - **Static Flicker Alternative** (0, 208, 64x32) - Steady fluorescent lighting
@@ -658,9 +658,9 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 - [ ] DDR toilet is clearly interactive
 - [ ] Claw chandelier evokes sadness/relatability
 - [ ] Cramped space feeling conveyed through composition
-- [ ] Mobile optimization maintains visual quality
+- [ ] Desktop performance tiers maintain visual quality
 - [ ] Blacklight reveal system works as overlay
-- [ ] All UI elements are touch-friendly (44px minimum)
+- [ ] All UI elements are click-friendly (44px minimum)
 
 ---
 
@@ -674,7 +674,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 | Satirical Targets Appropriate | ✅ PASS | Gaming nostalgia corruption |
 | Seedy Underbelly Present | ✅ PASS | Adult content disguised as maintenance |
 | Gameplay Value Established | ✅ PASS | ICQ, achievements, status effects |
-| Technical Feasibility | ✅ PASS | Mobile optimized for small space |
+| Technical Feasibility | ✅ PASS | Optimized for small space (desktop performance budget) |
 | Performance Budget | ✅ PASS | 60 FPS, 10 draw calls, 25MB |
 | Accessibility Features | ✅ PASS | Graffiti always-visible option |
 | No Crypto Elements | ✅ PASS | No cryptocurrency content in this location |

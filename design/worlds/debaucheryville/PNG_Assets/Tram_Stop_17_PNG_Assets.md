@@ -438,7 +438,7 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 - Mood phase icons are already symbol-based (sun / thought bubble / storm cloud / eye / spiral) — fully colorblind-safe; do not replace with color tints
 - Blessing Active state adds a check mark to the halo icon rather than relying on glow color alone
 - Tram identification is by painted number, never by livery color alone (#9 vs #22 vs the heritage #17)
-- Jiří's tap zone (96x128) and all dialogue options exceed the 44px minimum touch target
+- Jiří's click zone (96x128) and all dialogue options exceed the 44px minimum click target
 
 ---
 
@@ -615,7 +615,7 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 - [ ] Satirical theme (absurdist persistence treated with dignity) is clear throughout all assets
 - [ ] Easter eggs discoverable: obsessively highlighted #17 route, Jiří's margin notes, less-worn #17 tracks
 - [ ] Performance optimized (6-pigeon cap, on-demand Visit 13+ loading, tween-scroll trams)
-- [ ] Touch zone sizing considered (44px minimum — Jiří hotspot and dialogue options compliant)
+- [ ] Click zone sizing considered (44px minimum — Jiří hotspot and dialogue options compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (symbol-based mood icons, numbered trams)
 - [ ] Social media viral potential maximized (transformation side-by-side, plaque and reunion compositions)
 

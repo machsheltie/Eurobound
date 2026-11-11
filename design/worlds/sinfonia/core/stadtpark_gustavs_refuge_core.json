@@ -53,11 +53,12 @@
         {"type": "moonlight", "global": true, "color": "#C0C0FF"}
       ]
     },
-    "mobile_optimization": {
-      "lod_level": 2,
-      "draw_calls": 45,
-      "memory_mb": 45,
-      "max_particles": 60
+    "performance_budget": {
+      "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
+      "lod_level": "TBD (desktop budget: author ruling)",
+      "draw_calls": "TBD (desktop budget: author ruling)",
+      "memory_mb": "TBD (desktop budget: author ruling)",
+      "max_particles": "TBD (desktop budget: author ruling)"
     }
   },
   

@@ -346,7 +346,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 - Steam bursts sync to bass drops at 128 BPM
 - Sound waves visualize boss attack patterns
 - Status effects clearly indicate active debuffs/buffs
-- Mobile scaling reduces particle count on low-end devices
+- Quality scaling reduces particle count on min-spec hardware
 
 ---
 
@@ -741,7 +741,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 ### Integration Testing:
 - [ ] Vault door countdown timer accurate to game time
 - [ ] Brewing vat pulses sync exactly to 128 BPM music
-- [ ] Rhythm puzzle timing windows appropriate for mobile
+- [ ] Rhythm puzzle timing windows appropriate for desktop
 - [ ] Steam bursts trigger correctly on bass downbeats
 - [ ] Neon piping pulse matches music intensity
 - [ ] DJ Zombie movement syncs to beat without lag
@@ -774,13 +774,13 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 - **Combo System:** Consecutive perfects build multiplier
 - **Pressure Gauge:** Visual feedback for success/failure
 
-### Mobile Touch Optimization:
-- **Touch Zones:** Minimum 48px for rhythm buttons
+### Desktop Input Optimization:
+- **Click Zones:** Minimum 48px for rhythm buttons
 - **Haptic Feedback:** Vibration on button press
 - **Visual Feedback:** Immediate color change on press
 - **Audio Feedback:** Click sound synced to press
 - **Latency Compensation:** Auto-calibration system
-- **Accessibility:** Larger touch zones option available
+- **Accessibility:** Larger click zones option available
 
 ---
 
@@ -816,7 +816,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 - Tag sprite sheet versions for animation updates
 - Document any coordinate changes in changelog
 - Maintain backup of pre-optimization originals
-- Track mobile optimization variants separately
+- Track low-spec desktop variants separately
 
 ---
 

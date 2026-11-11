@@ -133,16 +133,17 @@
     "pigeon_scatter": {"duration": 0.5, "frames": 4, "audio": "pigeon_wings_mass_takeoff.ogg"}
   },
   
-  "mobile_optimization": {
+  "performance_budget": {
+    "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
     "texture_atlases": [
       {"id": "plaza_main", "includes": ["tileset", "landmarks"], "max_size": 2048},
       {"id": "plaza_characters", "includes": ["hans_jurgen", "gustav", "npcs"], "max_size": 2048},
       {"id": "plaza_effects", "includes": ["effects", "quest"], "max_size": 1024}
     ],
     "performance": {
-      "max_draw_calls": 40,
-      "max_memory_mb": 64,
-      "max_particles": 60,
+      "max_draw_calls": "TBD (desktop budget: author ruling)",
+      "max_memory_mb": "TBD (desktop budget: author ruling)",
+      "max_particles": "TBD (desktop budget: author ruling)",
       "target_fps": 60
     }
   },

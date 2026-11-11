@@ -337,7 +337,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - Floor creak effects provide crucial stealth feedback
 - Vomit particles are synchronized for comedy timing
 - Status effects clearly distinguish Embarrassed vs Inspired
-- Mobile scaling reduces particle density on low-end devices
+- Quality scaling reduces particle density on min-spec hardware
 
 ---
 
@@ -781,7 +781,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - Tag sprite sheet versions for stealth system updates
 - Document any tile pattern changes in changelog
 - Maintain backup of pre-optimization originals
-- Track mobile optimization variants separately
+- Track low-spec desktop variants separately
 
 ---
 

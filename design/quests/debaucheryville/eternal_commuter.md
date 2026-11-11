@@ -425,7 +425,7 @@ After 10+ visits, bros can choose to:
 | Seedy nightlife underbelly present | N/A (different tone) |
 | Progressive NPC development | ✅ |
 | Post-credits scene delivers payoff | ✅ (emotional payoff) |
-| Mobile-optimized moments | ✅ |
+| Performance-optimized moments | ✅ |
 
 ---
 

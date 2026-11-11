@@ -277,7 +277,7 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 - Vapor swirls defy physics for comedic effect
 - Confusion spirals indicate status effect visually
 - Fairy split creates multiple illusion copies
-- Mobile scaling reduces particle density on low-end devices
+- Quality scaling reduces particle density on min-spec hardware
 
 ---
 
@@ -625,7 +625,7 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 | Satirical Targets Appropriate | ✅ PASS | Green Fairy marketing myths and "mind-expanding" tourists, not addiction |
 | Seedy Underbelly Present | ✅ PASS | Manufactured psychedelic experience, patrons feeding dread for tips |
 | Gameplay Value Established | ✅ PASS | Mirror portal puzzle, boss battle, brewery tour progression, signature brew |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented (atlasing, LOD, potato mode) |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented (atlasing, LOD, potato mode) |
 | Performance Budget | ✅ PASS | 60 FPS, 18 draw calls, 45MB |
 | Accessibility Features | ✅ PASS | Portal pattern indicators, motion-reduced warping, visual audio cues |
 | No Crypto Elements | ✅ PASS | No cryptocurrency content in this location |

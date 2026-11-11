@@ -466,7 +466,7 @@ assets/sprites/locations/debaucheryville/internet_history_museum/
 - **Status Effect Visual** (80, 128, 32x32) - Effect without audio
 
 ### Clear Navigation Elements:
-- **Enhanced Interactive Zones** (0, 160, 64x48) - Obvious touch targets
+- **Enhanced Interactive Zones** (0, 160, 64x48) - Obvious click targets
 - **Password Field Highlighting** (64, 160, 128x24) - Clear input areas
 - **Achievement Clarity** (192, 160, 128x48) - High contrast notifications
 
@@ -694,7 +694,7 @@ assets/sprites/locations/debaucheryville/internet_history_museum/
 - [ ] Cross-location password puzzle integration mapped
 - [ ] Lord Pilsner lore discovery system documented
 - [ ] Achievement unlock conditions specified
-- [ ] Mobile optimization scaling documented for all LOD levels
+- [ ] Desktop performance scaling documented for all LOD levels
 - [ ] Audio sync points identified for particle effects
 - [ ] Quest hub functionality integrated with ICQ network system
 
@@ -709,7 +709,7 @@ assets/sprites/locations/debaucheryville/internet_history_museum/
 | Satirical Targets Appropriate | ✅ PASS | Nostalgia commodification and museum pretension — punches up |
 | Seedy Underbelly Present | ✅ PASS | Psychological damage sold as education; hidden black market |
 | Gameplay Value Established | ✅ PASS | Quest hub, status effect exhibits, 3:33 AM puzzle, lore |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented |
 | Performance Budget | ✅ PASS | 60 FPS, 20 draws, 48MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | None present |
