@@ -118,6 +118,13 @@
       "ticket_price": 2500,
       "effect": null,
       "description": "A cross-eyed plush pizza rat in a chef's hat, stuffed with what feels like aquarium gravel and smelling like a ball pit. Lord Pilsner handed over two and a half thousand tickets for it and calls it \"the crown jewels.\""
+    },
+    "beer_pong_saint_relic": {
+      "display_name": "Beer Pong Saint Relic",
+      "item_class": "quest",
+      "source": "rigged_absinthe_claw_machine",
+      "effect": null,
+      "description": "An intentionally ugly low-resolution icon of a red party cup wearing an eight-bit halo. Its provenance is elaborate, unverifiable and printed on the back in six-point type."
     }
   }
 }
