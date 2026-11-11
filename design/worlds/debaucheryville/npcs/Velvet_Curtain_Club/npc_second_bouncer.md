@@ -113,6 +113,12 @@ Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredibl
 
 ---
 
+## 🎒 Inventory / Services
+
+OPEN QUESTION (author): Marek sells and provides nothing in the current doc (his function is comedy witness). Confirm "None", or specify.
+
+---
+
 ## 🔗 Connections
 
 ### Professional/Social Network
@@ -120,6 +126,20 @@ Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredibl
 |-----|--------------|
 | Velvet Curtain Bouncer (Kamil) | Senior colleague, mentor |
 | Club Staff | Coworkers |
+
+---
+
+## 🔄 Recurring Appearances
+
+### Within Debaucheryville
+- Same location only (per NPC Identity: Secondary Appearances).
+- Return-visit line is documented under Dialogue → Callback (If Bros Return).
+
+### In Other Cities (If Applicable)
+None (same location only).
+
+### Evolution Through Game
+OPEN QUESTION (author)
 
 ---
 
@@ -150,6 +170,22 @@ Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredibl
 
 ---
 
+## 📸 Social Media / Viral Potential
+
+OPEN QUESTION (author)
+
+---
+
+## 🗣️ Voice Direction
+
+### Accent
+OPEN QUESTION (author). Existing fact: all of Marek's documented lines are in Czech, subtitled.
+
+### Tone / Key Delivery Notes
+OPEN QUESTION (author). Existing delivery notes live under Development Notes (laughter contrasts Kamil's deadpan; "Američané" timing).
+
+---
+
 ## ✅ Validation Checklist
 
 | Requirement | Status |
@@ -162,6 +198,10 @@ Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredibl
 | Animation states defined | ✅ |
 | Quest integration documented | ✅ |
 | Comedy value preserved | ✅ |
+| Recurring appearances planned | ⬜ |
+| Sprite notes for artists | ⬜ |
+| Bros never achieve self-awareness | ⬜ |
+| World consistency (city names) | ⬜ |
 
 ---
 
@@ -171,3 +211,24 @@ Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredibl
 - His laughter should contrast with Kamil's deadpan
 - "Američané" exchange needs perfect timing
 - Younger energy provides counterpoint to Kamil's exhaustion
+
+---
+
+## 🚫 Warnings & Restrictions
+
+OPEN QUESTION (author): template Crypto Check and Satirical Target Verification not yet run for this NPC.
+
+---
+
+## 🔧 Development Status
+
+- **Status**: OPEN QUESTION (author)
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/npc_second_bouncer.md`
+- **Registered In**: OPEN QUESTION (author)
+- **Sprite Sheet**: not yet specced
+
+## 📜 Revision History
+
+| Date | Change | Author |
+|------|--------|--------|
+| 2026-11-11 | Added missing NPC_Profile_Template sections (Inventory/Services, Recurring Appearances, Social Media, Voice Direction, Warnings, Development Status, Revision History) as headings/OPEN QUESTIONs; no existing text changed (bead Eurobound-9u9) | Claude (writer agent) |
