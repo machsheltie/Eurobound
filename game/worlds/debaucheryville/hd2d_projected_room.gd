@@ -52,6 +52,7 @@ func _ready() -> void:
 	_apply_time_of_day()
 	if not Engine.is_editor_hint() and spawn_player:
 		SceneRouter.ensure_game_started(get_tree())
+		night = GameClock.night_for_screen(GameState, night)
 		SceneRouter.spawn_player(self, default_spawn)
 		SceneRouter.wire_exits(self)
 

@@ -348,6 +348,7 @@ func _on_interacted(id: String) -> void:
 ## Pays for a cabinet fight and opens the battle screen with that cabinet's art behind it.
 func _play_cabinet(id: String) -> void:
 	ArcadeRules.pay_for_play(GameState, id)
+	GameClock.act(GameState, "fight")
 	_player.input_locked = true
 	var rng := RandomNumberGenerator.new()
 	rng.randomize()
@@ -364,6 +365,7 @@ func _play_cabinet(id: String) -> void:
 func _play_claw(id: String) -> void:
 	var blinking := id == ArcadeClaw.RIGGED and ArcadeClaw.payout_blinking(GameState)
 	ArcadeRules.pay_for_play(GameState, id)
+	GameClock.act(GameState, "minigame")
 	_player.input_locked = true
 	var rng := RandomNumberGenerator.new()
 	rng.randomize()
@@ -402,6 +404,7 @@ SOGGY PILE: %s" % ("1 SOV" if int(result["refund"]) == 1 else "%d SOVS" % int(re
 ## Pays for a skee-ball or foosball game and opens its screen; the tickets come in at the end.
 func _play_rec_game(id: String) -> void:
 	ArcadeRules.pay_for_play(GameState, id)
+	GameClock.act(GameState, "minigame")
 	_player.input_locked = true
 	rec_screen = SkeeBallScreen.new() if id == "skee_ball" else FoosballScreen.new()
 	rec_screen.name = id + "_screen"
@@ -535,6 +538,7 @@ func receivable_arrive() -> void:
 func fight() -> String:
 	var rng := RandomNumberGenerator.new()
 	rng.randomize()
+	GameClock.act(state, "fight")
 	battle_core = ArcadeBattle.build_fight([ArcadeBattle.ACCOUNTS_RECEIVABLE, ArcadeBattle.ACCOUNTS_RECEIVABLE], state, rng)
 	battle_core.balance_due = GrandpaProvides.tab_amount(state)
 	battle_screen = BattleScreen.new()

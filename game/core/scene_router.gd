@@ -31,6 +31,9 @@ static func travel(tree: SceneTree, screen_id: String, spawn_id: String) -> bool
 		push_warning("SceneRouter: screen '%s' is not built yet" % screen_id)
 		return false
 	pending_spawn = spawn_id
+	var state := tree.root.get_node_or_null("GameState")
+	if state != null:
+		GameClock.act(state, "screen")  # round v35: a screen change costs 10 minutes
 	tree.change_scene_to_file.call_deferred(path)
 	return true
 

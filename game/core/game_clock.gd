@@ -7,19 +7,18 @@ extends RefCounted
 ##  - clock_closing = bounce_rest: venues throw the bros out at closing; the next rest is morning,
 ##    which jumps to 10:00.
 ##  - clock_start = morning: a new game starts at 10:00.
-## Still open: clock_ticks (how many minutes each action costs). Until it's ruled the table is empty
-## and LIVE is false, so screens keep their current look and Cara's group stays present (round v32:
-## "until a game clock exists, keep them always present").
+##  - clock_ticks2 = minutes (round v35): a screen change 10, a fight or minigame (cabinet battle,
+##    DDR song, claw, skee-ball, foosball) 20, buying or drinking a drink 10, talking free.
 ## Time is kept in the saved flags as minutes since day 0, 00:00.
 
-const LIVE := false
+const LIVE := true
 const KEY := "clock.minutes"
 const START_HOUR := 10
 const NIGHT_FROM := 20
 const NIGHT_UNTIL := 6
 const DAY := 1440
-## Minutes each action costs: PENDING the author's clock_ticks ruling.
-const TICK_MINUTES := {}
+## Minutes each action costs (round v35).
+const TICK_MINUTES := {"screen": 10, "fight": 20, "minigame": 20, "drink": 10, "talk": 0}
 
 
 static func minutes(state) -> int:
@@ -71,7 +70,7 @@ static func watch_text(state) -> String:
 	return "%02d:%02d" % [m / 60, m % 60]
 
 
-## Night for a screen loading now (only once LIVE; until then screens keep their own default).
+## Night for a screen loading now (while LIVE; otherwise the screen keeps its own default).
 static func night_for_screen(state, fallback: bool) -> bool:
 	return is_night(state) if LIVE else fallback
 

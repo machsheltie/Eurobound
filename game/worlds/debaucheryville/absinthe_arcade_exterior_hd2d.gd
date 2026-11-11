@@ -99,6 +99,8 @@ func _ready() -> void:
 	_build_walkable()
 	_apply_time_of_day()
 	if not Engine.is_editor_hint() and spawn_player:
+		SceneRouter.ensure_game_started(get_tree())
+		night = GameClock.night_for_screen(GameState, night)
 		_player = SceneRouter.spawn_player(self, "start")
 		SceneRouter.wire_exits(self)
 		_camera_focus.global_position = _player.global_position + CAM_FOCUS_HEIGHT

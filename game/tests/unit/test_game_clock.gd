@@ -46,10 +46,22 @@ func test_game_clock_hours_wrap_past_midnight() -> void:
 	assert_true(GameClock.in_hours(21, 20, 2))
 
 
-func test_game_clock_unpriced_actions_cost_nothing_until_ticks_are_ruled() -> void:
+func test_game_clock_actions_cost_the_ruled_minutes() -> void:
+	# Arrange
+	var s := FakeState.new()
+	# Act: a screen change, a fight, a minigame, a drink, a talk.
+	for a in ["screen", "fight", "minigame", "drink", "talk"]:
+		GameClock.act(s, a)
+	# Assert: 10 + 20 + 20 + 10 + 0 after 10:00.
+	assert_eq(GameClock.watch_text(s), "11:00")
+
+
+func test_game_clock_group_only_in_the_evening() -> void:
 	# Arrange
 	var s := FakeState.new()
 	# Act
-	GameClock.act(s, "cabinet")
+	var morning := GameClock.group_present(s)
+	GameClock.set_time(s, 21 * 60)
 	# Assert
-	assert_eq(GameClock.minutes(s), 600)
+	assert_false(morning)
+	assert_true(GameClock.group_present(s))

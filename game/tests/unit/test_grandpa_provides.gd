@@ -185,7 +185,9 @@ func test_grandpa_provides_shake_down_takes_five_toward_the_balance() -> void:
 
 
 func test_grandpa_provides_banter_after_the_first_cabinet_fight_then_the_approach_buys_the_round() -> void:
-	# Arrange
+	# Arrange: 21:00, when Cara's group is in (round v32).
+	SceneRouter.ensure_game_started(get_tree())
+	GameClock.set_time(GameState, 21 * 60)
 	await _open_hall()
 	for f in [GrandpaProvides.BANTER_PLAYED, GrandpaProvides.ROUND_BOUGHT]:
 		GameState.flags.erase(f)
