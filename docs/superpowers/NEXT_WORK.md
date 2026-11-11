@@ -572,3 +572,17 @@ Open question: should it, and to what depth?
   - **Lord Pilsner is newly single, game-wide canon (author): "It's part of why they went to Euromemeia."**
   - Torte Royale: Bradley's bonus is **Quark Is Protein**. He decides Topfenstrudel is a protein bar, so it heals him double (+30 HP / +30 SP), and he orders it every visit.
   - Unresolved (the notes said only "notes"): the hall names and the Cara's 21st leftovers.
+- **(Round v27, 2026-11-11)** Cabinet-battle numbers approved as recommended:
+  - Damage words map to multipliers: light/low x0.7, standard x1.0, moderate x1.2, heavy x1.5.
+  - Accuracy: base 95% to hit, -9% per step; a miss does 0 damage.
+  - Social damage = (Charm + Bravado Mod) - target's Grit, with the same multiplier, spread, floor and crit as physical; the Social resistances apply.
+  - Statuses in battle use the villain-doc versions: Embarrassed is -20% ATK, -2 Bravado a turn, and locks Bravado-cost moves and Ultimates; Gains Bro is +20% ATK. Hardcore Gamer is +1% crit.
+  - Stun: lose the next turn, does not stack. Confused: each action targets someone at random, never the actor.
+  - Honk If You've Peaked drains 2 Bravado from each bro. Short move tables are scaled up to 100%. Full Crossing's 10% is spread proportionally before the first win.
+  - A multi-villain fight pays the sum of their tickets. A downed bro leaves a won fight at 1 HP. Street Fighter always uses 2 Palette Swaps until levels exist.
+  - **The v26 Bravado thirds apply game-wide**, replacing the 2026-08-06 25%/70% bands.
+  - Lasting statuses (Tourist Trap Victim, Food Poisoning 5-8 battles, Broke AF, Grease Fingers) persist after the fight.
+  - Villain leftovers are approved: Sinking Fund's soggy-pile refund (80%/20%), Jarmila's defeat counter, and the Mystery Brown 5% spawn.
+  - Rigged claw: the PAYOUT light blinks every 7th play; the old skill method is dropped.
+  - Art approved: the public restroom v1 night/day and the Kebab Kombat backdrop v2.
+  - Deferred by the author to the morning: the hall names and the Cara's 21st leftovers.
