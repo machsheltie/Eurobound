@@ -105,9 +105,9 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 ### Leather & Jackets:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Faux Leather Jacket | (0, 0) | 48x48 | 40 Sovs budget transformation |
-| Genuine Leather Jacket | (48, 0) | 48x48 | 120 Sovs — the real deal |
-| Studded Leather Jacket | (96, 0) | 48x48 | 150 Sovs maximum statement |
+| Faux Leather Jacket | (0, 0) | 48x48 | 40 SOVS budget transformation |
+| Genuine Leather Jacket | (48, 0) | 48x48 | 120 SOVS — the real deal |
+| Studded Leather Jacket | (96, 0) | 48x48 | 150 SOVS maximum statement |
 | Vintage Biker Jacket | (144, 0) | 48x48 | Has history (or looks like it) |
 | Soft Leather Jacket | (192, 0) | 48x48 | Best of both worlds — the soft section's crown |
 
@@ -118,7 +118,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 | Band T-Shirt (Classic) | (48, 48) | 48x48 | Conversation starter |
 | Band T-Shirt (Obscure) | (96, 48) | 48x48 | Test who's real — gatekeepers exist |
 | Comfortable Black Jeans | (144, 48) | 48x48 | Looking cool without suffering |
-| Band Patch Set | (192, 48) | 64x32 | Allegiance collection, 5-15 Sovs each |
+| Band Patch Set | (192, 48) | 64x32 | Allegiance collection, 5-15 SOVS each |
 
 ### Footwear:
 | Element | Position | Size | Description |
@@ -400,7 +400,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - Cool Factor thresholds are pip-count coded (1-4 pips), never color-gradient alone
 - Genuine vs. faux leather distinguished by tag text and price, exactly as Zdeněk intends — no color-reliant material coding
 - Defense vs. Cool Factor stat deltas use distinct glyphs (shield vs. star) in the comparison panel
-- Staff hotspots, browser rows, and the mirror trigger zone all exceed the 44px minimum touch target
+- Staff hotspots, browser rows, and the mirror trigger zone all exceed the 44px minimum click target
 
 ---
 
@@ -585,7 +585,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 - [ ] Satirical theme (identity performance, affectionately understood) is clear throughout all assets
 - [ ] Hidden details discoverable: tucked-away soft section, '98 poster timeline, fitting room feet, morning-after event
 - [ ] Performance optimized (modulate-based 2 AM state, zone-gated mirror viewport, batched browser)
-- [ ] Touch zone sizing considered (44px minimum — staff, browser, and mirror zones compliant)
+- [ ] Click zone sizing considered (44px minimum — staff, browser, and mirror zones compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (pip thresholds, glyph-coded stats)
 - [ ] Social media viral potential maximized (mirror moment, transformed trio, morning-after compositions)
 

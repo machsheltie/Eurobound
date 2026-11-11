@@ -1,7 +1,7 @@
 # Shenanigans - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Shenanigans is the side-alley Publandia pub where every game is rigged, every "winner" is on payroll, and the only honest thing in the building is the beer — this document specifies every PNG needed to render a con so obvious it loops back around to charming. The satirical engine: the marks know, the house knows the marks know, and everyone keeps playing anyway, because hope sells at 5 Sovs a spin.
+Shenanigans is the side-alley Publandia pub where every game is rigged, every "winner" is on payroll, and the only honest thing in the building is the beer — this document specifies every PNG needed to render a con so obvious it loops back around to charming. The satirical engine: the marks know, the house knows the marks know, and everyone keeps playing anyway, because hope sells at 5 SOVS a spin.
 
 **Location ID:** `publandia_pub_shenanigans_01`
 **Theme:** Tourist gullibility and the psychology of gambling — the scam pub where losing gracefully IS the achievement
@@ -191,7 +191,7 @@ assets/sprites/locations/publandia/shenanigans/
 | Slot Machine Body | (320, 256) | 128x192 | Old machine, "usually broken but try your luck" |
 | "Usually Broken" Sign | (448, 256) | 64x32 | Handwritten, hanging by one corner |
 | Slot Reels Close-Up | (448, 288) | 64x64 | Reels programmed to pay just enough to keep you pulling |
-| Payout Tease Frame | (448, 352) | 64x64 | Two clovers and an almost — psychological exploitation, per pull, 1 Sov |
+| Payout Tease Frame | (448, 352) | 64x64 | Two clovers and an almost — psychological exploitation, per pull, 1 SOV |
 | Slot Coin Tray | (320, 448) | 128x64 | Empty. Echoing. Occasionally clinks anyway |
 | Wheel Pointer & Sticky Peg | (448, 416) | 64x96 | RIGGED DETAIL: the pointer peg that drags every spin home to TRY AGAIN |
 
@@ -201,14 +201,14 @@ assets/sprites/locations/publandia/shenanigans/
 | "Displayed Odds" Placard | (0, 384) | 96x64 | 25% Free Drink, 25% Prize, 50% Try Again — the fiction |
 | "Actual Odds" Ledger | (96, 384) | 96x64 | RIGGED DETAIL: 5% / 0% / 95% — Mickey's private arithmetic |
 | Loss Tally Chalkboard | (0, 448) | 96x64 | Chalk marks nobody asked to be counted |
-| Game Cost Signs | (96, 448) | 96x64 | 5 Sovs, 10 Sovs, "escalating" — the menu of hope |
+| Game Cost Signs | (96, 448) | 96x64 | 5 SOVS, 10 SOVS, "escalating" — the menu of hope |
 | Darts Scoreboard | (192, 384) | 128x64 | Staff column permanently ahead |
 | "Double or Nothing" Slate | (192, 448) | 128x64 | The escalation invitation, freshly chalked every night |
 
 ### Technical Notes:
 - Every game has exactly one RIGGED DETAIL sprite — revealed only via "Wise Fool" status (one game per visit)
 - Wheel spin composites Base + Blur frames; the deceleration is scripted, never physics (see Animation Specs)
-- Slot Machine reels are a 3-frame vertical scroll, not per-symbol simulation — mobile budget respected
+- Slot Machine reels are a 3-frame vertical scroll, not per-symbol simulation — performance budget respected
 - Rigged Reveal Glow is reused across all seven games — one sprite, seven lies
 
 ---
@@ -228,7 +228,7 @@ assets/sprites/locations/publandia/shenanigans/
 | Stamp Ceremony | (0, 128) | 96x128 | Passport open, stamp descending — "Not for winning. For losing with grace." |
 | Selfie Wheel-Rig | (96, 128) | 96x128 | Nudging the wheel to JACKPOT for the photo, finger to lips |
 | Warm Laughter | (192, 128) | 96x128 | Head back, delighted — at you, with you, both |
-| Shill Offer Lean-In | (288, 128) | 96x128 | Conspiratorial: "50 Sovs per night to play 'winner' for fresh marks." |
+| Shill Offer Lean-In | (288, 128) | 96x128 | Conspiratorial: "50 SOVS per night to play 'winner' for fresh marks." |
 
 ### Mickey Details:
 | Element | Position | Size | Description |
@@ -314,7 +314,7 @@ assets/sprites/locations/publandia/shenanigans/
 ### Mark States (Row 1):
 | State | Position | Size | Description |
 |-------|----------|------|-------------|
-| Angry Tourist Ranting | (0, 0) | 96x128 | "This is FRAUD! I want my 100 Sovs back! I'm calling the— who do I even call?!" |
+| Angry Tourist Ranting | (0, 0) | 96x128 | "This is FRAUD! I want my 100 SOVS back! I'm calling the— who do I even call?!" |
 | Angry Tourist Deflated | (96, 0) | 96x128 | Accepting Mickey's consolation drink mid-rant |
 | Oblivious Optimist at Wheel | (192, 0) | 96x128 | Deep in losses, spending freely, luck due any spin now |
 | Optimist "SPIN AGAIN" | (288, 0) | 96x128 | "It HAS to hit eventually! Statistics! Law of averages!" |
@@ -327,7 +327,7 @@ assets/sprites/locations/publandia/shenanigans/
 | Fresh Mark High-Five | (192, 128) | 96x128 | Pre-loss confidence, painful in hindsight |
 | Repeat Fool with Mickey | (288, 128) | 96x128 | Losing peacefully, chatting like old friends |
 | Empty Wallet Flutter | (480, 0) | 32x32 | Moths optional but encouraged |
-| Spilled Coin Purse | (480, 32) | 32x32 | The 50 Sovs "Deep Mark" moment |
+| Spilled Coin Purse | (480, 32) | 32x32 | The 50 SOVS "Deep Mark" moment |
 | Flop Sweat Drop | (480, 64) | 32x32 | Stage 4: "I've spent too much to quit now" |
 | Hope Sparkle | (480, 96) | 32x32 | Irrational, renewable, monetized |
 
@@ -367,7 +367,7 @@ assets/sprites/locations/publandia/shenanigans/
 ### Badges, Crowns & Prerequisites:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Shill Badge | (0, 64) | 32x32 | If you turned — 50 Sovs/night, soul sold separately |
+| Shill Badge | (0, 64) | 32x32 | If you turned — 50 SOVS/night, soul sold separately |
 | Moral Fool Badge | (32, 64) | 32x32 | If you didn't — kept your soul, Mickey respects it more |
 | Bottle Opener Keychain Icon | (64, 64) | 32x32 | The Blarney Trap prerequisite, shown grayed until owned |
 | Lucky Penny | (96, 64) | 32x32 | Pried loose from the rigged jar (achievement flavor) |
@@ -402,9 +402,9 @@ assets/sprites/locations/publandia/shenanigans/
 |---------|----------|------|-------------|
 | Mini-Game Interface Frame | (0, 0) | 256x192 | Shared frame for all seven games: cost display, "TAP TO STOP" button, outcome window |
 | Near-Miss Indicator | (256, 0) | 128x64 | "So close!" burst — fires on every engineered almost |
-| Loss Total Tracker | (256, 64) | 128x32 | Running shame count in Sovs, always visible, always growing |
+| Loss Total Tracker | (256, 64) | 128x32 | Running shame count in SOVS, always visible, always growing |
 | Wise Fool Progress | (256, 96) | 128x64 | 3 scam-loss pips + return-visit marker — the path to the stamp |
-| Shill Offer Moral Choice | (384, 0) | 128x160 | Accept / Decline / Ask for more — 50 Sovs a night vs. your soul |
+| Shill Offer Moral Choice | (384, 0) | 128x160 | Accept / Decline / Ask for more — 50 SOVS a night vs. your soul |
 | Stamp Ceremony UI | (256, 160) | 192x128 | Mickey's toast panel, passport slot, stamp descent zone |
 | Learned Optimism Buff Icon | (448, 160) | 32x32 | +10% scam-detection resistance — the beer working |
 | Sentimental Debuff Icon | (448, 192) | 32x32 | 5% risk: donate extra gold to NPCs, weepily |
@@ -446,8 +446,8 @@ assets/sprites/locations/publandia/shenanigans/
 - **Duration:** 4.5 seconds total
 - **Frames:** 12 (4 blur frames cycled, then 4-frame deceleration crawl, then hold)
 - **Pattern:** Blur 1→2→3→4 loop (2.5s) → decel crawl slowing over 1.5s → dramatic 0.5s near-JACKPOT hesitation → settle on TRY AGAIN
-- **Trigger:** Player taps "TAP TO STOP" (input timing has zero effect on outcome)
-- **Purpose:** Sell a fair spin that was decided the moment 5 Sovs left the wallet; the final hesitation IS the product
+- **Trigger:** player clicks "TAP TO STOP" (input timing has zero effect on outcome)
+- **Purpose:** Sell a fair spin that was decided the moment 5 SOVS left the wallet; the final hesitation IS the product
 - **Audio Sync:** Wheel whir during blur; tick-tick-tick on decel; the "almost" landing sound on the hesitation; sad trombone on settle
 - **Performance Optimization:** Scripted keyframes, no physics simulation (simplified wheel physics per budget); Low LOD skips blur frames entirely
 
@@ -467,7 +467,7 @@ assets/sprites/locations/publandia/shenanigans/
 - **Trigger:** Cup Shuffle round start; speed tier = consecutive rounds played
 - **Purpose:** Escalating speed launders the impossible into the merely difficult
 - **Audio Sync:** Cup slide scrapes per swap; "awww" cue on reveal
-- **Performance Optimization:** Speed tiers capped at 1.8x on low-end devices; blur sprite substitutes for high-tier frames
+- **Performance Optimization:** Speed tiers capped at 1.8x on min-spec hardware; blur sprite substitutes for high-tier frames
 
 ### Dice Roll (Loaded):
 - **Duration:** 1.8 seconds
@@ -550,19 +550,19 @@ assets/sprites/locations/publandia/shenanigans/
 | Off-Key Note Wobble | (0, 160) | 32x32 | Wavy note glyph for the slightly-wrong trad music |
 | Warm Laughter Ripple | (32, 160) | 32x32 | Soft ripple rings for Mickey's laughter |
 
-### Touch Targets & Reduced-Motion UI:
+### Click Targets & Reduced-Motion UI:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Large Spin Button | (64, 160) | 48x48 | 48px tap-to-stop button (exceeds 44px minimum) |
 | Cup Select Zones, Large | (112, 160) | 144x48 | Three 48px cup selection targets |
-| High-Contrast Loss Tracker | (0, 208) | 112x48 | Bold-bordered loss total, enlarged Sov count |
+| High-Contrast Loss Tracker | (0, 208) | 112x48 | Bold-bordered loss total, enlarged SOV count |
 | Stamp Ceremony, Static | (128, 208) | 128x48 | Single-frame toast tableau for reduced-motion mode |
 
 ### Colorblind Considerations:
 - Rigged-game reveals NEVER rely on color alone: the "RIGGED" banner pairs bold text with the crossed-dice glyph, and the Rigged Reveal Glow adds a dashed outline pattern
 - Wheel outcomes are pattern-coded (striped/dotted/solid) in addition to color; displayed-vs-actual odds use text labels, not red/green
 - Shill Badge vs Moral Fool Badge differ in shape (angular vs rounded), not just palette
-- All seven mini-game inputs (spin button, card picks, cup picks, ring throw, dart throw, dice shake, slot pull) meet the 44px minimum touch target
+- All seven mini-game inputs (spin button, card picks, cup picks, ring throw, dart throw, dice shake, slot pull) meet the 44px minimum click target
 
 ---
 
@@ -632,7 +632,7 @@ assets/sprites/locations/publandia/shenanigans/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | The Wise Fool Stamp Path | All seven game apparatuses + RIGGED DETAIL sprites, Wise Fool Progress UI, Mickey Wise Fool Toast + Stamp Ceremony states, Stamp Ceremony UI, Shenanigans Stamp, Stamp Ceremony tableau | Lose at 3 DIFFERENT scams AND return to Shenanigans; requires Bottle Opener Keychain from The Blarney Trap (grayed keychain icon shows the gate); Mickey approaches personally and the ceremony fires |
-| The Shill Offer (Moral Choice) | Shill Offer Moral Choice panel, Mickey Shill Offer Lean-In, Shill Badge / Moral Fool Badge, Toast Strip B ("Turned" / "Moral Fool") | Post-stamp trigger; Accept = 50 Sovs/night + Shill Badge, Decline = Moral Fool Badge + deeper respect, Ask for more = Mickey laughs, still respects you |
+| The Shill Offer (Moral Choice) | Shill Offer Moral Choice panel, Mickey Shill Offer Lean-In, Shill Badge / Moral Fool Badge, Toast Strip B ("Turned" / "Moral Fool") | Post-stamp trigger; Accept = 50 SOVS/night + Shill Badge, Decline = Moral Fool Badge + deeper respect, Ask for more = Mickey laughs, still respects you |
 | Brewmaster Selfie | Selfie Backdrop, Wheel JACKPOT Photo State, Sad Empty Wallet Prop, Jester Cap Prop, Crown Selfie Variant, Selfie Flash Overlay, Photo Frame Border | Selfie spot in front of the wheel; Mickey swaps the wheel to JACKPOT for the photo only — "Don't tell anyone." |
 | Fool's Gold Unlock | Fool's Gold Bottle, Poured Pint, Inventory Icon, Learned Optimism Buff Icon, Sentimental Debuff Icon | Unlocks with the stamp; first one free per house rules; the only purchase in the building with honest odds |
 | Achievement Track | Toast Strips A & B, Despair Slump Strip, Empty Wallet Flutter | "Mark" → "Deep Mark" → "Diversified Fool" → "Persistent Fool" → "Graduated" → "Moral Fool"/"Turned" |
@@ -680,7 +680,7 @@ assets/sprites/locations/publandia/shenanigans/
 
 ### Quote Potential:
 - "You've earned the stamp. Not for winning. For understanding what winning actually is."
-- "The games are rigged, but the hope is real. You can't bottle hope. But you CAN sell it for 5 Sovs a spin."
+- "The games are rigged, but the hope is real. You can't bottle hope. But you CAN sell it for 5 SOVS a spin."
 - "The beer's real. I'm not a MONSTER. You can't scam someone on the beer. That's sacred."
 - "I know it's rigged. So's life. At least here the beer's good and Mickey's honest about it."
 - "I'll spin it to 'JACKPOT' for the photo. Only time it'll ever land there. Don't tell anyone."
@@ -754,7 +754,7 @@ assets/sprites/locations/publandia/shenanigans/
 - [ ] All seven RIGGED DETAIL sprites discoverable via Wise Fool sight: sticky peg, palmed queen, too-small ring, bent darts, palmed ball, loaded dice cutaway, actual-odds ledger
 - [ ] Easter eggs discoverable: Wall of "Winners" all-staff photos, worn floor path, "Gotcha" Twinkle, shill synchronization tell, one wilted leaf in every clover garland
 - [ ] Performance optimized (scripted wheel, 20-particle cap, reduced shill count on LOD, one animated game at a time)
-- [ ] Touch zone sizing considered (44px minimum — all seven mini-game inputs compliant, 48px large variants on the accessibility sheet)
+- [ ] Click zone sizing considered (44px minimum — all seven mini-game inputs compliant, 48px large variants on the accessibility sheet)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (patterned wheel segments, glyph-paired RIGGED banner, shape-differentiated badges)
 - [ ] Social media viral potential maximized (TRY AGAIN selfie framing, JACKPOT photo rig, empty wallet prop composition)
 
@@ -775,6 +775,6 @@ assets/sprites/locations/publandia/shenanigans/
 | No Crypto Elements | ✅ | PASS — the scams here are lovingly analog; not a token in sight |
 | Social Media Integration | ✅ | Six screenshot moments identified; selfie spot with props is a designed share loop |
 
-**Shenanigans delivers the rarest thing in Eurobound: a location where losing is the content, the reward, and the punchline. Every asset serves the same beautiful irony — the games are rigged in plain sight, the shills celebrate on cue, the odds are posted in two versions, and the marks keep playing because hope is irrational and Mickey knows it's worth 5 Sovs a spin. When the bros finally walk out with a jester-cap stamp, a paper crown, and the only honest pint in the building, the assets will have told the whole joke without a single line of dialogue: the house always wins, and somehow, so did you.**
+**Shenanigans delivers the rarest thing in Eurobound: a location where losing is the content, the reward, and the punchline. Every asset serves the same beautiful irony — the games are rigged in plain sight, the shills celebrate on cue, the odds are posted in two versions, and the marks keep playing because hope is irrational and Mickey knows it's worth 5 SOVS a spin. When the bros finally walk out with a jester-cap stamp, a paper crown, and the only honest pint in the building, the assets will have told the whole joke without a single line of dialogue: the house always wins, and somehow, so did you.**
 
 **"You've earned the stamp. Not for winning. For understanding what winning actually is."**

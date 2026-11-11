@@ -131,14 +131,14 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 ### The Menu:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Döner (Veal) | (0, 0) | 64x48 | 6 Sovs — "Good choice." |
-| Döner (Chicken) | (64, 0) | 64x48 | 5 Sovs — "...okay." |
-| Döner (Mixed) | (128, 0) | 64x48 | 5 Sovs — "Indecisive. But okay." |
-| The Triple Tower | (192, 0) | 96x64 | 8 Sovs — all three meats, warrior portion, structurally optimistic |
+| Döner (Veal) | (0, 0) | 64x48 | 6 SOVS — "Good choice." |
+| Döner (Chicken) | (64, 0) | 64x48 | 5 SOVS — "...okay." |
+| Döner (Mixed) | (128, 0) | 64x48 | 5 SOVS — "Indecisive. But okay." |
+| The Triple Tower | (192, 0) | 96x64 | 8 SOVS — all three meats, warrior portion, structurally optimistic |
 | Döner Wrap (Dürüm) | (288, 0) | 64x48 | "Wrap is for tourists. But okay." |
 | Bread Pocket (Ekmek) | (352, 0) | 64x48 | "Real döner is in bread." |
 | Fresh Bread Loaf | (416, 0) | 48x32 | The secret, warm, crisp outside |
-| Ayran | (464, 0) | 32x48 | 2 Sovs, traditional, cooling |
+| Ayran | (464, 0) | 32x48 | 2 SOVS, traditional, cooling |
 
 ### Sauces & Extras:
 | Element | Position | Size | Description |
@@ -147,9 +147,9 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Yogurt Sauce Pump | (32, 48) | 32x32 | Cooling, traditional, rounded container |
 | Hot Sauce Bottle | (64, 48) | 32x32 | Turkish hot. Not tourist hot. Angular container. |
 | Sambal Jar | (96, 48) | 32x32 | Dutch-Indonesian addition, tolerated |
-| Just Bread (Plain) | (128, 48) | 48x32 | 2 Sovs — "You came here for... bread?" |
+| Just Bread (Plain) | (128, 48) | 48x32 | 2 SOVS — "You came here for... bread?" |
 | Napkin Wad | (176, 48) | 32x32 | Post-sauce reality |
-| Sov Coin Stack | (208, 48) | 32x32 | Payment at the end |
+| SOV Coin Stack | (208, 48) | 32x32 | Payment at the end |
 | Meat Shave Curl | (240, 48) | 48x32 | Single ribbon off the tower |
 | Triple Tower Cross-Section | (288, 48) | 96x96 | Cutaway showing all three meats layered, labeled |
 | Döner Half-Eaten | (384, 48) | 64x48 | Mid-journey state |
@@ -166,7 +166,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Garlic Aura Icon | (160, 96) | 32x32 | Status icon — radiating bulb silhouette |
 | Meat Sweats Icon | (192, 96) | 32x32 | Status icon — droplet over tower silhouette |
 | Fire Breath Icon | (224, 96) | 32x32 | Status icon — hatched flame silhouette |
-| Extra Garlic Upgrade Chip | (256, 96) | 32x32 | +1 Sov modifier chip |
+| Extra Garlic Upgrade Chip | (256, 96) | 32x32 | +1 SOV modifier chip |
 | Foil Wrapper (Open) | (384, 96) | 64x48 | Mid-eat presentation |
 | Foil Wrapper (Closed) | (448, 96) | 64x48 | Takeaway presentation |
 
@@ -516,7 +516,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - Meat selection coded by silhouette thickness and text label, never by meat-tone color alone
 - Status effects use distinct silhouettes: radiating bulb (Garlic Aura), droplet-over-tower (Meat Sweats), hatched flame (Fire Breath), cup-with-arc (Cooling)
 - Pronunciation Meter uses four discrete stepped segments plus written outcome labels
-- Touch zones minimum 44px for all meat/bread/sauce options, the counter interaction, and the pronunciation input
+- Click zones minimum 44px for all meat/bread/sauce options, the counter interaction, and the pronunciation input
 
 ---
 
@@ -694,7 +694,7 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 - [ ] Satirical theme is clear throughout all assets (the craft is honored; only the customer is the joke)
 - [ ] Hidden areas/interactions have discoverable visual cues (sauce shape-coding, Regular status recognition, rare-approval portrait)
 - [ ] Performance optimized (CPU particles, atlas limits respected, static tower fallback, pre-composed crowd blocks)
-- [ ] Touch zone sizing considered (44px minimum for meat/bread/sauce options and the pronunciation input)
+- [ ] Click zone sizing considered (44px minimum for meat/bread/sauce options and the pronunciation input)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (sauce container shapes, meat silhouettes, stepped pronunciation meter)
 - [ ] Social media viral potential maximized in composition choices (tower bank framing, cross-section diagram, aura recoil staging)
 
@@ -711,8 +711,8 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 | Gameplay Value Established | ✅ | Ordering system, pronunciation mini-game, two status effects, Triple Tower challenge, debate quest entry |
 | Technical Feasibility | ✅ | Static tower/steam fallbacks per profile; overlay-based glow; pre-composed crowd blocks |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 14 particles per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all seven audio cues, reduced-motion set, high-contrast silhouettes, 44px touch zones |
-| No Crypto Elements | ✅ | Pure meat mastery; the only currency is Sovs and Mehmet's opinion |
+| Accessibility Features | ✅ | Visual mirrors for all seven audio cues, reduced-motion set, high-contrast silhouettes, 44px click zones |
+| No Crypto Elements | ✅ | Pure meat mastery; the only currency is SOVS and Mehmet's opinion |
 | Social Media Integration | ✅ | 5 screenshot moments + 6 quotable lines identified |
 
 **Once these assets ship, Leeman's Döner Palace becomes the game's fixed point at 3 AM: three towers turning in a bright box, no chairs, no kapsalon, and a man behind the counter who has already decided what you were going to order before you opened your mouth — and is going to feed you anyway.**

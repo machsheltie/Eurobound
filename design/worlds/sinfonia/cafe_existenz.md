@@ -310,7 +310,7 @@ Extended time in Café Existenz costs Bravado:
 ### Bros' Café Existenz Reactions
 
 **Entering**:
-- **Lord Pilsner**: "Dude, this place is FANCY. Very... Sov. Very intellectual. I'm gonna order something SOPHISTICATED."
+- **Lord Pilsner**: "Dude, this place is FANCY. Very... SOV. Very intellectual. I'm gonna order something SOPHISTICATED."
 - **Chadwick**: "The AESTHETIC! The VIBE! This is PEAK content! 'Chadwick does PHILOSOPHY'!"
 - **Bradley**: "I'm familiar with this environment. I... do not enjoy being familiar with this environment."
 

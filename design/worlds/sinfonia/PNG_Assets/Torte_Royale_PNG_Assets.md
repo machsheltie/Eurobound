@@ -76,8 +76,8 @@ assets/sprites/locations/sinfonia/torte_royale/
 | Brass Review Plate A | (400, 128) | 48x24 | "★★★★★" etched in brass — suspiciously perfect |
 | Brass Review Plate B | (448, 128) | 48x24 | Another five stars, different suspicious donor |
 | Brass Review Plate C | (448, 152) | 48x24 | Third plate; all five stars, all suspicious |
-| Pronunciation Guide Sign | (352, 152) | 96x48 | "Pronunciation Guide Available (5 Sovs)" — the guide costs money; the judgment is free |
-| Photography Fee Sign | (352, 200) | 64x40 | "3 Sovs Foto. 10 Sovs mit Frau Tortenmeister. Sie hasst es." |
+| Pronunciation Guide Sign | (352, 152) | 96x48 | "Pronunciation Guide Available (5 SOVS)" — the guide costs money; the judgment is free |
+| Photography Fee Sign | (352, 200) | 64x40 | "3 SOVS Foto. 10 SOVS mit Frau Tortenmeister. Sie hasst es." |
 | Brass Register | (416, 200) | 48x48 | Antique register, polished daily, ding included |
 | Main Signage | (0, 224) | 320x64 | "Der Zuckerschock — Konditormeister seit 1847" in gilded Gothic lettering |
 
@@ -145,7 +145,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 | Kaiserschmarrn | (144, 144) | 48x48 | Torn pancake pile, caramelized edges, plum compote |
 | Topfenstrudel | (192, 144) | 48x48 | Pale quark filling, delicate pastry sheen |
 | Punschkrapfen | (240, 144) | 48x48 | Pink fondant cube, faintly boozy sparkle |
-| Der Zuckerschock Special | (288, 144) | 64x64 | Tower of everything — the 25 Sovs recommendation trap |
+| Der Zuckerschock Special | (288, 144) | 64x64 | Tower of everything — the 25 SOVS recommendation trap |
 | Special Pedestal | (352, 144) | 48x48 | Gilded riser; the Special sits above its peers |
 | Glass Reflection Overlay | (400, 144) | 112x64 | Case-front reflection sweep for closed state |
 | Presentation Plate With Slice | (0, 192) | 48x48 | Served state — doily, plate, slice, judgment |
@@ -206,7 +206,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Menu Correction Point | (0, 288) | 64x96 | Finger at Gothic script: "The SACHERTORTE." |
-| Photography Objection | (64, 288) | 64x96 | Palm raised at camera; 10 Sovs and she still hates it |
+| Photography Objection | (64, 288) | 64x96 | Palm raised at camera; 10 SOVS and she still hates it |
 | Accepting Payment | (128, 288) | 64x96 | Coins counted twice, silently |
 | Pince-Nez Glint | (192, 288) | 16x16 | Lens flash detail for judgment beats |
 | Grudge Ledger | (216, 288) | 32x40 | Leather book of catalogued mispronunciations (she remembers) |
@@ -248,7 +248,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 | Backpacker Defeat | (128, 96) | 64x96 | "I just wanted chocolate cake, man..." |
 | Cake Blogger Idle | (192, 96) | 64x96 | Ring light in bag, tips extensively |
 | Cake Blogger Photographing | (256, 96) | 64x96 | Crouched for the perfect glaze angle |
-| Cake Blogger Paying Fee | (320, 96) | 64x96 | 3 Sovs handed over, no regrets |
+| Cake Blogger Paying Fee | (320, 96) | 64x96 | 3 SOVS handed over, no regrets |
 | Cake Blogger Mispronouncing | (384, 96) | 64x96 | Photographs everything, still says "SACK-er-tort" |
 | Queue Shuffle Frame | (448, 96) | 64x96 | Shared one-step-forward frame, reused per NPC layer |
 
@@ -261,9 +261,9 @@ assets/sprites/locations/sinfonia/torte_royale/
 | Confused American Idle | (192, 192) | 64x96 | Baseball cap, genuine goodwill, zero context |
 | Confused American Portion-Point | (256, 192) | 64x96 | Pointing at slice: "That's it? That's the whole thing?" |
 | Confused American Question Gesture | (320, 192) | 64x96 | Just wants to understand the portions |
-| Confused American Eating Awe | (384, 192) | 64x96 | First bite. Everything is forgiven. Worth every Sov |
+| Confused American Eating Awe | (384, 192) | 64x96 | First bite. Everything is forgiven. Worth every SOV |
 | Money Belt Detail | (448, 192) | 32x32 | Tourist-detection trigger prop |
-| Guidebook Detail | (480, 192) | 32x32 | "SINFONIA ON 40 Sovs/DAY" — the second trigger |
+| Guidebook Detail | (480, 192) | 32x32 | "SINFONIA ON 40 SOVS/DAY" — the second trigger |
 
 ### Composite Queue Elements:
 | Element | Position | Size | Description |
@@ -345,14 +345,14 @@ assets/sprites/locations/sinfonia/torte_royale/
 |---------|----------|------|-------------|
 | Price Modifier Popup +% | (0, 256) | 64x32 | Red-trimmed "+25%" bubble with down-arrow shape cue |
 | Price Modifier Popup −% | (64, 256) | 64x32 | Gold-trimmed "−15%" bubble with laurel shape cue |
-| Grudge Surcharge Popup | (128, 256) | 48x24 | "+3 Sovs" — she remembers |
+| Grudge Surcharge Popup | (128, 256) | 48x24 | "+3 SOVS" — she remembers |
 | Competence Surcharge Tag | (176, 256) | 96x24 | "Menu assumed competence" itemized line |
-| Cake Connoisseur Badge | (272, 256) | 48x48 | Gold fork-and-laurel crest — 200 Sovs spent, judgment reduced |
+| Cake Connoisseur Badge | (272, 256) | 48x48 | Gold fork-and-laurel crest — 200 SOVS spent, judgment reduced |
 | Sugar High Buff Icon | (320, 256) | 32x32 | Upward sparkle burst (up-arrow silhouette) |
 | Sugar Crash Debuff Icon | (352, 256) | 32x32 | Melting droop (down-arrow silhouette) |
 | Uncultured Status Icon | (384, 256) | 32x32 | Broken pretzel over crossed fork (5-min shame debuff) |
 | Tipsy Status Icon | (416, 256) | 32x32 | Wobbling Punschkrapfen cube |
-| Photography Fee Prompt | (0, 304) | 192x96 | Dialog: "Foto: 3 Sovs / Mit Frau Tortenmeister: 10 Sovs (sie hasst es)" with accept/decline zones |
+| Photography Fee Prompt | (0, 304) | 192x96 | Dialog: "Foto: 3 SOVS / Mit Frau Tortenmeister: 10 SOVS (sie hasst es)" with accept/decline zones |
 | Payment Confirm Dialog | (192, 304) | 160x96 | Itemized receipt panel — base price + pronunciation adjustments, in calligraphy |
 | Charm Price Indicator | (352, 304) | 96x32 | Tourist-detection meter: money-belt icon → local-coat icon |
 | Queue Position Marker | (352, 336) | 32x32 | "You are customer 4" brass token |
@@ -504,7 +504,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - Price popups pair +/− sign, arrow silhouette, and numeric text; red/gold tint is reinforcement only
 - Sugar High (up-burst) vs. Sugar Crash (down-droop) are distinct silhouettes, not palette swaps
 - Charm price indicator uses icon progression (money belt → local coat), not a color gradient
-- Touch zones minimum 44px for: menu board, display case, each choice button (112x40 + padding), point-at-menu skip, photography prompt buttons, payment confirm
+- Click zones minimum 44px for: menu board, display case, each choice button (112x40 + padding), point-at-menu skip, photography prompt buttons, payment confirm
 
 ---
 
@@ -571,7 +571,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | The Perfect Pronunciation | Mini-game panel, syllable chips, all 5 tier icons, approving nod frames | Master all 7 menu items; per-item mastery tracked via tier results |
-| Cake Connoisseur | Payment dialog, Connoisseur badge, reduced-judgment idle usage | 200 Sovs cumulative spend unlocks badge + flat 10% discount + fewer wince frames |
+| Cake Connoisseur | Payment dialog, Connoisseur badge, reduced-judgment idle usage | 200 SOVS cumulative spend unlocks badge + flat 10% discount + fewer wince frames |
 | The Comparison Crime | Sit-down sequence, grudge ledger, surcharge popups | Dialogue trigger; mentioning other cities' desserts fires disappointment tier, "American chocolate cake" fires full sit-down |
 | Cart Hunter | All four backdrops, daily rotation compass, cart shadow anchor | Find cart at all four locations in one day; compass UI tracks visits |
 | Achievements (First Slice / Acceptable / The Full Menu / Cart Stalker / Photography License / The Ultimate Crime / Redemption Arc) | Menu item sprites, tier icons, photo fee prompt, Uncultured icon, sit-down hold frame | Achievement toasts reuse item/tier/status sprites; The Ultimate Crime = sit-down sequence completion |
@@ -598,7 +598,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 ### Environmental Storytelling:
 - A velvet rope, a chandelier, and brass five-star review plates on a CART — the pretension outsizes the vehicle by design
 - All review plates are five stars and all are suspicious (tooltip: verified by her nephew)
-- The Pronunciation Guide costs 5 Sovs; the judgment it would prevent is dispensed free
+- The Pronunciation Guide costs 5 SOVS; the judgment it would prevent is dispensed free
 - The grudge ledger sits visibly by the register: she catalogues mispronunciations, she remembers
 - The cakes themselves are rendered with genuine, un-ironic beauty — the satire only works if the product is actually excellent
 
@@ -691,7 +691,7 @@ assets/sprites/locations/sinfonia/torte_royale/
 - [ ] Satirical theme (authenticity gatekeeping, pretension economy) is clear throughout all assets
 - [ ] Cart-hunt discoverability cues present (queue visible from distance, chandelier glint as beacon)
 - [ ] Performance optimized (CPU particles, 10 draw calls, 60 FPS scene, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for all interactive elements)
+- [ ] Click zone sizing considered (44px minimum for all interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (tier shapes, popup arrows)
 - [ ] Social media viral potential maximized in composition choices (nod frame, sit-down, receipt)
 

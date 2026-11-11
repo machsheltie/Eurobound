@@ -1,6 +1,6 @@
 # Astronomical Cock-Up Square
 
-*600 Years of Disappointment, 38 Seconds at a Time - Where tourists cry over a 300 Sovs mechanical bird and scammers achieve enlightenment*
+*600 Years of Disappointment, 38 Seconds at a Time - Where tourists cry over a 300 SOVS mechanical bird and scammers achieve enlightenment*
 
 ## Location Identity
 - **Location ID**: `debaucheryville_gilded_square_astronomical_cockup_square_01`
@@ -17,7 +17,7 @@
 ### Entry Conditions
 - **Time Restrictions**: Accessible 24/7, but clock show only triggers on the hour during day cycle
 - **Stat Requirements**: None (tourist trap, welcomes all)
-- **Item Requirements**: None to enter; 90 Sovs+ recommended for full "experience"
+- **Item Requirements**: None to enter; 90 SOVS+ recommended for full "experience"
 - **Previous Location Requirements**: None (early game hub)
 - **Special Conditions**: Crowd density increases 15 minutes before each hourly show
 
@@ -70,7 +70,7 @@
 - **Vendor Ring**: Scam vendors positioned strategically around square perimeter; carts, stalls, and "monks" in robes
 - **Signage**: 
   - Official: "Orloj - Astronomical Clock - UNESCO Heritage Site" (crossed out, replaced with "Astronomical Cock-Up" graffiti tag)
-  - Unofficial: "BEST VIEW 10 Sovs" signs, "AUTHENTIC CLOCK WINE" banners, "BLESSINGS 20 Sovs" handwritten cardboard
+  - Unofficial: "BEST VIEW 10 SOVS" signs, "AUTHENTIC CLOCK WINE" banners, "BLESSINGS 20 SOVS" handwritten cardboard
 - **Atmosphere**: Constant camera shutter sounds, murmured anticipation, vendor calling, distant church bells
 
 ### The Clock Tower Detail
@@ -118,7 +118,7 @@ The central square of Debaucheryville's Gilded Square District, dominated by an 
 A life-changing spiritual experience revealing the cosmic dance of mortality. The kind of authentic European moment that separates cultured travelers from basic tourists. A place where you can FEEL the history.
 
 ### Why It's Perfect for the Bros
-They will cry. They will have a spiritual awakening. They will buy hundreds of Sovs worth of scam merchandise. Lord Pilsner will get a tattoo of what he thinks is a skeleton but is clearly a duck.
+They will cry. They will have a spiritual awakening. They will buy hundreds of SOVS worth of scam merchandise. Lord Pilsner will get a tattoo of what he thinks is a skeleton but is clearly a duck.
 
 ---
 
@@ -145,7 +145,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
 - **Primary Vice**: Emotional exploitation for profit; manufacturing "spiritual experiences" for sale
 - **City-Specific Comedy Operations**: Coordinated scam ecosystem (monk, wine, viewing spots, merchandise work together)
 - **Buffoon Exploitation**: Bros represent the IDEAL mark - emotional, desperate for authenticity, willing to pay for validation
-- **Comedy of Errors**: Bros spend 300 Sovs+ on garbage, believe every scam, get duck tattoo instead of skeleton, and consider it the best day of their lives
+- **Comedy of Errors**: Bros spend 300 SOVS+ on garbage, believe every scam, get duck tattoo instead of skeleton, and consider it the best day of their lives
 - **Consequence System**: Items acquired are all useless; tattoo is wrong; wristbands say "I'm 7!"; but bros NEVER realize any of this
 
 ### Buffoon Delusion Scenarios
@@ -204,22 +204,22 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
 ```
 [Enter Square] 
     ↓
-[Viewing Spot Scammer approaches] → Pay 30 Sovs → Stand behind pillar
+[Viewing Spot Scammer approaches] → Pay 30 SOVS → Stand behind pillar
     ↓
-[Party Monk approaches] → Pay 60 Sovs → Receive fake blessing
+[Party Monk approaches] → Pay 60 SOVS → Receive fake blessing
     ↓
 [Clock Show triggers] → Bros cry → "Post-Clock Vulnerability" state
     ↓
-[Clock Wine Vendor approaches] → Pay 60-180 Sovs → Acquire useless wine
+[Clock Wine Vendor approaches] → Pay 60-180 SOVS → Acquire useless wine
     ↓
-[Merchandise Vendor approaches] → Pay 90 Sovs+ → Plates, shirts, temp tattoos
+[Merchandise Vendor approaches] → Pay 90 SOVS+ → Plates, shirts, temp tattoos
     ↓
-[Wristband Guy approaches] → Pay 90 Sovs → Acquire "I'm 7!" wristbands
+[Wristband Guy approaches] → Pay 90 SOVS → Acquire "I'm 7!" wristbands
     ↓
-[Bros notice tattoo shop] → Pay 50-100 Sovs → Acquire duck tattoo
+[Bros notice tattoo shop] → Pay 50-100 SOVS → Acquire duck tattoo
 ```
 
-**Total Potential Spending**: 380-550 Sovs for complete "experience"
+**Total Potential Spending**: 380-550 SOVS for complete "experience"
 
 ### Quest Triggers
 
@@ -277,11 +277,11 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
 - **Appearance**: Polo shirt, lanyard with fake "OFFICIAL GUIDE" badge, clipboard
 - **Personality**: Confident, uses urgency ("spots filling up!"), never actually lies (technically you CAN see from there)
 - **Key Dialogue**: 
-  - "Americans! Best view in square! Only 10 Sovs each! Very limited!"
+  - "Americans! Best view in square! Only 10 SOVS each! Very limited!"
   - "This spot? Very exclusive. The REAL viewers stand here."
   - "You can see everything from here. Eventually."
 - **Scam**: Leads them behind a pillar; technically has a view; practically useless
-- **Price**: 10 Sovs per person (30 Sovs total)
+- **Price**: 10 SOVS per person (30 SOVS total)
 
 ### 2. The Party Monk
 - **Location**: Fixed "blessing station" near fountain
@@ -292,7 +292,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
   - *blessing* "Lorem ipsum spiritu sanctu... party hardy... in vino veritas... amen."
   - "Go in peace. And check out my cousin's wine cart."
 - **Scam**: Fake blessing; not a monk; not affiliated with any religion
-- **Price**: 20 Sovs per person (60 Sovs total)
+- **Price**: 20 SOVS per person (60 SOVS total)
 - **Easter Egg**: Bathrobe says "HOLIDAY INN EXPRESS" if examined closely
 
 ### 3. Clock Wine Vendor
@@ -304,7 +304,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
   - "Very popular with ladies at clubs. The clock energy, it makes you... magnetic."
   - "This vintage? 2019. Very good year. For boxes."
 - **Scam**: Boxed wine poured into fancy bottles; no "clock energy"; not popular with anyone
-- **Price**: 60 Sovs per bottle
+- **Price**: 60 SOVS per bottle
 - **Item Acquired**: "Clock Energy Wine" (applies "Blessed Drunk" status - identical to regular Drunk)
 
 ### 4. Commemorative Merchandise Vendor
@@ -316,10 +316,10 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
   - "This shirt? Says 'I Survived.' Because you did. You survived."
   - "Temporary tattoo for preview. Then REAL tattoo, down alley."
 - **Inventory**:
-  - Commemorative Plate: 45 Sovs (throwable, 1 damage, breaks immediately)
-  - "I Survived The Cock-Up" T-Shirt: 30 Sovs (+1 Bravado, -2 Charm)
-  - Temporary Clock Tattoo: 15 Sovs (disappears after shower)
-  - Clock Snow Globe: 25 Sovs (plays tiny, sad version of clock chime)
+  - Commemorative Plate: 45 SOVS (throwable, 1 damage, breaks immediately)
+  - "I Survived The Cock-Up" T-Shirt: 30 SOVS (+1 Bravado, -2 Charm)
+  - Temporary Clock Tattoo: 15 SOVS (disappears after shower)
+  - Clock Snow Globe: 25 SOVS (plays tiny, sad version of clock chime)
 
 ### 5. Shady Wristband Guy
 - **Location**: Roams; targets those who look "rejected" or "desperate for VIP"
@@ -330,7 +330,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
   - "These wristbands open ALL doors. Level Seven access. Highest tier."
   - "The bouncers, they see this, they KNOW. No waiting. No cover. Pure VIP."
 - **Scam**: Sells children's birthday party wristbands that say "I'm 7!" in Czech
-- **Price**: 30 Sovs per wristband (90 Sovs total)
+- **Price**: 30 SOVS per wristband (90 SOVS total)
 - **Item Acquired**: "VIP All-Access Wristband" (Children's birthday wristband - "I'm 7!" in Czech)
 - **Quest Connection**: Required for Velvet Curtain Club first entry
 
@@ -343,7 +343,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
   - "Skeleton from clock? Very popular. Very meaningful. Very fast."
   - "We do walk-ins. No appointment. No regrets. Mostly no regrets."
 - **Function**: Funnels emotionally compromised tourists to Euro Ink 4 Less
-- **Price**: Free (tattoo costs 50-100 Sovs inside)
+- **Price**: Free (tattoo costs 50-100 SOVS inside)
 
 ### NPC Ecosystem Behavior
 - Scammers **never overlap** - professional territory respect
@@ -395,7 +395,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
 - **Gilded Square Streets**: General exploration area
 - **Euro Ink 4 Less**: Tattoo shop down nearby alley (see separate location file)
 - **Clocktower Café**: Overpriced tourist café with clock views
-- **Public Restroom (Paid)**: 2 Sovs entry, desperate tourists only
+- **Public Restroom (Paid)**: 2 SOVS entry, desperate tourists only
 
 ### Quest-Connected
 - **Velvet Curtain Club**: VIP wristbands lead here for payoff scene
@@ -476,7 +476,7 @@ astronomical_cockup_square_state:
 7. **Tattoo Shop Decision** - Lord Pilsner pointing at his lower back
 
 ### TikTok Potential
-- "POV: You just paid 300 Sovs to cry at a 38-second puppet show"
+- "POV: You just paid 300 SOVS to cry at a 38-second puppet show"
 - "The monk blessed me in lorem ipsum and I felt it"
 - "My new tattoo is supposed to be a skeleton but..."
 - "Level Seven VIP energy" (showing children's wristband)
@@ -497,7 +497,7 @@ astronomical_cockup_square_state:
 | Multiple scammer NPCs documented | ✅ |
 | Time-of-day variations | ✅ |
 | Quest connections clear | ✅ |
-| Mobile optimization specs | ✅ |
+| Desktop performance specs | ✅ |
 | Audio design complete | ✅ |
 | Social media hooks identified | ✅ |
 | Buffoon delusion scenarios | ✅ |
@@ -522,4 +522,4 @@ astronomical_cockup_square_state:
 
 ## Final Validation
 
-**Astronomical Cock-Up Square is the emotional and economic heart of the Debaucheryville tourist experience. It's where the bros' delusions are exploited most efficiently by a coordinated network of scam artists who've perfected their craft over generations. The 38-second clock show creates the perfect emotional vulnerability that vendors exploit to sell 300 Sovs+ worth of garbage, culminating in Lord Pilsner's decision to get a tramp stamp of a skeleton that turns out to be a duck. Every element reinforces the core satirical premise: tourists will pay anything to feel like they've had an "authentic" experience, and vendors are happy to provide that feeling for the right price.**
+**Astronomical Cock-Up Square is the emotional and economic heart of the Debaucheryville tourist experience. It's where the bros' delusions are exploited most efficiently by a coordinated network of scam artists who've perfected their craft over generations. The 38-second clock show creates the perfect emotional vulnerability that vendors exploit to sell 300 SOVS+ worth of garbage, culminating in Lord Pilsner's decision to get a tramp stamp of a skeleton that turns out to be a duck. Every element reinforces the core satirical premise: tourists will pay anything to feel like they've had an "authentic" experience, and vendors are happy to provide that feeling for the right price.**

@@ -140,7 +140,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 **File:** `mystery_menu_items_detailed.png`  
 **Dimensions:** 1024x512 pixels  
 
-### Doner of Illusions™ - 7 Sovs:
+### Doner of Illusions™ - 7 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Spinning Heap | (0, 0) | 128x96 | Shredded meat base |
@@ -148,7 +148,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 | Absinthe Glaze | (192, 0) | 64x64 | Green shimmer |
 | Wrapped Serving | (256, 0) | 96x96 | Ready to consume |
 
-### Sausage of Suspicion - 6 Sovs:
+### Sausage of Suspicion - 6 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Grey Sweaty Tube | (0, 96) | 96x64 | Questionable meat |
@@ -156,7 +156,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 | Whisper Waves | (128, 96) | 64x32 | Audio visualization |
 | Suspicious Angles | (192, 96) | 96x64 | Every angle bad |
 
-### Clown Dog Deluxe™ - 9 Sovs:
+### Clown Dog Deluxe™ - 9 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Red Licorice Bun | (0, 160) | 96x64 | Candy bread |
@@ -164,7 +164,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 | Pop Rocks Relish | (144, 160) | 48x32 | Explosive garnish |
 | Assembled Grotesque | (192, 160) | 128x96 | Full horror |
 
-### Meatball on a Lollipop Stick - 5 Sovs:
+### Meatball on a Lollipop Stick - 5 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Spherical Mystery | (0, 256) | 64x64 | Meat ball |
@@ -172,7 +172,7 @@ assets/sprites/locations/debaucheryville/mystery_meat_cart/
 | Structural Issue | (88, 256) | 64x64 | Impossible physics |
 | Bite Marks | (152, 256) | 32x32 | Previous attempts |
 
-### Glizzénstein's Brain Brat - 12 Sovs:
+### Glizzénstein's Brain Brat - 12 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Glowing Interior | (0, 320) | 96x64 | AI core visible |
@@ -385,7 +385,7 @@ All strobe effects must be **completely disableable** for photosensitive players
 ### Colorblind Considerations:
 - Status icons pair distinct shapes with color (swirling stars, scratch marks, goop) so no effect reads by hue alone
 - "Enhanced" toxic-green food items double their color coding with the 50% opacity glow pulse
-- Touch zones minimum 44px for menu buttons and cart interactions
+- Click zones minimum 44px for menu buttons and cart interactions
 
 ---
 
@@ -420,7 +420,7 @@ All strobe effects must be **completely disableable** for photosensitive players
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Animation system: Frame-based with JSON timing data
-- Particle systems: Use Godot's CPUParticles2D for mobile performance
+- Particle systems: Use Godot's CPUParticles2D for performance
 
 ### Audio Sync Points:
 - Butterfly knife flips sync with "whoosh" sound effects
@@ -565,7 +565,7 @@ All strobe effects must be **completely disableable** for photosensitive players
 | Satirical Targets Appropriate | ✅ PASS | Carnival grifters and daring tourists, not locals |
 | Seedy Underbelly Present | ✅ PASS | Forbidden meats, no oversight, safety violations as flavor |
 | Gameplay Value Established | ✅ PASS | Status effect gambles, Digestive Daredevil passive, Carnival Carnage access |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented |
 | Performance Budget | ✅ PASS | 60 FPS, 15 draws, 35MB |
 | Accessibility Features | ✅ PASS | Strobe disable option, visual audio cues |
 | No Crypto Elements | ✅ PASS | None present |

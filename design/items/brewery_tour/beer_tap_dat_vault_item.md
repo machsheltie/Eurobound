@@ -11,7 +11,7 @@
 | **ABV** | 6.9% [source: design/items/brewery_passport_book_debaucheryville.md L126] |
 | **Effects** | +20 SP restoration [source: design/items/brewery_passport_book_debaucheryville.md L127]; "Glow-Up Aura" (+1 Charm, +1 Defense for 30 min) [source: design/items/brewery_passport_book_debaucheryville.md L128] |
 | **Risk** | applies "Grease Fingers" status (reduced item accuracy) [source: design/items/brewery_passport_book_debaucheryville.md L129] |
-| **Price** | 14 Sovs — within the 8–15 Sovs guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book_debaucheryville.md L130] |
+| **Price** | 14 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book_debaucheryville.md L130] |
 | **Special** | consumed as vapor cloud animation [source: design/items/brewery_passport_book_debaucheryville.md L133] |
 
 ## Flavor Text

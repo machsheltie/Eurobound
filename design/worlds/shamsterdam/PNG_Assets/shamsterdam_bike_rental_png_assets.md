@@ -324,7 +324,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - Canal: Blue water drop
 
 **Deposit Bar** (150×20)
-- 150 Sovs deposit tracker
+- 150 SOVS deposit tracker
 - Depletes with damage
 - Green → Yellow → Red
 
@@ -427,7 +427,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - Insurance Comparison Chart tiers (Green → Yellow → Orange → Red) doubled with escalating warning icon count, not color alone
 - Damage Level Indicators pair color with distinct shapes (checkmark / warning triangle / alert / water drop)
 - Deposit Bar (Green → Yellow → Red) includes numeric `N SOVS` readout (word lettered, no currency mark)
-- Touch zones minimum 44px for all menu and dialogue interactions
+- Click zones minimum 44px for all menu and dialogue interactions
 
 ---
 
@@ -631,7 +631,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 - [ ] Satirical theme is clear throughout all assets (tourist optimism vs. rental reality, insurance satire)
 - [ ] Hidden areas/interactions have discoverable visual cues (repair station doorway, vintage blue bikes, tally board)
 - [ ] Performance optimized (pre-rendered fleet, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (insurance tiers, damage levels, deposit bar)
 - [ ] Social media viral potential maximized in composition choices (damage gallery, memorial board framing)
 
@@ -648,8 +648,8 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 | Gameplay Value Established | ✅ | Crossing bypass, tiered rentals/insurance, recurring visits, 3 quests |
 | Technical Feasibility | ✅ | Pre-rendered fleet, menu-based interactions, simple geometry |
 | Performance Budget | ✅ | 60 FPS, <30 draw calls, <35 MB, 20 particles |
-| Accessibility Features | ✅ | Visual audio cues, shape-coded tiers, 44px touch zones |
-| No Crypto Elements | ✅ | All transactions in Sovs (credit card holds, 5% cash discount) |
+| Accessibility Features | ✅ | Visual audio cues, shape-coded tiers, 44px click zones |
+| No Crypto Elements | ✅ | All transactions in SOVS (credit card holds, 5% cash discount) |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |
 
 ---

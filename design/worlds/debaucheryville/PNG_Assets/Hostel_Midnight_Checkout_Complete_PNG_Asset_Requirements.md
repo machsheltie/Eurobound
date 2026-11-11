@@ -271,11 +271,11 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Panel | (0, 0) | 256x192 | Booking interface |
-| 12-Bed Option | (0, 192) | 64x32 | 12 Sovs - Maximum chaos |
-| 8-Bed Option | (64, 192) | 64x32 | 16 Sovs - Still chaos |
-| 6-Bed Option | (128, 192) | 64x32 | 20 Sovs - Compromise |
-| 4-Bed Option | (192, 192) | 64x32 | 28 Sovs - Given up |
-| Private Option | (256, 192) | 64x32 | 45 Sovs - Why hostel? |
+| 12-Bed Option | (0, 192) | 64x32 | 12 SOVS - Maximum chaos |
+| 8-Bed Option | (64, 192) | 64x32 | 16 SOVS - Still chaos |
+| 6-Bed Option | (128, 192) | 64x32 | 20 SOVS - Compromise |
+| 4-Bed Option | (192, 192) | 64x32 | 28 SOVS - Given up |
+| Private Option | (256, 192) | 64x32 | 45 SOVS - Why hostel? |
 
 ### Sleep Quality System:
 | Element | Position | Size | Description |
@@ -388,8 +388,8 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 ### Colorblind Considerations:
 - Sleep quality tiers use distinct icon shapes AND text labels (Excellent-None), never color alone
 - Roommate event popups use symbols (Zzz, phone, speech bubble) plus text
-- Room price options display Sov amounts as text, not color-coded tiers
-- Touch zones minimum 44px for booking options, bell, outlet, and bunk interactions
+- Room price options display SOV amounts as text, not color-coded tiers
+- Click zones minimum 44px for booking options, bell, outlet, and bunk interactions
 
 ---
 
@@ -551,7 +551,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 6. **Snore Visualization** - Sleep quality enemy
 
 ### Quote Potential:
-- "12 Sovs/Night. Your Dignity Costs Extra."
+- "12 SOVS/Night. Your Dignity Costs Extra."
 - "Quiet hours are 11 to 7. This is theoretical."
 - "Someone is always snoring. This is hostel law."
 - "The hostel is democracy. Everyone gets equal chaos."
@@ -576,7 +576,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 - [ ] Hostel satire is affectionate toward backpacker culture, not mocking travelers
 - [ ] Neon sign flicker and note wall create discoverable visual interest
 - [ ] Performance optimized (static background guests, on-demand dorm loading)
-- [ ] Touch zone sizing considered (44px minimum for booking UI and interactions)
+- [ ] Click zone sizing considered (44px minimum for booking UI and interactions)
 - [ ] Sleep quality tiers readable without color (shapes + labels)
 - [ ] Social media viral potential maximized (note wall, 12-bed chaos compositions)
 
@@ -592,9 +592,9 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | Seedy Underbelly | ✅ PASS |
 | Gameplay Value | ✅ PASS |
 | Technical Feasibility | ✅ PASS |
-| Mobile Performance | ✅ PASS (60 FPS, 16 draws, 38MB) |
+| Desktop Performance | ✅ PASS (60 FPS, 16 draws, 38MB) |
 | Accessibility | ✅ PASS |
 | No Crypto Elements | ✅ PASS |
 | Social Media | ✅ PASS |
 
-**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Radek has seen everything and judges nothing. 12 Sovs buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**
+**Hostel "Midnight Checkout" becomes the essential rest hub where sleep quality affects stats, roommate events create chaos, bunk bed confessions unlock quests, kitchen encounters test social skills, and Radek has seen everything and judges nothing. 12 SOVS buys a bed, 11 strangers, one working shower, and stories you'll tell forever!**

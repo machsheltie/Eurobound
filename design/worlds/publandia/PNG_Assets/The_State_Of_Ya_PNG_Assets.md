@@ -370,7 +370,7 @@ assets/sprites/locations/publandia/state_of_ya/
 ### Colorblind Considerations:
 - Aisles coded by number + icon (cross/bolt/fist/wrench), never Shame Green alone
 - State Meter uses six labeled segments, not a color gradient
-- Recommendation highlight pairs glow with a pointer arrow; all menu rows, aisle hotspots, and the counter meet the 44px minimum touch target
+- Recommendation highlight pairs glow with a pointer arrow; all menu rows, aisle hotspots, and the counter meet the 44px minimum click target
 
 ---
 
@@ -477,15 +477,15 @@ assets/sprites/locations/publandia/state_of_ya/
 3. **The Shame Special Chalkboard** - "2-for-1 Aspirin & Dignity"
 4. **The Morning Shame Brigade** - Three matching "PUBLANDIA" shirts whisper-buying all the aspirin
 5. **The Rare Smile** - Screenshot proof you made Nuala Brennan laugh
-6. **The Fake ID Transaction** - "I don't see this. This isn't happening. 25 Sovs."
+6. **The Fake ID Transaction** - "I don't see this. This isn't happening. 25 SOVS."
 
 ### Quote Potential:
 - "Jaysus, Mary, and Joseph. The state of ya. What happened last night?"
 - "You look like something the cat dragged in, played with, and rejected."
-- "You're GREEN. You're SWAYING. You're about as fine as my ex-husband's excuses. 15 Sovs."
+- "You're GREEN. You're SWAYING. You're about as fine as my ex-husband's excuses. 15 SOVS."
 - "People think I'm harsh. I'm not harsh. I'm ACCURATE. Harsh would be lying."
 - "The aesthetic is a woman who'll break your phone. How's THAT for content?"
-- "Discount for the only one with sense. 28 Sovs."
+- "Discount for the only one with sense. 28 SOVS."
 
 ---
 
@@ -550,7 +550,7 @@ assets/sprites/locations/publandia/state_of_ya/
 - [ ] Satirical theme (brutal honesty wrapped in genuine care) is clear throughout all assets
 - [ ] Easter eggs discoverable: Grandmother's Recipe Frame, Photo of the Regulars, newspaper headline, the silent Fake ID sale
 - [ ] Performance optimized (tiled aisle unit, scheduled ambient events, 6-particle cap)
-- [ ] Touch zone sizing considered (44px minimum — menu rows, aisle hotspots, counter compliant)
+- [ ] Click zone sizing considered (44px minimum — menu rows, aisle hotspots, counter compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (numbered + icon-coded aisles, labeled state meter)
 - [ ] Social media viral potential maximized (assessment popup framing, asterisk composition)
 
@@ -565,7 +565,7 @@ assets/sprites/locations/publandia/state_of_ya/
 | Satirical Targets Appropriate | ✅ | Tourist self-delusion and morning-after shame — tough love, never mockery of locals |
 | Seedy Underbelly Present | ✅ | Enabling the cycle for profit; Fake ID and "Didn't Happen" Kit under the counter |
 | Gameplay Value Established | ✅ | Central item shop, 25+ items, assessment system, Known Disaster progression |
-| Technical Feasibility | ✅ | Single room, toggle-based effects, 7 sheets, mobile optimization documented |
+| Technical Feasibility | ✅ | Single room, toggle-based effects, 7 sheets, desktop performance budget documented |
 | Performance Budget | ✅ | 60 FPS, 12 draw calls, 30MB |
 | Accessibility Features | ✅ | Visual cues for all audio, steady-light and static-highlight variants, labeled states |
 | No Crypto Elements | ✅ | Absent from source and spec |

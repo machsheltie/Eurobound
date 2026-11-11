@@ -405,7 +405,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 | Curtain Call Copper | (0, 0) | 32x64 | Signature Vienna copper lager, deep copper with ruby highlights, dense foam |
 | Copper With Bow Serve | (32, 0) | 48x64 | Glass plus stagehand glove mid-bow — served with a small bow, always |
 | Opening Night Ale | (80, 0) | 32x64 | Bright gold, delivered after a dramatic pause |
-| The Understudy | (112, 0) | 32x64 | Slightly smaller head, apologetic tilt, 4 Sovs honesty |
+| The Understudy | (112, 0) | 32x64 | Slightly smaller head, apologetic tilt, 4 SOVS honesty |
 | Critics' Choice | (144, 0) | 32x64 | Amber with a knowing gleam |
 | The Encore | (176, 0) | 32x64 | Rich dark pour that earns a staff standing ovation |
 | Intermission IPA | (208, 0) | 32x64 | Hazy gold, served with bell warning |
@@ -518,7 +518,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 ### Technical Notes:
 - House Dim Overlay + cone + floor pool composite the full "spotlight finds you" moment; all additive except the dim layer (multiply)
 - Confetti burst REPLACES spotlight dust and fall-loop emitters while active — systems never stack
-- Lighting washes are palette-swap grades, not shaders, for low-end devices
+- Lighting washes are palette-swap grades, not shaders, for min-spec hardware
 
 ---
 
@@ -578,7 +578,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Trigger:** Location open hours (16:00–01:00)
 - **Purpose:** Street-visible theatrical pull toward the entrance
 - **Audio Sync:** None (distant applause ambience handled by scene audio)
-- **Performance Optimization:** Hold F1 static on low-end devices
+- **Performance Optimization:** Hold F1 static on min-spec hardware
 
 ### Spotlight Finds Player:
 - **Duration:** 1.2 seconds (0.9s sweep, 0.3s lock)
@@ -758,7 +758,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - Lighting gels per beer differ in brightness value, not hue alone (Understudy dim ↔ Encore flood)
 - Encore! (laurel) and Booed Off (cracked mask) icons use distinct silhouettes, never tint-only
 - Critics' score placards use numerals and mask pips, not colored cards
-- Touch zones minimum 44px for taps, toast choices, stamp podium, curtain exit, and retry button
+- Click zones minimum 44px for taps, toast choices, stamp podium, curtain exit, and retry button
 
 ---
 
@@ -790,11 +790,11 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - **Memory Footprint:** 35 MB maximum
 - **Particle Limit:** 40 (spotlight dust 12 + ambient 8 baseline; confetti burst 40 REPLACES ambient systems, never stacks)
 
-> **Note:** The source location profile (`the_standing_ovation.md`) states no performance budget. The figures above are proposed defaults against the project-standard 60 FPS mobile target and should be ratified (or adjusted) by the tech art lead before asset production locks.
+> **Note:** The source location profile (`the_standing_ovation.md`) states no performance budget. The figures above are proposed defaults against the project-standard 60 FPS min-spec desktop target and should be ratified (or adjusted) by the tech art lead before asset production locks.
 
 ### Performance Notes:
 - Confetti replaces ambient particles (spotlight dust, fall loop) rather than stacking — hard swap at burst trigger
-- Per-beer lighting shifts are palette/CanvasModulate swaps, not shaders, on low-end devices
+- Per-beer lighting shifts are palette/CanvasModulate swaps, not shaders, on min-spec hardware
 - Green Room sprites load on-demand (brewery tour and stamp ceremony only)
 - Crowd applause animates nearest 6–10 patrons; silhouette blocks and balcony rows are static
 - House Dim Overlay is a single multiply quad, not a lighting pass
@@ -940,7 +940,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 
 ### Before Submitting Assets:
 - [ ] Marquee letter tiles legible at game resolution; longest beer name fits the board
-- [ ] Applause meter readable one-handed on a 5.5" mobile screen (needle + zone icons + fill all distinct)
+- [ ] Applause meter readable at a glance at 1x on a desktop monitor (needle + zone icons + fill all distinct)
 - [ ] Herr Dramatisch's cape reads in silhouette at 48px — HC silhouette confirms
 - [ ] Stagehands never disappear against Theater Black walls (rim-light pass verified)
 - [ ] Applause escalation tiers distinguishable from each other at crowd distance
@@ -957,7 +957,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 - [ ] Green Room's deliberate flatness contrasts front-of-house drama
 - [ ] Hidden areas/interactions have discoverable visual cues (Wings booth, tasting nook, stamp podium mark)
 - [ ] Performance optimized (CPU particles, atlas limits respected, confetti replaces ambient)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices (spotlight moments frame the player center-stage)
 

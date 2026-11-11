@@ -117,7 +117,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Tiny-Cup Display Rack | (384, 256) | 96x64 | Minimalist, deliberate |
 | "No Large Cups" Placard | (384, 320) | 96x24 | Absence enforced in writing |
 | Hours Plate "6 AM – 10 PM" | (480, 256) | 96x24 | Caffeine has limits |
-| Price Card Strip | (480, 280) | 96x32 | 3 – 25 Sovs, visible, honest |
+| Price Card Strip | (480, 280) | 96x32 | 3 – 25 SOVS, visible, honest |
 | Extraction-Timer Placard "23 Seconds" | (480, 312) | 96x24 | The number that matters |
 
 ### Backdrop / Parallax Layers:
@@ -325,26 +325,26 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Core Drinks (32x48 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Ristretto | (0, 0) | 32x48 | 3 Sovs, +5% Speed / -3% Luck — the respected order |
-| Espresso | (32, 0) | 32x48 | 4 Sovs, +8% Speed / -5% Luck |
-| Doppio | (64, 0) | 32x48 | 6 Sovs, +15% Speed / -10% Luck |
-| Triplo | (96, 0) | 32x48 | 8 Sovs, +25% Speed / -15% Luck, Shaky |
-| The Quadruple | (128, 0) | 32x48 | 12 Sovs, +40% Speed / -25% Luck, Shaky, Heart Racing |
+| Ristretto | (0, 0) | 32x48 | 3 SOVS, +5% Speed / -3% Luck — the respected order |
+| Espresso | (32, 0) | 32x48 | 4 SOVS, +8% Speed / -5% Luck |
+| Doppio | (64, 0) | 32x48 | 6 SOVS, +15% Speed / -10% Luck |
+| Triplo | (96, 0) | 32x48 | 8 SOVS, +25% Speed / -15% Luck, Shaky |
+| The Quadruple | (128, 0) | 32x48 | 12 SOVS, +40% Speed / -25% Luck, Shaky, Heart Racing |
 | Americano | (160, 0) | 32x48 | Tolerated |
-| Ferdinand's Reserve | (192, 0) | 32x48 | 15 Sovs, +20% Speed, no side effects, 1/day |
-| The Intervention | (224, 0) | 32x48 | 3 Sovs, removes all caffeine effects |
+| Ferdinand's Reserve | (192, 0) | 32x48 | 15 SOVS, +20% Speed, no side effects, 1/day |
+| The Intervention | (224, 0) | 32x48 | 3 SOVS, removes all caffeine effects |
 
 ### Milk Drinks & Supplies:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Cappuccino | (0, 48) | 32x48 | 5 Sovs — slight sigh |
-| Latte | (32, 48) | 32x48 | 5 Sovs — visible disappointment |
-| Flat White | (64, 48) | 32x48 | 6 Sovs — respectful nod |
-| Bean Bag (10 Shots) | (96, 48) | 48x48 | 25 Sovs, portable supply |
+| Cappuccino | (0, 48) | 32x48 | 5 SOVS — slight sigh |
+| Latte | (32, 48) | 32x48 | 5 SOVS — visible disappointment |
+| Flat White | (64, 48) | 32x48 | 6 SOVS — respectful nod |
+| Bean Bag (10 Shots) | (96, 48) | 48x48 | 25 SOVS, portable supply |
 | Bean Scoop Item | (144, 48) | 32x32 | Inventory prop |
-| Sugar Sachet (Forbidden) | (176, 48) | 24x24 | +1 Sov processing fee |
+| Sugar Sachet (Forbidden) | (176, 48) | 24x24 | +1 SOV processing fee |
 | Milk Jug Item | (200, 48) | 24x32 | Carried apologetically |
-| Receipt With 1 Sov Processing Fee | (224, 48) | 32x32 | Itemised judgment |
+| Receipt With 1 SOV Processing Fee | (224, 48) | 32x32 | Itemised judgment |
 
 ### Status & Buff Icons (32x32 each):
 | Element | Position | Size | Description |
@@ -361,10 +361,10 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Tolerance Tier Badges:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Novice Badge | (0, 128) | 48x48 | 0 Sovs — full negative effects |
-| Regular Badge | (48, 128) | 48x48 | 50 Sovs — -25% negatives |
-| Aficionado Badge | (96, 128) | 48x48 | 100 Sovs — -40% negatives |
-| Transcendent Badge | (144, 128) | 48x48 | 200 Sovs — -50%, secret menu |
+| Novice Badge | (0, 128) | 48x48 | 0 SOVS — full negative effects |
+| Regular Badge | (48, 128) | 48x48 | 50 SOVS — -25% negatives |
+| Aficionado Badge | (96, 128) | 48x48 | 100 SOVS — -40% negatives |
+| Transcendent Badge | (144, 128) | 48x48 | 200 SOVS — -50%, secret menu |
 | Achievement Rosette Blank | (192, 128) | 64x48 | Shared award frame |
 
 ### Selfie Props & Cup States:
@@ -493,11 +493,11 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Tolerance Progression:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Tolerance Track Bar | (0, 176) | 192x24 | 0 Sovs → 200 Sovs spend rail |
+| Tolerance Track Bar | (0, 176) | 192x24 | 0 SOVS → 200 SOVS spend rail |
 | Tier Marker Novice | (0, 200) | 24x24 | Locked/unlocked states |
-| Tier Marker Regular | (24, 200) | 24x24 | 50 Sovs |
-| Tier Marker Aficionado | (48, 200) | 24x24 | 100 Sovs |
-| Tier Marker Transcendent | (72, 200) | 24x24 | 200 Sovs |
+| Tier Marker Regular | (24, 200) | 24x24 | 50 SOVS |
+| Tier Marker Aficionado | (48, 200) | 24x24 | 100 SOVS |
+| Tier Marker Transcendent | (72, 200) | 24x24 | 200 SOVS |
 | Spend Counter Plate "N / 50 SOVS" | (96, 200) | 96x24 | Progress readout; word lettered, no currency mark |
 | Secret Menu Unlock Banner | (192, 176) | 64x48 | Transcendent reveal |
 
@@ -511,7 +511,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Technical Notes:
 - Response chips are border-coded (smooth / double / jagged) as well as colour-coded
 - The Extraction Timer Dial doubles as the Rush Order display — it never speeds up, which is the gag
-- Intervention Button must be ≥44px touch target at 1x; the 40x32 art sits inside a 48x48 hit rect
+- Intervention Button must be ≥44px click target at 1x; the 40x32 art sits inside a 48x48 hit rect
 
 ---
 
@@ -627,7 +627,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - Response chips use border geometry (smooth / double / jagged), never colour alone
 - Tolerance tier badges differ by pip count (1–4), not by hue
 - Buff-vs-debuff duration rings sweep in opposite directions (clockwise = buff, counter-clockwise = debuff)
-- Touch zones minimum 44px for order rows, the Intervention button, and the selfie prompt
+- Click zones minimum 44px for order rows, the Intervention button, and the selfie prompt
 
 ---
 
@@ -698,7 +698,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| "Caffeine Tolerance" | Tolerance track bar, four tier badges, spend counter plate | Purchases accumulate; badge swaps at 50 Sovs / 100 Sovs / 200 Sovs |
+| "Caffeine Tolerance" | Tolerance track bar, four tier badges, spend counter plate | Purchases accumulate; badge swaps at 50 SOVS / 100 SOVS / 200 SOVS |
 | "Ferdinand's Respect" | Rare Smile frame, approval sparkle, Ferdinand's Approval marker | Perfect order at Transcendent tier |
 | "The Limit" | Over-Caffeinated icon, tremor overlay, vibration motion ghost, empty cup cluster | Reach and survive Over-Caffeinated status |
 | "The Intervention" | Over-Caffeinated NPC In Distress, Intervention Administered, Intervention drink sprite | Help an NPC who over-caffeinated |
@@ -824,7 +824,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 - [ ] The Rare Smile reads as genuine and is visibly different from the Approving Nod
 - [ ] Ferdinand's disappointment reads as grief, never contempt
 - [ ] Performance optimized (CPU particles only, 10-draw-call ceiling respected, one atlas bind per group)
-- [ ] Touch zone sizing considered (44px minimum for order rows, Intervention button, selfie prompt)
+- [ ] Click zone sizing considered (44px minimum for order rows, Intervention button, selfie prompt)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 
@@ -837,7 +837,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | World Consistency (no real city names) | ✅ | Sinfonia and Kaffeehaus Row only; Viennese coffeehouse tradition evoked, never named as a real place |
 | Cultural Specificity | ✅ | Viennese coffeehouse reverence colliding with third-wave espresso worship; extraction-time orthodoxy |
 | Satirical Targets Appropriate | ✅ | Coffee snobbery and the bros' inability to read a room; Ferdinand is affectionate and genuinely skilled, not a national stereotype |
-| Seedy Underbelly Present | ❌ | Profile documents no vice or exploitation operation. Nearest elements: the 1 Sov sugar "processing fee" and a spend-gated tolerance ladder that rewards escalating consumption. Flagged for owner — this location is intentionally benign |
+| Seedy Underbelly Present | ❌ | Profile documents no vice or exploitation operation. Nearest elements: the 1 SOV sugar "processing fee" and a spend-gated tolerance ladder that rewards escalating consumption. Flagged for owner — this location is intentionally benign |
 | Gameplay Value Established | ✅ | Speed-buff/Luck-debuff shop, four-tier tolerance progression, four status effects, order-reaction system, three selfie variants, four quests |
 | Technical Feasibility | ✅ | Seven sheets, three atlases, three LOD tiers, no sub-scenes, CPU particles only |
 | Performance Budget | ✅ | 60 FPS / 10 draw calls / 25 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|

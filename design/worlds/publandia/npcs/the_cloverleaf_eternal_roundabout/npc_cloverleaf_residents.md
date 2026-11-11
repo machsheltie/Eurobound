@@ -2,6 +2,8 @@
 
 *The souls who call the roundabout home*
 
+> **Ambient group doc.** This file profiles the Cloverleaf residents (Chef Maeve Flanagan, Seán "The Exit" Murphy, Brenda Doyle & Kevin, The Murphy Family, Old Padraig) in a reduced form of `design/templates/NPC_Profile_Template.md`; it intentionally does not carry all 18 template sections per NPC. OPEN QUESTION (author): do ambient/crowd group docs keep this reduced form, or does each named resident (Maeve runs a food truck with a menu; Seán has a narrative function) need the full 18-section template? (bead Eurobound-9u9, 2026-11-11)
+
 ---
 
 # Chef Maeve Flanagan - The Food Truck
@@ -59,11 +61,11 @@ She runs her food truck like a normal business despite circling a roundabout ete
 
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Roundabout Roll | 8 Sovs | Restores 20 HP | Standard fare |
-| Exit Anxiety Easer (whiskey) | 12 Sovs | -Stress, +Confused | Liquid courage |
-| Cloverleaf Curry | 15 Sovs | Restores 40 HP, +Speed | Surprisingly good |
-| Margaret's Memorial Sandwich | 10 Sovs | Restores HP | Patrick appears misty-eyed |
-| Tourist Trap Platter | 25 Sovs | Full heal | Premium pricing |
+| Roundabout Roll | 8 SOVS | Restores 20 HP | Standard fare |
+| Exit Anxiety Easer (whiskey) | 12 SOVS | -Stress, +Confused | Liquid courage |
+| Cloverleaf Curry | 15 SOVS | Restores 40 HP, +Speed | Surprisingly good |
+| Margaret's Memorial Sandwich | 10 SOVS | Restores HP | Patrick appears misty-eyed |
+| Tourist Trap Platter | 25 SOVS | Full heal | Premium pricing |
 
 ---
 

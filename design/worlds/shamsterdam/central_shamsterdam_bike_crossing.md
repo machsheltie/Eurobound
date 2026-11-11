@@ -213,9 +213,9 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - *If player rents bike*: "Now YOU'RE the problem. Congratulations."
 
 **Services**:
-- Bike Rental: 15 Sovs/day (makes you a traffic participant, not a victim)
+- Bike Rental: 15 SOVS/day (makes you a traffic participant, not a victim)
 - Crossing Tips: Free (ignored)
-- First Aid: 5 Sovs (he's seen worse)
+- First Aid: 5 SOVS (he's seen worse)
 
 ---
 
@@ -312,8 +312,8 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - Has seen every excuse
 
 **Dialogue**:
-- *After standing in bike lane*: "This is a bike lane. You are not a bike. That's 95 Sovs."
-- *After blocking traffic*: "You're blocking traffic. Yes, on foot. Still illegal. 140 Sovs."
+- *After standing in bike lane*: "This is a bike lane. You are not a bike. That's 95 SOVS."
+- *After blocking traffic*: "You're blocking traffic. Yes, on foot. Still illegal. 140 SOVS."
 - *After surviving tram near-miss*: "...I'm honestly impressed. Here's a warning. This time."
 
 ---
@@ -433,7 +433,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 ### Shortcuts Unlocked
 - **Underground Passage**: Found after 10 successful crossings
 - **Rooftop Route**: Available after "Cargo Cult" quest
-- **Bike Rental**: 15 Sovs converts you from victim to participant
+- **Bike Rental**: 15 SOVS converts you from victim to participant
 
 ---
 
@@ -442,26 +442,26 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 ### Services at Location
 | Service | Cost | Effect |
 |---------|------|--------|
-| Bike Rental | 15 Sovs/day | Skip crossing (becomes traffic participant) |
+| Bike Rental | 15 SOVS/day | Skip crossing (becomes traffic participant) |
 | Crossing Tips | Free | Hints from Bike Rental Guy |
-| First Aid | 5 Sovs | +15 HP after collision |
-| Coffee (Terrace) | 4 Sovs | +5 HP, observation time |
-| Escort Service | 20 Sovs | NPC guides you across (guaranteed safe) |
+| First Aid | 5 SOVS | +15 HP after collision |
+| Coffee (Terrace) | 4 SOVS | +5 HP, observation time |
+| Escort Service | 20 SOVS | NPC guides you across (guaranteed safe) |
 
 ### Fines (Officer van den Berg)
 | Violation | Fine |
 |-----------|------|
-| Standing in Bike Lane | 95 Sovs |
-| Blocking Traffic | 140 Sovs |
-| Photography in Crossing | 50 Sovs |
-| Being Dramatic About It | 25 Sovs (attitude surcharge) |
+| Standing in Bike Lane | 95 SOVS |
+| Blocking Traffic | 140 SOVS |
+| Photography in Crossing | 50 SOVS |
+| Being Dramatic About It | 25 SOVS (attitude surcharge) |
 
 ---
 
 ## Technical Specifications
 
 ### Mini-Game Requirements
-- **Input**: Touch-based swipe/tap controls
+- **Input**: Mouse/keyboard and controller input (lane-step mapping: see Controls, author round v35)
 - **Frame Rate**: Locked 60 FPS for timing precision
 - **Collision Detection**: Pixel-perfect for fairness
 - **Audio Sync**: Precise timing for warning sounds
@@ -475,7 +475,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 ### Performance
 - Clear visual indicators for all bike types
 - Audio cues for offscreen threats
-- Touch zones sized for thumb play (one-handed possible)
+- Click/hover zones sized for mouse and controller focus
 - Accessibility: Slower mode available in settings
 
 ---
@@ -525,15 +525,15 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - [x] Accessibility options available
 
 ### Performance
-- [x] Touch controls designed for mini-game
+- [x] Mouse/keyboard and controller input designed for mini-game
 - [x] Performance budgeted for many moving sprites
 - [x] Audio cues support visual gameplay
-- [x] One-handed play possible
+- [x] Controller play possible
 
 ### Crypto Warning
 - [x] NO crypto elements at this location
 - [x] Focus on traffic/cycling satire
-- [x] All transactions in Sovs
+- [x] All transactions in SOVS
 
 ---
 

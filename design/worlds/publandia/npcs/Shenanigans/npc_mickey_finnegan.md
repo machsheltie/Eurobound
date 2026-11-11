@@ -18,9 +18,9 @@
 
 ### What He's Actually Doing
 
-Operating seven rigged games out of a cramped pub down a side alley, with a five-person shill network, and taking roughly 150 Sovs off every American tourist group the touts steer his way. The wheel is weighted to "TRY AGAIN" 95% of the time. The rings are half a centimetre too small to clear a bottle neck. The darts are subtly bent. The dice hit doubles at 8% instead of 16.7%. The queen is palmed before you ever point at a card.
+Operating seven rigged games out of a cramped pub down a side alley, with a five-person shill network, and taking roughly 150 SOVS off every American tourist group the touts steer his way. The wheel is weighted to "TRY AGAIN" 95% of the time. The rings are half a centimetre too small to clear a bottle neck. The darts are subtly bent. The dice hit doubles at 8% instead of 16.7%. The queen is palmed before you ever point at a card.
 
-He is also entirely serious when he says he's an entertainer. The drinks are legitimately good and legitimately priced. Nobody is ever cheated on the beer — Mickey considers that sacred. What he sells is the *experience of hope followed by loss*, retailed in 5 Sovs and 10 Sovs increments, and he believes this is a more honest product than most of what's on offer in The Craic Tax. He is, on the evidence, not entirely wrong, and he would very much like to discuss it with you.
+He is also entirely serious when he says he's an entertainer. The drinks are legitimately good and legitimately priced. Nobody is ever cheated on the beer — Mickey considers that sacred. What he sells is the *experience of hope followed by loss*, retailed in 5 SOVS and 10 SOVS increments, and he believes this is a more honest product than most of what's on offer in The Craic Tax. He is, on the evidence, not entirely wrong, and he would very much like to discuss it with you.
 
 ### What Bros Believe
 
@@ -28,7 +28,7 @@ That Shenanigans is a hidden local pub they discovered by accident (they were gu
 
 ### The Comedy Gap
 
-The pub is called **Shenanigans**. The Irish alias painted inside the door translates to *Trickery*. The window promises "EVERYONE Wins!" and there is a legally protective sign, very small, reading "For entertainment purposes only." The same man wins loudly at the wheel every eleven minutes. None of this registers. The bros lose 20 Sovs and blame variance, lose 50 Sovs and invoke the law of averages, lose 100 Sovs and briefly suspect the truth, and then come back the following night — which is the exact behaviour Mickey has spent his life cultivating and the exact behaviour he rewards with the stamp.
+The pub is called **Shenanigans**. The Irish alias painted inside the door translates to *Trickery*. The window promises "EVERYONE Wins!" and there is a legally protective sign, very small, reading "For entertainment purposes only." The same man wins loudly at the wheel every eleven minutes. None of this registers. The bros lose 20 SOVS and blame variance, lose 50 SOVS and invoke the law of averages, lose 100 SOVS and briefly suspect the truth, and then come back the following night — which is the exact behaviour Mickey has spent his life cultivating and the exact behaviour he rewards with the stamp.
 
 The deepest joke: the stamp is not a consolation prize. Mickey means it. Coming back after being taken requires something he genuinely admires, and he has built an award for it.
 
@@ -115,7 +115,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 > "Everyone says that. Paddy's lot say it at a door in an alley three streets over and they mean it less than you do. *smiles* Come in anyway. The wheel doesn't check credentials."
 
 **If the player asks whether the games are rigged, on night one**:
-> "Rigged! *delighted* That's a serious word for a spin wheel. It's five Sovs. What would I even be rigging, the joy?"
+> "Rigged! *delighted* That's a serious word for a spin wheel. It's five SOVS. What would I even be rigging, the joy?"
 
 ---
 
@@ -127,26 +127,26 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 
 > "You're getting better! I can see your technique improving. One more round, I think you've got it."
 
-**Lucky Spin Wheel (5 Sovs a spin)**:
-> "Five Sovs a spin. Jackpot, free drink, or try again. Three outcomes, one of them's the one you want, that's decent odds by any reckoning. *it is not decent odds by any reckoning*"
+**Lucky Spin Wheel (5 SOVS a spin)**:
+> "Five SOVS a spin. Jackpot, free drink, or try again. Three outcomes, one of them's the one you want, that's decent odds by any reckoning. *it is not decent odds by any reckoning*"
 
-**Ring Toss (5 Sovs for 3 rings)**:
-> "Three rings, five Sovs. Look at the size of that bottle neck. Look at the size of that ring. You're a grown man with functioning arms. Away you go."
+**Ring Toss (5 SOVS for 3 rings)**:
+> "Three rings, five SOVS. Look at the size of that bottle neck. Look at the size of that ring. You're a grown man with functioning arms. Away you go."
 
-**Three Card Monty (10 Sovs a round) — Eamon dealing**:
+**Three Card Monty (10 SOVS a round) — Eamon dealing**:
 > "Eamon's hands are quick but they're not magic. Watch the queen. She's right there. She's always right there."
 
-**Darts, Double or Nothing (from 5 Sovs, doubling)**:
-> "Five Sovs on the darts. You lose, we go to ten. You lose that, twenty. It's not a trap, it's a ladder — you only need to win once and you're square. *this is the most expensive sentence in Publandia*"
+**Darts, Double or Nothing (from 5 SOVS, doubling)**:
+> "Five SOVS on the darts. You lose, we go to ten. You lose that, twenty. It's not a trap, it's a ladder — you only need to win once and you're square. *this is the most expensive sentence in Publandia*"
 
-**Lucky Dice (10 Sovs minimum)**:
+**Lucky Dice (10 SOVS minimum)**:
 > "Doubles pays three-to-one. Doubles comes up one roll in six. Tenner minimum. The maths is right there on the felt for anyone who wants to check it. *the maths on the felt is correct; the dice are not*"
 
-**The Cup Shuffle (10 Sovs a round)**:
+**The Cup Shuffle (10 SOVS a round)**:
 > "Follow the ball. That's it. That's the whole game. People make it complicated."
 
-**The "Broken" Slot Machine (1 Sov a pull)**:
-> "That thing's been broken since 2011. Pays out now and again out of pure spite. Sov a pull if you fancy annoying it."
+**The "Broken" Slot Machine (1 SOV a pull)**:
+> "That thing's been broken since 2011. Pays out now and again out of pure spite. SOV a pull if you fancy annoying it."
 
 **Near miss, any game**:
 > "Did you SEE that? Half a centimetre. That's not luck failing you, that's luck taking a run-up."
@@ -164,10 +164,10 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 
 > "Some people aren't meant to win. They're meant to have stories. You've got stories now."
 
-**At 50 Sovs lost**:
-> "Fifty Sovs. That's a night out anywhere in this city. You've had a night out. You've just had it in a slightly unusual shape."
+**At 50 SOVS lost**:
+> "Fifty SOVS. That's a night out anywhere in this city. You've had a night out. You've just had it in a slightly unusual shape."
 
-**At 100 Sovs lost**:
+**At 100 SOVS lost**:
 > "Gráinne! A drink for the man. *quieter, to the player* Sit down a minute. Nobody's chasing you out."
 
 **To the Angry Tourist, mid-scene, in front of the player**:
@@ -229,7 +229,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 ### The Shill Offer (Moral Choice)
 
 **The pitch**:
-> "You know the games now. Want to be on the winning side? 50 Sovs per night to play 'winner' for fresh marks."
+> "You know the games now. Want to be on the winning side? 50 SOVS per night to play 'winner' for fresh marks."
 
 **If accepted**:
 > "Good man. Darren'll show you the timing — it's all timing. You win at eleven past the hour and you sound surprised about it. And listen: you'll be fine. It's the sounding surprised that gets people."
@@ -242,7 +242,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 
 ---
 
-### Fool's Gold (8 Sovs, post-stamp)
+### Fool's Gold (8 SOVS, post-stamp)
 
 > "The beer's real. I'm not a MONSTER. You can't scam someone on the beer. That's sacred."
 
@@ -261,7 +261,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 
 > "My grandfather ran games on O'Connell Street. My father worked the ferries. I'm third generation. It's not theft — it's tradition."
 
-> "The games are rigged, but the hope is real. You can't bottle hope. But you CAN sell it for 5 Sovs a spin."
+> "The games are rigged, but the hope is real. You can't bottle hope. But you CAN sell it for 5 SOVS a spin."
 
 > "Every mark teaches me something. The angry ones teach patience. The smart ones teach respect. The persistent ones? They teach me why I do this."
 
@@ -300,20 +300,20 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 ### The Games (All Rigged)
 | Game | Price | Displayed Odds | Actual Odds / Method | Result |
 |------|-------|----------------|----------------------|--------|
-| The Lucky Spin Wheel | 5 Sovs per spin | 25% Free Drink, 25% Prize, 50% Try Again | 5% Free Drink, 0% Prize, 95% Try Again — wheel weighted, tap-to-stop input does nothing | Predetermined at entry; loss counter increments |
-| Three Card Monty | 10 Sovs per round | Find the Queen | Queen palmed before final selection; Eamon is a professional; shill "winner" celebrates nearby | Always wrong; consecutive-loss counter |
-| The Ring Toss | 5 Sovs for 3 rings | Land a ring on a bottle | Rings 0.5cm too small to clear the neck — mathematically impossible | Near-miss system designed to read "so close"; throw counter |
-| Darts "Double or Nothing" | 5 Sovs opening bet, doubles each loss | Beat a staff member at darts | Player's darts subtly bent; accuracy reduced 20%; their board is regulation | Competitive but tilted; tracks total bet exposure |
-| The Cup Shuffle | 10 Sovs per round | Follow the ball | Ball palmed, under no cup; speed increases to explain failure | Always wrong, ball revealed in hand after; consecutive-loss counter |
-| Lucky Dice | 10 Sovs minimum bet | Roll doubles, 3x payout | Dice loaded against doubles — 8% instead of 16.7%; 5-6 and 4-5 programmed to hit often | Near-miss heavy; total-loss counter |
-| The "Broken" Slot Machine | 1 Sov per pull | "Usually broken, but try your luck" | Programmed to pay out just enough to sustain play | Psychological exploitation; the cheapest and longest con in the room |
+| The Lucky Spin Wheel | 5 SOVS per spin | 25% Free Drink, 25% Prize, 50% Try Again | 5% Free Drink, 0% Prize, 95% Try Again — wheel weighted, tap-to-stop input does nothing | Predetermined at entry; loss counter increments |
+| Three Card Monty | 10 SOVS per round | Find the Queen | Queen palmed before final selection; Eamon is a professional; shill "winner" celebrates nearby | Always wrong; consecutive-loss counter |
+| The Ring Toss | 5 SOVS for 3 rings | Land a ring on a bottle | Rings 0.5cm too small to clear the neck — mathematically impossible | Near-miss system designed to read "so close"; throw counter |
+| Darts "Double or Nothing" | 5 SOVS opening bet, doubles each loss | Beat a staff member at darts | Player's darts subtly bent; accuracy reduced 20%; their board is regulation | Competitive but tilted; tracks total bet exposure |
+| The Cup Shuffle | 10 SOVS per round | Follow the ball | Ball palmed, under no cup; speed increases to explain failure | Always wrong, ball revealed in hand after; consecutive-loss counter |
+| Lucky Dice | 10 SOVS minimum bet | Roll doubles, 3x payout | Dice loaded against doubles — 8% instead of 16.7%; 5-6 and 4-5 programmed to hit often | Near-miss heavy; total-loss counter |
+| The "Broken" Slot Machine | 1 SOV per pull | "Usually broken, but try your luck" | Programmed to pay out just enough to sustain play | Psychological exploitation; the cheapest and longest con in the room |
 
 ### Drinks & Rewards
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| The Fool's Gold | 8 Sovs | 8 Sovs — honestly priced, brewed by a legitimate local microbrewery, 5.0% golden ale with honey and a bitter finish | +30 HP, +15 SP, "Learned Optimism" (+10% resistance to scam detection failure), 5% "Sentimental" (donate extra gold to NPCs). **Locked until the Shenanigans stamp is earned. First one free.** |
+| The Fool's Gold | 8 SOVS | 8 SOVS — honestly priced, brewed by a legitimate local microbrewery, 5.0% golden ale with honey and a bitter finish | +30 HP, +15 SP, "Learned Optimism" (+10% resistance to scam detection failure), 5% "Sentimental" (donate extra gold to NPCs). **Locked until the Shenanigans stamp is earned. First one free.** |
 | The Shenanigans Stamp | Free (earned) | The only stamp in the game awarded for losing | Jester-cap circular border, three-leaf clover with one leaf wilted, "Shenanigans", "Wise Fool Since" plus the in-game year inked at the moment of stamping. Faded gold ink — the colour of your lost money. Requires the Bottle Opener Keychain in inventory. |
-| Shill Work | Pays 50 Sovs per night | Morally compromising | Repeatable income; sets the "Turned" achievement flag; Darren trains you on timing |
+| Shill Work | Pays 50 SOVS per night | Morally compromising | Repeatable income; sets the "Turned" achievement flag; Darren trains you on timing |
 | "Wise Fool" Status | Free (earned) | Genuine | See through ONE rigged game per visit before playing; Snug observation access; staff treat you as a regular, not a mark |
 
 ### Hidden Details / Easter Eggs
@@ -336,7 +336,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 | Seamus O'Brien (The Blarney Trap) | Old friend of forty years. Honest trap and dishonest trap, mutual respect, complete mutual clarity. Seamus sends every opener-holder Mickey's way and stocks Fool's Gold post-stamp, smirking. Mickey has never once tried to work him. |
 | Paddy Malone (Paddy's Book) | Professional acquaintance. Different scams, same marks, careful distance. Mickey thinks Paddy's loan book is a step past where the craft should stop, and says so only to people who've earned the stamp. |
 | The Repeat Fool | A regular of many years who knows the score and doesn't care. Losing peacefully, chatting with Mickey like an old friend. The end state of the Wise Fool path made flesh. |
-| The Angry Tourist | Recurring victim archetype demanding 100 Sovs back and getting a free drink instead. Mickey handles this personally, every time, without ever raising his voice. |
+| The Angry Tourist | Recurring victim archetype demanding 100 SOVS back and getting a free drink instead. Mickey handles this personally, every time, without ever raising his voice. |
 | The Oblivious Optimist | Deep in losses at the wheel, invoking the law of averages. Mickey does not encourage him and does not stop him. |
 | The Fresh Mark | A tourist group exactly like the bros, one night behind them. Their function is to show the bros what they looked like. The bros do not recognise themselves. |
 
@@ -352,7 +352,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 ## 🔄 Recurring Appearances
 
 ### Within Publandia
-- **The Blarney Trap**: Once the player earns the Shenanigans stamp, The Fool's Gold appears on Seamus's back bar at 8 Sovs. Seamus pours it with a knowing smirk and says nothing. If asked, Seamus: "Mickey's beer. It's good. That's the annoying part."
+- **The Blarney Trap**: Once the player earns the Shenanigans stamp, The Fool's Gold appears on Seamus's back bar at 8 SOVS. Seamus pours it with a knowing smirk and says nothing. If asked, Seamus: "Mickey's beer. It's good. That's the annoying part."
 - **The Craic Tax streets**: Touts adjust their pitch for players carrying the Shenanigans stamp — they stop offering "hidden local pubs" and start offering things that are actually hidden, which is a small, real reward for having been thoroughly taken.
 - **Paddy's Book**: Mentioning Mickey to Paddy Malone gets a professional, faintly dismissive read: "Mickey takes fivers off tourists and calls it art. I take everything and call it arithmetic. We're not the same trade."
 - **Shenanigans, post-stamp**: Mickey's default position moves to the Snug doorway. The Fresh Mark group arrives nightly and can be watched from the Snug, losing exactly as the player did, in the same order.
@@ -395,7 +395,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 | cross_the_room | Wise Fool conversation trigger, and the Angry Tourist scene — twice per playthrough |
 | wise_fool_toast | Glass raised; the one genuine frame in the building |
 | stamp_slam_3frame | Lift, hover, THUNK — the passport stamp |
-| shill_offer_lean | The 50 Sovs-a-night moral choice |
+| shill_offer_lean | The 50 SOVS-a-night moral choice |
 | selfie_wheel_rig | Nudging the wheel to JACKPOT for the photo, finger to lips |
 
 ### Sprite States
@@ -428,16 +428,16 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 
 Mickey gates the second of Publandia's four Brewery Passport stamps, and therefore gates the **Publandia Legendary Hangover** (all four stamps required) and contributes to **Continental Beer Master** (18 stamps). Critically, this stamp **cannot be earned by playing well**. A player who wins is impossible; a player who quits after one loss is ineligible; a player who never returns after being taken is permanently locked out until they come back. The gate is emotional, not mechanical, and it is the only one like it in the game.
 
-Hard requirement: the Bottle Opener Keychain from Seamus O'Brien at The Blarney Trap must be in inventory at the moment of stamping. Without it, Mickey delivers the Wise Fool speech in full, reaches for the stamp, finds no book, and says: "You've earned it and you've nowhere to put it. Go and see Seamus. Fifteen Sovs. Then come back and I'll do this properly — I'm not doing the speech twice, mind."
+Hard requirement: the Bottle Opener Keychain from Seamus O'Brien at The Blarney Trap must be in inventory at the moment of stamping. Without it, Mickey delivers the Wise Fool speech in full, reaches for the stamp, finds no book, and says: "You've earned it and you've nowhere to put it. Go and see Seamus. Fifteen SOVS. Then come back and I'll do this properly — I'm not doing the speech twice, mind."
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | The Shenanigans Stamp | Wise Fool conversation complete, opener held | Yes | 2 of 4 Publandia stamps; unlocks The Fool's Gold |
-| The Fool's Gold | On stamp acquisition (first free, 8 Sovs after) | No (consumable) | +30 HP, +15 SP, "Learned Optimism"; 5% "Sentimental" |
+| The Fool's Gold | On stamp acquisition (first free, 8 SOVS after) | No (consumable) | +30 HP, +15 SP, "Learned Optimism"; 5% "Sentimental" |
 | "Wise Fool" Status | Stamp earned | Yes (status) | One rig revealed per visit; Snug access; regular treatment |
 | Wise Fool Crown (paper) | Stamp earned | Yes (cosmetic) | Selfie prop at the Lucky Spin Wheel photo spot |
-| Shill Badge | Accepting shill work | Yes (flag) | 50 Sovs/night repeatable income; "Turned" achievement |
+| Shill Badge | Accepting shill work | Yes (flag) | 50 SOVS/night repeatable income; "Turned" achievement |
 | Moral Fool Badge | Declining shill work | Yes (flag) | "Moral Fool" achievement; Mickey's stated respect |
 
 ---
@@ -458,7 +458,7 @@ Hard requirement: the Bottle Opener Keychain from Seamus O'Brien at The Blarney 
 - "It's not a trap, it's a ladder."
 - "Rigged! That's a serious word for a spin wheel."
 - The seven-stage mark's journey ("...one more try.") as a reaction format
-- Lord Pilsner: "Mickey, I've lost 150 Sovs here. And I'm back. I don't know what that says about me." / Mickey: "It says you're human. Welcome to the club."
+- Lord Pilsner: "Mickey, I've lost 150 SOVS here. And I'm back. I don't know what that says about me." / Mickey: "It says you're human. Welcome to the club."
 
 ---
 
@@ -523,7 +523,7 @@ Dublin, inner-city, quick and musical. Mickey talks faster than Seamus and uses 
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Mickey has no crypto content. Shenanigans is a cash Sov economy: 1 Sov to 10 Sovs per play, 8 Sovs a pint, 50 Sovs a night for shill work. Nothing in the location touches SOVS or the darknet shitcoin pool, and nothing has been added.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Mickey has no crypto content. Shenanigans is a cash SOV economy: 1 SOV to 10 SOVS per play, 8 SOVS a pint, 50 SOVS a night for shill work. Nothing in the location touches SOVS or the darknet shitcoin pool, and nothing has been added.
 - [x] **NO automatic crypto assumptions** — Mickey is a physical-games operator running weighted wheels and bent darts. Digital assets would be a different craft and he'd be openly contemptuous of it.
 - [x] **Coins, kiosks, and certificates come from the master pool** — none invented here; none used here.
 - [x] **The bros are never scam-aware** — Lord Pilsner reaches the edge of realisation ("that guy who won earlier... he's STILL here...") and then spins again. Chadwick reframes being robbed as compelling content. Neither ever concludes he was foolish; both conclude they were unlucky and interesting.
@@ -533,7 +533,7 @@ Dublin, inner-city, quick and musical. Mickey talks faster than Seamus and uses 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is the mark's willingness, in a pub literally named Trickery, not any trait of Irish people.
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Mickey is skilled, principled within his own frame, generous to his staff, and never cruel to a loser.
-- [x] Humor is affectionate mockery, not mean-spirited — the location's thesis is that losing gracefully is admirable, and it awards its highest honour for exactly that.
+- [x] Humor is affectionate mockery — the location's thesis is that losing gracefully is admirable, and it awards its highest honour for exactly that.
 
 ---
 

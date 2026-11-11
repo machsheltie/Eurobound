@@ -20,7 +20,7 @@
 
 Deirdre Murphy runs a food cart and reads footfall for a living. She has stood on Cobblestone Market Street long enough to know that everyone who turns down the lane at half four is going to The Quiet Man, everyone in a rented anorak carrying a keychain opener is doing the Brewery Passport, and everyone who comes back up that same lane at half six with a torn sleeve needs soup and a sit-down.
 
-So she stocks accordingly. She wheels the cart to wherever tomorrow's mistakes are going to happen, because that is where the money is. The "Pre-Fight Fuel" is a meat pie with extra black pudding and a made-up name, priced for a man who has already decided to fight someone. The "Protagonist's Portion" is a full Irish for 25 Sovs sold to people who believe 25 Sovs is what important men pay for breakfast.
+So she stocks accordingly. She wheels the cart to wherever tomorrow's mistakes are going to happen, because that is where the money is. The "Pre-Fight Fuel" is a meat pie with extra black pudding and a made-up name, priced for a man who has already decided to fight someone. The "Protagonist's Portion" is a full Irish for 25 SOVS sold to people who believe 25 SOVS is what important men pay for breakfast.
 
 She is not psychic. She is the most attentive retail operator in the city and has been doing this so long that anticipation looks like prophecy from the outside.
 
@@ -34,7 +34,7 @@ Lord Pilsner has decided she's "basically a wizard." Chadwick has decided she's 
 
 "Main character" is what people in Publandia call a tourist who behaves as though the city is a set built for his weekend. Deirdre uses it exactly that way, to their faces, constantly, and they hear it as a coronation. She tells Chadwick he has "that look — the hungry, about-to-do-something-stupid look," and he asks her to say it again for the camera.
 
-The joke is never that she's breaking a wall. The joke is that a woman is calling three men self-absorbed to their faces in the plainest possible language, upselling them by 12 Sovs while she does it, and they are so delighted to be noticed that they tip.
+The joke is never that she's breaking a wall. The joke is that a woman is calling three men self-absorbed to their faces in the plainest possible language, upselling them by 12 SOVS while she does it, and they are so delighted to be noticed that they tip.
 
 ### Why She Always Knows
 
@@ -94,13 +94,13 @@ Rim-light her in Hearth Orange against the Publandia mist so she reads at night 
 | Preternaturally observant | Prices, portions, and pitch are all set before you open your mouth |
 | Maternal without softness | She will absolutely make you eat. She will not ask twice. |
 | Deflects on instinct | Every question about her method gets a warmer non-answer than the last |
-| Commercially ruthless | The 25 Sovs breakfast exists because men who want to feel important will pay 25 Sovs for a breakfast |
+| Commercially ruthless | The 25 SOVS breakfast exists because men who want to feel important will pay 25 SOVS for a breakfast |
 | Genuinely kind | The generosity is real; it is also, conveniently, excellent business |
 | Physically immovable | She has been standing in weather for decades and considers sitting a defeat |
 
 ### Internal Monologue
 
-> "Anorak, opener on the keys, half nine — that's the brewery, and he'll be green by noon. Big lad behind him's got the walk on him, he's for the lane later, that's the pie with the pudding in it. Third one's already looking at the price list, so he's the one who pays. Twenty-two Sovs off the three of them and they'll come back tomorrow calling me a genius. God love them. Stew's ready."
+> "Anorak, opener on the keys, half nine — that's the brewery, and he'll be green by noon. Big lad behind him's got the walk on him, he's for the lane later, that's the pie with the pudding in it. Third one's already looking at the price list, so he's the one who pays. Twenty-two SOVS off the three of them and they'll come back tomorrow calling me a genius. God love them. Stew's ready."
 
 ### Motivation
 
@@ -214,7 +214,7 @@ She likes feeding people and she likes being right, and this job is the only one
 > "Two hands. It's hotter than it looks and so is everything else you'll touch today."
 
 *Taking payment:*
-> "15 Sovs. You'll survive."
+> "15 SOVS. You'll survive."
 
 *If the player buys the suggested item:*
 > "Good. That's the right one. You'll feel that in about twenty minutes."
@@ -247,7 +247,7 @@ She likes feeding people and she likes being right, and this job is the only one
 > "Off you go, then. The cart'll be about."
 
 **Declining and then coming back an hour later, damaged**:
-> "Mm. Right. Sit there. The Second Wind, 18 Sovs, and I'll not say the thing I'm thinking."
+> "Mm. Right. Sit there. The Second Wind, 18 SOVS, and I'll not say the thing I'm thinking."
 
 ---
 
@@ -304,31 +304,31 @@ She likes feeding people and she likes being right, and this job is the only one
 ### Standard Fare (Always Available)
 | Item | Price | Actual Value | Effect/Result |
 |------|-------|--------------|---------------|
-| Irish Stew | 8 Sovs | Fair — genuinely good stew, big portion | +40 HP |
-| Meat Pie | 10 Sovs | Fair | +50 HP, portable |
-| Sausage Roll | 6 Sovs | Slightly over, but it's the cheapest thing on the cart and that is deliberate | +30 HP |
-| Beef & Guinness Pie | 12 Sovs | Fair | +60 HP |
-| Shepherd's Pie | 10 Sovs | Fair | +50 HP |
-| Full Irish (Portable) | 15 Sovs | Fair for the volume | +80 HP, cures Hungover |
+| Irish Stew | 8 SOVS | Fair — genuinely good stew, big portion | +40 HP |
+| Meat Pie | 10 SOVS | Fair | +50 HP, portable |
+| Sausage Roll | 6 SOVS | Slightly over, but it's the cheapest thing on the cart and that is deliberate | +30 HP |
+| Beef & Guinness Pie | 12 SOVS | Fair | +60 HP |
+| Shepherd's Pie | 10 SOVS | Fair | +50 HP |
+| Full Irish (Portable) | 15 SOVS | Fair for the volume | +80 HP, cures Hungover |
 
 ### "Situational" Specials (Appear When Needed)
 | Item | Price | Actual Value | Effect/Result |
 |------|-------|--------------|---------------|
-| Pre-Fight Fuel | 12 Sovs | A meat pie with extra black pudding and a better name — 3 Sovs of markup on branding | +50 HP, +10 Attack (1 battle). Appears when combat approaches. |
-| Liquid Fortitude Stew | 15 Sovs | The Irish Stew with a spoon of horseradish and confidence | +60 HP, Fear immunity (30 min). Appears when a boss area is near. |
-| The Second Wind | 18 Sovs | Steep, and she knows it; sold to people who cannot currently do arithmetic | +70 HP, +20 SP, removes fatigue. Appears when HP/SP low. |
-| Plot Convenience Pie | 20 Sovs | Beef & Guinness with an egg in it | +80 HP, +5% Luck (1 hour). Appears before crucial decisions. |
-| The Protagonist's Portion | 25 Sovs | A Full Irish and a half. Absurd. Sells constantly. | Full HP restore, +all stats (30 min). Appears at main quest milestones. |
-| Calm Nerves Casserole | 14 Sovs | Honest cooking, honest price | +55 HP, +8 Charisma (30 min). Appears before social challenges. |
-| Trail Provisions | 11 Sovs | Wrapped for travel, keeps four hours | +45 HP, no spoil timer. Appears before exploration legs. |
+| Pre-Fight Fuel | 12 SOVS | A meat pie with extra black pudding and a better name — 3 SOVS of markup on branding | +50 HP, +10 Attack (1 battle). Appears when combat approaches. |
+| Liquid Fortitude Stew | 15 SOVS | The Irish Stew with a spoon of horseradish and confidence | +60 HP, Fear immunity (30 min). Appears when a boss area is near. |
+| The Second Wind | 18 SOVS | Steep, and she knows it; sold to people who cannot currently do arithmetic | +70 HP, +20 SP, removes fatigue. Appears when HP/SP low. |
+| Plot Convenience Pie | 20 SOVS | Beef & Guinness with an egg in it | +80 HP, +5% Luck (1 hour). Appears before crucial decisions. |
+| The Protagonist's Portion | 25 SOVS | A Full Irish and a half. Absurd. Sells constantly. | Full HP restore, +all stats (30 min). Appears at main quest milestones. |
+| Calm Nerves Casserole | 14 SOVS | Honest cooking, honest price | +55 HP, +8 Charisma (30 min). Appears before social challenges. |
+| Trail Provisions | 11 SOVS | Wrapped for travel, keeps four hours | +45 HP, no spoil timer. Appears before exploration legs. |
 
 ### "Off-Menu" Items (Plot Essential Status Only)
 | Item | Price | Actual Value | Effect/Result |
 |------|-------|--------------|---------------|
-| Narrative Insurance | 30 Sovs | A very large pie and a flask of soup she makes you promise to keep sealed | Survive one fatal blow (once per day). Her comment: "Just in case." |
-| The Retcon Roast | 25 Sovs | Sunday roast on a weekday | Removes one recent bad decision's consequences. "Everyone deserves a second draft." |
-| Destiny's Dumpling | 35 Sovs | One dumpling. One. Thirty-five Sovs. | Next critical roll guaranteed success. "Some moments matter more." |
-| The Epilogue Entrée | 40 Sovs | The full cart, essentially | Full restore + preview of good ending. "You're going to be fine. I've seen it." |
+| Narrative Insurance | 30 SOVS | A very large pie and a flask of soup she makes you promise to keep sealed | Survive one fatal blow (once per day). Her comment: "Just in case." |
+| The Retcon Roast | 25 SOVS | Sunday roast on a weekday | Removes one recent bad decision's consequences. "Everyone deserves a second draft." |
+| Destiny's Dumpling | 35 SOVS | One dumpling. One. Thirty-five SOVS. | Next critical roll guaranteed success. "Some moments matter more." |
+| The Epilogue Entrée | 40 SOVS | The full cart, essentially | Full restore + preview of good ending. "You're going to be fine. I've seen it." |
 
 ### Status Effects Granted
 - **"Well Fed"** — Major HP restoration, +10% all healing for 1 hour
@@ -340,7 +340,7 @@ She likes feeding people and she likes being right, and this job is the only one
 - **Examine the chalkboard** before speaking to her: it reads "TODAY'S SPECIAL: Whatever You Need Right Now." Examine it *after* the conversation and it has been rewritten to name the exact item she recommended. The player never sees her write it.
 - **Examine the cart's side panel**: "Main Characters Eat Free* (*They Don't, But It Sounded Heroic)" — the asterisk text is in a different, older paint layer than the promise above it.
 - **Order the same item three visits running** and she has it wrapped and waiting before you speak. No dialogue acknowledges this.
-- **Locals walk past the cart without reacting.** Never commented on. It's because locals don't buy 25 Sovs breakfasts, but the game never says so.
+- **Locals walk past the cart without reacting.** Never commented on. It's because locals don't buy 25 SOVS breakfasts, but the game never says so.
 - **Buy nothing five times in a row** and the stew pot is visibly emptier each visit. She's still there. She's still pleasant.
 
 ---
@@ -362,7 +362,7 @@ She likes feeding people and she likes being right, and this job is the only one
 - Cobblestone Market Street traders treat her pitch as settled law; nobody sets up within forty metres of the awning
 - The Suspicious One (customer NPC) voices the player's doubts out loud and gets nothing: *"Don't you find it weird she's ALWAYS here? Right before something happens?"* — **Deirdre**: "I'm here because you're hungry. Isn't that enough?" — **Suspicious One**: "...I guess?"
 - The Regular Hero (customer NPC) demonstrates the system working on someone else: *"She told me to get the Fortitude Stew. Said I'd need it. She's never been wrong."*
-- The NPC Who Doesn't Get It gets standard service and no recommendation, and says so: *"Weird, she didn't give ME any recommendations."* He is a local. He was never going to buy the 25 Sovs breakfast.
+- The NPC Who Doesn't Get It gets standard service and no recommendation, and says so: *"Weird, she didn't give ME any recommendations."* He is a local. He was never going to buy the 25 SOVS breakfast.
 - The Returner comes back to thank her: *"I don't know how you knew, but that food saved my life. Literally."* — **Deirdre**: "That's what food is for, love. Ready for the next chapter?"
 
 ---
@@ -373,7 +373,7 @@ She likes feeding people and she likes being right, and this job is the only one
 - Fixed daily circuit (see Schedule) covering four separate map nodes with one cart asset
 - Appears at the Stoutworks gate the morning the brewery dungeon unlocks, regardless of when that is
 - Appears in the Quiet Man lane the first time the champion fight becomes available
-- Appears opposite Paddy's Book after any loss above 100 Sovs
+- Appears opposite Paddy's Book after any loss above 100 SOVS
 
 ### In Other Cities
 | City | Location | Role/Context | Callback Dialogue |
@@ -467,12 +467,12 @@ Deirdre gates nothing. She cannot be failed, cannot be angered, and blocks no pr
 3. The Knowing Smile at full zoom, where the difference from her default is almost nothing
 4. Lord Pilsner mid-sentence — "Wait, how did you—" — with the price overlay already up
 5. Deirdre in the rain at 1 AM, cart lit, empty street, three bros arriving from off-screen
-6. The 35 Sovs dumpling. One dumpling. Centred, beautifully lit.
+6. The 35 SOVS dumpling. One dumpling. Centred, beautifully lit.
 
 ### Meme Potential
 - "Don't worry about it. Eat your stew." — universal reply to any unanswerable question
 - "You'll thank me later. Or you won't be able to, if you don't."
-- "15 Sovs. You'll survive."
+- "15 SOVS. You'll survive."
 - "Main characters don't skip meals. It's bad for the narrative."
 - The Destiny's Dumpling price tag as a standalone image macro
 - "Eat your sausage roll, dear." as the definitive dismissal
@@ -517,7 +517,7 @@ Dublin, working, unhurried — closer to a woman running a market stall than to 
 | Comedy value preserved | ✅ |
 | Bros never achieve self-awareness | ✅ |
 | World consistency (city names) | ✅ (Publandia only) |
-| Prices lifted from source location file | ✅ (all 6-40 Sovs verbatim) |
+| Prices lifted from source location file | ✅ (all 6-40 SOVS verbatim) |
 | Fourth wall remains intact | ✅ (every "impossible" read has a diegetic cause) |
 
 ---
@@ -541,14 +541,14 @@ Dublin, working, unhurried — closer to a woman running a market stall than to 
 - [x] **Crypto content conforms to `design/economy/economy_system.md`** — Deirdre has none. She is a cash-and-SOVS food cart with a tin box and no terminal. Nothing to conform beyond that.
 - [x] **NO automatic crypto assumptions** — correctly none. A food vendor who takes a shitcoin for a sausage roll would break both the character and the economy tiering.
 - [x] **Coins, kiosks, and certificates come from the master pool** — not applicable; no coins, no kiosk, no certificate anywhere in this profile.
-- [x] **The bros are never scam-aware** — they are not being scammed, they are being upsold by 3 Sovs on a pie, and they will never notice
+- [x] **The bros are never scam-aware** — they are not being scammed, they are being upsold by 3 SOVS on a pie, and they will never notice
 - [x] **Nothing winks** — verified line by line; every "meta" line has a stated diegetic cause in The Comedy Gap and Why She Always Knows
 - [x] **Focus on city-specific cultural exploitation instead** — Irish comfort food priced for tourists who believe expensive breakfast confers importance
 
 ### Satirical Target Verification
-- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the mark is the man who pays 25 Sovs for a fry-up because the name flatters him
+- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the mark is the man who pays 25 SOVS for a fry-up because the name flatters him
 - [x] NPC is savvy entrepreneur, not villain or stereotype — she is the best trader on the street and knows exactly what she is selling and to whom
-- [x] Humor is affectionate mockery, not mean-spirited — she genuinely likes them and the food is genuinely good
+- [x] Humor is affectionate mockery — she genuinely likes them and the food is genuinely good
 
 ---
 

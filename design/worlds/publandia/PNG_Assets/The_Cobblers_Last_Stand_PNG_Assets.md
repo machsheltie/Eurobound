@@ -224,7 +224,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 ### Speed & Stealth Row (32x32 each, y=0):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Comfy Loafers | (0, 0) | 32x32 | Speed basic, 35 Sovs |
+| Comfy Loafers | (0, 0) | 32x32 | Speed basic, 35 SOVS |
 | Craic Tax Treads | (32, 0) | 32x32 | Speed mid — "They've seen combat" |
 | The Quickstep | (64, 0) | 32x32 | Speed advanced, Light-Footed buff |
 | Finbar's Flyers | (96, 0) | 32x32 | Speed premium, winged heel detail |
@@ -271,7 +271,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 |---------|----------|------|-------------|
 | Heroic Display Glow | (0, 128) | 64x64 | Under-shoe pedestal light |
 | Spotlight Cone | (64, 128) | 64x64 | Makes footwear look heroic |
-| Price Tag Set | (128, 128) | 64x32 | 35-150 Sovs range tags |
+| Price Tag Set | (128, 128) | 64x32 | 35-150 SOVS range tags |
 | Category Icons | (128, 160) | 64x32 | Speed/Stealth/Defense/Endurance glyphs (wing, mask, shield, mountain) |
 | Tactical Description Cards | (0, 192) | 256x64 | Dramatic per-shoe copy plates, 64x64 each x4 |
 
@@ -393,7 +393,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 ### Colorblind Considerations:
 - Grade cards carry letters A-F plus distinct border patterns — never gold/red alone
 - Shoe category coding is icon-shaped (wing/mask/shield/mountain), not shelf-color dependent
-- All examine hotspots and menu rows meet the 44px minimum touch target
+- All examine hotspots and menu rows meet the 44px minimum click target
 
 ---
 
@@ -568,7 +568,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 - [ ] Satirical theme (military gravity applied to shoe retail) is clear throughout all assets
 - [ ] Easter eggs discoverable: Heirloom Tools, Bradley's arch supports, the doomed trainers, pre-prepared Regular's box
 - [ ] Performance optimized (12-particle cap, streamed back room, shared spotlight quad)
-- [ ] Touch zone sizing considered (44px minimum — menu rows, grade cards, examine hotspots compliant)
+- [ ] Click zone sizing considered (44px minimum — menu rows, grade cards, examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (lettered grades, icon-shaped categories)
 - [ ] Social media viral potential maximized (Destroyed Shoes Case framing, reveal ceremony composition)
 
@@ -583,7 +583,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 | Satirical Targets Appropriate | ✅ | Intense shopkeepers + tourist footwear hubris — affectionate, punches up |
 | Seedy Underbelly Present | ✅ | Cobblestone trauma capitalized on; Grade F "rescue" markup |
 | Gameplay Value Established | ✅ | Full equipment shop, stat gear, assessment system, Veteran Walker progression |
-| Technical Feasibility | ✅ | 7 sheets, simple transitions, mobile optimization documented |
+| Technical Feasibility | ✅ | 7 sheets, simple transitions, desktop performance budget documented |
 | Performance Budget | ✅ | 60 FPS, 12 draw calls, 30MB |
 | Accessibility Features | ✅ | Visual cues for every audio beat, static-light variants, lettered grades |
 | No Crypto Elements | ✅ | Absent from source and spec |

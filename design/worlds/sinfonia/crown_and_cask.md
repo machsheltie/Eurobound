@@ -131,26 +131,26 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 - **Color**: Golden crown color (intentional)
 - **Stats**: +30 HP, +15 SP
 - **Effect**: "Noble Blood" (+2 Charm, +2 Style for 45 minutes)
-- **Price**: 10 Sovs
+- **Price**: 10 SOVS
 - **Flavor Text**: "Brewed with hops that can trace their lineage back seven generations. The yeast is merely five generations, but we don't discuss that."
 - **Brewed By**: Crown & Cask (family recipe, "royal" process)
-- **Special**: Served in crown-shaped glass, which you keep (adds 3 Sovs)
+- **Special**: Served in crown-shaped glass, which you keep (adds 3 SOVS)
 
 **Menu Drinks** (Non-Signature):
 | Beer | Price | Effect | Served With |
 |------|-------|--------|-------------|
-| The Commoner | 4 Sovs | +10 HP | Apologetic explanation of name |
-| Duke's Dark | 7 Sovs | +20 HP | Slight bow |
-| Princess Pilsner | 5 Sovs | +15 HP | Curtsey from server |
-| The Usurper (Guest Beer) | 6 Sovs | +15 HP, +5 SP | Hushed tones |
-| King's Reserve | 15 Sovs | +40 HP, +20 SP | Full ceremony |
+| The Commoner | 4 SOVS | +10 HP | Apologetic explanation of name |
+| Duke's Dark | 7 SOVS | +20 HP | Slight bow |
+| Princess Pilsner | 5 SOVS | +15 HP | Curtsey from server |
+| The Usurper (Guest Beer) | 6 SOVS | +15 HP, +5 SP | Hushed tones |
+| King's Reserve | 15 SOVS | +40 HP, +20 SP | Full ceremony |
 
 ### Bottle Opener — Crown & Cask
 
 - **Design**: Miniature Habsburg-style crown with bottle opener as the base/rim
 - **Material**: Gold-tone metal with purple velvet pouch
 - **Inscription**: "By Royal Appointment"
-- **Acquired**: Complete the Coronation Ceremony OR purchase for 20 Sovs
+- **Acquired**: Complete the Coronation Ceremony OR purchase for 20 SOVS
 - **Special Feature**: Comes with "Certificate of Nobility" (tiny scroll)
 
 ### Stamp Details

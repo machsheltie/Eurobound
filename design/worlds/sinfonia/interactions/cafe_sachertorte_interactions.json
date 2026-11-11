@@ -49,7 +49,7 @@
         ],
         "cakes": [
           {"item": "Sachertorte Slice", "price": 18, "description": "The famous chocolate cake. Non-negotiable."},
-          {"item": "Apfelstrudel", "price": 14, "description": "Apple strudel, warm upon request (2 Sovs extra)"},
+          {"item": "Apfelstrudel", "price": 14, "description": "Apple strudel, warm upon request (2 SOVS extra)"},
           {"item": "Opera Cake", "price": 22, "description": "Layers of sophistication"},
           {"item": "Gugelhupf", "price": 12, "description": "Traditional ring cake"}
         ],

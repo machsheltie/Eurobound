@@ -164,10 +164,10 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Beer Chaser Glass | (192, 0) | 48x64 | "Also available. Yes." |
 | Kopstootje Setup | (240, 0) | 128x64 | Jenever and beer arranged for the headbutt |
 | Ceramic Pouring Jug | (368, 0) | 64x64 | The overfill instrument |
-| Jenever Bottle (Jong) | (432, 0) | 32x64 | 4 Sovs — "Young. Starter." |
-| Jenever Bottle (Oud) | (464, 0) | 32x64 | 6 Sovs — "Old. Respect required." |
-| Jenever Bottle (Zeer Oud) | (0, 64) | 32x64 | 12 Sovs — "Very old. Very serious." |
-| Jenever Bottle (Korenwijn) | (32, 64) | 32x64 | 15 Sovs — "Grain wine. Not for beginners." |
+| Jenever Bottle (Jong) | (432, 0) | 32x64 | 4 SOVS — "Young. Starter." |
+| Jenever Bottle (Oud) | (464, 0) | 32x64 | 6 SOVS — "Old. Respect required." |
+| Jenever Bottle (Zeer Oud) | (0, 64) | 32x64 | 12 SOVS — "Very old. Very serious." |
+| Jenever Bottle (Korenwijn) | (32, 64) | 32x64 | 15 SOVS — "Grain wine. Not for beginners." |
 | Jenever Bottle ("Don't Ask") | (64, 64) | 32x64 | No label. No date. No questions. |
 
 ### The Gauntlet:
@@ -177,7 +177,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Gauntlet Correct Marker | (352, 64) | 32x32 | Checkmark plate — "Correct." (no elaboration) |
 | Gauntlet Wrong Marker | (384, 64) | 32x32 | Cross plate — "Wrong. Try again." (no elaboration) |
 | Blind Test Cover | (416, 64) | 96x64 | Round 3 concealment cloth over four similar glasses |
-| Back Room Special Glass | (416, 128) | 96x32 | 25 Sovs, 40%, "If you qualify." |
+| Back Room Special Glass | (416, 128) | 96x32 | 25 SOVS, 40%, "If you qualify." |
 | Spill Puddle (Large) | (352, 96) | 64x64 | The moment before the sawdust does its job |
 | Sawdust Fresh Patch | (0, 128) | 64x32 | Loose material for kick-up and absorption staging |
 | Spill Puddle (Small) | (64, 128) | 32x32 | Drip-scale variant |
@@ -431,7 +431,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Reserve / Padding | (0, 480) | 160x32 | Reserved strip, do not paint |
 
 ### Technical Notes:
-- Every gauntlet answer target renders at 44px+ touch height; the five-glass row is subdivided into five discrete tap zones
+- Every gauntlet answer target renders at 44px+ touch height; the five-glass row is subdivided into five discrete click zones
 - Jenever Age Identifier pairs each label with its bottle-shape icon so the gauntlet never depends on liquid colour, which is nearly identical across all five samples by design
 - The Shakes readout shows explicit numeric text alongside the bar — the debuff is mechanically meaningful and must never be colour-only
 - Opener Check Panel is evaluated before the scene's dialogue system initialises; a missing Blarney Trap opener blocks the entire tour branch
@@ -480,7 +480,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - **Duration:** Per round: 0.8s glass select, 0.6s judgment beat, 1.0s Kees reaction hold
 - **Frames:** Correct/Wrong markers + Kees "Correct."/"Wrong." frames + round indicator advance
 - **Pattern:** Four rounds sequential; accumulating Shakes stacks on failure
-- **Trigger:** Player accepts the gauntlet (or purchases the 20 Sovs Flight)
+- **Trigger:** Player accepts the gauntlet (or purchases the 20 SOVS Flight)
 - **Purpose:** A skill challenge where the judge's face gives you nothing, so the UI must
 - **Audio Sync:** Glass lift 0.0s; 0.6s of silence; "Correct." or "Wrong." at 1.4s; round advance chime at 2.4s
 - **Performance Optimization:** None needed (UI-driven, negligible cost)
@@ -550,7 +550,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - Gauntlet correct/wrong markers use checkmark and cross shapes with distinct silhouettes, never green/red fill alone
 - The Shakes is communicated by explicit numeric text, tremor motion, and reticle wobble — three independent channels
 - Overfilled vs. normal glass reads through meniscus curvature and rim highlight geometry, not tint
-- Touch zones minimum 44px for all five gauntlet glasses, the three first-drink options, the bar interaction, and both Kopstootje timing inputs
+- Click zones minimum 44px for all five gauntlet glasses, the three first-drink options, the bar interaction, and both Kopstootje timing inputs
 
 ---
 
@@ -737,7 +737,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - [ ] Satirical theme is clear throughout all assets (tourist hubris is the target; the jenever tradition is treated with total sincerity)
 - [ ] Hidden areas/interactions have discoverable visual cues (back room door present-but-unremarkable before unlock, the one chair, the 100-Year Barrel, Kees's rare nod)
 - [ ] Performance optimized (CPU particles, atlas limits respected, on-demand back room load, static candle/sawdust fallbacks)
-- [ ] Touch zone sizing considered (44px minimum for all five gauntlet glasses and both kopstootje inputs)
+- [ ] Click zone sizing considered (44px minimum for all five gauntlet glasses and both kopstootje inputs)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (bottle silhouettes, checkmark/cross shapes, numeric Shakes readout)
 - [ ] Social media viral potential maximized in composition choices (meniscus close-up framing, bow staging, the isolated chair)
 
@@ -754,7 +754,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Gameplay Value Established | ✅ | Four-round gauntlet, Traditional Method tutorial, The Shakes debuff, back room unlock, Canal Courage passive, Couchsurf branch |
 | Technical Feasibility | ✅ | Static candlelight/sawdust fallbacks per profile; on-demand back room load; pooled spill decals; pre-composed groups |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 36 MB, 12 particles per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including a non-tremor Shakes presentation, 44px touch zones |
+| Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including a non-tremor Shakes presentation, 44px click zones |
 | No Crypto Elements | ✅ | Pure 400-year tradition; the only ledger is the sawdust |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |
 

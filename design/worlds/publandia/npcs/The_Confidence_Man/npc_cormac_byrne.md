@@ -19,13 +19,13 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Selling herbal tonics and mild stimulants at 5–50 Sovs a bottle from a wooden cart with brass fittings, wrapped in fifteen years of professional stage training. The ingredients are real — rhodiola, ginseng, adaptogens, and a working quantity of alcohol. The effects are real, and in-game they are stat buffs with durations and, at the top tier, crash penalties. The *claims* are not real. "Guaranteed boldness" is not a thing anyone can guarantee, and the small print on the cart says "Entertainment purposes. Individual results vary. No refunds." Cormac has positioned himself in the exact comfortable middle of that gap and has been standing there for twelve years.
+Selling herbal tonics and mild stimulants at 5–50 SOVS a bottle from a wooden cart with brass fittings, wrapped in fifteen years of professional stage training. The ingredients are real — rhodiola, ginseng, adaptogens, and a working quantity of alcohol. The effects are real, and in-game they are stat buffs with durations and, at the top tier, crash penalties. The *claims* are not real. "Guaranteed boldness" is not a thing anyone can guarantee, and the small print on the cart says "Entertainment purposes. Individual results vary. No refunds." Cormac has positioned himself in the exact comfortable middle of that gap and has been standing there for twelve years.
 
 ### What Bros Believe
-That they found a guy who sells actual confidence, and that this is a European thing, like absinthe. That 15 Sovs is very reasonable for boldness. That the reason the last bottle worked is the bottle, and the reason the bottle before it didn't work is that they needed a stronger bottle. Lord Pilsner will drink a Fearless Fighter and immediately begin looking for a bear.
+That they found a guy who sells actual confidence, and that this is a European thing, like absinthe. That 15 SOVS is very reasonable for boldness. That the reason the last bottle worked is the bottle, and the reason the bottle before it didn't work is that they needed a stronger bottle. Lord Pilsner will drink a Fearless Fighter and immediately begin looking for a bear.
 
 ### The Comedy Gap
-The joke does not run in the direction it looks like it runs. Cormac's products *work* — partly through ingredients, mostly through the customer deciding to be brave and needing permission first. So when a bro drinks Liquid Boldness and then successfully talks his way past a bouncer, was that the potion? Cormac would say there is no difference. He would also say that'll be 12 Sovs. The bros can never get to the bottom of it because there is no bottom; the gap between "the potion worked" and "you worked" is exactly the width of a 12 Sovs bottle, and Cormac charges rent on it.
+The joke does not run in the direction it looks like it runs. Cormac's products *work* — partly through ingredients, mostly through the customer deciding to be brave and needing permission first. So when a bro drinks Liquid Boldness and then successfully talks his way past a bouncer, was that the potion? Cormac would say there is no difference. He would also say that'll be 12 SOVS. The bros can never get to the bottom of it because there is no bottom; the gap between "the potion worked" and "you worked" is exactly the width of a 12 SOVS bottle, and Cormac charges rent on it.
 
 ### The Honest Con
 Cormac tells the truth constantly, at volume, in a carnival barker's voice, and nobody hears it because it is being shouted by a man with a magnificent mustache standing next to a cart. He says the herbs are real. He says to look them up. He says the potion is just the spark. He says *warning: crash after* on The Transformation, out loud, before taking the money. Everything he is accused of concealing is painted on the side of the cart in gold lettering.
@@ -77,7 +77,7 @@ Eight states on the sheet (The Pitch, The Point, Mixing, Presenting Bottle, The 
 | Commercially unsentimental | The genuine investment stops precisely at the point where it costs him a sale, and he knows exactly where that point is |
 
 ### Internal Monologue
-> "Low Bravado. Shoulders in, eyes on the cobbles, hovering at eleven feet like he's deciding. He's not deciding, he decided before he crossed the street, he's just waiting for permission and he wants it loud. Right. Point at him. Name the feeling before he has to. Fifteen Sovs, Voice of Authority, and he'll walk into whatever he's afraid of standing an inch taller — and the inch is his, not mine, but he'll come back and thank the bottle, and I'll let him, because if I tell him it was him he'll stop believing it was anything."
+> "Low Bravado. Shoulders in, eyes on the cobbles, hovering at eleven feet like he's deciding. He's not deciding, he decided before he crossed the street, he's just waiting for permission and he wants it loud. Right. Point at him. Name the feeling before he has to. Fifteen SOVS, Voice of Authority, and he'll walk into whatever he's afraid of standing an inch taller — and the inch is his, not mine, but he'll come back and thank the bottle, and I'll let him, because if I tell him it was him he'll stop believing it was anything."
 
 ### Motivation
 Twelve years ago Cormac worked out that borrowed courage is the most reliably resold commodity in a city built on nerve. He sells it because it sells. He *keeps* selling it because he has watched it work — not the herbs, the permission — and because the customers who eventually tell him they don't need it anymore are the ones he remembers, and their friends come. Underneath the coat is a man who was good at acting, could not make a living at acting, and found a stage where the audience pays per head and stands closer.
@@ -121,7 +121,7 @@ Twelve years ago Cormac worked out that borrowed courage is the most reliably re
 ### The Recommendation (context-driven)
 
 **Pre-pub:**
-> "Liquid Boldness — twelve Sovs — you'll own the room."
+> "Liquid Boldness — twelve SOVS — you'll own the room."
 
 **Pre-fight:**
 > "Fearless Fighter — eighteen — no hesitation."
@@ -133,29 +133,29 @@ Twelve years ago Cormac worked out that borrowed courage is the most reliably re
 > "Exam nerves? 'The Closer.' Twenty-five. Twenty Persuasion and ten Bravado for an hour, which is longer than any viva ever felt."
 
 **Pre-gamble (Paddy's Book, Shenanigans):**
-> "Going in there? Absolute Confidence, twenty Sovs. It won't change the odds. It'll change how you WEAR them. Those are different products and I only sell the second one."
+> "Going in there? Absolute Confidence, twenty SOVS. It won't change the odds. It'll change how you WEAR them. Those are different products and I only sell the second one."
 
 ---
 
 ### Product Descriptions
 
-> "Liquid Boldness! My signature blend! Three drops of FEARLESSNESS, a dash of AUDACITY, and just a HINT of not caring what anyone thinks! Twelve Sovs, one full hour, fifteen Bravado."
+> "Liquid Boldness! My signature blend! Three drops of FEARLESSNESS, a dash of AUDACITY, and just a HINT of not caring what anyone thinks! Twelve SOVS, one full hour, fifteen Bravado."
 
-> "The Transformation? That's for SPECIAL occasions. Your wedding speech. Your job interview. Your moment of DESTINY. Not for casual use. Unless your whole life is destiny! Forty Sovs. And listen — *warning: crash after.* I've said it. You've heard it. That's the transaction."
+> "The Transformation? That's for SPECIAL occasions. Your wedding speech. Your job interview. Your moment of DESTINY. Not for casual use. Unless your whole life is destiny! Forty SOVS. And listen — *warning: crash after.* I've said it. You've heard it. That's the transaction."
 
-> "Emergency Confidence works FAST. Thirty-five Sovs, instant forty Bravado, thirty minutes. For when you see her across the room and you have SECONDS to become your best self!"
+> "Emergency Confidence works FAST. Thirty-five SOVS, instant forty Bravado, thirty minutes. For when you see her across the room and you have SECONDS to become your best self!"
 
-> "Mild Courage, five Sovs, thirty minutes, five Bravado. That's the door. Everyone comes in through the door. Nobody's ashamed of the door."
+> "Mild Courage, five SOVS, thirty minutes, five Bravado. That's the door. Everyone comes in through the door. Nobody's ashamed of the door."
 
 > "Steady Nerves, six. It's not courage — it's the OPPOSITE of the thing stopping you. Sometimes that's the whole job."
 
 > "Voice of Authority. Fifteen. Ten Intimidation, forty-five minutes. You will not be interrupted. I make no promises about being LISTENED to. Different bottle."
 
-> "Fear Suppressant, thirteen Sovs, one hour, total immunity to Intimidated. Works in a bar. Works in a basement. I don't ask which."
+> "Fear Suppressant, thirteen SOVS, one hour, total immunity to Intimidated. Works in a bar. Works in a basement. I don't ask which."
 
-> "Cormac's Personal Blend. Thirty Sovs. Thirty Bravado, fifteen all social, five LUCK, two full hours. It's called Personal because it's what I drink. Make of that what you like."
+> "Cormac's Personal Blend. Thirty SOVS. Thirty Bravado, fifteen all social, five LUCK, two full hours. It's called Personal because it's what I drink. Make of that what you like."
 
-> "Liquid Legend. Fifty Sovs. All stats, 'Legend' status, two hours. I sell perhaps four of those a year and I remember every one."
+> "Liquid Legend. Fifty SOVS. All stats, 'Legend' status, two hours. I sell perhaps four of those a year and I remember every one."
 
 ---
 
@@ -165,7 +165,7 @@ Twelve years ago Cormac worked out that borrowed courage is the most reliably re
 
 > "This isn't just a purchase. It's an INVESTMENT in your POTENTIAL."
 
-> "The confident version of you is just 15 Sovs away."
+> "The confident version of you is just 15 SOVS away."
 
 ---
 
@@ -310,34 +310,34 @@ Twelve years ago Cormac worked out that borrowed courage is the most reliably re
 ### Bronze Tier (Entry Level) — brown labels
 | Item | Price | Effect | Duration | Notes |
 |------|-------|--------|----------|-------|
-| "Mild Courage" Tonic | 5 Sovs | +5 Bravado | 30 min | Starter courage |
-| "Steady Nerves" Drops | 6 Sovs | −Anxiety effects | 45 min | Calming |
-| "Social Ease" Elixir | 7 Sovs | +5 Charisma | 30 min | Conversation help |
-| "Basic Boldness" Shot | 8 Sovs | +8 Bravado, +3 Confidence | 20 min | Quick boost |
+| "Mild Courage" Tonic | 5 SOVS | +5 Bravado | 30 min | Starter courage |
+| "Steady Nerves" Drops | 6 SOVS | −Anxiety effects | 45 min | Calming |
+| "Social Ease" Elixir | 7 SOVS | +5 Charisma | 30 min | Conversation help |
+| "Basic Boldness" Shot | 8 SOVS | +8 Bravado, +3 Confidence | 20 min | Quick boost |
 
 ### Silver Tier (Standard) — blue labels
 | Item | Price | Effect | Duration | Notes |
 |------|-------|--------|----------|-------|
-| "Liquid Boldness" | 12 Sovs | +15 Bravado | 1 hour | Signature product |
-| "Fear Suppressant" | 13 Sovs | Immunity to "Intimidated" | 1 hour | Combat/social |
-| "Charm Amplifier" | 14 Sovs | +10 Charisma, +5 Persuasion | 45 min | Social situations |
-| "Voice of Authority" | 15 Sovs | +10 Intimidation | 45 min | Power plays |
+| "Liquid Boldness" | 12 SOVS | +15 Bravado | 1 hour | Signature product |
+| "Fear Suppressant" | 13 SOVS | Immunity to "Intimidated" | 1 hour | Combat/social |
+| "Charm Amplifier" | 14 SOVS | +10 Charisma, +5 Persuasion | 45 min | Social situations |
+| "Voice of Authority" | 15 SOVS | +10 Intimidation | 45 min | Power plays |
 
 ### Gold Tier (Premium) — gold labels
 | Item | Price | Effect | Duration | Notes |
 |------|-------|--------|----------|-------|
-| "Fearless Fighter" | 18 Sovs | +10 Attack, −Fear effects | 1 hour | Combat focus |
-| "Absolute Confidence" | 20 Sovs | +25 Bravado, +10 All Social | 1.5 hours | Full package |
-| "Irresistible Presence" | 22 Sovs | +15 Charisma, +10 Charm | 1 hour | Flirting bonus |
-| "The Closer" | 25 Sovs | +20 Persuasion, +10 Bravado | 1 hour | Deal-making |
+| "Fearless Fighter" | 18 SOVS | +10 Attack, −Fear effects | 1 hour | Combat focus |
+| "Absolute Confidence" | 20 SOVS | +25 Bravado, +10 All Social | 1.5 hours | Full package |
+| "Irresistible Presence" | 22 SOVS | +15 Charisma, +10 Charm | 1 hour | Flirting bonus |
+| "The Closer" | 25 SOVS | +20 Persuasion, +10 Bravado | 1 hour | Deal-making |
 
 ### Special Reserve (Ask Only) — black labels, hidden compartment
 | Item | Price | Effect | Duration | Notes |
 |------|-------|--------|----------|-------|
-| "Cormac's Personal Blend" | 30 Sovs | +30 Bravado, +15 All Social, +5 Luck | 2 hours | The real stuff |
-| "Emergency Confidence" | 35 Sovs | Instant +40 Bravado | 30 min | Crisis mode |
-| "The Transformation" | 40 Sovs | Temporary personality shift (confidence max) | 1 hour | **Warning: crash after** |
-| "Liquid Legend" | 50 Sovs | +All stats, "Legend" status temporary | 2 hours | For special occasions |
+| "Cormac's Personal Blend" | 30 SOVS | +30 Bravado, +15 All Social, +5 Luck | 2 hours | The real stuff |
+| "Emergency Confidence" | 35 SOVS | Instant +40 Bravado | 30 min | Crisis mode |
+| "The Transformation" | 40 SOVS | Temporary personality shift (confidence max) | 1 hour | **Warning: crash after** |
+| "Liquid Legend" | 50 SOVS | +All stats, "Legend" status temporary | 2 hours | For special occasions |
 
 ### The Haggle System — Exact Steps
 
@@ -360,13 +360,13 @@ Twelve years ago Cormac worked out that borrowed courage is the most reliably re
 **Worked examples at real prices:**
 | Purchase | List | Discount path | Final |
 |----------|------|---------------|-------|
-| 1× "Liquid Boldness" | 12 Sovs | Successful 20% haggle | 10 Sovs |
-| 1× "Absolute Confidence" | 20 Sovs | Successful 10% haggle | 18 Sovs |
-| 3× "Liquid Boldness" | 36 Sovs | Bulk Deal 15% | 31 Sovs |
-| 3× "Liquid Boldness" | 36 Sovs | Bulk 15% + Valued Customer 15% (30%) | 25 Sovs |
-| 1× "The Transformation" | 40 Sovs | Valued Customer 15% | 34 Sovs |
-| 1× "Liquid Legend" | 50 Sovs | Bulk-ineligible; Valued 15% + 20% haggle, capped at 35% | 33 Sovs |
-| 1× "Mild Courage" | 5 Sovs | Walk Away callback 15% | 4 Sovs |
+| 1× "Liquid Boldness" | 12 SOVS | Successful 20% haggle | 10 SOVS |
+| 1× "Absolute Confidence" | 20 SOVS | Successful 10% haggle | 18 SOVS |
+| 3× "Liquid Boldness" | 36 SOVS | Bulk Deal 15% | 31 SOVS |
+| 3× "Liquid Boldness" | 36 SOVS | Bulk 15% + Valued Customer 15% (30%) | 25 SOVS |
+| 1× "The Transformation" | 40 SOVS | Valued Customer 15% | 34 SOVS |
+| 1× "Liquid Legend" | 50 SOVS | Bulk-ineligible; Valued 15% + 20% haggle, capped at 35% | 33 SOVS |
+| 1× "Mild Courage" | 5 SOVS | Walk Away callback 15% | 4 SOVS |
 
 ### "Valued Customer" Status
 **Unlock**: 5+ purchases.
@@ -415,8 +415,8 @@ Twelve years ago Cormac worked out that borrowed courage is the most reliably re
 ### Within Publandia
 - **The mobile cart is the mechanic.** Cormac's position shifts by time of day and by event. A player looking for him should occasionally have to look, and the search should follow the crowd noise.
 - **Outside The Blarney Trap**: evening hours, pre-pub pitch. Highest-frequency encounter.
-- **Trinity of Pints quad**: before challenge nights, selling "exam confidence." "The Closer" at 25 Sovs sells out here.
-- **Top of The Quiet Man's stairs**: fight nights only. Fearless Fighter, 18 Sovs. He never goes down the stairs.
+- **Trinity of Pints quad**: before challenge nights, selling "exam confidence." "The Closer" at 25 SOVS sells out here.
+- **Top of The Quiet Man's stairs**: fight nights only. Fearless Fighter, 18 SOVS. He never goes down the stairs.
 - **Outside Paddy's Book and Shenanigans**: pre-gamble, and he is entirely aware of the irony and has a line about it.
 
 ### Progression States
@@ -491,7 +491,7 @@ Cormac gates nothing and buffs everything. He is a pure optional-advantage vendo
 |------|-------------|------------|--------|
 | Valued Customer status | 5 purchases | Yes | −15% permanent, Special Reserve access, Honest Mode, Confidence Emergency |
 | Placebo Factor bonus | Succeed while buffed | Yes (until broken) | +10% effectiveness on all tonics |
-| "Cormac's Personal Blend" (30 Sovs) | Special Reserve | No (consumable) | +30 Bravado, +15 All Social, +5 Luck, 2 hours |
+| "Cormac's Personal Blend" (30 SOVS) | Special Reserve | No (consumable) | +30 Bravado, +15 All Social, +5 Luck, 2 hours |
 | Cormac's genuine respect | Beyond the Potion / True Confidence | Yes | +30 Bravado one-time; Genuine Respect expression unlocked permanently |
 | The Apprentice flag | Cormac's Assistant | Yes | Cosmetic dialogue variation; other Publandia vendors reference it |
 
@@ -588,9 +588,9 @@ Dublin, but *trained* Dublin — fifteen years of stage work sanded the edges an
 - [x] **Focus on city-specific cultural exploitation instead** — the target is self-improvement snake oil, confidence-as-commodity and the placebo economy, played through Dublin market and carnival-barker tradition
 
 ### Satirical Target Verification
-- [x] Targets tourist/frat bro behaviour, NOT local culture or ethnicity — the joke is on people who will pay 40 Sovs for a personality and then blame the bottle, not on Irish street traders
+- [x] Targets tourist/frat bro behaviour, NOT local culture or ethnicity — the joke is on people who will pay 40 SOVS for a personality and then blame the bottle, not on Irish street traders
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Cormac knows precisely what he sells, precisely what it does, and precisely who is buying. Every material claim he makes is either true or printed as a disclaimer
-- [x] Humour is affectionate mockery, not mean-spirited — the products genuinely help people, Cormac genuinely wants his customers to succeed, and his best day at the cart is the one that costs him a customer
+- [x] Humour is affectionate mockery — the products genuinely help people, Cormac genuinely wants his customers to succeed, and his best day at the cart is the one that costs him a customer
 
 ---
 

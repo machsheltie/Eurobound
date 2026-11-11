@@ -134,13 +134,13 @@ assets/sprites/locations/publandia/quiet_man/
 | Sinéad's Table | (128, 256) | 128x96 | Side-area desk, ledger open |
 | Notebook Stack | (256, 288) | 48x48 | Everyone's business, indexed |
 | Rumor Board | (304, 288) | 112x96 | Pinned scraps — rotating stock, prices chalked |
-| Secrets Lockbox | (416, 288) | 64x64 | The 50 Sovs tier lives here |
+| Secrets Lockbox | (416, 288) | 64x64 | The 50 SOVS tier lives here |
 | Oil Lamp | (416, 192) | 48x64 | Trading post's conspiratorial glow |
 | Coin Tin | (464, 192) | 48x48 | Information economy, cash only |
 
 ### Technical Notes:
 - Betting Corner and Rumor Board are separate Area2D nodes — betting routes to Paddy's Book odds data, rumors to the info-shop inventory
-- Gallery platforms hold crowd clumps from Sheet 6; max two clumps per tier on mobile
+- Gallery platforms hold crowd clumps from Sheet 6; max two clumps per tier on min-spec hardware
 
 ---
 
@@ -383,7 +383,7 @@ assets/sprites/locations/publandia/quiet_man/
 - Fight categories carry six distinct icon shapes — never color-coded alone
 - Crowd Meter uses segmentation + labels, not red/green fill alone
 - Gore-reduction mode is independent of colorblind settings; stained sawdust never carries gameplay meaning
-- Entry prompt, rumor rows, fight card and all hotspots meet the 44px minimum touch target
+- Entry prompt, rumor rows, fight card and all hotspots meet the 44px minimum click target
 
 ---
 
@@ -567,7 +567,7 @@ assets/sprites/locations/publandia/quiet_man/
 - [ ] Satirical theme (euphemism as institution) is clear throughout all assets
 - [ ] Easter eggs discoverable: the Tell light-leak, the one honored rule, blank 48th tally space, Sinéad's own unshared notebook
 - [ ] Performance optimized (crowd quads, 16-particle cap, on-demand back rooms)
-- [ ] Touch zone sizing considered (44px minimum — entry prompt, rumor rows, fight card compliant)
+- [ ] Click zone sizing considered (44px minimum — entry prompt, rumor rows, fight card compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (icon-shaped categories, segmented meter)
 - [ ] Social media viral potential maximized (chant burst framing, KO announcement composition)
 
@@ -582,7 +582,7 @@ assets/sprites/locations/publandia/quiet_man/
 | Satirical Targets Appropriate | ✅ | Violence tourism and tourist overconfidence — locals go easy on tourists, the joke lands on the bros |
 | Seedy Underbelly Present | ✅ | Unlicensed fighting, rumor economy, betting crossover |
 | Gameplay Value Established | ✅ | Full combat venue, Contender/Champion progression, information shop |
-| Technical Feasibility | ✅ | Reuses base combat system; 8 sheets, mobile optimization documented |
+| Technical Feasibility | ✅ | Reuses base combat system; 8 sheets, desktop performance budget documented |
 | Performance Budget | ✅ | 60 FPS, 15 draw calls, 40MB |
 | Accessibility Features | ✅ | Visual cues for all audio, calm-crowd/steady-bulb variants, gore reduction |
 | No Crypto Elements | ✅ | Absent from source and spec |

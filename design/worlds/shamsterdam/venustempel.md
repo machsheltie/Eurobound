@@ -23,7 +23,7 @@ The fountain was installed the same year, outside, as a "temporary promotional f
 ### Entry Conditions
 - **Time Restrictions**: 10 AM – 11 PM. The fountain plaza is public space and never closes.
 - **Stat Requirements**: None
-- **Item Requirements**: 9 Sovs entry (raised from 5 Sovs when the chocolate wing opened; the sign still says 5 Sovs under a sticker that says 9 Sovs)
+- **Item Requirements**: 9 SOVS entry (raised from 5 SOVS when the chocolate wing opened; the sign still says 5 SOVS under a sticker that says 9 SOVS)
 - **Previous Location Requirements**: None. Most players arrive at the fountain first and the museum second, which is exactly how the business is designed.
 - **Special Conditions**: "18+" sign at door remains more suggestion than enforcement. The fountain has no age restriction at all, because it is a fountain.
 
@@ -102,7 +102,7 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
 - **The Giggling Figure**: Relocated, re-bolted, unchanged. Still the first thing you meet. Still on a motion sensor. Still lifts its skirts every thirty seconds. Still makes an entire lobby of strangers jump in unison. The move gave it a bigger audience and better acoustics.
 - **The Bench**: Came from the old site. Same bench. Visibly well-used. Positioned in direct sight of the Giggling Figure, because Anke moved it there herself on day one.
 - **The Framed Fine**: On the lobby wall, next to the 1985 opening photograph, hangs a framed municipal hygiene violation notice. The museum is not hiding it. The museum thinks it is funny. The museum is correct that nobody reads it.
-- **Ticket Desk**: **Anke**, fifteen years, cross-stitch between customers, 9 Sovs cash or card, coins for the machines upstairs.
+- **Ticket Desk**: **Anke**, fifteen years, cross-stitch between customers, 9 SOVS cash or card, coins for the machines upstairs.
 
 ### Interior — Ground Floor: De Cacaogalerij (The Cocoa Gallery)
 - **Theme**: A serious museum of chocolate phalluses, curated with total sincerity, placarded in three languages
@@ -120,7 +120,7 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
 ### Interior — First Floor: De Mechanische Vleugel (The Mechanical Wing)
 - **Theme**: "Historical Erotica Through The Ages" — the entire original Venustempel collection, intact, relocated wholesale
 - **Exhibits**:
- - **Peep Show Devices**: Coin-operated Victorian mutoscopes showing "scandalous" flip-card animations. 1 Sov, thirty seconds, original machinery.
+ - **Peep Show Devices**: Coin-operated Victorian mutoscopes showing "scandalous" flip-card animations. 1 SOV, thirty seconds, original machinery.
  - **The Marilyn Monroe Statue**: Standing over its subway grate, dress on a thirty-second timer, everyone takes the same photograph
  - **John Lennon Erotic Sketches**: Yes, really. He drew these. Under-lit, off the main sightline, still the most genuinely interesting object in the building.
  - **Historical "Art"**: Framed prints that would have been contraband 150 years ago
@@ -137,20 +137,20 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
 - **Exhibits**:
  - **The Throne**: Oversized chair shaped like... something... mandatory group photo spot
  - **Mirror Maze**: Short but disorienting, reflects things you would rather not see reflected
- - **Costume Corner**: Rental accessories for "artistic" photos (5 Sovs)
+ - **Costume Corner**: Rental accessories for "artistic" photos (5 SOVS)
  - **The Swing**: Exactly what it sounds like, "for display only" (sign ignored)
  - **Wax Figures**: Celebrities in "compromising" poses (legally distinct, allegedly)
- - **Green Screen Station**: Composite yourself into the fountain cascade (10 Sovs printed). The single best-selling photo product in the building.
+ - **Green Screen Station**: Composite yourself into the fountain cascade (10 SOVS printed). The single best-selling photo product in the building.
 - **Atmosphere**: Flash photography constant, groups rotating through, gift shop visible and pulling you forward
 
 ### Interior — Exit: The Gift Shop
 - **Attendant**: **Lotte Beekman**, pink apron, ribbon in her hair, and twice the floor space she had on Roodelicht Row, about which she is genuinely delighted
-- **Stock**: The legacy Venustempel merch (Giggling Figure postcards, "I JUMPED" shirts, the licensed John Lennon print), the full Cacaogalerij chocolate line produced in the tempering room downstairs, fountain keyrings, fountain magnets, and a 4 Sovs hand sanitiser in a bottle moulded in the shape of the fountain
-- **Deliberately Restrained**: The shop is spacious, sparsely faced, and expensive. Pieces sit on lit shelves with their cocoa percentage printed on the label. There are no sprinkles. There are no fondant bow ties. There is no pick-and-mix bin. A boxed set is 45 Sovs and the boxes are good. This is a policy, it comes from the curator, and it is the single clearest way a player who has already visited the Museum of Questionable Art can tell the two places apart.
+- **Stock**: The legacy Venustempel merch (Giggling Figure postcards, "I JUMPED" shirts, the licensed John Lennon print), the full Cacaogalerij chocolate line produced in the tempering room downstairs, fountain keyrings, fountain magnets, and a 4 SOVS hand sanitiser in a bottle moulded in the shape of the fountain
+- **Deliberately Restrained**: The shop is spacious, sparsely faced, and expensive. Pieces sit on lit shelves with their cocoa percentage printed on the label. There are no sprinkles. There are no fondant bow ties. There is no pick-and-mix bin. A boxed set is 45 SOVS and the boxes are good. This is a policy, it comes from the curator, and it is the single clearest way a player who has already visited the Museum of Questionable Art can tell the two places apart.
 - **The Toilet**: Lotte lets anyone use it, ticket or not. It is the most-used facility on Museum Mile. She has never analysed why.
 
 ### The Other Chocolate Museum
-The Shamsterdam Museum of Questionable Art, across town on Roodelicht Row, also sells chocolate anatomy: white, milk and dark, sprinkles, fondant bow ties, 4 Sovs "Fabergé-style collector's eggs," and a teenager on the till who cannot be bothered. Venustempel is aware of this.
+The Shamsterdam Museum of Questionable Art, across town on Roodelicht Row, also sells chocolate anatomy: white, milk and dark, sprinkles, fondant bow ties, 4 SOVS "Fabergé-style collector's eggs," and a teenager on the till who cannot be bothered. Venustempel is aware of this.
 
 Venustempel's position, delivered unprompted, once, in one dry institutional sentence and never repeated:
 
@@ -162,7 +162,7 @@ Venustempel's position, delivered unprompted, once, in one dry institutional sen
 **The distinction must be legible to a player who visits both**, on four axes:
 | Axis | Museum of Questionable Art | Venustempel |
 |------|---------------------------|-------------|
-| Price point | 4 Sovs eggs, novelty pricing, pile-it-high | 12 Sovs single pieces, 45 Sovs boxed set, cocoa percentage on the label |
+| Price point | 4 SOVS eggs, novelty pricing, pile-it-high | 12 SOVS single pieces, 45 SOVS boxed set, cocoa percentage on the label |
 | Signage | Neon "MUSEUM" in letters unsure of themselves, TripAdvisor stickers | Salvaged art deco, three-language gallery placards, municipal hygiene card |
 | Staff | One bored teenager | Five trained staff on rotation, one of whom is doing nothing but saying "one dip" |
 | Queue | None | Down the Mile, all day, and it is not even for the museum |
@@ -208,9 +208,9 @@ And the payoff underneath all of it: it is a **shared** fountain. Everybody doub
 - **Sensitivity Considerations**: Crude, yes — explicit, no. Nothing is depicted. Every asset is confectionery, machinery, mannequins, signage, paperwork, or visitor reactions. No minors, no real people or businesses. The satire punches at the tourists and never at the staff, who are competent, unbothered and entirely unashamed.
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: A free public trough of hot chocolate as a customer-acquisition funnel. 90,000 Sovs a year to run, returned eleven times over. The museum is not embarrassed by this. The museum is *delighted* by this and says so in its annual report.
+- **Primary Vice**: A free public trough of hot chocolate as a customer-acquisition funnel. 90,000 SOVS a year to run, returned eleven times over. The museum is not embarrassed by this. The museum is *delighted* by this and says so in its annual report.
 - **City-Specific Comedy Operations**: The 1 SOV bare skewer — Gunter's highest-margin product is a piece of wood, sold to men who intend to put it in a public fountain and then in their mouths
-- **Buffoon Exploitation**: 10 Sovs to be green-screened into a cascade you can stand in front of for free. It outsells everything. Chadwick buys three.
+- **Buffoon Exploitation**: 10 SOVS to be green-screened into a cascade you can stand in front of for free. It outsells everything. Chadwick buys three.
 - **Comedy of Errors**: The bros spend 31 SOVS on skewers and 0 on the wipe, dip forty-one times, and blame the döner
 - **Consequence System**: **Sharing the Love** — see Gameplay Mechanics. Escalating, tracked, cumulative, physical, public, and never once attributed correctly.
 
@@ -229,7 +229,7 @@ And the payoff underneath all of it: it is a **shared** fountain. Everybody doub
 - The metre-wide "EEN KEER DOPEN A.U.B. / ONE DIP PLEASE" plate
 - Gunter's cart hygiene card, which is an A, displayed next to a fountain that is not
 - Gunter's 1 SOV hand wipes, offered at the point of sale, every time
-- Lotte's 4 Sovs Handreiniger, recommended cheerfully to every single departing customer
+- Lotte's 4 SOVS Handreiniger, recommended cheerfully to every single departing customer
 - Gerda Vonk roping off the fountain for forty minutes with a sample kit while a crowd waits for her to finish
 - The fact that the fountain is free and the sticks are not
 - The fact that Gunter, who has worked here twelve years, has never eaten from it
@@ -260,7 +260,7 @@ Board items are 5 SOVS each, exactly as the board states. The two off-board item
 | Bare wooden skewer | 1 SOV | 0 | +1 per dip | Nothing on it. Not on the board. Best margin on the cart. Sells constantly. |
 | Hand wipe | 1 SOV | 0 | **−1 stack** | Not on the board. Offered at point of sale, every time, flatly. Almost never bought. |
 
-> **CURRENCY (RESOLVED — author ruling, 2026-08-01)**: **the entire game runs on Sovs.** Every country, every city, every price. There are no euros anywhere in Eurobound and currency exchange between regions is not a mechanic. Every price in this document is in Sovs; the author's board copy uses the form "5 SOVS" and is reproduced verbatim. No NPC in this location mentions converting money, because there is nothing to convert.
+> **CURRENCY (RESOLVED — author ruling, 2026-08-01)**: **the entire game runs on SOVS.** Every country, every city, every price. There are no euros anywhere in Eurobound and currency exchange between regions is not a mechanic. Every price in this document is in SOVS; the author's board copy uses the form "5 SOVS" and is reproduced verbatim. No NPC in this location mentions converting money, because there is nothing to convert.
 
 ### The Germ Mechanic — "Sharing the Love"
 A stacking status effect. It is the location's core system and it follows the party out of the plaza and across the city.
@@ -290,7 +290,7 @@ A stacking status effect. It is the location's core system and it follows the pa
 | Method | Stacks Removed | Cost |
 |--------|---------------|------|
 | Gunter's hand wipe | 1 | 1 SOV |
-| Lotte's "Handreiniger" (gift shop) | 2 | 4 Sovs |
+| Lotte's "Handreiniger" (gift shop) | 2 | 4 SOVS |
 | Full night's sleep at The Tolerance Hostel | 2 | Standard rest |
 | Frietomat croquette | 1 | 3 SOVS — mechanically real, medically nonsense, the bros swear by it |
 | Natural decay | 1 per in-game day | Free |
@@ -325,7 +325,7 @@ The fountain is never on this list. The fountain is never suggested. If the play
 | 3 | **C** | Added a rope. Added a second attendant whose entire job is saying "one dip." |
 | 4 | **IN BEHANDELING** ("Under Review") | Replaced the score card with a card showing only the inspection date |
 
-- **The Economics, Stated Plainly In-Game**: The fine is 1,200 Sovs. The fountain clears that before noon on a Saturday. Switching it off for a day costs more than the fine. Nobody is hiding this calculation; it is in the annual report, which is on a shelf in the gift shop, for 8 Sovs, and has sold four copies.
+- **The Economics, Stated Plainly In-Game**: The fine is 1,200 SOVS. The fountain clears that before noon on a Saturday. Switching it off for a day costs more than the fine. Nobody is hiding this calculation; it is in the annual report, which is on a shelf in the gift shop, for 8 SOVS, and has sold four copies.
 - **Gerda Is Not An Antagonist**: She is correct, professional, thorough and entirely unbothered. She has told them. They have listened. Nothing has changed. This is normal and she has forty other premises this week.
 - **The Bros' Reading**: A woman in a hi-vis vest roping off a chocolate fountain reads to them as an exclusive event. They queue harder. Chadwick films her. She does not object; she is in a public square and she has read the same regulations he has not.
 
@@ -344,7 +344,7 @@ The fountain is never on this list. The fountain is never suggested. If the play
 - **The Failures Case**: Examining it grants nothing mechanically and is the only exhibit in the building with a genuinely sad placard. It is worth reading.
 
 ### Peep Show Devices (Retained)
-- **Cost**: 1 Sov per viewing, thirty seconds, coins from Anke
+- **Cost**: 1 SOV per viewing, thirty seconds, coins from Anke
 - **Effect**: +Vintage Knowledge, +slight confusion about past generations
 - **Bros' Reaction**: "People paid money for THIS? ...Put in another coin."
 
@@ -359,8 +359,8 @@ The fountain is never on this list. The fountain is never suggested. If the play
 | The Giggling Figure | The collective jump, entire lobby in frame | +Bravado, +Trivial Knowledge | Posted as a reel. Filmed four more times to get a better take. |
 | Marilyn Monroe Statue | Dress-blow recreation | +Bravado | Posted. Uncropped. Bradley's is the best one and he knows it. |
 | The Throne | Group seating, fully committed | +Unexplainable Photo key item | Posted. Printed. Framed later, at home, in a hallway. |
-| Costume Corner | Accessorised portraits (5 Sovs) | +2 Bravado | Posted. Becomes a recurring avatar for two of the three. |
-| Green Screen | Composite into the cascade (10 Sovs) | +Artifact, +Bravado | Obviously fake. Posted anyway. Chadwick buys three and posts all three. |
+| Costume Corner | Accessorised portraits (5 SOVS) | +2 Bravado | Posted. Becomes a recurring avatar for two of the three. |
+| Green Screen | Composite into the cascade (10 SOVS) | +Artifact, +Bravado | Obviously fake. Posted anyway. Chadwick buys three and posts all three. |
 | De Oervorm (flash, illegal) | Blurry, over-exposed, Ruud's outstretched hand in frame | +Ruud Intervention | Posted with the caption "SECURITY TRIED IT." Ruud did not try anything; Ruud said "no flash" and walked off. |
 
 ### The Photo Consequences System (Retained & Reframed)
@@ -372,7 +372,7 @@ The fountain is never on this list. The fountain is never suggested. If the play
 ### Bravado Interactions
 This location is a **Bravado engine**. The default trajectory is upward, loudly, and the bros earn most of it legitimately.
 
-- **Gain Bravado**: Dip. Dip again. Dip something already bitten. Lean into the cascade. Ride out the Giggling Figure without flinching. Read three Cacaogalerij placards and repeat one incorrectly to a stranger. Correctly identify the John Lennon piece. Say "couverture" out loud. Buy the 45 Sovs boxed Collectie. Read Gunter's board aloud, in full, at volume, to the queue.
+- **Gain Bravado**: Dip. Dip again. Dip something already bitten. Lean into the cascade. Ride out the Giggling Figure without flinching. Read three Cacaogalerij placards and repeat one incorrectly to a stranger. Correctly identify the John Lennon piece. Say "couverture" out loud. Buy the 45 SOVS boxed Collectie. Read Gunter's board aloud, in full, at volume, to the queue.
 - **Lose Bravado**: Only four things do it, and none of them is enjoying yourself. Asking Gunter whether the fountain is "clean." Asking Gunter whether the chocolate is "real." Buying the 1 SOV bare skewer and being seen doing it. Reaching Tier 5 in front of an NPC who then quietly ends the conversation.
 
 ---
@@ -420,7 +420,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 - **Appearance**: Middle-aged Dutch woman, reading glasses, cross-stitch project between customers
 - **Demeanor**: Completely unfazed by everything. The museum's flattest surface.
 - **Dialogue**:
- - "Nine Sovs. The sign says five. The sign is old. Cash or card."
+ - "Nine SOVS. The sign says five. The sign is old. Cash or card."
  - "The fountain is free. The fountain has always been free. You do not need a ticket for the fountain and I cannot sell you one."
  - "The giggling figure is four steps to your right. Yes, it moves. Everyone jumps. You will also jump."
  - "Chocolate gallery is the ground floor. Machines are upstairs. Coins for the machines are there. Yes, the machines work. Yes, they're original."
@@ -459,7 +459,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
  - "Solid or hollow? Hollow is lighter for the flight but it will not survive August. I say that to everyone and everyone buys hollow."
  - "We do gift wrapping. No judgment. Very discreet packaging available."
  - "The postcards are popular. Yes, you can mail them. Yes, people do mail them."
- - *every departing customer, cheerfully, sincerely*: "Handreiniger? Four Sovs, and the bottle is the fountain. It's a nice little bottle. Nobody ever takes one."
+ - *every departing customer, cheerfully, sincerely*: "Handreiniger? Four SOVS, and the bottle is the fountain. It's a nice little bottle. Nobody ever takes one."
  - *of the John Lennon print*: "That's my favourite thing in the shop. It's licensed. It's properly framed. Look at the line on it."
  - "Come back anytime. We're here since 1985. We'll be here when you're ready."
 
@@ -508,7 +508,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 **Gunter, on volume** (unprompted, if the player idles at the cart during peak):
 - "Six hundred on a Saturday. Sometimes seven."
-- "The stick on its own is the one that surprises people. It's a Sov. It's a stick."
+- "The stick on its own is the one that surprises people. It's a SOV. It's a stick."
 
 **Anke, on the move** (if asked about the old building):
 - "It's a waffle shop now. They kept the red door. I think that's worse."
@@ -539,7 +539,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 ## System Integration
 
 ### The Cultural Alibi Flag
-- **Type**: Permanent world flag, granted on paying the 9 Sovs and entering the Cacaogalerij
+- **Type**: Permanent world flag, granted on paying the 9 SOVS and entering the Cacaogalerij
 - **Effect**: Unlocks the dialogue option "We went to a museum" in every city, with every NPC, for the rest of the game
 - **The Joke**: It is completely true. They did go to a museum. It is a real museum with a curator, a climate-controlled vitrine, a tempering room, and placards in three languages. They cannot describe a single exhibit.
 - **NPC Reactions**: 60% polite acknowledgement, 30% "which one," 10% "the chocolate one?" — and the bros always say yes to "the chocolate one" with visible pride
@@ -569,7 +569,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 ### Cross-Location Dependencies
 - **The Awkward Truffle**: Direct commercial rival. Chocolatier **Sophie** is the only NPC in the game who criticises the fountain — on *tempering* grounds, not hygiene. "That is not chocolate. That is chocolate-flavoured weather." She has never mentioned the germs and it has never occurred to her to. Buying from both in one in-game day unlocks a comparison dialogue.
-- **Shamsterdam Museum of Questionable Art**: The other end of the same industry — see "The Other Chocolate Museum" above. They are the cheap gift shop (4 Sovs eggs, sprinkles, fondant bow ties, one bored teenager, no queue); Venustempel is the curated institution (provenance, gallery plinths, three-language placards, climate control, a restrained expensive shop, and a queue down the Mile). The rivalry is one-directional and Venustempel expresses it in exactly one dry sentence. Their gift shop now carries unlicensed fountain merch. Their chocolate material is load-bearing for the Fabergé Egg Hunt and stays exactly as it is.
+- **Shamsterdam Museum of Questionable Art**: The other end of the same industry — see "The Other Chocolate Museum" above. They are the cheap gift shop (4 SOVS eggs, sprinkles, fondant bow ties, one bored teenager, no queue); Venustempel is the curated institution (provenance, gallery plinths, three-language placards, climate control, a restrained expensive shop, and a queue down the Mile). The rivalry is one-directional and Venustempel expresses it in exactly one dry sentence. Their gift shop now carries unlicensed fountain merch. Their chocolate material is load-bearing for the Fabergé Egg Hunt and stays exactly as it is.
 - **Condomerie Het Gulden Vlies**: Adjacent trade, different district. Femke and Lotte have professional awareness and no relationship.
 - **The Hemp Museum**: "We've been to TWO museums" — with decreasing conviction
 - **The Tolerance Hostel**: Bathroom-queue event at Tier 5; Ingrid on the interior-photo exclusion list; Ingrid has an opinion about the fountain and will not share it
@@ -661,7 +661,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 ### Social Media Strategy
 - **Instagram Moments**: The fountain at full cascade, the ONE DIP sign at actual scale, the queue, the HYGIËNESCORE card in close-up
 - **TikTok Potential**: The dip sound on loop, the Tier 5 attribution table, "I DIDN'T EVEN DIP," Gerda roping off the fountain while a crowd waits
-- **Twitter Hooks**: The 1 SOV bare skewer, Gunter's "I have seen the fountain," the framed violation notice, the economics of the 1,200 Sovs fine
+- **Twitter Hooks**: The 1 SOV bare skewer, Gunter's "I have seen the fountain," the framed violation notice, the economics of the 1,200 SOVS fine
 - **Streaming Content**: Full playthrough with a visible stack counter; the reveal that the fountain photo went to Mom
 
 ### Community Engagement
@@ -679,7 +679,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 - [x] **Gameplay value established** (Sharing the Love five-tier system, fountain economy, inspection world state, photo system, Cultural Alibi flag)
 - [x] **MA register held** (Adult subject matter played for farce — confectionery, machinery, signage and consequence; filthy and funny, never coy)
 - [x] **Staff are competent professionals** (Gunter, Anke, Ruud, Lotte and Gerda are all good at their jobs and unbothered; none is a victim or a punchline)
-- [x] **No crypto elements** (The only currencies are Sovs, SOVS on the cart per author copy, 1 Sov coins for machines built in the 1890s, and germs)
+- [x] **No crypto elements** (The only currencies are SOVS, SOVS on the cart per author copy, 1 SOV coins for machines built in the 1890s, and germs)
 
 ---
 
@@ -702,4 +702,4 @@ Authoritative specification: `PNG_Assets/Venustempel_PNG_Assets.md` — 9 sheets
 
 ---
 
-*Venustempel: nine Sovs to see a cracked 1974 chocolate phallus in a nitrogen case, one SOV for a skewer with nothing on it, and nothing at all for the fountain — which is free, which is warm, which is four metres tall, which has a sign asking for one dip, and which four hundred strangers a day have already touched.*
+*Venustempel: nine SOVS to see a cracked 1974 chocolate phallus in a nitrogen case, one SOV for a skewer with nothing on it, and nothing at all for the fountain — which is free, which is warm, which is four metres tall, which has a sign asking for one dip, and which four hundred strangers a day have already touched.*

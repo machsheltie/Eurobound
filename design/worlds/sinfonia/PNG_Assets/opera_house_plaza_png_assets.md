@@ -4,7 +4,7 @@
 This document provides exact specifications for all PNG files needed for the Opera House Plaza location in Sinfonia — the most cultured place in Europe to witness a horse-related disaster. Each sprite sheet includes pixel-perfect coordinates, color specifications, and animation requirements for this grand baroque plaza where 400 years of imperial self-regard meets a drunk Fiaker driver, a runaway horse, and the American tourists who make everything worse. The plaza is ground zero for the Fiaker Fiasco quest.
 
 **Location ID:** `sinfonia_imperial_opera_house_plaza_01`
-**Theme:** Imperial baroque grandeur as a tourist commodity — high culture that charges 7 Sovs extra for the "historic view"
+**Theme:** Imperial baroque grandeur as a tourist commodity — high culture that charges 7 SOVS extra for the "historic view"
 **Zone:** Imperial Square District
 **Hours:** Always accessible (Day 10:00–17:00 bustling cultural; Evening 17:00–22:00 refined formal; Night 22:00–02:00 decadent shadowy)
 **Primary Function:** Quest hub / social space — Fiaker Fiasco initiation and resolution, premium tourist-vendor economy, fountain landmark interactions, street performer recovery point
@@ -191,7 +191,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - **Trigger:** Constant
 - **Purpose:** Living centerpiece; the plaza's heartbeat of aged imperial elegance
 - **Audio Sync:** Continuous fountain water layer (volume 0.5)
-- **Performance Optimization:** Drop to 4 frames at 4 FPS on low-end devices
+- **Performance Optimization:** Drop to 4 frames at 4 FPS on min-spec hardware
 
 ### Hans-Jürgen Panic:
 - **Duration:** 1.0 second cycle
@@ -277,7 +277,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 ### Colorblind Considerations:
 - Fiaker queue posts numbered, not color-coded; Hans-Jürgen's post reads "#3" in text
 - Damage popups pair the numeral and the word `SOVS` with an impact-star shape, never color alone
-- Touch zones minimum 48px for all interactive elements (per location performance spec)
+- Click zones minimum 48px for all interactive elements (per location performance spec)
 
 ---
 
@@ -366,7 +366,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - Neptune's green patina vs. freshly regilded opera statues: the city polishes what tourists photograph
 - Numbered Fiaker queue posts formalize even the horse-carriage hustle; Hans-Jürgen's is #3
 - "The Magic Flute" poster foreshadows the backstage disaster two locations later
-- Scalper lurking at 200–500 Sovs for 40 Sovs tickets — the seedy underbelly wears a nice coat
+- Scalper lurking at 200–500 SOVS for 40 SOVS tickets — the seedy underbelly wears a nice coat
 
 ### Character Integration Notes:
 - Hans-Jürgen and Gustav are the emotional axis; both need readable silhouettes at plaza-wide zoom
@@ -443,7 +443,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 - [ ] Satirical theme (culture-as-commodity) is clear throughout all assets
 - [ ] Fiaker queue and fountain interactions have discoverable visual cues
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (48px minimum for interactive elements)
+- [ ] Click zone sizing considered (48px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 

@@ -1,7 +1,7 @@
 # The Hemp Museum - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Hemp Museum charges 10 Sovs for 500 years of genuinely fascinating history that visitors will speed-walk past on their way to look at plants, and then sells them a grinder on the exit. This document specifies every PNG asset for the museum: the canal-house facade attempting scholarly dignity between a peep show and a coffeeshop, four exhibit floors whose visitor dwell times are inversely proportional to their educational value, the growing room with its purple glow and its patient botanist, the gift shop that occupies more floor space than any exhibit, and Lars — who wrote a forty-page thesis on hemp rope's role in Dutch maritime history and has sold zero audio guides today. Its satirical essence in a sentence: everyone in the building knows why you came, and only one of them is upset about it.
+The Hemp Museum charges 10 SOVS for 500 years of genuinely fascinating history that visitors will speed-walk past on their way to look at plants, and then sells them a grinder on the exit. This document specifies every PNG asset for the museum: the canal-house facade attempting scholarly dignity between a peep show and a coffeeshop, four exhibit floors whose visitor dwell times are inversely proportional to their educational value, the growing room with its purple glow and its patient botanist, the gift shop that occupies more floor space than any exhibit, and Lars — who wrote a forty-page thesis on hemp rope's role in Dutch maritime history and has sold zero audio guides today. Its satirical essence in a sentence: everyone in the building knows why you came, and only one of them is upset about it.
 
 **Location ID:** `shamsterdam_roodelicht_hemp_museum_01`
 **Theme:** Educational tourism as cultural alibi — the performance of learning, monetised at the exit
@@ -111,10 +111,10 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Museum Exterior (Canal House) | (0, 0) | 384x512 | Green door, brass historical plaque (real), neon OPEN sign (less historical), "EDUCATIONAL EXHIBITS" large / "Gift Shop" small |
-| Ticket Counter | (384, 0) | 256x192 | 10 Sovs entry, 3 Sovs audio guide, bored staff, hope |
+| Ticket Counter | (384, 0) | 256x192 | 10 SOVS entry, 3 SOVS audio guide, bored staff, hope |
 | Welcome Panel | (640, 0) | 192x128 | "HEMP: A History of Humanity's Most Versatile Plant" |
 | Timeline Graphic (10,000 BCE →) | (832, 0) | 192x128 | Establishing ancient legitimacy in one wall |
-| Audio Guide Rack | (640, 128) | 96x64 | 3 Sovs extra. Fully stocked. Always fully stocked. |
+| Audio Guide Rack | (640, 128) | 96x64 | 3 SOVS extra. Fully stocked. Always fully stocked. |
 | Coat Hook Row | (736, 128) | 96x64 | The coat check. It is hooks. It is trust. |
 | Donation Box | (832, 128) | 96x64 | Optimistic |
 | Ticket Desk Sign | (928, 128) | 96x64 | Prices and hours, laminated |
@@ -174,15 +174,15 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 ### Handheld & Tickets:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Audio Guide Device | (0, 0) | 32x48 | 3 Sovs, genuinely informative, ~5% selection rate |
+| Audio Guide Device | (0, 0) | 32x48 | 3 SOVS, genuinely informative, ~5% selection rate |
 | Smell Jar (Individual) | (32, 0) | 32x48 | Terpene challenge unit |
 | Hemp Tea Cup | (64, 0) | 32x48 | "Complimentary." Earthy. Disappointing. |
-| CBD Oil Bottle (Gift Shop) | (96, 0) | 32x48 | 30-80 Sovs, "Wellness product." |
-| Museum Ticket (10 Sovs) | (128, 0) | 64x48 | The cultural alibi, purchased |
-| Combo Ticket (15 Sovs) | (192, 0) | 64x48 | Neighbouring attraction, separate gift shops |
-| Rolling Papers (Branded) | (256, 0) | 64x48 | 5 Sovs, "Museum quality." |
-| "Educational" Grinder | (320, 0) | 64x48 | 15-45 Sovs, "For herbs. Any herbs." |
-| Hemp Tote Bag (Museum) | (384, 0) | 64x48 | 18 Sovs, cosmetic inventory expansion |
+| CBD Oil Bottle (Gift Shop) | (96, 0) | 32x48 | 30-80 SOVS, "Wellness product." |
+| Museum Ticket (10 SOVS) | (128, 0) | 64x48 | The cultural alibi, purchased |
+| Combo Ticket (15 SOVS) | (192, 0) | 64x48 | Neighbouring attraction, separate gift shops |
+| Rolling Papers (Branded) | (256, 0) | 64x48 | 5 SOVS, "Museum quality." |
+| "Educational" Grinder | (320, 0) | 64x48 | 15-45 SOVS, "For herbs. Any herbs." |
+| Hemp Tote Bag (Museum) | (384, 0) | 64x48 | 18 SOVS, cosmetic inventory expansion |
 | Gift Shop Bag (Tourist Marker) | (448, 0) | 64x48 | The consequence; budtenders recognise it |
 
 ### Interactives & Shop Goods:
@@ -190,10 +190,10 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 |---------|----------|------|-------------|
 | Fabric Samples ("Feel the Hemp!") | (0, 48) | 128x48 | Four swatches, touch-prompted, instantly forgotten |
 | Hemp Tea Station | (128, 48) | 96x48 | Loss leader, positioned for maximum funnel |
-| Hemp Soap + Box | (224, 48) | 64x48 | 8 Sovs, exists purely for plausible deniability |
-| "I Got High on Knowledge" Shirt | (288, 48) | 64x48 | 28 Sovs, +Embarrassed when worn, "Popular choice." |
-| "Hemp History" Book | (352, 48) | 64x48 | 25 Sovs, +Intelligence display, will not be read |
-| Seed Packet ("Souvenir only") | (416, 48) | 96x48 | 20-50 Sovs, very important, very fine print |
+| Hemp Soap + Box | (224, 48) | 64x48 | 8 SOVS, exists purely for plausible deniability |
+| "I Got High on Knowledge" Shirt | (288, 48) | 64x48 | 28 SOVS, +Embarrassed when worn, "Popular choice." |
+| "Hemp History" Book | (352, 48) | 64x48 | 25 SOVS, +Intelligence display, will not be read |
+| Seed Packet ("Souvenir only") | (416, 48) | 96x48 | 20-50 SOVS, very important, very fine print |
 
 ### Readable Props:
 | Element | Position | Size | Description |
@@ -208,8 +208,8 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 ### Staff Props & Tools:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Grinder (Premium 45 Sovs) | (0, 160) | 64x48 | Marco's best seller |
-| Grinder (Basic 15 Sovs) | (64, 160) | 64x48 | Marco's volume seller |
+| Grinder (Premium 45 SOVS) | (0, 160) | 64x48 | Marco's best seller |
+| Grinder (Basic 15 SOVS) | (64, 160) | 64x48 | Marco's volume seller |
 | Growing Guide (NOT Provided) | (128, 160) | 96x48 | Visible on a shelf behind the counter, never sold, never explained |
 | Thesis Manuscript (Lars's) | (224, 160) | 96x48 | 40 pages on hemp rope in Dutch maritime history |
 | Clipboard (School Group) | (320, 160) | 64x48 | Worksheet, mostly doodles |
@@ -414,7 +414,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Section Time Tracker | (768, 0) | 256x64 | Per-section dwell timer, hidden until the exit reveal |
 | Speed-Run Comparison Bars | (768, 64) | 256x64 | Your time vs. average visitor time, per section, brutal |
 | Cultural Alibi Badge | (768, 128) | 64x64 | "Visited a Museum" — usable in future dialogue |
-| Audio Guide Selection Panel | (832, 128) | 192x64 | 3 Sovs prompt with visible staff-reaction slot |
+| Audio Guide Selection Panel | (832, 128) | 192x64 | 3 SOVS prompt with visible staff-reaction slot |
 | Hemp vs Marijuana Popup | (512, 192) | 192x128 | Educational correction, triggered by asking "where's the weed?" |
 
 ### UI — Status, Shop & Accessibility:
@@ -426,8 +426,8 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Embarrassed Status Bar | (704, 288) | 128x32 | Shirt-worn effect |
 | Gift Shop Purchase Panel | (832, 192) | 192x128 | Eight-item list with Marco's one-line comments |
 | Exhibit Examine Panel | (512, 320) | 256x96 | Flavour text frame for any examinable display |
-| Ticket Purchase Panel | (768, 320) | 128x96 | 10 Sovs + optional 3 Sovs audio guide |
-| Combo Ticket Panel | (896, 320) | 128x96 | 15 Sovs, neighbouring attraction, separate gift shops |
+| Ticket Purchase Panel | (768, 320) | 128x96 | 10 SOVS + optional 3 SOVS audio guide |
+| Combo Ticket Panel | (896, 320) | 128x96 | 15 SOVS, neighbouring attraction, separate gift shops |
 | Alibi Track Strip | (512, 416) | 256x64 | Four 64x64 markers: Entered / Endured / Educated / Purchased |
 | Status Icon Row | (768, 416) | 128x32 | Four 32x32: Trivial Knowledge / Calm / Embarrassed / Cultural Alibi |
 | High-Contrast Exhibit Marker | (896, 416) | 64x32 | Bold outline for examinable displays |
@@ -450,7 +450,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Frames:** 2 shimmer frames + continuous purple bloom plate
 - **Pattern:** Slow crossfade loop, continuous
 - **Trigger:** Constant while the Growing Room is loaded
-- **Purpose:** The purple glow is the reason anyone paid 10 Sovs; it must be the most alive thing in the museum
+- **Purpose:** The purple glow is the reason anyone paid 10 SOVS; it must be the most alive thing in the museum
 - **Audio Sync:** LED and ventilation hum bed, phase-locked to the shimmer
 - **Performance Optimization:** Low LOD uses the Static Grow Light plate with the bloom held at fixed alpha (profile requirement: simplified grow lights)
 
@@ -485,7 +485,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - **Duration:** 2.0 seconds (0.4s selection, 0.6s Lars shock frame, 1.0s hold)
 - **Frames:** Selection panel confirm + Lars Audio Guide SOLD frame + celebration sparkle
 - **Pattern:** One-shot, roughly 5% of visits
-- **Trigger:** Purchasing the 3 Sovs audio guide
+- **Trigger:** Purchasing the 3 SOVS audio guide
 - **Purpose:** The rarest positive event in the building, celebrated disproportionately
 - **Audio Sync:** Small triumphant sting at 0.4s — the only unambiguously happy sound in the museum
 - **Performance Optimization:** None needed (one-shot)
@@ -559,7 +559,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - Legality and status effects use distinct silhouettes: small-book-with-question-mark (Trivial Knowledge), level line (Calm), zigzag (Embarrassed), column-and-ticket (Cultural Alibi)
 - The four floors are distinguishable by architecture and fixture silhouette as well as by lighting grade
 - Live Plant vs. Industrial Hemp Plant are distinguished by leaf-count and stem thickness, with text placards — never by tint alone
-- Touch zones minimum 44px for all exhibit examines, terpene options, ticket options, and gift shop items
+- Click zones minimum 44px for all exhibit examines, terpene options, ticket options, and gift shop items
 
 ---
 
@@ -751,7 +751,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 - [ ] The Industrial Hemp section is convincingly excellent and convincingly empty
 - [ ] Hidden areas/interactions have discoverable visual cues (courtyard door, audio guide rack, fabric station, smell jars, the Growing Guide prop behind the counter)
 - [ ] Performance optimized (paired-room streaming, CPU particles, atlas limits respected, static grow-light/plant fallbacks, reduced NPC counts)
-- [ ] Touch zone sizing considered (44px minimum for exhibit examines, terpene options, and shop items)
+- [ ] Click zone sizing considered (44px minimum for exhibit examines, terpene options, and shop items)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded terpenes, pattern-filled tracker bars, placarded plant types)
 - [ ] Social media viral potential maximized in composition choices (speed-run reveal framing, Lars diptych, empty rope room, fingerprinted glass)
 
@@ -768,8 +768,8 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Gameplay Value Established | ✅ | Four-floor navigation, two interactives, hidden speed-run tracker, Cultural Alibi flag, cross-location bag marker, 8-item shop economy |
 | Technical Feasibility | ✅ | Paired-room streaming, static grow-light/plant fallbacks per profile, reduced NPC counts per profile, pre-composed crowd blocks |
 | Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB, 16 particles per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all ten audio cues, reduced-motion set, shape-coded terpenes and tracker bars, 44px touch zones |
-| No Crypto Elements | ✅ | Pure museum commerce; the only speculative instrument is a 20 Sovs seed packet |
+| Accessibility Features | ✅ | Visual mirrors for all ten audio cues, reduced-motion set, shape-coded terpenes and tracker bars, 44px click zones |
+| No Crypto Elements | ✅ | Pure museum commerce; the only speculative instrument is a 20 SOVS seed packet |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |
 
 **Once these assets ship, The Hemp Museum becomes the game's most quietly devastating location: a beautiful, empty room about rope; a purple room full of people; a gift shop bigger than both; and one man at the front desk who wrote forty pages about the empty room and will tell you about it if you stop walking.**

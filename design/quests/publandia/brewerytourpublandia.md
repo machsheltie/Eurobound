@@ -73,9 +73,9 @@ regalia) — only the pass/fail scoring apparatus is gone. Nothing below is a pl
 
 ### Enrollment
 
-Same cover-charge framing as the venue doc: 10 Sovs "tuition" at the Entrance Hall desk buys
+Same cover-charge framing as the venue doc: 10 SOVS "tuition" at the Entrance Hall desk buys
 a laminated Student ID, a branded pint glass ("textbook"), and access to the evening's
-curriculum. Returning graduates pay the 5 Sovs Alumni Rate. This beat is unchanged by the
+curriculum. Returning graduates pay the 5 SOVS Alumni Rate. This beat is unchanged by the
 redesign — it's the front door, not the grading apparatus.
 
 ### The Curriculum — Four Courses, Chug to Open
@@ -299,10 +299,10 @@ is designed yet.
 
 | Slot | Location | Stamp | Opener | Signature Beer |
 |---|---|---|---|---|
-| 1 | The Blarney Trap | Celtic harp, emerald ink | Celtic knot shamrock, "May Your Glass Never Be Empty" | The Sweet Surrender — Irish Stout, 5.2% ABV, 8 Sovs |
-| 2 | The Stoutworks Brewery | Copper still, bronze ink | Copper still shape, "Forged in Flavor" | Vat Master's Reserve — Imperial Stout, 9.5% ABV, 12 Sovs |
-| 3 | Trinity of Pints | Scholarly cap, navy ink | Graduation cap w/ tassel, "Summa Cum Lager" | Academic Amber — Irish Red Ale, 4.8% ABV, 9 Sovs |
-| 4 | Shenanigans | Wilted clover, faded gold ink | Wilted clover, "Lucky Eventually" | The Fool's Gold — Golden Ale w/ honey, 5.0% ABV, 8 Sovs |
+| 1 | The Blarney Trap | Celtic harp, emerald ink | Celtic knot shamrock, "May Your Glass Never Be Empty" | The Sweet Surrender — Irish Stout, 5.2% ABV, 8 SOVS |
+| 2 | The Stoutworks Brewery | Copper still, bronze ink | Copper still shape, "Forged in Flavor" | Vat Master's Reserve — Imperial Stout, 9.5% ABV, 12 SOVS |
+| 3 | Trinity of Pints | Scholarly cap, navy ink | Graduation cap w/ tassel, "Summa Cum Lager" | Academic Amber — Irish Red Ale, 4.8% ABV, 9 SOVS |
+| 4 | Shenanigans | Wilted clover, faded gold ink | Wilted clover, "Lucky Eventually" | The Fool's Gold — Golden Ale w/ honey, 5.0% ABV, 8 SOVS |
 
 Full stat blocks, PNG specs, and Notes (including salvaged ambient dialogue) live in each
 item's own file under `design/items/brewery_tour/`.
@@ -317,7 +317,7 @@ item's own file under `design/items/brewery_tour/`.
 - **Consequence:** inflicts **"Legendary Hungover"** status after the battle ends
 - **Legendary Hungover:** -10 all stats for 30 minutes
 - **Cure:** Full Irish Breakfast, sleep, or waiting it out
-- **Price:** 50 Sovs, repurchasable from any stamped Publandia location
+- **Price:** 50 SOVS, repurchasable from any stamped Publandia location
 - **Flavor text:** *"Four stamps. Four surrenders. The night of your life has a morning
   after."*
 

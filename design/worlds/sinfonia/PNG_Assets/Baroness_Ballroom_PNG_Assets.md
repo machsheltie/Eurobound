@@ -342,7 +342,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 ### NPC Notes:
 - All four guest personas share one body rig; masks and one accessory differentiate them
 - Servants must be pixel-identical to each other except pose — the indistinguishability is the joke
-- Background waltz loops are pre-rendered pairs per mobile optimization (no individual dancer logic)
+- Background waltz loops are pre-rendered pairs per desktop performance optimization (no individual dancer logic)
 
 ---
 
@@ -452,10 +452,10 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 ### Rumor Trading:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Rumor Card Common | (0, 96) | 64x48 | 50 Sovs tier, plain seal |
-| Rumor Card Uncommon | (64, 96) | 64x48 | 150 Sovs tier, silver seal |
-| Rumor Card Rare | (128, 96) | 64x48 | 400 Sovs tier, gold seal |
-| Rumor Card Exclusive | (192, 96) | 64x48 | 1000 Sovs+ tier, Baroness sigil |
+| Rumor Card Common | (0, 96) | 64x48 | 50 SOVS tier, plain seal |
+| Rumor Card Uncommon | (64, 96) | 64x48 | 150 SOVS tier, silver seal |
+| Rumor Card Rare | (128, 96) | 64x48 | 400 SOVS tier, gold seal |
+| Rumor Card Exclusive | (192, 96) | 64x48 | 1000 SOVS+ tier, Baroness sigil |
 | Freshness Indicator | (256, 96) | 24x24 | Rumor decay timer glyph |
 | False Rumor Mark | (280, 96) | 24x24 | Detection warning (shape-coded X) |
 
@@ -473,7 +473,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 |---------|----------|------|-------------|
 | Masquerade Mask Basic | (0, 192) | 48x32 | Entry item |
 | Masquerade Mask Ornate | (48, 192) | 48x32 | Upgraded item |
-| Invitation Card | (96, 192) | 48x32 | Entry requirement (200 Sovs at Black-Tie Backroom) |
+| Invitation Card | (96, 192) | 48x32 | Entry requirement (200 SOVS at Black-Tie Backroom) |
 | Forged Invitation | (144, 192) | 48x32 | Crafted fake — subtly wrong seal |
 | Baroness Favor Icon | (192, 192) | 48x48 | Four-stage favor indicator |
 | Inner Circle Badge | (240, 192) | 32x32 | Three-visit unlock |
@@ -483,7 +483,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 ### Technical Notes:
 - Rumor tiers are shape-coded (seal geometry) as well as color-coded for colorblind support
 - Forged invitation's wrong seal must be findable in screenshots — community bait
-- All touch targets render at minimum 44px in-game scale
+- All click targets render at minimum 44px in-game scale
 
 ---
 
@@ -585,7 +585,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - Rumor tiers use distinct seal shapes (circle/diamond/crest/sigil), never color alone
 - Social HP (crimson) and Credibility (gold) meters use different fill textures (solid vs. hatched)
 - Dance timing windows show shape markers (bar lines) in addition to color zones
-- Touch zones minimum 44px for rumor cards, identity selection, and dance inputs
+- Click zones minimum 44px for rumor cards, identity selection, and dance inputs
 
 ---
 
@@ -618,7 +618,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - **Particle Limit:** 24 (candles 8, whisper 4, sparkle 8 → confetti burst swaps in at 20, never concurrent with sparkle)
 
 ### Performance Notes:
-- Crowd is pre-rendered pair loops per profile mobile spec — no per-dancer skeletons
+- Crowd is pre-rendered pair loops per profile performance  — no per-dancer skeletons
 - Private salons and Baroness salon load on-demand (door-gated scenes)
 - Three entrance route exteriors are separate lightweight scenes, never resident with the ballroom
 
@@ -766,7 +766,7 @@ assets/sprites/locations/sinfonia/baroness_ballroom/
 - [ ] Satirical theme (anonymity theater) is clear throughout all assets
 - [ ] Hidden entrances/exits have discoverable visual cues
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 

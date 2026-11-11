@@ -47,7 +47,7 @@ The gag is entirely one-directional: the city is not doing anything. The machine
 - Bolted to the empty plinth where the **I SHAMSTERDAM** sign used to be
 - Inside the Hemp Museum's industrial-fibre exhibit
 - At the bottom of a canal (still illuminated, still functional)
-- Inside a 1-Sov pay toilet in Roodelicht Row, so accessing a 2-Sov machine costs 3 Sovs
+- Inside a 1-SOV pay toilet in Roodelicht Row, so accessing a 2-SOV machine costs 3 SOVS
 - Facing directly into a brick wall at 30cm clearance, on the Canal Ring — you can operate it but you cannot read it
 - Voetgangerstunnel Zone 4, in a corridor with no other features, no lighting fixture of its own, and no signage
 - Two metres from the Condomerie's front door, which Femke has never once commented on
@@ -71,7 +71,7 @@ Backlit blue-white panel, contactless payment, six-language interface, tamper-pr
 ### Variant 2 — Mk. II "De Guldenvreter" (Ancient, Jammed)
 **Count**: 4 | **Districts**: Canal Ring Promenade (2), Cheese & Clog Corner (1), Voetgangerstunnel Zone 4 (1)
 
-*"The Guilder-Eater."* Enamel-painted steel, sun-bleached from red to salmon. Pull-knob mechanism, no electronics, no card slot. The coin slot is sized for **guilders** — a defunct pre-Sovs coinage nobody has been able to spend in living memory. No exchange exists and nobody offers one; a guilder is a novelty lump of metal that happens to be the exact size this machine wants.
+*"The Guilder-Eater."* Enamel-painted steel, sun-bleached from red to salmon. Pull-knob mechanism, no electronics, no card slot. The coin slot is sized for **guilders** — a defunct pre-SOVS coinage nobody has been able to spend in living memory. No exchange exists and nobody offers one; a guilder is a novelty lump of metal that happens to be the exact size this machine wants.
 
 - Cannot be operated with current coinage at all. The bros will try. Repeatedly.
 - Requires a **Guilder Coin** item (see Quest Hooks: The Guilder Problem)
@@ -86,9 +86,9 @@ Backlit blue-white panel, contactless payment, six-language interface, tamper-pr
 A Mk. IV housing that a bike shop acquired, rehoused, and refilled with what they actually sell. The VEILIG-O-MAAT branding is intact because removing it would have required a ladder.
 
 Now dispenses:
-- Inner tube patch kits (3 Sovs)
-- Rear bike light, red, one AA not included (6 Sovs)
-- Cable lock, comically inadequate (9 Sovs)
+- Inner tube patch kits (3 SOVS)
+- Rear bike light, red, one AA not included (6 SOVS)
+- Cable lock, comically inadequate (9 SOVS)
 - **Slot 7 only**: still contains the original 2011 stock. Nobody has emptied it. Nobody will.
 
 The shop owner has never mentioned the machine to anyone. If asked about it, an NPC line fires: *"It was there. It holds things. It is a good machine."*
@@ -131,39 +131,39 @@ Deliberately unfunny. This is the baseline against which everything else is meas
 
 | Item | Price | Effect |
 |------|-------|--------|
-| Standaard Drie (3-pack) | 2 Sovs | Inventory item. Sets `prepared` flag. No stat effect. No dialogue. |
-| Nachtpakket (6-pack) | 3 Sovs | Same, bulk. Weighs nothing. Means nothing. |
+| Standaard Drie (3-pack) | 2 SOVS | Inventory item. Sets `prepared` flag. No stat effect. No dialogue. |
+| Nachtpakket (6-pack) | 3 SOVS | Same, bulk. Weighs nothing. Means nothing. |
 
 ### Tier 2 — Toeristenlijn (9 machines)
 Where the city starts monetising your fascination.
 
 | Item | Price | Effect |
 |------|-------|--------|
-| Molenzegel ("Windmill Seal") | 4 Sovs | Souvenir. +Comedy. Chadwick auto-photographs the packaging. |
-| Tulpenreeks (4 colours) | 4 Sovs | Cosmetic set. Cross-ref: De Botanische Leugen sells the bulbs that also won't survive customs. |
-| Klompje (clog-shaped tin) | 5 Sovs | +0 stats, +100% Tourist Identification. The tin is the product. |
-| Oranje Editie | 5 Sovs | It is always orange. There is no explanation and none is offered. |
+| Molenzegel ("Windmill Seal") | 4 SOVS | Souvenir. +Comedy. Chadwick auto-photographs the packaging. |
+| Tulpenreeks (4 colours) | 4 SOVS | Cosmetic set. Cross-ref: De Botanische Leugen sells the bulbs that also won't survive customs. |
+| Klompje (clog-shaped tin) | 5 SOVS | +0 stats, +100% Tourist Identification. The tin is the product. |
+| Oranje Editie | 5 SOVS | It is always orange. There is no explanation and none is offered. |
 
 ### Tier 3 — Regionale Editie (4 machines)
 The regional variants. These are real products, sincerely manufactured, and that is the entire joke.
 
 | Item | Price | Effect |
 |------|-------|--------|
-| Haring-editie | 6 Sovs | Bravado check to purchase. Cross-ref: De Zilte Waarheid. Nobody can establish whether it is a joke. It is not a joke. |
-| Stroopwafel-geur | 6 Sovs | +Comfort, +Munchies risk. Smells correct. Deeply unsettling. |
-| "Gezellig" Variety Pack | 6 Sovs | The packaging uses the word wrong. Increments the game-wide Gezellig Misuse Counter. |
-| Hennep-vezel | 6 Sovs | Hemp Museum only. Includes an actual crop-rotation leaflet. |
+| Haring-editie | 6 SOVS | Bravado check to purchase. Cross-ref: De Zilte Waarheid. Nobody can establish whether it is a joke. It is not a joke. |
+| Stroopwafel-geur | 6 SOVS | +Comfort, +Munchies risk. Smells correct. Deeply unsettling. |
+| "Gezellig" Variety Pack | 6 SOVS | The packaging uses the word wrong. Increments the game-wide Gezellig Misuse Counter. |
+| Hennep-vezel | 6 SOVS | Hemp Museum only. Includes an actual crop-rotation leaflet. |
 
 ### Tier 4 — De Rariteiten (2 machines)
 The machines nobody restocks correctly. Slots 7 and 8 contain items that are not, by any definition, the product on the front of the machine.
 
 | Item | Price | Effect |
 |------|-------|--------|
-| Slot 7: An Emergency Rain Poncho | 8 Sovs | Genuinely useful. Actually waterproof. The single most practical item purchasable in Roodelicht Row. |
-| Slot 8: One (1) Battery, Size AA | 8 Sovs | No explanation. Fits the Bakfietsmaat bike light. Nobody connects these facts. |
+| Slot 7: An Emergency Rain Poncho | 8 SOVS | Genuinely useful. Actually waterproof. The single most practical item purchasable in Roodelicht Row. |
+| Slot 8: One (1) Battery, Size AA | 8 SOVS | No explanation. Fits the Bakfietsmaat bike light. Nobody connects these facts. |
 
 ### Tier 5 — De Vraagteken (1 machine)
-A single slot, labelled only **"?"**. 10 Sovs. Located in **De Verdronken Automaat** at the canal bottom.
+A single slot, labelled only **"?"**. 10 SOVS. Located in **De Verdronken Automaat** at the canal bottom.
 
 Randomised on purchase from the entire table above, plus:
 - **4% chance**: a small plastic hippo (Fabergé Egg Hunt callback — the hippo is identical to the quest item and is *not* the quest item)
@@ -176,12 +176,12 @@ Randomised on purchase from the entire table above, plus:
 ### Base Interaction
 1. Approach prompt: **"Examine machine"** / **"Use machine"**
 2. Examine → flavour text, one line, deadpan, plus the machine's circuit number (`Veilig-o-Maat #17 of 34`)
-3. Use → slot grid UI, six to eight slots, prices in Sovs, no confirmation dialogue for Tier 1–2
+3. Use → slot grid UI, six to eight slots, prices in SOVS, no confirmation dialogue for Tier 1–2
 4. Dispense → small mechanical clunk. No fanfare. **Never** a jingle.
 5. Chadwick photographs it automatically if the party is together. This cannot be disabled. It is a feature.
 
-### Touch & Mobile Notes
-- Interaction hitbox 44px minimum; machines are wall-mounted so the hitbox is a vertical rectangle
+### Click Target Notes
+- Interaction hitbox 44px minimum (click target) (click target); machines are wall-mounted so the hitbox is a vertical rectangle
 - Slot grid UI reuses the Frietomat panel layout with a different skin — deliberate visual rhyme between "wall of hot croquettes" and "wall of prophylactics," both presented by the city with identical bureaucratic neutrality
 
 ### The Sticker Layer (Micro-Collectible)
@@ -238,7 +238,7 @@ Ride along on Ilse's restocking route.
 De Guldenvreter needs a coin from a dead currency. Three sources:
 - **Canal Bike Recovery** dive: one guilder in the silt (free, requires the dive)
 - **Frietomat** coin return: one guilder, discoverable by examining the coin slot after any purchase (free, requires one examine)
-- **Het Rode Winkeltje** (Roodelicht Row gift shop): Trijntje sells one for **12 Sovs**. It is not money and cannot be spent anywhere; she tells you so, unprompted, before selling it. She is not scamming anyone — she is pricing a novelty coin, and the bros buy it anyway, having been informed.
+- **Het Rode Winkeltje** (Roodelicht Row gift shop): Trijntje sells one for **12 SOVS**. It is not money and cannot be spent anywhere; she tells you so, unprompted, before selling it. She is not scamming anyone — she is pricing a novelty coin, and the bros buy it anyway, having been informed.
 
 ### 3. The Question Mark
 Find the Tier 5 machine. Requires the Canal Bike Recovery dive. Feeds "Fully Stocked."
@@ -256,7 +256,7 @@ Agent Havok uses the Café de Schaamte courtyard machine as a dead drop exactly 
 |---|---|---|
 | Register | Artisanal, curated, boutique, staffed | Industrial, anonymous, unstaffed, everywhere |
 | Comedy engine | Human awkwardness in front of a professional | Total absence of human reaction |
-| Price band | 10–100 Sovs | 2–10 Sovs |
+| Price band | 10–100 SOVS | 2–10 SOVS |
 | Hours | 11:00–22:00 | 24 hours |
 | Product overlap | Sections 1 and 4 only | Tiers 1–3 only |
 | Gift wrapping | Yes, three tiers | The machine does not know what a gift is |
@@ -328,7 +328,7 @@ Agent Havok uses the Café de Schaamte courtyard machine as a dead drop exactly 
 | `de_zilte_waarheid.md` | Haring-editie |
 | `cafe_de_schaamte.md` | Courtyard machine; Agent Havok dead drop |
 | `shamsterdam_museum_questionable_art.md` | Plastic hippo (Tier 5, 4%) |
-| `roodelicht_row_district.md` | 11 machines; the 1-Sov-toilet machine at De Bijna-Toiletten |
+| `roodelicht_row_district.md` | 11 machines; the 1-SOV-toilet machine at De Bijna-Toiletten |
 | `Interactables/vending_machines.md` | Parent prop-class file (currently placeholder) — the Veilig-o-Maat should be registered there when that file is built out |
 
 ---

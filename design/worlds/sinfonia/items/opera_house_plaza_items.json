@@ -151,7 +151,7 @@
       "effects": null,
       "value_sov": 2,
       "probability": 0.8,
-      "flavor_text": "Someone wished for love. You got 2 Sovs. Fair trade."
+      "flavor_text": "Someone wished for love. You got 2 SOVS. Fair trade."
     },
     {
       "item_id": "lucky_fountain_coin",

@@ -67,4 +67,4 @@ If no, rework it. Not polish it — rework the premise.
 
 This governs **every** character in the game — couchsurf hosts, vendors, quest-givers, bosses, and named ambient NPCs — plus locations, items and quests. The satire register and MA rating are defined separately in `Design/Character Profiles/bros_core_principle.md` and `Templates/location_validation_template.md`; this document defines the **weirdness floor**.
 
-**Cross-references:** `Templates/quest.md` → "What Makes It EarthBound" (previously an empty header; this file is its definition), `Templates/NPC_Profile_Template.md`, `Design/Character Profiles/bros_core_principle.md`.
+**Cross-references:** `design/legacy/retired_templates/quest.md` → "What Makes It EarthBound" (previously an empty header; this file is its definition), `design/templates/NPC_Profile_Template.md`, `design/characters/bros_core_principle.md`.

@@ -16,13 +16,13 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Operating an ornate absinthe cart built in 2015 and artificially aged, in a Belle Époque costume purchased from a theatrical supplier, performing an elaborate multi-step ritual that is functionally shot-taking with extra equipment, and charging up to 40 Sovs for strong alcohol with a story attached. He is a trained actor. He knows the Van Gogh claim is nonsense, knows the thujone claim is nonsense, and knows exactly what the markup is. He performs the whole thing beautifully anyway, because the performance is the product and he is genuinely good at it.
+Operating an ornate absinthe cart built in 2015 and artificially aged, in a Belle Époque costume purchased from a theatrical supplier, performing an elaborate multi-step ritual that is functionally shot-taking with extra equipment, and charging up to 40 SOVS for strong alcohol with a story attached. He is a trained actor. He knows the Van Gogh claim is nonsense, knows the thujone claim is nonsense, and knows exactly what the markup is. He performs the whole thing beautifully anyway, because the performance is the product and he is genuinely good at it.
 
 ### What Bros Believe
 That they are drinking the banned drink of artists and madmen. That the ritual is ancient. That the green tint at the edges of their vision is the Green Fairy and not the green neon underlighting Emil installed under the cart. That they might, if they commit properly, hallucinate.
 
 ### The Comedy Gap
-Emil will tell you the truth if you ask directly and keep asking. His rare-honesty answers are all real: the science is debated, Hemingway drank many things, the costume is presentation. He never quite lies — he *embellishes historically*, which is a different craft and one he was trained in. And the moment the tourist stops pressing, he goes straight back into the performance, because they want him to, because the 25 Sovs was never for the alcohol.
+Emil will tell you the truth if you ask directly and keep asking. His rare-honesty answers are all real: the science is debated, Hemingway drank many things, the costume is presentation. He never quite lies — he *embellishes historically*, which is a different craft and one he was trained in. And the moment the tourist stops pressing, he goes straight back into the performance, because they want him to, because the 25 SOVS was never for the alcohol.
 
 ---
 
@@ -68,7 +68,7 @@ The costume is the character and it must read as *good theater*, not as a cheap 
 | Quietly candid | Answers honestly if pressed directly and persistently, then resumes the show without resentment |
 
 ### Internal Monologue
-> "He is going to ask about the hallucinations. He is *building up* to asking about the hallucinations, I can see it in his shoulders, and when he asks I will say the science is debated, which is true, and he will hear 'yes,' which is what he came for. Now — slow on the water. Slower. The louche is the whole show and everybody rushes the louche. There. *There.* Look at his face. That is twenty-five Sovs of face."
+> "He is going to ask about the hallucinations. He is *building up* to asking about the hallucinations, I can see it in his shoulders, and when he asks I will say the science is debated, which is true, and he will hear 'yes,' which is what he came for. Now — slow on the water. Slower. The louche is the whole show and everybody rushes the louche. There. *There.* Look at his face. That is twenty-five SOVS of face."
 
 ### Motivation
 Local theater pays nothing. Local tourism pays rent. He discovered that the craft transfers perfectly — a good pour is blocking, a good pitch is a monologue, and a tourist is an audience that has already bought a ticket. He is not bitter about the career pivot and he is not slumming; he is doing the work he trained for, nightly, to a full house, for money, which is more than the theater ever offered.
@@ -92,7 +92,7 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 
 > "In Debaucheryville, we understand the old ways. The ritual. The sugar, the water, the transformation. This is not just drinking — this is EXPERIENCE."
 
-> "You want to see what the artists saw? Feel what the poets felt? The fairy can show you... for 25 Sovs."
+> "You want to see what the artists saw? Feel what the poets felt? The fairy can show you... for 25 SOVS."
 
 **The History (embellished)**:
 > "1797, the recipe was created. In the mountains, originally, but WE understood it. We welcomed it. We perfected it."
@@ -135,7 +135,7 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 
 > "Why the costume? ...I am giving an experience. The experience includes... presentation."
 
-> "Is this worth 25 Sovs? ...you will remember this. You will tell people about this. Is THAT worth 25 Sovs?"
+> "Is this worth 25 SOVS? ...you will remember this. You will tell people about this. Is THAT worth 25 SOVS?"
 
 ### Sales Close
 *The glass delivered with a flourish, the flame optional, the timing exact:*
@@ -146,14 +146,14 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 
 ### If Player Declines / Alternative Path
 
-*Ordering the Sugar Cube Only (2 Sovs):*
+*Ordering the Sugar Cube Only (2 SOVS):*
 > "...just the sugar?" *(the only genuine deflation in his repertoire; achievement "Disappointer" fires and he remembers)*
 
 *Refusing the ritual / requesting the skip:*
 > "You want it faster. Of course. Faster." *(pours without ceremony; the drink is identical, the experience is not, and he lets that land without saying it)*
 
 *Asking whether it's a scam, on shift:*
-> "A scam is when you receive nothing. You are receiving —" *(gestures at the cart, the fog, the fountain, himself)* "— all of this. Also the alcohol. The alcohol is real, and it is strong, and it is 25 Sovs."
+> "A scam is when you receive nothing. You are receiving —" *(gestures at the cart, the fog, the fountain, himself)* "— all of this. Also the alcohol. The alcohol is real, and it is strong, and it is 25 SOVS."
 
 *Walking away mid-pitch:*
 > "Ah! No matter. The fairy is patient. The fairy is at this cart every night from six." *(returns to the pocket-watch beat with no visible drop in energy)*
@@ -167,7 +167,7 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 > "No more explaining. You know the spoon, you know the water, you know the wait. Do you know what most people never learn? The wait is the whole thing. The wait is what they are buying."
 
 *After 5 purchases ("Absinthe Regular"):*
-> "You have had every tier now except the Vintage, and the Vintage is 40 Sovs, and between us —" *(the smallest possible pause)* "— the Vintage is the Artist's Choice in a different bottle. I have told you that. I have never told anyone that. Order it anyway if you like, the bottle is genuinely beautiful."
+> "You have had every tier now except the Vintage, and the Vintage is 40 SOVS, and between us —" *(the smallest possible pause)* "— the Vintage is the Artist's Choice in a different bottle. I have told you that. I have never told anyone that. Order it anyway if you like, the bottle is genuinely beautiful."
 
 *If the player ordered Sugar Cube Only on a previous visit:*
 > "The sugar man returns. I have not forgotten. Nobody has ever ordered the sugar twice."
@@ -175,7 +175,7 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 *Found off-duty, post-cart hours ("Behind the Curtain") — the hat is off, the projection is gone:*
 > "Am I a con artist? I prefer 'experience architect.' The experience is real. The claims are... historical."
 
-> "They want the fairy to be real. I want them to believe the fairy is real. We meet in the middle, at 25 Sovs."
+> "They want the fairy to be real. I want them to believe the fairy is real. We meet in the middle, at 25 SOVS."
 
 > "My degree is in theater. Local theater pays nothing. Local tourism pays rent. The fairy pays very well."
 
@@ -214,13 +214,13 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 ### The Absinthe Tiers
 | Item | Price | Strength | SP Effect | Status Effect | Emil's Pitch |
 |------|-------|----------|-----------|---------------|--------------|
-| Tourist Green | 8 Sovs | 55% | -10 SP | Absinthe Buzzed (light) | "A gentle introduction" |
-| Bohemian Standard | 12 Sovs | 65% | -20 SP | Absinthe Buzzed | "The traditional experience" |
-| Artist's Choice | 18 Sovs | 70% | -30 SP | Absinthe Buzzed (strong) | "As Hemingway preferred" |
-| **The Green Fairy Special** | 25 Sovs | 70% + ritual | -40 SP | Green Fairy Confusion | "The complete experience" |
-| Absinthe Shot Flight | 30 Sovs | Mixed | -50 SP | Guaranteed Confusion | "For the committed" |
-| "Vintage" Reserve | 40 Sovs | 70% | -35 SP | Confusion + story | "Very limited. Very special." |
-| Sugar Cube Only | 2 Sovs | 0% | None | Disappointment | "...just the sugar?" |
+| Tourist Green | 8 SOVS | 55% | -10 SP | Absinthe Buzzed (light) | "A gentle introduction" |
+| Bohemian Standard | 12 SOVS | 65% | -20 SP | Absinthe Buzzed | "The traditional experience" |
+| Artist's Choice | 18 SOVS | 70% | -30 SP | Absinthe Buzzed (strong) | "As Hemingway preferred" |
+| **The Green Fairy Special** | 25 SOVS | 70% + ritual | -40 SP | Green Fairy Confusion | "The complete experience" |
+| Absinthe Shot Flight | 30 SOVS | Mixed | -50 SP | Guaranteed Confusion | "For the committed" |
+| "Vintage" Reserve | 40 SOVS | 70% | -35 SP | Confusion + story | "Very limited. Very special." |
+| Sugar Cube Only | 2 SOVS | 0% | None | Disappointment | "...just the sugar?" |
 
 ### The Ritual (included with The Green Fairy Special)
 1. **The Selection** — the bottle presented with ceremony
@@ -254,7 +254,7 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 - **Examining the absinthe fountains**: Ornate, Instagram-ready, and **mostly decorative** — they are not plumbed into the service. He has never claimed they were.
 - **Examining the glasses**: Small, in a way that makes the pour look larger. This is a deliberate specification and it is the single most effective object on the cart.
 - **The pocket watch**: Genuinely functional and genuinely old — the one authentic antique in the entire setup, and he never mentions it.
-- **Tipping him**: Triggers the Tip Accept Bow, a full theatrical bow, and +Bravado. He gives the bow the same commitment he gives the 40 Sovs pour.
+- **Tipping him**: Triggers the Tip Accept Bow, a full theatrical bow, and +Bravado. He gives the bow the same commitment he gives the 40 SOVS pour.
 - **The "Vintage" Reserve bottle**: Beautiful. Genuinely beautiful. The contents, per his own late-game admission to a regular, are the Artist's Choice.
 
 ---
@@ -269,7 +269,7 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 | Věra Novotná (Midnight Munchies) | His customers buy her coffee supplies at 5 AM. She puts the change directly into their hand |
 | Backpack Girl Who Never Left (Absinthe Arcade) | Arcade neighbor. She has watched the pitch several thousand times and has never bought anything |
 | The Believer / The Skeptic's Companion / The Instagram Ritualist / The First-Timer (Nervous) | His four recurring customer archetypes. He can identify which one he is dealing with before they speak |
-| The Absinthe Veteran (local) | An actual Czech customer who buys the same product at a shop for 12 Sovs and finds the cart hilarious. Emil has never once objected to him watching |
+| The Absinthe Veteran (local) | An actual Czech customer who buys the same product at a shop for 12 SOVS and finds the cart hilarious. Emil has never once objected to him watching |
 | Token Goblin (Shadow Exchange) | Arcade token economics. Emil takes cash only and finds the near-currency trade baffling |
 
 ### Territory / Social Dynamics
@@ -443,7 +443,7 @@ Czech, but **theatrically Czech** — a trained actor deliberately thickening hi
 - [x] **Focus on city-specific cultural exploitation instead** — absinthe mythology marketing, tourist experience commodification, and the Absinthe Arcade's concentrated grift ecology
 
 ### Satirical Target Verification
-- [x] Targets tourist/frat bro behavior (paying 25 Sovs to believe something, mistaking green neon for a hallucination, wanting the banned-artists' drink), NOT local culture or ethnicity
+- [x] Targets tourist/frat bro behavior (paying 25 SOVS to believe something, mistaking green neon for a hallucination, wanting the banned-artists' drink), NOT local culture or ethnicity
 - [x] NPC is a savvy operator — a trained actor running a successful one-man venue with real craft — not a villain or a stereotype. The Absinthe Veteran (local) is present specifically to establish that locals see through it and find it funny
 - [x] Humor targets the tourism industry, explicitly not Czech culture or responsible drinking, per the source file's stated sensitivity constraint
 

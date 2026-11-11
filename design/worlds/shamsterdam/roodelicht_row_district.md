@@ -134,7 +134,7 @@ Bins, delivery bays, a fire door, a kettle, a smoking spot, and **DE MUUR**.
 
 ## THE BUFFOON DELUSION FRAME
 
-*(Required by `Templates/location_validation_template.md`, refined by `Design/Character Profiles/bros_core_principle.md`.)*
+*(Required by `design/templates/location_validation_template.md`, refined by `design/characters/bros_core_principle.md`.)*
 
 **The delusion is about themselves, never about what Europe is.** They are completely right about what this district is. They are completely wrong about what they are.
 
@@ -301,7 +301,7 @@ Every operator here has taken one narrow thing and pursued it to a deranged extr
 | **Bathing** | Het Warme Bad | Griet has a theory of towels. It has four rules. She will deliver all four. |
 | **Food** | Frietkot De Vette Vinger | Dirkje's sauce has twenty-one ingredients and one decision she made in 2004. |
 | **Merchandising** | Het Rode Winkeltje | Trijntje hand-writes the shelf cards. They are the filthiest text in Shamsterdam. |
-| **Facilities** | De Bijna-Toiletten | A 1-Sov turnstile that has defeated more men than the rest of the street combined. |
+| **Facilities** | De Bijna-Toiletten | A 1-SOV turnstile that has defeated more men than the rest of the street combined. |
 | **Enforcement** | Joris | A municipal officer who has decided he is an action hero and has requested a horse for nine years. |
 | **Aftercare** | De Kliniek van Achterom | Roosmarijn writes her own leaflets. One of them has never been taken. |
 
@@ -330,9 +330,9 @@ Fifteen stages. Each caused by the previous one. **No stage resolves.** Stages m
 | 8 | **De Zweetkelder** — nine steps down, Fenna's fourth rule **[WOMEN]** | **Down A Shirt.** Rejection rungs 3–4. **Twenty-Twos #3** — the women simply turn around. |
 | 9 | **Casa Rosé** *(existing)* — the appointment lands | Late, Encumbered, ponchoed, one shirt down. **Hard cut. Hold on aftermath.** |
 | 10 | **Frietkot De Vette Vinger, 03:20** — Dubbele Vinger, eaten sitting down **[BODY]** | Bradley says "I've got a stomach of iron." He is the fifteenth. **Fried At Three.** |
-| 11 | **Het Warme Bad** — the last column of the list **[BODY]** | 40 Sovs plus towels. **Hard cut.** Applies **Fried At Three** stacking and **Not Twenty-Two Any More**. No STD is applied here — `the_herp` is the game's only STD, it is optional and may not be present at all, and this district never adds another. |
+| 11 | **Het Warme Bad** — the last column of the list **[BODY]** | 40 SOVS plus towels. **Hard cut.** Applies **Fried At Three** stacking and **Not Twenty-Two Any More**. No STD is applied here — `the_herp` is the game's only STD, it is optional and may not be present at all, and this district never adds another. |
 | 12 | **The Fuse detonates + Fried At Three compounds** | Both engines fire simultaneously at the worst scheduled moment. Cartoonish, escalating, fade to black. **Twenty-Twos #4** pass at a jog. |
-| 13 | **De Bijna-Toiletten** — 1 Sov, no change, one crate, one turnstile | The great leveller. The district's most physical set piece. |
+| 13 | **De Bijna-Toiletten** — 1 SOV, no change, one crate, one turnstile | The great leveller. The district's most physical set piece. |
 | 14 | **The Nine Steps, going up, 04:10 [BODY]** | The cellar stairs finish all three. Chadwick films it and falls asleep doing so. **Not Twenty-Two Any More.** |
 | 15 | **Dawn** — Achterom, 05:40 | Bakery. Clinic next door. The leaflet nobody takes. **Twenty-Twos #5**, jogging. |
 
@@ -463,18 +463,18 @@ Trijntje hand-writes every shelf card in ballpoint on yellow card and tapes it u
 
 | Item | Price | Shelf card *(verbatim, her hand)* |
 |---|---|---|
-| **District Passport** | 9 Sovs | *"Nine stamps. It is the loyalty card in a nicer cover and I am not going to pretend otherwise to a grown adult."* |
-| **"I DIDN'T GO IN" t-shirt** | 22 Sovs | *"Nine years best seller. Not one person who has ever bought this shirt didn't go in."* |
-| **"I WENT IN TWICE" t-shirt** | 26 Sovs | *"Four Sovs more. Sells one in forty. Those forty are my favourite customers and they know it."* |
-| **De Grote Sleutelhanger** *(keyring)* | 6 Sovs | *"It is a keyring. It goes on keys. That is the whole of what it does, love, whatever you are currently thinking."* |
-| **Novelty candle** | 14 Sovs | *"It is a candle. You have looked at it. You have now looked at it twice. That's fourteen Sovs."* |
-| **Bonbons van de Buurt** *(box of 12)* | 12 Sovs | *"Twelve pieces, six shapes. Two of the shapes are the same shape and one of them is a duck. Nobody has ever asked me about the duck."* |
-| **Tea towel, district map** | 11 Sovs | *"The map is accurate. Nobody has ever bought it for the map."* |
-| **Postcard of the bin** | 2 Sovs | *"The bin. Second most photographed object on the street. Forty a week. I have made my peace with it."* |
-| **"MY MATE WENT TO SHAMSTERDAM AND ALL I GOT WAS THIS SHIRT AND A DETAILED ACCOUNT"** | 19 Sovs | *"Bought by the mate. Never by the man. Every single time it is the mate. Ask yourself why."* |
-| **A guilder (defunct, pre-Sovs)** | 12 Sovs | *"It is not money. You cannot spend it anywhere. People buy it anyway."* (Cross-ref: `shamsterdam_condom_machines.md` → The Guilder Problem.) |
-| **Branded poncho, "Roodelicht Row™"** | 6 Sovs | *"Also the nine-stamp reward. Some of you will buy one and then earn one. I stopped finding that funny and started finding it interesting."* |
-| **Novelty pen** | 3 Sovs | *"Nothing happens when you tilt it. It is a pen. They tilt it for four minutes and come back and I say: it is a pen."* |
+| **District Passport** | 9 SOVS | *"Nine stamps. It is the loyalty card in a nicer cover and I am not going to pretend otherwise to a grown adult."* |
+| **"I DIDN'T GO IN" t-shirt** | 22 SOVS | *"Nine years best seller. Not one person who has ever bought this shirt didn't go in."* |
+| **"I WENT IN TWICE" t-shirt** | 26 SOVS | *"Four SOVS more. Sells one in forty. Those forty are my favourite customers and they know it."* |
+| **De Grote Sleutelhanger** *(keyring)* | 6 SOVS | *"It is a keyring. It goes on keys. That is the whole of what it does, love, whatever you are currently thinking."* |
+| **Novelty candle** | 14 SOVS | *"It is a candle. You have looked at it. You have now looked at it twice. That's fourteen SOVS."* |
+| **Bonbons van de Buurt** *(box of 12)* | 12 SOVS | *"Twelve pieces, six shapes. Two of the shapes are the same shape and one of them is a duck. Nobody has ever asked me about the duck."* |
+| **Tea towel, district map** | 11 SOVS | *"The map is accurate. Nobody has ever bought it for the map."* |
+| **Postcard of the bin** | 2 SOVS | *"The bin. Second most photographed object on the street. Forty a week. I have made my peace with it."* |
+| **"MY MATE WENT TO SHAMSTERDAM AND ALL I GOT WAS THIS SHIRT AND A DETAILED ACCOUNT"** | 19 SOVS | *"Bought by the mate. Never by the man. Every single time it is the mate. Ask yourself why."* |
+| **A guilder (defunct, pre-SOVS)** | 12 SOVS | *"It is not money. You cannot spend it anywhere. People buy it anyway."* (Cross-ref: `shamsterdam_condom_machines.md` → The Guilder Problem.) |
+| **Branded poncho, "Roodelicht Row™"** | 6 SOVS | *"Also the nine-stamp reward. Some of you will buy one and then earn one. I stopped finding that funny and started finding it interesting."* |
+| **Novelty pen** | 3 SOVS | *"Nothing happens when you tilt it. It is a pen. They tilt it for four minutes and come back and I say: it is a pen."* |
 
 - **NPC**: Trijntje
 
@@ -527,7 +527,7 @@ Teun starts his stopwatch **before** dealing with any of it, narrates his own at
 - The instant a group satisfies a rule, she adds another. She is not stalling. She is delighted.
 - **NPC**: Fenna
 
-**Cascade stage 8 [WOMEN]**: matching shirts, matching ponchos, one crate. Fenna reads all of it in one look, invents rule four on the spot, and the bros comply instantly and enthusiastically because they came here to do things. **All three shirts go into the shirt check at 3 Sovs each and are never seen again.** Applies **Down A Shirt**, which persists into Casa Rosé, which is the point.
+**Cascade stage 8 [WOMEN]**: matching shirts, matching ponchos, one crate. Fenna reads all of it in one look, invents rule four on the spot, and the bros comply instantly and enthusiastically because they came here to do things. **All three shirts go into the shirt check at 3 SOVS each and are never seen again.** Applies **Down A Shirt**, which persists into Casa Rosé, which is the point.
 
 Inside: rejection rungs 3 and 4. **Twenty-Twos #3** — Pilsner approaches two women; the women turn around and resume a conversation with men who are not aware a competition took place. Pilsner blames the music, at volume, to Bradley, who is sitting on a crate holding his back.
 
@@ -549,7 +549,7 @@ A hatch in a wall with a heat lamp and a queue at every hour after midnight. Dir
 > **AT THIS HOUR, PLEASE NOTE:**
 > The tray is not a plate. **The tray is a tray.** It will fold. It has always folded.
 > **Eat it standing up.** Sitting down at this hour is how it ends up on the poncho.
-> If you are about to tell me you have a stomach of iron: you are the fourteenth tonight, I have watched every one of you, and I will still take your twelve Sovs.
+> If you are about to tell me you have a stomach of iron: you are the fourteenth tonight, I have watched every one of you, and I will still take your twelve SOVS.
 
 - **NPC**: Dirkje
 
@@ -580,14 +580,14 @@ The far end of the far end. This is where Rutger has been pointing all night.
 - Griet is the district's foremost towel authority and considers every other aspect of the venue beneath her notice and somebody else's department. Ask her anything and you receive the towel theory.
 - **NPC**: Griet
 
-**Cascade stage 11 [BODY]**: the final column of the list, delivered in full, on schedule, at 40 Sovs a head plus towels, while Encumbered, ponchoed, one shirt down and one back gone. Bradley attempts to bring the crate in; rule one is cited. **Hard cut.**
+**Cascade stage 11 [BODY]**: the final column of the list, delivered in full, on schedule, at 40 SOVS a head plus towels, while Encumbered, ponchoed, one shirt down and one back gone. Bradley attempts to bring the crate in; rule one is cited. **Hard cut.**
 
 Hold on the aftermath: three men in the street at 04:00, three towels they have not returned, one poncho on backwards, and a receipt itemising **nine towels.** No STD is applied — this district never causes one, and `the_herp` may not even be present (optional sidequest). What they are carrying out of here is entirely self-inflicted and entirely muscular. See Status Effects.
 
 ### 11. De Roze Rondleiding ("The Pink Guided Tour")
 **Zone 2 assembly, Zone 1 route | Walking tour | Ambient obstacle**
 
-25 Sovs, 45 minutes, on the hour, numbered paddles, headsets, fully booked every hour of every day.
+25 SOVS, 45 minutes, on the hour, numbered paddles, headsets, fully booked every hour of every day.
 
 Nienke runs a walking tour the way other people run a stadium. Headset mic at parade-ground volume, call-and-response, a mandatory catchphrase she will make the group repeat if it was not loud enough, and her own bootleg merchandise sold off the paddle in defiance of the tour company's written policy and its written policy about the written policy.
 
@@ -603,7 +603,7 @@ Nienke runs a walking tour the way other people run a stadium. Headset mic at pa
 ### 12. De Bijna-Toiletten ("The Almost-Toilets")
 **Zone 1/2 boundary | Pay toilets | Cascade stage 13**
 
-1-Sov turnstile. Four cubicles. The longest queue in the district at all hours, containing every demographic simultaneously. **The great leveller.**
+1-SOV turnstile. Four cubicles. The longest queue in the district at all hours, containing every demographic simultaneously. **The great leveller.**
 
 **Signage** *(verbatim)*:
 > `1 SOV`
@@ -611,8 +611,8 @@ Nienke runs a walking tour the way other people run a stadium. Headset mic at pa
 > `CHANGE MACHINE OUT OF ORDER — SORRY` *(dated and signed. The date is four years ago. The signature is illegible and possibly two people.)*
 > `THE ATTENDANT CANNOT CHANGE A NOTE, CANNOT LEND YOU A SOV, AND CANNOT BE MOVED BY YOUR STORY. THIRTY THOUSAND PEOPLE HAVE TOLD HER A STORY.`
 
-- A Veilig-o-Maat is mounted **inside**, so reaching a 2-Sov machine costs 3 Sovs. Nobody has ever raised this. Cross-ref `shamsterdam_condom_machines.md`.
-- **Cascade stage 13**: The Fuse has detonated, the chips have detonated, the schedule is a ruin, the crate does not fit through a turnstile, and a man needs one Sov. **Peak physical farce.** Nobody helps and nobody is cruel; everybody is simply already in the queue and having a better night.
+- A Veilig-o-Maat is mounted **inside**, so reaching a 2-SOV machine costs 3 SOVS. Nobody has ever raised this. Cross-ref `shamsterdam_condom_machines.md`.
+- **Cascade stage 13**: The Fuse has detonated, the chips have detonated, the schedule is a ruin, the crate does not fit through a turnstile, and a man needs one SOV. **Peak physical farce.** Nobody helps and nobody is cruel; everybody is simply already in the queue and having a better night.
 
 ### 13. De Kliniek van Achterom ("The Achterom Clinic")
 **Zone 3 | Walk-in clinic | Cascade stage 15 | The payoff of Engine 1**
@@ -669,7 +669,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 - **Running bit**: "Would you like two?" — deployed on everything, including a bottle of water and, once, an apology.
 
 **Dialogue**:
-- "Yes. That's available. Half ten, ninety Sovs." *(Hendrik is already going.)* "Would you like two?"
+- "Yes. That's available. Half ten, ninety SOVS." *(Hendrik is already going.)* "Would you like two?"
 - "Also yes." *(beat)* "Also yes. Also yes. Hendrik, don't stop."
 - "You can ask me for anything. Nine years. You will not find the bottom of it and it is genuinely one of my favourite things to watch people attempt."
 - *(pointing at the whiteboard, entirely sincere)* "Nineteen. One man. Eleven minutes. Two thousand and nineteen. He was Belgian. I think about him more than I think about most of my family."
@@ -706,7 +706,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 - **Running bit**: the upsell ladder. He physically cannot leave a customer on a lower tier.
 
 **Dialogue**:
-- "Right. What are you actually trying to *achieve*? Because there's a version of that which is significantly better and it's forty Sovs more."
+- "Right. What are you actually trying to *achieve*? Because there's a version of that which is significantly better and it's forty SOVS more."
 - "That one's the Middenmoot. Genuinely fine. Most people are a Middenmoot person and there's no shame in it." *(beat)* "You're not a Middenmoot person."
 - "Factory-trained. Two days. There was a buffet." *(At least four times per conversation, never in response to a question.)*
 - "Two-person lift, that one. Crated. Comes with a stand." *(beat, entirely earnest)* "It comes with a *stand*, sir."
@@ -738,7 +738,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 - **Running bit**: the campaign. He works it into everything. He has a folder.
 
 **Dialogue**:
-- "Four Sovs. They're all the same shot. The names are for you."
+- "Four SOVS. They're all the same shot. The names are for you."
 - "The slap comes with it. No, you can't have it without the slap. I've heard the question. I've heard it from better men than you."
 - *(sliding over a Grote Teleurstelling, unrequested)* "You said you were fine." *(beat)* "Rule four. It's free. That's how much we cared."
 - "There is a shot in this country that should be *the* shot of this country, and I invented it, and there is a folder." *(He is already reaching for the folder.)*
@@ -792,7 +792,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 - "Don't wave it. It's not a flag. I have watched grown men discover the flag idea independently, on the same night, in the same room, twice."
 - "Do not swap towels. I'll know. I always know. I've known since 1996 and I have never once had to explain how."
 - "The chute. Not the bin. Not the bench. **Not the plant.** The plant has been through enough."
-- *(entirely without judgement, mid-transaction)* "Third towel? Six Sovs. No questions." *(She does not look up. She has never looked up.)*
+- *(entirely without judgement, mid-transaction)* "Third towel? Six SOVS. No questions." *(She does not look up. She has never looked up.)*
 - *(to Bradley, at the door, with the crate)* "Rule one. Worn, carried, or surrendered." *(beat)* "That is not a towel, love."
 
 ### Dirkje — Frietkot De Vette Vinger
@@ -804,7 +804,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 **Dialogue**:
 - "One portion. There is no small. There has never been a small and there is not going to be a small tonight because you asked nicely."
 - "Twenty-one ingredients. One of them is a decision I made in 2004. No, I will not tell you which."
-- "Mayonnaise is one Sov. It's fine. It's what a coward orders and I'll sell it to you with a smile, love."
+- "Mayonnaise is one SOV. It's fine. It's what a coward orders and I'll sell it to you with a smile, love."
 - "Stand up. **Stand up to eat it.** The sign is there. The sign has been there nineteen years."
 - *(Bradley, sitting, announcing his stomach of iron)* "**Fifteen.**" *(She writes nothing down. She simply says the number and hands him the tray.)*
 - "The tray is not a plate. The tray is a tray. It folds. It has always folded. I did not design the tray."
@@ -817,10 +817,10 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 - **Running bit**: she explains each product's actual use case in vastly more detail than the customer wanted, at conversational volume, calling them "love" throughout.
 
 **Dialogue**:
-- "Passport's nine. It's the stamp card in a nicer cover and I'm not going to insult you at nine Sovs."
+- "Passport's nine. It's the stamp card in a nicer cover and I'm not going to insult you at nine SOVS."
 - "That one? Right." *(then ninety seconds of extremely specific, entirely unhurried product guidance delivered in the tone of a woman describing a jam)*
 - "The shirt says 'I DIDN'T GO IN.' Best seller nine years. Not one person who bought that shirt didn't go in."
-- "There's a version that says 'I WENT IN TWICE.' Four Sovs more. One in forty. Those forty are my *people*, love."
+- "There's a version that says 'I WENT IN TWICE.' Four SOVS more. One in forty. Those forty are my *people*, love."
 - "The tea towel's got the actual map on it. Nobody has ever bought it for the map."
 - "The guilder's twelve. It's not money. You can't spend it anywhere. People buy it anyway and I've stopped trying to talk them out of it."
 - "The pen's three. Nothing happens when you tilt it. It's a pen. They tilt it four minutes, come back, and I say: it's a pen."
@@ -841,7 +841,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 - *(headcount, mid-route, not slowing)* "Twenty-two." *(beat)* "They'll be fine. They've got a map on a tea towel."
 - *(paddle origin, v1)* "A door." *(v2)* "A Frenchman." *(v3)* "I'd rather not." *(v4)* "Same Frenchman, different door." **Never resolve this.**
 - *(off-mic, to another guide)* "Four groups. Two collisions. One crate." *(beat)* "One *crate*, Marijn."
-- *(selling a keyring off the paddle mid-tour without breaking narration)* "—six Sovs, cash, don't tell the office—and if you look UP—"
+- *(selling a keyring off the paddle mid-tour without breaking narration)* "—six SOVS, cash, don't tell the office—and if you look UP—"
 
 ### Joris — Civil Enforcement Officer
 - **NPC ID**: `shamsterdam_npc_joris_enforcement_01`
@@ -851,7 +851,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 
 **Dialogue**:
 - *(slow approach, sunglasses, 23:00)* "Sir." *(beat, held far too long)* "**Municipal.**"
-- "You've photographed a person. Ninety-five Sovs."
+- "You've photographed a person. Ninety-five SOVS."
 - *(Chadwick asks for a better angle)* *(long pause)* "...From the left?" *(He does it again. He is thrilled. He fines him twice.)*
 - "Nine years I've asked for a horse. Nine years. There is a *budget*. There is a horse in that budget with my name on it and somebody keeps moving it."
 - "Fifty-one signs in four hundred metres, nine languages. I counted them. For a report. Nobody read the report."
@@ -888,7 +888,7 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 - "The tour company makes more per head than we do. The gift shop makes more per head than the tour company." *(sips)* "Trijntje is the richest woman on this street and she writes her own signs in biro. Work that one out."
 - *(the notebook, tapped, never opened)* "It's all in here." *(taps her temple)* "That's a prop. I like the weight of it."
 - "The photography thing isn't modesty. People live here and I'd rather not be on a stag party's phone. Same reason you'd mind." *(Flat fact. Moves straight on.)*
-- *(Red Light Secrets complete)* "You asked the right people in the right street. Most never get past the corridor." *(beat)* "Your friend with the light loses that phone at ten past one. I'll take five Sovs if you fancy it."
+- *(Red Light Secrets complete)* "You asked the right people in the right street. Most never get past the corridor." *(beat)* "Your friend with the light loses that phone at ten past one. I'll take five SOVS if you fancy it."
 - *(if the player asks how she does it)* "Practice." *(beat, entirely straight)* "Or I'm psychic. I've never bothered to settle it and it's been very good for business."
 
 **Authoring rules**: never in danger, never rescued, never the target of a bro's attention that lands, never explains how she knows anything, **never confirms or denies the psychic thing**, and **never once mentions their age.**
@@ -1004,7 +1004,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 | **Fried At Three** | Greasy food after 03:00 | **Engine 1 — the stomach.** Two-hour delayed effect, deliberately timed to co-fire with The Fuse at stage 12. **Stacks with `leemans_doner_palace.md`, `kapsalon_koning.md` and `frietomat.md`** — the bros hit three in one night. Cartoonish, physical, escalating, fade to black. |
 | **Not Twenty-Two Any More** | The nine steps, upward, at 04:10 | **Engine 1 — the stamina.** -Speed, -Stamina, forced rest beats, a stair-climb that takes four times as long as the descent. **Player-facing name only. No character ever says it, sees it, or reads it aloud.** |
 | *(no new STD)* | — | **AUTHOR RULING: this district introduces no sexually transmitted status effect.** `the_herp` is the game's one and only STD — caught mandatorily at the Bacchanus Beach outbreak in Debaucheryville, immediate and unmissable, permanent, never cured, and suppressed by the optional Gold Circle Coin in Sinfonia. **Never assume the party has caught it or cured it** — both steps are player choices. A second infection would make STDs ambient background instead of THE event and would undercut the Coin's payoff. **All rejection in this district is driven by the age engine, never by the Herp.** |
-| **Got Exactly What He Asked For** | Complete any Cascade stage | Signature status. +Bravado, +Sov loss, one permanent entry on the retelling ladder. |
+| **Got Exactly What He Asked For** | Complete any Cascade stage | Signature status. +Bravado, +SOV loss, one permanent entry on the retelling ladder. |
 | **Stamped** | Loket transactions | Loyalty garnish. Nine stamps → poncho. No discount ever. They will later describe the poncho as "comped." |
 
 **Cut and not to be reinstated**: *Corridor Boredom*, *Unacknowledged*, *Sober Terror*, *Full Swagger*, and the application of *Red Light Shame* in this district. All encoded anticlimax, fear, or shame. `Red Light Shame` remains valid city-wide in `shamsterdam.md` for other contexts.
@@ -1015,7 +1015,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 - **The Rope** (De Zweetkelder): satisfy Fenna's dress code. Every solution generates a new rule. **Cannot be failed** — only paid for, in clothing.
 - **The Nine Steps** (De Zweetkelder, 04:10): a genuine, timed, physical climb encounter. Down is instant. Up is a set piece. **The only encounter in the district that is harder the later it happens.**
 - **The Bottleneck** (two Paddle Columns): hard traffic stop. With Encumbered, a Schedule-breaker.
-- **The Turnstile** (Cascade stage 13): 1 Sov, no change, one crate, one man in crisis. Pure physical farce.
+- **The Turnstile** (Cascade stage 13): 1 SOV, no change, one crate, one man in crisis. Pure physical farce.
 
 ### Encounters
 | Encounter | Type | Notes |
@@ -1109,7 +1109,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 | `shamsterdam.md` | District entry; district-doc pointer |
 | `casa_rose_erotic_theater.md` | Cascade stage 9; Zilver/Goud inclusion; Bogdan vs. the desk |
 | `condomerie_het_gulden_vlies.md` | Femke declines the Goud package; **the bros walk past four times and never go in** |
-| `shamsterdam_condom_machines.md` | 11 machines; the 1-Sov-toilet unit; Ilse's route; The Guilder Problem |
+| `shamsterdam_condom_machines.md` | 11 machines; the 1-SOV-toilet unit; Ilse's route; The Guilder Problem |
 | `leemans_doner_palace.md`, `kapsalon_koning.md`, `frietomat.md` | **Fried At Three stacking partners.** Three greasy fixtures in one night, cumulative, never connected by anyone |
 | `voetgangerstunnel.md` | Exit 7 emergence; Mevrouw Jansen promoted to district ambient and given the scoring bit |
 | `de_groene_gids.md` | Delayed-effect system — The Fuse and Fried At Three both use the two-hour mechanic and are timed to co-fire |
@@ -1155,7 +1155,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 - [x] **Bros never achieve self-awareness** — they got precisely what they ordered, could not survive any of it, and will describe it as mastery forever
 - [x] **Retelling escalates independently and contradicts by rung 3** — nobody ever calls it
 - [x] **No real people, businesses or street names**
-- [x] **No crypto elements** — Sovs, cards, coins, one obsolete guilder
+- [x] **No crypto elements** — SOVS, cards, coins, one obsolete guilder
 - [x] **Names grep-verified** — Saskia, Bregje, Teun, Nienke, Sjoerd, Wietse, Trijntje, Joris, Rutger (prior pass) and Bertus, Fenna, Griet, Dirkje, Roosmarijn (this pass): 0 prior hits in `_sorting/`
 - [x] **Venustempel not edited** — referenced only as relocated
 

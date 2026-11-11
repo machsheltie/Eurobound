@@ -18,7 +18,7 @@
 
 ### What He's Actually Doing
 
-Running a themed pub with a 10 Sovs cover charge, a laminator, and a commitment problem. Cathal Murphy spent twelve years as an adjunct lecturer, was let go, bought a failing gimmick pub in the academic quarter in 2011, and turned it into the most profitable bit in Publandia by refusing — for fifteen straight years — to acknowledge that it is a bit.
+Running a themed pub with a 10 SOVS cover charge, a laminator, and a commitment problem. Cathal Murphy spent twelve years as an adjunct lecturer, was let go, bought a failing gimmick pub in the academic quarter in 2011, and turned it into the most profitable bit in Publandia by refusing — for fifteen straight years — to acknowledge that it is a bit.
 
 The ivy is plastic. The portraits are stock photos. The books are hollow props. The Latin is mostly wrong and he knows exactly which parts. The diplomas are printed that morning on a machine in the back office. He charges tuition, assesses coursework with real rigour (⚠ AUTHOR-REVIEW: no grading apparatus exists anymore — Trinity stopped grading, author ruling 2026-08-05 — but his standards did not soften; he still tells people flatly when they haven't cleared the bar), and confers a Bachelor of Beverage Sciences with the exact bearing of a man who used to mark first-year essays, because he is.
 
@@ -32,7 +32,7 @@ All three will put the diploma on a wall. One of them will put it on LinkedIn.
 
 ### The Comedy Gap
 
-Cathal never lies. Not once, anywhere in his dialogue. He says "tuition," and it is a cover charge, and the sign says the cover charge is 10 Sovs. He says "our distinguished faculty," and Prof. Cian MacCarthy is standing there in a party-store robe with the tag still on. He says the standards are rigorous and then passes a man who finished a pint in one minute fifty.
+Cathal never lies. Not once, anywhere in his dialogue. He says "tuition," and it is a cover charge, and the sign says the cover charge is 10 SOVS. He says "our distinguished faculty," and Prof. Cian MacCarthy is standing there in a party-store robe with the tag still on. He says the standards are rigorous and then passes a man who finished a pint in one minute fifty.
 
 The bros supply every single piece of the delusion themselves. He supplies a laminator and a straight face. The satire lands on tourists who want to feel cultured while getting hammered — never on education, and never on the Irish literary heritage he can quote at length and genuinely loves.
 
@@ -121,11 +121,11 @@ Six 64x96 Dean states share the faculty sheet: Idle, Lecturing A (finger raised,
 
 ### Internal Monologue
 
-> "Freshman intake of three. The loud one will pass BEER one-zero-one on enthusiasm and fail SHOT one-ten inside four minutes, and he will blame the curve. The one with the camera wants a narrative more than a degree, so he will over-commit and injure himself in ENDUR three-ten. The quiet one — the quiet one is reading the course catalogue properly. He'll graduate top of the room and he won't understand why it moved him. It will move him. It always moves that one. Thirty Sovs at the door and a curriculum. God, but I love this job."
+> "Freshman intake of three. The loud one will pass BEER one-zero-one on enthusiasm and fail SHOT one-ten inside four minutes, and he will blame the curve. The one with the camera wants a narrative more than a degree, so he will over-commit and injure himself in ENDUR three-ten. The quiet one — the quiet one is reading the course catalogue properly. He'll graduate top of the room and he won't understand why it moved him. It will move him. It always moves that one. Thirty SOVS at the door and a curriculum. God, but I love this job."
 
 ### Motivation
 
-Publish or perish. He perished. Now he publishes diplomas, three hundred a week, on a machine that cost 400 Sovs, and the people receiving them are the first audience he has ever had that wanted to be there. The money is good. The money is not the reason. The reason is that a room full of people takes him seriously for the first time in his life, and he is not going to break character and lose it.
+Publish or perish. He perished. Now he publishes diplomas, three hundred a week, on a machine that cost 400 SOVS, and the people receiving them are the first audience he has ever had that wanted to be there. The money is good. The money is not the reason. The reason is that a room full of people takes him seriously for the first time in his life, and he is not going to break character and lose it.
 
 ---
 
@@ -137,7 +137,7 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 > "Welcome to Trinity of Pints. I am Dean Murphy. Your education begins now."
 
 **The fee**:
-> "Enrollment is 10 Sovs. This covers tuition, materials, and access to our distinguished faculty."
+> "Enrollment is 10 SOVS. This covers tuition, materials, and access to our distinguished faculty."
 
 **Sizing up the party**:
 > "I see potential in you. Let's see if you can live up to it. Academically speaking."
@@ -149,7 +149,7 @@ Publish or perish. He perished. Now he publishes diplomas, three hundred a week,
 > "Your textbook." *(a branded pint glass)* "Study materials are provided. We are not a cruel institution."
 
 **Returning graduate presenting a diploma**:
-> "Alumni rate. 5 Sovs. Welcome back, and mind the standards have not softened in your absence."
+> "Alumni rate. 5 SOVS. Welcome back, and mind the standards have not softened in your absence."
 
 ---
 
@@ -252,7 +252,7 @@ model is dead) and not as the stamp beat itself:*
 
 > "Students report improved cognitive function. They're wrong, but they FEEL smarter. Isn't that what education is for?"
 
-> "9 Sovs. Yes, that is above market for an Irish red. You are not paying for the ale, you are paying for the setting, and I have never claimed otherwise."
+> "9 SOVS. Yes, that is above market for an Irish red. You are not paying for the ale, you are paying for the setting, and I have never claimed otherwise."
 
 ---
 
@@ -289,7 +289,7 @@ model is dead) and not as the stamp beat itself:*
 ### If Player Declines
 
 **Refusing to pay the tuition**:
-> "Then you are a visitor, not a student. You may observe from the Great Hall. Observation is free. Participation is 10 Sovs."
+> "Then you are a visitor, not a student. You may observe from the Great Hall. Observation is free. Participation is 10 SOVS."
 
 **Refusing a course after enrolling**:
 > "Withdrawal is permitted. It is recorded, but it is permitted."
@@ -304,7 +304,7 @@ model is dead) and not as the stamp beat itself:*
 
 ### Callback Dialogue (Return Visits, Post-Graduation)
 
-> "The alumnus returns. 5 Sovs, and there is an Advanced Course list I do not show to freshmen."
+> "The alumnus returns. 5 SOVS, and there is an Advanced Course list I do not show to freshmen."
 
 > "You have completed every course in the catalogue. I am obliged to tell you there is nothing further. I am also obliged to tell you the bar is still open."
 
@@ -338,10 +338,10 @@ model is dead) and not as the stamp beat itself:*
 ### Enrollment
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Tuition (Cover Charge) | 10 Sovs | A 10 Sovs cover for a themed pub, plus a laminated card and a glass — roughly fair | "Enrolled" status, Student ID, one branded pint glass ("textbook"), access to all courses for the evening, graduation eligibility |
-| Alumni Rate | 5 Sovs | Fair | Reduced tuition on presentation of a previous diploma; Advanced Course access; reserved Great Hall seating |
-| Academic Amber (pint) | 9 Sovs | Above market for a 4.8% Irish red; he says so himself | +25 HP, +20 SP, "Scholar's Focus" (+3 INT, 30 min), 10% chance of "Pretentious" |
-| Diploma (printed) | Included | Costs him less than a Sov | Physical certificate, wall-mountable, LinkedIn-uploadable |
+| Tuition (Cover Charge) | 10 SOVS | A 10 SOVS cover for a themed pub, plus a laminated card and a glass — roughly fair | "Enrolled" status, Student ID, one branded pint glass ("textbook"), access to all courses for the evening, graduation eligibility |
+| Alumni Rate | 5 SOVS | Fair | Reduced tuition on presentation of a previous diploma; Advanced Course access; reserved Great Hall seating |
+| Academic Amber (pint) | 9 SOVS | Above market for a 4.8% Irish red; he says so himself | +25 HP, +20 SP, "Scholar's Focus" (+3 INT, 30 min), 10% chance of "Pretentious" |
+| Diploma (printed) | Included | Costs him less than a SOV | Physical certificate, wall-mountable, LinkedIn-uploadable |
 | Academic regalia hire (selfie spot) | Free | Free | Robe, mortarboard and diploma props for the Quad photo backdrop |
 
 ⚠ AUTHOR-REVIEW: **this ten-course catalog predates the 2026-08-05 Trinity redesign.** The
@@ -436,8 +436,8 @@ the venue file's Status Effects list).
 - **Enrollment**: Pure formality. He assesses the party and assigns nothing.
 - **Mid-curriculum**: His assessments sharpen. He starts using their names and their course codes together, which is when the bros begin to believe.
 - **Graduation**: The only moment his warmth is visible. He means the ceremony. Bradley notices and cannot explain why it affected him: *"I'm... proud? I didn't expect to feel genuine emotion at a fake graduation."*
-- **Alumni returns**: Advanced Courses, the 5 Sovs rate, and the four Private lines become reachable
-- **Post-main-quest**: Unchanged. Same robe, same desk, same 10 Sovs. The permanence is the point.
+- **Alumni returns**: Advanced Courses, the 5 SOVS rate, and the four Private lines become reachable
+- **Post-main-quest**: Unchanged. Same robe, same desk, same 10 SOVS. The permanence is the point.
 
 ---
 
@@ -483,7 +483,7 @@ the venue file's Status Effects list).
 ### Primary Quest
 - **Quest**: The redesigned Trinity of Pints sequence (`publandia_quest_trinity_graduation_01`)
 - **Role**: Quest giver, challenge host (THESIS DEFENSE 401), ceremony officiant, battle encounter (SECURE THE QUAD)
-- **Trigger**: Pay tuition (10 Sovs) and enroll; the four-course sequence runs in fixed order (PUB 115 → SONG 220 → GREEK 330 → THESIS DEFENSE 401), each round opened by a chugged beer — no course-credit accumulation, no grading
+- **Trigger**: Pay tuition (10 SOVS) and enroll; the four-course sequence runs in fixed order (PUB 115 → SONG 220 → GREEK 330 → THESIS DEFENSE 401), each round opened by a chugged beer — no course-credit accumulation, no grading
 - **Outcome**: ⚠ AUTHOR-REVIEW: complete the four-course sequence → Cathal's magnet cheat is exposed in THESIS DEFENSE 401 → the referee awards a default win → SECURE THE QUAD (Cathal + three professors) → graduation ceremony in The Quad → printed diploma → Trinity of Pints stamp applied by **the Brewmaster** (not Cathal) → "Graduate" status, Alumni Discount, Advanced Course access, and Academic Amber unlocked at both Trinity of Pints and The Blarney Trap. Full sequence: `design/quests/publandia/brewerytourpublandia.md`.
 
 ### Quest Gate Function
@@ -495,10 +495,10 @@ He also soft-gates the Advanced Course list behind Graduate status.
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Student ID (laminated) | On enrollment, 10 Sovs | Yes | Marks "Enrolled" status; required for all course access |
+| Student ID (laminated) | On enrollment, 10 SOVS | Yes | Marks "Enrolled" status; required for all course access |
 | Branded Pint Glass ("textbook") | On enrollment | Yes | Cosmetic inventory item; examine text is the faux-Latin motto, misprinted |
 | Diploma (B.B.S.) | On graduation | Yes | Proof of graduation; grants Alumni Rate on presentation; displayable |
-| Academic Amber | Post-graduation, 9 Sovs/pint | No (consumable) | +25 HP, +20 SP, "Scholar's Focus" +3 INT 30 min, 10% "Pretentious" risk |
+| Academic Amber | Post-graduation, 9 SOVS/pint | No (consumable) | +25 HP, +20 SP, "Scholar's Focus" +3 INT 30 min, 10% "Pretentious" risk |
 
 ⚠ AUTHOR-REVIEW: the Trinity of Pints Stamp and the Valedictorian Medal rows formerly here are
 removed — the stamp is acquired from the Brewmaster, not Cathal (see `npc_brendan_nolan.md`),
@@ -578,7 +578,7 @@ Educated Dublin, precise, unhurried, with the specific cadence of a man who has 
 | Comedy value preserved | ✅ |
 | Bros never achieve self-awareness | ✅ (Bradley feels something and cannot name it — that is the ceiling) |
 | World consistency (city names) | ✅ (Publandia only) |
-| Prices lifted from source location file | ✅ (10 Sovs tuition, 5 Sovs alumni, 9 Sovs Academic Amber) |
+| Prices lifted from source location file | ✅ (10 SOVS tuition, 5 SOVS alumni, 9 SOVS Academic Amber) |
 | Course catalog aligned to 2026-08-05 redesign | ⚠ PARTIAL — GPA/grading removed and flagged; the ten-course table itself is marked stale rather than replaced (see banner in Inventory/Services) |
 | Seamus reference resolved to Seamus O'Brien by full name | ✅ |
 | Magnet-cheat finale + SECURE THE QUAD pointer present | ✅ (2026-08-06 alignment pass) |
@@ -605,7 +605,7 @@ Educated Dublin, precise, unhurried, with the specific cadence of a man who has 
 
 ### ⚠️ CRYPTO CHECK
 - [x] **Crypto content conforms to `design/economy/economy_system.md`** — Cathal has none. Tuition, pints, and diplomas are cash/SOVS at the enrollment desk. No terminal, no kiosk, no coin.
-- [x] **NO automatic crypto assumptions** — correctly none. A man selling institutional legitimacy for 10 Sovs has no reason to touch the back-alley economy, and a "Trinity Token" would cheapen a fifteen-year bit into a cash-grab.
+- [x] **NO automatic crypto assumptions** — correctly none. A man selling institutional legitimacy for 10 SOVS has no reason to touch the back-alley economy, and a "Trinity Token" would cheapen a fifteen-year bit into a cash-grab.
 - [x] **Coins, kiosks, and certificates come from the master pool** — not applicable. Note that the *diploma* and the *Brewery Passport stamp* are physical props, not economy certificates, and must not be confused with the certificate system in the master pool.
 - [x] **The bros are never scam-aware** — they are not being scammed; the sign states the price, the small print states the standards may vary, and they will still list the B.B.S. on LinkedIn
 - [x] **Nothing winks** — verified line by line; Cathal's straightest lines are the funniest ones and none of them acknowledge an audience
@@ -614,7 +614,7 @@ Educated Dublin, precise, unhurried, with the specific cadence of a man who has 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the mark is the man who wants a degree in drinking so he can feel cultured; actual Irish education is never the joke and Cathal's own scholarship is treated as genuine
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a failed adjunct who built a better institution than the one that let him go, priced honestly and run rigorously
-- [x] Humor is affectionate mockery, not mean-spirited — the graduation is played completely straight because it genuinely means something to him and, briefly, to Bradley
+- [x] Humor is affectionate mockery — the graduation is played completely straight because it genuinely means something to him and, briefly, to Bradley
 
 ---
 

@@ -73,7 +73,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### Technical Notes:
 - Bike Path Glimpse scrolls horizontally (parallax layer) — cyclists pass at 3x tourist speed
 - Window Bell Display gets chrome shine sparkle overlay from effects sheet
-- Signage must remain legible at 50% mobile scale — minimum 10px cap height
+- Signage must remain legible at 50% scale — minimum 10px cap height
 
 ---
 
@@ -96,11 +96,11 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### The Bell Wall Arsenal (Tier Displays):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Tier 1 Display — The Pacifists | (0, 64) | 192x128 | Polite classic ding bells, 5-8 Sovs tags, gentle presentation |
-| Tier 2 Display — The Compromisers | (192, 64) | 192x128 | DING-DING bells, 10-15 Sovs, hopeful arrangement |
-| Tier 3 Display — The Asserters | (384, 64) | 192x128 | Dual-tone bells, 15-20 Sovs, serious mounting brackets |
-| Tier 4 Display — The Dominators | (576, 64) | 192x128 | Air horns and sirens, 20-25 Sovs, caged like ordnance |
-| Tier 5 Display — The Delusional | (768, 64) | 192x128 | "Smart bells," GPS units, 30 Sovs+, glowing app icons |
+| Tier 1 Display — The Pacifists | (0, 64) | 192x128 | Polite classic ding bells, 5-8 SOVS tags, gentle presentation |
+| Tier 2 Display — The Compromisers | (192, 64) | 192x128 | DING-DING bells, 10-15 SOVS, hopeful arrangement |
+| Tier 3 Display — The Asserters | (384, 64) | 192x128 | Dual-tone bells, 15-20 SOVS, serious mounting brackets |
+| Tier 4 Display — The Dominators | (576, 64) | 192x128 | Air horns and sirens, 20-25 SOVS, caged like ordnance |
+| Tier 5 Display — The Delusional | (768, 64) | 192x128 | "Smart bells," GPS units, 30 SOVS+, glowing app icons |
 
 ### Fixtures:
 | Element | Position | Size | Description |
@@ -129,7 +129,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### Technical Notes:
 - Bell Wall tier displays are separate sprites so individual tiers can highlight during selection
 - Map danger zones must carry hatching patterns in addition to color (colorblind rule)
-- Counter and Testing Area are interaction hotspots — 44px minimum touch zones
+- Counter and Testing Area are interaction hotspots — 44px minimum click zones
 
 ---
 
@@ -187,18 +187,18 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### Products (full inventory table coverage):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Classic Ding Bell (Tier 1) | (0, 0) | 32x32 | 5 Sovs — polite, ignored by all |
-| Assertive Bell (Tier 2) | (32, 0) | 32x32 | 12 Sovs — noticed by some |
-| Serious Dual-Tone (Tier 3) | (64, 0) | 32x32 | 15-20 Sovs — actual communication |
-| Tactical Air Horn (Tier 4) | (96, 0) | 48x32 | 22 Sovs — psychological warfare |
-| Smart Bell App (Tier 5) | (144, 0) | 32x32 | 35 Sovs — tech delusion, tiny glowing screen |
-| Bike Mirror | (176, 0) | 32x32 | 8 Sovs — see death coming |
-| Front Light | (208, 0) | 32x24 | 10 Sovs — legally mandatory, practically useful |
-| Rear Light | (0, 32) | 32x24 | 10 Sovs — red, always red, not negotiable |
-| Bike Helmet | (32, 32) | 48x48 | 25 Sovs — +Protection, -Shamsterdam Cred |
-| Rain Poncho | (80, 32) | 48x48 | 8 Sovs — it WILL rain |
-| Survival Map | (128, 32) | 48x64 | 5 Sovs — knowledge and terror |
-| Combination Package | (176, 32) | 64x64 | 40 Sovs — tourist survival bundle box |
+| Classic Ding Bell (Tier 1) | (0, 0) | 32x32 | 5 SOVS — polite, ignored by all |
+| Assertive Bell (Tier 2) | (32, 0) | 32x32 | 12 SOVS — noticed by some |
+| Serious Dual-Tone (Tier 3) | (64, 0) | 32x32 | 15-20 SOVS — actual communication |
+| Tactical Air Horn (Tier 4) | (96, 0) | 48x32 | 22 SOVS — psychological warfare |
+| Smart Bell App (Tier 5) | (144, 0) | 32x32 | 35 SOVS — tech delusion, tiny glowing screen |
+| Bike Mirror | (176, 0) | 32x32 | 8 SOVS — see death coming |
+| Front Light | (208, 0) | 32x24 | 10 SOVS — legally mandatory, practically useful |
+| Rear Light | (0, 32) | 32x24 | 10 SOVS — red, always red, not negotiable |
+| Bike Helmet | (32, 32) | 48x48 | 25 SOVS — +Protection, -Shamsterdam Cred |
+| Rain Poncho | (80, 32) | 48x48 | 8 SOVS — it WILL rain |
+| Survival Map | (128, 32) | 48x64 | 5 SOVS — knowledge and terror |
+| Combination Package | (176, 32) | 64x64 | 40 SOVS — tourist survival bundle box |
 
 ### Price Tags & Tier Markers:
 | Element | Position | Size | Description |
@@ -339,7 +339,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### Colorblind Considerations:
 - Danger map zones use hatching patterns (GREEN solid / YELLOW dots / ORANGE stripes / RED crosshatch), never color alone
 - Bell tiers carry Roman numeral chips I-V in addition to display color
-- Touch zones minimum 44px for counter, testing area, tier selection, and all purchase buttons
+- Click zones minimum 44px for counter, testing area, tier selection, and all purchase buttons
 
 ---
 
@@ -372,7 +372,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 - **Particle Limit:** 20
 
 ### Performance Notes:
-- Profile-mandated: simplified bell variety, static map, reduced shine effects on low-end devices
+- Profile-mandated: simplified bell variety, static map, reduced shine effects on min-spec hardware
 - Single-room interior — load exterior/interior as separate scenes to stay under draw call cap
 - Bike path parallax is the only scrolling layer; disable below Medium LOD
 
@@ -509,7 +509,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 - [ ] Satirical theme is clear throughout all assets (military sincerity applied to bell retail)
 - [ ] Hidden areas/interactions have discoverable visual cues (testing area foam, tier highlight states)
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (map hatching, tier numerals)
 - [ ] Social media viral potential maximized in composition choices (bell wall as hero shot)
 

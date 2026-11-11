@@ -1,7 +1,7 @@
 # Klompen Konfessional - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Klompen Konfessional is the tourist-district clog shop where every purchase is an implicit confession: these wooden shoes are going on a shelf, and everyone — staff, tourists, the crying child in the baby clogs — knows it. This document specifies every PNG asset for the shop: the aggressively Dutch clog-covered exterior, the Clog Cathedral interior with its four retail sections, the try-on station where dreams of wearing clogs die, Pieter's genuine craft demonstration, Hendrika and Jeroen, the customer gallery, the full try-on/walking-attempt animation suite, and the confession-mechanic UI. Its satirical essence in a sentence: 40 Sovs of authentic craftsmanship, purchased as footwear, destined for a wall.
+Klompen Konfessional is the tourist-district clog shop where every purchase is an implicit confession: these wooden shoes are going on a shelf, and everyone — staff, tourists, the crying child in the baby clogs — knows it. This document specifies every PNG asset for the shop: the aggressively Dutch clog-covered exterior, the Clog Cathedral interior with its four retail sections, the try-on station where dreams of wearing clogs die, Pieter's genuine craft demonstration, Hendrika and Jeroen, the customer gallery, the full try-on/walking-attempt animation suite, and the confession-mechanic UI. Its satirical essence in a sentence: 40 SOVS of authentic craftsmanship, purchased as footwear, destined for a wall.
 
 **Location ID:** `shamsterdam_tourist_klompen_konfessional_01`
 **Theme:** Souvenir purchasing as ritual — buying symbols, not objects; the elaborate pretense that clogs are "footwear"
@@ -96,9 +96,9 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 ### Retail Sections:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Traditional Section | (0, 0) | 384x256 | Natural wood classics, "as worn by Dutch farmers (in the 1800s)", 25-40 Sovs shelf tags |
-| Artistic Section | (384, 0) | 384x256 | Hand-painted windmills, tulips, Delft blue — clearly decorations, 35-60 Sovs |
-| "Wearable" Section (Allegedly) | (768, 0) | 256x256 | Rubber soles, padding inserts, suspiciously small shelf, 50-80 Sovs; staff maintain straight faces |
+| Traditional Section | (0, 0) | 384x256 | Natural wood classics, "as worn by Dutch farmers (in the 1800s)", 25-40 SOVS shelf tags |
+| Artistic Section | (384, 0) | 384x256 | Hand-painted windmills, tulips, Delft blue — clearly decorations, 35-60 SOVS |
+| "Wearable" Section (Allegedly) | (768, 0) | 256x256 | Rubber soles, padding inserts, suspiciously small shelf, 50-80 SOVS; staff maintain straight faces |
 | Miniatures Section | (0, 256) | 256x192 | Keychains, magnets, tiny clogs — the honest purchase, best-seller by volume |
 | Try-On Station | (256, 256) | 256x256 | Bench, sizing guide, mirror, discreetly positioned first aid kit |
 | Demonstration Area | (512, 256) | 384x256 | Pieter's workspace: shaving horse, blades, half-carved blanks, 400 years of technique |
@@ -133,23 +133,23 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 ### Product Inventory:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Traditional Natural Clog | (0, 0) | 64x48 | Classic pair, 25 Sovs, shelf-bound (94%) |
-| Hand-Painted Windmill Clog | (64, 0) | 64x48 | Tourist favorite, 45 Sovs, wall mount (89%) |
-| Canal Blue Decorative | (128, 0) | 64x48 | Delft premium, 55 Sovs, curio cabinet (91%) |
-| "Comfort" Modified Clog | (192, 0) | 64x48 | Alleged wearability, 65 Sovs, one wearing then shelf (88%) |
-| Garden Clog (Rubber) | (0, 48) | 64x48 | Actually practical, 35 Sovs, real garden use (40%) |
+| Traditional Natural Clog | (0, 0) | 64x48 | Classic pair, 25 SOVS, shelf-bound (94%) |
+| Hand-Painted Windmill Clog | (64, 0) | 64x48 | Tourist favorite, 45 SOVS, wall mount (89%) |
+| Canal Blue Decorative | (128, 0) | 64x48 | Delft premium, 55 SOVS, curio cabinet (91%) |
+| "Comfort" Modified Clog | (192, 0) | 64x48 | Alleged wearability, 65 SOVS, one wearing then shelf (88%) |
+| Garden Clog (Rubber) | (0, 48) | 64x48 | Actually practical, 35 SOVS, real garden use (40%) |
 | Baby Clog Pair | (64, 48) | 32x24 | Photo prop → storage (97%) |
-| Giant Display Clog | (96, 48) | 96x72 | 80 Sovs statement piece, wearability impossible |
-| Clog Painting Kit | (192, 48) | 48x48 | 30 Sovs activity, never completed (85%) |
-| Miniature Keychain | (0, 96) | 24x24 | 8 Sovs — finally honest |
-| Miniature Magnet | (24, 96) | 24x24 | 5 Sovs — fridge-ready honesty |
+| Giant Display Clog | (96, 48) | 96x72 | 80 SOVS statement piece, wearability impossible |
+| Clog Painting Kit | (192, 48) | 48x48 | 30 SOVS activity, never completed (85%) |
+| Miniature Keychain | (0, 96) | 24x24 | 8 SOVS — finally honest |
+| Miniature Magnet | (24, 96) | 24x24 | 5 SOVS — fridge-ready honesty |
 | Shopping Bag (Loaded) | (48, 96) | 48x64 | Heavy, wooden contents, visibly straining |
 | Clog Burden Inventory Icon | (96, 120) | 32x32 | Equipment icon; -50% movement if actually equipped |
 | Blister Status Icon | (128, 120) | 32x32 | Try-on consequence marker |
 | Honest Purchase Icon | (160, 120) | 32x32 | Miniature-only checkout marker |
 | Equipped Clogs (Feet Overlay) | (0, 160) | 64x32 | Player-feet overlay for the Masochist achievement |
 | Clog On Shelf (Epilogue Prop) | (64, 160) | 64x48 | "The clogs are on a shelf. They've always been on a shelf." |
-| Price Tag Set | (128, 160) | 96x32 | Three 32x32 orange tags lettered `S`, `SS`, `SSS` — the game-wide cheap / mid / expensive tier marks. **No currency glyph exists; these are Sov-tier block capitals, not a symbol.** Three caps fit 32x32 at ~8px wide each. |
+| Price Tag Set | (128, 160) | 96x32 | Three 32x32 orange tags lettered `S`, `SS`, `SSS` — the game-wide cheap / mid / expensive tier marks. **No currency glyph exists; these are SOV-tier block capitals, not a symbol.** Three caps fit 32x32 at ~8px wide each. |
 
 ### Technical Notes:
 - Full-size clogs share a 64x48 silhouette so section shelves can tile them efficiently
@@ -392,7 +392,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - Section identity coded by sign text + shelf silhouette (natural/painted/padded/tiny), never wood-tone alone
 - Step Counter escalation uses fill segments + numerals, not red gradient alone
 - Blister warning pairs #B22222 with a bandage-cross glyph
-- Touch zones minimum 44px for browser categories, try-on prompt, step taps, and confession options
+- Click zones minimum 44px for browser categories, try-on prompt, step taps, and confession options
 
 ---
 
@@ -569,7 +569,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 - [ ] Satirical theme is clear throughout all assets (tourist purchasing logic satirized; Pieter's craft respected)
 - [ ] Hidden areas/interactions have discoverable visual cues (first aid kit, scent vent, pyramid proximity, confession highlight)
 - [ ] Performance optimized (CPU particles, palette-modulated clog variety, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for browser, try-on, steps, confession)
+- [ ] Click zone sizing considered (44px minimum for browser, try-on, steps, confession)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (section silhouettes, segmented step counter)
 - [ ] Social media viral potential maximized in composition choices (step-8 mirror framing, honest signage legibility)
 
@@ -582,11 +582,11 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 | World Consistency (no real city names) | ✅ | Shamsterdam tourist district; all in-world text city-agnostic or Shamsterdam-branded |
 | Cultural Specificity | ✅ | Genuine Dutch klompen craft tradition vs. modern tourist clog economy |
 | Satirical Targets Appropriate | ✅ | Souvenir purchasing logic and tourist self-delusion — never the craft or the craftsman |
-| Seedy Underbelly Present | ✅ | Selling 40 Sovs wood as "footwear" with try-on theater everyone sees through |
+| Seedy Underbelly Present | ✅ | Selling 40 SOVS wood as "footwear" with try-on theater everyone sees through |
 | Gameplay Value Established | ✅ | Try-on system, 10-step challenge, confession mechanic, inventory burden, achievement track |
 | Technical Feasibility | ✅ | Palette-modulated variety, static demonstration fallback, one-shot animations documented |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 10 particles per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion set, 44px touch zones |
+| Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion set, 44px click zones |
 | No Crypto Elements | ✅ | Pure wooden authenticity |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 

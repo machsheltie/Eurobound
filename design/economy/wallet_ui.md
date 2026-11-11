@@ -293,7 +293,7 @@ The author-locked strings in §2.2, §2.3, and §2.4 ship as **fixed English cop
 ## 7. Cross-References
 
 - Economy mechanics, flags, seed, rug logic → `design/economy/economy_system.md`
-- Vault card content for the 12 NFTs + FuncoLand relic → `design/economy/legacy_vault_cards.md`
+- Vault card content for the 16 NFTs + FuncoLand relic → `design/economy/legacy_vault_cards.md`
 - Coins, certificates, QR pages, terminal copy → `design/economy/shitcoin_master_pool.md`
 - Airdrop delivery into Bagholder Assets → `design/economy/icq_airdrops.md`
 - Source spec → `docs/superpowers/specs/2026-07-31-economy-wallet-crypto-design.md` §2

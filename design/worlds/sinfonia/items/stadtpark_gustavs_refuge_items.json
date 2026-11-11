@@ -288,7 +288,7 @@
       "item_id": "fiaker_fiasco_memento",
       "display_name": "Fiaker Fiasco Memento",
       "condition": "any_completion",
-      "description": "A small collection of items from the adventure: a feather from Gustav's cape, a Skittle wrapper, and a receipt from Café Sachertorte for 340 Sovs.",
+      "description": "A small collection of items from the adventure: a feather from Gustav's cape, a Skittle wrapper, and a receipt from Café Sachertorte for 340 SOVS.",
       "type": "quest_keepsake",
       "gallery_entry": true
     }

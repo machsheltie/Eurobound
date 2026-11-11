@@ -152,7 +152,7 @@ It is a good job. The hours suit her, the tips are excellent, management is unde
 |-------|-------|
 | The club's history | "Fifteen years. Same room, same bar, same fog machine. The fog machine's older than the club, actually. Came with the crypt." |
 | The name | "*Mozarts Letzte Raserei.* It's on the door plate under the headstone. Nobody reads it, everybody says the English one." |
-| The 5 Sovs pass | "It's a cemetery pass. *(a pause)* It gets you into the cemetery." |
+| The 5 SOVS pass | "It's a cemetery pass. *(a pause)* It gets you into the cemetery." |
 | Bassmeister | "Goes on at two. Never late. In twenty years, never once late, and I've worked with living bands." |
 | The four DJs | "North, east, south, west. Bass, treble, rhythm, melody. They've had that arrangement since before I started and they will not be talked out of it." |
 | The theatre students | "We take on a few for the floor. Fifteen an hour, cash, and they're worth it — they never break, not once, not even when someone's crying at them." |
@@ -248,15 +248,15 @@ It is a good job. The hours suit her, the tips are excellent, management is unde
 
 ### The Bone Bar — Drinks
 
-*All draught and bottled serves come in standard glassware; **+3 Sovs keeps the skull glass**, which is an inventory item, reusable, and from IKEA. Card minimum 10 Sovs, stated on the tombstone menu, enforced without discussion.*
+*All draught and bottled serves come in standard glassware; **+3 SOVS keeps the skull glass**, which is an inventory item, reusable, and from IKEA. Card minimum 10 SOVS, stated on the tombstone menu, enforced without discussion.*
 
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Crypt Lager | 5 Sovs | 1 Sov | +15 HP. The house pour. Cold, correct, unremarkable, and the thing she'd order. |
-| Femur Stout | 7 Sovs | 2 Sovs | +25 HP, −3% Speed for 20 min |
-| Bone Dry White | 6 Sovs | 2 Sovs | +10 HP, +5 SP |
-| The Gravedigger (double, on request) | 11 Sovs | 3 Sovs | +35 HP, +1 Bravado for 30 min |
-| Skull Glass, kept | +3 Sovs | 2 Sovs | Permanent inventory item. Dishwasher-safe. From IKEA. |
+| Crypt Lager | 5 SOVS | 1 SOV | +15 HP. The house pour. Cold, correct, unremarkable, and the thing she'd order. |
+| Femur Stout | 7 SOVS | 2 SOVS | +25 HP, −3% Speed for 20 min |
+| Bone Dry White | 6 SOVS | 2 SOVS | +10 HP, +5 SP |
+| The Gravedigger (double, on request) | 11 SOVS | 3 SOVS | +35 HP, +1 Bravado for 30 min |
+| Skull Glass, kept | +3 SOVS | 2 SOVS | Permanent inventory item. Dishwasher-safe. From IKEA. |
 | Bone Bar Water | Free | Free | Full Off-Key removal. She gives it to anyone who looks like they need it and does not comment. |
 
 ### The Bone Bar & Requiem Room — Classical Cocktails
@@ -265,24 +265,24 @@ It is a good job. The hours suit her, the tips are excellent, management is unde
 
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| The Adagio | 12 Sovs | 3 Sovs | +40 HP over 5 minutes; steadies the hit window |
-| Allegro con Fuoco | 14 Sovs | 4 Sovs | +20% Speed for 20 min; narrows the hit window, which nobody reads first |
-| Nocturne | 12 Sovs | 3 Sovs | +30 SP. Served without ice, in silence, at his instruction, and she honours it. |
-| Basso Continuo | 13 Sovs | 4 Sovs | +15% mitigation on bass-drop damage for one encounter |
-| Fugue State | 16 Sovs | 4 Sovs | +25 HP, +25 SP; the next three dialogue choices appear in a different order |
-| The Unfinished | 15 Sovs | 4 Sovs | Served three-quarters full. She will not top it up. +2 Wisdom for 1 hour. |
-| **"RIP Your Sobriety"** | 18 Sovs | 5 Sovs, and a genuine liability | Full HP/SP restore, +25% rhythm performance for 30 min, then **Exhausted**. Recipe is a boss reward; she sells it ready-made forever. Limit one per customer per night, and she means it. |
+| The Adagio | 12 SOVS | 3 SOVS | +40 HP over 5 minutes; steadies the hit window |
+| Allegro con Fuoco | 14 SOVS | 4 SOVS | +20% Speed for 20 min; narrows the hit window, which nobody reads first |
+| Nocturne | 12 SOVS | 3 SOVS | +30 SP. Served without ice, in silence, at his instruction, and she honours it. |
+| Basso Continuo | 13 SOVS | 4 SOVS | +15% mitigation on bass-drop damage for one encounter |
+| Fugue State | 16 SOVS | 4 SOVS | +25 HP, +25 SP; the next three dialogue choices appear in a different order |
+| The Unfinished | 15 SOVS | 4 SOVS | Served three-quarters full. She will not top it up. +2 Wisdom for 1 hour. |
+| **"RIP Your Sobriety"** | 18 SOVS | 5 SOVS, and a genuine liability | Full HP/SP restore, +25% rhythm performance for 30 min, then **Exhausted**. Recipe is a boss reward; she sells it ready-made forever. Limit one per customer per night, and she means it. |
 
 ### The Bone Bar — Merchandise
 
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Spine Glow-Stick | 8 Sovs | 0.60 Sovs | Light source in Fog Banks; +1 Bravado while equipped |
-| Spine Glow-Stick, Full Vertebral Set (6) | 40 Sovs | 4 Sovs | Same buff. Chadwick buys this. Chadwick always buys this. |
-| Bone Bar Bottle Opener | 6 Sovs | 1 Sov | Keyring. Functional. The only item in the club with no gimmick at all. |
-| "Composer's Rest" Pass, replacement | 5 Sovs | 5 Sovs | Re-entry if the original is lost. Same price upstairs. She does not mark it up. |
-| Tombstone Menu, Miniature | 14 Sovs | 4 Sovs | Room decoration; carved as an epitaph; the daily special is in her handwriting |
-| Ear Defenders | 10 Sovs | 6 Sovs | Halves Dazed duration. She sells these because she uses these. |
+| Spine Glow-Stick | 8 SOVS | 0.60 SOVS | Light source in Fog Banks; +1 Bravado while equipped |
+| Spine Glow-Stick, Full Vertebral Set (6) | 40 SOVS | 4 SOVS | Same buff. Chadwick buys this. Chadwick always buys this. |
+| Bone Bar Bottle Opener | 6 SOVS | 1 SOV | Keyring. Functional. The only item in the club with no gimmick at all. |
+| "Composer's Rest" Pass, replacement | 5 SOVS | 5 SOVS | Re-entry if the original is lost. Same price upstairs. She does not mark it up. |
+| Tombstone Menu, Miniature | 14 SOVS | 4 SOVS | Room decoration; carved as an epitaph; the daily special is in her handwriting |
+| Ear Defenders | 10 SOVS | 6 SOVS | Halves Dazed duration. She sells these because she uses these. |
 
 ### Services
 | Item/Service | Price | Actual Value | Effect/Result |
@@ -297,7 +297,7 @@ It is a good job. The hours suit her, the tips are excellent, management is unde
 - **Examine her ear defenders on the hook**: *"Industrial grade. Worn at the band. She has never once mentioned that she wears them and nobody has ever asked."*
 - **Examine the tombstone menu after 4 AM**: the daily special has been rubbed out and rewritten three times in one night, in her handwriting, getting shorter each time.
 - Order the same drink five nights running and she has it on the counter before you speak. No dialogue fires. It is just there.
-- Tip more than 20 Sovs in a single night: *"That's too much."* — she puts it in the bowl anyway and it still counts.
+- Tip more than 20 SOVS in a single night: *"That's too much."* — she puts it in the bowl anyway and it still counts.
 - Ask her for a recommendation while Exhausted: she gives you the free water and does not charge for the last drink either, and no achievement, dialogue, or tooltip ever acknowledges that she did this.
 
 ---
@@ -314,7 +314,7 @@ It is a good job. The hours suit her, the tips are excellent, management is unde
 | DJ Tempo Mortis (`sinfonia_npc_dj_tempo_mortis_01`) | South booth, rhythm. On the rota. |
 | DJ Harmony Haunt (`sinfonia_npc_dj_harmony_haunt_01`) | West booth, melody. On the rota. Newest, relatively speaking. |
 | The Ghost Groupies | Ambient regulars. She knows where each of them sits and puts the drink down first. |
-| The theatre students (15 Sovs/hour) | She hires the floor staff, pays them cash, and rates them highly. This is stated as an employment fact and never as a reveal. |
+| The theatre students (15 SOVS/hour) | She hires the floor staff, pays them cash, and rates them highly. This is stated as an employment fact and never as a reveal. |
 | Hilde, coat check, The Bassline Opera House (`sinfonia_npc_coat_check_01`) | A different woman, in a different building, whose post occasionally arrives here. They have met twice and get on fine. |
 | The security guard, cemetery surface | Eleven years of walking past an open grave without turning his head. She has never discussed it with him and he has never raised it. |
 
@@ -390,7 +390,7 @@ Per the standing rule, `PNG_Assets/Mozarts_Last_Rave_PNG_Assets.md` is authorita
 - **Outcome**: Sleep in the Requiem Room on the coffin-cushion seating; "Restful Death" recovery; the morning scene, the twenty years, the micromanagement line, the spectral breakfast cameo (appeased route only), and the insider tip. Achievement: **"Living Legend."**
 
 ### Quest Gate Function (If Applicable)
-The couchsurf itself is gated behind the **Eternal Setlist** — the Requiem Room is VIP and post-completion only, so the party must clear Bassmeister by either route before the stay is available. Helga gates nothing else: her stock, her hints, and her exposition are available to anyone at the Bone Bar with a 5 Sovs pass from the first night. She is the location's tutorial vendor as well as its endgame host, deliberately.
+The couchsurf itself is gated behind the **Eternal Setlist** — the Requiem Room is VIP and post-completion only, so the party must clear Bassmeister by either route before the stay is available. Helga gates nothing else: her stock, her hints, and her exposition are available to anyone at the Bone Bar with a 5 SOVS pass from the first night. She is the location's tutorial vendor as well as its endgame host, deliberately.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -399,7 +399,7 @@ The couchsurf itself is gated behind the **Eternal Setlist** — the Requiem Roo
 | Bone Bar Discount (10%) | Couchsurf morning | Yes | Permanent, applies at the Bone Bar only; not at Bassmeister's Requiem Room counter |
 | Full HP/SP restoration | Couchsurf stay | Per stay | "Restful Death" sleep |
 | Insider Tip (journal entry) | Couchsurf morning | Yes | Unlocks the 11:30 PM low-tempo practice window as a marked activity |
-| Skull Glass | Any drink, +3 Sovs | Yes | Reusable inventory vessel. Dishwasher-safe. From IKEA. |
+| Skull Glass | Any drink, +3 SOVS | Yes | Reusable inventory vessel. Dishwasher-safe. From IKEA. |
 | Boss mechanic hints (journal) | Any night, at the bar | Yes | Reveals the four DJ weaknesses and the "Last Rave" organ counter-play |
 | Lost Composition hint (journal) | Third drink of any night | Yes | Points at the organ pipe bank; enables the peaceful resolution without ever naming it as a quest |
 
@@ -481,17 +481,17 @@ Warm Sinfonian, working register — local, unhurried, entirely unpretentious. S
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — the old "no new crypto content / 2% max" cap is superseded; crypto is a full authored system (SOVS for ~90% of trade, darknet shitcoins for the 10% back-alley economy). **None present.** The Bone Bar takes Sov in cash, with a 10 Sovs card minimum stated on a tombstone.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — the old "no new crypto content / 2% max" cap is superseded; crypto is a full authored system (SOVS for ~90% of trade, darknet shitcoins for the 10% back-alley economy). **None present.** The Bone Bar takes SOV in cash, with a 10 SOVS card minimum stated on a tombstone.
 - [x] **NO automatic crypto assumptions** - most NPCs still have none; give an NPC crypto only where the character already earns it. Helga earns wages and tips and has no interest whatsoever in anything else.
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — N/A; no coin, kiosk, or certificate exists at this location
 - [x] **The bros are never scam-aware** - even mid-rug-pull, every loss is a market correction; sellers and scammers always know exactly what they have. Helga knows precisely what the skull glass is worth, tells them, and they conclude the evening was even more mystical than they thought.
 - [x] **Nothing winks** - no NPC line, tooltip, or aside signals that any of this is satire. Helga least of all: she never once acknowledges that anything about her workplace is unusual.
-- [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's composer-grave tourism, the 5 Sovs "cemetery pass" that is club cover, and the underground-venue marketing that sells a licensed fifteen-year-old business as a secret
+- [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's composer-grave tourism, the 5 SOVS "cemetery pass" that is club cover, and the underground-venue marketing that sells a licensed fifteen-year-old business as a secret
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands entirely on three Americans arriving with a theory; Helga is a competent local professional and the joke is always at their expense, never at hers
 - [x] NPC is savvy entrepreneur, not villain or stereotype — twenty years of skilled hospitality work, honest pricing, fair limits on the dangerous drink, and free water for anyone who needs it
-- [x] Humor is affectionate mockery, not mean-spirited — she is never humiliated, never wrong, and never the punchline; the venue's working people are treated with real affection throughout, and classical music and Sinfonian culture are never the target
+- [x] Humor is affectionate mockery — she is never humiliated, never wrong, and never the punchline; the venue's working people are treated with real affection throughout, and classical music and Sinfonian culture are never the target
 
 ---
 

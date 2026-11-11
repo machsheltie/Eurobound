@@ -495,10 +495,10 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 > Earning it. Proving to a French tailor in Sinfonia that they are, in fact, men of quality — that the assessment was a *first impression* and first impressions can be overturned by anyone with enough grit and enough credit. This is the training montage. This is the part of the movie where the guy buys the suit and the music changes.
 
 **What they're actually doing:**
-> Spending 500 Sovs in a shop that has a documented, published, entirely public loyalty tier at 500 Sovs, thereby "earning" a status that is available to any tourist with 500 Sovs and no personal qualities whatsoever, and then running an errand for a man who would have run it himself in twenty minutes.
+> Spending 500 SOVS in a shop that has a documented, published, entirely public loyalty tier at 500 SOVS, thereby "earning" a status that is available to any tourist with 500 SOVS and no personal qualities whatsoever, and then running an errand for a man who would have run it himself in twenty minutes.
 
 **Execution Steps:**
-1. **Reach Valued Client — 500 Sovs spent.** This uses the shop's **existing** tier system exactly as published (Client / Valued Client 500 Sovs / Distinguished Client 1000 Sovs / Patron of Fashion 2000 Sovs). No new tier, no new pricing, no quest-specific discount. Every Sov spent counts, including formal wear the player may already have bought, including the accessories the assistants upsell, including the 100 Sovs outfit consultation that consists largely of backhanded compliments. The bros interpret the tier unlock as a character judgment.
+1. **Reach Valued Client — 500 SOVS spent.** This uses the shop's **existing** tier system exactly as published (Client / Valued Client 500 SOVS / Distinguished Client 1000 SOVS / Patron of Fashion 2000 SOVS). No new tier, no new pricing, no quest-specific discount. Every SOV spent counts, including formal wear the player may already have bought, including the accessories the assistants upsell, including the 100 SOVS outfit consultation that consists largely of backhanded compliments. The bros interpret the tier unlock as a character judgment.
 2. **The Valued Client threshold fires.** Private fitting room. 10% off. Better champagne. Their name used, out loud, for the first time. Lord Pilsner needs a moment.
 3. **The errand.** Monsieur Aiguille, now willing to have the conversation, does not name a price for the Coin. He names a task, and it is absurd, and he means every word of it: a specific bolt of cloth is held at a warehouse across Sinfonia by a man who owes him nothing, will not release it to a courier, will not release it to a shop assistant, and has not spoken to Aiguille personally since an incident involving a hem in 1994. The bros are to collect it. **In the formal wear.** In daylight. Across the whole city. With the shimmer.
 4. **The errand is completed with maximum indignity and zero self-awareness.** Groin Blurts fire during the negotiation. The warehouseman hands over the bolt specifically because he wants these people out of his warehouse, which the bros correctly identify as a win and incorrectly attribute to charisma.
@@ -525,7 +525,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 **Chadwick** *(already filming)*: "He's basically knighting me right now."
 
 **NPC Reactions:**
-- **Monsieur Aiguille** *(to a shop assistant, once the door has closed, quietly, without contempt)*: "They spent five hundred Sovs to be told their own names. Do not laugh. Everyone here did."
+- **Monsieur Aiguille** *(to a shop assistant, once the door has closed, quietly, without contempt)*: "They spent five hundred SOVS to be told their own names. Do not laugh. Everyone here did."
 - **Shop Assistant:** "Might I suggest the matching cufflinks? They really complete the—" *(a Groin Blurt fires)* "—...I will come back."
 - **Aristocrat Customer:** *does not acknowledge their existence, before, during, or after their transformation into Valued Clients*
 - **Nervous Tourist:** *(watching them leave, to nobody)* "Is that... is that what it takes? Is that too much? That's too much, right?"
@@ -544,10 +544,10 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 > Running a heist. A real one. Cased, planned, executed by professionals in formal wear, the kind of thing that gets a slow-motion walking shot. They have decided the shop *disrespected* them, and this is the correction. They are, in their own account, taking back what the snub owed them.
 
 **What they're actually doing:**
-> Buying several hundred Sovs of formal wear from the exact shop they are about to burgle, on their own names, from a tailor who has now measured all three of them, and then hiding from a 70-year-old night porter by standing very still.
+> Buying several hundred SOVS of formal wear from the exact shop they are about to burgle, on their own names, from a tailor who has now measured all three of them, and then hiding from a 70-year-old night porter by standing very still.
 
 **Execution Steps:**
-1. **Buy the disguises. From the shop. Retail.** Path B requires formal wear **purchased from this shop** — Opera Cape (200 Sovs) minimum for each bro, and the bros will absolutely be upsold the Silk Pocket Square on top of it. *(The shop's tier system does not care why you spent it. If the purchases cross 500 Sovs the bros become Valued Clients on the way to robbing the place, and nobody involved ever notices the irony.)*
+1. **Buy the disguises. From the shop. Retail.** Path B requires formal wear **purchased from this shop** — Opera Cape (200 SOVS) minimum for each bro, and the bros will absolutely be upsold the Silk Pocket Square on top of it. *(The shop's tier system does not care why you spent it. If the purchases cross 500 SOVS the bros become Valued Clients on the way to robbing the place, and nobody involved ever notices the irony.)*
 2. **Wait for close.** The shop keeps civilized hours and shuts at 7 PM per its own entry conditions. The bros spend the intervening four hours in full formal wear in a public square, being complimented by strangers, which nearly ends the heist twice.
 3. **After-hours infiltration.** Service entrance, alteration workshop, showroom floor. The marble is loud. The bros are not quiet men. Groin Blurts remain fully active during the entire stealth sequence and are, mechanically, the primary fail-state generator — the player cannot prevent them and must plan around them.
 4. **THE MANNEQUIN BEAT (marquee).** The night porter crosses the showroom floor with a torch. Three men in opera capes hold mannequin poses on the display plinths, mid-gesture, for eleven full seconds. **This is the quest's screenshot moment and it must be framed for portrait capture.** Nobody blinks. One cape hem is trembling. The torch passes across all three faces in sequence and does not stop.
@@ -576,7 +576,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 **Rewards:**
 - **Item:** `item_gold_circle_coin` — identical item, identical suppression, identical restrictions. **Both paths deliver exactly the same Coin.** The Coin does not care how it was obtained; neither does the game.
 - **Stat Change:** +3 Bravado, −1 Charm at the Haberdashery only (Aiguille is never rude about it, which is the penalty) — **quest-completion character stat changes, not item stats.** The Coin is Charm: +0 flat on both paths.
-- **Status:** `the_herp` **suppressed** (never cured); "Valued Client" applies if the formal-wear spend crossed 500 Sovs, which it usually does, accidentally
+- **Status:** `the_herp` **suppressed** (never cured); "Valued Client" applies if the formal-wear spend crossed 500 SOVS, which it usually does, accidentally
 - **Unlocks:** Achievement "Nothing Is Getting Through"; the Night Porter's recurring pose compliment; all six post-cure re-attempts; the Post-Credits scene
 
 ---
@@ -687,7 +687,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 ### Cross-References
 - **The Couchsurfing Chronicles** (`Design/Quests/couchsurfingchronicles.md` and the Debaucheryville edition) — the outbreak is a scripted Chronicles entry **for players who attend the party**; the Herp then routes every other Chronicles attempt into a rejection scene until the Coin is equipped. Skipping the party forfeits this entry and nothing else
 - **The Bacchanus Beach Beatdown** — direct predecessor; supplies the `night_party_zone` unlock, Hamstradamus, Petra, and the bar-strip TV loop that plays through the entire limp
-- **Haute Couture Haberdashery** (`Design/World Design/Sinfonia/haute_couture_haberdashery.md`) — the House of Needles; both paths ride the shop's existing Assessment Protocol and 500 Sovs Valued Client tier, neither of which was created or modified for this quest
+- **Haute Couture Haberdashery** (`Design/World Design/Sinfonia/haute_couture_haberdashery.md`) — the House of Needles; both paths ride the shop's existing Assessment Protocol and 500 SOVS Valued Client tier, neither of which was created or modified for this quest
 - **Midnight Munchies General Store** — Věra's refusal scene; the file already lists status-effect management among its services, and this is the one it declines
 - **The Cirque du Shady** — Hamstradamus's prophecy tent; the Twins' rejection scene; the Cirque is also where Renata is heading in hers
 - **ICQ Scammer Sting / the ICQ substrate** — CryptoBro69's gloating after the Ex's rejection and Miss Morphine's auto-reply both run on it (existing gags only; no new crypto content)
@@ -928,7 +928,7 @@ and did, for once, exactly what it promised.
 
 ### The Two Paths
 - **Both paths deliver the identical item with identical effects.** Do not balance-differentiate them. The difference is entirely tonal and entirely in Aiguille's subsequent voice.
-- PATH A uses the shop's **existing** 500 Sovs Valued Client tier. **No new tier, no quest-specific pricing, no discount.** Purchases made before the quest count.
+- PATH A uses the shop's **existing** 500 SOVS Valued Client tier. **No new tier, no quest-specific pricing, no discount.** Purchases made before the quest count.
 - PATH B requires formal wear **purchased from the shop being burgled**, on the bros' own names, from a tailor who has measured all three of them. This must never be lampshaded by any character.
 - **The Assessment Protocol is not modified for this quest** and is played completely straight. It was always the snub. Do not write a quest-specific "meaner" version.
 - The mannequin hold is **eleven seconds and must be uninterruptible.** No skip prompt, no input hint, no timer UI. Groin Blurts are suppressed for the duration of the hold specifically so the player spends all eleven seconds waiting for one.

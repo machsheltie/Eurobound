@@ -4,7 +4,7 @@
 
 > ⚠ AUTHOR-REVIEW: entire item drafted by Claude under the author's draft-for-review ruling
 > (2026-08-05 Student ID interview). Author-fixed facts: one doc / per-bro variants; permanent
-> running-gag item; 10-Sovs tuition acquisition per trinity_of_pints.md L141-145. Everything
+> running-gag item; 10-SOVS tuition acquisition per trinity_of_pints.md L141-145. Everything
 > else below is draft pending author approval.
 
 ## 📋 Item Identity
@@ -20,12 +20,12 @@
 ## 🎭 The Deception
 
 ### What The Item Actually Is
-A cover-charge receipt. Ten Sovs buys an evening of "courses" at a pub that cosplays as a
+A cover-charge receipt. Ten SOVS buys an evening of "courses" at a pub that cosplays as a
 university, and the receipt comes shaped like a student ID: bar-top inkjet card stock, a name
 field typed by a bartender who did not ask for spelling, a photo taken on a webcam zip-tied to
 the enrollment desk, and a lamination pouch applied while still hot. It is honored as
 identification exactly nowhere, including at Trinity of Pints, where the only admission
-requirement is the ten Sovs.
+requirement is the ten SOVS.
 
 ### What The Bros Believe It Is
 "Official proof of enrollment at Europe's most exclusive drinking academy. This is
@@ -38,9 +38,9 @@ continent-wide. You know what this card says to the world? It says we BELONG in 
 
 | Attribute | Value |
 |-----------|-------|
-| **Purchase Price** | 10 Sovs each (30 Sovs for all 3 bros — "tuition") |
-| **Actual Value** | 0.5 Sovs (the lamination pouch) |
-| **Resale Value** | 0 Sovs (worthless) |
+| **Purchase Price** | 10 SOVS each (30 SOVS for all 3 bros — "tuition") |
+| **Actual Value** | 0.5 SOVS (the lamination pouch) |
+| **Resale Value** | 0 SOVS (worthless) |
 | **Can Be Sold** | No — no vendor on the continent will make eye contact with it |
 | **Can Be Dropped** | No (permanent cosmetic) |
 | **Can Be Traded** | No — the name is laminated on, and so is the shame |

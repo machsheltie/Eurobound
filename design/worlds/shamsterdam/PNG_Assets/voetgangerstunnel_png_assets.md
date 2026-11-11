@@ -110,7 +110,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **"Willem knows"**: Cryptic hint
 
 ### Vintage Advertisements (Row 7)
-- **Guilder Exchange**: Pre-Sovs currency ad
+- **Guilder Exchange**: Pre-SOVS currency ad
 - **Nokia Phone**: "The future of communication"
 - **Travel to Publandia**: "Exotic destination!"
 - **Film Development**: "Same day service!"
@@ -379,7 +379,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Duration:** ~3 seconds (0.3 FPS, very slow, uncertain)
 - **Frames:** 3 (transparency pulse)
 - **Pattern:** Fade → one-second disappear → reappear, played once
-- **Trigger:** Third 5 Sovs tip revelation ("The Eternal Busker" hidden quest)
+- **Trigger:** Third 5 SOVS tip revelation ("The Eternal Busker" hidden quest)
 - **Purpose:** Is he a ghost or just old? Uncertainty is the point — keep it subtle
 - **Audio Sync:** Accordion continues uninterrupted (the unsettling detail)
 - **Performance Optimization:** Simple alpha modulation, no shader required
@@ -461,7 +461,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - The blue/orange/yellow stripe joke is color-based by design — stripes must ALSO carry distinct end-cap patterns (the joke is that they're meaningless, not that they're invisible)
 - Emergency reliability is coded green + distinct sign shape and glow, never color alone
 - Navigation Choice Prompt options use text + icons, not color coding
-- Touch zones minimum 44px for all navigation choices and NPC interactions
+- Click zones minimum 44px for all navigation choices and NPC interactions
 
 ---
 
@@ -506,7 +506,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: TileMap (corridors), AnimatedSprite2D (NPCs, effects), CPUParticles2D (dust — not GPU), CanvasLayer (navigation UI), CanvasModulate for zone lighting tiers
-- Special systems: probability-based navigation resolver (exit odds modified by sober/contact-high/space-cake/canal-confusion/map/guide/memory stacks), dynamic signage that changes between visits, five-zone transition triggers, flashlight-gated graffiti layer, Willem tip counter (3× 5 Sovs for ghost reveal)
+- Special systems: probability-based navigation resolver (exit odds modified by sober/contact-high/space-cake/canal-confusion/map/guide/memory stacks), dynamic signage that changes between visits, five-zone transition triggers, flashlight-gated graffiti layer, Willem tip counter (3× 5 SOVS for ghost reveal)
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -523,7 +523,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Red Light Discovery | Red Light Emergence scene, Mevrouw Jansen sheet | First accidental Roodelicht emergence; "Scenic Route" achievement |
-| The Eternal Busker | Willem sheet, Ghost Flicker, tip jar tile | Tip 5 Sovs three visits; "Willem's Friend" + accordion cosmetic |
+| The Eternal Busker | Willem sheet, Ghost Flicker, tip jar tile | Tip 5 SOVS three visits; "Willem's Friend" + accordion cosmetic |
 | Frietomat Shortcut Discovery | Frietomat Emergence scene | Hidden entrance behind heating unit; "Back Door Regular" |
 | Stay Away Campaign | Tileset (corridor props) | Pamphlet #4 found in tunnel |
 | Tour Guide (achievement) | Lost Tourist variants (Relieved at Help row) | Escort a lost tourist to correct exit |
@@ -559,7 +559,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 ### Key Visual Themes
 - **Functional Confusion**: Everything looks helpful but isn't
 - **Dutch Efficiency (Ironic)**: Clean design that somehow leads you astray
-- **Time Capsule**: Ads from 2003, pre-Sovs references, vintage infrastructure
+- **Time Capsule**: Ads from 2003, pre-SOVS references, vintage infrastructure
 - **Liminal Space Energy**: Endless corridors, flickering lights, eternal busker
 
 ### Lighting Requirements
@@ -619,7 +619,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 
 ### Environmental Storytelling:
 - Worn terrazzo paths reveal the routes people actually take — contradicting every sign
-- Vintage ads (guilder exchange, Nokia, film development) date the tunnel to a pre-Sovs time capsule
+- Vintage ads (guilder exchange, Nokia, film development) date the tunnel to a pre-SOVS time capsule
 - Flashlight-revealed graffiti is the tunnel's true folk knowledge: "DON'T FOLLOW HENK", "Willem knows"
 - The wall map's wrong "You Are Here" dot tells the whole satirical premise in one prop
 
@@ -717,7 +717,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - [ ] Satirical theme is clear throughout all assets (helpful-looking design that misleads)
 - [ ] Hidden areas/interactions have discoverable visual cues (graffiti under flashlight, Frietomat entrance, emergency sign secret)
 - [ ] Performance optimized (baked lighting, CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (stripe end-caps, emergency sign shape)
 - [ ] Social media viral potential maximized in composition choices (Red Light Emergence POV framing)
 
@@ -728,14 +728,14 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Shamsterdam only; Dutch signage ("Nooduitgang", "Centraal") in-world |
-| Cultural Specificity | ✅ | Dutch underground infrastructure, pre-Sovs time capsule, "helpful" signage culture |
+| Cultural Specificity | ✅ | Dutch underground infrastructure, pre-SOVS time capsule, "helpful" signage culture |
 | Satirical Targets Appropriate | ✅ | Tourist navigation struggles — Red Light integration is embarrassment, not exploitation |
 | Seedy Underbelly Present | ✅ | Red Light emergence, coffeeshop storage room, tourist-priced "help" economy |
 | Gameplay Value Established | ✅ | Probability navigation puzzle, 5 zones, hidden quests, shortcut economy |
 | Technical Feasibility | ✅ | Baked lighting, simple corridor geometry, audio-led navigation documented |
 | Performance Budget | ✅ | 60 FPS, <35 draw calls, <40 MB, 30 particles |
-| Accessibility Features | ✅ | Visual mirrors for all directional audio cues, reduced-motion variants, 44px touch zones |
-| No Crypto Elements | ✅ | All transactions in Sovs (guilder ad is period set-dressing only) |
+| Accessibility Features | ✅ | Visual mirrors for all directional audio cues, reduced-motion variants, 44px click zones |
+| No Crypto Elements | ✅ | All transactions in SOVS (guilder ad is period set-dressing only) |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |
 
 ---

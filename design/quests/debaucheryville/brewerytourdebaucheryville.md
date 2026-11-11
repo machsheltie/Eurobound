@@ -18,10 +18,10 @@ trigger) to access brewery doors.
 
 | Slot | Location | Stamp | Opener | Signature Beer |
 |---|---|---|---|---|
-| 1 | The Absinthium Taproom | Green fairy in cracked glass, shifting emerald ink | Cracked absinthe glass, "I Saw Myself" | Absinthe Lager — 8.5% ABV, 12 Sovs |
-| 2 | Three-Crown Keg Haus | Three rusted crowns over stein, rust-orange ink | Stacked crowns, "Noble by Liver" | Iron Gut Tripel — 11.5% ABV, 10 Sovs |
-| 3 | The Tap Dat Vault | Soundwave in vault door, electric cyan/hot pink ink | Vault door, "Inhaled & Survived" | Vape Stout — 6.9% ABV, 14 Sovs |
-| 4 | Ye Olde B.R.E.W. Lab | Pixelated hop cone with blockchain hash, neon blue ink | Pixelated hop cone, "Algorithm Verified" | Blockchain Bock — 7.2% ABV, 18 Sovs (±5 fluctuation) |
+| 1 | The Absinthium Taproom | Green fairy in cracked glass, shifting emerald ink | Cracked absinthe glass, "I Saw Myself" | Absinthe Lager — 8.5% ABV, 12 SOVS |
+| 2 | Three-Crown Keg Haus | Three rusted crowns over stein, rust-orange ink | Stacked crowns, "Noble by Liver" | Iron Gut Tripel — 11.5% ABV, 10 SOVS |
+| 3 | The Tap Dat Vault | Soundwave in vault door, electric cyan/hot pink ink | Vault door, "Inhaled & Survived" | Vape Stout — 6.9% ABV, 14 SOVS |
+| 4 | Ye Olde B.R.E.W. Lab | Pixelated hop cone with blockchain hash, neon blue ink | Pixelated hop cone, "Algorithm Verified" | Blockchain Bock — 7.2% ABV, 18 SOVS (±5 fluctuation) |
 
 Full stat blocks, PNG specs, and Notes (including salvaged gatekeeper dialogue) live in each
 item's own file under `design/items/brewery_tour/`.
@@ -56,6 +56,34 @@ item's own file under `design/items/brewery_tour/`.
 **Boss/Encounter:** "Green Fairy Wisp" — status-spamming enemy who splits into illusions.
 
 **Satirical Delusion:** Bros think Green Fairy Confusion is them "getting cultured" instead of just drunk.
+
+**ICQ Integration (Miss Morphine):**
+
+**Trigger:** Triggered via Free Wi-Fi hotspot upon entering the Absinthe Arcade corridor outside **The Absinthium Taproom**.  
+**Audio:** Standard ICQ "Uh-oh!" chime.  
+**Sender Profile:** Miss Morphine (`ICQ #88219041`) — Anime girl avi with sunglasses and question mark overlay. Cryptic customer service tone, ASCII art flourishes.  
+**Offer:** "Absinthe Micro-Dosing Wellness Protocol" (Junk Consumable / Vanity Package).  
+**Price:** 45 SOVS.
+
+```
+*ICQ: "Uh-oh!"*
+
+[POPUP: Miss Morphine (#88219041)]
+. : * : . GREETINGS VALUED BIO-HACKER . : * : .
+d o   y o u   s e e   t h e   f a i r y   y e t ?
+Our proprietary Absinthium Micro-Dosing Protocol prepares the third eye 
+for optimal taproom compliance. Avoid municipal court appearances.
+Included: One (1) vial of Certified Blessed Tap Water & Eye Dropper.
+Only 45 SOVS. Press 1 to authorize debit from unmonitored account.
+. : * : . WE ALREADY KNOW YOUR POSTAL CODE . : * : .
+```
+
+**Player Action & Consequence:**
+- **Decline:** Closed window. Chadwick: *"Bro, she totally wants my aura."*
+- **Buy (45 SOVS):** Instantly debited. A courier drop delivers: **Vial of Blessed Tap Water** (Junk Item).
+  - **Item Name:** Vial of Blessed Tap Water
+  - **Category:** Junk
+  - **Inspect Text:** *"Smells like garden hose and heavy metals. The label is handwritten in silver gel pen: 'DO NOT DRINK WHILE UNCONSCIOUS.' You paid 45 SOVS for municipal plumbing."*
 
 **Brew Reward:**
 - **Absinthe Lager** — Restores +15 SP, 30% chance to apply Confused to user
@@ -96,6 +124,35 @@ item's own file under `design/items/brewery_tour/`.
 **Boss/Encounter:** "Keg Sentinel" — arm-wrestling robot made from kegs.
 
 **Satirical Delusion:** Bros convince themselves this dive bar is "real European culture."
+
+**ICQ Integration (Tony420):**
+
+**Trigger:** Triggered via Free Wi-Fi hotspot in the alleyway outside **Three-Crown Keg Haus**.  
+**Audio:** Standard ICQ "Uh-oh!" chime.  
+**Sender Profile:** Tony420 (`ICQ #420691337`) — Pixelated Oakleys avi. Lowercase chatspeak, scammer salesman, dropped apostrophes, u/ur/4/2.  
+**Offer:** "Emergency Liver Defense Suppository" (Anti-Hangover Junk Item).  
+**Price:** 2 $KBAB (KebabSwap).
+
+```
+*ICQ: "Uh-oh!"*
+
+[POPUP: Tony420 (#420691337)]
+yo
+heard u boyz hit da keg haus
+slavic triple ferment will melt ur intestines 4 real
+got da emergency liver defense suppository
+shaped like a dino. fast absorption bro. skip da puking
+2 kbab
+drop delivered behind da rusty dumpster in 3 mins
+msg back w wallet deetz. not responsible 4 foam lol
+```
+
+**Player Action & Consequence:**
+- **Decline:** Window closed. Bradley: *"My liver's a muscle, bro. It doesn't need vitamins."*
+- **Buy (2 $KBAB):** Drop delivery appears instantly in the rusty alley dumpster: **Dino-Shaped Liver Suppository** (Junk Item).
+  - **Item Name:** Dino-Shaped Liver Suppository
+  - **Category:** Junk
+  - **Inspect Text:** *"A crushed green chalk stegosaurus smelling faintly of battery acid and generic baby powder. A sticker on the baggie reads: 'EXTERNAL USE ONLY UNLESS BRAVE.' Total resale value: zero."*
 
 **Brew Reward:**
 - **Iron Gut Tripel** — +40 HP, applies Inspired but lowers Accuracy next turn (next turn
@@ -140,6 +197,34 @@ item's own file under `design/items/brewery_tour/`.
 
 **Satirical Delusion:** Bros are confused by vape brewing but pretend it's sophisticated.
 
+**ICQ Integration (RedRoomRandy):**
+
+**Trigger:** Triggered via Free Wi-Fi hotspot upon opening cellar door at midnight outside **The Tap Dat Vault**.  
+**Audio:** Standard ICQ "Uh-oh!" chime.  
+**Sender Profile:** RedRoomRandy (`ICQ #66601999`) — Grayscale CCTV still of an empty metal chair. Heavy breathing cadence, sells VIP access links that never deliver actual content.  
+**Offer:** "Private Vapor-Booth Webstream Access" (Paywall Scam).  
+**Price:** 30 SOVS.
+
+```
+*ICQ: "Uh-oh!"*
+
+[POPUP: RedRoomRandy (#66601999)]
+psst... hey tourist...
+u want the REAL tap dat vault experience...?
+the stuff behind the strobe curtain...
+private booth cam 04... two girls inhaling 90% proof clouds in latex...
+uncensored feed... VIP stream access...
+30 SOVS directly to my offshore gateway...
+click now before the bouncer resets the router...
+```
+
+**Player Action & Consequence:**
+- **Decline:** Window dismissed. Pilsner: *"Gentlemen, a man of my caliber experiences decadence in person, not through dial-up."*
+- **Buy (30 SOVS):** 30 SOVS deducted. A browser popup opens, displays a 56k loading bar for 4 seconds, then errors out to a static JPG: **RedRoomRandy's VIP Access Slip** (Junk Item).
+  - **Item Name:** RedRoomRandy's VIP Access Slip
+  - **Category:** Junk
+  - **Inspect Text:** *"A low-res receipt with a dead hyperlink: 'HTTP 404: STREAM CONVERTED TO BITCOIN MINER.' At the bottom, in 8pt Comic Sans: 'THANK U FOR UR DONATION TO THE ARTS.'"*
+
 **Brew Reward:**
 - **Vape Stout** — Restores SP and applies Glow-Up Aura (Charm/Defense up), but causes Grease Fingers
 - Full stat block: `design/items/brewery_tour/beer_tap_dat_vault_item.md`
@@ -182,8 +267,36 @@ item's own file under `design/items/brewery_tour/`.
 
 **Satirical Delusion:** Bros think they understand blockchain technology and this is an investment opportunity.
 
+**ICQ Integration (CryptoBro69):**
+
+**Trigger:** Triggered via Free Wi-Fi hotspot inside the Velvet Curtain Club corridor leading down to **Ye Olde B.R.E.W. Lab**.  
+**Audio:** Standard ICQ "Uh-oh!" chime.  
+**Sender Profile:** CryptoBro69 (`ICQ #694208008`) — Stock photo of yellow Lamborghini with "HODL" watermark. Excessive rocket/diamond emojis, obnoxious crypto buzzwords, pitches a beer-backed token.  
+**Offer:** "Pre-ICO Allocation: $HUFF (VapeSwap Governance Token)".  
+**Price:** 10 $ABSN (Green Fairy Finance) or 100 $TRASH (EuroTrash Reserve).
+
+```
+*ICQ: "Uh-oh!"*
+
+[POPUP: CryptoBro69 (#694208008)]
+🚨 BREWVOLUTION WHALE ALERT 🚨
+Bro!! U standing on top of Ye Olde B.R.E.W. Lab right now?!
+The AI brewmaster is minting LIQUID YIELD on-chain!!
+Don't just drink the hops bro... OWN THE LIQUIDITY POOL 🚀🚀
+Pre-ICO seed round for $HUFF is LIVE!! 
+10 $ABSN or 100 $TRASH = 10,000 $HUFF tokens + VIP Discord role!!
+WE GOING TO THE MOON IN A YEAST-POWERED LAMBO 💎🙌
+```
+
+**Player Action & Consequence:**
+- **Decline:** Closed window. Chadwick: *"I don't need his seed round, bro. My personal brand is already fully capitalized."*
+- **Buy (10 $ABSN or 100 $TRASH):** Crypto deducted. An automated confirmation ticket drops into inventory: **Laminated $HUFF Presale Ticket** (Junk Item).
+  - **Item Name:** Laminated $HUFF Presale Ticket
+  - **Category:** Junk
+  - **Inspect Text:** *"Thermal cardstock printed slightly crooked. A QR code on the back points to an expired Telegram group named 'BREW-BOYS-LAMBO-OR-BUST (ARCHIVED).' The network fees exceeded your net worth."*
+
 **Brew Reward:**
-- **Blockchain Bock** — +20 HP, +10 Sovs, applies Tourist Trapped next battle
+- **Blockchain Bock** — +20 HP, +10 SOVS, applies Tourist Trapped next battle
 - **Enhanced Effect:** *"You feel smarter but everyone else feels dumber listening to you"*
 - Full stat block: `design/items/brewery_tour/beer_ye_olde_brew_lab_item.md`
 
@@ -231,7 +344,7 @@ Failing one locks you out for 1 in-game hour (real-time = 5 min).
   - Screen occasionally flickers with a "glitch" effect
   - NPCs comment on your appearance
 - **Cure:** a full meal (Plot Armor Provisions equivalent), sleep, or a 45-minute wait
-- **Price:** 75 Sovs, repurchasable from any stamped Debaucheryville location
+- **Price:** 75 SOVS, repurchasable from any stamped Debaucheryville location
 - **Flavor text:** *"Four stamps. Four different ways to question reality. The night was
   legendary. The morning is punishment."*
 
@@ -354,13 +467,14 @@ The brewery tour becomes a **perfect vehicle** for showing how these aging bros 
 ## Notes — Reconciliation to Master Spec (2026-08-05)
 
 - **Removed:** all four "ICQ Integration" popup blocks (Miss Morphine, Tony420, RedRoomRandy,
-  CryptoBro69) — each one sold openers or opener-adjacent packages for Sovs, which is dead
+  CryptoBro69) — each one sold openers or opener-adjacent packages for SOVS, which is dead
   per the master spec's earned-not-bought opener model. No replacement scam gag was invented;
   none was ordered.
+- **Restored (author, 2026-11-11):** four new ICQ popups (Miss Morphine, Tony420, RedRoomRandy, CryptoBro69). None sells openers; each sells a junk item with inspect microcopy.
 - **Removed:** the "ICQ Popup Social Media Sharing" feature and its share templates — it
   existed only to promote the now-dead popups above.
 - **Removed:** the "Friendster Account Payment" Y2K Bingo square and the Tony420
-  "hire you for 420 Sovs" bingo reward line — both cited the now-removed CryptoBro69 popup as
+  "hire you for 420 SOVS" bingo reward line — both cited the now-removed CryptoBro69 popup as
   their source.
 - **Adjusted:** "Peak Y2K Tourist" mega-achievement now requires Y2K Bingo + selfie
   compilation only (the "Share 3 ICQ popups" leg is gone with the feature it depended on);
@@ -371,7 +485,7 @@ The brewery tour becomes a **perfect vehicle** for showing how these aging bros 
   midnight-only, 1-hour first-entry lockout, time-gated states under Time-Based Satirical
   Elements).
 - **Corrected:** the Legendary Hangover block now matches the master spec's named reward
-  ("The Neon Nightmare," +20/-15/45 min/75 Sovs) — the file previously had unnamed,
+  ("The Neon Nightmare," +20/-15/45 min/75 SOVS) — the file previously had unnamed,
   non-canonical numbers (+25 HP/+10 SP/+2 all stats/3 turns) that matched no other source.
 - **Added:** the Overview Table (top) and the "Debaucheryville Selfie Spots" table with the
   "Neon Photogenic" badge, both pulled from `design/items/brewery_passport_book_debaucheryville.md`

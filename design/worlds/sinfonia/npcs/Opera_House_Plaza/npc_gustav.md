@@ -26,7 +26,7 @@ He is not lost. He knows exactly where he is. He knows this city better than any
 A noble steed in peril. A magnificent animal, spooked and frightened, who must be gently recovered and returned to his rightful master. Lord Pilsner has cast him as the horse from a movie he cannot name. Chadwick believes Gustav is "vibing." Bradley, alone, notes that the horse is maintaining a consistent lead and never actually running, and does not press the point.
 
 ### The Comedy Gap
-The bros are conducting a rescue. Gustav is conducting a resignation. Every gap he opens up is deliberate — he speeds up exactly enough to stay ahead and no more, he stops to eat an 85 Sovs cake, he pauses on a lit stage in a stolen opera cape while a soprano holds a high F, and he leaves when he is finished. The chase has a director and it is not any of the humans in it.
+The bros are conducting a rescue. Gustav is conducting a resignation. Every gap he opens up is deliberate — he speeds up exactly enough to stay ahead and no more, he stops to eat an 85 SOVS cake, he pauses on a lit stage in a stolen opera cape while a soprano holds a high F, and he leaves when he is finished. The chase has a director and it is not any of the humans in it.
 
 The one moment the bros come genuinely close to understanding him is the Skittles negotiation — and they get there by accident, on advice from a woman who feeds pigeons, using American candy that has been in Chadwick's pocket since Publandia for reasons nobody has ever explained.
 
@@ -110,7 +110,7 @@ Rest. Not freedom in the abstract — rest. Grass instead of cobblestones. Quiet
 | Hans-Jürgen calls his name | *Angry snort. Stamps a forefoot once. Looks deliberately at something else.* |
 
 ### Café Sachertorte — The Heist
-> *He walks the length of the display case. He considers all twelve cakes. He is not hurried and he is not random. He selects the Sachertorte — the centre pedestal, the crown jewel, the 85 Sovs one — and eats it in three bites.*
+> *He walks the length of the display case. He considers all twelve cakes. He is not hurried and he is not random. He selects the Sachertorte — the centre pedestal, the crown jewel, the 85 SOVS one — and eats it in three bites.*
 
 *Herr Ober: "NEIN! NEIN! DAS PFERD!"*
 
@@ -190,7 +190,7 @@ Rest. Not freedom in the abstract — rest. Grass instead of cobblestones. Quiet
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Bag of Skittles (American Import) | — (Chadwick's inventory, unexplained, since Publandia) | Trivial | The only key that opens Phase 2 of the Stadtpark negotiation |
-| Selfie with the Fiaker horse | 5 Sovs tip to Hans-Jürgen | 5 Sovs | +1 Bravado. Gustav turns his head away and the photo is always bad. |
+| Selfie with the Fiaker horse | 5 SOVS tip to Hans-Jürgen | 5 SOVS | +1 Bravado. Gustav turns his head away and the photo is always bad. |
 | Gustav's Daily Blessing | Free | — | Path B only: standing within three metres restores SP and grants "Moonlit Serenity" once per in-game day |
 | Petting (pre-quest) | Free | — | Permitted for two seconds. On the third he moves his shoulder. |
 
@@ -212,7 +212,7 @@ Rest. Not freedom in the abstract — rest. Grass instead of cobblestones. Quiet
 | Pigeon Lady (`sinfonia_npc_pigeon_lady_01`) | She talks to him. He listens. She reports what he says and is never wrong. |
 | Papageno / Franz (`sinfonia_npc_papageno_franz_01`) | Years of birdseed through the stage door. Gustav trusts him and no one else in a costume. |
 | Fiaker Driver Collective (`fiaker_driver_collective`) | Every driver in the queue has said "too good for this work" about him at some point |
-| Herr Ober (`sinfonia_npc_herr_ober_01`) | Now permanently associated in Herr Ober's mind with the end of civilisation and 85 Sovs |
+| Herr Ober (`sinfonia_npc_herr_ober_01`) | Now permanently associated in Herr Ober's mind with the end of civilisation and 85 SOVS |
 | Prima Donna Adelheid (`sinfonia_npc_prima_donna_adelheid_01`) | He interrupted her aria. She has not let it go and will not. |
 | The swans, Stadtpark | Mutual, total avoidance. He will not go near the pond. They know it. |
 
@@ -227,7 +227,7 @@ Rest. Not freedom in the abstract — rest. Grass instead of cobblestones. Quiet
 
 ### Within Sinfonia
 - Opera House Plaza, harnessed, pre-quest and (Path A) post-quest.
-- Café Sachertorte, Phase 2 only. The café keeps a photograph of him mid-bite on the "Wall of Shame" permanently, plus a commemorative 8 Sovs chocolate horse cookie named "The Gustav."
+- Café Sachertorte, Phase 2 only. The café keeps a photograph of him mid-bite on the "Wall of Shame" permanently, plus a commemorative 8 SOVS chocolate horse cookie named "The Gustav."
 - Bassline Opera House backstage and stage, Phase 3 only.
 - Stadtpark, Phase 4 — and permanently, on Path B.
 
@@ -278,10 +278,10 @@ Path A: back in harness, on reformed terms, with a bag of Skittles somewhere in 
 - **Quest**: The Fiaker Fiasco (`sinfonia_sidequest_fiaker_fiasco_01`)
 - **Role**: Quest Target across all four phases; resolution subject
 - **Trigger**: Hans-Jürgen's plaza encounter (day hours). Gustav is visible fleeing before the party is given the objective.
-- **Outcome**: Four resolutions. A — returns on reformed terms (best; 500 Sovs gratitude discount, "Horse Whisperer" achievement, Fiaker fast-travel). B — retires to Stadtpark ("Liberation" achievement, permanent park buff NPC, no discount). C — escapes entirely (debt +1,000 Sovs, "Horse Guilt" status, permanent journal marker). D — bros bail (debt +500 Sovs abandonment fee, "Coward" status, Hans-Jürgen hostile).
+- **Outcome**: Four resolutions. A — returns on reformed terms (best; 500 SOVS gratitude discount, "Horse Whisperer" achievement, Fiaker fast-travel). B — retires to Stadtpark ("Liberation" achievement, permanent park buff NPC, no discount). C — escapes entirely (debt +1,000 SOVS, "Horse Guilt" status, permanent journal marker). D — bros bail (debt +500 SOVS abandonment fee, "Coward" status, Hans-Jürgen hostile).
 
 ### Quest Gate Function
-Gustav gates nothing directly, but he is the sole gate on the quest's economics: the difference between Path A and Path C is a 1,500 Sovs swing in the party's accumulated damage debt, and that debt is tracked by every vendor in Sinfonia until it is cleared.
+Gustav gates nothing directly, but he is the sole gate on the quest's economics: the difference between Path A and Path C is a 1,500 SOVS swing in the party's accumulated damage debt, and that debt is tracked by every vendor in Sinfonia until it is cleared.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -297,7 +297,7 @@ Gustav gates nothing directly, but he is the sole gate on the quest's economics:
 
 ### Screenshot Moments
 1. **Gustav in the opera cape.** The single most exportable image in Sinfonia.
-2. Mid-bite on an 85 Sovs Sachertorte, in a café, with a head waiter screaming behind him.
+2. Mid-bite on an 85 SOVS Sachertorte, in a café, with a head waiter screaming behind him.
 3. Centre stage under a spotlight during "Der Hölle Rache," cape settling, entirely composed.
 4. The judgemental stare, held, in close-up.
 5. Path B: walking into moonlight across the Stadtpark lawn.
@@ -373,7 +373,7 @@ None. **Gustav must never be voiced, never be subtitled, and never be given a th
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on tourist animal-attraction culture and the bros' inability to read the situation; Lipizzans and the Spanish Riding School are treated with respect
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Gustav is competent, dignified, and in control of every scene he appears in
-- [x] Humor is affectionate mockery, not mean-spirited — the animal is never humiliated, never injured, and never the butt of the joke; the humans are
+- [x] Humor is affectionate mockery — the animal is never humiliated, never injured, and never the butt of the joke; the humans are
 
 ---
 

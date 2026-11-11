@@ -11,8 +11,8 @@
 | **ABV** | 11.5% [source: design/items/brewery_passport_book_debaucheryville.md L137] |
 | **Effects** | +40 HP restoration [source: design/items/brewery_passport_book_debaucheryville.md L138]; "Inspired" status (+10 Bravado for 30 min) [source: design/items/brewery_passport_book_debaucheryville.md L139] |
 | **Risk** | -10% Accuracy next turn (the strength hits hard) [source: design/items/brewery_passport_book_debaucheryville.md L140] — Contradiction 2 RULED (author): next-turn only, no other duration applies (extraction Rulings) |
-| **Price** | 10 Sovs — within the 8–15 Sovs guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book_debaucheryville.md L141] |
-| **Special** | served in antique goblet (return for 2 Sovs deposit) [source: design/items/brewery_passport_book_debaucheryville.md L144] |
+| **Price** | 10 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book_debaucheryville.md L141] |
+| **Special** | served in antique goblet (return for 2 SOVS deposit) [source: design/items/brewery_passport_book_debaucheryville.md L144] |
 
 ## Flavor Text
 > "300 years of brewing tradition. 0 years of health code compliance. Priorities." [source: design/items/brewery_passport_book_debaucheryville.md L142]
@@ -23,4 +23,4 @@
 
 ## Notes
 - Brewed by — Three-Crown Keg Haus (ancient recipe, questionable equipment) [source: design/items/brewery_passport_book_debaucheryville.md L143].
-- Deep field carried forward per Task 5 brief: the 2-Sov goblet deposit is the beer's defining special quirk (per the Special row above) — return the antique goblet for a 2-Sovs refund.
+- Deep field carried forward per Task 5 brief: the 2-SOV goblet deposit is the beer's defining special quirk (per the Special row above) — return the antique goblet for a 2-SOVS refund.

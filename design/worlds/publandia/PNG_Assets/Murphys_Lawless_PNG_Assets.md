@@ -257,7 +257,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
 | Mystery Wine (Sealed Since '08) | (0, 48) | 32x64 | Dust-coated bottle, label sun-faded illegible. Could be great. Could be vinegar |
-| Murphy's Strong Tall Can | (32, 48) | 32x64 | Ominously tall. 3 Sovs. "Bad Decision" buff included |
+| Murphy's Strong Tall Can | (32, 48) | 32x64 | Ominously tall. 3 SOVS. "Bad Decision" buff included |
 | MurphyBoost™ Original | (64, 48) | 32x64 | Suspicious Yellow can with lightning bolt drawn slightly wrong |
 | MurphyBoost™ EXTREME | (96, 48) | 32x64 | EXTREME Red, 60% Cardiac Concern, no waiver (there should be) |
 | "Medicinal" Energy Tonic | (128, 48) | 32x64 | Apothecary-shaped bottle, medical claims in tiny print |
@@ -298,7 +298,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Day-Old Sandwich | (96, 0) | 32x32 | "It's been here a while. But it's still here." |
 | Murphy's Mixed Nuts | (128, 0) | 32x32 | One nut always weird |
 | The Weird Nut Close-Up | (160, 0) | 32x32 | Examine payoff: it is not any known nut |
-| Water Bottle (2 Sovs) | (192, 0) | 32x32 | "Worth it." — Murphy, correctly |
+| Water Bottle (2 SOVS) | (192, 0) | 32x32 | "Worth it." — Murphy, correctly |
 | Generic Cigarette Pack | (224, 0) | 32x32 | Counter-wall stock |
 
 ### "Medicinal" Items:
@@ -429,13 +429,13 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Cash Only Icon | (128, 192) | 32x32 | Coin stack — the preferred, "honest" currency |
 | Card "Broken" Icon | (160, 192) | 32x32 | Card with bandage. It is not broken. Quest evidence |
 | Frequent Sufferer Progress Pips | (128, 224) | 64x32 | 5 tally pips filling per side effect survived |
-| Buy Button | (192, 192) | 64x32 | "REGRET IT" (the buy verb, 44px+ touch target with padding) |
+| Buy Button | (192, 192) | 64x32 | "REGRET IT" (the buy verb, 44px+ click target with padding) |
 | Cancel Button | (192, 224) | 64x32 | "WISE" (the flee verb) |
 
 ### Technical Notes:
 - Risk display swaps sober/drunk sprite based on player intoxication state — no numeric fallback while drunk, that's the mechanic
 - Purchase Confirm always renders the No Refunds styling; there is no version without it
-- All tappable UI elements ship with transparent padding to guarantee 44px minimum touch targets at 1x
+- All clickable UI elements ship with transparent padding to guarantee 44px minimum click targets at 1x
 
 ---
 
@@ -554,13 +554,13 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Risk-Tier Hatch Legend | (0, 160) | 128x32 | Risk pips coded by hatch density (solid/diagonal/cross-hatch), never color alone — the percentage numeral always renders beside the pips when sober |
-| Large Touch Target Overlay | (128, 160) | 64x32 | Debug/QA overlay proving 44px minimum zones on buy, cancel, tabs, and hotspots |
+| Large Click Target Overlay | (128, 160) | 64x32 | Debug/QA overlay proving 44px minimum zones on buy, cancel, tabs, and hotspots |
 | Status Icon Text Labels | (192, 160) | 64x32 | Text label strip ("REGRET", "JITTERS", etc.) attachable under every status icon |
 
 - Risk percentages communicate via numeral + hatch pattern + pip count — three channels, zero color dependency
 - Status icons are shape-distinct silhouettes (drooping glass vs. vibrating can vs. worried heart) before any color is applied
 - MurphyBoost Original vs. EXTREME differ by can shape and label typography, not just yellow vs. red
-- All interactive elements (buy, cancel, tabs, Murphy, fridges, back room door) meet the 44px minimum touch target
+- All interactive elements (buy, cancel, tabs, Murphy, fridges, back room door) meet the 44px minimum click target
 
 ---
 
@@ -594,8 +594,8 @@ assets/sprites/locations/publandia/murphys_lawless/
 - **Particle Limit:** 20 (rain, dust motes, and cold-air wisps share the pool)
 
 ### Performance Notes:
-- Simplified shelving meshes on mobile — aisle shelves collapse to 2 sprites + collision, per the profile's platform note
-- Reduced flicker on mobile: neon and fluorescent share one timer to avoid duplicate per-frame work
+- Simplified shelving meshes on min-spec hardware — aisle shelves collapse to 2 sprites + collision, per the profile's platform note
+- Reduced flicker on min-spec hardware: neon and fluorescent share one timer to avoid duplicate per-frame work
 - Back Room Interior streams in on unlock only; never resident during normal shopping
 - Max 2 customer NPCs concurrent; the Enthusiast's 12 fps vibration is the frame-rate budget's single indulgence
 
@@ -670,7 +670,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 1. **The Half-Dead Neon** - "MURPH'S LAWLE" glowing through the mist, apostrophe dangling — instantly recognizable shop-sign comedy
 2. **"Card machine broken (always)"** - The handwritten lie taped next to a working card machine, laminated "No Refunds" sign in frame
 3. **The Risk Display Gag** - Side-by-side sober "RISK: 60%" vs. drunk "RISK: ¯\\_?_/¯" screenshots — the mechanic explains itself
-4. **The Mystery Wine** - A dust-caked bottle, sealed since '08, price tag: 6 Sovs — the gamble in still-life
+4. **The Mystery Wine** - A dust-caked bottle, sealed since '08, price tag: 6 SOVS — the gamble in still-life
 5. **The MurphyBoost Enthusiast** - Visibly vibrating NPC mid-testimonial, third EXTREME can in hand
 6. **The Back Room Reveal** - Green-lit shelves of reasonable prices after an entire shop of chaos — the twist that quality existed all along
 
@@ -749,7 +749,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 - [ ] Satirical theme (3 AM desperation economics, side effects as features) is clear throughout all assets
 - [ ] Hidden interactions discoverable: back-of-fridge silhouette, weird nut, band shirt typo, card machine examine, back room glow through the ajar door
 - [ ] Performance optimized (12 draw calls, 20-particle pool, alpha-toggle flicker, back room streamed on unlock)
-- [ ] Touch zone sizing considered (44px minimum — buy/cancel buttons, category tabs, all examine hotspots compliant)
+- [ ] Click zone sizing considered (44px minimum — buy/cancel buttons, category tabs, all examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (hatch-pattern risk pips, numeral + pip redundancy, shape-distinct status icons, text label strip)
 - [ ] Social media viral potential maximized (half-dead neon framing, sober/drunk risk display comparison, Enthusiast vibration loop GIF-ability)
 

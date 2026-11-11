@@ -571,7 +571,7 @@
           "time": 9,
           "action": "dialogue",
           "speaker": "prima_donna_adelheid",
-          "text": "I require 500 Sovs for therapeutic vocal rest. The TRAUMA.",
+          "text": "I require 500 SOVS for therapeutic vocal rest. The TRAUMA.",
           "emotion": "dramatic_injury"
         },
         {
@@ -585,7 +585,7 @@
             "backdrop": 400,
             "note": "Backdrop 0 if Papageno path"
           },
-          "total_display": "2,000 Sovs",
+          "total_display": "2,000 SOVS",
           "sfx": "register_ching_final"
         },
         {
@@ -600,7 +600,7 @@
             },
             {
               "id": "negotiate_prima_donna",
-              "text": "That 500 Sovs seems excessive... (Charm 4)",
+              "text": "That 500 SOVS seems excessive... (Charm 4)",
               "stat_check": {"charm": 4},
               "result": "prima_donna_reduced"
             },

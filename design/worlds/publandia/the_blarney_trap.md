@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 10:30 AM - 2:30 AM (Irish licensing laws, stretched)
 - **Stat Requirements**: None (the Trap welcomes all paying customers)
-- **Item Requirements**: SOVS for drinks/rooms (7-9 Sovs pints, 55-120 Sovs rooms)
+- **Item Requirements**: SOVS for drinks/rooms (7-9 SOVS pints, 55-120 SOVS rooms)
 - **Previous Location Requirements**: None (likely first Publandia location visited)
 - **Special Conditions**: Automatically discovered upon arriving in Publandia
 
@@ -117,7 +117,7 @@ This is the bros' base of operations because it appeared first in their search r
 - **Sensitivity Considerations**: Celebrates Irish hospitality while satirizing its packaging
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Craic Tax pricing (8 Sovs pints that cost 6 Sovs across the river)
+- **Primary Vice**: Craic Tax pricing (8 SOVS pints that cost 6 SOVS across the river)
 - **City-Specific Comedy Operations**: The Backroom's unlicensed activities
 - **Buffoon Exploitation**: Bros who think they've found "the real Ireland" at the most obviously tourist pub
 - **Comedy of Errors**: Infinite refills meeting finite tolerance
@@ -175,27 +175,27 @@ This is the bros' base of operations because it appeared first in their search r
 ### Accommodation Options
 | Room | Price/Night | Restoration | Noise Level | Features |
 |------|-------------|-------------|-------------|----------|
-| Shared Dorm | 35 Sovs | 50% HP/SP | Extreme | Snoring NPCs, "Embarrassed" risk |
-| Street-Facing Single | 55 Sovs | 70% HP/SP | High | Authentic atmosphere |
-| Courtyard Single | 70 Sovs | 85% HP/SP | Moderate | Actually sleepable |
-| Street-Facing Double | 75 Sovs | 70% HP/SP | High | Bros can share |
-| Courtyard Double | 90 Sovs | 85% HP/SP | Moderate | Better value |
-| The Yeats Suite | 120 Sovs | 100% HP/SP | Low | Quotes included |
-| The Joyce Suite | 120 Sovs | 100% HP/SP | Low | Layout confusing |
-| The Wilde Suite | 150 Sovs | 100% HP/SP + buff | Low | "Wit Sharpened" status |
-| The Behan Suite | 150 Sovs | 100% HP/SP | Low | Minibar pre-stocked |
+| Shared Dorm | 35 SOVS | 50% HP/SP | Extreme | Snoring NPCs, "Embarrassed" risk |
+| Street-Facing Single | 55 SOVS | 70% HP/SP | High | Authentic atmosphere |
+| Courtyard Single | 70 SOVS | 85% HP/SP | Moderate | Actually sleepable |
+| Street-Facing Double | 75 SOVS | 70% HP/SP | High | Bros can share |
+| Courtyard Double | 90 SOVS | 85% HP/SP | Moderate | Better value |
+| The Yeats Suite | 120 SOVS | 100% HP/SP | Low | Quotes included |
+| The Joyce Suite | 120 SOVS | 100% HP/SP | Low | Layout confusing |
+| The Wilde Suite | 150 SOVS | 100% HP/SP + buff | Low | "Wit Sharpened" status |
+| The Behan Suite | 150 SOVS | 100% HP/SP | Low | Minibar pre-stocked |
 
 ### Pub Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Notes |
 |------|-------|-----------|---------------|-------|
-| Guinness (Pint) | 8 Sovs | +15 HP | Progresses toward "Scuttered" | The 119.5-second ritual |
-| Smithwick's (Pint) | 7 Sovs | +12 HP | Progresses toward "Scuttered" | Locals' alternative |
-| Whiskey (Jameson) | 8 Sovs | +10 HP, +5 SP | +Bravado temporarily | Standard pour |
-| Whiskey (Premium) | 12-20 Sovs | +15 HP, +10 SP | +Bravado, +Charm | Impress the staff |
-| Irish Coffee | 10 Sovs | +20 HP, +15 SP | Caffeine + Alcohol balance | Tourist favorite |
-| Tayto Crisps | 3 Sovs | +5 HP | Absorbs some alcohol | Cheese & Onion or nothing |
-| Toastie | 8 Sovs | +25 HP | Absorbs significant alcohol | Pub food perfection |
-| Full Irish | 15 Sovs | +50 HP | Cures "The Fear," +Clarity | Morning recovery essential |
+| Guinness (Pint) | 8 SOVS | +15 HP | Progresses toward "Scuttered" | The 119.5-second ritual |
+| Smithwick's (Pint) | 7 SOVS | +12 HP | Progresses toward "Scuttered" | Locals' alternative |
+| Whiskey (Jameson) | 8 SOVS | +10 HP, +5 SP | +Bravado temporarily | Standard pour |
+| Whiskey (Premium) | 12-20 SOVS | +15 HP, +10 SP | +Bravado, +Charm | Impress the staff |
+| Irish Coffee | 10 SOVS | +20 HP, +15 SP | Caffeine + Alcohol balance | Tourist favorite |
+| Tayto Crisps | 3 SOVS | +5 HP | Absorbs some alcohol | Cheese & Onion or nothing |
+| Toastie | 8 SOVS | +25 HP | Absorbs significant alcohol | Pub food perfection |
+| Full Irish | 15 SOVS | +50 HP | Cures "The Fear," +Clarity | Morning recovery essential |
 
 ### Drinking Contest Mechanics (Pint-Offs)
 - **Trigger**: Challenge or be challenged by NPCs
@@ -374,7 +374,7 @@ This is the bros' base of operations because it appeared first in their search r
 
 ### The Bottle Opener Keychain (Quest Starter)
 **Location**: Behind the bar, displayed among Seamus's collection
-**Acquisition**: Purchase (15 Sovs) OR win a Pint-Off challenge OR reach "Pub Regular" status
+**Acquisition**: Purchase (15 SOVS) OR win a Pint-Off challenge OR reach "Pub Regular" status
 **Function**: REQUIRED to participate in the Brewery Tour sidequest across ALL cities
 **Appearance**: Brass opener shaped like a shamrock, "The Blarney Trap" engraved
 **Item Type**: Key Item (cannot be sold or discarded)
@@ -454,7 +454,7 @@ This is the bros' base of operations because it appeared first in their search r
 | SP Restoration | +10 SP |
 | Special Effect | "Comfortable Trap" — +10% Bravado retention for 1 hour |
 | Status Risk | 5% chance of "Contentment" (reduced urgency to leave current location) |
-| Purchase Price | 8 Sovs (only available at The Blarney Trap after unlock) |
+| Purchase Price | 8 SOVS (only available at The Blarney Trap after unlock) |
 
 **Flavor Text**: "You came to the Craic Tax knowing the prices. You stayed anyway. You surrendered. And you know what? It's delicious. Brewed by Stoutworks, perfected by giving in."
 
@@ -478,7 +478,7 @@ This is the bros' base of operations because it appeared first in their search r
 - **Type**: Ultimate Consumable (limited use, can be repurchased)
 - **Effect**: +15 to ALL stats for entire battle, inflicts "Legendary Hungover" after battle ends
 - **"Legendary Hungover"**: -10 all stats for 30 minutes, cured by Full Irish Breakfast or sleep
-- **Purchase Price**: 50 Sovs (only available after unlock, from any stamped Publandia location)
+- **Purchase Price**: 50 SOVS (only available after unlock, from any stamped Publandia location)
 - **Flavor Text**: "Four stamps. Four surrenders. Four reasons you'll need a Full Irish tomorrow. The night of your life has a morning after."
 
 ### Brewmaster Selfie Collectible (Bonus Layer)

@@ -247,14 +247,14 @@ Feeding people at the hour they most need feeding, in a way that honours a dish 
 ### Menu
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Kapsalon (Regular) | 10 Sovs | 10 Sovs | +35 HP, Cheese Sweats. "Large enough for most." |
-| Kapsalon (Large) | 14 Sovs | 14 Sovs | +50 HP, Cheese Sweats, 20% Food Coma risk. "For the committed." |
-| Kapsalon "King Size" | 18 Sovs | 18 Sovs | +70 HP, Cheese Sweats, Food Coma guaranteed. Wall of Fame eligible. |
-| **The Wim** | 15 Sovs | 15 Sovs | Large with extra cheese, extra meat, extra sauce, extra EVERYTHING. **Constitution check required** — fail = immediate Food Coma. Survive = +50 HP and the "Kapsalon Conqueror" achievement. |
-| Extra Cheese | +2 Sovs | +2 Sovs | +10 HP, extended Cheese Sweats. "More blanket." |
-| Extra Sambal | +1 Sov | +1 Sov | +5 HP, −5 HP delayed. "Port City hot." |
-| Both Sauces | +1 Sov | Priceless | +5 HP, **Wim Respect**. "You understand." |
-| Drink (Cola) | 3 Sovs | 3 Sovs | +5 HP. "For the cheese." |
+| Kapsalon (Regular) | 10 SOVS | 10 SOVS | +35 HP, Cheese Sweats. "Large enough for most." |
+| Kapsalon (Large) | 14 SOVS | 14 SOVS | +50 HP, Cheese Sweats, 20% Food Coma risk. "For the committed." |
+| Kapsalon "King Size" | 18 SOVS | 18 SOVS | +70 HP, Cheese Sweats, Food Coma guaranteed. Wall of Fame eligible. |
+| **The Wim** | 15 SOVS | 15 SOVS | Large with extra cheese, extra meat, extra sauce, extra EVERYTHING. **Constitution check required** — fail = immediate Food Coma. Survive = +50 HP and the "Kapsalon Conqueror" achievement. |
+| Extra Cheese | +2 SOVS | +2 SOVS | +10 HP, extended Cheese Sweats. "More blanket." |
+| Extra Sambal | +1 SOV | +1 SOV | +5 HP, −5 HP delayed. "Port City hot." |
+| Both Sauces | +1 SOV | Priceless | +5 HP, **Wim Respect**. "You understand." |
+| Drink (Cola) | 3 SOVS | 3 SOVS | +5 HP. "For the cheese." |
 | Replacement Fork | Free | Essential | Provided before you ask. Always. |
 
 ### Special Items
@@ -265,7 +265,7 @@ Feeding people at the hour they most need feeding, in a way that honours a dish 
 
 ### Hidden Details / Easter Eggs
 - **The Wall of Fame is real**: Eleven photos before the player arrives. Examine them individually — each has a first name and a date. Wim can name all eleven from memory if asked, in order, with dates.
-- **"The Wim"**: The 15 Sovs item is named after him, by his customers, without his input. He has never referred to it by that name out loud. Ordering it produces a beat of silence before he starts building.
+- **"The Wim"**: The 15 SOVS item is named after him, by his customers, without his input. He has never referred to it by that name out loud. Ordering it produces a beat of silence before he starts building.
 - **Nataniël Gomes**: The barber's name and the 2003 date are historically accurate to the real dish's origin. This is deliberate — the tribute is sincere.
 - **The two forks**: After your first fork break, Wim silently sets down two forks with every subsequent order, forever, and never mentions it.
 
@@ -349,7 +349,7 @@ Wim does not change; the player's standing does. The progression is: customer �
 - **Outcome**: The player must publicly rank the döner of the trip. Wim's counter is the venue for the reckoning.
 
 ### Optional Challenge: The King Size
-- **Requirement**: Order and finish the King Size kapsalon (18 Sovs)
+- **Requirement**: Order and finish the King Size kapsalon (18 SOVS)
 - **Time Limit**: None. This is survival, not speed.
 - **Witness**: Wim watches the entire attempt. He does not leave and does not speak.
 - **Reward**: Photo on the Wall of Fame (permanent, examinable), Wim's eternal recognition, "Wall of Fame" achievement
@@ -453,8 +453,8 @@ Dutch-Turkish, second generation, Shamsterdam-raised with port-city cadence. A t
 ## 📝 Development Notes
 
 - **HARD CANON: this character is BIG WIM. He was formerly drafted as "Big Willem" and that name is retired.** Willem is the Voetgangerstunnel busker and nobody else, game-wide.
-  - ⚠️ **KNOWN OUTSTANDING RENAME MISS**: `Design/Quests/greatdonerdebate.md` line 325 still reads *"I KNOW WHAT IT IS, WILLEM."* This must be changed to *"I KNOW WHAT IT IS, WIM."* The "...you know my name?" response is unaffected and still works — "Big Wim" is the trading name, "Wim" is the personal one, and the rival using the personal name is the point. Flagged, not edited in this pass.
-- **"The Wim" (15 Sovs) and "King Size" (18 Sovs) are two different items with overlapping design intent.** `greatdonerdebate.md` defines The Wim (large + extra everything, Constitution check, Kapsalon Conqueror achievement); `kapsalon_koning.md` defines King Size (Wall of Fame eligible, guaranteed Food Coma). Both are carried in this profile as distinct SKUs. If a reconciliation pass merges them, The Wim's name and the Constitution check must survive.
+  - ⚠️ **KNOWN OUTSTANDING RENAME MISS**: `design/quests/general_quests/greatdonerdebate.md` line 323 reads *"I KNOW WHAT IT IS, WILHELMUS."* (the WILLEM copy was the root duplicate, deleted 2026-11-11) This must be changed to *"I KNOW WHAT IT IS, WIM."* The "...you know my name?" response is unaffected and still works — "Big Wim" is the trading name, "Wim" is the personal one, and the rival using the personal name is the point. Flagged, not edited in this pass.
+- **"The Wim" (15 SOVS) and "King Size" (18 SOVS) are two different items with overlapping design intent.** `greatdonerdebate.md` defines The Wim (large + extra everything, Constitution check, Kapsalon Conqueror achievement); `kapsalon_koning.md` defines King Size (Wall of Fame eligible, guaranteed Food Coma). Both are carried in this profile as distinct SKUs. If a reconciliation pass merges them, The Wim's name and the Constitution check must survive.
 - Wim's 128px sprite height must clear every other NPC in every shared frame. This is an asset-doc constraint and a character constraint. Do not compress him into a crowd.
 - The fork break is 100% guaranteed on the first kapsalon and cannot be prevented. After it fires once, Wim silently puts down two forks forever and never mentions it again — implement the silence, it is funnier than a callback line.
 - The confrontation beat is scene-critical. Preserve "...you know my name?" verbatim. Wim is useless for the rest of the confrontation because he is thinking about the WhatsApp group; play it that way.
@@ -466,7 +466,7 @@ Dutch-Turkish, second generation, Shamsterdam-raised with port-city cadence. A t
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Wim has none. Sovs, cash, 10–18 Sovs.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Wim has none. SOVS, cash, 10–18 SOVS.
 - [x] **NO automatic crypto assumptions** — a snack bar counter at 3 AM takes cash and card
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — there is nothing to be aware of; the board is accurate, the photos are accurate, the fork will break
@@ -476,7 +476,7 @@ Dutch-Turkish, second generation, Shamsterdam-raised with port-city cadence. A t
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is bros ordering Large at 3 AM; the kapsalon itself is celebrated and its real inventor is honoured by name
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Wim is a skilled, generous, fairly-priced operator training his nephew to succeed him; he sends business to his competitor and speaks well of him
-- [x] Humour is affectionate mockery, not mean-spirited — the Dutch-Turkish fusion is celebrated at length and with historical accuracy; every laugh is at the customer's relationship with a tray, never at Wim
+- [x] Humour is affectionate mockery — the Dutch-Turkish fusion is celebrated at length and with historical accuracy; every laugh is at the customer's relationship with a tray, never at Wim
 
 ---
 
@@ -491,7 +491,7 @@ Dutch-Turkish, second generation, Shamsterdam-raised with port-city cadence. A t
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `kapsalon_koning.md` + `PNG_Assets/Kapsalon_Koning_PNG_Assets.md` + `Design/Quests/greatdonerdebate.md` ("The Wim" menu item, confrontation beat). Big Willem → Big Wim rename carried; outstanding rename miss in `greatdonerdebate.md` flagged. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `kapsalon_koning.md` + `PNG_Assets/Kapsalon_Koning_PNG_Assets.md` + `design/quests/general_quests/greatdonerdebate.md` ("The Wim" menu item, confrontation beat). Big Willem → Big Wim rename carried; outstanding rename miss in `greatdonerdebate.md` flagged. | Shamsterdam NPC authoring pass |
 
 ---
 

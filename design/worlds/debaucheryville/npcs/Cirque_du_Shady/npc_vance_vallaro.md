@@ -124,7 +124,7 @@ He built something. It stopped moving in 1997 and it never stopped *working*, an
 > "No crate. Fine. Healthy. Genuinely — *(exhale)* — healthy. Most people don't say no and I've stopped finding that interesting."
 
 *Asking whether the games are rigged:*
-> "Rigged? The bottles are heavy and the rings are small. I'm not going to insult you by calling that a mystery. Three Sovs a go. *(exhale)* Five to fifteen tickets. Prize costs more tickets than the games cost Sovs. That's the whole shape of it, my friend, and it's been the shape of it since before you were driving."
+> "Rigged? The bottles are heavy and the rings are small. I'm not going to insult you by calling that a mystery. Three SOVS a go. *(exhale)* Five to fifteen tickets. Prize costs more tickets than the games cost SOVS. That's the whole shape of it, my friend, and it's been the shape of it since before you were driving."
 
 *Asking to see inside the big top:*
 > "Ah. *(exhale)* No. Not because of anything. Just no."

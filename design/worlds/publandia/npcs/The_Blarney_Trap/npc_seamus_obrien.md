@@ -18,13 +18,13 @@
 
 ### What He's Actually Doing
 
-Running the most professionally executed tourist pub in The Craic Tax and being completely honest about it. Seamus is a third-generation publican who inherited an 1847 building and rebranded it in 2003 for the tourist era. He pours Guinness correctly, employs live musicians, charges Craic Tax prices (8 Sovs a pint, 6 Sovs across the river), and greets every American who walks through the weathered green door with a genuine welcome he has performed roughly forty thousand times without it ever once curdling into contempt.
+Running the most professionally executed tourist pub in The Craic Tax and being completely honest about it. Seamus is a third-generation publican who inherited an 1847 building and rebranded it in 2003 for the tourist era. He pours Guinness correctly, employs live musicians, charges Craic Tax prices (8 SOVS a pint, 6 SOVS across the river), and greets every American who walks through the weathered green door with a genuine welcome he has performed roughly forty thousand times without it ever once curdling into contempt.
 
-He also runs something bigger. The brass shamrock bottle opener behind his bar (15 Sovs) is not a souvenir — it is a credential. Seamus's grandfather started a mutual-aid arrangement between publicans across Europe: you look after each other's travellers. Seamus maintains it. When a bro says "Seamus sent me" at a taproom in Debaucheryville or a proeflokaal in Shamsterdam, doors open, tours get enhanced, and a stamp gets pressed into a leather-bound book. Every "Seamus" in that phrase, anywhere in Europe, is this Seamus.
+He also runs something bigger. The brass shamrock bottle opener behind his bar (15 SOVS) is not a souvenir — it is a credential. Seamus's grandfather started a mutual-aid arrangement between publicans across Europe: you look after each other's travellers. Seamus maintains it. When a bro says "Seamus sent me" at a taproom in Debaucheryville or a proeflokaal in Shamsterdam, doors open, tours get enhanced, and a stamp gets pressed into a leather-bound book. Every "Seamus" in that phrase, anywhere in Europe, is this Seamus.
 
 ### What Bros Believe
 
-That they have found a hidden gem, that Seamus has personally taken a liking to them specifically, and that they are now — after roughly two hours — his friends. Lord Pilsner has heard Seamus say the word "friend" and taken it as a formal designation. The bros believe the bottle opener is a cool piece of merch, that the passport book is a fun freebie, and that their access to breweries across Europe is a result of their own charm rather than a hundred-year-old publicans' agreement they stumbled into by spending 15 Sovs.
+That they have found a hidden gem, that Seamus has personally taken a liking to them specifically, and that they are now — after roughly two hours — his friends. Lord Pilsner has heard Seamus say the word "friend" and taken it as a formal designation. The bros believe the bottle opener is a cool piece of merch, that the passport book is a fun freebie, and that their access to breweries across Europe is a result of their own charm rather than a hundred-year-old publicans' agreement they stumbled into by spending 15 SOVS.
 
 ### The Comedy Gap
 
@@ -92,7 +92,7 @@ Sprite sheet `seamus_and_staff.png` (1024x1024) carries eleven Seamus body state
 
 ### Motivation
 
-His grandfather asked his father, and his father asked him: *are we selling beer or selling Publandia?* The answer was "both," and the answer was correct. Seamus's motivation is to keep a building his family has held since before Sovs, to employ four people properly, and to run the arrangement his grandfather started without letting it rot into a loyalty-card scheme. He wants the pint poured right. He wants the tourists to leave happy. He wants the regulars to still have somewhere to go at midnight when the tourists have gone up to bed. He has structured an entire business so that all three can be true at once, and it works.
+His grandfather asked his father, and his father asked him: *are we selling beer or selling Publandia?* The answer was "both," and the answer was correct. Seamus's motivation is to keep a building his family has held since before SOVS, to employ four people properly, and to run the arrangement his grandfather started without letting it rot into a loyalty-card scheme. He wants the pint poured right. He wants the tourists to leave happy. He wants the regulars to still have somewhere to go at midnight when the tourists have gone up to bed. He has structured an entire business so that all three can be true at once, and it works.
 
 ---
 
@@ -131,7 +131,7 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 **If the player drinks before the dome settles**:
 > "You've — no. No, that's grand. It's your pint. I'll just be over here, grieving."
 
-**Ordering a Smithwick's instead (7 Sovs)**:
+**Ordering a Smithwick's instead (7 SOVS)**:
 > "Smithwick's! Now that's a local's order. Either you've done your reading or you've got taste. I'll not ask which."
 
 ---
@@ -140,7 +140,7 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 
 > "Craic Tax prices? Aye, guilty. But you're paying for location, atmosphere, and my sparkling personality. Fair trade."
 
-> "Eight Sovs. It's six across the river. I'm not going to pretend otherwise — you'd find out and then you'd feel foolish, and I don't sell that."
+> "Eight SOVS. It's six across the river. I'm not going to pretend otherwise — you'd find out and then you'd feel foolish, and I don't sell that."
 
 > "The tourists keep the lights on. The regulars keep me sane. You could be both if you stick around."
 
@@ -235,14 +235,14 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 > "Street-facing, is it? You'll hear the craic till three. Aoife'll tell you that's a feature. Aoife is right, but she's also being paid to say it."
 
 **Morning after (player has "The Fear")**:
-> "Full Irish. Fifteen Sovs. Don't argue with me, you're not in a condition to argue with anyone."
+> "Full Irish. Fifteen SOVS. Don't argue with me, you're not in a condition to argue with anyone."
 
 ---
 
 ### If Player Declines / Alternative Path
 
 **Refusing to buy the opener**:
-> "Fifteen Sovs's fifteen Sovs, I'll not push. It'll be here. So will I. So will the doors it opens — they'll just stay shut."
+> "Fifteen SOVS's fifteen SOVS, I'll not push. It'll be here. So will I. So will the doors it opens — they'll just stay shut."
 
 **Refusing a round in The Round System**:
 > "Ah. *the warmth stays on his face and leaves his voice* Right so."
@@ -301,34 +301,34 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 ### Drinks & Food (Standing Menu)
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Guinness (Pint) | 8 Sovs | 6 Sovs across the river | +15 HP, progresses toward "Absolutely Scuttered", triggers the 119.5-second ritual |
-| Smithwick's (Pint) | 7 Sovs | 5 Sovs across the river | +12 HP, progresses toward "Absolutely Scuttered", flagged by Seamus as a local's order |
-| Whiskey (Jameson) | 8 Sovs | 4 Sovs measure | +10 HP, +5 SP, temporary +Bravado |
-| Whiskey (Premium — Powers, Redbreast, Midleton) | 12–20 Sovs | 7–14 Sovs | +15 HP, +10 SP, +Bravado, +Charm; ordering Midleton unlocks a staff-respect beat |
-| Irish Coffee | 10 Sovs | 4 Sovs in materials | +20 HP, +15 SP, caffeine/alcohol balance, tourist favourite and Seamus knows it |
-| Tayto Crisps (Cheese & Onion) | 3 Sovs | 1 Sov | +5 HP, absorbs some alcohol. There is no second flavour. Do not ask. |
-| Toastie | 8 Sovs | 3 Sovs | +25 HP, absorbs significant alcohol |
-| Full Irish | 15 Sovs | 6 Sovs | +50 HP, cures "The Fear", +Clarity |
-| The Sweet Surrender | 8 Sovs | Contract-brewed by Stoutworks to Seamus's grandfather's recipe | +35 HP, +10 SP, "Comfortable Trap" (+10% Bravado retention, 1 hour), 5% "Contentment". **Locked until the Blarney Trap stamp is earned.** First one free. |
-| Publandia Legendary Hangover | 50 Sovs | Priceless / regrettable | +15 ALL stats for one full battle, then "Legendary Hungover" (−10 all stats, 30 min). **Locked until all four Publandia stamps are collected.** |
+| Guinness (Pint) | 8 SOVS | 6 SOVS across the river | +15 HP, progresses toward "Absolutely Scuttered", triggers the 119.5-second ritual |
+| Smithwick's (Pint) | 7 SOVS | 5 SOVS across the river | +12 HP, progresses toward "Absolutely Scuttered", flagged by Seamus as a local's order |
+| Whiskey (Jameson) | 8 SOVS | 4 SOVS measure | +10 HP, +5 SP, temporary +Bravado |
+| Whiskey (Premium — Powers, Redbreast, Midleton) | 12–20 SOVS | 7–14 SOVS | +15 HP, +10 SP, +Bravado, +Charm; ordering Midleton unlocks a staff-respect beat |
+| Irish Coffee | 10 SOVS | 4 SOVS in materials | +20 HP, +15 SP, caffeine/alcohol balance, tourist favourite and Seamus knows it |
+| Tayto Crisps (Cheese & Onion) | 3 SOVS | 1 SOV | +5 HP, absorbs some alcohol. There is no second flavour. Do not ask. |
+| Toastie | 8 SOVS | 3 SOVS | +25 HP, absorbs significant alcohol |
+| Full Irish | 15 SOVS | 6 SOVS | +50 HP, cures "The Fear", +Clarity |
+| The Sweet Surrender | 8 SOVS | Contract-brewed by Stoutworks to Seamus's grandfather's recipe | +35 HP, +10 SP, "Comfortable Trap" (+10% Bravado retention, 1 hour), 5% "Contentment". **Locked until the Blarney Trap stamp is earned.** First one free. |
+| Publandia Legendary Hangover | 50 SOVS | Priceless / regrettable | +15 ALL stats for one full battle, then "Legendary Hungover" (−10 all stats, 30 min). **Locked until all four Publandia stamps are collected.** |
 
 ### Accommodation
 | Room | Price/Night | Restoration | Noise | Seamus's Sales Line |
 |------|-------------|-------------|-------|---------------------|
-| Shared Dorm | 35 Sovs | 50% HP/SP | Extreme | "You'll make friends. You'll hear every one of them breathing." |
-| Street-Facing Single | 55 Sovs | 70% HP/SP | High | "Atmospheric. That's the word we use." |
-| Courtyard Single | 70 Sovs | 85% HP/SP | Moderate | "You'll actually sleep. Worth the fifteen." |
-| Street-Facing Double | 75 Sovs | 70% HP/SP | High | "Two of you, one window, all the craic." |
-| Courtyard Double | 90 Sovs | 85% HP/SP | Moderate | "Best value in the house and I'll not be talked down." |
-| The Yeats Suite | 120 Sovs | 100% HP/SP | Low | "Quotes on every surface. Some of them are even his." |
-| The Joyce Suite | 120 Sovs | 100% HP/SP | Low | "The layout's confusing on purpose. That's the joke. You'll get it around 3 AM." |
-| The Wilde Suite | 150 Sovs | 100% HP/SP + "Wit Sharpened" | Low | "Velvet everything. You'll wake up cleverer. Or think you have." |
-| The Behan Suite | 150 Sovs | 100% HP/SP | Low | "Minibar's pre-stocked. No judgment. That's not a slogan, that's a policy." |
+| Shared Dorm | 35 SOVS | 50% HP/SP | Extreme | "You'll make friends. You'll hear every one of them breathing." |
+| Street-Facing Single | 55 SOVS | 70% HP/SP | High | "Atmospheric. That's the word we use." |
+| Courtyard Single | 70 SOVS | 85% HP/SP | Moderate | "You'll actually sleep. Worth the fifteen." |
+| Street-Facing Double | 75 SOVS | 70% HP/SP | High | "Two of you, one window, all the craic." |
+| Courtyard Double | 90 SOVS | 85% HP/SP | Moderate | "Best value in the house and I'll not be talked down." |
+| The Yeats Suite | 120 SOVS | 100% HP/SP | Low | "Quotes on every surface. Some of them are even his." |
+| The Joyce Suite | 120 SOVS | 100% HP/SP | Low | "The layout's confusing on purpose. That's the joke. You'll get it around 3 AM." |
+| The Wilde Suite | 150 SOVS | 100% HP/SP + "Wit Sharpened" | Low | "Velvet everything. You'll wake up cleverer. Or think you have." |
+| The Behan Suite | 150 SOVS | 100% HP/SP | Low | "Minibar's pre-stocked. No judgment. That's not a slogan, that's a policy." |
 
 ### Key Items
 | Item | Price | Alternative Acquisition | Function |
 |------|-------|------------------------|----------|
-| Bottle Opener Keychain | 15 Sovs | Win a Pint-Off, OR reach "Pub Regular" status | Brass shamrock, "The Blarney Trap" engraved. **Required to participate in the Brewery Tour sidequest in every city.** Key Item — cannot be sold or discarded. |
+| Bottle Opener Keychain | 15 SOVS | Win a Pint-Off, OR reach "Pub Regular" status | Brass shamrock, "The Blarney Trap" engraved. **Required to participate in the Brewery Tour sidequest in every city.** Key Item — cannot be sold or discarded. |
 | The Brewery Passport Book | Free with the opener | Same | Leather-bound, "The Continental Beer Trail" embossed. Permanent Pause Menu tab. Tracks all stamps across all cities. |
 | The Blarney Trap Stamp | Free | Win a Pint-Off, OR deliver a successful toast, OR reach "Pub Regular" (opener required in inventory) | Celtic knot border, harp silhouette, "Est. 1847 — Publandia", deep emerald green ink. Unlocks The Sweet Surrender. |
 
@@ -373,7 +373,7 @@ Seamus does not leave The Blarney Trap. He does not have to — **the Seamus net
 
 - **Shenanigans**: Mickey Finnegan greets any opener-holder with "Seamus sent you, did he? Course he did. He sends me all the good ones and keeps the money." Mentioning Seamus to Mickey unlocks the Fool's Gold cross-stock and a warmer opening to the Wise Fool track.
 - **The Stoutworks Brewery**: Flashing the brass shamrock at the Welcome Center upgrades the standard tour to the enhanced route. Tour Guide Fiona: "Seamus's opener. Right, you're getting the good tour, not the coach-party one."
-- **Trinity of Pints**: The 10 Sovs "tuition" is waived at the registration desk for opener-holders. The gag: they call it an "articulation agreement with a partner institution."
+- **Trinity of Pints**: The 10 SOVS "tuition" is waived at the registration desk for opener-holders. The gag: they call it an "articulation agreement with a partner institution."
 - **Paddy's Book**: "Seamus sent me" is one of the nightly passwords at the unmarked door behind the dumpster. It works *sometimes* and it is *risky* — Tiny's discretion. Seamus has never authorised this and knows perfectly well it's happening. If asked: "Paddy uses my name at his door. I've asked him not to. He says it's a compliment. It isn't."
 - **The Craic Tax streets**: Touts and scouts recognise the opener and adjust their pitch — they'll still try to sell you something, but they'll stop pretending you just arrived.
 - **The Blarney Trap itself**: After the player earns Pub Regular status, Seamus's default idle shifts to Genuine Mode two hours earlier each night, which is the game's quietest and most-missed reward.
@@ -441,12 +441,12 @@ Seamus does not leave The Blarney Trap. He does not have to — **the Seamus net
 - **Quest**: The Continental Beer Trail (Brewery Passport chain)
 - **Quest ID**: `publandia_sidequest_continental_beer_trail_01`
 - **Role**: Quest Giver, Key Item Giver, Stamp Giver, and the origin point for the entire multi-city collectible track
-- **Trigger**: Purchasing the Bottle Opener Keychain (15 Sovs), winning a Pint-Off, or reaching "Pub Regular" status — whichever comes first
+- **Trigger**: Purchasing the Bottle Opener Keychain (15 SOVS), winning a Pint-Off, or reaching "Pub Regular" status — whichever comes first
 - **Outcome**: Player receives the opener and the passport book. The Pause Menu gains a permanent "Brewery Passport" tab. Eighteen stamp slots across four cities unlock as reachable content.
 
 ### Quest Gate Function
 
-**Seamus is a hard gate on roughly a third of the game's optional content.** Without the Bottle Opener Keychain, no brewery or pub in any city will award a stamp — the item is checked on entry at every one of them. This is the single most consequential 15 Sovs in Eurobound, and Seamus mentions it exactly once per visit without ever pressuring the player. The design intent is that players who skip it feel the absence in Debaucheryville and have to travel back, at which point Seamus says nothing about it at all, which is worse.
+**Seamus is a hard gate on roughly a third of the game's optional content.** Without the Bottle Opener Keychain, no brewery or pub in any city will award a stamp — the item is checked on entry at every one of them. This is the single most consequential 15 SOVS in Eurobound, and Seamus mentions it exactly once per visit without ever pressuring the player. The design intent is that players who skip it feel the absence in Debaucheryville and have to travel back, at which point Seamus says nothing about it at all, which is worse.
 
 Secondary gate: **The Snug and the Backroom.** Both require "Pub Regular" status, which Seamus grants personally. The Backroom unlocks the unlicensed poker, the trivia-fights, and the POS-terminal NFT acquisition. Declan is the door; Seamus is the decision.
 
@@ -456,9 +456,9 @@ Secondary gate: **The Snug and the Backroom.** Both require "Pub Regular" status
 | Bottle Opener Keychain | Purchase / Pint-Off victory / Pub Regular | Yes (Key Item, cannot be sold or discarded) | Grants brewery access game-wide; recognised in all four cities |
 | The Brewery Passport Book | Given free with the opener | Yes (permanent menu feature) | Tracks 18 stamps; unlocks city-completion and Continental rewards |
 | The Blarney Trap Stamp | Pint-Off win / successful toast / Pub Regular, with opener held | Yes | 1 of 4 Publandia stamps; unlocks The Sweet Surrender |
-| The Sweet Surrender | On stamp acquisition (first pint free, 8 Sovs after) | No (consumable) | +35 HP, +10 SP, "Comfortable Trap"; 5% "Contentment" |
+| The Sweet Surrender | On stamp acquisition (first pint free, 8 SOVS after) | No (consumable) | +35 HP, +10 SP, "Comfortable Trap"; 5% "Contentment" |
 | Pub Regular Badge | Consistent attendance, rounds bought, staff names remembered | Yes (status) | Snug access, discounts, staff trust, Backroom eligibility |
-| Publandia Legendary Hangover | All four Publandia stamps | No (repurchasable, 50 Sovs) | +15 all stats for one battle, then "Legendary Hungover" |
+| Publandia Legendary Hangover | All four Publandia stamps | No (repurchasable, 50 SOVS) | +15 all stats for one battle, then "Legendary Hungover" |
 
 ---
 
@@ -542,17 +542,17 @@ Dublin, north-side-inflected, softened by four decades of making himself intelli
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Seamus has no crypto content. The Blarney Trap is a cash-and-card pub economy in Sov and has been flagged "No crypto elements — Pure pub economics" in its source location file. The one adjacent hook (the NFT Hunt acquisition on the Trap's POS terminal) belongs to the terminal, not to Seamus; he neither knows nor cares what it is.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Seamus has no crypto content. The Blarney Trap is a cash-and-card pub economy in SOV and has been flagged "No crypto elements — Pure pub economics" in its source location file. The one adjacent hook (the NFT Hunt acquisition on the Trap's POS terminal) belongs to the terminal, not to Seamus; he neither knows nor cares what it is.
 - [x] **NO automatic crypto assumptions** — Seamus earns nothing in crypto. Nothing has been added.
 - [x] **Coins, kiosks, and certificates come from the master pool** — none invented here; none used here.
-- [x] **The bros are never scam-aware** — Lord Pilsner believes Seamus is his friend, Chadwick believes the atmosphere is content, and neither ever computes the 8 Sovs pint as a markup despite Seamus stating the markup aloud.
+- [x] **The bros are never scam-aware** — Lord Pilsner believes Seamus is his friend, Chadwick believes the atmosphere is content, and neither ever computes the 8 SOVS pint as a markup despite Seamus stating the markup aloud.
 - [x] **Nothing winks** — the in-fiction wink is a character gesture at the audience of tourists, never at the player. No line, tooltip, or examine text signals satire.
 - [x] **Focus on city-specific cultural exploitation instead** — Craic Tax pricing, the commodified pub experience, and the Temple Bar economics of manufactured authenticity.
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is that the bros cannot process plain English disclosure, not that Irish publicans are deceptive.
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Seamus is the most competent, most honest, and most emotionally stable character in Publandia.
-- [x] Humor is affectionate mockery, not mean-spirited — Irish hospitality is treated as a genuine skill; the satire lands on its packaging and on the people who can't tell the difference.
+- [x] Humor is affectionate mockery — Irish hospitality is treated as a genuine skill; the satire lands on its packaging and on the people who can't tell the difference.
 
 ---
 

@@ -22,7 +22,7 @@
 - **Normal Exit**: Front door (after listening to at least one provenance speech)
 - **Completion Requirements**: N/A (shop location)
 - **Failure States**: None (commerce always welcome)
-- **Progressive Unlocks**: "Discerning Customer" after 200 Sovs spent (skip provenance speeches, access specialty items)
+- **Progressive Unlocks**: "Discerning Customer" after 200 SOVS spent (skip provenance speeches, access specialty items)
 
 ## Visual Design
 ### Exterior Description
@@ -118,48 +118,48 @@ The shop sees opportunity in confusion:
 **Healing Items (Artisanal Remedies)**:
 | Item | Price | Effect | Provenance |
 |------|-------|--------|------------|
-| Artisanal Pain Relief | 15 Sovs | +50 HP | "Hand-pressed herbs from Alpine monasteries" |
-| Gourmet Energy Bar | 12 Sovs | +30 HP, +10 SP | "Single-origin cacao, ethically traded" |
-| Heritage Herbal Tea | 10 Sovs | +20 HP, cures status effects | "Blend unchanged since 1847" |
-| Mineral Water (Imported) | 8 Sovs | +15 HP, cures Thirsty | "From a spring that inspired Beethoven" |
-| Restorative Tincture | 25 Sovs | +75 HP | "Apothecary recipe, seven generations" |
-| Rejuvenation Elixir | 40 Sovs | Full HP restore | "The formula is a family secret" |
+| Artisanal Pain Relief | 15 SOVS | +50 HP | "Hand-pressed herbs from Alpine monasteries" |
+| Gourmet Energy Bar | 12 SOVS | +30 HP, +10 SP | "Single-origin cacao, ethically traded" |
+| Heritage Herbal Tea | 10 SOVS | +20 HP, cures status effects | "Blend unchanged since 1847" |
+| Mineral Water (Imported) | 8 SOVS | +15 HP, cures Thirsty | "From a spring that inspired Beethoven" |
+| Restorative Tincture | 25 SOVS | +75 HP | "Apothecary recipe, seven generations" |
+| Rejuvenation Elixir | 40 SOVS | Full HP restore | "The formula is a family secret" |
 
 **Support Items (Cultural Enhancement)**:
 | Item | Price | Effect | Description |
 |------|-------|--------|-------------|
-| Classical Music CD | 20 Sovs | +15% Focus (2 hours) | Improves concentration, reduces distraction |
-| Art Appreciation Guide | 25 Sovs | +10% Culture stat | Helps with authentication checks |
-| Meditation Incense | 15 Sovs | Restores SP over time | Burn between battles |
-| Pocket Philosopher | 30 Sovs | +20% Dialogue combat | Collection of witty responses |
-| Language Phrasebook | 18 Sovs | Reduces pronunciation penalties | Helps at vendors |
+| Classical Music CD | 20 SOVS | +15% Focus (2 hours) | Improves concentration, reduces distraction |
+| Art Appreciation Guide | 25 SOVS | +10% Culture stat | Helps with authentication checks |
+| Meditation Incense | 15 SOVS | Restores SP over time | Burn between battles |
+| Pocket Philosopher | 30 SOVS | +20% Dialogue combat | Collection of witty responses |
+| Language Phrasebook | 18 SOVS | Reduces pronunciation penalties | Helps at vendors |
 
 **Offensive Items (Collectibles With Purpose)**:
 | Item | Price | Effect | "Historical Significance" |
 |------|-------|--------|--------------------------|
-| Opera Glasses | 100 Sovs | Ranged advantage, +2 Perception | "Used by a Countess at the premiere of Don Giovanni" |
-| Conductor's Baton | 150 Sovs | Weapon: +3 Charm, chance to Confuse | "Allegedly touched by Strauss" |
-| Letter Opener (Ornate) | 80 Sovs | Weapon: Quick attack, low damage | "From a diplomat's desk, circa 1890" |
-| Walking Cane (Weighted) | 120 Sovs | Weapon: Moderate damage, +2 Style | "Conceals nothing. Officially." |
-| Antique Lorgnette | 90 Sovs | Thrown weapon, single use | "Too valuable to throw. But you could." |
+| Opera Glasses | 100 SOVS | Ranged advantage, +2 Perception | "Used by a Countess at the premiere of Don Giovanni" |
+| Conductor's Baton | 150 SOVS | Weapon: +3 Charm, chance to Confuse | "Allegedly touched by Strauss" |
+| Letter Opener (Ornate) | 80 SOVS | Weapon: Quick attack, low damage | "From a diplomat's desk, circa 1890" |
+| Walking Cane (Weighted) | 120 SOVS | Weapon: Moderate damage, +2 Style | "Conceals nothing. Officially." |
+| Antique Lorgnette | 90 SOVS | Thrown weapon, single use | "Too valuable to throw. But you could." |
 
 **Utility Items (Practical Sophistication)**:
 | Item | Price | Effect | Certificate Included |
 |------|-------|--------|---------------------|
-| Masquerade Mask (Basic) | 50 Sovs | Required for Baroness' Ballroom | "Carnival style, locally made" |
-| Masquerade Mask (Ornate) | 100 Sovs | +2 Mystery at masquerades | "Actual carnival import" |
-| Etiquette Guidebook | 35 Sovs | Reduces social combat difficulty | "The complete rules, annotated" |
-| Formal Event Invitation | 75 Sovs | Access to one formal event | "Transferable, untraceable" |
-| Calling Cards (Set of 20) | 25 Sovs | +5% NPC first impressions | "Embossed, naturally" |
+| Masquerade Mask (Basic) | 50 SOVS | Required for Baroness' Ballroom | "Carnival style, locally made" |
+| Masquerade Mask (Ornate) | 100 SOVS | +2 Mystery at masquerades | "Actual carnival import" |
+| Etiquette Guidebook | 35 SOVS | Reduces social combat difficulty | "The complete rules, annotated" |
+| Formal Event Invitation | 75 SOVS | Access to one formal event | "Transferable, untraceable" |
+| Calling Cards (Set of 20) | 25 SOVS | +5% NPC first impressions | "Embossed, naturally" |
 
 **Specialty Items (Discerning Customer Only)**:
 | Item | Price | Effect | Availability |
 |------|-------|--------|--------------|
-| Dance Lesson Voucher | 100 Sovs | +15% Dance skill permanently | Limited stock |
-| Art Authentication Kit | 150 Sovs | Detect all forgeries | One-time use per item |
-| VIP Opera Pass | 200 Sovs | Backstage access at Bassline | Season pass |
-| Baroness' Favor Token | 250 Sovs | +1 starting reputation at Ballroom | Rare |
-| Forged Invitation | 175 Sovs | Access anywhere, 10% detection risk | Specialty |
+| Dance Lesson Voucher | 100 SOVS | +15% Dance skill permanently | Limited stock |
+| Art Authentication Kit | 150 SOVS | Detect all forgeries | One-time use per item |
+| VIP Opera Pass | 200 SOVS | Backstage access at Bassline | Season pass |
+| Baroness' Favor Token | 250 SOVS | +1 starting reputation at Ballroom | Rare |
+| Forged Invitation | 175 SOVS | Access anywhere, 10% detection risk | Specialty |
 
 ### The Provenance System
 
@@ -174,7 +174,7 @@ The shop sees opportunity in confusion:
 *Selecting "Heritage Herbal Tea"*
 > "Ah, excellent choice. This blend dates to 1847, when the Müller family of the high valleys began cultivating these specific herbs. The lavender is from their original garden — the same plants, maintained for generations. The chamomile is wild-harvested by trained herbalists who understand the proper lunar cycle for maximum potency. The blend ratio has never been altered, except once in 1923 when a flood required temporary substitution, which the family considers 'the lost year.' You're not just buying tea. You're buying continuity."
 
-**Discerning Customer** (200 Sovs spent):
+**Discerning Customer** (200 SOVS spent):
 - Can politely skip speeches: "The usual, please."
 - Shopkeeper nods approvingly: "You already understand."
 - Transaction completes in 5 seconds
@@ -193,7 +193,7 @@ Every purchase includes a certificate:
 - Accumulate enough and inventory fills with paper
 - Some NPCs impressed by certificates
 - Others confused: "You have a certificate... for pain medicine?"
-- Can be sold back for 1 Sov each (insulting but possible)
+- Can be sold back for 1 SOV each (insulting but possible)
 
 ### Selfie Spot Integration
 

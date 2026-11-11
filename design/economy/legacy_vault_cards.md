@@ -10,7 +10,7 @@
 ## 1. What This File Is
 
 The Legacy Vault (Wallet Tab 1, unlocked from game start) renders one card per held asset. This
-file is the **card copy** for all twelve Frat Bro NFT collection targets plus the FuncoLand
+file is the **card copy** for all sixteen Frat Bro NFT collection targets plus the FuncoLand
 Nostalgia Series relic. Layout, framing, seals, the permanent Portfolio Thesis sub-header and the
 `[N of ∞] The Legacy Vault Secured` counter live in `wallet_ui.md`; this file supplies only the
 text that goes inside the frames.
@@ -29,7 +29,7 @@ text that goes inside the frames.
 1. **The Vault never winks.** No card, seal, tooltip, or footnote may signal that the assets are
    worthless. The Vault is a museum and it is written like one. The comedy is the distance between
    the framing and the object; nothing on screen closes that distance.
-2. **No card contradicts the item's canon.** 0 Sovs is 0 Sovs everywhere in the game (see
+2. **No card contradicts the item's canon.** 0 SOVS is 0 SOVS everywhere in the game (see
    `_sorting/Design/Inventory/items/tractor_nft_item.md` development notes). The Vault card
    restates the bros' valuation, never the world's, and never changes the item's actual worth.
 3. **Author-locked copy is reproduced verbatim** and is marked 🔒 below. It is not edited,
@@ -54,7 +54,7 @@ text that goes inside the frames.
 
 ## 2. Roster (source of truth)
 
-Twelve targets, four per city, per `_sorting/Design/Quests/fratbronft.md`.
+Sixteen targets, four per city, per `design/quests/general_quests/fratbronft.md` (Shamsterdam joined the collection by author ruling 2026-11-11; previously twelve across three cities).
 
 | # | City | Asset | Route (unchanged) | Canon source |
 |---|---|---|---|---|
@@ -70,10 +70,18 @@ Twelve targets, four per city, per `_sorting/Design/Quests/fratbronft.md`.
 | 10 | Publandia | Who You Gonna Call? (Mint #84) 🔒 | back-alley QR mural | author ruling 2026-08-01 |
 | 11 | Publandia | The Polyester Reserve (Mint #99) 🔒 | pub POS terminal | author ruling 2026-08-01 |
 | 12 | Publandia | America Online 🔒 | jukebox track 47, The Craic Tax | spec §7a.2 |
+| 13 | Shamsterdam | The Nordic Vacuum Warranty (Austin Powers Swedish Penis Enlarger Pump) ⏳ | Chocolate Anatomy Emporium QR route | author ruling 2026-11-11 |
+| 14 | Shamsterdam | Proof of Dairy Culture (Monica Lewinsky's dress) ⏳ | Cheese & Clog Corner hidden terminal | author ruling 2026-11-11 |
+| 15 | Shamsterdam | The Diapered Vector Loop (the Dancing Baby) ⏳ | Casa Rosé, after the show | author ruling 2026-11-11 |
+| 16 | Shamsterdam | The Bedrock Chewable Reserve (Flintstones Vitamins) ⏳ | Dennis's couchsurf | author ruling 2026-11-11; counted Shamsterdam #4 (author, 2026-11-11) |
 | — | Vault relic | FuncoLand Nostalgia Series 🔒 | gelato trade | spec §6.1 · display layer for `funcoland_futures_nft.json` |
 
 **Publandia is FINAL at four** (author ruling 2026-08-01). The former "poker pot" acquisition is
 struck from the collection entirely and must not be reintroduced by a future pass.
+
+**Shamsterdam joins the collection** (author ruling 2026-11-11). Subjects are approved. Display names for rows 13–15 are approved (author, 2026-11-11: Gemini's picks): The Nordic Vacuum Warranty, Proof of Dairy Culture, The Diapered Vector Loop. All card copy and all mint numbers are the author's and pending. No card sections exist for rows 13–16 yet. Dennis's NFT is counted Shamsterdam card #4 (author, 2026-11-11).
+
+**Collection milestones: 4 / 8 / 12 / 16** (author, 2026-11-11). 4: cosmetic badge. 8: Wallet of Shame. 12: reward pending author. 16: the CryptoBro69 press-conference epilogue (moved from 12). Detail in `design/quests/general_quests/fratbronft.md`.
 
 ⏳ = **author is writing this card's copy.** Seven assets were struck on 2026-08-01 as
 location-derived (spec §7c) and replaced by the artifacts above, **routes unchanged**. Their
@@ -169,7 +177,7 @@ an asset name. Same mapping and same prohibition as Card 1.
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
 **Status note (internal):** replaces the struck "Backstage Laminate (Unauthorized)"
-(location-derived, §7c defect). Route unchanged, including the two-Sovs coin-op CRT kiosk, the
+(location-derived, §7c defect). Route unchanged, including the two-SOVS coin-op CRT kiosk, the
 still-logged-in account and the dot-matrix receipt. "Winamp" is a brand and is exempt and closed
 (§7a.1). Same mapping and same prohibition as Card 1.
 
@@ -183,7 +191,7 @@ still-logged-in account and the dot-matrix receipt. "Winamp" is a brand and is e
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
 **Status note (internal):** replaces the struck "Foam Face #17" (location-derived, §7c defect).
-Route unchanged — the AR filter's MINT button and the five-Sovs cappuccino survive. "Crystal
+Route unchanged — the AR filter's MINT button and the five-SOVS cappuccino survive. "Crystal
 Pepsi" is a brand and is exempt and closed (§7a.1). Same mapping and same prohibition as Card 1.
 
 ### Card 8 — "She Thinks My Tractor's Sexy" (Mint #42) 🔒
@@ -312,7 +320,7 @@ account of the recording, not a description of the jukebox.
 
 ## 6. Vault Relic — FuncoLand Nostalgia Series 🔒
 
-*Not one of the twelve. Joins the Legacy Vault as a relic entry per spec §6.1 and counts toward
+*Not one of the sixteen. Joins the Legacy Vault as a relic entry per spec §6.1 and counts toward
 the `[N of ∞]` counter like any other holding.*
 
 > **Edition** — Limited Drop · Pre-2005 Retail Artifact  🔒
@@ -385,7 +393,7 @@ Collector's Thesis, and a confirmation or override of the proposed mint number:
 
 ### 7c. Still open
 
-1. **"Mask Selfie GIF" is not in the current twelve.** Spec §6.1 lists it as an example, but it
+1. **"Mask Selfie GIF" is not in the current sixteen.** Spec §6.1 lists it as an example, but it
    belongs to the superseded nine-NFT roster (legacy Sinfonia rival-showdown reward); the current
    `nfthuntsinfonia.md` four are Holographic Charizard, Winamp, Crystal Pepsi and the tractor
    token. No card was written for it. **Request:** confirm it stays retired, or rule it back in
@@ -403,11 +411,11 @@ Collector's Thesis, and a confirmation or override of the proposed mint number:
 
 - **To Lane E (`wallet_ui.md`):** card anatomy here matches spec §2 field order exactly. Two asks:
   the audio-card variant (§7.6), and confirmation that relic entries (FuncoLand) increment the
-  `[N of ∞] The Legacy Vault Secured` counter alongside the twelve targets.
+  `[N of ∞] The Legacy Vault Secured` counter alongside the sixteen targets.
 - **To Lane R (`_sorting/` retrofits):** Lane V read `fratbronft.md`, `nfthuntdebaucheryville.md`,
   `nfthuntsinfonia.md`, `publandia.md` and `tractor_nft_item.md` and **edited none of them**. If
   Round 5 appends card copy into item files per spec §6.1, the copy above is the source; do not
   re-author it.
 - **Out of scope this round:** engine card IDs, sort order, seal art, and any change to an asset's
-  in-world value. Every one of these assets is worth 0 Sovs to every vendor in the game, permanently,
+  in-world value. Every one of these assets is worth 0 SOVS to every vendor in the game, permanently,
   and no Vault card says so.

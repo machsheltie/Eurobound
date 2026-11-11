@@ -3,7 +3,7 @@
 *Artist Reference Document for Fiaker Fiasco's Emotional Finale*
 
 ## 📋 Overview
-The Stadtpark at night is a moonlit sanctuary turned dramatic stage — ancient trees, Victorian lampposts, a gilded Johann Strauss statue, and at the center a single exhausted white horse making his last stand. This document specifies every sprite sheet for the Fiaker Fiasco finale, where a bag of American candy, a runaway Austrian horse, and 2,340 Sovs in property damage somehow become the most emotionally resonant moment in the entire game.
+The Stadtpark at night is a moonlit sanctuary turned dramatic stage — ancient trees, Victorian lampposts, a gilded Johann Strauss statue, and at the center a single exhausted white horse making his last stand. This document specifies every sprite sheet for the Fiaker Fiasco finale, where a bag of American candy, a runaway Austrian horse, and 2,340 SOVS in property damage somehow become the most emotionally resonant moment in the entire game.
 
 **Location ID:** `sinfonia_stadtpark_gustavs_refuge_01`
 **Theme:** Emotional resolution amid absurdity — freedom versus responsibility, with high Viennese art (Strauss, eternally gilded) watching Americans negotiate with candy
@@ -454,7 +454,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 ### Colorblind Considerations:
 - Skittles read by shape and in-palm count, and the bag by its lettering, not color alone
 - Resolution-path lighting shifts (warm/cool/dark) are paired with distinct character poses per path
-- Touch zones minimum 44px for Skittles offering, Gustav approach, and dialogue choices
+- Click zones minimum 44px for Skittles offering, Gustav approach, and dialogue choices
 
 ---
 
@@ -516,10 +516,10 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Fiaker Fiasco phase-4 (finale) | Gustav all rows, Hans-Jürgen all rows, Skittles states | Entry from opera side-door; resolution selects Path A/B/C/D |
-| Path A — Gustav Returns | Nuzzle, Relief/Reunion, resigned return hand-off | Debt −500 Sovs (insurance), unlocks Fiaker fast travel |
+| Path A — Gustav Returns | Nuzzle, Relief/Reunion, resigned return hand-off | Debt −500 SOVS (insurance), unlocks Fiaker fast travel |
 | Path B — Gustav Retires | Trot Into Moonlight, Accepting Goodbye | Gustav becomes permanent park NPC with daily buff |
-| Path C — Gustav Escapes | Bolting, Hans-Jürgen Crying | Debt +1,000 Sovs, permanent guilt marker |
-| Path D — Bros Bail | Scene unchanged, cold lighting preset | Quest fails, debt +500 Sovs, Coward status |
+| Path C — Gustav Escapes | Bolting, Hans-Jürgen Crying | Debt +1,000 SOVS, permanent guilt marker |
+| Path D — Bros Bail | Scene unchanged, cold lighting preset | Quest fails, debt +500 SOVS, Coward status |
 | Papageno ally alternative | Papageno sprite (from opera house) | Approach possible without Skittles |
 
 ### Cross-Location Dependencies:
@@ -527,7 +527,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 |--------------------|-------------------|-------------------|
 | The Bassline Opera House | Quest entry point; Hans-Jürgen base sprite (more disheveled); Director may pursue in fury state; Papageno if ally path | Opera side-door path, night transition |
 | Opera House Plaza | Pigeon Lady base sprite (same character); Gustav returns to Fiaker queue on Path A | Post-quest state hand-off |
-| Café Sachertorte | Debt connection (damage total includes 340 Sovs café) | Damage counter UI carries over |
+| Café Sachertorte | Debt connection (damage total includes 340 SOVS café) | Damage counter UI carries over |
 | The Moderato Pub | Hans-Jürgen post-quest sad-drunk state (Path C) | NPC relocation, no shared sprites |
 | Crown & Cask | Easter egg payoff only — the `KING KLAUS` stall nameplate is an insult aimed at König Klaus. No shared sprites; the two Klauses must never appear in one scene | None — the gag is the ambiguity, resolving it kills it |
 
@@ -544,7 +544,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 ### Environmental Storytelling:
 - Trampled flowerbed tiles trace Gustav's exact route into the park
 - The gilded Strauss statue gleams over the whole negotiation, serenely indifferent — high art as unhelpful witness
-- Sleeping tourist, oblivious couple, and 1 Sov philosopher establish that Sinfonia's absurdity continues even at the emotional climax
+- Sleeping tourist, oblivious couple, and 1 SOV philosopher establish that Sinfonia's absurdity continues even at the emotional climax
 - Sleeping swans near the pond edge: deceptively peaceful, genuinely dangerous
 
 ### Character Integration Notes:
@@ -583,7 +583,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 ### Quote Potential:
 - "Taste the Rainbow" bag held toward horse
 - Pigeon Lady surrounded by birds at night
-- Philosopher offering wisdom for 1 Sov
+- Philosopher offering wisdom for 1 SOV
 - Sleeping tourist undisturbed by everything
 
 ---
@@ -655,7 +655,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - [ ] All four resolution-path lighting grades are distinct
 - [ ] Swan danger zone has discoverable visual cues
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 
@@ -667,7 +667,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia only; Stadtpark/Strauss evoke Vienna without naming it |
 | Cultural Specificity | ✅ | Viennese park culture, Waltz King monument, Fiaker horse tradition |
-| Satirical Targets Appropriate | ✅ | American candy diplomacy, tourist obliviousness, 1 Sov wisdom — punches up |
+| Satirical Targets Appropriate | ✅ | American candy diplomacy, tourist obliviousness, 1 SOV wisdom — punches up |
 | Seedy Underbelly Present | ✅ | Night park underclass (philosopher's bottle), vicious swans, guilt economies |
 | Gameplay Value Established | ✅ | Quest resolution with four endings, trust mechanic, permanent unlocks |
 | Technical Feasibility | ✅ | 10 sheets, atlas plan, LOD tiers documented |
@@ -676,4 +676,4 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Six screenshot moments identified; Path B built as shareable |
 
-**Stadtpark: Where a bag of American candy, a runaway Austrian horse, and 2,340 Sovs in property damage somehow become the most emotionally resonant moment in the entire game.**
+**Stadtpark: Where a bag of American candy, a runaway Austrian horse, and 2,340 SOVS in property damage somehow become the most emotionally resonant moment in the entire game.**

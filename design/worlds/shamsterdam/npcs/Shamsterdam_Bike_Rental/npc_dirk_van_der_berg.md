@@ -25,7 +25,7 @@ That Dirk is doing a bit. Lord Pilsner has decided the warnings are "part of the
 Dirk is the most honest vendor in Shamsterdam. He discloses everything. The disclosure has become the sales pitch. The bros hear "seventeen years of tourists have tried this and the bikes come back, sometimes" and interpret it as a challenge, which converts a legal warning into an upsell. He is not exploiting anyone. He is being ignored profitably, which is worse and funnier.
 
 ### The Detail That Makes Him Not A Villain
-Dirk keeps the free Crossing Tips service on the menu at 0 Sovs and pushes it before every rental. Nobody takes it. He offers it anyway, every time, twenty-two years running.
+Dirk keeps the free Crossing Tips service on the menu at 0 SOVS and pushes it before every rental. Nobody takes it. He offers it anyway, every time, twenty-two years running.
 
 ---
 
@@ -71,7 +71,7 @@ Sheet `npc_dirk_rental_owner.png` (288×320, 48×64 sprites, 5 rows). Row 3 — 
 | Unbudgeable on price | The damage assessment is fair, itemised, and non-negotiable. He will show you the parts. |
 
 ### Internal Monologue
-> "Seventeen of them this week said they cycle at home. At home. There are no trams at home. There are no forty cyclists behind you at home who will not stop and will not swerve because it has never once been necessary. I tell them. I tell all of them. And then I take the hundred and fifty Sovs hold, and I write the date on the form, and I think about which bike it will be. Usually it is the one with the good brakes. They always take the one with the good brakes and then they use them."
+> "Seventeen of them this week said they cycle at home. At home. There are no trams at home. There are no forty cyclists behind you at home who will not stop and will not swerve because it has never once been necessary. I tell them. I tell all of them. And then I take the hundred and fifty SOVS hold, and I write the date on the form, and I think about which bike it will be. Usually it is the one with the good brakes. They always take the one with the good brakes and then they use them."
 
 ### Motivation
 Keep the shop going, keep the family in it, keep the fleet turning over, and — genuinely, underneath all of it — get everybody back in one piece. He would trade the damage revenue for the return rate. He is not going to get to make that trade.
@@ -105,17 +105,17 @@ Keep the shop going, keep the family in it, keep the fleet turning over, and —
 **Dirk** (flat, unhurried):
 > "The basic covers theft. The premium covers damage. The platinum covers your dignity. None of them cover your decision-making."
 
-**On Standard (10 Sovs)**:
+**On Standard (10 SOVS)**:
 > "Standard covers minor damage. I define minor. You will not agree with my definition. That is why it is written down."
 
-**On Premium (20 Sovs)**:
-> "Twenty Sovs sounds like a lot until you're fishing your holiday out of a canal. It includes one recovery attempt. One. The canal gets a vote."
+**On Premium (20 SOVS)**:
+> "Twenty SOVS sounds like a lot until you're fishing your holiday out of a canal. It includes one recovery attempt. One. The canal gets a vote."
 
-**On Platinum (35 Sovs)**:
+**On Platinum (35 SOVS)**:
 > "The platinum tier. Nobody who buys this has ever used it." *(He lets that sit.)* "They are too careful to need it. Funny how that works."
 
 **If player declines all insurance**:
-> "That is allowed. The deposit is one hundred and fifty Sovs. The bike is three hundred and fifty. I am telling you these two numbers in the same sentence on purpose."
+> "That is allowed. The deposit is one hundred and fifty SOVS. The bike is three hundred and fifty. I am telling you these two numbers in the same sentence on purpose."
 
 ### Sales Close — The Rental
 
@@ -136,7 +136,7 @@ Keep the shop going, keep the family in it, keep the fleet turning over, and —
 ### Damage Assessment
 
 **Minor**:
-> "This? This is nothing. I have seen worse before breakfast." *(Beat.)* "Eight Sovs. The tyre."
+> "This? This is nothing. I have seen worse before breakfast." *(Beat.)* "Eight SOVS. The tyre."
 
 **Major**:
 > "How did you even—" *(He stops himself. He genuinely does not want to know.)* "No. Let me get the form."
@@ -215,30 +215,30 @@ Keep the shop going, keep the family in it, keep the fleet turning over, and —
 ### Bike Rental Tiers
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Basic Rental | 15 Sovs/day | 15 Sovs | Standard orange bike, lock, basket. Bypasses the Bike Crossing mini-game. One free "I told you so." |
-| Premium Rental | 25 Sovs/day | 25 Sovs, honestly | Better brakes (materially better), working bell, upgraded lock, map holder. Dirk's reluctant respect. |
-| "Survivor" Package | 40 Sovs/day | 40 Sovs | Reinforced frame (12 canal recoveries survived), reflective tape, emergency whistle. Anneke's number "for emergencies only." |
+| Basic Rental | 15 SOVS/day | 15 SOVS | Standard orange bike, lock, basket. Bypasses the Bike Crossing mini-game. One free "I told you so." |
+| Premium Rental | 25 SOVS/day | 25 SOVS, honestly | Better brakes (materially better), working bell, upgraded lock, map holder. Dirk's reluctant respect. |
+| "Survivor" Package | 40 SOVS/day | 40 SOVS | Reinforced frame (12 canal recoveries survived), reflective tape, emergency whistle. Anneke's number "for emergencies only." |
 | Crossing Tips | Free | Extremely high | 90 seconds of genuinely correct cycling advice. Offered every time. Taken almost never. |
 
 ### Insurance Packages
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Basic Insurance | Included | Marginal | Theft only, with police report. Excludes damage, canal, user error, Dutch cyclists. |
-| Standard Insurance | 10 Sovs | 10 Sovs | Theft + minor damage. "Minor" defined by Dirk, in writing. |
-| Premium Insurance | 20 Sovs | 20 Sovs | Theft, damage, "incidents." One free canal recovery attempt. |
-| Platinum Insurance | 35 Sovs | Statistically 0 Sovs | Everything but war and nuclear events. Unlimited canal recoveries. 500 Sovs damage waiver. Includes Opa Cees's blessing (minor navigation buff). Has never been claimed on. |
+| Standard Insurance | 10 SOVS | 10 SOVS | Theft + minor damage. "Minor" defined by Dirk, in writing. |
+| Premium Insurance | 20 SOVS | 20 SOVS | Theft, damage, "incidents." One free canal recovery attempt. |
+| Platinum Insurance | 35 SOVS | Statistically 0 SOVS | Everything but war and nuclear events. Unlimited canal recoveries. 500 SOVS damage waiver. Includes Opa Cees's blessing (minor navigation buff). Has never been claimed on. |
 
 ### Add-Ons & Deposits
 | Item/Service | Price | Effect/Result |
 |--------------|-------|---------------|
-| Helmet | 5 Sovs/day | +10% Collision Survival, marks you visibly as a tourist |
-| High-Visibility Vest | 4 Sovs/day | +20% Visibility, −30% Dignity |
-| Phone Mount | 3 Sovs/day | GPS while cycling; distraction risk |
-| Basket Liner | 2 Sovs | Stops small items falling through |
-| "Tourist Escort" Guide | 50 Sovs/hour | Guided cycling on safe routes |
-| Standard Deposit | 150 Sovs | Or credit card hold |
-| Bike Replacement | 350 Sovs | Non-negotiable |
-| Canal Recovery Fee | 75 Sovs found / 350 Sovs not found | The canal gets a vote |
+| Helmet | 5 SOVS/day | +10% Collision Survival, marks you visibly as a tourist |
+| High-Visibility Vest | 4 SOVS/day | +20% Visibility, −30% Dignity |
+| Phone Mount | 3 SOVS/day | GPS while cycling; distraction risk |
+| Basket Liner | 2 SOVS | Stops small items falling through |
+| "Tourist Escort" Guide | 50 SOVS/hour | Guided cycling on safe routes |
+| Standard Deposit | 150 SOVS | Or credit card hold |
+| Bike Replacement | 350 SOVS | Non-negotiable |
+| Canal Recovery Fee | 75 SOVS found / 350 SOVS not found | The canal gets a vote |
 
 ### Hidden Details / Easter Eggs
 - **The name tag counter**: "847 Canal Recoveries" increments in real time. Dump a rental in the canal and the tag reads 848 on your next visit. Nobody mentions it.
@@ -263,7 +263,7 @@ Keep the shop going, keep the family in it, keep the fleet turning over, and —
 ### Territory / Social Dynamics
 - Three generations, staged in depth: Anneke front, Dirk middle, Cees back. The player moves through the family in order of increasing honesty and decreasing commercial interest.
 - Dirk and Anneke run a two-temperature upsell — his cold statistics, her warm prediction game — and it is far more effective than either alone. Neither planned it.
-- The family betting pool on renter damage is Anneke's; Dirk pretends not to participate and owes her five Sovs as of the most recent tram-track incident.
+- The family betting pool on renter damage is Anneke's; Dirk pretends not to participate and owes her five SOVS as of the most recent tram-track incident.
 
 ---
 
@@ -329,7 +329,7 @@ Dirk's arc is a discount and a dropped speech. He never becomes warm. What chang
 - **Canal Recovery Assistant**: Not his quest (Opa Cees owns it), but completing it unlocks a one-time Dirk dialogue and a discounted premium rental.
 
 ### Quest Gate Function
-Dirk gates bicycle access, which gates the Bike Crossing bypass, the cyclist-only shortcuts, faster district travel, and the Keg Cycle timer challenge. The gate is entirely economic — 15 Sovs and a 150 Sovs hold — and he will not refuse anyone, no matter how many bikes they have destroyed. He will, however, quote the running total.
+Dirk gates bicycle access, which gates the Bike Crossing bypass, the cyclist-only shortcuts, faster district travel, and the Keg Cycle timer challenge. The gate is entirely economic — 15 SOVS and a 150 SOVS hold — and he will not refuse anyone, no matter how many bikes they have destroyed. He will, however, quote the running total.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -410,7 +410,7 @@ Dutch, direct, unornamented. Standard Shamsterdam commercial register. His Engli
 ## 📝 Development Notes
 
 - **The warning must always be given in full on first rental, and must never prevent the rental.** If a player can be talked out of it, the joke breaks. Dirk discloses; the player proceeds; the shop profits; nobody was deceived.
-- Crossing Tips at 0 Sovs must remain on the service menu permanently and must be genuinely useful when accepted (measurable Bike Crossing accuracy improvement). It is the character's moral floor.
+- Crossing Tips at 0 SOVS must remain on the service menu permanently and must be genuinely useful when accepted (measurable Bike Crossing accuracy improvement). It is the character's moral floor.
 - The name tag canal counter must be live-bound to `dirk_canal_recovery_count`. Art needs a four-digit-capable tag.
 - Insurance reduces damage cost, never damage probability. Dirk says this out loud in the Standard pitch and it must remain true in code.
 - Genuine Surprise is a **distinct sprite**, not a palette or eyebrow variant. If a player can't tell it apart from idle at a glance, the location's warmest beat is invisible.
@@ -422,7 +422,7 @@ Dutch, direct, unornamented. Standard Shamsterdam commercial register. His Engli
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Dirk has none. Sovs, cash discount, credit card holds for deposits.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Dirk has none. SOVS, cash discount, credit card holds for deposits.
 - [x] **NO automatic crypto assumptions** — a twenty-two-year family bike shop takes cards and cash and nothing else
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — there is no scam to be aware of; they are aware of neither the scam nor the honesty
@@ -432,7 +432,7 @@ Dutch, direct, unornamented. Standard Shamsterdam commercial register. His Engli
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is the bros hearing full disclosure as a dare
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Dirk is a competent, honest, fairly-priced operator who offers free correct advice and is systematically ignored
-- [x] Humour is affectionate mockery, not mean-spirited — his respect is earnable, his surprise is sincere, and his father and daughter both like him
+- [x] Humour is affectionate mockery — his respect is earnable, his surprise is sincere, and his father and daughter both like him
 
 ---
 

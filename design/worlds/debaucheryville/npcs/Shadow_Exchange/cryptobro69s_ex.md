@@ -124,14 +124,14 @@ She wants out — of the account, of the paperwork, of the group chat where a ma
 > "You were fine. You were — yeah. You were there. Lock the door on the way out, the handle sticks."
 
 ### If Player Declines / Alternative Path
-> "Great. Excellent. Then get out of the way, I'm three Sovs from winning this."
+> "Great. Excellent. Then get out of the way, I'm three SOVS from winning this."
 
 ### Couchsurf Herp Routing
 
 All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for the "Ex" — including the photograph, the CryptoBro69 ICQ gloat, and the post-cure callback — are authored in her Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — CryptoBro69's \"Ex\"". **Do not duplicate them here.** Flag: `cryptobro69s_ex_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 ### Callback Dialogue (Return Visits)
-> "Still here. Still three Sovs from winning. The board and I have an understanding now and the understanding is that I'm right."
+> "Still here. Still three SOVS from winning. The board and I have an understanding now and the understanding is that I'm right."
 
 ---
 
@@ -157,7 +157,7 @@ All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALL
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|---------------|----------------|
-| A place to crash | Free | −25 Sovs (she takes the last cab voucher) | Couchsurf; canonical **Hungover** status the next morning |
+| A place to crash | Free | −25 SOVS (she takes the last cab voucher) | Couchsurf; canonical **Hungover** status the next morning |
 | Pixelated Kebab Monkey NFT #2, scratched (pre-established) | Abandoned on the futon | Metadata reads `GAS FEE: "Don't Worry About It."` | Canonical alternate acquisition route for NFT #2 |
 | An accurate opinion of you | Free, unsolicited | Extremely high | Flavor dialogue; no stat effect and no way to decline it |
 | A photograph of you | Free to her, catastrophic to you | See ICQ log | Herp rejection scene only |
@@ -246,14 +246,14 @@ She gets closer to winning. Each revisit, the printout has one more thing circle
 - **Quest**: Couchsurfing Chronicles — Debaucheryville entry #3
 - **Role**: Couchsurf Host / Item Source
 - **Trigger**: Witness the slippage argument at the Shadow Exchange counter and accept the invitation
-- **Outcome (canonical)**: Gain **NFT #2** (Pixelated Kebab Monkey, scratched — alternate acquisition route), **Hungover** status, and **−25 Sovs** because she took the last cab voucher. Canonical ICQ harassment follows the next day
+- **Outcome (canonical)**: Gain **NFT #2** (Pixelated Kebab Monkey, scratched — alternate acquisition route), **Hungover** status, and **−25 SOVS** because she took the last cab voucher. Canonical ICQ harassment follows the next day
 
 ### Secondary Quest — Nothing Is Getting Through
 - **Quest**: `debaucheryville_sidequest_nothing_is_getting_through_01`
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) approaches her at the Shadow Exchange
-- **Outcome**: Herp Rejection Scene fires (see Dialogue) — laugh, photograph, send, resume argument. No couchsurf, no NFT, no Sovs loss; the cost is the ICQ log. CryptoBro69's gloat fires ~40 seconds later and is repeatable with the same strings. Scene is repeatable
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the sincere Coin appraisal, "either of you," "still no" — **and then she reverses on her own terms and the couchsurf resolves normally**: canonical **NFT #2** (Pixelated Kebab Monkey, scratched), **Hungover**, and **−25 Sovs**, because she takes the cab voucher up front this time and says so. She is explicit that it is not about him, and her exit line is the harshest one she has. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
+- **Outcome**: Herp Rejection Scene fires (see Dialogue) — laugh, photograph, send, resume argument. No couchsurf, no NFT, no SOVS loss; the cost is the ICQ log. CryptoBro69's gloat fires ~40 seconds later and is repeatable with the same strings. Scene is repeatable
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the sincere Coin appraisal, "either of you," "still no" — **and then she reverses on her own terms and the couchsurf resolves normally**: canonical **NFT #2** (Pixelated Kebab Monkey, scratched), **Hungover**, and **−25 SOVS**, because she takes the cab voucher up front this time and says so. She is explicit that it is not about him, and her exit line is the harshest one she has. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 
@@ -322,7 +322,7 @@ Local Debaucheryville, fluent and impatient English, no exaggeration. She code-s
 
 ## 📝 Development Notes
 
-- All Chronicles canon is harvested: Shadow Exchange meet mid-slippage-argument, "you're better looking than him, but dumber," the minute-long morning stare, the ignored buzzing phone, NFT #2 (scratched) as an alternate acquisition route, **Hungover**, **−25 Sovs** via the cab voucher, and both canonical ICQ lines verbatim. `GAS FEE: "Don't Worry About It."` is harvested from `shadowexchange.md`
+- All Chronicles canon is harvested: Shadow Exchange meet mid-slippage-argument, "you're better looking than him, but dumber," the minute-long morning stare, the ignored buzzing phone, NFT #2 (scratched) as an alternate acquisition route, **Hungover**, **−25 SOVS** via the cab voucher, and both canonical ICQ lines verbatim. `GAS FEE: "Don't Worry About It."` is harvested from `shadowexchange.md`
 - **She stays at the Shadow Exchange.** No relocation, in this questline or any other
 - **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Her lines live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — CryptoBro69's \"Ex\""; this file and `nothingisgettingthrough.md` both point at it and neither duplicates the text
 - **CryptoBro69's gloat introduces no new crypto content.** Every element is pre-existing: CRINGECOIN (already minted in his honor in `couchsurfingchroniclesdebaucheryville.md`), the "worse ROI than my NFTs" line (already canon across three Chronicles files), diamond hands (already canon in `clubflyers.md`), and the Anonymous "desperation and energy drinks" line (already canon). No new coins, tokens, drops, or launches

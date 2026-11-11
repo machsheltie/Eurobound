@@ -118,7 +118,7 @@ Bravado System (Debaucheryville Specific)
     ◦ Low Bravado: Targeted by scammers, overcharged, but unlock "naive tourist" comedy dialogue 
 Debaucheryville-Specific Status Effects
   • Green Fairy Confusion: Random dialogue choices, reversed controls temporarily 
-  • Tourist Trapped: -Sovs generation, +Gullibility to scams 
+  • Tourist Trapped: -SOVS generation, +Gullibility to scams 
   • VIP Status: +Access to exclusive areas, +Respect from bouncers 
   • Absinthe Buzzed: +Confidence, -Accuracy, hilarious dialogue unlocks 
   • Scam Aware: +Resistance to pickpockets and street cons 

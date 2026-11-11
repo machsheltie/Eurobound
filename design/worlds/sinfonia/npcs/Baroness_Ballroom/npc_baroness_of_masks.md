@@ -138,10 +138,10 @@ Continuity. Somebody has to hold the middle of this city or it goes back to bein
 
 | Grade | Value | Her line |
 |-------|-------|----------|
-| Common | 50 Sovs | "Everyone knows that. Including the person it is about." |
-| Uncommon | 150 Sovs | "Better. That has legs." |
-| Rare | 400 Sovs | "*(a pause)* Where did you get that." |
-| Exclusive | 1000 Sovs+ | "You will not repeat it in this room. You will repeat it to me, once, and then you will forget you carried it." |
+| Common | 50 SOVS | "Everyone knows that. Including the person it is about." |
+| Uncommon | 150 SOVS | "Better. That has legs." |
+| Rare | 400 SOVS | "*(a pause)* Where did you get that." |
+| Exclusive | 1000 SOVS+ | "You will not repeat it in this room. You will repeat it to me, once, and then you will forget you carried it." |
 
 ### Interaction Type — Granting Favour
 **Slight Favour:**
@@ -208,8 +208,8 @@ Continuity. Somebody has to hold the middle of this city or it goes back to bein
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Audience with the Baroness | Free (costs a full social gauntlet) | Everything | Opens the favour track |
-| Rare rumour access | Slight Favour | 400 Sovs/rumour tier | Der Flüsterer will now trade Rare-grade stock with the party |
-| Inner Circle invitation | Moderate Favour | 200 Sovs street value; unpriceable in practice | Permanent salon access; skips the Grand Entrance stat checks |
+| Rare rumour access | Slight Favour | 400 SOVS/rumour tier | Der Flüsterer will now trade Rare-grade stock with the party |
+| Inner Circle invitation | Moderate Favour | 200 SOVS street value; unpriceable in practice | Permanent salon access; skips the Grand Entrance stat checks |
 | Baroness' Vault access | High Favour | Late-game gear tier | Unlocks the vault; also openable with the Baroness' Vault Keys dropped by Maestro Vice von Strauss — she has never commented on the fact that there are two keys |
 | **The One Truth** | Maximum Favour | Not for sale, at any number | One player-chosen mystery in the game answered completely and correctly. Single use. Permanent. |
 
@@ -247,7 +247,7 @@ Continuity. Somebody has to hold the middle of this city or it goes back to bein
 
 ### Within Sinfonia
 - Baroness' Ballroom, dais and salon, every masquerade night for the entire game.
-- Referenced constantly and seen nowhere else: Café Existenz regulars mention her invitations "accidentally"; The Black-Tie Backroom sells her invitations at 200 Sovs to High Rollers; the Maestro's defeat drops her vault keys.
+- Referenced constantly and seen nowhere else: Café Existenz regulars mention her invitations "accidentally"; The Black-Tie Backroom sells her invitations at 200 SOVS to High Rollers; the Maestro's defeat drops her vault keys.
 - She is never encountered in daylight, never in another location, and never outside the Ballroom's hours. If a later pass wants her elsewhere, the answer is no.
 
 ### In Other Cities (If Applicable)
@@ -372,7 +372,7 @@ Refined Central European, placeless on purpose — she should not be locatable t
 - **The one-person / title / collective-fiction question is never resolved.** Lady Geheimnis' twelve years imply a title; her claim never to have met her successor implies otherwise. Ship both. Resolve neither.
 - The randomised gown palette (if implemented) must never be acknowledged by any system, achievement, or NPC.
 - She is not a romance, not a threat, and not a mystic. Every draft that drifts toward "seductive enigma" should be pulled back to "extremely good at her job and quietly delighted."
-- The "Maestro's real relationship with the Baroness" rumour is a permanent Exclusive-grade item in the Whisper Gallery stock and is **never confirmed or denied** by either party. It is worth 1000 Sovs+ precisely because nobody can verify it.
+- The "Maestro's real relationship with the Baroness" rumour is a permanent Exclusive-grade item in the Whisper Gallery stock and is **never confirmed or denied** by either party. It is worth 1000 SOVS+ precisely because nobody can verify it.
 - Social Death is permanent and is not appealable. Do not add a redemption path in a later pass; the Ballroom's whole thesis depends on the stakes being real.
 - Der Schatten, Herr Ankündiger, Der Flüsterer and Lady Geheimnis all need their own profiles and are referenced here with provisional IDs (`sinfonia_npc_der_schatten_01`, `sinfonia_npc_herr_ankundiger_01`, `sinfonia_npc_der_flusterer_01`, `sinfonia_npc_lady_geheimnis_01`) — confirm or correct on authoring.
 
@@ -381,7 +381,7 @@ Refined Central European, placeless on purpose — she should not be locatable t
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present. The Ballroom's economy is rumours and Sov; it predates and ignores every digital instrument in the game.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present. The Ballroom's economy is rumours and SOV; it predates and ignores every digital instrument in the game.
 - [x] **NO automatic crypto assumptions** — she has none. Information is her asset class and she has never needed another.
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — N/A
 - [x] **The bros are never scam-aware** — they hand her leverage for free across four consecutive audiences and record each one as a personal triumph; nobody corrects them
@@ -391,7 +391,7 @@ Refined Central European, placeless on purpose — she should not be locatable t
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on the bros believing a mask makes them mysterious in a room where everyone identified them instantly; Viennese ball tradition is treated as a functioning, competent institution
 - [x] NPC is savvy entrepreneur, not villain or stereotype — she is a working power broker who never threatens, never seduces, and never raises her voice
-- [x] Humor is affectionate mockery, not mean-spirited — she likes the bros, genuinely, and the room does the damage; she is never cruel to anyone on screen
+- [x] Humor is affectionate mockery — she likes the bros, genuinely, and the room does the damage; she is never cruel to anyone on screen
 
 ---
 

@@ -82,12 +82,12 @@ Harsh fluorescent from directly overhead on everything except the Healing Aisle,
 | Constitutionally honest | Cannot deliver a comforting untruth; has tried; it comes out wrong |
 | Unsentimental affection | Cares enormously, expresses it exclusively through stock levels and discounts |
 | Utterly unshockable | "What did you EAT? No, don't tell me. I don't want to know." |
-| Commercially sharp | Sells the 15 Sovs kit to a man who came in for a 3 Sovs aspirin, correctly, every time |
+| Commercially sharp | Sells the 15 SOVS kit to a man who came in for a 3 SOVS aspirin, correctly, every time |
 | Boundaried | No phones in the shop. No details. No moralising about the fake ID. Lines she does not cross. |
 
 ### Internal Monologue
 
-> "Door goes. Right — green one first, that's your classic four-in-the-morning kebab, he's for the Recovery Kit and he'll argue about it for thirty seconds and then he'll buy it. Camera lad behind him, phone up, that's getting dealt with. Third one's already in aisle two, reading the label, doing the sums. God love him, he's the only reason the other two are still walking. Twenty-eight Sovs off the three and they'll be back tomorrow. They're always back tomorrow. Sure, where else would they go."
+> "Door goes. Right — green one first, that's your classic four-in-the-morning kebab, he's for the Recovery Kit and he'll argue about it for thirty seconds and then he'll buy it. Camera lad behind him, phone up, that's getting dealt with. Third one's already in aisle two, reading the label, doing the sums. God love him, he's the only reason the other two are still walking. Twenty-eight SOVS off the three and they'll be back tomorrow. They're always back tomorrow. Sure, where else would they go."
 
 ### Motivation
 
@@ -155,7 +155,7 @@ The card from the roundabout goes in the drawer every December and she says noth
 **Player**: "I SAID I'm—"
 
 **Nuala** (already bagging):
-> "Your hands are shaking. 12 Sovs total."
+> "Your hands are shaking. 12 SOVS total."
 
 ---
 
@@ -165,7 +165,7 @@ The card from the roundabout goes in the drawer every December and she says noth
 
 > "Skip the cheap energy drink. You need the ACTUAL caffeine. Your eyes tell me everything."
 
-> "Fake ID? I don't see that. This transaction isn't happening. 25 Sovs."
+> "Fake ID? I don't see that. This transaction isn't happening. 25 SOVS."
 
 > "Hair of the dog? That's not a CURE, that's a DELAY. But here you are."
 
@@ -253,13 +253,13 @@ The card from the roundabout goes in the drawer every December and she says noth
 
 ### Post-Interaction / Transaction Close
 
-> "15 Sovs. Non-negotiable."
+> "15 SOVS. Non-negotiable."
 
 > "That's you sorted. Go on."
 
 > "Right. Out. There's a queue and you're swaying in it."
 
-> "Bag's one Sov. I don't make the law."
+> "Bag's one SOV. I don't make the law."
 
 ---
 
@@ -324,61 +324,61 @@ The card from the roundabout goes in the drawer every December and she says noth
 ### Healing Items — The Redemption
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Aspirin Packet | 3 Sovs | Fair, corner-shop standard | Cures "Headache" |
-| Paracetamol | 4 Sovs | Fair | +20 HP, cures minor status effects |
-| Greasy Breakfast Roll | 6 Sovs | Fair and genuinely good | +40 HP, cures "Hungover" |
-| Hair of the Dog Pint (Canned) | 5 Sovs | Fair; she sells it under protest | Delays "Hungover" by 3 hours |
-| Electrolyte Powder | 4 Sovs | Fair | Cures "Dehydrated," +15 SP |
-| Stomach Settler | 5 Sovs | Fair, ginger-based, actual medicine | Cures "Queasy," "Nauseous" |
-| Industrial-Strength Antacid | 7 Sovs | Fair | Cures all stomach ailments |
-| The Full Recovery Kit | 15 Sovs | 22 Sovs of components bundled at 15 Sovs — the best value in the shop and nobody notices | Cures Hungover + all related effects |
+| Aspirin Packet | 3 SOVS | Fair, corner-shop standard | Cures "Headache" |
+| Paracetamol | 4 SOVS | Fair | +20 HP, cures minor status effects |
+| Greasy Breakfast Roll | 6 SOVS | Fair and genuinely good | +40 HP, cures "Hungover" |
+| Hair of the Dog Pint (Canned) | 5 SOVS | Fair; she sells it under protest | Delays "Hungover" by 3 hours |
+| Electrolyte Powder | 4 SOVS | Fair | Cures "Dehydrated," +15 SP |
+| Stomach Settler | 5 SOVS | Fair, ginger-based, actual medicine | Cures "Queasy," "Nauseous" |
+| Industrial-Strength Antacid | 7 SOVS | Fair | Cures all stomach ailments |
+| The Full Recovery Kit | 15 SOVS | 22 SOVS of components bundled at 15 SOVS — the best value in the shop and nobody notices | Cures Hungover + all related effects |
 
 ### Support Items — The Enablement
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Energy Drink (Brand) | 4 Sovs | Fair | +20 SP, +10 Speed (1 hour) |
-| Discount Energy Drink | 2 Sovs | Exactly what it costs and exactly as bad | +15 SP, +5 Speed, 20% "Jitters" risk |
-| Lucky Rabbit's Foot | 8 Sovs | Worth about 2 Sovs; sold to people who want to buy luck | +5% Critical Hit Chance |
-| Four-Leaf Clover (Plastic) | 3 Sovs | Worth less than a Sov. She tells you it's fake before you pay. | +3% Luck |
-| "Confidence" Mints | 4 Sovs | They are mints. She says so. They still work. | +10 Bravado (30 min) |
-| Eye Drops | 5 Sovs | Fair | Removes "Bloodshot," +5 Charisma |
+| Energy Drink (Brand) | 4 SOVS | Fair | +20 SP, +10 Speed (1 hour) |
+| Discount Energy Drink | 2 SOVS | Exactly what it costs and exactly as bad | +15 SP, +5 Speed, 20% "Jitters" risk |
+| Lucky Rabbit's Foot | 8 SOVS | Worth about 2 SOVS; sold to people who want to buy luck | +5% Critical Hit Chance |
+| Four-Leaf Clover (Plastic) | 3 SOVS | Worth less than a SOV. She tells you it's fake before you pay. | +3% Luck |
+| "Confidence" Mints | 4 SOVS | They are mints. She says so. They still work. | +10 Bravado (30 min) |
+| Eye Drops | 5 SOVS | Fair | Removes "Bloodshot," +5 Charisma |
 
 ### Offensive Items — The Escalation
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Stink Bomb | 6 Sovs | Fair | Area denial, disperses NPCs |
-| Noise Maker | 4 Sovs | Fair | Attracts attention, distraction tool |
-| Brass Knuckles | 20 Sovs | Fair, and sold with a look | +15 Attack (equipped) |
-| "Liquid Courage" Flask | 12 Sovs | Fair; pre-filled | +25 Bravado, -10 Judgement |
-| Pocket Sand | 3 Sovs | It is sand. It is three Sovs. She stocks it because it sells. | Blind enemy temporarily |
-| Air Horn | 8 Sovs | Fair | Stun effect, attracts major attention |
+| Stink Bomb | 6 SOVS | Fair | Area denial, disperses NPCs |
+| Noise Maker | 4 SOVS | Fair | Attracts attention, distraction tool |
+| Brass Knuckles | 20 SOVS | Fair, and sold with a look | +15 Attack (equipped) |
+| "Liquid Courage" Flask | 12 SOVS | Fair; pre-filled | +25 Bravado, -10 Judgement |
+| Pocket Sand | 3 SOVS | It is sand. It is three SOVS. She stocks it because it sells. | Blind enemy temporarily |
+| Air Horn | 8 SOVS | Fair | Stun effect, attracts major attention |
 
 ### Utility Items — The Practicality
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Grease-Proof Napkins | 2 Sovs | Fair | Cures "Stained," minor hygiene restore |
-| Fake ID | 25 Sovs | Wildly over, and priced to discourage | Age verification bypass (single use) |
-| Emergency Taxi Voucher | 15 Sovs | Fair; genuinely worth more than 15 Sovs at 3 AM | Instant escape from current location |
-| Phone Charger (Works) | 10 Sovs | Fair — the whole selling point is that it functions, unlike Rory Murphy's | Restores phone functionality |
-| Wet Wipes (Pack) | 3 Sovs | Fair | Hygiene restore, multi-use |
-| Sunglasses (Indoor Appropriate) | 12 Sovs | Over, sold to the self-deceiving | Hides "Bloodshot," -light sensitivity |
-| Breath Mints (Industrial) | 3 Sovs | Fair | Removes "Alcohol Breath" |
-| Emergency Sewing Kit | 5 Sovs | Fair | Repairs "Torn" status on clothes |
+| Grease-Proof Napkins | 2 SOVS | Fair | Cures "Stained," minor hygiene restore |
+| Fake ID | 25 SOVS | Wildly over, and priced to discourage | Age verification bypass (single use) |
+| Emergency Taxi Voucher | 15 SOVS | Fair; genuinely worth more than 15 SOVS at 3 AM | Instant escape from current location |
+| Phone Charger (Works) | 10 SOVS | Fair — the whole selling point is that it functions, unlike Rory Murphy's | Restores phone functionality |
+| Wet Wipes (Pack) | 3 SOVS | Fair | Hygiene restore, multi-use |
+| Sunglasses (Indoor Appropriate) | 12 SOVS | Over, sold to the self-deceiving | Hides "Bloodshot," -light sensitivity |
+| Breath Mints (Industrial) | 3 SOVS | Fair | Removes "Alcohol Breath" |
+| Emergency Sewing Kit | 5 SOVS | Fair | Repairs "Torn" status on clothes |
 
 ### Behind-Counter Stock — Known Disaster Only
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Nuala's Personal Remedy | 20 Sovs | Priceless / worthless depending on your view of her grandmother | Cures ANY status effect |
-| The "Didn't Happen" Kit | 30 Sovs | Fair, and she does not itemise the receipt | Evidence removal, plausible deniability supplies |
-| Emergency Complete Reset | 50 Sovs | The most expensive thing in the shop, correctly priced | Full HP, SP, status restoration |
+| Nuala's Personal Remedy | 20 SOVS | Priceless / worthless depending on your view of her grandmother | Cures ANY status effect |
+| The "Didn't Happen" Kit | 30 SOVS | Fair, and she does not itemise the receipt | Evidence removal, plausible deniability supplies |
+| Emergency Complete Reset | 50 SOVS | The most expensive thing in the shop, correctly priced | Full HP, SP, status restoration |
 
 ### The State Assessment (Free Service)
 | Player Condition | Nuala's Opening | Recommendation |
 |------------------|-----------------|----------------|
-| Hungover + Dehydrated | "Sweet suffering Jaysus. The STATE of ya." | Full Recovery Kit (15 Sovs) |
-| Low Bravado | "Something knock the confidence out of ya?" | Confidence Mints (4 Sovs) or "Liquid Courage" Flask (12 Sovs) |
-| Post-Combat | "Been in a scrape? Don't tell me the details." | Paracetamol (4 Sovs) + Grease-Proof Napkins (2 Sovs) |
-| Fresh, Evening | "Heading out? You've got that 'about to make mistakes' look." | Energy Drink (4 Sovs) + Emergency Taxi Voucher (15 Sovs) |
+| Hungover + Dehydrated | "Sweet suffering Jaysus. The STATE of ya." | Full Recovery Kit (15 SOVS) |
+| Low Bravado | "Something knock the confidence out of ya?" | Confidence Mints (4 SOVS) or "Liquid Courage" Flask (12 SOVS) |
+| Post-Combat | "Been in a scrape? Don't tell me the details." | Paracetamol (4 SOVS) + Grease-Proof Napkins (2 SOVS) |
+| Fresh, Evening | "Heading out? You've got that 'about to make mistakes' look." | Energy Drink (4 SOVS) + Emergency Taxi Voucher (15 SOVS) |
 | Returning Customer | "Back again? Same problems, or new ones?" | Based on last visit's purchase history |
 
 ### Hidden Details / Easter Eggs
@@ -492,12 +492,12 @@ Nuala gates nothing on the critical path. She is a supply node and blocks no pro
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| The Full Recovery Kit | Any time, 15 Sovs | No (consumable) | Cures Hungover + all related effects |
-| Emergency Taxi Voucher | Any time, 15 Sovs | No (single use) | Instant escape from current location |
-| Fake ID | Any time, 25 Sovs | No (single use) | Age verification bypass; sets `fake_id_bought` |
+| The Full Recovery Kit | Any time, 15 SOVS | No (consumable) | Cures Hungover + all related effects |
+| Emergency Taxi Voucher | Any time, 15 SOVS | No (single use) | Instant escape from current location |
+| Fake ID | Any time, 25 SOVS | No (single use) | Age verification bypass; sets `fake_id_bought` |
 | Known Disaster Badge | 5 visits | Yes | 10% discount, "your usual," behind-counter access |
-| Nuala's Personal Remedy | Known Disaster, 20 Sovs | No (consumable) | Cures ANY status effect |
-| Emergency Complete Reset | Known Disaster, 50 Sovs | No (consumable) | Full HP, SP, status restoration |
+| Nuala's Personal Remedy | Known Disaster, 20 SOVS | No (consumable) | Cures ANY status effect |
+| Emergency Complete Reset | Known Disaster, 50 SOVS | No (consumable) | Full HP, SP, status restoration |
 
 ### State Flags
 - `nuala_met`: boolean
@@ -515,7 +515,7 @@ Nuala gates nothing on the critical path. She is a supply node and blocks no pro
 
 ### Screenshot Moments
 1. The three-second stare, held, with the "I'm fine" dialogue option still on screen
-2. "Your hands are shaking. 12 Sovs total." with the itemised receipt visible
+2. "Your hands are shaking. 12 SOVS total." with the itemised receipt visible
 3. The chalkboard: "Today's Shame Special: 2-for-1 Aspirin & Dignity"
 4. Chadwick's phone being confiscated by pure eye contact
 5. The Rare Smile — screenshot proof you made Nuala Brennan laugh
@@ -525,7 +525,7 @@ Nuala gates nothing on the critical path. She is a supply node and blocks no pro
 ### Meme Potential
 - "The state of ya" as a universal reply to any photo of anyone
 - "I'm not harsh. I'm ACCURATE. Harsh would be lying."
-- "Your hands are shaking. 12 Sovs total."
+- "Your hands are shaking. 12 SOVS total."
 - "The aesthetic is a woman who'll break your phone. How's THAT for content?"
 - "Aspirin's aisle 1, stomach stuff's aisle 2, your dignity's not something I stock."
 - "Cheaper, worse, your choice." as the definitive consumer-advice format
@@ -572,7 +572,7 @@ Dublin, north side, entirely unperformed. Fast, low, and completely unbothered. 
 | Comedy value preserved | ✅ |
 | Bros never achieve self-awareness | ✅ |
 | World consistency (city names) | ✅ (Publandia only) |
-| Prices lifted from source location file | ✅ (all 31 items, 2-50 Sovs, verbatim) |
+| Prices lifted from source location file | ✅ (all 31 items, 2-50 SOVS, verbatim) |
 | Condition-assessment mechanic uses real source states | ✅ (six recognised states + five sample assessments) |
 
 ---
@@ -594,16 +594,16 @@ Dublin, north side, entirely unperformed. Fast, low, and completely unbothered. 
 
 ### ⚠️ CRYPTO CHECK
 - [x] **Crypto content conforms to `design/economy/economy_system.md`** — Nuala has none. Cash and SOVS at the till; no terminal, no kiosk, no coin.
-- [x] **NO automatic crypto assumptions** — correctly none. A woman whose entire brand is refusing to pretend would not be the one selling speculative tokens, and the Fake ID at 25 Sovs is as close to grey-market as she goes.
+- [x] **NO automatic crypto assumptions** — correctly none. A woman whose entire brand is refusing to pretend would not be the one selling speculative tokens, and the Fake ID at 25 SOVS is as close to grey-market as she goes.
 - [x] **Coins, kiosks, and certificates come from the master pool** — not applicable; nothing of the kind appears in this profile.
 - [x] **The bros are never scam-aware** — they are not being scammed at all, which is the point; they are being told the truth and are misreading it as local colour
 - [x] **Nothing winks** — verified; her observations are all mundane physical detail (shaking hands, squint, shuffle, green complexion), never authorial commentary
-- [x] **Focus on city-specific cultural exploitation instead** — hangover retail at the mouth of the tourist district, and a 25 Sovs fake ID priced to discourage
+- [x] **Focus on city-specific cultural exploitation instead** — hangover retail at the mouth of the tourist district, and a 25 SOVS fake ID priced to discourage
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is on three men who cannot hear plain speech, not on Irish bluntness
 - [x] NPC is savvy entrepreneur, not villain or stereotype — eighteen years, excellent stock control, a monopoly she built by opening at seven
-- [x] Humor is affectionate mockery, not mean-spirited — she would be genuinely upset if they stopped coming in, and the design must protect that reading
+- [x] Humor is affectionate mockery — she would be genuinely upset if they stopped coming in, and the design must protect that reading
 
 ---
 

@@ -7,8 +7,8 @@ Venustempel is the world's first sex museum, groundbreaking in 1985 and dated si
 **Retired ID:** `shamsterdam_roodelicht_venustempel_01` (Roodelicht Row, 1985-2011) — no assets are authored against the old ID
 **Theme:** Total transparency changes nothing. The satire targets the bros treating a working city as a theme park, and the tourism machine that sells them exactly what they want, competently, while finding them tedious.
 **Register (author ruling, 2026-08-01 — binding):** **Not safe, not boring, not corporate. Subversive.** This is an MA-rated adult comedy set piece. The bros came to Europe for exactly this, they get it in full, and the consequences are ridiculous and physical. Nothing here is an anticlimax and nothing here is administrative. Permits, hygiene cards and municipal paperwork are **garnish on genuine mayhem** and must never be composed as the main event. See `Design/Character Profiles/bros_core_principle.md`.
-**Currency (author ruling, 2026-08-01):** **The entire game runs on Sovs.** Every price on every asset in this document is in Sovs. There are no euro symbols anywhere and no exchange mechanic exists.
-**Positioning (author ruling):** Venustempel is the **curated institution** end of Shamsterdam's chocolate-anatomy industry — artisan, historical, provenanced, gallery-grade, expensive, queued. The Shamsterdam Museum of Questionable Art is the **cheap gift shop** end — mass-produced novelty, sprinkles, fondant bow ties, 4 Sovs eggs, no queue. Both exist; they are opposite ends of the same trade and every asset in this document must hold that line.
+**Currency (author ruling, 2026-08-01):** **The entire game runs on SOVS.** Every price on every asset in this document is in SOVS. There are no euro symbols anywhere and no exchange mechanic exists.
+**Positioning (author ruling):** Venustempel is the **curated institution** end of Shamsterdam's chocolate-anatomy industry — artisan, historical, provenanced, gallery-grade, expensive, queued. The Shamsterdam Museum of Questionable Art is the **cheap gift shop** end — mass-produced novelty, sprinkles, fondant bow ties, 4 SOVS eggs, no queue. Both exist; they are opposite ends of the same trade and every asset in this document must hold that line.
 **Zone:** Museum Mile (the Cultural Alibi District), plaza frontage, between Het Rijke Museum and a bureau de change, directly opposite the empty "I SHAMSTERDAM" plinth
 **Hours:** 10 AM - 11 PM interior (school groups 10 AM-1 PM, peak 1-5 PM, bachelor parties 5-8 PM, quiet 8-11 PM). The fountain plaza is public space and never closes; the fountain is drained and hosed 11 PM-6 AM.
 **Primary Function:** Fountain / germ-mechanic system — **Sharing the Love** five-tier stacking status, the Gunter's Deep Dips cart economy, the quarterly health-inspection world state with a downgrading score card, the Cultural Alibi flag, plus the retained Giggling Figure encounter, mutoscope coin economy, eight photo-op stations, and the John Lennon knowledge unlock
@@ -137,7 +137,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | De Mechanische Vleugel (First Floor) | (0, 0) | 1024x1024 | The entire original Venustempel collection, relocated intact and packed into a lower-ceilinged floor under red and pink wash: the mutoscope row, the Marilyn Monroe statue over its subway grate, the John Lennon sketch display (under-lit, off the main sightline), the chastity belt case, the 1800s medical diagrams, the framed historical prints, the vintage pin-up wall, the early film room screen, the 1970s section. Entered through a doorway marked only "VERVOLG →". |
-| Photo Ops & Gift Shop (Second Floor / Exit) | (1024, 0) | 1024x1024 | "Ervaar de Tempel": The Throne centred as the mandatory group shot, costume rack (5 Sovs), the swing with its small "for display only" sign, wax figures in legally-distinct poses, the green screen station (10 Sovs, composites you into the cascade), the short mirror maze passage — feeding into ninety square metres of gift shop with an island display, floor-to-ceiling shelving, a proper wrapping counter, the chocolate line, and the toilet door everyone on Museum Mile uses |
+| Photo Ops & Gift Shop (Second Floor / Exit) | (1024, 0) | 1024x1024 | "Ervaar de Tempel": The Throne centred as the mandatory group shot, costume rack (5 SOVS), the swing with its small "for display only" sign, wax figures in legally-distinct poses, the green screen station (10 SOVS, composites you into the cascade), the short mirror maze passage — feeding into ninety square metres of gift shop with an island display, floor-to-ceiling shelving, a proper wrapping counter, the chocolate line, and the toilet door everyone on Museum Mile uses |
 
 ### Technical Notes:
 - Anchor points (Mechanical Wing): mutoscope row at (128, 576) / (128, 768), Marilyn at (448, 576), Lennon display at (704, 512), chastity case at (320, 448), medical diagrams at (576, 448), print wall at (832, 448), pin-up wall at (896, 640), film room screen at (256, 704), 1970s wall at (640, 768), "VERVOLG" doorway at (32, 640)
@@ -259,7 +259,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | 1970s Section Wall | (1536, 704) | 160x128 | An aesthetic that has not aged well and is fascinating for exactly that reason |
 | Wax Figures (Legally Distinct) | (1696, 704) | 128x224 | Celebrities. Allegedly. Legally distinct. Allegedly. |
 | "VERVOLG →" Doorway Placard | (1824, 704) | 128x64 | One word, one arrow. The entire explanation. |
-| Coin Slot Detail | (1824, 768) | 96x96 | 1 Sov per viewing, brass, worn smooth |
+| Coin Slot Detail | (1824, 768) | 96x96 | 1 SOV per viewing, brass, worn smooth |
 
 ### Photo Ops, Gift Shop, Signage & Tiles:
 | Element | Position | Size | Description |
@@ -271,8 +271,8 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | The Throne | (1120, 608) | 224x96 | Oversized chair. Mandatory group photo spot. Bradley will not be sitting on that. |
-| Costume Corner Rack | (1344, 608) | 160x96 | 5 Sovs rental accessories for "artistic" photos |
-| Green Screen Station | (1504, 608) | 160x96 | 10 Sovs printed composite into the cascade. Best-selling photo product in the building. |
+| Costume Corner Rack | (1344, 608) | 160x96 | 5 SOVS rental accessories for "artistic" photos |
+| Green Screen Station | (1504, 608) | 160x96 | 10 SOVS printed composite into the cascade. Best-selling photo product in the building. |
 | The Swing ("For Display Only") | (1664, 608) | 96x96 | The sign is small. It is still for display only. |
 | Mirror Maze Panel (Tileable) | (1760, 608) | 96x96 | Reflective panel, seamless, assembles to any passage length |
 | Mirror Maze Corner Piece | (1856, 608) | 96x96 | 90° junction with double reflection |
@@ -280,10 +280,10 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Gift Shop Shelving (Tileable) | (1952, 448) | 96x160 | Floor to ceiling, aggressively stocked, judgement-free |
 | Wrapping Counter | (1952, 704) | 96x160 | Proper counter, tape dispenser, ribbon spools, plain discreet stock underneath |
 | Chocolate Line Display | (1952, 864) | 96x160 | Solid and hollow, white/milk/dark, "De Collectie" boxed sets |
-| "Handreiniger" Bottle | (1888, 864) | 64x96 | 4 Sovs. Moulded in the shape of the fountain. Faced forward on the counter. Sells poorly. |
+| "Handreiniger" Bottle | (1888, 864) | 64x96 | 4 SOVS. Moulded in the shape of the fountain. Faced forward on the counter. Sells poorly. |
 | Fountain Keyring & Magnet | (1824, 864) | 64x96 | 5 SOVS and 3 SOVS. These sell fine. |
 | Bench | (1728, 864) | 96x96 | Carried over from Roodelicht Row. Same bench. Visibly well-used. |
-| Ticket Desk + Cross-Stitch | (1632, 864) | 96x96 | 9 Sovs, cash or card, coins for the machines, Anke's project |
+| Ticket Desk + Cross-Stitch | (1632, 864) | 96x96 | 9 SOVS, cash or card, coins for the machines, Anke's project |
 | 1985 Opening Photograph (Framed) | (1536, 864) | 96x96 | On the lobby wall |
 | **Framed Violation Notice** | (1440, 864) | 96x96 | Same wall, same size, same height. The museum thinks it is funny. Nobody reads it. |
 | Neon Venus Outline | (1344, 864) | 96x128 | Salvaged. Pink. Always on, always flickering slightly. |
@@ -291,7 +291,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | "DE CACAOGALERIJ — Nu Geopend" Banner | (1152, 928) | 192x64 | Has said Now Open since 2011 |
 | "ADULTS ONLY" Sign | (1056, 864) | 96x64 | Font suggests this was added later |
 | "Educational Exhibits" Plaque | (1056, 928) | 96x64 | Sure |
-| 5 Sovs-Under-9 Sovs Ticket Sign | (960, 864) | 96x64 | The sign says five. The sign is old. There is a sticker. |
+| 5 SOVS-Under-9 SOVS Ticket Sign | (960, 864) | 96x64 | The sign says five. The sign is old. There is a sticker. |
 | Creaky Wooden Stairs | (864, 864) | 96x64 | Between the wings. The building is old and says so. |
 | Victorian Music Box | (864, 928) | 96x64 | Mechanical wing ambient source, period appropriate |
 | Red Velvet Curtain (Tileable) | (768, 864) | 96x160 | Seamless vertical drape run, mechanical wing |
@@ -529,7 +529,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Mirror Reflection Ghost | (256, 128) | 64x64 | Low-detail silhouette layer at 40% alpha |
 | Pneumatic Hiss Puff | (320, 128) | 64x64 | The Giggling Figure venting |
 | Mechanical Click Spark | (384, 128) | 64x64 | The pre-activation tell, visible as well as audible |
-| Coin Drop Glint | (448, 128) | 64x64 | 1 Sov entering a mutoscope |
+| Coin Drop Glint | (448, 128) | 64x64 | 1 SOV entering a mutoscope |
 | Jump-Scare Vignette | (0, 192) | 64x64 | First Giggling Figure encounter only, once per save file |
 | Startle Flush Overlay | (64, 192) | 64x64 | Character-parented, half-second Composure gag. **Ambient visitor NPCs only** — never applied to the bros, who are not embarrassed by anything in this building and think the mannequin rules. |
 | **Sharing the Love Tier Aura T1-T2** | (128, 192) | 64x64 | Faint, warm, entirely pleasant. It looks like a buff. It is currently a buff. |
@@ -584,7 +584,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | **The Attribution Table** | (704, 0) | 320x96 | Eight ranked blame entries: döner, tap water, "European milk", pancakes, Bradley's protein powder, jet lag, "something in the air here", each other. The fountain is not on the list and cannot be added to it. |
 | Shamsterdam Stomach Banner | (0, 96) | 256x64 | Tier 5. Max HP −40% for the in-game day, Bravado gains halved. |
 | Facilities Urgency Marker | (256, 96) | 128x64 | Tier 4. Flashing on Frietomat and Voetgangerstunnel only. |
-| Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 Sov, −1) / Handreiniger (4 Sovs, −2) / hostel rest (−2) / Frietomat croquette (3 SOVS, −1) |
+| Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 SOV, −1) / Handreiniger (4 SOVS, −2) / hostel rest (−2) / Frietomat croquette (3 SOVS, −1) |
 | Stack Decay Indicator | (640, 96) | 128x64 | −1 per in-game day, shown as a plain countdown |
 | Sharing the Love Status Icon | (768, 96) | 64x64 | Party-wide HUD pip, shape-coded not colour-coded |
 | Shared-Stick Transfer Prompt | (832, 96) | 192x64 | "+2 to recipient." Bradley's entire arc, delivered as a neutral UI string. |
@@ -598,7 +598,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Fountain Info Card | (384, 160) | 192x128 | Free. Public. No ticket. States all three facts and nothing else. |
 | **HYGIËNESCORE UI Panel** | (576, 160) | 192x128 | Mirrors the physical plinth card; four states; readable without an inspect mode |
 | Inspection Notice Panel | (768, 160) | 256x128 | Gerda's visit: forty minutes, rope up, the same finding as last quarter |
-| Fine Economics Card | (768, 288) | 256x64 | 1,200 Sovs fine. Cleared before noon on a Saturday. Stated as a plain fact, sourced to the annual report. |
+| Fine Economics Card | (768, 288) | 256x64 | 1,200 SOVS fine. Cleared before noon on a Saturday. Stated as a plain fact, sourced to the annual report. |
 
 #### Photo, Alibi & Knowledge:
 | Element | Position | Size | Description |
@@ -614,8 +614,8 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Knowledge Unlock: Lennon | (768, 384) | 256x64 | "Did you know John Lennon drew erotic sketches?" |
 | Lennon Reaction Split Bar | (768, 448) | 256x64 | 70% disbelief / 20% "I knew that" / 10% extremely interested, stacked bar with pattern fills and written percentages |
 | Composure Meter | (640, 448) | 128x64 | Giggling Figure temporary state; recovers on the bench |
-| Coin Purse / Peep Show UI | (0, 480) | 192x32 | 1 Sov units, thirty seconds each |
-| Museum Ticket UI (9 Sovs) | (192, 480) | 128x32 | The sign says 5 Sovs. There is a sticker. |
+| Coin Purse / Peep Show UI | (0, 480) | 192x32 | 1 SOV units, thirty seconds each |
+| Museum Ticket UI (9 SOVS) | (192, 480) | 128x32 | The sign says 5 SOVS. There is a sticker. |
 | **Achievement Strip** | (320, 480) | 320x32 | Five 64x32 badges: Delen is Lief / Eén Keer Dopen / Ik Heb Niet Eens Gedoopt / Temple Tourist / Cultural Alibi |
 | High-Contrast Interactive Marker | (640, 480) | 64x32 | Bold outline for the fountain, cart, exhibits and photo stations |
 | Touch-Zone Guide Overlay | (704, 480) | 192x32 | Dev-only 44px minimum overlay, stripped at build |
@@ -626,7 +626,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - The Attribution Table is a UI feature, not just writing: it is displayed, it is ranked, it updates, and the fountain is structurally excluded from it. If a designer later adds the fountain to this list, the joke is destroyed.
 - The Fountain Info Card states three facts — free, public, no ticket — and does not state a fourth. Everything else the player needs is on the plinth card, at eye height, in the world.
 - The HYGIËNESCORE UI panel and the physical plinth card share art so the world-state downgrade is legible from either surface
-- The Fine Economics Card is sourced in-fiction to the museum's annual report, which is on a shelf in the gift shop for 8 Sovs and has sold four copies. Nothing is hidden. Nothing changes.
+- The Fine Economics Card is sourced in-fiction to the museum's annual report, which is on a shelf in the gift shop for 8 SOVS and has sold four copies. Nothing is hidden. Nothing changes.
 - Every dip prompt, cart menu row, photo station and coin option renders at 44px+ touch height
 
 ---
@@ -679,7 +679,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - **Performance Optimization:** Low LOD reduces to 2 frames; reduced-motion holds at rest with the station functional
 
 ### Peep Show Flip Cards (Sheets 5, 6, 8c):
-- **Duration:** 30 seconds per 1 Sov viewing; 8-frame loop at 0.4s
+- **Duration:** 30 seconds per 1 SOV viewing; 8-frame loop at 0.4s
 - **Frames:** 8
 - **Pattern:** Loops for the paid duration, then stops mid-cycle
 - **Trigger:** Coin insertion
@@ -800,7 +800,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - Status effects use distinct silhouettes: wave (Sharing the Love), zigzag (Embarrassed), small-frame (Vintage Knowledge), book-with-question-mark (Trivial Knowledge), steady-line (Composure), stamped-card (Cultural Alibi)
 - Privacy-flagged photos carry a shape-coded corner marker; unflagged fountain photos carry none
 - Exhibits are identified by silhouette and placard text; the Cacaogalerij and the Mechanische Vleugel are distinguishable by ceiling height, plinth style and fixture density as well as by lighting grade
-- Touch zones minimum 44px for the fountain dip, cart menu, coin insertions, exhibit examines and all photo stations
+- Click zones minimum 44px for the fountain dip, cart menu, coin insertions, exhibit examines and all photo stations
 
 ---
 
@@ -890,19 +890,19 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Shamsterdam Stomach | Tier 5 banner, T5 aura, facilities marker | Max HP −40% for the in-game day, Bravado gains halved, Tolerance Hostel bathroom-queue event on next rest |
 | Gunter's Deep Dips | Cart, seven wares, **the menu board and the warning sign as hero readable-text assets**, Gunter's full frame set, purchase panel | Seven-item economy: five board items at 5 SOVS, plus the off-board 1 SOV bare skewer (highest margin on the cart, sells constantly) and the off-board 1 SOV hand wipe (offered every transaction, almost never bought). The warning sign forbids the double-dip that the entire mechanic runs on. |
 | The Health Inspection | Gerda's frame set, rope overlay, four HYGIËNESCORE cards, four ONE DIP signs, inspection panel, fine economics card | Quarterly, fixed calendar, four visits per playthrough, visible world-state downgrade, fountain never stops |
-| The Cultural Alibi | Alibi badge, dialogue chip, Cacaogalerij placards | Granted on paying 9 Sovs and entering the chocolate wing. Permanent, city-wide, and completely true. |
+| The Cultural Alibi | Alibi badge, dialogue chip, Cacaogalerij placards | Granted on paying 9 SOVS and entering the chocolate wing. Permanent, city-wide, and completely true. |
 | The Giggling Figure Encounter | Figure cycle, jump-scare vignette, Composure meter, bench | Unavoidable four steps inside the door; first encounter costs Composure, second becomes a photo opportunity |
 | Photo Consequences System | Eight station panels, split album, privacy warning, sensitive flags | Interior photos flagged; fountain exteriors unflagged and sent to Mom |
 | The "Unexplainable Photo" | The Throne, station popup, item card | Key item, cannot be discarded |
 | John Lennon Knowledge Unlock | Lennon display, Ruud's "Yes, really." frame, unlock panel, reaction split bar | Permanent dialogue option with a 70/20/10 split |
-| Peep Show Devices | Mutoscopes, coin UI, 8-frame flip cards | 1 Sov per 30-second viewing; grants Vintage Knowledge |
+| Peep Show Devices | Mutoscopes, coin UI, 8-frame flip cards | 1 SOV per 30-second viewing; grants Vintage Knowledge |
 | Achievements | Achievement strip | Delen is Lief (T5) / Eén Keer Dopen (leave the city having dipped exactly once) / Ik Heb Niet Eens Gedoopt (Bradley at T3 with zero voluntary dips) / Temple Tourist / Cultural Alibi |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Awkward Truffle | No shared sprites; Sophie's tempering critique is dialogue only | Direct commercial rival. Sophie is the only NPC who criticises the fountain, and does it on tempering grounds, never hygiene. Same-day purchase from both unlocks a comparison dialogue. |
-| **Shamsterdam Museum of Questionable Art** | **No shared sprites — the rivalry is tonal and dialogue-only.** Unlicensed fountain merch on their shelves is authored as a distinct low-quality knock-off prop, never a reuse of Venustempel art. | **The two locations are opposite ends of the same industry and must read that way to a player who visits both.** Questionable Art is the cheap gift shop: mass-produced novelty, sprinkles, fondant bow ties, 4 Sovs collector's eggs, a bored teenager on the till, no queue. Venustempel is the curated institution: artisan pieces with provenance, gallery-grade plinths and lighting, three-language placards, climate control, trained staff, a restrained and expensive shop, and a queue that runs down the Mile. **Every visual axis must separate them** — price point, signage quality, plinth and case construction, lighting discipline, staff bearing, crowd density. Venustempel's disdain is one-directional and is expressed in a single dry line, never a rant. Do not edit the Questionable Art sheets; their chocolate material is load-bearing for the Fabergé Egg Hunt. |
+| **Shamsterdam Museum of Questionable Art** | **No shared sprites — the rivalry is tonal and dialogue-only.** Unlicensed fountain merch on their shelves is authored as a distinct low-quality knock-off prop, never a reuse of Venustempel art. | **The two locations are opposite ends of the same industry and must read that way to a player who visits both.** Questionable Art is the cheap gift shop: mass-produced novelty, sprinkles, fondant bow ties, 4 SOVS collector's eggs, a bored teenager on the till, no queue. Venustempel is the curated institution: artisan pieces with provenance, gallery-grade plinths and lighting, three-language placards, climate control, trained staff, a restrained and expensive shop, and a queue that runs down the Mile. **Every visual axis must separate them** — price point, signage quality, plinth and case construction, lighting discipline, staff bearing, crowd density. Venustempel's disdain is one-directional and is expressed in a single dry line, never a rant. Do not edit the Questionable Art sheets; their chocolate material is load-bearing for the Fabergé Egg Hunt. |
 | Condomerie Het Gulden Vlies | Shared hygiene-product UI language; no shared sprites | Adjacent trade, different district since the 2011 move. Femke and Lotte have professional awareness and no relationship. |
 | The Hemp Museum | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. Venustempel grants the flag; the Hemp Museum is the second stamp. |
 | The Tolerance Hostel | Album privacy flag; Sharing the Love decay on rest; Tier 5 bathroom-queue event | Interior photos cannot be shown to Ingrid; fountain exteriors can. A full night removes 2 stacks. Tier 5 fires the dorm bathroom queue. |
@@ -971,9 +971,9 @@ assets/sprites/locations/shamsterdam/venustempel/
 - "One dip. One dip, please. Sir. One dip."
 - "Please do not put your face in the fountain. Please. Sir. Please."
 - "The fountain is free. The fountain has always been free. You do not need a ticket for the fountain and I cannot sell you one."
-- "Nine Sovs. The sign says five. The sign is old. Cash or card."
+- "Nine SOVS. The sign says five. The sign is old. Cash or card."
 - "It is real. It is warm. It is free. That is the fountain's whole personality."
-- "Handreiniger? Four Sovs, and the bottle is the fountain. It's a nice little bottle. Nobody ever takes one."
+- "Handreiniger? Four SOVS, and the bottle is the fountain. It's a nice little bottle. Nobody ever takes one."
 - "Ninety square metres. On Roodelicht it was forty-one. Forty-one, and a corridor."
 - "Same finding as March." / "You have a bigger sign now."
 - "It is a shared food surface in a public square with no supervision. That is what I have written. It is on the plinth. Good afternoon."
@@ -1065,7 +1065,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - [ ] The Attribution Table renders all eight entries and structurally excludes the fountain
 - [ ] Hidden areas/interactions have discoverable visual cues (Lennon display highlight, the bench, the anticipation tell, the maze entrance, the Failures Case, the framed violation, the manufacturer's plate)
 - [ ] Performance optimized (streamed room units, CPU particles, atlas limits respected, crowd depth bands as single quads, spatter on a capped decal layer, cascade floor of four frames honoured)
-- [ ] Touch zone sizing considered (44px minimum for the dip, cart menu, coin slots, exhibit examines and photo stations)
+- [ ] Click zone sizing considered (44px minimum for the dip, cart menu, coin slots, exhibit examines and photo stations)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (letter/date text on hygiene cards, segmented and named Sharing the Love tiers, percentage text on postability, pattern-filled reaction split, flow-geometry-distinguished fountain states, shape-coded album markers)
 - [ ] Social media viral potential maximized in composition choices (plaza at peak, the two cards in one frame, the attribution table, Gerda's forty minutes, the family, De Oervorm, the framed violation)
 
@@ -1078,13 +1078,13 @@ assets/sprites/locations/shamsterdam/venustempel/
 | World Consistency (no real city names) | ✅ | Shamsterdam Museum Mile; `shamsterdam_museumrow_venustempel_01`; the retired Roodelicht ID has no assets authored against it; the museum's own signage claims "World's First Since 1985" without naming a real city |
 | Cultural Specificity | ✅ | Dutch disclosure culture (everything signposted, nothing hidden, compliance total and consequence-free), municipal hygiene regime and its paperwork, Museum Mile as a district built around the appearance of culture, Victorian mutoscope history, Belgian/Swiss/French/Dutch/Italian tempering traditions |
 | Satirical Targets Appropriate | ✅ | The bros treating a working city as a theme park; the commercialized tourism machine that sells them exactly what they want, competently, while finding them tedious. Never human sexuality, sex work, sex education, or the staff. |
-| Seedy Underbelly Present | ✅ | Free chocolate as a customer-acquisition funnel returning eleven times its 90,000 Sovs annual running cost; the 1 SOV bare skewer as the cart's highest-margin product; a 10 Sovs green screen composite of a cascade you can stand in front of for free, outselling every other photo product; a 1,200 Sovs fine cleared before noon on a Saturday |
+| Seedy Underbelly Present | ✅ | Free chocolate as a customer-acquisition funnel returning eleven times its 90,000 SOVS annual running cost; the 1 SOV bare skewer as the cart's highest-margin product; a 10 SOVS green screen composite of a cascade you can stand in front of for free, outselling every other photo product; a 1,200 SOVS fine cleared before noon on a Saturday |
 | Gameplay Value Established | ✅ | Sharing the Love five-tier stacking status with seven gain sources and four cures persisting city-wide; the structurally-excluded attribution table; Tier 4 navigation override and Tier 5 day-long debuff; the eight-item cart economy; quarterly inspection world state with a four-stage score downgrade and a four-stage sign escalation; the Cultural Alibi permanent flag; retained Giggling Figure encounter, mutoscope economy, eight photo stations and the Lennon unlock |
 | Technical Feasibility | ✅ | Streamed room units, cascade floor of four frames on Low LOD, crowd depth bands as single quads, capped spatter decal layer, pooled flash instances, pre-composed group blocks, CPU particles throughout |
 | Performance Budget | ✅ | 60 FPS, 16 draw calls, 42 MB (raised from 38 MB for the plaza and hero fountain), 18 particles; ~26.2 MB typical resident, ~38.4 MB worst case |
-| Accessibility Features | ✅ | Visual mirrors for all sixteen audio cues including the dip and the gurgle bed; a reduced-motion set that preserves every comedy beat (the cascade breathes, the dip still lands, the giggle still fires); letter/date-coded hygiene states; segmented and named status tiers; 44px touch zones |
-| No Crypto Elements | ✅ | The only currencies are Sovs, 1 Sov coins for machines built in the 1890s, and germs |
+| Accessibility Features | ✅ | Visual mirrors for all sixteen audio cues including the dip and the gurgle bed; a reduced-motion set that preserves every comedy beat (the cascade breathes, the dip still lands, the giggle still fires); letter/date-coded hygiene states; segmented and named status tiers; 44px click zones |
+| No Crypto Elements | ✅ | The only currencies are SOVS, 1 SOV coins for machines built in the 1890s, and germs |
 | Content Handled Appropriately | ✅ | No asset in this specification depicts explicit content. Every exhibit is confectionery, machinery, a mannequin, a framed artefact, signage, municipal paperwork, food-service equipment, or a visitor reaction. The collection and the fountain are rendered plainly and at full scale, without euphemism and without leering; the register is gleeful MA-rated excess played dead straight by the institution, with escalating physical consequences landing on the bros - never anticlimax, never administrative deflation. |
 | Social Media Integration | ✅ | 7 screenshot moments + 14 quotable lines identified |
 
-**Once these assets ship, Venustempel becomes the game's most completely honest tourist trap: nine Sovs to see a cracked 1974 chocolate phallus in a nitrogen case, one Sov for a stick with nothing on it, and nothing at all for the fountain — which is free, which is warm, which is four metres tall, which is under a road-sign-sized notice asking for one dip, and which four hundred strangers a day have already touched.**
+**Once these assets ship, Venustempel becomes the game's most completely honest tourist trap: nine SOVS to see a cracked 1974 chocolate phallus in a nitrogen case, one SOV for a stick with nothing on it, and nothing at all for the fountain — which is free, which is warm, which is four metres tall, which is under a road-sign-sized notice asking for one dip, and which four hundred strangers a day have already touched.**

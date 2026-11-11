@@ -63,9 +63,9 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 
 ### Technical Notes:
 - Backdrop drawn for 1920-wide viewport; parallax boats scroll at 0.3x camera speed
-- Water strips swap at 0.8s intervals (simplified water per mobile optimization note in profile)
+- Water strips swap at 0.8s intervals (simplified water per desktop performance note in profile)
 - Sea Mist Overlay rendered at 20% alpha, additive OFF (plain alpha blend)
-- Background gulls are STATIC on mobile (profile requirement)
+- Background gulls are STATIC on min-spec hardware (profile requirement)
 
 ---
 
@@ -82,7 +82,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Display Case (Half Empty) | (384, 192) | 256x192 | Late-day state: gaps in the rows, ice melting slightly |
 | Chopping Station | (640, 0) | 128x128 | Worn block, knife, decades of efficiency in the scarring |
 | Method Illustration Sign | (768, 0) | 192x256 | "THE SHAMSTERDAM WAY" — Grip / Tilt / Lower / Repeat, illustrated |
-| Price Board | (768, 256) | 192x128 | "Haring 4 Sovs / Met Uitjes 5 Sovs / De Waarheid Platter 8 Sovs" + raw-fish warning |
+| Price Board | (768, 256) | 192x128 | "Haring 4 SOVS / Met Uitjes 5 SOVS / De Waarheid Platter 8 SOVS" + raw-fish warning |
 
 ### Service Props:
 | Element | Position | Size | Description |
@@ -92,7 +92,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Napkin Dispenser | (640, 256) | 64x64 | Industrial strength; you'll need them |
 | Toothpick Cup | (704, 256) | 64x64 | For the timid |
 | Tail Grip Demo Placard | (0, 384) | 128x128 | Close-up hand-holding-tail diagram for the demonstration area |
-| Mint Tin (Fish Breath Cure) | (128, 384) | 64x64 | 1 Sov counter item, purchasable cure |
+| Mint Tin (Fish Breath Cure) | (128, 384) | 64x64 | 1 SOV counter item, purchasable cure |
 | Cart Awning States | (192, 384) | 384x128 | Open (192x128) at (192,384) + breeze-flutter frame (192x128) at (384,384) |
 | Ice Refill Bucket | (576, 384) | 96x128 | Prop for Maarten's restock loop |
 
@@ -116,7 +116,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Broodje Haring | (128, 0) | 64x48 | On bread; acceptable but noted |
 | Kibbeling Basket | (192, 0) | 64x64 | Fried retreat option, no judgment (some judgment) |
 | De Waarheid Platter | (0, 48) | 128x96 | Two herrings, onions, pickles, bread — the full spread |
-| "Just the Bread" | (128, 64) | 64x48 | Coward's Comfort, 2 Sovs |
+| "Just the Bread" | (128, 64) | 64x48 | Coward's Comfort, 2 SOVS |
 | Raw Onion Portion | (192, 64) | 32x32 | Diced, powerful |
 | Pickle Portion | (224, 64) | 32x32 | Augurken single serving |
 | Fish Tail Remaining | (128, 112) | 32x16 | Victory evidence |
@@ -199,7 +199,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Hendrik Swoop Frame 2 | (64, 240) | 64x64 | Descent, wings back |
 | Hendrik Swoop Frame 3 | (128, 240) | 64x64 | Acquisition — fish secured, generations of practice |
 | Hendrik Victory Ascent | (192, 240) | 64x64 | Departing with prize |
-| Hendrik Hover (Static Mobile) | (256, 240) | 64x64 | Single-frame hover for low-end devices (profile: static seagulls) |
+| Hendrik Hover (Static Min-Spec) | (256, 240) | 64x64 | Single-frame hover for min-spec hardware (profile: static seagulls) |
 
 ### Technical Notes:
 - Hen Party group blocks are pre-composed to save draw calls (one sprite, four characters)
@@ -278,7 +278,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 ### Technical Notes:
 - All status icons ship with pattern-differentiated variants (see Accessibility)
 - Threat indicator pulses at 1s intervals; static high-contrast variant provided
-- Touch targets for Method Choice options rendered at minimum 44px despite 192x128 art
+- Click targets for Method Choice options rendered at minimum 44px despite 192x128 art
 
 ---
 
@@ -378,7 +378,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - Fish Breath (green) vs. Onion Aura (yellow-white) icons differ by shape: wisp vs. ring — never color alone
 - Hesitation Timer uses fill-length plus hatching pattern, not just red saturation
 - Seagull threat readable via silhouette + chevrons, independent of red tint
-- Touch zones minimum 44px for the order point, method choice, and First Bite Prompt
+- Click zones minimum 44px for the order point, method choice, and First Bite Prompt
 
 ---
 
@@ -553,7 +553,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 - [ ] Satirical theme is clear throughout all assets (tourist reaction is the joke, never the Dutch tradition)
 - [ ] Hidden areas/interactions have discoverable visual cues (mint tin cure, tail-grip demo placard, Maarten eye-contact achievement)
 - [ ] Performance optimized (CPU particles, atlas limits respected, static-seagull fallback)
-- [ ] Touch zone sizing considered (44px minimum for order point, method choice, First Bite Prompt)
+- [ ] Click zone sizing considered (44px minimum for order point, method choice, First Bite Prompt)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (status icon shapes, hatched timer)
 - [ ] Social media viral potential maximized in composition choices (the Tilt framed against open harbor sky)
 
@@ -566,12 +566,12 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | World Consistency (no real city names) | ✅ | Shamsterdam Harbor District only; "The Shamsterdam Way" signage in-world |
 | Cultural Specificity | ✅ | Dutch haring tradition rendered with respect; tourist reaction carries the comedy |
 | Satirical Targets Appropriate | ✅ | Tourist hesitation, photo-op culture, and bro bravado — never Dutch food culture |
-| Seedy Underbelly Present | ✅ | 4 Sovs existential revelations, maximum-visibility stand placement, seagull opportunism economy |
+| Seedy Underbelly Present | ✅ | 4 SOVS existential revelations, maximum-visibility stand placement, seagull opportunism economy |
 | Gameplay Value Established | ✅ | Method challenge, Bravado economy, three status effects, seagull hazard, achievement track |
 | Technical Feasibility | ✅ | Static-seagull fallback, 2-frame ambients, pre-composed crowds documented |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 12 particles per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all four audio cues, reduced-motion set, 44px touch zones |
-| No Crypto Elements | ✅ | Pure traditional fish stand; all transactions in Sovs |
+| Accessibility Features | ✅ | Visual mirrors for all four audio cues, reduced-motion set, 44px click zones |
+| No Crypto Elements | ✅ | Pure traditional fish stand; all transactions in SOVS |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 
 **Once these assets ship, De Zilte Waarheid becomes the game's cleanest comedy machine: a spotless little cart where every player must choose, in public, between the bread and the truth.**

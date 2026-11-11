@@ -111,7 +111,7 @@ When building or completing a brewery, it is DONE when all of these exist:
 - [ ] **Stamp**: visual design, ink color, stamp animation, stamp speech from the stamper
 - [ ] **Bottle opener**: design, inscription, material gag
 - [ ] **Signature beer**: full stat block (style, ABV, HP/SP effects, buff/debuff risk,
-      price in Sovs, flavor text, "Brewed By", special quirk)
+      price in SOVS, flavor text, "Brewed By", special quirk)
 - [ ] **Selfie prop/pose**: the themed pose + how NPCs react to it
 - [ ] **PNG asset list**: stamp sheet, beer bottle + icon, brewmaster/selfie assets
 

@@ -34,9 +34,9 @@ Monsieur Aiguille knows precisely what he is holding. He has known for years. He
 
 | Attribute | Value |
 |-----------|-------|
-| **Purchase Price** | Not for sale at any price. PATH A costs 500 Sovs in unrelated Haberdashery spend (existing Valued Client tier) plus one absurd errand for Monsieur Aiguille; PATH B costs a full set of formal wear bought from the same shop, plus nerve |
+| **Purchase Price** | Not for sale at any price. PATH A costs 500 SOVS in unrelated Haberdashery spend (existing Valued Client tier) plus one absurd errand for Monsieur Aiguille; PATH B costs a full set of formal wear bought from the same shop, plus nerve |
 | **Actual Value** | Uninsurable. Aiguille has been offered numbers and has declined them without hearing them out |
-| **Resale Value** | 0 Sovs — no vendor in any city will take it, and the bros would not offer |
+| **Resale Value** | 0 SOVS — no vendor in any city will take it, and the bros would not offer |
 | **Can Be Sold** | No. Every shop UI returns Aiguille's line back at the player: "It is not for sale. It is for aspiration." The one thing the bros ever agree with him on |
 | **Can Be Dropped** | No (quest-critical; suppression must remain party-available for the rest of the game) |
 | **Can Be Traded** | No. It is one and only. There is nothing to trade it against and nobody willing |

@@ -22,7 +22,7 @@ Turlough is not missing. Turlough is hiding, deliberately and competently, in a 
 
 He is waiting for someone who will listen instead of swing. When the party finds him, he is not rescued. He is *interviewed*, and then he decides whether to help.
 
-He also, separately and with total clarity, bottled the batch that was fermenting the moment the colony woke up, put a 12 Sovs price on it, and made it the brewery's best seller.
+He also, separately and with total clarity, bottled the batch that was fermenting the moment the colony woke up, put a 12 SOVS price on it, and made it the brewery's best seller.
 
 ### What Bros Believe
 
@@ -79,7 +79,7 @@ Artists: he must read as *composed*, not feral. He has been hiding for three wee
 |-------|-------------|
 | Unshakeably calm | Three weeks in a barrel alcove and his first line is an observation about the party's boots, not a scream for help |
 | Genuinely listens | Repeats the party's questions back before answering them; the only NPC in the dungeon who does |
-| Commercially clear-eyed | Bottled the incident batch, priced it at 12 Sovs, and describes the story as the product. He is not embarrassed about this and does not pretend otherwise |
+| Commercially clear-eyed | Bottled the incident batch, priced it at 12 SOVS, and describes the story as the product. He is not embarrassed about this and does not pretend otherwise |
 | Craft-proud | Will correct the party's brewing vocabulary mid-crisis. It is not pedantry. It is the last thing keeping him steady |
 | Quietly guilty | Cannot say "I used it for thirty years" without putting his hand on something solid |
 
@@ -145,17 +145,17 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 
 ### On the Brewery, the Tour and the Money
 
-> "Twenty-five Sovs for the tour. I've never once been asked whether that's a fair price. Do you know what people ask? They ask if the pint at the end is a full pint. It is. It has always been. That's the whole business, that question."
+> "Twenty-five SOVS for the tour. I've never once been asked whether that's a fair price. Do you know what people ask? They ask if the pint at the end is a full pint. It is. It has always been. That's the whole business, that question."
 
 > "Fiona does the tour. Fiona is very good at the tour. Fiona also used the word 'alive' as a metaphor in front of a hundred and fifty years of live culture, so we've all learned something."
 
-> "The gift shop stayed open. Through all of it. Somebody was down there selling copper mugs at twenty-five Sovs a go while the fourth floor was under a metre of foam. I've enormous respect for that."
+> "The gift shop stayed open. Through all of it. Somebody was down there selling copper mugs at twenty-five SOVS a go while the fourth floor was under a metre of foam. I've enormous respect for that."
 
-> "Recipe book's twenty Sovs at the counter. I wrote it. Took two years. It sells about a third as well as the t-shirt."
+> "Recipe book's twenty SOVS at the counter. I wrote it. Took two years. It sells about a third as well as the t-shirt."
 
 ---
 
-### On "Vat Master's Reserve" (Signature Beer — 12 Sovs)
+### On "Vat Master's Reserve" (Signature Beer — 12 SOVS)
 
 > "This batch was IN the vat when it happened. When the Vat Master... woke up."
 
@@ -165,9 +165,9 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 
 > "It's our best seller now. People love the story. The beer's excellent too, but the story sells it."
 
-> "Nine and a half percent, imperial stout, eighteen months in whiskey wood. Twelve Sovs. You'd pay fourteen for worse in the city centre and you'd not get the story."
+> "Nine and a half percent, imperial stout, eighteen months in whiskey wood. Twelve SOVS. You'd pay fourteen for worse in the city centre and you'd not get the story."
 
-> "Five Sovs for a sample in the tasting room if you're not committing. I'd commit."
+> "Five SOVS for a sample in the tasting room if you're not committing. I'd commit."
 
 **Negotiate route only — replaces the flavour-text line above:**
 > "The Vat Master approved this batch personally. Said it reminded it of what it was before awareness. Simpler times."
@@ -208,7 +208,7 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 
 > "Back again. Gift shop's that way. It's always that way. It's the only way out, that's the design."
 
-> "You'll want the 'I Survived Stoutworks' shirt. Forty Sovs. Yes, it's forty Sovs. Yes, you're going to buy it."
+> "You'll want the 'I Survived Stoutworks' shirt. Forty SOVS. Yes, it's forty SOVS. Yes, you're going to buy it."
 
 > "Any time you're in the district. The tour's still twenty-five. I can't do anything about the twenty-five."
 
@@ -238,11 +238,11 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 ### Items and Services Associated With Turlough
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Vat Master's Reserve (bottle) | 12 Sovs | Genuinely worth 12 Sovs; a 9.5% barrel-aged imperial stout is cheap at that | +40 HP, +15 SP, 10% chance of "Fermented Fury" (+15% Attack next battle), 10% chance of "The Vat's Whisper" (cosmetic) |
-| Vat Master's Reserve (tasting sample) | 5 Sovs | A 5 Sovs pour of a 12 Sovs bottle — he says so out loud | Unlocks the bottle as a purchasable consumable |
-| Brewmaster's Recipe Book | 20 Sovs | Two years of his writing, sells worse than a t-shirt | +10% effectiveness of all beer items; rare, limited stock |
-| Yeast Culture (Contained) | 25 Sovs | Post-dungeon only; he cultures these himself | Summons a temporary ally in battle |
-| Copper Mug | 25 Sovs | Overpriced, and the mug is fine | +Alcohol resistance, beer heals extra |
+| Vat Master's Reserve (bottle) | 12 SOVS | Genuinely worth 12 SOVS; a 9.5% barrel-aged imperial stout is cheap at that | +40 HP, +15 SP, 10% chance of "Fermented Fury" (+15% Attack next battle), 10% chance of "The Vat's Whisper" (cosmetic) |
+| Vat Master's Reserve (tasting sample) | 5 SOVS | A 5 SOVS pour of a 12 SOVS bottle — he says so out loud | Unlocks the bottle as a purchasable consumable |
+| Brewmaster's Recipe Book | 20 SOVS | Two years of his writing, sells worse than a t-shirt | +10% effectiveness of all beer items; rare, limited stock |
+| Yeast Culture (Contained) | 25 SOVS | Post-dungeon only; he cultures these himself | Summons a temporary ally in battle |
+| Copper Mug | 25 SOVS | Overpriced, and the mug is fine | +Alcohol resistance, beer heals extra |
 | The negotiation briefing | Free | Gates the entire diplomacy route | Sets `turlough_briefing_heard`; required to unlock Vat Master negotiate dialogue |
 | Directions to the friendly colony | Free | The single most valuable thing in the dungeon | Reveals the Floor 4 hidden alcove on the map |
 | "Living Yeast Sample" companion | Negotiate ending reward | Cannot be bought at any price | Permanent companion, Allied Brewery status |
@@ -271,7 +271,7 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 ### Territory / Social Dynamics
 - **Turlough vs. Fiona**: she owns Floors 1–4 in tour mode, he owns Floors 5–6 in dungeon mode. They do not appear on screen together until the post-dungeon tasting room.
 - **Turlough vs. the Vat Master**: he will not enter the boss arena under any circumstances. On the negotiate route he watches from the gantry and says nothing during the conversation. This is a deliberate abdication — he has had thirty-one years to say his piece and cannot do it in front of an audience.
-- **Turlough vs. commerce**: he never criticises the gift shop, the 25 Sovs ticket, the 40 Sovs shirt or the 12 Sovs bottle. He is the operation's most clear-eyed defender and its most accurate describer, simultaneously.
+- **Turlough vs. commerce**: he never criticises the gift shop, the 25 SOVS ticket, the 40 SOVS shirt or the 12 SOVS bottle. He is the operation's most clear-eyed defender and its most accurate describer, simultaneously.
 - The staff who fled the incident all reference him: "The brewmaster'll know. If he's alive, he'll know." They are correct on both counts.
 
 ---
@@ -316,7 +316,7 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 | turlough_stand_slow | Party enters the alcove and speaks for the first time |
 | turlough_gesture_up | Giving directions to the Floor 4 friendly colony |
 | turlough_hand_flat_vat | Delivering any line about the Vat Master |
-| turlough_pour_sample | Tasting room, purchasing the 5 Sovs sample |
+| turlough_pour_sample | Tasting room, purchasing the 5 SOVS sample |
 | turlough_chalk_barrel | Negotiate ending only, tasting room, one-time play |
 | turlough_turn_away_gantry | Combat route, party enters the boss arena |
 
@@ -352,9 +352,9 @@ He is also a soft gate on the Brewery Tour sidequest's best state: the "Peaceful
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Floor 4 colony map marker | On completing the five-stage explanation | Yes | Reveals the hidden friendly colony alcove permanently |
-| Vat Master's Reserve (bottle) | Purchasable from the tasting room once the stamp is earned | No — consumable, restockable at 12 Sovs | +40 HP, +15 SP, chance of Fermented Fury or The Vat's Whisper |
-| Brewmaster's Recipe Book | Post-dungeon gift shop, 20 Sovs, limited stock | Yes | +10% effectiveness of all beer items |
-| Yeast Culture (Contained) | Post-dungeon gift shop, 25 Sovs | No — consumable | Summons a temporary battle ally |
+| Vat Master's Reserve (bottle) | Purchasable from the tasting room once the stamp is earned | No — consumable, restockable at 12 SOVS | +40 HP, +15 SP, chance of Fermented Fury or The Vat's Whisper |
+| Brewmaster's Recipe Book | Post-dungeon gift shop, 20 SOVS, limited stock | Yes | +10% effectiveness of all beer items |
+| Yeast Culture (Contained) | Post-dungeon gift shop, 25 SOVS | No — consumable | Summons a temporary battle ally |
 | "Living Yeast Sample" companion | Negotiate ending only, handed over personally | Yes | Permanent companion; Allied Brewery status |
 | Brewmaster's Pass | Full clear, either ending | Yes | Permanent Stoutworks access including the Copper Cathedral selfie spot |
 
@@ -367,7 +367,7 @@ He is also a soft gate on the Brewery Tour sidequest's best state: the "Peaceful
 2. Turlough on the gantry, backlit by the copper stills, watching the negotiation and saying nothing.
 3. The notebook's final entry in close-up: *"Asked again. Still no answer ready."*
 4. Turlough behind the tasting bar post-dungeon, gift shop visible through the doorway, still open, still selling.
-5. The 12 Sovs price tag on Vat Master's Reserve framed against the boss arena in the background.
+5. The 12 SOVS price tag on Vat Master's Reserve framed against the boss arena in the background.
 
 ### Meme Potential
 - "It's our best seller now. People love the story. The beer's excellent too, but the story sells it." — the single most reusable line in the profile; works verbatim on any product-marketing post.
@@ -387,7 +387,7 @@ Irish, Dublin-adjacent working trade rather than tourist-brochure lilt. Real, un
 ### Tone
 - **Discovery scene**: mildly inconvenienced, like a man interrupted mid-paperwork. This is the joke and it must not be played as fear.
 - **The five-stage explanation**: level, unhurried, no rising emotion until stage 3, and even then it is only a slight firming.
-- **Anything about money**: completely neutral. 25 Sovs, 12 Sovs, 40 Sovs — he says the numbers the way he says the gravity readings.
+- **Anything about money**: completely neutral. 25 SOVS, 12 SOVS, 40 SOVS — he says the numbers the way he says the gravity readings.
 - **Combat ending**: flattened. Not grief. Something more like an inventory being taken.
 - **Negotiate ending**: lighter by about ten percent. That is all. Do not let him become warm; the restraint is the payoff.
 
@@ -435,10 +435,10 @@ Irish, Dublin-adjacent working trade rather than tourist-brochure lilt. Real, un
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Turlough has no crypto content of any kind; all trade is Sovs over a counter
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Turlough has no crypto content of any kind; all trade is SOVS over a counter
 - [x] **NO automatic crypto assumptions** - a 64-year-old head brewer does not earn in shitcoins and none has been given to him
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — no coins invented in this file
-- [x] **The bros are never scam-aware** - they treat the fully-informed local as quirky set dressing and never once suspect the 25 Sovs/40 Sovs/12 Sovs pricing is anything but fair
+- [x] **The bros are never scam-aware** - they treat the fully-informed local as quirky set dressing and never once suspect the 25 SOVS/40 SOVS/12 SOVS pricing is anything but fair
 - [x] **Nothing winks** - Turlough never comments on the absurdity of the gift shop, the tour price, or his own situation; he states facts flatly and the audience does the work
 - [x] **Focus on city-specific cultural exploitation instead** - brewery tourism, heritage commodification, the tour-ends-in-a-gift-shop industry
 

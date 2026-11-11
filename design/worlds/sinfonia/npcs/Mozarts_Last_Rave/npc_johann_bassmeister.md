@@ -21,7 +21,7 @@ Johann Bassmeister is the headline act of a fifteen-year-old licensed nightclub 
 
 The set is a three-phase structure built around a converted pipe organ, timed to a house beat clock, with four supporting performers on the cardinal booths and a room full of skeletons who hit their marks. It is a genuinely excellent show. It has been refined over fifteen years. The health inspection certificate hanging by the kiosk upstairs covers the room he performs in.
 
-Whether the performer is a ghost, a hallucination brought on by 18 Sovs of novelty cocktail, or an extremely committed professional in a costume is **never established by this game and must never be established by this game.** Every reading holds. Helga, who has worked twenty metres from him for twenty years, calls the skeletons "lovely coworkers" and has never elaborated. The theatre students who work the floor earn 15 Sovs/hour and are only ever seen off-shift, away from the room. Nothing in the Conductor's Crypt resolves anything. That is the design.
+Whether the performer is a ghost, a hallucination brought on by 18 SOVS of novelty cocktail, or an extremely committed professional in a costume is **never established by this game and must never be established by this game.** Every reading holds. Helga, who has worked twenty metres from him for twenty years, calls the skeletons "lovely coworkers" and has never elaborated. The theatre students who work the floor earn 15 SOVS/hour and are only ever seen off-shift, away from the room. Nothing in the Conductor's Crypt resolves anything. That is the design.
 
 What is *not* ambiguous is the grievance. Whoever or whatever is up there behind the organ is genuinely, structurally furious about Mozart, has been for the entire run, and does not stop being furious when the music stops. The bitterness is the most consistent thing about him and the only thing anyone who has met him agrees on.
 
@@ -37,7 +37,7 @@ None of them notice the gaffer-taped cable snake running across the floor to the
 
 The bros believe they have found a secret. The secret has a Yelp page with 847 reviews, 4.2 stars on TripAdvisor, fifteen years of filed tax notices pinned by the pass kiosk, a framed and current health inspection certificate, and a security guard who patrols past the open grave without turning his head, because he is aware that the grave is the door and has been aware for over a decade.
 
-The 5 Sovs "Composer's Rest" Cemetery Visitor Pass is club cover. Everybody in the queue at 11:40 PM knows this. The bros bought three of them believing they were sneaking in.
+The 5 SOVS "Composer's Rest" Cemetery Visitor Pass is club cover. Everybody in the queue at 11:40 PM knows this. The bros bought three of them believing they were sneaking in.
 
 And underneath all of that, the joke turns over once more and lands somewhere unexpectedly sincere: the show is *good*. Bassmeister is a tremendous performer. The lore is well-constructed. The bros are having an authentic, genuinely excellent night at a professionally-run venue, and the only thing they are wrong about is how hard it was to find.
 
@@ -188,8 +188,8 @@ To be named. Not avenged, not worshipped, not feared — named. The whole three-
 **On a purchase:**
 > "Enjoy it. Tell someone where you got it. — That is not a SALES REQUEST. That is the WHOLE ARRANGEMENT."
 
-**On the 5 Sovs pass, if shown one:**
-> "Five Sovs. For the CEMETERY. *(a long pause)* ...I am told it is a DONATION."
+**On the 5 SOVS pass, if shown one:**
+> "Five SOVS. For the CEMETERY. *(a long pause)* ...I am told it is a DONATION."
 
 ### If Player Declines / Alternative Path
 
@@ -251,36 +251,36 @@ To be named. Not avenged, not worshipped, not feared — named. The whole three-
 **Rhythm Buff Items**
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Metronome of the Damned | 30 Sovs | A working metronome; brass; genuinely good | +8% hit window on all rhythm inputs for 2 hours |
-| Bassmeister's Annotated Setlist (copy) | 25 Sovs | His handwriting, photocopied at a shop on the surface | Reveals the next boss attack one beat early, permanently, in this location only |
-| Tuning Fork, Grave-Cold | 18 Sovs | 4 Sovs of steel | Removes Off-Key. Held to the skull, it hums. Nobody has explained the humming. |
-| Rosin of the Restless | 22 Sovs | Rosin | +5% Harmony Meter build rate for 1 hour |
-| Counterpoint Earplugs | 12 Sovs | Earplugs | Immunity to Dazed (DJ Soprano Specter's high notes) for one encounter |
-| The Downbeat Draught | 35 Sovs | Sugar, caffeine, and menace | Guarantees the first hit of every encounter lands on-beat, for 45 minutes |
+| Metronome of the Damned | 30 SOVS | A working metronome; brass; genuinely good | +8% hit window on all rhythm inputs for 2 hours |
+| Bassmeister's Annotated Setlist (copy) | 25 SOVS | His handwriting, photocopied at a shop on the surface | Reveals the next boss attack one beat early, permanently, in this location only |
+| Tuning Fork, Grave-Cold | 18 SOVS | 4 SOVS of steel | Removes Off-Key. Held to the skull, it hums. Nobody has explained the humming. |
+| Rosin of the Restless | 22 SOVS | Rosin | +5% Harmony Meter build rate for 1 hour |
+| Counterpoint Earplugs | 12 SOVS | Earplugs | Immunity to Dazed (DJ Soprano Specter's high notes) for one encounter |
+| The Downbeat Draught | 35 SOVS | Sugar, caffeine, and menace | Guarantees the first hit of every encounter lands on-beat, for 45 minutes |
 
 **Bone Merchandise & Vessels**
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Spine Glow-Stick | 8 Sovs | 0.60 Sovs | Light source in Fog Banks; +1 Bravado while equipped. Sold in packs of one, deliberately. |
-| Spine Glow-Stick, Full Vertebral Set (6) | 40 Sovs | 4 Sovs | The same buff. Chadwick buys this immediately and wears all six. |
-| Skull Glass (keep the vessel) | +3 Sovs on any drink | 2 Sovs | Inventory item, reusable, dishwasher-safe. Helga will confirm the provenance if asked. |
-| Femur Drumsticks (pair) | 15 Sovs | 5 Sovs | Playable on any Tombstone Speaker for a small SP restore, once per night |
-| Rib Cage Coat Hook, Miniature | 20 Sovs | 6 Sovs | Room decoration. Holds one hat. |
-| "HE FELT IT FIRST" Shirt | 28 Sovs | 7 Sovs | +2 Charm inside Mozart's Last Rave. −1 Charm everywhere else in Sinfonia. |
-| Crown of Skulls (prop, retired stock) | 45 Sovs | 12 Sovs | Bone Throne selfie prop, keepable; wearing it in the Bassline Opera House is a documented incident |
+| Spine Glow-Stick | 8 SOVS | 0.60 SOVS | Light source in Fog Banks; +1 Bravado while equipped. Sold in packs of one, deliberately. |
+| Spine Glow-Stick, Full Vertebral Set (6) | 40 SOVS | 4 SOVS | The same buff. Chadwick buys this immediately and wears all six. |
+| Skull Glass (keep the vessel) | +3 SOVS on any drink | 2 SOVS | Inventory item, reusable, dishwasher-safe. Helga will confirm the provenance if asked. |
+| Femur Drumsticks (pair) | 15 SOVS | 5 SOVS | Playable on any Tombstone Speaker for a small SP restore, once per night |
+| Rib Cage Coat Hook, Miniature | 20 SOVS | 6 SOVS | Room decoration. Holds one hat. |
+| "HE FELT IT FIRST" Shirt | 28 SOVS | 7 SOVS | +2 Charm inside Mozart's Last Rave. −1 Charm everywhere else in Sinfonia. |
+| Crown of Skulls (prop, retired stock) | 45 SOVS | 12 SOVS | Bone Throne selfie prop, keepable; wearing it in the Bassline Opera House is a documented incident |
 
 **Classical Cocktails — Requiem Room List**
 *Named after compositions. Mixed by Helga, curated and named by him, and he will tell you which of those two facts he considers more important.*
 
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| The Adagio | 12 Sovs | 3 Sovs | Slow-release: +40 HP over 5 minutes. Calms the hit window. |
-| Allegro con Fuoco | 14 Sovs | 4 Sovs | +20% Speed, 20 minutes; narrows the hit window, which nobody reads before ordering |
-| Nocturne | 12 Sovs | 3 Sovs | +30 SP. Served without ice, in silence, at his instruction. |
-| Basso Continuo | 13 Sovs | 4 Sovs | +15% mitigation on bass-drop damage for one encounter |
-| Fugue State | 16 Sovs | 4 Sovs | +25 HP, +25 SP, and the next three dialogue choices are presented in a different order |
-| The Unfinished | 15 Sovs | 4 Sovs | Served three-quarters full. Refuses to be topped up. +2 Wisdom for 1 hour. Nobody asks whose it is. |
-| **"RIP Your Sobriety"** | 18 Sovs | 5 Sovs, and a genuine liability | Full HP/SP restore, +25% rhythm performance for 30 minutes, then **Exhausted**. The recipe is a boss reward; buying it ready-made costs 18 Sovs forever. |
+| The Adagio | 12 SOVS | 3 SOVS | Slow-release: +40 HP over 5 minutes. Calms the hit window. |
+| Allegro con Fuoco | 14 SOVS | 4 SOVS | +20% Speed, 20 minutes; narrows the hit window, which nobody reads before ordering |
+| Nocturne | 12 SOVS | 3 SOVS | +30 SP. Served without ice, in silence, at his instruction. |
+| Basso Continuo | 13 SOVS | 4 SOVS | +15% mitigation on bass-drop damage for one encounter |
+| Fugue State | 16 SOVS | 4 SOVS | +25 HP, +25 SP, and the next three dialogue choices are presented in a different order |
+| The Unfinished | 15 SOVS | 4 SOVS | Served three-quarters full. Refuses to be topped up. +2 Wisdom for 1 hour. Nobody asks whose it is. |
+| **"RIP Your Sobriety"** | 18 SOVS | 5 SOVS, and a genuine liability | Full HP/SP restore, +25% rhythm performance for 30 minutes, then **Exhausted**. The recipe is a boss reward; buying it ready-made costs 18 SOVS forever. |
 
 ### Hidden Details / Easter Eggs
 - **Examine the pipe organ, before the fight**: *"Original pipework. Modern faders bolted to the stops, and a label-maker strip across them reading BASS / MID / HIGH / DOOM. Somebody did this on a Tuesday."* — This is the counter-play hint and it is available from the first second the player enters the arena.
@@ -288,8 +288,8 @@ To be named. Not avenged, not worshipped, not feared — named. The whole three-
 - **Examine the Lost Composition**: *"Symphony No. 1 in B-flat, 'The Drop.' Two hundred and thirty years old. Water-damaged at the corner. The final movement is marked, in a very steady hand: ANDANTE — THEN LOUDER."*
 - **Examine his ring of iron keys**: *"Seven keys. Six of them fit doors in this building. The seventh is much older and much smaller and he has never used it in front of anyone."* (Never explained. Do not explain it.)
 - **Examine his headstone in daylight**: *"Tourists walk past it to photograph a different grave forty feet away. A guide is explaining the cultural significance of the other one."*
-- Bring the Opera Program (12 Sovs, Bassline Opera House) to his vendor counter: he reads it cover to cover without speaking, hands it back, and says *"Not one MENTION."* The program is returned undamaged.
-- Bring the Mozart Bust (mini, 45 Sovs, Bassline Opera House gift shop) to his counter: he sells you a spine glowstick at full price and does not acknowledge the bust in any way, ever, on any subsequent visit.
+- Bring the Opera Program (12 SOVS, Bassline Opera House) to his vendor counter: he reads it cover to cover without speaking, hands it back, and says *"Not one MENTION."* The program is returned undamaged.
+- Bring the Mozart Bust (mini, 45 SOVS, Bassline Opera House gift shop) to his counter: he sells you a spine glowstick at full price and does not acknowledge the bust in any way, ever, on any subsequent visit.
 - Play the Femur Drumsticks on the Tombstone Speaker in front of him: *"...In TIME. Do that again in TIME and I will give you the sticks for FREE."* He does not.
 
 ---
@@ -307,7 +307,7 @@ To be named. Not avenged, not worshipped, not feared — named. The whole three-
 | The Grave Guide (`sinfonia_npc_grave_guide_01`) | Living, technically. Runs the rhythm tutorial in a badly fitting skeleton costume. Bassmeister has never acknowledged his existence and the Grave Guide talks about him constantly. |
 | The Ghost Groupies | Ambient. Drop boss-mechanic hints to anyone who talks to them twice. Period-inappropriate clothing. Enthusiastic. |
 | Maestro von Strauss (Bassline Opera House) | Never met. Different building, different century, same city, opposite ends of the same argument. Neither knows the other exists. |
-| The theatre students (15 Sovs/hour) | Only ever seen off-shift, upstairs, out of costume. They have never been seen in the same frame as him and never will be. |
+| The theatre students (15 SOVS/hour) | Only ever seen off-shift, upstairs, out of costume. They have never been seen in the same frame as him and never will be. |
 
 ### Territory / Social Dynamics
 - The four elemental DJs are explicitly **his orchestra** — same construction, four silhouettes, one lore. Defeating all four before descending changes nothing mechanically and changes his Phase 2 add-summon line, which is the only reward and is worth it.
@@ -385,7 +385,7 @@ Per the standing rule, `PNG_Assets/Mozarts_Last_Rave_PNG_Assets.md` is authorita
 - **Outcome**: **Combat** — "Slayed the Dead" achievement, full reward set, no vendor, no Requiem Room breakfast, no throne variant, repeatable set every night. **Appeasement** — "Appeased the Dead" achievement, identical reward set, plus permanent vendor access, the Bone Throne special variant, and the couchsurf morning cameo.
 
 ### Quest Gate Function (If Applicable)
-He gates the **Eternal Setlist**, which is the key item that unlocks Requiem Room VIP access — and therefore gates the couchsurf stay with Helga, the "Vinyl Hunt" rare LP hidden in the Requiem Room, and the Bone Throne selfie spot. Both resolutions grant it; there is no way to reach the VIP room without going through him. He gates nothing else, and the club's other three areas are open to anyone holding a 5 Sovs pass.
+He gates the **Eternal Setlist**, which is the key item that unlocks Requiem Room VIP access — and therefore gates the couchsurf stay with Helga, the "Vinyl Hunt" rare LP hidden in the Requiem Room, and the Bone Throne selfie spot. Both resolutions grant it; there is no way to reach the VIP room without going through him. He gates nothing else, and the club's other three areas are open to anyone holding a 5 SOVS pass.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -459,7 +459,7 @@ Theatrical, period-inflected Sinfonian — a stage voice, not a horror voice. Pe
 
 ## 📝 Development Notes
 
-- **THE CENTRAL AMBIGUITY IS BINDING.** Whether the undead of Mozart's Last Rave are real, hallucinated, or performed is deliberately never confirmed by `mozarts_last_rave.md` and must never be confirmed here or anywhere downstream. Helga calls the skeletons "lovely coworkers"; the bros' morning-after account is that they danced with ghosts; the stated reality is theatre students in costume at 15 Sovs/hour. All three coexist. No line, frame, sound cue, item description, or achievement may adjudicate.
+- **THE CENTRAL AMBIGUITY IS BINDING.** Whether the undead of Mozart's Last Rave are real, hallucinated, or performed is deliberately never confirmed by `mozarts_last_rave.md` and must never be confirmed here or anywhere downstream. Helga calls the skeletons "lovely coworkers"; the bros' morning-after account is that they danced with ghosts; the stated reality is theatre students in costume at 15 SOVS/hour. All three coexist. No line, frame, sound cue, item description, or achievement may adjudicate.
 - **"Feel the BASS..." belongs to DJ Grave-o.** Recorded here because it is the single most likely misattribution in this location.
 - **The three phases are canon and load-bearing**: Phase 1 The Warmup (100–66%, 120 BPM steady), Phase 2 The Breakdown (66–33%, fluctuating 80–160 BPM), Phase 3 The Finale (33–0%, boss-controlled reactive). Do not re-tune without re-tuning `mozarts_last_rave.md` in the same pass.
 - **The "Last Rave" wind-up is 3.0 seconds because that is exactly how long it takes to reach the organ.** This is the counter-play, it is the whole mechanic, and it must never be shortened for pacing.
@@ -476,17 +476,17 @@ Theatrical, period-inflected Sinfonian — a stage voice, not a horror voice. Pe
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — the old "no new crypto content / 2% max" cap is superseded; crypto is a full authored system (SOVS for ~90% of trade, darknet shitcoins for the 10% back-alley economy). **None present here.** The Bone Bar and the Requiem Room counter take Sov, in cash, into a pelvic bowl.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — the old "no new crypto content / 2% max" cap is superseded; crypto is a full authored system (SOVS for ~90% of trade, darknet shitcoins for the 10% back-alley economy). **None present here.** The Bone Bar and the Requiem Room counter take SOV, in cash, into a pelvic bowl.
 - [x] **NO automatic crypto assumptions** - most NPCs still have none; give an NPC crypto only where the character already earns it. Bassmeister has never earned anything and is not about to start with a token.
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — N/A; no coin, kiosk, or certificate exists at this location
-- [x] **The bros are never scam-aware** - even mid-rug-pull, every loss is a market correction; sellers and scammers always know exactly what they have. The bros never learn that the 5 Sovs cemetery pass was club cover, that the venue is on TripAdvisor with 4.2 stars, or that the secret they discovered has 847 Yelp reviews.
+- [x] **The bros are never scam-aware** - even mid-rug-pull, every loss is a market correction; sellers and scammers always know exactly what they have. The bros never learn that the 5 SOVS cemetery pass was club cover, that the venue is on TripAdvisor with 4.2 stars, or that the secret they discovered has 847 Yelp reviews.
 - [x] **Nothing winks** - no NPC line, tooltip, or aside signals that any of this is satire. The health inspection certificate, the tax notices, and the 4.2-star plaque are set dressing, visible and unremarked; no character ever points at them.
 - [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's composer-grave tourism, classical-legacy merchandising, and the underground-venue marketing that sells a licensed fifteen-year-old business as a secret
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on death tourism, themed-nightclub marketing, and three Americans convinced they discovered something. Classical music itself is treated as genuinely worth caring about, which is why his grievance carries weight.
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a professional headliner with a fifteen-year residency, a fair fight, a spotless safety record, and honest pricing on every item he sells
-- [x] Humor is affectionate mockery, not mean-spirited — Mozart is irreverently ribbed, never disrespected; no real composer's grave appears; the venue's working people (Helga, the Grave Guide, the 15 Sovs/hour theatre students) are treated with affection throughout
+- [x] Humor is affectionate mockery — Mozart is irreverently ribbed, never disrespected; no real composer's grave appears; the venue's working people (Helga, the Grave Guide, the 15 SOVS/hour theatre students) are treated with affection throughout
 
 ---
 

@@ -1,7 +1,7 @@
 # The Confidence Man - Complete PNG Asset Requirements
 
 ## 📋 Overview
-A mobile street cart selling bottled confidence, run by a former actor whose products work partly through herbs, mostly through belief, and entirely through a magnificent mustache. This document specifies every sprite needed for a vendor who puts "con" right in his name and dares you to buy anyway — carnival theatre parked outside a Publandia pub, selling the placebo effect at 15 Sovs a bottle.
+A mobile street cart selling bottled confidence, run by a former actor whose products work partly through herbs, mostly through belief, and entirely through a magnificent mustache. This document specifies every sprite needed for a vendor who puts "con" right in his name and dares you to buy anyway — carnival theatre parked outside a Publandia pub, selling the placebo effect at 15 SOVS a bottle.
 
 **Location ID:** `publandia_vendor_confidence_man_01`
 **Theme:** Self-improvement snake oil, confidence as performance, the placebo effect with a price board
@@ -155,7 +155,7 @@ assets/sprites/locations/publandia/confidence_man/
 ### Bronze Tier (24x48 each, brown labels, y=0):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| "Mild Courage" Tonic | (0, 0) | 24x48 | Starter courage, 5 Sovs |
+| "Mild Courage" Tonic | (0, 0) | 24x48 | Starter courage, 5 SOVS |
 | "Steady Nerves" Drops | (24, 0) | 24x48 | Dropper bottle, calming blue liquid |
 | "Social Ease" Elixir | (48, 0) | 24x48 | Round flask, chatty fizz |
 | "Basic Boldness" Shot | (72, 0) | 24x48 | Stubby shot bottle |
@@ -182,7 +182,7 @@ assets/sprites/locations/publandia/confidence_man/
 | "Cormac's Personal Blend" | (96, 48) | 24x48 | Hand-written label, the real stuff |
 | "Emergency Confidence" | (120, 48) | 24x48 | Break-glass styling |
 | "The Transformation" | (144, 48) | 24x48 | Warning band: crash after |
-| "Liquid Legend" | (168, 48) | 24x48 | 50 Sovs, faintly glowing |
+| "Liquid Legend" | (168, 48) | 24x48 | 50 SOVS, faintly glowing |
 
 ### Tier Sets & Props:
 | Element | Position | Size | Description |
@@ -333,7 +333,7 @@ assets/sprites/locations/publandia/confidence_man/
 ### Colorblind Considerations:
 - Tonic tiers coded by label color AND cap shape (round/square/crown/skull) AND menu tab text
 - Buff Timer crash telegraph uses ring segmentation, not color shift alone
-- Haggle options carry distinct icons; all menu rows and the cart hotspot meet the 44px minimum touch target
+- Haggle options carry distinct icons; all menu rows and the cart hotspot meet the 44px minimum click target
 
 ---
 
@@ -508,7 +508,7 @@ assets/sprites/locations/publandia/confidence_man/
 - [ ] Satirical theme (self-aware con artistry, belief as product) is clear throughout all assets
 - [ ] Easter eggs discoverable: Secret Recipe Box, Ingredient Jars with real studies, Label Sheet, Placebo Glint
 - [ ] Performance optimized (10-particle cap, composite cart node, shared crowd overlays)
-- [ ] Touch zone sizing considered (44px minimum — menu rows, haggle options, cart hotspot compliant)
+- [ ] Click zone sizing considered (44px minimum — menu rows, haggle options, cart hotspot compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (cap shapes, ring segmentation, icon-coded haggling)
 - [ ] Social media viral potential maximized (pitch composition, crash moment framing)
 
@@ -523,12 +523,12 @@ assets/sprites/locations/publandia/confidence_man/
 | Satirical Targets Appropriate | ✅ | Snake-oil sellers and buyer belief — not actual supplements; punches at the con, not the nervous |
 | Seedy Underbelly Present | ✅ | Belief sold at premium prices, positioned to catch nervous tourists at pub doors |
 | Gameplay Value Established | ✅ | Bravado buff economy, haggle minigame, crash risk/reward, Valued Customer track |
-| Technical Feasibility | ✅ | Single composite cart, 6 sheets, mobile optimization documented |
+| Technical Feasibility | ✅ | Single composite cart, 6 sheets, desktop performance budget documented |
 | Performance Budget | ✅ | 60 FPS, 10 draw calls, 25MB |
 | Accessibility Features | ✅ | Visual cues for every audio beat, static aura/shimmer variants, shape-coded tiers |
 | No Crypto Elements | ✅ | Absent from source and spec |
 | Social Media Integration | ✅ | Five viral moments identified, quote bank sourced from profile |
 
-**The Confidence Man delivers a con you can see through and buy from anyway. Every asset — the gold banners over the no-refunds plaque, the shimmer that might be placebo, the crash that always comes on time — sells the same honest lie: confidence is 15 Sovs, and it works exactly as much as you decide it does.**
+**The Confidence Man delivers a con you can see through and buy from anyway. Every asset — the gold banners over the no-refunds plaque, the shimmer that might be placebo, the crash that always comes on time — sells the same honest lie: confidence is 15 SOVS, and it works exactly as much as you decide it does.**
 
 **"Ready to become who you were MEANT to be?"**

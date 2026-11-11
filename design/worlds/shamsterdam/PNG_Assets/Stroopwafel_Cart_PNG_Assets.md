@@ -1,7 +1,7 @@
 # De Stroopwafel Kar (The Stroopwafel Cart) - Complete PNG Asset Requirements
 
 ## 📋 Overview
-De Stroopwafel Kar is Shamsterdam's mobile street-food landmark — a blue-and-white tiled three-wheeled cart where Tante Bep presses fresh stroopwafels for 8 Sovs that locals buy packaged for 2 Sovs, and the tourists are STILL right to pay it. This document specifies every PNG asset for the cart: three time-based location backdrops, the cart structure and equipment, Tante Bep and Mila NPC sheets, the customer cast, food/production sprites with steam and caramel effects, and the ordering UI. Its satirical essence in a sentence: the one tourist trap in Shamsterdam that delivers exactly what it promises, at five times the price.
+De Stroopwafel Kar is Shamsterdam's mobile street-food landmark — a blue-and-white tiled three-wheeled cart where Tante Bep presses fresh stroopwafels for 8 SOVS that locals buy packaged for 2 SOVS, and the tourists are STILL right to pay it. This document specifies every PNG asset for the cart: three time-based location backdrops, the cart structure and equipment, Tante Bep and Mila NPC sheets, the customer cast, food/production sprites with steam and caramel effects, and the ordering UI. Its satirical essence in a sentence: the one tourist trap in Shamsterdam that delivers exactly what it promises, at five times the price.
 
 **Location ID:** `shamsterdam_market_stroopwafel_cart_01`
 **Theme:** Tourist pricing acceptance vs. genuine value; "authentic experience" markup satirized, the stroopwafel itself treated with total respect
@@ -68,7 +68,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 |---------|----------|------|-------------|
 | Full cart (front 3/4 view) | (0, 0) | 384x384 | Blue/white tiles, chrome trim, wood panels, three wheels, windmill + tulip decoration |
 | Cart awning | (384, 0) | 256x128 | Blue/white striped, "VERSE STROOPWAFELS" banner |
-| Price board | (640, 0) | 128x96 | "Klein 4 Sovs / Groot 8 Sovs", crossed-out "Local price: 2 Sovs", "Yes, They're Worth It" |
+| Price board | (640, 0) | 128x96 | "Klein 4 SOVS / Groot 8 SOVS", crossed-out "Local price: 2 SOVS", "Yes, They're Worth It" |
 | Cash box | (768, 0) | 64x64 | Weathered, well-used, efficient |
 | Card reader (with sigh) | (832, 0) | 48x64 | Mila's reluctant contraption |
 
@@ -82,13 +82,13 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Warming rack (stocked) | (864, 128) | 128x96 | Finished stroopwafels staying warm |
 | Splitting wire tool | (864, 224) | 64x32 | Sixty years of family practice |
 | Front counter display | (0, 384) | 256x128 | Finished stroopwafels, klein/groot size comparison visible |
-| Discount token ("Track the Cart" reward) | (256, 384) | 32x32 | One-time 2 Sovs off chip |
+| Discount token ("Track the Cart" reward) | (256, 384) | 32x32 | One-time 2 SOVS off chip |
 | Wax paper sleeve | (288, 384) | 48x48 | Handover wrapper |
 
 ### Technical Notes:
 - Cart renders as one Sprite2D; equipment sprites overlay at fixed offsets so the press cycle can animate independently
 - Price board is a separate sprite so the crossed-out local price can be zoomed for the reveal beat
-- Cart reposition between locations is a fade-out/fade-in, not a driving animation (per profile mobile optimization)
+- Cart reposition between locations is a fade-out/fade-in, not a driving animation (per profile desktop performance optimization)
 
 ---
 
@@ -196,7 +196,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Interface Elements:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Order selection panel | (0, 0) | 192x128 | Klein 4 Sovs / Groot 8 Sovs choice, groot subtly highlighted |
+| Order selection panel | (0, 0) | 192x128 | Klein 4 SOVS / Groot 8 SOVS choice, groot subtly highlighted |
 | Production wait timer | (192, 0) | 128x32 | 90 seconds of anticipation, iron icon fills |
 | Comfort status icon | (192, 32) | 32x32 | Warm glow badge (3 or 5 turns) |
 | Sugar Rush status icon | (224, 32) | 32x32 | Speed-boost lightning waffle |
@@ -220,7 +220,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Frames:** 4 (Bep) + iron open/closed overlays
 - **Pattern:** Ball placed → press down → hold/sizzle → lift, continuous while cart active
 - **Trigger:** Constant during open hours; syncs to order timer when player waits
-- **Purpose:** The visible theater — 90 seconds of craft justifying 8 Sovs
+- **Purpose:** The visible theater — 90 seconds of craft justifying 8 SOVS
 - **Audio Sync:** Sizzle on press-down frame; iron clank on lift
 - **Performance Optimization:** Cycle halves to 2 key frames on low LOD
 
@@ -299,7 +299,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - Klein/groot are size-coded and text-labeled, never color-coded
 - Status icons (Comfort/Sugar Rush/Enlightened) use distinct silhouettes, not palette swaps
 - Crossed-out local price uses strikethrough + label, not red-only signaling
-- Touch zones minimum 44px for order buttons, cart interaction, and map pips
+- Click zones minimum 44px for order buttons, cart interaction, and map pips
 
 ---
 
@@ -358,14 +358,14 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Track the Cart | Cart location map pips, discount token | Visit all three locations; one-time 2 Sovs off token |
+| Track the Cart | Cart location map pips, discount token | Visit all three locations; one-time 2 SOVS off token |
 | The Stroopwafel Trail (time-limited) | Map pips + Connoisseur title card | All three locations in one day; free groot next visit |
 | Stroopwafel Wisdom (achievement) | Enlightenment sparkle, Enlightened icon | Buy fresh after having packaged; permanent vendor-discount look |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| The Pancake House | Comparison dialogue callbacks (8 Sovs well-spent vs 18 Sovs regret) | Post-Pancake Disappointment status interacts with Comfort |
+| The Pancake House | Comparison dialogue callbacks (8 SOVS well-spent vs 18 SOVS regret) | Post-Pancake Disappointment status interacts with Comfort |
 | De Groene Gids | Enhanced-appreciation state ("This is like CLOUDS") | Space Cake Effect modifies first-bite reaction text |
 | De Kuipmarkt | Market backdrop strip shared with market zone | Cart anchored at market entrance mornings |
 | Frietomat | Comfort-food network contrast (3 AM vs daytime) | Dialogue references only, no shared sprites |
@@ -382,7 +382,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - **Texture:** Glazed tile, worn wood, chrome polished by thirty years of hands; steam softens every edge
 
 ### Environmental Storytelling:
-- The crossed-out "Local price: 2 Sovs" on the board tells the entire satire in four words
+- The crossed-out "Local price: 2 SOVS" on the board tells the entire satire in four words
 - Supermarket visible across the street in the market backdrop — the cheaper option is never hidden
 - The warming rack is always stocked but the line still waits for fresh — the product earns its markup on screen
 - Windmill and tulip decoration is deliberate tourist-bait maximalism, and Bep knows it
@@ -398,7 +398,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ## 🎯 Social Media Viral Potential
 
 ### Screenshot-Worthy Moments:
-1. **The price board** — "Klein 4 Sovs / Groot 8 Sovs" over crossed-out "Local price: 2 Sovs" and "Yes, They're Worth It"
+1. **The price board** — "Klein 4 SOVS / Groot 8 SOVS" over crossed-out "Local price: 2 SOVS" and "Yes, They're Worth It"
 2. **The split-and-fill close-up** — production stages strip is pure process-video bait
 3. **First-bite freeze frame** — the party's synchronized revelation faces
 4. **Child Experiencing Joy** — caramel-faced pure happiness beside price-calculating adults
@@ -407,9 +407,9 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Quote Potential:
 - "Groot is better. Fresh, more caramel. Same love, bigger joy."
 - "The stroop is my grandmother's recipe. The price is my landlord's recipe."
-- "Yes, it's eight Sovs. Yes, I know the supermarket. No, it's not the same."
+- "Yes, it's eight SOVS. Yes, I know the supermarket. No, it's not the same."
 - "Wait. WAIT. This is what they were SUPPOSED to taste like?"
-- "Every stroopwafel is ninety seconds of my life. That's worth eight Sovs. My life, your snack."
+- "Every stroopwafel is ninety seconds of my life. That's worth eight SOVS. My life, your snack."
 
 ---
 
@@ -469,7 +469,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - [ ] Satirical theme is clear throughout all assets (markup satirized, stroopwafel respected)
 - [ ] Hidden areas/interactions have discoverable visual cues (Trail map pips, discount token)
 - [ ] Performance optimized (CPU particles, time-slot streaming, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (size/text coding, distinct status silhouettes)
 - [ ] Social media viral potential maximized in composition choices (price board framing, process strip)
 
@@ -486,7 +486,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Gameplay Value Established | ✅ | Comfort/Sugar Rush economy, two cart quests, Bravado checks, Enlightened flag |
 | Technical Feasibility | ✅ | Fade-based relocation, streamed backdrops, 12-particle cap documented |
 | Performance Budget | ✅ | 60 FPS, ≤12 draw calls, ≤30 MB per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px touch zones |
+| Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px click zones |
 | No Crypto Elements | ✅ | Pure traditional street food (profile-confirmed) |
 | Social Media Integration | ✅ | 5 screenshot moments identified, process-video composition built in |
 

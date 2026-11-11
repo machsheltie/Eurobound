@@ -105,9 +105,9 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 ### The Kapsalon Range:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Kapsalon Regular | (0, 0) | 96x64 | Standard glory, 10 Sovs, "large enough for most" |
-| Kapsalon Large | (96, 0) | 128x72 | Committed glory, 14 Sovs, Food Coma risk visible in sheer mass |
-| Kapsalon King Size | (224, 0) | 160x80 | Wall of Fame glory, 18 Sovs, structurally ambitious |
+| Kapsalon Regular | (0, 0) | 96x64 | Standard glory, 10 SOVS, "large enough for most" |
+| Kapsalon Large | (96, 0) | 128x72 | Committed glory, 14 SOVS, Food Coma risk visible in sheer mass |
+| Kapsalon King Size | (224, 0) | 160x80 | Wall of Fame glory, 18 SOVS, structurally ambitious |
 | Cheese Melt Cap | (384, 0) | 64x64 | Bubbling Gouda top layer, overlay-ready |
 | Cola Cup | (448, 0) | 32x48 | "For the cheese" |
 | Layers Cross-Section Diagram | (384, 64) | 128x192 | Educational cutaway: fries / döner / cheese / salad / sauce, labeled |
@@ -364,7 +364,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - Garlic vs. sambal coded by container shape (round pump vs. angular bottle) and drip pattern, never white/red alone
 - Food Coma Risk Meter uses stepped segment count + text (20/40/100), not color gradient alone
 - Status icons use distinct silhouettes: droplet-ring (sweats), crescent-tray (coma), hatched chili (fire)
-- Touch zones minimum 44px for all size/sauce/meat options and counter interaction
+- Click zones minimum 44px for all size/sauce/meat options and counter interaction
 
 ---
 
@@ -537,7 +537,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 - [ ] Satirical theme is clear throughout all assets (celebrating the absurdity, never mocking the culture)
 - [ ] Hidden areas/interactions have discoverable visual cues (Wall of Fame slots, Both Sauces reverence highlight, Battle Tray)
 - [ ] Performance optimized (CPU particles, atlas limits respected, static assembly fallback)
-- [ ] Touch zone sizing considered (44px minimum for size/sauce/meat options)
+- [ ] Click zone sizing considered (44px minimum for size/sauce/meat options)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (sauce container shapes, segmented risk meter)
 - [ ] Social media viral potential maximized in composition choices (fork break framing, cross-section diagram)
 
@@ -554,7 +554,7 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Gameplay Value Established | ✅ | Ordering system, two status effects, fork event, King Size challenge, collectible tray |
 | Technical Feasibility | ✅ | Static assembly/cheese fallbacks per profile; overlay-based glow; group blocks |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion set, 44px touch zones |
+| Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion set, 44px click zones |
 | No Crypto Elements | ✅ | Pure cheese-based currency of satisfaction |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 

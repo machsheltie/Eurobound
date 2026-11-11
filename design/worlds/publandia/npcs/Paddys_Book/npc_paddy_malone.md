@@ -24,7 +24,7 @@ The gambling is the front. The real business is the Recovery Corner: when a tour
 
 ### What Bros Believe
 
-That they have found the authentic criminal underbelly of Publandia via a secret password and a green bulb, that Paddy is a grandfatherly old character who has taken a shine to them, that "house rules" is colourful local custom rather than a mechanism for reversing any outcome the house dislikes, and — critically — that they have a system. Lord Pilsner is up 40 Sovs early and has concluded that the dice listen to him. Chadwick is not losing; he is investing in the narrative.
+That they have found the authentic criminal underbelly of Publandia via a secret password and a green bulb, that Paddy is a grandfatherly old character who has taken a shine to them, that "house rules" is colourful local custom rather than a mechanism for reversing any outcome the house dislikes, and — critically — that they have a system. Lord Pilsner is up 40 SOVS early and has concluded that the dice listen to him. Chadwick is not losing; he is investing in the narrative.
 
 ### The Comedy Gap
 
@@ -113,7 +113,7 @@ Continuity and arithmetic. Paddy is the fourth generation of a family that has t
 > "Seamus. *pause, weighing it* Seamus O'Brien doesn't send anyone here. Seamus O'Brien pours a lovely pint and tells people to go to bed. But you've the brass shamrock on you, so you've been in his pub, and that means you're not a guard. *nods at Tiny* Let him in. And tell Seamus I said the name still opens doors, which he'll not enjoy hearing."
 
 **If the player uses "Seamus sent me" without the Bottle Opener Keychain**:
-> "Everyone says that. *no warmth at all for exactly one second, then it returns* Fifty Sovs. Show me. Then we'll be friends."
+> "Everyone says that. *no warmth at all for exactly one second, then it returns* Fifty SOVS. Show me. Then we'll be friends."
 
 ---
 
@@ -138,17 +138,17 @@ Continuity and arithmetic. Paddy is the fourth generation of a family that has t
 
 > "Ah, that's a tough break. But you know what they say — unlucky in dice, lucky in love. Or vice versa."
 
-**High-Low, 20 Sovs a round**:
+**High-Low, 20 SOVS a round**:
 > "Twenty in, call it high or low, pays one point eight. Fingers'll throw for you. He's got the hands for it — that's not a compliment, that's a job description."
 
-**Liar's Dice, 50 Sovs entry**:
+**Liar's Dice, 50 SOVS entry**:
 > "Fifty to sit down. Winner takes the pot, house takes twenty per cent for the chairs and the atmosphere. Mind the man opposite. He's been reading faces since before you had one."
 
-**Paddy's Special, 100 Sovs minimum**:
+**Paddy's Special, 100 SOVS minimum**:
 > "The Special. Hundred minimum, one roll, your choice of game, up to five-to-one on the long shots. *leans back* Ties go to the house. Disputes go to the house. That's the only unfair thing about it and I've just told you what it is."
 
 **On the propositions, if the player wins one**:
-> "You backed rain. In Publandia. And it rained. *counts out the money without hesitation* You've taken three Sovs off me and you've earned every cent of it. Would you like to do something ambitious with it?"
+> "You backed rain. In Publandia. And it rained. *counts out the money without hesitation* You've taken three SOVS off me and you've earned every cent of it. Would you like to do something ambitious with it?"
 
 **If the player is on a winning run**:
 > "Well well! Someone's got the touch tonight! Enjoy it while it lasts..."
@@ -184,7 +184,7 @@ Continuity and arithmetic. Paddy is the fourth generation of a family that has t
 
 ---
 
-### The Loan Pitch (Triggers at 0 Sovs — "Cleaned Out")
+### The Loan Pitch (Triggers at 0 SOVS — "Cleaned Out")
 
 > "I hate to see you walk out with nothing. Tell you what — I can help."
 
@@ -234,7 +234,7 @@ Continuity and arithmetic. Paddy is the fourth generation of a family that has t
 
 ### Post-Interaction
 
-**"High Roller" status achieved (500 Sovs cumulative bets)**:
+**"High Roller" status achieved (500 SOVS cumulative bets)**:
 > "Five hundred through my book. That's a High Roller, that is. Better whiskey, better seat, and the odds get a small adjustment. *pause* In which direction, I'll let you work out."
 
 **Closing time, if the player is still solvent**:
@@ -257,7 +257,7 @@ Continuity and arithmetic. Paddy is the fourth generation of a family that has t
 > "You've been away. *doesn't stand* You'll not be playing tonight. You'll not be playing next month either. But you're not barred forever — nothing's forever except the sum, and the sum is still there, and it's still growing. Come back when you'd like to discuss it."
 
 **Late game, if the player exposed the fixed fight**:
-> "You cost me eight hundred Sovs and a fighter. *long pause, then the warmth returns, fully* Good bet. Best one made in here all year. Now. What'll you have?"
+> "You cost me eight hundred SOVS and a fighter. *long pause, then the warmth returns, fully* Good bet. Best one made in here all year. Now. What'll you have?"
 
 ---
 
@@ -288,15 +288,15 @@ Continuity and arithmetic. Paddy is the fourth generation of a family that has t
 ### The Book — Games & Stakes
 | Game/Service | Price | Displayed Odds | Actual Edge | Result |
 |--------------|-------|----------------|-------------|--------|
-| Dice Fights (High-Low) | 20 Sovs entry per round | Predict higher or lower than the current roll | Die slightly loaded — 55/45 in the house's favour; odds *worsen* as the player wins ("house adjustment") | Payout 1.8:1 where fair would be 2:1 |
-| Liar's Dice Tournament | 50 Sovs entry | Bluffing tournament, winner takes the pot | NPC opponents are professionals who read tourist tells perfectly | Winner takes pot, house takes a 20% cut |
-| Paddy's Special (ask at desk) | 100 Sovs minimum | Single high-stakes roll, player's choice of game, up to 5:1 on long shots | "Paddy's choice" on all ties and disputes; house rules activate if the player wins too much | The 5:1 long shots do not hit |
+| Dice Fights (High-Low) | 20 SOVS entry per round | Predict higher or lower than the current roll | Die slightly loaded — 55/45 in the house's favour; odds *worsen* as the player wins ("house adjustment") | Payout 1.8:1 where fair would be 2:1 |
+| Liar's Dice Tournament | 50 SOVS entry | Bluffing tournament, winner takes the pot | NPC opponents are professionals who read tourist tells perfectly | Winner takes pot, house takes a 20% cut |
+| Paddy's Special (ask at desk) | 100 SOVS minimum | Single high-stakes roll, player's choice of game, up to 5:1 on long shots | "Paddy's choice" on all ties and disputes; house rules activate if the player wins too much | The 5:1 long shots do not hit |
 | Proposition — Rain before midnight | Stake at player's discretion | 1:3 | It is Publandia. Always bet rain. Everyone knows. That is what makes it 1:3. | Small, reliable house income |
 | Proposition — Hen party vomit (Craic Tax) | Stake at player's discretion | 1:2 | Saturday-night special; Paddy's scouts report from the street | Information asymmetry |
 | Proposition — Tourist orders "Publandia Bomb" | Stake at player's discretion | 1:1 | Daily occurrence; Paddy scouts the bars and knows the count before he sets the line | Information asymmetry |
 | Proposition — Police raid tonight | Stake at player's discretion | 50:1 | "The police know me. We have an understanding." | Has never paid out. Paddy would genuinely enjoy it if it did. |
 | Brawl Betting | Stake at player's discretion | Board odds, shifting live | Paddy knows the fighters' conditions; tourists don't. ~30% of high-bet matches are predetermined. | Odds manipulated against the betting pattern |
-| Tourist Battle Royale | 30 Sovs to fight, or bet on others | Odds on each participant, constantly shifting | The house favourite is frequently a ringer — a local fighter presenting as a tourist | Winner takes the pot minus a 30% house cut |
+| Tourist Battle Royale | 30 SOVS to fight, or bet on others | Odds on each participant, constantly shifting | The house favourite is frequently a ringer — a local fighter presenting as a tourist | Winner takes the pot minus a 30% house cut |
 
 ### Tonight's Brawl Card (Standing Odds Board)
 | Fighter | Odds | Reality |
@@ -319,9 +319,9 @@ Continuity and arithmetic. Paddy is the fourth generation of a family that has t
 |--------|---------|--------|
 | "On a Roll" | Won last 3 bets | +confidence, worse decision-making, bet sizes creep upward |
 | "Chasing Losses" | Lost last 3 bets | −judgment, bet amounts increase automatically |
-| "Cleaned Out" | Hit 0 Sovs at Paddy's | 1 game-day ban, −20 Bravado (it is public knowledge), loan offer follows you to The Blarney Trap |
+| "Cleaned Out" | Hit 0 SOVS at Paddy's | 1 game-day ban, −20 Bravado (it is public knowledge), loan offer follows you to The Blarney Trap |
 | "In Debt to Paddy" | Loan accepted | Interest accrues daily; associates watching; quest chain activates |
-| "High Roller" | 500 Sovs cumulative bets | Respect, better service, marginally better odds — still losing long-term |
+| "High Roller" | 500 SOVS cumulative bets | Respect, better service, marginally better odds — still losing long-term |
 
 ### Hidden Details / Easter Eggs
 - **The House Rules sign** is examinable. It reads, in full: "THE HOUSE IS ALWAYS RIGHT." There is no second clause. There has never been a second clause.
@@ -340,7 +340,7 @@ Continuity and arithmetic. Paddy is the fourth generation of a family that has t
 | Maureen (The Consoler) | Paddy's sister. Runs the Recovery Corner and the soft-touch side of collection. Her sympathy for your loss is real; her interest in your solvency is professional. They have worked this handoff for thirty years without discussing it. |
 | Tiny (The Bouncer) | Door security, funds check, dispute settlement. 6'8", surprisingly gentle voice, has never had to raise it. Paddy has never once had to call him — he looks, and Tiny moves. |
 | Fingers O'Brien (Dice Master) | Former magician, now the hands behind the High-Low pit. Flashy, entertaining, wholly untrustworthy. Paddy keeps him at the dice and away from the book, on the grounds that a man that good with his hands should never be near a ledger. |
-| The Local Shark | Professional gambler who genuinely understands the odds, wins 20 Sovs a night, and is tolerated because he brings marks. Paddy's assessment: "He's not beating me. He's on salary and he doesn't know it." |
+| The Local Shark | Professional gambler who genuinely understands the odds, wins 20 SOVS a night, and is tolerated because he brings marks. Paddy's assessment: "He's not beating me. He's on salary and he doesn't know it." |
 | The Whale | Rich tourist losing enormous sums cheerfully. Beloved by all staff. Paddy watches him lose with undisguised joy — the "Whale-Watching Delight" sprite frame exists for this and only this. |
 | The Debt Ghost | Six months into "working it off." Warns every newcomer not to take the loan, in Paddy's hearing, with Paddy's full permission. |
 | The Ringer | Professional fighter presenting as an Australian tourist. Enters the Battle Royale, dominates, winks at Paddy, collects real payment. |
@@ -445,7 +445,7 @@ The debt, however, does travel. "In Debt to Paddy" remains active across all cit
 
 ### Quest Gate Function
 
-**Paddy gates the seedy underbelly of Publandia through funds and Bravado, not through story.** Entry requires Bravado 25+ *or* an NPC vouch, plus a minimum 50 Sovs which Tiny physically verifies at the door. Players below either threshold are turned away politely and permanently until they qualify.
+**Paddy gates the seedy underbelly of Publandia through funds and Bravado, not through story.** Entry requires Bravado 25+ *or* an NPC vouch, plus a minimum 50 SOVS which Tiny physically verifies at the door. Players below either threshold are turned away politely and permanently until they qualify.
 
 Paddy is explicitly **not** a Brewery Passport stamp giver. Paddy's Book is not a Brewery Tour location, has no signature beer, and awards no stamp. This is intentional: the four Publandia stamps live at The Blarney Trap, The Stoutworks Brewery, Trinity of Pints, and a fourth location still to be designated. Paddy sells risk, not craft, and giving him a stamp would confuse the passport's meaning.
 
@@ -454,10 +454,10 @@ The "In Debt to Paddy" status functions as a soft cross-city gate — reputation
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Betting Slip | Any bet placed | No | Records a wager; tracks toward "High Roller" (500 Sovs cumulative) |
+| Betting Slip | Any bet placed | No | Records a wager; tracks toward "High Roller" (500 SOVS cumulative) |
 | Loan Contract | Loan accepted | Yes, until repaid | Sets "In Debt to Paddy"; 50% daily interest; associates activated |
 | Marker Chit | Loan accepted | Yes, until repaid | Collateral form — "essentially your reputation" |
-| High Roller Badge | 500 Sovs cumulative bets | Yes (status) | Better whiskey, a seat, respect, marginally adjusted odds |
+| High Roller Badge | 500 SOVS cumulative bets | Yes (status) | Better whiskey, a seat, respect, marginally adjusted odds |
 | Battle Royale Pot | Winning the Tourist Battle Royale | No | Pot minus 30% house cut, plus bragging rights |
 
 ---
@@ -543,7 +543,7 @@ Dublin, older generation, unhurried. Paddy speaks more slowly than anyone else i
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Paddy has no crypto content. Paddy's Book runs entirely on physical cash Sov: 20 Sovs dice entries, 50 Sovs tournament buy-ins, 100 Sovs Special minimums, 500 Sovs High Roller threshold, and loans in notes. Nothing in the location touches SOVS or the darknet shitcoin pool, and nothing has been added.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Paddy has no crypto content. Paddy's Book runs entirely on physical cash SOV: 20 SOVS dice entries, 50 SOVS tournament buy-ins, 100 SOVS Special minimums, 500 SOVS High Roller threshold, and loans in notes. Nothing in the location touches SOVS or the darknet shitcoin pool, and nothing has been added.
 - [x] **NO automatic crypto assumptions** — a bookmaker whose entire edge is untraceable cash and deniable records would consider an immutable public ledger professionally insane. The absence is characterisation, not an omission.
 - [x] **Coins, kiosks, and certificates come from the master pool** — none invented here; none used here.
 - [x] **The bros are never scam-aware** — Lord Pilsner wins early and concludes the dice listen to him, loses late and invokes the law of averages, and is asking about the loan before he ever considers that the game was tilted. Chadwick reframes the debt itself as character development. Neither ever arrives at "we were robbed."
@@ -553,7 +553,7 @@ Dublin, older generation, unhurried. Paddy speaks more slowly than anyone else i
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is the tourist certainty of having a system, in a room with a sign reading "THE HOUSE IS ALWAYS RIGHT."
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Paddy is courteous, numerate, never violent in person, and discloses every term. He is dangerous because he is honest, not because he is criminal.
-- [x] Humor is affectionate mockery, not mean-spirited — gambling addiction is treated as real and the satire targets the industry's arithmetic, never the addicted. The Debt Ghost is written with sympathy and given the most useful line in the building.
+- [x] Humor is affectionate mockery — gambling addiction is treated as real and the satire targets the industry's arithmetic, never the addicted. The Debt Ghost is written with sympathy and given the most useful line in the building.
 
 ---
 

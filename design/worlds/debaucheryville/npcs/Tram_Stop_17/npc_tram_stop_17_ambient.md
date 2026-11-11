@@ -2,6 +2,8 @@
 
 *The supporting cast of Jiří's eternal vigil*
 
+> **Ambient group doc.** This file profiles several ambient NPCs (Shrine Tender, Photo Tourist, Local Pedestrian, Tour Bus Passengers, Metro Worker) in a reduced form of `design/templates/NPC_Profile_Template.md`; it intentionally does not carry all 18 template sections per NPC. OPEN QUESTION (author): do ambient/crowd group docs keep this reduced form, or does each named ambient NPC need the full 18-section template? (bead Eurobound-9u9, 2026-11-11)
+
 ---
 
 # Shrine Tender
@@ -327,7 +329,7 @@ Ultimate proof that Jiří has become a landmark. The city hasn't helped him—i
 ## 💬 Dialogue
 
 ### Tour Guide (Overheard Through Window)
-> "And on your left, you'll see Jiří's Bench. He's been waiting since before Sovs."
+> "And on your left, you'll see Jiří's Bench. He's been waiting since before SOVS."
 
 > "Local legend says he's waiting for a tram that no longer runs."
 

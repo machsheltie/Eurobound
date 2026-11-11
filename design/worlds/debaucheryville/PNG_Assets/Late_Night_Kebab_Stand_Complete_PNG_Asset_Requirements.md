@@ -144,7 +144,7 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 **The burner phone screen is the only crypto-legible surface at the Late-Night Kebab Stand, and it is permitted.**
 - ✅ **Permitted, phone screen only:** a price-alert banner or a small ticker row. Keep it tiny and unreadable at sprite scale — the read is "his phone is doing something," not "here is a market." If a ticker is legible in any close-up or portrait asset, it uses a master-pool coin only; **`$KBAB`** (KebabSwap) is the canonical pairing for this cart, per `design/economy/shitcoin_master_pool.md`.
 - ✅ **Permitted:** the existing "NFT 4 LYFE" wall graffiti, unchanged, as period-satire set dressing.
-- ❌ **Not permitted anywhere else at this location:** kiosk or terminal hardware, wallet UI, coin logos or wordmarks on the cart, signage, menu board, packaging, certificates, or crypto pricing on any menu item. Prices are Sovs and Kebab Coins; that does not change.
+- ❌ **Not permitted anywhere else at this location:** kiosk or terminal hardware, wallet UI, coin logos or wordmarks on the cart, signage, menu board, packaging, certificates, or crypto pricing on any menu item. Prices are SOVS and Kebab Coins; that does not change.
 - **Register:** crypto here is a background gag (2% of game max), never a mechanic and never a plot element. Mr. Chadz half-follows the alerts and acts on none of them.
 
 ---
@@ -153,56 +153,56 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 **File:** `kebab_menu_items_detailed.png`  
 **Dimensions:** 1024x512 pixels  
 
-### Gutbuster Wrap - 6 Sovs:
+### Gutbuster Wrap - 6 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Wrapped | (0, 0) | 128x96 | Foil presentation |
 | Unwrapped Dripping | (128, 0) | 128x96 | Mystery lamb visible |
 | Cross Section | (256, 0) | 96x96 | Interior horror |
 
-### Vampire Slayer Garlic Fries - 4 Sovs:
+### Vampire Slayer Garlic Fries - 4 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Container | (352, 0) | 96x96 | Week-old oil sheen |
 | Sauce Dripping | (448, 0) | 96x96 | Pepper spray levels |
 | Oil Shimmer | (544, 0) | 64x64 | Rainbow grease |
 
-### EuroMeat Pocket™ - 5 Sovs:
+### EuroMeat Pocket™ - 5 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Full View | (0, 96) | 128x96 | Soggy pita exterior |
 | Grey Filling | (128, 96) | 96x96 | Suspiciously grey |
 | Microwaved Steam | (224, 96) | 64x64 | Reheated evidence |
 
-### MegaMix Box - 9 Sovs:
+### MegaMix Box - 9 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Closed | (288, 96) | 128x96 | Cardboard coffin |
 | Horrifying Contents | (416, 96) | 128x96 | Everything visible |
 | Regret Visualization | (544, 96) | 96x96 | Immediate consequences |
 
-### Drunken Sauce Shot - 2 Sovs:
+### Drunken Sauce Shot - 2 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Thimble | (0, 192) | 48x64 | Plastic container |
 | Sauce Swirl | (48, 192) | 48x64 | Hot sauce/mayo mix |
 | Dysentery Warning | (96, 192) | 64x32 | Side effect hint |
 
-### Lambsomnia Special - 7 Sovs:
+### Lambsomnia Special - 7 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Full Plate | (160, 192) | 128x96 | Spiced lamb beauty |
 | Sleepless Tzatziki | (288, 192) | 64x64 | Insomniac sauce |
 | Insomniac Glow | (352, 192) | 64x64 | Buff visual |
 
-### Yogurt Reboot - 3 Sovs:
+### Yogurt Reboot - 3 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Tiny Cup | (416, 192) | 64x64 | Questionable container |
 | Expired Yogurt | (480, 192) | 64x64 | Warm and concerning |
 | Expiration Date | (544, 192) | 48x24 | Clearly past |
 
-### Belly Of Chadz - 6 Sovs:
+### Belly Of Chadz - 6 SOVS:
 | View | Position | Size | Description |
 |------|----------|------|-------------|
 | Dense Box | (0, 288) | 128x96 | Three-sauce soaked |
@@ -390,7 +390,7 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 ### Colorblind Considerations:
 - Status effect icons pair distinct shapes with color (bubble, question mark, drowsy eyes) so no buff/debuff is color-only
 - Grease puddle hazards readable by shimmer pattern, not hue alone
-- Touch zones minimum 44px for all menu buttons and interactive cart elements
+- Click zones minimum 44px for all menu buttons and interactive cart elements
 
 ---
 
@@ -427,7 +427,7 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 - All sprites designed for Godot 4.x compatibility
 - Coordinate system: Top-left origin (0,0)
 - Animation system: Frame-based with JSON timing
-- Particle systems: CPUParticles2D for mobile performance
+- Particle systems: CPUParticles2D for performance
 - Menu system: Inventory UI integration for 8 items
 
 ### Audio Sync Points:
@@ -569,7 +569,7 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 | Satirical Targets Appropriate | ✅ PASS | Desperate post-party tourists and sketchy exploitation, not locals |
 | Seedy Underbelly Present | ✅ PASS | Health code violations as atmosphere, mystery meat economy |
 | Gameplay Value Established | ✅ PASS | 8-item consumable vendor, status management, quest sample |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented |
 | Performance Budget | ✅ PASS | 60 FPS, 12 draws, 30MB |
 | Accessibility Features | ✅ PASS | Visual audio cues, motion sensitivity, high contrast options |
 | Crypto Scope Bounded | ✅ PASS | Per author ruling, Mr. Chadz's burner-phone screen may show crypto price alerts (`$KBAB`, master pool) — the single permitted crypto surface here. "NFT 4 LYFE" graffiti remains period-satire set dressing. No kiosk, no wallet UI, no coin signage, no crypto pricing; no functional crypto anywhere at the location. See **Crypto Scope at This Location** under Sprite Sheet 2 |

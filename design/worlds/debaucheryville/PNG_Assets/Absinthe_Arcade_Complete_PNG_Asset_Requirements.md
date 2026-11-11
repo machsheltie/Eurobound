@@ -228,7 +228,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - Each layer should be separate texture for proper scroll
 - Fairy dissolve is gradual transformation, not abrupt switch
 - Circuit overlay uses additive blend for glow effect
-- Mobile: Can reduce to 2 layers on low-end devices
+Low-spec: Can reduce to 2 layers on min-spec hardware
 
 ---
 
@@ -321,7 +321,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - **Pattern:** Off → Dim (Frame 1) → Medium (Frame 2) → Bright (Frame 3) → Medium → Dim → Off
 - **Coverage:** Approximately 20% of tiles active at any time
 - **Purpose:** Disorienting atmosphere, creates "something's wrong" feeling
-- **Performance Optimization:** Reduce active percentage to 10% on low-end devices
+- **Performance Optimization:** Reduce active percentage to 10% on min-spec hardware
 
 ### Arcade Cabinet Screen Flicker:
 - **Duration:** 2-second intervals between flicker events
@@ -387,7 +387,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 
 ### Colorblind Considerations:
 - Light-up floor tiles, mural corruption, and DDR token progress all offer pattern/shape-based indicators wherever color codes meaning
-- Touch zones minimum 44px for interactive elements (cabinets, token machine, prompts)
+- Click zones minimum 44px for interactive elements (cabinets, token machine, prompts)
 
 ---
 
@@ -576,7 +576,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - [ ] Performance optimized (particle systems use CPU, not GPU)
 - [ ] All elements support "childhood corrupted" satire consistently
 - [ ] Social media viral potential maximized in composition choices
-- [ ] Touch zone sizing considered for interactive elements (44px minimum)
+- [ ] Click zone sizing considered for interactive elements (44px minimum)
 - [ ] Colorblind-friendly alternatives available where color-coded
 
 ---
@@ -590,7 +590,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 | Satirical Targets Appropriate | ✅ PASS | Tourist behavior, not locals |
 | Seedy Underbelly Present | ✅ PASS | Rigged games, overpriced tokens |
 | Gameplay Value Established | ✅ PASS | NFT hunt, brewery access, minigames |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented |
 | Performance Budget | ✅ PASS | 60 FPS, 15 draw calls, 50MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | Sea-Monkeys NFT is satirical and established in source material; no functional crypto |

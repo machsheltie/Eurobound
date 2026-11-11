@@ -4,7 +4,7 @@ Interacting prompts Lord Pilsner to whip out his outdated phone, loading a pixel
 Instead of friendly NPC banter, the connection is “hijacked” by one of the following recurring personalities:
 
 Tony420 – Greasy cyber-dealer offering absurd illicit wares.
-Example pop-up: Tony420: "30 mooncum Xanax & Flintstone fentanyl. Message me for my crypto wallet deetz."
+Example pop-up: Tony420: "50 mooncum Flintstone Xanax & Flintstone fentanyl. Message me for my crypto wallet deetz."
 Replies include sarcastic brush-offs or gullible acceptance (leads to a gag inventory item like “Flintstone Fentanyl”).
 
 Hamstradamus – A prophetic dancing hamster with cursed Y2K prophecies.

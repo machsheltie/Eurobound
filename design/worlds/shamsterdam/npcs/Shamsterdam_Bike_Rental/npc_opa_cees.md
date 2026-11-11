@@ -126,7 +126,7 @@ Get the bike back. Get it working if it can work. Get it out of the water if it 
 ### Repair Services
 
 **Standard repair**:
-> "I can fix this. Twenty-five Sovs. Come back in an hour."
+> "I can fix this. Twenty-five SOVS. Come back in an hour."
 
 **Beyond repair**:
 > "This... this I cannot fix." *(He turns it once in the stand, then leaves it.)* "This is art now. Tragic art."
@@ -135,7 +135,7 @@ Get the bike back. Get it working if it can work. Get it out of the water if it 
 > "You can ask three times. The metal will still be bent. It does not know you are asking."
 
 **Flat tyre**:
-> "Eight Sovs. Sit down. Do not watch me, it makes it slower."
+> "Eight SOVS. Sit down. Do not watch me, it makes it slower."
 
 ### Quest Accept — Canal Recovery Assistant
 
@@ -158,7 +158,7 @@ Get the bike back. Get it working if it can work. Get it out of the water if it 
 **On completion**:
 > *(He looks at the three bikes on the promenade stones, dripping.)*
 > "Three." *(A long pause.)* "Eight hundred and fifty."
-> "Thirty Sovs. And a damage waiver on your next rental — do not tell my son, he will tell me it is not mine to give. It is not. I am giving it."
+> "Thirty SOVS. And a damage waiver on your next rental — do not tell my son, he will tell me it is not mine to give. It is not. I am giving it."
 
 **The Blessing**:
 > "You want my blessing? *(He squints.)* Fine."
@@ -213,10 +213,10 @@ Get the bike back. Get it working if it can work. Get it out of the water if it 
 ### Repair Services
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Flat Tire Repair | 8 Sovs | 8 Sovs | While you wait. Do not watch. |
-| Chain Fix | 10 Sovs | 10 Sovs | Grease on your clothes guaranteed |
-| Brake Adjustment | 12 Sovs | 12 Sovs | "You should have had this done BEFORE" |
-| Bent Wheel Realignment | 25 Sovs | 25 Sovs | "How did you even—never mind" |
+| Flat Tire Repair | 8 SOVS | 8 SOVS | While you wait. Do not watch. |
+| Chain Fix | 10 SOVS | 10 SOVS | Grease on your clothes guaranteed |
+| Brake Adjustment | 12 SOVS | 12 SOVS | "You should have had this done BEFORE" |
+| Bent Wheel Realignment | 25 SOVS | 25 SOVS | "How did you even—never mind" |
 | Full Damage Assessment | Free | High | Honest, itemised, and the news is never good |
 | Beyond Repair Ruling | Free | — | He will not take money to fail. The bike goes to the wall. |
 
@@ -312,7 +312,7 @@ He does not warm up, exactly. He becomes *available*: the first conversations ar
   3. Travel to Canal Ring Promenade
   4. Hook and recover 3 bikes (timing mini-game)
   5. Return the equipment and the bikes
-- **Outcome**: "Canal Fisher" achievement, 30 Sovs, one free damage waiver on the next rental, Opa Cees's Blessing (+5% Navigation, permanent), access to the "recovered goods" inventory
+- **Outcome**: "Canal Fisher" achievement, 30 SOVS, one free damage waiver on the next rental, Opa Cees's Blessing (+5% Navigation, permanent), access to the "recovered goods" inventory
 
 ### Quest Gate Function
 Cees gates the permanent Navigation blessing and the recovered-goods vendor. He also gates the location's emotional register — a player who never walks through the repair-station doorway experiences Shamsterdam Bike Rental purely as an insurance joke. The gate is attention, not currency: he cannot be bought, hurried, or unlocked with money.
@@ -409,7 +409,7 @@ Dutch, older generation, slower cadence than his son. Sentences trail rather tha
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Cees has none. Sovs, in cash, quoted to the Sov.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Cees has none. SOVS, in cash, quoted to the SOV.
 - [x] **NO automatic crypto assumptions** — he has been in this workshop since 1979 and does not operate the card machine
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — there is no scam; Chadwick is filming a body count and calling it soul
@@ -419,7 +419,7 @@ Dutch, older generation, slower cadence than his son. Sentences trail rather tha
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is the bros mistaking an archive of their own kind's failures for decoration
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Cees is a fair, skilled tradesman who refuses money for work he cannot do
-- [x] Humour is affectionate mockery, not mean-spirited — he is dignified throughout, his skill is real, and the game rewards players who take him seriously
+- [x] Humour is affectionate mockery — he is dignified throughout, his skill is real, and the game rewards players who take him seriously
 - [x] Age is portrayed with competence, not frailty — he is 83, sharp, working, and the best mechanic in the district
 
 ---

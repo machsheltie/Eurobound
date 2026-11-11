@@ -28,7 +28,7 @@
 
 ### The Invitation System
 Invitations are the currency of exclusivity:
-- **Purchase**: 200 Sovs from The Black-Tie Backroom (if High Roller status)
+- **Purchase**: 200 SOVS from The Black-Tie Backroom (if High Roller status)
 - **Quest Reward**: "Mask Etiquette Exam" completion
 - **Social Engineering**: Convince an NPC to give theirs (high Charm check)
 - **Theft**: Pickpocket from Kaffeehaus Row intellectuals (high risk)
@@ -227,10 +227,10 @@ Social encounters function as combat with reputation as HP:
 **Rumor Types**:
 | Rumor Grade | Value | Risk | Source |
 |-------------|-------|------|--------|
-| Common | 50 Sovs | Low | Anyone |
-| Uncommon | 150 Sovs | Medium | Specific NPCs |
-| Rare | 400 Sovs | High | Inner Circle |
-| Exclusive | 1000 Sovs+ | Very High | Baroness only |
+| Common | 50 SOVS | Low | Anyone |
+| Uncommon | 150 SOVS | Medium | Specific NPCs |
+| Rare | 400 SOVS | High | Inner Circle |
+| Exclusive | 1000 SOVS+ | Very High | Baroness only |
 
 **Trading Mechanics**:
 - Rumors have "freshness" — old news worth less

@@ -17,15 +17,15 @@
 
 ### What She's Actually Doing
 
-Running the retail end of a museum that is now two museums. Venustempel moved off Roodelicht Row and onto Museum Mile, absorbed a second collection, and reopened as **De Cacaogalerij** (a museum of chocolate phalluses, curated seriously, with placards, artisan makers credited) plus **De Mechanische Vleugel** (the original 1985 material — the Giggling Figure, the mutoscopes, the Marilyn statue, the genuinely real John Lennon erotic sketches, the chastity belts, the 1800s medical diagrams). Entry went from 5 Sovs to 9 Sovs when the chocolate wing opened. Hours are 10:00–23:00. The subtitle on the awning reads *"Giggling Since 1985. Dipping Since 2011."*
+Running the retail end of a museum that is now two museums. Venustempel moved off Roodelicht Row and onto Museum Mile, absorbed a second collection, and reopened as **De Cacaogalerij** (a museum of chocolate phalluses, curated seriously, with placards, artisan makers credited) plus **De Mechanische Vleugel** (the original 1985 material — the Giggling Figure, the mutoscopes, the Marilyn statue, the genuinely real John Lennon erotic sketches, the chastity belts, the 1800s medical diagrams). Entry went from 5 SOVS to 9 SOVS when the chocolate wing opened. Hours are 10:00–23:00. The subtitle on the awning reads *"Giggling Since 1985. Dipping Since 2011."*
 
-Lotte sells the merchandise for both wings out of one shop. Postcards, T-shirts, a licensed and framed John Lennon print, keyrings, fridge magnets, solid chocolate pieces in three cocoa grades, hollow pieces for the budget-conscious, and a boxed set of six graduated sizes called **De Collectie** which is the best-margin item on the floor. She gift-wraps for free, does discreet plain packaging for free, mails internationally for 6 Sovs, and lets anybody at all use the shop toilet whether they bought a ticket or not.
+Lotte sells the merchandise for both wings out of one shop. Postcards, T-shirts, a licensed and framed John Lennon print, keyrings, fridge magnets, solid chocolate pieces in three cocoa grades, hollow pieces for the budget-conscious, and a boxed set of six graduated sizes called **De Collectie** which is the best-margin item on the floor. She gift-wraps for free, does discreet plain packaging for free, mails internationally for 6 SOVS, and lets anybody at all use the shop toilet whether they bought a ticket or not.
 
-She also stocks **Handreiniger** — a 4 Sovs hand sanitiser in a small bottle moulded in the shape of De Grote Fontein, the four-metre working chocolate fountain outside on the plaza. She recommends it to every customer on the way out. Cheerfully. Sincerely. Every time.
+She also stocks **Handreiniger** — a 4 SOVS hand sanitiser in a small bottle moulded in the shape of De Grote Fontein, the four-metre working chocolate fountain outside on the plaza. She recommends it to every customer on the way out. Cheerfully. Sincerely. Every time.
 
 ### What Bros Believe
 
-That the gift shop is the punchline and that they are delivering it. Bradley buys the boxed **De Collectie** "as a gag," pays 45 Sovs for the gag, and then will not let Chadwick or Pilsner carry the box, at any point, for any reason, all the way back to the hostel. Chadwick films the shelving and narrates it as a curatorial statement. Lord Pilsner asks whether the chocolate is "real chocolate," in the tone of a man springing a trap. It is real chocolate. Lotte tells him the cocoa percentage — 34% for the milk, 70% for the dark, and she knows both because a customer asked once and she went and found out. He is not listening. He has already turned to Chadwick to say "it's real chocolate."
+That the gift shop is the punchline and that they are delivering it. Bradley buys the boxed **De Collectie** "as a gag," pays 45 SOVS for the gag, and then will not let Chadwick or Pilsner carry the box, at any point, for any reason, all the way back to the hostel. Chadwick films the shelving and narrates it as a curatorial statement. Lord Pilsner asks whether the chocolate is "real chocolate," in the tone of a man springing a trap. It is real chocolate. Lotte tells him the cocoa percentage — 34% for the milk, 70% for the dark, and she knows both because a customer asked once and she went and found out. He is not listening. He has already turned to Chadwick to say "it's real chocolate."
 
 All three of them decline the Handreiniger. All three of them have been at the fountain.
 
@@ -92,7 +92,7 @@ Sheet `npc_venustempel_staff.png`. Lotte's existing allocations carry forward fr
 
 ### Internal Monologue
 
-> "The tall one is going to ask if it is real chocolate, they always do, and it is, thirty-four percent for the milk, and I will tell him and he will not hear it, which is fine. The quiet one has the Collectie under his arm and he has been holding it like a passport since he picked it up, so that is forty-five, and he will want the plain paper. The one with the phone will film the shelves and then ask me where the toilet is. And I will say the toilet is through there, and it is fine, everyone uses it, you do not need a ticket. And then I will show them the Handreiniger because it is four Sovs and the bottle is lovely and nobody ever takes one. Nine metres by six. Fifty-four. The old shop was eleven."
+> "The tall one is going to ask if it is real chocolate, they always do, and it is, thirty-four percent for the milk, and I will tell him and he will not hear it, which is fine. The quiet one has the Collectie under his arm and he has been holding it like a passport since he picked it up, so that is forty-five, and he will want the plain paper. The one with the phone will film the shelves and then ask me where the toilet is. And I will say the toilet is through there, and it is fine, everyone uses it, you do not need a ticket. And then I will show them the Handreiniger because it is four SOVS and the bottle is lovely and nobody ever takes one. Nine metres by six. Fifty-four. The old shop was eleven."
 
 ### Motivation
 
@@ -189,13 +189,13 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 > "All day." *(Ribbon, one loop, scissors, curl. Six seconds.)* "It's the best part of the job, honestly. The station's new."
 
 **Player asks about mailing**:
-> "We post internationally, that's six Sovs, and I do the customs form for you." *(Postcard Recommendation animation.)* "The postcards are popular. Yes, you can mail them. Yes, people do mail them." *(Beat.)* "The Giggling Figure set is four Sovs for six. That's the one people send to their mothers, for some reason. I don't know."
+> "We post internationally, that's six SOVS, and I do the customs form for you." *(Postcard Recommendation animation.)* "The postcards are popular. Yes, you can mail them. Yes, people do mail them." *(Beat.)* "The Giggling Figure set is four SOVS for six. That's the one people send to their mothers, for some reason. I don't know."
 
 ### Sales Close
 
 *Ringing Up. Then, without fail, the Handreiniger gesture — two fingers, tap, tap, on the little fountain-shaped bottle beside the till.*
 
-> "That's forty-five. Card's fine." *(Tap, tap.)* "And would you like a Handreiniger? It's four Sovs. It's hand gel — look, the bottle's the fountain." *(She turns it so you can see. She is quietly pleased by the bottle. She thinks it is a good little product.)* "People don't take them, but it's lovely, and the bottle's very good."
+> "That's forty-five. Card's fine." *(Tap, tap.)* "And would you like a Handreiniger? It's four SOVS. It's hand gel — look, the bottle's the fountain." *(She turns it so you can see. She is quietly pleased by the bottle. She thinks it is a good little product.)* "People don't take them, but it's lovely, and the bottle's very good."
 
 **If the player buys one**:
 > "Oh, good!" *(Genuine, slightly surprised pleasure. It is the only time all day this happens.)* "It's a nice one. Not the sticky kind."
@@ -227,7 +227,7 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 > *(She answers the question that was actually asked. Accurately. With the price. And then asks if they would like it wrapped.)*
 
 **Player asks her what she thinks of what the museum sells**:
-> "It sells well." *(No irony, no evasion. It is a complete and honest answer and she has no other one.)* "The Collectie is the best of it, margin-wise. And the postcards, because they're four Sovs and people buy four."
+> "It sells well." *(No irony, no evasion. It is a complete and honest answer and she has no other one.)* "The Collectie is the best of it, margin-wise. And the postcards, because they're four SOVS and people buy four."
 
 ### Callback Dialogue (Return Visits)
 
@@ -241,7 +241,7 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 > "Did you hang it?" *(Beat, and then, unable to help herself:)* "The hand. Did you see the hand?"
 
 **Return visit while the player has 3+ stacks of Sharing the Love**:
-> "You've been at the fountain!" *(Delighted. Not a diagnosis. She has seen the chocolate on his sleeve, that is all.)* "It's good, isn't it. Handreiniger's four Sovs if you want one."
+> "You've been at the fountain!" *(Delighted. Not a diagnosis. She has seen the chocolate on his sleeve, that is all.)* "It's good, isn't it. Handreiniger's four SOVS if you want one."
 
 **Return visit after Shamsterdam Stomach has triggered**:
 > "You look tired." *(Kind, brief, and completely disconnected from any cause.)* "There's a bench in the old wing, by the diagrams. People sit there."
@@ -278,31 +278,31 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 ### Items Sold — Legacy Venustempel (De Mechanische Vleugel)
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Giggling Figure postcard set (6) | 4 Sovs | 4 Sovs — fairly priced, well printed | Mailable. Adds "Sent Postcard" flag; recipient NPC reacts in the epilogue. Four Sovs is the price four Sovs should be. |
-| "I JUMPED" T-shirt | 22 Sovs | 18 Sovs — standard tourist-tee markup, honest cotton | Wearable cosmetic. Other NPCs read it. Nobody who buys it did not jump. |
-| John Lennon sketch print (licensed, framed) | 35 Sovs | 35 Sovs — genuinely licensed, genuinely framed, genuinely good | Collectible / room decor item. **Lotte's personal favourite item in the shop.** She thinks it is beautiful and she is right. Grants +Trivial Knowledge and unlocks the "Did you know John Lennon drew—" dialogue branch permanently. |
-| Mutoscope-reel keyring | 6 Sovs | 3 Sovs — it is a keyring | Cosmetic. Small flip animation on examine. Breaks eventually; this is not modelled and does not need to be. |
+| Giggling Figure postcard set (6) | 4 SOVS | 4 SOVS — fairly priced, well printed | Mailable. Adds "Sent Postcard" flag; recipient NPC reacts in the epilogue. Four SOVS is the price four SOVS should be. |
+| "I JUMPED" T-shirt | 22 SOVS | 18 SOVS — standard tourist-tee markup, honest cotton | Wearable cosmetic. Other NPCs read it. Nobody who buys it did not jump. |
+| John Lennon sketch print (licensed, framed) | 35 SOVS | 35 SOVS — genuinely licensed, genuinely framed, genuinely good | Collectible / room decor item. **Lotte's personal favourite item in the shop.** She thinks it is beautiful and she is right. Grants +Trivial Knowledge and unlocks the "Did you know John Lennon drew—" dialogue branch permanently. |
+| Mutoscope-reel keyring | 6 SOVS | 3 SOVS — it is a keyring | Cosmetic. Small flip animation on examine. Breaks eventually; this is not modelled and does not need to be. |
 
 ### Items Sold — De Cacaogalerij (most of her revenue)
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Solid chocolate piece — white / milk / dark | 12 Sovs | 12 Sovs — real artisan chocolate, tempered properly, 34% milk / 70% dark | Consumable. Restores a moderate amount of HP. Survives a warm day in a bag. |
-| Hollow chocolate piece | 8 Sovs | 7 Sovs — same chocolate, less of it | Consumable, cheaper, lighter. **Structurally regrettable in heat**: if carried past 22°C in-game for more than two hours it degrades to "Formerly A Hollow Piece," which still restores HP and is no longer presentable as a gift. |
-| **De Collectie** — boxed set of six graduated sizes | 45 Sovs | 38 Sovs — a real boxed set, ribbon included | **Best margin in the shop.** Gift item. Bradley buys this "as a gag" and refuses to let anyone else carry it. Occupies two inventory slots and is visible to other NPCs. |
-| Fountain-shaped keyring | 5 Sovs | 3 Sovs | Cosmetic. Sells constantly. Lotte reorders it more often than anything else on the floor. |
+| Solid chocolate piece — white / milk / dark | 12 SOVS | 12 SOVS — real artisan chocolate, tempered properly, 34% milk / 70% dark | Consumable. Restores a moderate amount of HP. Survives a warm day in a bag. |
+| Hollow chocolate piece | 8 SOVS | 7 SOVS — same chocolate, less of it | Consumable, cheaper, lighter. **Structurally regrettable in heat**: if carried past 22°C in-game for more than two hours it degrades to "Formerly A Hollow Piece," which still restores HP and is no longer presentable as a gift. |
+| **De Collectie** — boxed set of six graduated sizes | 45 SOVS | 38 SOVS — a real boxed set, ribbon included | **Best margin in the shop.** Gift item. Bradley buys this "as a gag" and refuses to let anyone else carry it. Occupies two inventory slots and is visible to other NPCs. |
+| Fountain-shaped keyring | 5 SOVS | 3 SOVS | Cosmetic. Sells constantly. Lotte reorders it more often than anything else on the floor. |
 | Fountain fridge magnet | 3 SOVS | 2 SOVS | Cosmetic. The cheapest thing in the shop and the second-fastest mover. |
 
 ### The Hygiene Line
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| **"Handreiniger"** hand sanitiser, in a small bottle moulded as De Grote Fontein | 4 Sovs | 2 Sovs — it is hand gel in a novelty bottle, and it is a good hand gel | **Removes 2 stacks of the Sharing the Love status.** Recommended by Lotte to every customer on the way out, cheerfully, sincerely, every time. Almost nobody buys one. |
+| **"Handreiniger"** hand sanitiser, in a small bottle moulded as De Grote Fontein | 4 SOVS | 2 SOVS — it is hand gel in a novelty bottle, and it is a good hand gel | **Removes 2 stacks of the Sharing the Love status.** Recommended by Lotte to every customer on the way out, cheerfully, sincerely, every time. Almost nobody buys one. |
 
 ### Services
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Gift wrapping | Free | Six seconds of expert ribbon work | Cosmetic wrap state on the item. Three papers: festive (pink, Venus print), plain, or the Collectie's own box ribbon. |
 | Discreet plain packaging | Free | The reason a lot of these purchases happen at all | Item becomes non-identifiable in inventory; other NPCs will not react to it. |
-| International mailing | 6 Sovs | 6 Sovs — postage plus the customs form she fills in herself | Item is removed from inventory and arrives in the epilogue. Postcards mailed this way generate an NPC reaction weeks later. |
+| International mailing | 6 SOVS | 6 SOVS — postage plus the customs form she fills in herself | Item is removed from inventory and arrives in the epilogue. Postcards mailed this way generate an NPC reaction weeks later. |
 | **The shop toilet** | Free | Incalculable | Available to anyone, ticket or no ticket. Restores a small amount of Composure. **The most-used facility on Museum Mile**, for reasons Lotte has never analysed. |
 
 ### Hidden Details / Easter Eggs
@@ -355,7 +355,7 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 | **None** | **None** | **Lotte has no appearances outside Shamsterdam and never will.** She is a permanent staff member of a fixed building on Museum Mile, she has just been given twice the floor space she used to have, and she has no reason on earth to be anywhere else. The character is defined by being pleased with exactly where she is; putting her in Debaucheryville or Publandia would break the only thing she is about. | — |
 
 ### Evolution Through Game
-Lotte does not change. The Handreiniger stays on the counter, faced forward, at 4 Sovs, and she recommends it in identical words on the first visit and the fifteenth. What changes is the player: the recommendation is background noise on visit one, a running gag by visit four, and — once Sharing the Love has stacked to four and Shamsterdam Stomach is one dip away — the single most useful sentence anybody in Shamsterdam has said to them. She was saying it the whole time. She was never warning anyone. She just likes the bottle.
+Lotte does not change. The Handreiniger stays on the counter, faced forward, at 4 SOVS, and she recommends it in identical words on the first visit and the fifteenth. What changes is the player: the recommendation is background noise on visit one, a running gag by visit four, and — once Sharing the Love has stacked to four and Shamsterdam Stomach is one dip away — the single most useful sentence anybody in Shamsterdam has said to them. She was saying it the whole time. She was never warning anyone. She just likes the bottle.
 
 ---
 
@@ -406,13 +406,13 @@ Lotte does not change. The Handreiniger stays on the counter, faced forward, at 
 
 ### Systems Administered
 1. **Retail (both wings).** Legacy Venustempel merchandise and the Cacaogalerij chocolate line out of one till. Chocolate is now the majority of shop revenue and Lotte knows the figure.
-2. **The Handreiniger cure.** 4 Sovs, removes **2 stacks** of Sharing the Love. Sits inside the wider germ mechanic she is not aware of and does not administer:
+2. **The Handreiniger cure.** 4 SOVS, removes **2 stacks** of Sharing the Love. Sits inside the wider germ mechanic she is not aware of and does not administer:
   - **Sharing the Love** is a stacking player-facing status (tiers 1–5+) gained at De Grote Fontein: **+1** per dip, **+2** for a double-dip, **+3** for dipping something already bitten, **+3** for a bare hand, **+5** for leaning into the cascade.
   - **Tier 5 triggers Shamsterdam Stomach**, a day-long debuff.
-  - **Cures**: Gunter's 1 SOV hand wipe (**1 stack**), Lotte's 4 Sovs Handreiniger (**2 stacks**), sleeping at The Tolerance Hostel (**2 stacks**).
+  - **Cures**: Gunter's 1 SOV hand wipe (**1 stack**), Lotte's 4 SOVS Handreiniger (**2 stacks**), sleeping at The Tolerance Hostel (**2 stacks**).
   - **Lotte never warns, never explains, and never connects symptoms to cause.** She recommends the bottle because it is a nice product. She has never connected it to the fountain.
 3. **Gift wrapping / discreet packaging.** Free. Sets a cosmetic state on the item that determines whether other NPCs react to it in the player's hands.
-4. **International mailing.** 6 Sovs. Removes the item from inventory and resolves it in the epilogue.
+4. **International mailing.** 6 SOVS. Removes the item from inventory and resolves it in the epilogue.
 5. **The toilet.** Free, unticketed, universal. Small Composure restore. The most-used facility on Museum Mile.
 
 ### Quest Gate Function (If Applicable)
@@ -451,14 +451,14 @@ Lotte gates nothing and refuses nobody. She is positioned at a hard chokepoint �
 1. The two-finger Handreiniger tap at the exact moment the player's card comes back — the shop's most-repeated frame, and the one that gets funnier every time it fires
 2. Lotte mid-Floor Space Enthusiasm, both hands out, with the chocolate island behind her and De Grote Fontein flowing through the window behind that
 3. Bradley at the counter with De Collectie held in both arms like a passport, refusing to hand it over
-4. The wrapping station in action: fold, ribbon, curl, six seconds, on a 45 Sovs boxed set of six graduated chocolate phalluses, with a pink Venus-print paper option visible on the rail
+4. The wrapping station in action: fold, ribbon, curl, six seconds, on a 45 SOVS boxed set of six graduated chocolate phalluses, with a pink Venus-print paper option visible on the rail
 5. Lotte holding the framed Lennon print up to the light with genuine affection, in a room that also contains a chocolate fountain keyring display
 
 ### Meme Potential
 - "Looking for something specific? We have... everything, really."
 - "People say 'ironic gifts' but they buy two so..."
 - "Fifty-four square metres. The old shop was eleven."
-- "It's four Sovs. It's hand gel — look, the bottle's the fountain."
+- "It's four SOVS. It's hand gel — look, the bottle's the fountain."
 - "Yes, you can mail them. Yes, people do mail them."
 - "We're here since 1985. We'll be here when you're ready."
 - The Handreiniger declined, faced forward, declined, faced forward, declined, faced forward
@@ -512,7 +512,7 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 - **HARD CANON: this character is LOTTE.** An earlier cross-reference in `npc_manager_femke.md` records the Venustempel gift shop attendant as "Petra" — that is a name collision with a Debaucheryville character and it is wrong. The correct name is and always was Lotte, as established in `venustempel.md` and in the Venustempel PNG asset doc. The Femke file needs a one-word fix in its Connections table.
 - **Lotte is not in on the joke, in any frame, line, or take.** No knowing looks, no winks, no arch delivery, no pause before a product name. This is carried forward verbatim from the asset doc ("Lotte treats every transaction as completely normal in every frame... her cheerfulness is sincere and that is what makes the gift shop land") and it is the single load-bearing constraint on the character. If she reacts, the shop starts leering and the satire inverts onto the staff.
 - **The Handreiniger recommendation must fire on every sale, forever, with zero variation.** One recording, reused. No fatigue variants, no escalation, no eventual acknowledgement. The player will notice the pattern; Lotte never will. If she ever comments on it, the running gag dies instantly.
-- **She never warns, never explains, and never connects symptoms to cause.** She is a cure vendor who does not know she is a cure vendor. The germ mechanic (Sharing the Love, Shamsterdam Stomach, the three cures) is defined elsewhere and must not be redesigned in this file — Lotte only supplies the 4 Sovs / 2-stack option.
+- **She never warns, never explains, and never connects symptoms to cause.** She is a cure vendor who does not know she is a cure vendor. The germ mechanic (Sharing the Love, Shamsterdam Stomach, the three cures) is defined elsewhere and must not be redesigned in this file — Lotte only supplies the 4 SOVS / 2-stack option.
 - The floor-space material is the character's emotional centre and must not be played as a joke about a small woman being happy about shelving. She was working out of an eleven-square-metre corridor and now she is not. Fifty-four. It is a genuine professional win and the document treats it as one.
 - The **John Lennon sketches are real** — he really drew them, the museum really has them, the print is really licensed. Lotte's affection for the print is correct and should never be undercut. This is the one object in the building with actual artistic merit and the gift shop attendant is the person who noticed.
 - The Cacaogalerij collection is **chocolate phalluses**, curated seriously, and the document says so plainly. No euphemism, no leering, no coy substitution in dialogue, UI strings, or item names. The comedy is the till, the margin, the shelf facing, and the postage — not the shape.
@@ -526,17 +526,17 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — **Lotte has no crypto.** None. Sovs and card only, 4 Sovs–45 Sovs. A museum gift shop takes a card.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — **Lotte has no crypto.** None. SOVS and card only, 4 SOVS–45 SOVS. A museum gift shop takes a card.
 - [x] **NO automatic crypto assumptions** — this NPC does not earn crypto, has never earned crypto, and none is to be added. There is no kiosk, no QR code, no SOVS signage, and no shitcoin anywhere in the Venustempel gift shop.
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A. No crypto at this location.
-- [x] **The bros are never scam-aware** — there is no scam. Every price in the shop is fair, every product is what it says it is, and Bradley paid 45 Sovs for a real boxed set of real chocolate and called it a gag.
+- [x] **The bros are never scam-aware** — there is no scam. Every price in the shop is fair, every product is what it says it is, and Bradley paid 45 SOVS for a real boxed set of real chocolate and called it a gag.
 - [x] **Nothing winks** — Lotte structurally cannot wink; the asset doc forbids the sprite and this profile forbids the take. No line in this file signals that any of it is satire.
 - [x] **Focus on city-specific cultural exploitation instead** — the satire is the Cultural Alibi District: a well-run business selling exactly what tourists want, at fair prices, to people who need to be able to say they went to a museum.
 
 ### Satirical Target Verification
 - [x] **Targets tourist/frat bro behavior, NOT local culture or ethnicity** — the joke is three grown men who cannot buy chocolate without narrating it, in a shop where the staff and the pricing are entirely reasonable. Dutch matter-of-factness is presented as straightforwardly correct.
 - [x] **NPC is savvy entrepreneur, not villain or stereotype** — Lotte is a competent retail professional with real product knowledge, real margins, free services she is not obliged to offer, and a toilet she lets anyone use.
-- [x] **Humour is affectionate mockery, not mean-spirited** — Lotte is never flustered, never a victim, and never the punchline. She is having a good day. The worst thing that happens to her in the entire location is that a nice 4 Sovs hand gel does not sell.
+- [x] **Humour is affectionate mockery** — Lotte is never flustered, never a victim, and never the punchline. She is having a good day. The worst thing that happens to her in the entire location is that a nice 4 SOVS hand gel does not sell.
 - [x] **Adult content handled without leering** — nothing is depicted. The collection is described plainly and repeatedly as what it is, and the entire comic apparatus is retail mundanity: the till, the ribbon rail, the best-seller, the cocoa percentage, the customs form, and the hygiene nobody thinks about.
 
 ---
@@ -552,7 +552,7 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile; authored as part of the Museum Mile relocation. Sourced from `venustempel.md` + `PNG_Assets/Venustempel_PNG_Assets.md`, both of which are being rewritten concurrently for the move from Roodelicht Row to Museum Mile (entry 5 Sovs → 9 Sovs; De Cacaogalerij absorbed; De Grote Fontein added). Name collision resolved: the gift shop attendant is **Lotte**, not the "Petra" recorded in `npc_manager_femke.md`. New: doubled floor space characterisation, the full chocolate line, and the Handreiniger cure-vendor role in the Sharing the Love germ mechanic. | Design |
+| 2026-08-01 | Initial profile; authored as part of the Museum Mile relocation. Sourced from `venustempel.md` + `PNG_Assets/Venustempel_PNG_Assets.md`, both of which are being rewritten concurrently for the move from Roodelicht Row to Museum Mile (entry 5 SOVS → 9 SOVS; De Cacaogalerij absorbed; De Grote Fontein added). Name collision resolved: the gift shop attendant is **Lotte**, not the "Petra" recorded in `npc_manager_femke.md`. New: doubled floor space characterisation, the full chocolate line, and the Handreiniger cure-vendor role in the Sharing the Love germ mechanic. | Design |
 
 ---
 

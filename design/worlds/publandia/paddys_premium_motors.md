@@ -16,7 +16,7 @@
 
 ### Entry Conditions
 - **Time Restrictions**: 08:00-20:00 (Fergus takes his breaks seriously)
-- **Stat Requirements**: None (they'll rent to anyone with 50 Sovs)
+- **Stat Requirements**: None (they'll rent to anyone with 50 SOVS)
 - **Item Requirements**: None
 - **Previous Location Requirements**: None (available after reaching Publandia)
 - **Special Conditions**: None
@@ -156,22 +156,22 @@
 
 | Vehicle | Price/Day | Description | Hidden Issue |
 |---------|-----------|-------------|--------------|
-| The Shamrock | 45 Sovs | "Economy" compact | Wipers stuck on |
-| The Lucky Charm | 60 Sovs | "Standard" sedan | GPS glitches near roundabouts |
-| The Emerald Dream | 80 Sovs | "Premium" SUV | Too wide for country lanes |
-| The Full Irish | 120 Sovs | "Luxury" convertible | Attracts sheep attention |
+| The Shamrock | 45 SOVS | "Economy" compact | Wipers stuck on |
+| The Lucky Charm | 60 SOVS | "Standard" sedan | GPS glitches near roundabouts |
+| The Emerald Dream | 80 SOVS | "Premium" SUV | Too wide for country lanes |
+| The Full Irish | 120 SOVS | "Luxury" convertible | Attracts sheep attention |
 
 ### Add-Ons
 
 | Add-On | Price | What They Say | What It Does |
 |--------|-------|---------------|--------------|
-| GPS Rental | 20 Sovs/day | "Navigation assistance" | Says "recalculating" in Cloverleaf |
-| Premium Insurance | 35 Sovs/day | "Complete coverage" | Doesn't cover "circular traffic incidents" |
-| Map Book | 10 Sovs | "Traditional navigation" | Map has Cloverleaf labeled "?" |
-| Rosary Beads | 5 Sovs | "For the dashboard" | Fergus insists |
+| GPS Rental | 20 SOVS/day | "Navigation assistance" | Says "recalculating" in Cloverleaf |
+| Premium Insurance | 35 SOVS/day | "Complete coverage" | Doesn't cover "circular traffic incidents" |
+| Map Book | 10 SOVS | "Traditional navigation" | Map has Cloverleaf labeled "?" |
+| Rosary Beads | 5 SOVS | "For the dashboard" | Fergus insists |
 
 ### Economic Integration
-- **Currency**: Sovs
+- **Currency**: SOVS
 - **Price Structure**: Reasonable base, hidden fees in fine print
 - **Post-Quest Discount**: "Fergus's Respect" = 10% off (still overpriced)
 - **Insurance Gotcha**: Premium insurance explicitly excludes "incidents occurring within circular traffic patterns"

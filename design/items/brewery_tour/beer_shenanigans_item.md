@@ -11,7 +11,7 @@
 | **ABV** | 5.0% [source: design/worlds/publandia/brewery_passport_book.md L258] |
 | **Effects** | +30 HP, +15 SP [source: design/worlds/publandia/brewery_passport_book.md L259; corroborated design/items/brewery_tour_bottle_opener_system.md L104] |
 | **Risk** | 5% "Sentimental" (donate extra gold to NPCs) [source: design/worlds/publandia/brewery_passport_book.md L262] |
-| **Price** | 8 Sovs — within the 8–15 Sovs guideline band (author ruling: guideline, not rule) [source: design/worlds/publandia/brewery_passport_book.md L263] |
+| **Price** | 8 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/worlds/publandia/brewery_passport_book.md L263] |
 | **Special** | "Unique Unlock: Only stamp earned through LOSING, not winning" [source: design/worlds/publandia/brewery_passport_book.md L265]; "Learned Optimism" — +10% resistance to scam detection failure [source: design/worlds/publandia/brewery_passport_book.md L260-261] |
 
 ## Flavor Text

@@ -69,7 +69,7 @@ The whole character is the *look up*. That single motion — newspaper lowered, 
 | Occasionally, briefly, caring | Rare. Unannounced. Never repeated. Hand warmers slid across the counter, free, don't tell anyone |
 
 ### Internal Monologue
-> "Third night. Same three. The tall one buys two energy drinks and complains at the price and buys them anyway; the one with the phone films the shelf; the quiet one buys aspirin and does not say anything, and the quiet one is the only one who will feel fine tomorrow. Fifteen Sovs. He knows it was twelve before two o'clock. He knows. Everyone knows. The sign is *on the door*."
+> "Third night. Same three. The tall one buys two energy drinks and complains at the price and buys them anyway; the one with the phone films the shelf; the quiet one buys aspirin and does not say anything, and the quiet one is the only one who will feel fine tomorrow. Fifteen SOVS. He knows it was twelve before two o'clock. He knows. Everyone knows. The sign is *on the door*."
 
 ### Motivation
 She opened the shop in 2009, into a bad economy, on a correct hypothesis: people always need things at 3 AM, and that is an economy-proof business. She works nights because night is when people are honest — too tired to pretend they don't need help. She is not lonely and she is not trapped. She has the best seat in Debaucheryville for the thing she finds most interesting, which is people at the exact moment they stop performing.
@@ -95,30 +95,30 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 
 **Lord Pilsner**: "OPEN. Thank GOD something is OPEN."
 
-**Lord Pilsner** *(at the cooler)*: "4 Sovs for an energy drink? That's— okay fine. FINE. Two of them."
+**Lord Pilsner** *(at the cooler)*: "4 SOVS for an energy drink? That's— okay fine. FINE. Two of them."
 
 **Věra** (not looking up):
 > "The price changed at 2. This is not new."
 
 **Lord Pilsner**: "I KNOW. I just... give me the hangover kit too. And the kebab."
 
-**Chadwick**: "Content opportunity: '3 AM Shopping Challenge.' What can I buy with 20 Sovs?"
+**Chadwick**: "Content opportunity: '3 AM Shopping Challenge.' What can I buy with 20 SOVS?"
 
 **Věra**:
-> "At this hour? Energy drink, aspirin, kebab, and 2 Sovs change."
+> "At this hour? Energy drink, aspirin, kebab, and 2 SOVS change."
 
 **Chadwick**: "Perfect. PERFECT. This is REAL. This is AUTHENTIC DESPERATION."
 
-**Věra** *(rings it up)*: "18 Sovs."
+**Věra** *(rings it up)*: "18 SOVS."
 
 *The transaction lines:*
-> "That's 12 Sovs. ...16 Sovs after 2 AM. You knew this."
+> "That's 12 SOVS. ...16 SOVS after 2 AM. You knew this."
 
-> "Energy drink, aspirin, kebab. The classic combination. 15 Sovs."
+> "Energy drink, aspirin, kebab. The classic combination. 15 SOVS."
 
 > "Cash or card. Either works. I've seen worse purchases."
 
-> "Need a bag? ...1 Sov. Everything costs something."
+> "Need a bag? ...1 SOV. Everything costs something."
 
 *The observations — not judgment:*
 > "Third night this week. You're becoming a regular. This is neither good nor bad. It just is."
@@ -194,7 +194,7 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 > "You've been here a lot. Are you okay? ...you don't have to answer. I've just noticed."
 
 *If the player has completed Jiří's Night Vigil:*
-> *(the newspaper goes all the way down — the only time)* "You sat with my brother. All night." *(long pause)* "He talks to nobody. He has talked to nobody since 2003. And you stayed." *(she rings up the purchase)* "Twelve Sovs. ...Ten. Take the ten."
+> *(the newspaper goes all the way down — the only time)* "You sat with my brother. All night." *(long pause)* "He talks to nobody. He has talked to nobody since 2003. And you stayed." *(she rings up the purchase)* "Twelve SOVS. ...Ten. Take the ten."
 
 *If the player has spoken with Milan at the clock square:*
 > "You met my nephew. Did he move? ...No. He wouldn't."
@@ -225,50 +225,50 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 ### Healing — The Recovery Aisle
 | Item | Base | 2AM+ | Effect |
 |------|------|------|--------|
-| Energy Drink (Standard) | 3 Sovs | 4 Sovs | +15 HP, +10 Speed (1 hour) |
-| Energy Drink (Premium) | 5 Sovs | 7 Sovs | +25 HP, +15 Speed (2 hours), crash risk |
-| Energy Drink (Extreme) | 8 Sovs | 11 Sovs | +35 HP, +20 Speed (2 hours), guaranteed crash |
-| Greasy Kebab | 6 Sovs | 8 Sovs | +30 HP, Grease Fingers (-5 Dexterity, 30 min) |
-| "Hair of the Dog" | 7 Sovs | 10 Sovs | +20 HP, cures Hangover, -10 Accuracy |
-| Hangover Kit | 12 Sovs | 16 Sovs | +25 HP, cures Hangover, +Clarity |
-| Snack Bar | 2 Sovs | 3 Sovs | +10 HP, prevents crash |
-| Instant Noodles | 3 Sovs | 4 Sovs | +15 HP, requires hostel kitchen |
+| Energy Drink (Standard) | 3 SOVS | 4 SOVS | +15 HP, +10 Speed (1 hour) |
+| Energy Drink (Premium) | 5 SOVS | 7 SOVS | +25 HP, +15 Speed (2 hours), crash risk |
+| Energy Drink (Extreme) | 8 SOVS | 11 SOVS | +35 HP, +20 Speed (2 hours), guaranteed crash |
+| Greasy Kebab | 6 SOVS | 8 SOVS | +30 HP, Grease Fingers (-5 Dexterity, 30 min) |
+| "Hair of the Dog" | 7 SOVS | 10 SOVS | +20 HP, cures Hangover, -10 Accuracy |
+| Hangover Kit | 12 SOVS | 16 SOVS | +25 HP, cures Hangover, +Clarity |
+| Snack Bar | 2 SOVS | 3 SOVS | +10 HP, prevents crash |
+| Instant Noodles | 3 SOVS | 4 SOVS | +15 HP, requires hostel kitchen |
 
 ### Support — The Enhancement Aisle
 | Item | Base | 2AM+ | Effect |
 |------|------|------|--------|
-| Caffeine Pills (6) | 6 Sovs | 8 Sovs | +10 SP per pill, controlled |
-| Lucky Club Stamp (Fake) | 8 Sovs | 10 Sovs | +5 Confidence, no actual effect |
-| Emergency Phone Charger | 20 Sovs | 25 Sovs | Full phone resurrection |
-| Cigarettes | 8 Sovs | 10 Sovs | -5 HP, +10 Social in certain contexts |
-| Lighter | 3 Sovs | 4 Sovs | Fire creation ability |
-| Breath Mints (Tin) | 4 Sovs | 5 Sovs | +Charm in close conversation |
-| Gum (Pack) | 2 Sovs | 3 Sovs | Minor breath improvement |
+| Caffeine Pills (6) | 6 SOVS | 8 SOVS | +10 SP per pill, controlled |
+| Lucky Club Stamp (Fake) | 8 SOVS | 10 SOVS | +5 Confidence, no actual effect |
+| Emergency Phone Charger | 20 SOVS | 25 SOVS | Full phone resurrection |
+| Cigarettes | 8 SOVS | 10 SOVS | -5 HP, +10 Social in certain contexts |
+| Lighter | 3 SOVS | 4 SOVS | Fire creation ability |
+| Breath Mints (Tin) | 4 SOVS | 5 SOVS | +Charm in close conversation |
+| Gum (Pack) | 2 SOVS | 3 SOVS | Minor breath improvement |
 
 ### Offensive — The "Just In Case" Section
 | Item | Base | 2AM+ | Effect |
 |------|------|------|--------|
-| Pepper Spray | 15 Sovs | 20 Sovs | Defensive weapon, high accuracy |
-| Personal Alarm | 10 Sovs | 13 Sovs | Stuns enemies 1 turn |
-| "Brass Knuckles" Keychain | 12 Sovs | 15 Sovs | +5 Attack, legally ambiguous |
-| Flash Grenades (Party Poppers) | 5 Sovs | 7 Sovs | Confusion effect, one use |
-| Heavy Flashlight | 15 Sovs | 20 Sovs | Light source + improvised weapon |
+| Pepper Spray | 15 SOVS | 20 SOVS | Defensive weapon, high accuracy |
+| Personal Alarm | 10 SOVS | 13 SOVS | Stuns enemies 1 turn |
+| "Brass Knuckles" Keychain | 12 SOVS | 15 SOVS | +5 Attack, legally ambiguous |
+| Flash Grenades (Party Poppers) | 5 SOVS | 7 SOVS | Confusion effect, one use |
+| Heavy Flashlight | 15 SOVS | 20 SOVS | Light source + improvised weapon |
 
 ### Utility — The Practical Aisle
 | Item | Base | 2AM+ | Effect |
 |------|------|------|--------|
-| Club Earplugs | 10 Sovs | 12 Sovs | -40% Music Confusion |
-| Fake VIP Wristband | 15 Sovs | 18 Sovs | +10 Confidence, 20% detection risk |
-| Emergency Cab Voucher | 25 Sovs | 30 Sovs | Guaranteed transport, any distance |
-| Wet Wipes (Pack) | 4 Sovs | 5 Sovs | Various emergency cleanups |
-| First Aid Kit (Basic) | 15 Sovs | 18 Sovs | +30 HP, cures minor status effects |
-| Condoms (Pack) | 8 Sovs | 10 Sovs | Social responsibility |
-| Tissues | 2 Sovs | 3 Sovs | Many uses |
-| Safety Pins | 2 Sovs | 3 Sovs | Emergency repairs |
+| Club Earplugs | 10 SOVS | 12 SOVS | -40% Music Confusion |
+| Fake VIP Wristband | 15 SOVS | 18 SOVS | +10 Confidence, 20% detection risk |
+| Emergency Cab Voucher | 25 SOVS | 30 SOVS | Guaranteed transport, any distance |
+| Wet Wipes (Pack) | 4 SOVS | 5 SOVS | Various emergency cleanups |
+| First Aid Kit (Basic) | 15 SOVS | 18 SOVS | +30 HP, cures minor status effects |
+| Condoms (Pack) | 8 SOVS | 10 SOVS | Social responsibility |
+| Tissues | 2 SOVS | 3 SOVS | Many uses |
+| Safety Pins | 2 SOVS | 3 SOVS | Emergency repairs |
 
 **The Desperation Tax**: 02:00-06:00, all prices +20-30%. Visible notification on entry. No exceptions — Věra runs a business.
 **The Heat Lamp Lottery**: 60% fresh enough / 30% questionable but edible / 10% why did you do this. HP restoration varies with the roll.
-**Bags**: 1 Sov. Everything costs something.
+**Bags**: 1 SOV. Everything costs something.
 
 ### Hidden Details / Easter Eggs
 - **The hand warmers in the counter drawer**: There are a lot of them. She buys them in bulk. She has never charged anyone for one.
@@ -295,7 +295,7 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 ### Territory / Social Dynamics
 - Positioned to catch hostel-to-bar-to-hostel traffic; the shop exists at the exact geographic center of poor planning
 - Locals come only when truly necessary, accept the prices without comment, and respect her; tourists come loudly and pay the same
-- She is the closest thing Hostel Row has to a fixed point, and several ambient NPCs treat the shop as a social refuge rather than a store — she permits this and charges 3 Sovs for gum
+- She is the closest thing Hostel Row has to a fixed point, and several ambient NPCs treat the shop as a social refuge rather than a store — she permits this and charges 3 SOVS for gum
 - The Novotný family pattern (Jiří at the stop, Milan at the clock, Věra at the counter) is Debaucheryville's quietest running thread and is never remarked on by anyone except Věra, once
 
 ---
@@ -318,7 +318,7 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 - **Visit 5 — "Regular" status**: The face-recognition line, plus the first perk: advance warning on Desperation Tax timing
 - **Regular, ongoing**: Her actual opinions unlock. The Wisdom lines rotate
 - **Rare Care moments**: Unannounced, non-repeating, triggered by player state (low HP, repeated visits, cold weather). Each fires once, ever
-- **After Jiří's Night Vigil**: The single largest character moment in her arc — the newspaper goes all the way down, and she takes two Sovs off. It happens once
+- **After Jiří's Night Vigil**: The single largest character moment in her arc — the newspaper goes all the way down, and she takes two SOVS off. It happens once
 - She does not become warm. She becomes *specific*, and once, briefly, generous.
 
 ---
@@ -337,7 +337,7 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 | Animation | Trigger |
 |-----------|---------|
 | transaction_1 | Purchase initiated; processing |
-| transaction_2 | Bagging (1 Sov) |
+| transaction_2 | Bagging (1 SOV) |
 | wisdom_moment | Regular-status dialogue delivery |
 | rare_care | Hand warmers, water advice, or the "are you okay" line — each fires once, ever |
 | newspaper_down | **Unique** — the Jiří Night Vigil acknowledgment. The only full lower |
@@ -415,7 +415,7 @@ Czech, older generation, unhurried. Complete sentences, minimal contractions, no
 - "Yes." as a complete response to a price complaint is one of her best moments. Do not extend it
 - The Wisdom lines are the most quotable content in Debaucheryville and should be given room; do not rush them into the transaction audio
 - "Those are free. Don't tell anyone." should be almost embarrassed
-- The Jiří acknowledgment needs a genuinely long pause before "Twelve Sovs. ...Ten." — the discount is the emotion, not the words
+- The Jiří acknowledgment needs a genuinely long pause before "Twelve SOVS. ...Ten." — the discount is the emotion, not the words
 
 ---
 
@@ -441,7 +441,7 @@ Czech, older generation, unhurried. Complete sentences, minimal contractions, no
 ## 📝 Development Notes
 
 - **Novotný family canon is confirmed across three files** and is consistent: `npc_jiri_eternal_commuter.md` (sister Věra, nephew Milan), `npc_ambient_clock_square.md` (uncle Jiří, aunt Věra), and `midnight_munchies_general_store.md` (brother Jiří, nephew Milan). The clock-square observer is **Milan Novotný**, explicitly "no relation to Donát 'Euro Ink' Novák." Any external inventory listing him under the old name Jakub is stale (renamed round v30).
-- **The Jiří Night Vigil reaction is a proposed cross-location hook.** It is not currently scripted in `tram_stop_17.md` or `midnight_munchies_general_store.md`. It is the strongest available payoff for the Novotný thread and it costs one dialogue branch and a 2 Sovs discount. **Recommend adoption; flag as proposed, not established.**
+- **The Jiří Night Vigil reaction is a proposed cross-location hook.** It is not currently scripted in `tram_stop_17.md` or `midnight_munchies_general_store.md`. It is the strongest available payoff for the Novotný thread and it costs one dialogue branch and a 2 SOVS discount. **Recommend adoption; flag as proposed, not established.**
 - **Source-file world-consistency defect flagged**: `midnight_munchies_general_store.md` uses "Prague" twice (Cultural Targets, QA checklist). This profile uses **Debaucheryville** exclusively. Source needs a find-and-replace pass.
 - **Sprite filename collision resolved**: the location file's inline PNG summary lists `vera_counter.png` at both 256x192 (environment) and 64x96 (character). The authoritative `PNG_Assets/Midnight_Munchies_General_Store_Complete_PNG_Asset_Requirements.md` resolves this — `vera_counter.png` is the **object/counter** asset and `vera_novotna.png` is the **character sheet**. The location file's inline list is stale.
 - Every price, effect, and status in the four inventory tables is canon-locked from the source location file. Do not rebalance in a profile pass.

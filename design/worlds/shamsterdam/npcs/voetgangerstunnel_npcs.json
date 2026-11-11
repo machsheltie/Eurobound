@@ -34,8 +34,8 @@
         "when_wrong": "Strange, it was there yesterday.",
         "about_red_light_exit": "Oh, THAT exit. Many tourists find that one. Very popular.",
         "repeated_requests": "You again? Did you try the blue tiles? No? Try the orange ones.",
-        "paid_directions": "Okay, for five Sovs, I give you the REAL directions. This way. Maybe.",
-        "escort_offer": "For ten Sovs, I walk you there myself. But I walk slow. Very slow."
+        "paid_directions": "Okay, for five SOVS, I give you the REAL directions. This way. Maybe.",
+        "escort_offer": "For ten SOVS, I walk you there myself. But I walk slow. Very slow."
       },
       
       "services": [
@@ -99,7 +99,7 @@
       
       "dialogue": {
         "greeting": "Lost already? You just got down here.",
-        "selling_map": "8 Sovs for the map. It's the only accurate one in the city. Yes, really.",
+        "selling_map": "8 SOVS for the map. It's the only accurate one in the city. Yes, really.",
         "navigation_warning": "The blue tiles go to the station. The orange go to... places.",
         "about_red_light_exit": "Exit 7? That's the quick one. Very... scenic.",
         "after_purchase": "You bought the map. Now actually LOOK at it.",

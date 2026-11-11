@@ -18,13 +18,13 @@
 ### What He's Actually Doing
 Hans-Jürgen is a fourth-generation licensed Fiakermeister who has been drinking on the job for roughly eleven years and who has, this afternoon, finally lost the horse. He is not a scammer. He charges the posted rate. He is genuinely, professionally competent at everything about this job except the part where he stays sober, and he has been coasting for over a decade on the fact that Gustav knows the routes, knows the stops, knows the tourist photo spots, and requires no actual steering.
 
-His panic is real. His grief is real. The 80 Sovs discount ride he offers as payment is real and he will honour it. What he is actually asking three American strangers to do is retrieve the only functioning half of his business before the licensing board finds out.
+His panic is real. His grief is real. The 80 SOVS discount ride he offers as payment is real and he will honour it. What he is actually asking three American strangers to do is retrieve the only functioning half of his business before the licensing board finds out.
 
 ### What Bros Believe
 A noble quest. A traditional Sinfonian horseman, separated from his noble steed by cruel fate, calling upon three passing knights. Lord Pilsner has already decided this is "the REAL Sinfonia experience" and that they are being trusted with something sacred. Chadwick is filming it as cultural immersion content. Bradley has correctly identified the smell of schnapps and has decided not to make it an issue.
 
 ### The Comedy Gap
-The bros treat a man's alcoholic collapse as a knightly summons. Every escalating disaster — 340 Sovs of cake, 2,000 Sovs of Magic Flute — they log as "quest progress." Hans-Jürgen, meanwhile, is transparently, catastrophically obvious: he has a flask in his hand while explaining that he only had a very small drink, in August, for the cold. He is not hiding anything. Nobody has to see through him. The bros simply do not look.
+The bros treat a man's alcoholic collapse as a knightly summons. Every escalating disaster — 340 SOVS of cake, 2,000 SOVS of Magic Flute — they log as "quest progress." Hans-Jürgen, meanwhile, is transparently, catastrophically obvious: he has a flask in his hand while explaining that he only had a very small drink, in August, for the cold. He is not hiding anything. Nobody has to see through him. The bros simply do not look.
 
 The other Fiaker drivers watch the entire chase without moving, because they have all been waiting for this day since roughly 2014.
 
@@ -122,9 +122,9 @@ Keep the licence, keep the carriage, keep the horse — in that stated order, wh
 *If the party tells Herr Ober the horse is not theirs, Hans-Jürgen arrives, breathless, and takes it.*
 > "It is my horse. Mine. Hans-Jürgen Pferdmann, Fiakermeister, licence four-one-two. Send the bill to me." *(and to the bros, quietly)* "You do not have to say it is yours. You are not from here. I am from here. That is different."
 
-**Result:** Café debt halves to 170 Sovs; Hans-Jürgen's standing with the party rises permanently.
+**Result:** Café debt halves to 170 SOVS; Hans-Jürgen's standing with the party rises permanently.
 
-> **Economy rule:** this halving **is** the single 170 Sovs debt relief. It sets `debt_relief_claimed = true` and thereby **disables his 170 Sovs café insurance payout at Stadtpark** — the two are the same relief and may never both apply. His separate **500 Sovs Path A contribution** is a different pot and still stacks on top. Authority: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative".
+> **Economy rule:** this halving **is** the single 170 SOVS debt relief. It sets `debt_relief_claimed = true` and thereby **disables his 170 SOVS café insurance payout at Stadtpark** — the two are the same relief and may never both apply. His separate **500 SOVS Path A contribution** is a different pot and still stacks on top. Authority: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative".
 
 ### Stadtpark — Arrival
 > "GUSTAV! Gustav, bitte, please! Come back to Hans-Jürgen!"
@@ -213,12 +213,12 @@ Keep the licence, keep the carriage, keep the horse — in that stated order, wh
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Fiaker ride, 20 minutes | 80 Sovs (120 Sovs if he reads you as gullible, and he will apologise later) | Genuinely a nice ride | Removes Tired; +1 Charm for 30 min ("Arrived By Carriage") |
-| Discount ride (quest reward) | Free | 80 Sovs | Path A only; unlocks Fiaker fast-travel across Sinfonia |
-| Selfie with the horse | 5 Sovs tip | 5 Sovs | +1 Bravado; Gustav visibly resents it, which is the joke |
-| "Special route" | 100 Sovs+ | A traffic jam with better architecture | Pure tourist extraction; he is embarrassed about it and does it anyway |
-| Path A contribution | — | 500 Sovs | Path A only: reduces the party's accumulated Fiaker Fiasco debt by 500 Sovs. Separate pot from the 170 Sovs café relief; the two stack |
-| Café insurance payout | — | 170 Sovs | Path A only, **and only if `debt_relief_claimed` is still false**. Same single relief as the dialogue-option-3 halving; whichever fires first disables the other |
+| Fiaker ride, 20 minutes | 80 SOVS (120 SOVS if he reads you as gullible, and he will apologise later) | Genuinely a nice ride | Removes Tired; +1 Charm for 30 min ("Arrived By Carriage") |
+| Discount ride (quest reward) | Free | 80 SOVS | Path A only; unlocks Fiaker fast-travel across Sinfonia |
+| Selfie with the horse | 5 SOVS tip | 5 SOVS | +1 Bravado; Gustav visibly resents it, which is the joke |
+| "Special route" | 100 SOVS+ | A traffic jam with better architecture | Pure tourist extraction; he is embarrassed about it and does it anyway |
+| Path A contribution | — | 500 SOVS | Path A only: reduces the party's accumulated Fiaker Fiasco debt by 500 SOVS. Separate pot from the 170 SOVS café relief; the two stack |
+| Café insurance payout | — | 170 SOVS | Path A only, **and only if `debt_relief_claimed` is still false**. Same single relief as the dialogue-option-3 halving; whichever fires first disables the other |
 
 ### Hidden Details / Easter Eggs
 - **Examine the flask**: *"Pewter. Engraved. 'H-J.P. — 25 Jahre.' A retirement gift, given twenty-five years into a career he has not retired from."*
@@ -305,15 +305,15 @@ Path A: steadily more coherent, visibly less red, hat still crooked. He never st
 - **Outcome**: One of four resolutions (A: Gustav returns / B: Gustav retires to Stadtpark / C: Gustav escapes / D: bros bail), each permanently altering Hans-Jürgen's presence, dialogue, and plaza state
 
 ### Quest Gate Function
-He gates **Fiaker fast-travel** for all of Sinfonia behind Path A. He also gates the 500 Sovs Path A contribution against the party's damage total — Path A only — and, separately, the 170 Sovs café insurance payout, which is Path A only *and* conditional on the 170 Sovs relief not already having been consumed at the café. He blocks nothing else; the plaza remains open in every state.
+He gates **Fiaker fast-travel** for all of Sinfonia behind Path A. He also gates the 500 SOVS Path A contribution against the party's damage total — Path A only — and, separately, the 170 SOVS café insurance payout, which is Path A only *and* conditional on the 170 SOVS relief not already having been consumed at the café. He blocks nothing else; the plaza remains open in every state.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Gustav's Photograph (copy) | Path A, post-resolution | Yes | Keepsake; examinable; +1 Charm with all Sinfonia animal-adjacent NPCs |
 | Fiaker Fast-Travel Pass | Path A completion | Yes | Unlocks carriage travel between Sinfonia districts |
-| Path A Contribution Slip (500 Sovs credit) | Path A completion | No | Consumed against the accumulated damage total. Separate from the 170 Sovs café relief; both can be held |
-| Café Insurance Slip (170 Sovs credit) | Path A completion, only if `debt_relief_claimed` is false | No | Consumed against the café line. Not issued at all if the party already took café dialogue option 3 or paid the 340 Sovs in full |
+| Path A Contribution Slip (500 SOVS credit) | Path A completion | No | Consumed against the accumulated damage total. Separate from the 170 SOVS café relief; both can be held |
+| Café Insurance Slip (170 SOVS credit) | Path A completion, only if `debt_relief_claimed` is false | No | Consumed against the café line. Not issued at all if the party already took café dialogue option 3 or paid the 340 SOVS in full |
 
 ---
 
@@ -391,14 +391,14 @@ Austrian German accent over English, with Germanic syntax inversions ("You help 
 - [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; he is a cash-and-coins tradesman and nothing about him touches SOVS or shitcoins
 - [x] **NO automatic crypto assumptions** — he has never heard of any of it and never will
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A
-- [x] **The bros are never scam-aware** — they never register that they are funding a man's bar tab; every Sov spent is logged as "quest investment"
+- [x] **The bros are never scam-aware** — they never register that they are funding a man's bar tab; every SOV spent is logged as "quest investment"
 - [x] **Nothing winks** — no line of his, and no line about him, signals the satire
 - [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's Fiaker tourist trade and Habsburg-nostalgia extraction economy
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is the bros mistaking a workplace collapse for a knightly quest; Austrian carriage culture itself is treated as a real trade with real workers
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a licensed fourth-generation professional in genuine trouble, generous to a fault, never predatory
-- [x] Humor is affectionate mockery, not mean-spirited — his drinking is comic in staging and serious in consequence, and the game never invites the player to look down on him
+- [x] Humor is affectionate mockery — his drinking is comic in staging and serious in consequence, and the game never invites the player to look down on him
 
 ---
 

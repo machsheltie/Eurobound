@@ -252,11 +252,11 @@
 **Menu**:
 | Item | Price | Effect |
 |------|-------|--------|
-| Roundabout Roll | 8 Sovs | Restores 20 HP |
-| Exit Anxiety Easer (whiskey) | 12 Sovs | -Stress, +Confused |
-| Cloverleaf Curry | 15 Sovs | Restores 40 HP, +Speed |
-| Margaret's Memorial Sandwich | 10 Sovs | +HP, Patrick appears misty-eyed |
-| Tourist Trap Platter | 25 Sovs | Full heal, -Sovs |
+| Roundabout Roll | 8 SOVS | Restores 20 HP |
+| Exit Anxiety Easer (whiskey) | 12 SOVS | -Stress, +Confused |
+| Cloverleaf Curry | 15 SOVS | Restores 40 HP, +Speed |
+| Margaret's Memorial Sandwich | 10 SOVS | +HP, Patrick appears misty-eyed |
+| Tourist Trap Platter | 25 SOVS | Full heal, -SOVS |
 
 **Key Dialogue**:
 > "The trick is never running out of petrol. I've got a deal with the lorry that circles Wednesdays."
@@ -774,7 +774,7 @@
 
 ### Prerequisites
 - Arrive in Publandia (main story)
-- Have enough SOVS for car rental (200 Sovs+)
+- Have enough SOVS for car rental (200 SOVS+)
 - Complete Paddy's Premium Motors rental sequence
 
 ### Unlocks
@@ -911,7 +911,7 @@
 - [x] **Cultural specificity confirmed** - Irish roundabout confusion, emigration themes, community resilience
 - [x] **Satirical targets appropriate** - American tourist impatience vs. Irish acceptance (punching at privilege)
 - [x] **Gameplay value established** - Major set-piece with two meaningful paths
-- [x] **Technical feasibility confirmed** - Pre-baked animation loops solve mobile performance
+- [x] **Technical feasibility confirmed** - Pre-baked animation loops solve performance
 
 ### Post-Implementation Testing
 - [ ] **Navigation tested** - Both paths completable
@@ -922,7 +922,7 @@
 
 ### Final Validation
 - [ ] **Theme distribution balanced** - Existential horror AND comedy present
-- [ ] **Mobile UX optimized** - Touch zones appropriate, text readable
+- [ ] **Desktop UX optimized** - Click zones appropriate, text readable
 - [ ] **Social media potential maximized** - Patrick/Margaret, Seán's philosophy, GPS breakdown
 - [ ] **Economic integration logical** - Food truck prices reasonable
 - [ ] **Complete implementation path established** - All JSON files updated

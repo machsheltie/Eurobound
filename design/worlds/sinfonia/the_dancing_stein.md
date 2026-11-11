@@ -142,7 +142,7 @@ Staff enforces this with friendly insistence, not hostility.
 - **Color**: Cloudy gold with persistent foam
 - **Stats**: +20 HP, +15 SP
 - **Effect**: "Light on Your Feet" (+3 Speed, +2 Dance for 30 minutes)
-- **Price**: 7 Sovs
+- **Price**: 7 SOVS
 - **Flavor Text**: "Brewed in three stages, fermented in three tanks, served in three-quarter time. The foam always swirls clockwise. We don't know why."
 - **Brewed By**: The Spinning Brewery (off-site partner, delivers fresh)
 - **Special**: Server does a small spin when delivering
@@ -150,11 +150,11 @@ Staff enforces this with friendly insistence, not hostility.
 **Menu Drinks** (Non-Signature):
 | Beer | Price | Effect | Served With |
 |------|-------|--------|-------------|
-| Two-Step Lager | 4 Sovs | +10 HP | Basic rhythm |
-| Foxtrot Ale | 5 Sovs | +15 HP | Different tempo (rebellion) |
-| The Wallflower | 3 Sovs | +5 HP | No dancing required (shameful) |
-| Tango IPA | 6 Sovs | +15 HP, +5 SP | Dramatic pause |
-| Sinfonian Whirl | 8 Sovs | +25 HP | Full spin delivery |
+| Two-Step Lager | 4 SOVS | +10 HP | Basic rhythm |
+| Foxtrot Ale | 5 SOVS | +15 HP | Different tempo (rebellion) |
+| The Wallflower | 3 SOVS | +5 HP | No dancing required (shameful) |
+| Tango IPA | 6 SOVS | +15 HP, +5 SP | Dramatic pause |
+| Sinfonian Whirl | 8 SOVS | +25 HP | Full spin delivery |
 
 ### Partner Brewery Note
 
@@ -169,7 +169,7 @@ The Dancing Stein doesn't brew on-site — their beer is supplied by **The Spinn
 - **Design**: Beer stein silhouette with dancing legs, bottle opener as the stein handle
 - **Material**: Brushed silver with ballroom gold accents
 - **Inscription**: "One-Two-Three"
-- **Acquired**: Complete the Stein Waltz on any difficulty OR purchase for 18 Sovs
+- **Acquired**: Complete the Stein Waltz on any difficulty OR purchase for 18 SOVS
 - **Special Feature**: Weighted to spin when flicked (like a dancer)
 
 ### Stamp Details

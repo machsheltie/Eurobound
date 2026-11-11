@@ -84,7 +84,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | Award plaque wall strip | (0, 576) | 256x96 | "Belgian Master Chocolatier — Award Winning" |
 | Gift wrap options rack | (256, 576) | 192x96 | Standard/discreet/festive/bold/party regalia rolls |
 | Window display (interior side) | (448, 576) | 192x128 | The respectable decoys |
-| Price placard set (5) | (640, 576) | 160x96 (5x 32x96) | 8-120 Sovs range markers |
+| Price placard set (5) | (640, 576) | 160x96 (5x 32x96) | 8-120 SOVS range markers |
 | Shop shelf backing (tileable) | (800, 576) | 224x128 | Cream shelving fill tile |
 
 ### Technical Notes:
@@ -165,17 +165,17 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 ### Products (Case Stock & Inventory Icons):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Classic Truffle Box (6) | (0, 0) | 48x32 | 12 Sovs — "for when you're with family" |
-| Abstract "Art" Piece | (48, 0) | 32x32 | 8 Sovs dark — "open to interpretation" |
-| The Male Classic (abstracted) | (80, 0) | 32x48 | 15 Sovs milk — bestseller, silhouette form |
-| The Male Detailed (abstracted) | (112, 0) | 32x48 | 25 Sovs Belgian dark — "for the discerning customer" |
-| The Female Classic (abstracted) | (144, 0) | 32x48 | 15 Sovs white — equal opportunity awkwardness |
-| The Female Detailed (abstracted) | (176, 0) | 32x48 | 25 Sovs Belgian dark — craftsmanship respects no gender |
-| The Couples' Set | (208, 0) | 64x48 | 35 Sovs paired gift box |
-| Bachelor Party Platter | (272, 0) | 96x64 | 50 Sovs bulk — "make it weird for 8-12 people" |
-| Bachelorette Party Platter | (368, 0) | 96x64 | 50 Sovs matching energy, different shapes |
-| The Full Collection box | (0, 64) | 128x96 | 120 Sovs — "You're committed. We respect that." |
-| Custom Commission (wrapped mystery) | (128, 64) | 48x64 | 75 Sovs+ — fully wrapped, shape implied only |
+| Classic Truffle Box (6) | (0, 0) | 48x32 | 12 SOVS — "for when you're with family" |
+| Abstract "Art" Piece | (48, 0) | 32x32 | 8 SOVS dark — "open to interpretation" |
+| The Male Classic (abstracted) | (80, 0) | 32x48 | 15 SOVS milk — bestseller, silhouette form |
+| The Male Detailed (abstracted) | (112, 0) | 32x48 | 25 SOVS Belgian dark — "for the discerning customer" |
+| The Female Classic (abstracted) | (144, 0) | 32x48 | 15 SOVS white — equal opportunity awkwardness |
+| The Female Detailed (abstracted) | (176, 0) | 32x48 | 25 SOVS Belgian dark — craftsmanship respects no gender |
+| The Couples' Set | (208, 0) | 64x48 | 35 SOVS paired gift box |
+| Bachelor Party Platter | (272, 0) | 96x64 | 50 SOVS bulk — "make it weird for 8-12 people" |
+| Bachelorette Party Platter | (368, 0) | 96x64 | 50 SOVS matching energy, different shapes |
+| The Full Collection box | (0, 64) | 128x96 | 120 SOVS — "You're committed. We respect that." |
+| Custom Commission (wrapped mystery) | (128, 64) | 48x64 | 75 SOVS+ — fully wrapped, shape implied only |
 | Gift-wrapped chocolate (5 style variants) | (176, 64) | 240x48 (5x 48x48) | Standard/discreet/festive/bold/party regalia |
 | Branded shopping bag | (416, 64) | 48x64 | Tastefully branded, clutched at exit |
 | Half-eaten anatomical (abstracted) | (176, 112) | 32x48 | The "someone always eats theirs" evidence sprite |
@@ -301,7 +301,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 - Zone coding uses banner text + lighting warmth + floor markers, never color alone
 - Chocolate types (milk/dark/white) differ by value and label, not hue-only
 - Wrap styles distinguished by pattern (plain/box/ribbon/transparent/regalia), not palette
-- Touch zones minimum 44px for all cases, counter, wrap panel, and gift-flag prompt
+- Click zones minimum 44px for all cases, counter, wrap panel, and gift-flag prompt
 
 ---
 
@@ -401,7 +401,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 ### Screenshot-Worthy Moments:
 1. **The Zone 2 "wait—" moment** — abstract shapes mid-realization, perfectly ambiguous
 2. **Sophie crafting through the window** — total artisan seriousness, unphotographable subject
-3. **The Full Collection purchase** — 120 Sovs commitment with staff recognition
+3. **The Full Collection purchase** — 120 SOVS commitment with staff recognition
 4. **The wrap-style menu** — "Discreet or... declarative?" as a UI screenshot
 5. **Complicated Feelings icon** appearing over a character alone at night
 
@@ -471,7 +471,7 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 - [ ] Satirical theme is clear throughout all assets (professionalism vs. product, denial vs. consumption)
 - [ ] Hidden areas/interactions have discoverable visual cues (Zone 3 glow through doorway, crafting window spotlight)
 - [ ] Performance optimized (single-scene scroll, CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (zone text/pattern coding)
 - [ ] Social media viral potential maximized in composition choices (wrap menu and Zone 2 shapes framed for screenshots)
 
@@ -484,11 +484,11 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | World Consistency (no real city names) | ✅ | Shamsterdam tourist district only; "trained in Brussels" is NPC backstory flavor, no real-city location |
 | Cultural Specificity | ✅ | Belgian chocolate tradition meets Shamsterdam's openness economy |
 | Satirical Targets Appropriate | ✅ | Gag-gift denial and bachelor party culture — body-positive framing, never body negativity |
-| Seedy Underbelly Present | ✅ | 15 Sovs of chocolate sold for 35 Sovs because of the shape; shape-based markup economy |
+| Seedy Underbelly Present | ✅ | 15 SOVS of chocolate sold for 35 SOVS because of the shape; shape-based markup economy |
 | Gameplay Value Established | ✅ | Zone progression, consumption/status system, gift ledger, achievement track, Bravado checks |
 | Technical Feasibility | ✅ | Single-scroll scene, static-crafting LOD, abstraction-friendly sprite sizes documented |
 | Performance Budget | ✅ | 60 FPS, ≤14 draw calls, ≤32 MB per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px touch zones |
+| Accessibility Features | ✅ | Visual mirrors for all audio cues, reduced-motion variants, 44px click zones |
 | No Crypto Elements | ✅ | Pure artisan chocolate awkwardness (profile-confirmed) |
 | Social Media Integration | ✅ | 5 screenshot moments identified; wrap-menu UI composed as shareable frame |
 

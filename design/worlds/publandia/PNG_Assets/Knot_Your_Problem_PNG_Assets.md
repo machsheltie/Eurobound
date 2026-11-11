@@ -1,7 +1,7 @@
 # Knot Your Problem - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Knot Your Problem is a late-night pretzel cart run by Eoin Reilly, a man who has optimized every gram of emotional labor out of the transaction and reinvested it all in pretzel quality — this document specifies every sprite needed to render aggressive indifference as a service. The satirical essence in one sentence: drunk bros mistake a food vendor for a therapist, and the vendor's entire visual language says "5 Sovs. Next."
+Knot Your Problem is a late-night pretzel cart run by Eoin Reilly, a man who has optimized every gram of emotional labor out of the transaction and reinvested it all in pretzel quality — this document specifies every sprite needed to render aggressive indifference as a service. The satirical essence in one sentence: drunk bros mistake a food vendor for a therapist, and the vendor's entire visual language says "5 SOVS. Next."
 
 **Location ID:** `publandia_vendor_knot_your_problem_01`
 **Theme:** Drunk oversharing meets professional indifference — salty carbs, no sympathy, next customer
@@ -122,7 +122,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Portrait Neutral | (0, 96) | 64x48 | Default dialogue box face — flat, professional |
-| Portrait Deflection | (64, 96) | 64x48 | Mid-"5 Sovs." — the face that ends stories |
+| Portrait Deflection | (64, 96) | 64x48 | Mid-"5 SOVS." — the face that ends stories |
 | Portrait Nod | (128, 96) | 64x48 | For "Good." — approval at minimum viable warmth |
 | Portrait Exception | (192, 96) | 64x48 | For "Pretzel's on me. Go." — humanity, briefly visible |
 | Hands Handoff Close-Up | (256, 96) | 64x48 | Practiced grip, wax paper, zero fumble in eight years |
@@ -178,11 +178,11 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Confused Tourist Processing | (64, 96) | 64x96 | Recalibrating expectations of vendor friendliness |
 | Drunk Queue Silhouettes | (128, 96) | 128x96 | Background line of swaying pub refugees, 3 deep |
 | Story Speech Bubble | (256, 96) | 64x48 | Rambling text trailing off the bubble's edge |
-| "5 Sovs" Cutoff Bubble | (320, 96) | 64x48 | The story bubble severed clean by a price |
+| "5 SOVS" Cutoff Bubble | (320, 96) | 64x48 | The story bubble severed clean by a price |
 | Tear Drops | (256, 144) | 32x32 | The Crier's overlay particles |
 | Confusion Marks | (288, 144) | 32x32 | Tourist's floating question marks |
 | Respect Marks | (320, 144) | 32x32 | "...harsh but fair, honestly." |
-| Camera Phone Prop | (352, 144) | 32x32 | Raised phone, pre-10 Sovs-fee |
+| Camera Phone Prop | (352, 144) | 32x32 | Raised phone, pre-10 SOVS-fee |
 
 ### Customer Dialogue Portraits:
 | Portrait | Position | Size | Description |
@@ -195,7 +195,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 
 ### Technical Notes:
 - Queue silhouettes are a single static sprite with a slow sway offset — never individually animated
-- The "5 Sovs" Cutoff Bubble must visually interrupt the Story Bubble when spawned (hard replace, no crossfade)
+- The "5 SOVS" Cutoff Bubble must visually interrupt the Story Bubble when spawned (hard replace, no crossfade)
 - The Crier's tears use the Tear Drops overlay at 2-3 particles maximum; this is a comedy of restraint
 
 ---
@@ -207,13 +207,13 @@ assets/sprites/locations/publandia/knot_your_problem/
 ### Menu Items (All Seven):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Classic Pretzel | (0, 0) | 32x32 | Plain, salted, perfect — 3 Sovs, +12 HP |
-| Pretzel Bites Bag | (32, 0) | 32x32 | Shareable (if you have friends) — 4 Sovs, +15 HP |
-| Cheese Stuffed Pretzel | (64, 0) | 32x32 | Melted cheese visible at the seam — 6 Sovs, +25 HP |
-| Jalapeño Stuffed Pretzel | (96, 0) | 32x32 | Green flecks, heat shimmer — 7 Sovs, +22 HP, +Heat resist |
-| The Everything Pretzel | (128, 0) | 32x32 | Every topping, visually chaotic — 6 Sovs, +23 HP |
-| Cinnamon Sugar Pretzel | (160, 0) | 32x32 | Sweet option — 5 Sovs, +18 HP, +5 SP, judged silently |
-| Large Pretzel | (192, 0) | 48x48 | More pretzel, same attitude — 5 Sovs, +20 HP |
+| Classic Pretzel | (0, 0) | 32x32 | Plain, salted, perfect — 3 SOVS, +12 HP |
+| Pretzel Bites Bag | (32, 0) | 32x32 | Shareable (if you have friends) — 4 SOVS, +15 HP |
+| Cheese Stuffed Pretzel | (64, 0) | 32x32 | Melted cheese visible at the seam — 6 SOVS, +25 HP |
+| Jalapeño Stuffed Pretzel | (96, 0) | 32x32 | Green flecks, heat shimmer — 7 SOVS, +22 HP, +Heat resist |
+| The Everything Pretzel | (128, 0) | 32x32 | Every topping, visually chaotic — 6 SOVS, +23 HP |
+| Cinnamon Sugar Pretzel | (160, 0) | 32x32 | Sweet option — 5 SOVS, +18 HP, +5 SP, judged silently |
+| Large Pretzel | (192, 0) | 48x48 | More pretzel, same attitude — 5 SOVS, +20 HP |
 
 ### Condiments & Serveware:
 | Item | Position | Size | Description |
@@ -236,7 +236,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Menu Icon Strip | (144, 80) | 112x32 | Seven 16x16 mini icons for the menu list UI rows |
 
 ### Technical Notes:
-- All seven menu items share a silhouette family; toppings differentiate at 32x32 — test legibility at mobile scale
+- All seven menu items share a silhouette family; toppings differentiate at 32x32 — test legibility at gameplay scale
 - Bonus Portion must be recognizably ~15% larger than Large when side by side, subtle in isolation
 - Cold Pretzel desaturates Pretzel Brown toward Industrial Steel — sadness via palette
 
@@ -295,7 +295,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 |---------|----------|------|-------------|
 | Menu List Panel | (0, 0) | 128x160 | Simple list, 7 rows, prices, zero flavor text — browsing not encouraged |
 | Menu Row Highlight | (128, 0) | 96x24 | Selected item bar, Mustard Yellow |
-| Price Tag Chips | (128, 24) | 96x24 | 3 Sovs through 8 Sovs denominations |
+| Price Tag Chips | (128, 24) | 96x24 | 3 SOVS through 8 SOVS denominations |
 | Transaction Complete | (128, 48) | 96x48 | "Here. Next." — done indicator |
 | Efficiency Bonus Popup | (128, 96) | 96x32 | "+2 HP. Good." — quick-order reward |
 | Exact Change Icon | (128, 128) | 32x32 | Coin stack — +1 HP nod of respect |
@@ -306,8 +306,8 @@ assets/sprites/locations/publandia/knot_your_problem/
 ### Deflection & Gags:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Deflection Response Popup | (0, 160) | 128x48 | Conversation shut down: player text truncated, "5 Sovs. Next." stamped over it |
-| Camera Fee Popup | (128, 160) | 96x48 | "Camera costs 10 Sovs." — Accept / Respect buttons |
+| Deflection Response Popup | (0, 160) | 128x48 | Conversation shut down: player text truncated, "5 SOVS. Next." stamped over it |
+| Camera Fee Popup | (128, 160) | 96x48 | "Camera costs 10 SOVS." — Accept / Respect buttons |
 | Perfect Transaction Timer | (0, 208) | 96x48 | Under-5-seconds countdown bar, no numerals, just shrinking steel |
 | Emotionally Unchanged Icon | (96, 208) | 32x32 | Status effect: flat-line heart |
 | Carbed Up Icon | (128, 208) | 32x32 | Status effect: pretzel silhouette, slight thirst tick |
@@ -389,11 +389,11 @@ assets/sprites/locations/publandia/knot_your_problem/
 
 ### Deflection Cutoff:
 - **Duration:** 0.4 seconds
-- **Frames:** 2 (Story Speech Bubble → "5 Sovs" Cutoff Bubble)
+- **Frames:** 2 (Story Speech Bubble → "5 SOVS" Cutoff Bubble)
 - **Pattern:** Story bubble grows with player text → hard replace with cutoff bubble, no transition
 - **Trigger:** Player selects any conversation/overshare dialogue option
 - **Purpose:** The comedy engine — every story dies mid-sentence at the same price point
-- **Audio Sync:** Conversation-attempt stinger: dialogue murmur cut off clean by "5 Sovs"
+- **Audio Sync:** Conversation-attempt stinger: dialogue murmur cut off clean by "5 SOVS"
 - **Performance Optimization:** None needed
 
 ### The Exception:
@@ -442,7 +442,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Menu Panel Bold | (0, 0) | 96x64 | Thick-bordered menu list with enlarged item rows and high-contrast pricing |
-| Deflection Popup Bold | (96, 0) | 96x48 | Oversized "5 Sovs. Next." with heavy outline — the punchline must land for everyone |
+| Deflection Popup Bold | (96, 0) | 96x48 | Oversized "5 SOVS. Next." with heavy outline — the punchline must land for everyone |
 | Eoin Interactive Outline | (192, 0) | 48x64 | White-on-dark outline for the order hotspot at Eoin's station |
 | Warmer Case Hotspot Outline | (0, 64) | 64x64 | Outlined glass case examine zone with enlarged stock silhouettes |
 | Condiment Station Outline | (64, 64) | 64x64 | Outlined mustard/salt/napkin zone; the ketchup gap outlined in negative |
@@ -463,7 +463,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Order Beep Icon | (0, 128) | 32x32 | Confirmation ping burst on order accepted |
 | Cash Box Clink Icon | (32, 128) | 32x32 | Coin-on-steel glyph on payment open/close |
 | Napkin Grab Rustle Icon | (64, 128) | 32x32 | Paper-flutter glyph on self-serve napkin pull |
-| "5 Sovs" Cutoff Stinger Slash | (96, 128) | 48x32 | Dialogue waveform sliced clean through by a 5 Sovs tag — the conversation-attempt kill shot, visualized |
+| "5 SOVS" Cutoff Stinger Slash | (96, 128) | 48x32 | Dialogue waveform sliced clean through by a 5 SOVS tag — the conversation-attempt kill shot, visualized |
 | Quick-Exchange Flash Icon | (144, 128) | 32x32 | Perfect Transaction completion cue — crisp double-tick glyph |
 | Warmer Hum Bars | (176, 128) | 32x32 | Gentle amplitude bars for the ambient warmer hum |
 | "Next." Pulse | (208, 128) | 32x32 | Single flat pulse ring each time Eoin says it (even to nobody) |
@@ -476,7 +476,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - The three salts use distinct packet icons (plain / garlic bulb / chaos star), no color dependency
 - Price highlights pair Mustard Yellow with a bold weight change so selection reads without hue
 - Status icons (Carbed Up / Emotionally Unchanged / Efficient Customer) are three distinct silhouettes
-- All interactive zones — menu rows, order/pay/leave buttons, condiment station, Eoin hotspot — meet the 44px minimum touch target via runtime hitbox padding
+- All interactive zones — menu rows, order/pay/leave buttons, condiment station, Eoin hotspot — meet the 44px minimum click target via runtime hitbox padding
 
 ---
 
@@ -532,7 +532,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Transaction Handoff frame 2 | Order confirmation beep | On pretzel-extended frame |
 | Cash Box Open/Close | Cash box clink + latch | Clink on open, latch on close frame |
 | Napkin Flutter | Napkin grab rustle | On self-serve pull |
-| Deflection Cutoff | Conversation murmur cut off by "5 Sovs" stinger | Murmur dies exactly on bubble replace |
+| Deflection Cutoff | Conversation murmur cut off by "5 SOVS" stinger | Murmur dies exactly on bubble replace |
 | Perfect Transaction Flash + Nod | Satisfying quick-exchange sound | Resolves as Nod Frame B lands |
 | Warmer Case (constant) | Pretzel warmer hum | Continuous ambient layer, ducked during dialogue |
 | Oversharer Gesture Loop | Story fading into background street noise | Murmur volume drops 10% per loop |
@@ -543,7 +543,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | The Perfect Transaction | Perfect Transaction Timer, Handoff, Nod Frames A/B, Perfect Transaction Flash, Bravado Sparkle, Bravado +10 Badge | Complete a purchase in under 5 seconds with exact change and zero non-essential words; single nod is the trophy |
-| The Overshare | Oversharer poses, Story Speech Bubble, "5 Sovs" Cutoff Bubble, Deflection Response Popup, Portrait Deflection, Emotionally Unchanged Icon | Comedy quest, always fails — every dialogue branch terminates in a deflection; failure IS completion |
+| The Overshare | Oversharer poses, Story Speech Bubble, "5 SOVS" Cutoff Bubble, Deflection Response Popup, Portrait Deflection, Emotionally Unchanged Icon | Comedy quest, always fails — every dialogue branch terminates in a deflection; failure IS completion |
 | Regular Status | Regular Status Pips, Preparing Usual pose, Efficient Regular sprites, Efficient Customer Icon | 10 wordless orders fills the pip counter; Eoin starts the usual before the player reaches the counter |
 | The Exception | The Crier states, The Exception pose, Free Pretzel On Napkin, Point to Café, Portrait Exception | Witness-only quest: triggers on The Crier ambient encounter; unlocks "Human After All" achievement |
 
@@ -584,11 +584,11 @@ assets/sprites/locations/publandia/knot_your_problem/
 
 ### Screenshot-Worthy Moments:
 1. **The "I Don't Want To Hear About It" Sign** - A food cart that legislates against your feelings, in plain functional lettering
-2. **The Deflection Popup** - Player's heartfelt paragraph hard-cut by "5 Sovs. Next." — endlessly captionable
+2. **The Deflection Popup** - Player's heartfelt paragraph hard-cut by "5 SOVS. Next." — endlessly captionable
 3. **The Single Nod** - The rarest approval animation in the game, screenshot-raced by completionists
 4. **The Exception** - Free pretzel, café directions, ambient silence — the whole internet says "he DOES care"
 5. **The Empty Ketchup Slot** - Standards as level design
-6. **The 10 Sovs Camera Fee** - Chadwick paying a vendor for the right to make content about him not caring
+6. **The 10 SOVS Camera Fee** - Chadwick paying a vendor for the right to make content about him not caring
 
 ### Quote Potential:
 - "Mustard helps. The yellow one."
@@ -596,7 +596,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - "I sell pretzels. That's the story."
 - "Café's down the street. This is a pretzel stand."
 - "They want me to care. I want them to have a good pretzel. We compromise."
-- "Camera costs 10 Sovs."
+- "Camera costs 10 SOVS."
 - "...harsh but fair, honestly."
 
 ---
@@ -649,11 +649,11 @@ assets/sprites/locations/publandia/knot_your_problem/
 ### Before Submitting Assets:
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly (Industrial Steel #71797E, Pretzel Brown #C4A747, Night Black #1C1C1C, Mustard Yellow #FFDB58)
-- [ ] All five signs readable at mobile scale — "I Don't Want To Hear About It" must land as a punchline from queue distance
+- [ ] All five signs readable at gameplay scale — "I Don't Want To Hear About It" must land as a punchline from queue distance
 - [ ] The Empty Ketchup Slot reads as deliberate editorial absence, not missing art
 - [ ] The Exception assets (free pretzel, café point, softened portrait) feel visually distinct from every paid transaction
 - [ ] Sodium Aura is subtle enough to be a hidden mechanic, present enough to be found
-- [ ] Accessibility visual alternatives included for all audio cues (beep, cash box, napkin grab, "5 Sovs" stinger, quick-exchange sound)
+- [ ] Accessibility visual alternatives included for all audio cues (beep, cash box, napkin grab, "5 SOVS" stinger, quick-exchange sound)
 - [ ] File naming follows snake_case convention
 - [ ] Master files preserve layer structure for future edits
 
@@ -661,7 +661,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 - [ ] Satirical theme (drunk oversharing vs. professional indifference) is clear throughout all assets
 - [ ] Hidden interactions discoverable: sodium conspiracy shimmer, camera fee, bonus portion, cold pretzel gag
 - [ ] Performance optimized (12-particle cap, 8 draw calls, single-NPC animation, static backdrop)
-- [ ] Touch zone sizing considered (44px minimum — menu rows, order/pay/leave buttons, condiment and Eoin hotspots compliant)
+- [ ] Click zone sizing considered (44px minimum — menu rows, order/pay/leave buttons, condiment and Eoin hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (letter-tagged mustards, icon-coded salts, silhouette-distinct status icons)
 - [ ] Social media viral potential maximized (deflection popup framing, single-nod capture window, sign compositions)
 
@@ -676,10 +676,10 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Satirical Targets Appropriate | ✅ | Punches at drunk oversharers and parasocial customers, never at service workers' actual struggles |
 | Seedy Underbelly Present | ✅ | The Sodium Conspiracy — salt drives thirst drives drinking drives pretzels; the cart is pub-adjacent on purpose |
 | Gameplay Value Established | ✅ | HP restoration shop, efficiency bonuses, Bravado economy, 4 quests, 6 achievements |
-| Technical Feasibility | ✅ | 6 sheets + 1 supplemental, no shaders, walk-up cart with no interior, mobile optimization documented |
+| Technical Feasibility | ✅ | 6 sheets + 1 supplemental, no shaders, walk-up cart with no interior, desktop performance budget documented |
 | Performance Budget | ✅ | 60 FPS target, 8 draw calls, ~9 MB actual vs. 20 MB budget, 12-particle cap |
-| Accessibility Features | ✅ | Visual cues for all five critical sounds, static-motion variants, high-contrast set, 44px touch targets |
-| No Crypto Elements | ✅ | Absent — Eoin accepts exact change in Sovs and nothing else. PASS |
+| Accessibility Features | ✅ | Visual cues for all five critical sounds, static-motion variants, high-contrast set, 44px click targets |
+| No Crypto Elements | ✅ | Absent — Eoin accepts exact change in SOVS and nothing else. PASS |
 | Social Media Integration | ✅ | Six screenshot moments and seven quotable lines identified, deflection popup built to be shared |
 
 ---

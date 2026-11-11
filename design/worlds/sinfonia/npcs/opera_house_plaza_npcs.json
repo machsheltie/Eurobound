@@ -249,7 +249,7 @@
       "key_quotes": {
         "greeting": "A table for... three? Americans? Perhaps... outside. Far outside.",
         "during_chase": "THAT HORSE JUST ATE AN 85 SOVS SACHERTORTE! THE WHOLE ONE! WHO IS RESPONSIBLE?!",
-        "post_chase": "You. You are responsible. 340 Sovs in damages. The tablecloths alone!",
+        "post_chase": "You. You are responsible. 340 SOVS in damages. The tablecloths alone!",
         "if_unpaid": "You are banned. BANNED. I have your photographs."
       }
     },
@@ -295,7 +295,7 @@
       
       "key_quotes": {
         "approach": "*whispers* You want tickets? Tonight's Magic Flute? Very exclusive. Very... available.",
-        "price_reveal": "400 Sovs. For the experience. Box seats. Maybe. Definitely seats.",
+        "price_reveal": "400 SOVS. For the experience. Box seats. Maybe. Definitely seats.",
         "if_challenged": "Face value? What is 'face value' when you are seeing CULTURE?"
       },
       

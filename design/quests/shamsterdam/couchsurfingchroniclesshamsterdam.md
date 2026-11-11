@@ -33,14 +33,14 @@
 
 ### **Enhanced Payoff Types:**
 - **Positive:** +Charm, +Bravado, or minor items
-- **Negative:** Status effects (Hungover, Bicycle Trauma, Canal Confusion, Contact High, Dutch Directness), minor Sovs loss, fines, or gag items
+- **Negative:** Status effects (Hungover, Bicycle Trauma, Canal Confusion, Contact High, Dutch Directness), minor SOVS loss, fines, or gag items
 - **Mixed:** Flavor collectibles, achievement progress, or FlagMan reference items
 
 ### **Shamsterdam-Specific Rule — Everything Is Permitted and Everything Is Logged**
 Publandia hosts say things. Debaucheryville hosts take things. Sinfonia hosts invoice things. **Shamsterdam hosts do all three and then write it in a book.** No Shamsterdam couchsurf is ever refused on moral grounds by anybody — there are no moral grounds left in this city, they were used up in 1987 — but every single one generates **a ledger number, a logbook line, a route amendment, a fee, or an exhibit reference**, and every one of those is correct and permanent.
 
 ### **Shamsterdam-Specific Rule — The Bikes Do Not Stop**
-Every walk of shame in this file crosses at least one bike lane. **Bicycle Trauma** is applied on every morning-after exit, all five entries, no exceptions, and it stacks. Standing in a bike lane is 95 Sovs. Officer van den Berg does not care whose flat you just left, or whose container, or whose boat.
+Every walk of shame in this file crosses at least one bike lane. **Bicycle Trauma** is applied on every morning-after exit, all five entries, no exceptions, and it stacks. Standing in a bike lane is 95 SOVS. Officer van den Berg does not care whose flat you just left, or whose container, or whose boat.
 
 ---
 
@@ -94,7 +94,7 @@ She makes coffee on a camping stove **outside, in the rain, under nothing**, and
 
 **Result:**
 - **Full HP restore + Hungover + Bicycle Trauma** (the wharf road is a bike lane and it is also the only road)
-- **-0 Sovs.** She charges nothing, for anything, ever. She refuses money in a way that makes accepting it back awkward
+- **-0 SOVS.** She charges nothing, for anything, ever. She refuses money in a way that makes accepting it back awkward
 - **"Logged"** — permanent. **Any item lost, dropped, confiscated, stolen or pickpocketed anywhere in Shamsterdam for the rest of the game auto-returns to the party's inventory within 24 in-game hours**, with a strip of masking tape and a number on it. No NPC explains this. She does not know she is doing it as a service; she is doing the ledger
 - **+15 Bravado**
 - **Collectible: A Strip Of Masking Tape Reading 14092** — permanently affixed to Chadwick's phone in all inventory art for the rest of the game. Cannot be removed by any means
@@ -110,7 +110,7 @@ She makes coffee on a camping stove **outside, in the rain, under nothing**, and
 💬 CryptoBro69: "she pulled ur PHONE out?? bro get her on the guild. imagine the RECOVERY RATE"
 ```
 
-**Location-Specific Roasting:** A city built on water, which has been dropping its property into that water for four hundred years, cleaned nightly by one woman with a rope and a dinner plate who has never taken a Sov, never kept an object, and never closed a door. **The bros pull the rope three times each, get a phone back, and conclude the canal chose them.** Fourteen thousand and ninety-one other things disagree, in pencil, in a book, on a wharf, in the rain.
+**Location-Specific Roasting:** A city built on water, which has been dropping its property into that water for four hundred years, cleaned nightly by one woman with a rope and a dinner plate who has never taken a SOV, never kept an object, and never closed a door. **The bros pull the rope three times each, get a phone back, and conclude the canal chose them.** Fourteen thousand and ninety-one other things disagree, in pencil, in a book, on a wharf, in the rain.
 
 **Satire Angle:** Three men whose entire trip is an exercise in acquisition — merchandise, photographs, numbers, stories, NFTs, wristbands — spend a night with a woman who has recovered fourteen thousand objects and **kept absolutely none of them**, and take away from it a piece of masking tape they will never remove. She is not looking for treasure and she is not doing a public service. **She is looking for one thing, and she has not found it, and the game never tells you what it is.**
 
@@ -161,7 +161,7 @@ She makes coffee on a camping stove **outside, in the rain, under nothing**, and
 **Official Profile:** **owed — flagged.**
 **Location:** Stops One through Eleven, twice daily, rain or shine → **Stop Six**, which is where she lives, which is on the tour
 
-**Where You Meet Her:** Under a laminated sign, holding a laminated route map, wearing a laminated badge that says **TOURMISTRESS**, which is a rank she conferred on herself and has printed four hundred times. She operates **The Heartbreak Mile**: a registered, ticketed, ninety-minute commercial walking tour of the doorways of her own eleven ex-boyfriends. 22 Sovs. Group discount. Two departures a day. Four point six stars from nine hundred reviews. It is her entire income and has been for six years.
+**Where You Meet Her:** Under a laminated sign, holding a laminated route map, wearing a laminated badge that says **TOURMISTRESS**, which is a rank she conferred on herself and has printed four hundred times. She operates **The Heartbreak Mile**: a registered, ticketed, ninety-minute commercial walking tour of the doorways of her own eleven ex-boyfriends. 22 SOVS. Group discount. Two departures a day. Four point six stars from nine hundred reviews. It is her entire income and has been for six years.
 
 **She lives at Stop Six.** Stop Six is on the tour. Twice a day she stands in the street and delivers eleven minutes of commentary about her own front window, in the third person, to twenty paying strangers, and then goes upstairs.
 
@@ -170,7 +170,7 @@ She makes coffee on a camping stove **outside, in the rain, under nothing**, and
 > ### **THE RULE: THE TOUR NEVER CROSSES A BRIDGE.**
 > Eleven stops, ninety minutes, one canal, and **the route does not cross water at any point.** Where crossing would take forty seconds she walks the group two kilometres around, at pace, narrating, and nobody on the tour ever queries it because it says **BRIDGE-FREE** on the leaflet in bold, directly under **STEP-FREE**, as though the two are the same category of information. **She has never explained it. She does not explain it here. She does not explain it in any of the four states.**
 
-**The Invitation** *(21:40, Stop Eleven, rain, the group dispersing, twenty-two Sovs each already taken):*
+**The Invitation** *(21:40, Stop Eleven, rain, the group dispersing, twenty-two SOVS each already taken):*
 > **Willemijn:** "That is the tour. Reviews are appreciated. Four point six is very good; five is suspicious; I do not want five."
 > **Lord Pilsner:** "That was AMAZING. So which one was the—"
 > **Bradley:** *(physically intervening)* "He's not asking that."
@@ -194,13 +194,13 @@ Then the flat line of the scene, delivered while she counts the float:
 > **Willemijn:** "You are not stop twelve." *(counting)* "Stop twelve would be a doorway I have to walk past twice a day for the rest of my working life. That is a commitment and I do not make it lightly and I have made it eleven times." *(she bands the notes)* "You are a **point of interest.** You get pointed at. From this side. Briefly."
 
 **Enhanced Bro Delusion Dialogue:**
-- **Lord Pilsner:** *"I'm on the TOUR, boys. I'm a landmark. There are people paying twenty-two Sovs to be told about me."*
+- **Lord Pilsner:** *"I'm on the TOUR, boys. I'm a landmark. There are people paying twenty-two SOVS to be told about me."*
 - **Chadwick:** *"She did a whole broadcast out the window with us in the bed. That's a livestream. That's what a livestream IS."*
 - **Bradley:** *"She said we're a point of interest, not a stop."* *(beat)* *"I've looked at the leaflet. There's a difference. It's in the key."*
 
 **Result:**
 - **Full SP restore + Hungover + Bicycle Trauma**
-- **-66 Sovs** — three tickets at full price, no discount, card machine, correct
+- **-66 SOVS** — three tickets at full price, no discount, card machine, correct
 - **"Pointed At From The Bridge"** — permanent. **The party is a named point of interest on a commercial walking tour for the rest of the game.** Twice a day, in any Shamsterdam exterior zone, a group of twenty tourists may stop and look at them. No dialogue fires. They simply look, and then move on, and the bros wave
 - **Permanent: bridge-free route knowledge.** A shortcut network unlocks across the canal ring that never crosses water. It is objectively worse. The party uses it constantly
 - **+20 Bravado**
@@ -216,7 +216,7 @@ Then the flat line of the scene, delivered while she counts the float:
 💬 CryptoBro69: "u PAID to be told about her exes?? bro thats not a tour thats a rug and u tipped"
 ```
 
-**Location-Specific Roasting:** A city that sells itself by the doorway, the canal, the ninety-minute slot and the laminated map — and one operator who has cut out the middleman entirely and monetised her own romantic history at 22 Sovs a head, twice daily, with a certificate of excellence in a plastic wallet and a route that will not go near a bridge. **She is the single most successful business in the Chronicles.** The bros pay full price, complete all eleven stops in the rain, and believe the twelfth was them.
+**Location-Specific Roasting:** A city that sells itself by the doorway, the canal, the ninety-minute slot and the laminated map — and one operator who has cut out the middleman entirely and monetised her own romantic history at 22 SOVS a head, twice daily, with a certificate of excellence in a plastic wallet and a route that will not go near a bridge. **She is the single most successful business in the Chronicles.** The bros pay full price, complete all eleven stops in the rain, and believe the twelfth was them.
 
 **Satire Angle:** Three men who narrate themselves constantly, to anybody, for free, meet a woman who narrates herself twice a day for money, professionally, to twenty paying strangers, out of her own window, with them in the room. **They think they got backstage. They got the eleven-o'clock.**
 
@@ -392,7 +392,7 @@ Then the flat line of the scene, from Sietske, entirely level, while she writes:
 
 **Where You Meet Her:** On the deck of a houseboat named ***Vooruitgang*** — *Progress* — **which she won in a divorce settlement in 2011 and which has not moved since.** It has no engine. It has never had an engine in her ownership. The engine was the part of the settlement she did not get, and she does not raise this and neither does anybody else.
 
-She holds a licence. She sells **private canal cruises at 30 Sovs a head, ninety minutes, refreshments included.** The cruise does not go anywhere. It is ninety minutes of genuinely excellent, genuinely accurate, professionally delivered commentary on the canal ring, given from a moored vessel, while the canal ring goes past on its own. **Reviews are outstanding.** Nobody has ever asked for a refund. Two people in fourteen years have noticed, and both of them tipped extra.
+She holds a licence. She sells **private canal cruises at 30 SOVS a head, ninety minutes, refreshments included.** The cruise does not go anywhere. It is ninety minutes of genuinely excellent, genuinely accurate, professionally delivered commentary on the canal ring, given from a moored vessel, while the canal ring goes past on its own. **Reviews are outstanding.** Nobody has ever asked for a refund. Two people in fourteen years have noticed, and both of them tipped extra.
 
 Below decks: full navigational charts of a canal system she cannot enter. A ship's bell, polished. A logbook. **Four thousand and eleven entries, all identical: `MOORED. FINE.`**
 
@@ -430,7 +430,7 @@ Then the flat line of the scene, delivered while she squares the charts:
 
 **Result:**
 - **Full HP/SP restore + Hungover + Bicycle Trauma** (the wharf road; there is always a wharf road)
-- **-90 Sovs** — three cruises at full price. Refreshments included. Correct
+- **-90 SOVS** — three cruises at full price. Refreshments included. Correct
 - **"Sea Legs"** — permanent. **Purely cosmetic. Zero mechanical effect of any kind.** It appears on the character sheet. All three bros reference it for the rest of the game as though it does something
 - **Permanent: mooring access.** The *Vooruitgang* is a free rest point in Shamsterdam forever. **Life jackets are worn below decks and the game enforces it** — a cosmetic overlay applies while the party is below decks and cannot be removed there
 - **+10 Bravado**
@@ -506,7 +506,7 @@ Then the flat line of the scene, delivered while she squares the charts:
 > ### **THE RULE: SHE DOES NOT GO THROUGH THE TUNNEL.**
 > Given the choice between the pedestrian tunnel and an eleven-minute detour, **she takes the eleven minutes, every time, without slowing and without comment.** She has never explained it. Nobody has ever got an explanation out of her. **She does not explain it in any of the four states and no NPC in the game explains it either.**
 
-**Meeting Requirements (canon, and it is the only gate in the Chronicles that is a fitness check):** Keep up for four streets. That is the whole gate. **Do not ask her to slow down** — asking is not refused, it is simply not heard, because she is eleven metres ahead. And do not stand in the bike lane at any point, because Officer van den Berg is on the canal ring and it is 95 Sovs.
+**Meeting Requirements (canon, and it is the only gate in the Chronicles that is a fitness check):** Keep up for four streets. That is the whole gate. **Do not ask her to slow down** — asking is not refused, it is simply not heard, because she is eleven metres ahead. And do not stand in the bike lane at any point, because Officer van den Berg is on the canal ring and it is 95 SOVS.
 
 *Bradley keeps up for four streets. Bradley is destroyed by it and does not say so. Lord Pilsner keeps up for two and a half and describes this, later, as "pacing myself." Chadwick films the first street and then has to choose between filming and breathing.*
 
@@ -550,7 +550,7 @@ Then the flat line of the scene, which she delivers on her way out of her own fr
 ```
 💬 Rikst: "You may borrow a bicycle. I have six. Two are in the canal."
 💬 Rikst: "Not the green one."
-💬 Officer van den Berg: "95 Sovs. Bike lane. You were standing still IN it. Standing still is worse."
+💬 Officer van den Berg: "95 SOVS. Bike lane. You were standing still IN it. Standing still is worse."
 💬 Group Chat Leak: "three americans RAN after a bike on the ring last night 😭 they were RUNNING"
 💬 CryptoBro69: "u chased a woman on a BIKE?? on FOOT?? bro at ur — bro thats just bad strategy"
 ```
@@ -585,12 +585,12 @@ Then the flat line of the scene, which she delivers on her way out of her own fr
 > **Chadwick:** "No."
 > **Lord Pilsner:** "No."
 > **Bradley:** "...No."
-> *(Officer van den Berg fines them 95 Sovs. All three of them are standing in the bike lane. They have been standing in the bike lane for ninety seconds and none of them noticed, because they were listening.)*
+> *(Officer van den Berg fines them 95 SOVS. All three of them are standing in the bike lane. They have been standing in the bike lane for ninety seconds and none of them noticed, because they were listening.)*
 
 > ### **BINDING — NEVER RESOLVE THE SECOND HALF**
 > The second half of that sentence is **never** written, never subtitled, never referenced by any NPC, never obtainable through any dialogue option, item, achievement, ICQ message or later encounter, in any state, in any city, ever. It is not a puzzle and there is no reward. **It is inaudible, permanently.** If a future pass "reveals" it, that pass is wrong.
 
-**Bros' rationalisation** *(at 95 Sovs, in a bike lane, being rung at)*:
+**Bros' rationalisation** *(at 95 SOVS, in a bike lane, being rung at)*:
 - **Lord Pilsner:** *"She said it wasn't personal. That's her exact words. That's a woman who's got something ELSE going on."*
 - **Chadwick:** *"She explained herself the whole way over the bridge. Fully explained it. Comprehensively. We just couldn't hear it."*
 - **Bradley:** *"We don't know what she said."* *(beat)* *"We are never going to know what she said."*
@@ -697,7 +697,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 - **"Known To The Street"** — Saskia has them in the book. She does not approach them, does not speak to them, and **never mentions their age.** She simply has odds on them and the odds are posted
 - **They become a fixed point on a commercial route.** Twenty people, twice a day, look at them and move on
 - **The Stay Away Campaign gets personal** — the city's discouragement ads begin appearing on surfaces the party has recently touched. Nobody is doing this on purpose. It is a media buy
-- **Officer van den Berg stops asking whether they were in the bike lane** and moves directly to the 95 Sovs
+- **Officer van den Berg stops asking whether they were in the bike lane** and moves directly to the 95 SOVS
 - **Enhanced ICQ spam** targeting obvious desperation
 - **Price inflation** because they are "rich Americans" in matching glow-in-the-dark shirts
 
@@ -718,10 +718,10 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 ```
 💬 Group Chat Leak: "POINT FIVE IS LAMINATED. she LAMINATED it 😭😭"
 💬 Venmo Request: "one (1) life jacket. returned. postage."
-💬 Tony420: "last stop bro. got everything. 50 Sovs. 40. bro. 40 Sovs"
+💬 Tony420: "last stop bro. got everything. 50 trash. 40. bro. 40 trash"
 💬 CryptoBro69: "whole continent and u ended up in a SHIPPING CONTAINER. worse ROI than my NFTs lol"
 💬 Unknown Number: "the I SHAMSTERDAM sign was removed years ago. you photographed the plinth. all three of you."
-💬 Officer van den Berg: "95 Sovs. Bike lane. Again. This is the fourth."
+💬 Officer van den Berg: "95 SOVS. Bike lane. Again. This is the fourth."
 ```
 
 ### **🎭 FlagMan Integration System**
@@ -750,7 +750,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 
 ### **The Heartbreak Mile Ecosystem:**
 - **Bro Delusion:** They got backstage on a tour, and became stop twelve.
-- **Reality:** A registered ticketed business, 22 Sovs a head, two departures daily, ninety minutes, eleven doorways, four point six stars from nine hundred reviews, a route that will not cross a bridge and a leaflet that lists that fact under accessibility. The guide lives at Stop Six and delivers eleven minutes about her own window to twenty strangers twice a day. **They are a point of interest. It is a small triangle in the key.**
+- **Reality:** A registered ticketed business, 22 SOVS a head, two departures daily, ninety minutes, eleven doorways, four point six stars from nine hundred reviews, a route that will not cross a bridge and a leaflet that lists that fact under accessibility. The guide lives at Stop Six and delivers eleven minutes about her own window to twenty strangers twice a day. **They are a point of interest. It is a small triangle in the key.**
 - **Encountered here:** Tourmistress Willemijn, the eleven-o'clock, the four-o'clock, twenty paying customers, a duck (2019, first amendment)
 
 ### **The Canal Ring Ecosystem:**
@@ -760,7 +760,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 
 ### **The Mooring Ecosystem:**
 - **Bro Delusion:** A private canal cruise with an actual captain, and by the end of it Lord Pilsner had his sea legs.
-- **Reality:** A houseboat won in a 2011 divorce, engine not included, moored at the same wharf ever since, sold as a ninety-minute private cruise at 30 Sovs a head with genuinely excellent commentary and outstanding reviews. Current charts of a canal system it will never enter. A logbook with four thousand and eleven identical entries. Life jackets below decks, mandatory, enforced. **Two people in fourteen years have noticed it does not move. Both tipped extra.**
+- **Reality:** A houseboat won in a 2011 divorce, engine not included, moored at the same wharf ever since, sold as a ninety-minute private cruise at 30 SOVS a head with genuinely excellent commentary and outstanding reviews. Current charts of a canal system it will never enter. A logbook with four thousand and eleven identical entries. Life jackets below decks, mandatory, enforced. **Two people in fourteen years have noticed it does not move. Both tipped extra.**
 - **Encountered here:** Captain Noortje, the *Vooruitgang*, the bell, the bucket, four thousand and eleven entries
 
 ### **The Ring Road Ecosystem:**
@@ -785,7 +785,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 - **Achievement Unlocked:** 🏆 **"Fourteen Thousand and Ninety-Two"** — *The canal did not choose you. You were next.*
 - **Achievement Unlocked:** 🏆 **"Point Five"** — *A permanent amendment to a safety briefing. It is laminated. She only laminates things that are permanent.*
 - **Achievement Unlocked:** 🏆 **"Exhibit F"** — *Entered into evidence in an eleven-year argument. Thirty-one pages. Four of them yours.*
-- **Achievement Unlocked:** 🏆 **"Moored. Fine."** — *Ninety minutes, thirty Sovs, zero metres. Five stars.*
+- **Achievement Unlocked:** 🏆 **"Moored. Fine."** — *Ninety minutes, thirty SOVS, zero metres. Five stars.*
 - **Achievement Unlocked:** 🏆 **"Kept Up (Briefly)"** — *Four streets. On foot. Behind a bicycle. At thirty-nine.*
 - **Achievement Unlocked:** 🏆 **"You Will Know It Because—"** — *Heard the first half. Never heard the second half. Never will.*
 - **Status Update:** 🚲 **Bicycle Trauma** — *applied on every exit in this file. It stacks. The bikes do not stop.*

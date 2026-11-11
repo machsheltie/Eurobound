@@ -33,7 +33,7 @@
 
 ### **Enhanced Payoff Types:**
 - **Positive:** +Charm, +Bravado, +Craic, or minor items
-- **Negative:** Status effects (Hungover, The Fear, Embarrassed, Absolutely Scuttered), minor Sovs loss, or gag items
+- **Negative:** Status effects (Hungover, The Fear, Embarrassed, Absolutely Scuttered), minor SOVS loss, or gag items
 - **Mixed:** Flavor collectibles, achievement progress, or FlagMan reference items
 
 ### **Publandia-Specific Rule — Everything Gets Said Out Loud and Nobody Hears It**
@@ -301,7 +301,7 @@ She makes tea and delivers the flat sentence of the scene, holding the spoon up 
 💬 Fidelma: "Chapter is Wednesday. Chapter is always Wednesday. You are sworn."
 💬 Fidelma: "Apologies are accepted but they are minuted."
 💬 Missed Call: "did one of you take a spoon. there are nine. there should be nine"
-💬 Tony420: "heard u joined a cult. got something 4 cults. its just the normal stuff. 50 Sovs"
+💬 Tony420: "heard u joined a cult. got something 4 cults. its just the normal stuff. 50 ponz"
 💬 CryptoBro69: "SECRET SOCIETY?? bro get me in. i'll bring a DAO. bro. bro the DAO IS the society"
 ```
 
@@ -488,7 +488,7 @@ She makes coffee that is deliberately, researchedly bad, and delivers the flat l
 **Result:**
 - **HP restore + Hungover** (the bad coffee is researched; it is exactly as bad as it was meant to be)
 - **"Primary Source"** — permanent. **A new dialogue option appears anywhere in Publandia in which a bro states a confident fact about America and is corrected, accurately, by a local.** It fires on a 40% chance and the bros never adjust
-- **-0 Sovs.** She pays for everything. She has a research budget. It is her own money and she says so
+- **-0 SOVS.** She pays for everything. She has a research budget. It is her own money and she says so
 - **Collectible: A Transcript — Ninety-One Questions, Nine Hours, Fourteen Usable Words** — the fourteen are highlighted. Eleven of them are "like"
 - **Gag Item: A Pennant For A Team That Does Not Exist** — she gives it to them. They cannot tell. It is displayed on the character sheet as a genuine memento
 - **+5 Bravado, -5 Charm**
@@ -662,7 +662,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "Sworn in. Can't say more. Honestly can't."
 ```
 💬 Group Chat Leak: "the americans are on the SEATING PLAN 😭 in PEN"
 💬 Venmo Request: "one (1) spoon. damp. postage."
-💬 Tony420: "heard u been busy in publandia. got something 4 the cobbles. 50 Sovs"
+💬 Tony420: "heard u been busy in publandia. got something 4 the cobbles. 50 stag"
 💬 CryptoBro69: "ur hookup rate in a city with FOUR PUBS PER PERSON = worse ROI than my NFTs lol"
 💬 Unknown Number: "you're minuted. you'll always be minuted. that's what minutes are"
 ```

@@ -384,7 +384,7 @@
           "time": 11,
           "action": "dialogue",
           "speaker": "herr_ober",
-          "text": "340 Sovs. You will pay this. Now. Or I call the Polizei."
+          "text": "340 SOVS. You will pay this. Now. Or I call the Polizei."
         },
         {
           "time": 14,
@@ -401,7 +401,7 @@
               }
             },
             {
-              "text": "Here's 340 Sovs right now.",
+              "text": "Here's 340 SOVS right now.",
               "response_type": "immediate_payment",
               "requirement": {"Sov": 340},
               "result": {
@@ -480,7 +480,7 @@
           "time": 9,
           "action": "dialogue",
           "speaker": "herr_ober",
-          "text": "170 Sovs from you. 170 Sovs from... these Americans. GO. Catch the horse. PAY ME."
+          "text": "170 SOVS from you. 170 SOVS from... these Americans. GO. Catch the horse. PAY ME."
         }
       ]
     },
@@ -533,14 +533,14 @@
           "time": 0.5,
           "action": "dialogue",
           "speaker": "herr_ober",
-          "text": "You. OUT. Until the [remaining_debt] Sovs is paid, you are not welcome."
+          "text": "You. OUT. Until the [remaining_debt] SOVS is paid, you are not welcome."
         },
         {
           "time": 2,
           "action": "dialogue_choice",
           "options": [
             {
-              "text": "Here's [amount] Sovs.",
+              "text": "Here's [amount] SOVS.",
               "response_type": "partial_payment",
               "interface": "payment_slider"
             },

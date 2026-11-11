@@ -131,7 +131,7 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 
 **Dialogue Samples**:
 - *Greeting*: "American? British? ...Australian. Okay, let me get the reinforced form."
-- *On insurance*: "Extra insurance is 20 Sovs. Yes, 20 Sovs seems like a lot until you see how much the bike costs."
+- *On insurance*: "Extra insurance is 20 SOVS. Yes, 20 SOVS seems like a lot until you see how much the bike costs."
 - *On cycling*: "Have you ever ridden a bike before? Like, in traffic? Where people want you dead?"
 - *Photo request*: "Just a quick photo for our records. Smile! ...That's the face they all make."
 
@@ -161,21 +161,21 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 
 ### Bike Rental Tiers
 
-**Basic Rental — 15 Sovs/day**
+**Basic Rental — 15 SOVS/day**
 - Standard orange tourist bike
 - Lock included (combination you'll forget)
 - Basket (for stolen items)
 - No helmet (locals don't wear them)
 - Includes: One free "I told you so" from Dirk
 
-**Premium Rental — 25 Sovs/day**
+**Premium Rental — 25 SOVS/day**
 - Slightly better brakes
 - Working bell (they'll ignore it anyway)
 - Upgraded lock
 - Map holder (map not included)
 - Includes: Dirk's reluctant respect
 
-**"Survivor" Package — 40 Sovs/day**
+**"Survivor" Package — 40 SOVS/day**
 - Sturdiest bike in the fleet
 - Reinforced frame (survived 12 canal recoveries)
 - Reflective tape everywhere
@@ -188,20 +188,20 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 - Covers theft (with police report)
 - Does NOT cover: damage, canal, user error, Dutch cyclists
 
-**Standard Insurance — 10 Sovs**
+**Standard Insurance — 10 SOVS**
 - Covers theft and minor damage
 - "Minor" defined by Dirk, not you
 - Does NOT cover: canal, major damage, acts of cyclist
 
-**Premium Insurance — 20 Sovs**
+**Premium Insurance — 20 SOVS**
 - Covers theft, damage, and "incidents"
 - Includes one free canal recovery attempt
 - Does NOT cover: total destruction, fire, "that thing from last Tuesday"
 
-**Platinum Insurance — 35 Sovs**
+**Platinum Insurance — 35 SOVS**
 - Covers everything except war and nuclear events
 - Unlimited canal recoveries
-- Damage waiver up to 500 Sovs
+- Damage waiver up to 500 SOVS
 - Includes: Opa Cees's blessing (minor navigation buff)
 - **Note**: Nobody has ever needed to USE the Platinum tier. The people who buy it are too cautious to crash.
 
@@ -209,26 +209,26 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 
 | Item | Cost | Effect |
 |------|------|--------|
-| Helmet | 5 Sovs/day | +10% Collision Survival (marks you as tourist) |
-| Phone Mount | 3 Sovs/day | GPS visible while cycling (distraction risk) |
-| Basket Liner | 2 Sovs | Prevents small items falling through |
-| High-Visibility Vest | 4 Sovs/day | +20% Visibility, -30% Dignity |
-| "Tourist Escort" Guide | 50 Sovs/hour | Guided cycling through safe routes |
+| Helmet | 5 SOVS/day | +10% Collision Survival (marks you as tourist) |
+| Phone Mount | 3 SOVS/day | GPS visible while cycling (distraction risk) |
+| Basket Liner | 2 SOVS | Prevents small items falling through |
+| High-Visibility Vest | 4 SOVS/day | +20% Visibility, -30% Dignity |
+| "Tourist Escort" Guide | 50 SOVS/hour | Guided cycling through safe routes |
 
 ### Repair Services
 
 | Service | Cost | Notes |
 |---------|------|-------|
-| Flat Tire Repair | 8 Sovs | While you wait |
-| Brake Adjustment | 12 Sovs | "You should have had this done BEFORE" |
-| Chain Fix | 10 Sovs | Grease on your clothes guaranteed |
-| Bent Wheel Realignment | 25 Sovs | "How did you even—never mind" |
+| Flat Tire Repair | 8 SOVS | While you wait |
+| Brake Adjustment | 12 SOVS | "You should have had this done BEFORE" |
+| Chain Fix | 10 SOVS | Grease on your clothes guaranteed |
+| Bent Wheel Realignment | 25 SOVS | "How did you even—never mind" |
 | Full Damage Assessment | Free | But the news is never good |
 
 ### Deposit System
-- **Standard Deposit**: 150 Sovs (or credit card hold)
-- **Bike Replacement Cost**: 350 Sovs
-- **Canal Recovery Fee**: 75 Sovs (if found) / 350 Sovs (if not)
+- **Standard Deposit**: 150 SOVS (or credit card hold)
+- **Bike Replacement Cost**: 350 SOVS
+- **Canal Recovery Fee**: 75 SOVS (if found) / 350 SOVS (if not)
 - **"Creative Damage" Assessment**: Variable, at Dirk's discretion
 
 ---
@@ -248,7 +248,7 @@ When you rent a bike, you **become part of the traffic** instead of trying to cr
 - Feel like a local (briefly)
 
 **Disadvantages**:
-- 15-40 Sovs/day cost
+- 15-40 SOVS/day cost
 - Damage risk (random encounter checks)
 - Theft risk when parked
 - Must return bike or forfeit deposit
@@ -260,14 +260,14 @@ Every cycling session has a % chance of damage event:
 
 | Event | Probability | Damage Cost | Comedy |
 |-------|-------------|-------------|--------|
-| Tram Track Accident | 15% | 25 Sovs | Wheel caught in track |
-| Tourist Collision | 10% | 15 Sovs | Hit another rental tourist |
-| Local "Lesson" | 8% | 30 Sovs | "Taught" traffic rules physically |
-| Brake Failure Moment | 5% | 20 Sovs | Near miss, brake damage |
-| Basket Theft | 12% | 10 Sovs | Items stolen from basket |
-| Canal Proximity | 5% | 75-350 Sovs | Varying degrees of wet |
-| Flat Tire | 20% | 8 Sovs | Most common, least dramatic |
-| Nothing | 25% | 0 Sovs | Miraculous survival |
+| Tram Track Accident | 15% | 25 SOVS | Wheel caught in track |
+| Tourist Collision | 10% | 15 SOVS | Hit another rental tourist |
+| Local "Lesson" | 8% | 30 SOVS | "Taught" traffic rules physically |
+| Brake Failure Moment | 5% | 20 SOVS | Near miss, brake damage |
+| Basket Theft | 12% | 10 SOVS | Items stolen from basket |
+| Canal Proximity | 5% | 75-350 SOVS | Varying degrees of wet |
+| Flat Tire | 20% | 8 SOVS | Most common, least dramatic |
+| Nothing | 25% | 0 SOVS | Miraculous survival |
 
 **Insurance reduces costs, not probability**
 
@@ -292,7 +292,7 @@ Every cycling session has a % chance of damage event:
 
 **No Return (Lost/Stolen/Canal)**:
 - Full deposit forfeit
-- 350 Sovs replacement fee
+- 350 SOVS replacement fee
 - Police report required for insurance
 - "Gone But Not Forgotten" achievement
 - Photo added to memorial board
@@ -374,7 +374,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 
 **Reward**:
 - "Canal Fisher" achievement
-- 30 Sovs reward
+- 30 SOVS reward
 - One free damage waiver on next rental
 - Opa Cees's blessing (+5% Navigation permanently)
 - Access to "recovered goods" inventory (random cheap items)
@@ -431,7 +431,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 - **Duration**: While on rental bike
 
 **Deposit Anxiety**
-- **Source**: 150 Sovs+ deposit hold
+- **Source**: 150 SOVS+ deposit hold
 - **Effect**: -5% Bravado while rental active
 - **Duration**: Until bike returned
 
@@ -520,15 +520,15 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 ## Economic Integration
 
 ### Currency
-- All transactions in Sovs
+- All transactions in SOVS
 - Credit card holds for deposits
 - Cash discount available (5%)
 
 ### Price Points
-- Budget conscious: Basic rental 15 Sovs + no insurance (risky)
-- Standard tourist: Premium rental 25 Sovs + Standard insurance 10 Sovs = 35 Sovs/day
-- Cautious traveler: Survivor package 40 Sovs + Platinum insurance 35 Sovs = 75 Sovs/day
-- **Most common outcome**: 35 Sovs rental + 25 Sovs average damage = 60 Sovs total
+- Budget conscious: Basic rental 15 SOVS + no insurance (risky)
+- Standard tourist: Premium rental 25 SOVS + Standard insurance 10 SOVS = 35 SOVS/day
+- Cautious traveler: Survivor package 40 SOVS + Platinum insurance 35 SOVS = 75 SOVS/day
+- **Most common outcome**: 35 SOVS rental + 25 SOVS average damage = 60 SOVS total
 
 ### Recurring Revenue
 - Damage fees
@@ -566,7 +566,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 
 ### Crypto Warning
 - [x] NO crypto elements at this location
-- [x] All transactions in Sovs
+- [x] All transactions in SOVS
 - [x] Focus on traditional service industry satire
 
 ---

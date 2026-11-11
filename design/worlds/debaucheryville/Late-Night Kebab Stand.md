@@ -88,44 +88,44 @@
 ### Complete Menu System (Original)
 **All items preserved exactly as specified:**
 
-#### **Gutbuster Wrap** - 6 Sovs
+#### **Gutbuster Wrap** - 6 SOVS
 - **Description**: Monstrous wrap dripping with mystery lamb, pickled chili slaw, dash of existential regret
 - **Effects**: -15 HP, +20% stamina regen for 2 battles
 - **Side Effects**: Can trigger "Greaseburp" in sensitive characters
 - **Strategic Use**: High-risk, high-reward stamina management
 
-#### **"Vampire Slayer" Garlic Fries** - 4 Sovs
+#### **"Vampire Slayer" Garlic Fries** - 4 SOVS
 - **Description**: Fried in week-old oil, garlic sauce so intense it doubles as pepper spray
 - **Effects**: Cures "Hungover" status
 - **Side Effects**: Inflicts "Socially Rejected" for 3 overworld steps
 - **Strategic Use**: Hangover cure with social consequences
 
-#### **EuroMeat Pocket™** - 5 Sovs
+#### **EuroMeat Pocket™** - 5 SOVS
 - **Description**: Suspiciously grey gyro stuffed into soggy microwaved pita
 - **Effects**: +10 HP, +1 Attack, 50% chance to contract "Meat Doubt"
 - **Strategic Use**: Combat boost with uncertainty risk
 
-#### **MegaMix Box (Regret Platter)** - 9 Sovs
+#### **MegaMix Box (Regret Platter)** - 9 SOVS
 - **Description**: Everything on menu crammed into cardboard coffin
 - **Effects**: Random stat boost x2, inflicts one random status (Bloated, Embarrassed, Confused)
 - **Strategic Use**: Ultimate risk/reward gambling with food
 
-#### **Drunken Sauce Shot** - 2 Sovs
+#### **Drunken Sauce Shot** - 2 SOVS
 - **Description**: Pure hot sauce and mayo in plastic thimble
 - **Effects**: Removes "Dazed", but inflicts "Dysentery (Light)" if used more than once in 10 minutes
 - **Strategic Use**: Quick status cure with usage limits
 
-#### **Lambsomnia Special** - 7 Sovs
+#### **Lambsomnia Special** - 7 SOVS
 - **Description**: Spiced lamb with pickled onion and "sleepless tzatziki"
 - **Effects**: Grants "Insomniac Clarity" buff (auto-crit next turn, no healing until next inn)
 - **Strategic Use**: Combat preparation with recovery trade-off
 
-#### **Yogurt Reboot** - 3 Sovs
+#### **Yogurt Reboot** - 3 SOVS
 - **Description**: Tiny cup of warm, expired Balkan yogurt
 - **Effects**: Resets all negative food debuffs, causes uncontrollable farting for 2 minutes
 - **Strategic Use**: Debuff cleanse with embarrassing side effect
 
-#### **Belly Of Chadz** - 6 Sovs
+#### **Belly Of Chadz** - 6 SOVS
 - **Description**: Dense kebab box soaked in three sauces and ego
 - **Effects**: +HP regen while Hungover (10% over 3 turns), 50% chance immediate "Greasy Coma" debuff
 - **Quest Connection**: Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample)

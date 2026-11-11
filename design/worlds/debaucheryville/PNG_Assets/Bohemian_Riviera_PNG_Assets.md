@@ -427,7 +427,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 - Strike icons distinguish filled/unfilled by an X-mark shape, never by red/green fill alone
 - Timer ring depletes with a hatched-pattern wedge in addition to color change
 - The Oakleys Suspicion Meter is already position-based (tilt → nose-tip → removed), fully colorblind-safe by design — keep it UI-free per the quest doc
-- Answer prompt buttons (64px per option) and the GO LIVE button (96x64) meet the 44px minimum touch target
+- Answer prompt buttons (64px per option) and the GO LIVE button (96x64) meet the 44px minimum click target
 
 ---
 
@@ -523,7 +523,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 
 ### Quote Potential:
 - "NO DIVING (SERIOUSLY, IT'S 40cm)"
-- "Fifty Sovs for the shower. Forty if you go now."
+- "Fifty SOVS for the shower. Forty if you go now."
 - "Three today. Personal best is five. I keep a chart."
 - "Unfortunately, bro."
 
@@ -634,7 +634,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 - [ ] Satirical theme (total cheerful disclosure changing nothing) is clear throughout all assets
 - [ ] Readable-on-approach details intact: delivery receipt, NO DIVING sign, 2003 pallet stamp, broken center latch
 - [ ] Performance optimized (shared bar-TV asset, pre-rendered launches, crowd LOD, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum — answer prompts and GO LIVE button compliant)
+- [ ] Click zone sizing considered (44px minimum — answer prompts and GO LIVE button compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (strike icons, timer ring)
 - [ ] Social media viral potential maximized (triple-rig establishing frame, monitor-flex composition)
 

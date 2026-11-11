@@ -93,12 +93,12 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 
 ### Key Interaction Dialogue — The Tip System
 
-**1 Sov Tip — Basic Hint**:
+**1 SOV Tip — Basic Hint**:
 > *(Plays one more bar, then stops.)*
 > "Follow the sound of the tram. It knows the way."
 > *(Resumes playing mid-phrase.)*
 
-**5 Sovs Tip — Reliable Hint**:
+**5 SOVS Tip — Reliable Hint**:
 > *(Stops. Looks up. The look arrives late.)*
 > "The red signs lie. The emergency signs tell truth."
 > *(Pause.)*
@@ -113,7 +113,7 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 **Player attempts to take from the hat**:
 > *(The accordion stops. Full silence in Zone 3 for the first time. He looks at you. He does not speak. Ten seconds. Then he resumes.)*
 
-### Hidden Quest: The Eternal Busker — Three 5 Sovs Tips Across Three Separate Visits
+### Hidden Quest: The Eternal Busker — Three 5 SOVS Tips Across Three Separate Visits
 
 **Tip 1 (Visit 1) — Navigation**:
 > "The blue tiles were laid by a man who was told to lay blue tiles. Nobody told him where they should go. He did his job. The tiles do not."
@@ -124,7 +124,7 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 > "The tile was whiter. The light was worse. It was better."
 
 **Tip 3 (Visit 3) — The Revelation (Maybe)**:
-> "You have paid me fifteen Sovs across three days. Nobody does that."
+> "You have paid me fifteen SOVS across three days. Nobody does that."
 > *(Pause.)*
 > "You want to know if I am still here in the way you are still here."
 > *(He looks past the player, down the corridor, at nothing.)*
@@ -141,8 +141,8 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 **Player walks off mid-conversation**:
 > *(No reaction. The tune continues. He was going to keep playing either way.)*
 
-**Player tips 1 Sov repeatedly hoping for the 5 Sovs hint**:
-> "One Sov, one hint. It's the same hint. You already have it."
+**Player tips 1 SOV repeatedly hoping for the 5 SOVS hint**:
+> "One SOV, one hint. It's the same hint. You already have it."
 
 ### Callback Dialogue (Return Visits)
 **After the player has successfully navigated the tunnel five times**:
@@ -181,14 +181,14 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 ### Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Basic Hint | 1 Sov | Genuinely worth 1 Sov | Directional audio clue explained ("follow the tram sound") |
-| Reliable Hint | 5 Sovs | Worth the 8 Sovs Marloes charges for the map | Reveals the emergency-sign secret; correct route this visit |
-| Theft Attempt | 0 Sovs | Costs you the music | Willem stops playing, stares 10 seconds. No stat penalty. Somehow worse. |
+| Basic Hint | 1 SOV | Genuinely worth 1 SOV | Directional audio clue explained ("follow the tram sound") |
+| Reliable Hint | 5 SOVS | Worth the 8 SOVS Marloes charges for the map | Reveals the emergency-sign secret; correct route this visit |
+| Theft Attempt | 0 SOVS | Costs you the music | Willem stops playing, stares 10 seconds. No stat penalty. Somehow worse. |
 | Willem's Accordion | Quest reward | Cosmetic | Awarded on quest completion; cannot be played |
 
 ### Hidden Details / Easter Eggs
-- **The 247 SOVS**: Examine the hat at any point in the game. It reads 247 SOVS. Tip him 5 Sovs and examine again: 247 SOVS. This is never acknowledged in dialogue by anyone.
-- **Graffiti cross-reference**: The flashlight-revealed graffiti "Willem knows" (Row 6 of the tunnel tileset) is the only in-world hint that his advice is reliable. Buying Marloes's 6 Sovs flashlight is therefore the cheapest path to trusting him.
+- **The 247 SOVS**: Examine the hat at any point in the game. It reads 247 SOVS. Tip him 5 SOVS and examine again: 247 SOVS. This is never acknowledged in dialogue by anyone.
+- **Graffiti cross-reference**: The flashlight-revealed graffiti "Willem knows" (Row 6 of the tunnel tileset) is the only in-world hint that his advice is reliable. Buying Marloes's 6 SOVS flashlight is therefore the cheapest path to trusting him.
 - **The tune**: Same Dutch folk melody, every visit, no variation. Audio team: the loop must be seamless enough that players in the forums argue about whether it's a loop.
 - **Accordion cosmetic**: Equipping "Willem's Accordion" causes NPCs in other Shamsterdam locations to occasionally glance at it. No dialogue. Just the glance.
 
@@ -199,7 +199,7 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Marloes (Map Vendor, Zone 1) | Professional respect at a distance. She sells the truth; he gives it away for 5 Sovs. Neither has ever mentioned the other. |
+| Marloes (Map Vendor, Zone 1) | Professional respect at a distance. She sells the truth; he gives it away for 5 SOVS. Neither has ever mentioned the other. |
 | Henk (Security, Zone 2) | Henk has never acknowledged Willem exists. Willem has never acknowledged Henk exists. They have shared a tunnel for decades. |
 | Mevrouw Jansen (Red Light exit) | He knows her name and her habits. She has never been underground. |
 | Brewmaster Hendrik (The Wobbly Windmill Brewery) | Referenced only. Willem knows the man talks about barley. How he knows this is not explained. |
@@ -242,8 +242,8 @@ His dialogue does not soften, expand, or become sentimental. What changes is the
 | Animation | Trigger |
 |-----------|---------|
 | pauses_playing | Any dialogue line delivered |
-| looking_up_mysterious | Player tips 1 Sov or 5 Sovs |
-| disappear_reappear | Third 5 Sovs tip (quest stage 3) — one-second gap, accordion audio continues uninterrupted |
+| looking_up_mysterious | Player tips 1 SOV or 5 SOVS |
+| disappear_reappear | Third 5 SOVS tip (quest stage 3) — one-second gap, accordion audio continues uninterrupted |
 | stops_and_stares | Player attempts to take from the hat |
 
 ### Sprite States
@@ -260,11 +260,11 @@ His dialogue does not soften, expand, or become sentimental. What changes is the
 ### Primary Quest: The Eternal Busker
 - **Quest**: The Eternal Busker (`shamsterdam_quest_eternal_busker`)
 - **Role**: Quest Giver (passive — the quest is triggered by player generosity, not by dialogue prompt)
-- **Trigger**: Tip 5 Sovs on three separate tunnel visits. Tips within the same visit do not count. No UI indicates this.
+- **Trigger**: Tip 5 SOVS on three separate tunnel visits. Tips within the same visit do not count. No UI indicates this.
 - **Outcome**: The one-second disappearance. "Willem's Friend" achievement, Willem's Accordion cosmetic, and a permanent +10% navigation bonus in all tunnels game-wide.
 
 ### Quest Gate Function
-Willem gates nothing and blocks nothing. He is the anti-gate: the tunnel's difficulty is a wall, and he is a door that costs 5 Sovs and that most players walk past. The Voetgangerstunnel is fully completable without ever tipping him.
+Willem gates nothing and blocks nothing. He is the anti-gate: the tunnel's difficulty is a wall, and he is a door that costs 5 SOVS and that most players walk past. The Voetgangerstunnel is fully completable without ever tipping him.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -275,8 +275,8 @@ Willem gates nothing and blocks nothing. He is the anti-gate: the tunnel's diffi
 
 ### State Flags Set
 - `willem_met`: boolean
-- `willem_tip_total`: integer (cumulative Sov)
-- `willem_five_sov_visits`: integer (distinct visits with a 5 Sovs tip — quest counter)
+- `willem_tip_total`: integer (cumulative SOV)
+- `willem_five_sov_visits`: integer (distinct visits with a 5 SOVS tip — quest counter)
 - `willem_quest_complete`: boolean
 - `willem_theft_attempted`: boolean (no penalty; used for a single Marloes callback line)
 
@@ -341,7 +341,7 @@ Dutch, older generation, unhurried. Not the clipped urban directness of Marloes 
 ## 📝 Development Notes
 
 - **Willem is the ONLY Willem in the game.** Canon rule: one first name, one character. The Kapsalon Koning owner is Big Wim, the bike rental grandfather is Opa Cees, the Condomerie floor associate is Joost. If a legacy file says "Willem" outside the Voetgangerstunnel, it is a rename that was missed.
-- The 5 Sovs-tip-across-three-visits counter must key on distinct tunnel entries, not a session timer. A player who tips 15 Sovs in one visit gets one hint three times and no quest.
+- The 5 SOVS-tip-across-three-visits counter must key on distinct tunnel entries, not a session timer. A player who tips 15 SOVS in one visit gets one hint three times and no quest.
 - Ghost Flicker must never fire during dialogue. It fires only during idle, only on a fluorescent flicker burst, and only when the player is not looking directly at him (camera-facing check). Denial is the mechanic.
 - Accordion audio is the Zone 3 navigation landmark. It must be mixed to remain audible over the fluorescent hum at all LOD levels, including Low. If the audio is culled, the location's most reliable navigation cue is culled with it.
 - The hat's 247 SOVS is authored as a hard-coded display string, not a running total. Do not wire it to the tip system.
@@ -352,7 +352,7 @@ Dutch, older generation, unhurried. Not the clipped urban directness of Marloes 
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Willem has none. He accepts Sov coins in a hat.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Willem has none. He accepts SOV coins in a hat.
 - [x] **NO automatic crypto assumptions** — a man who has not established what year it is does not have a wallet
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — they think they are patronising the arts; they are buying the correct answer and discarding it
@@ -362,7 +362,7 @@ Dutch, older generation, unhurried. Not the clipped urban directness of Marloes 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is on people who buy hints and then follow a security guard instead
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Willem is a competent musician running a fair, transparent, correctly priced information service
-- [x] Humour is affectionate mockery, not mean-spirited — he is treated with dignity throughout; the ghost ambiguity is wonder, not horror
+- [x] Humour is affectionate mockery — he is treated with dignity throughout; the ghost ambiguity is wonder, not horror
 
 ---
 

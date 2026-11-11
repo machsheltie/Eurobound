@@ -108,7 +108,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Pasties Tray | (64, 160) | 64x32 | Various fillings, all of them correct |
 | Sandwich Stack | (128, 160) | 64x32 | Hearty sandwiches in confident piles |
 | Emergency Provisions (Wrapped) | (192, 160) | 64x32 | Travel-wrapped parcels labeled for emergencies you haven't had yet |
-| Price Tag Set | (256, 160) | 64x32 | 6-40 Sovs range, handwritten, non-negotiable, fair |
+| Price Tag Set | (256, 160) | 64x32 | 6-40 SOVS range, handwritten, non-negotiable, fair |
 | Soup Label Set | (320, 160) | 64x32 | Rotating chalk labels for the daily soup |
 
 ### The Adaptive Menu Board:
@@ -206,7 +206,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 
 ### Technical Notes:
 - Locals Walking Past never path toward the cart — their oblivion is a scripted, permanent gag
-- Maximum one customer NPC rendered at a time on low-end devices (single NPC focus per profile)
+- Maximum one customer NPC rendered at a time on min-spec hardware (single NPC focus per profile)
 
 ---
 
@@ -217,30 +217,30 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 ### Standard Fare (Always Available):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Irish Stew | (0, 0) | 32x32 | 8 Sovs, +40 HP — classic, reliable, warm |
-| Meat Pie | (32, 0) | 32x32 | 10 Sovs, +50 HP — substantial, portable |
-| Sausage Roll | (64, 0) | 32x32 | 6 Sovs, +30 HP — quick, satisfying, take two |
-| Beef & Guinness Pie | (96, 0) | 32x32 | 12 Sovs, +60 HP — premium restoration |
-| Shepherd's Pie | (128, 0) | 32x32 | 10 Sovs, +50 HP — comfort food maximum |
-| Full Irish (Portable) | (160, 0) | 48x32 | 15 Sovs, +80 HP, cures Hungover — the complete recovery |
+| Irish Stew | (0, 0) | 32x32 | 8 SOVS, +40 HP — classic, reliable, warm |
+| Meat Pie | (32, 0) | 32x32 | 10 SOVS, +50 HP — substantial, portable |
+| Sausage Roll | (64, 0) | 32x32 | 6 SOVS, +30 HP — quick, satisfying, take two |
+| Beef & Guinness Pie | (96, 0) | 32x32 | 12 SOVS, +60 HP — premium restoration |
+| Shepherd's Pie | (128, 0) | 32x32 | 10 SOVS, +50 HP — comfort food maximum |
+| Full Irish (Portable) | (160, 0) | 48x32 | 15 SOVS, +80 HP, cures Hungover — the complete recovery |
 | Emergency Provision Parcel | (208, 0) | 48x32 | Wrapped-for-travel inventory icon of the display case parcels |
 
 ### Situational Specials (Appear When Needed):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Pre-Fight Fuel | (0, 32) | 32x32 | 12 Sovs, +50 HP, +10 Attack for one battle — combat approaches |
-| Liquid Fortitude Stew | (32, 32) | 32x32 | 15 Sovs, +60 HP, Fear immunity 30 min — boss area nearby |
-| The Second Wind | (64, 32) | 32x32 | 18 Sovs, +70 HP, +20 SP, removes fatigue — for rough times |
-| Plot Convenience Pie | (96, 32) | 32x32 | 20 Sovs, +80 HP, +5% Luck for 1 hour — think clearly, eat first |
-| The Protagonist's Portion | (128, 32) | 48x48 | 25 Sovs, full HP restore, +all stats 30 min — the big one, Hero Gold plating |
+| Pre-Fight Fuel | (0, 32) | 32x32 | 12 SOVS, +50 HP, +10 Attack for one battle — combat approaches |
+| Liquid Fortitude Stew | (32, 32) | 32x32 | 15 SOVS, +60 HP, Fear immunity 30 min — boss area nearby |
+| The Second Wind | (64, 32) | 32x32 | 18 SOVS, +70 HP, +20 SP, removes fatigue — for rough times |
+| Plot Convenience Pie | (96, 32) | 32x32 | 20 SOVS, +80 HP, +5% Luck for 1 hour — think clearly, eat first |
+| The Protagonist's Portion | (128, 32) | 48x48 | 25 SOVS, full HP restore, +all stats 30 min — the big one, Hero Gold plating |
 
 ### Off-Menu Items (Plot Essential Status Required):
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Narrative Insurance | (176, 32) | 32x32 | 30 Sovs, survive one fatal blow per day — "Just in case." |
-| The Retcon Roast | (208, 32) | 32x32 | 25 Sovs, removes one recent bad decision's consequences — "Everyone deserves a second draft." |
-| Destiny's Dumpling | (176, 64) | 32x32 | 35 Sovs, next critical roll guaranteed — "Some moments matter more." |
-| The Epilogue Entrée | (208, 64) | 32x32 | 40 Sovs, full restore + preview of good ending — "You're going to be fine. I've seen it." |
+| Narrative Insurance | (176, 32) | 32x32 | 30 SOVS, survive one fatal blow per day — "Just in case." |
+| The Retcon Roast | (208, 32) | 32x32 | 25 SOVS, removes one recent bad decision's consequences — "Everyone deserves a second draft." |
+| Destiny's Dumpling | (176, 64) | 32x32 | 35 SOVS, next critical roll guaranteed — "Some moments matter more." |
+| The Epilogue Entrée | (208, 64) | 32x32 | 40 SOVS, full restore + preview of good ending — "You're going to be fine. I've seen it." |
 
 ### Presentation & Shop Dressing:
 | Element | Position | Size | Description |
@@ -248,7 +248,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Suggested Item Glow Ring | (0, 64) | 32x32 | Hero Gold ring framing whatever Deirdre recommends |
 | Plate & Fork Base | (32, 64) | 32x32 | Serving plate underlay for hot items |
 | Takeaway Wrap | (64, 64) | 32x32 | Paper wrap underlay for portable items |
-| Sovs Price Chip | (96, 64) | 32x32 | Price tag overlay for shop rows: numeral above the lettered word `SOVS`. **The symbol is the word — do not draw a currency mark.** ⚠️ 32x32 will not hold a price figure and `SOVS` legibly. Widen to 64x32, or letter only the numeral on the chip and set `SOVS` once in the shop-row column header. |
+| SOVS Price Chip | (96, 64) | 32x32 | Price tag overlay for shop rows: numeral above the lettered word `SOVS`. **The symbol is the word — do not draw a currency mark.** ⚠️ 32x32 will not hold a price figure and `SOVS` legibly. Widen to 64x32, or letter only the numeral on the chip and set `SOVS` once in the shop-row column header. |
 | Suggestion Sparkle Frame 1 | (0, 96) | 32x32 | Gold glint spawn |
 | Suggestion Sparkle Frame 2 | (32, 96) | 32x32 | Glint sweep |
 | Suggestion Sparkle Frame 3 | (64, 96) | 32x32 | Glint peak |
@@ -317,7 +317,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 ### Technical Notes:
 - Suggestion Highlight Frame + Suggested Item Glow Ring (Sheet 5) fire together on approach
 - Fourth-wall wobble is a UI-layer effect only — the world never wobbles, just your certainty about it
-- All buttons and status icons meet the 44px minimum touch target when rendered at UI scale (2x)
+- All buttons and status icons meet the 44px minimum click target when rendered at UI scale (2x)
 
 ---
 
@@ -357,7 +357,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Trigger:** Purchase confirmed
 - **Purpose:** Purchase feedback with warmth — the meal changes hands like a blessing
 - **Audio Sync:** Food served sound on the handoff frame
-- **Performance Optimization:** Steam trail reduced to 1 wisp on low-end devices
+- **Performance Optimization:** Steam trail reduced to 1 wisp on min-spec hardware
 
 ### Suggestion Sparkle:
 - **Duration:** 0.8 seconds, repeats every 6 seconds while unpurchased
@@ -428,7 +428,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - Suggested items are marked by the gold ring AND the sparkle AND the ping badge — shape, motion, and icon, never hue alone
 - The four status icons (Well Fed / Plot Protected / Deirdre's Suggestion / Narrative Nourished) use four distinct silhouettes: bowl, shield, check, laurel
 - Situational vs. off-menu items differ by card shape (rounded tray vs. Knowing Green card back), not color coding
-- Menu rows, Confirm/Decline buttons, status icons, and all examine hotspots meet the 44px minimum touch target at UI scale
+- Menu rows, Confirm/Decline buttons, status icons, and all examine hotspots meet the 44px minimum click target at UI scale
 
 ---
 
@@ -611,7 +611,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - [ ] Satirical theme (meta-awareness played completely sincere) is clear throughout all assets
 - [ ] Hidden interactions discoverable: asterisk fine print, blank chalk panel, Off-Menu Card Back, locals-not-noticing gag, Hidden Bonus Star
 - [ ] Performance optimized (CPU particles, 12-particle cap, sprite-region menu swaps, single NPC focus)
-- [ ] Touch zone sizing considered (44px minimum — menu rows, Confirm/Decline, status icons, examine hotspots compliant)
+- [ ] Click zone sizing considered (44px minimum — menu rows, Confirm/Decline, status icons, examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (silhouette-distinct status icons, shape-coded item tiers, ring + sparkle + badge suggestion marking)
 - [ ] Social media viral potential maximized (signage stack framing, mid-swap board capture, knowing-smile composition)
 
@@ -626,7 +626,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Satirical Targets Appropriate | ✅ | Punches at RPG vendor placement, game food mechanics, and plot armor tropes — affectionate parody of game design, not of the Irish |
 | Seedy Underbelly Present | ❌ | Profile states Primary Vice: None — Deirdre is genuinely helpful. The location's edge is meta-unease (she knows things she shouldn't, locals can't see the cart, nobody questions it), not vice or exploitation. Intentional outlier, honestly flagged. |
 | Gameplay Value Established | ✅ | Major HP restoration, adaptive shop, suggestion bonus, Plot Essential progression, 4 quests, 7 achievements |
-| Technical Feasibility | ✅ | Sprite-swap adaptive menu, CPU particles, single always-animated NPC — mobile-safe by design |
+| Technical Feasibility | ✅ | Sprite-swap adaptive menu, CPU particles, single always-animated NPC — performance-safe by design |
 | Performance Budget | ✅ | 60 FPS target (45 floor), 10 draw calls, 25 MB cap, 12-particle limit — asset set at ~11 MB |
 | Accessibility Features | ✅ | Supplemental sheet: visual cues for all 8 audio events, static-motion variants, high contrast hotspots, 44px targets |
 | No Crypto Elements | ✅ | PASS — the only tokens here are edible |

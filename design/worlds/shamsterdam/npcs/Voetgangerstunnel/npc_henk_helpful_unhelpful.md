@@ -16,16 +16,16 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Sitting in a booth at the point where five identical corridors meet, being paid to be present rather than to be useful. He answers every direction request in Dutch, points confidently, and is wrong roughly as often as chance would predict — because he genuinely does not know, and has never been given a reason to find out. His 5 Sovs "correct directions" tier is marginally better than free because he thinks slightly harder. His 10 Sovs escort is completely reliable, because walking you there requires no knowledge, only legs. He is not scamming anyone. He is doing exactly the job as it was described to him in 1997.
+Sitting in a booth at the point where five identical corridors meet, being paid to be present rather than to be useful. He answers every direction request in Dutch, points confidently, and is wrong roughly as often as chance would predict — because he genuinely does not know, and has never been given a reason to find out. His 5 SOVS "correct directions" tier is marginally better than free because he thinks slightly harder. His 10 SOVS escort is completely reliable, because walking you there requires no knowledge, only legs. He is not scamming anyone. He is doing exactly the job as it was described to him in 1997.
 
 ### What Bros Believe
-An official. A uniform behind a desk at a decision point is, to Lord Pilsner, indistinguishable from authority. Chadwick films him for "local flavour." Bradley reads the 5 Sovs upgrade as a premium service tier and pays it without hesitation, because that is how tiers work.
+An official. A uniform behind a desk at a decision point is, to Lord Pilsner, indistinguishable from authority. Chadwick films him for "local flavour." Bradley reads the 5 SOVS upgrade as a premium service tier and pays it without hesitation, because that is how tiers work.
 
 ### The Comedy Gap
-The bros will pay a confident wrong man 5 Sovs rather than a correct musician 5 Sovs, and rather than reading the free green emergency signs that would solve the entire tunnel. Henk represents the tourist's fatal instinct: trust the uniform. The graffiti on the wall thirty metres away reads "DON'T FOLLOW HENK." They have walked past it four times. It is in English.
+The bros will pay a confident wrong man 5 SOVS rather than a correct musician 5 SOVS, and rather than reading the free green emergency signs that would solve the entire tunnel. Henk represents the tourist's fatal instinct: trust the uniform. The graffiti on the wall thirty metres away reads "DON'T FOLLOW HENK." They have walked past it four times. It is in English.
 
 ### The Detail Nobody Says Out Loud
-Henk's escort works. Every time. 10 Sovs buys a guaranteed correct exit. He walks very slowly and the trip takes five real minutes and the bros complain the entire way — and it is, objectively, the best purchase available in the location. The one service he provides competently is the one they resent.
+Henk's escort works. Every time. 10 SOVS buys a guaranteed correct exit. He walks very slowly and the trip takes five real minutes and the bros complain the entire way — and it is, objectively, the best purchase available in the location. The one service he provides competently is the one they resent.
 
 ---
 
@@ -115,23 +115,23 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 
 ### Paid Service Dialogue
 
-**5 Sovs — "Correct" Directions**:
-> "Okay. For five Sovs, I give you the REAL directions."
+**5 SOVS — "Correct" Directions**:
+> "Okay. For five SOVS, I give you the REAL directions."
 > *(He puts down the crossword. This is the entire premium experience.)*
 > "This way. Maybe."
 
-**5 Sovs result, if the player then reaches the wrong exit**:
+**5 SOVS result, if the player then reaches the wrong exit**:
 > "That is a refund question and I do not handle refunds."
 
-**10 Sovs — Guided Walk (Escort)**:
-> "For ten Sovs, I walk you there myself."
+**10 SOVS — Guided Walk (Escort)**:
+> "For ten SOVS, I walk you there myself."
 > *(He begins to stand. This takes a while.)*
 > "But I walk slow. Very slow."
 
 **During the escort**:
 > *(Twenty seconds of walking.)* "Nice down here in the winter. Same temperature all year."
-> *(Forty seconds.)* "That advert has been there since before Sovs. I have read it perhaps nine thousand times. It is for a lawyer."
-> *(At the correct exit.)* "There. Centraal Station." *(He is entirely right. He has been entirely right the whole way.)* "You want to go back? Another ten Sovs."
+> *(Forty seconds.)* "That advert has been there since before SOVS. I have read it perhaps nine thousand times. It is for a lawyer."
+> *(At the correct exit.)* "There. Centraal Station." *(He is entirely right. He has been entirely right the whole way.)* "You want to go back? Another ten SOVS."
 
 **Player asks why the escort works when the directions don't**:
 > "Because I am walking with you." *(He does not consider this a paradox. He considers it obvious.)*
@@ -151,7 +151,7 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 
 ### Callback Dialogue (Return Visits)
 **After 5 successful player navigations**:
-> "You know where you are going now." *(A rare flicker of something.)* "You do not need me." *(Beat.)* "Escort is still ten Sovs."
+> "You know where you are going now." *(A rare flicker of something.)* "You do not need me." *(Beat.)* "Escort is still ten SOVS."
 
 **After the player buys Marloes's map**:
 > "You have the map. Good. The map is very good." *(Pause.)* "I have never seen the map."
@@ -186,14 +186,14 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Directions | Free | Approximately zero | Random corridor pointed at with total conviction. No accuracy bonus. |
-| "Correct" Directions | 5 Sovs | Approximately 0.50 Sovs | +10% navigation accuracy this decision. Still likely wrong. |
-| Guided Walk (Escort) | 10 Sovs | 10 Sovs, honestly | **Guaranteed correct exit.** Bypasses the probability resolver entirely. Costs 5 minutes real time. |
-| Conversation | Free | Genuinely pleasant | Three lore lines about the tunnel's construction and the pre-Sovs adverts |
+| "Correct" Directions | 5 SOVS | Approximately 0.50 SOVS | +10% navigation accuracy this decision. Still likely wrong. |
+| Guided Walk (Escort) | 10 SOVS | 10 SOVS, honestly | **Guaranteed correct exit.** Bypasses the probability resolver entirely. Costs 5 minutes real time. |
+| Conversation | Free | Genuinely pleasant | Three lore lines about the tunnel's construction and the pre-SOVS adverts |
 
 ### Hidden Details / Easter Eggs
 - **The crossword**: Examine it across multiple visits. Four answers filled in on visit one; four answers filled in on visit forty. Two of the four are wrong. The newspaper is dated but the date is illegible.
 - **The empty cup**: Examine text reads "Empty." Every time. There is no coffee anywhere in the tunnel and no vending machine in Zone 2.
-- **Escort economics**: A player who buys the escort every visit spends less than a player who buys the 5 Sovs directions and fails twice. Nobody in-world points this out.
+- **Escort economics**: A player who buys the escort every visit spends less than a player who buys the 5 SOVS directions and fails twice. Nobody in-world points this out.
 - **The Dutch line**: Henk's Dutch and English lines carry identical information. Players who speak Dutch get no advantage. This is deliberate and mildly infuriating, which is correct.
 
 ---
@@ -207,11 +207,11 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 | Willem the Eternal Busker (Zone 3) | Mutual, total, decades-long non-acknowledgement. Neither has ever referenced the other. |
 | The Lost Tourists | His primary output. Every Lost Tourist variant has a dialogue line referencing following the orange tiles back to him. |
 | Mevrouw Jansen (Roodelicht exit) | She receives the people he misdirects. They have never met. |
-| The Bike Rental Guy (Bike Crossing kiosk) | Same municipal warning-sign energy, opposite competence. The 15 Sovs tunnel access he sells routes tourists directly into Henk's intersection. |
+| The Bike Rental Guy (Bike Crossing kiosk) | Same municipal warning-sign energy, opposite competence. The 15 SOVS tunnel access he sells routes tourists directly into Henk's intersection. |
 
 ### Territory / Social Dynamics
 - Zone 2 is Henk's, absolutely and unchallenged, and it is the zone with the most player traffic and the least useful information
-- The tunnel's information economy in one line: Marloes charges 8 Sovs for the truth, Willem gives it for 5 Sovs, Henk charges 5 Sovs for a coin flip and 10 Sovs for a certainty he doesn't realise he's selling
+- The tunnel's information economy in one line: Marloes charges 8 SOVS for the truth, Willem gives it for 5 SOVS, Henk charges 5 SOVS for a coin flip and 10 SOVS for a certainty he doesn't realise he's selling
 - The graffiti artist who wrote "DON'T FOLLOW HENK" and "Willem knows" is the tunnel's only editorial voice and Henk will never read either
 
 ---
@@ -228,7 +228,7 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 None. Henk does not appear above ground, in other districts, or in other cities. He is a fixture of the intersection in the strictest sense.
 
 ### Evolution Through Game
-Henk does not develop. His single acknowledgement of player growth — "You do not need me. Escort is still ten Sovs." — is the whole arc and it is delivered flat. He was here before the bros and he will be here after. The player changes; Henk does not.
+Henk does not develop. His single acknowledgement of player growth — "You do not need me. Escort is still ten SOVS." — is the whole arc and it is delivered flat. He was here before the bros and he will be here after. The player changes; Henk does not.
 
 ---
 
@@ -264,7 +264,7 @@ Henk does not develop. His single acknowledgement of player growth — "You do n
 None owned. Henk is a service node and a systems gate.
 
 ### Quest Gate Function
-Henk gates the **guaranteed-success route** through the tunnel. Every other path — Marloes's map (+15%), Willem's hints, the emergency-sign secret, accumulated memory (+5%/success) — is probabilistic. Henk's 10 Sovs escort is the only deterministic correct exit in the Voetgangerstunnel, and it is sold by the least trustworthy person in it. He gates nothing by refusal; he gates by being the answer nobody wants.
+Henk gates the **guaranteed-success route** through the tunnel. Every other path — Marloes's map (+15%), Willem's hints, the emergency-sign secret, accumulated memory (+5%/success) — is probabilistic. Henk's 10 SOVS escort is the only deterministic correct exit in the Voetgangerstunnel, and it is sold by the least trustworthy person in it. He gates nothing by refusal; he gates by being the answer nobody wants.
 
 Secondary gate function: the **Tour Guide achievement** (escort a Lost Tourist to the correct exit) exists because Henk keeps producing Lost Tourists. The player becomes the competent Henk.
 
@@ -345,8 +345,8 @@ Dutch, urban, flat. Not warm, not cold. The vocal equivalent of a laminated noti
 
 - **The escort must be 100% reliable.** It is the location's pressure-release valve and the character's single joke. If the escort ever fails, Henk becomes a scammer and the satire inverts onto the wrong target.
 - Free directions must use a genuine random roll across the five corridors, not a weighted-wrong roll. Henk is not sabotaging anyone; he is guessing. Players who datamine should find a flat distribution.
-- The 5 Sovs tier's +10% is deliberately close to worthless. Do not buff it. The joke is that the premium tier is premium in name only, while the 10 Sovs tier is the real product.
-- "DON'T FOLLOW HENK" graffiti is flashlight-gated (Marloes, 6 Sovs). The full comedy chain is: buy the flashlight from the honest vendor → read the wall → realise you have been paying the wrong man for three visits.
+- The 5 SOVS tier's +10% is deliberately close to worthless. Do not buff it. The joke is that the premium tier is premium in name only, while the 10 SOVS tier is the real product.
+- "DON'T FOLLOW HENK" graffiti is flashlight-gated (Marloes, 6 SOVS). The full comedy chain is: buy the flashlight from the honest vendor → read the wall → realise you have been paying the wrong man for three visits.
 - Henk and Willem must never share a line of dialogue or a reference. Their mutual non-acknowledgement is a background gag with no punchline, which is what makes it work.
 - Do NOT name him Willem, Wim, or any variant. Canon: one first name, one character. Henk here; the Frietomat kitchen worker is the other Henk and is a separate, already-registered character — if they are ever placed in a scene together, that collision needs resolving before shipping.
 
@@ -355,17 +355,17 @@ Dutch, urban, flat. Not warm, not cold. The vocal equivalent of a laminated noti
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Henk has none. 5 Sovs and 10 Sovs, cash, in a tunnel.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Henk has none. 5 SOVS and 10 SOVS, cash, in a tunnel.
 - [x] **NO automatic crypto assumptions** — a contract security guard on a 1997 job description does not take SOVS
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
-- [x] **The bros are never scam-aware** — Bradley reads the 5 Sovs tier as a legitimate service upgrade and will defend this position
+- [x] **The bros are never scam-aware** — Bradley reads the 5 SOVS tier as a legitimate service upgrade and will defend this position
 - [x] **Nothing winks** — Henk never hints he might be wrong; the graffiti does the winking, and the graffiti is an object, not a character
 - [x] **Focus on city-specific cultural exploitation instead** — the satire is the tourist reflex to trust a uniform over a wall, a map, or a musician
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is the bros' authority-worship, not Dutch civil service
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Henk is neither; he is an honest man in a job with no accuracy requirement, and his one competent service is fairly priced and delivered in full
-- [x] Humour is affectionate mockery, not mean-spirited — he is never humiliated, never punished, and is quietly right about the escort
+- [x] Humour is affectionate mockery — he is never humiliated, never punished, and is quietly right about the escort
 
 ---
 

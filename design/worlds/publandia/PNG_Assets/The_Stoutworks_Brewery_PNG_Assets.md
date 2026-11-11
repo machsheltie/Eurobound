@@ -1,7 +1,7 @@
 # The Stoutworks Brewery - Complete PNG Asset Requirements
 
 ## 📋 Overview
-A 25 Sovs brewery tour that derails into a six-floor dungeon crawl when the 150-year-old heritage yeast strain achieves consciousness and decides it IS the brewery. This document specifies every sprite for Publandia's cathedral of beer production — Victorian industrial grandeur, sentient foam, the Vat Master's three-phase existential crisis, and a gift shop that stays open through the apocalypse because commerce always finds a way.
+A 25 SOVS brewery tour that derails into a six-floor dungeon crawl when the 150-year-old heritage yeast strain achieves consciousness and decides it IS the brewery. This document specifies every sprite for Publandia's cathedral of beer production — Victorian industrial grandeur, sentient foam, the Vat Master's three-phase existential crisis, and a gift shop that stays open through the apocalypse because commerce always finds a way.
 
 **Location ID:** `publandia_dungeon_stoutworks_01`
 **Theme:** Brewery-tourism-as-religious-experience parody — the "living beer culture" taken literally, then hostile
@@ -80,7 +80,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 |---------|----------|------|-------------|
 | Welcome Hall | (0, 0) | 256x192 | Tour waiting area, polished floors, corporate cheer |
 | History Exhibit | (256, 0) | 128x96 | "History of Stoutworks" displays, 1869 onward |
-| Ticket Desk | (384, 0) | 128x96 | 25 Sovs validation point |
+| Ticket Desk | (384, 0) | 128x96 | 25 SOVS validation point |
 | Tour Route Sign | (256, 96) | 96x64 | Arrowed path — the safe rails |
 | Save Point Cask | (352, 96) | 64x64 | Last save before descent, glowing tap |
 | Info Display Board | (416, 96) | 96x64 | Brewing process education panel |
@@ -334,7 +334,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 | Selfie Frame: Victory | (0, 192) | 96x64 | Copper stills + debris variant |
 | Selfie Frame: Diplomatic | (96, 192) | 96x64 | Peaceful Vat Master hovering in background |
 | Copper Mug | (192, 192) | 32x32 | +Alcohol resistance |
-| Stoutworks T-Shirt | (224, 192) | 32x32 | +5 Defense, 30 Sovs |
+| Stoutworks T-Shirt | (224, 192) | 32x32 | +5 Defense, 30 SOVS |
 | "I Survived Stoutworks" Shirt | (256, 192) | 32x32 | Post-dungeon flex |
 | Yeast Sample (Contained) | (288, 192) | 32x32 | Throwable temporary ally |
 | Commemorative Tap Handle | (320, 192) | 32x32 | Weapon, +Brewing damage |
@@ -364,7 +364,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - **Duration:** 4 seconds
 - **Frames:** Vat Bubbling normal → Porthole eye → Yeast Golem Forming 1-2 → Record-Scratch freeze-frame → combat music
 - **Trigger:** Quest active + reaching Floor 2, or investigating "Staff Only" areas
-- **Purpose:** The moment 25 Sovs of tourism becomes a dungeon — the location's thesis beat
+- **Purpose:** The moment 25 SOVS of tourism becomes a dungeon — the location's thesis beat
 - **Audio Sync:** Fiona's "That's not supposed to happen" on the porthole; corporate tour music cuts dead on the freeze-frame
 - **Performance Optimization:** Freeze-frame vignette dropped; hard cut instead
 
@@ -455,7 +455,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 ### Colorblind Considerations:
 - Hazard types coded by border pattern (stripes/dots/waves/cross-hatch), never zone tint alone
 - Temperature gauge pairs needle position with hot/cold icons, not red/blue alone
-- Negotiate vs. attack options carry distinct glyphs (open hand / mallet); all interactives meet the 44px minimum touch target
+- Negotiate vs. attack options carry distinct glyphs (open hand / mallet); all interactives meet the 44px minimum click target
 
 ---
 
@@ -639,7 +639,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 - [ ] Satirical theme (brewery tourism reverence gone literal) is clear throughout all assets
 - [ ] Hidden areas discoverable: Friendly Colony Alcove cue, porthole eye, "IN CASE OF YEAST" sign, askew brewmaster photo
 - [ ] Performance optimized (floor streaming, swarm clumps, 20-particle cap, choreographed meltdown)
-- [ ] Touch zone sizing considered (44px minimum — valves, negotiation options, map floors compliant)
+- [ ] Click zone sizing considered (44px minimum — valves, negotiation options, map floors compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (patterned hazard borders, icon-paired gauge)
 - [ ] Social media viral potential maximized (cathedral composition, diplomatic selfie framing)
 
@@ -652,9 +652,9 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 | World Consistency (no real city names) | ✅ | Publandia Brewery District; Guinness Storehouse satirized without naming |
 | Cultural Specificity | ✅ | Dublin-style brewing heritage commodification, tour-and-gift-shop ritual |
 | Satirical Targets Appropriate | ✅ | Brewery tourism packaging, not brewing craft — profile-confirmed |
-| Seedy Underbelly Present | ✅ | 25 Sovs tours ending in gift shops; the cover story vs. the yeast reality |
+| Seedy Underbelly Present | ✅ | 25 SOVS tours ending in gift shops; the cover story vs. the yeast reality |
 | Gameplay Value Established | ✅ | Full 6-floor dungeon, mini-boss, dual-ending boss, puzzles, stamp sidequest, shop economy |
-| Technical Feasibility | ✅ | Floor streaming, clump-sprite swarms, choreographed Phase 3, mobile optimization documented |
+| Technical Feasibility | ✅ | Floor streaming, clump-sprite swarms, choreographed Phase 3, desktop performance budget documented |
 | Performance Budget | ✅ | 60 FPS, 18 draw calls, 48MB |
 | Accessibility Features | ✅ | Telegraph icons for every hazard, caption frames for boss booms, static-hazard variants |
 | No Crypto Elements | ✅ | Absent from source and spec ("pure yeast-based currency of chaos" per profile QA) |
@@ -662,4 +662,4 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 
 **The Stoutworks Brewery delivers the full arc in one building: reverent tour, sudden horror, six floors of living beer, and a choice between destroying a frightened 150-year-old consciousness or actually listening to it. Every asset serves the escalation — and through all of it, the gift shop never closes.**
 
-**"The tour is 25 Sovs. The dungeon is free if you survive."**
+**"The tour is 25 SOVS. The dungeon is free if you survive."**

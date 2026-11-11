@@ -22,7 +22,7 @@
 - **Normal Exit**: Walk away (with or without purchase)
 - **Completion Requirements**: N/A (vendor location)
 - **Failure States**: "Musically Offensive" — temporary ban (10 min) for humming copyrighted tunes
-- **Progressive Unlocks**: "Patron of the Arts" after 100 Sovs spent (access to rare manuscripts)
+- **Progressive Unlocks**: "Patron of the Arts" after 100 SOVS spent (access to rare manuscripts)
 
 ## Visual Design
 ### Cart Description
@@ -84,27 +84,27 @@ The cart exists to test musical knowledge:
 **Standard Items**:
 | Item | Price | Effect | Description |
 |------|-------|--------|-------------|
-| Basic Score | 5 Sovs | +5% Rhythm game timing | Common compositions |
-| Practice Sheet | 8 Sovs | +10% Rhythm game timing (one battle) | Single-use |
-| Tempo Guide | 12 Sovs | Reveals enemy attack patterns | See the beat coming |
-| Conductor's Notes | 15 Sovs | +15% Rhythm damage | Detailed annotations |
-| Harmony Chart | 20 Sovs | Party rhythm sync +10% | Coordinate attacks |
+| Basic Score | 5 SOVS | +5% Rhythm game timing | Common compositions |
+| Practice Sheet | 8 SOVS | +10% Rhythm game timing (one battle) | Single-use |
+| Tempo Guide | 12 SOVS | Reveals enemy attack patterns | See the beat coming |
+| Conductor's Notes | 15 SOVS | +15% Rhythm damage | Detailed annotations |
+| Harmony Chart | 20 SOVS | Party rhythm sync +10% | Coordinate attacks |
 
 **Premium Items** (Patron of the Arts status):
 | Item | Price | Effect | Description |
 |------|-------|--------|-------------|
-| Lost Manuscript | 50 Sovs | +25% Rhythm game timing (permanent passive) | Rare find |
-| Forbidden Opus | 75 Sovs | Unlocks secret rhythm pattern | Hidden techniques |
-| The Unfinished Symphony | 100 Sovs | Massive buff but ends randomly | Risky power |
-| Original Composition | 150 Sovs | Custom attack pattern | Unique to player |
+| Lost Manuscript | 50 SOVS | +25% Rhythm game timing (permanent passive) | Rare find |
+| Forbidden Opus | 75 SOVS | Unlocks secret rhythm pattern | Hidden techniques |
+| The Unfinished Symphony | 100 SOVS | Massive buff but ends randomly | Risky power |
+| Original Composition | 150 SOVS | Custom attack pattern | Unique to player |
 
 **Consumable Buffs**:
 | Item | Price | Effect | Duration |
 |------|-------|--------|----------|
-| Crescendo Script | 10 Sovs | Damage increases each turn | One battle |
-| Diminuendo Draft | 10 Sovs | Enemy damage decreases each turn | One battle |
-| Fermata Fragment | 15 Sovs | Pause enemy for one turn | Single use |
-| Sforzando Scrap | 20 Sovs | One attack deals 3x damage | Single use |
+| Crescendo Script | 10 SOVS | Damage increases each turn | One battle |
+| Diminuendo Draft | 10 SOVS | Enemy damage decreases each turn | One battle |
+| Fermata Fragment | 15 SOVS | Pause enemy for one turn | Single use |
+| Sforzando Scrap | 20 SOVS | One attack deals 3x damage | Single use |
 
 ### The Humming Mini-Game
 
@@ -130,7 +130,7 @@ The cart exists to test musical knowledge:
 
 ### Patron of the Arts System
 
-**Unlocked After**: 100 Sovs total spent
+**Unlocked After**: 100 SOVS total spent
 
 **Benefits**:
 - Access to premium manuscript inventory
@@ -246,7 +246,7 @@ The cart exists to test musical knowledge:
 
 ### Achievement Track
 - **"First Purchase"**: Buy any item
-- **"Patron of the Arts"**: Spend 100 Sovs total
+- **"Patron of the Arts"**: Spend 100 SOVS total
 - **"Passed the Test"**: Correctly identify a piece
 - **"The Humming Champion"**: Pass all humming challenges
 - **"Paper Avalanche"**: Knock over a manuscript pile

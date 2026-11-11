@@ -16,7 +16,7 @@
 - **Time Restrictions**: 11 PM - 5 AM (the dead don't party before midnight)
 - **Stat Requirements**: +1 Bravado to enter crypt entrance
 - **Item Requirements**: 
-  - "Composer's Rest" Cemetery Visitor Pass (5 Sovs, acquired aboveground)
+  - "Composer's Rest" Cemetery Visitor Pass (5 SOVS, acquired aboveground)
   - OR knowledge of secret entrance from NPC
 - **Previous Location Requirements**: Must have heard rumors at The Moderato Pub OR Café Existenz
 - **Special Conditions**: Must find the correct grave to enter (hint: it's NOT Mozart's actual grave)
@@ -121,7 +121,7 @@ Everyone plays along. Whether the undead are real, hallucinations, or very good 
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Selling "authentic underground experience" that's actually well-organized tourist attraction
-- **City-Specific Comedy Operations**: 5 Sovs "cemetery pass" is basically club cover; "tips for the dead" go to owners
+- **City-Specific Comedy Operations**: 5 SOVS "cemetery pass" is basically club cover; "tips for the dead" go to owners
 - **Buffoon Exploitation**: Bros think they've discovered a SECRET; it's on TripAdvisor with 4.2 stars
 - **Comedy of Errors**: Taking the undead premise too seriously OR not seriously enough both cause problems
 - **Consequence System**: Rhythm failures summon additional "undead" enemies; social failures = ghostly mockery
@@ -144,7 +144,7 @@ The club has existed for 15 years, has a health inspection certificate, and pays
 
 **The Morning After**:
 - **Lord Pilsner**: "We danced with GHOSTS. I think one of them hit on me."
-- **Reality**: They danced with theater students in costume earning 15 Sovs/hour
+- **Reality**: They danced with theater students in costume earning 15 SOVS/hour
 
 ## Gameplay Mechanics
 

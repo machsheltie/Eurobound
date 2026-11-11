@@ -132,27 +132,27 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 ### Larger Products:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Hemp Tote Bag | (0, 0) | 48x48 | 15 Sovs — actually just a bag |
-| Hemp Protein Powder | (48, 0) | 48x48 | 35 Sovs — actual nutrition product |
-| Space Cake Mix | (96, 0) | 48x48 | 20 Sovs — "Just add... nothing illegal" |
-| CBD Oil 5% | (144, 0) | 32x48 | 30 Sovs — "Check your local laws" |
-| CBD Oil 15% | (176, 0) | 32x48 | 55 Sovs — "Seriously, check them" |
+| Hemp Tote Bag | (0, 0) | 48x48 | 15 SOVS — actually just a bag |
+| Hemp Protein Powder | (48, 0) | 48x48 | 35 SOVS — actual nutrition product |
+| Space Cake Mix | (96, 0) | 48x48 | 20 SOVS — "Just add... nothing illegal" |
+| CBD Oil 5% | (144, 0) | 32x48 | 30 SOVS — "Check your local laws" |
+| CBD Oil 15% | (176, 0) | 32x48 | 55 SOVS — "Seriously, check them" |
 | CBD Skincare Jar | (208, 0) | 32x48 | Zone 1, no THC claims, entirely uncomplicated |
-| Souvenir Seed Pack | (240, 0) | 48x48 | 40 Sovs — HIGH export risk, *not for germination |
-| Premium Strain Seeds | (288, 0) | 48x48 | 65 Sovs — VERY HIGH export risk, *definitely not for germination |
+| Souvenir Seed Pack | (240, 0) | 48x48 | 40 SOVS — HIGH export risk, *not for germination |
+| Premium Strain Seeds | (288, 0) | 48x48 | 65 SOVS — VERY HIGH export risk, *definitely not for germination |
 | Hemp Rope Coil | (336, 0) | 48x48 | Cannabis-free cannabis plant, sold by the metre |
-| Leaf Novelty Set | (384, 0) | 48x48 | 10-30 Sovs — declaring your tourist status in advance |
+| Leaf Novelty Set | (384, 0) | 48x48 | 10-30 SOVS — declaring your tourist status in advance |
 | Hemp Clothing (Folded) | (432, 0) | 48x48 | Zone 1, fibre only, no cannabinoids, genuinely fine |
 | Reserve | (480, 0) | 32x48 | Reserved cell, do not paint |
 
 ### Small Products & Packaging:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| CBD Gummies | (0, 48) | 32x32 | 25 Sovs — "Some countries are weird about gummies" |
-| "Tobacco" Grinder | (32, 48) | 32x32 | 20 Sovs — for tobacco. Obviously. |
-| "Tobacco" Pipe | (64, 48) | 48x32 | 25 Sovs — design-dependent risk |
-| Rolling Papers (Branded) | (112, 48) | 32x32 | 8 Sovs — paper is legal everywhere |
-| Hemp Rope Bracelet | (144, 48) | 32x32 | 12 Sovs — definitely fine |
+| CBD Gummies | (0, 48) | 32x32 | 25 SOVS — "Some countries are weird about gummies" |
+| "Tobacco" Grinder | (32, 48) | 32x32 | 20 SOVS — for tobacco. Obviously. |
+| "Tobacco" Pipe | (64, 48) | 48x32 | 25 SOVS — design-dependent risk |
+| Rolling Papers (Branded) | (112, 48) | 32x32 | 8 SOVS — paper is legal everywhere |
+| Hemp Rope Bracelet | (144, 48) | 32x32 | 12 SOVS — definitely fine |
 | Hemp Snack Bar | (176, 48) | 32x32 | Zone 2, medium certainty |
 | Suspicious Souvenir Tag | (208, 48) | 32x32 | 24x24 art centred in cell — the inventory marker |
 | Sealed Shop Bag | (240, 48) | 48x32 | Discreet packaging, offered without comment |
@@ -536,7 +536,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - The four zones are distinguished by shelving silhouette and placard text as well as by the lighting grade, so the front-to-back gradient survives any colour vision profile
 - Quantum Box collapse states differ by lid angle and content arrangement, not only by tint
 - Status effects use distinct silhouettes: wavy outline (Anxiety), level line (Calm), dashed square (Suspicious Souvenir)
-- Touch zones minimum 44px for all product selections, the seed ritual responses, the Collector Agreement checkbox, and the customs interaction
+- Click zones minimum 44px for all product selections, the seed ritual responses, the Collector Agreement checkbox, and the customs interaction
 
 ---
 
@@ -719,7 +719,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 - [ ] Staff read as scrupulously honest in every single frame — no shifty poses, no knowing smirks
 - [ ] Hidden areas/interactions have discoverable visual cues (seed cabinet cool grade, asterisk examine, education corner highlight)
 - [ ] Performance optimized (CPU particles, atlas limits respected, zone blocks composed, static-grade fallback)
-- [ ] Touch zone sizing considered (44px minimum for products, ritual responses, and the agreement checkbox)
+- [ ] Click zone sizing considered (44px minimum for products, ritual responses, and the agreement checkbox)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded certainty and risk, zone silhouettes, patterned chips)
 - [ ] Social media viral potential maximized in composition choices (cat superposition framing, single-shot zone gradient, collapse staging)
 
@@ -736,7 +736,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Gameplay Value Established | ✅ | Four-zone browsing, legality inquiry loop, seven-step seed ritual, Suspicious Souvenir tagging, customs probability event, 5-badge track |
 | Technical Feasibility | ✅ | Composed zone blocks, static-display and static-graphic fallbacks per profile, shared atlases with the checkpoint scene |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB, 10 particles per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including instant collapse, shape-coded legality, 44px touch zones |
+| Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including instant collapse, shape-coded legality, 44px click zones |
 | No Crypto Elements | ✅ | Pure quantum legal uncertainty; the only speculative asset is a seed |
 | Social Media Integration | ✅ | 5 screenshot moments + 6 quotable lines identified |
 

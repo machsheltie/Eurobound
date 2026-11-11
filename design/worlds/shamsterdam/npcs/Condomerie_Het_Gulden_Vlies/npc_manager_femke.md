@@ -233,16 +233,16 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 ### Product Inventory
 | Item/Service | Price | Category | Bravado to Buy | Notes |
 |--------------|-------|----------|----------------|-------|
-| Standard Pack (12) | 15 Sovs | Essential | None | "The responsible choice" |
-| Premium Selection | 25 Sovs | Sensation | Low | "For the discerning" |
-| Glow-in-Dark Pack | 12 Sovs | Novelty | Medium | "Party favorite" |
-| Flavored Variety | 10 Sovs | Novelty | Low | "Why not" |
-| Shamsterdam Souvenir Pack | 18 Sovs | Tourist | Medium | Windmill-themed, tulip-shaped |
-| Bachelor Party Bundle | 45 Sovs | Group | High (alone), None (group) | "The Full Experience" |
-| Designer Limited Edition | 35 Sovs | Art | Very High | "Is this a gallery?" |
-| The Mystery Box | 30 Sovs | Unknown | Maximum | "For the adventurous" |
-| Educational Poster | 15 Sovs | Decor | Medium | "Conversation starter" |
-| Gift Card | 20–100 Sovs | Giving | Extreme | "I was thinking of you" |
+| Standard Pack (12) | 15 SOVS | Essential | None | "The responsible choice" |
+| Premium Selection | 25 SOVS | Sensation | Low | "For the discerning" |
+| Glow-in-Dark Pack | 12 SOVS | Novelty | Medium | "Party favorite" |
+| Flavored Variety | 10 SOVS | Novelty | Low | "Why not" |
+| Shamsterdam Souvenir Pack | 18 SOVS | Tourist | Medium | Windmill-themed, tulip-shaped |
+| Bachelor Party Bundle | 45 SOVS | Group | High (alone), None (group) | "The Full Experience" |
+| Designer Limited Edition | 35 SOVS | Art | Very High | "Is this a gallery?" |
+| The Mystery Box | 30 SOVS | Unknown | Maximum | "For the adventurous" |
+| Educational Poster | 15 SOVS | Decor | Medium | "Conversation starter" |
+| Gift Card | 20–100 SOVS | Giving | Extreme | "I was thinking of you" |
 
 ### Services
 | Service | Price | Effect |
@@ -448,7 +448,7 @@ Dutch, professional, mid-register, fluent English. Direct in the Dutch manner �
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Femke has none. Sovs, card, 3–100 Sovs.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Femke has none. SOVS, card, 3–100 SOVS.
 - [x] **NO automatic crypto assumptions** — a 1987 boutique takes cards
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — there is nothing to be aware of; they are buying real products at fair prices and calling them jokes
@@ -458,7 +458,7 @@ Dutch, professional, mid-register, fluent English. Direct in the Dutch manner �
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is grown adults becoming twelve years old in a professional shop; Dutch directness about bodies is presented as straightforwardly better
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Femke is a former nurse running a genuinely progressive sexual health business with real products, real information, and real principles
-- [x] Humour is affectionate mockery, not mean-spirited — the shop's dignity is total, the staff are never the butt of anything, and the bros' embarrassment is treated as "culture processing itself"
+- [x] Humour is affectionate mockery — the shop's dignity is total, the staff are never the butt of anything, and the bros' embarrassment is treated as "culture processing itself"
 - [x] Sexual health content handled respectfully — normalisation is the shop's explicit position and the game endorses it; no product, customer, or orientation is mocked; the bachelorette party is written with exactly the same energy as the bachelor party
 
 ---

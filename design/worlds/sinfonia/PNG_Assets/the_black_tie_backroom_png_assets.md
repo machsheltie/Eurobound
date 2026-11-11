@@ -8,7 +8,7 @@ The Black-Tie Backroom (Der Schwarze Krawatte Hinterzimmer) is where Sinfonia's 
 **Location ID:** `sinfonia_operahouse_blacktie_backroom_01`
 **Theme:** Respectable gambling hypocrisy — addiction dressed in elegance, satirizing European private gaming clubs and old imperial gambling-salon traditions
 **Zone:** Hidden behind the Bassline Opera House (Imperial Square District underside)
-**Hours:** 21:00–05:00 (entry gated by attire, stats, and 500 Sovs collateral)
+**Hours:** 21:00–05:00 (entry gated by attire, stats, and 500 SOVS collateral)
 **Primary Function:** Mini-game hub (poker, roulette, blackjack) / hidden boss arena (Herr Falsch) / reputation gate (High Roller salon) / scripted encounter (`blacktie_event_kings_were_humming_01` at Aaron's corner table)
 
 **Priority**: HIGH (Mini-Game Hub, Hidden Boss Arena, Reputation Gate, Scripted Encounter)
@@ -394,7 +394,7 @@ Cheat item. Two states: **normal view** (identical to a standard deck back) and 
 
 ## 🧾 Sprite Sheet 33: Collateral Receipt
 **Filename**: `collateral_receipt.png` · **Dimensions**: 48 × 32
-The 500 Sovs door deposit slip. Thin card stock, house crest, hand-inked amount, spike hole at the top edge. States: **issued**, **redeemed**, **forfeit** (stamped through).
+The 500 SOVS door deposit slip. Thin card stock, house crest, hand-inked amount, spike hole at the top edge. States: **issued**, **redeemed**, **forfeit** (stamped through).
 
 ## 🖤 Sprite Sheet 34: Member's Card
 **Filename**: `members_card.png` · **Dimensions**: 48 × 32
@@ -464,7 +464,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Trigger:** Bet confirmation at the roulette table
 - **Purpose:** The house's favorite theater — fair-looking, 5.3% edge
 - **Audio Sync:** Ball rattle decelerating; final click on the settled frame
-- **Performance Optimization:** Pre-rendered (per mobile targets); reduced to 4-frame spin on low-end
+- **Performance Optimization:** Pre-rendered (per desktop performance targets);  on min-spec hardware
 
 ### House Dealer Loop (Deal / Spin / Sweep):
 - **Duration:** 0.67s / 0.67s / 0.8s
@@ -473,7 +473,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - **Trigger:** Minigame flow at playable tables
 - **Purpose:** Frictionless, interchangeable house machinery (three palette variants, one skeleton)
 - **Audio Sync:** Card slide per deal frame; chip cascade on sweep_pot
-- **Performance Optimization:** Card deal animations pre-rendered per mobile targets
+- **Performance Optimization:** Card deal animations pre-rendered per desktop performance targets
 
 ### Tractor NFT Token Loop:
 - **Duration:** 1.5 second loop
@@ -529,7 +529,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - The Two-Felt Rule is not carried by hue alone: playable tables have rail/plaque/markings, Aaron's table has none — furniture is the redundant channel
 - Tell indicator intensities differ by shape (one/two/three flourish marks), not color
 - Collateral receipt states (issued/redeemed/forfeit) are stamp-based, readable in greyscale
-- Touch zones minimum 44px for bet interface controls, table seats, and door interactions
+- Click zones minimum 44px for bet interface controls, table seats, and door interactions
 
 ---
 
@@ -593,7 +593,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | The Kings Were Humming (`blacktie_event_kings_were_humming_01`) | `aarons_corner_table.png` scene-lit state, Aaron rows 0–7, `candy_smokes_carton.png`, `tractor_nft_token.png` | One-time scripted spectator encounter on approach; grants candy smokes + tractor NFT |
-| High Stakes | Playable table plates, chip stack, high roller badge | Win 1,000 Sovs total → salon rope opens |
+| High Stakes | Playable table plates, chip stack, high roller badge | Win 1,000 SOVS total → salon rope opens |
 | The Card Shark | Herr Falsch full sheet, marked cards, shark fin | Hidden boss discovered in private boxes; exposed-cheating weakness |
 | The Reformed Gambler | Siegfried both variant rows | Foyer coat-check backstory questline; couchsurf grants permanent −5% house edge |
 | Baroness Vault | Vault antechamber locked/unlocked states | Post-main-boss access via Baroness' vault keys |
@@ -603,7 +603,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Bassline Opera House | Backstage prop-corridor tiles (the hidden entrance is dressed to match them); Baroness' vault keys icon (drops from the Maestro; opens the vault antechamber) | Hidden-door + staircase descent |
-| Haute Couture Haberdashery | Black-Tie Attire equipped-state overlays (the Backroom's dress-code check reads them) | None (item-state read); systemic note: a party busted here can no longer afford the Haberdashery's 500 Sovs Valued Client path |
+| Haute Couture Haberdashery | Black-Tie Attire equipped-state overlays (the Backroom's dress-code check reads them) | None (item-state read); systemic note: a party busted here can no longer afford the Haberdashery's 500 SOVS Valued Client path |
 | Café Existenz / Kaffeehaus Row | Discovery hints only (regulars' gossip) | No sprite transition |
 | The Kings Were Humming (quest) | `aaron_the_unflappable.png`, `aarons_corner_table.png`, `candy_smokes_carton.png`, `tractor_nft_token.png` are all consumed by `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`. No additional PNGs are required by that quest | In-location scene |
 
@@ -672,7 +672,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 
 ### Screenshot-Worthy Moments:
 1. **The Staircase Descent** - Thirty steps from broom closet to chandelier; the class-transition shot composes itself
-2. **Aaron's Crunch** - A man in a rumpled velvet jacket biting a candy cigarette over a 500 Sovs-minimum room, unbothered
+2. **Aaron's Crunch** - A man in a rumpled velvet jacket biting a candy cigarette over a 500 SOVS-minimum room, unbothered
 3. **The Salon Selfie Spot** - Chip stack + chandelier framing marked into the level design on purpose
 4. **The Tractor NFT Reveal** - Mint #42's deliberately terrible mower-donut GIF, worse than everything around it
 5. **Cleaned Out** - The off-register CLEANED OUT stamp across a forfeit receipt
@@ -814,7 +814,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 - [ ] Satirical theme (elegance as anesthetic for the house edge) clear throughout
 - [ ] Hidden entrance discoverable but genuinely boring at first glance
 - [ ] Performance optimized (pre-rendered spins/deals, ≤20 draw calls, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for bet interface and interactive elements)
+- [ ] Click zone sizing considered (44px minimum for bet interface and interactive elements)
 - [ ] Colorblind-friendly redundancy for the Two-Felt Rule (furniture, not just hue)
 - [ ] Social media viral potential maximized in composition choices (staircase, selfie spot, crunch)
 

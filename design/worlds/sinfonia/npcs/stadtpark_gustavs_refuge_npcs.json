@@ -221,10 +221,10 @@
       
       "dialogue": {
         "arrival": "THERE you are! You think you can run from Sinfonia-trained lawyers?!",
-        "demand": "2,000 Sovs! Plus emotional damages! Plus—",
+        "demand": "2,000 SOVS! Plus emotional damages! Plus—",
         "distracted": "*sees Gustav* ...why is that horse wearing a cape?",
         "if_paid": "Hmph. Very well. The arts... accept your contribution.",
-        "if_negotiated": "Hans-Jürgen's insurance covers... some. You owe... 1,000 Sovs. Final.",
+        "if_negotiated": "Hans-Jürgen's insurance covers... some. You owe... 1,000 SOVS. Final.",
         "if_ignored": "I will find you! I know where you are staying! ...Where are you staying?"
       },
       
@@ -250,7 +250,7 @@
       },
       
       "dialogue": {
-        "greeting": "*clears throat* Wisdom costs 1 Sov. Or a sip of something warm.",
+        "greeting": "*clears throat* Wisdom costs 1 SOV. Or a sip of something warm.",
         "wisdom_1": "The horse runs because he can. We stay because we forgot we could run.",
         "wisdom_2": "Skittles are not just candy. They are a rainbow of intention.",
         "wisdom_3": "I was once a professor. Then I learned too much. Now I know nothing. Progress.",

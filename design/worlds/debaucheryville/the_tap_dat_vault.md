@@ -24,14 +24,14 @@
 - **Design**: Vault door shape with soundwave pattern cutout, bottle opener integrated into the door handle
 - **Material**: Brushed chrome with cyan and hot pink neon accents (actually glows)
 - **Inscription**: "Inhaled & Survived"
-- **Acquired**: Complete the rhythm puzzle sequence OR purchase from the Glitching Bouncer for 20 Sovs
+- **Acquired**: Complete the rhythm puzzle sequence OR purchase from the Glitching Bouncer for 20 SOVS
 - **Special Feature**: Contains tiny LED that pulses in rhythm when squeezed (battery included)
 - **Check Point**: Bouncer checks for Blarney Trap opener (quest access) AND scans for this opener (brew section access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Tap Dat Vault Opener**: Can enter vault and explore, but brewing section remains locked
 
 **Bouncer's Opener Check**:
-- *With Blarney Trap Opener, No Vault Opener*: *scans* "Publandia... *glitch* ...authorization detected. Vault key... required. Complete rhythm... sequence. Or... *static* ...20 Sovs."
+- *With Blarney Trap Opener, No Vault Opener*: *scans* "Publandia... *glitch* ...authorization detected. Vault key... required. Complete rhythm... sequence. Or... *static* ...20 SOVS."
 - *With Both Openers*: *scans, nods* "Vault... *glitch* ...key detected. You kept... the beat. The brew section... awaits. Don't... *static* ...disappoint."
 - *Without Blarney Trap Opener*: "Authorization... *glitch* ...not found. Publandia... opener... required. Return... *static* ...when equipped."
 
@@ -164,7 +164,7 @@
 | SP Restoration | +20 |
 | Buff | "Glow-Up Aura" (+1 Charm, +1 Defense, 30 min) |
 | Debuff Risk | 100% "Grease Fingers" status (guaranteed) |
-| Price | 14 Sovs |
+| Price | 14 SOVS |
 | Brewed By | The Tap Dat Vault (vapor-extraction) |
 
 **Flavor Text**: "We don't serve beer — we inhale it. Your lungs are just another glass."
@@ -282,7 +282,7 @@
 - **Asset Creation**: 11 hours (cyberpunk environment, rhythm systems, boss sprites)
 - **Implementation Phase**: 15 hours (rhythm puzzle, boss AI, status effects, music synchronization, brewery tour integration)
 - **Testing Requirements**: Rhythm timing calibration, boss difficulty tuning, Grease Fingers balance, stamp triggers
-- **Polish Phase**: 7 hours (audio-visual synchronization, lighting effects, mobile optimization)
+- **Polish Phase**: 7 hours (audio-visual synchronization, lighting effects, desktop performance optimization)
 
 ## Marketing Integration
 ### Social Media Strategy
@@ -303,7 +303,7 @@
 - [x] **Cultural specificity confirmed** (Vape culture meets craft brewery in underground Eastern European venue)
 - [x] **Satirical targets appropriate** (Vape commercialization, pretentious brewing, tech-bro culture)
 - [x] **Gameplay value established** (Rhythm puzzle, boss encounter, brew reward, quest progression)
-- [x] **Technical feasibility confirmed** (Rhythm system, music synchronization, lighting effects within mobile constraints)
+- [x] **Technical feasibility confirmed** (Rhythm system, music synchronization, lighting effects within desktop performance constraints)
 - [x] **Original content preserved** (All NPCs, dialogue, mechanics, satirical beats functional)
 - [x] **Brewery tour integration complete** (stamp, signature beer, bottle opener check, selfie spot)
 

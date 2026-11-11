@@ -19,7 +19,7 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Selling footwear and accessories, priced 10–150 Sovs, to people who are about to walk eight to twelve kilometres across wet Georgian cobblestone in shoes chosen for an airport. Finbar's assessment system is real, his measurements are real, his equipment stats are real, and his forty-five minute fitting ceremony genuinely produces better outcomes. He is a third-generation craftsman with thirty years behind the counter and an accurate model of exactly how Publandia destroys feet. He is also, without question, *a lot.*
+Selling footwear and accessories, priced 10–150 SOVS, to people who are about to walk eight to twelve kilometres across wet Georgian cobblestone in shoes chosen for an airport. Finbar's assessment system is real, his measurements are real, his equipment stats are real, and his forty-five minute fitting ceremony genuinely produces better outcomes. He is a third-generation craftsman with thirty years behind the counter and an accurate model of exactly how Publandia destroys feet. He is also, without question, *a lot.*
 
 ### What Bros Believe
 That they walked into a shoe shop and accidentally triggered a man. That the intensity is a bit — a local character doing a routine for tourists, like a themed restaurant. That they are humouring him. That they will buy the cheap ones and leave. They will not buy the cheap ones and they will not leave for forty-five minutes.
@@ -71,7 +71,7 @@ Eight states on the sheet (Idle, Assessing, Tactical Briefing, Presenting Shoe, 
 |-------|-------------|
 | Unwavering gravity | Discusses insoles at the emotional register of a battlefield medic |
 | Diagnostic precision | Reads wear patterns off a sole and tells you how you walk, correctly, in one sentence |
-| Genuine care | Would rather you left with the 20 Sovs insoles that work than the 95 Sovs boots that don't suit you |
+| Genuine care | Would rather you left with the 20 SOVS insoles that work than the 95 SOVS boots that don't suit you |
 | Craft pride | Third generation. Uses "we" for a family business that is currently one man |
 | Contained emotion | Cries roughly once every three years, about shoes, and would deny all of it |
 
@@ -98,7 +98,7 @@ Now: reduce, by whatever number he can personally manage, the volume of preventa
 > "You've come in out of it. Good. Now let's talk about what it's already done to you."
 
 **Entry with visible blisters (Medical Emergency intensity):**
-> "Sit. Now. Don't tell me it's fine — I can see how you came through that door. Blister kit's ten Sovs and we'll deal with the cause after."
+> "Sit. Now. Don't tell me it's fine — I can see how you came through that door. Blister kit's ten SOVS and we'll deal with the cause after."
 
 **Repeat entry, pre-Veteran:**
 > "Back. Good. Something failed, or something worked?"
@@ -152,19 +152,19 @@ Now: reduce, by whatever number he can personally manage, the volume of preventa
 
 ### The Selection
 
-> "For your mission, I recommend the Craic Tax Treads. Forty-five Sovs. They've seen combat. They know the terrain."
+> "For your mission, I recommend the Craic Tax Treads. Forty-five SOVS. They've seen combat. They know the terrain."
 
 > "Speed or defense? You can't have both. Unless… *glances at back room* …you're ready for the premium stock."
 
-> "These Steel-Toe Stouts have never let a customer down. They've also never let a customer's toes get crushed. Fifty Sovs. Both of those facts are the same fact."
+> "These Steel-Toe Stouts have never let a customer down. They've also never let a customer's toes get crushed. Fifty SOVS. Both of those facts are the same fact."
 
 > "The All-Night Stompers are forty-five and they are blister-immune. Not blister-resistant. Immune. That word was expensive to earn and I use it precisely."
 
 > "Ghost Walkers, eighty-five. You'll bypass one bouncer a night in those. I don't ask why you need that. I've stopped asking why."
 
-> "Fifteen Sovs for the Rain-Resistant Socks. Fifteen. That's the cheapest immunity in this city and people walk past it every day to spend eighty on shoes they'll ruin with wet socks."
+> "Fifteen SOVS for the Rain-Resistant Socks. Fifteen. That's the cheapest immunity in this city and people walk past it every day to spend eighty on shoes they'll ruin with wet socks."
 
-> "Ten Sovs. Emergency Blister Kit. Buy it whether you buy anything else or not. I'd give them away if I could afford to give things away."
+> "Ten SOVS. Emergency Blister Kit. Buy it whether you buy anything else or not. I'd give them away if I could afford to give things away."
 
 > "The Cobblestone Insoles are twenty and they retrofit into anything, including those." *indicates the player's current shoes* "That's me telling you how to spend less. Note that I did it."
 
@@ -242,10 +242,10 @@ Now: reduce, by whatever number he can personally manage, the volume of preventa
 **Back room, first entry:**
 > "The Veteran's Collection. Four pairs. I don't restock these on a schedule — I make them when the leather's right."
 
-**Presenting The Cobbler's Pride (150 Sovs):**
+**Presenting The Cobbler's Pride (150 SOVS):**
 > "A hundred and fifty. Made for your feet specifically. Not your size — your *feet.* I take the measurements today and you collect in three days. That's not a delay, that's the product."
 
-**Presenting The Last Stand Boots (120 Sovs):**
+**Presenting The Last Stand Boots (120 SOVS):**
 > "My masterwork. All terrain, all weather, all night. If I'm remembered for one thing it's these, and I won't be remembered, so it may as well be you wearing them."
 
 **Custom fitting, post-Veteran:**
@@ -268,10 +268,10 @@ Now: reduce, by whatever number he can personally manage, the volume of preventa
 > "You walked it. In mine." *the smallest possible nod* "Right. Good. That's the whole job, that is. That's the entire job."
 
 **After the player returns with damaged Cobbler's stock:**
-> "Bring them here. No — don't apologise, they did their work. I'll resole them. Twenty Sovs and two days. They've years left in them yet."
+> "Bring them here. No — don't apologise, they did their work. I'll resole them. Twenty SOVS and two days. They've years left in them yet."
 
 **Late game, player leaving Publandia:**
-> "You're going on, then. Other cities. Other stones." *pause* "Take the Emergency Blister Kit. Ten Sovs. Take two."
+> "You're going on, then. Other cities. Other stones." *pause* "Take the Emergency Blister Kit. Ten SOVS. Take two."
 
 ---
 
@@ -300,58 +300,58 @@ Now: reduce, by whatever number he can personally manage, the volume of preventa
 ### Speed Category (Wet Street Navigation)
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Comfy Loafers | 35 Sovs | +10 Speed | +15% Speed on wet surfaces |
-| Craic Tax Treads | 45 Sovs | +15 Speed | +20% Speed on cobblestones |
-| The Quickstep | 60 Sovs | +20 Speed | +25% Speed everywhere, "Light-Footed" buff |
-| Finbar's Flyers | 80 Sovs | +25 Speed | +30% Speed, immunity to "Slowed by Terrain" |
+| Comfy Loafers | 35 SOVS | +10 Speed | +15% Speed on wet surfaces |
+| Craic Tax Treads | 45 SOVS | +15 Speed | +20% Speed on cobblestones |
+| The Quickstep | 60 SOVS | +20 Speed | +25% Speed everywhere, "Light-Footed" buff |
+| Finbar's Flyers | 80 SOVS | +25 Speed | +30% Speed, immunity to "Slowed by Terrain" |
 
 ### Stealth Category (Bouncer Evasion)
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Pub Crawl Sneakers | 40 Sovs | +10 Stealth | +15% Stealth near venue entrances |
-| The Silent Strider | 55 Sovs | +15 Stealth | +20% Stealth, reduced aggro radius |
-| Soft-Sole Specials | 65 Sovs | +18 Stealth | +25% Stealth, "Unnoticed" buff (2 min) |
-| Ghost Walkers | 85 Sovs | +25 Stealth | +30% Stealth, bypass one bouncer per night |
+| Pub Crawl Sneakers | 40 SOVS | +10 Stealth | +15% Stealth near venue entrances |
+| The Silent Strider | 55 SOVS | +15 Stealth | +20% Stealth, reduced aggro radius |
+| Soft-Sole Specials | 65 SOVS | +18 Stealth | +25% Stealth, "Unnoticed" buff (2 min) |
+| Ghost Walkers | 85 SOVS | +25 Stealth | +30% Stealth, bypass one bouncer per night |
 
 ### Defense Category (Foot Protection)
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Steel-Toe Stouts | 50 Sovs | +15 Defense, +5 Intimidation | Immunity to "Stubbed Toe" |
-| The Fortified Foot | 65 Sovs | +20 Defense | +10% damage reduction, kick attacks enabled |
-| Cobblestone Crushers | 75 Sovs | +22 Defense, +8 Intimidation | Terrain damage immunity |
-| Finbar's Fortress | 95 Sovs | +30 Defense | Full foot protection, "Immovable" stance option |
+| Steel-Toe Stouts | 50 SOVS | +15 Defense, +5 Intimidation | Immunity to "Stubbed Toe" |
+| The Fortified Foot | 65 SOVS | +20 Defense | +10% damage reduction, kick attacks enabled |
+| Cobblestone Crushers | 75 SOVS | +22 Defense, +8 Intimidation | Terrain damage immunity |
+| Finbar's Fortress | 95 SOVS | +30 Defense | Full foot protection, "Immovable" stance option |
 
 ### Endurance Category (Long Night Survival)
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| All-Night Stompers | 45 Sovs | +15 Stamina | Blister immunity |
-| The Marathon Walker | 55 Sovs | +20 Stamina | +50% pub crawl duration before fatigue |
-| Comfort Crusaders | 70 Sovs | +25 Stamina | Fatigue effects reduced 50% |
-| Finbar's Forever Feet | 90 Sovs | +30 Stamina | "Inexhaustible" buff for one full night |
+| All-Night Stompers | 45 SOVS | +15 Stamina | Blister immunity |
+| The Marathon Walker | 55 SOVS | +20 Stamina | +50% pub crawl duration before fatigue |
+| Comfort Crusaders | 70 SOVS | +25 Stamina | Fatigue effects reduced 50% |
+| Finbar's Forever Feet | 90 SOVS | +30 Stamina | "Inexhaustible" buff for one full night |
 
 ### Accessories (Supplementary Gear)
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| Lucky Charm Bracelet | 25 Sovs | +10 Bravado Resistance | 10% chance to ignore Bravado loss |
-| Rain-Resistant Socks | 15 Sovs | +5 Comfort | Immunity to "Soggy" debuff |
-| Cobblestone Insoles | 20 Sovs | +8 Defense | Retrofit for any shoe |
-| Emergency Blister Kit | 10 Sovs | N/A | Cures "Blistered" status once |
-| The Power Stance Laces | 18 Sovs | +5 Intimidation | "Firm Footing" in confrontations |
+| Lucky Charm Bracelet | 25 SOVS | +10 Bravado Resistance | 10% chance to ignore Bravado loss |
+| Rain-Resistant Socks | 15 SOVS | +5 Comfort | Immunity to "Soggy" debuff |
+| Cobblestone Insoles | 20 SOVS | +8 Defense | Retrofit for any shoe |
+| Emergency Blister Kit | 10 SOVS | N/A | Cures "Blistered" status once |
+| The Power Stance Laces | 18 SOVS | +5 Intimidation | "Firm Footing" in confrontations |
 
 ### Premium Stock — The Veteran's Collection (Back Room, Veteran Walker only)
 | Item | Price | Stats | Special Effect |
 |------|-------|-------|----------------|
-| The Last Stand Boots | 120 Sovs | +25 All Foot Stats | Finbar's masterwork, all terrain |
-| Legendary Loafers | 100 Sovs | +30 Speed, +15 Comfort | "Swift as the Wind" buff |
-| The Cobbler's Pride | 150 Sovs | +20 All Stats | Custom-made for your feet specifically |
-| Battle-Worn Veterans | 80 Sovs | +20 Defense, +15 Intimidation | "Seen Things" intimidation bonus |
+| The Last Stand Boots | 120 SOVS | +25 All Foot Stats | Finbar's masterwork, all terrain |
+| Legendary Loafers | 100 SOVS | +30 Speed, +15 Comfort | "Swift as the Wind" buff |
+| The Cobbler's Pride | 150 SOVS | +20 All Stats | Custom-made for your feet specifically |
+| Battle-Worn Veterans | 80 SOVS | +20 Defense, +15 Intimidation | "Seen Things" intimidation bonus |
 
 ### Services
 | Service | Price | Notes |
 |---------|-------|-------|
 | The Assessment | Free | Delivered whether requested or not. Sets the grade and therefore the pricing |
 | The Fitting Ceremony | Free with purchase | Six stages, roughly 45 minutes of in-game time. Skippable at Veteran Walker status |
-| Resole (Cobbler's stock only) | 20 Sovs | Two days. He will not resole a competitor's shoe and will not explain why beyond "I don't know what's in it" |
+| Resole (Cobbler's stock only) | 20 SOVS | Two days. He will not resole a competitor's shoe and will not explain why beyond "I don't know what's in it" |
 | Free fitting | Free | Awarded once, at Finbar's sole discretion, to a customer who arrives with their own arch supports |
 
 ### Hidden Details / Easter Eggs
@@ -459,14 +459,14 @@ Finbar's intensity never lowers — that would break him. What changes is *what 
 | `publandia_sidequest_finbars_approval_01` | Quest Target | Arrive with Grade A footwear, or complete a crawl blister-free in Endurance stock | The Cobbler's Blessing: +20 Bravado, one line of genuine praise, never repeated |
 
 ### Quest Gate Function
-Finbar gates no critical-path progress, but he is a soft gate on several: any content involving extended traversal of the Craic Tax's cobblestones, bouncer evasion, or long-duration crawls is meaningfully harder without his equipment. The Ghost Walkers (85 Sovs) are the only reliable single-bouncer bypass in Publandia, which makes Finbar the de facto supplier for several stealth routes he knows nothing about and would not approve of.
+Finbar gates no critical-path progress, but he is a soft gate on several: any content involving extended traversal of the Craic Tax's cobblestones, bouncer evasion, or long-duration crawls is meaningfully harder without his equipment. The Ghost Walkers (85 SOVS) are the only reliable single-bouncer bypass in Publandia, which makes Finbar the de facto supplier for several stealth routes he knows nothing about and would not approve of.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | "Finbar Approved" status | Perfect Fit completion | Yes | Confidence bonus; equipment stat bonus over counter-purchased identical items |
 | Veteran Walker status | 3 purchases | Yes | −10% permanent, Veteran's Collection access, ceremony skip |
-| The Cobbler's Pride (150 Sovs) | Veteran's Collection, 3-day craft | Yes | +20 All Stats, custom-lasted to the player's measurements |
+| The Cobbler's Pride (150 SOVS) | Veteran's Collection, 3-day craft | Yes | +20 All Stats, custom-lasted to the player's measurements |
 | The Cobbler's Blessing | Finbar's Approval | Yes | +20 Bravado, one-time |
 | Wall of Honour photograph | Cobblestone Conquest | Yes | Permanent environmental change; visible on all later visits |
 
@@ -540,7 +540,7 @@ Irish, Dublin trade, unhurried and precise. Lower and slower than every other Pu
 
 - **The assessment fires on entry, every time, before any dialogue option is presented.** It is not a menu choice. Finbar looks at the player's feet the instant they cross the threshold, and the resulting grade modifies all prices in the shop for that visit. Grade A gives −5%, Grade F adds +10%. This must be visible in the shop UI or the mechanic reads as a bug.
 - The Grade F markup is the trickiest tonal beat in the profile: Finbar charges *more* to rescue someone, and he explains why, and the explanation is coherent. Do not soften this. He is a savvy operator, not a charity, and the ten percent is a teaching instrument he has priced deliberately.
-- Finbar must recommend the cheap solution when the cheap solution is right — the 20 Sovs Cobblestone Insoles line and the 15 Sovs Rain-Resistant Socks line are load-bearing for the character. Cutting them makes him a huckster and he is not one.
+- Finbar must recommend the cheap solution when the cheap solution is right — the 20 SOVS Cobblestone Insoles line and the 15 SOVS Rain-Resistant Socks line are load-bearing for the character. Cutting them makes him a huckster and he is not one.
 - **He never laughs and never winks.** Not at the Skeptic, not at Chadwick calling him content, not at any point. If a line reads as self-aware, it is wrong.
 - The Wall of Honour photograph after a blister-free crawl is a persistent environmental change and should be implemented as such — the player sees themselves on the wall on every subsequent visit for the rest of the game.
 - The free fitting (Bradley's arch supports) should be reachable by the player too, not just by scripted bro dialogue: any player arriving with their own supportive insoles equipped triggers the Rare Warmth expression and a free ceremony.
@@ -562,7 +562,7 @@ Irish, Dublin trade, unhurried and precise. Lower and slower than every other Pu
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behaviour, NOT local culture or ethnicity — the joke is on people who packed flip-flops for a European city, not on Irish craftspeople
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Finbar knows exactly what he has, exactly what it is worth, and exactly who is walking through his door under-equipped. Every claim he makes is true
-- [x] Humour is affectionate mockery, not mean-spirited — this is an affectionate parody of a passionate craftsperson who happens to be completely correct
+- [x] Humour is affectionate mockery — this is an affectionate parody of a passionate craftsperson who happens to be completely correct
 
 ---
 

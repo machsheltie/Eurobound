@@ -99,28 +99,29 @@
 ### Complete Menu System (Original)
 **All items preserved exactly as specified:**
 
-#### **Doner of Illusions™** - 7 Sovs
+#### **Doner of Illusions™** - 7 SOVS
 - **Description**: Spinning heap of shredded meat, gummy bears, and absinthe glaze
 - **Effects**: +10 SP, -5 Intelligence, 25% Confused for 2 battles
 - **Special**: Unlocks carnival-exclusive dialogue if consumed in clown gear
-- **Quest Connection**: Required for The Great Döner Debate crossover quest, unlocks unique ICQ lore if consumed during Tony420 interaction
+- **Quest Connection**: Required for The Great Döner Debate crossover quest
+- **Tony420 lore (approved, author 2026-11-11)**: eaten from the item menu while the ICQ window is open on a live Tony420 thread (any FREE Wi-Fi hotspot; the Cirque's `icq_backroom` is the intended spot), it plays a one-shot ICQ exchange: Tony's $KBAB "federal reserve" tour of the meat tower. Tony's silent cart associate then hands over **DÖNER COUNCIL BOND (1 MEAT)** (`council_bond_receipt`; inert, no sell value). Inspect: "Redeemable for one (1) serving of the underlying asset at dawn, when the spit grows back. Bearer assumes all gravy risk, trans-fat liability, and bacterial arbitrage. Not legal tender. In some backchannels it is legal tender." Flag: `debaucheryville.mystery_cart.doner_tony_lore_seen` (set when the exchange completes, never cleared). Normal food effects still apply. Full text: `WritingRoom/tasks/20261111_0619_doner_of_illusions_tony420_lore/final.md`
 
-#### **Sausage of Suspicion** - 6 Sovs
+#### **Sausage of Suspicion** - 6 SOVS
 - **Description**: Grey, sweaty tube meat on a stick. Whispers when held
 - **Effects**: -2 Defense, +3 Agility, 50% chance of "Itchy" status
 - **Strategic Use**: Speed boost with defensive trade-off and mysterious side effects
 
-#### **Clown Dog Deluxe™** - 9 Sovs
+#### **Clown Dog Deluxe™** - 9 SOVS
 - **Description**: Hot dog with red licorice bun, mustard smiley, and Pop Rocks relish
 - **Effects**: Heals 15 HP, adds "Sticky" debuff to all enemies next round
 - **Strategic Use**: Healing with combat advantage through enemy debuffing
 
-#### **Meatball on a Lollipop Stick** - 5 Sovs
+#### **Meatball on a Lollipop Stick** - 5 SOVS
 - **Description**: It's exactly what it sounds like
 - **Effects**: +5 Accuracy, 25% chance of attracting sewer NPCs
 - **Strategic Use**: Precision boost with unexpected encounter risk
 
-#### **Glizzénstein's Brain Brat** - 12 Sovs
+#### **Glizzénstein's Brain Brat** - 12 SOVS
 - **Description**: Glowing sausage rumored to be part AI and part veal
 - **Effects**: +2 Intelligence, -1 Charisma, +5% critical chance vs. humanoids
 - **Strategic Use**: Combat intelligence boost with social trade-off
@@ -138,7 +139,7 @@
 - **Quest Role**: Provides circus/carnival sample for cross-city culinary comparison
 - **Sample Item**: "Doner of Illusions™" represents traveling circus döner interpretation
 - **Cultural Commentary**: Circus food culture adaptation of traditional European dish
-- **ICQ Integration**: Unlocks unique lore when consumed during Tony420 interaction
+- **ICQ Integration**: Doner of Illusions™ eaten during a live Tony420 ICQ thread plays the one-shot $KBAB lore exchange and grants `council_bond_receipt` (see the menu entry above; `WritingRoom/tasks/20261111_0619_doner_of_illusions_tony420_lore/final.md`)
 
 ### Cirque du Shady Ecosystem
 - **Carnival Integration**: Part of broader circus experience and performer network
@@ -330,23 +331,23 @@ Butterfly knife (chrome finish), cracked porcelain mask, lighter fluid vapor
 
 3. mystery_menu_items_detailed.png (1024x512 pixels)
 All 5 menu items with disgusting yet appealing detail:
-Doner of Illusions™ (7 Sovs):
+Doner of Illusions™ (7 SOVS):
 
 Spinning meat heap, gummy bears mixed in, absinthe glaze green shimmer, serving wrapped
 
-Sausage of Suspicion (6 Sovs):
+Sausage of Suspicion (6 SOVS):
 
 Grey sweaty tube meat, wooden stick, whisper audio waves, suspicious from all angles
 
-Clown Dog Deluxe™ (9 Sovs):
+Clown Dog Deluxe™ (9 SOVS):
 
 Red licorice bun, mustard smiley face, Pop Rocks relish, assembled grotesque
 
-Meatball on a Lollipop Stick (5 Sovs):
+Meatball on a Lollipop Stick (5 SOVS):
 
 Spherical mystery meat, candy stick inappropriate, structural impossibility, previous bite marks
 
-Glizzénstein's Brain Brat (12 Sovs):
+Glizzénstein's Brain Brat (12 SOVS):
 
 Glowing internal AI, circuit pattern meat surface, organic digital mix, pulsing glow packaging
 

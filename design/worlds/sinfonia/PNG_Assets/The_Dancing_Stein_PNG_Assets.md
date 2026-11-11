@@ -235,7 +235,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 | Spin Delivery Frame 2 | (96, 288) | 48x96 | Half turn, tray level — physics-defying |
 | Spin Delivery Frame 3 | (144, 288) | 48x96 | Completing rotation |
 | Delivery Flourish | (192, 288) | 48x96 | Stein landed on table exactly on beat ONE |
-| Full Whirl (Sinfonian Whirl) | (240, 288) | 48x96 | Extended spin pose for the 8 Sovs full-spin delivery |
+| Full Whirl (Sinfonian Whirl) | (240, 288) | 48x96 | Extended spin pose for the 8 SOVS full-spin delivery |
 
 ### Stumbling Patron — Comedy Fail (48x96 each):
 | Element | Position | Size | Description |
@@ -336,11 +336,11 @@ assets/sprites/locations/sinfonia/dancing_stein/
 | Waltz Weizen — Swirl 1 | (0, 64) | 32x64 | Signature: cloudy gold, foam mid-swirl (clockwise, always) |
 | Waltz Weizen — Swirl 2 | (32, 64) | 32x64 | Foam rotated 120° clockwise |
 | Waltz Weizen — Swirl 3 | (64, 64) | 32x64 | Foam rotated 240° clockwise — loops. We don't know why it does this |
-| Two-Step Lager | (96, 64) | 32x64 | 4 Sovs, basic rhythm, honest glass |
-| Foxtrot Ale | (128, 64) | 32x64 | 5 Sovs, amber, subtly wrong tempo (rebellion) |
-| The Wallflower | (160, 64) | 32x64 | 3 Sovs, plain glass, served with visible shame aura |
-| Tango IPA | (192, 64) | 32x64 | 6 Sovs, dramatic red-tinged, rose garnish |
-| Sinfonian Whirl | (224, 64) | 32x64 | 8 Sovs, tall spiral glass — earns the full spin delivery |
+| Two-Step Lager | (96, 64) | 32x64 | 4 SOVS, basic rhythm, honest glass |
+| Foxtrot Ale | (128, 64) | 32x64 | 5 SOVS, amber, subtly wrong tempo (rebellion) |
+| The Wallflower | (160, 64) | 32x64 | 3 SOVS, plain glass, served with visible shame aura |
+| Tango IPA | (192, 64) | 32x64 | 6 SOVS, dramatic red-tinged, rose garnish |
+| Sinfonian Whirl | (224, 64) | 32x64 | 8 SOVS, tall spiral glass — earns the full spin delivery |
 
 ### Bottle Opener & Stamp:
 | Element | Position | Size | Description |
@@ -452,7 +452,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 | Achievement Toast Frame | (296, 176) | 160x48 | Banner for First Steps / Not a Drop / Dance Marathon / hidden Two Left Feet |
 
 ### Technical Notes:
-- All tappable UI elements here render at ≥44px on target devices; beat markers scale up, never down
+- All clickable UI elements here render at ≥44px on target devices; beat markers scale up, never down
 - QTE track is the deaf-accessible primary rhythm channel — it must be fully playable with audio off (see Accessibility)
 - Spill meter and stein overlay always agree; both read from the same `stein_fill` value
 
@@ -535,7 +535,7 @@ assets/sprites/locations/sinfonia/dancing_stein/
 - **Frames:** 4 (wind-up → half turn → complete → flourish)
 - **Pattern:** Spin occupies beats ONE-two-three; stein touches table on the next down-beat
 - **Trigger:** Waltz Weizen or Sinfonian Whirl delivered to table (Whirl uses extended Full Whirl pose, 2.0 s)
-- **Purpose:** Signature-beer showmanship — the small spin from the profile, escalated for the 8 Sovs order
+- **Purpose:** Signature-beer showmanship — the small spin from the profile, escalated for the 8 SOVS order
 - **Audio Sync:** Glass-clink lands on the down-beat following the spin
 - **Performance Optimization:** None needed
 
@@ -635,7 +635,7 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 - The acceptable-loss line pairs its blue color with a dashed etch pattern and "MIN." text label
 - Difficulty steins are distinguished by fill silhouette (half / three-quarter / foam-domed), not tint
 - Graceful vs. Two Left Feet status icons use opposite silhouettes (upright dancer vs. crossed shoes), readable in grayscale
-- Touch zones minimum 44px for QTE beat markers, difficulty select, door interaction, bar ordering, and stamp podium
+- Click zones minimum 44px for QTE beat markers, difficulty select, door interaction, bar ordering, and stamp podium
 
 ---
 
@@ -662,7 +662,7 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 | Low | 4 animated dancers max — all others static poses; door holds static open frame; static foam; no ambient particles; beat pulse rings retained (flat alpha) as accessibility-critical |
 
 ### Performance Targets:
-> **Note:** the source profile (`the_dancing_stein.md`) states no performance budget. The numbers below are proposed defaults against the project-standard 60 FPS mobile target and must be ratified by tech art before production.
+> **Note:** the source profile (`the_dancing_stein.md`) states no performance budget. The numbers below are proposed defaults against the project-standard 60 FPS min-spec desktop target and must be ratified by tech art before production.
 
 - **Target FPS:** 60 (default target — not stated in source profile)
 - **Max Draw Calls:** 40 per frame (proposed default)
@@ -685,7 +685,7 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 - AnimatedSprite2D for NPCs; one shared conductor-clock AnimationPlayer broadcasts beat ticks (signal `beat(n)`) that every dancer, the door, metronomes, and the QTE HUD subscribe to
 - CPUParticles2D (not GPU) for splashes, notes, sparkles
 - CanvasLayer for QTE track, spill meter, and beat indicator glyphs
-- Mirror reflections: masked Sprite2D duplicates at 40% opacity inside mirror regions (no viewport textures on mobile)
+- Mirror reflections: masked Sprite2D duplicates at 40% opacity inside mirror regions (no viewport textures on min-spec hardware)
 - Location state machine: `pre_challenge → challenge_active(difficulty) → passed / failed(two_left_feet) → stamped` drives stein fill value, Drehmeister dialogue set, and cellar access
 
 ### Audio Sync Points:
@@ -836,7 +836,7 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 - [ ] Hidden areas/interactions have discoverable visual cues (cellar stairs, practice corner, door gear detail)
 - [ ] Rhythm game fully playable with audio off (QTE track + beat glyphs verified)
 - [ ] Performance optimized (CPU particles, atlas limits respected, dancer caps honored)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (beat shapes, loss-line pattern, status silhouettes)
 - [ ] Social media viral potential maximized in composition choices (door, selfie medallion, stamp landing)
 

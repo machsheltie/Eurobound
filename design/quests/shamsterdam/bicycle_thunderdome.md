@@ -191,7 +191,7 @@
 
 **LORD PILSNER:** "...yes?"
 
-**Bike Rental Guy:** *deep sigh* "Extra insurance is 20 Sovs. I recommend it."
+**Bike Rental Guy:** *deep sigh* "Extra insurance is 20 SOVS. I recommend it."
 
 ---
 

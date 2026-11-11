@@ -63,14 +63,14 @@
         "chaos_phase": {
           "gustav_entry": "What is—MEIN GOTT! EIN PFERD!",
           "cake_eaten": "NEIN! NEIN! DAS PFERD FRISST DIE TORTE!",
-          "damage_reaction": "THE TABLES! THE DISPLAY! THIS WILL COST—calculate—340 Sovs!",
+          "damage_reaction": "THE TABLES! THE DISPLAY! THIS WILL COST—calculate—340 SOVS!",
           "breakdown": "In thirty years of service, I have never... a HORSE. A HORSE ate the Sachertorte."
         },
         "post_chaos": {
-          "debt_demand": "340 Sovs. You will pay this. Now. Or I call the Polizei.",
-          "partial_payment": "50 Sovs received. You still owe 290 Sovs. I will remember.",
+          "debt_demand": "340 SOVS. You will pay this. Now. Or I call the Polizei.",
+          "partial_payment": "50 SOVS received. You still owe 290 SOVS. I will remember.",
           "full_payment": "...paid in full. You may return. But I will be watching.",
-          "unpaid_return": "You. OUT. Until the 340 Sovs is paid, you are not welcome."
+          "unpaid_return": "You. OUT. Until the 340 SOVS is paid, you are not welcome."
         }
       },
       
@@ -257,7 +257,7 @@
       
       "dialogue": {
         "debate": [
-          "Him: 36 Sovs for two cake slices? That's like... $40?",
+          "Him: 36 SOVS for two cake slices? That's like... $40?",
           "Her: But it's AUTHENTIC. The book says—",
           "Him: I could get cake at Costco for—",
           "Her: *glare*"

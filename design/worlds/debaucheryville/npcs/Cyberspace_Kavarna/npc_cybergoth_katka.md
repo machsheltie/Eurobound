@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What She's Actually Doing
-Sitting at the same terminal in a basement internet cafe, cataloguing which handles on the room's printed ICQ lists are running which scams, in genuine, exhaustive, correct detail. She has been observing this network for years and she knows more about it than anyone in Debaucheryville except possibly Dmitri, who won't talk. She sells that knowledge — for American candy and energy drinks, because Sovs are boring — while sincerely believing she is a member of Anonymous.
+Sitting at the same terminal in a basement internet cafe, cataloguing which handles on the room's printed ICQ lists are running which scams, in genuine, exhaustive, correct detail. She has been observing this network for years and she knows more about it than anyone in Debaucheryville except possibly Dmitri, who won't talk. She sells that knowledge — for American candy and energy drinks, because SOVS are boring — while sincerely believing she is a member of Anonymous.
 
 ### What Bros Believe
 That they have made contact with an actual hacker, an operative, a person on the inside. Her fingerless gloves, the mask on the desk, and the speed at which she types confirm it for them. They believe the intel is elite because of how she looks when she delivers it.
@@ -63,7 +63,7 @@ Cyber-goth read must land instantly at 48x64 — silhouette is hair, gloves, boo
 |-------|-------------|
 | Rapid-fire | Talks at double speed, in bursts, then stops dead to gauge reaction |
 | Genuinely informed | Her scammer-network intel is correct, current, and better than anyone else's in the city |
-| Candy-economy | Prefers American candy and energy drinks to Sovs. Has firm, specific brand opinions |
+| Candy-economy | Prefers American candy and energy drinks to SOVS. Has firm, specific brand opinions |
 | Performatively secretive | Leans in and whispers information that is not remotely sensitive |
 | Sincerely delusional about one (1) thing | The hacking. Only the hacking. Everything else about her is accurate |
 
@@ -110,6 +110,9 @@ She is very good at something with no career attached to it. There is no agency 
 *If the player asks about Tony420:*
 > "Fake wallet. Same wallet, three years, four handles. He changes the handle and keeps the wallet, which is the stupidest possible way to do it, and it works every single time because nobody checks."
 
+*If the player asks who is sitting at Tony's terminal (before the Döner Debate; Kavarna option C, author 2026-11-11, verbatim):*
+> "Different man every night. Same wallet. I have four handles, three years, and eleven men who all paid Dmitri separately. Do not ask me which one is Tony. I will get upset."
+
 *If the player asks about Miss Morphine:*
 > *(the fast talk stops completely)* "...that one's complicated. That one I'll trade for, not talk for. And I want the good candy, not the airport candy."
 
@@ -117,7 +120,7 @@ She is very good at something with no career attached to it. There is no agency 
 > "He's undercover. He thinks. He introduced himself as 'a normal criminal' and asked what everyone's crimes were. I'm helping him. Somebody has to."
 
 *If the player asks why she wants candy:*
-> "Because Sovs are boring and everybody has Sovs. Nobody has Skittles. You get Skittles at the airport or you don't get Skittles. Payment should be *difficult*, that's the whole point of payment."
+> "Because SOVS are boring and everybody has SOVS. Nobody has Skittles. You get Skittles at the airport or you don't get Skittles. Payment should be *difficult*, that's the whole point of payment."
 
 ### Quest Accept
 *She turns the monitor slightly toward you, which is her entire security protocol:*
@@ -131,8 +134,8 @@ She is very good at something with no career attached to it. There is no agency 
 *Player refuses a sting operation:*
 > "Fine! Fine. Sensible, even. Most people who do this get their ICQ flooded for a month. I'm just saying I'd have flooded it *for* you first, so it'd have been organized flooding."
 
-*Player offers Sovs instead of candy:*
-> "Sovs. Sure. I'll take Sovs. I'll take them and I'll be *disappointed*, and I'll remember, and next time you'll wish you'd brought the Skittles."
+*Player offers SOVS instead of candy:*
+> "SOVS. Sure. I'll take SOVS. I'll take them and I'll be *disappointed*, and I'll remember, and next time you'll wish you'd brought the Skittles."
 
 *Player questions whether she's really a hacker:*
 > "You want to see something? ...no, you don't. It's better if you don't. It's — it's a whole thing, there's a process." *(returns to typing)*
@@ -173,7 +176,7 @@ She is very good at something with no career attached to it. There is no agency 
 ### Positioning Notes
 - Occupies a terminal with sightlines across the whole CRT maze — she chose it and nobody else uses it
 - Sits angled away from her own screen and toward the room, which is why she sees everything and why her posture looks wrong for someone typing
-- Tony420's rented terminal is immediately to her left. This is not coincidence; it is a stakeout that has lasted three years. Tony himself is never seen in person (author, 2026-11-11). [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal]
+- Tony420's rented terminal is immediately to her left. This is not coincidence; it is a stakeout that has lasted three years. Tony himself is never seen in person (author, 2026-11-11). Before the Döner Debate, a different silent hourly patron sits at the terminal every night, none of them Tony, all told to keep the ICQ window open; the bros can pay one of them for the chair and find only the wallet. After the Debate, Tony's goon and tablet take the seat (Kavarna option C, "the chair is rented too", author 2026-11-11). The patrons are a rental roster, never an identity mystery
 - Empties accumulate on her side of the desk in a formation that has clearly not been cleared in weeks
 
 ---
@@ -183,14 +186,14 @@ She is very good at something with no career attached to it. There is no agency 
 ### Information Traded
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Scammer network intel (general) | 1x energy drink, or 5 Sovs | Genuinely high — nobody else has it | Reveals active scam patterns; reduces future scammer targeting |
-| The Tony420 file | American candy (any) or 10 Sovs | Accurate and three years deep | Unlocks "Operation Script Kiddie"; identifies the fake crypto wallet scheme |
-| The Miss Morphine trail | **Good** American candy only — she will not take Sovs | Her most guarded holding | Unlocks "Miss Morphine's Digital Trail" |
+| Scammer network intel (general) | 1x energy drink, or 5 SOVS | Genuinely high — nobody else has it | Reveals active scam patterns; reduces future scammer targeting |
+| The Tony420 file | American candy (any) or 10 SOVS | Accurate and three years deep | Unlocks "Operation Script Kiddie"; identifies the fake crypto wallet scheme |
+| The Miss Morphine trail | **Good** American candy only — she will not take SOVS | Her most guarded holding | Unlocks "Miss Morphine's Digital Trail" |
 | NarcGreg's cover assessment | Free, unprompted, she volunteers it | Zero, it's obvious | Unlocks "The Great ICQ Hack" |
 | Meme page promotion | 2x energy drinks | She has 47 followers | Fake social-media buzz generation; useful for couchsurf reference forging |
-| Fake social media presence | 15 Sovs or equivalent in candy | Better than it should be | Generates references and presence for Couchsurfing Chronicles applications |
+| Fake social media presence | 15 SOVS or equivalent in candy | Better than it should be | Generates references and presence for Couchsurfing Chronicles applications |
 
-**Currency note**: Katka accepts Sovs for everything except the Miss Morphine trail, and is visibly disappointed every time. Payment in American candy or energy drinks improves the quality of what she volunteers.
+**Currency note**: Katka accepts SOVS for everything except the Miss Morphine trail, and is visibly disappointed every time. Payment in American candy or energy drinks improves the quality of what she volunteers.
 
 ### Hidden Details / Easter Eggs
 - **Examining the Anonymous mask**: It has never been worn. The elastic is still factory-tight and the inside is clean.
@@ -207,7 +210,7 @@ She is very good at something with no career attached to it. There is no agency 
 | NPC | Relationship |
 |-----|--------------|
 | Dmitri "The Router" | Landlord and the room's other permanent fixture. He rents to her, tolerates her, and has never corrected a single claim she's made about herself |
-| Tony420 | Surveillance target of three years. He has no idea. She sits to the right of his rented terminal on purpose. He is never seen in person (author, 2026-11-11). [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal] |
+| Tony420 | Surveillance target of three years. He has no idea. She sits to the right of his rented terminal on purpose. He is never seen in person (author, 2026-11-11). Before the Döner Debate the chair goes to a different silent hourly patron every night, none of them Tony; after it, his goon and tablet sit there (Kavarna option C, author 2026-11-11) |
 | Miss Morphine | Her white whale. She has established that the handle has been operated by at least three different physical people and will not say more without payment |
 | NarcGreg | Accidental protégé. His undercover work is so bad she has started quietly protecting it |
 | The ICQ Veterans | Her actual social peer group; 30+ locals with handles older than she is. They respect the six-digit number |
@@ -218,7 +221,7 @@ She is very good at something with no career attached to it. There is no agency 
 - Her terminal is understood to be hers; she has never had to defend it because she has never left it during operating hours
 - She does not interfere with scams in progress. She *documents* them. The distinction matters to her enormously and has never mattered to anyone else
 - She is the only person in the room who has correctly identified every other person in the room, and the only one nobody has correctly identified
-- Her non-Sov pricing keeps her outside the Kavarna's cash economy entirely, which she experiences as tradecraft and which functionally means she is paid in snacks
+- Her non-SOV pricing keeps her outside the Kavarna's cash economy entirely, which she experiences as tradecraft and which functionally means she is paid in snacks
 
 ---
 
@@ -278,12 +281,12 @@ She is very good at something with no career attached to it. There is no agency 
 ### Primary Quests: The Sting Operations
 - **Quest**: "Operation Script Kiddie" (`debaucheryville_sidequest_operation_script_kiddie_01`)
   - **Role**: Quest Giver / Information Source
-  - **Trigger**: Purchasing the Tony420 file (American candy or 10 Sovs)
+  - **Trigger**: Purchasing the Tony420 file (American candy or 10 SOVS)
   - **Outcome**: Tony420's fake crypto wallet scheme exposed; reduced scammer targeting; street rep increase
 
 - **Quest**: "Miss Morphine's Digital Trail" (`debaucheryville_sidequest_miss_morphines_digital_trail_01`)
   - **Role**: Quest Giver / Sole Information Source
-  - **Trigger**: Paying in **good** American candy specifically — this is the only transaction in the game she refuses Sovs for
+  - **Trigger**: Paying in **good** American candy specifically — this is the only transaction in the game she refuses SOVS for
   - **Outcome**: Progress toward Miss Morphine's real identity ("it's complicated" per the location file); connects to the Couchsurfing Chronicles network and her disappearance
 
 - **Quest**: "The Great ICQ Hack" (`debaucheryville_sidequest_the_great_icq_hack_01`)
@@ -292,7 +295,7 @@ She is very good at something with no career attached to it. There is no agency 
   - **Outcome**: NarcGreg infiltrates the scammer network, badly, with help
 
 ### Quest Gate Function (If Applicable)
-**Yes — progression gate.** Completing **any one** sting operation unlocks the Kavarna's metro platform back exit, per `cyberspacekavarna.md` Progressive Unlocks. Since Katka is the sole source of all three, she is the effective gate on that city-traversal unlock. She also gates the Miss Morphine questline behind a non-Sov payment, which requires the player to have acquired imported candy elsewhere — a soft cross-location dependency.
+**Yes — progression gate.** Completing **any one** sting operation unlocks the Kavarna's metro platform back exit, per `cyberspacekavarna.md` Progressive Unlocks. Since Katka is the sole source of all three, she is the effective gate on that city-traversal unlock. She also gates the Miss Morphine questline behind a non-SOV payment, which requires the player to have acquired imported candy elsewhere — a soft cross-location dependency.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -310,7 +313,7 @@ She is very good at something with no career attached to it. There is no agency 
 1. Katka mid-conspiratorial-lean, mask on the desk beside her, delivering something completely public
 2. The eleven-brand energy drink empty collection in frame
 3. Her 47-follower meme page open on a CRT
-4. Katka beside Tony420's rented terminal, her angled toward the room. [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal]
+4. Katka beside Tony420's rented terminal, her angled toward the room. Before the Döner Debate a silent hourly patron fills the chair; after it, the goon holds up the tablet (Kavarna option C)
 5. Candy laid out on the desk during the persona-drop moment
 
 ### Meme Potential
@@ -318,7 +321,7 @@ She is very good at something with no career attached to it. There is no agency 
 - "Americans always think movies are real. This is internet cafe, not Hollywood."
 - "Payment should be *difficult*, that's the whole point of payment."
 - "Everybody in here types like nobody's behind them. I'm behind them."
-- The candy-over-Sov economy as a recurring joke format
+- The candy-over-SOV economy as a recurring joke format
 
 ---
 

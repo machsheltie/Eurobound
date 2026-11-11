@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 11 AM - 3 AM (always there when you need it, suspiciously)
 - **Stat Requirements**: None (protagonists welcome regardless of condition)
-- **Item Requirements**: SOVS (8-20 Sovs per meal)
+- **Item Requirements**: SOVS (8-20 SOVS per meal)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Deirdre seems to know when you're about to do something dangerous
 
@@ -65,21 +65,21 @@ Deirdre's menu is... adaptive. Items seem to appear based on what you're about t
 **Standard Fare (Always Available)**
 | Item | Price | HP Restoration | Notes |
 |------|-------|----------------|-------|
-| Irish Stew | 8 Sovs | +40 HP | Classic, reliable, warm |
-| Meat Pie | 10 Sovs | +50 HP | Substantial, portable |
-| Sausage Roll | 6 Sovs | +30 HP | Quick, satisfying |
-| Beef & Guinness Pie | 12 Sovs | +60 HP | Premium restoration |
-| Shepherd's Pie | 10 Sovs | +50 HP | Comfort food maximum |
-| Full Irish (Portable) | 15 Sovs | +80 HP, cures Hungover | The complete recovery |
+| Irish Stew | 8 SOVS | +40 HP | Classic, reliable, warm |
+| Meat Pie | 10 SOVS | +50 HP | Substantial, portable |
+| Sausage Roll | 6 SOVS | +30 HP | Quick, satisfying |
+| Beef & Guinness Pie | 12 SOVS | +60 HP | Premium restoration |
+| Shepherd's Pie | 10 SOVS | +50 HP | Comfort food maximum |
+| Full Irish (Portable) | 15 SOVS | +80 HP, cures Hungover | The complete recovery |
 
 **"Situational" Specials (Appear When Needed)**
 | Item | Price | Effect | Appears When... |
 |------|-------|--------|-----------------|
-| Pre-Fight Fuel | 12 Sovs | +50 HP, +10 Attack (1 battle) | Combat approaches |
-| Liquid Fortitude Stew | 15 Sovs | +60 HP, Fear immunity (30 min) | Boss area nearby |
-| The Second Wind | 18 Sovs | +70 HP, +20 SP, removes fatigue | Player HP/SP low |
-| Plot Convenience Pie | 20 Sovs | +80 HP, +5% Luck (1 hour) | Before crucial decisions |
-| The Protagonist's Portion | 25 Sovs | Full HP restore, +all stats (30 min) | Main quest milestone |
+| Pre-Fight Fuel | 12 SOVS | +50 HP, +10 Attack (1 battle) | Combat approaches |
+| Liquid Fortitude Stew | 15 SOVS | +60 HP, Fear immunity (30 min) | Boss area nearby |
+| The Second Wind | 18 SOVS | +70 HP, +20 SP, removes fatigue | Player HP/SP low |
+| Plot Convenience Pie | 20 SOVS | +80 HP, +5% Luck (1 hour) | Before crucial decisions |
+| The Protagonist's Portion | 25 SOVS | Full HP restore, +all stats (30 min) | Main quest milestone |
 
 **The "How Did You Know?" Menu**
 Items Deirdre offers before you know you need them:
@@ -190,10 +190,10 @@ The game tracks upcoming events and adjusts Deirdre's offerings:
 **"Off-Menu" Items**:
 | Item | Price | Effect | Deirdre's Comment |
 |------|-------|--------|-------------------|
-| Narrative Insurance | 30 Sovs | Survive one fatal blow (once per day) | "Just in case." |
-| The Retcon Roast | 25 Sovs | Removes one recent bad decision's consequences | "Everyone deserves a second draft." |
-| Destiny's Dumpling | 35 Sovs | Next critical roll guaranteed success | "Some moments matter more." |
-| The Epilogue Entrée | 40 Sovs | Full restore + preview of good ending | "You're going to be fine. I've seen it." |
+| Narrative Insurance | 30 SOVS | Survive one fatal blow (once per day) | "Just in case." |
+| The Retcon Roast | 25 SOVS | Removes one recent bad decision's consequences | "Everyone deserves a second draft." |
+| Destiny's Dumpling | 35 SOVS | Next critical roll guaranteed success | "Some moments matter more." |
+| The Epilogue Entrée | 40 SOVS | Full restore + preview of good ending | "You're going to be fine. I've seen it." |
 
 ### The Convenient Placement
 Deirdre's cart appears in convenient locations:
@@ -311,13 +311,13 @@ If player tries to ask about the convenient placement:
 - **Lord Pilsner** (approaching): "Food cart! Perfect, I'm about to go do the brewery dungeon thing."
 - **Deirdre**: "I know. The Fortitude Stew is what you need. Trust me."
 - **Lord Pilsner**: "Wait, how did you—"
-- **Deirdre**: "Don't worry about it. 15 Sovs. You'll survive."
+- **Deirdre**: "Don't worry about it. 15 SOVS. You'll survive."
 - **Lord Pilsner**: "...you said that really confidently."
 - **Deirdre**: "I'm a confident woman. Eat your stew."
 - **Chadwick**: "This is WEIRD, right? She KNEW we were coming?"
 - **Deirdre**: "Of course I knew. You're the main characters. Now eat."
 - **Chadwick**: "The main... wait, what does THAT mean?"
-- **Deirdre**: "It means you need the Protagonist's Portion. 25 Sovs. No more questions."
+- **Deirdre**: "It means you need the Protagonist's Portion. 25 SOVS. No more questions."
 - **Deirdre**: "Sausage roll?"
 - **Bradley**: "...I'll take two."
 - **Deirdre**: "Smart. You'll go far. All three of you will. I've seen it."

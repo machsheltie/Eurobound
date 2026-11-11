@@ -139,7 +139,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | Bar Tip Jar (Empty) | (1408, 896) | 64x64 | Hopeful |
 | Bar Tip Jar (Coins) | (1472, 896) | 64x64 | Realistic |
 | Bar Tip Jar (Notes) | (1536, 896) | 64x64 | A good trad night happened |
-| Chalk Menu Board | (1600, 896) | 192x128 | "THE CRAIC — 8 Sovs" in careful chalk Celtic lettering |
+| Chalk Menu Board | (1600, 896) | 192x128 | "THE CRAIC — 8 SOVS" in careful chalk Celtic lettering |
 | Bar Mats & Spill Decals | (1792, 928) | 256x96 | Branded mats, honest spills |
 | Spilled Pint Puddle Decal | (1280, 960) | 128x64 | Floor hazard, comedy prop |
 | Coaster Set | (1408, 960) | 128x64 | Four designs, all shamrocks |
@@ -213,11 +213,11 @@ assets/sprites/locations/publandia/the_blarney_trap/
 ### Standard Accommodation (First Floor):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Shared Dorm | (0, 0) | 384x256 | 35 Sovs, 50% restoration, snoring NPCs included, "Embarrassed" risk visible in bunk spacing |
-| Street-Facing Single | (384, 0) | 320x256 | 55 Sovs, 70% restoration — loud but atmospheric, craic audible until 3 AM |
-| Courtyard Single | (704, 0) | 320x256 | 70 Sovs, 85% restoration — actually sleepable, less craic |
-| Street-Facing Double | (0, 256) | 384x256 | 75 Sovs, bros can share, shamrock density: high |
-| Courtyard Double | (384, 256) | 320x256 | 90 Sovs, better value, shamrock density: merciful |
+| Shared Dorm | (0, 0) | 384x256 | 35 SOVS, 50% restoration, snoring NPCs included, "Embarrassed" risk visible in bunk spacing |
+| Street-Facing Single | (384, 0) | 320x256 | 55 SOVS, 70% restoration — loud but atmospheric, craic audible until 3 AM |
+| Courtyard Single | (704, 0) | 320x256 | 70 SOVS, 85% restoration — actually sleepable, less craic |
+| Street-Facing Double | (0, 256) | 384x256 | 75 SOVS, bros can share, shamrock density: high |
+| Courtyard Double | (384, 256) | 320x256 | 90 SOVS, better value, shamrock density: merciful |
 | Shared Bathroom + Queue | (704, 256) | 320x256 | Character building; queue-forming NPC marks on the floor |
 
 ### Premium Suites (Second Floor):
@@ -399,7 +399,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | Rival Trio Silhouettes | (896, 384) | 128x128 | Cameo sprites for the documentation side quest |
 
 ### Technical Notes:
-- Crowd renders as composite blocks, never individuals — mobile budget demands the simplified crowd (profile requirement)
+- Crowd renders as composite blocks, never individuals — performance budget demands the simplified crowd (profile requirement)
 - Crowd Sway A/B alternates at 3.2s; Low LOD holds Frame A permanently
 - Hen Party stays behind window glass at all times; she is atmosphere, not an encounter
 
@@ -487,7 +487,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | Toast Builder UI | (384, 256) | 384x192 | Speech-construction panel: slot the lines, raise the glass |
 | Toast Line Cards x4 | (768, 256) | 256x128 | Four 128x64 cards: Sincere / Funny / Exaggerated / Inappropriate |
 | Toast Result Banners x2 | (768, 384) | 256x64 | Two 128x64 banners: "SLÁINTE!" success / polite-wince failure |
-| Toast Confirm Button | (384, 448) | 128x64 | Raise-the-glass commit, 44px+ touch target |
+| Toast Confirm Button | (384, 448) | 128x64 | Raise-the-glass commit, 44px+ click target |
 | Free Round Banner | (512, 448) | 256x64 | "THE HOUSE APPROVES" possible-free-round payout |
 | Applause Meter | (768, 448) | 256x64 | Crowd approval fill bar |
 
@@ -528,7 +528,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | Stamp Slam Effect | (560, 896) | 96x64 | Ink ring + impact star for passport stamping |
 | Scuttered Wobble Overlay | (656, 896) | 176x64 | Screen-edge wobble band for Absolutely Scuttered |
 | The Fear Desaturation Strip | (832, 896) | 192x64 | Morning-after LUT gradient |
-| Shamrock Particles x4 | (0, 960) | 128x32 | Four 32x32 drifting shamrocks (celebration bursts, reduced count on mobile) |
+| Shamrock Particles x4 | (0, 960) | 128x32 | Four 32x32 drifting shamrocks (celebration bursts, reduced count on min-spec hardware) |
 | Foam Bubbles | (128, 960) | 64x32 | Head-of-pint micro detail |
 | Chatter Bubbles | (192, 960) | 96x32 | Multilingual murmur glyphs over crowd blocks |
 | Hen Party Shriek Lines | (288, 960) | 96x32 | Distant jagged lines at the window |
@@ -677,7 +677,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - Status effect badges (Craic'd Up / Fair Play / Scuttered / Contentment / Comfortable Trap) each carry a distinct pattern: solid, striped, spiral, dotted, knotwork
 - Room noise levels in the selection UI use icon count (1-3 speaker glyphs), not a red/green scale
 - Stamp slots distinguish earned (full-detail ink) / empty (dashed outline) / locked ("Locked" banner) by structure, not hue
-- All interactive elements — room rows, toast cards, beat lane, quest notices, opener display, POS terminal — meet the 44px minimum touch target
+- All interactive elements — room rows, toast cards, beat lane, quest notices, opener display, POS terminal — meet the 44px minimum click target
 
 ---
 
@@ -749,9 +749,9 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | The Stoutworks Yeast Situation | Craic Broker Quest Handoff, quest notice cards, rumor board | Craic Broker side quest: "Yeast situation. Don't ask questions." Starts at the Snug or board |
 | Rival Trio Documentation | Rival Trio Silhouettes, quest notice cards, photo flash burst | Craic Broker side quest: document the rival trio's embarrassment |
 | Backroom Operations | Backroom interior, poker table, trivia-fight setup, Declan Backroom Nod | Unlicensed poker and trivia-fights unlock via Pub Regular or quest state |
-| Brewery Tour Origin | Bottle Opener Keychain (display + item), Passport (closed/spread/pages), Seamus Opener Pitch | Opener acquired via 15 Sovs purchase, Pint-Off win, or Pub Regular status; Passport Book given FREE with it; the continental sidequest begins here |
-| The Blarney Trap Stamp | Stamp sprite, Ink Press frames, Stamp Slam effect, Free Pint Voucher | Stamp requires Pint-Off win OR successful toast OR Pub Regular, with the opener in inventory; unlocks The Sweet Surrender at 8 Sovs |
-| Publandia Legendary Hangover | Legendary Hangover consumable, Publandia stamp page, progress bar | All 4 Publandia stamps collected → 50 Sovs ultimate consumable unlocks at any stamped location |
+| Brewery Tour Origin | Bottle Opener Keychain (display + item), Passport (closed/spread/pages), Seamus Opener Pitch | Opener acquired via 15 SOVS purchase, Pint-Off win, or Pub Regular status; Passport Book given FREE with it; the continental sidequest begins here |
+| The Blarney Trap Stamp | Stamp sprite, Ink Press frames, Stamp Slam effect, Free Pint Voucher | Stamp requires Pint-Off win OR successful toast OR Pub Regular, with the opener in inventory; unlocks The Sweet Surrender at 8 SOVS |
+| Publandia Legendary Hangover | Legendary Hangover consumable, Publandia stamp page, progress bar | All 4 Publandia stamps collected → 50 SOVS ultimate consumable unlocks at any stamped location |
 | NFT Hunt (Hidden) | POS Terminal Screen | One hidden acquisition via the Trap's POS terminal — unmarked hotspot, found not advertised |
 
 ### Cross-Location Dependencies:
@@ -874,7 +874,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 - [ ] Satirical theme (manufactured authenticity, self-aware tourist trap) is clear throughout all assets
 - [ ] Hidden interactions discoverable: antiques on examine, POS terminal hotspot, Snug/Backroom gating cues, locked fourth passport slot
 - [ ] Performance optimized (CPU particles, 2048 atlas cap, composite crowd blocks, one-keyframe pour hold)
-- [ ] Touch zone sizing considered (44px minimum — room rows, toast cards, beat lane, quest notices, opener display)
+- [ ] Click zone sizing considered (44px minimum — room rows, toast cards, beat lane, quest notices, opener display)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded beats, patterned status badges, icon-count noise levels)
 - [ ] Social media viral potential maximized (dome presentation framing, fireplace selfie spot composition, stamp slam moment)
 
@@ -887,7 +887,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | World Consistency (no real city names) | ✅ | Publandia only; The Craic Tax zone; no real-world city named anywhere in the asset set |
 | Cultural Specificity | ✅ | Dublin tourist-district pub economy, Temple Bar pricing satire, Irish pub global brand — rendered in Celtic lettering, knotwork, GAA decor, and the sacred pour |
 | Satirical Targets Appropriate | ✅ | Punches at tourist expectations and the "Irish Experience" package, never at Irish hospitality — staff and regulars render with dignity, tourists get the cartoon treatment |
-| Seedy Underbelly Present | ✅ | Craic Tax pricing (8 Sovs pints, honest fine print) and the Backroom's unlicensed operations — poker of questionable legitimacy, fights disguised as trivia nights |
+| Seedy Underbelly Present | ✅ | Craic Tax pricing (8 SOVS pints, honest fine print) and the Backroom's unlicensed operations — poker of questionable legitimacy, fights disguised as trivia nights |
 | Gameplay Value Established | ✅ | Primary hub: rest/restoration tiers, auto-save, quest board, pint-off rhythm game, toast builder, round obligations, Pub Regular progression, Brewery Tour origin |
 | Technical Feasibility | ✅ | 8 sheets, all ≤2048, coordinate-mapped; on-demand room streaming; one-keyframe pour hold; Godot 4.x CPUParticles2D throughout |
 | Performance Budget | ✅ | 60 FPS target, 18 draw calls max, 40 MB memory cap, 20-particle limit with per-system caps documented |

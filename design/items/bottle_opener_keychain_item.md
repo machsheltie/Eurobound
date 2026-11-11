@@ -27,8 +27,8 @@ A single, well-worn keyring the bros have been adding to for years — a janglin
 | Attribute | Value |
 |-----------|-------|
 | **Purchase Price** | N/A — never sold. GRANTED on the Publandia special-beer order trigger (author ruling 2026-08-04) [source: design/quests/general_quests/brewerytour.md L27-34] |
-| **Actual Value** | A handful of cheap, mismatched giveaway openers — marginal Sovs at most |
-| **Resale Value** | 0 Sovs (worthless, and quest-critical besides) |
+| **Actual Value** | A handful of cheap, mismatched giveaway openers — marginal SOVS at most |
+| **Resale Value** | 0 SOVS (worthless, and quest-critical besides) |
 | **Can Be Sold** | No |
 | **Can Be Dropped** | No (permanent quest container) |
 | **Can Be Traded** | No |

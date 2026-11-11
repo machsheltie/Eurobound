@@ -84,7 +84,7 @@
 
 *They arrive to find Gustav INSIDE the café, eating from patrons' tables*
 
-**MAÎTRE D':** "This horse is eating the Sachertorte! The WHOLE Sachertorte! The 85 Sovs Sachertorte!"
+**MAÎTRE D':** "This horse is eating the Sachertorte! The WHOLE Sachertorte! The 85 SOVS Sachertorte!"
 
 **Gustav:** *continues eating, makes eye contact, does not care*
 
@@ -105,9 +105,9 @@
 ---
 
 **Chaos Results:**
-- 340 Sovs in damages
+- 340 SOVS in damages
 - Café bans all "American horse catchers"
-- Gustav escapes having eaten one whole 85 Sovs Sachertorte, with a 22 Sovs opera cake slice still in his teeth
+- Gustav escapes having eaten one whole 85 SOVS Sachertorte, with a 22 SOVS opera cake slice still in his teeth
 
 ---
 
@@ -147,7 +147,7 @@
 
 **Chaos Results:**
 - Bros banned from opera house
-- 2,000 Sovs in set damages
+- 2,000 SOVS in set damages
 - Gustav now has a cape (stole it from costume department)
 
 ---
@@ -238,7 +238,7 @@
 **Rewards - Path A:**
 - **"Horse Whisperer" Title** - Ability to calm hostile animals
 - **Free Fiaker Ride** - Gustav clearly judging the bros the entire time
-- **50 Sovs reward** from Hans-Jürgen (Hans-Jürgen only had 50 Sovs)
+- **50 SOVS reward** from Hans-Jürgen (Hans-Jürgen only had 50 SOVS)
 - **"Gustav's Respect" hidden buff** - Gustav appears in final boss, kicks enemy
 - **Café/Opera still banned**
 
@@ -340,82 +340,82 @@
 
 ## 💶 Damage Debt Resolution — Authoritative
 
-**This block is the single source of truth for every Sov figure in the Fiaker Fiasco economy. Where any other file disagrees, this block wins and that file is stale.** Files that express parts of this economy — `Design/World Design/Sinfonia/cafe_sachertorte.md`, `stadtpark_gustavs_refuge.md`, `bassline_opera_house.md`, `opera_house_plaza.md`, the matching `*_core.json` / `*_items.json` / `*_events.json`, and `npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md` — must defer to it rather than restate it independently.
+**This block is the single source of truth for every SOV figure in the Fiaker Fiasco economy. Where any other file disagrees, this block wins and that file is stale.** Files that express parts of this economy — `Design/World Design/Sinfonia/cafe_sachertorte.md`, `stadtpark_gustavs_refuge.md`, `bassline_opera_house.md`, `opera_house_plaza.md`, the matching `*_core.json` / `*_items.json` / `*_events.json`, and `npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md` — must defer to it rather than restate it independently.
 
 ### 1. Base damage (before any relief)
 
 | Component | Maximum | Reduced | How it reduces |
 |-----------|---------|---------|----------------|
-| Opera House Plaza | 0 Sovs | 0 Sovs | No damage occurs here |
-| Café Sachertorte | 340 Sovs | 340 Sovs | **Fixed. The café line itself never shrinks** — see relief below |
-| Opera Backstage (Magic Flute set) | 2,000 Sovs | 1,600 Sovs | Papageno ally path avoids the backdrop tear, −400 Sovs |
-| Prima Donna compensation | 500 Sovs | 200 Sovs (Charm 4) or 0 Sovs (avoided) | Negotiation, or never triggering her demand |
-| **Base total — worst case** | **2,840 Sovs** | | Everything goes wrong |
-| **Base total — best case** | **1,940 Sovs** | | Papageno path + Prima Donna avoided entirely |
+| Opera House Plaza | 0 SOVS | 0 SOVS | No damage occurs here |
+| Café Sachertorte | 340 SOVS | 340 SOVS | **Fixed. The café line itself never shrinks** — see relief below |
+| Opera Backstage (Magic Flute set) | 2,000 SOVS | 1,600 SOVS | Papageno ally path avoids the backdrop tear, −400 SOVS |
+| Prima Donna compensation | 500 SOVS | 200 SOVS (Charm 4) or 0 SOVS (avoided) | Negotiation, or never triggering her demand |
+| **Base total — worst case** | **2,840 SOVS** | | Everything goes wrong |
+| **Base total — best case** | **1,940 SOVS** | | Papageno path + Prima Donna avoided entirely |
 
-*(If the Prima Donna is negotiated down rather than avoided, the best-case base is 2,140 Sovs.)*
+*(If the Prima Donna is negotiated down rather than avoided, the best-case base is 2,140 SOVS.)*
 
 ### 2. Relief — there are exactly two pots, and they are not the same pot
 
-#### Pot 1: The 170 Sovs café relief — **claimed once, ever**
+#### Pot 1: The 170 SOVS café relief — **claimed once, ever**
 
-**AUTHOR RULING: the Hans-Jürgen insurance payout and the dialogue-option-3 halving are the same 170 Sovs relief and are MUTUALLY EXCLUSIVE.** They are two fictional explanations for one mechanical reduction of the 340 Sovs café bill. They may never both apply.
+**AUTHOR RULING: the Hans-Jürgen insurance payout and the dialogue-option-3 halving are the same 170 SOVS relief and are MUTUALLY EXCLUSIVE.** They are two fictional explanations for one mechanical reduction of the 340 SOVS café bill. They may never both apply.
 
 | Trigger | Where | When | Fiction |
 |---------|-------|------|---------|
-| **(a)** Dialogue option 3, *"That horse doesn't belong to us!"* | Café Sachertorte, Stage 1 | At the moment of the rampage | Hans-Jürgen arrives, admits ownership, the 340 Sovs splits — the party owes 170 Sovs |
-| **(b)** Hans-Jürgen's Fiaker insurance payout | Stadtpark, resolution | Path A only | His carriage policy pays 170 Sovs against the café bill |
+| **(a)** Dialogue option 3, *"That horse doesn't belong to us!"* | Café Sachertorte, Stage 1 | At the moment of the rampage | Hans-Jürgen arrives, admits ownership, the 340 SOVS splits — the party owes 170 SOVS |
+| **(b)** Hans-Jürgen's Fiaker insurance payout | Stadtpark, resolution | Path A only | His carriage policy pays 170 SOVS against the café bill |
 
 **State flag: `debt_relief_claimed` (bool, default `false`).**
-- Whichever trigger fires **first** applies −170 Sovs and sets `debt_relief_claimed = true`.
-- Once the flag is set, the other trigger is **disabled** — greyed out in the payment UI, and its dialogue line is not offered. It must not apply a second 170 Sovs.
+- Whichever trigger fires **first** applies −170 SOVS and sets `debt_relief_claimed = true`.
+- Once the flag is set, the other trigger is **disabled** — greyed out in the payment UI, and its dialogue line is not offered. It must not apply a second 170 SOVS.
 - Because (a) can only fire in Stage 1 and (b) can only fire at the Stadtpark resolution, **(a) always wins when the player takes it.** (b) is the fallback for players who did not.
-- **Edge case — café paid in full at Stage 1** (dialogue option 2, "Here's 340 Sovs right now"): the café line is discharged, there is nothing left to reduce. Set `debt_relief_claimed = true` as consumed-and-moot. The insurance does **not** convert to cash, a refund, or credit against the opera debt.
-- Relief can never drive the café line, or the running total, below 0 Sovs.
+- **Edge case — café paid in full at Stage 1** (dialogue option 2, "Here's 340 SOVS right now"): the café line is discharged, there is nothing left to reduce. Set `debt_relief_claimed = true` as consumed-and-moot. The insurance does **not** convert to cash, a refund, or credit against the opera debt.
+- Relief can never drive the café line, or the running total, below 0 SOVS.
 
-#### Pot 2: Hans-Jürgen's Path A contribution — **500 Sovs, separate, DOES stack**
+#### Pot 2: Hans-Jürgen's Path A contribution — **500 SOVS, separate, DOES stack**
 
 **State flag: `hans_jurgen_path_a_contribution` (bool, default `false`).**
-- Path A only (Gustav returns to service). 0 Sovs on Paths B, C and D.
+- Path A only (Gustav returns to service). 0 SOVS on Paths B, C and D.
 - Applies against the **accumulated total**, not the café line.
-- **Stacks with the 170 Sovs relief.** A Path A player who took café dialogue option 3 receives both: −170 Sovs and −500 Sovs.
-- Sometimes flavoured as "insurance" in his dialogue. **It is not the same pot as the 170 Sovs café insurance payout.** Do not merge them; do not let one disable the other.
+- **Stacks with the 170 SOVS relief.** A Path A player who took café dialogue option 3 receives both: −170 SOVS and −500 SOVS.
+- Sometimes flavoured as "insurance" in his dialogue. **It is not the same pot as the 170 SOVS café insurance payout.** Do not merge them; do not let one disable the other.
 
 #### Separately: Director Hoffmann negotiation (unchanged)
 
-Only if Director Hoffmann pursues the party to Stadtpark (debt unaddressed at the Opera House). One stat check, not both: **Charm 4 → −500 Sovs** or **Bravado 4 → −300 Sovs**, against the opera line.
+Only if Director Hoffmann pursues the party to Stadtpark (debt unaddressed at the Opera House). One stat check, not both: **Charm 4 → −500 SOVS** or **Bravado 4 → −300 SOVS**, against the opera line.
 
 ### 3. Penalties
 
 | Path | Adjustment |
 |------|-----------|
-| Path C — Gustav escapes forever | **+1,000 Sovs** (horse value added) |
-| Path D — bros bail | **+500 Sovs** abandonment fee |
+| Path C — Gustav escapes forever | **+1,000 SOVS** (horse value added) |
+| Path D — bros bail | **+500 SOVS** abandonment fee |
 
 ### 4. Resulting player-owed figures
 
-Excluding the Director negotiation. "Relief" = the single 170 Sovs.
+Excluding the Director negotiation. "Relief" = the single 170 SOVS.
 
-| Path | Base | Relief claimed | Path A 500 Sovs | **Player owes** |
+| Path | Base | Relief claimed | Path A 500 SOVS | **Player owes** |
 |------|------|----------------|-------------|-----------------|
-| **A** — Gustav returns, worst case | 2,840 Sovs | −170 Sovs | −500 Sovs | **2,170 Sovs** |
-| **A** — Gustav returns, best case | 1,940 Sovs | −170 Sovs | −500 Sovs | **1,270 Sovs** |
-| **B** — Gustav retires, worst case | 2,840 Sovs | −170 Sovs | — | **2,670 Sovs** |
-| **B** — Gustav retires, best case | 1,940 Sovs | −170 Sovs | — | **1,770 Sovs** |
-| **C** — Gustav escapes, worst case | 2,840 Sovs + 1,000 Sovs | −170 Sovs | — | **3,670 Sovs** |
-| **C** — Gustav escapes, best case | 1,940 Sovs + 1,000 Sovs | −170 Sovs | — | **2,770 Sovs** |
-| **D** — bros bail, worst case | 2,840 Sovs + 500 Sovs | −170 Sovs | — | **3,170 Sovs** |
-| **D** — bros bail, best case | 1,940 Sovs + 500 Sovs | −170 Sovs | — | **2,270 Sovs** |
+| **A** — Gustav returns, worst case | 2,840 SOVS | −170 SOVS | −500 SOVS | **2,170 SOVS** |
+| **A** — Gustav returns, best case | 1,940 SOVS | −170 SOVS | −500 SOVS | **1,270 SOVS** |
+| **B** — Gustav retires, worst case | 2,840 SOVS | −170 SOVS | — | **2,670 SOVS** |
+| **B** — Gustav retires, best case | 1,940 SOVS | −170 SOVS | — | **1,770 SOVS** |
+| **C** — Gustav escapes, worst case | 2,840 SOVS + 1,000 SOVS | −170 SOVS | — | **3,670 SOVS** |
+| **C** — Gustav escapes, best case | 1,940 SOVS + 1,000 SOVS | −170 SOVS | — | **2,770 SOVS** |
+| **D** — bros bail, worst case | 2,840 SOVS + 500 SOVS | −170 SOVS | — | **3,170 SOVS** |
+| **D** — bros bail, best case | 1,940 SOVS + 500 SOVS | −170 SOVS | — | **2,270 SOVS** |
 
-If the 170 Sovs relief is never claimed (player took dialogue option 1 and finished on Path B, C or D), add 170 Sovs back to the figures above.
+If the 170 SOVS relief is never claimed (player took dialogue option 1 and finished on Path B, C or D), add 170 SOVS back to the figures above.
 
-**Absolute floor:** Path A + Papageno + Prima Donna avoided + 170 Sovs relief + 500 Sovs contribution + Charm 4 Director negotiation = **770 Sovs**. This requires the Director to be present, which requires the opera debt to have gone unaddressed — so it is reachable but deliberately awkward.
+**Absolute floor:** Path A + Papageno + Prima Donna avoided + 170 SOVS relief + 500 SOVS contribution + Charm 4 Director negotiation = **770 SOVS**. This requires the Director to be present, which requires the opera debt to have gone unaddressed — so it is reachable but deliberately awkward.
 
 ### 5. Implementation notes
 
 - Running total key: `fiaker_fiasco_damage_sov`. All locations write into it; none of them own it.
 - Both relief flags are **quest-scoped and one-way**. Nothing in the game clears `debt_relief_claimed` back to `false`.
-- Installments (500 Sovs minimum at Stadtpark, 50 Sovs minimum at the café) draw down the post-relief figure. They are payment, not relief, and do not touch either flag.
+- Installments (500 SOVS minimum at Stadtpark, 50 SOVS minimum at the café) draw down the post-relief figure. They are payment, not relief, and do not touch either flag.
 - Sinfonia vendors read the post-relief outstanding balance for their hostility and pricing checks.
 
 ---

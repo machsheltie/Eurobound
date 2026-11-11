@@ -25,14 +25,14 @@
 - **Design**: Cracked absinthe glass with Green Fairy silhouette emerging, bottle opener as the glass stem
 - **Material**: Emerald-tinted metal with iridescent "oil slick" finish
 - **Inscription**: "I Saw Myself"
-- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vaněk for 22 Sovs
+- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vaněk for 22 SOVS
 - **Special Feature**: Surface appears to shift colors in different lighting (lenticular effect)
 - **Check Point**: Dr. Vaněk checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Absinthium Opener**: Can explore and complete puzzle, but cannot receive stamp or purchase Absinthe Lager until opener acquired
 
 **Dr. Vaněk's Opener Check**:
-- *With Blarney Trap Opener, No Absinthium Opener*: "Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 Sovs. Then we discuss stamps and signature brews."
+- *With Blarney Trap Opener, No Absinthium Opener*: "Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 SOVS. Then we discuss stamps and signature brews."
 - *With Both Openers*: "The cracked glass. You've navigated the mirrors — or paid for the privilege. Either way, you've committed. The Absinthe Lager awaits. Prepare for... introspection."
 - *Without Blarney Trap Opener*: "No Publandia key, no brewery tour access. The Continental Trail has protocols. Return when properly credentialed."
 
@@ -222,7 +222,7 @@
 | SP Restoration | +15 |
 | Buff | None |
 | Debuff Risk | 30% "Green Fairy Confusion" to USER |
-| Price | 12 Sovs |
+| Price | 12 SOVS |
 | Brewed By | The Absinthium Taproom (in-house) |
 
 **Flavor Text**: "It's not a bug, it's a feature. The disorientation means it's working."

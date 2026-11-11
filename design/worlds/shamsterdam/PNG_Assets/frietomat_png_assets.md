@@ -98,7 +98,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 | Red Occupied Light | (960, 0) | 32x32 | Indicator lamp, lit state |
 | Red Light Off | (992, 0) | 32x32 | Indicator lamp, dark state |
 | Menu Board | (768, 64) | 192x128 | Shows what SHOULD be in each slot |
-| Coin Slot & Handle Plate | (768, 192) | 96x96 | Insert-turn mechanism close-up, 44px+ touch target art |
+| Coin Slot & Handle Plate | (768, 192) | 96x96 | Insert-turn mechanism close-up, 44px+ click target art |
 | Handle Turned Variant | (864, 192) | 96x96 | Mid-rotation state of the same plate |
 
 ### Counter & Fixtures:
@@ -162,7 +162,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Anouk Counter Idle | (0, 0) | 64x96 | Frietomat yellow uniform, efficiency incarnate |
-| Anouk Handing Change | (64, 0) | 64x96 | "Coins? Three Sovs. There." |
+| Anouk Handing Change | (64, 0) | 64x96 | "Coins? Three SOVS. There." |
 | Anouk Restocking Frame 1 | (128, 0) | 64x96 | Loading a slot from the rear |
 | Anouk Restocking Frame 2 | (192, 0) | 64x96 | Slot closed, next item |
 | Anouk Recognition Nod | (256, 0) | 64x96 | Frietomat Regular status acknowledgment |
@@ -232,7 +232,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Wall Navigation Panel | (0, 0) | 256x256 | Compartment selection grid mirroring THE WALL, item names + prices |
-| Coin Insertion Prompt | (256, 0) | 128x64 | "3 Sovs — Insert Coins" with coin-tap zone |
+| Coin Insertion Prompt | (256, 0) | 128x64 | "3 SOVS — Insert Coins" with coin-click zone |
 | Handle Turn Prompt | (256, 64) | 128x64 | Rotational swipe indicator |
 | Food Acquired Popup | (256, 128) | 128x96 | Item obtained card with food icon slot |
 | Mystery Reveal Panel | (384, 0) | 128x128 | "What did you get?" reveal frame |
@@ -249,7 +249,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 | Empty Slot Despair Popup | (320, 288) | 128x64 | "Someone beat you to it." |
 
 ### Technical Notes:
-- Wall Navigation Panel slots are 44px+ touch targets at gameplay scale
+- Wall Navigation Panel slots are 44px+ click targets at gameplay scale
 - Status icons use distinct silhouettes (see Accessibility) — never color-only
 - Achievement badges grayscale until earned (modulate, not separate art)
 
@@ -351,7 +351,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 - Occupied vs. empty compartments coded by light + interior food silhouette + door-glass shine, never red light alone
 - Status icons use unique silhouettes (mug of warmth, cheese wedge, noodle disc, chili, plate, linked hands)
 - Mystery Item wrapped state uses "?" embossing, not color coding
-- Touch zones minimum 44px for every wall slot, coin plate, and counter interaction
+- Click zones minimum 44px for every wall slot, coin plate, and counter interaction
 
 ---
 
@@ -463,7 +463,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 - "The kroket... it is warm... like... like the universe was once warm... you know?"
 - "Yes, that's meat. Probably."
 - "You belong to the wall now. The wall belongs to you."
-- "This is better than 18 Sovs pancakes. I need to DOCUMENT this realization."
+- "This is better than 18 SOVS pancakes. I need to DOCUMENT this realization."
 
 ---
 
@@ -525,7 +525,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 - [ ] Satirical theme is clear throughout all assets (affectionate portrait — the tourist experience is the joke, never Frietomat)
 - [ ] Hidden areas/interactions have discoverable visual cues (Mystery Row, restock door / tunnel emergence wall, Regular's efficiency)
 - [ ] Performance optimized (CPU particles, atlas limits respected, one crowd block per period)
-- [ ] Touch zone sizing considered (44px minimum for wall slots, coin plate, counter)
+- [ ] Click zone sizing considered (44px minimum for wall slots, coin plate, counter)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (occupancy silhouettes, status icon shapes)
 - [ ] Social media viral potential maximized in composition choices (THE WALL symmetric hero framing)
 
@@ -542,7 +542,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 | Gameplay Value Established | ✅ | Wall interaction system, Mystery gamble, time-based crowds, status effects, Regular track |
 | Technical Feasibility | ✅ | Slot-overlay architecture, crowd blocks, static fallbacks all documented |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 34 MB, 15 particles per profile budget |
-| Accessibility Features | ✅ | Visual mirrors for all audio cues, no-flicker/no-shimmer modes, 44px touch zones |
+| Accessibility Features | ✅ | Visual mirrors for all audio cues, no-flicker/no-shimmer modes, 44px click zones |
 | No Crypto Elements | ✅ | Pure coin-operated tradition; the machines don't even take card |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 

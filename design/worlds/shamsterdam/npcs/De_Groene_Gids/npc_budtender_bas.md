@@ -22,7 +22,7 @@ Reading a script. Bas provides accurate product information, enforces the no-tob
 That they are somewhere historic. Lord Pilsner: "This is HISTORIC. We're in the GREEN GUIDE. THE Green Guide." Chadwick needs footage and is about to be told he cannot have it. Bradley reads a laminated menu with too many options and asks whether there is a "signature blend," which there is, and it is the highest-margin item, and Bas will recommend it because that is what the script says.
 
 ### The Comedy Gap
-The bros are paying 20 Sovs a gram for a sign. Locals walk past the door to smaller shops with better product and Bas watches them do it forty times a night. He has told the truth in every sentence and it has never once functioned as a warning. The satire is brand tourism: paying for the photo, not the product, and defending the purchase afterward.
+The bros are paying 20 SOVS a gram for a sign. Locals walk past the door to smaller shops with better product and Bas watches them do it forty times a night. He has told the truth in every sentence and it has never once functioned as a warning. The satire is brand tourism: paying for the photo, not the product, and defending the purchase afterward.
 
 ### The Dead Eyes
 Bas has the largest frame count in the location and the smallest emotional range. His Dead-Eyed Stare is the held default between all scripted beats. He has explained the no-tobacco rule roughly fifty thousand times. He is not depressed and he is not rude — he is a competent employee who has run out of any reason to inflect.
@@ -131,7 +131,7 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 > *(Beat.)*
 > "Yes, the fee is normal. No, we do not control the fee."
 
-**If pressed on the 5 Sovs fee**:
+**If pressed on the 5 SOVS fee**:
 > "It is not our machine." *(It is branded with the shop's logo.)* "It has our name on it. It is not our machine."
 
 ### The Space Cake Timer
@@ -166,15 +166,15 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 
 ### Sales Close
 
-> "Your total is sixty-three Sovs."
+> "Your total is sixty-three SOVS."
 > *(Ringing Up animation.)*
-> "Would you like a bag. The bag is two Sovs."
+> "Would you like a bag. The bag is two SOVS."
 
 **If the player queries the bag charge**:
-> "The bag is two Sovs." *(He has no further information about the bag.)*
+> "The bag is two SOVS." *(He has no further information about the bag.)*
 
 ### Post-Interaction
-> "Upstairs is the VIP lounge. It is ten Sovs. It is this room with a different carpet." *(Beat.)* "I am required to mention it. I have mentioned it."
+> "Upstairs is the VIP lounge. It is ten SOVS. It is this room with a different carpet." *(Beat.)* "I am required to mention it. I have mentioned it."
 
 ### If Player Declines / Alternative Path
 **Player asks for a sample**:
@@ -220,7 +220,7 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 ### Positioning Notes
 - Behind the long wooden bar with the glass product display cases, ground floor, directly under the digital menu boards
 - Green-tinted lighting on everything including him; the ventilation is decorative and the haze is permanent
-- The branded ATM (5 Sovs fee) is in his sightline and he gestures at it without looking roughly forty times a shift
+- The branded ATM (5 SOVS fee) is in his sightline and he gestures at it without looking roughly forty times a shift
 - Marieke works the T-shirt wall behind and to his right; the two of them are the shop's cold and hot upsell and neither coordinates with the other
 - The Bob Marley poster (legally required in tourist coffeeshops) is directly above his head in every counter conversation
 
@@ -231,15 +231,15 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 ### Menu
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| "Shamsterdam Dream" (Tourist Rec) | 18 Sovs/g | ~9 Sovs/g elsewhere | +20 SP, −Speed, delayed Space Cake Effect. "Very popular. Very smooth." (scripted) |
-| "Green Guide Special" (House) | 15 Sovs/g | ~8 Sovs/g elsewhere | +15 SP, +Confused. "House blend. Good choice." (automatic) |
-| "Premium Heritage" | 25 Sovs/g | ~12 Sovs/g elsewhere | +30 SP, −Intelligence, +Bravado temporarily. "Excellent selection, sir." (upsell confirmed) |
-| Space Cake (1 piece) | 8 Sovs | 8 Sovs | Delayed: +40 SP after 2 hours game time. Unlocks the "It's Not Working" dialogue chain. |
-| Hash (1g) | 12 Sovs | 12 Sovs | +25 SP, "Heavy" (−Movement speed). *sigh* "For smoking. Not eating." |
-| Bag | 2 Sovs | 0 Sovs | It is a bag. He has no further information about the bag. |
-| VIP Lounge upstairs | 10 Sovs | 0 Sovs | Same room. Slightly nicer chairs. Different carpet. He is required to mention it. |
+| "Shamsterdam Dream" (Tourist Rec) | 18 SOVS/g | ~9 SOVS/g elsewhere | +20 SP, −Speed, delayed Space Cake Effect. "Very popular. Very smooth." (scripted) |
+| "Green Guide Special" (House) | 15 SOVS/g | ~8 SOVS/g elsewhere | +15 SP, +Confused. "House blend. Good choice." (automatic) |
+| "Premium Heritage" | 25 SOVS/g | ~12 SOVS/g elsewhere | +30 SP, −Intelligence, +Bravado temporarily. "Excellent selection, sir." (upsell confirmed) |
+| Space Cake (1 piece) | 8 SOVS | 8 SOVS | Delayed: +40 SP after 2 hours game time. Unlocks the "It's Not Working" dialogue chain. |
+| Hash (1g) | 12 SOVS | 12 SOVS | +25 SP, "Heavy" (−Movement speed). *sigh* "For smoking. Not eating." |
+| Bag | 2 SOVS | 0 SOVS | It is a bag. He has no further information about the bag. |
+| VIP Lounge upstairs | 10 SOVS | 0 SOVS | Same room. Slightly nicer chairs. Different carpet. He is required to mention it. |
 
-*(Merchandise — T-shirt 35 Sovs, branded grinder 45 Sovs, poster 20 Sovs — is Marieke's counter, not Bas's. He will not pitch it and does not receive commission.)*
+*(Merchandise — T-shirt 35 SOVS, branded grinder 45 SOVS, poster 20 SOVS — is Marieke's counter, not Bas's. He will not pitch it and does not receive commission.)*
 
 ### Status Effects Applied
 | Effect | Source | Duration | Result |
@@ -312,7 +312,7 @@ Bas does not warm. He *shortens*. The scripted greeting compresses, the recommen
 | bas_scripted_recommendation (3 frames) | Any recommendation request. "Shamsterdam Dream. Very smooth. Very popular." |
 | bas_sigh (2 frames) | Precedes the no-tobacco explanation; also any hash-eating question |
 | bas_no_tobacco_explanation (3 frames) | Tobacco mixing detected. Exhausted-teacher cadence, three beats. |
-| bas_ringing_up | Transaction close. "Your total is sixty-three Sovs." |
+| bas_ringing_up | Transaction close. "Your total is sixty-three SOVS." |
 
 ### Sprite States
 | State | When Used |
@@ -361,7 +361,7 @@ Bas gates nothing structurally and refuses nobody. He gates *information complia
 ### Screenshot Moments
 1. The Dead-Eyed Stare, full frame, no context needed
 2. The Bob Marley poster directly above Bas's head during a transaction
-3. The 63 Sovs total on screen beside a "would you like a bag, the bag is two Sovs" prompt
+3. The 63 SOVS total on screen beside a "would you like a bag, the bag is two SOVS" prompt
 4. The Polaroid wall, late game, with the player's own party visible in the corner
 5. The four-panel "It's Not Working" chain, 30 → 60 → 90 → 120 minutes
 
@@ -369,7 +369,7 @@ Bas gates nothing structurally and refuses nobody. He gates *information complia
 - "It. Is. Working. Wait."
 - "Yes, it's expensive. We are famous. Famous things cost money. This is how famous works."
 - "We do not do samples. This is not Costco."
-- "The bag is two Sovs."
+- "The bag is two SOVS."
 - "It has our name on it. It is not our machine."
 - The Dead-Eyed Stare as a universal reaction image
 
@@ -420,7 +420,7 @@ Dutch, young, urban, and entirely flat. Fluent English delivered without inflect
 - The Dead-Eyed Stare is the **held default between all scripted beats**, per the asset doc. It is not a reaction state. If it only appears on trigger, the character reads as moody rather than depleted.
 - Bas and Marieke must be distinguishable by silhouette. She is the only staff sprite drawn with raised eyebrows — commission is the difference and it should be visible without colour.
 - The "It's Not Working" chain is the location's centrepiece. Bas's four responses must get progressively shorter, and he must never look up. The bros' escalation carries the scene; Bas is the flat surface it bounces off.
-- The 5 Sovs ATM contradiction (branded with the shop's logo, "not our machine") is authored and must never be resolved.
+- The 5 SOVS ATM contradiction (branded with the shop's logo, "not our machine") is authored and must never be resolved.
 - Bas takes no merchandise commission and must never pitch a T-shirt. If he upsells, he becomes Marieke and the shop loses its cold pole.
 - "Fine." after the long pause is his only interior moment. Do not build on it, do not follow it up, and do not add a second one.
 
@@ -429,17 +429,17 @@ Dutch, young, urban, and entirely flat. Fluent English delivered without inflect
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Bas has none. Cash only, Sovs, with a 5 Sovs ATM fee that is not theirs.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Bas has none. Cash only, SOVS, with a 5 SOVS ATM fee that is not theirs.
 - [x] **NO automatic crypto assumptions** — the location profile explicitly establishes cash-only and no blockchain; do not add any
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
-- [x] **The bros are never scam-aware** — they will defend the 63 Sovs purchase and describe the shop as historic for the remainder of the game
+- [x] **The bros are never scam-aware** — they will defend the 63 SOVS purchase and describe the shop as historic for the remainder of the game
 - [x] **Nothing winks** — Bas states facts flatly and never signals that the pricing is absurd, because to him it simply is the pricing
 - [x] **Focus on city-specific cultural exploitation instead** — the satire is brand tourism and paying for the sign rather than the product
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is Americans who will not wait two hours and will not read a menu; Dutch coffeeshop culture and regulation are presented as sensible and Bas enforces them correctly
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Bas is not the owner and takes no cut; he is an accurate, rule-following employee in an overpriced building
-- [x] Humour is affectionate mockery, not mean-spirited — Bas is never humiliated, never wrong, and never cruel; the shop is the target, the customers are the punchline, and he is the flat surface between them
+- [x] Humour is affectionate mockery — Bas is never humiliated, never wrong, and never cruel; the shop is the target, the customers are the punchline, and he is the flat surface between them
 - [x] Cannabis handled without moralising — the product is legal, regulated, correctly described, and the satire targets tourist behaviour and pricing, never use
 
 ---

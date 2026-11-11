@@ -80,7 +80,7 @@ These generators fight the style in the same four ways every time:
 
 ## 7. Canon flags raised while writing these
 
-- **`absinthe-shot.md`** — source doc calls it "Prague Special." The World Naming Consistency Guide forbids real city names. Renamed here to **Debaucheryville Special**. `items.md` needs the same edit.
+- **`absinthe-shot.md`** — source doc calls it "Prague Special." The World Naming Consistency Guide (retired: `design/legacy/retired_templates/style_guides__Eurobound World Naming Consistency Guide.md`) forbids real city names. Renamed here to **Debaucheryville Special**. `items.md` needs the same edit.
 - **`bluetooth-earpiece-blinking-led.md`** — dual-listed in `items.md` (Utility) and `equipment.md` (Accessories, as "Bluetooth Earpiece (Always On)"). One sprite serves both; no second file needed.
 - **`set-the-suburban-dad-regression.md`** — calls for white sneakers with crew socks, which does not exist as an individual entry in `equipment.md`. Built inside the set file. Consider promoting it to its own footwear item.
 - **Real brand names are used throughout**, per author direction. Both Gemini and GPT Image 2 will refuse or distort some of these. Where a generator balks, the fastest workaround is to strip the brand from the prompt and keep the physical description — every subject block in this folder is written to be visually complete without the brand name doing any work.

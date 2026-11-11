@@ -71,7 +71,7 @@ Mad-scientist read must come from *credibility*, not caricature — no wild hair
 > "Thirty percent. Reported. Before purchase. He heard the number and ordered it, which is the twelfth consecutive subject this week to do so, and I have started to suspect the number is not a deterrent but an *attraction*. Fascinating. Note that. Note the ordering time — four seconds after disclosure. Four. He did not deliberate. Nobody deliberates. That's the finding. That's the actual finding."
 
 ### Motivation
-He wanted to study altered perception and academia would not let him do it the way he wanted to do it. So he built a room where perception is altered by design, staffed it with himself, and charges twelve Sovs a head for the privilege of being data. He is not bitter about the university. He is simply *no longer constrained by it*, and the difference has made him productive and slightly frightening.
+He wanted to study altered perception and academia would not let him do it the way he wanted to do it. So he built a room where perception is altered by design, staffed it with himself, and charges twelve SOVS a head for the privilege of being data. He is not bitter about the university. He is simply *no longer constrained by it*, and the difference has made him productive and slightly frightening.
 
 ---
 
@@ -88,7 +88,7 @@ He wanted to study altered perception and academia would not let him do it the w
 ### Bottle Opener Check (Brewery Tour gate)
 
 **With Blarney Trap Opener, no Absinthium Opener**:
-> "Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 Sovs. Then we discuss stamps and signature brews."
+> "Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 SOVS. Then we discuss stamps and signature brews."
 
 **With both openers**:
 > "The cracked glass. You've navigated the mirrors — or paid for the privilege. Either way, you've committed. The Absinthe Lager awaits. Prepare for... introspection."
@@ -123,7 +123,7 @@ He wanted to study altered perception and academia would not let him do it the w
 *If the player asks what's at the bottom of the void behind the bar:*
 > "I've not looked. That's not evasion — it is methodology. Some questions produce better data unasked." *(writes something)*
 
-### Serving Dialogue — Absinthe Lager (12 Sovs)
+### Serving Dialogue — Absinthe Lager (12 SOVS)
 > "The Absinthe Lager. My signature creation. The green fairy is IN the beer. Metaphorically. And slightly literally."
 
 > "You may experience mild disorientation. This is intentional. If you DON'T feel disoriented, tell me immediately — I need to adjust the formula."
@@ -144,8 +144,8 @@ He wanted to study altered perception and academia would not let him do it the w
 *Declining Vaněk's Survey:*
 > "Of course. Participation is voluntary, that's the entire point of participation. If it weren't voluntary it would be observation, and I do that anyway, for free."
 
-*Buying the opener for 22 Sovs rather than completing the maze:*
-> "Twenty-two Sovs. No judgment — several of my most interesting subjects have paid. The maze measures navigation. The payment measures something else. Both are data."
+*Buying the opener for 22 SOVS rather than completing the maze:*
+> "Twenty-two SOVS. No judgment — several of my most interesting subjects have paid. The maze measures navigation. The payment measures something else. Both are data."
 
 *Asking whether any of this is legal:*
 > "It's licensed. Everything here is licensed. The licenses are for a *beverage establishment*, which this indisputably is, and the licensing authority has never asked a follow-up question. I would answer honestly if they did. They never do."
@@ -203,8 +203,8 @@ He wanted to study altered perception and academia would not let him do it the w
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| **The Absinthium Taproom Bottle Opener** | 22 Sovs, or free by completing the Mirror Maze navigation puzzle | A cracked absinthe glass with an emerging Green Fairy silhouette, emerald-tinted metal with an iridescent lenticular finish, inscribed "I Saw Myself" | Required for the Brewery Passport stamp and Absinthe Lager purchase at this location. Surface shifts color in different lighting |
-| **Absinthe Lager** (signature brew) | 12 Sovs | 8.5% ABV, absinthe-infused, legally questionable | +15 SP; no HP restoration; no buff; **30% chance of "Green Fairy Confusion" to the drinker**. The only signature beer in the tour designed to potentially debuff its own user |
+| **The Absinthium Taproom Bottle Opener** | 22 SOVS, or free by completing the Mirror Maze navigation puzzle | A cracked absinthe glass with an emerging Green Fairy silhouette, emerald-tinted metal with an iridescent lenticular finish, inscribed "I Saw Myself" | Required for the Brewery Passport stamp and Absinthe Lager purchase at this location. Surface shifts color in different lighting |
+| **Absinthe Lager** (signature brew) | 12 SOVS | 8.5% ABV, absinthe-infused, legally questionable | +15 SP; no HP restoration; no buff; **30% chance of "Green Fairy Confusion" to the drinker**. The only signature beer in the tour designed to potentially debuff its own user |
 | Brewery Passport stamp — The Absinthium Seal | Free, on conditions met | Slot 1 of 4, Debaucheryville page | Shifting emerald ink, green fairy trapped in a cracked glass, inscribed "I Saw Myself" |
 | Vaněk's Survey | Free | He gets data; you get items and a selfie variant | Optional research participation; rewards include items and the "The Research Subject" selfie variant at the Floating Absinthe Chalice |
 | Green Fairy Essence | Boss drop (not sold) | Consumable | Guaranteed Confusion, +30 SP |
@@ -308,12 +308,12 @@ He wanted to study altered perception and academia would not let him do it the w
 - **Related quests**: "The Green Fairy" (find and complete the Taproom); "Mirror, Mirror" (defeat Mirror Chad without taking damage); "Reality Anchor" (complete the maze without triggering Confusion)
 
 ### Quest Gate Function (If Applicable)
-**Yes — dual gate.** Vaněk is the Continental Trail's first credential check in Debaucheryville and the reason the city's brewery tour is downstream of Publandia. He is also the sole source of the Absinthium opener (maze completion or 22 Sovs), which gates Slot 1 of the city's four-stamp passport page.
+**Yes — dual gate.** Vaněk is the Continental Trail's first credential check in Debaucheryville and the reason the city's brewery tour is downstream of Publandia. He is also the sole source of the Absinthium opener (maze completion or 22 SOVS), which gates Slot 1 of the city's four-stamp passport page.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| The Absinthium Taproom Bottle Opener | Maze completion or 22 Sovs purchase | Yes | Unlocks stamp eligibility and Absinthe Lager purchase; lenticular color-shift keychain |
+| The Absinthium Taproom Bottle Opener | Maze completion or 22 SOVS purchase | Yes | Unlocks stamp eligibility and Absinthe Lager purchase; lenticular color-shift keychain |
 | Absinthe Lager | After both openers presented | No (consumable) | +15 SP; 30% chance of "Green Fairy Confusion" to the user |
 | The Absinthium Seal (stamp) | All four unlock conditions met | Yes | Brewery Passport, Debaucheryville page, Slot 1; "I Saw Myself" |
 | Green Fairy Essence | Green Fairy Wisp defeated | No (consumable) | Guaranteed Confusion, +30 SP |
@@ -396,7 +396,7 @@ Czech, educated, precise. Academic cadence that survived the departure from acad
 
 ### ⚠️ CRYPTO CHECK
 - [x] **Crypto content conforms to `design/economy/economy_system.md`** — this profile contains **zero** crypto content; the source location file establishes none
-- [x] **NO automatic crypto assumptions** — Vaněk deals in Sovs, beer, and data
+- [x] **NO automatic crypto assumptions** — Vaněk deals in SOVS, beer, and data
 - [x] **Coins, kiosks, and certificates come from the master pool** — none used, none invented
 - [x] **The bros are never scam-aware** — Vaněk discloses the confusion percentage before purchase and they order it four seconds later, every time
 - [x] **Nothing winks** — his precision is sincere professional practice, never a signal to the audience that this is satire

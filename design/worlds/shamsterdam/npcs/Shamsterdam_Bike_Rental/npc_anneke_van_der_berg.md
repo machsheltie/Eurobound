@@ -9,7 +9,7 @@
 - **Role**: Vendor / Insurance Upseller / Comedy Foil / Damage Assessor
 - **Associated Quest**: `shamsterdam_quest_insurance_claim` (primary interrogator); supports `shamsterdam_quest_tour_de_shame` (holds the bet against you)
 - **Primary Location**: Shamsterdam Bike Rental — secondary counter, beside the insurance display, Shamsterdam
-- **Secondary Appearances**: None. Her phone number ships with the 40 Sovs Survivor Package "in case of emergency only" and has never been dialled.
+- **Secondary Appearances**: None. Her phone number ships with the 40 SOVS Survivor Package "in case of emergency only" and has never been dialled.
 
 ---
 
@@ -22,7 +22,7 @@ Processing rentals, running the insurance options at speed, and photographing ev
 That Anneke is the friendly one. She is warm, quick, and asks questions, and the bros read all three as rapport. Chadwick thinks the photo is a courtesy. Lord Pilsner thinks he is being flirted with. Bradley, correctly, believes he is being assessed, and is right, and buys the Platinum.
 
 ### The Comedy Gap
-Anneke's warmth is not fake, and the assessment is not hostile — she is simply doing both at once, and the bros can only perceive one. She predicts "tram tracks" to their faces before they leave and they laugh. They return with tram-track damage. She says "called it, Dad owes me five Sovs" and they laugh again, because it still has not landed. It will not land.
+Anneke's warmth is not fake, and the assessment is not hostile — she is simply doing both at once, and the bros can only perceive one. She predicts "tram tracks" to their faces before they leave and they laugh. They return with tram-track damage. She says "called it, Dad owes me five SOVS" and they laugh again, because it still has not landed. It will not land.
 
 ### The Detail That Makes Her Not A Villain
 The prediction game has a payout: if she guesses wrong about your damage, you get a discount. She offers this unprompted, and she loses it often enough that it costs her real money. She keeps offering it because being wrong is more interesting than being right.
@@ -101,7 +101,7 @@ Learning the business — properly, with data, rather than by absorbing twenty-t
 
 *She turns the tier display toward the customer with one hand while writing with the other.*
 
-> "Extra insurance is twenty Sovs. Yes, twenty seems like a lot until you see how much the bike costs."
+> "Extra insurance is twenty SOVS. Yes, twenty seems like a lot until you see how much the bike costs."
 > *(Beat.)*
 > "Three hundred and fifty. That is the number. I said it so you cannot say nobody said it."
 
@@ -135,7 +135,7 @@ Learning the business — properly, with data, rather than by absorbing twenty-t
 > "I am going to guess... tram tracks. It is usually tram tracks."
 
 **On return, if correct**:
-> "Called it. Tram tracks." *(She writes it on the board without looking at it.)* "Dad owes me five Sovs."
+> "Called it. Tram tracks." *(She writes it on the board without looking at it.)* "Dad owes me five SOVS."
 
 **On return, if wrong**:
 > "Basket theft." *(She actually stops.)* "I said tram tracks. I did not have basket theft on you at all."
@@ -185,7 +185,7 @@ Learning the business — properly, with data, rather than by absorbing twenty-t
 > "You are becoming a data point with a name. That does not happen."
 
 **After Tour de Shame is offered by Dirk**:
-> "He gave you the map." *(She leans on the counter.)* "I have five Sovs on you not finishing. Do not take it personally, I have five Sovs on everybody."
+> "He gave you the map." *(She leans on the counter.)* "I have five SOVS on you not finishing. Do not take it personally, I have five SOVS on everybody."
 
 **After Tour de Shame completion**:
 > "Twenty minutes." *(She pays her father, visibly, in coins, in front of the customer.)* "Worth it. I have never seen him do that face twice in one week."
@@ -223,18 +223,18 @@ Learning the business — properly, with data, rather than by absorbing twenty-t
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Rental processing | — | — | Intake form, deposit hold, intake photo |
-| Standard Insurance | 10 Sovs | 10 Sovs | Theft + minor damage, "minor" per Dirk's written definition |
-| Premium Insurance | 20 Sovs | 20 Sovs | Theft, damage, incidents, one canal recovery attempt |
-| Platinum Insurance | 35 Sovs | Statistically 0 Sovs | Everything but war and nuclear events; includes Opa Cees's Blessing for the rental duration |
+| Standard Insurance | 10 SOVS | 10 SOVS | Theft + minor damage, "minor" per Dirk's written definition |
+| Premium Insurance | 20 SOVS | 20 SOVS | Theft, damage, incidents, one canal recovery attempt |
+| Platinum Insurance | 35 SOVS | Statistically 0 SOVS | Everything but war and nuclear events; includes Opa Cees's Blessing for the rental duration |
 | Damage prediction wager | Free | 10% if she loses | She names your damage type in advance; wrong = 10% off next rental |
 | Insurance claim processing | Free | Variable | Interrogation stage of `shamsterdam_quest_insurance_claim` |
-| Add-ons (helmet, vest, mount, liner) | 2–5 Sovs/day | Fair | Sold at the counter with her editorial commentary attached |
+| Add-ons (helmet, vest, mount, liner) | 2–5 SOVS/day | Fair | Sold at the counter with her editorial commentary attached |
 
 ### Hidden Details / Easter Eggs
 - **The nationality tally board**: A real, examinable asset that updates with player behaviour. Damage a bike as a given nationality and the board reflects it on the next visit. Examine it late-game and the player's own contributions are visible in the numbers.
 - **The folded form in the drawer**: If you decline the prediction game, she writes it down anyway. Examine the drawer during the Insurance Claim quest and the folded form is there, with her prediction, and it is correct.
 - **The undamaged-return recalibration**: Returning three bikes undamaged causes her to permanently change one of her opening assessment lines to acknowledge you specifically. It is the only dialogue in the shop that rewrites itself.
-- **The five Sovs**: The running Dirk–Anneke wager is tracked. Examine the till late-game: there is a small handwritten ledger. Anneke is up.
+- **The five SOVS**: The running Dirk–Anneke wager is tracked. Examine the till late-game: there is a small handwritten ledger. Anneke is up.
 
 ---
 
@@ -246,7 +246,7 @@ Learning the business — properly, with data, rather than by absorbing twenty-t
 | Dirk van der Berg | Father. He runs the shop; she runs the numbers. The running wager is real, is settled in coins, and she is winning. |
 | Opa Cees | Grandfather. She brings him coffee. The coffee is bad. He drinks it. She has never been in the basement. |
 | The Bike Rental Guy (Bike Crossing kiosk) | Same fleet, same forms, different counter. She thinks he should keep a board. He does not keep a board. |
-| Henk (Voetgangerstunnel) | Sells the underground alternative. Anneke's assessment: "He charges five Sovs to guess. I do it free and I am better at it." |
+| Henk (Voetgangerstunnel) | Sells the underground alternative. Anneke's assessment: "He charges five SOVS to guess. I do it free and I am better at it." |
 | Officer van den Berg (Bike Crossing) | Same surname. She finds the question funny and answers differently every time she is asked. |
 | Marloes (Voetgangerstunnel map vendor) | Never met. Same profession — selling accuracy to people who ignore it — and neither knows the other exists. |
 
@@ -329,7 +329,7 @@ Anneke gates nothing structurally. Mechanically she gates the **prediction disco
 |------|-------------|------------|--------|
 | Prediction discount | Wrong prediction | Next rental | 10% off |
 | Insurance payout | Claim approved | One-time | Variable; scales with description honesty |
-| Anneke's number | Survivor Package (40 Sovs) | Rental duration | "In case of emergency only." Has never been dialled. Dialling it is not implemented and should not be. |
+| Anneke's number | Survivor Package (40 SOVS) | Rental duration | "In case of emergency only." Has never been dialled. Dialling it is not implemented and should not be. |
 
 ### State Flags Set
 - `anneke_met`: boolean
@@ -349,13 +349,13 @@ Anneke gates nothing structurally. Mechanically she gates the **prediction disco
 1. The nationality tally chalkboard, mid-game, with the player's own contributions visible
 2. Anneke's skeptical face at the exact moment a bro says "it was basically already like that"
 3. The intake photo — the face the player was caught making, framed on the comparison wall
-4. Anneke paying her father five Sovs in coins across the shop floor
+4. Anneke paying her father five SOVS in coins across the shop floor
 5. The folded prediction form in the drawer, unfolded, correct
 
 ### Meme Potential
 - "American? British? ...Australian. Okay, let me get the reinforced form."
 - "That's the face they all make."
-- "Called it. Tram tracks. Dad owes me five Sovs."
+- "Called it. Tram tracks. Dad owes me five SOVS."
 - "Have you ever ridden a bike before? Like, in traffic? Where people want you dead?"
 - "I am putting 'swan.' There is a box for wildlife. There has never been anything in the box."
 
@@ -416,7 +416,7 @@ Dutch, young, urban, fluent conversational English with a faster cadence than ei
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Anneke has none. Sovs, card, credit card holds, and a five-Sovs coin wager with her father.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Anneke has none. SOVS, card, credit card holds, and a five-SOVS coin wager with her father.
 - [x] **NO automatic crypto assumptions** — she keeps a chalkboard, not a ledger contract
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — Lord Pilsner believes he is being flirted with while being actuarially assessed, and this will never resolve
@@ -426,7 +426,7 @@ Dutch, young, urban, fluent conversational English with a faster cadence than ei
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the nationality board is a joke about tourist cycling incompetence, is player-influenced, and never attaches a trait to a people beyond "how they crash a rental bike"
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Anneke is competent, transparent about her methods, offers a discount when she is wrong, and pays her debts
-- [x] Humour is affectionate mockery, not mean-spirited — her warmth is real, her wager costs her money, and her best moment is being wrong
+- [x] Humour is affectionate mockery — her warmth is real, her wager costs her money, and her best moment is being wrong
 
 ---
 

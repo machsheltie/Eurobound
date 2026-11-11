@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 PM - 5 AM (pre-club through post-club hours)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: SOVS for purchases (3-25 Sovs), acceptance of impending sensory assault
+- **Item Requirements**: SOVS for purchases (3-25 SOVS), acceptance of impending sensory assault
 - **Previous Location Requirements**: None (the stall finds those heading clubward)
 - **Special Conditions**: Prices increase after midnight (desperation pricing)
 
@@ -143,45 +143,45 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 **Audio Defense**
 | Item | Price | Effect | Antonín's Take |
 |------|-------|--------|-----------------|
-| Foam Earplugs (Basic) | 3 Sovs | -30% Confusion from music, preserves hearing | "Better than nothing. Barely." |
-| Silicone Earplugs | 8 Sovs | -50% Confusion, better sound quality | "Now we're talking. You can still hear, just safely." |
-| Musician-Grade Plugs | 20 Sovs | -60% Confusion, full sound fidelity | "Professional choice. The sound stays, the damage doesn't." |
-| Custom Molded (Premium) | 45 Sovs | -75% Confusion, perfect fit | "For the serious. Once you go custom, you never go back." |
+| Foam Earplugs (Basic) | 3 SOVS | -30% Confusion from music, preserves hearing | "Better than nothing. Barely." |
+| Silicone Earplugs | 8 SOVS | -50% Confusion, better sound quality | "Now we're talking. You can still hear, just safely." |
+| Musician-Grade Plugs | 20 SOVS | -60% Confusion, full sound fidelity | "Professional choice. The sound stays, the damage doesn't." |
+| Custom Molded (Premium) | 45 SOVS | -75% Confusion, perfect fit | "For the serious. Once you go custom, you never go back." |
 
 **Visual Enhancement**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Glow Stick (Single) | 2 Sovs | +5 Mood, visible in crowd | "Basic. Functional. You'll lose it in an hour." |
-| Glow Stick Bundle (6) | 8 Sovs | +15 Mood, visible, shareable | "Smart. You'll make friends. Or lose them all." |
-| LED Bracelet | 12 Sovs | +10 Mood, +Charm in clubs, rechargeable | "Reusable. Responsible. Still ridiculous." |
-| Strobe-Resistant Shades | 15 Sovs | -40% Confusion from lights, +Style | "Yes, wear sunglasses inside. It's SURVIVAL, not fashion." |
-| Glow Glasses | 10 Sovs | +15 Mood, +Visibility, photo-ready | "You'll look stupid. You'll also be memorable." |
+| Glow Stick (Single) | 2 SOVS | +5 Mood, visible in crowd | "Basic. Functional. You'll lose it in an hour." |
+| Glow Stick Bundle (6) | 8 SOVS | +15 Mood, visible, shareable | "Smart. You'll make friends. Or lose them all." |
+| LED Bracelet | 12 SOVS | +10 Mood, +Charm in clubs, rechargeable | "Reusable. Responsible. Still ridiculous." |
+| Strobe-Resistant Shades | 15 SOVS | -40% Confusion from lights, +Style | "Yes, wear sunglasses inside. It's SURVIVAL, not fashion." |
+| Glow Glasses | 10 SOVS | +15 Mood, +Visibility, photo-ready | "You'll look stupid. You'll also be memorable." |
 
 **Chemical Support**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Energy Shot | 5 Sovs | +20 SP, +Speed (1 hour), crash risk | "Liquid motivation. The crash is real." |
-| Caffeine Pills (6) | 8 Sovs | +10 SP per pill, controlled release | "More controlled. Still artificial. Works." |
-| Electrolyte Packet | 3 Sovs | +10 HP, prevents Dehydration status | "Hydration is survival. This helps." |
-| Breath Mints (tin) | 4 Sovs | +Charm in close conversation | "For after the kebab. Or during. No judgment." |
-| Energy Gum | 6 Sovs | +15 SP, +fresh breath, subtle | "Caffeine without the bottle. Sophisticated." |
+| Energy Shot | 5 SOVS | +20 SP, +Speed (1 hour), crash risk | "Liquid motivation. The crash is real." |
+| Caffeine Pills (6) | 8 SOVS | +10 SP per pill, controlled release | "More controlled. Still artificial. Works." |
+| Electrolyte Packet | 3 SOVS | +10 HP, prevents Dehydration status | "Hydration is survival. This helps." |
+| Breath Mints (tin) | 4 SOVS | +Charm in close conversation | "For after the kebab. Or during. No judgment." |
+| Energy Gum | 6 SOVS | +15 SP, +fresh breath, subtle | "Caffeine without the bottle. Sophisticated." |
 
 **Tactical Accessories**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Phone Pouch (Secure) | 10 Sovs | -80% Pickpocket risk | "Your phone is your lifeline. Protect it." |
-| Mini Flashlight | 8 Sovs | Bathroom navigation, lost item finding | "Club bathrooms are dark for reasons. Be prepared." |
-| Wet Wipes (Pack) | 5 Sovs | Various emergency cleanups | "Don't ask what for. Just have them." |
-| Hair Ties (Set) | 3 Sovs | Practical utility | "Underrated. Essential. You'll thank me." |
-| Backup Charger | 18 Sovs | Phone resurrection | "Your phone will die. This brings it back." |
+| Phone Pouch (Secure) | 10 SOVS | -80% Pickpocket risk | "Your phone is your lifeline. Protect it." |
+| Mini Flashlight | 8 SOVS | Bathroom navigation, lost item finding | "Club bathrooms are dark for reasons. Be prepared." |
+| Wet Wipes (Pack) | 5 SOVS | Various emergency cleanups | "Don't ask what for. Just have them." |
+| Hair Ties (Set) | 3 SOVS | Practical utility | "Underrated. Essential. You'll thank me." |
+| Backup Charger | 18 SOVS | Phone resurrection | "Your phone will die. This brings it back." |
 
 **Regret Prevention**
 | Item | Price | Effect | Antonín's Take |
 |------|-------|--------|-----------------|
-| Protection Pack | 8 Sovs | Social responsibility | "No judgment. Only preparation." |
-| Aspirin (Packet) | 4 Sovs | Pre-emptive headache defense | "Take before bed. Thank me tomorrow." |
-| Snack Bar | 3 Sovs | +15 HP, prevents 3 AM crash | "Your body needs fuel. The club doesn't serve food." |
-| Water Bottle | 2 Sovs | Hydration, radical concept | "Revolutionary: drinking water. Try it." |
+| Protection Pack | 8 SOVS | Social responsibility | "No judgment. Only preparation." |
+| Aspirin (Packet) | 4 SOVS | Pre-emptive headache defense | "Take before bed. Thank me tomorrow." |
+| Snack Bar | 3 SOVS | +15 HP, prevents 3 AM crash | "Your body needs fuel. The club doesn't serve food." |
+| Water Bottle | 2 SOVS | Hydration, radical concept | "Revolutionary: drinking water. Try it." |
 
 ### The Midnight Price Increase
 - **Trigger**: After midnight, all prices +50%
@@ -246,7 +246,7 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 - "I see your group. None of you have protection. Statistically, two of you will have ringing ears by morning."
 
 *The Sales Pitch (Also Genuine Concern):*
-- "Earplugs. 8 Sovs. Your hearing? Priceless. Irreplaceable. Literally cannot be fixed once damaged."
+- "Earplugs. 8 SOVS. Your hearing? Priceless. Irreplaceable. Literally cannot be fixed once damaged."
 - "Glow sticks are fun. Earplugs are survival. Buy both. Start with the earplugs."
 - "The strobe shades look stupid. You know what looks stupider? Squinting for four hours."
 - "Energy shots work. The crash is real. The electrolytes help. Buy the combo."
@@ -264,7 +264,7 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 - "Come back tomorrow. Tell me how it went. I like hearing survival stories."
 
 *The Disappointment (If Refused):*
-- "Your choice. Your ears. I'll be here tomorrow when they're ringing. Earplugs will still be 8 Sovs."
+- "Your choice. Your ears. I'll be here tomorrow when they're ringing. Earplugs will still be 8 SOVS."
 - "Cool? You think earplugs aren't cool? You know what's not cool? Hearing aids at 45."
 - "Fine. Go. But remember this conversation when you're asking people to repeat themselves."
 
@@ -466,4 +466,4 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 
 ---
 
-*The Strobe Survival Kit: The club is 105 decibels. Your ears are irreplaceable. Antonín has the scars to prove it. 8 Sovs for earplugs, 0 Sovs for the lecture, priceless for your future hearing. Equip yourself. The night is hostile.*
+*The Strobe Survival Kit: The club is 105 decibels. Your ears are irreplaceable. Antonín has the scars to prove it. 8 SOVS for earplugs, 0 SOVS for the lecture, priceless for your future hearing. Equip yourself. The night is hostile.*

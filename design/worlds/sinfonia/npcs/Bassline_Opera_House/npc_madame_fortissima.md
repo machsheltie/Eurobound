@@ -255,8 +255,8 @@ The show. Eleven years of a sold-out Saturday that she built, in a house that sp
 |--------------|-------|--------------|---------------|
 | Prop room hint | One graded compliment | Genuine | Reveals one prop-room puzzle solution or labyrinth shortcut |
 | Backstage labyrinth shortcut | A technical compliment (Bradley tier) | Genuine | Cuts the Backstage All-Access route roughly in half |
-| Signed programme | 10 Sovs | 10 Sovs, and she signs both names | Lore item; examine text carries the second signature |
-| Backstage Passes (DIE, FLEDERMAUS!) | Free, if she likes you | 60 Sovs at the box office | Gates the couchsurf trigger |
+| Signed programme | 10 SOVS | 10 SOVS, and she signs both names | Lore item; examine text carries the second signature |
+| Backstage Passes (DIE, FLEDERMAUS!) | Free, if she likes you | 60 SOVS at the box office | Gates the couchsurf trigger |
 | The Nightcap | Free, and mandatory in spirit | One (1) Jägerbomb | Scripted event; see below |
 | Couchsurf stay (co-hosted with Adelheid) | Free | — | Full HP/SP restore; "Star Quality" +3 Charm for 4 hours; "Full Face" cosmetic state until the party next sleeps; one permanent Bravado point |
 
@@ -354,7 +354,7 @@ She gates the couchsurf itself (the invitation is hers), and she gates two Backs
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Backstage Pass (DIE, FLEDERMAUS!) | Pre-couchsurf | Yes | Reusable; grants wings access on Saturdays for the rest of the game |
-| Signed Programme (two signatures) | Any time, 10 Sovs | Yes | Lore item; +1 Culture knowledge |
+| Signed Programme (two signatures) | Any time, 10 SOVS | Yes | Lore item; +1 Culture knowledge |
 | "Star Quality" | Couchsurf completion | 4 hours | +3 Charm |
 | "Full Face" | Couchsurf completion (Nightcap branch only) | Until next sleep | Cosmetic state; every NPC in Sinfonia reacts and not one of them explains |
 | Conquest Passport Entry | Couchsurf completion | Yes | See below |
@@ -447,7 +447,7 @@ Austrian-German-accented English, operatic, projected — she speaks at performa
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; the opera house runs on box office receipts and Sov
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; the opera house runs on box office receipts and SOV
 - [x] **NO automatic crypto assumptions** — she has none and the subject would not survive her
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — N/A
 - [x] **The bros are never scam-aware** — they never work out any part of the evening, in either direction, at any point in the game
@@ -457,7 +457,7 @@ Austrian-German-accented English, operatic, projected — she speaks at performa
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands entirely on three Americans failing to read a four-foot marquee, a standing ovation, and a brass door plate; drag performance, opera, and the performers themselves are treated with complete respect and are the most competent thing in the building
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a thirty-one-season principal soprano running the house's highest-grossing night, in total control of every scene she is in, generous, warm, and never predatory
-- [x] Humor is affectionate mockery, not mean-spirited — she likes the bros, the bros have a wonderful time, nobody is hurt, and the only thing punctured is American self-regard
+- [x] Humor is affectionate mockery — she likes the bros, the bros have a wonderful time, nobody is hurt, and the only thing punctured is American self-regard
 
 ---
 

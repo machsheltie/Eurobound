@@ -137,13 +137,13 @@ Now: Bear witness. Warn those he can. Maintain the Board of Shame. Wait for Mary
 > "We've got The Shamrock—economy. The Lucky Charm—standard. The Emerald Dream—for those who think size matters. They're all the same in The Cloverleaf."
 
 **Offering GPS:**
-> "GPS? *dark laugh* Aye, we've got GPS. 20 Sovs a day. It'll say 'recalculating' until ye lose the will to live. But sure, take it. Everyone takes it."
+> "GPS? *dark laugh* Aye, we've got GPS. 20 SOVS a day. It'll say 'recalculating' until ye lose the will to live. But sure, take it. Everyone takes it."
 
 **Offering Insurance:**
-> "Premium insurance. 35 Sovs a day. Covers everything. *pause* Except incidents in circular traffic patterns. That's in the fine print. Page 47."
+> "Premium insurance. 35 SOVS a day. Covers everything. *pause* Except incidents in circular traffic patterns. That's in the fine print. Page 47."
 
 **Offering Rosary Beads:**
-> "*places beads on counter* 5 Sovs. For the dashboard. Ye'll want them. Trust me on this one."
+> "*places beads on counter* 5 SOVS. For the dashboard. Ye'll want them. Trust me on this one."
 
 **Finalizing Rental:**
 > "Sign here. And here. And... here. That one's the liability waiver. Don't read it. Nobody reads it. Just sign."
@@ -265,18 +265,18 @@ Now: Bear witness. Warn those he can. Maintain the Board of Shame. Wait for Mary
 ### Rental Options
 | Vehicle | Price/Day | Description | Hidden Issue |
 |---------|-----------|-------------|--------------|
-| The Shamrock | 45 Sovs | "Economy" compact | Wipers stuck on |
-| The Lucky Charm | 60 Sovs | "Standard" sedan | GPS glitches near roundabouts |
-| The Emerald Dream | 80 Sovs | "Premium" SUV | Too wide for country lanes |
-| The Full Irish | 120 Sovs | "Luxury" convertible | Attracts sheep attention |
+| The Shamrock | 45 SOVS | "Economy" compact | Wipers stuck on |
+| The Lucky Charm | 60 SOVS | "Standard" sedan | GPS glitches near roundabouts |
+| The Emerald Dream | 80 SOVS | "Premium" SUV | Too wide for country lanes |
+| The Full Irish | 120 SOVS | "Luxury" convertible | Attracts sheep attention |
 
 ### Add-Ons
 | Item | Price | What They Say | What It Does |
 |------|-------|---------------|--------------|
-| GPS Rental | 20 Sovs/day | "Navigation assistance" | Says "recalculating" forever |
-| Premium Insurance | 35 Sovs/day | "Complete coverage" | Excludes circular traffic |
-| Map Book | 10 Sovs | "Traditional navigation" | Cloverleaf labeled "?" |
-| Rosary Beads | 5 Sovs | "For the dashboard" | Fergus insists |
+| GPS Rental | 20 SOVS/day | "Navigation assistance" | Says "recalculating" forever |
+| Premium Insurance | 35 SOVS/day | "Complete coverage" | Excludes circular traffic |
+| Map Book | 10 SOVS | "Traditional navigation" | Cloverleaf labeled "?" |
+| Rosary Beads | 5 SOVS | "For the dashboard" | Fergus insists |
 
 ### Post-Quest Pricing
 | Modifier | Value | Applies To | Fergus's Comment |
@@ -398,7 +398,7 @@ All five states sit on `fergus.png` (384x384, dedicated solo sheet). The four co
 
 Yes, and it is the hardest gate in Publandia's sidequest layer: **The Cloverleaf of Confusion cannot begin without renting a vehicle from Fergus.** There is no alternative vehicle source, no walk-in route, and no way to reach the roundabout on foot that the design acknowledges. A player who declines every rental simply never sees one of the game's signature set-pieces.
 
-He does not gate on money in any meaningful way — the cheapest rental is 45 Sovs and he'll rent to anyone who has it — and he never refuses service. He warns and he sells. Both, every time, in that order.
+He does not gate on money in any meaningful way — the cheapest rental is 45 SOVS and he'll rent to anyone who has it — and he never refuses service. He warns and he sells. Both, every time, in that order.
 
 ### State Flags
 - `fergus_met`: boolean
@@ -415,11 +415,11 @@ He does not gate on money in any meaningful way — the cheapest rental is 45 So
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Rental vehicle (Shamrock / Lucky Charm / Emerald Dream / Full Irish) | On completing the transaction, 45–120 Sovs/day | No — temporary, for the duration of the Cloverleaf arc | Grants vehicle access; each model carries its own hidden issue into the roundabout |
-| GPS unit | Optional add-on, 20 Sovs/day | No — returned with the vehicle | Functions normally until the Cloverleaf, then reads "recalculating" permanently |
-| Premium Insurance | Optional add-on, 35 Sovs/day | No — expires with the rental | Covers everything except "incidents occurring within circular traffic patterns"; that is every incident |
-| Map Book | Optional add-on, 10 Sovs | Yes — a physical book, the player keeps it | Traditional navigation; the Cloverleaf is labelled only "?" |
-| Rosary Beads | Optional add-on, 5 Sovs | Yes | Dashboard item; the only add-on with no hidden downside. Fergus insists |
+| Rental vehicle (Shamrock / Lucky Charm / Emerald Dream / Full Irish) | On completing the transaction, 45–120 SOVS/day | No — temporary, for the duration of the Cloverleaf arc | Grants vehicle access; each model carries its own hidden issue into the roundabout |
+| GPS unit | Optional add-on, 20 SOVS/day | No — returned with the vehicle | Functions normally until the Cloverleaf, then reads "recalculating" permanently |
+| Premium Insurance | Optional add-on, 35 SOVS/day | No — expires with the rental | Covers everything except "incidents occurring within circular traffic patterns"; that is every incident |
+| Map Book | Optional add-on, 10 SOVS | Yes — a physical book, the player keeps it | Traditional navigation; the Cloverleaf is labelled only "?" |
+| Rosary Beads | Optional add-on, 5 SOVS | Yes | Dashboard item; the only add-on with no hidden downside. Fergus insists |
 | "Fergus's Respect" discount | Post-Cloverleaf survival | Yes | 10% off all rentals and add-ons, permanently |
 | "Roundabout Survivor" title | Post-Cloverleaf survival | Yes | Player title; recognised by Cloverleaf residents on return visits |
 
@@ -520,7 +520,7 @@ Additional checks carried forward from the original profile:
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Fergus has no crypto content of any kind; the rental business is Sovs, paperwork and a Windows 98 machine
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Fergus has no crypto content of any kind; the rental business is SOVS, paperwork and a Windows 98 machine
 - [x] **NO automatic crypto assumptions** - a 62-year-old rural car rental operator does not earn in shitcoins and none has been given to him
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — no coins invented in this file
 - [x] **The bros are never scam-aware** - Fergus tells them out loud that the GPS will fail and the insurance excludes the only incident that will happen, and they buy both and remain convinced they made shrewd purchases

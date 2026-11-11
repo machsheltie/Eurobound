@@ -165,7 +165,7 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 - **Bootleg Software Dealer** (192, 128, 48x64) - CD collection and furtive transactions
 
 ### Scammer Network Representatives (ported from legacy spec, remapped to 48x64):
-- **Tony420 Fake Crypto** (48, 192, 48x64) - Tony's unnamed goon, big and silent, holding a tablet at face height like a hostage photo; the screen shows Tony420 blurred (Tony is never seen in person; author, 2026-11-11). [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal]
+- **Tony420 Fake Crypto** (128x128; atlas position pending re-layout, was 48, 192, 48x64) - Tony's unnamed goon, big and silent, holding a tablet at face height like a hostage photo; the screen shows Tony420 blurred (Tony is never seen in person; author, 2026-11-11). Used at the Kavarna only after the Döner Debate (Kavarna option C, author 2026-11-11). Before the Debate, Tony's terminal is occupied by a different silent hourly patron every night, none of them Tony; no sprite is specced for these patrons yet (pending author). **Size (author, 2026-11-11):** the goon is 128x128 per `design/style_guides/character_sprite_pipeline.md`; the old 48x64 cell can't hold him, so this sheet's atlas needs a re-layout before he gets coordinates (none invented here)
 - **Miss Morphine Mysterious** (96, 192, 48x64) - Identity mystery with multiple personas
 - **NarcGreg Infiltration Attempt** (144, 192, 48x64) - Terrible undercover work
 - **Coordinated Team Leader** (192, 192, 48x64) - Professional tourist targeting
@@ -270,8 +270,8 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Background | (0, 0) | 160x96 | Menu panel |
-| Standard 3 Sovs | (0, 96) | 128x24 | 1 hour option |
-| All Night 15 Sovs | (0, 120) | 128x24 | Special deal |
+| Standard 3 SOVS | (0, 96) | 128x24 | 1 hour option |
+| All Night 15 SOVS | (0, 120) | 128x24 | Special deal |
 
 ### ICQ Interface:
 | Element | Position | Size | Description |
@@ -498,7 +498,7 @@ The six delivered sheet files (see File Delivery Checklist) are the packaging co
 - [ ] Satirical theme (tourist-trap "underground hacker" den) is clear throughout all assets
 - [ ] Hidden metro access has discoverable visual cues (graffiti, door, quest gate)
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for terminals, rental menu, ICQ interface)
+- [ ] Click zone sizing considered (44px minimum for terminals, rental menu, ICQ interface)
 - [ ] Colorblind-friendly alternatives available where status icon color codes meaning
 - [ ] Social media viral potential maximized in composition choices (CRT maze, neon sign)
 
@@ -513,7 +513,7 @@ The six delivered sheet files (see File Delivery Checklist) are the packaging co
 | Satirical Targets Appropriate | ✅ PASS | Tourist "underground hacker" delusion — punches up |
 | Seedy Underbelly Present | ✅ PASS | Scammer networks, surveillance, sting operations |
 | Gameplay Value Established | ✅ PASS | ICQ quest hub, sting ops, metro unlock, terminal rental |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented |
 | Performance Budget | ✅ PASS | 60 FPS, 18 draws, 45MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | Crypto rigs/scammers are established satire in the source location profile |

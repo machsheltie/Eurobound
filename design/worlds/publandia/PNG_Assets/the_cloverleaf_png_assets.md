@@ -533,7 +533,7 @@ assets/sprites/locations/publandia/cloverleaf_roundabout/
 
 ### Pre-Baked Circulation Loops
 
-All circling vehicles use pre-animated loops for mobile performance.
+All circling vehicles use pre-animated loops for performance.
 
 | Vehicle | Loop Duration | Lane | Notes |
 |---------|---------------|------|-------|
@@ -635,7 +635,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - Exit signs distinguished by arrow direction + text, never color alone (all six are deliberately identical green — the confusion is textual, not chromatic)
 - Lane difficulty communicated by lane width, asphalt tone AND position, not color coding
 - Brake light / indicator states paired with icon cues
-- Touch zones minimum 44px for lane-change and exit controls; text readable at mobile sizes
+- Click zones minimum 44px for lane-change and exit controls; text readable at gameplay sizes
 
 ---
 
@@ -671,7 +671,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - All circling vehicles use pre-baked animation loops — no real-time pathfinding
 - Max 8 detailed vehicles on screen; LOD distance 50m
 - Particle density scalable by device capability
-- Target resolutions: 1x, 2x, 3x for mobile scaling
+- Target resolutions: 1x, 2x, 3x for resolution scaling
 
 ---
 
@@ -750,7 +750,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 | **Max Sprite Sheet Size** | 2048x2048 pixels |
 | **Color Depth** | 32-bit RGBA |
 | **File Format** | PNG with transparency |
-| **Target Resolution** | 1x, 2x, 3x for mobile scaling |
+| **Target Resolution** | 1x, 2x, 3x for resolution scaling |
 | **Memory Budget** | <64MB total for location |
 | **Max Active Sprites** | 8 detailed vehicles + effects |
 | **Animation Frame Rate** | 12fps for character, 30fps for particles |
@@ -899,7 +899,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 | Compression | Lossless PNG |
 | Naming Convention | snake_case, all lowercase |
 | Layer Organization | Preserve layers in master file |
-| Resolutions | 1x, 2x, 3x variants for mobile scaling |
+| Resolutions | 1x, 2x, 3x variants for resolution scaling |
 
 ### Delivery Format:
 - **Primary:** Individual PNG files per specifications above, at 1x/2x/3x
@@ -913,8 +913,8 @@ All circling vehicles use pre-animated loops for mobile performance.
 - [ ] Color palette strictly followed
 - [ ] Margaret rendered with dignity (reviewed for tone)
 - [ ] Performance tested with 8 active vehicles
-- [ ] Rain particles tested for mobile performance
-- [ ] All UI elements legible at mobile sizes
+- [ ] Rain particles tested for performance
+- [ ] All UI elements legible at gameplay sizes
 
 ---
 
@@ -933,7 +933,7 @@ All circling vehicles use pre-animated loops for mobile performance.
 - [ ] Margaret reviewed for tone — dignity and love story, never gross-out
 - [ ] Hidden details discoverable (bullet-holed sign, sheep staring at camera, COUNCIL MEETING window, GPS tears)
 - [ ] Performance optimized (pre-baked loops, CPU particles, 8-vehicle cap, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (exit signs by text/arrow, not color)
 - [ ] Social media viral potential maximized in composition choices (wedding van framing, aerial circulation shot)
 
@@ -948,10 +948,10 @@ All circling vehicles use pre-animated loops for mobile performance.
 | Satirical Targets Appropriate | ✅ | American tourist impatience (punching at privilege); Irish stereotypes affectionate |
 | Seedy Underbelly Present | ✅ | Accidentally existential — the vice is giving up on destinations entirely |
 | Gameplay Value Established | ✅ | Major set-piece, binary Path A/B, two minigames, status effects, post-completion unlocks |
-| Technical Feasibility | ✅ | Pre-baked animation loops solve mobile performance |
+| Technical Feasibility | ✅ | Pre-baked animation loops solve performance |
 | Performance Budget | ✅ | 60 FPS on min-spec hardware, <50 draw calls, <64 MB, scalable particles |
 | Accessibility Features | ✅ | Visual audio cues, motion-reduction options (rain/wipers), text-based exit reading |
-| No Crypto Elements | ✅ | All transactions in Sovs (food truck menu) |
+| No Crypto Elements | ✅ | All transactions in SOVS (food truck menu) |
 | Social Media Integration | ✅ | 5 screenshot moments + quotes + meme formats identified |
 
 ---

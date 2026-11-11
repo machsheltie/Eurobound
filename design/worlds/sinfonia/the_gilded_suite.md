@@ -14,15 +14,15 @@
 ### Entry Conditions
 - **Time Restrictions**: Check-in 3 PM - 11 PM, Check-out by 11 AM (strictly enforced)
 - **Stat Requirements**: None to book, but +2 INT recommended to notice red flags
-- **Item Requirements**: 150 Sovs/night (suspiciously reasonable for a "palace")
+- **Item Requirements**: 150 SOVS/night (suspiciously reasonable for a "palace")
 - **Previous Location Requirements**: None (advertised on bulletin boards citywide)
 - **Special Conditions**: Must agree to "House Rules" (lengthy, concerning document)
 
 ### Booking System
 Unlike couchsurfing, Das Schlafgemach requires payment:
-- **Standard Room**: 150 Sovs/night (HP/SP restore, but...)
-- **Deluxe Suite**: 300 Sovs/night (better restore, more surveillance)
-- **The Royal Chamber**: 500 Sovs/night (full restore, maximum creepy)
+- **Standard Room**: 150 SOVS/night (HP/SP restore, but...)
+- **Deluxe Suite**: 300 SOVS/night (better restore, more surveillance)
+- **The Royal Chamber**: 500 SOVS/night (full restore, maximum creepy)
 - **All bookings**: Require signing the "Guest Agreement" (nobody reads it)
 
 ### Exit Conditions
@@ -146,7 +146,7 @@ He's not malicious. He genuinely believes eternal guests are happy guests.
 They've signed a 27-clause agreement they didn't read and are being monitored by a man who hasn't slept since 1847.
 
 **The Check-In**:
-- **Lord Pilsner**: "This place is INCREDIBLE. And only 150 Sovs?! That's like... nothing for a PALACE!"
+- **Lord Pilsner**: "This place is INCREDIBLE. And only 150 SOVS?! That's like... nothing for a PALACE!"
 - **Herr Gastfreund**: "We pride ourselves on... accessibility. *smile intensifies* Sign here, please."
 - **Lord Pilsner**: *signs without reading*
 - **Bradley**: "We should review the terms—"
@@ -170,9 +170,9 @@ They've signed a 27-clause agreement they didn't read and are being monitored by
 **Booking Options**:
 | Room | Price | Rest Quality | Surveillance Level | Special |
 |------|-------|-------------|-------------------|---------|
-| Standard | 150 Sovs | 80% HP/SP | Medium | Basic creepy |
-| Deluxe | 300 Sovs | 100% HP/SP | High | Extra portraits |
-| Royal | 500 Sovs | 120% HP/SP + buff | Maximum | Full experience |
+| Standard | 150 SOVS | 80% HP/SP | Medium | Basic creepy |
+| Deluxe | 300 SOVS | 100% HP/SP | High | Extra portraits |
+| Royal | 500 SOVS | 120% HP/SP + buff | Maximum | Full experience |
 
 **Rest Effects**:
 - HP/SP restoration as listed
@@ -278,7 +278,7 @@ Selected rules from the agreement (comedy document):
 - Leave a ONE-STAR review (his weakness)
 - Convince him to take a vacation (existential crisis)
 
-**Reward**: "Honest Review" badge (immunity to fake reviews citywide), 500 Sovs refund
+**Reward**: "Honest Review" badge (immunity to fake reviews citywide), 500 SOVS refund
 
 ### Couchsurfing Alternative
 Das Schlafgemach is the OPPOSITE of couchsurfing:

@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 7 AM - 11 PM (Nuala sees it all, from morning shame to evening setup)
 - **Stat Requirements**: None (all states of "ya" welcome)
-- **Item Requirements**: SOVS (2-50 Sovs per item)
+- **Item Requirements**: SOVS (2-50 SOVS per item)
 - **Previous Location Requirements**: None
 - **Special Conditions**: Nuala will comment on your current state
 
@@ -157,46 +157,46 @@ She's not your therapist. She's not your mother. She's the woman who's going to 
 **Healing Items (The Redemption)**
 | Item | Price | Effect | Nuala's Comment |
 |------|-------|--------|-----------------|
-| Aspirin Packet | 3 Sovs | Cures "Headache" | "Two with water. Not with more drink." |
-| Paracetamol | 4 Sovs | +20 HP, cures minor status effects | "Don't mix with alcohol. I KNOW you're going to." |
-| Greasy Breakfast Roll | 6 Sovs | +40 HP, cures "Hungover" | "Your body needs grease. Don't ask why. It just does." |
-| Hair of the Dog Pint (Canned) | 5 Sovs | Delays "Hungover" by 3 hours | "This isn't a cure, it's a postponement. You know that, right?" |
-| Electrolyte Powder | 4 Sovs | Cures "Dehydrated," +15 SP | "Should've had this BEFORE bed. But here we are." |
-| Stomach Settler | 5 Sovs | Cures "Queasy," "Nauseous" | "Ginger-based. Actual medicine. You're welcome." |
-| Industrial-Strength Antacid | 7 Sovs | Cures all stomach ailments | "What did you EAT? No, don't tell me. I don't want to know." |
-| The Full Recovery Kit | 15 Sovs | Cures Hungover + all related effects | "Everything you need. Everything you SHOULDN'T have needed." |
+| Aspirin Packet | 3 SOVS | Cures "Headache" | "Two with water. Not with more drink." |
+| Paracetamol | 4 SOVS | +20 HP, cures minor status effects | "Don't mix with alcohol. I KNOW you're going to." |
+| Greasy Breakfast Roll | 6 SOVS | +40 HP, cures "Hungover" | "Your body needs grease. Don't ask why. It just does." |
+| Hair of the Dog Pint (Canned) | 5 SOVS | Delays "Hungover" by 3 hours | "This isn't a cure, it's a postponement. You know that, right?" |
+| Electrolyte Powder | 4 SOVS | Cures "Dehydrated," +15 SP | "Should've had this BEFORE bed. But here we are." |
+| Stomach Settler | 5 SOVS | Cures "Queasy," "Nauseous" | "Ginger-based. Actual medicine. You're welcome." |
+| Industrial-Strength Antacid | 7 SOVS | Cures all stomach ailments | "What did you EAT? No, don't tell me. I don't want to know." |
+| The Full Recovery Kit | 15 SOVS | Cures Hungover + all related effects | "Everything you need. Everything you SHOULDN'T have needed." |
 
 **Support Items (The Enablement)**
 | Item | Price | Effect | Nuala's Comment |
 |------|-------|--------|-----------------|
-| Energy Drink (Brand) | 4 Sovs | +20 SP, +10 Speed (1 hour) | "This'll get you moving. Where you're moving to is your business." |
-| Discount Energy Drink | 2 Sovs | +15 SP, +5 Speed, 20% "Jitters" risk | "Cheaper, worse, your choice." |
-| Lucky Rabbit's Foot | 8 Sovs | +5% Critical Hit Chance | "It wasn't lucky for the rabbit. Might work for you." |
-| Four-Leaf Clover (Plastic) | 3 Sovs | +3% Luck | "It's fake. But luck's about belief anyway, isn't it?" |
-| "Confidence" Mints | 4 Sovs | +10 Bravado (30 min) | "They're just mints. But if you BELIEVE they help..." |
-| Eye Drops | 5 Sovs | Removes "Bloodshot," +5 Charisma | "Won't fix what you did, but at least you'll LOOK less guilty." |
+| Energy Drink (Brand) | 4 SOVS | +20 SP, +10 Speed (1 hour) | "This'll get you moving. Where you're moving to is your business." |
+| Discount Energy Drink | 2 SOVS | +15 SP, +5 Speed, 20% "Jitters" risk | "Cheaper, worse, your choice." |
+| Lucky Rabbit's Foot | 8 SOVS | +5% Critical Hit Chance | "It wasn't lucky for the rabbit. Might work for you." |
+| Four-Leaf Clover (Plastic) | 3 SOVS | +3% Luck | "It's fake. But luck's about belief anyway, isn't it?" |
+| "Confidence" Mints | 4 SOVS | +10 Bravado (30 min) | "They're just mints. But if you BELIEVE they help..." |
+| Eye Drops | 5 SOVS | Removes "Bloodshot," +5 Charisma | "Won't fix what you did, but at least you'll LOOK less guilty." |
 
 **Offensive Items (The Escalation)**
 | Item | Price | Effect | Nuala's Comment |
 |------|-------|--------|-----------------|
-| Stink Bomb | 6 Sovs | Area denial, disperses NPCs | "I'm not asking why. I'm DEFINITELY not asking why." |
-| Noise Maker | 4 Sovs | Attracts attention, distraction tool | "For attracting attention. Or escaping it. Same device, different intent." |
-| Brass Knuckles | 20 Sovs | +15 Attack (equipped) | "...self-defense purposes, I assume. Don't make me regret this." |
-| "Liquid Courage" Flask | 12 Sovs | +25 Bravado, -10 Judgement | "Pre-filled. For emergencies. What's an emergency? Not my business." |
-| Pocket Sand | 3 Sovs | Blind enemy temporarily | "I don't ask questions. I just stock shelves." |
-| Air Horn | 8 Sovs | Stun effect, attracts major attention | "For emergencies only. ACTUAL emergencies. I'll know if you're lying." |
+| Stink Bomb | 6 SOVS | Area denial, disperses NPCs | "I'm not asking why. I'm DEFINITELY not asking why." |
+| Noise Maker | 4 SOVS | Attracts attention, distraction tool | "For attracting attention. Or escaping it. Same device, different intent." |
+| Brass Knuckles | 20 SOVS | +15 Attack (equipped) | "...self-defense purposes, I assume. Don't make me regret this." |
+| "Liquid Courage" Flask | 12 SOVS | +25 Bravado, -10 Judgement | "Pre-filled. For emergencies. What's an emergency? Not my business." |
+| Pocket Sand | 3 SOVS | Blind enemy temporarily | "I don't ask questions. I just stock shelves." |
+| Air Horn | 8 SOVS | Stun effect, attracts major attention | "For emergencies only. ACTUAL emergencies. I'll know if you're lying." |
 
 **Utility Items (The Practicality)**
 | Item | Price | Effect | Nuala's Comment |
 |------|-------|--------|-----------------|
-| Grease-Proof Napkins | 2 Sovs | Cures "Stained," minor hygiene restore | "For the inevitable. Not if. When." |
-| Fake ID | 25 Sovs | Age verification bypass (single use) | "I don't see this. This isn't happening. 25 Sovs." |
-| Emergency Taxi Voucher | 15 Sovs | Instant escape from current location | "Get out of anywhere. Fast. One-time use." |
-| Phone Charger (Works) | 10 Sovs | Restores phone functionality | "Unlike Murphy's, this one ACTUALLY works. I have standards." |
-| Wet Wipes (Pack) | 3 Sovs | Hygiene restore, multi-use | "For everything. You don't want to know what 'everything' includes." |
-| Sunglasses (Indoor Appropriate) | 12 Sovs | Hides "Bloodshot," -light sensitivity | "So you can pretend you're fine. You're not. But you can pretend." |
-| Breath Mints (Industrial) | 3 Sovs | Removes "Alcohol Breath" | "These don't fool anyone who knows. But they help with strangers." |
-| Emergency Sewing Kit | 5 Sovs | Repairs "Torn" status on clothes | "Because SOMETHING always rips. Button, seam, dignity. I cover two of those." |
+| Grease-Proof Napkins | 2 SOVS | Cures "Stained," minor hygiene restore | "For the inevitable. Not if. When." |
+| Fake ID | 25 SOVS | Age verification bypass (single use) | "I don't see this. This isn't happening. 25 SOVS." |
+| Emergency Taxi Voucher | 15 SOVS | Instant escape from current location | "Get out of anywhere. Fast. One-time use." |
+| Phone Charger (Works) | 10 SOVS | Restores phone functionality | "Unlike Murphy's, this one ACTUALLY works. I have standards." |
+| Wet Wipes (Pack) | 3 SOVS | Hygiene restore, multi-use | "For everything. You don't want to know what 'everything' includes." |
+| Sunglasses (Indoor Appropriate) | 12 SOVS | Hides "Bloodshot," -light sensitivity | "So you can pretend you're fine. You're not. But you can pretend." |
+| Breath Mints (Industrial) | 3 SOVS | Removes "Alcohol Breath" | "These don't fool anyone who knows. But they help with strangers." |
+| Emergency Sewing Kit | 5 SOVS | Repairs "Torn" status on clothes | "Because SOMETHING always rips. Button, seam, dignity. I cover two of those." |
 
 ### The State Assessment
 When entering, Nuala assesses your condition automatically:
@@ -228,9 +228,9 @@ When entering, Nuala assesses your condition automatically:
 **Behind Counter Items (Known Disaster Only)**:
 | Item | Price | Effect | Nuala's Comment |
 |------|-------|--------|-----------------|
-| Nuala's Personal Remedy | 20 Sovs | Cures ANY status effect | "My grandmother's recipe. Works on everything. Don't ask what's in it." |
-| The "Didn't Happen" Kit | 30 Sovs | Evidence removal, plausible deniability supplies | "Whatever happened, this makes it... less provable." |
-| Emergency Complete Reset | 50 Sovs | Full HP, SP, status restoration | "For when you've REALLY done it. Use wisely." |
+| Nuala's Personal Remedy | 20 SOVS | Cures ANY status effect | "My grandmother's recipe. Works on everything. Don't ask what's in it." |
+| The "Didn't Happen" Kit | 30 SOVS | Evidence removal, plausible deniability supplies | "Whatever happened, this makes it... less provable." |
+| Emergency Complete Reset | 50 SOVS | Full HP, SP, status restoration | "For when you've REALLY done it. Use wisely." |
 
 ### Nuala's Recommendations
 If player is lost, Nuala helps:
@@ -275,7 +275,7 @@ If player is lost, Nuala helps:
 *Product Recommendations:*
 - "Breakfast roll. Trust me. Your body needs grease it can't explain."
 - "Skip the cheap energy drink. You need the ACTUAL caffeine. Your eyes tell me everything."
-- "Fake ID? I don't see that. This transaction isn't happening. 25 Sovs."
+- "Fake ID? I don't see that. This transaction isn't happening. 25 SOVS."
 - "Hair of the dog? That's not a CURE, that's a DELAY. But here you are."
 - "The Full Recovery Kit. Because you need ALL of it. Don't argue. I can SEE."
 
@@ -322,7 +322,7 @@ If player is lost, Nuala helps:
 - **Nuala**: *stares*
 - **Nuala**: "I'll add aspirin, stomach settler, and eye drops. You'll thank me later."
 - **Denial Case**: "I SAID I'm—"
-- **Nuala**: "Your hands are shaking. 12 Sovs total."
+- **Nuala**: "Your hands are shaking. 12 SOVS total."
 
 **The Regular (Local)**
 - **Composition**: Publandia local who's made peace with Nuala's ways
@@ -345,9 +345,9 @@ If player is lost, Nuala helps:
 
 **The Bros' State of Ya Reactions:**
 - **Lord Pilsner** (entering, hungover): "Just need some— oh god the lights are bright—"
-- **Nuala**: "The state of ya. Sit down before you fall down. Recovery Kit's 15 Sovs. Non-negotiable."
+- **Nuala**: "The state of ya. Sit down before you fall down. Recovery Kit's 15 SOVS. Non-negotiable."
 - **Lord Pilsner**: "I'm fine, I just—"
-- **Nuala**: "You're GREEN. You're SWAYING. You're about as fine as my ex-husband's excuses. 15 Sovs."
+- **Nuala**: "You're GREEN. You're SWAYING. You're about as fine as my ex-husband's excuses. 15 SOVS."
 - **Lord Pilsner**: "...okay."
 - **Chadwick**: "I'm just here for content— I mean, supplies—"
 - **Nuala**: "You're filming. Put that away. No social media in my shop."
@@ -358,7 +358,7 @@ If player is lost, Nuala helps:
 - **Nuala**: *looks at Bradley* *looks at Lord Pilsner* *back to Bradley*
 - **Nuala**: "...right. That checks out actually. What do you need, love?"
 - **Bradley**: "Full Recovery Kit, Energy Drinks, and Emergency Taxi Voucher."
-- **Nuala**: "Discount for the only one with sense. 28 Sovs."
+- **Nuala**: "Discount for the only one with sense. 28 SOVS."
 
 ## System Integration
 ### Supply Hub Network

@@ -82,7 +82,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | Booth Structure | (0, 0) | 192x192 | Warped plywood, barred window |
 | Ticket Dispenser (idle) | (192, 0) | 64x64 | Hand-cranked, pre-jam state |
 | Ticket Dispenser (jammed) | (192, 64) | 64x64 | Comedic jam frame |
-| "5 Sovs / EVERYTHING ELSE EXTRA" Sign | (0, 192) | 192x64 | Main pricing sign, taped bathroom addendum visible on close read |
+| "5 SOVS / EVERYTHING ELSE EXTRA" Sign | (0, 192) | 192x64 | Main pricing sign, taped bathroom addendum visible on close read |
 
 ### Corkboard Flyers (`corkboard_flyers.png`):
 | Element | Position | Size | Description |
@@ -357,7 +357,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 - Dodge prompts are directional shapes (arrows/center diamond), never color-coded alone
 - ICQ CRT green-gray glow and Vance's Vape-Cloud Gray stay visually distinct via shape and placement, not hue alone (per Sprite Sheet 4's technical note)
 - Prophecy Purple/Gold pulse carries a seam-pattern change between idle and in-progress states, not just a color shift
-- Dodge icons (64px each), ticket booth window, and ICQ terminal hotspot all meet the 44px minimum touch target
+- Dodge icons (64px each), ticket booth window, and ICQ terminal hotspot all meet the 44px minimum click target
 
 ---
 
@@ -445,7 +445,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 ## 🎯 Social Media Viral Potential
 
 ### Screenshot-Worthy Moments:
-1. **The ticket booth sign** - "ADMISSION 5 Sovs. EVERYTHING ELSE EXTRA." with the taped addendum "(THIS INCLUDES THE BATHROOM.)"
+1. **The ticket booth sign** - "ADMISSION 5 SOVS. EVERYTHING ELSE EXTRA." with the taped addendum "(THIS INCLUDES THE BATHROOM.)"
 2. **Vance mid-exhale pitch** - Ringmaster coat, top hat, vape cloud punctuating a loot-crate sales line
 3. **The fax machine at work** - A pre-millennium machine printing the identical casting flyer onto a pile of identical casting flyers
 4. **The prophecy tent at night** - Purple-gold seams pulsing while the marquee flickers and the calliope warps
@@ -547,7 +547,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 - [ ] Readable details intact: bathroom addendum, scratched-out EST. date, rust rings, 2003 pallet stamp, Bubbles poster
 - [ ] No assets re-exported from sub-location PNG docs (prize booth, mystery meat cart) or from `hamstradamus.md` / Bobo's profile
 - [ ] Performance optimized (CPU particles, reducible vape density, aggressive crowd LOD past `game_alley`)
-- [ ] Touch zone sizing considered (44px minimum — dodge icons, ticket booth, ICQ terminal compliant)
+- [ ] Click zone sizing considered (44px minimum — dodge icons, ticket booth, ICQ terminal compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded dodge prompts, patterned prophecy pulse)
 - [ ] Social media viral potential maximized (ticket-booth signage frame, fax-machine composition)
 

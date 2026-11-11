@@ -16,11 +16,11 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Herr Notenschreiber sells sheet music at fair prices from an antique cart that appears to be an avalanche and is in fact a catalogue he holds entirely in his head. Ask for anything and he produces it in under four seconds from a pile that looks structurally impossible. A Basic Score is 5 Sovs and is worth 5 Sovs. The Lost Manuscript is 50 Sovs and is worth considerably more than 50 Sovs. He has never once overcharged anybody, including tourists, including the tourists who deserve it.
+Herr Notenschreiber sells sheet music at fair prices from an antique cart that appears to be an avalanche and is in fact a catalogue he holds entirely in his head. Ask for anything and he produces it in under four seconds from a pile that looks structurally impossible. A Basic Score is 5 SOVS and is worth 5 SOVS. The Lost Manuscript is 50 SOVS and is worth considerably more than 50 SOVS. He has never once overcharged anybody, including tourists, including the tourists who deserve it.
 
 He can identify any piece of music from three notes. This is not a gag stat — it is the load-bearing fact of the character, and it is why the humming mini-game works at all. He loves music with an intensity that is faintly alarming and he genuinely, sincerely wants to give it away.
 
-And decades of tourists humming "Für Elise" badly at his cart have broken something in him. The gatekeeping — the sign that reads *"Please Do Not Hum. We Will Know If It's Wrong"*, the interrogation about major and minor keys before he will sell a 5 Sovs score, the visible physical pain — is a defence mechanism against cultural trauma. He is not a snob. He is a man who has been flinched at his own life's work eleven thousand times and has stopped being able to hear it coming without bracing.
+And decades of tourists humming "Für Elise" badly at his cart have broken something in him. The gatekeeping — the sign that reads *"Please Do Not Hum. We Will Know If It's Wrong"*, the interrogation about major and minor keys before he will sell a 5 SOVS score, the visible physical pain — is a defence mechanism against cultural trauma. He is not a snob. He is a man who has been flinched at his own life's work eleven thousand times and has stopped being able to hear it coming without bracing.
 
 ### What Bros Believe
 Chadwick has asked whether people still READ music, in the tone of someone asking whether people still use fax machines, and has decided the old man is running a novelty stall. Lord Pilsner has identified the Beethoven's Fifth opening as "Dun dun dun DUNNN," is proud of this, and considers it a shared cultural moment between himself and the vendor. Both believe the humming is friendly participation. Chadwick, specifically, believes that a song with a billion streams constitutes an argument.
@@ -28,7 +28,7 @@ Chadwick has asked whether people still READ music, in the tone of someone askin
 Bradley, who took lessons until age 12 and paid attention, knows exactly what this cart is and says nothing about it until he has to.
 
 ### The Comedy Gap
-Everything at this cart is fairly priced, accurately described, and expertly recommended by a man who wants nothing more than for somebody to want it. What arrives instead is three men producing sounds at him. The prices never move — the humming mini-game's discounts and penalties are the only price movement in the location, and they are earned in both directions, which means the "punishment" for humming badly is a 10% surcharge on a 5 Sovs sheet of paper and the reward for humming well is that an old man is briefly happy.
+Everything at this cart is fairly priced, accurately described, and expertly recommended by a man who wants nothing more than for somebody to want it. What arrives instead is three men producing sounds at him. The prices never move — the humming mini-game's discounts and penalties are the only price movement in the location, and they are earned in both directions, which means the "punishment" for humming badly is a 10% surcharge on a 5 SOVS sheet of paper and the reward for humming well is that an old man is briefly happy.
 
 The satire targets cultural gatekeeping behaviour — the "correct interpretation" reflex, musical one-upmanship, the idea that knowing things about music makes you a better human being. It never targets classical music, music education, musicians, or Viennese musical heritage. Every single thing Herr Notenschreiber knows is true, and the game proves it by letting him be right every time.
 
@@ -57,7 +57,7 @@ He has been at this cart for sixty years. He knows what has happened to him: he 
 - **The three-note identification.** Head tilts, eyes close, and the piece is named — composer, catalogue number, movement — before the third note has finished. Every time. It has never failed and it never will.
 - Ink on every finger of the right hand and the side of the palm; the left hand is clean, because the left hand holds the paper.
 - Winces before he hears the wrong note. He has learned to predict them. This is the saddest detail on the sheet and it should be played as a physical tic.
-- Handles every manuscript, including a 5 Sovs Basic Score, with both hands.
+- Handles every manuscript, including a 5 SOVS Basic Score, with both hands.
 - The metronome on the cart ticks at 60. He set it there in the first year and has never adjusted it.
 
 ### Sprite Notes
@@ -68,7 +68,7 @@ Ancient, ink-stained, squinting — and never a doddering old fool. He must read
 ## 🧠 Personality
 
 ### Archetype
-**The Wounded Enthusiast** — a genuine expert who loves his subject without limit, wants desperately to share it, and has been injured so consistently by the sharing that he now demands proof of worthiness before he will hand over a 5 Sovs sheet of paper. He is aware that this is what has happened to him. He does not know how to stop. Every discount in his shop is him trying.
+**The Wounded Enthusiast** — a genuine expert who loves his subject without limit, wants desperately to share it, and has been injured so consistently by the sharing that he now demands proof of worthiness before he will hand over a 5 SOVS sheet of paper. He is aware that this is what has happened to him. He does not know how to stop. Every discount in his shop is him trying.
 
 ### Personality Traits
 | Trait | Description |
@@ -202,9 +202,9 @@ He wants to hand somebody a piece of music and have them come back and tell him 
 > "You buy the Tempo Guides and never the Harmony Charts. You are playing alone even when you are not alone. ...That was not a criticism. Here is a Harmony Chart. Take it, do not pay me, and bring your friends next time."
 
 ### Patron of the Arts — Unlock
-*Fires the moment the player's lifetime spend at the cart crosses 100 Sovs.*
+*Fires the moment the player's lifetime spend at the cart crosses 100 SOVS.*
 
-> "One hundred Sovs. In this street. On paper." *(he stops, and actually looks at the player for the first time, and the squint is not judgement, it never was)* "...Come round the side of the cart. There are things I do not put out."
+> "One hundred SOVS. In this street. On paper." *(he stops, and actually looks at the player for the first time, and the squint is not judgement, it never was)* "...Come round the side of the cart. There are things I do not put out."
 
 > "You may hum. Within reason. I will tell you what 'within reason' means as we go."
 
@@ -258,30 +258,30 @@ He wants to hand somebody a piece of music and have them come back and tell him 
 ### Standard Items
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Basic Score | 5 Sovs | 5 Sovs — fairly priced, common compositions | +5% Rhythm game timing |
-| Practice Sheet | 8 Sovs | 8 Sovs — single-use, and he says so unprompted | +10% Rhythm game timing (one battle) |
-| Tempo Guide | 12 Sovs | 12 Sovs — "see the beat coming" | Reveals enemy attack patterns |
-| Conductor's Notes | 15 Sovs | 15 Sovs — detailed annotations, his own hand | +15% Rhythm damage |
-| Harmony Chart | 20 Sovs | 20 Sovs — coordinate attacks | Party rhythm sync +10% |
+| Basic Score | 5 SOVS | 5 SOVS — fairly priced, common compositions | +5% Rhythm game timing |
+| Practice Sheet | 8 SOVS | 8 SOVS — single-use, and he says so unprompted | +10% Rhythm game timing (one battle) |
+| Tempo Guide | 12 SOVS | 12 SOVS — "see the beat coming" | Reveals enemy attack patterns |
+| Conductor's Notes | 15 SOVS | 15 SOVS — detailed annotations, his own hand | +15% Rhythm damage |
+| Harmony Chart | 20 SOVS | 20 SOVS — coordinate attacks | Party rhythm sync +10% |
 
 ### Premium Items — Patron of the Arts Only
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Lost Manuscript | 50 Sovs | Considerably more than 50 Sovs, and he knows it, and charges 50 Sovs | +25% Rhythm game timing (permanent passive). **Contains the Bassmeister lore link — see Hidden Details.** |
-| Forbidden Opus | 75 Sovs | 75 Sovs; hidden techniques; he hands it over with a look | Unlocks secret rhythm pattern |
-| The Unfinished Symphony | 100 Sovs | 100 Sovs, and he warns you first, in detail | Massive buff but ends randomly |
-| Original Composition | 150 Sovs | 150 Sovs; written for you, by him, overnight | Custom attack pattern, unique to the player |
+| Lost Manuscript | 50 SOVS | Considerably more than 50 SOVS, and he knows it, and charges 50 SOVS | +25% Rhythm game timing (permanent passive). **Contains the Bassmeister lore link — see Hidden Details.** |
+| Forbidden Opus | 75 SOVS | 75 SOVS; hidden techniques; he hands it over with a look | Unlocks secret rhythm pattern |
+| The Unfinished Symphony | 100 SOVS | 100 SOVS, and he warns you first, in detail | Massive buff but ends randomly |
+| Original Composition | 150 SOVS | 150 SOVS; written for you, by him, overnight | Custom attack pattern, unique to the player |
 
 ### Consumable Buffs
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Crescendo Script | 10 Sovs | 10 Sovs | Damage increases each turn — one battle |
-| Diminuendo Draft | 10 Sovs | 10 Sovs | Enemy damage decreases each turn — one battle |
-| Fermata Fragment | 15 Sovs | 15 Sovs | Pause enemy for one turn — single use |
-| Sforzando Scrap | 20 Sovs | 20 Sovs | One attack deals 3x damage — single use |
+| Crescendo Script | 10 SOVS | 10 SOVS | Damage increases each turn — one battle |
+| Diminuendo Draft | 10 SOVS | 10 SOVS | Enemy damage decreases each turn — one battle |
+| Fermata Fragment | 15 SOVS | 15 SOVS | Pause enemy for one turn — single use |
+| Sforzando Scrap | 20 SOVS | 20 SOVS | One attack deals 3x damage — single use |
 
 ### Patron of the Arts System
-**Unlocked after 100 Sovs total spent.** Benefits, in full:
+**Unlocked after 100 SOVS total spent.** Benefits, in full:
 - Access to the premium manuscript inventory (the side compartment, which was always there)
 - **10% permanent discount**, applied on top of any humming discount
 - He remembers your name, and uses it, every visit, for the rest of the game
@@ -352,7 +352,7 @@ Four states. **Default:** guarded, fairly priced, quietly suffering. **Musically
 | three_note_tilt | Any humming trigger, any quiz — head tilt, eyes closed, identification before the third note lands |
 | chest_clutch | A wrong note from a street performer, or the "Für Elise" (wrong) outcome |
 | rage_recoil | Copyrighted modern song; the "Musically Offensive" ban fires from this frame |
-| both_hands_pass | Every single purchase, including the 5 Sovs Basic Score, without exception |
+| both_hands_pass | Every single purchase, including the 5 SOVS Basic Score, without exception |
 | stillness_continue | Bradley's Redemption and the obscure-correct outcome — four seconds of complete stillness before "...Continue." |
 | side_compartment | Patron of the Arts unlock; he comes round the side of the cart, which he does for no one else |
 | avalanche_kneel | "Paper Avalanche" — kneels, re-sorts in silence, refuses help |
@@ -374,7 +374,7 @@ Four states. **Default:** guarded, fairly priced, quietly suffering. **Musically
 ### Primary Quest
 - **Quest**: "The Lost Opus" (`sinfonia_sidequest_the_lost_opus_01`)
 - **Role**: Quest Giver and sole beneficiary — he seeks one specific rare manuscript and has been looking for eleven years
-- **Trigger**: Reaching Patron of the Arts (100 Sovs lifetime spend), OR triggering the made-up-tune humming outcome, which stops him mid-transaction and starts the conversation early
+- **Trigger**: Reaching Patron of the Arts (100 SOVS lifetime spend), OR triggering the made-up-tune humming outcome, which stops him mid-transaction and starts the conversation early
 - **Outcome**: The manuscript is recovered. He does not stock it, does not price it, and does not sell it. It goes in his coat. He says "I am not selling this one" and nothing else about it for the rest of the game.
 
 ### Additional Quest Hooks
@@ -385,16 +385,16 @@ Four states. **Default:** guarded, fairly priced, quietly suffering. **Musically
 | "Forbidden Music" | Supplier and obstacle | Late game; requires Patron status and the Forbidden Opus already purchased | He knows what the banned composition is, where it is, and why it was banned, and he argues with himself out loud for a full minute before telling you |
 
 ### Quest Gate Function
-He gates the **premium manuscript inventory** behind 100 Sovs lifetime spend — a published, honest threshold with no hidden conditions. He gates "The Lost Opus" behind Patron status or the made-up-tune outcome. He gates nothing else: every standard item, every consumable, and the entire humming mini-game are available to a player who has never bought anything and hums badly.
+He gates the **premium manuscript inventory** behind 100 SOVS lifetime spend — a published, honest threshold with no hidden conditions. He gates "The Lost Opus" behind Patron status or the made-up-tune outcome. He gates nothing else: every standard item, every consumable, and the entire humming mini-game are available to a player who has never bought anything and hums badly.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Lost Manuscript | Patron of the Arts, 50 Sovs | Yes | +25% Rhythm game timing (permanent passive); carries the "J.B." catalogue mark and the Bassmeister cross-link |
-| Forbidden Opus | Patron of the Arts, 75 Sovs | Yes | Unlocks secret rhythm pattern; prerequisite for "Forbidden Music" |
-| The Unfinished Symphony | Patron of the Arts, 100 Sovs | Yes | Massive buff that ends randomly; he warns you in detail before selling it |
-| Original Composition | Patron of the Arts, 150 Sovs | Yes | Custom attack pattern unique to the player; written overnight, in his hand, on the ruled page stock |
-| Patron Badge | 100 Sovs lifetime spend | Yes | Status indicator; 10% permanent discount; side-compartment access |
+| Lost Manuscript | Patron of the Arts, 50 SOVS | Yes | +25% Rhythm game timing (permanent passive); carries the "J.B." catalogue mark and the Bassmeister cross-link |
+| Forbidden Opus | Patron of the Arts, 75 SOVS | Yes | Unlocks secret rhythm pattern; prerequisite for "Forbidden Music" |
+| The Unfinished Symphony | Patron of the Arts, 100 SOVS | Yes | Massive buff that ends randomly; he warns you in detail before selling it |
+| Original Composition | Patron of the Arts, 150 SOVS | Yes | Custom attack pattern unique to the player; written overnight, in his hand, on the ruled page stock |
+| Patron Badge | 100 SOVS lifetime spend | Yes | Status indicator; 10% permanent discount; side-compartment access |
 | The Recovered Opus | "The Lost Opus" completion | No — **he keeps it** | Not obtainable. Examinable in his coat for the rest of the game. |
 
 ---
@@ -464,8 +464,8 @@ Austrian-accented English, elderly, precise, with the vocabulary of a lifetime s
 
 - **CANON — no first name, ever.** "Notenschreiber" is a trade-name. No file, roster, dialogue string, or asset may give this character a given name. If a future pass needs one for a form, a bill, or a records scene, the answer is that the form is filled in as "Notenschreiber" and the clerk accepts it, because the clerk has also never known.
 - **CANON — NPC ID**: `sinfonia_npc_herr_notenschreiber_01`.
-- **Prices are canon and immutable.** The full table above matches `the_composers_cart.md` exactly: Standard 5 Sovs/8 Sovs/12 Sovs/15 Sovs/20 Sovs, Premium 50 Sovs/75 Sovs/100 Sovs/150 Sovs, Consumables 10 Sovs/10 Sovs/15 Sovs/20 Sovs. The only permitted price movement in this location is the humming game (−5%, −15%, +10%) and the Patron discount (−10%). Nothing else moves a price, ever.
-- **The Patron threshold is 100 Sovs lifetime spend** and is published to the player. It is not a hidden affinity stat.
+- **Prices are canon and immutable.** The full table above matches `the_composers_cart.md` exactly: Standard 5 SOVS/8 SOVS/12 SOVS/15 SOVS/20 SOVS, Premium 50 SOVS/75 SOVS/100 SOVS/150 SOVS, Consumables 10 SOVS/10 SOVS/15 SOVS/20 SOVS. The only permitted price movement in this location is the humming game (−5%, −15%, +10%) and the Patron discount (−10%). Nothing else moves a price, ever.
+- **The Patron threshold is 100 SOVS lifetime spend** and is published to the player. It is not a hidden affinity stat.
 - **The "Musically Offensive" ban is exactly ten minutes and never stacks.** He is not vindictive. He needs the ten minutes.
 - **The Lost Manuscript / Bassmeister cross-link is one-directional and unresolved by default.** Herr Notenschreiber holds Bassmeister's handwriting and does not know it; Bassmeister, at Mozart's Last Rave, believes his music was never preserved. A player carrying graveyard lore back to MusikGasse — or manuscript lore forward to the grave — closes the loop. Neither NPC ever closes it alone, and no third character explains it.
 - **Bradley's Redemption is canon and must appear in the shipped scene**, verbatim, with the `_hope` sprite switching on the second bar of the Cello Suite and not switching back.
@@ -487,7 +487,7 @@ Austrian-accented English, elderly, precise, with the vocabulary of a lifetime s
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on the bros humming at a specialist and on classical-music gatekeeping *behaviour*; Viennese musical heritage, music education, and classical music itself are treated as real, valuable, and worth defending
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a genuine expert running a fairly-priced business who has never overcharged anyone, extends credit to street performers, and undercharges conservatory students
-- [x] Humor is affectionate mockery, not mean-spirited — his pain is absurd in staging and sincere in cause; the game frames his gatekeeping as an injury rather than a virtue, and the warmest beat in the location is a customer being kind enough to hum correctly
+- [x] Humor is affectionate mockery — his pain is absurd in staging and sincere in cause; the game frames his gatekeeping as an injury rather than a virtue, and the warmest beat in the location is a customer being kind enough to hum correctly
 
 ---
 

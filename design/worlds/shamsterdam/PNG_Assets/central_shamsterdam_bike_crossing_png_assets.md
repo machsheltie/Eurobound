@@ -412,7 +412,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 ### Structure
 - Small rental booth/kiosk
 - "BIKE RENTAL" sign (in Dutch: "FIETS VERHUUR")
-- Price board: "15 Sovs/DAG"
+- Price board: "15 SOVS/DAG"
 - Orange rental bikes lined up behind
 - Liability waiver stack visible
 
@@ -518,7 +518,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 ### Colorblind Considerations:
 - Lane difficulty color coding (Lane Indicator, Crossing Progress Bar) must be doubled with zone patterns/shapes, not color alone
 - Cyclist speed classes distinguishable by silhouette and sprite width, not only palette
-- Touch zones minimum 44×44 pixels for all interactive elements; swipe threshold 20 pixels; one-handed play must be possible
+- Click zones minimum 44×44 pixels for all interactive elements; mouse, keyboard and controller play must be possible
 
 ---
 
@@ -553,7 +553,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 
 ### Performance Notes:
 - Cyclist pool: 24 sprites, 12 active maximum
-- Touch zone requirements: minimum touch target 44×44 pixels, swipe threshold 20 pixels, one-handed play must be possible
+- Click zone requirements: minimum click target 44×44 pixels; mouse, keyboard and controller play must be possible
 - Pixel-perfect collision detection required for fairness; audio sync must be precise for warning sounds
 
 ---
@@ -741,7 +741,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 - [ ] Satirical theme is clear throughout all assets (Dutch efficiency as tourist hostility)
 - [ ] Hidden areas/interactions have discoverable visual cues (tunnel stairs, "I Shamsterdam" ghost outline, kiosk)
 - [ ] Performance optimized (CPU particles, atlas limits respected, 12-cyclist active cap)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (lane indicators, difficulty zones)
 - [ ] Social media viral potential maximized in composition choices (parade wall, near-miss framing)
 
@@ -758,8 +758,8 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 | Gameplay Value Established | ✅ | Frogger mini-game, central hub gating 4+ districts, buffs/debuffs, shortcuts |
 | Technical Feasibility | ✅ | Sprite pooling, atlas budget, pre-defined lane patterns documented |
 | Performance Budget | ✅ | 60 FPS locked, <50 draw calls, <50 MB, 80 particles |
-| Accessibility Features | ✅ | Visual audio cues for all threats, slower mode, 44px touch zones |
-| No Crypto Elements | ✅ | All transactions in Sovs |
+| Accessibility Features | ✅ | Visual audio cues for all threats, slower mode, 44px click zones |
+| No Crypto Elements | ✅ | All transactions in SOVS |
 | Social Media Integration | ✅ | 5 screenshot moments + TikTok formats identified |
 
 ---

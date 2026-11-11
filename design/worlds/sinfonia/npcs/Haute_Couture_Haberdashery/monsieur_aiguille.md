@@ -16,14 +16,14 @@
 ## 🎭 Core Concept
 
 ### What They're Actually Doing
-Monsieur Aiguille sells extremely good clothing at exactly the price it is marked, to anyone who walks in, in the order they arrive. That is the entire operation and there is no second layer to it. The clothes genuinely work — the Conductor's Tuxedo genuinely improves how a man is received in this city, the Opera Cape has genuinely been 200 Sovs all season — and he believes, without irony and without cynicism, that helping a person dress correctly is a way of helping the person.
+Monsieur Aiguille sells extremely good clothing at exactly the price it is marked, to anyone who walks in, in the order they arrive. That is the entire operation and there is no second layer to it. The clothes genuinely work — the Conductor's Tuxedo genuinely improves how a man is received in this city, the Opera Cape has genuinely been 200 SOVS all season — and he believes, without irony and without cynicism, that helping a person dress correctly is a way of helping the person.
 
 The Assessment Protocol is real, is applied to everyone, and is not personal. He looks at you, he sees what needs doing, and he tells you, in a warm French accent, in the gentlest possible phrasing, precisely what is wrong. He calls this service. It is service. It also causes more damage per sentence than anything else in Sinfonia.
 
 At the back of the Accessories Alcove, in a sealed vitrine on its own spotlight with its own key kept apart from every other key in the shop, sits an object he considers genuinely sacred. It is not stock. It is not priced. No assistant will discuss it. He declines offers for it without hearing the number, every time, and he is not performing reluctance — the placard means exactly what it says.
 
 ### What Bros Believe
-The bros believe they have found a mark. A Frenchman in a marble shop who does not know what he is sitting on, selling a 200 Sovs cape that Lord Pilsner has privately valued at considerably more, purely on the grounds that it is a cape. They believe the Assessment was a first impression rather than a diagnosis, and that first impressions can be overturned by grit. They believe that crossing 500 Sovs in a published, publicly-posted loyalty tier constitutes a judgement of their character. **Chadwick**: "We came out AHEAD and we're not tourists anymore — we're CLIENTELE."
+The bros believe they have found a mark. A Frenchman in a marble shop who does not know what he is sitting on, selling a 200 SOVS cape that Lord Pilsner has privately valued at considerably more, purely on the grounds that it is a cape. They believe the Assessment was a first impression rather than a diagnosis, and that first impressions can be overturned by grit. They believe that crossing 500 SOVS in a published, publicly-posted loyalty tier constitutes a judgement of their character. **Chadwick**: "We came out AHEAD and we're not tourists anymore — we're CLIENTELE."
 
 They also believe he never noticed the stage-whispered heist commentary conducted six feet from him at conversational-theatre volume.
 
@@ -140,7 +140,7 @@ He wants people to leave better than they arrived, and he has one instrument for
 
 **Lord Pilsner**: "I'll take the cape! What's the damage?"
 
-> "The Opera Cape is 200 Sovs."
+> "The Opera Cape is 200 SOVS."
 
 **Lord Pilsner** *(stage-whisper, audible from the street)*: "Two hundred. TWO HUNDRED, boys. He has no idea what he's sitting on. Nobody make a face. Act natural."
 
@@ -154,7 +154,7 @@ He wants people to leave better than they arrived, and he has one instrument for
 
 *And then, to the assistant, at entirely normal volume, while writing the ticket:*
 
-> "The cape is 200 Sovs. It has been 200 Sovs all season. I should not like the gentleman to feel he had underpaid."
+> "The cape is 200 SOVS. It has been 200 SOVS all season. I should not like the gentleman to feel he had underpaid."
 
 ### The Vitrine
 *The Accessories Alcove. Three men have stopped moving at the same time. Canon beats, ship verbatim.*
@@ -194,7 +194,7 @@ He wants people to leave better than they arrived, and he has one instrument for
 ### Post-Interaction
 *Canon — to a shop assistant, once the door has closed, quietly, without contempt:*
 
-> "They spent five hundred Sovs to be told their own names. Do not laugh. Everyone here did."
+> "They spent five hundred SOVS to be told their own names. Do not laugh. Everyone here did."
 
 *Canon — PATH B, next visit, having taken exactly one look at the empty vitrine and one look at them, and having personally measured all three:*
 
@@ -226,7 +226,7 @@ He wants people to leave better than they arrived, and he has one instrument for
 |------|----------|----------|
 | 9 AM – 10 AM | Alteration Workshop | Before opening: hems, his own suit, the day's alterations; the only hour he is not being watched through glass |
 | 10 AM – 2 PM | Showroom | Assessment Protocol on every arrival; fittings; the accessories patter he leaves to the assistants |
-| 2 PM – 5 PM | Fitting Rooms / Workshop | Measuring, chalking, the Valued Client private room; consultations at 100 Sovs |
+| 2 PM – 5 PM | Fitting Rooms / Workshop | Measuring, chalking, the Valued Client private room; consultations at 100 SOVS |
 | 5 PM – 7 PM | Showroom | The day's serious purchases; window changes on Thursdays; he does the mannequins himself |
 | 7 PM | Front door | Closes personally. Checks the vitrine's lock with two fingers on his way past. Every night. |
 
@@ -242,10 +242,10 @@ He wants people to leave better than they arrived, and he has one instrument for
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Core equipment (Formal Gloves → Maestro's Cufflinks) | 75 – 300 Sovs | Exactly the marked price, all season | Full stat table in `Design/World Design/Sinfonia/haute_couture_haberdashery.md` |
-| Premium Collection | 250 – 750 Sovs | Exactly the marked price | Valued Client access required |
-| Alterations | +50 Sovs | Genuinely worth it | "Perfect fit" bonus: +1 to the item's primary stat |
-| Outfit Consultation | 100 Sovs | Real advice, plus free backhanded compliments | Reveals hidden equipment synergies |
+| Core equipment (Formal Gloves → Maestro's Cufflinks) | 75 – 300 SOVS | Exactly the marked price, all season | Full stat table in `Design/World Design/Sinfonia/haute_couture_haberdashery.md` |
+| Premium Collection | 250 – 750 SOVS | Exactly the marked price | Valued Client access required |
+| Alterations | +50 SOVS | Genuinely worth it | "Perfect fit" bonus: +1 to the item's primary stat |
+| Outfit Consultation | 100 SOVS | Real advice, plus free backhanded compliments | Reveals hidden equipment synergies |
 | Rush Tailoring | +50% | Real | Immediate availability; he sighs, and complies |
 | **The Gold Circle Coin** (`item_gold_circle_coin`) | **Not for sale, at any number** | Sacred to him; roughly a bus fare in 1990 | PATH A handover only, after the errand; full spec in `Design/Inventory/items/gold_circle_coin_item.md` |
 
@@ -334,7 +334,7 @@ The only thing that ever changes is whether he uses their names. On PATH A he do
 - **Outcome**: PATH A — the errand completed in formal wear, then the handover ceremony and `item_gold_circle_coin`. PATH B — he sells them the disguises retail, on their own names, having measured all three, and says nothing about the empty case beyond one line, forever.
 
 ### Quest Gate Function (If Applicable)
-He gates the Coin on PATH A behind the shop's **existing** 500 Sovs Valued Client tier plus the errand — no new tier, no new pricing, no quest-specific discount. He gates nothing on PATH B, because PATH B does not go through him; it goes through his front door at 7:01 PM. He also gates Black-Tie Attire, which is one of the three ways into the Black-Tie Backroom.
+He gates the Coin on PATH A behind the shop's **existing** 500 SOVS Valued Client tier plus the errand — no new tier, no new pricing, no quest-specific discount. He gates nothing on PATH B, because PATH B does not go through him; it goes through his front door at 7:01 PM. He also gates Black-Tie Attire, which is one of the three ways into the Black-Tie Backroom.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -375,7 +375,7 @@ Precise French-accented English, measured delivery, with the occasional sigh —
 ### Key Delivery Notes
 - Every canon line in this profile ships **verbatim** and matches `haute_couture_haberdashery.md` and `nothingisgettingthrough.md` byte-for-byte. The connective staging around them has craft latitude; the quoted lines do not.
 - **He must never sound like he is mocking anyone.** Not at the assessment, not at the ticket, not at the handover. The whole character is a man being helpful at a velocity nobody can survive.
-- **"They spent five hundred Sovs to be told their own names. Do not laugh. Everyone here did."** is delivered quietly, without contempt, and is about the shop rather than about the customers. It forbids laughter and means it.
+- **"They spent five hundred SOVS to be told their own names. Do not laugh. Everyone here did."** is delivered quietly, without contempt, and is about the shop rather than about the customers. It forbids laughter and means it.
 - The ellipses are real held beats, and the client always fills them first.
 
 ---
@@ -415,7 +415,7 @@ Precise French-accented English, measured delivery, with the occasional sigh —
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — the old "no new crypto content / 2% max" cap is superseded; none of it applies here. The shop is pure fashion craft, takes Sov and card, and touches neither SOVS nor the darknet shitcoin economy.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — the old "no new crypto content / 2% max" cap is superseded; none of it applies here. The shop is pure fashion craft, takes SOV and card, and touches neither SOVS nor the darknet shitcoin economy.
 - [x] **NO automatic crypto assumptions** — he has none, has never had any, and would find the subject a waste of a fitting
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — N/A. The Gold Circle Coin is a 1990 novelty cinema prop, not a currency, and is not from that pool.
 - [x] **The bros are never scam-aware** — they leave convinced they robbed him at a counter where the true price was stated twice at normal volume, and no character ever corrects the account
@@ -425,7 +425,7 @@ Precise French-accented English, measured delivery, with the occasional sigh —
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on the bros mistaking an honest transaction for a heist and a published loyalty tier for a character judgement
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a genuine craftsman who charges the marked price, protects his staff, and never lies; the French accent is warm and never played as caricature
-- [x] Humor is affectionate mockery, not mean-spirited — his sincerity is the joke's engine and he is never cruel; the shop satirises luxury-retail practice, not the man practising it
+- [x] Humor is affectionate mockery — his sincerity is the joke's engine and he is never cruel; the shop satirises luxury-retail practice, not the man practising it
 
 ---
 

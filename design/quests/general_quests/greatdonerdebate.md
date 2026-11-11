@@ -42,7 +42,7 @@ A bouncer-turned-kebabist. 6'4", wears a glittery crop top over a bulletproof ve
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| Belly Of Chadz | 6 Sovs | A dense kebab box soaked in three sauces and ego. 🩸 +HP regen while Hungover (10% over 3 turns) 😵‍💫 50% chance of immediate "Greasy Coma" debuff: skip next turn, but clear all ailments 🥩 Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample) |
+| Belly Of Chadz | 6 SOVS | A dense kebab box soaked in three sauces and ego. 🩸 +HP regen while Hungover (10% over 3 turns) 😵‍💫 50% chance of immediate "Greasy Coma" debuff: skip next turn, but clear all ailments 🥩 Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample) |
 
 ---
 
@@ -61,7 +61,7 @@ Talks in a mix of food puns and veiled threats. Smells like lighter fluid.
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| Doner of Illusions™ | 7 Sovs | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 SP, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
+| Doner of Illusions™ | 7 SOVS | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 SP, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
 
 ---
 
@@ -77,7 +77,7 @@ A flickering vending machine hidden behind a glitching privacy curtain. You can 
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| CryptoDoner Box | 5 Sovs | Text reads: "Meat. Data. Destiny." 🧬 +2 random stats but gives "DigiDysentery" (inverts your menu buttons for 2 mins) 🌐 ICQ prompt: "Want to share your results with CoinDaddy69?" |
+| CryptoDoner Box | 5 SOVS | Text reads: "Meat. Data. Destiny." 🧬 +2 random stats but gives "DigiDysentery" (inverts your menu buttons for 2 mins) 🌐 ICQ prompt: "Want to share your results with CoinDaddy69?" |
 
 ---
 
@@ -86,14 +86,14 @@ A flickering vending machine hidden behind a glitching privacy curtain. You can 
 **Location**: Publandia — Kebab Alley (Seedy Underbelly)
 
 **Visuals**:
-A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists roaming the street. The wrap comes from a stand that's been here "since before Sovs."
+A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists roaming the street. The wrap comes from a stand that's been here "since before SOVS."
 
 **Vendor**: "Da" — Irish-Turkish fusion of cultures, been serving wraps to staggering patrons for 20+ years
 
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The OG Lamb Wrap | 8 Sovs | Classic lamb döner with garlic sauce, wrapped in warm pita. 🥙 +20 HP, "Grease Finger" debuff (-Dexterity for item use) 🍀 Counts toward "The Great Döner Debate" sidequest (Publandia sample) |
+| The OG Lamb Wrap | 8 SOVS | Classic lamb döner with garlic sauce, wrapped in warm pita. 🥙 +20 HP, "Grease Finger" debuff (-Dexterity for item use) 🍀 Counts toward "The Great Döner Debate" sidequest (Publandia sample) |
 
 ---
 
@@ -222,9 +222,9 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 **Menu Items**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The Triple Tower | 8 Sovs | All three meats (veal, chicken, lamb), extra garlic sauce, fresh-baked bread. 🥙 +25 HP, +10 SP, "Garlic Aura" buff (NPCs keep slight distance for 1 hour) 🇳🇱 Counts toward expansion sidequest |
-| Mehmet's Choice | 6 Sovs | "I choose. You eat. This is how it works." Random meat selection, always perfect. 🎲 +20 HP, +5 to random stat, "Blessed by the Architect" buff |
-| The Interrogation | 4 Sovs | Mehmet asks where else you've eaten döner before serving you. Answer wrong and he lectures you for 3 minutes. 📚 +15 HP, +2 Wisdom (you learn things) |
+| The Triple Tower | 8 SOVS | All three meats (veal, chicken, lamb), extra garlic sauce, fresh-baked bread. 🥙 +25 HP, +10 SP, "Garlic Aura" buff (NPCs keep slight distance for 1 hour) 🇳🇱 Counts toward expansion sidequest |
+| Mehmet's Choice | 6 SOVS | "I choose. You eat. This is how it works." Random meat selection, always perfect. 🎲 +20 HP, +5 to random stat, "Blessed by the Architect" buff |
+| The Interrogation | 4 SOVS | Mehmet asks where else you've eaten döner before serving you. Answer wrong and he lectures you for 3 minutes. 📚 +15 HP, +2 Wisdom (you learn things) |
 
 ---
 
@@ -248,9 +248,9 @@ A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum 
 **Menu Items**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The Full Kapsalon Experience | 12 Sovs | Large aluminum tray: fries, döner meat, melted cheese, salad, garlic sauce, sambal. 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), 20% "Food Coma" risk (skip next turn) 🍟 Aluminum tray becomes inventory item |
-| The Inventor's Cut | 9 Sovs | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Canal Courage" buff (+5 Bravado for 1 hour) |
-| The Wim | 15 Sovs | Large kapsalon with extra cheese, extra meat, extra sauce, extra EVERYTHING. ⚠️ Must pass Constitution check or immediate "Food Coma" 💪 If survived: +50 HP, "Kapsalon Conqueror" achievement |
+| The Full Kapsalon Experience | 12 SOVS | Large aluminum tray: fries, döner meat, melted cheese, salad, garlic sauce, sambal. 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), 20% "Food Coma" risk (skip next turn) 🍟 Aluminum tray becomes inventory item |
+| The Inventor's Cut | 9 SOVS | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Canal Courage" buff (+5 Bravado for 1 hour) |
+| The Wim | 15 SOVS | Large kapsalon with extra cheese, extra meat, extra sauce, extra EVERYTHING. ⚠️ Must pass Constitution check or immediate "Food Coma" 💪 If survived: +50 HP, "Kapsalon Conqueror" achievement |
 
 **Special Item — Kapsalon Battle Tray**:
 After eating any kapsalon, the aluminum tray is added to inventory:
@@ -370,31 +370,37 @@ You can't escape your döner history."
 #### If Player Previously Chose "They all taste like shame":
 
 ```
-*The door creaks open slowly. Tony420 himself walks in — 
-a pale, hoodie-clad figure who has clearly never seen sunlight.*
+*The door creaks open slowly. A huge man walks in, stops, 
+and holds up a tablet at face height, like a hostage photo. 
+The screen is blank.*
 
-Tony420: "yo"
+*ICQ: "Uh-oh!"*
+
+*The screen lights up: Tony420, heavily blurred, Oakleys 
+perfectly visible through the blur.*
+
+Tony420 (tablet, subtitled): "yo"
 
 Lord Pilsner: "...Tony? You're... real?"
 
-Tony420: "in the flesh lol
+Tony420 (tablet, subtitled): "in the flesh lol
 well
-mostly flesh
-haven't been outside in a while"
+mostly flesh"
 
-Big Wim: "Who is this child in my establishment?"
+Big Wim: "You bring a man to hold your phone?"
 
-Tony420: "i'm the one who asked the question
+Tony420 (tablet, subtitled): "im the 1 who asked the question
 and u said they ALL taste like shame
 which was based honestly
 but now ur here
 eating
 with ENTHUSIASM"
 
-*Tony420 holds up a phone showing the original ICQ poll*
+*The tablet switches to the original ICQ poll. The goon 
+tilts it toward the bros.*
 
-Tony420: "u gotta pick now
-for real this time
+Tony420 (tablet, subtitled): "u gotta pick now
+4 real this time
 no shame option
 just... truth"
 ```
@@ -536,9 +542,10 @@ Big Wim: "...this is either very wise or very stupid."
 
 Mehmet: "The Architect requires time to process this."
 
-*Slow zoom on Tony420's face (he's still there somehow)*
+*Slow zoom on the tablet. The goon has not moved. 
+The blur has not improved.*
 
-Tony420: "bro just invented döner diplomacy
+Tony420 (tablet, subtitled): "bro just invented döner diplomacy
 this is either galaxy brain or smooth brain
 honestly can't tell"
 
@@ -648,7 +655,7 @@ is kapsalon a döner or a war crime?
 - Original quest flags must be saved to trigger correct confrontation
 - Minigame should be simple (3-5 button prompts max)
 - The "Can't Decide" option should be slightly harder to achieve (requires restraint)
-- Tony420 appearing "in the flesh" should feel like a major reveal
+- Tony420's first appearance must stay a major reveal: the goon enters with a BLANK tablet at face height, the ICQ "Uh-oh!" plays, and the screen lights up on the blurred, voice-changed Tony (deep, slowed, pitch-shifted; Oakleys visible through the blur; subtitles keep his lowercase ICQ spelling). The goon is big, silent and unnamed, and never speaks for him. Do not show the goon or the tablet anywhere before this scene, including Cyberspace Kavarna — the Kavarna goon is held until after the Döner Debate (author ruling 2026-11-11). Tony420 has no body sprite and no walk cycle; only the goon moves.
 
 ---
 

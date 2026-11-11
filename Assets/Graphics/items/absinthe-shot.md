@@ -7,7 +7,7 @@
 > **Canon source:** `items.md`  
 > **Deliverable:** 64x64 transparent PNG item icon + 128x128 master
 
-> [!] **Canon flag:** Source doc names this "Prague Special." The World Naming Consistency Guide forbids real city names in content — renamed to **Debaucheryville Special**. Update `items.md` to match.
+> [!] **Canon flag:** Source doc names this "Prague Special." The World Naming Consistency Guide (retired: `design/legacy/retired_templates/style_guides__Eurobound World Naming Consistency Guide.md`) forbids real city names in content — renamed to **Debaucheryville Special**. Update `items.md` to match.
 
 ---
 

@@ -100,7 +100,7 @@ Three years. He wants three more years of nights exactly like the other eleven t
 3. > "Ah — the window is Thursday. Thursday, the window."
 4. > "Cold in here. Cold at the front, warm at the back. It has always been so."
 5. > "Marble. Marble everywhere, and one carpet, and the carpet is in the office."
-6. > "Two hundred Sovs for a cape." *(a pause of exactly the wrong length)* "Well. It is a very good cape."
+6. > "Two hundred SOVS for a cape." *(a pause of exactly the wrong length)* "Well. It is a very good cape."
 
 ### Post-Interaction — The Callback
 *Any subsequent visit to the shop, PATH B only. He is not on shift; he is coming in as the day staff are leaving, or he is by the service door with his thermos. He addresses one bro directly, warmly, and walks on — canon, ships verbatim:*
@@ -310,7 +310,7 @@ Sinfonian, working, unhurried; a voice worn comfortable by thirty-one years of t
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire is entirely the bros' account of an eleven-second hold they did not win
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a working man three years from a pension, written with complete respect; never doddering, never a fool, and the most clear-eyed person in the scene
-- [x] Humor is affectionate mockery, not mean-spirited — his age and his knees are never the punchline; the joke is what he declines to do about three men on his plinths
+- [x] Humor is affectionate mockery — his age and his knees are never the punchline; the joke is what he declines to do about three men on his plinths
 
 ---
 

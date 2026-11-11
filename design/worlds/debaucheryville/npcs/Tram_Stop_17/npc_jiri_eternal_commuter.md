@@ -325,7 +325,7 @@ Now: Prove he can finish something. If he leaves, all the waiting was for nothin
 - Taxi drivers reference him: "That's Jiří's stop. He won't take a taxi. We've offered."
 - Shopkeepers remember: "My grandmother remembers when Jiří first started waiting. She was a child."
 - Metro worker's secret: "The 17 hasn't run since 1999. Don't tell Jiří. It would kill him. Maybe literally."
-- Tour guides include him: "And on your left, you'll see Jiří's Bench. He's been waiting since before Sovs."
+- Tour guides include him: "And on your left, you'll see Jiří's Bench. He's been waiting since before SOVS."
 
 ---
 

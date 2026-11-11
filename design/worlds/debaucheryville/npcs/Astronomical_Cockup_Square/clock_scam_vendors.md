@@ -1,78 +1,29 @@
-# Clock Square Scam Vendors - Master Reference
+# NPC Profile: Clock Square Scam Vendors - Master Reference
+
+*"Astronomical Cock-Up Square is where the bros' wallets go to die."*
 
 *The Coordinated Ecosystem of Tourist Exploitation*
 
-## 📋 Overview
-
-The Astronomical Cock-Up Square features a coordinated network of scam vendors who have perfected their craft over years. They operate as a professional ecosystem with territory respect, referral systems, and shared end-of-day drinks.
-
-**Total Potential Tourist Damage**: 380-550 Sovs for the "complete experience"
+> **Group master-reference doc.** This file covers the seven-vendor scam ecosystem of Astronomical Cock-Up Square as a unit; each vendor has (or points to) an individual profile, listed in the Vendor Roster. Sections with no group-level content are marked OPEN QUESTION (author) rather than filled in.
 
 ---
 
-## 🗺️ Vendor Map & Flow
+## 📋 NPC Identity
 
-### Physical Layout
-```
-┌─────────────────────────────────────────────────────────┐
-│                    ASTRONOMICAL CLOCK                     │
-│                    [Clock Tower Face]                     │
-│                         ▲                                 │
-│                    Tourist Mob                            │
-│              [100+ people looking up]                     │
-│                                                           │
-│  ┌─────────┐                              ┌─────────┐    │
-│  │ PAVEL   │                              │ VÁCLAV  │    │
-│  │ Viewing │     ┌─────────────┐          │ Clock   │    │
-│  │ Spot 30 Sovs│     │  MIROSLAV   │          │ Wine 60 Sovs│    │
-│  └─────────┘     │  Party Monk │          └─────────┘    │
-│                  │   60 Sovs       │                          │
-│                  └─────────────┘                          │
-│                                                           │
-│  ┌─────────────┐                    ┌─────────────┐      │
-│  │  MARTIN     │                    │  HELENA     │      │
-│  │  Wristband  │                    │  Merch      │      │
-│  │  90 Sovs total  │                    │  90 Sovs+       │      │
-│  └─────────────┘                    └─────────────┘      │
-│                                                           │
-│              ═══════════════════════════                  │
-│                    To VIKTOR → DONÁT                      │
-│                    Euro Ink 4 Less 75 Sovs                    │
-└─────────────────────────────────────────────────────────┘
-```
+- **NPC ID**: OPEN QUESTION (author) (group doc; per-vendor IDs live in the individual files)
+- **Display Name**: Clock Square Scam Vendors
+- **Role**: Scammer network (7 vendors)
+- **Primary Location**: Astronomical Cock-Up Square, Debaucheryville
 
-### Customer Flow (Optimal Scam Path)
-```
-[Bros Enter Square]
-        ↓
-[1. PAVEL approaches] → 30 Sovs → Stand behind pillar
-        ↓
-[2. MIROSLAV approaches] → 60 Sovs → Fake blessing
-        ↓
-[Clock Show - 38 seconds] → Bros cry → "Post-Clock Vulnerability"
-        ↓
-[3. VÁCLAV approaches] → 60-180 Sovs → Clock wine
-        ↓
-[4. HELENA approaches] → 90 Sovs+ → Merchandise
-        ↓
-[5. MARTIN approaches] → 90 Sovs → Wristbands
-        ↓
-[6. VIKTOR calls out] → Referral → Euro Ink 4 Less
-        ↓
-[7. DONÁT tattoos] → 75 Sovs → Duck tattoo
-```
+### Vendor Roster
 
----
-
-## 👥 Vendor Roster
-
-### 1. Pavel "Prime Spot" Kovář - Viewing Spot Scammer
+#### 1. Pavel "Prime Spot" Kovář - Viewing Spot Scammer
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_viewing_spot_scammer.md` |
 | **Position** | Square perimeter, roaming |
 | **Product** | "Prime viewing spots" |
-| **Price** | 10 Sovs/person (30 Sovs total) |
+| **Price** | 10 SOVS/person (30 SOVS total) |
 | **Result** | Blocked view behind pillar |
 | **Role** | First contact, softens marks |
 
@@ -80,13 +31,13 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-### 2. Miroslav "Father Miro" Kalich - Party Monk
+#### 2. Miroslav "Father Miro" Kalich - Party Monk
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_party_monk.md` |
 | **Position** | Fountain area, fixed station |
 | **Product** | Fake blessings |
-| **Price** | 20 Sovs/person (60 Sovs total) |
+| **Price** | 20 SOVS/person (60 SOVS total) |
 | **Result** | Lorem ipsum gibberish |
 | **Role** | Spiritual exploitation |
 
@@ -98,13 +49,13 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-### 3. Václav "Vintage" Ročník - Clock Wine Vendor
+#### 3. Václav "Vintage" Ročník - Clock Wine Vendor
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_clock_wine_vendor.md` |
 | **Position** | Wine cart, fixed |
 | **Product** | "Clock Energy Wine" |
-| **Price** | 60 Sovs/bottle |
+| **Price** | 60 SOVS/bottle |
 | **Result** | Boxed wine in fancy bottles |
 | **Role** | Post-show interception |
 
@@ -116,33 +67,33 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-### 4. Helena "Memories" Procházková - Merchandise Vendor
+#### 4. Helena "Memories" Procházková - Merchandise Vendor
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_merchandise_vendor.md` |
 | **Position** | Merchandise stall, fixed |
 | **Product** | Commemorative garbage |
-| **Price** | 90 Sovs+ total |
+| **Price** | 90 SOVS+ total |
 | **Result** | Plates, shirts, temp tattoos |
 | **Role** | Efficient emotional predator |
 
 **Signature Line**: "You cry at clock! Very moving. You need plate to remember."
 
 **Inventory**:
-- Commemorative Plate: 45 Sovs
-- "I Survived" T-Shirt: 30 Sovs
-- Temporary Tattoo: 15 Sovs
-- Snow Globe: 25 Sovs
+- Commemorative Plate: 45 SOVS
+- "I Survived" T-Shirt: 30 SOVS
+- Temporary Tattoo: 15 SOVS
+- Snow Globe: 25 SOVS
 
 ---
 
-### 5. Martin "VIP Specialist" - Shady Wristband Guy
+#### 5. Martin "VIP Specialist" - Shady Wristband Guy
 | Attribute | Value |
 |-----------|-------|
 | **File** | `shady_wristband_guy.md` |
 | **Position** | Roaming, evening hours |
 | **Product** | "VIP All-Access Wristbands" |
-| **Price** | 30 Sovs/wristband (90 Sovs total) |
+| **Price** | 30 SOVS/wristband (90 SOVS total) |
 | **Result** | Children's birthday wristbands |
 | **Role** | VIP culture exploitation |
 
@@ -154,7 +105,7 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-### 6. Viktor "Ink Man" Horáček - Tattoo Barker
+#### 6. Viktor "Ink Man" Horáček - Tattoo Barker
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_tattoo_barker.md` |
@@ -168,13 +119,13 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-### 7. Donát "Euro Ink" Novák - Tattoo Artist
+#### 7. Donát "Euro Ink" Novák - Tattoo Artist
 | Attribute | Value |
 |-----------|-------|
 | **File** | `npc_euro_ink_tattoo_artist.md` |
 | **Position** | Euro Ink 4 Less interior |
 | **Product** | Tattoos |
-| **Price** | 50-100 Sovs |
+| **Price** | 50-100 SOVS |
 | **Result** | Duck instead of skeleton |
 | **Role** | Permanent mistake creator |
 
@@ -184,61 +135,94 @@ The Astronomical Cock-Up Square features a coordinated network of scam vendors w
 
 ---
 
-## 🤝 Vendor Relationships
+## 🎭 Core Concept
 
-### Family Ties
-```
-Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
-         │                         │
-         └────10% KICKBACK────────┘
-```
+### Overview
 
-### Professional Network
-| Vendor | Sends To | Receives From |
-|--------|----------|---------------|
-| Pavel | General flow | First contact |
-| Miroslav | Václav (explicit) | Pavel's marks |
-| Václav | - | Miroslav's referrals |
-| Helena | Viktor (temp tattoo upsell) | Post-wine emotional wrecks |
-| Martin | - | Evening crowd |
-| Viktor | Donát | Helena's temp tattoo buyers |
-| Donát | - | Viktor's referrals |
+The Astronomical Cock-Up Square features a coordinated network of scam vendors who have perfected their craft over years. They operate as a professional ecosystem with territory respect, referral systems, and shared end-of-day drinks.
 
-### Territory Rules
-- No poaching marks mid-scam
-- Scatter when police visible
-- Reconvene after coast clear
-- Share end-of-night drinks
-- Compare daily takes
+**Total Potential Tourist Damage**: 380-550 SOVS for the "complete experience"
+
+### What Bros Believe
+OPEN QUESTION (author)
 
 ---
 
-## 💰 Economic Summary
+## 👤 Appearance
 
-### Total Potential Spending
-| Vendor | Min | Max | Typical |
-|--------|-----|-----|---------|
-| Pavel (Viewing) | 30 Sovs | 30 Sovs | 30 Sovs |
-| Miroslav (Monk) | 60 Sovs | 120 Sovs | 60 Sovs |
-| Václav (Wine) | 60 Sovs | 300 Sovs | 180 Sovs |
-| Helena (Merch) | 45 Sovs | 200 Sovs | 90 Sovs |
-| Martin (Wristbands) | 90 Sovs | 90 Sovs | 90 Sovs |
-| Donát (Tattoo) | 50 Sovs | 100 Sovs | 75 Sovs |
-| **TOTAL** | **335 SOVS** | **840 SOVS** | **525 SOVS** |
-
-### Bros' Typical Spend: 525 Sovs
-- Viewing spots: 30 Sovs
-- Blessings: 60 Sovs
-- Wine (3 bottles): 180 Sovs
-- Merch (basics): 90 Sovs
-- Wristbands: 90 Sovs
-- Tattoo: 75 Sovs
+OPEN QUESTION (author) at group level; see each vendor's individual profile file (Vendor Roster).
 
 ---
 
-## ⏰ Timing & Triggers
+## 🧠 Personality
 
-### Vendor Activation Sequence
+OPEN QUESTION (author) at group level; see each vendor's individual profile file (Vendor Roster).
+
+---
+
+## 💬 Dialogue
+
+OPEN QUESTION (author) at group level. Each vendor's Signature Line (and Václav's Slip-Up) is in the Vendor Roster under NPC Identity.
+
+---
+
+## 📅 Schedule & Location
+
+### Vendor Map & Flow
+
+#### Physical Layout
+```
+┌─────────────────────────────────────────────────────────┐
+│                    ASTRONOMICAL CLOCK                     │
+│                    [Clock Tower Face]                     │
+│                         ▲                                 │
+│                    Tourist Mob                            │
+│              [100+ people looking up]                     │
+│                                                           │
+│  ┌─────────┐                              ┌─────────┐    │
+│  │ PAVEL   │                              │ VÁCLAV  │    │
+│  │ Viewing │     ┌─────────────┐          │ Clock   │    │
+│  │ Spot 30 SOVS│     │  MIROSLAV   │          │ Wine 60 SOVS│    │
+│  └─────────┘     │  Party Monk │          └─────────┘    │
+│                  │   60 SOVS       │                          │
+│                  └─────────────┘                          │
+│                                                           │
+│  ┌─────────────┐                    ┌─────────────┐      │
+│  │  MARTIN     │                    │  HELENA     │      │
+│  │  Wristband  │                    │  Merch      │      │
+│  │  90 SOVS total  │                    │  90 SOVS+       │      │
+│  └─────────────┘                    └─────────────┘      │
+│                                                           │
+│              ═══════════════════════════                  │
+│                    To VIKTOR → DONÁT                      │
+│                    Euro Ink 4 Less 75 SOVS                    │
+└─────────────────────────────────────────────────────────┘
+```
+
+#### Customer Flow (Optimal Scam Path)
+```
+[Bros Enter Square]
+        ↓
+[1. PAVEL approaches] → 30 SOVS → Stand behind pillar
+        ↓
+[2. MIROSLAV approaches] → 60 SOVS → Fake blessing
+        ↓
+[Clock Show - 38 seconds] → Bros cry → "Post-Clock Vulnerability"
+        ↓
+[3. VÁCLAV approaches] → 60-180 SOVS → Clock wine
+        ↓
+[4. HELENA approaches] → 90 SOVS+ → Merchandise
+        ↓
+[5. MARTIN approaches] → 90 SOVS → Wristbands
+        ↓
+[6. VIKTOR calls out] → Referral → Euro Ink 4 Less
+        ↓
+[7. DONÁT tattoos] → 75 SOVS → Duck tattoo
+```
+
+### Timing & Triggers
+
+#### Vendor Activation Sequence
 | Order | Vendor | Trigger | Delay |
 |-------|--------|---------|-------|
 | 1 | Pavel | Enter square | 5 sec |
@@ -249,7 +233,7 @@ Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
 | 6 | Viktor | Crying triggered | 60 sec |
 | 7 | Donát | Viktor referral | - |
 
-### Time-of-Day Availability
+#### Time-of-Day Availability
 | Vendor | Morning | Peak | Evening | Night |
 |--------|---------|------|---------|-------|
 | Pavel | Setup | ✅ | ✅ | ❌ |
@@ -262,9 +246,79 @@ Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
 
 ---
 
-## 🎭 Post-Clock Vulnerability Mechanic
+## 🎒 Inventory / Services
 
-### Effect
+### Economic Summary
+
+#### Total Potential Spending
+| Vendor | Min | Max | Typical |
+|--------|-----|-----|---------|
+| Pavel (Viewing) | 30 SOVS | 30 SOVS | 30 SOVS |
+| Miroslav (Monk) | 60 SOVS | 120 SOVS | 60 SOVS |
+| Václav (Wine) | 60 SOVS | 300 SOVS | 180 SOVS |
+| Helena (Merch) | 45 SOVS | 200 SOVS | 90 SOVS |
+| Martin (Wristbands) | 90 SOVS | 90 SOVS | 90 SOVS |
+| Donát (Tattoo) | 50 SOVS | 100 SOVS | 75 SOVS |
+| **TOTAL** | **335 SOVS** | **840 SOVS** | **525 SOVS** |
+
+#### Bros' Typical Spend: 525 SOVS
+- Viewing spots: 30 SOVS
+- Blessings: 60 SOVS
+- Wine (3 bottles): 180 SOVS
+- Merch (basics): 90 SOVS
+- Wristbands: 90 SOVS
+- Tattoo: 75 SOVS
+
+---
+
+## 🔗 Connections
+
+### Vendor Relationships
+
+#### Family Ties
+```
+Miroslav (Monk) ←──COUSINS──→ Václav (Wine)
+         │                         │
+         └────10% KICKBACK────────┘
+```
+
+#### Professional Network
+| Vendor | Sends To | Receives From |
+|--------|----------|---------------|
+| Pavel | General flow | First contact |
+| Miroslav | Václav (explicit) | Pavel's marks |
+| Václav | - | Miroslav's referrals |
+| Helena | Viktor (temp tattoo upsell) | Post-wine emotional wrecks |
+| Martin | - | Evening crowd |
+| Viktor | Donát | Helena's temp tattoo buyers |
+| Donát | - | Viktor's referrals |
+
+#### Territory Rules
+- No poaching marks mid-scam
+- Scatter when police visible
+- Reconvene after coast clear
+- Share end-of-night drinks
+- Compare daily takes
+
+---
+
+## 🔄 Recurring Appearances
+
+OPEN QUESTION (author). Existing facts: Donát "Recurring: Appears in ALL cities" (Vendor Roster); "All vendors should remember bros on return visits" (Development Notes).
+
+---
+
+## 🎬 Animation States
+
+OPEN QUESTION (author)
+
+---
+
+## 🎯 Quest Integration
+
+### Post-Clock Vulnerability Mechanic
+
+#### Effect
 After watching the 38-second clock show and crying:
 - `post_clock_vulnerability: true`
 - Duration: 30 minutes game time
@@ -272,14 +326,16 @@ After watching the 38-second clock show and crying:
 - Bros buy 50% more items
 - Emotional decision-making enabled
 
-### Vendors Who Exploit It
+#### Vendors Who Exploit It
 - Václav (primary - immediate post-show)
 - Helena (secondary - merchandise comfort)
 - Viktor (tertiary - tattoo enablement)
 
 ---
 
-## 📸 Screenshot Moments by Vendor
+## 📸 Social Media / Viral Potential
+
+### Screenshot Moments by Vendor
 
 | Vendor | Key Moment |
 |--------|------------|
@@ -293,7 +349,15 @@ After watching the 38-second clock show and crying:
 
 ---
 
-## ✅ Documentation Status
+## 🗣️ Voice Direction
+
+OPEN QUESTION (author)
+
+---
+
+## ✅ Validation Checklist
+
+### Documentation Status
 
 | Vendor | Profile | Location | Items | Complete |
 |--------|---------|----------|-------|----------|
@@ -318,4 +382,21 @@ After watching the 38-second clock show and crying:
 
 ---
 
-*"Astronomical Cock-Up Square is where the bros' wallets go to die."*
+## 🚫 Warnings & Restrictions
+
+OPEN QUESTION (author): template Crypto Check and Satirical Target Verification not yet run for this group doc.
+
+---
+
+## 🔧 Development Status
+
+- **Status**: OPEN QUESTION (author)
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/clock_scam_vendors.md`
+- **Registered In**: OPEN QUESTION (author)
+- **Sprite Sheet**: n/a (group doc)
+
+## 📜 Revision History
+
+| Date | Change | Author |
+|------|--------|--------|
+| 2026-11-11 | Restructured into NPC_Profile_Template sections; existing text moved verbatim, gaps marked OPEN QUESTION (bead Eurobound-9u9) | Claude (writer agent) |

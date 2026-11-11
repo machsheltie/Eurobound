@@ -1,7 +1,7 @@
 # The Bunk & Blunder - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Bunk & Blunder is Publandia's premier budget hostel, where 15 Sovs buys a bed, a story, and a fundamental reassessment of your life choices — this document specifies every PNG needed to render sleep as theoretical, privacy as fictional, and your roommates' life choices as ambient audio. The satire targets hostel culture and budget travel delusions: the bros think they're saving money for experiences; the hostel IS the experience, just not the one they wanted.
+The Bunk & Blunder is Publandia's premier budget hostel, where 15 SOVS buys a bed, a story, and a fundamental reassessment of your life choices — this document specifies every PNG needed to render sleep as theoretical, privacy as fictional, and your roommates' life choices as ambient audio. The satire targets hostel culture and budget travel delusions: the bros think they're saving money for experiences; the hostel IS the experience, just not the one they wanted.
 
 **Location ID:** `publandia_lodging_bunk_blunder_01`
 **Theme:** Budget travel delusion meets random roommate chaos — "Where Dreams Go to Die (Usually Around 3 AM)"
@@ -473,7 +473,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - **Trigger:** Constant while any Snorer-type occupies a bunk; Derek's 4B instance never stops
 - **Purpose:** The dorm's dominant ambient comedy — sleep quality made visible
 - **Audio Sync:** Multi-frequency snore layers; big Z frames sync to bass snore, small z to the whistle
-- **Performance Optimization:** Static Zzz sprite with 2-frame alpha pulse on low-end devices
+- **Performance Optimization:** Static Zzz sprite with 2-frame alpha pulse on min-spec hardware
 
 ### Broken Bulb Flicker:
 - **Duration:** Random intervals, 8-30 seconds between events; each flicker 0.4 seconds
@@ -605,10 +605,10 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 | Hot Shower Marker, Numbered | (224, 192) | 32x32 | Stall number badge — hot stall identified by numeral, not steam tint |
 | Room Chaos Level Pips | (0, 224) | 128x32 | Pip-count chaos rating (1-5 pips) for booking rows |
 | Key Card State Icons, Shaped | (128, 224) | 64x32 | Embossed check/X shapes independent of green/red |
-| Touch Target Padding Guide | (192, 224) | 64x32 | 44px minimum hit-zone template for all interactive elements |
+| Click Target Padding Guide | (192, 224) | 64x32 | 44px minimum hit-zone template for all interactive elements |
 
 - Rest quality and roommate risk are double-coded everywhere: pattern + shape + numeral, color as garnish only
-- All booking rows, roommate icons, shower queue slots, and examine hotspots meet the 44px minimum touch target
+- All booking rows, roommate icons, shower queue slots, and examine hotspots meet the 44px minimum click target
 - Every critical sound in the audio design has a sprite above — the hostel must be fully survivable with the sound off
 
 ---
@@ -735,7 +735,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 ### Quote Potential:
 - "You're the third person to ask about their dignity this morning. I haven't seen it."
 - "Someone left a traffic cone in room 6. No one's claimed it. No one wants to claim it."
-- "Room type? Grand. That's 18 Sovs. Key card. Room 4. Good luck."
+- "Room type? Grand. That's 18 SOVS. Key card. Room 4. Good luck."
 - "Breakfast is 7-9. Continental means toast and sadness. Coffee's real though."
 - "The couple in room 2 thinks they're quiet. They're not. Nobody's told them. Nobody will."
 - "The snoring guy in 4B? That's Derek. He's been here two weeks. I think he's finding himself. Loudly."
@@ -811,7 +811,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 - [ ] Satirical theme (budget travel delusion vs. shared-misery reality) is clear throughout all assets
 - [ ] Easter eggs discoverable: room 6 door tag, single forgotten shoe, "SHOWER FAIRLY" plea, Brigitte's annotated schedule, the '92 token
 - [ ] Performance optimized (12-particle cap, static snoring indicators at low LOD, on-demand dorm atlas, alpha-toggle flicker)
-- [ ] Touch zone sizing considered (44px minimum — booking rows, roommate icons, queue slots, examine hotspots compliant)
+- [ ] Click zone sizing considered (44px minimum — booking rows, roommate icons, queue slots, examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (patterned rest meter, shape-tagged risk frames, numbered hot stall, pip-count chaos levels)
 - [ ] Social media viral potential maximized (Roommate Reveal card framing, cone composition, 3 AM thud mystery staging)
 

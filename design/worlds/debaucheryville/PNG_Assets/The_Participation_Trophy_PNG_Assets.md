@@ -1,7 +1,7 @@
 # The Participation Trophy - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Participation Trophy is the prize redemption booth where the Cirque du Shady's rigged-game economy comes to die: the player converts 25 Sovs of failure into 85 tickets, and Yolanda converts 85 tickets into a half-smoked cigar. This document specifies every PNG for the peeling booth, the four-tier prize wall (Grand Prizes: display only, don't ask), the full garbage catalog, and Yolanda's dead-eyed professionalism — including the rarest sprite in the location, her almost-smile.
+The Participation Trophy is the prize redemption booth where the Cirque du Shady's rigged-game economy comes to die: the player converts 25 SOVS of failure into 85 tickets, and Yolanda converts 85 tickets into a half-smoked cigar. This document specifies every PNG for the peeling booth, the four-tier prize wall (Grand Prizes: display only, don't ask), the full garbage catalog, and Yolanda's dead-eyed professionalism — including the rarest sprite in the location, her almost-smile.
 
 **Location ID:** `debaucheryville_circus_participation_trophy_01`
 **Theme:** Carnival prize economics and "everyone's a winner" hollow victories — "You Tried! Here's Proof!"
@@ -288,7 +288,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 ### The Math:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Math Realization Popup | (0, 176) | 128x80 | "You spent 25 Sovs. Your tickets are worth 4 Sovs." |
+| Math Realization Popup | (0, 176) | 128x80 | "You spent 25 SOVS. Your tickets are worth 4 SOVS." |
 | Prize Comparison Panel | (128, 160) | 128x96 | Tickets vs. direct SOVS price, side by side |
 
 ---
@@ -394,7 +394,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - Prize tiers are position-coded (shelf height) and tag-coded (ticket digits), never color-only
 - Nausea risk on corndogs shown by the swirl icon, not a green tint alone
 - Frequent Loser badge uses a distinct laurel-of-tickets silhouette
-- Counter interaction zone and all tier menu rows exceed the 44px minimum touch target
+- Counter interaction zone and all tier menu rows exceed the 44px minimum click target
 
 ---
 
@@ -499,7 +499,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 
 ### Screenshot-Worthy Moments:
 1. **The 85-Ticket Verdict** - Ticket pile on the counter, Yolanda gesturing at the bottom shelf
-2. **The Math Realization Popup** - "25 Sovs spent. Tickets worth 4 Sovs."
+2. **The Math Realization Popup** - "25 SOVS spent. Tickets worth 4 SOVS."
 3. **The Grand Prize Shelf** - Badly painted Golden Hamster under a broken spotlight, since forever
 4. **The Bros' Walk-of-Shame** - Trio exiting with a glitter hat, seventeen stickers, and dignity nowhere
 5. **The Almost-Smile** - Blink and you miss the rarest sprite in the circus
@@ -574,7 +574,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 - [ ] Satirical theme (systemic disappointment, deadpan-distributed) is clear throughout all assets
 - [ ] Hidden details discoverable: empty tip jar, 2003 belt tag ghost, dust gradient economy, sincere kazoo kid
 - [ ] Performance optimized (collapsed prize wall on small screens, gated Premium Garbage, CPU particles)
-- [ ] Touch zone sizing considered (44px minimum — counter and tier rows compliant)
+- [ ] Click zone sizing considered (44px minimum — counter and tier rows compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shelf/tag coding, swirl icons)
 - [ ] Social media viral potential maximized (math popup, walk-of-shame, grand shelf compositions)
 

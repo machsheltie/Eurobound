@@ -22,7 +22,7 @@
 Running an off-licence and corner shop that stays open from 10 AM to 5 AM, stocking whatever a human being might conceivably want at three in the morning. He sells legitimate product at a 25-40% night markup and "alternatives" at a discount, and he prices the discount to exactly match the risk. Twenty-three years of doing this has given him a working actuarial model of human desperation. He is not hiding it. There is a laminated "NO REFUNDS" sign at eye level and a hand-written card on the door reading "Card machine broken (always)." He is the most honest man on the street and nobody notices, because honesty at 3 AM sounds like small talk.
 
 ### What Bros Believe
-That they have discovered a hidden local gem where the drinks are cheap because Europeans just do things differently. That MurphyBoost™ is an authentic Irish energy brand they have never heard of because it hasn't broken into the American market yet. That the old fella behind the glass likes them. That 3 Sovs for a tall can is a *deal*, and the fact that Murphy said "strong though, very strong" while ringing it up was a compliment about their tolerance.
+That they have discovered a hidden local gem where the drinks are cheap because Europeans just do things differently. That MurphyBoost™ is an authentic Irish energy brand they have never heard of because it hasn't broken into the American market yet. That the old fella behind the glass likes them. That 3 SOVS for a tall can is a *deal*, and the fact that Murphy said "strong though, very strong" while ringing it up was a compliment about their tolerance.
 
 ### The Comedy Gap
 Murphy tells them, in plain language, exactly what will happen. He tells them the wine has been on that shelf since 2008. He tells them the sandwich is from "earlier — earlier today, probably." He tells them to keep water nearby. They hear all of it, thank him warmly, and buy three EXTREME. The next morning they come back grey-faced looking for a cure and buy the "Headache Cure" that gives them "Drowsy," and then buy a MurphyBoost to fix the Drowsy, and Murphy rings up both without comment because business is business. The bros will call this place "our spot" by day four. They will never once connect the shop to the feeling.
@@ -76,7 +76,7 @@ Restraint is the direction. Murphy never emotes above a 3/10 — the shop does t
 | Quietly loyal | Regulars get the back room, the discount, and the truth. Loyalty is earned through suffering |
 
 ### Internal Monologue
-> "Three of them. American, loud, one's already holding the EXTREME. He'll have three. He always has three — not him specifically, but him. I'll say the line about the water. He won't hear the line about the water. He'll be back at ten past eleven tomorrow morning looking like a bad photocopy and he'll buy the Headache Cure, and then he'll buy a MurphyBoost to fix the Headache Cure, and I'll ring up both and say nothing, because nobody ever asked me for an opinion. 15 Sovs. Cash. The machine's broken."
+> "Three of them. American, loud, one's already holding the EXTREME. He'll have three. He always has three — not him specifically, but him. I'll say the line about the water. He won't hear the line about the water. He'll be back at ten past eleven tomorrow morning looking like a bad photocopy and he'll buy the Headache Cure, and then he'll buy a MurphyBoost to fix the Headache Cure, and I'll ring up both and say nothing, because nobody ever asked me for an opinion. 15 SOVS. Cash. The machine's broken."
 
 ### Motivation
 Keep the lights on. Keep the refrigerators running. Outlast whatever the street becomes next. He is not building an empire and he is not saving anyone. He identified a permanent human constant, positioned himself directly beside it, and has been standing there ever since. That is not ambition. That is a job.
@@ -125,9 +125,9 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 
 > "The mystery wine? Someone left it here in '08. Still sealed. Could be great. Could be vinegar. Only one way to know."
 
-> "The mixed nuts are two Sovs and one of the nuts is always weird. I don't know which one. I've never found the pattern. Twenty-three years."
+> "The mixed nuts are two SOVS and one of the nuts is always weird. I don't know which one. I've never found the pattern. Twenty-three years."
 
-> "Open section crisps, two Sovs. Sealed, three. The one Sov is the difference between crisps and a story."
+> "Open section crisps, two SOVS. Sealed, three. The one SOV is the difference between crisps and a story."
 
 > "The 'Miracle Tonic' cures nearly everything. It also causes something. I've never been able to work out which something. It changes."
 
@@ -147,11 +147,11 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 
 > *(sealed items only)* "Smart. First time someone's done that first visit."
 
-> *(counterfeit sunglasses)* "Eight Sovs. They'll break. Not might. Will. You know that and you're buying them anyway, which I respect more than if you didn't know."
+> *(counterfeit sunglasses)* "Eight SOVS. They'll break. Not might. Will. You know that and you're buying them anyway, which I respect more than if you didn't know."
 
-> *(the 'Vintage' band shirt)* "Twelve Sovs. Band's spelled wrong. That's not a defect, that's the price point."
+> *(the 'Vintage' band shirt)* "Twelve SOVS. Band's spelled wrong. That's not a defect, that's the price point."
 
-> *(the 'Lucky' Charm)* "Five Sovs. It's plastic. Luck isn't in it. Luck isn't in anything, but it's especially not in that."
+> *(the 'Lucky' Charm)* "Five SOVS. It's plastic. Luck isn't in it. Luck isn't in anything, but it's especially not in that."
 
 > *(day-old sandwich and a Headache Cure together)* "Planning ahead. Or remembering backwards. Either way." *hmm*
 
@@ -198,7 +198,7 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 
 > "Back again? The MurphyBoost got you, did it? Builds character. Or something."
 
-> "You look like the mystery meat found you instead of the other way around. Water's 2 Sovs. Worth it."
+> "You look like the mystery meat found you instead of the other way around. Water's 2 SOVS. Worth it."
 
 > "Frequent sufferer now. Welcome to the club. There's no card. There should be."
 
@@ -248,7 +248,7 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 > "It's been working since 2019. I say it's broken because cash doesn't have a conversation with anybody afterwards. That's not a crime. Look it up. Actually, don't."
 
 **"Murphy's Miracle" — asked what's in the Miracle Tonic:**
-> "Ten Sovs, cures most things, causes one thing. What's in it is the same question as what's in the mystery wine and I'll give you the same answer: I didn't make it, I stock it, and the label's in a language I can't read."
+> "Ten SOVS, cures most things, causes one thing. What's in it is the same question as what's in the mystery wine and I'll give you the same answer: I didn't make it, I stock it, and the label's in a language I can't read."
 
 **"Quality Control" — recruiting the player:**
 > "New supplier. Two crates. I need to know if it does what the box says before I put it on a shelf. You'll be paid in product, which I understand is part of the problem."
@@ -302,56 +302,56 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 ### Alcohol — Name Brands (safe, marked up)
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| Premium Lager (6-pack) | 15 Sovs | +10 HP each | Standard intoxication | 5% |
-| Irish Whiskey (Legitimate) | 25 Sovs | +20 HP, +10 SP | Standard intoxication | 5% |
-| Wine (Sealed) | 12 Sovs | +15 HP | Standard intoxication | 5% |
-| Craft Beer (Cold) | 8 Sovs | +12 HP | Standard intoxication | 5% |
+| Premium Lager (6-pack) | 15 SOVS | +10 HP each | Standard intoxication | 5% |
+| Irish Whiskey (Legitimate) | 25 SOVS | +20 HP, +10 SP | Standard intoxication | 5% |
+| Wine (Sealed) | 12 SOVS | +15 HP | Standard intoxication | 5% |
+| Craft Beer (Cold) | 8 SOVS | +12 HP | Standard intoxication | 5% |
 
 ### Alcohol — Murphy's Select (cheap, risky)
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| Murphy's Budget Lager (6-pack) | 9 Sovs | +8 HP each | "Regret" status | 25% |
-| "Imported" Whiskey | 12 Sovs | +15 HP, +5 SP | "Headache" status (morning) | 30% |
-| Mystery Wine | 6 Sovs | +10 HP | Random status effect | 40% |
-| Murphy's Strong (Tall Can) | 3 Sovs | +5 HP | "Bad Decision" buff | 35% |
+| Murphy's Budget Lager (6-pack) | 9 SOVS | +8 HP each | "Regret" status | 25% |
+| "Imported" Whiskey | 12 SOVS | +15 HP, +5 SP | "Headache" status (morning) | 30% |
+| Mystery Wine | 6 SOVS | +10 HP | Random status effect | 40% |
+| Murphy's Strong (Tall Can) | 3 SOVS | +5 HP | "Bad Decision" buff | 35% |
 
 ### Energy Drinks
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| Name Brand Energy | 5 Sovs | +20 SP, +Speed | Crash (2 hours later) | 10% |
-| MurphyBoost™ Original | 3 Sovs | +30 SP, +Speed | "Jitters" status | 40% |
-| MurphyBoost™ EXTREME | 4 Sovs | +50 SP, ++Speed | "Cardiac Concern" status | 60% |
-| "Medicinal" Energy Tonic | 6 Sovs | +25 SP, +HP | Random positive OR negative | 50% |
+| Name Brand Energy | 5 SOVS | +20 SP, +Speed | Crash (2 hours later) | 10% |
+| MurphyBoost™ Original | 3 SOVS | +30 SP, +Speed | "Jitters" status | 40% |
+| MurphyBoost™ EXTREME | 4 SOVS | +50 SP, ++Speed | "Cardiac Concern" status | 60% |
+| "Medicinal" Energy Tonic | 6 SOVS | +25 SP, +HP | Random positive OR negative | 50% |
 
 ### Snacks
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| Sealed Crisps | 3 Sovs | +10 HP | None | 0% |
-| Open Section Crisps | 2 Sovs | +8 HP | "Stale" (reduced effect) | 20% |
-| Mystery Meat Roll | 4 Sovs | +25 HP | "Questionable" status | 35% |
-| Day-Old Sandwich | 2 Sovs | +15 HP | "Regret" status | 40% |
-| Murphy's Mixed Nuts | 2 Sovs | +8 HP | One nut is always weird | 15% |
+| Sealed Crisps | 3 SOVS | +10 HP | None | 0% |
+| Open Section Crisps | 2 SOVS | +8 HP | "Stale" (reduced effect) | 20% |
+| Mystery Meat Roll | 4 SOVS | +25 HP | "Questionable" status | 35% |
+| Day-Old Sandwich | 2 SOVS | +15 HP | "Regret" status | 40% |
+| Murphy's Mixed Nuts | 2 SOVS | +8 HP | One nut is always weird | 15% |
 
 ### "Medicinal" Items
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| "Headache Cure" | 5 Sovs | Cures Hungover | "Drowsy" status | 30% |
-| "Stomach Settler" | 4 Sovs | Cures "Queasy" | "Constipated" status | 25% |
-| "Energy Supplement" | 7 Sovs | +All stats (1 hour) | Crash after (double penalty) | 50% |
-| "Murphy's Miracle Tonic" | 10 Sovs | Cures most status effects | Applies a different status effect | 40% |
+| "Headache Cure" | 5 SOVS | Cures Hungover | "Drowsy" status | 30% |
+| "Stomach Settler" | 4 SOVS | Cures "Queasy" | "Constipated" status | 25% |
+| "Energy Supplement" | 7 SOVS | +All stats (1 hour) | Crash after (double penalty) | 50% |
+| "Murphy's Miracle Tonic" | 10 SOVS | Cures most status effects | Applies a different status effect | 40% |
 
 ### Counterfeit Merchandise
 | Item | Price | Claimed Effect | Actual Effect | Notes |
 |------|-------|----------------|---------------|-------|
-| "Designer" Sunglasses | 8 Sovs | +Style | -Durability (break easily) | "Gucci" brand |
-| "Vintage" Band Shirt | 12 Sovs | +Cool | +Embarrassment when noticed | Band spelled wrong |
-| "Lucky" Charm | 5 Sovs | +Luck | No effect | It's plastic |
-| "Phone Charger" | 6 Sovs | Charges phone | 50% chance of working | Cable frays |
+| "Designer" Sunglasses | 8 SOVS | +Style | -Durability (break easily) | "Gucci" brand |
+| "Vintage" Band Shirt | 12 SOVS | +Cool | +Embarrassment when noticed | Band spelled wrong |
+| "Lucky" Charm | 5 SOVS | +Luck | No effect | It's plastic |
+| "Phone Charger" | 6 SOVS | Charges phone | 50% chance of working | Cable frays |
 
 ### Off-Menu / Services
 | Service | Price | Notes |
 |---------|-------|-------|
-| Bottle of water | 2 Sovs | Offered unprompted with any EXTREME purchase; charged anyway, except at Frequent Sufferer status |
+| Bottle of water | 2 SOVS | Offered unprompted with any EXTREME purchase; charged anyway, except at Frequent Sufferer status |
 | Frequent Sufferer discount | −10% | Permanent, unlocks at 5 side effects suffered |
 | Back Room access | Free (earned) | Name-brand stock, in date, zero side effects, reasonable prices |
 
@@ -459,7 +459,7 @@ Murphy's dialogue does not soften so much as *shorten*. Early lines are complete
 ### Secondary Quests
 | Quest | Murphy's Role | Trigger | Outcome |
 |-------|---------------|---------|---------|
-| `publandia_sidequest_murphys_miracle_01` | Information Source (evasive) | Purchase and survive the 10 Sovs Miracle Tonic once | Ingredient list discovered elsewhere; Murphy genuinely does not know and says so |
+| `publandia_sidequest_murphys_miracle_01` | Information Source (evasive) | Purchase and survive the 10 SOVS Miracle Tonic once | Ingredient list discovered elsewhere; Murphy genuinely does not know and says so |
 | `publandia_sidequest_quality_control_01` | Quest Giver | Frequent Sufferer status + 2 AM–5 AM window | Player tests two crates of new supplier stock. Paid in product. One crate goes in the bin |
 | `publandia_sidequest_the_card_machine_01` | Quest Target | Player attempts card payment three separate times | Machine revealed as working since 2019. Murphy's explanation is honest and unhelpful |
 
@@ -480,7 +480,7 @@ Murphy gates nothing on the critical path. Every quest he touches is optional, a
 
 ### Screenshot Moments
 1. The Subtle Warning Lean triggering on a sober player mid-EXTREME-purchase — the entire warning system in one silent frame.
-2. Murphy sliding a 2 Sovs bottle of water across the counter beside three cans of EXTREME, unprompted.
+2. Murphy sliding a 2 SOVS bottle of water across the counter beside three cans of EXTREME, unprompted.
 3. The card machine, screen lit and contactless symbol glowing, directly beneath the hand-written "Card machine broken (always)" card.
 4. The Frequent Sufferer greeting — that specific warm, faintly worrying smile.
 5. The back-room reveal: fluorescent chaos out front, four tidy shelves of ordinary sealed lager behind.
@@ -565,7 +565,7 @@ Dublin, working, unhurried. Not a performance accent — Murphy is the flattest 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behaviour, NOT local culture or ethnicity — the joke is on people who cannot hear a plain warning, not on Dublin corner shops
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Murphy is the most honest trader in the district and knows exactly what he has and exactly who he is selling it to
-- [x] Humour is affectionate mockery, not mean-spirited — Murphy holds no contempt for his customers; he holds an actuarial table
+- [x] Humour is affectionate mockery — Murphy holds no contempt for his customers; he holds an actuarial table
 
 ---
 

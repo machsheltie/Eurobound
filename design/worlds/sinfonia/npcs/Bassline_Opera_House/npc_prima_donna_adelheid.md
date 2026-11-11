@@ -7,7 +7,7 @@
 - **Display Name**: Prima Donna Adelheid
 - **Internal Name**: Prima Donna Adelheid — stage name and professional identity of **Lorenz Brandtner**, 44, resident dramatic coloratura of the Bassline Opera House, fourteen seasons. Both names are printed in the programme. Neither is a secret. **She is a separate character from Madame Fortissima** (`sinfonia_npc_madame_fortissima_01`) — the "possible duplicate" note in `bassline_opera_house.md` is superseded by the author ruling in `opera_divas_couchsurf_direction.md`.
 - **Role**: Dramatic Coloratura (Queen of the Night) / Drag Co-Headliner / Damage Claimant (Fiaker Fiasco) / Couchsurf Host (co-host with Fortissima) / Scripted-Event Participant
-- **Associated Quest**: `sinfonia_couchsurf_opera_divas_01` ("The Ladies of the House"). Also a claimant in `sinfonia_sidequest_fiaker_fiasco_01` (500 Sovs demand, negotiable to 200 Sovs at Charm 4+).
+- **Associated Quest**: `sinfonia_couchsurf_opera_divas_01` ("The Ladies of the House"). Also a claimant in `sinfonia_sidequest_fiaker_fiasco_01` (500 SOVS demand, negotiable to 200 SOVS at Charm 4+).
 - **Primary Location**: The Bassline Opera House (`sinfonia_bassline_opera_house_01`) — Star Dressing Room 2, the main stage, and the rehearsal stage during Fiaker Fiasco Phase 3
 - **Secondary Appearances**: **The divas' apartment above the opera house** (couchsurf interior, scripted event); the Rehearsal Studios, upper floors; the Grand Lobby only under protest and only for money
 
@@ -53,7 +53,7 @@ Adelheid does not perform mystique and does not lower her voice about anything. 
 | Energy | Precise, dramatic, permanently one notch above the ambient temperature of any room |
 
 ### Stage Persona — The Queen of the Night (repertory)
-- **The gown**: Black with silver stars, structured, eleven kilos, and torn across the left panel from the fifteenth of the month onward (Gustav). The tear is visible in every post-Fiasco appearance because the repair is 200 Sovs and she is still arguing about who pays it.
+- **The gown**: Black with silver stars, structured, eleven kilos, and torn across the left panel from the fifteenth of the month onward (Gustav). The tear is visible in every post-Fiasco appearance because the repair is 200 SOVS and she is still arguing about who pays it.
 - **The headdress**: Crescent and stars, wired, an additional two kilos.
 - **The makeup**: Full dramatic stage paint even in rehearsal — she does not rehearse a face she will not wear.
 
@@ -71,7 +71,7 @@ Adelheid does not perform mystique and does not lower her voice about anything. 
 ### Distinguishing Features
 - Never breaks character mid-aria. Not for a fire alarm, not for a dropped flat, not for a horse.
 - Corrects pronunciation reflexively and without malice, mid-sentence, and continues.
-- Keeps an itemised list. Of everything. She produced the 500 Sovs figure four minutes after the horse left and it was already broken down.
+- Keeps an itemised list. Of everything. She produced the 500 SOVS figure four minutes after the horse left and it was already broken down.
 - The eyebrow. One eyebrow, raised roughly two millimetres, ends most conversations in this building.
 - Off-stage, she puts a hand flat on the table before saying anything she actually means.
 
@@ -93,7 +93,7 @@ The existing `npc_prima_donna_adelheid.png` (384x320, 8 rows) covers her reperto
 | Trait | Description |
 |-------|-------------|
 | Never breaks character | Mid-aria she is unbreakable, and this is played completely straight; the horse gets four bars before she acknowledges it |
-| Itemises everything | The 500 Sovs demand had a breakdown attached. So does the corset repair. So does the bar tab. |
+| Itemises everything | The 500 SOVS demand had a breakdown attached. So does the corset repair. So does the bar tab. |
 | Corrects reflexively | Pronunciation, tempo, terminology, facts. Never unkindly. Never optional. |
 | Warmer than she appears | The jokes start at the door of the apartment and do not stop |
 | Genuinely holds grudges | Against a horse. Ongoing. She will discuss it at length and it is the funniest thing about her. |
@@ -117,7 +117,7 @@ The work, correctly done, and correctly paid for. She has an F6 and eleven kilos
 **To the bros, immediately, with the list already in her hand:**
 > "This horse has RUINED my concentration. Do you know what concentration costs?"
 
-> "I require 500 Sovs for... therapeutic vocal rest. The trauma."
+> "I require 500 SOVS for... therapeutic vocal rest. The trauma."
 
 **Negotiated down (Charm 4+):**
 > "Two hundred. *(she does not blink)* Two hundred, because you at least had the manners to look ashamed, and because the gown is a separate invoice and I want you to be able to pay that one."
@@ -202,7 +202,7 @@ The work, correctly done, and correctly paid for. She has an F6 and eleven kilos
 
 *She slides one sheet of paper across the table.*
 
-> "That is the coffee table. It is eighty Sovs. There is no negotiating it, there is no Charm check, and you are going to pay it because it is the least of what you owe this house."
+> "That is the coffee table. It is eighty SOVS. There is no negotiating it, there is no Charm check, and you are going to pay it because it is the least of what you owe this house."
 
 ### Post-Interaction
 *The corridor, immediately after:*
@@ -226,12 +226,12 @@ The work, correctly done, and correctly paid for. She has an F6 and eleven kilos
 > **Stagehead Otto**: "*(sipping coffee)* ...Ja."
 
 *Second callback, later in the game:*
-> "Eighty Sovs. *(she does not need to say anything else and she does not)*"
+> "Eighty SOVS. *(she does not need to say anything else and she does not)*"
 
-*If the 80 Sovs is paid:*
+*If the 80 SOVS is paid:*
 > "Thank you. *(and she means it, and then, because she cannot help herself)* It was a good table."
 
-*If the party returns having also settled the 500 Sovs and the gown repair:*
+*If the party returns having also settled the 500 SOVS and the gown repair:*
 > "You paid all three invoices. *(she sets down what she is holding)* Nobody pays all three invoices. — Sit down. I will tell you what the horse actually did, and I will tell it properly, and it takes eleven minutes."
 
 *Post-Fiaker Fiasco, any Path — the grudge is permanent and it is the best running bit she has:*
@@ -259,7 +259,7 @@ The work, correctly done, and correctly paid for. She has an F6 and eleven kilos
 ### Positioning Notes
 - Dressing Room 2 is directly across the corridor from Fortissima's Room 1. Both doors are usually open and the conversation between them runs all evening whether or not anyone is in either room.
 - She does not hold the lobby. Fortissima holds the lobby. This division has never been discussed and is absolute.
-- During Fiaker Fiasco Phase 3 she is a fixed stage NPC and cannot be avoided — the 500 Sovs demand triggers on the party's first attempt to leave backstage.
+- During Fiaker Fiasco Phase 3 she is a fixed stage NPC and cannot be avoided — the 500 SOVS demand triggers on the party's first attempt to leave backstage.
 - The apartment stair is the internal one off the backstage corridor, shared with the crew's smoke-break door.
 
 ---
@@ -269,18 +269,18 @@ The work, correctly done, and correctly paid for. She has an F6 and eleven kilos
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| "Therapeutic vocal rest" claim | 500 Sovs, or 200 Sovs at Charm 4+ | Genuinely a lost performance fee | Fiaker Fiasco liability, separate from the 2,000 Sovs production damage |
-| Queen of the Night gown repair | 200 Sovs | 200 Sovs; the invoice is itemised and correct | Optional. Unpaid, the tear is visible in every appearance for the rest of the game. |
-| The coffee table | 80 Sovs | 80 Sovs | Post-Nightcap. No negotiation, no Charm check. |
-| Vocal coaching, one session | 40 Sovs | Worth considerably more | +2 Performance permanently; unlocks one "Informed Position" option in any Sinfonia rhythm challenge |
-| Programme, annotated | 15 Sovs | 15 Sovs | She marks the numbers worth staying awake for. Lore item; +1 Culture knowledge. |
+| "Therapeutic vocal rest" claim | 500 SOVS, or 200 SOVS at Charm 4+ | Genuinely a lost performance fee | Fiaker Fiasco liability, separate from the 2,000 SOVS production damage |
+| Queen of the Night gown repair | 200 SOVS | 200 SOVS; the invoice is itemised and correct | Optional. Unpaid, the tear is visible in every appearance for the rest of the game. |
+| The coffee table | 80 SOVS | 80 SOVS | Post-Nightcap. No negotiation, no Charm check. |
+| Vocal coaching, one session | 40 SOVS | Worth considerably more | +2 Performance permanently; unlocks one "Informed Position" option in any Sinfonia rhythm challenge |
+| Programme, annotated | 15 SOVS | 15 SOVS | She marks the numbers worth staying awake for. Lore item; +1 Culture knowledge. |
 | Couchsurf stay (co-hosted with Fortissima) | Free | — | Full HP/SP restore; "Star Quality" +3 Charm for 4 hours; "Full Face" cosmetic until next sleep; one permanent Bravado point |
 
 ### Hidden Details / Easter Eggs
 - **Examine the door plate**: *"Brass. Engraved. L. BRANDTNER. Someone has taped a paper strip under it reading 'PRIMA DONNA ADELHEID' in a hand that is obviously Fortissima's. It has been taped there for eleven years and nobody has made it permanent."*
 - **Examine the programme** (Bradley's copy): *"The company list. Every performer under two names. He has read her entry twice. He has put the programme in his jacket."*
 - **Examine the torn gown**: *"Left panel. Eleven kilos of black and silver, and a horse-shaped absence in it. The repair quote is pinned to the rack beside it."*
-- **Examine the itemised list**: *"Lost fee, coaching cancelled, steam treatment, one bottle of something Italian. It adds to 500 Sovs exactly. It is not padded."*
+- **Examine the itemised list**: *"Lost fee, coaching cancelled, steam treatment, one bottle of something Italian. It adds to 500 SOVS exactly. It is not padded."*
 - **Examine the shave kit on the makeup station**: *"Badger brush, cut-throat, strop. Immaculate. Chadwick has assumed it is a paintbrush set."*
 - Ask her about Madame Fortissima and she will criticise her for forty seconds and then say one entirely sincere thing and change the subject immediately.
 - The unsent letter about the horse exists as an examinable object in the apartment. It is four pages. The player can read it. It is the funniest text in Sinfonia.
@@ -323,7 +323,7 @@ The work, correctly done, and correctly paid for. She has an F6 and eleven kilos
 | N/A | — | La Scala and the Met are on her CV and in her opening line. She is not going back and the game never sends her. | — |
 
 ### Evolution Through Game
-Three invoices track her disposition: the 500 Sovs claim, the 200 Sovs gown repair, and the 80 Sovs coffee table. Each one settled moves her one notch warmer, and settling all three unlocks the eleven-minute account of what the horse actually did — the single longest uninterrupted piece of NPC dialogue in Sinfonia and the character's real reward. She never becomes soft, never explains the show, and never lets go of the grudge.
+Three invoices track her disposition: the 500 SOVS claim, the 200 SOVS gown repair, and the 80 SOVS coffee table. Each one settled moves her one notch warmer, and settling all three unlocks the eleven-minute account of what the horse actually did — the single longest uninterrupted piece of NPC dialogue in Sinfonia and the character's real reward. She never becomes soft, never explains the show, and never lets go of the grudge.
 
 ---
 
@@ -347,7 +347,7 @@ Three invoices track her disposition: the 500 Sovs claim, the 200 Sovs gown repa
 | sideboard_turn | The Nightcap; back to the room, nine seconds, no cut and no lingering |
 | glass_handoff | Hands each tall glass over personally, eye contact, hand adjusted |
 | corset_removal_hall | Apartment hall, mid-conversation, entirely unceremonious |
-| table_slide | Morning-after; slides the 80 Sovs invoice across the table without looking up |
+| table_slide | Morning-after; slides the 80 SOVS invoice across the table without looking up |
 
 ### Sprite States
 | State | When Used |
@@ -364,22 +364,22 @@ Three invoices track her disposition: the 500 Sovs claim, the 200 Sovs gown repa
 - **Quest**: "The Ladies of the House" (`sinfonia_couchsurf_opera_divas_01`) — a Sinfonia Couchsurfing Chronicle entry, co-hosted with Madame Fortissima
 - **Role**: Co-host, sideboard operator, and the morning-after's information source
 - **Trigger**: Attend DIE, FLEDERMAUS! on a Saturday → earn backstage passes → accept the invitation upstairs
-- **Outcome**: The Nightcap fires, the night fades to black, the morning-after scene plays, and the 80 Sovs coffee table invoice is issued. Permanent callbacks unlock.
+- **Outcome**: The Nightcap fires, the night fades to black, the morning-after scene plays, and the 80 SOVS coffee table invoice is issued. Permanent callbacks unlock.
 
 ### Secondary Quest
 - **Quest**: The Fiaker Fiasco (`sinfonia_sidequest_fiaker_fiasco_01`), Phase 3
-- **Role**: Damage claimant, separate from the 2,000 Sovs production liability
+- **Role**: Damage claimant, separate from the 2,000 SOVS production liability
 - **Trigger**: Gustav interrupts her aria on the rehearsal stage; the demand fires on the party's first attempt to leave backstage
-- **Outcome**: 500 Sovs, negotiable to 200 Sovs at Charm 4+. Unpaid, it is tracked by Sinfonia vendors with the rest of the Fiasco debt.
+- **Outcome**: 500 SOVS, negotiable to 200 SOVS at Charm 4+. Unpaid, it is tracked by Sinfonia vendors with the rest of the Fiasco debt.
 
 ### Quest Gate Function
-She gates nothing structurally. She gates *warmth* — the three invoices are a soft progression track, and the eleven-minute horse account is locked behind settling all three. Vocal coaching is available to anyone with 40 Sovs from the first meeting.
+She gates nothing structurally. She gates *warmth* — the three invoices are a soft progression track, and the eleven-minute horse account is locked behind settling all three. Vocal coaching is available to anyone with 40 SOVS from the first meeting.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Annotated Programme | Any time, 15 Sovs | Yes | Lore item; +1 Culture knowledge; lists the whole company under both names |
-| Vocal coaching | Any time, 40 Sovs | Yes | +2 Performance permanently |
+| Annotated Programme | Any time, 15 SOVS | Yes | Lore item; +1 Culture knowledge; lists the whole company under both names |
+| Vocal coaching | Any time, 40 SOVS | Yes | +2 Performance permanently |
 | "Star Quality" | Couchsurf completion | 4 hours | +3 Charm |
 | "Full Face" | Couchsurf completion (Nightcap branch only) | Until next sleep | Cosmetic state |
 | The Unsent Letter (readable) | Apartment, any visit | — | Four pages. Examine-only. Not takeable — she notices. |
@@ -399,9 +399,9 @@ Recommendation: ⭐⭐⭐⭐⭐ "Two total professionals. Very European."
 
 ### Screenshot Moments
 1. The F6, arms up, with a horse in an opera cape walking into the light behind her.
-2. The itemised 500 Sovs invoice, on screen, adding up correctly.
+2. The itemised 500 SOVS invoice, on screen, adding up correctly.
 3. The Nightcap glass handoff — eye contact, hand adjusted, three men melting.
-4. The morning after: the 80 Sovs invoice sliding across the table, in focus, three ruined men out of focus behind it.
+4. The morning after: the 80 SOVS invoice sliding across the table, in focus, three ruined men out of focus behind it.
 5. The unsent letter, page two.
 
 ### Meme Potential
@@ -459,13 +459,13 @@ Austrian-German-accented English, precise, clipped, and considerably faster than
 - **Off-stage name**: Lorenz Brandtner. New first name introduced this pass; grep of `_sorting\` returned **0 prior hits** for both "Lorenz" and "Brandtner" before authoring.
 - **TONE RAILS FOR THE NIGHTCAP — binding, and identical to those in `npc_madame_fortissima.md`:**
   - The divas are **never** framed as villains, predators, or threats. No menacing scoring, no slow-motion, no ominous cut, no lingering on the tray. The last frame before the fade is Adelheid laughing.
-  - The bros are **never** in distress, never frightened, never harmed. Morning-after consequences are cosmetic and comedic only: stage makeup, a hangover, a sore back from a lift they insisted on, an 80 Sovs coffee table, and no memory.
+  - The bros are **never** in distress, never frightened, never harmed. Morning-after consequences are cosmetic and comedic only: stage makeup, a hangover, a sore back from a lift they insisted on, an 80 SOVS coffee table, and no memory.
   - The bros are the punchline, and it is objectively the best night of their trip.
   - **The decline branch is fully supported.** Refusing the tray still completes the couchsurf; only the "Full Face" cosmetic is lost. Do not gate content behind drinking it.
   - No character ever presents the evening as a wrong done to anybody, and no NPC ever expresses concern. If a beat starts to feel genuinely uncomfortable, it has drifted off spec and should be pulled back to farce.
 - **The show is never explained to the bros**, by her or by anyone. Her "it is on the poster" line is the closest the game gets and it is thrown away.
 - **The voice does not change between personas.** State this to the VO director explicitly.
-- **Fiaker Fiasco liability**: her 500 Sovs (→200 Sovs) demand is **separate** from the 2,000 Sovs backstage production damage and from the 200 Sovs gown repair. Confirm the economy pass does not fold them together — `stadtpark_gustavs_refuge.md`'s damage table already lists "Prima Donna 500 Sovs (200 Sovs negotiated)" as its own line, which is correct.
+- **Fiaker Fiasco liability**: her 500 SOVS (→200 SOVS) demand is **separate** from the 2,000 SOVS backstage production damage and from the 200 SOVS gown repair. Confirm the economy pass does not fold them together — `stadtpark_gustavs_refuge.md`'s damage table already lists "Prima Donna 500 SOVS (200 SOVS negotiated)" as its own line, which is correct.
 - Two new sprite sheets are required (`npc_prima_donna_adelheid_dragshow.png`, `npc_lorenz_brandtner_offstage.png`) plus the shared apartment interior environment set.
 - The Nightcap sequence is **co-owned** with `npc_madame_fortissima.md`. Both profiles carry the identical beat list. If one is edited, edit both.
 - The unsent letter is four pages of examinable text and has not been written yet. It is the highest-value optional writing task remaining in Sinfonia.
@@ -475,7 +475,7 @@ Austrian-German-accented English, precise, clipped, and considerably faster than
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; she invoices in Sov and would like the Sov
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; she invoices in SOV and would like the SOV
 - [x] **NO automatic crypto assumptions** — she has none; she has a bank and a very good accountant
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — N/A
 - [x] **The bros are never scam-aware** — they never work out any part of the evening, and they file three itemised invoices as "the price of legend"
@@ -485,7 +485,7 @@ Austrian-German-accented English, precise, clipped, and considerably faster than
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands entirely on three Americans reading efficiency as ice, corrections as flirtation, and a printed programme as a mystery; opera, drag performance, and the performer are treated with complete respect and are the most competent things in the building
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a fourteen-season dramatic coloratura with a real technique, a real invoice, and total control of every scene she is in
-- [x] Humor is affectionate mockery, not mean-spirited — she likes them by the end, they have the night of their lives, nobody is hurt, and the only casualty is a coffee table
+- [x] Humor is affectionate mockery — she likes them by the end, they have the night of their lives, nobody is hurt, and the only casualty is a coffee table
 
 ---
 

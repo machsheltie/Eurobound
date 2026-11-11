@@ -22,7 +22,7 @@
 - **Normal Exit**: Walk away (vibrating optional)
 - **Completion Requirements**: N/A (vendor location)
 - **Failure States**: "Over-Caffeinated" — ordered too many shots, temporary stat chaos
-- **Progressive Unlocks**: "Caffeine Tolerance" after 50 Sovs spent (reduced negative effects)
+- **Progressive Unlocks**: "Caffeine Tolerance" after 50 SOVS spent (reduced negative effects)
 
 ## Visual Design
 ### Stand Description
@@ -87,25 +87,25 @@ The stand's unique mechanic:
 **Core Drinks**:
 | Drink | Price | Effect | Side Effect |
 |-------|-------|--------|-------------|
-| Ristretto | 3 Sovs | +5% Speed (30 min) | -3% Luck (30 min) |
-| Espresso | 4 Sovs | +8% Speed (30 min) | -5% Luck (30 min) |
-| Doppio | 6 Sovs | +15% Speed (30 min) | -10% Luck (30 min) |
-| Triplo | 8 Sovs | +25% Speed (20 min) | -15% Luck, Shaky status (20 min) |
-| The Quadruple | 12 Sovs | +40% Speed (15 min) | -25% Luck, Shaky, Heart Racing (15 min) |
+| Ristretto | 3 SOVS | +5% Speed (30 min) | -3% Luck (30 min) |
+| Espresso | 4 SOVS | +8% Speed (30 min) | -5% Luck (30 min) |
+| Doppio | 6 SOVS | +15% Speed (30 min) | -10% Luck (30 min) |
+| Triplo | 8 SOVS | +25% Speed (20 min) | -15% Luck, Shaky status (20 min) |
+| The Quadruple | 12 SOVS | +40% Speed (15 min) | -25% Luck, Shaky, Heart Racing (15 min) |
 
 **Milk Drinks** (delivered with judgment):
 | Drink | Price | Effect | Side Effect | Barista Reaction |
 |-------|-------|--------|-------------|------------------|
-| Cappuccino | 5 Sovs | +5% Speed, +10 HP | -3% Luck | Slight sigh |
-| Latte | 5 Sovs | +3% Speed, +15 HP | -2% Luck | Visible disappointment |
-| Flat White | 6 Sovs | +8% Speed, +10 HP | -5% Luck | Respectful nod (Australian invention) |
+| Cappuccino | 5 SOVS | +5% Speed, +10 HP | -3% Luck | Slight sigh |
+| Latte | 5 SOVS | +3% Speed, +15 HP | -2% Luck | Visible disappointment |
+| Flat White | 6 SOVS | +8% Speed, +10 HP | -5% Luck | Respectful nod (Australian invention) |
 
 **Special Items**:
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Bean Bag (10 shots worth) | 25 Sovs | Portable espresso supplies | Use anywhere |
-| Ferdinand's Reserve | 15 Sovs | +20% Speed, NO side effects | Limited: 1/day |
-| The Intervention | 3 Sovs | Removes all caffeine effects | For emergencies |
+| Bean Bag (10 shots worth) | 25 SOVS | Portable espresso supplies | Use anywhere |
+| Ferdinand's Reserve | 15 SOVS | +20% Speed, NO side effects | Limited: 1/day |
+| The Intervention | 3 SOVS | Removes all caffeine effects | For emergencies |
 
 ### Status Effects Explained
 
@@ -129,7 +129,7 @@ The stand's unique mechanic:
 
 ### Caffeine Tolerance System
 
-**Unlocked After**: 50 Sovs total spent
+**Unlocked After**: 50 SOVS total spent
 
 **Benefits**:
 - Negative effects reduced by 25%
@@ -140,10 +140,10 @@ The stand's unique mechanic:
 **Tolerance Progression**:
 | Level | Spent | Benefit |
 |-------|-------|---------|
-| Novice | 0 Sovs | Full negative effects |
-| Regular | 50 Sovs | -25% negative effects |
-| Aficionado | 100 Sovs | -40% negative effects |
-| Transcendent | 200 Sovs | -50% negative effects, secret menu |
+| Novice | 0 SOVS | Full negative effects |
+| Regular | 50 SOVS | -25% negative effects |
+| Aficionado | 100 SOVS | -40% negative effects |
+| Transcendent | 200 SOVS | -50% negative effects, secret menu |
 
 ### The Order Interaction
 
@@ -161,7 +161,7 @@ The stand's unique mechanic:
 | Ristretto | Approving nod | None |
 | "Strongest thing you have" | Respect | None |
 | Cappuccino | Small sigh | None |
-| "With sugar" | Closes eyes briefly | +1 Sov "processing fee" |
+| "With sugar" | Closes eyes briefly | +1 SOV "processing fee" |
 | "Iced" | Long pause | "It will be done. It should not be done." |
 | "Decaf" | Genuine confusion | "Why are you HERE?" |
 | "Regular coffee" | Existential crisis | 5-minute lecture, then directed elsewhere |

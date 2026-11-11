@@ -41,7 +41,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Giant wheels of Gouda in every window
 - Wooden shoe shops targeting photo-op tourism
 - "Authentic Dutch Experience" tours that are anything but
-- Stroopwafel stands charging 8 Sovs for what locals pay 2 Sovs
+- Stroopwafel stands charging 8 SOVS for what locals pay 2 SOVS
 - Tulip bulb vendors selling bulbs that won't survive US customs
 
 ### Museum Mile
@@ -49,7 +49,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Where bros go to pretend they did something cultural
 - **Museum de Gekke Schilder** ("Museum of the Mad Painter") — selfie opportunities only; nobody enters a single gallery. The gift shop outsells admissions four to one.
 - **Het Rijke Museum** ("The Rich Museum") — a pun the bros never land on, and a name Chadwick misspells three different ways in one caption
-- **Venustempel** — the world's first sex museum, relocated here from Roodelicht Row in 2011 and now half museum of chocolate phalluses, half Victorian mechanical curiosity collection. Nobody has ever asked why those two things are in the same building. 9 Sovs, and the only museum on the Mile with a queue outside it.
+- **Venustempel** — the world's first sex museum, relocated here from Roodelicht Row in 2011 and now half museum of chocolate phalluses, half Victorian mechanical curiosity collection. Nobody has ever asked why those two things are in the same building. 9 SOVS, and the only museum on the Mile with a queue outside it.
 - **De Grote Fontein** — the four-metre working chocolate phallus fountain on the Venustempel forecourt. Real, hot, food-grade, continuously flowing, and free. **Gunter's Deep Dips**, the cart beside it, sells things on skewers at 5 SOVS and carries a menu board and a patron warning sign that between them constitute the filthiest signage in the city. Everybody double-dips. The warning sign explicitly forbids it. The sign is currently the size of a road sign and has never worked once. This is the most photographed object in Shamsterdam.
 - The mandatory **"I SHAMSTERDAM"** sign photo. The sign was removed years ago. Tourists still gather at the empty plinth and photograph each other beside nothing. Nobody has told them. The plinth is directly across from the fountain, so the two crowds interleave and photograph past each other all day. A **Veilig-o-Maat condom machine** is bolted to the empty plinth, making it the only object in most of those photographs.
 
@@ -93,7 +93,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 ### Casa Rosé Erotic Theatre
 **Live Entertainment Venue**
 - The famous "banana show" the bros will NOT shut up about
-- 65 Sovs entry for something you can't unsee
+- 65 SOVS entry for something you can't unsee
 - Aggressive bartenders and mandatory drink purchases
 - Bachelor party groups taking up all the good seats
 - The pink elephant statue out front: everyone's profile pic
@@ -120,14 +120,14 @@ The city that promises total freedom but delivers total accountability. A labyri
 - World's first sex museum, still kicking since 1985 — and since 2011, also a museum of chocolate phalluses
 - **De Cacaogalerij**: a climate-controlled gallery of artisan chocolate genitalia, curated with total sincerity, three-language placards, a nitrogen-flushed 1974 centrepiece, and a working tempering room behind glass
 - **De Mechanische Vleugel**: the entire original collection, relocated intact — Victorian peep show devices, the giggling figure whose skirts lift when you approach, the Marilyn Monroe statue with a "revealing twist", erotic John Lennon illustrations (yes, really)
-- 9 Sovs admission. The sign still says 5 Sovs under a sticker.
+- 9 SOVS admission. The sign still says 5 SOVS under a sticker.
 - **De Grote Fontein** out front: free, public, four metres, always on, always shared
 - **Gunter's Deep Dips**, the skewer cart beside it, whose menu board is the filthiest text in Shamsterdam and whose proprietor has never once acknowledged it
 - Considers the Museum of Questionable Art a tacky embarrassment and will tell you so unprompted, in one dry sentence, without raising its voice
 
 ### The Pancake House
 **Dutch Comfort Food Trap**
-- 18 Sovs for pancakes that should cost 6 Sovs
+- 18 SOVS for pancakes that should cost 6 SOVS
 - Toppings that make no sense (bacon AND Nutella?)
 - Bros who discover Dutch pancakes are more like crepes
 - Disappointed Americans expecting IHOP thickness
@@ -190,7 +190,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 ## SHOPS & VENDORS
 
 ### Street Vendors
-- **Stroopwafel Cart**: Warm caramel waffles (+HP, +Comfort, -Sovs significantly)
+- **Stroopwafel Cart**: Warm caramel waffles (+HP, +Comfort, -SOVS significantly)
 - **De Zilte Waarheid**: Raw fish the bros will absolutely not try (local challenge: +Bravado if consumed)
 - **De Botanische Leugen**: Decorative bulbs that won't survive the trip home (useless but photogenic)
 - **Bicycle Warfare Accessories**: Because you WILL need one if you're stupid enough to rent a bike
@@ -206,7 +206,7 @@ The city that promises total freedom but delivers total accountability. A labyri
     - Modern Art Chocolate (chocolate penises, +HP, -Dignity)
     - Decorated Specimens (sprinkles, fondant bow ties)
     - "Bachelor Party Pack" (bulk discount, bulk regret)
-    - The NFT QR code that mints "Abstract Expression #69"
+    - The NFT QR code that mints The Nordic Vacuum Warranty (Austin Powers Swedish Penis Enlarger Pump)
 
 - **Klompen Konfessional**: Tourist trap wooden shoe headquarters
     - Decorative Clogs (+0 stats, +100% Tourist Identification)
@@ -224,7 +224,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 **Late-Night Döner Stand #1**
 - THREE rotating meat towers of glory (veal, chicken, mixed)
 - Homemade bread baked fresh, warm, perfect
-- The döner that locals swear by (3 Sovs and worth every cent)
+- The döner that locals swear by (3 SOVS and worth every cent)
 - Standing counter only — you eat like a warrior or not at all
 - Grease-stained menus in four languages, none spelled correctly
 - **Vendor**: Mehmet "The Meat Architect" — Turkish immigrant who's been slinging döner since 1992, judges your pronunciation, respects your appetite
@@ -255,10 +255,10 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 
 ### Coffeeshop Menus (Sample Pricing)
-- **Tourist Trap Tier**: 20 Sovs/gram (the Bulldog experience)
-- **Local Secret Tier**: 12 Sovs/gram (if you know where to look)
+- **Tourist Trap Tier**: 20 SOVS/gram (the Bulldog experience)
+- **Local Secret Tier**: 12 SOVS/gram (if you know where to look)
 - **"My Buddy Said" Tier**: Variable (probably oregano)
-- **Space Cake Roulette**: 8-15 Sovs (effects: extremely variable)
+- **Space Cake Roulette**: 8-15 SOVS (effects: extremely variable)
 
 ---
 
@@ -286,15 +286,15 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 ### Permission Paradox System
 The central irony of Shamsterdam: everything is "legal" but nothing is without consequences
-- **Coffeeshop Entry**: Legal, but public smoking = 100 Sovs fine
+- **Coffeeshop Entry**: Legal, but public smoking = 100 SOVS fine
 - **Window Shopping**: Legal, but photography = phone confiscation + shame
 - **Bachelor Parties**: Legal, but matching costumes = targeted enforcement
 - **Being Loud**: Legal, but neighbors WILL call the police
 - **Existing as Tourist**: Legal, but the city literally paid for ads telling you not to come
 
 ### Fine & Penalty Mechanics
-- **Public Consumption Fine**: 100 Sovs, triggered by outdoor smoking
-- **Photography Violation**: -50 Sovs + "Marked Tourist" debuff
+- **Public Consumption Fine**: 100 SOVS, triggered by outdoor smoking
+- **Photography Violation**: -50 SOVS + "Marked Tourist" debuff
 - **Noise Complaint**: Random police encounter, -Bravado
 - **Bicycle Lane Walking**: Getting yelled at by EVERYONE
 - **Canal Littering**: Instant NPC mob judgment
@@ -315,7 +315,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - "The Banana Incident" — Rival trio volunteers for audience participation
 - Bros must decide: intervene and save them, or let them embarrass themselves
 - Photography absolutely forbidden but Chadwick can't help himself
-- **Reward**: NFT #4 "Banana Show Backstage Pass GIF" (somehow worse than it sounds)
+- **Reward**: Shamsterdam NFT slot 3, The Diapered Vector Loop (the Dancing Baby)
 
 ### City Boss: Burgemeester van Schande
 *(The Mayor of Shame)*
@@ -372,10 +372,11 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **Reward**: "Behind The Curtain" knowledge buff, unique dialogue options
 
 #### NFT Hunt (Shamsterdam)
-- 3 hidden acquisitions across the city:
-    - "Abstract Expression #69" (Chocolate Anatomy Emporium QR code)
-    - "Tulip Mania Token" (Cheese & Clog Corner hidden terminal)
-    - "Banana Show Backstage Pass GIF" (Casa Rosé post-event unlock)
+- 4 acquisitions across the city (three hidden, plus Dennis's couchsurf NFT, counted Shamsterdam #4 by author ruling 2026-11-11):
+    - The Nordic Vacuum Warranty (Austin Powers Swedish Penis Enlarger Pump; Chocolate Anatomy Emporium QR code)
+    - Proof of Dairy Culture (Monica Lewinsky's dress; Cheese & Clog Corner hidden terminal)
+    - The Diapered Vector Loop (the Dancing Baby; Casa Rosé post-event unlock)
+    - #4: "The Bedrock Chewable Reserve" (Flintstones Vitamins), from Dennis's couchsurf (`shamsterdam_museum_questionable_art.md`, "Dennis's Art Studio"). Counted Shamsterdam #4 (author, 2026-11-11)
 - Completing all unlocks "The Collector of Questionable Assets" title
 
 ---
@@ -405,7 +406,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **The Influencer**: Blocks pathways for photos, inflicts Main Character Syndrome
 
 ### Boss-Adjacent Encounters
-- **Dennis the Gift Shop Artist**: Creator of "Abstract Expression #69," demands respect for his "art"
+- **Dennis the Gift Shop Artist**: Creator of the The Nordic Vacuum Warranty NFT (Austin Powers Swedish Penis Enlarger Pump), demands respect for his "art"
 - **The Night Mayor**: Actually trying to help nightlife, frequently interrupted by chaos
 - **The Tolerance Tester**: City official who checks if you've learned anything
 

@@ -41,7 +41,7 @@
 
 **Vape Witch Vanessa:** 
 *exhaling peach-mango cloud*
-> "You three. You look like you know how to... hustle. DJ Beatdrop needs promotion. Rival DJ Hardstyle Hynek is trying to steal his Thursday night slot. I need someone to poster the city. 100 Sovs, plus free drinks tonight."
+> "You three. You look like you know how to... hustle. DJ Beatdrop needs promotion. Rival DJ Hardstyle Hynek is trying to steal his Thursday night slot. I need someone to poster the city. 100 SOVS, plus free drinks tonight."
 
 **Lord Pilsner:** *cracking knuckles* "Lady, you just hired the right team. I was a MARKETING MAJOR."
 
@@ -194,12 +194,12 @@
 > "What the f--- ...actually, you know what? People are talking about it. That's... something."
 
 **Hipster Collecting Them:**
-> "These are authentic Y2K memorabilia. I'll pay 5 Sovs each."
+> "These are authentic Y2K memorabilia. I'll pay 5 SOVS each."
 
 ---
 
 **Rewards - Path A:**
-- **100 Sovs payment** from Vanessa
+- **100 SOVS payment** from Vanessa
 - **"GeoCities Business Card" item** - Locals treat you like a living museum exhibit
 - **"Dial-Up Nostalgia" trinket** - NPCs ask if you need help using modern technology
 - **+2 Bravado** - Bros think they've "disrupted the paradigm"

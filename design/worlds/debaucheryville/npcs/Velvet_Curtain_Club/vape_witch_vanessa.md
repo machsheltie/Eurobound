@@ -67,7 +67,7 @@ Silhouette first: drapey vertical layers plus the cloud, readable at thumbnail s
 | Trait | Description |
 |-------|--------------|
 | Accurate Reader | Her assessments of people land, consistently — including "chaotic energy," which was neither a compliment nor an insult, and which was correct |
-| Commercially Fluent | Every mystical service she offers has a price, stated up front, in Sovs; she has never once been coy about it |
+| Commercially Fluent | Every mystical service she offers has a price, stated up front, in SOVS; she has never once been coy about it |
 | Low Tolerance For Nonsense | "Please don't." is her most-used complete sentence and she deploys it without heat |
 | Unshockable | Ten years of night shifts. Nothing that walks through the Velvet Curtain's door is new |
 | Boundaried | She hosts who she wants, when she wants; a crash spot is a favor she extends, not an obligation she owes, and it is withdrawn without ceremony or apology |
@@ -90,7 +90,7 @@ She is building an actual business — crystals, readings, the NFT collection, e
 > "You three have... chaotic energy. I like it. Want to make some money?"
 
 **Follow-up — the Club Flyers pitch (canonical, `debaucheryville_sidequest_club_flyers_01`)**:
-> "DJ Beatdrop needs promotion. Rival DJ Hardstyle Hynek is trying to steal his Thursday night slot. I need someone to poster the city. 100 Sovs, plus free drinks tonight."
+> "DJ Beatdrop needs promotion. Rival DJ Hardstyle Hynek is trying to steal his Thursday night slot. I need someone to poster the city. 100 SOVS, plus free drinks tonight."
 
 ### Key Interaction Dialogue
 
@@ -115,7 +115,7 @@ She is building an actual business — crystals, readings, the NFT collection, e
 > "Huh. Okay. You can crash. Take your shoes off at the door and do not touch the shelf."
 
 *Wrong answer, or an eye-roll mid-reading:*
-> "No, that one's forty Sovs. You can still crash. You're just paying for the reading now."
+> "No, that one's forty SOVS. You can still crash. You're just paying for the reading now."
 
 ### Morning Scene — "The Cleansing"
 
@@ -162,11 +162,11 @@ All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALL
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|---------------|----------------|
-| Aura reading | 40 Sovs | Genuinely accurate, which is the problem | Flavor text describing the party with uncomfortable precision; no stat effect |
-| Charged Quartz Vape Tip (gag item, canonical) | 15 Sovs | 1 Sov resale | Unusable in battle; pure collectible; sells for 1 Sov |
-| Charged Quartz Vape Tip, "barrier stone" rebrand (Herp-rejection sale only) | 60 Sovs | Still 1 Sov resale | Identical item, quadruple price; the bros buy two |
+| Aura reading | 40 SOVS | Genuinely accurate, which is the problem | Flavor text describing the party with uncomfortable precision; no stat effect |
+| Charged Quartz Vape Tip (gag item, canonical) | 15 SOVS | 1 SOV resale | Unusable in battle; pure collectible; sells for 1 SOV |
+| Charged Quartz Vape Tip, "barrier stone" rebrand (Herp-rejection sale only) | 60 SOVS | Still 1 SOV resale | Identical item, quadruple price; the bros buy two |
 | Crystal NFT collection viewing (pre-established canon) | Free, mandatory, 25 minutes | Priceless to her, endless to you | Morning-scene set piece; no item granted |
-| Club Flyers job | Pays 100 Sovs + free drinks | Cheap labor | Starts `debaucheryville_sidequest_club_flyers_01` |
+| Club Flyers job | Pays 100 SOVS + free drinks | Cheap labor | Starts `debaucheryville_sidequest_club_flyers_01` |
 
 ### Hidden Details / Easter Eggs
 - Examining the shelf she told you not to touch shows a row of stones, each with a masking-tape price label on the bottom, and one unlabeled stone at the end that is not for sale and that she will not discuss
@@ -254,7 +254,7 @@ Her pricing goes up. That is the arc. After the Club Flyers job she raises the r
 - **Quest**: `debaucheryville_sidequest_club_flyers_01` — "Peak Y2K Marketing Genius"
 - **Role**: Quest Giver
 - **Trigger**: Bros reach the Velvet Curtain Club main floor after prior Debaucheryville quests; her pitch fires in the 01:00–03:00 window
-- **Outcome**: 100 Sovs, free drinks, two flyers permanently upside down on the north wall, and a permanently higher reading fee
+- **Outcome**: 100 SOVS, free drinks, two flyers permanently upside down on the north wall, and a permanently higher reading fee
 
 ### Secondary Quest — Couchsurfing Chronicles
 - **Role**: Debaucheryville couchsurf host #1 (canonical)
@@ -265,8 +265,8 @@ Her pricing goes up. That is the arc. After the Club Flyers job she raises the r
 - **Quest**: `debaucheryville_sidequest_nothing_is_getting_through_01`
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) attempts the couchsurf or a romance approach at the Velvet Curtain Club
-- **Outcome**: Herp Rejection Scene fires (see Dialogue). No couchsurf, no SP, no quiz. The party loses the 120 Sovs spent on two "barrier stones." Scene is repeatable; the price does not go back down
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the stool, the appraisal, "you cannot have the couch" — **and then the couchsurf resolves normally**: quiz, sage, collection tour, canonical **+SP / Confused** branch and the Charged Quartz Vape Tip, at a sixty-Sovs surcharge she narrates out loud. She is never nice about it and never lets them off the hook; the entry completes regardless. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
+- **Outcome**: Herp Rejection Scene fires (see Dialogue). No couchsurf, no SP, no quiz. The party loses the 120 SOVS spent on two "barrier stones." Scene is repeatable; the price does not go back down
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the stool, the appraisal, "you cannot have the couch" — **and then the couchsurf resolves normally**: quiz, sage, collection tour, canonical **+SP / Confused** branch and the Charged Quartz Vape Tip, at a sixty-SOVS surcharge she narrates out loud. She is never nice about it and never lets them off the hook; the entry completes regardless. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 
@@ -275,7 +275,7 @@ She gates the Club Flyers quest entirely — no Vanessa, no flyer job — and ga
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Charged Quartz Vape Tip | Couchsurf morning scene | Yes (collectible) | Unusable in battle; sells for 1 Sov |
+| Charged Quartz Vape Tip | Couchsurf morning scene | Yes (collectible) | Unusable in battle; sells for 1 SOV |
 | Charged Quartz Vape Tip ("barrier stone") | Herp rejection scene | Yes (collectible) | Identical item at 4x price; purely a money sink and a joke |
 
 ---
@@ -334,7 +334,7 @@ Local Debaucheryville accent, light and unexaggerated — she is a working profe
 
 ## 📝 Development Notes
 
-- All Chronicles canon is harvested verbatim in intent: peach-mango "cleansing" exhale, sage, the crystal NFT collection tour, the crystal quiz, +SP / Confused branch, and the Charged Quartz Vape Tip (unusable, sells for 1 Sov). Nothing was reinvented
+- All Chronicles canon is harvested verbatim in intent: peach-mango "cleansing" exhale, sage, the crystal NFT collection tour, the crystal quiz, +SP / Confused branch, and the Charged Quartz Vape Tip (unusable, sells for 1 SOV). Nothing was reinvented
 - Club Flyers dialogue is quoted from `club_flyers.md` and must stay in sync with that file; this profile does not modify it
 - Her peach-mango vape cloud is an **existing** specced particle effect in `# Velvet Curtain Club - Complete PNG Asset Requirements.md`. Reuse; do not commission a new one
 - **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Her lines live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Vape Witch Vanessa"; this file and `nothingisgettingthrough.md` both point at it and neither duplicates the scene text

@@ -258,12 +258,12 @@
       },
       
       "dialogue": {
-        "bike_lane_violation": "This is a bike lane. You are not a bike. That's 95 Sovs.",
-        "blocking_traffic": "You're blocking traffic. Yes, on foot. Still illegal. 140 Sovs.",
-        "photography_violation": "No photographs in crossing. Safety regulation. 50 Sovs.",
+        "bike_lane_violation": "This is a bike lane. You are not a bike. That's 95 SOVS.",
+        "blocking_traffic": "You're blocking traffic. Yes, on foot. Still illegal. 140 SOVS.",
+        "photography_violation": "No photographs in crossing. Safety regulation. 50 SOVS.",
         "tram_near_miss": "...I'm honestly impressed. Here's a warning. This time.",
         "repeat_offender": "You again. At this point, I should offer a subscription.",
-        "attitude_surcharge": "And 25 Sovs for the attitude."
+        "attitude_surcharge": "And 25 SOVS for the attitude."
       },
       
       "fines": [

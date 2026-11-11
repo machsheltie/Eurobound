@@ -16,13 +16,13 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Running a genuinely working 1680 windmill as a genuinely working brewery, taking both halves with total seriousness, and delivering a forty-minute lecture on grain respect to people who paid 25 Sovs and are becoming increasingly unable to stand up. The floor vibrates because the mill is actually grinding. The building rotates because it is a windmill. The tasting flight escalates from 5% to 11% ABV in five glasses. None of this is a trick. All of it is the reason nobody can walk straight by the second floor.
+Running a genuinely working 1680 windmill as a genuinely working brewery, taking both halves with total seriousness, and delivering a forty-minute lecture on grain respect to people who paid 25 SOVS and are becoming increasingly unable to stand up. The floor vibrates because the mill is actually grinding. The building rotates because it is a windmill. The tasting flight escalates from 5% to 11% ABV in five glasses. None of this is a trick. All of it is the reason nobody can walk straight by the second floor.
 
 ### What Bros Believe
 That they are having an exclusive artisanal craft experience in a historic Dutch windmill. Lord Pilsner calls it ICONIC on arrival and asks why it is moving forty seconds later. Chadwick considers the grinding mechanism CONTENT. Bradley, three beers in, says "actually, this is really good, the spinning adds… something," which is the closest anyone in the party gets to understanding what Hendrik is doing.
 
 ### The Comedy Gap
-Hendrik is not selling disorientation. He is selling grain, heritage, and beer, and the disorientation is a physical property of a working windmill that he considers self-evident and has stopped explaining. The gift shop sells motion sickness pills at 3 Sovs and Tessa does not find that funny any more. Hendrik has never connected the two facts. The satire is on paying premium prices for discomfort marketed as authenticity — and the authenticity is entirely real, which is what makes it work.
+Hendrik is not selling disorientation. He is selling grain, heritage, and beer, and the disorientation is a physical property of a working windmill that he considers self-evident and has stopped explaining. The gift shop sells motion sickness pills at 3 SOVS and Tessa does not find that funny any more. Hendrik has never connected the two facts. The satire is on paying premium prices for discomfort marketed as authenticity — and the authenticity is entirely real, which is what makes it work.
 
 ### The Thing He Is Quietly Proud Of
 There is a seagull at De Zilte Waarheid, on the other side of the city, named Hendrik. It was named after him because he once threw a herring at it and the bird caught it clean out of the air. Maarten at the herring stand has never corrected anyone. Hendrik is aware. Hendrik considers it an honour. He will not raise it, but if a player mentions the bird, it is the single warmest reaction available from him in the entire location — warmer than the post-boss respect, warmer than the Windmill Grist.
@@ -74,7 +74,7 @@ Sheet `npc_wobbly_windmill_cast.png` (1024×384, 64×96 sprites), Row 0. Hendrik
 > "They arrive and they photograph the outside and they say the word 'authentic' four times before they have entered the building. And then they come up to the first floor and the millstone is turning — the actual stone, the one my grandfather dressed with a hammer in 1961 — and they say it is 'cool.' Cool. And then I speak for forty minutes about what the grain is doing and where it came from and by the end there are two of them still standing. Two. And of those two, one is German and writing everything down. That one, I would give the recipe to. But I cannot give the recipe to only one German. So I give the speech to everybody and I wait."
 
 ### Motivation
-Continuity. His grandfather ground grain in this mill, his father ground grain in this mill, and Hendrik grinds grain and brews beer in this mill. The tourism pays for the mill. The mill is the point. Everything else — the 25 Sovs ticket, the 30 Sovs T-shirts, the branded glasses at 18 Sovs when the beer is 6 Sovs — is the cost of keeping a 1680 windmill turning in 2026, and he would rather be doing it for four people who cared.
+Continuity. His grandfather ground grain in this mill, his father ground grain in this mill, and Hendrik grinds grain and brews beer in this mill. The tourism pays for the mill. The mill is the point. Everything else — the 25 SOVS ticket, the 30 SOVS T-shirts, the branded glasses at 18 SOVS when the beer is 6 SOVS — is the cost of keeping a 1680 windmill turning in 2026, and he would rather be doing it for four people who cared.
 
 ---
 
@@ -88,7 +88,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 > "For 15 years, it has served the GRAIN."
 
 **On the ticket**:
-> "Twenty-five Sovs. This includes the tour, the tasting token, and the flight. It does not include the gift shop and it does not include your dignity, which is not mine to sell."
+> "Twenty-five SOVS. This includes the tour, the tasting token, and the flight. It does not include the gift shop and it does not include your dignity, which is not mine to sell."
 
 ### The Opener Check (Quest Gate)
 
@@ -97,7 +97,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 **With Blarney Trap opener, no windmill opener**:
 > "The shamrock opener. Seamus's network. You have access to the tour."
 > *(He does not hand anything over.)*
-> "But the windmill opener — you must EARN it. Defeat my golem. Or twenty-two Sovs. The grain demands respect."
+> "But the windmill opener — you must EARN it. Defeat my golem. Or twenty-two SOVS. The grain demands respect."
 
 **With both openers**:
 > "You carry the windmill. This means you understand — or you paid."
@@ -173,9 +173,9 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 
 ### Sales — Post-Tour
 
-**Bottle opener (22 Sovs)**:
+**Bottle opener (22 SOVS)**:
 > "The Wobbly Windmill Brewery opener. Brushed copper, grain-gold. The blades turn when you spin it — this is not a gimmick, this is the same ratio as the real ones."
-> "Twenty-two Sovs. Or defeat the golem. The golem is free."
+> "Twenty-two SOVS. Or defeat the golem. The golem is free."
 
 **Windmill Grist purchase (requires windmill opener)**:
 > "Eleven percent. Forty HP, twenty SP, and your navigation will not be your own for a while."
@@ -186,14 +186,14 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 
 ### If Player Declines / Alternative Path
 **Player skips the tasting flight entirely**:
-> "You paid twenty-five Sovs to look at a building." *(No judgement in it. Mild bafflement.)* "The building is very good. Enjoy the building."
+> "You paid twenty-five SOVS to look at a building." *(No judgement in it. Mild bafflement.)* "The building is very good. Enjoy the building."
 
 **Player asks when the spinning stops**:
 > *(A long silence.)* "It is a windmill."
 
 ### Callback Dialogue (Return Visits)
 **Second visit**:
-> "You came back. On the train. Eight Sovs, both ways, to look at fields." *(A nod.)* "This is the correct instinct."
+> "You came back. On the train. Eight SOVS, both ways, to look at fields." *(A nod.)* "This is the correct instinct."
 
 **After all four Shamsterdam breweries are stamped (Bottoms Down included)**:
 > "Kees has stamped you." *(Beat.)* "He does not stamp. If Kees has stamped you, you have done something. Canal Courage — you have it now. Do not waste it on the Roodelicht."
@@ -228,11 +228,11 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 ### Services & Items
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Brewery Tour | 25 Sovs | 25 Sovs | Full tour, tasting token, five-beer flight, 40-minute lecture, access to boss arena |
-| The Wobbly Windmill Brewery Bottle Opener | 22 Sovs | 22 Sovs | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp and Windmill Grist. Free via Yeast Golem defeat. |
+| Brewery Tour | 25 SOVS | 25 SOVS | Full tour, tasting token, five-beer flight, 40-minute lecture, access to boss arena |
+| The Wobbly Windmill Brewery Bottle Opener | 22 SOVS | 22 SOVS | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp and Windmill Grist. Free via Yeast Golem defeat. |
 | Windmill Grist (consumable) | Post-tour purchase | Genuinely 11% | +40 HP, +20 SP, +15% Speed 3 turns, −20% Navigation 5 turns. The room keeps spinning after you leave. |
 | Tasting Flight | Included in tour | Included | Five beers, 5% → 11% ABV. Feeds the Spin Meter. |
-| "Respect The Grain" (book) | 35 Sovs | 0 Sovs | Self-published, unreadable, comprehensive. He will sign it. Bram has read it because he had to. |
+| "Respect The Grain" (book) | 35 SOVS | 0 SOVS | Self-published, unreadable, comprehensive. He will sign it. Bram has read it because he had to. |
 | Gift shop discount | 5%, earned | Small but real | Awarded for listening to the entire Speech |
 | Windmill Grist stamp | Free on completion | Quest-critical | 1 of 4 Shamsterdam brewery stamps on the Bottle Opener Keychain |
 
@@ -324,19 +324,19 @@ He never becomes casual and never lets the reverence drop. What changes is compr
 ### Quest Gate Function
 **Hard gate, two layers:**
 1. **The Blarney Trap Bottle Opener (Publandia)** is required to participate in the brewery tour AT ALL. Without it, Hendrik blocks the stairs. This is a cross-city dependency and it is not negotiable, purchasable, or skippable.
-2. **The Wobbly Windmill Brewery opener** (Yeast Golem defeat OR 22 Sovs) is required for the stamp and for Windmill Grist purchase. Without it the player can tour and drink but takes no progression.
+2. **The Wobbly Windmill Brewery opener** (Yeast Golem defeat OR 22 SOVS) is required for the stamp and for Windmill Grist purchase. Without it the player can tour and drink but takes no progression.
 
 He also gates the Yeast Golem boss arena, the second-floor tasting room, and the blade-level selfie spot — all three unlock behind him in sequence.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| The Wobbly Windmill Brewery Bottle Opener | Golem defeat or 22 Sovs | Yes | Gates stamp + Windmill Grist; blades rotate |
+| The Wobbly Windmill Brewery Bottle Opener | Golem defeat or 22 SOVS | Yes | Gates stamp + Windmill Grist; blades rotate |
 | Windmill Grist ×3 | Golem victory | Consumable | +40 HP, +20 SP, +15% Speed, −20% Navigation |
 | "Windmill Grist" stamp | Tour completion with opener | Yes | 1 of 4 toward Canal Courage |
 | "Yeast Slayer" title | Golem defeat | Yes | Title badge |
 | Gift shop 5% discount | Full Speech listened to | Yes | Still overpriced |
-| Signed copy of "Respect The Grain" | 35 Sovs + request | Yes | Unreadable. Examinable inscription. |
+| Signed copy of "Respect The Grain" | 35 SOVS + request | Yes | Unreadable. Examinable inscription. |
 
 ### State Flags Set
 - `hendrik_met`: boolean
@@ -358,7 +358,7 @@ He also gates the Yeast Golem boss arena, the second-floor tasting room, and the
 2. The tasting flight board — five glasses, 5% to 11%, in ascending colour
 3. The Approval nod: two frames, the entire post-boss reward
 4. The seagull beat mid-delivery, hydrometer turning over in his hand
-5. The gift shop selling 3 Sovs motion sickness pills directly beneath the "Respect The Grain" book display
+5. The gift shop selling 3 SOVS motion sickness pills directly beneath the "Respect The Grain" book display
 
 ### Meme Potential
 - "Respect the grain."
@@ -416,7 +416,7 @@ Dutch, rural, deep register. A reverent baritone with real weight behind it. Slo
 - The Blarney Trap gate is a hard cross-city dependency. There must be no purchase, bribe, skill check, or alternate route past it. Playtesters will try. Hendrik is the size of the doorway for a reason.
 - Hendrik's stability on the vibrating floor must be preserved in every shared frame with a tourist sprite. It is a free joke that costs one art note and pays out for the whole location.
 - The 40-minute Speech is 2 minutes of skippable dialogue. Skipping must carry the stated Bravado consequence and Hendrik must announce the departure out loud. The social cost is the mechanic.
-- The 5% gift shop discount for listening must be real and must apply to the 35 Sovs book, meaning the reward for enduring the lecture is 2 Sovs off a book about the lecture. Do not adjust this.
+- The 5% gift shop discount for listening must be real and must apply to the 35 SOVS book, meaning the reward for enduring the lecture is 2 SOVS off a book about the lecture. Do not adjust this.
 - He is never in on it. No knowing beat, no aside, no moment where the mask slips. The one crack in the surface is the seagull, and that crack makes him more sincere, not less.
 
 ---
@@ -424,7 +424,7 @@ Dutch, rural, deep register. A reverent baritone with real weight behind it. Slo
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Hendrik has none. Sovs only; 25 Sovs tour, 22 Sovs opener, 8 Sovs train.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Hendrik has none. SOVS only; 25 SOVS tour, 22 SOVS opener, 8 SOVS train.
 - [x] **NO automatic crypto assumptions** — a third-generation miller in a 1680 windmill does not take shitcoins and the location profile establishes no crypto presence
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — they are not being scammed; they are being educated and they are not receiving it
@@ -434,7 +434,7 @@ Dutch, rural, deep register. A reverent baritone with real weight behind it. Slo
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is bros calling a working 350-year-old mill "cool" and then falling over
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Hendrik is a genuinely skilled brewer and miller running a real heritage operation; the tourism subsidises the mill and he is transparent about every price
-- [x] Humour is affectionate mockery, not mean-spirited — his craft is real, his beer is good, his knowledge is freely given, and the seagull beat gives him unguarded warmth
+- [x] Humour is affectionate mockery — his craft is real, his beer is good, his knowledge is freely given, and the seagull beat gives him unguarded warmth
 
 ---
 

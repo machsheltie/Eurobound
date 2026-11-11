@@ -15,7 +15,7 @@
 
 ### **Enhanced Payoff Types:**
 - **Positive:** +Charm, +Street Rep, or minor items
-- **Negative:** Status effects (Hungover, Embarrassed), minor Sovs loss, or gag items  
+- **Negative:** Status effects (Hungover, Embarrassed), minor SOVS loss, or gag items  
 - **Mixed:** Flavor collectibles, achievement progress, or FlagMan reference items
 
 ---
@@ -47,7 +47,7 @@
 - **Status: `the_herp`** — applied to all three bros, permanent, scripted and guaranteed *once the party is attended*. Never cured; suppressed only while `item_gold_circle_coin` is equipped by any bro
 - **Passport entry logged automatically** (the bros fill it in enthusiastically and describe none of it)
 - **Item: `item_leopard_print_thong`** — granted automatically to **Lord Pilsner**, permanent and equippable, acquisition line is "...Mine now?" *(spec: `Design/Inventory/items/leopard_print_thong_item.md`)*. **Its original owner is never established — not Renata's, not anyone's. Permanent canon.**
-- **No Sovs loss, no gag trinket, no stat payout.** Renata gives nothing and takes nothing
+- **No SOVS loss, no gag trinket, no stat payout.** Renata gives nothing and takes nothing
 
 **Real-World Consequence:** None whatsoever for Renata, who does not know anything happened and is never told. All of it lands on the bros, who unanimously and permanently agree never to discuss it.
 
@@ -69,7 +69,7 @@
 **Result:**
 - **+SP restored** (if you answer her crystal quiz correctly)
 - **or Confused status** if you roll your eyes mid-scene
-- **Gag Item:** Charged Quartz Vape Tip — unusable in battle, sells for 1 Sov
+- **Gag Item:** Charged Quartz Vape Tip — unusable in battle, sells for 1 SOV
 
 **Location-Specific Roasting:** NPCs clearly targeting tourists with more money than sense, but bros think they're accessing "authentic underground culture"
 
@@ -117,7 +117,7 @@ Plays the entry above exactly as authored: the Crystal Quiz, the couch, the Clea
 *He starts to leave. She lets him get three steps, because three steps is the price. Then she sweeps the three stones back onto the bar without looking up, and the quiz is open again.*
 
 **Vanessa** *(flat, transactional, entirely unimpressed by her own mercy)*:
-> "Sixty Sovs. Floor, not the couch — the couch is not a couch tonight, the couch is a *principle*. Shelf is still a shelf. Pick the one that's already yours and don't think about it, thinking is how tourists get it wrong."
+> "Sixty SOVS. Floor, not the couch — the couch is not a couch tonight, the couch is a *principle*. Shelf is still a shelf. Pick the one that's already yours and don't think about it, thinking is how tourists get it wrong."
 
 *He passes; he always passes eventually, and she has never once made the quiz harder for anyone.* **From here the entry runs the Enhanced Morning Scene and Result block above exactly as authored** *— crystals, sage, the full twenty-five minutes. Never a second refusal.*
 
@@ -213,7 +213,7 @@ Plays the entry above exactly as authored: the last of the kebab, the floor, the
 **Result:**
 - **Gain NFT #2** (alternate acquisition route)
 - **Hungover status**
-- **Lose 25 Sovs** — she took your last cab voucher
+- **Lose 25 SOVS** — she took your last cab voucher
 
 **Enhanced ICQ Integration:**
 ```
@@ -278,7 +278,7 @@ Plays the entry above exactly as authored: the futon, the CRTs, the minute-long 
 *She goes back to the printout. She gets one line down it. She folds it, taps the counter once, and looks at him the way she looks at a rate she has decided to accept.*
 
 **The "Ex"** *(entirely without warmth, entirely without cruelty)*:
-> "...Ugh. Fine. Futon's free. Not because of that — put it away, I don't want to see it again — because I'm three Sovs from winning this and I am not going home alone to lose at it in my own flat."
+> "...Ugh. Fine. Futon's free. Not because of that — put it away, I don't want to see it again — because I'm three SOVS from winning this and I am not going home alone to lose at it in my own flat."
 
 *She holds a hand out, palm up, before he has said a word.*
 > "Cab voucher. Now. It saves us both the conversation in the morning."
@@ -548,7 +548,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "Authentic European mysticism!"
 ```
 💬 Group Chat Leak: "american tourist bingo - got them all! 🎯"
 💬 Venmo Request: "for the plan B you definitely need to pay for"
-💬 Tony420: "heard u been busy. got stamina pills 4 ur euro tour 50 Sovs"
+💬 Tony420: "heard u been busy. got stamina pills 4 ur euro tour 50 alfa"
 💬 CryptoBro69: "ur hookup rate = worse ROI than my NFTs lol"
 ```
 

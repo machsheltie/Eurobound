@@ -104,7 +104,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 > *(He nods.)*
 > "Seamus."
 > *(He points to the gauntlet setup. Five glasses, already there.)*
-> "Gauntlet. Or twenty Sovs. Your glass. Your choice."
+> "Gauntlet. Or twenty SOVS. Your glass. Your choice."
 
 **With both openers**:
 > *(One nod.)*
@@ -184,8 +184,8 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 
 ### Sales
 
-**Bottoms Down Bottle Opener (20 Sovs)**:
-> "Twenty Sovs." *(He sets it on the bar.)* "Or gauntlet." *(Beat.)* "Gauntlet is cheaper. Gauntlet is not easier."
+**Bottoms Down Bottle Opener (20 SOVS)**:
+> "Twenty SOVS." *(He sets it on the bar.)* "Or gauntlet." *(Beat.)* "Gauntlet is cheaper. Gauntlet is not easier."
 
 **Oude Genever (requires the opener)**:
 > "Oude Genever." *(He pours.)* "Your hands will shake. This is the drink. Not you."
@@ -245,15 +245,15 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 ### Menu
 | Item/Service | Price | ABV | Effect/Result |
 |--------------|-------|-----|---------------|
-| Jonge Jenever | 4 Sovs | 35% | +15 SP, mild warmth. "Young. Starter." |
-| Oude Jenever | 6 Sovs | 35% | +25 SP, The Shakes (−Accuracy). "Old. Respect required." |
-| Zeer Oude Jenever | 12 Sovs | 38% | +40 SP, The Shakes ×2. "Very old. Very serious." |
-| Korenwijn | 15 Sovs | 38% | +50 SP, +Liquid Courage, The Shakes. "Grain wine. Not for beginners." |
-| Beer (Pilsner) | 4 Sovs | 5% | +10 HP, chaser compatibility. "Also available. Yes." |
-| The Kopstootje Combo | 8 Sovs | — | Combined effect, +Shamsterdam Cred, −Intelligence, +Bravado. "Traditional. Brave." |
-| "The Flight" (5 samples) | 20 Sovs | Escalating | The gauntlet. "For tasting. Or testing." |
-| Back Room Special | 25 Sovs | 40% | +60 SP, everything status. "If you qualify." |
-| Bottoms Down Bottle Opener | 20 Sovs | — | Tulip glass with visible surface tension, amber brass, sawdust-coloured leather loop, "No Hands. No Fear." Free via gauntlet completion. |
+| Jonge Jenever | 4 SOVS | 35% | +15 SP, mild warmth. "Young. Starter." |
+| Oude Jenever | 6 SOVS | 35% | +25 SP, The Shakes (−Accuracy). "Old. Respect required." |
+| Zeer Oude Jenever | 12 SOVS | 38% | +40 SP, The Shakes ×2. "Very old. Very serious." |
+| Korenwijn | 15 SOVS | 38% | +50 SP, +Liquid Courage, The Shakes. "Grain wine. Not for beginners." |
+| Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility. "Also available. Yes." |
+| The Kopstootje Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred, −Intelligence, +Bravado. "Traditional. Brave." |
+| "The Flight" (5 samples) | 20 SOVS | Escalating | The gauntlet. "For tasting. Or testing." |
+| Back Room Special | 25 SOVS | 40% | +60 SP, everything status. "If you qualify." |
+| Bottoms Down Bottle Opener | 20 SOVS | — | Tulip glass with visible surface tension, amber brass, sawdust-coloured leather loop, "No Hands. No Fear." Free via gauntlet completion. |
 
 ### Consumable: Oude Genever
 | Effect | Value |
@@ -359,7 +359,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 
 **Layer 1 — The Blarney Trap Bottle Opener (Publandia).** Required to access the brewery tour AT ALL. This is a cross-city dependency on `the_blarney_trap.md` and Seamus O'Brien's shamrock-shaped brass opener. Without it Kees says "No shamrock. No tour. Return. With opener." and the conversation ends. **There is no bribe, no skill check, no alternate route, and no exception.** The opener check runs before any other dialogue state.
 
-**Layer 2 — The Bottoms Down opener.** Required for the stamp and Oude Genever purchase. Obtained by completing the Jenever Taste Test gauntlet OR paying 20 Sovs. Without it the player can enter and drink but takes no progression.
+**Layer 2 — The Bottoms Down opener.** Required for the stamp and Oude Genever purchase. Obtained by completing the Jenever Taste Test gauntlet OR paying 20 SOVS. Without it the player can enter and drink but takes no progression.
 
 **Layer 3 — The back room.** Full gauntlet completion (all three rounds correct) unlocks it. "Close enough" does not.
 
@@ -377,7 +377,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Bottoms Down Bottle Opener | Gauntlet or 20 Sovs | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
+| Bottoms Down Bottle Opener | Gauntlet or 20 SOVS | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
 | Oude Genever ×5 (or ×2) | Gauntlet resolution | Consumable | +40 SP, The Shakes, cannot be used in combat |
 | "Oude Genever" stamp | Tour completion with opener | Yes | 1 of 4 → **Canal Courage passive unlocked** when all four are stamped |
 | Back Room access | Full gauntlet | Yes | The 100-Year Barrel, the private stock, the one chair |
@@ -472,7 +472,7 @@ Dutch, Old Town, low register, minimal. He does not inflect. Words arrive at eve
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Kees has none. Sovs, 4–25 Sovs, and a bar that predates paper money.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Kees has none. SOVS, 4–25 SOVS, and a bar that predates paper money.
 - [x] **NO automatic crypto assumptions** — a 1624 distillery with no signage does not need a payment innovation
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — there is nothing to be aware of; the glass is full because that is how it is served
@@ -481,8 +481,8 @@ Dutch, Old Town, low register, minimal. He does not inflect. Words arrive at eve
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is bros reading four centuries of practical arrangements as a personal challenge; Dutch jenever culture is presented as genuinely difficult and genuinely worth respecting
-- [x] NPC is savvy entrepreneur, not villain or stereotype — Kees runs a fair, transparent, four-hundred-year-old bar, offers a 20 Sovs shortcut past his own gauntlet, and has never mocked a customer
-- [x] Humour is affectionate mockery, not mean-spirited — "The chair is there" is delivered *not unkindly*, which is canon and is the tonal key to the whole location
+- [x] NPC is savvy entrepreneur, not villain or stereotype — Kees runs a fair, transparent, four-hundred-year-old bar, offers a 20 SOVS shortcut past his own gauntlet, and has never mocked a customer
+- [x] Humour is affectionate mockery — "The chair is there" is delivered *not unkindly*, which is canon and is the tonal key to the whole location
 - [x] Alcohol handled responsibly — the satire targets drinking hubris, not alcoholism; the sawdust, the chair, and Pim's physical support all exist because the bar takes care of people who overreach
 
 ---

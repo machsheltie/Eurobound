@@ -132,7 +132,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 |---------|----------|------|-------------|
 | Bulk "Bachelor Party" Endcap | (0, 576) | 192x192 | By the counter. Efficiency is key. |
 | Gift Card Rack | (192, 576) | 96x128 | "Yes, people use them." |
-| Educational Poster Display | (288, 576) | 96x128 | 15 Sovs, conversation starter, Bradley's pick |
+| Educational Poster Display | (288, 576) | 96x128 | 15 SOVS, conversation starter, Bradley's pick |
 | Mirror (customer self-assessment) | (384, 576) | 96x128 | Reflects your face making that face |
 | Waiting Bench | (480, 576) | 128x96 | Where "I'm Just Looking" guy has been for 20 minutes |
 | Basket Stack | (608, 576) | 96x96 | Optimistic capacity |
@@ -164,22 +164,22 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ### Product Packages (Row 0, y=0):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Standard Pack (12) | (0, 0) | 64x64 | 15 Sovs — "The responsible choice" |
-| Premium Selection | (64, 0) | 64x64 | 25 Sovs — "For the discerning" |
-| Glow-in-Dark Pack | (128, 0) | 64x64 | 12 Sovs — party favorite, lights off |
+| Standard Pack (12) | (0, 0) | 64x64 | 15 SOVS — "The responsible choice" |
+| Premium Selection | (64, 0) | 64x64 | 25 SOVS — "For the discerning" |
+| Glow-in-Dark Pack | (128, 0) | 64x64 | 12 SOVS — party favorite, lights off |
 | Glow-in-Dark Pack (glowing) | (192, 0) | 64x64 | Emissive variant; works as advertised |
-| Flavored Variety | (256, 0) | 64x64 | 10 Sovs — "Why not" |
-| Shamsterdam Souvenir Pack | (320, 0) | 64x64 | 18 Sovs — windmill and tulip motifs, yes really |
-| Designer Limited Edition | (384, 0) | 64x64 | 35 Sovs — "Is this a gallery?" |
-| The Mystery Box | (448, 0) | 64x64 | 30 Sovs — Chadwick's unboxing content |
+| Flavored Variety | (256, 0) | 64x64 | 10 SOVS — "Why not" |
+| Shamsterdam Souvenir Pack | (320, 0) | 64x64 | 18 SOVS — windmill and tulip motifs, yes really |
+| Designer Limited Edition | (384, 0) | 64x64 | 35 SOVS — "Is this a gallery?" |
+| The Mystery Box | (448, 0) | 64x64 | 30 SOVS — Chadwick's unboxing content |
 
 ### Bundles, Documents & Bags (Row 1, y=64):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Bachelor Party Bundle | (0, 64) | 96x96 | 45 Sovs — "The Full Experience" |
+| Bachelor Party Bundle | (0, 64) | 96x96 | 45 SOVS — "The Full Experience" |
 | Educational Poster (rolled) | (96, 64) | 48x96 | Inventory form |
 | Educational Poster (unrolled) | (144, 64) | 96x96 | Tasteful diagram, hostel-wall ready |
-| Gift Card (blank) | (240, 64) | 64x48 | 20-100 Sovs |
+| Gift Card (blank) | (240, 64) | 64x48 | 20-100 SOVS |
 | Gift Card (presented, awkward) | (240, 112) | 64x48 | Held out at arm's length |
 | Sizing Guide Booklet | (304, 64) | 64x96 | "Information is power" |
 | Shopping Bag — Distinctive | (368, 64) | 64x96 | Gold fleece print; visible from across a hostel kitchen |
@@ -206,7 +206,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Category Placard — Sizes | (64, 320) | 96x32 | Shelf-edge label |
 | Category Placard — Novelties | (160, 256) | 96x32 | Shelf-edge label |
 | Category Placard — Art Pieces | (160, 288) | 96x32 | Shelf-edge label |
-| Price Tag Set (3–50 Sovs) | (160, 320) | 96x32 | Small, honest, no asterisks |
+| Price Tag Set (3–50 SOVS) | (160, 320) | 96x32 | Small, honest, no asterisks |
 | Basket (customer, filling) | (256, 256) | 96x96 | Two items, growing |
 | Basket (overfull, bachelor party) | (352, 256) | 96x96 | Structural integrity in question |
 | Receipt (itemized, incriminating) | (448, 256) | 64x96 | Line by line, no euphemisms |
@@ -311,7 +311,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Achievement Track Panel | (64, 320) | 192x96 | Five-stage bachelor-party progression |
 | Condomerie Regular Progress | (256, 320) | 128x64 | 3-visit counter toward the staff nod |
 | Photography Policy Toast | (384, 320) | 128x64 | "Exterior only, please." |
-| Price Tag Popup | (256, 384) | 128x32 | 3–50 Sovs range display |
+| Price Tag Popup | (256, 384) | 128x32 | 3–50 SOVS range display |
 | Receipt Summary Panel | (384, 384) | 128x32 | Itemized, briefly, then gone |
 
 ### Effects & High Contrast:
@@ -444,7 +444,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - Gift wrap options are identified by pattern (plain / dotted / striped) plus text label, never by wrap colour alone
 - Bravado and Nervous Laughter meters use fill position plus a numeric readout
 - Achievement tokens use distinct silhouettes (shield / gift / box / envelope / crown), readable at 32px in greyscale
-- Touch zones minimum 44px for all five product walls, the wrapping station, the counter, the gift card rack, and every purchase button
+- Click zones minimum 44px for all five product walls, the wrapping station, the counter, the gift card rack, and every purchase button
 
 ---
 
@@ -624,7 +624,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - [ ] Femke and Joost are composed and professional in every single frame; all reaction comedy belongs to customers
 - [ ] Hidden areas/interactions have discoverable visual cues (sizing guide requires asking, gift card rack, Art Pieces plinth, three-visit Regular track)
 - [ ] Performance optimized (12-particle ceiling, three atlases, separate interior/exterior scenes)
-- [ ] Touch zone sizing considered (44px minimum on all five walls, wrapping station, counter, gift card rack, purchase buttons)
+- [ ] Click zone sizing considered (44px minimum on all five walls, wrapping station, counter, gift card rack, purchase buttons)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (section hatching, wrap patterns, achievement silhouettes)
 - [ ] Social media viral potential maximized in composition choices (plinth framing, Femke's held stare, basket structural failure)
 
@@ -637,7 +637,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | World Consistency (no real city names) | ✅ | All in-world signage reads "Shamsterdam"; the profile's "Amsterdam institution" note is design commentary, never asset text |
 | Cultural Specificity | ✅ | Dutch sexual-health openness and direct professionalism vs. anglophone tourist awkwardness |
 | Satirical Targets Appropriate | ✅ | Punches at tourist immaturity and bachelor-party bravado; Femke, Joost and the shop are rendered competent, dignified and correct throughout |
-| Seedy Underbelly Present | ✅ | Novelty markup on items bought "as a joke," the 45 Sovs bundle, the 30 Sovs Mystery Box, and the 60% of gag gifts quietly kept |
+| Seedy Underbelly Present | ✅ | Novelty markup on items bought "as a joke," the 45 SOVS bundle, the 30 SOVS Mystery Box, and the 60% of gag gifts quietly kept |
 | Gameplay Value Established | ✅ | Solo-entry Bravado check, five-section browsing, gag-gift declaration, gift-wrap service, group discount, Groom Spotlight, inventory-visibility chain, five-stage achievement track |
 | Technical Feasibility | ✅ | Separate interior/exterior scenes, composed wall sprites, single-float blush shader, 12-particle ceiling all documented |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 32 MB per profile budget |

@@ -1,7 +1,7 @@
 # De Groene Gids - Complete PNG Asset Requirements
 
 ## 📋 Overview
-De Groene Gids ("The Green Guide") is the Hard Rock Café of coffeeshops — a two-floor corner institution in the Coffeeshop Quarter with the largest neon sign in the district, a 3.1-star TripAdvisor certificate in the window, a Bob Marley poster that is functionally legally required, and a 20 Sovs/gram price for what locals buy elsewhere at 10 Sovs. This document specifies every PNG asset across the neon-drenched exterior, the ground-floor counter and merchandise gauntlet, the "VIP Lounge" upstairs that is the same room, the merchandise and consumable objects, Budtender Bas and the full staff and customer cast, the space-cake timer and Tourist Trapped UI, and the permanent green haze. Its satirical essence in a sentence: famous for being famous, expensive for being expensive, and precisely the experience you deserve for not asking a local.
+De Groene Gids ("The Green Guide") is the Hard Rock Café of coffeeshops — a two-floor corner institution in the Coffeeshop Quarter with the largest neon sign in the district, a 3.1-star TripAdvisor certificate in the window, a Bob Marley poster that is functionally legally required, and a 20 SOVS/gram price for what locals buy elsewhere at 10 SOVS. This document specifies every PNG asset across the neon-drenched exterior, the ground-floor counter and merchandise gauntlet, the "VIP Lounge" upstairs that is the same room, the merchandise and consumable objects, Budtender Bas and the full staff and customer cast, the space-cake timer and Tourist Trapped UI, and the permanent green haze. Its satirical essence in a sentence: famous for being famous, expensive for being expensive, and precisely the experience you deserve for not asking a local.
 
 **Location ID:** `shamsterdam_coffeeshop_groene_gids_01`
 **Theme:** Brand-name tourism over authentic experience — corporate commodification of counterculture, merchandise margins beating menu margins, and every American mistake performed in public
@@ -106,7 +106,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Digital Menu Board — Frame 1 | (0, 256) | 192x256 | Scrolling strain names, "TOURIST RECOMMENDATIONS" highlighted |
 | Digital Menu Board — Frame 2 | (192, 256) | 192x256 | Second scroll position |
 | Menu Board — Static (mobile fallback) | (384, 256) | 192x256 | Low-LOD non-scrolling variant (profile-mandated static menu option) |
-| Branded ATM Machine | (576, 256) | 128x256 | 50 Sovs minimum withdrawal, 5 Sovs fee, branded green |
+| Branded ATM Machine | (576, 256) | 128x256 | 50 SOVS minimum withdrawal, 5 SOVS fee, branded green |
 | Wall — Green-Tinted Panel (tileable) | (704, 256) | 128x128 | Base wall |
 | Wall — Panel With Grime | (832, 256) | 128x128 | Shoulder-height wear variant |
 | Bob Marley Poster | (960, 256) | 64x128 | Legally required in tourist coffeeshops |
@@ -130,7 +130,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Bench Seating Segment | (640, 512) | 192x96 | Communal, uncomfortable, always full |
 | Ventilation Grille ("decorative") | (640, 608) | 192x32 | Working overtime, achieving nothing |
 | "NO TOBACCO" Sign (12 languages) | (832, 512) | 192x64 | Americans need all 12 |
-| Stairs Up To "VIP" | (832, 576) | 192x64 | 10 Sovs surcharge, one flight |
+| Stairs Up To "VIP" | (832, 576) | 192x64 | 10 SOVS surcharge, one flight |
 
 ### Lighting & Exit Path:
 | Element | Position | Size | Description |
@@ -140,7 +140,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Display Case Spotlight Cone | (448, 640) | 128x128 | Jewelry-store lighting on the bong case |
 | Bar Under-Glow Strip | (576, 640) | 192x64 | Neon green underlighting |
 | Queue Rope + Floor Decal | (576, 704) | 192x64 | Managed flow at peak tourist hours |
-| Bag Rack (2 Sovs bags) | (768, 640) | 96x128 | "The bag is two Sovs." |
+| Bag Rack (2 SOVS bags) | (768, 640) | 96x128 | "The bag is two SOVS." |
 | Merch Gauntlet Corridor | (864, 640) | 160x128 | The exit path routes past everything for sale |
 
 ### Technical Notes:
@@ -159,13 +159,13 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### The Same Room:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| "VIP Lounge" Interior Base | (0, 0) | 512x256 | Identical layout to downstairs, 10 Sovs to enter |
+| "VIP Lounge" Interior Base | (0, 0) | 512x256 | Identical layout to downstairs, 10 SOVS to enter |
 | Slightly Nicer Chair 1-2 | (0, 256) / (64, 256) | 64x96 each | Marginally. Provably marginally. |
 | Identical Chair (downstairs, for comparison) | (128, 256) | 64x96 | Placed adjacent for direct A/B in one screenshot |
-| Different Carpet Tile | (192, 256) | 32x32 | The 10 Sovs justification |
-| Same Carpet Tile | (224, 256) | 32x32 | The 10 Sovs refutation |
+| Different Carpet Tile | (192, 256) | 32x32 | The 10 SOVS justification |
+| Same Carpet Tile | (224, 256) | 32x32 | The 10 SOVS refutation |
 | "VIP" Rope + Sign | (256, 256) | 96x96 | Velvet, green, unnecessary |
-| 10 Sovs Surcharge Placard | (352, 256) | 96x32 | Stated plainly, without shame |
+| 10 SOVS Surcharge Placard | (352, 256) | 96x32 | Stated plainly, without shame |
 | Upstairs Window | (448, 256) | 64x96 | Green-filtered view of the street below |
 | Lounge Table | (352, 288) | 96x64 | Same table. Different floor. |
 | Upstairs Speaker | (192, 288) | 64x64 | Same playlist, lower volume, that is the amenity |
@@ -178,7 +178,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Space Cake Victim Seat (marked) | (352, 352) | 96x96 | Corner spot, permanently occupied |
 | Ceiling Green Bulb Fixture | (448, 352) | 64x64 | Single bulb, single shade |
 | Wall Tag "Same Room, Higher Price" | (448, 416) | 64x32 | Scratched into the paint by a previous customer |
-| Rug (marginally nicer) | (256, 448) | 96x64 | The other 10 Sovs justification |
+| Rug (marginally nicer) | (256, 448) | 96x64 | The other 10 SOVS justification |
 | Upstairs Floor Grime Decal | (352, 448) | 96x64 | Undermining both justifications |
 | Ashtray (upstairs, branded) | (448, 448) | 64x64 | Identical to the downstairs ashtray |
 
@@ -199,32 +199,32 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | T-Shirt Wall Array (S–XXXL) | (0, 0) | 384x256 | "I GOT HIGH AT DE GROENE GIDS", every size |
-| T-Shirt (single, 35 Sovs) | (384, 0) | 96x128 | Inventory sprite; applies +Embarrassed when worn |
+| T-Shirt (single, 35 SOVS) | (384, 0) | 96x128 | Inventory sprite; applies +Embarrassed when worn |
 | T-Shirt (glow-in-dark variant) | (480, 0) | 96x128 | "Very popular for bachelor parties" |
-| Branded Grinder Display (45 Sovs) | (576, 0) | 128x128 | "Collector's item" |
-| Branded Grinder (item) | (704, 0) | 64x64 | Functions identically to a 5 Sovs grinder |
+| Branded Grinder Display (45 SOVS) | (576, 0) | 128x128 | "Collector's item" |
+| Branded Grinder (item) | (704, 0) | 64x64 | Functions identically to a 5 SOVS grinder |
 | Branded Rolling Papers | (768, 0) | 64x64 | Branded. Naturally. |
 | Branded Ashtray (item) | (832, 0) | 64x64 | Also branded |
-| Poster (20 Sovs) | (896, 0) | 64x128 | Hostel-room decorative, −Intelligence display |
+| Poster (20 SOVS) | (896, 0) | 64x128 | Hostel-room decorative, −Intelligence display |
 | Merch Display Shelf | (960, 0) | 64x128 | Wall unit segment |
 | Bong Display Case (jewelry-priced) | (704, 64) | 128x64 | Under glass, under spotlight |
 | Sizes Rack Tag Set | (384, 128) | 96x64 | "XXXL? Yes. Very popular." |
 | Group Discount Sign | (480, 128) | 96x64 | "Buy four shirts, get fifth half price!" |
-| Merch Price Tags | (576, 128) | 128x64 | 20 Sovs / 35 Sovs / 45 Sovs |
+| Merch Price Tags | (576, 128) | 128x64 | 20 SOVS / 35 SOVS / 45 SOVS |
 | Souvenir Keychain | (704, 128) | 64x64 | The cheapest exit purchase |
-| Branded Lighter | (768, 128) | 64x64 | 6 Sovs for a 1 Sov lighter |
-| Branded Bag (2 Sovs) | (832, 128) | 64x64 | The bag is two Sovs |
-| Sticker Sheet | (896, 128) | 128x64 | Free with purchase over 50 Sovs |
+| Branded Lighter | (768, 128) | 64x64 | 6 SOVS for a 1 SOV lighter |
+| Branded Bag (2 SOVS) | (832, 128) | 64x64 | The bag is two SOVS |
+| Sticker Sheet | (896, 128) | 128x64 | Free with purchase over 50 SOVS |
 
 ### Menu Items & Consumables (stylized):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Menu Item Card — "Shamsterdam Dream" | (0, 256) | 96x64 | 18 Sovs/g, Tourist Recommended, highest margin |
-| Menu Item Card — "Green Guide Special" | (96, 256) | 96x64 | 15 Sovs/g, House blend, mystery |
-| Menu Item Card — "Premium Heritage" | (192, 256) | 96x64 | 25 Sovs/g, upsell confirmed |
-| Space Cake (single piece) | (288, 256) | 64x64 | 8 Sovs, two-hour countdown trigger |
+| Menu Item Card — "Shamsterdam Dream" | (0, 256) | 96x64 | 18 SOVS/g, Tourist Recommended, highest margin |
+| Menu Item Card — "Green Guide Special" | (96, 256) | 96x64 | 15 SOVS/g, House blend, mystery |
+| Menu Item Card — "Premium Heritage" | (192, 256) | 96x64 | 25 SOVS/g, upsell confirmed |
+| Space Cake (single piece) | (288, 256) | 64x64 | 8 SOVS, two-hour countdown trigger |
 | Space Cake Display Tray | (352, 256) | 128x64 | Behind glass, under a handwritten "WAIT 2 HOURS" card |
-| Hash Block (1g, stylized) | (480, 256) | 64x64 | 12 Sovs, "For smoking. Not eating." |
+| Hash Block (1g, stylized) | (480, 256) | 64x64 | 12 SOVS, "For smoking. Not eating." |
 | Product Jar (stylized) 1-3 | (544, 256) / (608, 256) / (672, 256) | 64x64 each | Abstract counter jars; labels only |
 | Laminated Menu (handheld) | (736, 256) | 64x96 | Decision paralysis enabler |
 | Laminated Menu (open) | (800, 256) | 96x96 | Full spread, too many options |
@@ -239,11 +239,11 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Scale (digital) | (256, 320) | 64x64 | Accurate, unglamorous |
 | Passport (bro fumbling) | (320, 320) | 64x64 | ID check prop |
 | Passport Fumble Frames 1-3 | (384, 320) / (448, 320) / (512, 320) | 64x64 each | Time-based mini-game; failure is embarrassment only |
-| Receipt (63 Sovs total) | (576, 320) | 64x64 | Itemized, sobering |
-| Paper Bag (2 Sovs) | (640, 320) | 64x64 | Charged separately, mentioned casually |
+| Receipt (63 SOVS total) | (576, 320) | 64x64 | Itemized, sobering |
+| Paper Bag (2 SOVS) | (640, 320) | 64x64 | Charged separately, mentioned casually |
 | Rolling Tray | (704, 320) | 96x64 | Provided, branded |
-| Grinder (generic 5 Sovs, for comparison) | (800, 320) | 64x64 | Placed beside the 45 Sovs one in the merch UI |
-| ATM Receipt (5 Sovs fee) | (864, 320) | 64x64 | "We do not control the fee." |
+| Grinder (generic 5 SOVS, for comparison) | (800, 320) | 64x64 | Placed beside the 45 SOVS one in the merch UI |
+| ATM Receipt (5 SOVS fee) | (864, 320) | 64x64 | "We do not control the fee." |
 | ID Check Placard | (928, 320) | 96x64 | "18+ — ID REQUIRED" |
 
 ### Signage & Interior Décor:
@@ -254,7 +254,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Digital Menu Text Strip 1 | (320, 384) | 256x32 | Scrolling strain-name band |
 | Digital Menu Text Strip 2 | (320, 416) | 256x32 | Second scroll position |
 | Tourist Recommendation Highlight Bar | (576, 384) | 192x32 | Highlights the highest-margin items |
-| Price Column Strip | (576, 416) | 192x32 | 15 Sovs / 18 Sovs / 25 Sovs |
+| Price Column Strip | (576, 416) | 192x32 | 15 SOVS / 18 SOVS / 25 SOVS |
 | "FAMOUS SINCE 1985" Interior Plaque | (768, 384) | 128x64 | Repeated indoors, in case you missed it |
 | Fake Plant (item) | (896, 384) | 64x64 | Inventory/placement sprite |
 | Bob Marley Poster (item) | (960, 384) | 64x64 | Inventory/placement sprite |
@@ -270,7 +270,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### Technical Notes:
 - All product representations are abstract: labelled jars, menu cards, and stylized blocks. Nothing is rendered botanically at any zoom level.
 - Menu Text Strips are separate from the Menu Board sprites so the scroll can run at a different rate than the board's backlight pulse
-- The 45 Sovs branded grinder and the 5 Sovs generic grinder are drawn at matching scale and angle specifically so the price comparison UI can show them side by side
+- The 45 SOVS branded grinder and the 5 SOVS generic grinder are drawn at matching scale and angle specifically so the price comparison UI can show them side by side
 - The Employee Break Countdown Chalk is a discoverable detail — visible only from the counter interaction position
 
 ---
@@ -287,7 +287,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Bas Scripted Recommendation 1-3 | (128, 0) / (192, 0) / (256, 0) | 64x96 each | "Shamsterdam Dream. Very smooth. Very popular." |
 | Bas Sigh 1-2 | (320, 0) / (384, 0) | 64x96 each | The fifty-thousandth explanation |
 | Bas No-Tobacco Explanation 1-3 | (448, 0) / (512, 0) / (576, 0) | 64x96 each | Exhausted-teacher cadence, in three beats |
-| Bas Ringing Up | (640, 0) | 64x96 | "Your total is sixty-three Sovs." |
+| Bas Ringing Up | (640, 0) | 64x96 | "Your total is sixty-three SOVS." |
 | Bas Dead-Eyed Stare | (704, 0) | 64x96 | Held frame; the fan-art frame |
 | Merchandise Maven Marieke Idle 1-2 | (768, 0) / (832, 0) | 64x96 each | Same green polo, commission-based enthusiasm |
 | Marieke Upsell 1-2 | (896, 0) / (960, 0) | 64x96 each | Aggressive friendliness targeting groups |
@@ -361,11 +361,11 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Cash Only Prompt / ATM Redirect | (0, 128) | 192x96 | Card declined → machine is there |
-| ATM Fee Breakdown | (192, 128) | 192x96 | 50 Sovs minimum, 5 Sovs fee, branded machine |
+| ATM Fee Breakdown | (192, 128) | 192x96 | 50 SOVS minimum, 5 SOVS fee, branded machine |
 | ID Check Mini-Game Bar | (384, 128) | 128x96 | Passport fumble timing bar |
 | Strain Selection Menu UI | (0, 224) | 256x160 | Tourist Recommended / House / Premium |
-| Price Comparison Reveal | (256, 224) | 128x96 | 20 Sovs/g here vs. 10 Sovs/g elsewhere; unlocked by talking to a local |
-| Merch Purchase Confirmation | (384, 224) | 128x96 | Includes the 2 Sovs bag line |
+| Price Comparison Reveal | (256, 224) | 128x96 | 20 SOVS/g here vs. 10 SOVS/g elsewhere; unlocked by talking to a local |
+| Merch Purchase Confirmation | (384, 224) | 128x96 | Includes the 2 SOVS bag line |
 | Group Discount Calculator | (256, 320) | 256x64 | Four shirts, fifth half price, maths shown |
 
 ### Feedback & Progression:
@@ -376,9 +376,9 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Photography Warning Toast | (320, 384) | 192x64 | First warning; second means leaving |
 | "Regular" Status Progress (3 visits) | (0, 448) | 128x32 | Unlocks the Secret Menu |
 | Secret Menu Unlock Toast | (128, 448) | 192x32 | Same items, different names |
-| Purchase Total Plate | (320, 448) | 96x32 | "Your total is sixty-three Sovs." |
-| VIP Upstairs Surcharge Prompt | (416, 448) | 96x32 | 10 Sovs, with both chairs shown side by side |
-| Bag Prompt | (0, 480) | 192x32 | "The bag is two Sovs." |
+| Purchase Total Plate | (320, 448) | 96x32 | "Your total is sixty-three SOVS." |
+| VIP Upstairs Surcharge Prompt | (416, 448) | 96x32 | 10 SOVS, with both chairs shown side by side |
+| Bag Prompt | (0, 480) | 192x32 | "The bag is two SOVS." |
 | Time-of-Day Icon Set | (192, 480) | 128x32 | Morning Lull / Peak / Evening Rush / Last Call |
 | Quest / Vendor Marker Set | (320, 480) | 96x32 | Counter, merch wall, ATM markers |
 | Touch Zone Ring (44px min) | (416, 480) | 96x32 | QA overlay for interactive sizing |
@@ -414,7 +414,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### Feedback VFX:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Cash Register Ka-Ching Sparkle | (128, 352) | 64x64 | Emphasised on purchases over 50 Sovs |
+| Cash Register Ka-Ching Sparkle | (128, 352) | 64x64 | Emphasised on purchases over 50 SOVS |
 | Space Cake Hit Distortion Ring 1-3 | (192, 352) / (256, 352) / (320, 352) | 64x64 each | The 120-minute moment, in three expanding rings |
 | Slow-Blink Vignette | (384, 352) | 128x64 | Victim-state screen edge softening |
 | Floor-Moving Warp Vignette Corner | (0, 416) | 64x64 | Mirrored 4x at runtime; "WHY IS THE FLOOR MOVING" |
@@ -505,7 +505,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### Passport Fumble ID Check (Sheets 4, 6):
 - **Duration:** 4.0 second window (3 frames cycling at 1.5 FPS against a timing bar)
 - **Frames:** 3 + timing bar
-- **Pattern:** Fumble loop while the player taps to align; failure loops twice more and resolves anyway
+- **Pattern:** Fumble loop while the player clicks to align; failure loops twice more and resolves anyway
 - **Trigger:** Door entry, every visit until Regular status
 - **Purpose:** "Bros fumble with passports for comedic effect" — failure costs nothing but dignity
 - **Audio Sync:** Zip, paper shuffle, and a Bouncer "ID." on the second failure
@@ -543,7 +543,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### Visual Audio Cues:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Cash Register | Sheet 7, (0, 480) | 32x32 | Ka-ching glyph, emphasised on purchases over 50 Sovs |
+| Cash Register | Sheet 7, (0, 480) | 32x32 | Ka-ching glyph, emphasised on purchases over 50 SOVS |
 | Lighter Flick | Sheet 7, (32, 480) | 32x32 | Ambient room-activity indicator |
 | Menu Board Scroll | Sheet 7, (64, 480) | 32x32 | Digital tick mirror |
 | Ventilation Hum | Sheet 7, (96, 480) | 32x32 | Constant-presence indicator for the overworked extractor |
@@ -558,7 +558,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - The green-tint reduction toggle is offered explicitly because this location's entire palette sits in one hue band
 - Space Cake Timer shows numerals and a segmented bar, never a colour-shifting fill
 - Price Comparison Reveal uses numerals and bar length, not red/green framing
-- Touch zones minimum 44px for the counter, menu board, ATM, merch wall, stairs, and every purchase button
+- Click zones minimum 44px for the counter, menu board, ATM, merch wall, stairs, and every purchase button
 
 ---
 
@@ -612,7 +612,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | Neon flicker frames | Transformer tick over a neon buzz bed | On each flicker frame |
 | Digital menu frame change | Faint digital scroll tick | On frame display |
 | Bas No-Tobacco beats 1-3 | Flat-monotone VO, exhale before beat 1 | Per frame |
-| Cash Register Ka-Ching | Register chime, emphasised over 50 Sovs | On transaction resolve |
+| Cash Register Ka-Ching | Register chime, emphasised over 50 SOVS | On transaction resolve |
 | Space Cake ring 1 | Sound design begins distorting | On frame display |
 | Space Cake ring 3 | Music bed pitch-bends 4% down and holds | On frame display |
 | Passport Fumble second failure | Bouncer "ID." | On loop restart |
@@ -673,7 +673,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### Screenshot-Worthy Moments:
 1. **The 3.1-Star Certificate** - Framed, lit, displayed with pride
 2. **Bas's Dead-Eyed Stare** - Held frame, green polo, fifty thousand explanations deep
-3. **The VIP Chair Comparison** - Both chairs side by side in the 10 Sovs surcharge prompt
+3. **The VIP Chair Comparison** - Both chairs side by side in the 10 SOVS surcharge prompt
 4. **The Space Cake Victim's Slow Blink** - Caught mid-close, upstairs, always
 5. **"OH."** - The bros trio at the 120-minute mark
 6. **The Merch Gauntlet** - The exit corridor, shot from the door, with the price tags legible
@@ -683,7 +683,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - "Yes, it's expensive. We are famous. Famous things cost money. This is how famous works."
 - "Space cake takes two hours. Yes, I know you feel nothing. Two. Hours."
 - "Your friend is asking if he can 'try a sample.' We do not do samples. This is not Costco."
-- "Your total is sixty-three Sovs. Would you like a bag. The bag is two Sovs."
+- "Your total is sixty-three SOVS. Would you like a bag. The bag is two SOVS."
 - "No, a picture of your ID is not ID."
 - "It. Is. Working. Wait."
 - "Matching shirts. Eleven guys. Bachelor party." *resigned sigh*
@@ -750,7 +750,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 - [ ] Satirical theme is clear throughout all assets (brand tourism, tourist-trap pricing and American etiquette failures — never cannabis users or Dutch coffeeshop culture)
 - [ ] Hidden areas/interactions have discoverable visual cues (Employee Break Countdown Chalk, "Same Room, Higher Price" wall tag, souvenir shops cheaper on both sides, Secret Menu at 3 visits)
 - [ ] Performance optimized (three haze density plates, separate floor scenes, shared atlases, CPU particles only)
-- [ ] Touch zone sizing considered (44px minimum on counter, menu board, ATM, merch wall, stairs, purchase buttons)
+- [ ] Click zone sizing considered (44px minimum on counter, menu board, ATM, merch wall, stairs, purchase buttons)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (menu tier hatching, status silhouettes, and an explicit green-tint reduction toggle for a single-hue location)
 - [ ] Social media viral potential maximized in composition choices (certificate framing, VIP chair A/B, merch gauntlet from the door, "OH." staging)
 
@@ -763,7 +763,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | World Consistency (no real city names) | ✅ | All in-world signage reads "Shamsterdam"; the profile's Amsterdam references are design commentary, never asset text |
 | Cultural Specificity | ✅ | Dutch coffeeshop regulations (no tobacco, ID checks, 1 AM close), Coffeeshop Quarter geography, locals-avoid-this economics |
 | Satirical Targets Appropriate | ✅ | Punches at brand-worship tourism, tourist-trap pricing and American etiquette failures; Bas, Marieke, the Bouncer and Dutch coffeeshop culture itself are treated as competent and correct |
-| Seedy Underbelly Present | ✅ | 20 Sovs/g against a 10 Sovs/g going rate, 5 Sovs branded ATM fee on a forced 50 Sovs withdrawal, 45 Sovs grinders, 2 Sovs bags, merchandise margins beating menu margins, an exit corridor built as a funnel |
+| Seedy Underbelly Present | ✅ | 20 SOVS/g against a 10 SOVS/g going rate, 5 SOVS branded ATM fee on a forced 50 SOVS withdrawal, 45 SOVS grinders, 2 SOVS bags, merchandise margins beating menu margins, an exit corridor built as a funnel |
 | Gameplay Value Established | ✅ | Consumables, two-hour space cake system, Tourist Trapped and Contact High status effects, cash-only ATM loop, passport mini-game, merch upsell, Regular/Secret Menu progression |
 | Technical Feasibility | ✅ | Separate floor scenes, three-plate haze LOD, non-baked green tint, global timer service, shared atlases all documented |
 | Performance Budget | ✅ | 60 FPS, 16 draw calls, 40 MB per profile budget |

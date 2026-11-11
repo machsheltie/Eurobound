@@ -16,7 +16,7 @@
 - **Time Restrictions**: 4 PM - 6 AM (dinner through desperate hours)
 - **Peak Hours**: Midnight - 4 AM (when kapsalon calls loudest)
 - **Stat Requirements**: None (hunger and questionable decisions welcome)
-- **Item Requirements**: SOVS for purchases (8-15 Sovs), cardiovascular optimism
+- **Item Requirements**: SOVS for purchases (8-15 SOVS), cardiovascular optimism
 - **Previous Location Requirements**: None (the kapsalon welcomes all)
 - **Special Conditions**: Seating available here (unlike Leeman's), but barely
 
@@ -154,13 +154,13 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effects | The Reality |
 |------|-------|-----------|----------------|-------------|
-| Kapsalon (Regular) | 10 Sovs | +35 HP | Cheese Sweats | "Large enough for most" |
-| Kapsalon (Large) | 14 Sovs | +50 HP | Cheese Sweats, Food Coma Risk | "For the committed" |
-| Kapsalon "King Size" | 18 Sovs | +70 HP | Cheese Sweats, Food Coma Guaranteed | "Wall of Fame eligible" |
-| Extra Cheese | +2 Sovs | +10 HP | Extended Cheese Sweats | "More blanket" |
-| Extra Sambal | +1 Sov | +5 HP, -5 HP delayed | Fire Addition | "Port City hot" |
-| Both Sauces | +1 Sov | +5 HP | Wim Respect | "You understand" |
-| Drink (Cola) | 3 Sovs | +5 HP | None | "For the cheese" |
+| Kapsalon (Regular) | 10 SOVS | +35 HP | Cheese Sweats | "Large enough for most" |
+| Kapsalon (Large) | 14 SOVS | +50 HP | Cheese Sweats, Food Coma Risk | "For the committed" |
+| Kapsalon "King Size" | 18 SOVS | +70 HP | Cheese Sweats, Food Coma Guaranteed | "Wall of Fame eligible" |
+| Extra Cheese | +2 SOVS | +10 HP | Extended Cheese Sweats | "More blanket" |
+| Extra Sambal | +1 SOV | +5 HP, -5 HP delayed | Fire Addition | "Port City hot" |
+| Both Sauces | +1 SOV | +5 HP | Wim Respect | "You understand" |
+| Drink (Cola) | 3 SOVS | +5 HP | None | "For the cheese" |
 | Replacement Fork | Free | None | None | "You'll need it" |
 
 ### The "Full Kapsalon Experience" (Large with Both Sauces)

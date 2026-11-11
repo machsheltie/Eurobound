@@ -11,7 +11,7 @@
 | **ABV** | 5.2% [source: design/items/brewery_passport_book.md L201] |
 | **Effects** | +35 HP, +10 SP [source: design/items/brewery_passport_book.md L202]; "Comfortable Trap" — +10% Bravado retention (1 hour) [source: design/items/brewery_passport_book.md L203] |
 | **Risk** | 5% "Contentment" (reduced urgency) [source: design/items/brewery_passport_book.md L204] |
-| **Price** | 8 Sovs — within the 8–15 Sovs guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book.md L205] |
+| **Price** | 8 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book.md L205] |
 | **Special** | ⚠ AUTHOR-REVIEW: Order a second Sweet Surrender before finishing the first, and the second pours free — "infinite refills" made literal, one surrender at a time. |
 
 ## Flavor Text

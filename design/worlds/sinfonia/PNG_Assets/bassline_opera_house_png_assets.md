@@ -3,7 +3,7 @@
 *Artist Reference Document for Sinfonia's Crown Jewel*
 
 ## 📋 Overview
-The Bassline Opera House is a 400-year-old baroque masterpiece that transforms into an EDM venue at night — Sinfonia's crown jewel, where four centuries of cultural excellence meet one horse in a cape, one method-acting bird-man, and 2,000 Sovs in Magic Flute production costs. This document specifies every sprite sheet the location needs across its six zones: grand lobby, auditorium, backstage, dressing rooms, orchestra pit boss arena, and **the divas' apartment above the house** (Saturday-only couchsurf interior).
+The Bassline Opera House is a 400-year-old baroque masterpiece that transforms into an EDM venue at night — Sinfonia's crown jewel, where four centuries of cultural excellence meet one horse in a cape, one method-acting bird-man, and 2,000 SOVS in Magic Flute production costs. This document specifies every sprite sheet the location needs across its six zones: grand lobby, auditorium, backstage, dressing rooms, orchestra pit boss arena, and **the divas' apartment above the house** (Saturday-only couchsurf interior).
 
 **Location ID:** `sinfonia_bassline_opera_house_01`
 **Theme:** Cultural institution pretension — opera snobbery and artistic exploitation, with a dual identity (traditional opera by day, underground Bassline EDM by night)
@@ -307,7 +307,7 @@ assets/sprites/locations/sinfonia/bassline_opera_house/
 
 ### UI Components
 - **Damage Counter Frame**: Ornate gold frame (128×48)
-- **Sovs Wordmark**: The word `SOVS` lettered in the house's gold display face (96×32) — **the symbol is the word; there is no Sov glyph.** ⚠️ Cell widened from 32×32 to 96×32: four legible characters do not fit in 32px. Atlas key is `sovs_symbol`.
+- **SOVS Wordmark**: The word `SOVS` lettered in the house's gold display face (96×32) — **the symbol is the word; there is no SOV glyph.** ⚠️ Cell widened from 32×32 to 96×32: four legible characters do not fit in 32px. Atlas key is `sovs_symbol`.
 - **Debt Indicator**: "OUTSTANDING" bar (100×32)
 - **Choice Panel**: Dialogue choice frame, baroque style (200×80)
 - **Papageno Icon**: For ally indicator (48×48)
@@ -345,7 +345,7 @@ assets/sprites/locations/sinfonia/bassline_opera_house/
 | Walk B | (0, 256) | 96x128 | Second walk frame |
 | Greeting Sweep | (96, 256) | 96x128 | "I have performed for KINGS! For EMPERORS!" — arms out |
 | Invitation Beckon | (192, 256) | 96x128 | The backstage invitation upstairs; one flight of stairs, no ceremony |
-| Signed Programme Handoff | (288, 256) | 96x128 | 10 Sovs; she signs both names and the examine text carries the second signature |
+| Signed Programme Handoff | (288, 256) | 96x128 | 10 SOVS; she signs both names and the examine text carries the second signature |
 
 ### Character Notes
 - Every gesture is **blocked** — she is playing to a house even in a corridor. No frame should read as casual except the Backstage Turn.
@@ -393,7 +393,7 @@ assets/sprites/locations/sinfonia/bassline_opera_house/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Marquee Approach / Lobby In Costume | (0, 480) | 128x160 | Post-curtain lobby hold, standing where the chandelier light is best (deliberately) |
-| Backstage Pass Handoff | (128, 480) | 128x160 | Free, if she likes you; 60 Sovs at the box office |
+| Backstage Pass Handoff | (128, 480) | 128x160 | Free, if she likes you; 60 SOVS at the box office |
 | Nightcap Pour | (256, 480) | 128x160 | Apartment, ~01:40. Pouring at volume, tray on the sideboard behind her. **No lingering framing on the tray.** |
 | Prost Count — Glass Raised | (384, 480) | 128x160 | "Drei — zwei — eins — PROST!" Joyous. Best part of her week and it must look like it. |
 
@@ -557,7 +557,7 @@ assets/sprites/locations/sinfonia/bassline_opera_house/
 ### The Morning After (Row 1)
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Table Slide — 80 Sovs Invoice | (0, 64) | 48x64 | Slides the sheet across **without looking up.** No negotiation, no Charm check. |
+| Table Slide — 80 SOVS Invoice | (0, 64) | 48x64 | Slides the sheet across **without looking up.** No negotiation, no Charm check. |
 | Page Turn | (48, 64) | 48x64 | "The kind that happened." Dry and unbothered, never sinister. |
 | The Eyebrow, Off-Stage A | (96, 64) | 48x64 | Same two millimetres, no makeup |
 | The Eyebrow, Off-Stage B | (144, 64) | 48x64 | Frame B |
@@ -581,7 +581,7 @@ assets/sprites/locations/sinfonia/bassline_opera_house/
 | Coffee Pour | (48, 192) | 48x64 | For herself; the guests get Wolfram's pot |
 | Corset Off, Gown On | (96, 192) | 48x64 | **The transitional frame** — pairs with Sheet 15's Corset Removal Hall A/B to complete the change on screen with no dialogue |
 | Glasses Removed | (144, 192) | 48x64 | End of paperwork |
-| **Decline-Branch Idle** | (192, 192) | 48x64 | **Nightcap declined.** Same room, same gown, no makeup on anybody, **coffee table intact so no 80 Sovs invoice frame fires.** Fully supported branch. |
+| **Decline-Branch Idle** | (192, 192) | 48x64 | **Nightcap declined.** Same room, same gown, no makeup on anybody, **coffee table intact so no 80 SOVS invoice frame fires.** Fully supported branch. |
 | *(reserved)* | (240, 192) | 48x64 | Held for the eleven-minute horse account, if it gets its own seated pose |
 
 ---
@@ -650,7 +650,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | Chaise Longue — Three Bros Draped | (128, 96) | 128x96 | Morning-after composite; individually, badly |
 | Kitchen Table + Two Chairs | (256, 96) | 128x96 | The crossword table |
 | Sideboard — Lacquered | (384, 96) | 128x96 | Where the tray is made |
-| Coffee Table — Intact | (512, 96) | 96x64 | 80 Sovs |
+| Coffee Table — Intact | (512, 96) | 96x64 | 80 SOVS |
 | Coffee Table — Destroyed | (608, 96) | 96x64 | Post-lift. Comedic wreckage, not violent wreckage. |
 | Armchair — The Good Chair | (704, 96) | 64x96 | Fortissima's |
 | Armchair — The Other Good Chair | (768, 96) | 64x96 | Adelheid's |
@@ -728,7 +728,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | Crossword — 1997, Kept | (512, 384) | 32x32 | Third examine; kept because of a particular clue |
 | Pen | (512, 416) | 32x32 | Ink |
 | Invoice Stack | (544, 384) | 64x64 | The three-invoice warmth track |
-| Invoice — The 80 Sovs Coffee Table | (608, 384) | 64x32 | Single sheet, itemised, correct |
+| Invoice — The 80 SOVS Coffee Table | (608, 384) | 64x32 | Single sheet, itemised, correct |
 | Invoice — Slid Across Table | (608, 416) | 64x32 | In-motion frame |
 | Bread Basket | (672, 384) | 64x64 | "Eat the bread." |
 | Coffee Pot & Three Cups | (736, 384) | 96x64 | None of the cups match |
@@ -755,7 +755,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | Bro Face — Paint Half-Removed | (832, 448) | 96x96 | Mid-cleanup; "Full Face" status wearing off |
 | Bro Face — No Paint | (928, 448) | 96x96 | **Decline branch.** Ordinary hangover face. |
 | Coffee Table Debris Field | (0, 512) | 96x64 | Comedic, not violent |
-| Splinter Scatter | (96, 512) | 64x64 | 80 Sovs worth |
+| Splinter Scatter | (96, 512) | 64x64 | 80 SOVS worth |
 | Chaise — Cushion Displaced | (160, 512) | 128x64 | Post-lift |
 | Rug — Rucked | (288, 512) | 96x64 | The landing was, apparently, stuck |
 | Bucket — In Use | (384, 512) | 32x64 | Grateful for it and for her |
@@ -821,7 +821,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Frames:** 3 backdrop states + 4-frame rip effect overlay
 - **Pattern:** Pristine → cape catching → torn (state advance, no loop)
 - **Trigger:** Gustav's cape snag scripted event
-- **Purpose:** The 400 Sovs, eight-months-of-work destruction centerpiece
+- **Purpose:** The 400 SOVS, eight-months-of-work destruction centerpiece
 - **Audio Sync:** Long fabric-rip sound synced to the diagonal tear; damage popup ching on completion
 - **Performance Optimization:** None needed (scripted one-shot)
 
@@ -832,7 +832,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - **Trigger:** Boss AI state machine, tempo-synced to battle music
 - **Purpose:** Classical elegance → modern swagger → desperate fusion, each phase a tonal shift
 - **Audio Sync:** All attacks beat-matched; Phase 2 bass attack lands exactly on the drop
-- **Performance Optimization:** Phase 3 strobe replaced by slow color fade on low-end devices
+- **Performance Optimization:** Phase 3 strobe replaced by slow color fade on min-spec hardware
 
 ### Papageno Performing / Feather Bounce:
 - **Duration:** ~1 second loop (6 frames at 4-8 FPS)
@@ -936,7 +936,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - Boss phase changes are signaled by costume state (tails / headphones / open shirt), never lighting color alone
 - Status icons (Cultured Presence, Artistic Guilt, Star Quality, Full Face) use distinct silhouettes, not just tint
 - The "Full Face" cosmetic is signalled by **facial paint pattern**, not hue shift, so it reads on every colour profile
-- Touch zones minimum 44px for box office, gift shop, apartment examinables, and dialogue choice panels
+- Click zones minimum 44px for box office, gift shop, apartment examinables, and dialogue choice panels
 
 ---
 
@@ -1005,15 +1005,15 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | Nightcap prost | "Drei — zwei — eins — PROST!" + glass clink | On the raised-glass frame |
 | Nightcap fade to black | Music continues under, unaltered, and fades with the picture | **No stinger on the cut.** |
 | Morning page turn | Paper, cup on saucer | On each morning-after dialogue advance |
-| 80 Sovs invoice slide | Single sheet on wood | On the table-slide frame |
+| 80 SOVS invoice slide | Single sheet on wood | On the table-slide frame |
 
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Fiaker Fiasco phase 3 | Backstage tileset damage states, destructible props, backdrop states, Hoffmann/Otto/Adelheid/Papageno sets | Gustav auto-enters via alley; 2,000 Sovs backstage damage tracked to `fiaker_fiasco_damage_sov` |
+| Fiaker Fiasco phase 3 | Backstage tileset damage states, destructible props, backdrop states, Hoffmann/Otto/Adelheid/Papageno sets | Gustav auto-enters via alley; 2,000 SOVS backstage damage tracked to `fiaker_fiasco_damage_sov` |
 | Maestro boss fight (main quest) | Boss sheet all phases, arena lighting states | Orchestra pit, Bassline configuration, 23:00–04:00 |
 | Waltz of the Bros | Auditorium configuration, patron NPCs | Rival rhythm-battle encounter |
-| Prima donna negotiation | Adelheid outrage/dismissive sets, torn costume variant | 500 Sovs demand, negotiable to 200 Sovs at Charm 4 |
+| Prima donna negotiation | Adelheid outrage/dismissive sets, torn costume variant | 500 SOVS demand, negotiable to 200 SOVS at Charm 4 |
 | **DIE, FLEDERMAUS! (Saturdays)** | Sheets 13, 14, 15; marquee dressing; auditorium performance configuration; ovation crowd layer | Saturday 19:00–22:00; curtain call fires the wig-removal sequence; backstage passes gate the wings |
 | **"The Ladies of the House" couchsurf** (`sinfonia_couchsurf_opera_divas_01`) | Sheets 13–18 in full; apartment lighting overlays; Nightcap prop set; morning-after prop set **and its complete decline-branch counterpart set** | Saturday 01:30+, backstage passes required. Quest doc: `Design/Quests/Location Specific/Sinfonia/couchsurfingchroniclessinfonia.md` |
 | Fortissima compliment-grading / hint trade | Sheet 13 Compliment Graded frame (the fan closes) | Prop-room hints and the Backstage Labyrinth shortcut |
@@ -1042,7 +1042,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 ### Environmental Storytelling:
 - The hidden lobby panel and prop-corridor door: the institution's respectable face conceals the gambling den behind it
 - Backstage chaos (coffee area, sewing stations, damaged racks) shows the unglamorous labor propping up the gilded front
-- The torn starry backdrop remains visibly repaired post-quest — the 2,000 Sovs never quite disappears
+- The torn starry backdrop remains visibly repaired post-quest — the 2,000 SOVS never quite disappears
 - **The marquee is the location's largest piece of environmental storytelling.** "DIE, FLEDERMAUS! — *A Night of Grand Opera, Performed Entirely by the Ladies of the House*", four feet high, on Saturdays, with the party walking under it. It is never framed, highlighted, or lingered on. It is simply legible.
 - **The two brass door plates** — W. KRANZLER on Room 1, L. BRANDTNER on Room 2, each with a taped or framed card underneath giving the stage name — are ordinary props at ordinary size, rendered so the player can read them and the bros can lean on them
 - **The apartment is a home, not a set.** Eleven framed season posters, a damp stain nobody has dealt with since 1997, mismatched coffee cups, and two full professional makeup stations, all present at full clarity and none of them highlighted
@@ -1090,7 +1090,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 
 ### Screenshot-Worthy Moments:
 1. **Gustav on stage** during "Der Hölle Rache"—horse interrupting opera
-2. **Damage counter hitting 2,000 Sovs**—with destruction visible
+2. **Damage counter hitting 2,000 SOVS**—with destruction visible
 3. **Director's breakdown**—sitting on floor, thousand-yard stare
 4. **Papageno befriending Gustav**—bird-man and horse bonding
 5. **Otto sipping coffee**—completely unfazed during chaos
@@ -1100,7 +1100,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 9. **The morning after**—three men in full professional stage makeup on a chaise longue, and a 58-year-old in a cardigan doing the crossword behind them
 10. **The pillow**—a complete, well-applied stage face printed on white linen, in the morning light shaft
 11. **The hall**—four pairs of size 47 heels, with Bradley in frame, deciding not to
-12. **The 80 Sovs invoice** sliding across the table, in focus, three ruined men out of focus behind it
+12. **The 80 SOVS invoice** sliding across the table, in focus, three ruined men out of focus behind it
 
 ### Quote Potential:
 - "I studied at the Conservatory..." - Regisseur Hoffmann (breakdown pose)
@@ -1216,7 +1216,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 - [ ] Hidden panel / prop corridor have discoverable visual cues
 - [ ] Apartment stair entrance (shared with Otto's smoke-break door) has a discoverable visual cue
 - [ ] Performance optimized (CPU particles, atlas limits respected, apartment atlases stream and unload)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements, including all apartment examinables)
+- [ ] Click zone sizing considered (44px minimum for interactive elements, including all apartment examinables)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 
@@ -1240,4 +1240,4 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | **Stage/Off-Stage Legibility** | ✅ | Carried by cell geometry (128×160 → 96×128 → 48×64) and palette, verified by a required side-by-side contact sheet, **with no dialogue involved** |
 | **`madame_fortissima.png` Reconciled** | ✅ | Previously specified in `bassline_opera_house.md` and absent here; now Sheet 13 at 384×384 with 96×128 cells, with the summary/document divergence documented and this document declared authoritative |
 
-**The Bassline Opera House: Where 400 years of cultural excellence meets one horse in a cape, one method-acting bird-man, 2,000 Sovs in Magic Flute production costs, and three Americans who read the marquee out loud and understood none of it.**
+**The Bassline Opera House: Where 400 years of cultural excellence meets one horse in a cape, one method-acting bird-man, 2,000 SOVS in Magic Flute production costs, and three Americans who read the marquee out loud and understood none of it.**

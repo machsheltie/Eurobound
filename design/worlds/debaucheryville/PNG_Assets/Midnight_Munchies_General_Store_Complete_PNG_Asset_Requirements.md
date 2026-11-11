@@ -316,7 +316,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 - Heat lamp quality indicators pair color with distinct shapes: check (fresh), triangle warning (questionable), skull (disaster)
 - Desperation Tax notice uses text + icon, never color alone
 - Shop section markers use text labels, not color coding
-- Touch zones minimum 44px for product browser, register, and door interactions
+- Click zones minimum 44px for product browser, register, and door interactions
 
 ---
 
@@ -349,7 +349,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 - **Particle Limit:** 10 (dust motes + heat lamp steam)
 
 ### Performance Notes:
-- Simplified lighting and static heat lamp on low-end devices (per location profile)
+- Simplified lighting and static heat lamp on min-spec hardware (per location profile)
 - Customer NPCs rotate on a schedule rather than simultaneous rendering (max 2 on screen)
 - Item sprites drawn only inside shop browser UI, not in world scene
 
@@ -471,7 +471,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 6. **Regular Status Badge** - Věra knows your face
 
 ### Quote Potential:
-- "That's 12 Sovs. ...16 Sovs after 2 AM. You knew this."
+- "That's 12 SOVS. ...16 SOVS after 2 AM. You knew this."
 - "You could have bought this cheaper earlier. But here we are."
 - "The price includes the lesson: plan ahead next time."
 - "Prices went up at 2. You know this. Everyone knows this."
@@ -496,7 +496,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 - [ ] Desperation pricing satire is clear throughout (honest signage, tax alerts)
 - [ ] Four shop sections are visually distinct and navigable
 - [ ] Performance optimized (static heat lamp fallback, simplified lighting)
-- [ ] Touch zone sizing considered (44px minimum for shop browser and interactions)
+- [ ] Click zone sizing considered (44px minimum for shop browser and interactions)
 - [ ] Colorblind-friendly alternatives for all quality/status indicators
 - [ ] Social media viral potential maximized (Věra portrait, Desperation Tax alert compositions)
 
@@ -512,7 +512,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 | Seedy Underbelly | ✅ PASS |
 | Gameplay Value | ✅ PASS |
 | Technical Feasibility | ✅ PASS |
-| Mobile Performance | ✅ PASS (60 FPS, 12 draws, 30MB) |
+| Desktop Performance | ✅ PASS (60 FPS, 12 draws, 30MB) |
 | Accessibility | ✅ PASS |
 | Social Media | ✅ PASS |
 | No Crypto Elements | ✅ PASS |

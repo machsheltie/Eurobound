@@ -88,7 +88,7 @@ The ceremony rows are a more formal register: standing, both hands on the tap ha
 | Genuinely offended by "theme" | The word detonates him. Not anger — hurt, at volume, followed by an assertion of birthright. It happens the same way every time and the staff brace for it. |
 | Actually an excellent brewer | This is the load-bearing trait. The beer is good. The stats say so. Strip away every royal trapping and he is still the best brewer in Imperial Square. |
 | Delighted by participation | Anyone who plays along properly gets real, unguarded, enormous joy out of him. Chadwick's dramatic kneeling makes his entire week. |
-| Generous with the realm | Knights everyone. Refuses nobody. There is no wealth gate, no dress gate, no accent gate — 4 Sovs for The Commoner and a straight face gets you the same ceremony as anyone. |
+| Generous with the realm | Knights everyone. Refuses nobody. There is no wealth gate, no dress gate, no accent gate — 4 SOVS for The Commoner and a straight face gets you the same ceremony as anyone. |
 
 ### Internal Monologue
 
@@ -220,7 +220,7 @@ Underneath that, quieter: he is the one cousin who never left. The others come a
 ### Callback Dialogue (Return Visits)
 
 *Late game, all three knighted, entering together:*
-> "The Knights of the Cask! And they have brought their livers! Cousins — THREE Heir Apparents, and the crown glasses, and do NOT charge them the three Sovs. Charge them the three Sovs. It is tradition."
+> "The Knights of the Cask! And they have brought their livers! Cousins — THREE Heir Apparents, and the crown glasses, and do NOT charge them the three SOVS. Charge them the three SOVS. It is tradition."
 
 *Late game, after three or more completed ceremonies (achievement "Return of the Knight"):*
 > "Again? A fourth time?" *(genuinely moved, and covering it badly)* "...There are men in this city whose grandfathers drank here who have never once knelt. Come. The cellar. I will show you barrel nine."
@@ -254,23 +254,23 @@ Underneath that, quieter: he is the one cousin who never left. The others come a
 ### Signature Beer
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| **Heir Apparent Ale** | 10 Sovs (+3 Sovs for the crown-shaped glass, which you keep) | Genuinely worth it; Belgian-style golden ale, 6.5%, noble hop character, golden crown colour, intentional | +30 HP, +15 SP; **"Noble Blood"** — +2 Charm, +2 Style for 45 minutes. Unlocked by completing the Coronation Ceremony. |
+| **Heir Apparent Ale** | 10 SOVS (+3 SOVS for the crown-shaped glass, which you keep) | Genuinely worth it; Belgian-style golden ale, 6.5%, noble hop character, golden crown colour, intentional | +30 HP, +15 SP; **"Noble Blood"** — +2 Charm, +2 Style for 45 minutes. Unlocked by completing the Coronation Ceremony. |
 
 *Flavour text, canon:* "Brewed with hops that can trace their lineage back seven generations. The yeast is merely five generations, but we don't discuss that."
 
 ### Menu Beers
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| The Commoner | 4 Sovs | Fair, and unpretentiously good | +10 HP. Served with an apologetic explanation of the name, every time, from whichever cousin is on. |
-| Duke's Dark | 7 Sovs | Fair | +20 HP. Served with a slight bow. |
-| Princess Pilsner | 5 Sovs | Fair | +15 HP. Served with a curtsey. |
-| The Usurper (guest beer) | 6 Sovs | Fair; the cousins think it is the best thing in the building | +15 HP, +5 SP. Served in hushed tones. |
-| King's Reserve | 15 Sovs | Steep, and he will not discount it | +40 HP, +20 SP. Served with full ceremony — the whole apparatus, for one beer, for anyone who buys one. |
+| The Commoner | 4 SOVS | Fair, and unpretentiously good | +10 HP. Served with an apologetic explanation of the name, every time, from whichever cousin is on. |
+| Duke's Dark | 7 SOVS | Fair | +20 HP. Served with a slight bow. |
+| Princess Pilsner | 5 SOVS | Fair | +15 HP. Served with a curtsey. |
+| The Usurper (guest beer) | 6 SOVS | Fair; the cousins think it is the best thing in the building | +15 HP, +5 SP. Served in hushed tones. |
+| King's Reserve | 15 SOVS | Steep, and he will not discount it | +40 HP, +20 SP. Served with full ceremony — the whole apparatus, for one beer, for anyone who buys one. |
 
 ### Merchandise & Stamp
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| **Crown & Cask Bottle Opener** | **Free with the Coronation Ceremony, or 20 Sovs** | About 6 Sovs of gold-tone metal and a purple velvet pouch | Miniature Habsburg-style crown with the opener as the base/rim; inscribed **"By Royal Appointment"**; ships with a **Certificate of Nobility** (tiny scroll). Brewery Tour collectible. |
+| **Crown & Cask Bottle Opener** | **Free with the Coronation Ceremony, or 20 SOVS** | About 6 SOVS of gold-tone metal and a purple velvet pouch | Miniature Habsburg-style crown with the opener as the base/rim; inscribed **"By Royal Appointment"**; ships with a **Certificate of Nobility** (tiny scroll). Brewery Tour collectible. |
 | **The Stamp** | Free with the ceremony | Priceless to him | Ornate crown atop a beer barrel; royal purple ink with gold leaf flecks; inscription **"Duly Knighted"**. **Requires the Sinfonia Bottle Opener to receive** — no opener, no stamp, no exceptions, and he will not be argued with. Brewery Tour stamp location #3. |
 | Brewery tour (Royal Cellar) | Free | Genuinely informative | Runs on the hour; ends at the crown jewels; he conducts it himself and it is the only time he explains anything quietly |
 
@@ -372,7 +372,7 @@ The single exception, and the only crack in thirty years: the fourth-ceremony li
 ### Primary Quest (If Applicable)
 - **Quest**: "The Full Coronation" — complete the ceremony with all three "best" answers; plus "Collect the Bloodline" (try all five menu beers) and the hidden "The Usurper" (sit on the throne without permission)
 - **Role**: Ceremony conductor, stamp authority, brewery tour host, and the sole gate on Sinfonia Brewery Tour stamp #3
-- **Trigger**: Purchase any Crown & Cask beer and approach the throne. There is no other prerequisite, no dress code, and no minimum spend — 4 Sovs and a straight face is enough.
+- **Trigger**: Purchase any Crown & Cask beer and approach the throne. There is no other prerequisite, no dress code, and no minimum spend — 4 SOVS and a straight face is enough.
 - **Outcome**: Stamp, "Knighted" title, Heir Apparent Ale unlocked for purchase, "Noble Blood" buff available, and the Crown & Cask Bottle Opener free. Perfect performance additionally unlocks the achievement "Full Honors."
 
 ### Quest Gate Function (If Applicable)
@@ -387,9 +387,9 @@ He gates **nothing else**. The Great Hall, the courtyard, the cellar tour, and a
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Crown & Cask stamp (crown atop a barrel, "Duly Knighted") | Ceremony completion | Yes | Brewery Tour stamp #3 of Sinfonia; royal purple ink with gold leaf flecks |
-| Crown & Cask Bottle Opener | Free with ceremony, or 20 Sovs | Yes | "By Royal Appointment"; gold-tone crown design, purple velvet pouch; Brewery Tour collectible |
+| Crown & Cask Bottle Opener | Free with ceremony, or 20 SOVS | Yes | "By Royal Appointment"; gold-tone crown design, purple velvet pouch; Brewery Tour collectible |
 | Certificate of Nobility (tiny scroll) | With the bottle opener | Yes | Keepable, worthless, examinable; his signature and a wax seal he applies himself |
-| Crown-shaped glass | +3 Sovs with any Heir Apparent Ale | Yes | Keepable drinkware; he insists on charging the three Sovs and calls it tradition |
+| Crown-shaped glass | +3 SOVS with any Heir Apparent Ale | Yes | Keepable drinkware; he insists on charging the three SOVS and calls it tradition |
 | "Knighted" title | Ceremony completion | Yes | Displayed on the party sheet; front-table seating; unlocks the "Coronation" selfie variant |
 | "Noble Blood" | Any Heir Apparent Ale | No | +2 Charm, +2 Style for 45 minutes |
 | "Royal Disappointment" | Spill or fumble the ceremony | No | Failure state; cleared by purchasing another beer and retrying |
@@ -474,7 +474,7 @@ Austrian German accent over English, formal register, delivered at proclamation 
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; Crown & Cask is Sov-denominated and the only currency he recognises beyond that is sobriety
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; Crown & Cask is SOV-denominated and the only currency he recognises beyond that is sobriety
 - [x] **NO automatic crypto assumptions** — most NPCs have none, and he is one of them; a coin without a face on it would offend him on principle
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — N/A; the Certificate of Nobility is a paper souvenir with a wax seal and touches nothing financial
 - [x] **The bros are never scam-aware** — they never once suspect the monarchy is invented, and Chadwick believes to the end of the game that he holds a hereditary title
@@ -484,7 +484,7 @@ Austrian German accent over English, formal register, delivered at proclamation 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is three Americans accepting a hereditary knighthood at face value and putting it on a resume; Austrian imperial history is the costume, not the punchline
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a genuinely excellent brewer who built a marketing device out of respect for his great-grandfather's recipes, knights everyone regardless of wealth or dress, and refuses nobody
-- [x] Humor is affectionate mockery, not mean-spirited — the entire taproom has quietly agreed to let one man have this, and the game agrees with the taproom; he is never the butt of the joke and is never made to look foolish for believing in his own work
+- [x] Humor is affectionate mockery — the entire taproom has quietly agreed to let one man have this, and the game agrees with the taproom; he is never the butt of the joke and is never made to look foolish for believing in his own work
 
 ---
 

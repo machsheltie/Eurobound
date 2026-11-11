@@ -120,7 +120,7 @@ Now: Ensure the community she's built thrives. Keep everyone safe, fed, and orga
 
 > "First: lane etiquette. Inner lane is fast, outer lane is slow. Middle is for cruising. You'll learn the rhythm."
 
-> "Second: food. The food truck circles the outer lane. Catch it on the south bend. Currency is Sovs or barter."
+> "Second: food. The food truck circles the outer lane. Catch it on the south bend. Currency is SOVS or barter."
 
 > "Third: waste. See the committee. We take this VERY seriously."
 
@@ -232,7 +232,7 @@ Now: Ensure the community she's built thrives. Keep everyone safe, fed, and orga
 - **Population**: ~30 permanent residents
 - **Duration in Cloverleaf**: 12 years
 - **Government Type**: Democratic council
-- **Economy**: Barter + Sovs with food truck
+- **Economy**: Barter + SOVS with food truck
 - **Culture**: Surprisingly functional
 
 ---

@@ -299,7 +299,7 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 |---------|----------|------|-------------|
 | Menu Interface BG | (0, 200) | 128x56 | Food ordering backdrop |
 | Item Slot | (128, 200) | 48x48 | Individual menu item frame |
-| Price Tag | (176, 200) | 32x16 | Sov price display |
+| Price Tag | (176, 200) | 32x16 | SOV price display |
 
 ---
 
@@ -404,7 +404,7 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 - Status effect icons use distinct shapes (inverted arrows, jittering cup, brain symbol) — never color alone
 - DigiDysentery edge glitch uses pattern distortion, not just green tint
 - Menu item slots numbered 1-5 so items are identifiable without color
-- Touch zones minimum 44px for all menu interface elements and the hidden door
+- Click zones minimum 44px for all menu interface elements and the hidden door
 
 ---
 
@@ -438,7 +438,7 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 
 ### Performance Notes:
 - Popup cascade uses a spawn pool of pre-instanced sprites, no runtime instantiation
-- Reduced CRT flicker rate on low-end devices (profile-specified battery management)
+- Reduced CRT flicker rate on min-spec hardware (profile-specified battery management)
 - Mystery machine flicker capped at 2 FPS on Low LOD
 - Heat shimmer shader disabled below Medium LOD
 
@@ -617,7 +617,7 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 | Satirical Targets Appropriate | ✅ PASS | Digital pretension, not individuals |
 | Seedy Underbelly Present | ✅ PASS | Health violations as underground cred |
 | Gameplay Value Established | ✅ PASS | Status effect consumables, ICQ unlock |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented |
 | Performance Budget | ✅ PASS | 60 FPS, 12 draw calls, 35MB |
 | Accessibility Features | ✅ PASS | Status icons, DigiDysentery assist option |
 | No Crypto Elements | ✅ PASS | Crypto satire established in source material (CryptoDöner, blockchain drizzle) |

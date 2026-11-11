@@ -9,8 +9,8 @@ Item-level detail (stamp/opener/beer stat blocks, PNG specs) lives in each colle
 file under `design/items/brewery_tour/` — this file does not duplicate it beyond a short
 pointer table.
 
-**Dead mechanics excluded from this file:** per-location opener vendors and their Sovs
-prices ("OR purchase for N Sovs" on every opener), the per-city single-opener model, and the
+**Dead mechanics excluded from this file:** per-location opener vendors and their SOVS
+prices ("OR purchase for N SOVS" on every opener), the per-city single-opener model, and the
 "Sinfonia Sommelier" achievement tied to buying openers — all superseded by the master
 spec's earned-per-brewery opener model. Openers are earned through each brewery's challenge,
 never bought.
@@ -21,13 +21,13 @@ never bought.
 
 | Slot | Location | Stamp | Opener | Signature Beer |
 |---|---|---|---|---|
-| 1 | The Moderato Pub | Metronome over stein, warm amber ink | Metronome shape, "Tempo Is Everything" | Tempo Tantrum — amber ale, 5.5% ABV, 6 Sovs |
-| 2 | The Standing Ovation | Comedy/tragedy masks, crimson/gold ink | Theater masks, "Bravo!" | Curtain Call Copper — Sinfonian copper lager, 5.8% ABV, 8 Sovs |
-| 3 | Crown & Cask | Habsburg crown on barrel, royal purple ink | Miniature crown, "By Royal Appointment" | Heir Apparent Ale — Belgian-style golden ale, 6.5% ABV, 10 Sovs |
-| 4 | The Dancing Stein | Stein with dancing legs, ballroom gold ink | Stein silhouette, "One-Two-Three" | Waltz Weizen — Bavarian wheat beer, 5.2% ABV, 7 Sovs |
+| 1 | The Moderato Pub | Metronome over stein, warm amber ink | Metronome shape, "Tempo Is Everything" | Tempo Tantrum — amber ale, 5.5% ABV, 6 SOVS |
+| 2 | The Standing Ovation | Comedy/tragedy masks, crimson/gold ink | Theater masks, "Bravo!" | Curtain Call Copper — Sinfonian copper lager, 5.8% ABV, 8 SOVS |
+| 3 | Crown & Cask | Habsburg crown on barrel, royal purple ink | Miniature crown, "By Royal Appointment" | Heir Apparent Ale — Belgian-style golden ale, 6.5% ABV, 10 SOVS |
+| 4 | The Dancing Stein | Stein with dancing legs, ballroom gold ink | Stein silhouette, "One-Two-Three" | Waltz Weizen — Bavarian wheat beer, 5.2% ABV, 7 SOVS |
 
 Full stat blocks, PNG specs, and Notes live in each item's own file under
-`design/items/brewery_tour/`. Prices below the old 8–15 Sovs guideline band (Tempo Tantrum 6,
+`design/items/brewery_tour/`. Prices below the old 8–15 SOVS guideline band (Tempo Tantrum 6,
 Waltz Weizen 7) are RULED — the band demotes to a soft guideline, no renumbering [source:
 extraction Rulings, Contradiction 3].
 
@@ -46,7 +46,7 @@ summary table, homed here because the Sinfonia passport doc is its deepest/only 
 (Sinfonia row) and "Retry available" (Publandia row) predate the earned-not-bought opener
 ruling and were never reconciled against it — this table describes retrying a *challenge*,
 not buying an opener or stamp, so it is transcribed as-is rather than assumed dead; flagging
-for author confirmation that challenge-retry-for-Sovs is still live alongside the
+for author confirmation that challenge-retry-for-SOVS is still live alongside the
 earned-opener model. Shamsterdam row retained as TBD per its own out-of-scope status this
 round.]
 
@@ -132,7 +132,7 @@ spilling [source: `design/items/brewery_passport_book_sinfonia.md` L121].
   3. Character randomly bows to NPCs
   4. Classical music plays faintly (only the afflicted character can hear it)
 - **Cure:** strong coffee (Grounds For Concern), sleep, or a 40-minute wait
-- **Price:** 60 Sovs, repurchasable from any stamped Sinfonia location
+- **Price:** 60 SOVS, repurchasable from any stamped Sinfonia location
 - **Flavor text:** *"Four stamps. Four performances. Four ceremonies. You drank like royalty.
   Now you suffer like royalty. With dignity. And regret."*
 

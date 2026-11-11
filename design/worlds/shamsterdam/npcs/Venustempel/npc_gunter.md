@@ -45,7 +45,7 @@ He is not warning anyone. He is not a victim of anything. He is not the punchlin
 
 ### The Bare Skewer
 
-One SOV. Nothing on it. It exists because people bring their own food, or bring nothing, and either way they need a skewer. It costs him a fraction of a Sov. He sells eighty of them on a good day. He has never once explained why the empty item is on the board, and no bro has ever asked, because the bare skewer is the funniest thing on the menu and it is also the most profitable, and both of those are true at the same time, and he is the only person on the plaza who knows it.
+One SOV. Nothing on it. It exists because people bring their own food, or bring nothing, and either way they need a skewer. It costs him a fraction of a SOV. He sells eighty of them on a good day. He has never once explained why the empty item is on the board, and no bro has ever asked, because the bare skewer is the funniest thing on the menu and it is also the most profitable, and both of those are true at the same time, and he is the only person on the plaza who knows it.
 
 ---
 
@@ -499,7 +499,7 @@ That contradiction is the germ mechanic's entire setup, and **Gunter never comme
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| **Lotte Beekman** (`shamsterdam_npc_lotte_01`, Venustempel gift shop attendant) | Cordial and purely logistical. Lotte sends people out to the cart; Gunter sends people in to use the gift shop toilet. It works perfectly. **Neither of them has ever discussed the fountain, in twelve years, once.** Lotte sells the 4 Sovs Handreiniger sanitiser; Gunter sells the 1 SOV wipe. Neither has ever mentioned that to the other either. Lotte has read the board. Lotte thought it was fine. |
+| **Lotte Beekman** (`shamsterdam_npc_lotte_01`, Venustempel gift shop attendant) | Cordial and purely logistical. Lotte sends people out to the cart; Gunter sends people in to use the gift shop toilet. It works perfectly. **Neither of them has ever discussed the fountain, in twelve years, once.** Lotte sells the 4 SOVS Handreiniger sanitiser; Gunter sells the 1 SOV wipe. Neither has ever mentioned that to the other either. Lotte has read the board. Lotte thought it was fine. |
 | **Anke** (`shamsterdam_npc_anke_01`, Venustempel ticket seller) | Fifteen years on the desk, total immunity, deadpan, cross-stitch between customers. Gunter respects her more than anyone else on the Mile and expresses this by never speaking to her unnecessarily. They nod. **They are the same kind of professional and both know it.** That is the relationship and both consider it complete. |
 | **Ruud** (`shamsterdam_npc_ruud_01`, Venustempel floor attendant) | Young, professionally neutral, "this is my summer job." On plaza rotation he says **"One dip."** approximately nine hundred times a day. Gunter has watched this destroy three consecutive summer attendants and has never mentioned it to any of them. He redirects fountain-rule questions to Ruud because they are genuinely Ruud's department; Ruud redirects food questions to him. Neither has ever had to be asked twice. |
 | **Gerda Vonk** (`shamsterdam_npc_gerda_01`, municipal hygiene inspector) | Quarterly. Ropes the fountain for forty minutes, takes a sample, writes the same violation, leaves. **Gunter's cart passes every time.** They exchange perhaps six words a year and get along fine. The forty-minute closure is his worst trading window of the quarter and he uses every minute of it to restock. |
@@ -598,7 +598,7 @@ Gunter is the delivery point for the cheapest cure in the **Sharing the Love** s
 | Cure | Source | Removes |
 |------|--------|---------|
 | Hand wipe, 1 SOV | **Gunter's Deep Dips** | 1 stack |
-| "Handreiniger" sanitiser, 4 Sovs | Venustempel gift shop (Lotte) | 2 stacks |
+| "Handreiniger" sanitiser, 4 SOVS | Venustempel gift shop (Lotte) | 2 stacks |
 | A night's sleep | The Tolerance Hostel | 2 stacks |
 | Frietomat croquette | Frietomat | 1 stack |
 
@@ -705,7 +705,7 @@ Dutch, native, working Amsterdam register, fluent functional English. **Dutch-in
 
 ## 📝 Development Notes
 
-- **CURRENCY — RESOLVED (author ruling, 2026-08-01).** **The entire game runs on Sovs.** Every country, every city, every price. There are no euros anywhere in Eurobound and there is no currency exchange between regions — that is not a mechanic. Gunter's cart, the museum admission, Lotte's gift shop and the Frietomat are all Sov-priced and always were. The author's board copy uses the form **"5 SOVS"** and is reproduced verbatim. Gunter never mentions converting money, because there is nothing to convert.
+- **CURRENCY — RESOLVED (author ruling, 2026-08-01).** **The entire game runs on SOVS.** Every country, every city, every price. There are no euros anywhere in Eurobound and there is no currency exchange between regions — that is not a mechanic. Gunter's cart, the museum admission, Lotte's gift shop and the Frietomat are all SOV-priced and always were. The author's board copy uses the form **"5 SOVS"** and is reproduced verbatim. Gunter never mentions converting money, because there is nothing to convert.
 - **The board and the sign are authored copy and are reproduced verbatim.** They must not be paraphrased, softened, trimmed, reordered, or "punched up" by a later pass. They are the crudest text in the location and that is deliberate and load-bearing.
 - **Gunter never acknowledges the signage.** Not a look, not a beat, not a delivery choice. He wrote it because it sells and has not thought about it since. **The customer does the joke; Gunter does the price.** Every single line in the Board section of the dialogue is built on that gap and none of them survives a knowing take.
 - **Never explain "We've had incidents."** No NPC, no codex, no examine text, no epilogue reveal, no DLC. The line's entire value is the history it implies and does not have. Two non-answers are written in and both narrow nothing; any third must do the same. `gunter_incidents_asked_count` exists to be counted, not to unlock.
@@ -729,7 +729,7 @@ Dutch, native, working Amsterdam register, fluent functional English. **Dutch-in
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — **Gunter has no crypto content of any kind.** SOVS and cards only, 1–5 SOVS. No shitcoins, no kiosk, no certificate, no wallet, no QR code anywhere on the cart. SOVS is the game's established mainstream currency and is used here exactly as the author's board copy specifies; the whole game runs on Sovs per author ruling, so there is no units question either.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — **Gunter has no crypto content of any kind.** SOVS and cards only, 1–5 SOVS. No shitcoins, no kiosk, no certificate, no wallet, no QR code anywhere on the cart. SOVS is the game's established mainstream currency and is used here exactly as the author's board copy specifies; the whole game runs on SOVS per author ruling, so there is no units question either.
 - [x] **NO automatic crypto assumptions** — a licensed municipal food cart run by one man with a card terminal and an apron full of coins has no reason to touch crypto and does not
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A. Nothing from `shitcoin_master_pool.md` appears at this pitch and nothing should be added.
 - [x] **The bros are never scam-aware** — there is no scam here at all. Every price is posted, every item is exactly what the board says it is (in more detail than strictly necessary), and the only thing anyone loses is one SOV for an empty skewer they genuinely wanted.
@@ -739,7 +739,7 @@ Dutch, native, working Amsterdam register, fluent functional English. **Dutch-in
 ### Satirical Target Verification
 - [x] **Targets tourist/frat bro behavior, NOT local culture or ethnicity** — the joke is on Pilsner declaring a chocolate fountain the greatest achievement of European civilisation and reading a menu board aloud like it is his own material, Chadwick filming a phone case he has just dipped in it, and Bradley acquiring a communicable status effect through pure social compliance. Dutch food-handling regulation, municipal permitting, and small-business competence are all presented as straightforwardly correct and slightly heroic.
 - [x] **NPC is savvy entrepreneur, not villain or stereotype** — Gunter runs a spotless, licensed, twelve-year-old business with an A hygiene rating and enviable margins, employs nobody, exploits nobody, misrepresents nothing, and answers every question he is asked honestly and completely. His signage is crude and his operation is immaculate and neither of those facts is presented as a contradiction in his character, because to him it isn't one.
-- [x] **Humor is affectionate mockery, not mean-spirited** — nobody is harmed, nobody is cheated, and the worst outcome available is a day-long stomach debuff that costs one SOV to prevent and is entirely self-inflicted, in defiance of a bolted sign. Gunter's competence is treated with real respect throughout; his flatness is professionalism, never damage.
+- [x] **Humor is affectionate mockery** — nobody is harmed, nobody is cheated, and the worst outcome available is a day-long stomach debuff that costs one SOV to prevent and is entirely self-inflicted, in defiance of a bolted sign. Gunter's competence is treated with real respect throughout; his flatness is professionalism, never damage.
 - [x] **Crude content handled without leering** — the board is filthy, the sign is filthy, and both are printed here in full because that is the joke. **Nothing is depicted.** The fountain is a giant chocolate phallus and the document says so plainly rather than coyly. No line lingers, no camera lingers, and the vendor never once enjoys it. The comedy is entirely mundane: queue management, price lists, food-handling rules, permits, margins, laminating, bolts, and the hygiene nobody thinks about.
 
 ---
@@ -755,7 +755,7 @@ Dutch, native, working Amsterdam register, fluent functional English. **Dutch-in
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile (supersedes the withdrawn Marijke Doornbos draft; vendor renamed and re-conceived per author ruling). Cart trades as **Gunter's Deep Dips**; the prior brand is withdrawn. Author-supplied menu board and warning sign added verbatim and made the centre of the character. Board pricing set to 5 SOVS per author copy. Wipe priced at 1 Sov. All prices converted to Sovs per the game-wide currency ruling of 2026-08-01. Germ mechanic reference expanded to the full authored table (collection bowl +3, shared skewer +2, Frietomat croquette cure). All three previously-flagged canon conflicts (Roodelicht Row / Museum Mile placement, the Petra / Lotte attendant name in `npc_manager_femke.md`, and the stale cart asset name) were resolved elsewhere in the same pass. Currency ruling since received and applied: the entire game runs on Sovs; no euros anywhere. Nothing outstanding. | Design |
+| 2026-08-01 | Initial profile (supersedes the withdrawn Marijke Doornbos draft; vendor renamed and re-conceived per author ruling). Cart trades as **Gunter's Deep Dips**; the prior brand is withdrawn. Author-supplied menu board and warning sign added verbatim and made the centre of the character. Board pricing set to 5 SOVS per author copy. Wipe priced at 1 SOV. All prices converted to SOVS per the game-wide currency ruling of 2026-08-01. Germ mechanic reference expanded to the full authored table (collection bowl +3, shared skewer +2, Frietomat croquette cure). All three previously-flagged canon conflicts (Roodelicht Row / Museum Mile placement, the Petra / Lotte attendant name in `npc_manager_femke.md`, and the stale cart asset name) were resolved elsewhere in the same pass. Currency ruling since received and applied: the entire game runs on SOVS; no euros anywhere. Nothing outstanding. | Design |
 
 ---
 

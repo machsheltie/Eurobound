@@ -1,7 +1,7 @@
 # Café de Schaamte - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Café de Schaamte ("Café of Shame") is the canal-side outdoor terrace on the Canal Ring Promenade where 5 Sovs buys a thimble of espresso and a lifetime supply of Dutch judgment — and where a poorly disguised Sheltie in a SHAMSTERDAM hoodie runs "covert" mission briefings from the corner table. This document specifies every PNG asset for the terrace: the mismatched-furniture environment, the canal/bicycle background layers, Agent Havok's prop-laden table, Barista Wouter and Server Margot, Havok and the café regulars, consumables, effects, and the judgment-driven UI. Its satirical essence in a sentence: Americans paying premium prices to be performatively ignored and calling it culture.
+Café de Schaamte ("Café of Shame") is the canal-side outdoor terrace on the Canal Ring Promenade where 5 SOVS buys a thimble of espresso and a lifetime supply of Dutch judgment — and where a poorly disguised Sheltie in a SHAMSTERDAM hoodie runs "covert" mission briefings from the corner table. This document specifies every PNG asset for the terrace: the mismatched-furniture environment, the canal/bicycle background layers, Agent Havok's prop-laden table, Barista Wouter and Server Margot, Havok and the café regulars, consumables, effects, and the judgment-driven UI. Its satirical essence in a sentence: Americans paying premium prices to be performatively ignored and calling it culture.
 
 **Location ID:** `shamsterdam_canalring_cafe_schaamte_01`
 **Theme:** American tourists expecting American service in European establishments; performative European sophistication; Dutch directness vs. tourist obliviousness
@@ -141,11 +141,11 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 ### Consumables (menu table coverage):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Espresso Cup (Tiny) | (288, 96) | 32x32 | 5 Sovs thimble of disappointment; +15 SP |
-| Croissant (Day-Old) | (320, 96) | 48x32 | 8 Sovs of questionable freshness |
-| Stroopwafel | (368, 96) | 32x32 | 4 Sovs — the only judgment-free order |
-| Heineken Bottle | (400, 96) | 24x48 | 6 Sovs, -Bravado, locals judge |
-| "American Coffee" Mug | (424, 96) | 32x32 | 5 Sovs, +Shame buff |
+| Espresso Cup (Tiny) | (288, 96) | 32x32 | 5 SOVS thimble of disappointment; +15 SP |
+| Croissant (Day-Old) | (320, 96) | 48x32 | 8 SOVS of questionable freshness |
+| Stroopwafel | (368, 96) | 32x32 | 4 SOVS — the only judgment-free order |
+| Heineken Bottle | (400, 96) | 24x48 | 6 SOVS, -Bravado, locals judge |
+| "American Coffee" Mug | (424, 96) | 32x32 | 5 SOVS, +Shame buff |
 | "Giselle Special" Mystery Glass | (456, 96) | 32x32 | Item doesn't exist; barista confusion trigger |
 | Serving Tray | (0, 128) | 64x32 | Margot's unknowable schedule |
 | Check Saucer | (64, 128) | 32x32 | Arrives when it decides to arrive |
@@ -253,7 +253,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Service Wait Indicator | (0, 0) | 128x32 | "Server arriving eventually..." (30-90s random) |
 | Bravado Judgment Meter | (0, 32) | 96x64 | Café-specific shame tracking |
 | Pronunciation Attempt Icons 1-4 | (96, 32) to (192, 32), 32px steps | 32x32 each | Language barrier mini-game results (graceful → catastrophic) |
-| Price Shock Popup | (0, 96) | 128x96 | "8 Sovs for THIS?" |
+| Price Shock Popup | (0, 96) | 128x96 | "8 SOVS for THIS?" |
 | Tip Confusion Prompt | (128, 96) | 128x64 | "Tip? (Europeans don't...)" |
 | Espresso Size Comparison | (256, 96) | 96x64 | American expectation vs. thimble reality |
 | Mission Briefing Frame | (0, 192) | 256x192 | Havok's crayon-blueprint dialogue skin |
@@ -284,7 +284,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - **Trigger:** Constant (canal breeze)
 - **Purpose:** Ambient life without motion noise
 - **Audio Sync:** None
-- **Performance Optimization:** Static awning on low-end devices (profile-mandated)
+- **Performance Optimization:** Static awning on min-spec hardware (profile-mandated)
 
 ### Canal Reflections (Sheets 2, 6):
 - **Duration:** 4-second crossfade loop (2 strips)
@@ -370,7 +370,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - Judgment/Bravado states use icon + meter position, never color alone
 - Menu judgment levels display as eyebrow-icons (0-3) alongside any color coding
 - Overheard-conversation subtitles carry speaker icons, not color-coded text
-- Touch zones minimum 44px for counter, Havok's table, menu options, and tip prompt
+- Click zones minimum 44px for counter, Havok's table, menu options, and tip prompt
 
 ---
 
@@ -544,7 +544,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 - [ ] Satirical theme is clear throughout all assets (service culture clash, performative sophistication)
 - [ ] Hidden areas/interactions have discoverable visual cues (Havok gesture, readable headline, pigeon behavior)
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (judgment icons, meter positions)
 - [ ] Social media viral potential maximized in composition choices (Havok table as hero shot)
 
@@ -557,7 +557,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | World Consistency (no real city names) | ✅ | Shamsterdam/Roodelicht Row in-world; profile's "Amsterdam energy" lines are meta commentary, not asset text |
 | Cultural Specificity | ✅ | Dutch directness, European café service norms, tourist exhaustion |
 | Satirical Targets Appropriate | ✅ | American service expectations and tourist behavior; café workers rendered competent, not mocked |
-| Seedy Underbelly Present | ✅ | 8 Sovs croissants, systematic overcharging, communal illegal ashtray, coffeeshop smoke drift |
+| Seedy Underbelly Present | ✅ | 8 SOVS croissants, systematic overcharging, communal illegal ashtray, coffeeshop smoke drift |
 | Gameplay Value Established | ✅ | Quest hub (Fabergé Egg Hunt), consumables, Bravado mechanics, Couchsurf hook, ambient storytelling |
 | Technical Feasibility | ✅ | Single outdoor scene, parallax layers, CanvasModulate time-of-day documented |
 | Performance Budget | ✅ | 60 FPS, 16 draw calls, 38 MB per profile budget |
@@ -565,4 +565,4 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | No Crypto Elements | ✅ | Pure espresso-and-judgment commerce |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |
 
-**Once these assets are delivered, Café de Schaamte becomes the beating judgmental heart of Shamsterdam: the terrace where every quest begins over a 5 Sovs thimble, every faux pas is catalogued, and the dog in the hoodie is definitely, definitely a local.**
+**Once these assets are delivered, Café de Schaamte becomes the beating judgmental heart of Shamsterdam: the terrace where every quest begins over a 5 SOVS thimble, every faux pas is catalogued, and the dog in the hoodie is definitely, definitely a local.**

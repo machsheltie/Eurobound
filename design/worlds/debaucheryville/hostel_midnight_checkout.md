@@ -6,7 +6,7 @@
 - **Location ID**: debaucheryville_hostel_midnight_checkout_01
 - **Display Name**: Hostel "Midnight Checkout"
 - **Czech Alias**: "Hostel Půlnoční Odchod"
-- **Satirical Subtitle**: "12 Sovs/Night. Your Dignity Costs Extra."
+- **Satirical Subtitle**: "12 SOVS/Night. Your Dignity Costs Extra."
 - **World Location**: Debaucheryville
 - **Area Zone**: Hostel Row, Budget Accommodation District
 - **Location Type**: Primary Accommodation / Rest Point / Confession Hub / Chaos Nexus
@@ -15,7 +15,7 @@
 ### Entry Conditions
 - **Time Restrictions**: 24/7 reception (theoretically — receptionist presence varies)
 - **Stat Requirements**: None (desperation is the only requirement)
-- **Item Requirements**: SOVS for booking (12-35 Sovs/night), valid ID (checked inconsistently)
+- **Item Requirements**: SOVS for booking (12-35 SOVS/night), valid ID (checked inconsistently)
 - **Previous Location Requirements**: None (the hostel accepts all who can pay)
 - **Special Conditions**: Room assignment is "random" (actually based on chaos algorithms)
 
@@ -148,11 +148,11 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ### Accommodation Options
 | Room Type | Price/Night | Beds | Sleep Quality | Privacy | Notes |
 |-----------|-------------|------|---------------|---------|-------|
-| 12-Bed Mixed Dorm | 12 Sovs | 12 | Poor | None | "The Full Experience" |
-| 8-Bed Mixed Dorm | 16 Sovs | 8 | Fair | Minimal | "Slightly Less Chaos" |
-| 6-Bed Mixed Dorm | 20 Sovs | 6 | Decent | Some | "The Compromise" |
-| 4-Bed Private-ish | 28 Sovs | 4 | Good | Moderate | "We've Given Up on Budget" |
-| Private Room | 45 Sovs | 2 | Excellent | Full | "Why Are We at a Hostel?" |
+| 12-Bed Mixed Dorm | 12 SOVS | 12 | Poor | None | "The Full Experience" |
+| 8-Bed Mixed Dorm | 16 SOVS | 8 | Fair | Minimal | "Slightly Less Chaos" |
+| 6-Bed Mixed Dorm | 20 SOVS | 6 | Decent | Some | "The Compromise" |
+| 4-Bed Private-ish | 28 SOVS | 4 | Good | Moderate | "We've Given Up on Budget" |
+| Private Room | 45 SOVS | 2 | Excellent | Full | "Why Are We at a Hostel?" |
 
 ### Sleep Mechanics
 **Sleep Quality Factors**:
@@ -300,13 +300,13 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ### Original NPC Dialogue
 **Radek's Hostel Philosophy (Extended):**
 - "Four years I've worked here. I've seen 10,000 people at their most vulnerable. Drunk, heartbroken, lost, found, confused, enlightened. All of them in the same bunk beds."
-- "The hostel is democracy. Everyone pays 12 Sovs, everyone gets the same experience. Rich, poor, famous, nobody. Equal chaos."
+- "The hostel is democracy. Everyone pays 12 SOVS, everyone gets the same experience. Rich, poor, famous, nobody. Equal chaos."
 - "People think hostels are about saving money. They're wrong. Hostels are about giving up control. That's harder than it sounds."
 - "The best conversations happen at 4 AM when everyone's given up on sleep. That's when people stop performing."
 - "Check-in anytime, checkout never. Not really. Nobody ever fully leaves a hostel. Part of you stays in every bunk."
 
 **The Bros' Hostel Midnight Checkout Reactions:**
-- **Lord Pilsner** (arriving): "12 Sovs a night? This is BRILLIANT. This is BUDGET GENIUS."
+- **Lord Pilsner** (arriving): "12 SOVS a night? This is BRILLIANT. This is BUDGET GENIUS."
 - **Lord Pilsner** (3 AM): "I can't— I CAN'T sleep. Someone is— is that ACCORDION?"
 - **Lord Pilsner** (morning): "I feel like I slept on a CONSPIRACY. My back has OPINIONS."
 - **Chadwick**: "12-bed dorm content is GOLD. Real travelers. Real stories. Real... smell."
@@ -471,4 +471,4 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 ---
 
-*Hostel "Midnight Checkout": Check-in anytime, checkout eventually, sleep never guaranteed. 12 Sovs buys you a bed, 11 strangers, one working shower, and stories you'll tell forever. Radek has seen everything. Nothing surprises him anymore.*
+*Hostel "Midnight Checkout": Check-in anytime, checkout eventually, sleep never guaranteed. 12 SOVS buys you a bed, 11 strangers, one working shower, and stories you'll tell forever. Radek has seen everything. Nothing surprises him anymore.*

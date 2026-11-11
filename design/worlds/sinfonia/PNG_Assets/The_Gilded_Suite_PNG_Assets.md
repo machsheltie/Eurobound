@@ -89,7 +89,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Palace Steps | (256, 320) | 128x48 | Marble steps, center worn by 240 years of arrivals (few departures) |
 | Welcome Mat | (384, 320) | 48x32 | Reads "WILLKOMMEN" — the N trails off like it wanted to write FOREVER |
 | Exterior Night Overlay | (432, 320) | 256x96 | Blue-dark tint layer; palace windows stay warm |
-| Bulletin Ad Poster | (688, 320) | 64x96 | Citywide bulletin board advertisement art — "150 Sovs/night! A PALACE!" |
+| Bulletin Ad Poster | (688, 320) | 64x96 | Citywide bulletin board advertisement art — "150 SOVS/night! A PALACE!" |
 | Doorway Farewell Backdrop | (752, 320) | 128x96 | Framed doorway composition for the "Survived" selfie (Gastfreund waving) |
 | Cobblestone Tile | (880, 320) | 32x32 | Imperial District street stone |
 | Cobblestone Worn | (912, 320) | 32x32 | Variant with wear |
@@ -107,7 +107,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Check-In Hours Sign | (336, 416) | 64x48 | "Check-in 15:00–23:00. Checkout 11:00. This is non-negotiable." |
 
 ### Technical Notes:
-- Exterior is a static painted composition per profile mobile guidance — the only "animation" is state swaps (fountain eyes, statue head, curtain) triggered on look-away or re-entry, never live motion
+- Exterior is a static painted composition per profile performance  — the only "animation" is state swaps (fountain eyes, statue head, curtain) triggered on look-away or re-entry, never live motion
 - Leaning neighbor buildings must read at a glance: 4–6° shear, exaggerated EarthBound-style
 - Facade symmetry should be pixel-perfect left/right; wrongness comes from perfection, not decay
 
@@ -378,7 +378,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 **Dimensions:** 1024x768 pixels
 **Color Palette:** #FFFDD0 (Innocent Cream), #D4AF37 (Palatial Gold), #8B0000 (Watchful Crimson), #E8C547 (Eternal Fruit Wax)
 
-### Standard Room (150 Sovs):
+### Standard Room (150 SOVS):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Standard Bed | (0, 0) | 96x80 | Comfortable, dated, corners hospital-tight |
@@ -396,7 +396,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Room Number Plate 217 | (696, 0) | 32x24 | Your room number. Today |
 | Room Number Plate 31B | (728, 0) | 32x24 | Your room number. Tomorrow. Same door |
 
-### Deluxe Suite (300 Sovs):
+### Deluxe Suite (300 SOVS):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Deluxe Bed | (0, 128) | 128x96 | Larger, plusher, monogrammed with initials — yours |
@@ -411,7 +411,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Deluxe Drapes | (768, 128) | 64x96 | Crimson velvet, drawn each night by no one |
 | Writing Desk | (832, 128) | 64x64 | Stationery pre-addressed to your next of kin |
 
-### The Royal Chamber (500 Sovs):
+### The Royal Chamber (500 SOVS):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Royal Canopy Bed | (0, 288) | 160x144 | Palatial four-poster, canopy like a held breath |
@@ -652,9 +652,9 @@ assets/sprites/locations/sinfonia/gilded_suite/
 ### Booking & Status:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Room Tier Card Standard | (0, 192) | 96x64 | 150 Sovs — "Basic creepy." 80% HP/SP |
-| Room Tier Card Deluxe | (96, 192) | 96x64 | 300 Sovs — "Extra portraits." 100% HP/SP |
-| Room Tier Card Royal | (192, 192) | 96x64 | 500 Sovs — "Full experience." 120% + buff |
+| Room Tier Card Standard | (0, 192) | 96x64 | 150 SOVS — "Basic creepy." 80% HP/SP |
+| Room Tier Card Deluxe | (96, 192) | 96x64 | 300 SOVS — "Extra portraits." 100% HP/SP |
+| Room Tier Card Royal | (192, 192) | 96x64 | 500 SOVS — "Full experience." 120% + buff |
 | Well-Rested Buff Icon | (288, 192) | 32x32 | Crown-and-pillow icon |
 | Overstayed Welcome Debuff | (320, 192) | 32x32 | Door-with-no-handle icon — trapped state |
 | Surveillance Level Pips | (352, 192) | 64x16 | Camera pips: Medium / High / Maximum |
@@ -667,7 +667,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 | Guest Book UI Page | (0, 256) | 128x96 | Signature page — 240 years of names converging into one hand |
 | Achievement Toast | (128, 256) | 160x48 | Banner for Check In / Survived / Night Watch / etc. |
 | Eternal Guest Card Glow | (128, 304) | 48x32 | Award-moment variant with gold bloom |
-| Refund Notice 500 Sovs | (176, 304) | 64x32 | Confrontation victory payout slip |
+| Refund Notice 500 SOVS | (176, 304) | 64x32 | Confrontation victory payout slip |
 | Selfie Frame Palace Life | (288, 256) | 96x96 | Staircase selfie overlay, chandelier visible |
 | Selfie Frame The Watched | (384, 256) | 96x96 | Variant: portraits in background, all facing camera |
 | Checkout Receipt | (0, 352) | 64x32 | Stamped 10:59 AM. Cutting it close |
@@ -690,7 +690,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - **Trigger:** Host spawn events (check-in, night visit, boss phases, "when needed and when not needed")
 - **Purpose:** He doesn't walk in. He is simply there. The signature dread-beat
 - **Audio Sync:** Soft chime begins on frame 1, resolves on frame 3 (paired glyph: Soft Chime Glyph 1–3)
-- **Performance Optimization:** 2-frame version (skip frame 2) on low-end devices
+- **Performance Optimization:** 2-frame version (skip frame 2) on min-spec hardware
 
 ### Portrait Eye Tracking:
 - **Duration:** 0.2 seconds per gaze step (frame swap, no tween)
@@ -843,7 +843,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - Star ratings pair fill-state (solid vs. hollow outlines) with count; the one-star weapon is shape-distinct, not color-distinct
 - Portrait gaze direction available as arrow glyphs for players who can't parse pupil contrast
 - Room tier cards use distinct crest silhouettes (plain / double / crowned), not only gold-level tinting
-- Touch zones minimum 44px for booking cards, night-event choices, guest book, fruit painting, and checkout interactions
+- Click zones minimum 44px for booking cards, night-event choices, guest book, fruit painting, and checkout interactions
 
 ---
 
@@ -1042,7 +1042,7 @@ assets/sprites/locations/sinfonia/gilded_suite/
 - [ ] Satirical theme is clear throughout all assets — rental-culture jokes visible without dialogue
 - [ ] Hidden areas/interactions have discoverable visual cues (fruit painting rim light, basement clue, lever outline)
 - [ ] Performance optimized (CPU particles ≤12, atlas limits respected, 60 FPS / 18 draw calls / 45 MB honored)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices (Portrait Party and doorway wave framed for capture)
 

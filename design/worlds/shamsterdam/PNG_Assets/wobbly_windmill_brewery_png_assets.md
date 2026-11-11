@@ -1,11 +1,11 @@
 # The Wobbly Windmill Brewery - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Wobbly Windmill Brewery is a 350-year-old working windmill in the Shamsterdam countryside converted into a craft brewery mini-dungeon — a spinning building where tourists pay 25 Sovs to get dizzy while Brewmaster Hendrik lectures about respecting the grain and a Yeast Golem rises from the grinding floor. This document specifies every PNG asset across the four floors (ground/gift shop, grinding floor boss arena, tasting room, blade level), the exterior and countryside approach, the Yeast Golem boss with all three phases, staff and visitor NPCs, and the tasting/selfie/opener systems. Its satirical essence in a sentence: authentic Dutch heritage weaponized into Instagram bait that charges you to be disoriented.
+The Wobbly Windmill Brewery is a 350-year-old working windmill in the Shamsterdam countryside converted into a craft brewery mini-dungeon — a spinning building where tourists pay 25 SOVS to get dizzy while Brewmaster Hendrik lectures about respecting the grain and a Yeast Golem rises from the grinding floor. This document specifies every PNG asset across the four floors (ground/gift shop, grinding floor boss arena, tasting room, blade level), the exterior and countryside approach, the Yeast Golem boss with all three phases, staff and visitor NPCs, and the tasting/selfie/opener systems. Its satirical essence in a sentence: authentic Dutch heritage weaponized into Instagram bait that charges you to be disoriented.
 
 **Location ID:** `shamsterdam_countryside_wobbly_windmill_brewery_01`
 **Theme:** "Authentic" experience tourism — paying premium for discomfort disguised as tradition; craft beer pretension; windmill fetishization
-**Zone:** Shamsterdam Countryside (short train ride from central, 8 Sovs round trip, views are fields)
+**Zone:** Shamsterdam Countryside (short train ride from central, 8 SOVS round trip, views are fields)
 **Hours:** 11 AM - 8 PM (brewery tour hours, last tour at 6 PM)
 **Primary Function:** Brewery Tour Location #1 / mini-dungeon — Yeast Golem boss battle, tasting flight system with Spin Meter, brewmaster speech endurance challenge, selfie timing mini-game, bottle opener gating (Blarney Trap prerequisite + Windmill opener), "Canal Courage" quest progress
 
@@ -92,11 +92,11 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Gift Shop Merchandise:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Branded Glasses Display | (0, 128) | 128x96 | "Wobbly Windmill" glasses 18 Sovs (the beer is 6 Sovs) |
-| Mini Windmill Souvenirs | (128, 128) | 128x96 | 25 Sovs, made overseas, painted here |
-| Brewmaster's Book Stack | (256, 128) | 96x96 | "Respect The Grain" 35 Sovs, self-published, unreadable |
-| T-Shirt Rack | (352, 128) | 128x96 | "I SURVIVED THE SPIN" 30 Sovs (they know) |
-| Survivor Pack Display | (480, 128) | 96x96 | Motion sickness pills 3 Sovs + water 2 Sovs = 5 Sovs "Survivor Pack" |
+| Branded Glasses Display | (0, 128) | 128x96 | "Wobbly Windmill" glasses 18 SOVS (the beer is 6 SOVS) |
+| Mini Windmill Souvenirs | (128, 128) | 128x96 | 25 SOVS, made overseas, painted here |
+| Brewmaster's Book Stack | (256, 128) | 96x96 | "Respect The Grain" 35 SOVS, self-published, unreadable |
+| T-Shirt Rack | (352, 128) | 128x96 | "I SURVIVED THE SPIN" 30 SOVS (they know) |
+| Survivor Pack Display | (480, 128) | 96x96 | Motion sickness pills 3 SOVS + water 2 SOVS = 5 SOVS "Survivor Pack" |
 
 ### Structure Tiles:
 | Element | Position | Size | Description |
@@ -110,7 +110,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 
 ### Technical Notes:
 - Curved wall segments assemble the circular room via TileMap
-- Gift shop displays are interaction hotspots (44px+ touch zones) with price-shock tooltips
+- Gift shop displays are interaction hotspots (44px+ click zones) with price-shock tooltips
 
 ---
 
@@ -283,7 +283,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 | Bottle Opener (Static) | (208, 0) | 48x48 | Miniature windmill, brushed copper, "Respect The Grain" |
 | Opener Blade Spin 1-4 | (256, 0) / (304, 0) / (352, 0) / (400, 0) | 48x48 each | Blade arms actually rotate |
 | Tour Stamp "Windmill Grist" | (448, 0) | 64x64 | Keychain stamp — 1 of 4 Shamsterdam breweries |
-| Tasting Token | (384, 256) | 32x32 | Included with 25 Sovs tour |
+| Tasting Token | (384, 256) | 32x32 | Included with 25 SOVS tour |
 
 ### UI Panels:
 | Element | Position | Size | Description |
@@ -378,7 +378,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Selfie Blade Timing (Sheet 4):
 - **Duration:** 4-second blade sweep loop (4 frames at 1 FPS); shutter window 0.5 seconds on frame 2
 - **Frames:** 4 + shutter flash
-- **Pattern:** Sweep loop → player taps → flash → result (Perfect/Unfortunate Windmill Shot)
+- **Pattern:** Sweep loop → player clicks → flash → result (Perfect/Unfortunate Windmill Shot)
 - **Trigger:** Selfie Spot Marker interaction (post-boss)
 - **Purpose:** Timing mini-game; wind factor option adds hair chaos overlay
 - **Audio Sync:** Camera shutter on tap; wind howl constant at blade level
@@ -414,7 +414,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 - Flight beers differ by glass shape and fill level, not color alone; ABV numerals printed on flight board
 - Boss weakness window uses brightness flash + icon, never a color-only tint
 - Spin Meter uses needle position + numeric readout
-- Touch zones minimum 44px for tasting choices, selfie shutter, and gift shop interactions
+- Click zones minimum 44px for tasting choices, selfie shutter, and gift shop interactions
 
 ---
 
@@ -458,7 +458,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: TileMap (floors), AnimatedSprite2D (golem, NPCs, mechanisms), CPUParticles2D (grain dust, flour — not GPU), CanvasLayer + warp shader (room spin), Camera2D shake (floor vibration)
-- Special systems: dual bottle-opener gate (Blarney Trap opener = tour access; Windmill opener = stamp/beer access, earned via golem or 22 Sovs from Hendrik), Spin Meter accumulator, brewmaster speech skip/Bravado check, selfie timing evaluator, boss phase state machine with fire/alcohol interrupt
+- Special systems: dual bottle-opener gate (Blarney Trap opener = tour access; Windmill opener = stamp/beer access, earned via golem or 22 SOVS from Hendrik), Spin Meter accumulator, brewmaster speech skip/Bravado check, selfie timing evaluator, boss phase state machine with fire/alcohol interrupt
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -486,7 +486,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 | Bottoms Down | Shared stamp/keychain UI style | Brewery tour achievement pairing |
 | The Tolerance Hostel | Windmill Grist bottle (conversation prop) | "The windmill" guest discussions |
 | De Groene Gids | None shared; dialogue reference only | Staff comment on "trying the local breweries" |
-| Train Station (central Shamsterdam) | Train station exterior, countryside strip | 8 Sovs round-trip transition scene |
+| Train Station (central Shamsterdam) | Train station exterior, countryside strip | 8 SOVS round-trip transition scene |
 
 ---
 
@@ -590,7 +590,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 - [ ] Satirical theme is clear throughout all assets (heritage commodification, reverence vs. dizziness)
 - [ ] Hidden areas/interactions have discoverable visual cues (blade level unlock, opener purchase option)
 - [ ] Performance optimized (CPU particles, atlas limits, per-floor scene loading)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (glass shapes, weakness flash)
 - [ ] Social media viral potential maximized in composition choices (golem expansion framing, selfie results)
 
@@ -603,7 +603,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 | World Consistency (no real city names) | ✅ | Shamsterdam countryside only; profile's "Amsterdam" mentions are meta design commentary, not in-world assets |
 | Cultural Specificity | ✅ | Dutch windmill heritage tourism + craft beer culture explosion |
 | Satirical Targets Appropriate | ✅ | Brewery pretension and experience-tourists; Dutch heritage and legitimate brewing respected |
-| Seedy Underbelly Present | ✅ | 40 Sovs flights in a disorientation machine, comprehensive liability waivers, gift shop funnel |
+| Seedy Underbelly Present | ✅ | 40 SOVS flights in a disorientation machine, comprehensive liability waivers, gift shop funnel |
 | Gameplay Value Established | ✅ | Boss battle, tasting/Spin Meter system, endurance speech, selfie mini-game, opener gating |
 | Technical Feasibility | ✅ | Per-floor scenes, shared rotation driver, shader spin, CPU particles documented |
 | Performance Budget | ✅ | 60 FPS, 18 draw calls, 42 MB per profile budget |
@@ -611,4 +611,4 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 | No Crypto Elements | ✅ | Pure traditional brewing; Tier of tech gimmicks absent per profile |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |
 
-**Once these assets are delivered, The Wobbly Windmill Brewery becomes Eurobound's first spinning dungeon: a heritage site that fights back with bread, beer, and centrifugal force — and every player leaves with a photo, a stamp, and a navigation debuff they paid 25 Sovs for.**
+**Once these assets are delivered, The Wobbly Windmill Brewery becomes Eurobound's first spinning dungeon: a heritage site that fights back with bread, beer, and centrifugal force — and every player leaves with a photo, a stamp, and a navigation debuff they paid 25 SOVS for.**

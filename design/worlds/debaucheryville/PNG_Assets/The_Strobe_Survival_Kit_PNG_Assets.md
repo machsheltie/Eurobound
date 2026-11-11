@@ -109,10 +109,10 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 ### Audio Defense:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Foam Earplugs (Basic) | (0, 0) | 24x24 | 3 Sovs — "Better than nothing. Barely." |
-| Silicone Earplugs | (32, 0) | 24x24 | 8 Sovs — "Now we're talking." |
-| Musician-Grade Plugs | (64, 0) | 24x24 | 20 Sovs — "The sound stays, the damage doesn't." |
-| Custom Molded (Premium) | (96, 0) | 24x24 | 45 Sovs — "Once you go custom, you never go back." |
+| Foam Earplugs (Basic) | (0, 0) | 24x24 | 3 SOVS — "Better than nothing. Barely." |
+| Silicone Earplugs | (32, 0) | 24x24 | 8 SOVS — "Now we're talking." |
+| Musician-Grade Plugs | (64, 0) | 24x24 | 20 SOVS — "The sound stays, the damage doesn't." |
+| Custom Molded (Premium) | (96, 0) | 24x24 | 45 SOVS — "Once you go custom, you never go back." |
 | Earplug Carry Case | (128, 0) | 24x24 | Keyring capsule |
 | Glow Stick (Dormant) | (160, 0) | 32x16 | Pre-crack state |
 | Glow Stick (Active) | (160, 16) | 32x16 | Cracked and glowing |
@@ -385,7 +385,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - Earplug tiers are shape-and-number coded (1-4 pips + dB figures), never color-only
 - Guilt Aura vs. Safety Check use distinct shapes (cloud vs. check), not just grey/green
 - Pre/post-midnight price tags differ by a "+50%" numeral, not tag color alone
-- Counter hotspot and all browser rows exceed the 44px minimum touch target
+- Counter hotspot and all browser rows exceed the 44px minimum click target
 
 ---
 
@@ -564,7 +564,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 - [ ] Satirical theme (military seriousness for club prep, sincerity underneath) is clear throughout all assets
 - [ ] Hidden details discoverable: exempt earplug tags, live decibel meter, "restock weekly" earplug crate
 - [ ] Performance optimized (single-draw-call browser, capped particles, clock-driven lighting)
-- [ ] Touch zone sizing considered (44px minimum — counter and browser rows compliant)
+- [ ] Click zone sizing considered (44px minimum — counter and browser rows compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (pip-coded tiers, shape-coded auras)
 - [ ] Social media viral potential maximized (chart, hearing-aid point, conversion arc compositions)
 

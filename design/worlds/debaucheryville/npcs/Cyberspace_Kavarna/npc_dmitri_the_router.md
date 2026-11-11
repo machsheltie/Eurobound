@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Renting time on Windows 98 terminals in a basement, cash only, at 3 Sovs an hour, to whoever comes down the staircase. He has run this room since 1999. He knows the connections are monitored, he knows the printed ICQ contact lists taped to the monitors are scammer directories, and he knows exactly which of his patrons are on the other end of them. He rents the terminals anyway, because the room is legal, the rent is due, and what people type is not his business.
+Renting time on Windows 98 terminals in a basement, cash only, at 3 SOVS an hour, to whoever comes down the staircase. He has run this room since 1999. He knows the connections are monitored, he knows the printed ICQ contact lists taped to the monitors are scammer directories, and he knows exactly which of his patrons are on the other end of them. He rents the terminals anyway, because the room is legal, the rent is due, and what people type is not his business.
 
 ### What Bros Believe
 That they have found the door into an authentic Eastern European digital underground — a real hacker den, the kind of place from the movies, where the ancient hardware is a sign of authenticity rather than of a business that has never had a good year. They believe Dmitri is the gatekeeper of that underground, and that his gruffness is a test.
@@ -68,7 +68,7 @@ Y2K survivor aesthetic, played completely straight — the tracksuit and cigaret
 | Non-interventionist | Knows who the scammers are, knows what the lists on the monitors are, rents to everyone equally |
 
 ### Internal Monologue
-> "American thinks he is in movie. Fine. Movie costs three Sovs per hour, fifteen for all night. He will pay for all night and he will use four hours and fall asleep on keyboard like the others. Terminal seven is broken. Terminal seven has been broken since the flood. Terminal seven still rents. This is business."
+> "American thinks he is in movie. Fine. Movie costs three SOVS per hour, fifteen for all night. He will pay for all night and he will use four hours and fall asleep on keyboard like the others. Terminal seven is broken. Terminal seven has been broken since the flood. Terminal seven still rents. This is business."
 
 ### Motivation
 The room. He opened it into a country that was still figuring out what it was, and it has outlasted the technology it was built around, the industry it belonged to, and most of the businesses on Hostel Row. Closing it has never come up. He is not nostalgic and he is not trapped — he simply runs the cafe, and the cafe is what there is.
@@ -80,13 +80,13 @@ The room. He opened it into a country that was still figuring out what it was, a
 ### Approach/Greeting
 
 **First entry, any hour**:
-> "Terminal is three Sovs, one hour. Fifteen for all night. Cash only. Credit cards are American conspiracy."
+> "Terminal is three SOVS, one hour. Fifteen for all night. Cash only. Credit cards are American conspiracy."
 
 **Entry during dead hours (03:00-06:00)**:
 > "Two per hour now. Cheap hours. Also busy hours. You understand what I am telling you? ...no. Fine. Two."
 
 **Entry during peak tourist hours (14:00-16:00)**:
-> "Six Sovs. Yes, six. Price is different in afternoon. Everything is different in afternoon."
+> "Six SOVS. Yes, six. Price is different in afternoon. Everything is different in afternoon."
 
 ### Key Interaction Dialogue
 
@@ -102,7 +102,7 @@ The room. He opened it into a country that was still figuring out what it was, a
 **Bradley**: "That's... actually a fair point about foundational skills."
 
 **Dmitri**:
-> "Three Sovs. One hour."
+> "Three SOVS. One hour."
 
 *If the player asks about the WiFi:*
 > "You want WiFi password? Password is 'password123' — like bank security."
@@ -116,8 +116,11 @@ The room. He opened it into a country that was still figuring out what it was, a
 *If the player asks whether the connection is secure:*
 > "Secure. Yes. Secure from what?"
 
+*If the player asks about the man at Tony's terminal (before the Döner Debate; Kavarna option C):*
+> "He rents terminal. Chair I rent by the hour. What man in chair does on terminal is his business. Three SOVS."
+
 *If the player asks about the printed ICQ lists taped to the monitors:*
-> "Somebody printed. Somebody taped. Is not my paper. Terminal is three Sovs."
+> "Somebody printed. Somebody taped. Is not my paper. Terminal is three SOVS."
 
 ### Sales Close (Terminal Rental)
 *He takes the cash, does not count it in front of you, and gestures at the room with two nicotine-stained fingers:*
@@ -132,7 +135,7 @@ The room. He opened it into a country that was still figuring out what it was, a
 > "No. Cash only. Credit cards are American conspiracy. ...I have been asked to explain this. I do not explain this."
 
 *Player tries to haggle:*
-> "Three Sovs is not a negotiation, it is a number. There is machine down the street. It is also three Sovs. Go, come back, still three Sovs."
+> "Three SOVS is not a negotiation, it is a number. There is machine down the street. It is also three SOVS. Go, come back, still three SOVS."
 
 *Player asks for a refund after a blue screen:*
 > "You lost work. Yes. Everyone loses work. This is why you save. Nobody saves. I do not refund the not-saving."
@@ -149,10 +152,10 @@ The room. He opened it into a country that was still figuring out what it was, a
 > "Back door works now. Metro is through there. I did not unlock it. Somebody unlocked it. Password changes at midnight and it is written in bathroom, which is a security system I did not design."
 
 *After extended use (Eye Strain / Digital Paranoia active):*
-> "Your eyes. Yes. Two hours is limit for human. Nobody respects limit for human. Terminal is still three Sovs."
+> "Your eyes. Yes. Two hours is limit for human. Nobody respects limit for human. Terminal is still three SOVS."
 
 *Late game, if the player has bought the all-night special more than three times:*
-> "You are here more than some of my regulars, and my regulars have ICQ numbers older than you. This is not compliment. Is observation. ...Fifteen Sovs."
+> "You are here more than some of my regulars, and my regulars have ICQ numbers older than you. This is not compliment. Is observation. ...Fifteen SOVS."
 
 *3-6 AM, with Late Night Exhaustion pose:*
 > "At this hour, everybody in this room is doing something they will not describe tomorrow. Including me. I am sitting here. I will not describe it."
@@ -165,8 +168,8 @@ The room. He opened it into a country that was still figuring out what it was, a
 | Time | Location | Activity |
 |------|----------|----------|
 | 00:00-03:00 | Behind the counter | Night operation; ICQ traffic climbing; chain smoking |
-| 03:00-06:00 | Behind the counter | Dead-hours pricing (2 Sovs/hr); peak scammer activity; Late Night Exhaustion wisdom mode |
-| 06:00-14:00 | Behind the counter | Quiet block; standard 3 Sovs/hr; newspaper, calculators, silence |
+| 03:00-06:00 | Behind the counter | Dead-hours pricing (2 SOVS/hr); peak scammer activity; Late Night Exhaustion wisdom mode |
+| 06:00-14:00 | Behind the counter | Quiet block; standard 3 SOVS/hr; newspaper, calculators, silence |
 | 14:00-16:00 | Behind the counter | Peak tourist hours; prices double; coordinated scammer teams working the room |
 | 16:00-00:00 | Behind the counter | Standard operation; mixed patronage |
 
@@ -185,13 +188,13 @@ The room. He opened it into a country that was still figuring out what it was, a
 ### Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Terminal rental (standard) | 3 Sovs/hour | A Windows 98 machine and a monitored connection | ICQ hotspot access; +200% scammer message rate while connected; Darkweb Dossier interactions available |
-| Terminal rental — "all-night special" | 15 Sovs | Eight-plus hours nobody uses fully | Same as above with enhanced scammer targeting; the cost-efficient option for sting operations |
-| Dead-hours rate (03:00-06:00) | 2 Sovs/hour | The best deal and the worst room | Cheapest access, highest scammer activity, enhanced sting-operation opportunities |
-| Peak-hours rate (14:00-16:00) | 6 Sovs/hour | Identical service | Prices double; bros get targeted by coordinated scammer teams immediately |
-| ICQ Premium "upgrade" | 5 Sovs | Nothing | Reduces spam by 10%. Placebo. Dmitri does not claim otherwise and does not volunteer it either |
-| VPN Service | 10 Sovs | Nothing useful | "Anonymous browsing" routed through three other equally sketchy cafes |
-| Mining pool buy-in | 20 Sovs | 0.003 Sovs per hour | The corner rigs are ancient. Dmitri did not install them and does not run them; he rents the corner they hum in |
+| Terminal rental (standard) | 3 SOVS/hour | A Windows 98 machine and a monitored connection | ICQ hotspot access; +200% scammer message rate while connected; Darkweb Dossier interactions available |
+| Terminal rental — "all-night special" | 15 SOVS | Eight-plus hours nobody uses fully | Same as above with enhanced scammer targeting; the cost-efficient option for sting operations |
+| Dead-hours rate (03:00-06:00) | 2 SOVS/hour | The best deal and the worst room | Cheapest access, highest scammer activity, enhanced sting-operation opportunities |
+| Peak-hours rate (14:00-16:00) | 6 SOVS/hour | Identical service | Prices double; bros get targeted by coordinated scammer teams immediately |
+| ICQ Premium "upgrade" | 5 SOVS | Nothing | Reduces spam by 10%. Placebo. Dmitri does not claim otherwise and does not volunteer it either |
+| VPN Service | 10 SOVS | Nothing useful | "Anonymous browsing" routed through three other equally sketchy cafes |
+| Mining pool buy-in | 20 SOVS | 0.003 SOVS per hour | The corner rigs are ancient. Dmitri did not install them and does not run them; he rents the corner they hum in |
 
 Cash only. There is no card reader in the building and there never has been.
 
@@ -211,7 +214,7 @@ Cash only. There is no card reader in the building and there never has been.
 |-----|--------------|
 | CyberGoth Katka | Longest-running patron in the room. He tolerates her, charges her, and has never once corrected anything she has said about herself |
 | Miss Morphine | An ICQ handle he has watched operate from this room for years across at least three physical people. He has opinions and does not share them |
-| Tony420 | Known quantity. Rents terminals. Runs a fake crypto wallet scheme out of a machine Dmitri rents him at full price. Tony is never seen in person (author, 2026-11-11). [KAVARNA STAGING: PENDING AUTHOR — goon held for the Döner Debate reveal] |
+| Tony420 | Known quantity. Rents terminals. Runs a fake crypto wallet scheme out of a machine Dmitri rents him at full price. Tony is never seen in person (author, 2026-11-11). Before the Döner Debate, Dmitri rents the chair at that machine by the hour to a different silent patron every night, none of them Tony, each paying separately and keeping the ICQ window open; after the Debate, Tony's goon and tablet take the slot (Kavarna option C, author 2026-11-11) |
 | NarcGreg | Attempting undercover infiltration of the scammer network, extremely badly. Dmitri identified him inside four minutes and has said nothing to anyone |
 | Věra Novotná (Midnight Munchies) | Hostel Row's other permanent overnight operator. Professional nod. Neither has ever been inside the other's business |
 | The ICQ Veterans | 30+ locals using the same handles since 2001. His actual regulars. They pay, they sit, they do not ask questions about the WiFi |
@@ -230,7 +233,7 @@ Cash only. There is no card reader in the building and there never has been.
 - Permanent presence at Cyberspace Kavarna; every Darkweb Dossier interaction routes through terminals he rents
 - Referenced from Hostel Row above: budget travelers describe "the guy in the basement with the tracksuit"
 - His metro back exit connects the Kavarna to fast city travel after one completed sting operation, making him an indirect traversal unlock
-- Terminal #13 holds Shadow Exchange ledger export files for the NFT hunt — Dmitri rents that machine at the same 3 Sovs as any other
+- Terminal #13 holds Shadow Exchange ledger export files for the NFT hunt — Dmitri rents that machine at the same 3 SOVS as any other
 
 ### In Other Cities (If Applicable)
 | City | Location | Role/Context | Callback Dialogue |
@@ -361,7 +364,7 @@ Czech, thick, worn by chain smoking into a rasp. English is his second language 
 - Dmitri has **no surname** in any source file. Do not invent one. "Dmitri 'The Router'" is the complete identity.
 - His mystical-sounding lines must never be written or performed as deliberate mysticism. Every one of them is a literal, accurate statement about running an internet cafe. If a future line sounds wise on purpose, it is wrong.
 - Dmitri does **not** give the sting-operation quests — Katka does. He is the paywall and the atmosphere. Keep the roles separate; merging them collapses both characters.
-- The Kavarna's crypto content (corner mining rigs, 20 Sovs mining pool, Terminal #7's wallet access) is **pre-established in the location file** and is retained here at minimal weight. Dmitri neither owns nor operates the rigs; he rents the corner. Do not expand this without routing through `design/economy/economy_system.md`.
+- The Kavarna's crypto content (corner mining rigs, 20 SOVS mining pool, Terminal #7's wallet access) is **pre-established in the location file** and is retained here at minimal weight. Dmitri neither owns nor operates the rigs; he rents the corner. Do not expand this without routing through `design/economy/economy_system.md`.
 - Terminal #7 is a deliberate dangling thread: he tells everyone to avoid it, and it is the one with the hidden wallet access. This should never be explained by him.
 - Voice acting priority: **high**. He has six canonical catchphrases and the room's entire tonal anchor rests on his delivery.
 
@@ -370,7 +373,7 @@ Czech, thick, worn by chain smoking into a rasp. English is his second language 
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — the mining rigs, 20 Sovs pool buy-in, and Terminal #7 wallet access are all **pre-existing in `cyberspacekavarna.md`**; nothing new is introduced here
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — the mining rigs, 20 SOVS pool buy-in, and Terminal #7 wallet access are all **pre-existing in `cyberspacekavarna.md`**; nothing new is introduced here
 - [x] **NO automatic crypto assumptions** — Dmitri personally has no crypto; he rents floor space to machines other people own
 - [x] **Coins, kiosks, and certificates come from the master pool** — no coins named, no kiosks invented in this profile
 - [x] **The bros are never scam-aware** — they read his literal business statements as underground wisdom and pay double at peak hours believing it proves authenticity

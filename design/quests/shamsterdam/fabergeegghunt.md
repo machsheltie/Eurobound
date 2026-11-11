@@ -220,7 +220,7 @@ As the bros enter in tactical formation (unnecessary crouching, hand signals no 
 **THE CHOCOLATE ANATOMY SECTION**
 
 A massive floor display featuring:
-- Chocolate penises in white, milk, and dark chocolate (9-25 Sovs)
+- Chocolate penises in white, milk, and dark chocolate (9-25 SOVS)
 - White chocolate specimens marbled with wild neon colors for maximum tackiness
 - A size range from "novelty keychain" to "bachelorette party centerpiece"
 - Artisanal decorated versions with sprinkles, edible glitter, and fondant bow ties
@@ -274,7 +274,7 @@ If player chooses to interact with the chocolate display:
 
 **Lord Pilsner**: "I'm prepared to make this worth your while."
 
-*Pilsner slides a 20 Sovs note across the counter. Daan glances at it, shrugs, pockets it, returns to phone.*
+*Pilsner slides a 20 SOVS note across the counter. Daan glances at it, shrugs, pockets it, returns to phone.*
 
 **Daan**: "Cool. Eggs are in the back. By the clogs."
 
@@ -341,7 +341,7 @@ If player chooses to interact with the chocolate display:
 #### Part D: The Vault
 
 **Scene Description**:
-> They reach Section C: "Decorative Ovoid Objects & Seasonal Chocolates." A small glass display case sits on a pedestal next to a rack of tulip-shaped lollipops. Inside: a single ornate egg with a 4 Sovs price tag clearly visible.
+> They reach Section C: "Decorative Ovoid Objects & Seasonal Chocolates." A small glass display case sits on a pedestal next to a rack of tulip-shaped lollipops. Inside: a single ornate egg with a 4 SOVS price tag clearly visible.
 
 **The Bros' Interpretation**:
 
@@ -353,7 +353,7 @@ If player chooses to interact with the chocolate display:
 
 **Lord Pilsner**: "It's the glow of HISTORY, Bradley."
 
-*The egg is a limited-edition Kinder Surprise decorated to look fancy. The tag reads: "FABERGÉ-STYLE COLLECTOR'S EGG — Milk Chocolate with Surprise Toy Inside! 4 Sovs or 2 for 6 Sovs"*
+*The egg is a limited-edition Kinder Surprise decorated to look fancy. The tag reads: "FABERGÉ-STYLE COLLECTOR'S EGG — Milk Chocolate with Surprise Toy Inside! 4 SOVS or 2 for 6 SOVS"*
 
 *The bros do not read the tag.*
 
@@ -515,7 +515,7 @@ I could tell he'd seen combat. I negotiated
 access through a combination of charm and 
 strategic financial incentives."
 
-Chadwick: "You gave him twenty Sovs."
+Chadwick: "You gave him twenty SOVS."
 
 Lord Pilsner: "STRATEGIC. FINANCIAL. INCENTIVES.
 
@@ -752,8 +752,7 @@ And that's what matters."
 | **"Complications" Report** | **"Heist Adjacent"** | Participation Trophy | +1 Luck. Havok had these made in advance. He gives them to everyone. |
 | **"Chaos" Report** | **"International Kinder Criminal"** | **Tiny Plastic Hippo** (Junk Trinket) | +1 Luck, -1 Intelligence. It was inside the egg. |
 
-### HNFT Acquisition: "Abstract Expression #69"
-idden Reward: The "Modern Art"
+### Hidden Reward: The "Modern Art"
 
 If player examined the chocolate anatomy display:
 
@@ -783,7 +782,10 @@ from shamsterdam for my bachelor party"
 "...did she like it"
 ```
 
-**NFT Acquisition: "Abstract Expression #69"**
+**NFT Acquisition: The Nordic Vacuum Warranty (Austin Powers Swedish Penis Enlarger Pump)**
+
+> **Subject swap (author, 2026-11-11):** Shamsterdam slot 1 is now the Austin Powers Swedish Penis Enlarger Pump; route unchanged. Display name approved (author, 2026-11-11): **The Nordic Vacuum Warranty**. Card art, edition and mint numbers, artist statement and the rest of the item JSON are the author's and pending. The pixel-art description, edition numbers, artist statement and JSON below still describe the struck chocolate-anatomy NFT and must not ship as written.
+
 Acquisition Trigger
 When player examines the Chocolate Anatomy Emporium display, Chadwick notices a small QR code on the display stand:
 Chadwick: "Wait wait wait. There's a QR code here. This might be one of those NFT things."
@@ -806,20 +808,20 @@ The image is a crudely pixelated chocolate penis. 8-bit. Badly drawn. It's weari
 Bradley: "...Is that...?"
 Chadwick: "It's ART, Bradley. DIGITAL art. On the blockchain."
 Lord Pilsner: "What's it called?"
-Chadwick: reading "'Abstract Expression #69.' Limited edition. One of... squints ...47,000."
+Chadwick: reading "'The Nordic Vacuum Warranty.' Limited edition. One of... squints ...47,000."
 Bradley: "Bro. We own one of only 47,000."
 Lord Pilsner: "That's basically RARE."
 
 **NFT Item Details**
 Item ID: nft_abstract_expression_69
-Display Name: "Abstract Expression #69"
+Display Name: The Nordic Vacuum Warranty
 Type: Collectible / NFT (Permanent)Slot
 NFT Wallet: (does not take inventory space)
 Can Sell: No
 Can Delete: No ("The blockchain is forever, Bradley.")
 
 **Item Description (Inventory View)**
-"Abstract Expression #69"
+The Nordic Vacuum Warranty
 ━━━━━━━━━━━━━━━━━━━━━━━━
 
 [PIXEL ART: Badly drawn 8-bit chocolate penis 
@@ -829,7 +831,7 @@ Shamsterdam flag. Text: "CLASSY" in Comic Sans]
 Edition: #31,847 of 47,000
 Minted: Shamsterdam Gift Shop Terminal
 Blockchain: "TulipChain" (unverified)
-Current Value: 0.0003 Sovs (down 99.7% from mint)
+Current Value: 0.0003 SOVS (down 99.7% from mint)
 
 Creator's Statement:
 "This piece explores the intersection of 
@@ -841,7 +843,7 @@ with a top hat. You're welcome."
 
 Certificate of Authenticity:
 "This NFT is definitely real and not a 
-screenshot someone minted for 2 Sovs. Trust us. 
+screenshot someone minted for 2 SOVS. Trust us. 
 We're on a blockchain. Probably."
 
 Bros' Assessment:
@@ -865,7 +867,7 @@ Please hodl."
 
 Floor price: 
 Three other tourists have listed theirs for 
-0.01 Sovs. There are no buyers.
+0.01 SOVS. There are no buyers.
 
 Rarity traits:
 - Top Hat: Common (89% have this)
@@ -889,7 +891,7 @@ First time viewing the NFT after acquisition, a pop-up appears:
         ARTIST STATEMENT
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Thank you for collecting "Abstract Expression #69."
+Thank you for collecting The Nordic Vacuum Warranty.
 
 By scanning this QR code, you have become 
 a patron of the arts. Specifically, MY art. 
@@ -900,7 +902,7 @@ This piece represents:
 - The masculine gaze commodified and 
   rendered in 47 pixels
 - A chocolate penis wearing a top hat
-- 2 Sovs I spent on minting fees
+- 2 SOVS I spent on minting fees
 
 You cannot sell this NFT because no one 
 wants to buy it. You cannot delete it 
@@ -952,7 +954,7 @@ Bradley: "I still don't fully understand what an NFT is but I'm proud of us."
 Item JSON Implementation
 json{
   "item_id": "nft_abstract_expression_69",
-  "display_name": "\"Abstract Expression #69\"",
+  "display_name": "The Nordic Vacuum Warranty",
   "type": "collectible_nft",
   "category": "nft_wallet",
   "rarity": "common_but_they_think_its_rare",
@@ -1014,7 +1016,7 @@ CryptoBro69 ICQ reaction tying it to existing characters
 ### Completion Achievement
 
 **"Museum Grade Idiot"**
-> *Successfully "stole" a 4 Sovs chocolate egg from a gift shop while believing it was worth millions. The gift shop has marked you as "inventory shrinkage."*
+> *Successfully "stole" a 4 SOVS chocolate egg from a gift shop while believing it was worth millions. The gift shop has marked you as "inventory shrinkage."*
 
 ---
 
@@ -1244,7 +1246,7 @@ Animation Notes:
 💬 From: AgentH_Classified
 "Mission report filed. You're in the system now.
 Also I found more chocolate eggs if you want.
-They're 2 Sovs at the corner store.
+They're 2 SOVS at the corner store.
 ...This message will self-destruct.
 ...It will not actually self-destruct."
 

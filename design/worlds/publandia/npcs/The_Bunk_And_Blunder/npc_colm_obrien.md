@@ -18,17 +18,17 @@
 
 ### What He's Actually Doing
 
-Running the front desk of a 15 Sovs-a-night hostel, 24 hours a day, for eight years, with a functional and quietly excellent system: take the money upfront, hand over the key card, wish them luck, ask nothing. He is the entire operational spine of the building. He knows which shower has hot water on any given morning. He knows who is going to be a problem before they finish saying their name. He processes a hundred and forty beds of human catastrophe a week and he has never once raised his voice.
+Running the front desk of a 15 SOVS-a-night hostel, 24 hours a day, for eight years, with a functional and quietly excellent system: take the money upfront, hand over the key card, wish them luck, ask nothing. He is the entire operational spine of the building. He knows which shower has hot water on any given morning. He knows who is going to be a problem before they finish saying their name. He processes a hundred and forty beds of human catastrophe a week and he has never once raised his voice.
 
 He is also, and this is not a contradiction, extremely good at his job in the commercial sense. Nobody gets a refund. Nobody has ever got a refund. The no-refunds policy is not written down anywhere and has never been successfully challenged.
 
 ### What Bros Believe
 
-A chill, low-key dude who is really relaxed about everything. Lord Pilsner has decided Colm is "basically our guy now." Chadwick believes Colm is impressed by them. Bradley believes Colm is a monk. All three believe the 15 Sovs rate is a steal they personally negotiated.
+A chill, low-key dude who is really relaxed about everything. Lord Pilsner has decided Colm is "basically our guy now." Chadwick believes Colm is impressed by them. Bradley believes Colm is a monk. All three believe the 15 SOVS rate is a steal they personally negotiated.
 
 ### The Comedy Gap
 
-Colm is not chill. Colm is load-bearing. Every "grand, that's 18 Sovs, room 4, good luck" is the sound of a man moving a body of water with a teaspoon and being extremely efficient about it. The bros interpret total professional detachment as friendship, and keep escalating — telling him their plans, asking him to remember them, asking him to settle arguments. He hands them a key card. He wishes them luck. They leave the desk convinced they have bonded.
+Colm is not chill. Colm is load-bearing. Every "grand, that's 18 SOVS, room 4, good luck" is the sound of a man moving a body of water with a teaspoon and being extremely efficient about it. The bros interpret total professional detachment as friendship, and keep escalating — telling him their plans, asking him to remember them, asking him to settle arguments. He hands them a key card. He wishes them luck. They leave the desk convinced they have bonded.
 
 ### The Surname Problem
 
@@ -83,7 +83,7 @@ Artists: the read is *depleted competence*, not depression. He is not sad. He is
 
 ### Internal Monologue
 
-> "Three of them. American. Loud in the doorway, which means loud in the room, which means the German girl in 4 is going to be at this desk at eight tomorrow with a face on her. Twelve-bed. They'll want the twelve-bed because it's fifteen Sovs and they think fifteen Sovs is a *win*. Give them the twelve-bed. Give them the card. Wish them luck. Do not ask what they've been drinking. Do not ask what the traffic cone is for. Eight years. You do not ask."
+> "Three of them. American. Loud in the doorway, which means loud in the room, which means the German girl in 4 is going to be at this desk at eight tomorrow with a face on her. Twelve-bed. They'll want the twelve-bed because it's fifteen SOVS and they think fifteen SOVS is a *win*. Give them the twelve-bed. Give them the card. Wish them luck. Do not ask what they've been drinking. Do not ask what the traffic cone is for. Eight years. You do not ask."
 
 ### Motivation
 
@@ -95,7 +95,7 @@ He took this job for a gap year in 2018 and never left, and the honest reason is
 
 ### Check-In
 
-> "Room type? Grand. That's 18 Sovs. Key card. Room 4. Good luck."
+> "Room type? Grand. That's 18 SOVS. Key card. Room 4. Good luck."
 
 > "Twelve-bed's fifteen. Eight-bed's eighteen. Four-bed's twenty-two. Private double's forty-five, private single's thirty-five. Yes, the single's cheaper than the double. No, I don't make the prices."
 
@@ -109,7 +109,7 @@ He took this job for a gap year in 2018 and never left, and the honest reason is
 
 > "Room assignment's random. I can't pick your roommates. If I could pick roommates I'd be running a much better hostel and charging a great deal more."
 
-> "Bring your own lock for the locker. I sell them for four Sovs. I'd buy one."
+> "Bring your own lock for the locker. I sell them for four SOVS. I'd buy one."
 
 ---
 
@@ -255,12 +255,12 @@ He took this job for a gap year in 2018 and never left, and the honest reason is
 ### Beds and Services
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| 12-Bed Dorm | 15 Sovs/night | Roughly 15 Sovs of bed and none of sleep | 30% sleep quality baseline, Maximum chaos, no privacy |
-| 8-Bed Dorm | 18 Sovs/night | The honest middle of the market | 45% sleep quality, High chaos, minimal privacy |
-| 4-Bed Dorm | 22 Sovs/night | The best value in the building and he'd say so if asked | 60% sleep quality, Moderate chaos, some privacy |
-| "Private" Double | 45 Sovs/night | Overpriced; walls don't reach the ceiling | 75% sleep quality, Variable chaos, theoretical privacy |
-| "Private" Single | 35 Sovs/night | Cheaper than the double, which he refuses to justify | 85% sleep quality, chaos is entirely your own, actual privacy |
-| Padlock | 4 Sovs | A 4 Sovs padlock, honestly sold | Protects locker contents; without it, "Lost Item Claim" events can hit the player |
+| 12-Bed Dorm | 15 SOVS/night | Roughly 15 SOVS of bed and none of sleep | 30% sleep quality baseline, Maximum chaos, no privacy |
+| 8-Bed Dorm | 18 SOVS/night | The honest middle of the market | 45% sleep quality, High chaos, minimal privacy |
+| 4-Bed Dorm | 22 SOVS/night | The best value in the building and he'd say so if asked | 60% sleep quality, Moderate chaos, some privacy |
+| "Private" Double | 45 SOVS/night | Overpriced; walls don't reach the ceiling | 75% sleep quality, Variable chaos, theoretical privacy |
+| "Private" Single | 35 SOVS/night | Cheaper than the double, which he refuses to justify | 85% sleep quality, chaos is entirely your own, actual privacy |
+| Padlock | 4 SOVS | A 4 SOVS padlock, honestly sold | Protects locker contents; without it, "Lost Item Claim" events can hit the player |
 | Wi-Fi access ("BunkWiFiGuest") | Free with stay | Connection is real, throughput is theoretical | ICQ access, selfie uploads, rumour pings |
 | Hot-water intelligence | Free | The single most valuable free thing in Publandia | Guarantees a successful Shower Gauntlet if acted on before 07:30 |
 | Continental breakfast | Free with stay, 07:00–09:00 | Toast and sadness; the coffee is genuinely good | Small HP restore; the coffee removes one stack of "Sleep Deprived" |
@@ -380,7 +380,7 @@ He is a soft gate on rest quality rather than on progress. The hot-water intelli
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Key Card | Every booking | No — surrendered at check-out | Dorm access; 50% chance of a dead card requiring a reissue |
-| Padlock | Purchasable any time, 4 Sovs | Yes | Prevents "Lost Item Claim" random events against the player's locker |
+| Padlock | Purchasable any time, 4 SOVS | Yes | Prevents "Lost Item Claim" random events against the player's locker |
 | Hot-water intelligence | Free, any morning he is asked | No — changes daily | Guarantees Shower Gauntlet success if acted on before 07:30 |
 | "Seasoned Traveler" status | 5 nights stayed | Yes | +10% rest quality permanently; bunk preference; he uses your name |
 | Free night voucher | "Hostel Hero" completion | Single use | One free stay at any room tier including the private single |
@@ -465,10 +465,10 @@ Dublin, contemporary, urban, unforced. Colm is roughly thirty years younger than
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Colm has no crypto content; the hostel is a cash-and-card Sov business and payment is upfront
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Colm has no crypto content; the hostel is a cash-and-card SOV business and payment is upfront
 - [x] **NO automatic crypto assumptions** - a hostel receptionist on a fixed wage does not earn in shitcoins and none has been given to him
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — no coins invented in this file
-- [x] **The bros are never scam-aware** - they believe 15 Sovs for a twelve-bed dorm is a personal financial triumph, and nothing that happens to them ever revises that belief
+- [x] **The bros are never scam-aware** - they believe 15 SOVS for a twelve-bed dorm is a personal financial triumph, and nothing that happens to them ever revises that belief
 - [x] **Nothing winks** - Colm never signals that the hostel is a joke, never comments on the absurdity of the prices, and never acknowledges the audience
 - [x] **Focus on city-specific cultural exploitation instead** - budget travel delusion, hostel culture, the "it builds character" false economy
 

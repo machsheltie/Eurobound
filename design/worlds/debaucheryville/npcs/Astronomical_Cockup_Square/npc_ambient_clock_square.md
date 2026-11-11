@@ -2,6 +2,8 @@
 
 *Background characters that add atmosphere and commentary*
 
+> **Ambient group doc.** This file profiles several ambient NPCs (Milan the Local Observer, Disappointed Tourist, unnamed crowd groups) in a reduced form of `design/templates/NPC_Profile_Template.md`; it intentionally does not carry all 18 template sections per NPC. OPEN QUESTION (author): do ambient/crowd group docs keep this reduced form, or does each named ambient NPC need the full 18-section template? (bead Eurobound-9u9, 2026-11-11)
+
 ---
 
 # Milan the Local Observer
@@ -71,8 +73,8 @@ Provides Czech dialogue (with subtitles) that lets players know how locals perce
 > *(The tall one wants a blessing from the guy in the bathrobe.)*
 
 ### Watching Bros Buy Wine
-> "Zaplatili šedesát Sov za krabicové víno."
-> *(They paid sixty Sovs for boxed wine.)*
+> "Zaplatili šedesát SOV za krabicové víno."
+> *(They paid sixty SOVS for boxed wine.)*
 
 ### Watching Tattoo Decision
 > "Ten vysoký chce tetování."

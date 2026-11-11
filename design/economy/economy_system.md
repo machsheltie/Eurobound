@@ -42,14 +42,14 @@ It is never *funny on purpose*. It is funny because it is extremely serious abou
 ### 1.3 Notation — SUPERSEDED BY AUTHOR RULING (2026-08-01)
 
 > **⚠️ The former "the euro sign is SOVS's display glyph" rule is DEAD. It was overridden by direct author ruling on 2026-08-01:**
-> *"Every. Country. Operates. On. Sovs. Not euros. We do not deal with exchanges of currency between areas. The whole game? Sovs."*
+> *"Every. Country. Operates. On. SOVS. Not euros. We do not deal with exchanges of currency between areas. The whole game? SOVS."*
 
 **The euro sign does not appear anywhere in the game.** Not as a glyph, not as a display convention, not in world text, not in the wallet, not as a commissioned sprite. `_sorting/Design/Economy/currency.md` is the only file in the repo permitted to render the forbidden forms, and only to name them.
 
-- Prices in world text, item files, shop tables, dialogue and UI read **`40 Sovs`** (prose) or **`40 SOVS`** (signage, menus, price boards, all-caps contexts). Singular is `1 Sov` / `1 SOV`.
+- Prices in world text, item files, shop tables, dialogue and UI read **`40 SOVS`** everywhere: prose, dialogue, signage, menus and price boards (author, 2026-11-11). Singular is `1 SOV`.
 - **The repo-wide retrofit has been executed** (2026-08-01): 4,215 conversions across 330 files. The previous rule forbidding it no longer applies.
-- **Writers add prices in Sovs.** Never author a euro sign, `EUR`, or "euro(s)" as money.
-- **The symbol is the word. There is no Sov glyph.** Art specs must letter `SOVS`, never commission a currency mark. Price tiers use `S` / `SS` / `SSS` (cheap / mid / expensive) — see §1.3a.
+- **Writers add prices in SOVS.** Never author a euro sign, `EUR`, or "euro(s)" as money.
+- **The symbol is the word. There is no SOV glyph.** Art specs must letter `SOVS`, never commission a currency mark. Price tiers use `S` / `SS` / `SSS` (cheap / mid / expensive) — see §1.3a.
 - Full canon: `_sorting/Design/Economy/currency.md`.
 
 **Koruna does not exist.** This is not a real continent and there is no koruna. Any surviving koruna/Kč reference is a defect (Lane R owns elimination). The same now applies to euros.
@@ -60,7 +60,7 @@ Some shops rank goods by expense rather than printing a figure (bargain-bin tags
 
 | Tier | Mark | Reads as |
 |---|---|---|
-| Cheap | `S` | one Sov-capital |
+| Cheap | `S` | one SOV-capital |
 | Mid | `SS` | two |
 | Expensive | `SSS` | three |
 

@@ -273,12 +273,12 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 ### Menu Beers (32x48 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Heir Apparent Ale | (0, 0) | 32x48 | Signature golden ale in crown-shaped glass (glass is yours, +3 Sovs) |
-| The Commoner | (32, 0) | 32x48 | 4 Sovs honest lager, apologetic presentation |
-| Duke's Dark | (64, 0) | 32x48 | 7 Sovs dark, served with slight bow |
-| Princess Pilsner | (96, 0) | 32x48 | 5 Sovs pale, served with curtsey |
-| The Usurper (Guest Beer) | (128, 0) | 32x48 | 6 Sovs, discussed in hushed tones |
-| King's Reserve | (160, 0) | 32x48 | 15 Sovs, full ceremony service |
+| Heir Apparent Ale | (0, 0) | 32x48 | Signature golden ale in crown-shaped glass (glass is yours, +3 SOVS) |
+| The Commoner | (32, 0) | 32x48 | 4 SOVS honest lager, apologetic presentation |
+| Duke's Dark | (64, 0) | 32x48 | 7 SOVS dark, served with slight bow |
+| Princess Pilsner | (96, 0) | 32x48 | 5 SOVS pale, served with curtsey |
+| The Usurper (Guest Beer) | (128, 0) | 32x48 | 6 SOVS, discussed in hushed tones |
+| King's Reserve | (160, 0) | 32x48 | 15 SOVS, full ceremony service |
 
 ### Ceremony & Tour Items:
 | Element | Position | Size | Description |
@@ -493,7 +493,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - Answer chips border-coded (smooth/double/jagged), never color alone
 - Drink timing ring uses a closing shape, not a color shift, for the window
 - Noble Blood vs. Royal Disappointment icons have distinct silhouettes (crown vs. tipped stein)
-- Touch zones minimum 44px for ceremony inputs, menu, and stamp slot
+- Click zones minimum 44px for ceremony inputs, menu, and stamp slot
 
 ---
 
@@ -669,7 +669,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 - [ ] Satirical theme (imperial cosplay, inherited authority) is clear throughout
 - [ ] Hidden Usurper interaction has a discoverable visual cue (empty inviting throne)
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 
@@ -682,7 +682,7 @@ assets/sprites/locations/sinfonia/crown_and_cask/
 | World Consistency (no real city names) | ✅ | Sinfonia only; Habsburg/Austrian imperial aesthetics evoked, never named as real places |
 | Cultural Specificity | ✅ | Habsburg nostalgia, imperial ceremony, family-recipe dynasty mythology |
 | Satirical Targets Appropriate | ✅ | Inherited privilege and imperial cosplay satirized; Klaus is affectionate, not a local stereotype |
-| Seedy Underbelly Present | ❌ | Intentionally benign per profile — no vice operation documented beyond the 3 Sovs keepsake-glass upsell and self-appointed authority |
+| Seedy Underbelly Present | ❌ | Intentionally benign per profile — no vice operation documented beyond the 3 SOVS keepsake-glass upsell and self-appointed authority |
 | Gameplay Value Established | ✅ | Brewery Tour stamp, ceremony QTE + dialogue, beer shop with buffs, hidden quest |
 | Technical Feasibility | ✅ | Seven sheets, atlas plan, LOD tiers documented |
 | Performance Budget | ✅ | 60 FPS default (profile states no budget — flagged), 20 draw calls, 35 MB, 20 particles |

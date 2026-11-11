@@ -14,9 +14,9 @@
 ### Entry Conditions
 - **Time Restrictions**: 24-hour reception (theoretically), night staff is one guy who's "around somewhere"
 - **Stat Requirements**: None for check-in (dignity check to survive the stay)
-- **Item Requirements**: 35 Sovs/night for 12-bed dorm, 55 Sovs for "private" 4-bed, 85 Sovs for actual private (always "fully booked")
+- **Item Requirements**: 35 SOVS/night for 12-bed dorm, 55 SOVS for "private" 4-bed, 85 SOVS for actual private (always "fully booked")
 - **Previous Location Requirements**: None (often first or last stop in Shamsterdam)
-- **Special Conditions**: 20 Sovs key deposit, 50 Sovs "damage deposit" that you won't see again
+- **Special Conditions**: 20 SOVS key deposit, 50 SOVS "damage deposit" that you won't see again
 
 ### Exit Conditions
 - **Normal Exit**: Through lobby, past judgment of day staff
@@ -43,7 +43,7 @@
   - Reception desk with plexiglass barrier (COVID addition, never removed, now has stickers)
   - Key rack with missing keys (some rooms have 3+ copies floating around)
   - Bulletin board of "events" (pub crawl flyers from 2019, one yoga class that never happened)
-  - Vending machine with 4 Sovs water and 6 Sovs "emergency toiletries"
+  - Vending machine with 4 SOVS water and 6 SOVS "emergency toiletries"
   - Lost and found box that's really just a "free stuff" box
   - Communal computer (still runs Windows 7, keyboard is... sticky)
   - Three couches that tell three different stories of human suffering
@@ -60,7 +60,7 @@
 - **Lighting**: One overhead that's always too bright, individual reading lights (half broken)
 - **Furniture & Props**:
   - Metal bunk beds with mattresses of varying depression levels
-  - Lockers too small for actual luggage, locks sold separately at reception (8 Sovs)
+  - Lockers too small for actual luggage, locks sold separately at reception (8 SOVS)
   - One power outlet per four beds (adapter wars are real)
   - Privacy curtains (on 4 beds, the "premium" bunks)
   - THE BUNK (everyone knows which one — bottom corner, mysterious stain, draft)
@@ -102,7 +102,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The universal hostel experience — a place that "tolerates" everything except being comfortable, quiet, or dignified. It's where travel dreams meet travel reality: the 35 Sovs/night savings cost you in sleep, sanity, and faith in humanity. Everyone here has a story, nobody wants to hear it at 3 AM, and the communal kitchen is a war zone of passive-aggressive notes and stolen yogurt.
+**Core Concept**: The universal hostel experience — a place that "tolerates" everything except being comfortable, quiet, or dignified. It's where travel dreams meet travel reality: the 35 SOVS/night savings cost you in sleep, sanity, and faith in humanity. Everyone here has a story, nobody wants to hear it at 3 AM, and the communal kitchen is a war zone of passive-aggressive notes and stolen yogurt.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Budget travel romanticism vs. reality, "meeting people" means "enduring people"
@@ -121,7 +121,7 @@
 ### Buffoon Delusion Scenarios
 **What bros THINK is happening**: Authentic backpacker experience, meeting fellow travelers, living like locals
 
-**What is ACTUALLY happening**: Paying 35 Sovs to not sleep while someone's alarm goes off every hour
+**What is ACTUALLY happening**: Paying 35 SOVS to not sleep while someone's alarm goes off every hour
 
 **How impaired are they**: Usually very (this is Shamsterdam), impairment doesn't help the bunk situation
 
@@ -129,7 +129,7 @@
 - "Private room" means 4 strangers instead of 12
 - 3.4 TripAdvisor stars is NOT good
 - "Party hostel" means "you will not sleep"
-- The 20 Sovs deposit is a fee, not a deposit
+- The 20 SOVS deposit is a fee, not a deposit
 - Lockers require their own lock (sold at reception for 3x market price)
 - The "free breakfast" is bread and whatever spread hasn't been stolen
 
@@ -138,18 +138,18 @@
 ## Gameplay Mechanics
 ### Check-In System
 - **Reception Interaction**: Approach desk, wait for staff to finish phone call (personal, not business)
-- **Room Assignment**: Choice of 12-bed (35 Sovs), 4-bed "private" (55 Sovs), or told actual private is "fully booked" (85 Sovs)
-- **Deposit Collection**: 20 Sovs key + 50 Sovs damage, neither of which you'll see again
+- **Room Assignment**: Choice of 12-bed (35 SOVS), 4-bed "private" (55 SOVS), or told actual private is "fully booked" (85 SOVS)
+- **Deposit Collection**: 20 SOVS key + 50 SOVS damage, neither of which you'll see again
 - **Key Acquisition**: Physical key on keychain large enough to be embarrassing in public
 - **Orientation**: "Kitchen's there, bathroom's there, quiet hours are 11 PM, nobody follows quiet hours"
 
 ### Room Selection Consequences
 | Room Type | Price | Effects | Notes |
 |-----------|-------|---------|-------|
-| 12-Bed Dorm | 35 Sovs | -Sleep quality, +Random encounter chance, +Story opportunity | THE authentic experience |
-| 4-Bed "Private" | 55 Sovs | -Sleep quality (less), +Awkward intimacy with 3 strangers | Private between air quotes |
-| Actual Private | 85 Sovs | "Fully booked" (always), redirected to 4-bed | The lie that keeps on lying |
-| THE BUNK | 35 Sovs | Worst position in 12-bed, -HP overnight, +Bravado for surviving | Bottom corner, draft, stain |
+| 12-Bed Dorm | 35 SOVS | -Sleep quality, +Random encounter chance, +Story opportunity | THE authentic experience |
+| 4-Bed "Private" | 55 SOVS | -Sleep quality (less), +Awkward intimacy with 3 strangers | Private between air quotes |
+| Actual Private | 85 SOVS | "Fully booked" (always), redirected to 4-bed | The lie that keeps on lying |
+| THE BUNK | 35 SOVS | Worst position in 12-bed, -HP overnight, +Bravado for surviving | Bottom corner, draft, stain |
 
 ### Sleep Quality System
 Each night's rest affects next-day performance:
@@ -210,7 +210,7 @@ Each night's rest affects next-day performance:
 - **Availability**: "Around somewhere" after midnight, responds to persistent buzzing
 - **Dialogue**:
   - "Check-in? Yeah, okay. Passport. Deposit. Room 3. Bed... whichever one is empty."
-  - "Lost your key? That's the third one today. Twenty Sovs. Yeah, I know you paid deposit. Twenty Sovs."
+  - "Lost your key? That's the third one today. Twenty SOVS. Yeah, I know you paid deposit. Twenty SOVS."
   - "Noise complaint? I'll... look into it. *returns to laptop*"
   - "The Wi-Fi password is 'everything.' Yeah, lowercase, one word. Like we tolerate everything. Get it?"
   - "Breakfast is 7 to 10. It's bread. And whatever's in the jar. I don't ask about the jar."
@@ -232,7 +232,7 @@ Each night's rest affects next-day performance:
 - **Appearance**: Eastern European, headphones always in, works around you not with you
 - **Background**: Knows everything that happens in every room, will never tell
 - **Demeanor**: Efficient, silent, occasionally mutters in her language (probably commentary)
-- **Dialogue**: *removes one earbud* "You need towel? Three Sovs. You need sheet? Supposed to have sheet. Check lost and found." *replaces earbud*
+- **Dialogue**: *removes one earbud* "You need towel? Three SOVS. You need sheet? Supposed to have sheet. Check lost and found." *replaces earbud*
 
 ### Guest NPCs (Rotating Cast)
 
@@ -270,7 +270,7 @@ Each night's rest affects next-day performance:
 - **Trigger**: Complain about hostel to Wolf
 - **Offer**: "I know a guy with a squat near the Wandelpark. Real authentic. Interested?"
 - **Result**: Technically a couchsurf option, significantly worse accommodation
-- **Morning After**: Wake up in someone's art space/illegal sublet, Wolf is gone, you owe someone 15 Sovs for "utilities"
+- **Morning After**: Wake up in someone's art space/illegal sublet, Wolf is gone, you owe someone 15 SOVS for "utilities"
 
 ### Original NPC Dialogue
 **Kitchen Morning Exchanges:**
@@ -297,7 +297,7 @@ Each night's rest affects next-day performance:
 Overhear conversations that provide:
 - **Location Hints**: "Did you go to that coffeeshop on the corner? Not the famous one, the one behind it? Way better."
 - **Quest Clues**: "Some guy in a dog hoodie asked me about eggs yesterday. Weird vibe."
-- **Price Warnings**: "Don't do the banana show. It's like 65 Sovs and then drinks are 15 Sovs and—"
+- **Price Warnings**: "Don't do the banana show. It's like 65 SOVS and then drinks are 15 SOVS and—"
 - **NPC Connections**: "You know Mehmet at the döner place? Tell him Wolf sent you. He'll pretend he doesn't know me but he does."
 
 ### Cross-Location Dependencies
@@ -401,14 +401,14 @@ Potential side content triggers:
 - bulletin_board.png - 256x384 - Rotating content, quest hooks
 - locker_row.png - 384x128 - Too small, locks sold separately
 - common_room_couch.png - 256x128 - Three stories of suffering
-- vending_machine.png - 96x192 - 4 Sovs water, 6 Sovs dignity
+- vending_machine.png - 96x192 - 4 SOVS water, 6 SOVS dignity
 - window_7_computer.png - 128x96 - Sticky keyboard, slow connection
 - polaroid_wall.png - 192x128 - "Tolerance Family" (everyone wasted)
 - passive_aggressive_notes.png - 128x128 - Collection of hostility
 
 ### Character Sprites (16 PNGs)
 - yusuf_night_reception.png - 64x96 - Tired, hoodie, laptop open
-- yusuf_key_replacement.png - 64x96x2 - Twenty Sovs, no negotiation
+- yusuf_key_replacement.png - 64x96x2 - Twenty SOVS, no negotiation
 - ingrid_day_manager.png - 64x96 - Efficient disappointment
 - ingrid_checkout_judgment.png - 64x96x2 - Deposit conversation
 - maria_housekeeping.png - 64x96 - Headphones in, works around you
@@ -422,7 +422,7 @@ Potential side content triggers:
 
 ### Interactive Objects (8 PNGs)
 - hostel_key_oversized.png - 48x64 - Embarrassingly large keychain
-- locker_lock_sold_separately.png - 32x32 - 8 Sovs at reception
+- locker_lock_sold_separately.png - 32x32 - 8 SOVS at reception
 - fridge_shelf_yours.png - 128x64 - Designated, 85% safe
 - shower_hot_water_indicator.png - 64x32 - The good shower secret
 - alarm_phone_buzzing.png - 32x32 - 5 AM, every day
@@ -440,4 +440,4 @@ Potential side content triggers:
 
 ---
 
-*The Tolerance Hostel: Where 35 Sovs buys you a bed, and everything else costs extra — especially your sanity.*
+*The Tolerance Hostel: Where 35 SOVS buys you a bed, and everything else costs extra — especially your sanity.*

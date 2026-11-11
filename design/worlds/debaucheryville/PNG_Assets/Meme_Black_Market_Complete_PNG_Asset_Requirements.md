@@ -444,7 +444,7 @@ The eternal digital samsara display:
 - **FPS:** 8, continuous loop across all vendor states
 - **Cloud Persistence:** Baja Blast cloud persists 5 seconds per exhale
 - **Particle:** Baja Blast cloud (green #00FF7F) spawns on every exhale
-- **Performance Optimization:** Cap simultaneous vape clouds (max 3 on screen); reuse pooled particles instead of spawning new ones on low-end devices
+- **Performance Optimization:** Cap simultaneous vape clouds (max 3 on screen); reuse pooled particles instead of spawning new ones on min-spec hardware
 
 ### ASCII Cat Tracking:
 - **Pattern:** Staring → Eyes Tracking → Staring
@@ -516,7 +516,7 @@ The eternal digital samsara display:
 ### Colorblind Considerations:
 - MemeMastery meter stages use fill patterns plus percentage text, not color alone
 - Status icons (Mentally Unwell, Cringe, Elite Internet User) use distinct silhouettes, not color coding
-- Touch zones minimum 44px for vendor menu tabs, password terminal, and VHS shelf interaction
+- Click zones minimum 44px for vendor menu tabs, password terminal, and VHS shelf interaction
 
 ---
 
@@ -729,7 +729,7 @@ The eternal digital samsara display:
 - [ ] Satirical theme (weaponized nostalgia as sacred economy) is clear throughout all assets
 - [ ] Hidden VHS entrance discoverable via RGB light leak at 3:33 AM
 - [ ] Performance optimized (CPU particles, max 3 vape clouds, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for vendor menu and password terminal)
+- [ ] Click zone sizing considered (44px minimum for vendor menu and password terminal)
 - [ ] Colorblind-friendly meter patterns and status icon silhouettes
 - [ ] Social media viral potential maximized in composition choices (Trollface bomb, MemeMastery full)
 
@@ -744,7 +744,7 @@ The eternal digital samsara display:
 | Satirical Targets Appropriate | ✅ PASS | Meme commodification and nostalgia exploitation — punches up |
 | Seedy Underbelly Present | ✅ PASS | Underground economy selling psychological damage |
 | Gameplay Value Established | ✅ PASS | Vendor, summons, MemeMastery progression, ICQ unlock |
-| Technical Feasibility | ✅ PASS | Mobile optimization documented |
+| Technical Feasibility | ✅ PASS | Desktop performance budget documented |
 | Performance Budget | ✅ PASS | 60 FPS, 18 draws, 42MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
 | No Crypto Elements | ✅ PASS | Crypto/meme satire (Meatspin NFT, Funcoland Futures, Diamond Hands) is established source material |

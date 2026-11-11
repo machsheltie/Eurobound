@@ -124,10 +124,10 @@ The craft, the legacy, and the shop. His father made döner. His father's father
 **Asked whether there is lamb**:
 > "You can't decide? Mixed. But lamb is better." *(Beat.)* "We don't have lamb tonight."
 
-**The Triple Tower (8 Sovs)**:
+**The Triple Tower (8 SOVS)**:
 > "The Triple Tower? You have big appetite. Or big problems." *(He reaches for the largest bread.)* "Either way, I help."
 
-**Just bread (2 Sovs)**:
+**Just bread (2 SOVS)**:
 > "You came here for... bread?"
 > *(He gives it to them. It is excellent bread. He is genuinely confused.)*
 
@@ -249,14 +249,14 @@ The craft, the legacy, and the shop. His father made döner. His father's father
 ### Menu
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Döner (Veal) | 6 Sovs | 6 Sovs | +30 HP. "Good choice." |
-| Döner (Chicken) | 5 Sovs | 5 Sovs | +25 HP. "...okay." |
-| Döner (Mixed) | 5 Sovs | 5 Sovs | +28 HP. "Indecisive. But okay." |
-| **The Triple Tower** | 8 Sovs | 8 Sovs | +40 HP, +15 SP. Garlic Aura, possible Meat Sweats. "You are hungry. I respect this." |
-| Extra Garlic Sauce | +1 Sov | 0.50 Sovs | +5 HP, Garlic Aura extended. "You want to be alone tonight?" |
-| Extra Hot Sauce | +1 Sov | 0.50 Sovs | +5 HP, −5 HP delayed. Fire Breath. "Turkish hot. Not tourist hot." |
-| Just Bread | 2 Sovs | 2 Sovs | +10 HP, Disappointment. "You came here for... bread?" |
-| Drink (Ayran) | 2 Sovs | 2 Sovs | +10 HP, Cooling. "Good with döner. Traditional." |
+| Döner (Veal) | 6 SOVS | 6 SOVS | +30 HP. "Good choice." |
+| Döner (Chicken) | 5 SOVS | 5 SOVS | +25 HP. "...okay." |
+| Döner (Mixed) | 5 SOVS | 5 SOVS | +28 HP. "Indecisive. But okay." |
+| **The Triple Tower** | 8 SOVS | 8 SOVS | +40 HP, +15 SP. Garlic Aura, possible Meat Sweats. "You are hungry. I respect this." |
+| Extra Garlic Sauce | +1 SOV | 0.50 SOVS | +5 HP, Garlic Aura extended. "You want to be alone tonight?" |
+| Extra Hot Sauce | +1 SOV | 0.50 SOVS | +5 HP, −5 HP delayed. Fire Breath. "Turkish hot. Not tourist hot." |
+| Just Bread | 2 SOVS | 2 SOVS | +10 HP, Disappointment. "You came here for... bread?" |
+| Drink (Ayran) | 2 SOVS | 2 SOVS | +10 HP, Cooling. "Good with döner. Traditional." |
 
 ### Status Effects Applied
 | Effect | Source | Duration | Result |
@@ -467,7 +467,7 @@ Turkish, thirty-seven years in the Netherlands, Istanbul origin. Fluent function
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Mehmet has none. Sovs, cash, 2–8 Sovs, payment at the end as is tradition.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Mehmet has none. SOVS, cash, 2–8 SOVS, payment at the end as is tradition.
 - [x] **NO automatic crypto assumptions** — a standing-room döner counter open since 1992 takes cash
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — there is no scam; Bradley thanks him sincerely and misreads the reply as a rebuff
@@ -477,7 +477,7 @@ Turkish, thirty-seven years in the Netherlands, Istanbul origin. Fluent function
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is bros trying to impress a working man; Turkish immigrant food culture is celebrated explicitly and at length, and the food is stated to be genuinely the best in the game
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Mehmet is a master craftsman running a thirty-two-year business, training his daughter to inherit it, and directing customers to his competitor for what his competitor does better
-- [x] Humour is affectionate mockery, not mean-spirited — his judgment is warm underneath, his approval is earnable, and the "1992, nobody wants Turkish food here — port-city man is wrong" line is a straight triumph with no irony attached
+- [x] Humour is affectionate mockery — his judgment is warm underneath, his approval is earnable, and the "1992, nobody wants Turkish food here — port-city man is wrong" line is a straight triumph with no irony attached
 
 ---
 
@@ -492,7 +492,7 @@ Turkish, thirty-seven years in the Netherlands, Istanbul origin. Fluent function
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `leemans_doner_palace.md` + `PNG_Assets/Leemans_Doner_Palace_PNG_Assets.md` + `the_tolerance_hostel.md` (Wolf/Kevin cross-reference) + `Design/Quests/greatdonerdebate.md`. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `leemans_doner_palace.md` + `PNG_Assets/Leemans_Doner_Palace_PNG_Assets.md` + `the_tolerance_hostel.md` (Wolf/Kevin cross-reference) + `design/quests/general_quests/greatdonerdebate.md`. | Shamsterdam NPC authoring pass |
 
 ---
 

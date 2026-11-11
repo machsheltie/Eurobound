@@ -72,7 +72,7 @@ After searching through all quest files, the character development scope is **MA
 39. **Shadow Tipsters** - Rumor and hint providers
 
 #### **🌐 Extended Darkweb Dossier Characters:**
-40. **Tony420** - Cyber-dealer (ICQ + real encounters)
+40. **Tony420** - Cyber-dealer (ICQ + goon-and-tablet encounters; never seen in person)
 41. **CryptoBro69** - NFT evangelist 
 42. **Miss Morphine** - ASCII riddle provider
 43. **CryptoMamiXXX** - Sarcastic crypto critic

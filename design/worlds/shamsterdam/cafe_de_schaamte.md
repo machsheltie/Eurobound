@@ -65,11 +65,11 @@
 - **Lighting Setup**: Natural daylight (adjusts with time of day), warm string lights (evening), canal reflection shimmer (constant)
 - **Particle Systems**: Espresso steam, cigarette/weed smoke wisps, canal mist, bicycle dust
 - **Animation Elements**: Awning flutter in breeze, canal water reflections, NPCs sipping drinks, pigeons investigating crumbs, bicycles passing in background
-- **Performance Optimization**: Simplified water reflections, reduced smoke particles, static awning on low-end devices
+- **Performance Optimization**: Simplified water reflections, reduced smoke particles, static awning on min-spec hardware
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The quintessential European outdoor café where locals performatively ignore tourists while internally cataloging every faux pas. Espresso costs 5 Sovs, comes in a cup the size of a thimble, and the waiter won't check on you for 45 minutes because that's "the European way." A place where Americans learn that "café culture" means sitting, being judged, and paying for the privilege.
+**Core Concept**: The quintessential European outdoor café where locals performatively ignore tourists while internally cataloging every faux pas. Espresso costs 5 SOVS, comes in a cup the size of a thimble, and the waiter won't check on you for 45 minutes because that's "the European way." A place where Americans learn that "café culture" means sitting, being judged, and paying for the privilege.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: American tourists expecting American service in European establishments
@@ -79,7 +79,7 @@
 - **Sensitivity Considerations**: Targets service culture clash and tourist behavior, not legitimate café workers or Dutch people
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Charging 8 Sovs for a croissant because you're sitting near water
+- **Primary Vice**: Charging 8 SOVS for a croissant because you're sitting near water
 - **City-Specific Comedy Operations**: Staff have perfected the art of serving tourists while making them feel unwelcome
 - **Buffoon Exploitation**: Bros think they're experiencing "authentic European café culture" while being systematically overcharged
 - **Comedy of Errors**: Agent Havok's attempt at "blending in as a local" is painfully obvious to everyone except the bros
@@ -106,12 +106,12 @@
 ### Menu & Consumables
 | Item | Price | Effects | Barista Judgment Level |
 |------|-------|---------|----------------------|
-| Espresso | 5 Sovs | +15 SP, removes Drowsy status | Low (acceptable order) |
-| "American Coffee" | 5 Sovs | +10 SP, +Shame buff (locals notice) | Medium (tourist detected) |
-| Stroopwafel | 4 Sovs | +20 HP, +Comfort status | None (everyone loves stroopwafel) |
-| "Croissant" (day-old) | 8 Sovs | +10 HP, -Sovs significantly | High (you paid 8 Sovs for THIS?) |
-| Heineken (bottle) | 6 Sovs | +Tipsy status, -Bravado (locals judge) | Maximum (tourists drink Heineken) |
-| "The Giselle Special" | ??? Sovs | Item doesn't exist, barista confusion | Extreme (Havok-exclusive order) |
+| Espresso | 5 SOVS | +15 SP, removes Drowsy status | Low (acceptable order) |
+| "American Coffee" | 5 SOVS | +10 SP, +Shame buff (locals notice) | Medium (tourist detected) |
+| Stroopwafel | 4 SOVS | +20 HP, +Comfort status | None (everyone loves stroopwafel) |
+| "Croissant" (day-old) | 8 SOVS | +10 HP, -SOVS significantly | High (you paid 8 SOVS for THIS?) |
+| Heineken (bottle) | 6 SOVS | +Tipsy status, -Bravado (locals judge) | Maximum (tourists drink Heineken) |
+| "The Giselle Special" | ??? SOVS | Item doesn't exist, barista confusion | Extreme (Havok-exclusive order) |
 
 ### Agent Havok Mission Hub (Original)
 - **Trigger**: Bros walk past café after 2+ Shamsterdam location visits
@@ -182,7 +182,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - **Potential Contact**: "The Backpacker Who's 'Basically a Local Now'"
 - **Invitation Trigger**: Order Heineken (marks you as fellow tourist), complain about prices (solidarity moment)
 - **Morning Scene**: Wake up in cramped hostel bunk they "definitely paid for," surrounded by passive-aggressive sticky notes
-- **Consequences**: Hungover status, +1 "Local" Knowledge (inaccurate), -10 Sovs ("borrowing" for "visa extension")
+- **Consequences**: Hungover status, +1 "Local" Knowledge (inaccurate), -10 SOVS ("borrowing" for "visa extension")
 
 ### Time-Based Elements
 - **Morning (6 AM - 11 AM)**: Locals grabbing espresso before work, maximum judgment energy, shortest service times
@@ -251,7 +251,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 
 ### Community Engagement
 - **Fan Art Potential**: Agent Havok in full "local" disguise, Barista Wouter's disappointed face, canal-side aesthetic
-- **Meme-ability**: "8 Sovs for a croissant" format, Havok's upside-down newspaper, "the check will arrive when it decides"
+- **Meme-ability**: "8 SOVS for a croissant" format, Havok's upside-down newspaper, "the check will arrive when it decides"
 - **Cultural Discussion**: European vs. American service expectations, café culture authenticity, tipping discourse
 
 ## Quality Assurance Checklist
@@ -297,7 +297,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - laminated_dossier_recipe.png - 48x64 - Eggs Benedict disguised as mission intel
 - briefcase_sticker_scratched.png - 64x48 - Sunday Brunch with Giselle evidence
 - espresso_cup_tiny.png - 32x32 - Thimble-sized disappointment
-- croissant_overpriced.png - 48x32 - 8 Sovs of questionable freshness
+- croissant_overpriced.png - 48x32 - 8 SOVS of questionable freshness
 - cafe_menu_handheld.png - 48x96 - Tourist reading in confusion
 - wifi_password_sign.png - 64x32 - "OrderSomethingFirst"
 
@@ -305,7 +305,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - service_wait_indicator.png - 128x32 - "Server arriving eventually..."
 - bravado_judgment_meter.png - 96x64 - Café-specific shame tracking
 - ordering_difficulty_icons.png - 32x32x4 - Pronunciation attempt results
-- price_shock_popup.png - 128x96 - "8 Sovs for THIS?"
+- price_shock_popup.png - 128x96 - "8 SOVS for THIS?"
 - tip_confusion_prompt.png - 128x64 - "Tip? (Europeans don't...)"
 - espresso_size_comparison.png - 96x64 - What Americans expect vs. reality
 

@@ -132,7 +132,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 | Lighting Control Panel | (384, 448) | 128x64 | Strobe / UV / bass / fog toggle switches |
 
 ### Technical Notes:
-- Overlays are additive-blended on top of Booth Interior Neutral; only one mode set active at a time on mobile
+- Overlays are additive-blended on top of Booth Interior Neutral; only one mode set active at a time on min-spec hardware
 - Strobe mode is gated behind the accessibility motion-sensitivity setting (see ♿ section)
 - Dominik can set Venue Preset Panel to match Velvet Curtain's rig — swaps overlay tint values only
 
@@ -145,10 +145,10 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 ### Eyewear Station Stock:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Strobe Shades (Basic) | (0, 0) | 32x24 | 15 Sovs entry-level protection |
-| Strobe Shades (Premium) | (32, 0) | 32x24 | 35 Sovs, statement AND function |
+| Strobe Shades (Basic) | (0, 0) | 32x24 | 15 SOVS entry-level protection |
+| Strobe Shades (Premium) | (32, 0) | 32x24 | 35 SOVS, statement AND function |
 | LED Glasses (Static) | (64, 0) | 32x24 | Single color, maximum impact |
-| LED Glasses (Programmable) | (96, 0) | 32x24 | 50 Sovs, control your own light show |
+| LED Glasses (Programmable) | (96, 0) | 32x24 | 50 SOVS, control your own light show |
 | Mirror Shades (Chrome) | (128, 0) | 32x24 | They see themselves, not you |
 | "The Bouncer" Aviators | (160, 0) | 32x24 | Professional recognition |
 | "Inner Circle" Shades | (192, 0) | 32x24 | Premium Stock exclusive |
@@ -436,7 +436,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - Stat effect icons are shape-coded (fist = Intimidation, eye = Visibility, star = Style), never color-only
 - Premium Locked vs. Unlocked banners differ by icon (padlock vs. open rope) in addition to color
 - Lit vs. unlit gear variants add a radiating-line glyph, not just a hue shift
-- All shop buttons and the fitting-room toggles meet the 44px minimum touch target
+- All shop buttons and the fitting-room toggles meet the 44px minimum click target
 
 ---
 
@@ -617,7 +617,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 - [ ] Satirical theme (status theater sold with a wink) is clear throughout all assets
 - [ ] Hidden gags discoverable: empty wristband holders, altitude-priced platform pyramid, unquantified VIP meter
 - [ ] Performance optimized (on-demand fitting room, gated Premium assets, CPU particles)
-- [ ] Touch zone sizing considered (44px minimum — shop buttons and booth toggles compliant)
+- [ ] Click zone sizing considered (44px minimum — shop buttons and booth toggles compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded stat icons, padlock/rope banners)
 - [ ] Social media viral potential maximized (group mirror moment, premium reveal composition)
 

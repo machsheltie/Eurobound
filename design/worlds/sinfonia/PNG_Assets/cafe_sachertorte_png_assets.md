@@ -1,7 +1,7 @@
 # Café Sachertorte - Complete PNG Asset Requirements
 
 ## 📋 Overview
-This document provides exact specifications for all PNG files needed for the Café Sachertorte location - a high-end Viennese café where a slice of cake costs 18 Sovs, the waiter's disapproval is complimentary, and tradition is commodified down to the last apricot glaze. It becomes ground zero for Gustav's 340 Sovs rampage during the Fiaker Fiasco sidequest.
+This document provides exact specifications for all PNG files needed for the Café Sachertorte location - a high-end Viennese café where a slice of cake costs 18 SOVS, the waiter's disapproval is complimentary, and tradition is commodified down to the last apricot glaze. It becomes ground zero for Gustav's 340 SOVS rampage during the Fiaker Fiasco sidequest.
 
 **Location ID:** `sinfonia_kaffeehaus_cafe_sachertorte_01`
 **Theme:** The commodification of tradition and the tyranny of refinement — café pretension weaponized against tourists
@@ -125,7 +125,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 ### Detail Elements:
 - **Pocket Watch** (144, 192, 12x16) - On chain, for close-up
 - **Service Tray** (156, 192, 32x24) - Silver, with items
-- **Debt Receipt** (188, 192, 24x32) - Paper with 340 Sovs
+- **Debt Receipt** (188, 192, 24x32) - Paper with 340 SOVS
 
 ### Animation Timing:
 - Service: 4fps, single play
@@ -245,7 +245,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 
 ### Sachertorte Consumption (3 states):
 - **Intact Cake** (0, 120, 32x24) - Whole, gleaming
-- **Bitten** (32, 120, 32x24) - Gustav's first bite, 28 Sovs gone
+- **Bitten** (32, 120, 32x24) - Gustav's first bite, 28 SOVS gone
 - **Devoured** (64, 120, 32x24) - Empty pedestal, crumbs
 
 ### Opera Cake Grab:
@@ -288,8 +288,8 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Candle Flicker** (80, 64, 16x24) - Evening table candles
 
 ### UI Particles:
-- **Sovs Word Float** (0, 96, 16x16) - Rising particle for the damage counter. **No currency glyph exists — the word is the symbol.** ⚠️ **CELL TOO SMALL** for `SOVS`: either widen to 48x16, or keep 16x16 and float a plain coin/impact mote with the word carried by the **Price Popup** text bubble instead.
-- **Price Popup** (16, 96, 48x24) - "+85 Sovs" style text bubble
+- **SOVS Word Float** (0, 96, 16x16) - Rising particle for the damage counter. **No currency glyph exists — the word is the symbol.** ⚠️ **CELL TOO SMALL** for `SOVS`: either widen to 48x16, or keep 16x16 and float a plain coin/impact mote with the word carried by the **Price Popup** text bubble instead.
+- **Price Popup** (16, 96, 48x24) - "+85 SOVS" style text bubble
 - **Damage Counter BG** (64, 96, 120x32) - Running total display
 
 ---
@@ -307,11 +307,11 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 
 ### Damage Tracking:
 - **Damage Counter Background** (0, 128, 120x32) - "Damages: 340 SOVS"
-- **Sovs Wordmark** (120, 128, 24x24) - Atlas key `sovs_symbol`. **The symbol is the word — letter `SOVS`, never draw a currency mark.** ⚠️ **CELL TOO SMALL:** four characters will not read at 24x24. Widen to 48x16 (the size allotted in `cafe_sachertorte_sprite_mapping.json`, which requires re-flowing the y=128 row to make room beside **Debt Indicator**), or delete the tile and letter `SOVS` inline in the counter string.
+- **SOVS Wordmark** (120, 128, 24x24) - Atlas key `sovs_symbol`. **The symbol is the word — letter `SOVS`, never draw a currency mark.** ⚠️ **CELL TOO SMALL:** four characters will not read at 24x24. Widen to 48x16 (the size allotted in `cafe_sachertorte_sprite_mapping.json`, which requires re-flowing the y=128 row to make room beside **Debt Indicator**), or delete the tile and letter `SOVS` inline in the counter string.
 - **Damage Item Entry** (0, 160, 200x24) - Itemized line
 
 ### Debt System:
-- **Debt Indicator** (144, 128, 64x24) - "Debt: 340 Sovs"
+- **Debt Indicator** (144, 128, 64x24) - "Debt: 340 SOVS"
 - **Payment Slider** (144, 152, 80x20) - For partial payments
 - **Valued Patron Badge** (208, 128, 48x48) - Unlock reward
 
@@ -347,7 +347,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Frames:** 3
 - **Pattern:** Loop while debt dialogue is active
 - **Trigger:** Post-rampage confrontation
-- **Purpose:** Drives the 340 Sovs debt-assignment scene
+- **Purpose:** Drives the 340 SOVS debt-assignment scene
 - **Audio Sync:** None (dialogue carries it)
 - **Performance Optimization:** None needed
 
@@ -374,7 +374,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Frames:** 3 states (intact → bitten → devoured)
 - **Pattern:** State advance per bite event
 - **Trigger:** Gustav reaching the display case
-- **Purpose:** The 28 Sovs bite — the quest's signature crime
+- **Purpose:** The 28 SOVS bite — the quest's signature crime
 - **Audio Sync:** Disturbing eating sounds per bite
 - **Performance Optimization:** None needed
 
@@ -385,7 +385,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - **Trigger:** Rampage screen shake
 - **Purpose:** Sustained will-it-fall tension (it never falls — the relief sparkle is the punchline)
 - **Audio Sync:** Crystal tinkle on each direction change
-- **Performance Optimization:** Static frame on low-end devices
+- **Performance Optimization:** Static frame on min-spec hardware
 
 ---
 
@@ -418,7 +418,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - Damage popups pair the numeral and the word `SOVS` with impact-star shapes, never color alone
 - Status icons (Caffeinated / Sugar Rush / Humiliated) use distinct silhouettes, not just tint
 - Menu price tags readable as text; hidden charges italicized, not color-flagged
-- Touch zones minimum 44px for menu, display case, and payment interactions
+- Click zones minimum 44px for menu, display case, and payment interactions
 
 ---
 
@@ -479,7 +479,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Fiaker Fiasco (café phase) | Gustav entry, chaos sprites, evacuation NPCs | Phase start: Gustav entry triggers chaos state |
-| Fiaker Fiasco (damage tracking) | Destruction states, price popups, counter UI | Each destruction increments `fiaker_fiasco_damage_sov` (+340 Sovs café total) |
+| Fiaker Fiasco (damage tracking) | Destruction states, price popups, counter UI | Each destruction increments `fiaker_fiasco_damage_sov` (+340 SOVS café total) |
 | Fiaker Fiasco (aftermath) | Damaged tileset states, hostile Herr Ober set | Post-quest unpaid: staff hostile, café closed 24h |
 | Debt repayment | Debt receipt, payment slider, Valued Patron badge | Debt cleared: commemorative menu, Gustav Cookie, friendly staff |
 
@@ -520,20 +520,20 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 
 ### Screenshot-Worthy Moments:
 1. **Gustav examining cakes** with connoisseur expression
-2. **Damage counter hitting 340 Sovs** with Herr Ober's fury
+2. **Damage counter hitting 340 SOVS** with Herr Ober's fury
 3. **The Intellectual unfazed** while chaos surrounds
 4. **The Gustav cookie** on post-quest menu
 
 ### TikTok Potential:
 - "POV: A horse just ate your entire Sachertorte inventory"
-- "When the 18 Sovs cake slice hits different"
+- "When the 18 SOVS cake slice hits different"
 - "The damage counter going crazy"
-- "One man. One horse. 340 Sovs in damages."
+- "One man. One horse. 340 SOVS in damages."
 
 ### Quote Potential:
 - "That horse has better taste than most tourists." - Sous Chef Anna
 - "In thirty years of service... a HORSE." - Herr Ober
-- "340 Sovs. You will pay this. Now." - Herr Ober
+- "340 SOVS. You will pay this. Now." - Herr Ober
 - "I've been coming here for 40 years. This is the most exciting thing that's ever happened." - The Intellectual
 
 ---
@@ -589,7 +589,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - [ ] Cake display shows correct contents per state
 - [ ] Destruction sequences read clearly at game resolution
 - [ ] The Intellectual sprite literally unchanged across all states
-- [ ] Damage counter UI readable on mobile screens
+- [ ] Damage counter UI readable on min-spec hardware screens
 - [ ] Steam particles loop seamlessly
 - [ ] All furniture matches EarthBound oblique style
 - [ ] All PNG files match exact dimensions specified
@@ -605,7 +605,7 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 - [ ] Economic satire elements visible (hidden charges, prices)
 - [ ] Post-quest changes tell complete story
 - [ ] Performance optimized (CPU particles, atlas limits respected)
-- [ ] Touch zone sizing considered (44px minimum for interactive elements)
+- [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 
@@ -626,4 +626,4 @@ assets/sprites/locations/sinfonia/cafe_sachertorte/
 | No Crypto Elements | ✅ | None present |
 | Social Media Integration | ✅ | Cake heist and damage-counter moments identified |
 
-**Café Sachertorte: Where Sinfonia's famous 18 Sovs cake slice meets a horse with expensive taste and zero impulse control.**
+**Café Sachertorte: Where Sinfonia's famous 18 SOVS cake slice meets a horse with expensive taste and zero impulse control.**

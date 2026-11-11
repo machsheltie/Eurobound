@@ -19,21 +19,21 @@
 
 He is running a floor. Twenty-five tables, one display case, four staff, eleven hours a day, and a room that has been trading on the year 1843 since before he was born. He seats people by a system: window seating is real estate and goes to regulars; Charm 3+ gets a proper table; Charm 1+ at least keeps you away from the restroom. He knows every price on the menu, including the three that are not printed on it, and he applies all of them.
 
-The condescension is a job function and he was trained into it. Making a tourist feel slightly uncultured is what makes the tourist order the 18 Sovs slice instead of the 12 Sovs Gugelhupf, and the house has understood this since the 1950s. He is very good at it. He does not enjoy it. It is the part of the work he would drop first if the till allowed.
+The condescension is a job function and he was trained into it. Making a tourist feel slightly uncultured is what makes the tourist order the 18 SOVS slice instead of the 12 SOVS Gugelhupf, and the house has understood this since the 1950s. He is very good at it. He does not enjoy it. It is the part of the work he would drop first if the till allowed.
 
 He also drinks. Not much and not visibly — the staff break room has schnapps bottles that are perfectly visible through the window if the player looks, and he takes his in the four-minute gap between the lunch clear-down and Kaffeeklatsch. Everyone on staff knows. Nobody has ever said anything, because he has never once been drunk on the floor and the bow tie has never once been crooked.
 
-Then a horse eats 340 Sovs of his café and the entire apparatus falls off him in about nine seconds.
+Then a horse eats 340 SOVS of his café and the entire apparatus falls off him in about nine seconds.
 
 ### What Bros Believe
 
-Lord Pilsner believes he has met the final boss of European sophistication and has entered a contest of wills. Chadwick believes the man is "in character," that this is an act the café makes him do, and that a big enough tip will break him and reveal the cool guy underneath. Bradley has read the menu correctly, is the only one who has, and is quietly ordering the Gugelhupf because it is 12 Sovs.
+Lord Pilsner believes he has met the final boss of European sophistication and has entered a contest of wills. Chadwick believes the man is "in character," that this is an act the café makes him do, and that a big enough tip will break him and reveal the cool guy underneath. Bradley has read the menu correctly, is the only one who has, and is quietly ordering the Gugelhupf because it is 12 SOVS.
 
-After the rampage they believe the 340 Sovs is a negotiating position.
+After the rampage they believe the 340 SOVS is a negotiating position.
 
 ### The Comedy Gap
 
-Everything Herr Ober says to them is true. The recipe *is* unchanged since 1832. The price of the coffee they are complaining about *has not changed since 2019*. The bill *is* 340 Sovs and it is itemised and every line of it is correct. He is not scamming anybody — the hidden charges are printed, in tiny elegant font, on a menu he will hand over the instant it is requested, and he corrects pronunciation because that is what the house pays him to do.
+Everything Herr Ober says to them is true. The recipe *is* unchanged since 1832. The price of the coffee they are complaining about *has not changed since 2019*. The bill *is* 340 SOVS and it is itemised and every line of it is correct. He is not scamming anybody — the hidden charges are printed, in tiny elegant font, on a menu he will hand over the instant it is requested, and he corrects pronunciation because that is what the house pays him to do.
 
 The bros hear a villain. The player, if they look at the menu, gets the whole truth on their first visit.
 
@@ -90,7 +90,7 @@ Post-quest doorway variant: same sprite, unbuttoned vest, glass in hand, standin
 ### Personality Traits
 | Trait | Description |
 |-------|-------------|
-| Professional pride | Absolute and unironic. He has never let a plate go out wrong. The 340 Sovs wounds him as a failure of the room, not as money. |
+| Professional pride | Absolute and unironic. He has never let a plate go out wrong. The 340 SOVS wounds him as a failure of the room, not as money. |
 | Trained condescension | House policy, applied at scale, and he can turn it up or down by the guest. Never once personal. He does the same routine on a Viennese banker and takes visible satisfaction in it. |
 | Quiet snobbery | Genuine, small, and about coffee specifically. He does believe that ordering "a coffee" in a Kaffeehaus is a small act of vandalism, and he is correct. |
 | Secret staff schnapps | Four minutes, every afternoon, between clear-down and Kaffeeklatsch. Bottles visible through the break room window. Never on the floor, never slurred, never once late back. |
@@ -104,7 +104,7 @@ Post-quest doorway variant: same sprite, unbuttoned vest, glass in hand, standin
 
 He wants the room to be right. That is all of it and it is not small. The floor plan, the seating order, the cake display rotating at the correct speed, the chandelier clean, twenty-five tables turning over at the correct rate — this is a machine he operates, and it is the only thing on earth he is unambiguously excellent at. He is paid poorly for it. He knows the kitchen is paid worse. He has raised this with the owner three times in eleven years, in writing, and has been thanked in writing, three times, and nothing has changed.
 
-The 340 Sovs is not greed. It is the number required to make the room right again.
+The 340 SOVS is not greed. It is the number required to make the room right again.
 
 ---
 
@@ -157,7 +157,7 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 
 > "What is—MEIN GOTT! EIN PFERD!"
 
-*Gustav reaches the display, contemplates the twelve cakes with disturbing intelligence, and selects the 85 Sovs whole Sachertorte from the centre pedestal.*
+*Gustav reaches the display, contemplates the twelve cakes with disturbing intelligence, and selects the 85 SOVS whole Sachertorte from the centre pedestal.*
 
 > "NEIN! NEIN! DAS PFERD FRISST DIE TORTE!"
 
@@ -165,10 +165,10 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 
 > "THE TABLES! THE DISPLAY! THIS WILL COST—calculate—340 SOVS!"
 
-*Gustav takes the 22 Sovs Opera Cake slice on his way through the service door. Kitchen sounds. Chef Konrad, in German, in the doorway, uses the name. The box shows a blank.*
+*Gustav takes the 22 SOVS Opera Cake slice on his way through the service door. Kitchen sounds. Chef Konrad, in German, in the doorway, uses the name. The box shows a blank.*
 
 **Post-rampage, the itemised bill, delivered in a voice that has nothing left in it — canon, ships verbatim:**
-> "340 Sovs. You will pay this. Now. Or I call the Polizei."
+> "340 SOVS. You will pay this. Now. Or I call the Polizei."
 
 **The breakdown, in front of the emptied case, sitting down for the first time in nine years — canon, ships verbatim:**
 > "In thirty years of service, I have never... a HORSE. A HORSE ate the Sachertorte."
@@ -181,27 +181,27 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 *The damage tally screen resolves to one of three, all canon:*
 
 **Option 1 — "We'll catch the horse and pay you back!"**
-> "You will 'pay me back.' Yes. This is what is said." *(he writes it down, which is worse than shouting)* "340 Sovs. Your names. Your hotel. Go and catch your horse."
+> "You will 'pay me back.' Yes. This is what is said." *(he writes it down, which is worse than shouting)* "340 SOVS. Your names. Your hotel. Go and catch your horse."
 > **Result:** Quest continues, debt logged, `cafe_debt_340` active, service refused until cleared.
 
-**Option 2 — "Here's 340 Sovs right now."** *(requires funds)*
+**Option 2 — "Here's 340 SOVS right now."** *(requires funds)*
 > *(long silence; he counts it, twice, at the counter, in front of everyone)* "...Then there is no debt. There is only the horse." *(and, at the door, quietly, the closest thing to warmth he has)* "The Gugelhupf. Next time. It is the better cake. Nobody orders it."
 > **Result:** Quest continues, no café debt, and a permanent private line unlocked that most players will never see.
 
 **Option 3 — "That horse doesn't belong to us!"**
 > "Then whose—" *(Hans-Jürgen Pferdmann arrives, breathless, and claims it)* "...Pferdmann. Of course. Of *course* it is Pferdmann." *(to the bros, without turning around)* "You are still standing in my café."
-> **Result:** Hans-Jürgen takes responsibility; the party's café debt halves to 170 Sovs. Delays the chase by one scene.
+> **Result:** Hans-Jürgen takes responsibility; the party's café debt halves to 170 SOVS. Delays the chase by one scene.
 
 ### Debt Collection
 
 **Partial payment — canon:**
-> "50 Sovs received. You still owe 290 Sovs. I will remember."
+> "50 SOVS received. You still owe 290 SOVS. I will remember."
 
 **Full payment — canon:**
 > "...paid in full. You may return. But I will be watching."
 
 **Returning with the debt unpaid — canon:**
-> "You. OUT. Until the 340 Sovs is paid, you are not welcome."
+> "You. OUT. Until the 340 SOVS is paid, you are not welcome."
 
 **The refusal-of-service line, in full, at the door, every time:**
 > "We do not serve you until bill is paid. This is not personal. It has never once been personal."
@@ -227,14 +227,14 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 *Debt cleared, "Valued Patron" active, every subsequent entry:*
 > "Ah. The gentlemen who pay." *(a fractional nod; from him this is a standing ovation)* "The window is free."
 
-*Ordering "The Gustav" commemorative cookie, 8 Sovs:*
+*Ordering "The Gustav" commemorative cookie, 8 SOVS:*
 > "The... Gustav." *(a very long pause)* "It sells forty a day. Forty. The Apfelstrudel sells nine." *(he serves it perfectly)* "I do not wish to discuss it."
 
 *Late game, debt cleared, if the player orders correctly in German three visits running:*
 > "You have been practising." *(He does not smile. Something adjacent to it happens and then stops.)* "Sit anywhere."
 
 *Late game, debt unpaid, any Kaffeehaus Row establishment:*
-> *(He is not here. The other waiter is, and knows the number.)* "Ah — you are the 340 Sovs. He telephoned."
+> *(He is not here. The other waiter is, and knows the number.)* "Ah — you are the 340 SOVS. He telephoned."
 
 ---
 
@@ -263,24 +263,24 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 ### Menu — Beverages
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Kleiner Brauner (small coffee) | 5 Sovs | Fair for the district | Removes Tired |
-| Großer Brauner (large coffee) | 7 Sovs | Fair | Removes Tired, +1 Speed (1 hour) |
-| Melange (Sinfonian latte) | 8 Sovs | Fair, and genuinely excellent | Removes Tired, +1 Charm (30 min) |
-| Einspänner (whipped cream) | 9 Sovs | Fair | Removes Tired, Removes Thirsty |
+| Kleiner Brauner (small coffee) | 5 SOVS | Fair for the district | Removes Tired |
+| Großer Brauner (large coffee) | 7 SOVS | Fair | Removes Tired, +1 Speed (1 hour) |
+| Melange (Sinfonian latte) | 8 SOVS | Fair, and genuinely excellent | Removes Tired, +1 Charm (30 min) |
+| Einspänner (whipped cream) | 9 SOVS | Fair | Removes Tired, Removes Thirsty |
 
 ### Menu — Cakes & Pastries
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Sachertorte Slice | 18 Sovs | About 6 Sovs of ingredients and 183 years of reputation | +60 HP, Removes Thirsty |
-| Apfelstrudel | 14 Sovs | Honest | +40 HP, Removes Hungry |
-| Opera Cake | 22 Sovs | The most expensive slice in the case, and the one Gustav takes on the way out | +80 HP, +2 Charm (30 min) |
-| Gugelhupf | 12 Sovs | The best value in the building and he knows it | +30 HP, restores small SP |
-| **"The Gustav"** (post-quest only) | **8 Sovs** | A chocolate horse-shaped cookie. Forty a day. | +20 HP; +2 Bravado; unlocks achievement "The Gustav" |
+| Sachertorte Slice | 18 SOVS | About 6 SOVS of ingredients and 183 years of reputation | +60 HP, Removes Thirsty |
+| Apfelstrudel | 14 SOVS | Honest | +40 HP, Removes Hungry |
+| Opera Cake | 22 SOVS | The most expensive slice in the case, and the one Gustav takes on the way out | +80 HP, +2 Charm (30 min) |
+| Gugelhupf | 12 SOVS | The best value in the building and he knows it | +30 HP, restores small SP |
+| **"The Gustav"** (post-quest only) | **8 SOVS** | A chocolate horse-shaped cookie. Forty a day. | +20 HP; +2 Bravado; unlocks achievement "The Gustav" |
 
 ### Hidden Charges
 | Charge | Amount | Applied When |
 |--------|--------|--------------|
-| "Historic Table Supplement" | 3 Sovs | Window seating — the good tables, and the charge is printed on the menu in calligraphy the size of a fly |
+| "Historic Table Supplement" | 3 SOVS | Window seating — the good tables, and the charge is printed on the menu in calligraphy the size of a fly |
 | "Service Surcharge" | 15% | Every bill, added without explanation, and he will explain it in full detail if asked, at length, until the guest regrets asking |
 | "American Tourist Adjustment" | 10% | Accent detection. It is not on the menu. It is on the till, under a different name, and has been since 1974. |
 
@@ -288,7 +288,7 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 - **Order in German correctly** (pronunciation minigame): small discount, and applies "Cultured Palate" — **+1 Charm for 1 hour**.
 - **Fail the order** (or order "a coffee," or ask for iced coffee): applies "Humiliated by Waiter" — **-1 Charm for 30 minutes**. Stacks with nothing. Wears off. He does not remember it; the player does.
 - **Café selfie** (+2 Bravado) requires an order first. He will not permit the photograph otherwise and will step into frame to prevent it, which is a better photograph.
-- **The 340 Sovs debt gate**: no normal service of any kind until cleared. Installments accepted, **50 Sovs minimum**. Full payment unlocks **"Valued Patron" — +10% discount permanently**.
+- **The 340 SOVS debt gate**: no normal service of any kind until cleared. Installments accepted, **50 SOVS minimum**. Full payment unlocks **"Valued Patron" — +10% discount permanently**.
 
 ### Hidden Details / Easter Eggs
 - **Examine his pocket watch**: *"Correct to the second. He winds it at 07:40, before the doors. It is the only object on his person that is his."*
@@ -297,7 +297,7 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 - **Examine the trophy case**: *"'Best Sachertorte 1952–1999.' The 1999 plaque is the last one. He arrived in 1996."*
 - **Examine the framed Emperor Franz Josef letter**: *"Probably fake. He has never said so and never will. It was here before him."*
 - **Ask him his name.** He answers, every time, identically: *"Herr Ober."* Ask a fourth time in one conversation and the option greys out permanently for the rest of the game.
-- **Post-quest, examine the Wall of Shame**: *"A framed photograph of a horse eating an 85 Sovs cake. The framing is expensive. Someone chose that frame."*
+- **Post-quest, examine the Wall of Shame**: *"A framed photograph of a horse eating an 85 SOVS cake. The framing is expensive. Someone chose that frame."*
 
 ---
 
@@ -329,7 +329,7 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 - Café Sachertorte, 08:00–22:00, every day, for the entire game. He is never absent from a shift in any state.
 - Opera Backstage, once, mid-chase — he may arrive in pursuit of payment and encounter the Magic Flute disaster in progress, at which point he stops talking entirely and simply looks at it.
 - The café doorway, during the 24-hour "TEMPORARILY CLOSED" window, drinking openly.
-- Kaffeehaus Row, ambient, delivering the 340 Sovs figure to neighbouring establishments — visible from the street, not interactable, and the gossip system updates immediately afterwards.
+- Kaffeehaus Row, ambient, delivering the 340 SOVS figure to neighbouring establishments — visible from the street, not interactable, and the gossip system updates immediately afterwards.
 
 ### In Other Cities (If Applicable)
 | City | Location | Role/Context | Callback Dialogue |
@@ -338,9 +338,9 @@ The 340 Sovs is not greed. It is the number required to make the room right agai
 
 ### Evolution Through Game
 
-Debt unpaid: hostility, refused service, BANNED board with the party's photographs on it, and the figure known at every café on the Row. Debt in installments: he softens by exactly one degree per payment and states the running balance every time, to the Sov, from memory. Debt cleared: "Valued Patron," the window table, and a man who has decided the matter is closed and genuinely means it.
+Debt unpaid: hostility, refused service, BANNED board with the party's photographs on it, and the figure known at every café on the Row. Debt in installments: he softens by exactly one degree per payment and states the running balance every time, to the SOV, from memory. Debt cleared: "Valued Patron," the window table, and a man who has decided the matter is closed and genuinely means it.
 
-Across all states, the permanent change is the same: the "NO HORSES PERMITTED" sign, the "SECURED" label on the case, the Wall of Shame photograph, "The Gustav" on the menu at 8 Sovs selling forty a day, and a head waiter who touches the corner of the display case every time he walks past it.
+Across all states, the permanent change is the same: the "NO HORSES PERMITTED" sign, the "SECURED" label on the case, the Wall of Shame photograph, "The Gustav" on the menu at 8 SOVS selling forty a day, and a head waiter who touches the corner of the display case every time he walks past it.
 
 ---
 
@@ -381,20 +381,20 @@ Across all states, the permanent change is the same: the "NO HORSES PERMITTED" s
 - **Quest**: The Fiaker Fiasco (`sinfonia_sidequest_fiaker_fiasco_01`) — Phase 2, `fiaker_fiasco_cafe_phase`
 - **Role**: Victim, witness, damage assessor, and the quest's economic engine. He converts a horse chase into a number the player has to carry for the rest of Sinfonia.
 - **Trigger**: The party follows Gustav from Opera House Plaza; the phase auto-triggers on entry
-- **Outcome**: 340 Sovs assessed and itemised; one of three dialogue resolutions; the debt persists across all Sinfonia vendors until cleared
+- **Outcome**: 340 SOVS assessed and itemised; one of three dialogue resolutions; the debt persists across all Sinfonia vendors until cleared
 
 ### Quest Gate Function
 
-He gates **all normal café service** behind the 340 Sovs. Not partially — the display case, the menu, the selfie spot, the chess minigame, the rest point, and the status recovery are all closed to the party until the balance is zero. He accepts installments at a **50 Sovs minimum** and will state the exact remaining balance every single time. He gates the "Valued Patron" +10% discount behind payment in full, and the achievement **"Patron of the Arts"** with it.
+He gates **all normal café service** behind the 340 SOVS. Not partially — the display case, the menu, the selfie spot, the chess minigame, the rest point, and the status recovery are all closed to the party until the balance is zero. He accepts installments at a **50 SOVS minimum** and will state the exact remaining balance every single time. He gates the "Valued Patron" +10% discount behind payment in full, and the achievement **"Patron of the Arts"** with it.
 
 He gates nothing in the main chase. He never blocks the exit. He follows instead, which is worse.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Itemised Damage Receipt (340 Sovs) | Phase 2 resolution, Options 1 and 3 | Yes | Keepable, examinable; six line items, correct arithmetic, and "Emotional damages — 53 Sovs" |
+| Itemised Damage Receipt (340 SOVS) | Phase 2 resolution, Options 1 and 3 | Yes | Keepable, examinable; six line items, correct arithmetic, and "Emotional damages — 53 SOVS" |
 | "Valued Patron" status | Debt cleared in full | Yes | Permanent +10% discount at Café Sachertorte |
-| "The Gustav" cookie | Post-quest, 8 Sovs | No | +20 HP, +2 Bravado; unlocks achievement "The Gustav" |
+| "The Gustav" cookie | Post-quest, 8 SOVS | No | +20 HP, +2 Bravado; unlocks achievement "The Gustav" |
 | "Cultured Palate" | Order in German correctly | No | +1 Charm, 1 hour |
 | "Humiliated by Waiter" | Failed order | No | -1 Charm, 30 minutes |
 
@@ -403,8 +403,8 @@ He gates nothing in the main chase. He never blocks the exit. He follows instead
 ## 📸 Social Media / Viral Potential
 
 ### Screenshot Moments
-1. **The judgment frame.** One raised eyebrow, a 5 Sovs coffee, and three men in cargo shorts.
-2. **The horror frame**, timed to Gustav's first bite of the 85 Sovs whole Sachertorte.
+1. **The judgment frame.** One raised eyebrow, a 5 SOVS coffee, and three men in cargo shorts.
+2. **The horror frame**, timed to Gustav's first bite of the 85 SOVS whole Sachertorte.
 3. **The defeat frame** — a seated head waiter, an emptied display case, a chandelier that survived by forty centimetres.
 4. **The doorway.** Business hours, sunlight, unbuttoned vest, glass in hand, thirty years of composure gone in one afternoon.
 5. **The Wall of Shame**, professionally framed, permanently hung, selling forty cookies a day.
@@ -414,7 +414,7 @@ He gates nothing in the main chase. He never blocks the exit. He follows instead
 - **"Insurance covers 'acts of God.' This is an 'act of HORSE.'"** — an infinitely reusable format.
 - **"Ah. You would like... 'a coffee.' How... specific."** — the pause is the meme.
 - **"The Sachertorte recipe is unchanged since 1832. Unlike the clientele."**
-- **"340 Sovs. You will pay this. Now. Or I call the Polizei."** — universal split-the-bill caption.
+- **"340 SOVS. You will pay this. Now. Or I call the Polizei."** — universal split-the-bill caption.
 
 ---
 
@@ -464,12 +464,12 @@ Formal German-accented English, Austrian rather than German-German, precise and 
 
 - **CANON — no first name, ever.** "Herr Ober" is a form of address meaning *Mr. Waiter*. No file, line, subtitle, asset filename, or JSON field may assign him a personal name. The one in-fiction utterance of it (Chef Konrad, chaos phase, German) renders as a blank the width of a word and is never explained.
 - **CANON — NPC ID**: `sinfonia_npc_herr_ober_01`, matching the existing entry in `cafe_sachertorte_npcs.json`.
-- **CANON — the debt is 340 Sovs**, itemised as: patio table 85 Sovs, umbrella stand 15 Sovs, full Sachertorte 85 Sovs, two marble tables 80 Sovs, Opera Cake slice 22 Sovs, "emotional damages" 53 Sovs. Any other total is stale.
-- **RESOLVED — author ruling: the whole cake stands.** Gustav eats one whole 85 Sovs Sachertorte, and the 340 Sovs tally depends on it. The old `cafe_sachertorte.md` TikTok line *"THAT HORSE JUST ATE THREE SACHERTORTES! THAT IS 54 Sovs!"* is retired; the quotable is now Chadwick's *"EIGHTY-FIVE SOVS! FOR A CAKE! HE ATE EIGHTY-FIVE SOVS!"*, filmed over Herr Ober's meltdown. 18 Sovs remains the **slice** menu price and nothing else. Do not reintroduce a three-slice reading.
-- **RESOLVED — author ruling: one 170 Sovs relief, claimed once.** The 170 Sovs Fiaker insurance payout against the café bill and the dialogue-option-3 halving of the 340 Sovs are **the same relief and are mutually exclusive**. Whichever fires first sets `debt_relief_claimed` and consumes it; the other is then disabled and must not apply. Hans-Jürgen's **500 Sovs Path A contribution is a separate pot and does stack**. Full arithmetic: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative".
+- **CANON — the debt is 340 SOVS**, itemised as: patio table 85 SOVS, umbrella stand 15 SOVS, full Sachertorte 85 SOVS, two marble tables 80 SOVS, Opera Cake slice 22 SOVS, "emotional damages" 53 SOVS. Any other total is stale.
+- **RESOLVED — author ruling: the whole cake stands.** Gustav eats one whole 85 SOVS Sachertorte, and the 340 SOVS tally depends on it. The old `cafe_sachertorte.md` TikTok line *"THAT HORSE JUST ATE THREE SACHERTORTES! THAT IS 54 SOVS!"* is retired; the quotable is now Chadwick's *"EIGHTY-FIVE SOVS! FOR A CAKE! HE ATE EIGHTY-FIVE SOVS!"*, filmed over Herr Ober's meltdown. 18 SOVS remains the **slice** menu price and nothing else. Do not reintroduce a three-slice reading.
+- **RESOLVED — author ruling: one 170 SOVS relief, claimed once.** The 170 SOVS Fiaker insurance payout against the café bill and the dialogue-option-3 halving of the 340 SOVS are **the same relief and are mutually exclusive**. Whichever fires first sets `debt_relief_claimed` and consumes it; the other is then disabled and must not apply. Hans-Jürgen's **500 SOVS Path A contribution is a separate pot and does stack**. Full arithmetic: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative".
 - He must never read as a villain and never as a snob for the audience to look down on. He is the only person in Phase 2 who did nothing wrong, and the satire is aimed at the tourist-extraction *system* he was trained into, never at Austrian café culture, which the file treats as a real trade with real workers.
 - His drinking is never played as a punchline and never impairs him on the floor. The break-room window is the only pre-quest evidence; the doorway scene is the only time it is visible, and it is played straight.
-- The Gugelhupf being the best cake in the case is a real mechanical fact (12 Sovs, +30 HP, small SP) that he mentions exactly once, on Option 2, and never again. Most players will never see it.
+- The Gugelhupf being the best cake in the case is a real mechanical fact (12 SOVS, +30 HP, small SP) that he mentions exactly once, on Option 2, and never again. Most players will never see it.
 - Do not let him explain the "American Tourist Adjustment" to the bros. They never learn it exists. If the player reads the menu, the player learns it exists, and that is the entire gag.
 
 ---
@@ -477,17 +477,17 @@ Formal German-accented English, Austrian rather than German-German, precise and 
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; the café is Sov-denominated, cash-and-card, and the debt system is a plain ledger
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — none present; the café is SOV-denominated, cash-and-card, and the debt system is a plain ledger
 - [x] **NO automatic crypto assumptions** — most NPCs have none, and he is one of them; he would consider it a species of rudeness
 - [x] **Coins, kiosks, and certificates come from the master pool** (`design/economy/shitcoin_master_pool.md`) — N/A, no coins invented here
-- [x] **The bros are never scam-aware** — they read the 340 Sovs as a negotiating position and the surcharges as a personal attack, and they never once read the menu
+- [x] **The bros are never scam-aware** — they read the 340 SOVS as a negotiating position and the surcharges as a personal attack, and they never once read the menu
 - [x] **Nothing winks** — no line of his, and no line about him, signals that any of this is satire
-- [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's Kaffeehaus-heritage tourist economy: the 18 Sovs slice, the printed-but-illegible surcharges, and a room trading on 1843
+- [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's Kaffeehaus-heritage tourist economy: the 18 SOVS slice, the printed-but-illegible surcharges, and a room trading on 1843
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is three Americans mistaking an honest itemised bill for an ambush; Viennese café service is portrayed as a skilled, underpaid trade
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a trained professional applying house policy, who protects his staff, defends a forty-year regular's table, and is the only blameless party in the disaster
-- [x] Humor is affectionate mockery, not mean-spirited — his composure is the joke's engine and his collapse is played with real weight; the file mocks the pricing structure, never the man operating it
+- [x] Humor is affectionate mockery — his composure is the joke's engine and his collapse is played with real weight; the file mocks the pricing structure, never the man operating it
 
 ---
 

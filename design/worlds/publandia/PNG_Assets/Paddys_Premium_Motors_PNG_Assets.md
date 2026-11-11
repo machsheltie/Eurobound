@@ -309,7 +309,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 |---------|----------|------|-------------|
 | Menu Frame | (0, 0) | 192x128 | Rental selection box |
 | Vehicle Icons | (192, 0) | 64x128 | 4 car silhouettes |
-| Price Tags | (0, 128) | 128x32 | 45 Sovs, 60 Sovs, 80 Sovs, 120 Sovs |
+| Price Tags | (0, 128) | 128x32 | 45 SOVS, 60 SOVS, 80 SOVS, 120 SOVS |
 | Add-On Icons | (128, 128) | 64x32 | GPS, Insurance, Map, Rosary |
 
 ### Transaction UI:
@@ -387,7 +387,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 - The four key fobs (green/blue/gold/leather) must not code vehicles by color alone — each fob carries a letter tag (S / L / E / F) matching its vehicle
 - Warning signs communicate via text + icon shape, never Warning Yellow alone
 - Add-on icons (GPS, Insurance, Map, Rosary) are four distinct silhouettes, no color dependency
-- Rental menu rows, add-on icons, and all examine hotspots meet the 44px minimum touch target
+- Rental menu rows, add-on icons, and all examine hotspots meet the 44px minimum click target
 
 ---
 
@@ -560,7 +560,7 @@ assets/sprites/locations/publandia/paddys_premium_motors/
 - [ ] Satirical theme (tourist overconfidence vs. resigned fatalism) is clear throughout all assets
 - [ ] Easter eggs discoverable: ring box, "WORLD'S MOST PATIENT DAD" mug, "Reserved for next" polaroid slot, fine-print insurance exclusion
 - [ ] Performance optimized (20-drop rain cap, 1-2 sheep, alpha-toggle flicker, static polaroids)
-- [ ] Touch zone sizing considered (44px minimum — rental menu rows, add-on icons, examine hotspots compliant)
+- [ ] Click zone sizing considered (44px minimum — rental menu rows, add-on icons, examine hotspots compliant)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (letter-tagged key fobs, icon-shaped add-ons)
 - [ ] Social media viral potential maximized (Board of Shame framing, thousand-yard-stare composition)
 

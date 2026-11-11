@@ -13,7 +13,7 @@
 ## Access & Requirements
 ### Entry Conditions
 - **Time Restrictions**: 10 AM - 2 AM (extended tourist hours, "because culture never sleeps")
-- **Stat Requirements**: None (15 Sovs "suggested donation" that is very much mandatory)
+- **Stat Requirements**: None (15 SOVS "suggested donation" that is very much mandatory)
 - **Item Requirements**: None for entry (SOVS for gift shop purchases, Fabergé quest for heist access)
 - **Previous Location Requirements**: None (accessible immediately, aggressively advertised)
 - **Special Conditions**: Night access (after 10 PM) for Fabergé Egg Hunt requires quest activation at Café de Schaamte
@@ -47,7 +47,7 @@
   - Spinning racks of "I ❤️ SHAMSTERDAM" merchandise
   - Glass display cases with "collectible" items (keychains, magnets, shot glasses)
   - THE CHOCOLATE ANATOMY EMPORIUM (prominent floor display)
-  - "Fabergé-Style Collector's Eggs" display case (4 Sovs each, "priceless" according to Lord Pilsner)
+  - "Fabergé-Style Collector's Eggs" display case (4 SOVS each, "priceless" according to Lord Pilsner)
   - QR code terminal for NFT minting (Dennis's scheme)
 - **Decorative Elements**:
   - Posters advertising exhibits nobody asked for
@@ -60,7 +60,7 @@
   - Victorian peep show devices (mechanical, coin-operated, still work)
   - "Historical" erotica reproductions (definitely printed last month)
   - Mannequin in "traditional Dutch working attire" that makes Chadwick uncomfortable
-  - Interactive display: "Stand In The Window — Experience History!" (photo op, 5 Sovs extra)
+  - Interactive display: "Stand In The Window — Experience History!" (photo op, 5 SOVS extra)
 - **Atmosphere**: Desperately trying to be educational, achieving gift shop with extra steps
 
 #### Second Floor — "Contemporary Expressions"
@@ -79,7 +79,7 @@
   - Glass display case with "Fabergé-Style Collector's Eggs" (THE target)
   - Motion-sensor lights the bros interpret as "laser security"
   - Stack of identical eggs with "PLEASE TAKE ONE" sign they ignore
-  - Price tag clearly visible (4 Sovs), clearly unread
+  - Price tag clearly visible (4 SOVS), clearly unread
 - **Atmosphere**: The epicenter of the world's saddest heist
 
 ### The Chocolate Anatomy Emporium (Gift Shop Special Section)
@@ -95,8 +95,8 @@
   - **Milk Chocolate Section**: "Classic" designs, decorated variants with sprinkles/fondant
   - **Dark Chocolate Section**: "Sophisticated" (same designs, darker chocolate)
   - **Premium Shelf**: Artisanal specimens with bow ties, top hats, googly eyes
-  - **"Abstract Expression #69" QR Terminal**: Dennis's NFT scheme, corner placement
-- **Price Range**: 9 - 25 Sovs (gift wrapping 5 Sovs extra)
+  - **NFT QR Terminal (The Nordic Vacuum Warranty; Austin Powers Swedish Penis Enlarger Pump)**: Dennis's NFT scheme, corner placement
+- **Price Range**: 9 - 25 SOVS (gift wrapping 5 SOVS extra)
 - **Bachelor Party Discount**: "Buy 6, Get 1 Free" (they never get just 6)
 
 ### Technical Specifications
@@ -104,11 +104,11 @@
 - **Lighting Setup**: Harsh fluorescents (ground floor), red accent bulbs (upper floors), dramatic spot on Fabergé case (third floor)
 - **Particle Systems**: Dust motes (museum authenticity), chocolate display shine, motion-sensor light flicker
 - **Animation Elements**: Spinning merchandise racks, mechanical peep show activation, Daan scrolling phone, motion lights triggering
-- **Performance Optimization**: Simplified display reflections, reduced rack spinning animation, static lighting on low-end devices
+- **Performance Optimization**: Simplified display reflections, reduced rack spinning animation, static lighting on min-spec hardware
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: A "museum" that's 90% gift shop with delusions of cultural relevance. The exhibits exist solely to justify the entrance fee, while the real business happens at the cash register. Everything is priced to exploit tourist FOMO and bachelor party peer pressure. The Fabergé "heist" exposes how the bros see a tourist trap as a fortress and a 4 Sovs chocolate egg as a priceless artifact.
+**Core Concept**: A "museum" that's 90% gift shop with delusions of cultural relevance. The exhibits exist solely to justify the entrance fee, while the real business happens at the cash register. Everything is priced to exploit tourist FOMO and bachelor party peer pressure. The Fabergé "heist" exposes how the bros see a tourist trap as a fortress and a 4 SOVS chocolate egg as a priceless artifact.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist trap "museums" that exist purely to sell merchandise with educational pretense
@@ -118,9 +118,9 @@
 - **Sensitivity Considerations**: Targets tourist trap economics and gift shop capitalism, not legitimate museums or artists
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Extracting maximum Sovs from tourists through manufactured "cultural experiences"
+- **Primary Vice**: Extracting maximum SOVS from tourists through manufactured "cultural experiences"
 - **City-Specific Comedy Operations**: Selling overpriced chocolate in inappropriate shapes as "art appreciation"
-- **Buffoon Exploitation**: Bros spend 200 Sovs on "souvenirs" they'll never display, think they're cultured
+- **Buffoon Exploitation**: Bros spend 200 SOVS on "souvenirs" they'll never display, think they're cultured
 - **Comedy of Errors**: Fabergé quest transforms routine gift shop browsing into "dangerous heist mission"
 - **Consequence System**: Every purchase comes with Chadwick documenting it for "content"
 
@@ -131,7 +131,7 @@
 
 **What is ACTUALLY happening**:
 - Standard visit: Being funneled through gift shop while glancing at three floors of tourist bait
-- Fabergé quest: Shoplifting a 4 Sovs chocolate egg while a teenager doesn't look up from TikTok
+- Fabergé quest: Shoplifting a 4 SOVS chocolate egg while a teenager doesn't look up from TikTok
 
 **How impaired are they**: Not impaired — this is pure, uncut American tourist confidence
 
@@ -139,7 +139,7 @@
 - "MUSEUM" sign uses quotation marks
 - Entrance fee is "suggested" but enforced
 - Every exhibit ends at a merchandise display
-- The "Fabergé" case has a "2 for 6 Sovs" sticker on it
+- The "Fabergé" case has a "2 for 6 SOVS" sticker on it
 - The "laser grid" is automatic lights
 - The "guard" is a 19-year-old named Daan who genuinely does not care
 
@@ -147,7 +147,7 @@
 
 ## Gameplay Mechanics
 ### Standard Museum Visit
-- **Entrance Fee**: 15 Sovs "suggested donation" (mandatory)
+- **Entrance Fee**: 15 SOVS "suggested donation" (mandatory)
 - **Self-Guided Tour**: Move between floors freely, interact with exhibits for flavor text
 - **Photo Opportunities**: Various "Instagram moments" marked (all near merchandise)
 - **Exit Requirement**: Must pass through gift shop (purchases optional but socially pressured)
@@ -155,13 +155,13 @@
 ### Gift Shop Economy
 | Item | Price | Effects | Notes |
 |------|-------|---------|-------|
-| "I ❤️ SHAMSTERDAM" T-Shirt | 25 Sovs | +Embarrassment resistance (you've committed) | Sizes run European (small) |
-| Tulip Magnet | 8 Sovs | None (decorative) | "Handcrafted" (machine-made) |
-| Wooden Clog Keychain | 12 Sovs | None (weight adds to inventory) | "Authentic" (from overseas) |
-| "Modern Art Chocolate" | 12-24 Sovs | Consumable: +15 HP each | Bachelor party essential |
-| "Fabergé-Style Egg" | 4 Sovs | Quest item (if Fabergé quest active) | "Priceless" to Lord Pilsner |
-| "Abstract Expression #69" NFT | 2 Sovs QR | Permanent inventory item, cannot sell/delete | Dennis's masterpiece |
-| Museum Tote Bag | 18 Sovs | +Inventory space (cosmetic only) | "I Support The Arts" |
+| "I ❤️ SHAMSTERDAM" T-Shirt | 25 SOVS | +Embarrassment resistance (you've committed) | Sizes run European (small) |
+| Tulip Magnet | 8 SOVS | None (decorative) | "Handcrafted" (machine-made) |
+| Wooden Clog Keychain | 12 SOVS | None (weight adds to inventory) | "Authentic" (from overseas) |
+| "Modern Art Chocolate" | 12-24 SOVS | Consumable: +15 HP each | Bachelor party essential |
+| "Fabergé-Style Egg" | 4 SOVS | Quest item (if Fabergé quest active) | "Priceless" to Lord Pilsner |
+| The Nordic Vacuum Warranty NFT (Austin Powers Swedish Penis Enlarger Pump) | 2 SOVS QR | Permanent inventory item, cannot sell/delete | Dennis's masterpiece |
+| Museum Tote Bag | 18 SOVS | +Inventory space (cosmetic only) | "I Support The Arts" |
 
 ### Fabergé Egg Hunt Integration (Primary Quest Function)
 **Heist Location Mechanics:**
@@ -180,7 +180,7 @@
 - **NPC**: Daan (19, art student, zero investment in his job)
 - **Reality**: Doesn't look up from phone, mumbles "four"
 - **Bros' Interpretation**: "Cold-eyed professional neutralized through strategic financial incentives"
-- **Gameplay**: Lord Pilsner pays 20 Sovs, believes he's executed a bribe
+- **Gameplay**: Lord Pilsner pays 20 SOVS, believes he's executed a bribe
 
 #### The "Laser Grid"
 - **Reality**: Motion-sensor lights turn on when you walk by
@@ -193,14 +193,14 @@
 - **Gameplay**: Bradley opens latch, believes he "cracked it with his bare hands"
 
 #### Acquisition & Escape
-- **Reality**: Take chocolate egg (shoplifting 4 Sovs), walk out (Daan marks "inventory shrinkage")
+- **Reality**: Take chocolate egg (shoplifting 4 SOVS), walk out (Daan marks "inventory shrinkage")
 - **Bros' Interpretation**: "Greatest heist in European history"
 - **Gameplay**: Sprint to exit, dramatic music, complete obliviousness
 
 ### Dennis's NFT Operation (Side Content)
 - **Trigger**: Examine QR code terminal in Chocolate Anatomy section
 - **Process**: Chadwick scans code, phone loads 8-bit image, NFT "minted"
-- **Result**: "Abstract Expression #69" added to inventory permanently
+- **Result**: the The Nordic Vacuum Warranty NFT (Austin Powers Swedish Penis Enlarger Pump) added to inventory permanently
 - **Dennis Interaction**: Gift shop employee explains his "artistic vision" if prompted
 - **Meta Commentary**: Cannot be sold, deleted, or escaped — "The blockchain is forever"
 
@@ -214,7 +214,7 @@
 - **Activities**: TikTok, occasionally looking up, sighing
 - **Dialogue**:
   - "Hmm? Oh. Gift shop's whatever. Museum's upstairs. I guess."
-  - "Those are 4 Sovs. Or 2 Sovs if you buy a keychain. Whatever."
+  - "Those are 4 SOVS. Or 2 SOVS if you buy a keychain. Whatever."
   - *in Dutch* "Dat is vier." (That's four.) — Bros interpret as "calling for backup"
   - "Did you guys pay for those magnets? ...Whatever. They were ugly anyway."
 - **Post-Quest ICQ**: "hey did you guys ever pay for those magnets"
@@ -223,7 +223,7 @@
 - **Role**: Gift shop employee, NFT artist, one-man "collective"
 - **Age**: 23
 - **Investment Level**: Concerningly high (in his art), zero (in his job)
-- **Creation**: "Abstract Expression #69" — pixelated chocolate anatomy with top hat and monocle
+- **Creation**: the The Nordic Vacuum Warranty NFT (Austin Powers Swedish Penis Enlarger Pump; card art pending author)
 - **Dialogue**:
   - "You scanned the QR code? You're a patron of the arts now. Congratulations."
   - "The blockchain is forever. Like art. Like chocolate. Like regret."
@@ -266,7 +266,7 @@
 - **Rewards**: Quest items acquired here, debrief at Café de Schaamte
 
 ### NFT Hunt Integration
-- **NFT Acquired**: "Abstract Expression #69" (Shamsterdam #1 of 3)
+- **NFT Acquired**: The Nordic Vacuum Warranty (Austin Powers Swedish Penis Enlarger Pump; Shamsterdam slot 1)
 - **Trigger**: Examine Chocolate Anatomy QR terminal
 - **Creator**: Dennis (CryptoBroArtCollective)
 - **Permanence**: Cannot be sold or deleted
@@ -275,7 +275,7 @@
 - **Meeting Location**: Near QR terminal after examining NFT
 - **Invitation**: "You appreciate my art? You should see my studio. It's also my apartment. It's mostly my apartment."
 - **Morning Scene**: Wake on beanbag surrounded by failed art projects, Dennis explaining blockchain over cold coffee
-- **Consequences**: Gain "Distressed APE Adjacent" NFT (bonus), Hungover status, -5 Sovs (he "invested" it in "the collective")
+- **Consequences**: Gain "The Bedrock Chewable Reserve" NFT (Flintstones Vitamins; counted Shamsterdam #4, author 2026-11-11), Hungover status, -5 SOVS (he "invested" it in "the collective")
 - **Satirical Beat**: His "studio" is a closet with a laptop, strong opinions, and no heat
 
 ### Cross-Location Dependencies
@@ -308,7 +308,7 @@
   - Three-floor museum environment (ground/first/second/third)
   - Gift shop layout with merchandise displays
   - Chocolate Anatomy Emporium feature display
-  - "Fabergé" display case with 4 Sovs eggs
+  - "Fabergé" display case with 4 SOVS eggs
   - Daan cashier station with phone glow
   - Dennis QR terminal
   - Motion-sensor light system (third floor)
@@ -334,13 +334,13 @@
 ## Marketing Integration
 ### Social Media Strategy
 - **Instagram Moments**: Chocolate Emporium display, "Stand In The Window" photo op, NFT reveal
-- **TikTok Potential**: "Heisting" a 4 Sovs egg compilation, Dennis explaining his art, bachelor party shopping spree
+- **TikTok Potential**: "Heisting" a 4 SOVS egg compilation, Dennis explaining his art, bachelor party shopping spree
 - **Twitter Hooks**: Dennis's artist statement quotes, Daan's complete indifference, museum "security" reality
 - **Streaming Content**: Full Fabergé heist playthrough with dramatic vs. reality split screen
 
 ### Community Engagement
 - **Fan Art Potential**: Chocolate Anatomy designs, Daan's thousand-yard stare, Dennis's NFT masterpiece
-- **Meme-ability**: "Military-grade security" (automatic lights), "Priceless artifact" (4 Sovs egg), "The blockchain is forever"
+- **Meme-ability**: "Military-grade security" (automatic lights), "Priceless artifact" (4 SOVS egg), "The blockchain is forever"
 - **Cultural Discussion**: Tourist trap museum economics, NFT art scene satire, bachelor party souvenir culture
 
 ## Quality Assurance Checklist
@@ -359,7 +359,7 @@
 ### Environment Art — Ground Floor/Gift Shop (10 PNGs)
 - museum_ground_floor_background.png - 1920x1080 - Gift shop dominant layout
 - chocolate_anatomy_emporium_display.png - 512x384 - Feature floor display
-- faberge_display_case.png - 256x256 - Glass case with "priceless" 4 Sovs eggs
+- faberge_display_case.png - 256x256 - Glass case with "priceless" 4 SOVS eggs
 - cash_register_station.png - 192x128 - Daan's domain
 - merchandise_rack_spinning.png - 128x256 - Rotating souvenir display (animation frames)
 - nft_qr_terminal.png - 96x128 - Dennis's art distribution system
@@ -399,13 +399,13 @@
 - inventory_shrinkage_clipboard.png - 48x64 - Daan's acknowledgment of theft
 
 ### UI Elements (6 PNGs)
-- museum_entrance_fee_prompt.png - 128x96 - "Suggested donation: 15 Sovs"
+- museum_entrance_fee_prompt.png - 128x96 - "Suggested donation: 15 SOVS"
 - gift_shop_purchase_popup.png - 192x128 - Item acquisition celebration
-- nft_minting_animation.png - 128x128x6 - "Abstract Expression #69" appears
+- nft_minting_animation.png - 128x128x6 - the slot 1 NFT (The Nordic Vacuum Warranty; Austin Powers Swedish Penis Enlarger Pump) appears
 - heist_music_indicator.png - 64x32 - Player-only dramatic soundtrack
 - motion_light_trigger_effect.png - 256x128 - "LASER GRID" activation visual
 - bros_interpretation_vs_reality.png - 384x256 - Split-screen comedic reveal
 
 ---
 
-*Shamsterdam Museum of Questionable Art: Where culture meets commerce, and 4 Sovs becomes "priceless" if you believe hard enough.*
+*Shamsterdam Museum of Questionable Art: Where culture meets commerce, and 4 SOVS becomes "priceless" if you believe hard enough.*

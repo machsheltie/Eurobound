@@ -47,8 +47,9 @@ Each airdrop deposits a quantity of a **0-value junk coin** into Bagholder Asset
 
 - Quantities are always large. Six figures is normal. Large numbers are the entire perceived value.
 - Payload coins are drawn from the master pool (`shitcoin_master_pool.md`). Airdrops do **not** introduce coins that exist nowhere else.
-- Airdropped coins are **not spendable.** No back-alley vendor accepts them, no kiosk exchanges them, they are not a free ticket into the 35/65. They are junk that has arrived.
-- **One exception (author ruling, 2026-11-09):** MoonCum696969 is spendable with **Tony420 only**. 50 MoonCum buys the Flintstone Xanax. No other vendor, kiosk or exchange accepts it.
+- Airdropped coins are **unspendable except with Tony420.** No back-alley vendor accepts them, no kiosk exchanges them, they are not a free ticket into the 35/65. They are junk that has arrived.
+- **MoonCum696969 (author ruling, 2026-11-09):** spendable with **Tony420 only**. 50 MoonCum buys the Flintstone Xanax. No other vendor, kiosk or exchange accepts it.
+- Tony420 accepts any airdropped coin as payment, including his own airdrops ($SPANK etc.) (author, 2026-11-11). Rug-pulled coins can't be spent anywhere, Tony included (author, 2026-11-11).
 - **Tony420's free sample (author ruling, 2026-11-10):** in *The Standing Ovation* he airdrops exactly 50 MoonCum696969 right before pitching the pill, then sells it to you with it. It is a quest delivery, and the one airdrop that is small on purpose.
 - No accept/decline prompt. The player is not consulted. That is what an airdrop is.
 

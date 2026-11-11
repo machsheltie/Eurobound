@@ -397,7 +397,7 @@ RGB LED atmospheric effects synced to club bass:
 **Flicker Pattern:**
 - Erratic flicker frame simulating bass drop reaction
 - Smooth pulse frame for continuous rhythm
-- Static glow frame for low-end device fallback
+- Static glow frame for min-spec hardware fallback
 
 ### 6. vip_bathroom_interactive_objects.png (384x256 pixels)
 All interactive elements and special objects:

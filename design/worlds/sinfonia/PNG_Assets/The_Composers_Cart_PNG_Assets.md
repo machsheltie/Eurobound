@@ -114,7 +114,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 | Secondary Sign "Please Do Not Hum. We Will Know If It's Wrong." | (0, 360) | 320x24 | The house rule |
 | Hours Plate "9 AM – 9 PM" | (320, 320) | 96x24 | Musician hours |
 | Price Slate | (320, 344) | 96x40 | Fair prices; he is not a scammer |
-| Patron-of-the-Arts Notice | (416, 320) | 96x32 | 100 Sovs tier explained |
+| Patron-of-the-Arts Notice | (416, 320) | 96x32 | 100 SOVS tier explained |
 | "Musically Offensive — 10 Minute Ban" Placard | (416, 352) | 96x32 | Posted consequence |
 | Faded Composer Portrait A | (512, 320) | 48x64 | Gilt-framed, sun-bleached |
 | Faded Composer Portrait B | (560, 320) | 48x64 | Gilt-framed, sun-bleached |
@@ -223,8 +223,8 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 | Portrait, Glass Cracked | (144, 128) | 48x64 | Never repaired |
 | Bust, Chipped | (192, 128) | 48x64 | Plaster, nose gone |
 | Rare-Stock Drawer, Open | (240, 128) | 64x64 | Patron of the Arts access |
-| Lost Manuscript In Drawer | (304, 128) | 48x64 | 50 Sovs, permanent +25% rhythm timing |
-| Forbidden Opus, Wrapped | (352, 128) | 48x64 | 75 Sovs, still wrapped |
+| Lost Manuscript In Drawer | (304, 128) | 48x64 | 50 SOVS, permanent +25% rhythm timing |
+| Forbidden Opus, Wrapped | (352, 128) | 48x64 | 75 SOVS, still wrapped |
 | Tuning Fork | (400, 128) | 24x48 | Reference pitch |
 | Pitch Pipe | (424, 128) | 24x24 | Portable reference |
 | Dust Sheet | (424, 152) | 24x40 | Cover cloth |
@@ -364,24 +364,24 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 ### Standard Items (32x48 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Basic Score | (0, 0) | 32x48 | 5 Sovs, +5% rhythm timing |
-| Practice Sheet | (32, 0) | 32x48 | 8 Sovs, +10% rhythm timing, one battle |
-| Tempo Guide | (64, 0) | 32x48 | 12 Sovs, reveals enemy attack patterns |
-| Conductor's Notes | (96, 0) | 32x48 | 15 Sovs, +15% rhythm damage |
-| Harmony Chart | (128, 0) | 32x48 | 20 Sovs, party rhythm sync +10% |
-| Crescendo Script | (160, 0) | 32x48 | 10 Sovs, damage increases each turn |
-| Diminuendo Draft | (192, 0) | 32x48 | 10 Sovs, enemy damage decreases each turn |
-| Fermata Fragment | (224, 0) | 32x48 | 15 Sovs, pause enemy for one turn |
+| Basic Score | (0, 0) | 32x48 | 5 SOVS, +5% rhythm timing |
+| Practice Sheet | (32, 0) | 32x48 | 8 SOVS, +10% rhythm timing, one battle |
+| Tempo Guide | (64, 0) | 32x48 | 12 SOVS, reveals enemy attack patterns |
+| Conductor's Notes | (96, 0) | 32x48 | 15 SOVS, +15% rhythm damage |
+| Harmony Chart | (128, 0) | 32x48 | 20 SOVS, party rhythm sync +10% |
+| Crescendo Script | (160, 0) | 32x48 | 10 SOVS, damage increases each turn |
+| Diminuendo Draft | (192, 0) | 32x48 | 10 SOVS, enemy damage decreases each turn |
+| Fermata Fragment | (224, 0) | 32x48 | 15 SOVS, pause enemy for one turn |
 
 ### Premium & Consumables:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Lost Manuscript | (0, 48) | 48x64 | 50 Sovs, +25% rhythm timing, permanent passive |
-| Forbidden Opus | (48, 48) | 48x64 | 75 Sovs, unlocks secret rhythm pattern |
-| The Unfinished Symphony | (96, 48) | 48x64 | 100 Sovs, massive buff that ends randomly |
-| Original Composition | (144, 48) | 48x64 | 150 Sovs, custom attack pattern, unique to player |
-| Sforzando Scrap | (192, 48) | 32x32 | 20 Sovs, one attack deals 3x damage |
-| Patron Badge | (224, 48) | 32x32 | 100 Sovs tier indicator |
+| Lost Manuscript | (0, 48) | 48x64 | 50 SOVS, +25% rhythm timing, permanent passive |
+| Forbidden Opus | (48, 48) | 48x64 | 75 SOVS, unlocks secret rhythm pattern |
+| The Unfinished Symphony | (96, 48) | 48x64 | 100 SOVS, massive buff that ends randomly |
+| Original Composition | (144, 48) | 48x64 | 150 SOVS, custom attack pattern, unique to player |
+| Sforzando Scrap | (192, 48) | 32x32 | 20 SOVS, one attack deals 3x damage |
+| Patron Badge | (224, 48) | 32x32 | 100 SOVS tier indicator |
 | Rare LP Cross-Reference Card | (192, 80) | 64x32 | Points toward the Vinyl Hunt |
 
 ### Status & Reaction Icons (32x32 each):
@@ -524,7 +524,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 ### Patron of the Arts Track:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Patron Progress Bar | (0, 192) | 160x24 | 0 Sovs → 100 Sovs rail |
+| Patron Progress Bar | (0, 192) | 160x24 | 0 SOVS → 100 SOVS rail |
 | Patron Tier Pip | (160, 192) | 24x24 | Milestone marker |
 | Discount Badge | (184, 192) | 24x24 | 10% permanent |
 | Rare Stock Unlock Banner | (208, 192) | 48x24 | Premium inventory opens |
@@ -625,7 +625,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - **Duration:** 1.2 seconds, single play
 - **Frames:** 2 (drawer locked → drawer open) + dust puff
 - **Pattern:** Drawer slides, dust rises, premium items visible
-- **Trigger:** Reaching Patron of the Arts (100 Sovs), or a correctly hummed obscure piece
+- **Trigger:** Reaching Patron of the Arts (100 SOVS), or a correctly hummed obscure piece
 - **Purpose:** The reward for being taken seriously
 - **Audio Sync:** Drawer slide, then a beat of silence before he speaks
 - **Performance Optimization:** Dust puff cut on Low LOD
@@ -678,7 +678,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - Discount and price-increase tokens differ by arrow direction and border geometry, not colour
 - Item sprites are distinguishable by paper format (sheet / folded / folio / scroll / parcel) before colour
 - Patron tier is communicated by pip count and text, never hue
-- Touch zones minimum 44px for item rows, tune selection chips, the pitch slider, and the selfie prompt
+- Click zones minimum 44px for item rows, tune selection chips, the pitch slider, and the selfie prompt
 
 ---
 
@@ -731,7 +731,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - Cart state machine: `browsing → item_selected → purchase | request | quiz`; a parallel `humming` state can interrupt from any node and resolves to `discount | neutral | price_increase | ban`
 - Humming controller: pitch input → tune identification (3 notes) → accuracy scoring → outcome table (Für Elise basic/wrong, Mozart correct/wrong, obscure correct/wrong, made-up, copyrighted). The made-up-tune branch sets a quest-trigger flag
 - Ban state locks all shop interaction for 10 in-game minutes and drives the Ban Timer Ring; the vendor sprite remains present and visibly unmoved
-- Patron controller persists `total_spent`; 100 Sovs unlocks the Rare-Stock Drawer, a permanent 10% discount, name recognition, specific-composition requests, and limited humming permission
+- Patron controller persists `total_spent`; 100 SOVS unlocks the Rare-Stock Drawer, a permanent 10% discount, name recognition, specific-composition requests, and limited humming permission
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -757,7 +757,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 | "The Humming Champion" | All five tune cards, Judgment Bar, Humming Champion rosette | Pass every humming challenge |
 | "Forbidden Music" | Forbidden Opus (wrapped), rare-stock drawer, RAGE frame | Acquire the banned composition (late game) |
 | "Paper Avalanche" | Pile stable/toppling/collapsed, avalanche burst, Horrified frame, Bro Buried In Manuscripts | Knock over a manuscript pile |
-| "Patron of the Arts" | Patron progress bar, patron badge, rare-stock unlock banner, discount badge | Spend 100 Sovs total |
+| "Patron of the Arts" | Patron progress bar, patron badge, rare-stock unlock banner, discount badge | Spend 100 SOVS total |
 | "Genuine Respect" | Rare Respect frame, approval hum glyph, achievement toast | Earn the vendor's approval |
 | "Passed the Test" | Quiz panel, Quiz Pose frame, discount tokens | Correctly identify a piece |
 | Selfie Spot — Standard | Cart with paper avalanche visible, sheet-music-upside-down prop, caption "Cultured" | Any visit |
@@ -899,7 +899,7 @@ assets/sprites/locations/sinfonia/the_composers_cart/
 - [ ] The humming mini-game is fully playable without audio or colour
 - [ ] Hidden content (rare-stock drawer, Forbidden Opus, made-up-tune quest trigger) has discoverable visual cues
 - [ ] Performance optimized (CPU particles only, 10-draw-call ceiling, three atlas binds, baked busker silhouettes)
-- [ ] Touch zone sizing considered (44px minimum for item rows, tune chips, pitch slider, selfie prompt)
+- [ ] Click zone sizing considered (44px minimum for item rows, tune chips, pitch slider, selfie prompt)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 

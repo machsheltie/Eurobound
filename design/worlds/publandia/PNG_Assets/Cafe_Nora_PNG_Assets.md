@@ -115,8 +115,8 @@ assets/sprites/locations/publandia/cafe_nora/
 | Cup Pyramid | (256, 160) | 64x48 | Stacked cups, one chipped |
 | Milk Jugs & Tamper | (256, 208) | 64x48 | Barista tools, steam-scalded |
 | Coffee Menu Board | (320, 160) | 96x96 | All six drinks, chalk-lettered with literary flourishes |
-| Headphone Rack | (416, 160) | 96x48 | Loaner headphones, "2 Sovs DEPOSIT" tag |
-| Terminal Time Price Sign | (416, 208) | 96x48 | "3 Sovs / 30 MIN — DAY PASS 15 Sovs" |
+| Headphone Rack | (416, 160) | 96x48 | Loaner headphones, "2 SOVS DEPOSIT" tag |
+| Terminal Time Price Sign | (416, 208) | 96x48 | "3 SOVS / 30 MIN — DAY PASS 15 SOVS" |
 
 ### The Back Alcove (The Privacy):
 | Element | Position | Size | Description |
@@ -328,7 +328,7 @@ assets/sprites/locations/publandia/cafe_nora/
 ### Technical Notes:
 - Struggling Writer never leaves the corner seat — position is fixed, states swap in place
 - Generic typing NPCs share the 4-frame typing hand cycle to keep animation memory flat
-- Mobile builds cap ambient regulars at 4 visible (profile: reduced NPC count)
+- Min-spec builds cap ambient regulars at 4 visible (profile: reduced NPC count)
 
 ---
 
@@ -339,20 +339,20 @@ assets/sprites/locations/publandia/cafe_nora/
 ### Coffee Menu Items:
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Ulysses Blend (Espresso) | (0, 0) | 48x48 | 4 Sovs — +10 SP, +Focus; bold, like the book nobody's read |
-| Dubliners Drip (Filter) | (48, 0) | 48x48 | 3 Sovs — +5 SP, +Stamina; honest filter coffee |
-| Portrait of the Artist (Latte) | (96, 0) | 48x48 | 5 Sovs — +10 SP, +Creativity; foam art attempted |
-| Finnegans Wake (Triple Shot) | (144, 0) | 48x48 | 6 Sovs — +20 SP, ++Speed, -Sleep later; enlightenment or palpitations |
-| Nora's House Blend | (192, 0) | 48x48 | 4 Sovs — +8 SP, staff approval; her grandmother's recipe |
+| Ulysses Blend (Espresso) | (0, 0) | 48x48 | 4 SOVS — +10 SP, +Focus; bold, like the book nobody's read |
+| Dubliners Drip (Filter) | (48, 0) | 48x48 | 3 SOVS — +5 SP, +Stamina; honest filter coffee |
+| Portrait of the Artist (Latte) | (96, 0) | 48x48 | 5 SOVS — +10 SP, +Creativity; foam art attempted |
+| Finnegans Wake (Triple Shot) | (144, 0) | 48x48 | 6 SOVS — +20 SP, ++Speed, -Sleep later; enlightenment or palpitations |
+| Nora's House Blend | (192, 0) | 48x48 | 4 SOVS — +8 SP, staff approval; her grandmother's recipe |
 
 ### Tea & Pastries:
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Literary Tea Selection | (0, 48) | 48x48 | 3 Sovs — +5 SP, +Calm; leaves, not bags, obviously |
-| Scone (Plain) | (48, 48) | 48x48 | 3 Sovs — +10 HP |
-| Scone (With Jam) | (96, 48) | 48x48 | 4 Sovs — +15 HP |
-| Brown Bread Toast | (144, 48) | 48x48 | 3 Sovs — +12 HP |
-| "Joyce's Favorite" Cake | (192, 48) | 48x48 | 5 Sovs — +20 HP (Joyce never ate this) |
+| Literary Tea Selection | (0, 48) | 48x48 | 3 SOVS — +5 SP, +Calm; leaves, not bags, obviously |
+| Scone (Plain) | (48, 48) | 48x48 | 3 SOVS — +10 HP |
+| Scone (With Jam) | (96, 48) | 48x48 | 4 SOVS — +15 HP |
+| Brown Bread Toast | (144, 48) | 48x48 | 3 SOVS — +12 HP |
+| "Joyce's Favorite" Cake | (192, 48) | 48x48 | 5 SOVS — +20 HP (Joyce never ate this) |
 
 ### Effect Icons:
 | Icon | Position | Size | Description |
@@ -456,7 +456,7 @@ assets/sprites/locations/publandia/cafe_nora/
 ### Technical Notes:
 - ICQ Chat Window and Rumor Ping Popup are 9-slice friendly — keep 8px uniform borders
 - Quality Stamps slam onto the Selfie Quality Result with a 0.2s scale bounce
-- All tappable UI regions ship at or above 44px minimum touch dimension at render scale
+- All clickable UI regions ship at or above 44px minimum click-target dimension at render scale
 
 ---
 
@@ -607,17 +607,17 @@ assets/sprites/locations/publandia/cafe_nora/
 | Reading Chime Sparkle | (192, 176) | 32x32 | Gold book glyph for the rare "someone actually reads" sound |
 | Cup Placement Tick | (224, 176) | 32x32 | Small ring pulse when coffee lands on the counter |
 
-### Caption & Touch Support:
+### Caption & Input Support:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Ambient Caption Bar | (0, 208) | 256x32 | Strip for soft-jazz / murmur / busy-hour ambience captions |
-| 44px Touch Grid Ruler | (0, 240) | 256x16 | QA reference strip verifying minimum touch target sizing |
+| 44px Click Grid Ruler | (0, 240) | 256x16 | QA reference strip verifying minimum click target sizing |
 
 ### Colorblind Considerations:
 - Selfie quality tiers (Poor/Average/Good/Viral) never rely on color alone — each stamp has a distinct shape (dash / circle / star / burst)
 - Coffee effect icons pair every color with a unique glyph silhouette (chevrons, heart, quill, moon)
 - ICQ status and rumor categories are icon-coded (flower, flag, crown, mail), not color-coded
-- All interactive elements — order hotspot, terminal rental, selfie upload, ICQ window, rumor popups, menu rows — meet the 44px minimum touch target
+- All interactive elements — order hotspot, terminal rental, selfie upload, ICQ window, rumor popups, menu rows — meet the 44px minimum click target
 
 ---
 
@@ -650,7 +650,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - **Particle Limit:** 20 (steam + dust + notification sparks combined)
 
 ### Performance Notes:
-- Simplified terminal section on mobile: Terminal Row Bank renders as one sprite, individual screen states stamped only for the 3 nearest machines
+- Simplified terminal section on min-spec hardware: Terminal Row Bank renders as one sprite, individual screen states stamped only for the 3 nearest machines
 - Ambient NPC count reduced per platform considerations; typing audio layer scales with visible typists so audio and animation never desync
 - ICQ window, selfie UI, and rumor popups are 9-slice — one texture each regardless of screen size
 - Dial-up overlay preloads with the scene; it fires hourly and must never hitch
@@ -803,7 +803,7 @@ assets/sprites/locations/publandia/cafe_nora/
 - [ ] Satirical theme (literary tourism as performance, pretension without substance) is clear throughout all assets
 - [ ] Easter eggs discoverable: fake quote, fake Joyce letter, reproduction Ulysses, never-consulted literary map, the marked calendar
 - [ ] Performance optimized (CPU particles capped at 20, 12 draw calls, silhouette crowd clusters, 9-slice UI)
-- [ ] Touch zone sizing considered (44px minimum — order hotspot, terminal rental, selfie upload, ICQ window, rumor popups)
+- [ ] Click zone sizing considered (44px minimum — order hotspot, terminal rental, selfie upload, ICQ window, rumor popups)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (shape-coded quality stamps, glyph-coded effect icons, icon-coded rumor categories)
 - [ ] Social media viral potential maximized (fake quote framing, dial-up moment composition, contested outlet tableau)
 

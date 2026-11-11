@@ -85,7 +85,7 @@
       "violation": "Standing in bike lane for more than 3 seconds",
       "amount": 95,
       "currency": "sovs",
-      "dialogue": "This is a bike lane. You are not a bike. That's 95 Sovs."
+      "dialogue": "This is a bike lane. You are not a bike. That's 95 SOVS."
     },
     {
       "fine_id": "blocking_traffic",
@@ -93,7 +93,7 @@
       "violation": "Causing cyclists to swerve around you",
       "amount": 140,
       "currency": "sovs",
-      "dialogue": "You're blocking traffic. Yes, on foot. Still illegal. 140 Sovs."
+      "dialogue": "You're blocking traffic. Yes, on foot. Still illegal. 140 SOVS."
     },
     {
       "fine_id": "photography_violation",
@@ -101,7 +101,7 @@
       "violation": "Taking photographs while in crossing zone",
       "amount": 50,
       "currency": "sovs",
-      "dialogue": "No photographs in crossing. Safety regulation. 50 Sovs."
+      "dialogue": "No photographs in crossing. Safety regulation. 50 SOVS."
     },
     {
       "fine_id": "attitude_surcharge",
@@ -109,7 +109,7 @@
       "violation": "Being dramatic about receiving a fine",
       "amount": 25,
       "currency": "sovs",
-      "dialogue": "And 25 Sovs for the attitude."
+      "dialogue": "And 25 SOVS for the attitude."
     }
   ],
   
@@ -277,7 +277,7 @@
     {
       "shortcut_id": "bike_rental_bypass",
       "display_name": "Bike Rental",
-      "description": "Rent a bike for 15 Sovs. Become traffic instead of obstacle.",
+      "description": "Rent a bike for 15 SOVS. Become traffic instead of obstacle.",
       "cost": 15,
       "currency": "sovs",
       "effect": "bypasses_crossing_as_cyclist",

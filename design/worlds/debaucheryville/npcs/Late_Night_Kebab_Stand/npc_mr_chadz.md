@@ -16,10 +16,10 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Running a rusty open-air food cart wedged between a chain-link fence and an NFT-graffitied wall, one-handed, while a burner phone rings about supplier problems and health-inspector timing and buzzes, in between, with price alerts for coins he half-follows. He is a former bouncer who worked out that the same crowd he used to throw out of clubs will pay him 6 Sovs for a wrap ninety seconds later, and that they will pay it in a state where nobody negotiates. He discloses everything. He does not lower the price.
+Running a rusty open-air food cart wedged between a chain-link fence and an NFT-graffitied wall, one-handed, while a burner phone rings about supplier problems and health-inspector timing and buzzes, in between, with price alerts for coins he half-follows. He is a former bouncer who worked out that the same crowd he used to throw out of clubs will pay him 6 SOVS for a wrap ninety seconds later, and that they will pay it in a state where nobody negotiates. He discloses everything. He does not lower the price.
 
 ### What Bros Believe
-That they have found the authentic late-night European street food experience — the real thing, the one locals eat, the one that doesn't show up in guidebooks. They interpret the health-code jokes as gruff Eastern European humor. They interpret the rat as local color. They interpret the 6 Sovs wrap as a steal.
+That they have found the authentic late-night European street food experience — the real thing, the one locals eat, the one that doesn't show up in guidebooks. They interpret the health-code jokes as gruff Eastern European humor. They interpret the rat as local color. They interpret the 6 SOVS wrap as a steal.
 
 ### The Comedy Gap
 Mr. Chadz never lies to them once. He says the meat is "mostly legal." He says the heat lamp is "all vibes." He tells them the FDA stopped answering his emails in 2019 and he tells them the year specifically, like a man citing a source. The bros hear all of it, laugh, and order two. Full disclosure has never once cost him a sale, which is the only market research he has ever needed.
@@ -68,7 +68,7 @@ The whole read is the crop-top-over-bulletproof-vest combination: absurd, entire
 | Non-judgmental | Has seen everything at this cart and has opinions about none of it |
 
 ### Internal Monologue
-> "Told him about the meat. Told him about the lamp. Told him the FDA thing — I always tell them the FDA thing, it's a good line, it lands. He laughed. He ordered two. That's the job. Twelve Sovs. The rat's back. Fine. The rat has been here longer than most of my suppliers."
+> "Told him about the meat. Told him about the lamp. Told him the FDA thing — I always tell them the FDA thing, it's a good line, it lands. He laughed. He ordered two. That's the job. Twelve SOVS. The rat's back. Fine. The rat has been here longer than most of my suppliers."
 
 ### Motivation
 Six years on the door of the Velvet Curtain Club taught him that the money isn't in keeping people out — it's in what they buy on the way home. The cart is a margin business he can run alone, at hours nobody else will work, serving a customer base that never haggles. He is not trying to grow it. He is not trying to legitimize it. It works, and the phone keeps ringing about the supplier, and that's Tuesday.
@@ -100,7 +100,7 @@ Six years on the door of the Velvet Curtain Club taught him that the money isn't
 > "Twelve."
 
 *On the EuroMeat Pocket™:*
-> "It's grey. It's supposed to be grey. Grey is a color, my friend. Five Sovs."
+> "It's grey. It's supposed to be grey. Grey is a color, my friend. Five SOVS."
 
 *On the Yogurt Reboot:*
 > "Fixes whatever the other stuff did. Then it does its own thing for about two minutes. Buy it before, not after. Nobody buys it before."
@@ -109,10 +109,10 @@ Six years on the door of the Velvet Curtain Club taught him that the money isn't
 > "The FDA stopped returning my emails in 2019. Different country, I know. I emailed them anyway. Felt thorough."
 
 *If the player notices the rat:*
-> "That's a rat. It found a chili pepper. Good for him. Six Sovs."
+> "That's a rat. It found a chili pepper. Good for him. Six SOVS."
 
 *If the phone buzzes with a price alert mid-order and the player asks what it was — he does not look up from the wrap:*
-> "Kebab coin's down three percent. Meat-backed, they said. My meat. Nobody asked me. Six Sovs."
+> "Kebab coin's down three percent. Meat-backed, they said. My meat. Nobody asked me. Six SOVS."
 
 *If the player asks whether he holds any (any visit):*
 > "I set the alerts up years ago. Never turned them off. That's the whole relationship."
@@ -128,7 +128,7 @@ Six years on the door of the Velvet Curtain Club taught him that the money isn't
 > "No? Fine. Kebab place four blocks up is closed. The one past the square is closed. The metro's closed. Everything is closed. I'm not saying that as pressure, I'm saying it as a schedule."
 
 *If the player tries to haggle:*
-> "It's six Sovs. It's been six Sovs since before you got here. You want to negotiate, go to the Shadow Exchange, they love that down there."
+> "It's six SOVS. It's been six SOVS since before you got here. You want to negotiate, go to the Shadow Exchange, they love that down there."
 
 *If the player asks for extra sauce aggressively (the ban trigger):*
 > "Hey. Hey. Hands off the pump. This is how you get told to walk. I've told bigger guys than you to walk, and I was getting paid less to do it."
@@ -174,16 +174,16 @@ Six years on the door of the Velvet Curtain Club taught him that the money isn't
 ### Menu — Late-Night Kebab Stand
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Gutbuster Wrap | 6 Sovs | Maybe 2 Sovs of lamb and slaw | -15 HP, +20% stamina regen for 2 battles; may trigger "Greaseburp" |
-| "Vampire Slayer" Garlic Fries | 4 Sovs | Week-old oil, bulk potatoes | Cures "Hungover"; inflicts "Socially Rejected" for 3 overworld steps |
-| EuroMeat Pocket™ | 5 Sovs | Grey gyro, soggy microwaved pita | +10 HP, +1 Attack, 50% chance of "Meat Doubt" |
-| MegaMix Box (Regret Platter) | 9 Sovs | Everything on the menu, in a box | Random stat boost x2; inflicts one random status (Bloated, Embarrassed, Confused) |
-| Drunken Sauce Shot | 2 Sovs | Hot sauce and mayo in a plastic thimble | Removes "Dazed"; inflicts "Dysentery (Light)" if used twice within 10 minutes |
-| Lambsomnia Special | 7 Sovs | Spiced lamb, pickled onion, "sleepless tzatziki" | Grants "Insomniac Clarity" — auto-crit next turn, no healing until next inn |
-| Yogurt Reboot | 3 Sovs | Warm expired Balkan yogurt, small cup | Resets all negative food debuffs; uncontrollable farting for 2 minutes |
-| Belly Of Chadz | 6 Sovs | Dense kebab box, three sauces | +HP regen while Hungover (10% over 3 turns); 50% chance of immediate "Greasy Coma". **Counts as the Debaucheryville sample for The Great Döner Debate** |
+| Gutbuster Wrap | 6 SOVS | Maybe 2 SOVS of lamb and slaw | -15 HP, +20% stamina regen for 2 battles; may trigger "Greaseburp" |
+| "Vampire Slayer" Garlic Fries | 4 SOVS | Week-old oil, bulk potatoes | Cures "Hungover"; inflicts "Socially Rejected" for 3 overworld steps |
+| EuroMeat Pocket™ | 5 SOVS | Grey gyro, soggy microwaved pita | +10 HP, +1 Attack, 50% chance of "Meat Doubt" |
+| MegaMix Box (Regret Platter) | 9 SOVS | Everything on the menu, in a box | Random stat boost x2; inflicts one random status (Bloated, Embarrassed, Confused) |
+| Drunken Sauce Shot | 2 SOVS | Hot sauce and mayo in a plastic thimble | Removes "Dazed"; inflicts "Dysentery (Light)" if used twice within 10 minutes |
+| Lambsomnia Special | 7 SOVS | Spiced lamb, pickled onion, "sleepless tzatziki" | Grants "Insomniac Clarity" — auto-crit next turn, no healing until next inn |
+| Yogurt Reboot | 3 SOVS | Warm expired Balkan yogurt, small cup | Resets all negative food debuffs; uncontrollable farting for 2 minutes |
+| Belly Of Chadz | 6 SOVS | Dense kebab box, three sauces | +HP regen while Hungover (10% over 3 turns); 50% chance of immediate "Greasy Coma". **Counts as the Debaucheryville sample for The Great Döner Debate** |
 
-Currency: Kebab Coins accepted. Prices do not shift by hour — unusually for Debaucheryville, Mr. Chadz has never run a desperation markup, and if asked why, he says "six Sovs is six Sovs."
+Currency: Kebab Coins accepted. Prices do not shift by hour — unusually for Debaucheryville, Mr. Chadz has never run a desperation markup, and if asked why, he says "six SOVS is six SOVS."
 
 ### Hidden Details / Easter Eggs
 - **Examining the burner phone**: The screen shows a contact list where every entry is a single letter followed by a number. One is saved as "DO NOT ANSWER (SUPPLIER)." Above the list, an unread alert banner reads `$KBAB -3.1%`. There are forty-one others behind it, all unread, going back months.
@@ -219,7 +219,7 @@ Currency: Kebab Coins accepted. Prices do not shift by hour — unusually for De
 ### Within Debaucheryville
 - Permanently at the Late-Night Kebab Stand; he does not appear anywhere else in the city
 - Referenced by Velvet Curtain Club bouncers when players are ejected: *"Cart's down the alley. He'll take your money."*
-- Referenced at Midnight Munchies when the player buys the pre-wrapped kebab — Věra: *"There's a man down the alley who does that properly. Slightly. 6 Sovs."*
+- Referenced at Midnight Munchies when the player buys the pre-wrapped kebab — Věra: *"There's a man down the alley who does that properly. Slightly. 6 SOVS."*
 - His three catchphrases are quoted back by drunk ambient NPCs across the Neon Entertainment Quarter, always slightly wrong
 
 ### In Other Cities (If Applicable)
@@ -270,7 +270,7 @@ Currency: Kebab Coins accepted. Prices do not shift by hour — unusually for De
 ### Primary Quest: The Great Döner Debate
 - **Quest**: The Great Döner Debate (cross-city culinary comparison)
 - **Role**: Sample Provider — supplies the Debaucheryville regional entry
-- **Trigger**: Purchasing the **Belly Of Chadz** (6 Sovs) at any point after the quest is active
+- **Trigger**: Purchasing the **Belly Of Chadz** (6 SOVS) at any point after the quest is active
 - **Outcome**: Debaucheryville sample logged; contributes to the cross-city comparison and to "World's Pickiest Drunk" badge progression. Mr. Chadz is not aware there is a competition and would not enter one.
 
 ### Quest Gate Function (If Applicable)

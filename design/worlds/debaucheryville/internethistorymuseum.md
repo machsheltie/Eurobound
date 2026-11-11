@@ -190,7 +190,7 @@
   - Animatronic eye movement (occasional tracking)
   - GeoCities kiosk activation (3:33 AM state change)
 - **Performance Budget**: 60 FPS target, max 20 draw calls, 48MB memory footprint
-- **Platform Considerations**: CRT effects scalable, simplified dust particles on low-end devices
+- **Platform Considerations**: CRT effects scalable, simplified dust particles on min-spec hardware
 
 ### Development Timeline
 - **Asset Creation**: 12 hours (museum exhibits, CRT displays, interactive kiosks, animatronic)

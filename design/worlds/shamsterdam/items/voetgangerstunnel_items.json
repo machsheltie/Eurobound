@@ -15,7 +15,7 @@
         "shows_actual_layout": true
       },
       "item_granted": "tunnel_map_accurate",
-      "dialogue_on_purchase": "8 Sovs for the map. It's the only accurate one in the city. Yes, really."
+      "dialogue_on_purchase": "8 SOVS for the map. It's the only accurate one in the city. Yes, really."
     },
     {
       "service_id": "tourist_map_surface",
@@ -72,14 +72,14 @@
       "service_id": "henk_paid_directions",
       "provider_npc": "henk_security_01",
       "display_name": "'Correct' Directions",
-      "description": "For 5 Sovs, Henk will give you the 'real' directions. Slightly more reliable.",
+      "description": "For 5 SOVS, Henk will give you the 'real' directions. Slightly more reliable.",
       "cost": 5,
       "currency": "sovs",
       "effect": {
         "type": "direction_hint",
         "navigation_bonus": 0.10
       },
-      "dialogue_on_purchase": "Okay, for five Sovs, I give you the REAL directions. This way. Maybe."
+      "dialogue_on_purchase": "Okay, for five SOVS, I give you the REAL directions. This way. Maybe."
     },
     {
       "service_id": "henk_escort",
@@ -94,12 +94,12 @@
         "speed": "very_slow",
         "time_cost_seconds": 300
       },
-      "dialogue_on_purchase": "For ten Sovs, I walk you there myself. But I walk slow. Very slow."
+      "dialogue_on_purchase": "For ten SOVS, I walk you there myself. But I walk slow. Very slow."
     },
     {
       "service_id": "willem_tip_1",
       "provider_npc": "willem_busker_01",
-      "display_name": "Tip Willem (1 Sov)",
+      "display_name": "Tip Willem (1 SOV)",
       "description": "A small tip for the eternal busker. He'll offer a navigation hint.",
       "cost": 1,
       "currency": "sovs",
@@ -112,7 +112,7 @@
     {
       "service_id": "willem_tip_5",
       "provider_npc": "willem_busker_01",
-      "display_name": "Tip Willem (5 Sovs)",
+      "display_name": "Tip Willem (5 SOVS)",
       "description": "A generous tip. Willem will share reliable navigation wisdom.",
       "cost": 5,
       "currency": "sovs",
@@ -341,7 +341,7 @@
     {
       "achievement_id": "willems_friend",
       "display_name": "Willem's Friend",
-      "description": "Tipped Willem 5 Sovs on three separate visits. He shared something... unusual.",
+      "description": "Tipped Willem 5 SOVS on three separate visits. He shared something... unusual.",
       "trigger": "eternal_busker_quest_complete",
       "type": "hidden"
     },

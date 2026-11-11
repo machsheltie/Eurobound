@@ -24,14 +24,14 @@
 - **Design**: Pixelated hop cone shape with scrolling LED display showing fake "blockchain hash," bottle opener as the stem
 - **Material**: Matte black plastic with neon blue circuit trace inlays
 - **Inscription**: "Algorithm Verified" (scrolls on LED)
-- **Acquired**: Complete the taste profile puzzle OR defeat BrewBot OR purchase from Robotic Bartender for 25 Sovs
+- **Acquired**: Complete the taste profile puzzle OR defeat BrewBot OR purchase from Robotic Bartender for 25 SOVS
 - **Special Feature**: Tiny LED screen scrolls random hexadecimal "verification codes" (purely decorative, means nothing)
 - **Check Point**: QR scanner verifies Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without B.R.E.W. Lab Opener**: Can enter and explore, but cannot receive stamp or purchase Blockchain Bock
 
 **Scanner's Opener Check**:
-- *With Blarney Trap Opener, No Lab Opener*: "PUBLANDIA AUTHORIZATION... VERIFIED. Lab opener... NOT DETECTED. Complete taste profile analysis, defeat BREWBOT, or purchase for 25 Sovs. Transaction... PENDING."
+- *With Blarney Trap Opener, No Lab Opener*: "PUBLANDIA AUTHORIZATION... VERIFIED. Lab opener... NOT DETECTED. Complete taste profile analysis, defeat BREWBOT, or purchase for 25 SOVS. Transaction... PENDING."
 - *With Both Openers*: "HOP CONE PROTOCOL... VERIFIED. Blockchain hash... AUTHENTICATED. Taste profile... SYNERGIZED. Welcome to the BREWVOLUTION™. Your Blockchain Bock awaits... OPTIMIZATION."
 - *Without Blarney Trap Opener*: "PUBLANDIA AUTHORIZATION... NOT DETECTED. Access... DENIED. Continental Trail requires origin credentials. Return when... OPTIMIZED."
 
@@ -71,7 +71,7 @@
 - **Lighting Setup**: Overhead LED strips (cyan), vat bioluminescence (green), console screens (blue), hologram flicker (white)
 - **Particle Systems**: Foam bubbles, hologram glitches, vapor wisps, LED pathway pulses
 - **Animation Elements**: Robotic bartender rail movement, flavor console button sequences, vat bubbling, screen data scrolling
-- **Performance Optimization**: Simplified vat reflections, reduced particle count for holograms, static LED pathways on low-end devices
+- **Performance Optimization**: Simplified vat reflections, reduced particle count for holograms, static LED pathways on min-spec hardware
 
 ## Satirical Design
 ### Theme & Vibe
@@ -127,7 +127,7 @@
 
 ### Robotic Bartender Vendor (Original)
 - **Interaction**: Tap-dances on rails between sales, never stops moving
-- **Inventory**: Blockchain Bock (+20 HP, +10 Sovs, Tourist Trapped status), experimental brews
+- **Inventory**: Blockchain Bock (+20 HP, +10 SOVS, Tourist Trapped status), experimental brews
 - **Dialogue Style**: Overly cheerful corporate speak, ignores obvious malfunctions
 - **Special Behavior**: Every 3rd purchase, glitches and gives random item from Algorithm Archive instead
 
@@ -182,16 +182,16 @@
 | ABV | 7.2% |
 | HP Restoration | +20 |
 | SP Restoration | — |
-| Buff | +10 Sovs (crypto fluctuation bonus) |
-| Debuff Risk | 50% "Tourist Trapped" status; Sovs bonus may be NEGATIVE |
-| Price | 18 Sovs (±5 Sovs based on fake crypto ticker) |
+| Buff | +10 SOVS (crypto fluctuation bonus) |
+| Debuff Risk | 50% "Tourist Trapped" status; SOVS bonus may be NEGATIVE |
+| Price | 18 SOVS (±5 SOVS based on fake crypto ticker) |
 | Brewed By | Ye Olde B.R.E.W. Lab (algorithmic process) |
 
 **Flavor Text**: "Brewed by algorithms. Verified by blockchain. Tasted by... actually, the AI doesn't taste. That's YOUR job."
 
 **Unique Properties**:
-- Only beer with fluctuating price (13-23 Sovs range)
-- Sovs bonus can be negative if "market crashes" (shows -10 Sovs instead of +10)
+- Only beer with fluctuating price (13-23 SOVS range)
+- SOVS bonus can be negative if "market crashes" (shows -10 SOVS instead of +10)
 - "Tourist Trapped" increases vulnerability to scams in Debaucheryville
 - Recipe literally changes each batch (random ingredient selection)
 - Perfect satirical capstone to the tech-bro brewery tour
@@ -200,13 +200,13 @@
 1. Robotic arm dispenses bottle with QR code label
 2. "BLOCKCHAIN VERIFIED" hologram appears briefly
 3. Player drinks, cryptocurrency icons float around head
-4. Sovs bonus displays (+ or - based on RNG)
+4. SOVS bonus displays (+ or - based on RNG)
 5. Possible "Tourist Trapped" status flash
 6. "Thank you for participating in the Brewvolution™" text
 
 **Robotic Bartender's Serving Dialogue**:
 - "Today's Blockchain Bock is batch #[random hash]. The algorithm has OPTIMIZED this brew for... *checks display* ...your demographic! Whatever that means!"
-- "Current price: [fluctuating number] Sovs. The market MOVES, friend! Buy NOW before it... changes again in 30 seconds!"
+- "Current price: [fluctuating number] SOVS. The market MOVES, friend! Buy NOW before it... changes again in 30 seconds!"
 - "Side effects may include: financial optimism, scam vulnerability, and a deep urge to explain blockchain to strangers. ENJOY!"
 
 ### Selfie Spot — Algorithm Archive Terminal
@@ -239,7 +239,7 @@ Upon receiving the 4th Debaucheryville stamp:
 
 **Rewards**:
 - "Digital Detox" achievement unlocked
-- "Neon Nightmare" Legendary Hangover now available (75 Sovs at any stamped location)
+- "Neon Nightmare" Legendary Hangover now available (75 SOVS at any stamped location)
 - Continental Beer Master progress updated
 
 ## System Integration
@@ -252,7 +252,7 @@ Upon receiving the 4th Debaucheryville stamp:
 - **Meeting Location**: Passed out near BrewBot wreckage after boss defeat
 - **Invitation**: "Bro... you just saved my algorithm... crash at my place while I rebuild..."
 - **Morning Scene**: Wake on RGB gaming chair surrounded by dead monitors, he's debugging BrewBot 7.0
-- **Consequences**: Gain Blockchain Bock x2, Hungover status, -15 Sovs (he "borrowed" it for "server costs")
+- **Consequences**: Gain Blockchain Bock x2, Hungover status, -15 SOVS (he "borrowed" it for "server costs")
 - **Satirical Beat**: His apartment is just another failed startup office with sleeping bag in corner
 
 ### Cross-Location Dependencies
@@ -345,7 +345,7 @@ Upon receiving the 4th Debaucheryville stamp:
 - [ ] **Robotic bartender vendor works** (rail movement, inventory, glitch behavior)
 - [ ] **Cross-quest functionality verified** (NFT hunt, couchsurf system, brewery tour)
 - [ ] **Stamp system functional** (opener check, stamp animation, tour completion)
-- [ ] **Blockchain Bock price fluctuation** (13-23 Sovs range, Sovs bonus variance)
+- [ ] **Blockchain Bock price fluctuation** (13-23 SOVS range, SOVS bonus variance)
 
 ---
 

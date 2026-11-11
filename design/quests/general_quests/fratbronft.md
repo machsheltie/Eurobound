@@ -9,7 +9,7 @@ Rigged Mini-Games: Win (or intentionally lose) suspicious arcade challenges to �
 Influencer Syndicate Theft: Occasionally, members of the Influencer Syndicate (smug TikTok travel vloggers with a suspicious number of sponsored posts) will be flaunting an NFT. Defeat them in absurd mini-games or side quests to swipe it.
 
 NFTs:
-Collection Size: 12 total — 4 per city (Debaucheryville, Sinfonia, Publandia).
+Collection Size: 16 total — 4 per city (Debaucheryville, Sinfonia, Publandia, Shamsterdam).
 
 BINDING RULE (author-locked, permanent — see spec §7c): every NFT's ARTWORK is a 90s or 00s pop-culture artifact and is NEVER location-derived. The acquisition ROUTE is location-specific and venue-flavored; the subject never is. A location-derived NFT concept is a defect. The joke is that the bros crossed a continent and came home with American nostalgia they believe is a European art portfolio.
 Seven NFTs were struck on 2026-08-01 for being location-derived and replaced with the artifacts below, routes unchanged. Their copy is AUTHORED BY THE AUTHOR ONLY — the Tagline / Description / Collector's Thesis blocks below are deliberately empty and no one else fills them. Mint numbers on those seven are PROPOSALS the author may override.
@@ -69,10 +69,17 @@ Jukebox track 47 (The Craic Tax): "America Online" NFT– A 12-second audio NFT 
 
 Track 47 (Publandia acquisition beat): Every jukebox in The Craic Tax runs the same burned CD, and every one of them has the same problem. Track 47 is twelve seconds of modem screech — somebody burned the disc badly in 2003 and nobody ever fixed it. The locals have simply learned not to press 47. Paying to play it three times unlocks the mint. Chadwick and Bradley are certain they have surfaced a lost audio artifact and want it played once more, at volume, for the room; the room wants it to stop, and is audibly relieved when it does. Full card copy for all four Publandia NFTs: design/economy/legacy_vault_cards.md.
 
+Shamsterdam Targets (author ruling 2026-11-11: Shamsterdam joins the collection). Subjects approved. Display names for slots 1–3 approved (author, 2026-11-11: Gemini's picks); all card copy and all mint numbers are the author's and pending.
+Chocolate Anatomy Emporium QR route: "The Nordic Vacuum Warranty" (Austin Powers Swedish Penis Enlarger Pump)
+Cheese & Clog Corner hidden terminal: "Proof of Dairy Culture" (Monica Lewinsky's dress)
+Casa Rosé, after the show: "The Diapered Vector Loop" (the Dancing Baby)
+Dennis's couchsurf ("Dennis's Art Studio"): "The Bedrock Chewable Reserve" (Flintstones Vitamins; display name author-approved). Counted Shamsterdam #4 (author, 2026-11-11).
+
 Rewards for Collection Milestones:
 4 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).
 8 NFTs: “Wallet of Shame” trinket — a tiny charm granting a small Charisma boost (+1 Charm) but forever marking you as that guy.
-12 NFTs: Secret epilogue gag scene (author-dictated 2026-08-03) — Chadwick & Bradley's champagne-fueled "Crypto Kings of Europe" press conference, with CryptoBro69 at the podium doing the talking… seconds before the market crashes, bankrupting them instantly. Police storm the conference and haul CryptoBro69 away mid-sentence; as they drag him off he throws both arms in the air and declares "DIAMOND HANDS FOREVER!"
+12 NFTs: reward pending author.
+16 NFTs: Secret epilogue gag scene (author-dictated 2026-08-03; moved from 12 to 16, author 2026-11-11) — Chadwick & Bradley's champagne-fueled "Crypto Kings of Europe" press conference, with CryptoBro69 at the podium doing the talking… seconds before the market crashes, bankrupting them instantly. Police storm the conference and haul CryptoBro69 away mid-sentence; as they drag him off he throws both arms in the air and declares "DIAMOND HANDS FOREVER!"
 
 Satire Angle:
 NFTs are intentionally ugly, low-res, and paired with ridiculous “lore” explaining their supposed value.

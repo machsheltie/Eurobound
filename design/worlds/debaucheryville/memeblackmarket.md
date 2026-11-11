@@ -88,14 +88,14 @@
 
 ## Gameplay Mechanics
 ### Meme Summon System (Original)
-- **Shiba Hype (10 Sovs)**: Summons pixelated Shiba barking motivational quotes, +Morale 3 turns, may distract enemies
-- **Dat Boi On Unicycle (5 Sovs)**: Appears, says "o shit waddup," leaves, does nothing, pure dopamine hit
-- **Dancing Baby.exe (7 Sovs)**: Disables enemy buffs via confusion, 33% chance backfires applying Cringe to player
-- **Rage Comic Panel (4 Sovs)**: Reduces enemy attack by 1 for 1 turn, only works on NPCs who "respect classic memes"
-- **Trollface Bomb (13 Sovs)**: 60% chance screen-filling LULs deal psychic damage, 20% chance party argues over meme legality
+- **Shiba Hype (10 SOVS)**: Summons pixelated Shiba barking motivational quotes, +Morale 3 turns, may distract enemies
+- **Dat Boi On Unicycle (5 SOVS)**: Appears, says "o shit waddup," leaves, does nothing, pure dopamine hit
+- **Dancing Baby.exe (7 SOVS)**: Disables enemy buffs via confusion, 33% chance backfires applying Cringe to player
+- **Rage Comic Panel (4 SOVS)**: Reduces enemy attack by 1 for 1 turn, only works on NPCs who "respect classic memes"
+- **Trollface Bomb (13 SOVS)**: 60% chance screen-filling LULs deal psychic damage, 20% chance party argues over meme legality
 
 ### Meme Trinket System (Original)
-- **XP Ring from eBaum's World (50 Sovs)**: Permanent passive "Elite Internet User" - +1 INT, +1 Speed, -1 Charm with NPCs born after 2003
+- **XP Ring from eBaum's World (50 SOVS)**: Permanent passive "Elite Internet User" - +1 INT, +1 Speed, -1 Charm with NPCs born after 2003
 - **Meatspin NFT (Free)**: Doesn't buy, just appears, won't stop spinning, applies "Mentally Unwell" status 3 battles unless purged by glitter priest
 - **Funcoland Futures NFT #1999 (Unlock Only)**: Predicts resale value incorrectly, +1 Charisma shady vendors, tooltip: "Do not redeem IRL unless masochist"
 
@@ -179,7 +179,7 @@
   - Meme summon appearances (0.5-2 seconds each)
   - MemeLord.exe vape cloud (continuous particle effect)
 - **Performance Budget**: 60 FPS target, max 18 draw calls, 42MB memory footprint
-- **Platform Considerations**: CRT effects scalable, simplified vape particles on low-end devices
+- **Platform Considerations**: CRT effects scalable, simplified vape particles on min-spec hardware
 
 ### Development Timeline
 - **Asset Creation**: 10 hours (den environment, meme sprites, vendor character, UI elements)

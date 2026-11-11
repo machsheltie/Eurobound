@@ -76,10 +76,10 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | Suspicious "Mourner" Queue Decal | (256, 32) | 96x32 | Club wear, 11:40 PM |
 | Yelp-Style Review Card, 847 Reviews | (256, 64) | 96x32 | The secret is extremely findable |
 | 4.2-Star Plaque, Weathered | (352, 32) | 96x32 | Mounted by the gate, ignored by everyone |
-| Ticket Stub | (352, 64) | 48x32 | The 5 Sovs pass, retained |
+| Ticket Stub | (352, 64) | 48x32 | The 5 SOVS pass, retained |
 | Cover Charge Sign | (400, 64) | 48x32 | Says "donation" |
 | Visitor Pass Kiosk | (448, 0) | 64x96 | Where the "cemetery pass" is sold |
-| "Composer's Rest" Pass Board 5 Sovs | (512, 0) | 96x32 | Basically club cover |
+| "Composer's Rest" Pass Board 5 SOVS | (512, 0) | 96x32 | Basically club cover |
 | Health Inspection Certificate, Framed | (512, 32) | 96x32 | Current, displayed, unread |
 | Tax Compliance Notice | (512, 64) | 96x32 | Fifteen years of them |
 | Tourist Guide With Umbrella | (608, 0) | 48x96 | Explaining "cultural significance" |
@@ -449,7 +449,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 | Chadwick, Content Warning Pose | (192, 288) | 64x96 | "DEFINITELY against several laws." |
 | Bradley, Refusing To Dance | (256, 288) | 64x96 | "I refuse to dance." |
 | Bradley, 12% Uncertain | (320, 288) | 64x96 | "There is a 0% probability of actual reanimation." |
-| Theatre Student In Costume, Off-Shift | (384, 288) | 64x96 | 15 Sovs/hour; the morning-after reality |
+| Theatre Student In Costume, Off-Shift | (384, 288) | 64x96 | 15 SOVS/hour; the morning-after reality |
 | Theatre Student, Ill-Fitting Skeleton Suit | (448, 288) | 64x96 | Seam visible only here, never on the floor |
 
 ### Character Notes:
@@ -556,7 +556,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 ### Items & Consumables:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Cemetery Pass "Composer's Rest" 5 Sovs | (0, 176) | 48x32 | Entry item; basically club cover |
+| Cemetery Pass "Composer's Rest" 5 SOVS | (0, 176) | 48x32 | Entry item; basically club cover |
 | Lost Composition | (48, 176) | 48x64 | Enables the peaceful resolution |
 | RIP Your Sobriety | (96, 176) | 32x48 | Powerful but risky drink |
 | Skull Glass | (128, 176) | 32x48 | Bar vessel. IKEA |
@@ -729,7 +729,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - Bass Pit charged state raises its edge geometry; Bone Pile collapsed state visibly lowers — hazard states are never colour-only
 - Boss health bar is segmented at 66% / 33% with physical notches, plus a phase pip row
 - Status icons are shape-first: Off-Key = broken note, Dazed = spiral, Embarrassed = downturned mask, Exhausted = slumped figure, Touched by Death = handprint, Blessing = crowned note
-- Touch zones minimum 44px for rhythm inputs, the knock prompt, the organ interactable, and the selfie prompts
+- Click zones minimum 44px for rhythm inputs, the knock prompt, the organ interactable, and the selfie prompts
 
 ---
 
@@ -959,7 +959,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - [ ] The security guard is visible in the same frame as people climbing into a grave
 - [ ] Hidden areas (Requiem Room, Lost Composition) have discoverable visual cues
 - [ ] Performance optimized (CPU particles only, 22-draw-call ceiling, four atlas binds, audio streamed, fog pre-rendered)
-- [ ] Touch zone sizing considered (44px minimum for rhythm inputs, knock prompt, organ interactable, selfie prompts)
+- [ ] Click zone sizing considered (44px minimum for rhythm inputs, knock prompt, organ interactable, selfie prompts)
 - [ ] Colorblind-friendly alternatives available where color codes meaning
 - [ ] Social media viral potential maximized in composition choices
 
@@ -971,8 +971,8 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia and Komponistenfriedhof only; Bassmeister and all tomb occupants are fictional composers — no real composer grave is depicted or mocked |
 | Cultural Specificity | ✅ | Sinfonia's composer-grave tourism, classical-legacy merchandising, and the city's performance culture inverted into an underground venue |
-| Satirical Targets Appropriate | ✅ | Death tourism, themed-nightclub absurdity, and bros convinced they found something secret; the venue's staff are working people (Helga, the Grave Guide, 15 Sovs/hour theatre students) treated with affection |
-| Seedy Underbelly Present | ✅ | Profile's explicit section: a 5 Sovs "cemetery pass" that is club cover, "tips for the dead" going to the owners, and a fifteen-year-old tourist attraction sold as an underground secret |
+| Satirical Targets Appropriate | ✅ | Death tourism, themed-nightclub absurdity, and bros convinced they found something secret; the venue's staff are working people (Helga, the Grave Guide, 15 SOVS/hour theatre students) treated with affection |
+| Seedy Underbelly Present | ✅ | Profile's explicit section: a 5 SOVS "cemetery pass" that is club cover, "tips for the dead" going to the owners, and a fifteen-year-old tourist attraction sold as an underground secret |
 | Gameplay Value Established | ✅ | Full rhythm-combat system, four elemental mini-bosses, three-phase boss with dual resolution, four standard enemy types, four environmental hazards, discovery puzzle, couchsurf host, three selfie spots, eight achievements |
 | Technical Feasibility | ✅ | Eight sheets, four atlases, three LOD tiers, on-demand VIP loading, central beat clock, pre-rendered fog, streamed audio |
 | Performance Budget | ✅ | 60 FPS / 22 draw calls / 55 MB taken verbatim from the profile's stated budget. Normalized to the game-wide 60 FPS standard (author ruling); effect density must be tuned to hold it|

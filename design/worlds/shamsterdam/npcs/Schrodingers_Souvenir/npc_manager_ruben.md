@@ -199,7 +199,7 @@ Running a legal shop legally. Ruben came out of the coffeeshop trade into a busi
 
 ### Sales Close
 
-> "Forty Sovs." *(Sealing the Bag.)* "Sealed. That is not a legal protection, it is a bag. But it is sealed."
+> "Forty SOVS." *(Sealing the Bag.)* "Sealed. That is not a legal protection, it is a bag. But it is sealed."
 
 ### Post-Interaction
 > "Enjoy Shamsterdam. Check the regulations for your flight home." *(Beat.)* "You won't. That's fine. Most people don't."
@@ -257,19 +257,19 @@ Running a legal shop legally. Ruben came out of the coffeeshop trade into a busi
 ### Product Inventory
 | Item/Service | Price | Category | NL Legal | Export Risk | Notes |
 |--------------|-------|----------|----------|-------------|-------|
-| Hemp Tote Bag | 15 Sovs | Clothing | 100% | None | Actually just a bag |
-| Hemp Rope Bracelet | 12 Sovs | Accessory | 100% | None | Cannabis-free cannabis plant |
-| CBD Oil 5% | 30 Sovs | Wellness | 100% | Low–Medium | "Check your local laws" |
-| CBD Oil 15% | 55 Sovs | Wellness | 100% | Medium | "Seriously, check them" |
-| CBD Gummies | 25 Sovs | Edible | 100% | Medium | "Some countries are weird about gummies" |
-| Hemp Protein Powder | 35 Sovs | Food | 100% | Low | Actual nutrition product |
-| "Tobacco" Grinder | 20 Sovs | Accessory | 100% | Low | For tobacco. Obviously. |
-| "Tobacco" Pipe | 25 Sovs | Accessory | 100% | Low–Medium | Design-dependent risk |
-| Rolling Papers (Branded) | 8 Sovs | Accessory | 100% | Very Low | Paper is legal everywhere |
-| Souvenir Seed Pack | 40 Sovs | Seeds | 100%* | **HIGH** | *Not for germination |
-| Premium Strain Seeds | 65 Sovs | Seeds | 100%* | **VERY HIGH** | *Definitely not for germination |
-| Space Cake Mix | 20 Sovs | "Food" | 100% | High | "Just add... nothing illegal" |
-| Leaf-Shaped Everything | 10–30 Sovs | Novelty | 100% | Embarrassment | Declaring your tourist status |
+| Hemp Tote Bag | 15 SOVS | Clothing | 100% | None | Actually just a bag |
+| Hemp Rope Bracelet | 12 SOVS | Accessory | 100% | None | Cannabis-free cannabis plant |
+| CBD Oil 5% | 30 SOVS | Wellness | 100% | Low–Medium | "Check your local laws" |
+| CBD Oil 15% | 55 SOVS | Wellness | 100% | Medium | "Seriously, check them" |
+| CBD Gummies | 25 SOVS | Edible | 100% | Medium | "Some countries are weird about gummies" |
+| Hemp Protein Powder | 35 SOVS | Food | 100% | Low | Actual nutrition product |
+| "Tobacco" Grinder | 20 SOVS | Accessory | 100% | Low | For tobacco. Obviously. |
+| "Tobacco" Pipe | 25 SOVS | Accessory | 100% | Low–Medium | Design-dependent risk |
+| Rolling Papers (Branded) | 8 SOVS | Accessory | 100% | Very Low | Paper is legal everywhere |
+| Souvenir Seed Pack | 40 SOVS | Seeds | 100%* | **HIGH** | *Not for germination |
+| Premium Strain Seeds | 65 SOVS | Seeds | 100%* | **VERY HIGH** | *Definitely not for germination |
+| Space Cake Mix | 20 SOVS | "Food" | 100% | High | "Just add... nothing illegal" |
+| Leaf-Shaped Everything | 10–30 SOVS | Novelty | 100% | Embarrassment | Declaring your tourist status |
 
 ### The Customs Checkpoint (Resolution)
 | Item Class | Pass Rate | Outcome |
@@ -285,7 +285,7 @@ Running a legal shop legally. Ruben came out of the coffeeshop trade into a busi
 - **The asterisk**: The window says "All products comply with Dutch law*". Examine the asterisk. It leads nowhere. This is stated in the location profile and it is authored.
 - **The lab-test binder**: Kept at the counter. Examinable. It is real, it is complete, and it is genuinely more information than any customer has ever wanted.
 - **The Research Tourist**: An ambient NPC who actually checks their destination's laws on a phone. Ruben's favourite customer. If the player mimics this behaviour — asking about a specific named destination before buying — Ruben gives a measurably better and longer answer.
-- **The hemp shirt**: Ruben's uniform is Zone 1 stock. It is for sale. 28 Sovs. He will confirm this if asked and finds the question reasonable.
+- **The hemp shirt**: Ruben's uniform is Zone 1 stock. It is for sale. 28 SOVS. He will confirm this if asked and finds the question reasonable.
 
 ---
 
@@ -482,7 +482,7 @@ Dutch, mid-30s, urban, fluent and relaxed English. Retail-friendly register with
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Ruben has none. Sovs, card, 8–65 Sovs.
+- [x] **Crypto content conforms to `design/economy/economy_system.md`** — Ruben has none. SOVS, card, 8–65 SOVS.
 - [x] **NO automatic crypto assumptions** — the location profile explicitly states "no crypto elements: pure quantum legal uncertainty"; do not add any
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A, no crypto at this location
 - [x] **The bros are never scam-aware** — there is no scam; Ruben told them everything and they took two anyway
@@ -492,7 +492,7 @@ Dutch, mid-30s, urban, fluent and relaxed English. Retail-friendly register with
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is tourists who will not check their own country's laws; Dutch tolerance policy is presented as coherent and the shop as compliant
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Ruben is honest, informed, fairly priced, and gives more accurate information than any customer wants
-- [x] Humour is affectionate mockery, not mean-spirited — nobody is deceived, nobody is harmed, and the worst outcome in the whole chain is a confiscated seed packet
+- [x] Humour is affectionate mockery — nobody is deceived, nobody is harmed, and the worst outcome in the whole chain is a confiscated seed packet
 - [x] Drug policy handled without moralising — the satire targets legal confusion and the theatre of plausible deniability, never drug use, drug users, or Dutch policy
 
 ---

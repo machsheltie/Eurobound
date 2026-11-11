@@ -17,11 +17,11 @@
 
 ### **Enhanced Payoff Types:**
 - **Positive:** +Charm, +Culture, +Performance, or minor items
-- **Negative:** Status effects (Hungover, Embarrassed, Out-Classed), minor Sovs loss, or itemised invoices
+- **Negative:** Status effects (Hungover, Embarrassed, Out-Classed), minor SOVS loss, or itemised invoices
 - **Mixed:** Flavor collectibles, achievement progress, or FlagMan reference items
 
 ### **Sinfonia-Specific Rule — Everything Has a Price and the Price Is Correct**
-Debaucheryville hosts took things. Sinfonia hosts **invoice** things, itemised, in Sov, and the totals are always right. A Sinfonia couchsurf can cost the party money and the party will never once be able to argue that it shouldn't have.
+Debaucheryville hosts took things. Sinfonia hosts **invoice** things, itemised, in SOV, and the totals are always right. A Sinfonia couchsurf can cost the party money and the party will never once be able to argue that it shouldn't have.
 
 ---
 
@@ -45,7 +45,7 @@ Debaucheryville hosts took things. Sinfonia hosts **invoice** things, itemised, 
 **Lord Pilsner** *(reading it out loud, correctly, with the comma)*: "Die, Fledermaus. Sick. That's the bat one."
 **Bradley**: "...Yes."
 
-Backstage passes come from Madame Fortissima and are earned exactly one way: a compliment she grades. Generic gets nothing ("That is what one says to a waiter"). Specific gets a hint. **Technical gets everything** — Bradley, sincerely, about breath support, and she says "Where did you come from. Where has this one BEEN." Charm 3+ or a 10 Sovs signed programme also work. **The show runs Saturday nights only and the couchsurf is gated to Saturday and to holding passes.**
+Backstage passes come from Madame Fortissima and are earned exactly one way: a compliment she grades. Generic gets nothing ("That is what one says to a waiter"). Specific gets a hint. **Technical gets everything** — Bradley, sincerely, about breath support, and she says "Where did you come from. Where has this one BEEN." Charm 3+ or a 10 SOVS signed programme also work. **The show runs Saturday nights only and the couchsurf is gated to Saturday and to holding passes.**
 
 **The Invitation Upstairs** *(Fortissima, and it is not a seduction, it is a woman feeding people)*:
 > "You three are coming up. No — do not do the face, the face is not required. It is one flight of stairs and there is food, and I have watched all three of you eat a pretzel off a plinth tonight, so let us not pretend anybody is being generous to anybody."
@@ -85,7 +85,7 @@ Backstage passes come from Madame Fortissima and are earned exactly one way: a c
 > **Fortissima** *(over the glasses, entirely kind about it)*: "It was MEMORABLE. For me. — Eat the bread."
 
 *A single sheet of paper slides across the table.*
-> **Adelheid**: "That is the coffee table. It is eighty Sovs. There is no negotiating it, there is no Charm check, and you are going to pay it because it is the least of what you owe this house."
+> **Adelheid**: "That is the coffee table. It is eighty SOVS. There is no negotiating it, there is no Charm check, and you are going to pay it because it is the least of what you owe this house."
 
 *On the way out, in the hall: four pairs of size 47 heels, custom. Bradley looks at them for two full seconds. Bradley says nothing.*
 
@@ -100,7 +100,7 @@ Backstage passes come from Madame Fortissima and are earned exactly one way: a c
 - **"Full Face"** — cosmetic state until the party next sleeps. Every NPC in Sinfonia reacts to it and **not one of them explains it**
 - **One permanent Bravado point**
 - **Backstage Pass** stays valid for the rest of the game (wings access, Saturdays)
-- **Invoice: 80 Sovs**, the coffee table, non-negotiable
+- **Invoice: 80 SOVS**, the coffee table, non-negotiable
 - **Passport Entry #7** (canonical; see Meta Layer)
 
 **🚦 The Decline Branch — binding, fully supported, gates nothing.** There are two decline points and both are complete content:
@@ -108,7 +108,7 @@ Backstage passes come from Madame Fortissima and are earned exactly one way: a c
 | Decline point | What happens | What is lost |
 |---|---|---|
 | **Refuse the invitation upstairs** | Fortissima: *"No? Well. You are the first in some while. Come back Saturday, the offer does not expire, and neither, evidently, do I."* Adelheid: *"Sensible. (a beat) Genuinely. Enjoy Sinfonia."* The invitation re-fires **every Saturday for the rest of the game**. Backstage passes, prop-room hints and the labyrinth shortcut are all unaffected. | Nothing. The entry is deferred, not forfeited. |
-| **Go upstairs, refuse the Nightcap** | Fortissima: *"Sensible. Boring. (she drinks hers) But sensible."* Adelheid takes the glass back without comment and drinks it herself: *"More for the household."* **The couchsurf completes in full.** The party sleeps there, wakes late, and gets the entire morning scene as an ordinary hangover on somebody else's very good furniture. The pillow is clean. The coffee table survives, so **there is no 80 Sovs invoice**. Bradley still looks at the shoes for two seconds and still says nothing. | The **"Full Face"** cosmetic only. |
+| **Go upstairs, refuse the Nightcap** | Fortissima: *"Sensible. Boring. (she drinks hers) But sensible."* Adelheid takes the glass back without comment and drinks it herself: *"More for the household."* **The couchsurf completes in full.** The party sleeps there, wakes late, and gets the entire morning scene as an ordinary hangover on somebody else's very good furniture. The pillow is clean. The coffee table survives, so **there is no 80 SOVS invoice**. Bradley still looks at the shoes for two seconds and still says nothing. | The **"Full Face"** cosmetic only. |
 
 **Everything else is granted on both branches:** the HP/SP restore, "Star Quality", the permanent Bravado point, Passport Entry #7, the Chronicles completion credit, the "Cultural Ambassador" title track, and every post-Nightcap callback. **No content anywhere in the game is gated behind drinking the tray.**
 
@@ -117,7 +117,7 @@ Backstage passes come from Madame Fortissima and are earned exactly one way: a c
 💬 Fortissima (she got the number off Chadwick's phone, which he handed her): "MY AMERICANS. I have shown the photographs to the Maestro. He said nothing. He said NOTHING."
 💬 Unknown Number: "your friend left a jacket. it has a programme in it. he has read it twice."
 💬 CryptoBro69: "u went to the OPERA?? bro. bro. was there at least a coat check girl"
-💬 Invoice Reminder — Bassline Opera House Box Office: "80 Sovs — furniture, one (1). Ref: THE LIFT."
+💬 Invoice Reminder — Bassline Opera House Box Office: "80 SOVS — furniture, one (1). Ref: THE LIFT."
 ```
 
 **Location-Specific Roasting:** The single most publicly announced fact in the city — printed four feet high, applauded nightly by twelve hundred people, engraved on two brass door plates, listed twice in the programme Bradley bought and read — is the one fact three Americans cannot get into their heads.
@@ -131,7 +131,7 @@ Backstage passes come from Madame Fortissima and are earned exactly one way: a c
 **Tone rails, binding and unchanged in every state:** no menace, no sinister scoring, no concern expressed by any NPC, nobody is corrected about anything, **and nobody explains the show.** Neither woman is ever sultry, arch, knowing, or predatory. Fortissima is at performance volume because she is always at performance volume. Adelheid is itemising because she itemises.
 
 **STATE 1 — CLEAR** *(never caught `the_herp`)*
-Plays the entry above exactly as authored — the marquee, the graded compliment, the invitation upstairs, the Nightcap *(or its decline branch, which is a separate system and unaffected by any of this)*, the morning, the 80 Sovs, full payload.
+Plays the entry above exactly as authored — the marquee, the graded compliment, the invitation upstairs, the Nightcap *(or its decline branch, which is a separate system and unaffected by any of this)*, the morning, the 80 SOVS, full payload.
 
 **STATE 2 — INFECTED** *(`the_herp` active, `item_gold_circle_coin` NOT equipped)* — **no payload; sets `opera_divas_refused_while_infected = true`**
 
@@ -153,7 +153,7 @@ Plays the entry above exactly as authored — the marquee, the graded compliment
 **Lord Pilsner**: "Ma'am, is there any way we could—"
 
 **Adelheid** *(businesslike, unhurried, entirely without apology, and this is the kill)*:
-> "It is thirty Sovs to have a chaise longue steam-cleaned in this city. I know that because I have had it done. *(a beat; she caps the pen)* Not tonight. Tonight it is free. That is the only thing you are getting for free in this building and it is because you did not get near the furniture."
+> "It is thirty SOVS to have a chaise longue steam-cleaned in this city. I know that because I have had it done. *(a beat; she caps the pen)* Not tonight. Tonight it is free. That is the only thing you are getting for free in this building and it is because you did not get near the furniture."
 
 *She goes. Fortissima holds the corridor. Nobody raises their voice again, nobody is unkind, and at no point does either woman explain anything to anybody about anything.*
 
@@ -175,7 +175,7 @@ Plays the entry above exactly as authored — the marquee, the graded compliment
 **Adelheid** *(passing, not stopping, not looking up, one line, and she never mentions it again)*:
 > "I kept the note about the chaise. — No, you may not read it. It is *mine*."
 
-*That is the entire callback.* **From here the entry runs the invitation, the Nightcap (or its decline branch), the Enhanced Morning Scene and the Result block above exactly as authored** *— the lift, the makeup, the bucket, the 80 Sovs, the shoes in the hall. Never a second refusal, and the corridor is never mentioned by anyone again.*
+*That is the entire callback.* **From here the entry runs the invitation, the Nightcap (or its decline branch), the Enhanced Morning Scene and the Result block above exactly as authored** *— the lift, the makeup, the bucket, the 80 SOVS, the shoes in the hall. Never a second refusal, and the corridor is never mentioned by anyone again.*
 
 ---
 
@@ -289,7 +289,7 @@ On the appeased route Bassmeister arrives with a tray of spectral, translucent, 
 - **Insider Tip (journal):** come at half eleven, not one — empty floor, slow tempo, learn the timing off the glass panels before there's anyone in to see you get it wrong. And tip in the pelvic bowl, not the hand.
 - **Achievement: "Living Legend"**
 
-**Location-Specific Roasting:** Sinfonia sells composer-grave tourism at 5 Sovs a head and calls the cover charge a "cemetery pass." The bros pay it, go down a ladder, and conclude they have found the secret. It is a licensed fifteen-year-old business with a rota.
+**Location-Specific Roasting:** Sinfonia sells composer-grave tourism at 5 SOVS a head and calls the cover charge a "cemetery pass." The bros pay it, go down a ladder, and conclude they have found the secret. It is a licensed fifteen-year-old business with a rota.
 
 **Satire Angle:** Three men arrive with an enormous theory and a woman answers the question they actually asked, accurately, in under six words. She never mocks them, never wins, and never explains. The devastation is entirely a property of the truth being shorter than the theory. **She never breaks and never explains — no reveal, no confession, no complicity beat, on any route.**
 
@@ -369,10 +369,10 @@ Plays the entry above exactly as authored: three drinks, the pelvic bowl, the qu
 💬 The Eternal Student: "I have restructured chapter two. It is now chapter four. This is progress."
 💬 The Eternal Student: "Also chapter four is now chapter two."
 💬 Unknown Number: "you left a sock in the epistemology"
-💬 Tony420: "heard u been up all night reading. got something 4 that. 50 Sovs"
+💬 Tony420: "heard u been up all night reading. got something 4 that. 50 mooncum"
 ```
 
-**Location-Specific Roasting:** Café Existenz sells the *feeling* of a thought at 6 Sovs a cup and the bros buy four rounds of it. Egon forgets the order. The Chess Players do not look up. The Corrector fixes Lord Pilsner's pronunciation of "Melange" from across the room, without eye contact, mid-move.
+**Location-Specific Roasting:** Café Existenz sells the *feeling* of a thought at 6 SOVS a cup and the bros buy four rounds of it. Egon forgets the order. The Chess Players do not look up. The Corrector fixes Lord Pilsner's pronunciation of "Melange" from across the room, without eye contact, mid-move.
 
 **Satire Angle:** Two men are forty-seven years and fifteen years down the same road and neither has ever said a word to the other about it, because it would be cruel and because one of them would have to say it out loud. **The game never connects them for the player.** The bros sleep between them and notice nothing but the espresso.
 
@@ -592,8 +592,8 @@ Recommendation: ⭐⭐⭐⭐⭐ "Slept in an actual tomb. She's SEEN things."
 **Enhanced Targeted Harassment:**
 ```
 💬 Group Chat Leak: "the americans did the LIFT 😭 someone has photos"
-💬 Box Office: "80 Sovs outstanding — furniture, one (1). Ref: THE LIFT."
-💬 Tony420: "heard u been at the opera. got something 4 the high notes 50 Sovs"
+💬 Box Office: "80 SOVS outstanding — furniture, one (1). Ref: THE LIFT."
+💬 Tony420: "heard u been at the opera. got something 4 the high notes 50 mooncum"
 💬 CryptoBro69: "u spent ur whole trip in a CEMETERY BAR. worse ROI than my NFTs lol"
 💬 Unknown Number: "the horse has an agent now. do you?"
 ```
@@ -624,12 +624,12 @@ Recommendation: ⭐⭐⭐⭐⭐ "Slept in an actual tomb. She's SEEN things."
 
 ### **Mozart's Last Rave Ecosystem:**
 - **Bro Delusion:** They found the secret door. They are drinking with the dead. Helga has made some terrible bargain and has *seen things*.
-- **Reality:** A licensed fifteen-year-old business under a cemetery, a 5 Sovs cover charge described as a "cemetery pass," theatre students on 15 Sovs an hour who never break character, a rota, and a woman on shift who will tell you exactly where the skull glass came from if you ask. It's from IKEA.
+- **Reality:** A licensed fifteen-year-old business under a cemetery, a 5 SOVS cover charge described as a "cemetery pass," theatre students on 15 SOVS an hour who never break character, a rota, and a woman on shift who will tell you exactly where the skull glass came from if you ask. It's from IKEA.
 - **NPCs:** Helga, Johann Bassmeister, the Grave Guide, DJ Grave-o, DJ Soprano Specter, DJ Tempo Mortis, DJ Harmony Haunt, the Ghost Groupies
 
 ### **Café Existenz Ecosystem:**
 - **Bro Delusion:** They are holding their own in European intellectual life. Chadwick has content. Lord Pilsner ordered "the first one."
-- **Reality:** A coffeehouse that charges 6 Sovs for the feeling of a thought, a maître d' who assigns seating by verdict, a server who has forgotten more orders than most waiters have taken, two chess players who have not spoken in twenty years, and one man who has been almost done since 2009 hosting three men who will be gone by Thursday.
+- **Reality:** A coffeehouse that charges 6 SOVS for the feeling of a thought, a maître d' who assigns seating by verdict, a server who has forgotten more orders than most waiters have taken, two chess players who have not spoken in twenty years, and one man who has been almost done since 2009 hosting three men who will be gone by Thursday.
 - **NPCs:** The Eternal Student, Herr Konditor, Egon, Herr Doktor Professor von Grübelstein, The Chess Players, The Corrector, The Eavesdropper
 
 ### **Baroness' Ballroom Ecosystem:**
@@ -654,7 +654,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "Slept in an actual tomb. She's SEEN things."
 - **Status Update:** 😵 **Hungover** + 🎭 **Star Quality** — *simultaneously the best and worst you have ever looked.*
 - **Reputation Change:** 📉 **Notorious Patron** — *The Grand anything now costs more.*
 - **Reputation Change:** 📈 **Adopted** — *Madame Fortissima refers to you, in the lobby, at full projection, as HERS.*
-- **Invoice Received:** 💶 **80 Sovs** — *Furniture, one (1). Non-negotiable. No Charm check. Correct.*
+- **Invoice Received:** 💶 **80 SOVS** — *Furniture, one (1). Non-negotiable. No Charm check. Correct.*
 
 ---
 
