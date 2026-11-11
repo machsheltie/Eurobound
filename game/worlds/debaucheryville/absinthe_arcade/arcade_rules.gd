@@ -2,7 +2,7 @@ class_name ArcadeRules
 extends RefCounted
 ## Absinthe Arcade money: tokens and tickets, kept in GameState's inventory.
 ##  - 1 token = 1 SOV; Frogger costs 2 tokens, Street Fighter 3, Kebab Kombat 4, DDR 2 per song
-##    (author rulings 2026-11-09); skee-ball and foosball 2 each (round v25, delegated); each claw 5.
+##    (author rulings 2026-11-09); skee-ball and foosball 2 each (round v25, delegated); the rigged claw 5 (the Beanie claw is a placeholder).
 ##  - The TOKENS HERE machine sells any number of tokens; they sit in the inventory and cabinets
 ##    spend them (author ruling ef_tokens = machine_any, 2026-11-10).
 ##  - Arcade fights pay tickets, not SOVS (ruling 2026-11-09), redeemed at the Prize Redemption
@@ -19,8 +19,8 @@ const PLAY_COST := {
 	"ddr_dance_off": 2,
 	"skee_ball": 2,    # round v25: rec-game numbers delegated to Claude
 	"foosball": 2,
-	"beanie_baby_claw": 5,               # ruled 5 tokens an attempt (both claws)
-	"rigged_absinthe_claw_machine": 5,
+	"beanie_baby_claw": 5,               # PLACEHOLDER: unruled (round v29 beanie_price, 2 proposed)
+	"rigged_absinthe_claw_machine": 5,   # ruled 2026-11-02 ("claw 5")
 }
 
 
