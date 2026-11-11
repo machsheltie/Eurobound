@@ -47,8 +47,8 @@
                          |  north arch  |
  +---------------------------------------------------------------+
  | mezzanine (visual) -- back wall: Green Fairy mural, 5-cabinet row |
- | DDR screen + 3 pads   Skee-Ball  foosball   shattered-glass   | Bubble Bobble
- | Beanie claw                                  bar + PRIZE      | right-wall row
+ | DDR screen + 3 pads   Skee-Ball  foosball   shattered-glass   |
+ | Beanie claw (W wall, by foosball)            bar + PRIZE      | (E wall: Bubble Bobble, KK)
  | TOKENS HERE + Backpack Girl     open floor   REDEMPTION       | PRIZES claw alcove
  |                  stained-glass entry doors (south)            |
  +---------------------------------------------------------------+   main hall 15 x 12 m
@@ -56,8 +56,8 @@
 
 - Hall height to vault crown about 9 m, mezzanine deck about 4.5 m (PROPOSED: ground + first floor of the 4-storey exterior).
 - North-wing vault about 5 m (PROPOSED: "lower" per the spec and v4).
-- Not yet placed: **mirror corridor** (`aa_node_mirror_corridor`, between the cabinet loop and the north wing). Open question.
-- Not yet placed: **the Arcade bathroom with the toilet-paper statue** (author, round v25: the bros find the Token Attendant asleep in the arms of a statue repurposed as a toilet-paper holder). **RESOLVED (author, round v26, 2026-11-11): public restroom screen approved, to be painted (night/day, same camera conventions).** It is a new screen, not yet in the hall art; the statue is a bronze Green Fairy repurposed as a toilet-paper holder, and the scene triggers on the first bathroom visit after 01:00 (see `design/worlds/debaucheryville/npcs/Absinthe_Arcade/token_attendant.md`). The hall exit to it is not yet placed.
+- **Mirror corridor** (`aa_node_mirror_corridor`): placed and built (hall north arch -> corridor -> north wing; art v1 approved round v25).
+- Not yet placed: **the Arcade bathroom with the toilet-paper statue** (author, round v25: the bros find the Token Attendant asleep in the arms of a statue repurposed as a toilet-paper holder). **RESOLVED (author, round v26, 2026-11-11): public restroom screen approved, to be painted (night/day, same camera conventions).** It is a new screen, not yet in the hall art; the statue is a bronze Green Fairy repurposed as a toilet-paper holder, and the scene triggers on the first bathroom visit after 01:00 (see `design/worlds/debaucheryville/npcs/Absinthe_Arcade/token_attendant.md`). Painted (aa_interior_restroom_v1_night/day, approved round v27). The hall exit to it is not yet placed (round v28 question restroom_door).
 
 ## Asset list
 
