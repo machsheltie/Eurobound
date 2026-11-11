@@ -251,7 +251,7 @@
         "amount": {
           "min": 0,
           "max": 20,
-          "formula": "by score"
+          "formula": "round(20 x score / 450), capped at 20"
         },
         "redeem_at": "prize_redemption_counter",
         "sovs_payout": 0
@@ -262,7 +262,7 @@
         "insert_token",
         "playing",
         "results",
-        "ticket_jam"
+        "ticket_jam (NOT BUILT; machine jams need an author ruling)"
       ]
     },
     {
@@ -281,7 +281,8 @@
       },
       "mechanics": {
         "opponent": "an NPC (which NPC: NEEDS AUTHOR RULING)",
-        "outcome": "win_or_loss"
+        "outcome": "win_or_loss",
+        "match_length": "first to 5 goals"
       },
       "reward": {
         "type": "arcade_tickets",
