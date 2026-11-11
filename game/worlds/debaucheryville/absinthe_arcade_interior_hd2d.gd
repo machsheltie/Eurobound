@@ -60,6 +60,9 @@ const FRONT_EXIT_TARGET := "absinthe_arcade_exterior"
 const SPAWNS := {
 	"from_street": [Vector2(0.0, 3.4), "north"],
 	"from_mirror_corridor": [Vector2(0.24, -4.3), "south"],
+	# Back from the restroom (round v28: its door is the left-wall arch behind TOKENS HERE). How the
+	# bros reach that arch is still open, so they come back out beside the token machine.
+	"from_restroom": [Vector2(-5.2, 4.2), "south_east"],
 }
 
 ## Depth curve (author ruling int_depth_scale): v8 paints its back row smaller than its floor
