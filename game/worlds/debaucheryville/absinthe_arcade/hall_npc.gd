@@ -34,7 +34,8 @@ var _last := ""
 
 
 ## `frames`: the .aseprite path; `content_px` / `feet_px`: visible height and feet row of his frames.
-func setup(frames: String, content_px: float, feet_px: float, facing: String, mutter_jobs: Array) -> void:
+## `height_m` > 0 overrides the bros' density (e.g. Accounts Receivable drawn tall, shown at 2.1 m).
+func setup(frames: String, content_px: float, feet_px: float, facing: String, mutter_jobs: Array, height_m := 0.0) -> void:
 	jobs = mutter_jobs
 	_rng.randomize()
 	sprite = PartySprite3D.new()
@@ -42,7 +43,7 @@ func setup(frames: String, content_px: float, feet_px: float, facing: String, mu
 	sprite.sprite_frames = load(frames)
 	sprite.content_height_px = content_px
 	sprite.feet_row_px = feet_px
-	sprite.height_m = content_px * METRES_PER_PX
+	sprite.height_m = height_m if height_m > 0.0 else content_px * METRES_PER_PX
 	sprite.facing = facing
 	add_child(sprite)
 	var body := StaticBody3D.new()

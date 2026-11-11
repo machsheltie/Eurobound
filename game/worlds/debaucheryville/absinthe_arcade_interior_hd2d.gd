@@ -115,6 +115,8 @@ const INTERACT_POINTS := {
 const TOMAS_AT_DOOR := Vector2(-2.2, 4.4)
 const RECEIVABLE_FRAMES := "res://assets/characters/npcs/absinthe_arcade/accounts_receivable.aseprite"
 ## In the doorway between the door leaves, behind the bros who were walking out.
+## accounts_receivable.md: 2.1 m (their frames draw them ~2.28 m at the bros' density; ad 2026-11-11).
+const RECEIVABLE_HEIGHT_M := 2.1
 const RECEIVABLE_AT := [Vector2(-0.42, 5.0), Vector2(0.42, 5.0)]
 ## The in-engine ring (ad, 2026-11-11: keep the overlay): his towel hand in the two ways he faces.
 const TOMAS_RING_PX := {"south": Vector2(50, 60), "east": Vector2(71, 61)}
@@ -515,7 +517,7 @@ func receivable_arrive() -> void:
 		var npc := HallNpc.new()
 		npc.name = "accounts_receivable_%d" % i
 		add_child(npc)
-		npc.setup(RECEIVABLE_FRAMES, 148.0, 153.0, "north", [])
+		npc.setup(RECEIVABLE_FRAMES, 148.0, 153.0, "north", [], RECEIVABLE_HEIGHT_M)
 		_place(npc, RECEIVABLE_AT[i])
 		npc.add_to_group(ACTOR_GROUP)
 		receivable.append(npc)
