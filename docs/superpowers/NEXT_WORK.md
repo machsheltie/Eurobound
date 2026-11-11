@@ -680,6 +680,16 @@ Eurobound-vyn.)
     - e3_grist: Set A (11%, +40 HP/+20 SP/+15% Speed for 3 turns, Navigation -20% for 5 turns, not sold).
     - e3_genever: one item, using the menu's numbers (6 SOVS, +25 SP).
     - For both beers, author: "the name needs work. This is too high brow and official.... Remember, this is *satire* and *parody*. It isn't supposed to read as serious". Both need new parody names.
+- **(Round v35, 2026-11-11) Clock costs, controls, Shoop, menu, Taproom and closet art.**
+  - **Clock tick costs:** minutes per action. A screen change is 10 min; a fight or minigame (cabinet battle, DDR song, claw, skee-ball, foosball) is 20; buying or drinking a drink is 10; talking is free. The Meme Black Market kiosk's "exactly 3:33 AM" therefore becomes a 03:33-03:59 window.
+  - **Desktop controls (e3_controls2): both approved as proposed (bead Eurobound-lbi).**
+    - Battle peek: hover to peek, then hold right mouse button or Tab to pin. On a controller, hold Y for 0.4 s; a held Y on a status icon opens cures.
+    - Bike crossing: W/S or Up/Down moves one lane, staying idle holds position, and Shift+Up sprints. On a controller, a D-pad press or stick flick moves one lane and RB+Up sprints.
+  - **"Shoop" unlock clip:** the author will supply the audio file (`game/assets/audio/arcade/shoop_unlock.ogg`).
+  - **Menu:** an agent proposes a menu from canon (sections plus a mock-up) for author approval. Pilsner's watch goes in it.
+  - **Closet restroom art:** version 2 is approved (`concepts/aa_interior_maintenance_closet_v2_night.png`).
+  - **"Pixelated boobs" graffiti:** keep it as blocky pixels under a big CENSORED bar, so nothing is shown. This replaces the engine data's "age_appropriate" softening.
+  - **Taproom art: changes.** Author: "There shouldnt be the massive hole in the floor and the table shouldnt be tipping over". To be redone.
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
 Moved verbatim from the work-tracking sections above; evidence appended to each.
@@ -744,13 +754,3 @@ engine read path is `game/assets/data/quests/` (every populated sibling under
 `game/assets/data/` is engine-side; only `economies/` and `quests/` are empty). Migrate them,
 applying the canonical schema in the spec (`items_acquired` sub-keyed `standard`/`path_a`/
 `path_b`; `localization`; `presentation`). — resolved: af3e4da, bead Eurobound-r1t closed; both now in `game/assets/data/quests/`, none left in `design/Quests/debaucheryville/` (follow-up open: Eurobound-9si)
-- **(Round v35, 2026-11-11) Clock costs, controls, Shoop, menu, Taproom and closet art.**
-  - **Clock tick costs:** minutes per action. A screen change is 10 min; a fight or minigame (cabinet battle, DDR song, claw, skee-ball, foosball) is 20; buying or drinking a drink is 10; talking is free. The Meme Black Market kiosk's "exactly 3:33 AM" therefore becomes a 03:33-03:59 window.
-  - **Desktop controls (e3_controls2): both approved as proposed (bead Eurobound-lbi).**
-    - Battle peek: hover to peek, then hold right mouse button or Tab to pin. On a controller, hold Y for 0.4 s; a held Y on a status icon opens cures.
-    - Bike crossing: W/S or Up/Down moves one lane, staying idle holds position, and Shift+Up sprints. On a controller, a D-pad press or stick flick moves one lane and RB+Up sprints.
-  - **"Shoop" unlock clip:** the author will supply the audio file (`game/assets/audio/arcade/shoop_unlock.ogg`).
-  - **Menu:** an agent proposes a menu from canon (sections plus a mock-up) for author approval. Pilsner's watch goes in it.
-  - **Closet restroom art:** version 2 is approved (`concepts/aa_interior_maintenance_closet_v2_night.png`).
-  - **"Pixelated boobs" graffiti:** keep it as blocky pixels under a big CENSORED bar, so nothing is shown. This replaces the engine data's "age_appropriate" softening.
-  - **Taproom art: changes.** Author: "There shouldnt be the massive hole in the floor and the table shouldnt be tipping over". To be redone.
