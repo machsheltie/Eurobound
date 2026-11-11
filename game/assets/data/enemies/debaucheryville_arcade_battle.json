@@ -713,6 +713,7 @@
     "ACCOUNTS",
     "RECEIVABLE"
    ],
+   "sprite_scale": 0.922,
    "moves": [
     {
      "id": "itemized_beating",

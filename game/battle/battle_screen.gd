@@ -255,7 +255,7 @@ func _build_arena() -> void:
 			var spr := Sprite3D.new()
 			spr.name = "sprite"
 			spr.texture = load(path)
-			spr.pixel_size = PIXEL_SIZE
+			spr.pixel_size = PIXEL_SIZE * float(e.data.get("sprite_scale", 1.0))
 			spr.billboard = BaseMaterial3D.BILLBOARD_FIXED_Y
 			spr.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
 			spr.shaded = false
@@ -266,7 +266,7 @@ func _build_arena() -> void:
 			card.add_child(spr)
 			# Tag over the painted top of the sprite, kept under the text box.
 			var used := spr.texture.get_image().get_used_rect()
-			top = minf((h - used.position.y) * PIXEL_SIZE, MAX_TAG_Y)
+			top = minf((h - used.position.y) * spr.pixel_size, MAX_TAG_Y)
 		else:
 			var quad := MeshInstance3D.new()
 			var mesh := QuadMesh.new()
