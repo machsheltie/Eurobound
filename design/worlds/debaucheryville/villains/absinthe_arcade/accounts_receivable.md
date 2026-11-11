@@ -18,7 +18,7 @@
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_accounts_receivable_01`
 - **Display Name**: **Accounts Receivable** **[CANON — author, round v25 2026-11-11]**. One word per man: the battle nameplates read **ACCOUNTS** and **RECEIVABLE** **[CANON — author]**. Knock out one and the other's plate still reads half a department.
-- **RESOLVED (author, round v26, 2026-11-11): the hall "bouncers" ARE Accounts Receivable.** They only appear when summoned ("Gentlemen?"), so the reveal stands. Original question: the Round v24 ruling lists **"bouncers"** among the hall NPCs (from the author's chat "create hero image prompt"). Are these two the Arcade's bouncers, standing in the hall all night until summoned, or a separate pair who only exist for this fight? This file assumes they are not visible until "Gentlemen?" (they step in from offscreen), which keeps the reveal. If they are the hall bouncers, the reveal becomes "the two men by the door were for you".
+- **RESOLVED (author, round v26, 2026-11-11): the hall "bouncers" ARE Accounts Receivable.** They only appear when Tomáš needs them (they step quietly into the exit doorway when the bros try to leave without paying), so the reveal stands. Original question: the Round v24 ruling lists **"bouncers"** among the hall NPCs (from the author's chat "create hero image prompt"). Are these two the Arcade's bouncers, standing in the hall all night until summoned, or a separate pair who only exist for this fight? This file assumes they are not visible until "Gentlemen?" (they step in from offscreen), which keeps the reveal. If they are the hall bouncers, the reveal becomes "the two men by the door were for you".
 - **Tier**: Minor Villain (optional pair fight)
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), the front door / entry
 - **Associated Quest/Arc**: Grandpa Provides, `debaucheryville_sidequest_grandpa_provides_01`
@@ -58,7 +58,7 @@ Three men who flew to Europe to be legends are brawling at an arcade's front doo
 - PROPOSED: identical lanyards with a key ring, a walkie-talkie each, never used.
 
 ### Sprite Notes
-HD-2D side-view battle (ruling 2026-11-10): both enforcers on screen as large billboard sprites, noticeably bigger than the bros (the bros are 1.8 m; these read at roughly 2.1 m and twice as wide; PROPOSED). Silhouette: refrigerator with arms. The badges are tiny on purpose; do not enlarge them for readability, that's the joke. Overworld: two movable NPC sprites that step in from either side of the door on "Gentlemen?". Telegraph: both crack knuckles in unison for one full turn, with an audible SFX on each pop.
+HD-2D side-view battle (ruling 2026-11-10): both enforcers on screen as large billboard sprites, noticeably bigger than the bros (the bros are 1.8 m; these read at roughly 2.1 m and twice as wide; PROPOSED). Silhouette: refrigerator with arms. The badges are tiny on purpose; do not enlarge them for readability, that's the joke. Overworld: two movable NPC sprites that step quietly into the exit doorway when Tomáš gestures toward them. Telegraph: both crack knuckles in unison for one full turn, with an audible SFX on each pop.
 
 ---
 
@@ -68,13 +68,21 @@ HD-2D side-view battle (ruling 2026-11-10): both enforcers on screen as large bi
 **The Collections Department** — two large men who have never once raised their voices, because their size does the shouting. They're polite. They're thorough. They say "sir" the way a parking ticket does. They don't hate the bros. The bros are an open account.
 
 ### Pre-Battle Dialogue
-*Trigger: the bros refuse the tab at the door (see quest doc).*
+*Trigger: the bros refuse the tab twice at the exit (see `design/quests/debaucheryville/grandpa_provides.md`, Scene 3, rebuilt round v29 from the approved ChatGPT draft).*
 
-**Tomáš** *(sighs)*: "Gentlemen?" **[CANON — approved draft]**
+**Tomáš**: "You can absolutely leave without paying." **[DRAFT]**
 
-*Two enormous men step in.* **[CANON — approved draft]**
+*Two enormous men quietly step into the doorway. Matching black polos. Tiny employee badges. Absolutely preposterous shoulders.* **[DRAFT]**
 
-**Tomáš**: "Our guests are experiencing a billing dispute." **[CANON — approved draft]**
+**Tomáš** *(gesturing toward them)*: "You just can't leave through there." **[DRAFT]**
+
+**Bradley**: "Great pickup, dude." **[DRAFT]**
+
+**Tomáš**: "So." *Beat.* "Cash, card, or traumatic brain injury?" **[DRAFT]**
+
+*If they still refuse: the two men crack their knuckles; Tomáš steps safely behind the bar.* **[DRAFT]**
+
+**Tomáš**: "Gentlemen, our guests are experiencing a billing dispute." **[DRAFT]**
 
 *Pilsner looks at Bradley. Bradley looks at Chadwick. Chadwick looks at the door. Knuckles crack.* **[CANON — approved draft]**
 
@@ -177,7 +185,7 @@ Winning ends with the bros fleeing and "Service charge." from the doorway. The t
 ## 🔗 Connections
 | NPC / Villain | Relationship |
 |---------------|--------------|
-| Tomáš "Two-Fifty" (`design/worlds/debaucheryville/npcs/Absinthe_Arcade/tomas_two_fifty.md`) | He says "Gentlemen?" and they come. Who is in charge is never stated |
+| Tomáš "Two-Fifty" (`design/worlds/debaucheryville/npcs/Absinthe_Arcade/tomas_two_fifty.md`) | He gestures toward the doorway and they are already in it; "Gentlemen, our guests are experiencing a billing dispute." starts the fight. Who is in charge is never stated |
 | Cabinet villains | No tie. These two are real |
 
 ---

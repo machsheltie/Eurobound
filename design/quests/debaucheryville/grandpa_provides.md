@@ -9,6 +9,10 @@
 > scene, and the fix to the scene itself: **"The ring happens at the bartenders table. There is no ring having
 > anything to do with Cara."** **[CANON — author]** The scene follows the author's ChatGPT story and nothing else.
 > Everything not from the author, the approved draft or a ruling was stripped in round v28 (list at the end).
+> **Round v29 rebuild (2026-11-11):** the author flagged the bartender <-> bros interaction as off and missing lines.
+> Both bartender scenes are now ChatGPT's approved scenes from that chat, line for line: **"The Tip"** (Scene 1)
+> and **"The Unsettled Tab"** (Scene 3, which folds in the author's opener). The first-draft tab beat at the bros'
+> next game and the first-draft door scene are superseded and removed (list at the end).
 
 ## The interaction as written (for author review)
 
@@ -16,28 +20,52 @@
 Grandpa Provides: the full scene, in the order the player sees it. Every line and beat carries a source tag:
 
 - [AUTHOR] = the author's own words (ChatGPT chat "Absinthe Arcade Exterior Design", and round v28).
-- [DRAFT] = the ChatGPT draft the author approved ("The rest between him and the bros is perfection.").
-- [RULED] = a number or rule the author approved in rounds v25-v28.
+- [DRAFT] = ChatGPT's writing in that chat that the author approved ("Yes!!! That's exactly it!!!" ... "The rest between him and the bros is perfection."). Scene 1 is ChatGPT's "The Tip". Scene 3 is ChatGPT's "The Unsettled Tab", which folds in the author's opener.
+- [RULED] = a number, name or rule the author approved in rounds v25-v28.
 - [OTHER] = anything else. Each one says what it is. Please confirm or strike it.
 
 Cast: Lord Pilsner, Chadwick, Bradley; Tomáš "Two-Fifty" (the bartender, who also runs the prize counter); Woo Woo Whitney (the blonde girl with pigtails); Cara (the birthday girl); Brynleigh, Ashleigh, Kenleigh (Cara's other friends); Accounts Receivable (two enforcers).
 
-There is no ring anywhere in this scene except the tip in Scene 1. The girls never give Pilsner a ring. [AUTHOR, round v28]
+The only ring in this scene is the Promise-ish Ring the bros tip to Tomáš in Scene 1. The girls never give Pilsner a ring. [AUTHOR, round v28]
+From Scene 1 on, Tomáš wears the ring for the rest of the game, every time the bros encounter him. He never acknowledges it. The bros don't notice. [DRAFT]
 
 
-SCENE 1. THE TIP (at the bartender's prize counter, any time before Scene 3, optional)
+SCENE 1. THE TIP (at Tomáš's prize counter)
 
-[OTHER: trigger] Plays the first time the bros redeem the Promise-ish Ring (5 tickets, junk shelf) at the prize counter.
+[OTHER: trigger] Plays the first time the bros redeem prizes at the counter with the Promise-ish Ring (5 tickets, junk shelf) among them.
 
-The bros redeem the Promise-ish Ring. Tomáš hands it over. [AUTHOR]
+The bartender counts out the Bros' prizes with the enthusiasm of a man processing a warranty claim. [DRAFT]
+He slides a handful of cheap plastic garbage across the counter. [DRAFT]
 
-TOMÁŠ: "What... no tip?" [AUTHOR]
+TOMÁŠ: "What, no tip?" [DRAFT; the author's idea, which he wrote as "What... no tip?"]
 
-The bros tip him the ring they just bought. [AUTHOR]
-He sighs and rolls his eyes. [AUTHOR]
-The bros act like they just did him a favour. [AUTHOR]
+The Bros look at each other. [DRAFT]
+Lord Pilsner slowly looks down at their prizes. [DRAFT]
+A solution occurs to him. [DRAFT]
+He picks up a translucent plastic ring. [DRAFT] (The Promise-ish Ring. [RULED v28])
 
-[OTHER: no spoken bro lines] The favour is played as action only; no lines are written for it. Do you want lines here?
+PILSNER: "We got you, bro." [DRAFT]
+
+He places the ring on the counter. [DRAFT]
+The bartender stares at it. [DRAFT]
+Then at Lord Pilsner. [DRAFT]
+Then back at the ring. [DRAFT]
+A long sigh. [DRAFT; author: "He sighs and rolls his eyes"]
+He takes it. [DRAFT]
+
+TOMÁŠ: "Wow." [DRAFT]
+BRADLEY: "Don't spend it all in one place." [DRAFT]
+CHADWICK: "That's five tickets, dude." [DRAFT]
+
+Lord Pilsner gives the bartender a solemn nod, as if Chadwick has just confirmed the extraordinary generosity of their gratuity. [DRAFT; author: "the bros act like they just did him a favour"]
+The bartender slowly puts the plastic ring on his finger. [DRAFT]
+
+TOMÁŠ: "I'll alert my financial adviser." [DRAFT]
+
+The Bros walk away looking extremely pleased with themselves. [DRAFT]
+The bartender watches them leave. [DRAFT]
+He looks at the ring. [DRAFT]
+He does not remove it. [DRAFT]
 
 
 SCENE 2. THE APPROACH (the bros' current game, then the bar)
@@ -92,73 +120,139 @@ GIRLS (behind them): "WOOOOOOOOOO!" [DRAFT]
 
 Pilsner flinches. [DRAFT]
 
-
-SCENE 3. THE TAB (as the bros head to their next game)
-
-When the bros head to their next game (cabinet, DDR, skee-ball, foosball or claw), Tomáš shows up with a tab Pilsner clearly didn't agree to, for the girls' round. [AUTHOR; timing RULED v25]
-The tab is 40 SOVS for the five test tubes. It does not grow. [RULED v25]
-Tomáš clearly enjoys this, after being tipped a cheap plastic ring. [AUTHOR]
-
-TOMÁŠ: "Hey, Grandpa... you forgot to settle your tab. Maybe it's just the dementia." [AUTHOR]
-PILSNER: "I offered to buy ONE girl ONE drink." [DRAFT]
-TOMÁŠ: "And yet you inspired so much joy." [DRAFT]
-PILSNER: "I'm not paying for all of these." [DRAFT]
-GIRLS (raising their drinks across the room): "GRANDPA GUY!" [DRAFT]
-TOMÁŠ: "You've built a legacy." [DRAFT]
-
-CHOICE: [PAY 40 SOVS] / [REFUSE] [AUTHOR: "which the guys have to agree to pay"; price RULED v25]
-
-PAY:
-The bros pay. They get roasted for the rest of the Arcade visit. [DRAFT]
-Cara's group waves whenever they see Pilsner; he refuses to acknowledge them. [DRAFT, as recorded in the earlier doc; OTHER: please confirm it is in your ChatGPT story]
-END.
-
-REFUSE:
-TOMÁŠ: "Okay." [DRAFT]
-He walks away. [DRAFT]
-PILSNER: "See? You just gotta stand your ground." [DRAFT]
-Go to Scene 4 when the bros try to leave.
+The round is on Pilsner's tab: 40 SOVS for the five test tubes. It does not grow. [RULED v25]
 
 
-SCENE 4. THE DOOR (the bros try to leave with the tab unpaid)
+SCENE 3. THE UNSETTLED TAB (at the exit)
 
-If they refused in Scene 3, or if they're leaving without another game, Tomáš meets them at the door with the tab. [AUTHOR]
-[OTHER: staging carried over from the earlier doc] If they never went to another game, this is the first time they see the tab: Tomáš opens with the Scene 3 exchange ("Hey, Grandpa..." through "You've built a legacy."), then says "Forgot something."
+If the Bros continue playing without settling Cara's birthday-round tab, nothing immediately happens. [DRAFT]
+The bartender lets them enjoy themselves. [DRAFT]
 
-Tomáš stands beside the exit, still bored. [DRAFT]
+When they eventually approach the exit, he is already waiting beside the door. [DRAFT; author: "the bartender meets them at the door"]
+He's still wearing the ridiculous striped carnival-style blazer, black pants, goofy hat and employee name tag. [DRAFT]
+And he's still wearing the cheap plastic ring the Bros gave him as a tip. [DRAFT]
+He holds up their tab. [DRAFT]
 
-TOMÁŠ: "Forgot something." [DRAFT]
+TOMÁŠ: "Hey, Grandpa." [AUTHOR]
 
-CHOICE: [PAY 40 SOVS] / [REFUSE AGAIN]
+Pilsner stops. [DRAFT]
 
-PAY:
-TOMÁŠ: "Grandpa provides." [DRAFT; RULED v25 that Tomáš says it]
-Pilsner dies inside. [DRAFT]
+TOMÁŠ: "You forgot to settle your tab." [AUTHOR]
+
+A beat. [DRAFT]
+
+TOMÁŠ: "Maybe it's just the dementia." [AUTHOR]
+
+Bradley immediately turns away to hide his reaction. [DRAFT]
+Chadwick does not bother. [DRAFT]
+
+CHADWICK: "Oh, shit." [DRAFT]
+
+Pilsner glares at the bartender. [DRAFT]
+The bartender looks considerably less bored than he has all evening. [DRAFT; author: "The bartender clearly enjoys this after being tipped a cheap plastic ring"]
+He's enjoying this now. [DRAFT]
+
+PILSNER: "I bought ONE girl ONE drink." [DRAFT]
+TOMÁŠ: "Sure." [DRAFT]
+
+He looks at the bill. [DRAFT]
+
+TOMÁŠ: "And then your granddaughter announced otherwise." [DRAFT]
+PILSNER: "She's not my granddaughter." [DRAFT]
+TOMÁŠ: "That's good." [DRAFT]
+
+Beat. [DRAFT]
+
+TOMÁŠ: "I was concerned about the flirting." [DRAFT]
+
+Bradley loses it. [DRAFT]
+
+PILSNER: "Can you shut the fuck up?" [DRAFT]
+BRADLEY: "I'm not saying anything." [DRAFT]
+PILSNER: "You're laughing." [DRAFT]
+BRADLEY: "That's different." [DRAFT]
+
+The bartender holds the tab toward Pilsner again. [DRAFT]
+The cheap plastic ring is clearly visible on his finger. [DRAFT]
+
+CHOICE: [PAY THE TAB] / [REFUSE AGAIN] [DRAFT; the author: "which the guys have to agree to pay"; PAY is 40 SOVS, RULED v25]
+
+PAY THE TAB:
+Pilsner reluctantly pays. (40 SOVS [RULED v25]) [DRAFT]
+The bartender checks the amount. [DRAFT]
+TOMÁŠ: "Pleasure doing business with you, Grandpa." [DRAFT]
+Pilsner starts toward the door. [DRAFT]
+TOMÁŠ: "Oh—and thanks again for the tip." [DRAFT]
+He raises his hand and admires the cheap plastic ring. [DRAFT]
+TOMÁŠ: "Really turned things around for me." [DRAFT]
+Pilsner leaves. [DRAFT]
+Bradley and Chadwick follow. [DRAFT]
+CHADWICK: "Dude, I think he likes it." [DRAFT]
+PILSNER: "Fuck both of you." [DRAFT]
 END.
 
 REFUSE AGAIN:
-Tomáš sighs. [DRAFT]
-TOMÁŠ: "Gentlemen?" [DRAFT]
+PILSNER: "I'm not paying for drinks I didn't order." [DRAFT]
+The bartender considers this. [DRAFT]
+TOMÁŠ: "Okay." [DRAFT]
+Pilsner looks surprised. [DRAFT]
+PILSNER: "Okay?" [DRAFT]
+TOMÁŠ: "Yeah." [DRAFT]
+The bartender steps aside. [DRAFT]
+TOMÁŠ: "You can absolutely leave without paying." [DRAFT]
+Pilsner smirks at Bradley. [DRAFT]
+PILSNER: "Thank you." [DRAFT]
+He takes one step toward the door. [DRAFT]
 
-Two very large ape-like men show up, acting menacing. [AUTHOR]
-They're built like somebody taught a pair of refrigerators to collect debts: neckless, absurd shoulders, matching black polos, tiny employee badges. [DRAFT, as recorded in the earlier doc]
+Two enormous men quietly step into the doorway. [DRAFT; author: "two very large ape-like men show up acting menacing"] They are Accounts Receivable. [RULED v25]
+Matching black polos. [DRAFT]
+Tiny employee badges. [DRAFT]
+Absolutely preposterous shoulders. [DRAFT]
 
-TOMÁŠ: "Our guests are experiencing a billing dispute." [DRAFT]
+The bartender gestures toward them. [DRAFT]
+TOMÁŠ: "You just can't leave through there." [DRAFT]
+Pilsner stops. [DRAFT]
+Bradley looks at the men. [DRAFT]
+Then at Pilsner. [DRAFT]
+BRADLEY: "Great pickup, dude." [DRAFT]
+The bartender holds out the bill one final time. [DRAFT]
+TOMÁŠ: "So." [DRAFT]
+Beat. [DRAFT]
+TOMÁŠ: "Cash, card, or traumatic brain injury?" [DRAFT]
 
-Pilsner looks at Bradley. Bradley looks at Chadwick. Chadwick looks at the door. Knuckles crack. [DRAFT]
+CHOICE: [PAY] / [REFUSE] [DRAFT; PAY is 40 SOVS, RULED v25]
 
-BATTLE: the bros have to fight them. [AUTHOR] The two are Accounts Receivable; their battle nameplates read ACCOUNTS and RECEIVABLE. [RULED v25] Stats, moves, resistances and rewards are in the villain doc. [RULED v25]
-[OTHER] Their mid-battle barks in the villain doc are still drafts and are not part of this review.
+  PAY:
+  The Bros pay. (40 SOVS [RULED v25]) [DRAFT]
+  TOMÁŠ: "Smart." [DRAFT]
+  He raises his plastic-ring hand. [DRAFT]
+  TOMÁŠ: "Runs in the family." [DRAFT]
+  END.
 
-WIN:
-The bros flee. [DRAFT]
-TOMÁŠ (from the doorway): "Service charge." [DRAFT]
-The service charge is a flat 10 SOVS. The open tab is now 50 SOVS. [RULED v25]
-END.
+  REFUSE:
+  The two men crack their knuckles. [DRAFT]
+  The bartender steps safely behind the bar. [DRAFT]
+  TOMÁŠ: "Gentlemen, our guests are experiencing a billing dispute." [DRAFT]
 
-LOSE: [RULED v25]
-The bros wake on the street outside at 1 HP. The tab and the service charge (50 SOVS) are taken from the wallet. If the wallet is short, it is emptied and the rest is waived, with Tomáš's "Grandpa provides." delivered over them.
-END.
+  BATTLE: Accounts Receivable ×2. The bros have to fight them. [AUTHOR] (The draft's header "ABSINTHE ARCADE LOSS PREVENTION ×2" is the pair the author named Accounts Receivable; their battle nameplates read ACCOUNTS and RECEIVABLE. [RULED v25]) Stats, moves, resistances and rewards are in the villain doc. [RULED v25]
+  [OTHER] Their mid-battle barks in the villain doc are still drafts and are not part of this review.
+
+  WIN:
+  After the Bros win, they scramble out the door. [DRAFT]
+  From behind them: [DRAFT]
+  TOMÁŠ: "HEY!" [DRAFT]
+  They keep running. [DRAFT]
+  The bartender looks at the destruction. [DRAFT]
+  Then at the unpaid tab. [DRAFT]
+  He picks up a pen. [DRAFT]
+  Adds another line. [DRAFT]
+  TOMÁŠ: "Service charge." [DRAFT]
+  The service charge is a flat 10 SOVS. The open tab is now 50 SOVS. [RULED v25]
+  END.
+
+  LOSE: [RULED v25]
+  The bros wake on the street outside at 1 HP. The tab and the service charge (50 SOVS) are taken from the wallet. If the wallet is short, it is emptied and the rest is waived, with Tomáš's "Grandpa provides." delivered over them.
+  END.
 
 
 AFTER FLEEING (every return visit) [RULED v25]
@@ -175,7 +269,7 @@ This is Tomáš's order to Jakub "Tokens" Dvořák to go service the bathroom. I
 
 ## 📋 Quest Identity
 - **Quest ID:** `debaucheryville_sidequest_grandpa_provides_01`
-- **Display Name:** **Grandpa Provides** **[CANON — author, ruled 2026-11-11 round v28]** (the bartender's line from the PAY ending at the door)
+- **Display Name:** **Grandpa Provides** **[CANON — author, ruled 2026-11-11 round v28]** (the bartender's line from the first draft's door ending; in the current scene it survives only in the ruled LOSE outcome, see Open Questions 10)
 - **Quest Giver:** None. The quest gives itself: Lord Pilsner walks up to the bar.
   - Trigger NPC: **Woo Woo Whitney** (`debaucheryville_npc_woo_woo_whitney_01`, `design/worlds/debaucheryville/npcs/Absinthe_Arcade/woo_woo_whitney.md`).
   - Group: **Cara** (`debaucheryville_npc_cara_01`, `design/worlds/debaucheryville/npcs/Absinthe_Arcade/cara_birthday_girl.md`) with **Brynleigh, Ashleigh and Kenleigh** **[CANON — author, round v28]**.
@@ -214,26 +308,35 @@ This is Tomáš's order to Jakub "Tokens" Dvořák to go service the bathroom. I
 
 ### The Tip and the Promise-ish Ring
 - The **Promise-ish Ring** **[CANON — author, ruled 2026-11-11 round v28]** is the cheap plastic ring on the prize **junk shelf** (5 tickets), separate from the 13-prize catalogue **[APPROVED round v25]**. It is a junk-shelf prize like any other: no effects, 0 SOVS value.
-- The ring exists **only** in the tip beat at Tomáš's prize counter (Scene 1 above). **The girls never give Pilsner a ring.** **[CANON — author, round v28]**
-- The tip is optional and changes nothing mechanically. The author's note that the bartender "clearly enjoys" the tab "after being tipped a cheap plastic ring" means the tab scene lands best after the tip.
-- The tip trigger (the first redemption of the Promise-ish Ring) is PROPOSED.
-- **Junk shelf (APPROVED round v25):** 5-15 tickets, no effects, no catalogue duplicates (sticky hand, vampire teeth and maze are off it). It holds the Promise-ish Ring (5 tickets), parachute men, temporary tattoos and the whistle the bartender regrets (15 tickets). The other items' names are with the Writers' Room.
+- The ring exists **only** in the tip at Tomáš's prize counter (Scene 1 above). **The girls never give Pilsner a ring.** **[CANON — author, round v28]**
+- **Tomáš wears the ring for the rest of the game**, every time the bros encounter him. He never acknowledges it; the bros don't notice. **[CANON — approved draft]** (ChatGPT: "The plastic ring absolutely needs to remain on his finger for the rest of the game whenever we encounter him.")
+- The tip changes nothing mechanically. Scene 3 is written for a Tomáš who has the ring (he wears it, holds the tab with it, thanks them "for the tip", raises his ring hand), so the tip should land before the exit; see Open Questions 8.
+- The tip trigger (the first prize redemption with the Promise-ish Ring among the prizes) is PROPOSED.
+- **Junk shelf (APPROVED round v25):** 5-15 tickets, no effects, no catalogue duplicates (sticky hand, vampire teeth and maze are off it). Names, prices and inspect lines **APPROVED** (author, Writers' Room desk 2026-11-11 15:21; text verbatim from `WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md`):
+
+  | Prize | What it is | Tickets | Inspect line | Engine key |
+  |---|---|---|---|---|
+  | **Promise-ish Ring** | the cheap plastic ring (tip beat, Scene 1) | 5 | **PROPOSED, not yet approved** (ChatGPT's line from the dialogue archive §2, where the item is "CHEAP PLASTIC RING"): "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier." | not registered yet |
+  | **Terminal Velocity Terry** | parachute men | 10 | "A tangled tangle of green plastic that promises high-altitude heroism and delivers a direct face-plant into bar slop." | `aa_junk_terminal_velocity_terry` |
+  | **Forty-Eight-Hour Tramp Stamp** | temporary tattoos | 10 | "A sheet of barbed-wire tribal designs applied with warm beer and removed by twenty minutes of aggressive sweating." | `aa_junk_forty_eight_hour_tramp_stamp` |
+  | **The Noise Violation** | the whistle the bartender regrets | 15 | "Neon-orange molded plastic without a pea. It produces a shrill, piercing squeal calibrated to trigger immediate bar-staff homicide." | `aa_junk_noise_violation` |
 
 ### Trigger — APPROVED (round v25): trigger A
 With Cara's group at the bar, the first time the bros finish a cabinet fight or DDR song, the pre-approach banter plays automatically. The approach runs when the player walks Pilsner to the bar while the group is there. Walking away skips it. Location: the bros' current game, then the bar (`aa_node_bottle_bar`).
 
 ### The Tab — APPROVED (round v25)
 - **40 SOVS** for the five neon test tubes. **The tab does not grow**; it is one round, however many games the bros play before settling.
-- Tomáš intercepts the bros **as they head to** their next game (cabinet, DDR, skee-ball, foosball, claw), with the author's opener.
-- **Choice: [PAY — 40 SOVS] / [REFUSE].**
 
-### The Door
-- Fires when the bros try to leave the Arcade with the tab unpaid, including when they never went to another game **[CANON — author]**.
-- **Choice: [PAY] / [REFUSE AGAIN].** PAY → "Grandpa provides." (Tomáš says it; APPROVED round v25). REFUSE AGAIN → "Gentlemen?" → the fight.
+### The Unsettled Tab (at the exit) **[CANON — approved draft, Scene 3]**
+- If the bros keep playing without settling, nothing happens. Tomáš lets them enjoy themselves.
+- When they approach the exit, he is already waiting beside the door, ring on, holding up the tab, and opens with the author's lines: "Hey, Grandpa." / "You forgot to settle your tab." / "Maybe it's just the dementia." **[CANON — author]**
+- **Choice: [PAY THE TAB] / [REFUSE AGAIN].** PAY THE TAB (40 SOVS) → "Pleasure doing business with you, Grandpa." / "Thanks again for the tip." REFUSE AGAIN → "You can absolutely leave without paying." → Accounts Receivable fill the doorway → "Cash, card, or traumatic brain injury?"
+- **Choice: [PAY] / [REFUSE].** PAY (40 SOVS) → "Smart." / "Runs in the family." REFUSE → "Gentlemen, our guests are experiencing a billing dispute." → the fight.
+- **Superseded:** the round v25 timing (Tomáš intercepting the bros as they head to their next game) came from ChatGPT's first draft. The approved Scene 3 replaces it: he waits for the exit.
 
 ### The Fight — Accounts Receivable (APPROVED round v25)
 - Two enforcers, battle nameplates **ACCOUNTS** and **RECEIVABLE**. Profile: `design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md`. The hall "bouncers" **are** Accounts Receivable (round v26); they only appear when summoned.
-- **Win:** the bros flee; "Service charge." from the doorway. **Service charge: flat 10 SOVS.** The open tab is then **50 SOVS**.
+- **Win:** the bros scramble out the door; Tomáš's "HEY!" goes unheeded; he looks at the destruction, adds a line to the tab: "Service charge." **Service charge: flat 10 SOVS.** The open tab is then **50 SOVS**.
 - **Lose:** the bros wake on the street outside at 1 HP; the tab and service charge (50 SOVS) are taken from the wallet. If the wallet is short, it is emptied and the rest is waived ("Grandpa provides." delivered over them).
 - **After fleeing:** the bros can come back. Tomáš greets them with "Tab's open" every visit. Paying is optional forever. **No second fight.**
 
@@ -248,18 +351,16 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 ### Quest Flags (PROPOSED; `data/quests/flags.json` does not exist yet, see NEXT_WORK DEFERRED item 5)
 | Flag | Type | Set when | Read by |
 |------|------|----------|---------|
-| `debaucheryville.absinthe_arcade.ring_tip_given` | bool | Scene 1 resolves | Tab-scene staging |
-| `debaucheryville.absinthe_arcade.cara_round_bought` | bool | The GRANDPA announcement | Group cheers; Scene 3 trigger |
-| `debaucheryville.absinthe_arcade.cara_tab_presented` | bool | Scene 3 opener plays | Door trigger |
-| `debaucheryville.absinthe_arcade.cara_tab_refused` | bool | REFUSE at the game | Door scene |
-| `debaucheryville.absinthe_arcade.cara_tab_paid` | bool | PAY anywhere | Roast state; group waves |
+| `debaucheryville.absinthe_arcade.ring_tip_given` | bool | Scene 1 resolves | Scene 3 staging; Tomáš's ring-on sprite for the rest of the game |
+| `debaucheryville.absinthe_arcade.cara_round_bought` | bool | The GRANDPA announcement | Group cheers; Scene 3 exit trigger |
+| `debaucheryville.absinthe_arcade.cara_tab_paid` | bool | PAY THE TAB or PAY in Scene 3 | Exit trigger off |
 | `debaucheryville.absinthe_arcade.accounts_receivable_defeated` | bool | Fight won | "Service charge."; return-visit state |
 | `debaucheryville.absinthe_arcade.cara_tab_open` | bool | Fight won (tab + service charge still owed) | "Tab's open" greeting; cleared on payment |
 
 ### Data & Scene Dependencies
 - **Ready now:** `debaucheryville_enemies.json` (Accounts Receivable, `ticket_reward: 0`).
 - **Names now ruled (round v28), still to register:** `absinthe_arcade_npcs.json` entries for Tomáš "Two-Fifty", Woo Woo Whitney, Cara, Brynleigh, Ashleigh and Kenleigh; the Promise-ish Ring on the junk shelf. No Arcade bar price list exists.
-- **Scenes/nodes required:** group spawn at `aa_node_bottle_bar`; Tomáš's intercept beside any cabinet/DDR/claw; door intercept at the entry; HD-2D battle arena for the entry.
+- **Scenes/nodes required:** group spawn at `aa_node_bottle_bar`; Tomáš waiting beside the exit; Accounts Receivable stepping into the doorway; HD-2D battle arena for the entry.
 - **Items granted:** none. The Promise-ish Ring is bought with tickets and tipped away.
 - **Intoxication:** the test tubes go to the girls. Nothing here gives the bros a drink effect, so the `intoxication_law.md` review is not triggered.
 
@@ -275,7 +376,7 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 | Quest is optional | ✅ |
 | Quest flags registered in `data/quests/flags.json` | ⬜ file doesn't exist (NEXT_WORK deferred item 5) |
 | All names unique across the game | ◐ full names unique; first names and a surname are shared (see Open Questions 1) |
-| Follows the author's ChatGPT story | ✅ round v28 rewrite; every non-canon beat marked [OTHER] in the scene above |
+| Follows the author's ChatGPT story | ✅ round v29 rebuild: both bartender scenes line for line from the approved ChatGPT scenes; every non-canon beat marked [OTHER] in the scene above |
 
 ---
 
@@ -286,11 +387,21 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 4. **Group schedule and persistence:** 20:00–02:00 (PROPOSED), gone after 02:00, or present until the bros leave Debaucheryville?
 5. **Arcade bar menu:** no Arcade bar price list exists. Does the bar need one (and does it sell the test tubes to the bros)? If so, the drinks need the intoxication-law review.
 6. **Ordering against other romance content** (e.g. Nothing Is Getting Through, `design/Quests/debaucheryville/nothingisgettingthrough.md`): does "newly single" constrain it?
-7. **Junk shelf:** the other shelf items' names are with the Writers' Room (`WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/`).
+7. **Junk shelf:** the other three items are approved (2026-11-11 desk). Still open: the **Promise-ish Ring's inspect line** (every junk item gets one, CLAUDE.md rule 2026-11-11; none was approved for the ring). PROPOSED: ChatGPT's "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier." Approve or replace? (The archive's "+1 Swagger, −1 Dignity" modifiers are not carried over: junk-shelf prizes have no effects, round v25.)
+8. **No tip, then the exit:** Scene 3 assumes Tomáš has the ring ("thanks again for the tip", the ring hand). If the bros never redeem the Promise-ish Ring, should Scene 1 be unmissable (e.g. it plays on their first prize redemption), or does Scene 3 need a ring-less version? None is written.
+9. **Settling early:** the draft only says nothing happens if the bros keep playing without settling. Can they pay the tab at the bar before the exit?
+10. **"Grandpa provides."** (the quest name) was the first draft's door line; the approved Scene 3 doesn't use it. It now appears only in the ruled LOSE outcome. Keep it there, or move it?
+
+### Superseded in the round v29 rebuild (ChatGPT's first draft, replaced by its approved "The Tip" and "The Unsettled Tab")
+- **The old tip beat:** "The bros redeem the Promise-ish Ring. Tomáš hands it over.", "What... no tip?" (now the draft's "What, no tip?"), the action-only favour, and the open question asking for bro lines. Scene 1 now has the full exchange ("We got you, bro." / "Wow." / "Don't spend it all in one place." / "That's five tickets, dude." / "I'll alert my financial adviser.").
+- **The tab at the bros' next game** (old Scene 3), including the round v25 timing "as they head to their next game": the opener as one line, "I offered to buy ONE girl ONE drink." / "And yet you inspired so much joy." / "I'm not paying for all of these." / the girls' "GRANDPA GUY!" across the room / "You've built a legacy.", the [PAY 40 SOVS] / [REFUSE] choice, the PAY roast and the group waving, and the REFUSE "Okay." / "See? You just gotta stand your ground." The approved Scene 3 has Tomáš let them keep playing and confront them at the exit.
+- **The old door scene** (old Scene 4): "Forgot something.", PAY → "Grandpa provides." / "Pilsner dies inside.", REFUSE AGAIN → sigh / "Gentlemen?" / the refrigerator description / "Our guests are experiencing a billing dispute." / the look-around and knuckle-crack, "The bros flee" / "Service charge." from the doorway, and the staging note for bros who never went to another game.
+- **Flags** `cara_tab_presented` and `cara_tab_refused` (no longer needed).
+- ChatGPT's own "Bartender / Bros Dialogue Archive" for that chat confirms this: it marks the tip (§2) and the exit confrontation (§5) FINAL / ACCEPTED, and the early tab (§4, which opened with "Your admirers' drinks.") superseded by the exit version. In the exit version Pilsner says "I bought ONE girl ONE drink", not "offered to buy". The archive's §7 birthday-girl ring callback ("Grandpa Guy!! We won you something!") stays out (struck, round v28). Its §9 Marek "Ticket" Tichý material comes from a different chat and was never approved; the ruled name is Tomáš "Two-Fifty".
 
 ### Removed in round v28 (not in the author's words or the approved draft, and not a ruled number)
 - **The ring payoff from the girls:** "Grandpa Guy!! We won you something!", the girl handing Pilsner a five-ticket ring, Pilsner's "She's into me" / "Pet name" exchange, Tomáš's "Matching." pinky beat, and the open question of who hands it over.
-- **The ring as a quest reward**, the `grandpa_ring_received` flag, the "two rings" examine text, and Tomáš wearing the tip ring on his pinky for the rest of the game.
+- **The ring as a quest reward**, the `grandpa_ring_received` flag, the "two rings" examine text, and Tomáš wearing the tip ring on his pinky for the rest of the game. (Round v29: wearing the ring for the rest of the game is restored, from the approved draft; the "Matching." pinky beat stays removed.)
 - **The ring-name options** Five-Ticket Forever and Gumball Solitaire, and the quest-name options Cara's 21st and Another Round for Cara.
 - **Quest identity padding:** the satirical subtitle, tier, level, difficulty and duration estimates, and the "Satirical Targets" section (Pilsner's Sidekick, Chadwick streaming like 2003).
 - **The "What the bros think / What's actually happening / Why it's funny" prose**, which was Claude's summary, replaced by the author's own words.
@@ -305,7 +416,7 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 ---
 
 ## 📝 Development Notes
-- Art: five group sprites, Tomáš, two large Accounts Receivable sprites (battle + overworld); test-tube props on the bar; Cara's sash readable at depth-curve scale.
+- Art: five group sprites, Tomáš (with and without the Promise-ish Ring on his finger; the ring must read in the Scene 3 close-ups), two large Accounts Receivable sprites (battle + overworld); test-tube props on the bar; Cara's sash readable at depth-curve scale.
 - Audio: the WOOOOO is a recurring sting.
 - Do not register anything in engine data until the open questions are ruled.
 
@@ -316,3 +427,4 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 | 2026-11-11 | Round v25: tab 40 SOVS, service charge 10 SOVS flat, no tab growth, timing/opener/door lines, trigger A, Accounts Receivable, loss and flee rules, separate junk shelf approved; open questions rewritten | Claude for machsheltie |
 | 2026-11-11 | Round v26: "newly single" is game-wide canon; hall bouncers are Accounts Receivable; both claws work | Claude for machsheltie |
 | 2026-11-11 | Round v28: renamed from `caras_twenty_first.md` to `grandpa_provides.md`; names ruled (Grandpa Provides, Tomáš "Two-Fifty", Jakub "Tokens" Dvořák, Woo Woo Whitney, Brynleigh, Ashleigh, Kenleigh, Promise-ish Ring); the girls' ring beat removed; scene rebuilt from the author's words and the approved draft; non-canon content stripped | Claude for machsheltie |
+| 2026-11-11 | Round v29 rebuild: bartender <-> bros interaction rebuilt line for line from ChatGPT's approved "The Tip" (Scene 1) and "The Unsettled Tab" (Scene 3, with the author's opener); the first draft's tab beat at the next game and its door scene superseded and removed; Tomáš wears the Promise-ish Ring for the rest of the game (restored); enforcers named Accounts Receivable; open questions 8-10 added; ChatGPT's proposed ring inspect line ("Makes your finger look 4% wealthier.") added as PROPOSED; ChatGPT's dialogue archive cross-checked | Claude for machsheltie |

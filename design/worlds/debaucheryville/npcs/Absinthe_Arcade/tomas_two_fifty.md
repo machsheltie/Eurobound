@@ -1,6 +1,6 @@
 # NPC Profile: Tomáš "Two-Fifty" (the Prize Counter Bartender)
 
-*"Hey, Grandpa... you forgot to settle your tab. Maybe it's just the dementia."* **[CANON — author]**
+*"Hey, Grandpa." / "You forgot to settle your tab." / "Maybe it's just the dementia."* **[CANON — author]**
 
 > **Source and status.** The author designed this NPC in the ChatGPT chat "Absinthe Arcade Exterior Design".
 > Lines and beats marked **[CANON — author]** are the author's words. Lines marked **[CANON — approved draft]**
@@ -16,7 +16,7 @@
 - **Role**: Bartender / Prize Redemption counter operator / tab collector / quest reactor
 - **Associated Quest**: Grandpa Provides, `debaucheryville_sidequest_grandpa_provides_01` (see `design/quests/debaucheryville/grandpa_provides.md`)
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), the prize section built into the broken end of the cracked-absinthe-bottle bar (`aa_node_bottle_bar`, Prize Redemption counter `prize_redemption_counter`), Debaucheryville
-- **Secondary Appearances**: wherever the bros' next game is (the tab), the Arcade's front door (the tab, again)
+- **Secondary Appearances**: beside the Arcade's exit door (the unsettled tab)
 
 > **Roster — RULED (round v25, 2026-11-11):** this bartender and the Token Attendant, **Jakub "Tokens" Dvořák**
 > (`debaucheryville_npc_arcade_token_attendant_01`, `jakub_tokens_dvorak.md`), are **separate people**. The bartender
@@ -32,7 +32,20 @@
 ### What They're Actually Doing
 He is a bartender. He wants to pour drinks, ring up drinks, and be tipped on drinks. Management bolted a carnival prize booth onto the end of his bar, dressed him to match it, and made him the man who trades sticky orange tickets for wax lips. Every grown man who walks up holding a fistful of tickets instead of a drink order costs him a tip. He serves them anyway, slowly, with his whole face. **[CANON — author: "He looks bored and annoyed when people show up wanting to exchange tokens for prizes instead of order a drink and should be passive aggressive kind of surly over it and bored acting."]**
 
-When the bros finally do give him something, it is the **Promise-ish Ring** (a five-ticket plastic ring, ruled name round v28), as a tip, for handing them their prizes. **[CANON — author]** He gets his revenge by doing the one thing a bartender loves most: running a tab on somebody else's name.
+When the bros finally do give him something, it is the **Promise-ish Ring** (a five-ticket plastic ring, ruled name round v28), as a tip, for handing them their prizes. **[CANON — author]** He puts it on his finger and never takes it off: he wears it for the rest of the game, every time the bros encounter him, and never acknowledges it. The bros don't notice. **[CANON — approved draft]** He gets his revenge by doing the one thing a bartender loves most: running a tab on somebody else's name.
+
+### The Uniform vs. the Face **[DRAFT]** (ChatGPT's "Bartender / Bros Dialogue Archive", §1)
+His uniform says: **"STEP RIGHT UP, FRIENDS! FUN AWAITS!"**
+His face says: **"I fucking hate every one of you."**
+The recurring joke: he is particularly irritated when customers come to his bar to redeem cheap prizes instead of buying drinks.
+
+### Bored → Smug **[DRAFT — presentation note]** (ChatGPT's note in the approved reply; not spoken lines)
+"Until the plastic-ring 'tip,' he's mostly bored and surly because these idiots keep making him do redemption-counter work. Afterward, Pilsner has personally given him a reason to enjoy himself." He is not defending the girls or taking offense on their behalf; fucking with Grandpa is the first entertaining thing that's happened during his shift. The progression (ChatGPT's note):
+- Before the ring: "I hate my job."
+- Gets the ring: "I hate these guys."
+- The Grandpa incident: "Wait. My job fucking rules."
+
+**Everyone else gets Bored Bartender. Pilsner unlocks Smug Bartender.** (These are presentation notes for the performance, not spoken lines. ChatGPT's archive frames it as a portrait swap: everyone gets the Bored Bartender portrait; Pilsner unlocks Smug Bartender. PROPOSED.)
 
 ### What Bros Believe
 - **Lord Pilsner** thinks they have a rapport. The man laughs at nothing Pilsner says, which Pilsner reads as "dry European humor that only respects the real ones."
@@ -103,15 +116,20 @@ Tips. The prize counter pays none. The bros are the first customers all week to 
 **Bros still holding tickets**:
 > "Tickets. Great. My favourite currency. Worth nothing, and sticky."
 
-### Key Interaction Dialogue — The Tip **[CANON — author beat]**
-*The bros redeem the Promise-ish Ring (5 tickets, junk shelf). He hands it over.* **[CANON — author]**
+### Key Interaction Dialogue — The Tip **[CANON — approved draft, ChatGPT "The Tip"; the author's beat]**
+Full scene, line for line: `design/quests/debaucheryville/grandpa_provides.md`, Scene 1. Trigger (PROPOSED): the first prize redemption with the Promise-ish Ring (5 tickets, junk shelf) among the prizes.
 
-**Tomáš** (flat) **[CANON — author]**:
-> "What... no tip?"
+*He counts out the bros' prizes with the enthusiasm of a man processing a warranty claim and slides the cheap plastic garbage across the counter.*
 
-*The bros confer. They hand him the ring they just bought. He sighs and rolls his eyes* **[CANON — author]** *while the bros act like they just did him a favour.* **[CANON — author]**
-
-*(No bro lines: the favour is played as action only. Round v28 stripped the proposed lines.)*
+**Tomáš**: "What, no tip?"
+*Pilsner picks up the translucent plastic ring and puts it on the counter.* **Lord Pilsner**: "We got you, bro."
+*He stares at it. Then at Pilsner. Then back at the ring. A long sigh. He takes it.*
+**Tomáš**: "Wow."
+**Bradley**: "Don't spend it all in one place."
+**Chadwick**: "That's five tickets, dude."
+*Pilsner gives him a solemn nod. He slowly puts the ring on his finger.*
+**Tomáš**: "I'll alert my financial adviser."
+*The bros walk away extremely pleased with themselves. He looks at the ring. He does not remove it.*
 
 ### Prize Redemption barks (PROPOSED)
 | Trigger | Line |
@@ -123,37 +141,49 @@ Tips. The prize counter pays none. The bros are the first customers all week to 
 | Bros order a drink instead | *(two percent brighter)* "Finally. A customer." |
 | Bros order a drink, then ask for prizes too | "And there it went." |
 
+### Bradley orders a drink — optional barks (PROPOSED; ChatGPT's archive §8, neither version finalized)
+**Version A**
+> **Tomáš**: "What'll you have?"
+> **Bradley**: "You got Apple Pucker?"
+> **Tomáš**: "…We have what?"
+
+**Version B** (the archive calls this the more developed one)
+> **Bradley**: "You got Zima?"
+> **Tomáš**: "No."
+> **Bradley**: "Apple Pucker?"
+> **Tomáš**: "Unfortunately."
+
+### Prize-counter signage (PROPOSED; ChatGPT's archive §1 and §8, environmental text, not spoken)
+- TICKETS REDEEMED AT BAR
+- PRIZES ARE AT THE BAR. YES, REALLY.
+- NO, WE CANNOT "JUST GIVE YOU" 3 MORE TICKETS.
+- YES, IT'S BROKEN.
+- NO, HITTING IT HARDER WILL NOT HELP.
+- OUT OF ORDER (AGAIN)
+- DO NOT PUT DRINKS HERE. THIS MEANS YOU.
+
 ### Orders to Jakub **[CANON — author, round v28]**
 The bartender orders the Token Attendant around. When he sends Jakub "Tokens" Dvořák to service the bathroom:
 > **Tomáš**: "Tokens. Toilet."
 
-### The Tab (at the next game) **[CANON — author + approved draft]**
-*APPROVED (round v25): he appears beside whatever the bros head to next, as they head to it, holding the bill: **40 SOVS** for five test tubes. The tab does not grow. He clearly enjoys this, after being tipped a cheap plastic ring.* **[CANON — author]**
+### The Unsettled Tab (at the exit) **[CANON — author opener + approved draft, ChatGPT "The Unsettled Tab"]**
+Full scene, line for line: `grandpa_provides.md`, Scene 3. The tab is **40 SOVS** for five test tubes and does not grow (APPROVED round v25). If the bros keep playing without settling, nothing happens; he lets them enjoy themselves. When they approach the exit he is already waiting beside the door, ring on, holding up the tab. He is considerably less bored than he has been all evening. He's enjoying this now.
 
-**Tomáš** **[CANON — author]**:
-> "Hey, Grandpa... you forgot to settle your tab. Maybe it's just the dementia."
+**Tomáš** **[CANON — author]**: "Hey, Grandpa." / "You forgot to settle your tab." / "Maybe it's just the dementia."
+**Chadwick**: "Oh, shit."
+**Lord Pilsner**: "I bought ONE girl ONE drink."
+**Tomáš**: "Sure." / "And then your granddaughter announced otherwise."
+**Lord Pilsner**: "She's not my granddaughter."
+**Tomáš**: "That's good." / "I was concerned about the flirting."
+*(Bradley loses it. "Can you shut the fuck up?" / "I'm not saying anything." / "You're laughing." / "That's different.")*
 
-**Lord Pilsner** **[CANON — approved draft]**: "I offered to buy ONE girl ONE drink."
+- **PAY THE TAB** (40 SOVS) → **Tomáš**: "Pleasure doing business with you, Grandpa." / "Oh—and thanks again for the tip." *(admires the ring)* "Really turned things around for me." *(Chadwick: "Dude, I think he likes it." Pilsner: "Fuck both of you.")*
+- **REFUSE AGAIN** → *(Pilsner: "I'm not paying for drinks I didn't order.")* **Tomáš**: "Okay." / "Yeah." *(steps aside)* "You can absolutely leave without paying." → **Accounts Receivable** step into the doorway → "You just can't leave through there." → *(Bradley: "Great pickup, dude.")* → "So." / "Cash, card, or traumatic brain injury?"
+  - **PAY** (40 SOVS) → "Smart." *(raises his plastic-ring hand)* "Runs in the family."
+  - **REFUSE** → *(steps safely behind the bar)* "Gentlemen, our guests are experiencing a billing dispute." → battle. After the bros win and scramble out: **"HEY!"** Then, to the destruction and the unpaid tab, adding a line with a pen: **"Service charge."** The service charge is a flat **10 SOVS**; the open tab is then 50 SOVS, greeted with "Tab's open" on every visit, no second fight (APPROVED round v25).
+- **Lose the fight** (RULED round v25): the tab and service charge come out of the wallet; if it's short, the rest is waived, with Tomáš's "Grandpa provides." delivered over them.
 
-**Tomáš** **[CANON — approved draft]**: "And yet you inspired so much joy."
-
-**Lord Pilsner** **[CANON — approved draft]**: "I'm not paying for all of these."
-
-*Across the room, Cara's group raises their test tubes.* **GIRLS** **[CANON — approved draft]**: "GRANDPA GUY!"
-
-**Tomáš** **[CANON — approved draft]**: "You've built a legacy."
-
-### If Player Declines **[CANON — approved draft]**
-> "Okay."
-
-*He walks away.* **Lord Pilsner**: "See? You just gotta stand your ground."
-
-### At the Door **[CANON — approved draft; door lines APPROVED round v25]**
-*Still in the striped blazer, still bored, standing beside the exit.*
-> "Forgot something."
-
-- **Pay** → **Tomáš**: "Grandpa provides." *(Pilsner dies inside.)* (The bartender says it; approved with the door lines, round v25.)
-- **Refuse** → *sigh.* "Gentlemen?" → **Accounts Receivable** step in → "Our guests are experiencing a billing dispute." → battle. After the bros win and flee, from the doorway: **"Service charge."** (all **[CANON — approved draft]**). The service charge is a flat **10 SOVS**; the open tab is then 50 SOVS, greeted with "Tab's open" on every visit, no second fight (APPROVED round v25).
+*(Round v29: the first-draft tab beat at the bros' next game — "And yet you inspired so much joy.", "You've built a legacy.", "Okay." / "See? You just gotta stand your ground." — and the first-draft door scene — "Forgot something.", "Gentlemen?" — are superseded by this scene and removed.)*
 
 ### Callback Dialogue (Return Visits)
 | State | Line |
@@ -172,7 +202,7 @@ The bartender orders the Token Attendant around. When he sends Jakub "Tokens" Dv
 
 ### Positioning Notes
 - Fixed behind the prize section of the bar; the counter is at bro waist height (ruling 2026-11-09).
-- During the tab event he leaves the bar to stand beside the next cabinet the bros approach, or beside the front door.
+- During the tab event he leaves the bar to wait beside the exit door, then steps back behind the bar if it comes to a fight.
 
 ---
 
@@ -180,7 +210,7 @@ The bartender orders the Token Attendant around. When he sends Jakub "Tokens" Dv
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Prize Redemption (13-prize catalogue) | 15–2500 tickets | 0–3 SOVS | See `design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md` |
-| Junk shelf (separate from the catalogue; **APPROVED round v25**) | 5–15 tickets | 0 SOVS | No effects. The **Promise-ish Ring** (5 tickets; name ruled round v28), parachute men, temporary tattoos, the whistle he regrets (15 tickets). Catalogue duplicates (sticky hand, vampire teeth, maze puzzle) are off the shelf. Other item names (Writers' Room) and the parachute-men/tattoo prices: PROPOSED — NEEDS AUTHOR RULING |
+| Junk shelf (separate from the catalogue; **APPROVED round v25**) | 5–15 tickets | 0 SOVS | No effects. The **Promise-ish Ring** (5 tickets; name ruled round v28), **Terminal Velocity Terry** (parachute men, 10 tickets), **Forty-Eight-Hour Tramp Stamp** (temporary tattoos, 10 tickets), **The Noise Violation** (the whistle he regrets, 15 tickets); names and prices approved 2026-11-11 (Writers' Room desk). Catalogue duplicates (sticky hand, vampire teeth, maze puzzle) are off the shelf. Inspect lines: `design/quests/debaucheryville/grandpa_provides.md`; the ring's is PROPOSED (ChatGPT's "Makes your finger look 4% wealthier." line, not yet approved) |
 | Neon test-tube shots | **PROPOSED** (see quest doc) | — | Bar drink; how it plays for the bros, if at all, is an intoxication mechanic and needs the 10-point review first |
 | Bar drinks generally | **NEEDS AUTHOR RULING** | — | No Arcade bar price list exists in the design files yet |
 
@@ -193,13 +223,14 @@ The bartender orders the Token Attendant around. When he sends Jakub "Tokens" Dv
 | NPC | Relationship |
 |-----|--------------|
 | Cara and her group | His best customers of the night. They order drinks, not prizes |
-| Accounts Receivable (`design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md`) | He says one word ("Gentlemen?") and they appear |
+| Accounts Receivable (`design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md`) | They step into the doorway when he gestures; "Gentlemen, our guests are experiencing a billing dispute." starts the fight |
 | Jakub "Tokens" Dvořák, the Token Attendant (`jakub_tokens_dvorak.md`) | A separate employee (ruled round v25), same flair dress code. He fixes the machines and cleans the toilets; the bartender pours and judges. Tomáš orders him around: "Tokens. Toilet." **[CANON — author, round v28]** |
 
 ---
 
 ## 🔄 Recurring Appearances
 - Behind the bar on every Arcade visit; dialogue state follows the tab outcome (paid / unpaid).
+- After the tip, he wears the Promise-ish Ring in every appearance for the rest of the game. He never acknowledges it; the bros don't notice. **[CANON — approved draft]**
 - No other cities (PROPOSED).
 
 ---
@@ -210,9 +241,11 @@ The bartender orders the Token Attendant around. When he sends Jakub "Tokens" Dv
 | idle_wipe | Wipes the same spot on the bar |
 | idle_sigh | Long exhale; hat star bobs |
 | redeem_slow | Hands a prize over at quarter speed |
-| eye_roll | The tip reaction **[CANON beat]** |
-| present_tab | Holds the bill out at arm's length |
-| point_gentlemen | Two-finger gesture that summons the enforcers |
+| long_sigh | The tip reaction (stare at the ring, at Pilsner, at the ring; sigh) **[CANON — approved draft]** |
+| ring_on | Slowly puts the plastic ring on his finger **[CANON — approved draft]** |
+| present_tab | Holds the tab up / toward Pilsner, ring visible **[CANON — approved draft]** |
+| admire_ring | Raises his hand and admires the ring ("Really turned things around for me." / "Runs in the family.") **[CANON — approved draft]** |
+| gesture_enforcers | Gestures toward Accounts Receivable in the doorway |
 | drink_perk | The two-percent brighten |
 
 ---
@@ -226,8 +259,8 @@ The bartender orders the Token Attendant around. When he sends Jakub "Tokens" Dv
 
 ## 🗣️ Voice Direction
 - **Accent**: PROPOSED — local, flat, perfect English. He speaks it better than the bros.
-- **Tone**: monotone for prizes; one notch of life for drinks; quiet, unmistakable satisfaction for the tab.
-- **Delivery**: never raises his voice. "Gentlemen?" is a question asked the way a dentist says "little pinch".
+- **Tone**: monotone for prizes; one notch of life for drinks; quiet, unmistakable satisfaction for the tab. Bored Bartender for everyone else; Smug Bartender for Pilsner (see Bored → Smug).
+- **Delivery**: never raises his voice, except the one "HEY!" at the bros' backs. "Cash, card, or traumatic brain injury?" is asked the way a dentist says "little pinch".
 
 ---
 
@@ -245,9 +278,15 @@ The bartender orders the Token Attendant around. When he sends Jakub "Tokens" Dv
 | Comedy value preserved | ✅ |
 | Bros never achieve self-awareness | ✅ |
 | World consistency (city names) | ✅ no real places; real brands (TGI Fridays, *Office Space*) keep real names |
-| Name unique | ◐ ruled round v28; the full name is unique, but the first name Tomáš is shared with a Velvet Curtain Club bouncer ("Tomáš and Marek"). Flagged to the author |
+| Name unique (see note below) | ◐ ruled round v28; the full name is unique, but the first name Tomáš is shared with a Velvet Curtain Club bouncer ("Tomáš and Marek"). Flagged to the author |
 
 ---
+
+> **Unapproved material, not used:** ChatGPT's archive (§9) also holds bartender material from a separate Eurobound
+> chat that names him **Marek "Ticket" Tichý** ("Bartender / Unwilling Prize Redemption Clerk"), with a nickname
+> exchange, a redemption exchange (pencil / sunglasses), a "BAR SERVICE → MAREK" sign and a repeat-visit pouring
+> beat. The author never approved it, and the ruled name is Tomáš "Two-Fifty" (round v28), so none of it is in this
+> profile.
 
 ## 🔧 Development Status
 - **Status**: Drafted (canon beats from the author's chat; name ruled round v28; all unmarked content PROPOSED)
@@ -261,3 +300,4 @@ The bartender orders the Token Attendant around. When he sends Jakub "Tokens" Dv
 | 2026-11-10 | Initial profile from the author's ChatGPT chat "Absinthe Arcade Exterior Design" | Claude draft for machsheltie |
 | 2026-11-11 | Round v25: separate from the Token Attendant; tab 40 SOVS, timing, door lines, 10 SOVS service charge, Accounts Receivable, junk shelf approved. Name still open | Claude for machsheltie |
 | 2026-11-11 | Round v28: name ruled Tomáš "Two-Fifty" (losing options dropped); file renamed from `prize_counter_bartender.md`; the ring is the Promise-ish Ring, tip beat only (no pinky ring); "Tokens. Toilet." added; proposed tip lines and return-visit lines stripped | Claude for machsheltie |
+| 2026-11-11 | Round v29: the tip and the tab rebuilt from ChatGPT's approved "The Tip" and "The Unsettled Tab" (with the author's opener); first-draft tab-at-the-next-game and door lines superseded and removed; wearing the Promise-ish Ring for the rest of the game restored (wrongly removed in round v28); Bored → Smug progression added as a presentation note; animations updated. From ChatGPT's dialogue archive: uniform-vs-face characterization ([DRAFT]), prize-counter signage and Bradley's drink-order barks (PROPOSED), the ring's proposed inspect line; the unapproved Marek "Ticket" Tichý material noted, not used | Claude for machsheltie |
