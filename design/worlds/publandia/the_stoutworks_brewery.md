@@ -262,7 +262,7 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 | Floor 4 Clear | Foam-Proof Boots (+Speed in foam) |
 | Floor 5 Clear | Barrel-Aged Whiskey (premium consumable) |
 | Vat Master (Defeat) | "Brewmaster's Mallet" weapon, Stoutworks Medal |
-| Vat Master (Negotiate) | "Living Yeast Sample" companion, Allied Brewery status |
+| Vat Master (Negotiate) | "Living Yeast Sample" (item; effect pending author ruling, Eurobound-6x2), Allied Brewery status |
 | Full Clear | "Brewmaster's Pass" (permanent Stoutworks access) |
 
 ### Bravado Interactions

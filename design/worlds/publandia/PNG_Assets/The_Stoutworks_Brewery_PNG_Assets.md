@@ -348,7 +348,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 | Foam-Proof Boots | (384, 224) | 32x32 | Floor 4 clear reward |
 | Barrel-Aged Whiskey | (416, 224) | 32x32 | Floor 5 premium consumable |
 | Brewmaster's Mallet | (448, 224) | 32x32 | Defeat-route weapon |
-| Living Yeast Sample | (480, 224) | 32x32 | Negotiate-route companion |
+| Living Yeast Sample | (480, 224) | 32x32 | Negotiate-route reward item |
 | Stoutworks Medal | (448, 160) | 32x32 | Defeat-route trophy |
 | Allied Brewery Crest | (480, 160) | 32x32 | Negotiate-route status icon |
 

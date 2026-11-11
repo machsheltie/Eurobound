@@ -245,7 +245,7 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 | Copper Mug | 25 SOVS | Overpriced, and the mug is fine | +Alcohol resistance, beer heals extra |
 | The negotiation briefing | Free | Gates the entire diplomacy route | Sets `turlough_briefing_heard`; required to unlock Vat Master negotiate dialogue |
 | Directions to the friendly colony | Free | The single most valuable thing in the dungeon | Reveals the Floor 4 hidden alcove on the map |
-| "Living Yeast Sample" companion | Negotiate ending reward | Cannot be bought at any price | Permanent companion, Allied Brewery status |
+| "Living Yeast Sample" | Negotiate ending reward | Cannot be bought at any price | Allied Brewery status; item effect pending author ruling (Eurobound-6x2) |
 
 ### Hidden Details / Easter Eggs
 - **The notebook**: examinable if the party asks twice. The final three weeks of entries are dated and get progressively shorter. The last one reads only: *"Asked again. Still no answer ready."*
@@ -355,7 +355,7 @@ He is also a soft gate on the Brewery Tour sidequest's best state: the "Peaceful
 | Vat Master's Reserve (bottle) | Purchasable from the tasting room once the stamp is earned | No — consumable, restockable at 12 SOVS | +40 HP, +15 Bravado, chance of Fermented Fury or The Vat's Whisper |
 | Brewmaster's Recipe Book | Post-dungeon gift shop, 20 SOVS, limited stock | Yes | +10% effectiveness of all beer items |
 | Yeast Culture (Contained) | Post-dungeon gift shop, 25 SOVS | No — consumable | Summons a temporary battle ally |
-| "Living Yeast Sample" companion | Negotiate ending only, handed over personally | Yes | Permanent companion; Allied Brewery status |
+| "Living Yeast Sample" | Negotiate ending only, handed over personally | Yes | Allied Brewery status; item effect pending author ruling (Eurobound-6x2) |
 | Brewmaster's Pass | Full clear, either ending | Yes | Permanent Stoutworks access including the Copper Cathedral selfie spot |
 
 ---
