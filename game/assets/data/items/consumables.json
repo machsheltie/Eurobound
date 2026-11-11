@@ -19,6 +19,12 @@
       "heal_bravado": 0,
       "description": "Simmering since the Velvet Revolution. Restores 40 HP."
     },
+    "strawberry_shortcake_speedcakes": {
+      "display_name": "STRAWBERRY SHORTCAKE SPEEDCAKES™",
+      "heal_hp": 0,
+      "heal_bravado": 0,
+      "description": "Tastes like strawberry frosting licked off a car battery."
+    },
     "already_spent_credit": {
       "display_name": "Already-Spent Credit",
       "heal_hp": 0,
