@@ -586,3 +586,20 @@ Open question: should it, and to what depth?
   - Rigged claw: the PAYOUT light blinks every 7th play; the old skill method is dropped.
   - Art approved: the public restroom v1 night/day and the Kebab Kombat backdrop v2.
   - Deferred by the author to the morning: the hall names and the Cara's 21st leftovers.
+- **(Round v28, 2026-11-11)**
+  - **Decisions-page bug (Claude's):** on any question with an option keyed "notes", the typed note was lost and saved as the word "notes". This affected rounds v25-v28. The bug is fixed and the author has been asked to re-enter lost notes. Earlier "notes"-only answers are lost text, not empty answers.
+  - The restroom door is the arched doorway in the hall's left wall beside TOKENS HERE.
+  - Cabinet villains get +50% HP.
+  - Embarrassed lasts 2 turns and Grease Fingers 4 (Sauce Spray, EXTRA CRISPY!, Initials Entered, Hug, Close Shave).
+  - Claw controls: up to 10 s to steer left/right, then drop; the claw grabs whatever is under it.
+  - PAYOUT light: the plays counter is saved. After 6 plays the light blinks before the bros pay, and that grab holds only if it is over the relic. The cycle restarts after any blinking play.
+  - The Beanie claw grip holds 1 in 3 times.
+  - The Beanie prize names and the junk-shelf item names go to the Writers' Room.
+  - Write the Beer Pong Saint Relic doc from canon (NFT template) and register it.
+  - **Villain battle sprites: go**, all nine through the sprite pipeline.
+  - **Names:**
+    - The bartender is **Tomáš "Two-Fifty"**.
+    - The Token Attendant is **Jakub "Tokens" Dvořák**. The bartender orders him around: "Tokens. Toilet."
+    - The Blonde Girl is **Woo Woo Whitney**. The other girls are **Brynleigh, Ashleigh, Kenleigh**.
+    - The quest is **Grandpa Provides**, and the ring is the **Promise-ish Ring**.
+  - **Cara's 21st (author):** "The ring happens at the bartenders table. There is no ring having anything to do with Cara." The girls never give Pilsner a ring; the ring is only the prize-counter tip beat. The scene must follow the author's ChatGPT story. Fix the doc and show the author the full interaction.
