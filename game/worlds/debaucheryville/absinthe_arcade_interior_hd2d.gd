@@ -113,6 +113,8 @@ const INTERACT_POINTS := {
 ## the bros walking out between the door leaves set it off. With the tip given he wears the
 ## Promise-ish Ring (a ringed sprite from ad; until it exists, his plain frames).
 const TOMAS_AT_DOOR := Vector2(-2.2, 4.4)
+## The in-engine ring (ad, 2026-11-11: keep the overlay): his towel hand in the two ways he faces.
+const TOMAS_RING_PX := {"south": Vector2(50, 60), "east": Vector2(71, 61)}
 const TOMAS_RING_FRAMES := "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty_ring.aseprite"
 const EXIT_INTERCEPT := {"x": 0.8, "z0": 3.9, "z1": 4.6}
 const HALL_NPCS := {
@@ -487,9 +489,13 @@ func _use_counter() -> void:
 ## Scene hooks for GrandpaProvides.
 func ring_on() -> void:
 	var tomas: HallNpc = npcs.get("tomas_two_fifty")
-	if tomas != null and ResourceLoader.exists(TOMAS_RING_FRAMES):
+	if tomas == null:
+		return
+	if ResourceLoader.exists(TOMAS_RING_FRAMES):
 		tomas.sprite.sprite_frames = load(TOMAS_RING_FRAMES)
 		tomas.sprite.facing = tomas.sprite.facing
+	else:
+		tomas.add_ring(TOMAS_RING_PX)
 
 
 func tomas_behind_bar() -> void:

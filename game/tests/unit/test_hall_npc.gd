@@ -66,3 +66,18 @@ func test_hall_npc_tomas_stands_behind_the_prize_counter() -> void:
 	# Assert: placed, with no ambient lines (none approved).
 	assert_not_null(npc)
 	assert_eq(npc.jobs, [])
+
+
+func test_hall_npc_ring_shows_for_facings_it_knows_and_hides_otherwise() -> void:
+	# Arrange
+	var npc := _jakub()
+	npc.add_ring({"south": Vector2(50, 60)})
+	# Act
+	npc.sprite.facing = "north"
+	npc._place_ring()
+	var north := npc.ring.visible
+	npc.sprite.facing = "south"
+	npc._place_ring()
+	# Assert
+	assert_false(north)
+	assert_true(npc.ring.visible)

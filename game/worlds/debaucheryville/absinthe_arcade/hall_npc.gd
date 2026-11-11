@@ -22,6 +22,9 @@ var greeting := ""
 var range_m := MUTTER_RANGE
 var late := false
 var sprite: PartySprite3D
+## A small worn item drawn over the sprite (Tomáš's Promise-ish Ring), placed per facing.
+var ring: Sprite3D
+var _ring_px: Dictionary = {}
 var bark: Label3D
 
 var _rng := RandomNumberGenerator.new()
@@ -67,7 +70,39 @@ func setup(frames: String, content_px: float, feet_px: float, facing: String, mu
 	add_child(bark)
 
 
+## Draws a 3 px translucent pink ring on the hand. `px_by_facing`: facing -> Vector2 pixel in the
+## 128 px frame; facings without one hide it.
+func add_ring(px_by_facing: Dictionary) -> void:
+	_ring_px = px_by_facing
+	if ring == null:
+		var img := Image.create(3, 3, false, Image.FORMAT_RGBA8)
+		img.fill(Color(1.0, 0.55, 0.8, 0.75))
+		img.set_pixel(1, 1, Color(1.0, 0.85, 0.95, 0.9))
+		ring = Sprite3D.new()
+		ring.name = "ring"
+		ring.texture = ImageTexture.create_from_image(img)
+		ring.billboard = BaseMaterial3D.BILLBOARD_FIXED_Y
+		ring.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
+		ring.shaded = false
+		ring.render_priority = 1
+		add_child(ring)
+	_place_ring()
+
+
+func _place_ring() -> void:
+	if ring == null:
+		return
+	var px = _ring_px.get(sprite.facing, null)
+	ring.visible = px != null
+	if px == null:
+		return
+	ring.pixel_size = sprite.pixel_size
+	ring.position = Vector3((float(px.x) - 64.0) * sprite.pixel_size,
+		(sprite.feet_row_px - float(px.y)) * sprite.pixel_size, 0.03)
+
+
 func _process(delta: float) -> void:
+	_place_ring()
 	var leader := _leader()
 	tick(delta, leader.global_position if leader != null else Vector3.INF)
 
