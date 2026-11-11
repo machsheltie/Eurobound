@@ -149,11 +149,11 @@
         {
           "graffiti_id": "pixelated_boobs",
           "location": "main_wall_visible_under_blacklight",
-          "content": "pixelated_boobs_blocky_pixels_under_a_big_CENSORED_bar",
+          "content": "pixelated_boobs_crude_pixel_art_graffiti_uncensored",
           "visibility": "blacklight_only",
           "retro_art_style": "authentic_early_2000s_pixel_art_aesthetic",
-          "art": "separate decal PNG by eurobound-ad (not painted into closet v2)",
-          "authority": "author round v35 closet_boobs = censor_bar: the doc's 'Pixelated boobs' stays, nothing visible under the bar"
+          "art": "separate uncensored decal PNG by eurobound-ad (with the closet re-paint)",
+          "authority": "author round v36: no censor bar ('It's an MA game... who cares?'), reversing v35"
         },
         {
           "graffiti_id": "fake_cheat_codes_collection",
