@@ -5,7 +5,7 @@ extends GutTest
 const HALL := preload("res://worlds/debaucheryville/absinthe_arcade_interior_hd2d.tscn")
 
 class FakeState:
-	var gold := 0
+	var sovs := 0
 	var flags := {}
 
 var _hall: Node3D
@@ -13,12 +13,12 @@ var _saved := {}
 
 
 func before_each() -> void:
-	_saved = {"gold": GameState.gold, "inventory": GameState.inventory.duplicate(true),
+	_saved = {"sovs": GameState.sovs, "inventory": GameState.inventory.duplicate(true),
 		"party": GameState.party.duplicate(true), "flags": GameState.flags.duplicate(true)}
 
 
 func after_each() -> void:
-	GameState.gold = _saved["gold"]
+	GameState.sovs = _saved["sovs"]
 	GameState.inventory = _saved["inventory"]
 	GameState.party = _saved["party"]
 	GameState.flags = _saved["flags"]
@@ -70,13 +70,13 @@ func test_grandpa_provides_tab_is_forty_then_fifty_after_the_fight() -> void:
 func test_grandpa_provides_losing_empties_a_short_wallet_and_waives_the_rest() -> void:
 	# Arrange
 	var s := FakeState.new()
-	s.gold = 30
+	s.sovs = 30
 	s.flags[GrandpaProvides.ROUND_BOUGHT] = true
 	# Act
 	var waived := GrandpaProvides.lost(s)
 	# Assert
 	assert_true(waived)
-	assert_eq(s.gold, 0)
+	assert_eq(s.sovs, 0)
 	assert_false(GrandpaProvides.tab_due(s))
 
 
@@ -101,7 +101,7 @@ func test_grandpa_provides_the_tip_plays_on_the_first_redemption() -> void:
 func test_grandpa_provides_paying_at_the_exit_settles_the_tab() -> void:
 	# Arrange
 	await _open_hall()
-	GameState.gold = 100
+	GameState.sovs = 100
 	GameState.flags[GrandpaProvides.ROUND_BOUGHT] = true
 	GameState.flags.erase(GrandpaProvides.TAB_PAID)
 	GameState.flags.erase(GrandpaProvides.AR_DEFEATED)
@@ -112,14 +112,14 @@ func test_grandpa_provides_paying_at_the_exit_settles_the_tab() -> void:
 	# Assert
 	assert_eq(said[0], "Hey, Grandpa.")
 	assert_has(said, "Pleasure doing business with you, Grandpa.")
-	assert_eq(GameState.gold, 60)
+	assert_eq(GameState.sovs, 60)
 	assert_true(bool(GameState.flags[GrandpaProvides.TAB_PAID]))
 
 
 func test_grandpa_provides_refusing_twice_starts_the_billing_dispute() -> void:
 	# Arrange
 	await _open_hall()
-	GameState.gold = 100
+	GameState.sovs = 100
 	GameState.flags[GrandpaProvides.ROUND_BOUGHT] = true
 	GameState.flags.erase(GrandpaProvides.TAB_PAID)
 	GameState.flags.erase(GrandpaProvides.AR_DEFEATED)
@@ -137,19 +137,19 @@ func test_grandpa_provides_refusing_twice_starts_the_billing_dispute() -> void:
 	assert_eq(_hall.receivable.size(), 2, "they stepped into the doorway")
 	assert_eq(said, ["HEY!", "Service charge."])
 	assert_eq(GrandpaProvides.tab_amount(GameState), 50)
-	assert_eq(GameState.gold, 100)
+	assert_eq(GameState.sovs, 100)
 
 
 func test_grandpa_provides_shaken_sovs_go_on_the_tab_and_cap_the_loss() -> void:
 	# Arrange: Accounts Receivable shook 15 SOVS loose during the fight, then the bros lost.
 	var s := FakeState.new()
-	s.gold = 100
+	s.sovs = 100
 	s.flags[GrandpaProvides.ROUND_BOUGHT] = true
 	GrandpaProvides.add_credit(s, 15)
 	# Act
 	GrandpaProvides.lost(s)
 	# Assert: 35 more, so 50 in all.
-	assert_eq(s.gold, 65)
+	assert_eq(s.sovs, 65)
 
 
 func test_grandpa_provides_shaken_sovs_shrink_the_open_tab_after_a_win() -> void:
@@ -166,7 +166,7 @@ func test_grandpa_provides_shaken_sovs_shrink_the_open_tab_after_a_win() -> void
 func test_grandpa_provides_shake_down_takes_five_toward_the_balance() -> void:
 	# Arrange
 	var wallet := FakeState.new()
-	wallet.gold = 100
+	wallet.sovs = 100
 	var core := BattleCore.new()
 	core.wallet = wallet
 	core.balance_due = 40
@@ -178,7 +178,7 @@ func test_grandpa_provides_shake_down_takes_five_toward_the_balance() -> void:
 	# Act
 	core._shake_down(e, t, 5)
 	# Assert
-	assert_eq([wallet.gold, core.balance_due, core.sovs_collected], [95, 35, 5])
+	assert_eq([wallet.sovs, core.balance_due, core.sovs_collected], [95, 35, 5])
 	assert_eq(core.events.map(func(ev): return ev["text"]), [
 		"ACCOUNTS holds Lord Pilsner upside down and shakes. 5 SOVS, a Razr and a burned Linkin Park CD hit the carpet. ACCOUNTS keeps the SOVS. He hands back the CD after reading the tracklist. Balance due: 35 SOVS.",
 		"Lord Pilsner: \"Bro. Dinner first.\""])

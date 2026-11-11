@@ -38,13 +38,13 @@ func test_flags() -> void:
 func test_grant_rewards() -> void:
 	state.grant_rewards(12, 8, "lukewarm_kebab")
 	assert_eq(int(state.party[0]["xp"]), 12)
-	assert_eq(state.gold, 28)
+	assert_eq(state.sovs, 28)
 	assert_eq(int(state.inventory.get("lukewarm_kebab", 0)), 1)
 
 func test_round_trip() -> void:
 	state.add_item("absinthe_shot", 2)
 	state.set_flag("test_flag")
-	state.gold = 99
+	state.sovs = 99
 	state.player_position = Vector2(120, 88)
 	state.current_scene_path = "res://worlds/debaucheryville/clocktower_plaza.tscn"
 	var d: Dictionary = state.to_dict()

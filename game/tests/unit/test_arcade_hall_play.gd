@@ -25,9 +25,9 @@ var _saved := {}
 
 
 func before_each() -> void:
-	_saved = {"gold": GameState.gold, "inventory": GameState.inventory.duplicate(true), "party": GameState.party.duplicate(true),
+	_saved = {"sovs": GameState.sovs, "inventory": GameState.inventory.duplicate(true), "party": GameState.party.duplicate(true),
 		"flags": GameState.flags.duplicate(true)}
-	GameState.gold = 0
+	GameState.sovs = 0
 	GameState.inventory = {}
 	_hall = SCENE.instantiate()
 	add_child_autofree(_hall)
@@ -35,7 +35,7 @@ func before_each() -> void:
 
 
 func after_each() -> void:
-	GameState.gold = _saved["gold"]
+	GameState.sovs = _saved["sovs"]
 	GameState.inventory = _saved["inventory"]
 	GameState.party = _saved["party"]
 	GameState.flags = _saved["flags"]
@@ -104,7 +104,7 @@ func test_arcade_hall_spots_are_on_open_floor() -> void:
 
 func test_arcade_hall_token_machine_sells_tokens() -> void:
 	# Arrange
-	GameState.gold = 10
+	GameState.sovs = 10
 	_stand_at("token_machine")
 
 	# Act: open the machine, pick 3, confirm
@@ -116,13 +116,13 @@ func test_arcade_hall_token_machine_sells_tokens() -> void:
 
 	# Assert
 	assert_eq(ArcadeRules.tokens(GameState), 3)
-	assert_eq(GameState.gold, 7)
+	assert_eq(GameState.sovs, 7)
 	assert_false(_player().input_locked, "control back after the purchase")
 
 
 func test_arcade_hall_token_picker_stays_within_the_wallet() -> void:
 	# Arrange
-	GameState.gold = 2
+	GameState.sovs = 2
 	_stand_at("token_machine")
 	_player().try_interact()
 	var overlay: ArcadeOverlay = _hall.overlay
@@ -138,7 +138,7 @@ func test_arcade_hall_token_picker_stays_within_the_wallet() -> void:
 
 func test_arcade_hall_cancelling_the_machine_buys_nothing() -> void:
 	# Arrange
-	GameState.gold = 10
+	GameState.sovs = 10
 	_stand_at("token_machine")
 	_player().try_interact()
 
@@ -146,7 +146,7 @@ func test_arcade_hall_cancelling_the_machine_buys_nothing() -> void:
 	_hall.overlay.cancel()
 
 	# Assert
-	assert_eq(GameState.gold, 10)
+	assert_eq(GameState.sovs, 10)
 	assert_eq(ArcadeRules.tokens(GameState), 0)
 	assert_false(_player().input_locked)
 
@@ -169,7 +169,7 @@ func test_arcade_hall_broke_bros_get_insufficient_credits() -> void:
 
 func test_arcade_hall_token_machine_with_an_empty_wallet_flashes_too() -> void:
 	# Arrange
-	GameState.gold = 0
+	GameState.sovs = 0
 	_stand_at("token_machine")
 
 	# Act

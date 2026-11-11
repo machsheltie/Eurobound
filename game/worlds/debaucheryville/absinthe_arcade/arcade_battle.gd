@@ -9,7 +9,7 @@ extends RefCounted
 ##    slot rolls 5% to be MYSTERY BROWN (approved 2026-11-09).
 ##  - Win: tickets (ef4_multi_tickets) and each villain's drop roll. Loss: everyone at 1 HP
 ##    in front of the cabinet (ruling ef_arcade_loss). Run: tokens stay spent, HP kept (ef3_run).
-## `state` is GameState (party, inventory, gold, flags, add_item).
+## `state` is GameState (party, inventory, sovs, flags, add_item).
 
 const BATTLE_DATA := "res://assets/data/enemies/debaucheryville_arcade_battle.json"
 const ENEMY_DATA := "res://assets/data/enemies/debaucheryville_enemies.json"
@@ -194,7 +194,7 @@ static func _settle_rewards(machine_id: String, core: BattleCore, state, result:
 			state.add_item(id)
 		state.flags[won_flag(machine_id)] = true
 		result["refund"] = core.soggy_pile()
-		state.gold += int(result["refund"])
+		state.sovs += int(result["refund"])
 		for e in core.enemies:
 			if e.id == BattleCore.JARMILA:
 				state.flags[defeats_flag(e.id)] = int(state.flags.get(defeats_flag(e.id), 0)) + 1

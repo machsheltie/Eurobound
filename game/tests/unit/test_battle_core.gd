@@ -3,7 +3,7 @@ extends GutTest
 
 
 class FakeWallet:
-	var gold := 0
+	var sovs := 0
 	var inventory := {}
 	var flags := {}
 	var party: Array = []
@@ -169,7 +169,7 @@ func test_battle_core_continue_revives_for_three_sovs_or_breaks_the_bros() -> vo
 	var ninja := _villain("ninja", 26, 1)
 	var pilsner := _bro("lord_pilsner", 45, 2)
 	var core := _core([pilsner], [count, ninja])
-	core.wallet.gold = 10
+	core.wallet.sovs = 10
 	ninja.take_damage(26)
 	# Act: wind up, then the bros' turn, then it resolves.
 	core.step()
@@ -179,7 +179,7 @@ func test_battle_core_continue_revives_for_three_sovs_or_breaks_the_bros() -> vo
 	core.step()
 	# Assert
 	assert_eq(ninja.hp, 13)
-	assert_eq(core.wallet.gold, 7)
+	assert_eq(core.wallet.sovs, 7)
 
 
 func test_battle_core_continue_without_money_gives_broke_af() -> void:

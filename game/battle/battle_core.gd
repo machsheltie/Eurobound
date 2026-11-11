@@ -23,7 +23,7 @@ var events: Array = []
 var round_number := 0
 var outcome := ""                  ## "", "won", "lost" or "ran"
 var minor_used := false
-## The wallet and bag: GameState in the game, a stand-in in tests (gold, inventory, add_item()).
+## The wallet and bag: GameState in the game, a stand-in in tests (sovs, inventory, add_item()).
 var wallet: Object
 ## Consumable data by id (heal_hp, heal_bravado, display_name).
 var items: Dictionary = {}
@@ -665,7 +665,7 @@ func _pick_move(e: BattleUnit) -> Dictionary:
 			continue
 		if m.get("requires_ally", false) and _allies(e).is_empty():
 			continue
-		if m.get("requires_balance", false) and (balance_due <= 0 or wallet == null or int(wallet.gold) <= 0):
+		if m.get("requires_balance", false) and (balance_due <= 0 or wallet == null or int(wallet.sovs) <= 0):
 			continue
 		if m.get("requires_self_negative", false) and not NEGATIVE.any(func(s: String) -> bool: return e.has_status(s)):
 			continue
@@ -898,8 +898,8 @@ func _move_effects(e: BattleUnit, m: Dictionary, t: BattleUnit) -> void:
 func _steal(t: BattleUnit, amount: int) -> void:
 	if wallet == null:
 		return
-	var taken := mini(amount, maxi(int(wallet.gold), 0))
-	wallet.gold -= taken
+	var taken := mini(amount, maxi(int(wallet.sovs), 0))
+	wallet.sovs -= taken
 	sovs_taken += taken
 	_say("%s pays %d SOVS." % [t.display_name, taken] if taken != 1 else "%s pays 1 SOV." % t.display_name)
 
@@ -907,10 +907,10 @@ func _steal(t: BattleUnit, amount: int) -> void:
 ## Shake Down Payment (round v31): up to `amount` SOVS fall out of the wallet and go on the tab,
 ## never more than the balance due.
 func _shake_down(e: BattleUnit, t: BattleUnit, amount: int) -> void:
-	var taken := mini(mini(amount, balance_due), maxi(int(wallet.gold), 0)) if wallet != null else 0
+	var taken := mini(mini(amount, balance_due), maxi(int(wallet.sovs), 0)) if wallet != null else 0
 	if taken <= 0:
 		return
-	wallet.gold -= taken
+	wallet.sovs -= taken
 	balance_due -= taken
 	sovs_collected += taken
 	_say("%s holds %s upside down and shakes. %s, a Razr and a burned Linkin Park CD hit the carpet. %s keeps the SOVS. He hands back the CD after reading the tracklist. Balance due: %s." % [
@@ -996,7 +996,7 @@ func _continue(e: BattleUnit, m: Dictionary) -> void:
 		return
 	var ally: BattleUnit = downed[0]
 	var cost := int(m.get("cost_sovs", 3))
-	if wallet == null or int(wallet.gold) < cost:
+	if wallet == null or int(wallet.sovs) < cost:
 		_say("INSUFFICIENT CREDITS")
 		if m.has("log"):
 			_say(String(m["log"]))
@@ -1005,7 +1005,7 @@ func _continue(e: BattleUnit, m: Dictionary) -> void:
 			bros.sort_custom(func(a: BattleUnit, b: BattleUnit) -> bool: return a.hp < b.hp)
 			_apply_status(bros[0], "broke_af", -1, 1.0)
 		return
-	wallet.gold -= cost
+	wallet.sovs -= cost
 	ally.hp = maxi(roundi(ally.max_hp * float(m.get("revive_pct", 0.5))), 1)
 	ally.meter = float(ally.hp)
 	ally.statuses.clear()

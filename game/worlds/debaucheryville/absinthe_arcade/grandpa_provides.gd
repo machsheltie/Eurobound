@@ -60,9 +60,9 @@ static func add_credit(state, sovs: int) -> void:
 ## Pays the whole tab. False (nothing taken) when the wallet is short.
 static func pay(state) -> bool:
 	var amount := tab_amount(state)
-	if int(state.gold) < amount:
+	if int(state.sovs) < amount:
 		return false
-	state.gold -= amount
+	state.sovs -= amount
 	state.flags[TAB_PAID] = true
 	state.flags[TAB_OPEN] = false
 	return true
@@ -78,8 +78,8 @@ static func fled(state) -> void:
 ## the rest waived. Returns true when it was waived.
 static func lost(state) -> bool:
 	var owed := maxi(TAB_SOVS + SERVICE_CHARGE_SOVS - credit(state), 0)  # never more than 50 in all
-	var waived := int(state.gold) < owed
-	state.gold = maxi(int(state.gold) - owed, 0)
+	var waived := int(state.sovs) < owed
+	state.sovs = maxi(int(state.sovs) - owed, 0)
 	state.flags[TAB_PAID] = true
 	state.flags[TAB_OPEN] = false
 	return waived

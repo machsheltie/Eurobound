@@ -7,7 +7,7 @@ extends RefCounted
 ##    spend them (author ruling ef_tokens = machine_any, 2026-11-10).
 ##  - Arcade fights pay tickets, not SOVS (ruling 2026-11-09), redeemed at the Prize Redemption
 ##    counter for key items priced in tickets.
-## `state` is GameState (or anything with gold, inventory and add_item).
+## `state` is GameState (or anything with sovs, inventory and add_item).
 
 const TOKEN_ID := "item_absinthe_arcade_token"
 const TICKET_ID := "arcade_tickets"
@@ -38,13 +38,13 @@ static func tickets(state) -> int:
 
 ## The most tokens the wallet can pay for.
 static func max_buyable(state) -> int:
-	return maxi(int(state.gold), 0) / SOVS_PER_TOKEN
+	return maxi(int(state.sovs), 0) / SOVS_PER_TOKEN
 
 
 static func buy_tokens(state, count: int) -> bool:
 	if count <= 0 or count > max_buyable(state):
 		return false
-	state.gold -= count * SOVS_PER_TOKEN
+	state.sovs -= count * SOVS_PER_TOKEN
 	state.add_item(TOKEN_ID, count)
 	return true
 

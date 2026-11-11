@@ -9,7 +9,7 @@ const GameStateScript := preload("res://core/game_state.gd")
 func _state(sovs: int, tokens := 0) -> Node:
 	var s: Node = GameStateScript.new()
 	autofree(s)
-	s.gold = sovs
+	s.sovs = sovs
 	if tokens > 0:
 		s.add_item(ArcadeRules.TOKEN_ID, tokens)
 	return s
@@ -31,7 +31,7 @@ func test_arcade_rules_buying_tokens_spends_one_sovs_each() -> void:
 
 	# Assert
 	assert_true(ok)
-	assert_eq(s.gold, 3)
+	assert_eq(s.sovs, 3)
 	assert_eq(ArcadeRules.tokens(s), 7)
 
 
@@ -44,7 +44,7 @@ func test_arcade_rules_cannot_buy_more_than_the_wallet_covers() -> void:
 
 	# Assert
 	assert_false(ok)
-	assert_eq(s.gold, 4)
+	assert_eq(s.sovs, 4)
 	assert_eq(ArcadeRules.tokens(s), 0)
 	assert_eq(ArcadeRules.max_buyable(s), 4)
 
@@ -71,7 +71,7 @@ func test_arcade_rules_short_of_tokens_plays_nothing() -> void:
 	# Assert
 	assert_false(ok)
 	assert_eq(ArcadeRules.tokens(s), 3)
-	assert_eq(s.gold, 50)
+	assert_eq(s.sovs, 50)
 
 
 func test_arcade_rules_spending_the_last_token_empties_the_slot() -> void:

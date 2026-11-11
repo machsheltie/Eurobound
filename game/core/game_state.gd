@@ -5,7 +5,7 @@ extends Node
 
 var party: Array = []
 var inventory: Dictionary = {}
-var gold: int = 0
+var sovs: int = 0
 var flags: Dictionary = {}
 var current_scene_path: String = ""
 var player_position: Vector2 = Vector2.ZERO
@@ -36,7 +36,7 @@ func can_use_ultimate(value: int, max_value: int) -> bool:
 func new_game(repo) -> void:
 	party = []
 	inventory = {}
-	gold = 20
+	sovs = 20
 	flags = {}
 	current_scene_path = "res://worlds/debaucheryville/clocktower_plaza.tscn"
 	player_position = Vector2.ZERO
@@ -91,10 +91,10 @@ func set_flag(flag_name: String) -> void:
 func has_flag(flag_name: String) -> bool:
 	return flags.get(flag_name, false)
 
-func grant_rewards(xp: int, gold_amount: int, item_id: String) -> void:
+func grant_rewards(xp: int, sovs_amount: int, item_id: String) -> void:
 	if not party.is_empty():
 		party[0]["xp"] = int(party[0]["xp"]) + xp
-	gold += gold_amount
+	sovs += sovs_amount
 	if item_id != "":
 		add_item(item_id)
 
@@ -103,7 +103,7 @@ func to_dict() -> Dictionary:
 		"save_version": SAVE_VERSION,
 		"party": party.duplicate(true),
 		"inventory": inventory.duplicate(true),
-		"gold": gold,
+		"sovs": sovs,
 		"flags": flags.duplicate(true),
 		"current_scene_path": current_scene_path,
 		"player_position": {"x": player_position.x, "y": player_position.y},
@@ -112,7 +112,9 @@ func to_dict() -> Dictionary:
 func from_dict(d: Dictionary) -> void:
 	party = d.get("party", [])
 	inventory = d.get("inventory", {})
-	gold = int(d.get("gold", 0))
+	# Saves written before the SOVS rename stored the wallet under the legacy key "gold".
+	# Same schema otherwise, so they load (SAVE_VERSION unchanged).
+	sovs = int(d.get("sovs", d.get("gold", 0)))
 	flags = d.get("flags", {})
 	current_scene_path = d.get("current_scene_path", "")
 	var pos: Dictionary = d.get("player_position", {"x": 0, "y": 0})

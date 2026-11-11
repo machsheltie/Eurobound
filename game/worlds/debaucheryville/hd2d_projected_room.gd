@@ -56,10 +56,14 @@ func _ready() -> void:
 		SceneRouter.wire_exits(self)
 
 
+## Virtual hook: each room overrides this to build its floors, walls and props.
+## Called once from _ready after the camera is built. The base room builds nothing.
 func _build_room() -> void:
 	pass
 
 
+## Virtual hook: each room overrides this to place its spawn, exit and interaction markers.
+## Called from _ready right after _build_room. The base room places none.
 func _build_markers() -> void:
 	pass
 

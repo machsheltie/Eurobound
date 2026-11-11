@@ -3,7 +3,7 @@ extends GutTest
 
 
 class FakeState:
-	var gold := 20
+	var sovs := 20
 	var inventory := {}
 	var flags := {}
 	var party: Array = [
@@ -167,13 +167,13 @@ func test_arcade_battle_soggy_pile_refunds_dip_minus_fee_on_win() -> void:
 	var state := FakeState.new()
 	var core := ArcadeBattle.build("cabinet_frogger", state, _rng(6))
 	core.sovs_taken = 5
-	state.gold = 15
+	state.sovs = 15
 	core.outcome = "won"
 	# Act
 	var result := ArcadeBattle.settle("cabinet_frogger", core, state)
 	# Assert: 5 back, minus the 20% fee (1).
 	assert_eq(int(result["refund"]), 4)
-	assert_eq(state.gold, 19)
+	assert_eq(state.sovs, 19)
 
 
 func test_arcade_battle_soggy_pile_stays_in_the_fund_on_a_loss() -> void:
@@ -181,12 +181,12 @@ func test_arcade_battle_soggy_pile_stays_in_the_fund_on_a_loss() -> void:
 	var state := FakeState.new()
 	var core := ArcadeBattle.build("cabinet_frogger", state, _rng(6))
 	core.sovs_taken = 5
-	state.gold = 15
+	state.sovs = 15
 	core.outcome = "lost"
 	# Act
 	ArcadeBattle.settle("cabinet_frogger", core, state)
 	# Assert
-	assert_eq(state.gold, 15)
+	assert_eq(state.sovs, 15)
 
 
 func test_arcade_battle_jarmila_comes_back_one_word_longer_per_defeat() -> void:
