@@ -529,3 +529,28 @@ Open question: should it, and to what depth?
   frustration. Load the 9 Arcade villains into engine enemy data as their docs propose, plus a
   `ticket_reward` field. Mirror corridor painted with ChatGPT; north wing upscaled to
   2752x1536 with a registered day version.
+- **(Round v25, 2026-11-11)** Mirror corridor (ChatGPT, v1 night/day) and north wing v5
+  (v4 cropped to 16:9 + day) **approved in game**. Cabinet battle backdrops: paint them
+  (ChatGPT). Battle maths: **author's** — use the existing battle system in
+  `design/mechanics/Battle/` (research it; no placeholder formula). DDR: tickets = 30 x share of
+  steps earned (PERFECT 1, GREAT 0.7, GOOD 0.4, MISS 0), rounded; step charts generated
+  automatically from the songs and play-tested by the author; the bros' stuck-difficulty lines
+  go to the Writers' Room (author approves). **Deferred to 2026-11-11 by the author:** DDR song
+  files/list, chart generation, dance animations, north-wing contents. Token machine with 0 SOVS
+  shows INSUFFICIENT CREDITS. Tab enforcers are **Accounts Receivable** (nameplates ACCOUNTS and
+  RECEIVABLE), all proposed stats/moves/rewards/loss/flee rules approved. Cara's 21st tab:
+  five shots 40 SOVS, service charge 10 SOVS flat, tab does not grow, proposed timing/opener/
+  trigger approved. Junk prize shelf separate from the 13-prize catalogue (5-15 tickets, no
+  effects, no duplicates). **Skee-ball and foosball are real mini-games** (costs/payouts
+  delegated to Claude) and **the claw machine must exist and work**. **Token Attendant**
+  (author): a separate employee from the prize-counter bartender, also in TGI-Fridays-style
+  flair; fixes stuck ticket machines and token-exchange problems and services the bathrooms;
+  the bros catch him asleep in the arms of a statue repurposed as a toilet-paper holder,
+  passed out on absinthe. Torte Royale: Bradley's +20% pronunciation bonus is replaced by a
+  different bonus (options to the author). **Gregory: an agent removes every remaining mention
+  from the files.** Unanswered, to re-ask: hall names, hall bouncers vs enforcers, Pilsner
+  "newly single".
+- **Ticket-game numbers (set by Claude under the author's v25 delegation):** Skee-ball 2 tokens
+  a game (9 balls), 0-20 tickets by score; foosball 2 tokens a game vs an NPC, 15 tickets for a
+  win, 3 for a loss; claw 5 tokens (ruled), prize or nothing; DDR 2 tokens a song, 0-30 tickets
+  (ruled).
