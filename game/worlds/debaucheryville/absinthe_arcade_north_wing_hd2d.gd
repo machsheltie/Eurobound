@@ -37,6 +37,7 @@ var _shoop: AudioStreamPlayer
 
 const SPAWNS := {
 	"from_mirror_corridor": [Vector2(0.0, 14.6), "north"],
+	"from_maintenance_closet": [Vector2(6.6, 15.2), "west"],
 }
 
 ## Cabinet rows with their stools, the DDR machine and the cabinet by the curtained doorway:
