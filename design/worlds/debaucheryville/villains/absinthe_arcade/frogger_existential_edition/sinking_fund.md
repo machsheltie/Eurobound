@@ -8,7 +8,7 @@
 > dive, stats, XP, drops, items, achievement and the lady-frog background gag are **Approved
 > 2026-11-09**. Existential Crisis is replaced with Embarrassed (**Where Do You See Yourself in Five Lanes?**)
 > and the SOVS payout with arcade tickets; both are **Approved 2026-11-09** (review round). The
-> soggy-pile refund rule stays **PROPOSED — needs author ruling**.
+> soggy-pile refund rule was **approved 2026-11-11 (round v27)**.
 
 ## 📋 Villain Identity
 - **Villain ID**: `debaucheryville_villain_sinking_fund_01`
@@ -208,19 +208,19 @@ Pilsner uses a social move she hops onto the next log with a younger frog in a b
 | River and Home Bay | The Sinking Fund + Croc Monsieur | 15% |
 | Full Crossing | 1× Hit-and-Ponder Hatchback + The Sinking Fund + Croc Monsieur (after first cabinet win) | 10% |
 
-**Soggy-pile refund (PROPOSED, needs author ruling):** SOVS taken by Buy the Dip come back on
+**Soggy-pile refund (Approved 2026-11-11, round v27):** SOVS taken by Buy the Dip come back on
 victory in a "soggy pile," minus a 20% management fee. If the bros lose or flee, the money stays
 in the fund. This is stolen wallet money partly coming back, not a fight payout: the fight
 itself pays tickets (see Rewards).
 
 ---
 
-## 💰 Rewards — **Approved 2026-11-09** (ticket amount approved in the review round; refund rule PROPOSED)
+## 💰 Rewards — **Approved 2026-11-09** (ticket amount approved in the review round; refund rule approved 2026-11-11)
 
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
 | **Tickets** | 8 arcade tickets | **Approved 2026-11-09** (review round). Arcade fights pay tickets, not SOVS (ruling 2026-11-09). Redeemable at the Prize Redemption counter built into the bar. |
-| **Soggy pile** | 80% of the SOVS Buy the Dip took, returned on victory | **PROPOSED, needs author ruling.** Stolen money partly coming back, not a payout. Net SOVS from this fight can come out negative. That's the point. |
+| **Soggy pile** | 80% of the SOVS Buy the Dip took, returned on victory | **Approved 2026-11-11 (round v27).** Stolen money partly coming back, not a payout. Net SOVS from this fight can come out negative. That's the point. |
 | **Clout (XP)** | 12 | |
 | **Guaranteed drop** | **Shell Company Business Card** (new item, Approved 2026-11-09) | Junk/sell item, vendor value 4 SOVS. "Registered at an address that turns out to be a fax machine in a turtle." |
 | **Rare drop** | **Diamond Flippers** (new item, Approved 2026-11-09), 5% | Accessory: +2 Defense, −1 Speed. "You can't sell if you can't let go. You can't let go." (Nods to the canon "DIAMOND HANDS FOREVER!" epilogue line without reusing it.) |
@@ -244,19 +244,19 @@ itself pays tickets (see Rewards).
 |-------------|--------|
 | Funny, unique name (checked against all existing names) | ✅ (repo grep 2026-11-02: no hits for name, moves or drops; avoided existing "Find the Lady," "Long Con," "RugPullInu," "Three Card Monty") |
 | Racket grounded in the city's satirized culture/underbelly | ✅ |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09, including the Embarrassed move and tickets; refund rule PROPOSED) |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09, including the Embarrassed move and tickets; refund rule approved 2026-11-11) |
 | Statuses from master list only (or author-approved new ones) | ✅ Embarrassed, Tourist Trap Victim |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ Every question becomes a yes |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ Never scam-aware either |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (wallet steal, untargetable dive, stats, drops, items, achievement, lady-frog gag; review round: Where Do You See Yourself in Five Lanes? (Embarrassed), ticket amount), except PROPOSED: soggy-pile refund |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (wallet steal, untargetable dive, stats, drops, items, achievement, lady-frog gag; review round: Where Do You See Yourself in Five Lanes? (Embarrassed), ticket amount); soggy-pile refund approved 2026-11-11 (round v27) |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Approved 2026-11-09 (soggy-pile refund still PROPOSED)
+- **Status**: Approved 2026-11-09 (soggy-pile refund approved 2026-11-11, round v27)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md`
 - **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`sinking_fund`), 2026-11-10
 - **Sprite Sheet**: not yet specced (proposed `aa_villain_sinking_fund.png`, four states)

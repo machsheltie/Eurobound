@@ -97,7 +97,7 @@
       "acquisition": {
         "location_node": "aa_node_claw_alcove",
         "interaction_id": "rigged_absinthe_claw_machine",
-        "method": "counter_swing_then_release_on_second_buzz",
+        "method": "grab_while_payout_light_blinks (every 7th play; author, round v27)",
         "requires_strategy_or_repeated_attempts": true,
         "sets_state": "beer_pong_saint_relic_obtained"
       },

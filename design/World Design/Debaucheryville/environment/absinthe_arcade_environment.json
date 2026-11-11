@@ -59,8 +59,8 @@
         }
       },
       "claw_strategy_read": {
-        "trigger": "examine_scratched_claw_service_note",
-        "effect": "reveal_rigged_swing_timing"
+        "trigger": "token_attendant_claw_hint",
+        "effect": "reveal_payout_light_cycle"
       }
     },
     "recovery_options": [

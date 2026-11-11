@@ -42,7 +42,7 @@
       "trigger": {
         "type": "mini_game_failure",
         "source": "rigged_absinthe_claw_machine",
-        "condition": "shake_meter_maxed"
+        "condition": "RETIRED: the shake meter was dropped with the old claw method (author, round v27); this ban has no trigger until re-ruled"
       },
       "effects": [
         {
@@ -367,19 +367,12 @@
         "quantity": 5
       },
       "mechanics": {
-        "objective": "Use the machine's predictable cabinet sway rather than aiming directly at the relic.",
-        "rigged_behavior": "claw_drops_early_and_drifts_right",
-        "strategy_source": "scratched_claw_service_note",
-        "success_method": "counter_swing_then_release_on_second_buzz",
-        "shake_meter": {
-          "max_value": 100,
-          "failure_state": "temporary_token_shaker_ban"
-        },
+        "objective": "Wait for the PAYOUT light to blink, then grab (old counter-swing/service-note/shake-meter method dropped, round v27)",
         "approved_rig": {
           "authority": "author ruling round v26, 2026-11-11 (both claws work)",
           "grab_rule": "The claw slips on every grab unless the machine's PAYOUT light is blinking.",
           "payout_light": "Blinks on a hidden every-N-plays cycle; the Token Attendant hints at it.",
-          "payout_cycle_n": "NOT YET SET",
+          "payout_cycle_n": 7,
           "prize_before_relic_won": "item_beer_pong_saint_relic or nothing",
           "prize_after_relic_won": "junk-shelf prizes (prize_redemption_counter.economy.junk_shelf)"
         }
@@ -392,18 +385,6 @@
       },
       "post_win_state": "relic_hook_empty_machine_dispenses_junk_shelf_prizes",
       "quest_reference": "design/Quests/debaucheryville/nfthuntdebaucheryville.md"
-    },
-    {
-      "object_id": "scratched_claw_service_note",
-      "display_name": "Scratched Service Note",
-      "node_id": "aa_node_claw_alcove",
-      "type": "examinable_hint",
-      "interaction_text": "Read the scratched note",
-      "description": "A maintenance timing diagram has been scratched into the prize counter by someone who was banned before they could profit from it.",
-      "effect": {
-        "set_state": "claw_machine_strategy_discovered",
-        "value": true
-      }
     },
     {
       "object_id": "broken_ddr_restroom_unlock",

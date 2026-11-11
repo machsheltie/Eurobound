@@ -88,7 +88,7 @@ She's a product whose whole personality is the next version of herself. The bros
 > "Fine. This version is discontinued. Version twelve has a costume based on you three. It's the joke costume."
 
 ### Post-Defeat Presence (If Any)
-She goes back into the cabinet and comes out of a later token **one word longer**. The full marquee name grows each time she's beaten. After enough defeats it's a scrolling paragraph. *(Optional, **NEEDS AUTHOR RULING**: a per-villain defeat counter stored in the save. Fallback: the phase-based name growth inside one fight.)* She never remembers the bros. She remembers that they paid.
+She goes back into the cabinet and comes out of a later token **one word longer**. The full marquee name grows each time she's beaten. After enough defeats it's a scrolling paragraph. *(Approved 2026-11-11, round v27: a per-villain defeat counter stored in the save.)* She never remembers the bros. She remembers that they paid.
 
 ---
 
@@ -189,13 +189,13 @@ She participates in the cabinet-wide **Second Thoughts** re-roll (see `player_tw
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ Rejection is rationalized, never attributed to age |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, mid-battle nameplate change, Second Thoughts, new item + achievement); ticket amount approved in the review round. Still **NEEDS AUTHOR RULING**: the optional cross-visit defeat counter (not covered by the 2026-11-09 rulings) |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ✅ Approved 2026-11-09 (stats, mid-battle nameplate change, Second Thoughts, new item + achievement); ticket amount approved in the review round. the cross-visit defeat counter approved 2026-11-11 (round v27) |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Approved 2026-11-09 (ticket amount approved 2026-11-09; defeat counter awaiting author ruling, round v27)
-- **Canon level**: Approved (the optional save-file defeat counter still NEEDS AUTHOR RULING)
+- **Status**: Approved 2026-11-09 (ticket amount approved 2026-11-09; defeat counter approved 2026-11-11, round v27)
+- **Canon level**: Approved (save-file defeat counter approved 2026-11-11)
 - **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/super_turbo_hyper_jarmila.md`
 - **Registered In**: `game/assets/data/enemies/debaucheryville_enemies.json` (`super_turbo_hyper_jarmila`), 2026-11-10
 - **Sprite Sheet**: not yet specced
