@@ -649,3 +649,7 @@ Open question: should it, and to what depth?
   - Choosing PAY with less than 40 SOVS shows "NOT ENOUGH SOVS" and the choice comes back.
   - Catalogue prizes are one of each; junk-shelf prizes can be bought repeatedly.
   - NPC sprite queue resumed.
+- **(Round v32, 2026-11-11)**
+  - The Arcade NPC sprites are approved: Jakub, Tomáš, Cara, Woo Woo Whitney, Brynleigh, Ashleigh, Kenleigh and Accounts Receivable.
+  - Cara's group is in the Arcade from 20:00 to 02:00.
+  - Jakub's asleep pose is to be shrunk to his standing scale.
