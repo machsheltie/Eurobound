@@ -706,6 +706,11 @@ Eurobound-vyn.)
       - no Achievements section, no Street Rep display, no ICQ log and no map;
       - section labels are plain;
       - Esc or Start opens the menu.
+- **(Round v37, 2026-11-11) Taproom v3, graffiti decal, drink tag.**
+  - **Taproom art v3: changes.** Author: "The recirculator should be up against the bottle. The very end should loop past the bottle lid and turn back and go into the lid so it completes the loop. The chairs should be in front of the recirculator, not behind it." Version 4 to follow.
+  - **"Pixelated boobs" graffiti decal approved:** crude pink pixel doodle, uncensored (`scratchpad art/v35/aa_closet_decal_pixel_graffiti.png`; to be copied to Assets with the closet).
+  - **Drink tag:** every alcoholic drink and beer (signature beers, shots, absinthe and so on) counts as "a drink" for the clock's 10 minutes. Food, drugs and vapes don't.
+  - The closet re-frame (v3) was pulled before review: still too close per eurobound-5d's measurements. v4 is being pre-checked.
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
 Moved verbatim from the work-tracking sections above; evidence appended to each.
