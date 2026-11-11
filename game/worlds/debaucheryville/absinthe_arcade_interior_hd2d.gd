@@ -99,14 +99,22 @@ const INTERACT_POINTS := {
 	# the wall. The anchor is the floor between the machine's south end and the wall.
 	"restroom_door": [Vector2(-7.5, 3.9), 90.0, Vector2(-6.6, 4.4)],
 }
-## Jakub "Tokens" Dvořák (author names 2026-11-11; sprite by ad, npc_sprites = go): his home spot
-## is the token machine (NPC doc), here just east of its south end, clear of the TOKENS HERE and
-## restroom-door spots, facing the machine. He mutters his token-machine and shift lines (Writers'
-## Room, approved 2026-11-11). Frames measured: 112 visible px, feet on row 121.
-const JAKUB := {
-	"frames": "res://assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak.aseprite",
-	"content_px": 112.0, "feet_px": 121.0, "facing": "north_west",
-	"at": Vector2(-5.6, 3.9), "jobs": ["token_machine", "shift"],
+## The hall's characters (author names 2026-11-11; sprites by ad, npc_sprites = go, frames pending
+## review), at the bros' pixel density. Frames measured: visible px and the feet row.
+##  - Jakub "Tokens" Dvořák: home spot the token machine (NPC doc), just east of its south end, clear
+##    of the TOKENS HERE and restroom-door spots, facing the machine. He mutters his token-machine and
+##    shift lines (Writers' Room, approved 2026-11-11).
+##  - Tomáš "Two-Fifty": fixed behind the prize section of the bar, the counter at his waist (ruling
+##    2026-11-09), in the well between the counter and the prize cabinet. No ambient lines approved.
+const HALL_NPCS := {
+	"jakub_tokens_dvorak": {
+		"frames": "res://assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak.aseprite",
+		"content_px": 112.0, "feet_px": 121.0, "facing": "north_west",
+		"at": Vector2(-5.6, 3.9), "jobs": ["token_machine", "shift"]},
+	"tomas_two_fifty": {
+		"frames": "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty.aseprite",
+		"content_px": 113.0, "feet_px": 121.0, "facing": "south",
+		"at": Vector2(2.8, 0.7), "jobs": []},
 }
 ## Machines that open a mini-game screen when paid for (round v25 rec_games).
 const REC_GAMES := ["skee_ball", "foosball"]
@@ -136,10 +144,26 @@ const FLOOR_BLOCKERS := [
 ]
 
 ## Occluder prisms (footprint in painting units, height) carrying the depth-layer cutouts.
+const BAR_COUNTER_H := 1.4
 const OCCLUDERS := {
-	"aa_int_layer_bottle_bar": {"height": 14.0, "footprint": [
+	# The bar: the outer footprint (one collider), drawn as convex pieces so Tomáš can stand in the
+	# well behind the prize counter. Counter pieces are counter height (1.4 = ~1.05 m, measured: the
+	# counter top's inner edge projects onto the cabinet's base); the west block and the stained-glass
+	# prize cabinet keep the full height. Inner counter edge measured at counter height from v8f.
+	"aa_int_layer_bottle_bar": {"height": 14.0, "draw": false, "footprint": [
 		Vector2(-0.7, 0.93), Vector2(0.26, 1.7), Vector2(1.32, 2.3), Vector2(2.97, 2.35),
-		Vector2(4.87, 0.93), Vector2(4.6, -1.2), Vector2(2.5, -2.2), Vector2(0.3, -2.2), Vector2(-0.5, -0.8)]},
+		Vector2(4.87, 0.93), Vector2(4.6, -1.2), Vector2(2.5, -2.2), Vector2(0.3, -2.2), Vector2(-0.5, -0.8)],
+		"pieces": [
+			[14.0, [Vector2(-0.7, 0.93), Vector2(0.26, 1.7), Vector2(1.08, 1.5), Vector2(1.5, 0.9),
+				Vector2(1.5, -2.2), Vector2(0.3, -2.2), Vector2(-0.5, -0.8)]],                     # west block
+			[14.0, [Vector2(1.5, -0.95), Vector2(4.0, -0.95), Vector2(4.6, -1.2), Vector2(2.5, -2.2),
+				Vector2(1.5, -2.2)]],                                                              # prize cabinet
+			[BAR_COUNTER_H, [Vector2(0.26, 1.7), Vector2(1.32, 2.3), Vector2(2.03, 1.4), Vector2(1.08, 1.5)]],
+			[BAR_COUNTER_H, [Vector2(1.32, 2.3), Vector2(2.97, 2.35), Vector2(2.81, 1.34), Vector2(2.03, 1.4)]],
+			[BAR_COUNTER_H, [Vector2(2.97, 2.35), Vector2(4.87, 0.93), Vector2(4.3, 0.5), Vector2(3.6, 1.17),
+				Vector2(2.81, 1.34)]],
+			[BAR_COUNTER_H, [Vector2(4.87, 0.93), Vector2(4.6, -1.2), Vector2(4.0, -0.95), Vector2(4.3, 0.5)]],
+		]},
 	"aa_int_layer_entry_doors": {"height": 6.0, "footprint": [
 		Vector2(-1.7, 3.6), Vector2(-0.8, 3.6), Vector2(-0.8, 6.4), Vector2(-1.7, 6.4)],
 		"also": [Vector2(0.8, 3.6), Vector2(1.75, 3.6), Vector2(1.75, 6.4), Vector2(0.8, 6.4)]},
@@ -156,6 +180,8 @@ var battle_screen: BattleScreen
 var claw_screen: ClawScreen
 ## Jakub "Tokens" Dvořák at his home spot by TOKENS HERE (runtime only).
 var jakub: HallNpc
+## Every hall character by id (runtime only).
+var npcs: Dictionary = {}
 ## The rigged claw's PAYOUT light in the hall, blinking while the next play would pay.
 var payout_light: OmniLight3D
 var _blink_t := 0.0
@@ -212,13 +238,17 @@ func _ready() -> void:
 		payout_light.position = Vector3(6.6, 3.2, 2.8)
 		payout_light.visible = false
 		_diorama.add_child(payout_light)
-		jakub = HallNpc.new()
-		jakub.name = "jakub_tokens_dvorak"
-		add_child(jakub)
-		jakub.setup(JAKUB["frames"], JAKUB["content_px"], JAKUB["feet_px"], JAKUB["facing"], JAKUB["jobs"])
-		var jp: Vector2 = JAKUB["at"]
-		jakub.global_position = _diorama.to_global(Vector3(jp.x, 0, jp.y))
-		jakub.add_to_group(ACTOR_GROUP)
+		for npc_id: String in HALL_NPCS.keys():
+			var spec: Dictionary = HALL_NPCS[npc_id]
+			var npc := HallNpc.new()
+			npc.name = npc_id
+			add_child(npc)
+			npc.setup(spec["frames"], spec["content_px"], spec["feet_px"], spec["facing"], spec["jobs"])
+			var at: Vector2 = spec["at"]
+			npc.global_position = _diorama.to_global(Vector3(at.x, 0, at.y))
+			npc.add_to_group(ACTOR_GROUP)
+			npcs[npc_id] = npc
+		jakub = npcs["jakub_tokens_dvorak"]
 		_player = SceneRouter.spawn_player(self, "from_street")
 		_player.interacted.connect(_on_interacted)
 		SceneRouter.wire_exits(self)
@@ -570,7 +600,15 @@ func _wall_collider(body: StaticBody3D, a: Vector2, b: Vector2) -> void:
 
 
 ## A closed prism over `footprint`, wearing the layer cutout, plus a matching collider.
-func _prism(layer_id: String, footprint: Array, height: float) -> void:
+## `draw` false makes only the collider; `collide` false only the painted mesh.
+func _prism(layer_id: String, footprint: Array, height: float, draw := true, collide := true) -> void:
+	if draw:
+		_prism_mesh(layer_id, footprint, height)
+	if collide:
+		_prism_collider(layer_id, footprint)
+
+
+func _prism_mesh(layer_id: String, footprint: Array, height: float) -> void:
 	var st := SurfaceTool.new()
 	st.begin(Mesh.PRIMITIVE_TRIANGLES)
 	var n := footprint.size()
@@ -590,6 +628,9 @@ func _prism(layer_id: String, footprint: Array, height: float) -> void:
 	mi.material_override = _paint_material(layer_id)
 	mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	_diorama.add_child(mi)
+
+
+func _prism_collider(layer_id: String, footprint: Array) -> void:
 	var body := StaticBody3D.new()
 	body.name = layer_id + "_collision"
 	var cs := CollisionShape3D.new()
@@ -607,7 +648,9 @@ func _prism(layer_id: String, footprint: Array, height: float) -> void:
 func _build_occluders() -> void:
 	for layer_id: String in OCCLUDERS.keys():
 		var spec: Dictionary = OCCLUDERS[layer_id]
-		_prism(layer_id, spec["footprint"], spec["height"])
+		_prism(layer_id, spec["footprint"], spec["height"], spec.get("draw", true))
+		for piece: Array in spec.get("pieces", []):
+			_prism(layer_id, piece[1], piece[0], true, false)
 		if spec.has("also"):
 			_prism(layer_id, spec["also"], spec["height"])
 

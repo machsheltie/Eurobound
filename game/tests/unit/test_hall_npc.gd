@@ -54,3 +54,15 @@ func test_hall_npc_jakub_stands_in_the_hall_at_the_bros_scale() -> void:
 	# Assert
 	assert_not_null(npc)
 	assert_almost_eq(npc.sprite.pixel_size, 1.8 / 117.0, 0.0001)
+
+
+func test_hall_npc_tomas_stands_behind_the_prize_counter() -> void:
+	# Arrange
+	var hall: Node3D = HALL.instantiate()
+	add_child_autofree(hall)
+	await wait_physics_frames(2)
+	# Act
+	var npc: HallNpc = hall.npcs.get("tomas_two_fifty")
+	# Assert: placed, with no ambient lines (none approved).
+	assert_not_null(npc)
+	assert_eq(npc.jobs, [])
