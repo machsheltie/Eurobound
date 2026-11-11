@@ -621,3 +621,20 @@ Open question: should it, and to what depth?
   - **fratbronft.md conflict:** "Show me all and I will decide case by case."
   - Unanswered: the Beanie claw's price; 5 tokens stays as a placeholder.
 - **(Round v29 resubmit, 2026-11-11 15:32)** The Beanie Baby claw costs **2 tokens** a play. The rigged claw stays at 5.
+- **(Round v30, 2026-11-11)**
+  - **Grandpa Provides is approved as written** (Tip / Approach / Unsettled Tab). Author's addition: "I think Accounts Receivable should be able to steal SOVs from them to help... recover the funds." A SOV-steal move for the enforcers is ruled in principle; its numbers go to the author.
+  - Gap rulings:
+    - The tip scene is unmissable; it plays the first time the bros use the prize counter.
+    - The bros can pay the tab early by talking to Tomáš at the bar.
+    - "Grandpa Provides" is the title only.
+  - Promise-ish Ring inspect line: "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier."
+  - **Renames (older NPCs who clashed with the new Arcade names):**
+    - the VCC bouncer Tomáš becomes **Kamil "Stone Face" Černý**
+    - Jakub "Euro Ink" Novák becomes **Donát "Euro Ink" Novák**
+    - Receptionist Jakub becomes **Radek**
+    - the Astronomical Cock-Up local Jakub becomes **Milan**
+    - Miroslav "Father Miro" Dvořák becomes **Miroslav "Father Miro" Kalich**
+    - Václav "Vintage" Dvořák becomes **Václav "Vintage" Ročník**
+    - Antonín "Tonda" Dvořák becomes **Antonín "Tonda" Pískal**
+    - Tram Stop Tomáš Procházka becomes **Hubert Procházka**
+  - fratbronft.md conflict (author): "We don't need to keep side a or side b. They're all generic crap." The block is removed.
