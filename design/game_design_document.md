@@ -302,13 +302,13 @@ Encounters: Visible enemies with preemptive/back attack logic; auto-win vs weak 
 - Horizontal strip above battle background with character/enemy portraits in exact turn order.
 - Animated pulse on the currently active unit, fading to indicate who’s next.
 - Action-type icons overlay (attack, item, skill, debuff) for tactical foresight.
-- Touch-and-hold on a portrait shows HP, buffs/debuffs, and speed stat.
+- Hold to peek at a turn-order portrait: shows HP, buffs/debuffs and Speed. Mouse/keyboard: hover the portrait for the peek; hold right mouse button, or hold Tab while it is highlighted, to pin it. Controller: highlight with D-pad/left stick, hold Y (0.4 s) to peek, release to close. The hold never fires an action; A stays confirm. (Author round v35.)
 - "Speed Tie" animation when initiative matches, plus optional next-two-turn preview.
 
 ### Status Effect UI
 - Persistent animated icons (Hungover beer mug slosh, Grease Fingers oil drip, Embarrassed blush pulse, etc.).
 - Color-coded borders (green/blue for buffs, red/orange for debuffs).
-- Long-press on icon for quick access to curing items/skills.
+- Hold on a status icon for quick access to curing items/skills: a held click (mouse/keyboard) or a held Y (controller). (Author round v35.)
 - One-time comedic flavor text when effect is applied.
 - Fully accessible (clear shapes, colors, high-contrast mode).
 

@@ -99,11 +99,11 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 
 **Objective**: Cross from one side to the other without getting hit
 
-**Controls**:
-- Tap/Swipe Up: Move forward one lane
-- Tap/Swipe Down: Move backward one lane
-- Hold: Stay in current position
-- Double-tap: Sprint (risky, covers 2 lanes but less reaction time)
+**Controls** (author round v35):
+- Forward one lane: W / Up arrow; controller D-pad Up or a flick of the left stick Up (one step per flick, no auto-repeat)
+- Back one lane: S / Down arrow; controller D-pad Down or a left-stick flick Down
+- Hold position: no input
+- Sprint two lanes (risky, less reaction time): Shift + W / Up; controller RB + Up
 
 ### Lane Structure
 ```
