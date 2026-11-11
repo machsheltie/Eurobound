@@ -99,6 +99,15 @@ const INTERACT_POINTS := {
 	# the wall. The anchor is the floor between the machine's south end and the wall.
 	"restroom_door": [Vector2(-7.5, 3.9), 90.0, Vector2(-6.6, 4.4)],
 }
+## Jakub "Tokens" Dvořák (author names 2026-11-11; sprite by ad, npc_sprites = go): his home spot
+## is the token machine (NPC doc), here just east of its south end, clear of the TOKENS HERE and
+## restroom-door spots, facing the machine. He mutters his token-machine and shift lines (Writers'
+## Room, approved 2026-11-11). Frames measured: 112 visible px, feet on row 121.
+const JAKUB := {
+	"frames": "res://assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak.aseprite",
+	"content_px": 112.0, "feet_px": 121.0, "facing": "north_west",
+	"at": Vector2(-5.6, 3.9), "jobs": ["token_machine", "shift"],
+}
 ## Machines that open a mini-game screen when paid for (round v25 rec_games).
 const REC_GAMES := ["skee_ball", "foosball"]
 ## A bro using a machine stands this far in front of it (painting units). The "at_<id>" spawn
@@ -145,6 +154,8 @@ var rec_screen: CanvasLayer
 var battle_core: BattleCore
 var battle_screen: BattleScreen
 var claw_screen: ClawScreen
+## Jakub "Tokens" Dvořák at his home spot by TOKENS HERE (runtime only).
+var jakub: HallNpc
 ## The rigged claw's PAYOUT light in the hall, blinking while the next play would pay.
 var payout_light: OmniLight3D
 var _blink_t := 0.0
@@ -201,6 +212,13 @@ func _ready() -> void:
 		payout_light.position = Vector3(6.6, 3.2, 2.8)
 		payout_light.visible = false
 		_diorama.add_child(payout_light)
+		jakub = HallNpc.new()
+		jakub.name = "jakub_tokens_dvorak"
+		add_child(jakub)
+		jakub.setup(JAKUB["frames"], JAKUB["content_px"], JAKUB["feet_px"], JAKUB["facing"], JAKUB["jobs"])
+		var jp: Vector2 = JAKUB["at"]
+		jakub.global_position = _diorama.to_global(Vector3(jp.x, 0, jp.y))
+		jakub.add_to_group(ACTOR_GROUP)
 		_player = SceneRouter.spawn_player(self, "from_street")
 		_player.interacted.connect(_on_interacted)
 		SceneRouter.wire_exits(self)
