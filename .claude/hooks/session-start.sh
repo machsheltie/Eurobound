@@ -19,38 +19,23 @@ if [ -n "$BRANCH" ]; then
     done
 fi
 
-# Current sprint (find most recent sprint file)
-LATEST_SPRINT=$(ls -t production/sprints/sprint-*.md 2>/dev/null | head -1)
-if [ -n "$LATEST_SPRINT" ]; then
-    echo ""
-    echo "Active sprint: $(basename "$LATEST_SPRINT" .md)"
-fi
-
-# Current milestone
-LATEST_MILESTONE=$(ls -t production/milestones/*.md 2>/dev/null | head -1)
-if [ -n "$LATEST_MILESTONE" ]; then
-    echo "Active milestone: $(basename "$LATEST_MILESTONE" .md)"
-fi
-
-# Open bug count
-BUG_COUNT=0
-for dir in tests/playtest production; do
-    if [ -d "$dir" ]; then
-        count=$(find "$dir" -name "BUG-*.md" 2>/dev/null | wc -l)
-        BUG_COUNT=$((BUG_COUNT + count))
-    fi
-done
-if [ "$BUG_COUNT" -gt 0 ]; then
-    echo "Open bugs: $BUG_COUNT"
-fi
-
-# Code health quick check
-if [ -d "src" ]; then
-    TODO_COUNT=$(grep -r "TODO" src/ 2>/dev/null | wc -l)
-    FIXME_COUNT=$(grep -r "FIXME" src/ 2>/dev/null | wc -l)
-    if [ "$TODO_COUNT" -gt 0 ] || [ "$FIXME_COUNT" -gt 0 ]; then
+# Work tracking: beads replaced sprint/milestone/bug files
+if command -v bd >/dev/null 2>&1 && [ -d ".beads" ]; then
+    OPEN_COUNT=$(timeout 3 bd count --status open 2>/dev/null | tr -d ' ')
+    INPROG_COUNT=$(timeout 3 bd count --status in_progress 2>/dev/null | tr -d ' ')
+    if [ -n "$OPEN_COUNT" ] || [ -n "$INPROG_COUNT" ]; then
         echo ""
-        echo "Code health: ${TODO_COUNT} TODOs, ${FIXME_COUNT} FIXMEs in src/"
+        echo "Beads: ${OPEN_COUNT:-?} open, ${INPROG_COUNT:-0} in progress (bd ready for unblocked work)"
+    fi
+fi
+
+# Code health quick check (game/ GDScript, excluding addons)
+if [ -d "game" ]; then
+    TODO_COUNT=$(grep -rIh --include="*.gd" --exclude-dir=addons --exclude-dir=.godot "TODO" game 2>/dev/null | wc -l | tr -d ' ')
+    FIXME_COUNT=$(grep -rIh --include="*.gd" --exclude-dir=addons --exclude-dir=.godot "FIXME" game 2>/dev/null | wc -l | tr -d ' ')
+    if [ "${TODO_COUNT:-0}" -gt 0 ] || [ "${FIXME_COUNT:-0}" -gt 0 ]; then
+        echo ""
+        echo "Code health: ${TODO_COUNT} TODOs, ${FIXME_COUNT} FIXMEs in game/"
     fi
 fi
 
