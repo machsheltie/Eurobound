@@ -1,26 +1,26 @@
-# NPC Profile: The Blonde Girl with Pigtails (name PROPOSED — NEEDS AUTHOR RULING)
+# NPC Profile: Woo Woo Whitney (the Blonde Girl with Pigtails)
 
 *"Okay."* **[CANON — author]**
 
 > **Source and status.** The author designed this NPC in the ChatGPT chat "Absinthe Arcade Exterior Design".
 > **[CANON — author]** marks the author's words; **[CANON — approved draft]** marks the ChatGPT draft the author
-> approved. Everything unmarked, including her name, is a Claude draft and **PROPOSED — NEEDS AUTHOR RULING**.
-> She is a member of Cara's group (`cara_birthday_girl.md`, which holds the group section).>
+> approved. Her name is ruled (round v28). Everything unmarked is a Claude draft and **PROPOSED — NEEDS AUTHOR RULING**.
+> She is a member of Cara's group (`cara_birthday_girl.md`, which holds the group section).
+>
 > **Round v25 (2026-11-11), approved for the quest this group drives:** trigger A (Pilsner walks to the bar after
 > a game while the group is there), the 40 SOVS tab for their five test tubes (it does not grow), the bartender's
-> timing and door lines, the 10 SOVS service charge, and **Accounts Receivable** as the door fight. **Still
-> unruled:** the Blonde Girl's name, the other three girls' names, the quest name, the ring's name, who hands
-> over the ring, the group's schedule, and Pilsner "newly single" (flagged).
+> timing and door lines, the 10 SOVS service charge, and **Accounts Receivable** as the door fight. **Round v26:**
+> Pilsner "newly single" is game-wide canon. **Round v28 (2026-11-11), author:** she is **Woo Woo Whitney**; the
+> other three girls are **Brynleigh, Ashleigh and Kenleigh**; the quest is **Grandpa Provides**; and **"There is no
+> ring having anything to do with Cara."** The girls never give Pilsner a ring. **Still unruled:** the group's
+> schedule.
 
 ## 📋 NPC Identity
-- **NPC ID**: `debaucheryville_npc_blonde_girl_01` (working ID; renamed once the name is ruled)
-- **Display Name**: **PROPOSED — NEEDS AUTHOR RULING.** Options (all grepped across `design/`, `game/assets/`, `docs/`: zero hits):
-  1. **Okay Kayleigh**: named for the only word she ever says to Pilsner directly. Pairs with the "Leighs" option for the rest of the group.
-  2. **Test Tube Tiffani**: named for the drink she gets him to buy five of.
-  3. **Woo Woo Whitney**: named for the cheer she starts.
-- **Internal Name**: the Blonde Girl (working label)
-- **Role**: Quest participant (the misread), ring-payoff giver (PROPOSED)
-- **Associated Quest**: `debaucheryville_sidequest_caras_twenty_first_01` (PROPOSED ID)
+- **NPC ID**: `debaucheryville_npc_woo_woo_whitney_01` (was the working ID `debaucheryville_npc_blonde_girl_01`; renamed round v28)
+- **Display Name**: **Woo Woo Whitney** **[CANON — author, ruled 2026-11-11 round v28]**: named for the cheer she starts.
+- **Internal Name**: Whitney, the blonde girl with pigtails
+- **Role**: Quest participant (the misread)
+- **Associated Quest**: Grandpa Provides, `debaucheryville_sidequest_grandpa_provides_01` (`design/quests/debaucheryville/grandpa_provides.md`)
 - **Primary Location**: Absinthe Arcade, at the bar with Cara's group
 - **Secondary Appearances**: skee-ball row and ticket counter with the group
 
@@ -32,7 +32,7 @@
 She is at her friend's 21st birthday, having fun with her friends. A man old enough to be her grandfather walks up and asks how her night is going. She says **"Okay"** and looks back at her friends, clearly not interested. **[CANON — author]** Then he offers to buy her another "test tube thing", and she hears the only reasonable meaning: a free round for the whole birthday table. She is *thrilled*. **[CANON — author]**
 
 ### What Bros Believe
-Pilsner, **newly single** **[CANON — author; scope still OPEN: game-wide fact or this scene only — re-ask]**, believes "Okay" was an opening. When she squeals "Seriously?!" he hears the sound of still having it. **[CANON — approved draft: "Pilsner: still got it"]**
+Pilsner, **newly single** **[CANON — author; game-wide, round v26]**, believes "Okay" was an opening. When she squeals "Seriously?!" he hears the sound of still having it. **[CANON — approved draft: "Pilsner: still got it"]**
 
 ### The Comedy Gap
 She isn't dodging him or turning him down. She never saw a man at all, just a nice old guy being sweet to Cara. Her misread is sincere and generous and it does more damage than any rejection could: she turns his pickup line into a charity, out loud, in front of the room. She is never in on the joke. That is why it lands.
@@ -100,17 +100,17 @@ Make Cara's birthday the best night ever. Pilsner is now part of the budget.
 
 **Lord Pilsner** **[CANON — approved draft]**: "How's your night going?"
 
-**Blonde Girl** **[CANON — author]**: "Okay."
+**Woo Woo Whitney** **[CANON — author]**: "Okay."
 
 *She looks back at her friends, clearly disinterested. Pilsner is oblivious.* **[CANON — author]**
 
 **Lord Pilsner** **[CANON — approved draft]**: "Can I buy you another one of those test-tube things?"
 
-**Blonde Girl** *(super excited)* **[CANON — approved draft]**: "Seriously?!"
+**Woo Woo Whitney** *(super excited)* **[CANON — approved draft]**: "Seriously?!"
 
 *(Pilsner: still got it.)* **[CANON — approved draft]**
 
-**Blonde Girl** *(turning to her friends, shouting)* **[CANON — author]**:
+**Woo Woo Whitney** *(turning to her friends, shouting)* **[CANON — author]**:
 > "HEY, GIRLS! THIS GUY WHO LOOKS LIKE MY GRANDPA IS BUYING US ANOTHER ROUND FOR CARA'S BIRTHDAY!"
 
 **GIRLS** *(jumping, cheering)*: "WOOOOOOOOOO!" **[CANON]**
@@ -126,12 +126,9 @@ Make Cara's birthday the best night ever. Pilsner is now part of the budget.
 - To Chadwick: "Are you guys, like, his grandsons?"
 - To Bradley: "Is he okay to be out this late? Like, medically?"
 
-### The Ring Payoff (PROPOSED: she is the one who gives it; alternative: Cara)
-*Later, at the ticket counter, she recognizes him.* **[CANON — approved draft]**
-
-**Blonde Girl**: "Grandpa Guy!! We won you something!" **[CANON — approved draft]**
-
-*She hands him a five-ticket plastic ring.* **[CANON — approved draft]** *(Reaction lines are in the quest doc, PROPOSED.)*
+### No ring **[CANON — author, round v28]**
+"There is no ring having anything to do with Cara." Whitney and the group never give Pilsner a ring. The only ring in
+the quest is the Promise-ish Ring the bros tip to Tomáš at the prize counter.
 
 ---
 
@@ -141,7 +138,7 @@ Same as Cara's group (see `cara_birthday_girl.md`, PROPOSED). She is always with
 ---
 
 ## 🎒 Inventory / Services
-Gives one item: the five-ticket plastic ring (quest payoff). Item name and data: see the quest doc (PROPOSED).
+None.
 
 ---
 
@@ -149,9 +146,9 @@ Gives one item: the five-ticket plastic ring (quest payoff). Item name and data:
 | NPC | Relationship |
 |-----|--------------|
 | Cara | Best friend; the round is for her |
-| Rest of the group | Her audience for every announcement |
+| Brynleigh, Ashleigh, Kenleigh | The rest of the group; her audience for every announcement |
 | Lord Pilsner | Grandpa Guy. Sweet old man. Wallet |
-| Prize Bartender | Pours what she announces |
+| Tomáš "Two-Fifty" | Pours what she announces |
 
 ---
 
@@ -163,14 +160,12 @@ Gives one item: the five-ticket plastic ring (quest payoff). Item name and data:
 | excited_gasp | "Seriously?!" **[CANON beat]** |
 | shout_announce | Hands cupped, the GRANDPA line **[CANON beat]** |
 | jump_cheer | WOOOO jump with the group |
-| ring_present | Holds out the plastic ring, beaming |
 
 ---
 
 ## 📸 Screenshot Moments
 1. "Okay." with her back already half-turned, Pilsner mid-lean.
 2. The GRANDPA announcement, five girls mid-jump, bartender lining up test tubes in the background.
-3. The ring handoff.
 
 ---
 
@@ -191,15 +186,15 @@ Gives one item: the five-ticket plastic ring (quest payoff). Item name and data:
 | Comedy value preserved | ✅ |
 | Bros never achieve self-awareness | ✅ Pilsner deflates (canon) but draws no lesson |
 | World consistency (city names) | ✅ |
-| Name unique | ✅ all three options grep clean |
+| Name unique | ✅ ruled round v28; grep clean |
 | Character is an adult (21+) | ✅ canon |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Drafted (canon scene; name and unmarked content PROPOSED)
-- **Profile File Location**: `design/worlds/debaucheryville/npcs/Absinthe_Arcade/blonde_girl_pigtails.md`
-- **Registered In**: `absinthe_arcade_npcs.json` — **No** (pending name)
+- **Status**: Drafted (canon scene; name ruled round v28; unmarked content PROPOSED)
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Absinthe_Arcade/woo_woo_whitney.md` (renamed from `blonde_girl_pigtails.md`, round v28)
+- **Registered In**: `absinthe_arcade_npcs.json` — **No** (name ruled round v28; not yet registered)
 - **Sprite Sheet**: not yet specced
 
 ## 📜 Revision History
@@ -207,3 +202,4 @@ Gives one item: the five-ticket plastic ring (quest payoff). Item name and data:
 |------|--------|--------|
 | 2026-11-10 | Initial profile from the author's ChatGPT chat "Absinthe Arcade Exterior Design" | Claude draft for machsheltie |
 | 2026-11-11 | Round v25 quest approvals noted (trigger A, tab, timing, door lines, Accounts Receivable); her name still open | Claude for machsheltie |
+| 2026-11-11 | Round v28: name ruled Woo Woo Whitney (losing options dropped); file renamed from `blonde_girl_pigtails.md`; the ring payoff removed (author: no ring has anything to do with Cara) | Claude for machsheltie |

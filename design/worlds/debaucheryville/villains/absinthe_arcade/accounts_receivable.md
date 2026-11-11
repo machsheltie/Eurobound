@@ -1,6 +1,6 @@
 # Villain Profile: Accounts Receivable
 
-*"Our guests are experiencing a billing dispute."* — the Prize Bartender, summoning them **[CANON — approved draft]**
+*"Our guests are experiencing a billing dispute."* — Tomáš "Two-Fifty", the bartender, summoning them **[CANON — approved draft]**
 
 > **Source and status.** The author created this pair in the ChatGPT chat "Absinthe Arcade Exterior Design":
 > **"If they're leaving [and] refuse to pay, two very large ape-like men show up acting menacing that the bros
@@ -12,7 +12,7 @@
 > (2026-11-11), author:** the hall "bouncers" **are** Accounts Receivable (bouncer question resolved below).
 >
 > This is not a cabinet villain. It is the Arcade's only fight with real-world staff, and it only happens if
-> the bros refuse to pay Cara's tab at the front door (`design/Quests/debaucheryville/caras_twenty_first.md`).
+> the bros refuse to pay Cara's tab at the front door (Grandpa Provides, `design/quests/debaucheryville/grandpa_provides.md`).
 > Every villain gets a profile at creation (author mandate 2026-08-03), so this one exists now.
 
 ## 📋 Villain Identity
@@ -21,7 +21,7 @@
 - **RESOLVED (author, round v26, 2026-11-11): the hall "bouncers" ARE Accounts Receivable.** They only appear when summoned ("Gentlemen?"), so the reveal stands. Original question: the Round v24 ruling lists **"bouncers"** among the hall NPCs (from the author's chat "create hero image prompt"). Are these two the Arcade's bouncers, standing in the hall all night until summoned, or a separate pair who only exist for this fight? This file assumes they are not visible until "Gentlemen?" (they step in from offscreen), which keeps the reveal. If they are the hall bouncers, the reveal becomes "the two men by the door were for you".
 - **Tier**: Minor Villain (optional pair fight)
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), the front door / entry
-- **Associated Quest/Arc**: `debaucheryville_sidequest_caras_twenty_first_01` (PROPOSED ID)
+- **Associated Quest/Arc**: Grandpa Provides, `debaucheryville_sidequest_grandpa_provides_01`
 - **Encounter Type**: Optional, one-time (only if the bros refuse the tab at the door). **Flee rule APPROVED (round v25):** after the bros win and flee, the tab stays open; there is no second fight.
 
 ---
@@ -70,17 +70,15 @@ HD-2D side-view battle (ruling 2026-11-10): both enforcers on screen as large bi
 ### Pre-Battle Dialogue
 *Trigger: the bros refuse the tab at the door (see quest doc).*
 
-**Prize Bartender** *(sighs)*: "Gentlemen?" **[CANON — approved draft]**
+**Tomáš** *(sighs)*: "Gentlemen?" **[CANON — approved draft]**
 
 *Two enormous men step in.* **[CANON — approved draft]**
 
-**Prize Bartender**: "Our guests are experiencing a billing dispute." **[CANON — approved draft]**
+**Tomáš**: "Our guests are experiencing a billing dispute." **[CANON — approved draft]**
 
 *Pilsner looks at Bradley. Bradley looks at Chadwick. Chadwick looks at the door. Knuckles crack.* **[CANON — approved draft]**
 
-**Bradley** (PROPOSED): "Matching polos. That's a squad. Respect. Gonna break both of them."
-**Chadwick** (PROPOSED): "Going live. Chat, this is a collab."
-**Lord Pilsner** (PROPOSED): "Gentlemen, I've been thrown out of finer establishments by smaller men."
+*Battle.* (Round v28: the proposed bro lines that sat here were stripped; the scene follows the author's story.)
 
 ### Mid-Battle Barks (all PROPOSED)
 | Trigger | Line |
@@ -91,16 +89,12 @@ HD-2D side-view battle (ruling 2026-11-10): both enforcers on screen as large bi
 | Big-move telegraph | *(knuckles, in unison)* "Your account is past due." |
 | Stun lands (Escort to the Exit) | "Please keep your arms inside the escort at all times." |
 | Partner KO'd | "My colleague has clocked out. I'll be handling your account." |
-| Cara's group, background, random | "GRANDPA GUY!" *(no effect; Pilsner flinches)* |
 | Bro reaction (Past Due targets Pilsner) | **Lord Pilsner**: "It's in MY name? Boys, I've got a reputation in this town." |
 | Bro reaction (Bouncer Breaker lands) | **Bradley**: "I have been training my entire life for exactly this. This specifically." |
 | Bro reaction (Chadwick hit) | **Chadwick**: "He hit the camera. Chat saw that. That's a strike on his channel." |
 
-### Defeat Dialogue (PROPOSED)
-> **ACCOUNTS** *(getting up, unbothered)*: "We'll put a note on your file."
-> **RECEIVABLE**: "See you next visit."
-
-*The bros flee.* **[CANON — approved draft]** *From the doorway, the Prize Bartender, still bored, adds to the tab:* **"Service charge."** **[CANON — approved draft]**
+### Defeat
+*The bros flee.* **[CANON — approved draft]** *From the doorway, Tomáš, still bored, adds to the tab:* **"Service charge."** **[CANON — approved draft]**
 
 ### Post-Defeat Presence (PROPOSED)
 They go back to wherever they came from; they are the hall bouncers (ruled round v26) and only appear when summoned. No grudge; the grudge is on the tab, and the tab is the bartender's. No redemption arc.
@@ -155,7 +149,7 @@ They go back to wherever they came from; they are the hall bouncers (ruled round
 None. The bartender does not fight. He watches from the bar, wiping the same spot (PROPOSED staging).
 
 ### Arena & Gimmick
-**Arena (PROPOSED):** the Arcade entry at the front door, HD-2D side view (ruling 2026-11-10), hall lights in the background, the TOKENS HERE machine glowing, Cara's group visible in the back cheering at random. No hazard. No gimmick.
+**Arena (PROPOSED):** the Arcade entry at the front door, HD-2D side view (ruling 2026-11-10), hall lights in the background, the TOKENS HERE machine glowing. No hazard. No gimmick.
 
 **Possible gimmick — NEEDS AUTHOR RULING (mechanic):** a **PAY THE TAB** command in the battle menu that ends the fight at any point by paying the tab plus the service charge. Default in this draft: **no** such command. Once the bros refuse, the only way out is through.
 
@@ -183,8 +177,7 @@ Winning ends with the bros fleeing and "Service charge." from the doorway. The t
 ## 🔗 Connections
 | NPC / Villain | Relationship |
 |---------------|--------------|
-| Prize Bartender (`design/worlds/debaucheryville/npcs/Absinthe_Arcade/prize_counter_bartender.md`) | He says "Gentlemen?" and they come. Who is in charge is never stated |
-| Cara's group | Cheer through the fight. Have no idea it's about their drinks |
+| Tomáš "Two-Fifty" (`design/worlds/debaucheryville/npcs/Absinthe_Arcade/tomas_two_fifty.md`) | He says "Gentlemen?" and they come. Who is in charge is never stated |
 | Cabinet villains | No tie. These two are real |
 
 ---
@@ -197,7 +190,7 @@ Winning ends with the bros fleeing and "Service charge." from the doorway. The t
 | Full combat spec (stats, moves, phases, immunities, rewards) | ✅ APPROVED round v25 |
 | Statuses from master list only | ✅ Stun, Embarrassed, Confused, Grease Fingers |
 | All prices/drops in SOVS | ✅ |
-| Pre/mid/post-battle dialogue written, full-strength satire | ✅ canon beats + PROPOSED barks |
+| Pre/mid/post-battle dialogue written, full-strength satire | ✅ canon beats + PROPOSED mid-battle barks (pre-battle bro lines and defeat lines stripped round v28) |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ they flee a bill, not a fight |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
@@ -217,3 +210,4 @@ Winning ends with the bros fleeing and "Service charge." from the doorway. The t
 | 2026-11-10 | Initial profile from the author's ChatGPT chat "Absinthe Arcade Exterior Design" | Claude draft for machsheltie |
 | 2026-11-11 | Round v25: name ruled Accounts Receivable (losing options dropped); stats, moves, resistances, rewards, loss and flee rules approved; file renamed from `tab_enforcers.md` | Claude for machsheltie |
 | 2026-11-11 | Round v26: the hall "bouncers" are Accounts Receivable (bouncer question resolved) | Claude for machsheltie |
+| 2026-11-11 | Round v28: quest renamed Grandpa Provides; the bartender is Tomáš "Two-Fifty"; proposed pre-battle bro lines, defeat lines and the girls' cheer during the fight stripped | Claude for machsheltie |

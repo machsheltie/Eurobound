@@ -95,13 +95,13 @@
     },
     {
       "npc_id": "debaucheryville_npc_arcade_token_attendant_01",
-      "display_name": "Token Attendant",
-      "display_name_status": "PROPOSED name options in profile (Out of Order Ota / Jammin' Jarda / Thirty-Seven Pieces); NEEDS AUTHOR RULING",
+      "display_name": "Jakub \"Tokens\" Dvořák",
+      "display_name_status": "Ruled by the author 2026-11-11 (round v28). The bartender orders him around: \"Tokens. Toilet.\"",
       "role": "token_machine_fixer_machine_reset_and_bathroom_attendant",
       "node_id": "aa_node_token_exchange",
       "secondary_node": "roaming_jammed_ticket_machines",
-      "profile": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/token_attendant.md",
-      "author_design": "Employee in TGI Fridays-esque clothes and flair who fixes stuck ticket machines and token exchange machine problems and services the bathrooms; the bros catch him asleep in the arms of a statue repurposed as a toilet-paper holder, passed out on absinthe (author, round v25 2026-11-11). Separate person from the prize-counter bartender (ruled).",
+      "profile": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md",
+      "author_design": "Employee in TGI Fridays-esque clothes and flair who fixes stuck ticket machines and token exchange machine problems and services the bathrooms; the bros catch him asleep in the arms of a statue repurposed as a toilet-paper holder, passed out on absinthe (author, round v25 2026-11-11). Separate person from the prize-counter bartender, Tomáš \"Two-Fifty\" (ruled).",
       "author_design_v26": "Round v26 2026-11-11 (author): 'absinthe drunken', 'pimple faced'. Scene approved: new public restroom screen (to be painted), a bronze Green Fairy statue repurposed as a toilet-paper holder, triggered on the first bathroom visit after 01:00. The Arcade Employee's machine-reset job merges into him. Ticket machines do not jam mechanically (flavour only). He hints at the rigged absinthe claw's PAYOUT-light cycle.",
       "ambient_mutters": "WritingRoom/tasks/20261110_2241_absinthe_arcade_microcopy/",
       "schedule": {
