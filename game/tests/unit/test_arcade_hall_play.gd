@@ -278,9 +278,9 @@ func test_arcade_hall_cabinet_loss_leaves_the_bros_at_one_hp() -> void:
 	assert_eq(_hall.overlay.flash_text(), "GAME OVER")
 
 
-func test_arcade_hall_claw_spends_five_tokens_and_releases_the_bros() -> void:
-	# Arrange
-	GameState.add_item(ArcadeRules.TOKEN_ID, 5)
+func test_arcade_hall_beanie_claw_spends_two_tokens_and_releases_the_bros() -> void:
+	# Arrange: the Beanie claw costs 2 (author 2026-11-11).
+	GameState.add_item(ArcadeRules.TOKEN_ID, 2)
 	_stand_at("beanie_baby_claw")
 
 	# Act: drop at once, then close the result.
