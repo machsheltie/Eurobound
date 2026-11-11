@@ -51,3 +51,15 @@ game/addons/godot_mcp/
 .beads-credential-key
 .beads/proxieddb/
 *.gate.lock*
+
+# Session-log hook state (per machine)
+production/session-logs/.last-logged-head
+Production/session-logs/.last-logged-head
+
+# Canon search index (tools/canon_index): venv and rebuildable index
+tools/canon_index/.venv/
+tools/canon_index/.index/
+
+# Python bytecode caches (any depth)
+**/__pycache__/
+*.pyc
