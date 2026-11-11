@@ -162,8 +162,8 @@
     }
   ],
   
-  "items": {
-    "acquired": [
+  "items_acquired": {
+    "standard": [
       {
         "item_id": "vip_wristband_im_seven",
         "display_name": "VIP All-Access Wristband",
@@ -363,7 +363,7 @@
     }
   },
   
-  "mobile_optimization": {
+  "presentation": {
     "screenshot_moments": [
       "bros_displaying_wristbands_proudly",
       "bouncer_face_when_reading",

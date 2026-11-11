@@ -221,7 +221,7 @@
         "effect": "Bros believe any event at night is more 'authentic'"
       }
     ],
-    "both_paths": [
+    "standard": [
       {
         "item_id": "duck_tattoo_permanent",
         "display_name": "Authentic European Tattoo",
@@ -299,7 +299,7 @@
     }
   ],
   
-  "localization_notes": {
+  "localization": {
     "czech_dialogue": {
       "milan_watching_bros_cry": {
         "czech": "Podívej. Ti Američané brečí.",
@@ -320,7 +320,7 @@
     }
   },
   
-  "mobile_optimization": {
+  "presentation": {
     "clock_show_animation": {
       "duration": 38,
       "skip_option": false,

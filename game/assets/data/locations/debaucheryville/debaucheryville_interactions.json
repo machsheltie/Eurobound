@@ -835,7 +835,7 @@
           "dialogue_samples": [
             "This bill glows wrong. Try again next week.",
             "UV never lies. People? Different story.",
-            "Pocket wand? Fifty coins. Knowledge? Priceless.",
+            "Pocket wand? 50 SOVS. Knowledge? Priceless.",
             "That's not counterfeit. That's just expired.",
             "Light reveals truth. Darkness hides profit."
           ],
@@ -884,7 +884,7 @@
             "consequences": [
               "gain_nft_2_pixelated_kebab_monkey_scratched",
               "apply_hungover_status",
-              "lose_25_gold_missing_cab_voucher"
+              "lose_25_sovs_missing_cab_voucher"
             ],
             "satirical_beat": "nft_metadata_minted_0317_am_gas_fee_dont_worry_about_it"
           }
@@ -973,7 +973,7 @@
             "location": "futon_under_buzzing_crts_led_strips",
             "item_gained": "nft_02_pixelated_kebab_monkey_scratched",
             "status_applied": "hungover",
-            "gold_lost": 25,
+            "sovs_lost": 25,
             "satirical_metadata": "minted_0317_am_gas_fee_dont_worry_about_it"
           }
         },
@@ -994,7 +994,7 @@
       "risk_reward_mechanics": {
         "notoriety_system": {
           "threshold_tracking": "each_transaction_raises_lowers_notoriety_meter",
-          "verification_fee_trigger": "hit_threshold_demands_gold_or_item_payment",
+          "verification_fee_trigger": "hit_threshold_demands_sovs_or_item_payment",
           "reputation_reset": "successful_transactions_lower_notoriety_over_time"
         },
         "shady_contracts": {
@@ -2128,7 +2128,7 @@
           "recurring_presence": "may_reference_brewbot_rebuild_in_future_encounters",
           "behavioral_patterns": {
             "tech_obsession": "immediately_starts_planning_next_ai_iteration_despite_failure",
-            "borrowed_money": "borrows_player_gold_for_server_costs_during_sleep",
+            "borrowed_money": "borrows_player_sovs_for_server_costs_during_sleep",
             "startup_delusion": "treats_total_failure_as_learning_opportunity_pivot"
           }
         },
@@ -2377,10 +2377,10 @@
             "type": "consumable_brew",
             "effects": {
               "hp_restore": 20,
-              "gold_bonus": 10,
+              "sovs_bonus": 10,
               "tourist_trapped_status": true
             },
-            "description": "solid_hp_recovery_with_gold_bonus_but_tourist_trapped_debuff_next_battle"
+            "description": "solid_hp_recovery_with_sovs_bonus_but_tourist_trapped_debuff_next_battle"
           },
           {
             "unlock_id": "algorithm_archive_access",
@@ -2428,7 +2428,7 @@
               "blockchain_bock_x2"
             ],
             "status_applied": "hungover",
-            "gold_lost": 15,
+            "sovs_lost": 15,
             "satirical_beat": "he_borrowed_for_server_costs_apartment_is_corner_of_office"
           }
         }

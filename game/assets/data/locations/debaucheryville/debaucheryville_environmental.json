@@ -3809,7 +3809,7 @@
         "substance_interactions": {
           "blockchain_bock_consumption": {
             "availability": "post_boss_defeat_reward_OR_vendor_purchase",
-            "positive_effect": "restore_20_hp_gain_10_gold",
+            "positive_effect": "restore_20_hp_gain_10_sovs",
             "negative_risk": "tourist_trapped_status_next_battle_first_strike_penalty",
             "description": "impressed_by_tech_forget_surroundings"
           },

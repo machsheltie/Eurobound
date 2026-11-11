@@ -237,6 +237,40 @@
       "ticket_price": 5,
       "effect": null,
       "description": "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier."
+    },
+    "candy_smokes": {
+      "display_name": "Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes",
+      "item_class": "permanent",
+      "source": "blacktie_event_kings_were_humming_01",
+      "effect": "Usable from inventory by any bro, never used up: +2 Bravado to the user for 60 seconds (does not stack with itself). While it lasts he offers one to every NPC he talks to; nobody accepts. Leaves a chalk ring on his mouth. +1 Charm with children only.",
+      "description": "A carton of children's candy cigarettes, the exact supply Aaron the Unflappable was running on at one in the morning, worn soft from several thousand openings and not one stick less full. The bros say you can't get these back home, they banned them, which tells you something. That's not candy, bro. That's his thing. It does not light. They have tried."
+    },
+    "members_card": {
+      "display_name": "The Member's Card",
+      "item_class": "quest",
+      "stat_modifiers": {
+        "bravado": 2
+      },
+      "source": "sinfonia_operahouse_blacktie_backroom_01",
+      "effect": "Satisfies the Black-Tie Attire requirement at the Backroom door. The +3 Charm or +3 Bravado door check and the 500 SOVS collateral still apply in full. Backroom staff greet the party on sight (+1 Charm with Backroom staff only). Accepted at no other door in the game.",
+      "description": "Black plastic, no name, no number, no expiry, cut in batches for anyone who has moved about 1,000 SOVS across the Backroom's tables, won or lost. The note with it says the house would be glad of your company again, which is true. Lord Pilsner says they're on a list now, a short one, somewhere in that building, and he would honestly try it at an airport."
+    },
+    "tractor_nft": {
+      "display_name": "\"She Thinks My Tractor's Sexy\" (Mint #42)",
+      "item_class": "quest",
+      "stat_modifiers": {
+        "bravado": 1
+      },
+      "source": "blacktie_event_kings_were_humming_01",
+      "effect": "Counts as one of the twelve Frat Bro NFT collection targets (Sinfonia's fourth). Examining it opens an expired Geocities page, autoplays a MIDI and adds one to a hit counter that starts at 000019. +2 Charm among the bros only. Worth 0 SOVS everywhere; cannot be sold, dropped or traded.",
+      "description": "A scratched aluminum token with a QR code on one face and MINT #42 on the other, smelling of Kahlúa and fresh-cut grass. The NFT is an eleven-frame GIF of a zero-turn mower doing donuts on a very good lawn while a pixel cowboy hat bounces slightly out of sync. Forty-one people got in before them, which Chadwick says makes it a position, not a souvenir. He has offered it to nine people."
+    },
+    "hamagotchi_consolation": {
+      "display_name": "Hamagotchi™ Virtual Hamster Pal",
+      "item_class": "permanent",
+      "source": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
+      "effect": null,
+      "description": "A waterlogged knockoff Tamagotchi with Hamstradamus's face decaled on the shell, delivered to the hostel door for losing. The buttons are corroded solid and the screen has shown the same flickering hamster ghost since 2003. The bros call it the oldest piece of technology any of them has ever owned. Don't touch it. You'll mess up the ghost."
     }
   }
 }
