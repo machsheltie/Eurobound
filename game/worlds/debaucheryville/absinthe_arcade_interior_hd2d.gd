@@ -149,8 +149,8 @@ const HALL_NPCS := {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/kenleigh.aseprite",
 		"content_px": 115.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-2.0, -3.1), "jobs": []},
 }
-## Cara's group is in the Arcade 20:00-02:00 only (round v32 group_schedule = evening). There's no game
-## clock yet, so they're always here until there is.
+## Cara's group is in the Arcade 20:00-02:00 only (round v32 group_schedule = evening); GameClock
+## keeps them always present until the clock goes live.
 const GROUP_HOURS := Vector2i(20, 2)
 const GROUP_IDS := ["woo_woo_whitney", "cara", "ashleigh", "brynleigh", "kenleigh"]
 ## Walking Pilsner up to the group (within this many painting units of Whitney) starts the approach.
@@ -287,7 +287,10 @@ func _ready() -> void:
 		payout_light.position = Vector3(6.6, 3.2, 2.8)
 		payout_light.visible = false
 		_diorama.add_child(payout_light)
+		night = GameClock.night_for_screen(GameState, night)
 		for npc_id: String in HALL_NPCS.keys():
+			if GROUP_IDS.has(npc_id) and not GameClock.group_present(GameState):
+				continue
 			var spec: Dictionary = HALL_NPCS[npc_id]
 			var npc := HallNpc.new()
 			npc.name = npc_id
@@ -298,6 +301,7 @@ func _ready() -> void:
 			npc.add_to_group(ACTOR_GROUP)
 			npcs[npc_id] = npc
 		jakub = npcs["jakub_tokens_dvorak"]
+		jakub.late = GameClock.late(GameState)
 		state = GameState
 		dialogue = DialogueBox.new()
 		dialogue.name = "dialogue"
@@ -378,7 +382,7 @@ func _on_claw_finished(_result: Dictionary) -> void:
 ## Win: tickets (and any drops). Loss: everyone at 1 HP, still in front of the cabinet (ruling
 ## ef_arcade_loss). Run: tokens stay spent, HP kept (ef3_run).
 func _on_battle_finished(outcome: String, id: String) -> void:
-	_banter_pending = GrandpaProvides.banter_due(state)
+	_banter_pending = npcs.has("woo_woo_whitney") and GrandpaProvides.banter_due(state)  # trigger A: group at the bar
 	var result := ArcadeBattle.settle(id, battle_core, GameState)
 	battle_core = null
 	battle_screen = null
@@ -447,7 +451,7 @@ func _stage_grandpa() -> void:
 
 ## Scene 2's approach: after the banter, walking Pilsner up to the group plays it.
 func _on_group_approach(body: Node3D) -> void:
-	if body != _player or _scene_running or not GrandpaProvides.approach_due(state):
+	if body != _player or _scene_running or not npcs.has("woo_woo_whitney") or not GrandpaProvides.approach_due(state):
 		return
 	_scene_running = true
 	_player.input_locked = true
