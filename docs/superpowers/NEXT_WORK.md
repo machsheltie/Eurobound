@@ -620,3 +620,4 @@ Open question: should it, and to what depth?
   - **Grandpa Provides scene:** "Ask chatgpt in its chat window to review and find the interaction between the bartender and the bros as there are lines and we are missing them. The entire interaction here between them is off."
   - **fratbronft.md conflict:** "Show me all and I will decide case by case."
   - Unanswered: the Beanie claw's price; 5 tokens stays as a placeholder.
+- **(Round v29 resubmit, 2026-11-11 15:32)** The Beanie Baby claw costs **2 tokens** a play. The rigged claw stays at 5.

@@ -313,8 +313,8 @@
       ],
       "cost": {
         "item": "item_absinthe_arcade_token",
-        "quantity": 5,
-        "quantity_status": "PLACEHOLDER: price per play UNRULED (round v29 beanie_price; 5 tokens kept as placeholder)",
+        "quantity": 2,
+        "quantity_status": "author ruling 2026-11-11 (beanie_price: two)",
         "per": "attempt"
       },
       "mechanics": {
@@ -398,7 +398,7 @@
         "prize_pool_authority": "author, Writers' Room desk 2026-11-11 15:21 (\"Approve Gemini's favourites\"; Minty's poem reworded to SOVS); WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
         "sovs_payout": 0
       },
-      "numbers_authority": "price per play UNRULED (round v29 beanie_price); prize-or-nothing set by Claude under the round v25 delegation",
+      "numbers_authority": "price 2 tokens ruled by the author 2026-11-11; prize-or-nothing set by Claude under the round v25 delegation",
       "states": [
         "idle",
         "insert_token",
