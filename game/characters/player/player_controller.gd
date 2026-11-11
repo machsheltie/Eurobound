@@ -108,6 +108,23 @@ func _unhandled_input(event: InputEvent) -> void:
 	if not input_locked and event.is_action_pressed("interact"):
 		get_viewport().set_input_as_handled()
 		try_interact()
+	elif not input_locked and event.is_action_pressed("menu"):
+		get_viewport().set_input_as_handled()
+		open_menu()
+
+
+## Opens the field menu; the bros stay put (and the clock with them) until it closes.
+func open_menu() -> FieldMenu:
+	var state := get_tree().root.get_node_or_null("GameState")
+	if state == null or state.party.is_empty():
+		return null
+	input_locked = true
+	var menu := FieldMenu.new()
+	menu.name = "field_menu"
+	menu.setup(state)
+	get_parent().add_child(menu)
+	menu.closed.connect(func() -> void: input_locked = false)
+	return menu
 
 
 ## Turns the leader to face a named direction ("north" walks away from a north-looking camera).
@@ -235,12 +252,14 @@ static func ensure_input_actions() -> void:
 		"move_left": [KEY_A, KEY_LEFT], "move_right": [KEY_D, KEY_RIGHT],
 		"interact": [KEY_E, KEY_SPACE, KEY_ENTER],
 		"cancel": [KEY_ESCAPE, KEY_BACKSPACE, KEY_Q],
+		"menu": [KEY_ESCAPE],          # round v36: Esc / Start opens the field menu
 	}
 	var pads := {
 		"move_up": JOY_BUTTON_DPAD_UP, "move_down": JOY_BUTTON_DPAD_DOWN,
 		"move_left": JOY_BUTTON_DPAD_LEFT, "move_right": JOY_BUTTON_DPAD_RIGHT,
 		"interact": JOY_BUTTON_A,
 		"cancel": JOY_BUTTON_B,
+		"menu": JOY_BUTTON_START,
 	}
 	var axes := {
 		"move_up": [JOY_AXIS_LEFT_Y, -1.0], "move_down": [JOY_AXIS_LEFT_Y, 1.0],
