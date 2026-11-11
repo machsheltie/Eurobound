@@ -105,8 +105,8 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
   bars and other venues are locations and keep parody names.
   **Pre-ruled 2026-08-04:** Party Monk's HOLIDAY INN EXPRESS bathrobe easter egg — KEEP (author
   ruling; do not relitigate in the brands sweep).
-- **Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
-  idea.
+- ~~**Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
+  idea.~~ **RESOLVED: filled by America Online** (jukebox track 47, The Craic Tax; `fratbronft.md`, `legacy_vault_cards.md` Card 12).
 - **Shamsterdam's 4 brewery names** (author to mint; ruled 2026-08-04 that every city has 4
   breweries): ~~rename "Brouwerij de Molen" (REAL Dutch brewery — brand liability, zero joke)~~
   **RESOLVED 2026-11-10: renamed The Wobbly Windmill Brewery; references swept.** Still open:
@@ -653,3 +653,7 @@ Open question: should it, and to what depth?
   - The Arcade NPC sprites are approved: Jakub, Tomáš, Cara, Woo Woo Whitney, Brynleigh, Ashleigh, Kenleigh and Accounts Receivable.
   - Cara's group is in the Arcade from 20:00 to 02:00.
   - Jakub's asleep pose is to be shrunk to his standing scale.
+- **(Round v33, 2026-11-11) 3D session budget approved as written.** Source: docs/superpowers/specs/2026-11-11-3d-session-budget-draft.md, bead Eurobound-wv6.
+  - Rules 1-8 are approved.
+  - The numbers are approved: 3 Tripo tries per asset stage, 15 Blender calls per stage, and a hand-off at about 150K tokens.
+  - Tripo runs through its API by default; the browser is used only for Asset Extraction. This changes the "Tripo in the browser" wording in 3d_asset_rules.md.
