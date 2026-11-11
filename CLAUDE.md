@@ -1,6 +1,6 @@
-# Project Instructions for AI Agents
+# Beads (bd) for Eurobound
 
-This file provides instructions and context for AI coding agents working on this project.
+The main project instructions are in `.claude/CLAUDE.md`. This file holds the beads block that `bd setup` manages, plus the Eurobound rules that qualify it.
 
 <!-- BEGIN BEADS INTEGRATION v:1 profile:minimal hash:1105d646 -->
 ## Beads Issue Tracker
@@ -57,21 +57,16 @@ This protocol applies when ending a Beads implementation workflow. It is subordi
 - If a required sync or push is blocked, stop and report the exact command and error.
 <!-- END BEADS INTEGRATION -->
 
+## Beads: rules specific to Eurobound
 
-## Build & Test
+These qualify the generated block above. Where the two disagree, these win. They sit outside the markers so re-running `bd setup` cannot overwrite them.
 
-_Add your build and test commands here_
-
-```bash
-# Example:
-# npm install
-# npm test
-```
-
-## Architecture Overview
-
-_Add a brief overview of your project architecture_
-
-## Conventions & Patterns
-
-_Add your project-specific conventions here_
+- **One identity: `machsheltie`.** It is `git user.name` and what `bd` derives its actor from. `heirr` is the Windows account, not an identity. Never pass an assignee inferred from the environment: omit `-a`, or pass `-a machsheltie`.
+- **Run `bd` from the repository root.**
+- **What goes where:**
+  - **Work state** (open tasks, what is blocked, which round is open, what waits on the author) → beads issues. Use `bd dep add` for blockers; an item waiting on an author answer gets the label `author-ruling`.
+  - **Canon and author rulings** → the rulings ledger (`docs/superpowers/NEXT_WORK.md`, economy spec §0a). A bead may point at a ruling; it never replaces the ledger entry. Search canon with `tools/canon_index` (see its README).
+  - **How the author wants agents to work** → the existing Claude auto-memory. `bd remember` is for durable technical findings (tool gotchas, pipeline facts). Do not migrate or delete the auto-memory without an author ruling.
+- **Content work still needs author rulings.** A bead for new content, story, mechanics or numbers records the question; it is not permission to invent the answer (`.claude/CLAUDE.md`, "Ask the author first").
+- **Write beads for a cold reader:** name the file and line, what is wrong, and what "done" looks like.
+- **Git:** commit or push only when the author asks (conservative profile). `bd` sync rides on the git remote; do not run Dolt remote sync unasked.
