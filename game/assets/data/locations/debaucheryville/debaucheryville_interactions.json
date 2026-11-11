@@ -147,13 +147,13 @@
           "ddr_arrow_glyphs": "lore_written_in_authentic_DDR_arrow_notation"
         },
         {
-          "graffiti_id": "pixelated_adult_artwork",
+          "graffiti_id": "pixelated_boobs",
           "location": "main_wall_visible_under_blacklight",
-          "content": "crude_pixelated_adult_artwork_in_retro_gaming_style",
-          "visibility": "blacklight_only_age_appropriate_pixel_art",
+          "content": "pixelated_boobs_blocky_pixels_under_a_big_CENSORED_bar",
+          "visibility": "blacklight_only",
           "retro_art_style": "authentic_early_2000s_pixel_art_aesthetic",
-          "comedy_through_crudeness": "so_poorly_drawn_it_becomes_endearing",
-          "cultural_time_capsule": "represents_specific_era_of_gaming_culture"
+          "art": "separate decal PNG by eurobound-ad (not painted into closet v2)",
+          "authority": "author round v35 closet_boobs = censor_bar: the doc's 'Pixelated boobs' stays, nothing visible under the bar"
         },
         {
           "graffiti_id": "fake_cheat_codes_collection",
