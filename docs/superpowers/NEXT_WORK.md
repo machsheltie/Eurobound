@@ -711,6 +711,13 @@ Eurobound-vyn.)
   - **"Pixelated boobs" graffiti decal approved:** crude pink pixel doodle, uncensored (`scratchpad art/v35/aa_closet_decal_pixel_graffiti.png`; to be copied to Assets with the closet).
   - **Drink tag:** every alcoholic drink and beer (signature beers, shots, absinthe and so on) counts as "a drink" for the clock's 10 minutes. Food, drugs and vapes don't.
   - The closet re-frame (v3) was pulled before review: still too close per eurobound-5d's measurements. v4 is being pre-checked.
+- **(Round v38, 2026-11-11) Closet v5 approved, Taproom v4 changes, Bravado clean-up.**
+  - **Closet art v5 approved** (`concepts/aa_interior_maintenance_closet_v5_night.png`; ChatGPT-zoomed-out, with the canon text patched back in). The bros walk in the back ~55% of the floor, and the approved graffiti decal goes on the left wall between the door and the "He moaned" line.
+  - **Taproom art v4: changes.** Author: "the problem now is with the bottle fully intact, it is too tall for a bartender to even work *at* the bar." Version 5 to follow.
+  - **Bravado clean-up (bead Eurobound-5i3):**
+    - e3_bravado_cells: merge each "+N Bravado | +Bravado temporarily" pair into one Bravado effect.
+    - e3_sp_key: rename `sp_restore` to `heal_bravado` now.
+    - e3_template_note: rewrite the ability template's SP notes for Bravado.
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
 Moved verbatim from the work-tracking sections above; evidence appended to each.
