@@ -220,3 +220,28 @@ func test_arcade_battle_cabinet_villains_get_half_again_hp() -> void:
 		var base := int(engine[e.id]["max_hp"])
 		assert_eq(e.max_hp, roundi(base * 1.5), e.id)
 		assert_eq(e.hp, e.max_hp, e.id)
+
+
+func test_arcade_battle_every_villain_has_a_battle_sprite() -> void:
+	# Arrange: every villain id, every Ninja palette and every Palette Swap colourway.
+	var units := []
+	for id: String in ArcadeBattle._json(ArcadeBattle.BATTLE_DATA)["villains"].keys():
+		if id == ArcadeBattle.NINJA:
+			continue  # a Ninja always has a palette; those are added below
+		var u := BattleUnit.new()
+		u.id = id
+		units.append(u)
+	for pal in ["garlic", "chili", "mystery_brown"]:
+		var n := BattleUnit.new()
+		n.id = ArcadeBattle.NINJA
+		n.palette = pal
+		units.append(n)
+	# Act
+	var missing := []
+	for u: BattleUnit in units:
+		for i in BattleScreen.SWAP_COLORS.size():
+			var path := BattleScreen.enemy_sprite_path(u, i)
+			if not ResourceLoader.exists(path):
+				missing.append(path)
+	# Assert
+	assert_eq(missing, [])

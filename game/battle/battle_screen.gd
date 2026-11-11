@@ -6,8 +6,9 @@ extends CanvasLayer
 ## east, the villains on the right. Text box on top, the bros' HP and Bravado along the bottom,
 ## the command menu bottom right. BattleCore does the rules; this only shows them and takes input.
 ##
-## Villains have no battle sprites yet: each is a placeholder card with its nameplate until the
-## art lands.
+## Villains use their battle sprites (still frames facing west, ad 3913d0a; pending author review),
+## at the bros' pixel density with their feet on the floor. A villain with no sprite falls back to
+## a coloured placeholder card.
 
 signal finished(outcome: String)
 
@@ -23,6 +24,11 @@ const CAMERA_POS := Vector3(0, 3.0, 9.0)
 const CAMERA_LOOK := Vector3(0, 1.9, 0)
 const BRO_SPOTS := [Vector3(-3.0, 0, 0.3), Vector3(-4.1, 0, -0.6), Vector3(-1.9, 0, -1.1)]
 const ENEMY_SPOTS := [Vector3(2.0, 0, -0.9), Vector3(3.4, 0, -1.9), Vector3(4.6, 0, -2.6)]
+const ENEMY_SPRITE_DIR := "res://assets/characters/enemies/absinthe_arcade/"
+## Palette Swap copies take these gi colourways in release order (villain doc).
+const SWAP_COLORS := ["teal", "cocktail_pink", "scrubs_green", "nicotine_beige"]
+## The highest a villain nameplate sits (arena units), clear of the text box.
+const MAX_TAG_Y := 2.9
 const CARD_COLORS := [Color(0.55, 0.25, 0.75), Color(0.2, 0.55, 0.45), Color(0.75, 0.4, 0.15)]
 
 var core: BattleCore
@@ -236,28 +242,51 @@ func _build_arena() -> void:
 		spr.position = BRO_SPOTS[i % BRO_SPOTS.size()]
 		_arena.add_child(spr)
 		_bodies[b] = spr
+	var swaps := 0
 	for i in core.enemies.size():
 		var e := core.enemies[i]
 		var card := Node3D.new()
 		card.position = ENEMY_SPOTS[i % ENEMY_SPOTS.size()]
-		var quad := MeshInstance3D.new()
-		var mesh := QuadMesh.new()
-		mesh.size = Vector2(1.2, 1.7)
-		quad.mesh = mesh
-		quad.position.y = 0.85
-		var mat := StandardMaterial3D.new()
-		mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
-		mat.albedo_color = CARD_COLORS[i % CARD_COLORS.size()]
-		mat.billboard_mode = BaseMaterial3D.BILLBOARD_FIXED_Y
-		quad.material_override = mat
-		card.add_child(quad)
+		var top := 1.7
+		var path := enemy_sprite_path(e, swaps)
+		if e.id == "player_two_palette_swap":
+			swaps += 1
+		if ResourceLoader.exists(path):
+			var spr := Sprite3D.new()
+			spr.name = "sprite"
+			spr.texture = load(path)
+			spr.pixel_size = PIXEL_SIZE
+			spr.billboard = BaseMaterial3D.BILLBOARD_FIXED_Y
+			spr.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
+			spr.shaded = false
+			spr.alpha_cut = SpriteBase3D.ALPHA_CUT_DISCARD
+			var h := float(spr.texture.get_height())
+			spr.offset = Vector2(0, h * 0.5)
+			spr.set_meta("path", path)
+			card.add_child(spr)
+			# Tag over the painted top of the sprite, kept under the text box.
+			var used := spr.texture.get_image().get_used_rect()
+			top = minf((h - used.position.y) * PIXEL_SIZE, MAX_TAG_Y)
+		else:
+			var quad := MeshInstance3D.new()
+			var mesh := QuadMesh.new()
+			mesh.size = Vector2(1.2, 1.7)
+			quad.mesh = mesh
+			quad.position.y = 0.85
+			var mat := StandardMaterial3D.new()
+			mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+			mat.albedo_color = CARD_COLORS[i % CARD_COLORS.size()]
+			mat.billboard_mode = BaseMaterial3D.BILLBOARD_FIXED_Y
+			quad.material_override = mat
+			card.add_child(quad)
+		card.set_meta("top", top)
 		var name_tag := Label3D.new()
 		name_tag.text = e.display_name
 		name_tag.billboard = BaseMaterial3D.BILLBOARD_ENABLED
 		name_tag.font_size = 40
 		name_tag.outline_size = 12
 		name_tag.pixel_size = 0.0045
-		name_tag.position.y = 1.0
+		name_tag.position.y = top + 0.15
 		name_tag.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		name_tag.width = 240.0
 		name_tag.no_depth_test = true
@@ -395,6 +424,8 @@ func _update_bodies() -> void:
 		var n: Node3D = _bodies[u]
 		var gone := (not u.is_party() and u.is_down()) or u.gone_turns > 0
 		n.visible = not gone
+		if not u.is_party() and n.has_node("sprite"):
+			_refresh_enemy_sprite(u, n.get_node("sprite") as Sprite3D)
 		if u.is_party():
 			(n as AnimatedSprite3D).modulate = Color(0.4, 0.4, 0.45) if u.is_down() else Color.WHITE
 		if int(_last_hp.get(u, u.hp)) > u.hp:
@@ -411,4 +442,26 @@ func _update_bodies() -> void:
 			var t: BattleUnit = pool[clampi(target_cursor, 0, pool.size() - 1)]
 			if _bodies.has(t):
 				_marker.visible = true
-				_marker.position = (_bodies[t] as Node3D).position + Vector3(0, 2.25 if t.is_party() else 2.0, 0)
+				var tn := _bodies[t] as Node3D
+				_marker.position = tn.position + Vector3(0, 2.25 if t.is_party() else float(tn.get_meta("top", 1.7)) + 0.55, 0)
+
+
+## The battle sprite for a villain: Ninjas by their current palette (Sauce Swap trades them),
+## Palette Swaps by release order.
+static func enemy_sprite_path(e: BattleUnit, swap_index: int = 0) -> String:
+	match e.id:
+		"condiment_clan_ninja":
+			return ENEMY_SPRITE_DIR + "condiment_clan_ninja_%s_battle_w.png" % e.palette
+		"player_two_palette_swap":
+			return ENEMY_SPRITE_DIR + "player_two_palette_swap_%s_battle_w.png" % SWAP_COLORS[swap_index % SWAP_COLORS.size()]
+	return ENEMY_SPRITE_DIR + e.id + "_battle_w.png"
+
+
+## A Ninja whose palette changed (Sauce Swap) changes sprite.
+func _refresh_enemy_sprite(e: BattleUnit, spr: Sprite3D) -> void:
+	if e.id != "condiment_clan_ninja":
+		return
+	var path := enemy_sprite_path(e)
+	if path != String(spr.get_meta("path", "")) and ResourceLoader.exists(path):
+		spr.texture = load(path)
+		spr.set_meta("path", path)
