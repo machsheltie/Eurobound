@@ -160,11 +160,11 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 **Chemical Support**
 | Item | Price | Effect | Notes |
 |------|-------|--------|-------|
-| Energy Shot | 5 SOVS | +20 SP, +Speed (1 hour), crash risk | "Liquid motivation. The crash is real." |
-| Caffeine Pills (6) | 8 SOVS | +10 SP per pill, controlled release | "More controlled. Still artificial. Works." |
+| Energy Shot | 5 SOVS | +20 Bravado, +Speed (1 hour), crash risk | "Liquid motivation. The crash is real." |
+| Caffeine Pills (6) | 8 SOVS | +10 Bravado per pill, controlled release | "More controlled. Still artificial. Works." |
 | Electrolyte Packet | 3 SOVS | +10 HP, prevents Dehydration status | "Hydration is survival. This helps." |
 | Breath Mints (tin) | 4 SOVS | +Charm in close conversation | "For after the kebab. Or during. No judgment." |
-| Energy Gum | 6 SOVS | +15 SP, +fresh breath, subtle | "Caffeine without the bottle. Sophisticated." |
+| Energy Gum | 6 SOVS | +15 Bravado, +fresh breath, subtle | "Caffeine without the bottle. Sophisticated." |
 
 **Tactical Accessories**
 | Item | Price | Effect | Notes |
@@ -332,7 +332,7 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 - **Earplugs**: Reduce Confusion status from music, prevent next-day debuffs
 - **Strobe Shades**: Reduce Confusion from lights, prevent Strobe Headache
 - **Glow Gear**: Mood bonuses, party visibility, social interactions
-- **Energy Items**: SP management, crash prevention (or delay)
+- **Energy Items**: Bravado management, crash prevention (or delay)
 - **Tactical Gear**: Theft prevention, practical utility
 
 ### Cross-Location Dependencies

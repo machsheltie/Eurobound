@@ -153,7 +153,7 @@ All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALL
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|---------------|----------------|
 | The rest of her kebab | Free | Half a kebab | Opens the couchsurf conversation; genuinely offered, genuinely eaten |
-| Floor space, one night | Free | Zero sleep | Couchsurf host; canonical **−10 SP** because of the 6am ukulele |
+| Floor space, one night | Free | Zero sleep | Couchsurf host; canonical **−10 Bravado** because of the 6am ukulele |
 | *Ballad of the Bros* (collectible) | Free, non-negotiable, unavoidable | High | Canonical collectible; used later in Sinfonia to win a music-based mini-game |
 | Unsolicited opinion on your itinerary | Free | Negative | Flavor dialogue; she will tell you the thing you booked is "not the real one" |
 
@@ -241,14 +241,14 @@ The ballad grows. Early game it is one verse. After the couchsurf it is two. Aft
 - **Quest**: Couchsurfing Chronicles — Debaucheryville entry #2
 - **Role**: Couchsurf Host / Collectible Source
 - **Trigger**: Accept her kebab offer and crash invitation at the Absinthe Arcade
-- **Outcome (canonical)**: **−10 SP** (no sleep, 6am ukulele) and the **Ballad of the Bros** collectible, used later in Sinfonia to win a music-based mini-game. Her ballad becomes a running joke among local backpackers
+- **Outcome (canonical)**: **−10 Bravado** (no sleep, 6am ukulele) and the **Ballad of the Bros** collectible, used later in Sinfonia to win a music-based mini-game. Her ballad becomes a running joke among local backpackers
 
 ### Secondary Quest — Nothing Is Getting Through
 - **Quest**: `debaucheryville_sidequest_nothing_is_getting_through_01`
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) attempts the couchsurf or a romance approach at the Absinthe Arcade
-- **Outcome**: Herp Rejection Scene fires (see Dialogue) — the on-the-spot composition and the hostel performance. No floor, no SP loss, no new item. The **existing** `Ballad of the Bros` collectible is unchanged; the "second movement" is narrative only. Scene is repeatable and the audience grows by one each time
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — "you cured the verse, you did not cure the *song*," "floor's still a no" — **and then she reverses on the spot and the couchsurf resolves normally**: canonical **−10 SP** and the **Ballad of the Bros** collectible, with the ukulele starting at 04:00 instead of 06:00 because she is excited. She reverses for the material, not for him, and says so; she never lets them off the hook and the old verses are explicitly not retired. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
+- **Outcome**: Herp Rejection Scene fires (see Dialogue) — the on-the-spot composition and the hostel performance. No floor, no Bravado loss, no new item. The **existing** `Ballad of the Bros` collectible is unchanged; the "second movement" is narrative only. Scene is repeatable and the audience grows by one each time
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — "you cured the verse, you did not cure the *song*," "floor's still a no" — **and then she reverses on the spot and the couchsurf resolves normally**: canonical **−10 Bravado** and the **Ballad of the Bros** collectible, with the ukulele starting at 04:00 instead of 06:00 because she is excited. She reverses for the material, not for him, and says so; she never lets them off the hook and the old verses are explicitly not retired. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 
@@ -317,7 +317,7 @@ Transatlantic backpacker drift — an accent assembled from six hostels and no h
 
 ## 📝 Development Notes
 
-- All Chronicles canon is harvested: Absinthe Arcade meet, the last kebab, the crash offer, the 6am ukulele, "the way your aura screamed 'tourist'," the roommates' betting pool, **−10 SP**, the **Ballad of the Bros** collectible and its Sinfonia mini-game use, and the ballad becoming a running joke among local backpackers. Nothing reinvented
+- All Chronicles canon is harvested: Absinthe Arcade meet, the last kebab, the crash offer, the 6am ukulele, "the way your aura screamed 'tourist'," the roommates' betting pool, **−10 Bravado**, the **Ballad of the Bros** collectible and its Sinfonia mini-game use, and the ballad becoming a running joke among local backpackers. Nothing reinvented
 - Hostel migration is canon from `absinthearcade.md` ("Backpack Girl travels between hostels") — her couchsurf interior may legitimately differ between visits
 - **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Her lines live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Backpack Girl Who Never Left"; this file and `nothingisgettingthrough.md` both point at it and neither duplicates the text
 - **No new item is minted by the Herp rejection scene.** The `Ballad of the Bros` collectible is untouched; the "second movement" exists only in dialogue and ambient NPC chatter. Any decision to make it a distinct collectible belongs to an items pass, not this file

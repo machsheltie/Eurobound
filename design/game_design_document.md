@@ -10,9 +10,9 @@ Game Loop
 Explore overworld → Trigger visible encounters → EarthBound-style battle → Earn EXP, items, gear → City boss → Story advancement + new skills → Optional sidequests (NFT scavenger, Wi‑Fi/ICQ chats) → Next city
 
 Core Systems Snapshot
-• Stats: HP (rolling), SP (skills), Offense, Defense, Speed, Charm, Luck, Grit (crit resist)
+• Stats: HP (rolling), Bravado (skills), Offense, Defense, Speed, Charm, Luck, Grit (crit resist)
 • Status Effects: Hungover (-Offense, -Speed), Grease Fingers (-Accuracy), Embarrassed (-Offense, disables Taunt), Thirsty (regen halved), Inspired (+Charm/+Crit)
-• Gear Slots: Weapon, Shirt, Pants, Shoes (+ optional Trinket)
+• Gear Slots (per design/templates/equipment_template.md, author round v36): weapon / head / torso / legs / feet / necklace / ring / watch-bracelet / phone / accessory / combo set
 • Encounters: visible enemies; preemptive/back attacks; auto‑win vs. very weak foes
 • Items/Skills (examples): Electrolyte Pack, Charcoal Tabs, Iced Coffee, Roast Line, Look of Disgust, Glow‑Up Aura
 
@@ -134,7 +134,7 @@ City Boss — Count Velvet Absinthe
 • Reward: Trinket “Velvet Rope Clip” (+Charm, discounts in certain shops), access to Shadow Exchange premium stock.
 
 Shops/Items
-• Absinthe Drops (SP small, chance Confused), Late‑Night Kebab (HP+ but chance Grease Fingers), Club Earplugs (reduce Confusion).
+• Absinthe Drops (Bravado small, chance Confused), Late‑Night Kebab (HP+ but chance Grease Fingers), Club Earplugs (reduce Confusion).
 • Free Wi‑Fi: Hostel lobby, 24‑hr café, metro platform. ICQ threads reveal a scammer ring; optional sting operation sidequest.
 • “Lockpick Lullaby”: fetch a musician’s lost case from a pickpocket maze.
 • “Club Flyers”: poster a rival DJ’s gig; choose truth or slander for rewards.
@@ -163,7 +163,7 @@ City Boss — Maestro Vice von Strauss
 
 Shops/Items
 • Sachertorte Slice (HP++, Thirsty cured), Espresso Ristretto (Speed up, jitter -Luck), Formal Gloves (reduce Embarrassed).
-• Opera Lobby, university café, museum foyer; ICQ threads: art theft hints; “Mom” gushes about how proud she is — restore small SP on first call per city.
+• Opera Lobby, university café, museum foyer; ICQ threads: art theft hints; “Mom” gushes about how proud she is — restore small Bravado on first call per city.
 • “Mask Etiquette Exam”: learn the dance steps to infiltrate the ball (rhythm + memory).
 • “Authenticity Check”: prove a painting is fake using gossip + item combos.
 • NFT: 3 hidden acquisitions (auction QR catalog, backstage terminal, latte art AR filter).
@@ -254,7 +254,7 @@ Dialogue pokes fun at crypto hype, get-rich-quick schemes, and frat bro FOMO cul
 Hidden references tie into other Easter eggs across the game, including Darkweb Dossier ICQ pop-ups and bulletin board posters.Wi‑Fi Hotspots & ICQ Chats (Save + Flavor + Hint System)
 • Clearly signed “FREE Wi‑Fi” locations double as save points and optional chat scenes.
 • ICQ contacts: Mom, Bestie, Hot Kroger Guy (cameo), Random Forum Troll, Shadow Tipster.
-• Uses: save, receive rumor-hints, unlock small healing or SP once per hotspot, drip‑feed world lore.
+• Uses: save, receive rumor-hints, unlock small healing or Bravado once per hotspot, drip‑feed world lore.
 • Accessibility: toggle chat speed; long-press to fast‑scroll.
 Progression & Rewards
 • City completion grants unique trinkets and unlocks cosmetic palettes.
@@ -284,9 +284,9 @@ Humor-forward writing, with each battle encounter dripping with personality.
 Game Structure:
 Mechanics:
 Combat: Front-view, menu-driven, rolling HP meter, SMAAAASH crits, visible status effects.
-Stats: HP, SP, Offense, Defense, Speed, Charm, Luck, Grit (crit resist).
+Stats: HP, Bravado, Offense, Defense, Speed, Charm, Luck, Grit (crit resist).
 Status Effects: Hungover, Grease Fingers, Embarrassed, Thirsty, Inspired.
-Gear Slots: Weapon, Shirt, Pants, Shoes, (optional Trinket).
+Gear Slots (per design/templates/equipment_template.md, author round v36): weapon / head / torso / legs / feet / necklace / ring / watch-bracelet / phone / accessory / combo set.
 Items: Buff potions, debuff cures, speed/crit boosters.
 Skills: Roast Line, Look of Disgust, Glow-Up Aura, etc.
 Encounters: Visible enemies with preemptive/back attack logic; auto-win vs weak foes.

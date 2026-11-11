@@ -258,7 +258,7 @@ The show. Eleven years of a sold-out Saturday that she built, in a house that sp
 | Signed programme | 10 SOVS | 10 SOVS, and she signs both names | Lore item; examine text carries the second signature |
 | Backstage Passes (DIE, FLEDERMAUS!) | Free, if she likes you | 60 SOVS at the box office | Gates the couchsurf trigger |
 | The Nightcap | Free, and mandatory in spirit | One (1) Jägerbomb | Scripted event; see below |
-| Couchsurf stay (co-hosted with Adelheid) | Free | — | Full HP/SP restore; "Star Quality" +3 Charm for 4 hours; "Full Face" cosmetic state until the party next sleeps; one permanent Bravado point |
+| Couchsurf stay (co-hosted with Adelheid) | Free | — | Full HP/Bravado restore; "Star Quality" +3 Charm for 4 hours; "Full Face" cosmetic state until the party next sleeps; one permanent Bravado point |
 
 ### Hidden Details / Easter Eggs
 - **Examine the door plate**: *"Brass. Engraved. W. KRANZLER. Below it, on a card in the frame, in a different hand: 'and Madame Fortissima, who is also her.'"*

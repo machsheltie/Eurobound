@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | Belgian-style golden ale with noble hop character [source: design/items/brewery_passport_book_sinfonia.md L185] |
 | **ABV** | 6.5% [source: design/items/brewery_passport_book_sinfonia.md L186] |
-| **Effects** | +30 HP, +15 SP [source: design/items/brewery_passport_book_sinfonia.md L187]; "Noble Blood" (+2 Charm, +2 Style for 45 min) [source: design/items/brewery_passport_book_sinfonia.md L188] |
+| **Effects** | +30 HP, +15 Bravado [source: design/items/brewery_passport_book_sinfonia.md L187]; "Noble Blood" (+2 Charm, +2 Style for 45 min) [source: design/items/brewery_passport_book_sinfonia.md L188] |
 | **Risk** | none [source: design/items/brewery_passport_book_sinfonia.md L189] |
 | **Price** | 10 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book_sinfonia.md L190] |
 | **Special** | served in a crown-shaped glass, which you keep (adds 3 SOVS) [source: design/items/brewery_passport_book_sinfonia.md L193] |

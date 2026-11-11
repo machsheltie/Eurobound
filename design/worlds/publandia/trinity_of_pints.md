@@ -378,7 +378,7 @@ only the stamp beat itself moved to the Brewmaster.
 | Stat | Value |
 |------|-------|
 | HP Restoration | +25 HP |
-| SP Restoration | +20 SP |
+| Bravado Restoration | +20 Bravado |
 | Special Effect | "Scholar's Focus" — +3 INT for 30 minutes |
 | Status Risk | 10% chance of "Pretentious" (dialogue becomes insufferable) |
 | Purchase Price | 9 SOVS |

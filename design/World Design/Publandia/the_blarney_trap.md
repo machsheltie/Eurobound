@@ -150,7 +150,7 @@ This is the bros' base of operations because it appeared first in their search r
 ### Hub Functions
 
 **Rest Point**
-- Rooms restore HP/SP based on quality and noise level
+- Rooms restore HP/Bravado based on quality and noise level
 - Street-facing rooms: 70% restoration (loud but atmospheric)
 - Courtyard rooms: 85% restoration (quieter)
 - Premium suites: Full restoration + status effect cures
@@ -175,24 +175,24 @@ This is the bros' base of operations because it appeared first in their search r
 ### Accommodation Options
 | Room | Price/Night | Restoration | Noise Level | Features |
 |------|-------------|-------------|-------------|----------|
-| Shared Dorm | 35 SOVS | 50% HP/SP | Extreme | Snoring NPCs, "Embarrassed" risk |
-| Street-Facing Single | 55 SOVS | 70% HP/SP | High | Authentic atmosphere |
-| Courtyard Single | 70 SOVS | 85% HP/SP | Moderate | Actually sleepable |
-| Street-Facing Double | 75 SOVS | 70% HP/SP | High | Bros can share |
-| Courtyard Double | 90 SOVS | 85% HP/SP | Moderate | Better value |
-| The Yeats Suite | 120 SOVS | 100% HP/SP | Low | Quotes included |
-| The Joyce Suite | 120 SOVS | 100% HP/SP | Low | Layout confusing |
-| The Wilde Suite | 150 SOVS | 100% HP/SP + buff | Low | "Wit Sharpened" status |
-| The Behan Suite | 150 SOVS | 100% HP/SP | Low | Minibar pre-stocked |
+| Shared Dorm | 35 SOVS | 50% HP/Bravado | Extreme | Snoring NPCs, "Embarrassed" risk |
+| Street-Facing Single | 55 SOVS | 70% HP/Bravado | High | Authentic atmosphere |
+| Courtyard Single | 70 SOVS | 85% HP/Bravado | Moderate | Actually sleepable |
+| Street-Facing Double | 75 SOVS | 70% HP/Bravado | High | Bros can share |
+| Courtyard Double | 90 SOVS | 85% HP/Bravado | Moderate | Better value |
+| The Yeats Suite | 120 SOVS | 100% HP/Bravado | Low | Quotes included |
+| The Joyce Suite | 120 SOVS | 100% HP/Bravado | Low | Layout confusing |
+| The Wilde Suite | 150 SOVS | 100% HP/Bravado + buff | Low | "Wit Sharpened" status |
+| The Behan Suite | 150 SOVS | 100% HP/Bravado | Low | Minibar pre-stocked |
 
 ### Pub Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Notes |
 |------|-------|-----------|---------------|-------|
 | Guinness (Pint) | 8 SOVS | +15 HP | Progresses toward "Scuttered" | The 119.5-second ritual |
 | Smithwick's (Pint) | 7 SOVS | +12 HP | Progresses toward "Scuttered" | Locals' alternative |
-| Whiskey (Jameson) | 8 SOVS | +10 HP, +5 SP | +Bravado temporarily | Standard pour |
-| Whiskey (Premium) | 12-20 SOVS | +15 HP, +10 SP | +Bravado, +Charm | Impress the staff |
-| Irish Coffee | 10 SOVS | +20 HP, +15 SP | Caffeine + Alcohol balance | Tourist favorite |
+| Whiskey (Jameson) | 8 SOVS | +10 HP, +5 Bravado | +Bravado temporarily | Standard pour |
+| Whiskey (Premium) | 12-20 SOVS | +15 HP, +10 Bravado | +Bravado, +Charm | Impress the staff |
+| Irish Coffee | 10 SOVS | +20 HP, +15 Bravado | Caffeine + Alcohol balance | Tourist favorite |
 | Tayto Crisps | 3 SOVS | +5 HP | Absorbs some alcohol | Cheese & Onion or nothing |
 | Toastie | 8 SOVS | +25 HP | Absorbs significant alcohol | Pub food perfection |
 | Full Irish | 15 SOVS | +50 HP | Cures "The Fear," +Clarity | Morning recovery essential |
@@ -451,7 +451,7 @@ This is the bros' base of operations because it appeared first in their search r
 | Stat | Value |
 |------|-------|
 | HP Restoration | +35 HP |
-| SP Restoration | +10 SP |
+| Bravado Restoration | +10 Bravado |
 | Special Effect | "Comfortable Trap" — +10% Bravado retention for 1 hour |
 | Status Risk | 5% chance of "Contentment" (reduced urgency to leave current location) |
 | Purchase Price | 8 SOVS (only available at The Blarney Trap after unlock) |
@@ -468,8 +468,8 @@ This is the bros' base of operations because it appeared first in their search r
 | Location | Stamp Design | Unlock Condition | Signature Beer | Beer Effect |
 |----------|--------------|------------------|----------------|-------------|
 | The Blarney Trap | Celtic harp | Pint-Off/Toast/Regular | The Sweet Surrender | +35 HP, +10% Bravado retention |
-| The Stoutworks Brewery | Copper still | Complete tour or dungeon | Vat Master's Reserve | +40 HP, +15 SP, 10% "Fermented Fury" buff |
-| Trinity of Pints | Scholarly cap | Complete drinking lecture | Academic Amber | +25 HP, +20 SP, temporary INT boost |
+| The Stoutworks Brewery | Copper still | Complete tour or dungeon | Vat Master's Reserve | +40 HP, +15 Bravado, 10% "Fermented Fury" buff |
+| Trinity of Pints | Scholarly cap | Complete drinking lecture | Academic Amber | +25 HP, +20 Bravado, temporary INT boost |
 | [Fourth Location TBD] | TBD | TBD | TBD | TBD |
 
 ### City Completion Reward

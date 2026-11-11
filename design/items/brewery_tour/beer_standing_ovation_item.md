@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | Sinfonian copper lager with dramatic finish [source: design/items/brewery_passport_book_sinfonia.md L174] |
 | **ABV** | 5.8% [source: design/items/brewery_passport_book_sinfonia.md L175] |
-| **Effects** | +25 HP, +10 SP [source: design/items/brewery_passport_book_sinfonia.md L176]; "Stage Presence" (+3 Charm for 30 min) [source: design/items/brewery_passport_book_sinfonia.md L177] |
+| **Effects** | +25 HP, +10 Bravado [source: design/items/brewery_passport_book_sinfonia.md L176]; "Stage Presence" (+3 Charm for 30 min) [source: design/items/brewery_passport_book_sinfonia.md L177] |
 | **Risk** | none [source: design/items/brewery_passport_book_sinfonia.md L178] |
 | **Price** | 8 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book_sinfonia.md L179] |
 | **Special** | served with a small bow, always [source: design/items/brewery_passport_book_sinfonia.md L182] |

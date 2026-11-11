@@ -165,7 +165,7 @@ The satire is the universal experience of the late-night convenience store trip:
 **Support — Enhancement Section**
 | Item | Base Price | 2AM+ Price | Effect | Notes |
 |------|------------|------------|--------|-------|
-| Caffeine Pills (6) | 6 SOVS | 8 SOVS | +10 SP per pill, controlled | "Precision energy" |
+| Caffeine Pills (6) | 6 SOVS | 8 SOVS | +10 Bravado per pill, controlled | "Precision energy" |
 | Lucky Club Stamp (Fake) | 8 SOVS | 10 SOVS | +5 Confidence, no actual effect | "Placebo power" |
 | Emergency Phone Charger | 20 SOVS | 25 SOVS | Full phone resurrection | "Your lifeline restored" |
 | Cigarettes | 8 SOVS | 10 SOVS | -5 HP, +10 Social in certain contexts | "If you must" |
@@ -326,7 +326,7 @@ The satire is the universal experience of the late-night convenience store trip:
 - **Theme**: The 3 AM economy, desperation pricing, survival commerce
 
 ### Status Effect Economy
-- **Energy Drinks**: SP management, speed boosts, crash risks
+- **Energy Drinks**: Bravado management, speed boosts, crash risks
 - **Hangover Kit**: Cure for Hangover status
 - **Kebab**: HP restoration with dexterity penalty
 - **Hair of the Dog**: Hangover cure with accuracy cost

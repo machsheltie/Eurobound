@@ -340,7 +340,7 @@ model is dead) and not as the stamp beat itself:*
 |--------------|-------|--------------|---------------|
 | Tuition (Cover Charge) | 10 SOVS | A 10 SOVS cover for a themed pub, plus a laminated card and a glass — roughly fair | "Enrolled" status, Student ID, one branded pint glass ("textbook"), access to all courses for the evening, graduation eligibility |
 | Alumni Rate | 5 SOVS | Fair | Reduced tuition on presentation of a previous diploma; Advanced Course access; reserved Great Hall seating |
-| Academic Amber (pint) | 9 SOVS | Above market for a 4.8% Irish red; he says so himself | +25 HP, +20 SP, "Scholar's Focus" (+3 INT, 30 min), 10% chance of "Pretentious" |
+| Academic Amber (pint) | 9 SOVS | Above market for a 4.8% Irish red; he says so himself | +25 HP, +20 Bravado, "Scholar's Focus" (+3 INT, 30 min), 10% chance of "Pretentious" |
 | Diploma (printed) | Included | Costs him less than a SOV | Physical certificate, wall-mountable, LinkedIn-uploadable |
 | Academic regalia hire (selfie spot) | Free | Free | Robe, mortarboard and diploma props for the Quad photo backdrop |
 
@@ -498,7 +498,7 @@ He also soft-gates the Advanced Course list behind Graduate status.
 | Student ID (laminated) | On enrollment, 10 SOVS | Yes | Marks "Enrolled" status; required for all course access |
 | Branded Pint Glass ("textbook") | On enrollment | Yes | Cosmetic inventory item; examine text is the faux-Latin motto, misprinted |
 | Diploma (B.B.S.) | On graduation | Yes | Proof of graduation; grants Alumni Rate on presentation; displayable |
-| Academic Amber | Post-graduation, 9 SOVS/pint | No (consumable) | +25 HP, +20 SP, "Scholar's Focus" +3 INT 30 min, 10% "Pretentious" risk |
+| Academic Amber | Post-graduation, 9 SOVS/pint | No (consumable) | +25 HP, +20 Bravado, "Scholar's Focus" +3 INT 30 min, 10% "Pretentious" risk |
 
 ⚠ AUTHOR-REVIEW: the Trinity of Pints Stamp and the Valedictorian Medal rows formerly here are
 removed — the stamp is acquired from the Brewmaster, not Cathal (see `npc_brendan_nolan.md`),

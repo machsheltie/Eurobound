@@ -136,14 +136,14 @@ The cart is named "The Bohemian Trap" because:
 - **Effect**: Status applied based on what you consumed
 
 ### Product Inventory (The Absinthe Tiers)
-| Item | Price | Strength | SP Effect | Status Effect | Emil's Pitch |
+| Item | Price | Strength | Bravado Effect | Status Effect | Emil's Pitch |
 |------|-------|----------|-----------|---------------|----------------|
-| Tourist Green | 8 SOVS | 55% | -10 SP | Absinthe Buzzed (light) | "A gentle introduction" |
-| Bohemian Standard | 12 SOVS | 65% | -20 SP | Absinthe Buzzed | "The traditional experience" |
-| Artist's Choice | 18 SOVS | 70% | -30 SP | Absinthe Buzzed (strong) | "As Hemingway preferred" |
-| The Green Fairy Special | 25 SOVS | 70% + ritual | -40 SP | Green Fairy Confusion | "The complete experience" |
-| Absinthe Shot Flight | 30 SOVS | Mixed | -50 SP | Guaranteed Confusion | "For the committed" |
-| "Vintage" Reserve | 40 SOVS | 70% | -35 SP | Confusion + story | "Very limited. Very special." |
+| Tourist Green | 8 SOVS | 55% | -10 Bravado | Absinthe Buzzed (light) | "A gentle introduction" |
+| Bohemian Standard | 12 SOVS | 65% | -20 Bravado | Absinthe Buzzed | "The traditional experience" |
+| Artist's Choice | 18 SOVS | 70% | -30 Bravado | Absinthe Buzzed (strong) | "As Hemingway preferred" |
+| The Green Fairy Special | 25 SOVS | 70% + ritual | -40 Bravado | Green Fairy Confusion | "The complete experience" |
+| Absinthe Shot Flight | 30 SOVS | Mixed | -50 Bravado | Guaranteed Confusion | "For the committed" |
+| "Vintage" Reserve | 40 SOVS | 70% | -35 Bravado | Confusion + story | "Very limited. Very special." |
 | Sugar Cube Only | 2 SOVS | 0% | None | Disappointment | "...just the sugar?" |
 
 ### The Ritual (Purchasable Experience)

@@ -138,7 +138,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Bartender who insists you try "the traditional way" (head back, no hands)
 - Sawdust on the floor "for atmosphere" (and absorption)
 - **Tour Obstacle**: Jenever Taste Test gauntlet — distinguish young from old without dying
-- **Unlockable Consumable**: "Oude Genever" — Massive SP restore, but "The Shakes" debuff (-Accuracy for 3 turns)
+- **Unlockable Consumable**: "Oude Genever" — Massive Bravado restore, but "The Shakes" debuff (-Accuracy for 3 turns)
 - **Brewmaster Selfie Spot**: Attempting the no-hands jenever shot (Chadwick's footage is ROUGH)
 
 **Shamsterdam Brewery Tour Completion Reward**: "Dutch Courage" passive — All Bravado loss reduced by 25% while intoxicated
@@ -195,7 +195,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Grease-stained menus in four languages, none spelled correctly
 - **Vendor**: Mehmet "The Meat Architect" — Turkish immigrant who's been slinging döner since 1992, judges your pronunciation, respects your appetite
 - **Signature Item**: "The Triple Tower" — all three meats, extra garlic sauce, wrapped in fresh-baked bread
-    - 🥙 +25 HP, +10 SP, "Garlic Aura" buff (NPCs keep slight distance for 1 hour)
+    - 🥙 +25 HP, +10 Bravado, "Garlic Aura" buff (NPCs keep slight distance for 1 hour)
     - 🇳🇱 Counts toward "The Great Döner Debate: International Expansion" sidequest
 - **Mehmet's Catchphrases**:
     - "You want chicken? Chicken is for children. You have the lamb."

@@ -254,7 +254,7 @@ It is a good job. The hours suit her, the tips are excellent, management is unde
 |--------------|-------|--------------|---------------|
 | Crypt Lager | 5 SOVS | 1 SOV | +15 HP. The house pour. Cold, correct, unremarkable, and the thing she'd order. |
 | Femur Stout | 7 SOVS | 2 SOVS | +25 HP, −3% Speed for 20 min |
-| Bone Dry White | 6 SOVS | 2 SOVS | +10 HP, +5 SP |
+| Bone Dry White | 6 SOVS | 2 SOVS | +10 HP, +5 Bravado |
 | The Gravedigger (double, on request) | 11 SOVS | 3 SOVS | +35 HP, +1 Bravado for 30 min |
 | Skull Glass, kept | +3 SOVS | 2 SOVS | Permanent inventory item. Dishwasher-safe. From IKEA. |
 | Bone Bar Water | Free | Free | Full Off-Key removal. She gives it to anyone who looks like they need it and does not comment. |
@@ -267,11 +267,11 @@ It is a good job. The hours suit her, the tips are excellent, management is unde
 |--------------|-------|--------------|---------------|
 | The Adagio | 12 SOVS | 3 SOVS | +40 HP over 5 minutes; steadies the hit window |
 | Allegro con Fuoco | 14 SOVS | 4 SOVS | +20% Speed for 20 min; narrows the hit window, which nobody reads first |
-| Nocturne | 12 SOVS | 3 SOVS | +30 SP. Served without ice, in silence, at his instruction, and she honours it. |
+| Nocturne | 12 SOVS | 3 SOVS | +30 Bravado. Served without ice, in silence, at his instruction, and she honours it. |
 | Basso Continuo | 13 SOVS | 4 SOVS | +15% mitigation on bass-drop damage for one encounter |
-| Fugue State | 16 SOVS | 4 SOVS | +25 HP, +25 SP; the next three dialogue choices appear in a different order |
+| Fugue State | 16 SOVS | 4 SOVS | +25 HP, +25 Bravado; the next three dialogue choices appear in a different order |
 | The Unfinished | 15 SOVS | 4 SOVS | Served three-quarters full. She will not top it up. +2 Wisdom for 1 hour. |
-| **"RIP Your Sobriety"** | 18 SOVS | 5 SOVS, and a genuine liability | Full HP/SP restore, +25% rhythm performance for 30 min, then **Exhausted**. Recipe is a boss reward; she sells it ready-made forever. Limit one per customer per night, and she means it. |
+| **"RIP Your Sobriety"** | 18 SOVS | 5 SOVS, and a genuine liability | Full HP/Bravado restore, +25% rhythm performance for 30 min, then **Exhausted**. Recipe is a boss reward; she sells it ready-made forever. Limit one per customer per night, and she means it. |
 
 ### The Bone Bar — Merchandise
 
@@ -287,7 +287,7 @@ It is a good job. The hours suit her, the tips are excellent, management is unde
 ### Services
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Couchsurf stay — Requiem Room | Free (earned) | A genuinely good night's sleep | Full HP/SP recovery; "Touched by Death" +15% rhythm performance for 3 hours; permanent 10% Bone Bar discount |
+| Couchsurf stay — Requiem Room | Free (earned) | A genuinely good night's sleep | Full HP/Bravado recovery; "Touched by Death" +15% rhythm performance for 3 hours; permanent 10% Bone Bar discount |
 | Tip (Pelvic Bowl) | Player's choice | Goes to the owners on paper and to her in practice | Required for the couchsurf. "The dead can't spend it, but she can." |
 | Directions to anywhere in the building | Free | Free | Instant fast-travel between the four sub-areas, once the areas are unlocked |
 
@@ -397,7 +397,7 @@ The couchsurf itself is gated behind the **Eternal Setlist** — the Requiem Roo
 |------|-------------|------------|--------|
 | "Touched by Death" status | Couchsurf morning | 3 hours | +15% rhythm game performance |
 | Bone Bar Discount (10%) | Couchsurf morning | Yes | Permanent, applies at the Bone Bar only; not at Bassmeister's Requiem Room counter |
-| Full HP/SP restoration | Couchsurf stay | Per stay | "Restful Death" sleep |
+| Full HP/Bravado restoration | Couchsurf stay | Per stay | "Restful Death" sleep |
 | Insider Tip (journal entry) | Couchsurf morning | Yes | Unlocks the 11:30 PM low-tempo practice window as a marked activity |
 | Skull Glass | Any drink, +3 SOVS | Yes | Reusable inventory vessel. Dishwasher-safe. From IKEA. |
 | Boss mechanic hints (journal) | Any night, at the bar | Yes | Reveals the four DJ weaknesses and the "Last Rave" organ counter-play |
@@ -468,7 +468,7 @@ Warm Sinfonian, working register — local, unhurried, entirely unpretentious. S
 - **CANON — the first name "Helga" belongs to this character and only this character, game-wide.** The Bassline Opera House coat check attendant is **Hilde** (`sinfonia_npc_coat_check_01`) and is a distinct person; she is named once in this profile as a colleague and nowhere else. Any file that refers to a second Helga is a continuity error and must be corrected to Hilde or to a title.
 - **She never breaks and never explains.** This is the character's load-bearing constraint. No reveal, no confession, no complicity beat with the player, ever, on any route.
 - **The "is the undead real" dialogue option must remain available, unmarked, and unwarned.** The player has to be able to blow the couchsurf by asking the obvious question, and the game must never telegraph that this is what they are doing. She does not punish them; she simply gets their change.
-- **The three couchsurf conditions are canon** per `mozarts_last_rave.md`: three drinks across the night, tip well, don't ask if the undead are real. The stay effects are canon: full HP/SP, "Touched by Death" +15% rhythm performance for 3 hours, permanent 10% Bone Bar discount.
+- **The three couchsurf conditions are canon** per `mozarts_last_rave.md`: three drinks across the night, tip well, don't ask if the undead are real. The stay effects are canon: full HP/Bravado, "Touched by Death" +15% rhythm performance for 3 hours, permanent 10% Bone Bar discount.
 - **Her hints are the location's only tutorialisation of the boss.** The four DJ weaknesses and the "Last Rave" organ counter-play both come from her, phrased as a bartender describing her workplace. If playtesting shows players missing the organ counter, strengthen a Ghost Groupie line — do not make Helga more explicit, and do not add a marker.
 - **The 10% discount applies at the Bone Bar only.** Bassmeister runs his own Requiem Room counter on the appeased route and does not honour it, warmly, once.
 - **She is the tutorial vendor.** The Bone Bar's rhythm tier is "slow tempo, forgiving timing" per the location file, and she is standing in it — first NPC after the descent, first prices seen, first hints given.

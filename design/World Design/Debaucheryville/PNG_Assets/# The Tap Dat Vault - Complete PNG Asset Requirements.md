@@ -380,7 +380,7 @@ This document provides exact specifications for all PNG files needed for The Tap
 - **HP Bar Cyan** (288, 0, 96x12) - Full health (thematic color)
 - **HP Bar Yellow** (288, 12, 96x12) - Medium health
 - **HP Bar Red** (288, 24, 96x12) - Low health
-- **SP Bar** (288, 36, 96x12) - Skill points display
+- **Bravado Bar** (288, 36, 96x12) - Skill points display
 
 ### Menu Overlays:
 - **Vape Stout Info** (288, 48, 96x64) - Item description card
@@ -550,7 +550,7 @@ This document provides exact specifications for all PNG files needed for The Tap
 ### Quest Integration:
 - **Brewery Tour:** 2 of 4 dungeons, tracks completion
 - **Bottle Opener:** Keychain from Publandia required
-- **Boss Reward:** Vape Stout (restores SP, Glow-Up Aura, 30% Grease Fingers)
+- **Boss Reward:** Vape Stout (restores Bravado, Glow-Up Aura, 30% Grease Fingers)
 - **Selfie Prop:** Hologram wall unlocked post-victory
 - **Achievement:** Strobe Brewmistress Defeated, Continental Beer Master progress
 

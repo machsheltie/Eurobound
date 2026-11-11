@@ -204,10 +204,10 @@ He wanted to study altered perception and academia would not let him do it the w
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | **The Absinthium Taproom Bottle Opener** | 22 SOVS, or free by completing the Mirror Maze navigation puzzle | A cracked absinthe glass with an emerging Green Fairy silhouette, emerald-tinted metal with an iridescent lenticular finish, inscribed "I Saw Myself" | Required for the Brewery Passport stamp and Absinthe Lager purchase at this location. Surface shifts color in different lighting |
-| **Absinthe Lager** (signature brew) | 12 SOVS | 8.5% ABV, absinthe-infused, legally questionable | +15 SP; no HP restoration; no buff; **30% chance of "Green Fairy Confusion" to the drinker**. The only signature beer in the tour designed to potentially debuff its own user |
+| **Absinthe Lager** (signature brew) | 12 SOVS | 8.5% ABV, absinthe-infused, legally questionable | +15 Bravado; no HP restoration; no buff; **30% chance of "Green Fairy Confusion" to the drinker**. The only signature beer in the tour designed to potentially debuff its own user |
 | Brewery Passport stamp — The Absinthium Seal | Free, on conditions met | Slot 1 of 4, Debaucheryville page | Shifting emerald ink, green fairy trapped in a cracked glass, inscribed "I Saw Myself" |
 | Vaněk's Survey | Free | He gets data; you get items and a selfie variant | Optional research participation; rewards include items and the "The Research Subject" selfie variant at the Floating Absinthe Chalice |
-| Green Fairy Essence | Boss drop (not sold) | Consumable | Guaranteed Confusion, +30 SP |
+| Green Fairy Essence | Boss drop (not sold) | Consumable | Guaranteed Confusion, +30 Bravado |
 
 **Stamp unlock conditions (ALL required)**: complete the mirror navigation puzzle and reach the bar; defeat **or** survive the Green Fairy Wisp; purchase the Absinthe Lager; present the Debaucheryville Bottle Opener Keychain.
 
@@ -314,9 +314,9 @@ He wanted to study altered perception and academia would not let him do it the w
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | The Absinthium Taproom Bottle Opener | Maze completion or 22 SOVS purchase | Yes | Unlocks stamp eligibility and Absinthe Lager purchase; lenticular color-shift keychain |
-| Absinthe Lager | After both openers presented | No (consumable) | +15 SP; 30% chance of "Green Fairy Confusion" to the user |
+| Absinthe Lager | After both openers presented | No (consumable) | +15 Bravado; 30% chance of "Green Fairy Confusion" to the user |
 | The Absinthium Seal (stamp) | All four unlock conditions met | Yes | Brewery Passport, Debaucheryville page, Slot 1; "I Saw Myself" |
-| Green Fairy Essence | Green Fairy Wisp defeated | No (consumable) | Guaranteed Confusion, +30 SP |
+| Green Fairy Essence | Green Fairy Wisp defeated | No (consumable) | Guaranteed Confusion, +30 Bravado |
 | Reality Anchor | Maze completed without Confusion | Yes (permanent status) | +10% Confusion resistance for the rest of the game |
 
 ---
@@ -383,7 +383,7 @@ Czech, educated, precise. Academic cadence that survived the departure from acad
 
 - **Diacritics ruling — RESOLVED (author-approved).** He is **Dr. Miloš Vaněk**, with full Czech diacritics, normalized across the source location file, this profile, the PNG specs, the Inventory docs, and every cross-reference in other NPC profiles. Every other Czech NPC in Debaucheryville (Jiří, Věra, Kovář, Dvořák, Procházková, Horáček) carries full diacritics and he now matches them. **Display text only** — the snake_case identifiers (`debaucheryville_npc_dr_milos_vanek_01`, `debaucheryville_sidequest_vaneks_survey_01`), this profile's filename, and all sprite filenames stay ASCII and are unchanged.
 - **Source-file world-consistency defect flagged**: `the_absinthium_taproom.md` uses "Prague" twice (Cultural Targets, QA checklist). This profile uses **Debaucheryville** exclusively. Source needs a find-and-replace pass.
-- All prices, ABV, SP values, and the 30% confusion figure are canon-locked from the source location file. Do not rebalance in a profile pass.
+- All prices, ABV, Bravado values, and the 30% confusion figure are canon-locked from the source location file. Do not rebalance in a profile pass.
 - The three opener-check dialogue variants and the stamp speech are quoted **verbatim** from `the_absinthium_taproom.md` and must not be paraphrased in implementation.
 - Quest ID `debaucheryville_sidequest_vaneks_survey_01` is **proposed** — the source file names "Vaněk's Survey" in prose but assigns no ID. Confirm against the quests directory.
 - The "I feel nothing" formula-alarm branch is derived directly from his canonical serving line ("If you DON'T feel disoriented, tell me immediately"). It should be implemented as a real dialogue branch — it is his only unguarded moment and it is earned by the source text.

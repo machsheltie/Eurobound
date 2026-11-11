@@ -212,7 +212,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Cheese Stuffed Pretzel | (64, 0) | 32x32 | Melted cheese visible at the seam — 6 SOVS, +25 HP |
 | Jalapeño Stuffed Pretzel | (96, 0) | 32x32 | Green flecks, heat shimmer — 7 SOVS, +22 HP, +Heat resist |
 | The Everything Pretzel | (128, 0) | 32x32 | Every topping, visually chaotic — 6 SOVS, +23 HP |
-| Cinnamon Sugar Pretzel | (160, 0) | 32x32 | Sweet option — 5 SOVS, +18 HP, +5 SP, judged silently |
+| Cinnamon Sugar Pretzel | (160, 0) | 32x32 | Sweet option — 5 SOVS, +18 HP, +5 Bravado, judged silently |
 | Large Pretzel | (192, 0) | 48x48 | More pretzel, same attitude — 5 SOVS, +20 HP |
 
 ### Condiments & Serveware:

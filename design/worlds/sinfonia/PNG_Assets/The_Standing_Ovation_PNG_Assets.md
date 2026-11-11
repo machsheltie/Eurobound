@@ -448,7 +448,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 |---------|----------|------|-------------|
 | Stage Presence Buff Icon | (0, 192) | 24x24 | Comedy mask with +3 Charm sparkle (Curtain Call Copper effect) |
 | HP Restore Icon | (24, 192) | 24x24 | Stein heart |
-| SP Restore Icon | (48, 192) | 24x24 | Stein star |
+| Bravado Restore Icon | (48, 192) | 24x24 | Stein star |
 | Ceremonial Stein | (72, 192) | 32x40 | The gravitas vessel for challenge drinks |
 | Toast Glint | (104, 192) | 24x24 | Raised-glass sparkle |
 | Serving Tray | (136, 192) | 48x32 | Black lacquer, silent delivery |

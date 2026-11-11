@@ -187,7 +187,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 |---------|----------|------|-------------|
 | Traditional Bow Position | (0, 160) | 96x96 | Player character bowing to the drink, because that is the technique |
 | Lift Attempt / Spill Frame | (96, 160) | 96x96 | The other option, performed once, learned permanently |
-| Oude Genever (Consumable) | (192, 160) | 32x48 | +40 SP, The Shakes, cannot be used in combat |
+| Oude Genever (Consumable) | (192, 160) | 32x48 | +40 Bravado, The Shakes, cannot be used in combat |
 | Oude Genever Inventory Icon | (224, 160) | 32x32 | Item icon |
 | The Shakes Icon | (256, 160) | 32x32 | Trembling-hand silhouette with motion hatching |
 | "Jenever Master" Title Ribbon | (288, 160) | 96x32 | Questionable accuracy |

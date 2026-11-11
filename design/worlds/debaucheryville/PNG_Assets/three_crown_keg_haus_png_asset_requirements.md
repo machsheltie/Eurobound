@@ -400,7 +400,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - **HP Bar Orange** (128, 256, 96x12) - Full health (thematic color)
 - **HP Bar Yellow** (224, 256, 96x12) - Medium health
 - **HP Bar Red** (320, 256, 96x12) - Low health
-- **SP Bar** (416, 256, 96x12) - Skill points display
+- **Bravado Bar** (416, 256, 96x12) - Skill points display
 
 ### Menu Overlays:
 - **Iron Gut Tripel Info** (0, 268, 96x64) - Item description card

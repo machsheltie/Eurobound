@@ -149,7 +149,7 @@ for each of his.
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 52 | Rolling meter applies. The Bill Will Find You holds him at 1 HP for one extra action, once (**Approved 2026-11-09**). No revive. |
-| **SP** | N/A | Moves are weight-driven. |
+| **Bravado** | N/A | Moves are weight-driven. |
 | **Offense** | 9 | |
 | **Defense** | 6 | Log-hide. |
 | **Speed** | 3 | Moves on the river's schedule. Even Lord Pilsner beats him. |

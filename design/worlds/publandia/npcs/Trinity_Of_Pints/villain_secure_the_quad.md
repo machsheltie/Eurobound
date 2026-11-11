@@ -175,7 +175,7 @@ escalation, matching "lets the bros succeed without being heroes or great at any
 | Stat | Value | Notes |
 |---|---|---|
 | **HP** | 320 | ⚠ AUTHOR-REVIEW — rolling HP meter applies |
-| **SP** | 40 | Spent on the gavel big move |
+| **Bravado** | 40 | Spent on the gavel big move |
 | **Offense** | 22 | |
 | **Defense** | 14 | |
 | **Speed** | 9 | Slow — a man in his fifties in dress shoes |

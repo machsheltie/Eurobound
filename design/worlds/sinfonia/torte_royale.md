@@ -125,12 +125,12 @@ They're paying triple price because they pointed at the menu instead of pronounc
 | Item | Base Price | Effect | Pronunciation Bonus/Penalty |
 |------|-----------|--------|---------------------------|
 | Sachertorte Slice | 12 SOVS | +35 HP, cures Hungry, cures Thirsty | Perfect: 10 SOVS / Butchered: 18 SOVS |
-| Linzer Torte | 10 SOVS | +25 HP, +10 SP | Perfect: 8 SOVS / Butchered: 14 SOVS |
+| Linzer Torte | 10 SOVS | +25 HP, +10 Bravado | Perfect: 8 SOVS / Butchered: 14 SOVS |
 | Apfelstrudel | 8 SOVS | +20 HP, cures Thirsty | Perfect: 7 SOVS / Butchered: 12 SOVS |
 | Kaiserschmarrn | 14 SOVS | +40 HP, removes Embarrassed | Perfect: 12 SOVS / Butchered: 20 SOVS |
-| Topfenstrudel | 9 SOVS | +15 HP, +15 SP | Perfect: 7 SOVS / Butchered: 15 SOVS |
+| Topfenstrudel | 9 SOVS | +15 HP, +15 Bravado | Perfect: 7 SOVS / Butchered: 15 SOVS |
 | Punschkrapfen | 6 SOVS | +10 HP, Tipsy status (mild) | Perfect: 5 SOVS / Butchered: 10 SOVS |
-| Der Zuckerschock Special | 25 SOVS | Full HP restore, +20 SP, "Sugar High" buff | Perfect: 20 SOVS / Butchered: 35 SOVS |
+| Der Zuckerschock Special | 25 SOVS | Full HP restore, +20 Bravado, "Sugar High" buff | Perfect: 20 SOVS / Butchered: 35 SOVS |
 
 **"Sugar High" Buff**:
 - +15% Speed for 30 minutes
@@ -158,7 +158,7 @@ They're paying triple price because they pointed at the menu instead of pronounc
 **Learning System**:
 - Each successful pronunciation = that item permanently easier
 - After 3 perfect orders = "Cake Connoisseur" status (flat 10% discount)
-- Bradley's bonus at the cart: **Quark Is Protein** — **APPROVED (author, round v26, 2026-11-11).** Replaces the retired "+20% bonus to all pronunciation checks" (author, round v25). Bradley reads the Topfenstrudel's filling, learns *Topfen* is quark, and decides it's a protein bar. When Bradley eats a Topfenstrudel it heals him double (+30 HP / +30 SP), and he orders it every visit. *"Fifteen grams of protein wrapped in a pastry. This is meal prep, bro. This is a cut."* (His signature flaw already makes him detour only for protein bars.)
+- Bradley's bonus at the cart: **Quark Is Protein** — **APPROVED (author, round v26, 2026-11-11).** Replaces the retired "+20% bonus to all pronunciation checks" (author, round v25). Bradley reads the Topfenstrudel's filling, learns *Topfen* is quark, and decides it's a protein bar. When Bradley eats a Topfenstrudel it heals him double (+30 HP / +30 Bravado), and he orders it every visit. *"Fifteen grams of protein wrapped in a pastry. This is meal prep, bro. This is a cut."* (His signature flaw already makes him detour only for protein bars.)
   - Knock-on: Bradley's scripted lines elsewhere in this file still have him pronouncing the menu correctly ("I pronounced everything correctly. I paid 22 SOVS."). They stay as dialogue; they no longer come from a stat.
 
 ### Charm Pricing System

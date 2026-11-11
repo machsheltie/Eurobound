@@ -20,7 +20,7 @@
 
 ### Booking System
 Unlike couchsurfing, Das Schlafgemach requires payment:
-- **Standard Room**: 150 SOVS/night (HP/SP restore, but...)
+- **Standard Room**: 150 SOVS/night (HP/Bravado restore, but...)
 - **Deluxe Suite**: 300 SOVS/night (better restore, more surveillance)
 - **The Royal Chamber**: 500 SOVS/night (full restore, maximum creepy)
 - **All bookings**: Require signing the "Guest Agreement" (nobody reads it)
@@ -170,12 +170,12 @@ They've signed a 27-clause agreement they didn't read and are being monitored by
 **Booking Options**:
 | Room | Price | Rest Quality | Surveillance Level | Special |
 |------|-------|-------------|-------------------|---------|
-| Standard | 150 SOVS | 80% HP/SP | Medium | Basic creepy |
-| Deluxe | 300 SOVS | 100% HP/SP | High | Extra portraits |
-| Royal | 500 SOVS | 120% HP/SP + buff | Maximum | Full experience |
+| Standard | 150 SOVS | 80% HP/Bravado | Medium | Basic creepy |
+| Deluxe | 300 SOVS | 100% HP/Bravado | High | Extra portraits |
+| Royal | 500 SOVS | 120% HP/Bravado + buff | Maximum | Full experience |
 
 **Rest Effects**:
-- HP/SP restoration as listed
+- HP/Bravado restoration as listed
 - "Well-Rested" buff (varies by room)
 - BUT: "Being Watched" debuff until leaving (-5% to stealth)
 - Random "night events" may interrupt rest

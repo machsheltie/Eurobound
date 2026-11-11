@@ -303,7 +303,7 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
 | Premium Lager (6-pack) | 15 SOVS | +10 HP each | Standard intoxication | 5% |
-| Irish Whiskey (Legitimate) | 25 SOVS | +20 HP, +10 SP | Standard intoxication | 5% |
+| Irish Whiskey (Legitimate) | 25 SOVS | +20 HP, +10 Bravado | Standard intoxication | 5% |
 | Wine (Sealed) | 12 SOVS | +15 HP | Standard intoxication | 5% |
 | Craft Beer (Cold) | 8 SOVS | +12 HP | Standard intoxication | 5% |
 
@@ -311,17 +311,17 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
 | Murphy's Budget Lager (6-pack) | 9 SOVS | +8 HP each | "Regret" status | 25% |
-| "Imported" Whiskey | 12 SOVS | +15 HP, +5 SP | "Headache" status (morning) | 30% |
+| "Imported" Whiskey | 12 SOVS | +15 HP, +5 Bravado | "Headache" status (morning) | 30% |
 | Mystery Wine | 6 SOVS | +10 HP | Random status effect | 40% |
 | Murphy's Strong (Tall Can) | 3 SOVS | +5 HP | "Bad Decision" buff | 35% |
 
 ### Energy Drinks
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| Name Brand Energy | 5 SOVS | +20 SP, +Speed | Crash (2 hours later) | 10% |
-| MurphyBoost™ Original | 3 SOVS | +30 SP, +Speed | "Jitters" status | 40% |
-| MurphyBoost™ EXTREME | 4 SOVS | +50 SP, ++Speed | "Cardiac Concern" status | 60% |
-| "Medicinal" Energy Tonic | 6 SOVS | +25 SP, +HP | Random positive OR negative | 50% |
+| Name Brand Energy | 5 SOVS | +20 Bravado, +Speed | Crash (2 hours later) | 10% |
+| MurphyBoost™ Original | 3 SOVS | +30 Bravado, +Speed | "Jitters" status | 40% |
+| MurphyBoost™ EXTREME | 4 SOVS | +50 Bravado, ++Speed | "Cardiac Concern" status | 60% |
+| "Medicinal" Energy Tonic | 6 SOVS | +25 Bravado, +HP | Random positive OR negative | 50% |
 
 ### Snacks
 | Item | Price | Effect | Side Effect | Risk |

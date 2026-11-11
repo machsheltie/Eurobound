@@ -37,7 +37,7 @@
     {
       "effect_id": "mm_energy_drink_effect",
       "source_item": "mm_energy_drink",
-      "description": "Restores SP; may delay sleep."
+      "description": "Restores Bravado; may delay sleep."
     },
     {
       "effect_id": "mm_instant_noodles_effect",

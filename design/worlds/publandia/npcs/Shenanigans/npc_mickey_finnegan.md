@@ -311,7 +311,7 @@ He was offered legitimate pub work and found it boring. That is the honest answe
 ### Drinks & Rewards
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| The Fool's Gold | 8 SOVS | 8 SOVS — honestly priced, brewed by a legitimate local microbrewery, 5.0% golden ale with honey and a bitter finish | +30 HP, +15 SP, "Learned Optimism" (+10% resistance to scam detection failure), 5% "Sentimental" (donate extra gold to NPCs). **Locked until the Shenanigans stamp is earned. First one free.** |
+| The Fool's Gold | 8 SOVS | 8 SOVS — honestly priced, brewed by a legitimate local microbrewery, 5.0% golden ale with honey and a bitter finish | +30 HP, +15 Bravado, "Learned Optimism" (+10% resistance to scam detection failure), 5% "Sentimental" (donate extra gold to NPCs). **Locked until the Shenanigans stamp is earned. First one free.** |
 | The Shenanigans Stamp | Free (earned) | The only stamp in the game awarded for losing | Jester-cap circular border, three-leaf clover with one leaf wilted, "Shenanigans", "Wise Fool Since" plus the in-game year inked at the moment of stamping. Faded gold ink — the colour of your lost money. Requires the Bottle Opener Keychain in inventory. |
 | Shill Work | Pays 50 SOVS per night | Morally compromising | Repeatable income; sets the "Turned" achievement flag; Darren trains you on timing |
 | "Wise Fool" Status | Free (earned) | Genuine | See through ONE rigged game per visit before playing; Snug observation access; staff treat you as a regular, not a mark |
@@ -434,7 +434,7 @@ Hard requirement: the Bottle Opener Keychain from Seamus O'Brien at The Blarney 
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | The Shenanigans Stamp | Wise Fool conversation complete, opener held | Yes | 2 of 4 Publandia stamps; unlocks The Fool's Gold |
-| The Fool's Gold | On stamp acquisition (first free, 8 SOVS after) | No (consumable) | +30 HP, +15 SP, "Learned Optimism"; 5% "Sentimental" |
+| The Fool's Gold | On stamp acquisition (first free, 8 SOVS after) | No (consumable) | +30 HP, +15 Bravado, "Learned Optimism"; 5% "Sentimental" |
 | "Wise Fool" Status | Stamp earned | Yes (status) | One rig revealed per visit; Snug access; regular treatment |
 | Wise Fool Crown (paper) | Stamp earned | Yes (cosmetic) | Selfie prop at the Lucky Spin Wheel photo spot |
 | Shill Badge | Accepting shill work | Yes (flag) | 50 SOVS/night repeatable income; "Turned" achievement |

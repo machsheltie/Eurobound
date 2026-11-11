@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | [style — beer-style vocabulary exemption applies] |
 | **ABV** | [X.X%] |
-| **Effects** | [+X HP / +X SP / buffs] |
+| **Effects** | [+X HP / +X Bravado / buffs] |
 | **Risk** | [debuff chance, status, duration] |
 | **Price** | [X SOVS — 8–15 band is a guideline, not a rule (author ruling)] |
 | **Special** | [the beer's unique quirk] |

@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | Bavarian-style wheat beer with swirling head [source: design/items/brewery_passport_book_sinfonia.md L196] |
 | **ABV** | 5.2% [source: design/items/brewery_passport_book_sinfonia.md L197] |
-| **Effects** | +20 HP, +15 SP [source: design/items/brewery_passport_book_sinfonia.md L198]; "Light on Your Feet" (+3 Speed, +2 Dance for 30 min) [source: design/items/brewery_passport_book_sinfonia.md L199] |
+| **Effects** | +20 HP, +15 Bravado [source: design/items/brewery_passport_book_sinfonia.md L198]; "Light on Your Feet" (+3 Speed, +2 Dance for 30 min) [source: design/items/brewery_passport_book_sinfonia.md L199] |
 | **Risk** | none [source: design/items/brewery_passport_book_sinfonia.md L200] |
 | **Price** | 7 SOVS — below the 8–15 SOVS guideline band; Contradiction 3 RULED (author): beers win, Waltz Weizen stays 7 SOVS — the band is a soft guideline, not a rule [source: design/items/brewery_passport_book_sinfonia.md L201] |
 | **Special** | server does a small spin when delivering [source: design/items/brewery_passport_book_sinfonia.md L204] |

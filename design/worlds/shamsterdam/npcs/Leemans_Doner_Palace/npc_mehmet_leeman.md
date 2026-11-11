@@ -252,7 +252,7 @@ The craft, the legacy, and the shop. His father made döner. His father's father
 | Döner (Veal) | 6 SOVS | 6 SOVS | +30 HP. "Good choice." |
 | Döner (Chicken) | 5 SOVS | 5 SOVS | +25 HP. "...okay." |
 | Döner (Mixed) | 5 SOVS | 5 SOVS | +28 HP. "Indecisive. But okay." |
-| **The Triple Tower** | 8 SOVS | 8 SOVS | +40 HP, +15 SP. Garlic Aura, possible Meat Sweats. "You are hungry. I respect this." |
+| **The Triple Tower** | 8 SOVS | 8 SOVS | +40 HP, +15 Bravado. Garlic Aura, possible Meat Sweats. "You are hungry. I respect this." |
 | Extra Garlic Sauce | +1 SOV | 0.50 SOVS | +5 HP, Garlic Aura extended. "You want to be alone tonight?" |
 | Extra Hot Sauce | +1 SOV | 0.50 SOVS | +5 HP, −5 HP delayed. Fire Breath. "Turkish hot. Not tourist hot." |
 | Just Bread | 2 SOVS | 2 SOVS | +10 HP, Disappointment. "You came here for... bread?" |
@@ -375,7 +375,7 @@ Mehmet gates one of the two Shamsterdam samples required by the Great Döner Deb
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Döner (any) | Any | Consumable | HP restore; Garlic Aura |
-| Triple Tower | Any | Consumable | +40 HP, +15 SP, Garlic Aura, Meat Sweats risk. "Warrior Spirit" badge on completion. |
+| Triple Tower | Any | Consumable | +40 HP, +15 Bravado, Garlic Aura, Meat Sweats risk. "Warrior Spirit" badge on completion. |
 | The free döner | Debate resolved for Shamsterdam | One-time | Not on the till. Not discussed. |
 | Kevin's real name | "Wolf sent me" | Information | Deflates the Tolerance Hostel's veteran-backpacker persona permanently |
 

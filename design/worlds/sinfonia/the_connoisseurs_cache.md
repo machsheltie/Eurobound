@@ -119,7 +119,7 @@ The shop sees opportunity in confusion:
 | Item | Price | Effect | Provenance |
 |------|-------|--------|------------|
 | Artisanal Pain Relief | 15 SOVS | +50 HP | "Hand-pressed herbs from Alpine monasteries" |
-| Gourmet Energy Bar | 12 SOVS | +30 HP, +10 SP | "Single-origin cacao, ethically traded" |
+| Gourmet Energy Bar | 12 SOVS | +30 HP, +10 Bravado | "Single-origin cacao, ethically traded" |
 | Heritage Herbal Tea | 10 SOVS | +20 HP, cures status effects | "Blend unchanged since 1847" |
 | Mineral Water (Imported) | 8 SOVS | +15 HP, cures Thirsty | "From a spring that inspired Beethoven" |
 | Restorative Tincture | 25 SOVS | +75 HP | "Apothecary recipe, seven generations" |
@@ -130,7 +130,7 @@ The shop sees opportunity in confusion:
 |------|-------|--------|-------------|
 | Classical Music CD | 20 SOVS | +15% Focus (2 hours) | Improves concentration, reduces distraction |
 | Art Appreciation Guide | 25 SOVS | +10% Culture stat | Helps with authentication checks |
-| Meditation Incense | 15 SOVS | Restores SP over time | Burn between battles |
+| Meditation Incense | 15 SOVS | Restores Bravado over time | Burn between battles |
 | Pocket Philosopher | 30 SOVS | +20% Dialogue combat | Collection of witty responses |
 | Language Phrasebook | 18 SOVS | Reduces pronunciation penalties | Helps at vendors |
 

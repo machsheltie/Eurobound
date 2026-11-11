@@ -374,7 +374,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | Coffee Menu Panel | (0, 160) | 96x96 | Kleiner Brauner / Melange / Einspänner / Kapuziner, German only |
 | Order Success Chime Glyph | (96, 160) | 24x24 | Ordered in German (+10 Bravado) |
 | Wi-Fi Icon | (120, 160) | 32x32 | "Existence_Precedes_Essence_5G" |
-| ICQ Panel | (152, 160) | 96x64 | Intellectual threads + Mom call (SP restore) |
+| ICQ Panel | (152, 160) | 96x64 | Intellectual threads + Mom call (Bravado restore) |
 | Daily Question Board UI | (248, 160) | 96x48 | Chalkboard text panel |
 
 ### Selfie & Progression:

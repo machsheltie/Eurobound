@@ -161,7 +161,7 @@
 | Style | Vapor-infused experimental stout |
 | ABV | 6.9% |
 | HP Restoration | — |
-| SP Restoration | +20 |
+| Bravado Restoration | +20 |
 | Buff | "Glow-Up Aura" (+1 Charm, +1 Defense, 30 min) |
 | Debuff Risk | 100% "Grease Fingers" status (guaranteed) |
 | Price | 14 SOVS |
@@ -212,7 +212,7 @@
 
 ## System Integration
 ### Brew Reward System (Original)
-- **Vape Stout Effects**: Restores SP, applies Glow-Up Aura (Charm/Defense +1), causes Grease Fingers status
+- **Vape Stout Effects**: Restores Bravado, applies Glow-Up Aura (Charm/Defense +1), causes Grease Fingers status
 - **Strategic Use**: Powerful buff with trade-off debuff requiring tactical timing
 - **Risk/Reward Balance**: Enhanced stats offset by accuracy penalty from Grease Fingers
 - **Inventory Integration**: Consumable item available after boss defeat

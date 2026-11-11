@@ -212,14 +212,14 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 ## 🎒 Inventory / Services
 
 ### The Absinthe Tiers
-| Item | Price | Strength | SP Effect | Status Effect | Emil's Pitch |
+| Item | Price | Strength | Bravado Effect | Status Effect | Emil's Pitch |
 |------|-------|----------|-----------|---------------|--------------|
-| Tourist Green | 8 SOVS | 55% | -10 SP | Absinthe Buzzed (light) | "A gentle introduction" |
-| Bohemian Standard | 12 SOVS | 65% | -20 SP | Absinthe Buzzed | "The traditional experience" |
-| Artist's Choice | 18 SOVS | 70% | -30 SP | Absinthe Buzzed (strong) | "As Hemingway preferred" |
-| **The Green Fairy Special** | 25 SOVS | 70% + ritual | -40 SP | Green Fairy Confusion | "The complete experience" |
-| Absinthe Shot Flight | 30 SOVS | Mixed | -50 SP | Guaranteed Confusion | "For the committed" |
-| "Vintage" Reserve | 40 SOVS | 70% | -35 SP | Confusion + story | "Very limited. Very special." |
+| Tourist Green | 8 SOVS | 55% | -10 Bravado | Absinthe Buzzed (light) | "A gentle introduction" |
+| Bohemian Standard | 12 SOVS | 65% | -20 Bravado | Absinthe Buzzed | "The traditional experience" |
+| Artist's Choice | 18 SOVS | 70% | -30 Bravado | Absinthe Buzzed (strong) | "As Hemingway preferred" |
+| **The Green Fairy Special** | 25 SOVS | 70% + ritual | -40 Bravado | Green Fairy Confusion | "The complete experience" |
+| Absinthe Shot Flight | 30 SOVS | Mixed | -50 Bravado | Guaranteed Confusion | "For the committed" |
+| "Vintage" Reserve | 40 SOVS | 70% | -35 Bravado | Confusion + story | "Very limited. Very special." |
 | Sugar Cube Only | 2 SOVS | 0% | None | Disappointment | "...just the sugar?" |
 
 ### The Ritual (included with The Green Fairy Special)
@@ -351,7 +351,7 @@ No hard gate. Emil is a **status-effect source** whose output changes how other 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Tourist Green through "Vintage" Reserve | Any | No (consumable) | Seven tiers; SP costs and status effects per the table above |
+| Tourist Green through "Vintage" Reserve | Any | No (consumable) | Seven tiers; Bravado costs and status effects per the table above |
 | Green Fairy Confusion | Green Fairy Special or Shot Flight | No (60 min) | +20% Confidence, -20% Accuracy, random dialogue choices, 20% control reversal per action |
 | "Behind the Curtain" (achievement) | Found off-duty after 04:00 | Yes | Unlocks Emil's real philosophy dialogue set permanently |
 
@@ -424,7 +424,7 @@ Czech, but **theatrically Czech** — a trained actor deliberately thickening hi
   - **"Prague"** — used three times (the cart-name explanation, Cultural Targets, QA checklist). Should be Debaucheryville
   This profile uses **Debaucheryville** exclusively and describes the costume's origin as a theatrical supplier without naming a city.
 - **Surname spelling — RESOLVED (author-approved).** He is **Emil "The Green Fairy" Novák**, with the háček, matching Debaucheryville's other Nováks (the Euro Ink tattoo artist, Donát "Euro Ink" Novák). The undiacriticked spelling that previously ran through `the_bohemian_trap.md` and `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md` has been normalized, under the same ruling that made Dr. Vaněk's name whole. **Display text only** — the sprite filename `emil.png`, this profile's filename, and all snake_case identifiers stay ASCII and are unchanged.
-- All seven tier prices, ABVs, SP costs, and status durations are canon-locked from the source location file. Do not rebalance in a profile pass.
+- All seven tier prices, ABVs, Bravado costs, and status durations are canon-locked from the source location file. Do not rebalance in a profile pass.
 - **The "Vintage Reserve is the Artist's Choice" admission is a proposed addition.** The source establishes the tier and the price but not the contents. It is consistent with his rare-honesty register and it rewards a five-purchase regular. **Flag as proposed.**
 - **The late-game Vaněk comparison is also proposed** and is the strongest available cross-location payoff in the Absinthe Arcade — the city runs the same absinthe myth through a theatrical vendor and a clinical one, and neither profile currently acknowledges the other from Emil's side. **Recommend adoption.**
 - Emil and Dr. Vaněk must never be written similarly. Emil sells the myth theatrically and knows it is theater; Vaněk sells the mechanism clinically and the mechanism actually works.

@@ -231,11 +231,11 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 ### Menu
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| "Shamsterdam Dream" (Tourist Rec) | 18 SOVS/g | ~9 SOVS/g elsewhere | +20 SP, −Speed, delayed Space Cake Effect. "Very popular. Very smooth." (scripted) |
-| "Green Guide Special" (House) | 15 SOVS/g | ~8 SOVS/g elsewhere | +15 SP, +Confused. "House blend. Good choice." (automatic) |
-| "Premium Heritage" | 25 SOVS/g | ~12 SOVS/g elsewhere | +30 SP, −Intelligence, +Bravado temporarily. "Excellent selection, sir." (upsell confirmed) |
-| Space Cake (1 piece) | 8 SOVS | 8 SOVS | Delayed: +40 SP after 2 hours game time. Unlocks the "It's Not Working" dialogue chain. |
-| Hash (1g) | 12 SOVS | 12 SOVS | +25 SP, "Heavy" (−Movement speed). *sigh* "For smoking. Not eating." |
+| "Shamsterdam Dream" (Tourist Rec) | 18 SOVS/g | ~9 SOVS/g elsewhere | +20 Bravado, −Speed, delayed Space Cake Effect. "Very popular. Very smooth." (scripted) |
+| "Green Guide Special" (House) | 15 SOVS/g | ~8 SOVS/g elsewhere | +15 Bravado, +Confused. "House blend. Good choice." (automatic) |
+| "Premium Heritage" | 25 SOVS/g | ~12 SOVS/g elsewhere | +30 Bravado, −Intelligence, +Bravado temporarily. "Excellent selection, sir." (upsell confirmed) |
+| Space Cake (1 piece) | 8 SOVS | 8 SOVS | Delayed: +40 Bravado after 2 hours game time. Unlocks the "It's Not Working" dialogue chain. |
+| Hash (1g) | 12 SOVS | 12 SOVS | +25 Bravado, "Heavy" (−Movement speed). *sigh* "For smoking. Not eating." |
 | Bag | 2 SOVS | 0 SOVS | It is a bag. He has no further information about the bag. |
 | VIP Lounge upstairs | 10 SOVS | 0 SOVS | Same room. Slightly nicer chairs. Different carpet. He is required to mention it. |
 
@@ -247,7 +247,7 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 | Tourist Trapped | First purchase | 1 hour | +15% prices at all other Shamsterdam vendors — you look like a mark |
 | Contact High | Ambient, inside the shop | While inside | Mild Confusion, all party members |
 | Space Cake Timer | Space cake purchase | 2 hours game time | Visible countdown; all effects land simultaneously |
-| The Munchies | After SP boost wears off | Variable | Increases food purchase likelihood — feeds Leeman's, Kapsalon Koning, Frietomat |
+| The Munchies | After Bravado boost wears off | Variable | Increases food purchase likelihood — feeds Leeman's, Kapsalon Koning, Frietomat |
 
 ### Hidden Details / Easter Eggs
 - **The Employee of the Month board**: Same photograph since 2019. It is not Bas. Examine it — the name plate is blank and has been unscrewed and re-screwed at least once.
@@ -331,7 +331,7 @@ None owned. Bas is a systems NPC running three interlocking mechanics.
 ### Systems Administered
 1. **The Space Cake Timer.** Purchase starts a 2-hour game-time countdown with a visible UI counter. All delayed effects land simultaneously at expiry. Bas states the duration correctly at purchase and correctly at every subsequent enquiry.
 2. **The "It's Not Working" dialogue chain.** Available at 30-minute intervals post-purchase. Four stages, escalating bro certainty, terminating in "OH." Bas's four responses get progressively shorter and he never once looks up.
-3. **The Munchies pipeline.** When the SP boost wears off, The Munchies status fires and increases food purchase likelihood, driving traffic to Leeman's, Kapsalon Koning, and Frietomat. Bas is the origin of a supply chain he has no stake in.
+3. **The Munchies pipeline.** When the Bravado boost wears off, The Munchies status fires and increases food purchase likelihood, driving traffic to Leeman's, Kapsalon Koning, and Frietomat. Bas is the origin of a supply chain he has no stake in.
 
 ### Quest Gate Function
 Bas gates nothing structurally and refuses nobody. He gates *information compliance*: the no-tobacco rule (enforced), the photography prohibition (enforced via the Bouncer), and the two-hour truth (stated, restated, and ignored). His only escalation is looking at the door.
@@ -339,7 +339,7 @@ Bas gates nothing structurally and refuses nobody. He gates *information complia
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Consumables (three strains, hash, space cake) | Any | Consumable | SP restore with varying debuffs |
+| Consumables (three strains, hash, space cake) | Any | Consumable | Bravado restore with varying debuffs |
 | Tourist Trapped | First purchase | 1 hour | +15% prices at all other Shamsterdam vendors |
 | The "secret menu" | 3+ visits | Yes | Identical items, different names, stated as such |
 

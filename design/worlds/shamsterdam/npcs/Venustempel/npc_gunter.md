@@ -466,7 +466,7 @@ That contradiction is the germ mechanic's entire setup, and **Gunter never comme
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | **Organic Strawberries** | 5 SOVS | ~0.45 cost | +8 HP. Dippable (+1 stack per dip). Best seller. Four berries, loaded by hand, largest always at the top. |
-| **Pineapple Chunks** | 5 SOVS | ~0.50 cost | +7 HP, +2 SP. Dippable (+1 stack per dip). Fastest mover four weeks running. He has noticed. |
+| **Pineapple Chunks** | 5 SOVS | ~0.50 cost | +7 HP, +2 Bravado. Dippable (+1 stack per dip). Fastest mover four weeks running. He has noticed. |
 | **Banana Slices** | 5 SOVS | ~0.25 cost | +7 HP. Dippable (+1 stack per dip). Slowest mover. Being quietly reduced in the next order. |
 | **Jumbo Marshmallows** | 5 SOVS | ~0.20 cost | +5 HP. Dippable (+1 stack per dip). Nominally the children's item; sold overwhelmingly to adult men. |
 | **Rice Krispie Squares** | 5 SOVS | ~0.35 cost | +10 HP. Dippable (+1 stack per dip). Structurally the best dipper on the board and he will say so if asked, in exactly those words, with no awareness of the board copy underneath it. |

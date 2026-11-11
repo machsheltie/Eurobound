@@ -95,7 +95,7 @@ Backstage passes come from Madame Fortissima and are earned exactly one way: a c
 - **Bradley:** *"I have read the programme. Twice. I have elected not to open a discussion."*
 
 **Result:**
-- **Full HP/SP restore**
+- **Full HP/Bravado restore**
 - **"Star Quality"** — +3 Charm for 4 hours
 - **"Full Face"** — cosmetic state until the party next sleeps. Every NPC in Sinfonia reacts to it and **not one of them explains it**
 - **One permanent Bravado point**
@@ -110,7 +110,7 @@ Backstage passes come from Madame Fortissima and are earned exactly one way: a c
 | **Refuse the invitation upstairs** | Fortissima: *"No? Well. You are the first in some while. Come back Saturday, the offer does not expire, and neither, evidently, do I."* Adelheid: *"Sensible. (a beat) Genuinely. Enjoy Sinfonia."* The invitation re-fires **every Saturday for the rest of the game**. Backstage passes, prop-room hints and the labyrinth shortcut are all unaffected. | Nothing. The entry is deferred, not forfeited. |
 | **Go upstairs, refuse the Nightcap** | Fortissima: *"Sensible. Boring. (she drinks hers) But sensible."* Adelheid takes the glass back without comment and drinks it herself: *"More for the household."* **The couchsurf completes in full.** The party sleeps there, wakes late, and gets the entire morning scene as an ordinary hangover on somebody else's very good furniture. The pillow is clean. The coffee table survives, so **there is no 80 SOVS invoice**. Bradley still looks at the shoes for two seconds and still says nothing. | The **"Full Face"** cosmetic only. |
 
-**Everything else is granted on both branches:** the HP/SP restore, "Star Quality", the permanent Bravado point, Passport Entry #7, the Chronicles completion credit, the "Cultural Ambassador" title track, and every post-Nightcap callback. **No content anywhere in the game is gated behind drinking the tray.**
+**Everything else is granted on both branches:** the HP/Bravado restore, "Star Quality", the permanent Bravado point, Passport Entry #7, the Chronicles completion credit, the "Cultural Ambassador" title track, and every post-Nightcap callback. **No content anywhere in the game is gated behind drinking the tray.**
 
 **Enhanced ICQ Integration:**
 ```
@@ -283,7 +283,7 @@ On the appeased route Bassmeister arrives with a tray of spectral, translucent, 
 - **Bradley:** *"She is a licensed food service professional."* *(the other two treat this as the most boring possible interpretation of the evening)*
 
 **Result:**
-- **Full HP/SP recovery** ("Restful Death")
+- **Full HP/Bravado recovery** ("Restful Death")
 - **"Touched by Death"** +15% rhythm game performance for 3 hours
 - **Permanent 10% Bone Bar discount** (Bone Bar only; Bassmeister does not honour it at his own counter, warmly, once)
 - **Insider Tip (journal):** come at half eleven, not one — empty floor, slow tempo, learn the timing off the glass panels before there's anyone in to see you get it wrong. And tip in the pelvic bowl, not the hand.

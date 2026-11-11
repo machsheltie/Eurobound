@@ -378,7 +378,7 @@ Safari", "Photogenic Drinker" is the all-selfies game-wide reward]
 
 **Reward — Permanent +1 to All Alcohol-Based Items:**
 - All HP restoration from beer/alcohol items
-- All SP restoration from beer/alcohol items
+- All Bravado restoration from beer/alcohol items
 - All buff durations from beer/alcohol items
 - All "chance of" effects from beer/alcohol items (improved by 1%)
 

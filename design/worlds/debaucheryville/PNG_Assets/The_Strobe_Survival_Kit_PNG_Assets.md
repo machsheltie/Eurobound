@@ -7,7 +7,7 @@ The Strobe Survival Kit is a fold-out street stall run like a forward operating 
 **Theme:** Harm reduction disguised as tactical commerce — "Equip Yourself. The Night Is Hostile."
 **Zone:** Absinthe Arcade, near club entrances
 **Hours:** 8 PM - 5 AM (pre-club through post-club; prices +50% after midnight, earplugs exempt)
-**Primary Function:** Street vendor / equipment hub — Confusion-reduction gear, SP/HP consumables, theft prevention, next-day status prevention, Tactical Briefing system, Bravado interactions
+**Primary Function:** Street vendor / equipment hub — Confusion-reduction gear, Bravado/HP consumables, theft prevention, next-day status prevention, Tactical Briefing system, Bravado interactions
 
 ---
 

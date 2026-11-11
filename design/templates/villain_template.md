@@ -95,7 +95,7 @@ Canon rules that bind every villain:
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | [X] | [Rolling meter applies] |
-| **SP** | [X or N/A] | [Resource for skills, if used] |
+| **Bravado** | [X or N/A] | [Resource for skills, if used] |
 | **Offense** | [X] | |
 | **Defense** | [X] | |
 | **Speed** | [X] | |

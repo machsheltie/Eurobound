@@ -202,7 +202,7 @@ The mini-mob floating cube with buzzword mechanics:
 - **SYNERGY (Gold)**: Vulnerable state - only takes damage when this word displayed
 - **OPTIMIZE (Green)**: Casts Inspired status effect (attack bonus)
 - **DISRUPT (Red)**: Casts Grease Fingers status (item use penalty)
-- **PIVOT (Blue)**: Casts Thirsty status (SP drain over time)
+- **PIVOT (Blue)**: Casts Thirsty status (Bravado drain over time)
 
 **Visual Design:**
 - Stock ticker text scrolling across all visible cube faces

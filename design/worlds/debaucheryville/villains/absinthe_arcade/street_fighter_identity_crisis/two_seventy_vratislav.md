@@ -106,7 +106,7 @@ He folds himself back into the cabinet, which tilts upright again. On later toke
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 54 | Heaviest of the three Identity Crisis villains |
-| **SP** | N/A | Engine enemy schema has no SP field |
+| **Bravado** | N/A | Engine enemy schema has no Bravado field |
 | **Offense** | 9 | |
 | **Defense** | 6 | |
 | **Speed** | 2 | Acts last nearly every round. The bros get to set up before every telegraph |

@@ -115,7 +115,7 @@
 |------|-------|-----------|---------------|----------------|-------|
 | Haring (Traditional) | 4 SOVS | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
 | Haring met Uitjes | 5 SOVS | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
-| De Waarheid Platter | 8 SOVS | +50 HP, +20 SP | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
+| De Waarheid Platter | 8 SOVS | +50 HP, +20 Bravado | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
 | Broodje Haring | 5 SOVS | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
 | "Just the Bread" | 2 SOVS | +5 HP | Coward's Comfort | None | Available, not recommended |
 | Kibbeling (Fried Fish) | 6 SOVS | +30 HP | None | None | For those who aren't ready |

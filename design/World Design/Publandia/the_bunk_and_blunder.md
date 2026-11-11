@@ -166,7 +166,7 @@ Sleep quality depends on random roommate generation:
 | The Couple | Thinks they're being quiet (they're not) | -35% rest quality |
 
 **Rest Quality Calculation**:
-- Base Rest: 50% HP/SP restoration
+- Base Rest: 50% HP/Bravado restoration
 - Modified by room type (+/- based on bed count)
 - Modified by roommates (cumulative effects)
 - Minimum: 20% restoration (you survived)

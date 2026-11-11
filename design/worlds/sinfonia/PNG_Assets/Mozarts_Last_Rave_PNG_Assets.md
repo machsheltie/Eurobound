@@ -785,7 +785,7 @@ assets/sprites/locations/sinfonia/mozarts_last_rave/
 - Discovery puzzle state machine: `rumor_heard → cemetery_entered → wrong_grave_examined → correct_grave_found → knocked → descended`. The wrong-grave branch is content, not a failure
 - Boss state machine: `intro → phase_1 → phase_2 → phase_3 → (defeat | appeased)`. Appeasement requires `lost_composition` in inventory and is only presentable during `phase_3`
 - Rhythm difficulty is per-zone: Bone Bar (slow tempo, forgiving), Dancefloor (medium), Requiem Room (variable), Conductor's Crypt (boss-controlled, adaptive)
-- Couchsurf flow (Helga): three drinks purchased + tip given + no "are the undead real" dialogue selected → Requiem Room rest → full HP/SP, "Touched by Death" +15% rhythm for 3 hours, permanent 10% Bone Bar discount
+- Couchsurf flow (Helga): three drinks purchased + tip given + no "are the undead real" dialogue selected → Requiem Room rest → full HP/Bravado, "Touched by Death" +15% rhythm for 3 hours, permanent 10% Bone Bar discount
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |

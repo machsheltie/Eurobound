@@ -359,7 +359,7 @@ assets/sprites/locations/publandia/shenanigans/
 | Stamp Inked on Passport | (64, 0) | 64x64 | Faded-gold impression, slightly smudged — pressed with feeling |
 | Fool's Gold Bottle | (128, 0) | 32x64 | Golden Ale, honey glint, bitter-finish label. The only honest thing here |
 | Fool's Gold Poured Pint | (160, 0) | 32x64 | Golden, hopeful, bitter finish — just like your evening |
-| Fool's Gold Inventory Icon | (192, 0) | 32x32 | +30 HP, +15 SP, "Learned Optimism" chance |
+| Fool's Gold Inventory Icon | (192, 0) | 32x32 | +30 HP, +15 Bravado, "Learned Optimism" chance |
 | Bottle Cap Clover | (224, 0) | 32x32 | Three leaves, one wilted — brand consistency in defeat |
 | Stamp Ink Pad | (192, 32) | 32x32 | Faded gold, refilled with lost money (spiritually) |
 | "House Rules" Coaster | (224, 32) | 32x32 | "First one free. We're not heartless." |

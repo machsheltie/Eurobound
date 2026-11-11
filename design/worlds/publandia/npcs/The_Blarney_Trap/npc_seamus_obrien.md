@@ -303,27 +303,27 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 |--------------|-------|--------------|---------------|
 | Guinness (Pint) | 8 SOVS | 6 SOVS across the river | +15 HP, progresses toward "Absolutely Scuttered", triggers the 119.5-second ritual |
 | Smithwick's (Pint) | 7 SOVS | 5 SOVS across the river | +12 HP, progresses toward "Absolutely Scuttered", flagged by Seamus as a local's order |
-| Whiskey (Jameson) | 8 SOVS | 4 SOVS measure | +10 HP, +5 SP, temporary +Bravado |
-| Whiskey (Premium — Powers, Redbreast, Midleton) | 12–20 SOVS | 7–14 SOVS | +15 HP, +10 SP, +Bravado, +Charm; ordering Midleton unlocks a staff-respect beat |
-| Irish Coffee | 10 SOVS | 4 SOVS in materials | +20 HP, +15 SP, caffeine/alcohol balance, tourist favourite and Seamus knows it |
+| Whiskey (Jameson) | 8 SOVS | 4 SOVS measure | +10 HP, +5 Bravado, temporary +Bravado |
+| Whiskey (Premium — Powers, Redbreast, Midleton) | 12–20 SOVS | 7–14 SOVS | +15 HP, +10 Bravado, +Bravado, +Charm; ordering Midleton unlocks a staff-respect beat |
+| Irish Coffee | 10 SOVS | 4 SOVS in materials | +20 HP, +15 Bravado, caffeine/alcohol balance, tourist favourite and Seamus knows it |
 | Tayto Crisps (Cheese & Onion) | 3 SOVS | 1 SOV | +5 HP, absorbs some alcohol. There is no second flavour. Do not ask. |
 | Toastie | 8 SOVS | 3 SOVS | +25 HP, absorbs significant alcohol |
 | Full Irish | 15 SOVS | 6 SOVS | +50 HP, cures "The Fear", +Clarity |
-| The Sweet Surrender | 8 SOVS | Contract-brewed by Stoutworks to Seamus's grandfather's recipe | +35 HP, +10 SP, "Comfortable Trap" (+10% Bravado retention, 1 hour), 5% "Contentment". **Locked until the Blarney Trap stamp is earned.** First one free. |
+| The Sweet Surrender | 8 SOVS | Contract-brewed by Stoutworks to Seamus's grandfather's recipe | +35 HP, +10 Bravado, "Comfortable Trap" (+10% Bravado retention, 1 hour), 5% "Contentment". **Locked until the Blarney Trap stamp is earned.** First one free. |
 | Publandia Legendary Hangover | 50 SOVS | Priceless / regrettable | +15 ALL stats for one full battle, then "Legendary Hungover" (−10 all stats, 30 min). **Locked until all four Publandia stamps are collected.** |
 
 ### Accommodation
 | Room | Price/Night | Restoration | Noise | Seamus's Sales Line |
 |------|-------------|-------------|-------|---------------------|
-| Shared Dorm | 35 SOVS | 50% HP/SP | Extreme | "You'll make friends. You'll hear every one of them breathing." |
-| Street-Facing Single | 55 SOVS | 70% HP/SP | High | "Atmospheric. That's the word we use." |
-| Courtyard Single | 70 SOVS | 85% HP/SP | Moderate | "You'll actually sleep. Worth the fifteen." |
-| Street-Facing Double | 75 SOVS | 70% HP/SP | High | "Two of you, one window, all the craic." |
-| Courtyard Double | 90 SOVS | 85% HP/SP | Moderate | "Best value in the house and I'll not be talked down." |
-| The Yeats Suite | 120 SOVS | 100% HP/SP | Low | "Quotes on every surface. Some of them are even his." |
-| The Joyce Suite | 120 SOVS | 100% HP/SP | Low | "The layout's confusing on purpose. That's the joke. You'll get it around 3 AM." |
-| The Wilde Suite | 150 SOVS | 100% HP/SP + "Wit Sharpened" | Low | "Velvet everything. You'll wake up cleverer. Or think you have." |
-| The Behan Suite | 150 SOVS | 100% HP/SP | Low | "Minibar's pre-stocked. No judgment. That's not a slogan, that's a policy." |
+| Shared Dorm | 35 SOVS | 50% HP/Bravado | Extreme | "You'll make friends. You'll hear every one of them breathing." |
+| Street-Facing Single | 55 SOVS | 70% HP/Bravado | High | "Atmospheric. That's the word we use." |
+| Courtyard Single | 70 SOVS | 85% HP/Bravado | Moderate | "You'll actually sleep. Worth the fifteen." |
+| Street-Facing Double | 75 SOVS | 70% HP/Bravado | High | "Two of you, one window, all the craic." |
+| Courtyard Double | 90 SOVS | 85% HP/Bravado | Moderate | "Best value in the house and I'll not be talked down." |
+| The Yeats Suite | 120 SOVS | 100% HP/Bravado | Low | "Quotes on every surface. Some of them are even his." |
+| The Joyce Suite | 120 SOVS | 100% HP/Bravado | Low | "The layout's confusing on purpose. That's the joke. You'll get it around 3 AM." |
+| The Wilde Suite | 150 SOVS | 100% HP/Bravado + "Wit Sharpened" | Low | "Velvet everything. You'll wake up cleverer. Or think you have." |
+| The Behan Suite | 150 SOVS | 100% HP/Bravado | Low | "Minibar's pre-stocked. No judgment. That's not a slogan, that's a policy." |
 
 ### Key Items
 | Item | Price | Alternative Acquisition | Function |
@@ -456,7 +456,7 @@ Secondary gate: **The Snug and the Backroom.** Both require "Pub Regular" status
 | Bottle Opener Keychain | Purchase / Pint-Off victory / Pub Regular | Yes (Key Item, cannot be sold or discarded) | Grants brewery access game-wide; recognised in all four cities |
 | The Brewery Passport Book | Given free with the opener | Yes (permanent menu feature) | Tracks 18 stamps; unlocks city-completion and Continental rewards |
 | The Blarney Trap Stamp | Pint-Off win / successful toast / Pub Regular, with opener held | Yes | 1 of 4 Publandia stamps; unlocks The Sweet Surrender |
-| The Sweet Surrender | On stamp acquisition (first pint free, 8 SOVS after) | No (consumable) | +35 HP, +10 SP, "Comfortable Trap"; 5% "Contentment" |
+| The Sweet Surrender | On stamp acquisition (first pint free, 8 SOVS after) | No (consumable) | +35 HP, +10 Bravado, "Comfortable Trap"; 5% "Contentment" |
 | Pub Regular Badge | Consistent attendance, rounds bought, staff names remembered | Yes (status) | Snug access, discounts, staff trust, Backroom eligibility |
 | Publandia Legendary Hangover | All four Publandia stamps | No (repurchasable, 50 SOVS) | +15 all stats for one battle, then "Legendary Hungover" |
 

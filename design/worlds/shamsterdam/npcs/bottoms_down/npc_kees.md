@@ -245,20 +245,20 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 ### Menu
 | Item/Service | Price | ABV | Effect/Result |
 |--------------|-------|-----|---------------|
-| Jonge Jenever | 4 SOVS | 35% | +15 SP, mild warmth. "Young. Starter." |
-| Oude Jenever | 6 SOVS | 35% | +25 SP, The Shakes (−Accuracy). "Old. Respect required." |
-| Zeer Oude Jenever | 12 SOVS | 38% | +40 SP, The Shakes ×2. "Very old. Very serious." |
-| Korenwijn | 15 SOVS | 38% | +50 SP, +Liquid Courage, The Shakes. "Grain wine. Not for beginners." |
+| Jonge Jenever | 4 SOVS | 35% | +15 Bravado, mild warmth. "Young. Starter." |
+| Oude Jenever | 6 SOVS | 35% | +25 Bravado, The Shakes (−Accuracy). "Old. Respect required." |
+| Zeer Oude Jenever | 12 SOVS | 38% | +40 Bravado, The Shakes ×2. "Very old. Very serious." |
+| Korenwijn | 15 SOVS | 38% | +50 Bravado, +Liquid Courage, The Shakes. "Grain wine. Not for beginners." |
 | Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility. "Also available. Yes." |
 | The Kopstootje Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred, −Intelligence, +Bravado. "Traditional. Brave." |
 | "The Flight" (5 samples) | 20 SOVS | Escalating | The gauntlet. "For tasting. Or testing." |
-| Back Room Special | 25 SOVS | 40% | +60 SP, everything status. "If you qualify." |
+| Back Room Special | 25 SOVS | 40% | +60 Bravado, everything status. "If you qualify." |
 | Bottoms Down Bottle Opener | 20 SOVS | — | Tulip glass with visible surface tension, amber brass, sawdust-coloured leather loop, "No Hands. No Fear." Free via gauntlet completion. |
 
 ### Consumable: Oude Genever
 | Effect | Value |
 |--------|-------|
-| SP Restore | +40 (massive) |
+| Bravado Restore | +40 (massive) |
 | HP Effect | None |
 | Status | "The Shakes" — −15% Accuracy for 3 turns |
 | Special | Cannot be consumed during combat (hands shaking) |
@@ -378,7 +378,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Bottoms Down Bottle Opener | Gauntlet or 20 SOVS | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
-| Oude Genever ×5 (or ×2) | Gauntlet resolution | Consumable | +40 SP, The Shakes, cannot be used in combat |
+| Oude Genever ×5 (or ×2) | Gauntlet resolution | Consumable | +40 Bravado, The Shakes, cannot be used in combat |
 | "Oude Genever" stamp | Tour completion with opener | Yes | 1 of 4 → **Canal Courage passive unlocked** when all four are stamped |
 | Back Room access | Full gauntlet | Yes | The 100-Year Barrel, the private stock, the one chair |
 | "Jenever Master" / "Jenever Survivor" title | Gauntlet outcome | Yes | Accuracy varies |

@@ -121,7 +121,7 @@ Back on the attract screen as a silhouette the moment the fight ends. He returns
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 72 | Rolling meter applies |
-| **SP** | 15 | Kebality 10 SP; Extra Layer 3 SP |
+| **Bravado** | 15 | Kebality 10 Bravado; Extra Layer 3 Bravado |
 | **Offense** | 10 | |
 | **Defense** | 6 | +2 per Extra Layer stack (max 2 stacks) |
 | **Speed** | 3 (Phase 2+: 6) | Slow as a spit. Faster once he loses an arm |
@@ -136,7 +136,7 @@ Back on the attract screen as a silhouette the moment the fight ends. He returns
 | Close Shave | Physical | Heavy single-target carving slash | Grease Fingers (50%) | 25% / always | No |
 | Extra Layer | Gimmick (self buff) | Slaps another layer of meat onto the cone: +2 Defense, stacks to 2 | — | 15% / round > 2, Phase 1–2 only | No |
 | Heat Lamp Glare | AoE | Light damage to all bros; the halo flares | Sloppy (25%) | 20% / Phase 2+ (replaces Extra Layer's weight in Phase 3) | No |
-| **KEBALITY** | Physical / Gimmick | Targets the bro with the lowest HP. Heavy damage; the bro is wrapped and spit-roasted (Stun, 1 turn) | Stun (1 turn) + Food Poisoning (50%) | Cued by Count Continue's "FINISH HIM!" when off cooldown; if the Count is down, every 4th round. 10 SP. Once per phase | **Yes. One full turn: giant pita raised overhead, halo flares white, "FINISH... HIM." Screen darkens to Kahn and the target** |
+| **KEBALITY** | Physical / Gimmick | Targets the bro with the lowest HP. Heavy damage; the bro is wrapped and spit-roasted (Stun, 1 turn) | Stun (1 turn) + Food Poisoning (50%) | Cued by Count Continue's "FINISH HIM!" when off cooldown; if the Count is down, every 4th round. 10 Bravado. Once per phase | **Yes. One full turn: giant pita raised overhead, halo flares white, "FINISH... HIM." Screen darkens to Kahn and the target** |
 
 ### Phases
 | Phase | Trigger | Behavior Change |

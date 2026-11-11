@@ -414,7 +414,7 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 | Stat | Value |
 |------|-------|
 | HP Restoration | +40 HP |
-| SP Restoration | +15 SP |
+| Bravado Restoration | +15 Bravado |
 | Special Effect | 10% chance of "Fermented Fury" buff (+15% Attack for next battle) |
 | Status Risk | 10% chance of "The Vat's Whisper" (hear faint yeast thoughts, cosmetic) |
 | Purchase Price | 12 SOVS (available at Stoutworks Gift Shop and The Blarney Trap after unlock) |

@@ -109,7 +109,7 @@ He reappears on the Kebab Kombat attract screen seconds later, mid-spin, announc
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 34 | Rolling meter applies |
-| **SP** | 20 | FINISH HIM! 4 SP; CONTINUE? 8 SP |
+| **Bravado** | 20 | FINISH HIM! 4 Bravado; CONTINUE? 8 Bravado |
 | **Offense** | 4 | He has no arms. He has opinions |
 | **Defense** | 4 | |
 | **Speed** | 11 | Acts first. Announcers always talk first |
@@ -120,10 +120,10 @@ He reappears on the Kebab Kombat attract screen seconds later, mid-spin, announc
 ### Move List (weighted-random AI)
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
 |------|------|--------|------------------|--------------------|--------------|
-| "FINISH HIM!" | Gimmick (ally buff) | One ally gains **Hardcore Gamer** (+2 Speed, +1 Crit chance, −1 HP/turn, 2 turns). If Shish Kahn is on the field and Kebality is off cooldown, this call starts the Kebality wind-up instead (see `shish_kahn.md`). Costs 4 SP | Hardcore Gamer (ally) | 35% / always | No (but it *is* the Kebality telegraph when Kahn is present) |
+| "FINISH HIM!" | Gimmick (ally buff) | One ally gains **Hardcore Gamer** (+2 Speed, +1 Crit chance, −1 HP/turn, 2 turns). If Shish Kahn is on the field and Kebality is off cooldown, this call starts the Kebality wind-up instead (see `shish_kahn.md`). Costs 4 Bravado | Hardcore Gamer (ally) | 35% / always | No (but it *is* the Kebality telegraph when Kahn is present) |
 | "EXTRA CRISPY!" | Social | Corner pop-up. Light Social damage to one bro | Embarrassed (40%) | 30% / always | No |
 | Initials Entered | Social | Writes the target's initials onto the high-score table as a three-letter insult of the Count's choosing (DAD, ASS, MOM, TAB, FEE). No HP damage | Tourist Trap Victim (20%); Embarrassed (25%) | 20% / always | No |
-| **CONTINUE?** | Gimmick (paid revive) | Resolves at the end of the telegraph turn: revives one KO'd ally at 50% HP and charges 3 SOVS per continue to the party wallet. Max 2 continues per fight. Costs 8 SP. (Paid revive **Approved 2026-11-09**.) **If the wallet can't cover the 3 SOVS (Approved 2026-11-09):** he takes nothing. The counter hits 0, the screen flashes INSUFFICIENT CREDITS, no revive happens, and the bro with the lowest HP gets **Broke AF**. Battle log: "Count Continue declines your card. Chadwick offers to pay in exposure." | Broke AF (only on INSUFFICIENT CREDITS) | Always, when an ally is KO'd and a continue remains; overrides the weighted pool | **Yes. Countdown 9 → 8 → 7 beside his head for one full turn; coin-slot glows gold.** KO Count Continue during the telegraph turn and the continue never happens |
+| **CONTINUE?** | Gimmick (paid revive) | Resolves at the end of the telegraph turn: revives one KO'd ally at 50% HP and charges 3 SOVS per continue to the party wallet. Max 2 continues per fight. Costs 8 Bravado. (Paid revive **Approved 2026-11-09**.) **If the wallet can't cover the 3 SOVS (Approved 2026-11-09):** he takes nothing. The counter hits 0, the screen flashes INSUFFICIENT CREDITS, no revive happens, and the bro with the lowest HP gets **Broke AF**. Battle log: "Count Continue declines your card. Chadwick offers to pay in exposure." | Broke AF (only on INSUFFICIENT CREDITS) | Always, when an ally is KO'd and a continue remains; overrides the weighted pool | **Yes. Countdown 9 → 8 → 7 beside his head for one full turn; coin-slot glows gold.** KO Count Continue during the telegraph turn and the continue never happens |
 
 **Mechanic (Approved 2026-11-09):** CONTINUE? needs two things the battle system may not have yet: (1) an enemy-side revive of a KO'd ally, and (2) an enemy action that charges the continue fee to the party wallet mid-battle. Both are approved. The paid CONTINUE revive exists on Count Continue and nowhere else in the Arcade.
 

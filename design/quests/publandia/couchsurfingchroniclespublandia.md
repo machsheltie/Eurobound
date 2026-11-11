@@ -189,7 +189,7 @@ She makes three coffees and delivers the flat sentence of the scene while blotti
 - **Bradley:** *"I read the back of the book and the room stopped."* *(beat)* *"I've been trying to work out whether that was good."*
 
 **Result:**
-- **HP/SP restore** ("Slept Above The Minutes")
+- **HP/Bravado restore** ("Slept Above The Minutes")
 - **"Guest Speaker"** — permanent. **One free "Informed Position" dialogue option, usable once per city, in which the speaking bro says nothing at length and is believed.** It works every time. It has never once been about the subject
 - **"Proposed and Seconded"** — Bradley only. A permanent membership he never activates and never mentions
 - **+15 Bravado, +2 Charm for 3 hours**
@@ -385,7 +385,7 @@ Then the flat line of the scene, delivered while she is drawing a fresh hatched 
 - **Bradley:** *"I stood at a window for two hours in the dark."* *(long pause)* *"I'd do it again. That's the part I want to flag."*
 
 **Result:**
-- **-25 SP** (nobody slept; there was a watch; the watch was real)
+- **-25 Bravado** (nobody slept; there was a watch; the watch was real)
 - **"The Fear"** applied on wake — wears off at noon like everyone else's
 - **"Provisional Status"** — permanent. **The Snug is free, instant and unchallenged for the rest of the game**, bypassing its own established gate, and the party never learns that this is why
 - **+20 Bravado** — the second-largest single Bravado award in the Chronicles, for forty-one days of somebody else's drizzle and one two-hour shift

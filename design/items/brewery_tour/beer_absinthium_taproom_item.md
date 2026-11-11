@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | absinthe-infused lager (legally questionable) [source: design/items/brewery_passport_book_debaucheryville.md L114] |
 | **ABV** | 8.5% (plus "additives") [source: design/items/brewery_passport_book_debaucheryville.md L115] |
-| **Effects** | +15 SP restoration [source: design/items/brewery_passport_book_debaucheryville.md L116]; 30% chance to apply "Green Fairy Confusion" to the USER [source: design/items/brewery_passport_book_debaucheryville.md L117] |
+| **Effects** | +15 Bravado restoration [source: design/items/brewery_passport_book_debaucheryville.md L116]; 30% chance to apply "Green Fairy Confusion" to the USER [source: design/items/brewery_passport_book_debaucheryville.md L117] |
 | **Risk** | "The confusion is part of the experience" — self-inflicted by design [source: design/items/brewery_passport_book_debaucheryville.md L118] |
 | **Price** | 12 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book_debaucheryville.md L119] |
 | **Special** | only beer that debuffs the user by design [source: design/items/brewery_passport_book_debaucheryville.md L122] |

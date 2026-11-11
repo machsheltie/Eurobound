@@ -107,11 +107,11 @@
 ### Menu & Consumables
 | Item | Price | Effects | Staff Comment |
 |------|-------|---------|---------------|
-| "Shamsterdam Dream" (Tourist Rec) | 18 SOVS/g | +20 SP, -Speed, Delayed "Space Cake Effect" | "Very popular. Very smooth." (scripted) |
-| "Green Guide Special" (House) | 15 SOVS/g | +15 SP, +Confused status | "House blend. Good choice." (automatic) |
-| "Premium Heritage" | 25 SOVS/g | +30 SP, -Intelligence, +Bravado temporarily | "Excellent selection, sir." (upsell confirmed) |
-| Space Cake (1 piece) | 8 SOVS | Delayed effect: +40 SP after 2 hours game time, "It's Not Working" dialogue available | "Wait two hours. Americans never wait." |
-| Hash (1g) | 12 SOVS | +25 SP, "Heavy" status (-Movement speed) | *sigh* "For smoking. Not eating." |
+| "Shamsterdam Dream" (Tourist Rec) | 18 SOVS/g | +20 Bravado, -Speed, Delayed "Space Cake Effect" | "Very popular. Very smooth." (scripted) |
+| "Green Guide Special" (House) | 15 SOVS/g | +15 Bravado, +Confused status | "House blend. Good choice." (automatic) |
+| "Premium Heritage" | 25 SOVS/g | +30 Bravado, -Intelligence, +Bravado temporarily | "Excellent selection, sir." (upsell confirmed) |
+| Space Cake (1 piece) | 8 SOVS | Delayed effect: +40 Bravado after 2 hours game time, "It's Not Working" dialogue available | "Wait two hours. Americans never wait." |
+| Hash (1g) | 12 SOVS | +25 Bravado, "Heavy" status (-Movement speed) | *sigh* "For smoking. Not eating." |
 | Merchandise: T-Shirt | 35 SOVS | +Embarrassed status (visible branded clothing) | "One size fits... most." |
 | Merchandise: Branded Grinder | 45 SOVS | Tool item, functions same as 5 SOVS version | "Collector's item." |
 | Merchandise: Poster | 20 SOVS | Decorative (hostel room), -Intelligence display | "Very authentic." |
@@ -127,7 +127,7 @@
 - **Dialogue Option**: "It's not working" available at 30-minute intervals
 - **Staff Response**: "It is working. You will know. Wait."
 - **Effect Trigger**: Delayed status effects hit all at once when timer completes
-- **Bros' Reaction**: "OH THERE IT IS" dialogue, -Navigation, +Confusion, +SP burst
+- **Bros' Reaction**: "OH THERE IT IS" dialogue, -Navigation, +Confusion, +Bravado burst
 
 ### Bravado Interactions
 - **Gain Bravado**: Order without asking questions, correct pronunciation attempt (rare), purchase completed without incident
@@ -213,7 +213,7 @@
 - **Tourist Trapped**: Applied on first purchase, increases all prices 15% at other Shamsterdam vendors for 1 hour (you look like a mark)
 - **Contact High**: Environmental AoE effect, applies mild Confusion to all party members while inside
 - **Space Cake Timer**: Visible countdown after space cake purchase, effects delayed
-- **The Munchies**: Triggers after SP boost wears off, increases food purchase likelihood
+- **The Munchies**: Triggers after Bravado boost wears off, increases food purchase likelihood
 
 ### The "It's Not Working" Dialogue Chain
 **30 minutes post-space cake:**

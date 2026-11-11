@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | medium-bodied amber ale, perfectly balanced [source: design/items/brewery_passport_book_sinfonia.md L163] |
 | **ABV** | 5.5% [source: design/items/brewery_passport_book_sinfonia.md L164] |
-| **Effects** | +20 HP, +10 SP [source: design/items/brewery_passport_book_sinfonia.md L165]; "Moderate Mood" — immune to Rushed/Sluggish for 30 min [source: design/items/brewery_passport_book_sinfonia.md L166] |
+| **Effects** | +20 HP, +10 Bravado [source: design/items/brewery_passport_book_sinfonia.md L165]; "Moderate Mood" — immune to Rushed/Sluggish for 30 min [source: design/items/brewery_passport_book_sinfonia.md L166] |
 | **Risk** | none [source: design/items/brewery_passport_book_sinfonia.md L167] |
 | **Price** | 6 SOVS — below the 8–15 SOVS guideline band; Contradiction 3 RULED (author): beers win, Tempo Tantrum stays 6 SOVS — the band is a soft guideline, not a rule [source: design/items/brewery_passport_book_sinfonia.md L168] |
 | **Special** | the only beer all tempo factions grudgingly accept [source: design/items/brewery_passport_book_sinfonia.md L171] |

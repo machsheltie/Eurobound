@@ -316,7 +316,7 @@ She likes feeding people and she likes being right, and this job is the only one
 |------|-------|--------------|---------------|
 | Pre-Fight Fuel | 12 SOVS | A meat pie with extra black pudding and a better name — 3 SOVS of markup on branding | +50 HP, +10 Attack (1 battle). Appears when combat approaches. |
 | Liquid Fortitude Stew | 15 SOVS | The Irish Stew with a spoon of horseradish and confidence | +60 HP, Fear immunity (30 min). Appears when a boss area is near. |
-| The Second Wind | 18 SOVS | Steep, and she knows it; sold to people who cannot currently do arithmetic | +70 HP, +20 SP, removes fatigue. Appears when HP/SP low. |
+| The Second Wind | 18 SOVS | Steep, and she knows it; sold to people who cannot currently do arithmetic | +70 HP, +20 Bravado, removes fatigue. Appears when HP/Bravado low. |
 | Plot Convenience Pie | 20 SOVS | Beef & Guinness with an egg in it | +80 HP, +5% Luck (1 hour). Appears before crucial decisions. |
 | The Protagonist's Portion | 25 SOVS | A Full Irish and a half. Absurd. Sells constantly. | Full HP restore, +all stats (30 min). Appears at main quest milestones. |
 | Calm Nerves Casserole | 14 SOVS | Honest cooking, honest price | +55 HP, +8 Charisma (30 min). Appears before social challenges. |

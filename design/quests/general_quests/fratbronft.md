@@ -87,7 +87,7 @@ Dialogue pokes fun at crypto hype, get-rich-quick schemes, and frat bro FOMO cul
 Hidden references tie into other Easter eggs across the game, including Darkweb Dossier ICQ pop-ups and bulletin board posters.Wi‑Fi Hotspots & ICQ Chats (Save + Flavor + Hint System)
 • Clearly signed “FREE Wi‑Fi” locations double as save points and optional chat scenes.
 • ICQ contacts: Mom, Bestie, Hot Kroger Guy (cameo), Random Forum Troll, Shadow Tipster.
-• Uses: save, receive rumor-hints, unlock small healing or SP once per hotspot, drip‑feed world lore.
+• Uses: save, receive rumor-hints, unlock small healing or Bravado once per hotspot, drip‑feed world lore.
 • Accessibility: toggle chat speed; long-press to fast‑scroll.
 Progression & Rewards
 • City completion grants unique trinkets and unlocks cosmetic palettes.

@@ -23,7 +23,7 @@
       "display_name": "Absinthe Lager",
       "item_type": "signature_beer",
       "price": 12,
-      "effect": "Restores SP with Confused chance.",
+      "effect": "Restores Bravado with Confused chance.",
       "acquisition": "Purchasable after rewards granted."
     }
   ],

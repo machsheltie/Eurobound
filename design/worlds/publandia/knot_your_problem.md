@@ -70,7 +70,7 @@ Eoin keeps it simple. Pretzels. Variations on pretzels. Nothing else.
 | Stuffed Pretzel (cheese) | 6 SOVS | +25 HP | Melted cheese inside |
 | Stuffed Pretzel (jalapeño) | 7 SOVS | +22 HP, +Heat resist | Spicy option |
 | The Everything Pretzel | 6 SOVS | +23 HP | Every topping, chaotic |
-| Cinnamon Sugar Pretzel | 5 SOVS | +18 HP, +5 SP | Sweet option, Eoin judges silently |
+| Cinnamon Sugar Pretzel | 5 SOVS | +18 HP, +5 Bravado | Sweet option, Eoin judges silently |
 
 ### Technical Specifications
 - **Color Palette**: Primary: Industrial Steel (#71797E), Accent: Pretzel Brown (#C4A747), Background: Night Black (#1C1C1C), Mustard Yellow (#FFDB58)

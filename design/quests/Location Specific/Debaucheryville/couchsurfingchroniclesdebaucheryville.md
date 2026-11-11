@@ -34,7 +34,7 @@
 - **Bradley:** *"Definitely adding 'European spiritual experience' to my Tinder profile."*
 
 **Result:**
-- **+SP restored** (if you answer her crystal quiz correctly)
+- **+Bravado restored** (if you answer her crystal quiz correctly)
 - **or Confused status** if you roll your eyes mid-scene
 - **Gag Item:** Charged Quartz Vape Tip — unusable in battle, sells for 1 SOV
 
@@ -56,7 +56,7 @@
 - **Pilsner:** *"FlagMan always said artistic women are green flags!"*
 
 **Result:**
-- **-10 SP** (you didn't sleep)
+- **-10 Bravado** (you didn't sleep)
 - **But gain the collectible Ballad of the Bros** (used later in Sinfonia to win a music-based mini-game)
 
 **Real-World Consequence:** Her ballad becomes a running joke among local backpackers

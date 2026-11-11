@@ -77,7 +77,7 @@ Deirdre's menu is... adaptive. Items seem to appear based on what you're about t
 |------|-------|--------|-----------------|
 | Pre-Fight Fuel | 12 SOVS | +50 HP, +10 Attack (1 battle) | Combat approaches |
 | Liquid Fortitude Stew | 15 SOVS | +60 HP, Fear immunity (30 min) | Boss area nearby |
-| The Second Wind | 18 SOVS | +70 HP, +20 SP, removes fatigue | Player HP/SP low |
+| The Second Wind | 18 SOVS | +70 HP, +20 Bravado, removes fatigue | Player HP/Bravado low |
 | Plot Convenience Pie | 20 SOVS | +80 HP, +5% Luck (1 hour) | Before crucial decisions |
 | The Protagonist's Portion | 25 SOVS | Full HP restore, +all stats (30 min) | Main quest milestone |
 

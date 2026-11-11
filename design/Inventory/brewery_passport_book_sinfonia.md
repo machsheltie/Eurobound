@@ -162,7 +162,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 **Tempo Tantrum (The Moderato Pub)**
 - **Style**: Medium-bodied amber ale, perfectly balanced (of course)
 - **ABV**: 5.5%
-- **Stats**: +20 HP, +10 SP
+- **Stats**: +20 HP, +10 Bravado
 - **Effect**: "Moderate Mood" — immune to Rushed and Sluggish status for 30 minutes
 - **Risk**: None (the one balanced thing in the pub)
 - **Price**: 6 SOVS
@@ -173,7 +173,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 **Curtain Call Copper (The Standing Ovation)**
 - **Style**: Vienna-style copper lager with dramatic finish
 - **ABV**: 5.8%
-- **Stats**: +25 HP, +10 SP
+- **Stats**: +25 HP, +10 Bravado
 - **Effect**: "Stage Presence" (+3 Charm for 30 minutes)
 - **Risk**: None
 - **Price**: 8 SOVS
@@ -184,7 +184,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 **Heir Apparent Ale (Crown & Cask)**
 - **Style**: Belgian-style golden ale with noble hop character
 - **ABV**: 6.5%
-- **Stats**: +30 HP, +15 SP
+- **Stats**: +30 HP, +15 Bravado
 - **Effect**: "Noble Blood" (+2 Charm, +2 Style for 45 minutes)
 - **Risk**: None
 - **Price**: 10 SOVS
@@ -195,7 +195,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 **Waltz Weizen (The Dancing Stein)**
 - **Style**: Bavarian-style wheat beer with swirling head
 - **ABV**: 5.2%
-- **Stats**: +20 HP, +15 SP
+- **Stats**: +20 HP, +15 Bravado
 - **Effect**: "Light on Your Feet" (+3 Speed, +2 Dance for 30 minutes)
 - **Risk**: None
 - **Price**: 7 SOVS

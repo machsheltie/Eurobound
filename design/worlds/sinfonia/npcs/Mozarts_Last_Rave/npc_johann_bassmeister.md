@@ -264,7 +264,7 @@ To be named. Not avenged, not worshipped, not feared — named. The whole three-
 | Spine Glow-Stick | 8 SOVS | 0.60 SOVS | Light source in Fog Banks; +1 Bravado while equipped. Sold in packs of one, deliberately. |
 | Spine Glow-Stick, Full Vertebral Set (6) | 40 SOVS | 4 SOVS | The same buff. Chadwick buys this immediately and wears all six. |
 | Skull Glass (keep the vessel) | +3 SOVS on any drink | 2 SOVS | Inventory item, reusable, dishwasher-safe. Helga will confirm the provenance if asked. |
-| Femur Drumsticks (pair) | 15 SOVS | 5 SOVS | Playable on any Tombstone Speaker for a small SP restore, once per night |
+| Femur Drumsticks (pair) | 15 SOVS | 5 SOVS | Playable on any Tombstone Speaker for a small Bravado restore, once per night |
 | Rib Cage Coat Hook, Miniature | 20 SOVS | 6 SOVS | Room decoration. Holds one hat. |
 | "HE FELT IT FIRST" Shirt | 28 SOVS | 7 SOVS | +2 Charm inside Mozart's Last Rave. −1 Charm everywhere else in Sinfonia. |
 | Crown of Skulls (prop, retired stock) | 45 SOVS | 12 SOVS | Bone Throne selfie prop, keepable; wearing it in the Bassline Opera House is a documented incident |
@@ -276,11 +276,11 @@ To be named. Not avenged, not worshipped, not feared — named. The whole three-
 |--------------|-------|--------------|---------------|
 | The Adagio | 12 SOVS | 3 SOVS | Slow-release: +40 HP over 5 minutes. Calms the hit window. |
 | Allegro con Fuoco | 14 SOVS | 4 SOVS | +20% Speed, 20 minutes; narrows the hit window, which nobody reads before ordering |
-| Nocturne | 12 SOVS | 3 SOVS | +30 SP. Served without ice, in silence, at his instruction. |
+| Nocturne | 12 SOVS | 3 SOVS | +30 Bravado. Served without ice, in silence, at his instruction. |
 | Basso Continuo | 13 SOVS | 4 SOVS | +15% mitigation on bass-drop damage for one encounter |
-| Fugue State | 16 SOVS | 4 SOVS | +25 HP, +25 SP, and the next three dialogue choices are presented in a different order |
+| Fugue State | 16 SOVS | 4 SOVS | +25 HP, +25 Bravado, and the next three dialogue choices are presented in a different order |
 | The Unfinished | 15 SOVS | 4 SOVS | Served three-quarters full. Refuses to be topped up. +2 Wisdom for 1 hour. Nobody asks whose it is. |
-| **"RIP Your Sobriety"** | 18 SOVS | 5 SOVS, and a genuine liability | Full HP/SP restore, +25% rhythm performance for 30 minutes, then **Exhausted**. The recipe is a boss reward; buying it ready-made costs 18 SOVS forever. |
+| **"RIP Your Sobriety"** | 18 SOVS | 5 SOVS, and a genuine liability | Full HP/Bravado restore, +25% rhythm performance for 30 minutes, then **Exhausted**. The recipe is a boss reward; buying it ready-made costs 18 SOVS forever. |
 
 ### Hidden Details / Easter Eggs
 - **Examine the pipe organ, before the fight**: *"Original pipework. Modern faders bolted to the stops, and a label-maker strip across them reading BASS / MID / HIGH / DOOM. Somebody did this on a Tuesday."* — This is the counter-play hint and it is available from the first second the player enters the arena.
@@ -392,7 +392,7 @@ He gates the **Eternal Setlist**, which is the key item that unlocks Requiem Roo
 |------|-------------|------------|--------|
 | Bone Conductor's Gloves | Either resolution | Yes | Accessory: +10% rhythm game timing, +3 Charm |
 | Eternal Setlist | Either resolution | Yes | Key item: unlocks Requiem Room VIP access |
-| "RIP Your Sobriety" (recipe) | Either resolution | Yes | Consumable recipe: full HP/SP restore, +25% rhythm performance 30 min, then Exhausted |
+| "RIP Your Sobriety" (recipe) | Either resolution | Yes | Consumable recipe: full HP/Bravado restore, +25% rhythm performance 30 min, then Exhausted |
 | Undead DJ's Blessing | Either resolution | Yes | Passive: +5% damage when attacking on-beat, permanent, game-wide |
 | Lost Composition | Appeasement route | Yes | He gestures for the party to keep it. Unsellable. No stat effect. It is just his symphony, and they have it. |
 | Full vendor stock | Appeasement route, post-boss | Repeatable | Rhythm buffs, bone merchandise, spine glowsticks, skull glasses, Classical Cocktails — priced above |

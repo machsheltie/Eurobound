@@ -118,7 +118,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 | Swap Panel: Standard Fare | (0, 192) | 96x32 | Default panel listing the always-available six |
 | Swap Panel: Pre-Fight Fuel | (96, 192) | 96x32 | Slides in when combat approaches |
 | Swap Panel: Liquid Fortitude Stew | (192, 192) | 96x32 | Slides in when a boss area is nearby |
-| Swap Panel: The Second Wind | (288, 192) | 96x32 | Slides in when player HP/SP runs low |
+| Swap Panel: The Second Wind | (288, 192) | 96x32 | Slides in when player HP/Bravado runs low |
 | Swap Panel: Plot Convenience Pie | (0, 224) | 96x32 | Slides in before crucial decisions |
 | Swap Panel: The Protagonist's Portion | (96, 224) | 96x32 | Slides in at main quest milestones — Hero Gold border |
 | Swap Panel: Today's Special Chalk | (192, 224) | 96x32 | "Whatever You Need Right Now" in Deirdre's handwriting |
@@ -230,7 +230,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 |------|----------|------|-------------|
 | Pre-Fight Fuel | (0, 32) | 32x32 | 12 SOVS, +50 HP, +10 Attack for one battle — combat approaches |
 | Liquid Fortitude Stew | (32, 32) | 32x32 | 15 SOVS, +60 HP, Fear immunity 30 min — boss area nearby |
-| The Second Wind | (64, 32) | 32x32 | 18 SOVS, +70 HP, +20 SP, removes fatigue — for rough times |
+| The Second Wind | (64, 32) | 32x32 | 18 SOVS, +70 HP, +20 Bravado, removes fatigue — for rough times |
 | Plot Convenience Pie | (96, 32) | 32x32 | 20 SOVS, +80 HP, +5% Luck for 1 hour — think clearly, eat first |
 | The Protagonist's Portion | (128, 32) | 48x48 | 25 SOVS, full HP restore, +all stats 30 min — the big one, Hero Gold plating |
 
@@ -345,7 +345,7 @@ assets/sprites/locations/publandia/plot_armor_provisions/
 - **Duration:** 1.0 second per panel
 - **Frames:** 4 (panel slide-out 0.3s → rail empty 0.2s → new panel slide-in 0.3s → Swap Flash 0.2s)
 - **Pattern:** One panel at a time, top rail first; Swap Flash Frames 1-3 punctuate the landing
-- **Trigger:** Hidden pre-event detection flag change (combat, boss, low HP/SP, decision, milestone)
+- **Trigger:** Hidden pre-event detection flag change (combat, boss, low HP/Bravado, decision, milestone)
 - **Purpose:** The player sees the menu adapt to a future the game hasn't announced yet — the core meta gag, animated
 - **Audio Sync:** Mysterious chime on the slide-in landing frame
 - **Performance Optimization:** Low LOD swaps panels instantly with Swap Flash only

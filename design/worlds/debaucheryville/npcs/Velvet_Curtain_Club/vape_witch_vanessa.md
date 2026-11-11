@@ -259,14 +259,14 @@ Her pricing goes up. That is the arc. After the Club Flyers job she raises the r
 ### Secondary Quest — Couchsurfing Chronicles
 - **Role**: Debaucheryville couchsurf host #1 (canonical)
 - **Trigger**: Pass the crystal quiz
-- **Outcome (canonical)**: **+SP restored** on a correct quiz answer; **Confused status** if the player rolls their eyes mid-scene; **Charged Quartz Vape Tip** gag item either way
+- **Outcome (canonical)**: **+Bravado restored** on a correct quiz answer; **Confused status** if the player rolls their eyes mid-scene; **Charged Quartz Vape Tip** gag item either way
 
 ### Secondary Quest — Nothing Is Getting Through
 - **Quest**: `debaucheryville_sidequest_nothing_is_getting_through_01`
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) attempts the couchsurf or a romance approach at the Velvet Curtain Club
-- **Outcome**: Herp Rejection Scene fires (see Dialogue). No couchsurf, no SP, no quiz. The party loses the 120 SOVS spent on two "barrier stones." Scene is repeatable; the price does not go back down
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the stool, the appraisal, "you cannot have the couch" — **and then the couchsurf resolves normally**: quiz, sage, collection tour, canonical **+SP / Confused** branch and the Charged Quartz Vape Tip, at a sixty-SOVS surcharge she narrates out loud. She is never nice about it and never lets them off the hook; the entry completes regardless. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
+- **Outcome**: Herp Rejection Scene fires (see Dialogue). No couchsurf, no Bravado, no quiz. The party loses the 120 SOVS spent on two "barrier stones." Scene is repeatable; the price does not go back down
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the stool, the appraisal, "you cannot have the couch" — **and then the couchsurf resolves normally**: quiz, sage, collection tour, canonical **+Bravado / Confused** branch and the Charged Quartz Vape Tip, at a sixty-SOVS surcharge she narrates out loud. She is never nice about it and never lets them off the hook; the entry completes regardless. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 
@@ -334,7 +334,7 @@ Local Debaucheryville accent, light and unexaggerated — she is a working profe
 
 ## 📝 Development Notes
 
-- All Chronicles canon is harvested verbatim in intent: peach-mango "cleansing" exhale, sage, the crystal NFT collection tour, the crystal quiz, +SP / Confused branch, and the Charged Quartz Vape Tip (unusable, sells for 1 SOV). Nothing was reinvented
+- All Chronicles canon is harvested verbatim in intent: peach-mango "cleansing" exhale, sage, the crystal NFT collection tour, the crystal quiz, +Bravado / Confused branch, and the Charged Quartz Vape Tip (unusable, sells for 1 SOV). Nothing was reinvented
 - Club Flyers dialogue is quoted from `club_flyers.md` and must stay in sync with that file; this profile does not modify it
 - Her peach-mango vape cloud is an **existing** specced particle effect in `# Velvet Curtain Club - Complete PNG Asset Requirements.md`. Reuse; do not commission a new one
 - **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Her lines live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Vape Witch Vanessa"; this file and `nothingisgettingthrough.md` both point at it and neither duplicates the scene text

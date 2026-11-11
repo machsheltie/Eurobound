@@ -140,7 +140,7 @@ Staff enforces this with friendly insistence, not hostility.
 - **Style**: Bavarian-style wheat beer with swirling head
 - **ABV**: 5.2%
 - **Color**: Cloudy gold with persistent foam
-- **Stats**: +20 HP, +15 SP
+- **Stats**: +20 HP, +15 Bravado
 - **Effect**: "Light on Your Feet" (+3 Speed, +2 Dance for 30 minutes)
 - **Price**: 7 SOVS
 - **Flavor Text**: "Brewed in three stages, fermented in three tanks, served in three-quarter time. The foam always swirls clockwise. We don't know why."
@@ -153,7 +153,7 @@ Staff enforces this with friendly insistence, not hostility.
 | Two-Step Lager | 4 SOVS | +10 HP | Basic rhythm |
 | Foxtrot Ale | 5 SOVS | +15 HP | Different tempo (rebellion) |
 | The Wallflower | 3 SOVS | +5 HP | No dancing required (shameful) |
-| Tango IPA | 6 SOVS | +15 HP, +5 SP | Dramatic pause |
+| Tango IPA | 6 SOVS | +15 HP, +5 Bravado | Dramatic pause |
 | Sinfonian Whirl | 8 SOVS | +25 HP | Full spin delivery |
 
 ### Partner Brewery Note

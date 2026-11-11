@@ -139,7 +139,7 @@ The Fund is a support unit: tougher and luckier than a grunt, weak offense.
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 30 | One shared bar for all three turtles. Rolling meter applies. |
-| **SP** | N/A | Moves are weight-driven. |
+| **Bravado** | N/A | Moves are weight-driven. |
 | **Offense** | 4 | It doesn't fight you. It manages you. |
 | **Defense** | 6 | Shells. |
 | **Speed** | 5 | Slower than traffic, faster than Lord Pilsner. |

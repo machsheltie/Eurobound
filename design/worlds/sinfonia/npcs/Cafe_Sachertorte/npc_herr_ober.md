@@ -274,7 +274,7 @@ The 340 SOVS is not greed. It is the number required to make the room right agai
 | Sachertorte Slice | 18 SOVS | About 6 SOVS of ingredients and 183 years of reputation | +60 HP, Removes Thirsty |
 | Apfelstrudel | 14 SOVS | Honest | +40 HP, Removes Hungry |
 | Opera Cake | 22 SOVS | The most expensive slice in the case, and the one Gustav takes on the way out | +80 HP, +2 Charm (30 min) |
-| Gugelhupf | 12 SOVS | The best value in the building and he knows it | +30 HP, restores small SP |
+| Gugelhupf | 12 SOVS | The best value in the building and he knows it | +30 HP, restores small Bravado |
 | **"The Gustav"** (post-quest only) | **8 SOVS** | A chocolate horse-shaped cookie. Forty a day. | +20 HP; +2 Bravado; unlocks achievement "The Gustav" |
 
 ### Hidden Charges
@@ -469,7 +469,7 @@ Formal German-accented English, Austrian rather than German-German, precise and 
 - **RESOLVED — author ruling: one 170 SOVS relief, claimed once.** The 170 SOVS Fiaker insurance payout against the café bill and the dialogue-option-3 halving of the 340 SOVS are **the same relief and are mutually exclusive**. Whichever fires first sets `debt_relief_claimed` and consumes it; the other is then disabled and must not apply. Hans-Jürgen's **500 SOVS Path A contribution is a separate pot and does stack**. Full arithmetic: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative".
 - He must never read as a villain and never as a snob for the audience to look down on. He is the only person in Phase 2 who did nothing wrong, and the satire is aimed at the tourist-extraction *system* he was trained into, never at Austrian café culture, which the file treats as a real trade with real workers.
 - His drinking is never played as a punchline and never impairs him on the floor. The break-room window is the only pre-quest evidence; the doorway scene is the only time it is visible, and it is played straight.
-- The Gugelhupf being the best cake in the case is a real mechanical fact (12 SOVS, +30 HP, small SP) that he mentions exactly once, on Option 2, and never again. Most players will never see it.
+- The Gugelhupf being the best cake in the case is a real mechanical fact (12 SOVS, +30 HP, small Bravado) that he mentions exactly once, on Option 2, and never again. Most players will never see it.
 - Do not let him explain the "American Tourist Adjustment" to the bros. They never learn it exists. If the player reads the menu, the player learns it exists, and that is the entire gag.
 
 ---

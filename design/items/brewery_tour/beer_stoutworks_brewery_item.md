@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | Imperial Stout (whiskey barrel aged) [source: design/items/brewery_passport_book.md L209] |
 | **ABV** | 9.5% [source: design/items/brewery_passport_book.md L210] |
-| **Effects** | +40 HP, +15 SP [source: design/items/brewery_passport_book.md L211]; 10% "Fermented Fury" (+15% Attack next battle) [source: design/items/brewery_passport_book.md L212] |
+| **Effects** | +40 HP, +15 Bravado [source: design/items/brewery_passport_book.md L211]; 10% "Fermented Fury" (+15% Attack next battle) [source: design/items/brewery_passport_book.md L212] |
 | **Risk** | 10% "The Vat's Whisper" (cosmetic yeast thoughts) [source: design/items/brewery_passport_book.md L213] |
 | **Price** | 12 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book.md L214] |
 | **Special** | Negotiate Route Bonus — +5% enemy negotiation success [source: design/items/brewery_passport_book.md L216] |

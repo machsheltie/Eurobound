@@ -328,7 +328,7 @@ The card from the roundabout goes in the drawer every December and she says noth
 | Paracetamol | 4 SOVS | Fair | +20 HP, cures minor status effects |
 | Greasy Breakfast Roll | 6 SOVS | Fair and genuinely good | +40 HP, cures "Hungover" |
 | Hair of the Dog Pint (Canned) | 5 SOVS | Fair; she sells it under protest | Delays "Hungover" by 3 hours |
-| Electrolyte Powder | 4 SOVS | Fair | Cures "Dehydrated," +15 SP |
+| Electrolyte Powder | 4 SOVS | Fair | Cures "Dehydrated," +15 Bravado |
 | Stomach Settler | 5 SOVS | Fair, ginger-based, actual medicine | Cures "Queasy," "Nauseous" |
 | Industrial-Strength Antacid | 7 SOVS | Fair | Cures all stomach ailments |
 | The Full Recovery Kit | 15 SOVS | 22 SOVS of components bundled at 15 SOVS — the best value in the shop and nobody notices | Cures Hungover + all related effects |
@@ -336,8 +336,8 @@ The card from the roundabout goes in the drawer every December and she says noth
 ### Support Items — The Enablement
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Energy Drink (Brand) | 4 SOVS | Fair | +20 SP, +10 Speed (1 hour) |
-| Discount Energy Drink | 2 SOVS | Exactly what it costs and exactly as bad | +15 SP, +5 Speed, 20% "Jitters" risk |
+| Energy Drink (Brand) | 4 SOVS | Fair | +20 Bravado, +10 Speed (1 hour) |
+| Discount Energy Drink | 2 SOVS | Exactly what it costs and exactly as bad | +15 Bravado, +5 Speed, 20% "Jitters" risk |
 | Lucky Rabbit's Foot | 8 SOVS | Worth about 2 SOVS; sold to people who want to buy luck | +5% Critical Hit Chance |
 | Four-Leaf Clover (Plastic) | 3 SOVS | Worth less than a SOV. She tells you it's fake before you pay. | +3% Luck |
 | "Confidence" Mints | 4 SOVS | They are mints. She says so. They still work. | +10 Bravado (30 min) |
@@ -370,7 +370,7 @@ The card from the roundabout goes in the drawer every December and she says noth
 |--------------|-------|--------------|---------------|
 | Nuala's Personal Remedy | 20 SOVS | Priceless / worthless depending on your view of her grandmother | Cures ANY status effect |
 | The "Didn't Happen" Kit | 30 SOVS | Fair, and she does not itemise the receipt | Evidence removal, plausible deniability supplies |
-| Emergency Complete Reset | 50 SOVS | The most expensive thing in the shop, correctly priced | Full HP, SP, status restoration |
+| Emergency Complete Reset | 50 SOVS | The most expensive thing in the shop, correctly priced | Full HP, Bravado, status restoration |
 
 ### The State Assessment (Free Service)
 | Player Condition | Nuala's Opening | Recommendation |
@@ -497,7 +497,7 @@ Nuala gates nothing on the critical path. She is a supply node and blocks no pro
 | Fake ID | Any time, 25 SOVS | No (single use) | Age verification bypass; sets `fake_id_bought` |
 | Known Disaster Badge | 5 visits | Yes | 10% discount, "your usual," behind-counter access |
 | Nuala's Personal Remedy | Known Disaster, 20 SOVS | No (consumable) | Cures ANY status effect |
-| Emergency Complete Reset | Known Disaster, 50 SOVS | No (consumable) | Full HP, SP, status restoration |
+| Emergency Complete Reset | Known Disaster, 50 SOVS | No (consumable) | Full HP, Bravado, status restoration |
 
 ### State Flags
 - `nuala_met`: boolean

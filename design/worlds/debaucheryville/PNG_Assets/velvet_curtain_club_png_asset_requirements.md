@@ -200,7 +200,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Quiz Asking Pose** (192, 96, 64x96) - Interactive dialogue
 - **Morning Cleansing Scene** (256, 96, 64x96) - Vape exhale into mouth
 - **Disappointed Quiz Fail** (320, 96, 64x96) - Confused status trigger
-- **Happy Quiz Success** (384, 96, 64x96) - SP reward giving
+- **Happy Quiz Success** (384, 96, 64x96) - Bravado reward giving
 
 ### Club Patron Archetypes:
 - **Ravewear Patron Idle** (0, 192, 64x96) - Neon outfit dancer
@@ -351,7 +351,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 ### Couchsurf Quest UI:
 - **Vanessa Couchsurf Available** (0, 64, 96x32) - Invitation indicator
 - **Quiz Question Display** (96, 64, 128x48) - Crystal NFT trivia
-- **Quiz Success** (224, 64, 48x32) - +10 SP reward
+- **Quiz Success** (224, 64, 48x32) - +10 Bravado reward
 - **Quiz Failure** (272, 64, 48x32) - Confused status applied
 
 ### VIP Bathroom Access UI:

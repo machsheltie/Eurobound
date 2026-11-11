@@ -198,9 +198,9 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 **Oude Genever (Bottoms Down)**
 - **Style**: Aged Dutch jenever (zeer oud classification)
 - **ABV**: 38%
-- **Stats**: +50 SP restoration (massive)
+- **Stats**: +50 Bravado restoration (massive)
 - **Effect**: "The Shakes" — -20% Accuracy for 3 turns
-- **Risk**: Significant accuracy penalty, enormous SP restore
+- **Risk**: Significant accuracy penalty, enormous Bravado restore
 - **Price**: 12 SOVS
 - **Flavor Text**: "Aged for years. Served for centuries. The sawdust exists for a reason."
 - **Brewed By**: Bottoms Down (400-year-old recipe)
@@ -284,7 +284,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 **Absinthe Lager (The Absinthium Taproom)**
 - **Style**: Absinthe-infused lager (legally questionable)
 - **ABV**: 8.5% (plus "additives")
-- **Stats**: +15 SP restoration
+- **Stats**: +15 Bravado restoration
 - **Effect**: 30% chance to apply "Green Fairy Confusion" to USER
 - **Price**: 12 SOVS
 - **Brewed By**: The Absinthium Taproom (in-house)
@@ -292,7 +292,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 **Vape Stout (The Tap Dat Vault)**
 - **Style**: Vapor-infused experimental stout
 - **ABV**: 6.9%
-- **Stats**: +20 SP restoration
+- **Stats**: +20 Bravado restoration
 - **Effect**: "Glow-Up Aura" (+1 Charm, +1 Defense for 30 min)
 - **Risk**: Applies "Grease Fingers" status
 - **Price**: 14 SOVS
@@ -365,7 +365,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 **Tempo Tantrum (The Moderato Pub)**
 - **Style**: Medium-bodied amber ale
 - **ABV**: 5.5%
-- **Stats**: +20 HP, +10 SP
+- **Stats**: +20 HP, +10 Bravado
 - **Effect**: Immune to Rushed/Sluggish (30 min)
 - **Price**: 6 SOVS
 - **Brewed By**: The Moderato Pub (in-house)
@@ -373,7 +373,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 **Curtain Call Copper (The Standing Ovation)**
 - **Style**: Vienna-style copper lager
 - **ABV**: 5.8%
-- **Stats**: +25 HP, +10 SP
+- **Stats**: +25 HP, +10 Bravado
 - **Effect**: "Stage Presence" (+3 Charm for 30 min)
 - **Price**: 8 SOVS
 - **Brewed By**: The Standing Ovation (on-site)
@@ -381,7 +381,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 **Heir Apparent Ale (Crown & Cask)**
 - **Style**: Belgian-style golden ale
 - **ABV**: 6.5%
-- **Stats**: +30 HP, +15 SP
+- **Stats**: +30 HP, +15 Bravado
 - **Effect**: "Noble Blood" (+2 Charm, +2 Style for 45 min)
 - **Price**: 10 SOVS
 - **Brewed By**: Crown & Cask (family recipe)
@@ -389,7 +389,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 **Waltz Weizen (The Dancing Stein)**
 - **Style**: Bavarian-style wheat beer
 - **ABV**: 5.2%
-- **Stats**: +20 HP, +15 SP
+- **Stats**: +20 HP, +15 Bravado
 - **Effect**: "Light on Your Feet" (+3 Speed, +2 Dance for 30 min)
 - **Price**: 7 SOVS
 - **Brewed By**: The Spinning Brewery (partner)

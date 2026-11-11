@@ -163,10 +163,10 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 - Earplugs equipped (+Sleep Quality)
 
 **Sleep Quality Outcomes**:
-- **Excellent Sleep**: Full HP/SP restoration, +10% stats next day
-- **Good Sleep**: Full HP/SP restoration
-- **Fair Sleep**: 80% HP/SP restoration
-- **Poor Sleep**: 60% HP/SP restoration, "Groggy" status (2 hours)
+- **Excellent Sleep**: Full HP/Bravado restoration, +10% stats next day
+- **Good Sleep**: Full HP/Bravado restoration
+- **Fair Sleep**: 80% HP/Bravado restoration
+- **Poor Sleep**: 60% HP/Bravado restoration, "Groggy" status (2 hours)
 - **No Sleep**: 40% HP restoration, "Exhausted" status (affects all actions)
 
 ### Roommate Events (Random Night Encounters)

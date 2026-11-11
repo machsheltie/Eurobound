@@ -339,16 +339,16 @@ assets/sprites/locations/publandia/cafe_nora/
 ### Coffee Menu Items:
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Ulysses Blend (Espresso) | (0, 0) | 48x48 | 4 SOVS — +10 SP, +Focus; bold, like the book nobody's read |
-| Dubliners Drip (Filter) | (48, 0) | 48x48 | 3 SOVS — +5 SP, +Stamina; honest filter coffee |
-| Portrait of the Artist (Latte) | (96, 0) | 48x48 | 5 SOVS — +10 SP, +Creativity; foam art attempted |
-| Finnegans Wake (Triple Shot) | (144, 0) | 48x48 | 6 SOVS — +20 SP, ++Speed, -Sleep later; enlightenment or palpitations |
-| Nora's House Blend | (192, 0) | 48x48 | 4 SOVS — +8 SP, staff approval; her grandmother's recipe |
+| Ulysses Blend (Espresso) | (0, 0) | 48x48 | 4 SOVS — +10 Bravado, +Focus; bold, like the book nobody's read |
+| Dubliners Drip (Filter) | (48, 0) | 48x48 | 3 SOVS — +5 Bravado, +Stamina; honest filter coffee |
+| Portrait of the Artist (Latte) | (96, 0) | 48x48 | 5 SOVS — +10 Bravado, +Creativity; foam art attempted |
+| Finnegans Wake (Triple Shot) | (144, 0) | 48x48 | 6 SOVS — +20 Bravado, ++Speed, -Sleep later; enlightenment or palpitations |
+| Nora's House Blend | (192, 0) | 48x48 | 4 SOVS — +8 Bravado, staff approval; her grandmother's recipe |
 
 ### Tea & Pastries:
 | Item | Position | Size | Description |
 |------|----------|------|-------------|
-| Literary Tea Selection | (0, 48) | 48x48 | 3 SOVS — +5 SP, +Calm; leaves, not bags, obviously |
+| Literary Tea Selection | (0, 48) | 48x48 | 3 SOVS — +5 Bravado, +Calm; leaves, not bags, obviously |
 | Scone (Plain) | (48, 48) | 48x48 | 3 SOVS — +10 HP |
 | Scone (With Jam) | (96, 48) | 48x48 | 4 SOVS — +15 HP |
 | Brown Bread Toast | (144, 48) | 48x48 | 3 SOVS — +12 HP |
@@ -357,7 +357,7 @@ assets/sprites/locations/publandia/cafe_nora/
 ### Effect Icons:
 | Icon | Position | Size | Description |
 |------|----------|------|-------------|
-| +SP Icon | (0, 96) | 32x32 | Coffee cup burst |
+| +Bravado Icon | (0, 96) | 32x32 | Coffee cup burst |
 | +HP Icon | (32, 96) | 32x32 | Pastry heart |
 | +Focus Icon | (64, 96) | 32x32 | Narrowed-eye glyph |
 | +Creativity Icon | (96, 96) | 32x32 | Quill spark |

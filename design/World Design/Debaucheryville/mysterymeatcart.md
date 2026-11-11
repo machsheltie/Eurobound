@@ -100,7 +100,7 @@
 
 #### **Doner of Illusions™** - 7 SOVS
 - **Description**: Spinning heap of shredded meat, gummy bears, and absinthe glaze
-- **Effects**: +10 SP, -5 Intelligence, 25% Confused for 2 battles
+- **Effects**: +10 Bravado, -5 Intelligence, 25% Confused for 2 battles
 - **Special**: Unlocks carnival-exclusive dialogue if consumed in clown gear
 - **Quest Connection**: Required for The Great Döner Debate crossover quest, unlocks unique ICQ lore if consumed during Tony420 interaction
 

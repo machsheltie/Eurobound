@@ -191,7 +191,7 @@ Rest. Not freedom in the abstract — rest. Grass instead of cobblestones. Quiet
 |--------------|-------|--------------|---------------|
 | Bag of Skittles (American Import) | — (Chadwick's inventory, unexplained, since Publandia) | Trivial | The only key that opens Phase 2 of the Stadtpark negotiation |
 | Selfie with the Fiaker horse | 5 SOVS tip to Hans-Jürgen | 5 SOVS | +1 Bravado. Gustav turns his head away and the photo is always bad. |
-| Gustav's Daily Blessing | Free | — | Path B only: standing within three metres restores SP and grants "Moonlit Serenity" once per in-game day |
+| Gustav's Daily Blessing | Free | — | Path B only: standing within three metres restores Bravado and grants "Moonlit Serenity" once per in-game day |
 | Petting (pre-quest) | Free | — | Permitted for two seconds. On the third he moves his shoulder. |
 
 ### Hidden Details / Easter Eggs
@@ -288,7 +288,7 @@ Gustav gates nothing directly, but he is the sole gate on the quest's economics:
 |------|-------------|------------|--------|
 | "Horse Whisperer" status | Path A resolution | Yes | +2 Charm with all animals |
 | "Liberation" status | Path B resolution | Yes | +1 Wisdom |
-| Gustav's Daily Blessing | Path B, any park visit | Repeatable | SP restore + "Moonlit Serenity" once per in-game day |
+| Gustav's Daily Blessing | Path B, any park visit | Repeatable | Bravado restore + "Moonlit Serenity" once per in-game day |
 | Single Chewed Skittle | Any Skittles interaction | Yes | Worthless. Chadwick keeps it. It is in the inventory forever. |
 
 ---

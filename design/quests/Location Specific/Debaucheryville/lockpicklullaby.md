@@ -12,7 +12,7 @@ Chadwick tries “content streaming” → risk of distracting himself and losin
 
 Pilsner negotiates poorly but might unlock hidden lore NPC lines.
 
-Final Encounter: “Backpack Bard” miniboss (SP-draining AOE busking).
+Final Encounter: “Backpack Bard” miniboss (Bravado-draining AOE busking).
 
 Reward: Return case → “Harmony Harmonica” (cures Confusion). Keep it → unlocks gag skill “Sour Note” (weak AoE, causes Embarrassed).
 

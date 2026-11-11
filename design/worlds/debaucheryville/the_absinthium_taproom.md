@@ -180,7 +180,7 @@
 - Final attack: "The Truth" — shows player a vision
 
 **Rewards**:
-- "Green Fairy Essence" (consumable, guaranteed Confusion but +30 SP)
+- "Green Fairy Essence" (consumable, guaranteed Confusion but +30 Bravado)
 - Stamp eligibility
 
 ## Brewery Tour System Integration
@@ -219,7 +219,7 @@
 | Style | Absinthe-infused lager (legally questionable) |
 | ABV | 8.5% |
 | HP Restoration | — |
-| SP Restoration | +15 |
+| Bravado Restoration | +15 |
 | Buff | None |
 | Debuff Risk | 30% "Green Fairy Confusion" to USER |
 | Price | 12 SOVS |
@@ -276,7 +276,7 @@
 **Host**: "The Philosopher" — a regular who's been here so long they might be part of the furniture
 
 **Stay Effects**:
-- Rest partially restores HP/SP (50%)
+- Rest partially restores HP/Bravado (50%)
 - "Existentially Rested" status: +5 INT, -5 Bravado (2 hours)
 - Morning dialogue: "Did you dream, or did the room dream you?"
 

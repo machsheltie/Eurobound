@@ -22,7 +22,7 @@ Effect: Applies Confused if not defeated in 3 turns (his insults loop)
 Design: Your own sprite, mirrored and distorted
 Boss/Encounter: “Green Fairy Wisp” — status-spamming enemy who splits into illusions.
 Brew Reward:
-Absinthe Lager – Restores +15 SP, 30% chance to apply Confused to user
+Absinthe Lager – Restores +15 Bravado, 30% chance to apply Confused to user
 Selfie Prop: Glowing absinthe chalice floating behind the bar
 Satire Beat: Bartender insists, “We used to use actual wormwood, until the lawsuits.”
 
@@ -62,7 +62,7 @@ Effect: Random item is removed from inventory if not stunned quickly
 Design: CRT monitor head, floating ad banners orbiting like drones
 Boss/Encounter: “Strobe Brewmistress” – boss who uses sound-wave attacks, inflicts Embarrassed.
 Brew Reward:
-Vape Stout – Restores SP and applies Glow-Up Aura (Charm/Defense up), but causes Grease Fingers
+Vape Stout – Restores Bravado and applies Glow-Up Aura (Charm/Defense up), but causes Grease Fingers
 Selfie Prop: Glitched hologram wall with “You Are Brewtiful” text
 Satire Beat: Bartender wears a vape rig on a lanyard and insists, “We don’t serve beer — we inhale it.”
 
@@ -104,7 +104,7 @@ Add that brewery’s Selfie Prop to the Brewmaster Selfie Album (viewable at hos
 
 Completing all 4 breweries in Debaucheryville unlocks:
 
-Legendary Hangover (item): +25 HP, +10 SP, +2 All Stats for 3 turns, then applies Hungover for next 2 battles.
+Legendary Hangover (item): +25 HP, +10 Bravado, +2 All Stats for 3 turns, then applies Hungover for next 2 battles.
 
 Satirical Tooltip: “You don’t remember last night, but everyone else does.”
 

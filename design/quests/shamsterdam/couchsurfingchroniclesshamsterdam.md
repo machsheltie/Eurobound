@@ -199,7 +199,7 @@ Then the flat line of the scene, delivered while she counts the float:
 - **Bradley:** *"She said we're a point of interest, not a stop."* *(beat)* *"I've looked at the leaflet. There's a difference. It's in the key."*
 
 **Result:**
-- **Full SP restore + Hungover + Bicycle Trauma**
+- **Full Bravado restore + Hungover + Bicycle Trauma**
 - **-66 SOVS** — three tickets at full price, no discount, card machine, correct
 - **"Pointed At From The Bridge"** — permanent. **The party is a named point of interest on a commercial walking tour for the rest of the game.** Twice a day, in any Shamsterdam exterior zone, a group of twenty tourists may stop and look at them. No dialogue fires. They simply look, and then move on, and the bros wave
 - **Permanent: bridge-free route knowledge.** A shortcut network unlocks across the canal ring that never crosses water. It is objectively worse. The party uses it constantly
@@ -313,7 +313,7 @@ Then the flat line of the scene, from Sietske, entirely level, while she writes:
 - **Bradley:** *"We're Exhibit F."* *(beat)* *"There are at least five exhibits before us. I'd genuinely like to know what C was."*
 
 **Result:**
-- **HP/SP restore + Bicycle Trauma + "Canal Confusion"** (three men, two buildings, one bridge, and nobody agrees on the layout afterwards)
+- **HP/Bravado restore + Bicycle Trauma + "Canal Confusion"** (three men, two buildings, one bridge, and nobody agrees on the layout afterwards)
 - **"Exhibit F"** — permanent. **The party is cited by name in an ongoing argument they cannot hear, on both sides, forever.** Every subsequent visit to the canal ring has a 25% chance of the two of them referencing the bros across the water, mid-dispute, without addressing them
 - **+20 Bravado, -10 Charm**
 - **Collectible: A Page Of The Record, Photocopied — Exhibit F, p.1 of 31** — legible. Accurate. Devastating. Nobody reads it
@@ -429,7 +429,7 @@ Then the flat line of the scene, delivered while she squares the charts:
 - **Bradley:** *"We did not move."* *(pause)* *"At any point. I checked against a bollard."*
 
 **Result:**
-- **Full HP/SP restore + Hungover + Bicycle Trauma** (the wharf road; there is always a wharf road)
+- **Full HP/Bravado restore + Hungover + Bicycle Trauma** (the wharf road; there is always a wharf road)
 - **-90 SOVS** — three cruises at full price. Refreshments included. Correct
 - **"Sea Legs"** — permanent. **Purely cosmetic. Zero mechanical effect of any kind.** It appears on the character sheet. All three bros reference it for the rest of the game as though it does something
 - **Permanent: mooring access.** The *Vooruitgang* is a free rest point in Shamsterdam forever. **Life jackets are worn below decks and the game enforces it** — a cosmetic overlay applies while the party is below decks and cannot be removed there
@@ -541,7 +541,7 @@ Then the flat line of the scene, which she delivers on her way out of her own fr
 - **Bicycle Trauma ×2** — stacks with the standard exit application, uniquely in this file
 - **"Legs"** — a debuff. **-15% movement speed for 8 in-game hours.** It is not resistible, not curable, and not caused by any enemy, item, status or attack. It is caused by jogging behind a bicycle for four streets at the age of thirty-nine
 - **"Kept Up (Briefly)"** — permanent, Bradley only. +10 Bravado and nothing else. He never mentions it
-- **Full SP restore, no HP restore** (they slept; it did not help)
+- **Full Bravado restore, no HP restore** (they slept; it did not help)
 - **Collectible: A Page From A Cycling Log** — twenty-two years, one column, empty. In the margin of last night's line, in different ink: *"three on foot. slow."*
 - **Gag Item: A Pannier Clip, Spare** — she gives it to them. They have no bicycle. It cannot be used, sold or dropped
 - **Passport Entry logged**

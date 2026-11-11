@@ -121,7 +121,7 @@ They go back to wherever they came from; they are the hall bouncers (ruled round
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 46 | Two on the field: 92 total |
-| **SP** | N/A | Weight-driven, like the Frogger and Street Fighter villains |
+| **Bravado** | N/A | Weight-driven, like the Frogger and Street Fighter villains |
 | **Offense** | 9 | Matches the cabinet heavies |
 | **Defense** | 7 | Refrigerator |
 | **Speed** | 3 | Slow. Never hurry. Arrive anyway |

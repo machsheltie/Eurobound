@@ -219,7 +219,7 @@ interest: a grey, sweating mass in a deflated party hat and the original cardboa
 | Effect | Value |
 |--------|-------|
 | HP Restore | +30 |
-| SP Restore | +15 |
+| Bravado Restore | +15 |
 | Buff | "Party's Still On" — cannot become Hungover while active |
 | Drawback | "Postponed Hangover" — every Hungover the buff blocked lands at once when it ends, doubled |
 | Special | Must be drunk with the pinkie raised. The animation does this automatically. |

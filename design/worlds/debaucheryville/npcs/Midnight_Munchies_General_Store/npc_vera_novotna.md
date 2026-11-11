@@ -237,7 +237,7 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 ### Support — The Enhancement Aisle
 | Item | Base | 2AM+ | Effect |
 |------|------|------|--------|
-| Caffeine Pills (6) | 6 SOVS | 8 SOVS | +10 SP per pill, controlled |
+| Caffeine Pills (6) | 6 SOVS | 8 SOVS | +10 Bravado per pill, controlled |
 | Lucky Club Stamp (Fake) | 8 SOVS | 10 SOVS | +5 Confidence, no actual effect |
 | Emergency Phone Charger | 20 SOVS | 25 SOVS | Full phone resurrection |
 | Cigarettes | 8 SOVS | 10 SOVS | -5 HP, +10 Social in certain contexts |

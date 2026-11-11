@@ -289,7 +289,7 @@ This document provides exact specifications for all PNG files needed for The Abs
 - **HP Bar Green** (0, 200, 96x12) - Full health
 - **HP Bar Yellow** (0, 212, 96x12) - Medium health
 - **HP Bar Red** (0, 224, 96x12) - Low health (grease aura activates)
-- **SP Bar** (0, 236, 96x12) - Skill points display
+- **Bravado Bar** (0, 236, 96x12) - Skill points display
 
 ### Menu Overlays:
 - **Absinthe Lager Info** (96, 200, 96x56) - Item description card
@@ -439,7 +439,7 @@ This document provides exact specifications for all PNG files needed for The Abs
 ### Quest Integration:
 - **Brewery Tour:** 1 of 4 dungeons, tracks completion
 - **Bottle Opener:** Keychain from Publandia required
-- **Boss Reward:** Absinthe Lager (+15 SP, 30% confusion)
+- **Boss Reward:** Absinthe Lager (+15 Bravado, 30% confusion)
 - **Selfie Prop:** Floating chalice unlocked post-victory
 - **Achievement:** Green Fairy Defeated, Continental Beer Master progress
 

@@ -146,7 +146,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 | Döner (Veal) | 6 SOVS | +30 HP | None | "Good choice." |
 | Döner (Chicken) | 5 SOVS | +25 HP | None | "...okay." |
 | Döner (Mixed) | 5 SOVS | +28 HP | None | "Indecisive. But okay." |
-| The Triple Tower | 8 SOVS | +40 HP, +15 SP | Garlic Aura, Meat Sweats | "You are hungry. I respect this." |
+| The Triple Tower | 8 SOVS | +40 HP, +15 Bravado | Garlic Aura, Meat Sweats | "You are hungry. I respect this." |
 | Extra Garlic Sauce | +1 SOV | +5 HP | Garlic Aura Extended | "You want to be alone tonight?" |
 | Extra Hot Sauce | +1 SOV | +5 HP, -5 HP delayed | Fire Breath | "Turkish hot. Not tourist hot." |
 | Just Bread | 2 SOVS | +10 HP | Disappointment | "You came here for... bread?" |
@@ -156,7 +156,7 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 **Leeman's Signature Item**
 - **Content**: All three meats, extra everything, fresh bread
 - **Size**: Substantial (warrior portion)
-- **Effects**: +40 HP, +15 SP, Garlic Aura (1 hour), possible Meat Sweats
+- **Effects**: +40 HP, +15 Bravado, Garlic Aura (1 hour), possible Meat Sweats
 - **Mehmet's Commentary**: "You want The Triple Tower? You have big appetite. Or big problems. Either way, I help."
 
 ### The Garlic Aura Status

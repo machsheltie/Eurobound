@@ -81,7 +81,7 @@ Cyberspace Kavarna
 
 SHOPS & VENDORS
 Street Vendors
-  • The Boheamian Trap: SP restoration with confusion chance 
+  • The Boheamian Trap: Bravado restoration with confusion chance 
   • Late-Night Kebab Stand: HP+ but grease finger risk 
   • The Strobe Survival Kit: Earplugs (reduce confusion), glow sticks (+mood) 
 Specialty Shops
@@ -162,7 +162,7 @@ Street & Club Enemies
   • The Expat Who Never Left (rambling stories that cause sleep status) 
   • The Silent Bouncer (secretly a poet, surprise rhyme-based attacks) 
   • Velvet Flyer (confuses with perfume clouds) 
-  • Backpack Bard (AOE busking that drains SP) 
+  • Backpack Bard (AOE busking that drains Bravado) 
   • Pickpocket Pair (coordinated steal attempts) 
   • Green Fairy Wisp (poison/nausea inducement) 
 Circus Enemies

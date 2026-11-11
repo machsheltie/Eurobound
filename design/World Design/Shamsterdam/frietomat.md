@@ -139,7 +139,7 @@
 | Mexicano | 3 SOVS | +20 HP, slight -HP delayed | Spicy Surprise | "Spicy" by Dutch standards |
 | Hamburger | 4 SOVS | +25 HP | Familiarity | When you need something recognizable |
 | Cheeseburger | 4 SOVS | +30 HP | Cheese Contentment | The above, but better |
-| Satéschotel | 5 SOVS | +40 HP, +SP | Full Meal status | The commitment option |
+| Satéschotel | 5 SOVS | +40 HP, +Bravado | Full Meal status | The commitment option |
 | Frikandel Speciaal | 3 SOVS | +25 HP | The Works | Frikandel with onions and sauce |
 | Mystery Item | 3 SOVS | ??? HP | ??? status | Changes daily, fate decides |
 

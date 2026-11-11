@@ -274,7 +274,7 @@ The work, correctly done, and correctly paid for. She has an F6 and eleven kilos
 | The coffee table | 80 SOVS | 80 SOVS | Post-Nightcap. No negotiation, no Charm check. |
 | Vocal coaching, one session | 40 SOVS | Worth considerably more | +2 Performance permanently; unlocks one "Informed Position" option in any Sinfonia rhythm challenge |
 | Programme, annotated | 15 SOVS | 15 SOVS | She marks the numbers worth staying awake for. Lore item; +1 Culture knowledge. |
-| Couchsurf stay (co-hosted with Fortissima) | Free | — | Full HP/SP restore; "Star Quality" +3 Charm for 4 hours; "Full Face" cosmetic until next sleep; one permanent Bravado point |
+| Couchsurf stay (co-hosted with Fortissima) | Free | — | Full HP/Bravado restore; "Star Quality" +3 Charm for 4 hours; "Full Face" cosmetic until next sleep; one permanent Bravado point |
 
 ### Hidden Details / Easter Eggs
 - **Examine the door plate**: *"Brass. Engraved. L. BRANDTNER. Someone has taped a paper strip under it reading 'PRIMA DONNA ADELHEID' in a hand that is obviously Fortissima's. It has been taped there for eleven years and nobody has made it permanent."*

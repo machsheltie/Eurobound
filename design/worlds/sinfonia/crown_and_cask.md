@@ -129,7 +129,7 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 - **Style**: Belgian-style golden ale with noble hop character
 - **ABV**: 6.5%
 - **Color**: Golden crown color (intentional)
-- **Stats**: +30 HP, +15 SP
+- **Stats**: +30 HP, +15 Bravado
 - **Effect**: "Noble Blood" (+2 Charm, +2 Style for 45 minutes)
 - **Price**: 10 SOVS
 - **Flavor Text**: "Brewed with hops that can trace their lineage back seven generations. The yeast is merely five generations, but we don't discuss that."
@@ -142,8 +142,8 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 | The Commoner | 4 SOVS | +10 HP | Apologetic explanation of name |
 | Duke's Dark | 7 SOVS | +20 HP | Slight bow |
 | Princess Pilsner | 5 SOVS | +15 HP | Curtsey from server |
-| The Usurper (Guest Beer) | 6 SOVS | +15 HP, +5 SP | Hushed tones |
-| King's Reserve | 15 SOVS | +40 HP, +20 SP | Full ceremony |
+| The Usurper (Guest Beer) | 6 SOVS | +15 HP, +5 Bravado | Hushed tones |
+| King's Reserve | 15 SOVS | +40 HP, +20 Bravado | Full ceremony |
 
 ### Bottle Opener — Crown & Cask
 

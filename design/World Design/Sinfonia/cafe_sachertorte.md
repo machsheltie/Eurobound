@@ -369,7 +369,7 @@
 | Sachertorte Slice | 18 SOVS | +60 HP, Removes Thirsty |
 | Apfelstrudel | 14 SOVS | +40 HP, Removes Hungry |
 | Opera Cake | 22 SOVS | +80 HP, +2 Charm (30 min) |
-| Gugelhupf | 12 SOVS | +30 HP, restores small SP |
+| Gugelhupf | 12 SOVS | +30 HP, restores small Bravado |
 
 **Hidden Charges**:
 - "Historic Table Supplement": 3 SOVS (window seating)

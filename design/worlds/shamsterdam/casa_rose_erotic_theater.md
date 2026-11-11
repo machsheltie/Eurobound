@@ -131,11 +131,11 @@
 ### Menu & Consumables (Required Purchases)
 | Item | Price | Effects | Bartender Note |
 |------|-------|---------|----------------|
-| "Pink Lady" (House Special) | 15 SOVS | +5 SP, -Inhibitions, exactly as pink as the décor | "House special. Very popular." |
-| "The Bachelor" | 18 SOVS | +8 SP, +Bravado (temporarily), watered down | "For celebrations." |
-| "Champagne" (not actually) | 95 SOVS/bottle | +20 SP entire party, Trophy item: empty bottle | "Very romantic. Very premium." |
-| "The Forget-Me-Not" | 20 SOVS | +10 SP, +Confused, memory of evening becomes vague | "Strong one. Popular for bachelor parties." |
-| Beer (only option: Heineken) | 12 SOVS | +3 SP, -Bravado (everyone knows you're stalling) | "Ah. Just beer. Okay." |
+| "Pink Lady" (House Special) | 15 SOVS | +5 Bravado, -Inhibitions, exactly as pink as the décor | "House special. Very popular." |
+| "The Bachelor" | 18 SOVS | +8 Bravado, +Bravado (temporarily), watered down | "For celebrations." |
+| "Champagne" (not actually) | 95 SOVS/bottle | +20 Bravado entire party, Trophy item: empty bottle | "Very romantic. Very premium." |
+| "The Forget-Me-Not" | 20 SOVS | +10 Bravado, +Confused, memory of evening becomes vague | "Strong one. Popular for bachelor parties." |
+| Beer (only option: Heineken) | 12 SOVS | +3 Bravado, -Bravado (everyone knows you're stalling) | "Ah. Just beer. Okay." |
 | Water | 8 SOVS | No effects, but costs 8 SOVS | "Water is... eight SOVS." |
 | Merch: "I Survived Casa Rosé" Shot Glass | 25 SOVS | Trophy item, display in hostel | "Collector's item. Very rare." |
 

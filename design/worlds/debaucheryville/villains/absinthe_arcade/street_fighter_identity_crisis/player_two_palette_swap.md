@@ -99,7 +99,7 @@ They go back into the cabinet and come out of the next token in new colors. They
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 16 (each) | Rolling meter applies to the bros, not enemies. Low HP because they come in packs |
-| **SP** | N/A | Engine enemy schema has no SP field |
+| **Bravado** | N/A | Engine enemy schema has no Bravado field |
 | **Offense** | 5 | |
 | **Defense** | 2 | |
 | **Speed** | 8 | Fastest of the three Identity Crisis villains. They act early and often |

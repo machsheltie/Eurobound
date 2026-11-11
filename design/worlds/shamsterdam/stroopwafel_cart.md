@@ -116,11 +116,11 @@
 - **Consume**: Immediate gratification
 
 ### Menu & Consumables
-| Item | Price | HP Effect | SP Effect | Status Effect | Notes |
+| Item | Price | HP Effect | Bravado Effect | Status Effect | Notes |
 |------|-------|-----------|-----------|---------------|-------|
-| Stroopwafel (Small) | 4 SOVS | +25 HP | +15 SP | Comfort (3 turns) | Still delicious |
-| Stroopwafel (Large) | 8 SOVS | +50 HP | +30 SP | Comfort (5 turns), Sugar Rush | The correct choice |
-| Stroopwafel (Supermarket) | 2 SOVS/8 | +5 HP | +5 SP | None | Available elsewhere, not here |
+| Stroopwafel (Small) | 4 SOVS | +25 HP | +15 Bravado | Comfort (3 turns) | Still delicious |
+| Stroopwafel (Large) | 8 SOVS | +50 HP | +30 Bravado | Comfort (5 turns), Sugar Rush | The correct choice |
+| Stroopwafel (Supermarket) | 2 SOVS/8 | +5 HP | +5 Bravado | None | Available elsewhere, not here |
 
 ### The "Fresh vs Packaged" Revelation
 - **Trigger**: First purchase from cart after having supermarket stroopwafel

@@ -118,7 +118,7 @@
 - **Trigger Conditions**: Accept her kebab offer and crash invitation during conversation
 - **Host Character**: Backpack Girl Who Never Left (ukulele-playing pseudo-intellectual backpacker)
 - **Unique Benefits**: Gain "Ballad of the Bros" collectible (useful in Sinfonia music challenges)
-- **Narrative Integration**: -10 SP (no sleep due to 6am ukulele) but unlocks cross-city quest connections
+- **Narrative Integration**: -10 Bravado (no sleep due to 6am ukulele) but unlocks cross-city quest connections
 - **Morning Scene**: She's strumming ukulele at 6am, composing ballad about "the way your aura screamed 'tourist'"
 
 ### NFT Hunt Integration (Original System)

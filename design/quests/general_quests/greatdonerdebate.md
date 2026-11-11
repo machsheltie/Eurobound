@@ -61,7 +61,7 @@ Talks in a mix of food puns and veiled threats. Smells like lighter fluid.
 **Menu Item**:
 | Item | Price | Effects |
 |------|-------|---------|
-| Doner of Illusions™ | 7 SOVS | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 SP, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
+| Doner of Illusions™ | 7 SOVS | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 Bravado, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
 
 ---
 
@@ -222,7 +222,7 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 **Menu Items**:
 | Item | Price | Effects |
 |------|-------|---------|
-| The Triple Tower | 8 SOVS | All three meats (veal, chicken, lamb), extra garlic sauce, fresh-baked bread. 🥙 +25 HP, +10 SP, "Garlic Aura" buff (NPCs keep slight distance for 1 hour) 🇳🇱 Counts toward expansion sidequest |
+| The Triple Tower | 8 SOVS | All three meats (veal, chicken, lamb), extra garlic sauce, fresh-baked bread. 🥙 +25 HP, +10 Bravado, "Garlic Aura" buff (NPCs keep slight distance for 1 hour) 🇳🇱 Counts toward expansion sidequest |
 | Mehmet's Choice | 6 SOVS | "I choose. You eat. This is how it works." Random meat selection, always perfect. 🎲 +20 HP, +5 to random stat, "Blessed by the Architect" buff |
 | The Interrogation | 4 SOVS | Mehmet asks where else you've eaten döner before serving you. Answer wrong and he lectures you for 3 minutes. 📚 +15 HP, +2 Wisdom (you learn things) |
 

@@ -162,7 +162,7 @@
 | Style | Slavic-style triple-fermented strong ale |
 | ABV | 11.5% |
 | HP Restoration | +40 |
-| SP Restoration | — |
+| Bravado Restoration | — |
 | Buff | "Inspired" (+10 Bravado, 30 min) |
 | Debuff Risk | 100% -10% Accuracy next turn (guaranteed) |
 | Price | 10 SOVS (+ 2 SOVS goblet deposit) |

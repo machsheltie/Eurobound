@@ -67,7 +67,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "Sorry, the brewery tour stamp system requires the opener from The Blarney Trap. It's how the network works."
 
 **Stamp Unlock**: Complete standard tour OR complete dungeon
-**Signature Beer**: Vat Master's Reserve (+40 HP, +15 SP, 10% Fermented Fury buff)
+**Signature Beer**: Vat Master's Reserve (+40 HP, +15 Bravado, 10% Fermented Fury buff)
 
 ---
 
@@ -84,7 +84,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "Enrollment requires certain... credentials. The Blarney Trap can set you up with the proper documentation."
 
 **Stamp Unlock**: Complete the "Senior Thesis" (final exam drinking course)
-**Signature Beer**: Academic Amber (+25 HP, +20 SP, +3 INT for 30 min)
+**Signature Beer**: Academic Amber (+25 HP, +20 Bravado, +3 INT for 30 min)
 
 ---
 
@@ -101,7 +101,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "The brewery passport system has... rules. Get the opener from The Blarney Trap first. Then come back and lose to me properly."
 
 **Stamp Unlock**: Lose 3 different scams AND return (Wise Fool achievement)
-**Signature Beer**: The Fool's Gold (+30 HP, +15 SP, +10% scam detection)
+**Signature Beer**: The Fool's Gold (+30 HP, +15 Bravado, +10% scam detection)
 
 ---
 
@@ -129,7 +129,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "No entry to the brewery tour without the Publandia key. The network has protocols. Return when properly equipped."
 
 **Stamp Unlock**: Complete mirror puzzle + defeat Green Fairy Wisp
-**Signature Beer**: Absinthe Lager (+15 SP, 30% chance Green Fairy Confusion to USER)
+**Signature Beer**: Absinthe Lager (+15 Bravado, 30% chance Green Fairy Confusion to USER)
 
 ---
 
@@ -146,7 +146,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "Authorization... *glitch* ...not found. Publandia... opener... required. Return... *static* ...when equipped."
 
 **Stamp Unlock**: Complete rhythm puzzle + defeat Strobe Brewmistress
-**Signature Beer**: Vape Stout (+20 SP, Glow-Up Aura +1 Charm/Defense, Grease Fingers debuff)
+**Signature Beer**: Vape Stout (+20 Bravado, Glow-Up Aura +1 Charm/Defense, Grease Fingers debuff)
 
 ---
 
@@ -208,7 +208,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "The Continental Trail requires the Publandia key. Return with the proper opener, then we can discuss tempo."
 
 **Stamp Unlock**: Win a Tempo Debate (convince at least one faction member)
-**Signature Beer**: Tempo Tantrum (+20 HP, +10 SP, immune to Rushed/Sluggish 30 min)
+**Signature Beer**: Tempo Tantrum (+20 HP, +10 Bravado, immune to Rushed/Sluggish 30 min)
 
 ---
 
@@ -225,7 +225,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "Even DRAMA requires CREDENTIALS! Return with the Publandia opener! THEN you may PERFORM!"
 
 **Stamp Unlock**: Complete the Bravo Challenge (toast performance)
-**Signature Beer**: Curtain Call Copper (+25 HP, +10 SP, +3 Charm 30 min)
+**Signature Beer**: Curtain Call Copper (+25 HP, +10 Bravado, +3 Charm 30 min)
 
 ---
 
@@ -242,7 +242,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "Even ROYALTY has PROTOCOLS! The Continental Trail requires the Publandia key! Return PROPERLY EQUIPPED!"
 
 **Stamp Unlock**: Complete the Coronation Ceremony (knighting ritual)
-**Signature Beer**: Heir Apparent Ale (+30 HP, +15 SP, +2 Charm, +2 Style 45 min)
+**Signature Beer**: Heir Apparent Ale (+30 HP, +15 Bravado, +2 Charm, +2 Style 45 min)
 
 ---
 
@@ -259,7 +259,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "The Continental Trail has RULES! Even dancers must follow the STEPS! Return with the Publandia opener!"
 
 **Stamp Unlock**: Complete the Stein Waltz (dance with full beer without spilling)
-**Signature Beer**: Waltz Weizen (+20 HP, +15 SP, +3 Speed, +2 Dance 30 min)
+**Signature Beer**: Waltz Weizen (+20 HP, +15 Bravado, +3 Speed, +2 Dance 30 min)
 
 ---
 
@@ -304,7 +304,7 @@ THE BLARNEY TRAP OPENER (15 SOVS or Pint-Off)
 - *Without*: "No shamrock. No gauntlet." *waits* "Return. With opener."
 
 **Stamp Unlock**: Complete Jenever Taste Test gauntlet (distinguish jong from oud)
-**Signature Beer**: Oude Genever (+50 SP, "The Shakes" -20% Accuracy 3 turns)
+**Signature Beer**: Oude Genever (+50 Bravado, "The Shakes" -20% Accuracy 3 turns)
 
 ---
 

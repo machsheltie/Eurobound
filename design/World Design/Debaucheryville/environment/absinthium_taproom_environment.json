@@ -51,7 +51,7 @@
     },
     {
       "effect_id": "beer_absinthium_taproom_effect",
-      "description": "Restores SP with Confused chance."
+      "description": "Restores Bravado with Confused chance."
     }
   ],
   "time_of_day_changes": [

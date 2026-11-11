@@ -283,7 +283,7 @@ Instead of defeating Bassmeister, players can:
 - Gives insider tip for next visit
 
 **Stay Effects**:
-- Full HP/SP recovery
+- Full HP/Bravado recovery
 - "Touched by Death" status: +15% rhythm game performance for 3 hours
 - Permanent 10% discount at Bone Bar
 

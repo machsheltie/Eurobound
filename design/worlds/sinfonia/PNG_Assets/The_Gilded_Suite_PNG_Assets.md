@@ -652,8 +652,8 @@ assets/sprites/locations/sinfonia/gilded_suite/
 ### Booking & Status:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Room Tier Card Standard | (0, 192) | 96x64 | 150 SOVS — "Basic creepy." 80% HP/SP |
-| Room Tier Card Deluxe | (96, 192) | 96x64 | 300 SOVS — "Extra portraits." 100% HP/SP |
+| Room Tier Card Standard | (0, 192) | 96x64 | 150 SOVS — "Basic creepy." 80% HP/Bravado |
+| Room Tier Card Deluxe | (96, 192) | 96x64 | 300 SOVS — "Extra portraits." 100% HP/Bravado |
 | Room Tier Card Royal | (192, 192) | 96x64 | 500 SOVS — "Full experience." 120% + buff |
 | Well-Rested Buff Icon | (288, 192) | 32x32 | Crown-and-pillow icon |
 | Overstayed Welcome Debuff | (320, 192) | 32x32 | Door-with-no-handle icon — trapped state |

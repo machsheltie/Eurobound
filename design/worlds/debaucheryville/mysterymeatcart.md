@@ -101,7 +101,7 @@
 
 #### **Doner of Illusions™** - 7 SOVS
 - **Description**: Spinning heap of shredded meat, gummy bears, and absinthe glaze
-- **Effects**: +10 SP, -5 Intelligence, 25% Confused for 2 battles
+- **Effects**: +10 Bravado, -5 Intelligence, 25% Confused for 2 battles
 - **Special**: Unlocks carnival-exclusive dialogue if consumed in clown gear
 - **Quest Connection**: Required for The Great Döner Debate crossover quest
 - **Tony420 lore (approved, author 2026-11-11)**: eaten from the item menu while the ICQ window is open on a live Tony420 thread (any FREE Wi-Fi hotspot; the Cirque's `icq_backroom` is the intended spot), it plays a one-shot ICQ exchange: Tony's $KBAB "federal reserve" tour of the meat tower. Tony's silent cart associate then hands over **DÖNER COUNCIL BOND (1 MEAT)** (`council_bond_receipt`; inert, no sell value). Inspect: "Redeemable for one (1) serving of the underlying asset at dawn, when the spit grows back. Bearer assumes all gravy risk, trans-fat liability, and bacterial arbitrage. Not legal tender. In some backchannels it is legal tender." Flag: `debaucheryville.mystery_cart.doner_tony_lore_seen` (set when the exchange completes, never cleared). Normal food effects still apply. Full text: `WritingRoom/tasks/20261111_0619_doner_of_illusions_tony420_lore/final.md`

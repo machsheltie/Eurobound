@@ -233,7 +233,7 @@ Extended time in Café Existenz costs Bravado:
 - "Cultured Selfie" Bravado boost (+10 Bravado for posting philosophical photo)
 - Cultural event calendar (masquerade dates, concert schedules)
 
-**ICQ Special**: "Mom" calls here express pride in your "cultural growth" — restore SP on first call
+**ICQ Special**: "Mom" calls here express pride in your "cultural growth" — restore Bravado on first call
 
 ### Couchsurfing Integration
 **Host**: "The Eternal Student" — has been working on dissertation for 15 years

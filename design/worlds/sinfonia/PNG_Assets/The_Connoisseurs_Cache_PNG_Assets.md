@@ -210,7 +210,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Artisanal Pain Relief | (0, 0) | 32x32 | +50 HP — apothecary jar, "hand-pressed herbs from Alpine monasteries" |
-| Gourmet Energy Bar | (32, 0) | 32x32 | +30 HP / +10 SP — single-origin cacao, wrapper nicer than most books |
+| Gourmet Energy Bar | (32, 0) | 32x32 | +30 HP / +10 Bravado — single-origin cacao, wrapper nicer than most books |
 | Heritage Herbal Tea | (64, 0) | 32x32 | +20 HP, cures status — tin unchanged since 1847 (except the lost year) |
 | Mineral Water (Imported) | (96, 0) | 32x32 | +15 HP, cures Thirsty — "from a spring that inspired Beethoven" |
 | Rejuvenation Elixir | (128, 0) | 32x32 | Full HP restore — wax-sealed bottle, family-secret formula |
@@ -228,7 +228,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Classical Music CD | (0, 80) | 32x32 | +15% Focus (2 hours) — jewel case, liner notes longer than the album |
-| Meditation Incense | (32, 80) | 32x32 | Restores SP over time — bundled sticks, ribbon-tied |
+| Meditation Incense | (32, 80) | 32x32 | Restores Bravado over time — bundled sticks, ribbon-tied |
 | Pocket Philosopher | (64, 80) | 32x32 | +20% Dialogue combat — small book of witty responses |
 | Language Phrasebook | (96, 80) | 32x32 | Reduces pronunciation penalties — dog-eared by design |
 | Calling Cards (Set of 20) | (128, 80) | 32x32 | +5% NPC first impressions — embossed, naturally |

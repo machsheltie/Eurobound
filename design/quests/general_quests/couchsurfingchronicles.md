@@ -13,7 +13,7 @@ Improvement Layer: Each NPC has unique comic flavor:
 
 “Silent Bouncer Poet” → leaves you a cryptic poem (flavor collectible).
 
-“Backpack Bard” → tries to jam at 7am, inflicts -SP but drops music sheet quest item.
+“Backpack Bard” → tries to jam at 7am, inflicts -Bravado but drops music sheet quest item.
 
 Meta Layer (25% Enhancement)
 📸 “Morning After Album”

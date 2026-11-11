@@ -130,7 +130,7 @@ sits slightly under that line.
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 22 | Rolling meter applies. Two cars per lane means 44 total HP on the field. |
-| **SP** | N/A | Moves are weight-driven, no resource. |
+| **Bravado** | N/A | Moves are weight-driven, no resource. |
 | **Offense** | 7 | Hits hard for a grunt. It's a car. |
 | **Defense** | 3 | Crumple zones. |
 | **Speed** | 8 | Usually acts first. That's the whole joke of traffic. |

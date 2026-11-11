@@ -284,7 +284,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 | Stat | Value |
 |------|-------|
 | HP Restoration | +30 HP |
-| SP Restoration | +15 SP |
+| Bravado Restoration | +15 Bravado |
 | Special Effect | "Learned Optimism" — +10% resistance to scam detection failure |
 | Status Risk | 5% "Sentimental" (donate extra gold to NPCs) |
 | Purchase Price | 8 SOVS |

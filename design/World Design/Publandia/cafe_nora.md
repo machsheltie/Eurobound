@@ -158,12 +158,12 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 **Coffee Menu**
 | Item | Price | Effect |
 |------|-------|--------|
-| Ulysses Blend (Espresso) | 4 SOVS | +10 SP, +Focus |
-| Dubliners Drip (Filter) | 3 SOVS | +5 SP, +Stamina |
-| Portrait of the Artist (Latte) | 5 SOVS | +10 SP, +Creativity |
-| Finnegans Wake (Triple Shot) | 6 SOVS | +20 SP, ++Speed, -Sleep later |
-| Nora's House Blend | 4 SOVS | +8 SP, staff approval |
-| Literary Tea Selection | 3 SOVS | +5 SP, +Calm |
+| Ulysses Blend (Espresso) | 4 SOVS | +10 Bravado, +Focus |
+| Dubliners Drip (Filter) | 3 SOVS | +5 Bravado, +Stamina |
+| Portrait of the Artist (Latte) | 5 SOVS | +10 Bravado, +Creativity |
+| Finnegans Wake (Triple Shot) | 6 SOVS | +20 Bravado, ++Speed, -Sleep later |
+| Nora's House Blend | 4 SOVS | +8 Bravado, staff approval |
+| Literary Tea Selection | 3 SOVS | +5 Bravado, +Calm |
 
 **Pastries**
 | Item | Price | Effect |

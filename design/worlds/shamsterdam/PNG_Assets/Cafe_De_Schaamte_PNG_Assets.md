@@ -141,7 +141,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 ### Consumables (menu table coverage):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Espresso Cup (Tiny) | (288, 96) | 32x32 | 5 SOVS thimble of disappointment; +15 SP |
+| Espresso Cup (Tiny) | (288, 96) | 32x32 | 5 SOVS thimble of disappointment; +15 Bravado |
 | Croissant (Day-Old) | (320, 96) | 48x32 | 8 SOVS of questionable freshness |
 | Stroopwafel | (368, 96) | 32x32 | 4 SOVS — the only judgment-free order |
 | Heineken Bottle | (400, 96) | 24x48 | 6 SOVS, -Bravado, locals judge |

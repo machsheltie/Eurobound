@@ -127,7 +127,7 @@ The crowd is supportive but has STANDARDS.
 - **Style**: Vienna-style copper lager with dramatic finish
 - **ABV**: 5.8%
 - **Color**: Deep copper with ruby highlights
-- **Stats**: +25 HP, +10 SP
+- **Stats**: +25 HP, +10 Bravado
 - **Effect**: "Stage Presence" (+3 Charm for 30 minutes)
 - **Price**: 8 SOVS
 - **Flavor Text**: "Aged in barrels from the old opera house. Some say you can taste the ambition. Others say that's just the hops."
@@ -139,9 +139,9 @@ The crowd is supportive but has STANDARDS.
 |------|-------|--------|-------------|
 | Opening Night Ale | 5 SOVS | +15 HP | Dramatic pause |
 | The Understudy | 4 SOVS | +10 HP | Apologetic shrug |
-| Critics' Choice | 7 SOVS | +20 HP, +5 SP | Knowing nod |
+| Critics' Choice | 7 SOVS | +20 HP, +5 Bravado | Knowing nod |
 | The Encore | 10 SOVS | +30 HP | Standing ovation (from staff) |
-| Intermission IPA | 6 SOVS | +15 SP | Bell warning |
+| Intermission IPA | 6 SOVS | +15 Bravado | Bell warning |
 
 ### Bottle Opener — The Standing Ovation
 

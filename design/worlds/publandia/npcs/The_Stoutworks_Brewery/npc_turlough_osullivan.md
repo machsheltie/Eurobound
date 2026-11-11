@@ -238,7 +238,7 @@ Now: get the colony out of this without anyone destroying a hundred and fifty ye
 ### Items and Services Associated With Turlough
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Vat Master's Reserve (bottle) | 12 SOVS | Genuinely worth 12 SOVS; a 9.5% barrel-aged imperial stout is cheap at that | +40 HP, +15 SP, 10% chance of "Fermented Fury" (+15% Attack next battle), 10% chance of "The Vat's Whisper" (cosmetic) |
+| Vat Master's Reserve (bottle) | 12 SOVS | Genuinely worth 12 SOVS; a 9.5% barrel-aged imperial stout is cheap at that | +40 HP, +15 Bravado, 10% chance of "Fermented Fury" (+15% Attack next battle), 10% chance of "The Vat's Whisper" (cosmetic) |
 | Vat Master's Reserve (tasting sample) | 5 SOVS | A 5 SOVS pour of a 12 SOVS bottle — he says so out loud | Unlocks the bottle as a purchasable consumable |
 | Brewmaster's Recipe Book | 20 SOVS | Two years of his writing, sells worse than a t-shirt | +10% effectiveness of all beer items; rare, limited stock |
 | Yeast Culture (Contained) | 25 SOVS | Post-dungeon only; he cultures these himself | Summons a temporary ally in battle |
@@ -352,7 +352,7 @@ He is also a soft gate on the Brewery Tour sidequest's best state: the "Peaceful
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Floor 4 colony map marker | On completing the five-stage explanation | Yes | Reveals the hidden friendly colony alcove permanently |
-| Vat Master's Reserve (bottle) | Purchasable from the tasting room once the stamp is earned | No — consumable, restockable at 12 SOVS | +40 HP, +15 SP, chance of Fermented Fury or The Vat's Whisper |
+| Vat Master's Reserve (bottle) | Purchasable from the tasting room once the stamp is earned | No — consumable, restockable at 12 SOVS | +40 HP, +15 Bravado, chance of Fermented Fury or The Vat's Whisper |
 | Brewmaster's Recipe Book | Post-dungeon gift shop, 20 SOVS, limited stock | Yes | +10% effectiveness of all beer items |
 | Yeast Culture (Contained) | Post-dungeon gift shop, 25 SOVS | No — consumable | Summons a temporary battle ally |
 | "Living Yeast Sample" companion | Negotiate ending only, handed over personally | Yes | Permanent companion; Allied Brewery status |

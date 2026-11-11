@@ -245,7 +245,7 @@
 | Effect | Value |
 |--------|-------|
 | HP Restore | +40 |
-| SP Restore | +20 |
+| Bravado Restore | +20 |
 | Speed Buff | +15% for 3 turns |
 | Navigation Debuff | -20% for 5 turns |
 | Special | The room keeps spinning even after you leave |

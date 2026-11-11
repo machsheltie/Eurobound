@@ -113,7 +113,7 @@
 ### Fermenting Algorithm Mini-Mob (Original)
 - **Encounter Type**: Floating cube enemy covered in scrolling stock ticker buzzwords
 - **Attack Pattern**: "Optimizing taste vector... aligning synergies..." dialogue triggers status application
-- **Status Effects**: Random application of Grease Fingers (item use penalty), Thirsty (SP drain), or Inspired (attack bonus)
+- **Status Effects**: Random application of Grease Fingers (item use penalty), Thirsty (Bravado drain), or Inspired (attack bonus)
 - **Defeat Strategy**: Target when specific buzzword appears ("SYNERGY" = vulnerable state)
 - **Spawn Conditions**: Appears during taste profile mini-game if pressure gauge exceeds 60%
 
@@ -181,7 +181,7 @@
 | Style | "AI-optimized" dark bock (random number generator recipe) |
 | ABV | 7.2% |
 | HP Restoration | +20 |
-| SP Restoration | — |
+| Bravado Restoration | — |
 | Buff | +10 SOVS (crypto fluctuation bonus) |
 | Debuff Risk | 50% "Tourist Trapped" status; SOVS bonus may be NEGATIVE |
 | Price | 18 SOVS (±5 SOVS based on fake crypto ticker) |

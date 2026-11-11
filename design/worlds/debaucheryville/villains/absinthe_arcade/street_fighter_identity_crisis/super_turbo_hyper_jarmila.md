@@ -100,7 +100,7 @@ She goes back into the cabinet and comes out of a later token **one word longer*
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 24 | |
-| **SP** | N/A | Engine enemy schema has no SP field. Re-Release is gated by round count, not a resource |
+| **Bravado** | N/A | Engine enemy schema has no Bravado field. Re-Release is gated by round count, not a resource |
 | **Offense** | 4 | Weakest hitter of the three. Her damage is the debuffs |
 | **Defense** | 3 | Halved during the COMING SOON round (see vulnerability) |
 | **Speed** | 7 | |

@@ -161,7 +161,7 @@ She's not your therapist. She's not your mother. She's the woman who's going to 
 | Paracetamol | 4 SOVS | +20 HP, cures minor status effects | "Don't mix with alcohol. I KNOW you're going to." |
 | Greasy Breakfast Roll | 6 SOVS | +40 HP, cures "Hungover" | "Your body needs grease. Don't ask why. It just does." |
 | Hair of the Dog Pint (Canned) | 5 SOVS | Delays "Hungover" by 3 hours | "This isn't a cure, it's a postponement. You know that, right?" |
-| Electrolyte Powder | 4 SOVS | Cures "Dehydrated," +15 SP | "Should've had this BEFORE bed. But here we are." |
+| Electrolyte Powder | 4 SOVS | Cures "Dehydrated," +15 Bravado | "Should've had this BEFORE bed. But here we are." |
 | Stomach Settler | 5 SOVS | Cures "Queasy," "Nauseous" | "Ginger-based. Actual medicine. You're welcome." |
 | Industrial-Strength Antacid | 7 SOVS | Cures all stomach ailments | "What did you EAT? No, don't tell me. I don't want to know." |
 | The Full Recovery Kit | 15 SOVS | Cures Hungover + all related effects | "Everything you need. Everything you SHOULDN'T have needed." |
@@ -169,8 +169,8 @@ She's not your therapist. She's not your mother. She's the woman who's going to 
 **Support Items (The Enablement)**
 | Item | Price | Effect | Maeve's Comment |
 |------|-------|--------|-----------------|
-| Energy Drink (Brand) | 4 SOVS | +20 SP, +10 Speed (1 hour) | "This'll get you moving. Where you're moving to is your business." |
-| Discount Energy Drink | 2 SOVS | +15 SP, +5 Speed, 20% "Jitters" risk | "Cheaper, worse, your choice." |
+| Energy Drink (Brand) | 4 SOVS | +20 Bravado, +10 Speed (1 hour) | "This'll get you moving. Where you're moving to is your business." |
+| Discount Energy Drink | 2 SOVS | +15 Bravado, +5 Speed, 20% "Jitters" risk | "Cheaper, worse, your choice." |
 | Lucky Rabbit's Foot | 8 SOVS | +5% Critical Hit Chance | "It wasn't lucky for the rabbit. Might work for you." |
 | Four-Leaf Clover (Plastic) | 3 SOVS | +3% Luck | "It's fake. But luck's about belief anyway, isn't it?" |
 | "Confidence" Mints | 4 SOVS | +10 Bravado (30 min) | "They're just mints. But if you BELIEVE they help..." |
@@ -230,7 +230,7 @@ When entering, Maeve assesses your condition automatically:
 |------|-------|--------|-----------------|
 | Maeve's Personal Remedy | 20 SOVS | Cures ANY status effect | "My grandmother's recipe. Works on everything. Don't ask what's in it." |
 | The "Didn't Happen" Kit | 30 SOVS | Evidence removal, plausible deniability supplies | "Whatever happened, this makes it... less provable." |
-| Emergency Complete Reset | 50 SOVS | Full HP, SP, status restoration | "For when you've REALLY done it. Use wisely." |
+| Emergency Complete Reset | 50 SOVS | Full HP, Bravado, status restoration | "For when you've REALLY done it. Use wisely." |
 
 ### Maeve's Recommendations
 If player is lost, Maeve helps:

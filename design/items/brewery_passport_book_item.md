@@ -89,7 +89,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 ║                                              ║
 ║  🍺 The Sweet Surrender                      ║
 ║     Irish Stout • 5.2% ABV                   ║
-║     +35 HP, +10 SP                           ║
+║     +35 HP, +10 Bravado                           ║
 ║     "Comfortable Trap" buff                  ║
 ║                                              ║
 ║  Acquired: Won Pint-Off Challenge            ║

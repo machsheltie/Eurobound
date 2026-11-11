@@ -86,7 +86,7 @@ Only 45 SOVS. Press 1 to authorize debit from unmonitored account.
   - **Inspect Text:** *"Smells like garden hose and heavy metals. The label is handwritten in silver gel pen: 'DO NOT DRINK WHILE UNCONSCIOUS.' You paid 45 SOVS for municipal plumbing."*
 
 **Brew Reward:**
-- **Absinthe Lager** — Restores +15 SP, 30% chance to apply Confused to user
+- **Absinthe Lager** — Restores +15 Bravado, 30% chance to apply Confused to user
 - Full stat block: `design/items/brewery_tour/beer_absinthium_taproom_item.md`
 
 **Enhanced Selfie Prop:** 
@@ -226,7 +226,7 @@ click now before the bouncer resets the router...
   - **Inspect Text:** *"A low-res receipt with a dead hyperlink: 'HTTP 404: STREAM CONVERTED TO BITCOIN MINER.' At the bottom, in 8pt Comic Sans: 'THANK U FOR UR DONATION TO THE ARTS.'"*
 
 **Brew Reward:**
-- **Vape Stout** — Restores SP and applies Glow-Up Aura (Charm/Defense up), but causes Grease Fingers
+- **Vape Stout** — Restores Bravado and applies Glow-Up Aura (Charm/Defense up), but causes Grease Fingers
 - Full stat block: `design/items/brewery_tour/beer_tap_dat_vault_item.md`
 
 **Enhanced Selfie Prop:**
@@ -486,7 +486,7 @@ The brewery tour becomes a **perfect vehicle** for showing how these aging bros 
   Elements).
 - **Corrected:** the Legendary Hangover block now matches the master spec's named reward
   ("The Neon Nightmare," +20/-15/45 min/75 SOVS) — the file previously had unnamed,
-  non-canonical numbers (+25 HP/+10 SP/+2 all stats/3 turns) that matched no other source.
+  non-canonical numbers (+25 HP/+10 Bravado/+2 all stats/3 turns) that matched no other source.
 - **Added:** the Overview Table (top) and the "Debaucheryville Selfie Spots" table with the
   "Neon Photogenic" badge, both pulled from `design/items/brewery_passport_book_debaucheryville.md`
   — quest-layer content that belongs in this file per the master spec's item/quest split.

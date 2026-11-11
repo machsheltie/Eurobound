@@ -214,21 +214,21 @@
 ### Menu & Consumables
 | Item | Price | ABV | Effects | Bartender Note |
 |------|-------|-----|---------|----------------|
-| Jonge Jenever | 4 SOVS | 35% | +15 SP, Mild warmth | "Young. Starter." |
-| Oude Jenever | 6 SOVS | 35% | +25 SP, The Shakes (-Accuracy) | "Old. Respect required." |
-| Zeer Oude Jenever | 12 SOVS | 38% | +40 SP, The Shakes x2 | "Very old. Very serious." |
-| Korenwijn | 15 SOVS | 38% | +50 SP, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
+| Jonge Jenever | 4 SOVS | 35% | +15 Bravado, Mild warmth | "Young. Starter." |
+| Oude Jenever | 6 SOVS | 35% | +25 Bravado, The Shakes (-Accuracy) | "Old. Respect required." |
+| Zeer Oude Jenever | 12 SOVS | 38% | +40 Bravado, The Shakes x2 | "Very old. Very serious." |
+| Korenwijn | 15 SOVS | 38% | +50 Bravado, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
 | Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
 | The Kopstootje Combo | 8 SOVS | — | Combined effect, +Dutch Cred | "Traditional. Brave." |
 | "The Flight" (5 samples) | 20 SOVS | Escalating | See Gauntlet | "For tasting. Or testing." |
-| Back Room Special | 25 SOVS | 40% | +60 SP, Everything status | "If you qualify." |
+| Back Room Special | 25 SOVS | 40% | +60 Bravado, Everything status | "If you qualify." |
 
 ### Consumable: Oude Genever
 **Type**: Alcoholic Beverage / Brewery Tour Reward
 
 | Effect | Value |
 |--------|-------|
-| SP Restore | +40 (massive) |
+| Bravado Restore | +40 (massive) |
 | HP Effect | None |
 | Status Effect | "The Shakes" — -15% Accuracy for 3 turns |
 | Special | Cannot be consumed during combat (hands shaking) |

@@ -86,7 +86,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 ║                                              ║
 ║  🍺 The Sweet Surrender                      ║
 ║     Irish Stout • 5.2% ABV                   ║
-║     +35 HP, +10 SP                           ║
+║     +35 HP, +10 Bravado                           ║
 ║     "Comfortable Trap" buff                  ║
 ║                                              ║
 ║  Acquired: Won Pint-Off Challenge            ║
@@ -189,7 +189,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 | Attribute | Range |
 |-----------|-------|
 | HP Restoration | +25 to +50 |
-| SP Restoration | +0 to +20 |
+| Bravado Restoration | +0 to +20 |
 | Special Effect | Location-specific buff |
 | Status Risk | 5-15% chance of minor debuff |
 | Price | 8 SOVS to 15 SOVS |
@@ -199,7 +199,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 **The Sweet Surrender (The Blarney Trap)**
 - Style: Irish Stout
 - ABV: 5.2%
-- Stats: +35 HP, +10 SP
+- Stats: +35 HP, +10 Bravado
 - Effect: "Comfortable Trap" — +10% Bravado retention (1 hour)
 - Risk: 5% "Contentment" (reduced urgency)
 - Price: 8 SOVS
@@ -208,7 +208,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 **Vat Master's Reserve (The Stoutworks Brewery)**
 - Style: Imperial Stout (whiskey barrel aged)
 - ABV: 9.5%
-- Stats: +40 HP, +15 SP
+- Stats: +40 HP, +15 Bravado
 - Effect: 10% "Fermented Fury" (+15% Attack next battle)
 - Risk: 10% "The Vat's Whisper" (cosmetic yeast thoughts)
 - Price: 12 SOVS
@@ -218,7 +218,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 **Academic Amber (Trinity of Pints)**
 - Style: Irish Red Ale
 - ABV: 4.8%
-- Stats: +25 HP, +20 SP
+- Stats: +25 HP, +20 Bravado
 - Effect: "Scholar's Focus" — temporary INT boost (+3 for 30 min)
 - Risk: 10% "Pretentious" (dialogue options become insufferable)
 - Price: 9 SOVS
@@ -262,7 +262,7 @@ Collecting all 4 stamps in a city unlocks that city's "Legendary Hangover" — a
 ### Reward: Permanent +1 to All Alcohol-Based Items
 This affects:
 - All HP restoration from beer/alcohol items
-- All SP restoration from beer/alcohol items
+- All Bravado restoration from beer/alcohol items
 - All buff durations from beer/alcohol items
 - All "chance of" effects from beer/alcohol items (improved by 1%)
 

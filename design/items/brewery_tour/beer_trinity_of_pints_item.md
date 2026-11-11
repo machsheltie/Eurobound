@@ -9,7 +9,7 @@
 |---|---|
 | **Style** | Irish Red Ale [source: design/items/brewery_passport_book.md L219] |
 | **ABV** | 4.8% [source: design/items/brewery_passport_book.md L220] |
-| **Effects** | +25 HP, +20 SP [source: design/items/brewery_passport_book.md L221]; "Scholar's Focus" — temporary INT boost (+3 for 30 min) [source: design/items/brewery_passport_book.md L222] |
+| **Effects** | +25 HP, +20 Bravado [source: design/items/brewery_passport_book.md L221]; "Scholar's Focus" — temporary INT boost (+3 for 30 min) [source: design/items/brewery_passport_book.md L222] |
 | **Risk** | 10% "Pretentious" (dialogue options become insufferable) [source: design/items/brewery_passport_book.md L223] |
 | **Price** | 9 SOVS — within the 8–15 SOVS guideline band (author ruling: guideline, not rule) [source: design/items/brewery_passport_book.md L224] |
 | **Special** | ⚠ AUTHOR-REVIEW: The "Scholar's Focus" INT boost decays faster the moment you actually try to sound smart with it — self-defeating by design, just like every other course at Trinity of Pints. |

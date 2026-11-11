@@ -106,8 +106,8 @@
 ### Menu & Consumables
 | Item | Price | Effects | Barista Judgment Level |
 |------|-------|---------|----------------------|
-| Espresso | 5 SOVS | +15 SP, removes Drowsy status | Low (acceptable order) |
-| "American Coffee" | 5 SOVS | +10 SP, +Shame buff (locals notice) | Medium (tourist detected) |
+| Espresso | 5 SOVS | +15 Bravado, removes Drowsy status | Low (acceptable order) |
+| "American Coffee" | 5 SOVS | +10 Bravado, +Shame buff (locals notice) | Medium (tourist detected) |
 | Stroopwafel | 4 SOVS | +20 HP, +Comfort status | None (everyone loves stroopwafel) |
 | "Croissant" (day-old) | 8 SOVS | +10 HP, -SOVS significantly | High (you paid 8 SOVS for THIS?) |
 | Heineken (bottle) | 6 SOVS | +Tipsy status, -Bravado (locals judge) | Maximum (tourists drink Heineken) |

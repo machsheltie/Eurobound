@@ -160,7 +160,7 @@ WI-FI HOTSPOTS & CONNECTIVITY
     • Opera Lobby: Public connection with art world gossip threads 
     • University Café: Academic network access with intellectual debates 
     • Museum Foyer: Cultural institution Wi-Fi with exhibition information 
-    • ICQ Special: "Mom" calls expressing pride (restores SP on first call per city) 
+    • ICQ Special: "Mom" calls expressing pride (restores Bravado on first call per city) 
 
 SPECIAL MECHANICS
 Sinfonia-Specific Systems

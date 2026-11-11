@@ -178,7 +178,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 > "Twenty-two SOVS. Or defeat the golem. The golem is free."
 
 **Windmill Grist purchase (requires windmill opener)**:
-> "Eleven percent. Forty HP, twenty SP, and your navigation will not be your own for a while."
+> "Eleven percent. Forty HP, twenty Bravado, and your navigation will not be your own for a while."
 > "The brewmaster calls it 'liquid heritage.' You will call it something else. Both are correct."
 
 ### Post-Interaction
@@ -230,7 +230,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 |--------------|-------|--------------|---------------|
 | Brewery Tour | 25 SOVS | 25 SOVS | Full tour, tasting token, five-beer flight, 40-minute lecture, access to boss arena |
 | The Wobbly Windmill Brewery Bottle Opener | 22 SOVS | 22 SOVS | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp and Windmill Grist. Free via Yeast Golem defeat. |
-| Windmill Grist (consumable) | Post-tour purchase | Genuinely 11% | +40 HP, +20 SP, +15% Speed 3 turns, −20% Navigation 5 turns. The room keeps spinning after you leave. |
+| Windmill Grist (consumable) | Post-tour purchase | Genuinely 11% | +40 HP, +20 Bravado, +15% Speed 3 turns, −20% Navigation 5 turns. The room keeps spinning after you leave. |
 | Tasting Flight | Included in tour | Included | Five beers, 5% → 11% ABV. Feeds the Spin Meter. |
 | "Respect The Grain" (book) | 35 SOVS | 0 SOVS | Self-published, unreadable, comprehensive. He will sign it. Bram has read it because he had to. |
 | Gift shop discount | 5%, earned | Small but real | Awarded for listening to the entire Speech |
@@ -332,7 +332,7 @@ He also gates the Yeast Golem boss arena, the second-floor tasting room, and the
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | The Wobbly Windmill Brewery Bottle Opener | Golem defeat or 22 SOVS | Yes | Gates stamp + Windmill Grist; blades rotate |
-| Windmill Grist ×3 | Golem victory | Consumable | +40 HP, +20 SP, +15% Speed, −20% Navigation |
+| Windmill Grist ×3 | Golem victory | Consumable | +40 HP, +20 Bravado, +15% Speed, −20% Navigation |
 | "Windmill Grist" stamp | Tour completion with opener | Yes | 1 of 4 toward Canal Courage |
 | "Yeast Slayer" title | Golem defeat | Yes | Title badge |
 | Gift shop 5% discount | Full Speech listened to | Yes | Still overpriced |

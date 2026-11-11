@@ -254,7 +254,7 @@ Underneath that, quieter: he is the one cousin who never left. The others come a
 ### Signature Beer
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| **Heir Apparent Ale** | 10 SOVS (+3 SOVS for the crown-shaped glass, which you keep) | Genuinely worth it; Belgian-style golden ale, 6.5%, noble hop character, golden crown colour, intentional | +30 HP, +15 SP; **"Noble Blood"** — +2 Charm, +2 Style for 45 minutes. Unlocked by completing the Coronation Ceremony. |
+| **Heir Apparent Ale** | 10 SOVS (+3 SOVS for the crown-shaped glass, which you keep) | Genuinely worth it; Belgian-style golden ale, 6.5%, noble hop character, golden crown colour, intentional | +30 HP, +15 Bravado; **"Noble Blood"** — +2 Charm, +2 Style for 45 minutes. Unlocked by completing the Coronation Ceremony. |
 
 *Flavour text, canon:* "Brewed with hops that can trace their lineage back seven generations. The yeast is merely five generations, but we don't discuss that."
 
@@ -264,8 +264,8 @@ Underneath that, quieter: he is the one cousin who never left. The others come a
 | The Commoner | 4 SOVS | Fair, and unpretentiously good | +10 HP. Served with an apologetic explanation of the name, every time, from whichever cousin is on. |
 | Duke's Dark | 7 SOVS | Fair | +20 HP. Served with a slight bow. |
 | Princess Pilsner | 5 SOVS | Fair | +15 HP. Served with a curtsey. |
-| The Usurper (guest beer) | 6 SOVS | Fair; the cousins think it is the best thing in the building | +15 HP, +5 SP. Served in hushed tones. |
-| King's Reserve | 15 SOVS | Steep, and he will not discount it | +40 HP, +20 SP. Served with full ceremony — the whole apparatus, for one beer, for anyone who buys one. |
+| The Usurper (guest beer) | 6 SOVS | Fair; the cousins think it is the best thing in the building | +15 HP, +5 Bravado. Served in hushed tones. |
+| King's Reserve | 15 SOVS | Steep, and he will not discount it | +40 HP, +20 Bravado. Served with full ceremony — the whole apparatus, for one beer, for anyone who buys one. |
 
 ### Merchandise & Stamp
 | Item/Service | Price | Actual Value | Effect/Result |

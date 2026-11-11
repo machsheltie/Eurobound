@@ -113,7 +113,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 **Absinthe Lager (The Absinthium Taproom)**
 - **Style**: Absinthe-infused lager (legally questionable)
 - **ABV**: 8.5% (plus "additives")
-- **Stats**: +15 SP restoration
+- **Stats**: +15 Bravado restoration
 - **Effect**: 30% chance to apply "Green Fairy Confusion" to USER
 - **Risk**: The confusion is part of the experience
 - **Price**: 12 SOVS
@@ -124,7 +124,7 @@ Each city has its own Bottle Opener Keychain design that must be acquired to acc
 **Vape Stout (The Tap Dat Vault)**
 - **Style**: Vapor-infused experimental stout
 - **ABV**: 6.9% (nice)
-- **Stats**: +20 SP restoration
+- **Stats**: +20 Bravado restoration
 - **Effect**: "Glow-Up Aura" (+1 Charm, +1 Defense for 30 min)
 - **Risk**: Applies "Grease Fingers" status (reduced item accuracy)
 - **Price**: 14 SOVS

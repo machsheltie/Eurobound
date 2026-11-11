@@ -7,7 +7,7 @@
       "display_name": "Emergency Energy Drink",
       "item_type": "consumable",
       "price": 4,
-      "effect": "Restores SP; may delay sleep.",
+      "effect": "Restores Bravado; may delay sleep.",
       "acquisition": "Recovery aisle."
     },
     {

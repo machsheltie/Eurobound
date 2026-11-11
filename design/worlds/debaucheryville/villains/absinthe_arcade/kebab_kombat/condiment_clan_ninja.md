@@ -112,7 +112,7 @@ They dissolve back into the screen, which immediately shows them bouncing on the
 | Stat | Value | Notes |
 |------|-------|-------|
 | **HP** | 26 (Mystery Brown: 32) | Rolling meter applies |
-| **SP** | 8 | Pays for GET IN THE PITA! (6 SP) |
+| **Bravado** | 8 | Pays for GET IN THE PITA! (6 Bravado) |
 | **Offense** | 6 (Mystery Brown: 7) | |
 | **Defense** | 3 | |
 | **Speed** | 9 | Fastest thing on the Kombat stage; the bounce is load-bearing |
@@ -126,7 +126,7 @@ They dissolve back into the screen, which immediately shows them bouncing on the
 | Squeeze Strike | Physical | Light single-target hit: a squeeze-bottle jab to the sternum | — | 40% / always | No |
 | Sauce Spray (palette-specific, see below) | Social (Garlic) / Physical (Chili, Mystery Brown) | Light damage plus palette status | See below | 30% / always | No |
 | Sauce Swap | Gimmick | Two Clan ninjas trade palettes. Each clears its own negative statuses. Battle log: *"GARLIC is CHILI now. Nothing has changed."* If only one ninja is alive, it swaps with itself; the log says so and nothing happens | — (self-cleanse) | 15% / only when self has a negative status | No |
-| **GET IN THE PITA!** | Physical / Gimmick | The skewer-rope spears one bro and reels him into a pita. Moderate damage, target wrapped (Stun, 1 turn) | Stun (1 turn) + Grease Fingers | 15% / max once every 3 rounds per ninja; costs 6 SP | **Yes. One full turn of overhead skewer-twirl; the bounce stops** |
+| **GET IN THE PITA!** | Physical / Gimmick | The skewer-rope spears one bro and reels him into a pita. Moderate damage, target wrapped (Stun, 1 turn) | Stun (1 turn) + Grease Fingers | 15% / max once every 3 rounds per ninja; costs 6 Bravado | **Yes. One full turn of overhead skewer-twirl; the bounce stops** |
 
 **Sauce Spray by palette:**
 | Palette | Move name | Effect |

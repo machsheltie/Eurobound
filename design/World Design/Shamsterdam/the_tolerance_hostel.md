@@ -153,10 +153,10 @@
 
 ### Sleep Quality System
 Each night's rest affects next-day performance:
-- **Restful Night** (rare): Full HP/SP restore, +5% all stats
-- **Disturbed Sleep** (common): 75% HP/SP restore, no bonus
-- **What Sleep?** (frequent): 50% HP/SP restore, -5% Speed
-- **The Snorer Night** (random): 25% HP/SP restore, -10% all stats, +Exhausted status
+- **Restful Night** (rare): Full HP/Bravado restore, +5% all stats
+- **Disturbed Sleep** (common): 75% HP/Bravado restore, no bonus
+- **What Sleep?** (frequent): 50% HP/Bravado restore, -5% Speed
+- **The Snorer Night** (random): 25% HP/Bravado restore, -10% all stats, +Exhausted status
 
 **Sleep Disruption Events** (random chance each night):
 - Someone's 5 AM alarm (high probability)
