@@ -16,7 +16,7 @@ before publishing the finished ability doc. Keep all H2 section headers (with em
 and table column shapes exactly as they appear here.
 
 Money, if any appears (e.g. a Cover Charge → Bravado conversion), is always SOVS.
-Bravado is the only spendable combat resource here — there is no SP in this codebase.
+Bravado is the only spendable combat resource; the code tracks it (`game/core/game_state.gd`).
 -->
 
 ## 📋 Ability Identity
@@ -43,7 +43,7 @@ These map 1:1 onto the ability's entry in `game/assets/data/skills/party_abiliti
 | **`battle_text`** | "[Line using `{user}` for name substitution, e.g. "{user} unleashes a Foam Cyclone, blinding everyone in a five-foot radius, self included."]" |
 | **`is_ultimate`** | [true / false] |
 
-**Note**: `bravado_cost` spends the bro's Bravado meter, not SP — SP does not exist in this codebase. Costs should feel proportionate to the move's theatrics: a cheap basic special (e.g. `roast_line` at 4) versus a full Ultimate, which should cost meaningfully more of the meter it's gated behind.
+**Note**: `bravado_cost` spends the bro's Bravado meter, the combat resource the code tracks in `game/core/game_state.gd`. Costs should feel proportionate to the move's theatrics: a cheap basic special (e.g. `roast_line` at 4) versus a full Ultimate, which should cost meaningfully more of the meter it's gated behind.
 
 ---
 

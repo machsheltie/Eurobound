@@ -190,8 +190,8 @@ This is the bros' base of operations because it appeared first in their search r
 |------|-------|-----------|---------------|-------|
 | Guinness (Pint) | 8 SOVS | +15 HP | Progresses toward "Scuttered" | The 119.5-second ritual |
 | Smithwick's (Pint) | 7 SOVS | +12 HP | Progresses toward "Scuttered" | Locals' alternative |
-| Whiskey (Jameson) | 8 SOVS | +10 HP, +5 Bravado | +Bravado temporarily | Standard pour |
-| Whiskey (Premium) | 12-20 SOVS | +15 HP, +10 Bravado | +Bravado, +Charm | Impress the staff |
+| Whiskey (Jameson) | 8 SOVS | +10 HP, +5 Bravado (temporary) | — | Standard pour |
+| Whiskey (Premium) | 12-20 SOVS | +15 HP, +10 Bravado | +Charm | Impress the staff |
 | Irish Coffee | 10 SOVS | +20 HP, +15 Bravado | Caffeine + Alcohol balance | Tourist favorite |
 | Tayto Crisps | 3 SOVS | +5 HP | Absorbs some alcohol | Cheese & Onion or nothing |
 | Toastie | 8 SOVS | +25 HP | Absorbs significant alcohol | Pub food perfection |

@@ -233,7 +233,7 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 |--------------|-------|--------------|---------------|
 | "Shamsterdam Dream" (Tourist Rec) | 18 SOVS/g | ~9 SOVS/g elsewhere | +20 Bravado, −Speed, delayed Space Cake Effect. "Very popular. Very smooth." (scripted) |
 | "Green Guide Special" (House) | 15 SOVS/g | ~8 SOVS/g elsewhere | +15 Bravado, +Confused. "House blend. Good choice." (automatic) |
-| "Premium Heritage" | 25 SOVS/g | ~12 SOVS/g elsewhere | +30 Bravado, −Intelligence, +Bravado temporarily. "Excellent selection, sir." (upsell confirmed) |
+| "Premium Heritage" | 25 SOVS/g | ~12 SOVS/g elsewhere | +30 Bravado (temporary), −Intelligence. "Excellent selection, sir." (upsell confirmed) |
 | Space Cake (1 piece) | 8 SOVS | 8 SOVS | Delayed: +40 Bravado after 2 hours game time. Unlocks the "It's Not Working" dialogue chain. |
 | Hash (1g) | 12 SOVS | 12 SOVS | +25 Bravado, "Heavy" (−Movement speed). *sigh* "For smoking. Not eating." |
 | Bag | 2 SOVS | 0 SOVS | It is a bag. He has no further information about the bag. |

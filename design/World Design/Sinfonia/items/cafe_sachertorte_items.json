@@ -132,7 +132,7 @@
         "price_euro": 12,
         "effects": {
           "hp_restore": 30,
-          "sp_restore": 10
+          "heal_bravado": 10
         },
         "flavor_text": "Simple, humble, old-fashioned. Herr Ober slightly approves."
       }

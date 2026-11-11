@@ -303,8 +303,8 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 |--------------|-------|--------------|---------------|
 | Guinness (Pint) | 8 SOVS | 6 SOVS across the river | +15 HP, progresses toward "Absolutely Scuttered", triggers the 119.5-second ritual |
 | Smithwick's (Pint) | 7 SOVS | 5 SOVS across the river | +12 HP, progresses toward "Absolutely Scuttered", flagged by Seamus as a local's order |
-| Whiskey (Jameson) | 8 SOVS | 4 SOVS measure | +10 HP, +5 Bravado, temporary +Bravado |
-| Whiskey (Premium — Powers, Redbreast, Midleton) | 12–20 SOVS | 7–14 SOVS | +15 HP, +10 Bravado, +Bravado, +Charm; ordering Midleton unlocks a staff-respect beat |
+| Whiskey (Jameson) | 8 SOVS | 4 SOVS measure | +10 HP, +5 Bravado (temporary) |
+| Whiskey (Premium — Powers, Redbreast, Midleton) | 12–20 SOVS | 7–14 SOVS | +15 HP, +10 Bravado, +Charm; ordering Midleton unlocks a staff-respect beat |
 | Irish Coffee | 10 SOVS | 4 SOVS in materials | +20 HP, +15 Bravado, caffeine/alcohol balance, tourist favourite and Seamus knows it |
 | Tayto Crisps (Cheese & Onion) | 3 SOVS | 1 SOV | +5 HP, absorbs some alcohol. There is no second flavour. Do not ask. |
 | Toastie | 8 SOVS | 3 SOVS | +25 HP, absorbs significant alcohol |

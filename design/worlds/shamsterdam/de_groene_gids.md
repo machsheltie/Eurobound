@@ -109,7 +109,7 @@
 |------|-------|---------|---------------|
 | "Shamsterdam Dream" (Tourist Rec) | 18 SOVS/g | +20 Bravado, -Speed, Delayed "Space Cake Effect" | "Very popular. Very smooth." (scripted) |
 | "Green Guide Special" (House) | 15 SOVS/g | +15 Bravado, +Confused status | "House blend. Good choice." (automatic) |
-| "Premium Heritage" | 25 SOVS/g | +30 Bravado, -Intelligence, +Bravado temporarily | "Excellent selection, sir." (upsell confirmed) |
+| "Premium Heritage" | 25 SOVS/g | +30 Bravado (temporary), -Intelligence | "Excellent selection, sir." (upsell confirmed) |
 | Space Cake (1 piece) | 8 SOVS | Delayed effect: +40 Bravado after 2 hours game time, "It's Not Working" dialogue available | "Wait two hours. Americans never wait." |
 | Hash (1g) | 12 SOVS | +25 Bravado, "Heavy" status (-Movement speed) | *sigh* "For smoking. Not eating." |
 | Merchandise: T-Shirt | 35 SOVS | +Embarrassed status (visible branded clothing) | "One size fits... most." |
