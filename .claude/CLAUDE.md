@@ -11,17 +11,27 @@ Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.7 (Forward+ r
 - **NPCs are never boring, corporate, or professional.** Every NPC, location, and item gets a funny name and is written cleverly, with wit, in service of satirizing and parodying everything.
 - **No real city or place names in game content.** Parody names only: Publandia, Debaucheryville, Sinfonia, Shamsterdam. Internal planning docs may reference the real-world inspirations; player-facing text never does. Minted world-name canon and exemptions live in the rulings ledger (below).
 - **Real brands, products, games, songs and titles keep their real names** (author, 2026-11-09: "The only thing that never gets the real name is locations. ALL other things get their real names."). Invented NPCs, items and quests still get funny names.
-- **All money is SOVS.** Never euros, never the € glyph, never koruna. Write prices as SOVS (e.g. "40 SOVS"). This supersedes the €-as-display-glyph rule in the Round 5 economy spec §1.2.
+- **All money is SOVS.** Never euros, never the € glyph, never koruna. Write prices as SOVS (e.g. "40 SOVS"); the singular is "1 SOV" (author, 2026-11-10). This supersedes the €-as-display-glyph rule in the Round 5 economy spec §1.2.
 - **No mascots, ever.** No pets, puppets, named companion objects, emotional-support entities, or fourth party members. The party is three bros. (Ambient set-dressing animals the author rules in, like the Absinthe Arcade window cat, are ledger exceptions.)
 - **All names must be unique** across the game — NPCs, locations, items, quests, everything.
 - **All side quests are optional.**
 - NFT artwork is 90s/00s pop culture, never location-derived.
+- **Junk items pay off when inspected** (author, 2026-11-11): "little bit items like that that seem to be junk reward the player for investigating them and that they should come with really funny microcopy." Keep it short, and "It can go as dark comedy, dirty, and unfamily friendly as it likes as this is an MA game."
+- **Drinking, drugs and sex follow two standing author laws:** `design/narrative/bros_choose_debauchery.md` (the bros are willing, delusional antiheroes; no intoxicant gives a free advantage; no moral lectures) and `design/mechanics/intoxication_law.md` (alcohol escalates Buzzed → Beer Goggles → Shitfaced → Catastrophe; bounded loss of player control is a legitimate mechanic; run its 10-point design review before adding any intoxication mechanic).
 
 ## Templates are mandatory
 
-Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest doc? **Copy the matching template from `design/templates/`** — `NPC_Profile_Template.md`, `villain_template.md` (every villain gets one at creation — author mandate), `location_validation_template.md`, `NFT_Template.md`, `permanent_item_template.md`, `PNG_Assets_Template.md`, `3D_Asset_Manifest_Template.md` (one per 3D building kit), `sidequest_template.md` (the only quest template — the old `quest.md` short form is retired, its unique sections merged in). Templates are floors, not ceilings. If no template fits, ask the author before inventing a format.
+Creating a new NPC, villain, location, NFT, item, enemy, status effect, PNG asset spec, or side quest doc? **Copy the matching template from `design/templates/`**:
+- **Characters:** `NPC_Profile_Template.md`; `villain_template.md` (every villain gets one at creation — author mandate); `enemy_template.md` (regular enemies); `couchsurf_host_template.md`.
+- **Places:** `city_overview_template.md`; `location_validation_template.md`.
+- **Items:** `permanent_item_template.md` (permanently held by a bro); `consumable_item_template.md` (food, drinks, drugs, vapes); `equipment_template.md`; `signature_beer_item_template.md`; `opener_item_template.md`; `stamp_item_template.md`; `NFT_Template.md`.
+- **Systems:** `ability_template.md`; `status_effect_template.md`.
+- **Quests:** `sidequest_template.md` (the only quest template — the old `quest.md` short form is retired, its unique sections merged in).
+- **Art:** `PNG_Assets_Template.md`; `3D_Asset_Manifest_Template.md` (one per 3D building kit).
 
-`design/templates/` is the only canonical template folder — the restructure move is complete. Template copies elsewhere (e.g. `Design/Character Profiles/Templates/`, or a root-level `/Templates`) are legacy — do not use them.
+Templates are floors, not ceilings. If no template fits, ask the author before inventing a format.
+
+`design/templates/` is the only canonical template folder. Retired copies live in `design/legacy/retired_templates/` (author, 2026-11-11). Do not use them.
 
 ## 3D assets
 
@@ -36,6 +46,8 @@ Creating a new NPC, villain, location, NFT, item, PNG asset spec, or side quest 
 ## Canon and standing rulings
 
 - Standing rulings ledger: `docs/superpowers/NEXT_WORK.md` and the binding rules in `docs/superpowers/specs/2026-07-31-economy-wallet-crypto-design.md` §0a. **Do not relitigate settled rulings.**
+- **Search canon before writing, deciding or asking:** `tools/canon_index/.venv/Scripts/python tools/canon_index/canon_index.py search "<subject>"` (add `--rulings` for the ledger only). It returns `path:line` hits across `design/` and the ledger; read those lines instead of whole files. Run `build` after editing design docs. See `tools/canon_index/README.md`.
+- **Work tracking is beads (`bd`):** open tasks, blockers and items waiting on author rulings live there (`bd ready`, `bd list`). Rules for this repo are in the root `CLAUDE.md`.
 - The branch `claude/eurobound-jrpg-prd-uv5iog` (EUROBOUND_PRD.md; 16+ ceiling, euro currency, `line_safe` columns, mobile-first) is **dead and superseded**. Never treat it as canon, never merge it, never revive its rules.
 - Older docs (README, GAMEPLAN, Designer Persona) describing a mobile-first iOS game are stale on platform: the target is Steam/desktop.
 
