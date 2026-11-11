@@ -4,9 +4,9 @@ var repo
 var state
 
 func before_each() -> void:
-	repo = load("res://core/data_repo.gd").new()
+	repo = autofree(load("res://core/data_repo.gd").new())
 	repo.load_all()
-	state = load("res://core/game_state.gd").new()
+	state = autofree(load("res://core/game_state.gd").new())
 	state.new_game(repo)
 
 func test_new_game_builds_party_from_data() -> void:
@@ -48,6 +48,6 @@ func test_round_trip() -> void:
 	state.player_position = Vector2(120, 88)
 	state.current_scene_path = "res://worlds/debaucheryville/clocktower_plaza.tscn"
 	var d: Dictionary = state.to_dict()
-	var restored = load("res://core/game_state.gd").new()
+	var restored = autofree(load("res://core/game_state.gd").new())
 	restored.from_dict(d)
 	assert_eq(restored.to_dict(), d)

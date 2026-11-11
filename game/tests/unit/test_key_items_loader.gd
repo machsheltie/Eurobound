@@ -3,7 +3,7 @@ extends GutTest
 var repo
 
 func before_each() -> void:
-	repo = load("res://core/data_repo.gd").new()
+	repo = autofree(load("res://core/data_repo.gd").new())
 
 func test_load_succeeds_with_empty_key_items_and_equipment() -> void:
 	assert_true(repo.load_all(), "load_all should succeed even though key_items.json and equipment.json are empty")
