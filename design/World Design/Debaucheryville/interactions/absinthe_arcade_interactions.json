@@ -199,17 +199,23 @@
       "interaction_text": "Pick a bro. The other two dance anyway.",
       "cost": {
         "item": "item_absinthe_arcade_token",
-        "quantity": "NEEDS AUTHOR RULING"
+        "quantity": 2,
+        "per": "song"
       },
       "mechanics": {
         "player_control": "one bro chosen by the player",
         "other_bros": "game-controlled on the other two pads",
         "outcome_presentation": "All three dance cringily either way; a bad score makes them look even more ridiculous.",
-        "track_list": "90s/00s hits named by the author 2026-11-09; licensing vs. sound-alikes NEEDS AUTHOR RULING"
+        "track_list": "Real licensed 90s/00s songs, in hand (author ruling 2026-11-10); song list deferred by the author",
+        "difficulty": "Difficulty screen permanently stuck on Hard/Expert (author ruling 2026-11-10)"
       },
       "reward": {
         "type": "arcade_tickets",
-        "amount": "NEEDS AUTHOR RULING",
+        "amount": {
+          "min": 0,
+          "max": 30,
+          "formula": "round(30 x share of steps earned); PERFECT 1, GREAT 0.7, GOOD 0.4, MISS 0 (author ruling 2026-11-11)"
+        },
         "redeem_at": "prize_redemption_counter"
       },
       "states": [
@@ -221,6 +227,113 @@
       ]
     },
     {
+      "object_id": "skeeball_lanes",
+      "display_name": "Skee-Ball (three lanes)",
+      "node_id": "aa_node_main_cabinet_loop",
+      "type": "ticket_mini_game",
+      "interaction_text": "Roll nine balls up a ramp like it's 1998",
+      "asset_ids": [
+        "aa_prop_skeeball_lane"
+      ],
+      "lane_count": 3,
+      "cost": {
+        "item": "item_absinthe_arcade_token",
+        "quantity": 2,
+        "per": "game"
+      },
+      "mechanics": {
+        "balls_per_game": 9,
+        "scoring": "Standard Skee-Ball rings; the score converts to tickets",
+        "player_control": "NEEDS AUTHOR RULING (which bro rolls; proposed: player picks, like DDR)"
+      },
+      "reward": {
+        "type": "arcade_tickets",
+        "amount": {
+          "min": 0,
+          "max": 20,
+          "formula": "by score"
+        },
+        "redeem_at": "prize_redemption_counter",
+        "sovs_payout": 0
+      },
+      "numbers_authority": "Set by Claude under the author's round v25 delegation (NEXT_WORK 'Ticket-game numbers')",
+      "states": [
+        "idle",
+        "insert_token",
+        "playing",
+        "results",
+        "ticket_jam"
+      ]
+    },
+    {
+      "object_id": "foosball_table",
+      "display_name": "Foosball Table",
+      "node_id": "aa_node_main_cabinet_loop",
+      "type": "ticket_mini_game",
+      "interaction_text": "Spin the rods. Spinning is legal here.",
+      "asset_ids": [
+        "aa_prop_foosball_table"
+      ],
+      "cost": {
+        "item": "item_absinthe_arcade_token",
+        "quantity": 2,
+        "per": "game"
+      },
+      "mechanics": {
+        "opponent": "an NPC (which NPC: NEEDS AUTHOR RULING)",
+        "outcome": "win_or_loss"
+      },
+      "reward": {
+        "type": "arcade_tickets",
+        "amount": {
+          "win": 15,
+          "loss": 3
+        },
+        "redeem_at": "prize_redemption_counter",
+        "sovs_payout": 0
+      },
+      "numbers_authority": "Set by Claude under the author's round v25 delegation (NEXT_WORK 'Ticket-game numbers')",
+      "states": [
+        "idle",
+        "insert_token",
+        "playing",
+        "results_win",
+        "results_loss"
+      ]
+    },
+    {
+      "object_id": "beanie_baby_claw",
+      "display_name": "Beanie Baby Claw",
+      "node_id": "aa_node_main_cabinet_loop",
+      "type": "prize_mini_game",
+      "interaction_text": "Grab a Beanie Baby. Retirement value guaranteed by nobody.",
+      "asset_ids": [
+        "aa_cab_claw_beanie"
+      ],
+      "cost": {
+        "item": "item_absinthe_arcade_token",
+        "quantity": 5,
+        "per": "attempt"
+      },
+      "mechanics": {
+        "outcome": "prize_or_nothing",
+        "note": "The claw machine must exist and work (author ruling 2026-11-11). Separate from the rigged relic claw in the claw alcove; which claw the ruling meant is flagged for the author."
+      },
+      "reward": {
+        "type": "item",
+        "prize_pool": "NEEDS AUTHOR RULING (which prizes the claw holds)",
+        "sovs_payout": 0
+      },
+      "numbers_authority": "5 tokens ruled; prize-or-nothing set by Claude under the round v25 delegation",
+      "states": [
+        "idle",
+        "insert_token",
+        "playing",
+        "grab_miss",
+        "grab_win"
+      ]
+    },
+    {
       "object_id": "prize_redemption_counter",
       "display_name": "Prize Redemption",
       "node_id": "aa_node_bottle_bar",
@@ -228,7 +341,17 @@
       "interaction_text": "Trade tickets for regret",
       "economy": {
         "input_currency": "arcade_tickets",
-        "catalog": "NEEDS AUTHOR RULING (prize list and ticket prices; see NEXT_WORK 2026-11-09)"
+        "catalog": "design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md (13 prizes)",
+        "junk_shelf": {
+          "separate_from_catalog": true,
+          "price_range_tickets": [
+            5,
+            15
+          ],
+          "effects": "none",
+          "no_catalog_duplicates": true,
+          "authority": "author ruling 2026-11-11 (round v25); item names NEEDS AUTHOR RULING"
+        }
       },
       "note": "Built into the broken end of the shattered-glass bar (hall v8, author ruling 2026-11-08)."
     },

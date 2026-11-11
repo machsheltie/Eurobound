@@ -9,7 +9,12 @@
 >
 > **Group handling.** `NPC_Profile_Template.md` profiles one NPC, so the group lives in this file, in the
 > **Cara's Group** section below. The Blonde Girl has her own profile:
-> `design/worlds/debaucheryville/npcs/Absinthe_Arcade/blonde_girl_pigtails.md`.
+> `design/worlds/debaucheryville/npcs/Absinthe_Arcade/blonde_girl_pigtails.md`.>
+> **Round v25 (2026-11-11), approved for the quest this group drives:** trigger A (Pilsner walks to the bar after
+> a game while the group is there), the 40 SOVS tab for their five test tubes (it does not grow), the bartender's
+> timing and door lines, the 10 SOVS service charge, and **Accounts Receivable** as the door fight. **Still
+> unruled:** the Blonde Girl's name, the other three girls' names, the quest name, the ring's name, who hands
+> over the ring, the group's schedule, and Pilsner "newly single" (flagged).
 
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_cara_01`
@@ -193,3 +198,4 @@ None. The group gives one thing: the five-ticket plastic ring for Grandpa Guy (q
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-10 | Initial profile from the author's ChatGPT chat "Absinthe Arcade Exterior Design" | Claude draft for machsheltie |
+| 2026-11-11 | Round v25 quest approvals noted; group names, schedule and ring giver still open | Claude for machsheltie |

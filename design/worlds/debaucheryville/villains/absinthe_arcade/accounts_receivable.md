@@ -1,31 +1,28 @@
-# Villain Profile: The Tab Enforcers (name PROPOSED — NEEDS AUTHOR RULING)
+# Villain Profile: Accounts Receivable
 
 *"Our guests are experiencing a billing dispute."* — the Prize Bartender, summoning them **[CANON — approved draft]**
 
 > **Source and status.** The author created this pair in the ChatGPT chat "Absinthe Arcade Exterior Design":
 > **"If they're leaving [and] refuse to pay, two very large ape-like men show up acting menacing that the bros
 > then have to fight."** **[CANON — author]** The ChatGPT draft the author approved adds their look and the
-> summoning beat (**[CANON — approved draft]**). The name, stats, moves, rewards and every unmarked line in
-> this file are a Claude draft: **PROPOSED — NEEDS AUTHOR RULING.**
+> summoning beat (**[CANON — approved draft]**). **Round v25 (2026-11-11), author:** the name is **Accounts
+> Receivable** (nameplates **ACCOUNTS** and **RECEIVABLE**), and every proposed stat, move, resistance, reward, the
+> loss rule and the flee rule are **APPROVED**. Still **PROPOSED — NEEDS AUTHOR RULING:** every unmarked line of
+> dialogue, the appearance details marked PROPOSED, the arena staging, the PAY THE TAB command and the
+> bouncer question below.
 >
 > This is not a cabinet villain. It is the Arcade's only fight with real-world staff, and it only happens if
 > the bros refuse to pay Cara's tab at the front door (`design/Quests/debaucheryville/caras_twenty_first.md`).
 > Every villain gets a profile at creation (author mandate 2026-08-03), so this one exists now.
 
 ## 📋 Villain Identity
-- **Villain ID**: `debaucheryville_villain_tab_enforcers_01` (working ID; renamed once the name is ruled)
-- **Display Name**: **PROPOSED — NEEDS AUTHOR RULING.** Options (all grepped across `design/`, `game/assets/`, `docs/`: zero hits):
-  1. **Absinthe Arcade Loss Prevention** (ChatGPT's proposal). Battle banner: **ABSINTHE ARCADE LOSS PREVENTION ×2**. A retail job title on two refrigerators.
-  2. **Two Very Large Ape-Like Men** (the author's own description, used straight as the name). Battle banner: **VERY LARGE APE-LIKE MAN ×2**.
-  3. **Accounts Receivable** (Claude's alternative). One word per man: the battle nameplates read **ACCOUNTS** and **RECEIVABLE**. Knock out one and the other's plate still reads half a department. Same trick as the Condiment Clan's palette nameplates, played as paperwork.
-  - *Context, not a decision:* ChatGPT steered away from a literal "ape-like" name on the grounds that the
-    joke should be the mundane absurdity (debt collection with matching polos and tiny badges) rather than
-    their appearance. The author's own words were "ape-like men". The author picks.
+- **Villain ID**: `debaucheryville_villain_accounts_receivable_01`
+- **Display Name**: **Accounts Receivable** **[CANON — author, round v25 2026-11-11]**. One word per man: the battle nameplates read **ACCOUNTS** and **RECEIVABLE** **[CANON — author]**. Knock out one and the other's plate still reads half a department.
 - **Open question (NEEDS AUTHOR RULING):** the Round v24 ruling lists **"bouncers"** among the hall NPCs (from the author's chat "create hero image prompt"). Are these two the Arcade's bouncers, standing in the hall all night until summoned, or a separate pair who only exist for this fight? This file assumes they are not visible until "Gentlemen?" (they step in from offscreen), which keeps the reveal. If they are the hall bouncers, the reveal becomes "the two men by the door were for you".
 - **Tier**: Minor Villain (optional pair fight)
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), the front door / entry
 - **Associated Quest/Arc**: `debaucheryville_sidequest_caras_twenty_first_01` (PROPOSED ID)
-- **Encounter Type**: Optional, one-time (only if the bros refuse the tab at the door). Re-trigger rules PROPOSED in the quest doc.
+- **Encounter Type**: Optional, one-time (only if the bros refuse the tab at the door). **Flee rule APPROVED (round v25):** after the bros win and flee, the tab stays open; there is no second fight.
 
 ---
 
@@ -56,7 +53,7 @@ Three men who flew to Europe to be legends are brawling at an arcade's front doo
 
 ### Costume & Distinguishing Features
 - **Matching black polos** **[CANON — approved draft]**, a size too small at the shoulders, tucked in (PROPOSED).
-- **Tiny employee badges** **[CANON — approved draft]**, clipped at chest height, so small the text is unreadable at any distance. Examine text (PROPOSED) reveals the job title in the ruled name.
+- **Tiny employee badges** **[CANON — approved draft]**, clipped at chest height, so small the text is unreadable at any distance. Examine text (PROPOSED) reveals the job title: ACCOUNTS on one, RECEIVABLE on the other.
 - **The knuckle crack** **[CANON — approved draft: "knuckles crack"]**: their entrance beat and their big-move telegraph.
 - PROPOSED: identical lanyards with a key ring, a walkie-talkie each, never used.
 
@@ -88,8 +85,8 @@ HD-2D side-view battle (ruling 2026-11-10): both enforcers on screen as large bi
 ### Mid-Battle Barks (all PROPOSED)
 | Trigger | Line |
 |---------|------|
-| Fight start | **Enforcer 1**: "Sir, this is a courtesy visit." |
-| Fight start (alt) | **Enforcer 2**: "Cash, card, or dental." |
+| Fight start | **ACCOUNTS**: "Sir, this is a courtesy visit." |
+| Fight start (alt) | **RECEIVABLE**: "Cash, card, or dental." |
 | Below 50% HP | "Noted. That's going on the tab." |
 | Big-move telegraph | *(knuckles, in unison)* "Your account is past due." |
 | Stun lands (Escort to the Exit) | "Please keep your arms inside the escort at all times." |
@@ -100,8 +97,8 @@ HD-2D side-view battle (ruling 2026-11-10): both enforcers on screen as large bi
 | Bro reaction (Chadwick hit) | **Chadwick**: "He hit the camera. Chat saw that. That's a strike on his channel." |
 
 ### Defeat Dialogue (PROPOSED)
-> **Enforcer 1** *(getting up, unbothered)*: "We'll put a note on your file."
-> **Enforcer 2**: "See you next visit."
+> **ACCOUNTS** *(getting up, unbothered)*: "We'll put a note on your file."
+> **RECEIVABLE**: "See you next visit."
 
 *The bros flee.* **[CANON — approved draft]** *From the doorway, the Prize Bartender, still bored, adds to the tab:* **"Service charge."** **[CANON — approved draft]**
 
@@ -110,7 +107,7 @@ They go back to wherever they came from. If the author rules them to be the hall
 
 ---
 
-## ⚔️ Combat Specification — all values PROPOSED — NEEDS AUTHOR RULING
+## ⚔️ Combat Specification — APPROVED by the author 2026-11-11 (round v25)
 
 > Calibrated against the nine Arcade cabinet villains. The cabinet heavies (Croc Monsieur 52 HP, 270 Vratislav
 > 54, Shish Kahn 72) are the ceiling. Each enforcer sits just under the single heavies; the pair together
@@ -164,22 +161,22 @@ None. The bartender does not fight. He watches from the bar, wiping the same spo
 
 ---
 
-## 💰 Rewards — all PROPOSED — NEEDS AUTHOR RULING
+## 💰 Rewards — APPROVED by the author 2026-11-11 (round v25)
 | Reward | Value / Item | Notes |
 |--------|--------------|-------|
 | **SOVS** | 0 | They collect. They don't pay out |
-| **Tickets** | 0 (option: 1 ticket each, as an insult) | Not a cabinet fight, so the ticket rule doesn't apply. Engine `ticket_reward` field: 0 |
+| **Tickets** | 0 | Not a cabinet fight, so the ticket rule doesn't apply. Engine `ticket_reward` field: 0 |
 | **Clout (XP)** | 22 per enforcer (44 total) | Matches Croc Monsieur per body |
-| **Guaranteed drop** | None (option: a new key trinket, **Tiny Employee Badge**, examine text "It has a job title on it. You'd need a microscope." Name grep clean) | A new item needs its own ruling |
+| **Guaranteed drop** | None | |
 | **Rare drop** | None | |
 | **Unlocks** | Nothing. The tab stays open, plus the service charge (see quest doc) | |
 | **Achievement** | **Billing Dispute**. Public: *"Refuse to pay the tab and win the argument."* Hidden truth: *"You won the fight and lost the war. The tab now has a service charge, and it's in your name."* | Name grep clean |
 
-### Loss (NEEDS AUTHOR RULING)
-The arcade rule (lose a cabinet fight: back at the cabinet at 1 HP, tokens spent) doesn't cover this fight. Options:
-- **A (draft default):** the bros wake on the street outside at 1 HP. The tab and the service charge have been taken from their SOVS. If they don't have enough, the wallet is emptied and the rest is waived ("Grandpa provides." **[CANON line]**, delivered over them).
-- **B:** party wipe = a standard game-over/reload.
-- **C:** same as A, plus **Broke AF** if the wallet hits zero.
+### Loss — APPROVED (round v25)
+The arcade rule (lose a cabinet fight: back at the cabinet at 1 HP, tokens spent) doesn't cover this fight. Instead: the bros wake on the street outside at 1 HP. The tab (40 SOVS) and the service charge (10 SOVS) have been taken from their SOVS. If they don't have enough, the wallet is emptied and the rest is waived ("Grandpa provides." **[CANON line]**, delivered over them).
+
+### Flee — APPROVED (round v25)
+Winning ends with the bros fleeing and "Service charge." from the doorway. The tab (now 50 SOVS) stays open on every return visit; paying is optional forever; there is **no second fight**.
 
 ---
 
@@ -195,26 +192,27 @@ The arcade rule (lose a cabinet fight: back at the cabinet at 1 HP, tokens spent
 ## ✅ Validation Checklist
 | Requirement | Status |
 |-------------|--------|
-| Funny, unique name (checked against all existing names) | ✅ all three options grep clean — ruling pending |
+| Funny, unique name (checked against all existing names) | ✅ Accounts Receivable (ruled round v25; grep clean) |
 | Racket grounded in the city's satirized culture/underbelly | ✅ tourist-trap bar collections; forced-fun venue with a muscle department |
-| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ PROPOSED |
+| Full combat spec (stats, moves, phases, immunities, rewards) | ✅ APPROVED round v25 |
 | Statuses from master list only | ✅ Stun, Embarrassed, Confused, Grease Fingers |
 | All prices/drops in SOVS | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ canon beats + PROPOSED barks |
 | No moralizing, no reality-check function, no redemption arc | ✅ |
 | Bros never afraid, never self-aware — annoyed and overconfident | ✅ they flee a bill, not a fight |
 | Sprite notes for artists (battle + overworld + telegraph) | ✅ |
-| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ⬜ pending (name, stats, rewards, loss rule, PAY THE TAB command, bouncer identity) |
+| Author approval on: new mechanics/gimmicks, stat numbers, story ties | ◐ name, stats, moves, resistances, rewards, loss and flee rules approved (round v25); PAY THE TAB command, bouncer identity and dialogue still pending |
 
 ---
 
 ## 🔧 Development Status
-- **Status**: Drafted (canon beats; everything else PROPOSED)
-- **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/tab_enforcers.md`
-- **Registered In**: not registered (`game/assets/data/enemies/debaucheryville_enemies.json` untouched, pending rulings)
+- **Status**: Name, combat spec, rewards, loss and flee rules approved (round v25); dialogue and staging PROPOSED
+- **Profile File Location**: `design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md` (renamed from `tab_enforcers.md`, 2026-11-11)
+- **Registered In**: not yet registered (`game/assets/data/enemies/debaucheryville_enemies.json` is owned by the engine session; ready to register with `ticket_reward: 0`)
 - **Sprite Sheet**: not yet specced (2 large battle sprites + 2 overworld sprites; or one sheet, mirrored, if the author wants them identical)
 
 ## 📜 Revision History
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-10 | Initial profile from the author's ChatGPT chat "Absinthe Arcade Exterior Design" | Claude draft for machsheltie |
+| 2026-11-11 | Round v25: name ruled Accounts Receivable (losing options dropped); stats, moves, resistances, rewards, loss and flee rules approved; file renamed from `tab_enforcers.md` | Claude for machsheltie |

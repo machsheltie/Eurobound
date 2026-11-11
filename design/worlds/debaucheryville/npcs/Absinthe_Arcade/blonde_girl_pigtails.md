@@ -5,7 +5,12 @@
 > **Source and status.** The author designed this NPC in the ChatGPT chat "Absinthe Arcade Exterior Design".
 > **[CANON — author]** marks the author's words; **[CANON — approved draft]** marks the ChatGPT draft the author
 > approved. Everything unmarked, including her name, is a Claude draft and **PROPOSED — NEEDS AUTHOR RULING**.
-> She is a member of Cara's group (`cara_birthday_girl.md`, which holds the group section).
+> She is a member of Cara's group (`cara_birthday_girl.md`, which holds the group section).>
+> **Round v25 (2026-11-11), approved for the quest this group drives:** trigger A (Pilsner walks to the bar after
+> a game while the group is there), the 40 SOVS tab for their five test tubes (it does not grow), the bartender's
+> timing and door lines, the 10 SOVS service charge, and **Accounts Receivable** as the door fight. **Still
+> unruled:** the Blonde Girl's name, the other three girls' names, the quest name, the ring's name, who hands
+> over the ring, the group's schedule, and Pilsner "newly single" (flagged).
 
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_blonde_girl_01` (working ID; renamed once the name is ruled)
@@ -27,7 +32,7 @@
 She is at her friend's 21st birthday, having fun with her friends. A man old enough to be her grandfather walks up and asks how her night is going. She says **"Okay"** and looks back at her friends, clearly not interested. **[CANON — author]** Then he offers to buy her another "test tube thing", and she hears the only reasonable meaning: a free round for the whole birthday table. She is *thrilled*. **[CANON — author]**
 
 ### What Bros Believe
-Pilsner, **newly single** **[CANON — author]**, believes "Okay" was an opening. When she squeals "Seriously?!" he hears the sound of still having it. **[CANON — approved draft: "Pilsner: still got it"]**
+Pilsner, **newly single** **[CANON — author; scope still OPEN: game-wide fact or this scene only — re-ask]**, believes "Okay" was an opening. When she squeals "Seriously?!" he hears the sound of still having it. **[CANON — approved draft: "Pilsner: still got it"]**
 
 ### The Comedy Gap
 She isn't dodging him or turning him down. She never saw a man at all, just a nice old guy being sweet to Cara. Her misread is sincere and generous and it does more damage than any rejection could: she turns his pickup line into a charity, out loud, in front of the room. She is never in on the joke. That is why it lands.
@@ -201,3 +206,4 @@ Gives one item: the five-ticket plastic ring (quest payoff). Item name and data:
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-10 | Initial profile from the author's ChatGPT chat "Absinthe Arcade Exterior Design" | Claude draft for machsheltie |
+| 2026-11-11 | Round v25 quest approvals noted (trigger A, tab, timing, door lines, Accounts Receivable); her name still open | Claude for machsheltie |

@@ -24,8 +24,8 @@
 | Mezzanine | Visual only, never walkable (2026-11-02) |
 | Main hall layout | Hall v8 approved (2026-11-09). Cabinets stand in straight wall rows, the centre floor stays open, and nothing blocks another machine (v7 rule, 2026-11-08) |
 | Hall contents | Three-pad DDR dance-off facing one big wall screen; token/prize redemption counter built into the bar; Green Fairy mural inside; Skee-Ball, foosball, Beanie Baby claw, Bubble Bobble; one bidet/toilet stool (2026-11-08) |
-| Cabinets | Frogger: Existential Edition, Street Fighter: Identity Crisis and Kebab Kombat are battle encounters. The rigged claw is the one real mini-game. Real game names stay as drawn (2026-11-08) |
-| Economy on signage | 1 SOV = 1 token. DDR unlock 3 tokens. Claw 5 tokens per attempt |
+| Cabinets | Frogger: Existential Edition, Street Fighter: Identity Crisis and Kebab Kombat are battle encounters. Real game names stay as drawn (2026-11-08). **Mini-games (round v25, 2026-11-11):** the rigged claw, the DDR dance-off, **Skee-Ball and foosball are real mini-games**, and **the claw machine must exist and work** |
+| Economy on signage | 1 SOV = 1 token. Broken-DDR restroom unlock 3 tokens. Claw 5 tokens per attempt. DDR dance-off 2 tokens a song (0-30 tickets). Skee-Ball 2 tokens a game, 9 balls (0-20 tickets by score). Foosball 2 tokens a game vs an NPC (15 tickets win / 3 loss). Ticket-game numbers set by Claude under the author's round v25 delegation; see `design/World Design/Debaucheryville/interactions/absinthe_arcade_interactions.json` |
 | NPC placement | Backpack Girl sits on the primary route beside the token machine (v8 position) |
 
 ## Conventions
@@ -57,6 +57,7 @@
 - Hall height to vault crown about 9 m, mezzanine deck about 4.5 m (PROPOSED: ground + first floor of the 4-storey exterior).
 - North-wing vault about 5 m (PROPOSED: "lower" per the spec and v4).
 - Not yet placed: **mirror corridor** (`aa_node_mirror_corridor`, between the cabinet loop and the north wing). Open question.
+- Not yet placed: **the Arcade bathroom with the toilet-paper statue** (author, round v25: the bros find the Token Attendant asleep in the arms of a statue repurposed as a toilet-paper holder). No hall art, manifest entry or screen has a public restroom or a statue; the only Arcade restroom is the hidden Claw Machine Maintenance Closet Restroom. Open question (see `design/worlds/debaucheryville/npcs/Absinthe_Arcade/token_attendant.md`).
 
 ## Asset list
 
@@ -93,15 +94,15 @@ Status: ☐ todo · ◐ generated, needs QA · ☑ approved
 | `aa_cab_ddr_broken` (north wing) | idle error, 0/3-3/3 token pips, unlock pulse |
 | `aa_cab_time_crisis_cracked` (north wing) | curtain-hidden, displaced, green-glow night |
 
-### D. Hall attractions from the approved v8 (set dressing; only the claw plays)
+### D. Hall attractions from the approved v8 (playable unless marked set dressing; round v25)
 | id | notes |
 |---|---|
-| `aa_prop_ddr_danceoff_pads` (x3) + `aa_int_layer_ddr_wall_screen` | Screen gets an animated arrow loop |
-| `aa_prop_skeeball_lane` (x3) | |
-| `aa_prop_foosball_table` | |
-| `aa_cab_claw_beanie` | Beanie Baby claw (not the rigged claw) |
-| `aa_cab_bubble_bobble` | Real title as drawn |
-| `aa_cab_generic_upright_a/b/c`, `aa_cab_generic_broken` | Wall-row filler, marquee/screen atlases separate |
+| `aa_prop_ddr_danceoff_pads` (x3) + `aa_int_layer_ddr_wall_screen` | **Interactive** rhythm mini-game, 2 tokens a song. Screen gets an animated arrow loop |
+| `aa_prop_skeeball_lane` (x3) | **Interactive** (round v25): ticket mini-game, states idle / insert-token / playing / results / ticket-jam |
+| `aa_prop_foosball_table` | **Interactive** (round v25): ticket mini-game vs an NPC, states idle / insert-token / playing / results win / loss |
+| `aa_cab_claw_beanie` | Beanie Baby claw (not the rigged claw). **Interactive** (round v25: "the claw machine must exist and work"): 5 tokens, prize or nothing; prize pool NEEDS AUTHOR RULING. States idle / insert-token / playing / grab-miss / grab-win |
+| `aa_cab_bubble_bobble` | Real title as drawn. Set dressing (whether it pays tickets is still open) |
+| `aa_cab_generic_upright_a/b/c`, `aa_cab_generic_broken` | Set dressing. Wall-row filler, marquee/screen atlases separate |
 
 ### E. Service, furniture and clutter
 `aa_prop_token_exchange` (TOKENS HERE machine; idle/pay/dispense/jam), `aa_prop_token_price_board` (**1 SOV = 1 TOKEN**; the PNG spec's "1 KC = 5 TOKENS" is retired), `aa_prop_bar_stool` set + `aa_prop_bidet_stool`, `aa_prop_cabinet_stool` set, `aa_prop_standing_tables`, `aa_prop_wayfinding`, `aa_prop_floor_clutter`, `aa_prop_wall_sconce`, `aa_prop_pendant_lamp` (north wing), `aa_prop_potted_plant`, `aa_prop_hanging_ivy`.

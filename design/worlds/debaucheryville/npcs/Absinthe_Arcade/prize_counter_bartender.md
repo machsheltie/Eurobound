@@ -21,11 +21,10 @@
 - **Primary Location**: Absinthe Arcade (`debaucheryville_clocktower_arcade_01`), the prize section built into the broken end of the cracked-absinthe-bottle bar (`aa_node_bottle_bar`, Prize Redemption counter `prize_redemption_counter`), Debaucheryville
 - **Secondary Appearances**: wherever the bros' next game is (the tab), the Arcade's front door (the tab, again)
 
-> **Open roster question (NEEDS AUTHOR RULING):** the design roster `absinthe_arcade_npcs.json` already has a
-> **Token Attendant** (`debaucheryville_npc_arcade_token_attendant_01`) listed as "token machine helper and
-> bottle bar attendant", cheerful about the exchange rate. Is this bartender (a) a separate NPC who runs the
-> bar and the prize counter while the Token Attendant stays on the TOKENS HERE machine, or (b) the same
-> character, rewritten? This file assumes (a). The 2026-11-10 round also lists "the bartender, bouncers and a
+> **Roster — RULED (round v25, 2026-11-11):** this bartender and the **Token Attendant**
+> (`debaucheryville_npc_arcade_token_attendant_01`, `token_attendant.md`) are **separate people**. The bartender
+> runs the bar and the prize counter; the Token Attendant fixes the ticket and token machines and services the
+> bathrooms. The 2026-11-10 round also lists "the bartender, bouncers and a
 > birthday party" from the author's ChatGPT chat "create hero image prompt" as hall NPCs; this file assumes
 > that bartender is this one.
 
@@ -134,7 +133,7 @@ Tips. The prize counter pays none. The bros are the first customers all week to 
 | Bros order a drink, then ask for prizes too | "And there it went." |
 
 ### The Tab (at the next game) **[CANON — author + approved draft]**
-*Trigger and amounts: see the quest doc. He appears beside whatever the bros head to next, holding the bill. He is wearing the ring.*
+*APPROVED (round v25): he appears beside whatever the bros head to next, as they head to it, holding the bill: **40 SOVS** for five test tubes. The tab does not grow. He is wearing the ring.*
 
 **Prize Bartender** **[CANON — author]**:
 > "Hey, Grandpa... you forgot to settle your tab. Maybe it's just the dementia."
@@ -154,12 +153,12 @@ Tips. The prize counter pays none. The bros are the first customers all week to 
 
 *He walks away.* **Lord Pilsner**: "See? You just gotta stand your ground."
 
-### At the Door **[CANON — approved draft]**
+### At the Door **[CANON — approved draft; door lines APPROVED round v25]**
 *Still in the striped blazer, still bored, standing beside the exit.*
 > "Forgot something."
 
-- **Pay** → **Prize Bartender**: "Grandpa provides." *(Pilsner dies inside.)* (Attribution of "Grandpa provides." to the bartender is Claude's reading of the draft; confirm.)
-- **Refuse** → *sigh.* "Gentlemen?" → the enforcers step in → "Our guests are experiencing a billing dispute." → battle. After the bros win and flee, from the doorway: **"Service charge."** (all **[CANON — approved draft]**)
+- **Pay** → **Prize Bartender**: "Grandpa provides." *(Pilsner dies inside.)* (The bartender says it; approved with the door lines, round v25.)
+- **Refuse** → *sigh.* "Gentlemen?" → **Accounts Receivable** step in → "Our guests are experiencing a billing dispute." → battle. After the bros win and flee, from the doorway: **"Service charge."** (all **[CANON — approved draft]**). The service charge is a flat **10 SOVS**; the open tab is then 50 SOVS, greeted with "Tab's open" on every visit, no second fight (APPROVED round v25).
 
 ### Callback Dialogue (Return Visits) (PROPOSED)
 | State | Line |
@@ -188,7 +187,7 @@ Tips. The prize counter pays none. The bros are the first customers all week to 
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Prize Redemption (13-prize catalogue) | 15–2500 tickets | 0–3 SOVS | See `design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md` |
-| Junk shelf (additional to the catalogue) | — | — | **NEEDS AUTHOR RULING**: see the quest doc's open questions (plastic ring, parachute men, temporary tattoos, the whistle; three shelf items overlap catalogue prizes) |
+| Junk shelf (separate from the catalogue; **APPROVED round v25**) | 5–15 tickets | 0 SOVS | No effects. Plastic ring (5 tickets), parachute men, temporary tattoos, the whistle he regrets (15 tickets). Catalogue duplicates (sticky hand, vampire teeth, maze puzzle) are off the shelf. Item names and the parachute-men/tattoo prices: PROPOSED — NEEDS AUTHOR RULING |
 | Neon test-tube shots | **PROPOSED** (see quest doc) | — | Bar drink; how it plays for the bros, if at all, is an intoxication mechanic and needs the 10-point review first |
 | Bar drinks generally | **NEEDS AUTHOR RULING** | — | No Arcade bar price list exists in the design files yet |
 
@@ -201,8 +200,8 @@ Tips. The prize counter pays none. The bros are the first customers all week to 
 | NPC | Relationship |
 |-----|--------------|
 | Cara and her group | His best customers of the night. They order drinks, not prizes |
-| The enforcers (`design/worlds/debaucheryville/villains/absinthe_arcade/tab_enforcers.md`) | He says one word ("Gentlemen?") and they appear |
-| Token Attendant | See the open roster question at the top |
+| Accounts Receivable (`design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md`) | He says one word ("Gentlemen?") and they appear |
+| Token Attendant (`token_attendant.md`) | A separate employee (ruled round v25), same flair dress code. He fixes the machines and cleans the toilets; the bartender pours and judges. Neither will cover for the other |
 
 ---
 
@@ -260,10 +259,11 @@ Tips. The prize counter pays none. The bros are the first customers all week to 
 ## 🔧 Development Status
 - **Status**: Drafted (canon beats from the author's chat; name and all unmarked content PROPOSED)
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/Absinthe_Arcade/prize_counter_bartender.md`
-- **Registered In**: `absinthe_arcade_npcs.json` — **No** (not registered; waiting on the name and the Token Attendant ruling)
+- **Registered In**: `absinthe_arcade_npcs.json` — **No** (not registered; waiting on the name)
 - **Sprite Sheet**: not yet specced
 
 ## 📜 Revision History
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-10 | Initial profile from the author's ChatGPT chat "Absinthe Arcade Exterior Design" | Claude draft for machsheltie |
+| 2026-11-11 | Round v25: separate from the Token Attendant; tab 40 SOVS, timing, door lines, 10 SOVS service charge, Accounts Receivable, junk shelf approved. Name still open | Claude for machsheltie |

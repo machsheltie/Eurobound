@@ -158,7 +158,11 @@ They're paying triple price because they pointed at the menu instead of pronounc
 **Learning System**:
 - Each successful pronunciation = that item permanently easier
 - After 3 perfect orders = "Cake Connoisseur" status (flat 10% discount)
-- Bradley has +20% bonus to all pronunciation checks
+- Bradley's bonus at the cart — **PROPOSED — NEEDS AUTHOR RULING.** The old "+20% bonus to all pronunciation checks" is retired (author, round v25, 2026-11-11: replace it with a different bonus). Options:
+  1. **Quark Is Protein**: Bradley reads the Topfenstrudel's filling, learns *Topfen* is quark, and decides it's a protein bar. When Bradley eats a Topfenstrudel it heals double (+30 HP, +30 SP) and he orders it every visit. *"Fifteen grams of protein wrapped in a pastry. This is meal prep, bro. This is a cut."* (His signature flaw already makes him detour only for protein bars.)
+  2. **Carb Load**: Bradley calls the Der Zuckerschock Special "pre-workout". On Bradley, the Sugar High buff lasts 60 minutes instead of 30 and he skips the Sugar Crash. *"Crash is for people who don't lift."*
+  3. **Gym Hours**: Bradley tracks the cart the way he tracks every gym in every city. With Bradley leading the party, the cart's position for the hour is marked on the map and the "located without asking NPCs" Charm boost always applies. *"Tuesday, two to five, Kaffeehaus Row. Same as Gold's in my town. You learn the schedules, bro."*
+  - Knock-on: Bradley's scripted lines elsewhere in this file still have him pronouncing the menu correctly ("I pronounced everything correctly. I paid 22 SOVS."). They stay as dialogue; they no longer come from a stat.
 
 ### Charm Pricing System
 

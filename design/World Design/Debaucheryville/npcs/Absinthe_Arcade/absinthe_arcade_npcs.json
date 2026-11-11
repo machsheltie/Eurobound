@@ -97,35 +97,41 @@
     {
       "npc_id": "debaucheryville_npc_arcade_token_attendant_01",
       "display_name": "Token Attendant",
-      "role": "token_machine_helper_and_bottle_bar_attendant",
+      "display_name_status": "PROPOSED name options in profile (Out of Order Ota / Jammin' Jarda / Thirty-Seven Pieces); NEEDS AUTHOR RULING",
+      "role": "token_machine_and_ticket_machine_fixer_and_bathroom_attendant",
       "node_id": "aa_node_token_exchange",
-      "secondary_node": "aa_node_bottle_bar",
+      "secondary_node": "roaming_jammed_ticket_machines",
+      "profile": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/token_attendant.md",
+      "author_design": "Employee in TGI Fridays-esque clothes and flair who fixes stuck ticket machines and token exchange machine problems and services the bathrooms; the bros catch him asleep in the arms of a statue repurposed as a toilet-paper holder, passed out on absinthe (author, round v25 2026-11-11). Separate person from the prize-counter bartender (ruled).",
       "schedule": {
-        "06:00_to_14:00": "token_exchange_cleanup_shift",
-        "14:00_to_22:00": "token_exchange_and_bar",
-        "22:00_to_04:00": "bottle_bar",
-        "04:00_to_06:00": "offscreen"
+        "10:00_to_18:00": "token_exchange",
+        "18:00_to_01:00": "roaming_ticket_jams_and_bathroom_rounds",
+        "01:00_to_04:00": "bathroom_asleep_in_statue_arms",
+        "04:00_to_10:00": "offscreen"
       },
+      "schedule_status": "PROPOSED; bathroom screen not yet built (open question in profile)",
       "personality": {
         "core": "efficient_and_cheerfully_unashamed_of_the_exchange_rate",
-        "comedy_function": "treats every obvious ripoff as hospitality"
+        "comedy_function": "treats every obvious ripoff as hospitality, then drinks absinthe until a bathroom statue has to hold him"
       },
       "services": [
         "explain_token_exchange",
-        "restore_jammed_machine",
-        "point_toward_public_bar",
+        "restore_jammed_token_machine",
+        "clear_jammed_ticket_machine",
+        "service_bathrooms",
         "deny_existence_of_real_vip_section"
       ],
       "visual_design": {
-        "clothing": "waistcoat_over_arcade_staff_shirt_with_brass_token_apron",
-        "props": "token_tube_bar_towel_receipt_roll",
+        "clothing": "tgi_fridays_style_striped_shirt_apron_and_flair_buttons",
+        "props": "machine_key_lanyard_ticket_jam_hook_mallet_plunger_token_pouch",
         "sprite_sheet": "token_attendant.png"
       },
       "animations": [
         "count_tokens",
         "tap_price_board",
-        "polish_glass",
-        "point_in_vip_circle"
+        "jog_to_machine",
+        "left_side_smack",
+        "sleep_in_statue_arms"
       ]
     }
   ],
