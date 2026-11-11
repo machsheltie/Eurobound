@@ -12,7 +12,7 @@ extends RefCounted
 ##    prize. The count restarts after any blinking play, hit or miss.
 ##  - The rigged claw's top prize is Sea-Monkeys (author 2026-11-11: "replace the beer pong saint
 ##    relic with Sea-Monkey"). Until it is won the pit holds only Sea-Monkeys; after, the junk-shelf
-##    prizes (whether those also need the light: ef6_junk_claw_rule, open).
+##    prizes, which also hold only on a blinking play (round v29 ef6_junk_claw_rule: it stays rigged).
 ## Prize names: Writers' Room, approved by the author 2026-11-11 (desk, "Approve Gemini's
 ## favourites"); registered in key_items.json.
 ## `state` is GameState (inventory, flags, add_item).

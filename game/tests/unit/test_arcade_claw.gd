@@ -112,3 +112,18 @@ func test_arcade_claw_beanie_pit_holds_real_plush() -> void:
 	var pit := ArcadeClaw.layout(ArcadeClaw.BEANIE, state, _rng(4))
 	# Assert
 	assert_false(pit.any(func(p: Dictionary) -> bool: return String(p["id"]).is_empty()))
+
+
+func test_arcade_claw_junk_after_sea_monkeys_still_needs_the_light() -> void:
+	# Arrange: Sea-Monkeys already won (round v29 ef6_junk_claw_rule: the claw stays rigged).
+	var state := FakeState.new()
+	state.flags[ArcadeClaw.TOP_PRIZE_FLAG] = true
+	var pit := ArcadeClaw.layout(ArcadeClaw.RIGGED, state, _rng(1))
+	var x := float(pit[0]["x"])
+	# Act
+	var dark := ArcadeClaw.grab(ArcadeClaw.RIGGED, pit, x, false, state, _rng(2))
+	var lit := ArcadeClaw.grab(ArcadeClaw.RIGGED, pit, x, true, state, _rng(3))
+	# Assert
+	assert_false(dark["held"])
+	assert_true(lit["held"])
+	assert_has(ArcadeClaw.JUNK_PRIZES, lit["id"])

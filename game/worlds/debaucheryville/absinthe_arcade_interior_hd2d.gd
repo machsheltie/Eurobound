@@ -55,14 +55,14 @@ const NORTH_EXIT_TARGET := "absinthe_arcade_mirror_corridor"
 const FRONT_EDGE_Z := 5.4
 const FRONT_DOOR_X := 0.8
 const FRONT_EXIT_TARGET := "absinthe_arcade_exterior"
+const RESTROOM_TARGET := "absinthe_arcade_restroom"
 ## Spawn points [painting units (x, z), facing]: through the front doors from the street, and back
 ## out of the north arch from the mirror corridor.
 const SPAWNS := {
 	"from_street": [Vector2(0.0, 3.4), "north"],
 	"from_mirror_corridor": [Vector2(0.24, -4.3), "south"],
-	# Back from the restroom (round v28: its door is the left-wall arch behind TOKENS HERE). How the
-	# bros reach that arch is still open, so they come back out beside the token machine.
-	"from_restroom": [Vector2(-5.2, 4.2), "south_east"],
+	# Back from the restroom: on the door spot just south of TOKENS HERE (round v29).
+	"from_restroom": [Vector2(-6.6, 4.4), "south"],
 }
 
 ## Depth curve (author ruling int_depth_scale): v8 paints its back row smaller than its floor
@@ -94,6 +94,10 @@ const INTERACT_POINTS := {
 	"beanie_baby_claw": [Vector2(-4.5, -2.0), 135.0, Vector2(-3.9, -1.1)],
 	# Under the PRIZES arch, front right (px ~2440-2660 x 1200-1330), facing west.
 	"rigged_absinthe_claw_machine": [Vector2(6.3, 2.8), -90.0],
+	# The restroom (round v28 door = the left-wall arch, hidden behind TOKENS HERE; round v29
+	# ef6_restroom_access = press_door): the bros stand just south of the machine and press facing
+	# the wall. The anchor is the floor between the machine's south end and the wall.
+	"restroom_door": [Vector2(-7.5, 3.9), 90.0, Vector2(-6.6, 4.4)],
 }
 ## Machines that open a mini-game screen when paid for (round v25 rec_games).
 const REC_GAMES := ["skee_ball", "foosball"]
@@ -204,6 +208,10 @@ func _ready() -> void:
 
 ## The leader pressed the button facing a machine.
 func _on_interacted(id: String) -> void:
+	if id == "restroom_door":
+		_player.input_locked = true
+		SceneRouter.travel(get_tree(), RESTROOM_TARGET, "from_hall")
+		return
 	if id == "token_machine":
 		var most := ArcadeRules.max_buyable(GameState)
 		if most <= 0:
